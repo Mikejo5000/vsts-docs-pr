@@ -3,7 +3,7 @@ title: Team Services & TFS documentation
 layout: HubPage
 description: Get started page for Visual Studio Team Services and Team Foundation Server (TFS) Documentation
 ms.assetid: F15A468A-E869-4DB6-AED5-5EB2E39D6E3A
-breadcrumb_path: "/abc/toc.json"
+breadcrumb_path: "./abc/toc.json"
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-overview
 ms.manager: douge
@@ -22,7 +22,7 @@ ms.date: 08/04/2016
   <div class="row">
     <div class="col-sm-6 col-md-3 col-md-offset-2 item">
       <div class="title">
-        <a href="/git/overview">Git</a>
+        <a href="./git/overview">Git</a>
         <div class="desc">
           Develop code with distributed, flexible version control.
         </div>
@@ -30,7 +30,7 @@ ms.date: 08/04/2016
     </div>
     <div class="col-sm-6 col-md-3 item">
       <div class="title">
-        <a href="/tfvc/overview">TFVC</a>
+        <a href="./tfvc/overview">TFVC</a>
         <div class="desc">
           Manage code with centralized, conventional version control.
        </div>
@@ -38,7 +38,7 @@ ms.date: 08/04/2016
     </div>
 	<div class="col-sm-4 col-md-3 item">
       <div class="title">
-        <a href="/collaborate/overview">Collaborate</a>
+        <a href="./collaborate/overview">Collaborate</a>
         <div class="desc">
           Work across hubs and team projects, share information, and manage notifications.  
         </div>
@@ -56,7 +56,7 @@ ms.date: 08/04/2016
   <div class="row">
     <div class="col-sm-4 col-md-3 col-md-offset-2 item">
       <div class="title">
-        <a href="/work/overview">Agile</a>
+        <a href="./work/overview">Agile</a>
         <div class="desc">
           Plan and track user stories, requirements, bugs, and more using your chosen Agile method.
         </div>
@@ -64,7 +64,7 @@ ms.date: 08/04/2016
     </div>
     <div class="col-sm-4 col-md-3 item">
       <div class="title">
-        <a href="/work/track/using-queries">Queries</a>
+        <a href="./work/track/using-queries">Queries</a>
         <div class="desc">
           Find work items to bulk update and to chart progress and trends.
         </div>
@@ -72,7 +72,7 @@ ms.date: 08/04/2016
     </div>
     <div class="col-sm-4 col-md-3 item">
       <div class="title">
-        <a href="/work/customize/customize-work">Customization</a>
+        <a href="./work/customize/customize-work">Customization</a>
         <div class="desc">
           Configure Agile tools and processes to meet your team's needs.
         </div>
@@ -90,7 +90,7 @@ ms.date: 08/04/2016
   <div class="row">
     <div class="col-sm-4 col-md-3 col-md-offset-2 item">
       <div class="title">
-        <a href="/build/overview">Build &amp; Release</a>
+        <a href="./build/overview">Build &amp; Release</a>
         <div class="desc">
           Implement continuous integration and continuous deployment 
 	  to reliably deliver quality apps to your customers.
@@ -99,7 +99,7 @@ ms.date: 08/04/2016
     </div>
     <div class="col-sm-4 col-md-3 item">
       <div class="title">
-        <a href="/test/overview">Test</a>
+        <a href="./test/overview">Test</a>
         <div class="desc">
           Test continuously while you code, build, and deploy before releasing to production.
         </div>
@@ -118,7 +118,7 @@ ms.date: 08/04/2016
   <div class="row">
     <div class="col-sm-4 col-md-3 col-md-offset-2 item">
       <div class="title">
-        <a href="/package/overview">Package</a>
+        <a href="./package/overview">Package</a>
         <div class="desc">
           Publish, discover, and install shared binary code that integrates with Team Build.
         </div>
@@ -126,7 +126,7 @@ ms.date: 08/04/2016
     </div>
     <div class="col-sm-4 col-md-3 item">
       <div class="title">
-        <a href="/build/apps/index#deploy-to-azure">Deploy to Azure</a>
+        <a href="./build/apps/index#deploy-to-azure">Deploy to Azure</a>
         <div class="desc">
           Release apps to Azure services and Azure virtual machines.
         </div>
@@ -152,7 +152,7 @@ ms.date: 08/04/2016
   <div class="row">
     <div class="col-sm-4 col-md-3 col-md-offset-2 item">
       <div class="title">
-        <a href="/marketplace/extend-overview">Marketplace</a>
+        <a href="./marketplace/extend-overview">Marketplace</a>
         <div class="desc">
           Find extensions and integrations to expand your devops environment.
         </div>
@@ -160,7 +160,7 @@ ms.date: 08/04/2016
     </div>
     <div class="col-sm-4 col-md-3 item">
       <div class="title">
-        <a href="/integrate/extensions/overview">Extensions</a>
+        <a href="./integrate/extensions/overview">Extensions</a>
         <div class="desc">
           Develop, package, and publish extensions and integrations.
         </div>
@@ -168,7 +168,7 @@ ms.date: 08/04/2016
     </div>
     <div class="col-sm-4 col-md-3 item">
       <div class="title">
-        <a href="/integrate/api/overview">REST APIs</a>
+        <a href="./integrate/api/overview">REST APIs</a>
         <div class="desc">
           Develop your own tools and integrations using REST APIs.
         </div>
@@ -186,7 +186,7 @@ ms.date: 08/04/2016
   <div class="row">
     <div class="col-sm-6 col-md-3 col-md-offset-2 item">
       <div class="title">
-        <a href="/report/dashboards">Dashboards</a>
+        <a href="./report/dashboards">Dashboards</a>
         <div class="desc">
           Show status, monitor progress, and share information with customizable web views.
         </div>
@@ -194,7 +194,7 @@ ms.date: 08/04/2016
     </div>
     <div class="col-sm-6 col-md-3 item">
       <div class="title">
-        <a href="/report/powerbi/overview">Power BI</a>
+        <a href="./report/powerbi/overview">Power BI</a>
         <div class="desc">
           Mine data to create cross-project dashboards and reports.
         </div>
@@ -212,7 +212,7 @@ ms.date: 08/04/2016
   <div class="row">
     <div class="col-sm-6 col-md-3 col-md-offset-2 item">
       <div class="title">
-        <a href="/setup-admin/get-started">Team Services</a>
+        <a href="./setup-admin/get-started">Team Services</a>
         <div class="desc">
           Set up your Team Services account in the cloud. Manage account access, billing, and purchases.
         </div>
@@ -220,7 +220,7 @@ ms.date: 08/04/2016
     </div>
     <div class="col-sm-6 col-md-3 item">
       <div class="title">
-        <a href="/setup-admin/get-started">Team Foundation Server</a>
+        <a href="./setup-admin/get-started">Team Foundation Server</a>
         <div class="desc">
           Install, upgrade, and administer on-premises TFS.
         </div>
