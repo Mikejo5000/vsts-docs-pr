@@ -3,7 +3,7 @@ title: Documentation overview | Visual Studio
 description: Get started page for Visual Studio 2015 and Visual Studio 2017
 ms.assetid: 4173243f-d1dd-4c46-a4c0-c8bef8ecfff9
 ms.prod: vs-devops-alm
-breadcrumb_path: "/docs/abc/toc.json"
+breadcrumb_path: "/abc/toc.json"
 ms.technology: vs-ide-overview
 ms.manager: douge
 ms.author: douge
