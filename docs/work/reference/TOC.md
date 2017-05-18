@@ -10,7 +10,7 @@
 ## [Add or modify data fields](../customize/add-modify-field.md)
 ## [Add or modify work item types](../customize/add-modify-wit.md)
 ## [Upload/download process templates](../guidance/manage-process-templates.md)
-## [Configure features after an upgrade](customize/configure-features-after-upgrade.md)
+## [Configure features after an upgrade](../customize/configure-features-after-upgrade.md)
 
 # Samples
 ## TBD 
@@ -164,9 +164,9 @@
 
 
 ## Feature enablement (On-premises XML)
-### [New features added when you update TFS](customize/new-features-added.md)
-### [Additional configuration options](customize/additional-configuration-options.md)
-### [Update a customized process template to access new features](customize/update-customized-process-template.md)
+### [New features added when you update TFS](../customize/new-features-added.md)
+### [Additional configuration options](../customize/additional-configuration-options.md)
+### [Update a customized process template to access new features](../customize/update-customized-process-template.md)
 ### [Add features using a manual update process](../customize/add-features-manually.md)
 ## [Update the workflow for agile team projects](update-the-workflow-for-agile-team-projects.md)
 ## [Update a team project based on an MSF v4.2 process template](update-a-team-project-v4-dot-2-process-template.md)

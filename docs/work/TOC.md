@@ -96,7 +96,7 @@
 #### [Configure team settings](scale/manage-team-assets.md)
 #### [Customize cards](customize/customize-cards.md)
 ### [Team velocity](scrum/velocity-and-forecasting.md)  
-### [Team rooms](collaborate-in-a-team-room.md)  
+### [Team rooms](../collaborate/collaborate-in-a-team-room.md)  
 
 ## Scale 
 ### [Agile culture](scale/agile-culture.md)
@@ -180,8 +180,7 @@
 #### [Implement development tasks](guidance/cmmi/guidance-implement-development-tasks.md)
 #### [Build a product](guidance/cmmi/guidance-build-product.md)
 ### [Track bugs](guidance/cmmi/track-bugs.md)
-
-## [Reportable field reference (TFS)](reportable-fields-reference.md) 
+ 
 
 # Troubleshooting
 ## Fix "Ordering backlog items is disabled" (REFACTOR)  

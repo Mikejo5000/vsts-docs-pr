@@ -1,71 +1,78 @@
 - name: Team Services & TFS 
-  href: /docs/
-  homepage: /docs/vsts-tfs-overview
+  tocHref: /docs/
+  topicHref: /docs/vsts-tfs-overview
   items: 
   - name: Overview
-    href: /docs/
-    homepage: /docs/vsts-tfs-overview
+    tocHref: /docs/
+    topicHref: /docs/vsts-tfs-overview
   - name: Set Up & Admin
-    href: /docs/setup-admin/
-    homepage: /docs/setup-admin/get-started
+    tocHref: /docs/setup-admin/
+    topicHref: /docs/setup-admin/get-started
   - name: Agile tools/Work
-    href: /docs/work/
-    homepage: /docs/work/overview
+    tocHref: /docs/work/
+    topicHref: /docs/work/overview
+    items: 
+      - name: Customize work tracking
+        tocHref: /docs/work/reference
+        topicHref: /docs/work/customize/customize-work
+      - name: TFS-Project Server integration
+        tocHref: /docs/work/tfs-ps-sync 
+        topicHref: /docs/work/office/sync-ps-tfs
   - name: Build & Release
-    href: /docs/build/
-    homepage: /docs/build/overview
+    tocHref: /docs/build/
+    topicHref: /docs/build/overview
   - name: Collaborate
-    href: /docs/collaborate/
-    homepage: /docs/collaborate/overview
+    tocHref: /docs/collaborate/
+    topicHref: /docs/collaborate/overview
   - name: Dashboards & Reports
-    href: /docs/report/
-    homepage: /docs/report/overview
+    tocHref: /docs/report/
+    topicHref: /docs/report/overview
   - name: Git
-    href: /docs/git/
-    homepage: /docs/git/overview
+    tocHref: /docs/git/
+    topicHref: /docs/git/overview
   - name: Package
-    href: /docs/package/
-    homepage: /docs/package/overview
+    tocHref: /docs/package/
+    topicHref: /docs/package/overview
   - name: Search
-    href: /docs/search/
-    homepage: /docs/search/overview 
+    tocHref: /docs/search/
+    topicHref: /docs/search/overview 
   - name: Test
-    href: /docs/test/
-    homepage: /docs/test/index
+    tocHref: /docs/test/
+    topicHref: /docs/test/index
   - name: TFVC
-    href: /docs/tfvc/
-    homepage: /docs/tfvc/overview
+    tocHref: /docs/tfvc/
+    topicHref: /docs/tfvc/overview
   - name: Reference
-    href: /docs/reference/
-    homepage: /docs/reference/overview
+    tocHref: /docs/reference/
+    topicHref: /docs/reference/overview
 - name: Marketplace & Billing
-  href: /docs/marketplace/
-  homepage: /docs/marketplace/overview
+  tocHref: /docs/marketplace/
+  topicHref: /docs/marketplace/overview
   items: 
   - name: Marketplace & Billing
-    href: /docs/marketplace/
-    homepage: /docs/marketplace/overview
+    tocHref: /docs/marketplace/
+    topicHref: /docs/marketplace/overview
   - name: Service hooks
-    href: /docs/marketplace/integrate/service-hooks/
-    homepage: /docs/marketplace/integrate/service-hooks/get-started
+    tocHref: /docs/marketplace/integrate/service-hooks/
+    topicHref: /docs/marketplace/integrate/service-hooks/get-started
 - name: Integrate
-  href: /docs/integrate/
-  homepage: /docs/integrate/overview
+  tocHref: /docs/integrate/
+  topicHref: /docs/integrate/overview
   items: 
   - name: Integrate overview
-    href: /docs/integrate/
-    homepage: /docs/integrate/overview
+    tocHref: /docs/integrate/
+    topicHref: /docs/integrate/overview
   - name: Visual Studio Extensions
-    href: /docs/integrate/ide/extensions/
-    homepage: /docs/integrate/ide/extensions/overview
+    tocHref: /docs/integrate/ide/extensions/
+    topicHref: /docs/integrate/ide/extensions/overview
   - name: Integrate with other services
-    href: /docs/marketplace/integrate/service-hooks/
-    homepage: /docs/marketplace/integrate/service-hooks/get-started
+    tocHref: /docs/marketplace/integrate/service-hooks/
+    topicHref: /docs/marketplace/integrate/service-hooks/get-started
 - name: Visual Studio subscriptions
-  href: /docs/marketplace/vs-subscriptions/
-  homepage: /docs/marketplace/vs-subscriptions/buy-vs-subscriptions
+  tocHref: /docs/marketplace/vs-subscriptions/
+  topicHref: /docs/marketplace/vs-subscriptions/buy-vs-subscriptions
   items: 
   - name: Visual Studio Subscriptions
-    href: /docs/marketplace/vs-subscriptions/
-    homepage: /docs/marketplace/vs-subscriptions/buy-vs-subscriptions
+    tocHref: /docs/marketplace/vs-subscriptions/
+    topicHref: /docs/marketplace/vs-subscriptions/buy-vs-subscriptions
 
