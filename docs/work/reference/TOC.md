@@ -13,9 +13,10 @@
 ## [Configure features after an upgrade](customize/configure-features-after-upgrade.md)
 
 # Samples
- 
-# How to 
+## TBD 
 
+
+# How to 
 
 ## Change a field attribute
 ## [Change reporting attributes (TFS)](add-or-modify-work-item-fields-to-support-reporting.md)  
@@ -73,8 +74,7 @@
 ## Inheritance process model (REFACTOR) 
 ## Hosted XML process model (REFACTOR) 
 ## On-premises XML process model (REFACTOR) 
-Work with a process template
-Process template files
+## Work with a process template (TBD) 
 ## [Field data type and reportable attributes](define-modify-work-item-fields.md)
 
 
