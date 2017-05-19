@@ -1,78 +1,65 @@
-- name: Team Services & TFS 
-  tocHref: /docs/
-  topicHref: /docs/vsts-tfs-overview
+- name: "Team Services & TFS" 
+  tocHref: /team-services/
+  topicHref: /team-services/vsts-tfs-overview
   items: 
-  - name: Overview
-    tocHref: /docs/
-    topicHref: /docs/vsts-tfs-overview
-  - name: Set Up & Admin
-    tocHref: /docs/setup-admin/
-    topicHref: /docs/setup-admin/get-started
-  - name: Agile tools/Work
-    tocHref: /docs/work/
-    topicHref: /docs/work/overview
+  - name: "Overview"
+    tocHref: /team-services/
+    topicHref: /team-services/vsts-tfs-overview
+  - name: "Set Up & Admin"
+    tocHref: /team-services/setup-admin/
+    topicHref: /team-services/setup-admin/get-started
+  - name: "Agile tools/Work"
+    tocHref: /team-services/work/
+    topicHref: /team-services/work/overview
     items: 
-      - name: Customize work tracking
-        tocHref: /docs/work/reference
-        topicHref: /docs/work/customize/customize-work
-      - name: TFS-Project Server integration
-        tocHref: /docs/work/tfs-ps-sync 
-        topicHref: /docs/work/office/sync-ps-tfs
-  - name: Build & Release
-    tocHref: /docs/build/
-    topicHref: /docs/build/overview
-  - name: Collaborate
-    tocHref: /docs/collaborate/
-    topicHref: /docs/collaborate/overview
-  - name: Dashboards & Reports
-    tocHref: /docs/report/
-    topicHref: /docs/report/overview
-  - name: Git
-    tocHref: /docs/git/
-    topicHref: /docs/git/overview
-  - name: Package
-    tocHref: /docs/package/
-    topicHref: /docs/package/overview
-  - name: Search
-    tocHref: /docs/search/
-    topicHref: /docs/search/overview 
-  - name: Test
-    tocHref: /docs/test/
-    topicHref: /docs/test/index
-  - name: TFVC
-    tocHref: /docs/tfvc/
-    topicHref: /docs/tfvc/overview
-  - name: Reference
-    tocHref: /docs/reference/
-    topicHref: /docs/reference/overview
-- name: Marketplace & Billing
-  tocHref: /docs/marketplace/
-  topicHref: /docs/marketplace/overview
+      - name: "Customize work tracking"
+        tocHref: /team-services/work/reference
+        topicHref: /team-services/work/customize/customize-work
+      - name: "TFS-Project Server integration"
+        tocHref: /team-services/work/tfs-ps-sync 
+        topicHref: /team-services/work/office/sync-ps-tfs
+  - name: "Build & Release"
+    tocHref: /team-services/build/
+    topicHref: /team-services/build/overview
+  - name: "Collaborate"
+    tocHref: /team-services/collaborate/
+    topicHref: /team-services/collaborate/overview
+  - name: "Dashboards & Reports"
+    tocHref: /team-services/report/
+    topicHref: /team-services/report/overview
+  - name: "Git"
+    tocHref: /team-services/git/
+    topicHref: /team-services/git/overview
+  - name: "Package"
+    tocHref: /team-services/package/
+    topicHref: /team-services/package/overview
+  - name: "Search"
+    tocHref: /team-services/search/
+    topicHref: /team-services/search/overview 
+  - name: "Test"
+    tocHref: /team-services/test/
+    topicHref: /team-services/test/index
+  - name: "TFVC"
+    tocHref: /team-services/tfvc/
+    topicHref: /team-services/tfvc/overview
+  - name: "Reference"
+    tocHref: /team-services/reference/
+    topicHref: /team-services/reference/overview
+- name: "Marketplace & Billing"
+  tocHref: /team-services/marketplace/
+  topicHref: /team-services/marketplace/overview
   items: 
-  - name: Marketplace & Billing
-    tocHref: /docs/marketplace/
-    topicHref: /docs/marketplace/overview
-  - name: Service hooks
-    tocHref: /docs/marketplace/integrate/service-hooks/
-    topicHref: /docs/marketplace/integrate/service-hooks/get-started
-- name: Integrate
-  tocHref: /docs/integrate/
-  topicHref: /docs/integrate/overview
+  - name: "Marketplace & Billing"
+    tocHref: /team-services/marketplace/
+    topicHref: /team-services/marketplace/overview
+  - name: "Service hooks"
+    tocHref: /team-services/marketplace/integrate/service-hooks/
+    topicHref: /team-services/marketplace/integrate/service-hooks/get-started
+- name: "Visual Studio subscriptions"
+  tocHref: /team-services/marketplace/vs-subscriptions/
+  topicHref: /team-services/marketplace/vs-subscriptions/buy-vs-subscriptions
   items: 
-  - name: Integrate overview
-    tocHref: /docs/integrate/
-    topicHref: /docs/integrate/overview
-  - name: Visual Studio Extensions
-    tocHref: /docs/integrate/ide/extensions/
-    topicHref: /docs/integrate/ide/extensions/overview
-  - name: Integrate with other services
-    tocHref: /docs/marketplace/integrate/service-hooks/
-    topicHref: /docs/marketplace/integrate/service-hooks/get-started
-- name: Visual Studio subscriptions
-  tocHref: /docs/marketplace/vs-subscriptions/
-  topicHref: /docs/marketplace/vs-subscriptions/buy-vs-subscriptions
-  items: 
-  - name: Visual Studio Subscriptions
-    tocHref: /docs/marketplace/vs-subscriptions/
-    topicHref: /docs/marketplace/vs-subscriptions/buy-vs-subscriptions
+  - name: "Visual Studio Subscriptions"
+    tocHref: /team-services/marketplace/vs-subscriptions/
+    topicHref: /team-services/marketplace/vs-subscriptions/buy-vs-subscriptions
 
