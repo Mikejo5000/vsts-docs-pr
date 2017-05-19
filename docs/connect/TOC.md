@@ -44,11 +44,11 @@
  
 # Share information
 ## [Share your project vision](../collaborate/project-vision-status.md)   
-## [Create a readme for your repo](https://docs.microsoft.com/en-us/team-services/git/create-a-readme?toc=/connect/toc.json)
-## [Share work plans](https://docs.microsoft.com/en-us/team-services/work/track/share-plans?toc=/connect/toc.json)
-## [Team dashboards](https://docs.microsoft.com/en-us/team-services/report/dashboards?toc=/connect/toc.json)
-## [Markdown guidance](https://docs.microsoft.com/en-us/team-services/reference/markdown-guidance?toc=/connect/toc.json)
-## [Share information using the project portal (TFS)](https://docs.microsoft.com/en-us/team-services/report/sharepoint-dashboards/share-information-using-the-project-portal?toc=/connect/toc.json)
+## [Create a readme for your repo](https://review.docs.microsoft.com/en-us/team-services/git/create-a-readme?toc=/team-services/connect/toc.json)
+## [Share work plans](https://review.docs.microsoft.com/en-us/team-services/work/track/share-plans?toc=/team-services/connect/toc.json)
+## [Team dashboards](https://review.docs.microsoft.com/en-us/team-services/report/dashboards?toc=/team-services/connect/toc.json)
+## [Markdown guidance](https://review.docs.microsoft.com/en-us/team-services/reference/markdown-guidance?toc=/team-services/connect/toc.json)
+## [Share information using the project portal (TFS)](https://review.docs.microsoft.com/en-us/team-services/report/sharepoint-dashboards/share-information-using-the-project-portal?toc=/team-services/connect/toc.json)
 
 
 ## Add and manage teams 
