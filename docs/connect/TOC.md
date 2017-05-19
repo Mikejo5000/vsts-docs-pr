@@ -37,19 +37,30 @@
 ### [Follow work and pull requests](follow-work-items.md)
 ### [Set personal notifications](manage-personal-notifications.md)
 
-
 ## Using Azure Active Directory 
 ### [Access with Azure AD](../setup-admin/team-services/manage-organization-access-for-your-account-vs.md)
 ### [Access with Azure AD groups](../setup-admin/team-services/manage-azure-active-directory-groups-visual-studio-team-services.md)
 ### [Change Azure AD](../setup-admin/team-services/change-azure-active-directory-team-services-account.md)
  
+# Share information
+## [Share your project vision](../collaborate/project-vision-status.md)   
+## [Create a readme for your repo](./git/create-a-readme)  
+## [Share work plans](./work/track/share-plans)  
+## [Team dashboards](./report/dashboards)
+## [Markdown guidance](./reference/markdown-guidance)
+## [Share information using the project portal (TFS)](./report/sharepoint-dashboards/share-information-using-the-project-portal)
+
+
+## Add and manage teams 
+### TBD
+
 ## [Authenticate with personal access tokens](../setup-admin/team-services/use-personal-access-tokens-to-authenticate.md)
 
 
 # Concepts
 ## [Navigational concepts](../connect/work-web-portal.md)
 ## [Software development roles](../roles.md)  
-## ## [Permissions and access](../setup-admin/permissions-access.md)
+## [Permissions and access](../setup-admin/permissions-access.md)
 ## [FAQs](../faqs.md)
 ## [Features](../alm-devops-features.md)
 
