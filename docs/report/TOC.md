@@ -22,7 +22,8 @@
 ### [Create dashboards](powerbi/report-on-vso-with-power-bi-vs.md)
 ### [Create trend charts](powerbi/create-trend-charts.md)
 ### [Create rollup charts](powerbi/create-rollup-charts.md)
-## Power BI - Data Connector
+
+## Power BI - Data Connector (Team Services)
 ### [Connect](powerbi/data-connector-connect.md)
 ### [Functions](powerbi/data-connector-functions.md)
 
@@ -30,6 +31,7 @@
 ## [Work with cumulative flow](guidance/cumulative-flow.md)
 ## [Work with burndowns and burnups](../work/scrum/sprint-burndown.md) 
 ## [Work with team velocity](../work/scrum/velocity-and-forecasting.md)
+
 ## [Add reports to a team project](admin/add-reports-to-a-team-project.md)
 ### [Add a report server](admin/add-a-report-server.md)
 ### [Upload reports to a team project](admin/upload-reports.md)
@@ -60,8 +62,8 @@
 
 
 # Concepts
-### [Choose data source and authoring tool](choose-source-data-authoring-tool.md) 
-### [Components of the data warehouse](sql-reports/components-data-warehouse.md)
+## [Choose data source and authoring tool](choose-source-data-authoring-tool.md) 
+## [Components of the data warehouse](sql-reports/components-data-warehouse.md)
 
 
 # Samples
@@ -100,7 +102,6 @@
 ### [Requirements Progress (CMMI)](excel/requirements-progress-excel-report-cmmi.md)
 ### [Testing Gaps (CMMI)](excel/testing-gaps-excel-report-cmmi.md)
 ### [Excel reports (CMMI)](excel/excel-reports-cmmi.md)
-
 
 ## Reporting Services reports (TFS)
 ### [Reporting Services Reports](sql-reports/reporting-services-reports.md)
@@ -153,7 +154,7 @@
 
 
 ## Project portal dashboards (TFS)
-## [Project portal dashboards (TFS)](sharepoint-dashboards/project-portal-dashboards.md)
+### [Project portal dashboards (TFS)](sharepoint-dashboards/project-portal-dashboards.md)
 ### [My Dashboard (Agile and CMMI)](sharepoint-dashboards/my-dashboard-agile-cmmi.md)
 ### [Project dashboard (Agile and CMMI)](sharepoint-dashboards/project-dashboard-agile-cmmi.md)
 ### [Bugs dashboard (Agile and CMMI)](sharepoint-dashboards/bugs-dashboard-agile-cmmi.md)
