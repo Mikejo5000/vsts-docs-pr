@@ -16,7 +16,6 @@
 ## [Manage the team home page (TFS)](team-dashboard.md)
 ## [Create Excel reports from a work item query](excel/create-status-and-trend-excel-reports.md)
  
-Create Excel reports from a work item query (TFS)
 
 ## Power BI - Content Pack (Team Services)
 ### [Assign permissions (Security)](analytics/analytics-security.md)  
