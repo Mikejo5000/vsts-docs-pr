@@ -16,7 +16,6 @@
 ## [Manage the team home page (TFS)](team-dashboard.md)
 ## [Create Excel reports from a work item query](excel/create-status-and-trend-excel-reports.md)
  
-
 ## Power BI - Content Pack (Team Services)
 ### [Assign permissions (Security)](analytics/analytics-security.md)  
 ### [Connect](powerbi/connect-vso-pbi-vs.md)
@@ -26,8 +25,6 @@
 ## Power BI - Data Connector
 ### [Connect](powerbi/data-connector-connect.md)
 ### [Functions](powerbi/data-connector-functions.md)
-
-
 
 # How to 
 ## [Work with cumulative flow](guidance/cumulative-flow.md)
