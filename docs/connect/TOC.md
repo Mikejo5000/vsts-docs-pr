@@ -16,7 +16,7 @@
 
 # How to
 ## Manage users and access 
-### [Add users (Team Services)](../setup-admin/team-services/add-account-users-assign-access-levels-team-services.md) (Consolidate) 
+### [Add users (Team Services)--Consolidate](../setup-admin/team-services/add-account-users-assign-access-levels-team-services.md) 
 ### [Add users to team projects](../setup-admin/add-users.md)
 ### [Add administrators](../setup-admin/add-administrator-tfs.md)
 ### [Change permission levels](../setup-admin/tfs/admin/change-permission-levels.md)
@@ -34,8 +34,8 @@
 
 ## Set or change your preferences
 ### [Set account preferences](../setup-admin/account-preferences.md)
-### [Follow work and pull requests](follow-work-items.md)
-### [Set personal notifications](manage-personal-notifications.md)
+### [Follow work and pull requests](../collaborate/follow-work-items.md)
+### [Set personal notifications](../manage-personal-notifications.md)
 
 ## Using Azure Active Directory 
 ### [Access with Azure AD](../setup-admin/team-services/manage-organization-access-for-your-account-vs.md)
@@ -44,11 +44,11 @@
  
 # Share information
 ## [Share your project vision](../collaborate/project-vision-status.md)   
-## [Create a readme for your repo](./git/create-a-readme)  
-## [Share work plans](./work/track/share-plans)  
-## [Team dashboards](./report/dashboards)
-## [Markdown guidance](./reference/markdown-guidance)
-## [Share information using the project portal (TFS)](./report/sharepoint-dashboards/share-information-using-the-project-portal)
+## [Create a readme for your repo](https://docs.microsoft.com/en-us/team-services/git/create-a-readme?toc=/connect/toc.json)
+## [Share work plans](https://docs.microsoft.com/en-us/team-services/work/track/share-plans?toc=/connect/toc.json)
+## [Team dashboards](https://docs.microsoft.com/en-us/team-services/report/dashboards?toc=/connect/toc.json)
+## [Markdown guidance](https://docs.microsoft.com/en-us/team-services/reference/markdown-guidance?toc=/connect/toc.json)
+## [Share information using the project portal (TFS)](https://docs.microsoft.com/en-us/team-services/report/sharepoint-dashboards/share-information-using-the-project-portal?toc=/connect/toc.json)
 
 
 ## Add and manage teams 
