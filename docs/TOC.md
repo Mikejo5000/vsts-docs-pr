@@ -2,17 +2,19 @@
 ## [Key concepts](concepts.md)
 ## [Essential services](services.md)
 ## [Clients and tools](tools.md)
+## [Permissions and access](setup-admin/permissions-access.md) 
+
 
 # Quick start
 ## [Set up/sign up with Team Services](setup-admin/team-services/sign-up-for-visual-studio-team-services.md)
 ## [Connect to a team project](connect/connect-team-projects.md)  
-## [Get started with Git](git/gitquickstart.md)
-## [Get started with tracking work](work/agile-project-management.md)
+## [Get started coding with Git](../git/gitquickstart.md)
+## [Get started coding with TFVC](../tfvc/share-your-code-in-tfvc-vs.md)
+## [Get started tracking work](work/agile-project-management.md)
 ## [Get started with CI/CD](build/get-started/ci-cd-part-1.md)
-## [Get started with testing](test/index.md)  
-## [Get started with TFVC](tfvc/overview.md)
+## [Get started testing](test/index.md)  
 ## [Get started as a Stakeholder](work/connect/work-as-a-stakeholder.md)
-
+## [Track work from a mobile device](collaborate/mobile-work.md)
 
 # How to
 ## Manage users and access 
@@ -21,6 +23,7 @@
 ### [Add administrators](setup-admin/add-administrator-tfs.md)
 ### [Change permission levels](setup-admin/tfs/admin/change-permission-levels.md)
 ### [Change access levels](work/connect/change-access-levels.md)
+
 ## Install TFS (Single Server)
 ### [Get started](setup-admin/tfs/install/get-started.md)
 ### [Single server](setup-admin/tfs/install/single-server.md)
@@ -37,11 +40,6 @@
 ### [Follow work and pull requests](collaborate/follow-work-items.md)
 ### [Set personal notifications](manage-personal-notifications.md)
 
-## Using Azure Active Directory 
-### [Access with Azure AD](setup-admin/team-services/manage-organization-access-for-your-account-vs.md)
-### [Access with Azure AD groups](setup-admin/team-services/manage-azure-active-directory-groups-visual-studio-team-services.md)
-### [Change Azure AD](setup-admin/team-services/change-azure-active-directory-team-services-account.md)
- 
 ## Share information
 ### [Share your project vision](collaborate/project-vision-status.md)   
 ### [Create a readme for your repo](https://review.docs.microsoft.com/en-us/team-services/git/create-a-readme?toc=/team-services/connect/toc.json)
@@ -50,6 +48,11 @@
 ### [Markdown guidance](https://review.docs.microsoft.com/en-us/team-services/reference/markdown-guidance?toc=/team-services/connect/toc.json)
 ### [Share information using the project portal (TFS)](https://review.docs.microsoft.com/en-us/team-services/report/sharepoint-dashboards/share-information-using-the-project-portal?toc=/team-services/connect/toc.json)
 
+## Use Azure Active Directory 
+### [Access with Azure AD](setup-admin/team-services/manage-organization-access-for-your-account-vs.md)
+### [Access with Azure AD groups](setup-admin/team-services/manage-azure-active-directory-groups-visual-studio-team-services.md)
+### [Change Azure AD](setup-admin/team-services/change-azure-active-directory-team-services-account.md)
+ 
 
 ## Add and manage teams 
 ### TBD
@@ -65,7 +68,6 @@
 ## [FAQs](faqs.md)
 
 # Reference
-## [Track work from a mobile device](collaborate/mobile-work.md)
 ## [Work in Visual Studio, Team Explorer](connect/work-team-explorer.md)
 ## [Keyboard shortcuts](reference/keyboard-shortcuts.md)
 ## [Markdown guidance](reference/markdown-guidance.md)
