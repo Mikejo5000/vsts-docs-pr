@@ -2,8 +2,6 @@
 # [How to buy Team Services](/docs/setup-admin/team-services/buy-basic-access-add-team-services-users)  
 # [How to buy TFS](https://www.visualstudio.com/team-services/tfs-pricing/)
 # [What's new](whats-new.md)  
-## [Content updates 2017](content-updates/updates-2017.md)  
-## [Content updates 2016](content-updates/updates-2016.md)   
 # Overview
 ## [Features](alm-devops-features.md)
 ## [Key concepts](concepts.md)
