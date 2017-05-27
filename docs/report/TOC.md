@@ -1,7 +1,6 @@
 # Overview
 ## [Charts, dashboards, and widgets (Refactor)](overview.md)
-## [Dashboards and reports](overview.md)
-## Power BI integration overview](powerbi/overview.md)
+## [Power BI integration overview](powerbi/overview.md)
 
 
 # Quick start
