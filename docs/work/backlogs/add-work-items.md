@@ -278,7 +278,7 @@ You can add work items from various clients, such as:
 <a id="switch-team-context">  </a>
 <a id="new-work-items-defaults">  </a>
 
-[!INCLUDE [temp](../_shared/switch-team-context-work.md)]    
+[!INCLUDE [temp](../how-to/switch-team-context-work.md)]    
 
 
 [!INCLUDE [temp](../_shared/help-support-shared.md)]

@@ -385,4 +385,4 @@ A team room is created for each team that gets created. Team administrators can 
 Members of the Project Administrators groups can create and administer team rooms that they have created. And, members of the Project Collection Administrators groups can create and administer all team rooms.  
 
 
-[!INCLUDE [temp](../_shared/switch-team-context-work.md)]
+[!INCLUDE [temp](../how-to/switch-team-context-work.md)]

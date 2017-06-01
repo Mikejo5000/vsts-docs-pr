@@ -3,6 +3,7 @@
 ## [Backlogs, boards, and plans](backlogs-boards-plans.md)
 ## [Processes, process templates, and Agile methods](guidance/choose-process.md)  
 ## [About queries](track/example-queries.md) 
+## [About permissions and access](
 
 # Quick start 
 ## [Schedule sprints](scrum/define-sprints.md)
@@ -186,7 +187,7 @@
  
 
 # Troubleshooting
-## Fix "Ordering backlog items is disabled" (REFACTOR)  
+## [Fix "Ordering backlog items is disabled"](troubleshoot/resolve-backlog-reorder-issues.md)  
 ## [Schedule projects using Project](office/schedule-projects-using-microsoft-project.md)
 ## [Rollup estimated and actual work using Project](office/rollup-estimated-and-actual-work-using-project.md)
 ## [Resolve conflicts and errors](office/resolve-problems-excel-workbooks-sharepoint.md)

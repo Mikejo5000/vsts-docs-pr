@@ -15,6 +15,8 @@
 ## [Get started testing](test/index.md)  
 ## [Get started as a Stakeholder](work/connect/work-as-a-stakeholder.md)
 ## [Track work from a mobile device](collaborate/mobile-work.md)
+## [Switch project or team focus](work/how-to/switch-team-context-work.md)  
+
 
 # How to
 ## Manage users and access 
@@ -46,7 +48,7 @@
 ### [Share work plans](https://review.docs.microsoft.com/en-us/team-services/work/track/share-plans?toc=/team-services/connect/toc.json)
 ### [Team dashboards](https://review.docs.microsoft.com/en-us/team-services/report/dashboards?toc=/team-services/connect/toc.json)
 ### [Markdown guidance](https://review.docs.microsoft.com/en-us/team-services/reference/markdown-guidance?toc=/team-services/connect/toc.json)
-### [Share information using the project portal (TFS)](https://review.docs.microsoft.com/en-us/team-services/report/sharepoint-dashboards/share-information-using-the-project-portal?toc=/team-services/connect/toc.json)
+
 
 ## Use Azure Active Directory 
 ### [Access with Azure AD](setup-admin/team-services/manage-organization-access-for-your-account-vs.md)

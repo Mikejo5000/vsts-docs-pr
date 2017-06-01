@@ -162,11 +162,11 @@ The following table indicates those elements or tasks associated with each type 
 </tr>
 
 <tr>
-<td>Customize: Columns</td>
-<td>Yes, see [Column options](#column-options)</td>
-<td>Yes, see [Column options](#column-options)</td>
+<td>Customize: Columns  </td>
+<td>Yes, see [Set column options](how-to/set-column-options.md)</td>
+<td>Yes, see [Set column options](how-to/set-column-options.md)</td>
 <td>Yes, see [Add columns](kanban/add-columns.md)</td>
-<td>Yes, see [Column options](#column-options)</td>
+<td>Yes, see [Set column options](how-to/set-column-options.md)</td>
 <td>Yes, see [Customize workflow](process/customize-process-workflow.md)</td>
 </tr>
 
@@ -325,29 +325,9 @@ In addition, several tools reference the team's default iteration and associated
 <div style="clear:left;font-size:100%">
 </div>
 
-<a id="display-hierarchy">  </a>
-## Fix "Ordering backlog items is disabled" 
-
-When a sprint backlog contains same-category, nested  work items&mdash;as described in the next section, [How backlogs and boards display hierarchical (nested) items](#nested)&mdash;the system disables the drag-and-drop reorder feature. It does this as it determines that not all items display under these circumstances.  
-
-To fix this, take the following actions: 
-
-1. Click the **Create query** link on the backlog page. 
-    
-	![Create query of backlog](_img/backlogs-boards-create-query.png)
-
-2. Open the query (click the link that appears). 
-
-3. Review the list of items to determine which items are nested. For example, the following query shows that a bug is a child of a user story. Because the team has configured their backlog to display user stories and bugs at the same level (Requirements category), this corresponds to a nested item that disables the ordering feature. 
-
-	![Query of backlog with a nested item](_img/backlogs-boards-query-nested-items.png)
-
-4. Remove all parent-child links that exist among nested items. 
-
-5. Return to the backlog page and refresh the page. 
  
 <a id="nested">  </a>
-### How backlogs and boards display hierarchical (nested) items 
+## How backlogs and boards display hierarchical (nested) items 
  
 While you can create a hierarchy of backlog items, tasks, and bugs&mdash;we don't recommend that you create same-category hierarchies. That is, don't create parent-child links among work items of the same type, such as story-story, bug-bug, task-task. The reason is that the Kanban board, sprint backlog, and task board only show the last node in a same-category hierarchy, called the leaf node. For example, if you link items within a same-category hierarchy that is four levels deep, only the items at the fourth level appear on the Kanban board, sprint backlog, and task board.  
 
@@ -456,13 +436,7 @@ You may find additional tools to help plan and track your work from the [Visual 
 
 [!INCLUDE [temp](../_shared/switch-team-context.md)]  
 
-<a id="column-options">  </a>
-### Column options 
-From each backlog page, you can add or remove columns. Or, you can drag a column to a new position. Start by opening the Column Options.  Unlike a query result, you can't sort a backlog by column. However, you can use the Create Query option on each backlog to create a query that you can sort on any field column you choose.
 
-Each user can set their own column options which persist for each product or portfolio backlog across user sessions.  
-
-<img src="_img/b-vs-b-column-options.png" alt="Open column options" style="border: 1px solid #CCCCCC;" />  
 
  
 
@@ -490,8 +464,6 @@ These reasons can cause work items that belong to the Task Category to not appea
 	>In Team Services and TFS 2015.2 and later versions, tasks linked to a parent work item assigned to another team's area path will appear under the *Unparented* section.
 
  
- 
-
 ### In Progress items filter
  
 The In progress items Show/Hide filter causes some backlog items to display or not display. Bugs and other backlog items aren't listed when In progress items=Hide and their assigned State corresponds to In Progress state category. Bugs in a New state will display, however, bugs in an Assigned state won't. 

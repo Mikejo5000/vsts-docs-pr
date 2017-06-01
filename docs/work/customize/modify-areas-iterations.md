@@ -39,7 +39,7 @@ The iterations you see depend on the process you used to create your team projec
 
 ## Agile tools that rely on areas or iterations
 
-[!INCLUDE [temp](../_shared/agile-tools-areas-iterations-summary.md)]
+[!INCLUDE [temp](../concepts/agile-tools-areas-iterations.md)]
 
 
 #### Team defaults referenced by backlogs and boards

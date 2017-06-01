@@ -467,7 +467,7 @@ The [Stack Rank](../track/planning-ranking-priorities.md) field is used to track
 
 This field doesn't appear on the work item form. 
 
-[!INCLUDE [temp](../_shared/switch-team-context-work.md)]  
+[!INCLUDE [temp](../how-to/switch-team-context-work.md)]  
   
 
 ### Links control, client work item form 

@@ -17,23 +17,8 @@ Each team has access to a number of Agile tools. Each tool references the team's
 
 Prior to setting team defaults, [add the teams](multiple-teams.md) you want and [schedule your shared sprint schedule](../scrum/define-sprints.md). Optionally, [add area paths](../customize/modify-areas-iterations.md) you want to use to group work items. 
 
-[!INCLUDE [temp](../_shared/agile-tools-areas-iterations-summary.md)]
+Also, review [Agile tools that rely on areas and iterations](../concepts/agile-tools-areas-iterations.md).
 
-####Team defaults referenced by backlogs and boards
-
-[!INCLUDE [temp](../_shared/team-defaults-referenced-by-team-tools.md)]
-
-
-<a id="default_path">  </a>
-###Backlog iteration versus default iteration 
-
-For TFS platforms, the default iteration is the same as the backlog iteration. The one value selected both filters items that appear on the team's backlogs and boards, and is assigned to work items created from the team context.  
-
-For Team Services, teams can now set a default iteration different from the backlog iteration. The backlog iteration determines which items appear on the team's backlogs and boards. And, the default iteration determines what value is assigned to work items created from the team context. 
-
-For both platforms, all work items that you create from your team context are automatically assigned both the team's default area path and default iteration path. 
-
-You navigate to your team context from the top navigation bar.  
 
 <img src="../_shared/_img/switch-team-project-2.png" alt="Choose another team from the team project menu" style="border: 1px solid #CCCCCC;" />  
 
@@ -104,6 +89,18 @@ You [define sprints for the team project](../scrum/define-sprints.md) and then a
 
 You activate sprints for each team from the admin pages for each team context. The steps differ slightly depending on your platform.
 
+<a id="default_path">  </a>
+###Backlog iteration versus default iteration 
+
+For TFS platforms, the default iteration is the same as the backlog iteration. The one value selected both filters items that appear on the team's backlogs and boards, and is assigned to work items created from the team context.  
+
+For Team Services, teams can now set a default iteration different from the backlog iteration. The backlog iteration determines which items appear on the team's backlogs and boards. And, the default iteration determines what value is assigned to work items created from the team context. 
+
+For both platforms, all work items that you create from your team context are automatically assigned both the team's default area path and default iteration path. 
+
+You navigate to your team context from the top navigation bar.  
+
+
 <a id="activate-team-services">  </a>
 ### For Team Services  
 
@@ -170,7 +167,8 @@ You activate sprints for each team from the admin pages for each team context. T
 
 ##Related notes  
 
-- [Define sprints](../scrum/define-sprints.md)  
+- [Agile tools that rely on areas and iterations](../concepts/agile-tools-areas-iterations.md)
+- [Schedule sprints](../scrum/define-sprints.md)  
 - [Customize area and iteration paths](../customize/modify-areas-iterations.md)  
 - [Query by date or current iteration](../track/query-by-date-or-current-iteration.md)
 - [Multiple teams](multiple-teams.md)  

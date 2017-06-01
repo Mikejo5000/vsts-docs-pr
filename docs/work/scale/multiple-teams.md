@@ -15,76 +15,12 @@ ms.date: 04/06/2017
 
 <b>Team Services | TFS 2017 | TFS 2015 | TFS 2013 </b>  
 
-As your organization grows, you'll want to make sure that you configure your Agile tools to support that growth. To enable each feature team the autonomy it needs to manage their backlog and plan their sprints, they need their own set of team tools. 
-
->[!NOTE]  
->In this topic you can learn how to add a team or add team members to Team Services or TFS. To learn about Microsoft Teams, see the Marketplace extension, [Microsoft Teams Integration](https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-teams). 
-
 Adding a team is the #1 way in which Agile tools supports a growing organization. Once your team grows beyond its optimum size&mdash;typically anywhere from 6 to 9 members&mdash;you might consider moving from a one team structure to a two team structure. For enterprises adopting Agile tools, setting up a hierarchical team structure provides several advantages to portfolio and program managers to track progress across several teams.  
-
-Each team you create gets access to a suite of Agile tools and team assets. These tools provide teams the ability to work autonomously and collaborate with other teams across the enterprise. 
-
-![Agile tool team assets](_img/agile-tools-team-assets.png)
-
-To learn more about each tool, see the following topics: 
-
-<div style="float:left;width:200px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Plan and track</p>
-<ul style="padding-left:30px">
- <li style="margin-bottom:2px">[Product backlog](../backlogs/create-your-backlog.md)</li>
- <li style="margin-bottom:2px">[Kanban board](../kanban/kanban-basics.md)</li>
- <li style="margin-bottom:2px">[Portfolio backlogs](../backlogs/define-features-epics.md)</li>
- <li style="margin-bottom:2px">[Sprint backlogs](../scrum/sprint-planning.md)</li>
- <li style="margin-bottom:2px">[Sprint task boards](../scrum/task-board.md)</li>
- <li style="margin-bottom:2px">[Capacity planning](capacity-planning.md)</li>
- <li style="margin-bottom:2px">[Forecasting](../scrum/velocity-and-forecasting.md)</li>
-</ul>
-</div>
-
-
-<div style="float:left;width:200px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Collaborate</p>
-<ul style="padding-left:30px">
- <li style="margin-bottom:2px">[Team alerts](../track/alerts-and-notifications.md)</li>
- <li style="margin-bottom:2px">[Team favorites](manage-team-assets.md#team-favorites)</li>
- <li style="margin-bottom:2px">[Team group](manage-team-assets.md#team-group)</li>
- <li style="margin-bottom:2px">[Team rooms](../../collaborate/collaborate-in-a-team-room.md)</li>
-
-</ul>
-</div>
-
-<div style="float:left;width:200px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Monitor and learn</p>
-<ul style="padding-left:30px">
-<li style="margin-bottom:2px">[Velocity chart](../scrum/velocity-and-forecasting.md)</li>
- <li style="margin-bottom:2px">[Cumulative flow chart](../../report/guidance/cumulative-flow.md)</li>
- <li style="margin-bottom:2px">[Capacity bars per sprint](capacity-planning.md)</li>
- <li style="margin-bottom:2px">[Sprint burndown charts](../scrum/sprint-burndown.md)</li>
- <li style="margin-bottom:2px">[Team dashboards](../../report/dashboards.md) </li> 
-</ul>
-</div>
-
-
-<div style="clear:left;font-size:100%">
-</div>
 
 [!INCLUDE [temp](../_shared/image-differences.md)]  
 
-<a id="add-team"> </a>  
-## View teams or switch to a different team  
-
-To view a list of teams defined for a team project, open the admin context for the team project, and choose **Overview**.  
-
->[!NOTE]  
->**Feature availability**: The **Change process** link is only supported for team projects that use the [Inheritance process model](../customize/customize-work.md#inheritance).  
-
-<img src="_img/multiple-teams-view-teams.png" alt="Web portal, admin context, team project, Overview page" style="border: 1px solid #CCCCCC;" /> 
-
-[!INCLUDE [temp](../_shared/switch-team-context-work.md)]  
 
 
-### Switch to a team project or team from the account hub 
-If you work in Team Services or TFS 2017.1, you can use your account hub to view and quickly navigate to teams, team projects, branches, work items, pull requests and other objects that are relevant to you. For details, see [Work effectively from your account hub](../../connect/account-home-pages.md).  
 
 
 <a id="add-team"> </a>  
@@ -192,12 +128,6 @@ By default, team members inherit the permissions afforded to members of the team
 
 If your on-premises TFS deployment includes reporting or SharePoint Products, add users to those resources. See [Add users to a team project](../../setup-admin/add-users.md). 
 
-<a id="team-group"> </a>
-###Team group 
-
-You can use this group to filter queries. The name of team groups follows the pattern [Team Project Name]\Team Name. For example, the following query finds work assigned to members of the [Fabrikam Fiber]\Email team group.
-
-<img src="_img/query-in-group-email-team-work-in-progress.png" alt="Web portal, Queries page, Query that uses In Group operator and team group name" style="border: 1px solid #CCCCCC;" /> 
 
 
 ##Try this next 
@@ -209,28 +139,8 @@ If team members don't have access to all the features they want, check that they
 ### Stakeholder access  
 By granting users a Stakeholder license or adding them to the [Stakeholder access level](../connect/work-as-a-stakeholder.md), you enable them to create and modify work items that they create. Stakeholders can report code defects, suggest a product feature, or further annotate their feedback responses.
 
-## Related notes
 
-From a specific team admin page, you can rename a team or change the team description. Here are a few other topics related to working with teams: 
- 
-- [Configure team settings, add team administrators](manage-team-assets.md)  
-- [Visibility across teams](visibility-across-teams.md)  
-- [Review team plans](review-team-plans.md)    
-- [Track work when contributing to several teams](capacity-planning.md)
-- [Scaled Agile Framework](scaled-agile-framework.md)   
-- [Practices that scale](practices-that-scale.md) 
-- [Restrict access to select features and functions](../../setup-admin/restrict-access-tfs.md)   
-
-
-### Work on more than one team
-
-Can a user account belong to more than one team?  
-
-Yes. When you add user accounts to a team project, you can add them as members of the team project, or you can add them to one or more teams added to the team project. If you work on two or more Scrum teams, you'll want to make sure you, [specify your sprint capacity for each team you work on](capacity-planning.md). 
-
-
-
-### Delete a team 
+## Delete a team 
 
 1. To delete a team, open the team project admin context, open the &hellip; context menu for the team you want to delete, and choose the **Delete** option.   
 
@@ -245,5 +155,19 @@ Yes. When you add user accounts to a team project, you can add them as members o
 
 	<img src="_img/multiple-teams-delete-team-confirmation-dialog.png" alt="Delete team confirmation dialog" style="border: 1px solid #CCCCCC;" />  
  
+
+
+## Related notes
+
+From a specific team admin page, you can rename a team or change the team description. Here are a few other topics related to working with teams: 
+ 
+- [Configure team settings, add team administrators](manage-team-assets.md)  
+- [Visibility across teams](visibility-across-teams.md)  
+- [Review team plans](review-team-plans.md)    
+- [Track work when contributing to several teams](capacity-planning.md)
+- [Scaled Agile Framework](scaled-agile-framework.md)   
+- [Practices that scale](practices-that-scale.md) 
+- [Restrict access to select features and functions](../../setup-admin/restrict-access-tfs.md)   
+
 
 

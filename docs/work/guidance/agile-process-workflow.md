@@ -247,7 +247,7 @@ You can use the Priority field to differentiate the value of various stories. Or
 The [Stack Rank](../track/planning-ranking-priorities.md) field is used to track the relative ranking of user stories, however by default it doesn't appear on the work item form. The sequence of items on the backlog page is determined according to where you have [added the items or moved the items on the page](../backlogs/create-your-backlog.md#move-items-priority-order). As you drag items, a background process updates this field.
 
 
-[!INCLUDE [temp](../_shared/switch-team-context-work.md)]  
+[!INCLUDE [temp](../how-to/switch-team-context-work.md)]  
 
 ### Links control, client work item form 
 

@@ -188,7 +188,7 @@ For more opportunities to adopt Kanban practices and customize your team's Kanba
 
 [!INCLUDE [temp](../_shared/assign-to-sprint.md)]  
 
-[!INCLUDE [temp](../_shared/switch-team-context-work.md)]   
+[!INCLUDE [temp](../how-to/switch-team-context-work.md)]   
 
 <!---
 <a id="text-filter"></a>

@@ -12,17 +12,19 @@ ms.date: 06/01/2016
 
 
 
-# Customize area paths  
+# Define area paths  
 
 <b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
 
 Area paths allow you to group work items by team, product, or feature area. Whereas, [iteration paths](set-iteration-paths-sprints.md) allow you to group work into sprints, milestones, or other event-specific or time-related period. Both these fields allow you to define a hierarchy of paths. 
 
+You define area paths for a team project. Teams can then choose which area paths are used to support their backlog and other Agile tools. To understand how Agile tools use area paths, see [Agile tools that rely on areas and iterations](../concepts/agile-tools-areas-iterations.md).
+
 Newly created team projects contain a single, root area that corresponds to the team project name.  
  
 [!INCLUDE [temp](../_shared/image-differences.md)] 
 
-<img src="(_img/areas-iterations-areas-intro-ts-2016.png" alt="A set of sample area paths" style="border: 1px solid #CCCCCC;" /> 
+<img src="_img/areas-iterations-areas-intro-ts-2016.png" alt="A set of sample area paths" style="border: 1px solid #CCCCCC;" /> 
 
  
 <a id="open-admin-context">  </a>
@@ -203,25 +205,7 @@ When you rename an area or an iteration, or move the node within the tree hierar
 
 When you delete an area or an iteration node, the system automatically updates the existing work items with the node that you enter at the deletion prompt. 
 
-
-
-
-
-## Related notes 
-As you can see, areas and iterations play a major role in supporting Agile tools and managing work items. You can learn more about working with these fields from these topics: 
-
-*	[Add another team](../scale/multiple-teams.md)  
-*	[Set team defaults](../scale/set-team-defaults.md)  
-*	[Configure team settings and add team administrators](../scale/manage-team-assets.md)   
-*	[Permissions and access](../../setup-admin/permissions-access.md)  
-
-
-<a name="permissions"></a>
-###Required permissions 
-
-To create or modify areas or iterations, you must either be a member of the **Project Administrators** group, or your **Create and order child nodes**, **Delete this node**, and **Edit this node** permissions must be set to **Allow** for the area or iteration node that you want to modify.
-
-### Chart progress by area or iteration
+## Chart progress by area or iteration
 
 You can quickly generate [queries](../track/using-queries.md) to view the progress for those areas and iterations. As an example, you can [visualize progress of work items assigned to sprints](../../report/charts.md) as shown in the following stacked bar chart.  
 
@@ -229,8 +213,40 @@ You can quickly generate [queries](../track/using-queries.md) to view the progre
 
 
 
+
+
+## Related notes 
+As you can see, areas play a major role in supporting Agile tools and managing work items. You can learn more about working with these fields from these topics: 
+
+*	[Add another team](../scale/multiple-teams.md)  
+*	[Set team defaults](../scale/set-team-defaults.md)  
+*	[Configure team settings and add team administrators](../scale/manage-team-assets.md)   
+*	[Agile tools that rely on areas or iterations](../concepts/agile-tools-areas-iterations.md)
+*	[Permissions and access](../../setup-admin/permissions-access.md)  
+
+
+<a name="permissions"></a>
+### Required permissions 
+
+To create or modify areas or iterations, you must either be a member of the **Project Administrators** group, or your **Create and order child nodes**, **Delete this node**, and **Edit this node** permissions must be set to **Allow** for the area or iteration node that you want to modify.
+
+
+### What kind and how many areas should a team define?
+
+You add areas to support your team's trace-ability and security requirements. Use areas to represent logical or physical components, and then create child areas to represent specific features.  
+
+Add areas when you have these requirements: 
+*	Filter queries based on a product or feature area 
+*	Organize or group work items by team or sub-teams  
+*	Restrict access to work items based on their area.  
+
+Each team can create a hierarchy of areas under which the team can organize their backlog items, user stories, requirements, tasks, and bugs.
+
+Avoid creating an area structure that is too complex. You can create areas to partition permissions on work items, but complex trees require significant overhead for permission management. You might find that it is too much work to duplicate the structure and permissions in other team projects.
+
+
 <a name="name-restrictions"></a>
-###Naming restrictions 
+### Naming restrictions 
 
 The **Area Path** and **Iteration Path** fields, [data type=TreePath](../reference/define-modify-work-item-fields.md), consist of multiple node items which are separated by the backslash (&#92;) character. We recommend that you minimize the names of nodes, and make sure that you conform to the following restrictions when adding child nodes:
 
@@ -244,7 +260,7 @@ The **Area Path** and **Iteration Path** fields, [data type=TreePath](../referen
 
 
 <a name="field-rules"></a>
-###Supported field rules (TFS)  
+### Supported field rules (TFS)  
 
 You can [specify only a small subset of rules](../reference/apply-rule-work-item-field.md#system), such as ```HELPTEXT``` and ```READONLY``` to System.XXX fields. 
 
@@ -260,16 +276,3 @@ If your organization has several teams that work from a common backlog and acros
 
 
  
-
-### What kind and how many areas should a team define?
-
-You add areas to support your team's trace-ability and security requirements. Use areas to represent logical or physical components, and then create child areas to represent specific features.  
-
-Add areas when you have these requirements: 
-*	Filter queries based on a product or feature area 
-*	Organize or group work items by team or sub-teams  
-*	Restrict access to work items based on their area.  
-
-Each team can create a hierarchy of areas under which the team can organize their backlog items, user stories, requirements, tasks, and bugs.
-
-Avoid creating an area structure that is too complex. You can create areas to partition permissions on work items, but complex trees require significant overhead for permission management. You might find that it is too much work to duplicate the structure and permissions in other team projects.

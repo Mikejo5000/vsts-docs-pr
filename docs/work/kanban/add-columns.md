@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: 8afd3481-6fab-401d-90ff-0dd443da0f0e
 ms.manager: douge
 ms.author: kaelli
-ms.date: 02/12/2017
+ms.date: 06/01/2017
 ---
 
 #Add columns
@@ -15,7 +15,7 @@ ms.date: 02/12/2017
 
 
 >[!NOTE]  
->If you're looking at how to add columns to a task board, you need to customize the workflow. For details, see [Customize your work tracking experience](../customize/customize-work.md). To add columns to a backlog or query results, see [Column options](../backlogs-boards-plans.md#column-options).   
+>If you're looking at how to add columns to a task board, you need to customize the workflow. For details, see [Customize your work tracking experience](../customize/customize-work.md). To add columns to a backlog or query result, see [Set column options](../how-to/set-column-options.md).   
 >
 >For an overview of the features supported on each backlog and board, see [Backlog, board, and plan views](../backlogs-boards-plans.md).
 

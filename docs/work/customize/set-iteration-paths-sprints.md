@@ -19,6 +19,8 @@ ms.date: 06/01/2016
 Iteration paths allow you to group work into sprints, milestones, or other event-specific or time-related period. Whereas, [area paths](set-area-paths.md) allow you to group work items by team, product, or feature area.  
  
 
+You define iteration paths for a team project. Teams can then choose which iteration paths are used to support their sprint backlog and other Agile tools. To understand how Agile tools use interation paths, see [Agile tools that rely on areas and iterations](../concepts/agile-tools-areas-iterations.md).
+
 Newly created team projects contain a single, root area that corresponds to the team project name. Team projects typically specify a predefined set of iterations to help you get started tracking your work. All you need to do is specify the dates.  
 
 The iterations you see depend on the process you used to create your team project. Here we show the defaults defined for the Scrum process. No dates are set. You set dates to correspond to your sprint or release schedules.
@@ -26,7 +28,7 @@ The iterations you see depend on the process you used to create your team projec
  
 [!INCLUDE [temp](../_shared/image-differences.md)] 
 
-<img src="(_img/areas-iterations-iterations-intro-ts-2016.png" alt="Default iterations, Scrum process" style="border: 1px solid #CCCCCC;" /> 
+<img src="_img/areas-iterations-iterations-intro-ts-2016.png" alt="Default iterations, Scrum process" style="border: 1px solid #CCCCCC;" /> 
   
 <a id="open-admin-context">  </a>
 ## Open the administration context for the team project  
@@ -220,9 +222,17 @@ From the **Iterations** page, you can add and select the iterations that will be
 
 -->
  
+## Chart progress by area or iteration
+
+You can quickly generate [queries](../track/using-queries.md) to view the progress for those areas and iterations. As an example, you can [visualize progress of work items assigned to sprints](../../report/charts.md) as shown in the following stacked bar chart.  
+
+<img src="_img/ALM_CW_StackedBarChart.png" alt="Stacked bar chart by area" style="border: 1px solid #CCCCCC;" /> 
+
+
+ 
 
 <a name="rename-delete"></a>
-### Rename or delete an area or iteration node 
+## Rename or delete an area or iteration node 
 
 When you rename an area or an iteration, or move the node within the tree hierarchy, the system will automatically update the work items and queries that reference the existing path or paths. 
 
@@ -234,7 +244,8 @@ As you can see, areas and iterations play a major role in supporting Agile tools
 *	[Add another team](../scale/multiple-teams.md)  
 *	[Set team defaults](../scale/set-team-defaults.md)  
 *	[Agile tools and sprint definitions ](../scrum/define-sprints.md)  
-*	[Manage team assets ](../scale/manage-team-assets.md)  
+*	[Agile tools that rely on areas or iterations](../concepts/agile-tools-areas-iterations.md)
+*	[Configure team settings and add team administrators](../scale/manage-team-assets.md)  
 *	[Query by date or current iteration](../track/query-by-date-or-current-iteration.md)  
 *	[Permissions and access](../../setup-admin/permissions-access.md)  
 
@@ -243,36 +254,7 @@ As you can see, areas and iterations play a major role in supporting Agile tools
 
 To create or modify areas or iterations, you must either be a member of the **Project Administrators** group, or your **Create and order child nodes**, **Delete this node**, and **Edit this node** permissions must be set to **Allow** for the area or iteration node that you want to modify.
 
-### Chart progress by area or iteration
 
-You can quickly generate [queries](../track/using-queries.md) to view the progress for those areas and iterations. As an example, you can [visualize progress of work items assigned to sprints](../../report/charts.md) as shown in the following stacked bar chart.  
-
-<img src="_img/ALM_CW_StackedBarChart.png" alt="Stacked bar chart by area" style="border: 1px solid #CCCCCC;" /> 
-
-
- 
-
-
-<a name="name-restrictions"></a>
-###Naming restrictions 
-
-The **Area Path** and **Iteration Path** fields, [data type=TreePath](../reference/define-modify-work-item-fields.md), consist of multiple node items which are separated by the backslash (&#92;) character. We recommend that you minimize the names of nodes, and make sure that you conform to the following restrictions when adding child nodes:
-
-| Restriction type                 | Restriction                                 | 
-| -------------------------------- | ------------------------------------------- | 
-| Node length | Must not contain more than 255 characters | 
-| Special characters for nodes | Must not contain Unicode control characters<br/>Must not contain any of the following characters: \ / $ ? * : " & > < # % + ,<br/>Must not contain characters that the [local file system prohibits](https://msdn.microsoft.com/library/aa365247.aspx). | 
-| Reserved names | Must contain more than a period (.) or two periods (..)<br/>Must not be a [system-reserved name](https://msdn.microsoft.com/library/aa365247.aspx) such as PRN, COM1, COM2, COM3, COM4, COM5, COM6, COM7, COM8, COM9, COM10, LPT1, LPT2, LPT3, LPT4, LPT5, LPT6, LPT7, LPT8, LPT9, NUL, CON, or AUX<br/>| 
-| Path length | Must contain fewer than 4,000 Unicode characters | 
-| Path hierarchy depth | Must be fewer than 14 levels deep | 
-
-
-
-<a name="export"></a>
-###Export tree structures  
-
-You can't export the structure of tree paths for one team project to use with another team project.  
- 
 ### What kind and how many iterations should a team define?
 
 You define as many child iterations as you need to reflect your project lifecycle. These paths represent a series of events, such as sprints, pre-beta and beta deliverables, and other release milestones. Teams typically leave work items assigned to the team's default iteration if they are not yet scheduled for work or for a release.  
@@ -295,3 +277,24 @@ As the following example shows, the Beta 1 iteration now contains three child no
 <img src="_img/ALM_CW_IterationHierarchy-After.png" alt="Hierarchical Iteration Hierarchy" style="border: 1px solid #CCCCCC;" />  
 
 Iterations do not enforce any rules. For example, you can assign a task to an iteration but not close or complete it during that iteration. At the end of an iteration, you should find all work items that remain active or have not been closed for that iteration and take appropriate action. You can, for example, move them to a different iteration or return them to the backlog.
+
+<a name="name-restrictions"></a>
+###Naming restrictions 
+
+The **Area Path** and **Iteration Path** fields, [data type=TreePath](../reference/define-modify-work-item-fields.md), consist of multiple node items which are separated by the backslash (&#92;) character. We recommend that you minimize the names of nodes, and make sure that you conform to the following restrictions when adding child nodes:
+
+| Restriction type                 | Restriction                                 | 
+| -------------------------------- | ------------------------------------------- | 
+| Node length | Must not contain more than 255 characters | 
+| Special characters for nodes | Must not contain Unicode control characters<br/>Must not contain any of the following characters: \ / $ ? * : " & > < # % + ,<br/>Must not contain characters that the [local file system prohibits](https://msdn.microsoft.com/library/aa365247.aspx). | 
+| Reserved names | Must contain more than a period (.) or two periods (..)<br/>Must not be a [system-reserved name](https://msdn.microsoft.com/library/aa365247.aspx) such as PRN, COM1, COM2, COM3, COM4, COM5, COM6, COM7, COM8, COM9, COM10, LPT1, LPT2, LPT3, LPT4, LPT5, LPT6, LPT7, LPT8, LPT9, NUL, CON, or AUX<br/>| 
+| Path length | Must contain fewer than 4,000 Unicode characters | 
+| Path hierarchy depth | Must be fewer than 14 levels deep | 
+
+
+
+<a name="export"></a>
+###Export tree structures  
+
+You can't export the structure of tree paths for one team project to use with another team project.  
+ 
