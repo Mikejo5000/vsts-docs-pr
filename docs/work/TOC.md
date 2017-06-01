@@ -1,11 +1,10 @@
 # Overview
 ## [About Agile tools](overview.md) 
 ## [Backlogs, boards, and plans](backlogs-boards-plans.md)
-## Processes, process templates, and Agile methods (TBW) 
+## [Processes, process templates, and Agile methods](guidance/choose-process.md)  
 ## [About queries](track/example-queries.md) 
 
-# Quick start
-## [Plan and track work](agile-project-management.md) 
+# Quick start 
 ## [Schedule sprints](scrum/define-sprints.md)
 ## [Set team defaults](scale/set-team-defaults.md)
 ## [Add work items (new form)](backlogs/add-work-items.md)
@@ -18,10 +17,16 @@
 ## [Query using the search box](track/search-box-queries.md) 
 
 
-# How to 
-## [Choose a process](guidance/choose-process.md)
-## [Switch team focus](_shared/switch-team-context-work.md)  
-## Manage permissions and access (TBW) 
+# How to
+## [Switch project or team focus](_shared/switch-team-context-work.md)  
+
+## Set up
+###[Define area paths](customize/set-area-paths.md) 
+###[Define iteration paths](customize/set-iteration-paths-sprints.md) 
+###[Set team defaults](scale/set-team-defaults.md)
+###[Manage permissions and access](how-to/set-permissions-access-work-tracking.md) 
+
+
 ## [Storyboard your ideas](office/storyboard-your-ideas-using-powerpoint.md)
 
 ## Add and bulk modify work items 
@@ -84,18 +89,16 @@
 ## Teams
 ### [Add teams and team members](scale/multiple-teams.md)
 ### Add team administrators (REFACTOR)
-### [Work item templates](productivity/work-item-template.md)
+### [Define work item templates](productivity/work-item-template.md)
 ### [Set team notifications](../collaborate/manage-team-notifications.md)
 
 ### Configure team settings
-#### [Set team defaults](scale/set-team-defaults.md)
-#### [Select backlog navigation levels](customize/select-backlog-navigation-levels.md)
+#### [Configure team settings (REFACTOR)](scale/manage-team-assets.md)
+#### [Select backlog levels](customize/select-backlog-navigation-levels.md)
 #### [Show bugs on backlogs and boards](customize/show-bugs-on-backlog.md)
-#### Set working days  (TBD) 
+#### [Set working days](customize/set-working-days.md) 
 #### Set team favorites (REFACTOR) 
-#### [Configure team settings](scale/manage-team-assets.md)
-#### [Customize cards](customize/customize-cards.md)
-### [Team velocity](scrum/velocity-and-forecasting.md)  
+#### [Customize cards](customize/customize-cards.md) 
 ### [Team rooms](../collaborate/collaborate-in-a-team-room.md)  
 
 ## Scale 
@@ -116,16 +119,15 @@
 
 
 # Concepts
-## [Clients that support work tracking](../tools.md)
-## Teams, team projects, and project collections (REFACTOR) 
-## [Agile culture and configuring your Agile tools to scale](scale/agile-culture.md)
-## Process, process model, and Agile methodologies (TBW)
+
+## [Agile tools that rely on areas or iterations](concepts/agile-tools-areas-iterations.md)
 ## [Adhoc vs managed queries](track/adhoc-vs-managed-queries.md) 
+## [Agile culture and scale](scale/agile-culture.md)
+## [Workflow states and state categories](concepts/workflow-and-state-categories.md)
 ## [Link types and link relationships](track/link-work-items-support-traceability.md) 
 ## [Office integration](office/track-work-vsts-tfs.md)
 
 ## Default processes/process templates
-### [Choose a process](guidance/choose-process.md)
 ### [Agile process](guidance/agile-process.md)
 ### [Agile work item types and workflow](guidance/agile-process-workflow.md)
 ### [Scrum process](guidance/scrum-process.md)
@@ -138,6 +140,7 @@
 ## Example managed queries  
 ### [Query titles, id, or descriptions](track/titles-ids-descriptions.md)
 ### [Query by assignment or workflow changes](track/query-by-workflow-changes.md)  
+### [Query by area or iteration path](track/query-by-area-iteration-path.md)   
 ### [Query by date or current iteration](track/query-by-date-or-current-iteration.md)   
 ### [Query history](track/history-and-auditing.md)  
 ### [Query a numeric field](track/query-numeric.md)  
@@ -145,13 +148,13 @@
 ### [Query by build and test integration fields](track/build-test-integration.md)  
 ### [Query by links or attachments](track/linking-attachments.md)  
 ### [Work item field index](guidance/work-item-field.md)  
-## Example adhoc queries (TBD) 
+
+## Example adhoc queries (../earch/workitem/get-started.md) 
 
 
 # Reference
 ## [Query fields, operators and macros](track/query-operators-variables.md)
-
-
+## [Object limits](customize/object-limits.md)
 ## [Field index](guidance/work-item-field.md)
 ### [Code review and feedback field reference](guidance/guidance-code-review-feedback-field-reference.md)
 ### [Bugs, issues, and risks  field reference](guidance/cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md)
@@ -192,14 +195,16 @@
 ### [Resolve invalid links in an Excel tree list](office/resolve-excel-invalid-links-tree-list.md)
 
 # Resources
-## [Change access levels](connect/change-access-levels.md)
-## [Stakeholder access](connect/work-as-a-stakeholder.md)
+## [Clients that support work tracking](../tools.md)
 ## [New work item experience](process/new-work-item-experience.md)
 ## [Manage new form rollout](customize/manage-new-form-rollout.md)
 ## [Productivity tips](https://www.visualstudio.com/docs/work/productivity/productivity-tips)
 
 
-
+# TBD
+## [Stakeholder access](connect/work-as-a-stakeholder.md)
+## [Change access levels](connect/change-access-levels.md)
+## [Team velocity](scrum/velocity-and-forecasting.md) 
 
 
 
