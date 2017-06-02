@@ -12,13 +12,12 @@ ms.date: 06/01/2016
 
 
 
-# Customize area and iteration paths  
+# Define iteration paths (aka sprints) 
 
 <b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
 
 Iteration paths allow you to group work into sprints, milestones, or other event-specific or time-related period. Whereas, [area paths](set-area-paths.md) allow you to group work items by team, product, or feature area.  
  
-
 You define iteration paths for a team project. Teams can then choose which iteration paths are used to support their sprint backlog and other Agile tools. To understand how Agile tools use interation paths, see [Agile tools that rely on areas and iterations](../concepts/agile-tools-areas-iterations.md).
 
 Newly created team projects contain a single, root area that corresponds to the team project name. Team projects typically specify a predefined set of iterations to help you get started tracking your work. All you need to do is specify the dates.  
@@ -38,8 +37,6 @@ From the web portal, open the admin page for the team project.
 You define both areas and iterations from the Work hub of the team project admin context. From the user context,you open the admin context by clicking the ![gear icon](../../connect/_img/work-tfs-web-portal/IC623347.png) gear Settings icon. The tabs and pages available differ depending on which admin context you access.  
 
 [!INCLUDE [temp](../_shared/learn-about-new-nav-experience.md)] 
-
-
 
 To manage areas and iterations you need to be a project administrator or have the **Create child nodes** permission for an area path. If you aren't a project administrator, [get added as one](../scale/manage-team-assets.md#add-team-admin) or have someone provide you with explicit permissions to <b>Edit project-level information</b>. 
 

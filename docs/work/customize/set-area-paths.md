@@ -24,6 +24,7 @@ Newly created team projects contain a single, root area that corresponds to the 
  
 [!INCLUDE [temp](../_shared/image-differences.md)] 
 
+
 <img src="_img/areas-iterations-areas-intro-ts-2016.png" alt="A set of sample area paths" style="border: 1px solid #CCCCCC;" /> 
 
  
