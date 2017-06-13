@@ -1,9 +1,9 @@
 # Overview
-## [Charts, dashboards, and widgets (Refactor)](overview.md)
+## [Charts, dashboards, and widgets](overview.md)
 ## [Power BI integration overview](powerbi/overview.md)
 
 
-# Quick start
+# Get started
 
 ## [Monitor progress and trends](monitor-progress-trends.md)  
 ## [Add and manage dashboards](dashboards.md) 
@@ -31,10 +31,6 @@
 ### [Functions](powerbi/data-connector-functions.md)
  
  
- 
-# Concepts
-## TBD 
-
 
 # Samples
 ## [Power BI example reports](powerbi/data-connector-examples.md)
@@ -43,9 +39,8 @@
 ## [Widget catalog](widget-catalog.md)
 ## [Power BI available data](powerbi/vso-pbi-whats-available-vs.md)
 
- 
-
-
+  
+<!---
 # Troubleshooting
 ## TBD
 
@@ -54,8 +49,7 @@
 ## TBD 
 ## Marketplace extensions (TBD)    
 
-  
-<!---
+
 # [Power BI](analytics/access-analytics-power-bi.md)
 ## [Power BI desktop and OData aggregations](analytics/using-odata-aggregations-with-power-bi-desktop.md) 
 ## Power BI templates (TBD)

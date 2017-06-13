@@ -5,59 +5,52 @@
 ## [About queries](track/example-queries.md) 
 ## [About permissions and access](
 
-# Quick start 
-## [Schedule sprints](scrum/define-sprints.md)
-## [Set team defaults](scale/set-team-defaults.md)
-## [Add work items (new form)](backlogs/add-work-items.md)
-## [Add work items (old form)](backlogs/add-work-items-tfs.md)
+# Get started 
+
+## [Switch project or team focus](_shared/switch-team-context-work.md)  
+## [Add work items](backlogs/add-work-items.md)
 ## [Create your backlog](backlogs/create-your-backlog.md)  
+## [Schedule sprints](scrum/define-sprints.md)
+## [Plan a sprint](scrum/sprint-planning.md) 
+## [Work with Kanban](kanban/kanban-basics.md)
 ## [Drive Git development](backlogs/connect-work-items-to-git-dev-ops.md) 
-## [Plan a sprint](scrum/sprint-planning.md)  
-## [Kanban](kanban/kanban-basics.md)
-## [Organize your backlog](backlogs/organize-backlog.md)
-## [Query using the search box](track/search-box-queries.md) 
 
 
 # How to
-## [Switch project or team focus](_shared/switch-team-context-work.md)  
-
-## Set up
-###[Define area paths](customize/set-area-paths.md) 
-###[Define iteration paths](customize/set-iteration-paths-sprints.md) 
-###[Set team defaults](scale/set-team-defaults.md)
-###[Manage permissions and access](how-to/set-permissions-access-work-tracking.md) 
-
 
 ## [Storyboard your ideas](office/storyboard-your-ideas-using-powerpoint.md)
+
+## Configure your project 
+###[Define area paths](customize/set-area-paths.md) 
+###[Define iteration paths](customize/set-iteration-paths-sprints.md) 
+###[Manage permissions and access](how-to/set-permissions-access-work-tracking.md) 
+### Define teams (TBW)
 
 ## Add and bulk modify work items 
 ### [Manage bugs](backlogs/manage-bugs.md)
 ### Manage issues or impediments (Refactor)   
 ### [Move, change, or delete items](backlogs/remove-delete-work-items.md)
-### [Copy or clone work items](backlogs/copy-clone-work-items.md) 
-### [Add links to work items](backlogs/add-link.md)
+### [Copy/clone work items](backlogs/copy-clone-work-items.md) 
+### [Link work items](backlogs/add-link.md)
 ### Email/print work items (Refactor)   
-### [Bulk modify work items](backlogs/bulk-modify-work-items.md)  
-### [Bulk modify using Excel](office/bulk-add-modify-work-items-excel.md) 
+### [Bulk modify (web)](backlogs/bulk-modify-work-items.md)  
+### [Bulk modify (Excel)](office/bulk-add-modify-work-items-excel.md) 
 
 ## Backlogs and boards
 ### [Define features and epics](backlogs/define-features-epics.md)
-### [Organize your backlog (map items)](backlogs/organize-backlog.md)
-### [Work with multi-team ownership of backlog items](backlogs/work-multi-team-ownership-backlogs.md)
+### [Organize the backlog (map items)](backlogs/organize-backlog.md)
 ### Filter backlogs and boards (Refactor)  
 ### Assign items to a sprint (Refactor)  
-### [Create your backlog and tasks using Project](office/create-your-backlog-tasks-using-project.md)
+### [Create backlog & tasks (Project)](office/create-your-backlog-tasks-using-project.md)
 ### Change column options (Refactor)  
 
 ## Scrum
-### [Plan a sprint](scrum/sprint-planning.md) 
 ### [Add and update tasks (Task board)](scrum/task-board.md)
-### [Capacity planning](scale/capacity-planning.md)
+### [Plan capacity](scale/capacity-planning.md)
 ### [Sprint burndown](scrum/sprint-burndown.md)
-### [Velocity & forecasting](scrum/velocity-and-forecasting.md)
+### [Velocity & forecasting](scrum/velocity-and-forecasting.md) 
 
-## [Kanban](kanban/kanban-basics.md)
-### [Kanban basics](kanban/kanban-basics.md)
+## [Work with Kanban](kanban/kanban-basics.md)
 ### [Define features & epics](kanban/kanban-epics-features-stories.md)
 ### [Filter a Kanban board](kanban/filter-kanban-board.md)
 ### [Add task checklists](kanban/add-task-checklists.md)  
@@ -71,12 +64,12 @@
 
 ## Query
 ### [Add and edit a query](track/using-queries.md) 
-### Manage queries
+### Manage queries (TBW) 
 ### Browse and organize queries (TBW) 
-### Triage work items (REFACTOR) 
-### [Add query chart](../report/charts.md)  
+### Triage work items (TBW)  
+### [Add a query chart](../report/charts.md)  
 ### [Copy as HTML](backlogs/copy-clone-work-items.md) 
-## [Set query permissions](track/set-query-permissions.md)
+### [Set query permissions](track/set-query-permissions.md)
 
 ## Track work
 ### [Add tags to work items](track/add-tags-to-work-items.md)
@@ -87,27 +80,25 @@
 ### [Schedule projects using Project](office/create-your-backlog-tasks-using-project.md)
 ### [Share work plans](track/share-plans.md)
  
-## Teams
+
+## Work with teams 
 ### [Add teams and team members](scale/multiple-teams.md)
 ### Add team administrators (REFACTOR)
+### [Set team defaults](scale/set-team-defaults.md)
 ### [Define work item templates](productivity/work-item-template.md)
 ### [Set team notifications](../collaborate/manage-team-notifications.md)
-
-### Configure team settings
-#### [Configure team settings (REFACTOR)](scale/manage-team-assets.md)
+### [Team rooms](../collaborate/collaborate-in-a-team-room.md)
+### [Configure team settings (REFACTOR)](scale/manage-team-assets.md)
 #### [Select backlog levels](customize/select-backlog-navigation-levels.md)
 #### [Show bugs on backlogs and boards](customize/show-bugs-on-backlog.md)
 #### [Set working days](customize/set-working-days.md) 
 #### Set team favorites (REFACTOR) 
-#### [Customize cards](customize/customize-cards.md) 
-### [Team rooms](../collaborate/collaborate-in-a-team-room.md)  
+#### [Customize cards](customize/customize-cards.md)   
 
 ## Scale 
-### [Agile culture](scale/agile-culture.md)
 ### [Portfolio management](scale/portfolio-management.md)
 ### [Review team plans](scale/review-team-plans.md)
 ### [Visibility across teams](scale/visibility-across-teams.md)
-### [Practices that scale](scale/practices-that-scale.md)
 ### [Scaled Agile Framework](scale/scaled-agile-framework.md)
 
 ## Request feedback 
@@ -117,16 +108,22 @@
 ### [Enable remote audio capture](reference/enable-remote-audio-capture.md)
 ### [Change the audio device or annotation tool](reference/change-audio-device-annotation-tool.md) 
 
-
+## Administrate
+### [New work item experience](process/new-work-item-experience.md)
+### [Manage new form rollout](customize/manage-new-form-rollout.md)
+### [Customize work tracking](customize/customize-work.md) 
 
 # Concepts
-
-## [Agile tools that rely on areas or iterations](concepts/agile-tools-areas-iterations.md)
+## [Areas, iterations, and Agile tools](concepts/agile-tools-areas-iterations.md)
 ## [Adhoc vs managed queries](track/adhoc-vs-managed-queries.md) 
-## [Agile culture and scale](scale/agile-culture.md)
 ## [Workflow states and state categories](concepts/workflow-and-state-categories.md)
-## [Link types and link relationships](track/link-work-items-support-traceability.md) 
+## [Link types and link relationships](track/link-work-items-support-traceability.md)
+## [Backlog items and multi-team ownership](backlogs/work-multi-team-ownership-backlogs.md) 
 ## [Office integration](office/track-work-vsts-tfs.md)
+
+## Scaling Agile
+### [Agile culture and scale](scale/agile-culture.md)
+### [Practices that scale](scale/practices-that-scale.md)
 
 ## Default processes/process templates
 ### [Agile process](guidance/agile-process.md)
@@ -138,6 +135,8 @@
 
 
 # Samples
+## [Example search box queries](track/search-box-queries.md)
+## [Example adhoc queries](../search/workitem/get-started.md) 
 ## Example managed queries  
 ### [Query titles, id, or descriptions](track/titles-ids-descriptions.md)
 ### [Query by assignment or workflow changes](track/query-by-workflow-changes.md)  
@@ -148,15 +147,12 @@
 ### [Query by pick list value](track/planning-ranking-priorities.md)  
 ### [Query by build and test integration fields](track/build-test-integration.md)  
 ### [Query by links or attachments](track/linking-attachments.md)  
-### [Work item field index](guidance/work-item-field.md)  
-
-## Example adhoc queries (../earch/workitem/get-started.md) 
 
 
 # Reference
 ## [Query fields, operators and macros](track/query-operators-variables.md)
 ## [Object limits](customize/object-limits.md)
-## [Field index](guidance/work-item-field.md)
+## [Work item field index](guidance/work-item-field.md)  
 ### [Code review and feedback field reference](guidance/guidance-code-review-feedback-field-reference.md)
 ### [Bugs, issues, and risks  field reference](guidance/cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md)
 ### [Change request  field reference](guidance/cmmi/guidance-change-request-field-reference-cmmi.md)
@@ -197,15 +193,18 @@
 
 # Resources
 ## [Clients that support work tracking](../tools.md)
-## [New work item experience](process/new-work-item-experience.md)
-## [Manage new form rollout](customize/manage-new-form-rollout.md)
 ## [Productivity tips](https://www.visualstudio.com/docs/work/productivity/productivity-tips)
-
+## [What is Agile?](https://www.visualstudio.com/learn/what-is-agile/)
+## [What is Scrum?](https://www.visualstudio.com/learn/what-is-scrum/)
+## [What is Agile development?](https://www.visualstudio.com/learn/what-is-agile-development/)
+## [Agile culture](https://www.visualstudio.com/learn/agile-culture/)
+## [Scale Agile to large teams](https://www.visualstudio.com/learn/scale-agile-large-teams/)
+## [Creating productive teams](https://www.visualstudio.com/learn/productive-teams/)
 
 # TBD
 ## [Stakeholder access](connect/work-as-a-stakeholder.md)
 ## [Change access levels](connect/change-access-levels.md)
 ## [Team velocity](scrum/velocity-and-forecasting.md) 
-
+## [Add work items (old form)](backlogs/add-work-items-tfs.md)
 
 

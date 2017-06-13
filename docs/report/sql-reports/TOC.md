@@ -1,13 +1,13 @@
 # Overview
-## [Excel reports (Refactor)](../overview.md) 
-## [SQL Server based reports (Refactor)](../overview.md) 
-## [Project portal dashboards (Refactor)](../overview.md)
+## [Excel reports](../excel/excel-reports.md)
+## [Reporting Services Reports](reporting-services-reports.md) 
+## [Project portal dashboards (TFS)](../sharepoint-dashboards/project-portal-dashboards.md)
 
-
-# Quick start
+# Get started
 
 ## [Create Excel reports from a work item query](../excel/create-status-and-trend-excel-reports.md)
-  
+## [Share information using the project portal](../sharepoint-dashboards/share-information-using-the-project-portal.md)
+ 
 # How to 
 
 ## [Add reports to a team project](../admin/add-reports-to-a-team-project.md)
@@ -32,9 +32,8 @@
 
 
 ## Work with the project portal (SharePoint) 
-### [Share information using the project portal](../sharepoint-dashboards/share-information-using-the-project-portal.md)
-### [Manage documents and document libraries](../sharepoint-dashboards/manage-documents-and-document-libraries.md)
 ### [Configure or add a project portal](../sharepoint-dashboards/configure-or-add-a-project-portal.md)
+### [Manage documents and document libraries](../sharepoint-dashboards/manage-documents-and-document-libraries.md)
 ### [Configure or redirect process guidance](../sharepoint-dashboards/configure-or-redirect-process-guidance.md)
 ### [Upload and refresh Excel reports](../sharepoint-dashboards/upload-refresh-excel-reports.md)
 
@@ -44,13 +43,9 @@
 ## [Components of the data warehouse](components-data-warehouse.md)
 
 
-# Samples
-## TBD 
-
 # Reference
 
 ## Excel reports (TFS)  
-### [Excel portal reports](../excel/excel-reports.md)
 ### [Bug Progress](../excel/bug-progress-excel-report.md)
 ### [Bugs by Assignment](../excel/bugs-by-assignment-excel-report.md)
 ### [Bugs by Priority](../excel/bugs-by-priority-excel-report.md)
@@ -79,7 +74,6 @@
 ### [Excel reports (CMMI)](../excel/excel-reports-cmmi.md)
 
 ## Reporting Services reports (TFS)
-### [Reporting Services Reports](reporting-services-reports.md)
 ### [Backlog Overview (Scrum)](backlog-overview-scrum.md)
 ### [Bug Status](bug-status-report.md)
 ### [Bug Trends](bug-trends-report.md)
@@ -129,7 +123,6 @@
 
 
 ## Project portal dashboards (TFS)
-### [Project portal dashboards (TFS)](../sharepoint-dashboards/project-portal-dashboards.md)
 ### [My Dashboard (Agile and CMMI)](../sharepoint-dashboards/my-dashboard-agile-cmmi.md)
 ### [Project dashboard (Agile and CMMI)](../sharepoint-dashboards/project-dashboard-agile-cmmi.md)
 ### [Bugs dashboard (Agile and CMMI)](../sharepoint-dashboards/bugs-dashboard-agile-cmmi.md)
@@ -144,9 +137,5 @@
 ## [Address inaccuracies published for summary values](../address-inaccuracies-published-for-summary-values.md)
 ## [Resolve schema conflicts in the data warehouse](../admin/resolve-schema-conflicts.md)
 
-
-# Resources
-## TBD 
-## Marketplace extensions (TBD)    
-
+ 
    

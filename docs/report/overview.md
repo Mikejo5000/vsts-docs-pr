@@ -10,7 +10,7 @@ ms.topic: get-started-article
 ms.date: 04/24/2017
 ---
 
-# Dashboards and reports overview  
+# Charts, dashboards, and widgets overview  
 
 [!INCLUDE [temp](_shared/vsts-tfs-header-17-15.md)]
 
@@ -65,27 +65,9 @@ If you're new to working in Team Services or TFS, see [Get started with Agile to
 </ul>
 </div>
 
-<div style="float:left;width:350px;margin:3px;font-size:90%">
-<p style="padding-bottom:0px;text-align:center;"><b>Excel and SQL Server Reports</b><br/>(TFS only)</p>
-<ul style="padding-left:30px">
-<li style="margin-bottom:2px">[Create adhoc Excel status and trend charts](#excel-reports) <sup> 2</sup> </li>
-<li style="margin-bottom:2px">[View default Excel reports](#excel-reports) <sup> 3</sup> </li>
-<li style="margin-bottom:2px">[View default SQL Server Reports](#sql-reports)  <sup> 4</sup>  </li>
-<li style="margin-bottom:2px">[Create custom SQL Server Reports](https://msdn.microsoft.com/library/ff730837.aspx)<sup> 4</sup> </li> 
-
-</ul>
-
-</div>
-
 <div style="clear:left;font-size:100%">
 </div>
 
-<div style="float:left;width:350px;margin:3px;font-size:90%">
-<p style="padding-bottom:0px;text-align:center;"><b>Dashboards (Project portal)<sup> 5</sup></b><br/>(TFS only)</p>
-<ul style="padding-left:30px">
-<li style="margin-bottom:2px">[Work with SharePoint dashboards](#sharepoint-dashboards) </li>
-</ul>
-</div>
 
 
 
@@ -163,77 +145,7 @@ Teams can [create multiple dashboards](dashboards.md) to share information, acce
 ![Example dashboard](_img/dashboard-view-with-widgets.png)
 
 
-<a id="excel-reports"></a>
-
-## Excel Reports (TFS)  
-You can track your team project's burn rate, bug backlog, software quality, test progress, and other metrics by viewing a [default Excel report](excel/excel-reports.md).  
-
-Here are examples of two of the Excel reports.
-
-![Bug trends example report](_img//ALM_PG_Excel_BugTrends.png)   ![Build status example report](_img//ALM_PG_Excel_BuildStatus.png)
-
-Default Excel reports require that your team project is configured with SharePoint Products and SQL Server Analysis Services. If these reports aren't available to you, you can [create ad-hoc reports in Excel from a work item query](#excel-adhoc-query-report) or by connecting to the Analysis Services cube. 
-
-<table>
-<tbody valign="top">
-<tr>
-<td width="25%"> 
-**Adhoc status and trend reports**
-<ul>
-    <li>[Create Excel reports from a query](./excel/create-status-and-trend-excel-reports.md)</li>
-</ul>
-**Build and code quality**  
-<ul>
-<li>[Build Quality](excel/build-quality-excel-report.md)</li>
-<li>[Build Status](excel/build-status-excel-report.md)</li>
-<li>[Code Churn](excel/code-churn-excel-report.md)</li>
-<li>[Code Coverage](excel/code-coverage-excel-report.md)</li>
-</ul>
-</td>
-<td width="25%"> 
-
-**Progress**
-<ul>
-    <li>[Burndown](excel/burndown-excel-report.md)</li>
-    <li>[Issue Trends](excel/issue-trends-excel-report.md)</li>
-    <li>[Task Progress](excel/task-progress-excel-report.md)</li>
-    <li>[User Story Progress (Agile)](excel/user-story-progress-excel-report-agile.md)</li>
-    <li>[Requirements Progress (CMMI)](excel/requirements-progress-excel-report-cmmi.md)</li>
-</ul>
-
-</td>
-<td width="25%"> 
-
-**Bug tracking**
-<ul>
-    <li>[Bug Progress](excel/bug-progress-excel-report.md)</li>
-    <li>[Bug Reactivations](excel/bug-reactivations-excel-report.md)</li>
-    <li>[Bug Trends](excel/bug-trends-excel-report.md)</li>
-    <li>[Bugs by Assignment](excel/bugs-by-assignment-excel-report.md)</li>
-    <li>[Bugs by Priority](excel/bugs-by-priority-excel-report.md)</li>
-</ul>
-
-</td>
-<td width="25%">
-**Test tracking**
-<ul>
-    <li>[Failure Analysis](excel/failure-analysis-excel-report.md)</li>
-    <li>[Test Activity](excel/test-activity-excel-report.md)</li>
-    <li>[Test Case Readiness](excel/test-case-readiness-excel-report.md)</li>
-    <li>[Test Plan Progress](excel/test-plan-progress-excel-report.md)</li>
-    <li>[Test management reports](excel/test-management-reports.md)</li>
-    <li>[Testing Gaps (Agile)](excel/testing-gaps-excel-report-agile.md)</li>
-    <li>[Test Team Progress](excel/test-team-progress-excel-report.md)</li>
-    <li>[Test Team Productivity](excel/test-team-productivity-excel-report.md)</li>
-    <li>[User Story Test Status (Agile)](excel/user-story-test-status-excel-report-agile.md)</li>
-    <li>[Requirement Test Status (CMMI)](excel/requirement-test-status-excel-report-cmmi.md)</li>
-
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-
+<!---
 
 <a id="sql-reports"></a>
 
@@ -329,16 +241,15 @@ Different dashboards are available to you based on the [process](../work/guidanc
     <li>[Test ](sharepoint-dashboards/test-dashboard-agile-cmmi.md) </li>
 
 </ul>
+-->
 
-
-##Related notes  
+## Related notes  
 
 If you're new to working in Team Services or TFS, see [Get started with Agile tools to monitor progress and trends tools](monitor-progress-trends.md).   
 
 Other useful resources include:  
 - [Choose a process](../work/guidance/choose-process.md) provides an overview of the three default processes used to create and update team projects 
-- [Support rollup of work and other fields](https://msdn.microsoft.com/library/dn217871.aspx) provides information on how to generate rollup data when working with parent-child linked work items
-- [Components of the TFS data warehouse](http://msdn.microsoft.com/library/ms244687.aspx) provides more information on the structure and relationship of the warehouse and reports
+- [Support rollup of work and other fields](../work/reference/support-rollup-of-work-and-other-fields.md) provides information on how to generate rollup data when working with parent-child linked work items
 - [Feature index for Team Services and TFS](../alm-devops-features.md)
 
 
@@ -347,8 +258,7 @@ You can add data to support reporting requirements in the following ways:
 
 *   [Add a custom field (Inheritance process model, Team Services)](../work/process/customize-process-field.md) or [Add or modify a field (Hosted XML or On-premises XML)](../work/customize/add-modify-field.md)  
 
-*   Add work item fields to the data store, relational database, or data warehouse. See [Add or modify work item fields to support reporting (TFS)](../work/reference/add-or-modify-work-item-fields-to-support-reporting.md).
-
+<!---
 *   Incorporate data from other resources to an Excel report using PowerPivot.
     PowerPivot for Excel 2010 is a data analysis add-in for Microsoft Excel 2010. By using this add-in, you can generate reports that combine data from other data stores or databases with data from Team Foundation Server. For more information, see [Microsoft PowerPivot](https://msdn.microsoft.com/library/gg399131.aspx). 
 
@@ -362,3 +272,28 @@ You can add data to support reporting requirements in the following ways:
 [add-team-members]: ../Work/scale/multiple-teams.md#add-team-members
 [add-team-admin]: ../Work/scale/manage-team-assets.md#add-team-admin
    
+
+
+<div style="float:left;width:350px;margin:3px;font-size:90%">
+<p style="padding-bottom:0px;text-align:center;"><b>Excel and SQL Server Reports</b><br/>(TFS only)</p>
+<ul style="padding-left:30px">
+<li style="margin-bottom:2px">[Create adhoc Excel status and trend charts](#excel-reports) <sup> 2</sup> </li>
+<li style="margin-bottom:2px">[View default Excel reports](#excel-reports) <sup> 3</sup> </li>
+<li style="margin-bottom:2px">[View default SQL Server Reports](#sql-reports)  <sup> 4</sup>  </li>
+<li style="margin-bottom:2px">[Create custom SQL Server Reports](https://msdn.microsoft.com/library/ff730837.aspx)<sup> 4</sup> </li> 
+
+</ul>
+
+</div>
+
+<div style="clear:left;font-size:100%">
+</div>
+
+<div style="float:left;width:350px;margin:3px;font-size:90%">
+<p style="padding-bottom:0px;text-align:center;"><b>Dashboards (Project portal)<sup> 5</sup></b><br/>(TFS only)</p>
+<ul style="padding-left:30px">
+<li style="margin-bottom:2px">[Work with SharePoint dashboards](#sharepoint-dashboards) </li>
+</ul>
+</div>
+
+-->
