@@ -79,6 +79,8 @@
 ## Resolve connection issues (Refactor, TBW)
 
 # Resources
+## [Team Services, Account Management]()
+## [TFS, Administration]()
 ## [Pricing: Team Services](https://www.visualstudio.com/team-services/pricing/)
 ## [Pricing: TFS](https://www.visualstudio.com/team-services/tfs-pricing/)
 ## [Marketplace & Billing](marketplace/overview.md)
