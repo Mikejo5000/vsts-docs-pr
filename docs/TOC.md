@@ -14,13 +14,7 @@
 ## [Pricing: Team Services](https://www.visualstudio.com/team-services/pricing/)
 ## [Pricing: TFS](https://www.visualstudio.com/team-services/tfs-pricing/)
 # [Setup & Admin](./setup-admin/get-started.md)  
-
-
-
 # [Marketplace & Billing](marketplace/overview.md)
-
-
-
 # [Agile tools/Work](work/overview.md)
 # [Dashboard & Reports](report/overview.md)
 # Code
