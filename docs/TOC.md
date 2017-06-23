@@ -17,7 +17,7 @@
 
 
 
-# [Marketplace & Billing](docs/marketplace/TOC.md)
+# [Marketplace & Billing](/marketplace/)
 
 
 
