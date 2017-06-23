@@ -13,7 +13,7 @@
 ## [FAQs](faqs.md)
 ## [Pricing: Team Services](https://www.visualstudio.com/team-services/pricing/)
 ## [Pricing: TFS](https://www.visualstudio.com/team-services/tfs-pricing/)
-# [Setup & Admin](.../setup-admin/get-started.md)  
+# [Setup & Admin](./setup-admin/get-started.md)  
 
 
 
