@@ -34,7 +34,7 @@
 ## [Build & Release](/build/overview.md)
 ## [Test](/test/overview.md)
 ## [Deploy to Azure](/build/apps/index#deploy-to-azure.md)
-# [Collaborate & notifications](/collaborate/overview.md)  
+# [Collaborate & notifications](collaborate/overview.md)  
 
 # [Reference](/reference/overview.md)
 # Extensibility
