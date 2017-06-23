@@ -1,5 +1,5 @@
 # [DevOps and Agile tools](devops-alm-overview.md)
-# [How to buy Team Services](/docs/setup-admin/team-services/buy-basic-access-add-team-services-users.md)  
+# [How to buy Team Services](docs/setup-admin/team-services/buy-basic-access-add-team-services-users.md)  
 # [How to buy TFS](https://www.visualstudio.com/team-services/tfs-pricing/)
 # [What's new](whats-new.md)  
 ## [Content updates 2017](content-updates/updates-2017.md)  
@@ -14,7 +14,7 @@
 ## [Pricing: Team Services](https://www.visualstudio.com/team-services/pricing/)
 ## [Pricing: TFS](https://www.visualstudio.com/team-services/tfs-pricing/)
 # [Setup & Admin](/docs/setup-admin/get-started.md)  
-# [Marketplace & Billing](/docs/marketplace/overview.md)
+# [Marketplace & Billing](docs/marketplace/TOC.md)
 # [Agile tools/Work](/docs/work/overview.md)
 # [Dashboard & Reports](/docs/report/overview.md)
 # Code
