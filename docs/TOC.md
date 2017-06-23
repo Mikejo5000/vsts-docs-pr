@@ -13,33 +13,33 @@
 ## [FAQs](faqs.md)
 ## [Pricing: Team Services](https://www.visualstudio.com/team-services/pricing/)
 ## [Pricing: TFS](https://www.visualstudio.com/team-services/tfs-pricing/)
-# [Setup & Admin](../setup-admin/get-started.md)  
+# [Setup & Admin](~/setup-admin/get-started.md)  
 
 
 
-# [Marketplace & Billing]()
+# [Marketplace & Billing](marketplace/overview.md)
 
 
 
-# [Agile tools/Work](/work/overview.md)
-# [Dashboard & Reports](/report/overview.md)
+# [Agile tools/Work](work/overview.md)
+# [Dashboard & Reports](report/overview.md)
 # Code
-## [Git](/git/overview.md)
-## [TFVC](/tfvc/overview.md)
-## [Code search](/search/overview.md)
-## [Package](/package/overview.md)
+## [Git](git/overview.md)
+## [TFVC](tfvc/overview.md)
+## [Code search](search/overview.md)
+## [Package](package/overview.md)
 ## [Design](https://msdn.microsoft.com/library/57b85fsc.aspx)
 
 # DevOps
-## [Build & Release](/build/overview.md)
-## [Test](/test/overview.md)
-## [Deploy to Azure](/build/apps/index#deploy-to-azure.md)
+## [Build & Release](build/overview.md)
+## [Test](test/overview.md)
+## [Deploy to Azure](build/apps/index#deploy-to-azure.md)
 # [Collaborate & notifications](collaborate/overview.md)  
 
-# [Reference](/reference/overview.md)
+# [Reference](reference/overview.md)
 # Extensibility
-## [Build extensions](/integrate/extensions/overview#extensions.md)
-## [REST API Reference](/integrate/api/overview.md)
+## [Build extensions](integrate/extensions/overview#extensions.md)
+## [REST API Reference](integrate/api/overview.md)
 ## [Extending Visual Studio devops](https://msdn.microsoft.com/library/dd470570.aspx)
 ## [API Reference for Testing Tools](https://msdn.microsoft.com/library/dd465178.aspx)
 ## [Application Insights](https://azure.microsoft.com/documentation/services/application-insights)
