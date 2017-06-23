@@ -7,8 +7,9 @@ ms.assetid: 278BF8D9-E34F-4D14-BACC-D3BA704C2C47
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article  
-ms.date: 04/04/2017
+ms.date: 06/01/2017
 ---
+
 
 #Task board  
 
@@ -23,14 +24,7 @@ Once you have your [sprint plan](sprint-planning.md) in place, you'll execute th
 
 Your task board provides a visualization of flow and status of each sprint task. With it, you can focus on the status of backlog items as well as work assigned to each team member. It also summarizes the total amount of remaining work to complete for a task or within a column.  
 
-![Task board, collapsed backlog items](_img/ALM_TB_Intro.png)
-
-> [!TIP]  
-> You can customize the task board in the following ways:
-> - [Customize cards](../customize/customize-cards.md) that appear on the task board to show additional fields.
-> - [Show bugs on backlogs or boards](../customize/show-bugs-on-backlog.md), your team can choose to manage bugs similar to product backlog items, as shown in this topic, or manage them similar to tasks. When you track bugs similar to tasks, they'll show up on your sprint backlogs and task boards at the same level as tasks.     
-> - Add a custom state [Customize the workflow for a process (Team Services)](../process/customize-process-workflow.md), or [modify the workflow for the task WIT definition] (TFS)](../reference/change-workflow-wit.md).
-
+<img src="_img/ALM_TB_Intro.png" alt="Task board, collapsed backlog items" style="border: 1px solid #CCCCCC;" />
 
 Your team can use the task board to perform these tasks throughout the sprint:  
 
@@ -45,6 +39,11 @@ During your daily Scrum, you can filter your task board to help focus on items o
 *	Group by People when you want to monitor progress of individual team members.  
 
 Use the Person filter when you want to focus on work assigned to individual team members.
+
+>[!TIP]    
+>If you're seeing tasks that don't belong to your team, check that you've [selected the correct team](#switch-team-context). 
+
+
 
 <a id="show-item-progress">  </a>
 ###Show progress on items
@@ -109,10 +108,13 @@ Work with [sprint burndown](sprint-burndown.md) charts to monitor progress, mana
 
 
 ##Related notes
-As you can see, the task board provides a lot of support for your Scrum activities. For related Scrum topics, see:  
-*	[Create your backlog](../backlogs/create-your-backlog.md)
-*	[Sprint planning](sprint-planning.md)
+As you can see, the task board provides a lot of support for your Scrum activities. For related topics, see:  
+
+*	[Sprint planning](sprint-planning.md)   
+*	[Schedule sprints](define-sprints.md)  
 *	[Customize cards on the task board](../customize/customize-cards.md#task-board)   
+*	[Capacity planning](../scale/capacity-planning.md)  
+*	[Support rollup of work and other fields](../reference/support-rollup-of-work-and-other-fields.md)   
  
 <a id="task-board-controls">  </a>
 ###Task board controls
@@ -127,28 +129,41 @@ As you can see, the task board provides a lot of support for your Scrum activiti
 | ![Settings icon](../_img/icons/team-settings-gear-icon.png)    | [Open board settings](../customize/customize-cards.md)    |
 | ![full screen icon](../_img/icons/fullscreen_icon.png)/![exit full screen icon](../_img/icons/exitfullscreen_icon.png)     | Enter or exit full screen mode         |
 
-See also [Keyboard shortcuts](../../reference/keyboard-shortcuts.md).    
+See also [Keyboard shortcuts](../../reference/keyboard-shortcuts.md).     
 
 
-[!INCLUDE [temp](../_shared/assign-to-sprint.md)]
+[!INCLUDE [temp](../_shared/switch-team-context-work.md)]  
 
-[!INCLUDE [temp](../_shared/assign-to-team-member.md)]
+[!INCLUDE [temp](../_shared/assign-to-sprint.md)]  
 
+[!INCLUDE [temp](../_shared/assign-to-team-member.md)]  
+
+
+### Customize the task board 
+Each team can customize their task board in the following ways:
+- [Customize cards](../customize/customize-cards.md) that appear on the task board to show additional fields.
+- [Show bugs on the task board](../customize/show-bugs-on-backlog.md), your team can choose to manage bugs similar to product backlog items, as shown in this topic, or manage them similar to tasks. When you track bugs similar to tasks, they'll show up on your sprint backlogs and task boards at the same level as tasks.
+   
+An administrator can customize the task board for all teams in the following ways:    
+- [Add a custom workflow state to the task WIT for a process (Inheritance process model)](../process/customize-process-workflow.md), or [modify the workflow for the task WIT definition] (Hosted and On-premises XML process models)](../reference/change-workflow-wit.md).
+- [Add a custom work item type to the task board for a process (Inheritance process model)](../process/customize-process-backlogs-boards.md), or [add a work item type to a backlog and board] (Hosted and On-premises XML process models)](../customize/add-wits-to-backlogs-and-boards.md).
+
+ 
 <a id="reduce-task-board-items">  </a> 
-##Reduce the number of items on the task board 
+## Reduce the number of items on the task board 
 
 If you exceed the number of items allowed on your task board, you'll receive a message indicating that you need to reduce the number of items or [increase the maximum number of allowed items (TFS only)](../customize/customize-work.md#limits). The maximum number of items includes work item types included in the Requirement and Task categories.
 
 You can reduce the number of items on the task board by moving them to the backlog or another sprint. When you move a parent PBI or user story, all active child tasks (State not equal to Done or Closed) automatically move with the parent item. 
 
-**Team Services and TFS 2015 Update 1:**
+**Team Services and TFS 2015.1 and later versions:**
 
 - From the task board, drag the PBI or user story from the first column onto the backlog or future sprint. All child tasks automatically move with the parent item.  
 - From the sprint backlog, multi-select the items to move and then click the context menu for an item and select the iteration to move them to.  
  
 	<img src="_img/sprint-backlog-multi-select-non-sequential-items.png" alt="multi-select items from the sprint backlog" style="border: 1px solid #CCCCCC;" />  
 
-**TFS 2015:**   
+**TFS 2015 and earlier versions:**   
 - From the task board, drag the PBI or user story from the first column onto the backlog or future sprint.  
 
 - From the sprint backlog, drag an item back to the backlog or to another sprint.  
@@ -159,7 +174,7 @@ You can reduce the number of items on the task board by moving them to the backl
 
 
 <a id="scrum-master-role">  </a>
-###Role of the Scrum Master  
+### Role of the Scrum Master  
 
 Scrum Masters help build and maintain healthy teams by employing Scrum processes. They guide, coach, teach, and assist Scrum teams in the proper employment of Scrum methods. Scrum Masters also act as change agents to help teams overcome impediments and to drive the team toward significant productivity increases.   
 
@@ -182,7 +197,7 @@ Good Scrum Masters possess or develop excellent communication, negotiation, and 
 Just as it's cheaper to fix a bug soon after it's discovered, it's also easier and less disruptive to fix a team issue when it's small and manageable before it grows into a major issue.  
 
 <a id="daily-scrum-meetings">  </a>
-###Daily Scrum meetings
+### Daily Scrum meetings
 Daily Scrum meetings help keep a team focused on what it needs to do the next day to maximize the team's ability to meet its sprint commitments. Your Scrum Master should enforce the structure of the meeting and ensure that it starts on time and finishes in 15 minutes or less.  
 
 Three aspects of successful Scrum meetings are:
@@ -197,13 +212,13 @@ Three aspects of successful Scrum meetings are:
 
 Team members should strive to answer their questions quickly and concisely. For example: 
 
-<blockquote style="font-size: 13px">*"Yesterday, I updated the class to reflect the new data element that we pull from the database, and I got it to appear in the interface. This task is complete. Today, I will ensure that the new data element is correctly calculating with the stored procedure and the other data elements in the table. I believe I will accomplish this task today. I will need someone to review my calculations. I have no impediments or blocking issues."*   </blockquote>  
+>*"Yesterday, I updated the class to reflect the new data element that we pull from the database, and I got it to appear in the interface. This task is complete. Today, I will ensure that the new data element is correctly calculating with the stored procedure and the other data elements in the table. I believe I will accomplish this task today. I will need someone to review my calculations. I have no impediments or blocking issues."*  
 
 This response conveys what was accomplished, what will be accomplished, and that the team member would like some help looking at the code.
 
 Contrast with this next example:  
 
-<blockquote style="font-size: 13px">*"Yesterday, I worked on the class, and it works. Today, I will work on the interface. No blocking issues."*   </blockquote>  
+>*"Yesterday, I worked on the class, and it works. Today, I will work on the interface. No blocking issues."*  
 
 
 Here, the team member doesn't provide enough detail about what class they worked on nor which interface components they'll complete. In fact, the word accomplished never came up.
@@ -214,3 +229,5 @@ More in-depth and follow-up discussions should take place after the meeting, as 
 
 Many teams delay discussions by using the "virtual parking lot" method. As topics come up that a team member believes warrants further discussion, they can quietly walk to a whiteboard or flipchart and list the topic in the parking lot. At the end of the meeting, the team determines how they'll handle the listed items. 
  
+
+

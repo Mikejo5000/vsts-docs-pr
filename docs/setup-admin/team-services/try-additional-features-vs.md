@@ -38,17 +38,17 @@ instead. Learn about other
 
 0.  Sign in to [Visual Studio Marketplace > Visual Studio Team Services](https://marketplace.visualstudio.com/vsts).
 
-	<img alt="Find extension trial" src="../../marketplace/_img/get-vsts-extensions/marketplace.png" style="border: 1px solid #CCCCCC" />
+	![Find extension trial](../../marketplace/_img/get-vsts-extensions/marketplace.png)
 
 	[Why am I asked to choose between my work or school account and my personal account?](#ChooseOrgAcctMSAcct)
 
 0.	Find and select a paid extension that you want to try.
 
-	<img alt="Start the extension trial" src="./_img/try-additional-features/mp-start-test-manager-trial.png" style="border: 1px solid #CCCCCC" />
+	![Start the extension trial](_img/try-additional-features/mp-start-test-manager-trial.png)
 
 0.  Select your Team Services account to install this extension.
 
-	<img alt="Select Team Services account for extension trial" src="./_img/try-additional-features/select-account.png" style="border: 1px solid #CCCCCC" />
+	![Select Team Services account for extension trial](_img/try-additional-features/select-account.png)
 
 	*	[Why don't I see any Team Services accounts?](#no-accounts) 
 	*	[Why can't I start an extension trial for the selected account?](#no-permissions) 
@@ -57,7 +57,7 @@ instead. Learn about other
 	go to your Team Services account to use your extension. 
 	Let your team know that they have access too.
 
-	<img alt="Marketplace installs your extension" src="./_img/try-additional-features/extension-installed.png" style="border: 1px solid #CCCCCC" />
+	![Marketplace installs your extension](_img/try-additional-features/extension-installed.png)
 
 	[Need help?](#get-support)
 
@@ -94,7 +94,7 @@ only for users who need access.
 
 	To buy the extension, you can also go to the extension pane in your account.	
 
-	<img alt="Users hub, extension pane" src="./_img/try-additional-features/extension-trial-in-account-updated-ui.png" style="border: 1px solid #CCCCCC" />
+	![Users hub, extension pane](_img/try-additional-features/extension-trial-in-account-updated-ui.png)
 
 0.	[Assign the extension](../../marketplace/get-vsts-extensions.md#assign-extension) 
 only to users who need access.
@@ -133,7 +133,7 @@ you can [request the extension](../../marketplace/get-vsts-extensions.md#request
 
 A:	Check the extension pane in your Users hub.
 
-<img alt="Check extension trial" src="./_img/try-additional-features/check-extension-trial-updated-ui.png" style="border: 1px solid #CCCCCC" />
+![Check extension trial](_img/try-additional-features/check-extension-trial-updated-ui.png)
 
 ####Q:   How do I cancel my trial?
 

@@ -313,7 +313,6 @@ Uniqueness
 <li>Must not contain any Unicode control characters or surrogate characters</li>
 <li>Must not contain the following printable characters: / : \ ~ &amp; % ; @ ' " ? &lt; &gt; | # $ * } { , + = [ ]
 </li>
-<li>Must not contain an ellipsis (…) or a double period (..)</li>
 <li>Must not start with an underscore (&#95;)</li>
 <li>Must not start or end with a period (.)</li>
 </ul>
@@ -326,10 +325,10 @@ Reserved names
 <td>
 <ul>
 <li>
-Must not be a system-reserved name such as PRN, COM1, COM2, COM3, COM4, COM5, COM6, COM7, COM8, COM9, COM10, LPT1, LPT2, LPT3, LPT4, LPT5, LPT6, LPT7, LPT8, LPT9, NUL, CON, or AUX
+Must not be a system-reserved name such as PRN, COM1, COM2, COM3, COM4, COM5, COM6, COM7, COM8, COM9, COM10, LPT1, LPT2, LPT3, LPT4, LPT5, LPT6, LPT7, LPT8, LPT9, NUL, CON, AUX, SERVER, SignalR, DefaultCollection, or Web.
 </li>
 <li>
-Must not be one of the hidden segments used for IIS request filtering like App_Browsers, App_code, App_Data, App_GlobalResources, App_LocalResources, App_WebResources, bin, or web.config.<br/>
+Must not be one of the hidden segments used for IIS request filtering like App_Browsers, App_code, App_Data, App_GlobalResources, App_LocalResources, App_Themes, App_WebResources, bin, or web.config.<br/>
 Learn more about reserved names: [File Names, Paths, and Namespaces](https://msdn.microsoft.com/library/aa365247.aspx).
 </li>
 </ul>
@@ -828,7 +827,7 @@ Microsoft.VSTS.TCM.TestSuiteType</p>
 
 ###Field help text
 
-You can specify help text for a WIT field by using the ```HELPTEXT``` element. The system displays this text at run time to help users know what to enter into the field. Help text is scoped to a specific WIT in a specific team project. [Apply a rule to a work item field](../work/customize/modify-areas-iterations.md) provides information on adding help text.
+You can specify help text for a WIT field by using the ```HELPTEXT``` element. The system displays this text at run time to help users know what to enter into the field. Help text is scoped to a specific WIT in a specific team project. [Apply a rule to a work item field](../work/customize/set-area-paths.md) provides information on adding help text.
 
 Help text that you add must conform to the following restrictions.  
 

@@ -103,8 +103,6 @@ coverage in different areas.
 
 ![Code coverage results in the browser](_img/continuous-test-java/continuous-test-java-07.png)
 
-![Code coverage results in your code](_img/continuous-test-java/continuous-test-java-08.png)
- 
 ## See also
 
 [Visual Studio Team Services Java website](http://java.visualstudio.com/)

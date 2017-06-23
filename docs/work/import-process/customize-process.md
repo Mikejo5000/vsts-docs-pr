@@ -1,24 +1,24 @@
 ---
-title: Customize a process to import | Team Services
-description: Customize a Hosted XML process to support custom fields, work item types, and process configuration  
+title: Customize a process to import using Hosted XML | Team Services
+description: Customize a Hosted XML process to support custom fields, work item types, global lists, and process configuration  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
 ms.assetid: AA5B592D-8F76-4974-9918-B8B523A6F23F
 ms.manager: douge
 ms.author: kaelli
-ms.date: 05/10/2017
+ms.date: 05/23/2017
 ---
 
-# Customize a process for import into Team Services  
+# Customize a process when using Hosted XML
 
 <b>Team Services (Hosted XML)</b>   
  
 >[!IMPORTANT]  
 >**Feature availability:**&#160;&#160;Import process supports the Hosted XML process model which allows you to manage customizations through updating select XML definition files of a process template. This feature is only available for accounts that have been migrated to Team Services using the [TFS Data Import Service](https://aka.ms/TFSDataImport). [Contact us](mailto:vsocustpt@microsoft.com) if you have any questions about Team Services process customization.  
 > 
->If you use the Inheritance process model, you can customize your work tracking through the user interface by [creating an inherited process](../process/manage-process.md). 
-> 
->If you use the On-premises XML process model, you can customize a process template, see [Upload or download a process template](../guidance/manage-process-templates.md) and [Customize a process template](../reference/process-templates/customize-process.md).<br/><br/To learn more about process models, see [Customize work tracking](../customize/customize-work.md). 
+>If you use the Inheritance process model, you can customize your work tracking through the user interface by [creating an inherited process](../process/manage-process.md). If you use the On-premises XML process model, you can customize a process template, see [Upload or download a process template](../guidance/manage-process-templates.md) and [Customize a process template](../reference/process-templates/customize-process.md).
+>
+>To learn more about process models, see [Customize work tracking](../customize/customize-work.md). 
 
 Visual Studio Team Services supports adding and updating processes through a web based [import process](import-process.md) administrative experience. 
 Once you add a process, you can create one or more team projects from it. 
@@ -114,7 +114,7 @@ You can apply the following customizations to your process
 *   [Add up to five portfolio backlogs](../customize/add-portfolio-backlogs.md)
 *   [Add categories](../reference/use-categories-to-group-work-item-types.md) that you'll use in your process configuration
 *   [Modify process configuration](../reference/process-configuration-xml-element.md)
-*   [Add global lists]()
+*   [Add global lists](../reference/define-global-lists.md)
 
 Refer to the [restrictions](#restrictions) below for a list of limitations imposed by the system. 
 
@@ -183,7 +183,7 @@ The  ```WITD``` element and its child elements must conform to the syntax and ru
 <a id="work-item-fields"></a>
 ### Work item fields
 The ```FIELDS``` section and its child elements must conform to the syntax and rules described in [FIELD XML element reference](../reference/field-definition-element-reference.md). In addition, it must meet the following conditions:      
-*   ```FIELD``` element and child elements can't contain a ```GLOBALLIST``` element  
+*   ```FIELD``` element and child elements can contain a ```GLOBALLIST``` element  
 *   The friendly name and required refname assigned to a WIT must be unique within the set of WIT definition files  
 *   The required refname attribute value can't contain disallowed characters nor use a disallowed namespace: System.*Name* and Microsoft.*Name*    
     Reference names must contain only letters, no spaces, and at least one period (.). 
@@ -282,16 +282,16 @@ The  ```WORKFLOW``` element and its child elements must conform to the syntax an
 *   Must define a transition between all workflow states that are mapped to the ```Proposed``` state category and workflow states mapped to the ```InProgress``` state category    
 *   Must define a transition between all workflow states that are mapped to the ```InProgress``` state category  and workflow states mapped to the ```Complete``` state category.   
 
-For a description of state category and mappings, see [Customize the workflow for a process, State categories](../process/customize-process-workflow.md#state-categories).
+For a description of state category and mappings, see [Workflow states and state categories](../concepts/workflow-and-state-categories.md).
 
 
 <a id="wit-global-list-definitions"></a>
 ### Global lists
 
-The following limits are placed on global list import: 
+For the Hosted XMl process model, the following limits are placed on global list import: 
 - Total of 64 global lists
 - Total of 512 items per list
-- Total of 10K items defined within all global lists defined across all WITs. 
+- Approximately 10K items can be defined total within all global lists specified across all WITs. 
 
 
 <a id="work-item-form-layout"></a>

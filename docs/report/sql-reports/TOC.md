@@ -3,12 +3,12 @@
 ## [Reporting Services Reports](reporting-services-reports.md) 
 ## [Project portal dashboards (TFS)](../sharepoint-dashboards/project-portal-dashboards.md)
 
-# Get started
+# Quickstarts
 
 ## [Create Excel reports from a work item query](../excel/create-status-and-trend-excel-reports.md)
 ## [Share information using the project portal](../sharepoint-dashboards/share-information-using-the-project-portal.md)
  
-# How to 
+# Tutorials
 
 ## [Add reports to a team project](../admin/add-reports-to-a-team-project.md)
 ### [Add a report server](../admin/add-a-report-server.md)
@@ -68,7 +68,7 @@
 #### [Test Team Productivity](../excel/test-team-productivity-excel-report.md)
 ### [User Story Progress (Agile)](../excel/user-story-progress-excel-report-agile.md)
 ### [User Story Test Status (Agile)](../excel/user-story-test-status-excel-report-agile.md)
-### [Requirement Test Status (CMMI)](excel/requirement-test-status-excel-report-cmmi.md)
+### [Requirement Test Status (CMMI)](../excel/requirement-test-status-excel-report-cmmi.md)
 ### [Requirements Progress (CMMI)](../excel/requirements-progress-excel-report-cmmi.md)
 ### [Testing Gaps (CMMI)](../excel/testing-gaps-excel-report-cmmi.md)
 ### [Excel reports (CMMI)](../excel/excel-reports-cmmi.md)

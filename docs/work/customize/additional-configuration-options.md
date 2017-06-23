@@ -86,7 +86,7 @@ These tools provide access to product and sprint backlogs, the Kanban board and 
 Additional options that you can configure:<br/>
 <ul>
 <li>[Add a team or set up a hierarchy of teams](../scale/multiple-teams.md) </li>
-<li>[Set team working days off](../scale/capacity-planning.md#team_settings)</li>
+<li>[Set team working days off](../customize/set-working-days.md)</li>
 <li>[Define additional sprints or releases](../scrum/define-sprints.md).</li>
 </ul> 
 In addition, you can customize the following options by modifying the [ProcessConfiguration](../reference/process-configuration-xml-element.md) definition:<br/>

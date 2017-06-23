@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: AF7ABA0F-D3E8-48CA-9164-ABC966BAAA77
 ms.manager: douge
 ms.author: kaelli
-ms.date: 03/02/2017
+ms.date: 05/23/2017
 ---
 
 # Process and team projects    
@@ -15,8 +15,10 @@ ms.date: 03/02/2017
 
 >[!IMPORTANT]  
 >**Feature availability:**&#160;&#160;Import process supports the Hosted XML process model which allows you to manage customizations through updating the WIT definition of a process template. This feature is only available for accounts that have been migrated to Team Services using the [TFS Data Import Service](https://aka.ms/TFSDataImport). [Contact us](mailto:vsocustpt@microsoft.com) if you have any questions about Team Services process customization. 
-<br/><br/>If you use the Inheritance process model, you can customize your work tracking through the user interface by [creating an inherited process](../process/manage-process.md). 
-<br/><br/>If you use the On-premises XML process model, you can customize a process template, see [Upload or download a process template](../guidance/manage-process-templates.md) and [Customize a process template](../reference/process-templates/customize-process.md).<br/><br/> To learn more about process models, see [Customize work tracking](../customize/customize-work.md). 
+>
+>If you use the Inheritance process model, you can customize your work tracking through the user interface by [creating an inherited process](../process/manage-process.md). If you use the On-premises XML process model, you can customize a process template, see [Upload or download a process template](../guidance/manage-process-templates.md) and [Customize a process template](../reference/process-templates/customize-process.md).
+>
+>To learn more about process models, see [Customize work tracking](../customize/customize-work.md). 
 
 In Team Services, you manage customization of work tracking objects through a process.
 Processes are imported and exported through a web based administration experience. 
@@ -28,8 +30,8 @@ For example, updates made to any of the custom processes listed below automatica
  
 ![Custom processes mapped to projects](_img/ALM_IP_ProcessUse.png)
 
-As you discover additional customizations that you need to make, you can export the existing process, update the process XML files, 
-zip the result and re-import the newly updated process.  Your changes will be applied to all your existing team projects that use that process.    
+As you discover additional customizations that you need to make, you can export the existing process, update the process XML definition files, 
+zip the result and re-import the newly updated process. Your changes will be applied to all your existing team projects that use that process.    
 
 Import process supports the following scenarios:   
 *   [Import an existing process from an on-premises Team Foundation Server (TFS)](#import-from-TFS)  
@@ -80,7 +82,7 @@ Name your process something other than Scrum, Agile, or CMMI. These system proce
 2.  From the Process tab, choose import and then browse to the zip file of the process you've customized.  
   
     >[!NOTE]  
-    >If you don't see the Import link, then your account isn't set up to support hosted XML customization.  Either work with [inherited customization](../process/manage-process.md) to customize your process, or request access to  hosted XML customization by contacting [VSTS Process Customization](mailto:vsocustpt@microsoft.com).
+    >If you don't see the **Import process** link, then your account isn't set up to support the Hosted XML process model. You should work with the [Inheritance process model](../process/manage-process.md) for your customization needs. The Hosted XML process model is only supported if your account was created through the [Data Import Service](https://aka.ms/TFSDataImport).
 
     <img src="_img/import-process-import.png" alt="Import Process, choose process file to import" style="border: 1px solid #CCCCCC;" /> 
 

@@ -1,6 +1,6 @@
 ---
-title: Add users to a team project
-description: Add users to a team project
+title: Add users to a team project, sharepoint and reporting services, and groups
+description: Add users to a team project, sharepoint and reporting services, and groups
 ms.assetid: 3cfefdd2-b161-4e04-8dc0-e2deeac50262
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfs
@@ -9,7 +9,7 @@ ms.author: elbatk
 ms.date: 08/24/2016
 ---
 
-# Add users to a team project
+# Add users to a team project, sharepoint and reporting services, and groups
 
 **Team Services** | **TFS 2015** | **TFS 2013**
 
@@ -90,8 +90,8 @@ For more information about SharePoint 2013, [go here](https://technet.microsoft.
 	> After the identity has been added once in Team Foundation Server, you can just type the friendly name.
 
 4.  Depending on the user, you might want to customize their permissions for other functionality in the project,
-such as [areas and iterations](../work/customize/modify-areas-iterations.md)
-or [shared queries](../work/customize/modify-areas-iterations.md).
+such as [areas and iterations](../work/customize/set-area-paths.md)
+or [shared queries](../work/customize/set-area-paths.md).
 You can also control access to projects, version control, build, and work items;
 learn how in [Restrict access in TFS](restrict-access-tfs.md).
 

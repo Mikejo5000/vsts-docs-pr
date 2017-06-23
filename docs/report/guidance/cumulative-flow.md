@@ -231,7 +231,7 @@ Each team can set their preferences for the cumulative flow charts for their Kan
 
 	<img src="../../work/customize/_img/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 1px solid #CCCCCC;" />  
 
-	If you're not a team admin, [get added as one](../../work/scale/manage-team-assets.md#add-team-admin). Only team and project admins can customize the team Kanban boards and CFD charts.  
+	If you're not a team admin, [get added as one](../../work/scale/add-team-administrator.md). Only team and project admins can customize the team Kanban boards and CFD charts.  
 
 2. Click the Cumulative flow tab and specify the team's preferences.  
 
@@ -247,7 +247,7 @@ Each team can set their preferences for the cumulative flow charts for their Kan
 ><b>Feature availability:</b> For Team Services, you can add the [CFD widget](../widget-catalog.md#cycle-time-widget) to your dashboard. You need to first install the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You can then [add the widget(s) to your dashboard](../add-widget-to-dashboard.md). You must be an account owner or a member of the [Project Collection Administrator group](../../setup-admin/add-administrator-tfs.md) to add extensions.  
 
 You will need to be a team administrator or a member of the Project Administrators group to perform these tasks. See 
-[Manage team assets](../../work/scale/manage-team-assets.md#add-team-admin) to get added as a team admin. 
+[Manage team assets](../../work/scale/add-team-administrator.md) to get added as a team admin. 
 
 1. If you haven't yet configured your Kanban board, do that now. Define the [columns](../../work/kanban/add-columns.md) and [swimlanes](../../work/kanban/expedite-work.md) that support your workflow processes.  
 
@@ -282,7 +282,7 @@ For additional information, see these resources:
 <div style="float:left;width:240px;margin:3px;font-size:100%">
 <p style="font-weight:bold;padding-bottom:5px;text-align:center;">Plan and track</p>
 <ul style="padding-left:30px">
-<li style="margin-bottom:2px">[Monitor progress and trends](../monitor-progress-trends.md)</li>
+<li style="margin-bottom:2px">[Charts, dashboards, and widgets](../overview.md)</li>
 <li style="margin-bottom:2px">[Kanban basics](../../work/kanban/kanban-basics.md)</li>
 <li style="margin-bottom:2px">[Task checklists](../../work/kanban/add-task-checklists.md)</li>
 <li style="margin-bottom:2px">[Features and epics](../../work/kanban/kanban-epics-features-stories.md)</li>
@@ -299,7 +299,7 @@ For additional information, see these resources:
 <li style="margin-bottom:2px">[Expedite work](../../work/kanban/expedite-work.md)</li>
 <li style="margin-bottom:2px">[Definition of done](../../work/kanban/definition-of-done.md)</li>
 <li style="margin-bottom:2px">[Customize cards](../../work/customize/customize-cards.md)</li>
-<li style="margin-bottom:2px">[Card reordering](../../work/kanban/kanban-basics.md#card-reorder-setting)</li>
+<li style="margin-bottom:2px">[Card reordering](../../work/customize/reorder-cards.md)</li>
 </ul>
 </div>
 

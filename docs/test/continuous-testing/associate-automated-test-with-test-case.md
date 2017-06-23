@@ -2,7 +2,7 @@
 title: Associate an automated test with a test case
 description: Manual and exploratory testing. Associate an automated test with a test case using Microsoft Test Manager
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-manual
+ms.technology: vs-devops-test-continuous
 ms.assetid: 606679F2-1604-40EA-A720-63CDDA93DD76
 ms.manager: douge
 ms.author: ahomer
@@ -178,7 +178,7 @@ To run your automated tests, you must use a standard or an SCVMM environment. Yo
 You must create an environment that contains the roles in your test
 settings and then use this environment in your test plan. For more
 information about how to create your environment and roles and test settings, see
-[Use a lab environment for your devops](../lab-management/using-a-lab-environment-for-your-application-lifecycle.md).
+[Use a lab environment for your devops](https://docs.microsoft.com/visualstudio/test/lab-management/using-a-lab-environment-for-your-application-lifecycle).
 
 <a name="run-test"></a>
 ## Run the automated test using Microsoft Test Manager  
@@ -246,9 +246,9 @@ To view and update the test results:
 
 **A**: If you are using a XAML build in Team Services or TFS, you can run tests
 that you have associated in a Build-Deploy-Test workflow using a
-[Lab environment](../lab-management/using-a-lab-environment-for-your-application-lifecycle.md).
+[Lab environment](https://docs.microsoft.com/visualstudio/test/lab-management/using-a-lab-environment-for-your-application-lifecycle).
 You can also run tests using Microsoft Test Manager (MTM) and a
-[Lab environment](../lab-management/using-a-lab-environment-for-your-application-lifecycle.md).
+[Lab environment](https://docs.microsoft.com/visualstudio/test/lab-management/using-a-lab-environment-for-your-application-lifecycle).
 
 <a name="test-types"></a>
 ### Q: What types of tests are supported?
@@ -275,7 +275,7 @@ change the **Work Items | General** setting from the **Tools | Options** menu in
 ## See Also
 
 * [Associate automated test results with requirements](associate-automated-results-with-requirements.md)
-<!-- * [Run automated tests from test plans in the Test hub](run-automated-tests-from-test-hub.md) -->
+* [Run automated tests from test plans in the Test hub](run-automated-tests-from-test-hub.md)
 * [Test with unified agents and phases](test-with-unified-agent-and-phases.md)
 * [Continuous testing scenarios and capabilities](index.md)
 

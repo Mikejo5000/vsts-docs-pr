@@ -7,10 +7,10 @@ ms.assetid: C9FD12C0-033E-4A4D-AF63-6EF67E7B4828
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article 
-ms.date: 04/24/2017
+ms.date: 05/26/2017
 ---
 
-#Widget catalog 
+# Widget catalog 
 
 <b>Team Services | TFS 2017 | TFS 2015.1-2015.3  </b>  
 
@@ -106,7 +106,8 @@ Team-scoped widgets display data based on the selected team context.
 ### Cumulative flow diagram (team-scoped)  
 <div style="float:left;width:390px;margin:3px;padding-right:15px;">
 ![Cumulative flow diagram widget](_img/widget-cfd-chart.png)  
-<blockquote style="font-size: 13px"><b>Feature availability:</b> This widget relies on the Analytics Service. The service is in private preview and only available to select customers of Visual Studio Team Services at this time. </blockquote> 
+<blockquote style="font-size: 13px"><b>Feature availability:</b> This widget is available for Team Services.  To add it to your dashboard, you first need to install the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You can then [add the widget(s) to your dashboard](add-widget-to-dashboard.md). You must be an account owner or a member of the [Project Collection Administrator group](../setup-admin/add-administrator-tfs.md) to add extensions. 
+</blockquote> 
 </div>
 <div style="float:left;width:300px;margin:3px;">
 
@@ -120,13 +121,33 @@ Team-scoped widgets display data based on the selected team context.
 
 <div style="clear:left;font-size:100%">
 </div> 
- 
+
+
+----
+<a id="cycle-time-widget"></a> 
+### Cycle time (team-scoped)  
+<div style="float:left;width:390px;margin:3px;padding-right:15px;">
+![Cumulative flow diagram widget](_img/widget-cycle-time.png)  
+<blockquote style="font-size: 13px"><b>Feature availability:</b> This widget is available for Team Services.  To add it to your dashboard, you first need to install the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You can then [add the widget(s) to your dashboard](add-widget-to-dashboard.md). You must be an account owner or a member of the [Project Collection Administrator group](../setup-admin/add-administrator-tfs.md) to add extensions. 
+</blockquote> 
+</div>
+<div style="float:left;width:300px;margin:3px;">
+
+<p>Displays the cycle time of work items closed in a specified timeframe for a single team and backlog level. The cycle time of a work item is defined as the time taken to close a work item after work on it has started. </p>
+
+<p>Each marker on the chart corresponds to one or more work items with a particular cycle time. The lower the cycle time, the faster work is progressing through your development pipeline.</p>
+</div>
+
+<div style="clear:left;font-size:100%">
+</div>  
+
 ----
 <a id="lead-time-widget"></a> 
 ### Lead time (team-scoped)  
 <div style="float:left;width:390px;margin:3px;padding-right:15px;">
 ![Lead time widget](_img/widget-lead-time.png)  
-<blockquote style="font-size: 13px"><b>Feature availability:</b> This widget relies on the Analytics Service. The service is in private preview and only available to select customers of Visual Studio Team Services at this time. </blockquote> 
+<blockquote style="font-size: 13px"><b>Feature availability:</b> This widget is available for Team Services. To add it to your dashboard, you first need to install the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You can then [add the widget(s) to your dashboard](add-widget-to-dashboard.md). You must be an account owner or a member of the [Project Collection Administrator group](../setup-admin/add-administrator-tfs.md) to add extensions. 
+</blockquote> 
 </div>
 <div style="float:left;width:300px;margin:3px;">
 
@@ -140,23 +161,7 @@ Team-scoped widgets display data based on the selected team context.
 </div>
   
 ----
-<a id="cycle-time-widget"></a> 
-### Cycle time (team-scoped)  
-<div style="float:left;width:390px;margin:3px;padding-right:15px;">
-![Cumulative flow diagram widget](_img/widget-cycle-time.png)  
-<blockquote style="font-size: 13px"><b>Feature availability:</b> This widget relies on the Analytics Service. The service is in private preview and only available to select customers of Visual Studio Team Services at this time. </blockquote> 
-</div>
-<div style="float:left;width:300px;margin:3px;">
 
-<p>Displays the cycle time of work items closed in a specified timeframe for a single team and backlog level. The cycle time of a work item is defined as the time taken to close a work item after work on it has started. </p>
-
-<p>Each marker on the chart corresponds to one or more work items with a particular cycle time. The lower the cycle time, the faster work is progressing through your development pipeline.</p>
-</div>
-
-<div style="clear:left;font-size:100%">
-</div>  
-
-----
 <a id="new-work-item-widget"></a>
 ### New Work item (team-scoped) 
 	
@@ -442,7 +447,7 @@ Adds a configurable tile to display the summary of a shared query results.</p>
 </div>
 
 ---- 
-<a id="team-members-widget"></a> 
+<a name="team-members-widget"></a> 
 ### Team members (team-scoped) 
 
 <div style="float:left;width:390px;margin:3px;padding-right:15px;">
@@ -454,8 +459,12 @@ Adds a configurable tile to display the summary of a shared query results.</p>
 <p>For team admins, supports access to the quick dialog to [add or remove team members](../work/scale/multiple-teams.md).</p>  
 </div>
 
+
 <div style="clear:left;font-size:100%">
 </div>
+
+ > [!NOTE]  
+ > This widget is a convenient way to add team members to specific teams within projects.  If you remove it, you can still [add members to your team from the team administration page](../work/scale/multiple-teams.md#add-team-members). 
 
 ---- 
 <a id="team-room-widget"></a> 
@@ -507,7 +516,7 @@ These represent the basic widgets. Look forward to more widgets becoming availab
 
 See also these additional resources for tracking and monitoring progress: 
 
-- [Get started with Agile tools to monitor progress and trends](monitor-progress-trends.md)
+- [Charts, dashboards, and widgets](overview.md)
 - [Dashboards](dashboards.md)
 - [Charts](charts.md)
 - [Add widgets and charts to a dashboard](add-widget-to-dashboard.md)

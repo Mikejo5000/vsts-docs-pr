@@ -7,17 +7,17 @@ ms.assetid: 5A96317D-5A10-44CB-B2F9-F166BBAE916B
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article  
-ms.date: 04/14/2017  
+ms.date: 06/02/2017  
 ---
 
-#Adhoc vs managed work item queries
+# Adhoc vs managed work item queries
 
 <b>Team Services </b>  
 
 >[!NOTE]  
->**Feature availability:**&#160;&#160;You can perform adhoc work item queries using the [Work item search extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-workitem-search). This Marketplace extension (in preview) is currently supported for Team Services.     
+>**Feature availability:**&#160;&#160;The Work item search feature is available from Team Services.     
 
-With the Work item search extension installed, you have two ways to perform work item searches: adhoc and managed. You perform adhoc queries using the work item search box (shown below), whereas you perform managed queries using the built-in search function available from the Work hub, Queries page.  
+You have two ways to perform work item searches: adhoc and managed. You perform adhoc queries using the work item search box (shown below), whereas you perform managed queries using the built-in search function available from the Work hub, Queries page.  
 
 ![Search Work Items Text Box](_img/using-queries-search-box-ts.png)
 
@@ -30,7 +30,7 @@ With the Work item search extension installed, you have two ways to perform work
 - Determine what key words will support a managed search 
 
 	>[!NOTE]  
-	>When you install the Work item search extension, you extend the full-text search engine to index all work item fields.  
+	>With Work item search, searches are performed against a full-text search engine that has indexed all work item fields.  
 
 **Use managed queries when you want to:**
 - Review or triage a group of work items  
@@ -40,10 +40,8 @@ With the Work item search extension installed, you have two ways to perform work
 - Create a list of work items that you'll export to [Excel](../office/bulk-add-modify-work-items-excel.md) or [Project](../office/create-your-backlog-tasks-using-project.md) (requires that you have installed the [Team Foundation Server Standalone Office Integration 2015 (free)](https://www.visualstudio.com/downloads/#team-foundation-server-office-integration-2015-update-3-1) plug-in)   
 	
 
-
-##Work item search box context 
-Note that when the Work item search extension is installed, the work item search box is repurposed to support adhoc queries. In order to initiate a managed search, you need to open the **Work>Queries** page. 
-
+## Work item search box context 
+Note that with  Work item search, the work item search box is repurposed to support adhoc queries. In order to initiate a managed search, you need to open the **Work>Queries** page. 
 
 
 ##Related notes  
@@ -52,9 +50,9 @@ To learn more about each search type, see these topics:
 
 <div style="float:left;width:230px;margin:3px;font-size:90%">
 <p style="font-weight:bold;margin-bottom:0px;text-align:center;">Adhoc work item queries </p>
-- [Install Work item search extension](../../search/workitem/get-started.md)   
-- [Advanced work item search options](../../search/workitem/advanced-search-syntax.md)   
-- [Rich work item search results](../../search/workitem/search-results.md)      
+- [Get started with Work Item Search](../../search/workitem/get-started.md)   
+- [Rich work item search results](../../search/workitem/search-results.md)   
+- [Advanced work item search options](../../search/workitem/advanced-search-syntax.md)       
 </div>
 
 

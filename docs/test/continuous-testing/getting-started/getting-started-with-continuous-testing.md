@@ -42,7 +42,7 @@ machines that you've already set up. Then set up
 your build to run your app and tests in the 
 environments that you created.
 
-For information about setting up test machines in a test lab, see [Use a lab environment for your devops](https://www.visualstudio.com/en-us/docs/test/lab-management/using-a-lab-environment-for-your-application-lifecycle)
+For information about setting up test machines in a test lab, see [Use a lab environment for your devops](https://www.visualstudio.com/docs/test/lab-management/using-a-lab-environment-for-your-application-lifecycle)
 
 <a name="runtests"></a>
 ## Run unit tests with your builds
@@ -68,6 +68,8 @@ solution - on the same build machine.
    [Run Tests using Visual Studio task](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTest/README.md).
 
    ![Build definition: customize unit test run](_img/getting-started-with-continuous-testing/edit-unit-test-task.png)
+
+   > The Visual Studio Test task version 2 supports Test Impact Analysis (TIA). See [these blog posts](https://blogs.msdn.microsoft.com/visualstudioalm/tag/tia/).
 
 1. When you're done, save your build definition.
 
@@ -119,7 +121,7 @@ When you're ready to test your app more extensively under more realistic conditi
 
 #### Q: Where can I find details about configuring test agents?
 
-A: See [Install and configure test agents](../../lab-management/test-machines/install-configure-test-agents.md)
+A: See [Install and configure test agents](https://docs.microsoft.com/visualstudio/test/lab-management/install-configure-test-agents)
 
 #### Q: Where can I learn more about integrating tests with my build?
 
@@ -136,7 +138,7 @@ A: Try these blog posts and videos:
 
 A: First, set up your test frameworks in your development tool. For example, in Visual Studio:
 
-1. [Set up the plug-in for your test framework](../../developer-testing/getting-started/getting-started-with-developer-testing.md#frameworks), if you haven't already.
+1. [Set up the plug-in for your test framework](https://docs.microsoft.com/visualstudio/test/getting-started-with-unit-testing#frameworks), if you haven't already.
 
 1. Create a folder that has the custom binaries for your plug-in. (The plug-in package for your framework is a .vsix file. Change the extension to .zip so that you can unzip it.)
 
@@ -163,12 +165,15 @@ A: Yes, after you find your test run, create a query to find the test results yo
 ## See also
 
 * [End-to-end example of continuous testing](../example-continuous-testing.md)
-* [Test apps early and often](../../index.md) 
 * [Run Selenium tests](continuous-test-selenium.md)
 * [Test Java applications](continuous-test-java.md)
 * [Testing in Continuous Integration and Continuous Deployment Workflows](https://blogs.msdn.microsoft.com/visualstudioalm/2015/05/29/testing-in-continuous-integration-and-continuous-deployment-workflows/)
+* [Associate automated tests with test cases](../associate-automated-test-with-test-case.md)
+* [Run automated tests from test plans in the Test hub](../run-automated-tests-from-test-hub.md)
+* [Test with unified agents and phases](../test-with-unified-agent-and-phases.md)
 * [Review continuous test results after a build](review-continuous-test-results-after-build.md)
 * [Set up continuous testing for your builds](../set-up-continuous-testing-builds.md)
 * [Set up environments to run continuous test tasks with your build tasks](../set-up-continuous-test-environments-builds.md)
+* [Test apps early and often](../../index.md) 
 
 [!INCLUDE [help-and-support-footer](../../_shared/help-and-support-footer.md)] 

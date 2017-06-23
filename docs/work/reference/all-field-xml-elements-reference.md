@@ -7,7 +7,7 @@ ms.topic: reference
 ms.assetid: 552c2ada-2186-4b89-848c-34f54dfe0823
 ms.author: kaelli
 ms.manager: douge
-ms.date: 02/10/2017
+ms.date: 06/16/2017
 ---
 
 # All FIELD XML elements reference
@@ -22,9 +22,12 @@ Use this topic to look up the syntax of the `FIELD` element or one of its child 
   
 ##  <a name="FIELD"></a> FIELD (Definition) container element  
  You use the following syntax to define the data fields for a type of work item. This example shows the format of the **FIELD** (Definition) element and all optional child elements. For more information, see [FIELD (Definition) element reference](field-definition-element-reference.md).  
+
+>[!NOTE]  
+><b>Feature availability:</b>The Boolean data type is supported for Hosted XML (Team Services) and for On-Premises XML, for TFS 2017.2 and later versions. 
   
 ```  
-<FIELD name="fieldDisplayName" refname="fieldReferenceName" type="String | Integer | Double | DateTime | PlainText | HTML | History | TreePath | GUID "  
+<FIELD name="fieldDisplayName" refname="fieldReferenceName" type="String | Integer | Double | DateTime | PlainText | HTML | History | TreePath | GUID | Boolean"  
 syncnamechanges="true | false" reportingname="reportingDisplayName" reportingrefname="reportingReferenceName"  
 reportable="Dimension | Detail | Measure" formula="avg" >  
    <ALLOWEDVALUES> . . . </ALLOWEDVALUES>  

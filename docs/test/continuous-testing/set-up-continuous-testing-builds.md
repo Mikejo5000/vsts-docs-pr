@@ -6,7 +6,7 @@ ms.technology: vs-devops-test-continuous
 ms.assetid: 7849EF41-BE1A-4342-B1DA-583DB6DD1831
 ms.manager: douge
 ms.author: ahomer
-ms.date: 08/12/2016
+ms.date: 06/15/2017
 ---
 
 # Set up continuous testing for your builds

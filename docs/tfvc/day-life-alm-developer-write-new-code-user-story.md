@@ -1,6 +1,6 @@
 ---
-title: day in the life of an devops developer: Write new code for a user story
-description: day in the life of an devops developer: Write new code for a user story
+title: Write new code for a user story
+description: A day in the life of an devops developer. Write new code for a user story.
 ms.assetid: 1407effb-0d9b-451b-97b0-b40e0c48594c
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfvc
@@ -9,11 +9,11 @@ ms.author: routlaw
 ms.date: 08/10/2016
 ---
 
-# Day in the life of an devops Developer: Write new code for a user story
+# Day in the life of a devops developer: write new code for a user story
 
 **Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
 
-Are you a new user of Visual Studio devops and Team Foundation Server (TFS)? Are you wondering how you and your team can get maximum benefit from the most recent version of these tools to build your app?
+Are you a new user of Visual Studio and Team Foundation Server (TFS)? Are you wondering how you and your team can get maximum benefit from the most recent version of these tools to build your app?
 
 Then take a few minutes to walk step-by step through this two-chapter tutorial and follow a day in the lives of Peter and Julia, two developers at Fabrikam Fiber—a fictitious company that provides cable television and related services. You’ll see examples of how you can use Visual Studio and TFS to check out and update code, suspend work when you’re interrupted, request a code review, check in your changes, and perform other tasks.
 

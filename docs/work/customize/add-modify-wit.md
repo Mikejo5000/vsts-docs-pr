@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: 62c0168a-23b8-4a92-9ecf-b67926f7756f
 ms.manager: douge
 ms.author: kaelli
-ms.date: 05/10/2017
+ms.date: 06/12/2017
 ---
 
 # Add or modify a work item type 
@@ -40,7 +40,7 @@ Most WIT customizations are made to the WIT definition, however, other customiza
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">ProcessConfiguration definition</p>
 <ul style="padding-left:30px">
 <li style="margin-bottom:2px">[Specify the WIT color](#change-wit-color) </li>
-<!---<li style="margin-bottom:1px">[Specify the WIT icon](#change-wit-color) (TFS 2017.2)</li>-->
+<li style="margin-bottom:1px">[Specify the WIT icon](#change-wit-color) (TFS 2017.2)</li>
 <li style="margin-bottom:2px">[Specify the workflow state color](#change-wit-color)</li>
 <li style="margin-bottom:2px">[Add or remove a WIT from the backlog or task board](#change-wit-backlog-board)</li>
 <li style="margin-bottom:2px">[Add a custom WIT to a backlog or board](add-wits-to-backlogs-and-boards.md)  </li>
@@ -64,7 +64,7 @@ Most WIT customizations are made to the WIT definition, however, other customiza
 <a id="add-wit">  </a>
 <a id="edit-wit">  </a>
 <a id="modify-wit">  </a>
-##Add or modify a WIT 
+## Add or modify a WIT 
 
 To add a custom WIT or modify an existing WIT, you define or modify the XML definition file for the WIT and then import it to your team project [based on the process model you use](../customize/customize-work.md). You modify a WIT by specifying the elements defined within the three main sections of the WIT definition file: **FIELDS**, **WORKFLOW**, and **FORM**.  
 
@@ -143,7 +143,7 @@ The following illustrations highlight the most common elements on work item form
 
 ![Header element within web form](../reference/_img/weblayout-system-controls-details-page.png)
  
-**Old web form in use (TFS 2017, TFS 2015)**  
+**Old web form in use (TFS 2015, TFS 2013)**  
 
 ![WIT form controls ](_img/IC714121.png)
 
@@ -201,13 +201,12 @@ To learn how to add or remove WITs from the backlog or task board, see [Add a wo
 
 
 <a id="change-wit-color">  </a>
-### Change the WIT color<!---, icon,--> or workflow state color
+### Change the WIT color, icon, or workflow state color
 
-In the web portal, work items appear in query results and on the backlog and board pages of the Agile tools. To change the color<!--- or icon--> associated with an existing WIT or add the color to use for a new WIT, [edit the process configuration `(WorkItemColors)`](../reference/process-configuration-xml-element.md#wit-colors). To change the color for a workflow state, you also [edit the process configuration `(Property name="StateColors")`](../reference/process-configuration-xml-element.md#state-colors). 
+In the web portal, work items appear in query results and on the backlog and board pages of the Agile tools. To change the color or icon associated with an existing WIT or add the color to use for a new WIT, [edit the process configuration](../reference/process-configuration-xml-element.md#wit-colors). To change the color for a workflow state, you also [edit the process configuration](../reference/process-configuration-xml-element.md#state-colors). 
 
-<!---
 >[!NOTE]  
->**Feature availability:** For Hosted XML process model, you can customize the WIT color, icon, and workflow state color. For On-premises XML, you can customize the workflow state color for TFS 2015.2 or later versions, and you can customize the WIT icon for TFS 2017.2 and later versions. --> 
+>**Feature availability:** <!---For Hosted XML process model, you can customize the WIT color, icon, and workflow state color. -->For On-premises XML, you can customize the workflow state color for TFS 2015.2 or later versions, and you can customize the WIT icon for TFS 2017.2 and later versions.  
  
 <img src="_img/add-modiy-wit-color-icon-state-color.png" alt="Query results showing wit color, icon, and state color" style="border: 1px solid #CCCCCC;" />  
 
@@ -238,7 +237,7 @@ To get added as an administrator, see [Add administrators](../../setup-admin/add
 ### Import and export WIT definition files (On-premises XML)
 
 >[!NOTE]  
->If you use the Hosted XML process model, you need to import and export the process template used by your team project. For details, see [Customize the work tracking web form](customize-wit-form.md).
+>If you use the Hosted XML process model, you need to import and export the process template used by your team project. For details, see [Customize the work item tracking web form](customize-wit-form.md).
 
 1.  If you don't have administration permissions for your team project, [get them](../../setup-admin/add-administrator-tfs.md).  
 
@@ -252,9 +251,9 @@ To get added as an administrator, see [Add administrators](../../setup-admin/add
 
         witadmin exportwitd /collection:CollectionURL /p:ProjectName /n:TypeName /f:"DirectoryPath/FileName.xml"  
 
-    An example of a *CollectionURL* is http://MyServer:8080/tfs/TeamProjectCollectionName.  
+    An example of a *CollectionURL* is `http://MyServer:8080/tfs/TeamProjectCollectionName`.  
 
-4.  Edit the file. For details, see [work tracking: Index to XML element definitions](https://msdn.microsoft.com/en-us/library/aa337615.aspx).  
+4.  Edit the file. For details, see [Index to XML element definitions](../reference/xml-element-reference.md).  
 
 5.  Import the WIT definition file.  
 
@@ -343,7 +342,7 @@ The following table summarizes the effect on existing work items when you modify
 |Rename a WIT|All data remains intact under the new name.| 
 |Delete a WIT|All data for work items created as the deleted WIT is permanently removed with no chance for recovery.| 
 
-If you want to completely remove the fields from the data store, use **witadmin deletefield** command line tool. See [Manage work item fields]((../reference/witadmin/manage-work-item-fields.md).
+If you want to completely remove the fields from the data store, use [**witadmin deletefield** command line tool](../reference/witadmin/manage-work-item-fields.md).
 
 ### Change the type of an existing work item  
 

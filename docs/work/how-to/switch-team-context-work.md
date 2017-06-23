@@ -25,7 +25,7 @@ To view a list of teams defined for a team project, open the admin context for t
 >[!NOTE]  
 >**Feature availability**: The **Change process** link is only supported for team projects that use the [Inheritance process model](../customize/customize-work.md#inheritance).  
 
-<img src="_img/multiple-teams-view-teams.png" alt="Web portal, admin context, team project, Overview page" style="border: 1px solid #CCCCCC;" /> 
+<img src="../scale/_img/multiple-teams-view-teams.png" alt="Web portal, admin context, team project, Overview page" style="border: 1px solid #CCCCCC;" /> 
 
 ## Switch to a different team 
 

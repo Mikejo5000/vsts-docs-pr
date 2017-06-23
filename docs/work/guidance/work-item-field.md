@@ -1,12 +1,12 @@
 ---
-title: Field index | Team Services & TFS  
-description: Index to all fields used in the Agile, Scrum, and CMMI processes and process templates for Visual Studio Team Services and Team Foundation Server   
+title: System and default fields index | Team Services & TFS  
+description: Index to all fields used in the Agile, Scrum, and CMMI processes and process templates for Visual Studio Team Services (VSTS) and Team Foundation Server   
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
 ms.assetid: 9720b88e-474c-451b-b3fe-5253ba24a653   
 ms.manager: douge
 ms.author: kaelli
-ms.date: 10/26/2016
+ms.date: 05/26/2017
 ---
 
 # Work item field index  
@@ -44,10 +44,10 @@ Values in parenthesis indicate the following:
 - [Actual Attendee 1-8](cmmi/guidance-review-meeting-field-reference-cmmi.md) (CMMI)   
 - [Analysis](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md) (CMMI)  
 - [Application Launch Instructions](guidance-code-review-feedback-field-reference.md)  
-- [Application Start Information](guidance-code-review-feedback-field-reference.md) 
+- [Application Start Information](guidance-code-review-feedback-field-reference.md)   
 - [Application Type](guidance-code-review-feedback-field-reference.md)  
-- [Area ID](../customize/modify-areas-iterations.md#field-reference) (System)   
-- [Area Path](../customize/modify-areas-iterations.md#field-reference) (System)  
+- [Area ID](../track/query-by-area-iteration-path.md) (System)   
+- [Area Path](../track/query-by-area-iteration-path.md) (System)  
 - [Assigned To](../track/query-by-workflow-changes.md)  
 - [Associated Context](guidance-code-review-feedback-field-reference.md)   
 - [Associated Context Code](guidance-code-review-feedback-field-reference.md)   
@@ -76,12 +76,12 @@ Values in parenthesis indicate the following:
 - [Changed By](../track/history-and-auditing.md) (System)   
 - [Changed Date](../track/history-and-auditing.md) (System)   
 - [Closed By](../track/query-by-workflow-changes.md) (System)   
-- [Closed Date](../track/query-by-workflow-changes.md) (System)  
+- [Closed Date](../track/query-by-workflow-changes.md) (System)   
 - [Closed Status](guidance-code-review-feedback-field-reference.md)  
-- [Closed Status Code](guidance-code-review-feedback-field-reference.md) 
-- [Closing Comment](guidance-code-review-feedback-field-reference.md) 
-- [Comments](cmmi/guidance-review-meeting-field-reference-cmmi.md) (CMMI)  
-- [Committed](../track/planning-ranking-priorities.md) (CMMI)   
+- [Closed Status Code](guidance-code-review-feedback-field-reference.md)   
+- [Closing Comment](guidance-code-review-feedback-field-reference.md)   
+- [Comments](cmmi/guidance-review-meeting-field-reference-cmmi.md) (CMMI)    
+- [Committed](../track/planning-ranking-priorities.md) (CMMI)    
 - [Completed Work](../track/query-numeric.md)  
 - [Contingency Plan](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md) (CMMI)  
 - [Corrective Action Actual Resolution](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md) (CMMI)  
@@ -120,8 +120,8 @@ Values in parenthesis indicate the following:
 - [Impact on User Experience](cmmi/guidance-change-request-field-reference-cmmi.md) (CMMI)  
 - [Integrated in Build](../track/build-test-integration.md) (TCM)  
 - [Issue](../track/build-test-integration.md) (TCM)  
-- [Iteration Id](../customize/modify-areas-iterations.md#field-reference)  (System)  
-- [Iteration Path](../customize/modify-areas-iterations.md#field-reference) (System)  
+- [Iteration Id](../track/query-by-area-iteration-path.md)  (System)  
+- [Iteration Path](../track/query-by-area-iteration-path.md) (System)  
 <h3 style="margin-bottom:0px">J</h3>  
 - [Justification](cmmi/guidance-change-request-field-reference-cmmi.md) (CMMI)  
 <h3 style="margin-bottom:0px">L</h3>  
@@ -134,10 +134,10 @@ Values in parenthesis indicate the following:
 - [Mitigation Plan](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md) (CMMI)  
 - [Mitigation Triggers](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md) (CMMI)  
 <h3 style="margin-bottom:0px">N</h3>  
-- [Node Name](../customize/modify-areas-iterations.md#field-reference) (System) 
+- [Node Name](../track/query-by-area-iteration-path.md) (System) 
 <h3 style="margin-bottom:0px">O - P -Q</h3>  
 - [Optional Attendee 1-8](cmmi/guidance-review-meeting-field-reference-cmmi.md) (CMMI)  
-- [Original Estimate](../track/query-numeric.md) 
+- [Original Estimate](../track/query-numeric.md)   
 - [Parameters](../track/build-test-integration.md)  (TCM)  
 - [Priority](../track/planning-ranking-priorities.md)   
 - [Probability](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md) (CMMI)  
@@ -149,10 +149,10 @@ Values in parenthesis indicate the following:
 <div style="float:left;width:230px;margin:3px;font-size:90%">
 
 <h3 style="margin-bottom:0px">R</h3>  
-- [Rating](guidance-code-review-feedback-field-reference.md) 
-- [Reason](../track/query-by-workflow-changes.md) (System)  
-- [Related Link Count](../track/linking-attachments.md) (System)  
-- [Remaining Work](../track/query-numeric.md) 
+- [Rating](guidance-code-review-feedback-field-reference.md)  
+- [Reason](../track/query-by-workflow-changes.md) (System)   
+- [Related Link Count](../track/linking-attachments.md) (System)   
+- [Remaining Work](../track/query-numeric.md)   
 - [Repro Steps](../track/titles-ids-descriptions.md)   
 - [Required Attendee 1-8](cmmi/guidance-review-meeting-field-reference-cmmi.md) (CMMI)  
 - [Requirement Type](cmmi/guidance-requirements-field-reference-cmmi.md)  (CMMI)  
@@ -201,9 +201,11 @@ Values in parenthesis indicate the following:
 
 <div style="clear:left;font-size:100%">
 </div>
-<br/>
+
 
 By using the system fields or other fields you have added to your project collection, you can enable meaningful cross-team project reports and queries. In addition, any non-system field that is referenced in the workflow or forms section of the work item type definition must have a **FIELD** element that defines it in the **FIELDS** section of the work item type definition XML file. Also, you must specify any non-system field that you might want to use to generate a query or report in the **FIELDS** section.  
+
+
 
 
 ### Field reference topics 
@@ -216,7 +218,7 @@ The following topics describe fields that are used in common by several WITs, or
 <ul style="padding-left:10px">
 <li style="margin-bottom:2px">[Titles, IDs, and descriptive fields](../track/titles-ids-descriptions.md)</li> 
 <li style="margin-bottom:2px">[History and revision changes](../track/history-and-auditing.md)</li>
-<li style="margin-bottom:2px">[Areas and iterations](../customize/modify-areas-iterations.md)</li> 
+<li style="margin-bottom:2px">[Areas and iterations](../customize/set-area-paths.md)</li> 
 <li style="margin-bottom:2px">[Assignments and account-specific fields](../track/query-by-workflow-changes.md)</li>
 <li style="margin-bottom:2px">[Planning, ranking, and priorities](../track/planning-ranking-priorities.md)</li>
 <li style="margin-bottom:2px">[Work estimates, activity, and other numeric fields](../track/query-numeric.md) </li>
@@ -264,23 +266,28 @@ The following topics describe fields that are used in common by several WITs, or
 - [Choose a process](choose-process.md)  
 - [Reportable fields reference](../reference/reportable-fields-reference.md) (on-premises TFS only)    
 
-You can list the attributes of fields using the [**witadmin listfields** command]((../reference/witadmin/manage-work-item-fields.md). 
+You can list the attributes of fields using the [**witadmin listfields** command](../reference/witadmin/manage-work-item-fields.md). 
 
-
-###Team Services 
+### Team Services and the Inheritance process model  
 To add fields to a process, modify select field attributes, and review fields added to a process, see [Customize a process](../process/customize-process.md).  
 
 Also, you can [view the list of fields defined for a process](../process/customize-process.md) and the WITs which reference them. 
 
 
-###TFS  
-You can change the field name, the index, and the report attributes for any field except system fields by using the **witadmin** command-line tool. For more information, see [Manage work item fields-witadmin]((../reference/witadmin/manage-work-item-fields.md).  
+### TFS   
+You can change the field name, the index, and the report attributes for any field except system fields by using the **witadmin** command-line tool. For more information, see [Manage work item fields-witadmin](../reference/witadmin/manage-work-item-fields.md).  
 
-You can view the attribute assignments made to all fields defined in a team project collection using the Process Editor, a power tool for Visual Studio.   For TFS 2015 and earlier versions: install from [TFS Power Tools](https://visualstudiogallery.msdn.microsoft.com/898a828a-af00-42c6-bbb2-530dc7b8f2e1).
 
-<!--- 
-<ul>
-<li>For Team Services and TFS 2017 and later versions: install the Process Editor extension available from the [Visual Studio marketplace](https://marketplace.visualstudio.com/vs). </li>
-<li></li>
-</ul>
--->
+<a id="wi-explorer">  </a>
+### Hidden field attributes and the Work Item Field Explorer 
+
+There are several non-changeable and virtually hidden attributes for each field. You can look up the assignments of these fields using the Work Item Field Explorer tool.  
+
+![Work item field explorer](../customize/_img/IC633020.png)
+
+For a description of each attribute, see this post: [Work Item Field Attributes - What You Can and Can't Change](http://blogs.msdn.com/b/visualstudioalm/archive/2012/08/17/work-item-field-attributes-what-you-can-and-can-t-change.aspx).
+
+To access the Work Item Field Explorer, you must install the Process Editor (requires that you have installed a version of Visual Studio):
+ - For TFS 2017 and later versions, [install the TFS Process Template editor from the Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=KarthikBalasubramanianMSFT.TFSProcessTemplateEditor). You can use this version of the Process Editor to modify the old-style work item forms. You can't use it to edit forms associated with the [new web forms](/docs/work/process/new-work-item-experience). 
+ - For TFS 2015 and earlier versions, install [TFS Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power). 
+

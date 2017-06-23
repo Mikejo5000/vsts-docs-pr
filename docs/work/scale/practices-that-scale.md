@@ -118,6 +118,7 @@ In addition to the above practices, you'll find additional guidance around scali
 - [Portfolio management](portfolio-management.md) 
 - [Visibility across teams](visibility-across-teams.md)  
 - [Scaled Agile Framework](scaled-agile-framework.md) 
+- [Scaling Agile to large teams] (https://www.visualstudio.com/learn/scale-agile-large-teams/)
 
 ###Industry resources
 - [Agile manifesto](http://agilemanifesto.org)

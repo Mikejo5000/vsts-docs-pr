@@ -70,9 +70,14 @@ is causing performance problems.
 
    ![To get more performance details, click Go to Application Insights](_img/get-performance-data-for-load-tests/LoadTestGoToAppInsights.png)
 
+<a name="qa"></a>
 ##  Q&A
 
 <!-- BEGINSECTION class="md-qanda" -->
+
+#### Q: Can I get more detailed profiler information?
+
+A: Yes, see [Profiling live Azure web apps with Application Insights](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-profiler).
 
 #### Q: Can I view data from other app monitoring tools when load testing in the cloud?
 

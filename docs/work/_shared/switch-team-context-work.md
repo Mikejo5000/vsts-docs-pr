@@ -10,7 +10,7 @@ You navigate to your team context from the top navigation bar. The method change
 
 
 >[!NOTE]  
->**Feature availability**: The Account Landing Page feature is in preview mode for Team Services and enabled for all users from web portal for TFS 2017.1 and later versions. To learn more about this feature, see [Work effectively from your account hub](/docs/connect/account-home-pages). To enable or disable the feature, see [Enable preview features](/docs/collaborate/preview-features).   
+>**Feature availability**: The Account Landing Page feature is in preview mode for Team Services, and enabled for all users from web portal for TFS 2017.1 and later versions. To learn more about this feature, see [Work effectively from your account hub](/docs/connect/account-home-pages). To enable or disable the feature, see [Enable preview features](/docs/collaborate/preview-features).   
 
 
 <div style="background-color: #f2f0ee;padding-top:10px;padding-bottom:10px;">

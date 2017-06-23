@@ -11,19 +11,19 @@
 ## [Change permission levels](admin/change-permission-levels.md)
 ## [Restrict access to resources](../restrict-access-tfs.md)
 ## [Buy access to TFS or Test hub](../buy-access-tfs-test-hub.md)
-## [Change access levels](../work/connect/change-access-levels.md)
+## [Change access levels](/docs/work/connect/change-access-levels)
 ## [Create a team project](../create-team-project.md)
 ## [Set up email alerts and feedback requests](admin/setup-customize-alerts.md)
 
 # Tutorials 
 ## Install TFS
 ### [Get started](install/get-started.md)
-### [Requirements](requirements.md)
-### [Requirement changes](requirement-changes-tfs15.md)
+### [Requirements](../requirements.md)
+### [Requirement changes](../requirement-changes-tfs15.md)
 ### [Single server](install/single-server.md)
 ### [Dual server](install/dual-server.md)
 ### [Multiple servers](install/multiple-server.md)
-### [Web site settings](websitesettings.md)
+### [Web site settings](../websitesettings.md)
 ### [Install proxy server and set up remote site](install/install-proxy-setup-remote.md)
 ## Install TFS 2013
 ### [Get started](install/install-2013/install-tfs.md)
@@ -43,6 +43,19 @@
 ## [Modify or remove access between sharePoint web app and TFS](admin/modify-remove-access-shareport-tfs.md)
 ## [Configure SharePoint Server 2010 or 2007 for Dashboards](admin/config-ent-sharepoint0710-dashboards.md)
 
+## Feature enablement 
+### [Configure features after an upgrade](../../work/customize/configure-features-after-upgrade.md) 
+### [New features added when you update TFS](../../work/customize/new-features-added.md)
+### [Additional configuration options](../../work/customize/additional-configuration-options.md)
+### [Update a customized process template to access new features](../../work/customize/update-customized-process-template.md)
+### [Add features using a manual update process](../../work/customize/add-features-manually.md)
+## [Update the workflow for agile team projects](../../work/reference/update-the-workflow-for-agile-team-projects.md)
+## [Update a team project based on an MSF v4.2 process template](../../work/reference/update-a-team-project-v4-dot-2-process-template.md)
+## [Support bug update status using My Work](../../work/reference/support-bug-update-status-using-my-work.md)  
+## [Update a team project manually to support test management](../../work/reference/update-a-team-project-manually-to-support-test-management.md)
+## [Upgrade from TFS 2008 or TFS 2010](../../work/customize/upgrade-tfs-2008-or-2010.md)
+## [Support rollup (On-premises XML)](../../work/reference/support-rollup-of-work-and-other-fields.md)
+
 
 ## SQL Server
 ### [Install SQL Server](install/sql-server/install-sql-server.md)
@@ -50,7 +63,7 @@
 ### [Reporting services roles](install/sql-server/reporting-services-roles.md)
 ### [Use always-on availability groups](install/sql-server/use-always-on-groups.md)
 ### [Use always-on availability groups](install/sql-server/use-always-on-groups.md)
-### [SQL Server Reporting Services reports](../../report/sql-server/reporting-services-reports.md)
+### [SQL Server Reporting Services reports](/docs/report/sql-server/reporting-services-reports)
 
 ## Upgrade TFS
 ### [Get started](upgrade/get-started.md)
@@ -78,7 +91,7 @@
 ### [Tutorial restore to new server: overview](admin/backup/tut-single-svr-home.md)
 ## Restore
 ### [Tutorial restore to new server: (1) prepare new hardware](admin/backup/tut-single-svr-prep-new-hw.md)
-### [Tutorial restore to new server: (2) restore databases](tadmin/backup/tut-single-svr-restore-dbs.md)
+### [Tutorial restore to new server: (2) restore databases](admin/backup/tut-single-svr-restore-dbs.md)
 ### [Tutorial restore to new server: (3) install and configure TFS](admin/backup/tut-single-svr-install-config-tfs.md)
 ### [Tutorial restore to new server: (4) reconnect services and users](admin/backup/tut-single-svr-reconn-svcs-users.md)
 ### [Refresh data caches on clients](admin/backup/refresh-data-caches.md)
@@ -122,9 +135,7 @@
 ## [Delete team project](../delete-team-project.md)
 ## [Clean up data](../clean-up-data.md) 
 ## [Connect to team projects](/docs/connect/connect-team-projects)
-## [Work as a Stakeholder](../work/connect/work-as-a-stakeholder.md)
 
- 
 # Reference 
 ## [Requirements for TFS](../requirements.md)
 ## [Upgrade requirements for TFS 2013](upgrade/upgrade-2013/upgrade-2013-requirements.md)
@@ -141,18 +152,20 @@
 ## [TFSDeleteProject](command-line/tfsdeleteproject-cmd.md)
 ## [TFSSecurity](command-line/tfssecurity-cmd.md)
 ## [TFSServiceControl](command-line/tfsservicecontrol-cmd.md)
+## [witadmin](/docs/work/reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work)
+## [tcm](/docs/work/reference/witadmin/tcm-customize-manage-test-experience)
 
 
 # Troubleshooting
-
+## [Resolve errors received when configuring features](../../work/reference/resolve-errors-received-when-configuring-features.md)    
 
 # Resources
 ## [Migrate from TFS to Team Services](https://www.visualstudio.com/articles/migration-overview)
 ## [Integrate with other services](/docs/marketplace/integrate/service-hooks/get-started)
 ## [Technical articles](http://visualstudio.com/articles/overview)
-## [Extensibility overview](https://www.visualstudio.com/docs/integrate/overview)
-## [REST API Reference](https://www.visualstudio.com/docs/integrate/api/overview)
-## [Extend Visual Studio devops](../setup-admin/tfs/architecture/extend-vs-for-alm.md)
+## [Extensibility overview](/docs/integrate/overview)
+## [REST API Reference](/docs/integrate/api/overview)
+## [Extend Visual Studio devops](architecture/extend-vs-for-alm.md)
 ## [API Reference for Testing Tools](https://msdn.microsoft.com/library/dd465178.aspx)
  
 

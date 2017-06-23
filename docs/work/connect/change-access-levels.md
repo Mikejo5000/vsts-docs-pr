@@ -39,10 +39,10 @@ Find out more about licensing from the [Team Foundation Server pricing page](htt
 <img src="_img/access-levels-2017-stakeholder.png" alt="Stakeholder access features" style="border: 1px solid #CCCCCC;" />  		
 </div>
 Stakeholder access is free. Stakeholders can also view releases and manage release approvals.
-See [Stakeholder access](work-as-a-stakeholder.md) for details of features available to stakeholders.
+See [Stakeholder access](../../quickstart/get-started-stakeholder.md) for details of features available to stakeholders.
 </li>
 
-<li>For TFS 2013 or TFS 2015, Assign <a data-toggle="collapse" href="#advanced-access">**Advanced** &#x25BC;</a> access to those users for whom you've purchased the full Test feature set. Here are the purchasing options:  
+<li>For <u>TFS 2013 and TFS 2015 versions</u>, Assign <a data-toggle="collapse" href="#advanced-access">**Advanced** &#x25BC;</a> access to those users for whom you've purchased the full Test feature set. Here are the purchasing options:  
 <div class="collapse" id="advanced-access">
 <img src="_img/access-levels-2015-advanced.png" alt="Advanced access features" style="border: 1px solid #CCCCCC;" />  		
 </div>
@@ -51,13 +51,22 @@ See [Stakeholder access](work-as-a-stakeholder.md) for details of features avail
 		These include a TFS CAL plus the rights to access the full set of Test features. </li>
 <li>A paid Visual Studio Team Services user (which includes a TFS CAL) plus the [Test Manager extension](#test-manager).</li>
 </ul>
-<blockquote>**Note**: The **Advanced** access level is deprecated for TFS 2017 and later versions. Use the **VS Enterprise** access level only for active Visual Studio Enterprise subscribers. For MSDN Platforms and Visual Studio Test Professional with MSDN subscribers needing access to the Test hub, assign the Test Manager extension. </blockquote>
 </li>
-<li>For TFS 2017, Assign <a data-toggle="collapse" href="#vs-enterprise-access">**VS Enterprise** &#x25BC;</a> access to those users for whom you've purchased Visual Studio Enterprise. These include a TFS CAL plus the rights to access VS Enterprise features. (For users with MSDN subscriptions or Test Professional, assign the Basic access level and the Test Manager extension.) To learn more, see [Get extensions for TFS, Assign paid extension access to users](../../marketplace/get-tfs-extensions.md#assign-extension). For example, for users with Visual Studio Test Professional or Visual Studio Enterprise, assign them [access to the Test Manager extension](../../marketplace/get-tfs-extensions.md#assign-extension).
+
+<li>For <u>TFS 2017.2</u>, Assign <a data-toggle="collapse" href="#advanced-access-2017-2">**Advanced** &#x25BC;</a> access to those users for whom you've purchased MSDN Platform or Visual Studio Test Professional subscriptions. These include a TFS CAL plus the rights to access Test Manager. To learn more, see [Get extensions for TFS, Assign paid extension access to users](../../marketplace/get-tfs-extensions.md#assign-extension). 
+<div class="collapse" id="advanced-access-2017-2">
+<img src="_img/access-levels-2017-update2-vs-t.png" alt="TFS 2017.2, Advanced Access" style="border: 1px solid #CCCCCC;" /> 
+</div>
+<blockquote>**Note**: The **Advanced** access level will be deprecated for future versions of TFS. Use the **VS Enterprise** access level only for active Visual Studio Enterprise subscribers. For MSDN Platforms and Visual Studio Test Professional with MSDN subscribers needing access to the Test hub, assign them to the Advanced access level and the Test Manager extension. </blockquote>
+</li>
+
+<li>For <u>TFS 2017 versions</u>, Assign <a data-toggle="collapse" href="#vs-enterprise-access">**VS Enterprise** &#x25BC;</a> access to those users for whom you've purchased Visual Studio Enterprise. These include a TFS CAL plus the rights to access VS Enterprise features. (For users with MSDN subscriptions or Test Professional, assign the Basic access level and the Test Manager extension.) To learn more, see [Get extensions for TFS, Assign paid extension access to users](../../marketplace/get-tfs-extensions.md#assign-extension). For example, for users with Visual Studio Test Professional or Visual Studio Enterprise, assign them [access to the Test Manager extension](../../marketplace/get-tfs-extensions.md#assign-extension).
 <div class="collapse" id="vs-enterprise-access">
 <img src="_img/access-levels-2017-vs.png" alt="VS Enterprise access features" style="border: 1px solid #CCCCCC;" />  		
 </div>
 </li>
+
+
 </ul>
 
 <a id="manage-access" >  </a>
@@ -171,9 +180,9 @@ You can get a list of users and groups that have access to the server by exporti
 
 You can learn more about each of the features you have access to from the following topics. Basic  includes all features supported by Stakeholder, and Advanced includes access to all features supported by Basic.
 
-<div style="float:left;width:240px;margin:3px;font-size:90%">
+<div style="float:left;width:240px;margin:3px">
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Stakeholder access<sup> 1</sup></p>
-<ul style="padding-left:10px">
+<ul style="padding-left:10px;font-size:90%">
  <li style="margin-bottom:2px">View My [Work items](../backlogs/add-work-items.md)</li>
  <li style="margin-bottom:2px">Standard features: [Dashboards](../../report/dashboards.md) & [Queries](../track/using-queries.md)<sup> 2</sup></li>
  <li style="margin-bottom:2px">Agile boards: [Backlogs](../backlogs/create-your-backlog.md), [Kanban](../kanban/kanban-basics.md) & [Task](../scrum/task-board.md) <sup> 3</sup></li>
@@ -181,9 +190,9 @@ You can learn more about each of the features you have access to from the follow
 </ul>
 </div>
 
-<div style="float:left;width:240px;margin:3px;font-size:90%">
+<div style="float:left;width:240px;margin:3px">
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Basic access<sup> 5</sup></p>
-<ul style="padding-left:30px">
+<ul style="padding-left:30px;font-size:90%">
  <li style="margin-bottom:2px">[Basic & Advanced backlog and sprint planning tools](../scrum/sprint-planning.md)</li>
  <li style="margin-bottom:2px">[Request and manage feedback](get-feedback.md)<sup> 6</sup></li>
  <li style="margin-bottom:2px">[Chart viewing & Chart authoring](../../report/charts.md)</li>
@@ -200,15 +209,15 @@ You can learn more about each of the features you have access to from the follow
 </ul>
 </div>
 
-<div style="float:left;width:240px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Advanced access (TFS 2015, TFS 2013)</p>
-<ul style="padding-left:30px">
+<div style="float:left;width:240px;margin:3px">
+<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Advanced access<br/>(TFS 2017, TFS 2015, TFS 2013)</p>
+<ul style="padding-left:30px;font-size:90%">
  <li style="margin-bottom:2px">[Author release definitions](../../build/concepts/definitions/release/index.md)<sup> 4</sup></li>
  <li style="margin-bottom:2px">[Web-based test case management](../../test/manual-exploratory-testing/getting-started/create-a-test-plan.md)<sup> 9</sup></li>
 </ul>
-<blockquote>Advanced access is no longer supported for TFS 2017 and later versions.</blockquote>
+<blockquote>Advanced access will be deprecated in future versions of TFS.</blockquote>
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">VS Enterprise (TFS 2017)</p>
-<ul style="padding-left:30px">
+<ul style="padding-left:30px;font-size:90%">
  <li style="margin-bottom:2px">Microsoft published TFS Extensions<sup> 10</sup></li>
 </ul>
 
@@ -222,7 +231,7 @@ You can learn more about each of the features you have access to from the follow
 1.	With Stakeholder access, users can create and modify all work items, and can create and save queries on all work items under their My Queries folder. (This is a change from Limited access in which users could create and modify only those work items that they created and query and view work items they created.)
 Also, stakeholders can create and modify work items using Team Foundation clients such as Visual Studio Community, Microsoft Excel, Microsoft Project, and Microsoft Feedback Client.
 2.	Standard features include access to the Home and Work hubs.
-3. 	Includes all backlogs and boards, including product, portfolio, and sprint backlogs and Kanban and sprint task boards. Can add work items to backlogs, which appear at the bottom of the list. Can't reorder items on the page or use some other features. See [Stakeholder access](work-as-a-stakeholder.md) for details.
+3. 	Includes all backlogs and boards, including product, portfolio, and sprint backlogs and Kanban and sprint task boards. Can add work items to backlogs, which appear at the bottom of the list. Can't reorder items on the page or use some other features. See [Stakeholder access](../../quickstart/get-started-stakeholder.md) for details.
 4. 	Release Management is in preview and available when you [upgrade your application server to TFS 2015 Update 2 or later version](https://www.visualstudio.com/downloads/download-visual-studio-vs).   
 5.	Basic access allows you to access the Code, Build, and Test hubs in addition to the Home and Work hubs.
 6.	Request and manage feedback is now available within the Basic access level when you [upgrade your application server to TFS 2015 Update 1 or later version](https://www.visualstudio.com/downloads/download-visual-studio-vs).
@@ -293,7 +302,7 @@ To get started, manage permissions, or learn more about features made available 
 
 <div style="float:left;width:180px;margin:3px;font-size:90%">
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;font-size:90%">Plan and track work</p>
-- [Agile project management](../agile-project-management.md)  
+- [Agile project management](../overview.md)  
 - [Agile tools overview](../overview.md)  
 - [Backlogs, boards, and plans](../backlogs-boards-plans.md)  
 - [Dashboards and reports](../../report/overview.md)   
@@ -329,7 +338,7 @@ Within the admin context, there are several hubs which support administrating fe
 <div style="float:left;width:180px;margin:3px;font-size:90%">
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;font-size:90%">Team project and team level</p>
 - [Overview, teams](../scale/multiple-teams.md)   
-- [Areas, Iterations](../customize/modify-areas-iterations.md)   
+- [Areas, Iterations](../customize/set-area-paths.md)   
 - [Security, permissions](../../setup-admin/permissions.md#project_test)   
 - [Alerts](../track/alerts-and-notifications.md)    
 - [Service Hooks](../../service-hooks/get-started.md)   

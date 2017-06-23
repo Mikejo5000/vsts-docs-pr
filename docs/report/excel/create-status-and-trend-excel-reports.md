@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
 ms.manager: douge
 ms.author: kaelli
-ms.date: 04/05/2017
+ms.date: 05/22/2017
 ---
 
 # Create Excel reports from a work item query  
@@ -40,7 +40,7 @@ You can generate these reports only when you work with an on-premises TFS that h
 
    You need to install Team Explorer to get the Team Foundation add-in for Excel. 
 
-##Create an Excel report from a flat-list query
+## Create an Excel report from a flat-list query
  
 Use this procedure when you work from the Team Explorer plug-in for Visual Studio. 
 
@@ -64,7 +64,7 @@ Use this procedure when you work from the Team Explorer plug-in for Visual Studi
 
    You can change the chart type and filters. For more information, see [Use PivotTables and other business intelligence tools to analyze your data](http://office.microsoft.com/excel-help/use-pivottables-and-other-business-intelligence-tools-to-analyze-your-data-HA104042322.aspx?CTT=1). 
 
-##Create a query-based report by using Excel
+## Create a query-based report by using Excel
 
 Use this procedure when you work from the web portal or the Team Explorer plug-in for Visual Studio. 
 
@@ -79,8 +79,15 @@ Use this procedure when you work from the web portal or the Team Explorer plug-i
 
 3. Choose the reports to generate (steps 3 and 4 from the previous procedure).  
 
-##Q & A
+## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
+
+
+
+### Q: Can I export a query to Excel? 
+
+**A:** If you want to export a query to Excel, you can do that from [Excel or Visual Studio/Team Explorer](../../work/office/bulk-add-modify-work-items-excel.md). Or, to export a query directly from the web portal Queries page, install the [VSTS Open in Excel Marketplace extension](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel). This extension will add in **Open in Excel** link to the toolbar of the query results page.
+
 
 <a id="which_fields_are_non_reportable"></a>
 ###Q: Which fields can't I use to generate a report?

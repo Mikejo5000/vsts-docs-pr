@@ -1,12 +1,12 @@
 ---
 title: Drive Git or TFVC development from a work item | Team Services & TFS 
-description:  Associate or automatically link work items with source control branches, builds, commits, changesets, pull requests or other Git or TFVC supported operation  
+description: Create a branch, create a pull request, and automatically link work items with source control branches, builds, commits, changesets, pull requests or other Git or TFVC supported operations  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
 ms.assetid: BD7CE3C1-9E15-4BD6-B9CD-F78569C74D0D  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 04/05/2017  
+ms.date: 05/16/2017
 ---
 
 #Drive Git development from a work item   
@@ -24,78 +24,86 @@ The Development section records all Git development processes that support compl
 
 From it, you can quickly access branches, pull requests, and commits which are linked to the work item. Also, you can initiate a pull request for a branch you've created or linked to from the work item.  
 
-Links shown in this section appear as a result of these actions:   
-- Creating a branch, commit, or pull request from the work item    
-- Specifying the work item ID during a commit, pull request, or other supported Git or TFVC operation   
-- Specifically linking the work item from the Development section or ![Links tab icon](_img/icon-links-tab-wi.png) Links tab to a source code branch, build, or other supported Git or TFVC operation.  
-
-Hovering over any entry listed under the Development section activates the hyperlink to the associated object.    
-
-The link types you can add within the development section are Branch, Build, Changeset, Commit, Found in build, Integrated in build, Pull Request, and Versioned Item. 
-
->[!NOTE]  
->The link types, **Found in build** and **Integrated in build** are only available from Team Services and only work with the current build processes (not XAML builds). 
-
-<img src="../track/_img/link-tracking-artifact-to-artifact-link-types.png" alt="Artifact-to-artifact link types" style="border: 1px solid #CCCCCC;" /> 
-
 
 <a id="git-development">  </a>
-## Workflow process
+## Workflow process to create a branch and pull request
 
 Consider creating a new branch when there are no linked code artifacts. If there is a branch but no pull requests, consider creating a pull request. Here's a typical workflow sequence when working with a Git repository. 
 
 1. Start work on the work item by creating a branch. You can add a new Git branch from within the Development section...  
 
-	<img src="_img/linkscontrol-bug-form-dev-related-links.png" alt="Bug work item form, Agile process, Development and Related links controls" style="border: 1px solid #CCCCCC;" /> 
+	<img src="_img/git-dev-pr-create-branch.png" alt="User story work item form, Development section, create new branch" style="border: 1px solid #CCCCCC;" /> 
  
 	... or, from the form's ![Actions icon](../_img/icons/actions-icon.png) Actions menu.  
 
-	![Action menu, add new branch](_img/add-work-item-new-branch.png)  
+	<img src="_img/git-dev-pr-create-branch-from-action-menu.png" alt="User story work item form, Action menu, add new branch" style="border: 1px solid #CCCCCC;" /> 
 
 	Name the branch and select the repository on which it's based.   
 
-	![Create Git branch](_img/git-dev-create-branch.png)  
+	<img src="_img/git-dev-create-branch.png" alt="Create a branch dialog box" style="border: 1px solid #CCCCCC;" />  
 
 	Branches you create are automatically linked to the work item.  
 
 	>[!NOTE]  
-	>You can only create a branch once you've added files to the main branch, which is always named ```master```.   
+	>You can only create a branch once you've added files to the main branch, which is always named ```master```.  Team Services automatically adds a README file to the initial repo created with each new team project.   
 
-2. From Visual Studio or other supported IDE, fetch the contents of the branch you just created. For details, see [Update code with fetch and pull, Download changes with fetch](../../git/tutorial/pulling.md#download-changes-with-fetch). (While any code editing and committing process will work, we work best with an edition of Visual Studio.)  
+2. The system will open to the repository and branch that you just created. 
 
-3. Add or modify files in the branch that you created.  
+	You can edit a file within the web portal. 
 
-4. From Visual Studio or other supported IDE, commit and push changes from your local branch to the repository. By adding the work item ID to your commit, you automatically link the commit to the work item.   
+	Or, if you have extensive file edits or need to add files, then you'll need to work from Visual Studio or other supported IDE. You'll want to add a new local branch from the branch you just created. For details, see [Update code with fetch and pull, Download changes with fetch](../../git/tutorial/pulling.md#download-changes-with-fetch). (While any code editing and committing process will work, we work best with an edition of Visual Studio.)  
+
+3. Add or modify files in the branch that you created.   
+
+	From Visual Studio or other supported IDE, commit and push changes from your local branch to the repository.    
 
 	![Commit and push changes](_img/git-dev-commit-sync.png)  
 
 	If this is the first time pushing changes from a new branch, you'll need to publish the branch before pushing your changes. For more details, see [Share code with push](../../git/tutorial/pushing.md).   
 
-<a id="create-pull-request">  </a>
-5. Create a [pull request](../../git/pull-requests.md). You create a pull request to merge the changes you made to a master branch and get your changes reviewed by other members of your team.  
+4. <a id="create-pull-request">  </a> Create a [pull request](../../git/pull-requests.md)  from the work item form.  
 
-	![Create pull request](_img/git-dev-create-pull-request.png)   
+	You create a pull request to merge the changes you made to a master branch and get your changes reviewed by other members of your team.  
 
-	>[!NOTE]
-	>Once you've created a pull request, you can't create a new pull request for the same branch until you complete the previous pull request.     
+	<img src="_img/git-dev-pr-create-pull-request-b.png" alt="Work item form, create pull request" style="border: 1px solid #CCCCCC;" /> 
 
-6. Complete the pull request from the web portal or Visual Studio.  
- 
-	<img src="_img/git-dev-complete-pull-request.png" alt="Complete pull request" style="border: 1px solid #CCCCCC;" />
+5.	Your view will switch to the Code hub, Pull Requests page. Complete creating the pull request as shown. 
+  
+ 	<img src="_img/git-dev-create-pull-request.png" alt="Pull Request page, Create pull request" style="border: 1px solid #CCCCCC;" />  
+
+	>[!NOTE]  
+	>Once you've created a pull request, you can't create a new pull request for the same branch until you complete the previous pull request.
+	 
+	<img src="_img/git-dev-pr-complete.png" alt="Pull Request page, Create pull request" style="border: 1px solid #CCCCCC;" /> 
+
+	Check the box for **Squash changes when merging** and then complete the merge. 
+
+	<img src="_img/git-dev-complete-merge.png" alt="Complete pull request dialog box, check squash-merge" style="border: 1px solid #CCCCCC;" /> 
+
+6. Upon completion, you should see a similar screen as follows.   
+
+	<img src="_img/git-dev-pr-completed.png" alt="Pull request, completed notification" style="border: 1px solid #CCCCCC;" /> 
+
+7.	Open the work item form or refresh the form, expand the Development section (click the ![full screen icon](../_img/icons/fullscreen_icon.png) icon), and you'll see the links that have been added to support the operations you just completed.  
+
+	<img src="_img/git-dev-development-section-completed-links.png" alt="Work item form, Development section, links added" style="border: 1px solid #CCCCCC;" /> 
+
+      
+
+
 
 <a id="add-branch-multi-wi">  </a>
 ## Create a branch for several work items  
 
-You can also add a new branch from the work item listed on the backlog or Kanban board without having to open the work item. Using [multi-select](create-your-backlog.md#bulk-modify), you can select several work items and create a new branch where they're all linked to the branch. 
+You can also add a new branch from the work item listed on the backlog or Kanban board without having to open the work item. Using [multi-select](bulk-modify-work-items.md), you can select several work items and create a new branch where they're all linked to the branch. 
 
-For example, here we select 5 items to link to a new branch.  
+For example, here we select the first five items to link to a new branch.  
 
-![Select multiple items from backlog](_img/add-work-item-create-branch-multi-items-menu.png)
+<img src="_img/git-dev-multi-select-backlog-create-new-branch.png" alt="Select multiple items from backlog" style="border: 1px solid #CCCCCC;" /> 
 
 And, we specify the name of the branch.  
 
-![create new branch dialog](_img/add-work-item-create-branch-multi-items.png)  
-
+<img src="_img/add-work-item-create-branch-multi-items.png" alt="Create new branch dialog" style="border: 1px solid #CCCCCC;" />   
 
 
 <a id="link-objects">  </a>
@@ -117,7 +125,7 @@ If you want to remove a link, you can do so from the Development section by high
 
 ![Development section, delete a link](_img/add-work-item-remove-dev-link.png)  
 
-Or, you can select it from the ![Links tab icon](_img/icon-links-tab-wi.png) Links tab and click the ![delete icon](../_img/icons/delete-link.png).
+Or, you can select it from the ![Links tab icon](_img/icon-links-tab-wi.png) Links tab and click the ![delete icon](../_img/icons/delete-link.png) remove link icon.
 
 
 
@@ -147,3 +155,19 @@ With Git commits, any work items that have been linked to a commit will be liste
 <!--- Add info about option to set build linking; link to release notes if needed --> 
 
 [!INCLUDE [temp](../_shared/help-support-shared.md)]  
+
+
+### Link types showing in the Development section
+Links shown in this section appear as a result of these actions:   
+- Creating a branch, commit, or pull request from the work item    
+- Specifying the work item ID during a commit, pull request, or other supported Git or TFVC operation   
+- Specifically linking the work item from the Development section or ![Links tab icon](_img/icon-links-tab-wi.png) Links tab to a source code branch, build, or other supported Git or TFVC operation.  
+
+Hovering over any entry listed under the Development section activates the hyperlink to the associated object.    
+
+The link types you can add within the development section are Branch, Build, Changeset, Commit, Found in build, Integrated in build, Pull Request, and Versioned Item. 
+
+>[!NOTE]  
+>The link types, **Found in build** and **Integrated in build** are only available from Team Services and only work with the current build processes (not XAML builds). 
+
+<img src="../track/_img/link-tracking-artifact-to-artifact-link-types.png" alt="Artifact-to-artifact link types" style="border: 1px solid #CCCCCC;" /> 

@@ -7,17 +7,14 @@
 
 
 
+# Quickstarts 
+## [Configuration quick reference](configuration-quick-reference.md)
 
-# Quick start
-
-
-# How to  
-
-## [Remove TFS-Project Server integration](../office/remove-tfs-ps-integration.md)
+# Tutorials 
 
 
 ## Manage projects
-### [Manage projects overview](manage-projects.md)
+
 ### [Top-down planning of business requirements](top-down-plan-mapped-team-project.md)
 ### [Manage project details](manage-project-details.md)
 ### [Make Agile team progress visible](make-agile-team-progress-visible-to-the-pmo.md)
@@ -25,9 +22,7 @@
 ### [Remove items that aren't synchronizing](remove-items-not-synching.md)
 
 ## Administrate TFS-Project Server integration
-
 ### [Administrative overview](administrate-integration-tfs-project-server.md)
-### [Configuration quick reference](configuration-quick-reference.md)
 ### [Configure TFS-Project Server integration](configure-tfs-project-server-integration.md)
 ### [Assign permissions to support TFS-Project Server integration](assign-permissions-support-tfs-project-server-integration.md)
 ### [Associate enterprise projects to team projects](manage-associations-enterprise-projects.md) 
@@ -37,25 +32,26 @@
 ## [Update an existing installation](update-version-compatibility-requirements.md)
 ## [Upgrade Project Server 2010 to Project Server 2013](upgrade-ps-2010-to-ps-2013.md)
 
+## [Remove TFS-Project Server integration](../office/remove-tfs-ps-integration.md)
+## [Map a previously bound project plan](map-project-plan-previously-bound.md)
+## [Change your deployment configuration](change-deployment-configuration.md)
 
 
 # Concepts
 ## [Operational differences in managing projects using TFS and Project](operational-differences.md)
 ## [Work with resource rollup](work-with-resource-rollup.md)
 ## [Understand how updates to specific fields are managed](understand-how-updates-to-specific-fields-managed.md)
-
-
-# Samples
+## [Manage projects overview](manage-projects.md)
+## [Map integration components](map-integration-components.md)
 
 
 # Reference
 ## [System and setup requirements](system-and-setup-requirements.md)
 ## [Map components](map-project-server-components.md)
-## [Map a previously bound project plan](map-project-plan-previously-bound.md)
-## [Change your deployment configuration](change-deployment-configuration.md)
+
 ## [Change the retry or resubmit interval](change-synchronization-retry-or-resubmit-interval.md)
-## Map integration components
-### [Map integration components](map-integration-components.md)
+## Map components
+
 ### [Register an instance](register-pwa.md)
 ### [Map a team project collection](map-team-project-collection-to-pwa.md)
 ### [Manage mappings](manage-mappings-enterprise-project-team-project.md)

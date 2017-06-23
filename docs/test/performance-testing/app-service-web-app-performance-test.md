@@ -196,11 +196,16 @@ Share your code, build, test, track work, and ship software - all in the cloud
 using any tool or language. Learn more about how [Visual Studio Team Services](https://www.visualstudio.com/products/what-is-visual-studio-online-vs) 
 features and services help your team collaborate more easily and deploy continuously.
 
+#### Q: Can I get more detailed profiler information?
+
+A: Yes, see [Profiling live Azure web apps with Application Insights](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-profiler).
+
 ## See also
 
 * [Run URL-based load tests with Visual Studio Team Services](getting-started/get-started-simple-cloud-load-test.md)
 * [Run Apache JMeter load tests with Visual Studio Team Services](getting-started/get-started-jmeter-test.md)
 * [Record and replay cloud-based load tests](getting-started/record-and-replay-cloud-load-tests.md)
 * [Performance test your app in the cloud](getting-started/getting-started-with-performance-testing.md#cloudloadtest)
+* [Profiling live Azure web apps with Application Insights](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-profiler)
 
 [!INCLUDE [help-and-support-footer](../_shared/help-and-support-footer.md)] 

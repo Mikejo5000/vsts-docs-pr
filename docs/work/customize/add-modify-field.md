@@ -86,6 +86,31 @@ To add rules or add a custom field, export, edit, and then import the WIT defini
 
 Any field that you want to use to track data must be added to the WIT definition file. This is true for all but system fields (fields whose reference name start with **System.**). All System fields are defined for all WITs, whether or not you include them in WIT definition. To learn more about each field, see [Work item field index](../guidance/work-item-field.md).
 
+<a id="boolean-field">  </a>
+### Add a checkbox or Boolean field 
+
+>[!NOTE]  
+><b>Feature availability:</b>The Boolean data type is supported for Hosted XML (Team Services) and for On-Premises XML, for TFS 2017.2 and later versions. 
+
+Use the following syntax to add a Boolean field within the **FIELDS** section of the WIT definition. 
+
+```
+<FIELD name="Triage" refname="Fabrikam.Triage" type="Boolean" >
+ <DEFAULT from="value" value="False" />
+        <HELPTEXT>Triage work item</HELPTEXT>
+      </FIELD>
+```
+
+And then add the following syntax within the **FORM** section to have the field appear on the form. 
+
+```
+<Control Label="Triage" Type="FieldControl" FieldName="Fabrikam.Triag" /> 
+```
+ 
+The field will appear as a checkbox on the form. 
+
+
+
 <a id="picklist">  </a>
 ### Customize a pick list
 
@@ -313,6 +338,7 @@ This topic addressed how to add and customize fields for Hosted XML and On-premi
 
 Other related topics or resources: 
 
+- [Work tracking object limits](../customize/object-limits.md) 
 - [Customize the work tracking experience](customize-work.md)  
 - [Field data type and field attributes](../reference/define-modify-work-item-fields.md)    
 - [WebLayout and Control elements](../reference/weblayout-xml-elements.md)
@@ -364,7 +390,7 @@ To list or review fields, you can use one of the following tools, depending on t
 </tr>
 
 <tr>
-<td align="left">[witadmin listfields command line tool]((../reference/witadmin/manage-work-item-fields.md)</td>
+<td align="left">[witadmin listfields command line tool](../reference/witadmin/manage-work-item-fields.md)</td>
 <td>![checkmark](../_img/icons/checkmark.png)</td>
 <td>![checkmark](../_img/icons/checkmark.png)</td>
 <td>![checkmark](../_img/icons/checkmark.png)</td>

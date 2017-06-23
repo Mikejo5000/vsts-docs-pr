@@ -21,24 +21,15 @@ Create, queue, and monitor cross-platform builds and releases with these [Build 
 Use Hosted Pipelines to run builds and deploy releases concurrently on Microsoft-managed
 agents. Use Private Pipelines to run builds and deploy releases on machines that you manage,
 running agent software from Microsoft.
-  
+
   > To better connect with Release Management, **Build & Deployment** was renamed **Build & Release**.  
   > Unit names are now **Hosted Pipelines** and **Private Pipelines**, rather than Hosted Agents and Private Agents.
-  
+
   Each pipeline lets you run 1 build or deploy 1 release at a time.
   The maximum number of concurrent builds that you can run and releases
   that you can deploy at the same time is limited only by the number of pipelines that you have.
 
   Your Team Services account includes these **free** amounts:
-
-  * 1 free Hosted Pipeline
-
-    With this free Hosted Pipeline, you get 4 hours (240 minutes) per month
-    and a maximum duration of 30 minutes per build or deployment.
-    If you just need more build time for 1 concurrent build or release,
-    [buy another Hosted Pipeline](#buy-build-release) without the 4-hour limit
-    to increase your maximum duration per build or deployment up to 6 hours.
-    For more concurrent builds or releases, [buy more Hosted Pipelines](#buy-build-release).
 
   * 1 free Private Pipeline
 
@@ -46,21 +37,30 @@ running agent software from Microsoft.
     or deploy 1 release at a time in Team Foundation Server 2017,
     or run 1 build or deploy 1 release at a time in Team Services on
     agent software from Microsoft.  Private agents are now free and unlimited.
-    In TFS, each Visual Studio Enterprise subscriber also contributes
+    Each Visual Studio Enterprise subscriber also contributes
     a Private Pipeline that you can use. You can also
     [buy more Private Pipelines](#buy-build-release).
 
-  Learn about:
+  * 1 free Hosted Pipeline
+
+    With this free Hosted Pipeline, you get 4 hours (240 minutes) per month
+    and a maximum duration of 30 minutes per build or deployment in Team Services.
+    If you just need more build time for 1 concurrent build or release,
+    [buy another Hosted Pipeline](#buy-build-release) without the 4-hour limit
+    to increase your maximum duration per build or deployment up to 6 hours.
+    For more concurrent builds or releases, [buy more Hosted Pipelines](#buy-build-release).
+
+    Learn about:
 
     * [Team Services: Build & Release pipelines](../../build/concepts/licensing/concurrent-pipelines-ts.md)
     * [TFS: Build & Release pipelines](../../build/concepts/licensing/concurrent-pipelines-tfs.md)
     * [Pricing for Build & Release pipelines](https://www.visualstudio.com/team-services/pricing)
 
 
-*  **Build (XAML)**: The hosted XAML build controller is no longer supported.
-Accounts created on or after April 2016 do not have access to it.
-We plan to remove the hosted XAML build controller from all accounts,
-possibly as soon as March 2017.
+
+  *  **Build (XAML)**: The hosted XAML build controller is no longer supported.
+  Accounts created on or after April 2016 do not have access to it.
+  We plan to remove the hosted XAML build controller from all accounts on July 1 2017.
 
   > **Important:** If you have an account where you still need to run [XAML builds](https://msdn.microsoft.com/en-us/library/ms181709%28v=vs.120%29.aspx),
   > you should set up an [on-premises build server](https://msdn.microsoft.com/en-us/library/ms252495%28v=vs.120%29.aspx)
@@ -72,7 +72,7 @@ possibly as soon as March 2017.
 
 
 <a name="buy-build-release"></a>
-##  Pre-requisites 
+##  Pre-requisites
 
 Before you start:
 
@@ -119,12 +119,12 @@ sign in to either:
 
 0.  Choose **Buy** for your selected pipeline.
 
-  <img alt="Select your Team Services account" src="./\_img/get-more-build-load-testing/buy-hosted-build-release-pipelines.png" style="border: 1px solid #CCCCCC" />
+  ![Select your Team Services account](_img/get-more-build-load-testing/buy-hosted-build-release-pipelines.png)
 
 0.  Select your Team Services account,
 if you have multiple accounts.
 
-  <img alt="Select your Team Services account" src="./\_img/get-more-build-load-testing/select-team-services-account.png" style="border: 1px solid #CCCCCC" />
+  ![Select your Team Services account](_img/get-more-build-load-testing/select-team-services-account.png)
 
   <p><a data-toggle="collapse" href="#expando-why-no-ts-account">Don't see your Team Services accounts? &#x25BC;</a></p>
   <div class="collapse" id="expando-why-no-ts-account">
@@ -140,7 +140,7 @@ if you have multiple accounts.
   create a new subscription now to use for billing.
   [More about Azure subscriptions for billing](#billing)
 
-  <img alt="Confirm or select your Azure subscription" src="./\_img/get-more-build-load-testing/select-azure-subscription.png" style="border: 1px solid #CCCCCC" />
+  ![Confirm or select your Azure subscription](_img/get-more-build-load-testing/select-azure-subscription.png)
 
   <p><a data-toggle="collapse" href="#expando-why-no-azure-sub">Don't see the Azure subscription that you expect? &#x25BC;</a></p>
   <div class="collapse" id="expando-why-no-azure-sub">
@@ -154,13 +154,13 @@ if you have multiple accounts.
 0.  Select the number of pipelines that you want to buy.
 Finish your purchase.
 
-  <img alt="Select number of pipelines to buy" src="./\_img/get-more-build-load-testing/select-number-hosted-pipelines.png" style="border: 1px solid #CCCCCC" />
+  ![Select number of pipelines to buy](_img/get-more-build-load-testing/select-number-hosted-pipelines.png)
 
 0.  To view your pipelines, go to your Team Services account.
 
-  <img alt="View pipelines in your Team Services account" src="./\_img/get-more-build-load-testing/confirm-hosted-pipeline-purchase.png" style="border: 1px solid #CCCCCC" />
+  ![View pipelines in your Team Services account](_img/get-more-build-load-testing/confirm-hosted-pipeline-purchase.png)
 
-  <img alt="Go to Team Services account toolbar > Build and Release" src="./\_img/get-more-build-load-testing/manage-pipelines-team-services.png" style="border: 1px solid #CCCCCC" />
+  ![Go to Team Services account toolbar > Build and Release](_img/get-more-build-load-testing/manage-pipelines-team-services.png)
 
   To return to the Build & Release hub in
   your Team Services account at any time,
@@ -178,7 +178,7 @@ you can update the number of pipelines that you bought.
 then go to **Build and Release**
 (```https://{youraccount}.visualstudio.com/_admin/_buildQueue?_a=resourceLimits```).
 
-  <img alt="Go to Team Services account toolbar > Build and Release" src="./\_img/get-more-build-load-testing/manage-pipelines-team-services.png" style="border: 1px solid #CCCCCC" />
+  ![Go to Team Services account toolbar > Build and Release](_img/get-more-build-load-testing/manage-pipelines-team-services.png)
 
 0.  Choose **Change purchased quantity**
 for the paid pipeline that you want to update,
@@ -188,7 +188,7 @@ so you can go to the Visual Studio Marketplace.
 choose **Buy**, select your Team Services account,
 then update your number of paid pipelines.
 
- 
+
 
 ## Related notes  
 
@@ -232,7 +232,7 @@ includes unlimited minutes per month, within reason.
 *  Each connected private XAML controller is counted as one private pipeline,
 although a private XAML controller can host more than one agent.
 
-*  For Cloud-based Load Testing, you're charged for each 
+*  For Cloud-based Load Testing, you're charged for each
    [virtual user minute](../../test/performance-testing/getting-started/get-started-simple-cloud-load-test.md#VUM).
 
 *   Graduated discounts Cloud-based Load Testing
@@ -247,8 +247,8 @@ A: Yes, you can add other features to your Team Services account when you
 
 ### Q: How do I get help or support for Team Services?
 
-A:	Try the [Team Services forum](https://social.msdn.microsoft.com/Forums/en-us/home?forum=TFService) 
-or [Team Services Support](https://www.visualstudio.com/team-services/support). 
+A:	Try the [Team Services forum](https://social.msdn.microsoft.com/Forums/en-us/home?forum=TFService)
+or [Team Services Support](https://www.visualstudio.com/team-services/support).
 
 
 <!-- ENDSECTION -->

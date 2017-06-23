@@ -156,7 +156,9 @@ When you create a bug while capturing diagnostic data, all the data captured
 up to that point is included in the bug that is created. You can
 view it before you save the bug.
 
-![Viewing the diagnostic data in the bug yu are creating](_img/collect-diagnostic-data/collect-diagnostic-data-15.png) 
+![Viewing the diagnostic data in the bug you are creating](_img/collect-diagnostic-data/collect-diagnostic-data-15.png) 
+
+[How do I play the video recordings I created with the extension?](getting-started/perform-exploratory-tests.md#recording-playback)
 
 <a name="collect-desktop"></a>
 ## Collect diagnostic data from desktop apps

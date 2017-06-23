@@ -49,67 +49,53 @@ as project administrator, project collection administrator, or account owner.
 
 	[Why am I asked to choose between my "work or school account" and my "personal account"?](#ChooseOrgAcctMSAcct)
 
-0.	If you've [turned on the Account Landing preview](../../connect/account-home-pages.md), 
-from your **Projects** page (```https://{youraccount}.visualstudio.com/_projects```), 
+0.	On the account landing page (which is your projects page, ```https://{youraccount}.visualstudio.com/_projects```), 
 find and select your team project.
 
-	<img alt="On your Projects page, select your team project" src="../../_shared/_img/select-team-project-updated-ui.png" style="border: 1px solid #CCCCCC" />
-
-	> [!NOTE]
-	> Eventually, the Projects page will be turned on by default, 
-	> so you can always go there to find your team projects. 
-
-	Otherwise, from your account home page 
-	(```https://{youraccount}.visualstudio.com```), 
-	select your team project. If you don't see your team project, 
-	try **Browse**.
-
-	<img alt="On your account home page, select your team project" src="./_img/_shared/select-team-project-new-ui.png" style="border: 1px solid #CCCCCC" />
-
-	> [!NOTE]
-	> Eventually, **Projects** page will replace the account home page. 
-	> so you can always go to the **Projects** page to create new team projects. 
+	![On your Projects page, select your team project](_img/add-team-members/select-team-project-updated-ui.png)
 
 0.	Invite members to your new team project...
 
-    <img alt="On your team project home page, click Invite a friend" src="./_img/add-team-members/invite-team.png" style="border: 1px solid #CCCCCC" />
+    ![On your team project home page, click Invite a friend](_img/add-team-members/invite-team.png)
 
 	Or invite them to an existing team project.
 
-	<img alt="On your team project page, click Manage team members" src="./_img/add-team-members/invite-team-existing.png" style="border: 1px solid #CCCCCC" />
+	![On your team project page, click Manage team members](_img/add-team-members/invite-team-existing.png)
+	
+  Adding members from the project page adds them to the default team for the project.  To add a member to a different team, choose 
+  the gear cog and **Security** from the menu.  Then find the team on the left pane of the security page and select it.  In 
+  the right pane, choose the **Members** view (next to **Permissions**), and then you will see a green plus symbol and 
+  the **Add...** button.
+
 
 0.	Add your team members.
 	 
-	<img alt="Click Add" src="./_img/add-team-members/add-user.png" style="border: 1px solid #CCCCCC" />
+	![Click Add](_img/add-team-members/add-user.png)
 	
 0.	Enter the email addresses for new users. 
 Otherwise, enter the display names for existing users. 
 Add them one at a time or all at the same time.
 
-	<p><a data-toggle="collapse" href="#expando-what-sign-in-address">Which email addresses can I add? &#x25BC;</a></p>
-	<div class="collapse" id="expando-what-sign-in-address">
-	<p>You must add email addresses for users who have 
-	["personal" Microsoft accounts](https://www.microsoft.com/account) 
-	unless your Team Services account 
-	[uses your organization's directory](#ConnectedDirectory) 
+	Which email addresses can I add?
+	 * If your Team Services account is Azure Active Directory backed, then you can only add email addresses that are
+	 internal to the tenant.
+	
+	 * You must add email addresses for users who have ["personal" Microsoft accounts](https://www.microsoft.com/account) 
+	unless your Team Services account [uses your organization's directory](#ConnectedDirectory) 
 	to authenticate users and control account access through 
 	[Azure Active Directory (Azure AD)](https://azure.microsoft.com/en-us/documentation/articles/active-directory-whatis/). 
-	If new users don't have Microsoft accounts, 
-	have them [sign up](https://signup.live.com/).
+	If new users don't have Microsoft accounts, have them [sign up](https://signup.live.com/).
 
- 	<p>If your Team Services account is connected to your organization's directory, 
-	all users must be directory members and sign in to Team Services 
-    with "work or school accounts" that are managed by your organization's directory. 
-	If they're not members, have a directory administrator add them to the directory. 
-	That way, you can find them in this directory when you add users 
-	by searching for their email addresses or display names.
-	</div>
-	
-	<img alt="Add members' sign-in addresses or display names" src="./_img/add-team-members/add-user2.png" style="border: 1px solid #CCCCCC" />
+ 	 * If your Team Services account is connected to your organization's directory, 
+	all users must be directory members and sign in to Team Services with "work or school accounts" that are managed by 
+	your organization's directory. 	If they're not members, have a directory administrator add them to the directory. 
+	That way, you can find them in this directory when you add users by searching for their email addresses or display names.
 
-	<img alt="Add members' sign-in addresses or display names" src="./_img/add-team-members/add-user2.png" style="border: 1px solid #CCCCCC" />
+	![Add members' sign-in addresses or display names](_img/add-team-members/add-user2.png)
 
-	<img alt="Members are now added to your team project" src="./_img/add-team-members/team-project-members.png" style="border: 1px solid #CCCCCC" /> 	
+	![Add members' sign-in addresses or display names](_img/add-team-members/add-user2.png)
+
+	![Members are now added to your team project](_img/add-team-members/team-project-members.png) 	
 
 	After you add members to your team project, 
 	each member gets an invitation email that 
@@ -117,7 +103,10 @@ Add them one at a time or all at the same time.
 	They can use this link to sign in to your account 
 	and find your team project.
 	First-time members might be asked for extra details 
-	when they sign in to personalize their experience. 
+	when they sign in to personalize their experience.
+
+	What if new team members don't receive or lose the invitation email?  You can just send a link to the project page to
+	the new team members, which is what the email contains.
 
 	[Why can't I add any more members?](#cant-add-users)
 

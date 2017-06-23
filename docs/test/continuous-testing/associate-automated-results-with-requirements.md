@@ -2,7 +2,7 @@
 title: Associate automated test results with requirements
 description: Manual and exploratory testing Associate automated test results with requirements using Microsoft Test Manager
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-manual
+ms.technology: vs-devops-test-continuous
 ms.assetid: 30F9B666-02D7-4A94-9EA1-EC8B8E5F1D8F
 ms.manager: douge
 ms.author: ahomer
@@ -49,7 +49,7 @@ and choose the **Associate tests to work item** (link) icon.
 ## See Also
 
 * [Associate automated tests with test cases](associate-automated-test-with-test-case.md)
-<!-- * [Run automated tests from test plans in the Test hub](run-automated-tests-from-test-hub.md) -->
+* [Run automated tests from test plans in the Test hub](run-automated-tests-from-test-hub.md)
 * [Test with unified agents and phases](test-with-unified-agent-and-phases.md)
 * [Continuous testing scenarios and capabilities](index.md)
 

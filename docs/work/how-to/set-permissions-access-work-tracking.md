@@ -15,9 +15,29 @@ ms.date: 06/01/2016
 
 <b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
 
- 
+You can grant or restrict access to various work tracking features. You do this by granting users or groups specific permissions for the team project or at the object-level. 
 
-<a id="set-permissions" >  </a> 
+**Project-level permissions**
+- Restrict ability to create work item tags  
+- Restrict ability to delete and restore work items  
+- Restrict ability to move work items out of a team project
+- Grant ability to permanently delete work items
+- Customize a team project
+	- Create and modify work item types, link types, categories, and process configuration
+	- Add teams and team administrators 
+	- Edit project level permissions 
+
+**Object-level permissions**
+- Restrict access to view or modify work items under an area path 
+- Grant access to define or modify queries or query folders 
+- Grant access to create and manage area paths or iteration paths 
+
+**Role-based permissions**
+- Add a user as a team administrator to allow them to configure team settings 
+
+Add users to the Contributors group to provide access to most features as listed in [Permissions and access for work tracking](../permissions-access-work-tracking.md) 
+
+<a id="set-permissions-area-path" >  </a> 
 
 ## Set permissions to restrict access to work items   
 
@@ -47,12 +67,8 @@ For additional ways to restrict modifications to work items, see [Restrict who c
 
 
 
+
 ## Related notes 
 
-*	[Add another team](../scale/multiple-teams.md)  
-*	[Set team defaults](../scale/set-team-defaults.md)  
-*	[Customize iteration paths](../customize/set-iteration-paths-sprints.md)  
-*	[Customize area paths](../customize/set-area-paths.md)  
-*	[Configure team settings and add team administrators](../scale/manage-team-assets.md)  
-*	[Set permissions and access for work tracking](../how-to/set-permissions-access-work-tracking.md) 
-*	[Query by area or iteration path ](../track/query-by-area-iteration-path.md)    
+*	[Permissions and access for work tracking](../permissions-access-work-tracking.md) 
+   

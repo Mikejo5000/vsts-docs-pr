@@ -13,6 +13,9 @@ ms.date: 08/04/2016
 
 [!INCLUDE [temp](../_shared/dev15-version-header.md)]
 
+> [!NOTE] 
+> Are you new to Agile? Learn more about [Agile Culture] (https://www.visualstudio.com/learn/agile-culture/) and [Scaling Agile to Large Teams] (https://www.visualstudio.com/learn/scale-agile-large-teams/).
+
 As your team grows, you want your tools to grow with it. And, if you're an enterprise adopting Agile methodologies, you want your Agile tools to support the business objectives of your enterprise.  
 
 However, to successfully scale Agile requires addressing both the culture and tools within your organization.  
@@ -149,11 +152,11 @@ As your organization grows, you can scale your Agile tools in the following ways
 
 - **Group or categorize work:**  There are several ways to group work that you want to track. Backlogs filter work items based on team area assignments. And, portfolio backlogs allow you to [group backlog items under Features and Epics](../backlogs/organize-backlog.md). 
 
-	However, if you want to track and report on work items based on other groupings, you can. You can [add tags to work items and then filter backlogs or queries based on tags](../track/add-tags-to-work-items.md). Also, you can [add sub-area paths](../customize/modify-areas-iterations.md) to represent more granular feature areas.  
+	However, if you want to track and report on work items based on other groupings, you can. You can [add tags to work items and then filter backlogs or queries based on tags](../track/add-tags-to-work-items.md). Also, you can [add sub-area paths](../customize/set-area-paths.md) to represent more granular feature areas.  
 
 - **Add folders and use team favorites:**  As your teams grow, you'll see a growing list of work item queries, build definitions, and source code folders. By using folders, sub-folders, and team favorites, you can manage many of these lists more easily. You can add team favorites for shared queries, source code, and build definitions.
 
-##Related notes  
+## Related notes  
 
 Before you can create or work with any of the Agile tools, you need a team project. If you don't have one yet, you can [create one in Visual Studio Team Services](../../setup-admin/team-services/connect-to-visual-studio-team-services.md)  or on an [on-premises TFS](../../setup-admin/create-team-project.md). 
 
@@ -165,14 +168,15 @@ For addtional guidance, see these topics:
 - [Review team delivery plans](review-team-plans.md)
 - [Implement Scaled Agile Framework® to support epics, release trains, and multiple backlogs](scaled-agile-framework.md). 
 
-####Agile culture industry resources
+###Agile culture industry resources
 
+- [Nexus, the Exoskeleton of Scaled Scrum](https://www.scrum.org/resources/nexus-guide)  
 - [Culture over process](http://blog.crisp.se/wp-content/uploads/2013/09/culture-over-process.pdf) by Henrik Kniberg  
 - [The Culture Game - Tools for the Agile Manager](http://www.amazon.com/The-Culture-Game-Tools-Manager/dp/0984875301) by Daniel Mezick   
 - [Scaled Agile Framework (SAFe)](http://www.scaledagileframework.com/)  
 - [Scaling Agile Software Development, - Disciplined Agility at Scale (White Paper)](http://disciplinedagileconsortium.org/Resources/Documents/ScalingAgileSoftwareDevelopment.pdf)   
 
-###Scale with teams and not team projects  
+### Scale with teams and not team projects  
 Often times, organizations look at adding a team project for each software development project. 
 
 Adding teams to scale your tools rather than adding team projects is recommended for the following reasons:  

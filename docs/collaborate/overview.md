@@ -123,7 +123,7 @@ Follow a specific object, such as a work item or pull request, to get notified w
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">&#64;mention</p>
 <ul style="padding-left:30px;font-size:90%">
 <li style="margin-bottom:1px">[@mention to notify a team member](../work/productivity/productivity-tips.md#mention-person-id) </li>
-<li style="margin-bottom:1px">[Work item discussions](../work/backlogs/add-work-items.md#discussion) </li>
+<li style="margin-bottom:1px">[Work item discussions](../work/concepts/work-item-form-controls.md#discussion) </li>
 </ul>
 
 </div>
@@ -231,8 +231,6 @@ Use the quick add panel from the backlog pages to add user stories, requirements
 
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Bulk add or update work items</p>
 <ul style="padding-left:30px;font-size:90%">
-<li style="margin-bottom:1px">[Bulk modify (backlog)](../work/backlogs/create-your-backlog.md#bulk-modify) </li>
-<li style="margin-bottom:1px">[Bulk modify (sprint backlog)](../work/scrum/sprint-planning.md#bulk-modify) </li>
 <li style="margin-bottom:1px">[Bulk modify (web portal)](../work/backlogs/bulk-modify-work-items.md)</li>
 <li style="margin-bottom:1px">[Bulk add or remove tags](../work/track/add-tags-to-work-items.md#bulk-modify) </li>
 <li style="margin-bottom:1px">[Bulk add or modify with Excel](../work/office/bulk-add-modify-work-items-excel.md)</li>

@@ -7,10 +7,10 @@ ms.prod: vs-devops-alm
 ms.assetid: B4406575-4D4D-42E3-88FD-93830546B67F
 ms.manager: douge
 ms.author: kaelli
-ms.date: 03/20/2017  
+ms.date: 05/29/2017  
 ---
 
-#Work effectively from your account hub
+# Work effectively from your account hub
 
 **Team Services | TFS 2017.1**  
 
@@ -100,7 +100,10 @@ To filter the list, type a keyword in the *Filter favorites* box. The list will 
  
 <a id="work-items">  </a>
 ## Work: View and open work items  
-Open the **Work item**s hub to access the set of work items assigned to you or followed by you.  The lists available from each page spans all team projects that you work in.
+Open the **Work items** hub to access the set of work items assigned to you or followed by you. The lists available from each page span all team projects that you work in. 
+
+>[!NOTE]  
+><b>Feature availability: </b>For Team Services, you can access the Work items hub [from a mobile device](../collaborate/mobile-work.md). 
 
 ###Your assigned work items 
 The **Assigned to me** page lists all work items assigned to you in the order they were last updated. To open or update a work item, click its title. 
@@ -161,11 +164,9 @@ To learn more about team rooms, see [Collaborate in a team room](../collaborate/
 
 - [Enable preview features](../collaborate/preview-features.md)  
 - [Work in the web portal](work-web-portal.md) 
-- [Adhoc versus managed queries](../work/track/adhoc-vs-managed-queries.md)
 - [User-focused features](user-focused-features.md)  
 - [Productivity tips](../work/productivity/productivity-tips.md)  
 - [Connect to team projects](connect-team-projects.md)  
-- [Keyboard shortcuts](../reference/keyboard-shortcuts.md) 
 - [Collaborate using team resources](../work/scale/manage-team-assets.md)  
 
 

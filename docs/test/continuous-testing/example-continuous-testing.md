@@ -30,6 +30,9 @@ The walk-through is divided into the following sections:
 
 It will take around 45 minutes to complete all of the steps.
 
+> For information about deploying to targets other than Azure App Service, see
+[Build and deploy your app](../../build/apps/index.md).
+
 <a name="create-service"></a>
 ## Create the Azure app service 
 
@@ -147,7 +150,7 @@ will automatically execute the unit tests it contains.
 
 >For more details about build definitions in Team Services, see
 [Continuous integration on any platform](../../build/overview.md). For more details about unit tests and the results, see 
-[Get started with developer testing tools](../developer-testing/getting-started/getting-started-with-developer-testing.md).
+[Get started with unit testing](https://docs.microsoft.com/visualstudio/test/getting-started-with-unit-testing).
 
 <a name="configure-cd"></a>
 ## Configure continuous deployment

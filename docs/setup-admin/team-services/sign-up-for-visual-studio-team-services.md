@@ -1,6 +1,6 @@
 ---
-title: Sign up for Visual Studio Team Services | Visual Studio Team Services
-description: Visual Studio Team Services - Get free unlimited private Git repos, tools for Agile, Java, build, test, and release (Visual Studio Online, VSO, VSTS)
+title: Sign up for Visual Studio Team Services
+description: Get free unlimited private Git repos, tools for Agile, Java, build, test, and release using Visual Studio Team Services (VSTS)
 ms.topic: get-started-article
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
@@ -10,7 +10,7 @@ ms.author: estfan
 ms.date: 03/30/2017
 ---
 
-#	Sign up for Visual Studio Team Services: Git & Agile, continuous integration, & continuous delivery
+#	Sign up for Visual Studio Team Services: Git and agile, continuous integration, and continuous delivery
 
 **Team Services**
 
@@ -26,23 +26,9 @@ so your team can build often, test early, and ship faster.
 > [Get Team Foundation Server here](https://www.visualstudio.com/products/tfs-overview-vs), 
 > or learn [how to install and set up Team Foundation Server](../tfs/install/get-started.md). 
 
-<p><a data-toggle="collapse" href="#expando-what-users-get">What users can join for free? What do they get in Visual Studio Team Services? &#x25BC;</a></p>
-<div class="collapse" id="expando-what-users-get">
-<p>Visual Studio Team Services is free for these users to join:
-<ul>
-<li>5 users who get [Basic features](https://www.visualstudio.com/team-services/compare-features/) 
-like version control, tools for Agile, Java, build, release management, and more 
-<li>Unlimited users who get [Stakeholder features](https://www.visualstudio.com/team-services/compare-features/) 
-like working with your backlog, work items, and queries
-<li>Unlimited [Visual Studio subscribers](https://www.visualstudio.com/team-services/compare-features/) 
-who also get Basic features, and in some cases, additional features with specific extensions, like 
-[Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
-<p>
-<p>Learn what else you get with [Visual Studio Team Services](https://www.visualstudio.com/team-services/pricing/).
-</div>
 
-<div style="clear:left;font-size:100%">
-</div>
+[What users can join for free?  What do they get in Visual Studio Team Services?](#free-users)
+
 
 <a name="how-sign-up"></a>
 ##	What do I need to sign up for a Visual Studio Team Services account?
@@ -58,20 +44,13 @@ who also get Basic features, and in some cases, additional features with specifi
 	organization's directory (tenant) in Azure Active Directory (Azure AD), 
 	[sign up with your organization's "work or school account"](#orgaccount). 
 
->	<p><a data-toggle="collapse" href="#expando-choose-msa-wsa">More info about how to choose? &#x25BC;</a></p>
->	<div class="collapse" id="expando-choose-msa-wsa">
->	<p>Use your Microsoft account if you don't need to authenticate users 
->	for an organization with [Azure Active Directory (Azure AD)](https://azure.microsoft.com/en-us/documentation/articles/active-directory-whatis/). 
->	All users must sign in with Microsoft accounts to your Team Services account.
->	<p>
->	<p>Use your work or school account to **automatically connect** 
->	your Team Services account to your organization's directory. 
->	All users must be members in that directory to get access 
->	to your Team Services account.
->	</div>
+Use your Microsoft account if you don't need to authenticate users 
+for an organization with [Azure Active Directory (Azure AD)](https://azure.microsoft.com/en-us/documentation/articles/active-directory-whatis/). 
+All users must sign in with Microsoft accounts to your Team Services account.
 
-<div style="clear:left;font-size:100%">
-</div>
+Use your work or school account to **automatically connect** your Team Services account to your organization's directory. 
+All users must be members in that directory to get access to your Team Services account.
+
 
 <a name="MicrosoftAccount"></a>
 ##	Sign up for Visual Studio Team Services with a personal Microsoft account
@@ -83,7 +62,7 @@ Enter your email address for your Microsoft account.
 	and get Visual Studio Team Services as a benefit, 
 	use the Microsoft account associated with your subscription. 
 
-	<img src="./_img/_shared/sign-in.png" alt="Enter your email address" style="border: 1px solid #CCCCCC">
+	![Enter your email address](_img/_shared/sign-in.png)
 
 	Got [browser problems?](#browser-problems)
 
@@ -91,7 +70,7 @@ Enter your email address for your Microsoft account.
 enter your email address for your Microsoft account. 
 Then enter your password, and finish signing in.
 
-	<img src="./_img/_shared/sign-in-msa2.png" alt="Enter password for your Microsoft account" style="border: 1px solid #CCCCCC">
+	![Enter password for your Microsoft account](_img/_shared/sign-in-msa2.png)
 
 	If you don't have a Microsoft account, 
 	you can create a Microsoft account at this time. 
@@ -101,7 +80,7 @@ Then enter your password, and finish signing in.
 0.	Name your Visual Studio Team Services account. 
 To manage your code, choose Git or Team Foundation Version Control.
 
-	<img src="./_img/sign-up-visual-studio-team-services/create-team-services-account.png" alt="Name your Visual Studio Team Services account, choose your version control" style="border: 1px solid #CCCCCC">
+	![Name your Visual Studio Team Services account, choose your version control](_img/sign-up-visual-studio-team-services/create-team-services-account.png)
 
 	Learn which version control ([Git](../../git/overview.md) 
 	or [Team Foundation Version Control](../../tfvc/overview.md)) 
@@ -109,7 +88,7 @@ To manage your code, choose Git or Team Foundation Version Control.
 
 0.	Confirm your account's location. 
 
-	<img src="./_img/sign-up-visual-studio-team-services/check-account-location-standard.png" alt="Rename team project, change account location, or select another process" style="border: 1px solid #CCCCCC">
+	![Rename team project, change account location, or select another process](_img/sign-up-visual-studio-team-services/check-account-location-standard.png)
 	
 	Team Services will create your first team project as "MyFirstProject" 
 	and will use Agile as your default work item process to organize your work. 
@@ -124,7 +103,7 @@ To manage your code, choose Git or Team Foundation Version Control.
 0.	After Visual Studio Team Services creates your account and team project, 
 add your code, work items, or more users.
 
-	<img src="./_img/_shared/team-project-created.png" alt="Add code or work items" style="border: 1px solid #CCCCCC">
+	![Add code or work items](_img/_shared/team-project-created.png)
 
 	Congratulations, you're now a Visual Studio Team Services account owner! 
 
@@ -199,7 +178,7 @@ To use existing on-premises identities with Visual Studio Team Services, learn h
 0.	Go to [Visual Studio Team Services](https://go.microsoft.com/fwlink/?LinkId=307137).
 Enter the email address for your work or school account.
 
-	<img src="./_img/_shared/sign-in.png" alt="Enter your email address" style="border: 1px solid #CCCCCC">
+	![Enter your email address](_img/_shared/sign-in.png)
 
 	Your sign-in page might look different, 
 	based on the work or school account that you used.
@@ -208,14 +187,14 @@ Enter the email address for your work or school account.
 
 0.	Enter your password for your work or school account.
 
-	<img src="./_img/_shared/sign-in-aad.png" alt="Enter your password for your work or school account" style="border: 1px solid #CCCCCC">
+	![Enter your password for your work or school account](_img/_shared/sign-in-aad.png)
 
 	[Why am I asked to choose between my work or school account and my personal account?](#ChooseOrgAcctMSAcct)
 
 0.	Name your Visual Studio Team Services account. 
 To manage your code, choose Git or Team Foundation Version Control.
 
-	<img src="./_img/sign-up-visual-studio-team-services/create-team-services-account-directory.png" alt="Name your account, choose your version control" style="border: 1px solid #CCCCCC">
+	![Name your account, choose your version control](_img/sign-up-visual-studio-team-services/create-team-services-account-directory.png)
 
 	Learn which 
 	version control ([Git](../../git/overview.md) 
@@ -225,7 +204,7 @@ To manage your code, choose Git or Team Foundation Version Control.
 0.	Confirm your account's location and the **directory** 
 that you're connecting to your Team Services account. 
 
-	<img src="./_img/sign-up-visual-studio-team-services/change-account-directory.png" alt="Rename team project, change account location, or select another process" style="border: 1px solid #CCCCCC">
+	![Rename team project, change account location, or select another process](_img/sign-up-visual-studio-team-services/change-account-directory.png)
 
 	> [!IMPORTANT]
 	> Team Services will create your first team project as "MyFirstProject" and will use Agile as the default work item
@@ -239,7 +218,7 @@ that you're connecting to your Team Services account.
 0.	After Visual Studio Team Services creates your account and team project, 
 add code, work items, or more users. 
 
-	<img src="./_img/_shared/team-project-created.png" alt="Add code or work items" style="border: 1px solid #CCCCCC">
+	![Add code or work items](_img/_shared/team-project-created.png)
 
 	Congratulations, you're now a Visual Studio Team Services account owner! 
 
@@ -277,7 +256,24 @@ add code, work items, or more users.
 
 ## Q & A
 
-<!-- BEGINSECTION class="md-qanda" -->
+<a name="free-users"></a>
+#### Q: What users can join for free?  What do they get in Visual Studio Team Services?
+
+A: Visual Studio Team Services is free for these users to join:
+
+* 5 users who get [Basic features](https://www.visualstudio.com/team-services/compare-features/) 
+like version control, tools for Agile, Java, build, release management, and more 
+
+* Unlimited users who get [Stakeholder features](https://www.visualstudio.com/team-services/compare-features/) 
+like working with your backlog, work items, and queries
+
+* Unlimited [Visual Studio subscribers](https://www.visualstudio.com/team-services/compare-features/) 
+who also get Basic features, and in some cases, additional features with specific extensions, like 
+[Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
+
+ Learn what else you get with [Visual Studio Team Services](https://www.visualstudio.com/team-services/pricing/).
+
+
 
 <a name="browser-problems"></a>
 
@@ -295,11 +291,11 @@ You only have to do this step once.
 
 0.	Confirm your profile details. 
 
-	<img src="./_img/sign-up-visual-studio-team-services/create-profile-msa.png" alt="Confirm profile details" style="border: 1px solid #CCCCCC">
+	![Confirm profile details](_img/sign-up-visual-studio-team-services/create-profile-msa.png)
 
 0.	Continue creating your Visual Studio Team Services account.
 
-	<img src="./_img/sign-up-visual-studio-team-services/my-info-new-account.png" alt="Create your Visual Studio Team Services account" style="border: 1px solid #CCCCCC">
+	![Create your Visual Studio Team Services account](_img/sign-up-visual-studio-team-services/my-info-new-account.png)
 
 <a name="account-location"></a>
 
@@ -332,7 +328,7 @@ There's no limit on how many Visual Studio Team Services accounts where you can 
 
 A:	Just sign in to your [Visual Studio profile](https://app.vsaex.visualstudio.com/profile/view).
 
-<img src="./_img/sign-up-visual-studio-team-services/my-info-account-list.png" alt="Create your Visual Studio Team Services account" style="border: 1px solid #CCCCCC">
+![Create your Visual Studio Team Services account](_img/sign-up-visual-studio-team-services/my-info-account-list.png)
 
 <a name="another-team-project"></a>
 
@@ -404,6 +400,3 @@ All other users must sign in with Microsoft accounts too.
 [!INCLUDE [visual-studio-subscription-support](../../_shared/qa-visual-studio-subscription-support.md)]
 
 [!INCLUDE [get-team-services-support](../../_shared/qa-get-team-services-support.md)]
-
-<!-- ENDSECTION -->
-

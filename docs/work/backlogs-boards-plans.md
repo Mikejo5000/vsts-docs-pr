@@ -7,8 +7,9 @@ ms.assetid: 00D09790-63C3-4E3F-91BA-122CE2779A70
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article  
-ms.date: 05/11/2017
+ms.date: 06/13/2017
 ---
+
 
 
 # Backlogs, boards, and plans  
@@ -19,24 +20,22 @@ What can you do from a backlog view versus a board view? How do these differ fro
 
 Which view should you use to work with Agile methods? 
 
-####In a nutshell...  
+#### In a nutshell...  
 
-<ul style="padding-left:30px">
- <li>Backlogs display work items as a list and boards display them as cards</li>
- <li>You use your product backlog to quickly plan and prioritize your work</li>
- <li>You use your sprint backlogs and task boards when you work in Scrum </li>
- <li>You use your Kanban board to update work status and when you employ Kanban methods </li>
- <li>Each backlog is associated with a board, changes to priority order you make in one are reflected in its corresponding board</li>
- <li>Plans allow you to review the deliverables for several teams across sprints and a calendar schedule (Plans are in preview for Team Services. You access them by [installing the Marketplace Plans extension](scale/review-team-plans.md#install-plans).)
-</li>
- <li>Backlogs, boards, and plans are configurable for each team</li>
-</ul>
+-  Backlogs display work items as a list and boards display them as cards  
+-  You use your product backlog to quickly plan and prioritize your work  
+-  You use your sprint backlogs and task boards when you work in Scrum   
+-  You use your Kanban board to update work status and when you employ Kanban methods   
+-  Each backlog is associated with a board, changes to priority order you make in one are reflected in its corresponding board  
+-  Plans allow you to review the deliverables for several teams across sprints and a calendar schedule Delivery Plans are available for Team Services and TFS 2017.2 and later versions. You access them by [installing the Marketplace Plans extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans)
+-  Backlogs, boards, and plans are configurable for each team.  
+ 
 
 With list backlogs you can quickly develop your project plan; group and prioritize work; and perform bulk updates on selected work items. With boards, you can quickly update status and fields displayed for each work item. 
 
 And with plans, you can monitor progress, deliverables, and dependencies across several teams.  
 
-You access your backlogs and boards from the **Work** hub. When you work from the Stories (Agile) or Backlog items (Scrum) pages, you have access to the product backlog and Kanban board. When you work from a sprint page, you have access to the sprint backlog and task board. For an overview of working in Scrum or Kanban, see [Get started with Agile project management](agile-project-management.md).
+You access your backlogs and boards from the **Work** hub. When you work from the Stories (Agile) or Backlog items (Scrum) pages, you have access to the product backlog and Kanban board. When you work from a sprint page, you have access to the sprint backlog and task board. For an overview of working in Scrum or Kanban, see [Get started with Agile project management](overview.md).
 
 <img src="_img/plan-intro.png" alt="Work hub, product backlog page" style="border: 1px solid #CCCCCC;" />  
 
@@ -162,11 +161,11 @@ The following table indicates those elements or tasks associated with each type 
 </tr>
 
 <tr>
-<td>Customize: Columns  </td>
-<td>Yes, see [Set column options](how-to/set-column-options.md)</td>
-<td>Yes, see [Set column options](how-to/set-column-options.md)</td>
+<td>Customize: Columns</td>
+<td>Yes, see [Column options](#column-options)</td>
+<td>Yes, see [Column options](#column-options)</td>
 <td>Yes, see [Add columns](kanban/add-columns.md)</td>
-<td>Yes, see [Set column options](how-to/set-column-options.md)</td>
+<td>Yes, see [Column options](#column-options)</td>
 <td>Yes, see [Customize workflow](process/customize-process-workflow.md)</td>
 </tr>
 
@@ -175,8 +174,8 @@ The following table indicates those elements or tasks associated with each type 
 <td>Yes, see [Select backlog navigation levels](customize/select-backlog-navigation-levels.md)</td>
 <td>Yes, when you add another team (see note 4)</td>
 <td>Yes, see [Select backlog navigation levels](customize/select-backlog-navigation-levels.md)</td>
-<td>Yes, see [Define sprints](scrum/define-sprints.md)</td>
-<td>Yes, see [Define sprints](scrum/define-sprints.md)</td>
+<td>Yes, see [Schedule sprints](scrum/define-sprints.md)</td>
+<td>Yes, see [Schedule sprints](scrum/define-sprints.md)</td>
 </tr>
 
 <tr>
@@ -231,7 +230,7 @@ The following table indicates those elements or tasks associated with each type 
 With Delivery Plans, you gain  tailor-made views across several teams and their development backlogs&mdash;stories, features, or epics.  You can use these views to drive alignment across teams by overlaying several backlogs onto your delivery schedule. 
 
 > [!NOTE]  
-> **Feature availability**: Delivery Plans, a [Visual Studio Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans), is available for Team Services<!--- and TFS 2017.2 and later versions-->. All users with [basic access](connect/change-access-levels.md) can view, add, and configure Delivery Plans. Stakeholders, however, don’t have access to Delivery Plans.  
+> **Feature availability**: Delivery Plans, a [Visual Studio Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans), is available for Team Services and TFS 2017.2 and later versions. All users with [basic access](connect/change-access-levels.md) can view, add, and configure Delivery Plans. Stakeholders, however, don’t have access to Delivery Plans.  
 
 When you configure a plan, you select the team or teams and backlog levels of interest. To learn more about Delivery Plans, see [Review team plans](scale/review-team-plans.md). 
 
@@ -316,7 +315,7 @@ In addition, several tools reference the team's default iteration and associated
 <ol>
 <li>Agile tools filter items based on the team's selected area path(s). Teams can choose [whether to include or exclude items assigned to subarea paths](scale/set-team-defaults.md#team-area-paths).</li>
 <li>Work items whose State equals Closed, Done, or Removed (corresponding to a Completed category state) don't appear on portfolio and product backlogs.</li>
-<li>You can add custom workflow states and assign them to one of three state categories. The [state categories](process/customize-process-workflow.md#workflow-states) determine which work items appear on backlog and board views. </li>
+<li>You can add custom workflow states and assign them to one of three state categories. The [state categories](concepts/workflow-and-state-categories.md) determine which work items appear on backlog and board views. </li>
 <li>Kanban boards, sprint backlogs, and task boards only show the last node in a hierarchy, called the leaf node. For example, if you link items within a hierarchy that is four levels deep, only the items at the fourth level appear on the Kanban board, sprint backlog, and task board. To learn more, see [parent-child links between items](#leaf-nodes).</li>
 <li>Work items whose State equals Removed don't appear on boards.</li> 
 </ol>
@@ -325,12 +324,31 @@ In addition, several tools reference the team's default iteration and associated
 <div style="clear:left;font-size:100%">
 </div>
 
+<a id="display-hierarchy">  </a>
+## Fix "Ordering backlog items is disabled" 
+
+When a sprint backlog contains same-category, nested  work items&mdash;as described in the next section, [How backlogs and boards display hierarchical (nested) items](#nested)&mdash;the system disables the drag-and-drop reorder feature. It does this as it determines that not all items display under these circumstances.  
+
+To fix this, take the following actions: 
+
+1. Click the **Create query** link on the backlog page. 
+    
+	![Create query of backlog](_img/backlogs-boards-create-query.png)
+
+2. Open the query (click the link that appears). 
+
+3. Review the list of items to determine which items are nested. For example, the following query shows that a bug is a child of a user story. Because the team has configured their backlog to display user stories and bugs at the same level (Requirements category), this corresponds to a nested item that disables the ordering feature. 
+
+	![Query of backlog with a nested item](_img/backlogs-boards-query-nested-items.png)
+
+4. Remove all parent-child links that exist among nested items. 
+
+5. Return to the backlog page and refresh the page. 
  
 <a id="nested">  </a>
-## How backlogs and boards display hierarchical (nested) items 
+### How backlogs and boards display hierarchical (nested) items 
  
 While you can create a hierarchy of backlog items, tasks, and bugs&mdash;we don't recommend that you create same-category hierarchies. That is, don't create parent-child links among work items of the same type, such as story-story, bug-bug, task-task. The reason is that the Kanban board, sprint backlog, and task board only show the last node in a same-category hierarchy, called the leaf node. For example, if you link items within a same-category hierarchy that is four levels deep, only the items at the fourth level appear on the Kanban board, sprint backlog, and task board.  
-
 
 Instead of nesting requirements, bugs, and tasks, we recommend that you maintain a flat list. In other words, only create parent-child links one level deep between items that belong to a different category. Use the Feature work item type when you want to group user stories (Agile), product backlog items (Scrum), or requirements (CMMI). You can [quickly map product backlog items to features](backlogs/organize-backlog.md), which creates parent-child links in the background.    
 
@@ -353,6 +371,7 @@ The child bug, *Save takes too long*, appears on the Kanban board, but not the p
 
 ![Kanban board, leaf node bug appears](customize/_img/bugs-appear-on-board.png)  
 
+<a id="bugs-as-tasks">  </a>
 ### When you track bugs as tasks
 
 When you choose to have bugs appear in the backlog with tasks, linking tasks and bugs to their parent requirements groups them accordingly on the sprint backlog and task board.  
@@ -374,7 +393,7 @@ Is there a workaround to display intermediate nodes within a hierarchy?  Not at 
 
 
 ## Related notes   
-Now that you understand how backlogs, boards, and plans work, [get started using them to plan and track your work](agile-project-management.md).
+Now that you understand how backlogs, boards, and plans work, [get started using them to plan and track your work](overview.md).
 
 A few things to keep in mind...
 - Every team owns their own backlog, to add a new set of backlogs and boards, you [add a new team](scale/multiple-teams.md) 
@@ -420,7 +439,7 @@ Additional topics of interest:
 <div style="float:left;width:200px;margin:8px;font-size:90%">
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Customize</p>
 - [Customize work tracking](./customize/customize-work.md)   
-- [Modify area and iteration paths](./customize/modify-areas-iterations.md)   
+- [Modify area and iteration paths](./customize/set-area-paths.md)   
 - [Add Agile teams](./scale/multiple-teams.md)  
 - [Set team defaults](./scale/set-team-defaults.md)      
 </div>    
@@ -436,7 +455,13 @@ You may find additional tools to help plan and track your work from the [Visual 
 
 [!INCLUDE [temp](../_shared/switch-team-context.md)]  
 
+<a id="column-options">  </a>
+### Column options 
+From each backlog page, you can add or remove columns. Or, you can drag a column to a new position. Start by opening the Column Options.  Unlike a query result, you can't sort a backlog by column. However, you can use the Create Query option on each backlog to create a query that you can sort on any field column you choose.
 
+Each user can set their own column options which persist for each product or portfolio backlog across user sessions.  
+
+<img src="_img/b-vs-b-column-options.png" alt="Open column options" style="border: 1px solid #CCCCCC;" />  
 
  
 
@@ -464,6 +489,8 @@ These reasons can cause work items that belong to the Task Category to not appea
 	>In Team Services and TFS 2015.2 and later versions, tasks linked to a parent work item assigned to another team's area path will appear under the *Unparented* section.
 
  
+ 
+
 ### In Progress items filter
  
 The In progress items Show/Hide filter causes some backlog items to display or not display. Bugs and other backlog items aren't listed when In progress items=Hide and their assigned State corresponds to In Progress state category. Bugs in a New state will display, however, bugs in an Assigned state won't. 

@@ -3,7 +3,7 @@
 <a id="assign-work-items"></a>
 
 ### Assign work items to a team member
-Anyone who has read-write access to a team project can assign work items to a team member. This includes team members and [stakeholders](../connect/work-as-a-stakeholder.md).  
+Anyone who has read-write access to a team project can assign work items to a team member. This includes team members and [stakeholders](../../quickstart/get-started-stakeholder.md).  
 
 Within the work item form, such as the web form shown, click the Assigned To field to select a team member to assign the work item to. Or, you can begin typing the name of a team member to quickly focus your search to a select few. 
 
@@ -19,5 +19,5 @@ Note the following:
 - You can assign several work items at once from the backlog or query results, see [Bulk modify work items](../backlogs/bulk-modify-work-items.md) for details.  
 
 
->[!NOTE]
+>[!NOTE]  
 >**On-premises TFS only**: To minimize the list of names that appear in the drop-down menus of person-name fields, you can scope the field to only those groups that you want to appear in the menu. You do this by adding one or more of the following child elements to the **FIELD** definition in the work item type definition: **ALLOWEDVALUES**, **PROHIBITEDVALUES**, and **VALIDUSER**. For details, see [Apply a field rule](../reference/apply-rule-work-item-field.md).

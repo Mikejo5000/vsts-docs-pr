@@ -7,12 +7,12 @@ ms.topic: reference
 ms.assetid: 51acfaa1-3c2c-4371-b5da-e43d458bb1f7
 ms.manager: douge
 ms.author: kaelli
-ms.date: 02/14/2017
+ms.date: 06/16/2017
 ---
 
 # Design the work item form
 
-<p><b>TFS 2017 (Hosted XML) | TFS 2015 </b></p>
+<p><b>TFS 2017 (Hosted XML) | TFS 2015  | TFS 2013 </b></p>
 
 >[!IMPORTANT]  
 >This topic applies to team project customization for the On-premises XML process model. For the Hosted XML process model, see [WebLayout and Control elements](weblayout-xml-elements.md). For the Inheritance process model, see [Customize a process](../process/customize-process.md).
@@ -207,7 +207,7 @@ Six Tabs Arranged in a Side by Side by Layout
  ![Group of several fields](_img/alm_wit_custom_group.png "ALM_WIT_Custom_Group")  
  Group of Fields Arranged on a Tab  
   
- The following code lists the syntax that is used to create the group of fields that is shown in the previous illustration. For more information about how to specify the fields by using the `Control` element, see [Control the display of work item fields](control-display-work-item-fields.md).  
+ The following code lists the syntax that is used to create the group of fields that is shown in the previous illustration. For more information about how to specify the fields by using the `Control` element, see [Specify work item form controls](specify-work-item-form-controls.md).  
   
 ```  
 <TabGroup>  
@@ -326,12 +326,13 @@ Three-Column Layout
 ### Control the size of form elements  
  You use the `Control` element `MinimumSize` attribute to specify the minimum width and height that each form element should occupy.  If you do not have sufficient vertical space, a scrollbar appears to keep its minimum size. Without this attribute, the controls are drawn by using their default sizes, unless controls in other tabs take more space that increases the size of the tab. You can use other attributes, such as `Margin` and `Padding`, to align or stretch the control and define the size of the border around the control. For more information, see the following topics:  
   
--   [Control the display of work item fields](control-display-work-item-fields.md)   
+-   [Specify work item form controls](specify-work-item-form-controls.md)     
 -   [Provide help text, hyperlinks, or web content](provide-help-text-hyperlinks-web-content-form.md)    
 -   [Add the Attachments control](add-the-attachments-control.md)   
 -   [Define link controls to restrict link relationships](define-link-controls.md)  
   
-##  <a name="SpecifyingLayouts"></a> Specify different layouts for different targets  
+<a name="SpecifyingLayouts">
+##  </a> Specify different layouts for different targets  
  You can specify different layouts for different targets by using the `Layout` element `Target` attribute. To target Visual Studio or Team Explorer Everywhere, you specify `WinForms`, and to target the web portal, you specify `Web`.  
   
 ```  

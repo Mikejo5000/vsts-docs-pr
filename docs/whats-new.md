@@ -22,6 +22,137 @@ To learn about  what's new with the cloud service offering, see [Visual Studio T
 ## TFS 2017
 
 
+### TFS 2017.2 RC1
+
+>[!NOTE]  
+>The links provided below open related sections within the [Team Foundation Server 2017 Update 2 RC1](https://www.visualstudio.com/en-us/news/releasenotes/tfs2017-update2) release notes. 
+
+<div style="float:left;width:300px;margin:3px">
+<p style="font-weight:bold;padding-bottom:0px;text-align:center;">[Work item tracking improvements](https://www.visualstudio.com/en-us/news/releasenotes/tfs2017-update2#wit)</p>
+<ul>
+<li>Work item type icons</li>
+<li>Delivery plans and field criteria</li>
+<li>Automatic linking from work items to builds</li>
+<li>Work item search </li>
+</ul>
+<p style="font-weight:bold;padding-bottom:0px;text-align:center;">[Pull request improvements](https://www.visualstudio.com/en-us/news/releasenotes/tfs2017-update2#pr)</p>
+<ul>
+<li>Improved CTAs for PR author and reviewers</li>
+<li>Actionable comments</li>
+<li>Updates view shows rebase and force push</li>
+<li>Pull request filtering by people</li>
+<li>Reason required when bypassing pull request policies</li>
+<li>Share pull requests with teams</li>
+<li>Pull request improvements for teams</li>
+<li>Default notifications for pull request comments</li>
+</ul>
+</div>
+
+ 
+
+
+<div style="float:left;width:300px;margin:3px">
+<p style="font-weight:bold;padding-bottom:0px;text-align:center;">[Version control improvements](https://www.visualstudio.com/en-us/news/releasenotes/tfs2017-update2#vc)</p>
+<ul>
+<li>New branch policies configuration experience</li>
+<li>New policy for no active comments</li>
+<li>Files hub improvements</li>
+<li>Visualize your git repository</li>
+<li>View git tags on commits</li>
+<li>Add tags to commits</li>
+<li>Updated changeset and shelveset pages</li>
+<li>Improved commit filtering</li>
+<li>Import repositories from TFVC to Git</li>
+<li>Git LFS file locking</li>
+<li>Git commit comments use the new discussion control</li>
+<li>New tree view control</li>
+</ul>
+ 
+<p style="font-weight:bold;padding-bottom:0px;text-align:center;">[Package Management improvements](https://www.visualstudio.com/en-us/news/releasenotes/tfs2017-update2#pk)</p>
+<ul>
+<li>Updated Package Management experience</li>
+<li>npm READMEs and download button</li>
+<li>NuGet Restore, Command, and Tool Installer build tasks</li>
+</ul>
+</div>
+
+<div style="clear:left;font-size:100%">
+</div>
+
+
+<div style="float:left;width:300px;margin:3px">
+<p style="font-weight:bold;padding-bottom:0px;text-align:center;">[Build & Release improvements](https://www.visualstudio.com/en-us/news/releasenotes/tfs2017-update2#build)</p>
+<ul>
+<li>New build definition editor</li>
+<li>Template search</li>
+<li>Quickly find and add a task right where you want it</li>
+<li>Use process parameters to pass key arguments to your tasks</li>
+<li>Conditional build tasks</li>
+<li>Built-in tasks for building and deploying container based applications</li>
+<li>Azure Web App deployment updates</li>
+<li>.NET Core tasks support project files</li>
+<li>SSH deployment improvements</li>
+<li>Install an SSH key during a build or release</li>
+<li>Tasks fail if Visual Studio 2017 is specified but not present on agent</li>
+<li>Private agent automatic workspace cleanup</li>
+<li>Build agent upgrade status</li>
+<li>Selection of private agents on machines not in use</li>
+<li>iOS DevOps enhancements</li>
+</ul>
+</div>
+<div style="float:left;width:300px;margin:3px">
+<p style="font-weight:bold;padding-bottom:0px;text-align:center;">&nbsp;&nbsp;&nbsp;</p>
+<ul>
+<li>Java code coverage enhancements</li>
+<li>Maven and SonarQube improvements</li>
+<li>Improved Jenkins integration</li>
+<li>Azure virtual machine scale set deployment</li>
+<li>Override template parameters in Azure resource group deployments</li>
+<li>Multiple release triggers with branch and tag filters</li>
+<li>Set defaults for artifact sources in a release</li>
+<li>Separation of duties for deployment requester and approvers</li>
+<li>Release level approvals</li>
+<li>Deploy to Azure Government Cloud</li>
+<li>Set maximum number of parallel deployments</li>
+<li>Timeout enhancements for the Manual Intervention task</li>
+<li>Release Management parallel execution</li>
+<li>Web app deployment history in Azure portal</li>
+</ul>
+</div>
+
+
+<div style="clear:left;font-size:100%">
+</div>
+
+<div style="float:left;width:300px;margin:3px">
+<p style="font-weight:bold;padding-bottom:0px;text-align:center;">[Test improvements](https://www.visualstudio.com/en-us/news/releasenotes/tfs2017-update2#test)</p>
+<ul>
+<li>Run tests using agent phases</li>
+<li>On-demand triggering of automated tests</li>
+</ul>
+</div>
+
+
+<div style="float:left;width:300px;margin:3px">
+<p style="font-weight:bold;padding-bottom:0px;text-align:center;">[Administrative improvements](https://www.visualstudio.com/en-us/news/releasenotes/tfs2017-update2#admin)</p>
+<ul>
+<li>Combined email recipients for notifications</li>
+<li>Out-of-the-box notifications</li>
+<li>Extension management permissions</li>
+<li>Getting notified when extensions are installed, require attention, and more</li>
+<li>Allowing TFS admins to add subscribers to the advanced access level</li>
+</ul>
+</div>
+
+<div style="clear:left;font-size:100%">
+</div>
+
+#### Deprecated features  
+
+- **Old work item form**: The old work item form and the old extensibility model are being deprecated. Learn more about the timeline for deprecation in this blog post, [Announcing the deprecation of the old Work Item Form in TFS](https://blogs.msdn.microsoft.com/visualstudioalm/2017/05/22/announcing-the-deprecation-of-the-old-work-item-form-in-tfs/).  
+
+
+
 ### TFS 2017.1 RC2
 
 >[!NOTE]  
@@ -244,7 +375,7 @@ To learn about  what's new with the cloud service offering, see [Visual Studio T
 #### Deprecated features  
 
 - **Client version of the work item form**: In Visual Studio 2017, work items open in a browser window. To learn more about this change, see this blog post: [Work items now open in the web from Visual Studio '15'](https://blogs.msdn.microsoft.com/visualstudioalm/2016/08/22/work-items-now-open-in-the-web-from-visual-studio-15/).  
-- **Lab management**: Going forward, native build and release management tools replace the previous lab management tools. To learn more, see  [Use Build and Release Management instead of Lab Management for automated testing](test/lab-management/use-build-or-rm-instead-of-lab-management.md). 
+- **Lab management**: Going forward, native build and release management tools replace the previous lab management tools. To learn more, see  [Use Build and Release Management instead of Lab Management for automated testing](https://docs.microsoft.com/visualstudio/test/lab-management/use-build-or-rm-instead-of-lab-management). 
 - **Microsoft Test Manager**: The web portal Test hub is a fully featured Test management solution which works across all platforms and with all browsers, we recommend you use the Test hub over Microsoft Test Manager for all your test management requirements. You can use Microsoft Test Manager to test your desktop applications by launching the Microsoft Test Runner (client) from the Test hub. To learn more, see [Guidance on Microsoft Test Manager usage](test/manual-exploratory-testing/mtm/guidance-mtm-usage.md).   
 - **Project Server integration**: Team Foundation Server 2017 and later versions no longer support native integration with Microsoft Project Server. However, third-party tools are available to support synchronization. For details, see [Synchronize TFS with Project Server](work/office/sync-ps-tfs.md).  
 - **Release Manager V1 Client/Server**: Release Management features have been integrated into Team Foundation Server (TFS) 2015 Update 2 and later versions, and into the web portal Release hub. The newer web-based version is the recommended alternative to the server and client version. For more information, see [Automate deployments with Release Management](release/previous-version/release-management-overview.md). 

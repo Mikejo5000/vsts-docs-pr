@@ -81,6 +81,14 @@ You can enumerate a set of values for a field by defining a pick list as part of
   
  For more information, see [Expand list items and exclude groups from lists](expand-list-items-and-exclude-groups-from-lists.md).  
   
+ 
+>[!NOTE]  
+>For the Hosted XML process model, the following limits are placed on global list import: 
+>- Total of 64 global lists
+>- Total of 512 items per list
+>- Approximately 10K items can be defined total within all global lists specified across all WITs. 
+
+
 ##  <a name="GLOBALLIST"></a> Syntax structure for GLOBALLIST and LISTITEM elements  
  You can use the `GLOBALLIST` and `LISTITEM` elements to enumerate a list of items that can be updated globally or that are specific to a single field.  
   

@@ -82,14 +82,14 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Access levels</b></p>
-<p>All users that you add to your Team Services account or to your TFS team project have access to Basic features by default, except [Stakeholders](work/connect/work-as-a-stakeholder.md) who have access to a limited set of features, or those added to the Advanced access level in TFS.</p>
+<p>All users that you add to your Team Services account or to your TFS team project have access to Basic features by default, except [Stakeholders](quickstart/get-started-stakeholder.md) who have access to a limited set of features, or those added to the Advanced access level in TFS.</p>
 - [Manage users (Team Services)](setup-admin/team-services/add-account-users-assign-access-levels-team-services.md)   
 - [Change access levels (TFS)](work/connect/change-access-levels.md)  
 <br/>
 <p><b>Permissions</b></p>
 <p>Control access to specific features by setting permissions for a user or group.</p>
 
-- [Area and iteration paths](work/customize/modify-areas-iterations.md#set-permissions)  
+- [Area and iteration paths](work/how-to/set-permissions-access-work-tracking.md#set-permissions-area-path)  
 - [Build](setup-admin/permissions.md#collection)  
 - [Code - Git](setup-admin/permissions.md#git-repo)  
 - [Code - TFVC](setup-admin/permissions.md#tfvc)  
@@ -171,7 +171,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 <p><b>Filter your backlog</b></p>
 <p>Use **Show/Hide in progress** to only show or hide items which have moved from the new or proposed state to active or in progress state.     </p>
-<p>Additionally, you can list a subset of items based on keywords [keywords](work/backlogs/define-features-epics.md#filter) or [tags](work/track/add-tags-to-work-items.md). </p>
+<p>Additionally, you can list a subset of items based on keywords [keywords](work/how-to/filter-backlog-or-board.md) or [tags](work/track/add-tags-to-work-items.md). </p>
 ![Filter based on keywords or tags](_img/alm-feature-filter-backlog.png)  
  <br/>
 
@@ -363,7 +363,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p>You can [remove a custom field and select inherited fields from a work item form](work/process/customize-process-field.md#remove-field). You can also [relabel the fields](work/process/customize-process-field.md#rename-field) that appear on the form.   </p>
 
 <p><b>Area path pick lists</b></p>
-<p>Change the [pick list of area paths](work/customize/modify-areas-iterations.md) to support grouping work items by team, product, or feature area. </p>
+<p>Change the [pick list of area paths](work/customize/set-area-paths.md) to support grouping work items by team, product, or feature area. </p>
 ![Hierarchical area paths](_img/alm-feature-area-paths.png)   
 <br/>
 
@@ -440,7 +440,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Area path pick lists</b></p>
-<p>Change the [pick list of area paths](work/customize/modify-areas-iterations.md) to support grouping work items by team, product, or feature area. </p>
+<p>Change the [pick list of area paths](work/customize/set-area-paths.md) to support grouping work items by team, product, or feature area. </p>
 
 <p><b>Sprint/iteration pick lists</b></p>
 <p>Change the [pick list of iteration paths](work/scrum/define-sprints.md) to support grouping work into sprints, milestones, or other event-specific or time-related period.</p>
@@ -485,7 +485,7 @@ Use features supported by these familiar clients to manage your project and illu
 <br/>
 
 <p><b>Drag-n-drop</b></p>
-<p>[Drag and drop items](work/kanban/kanban-basics.md#reorder-cards) on the Kanban board to update status and to reorder and reparent items.  </p>
+<p>[Drag and drop items](work/customize/reorder-cards.md) on the Kanban board to update status and to reorder and reparent items.  </p>
 
 <p><b>Add task checklists</b></p>
 <p>Add and mark tasks as done with [lightweight tasks checklists](work/kanban/add-task-checklists.md). </p>
@@ -553,7 +553,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p>Add and mark user stories and other work items as done from your [Kanban features or epics boards](work/kanban/kanban-epics-features-stories.md). </p>
 
 <p><b>Set team's card reorder preference </b></p>
-<p>You can preserve the backlog priority when you move a card to a new column by setting your team's [Kanban board card reordering setting](work/kanban/kanban-basics.md#card-reorder-setting).  </p>
+<p>You can preserve the backlog priority when you move a card to a new column by setting your team's [Kanban board card reordering setting](work/customize/reorder-cards.md).  </p>
 
 <p><b>Enable/disable card annotations</b></p>
 <p>Turn on or off [task checklists or inline tests](./work/customize/customize-cards.md#annotations) for your Kanban board. </p>
@@ -1247,7 +1247,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p>[Perform exploratory, manual, system, user acceptance, and performance tests for any app, in any language](test/index.md). Using Visual Studio or 3rd-party test frameworks, you can include automated tests with builds and releases for continuous integration and deployment. </p>
 
 <p><b>Unit testing with Git</b></p>
-<p>Create [unit tests](test/developer-testing/getting-started/getting-started-with-developer-testing.md) and run them frequently to make sure your code is working properly.</p>
+<p>Create [unit tests](https://docs.microsoft.com/visualstudio/test/create-unit-tests-menu) and run them frequently to make sure your code is working properly.</p>
 ![view tests in test explorer](_img/alm-feature-test-unittests.png)  
 <br />
 
@@ -2144,7 +2144,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Team project admin context</b></p>
-<p>Open the admin context to [add teams](work/scale/multiple-teams.md), [configure areas and iterations](work/customize/modify-areas-iterations.md), and [manage permissions](setup-admin/tfs/admin/change-permission-levels.md). From any team project hub, click the ![gear icon](work/_img/icons/gear_icon.png) gear icon to open the admin context.</p>
+<p>Open the admin context to [add teams](work/scale/multiple-teams.md), [configure areas and iterations](work/customize/set-area-paths.md), and [manage permissions](setup-admin/tfs/admin/change-permission-levels.md). From any team project hub, click the ![gear icon](work/_img/icons/gear_icon.png) gear icon to open the admin context.</p>
 ![Admin context](_img/alm-feature-admin-context.png)  
 <br/>
 
@@ -2294,7 +2294,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>Control access to specific features by setting permissions for a user or group.</p>
 
 <ul>
-<li>[Area and iteration paths](work/customize/modify-areas-iterations.md#set-permissions)</li>
+<li>[Area and iteration paths](work/how-to/set-permissions-access-work-tracking.md#set-permissions-area-path)</li>
 <li>[Query permissions](work/track/set-query-permissions.md)</li>
 <li>[Work item tags](setup-admin/permissions.md#tags)</li>
 <li>[Move work items to another team project](work/backlogs/remove-delete-work-items.md#move-delete-permissions)</li>
@@ -2629,11 +2629,11 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Add a team admin</b></p>
-<p>Add user accounts to the team admin role to enable them to [configure team settings](work/scale/manage-team-assets.md#add-team-admin). Team settings can only be configured by a team or project admin. </p>
+<p>Add user accounts to the team admin role to enable them to [configure team settings](work/scale/add-team-administrator.md). Team settings can only be configured by a team or project admin. </p>
 
 
 <p><b>Support stakeholders</b></p>
-<p>Members within your org who don't have a license or contribute to developing the code base [can track project priorities and provide direction, feature ideas, and business alignment to a team](work/connect/work-as-a-stakeholder.md).  </p>
+<p>Members within your org who don't have a license or contribute to developing the code base [can track project priorities and provide direction, feature ideas, and business alignment to a team](quickstart/get-started-stakeholder.md).  </p>
 </td>
 <td width="33%">
 

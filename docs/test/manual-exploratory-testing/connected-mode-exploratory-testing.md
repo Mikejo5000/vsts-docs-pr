@@ -123,6 +123,8 @@ After you have connected, you are ready to begin testing your app.
    This opens the work item form in Team Services or TFS.
 
    ![The bug or task in TS or TFS](_img/connected-mode-exploratory-testing/create-bugs-10.png)
+
+[How do I play the video recordings I created with the extension?](getting-started/perform-exploratory-tests.md#recording-playback)
  
 ## Create test cases
 
@@ -162,6 +164,8 @@ The extension lets you create test cases as you explore your application.
    ![View exploratory testing sessions on the server](_img/connected-mode-exploratory-testing/create-bugs-07.png)
 
 1. Now see how you can [view your sessions and get insights](insights-exploratory-testing.md).
+
+[How do I play the video recordings I created with the extension?](getting-started/perform-exploratory-tests.md#recording-playback)
 
 ## Q&A
 

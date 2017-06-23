@@ -78,11 +78,11 @@ permissions to delete your Team Services account.
 
 0.  Go to your Team Services account settings.
 
-	<img alt="Go to account settings" src="../../_shared/_img/account-settings-new-ui.png" style="border: 1px solid #CCCCCC" />
+	![Go to account settings](../../_shared/_img/account-settings-new-ui.png)
 
 0.  Under **Settings**, delete your account.
 
-	<img alt="Click Delete account" src="./_img/delete-account/VSODeleteAccount.png" style="border: 1px solid #CCCCCC"/>
+	![Click Delete account](_img/delete-account/VSODeleteAccount.png)
 
 	You'll be redirected to www.visualstudio.com, but you'll stay signed in. 
 
@@ -90,7 +90,7 @@ permissions to delete your Team Services account.
 [Visual Studio profile](https://app.vsaex.visualstudio.com/profile/view) 
 where you'll see your deleted account. 
     
-	<img alt="Your account will appear deleted on your account list" src="./_img/delete-account/deleted-account.png" style="border: 1px solid #CCCCCC"/>
+	![Your account will appear deleted on your account list](_img/delete-account/deleted-account.png)
 
 	[Need help?](#get-support)
 
@@ -111,15 +111,15 @@ permissions to restore your Team Services account.
 
 0.  Restore your account.
 
-	<img alt="Next to your deleted account, click Restore" src="./_img/delete-account/restore-account.png" style="border: 1px solid #CCCCCC"/>
+	![Next to your deleted account, click Restore](_img/delete-account/restore-account.png)
 
 	*	If your account URL is still available, you can restore your account.
 
-		<img alt="Confirm restoring your account" src="./_img/delete-account/restore-confirm.png" style="border: 1px solid #CCCCCC"/>
+		![Confirm restoring your account](_img/delete-account/restore-confirm.png)
 
 	*	If your account URL isn't available, provide a new URL.
 
-       <img alt="Rename your deleted account" src="./_img/delete-account/rename-deleted-account.png" style="border: 1px solid #CCCCCC"/>
+       ![Rename your deleted account](_img/delete-account/rename-deleted-account.png)
 
 0.  After you restore your account:
 

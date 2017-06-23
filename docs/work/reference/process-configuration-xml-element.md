@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: 4314c6ad-d6ca-4cf2-a3c8-46e4e8ed759a
 ms.manager: douge
 ms.author: kaelli
-ms.date: 05/10/2017
+ms.date: 06/12/2017
 ---
 
 # Process configuration XML element reference
@@ -46,7 +46,7 @@ Areas that you can customize through ProcessConfiguration:
 <p style="font-weight:bold;margin-bottom:2px;text-align:center;">Work item types (WITs)</p>
 - [Specify the WIT color](#wit-colors)   
 - [Specify the workflow state color](#state-colors)  <sup>2</sup>  
-<!---[Specify the WIT icon](#wit-icons)  <sup>2</sup> -->   
+- [Specify the WIT icon](#wit-icons)  <sup>3</sup>   
 </div>
 
 <div style="float:left;width:225px;margin:3px;font-size:100%">
@@ -63,9 +63,8 @@ Areas that you can customize through ProcessConfiguration:
 <br/>
 **Notes:**
 1. Items noted with an asterisk set a default for the team project. These items can be changed for each team through [team settings](../scale/manage-team-assets.md).
-2. Supported for Hosted XML, and for supported for On-premises XML for TFS 2015.2 or later version.  
-
-<!---Supported for Hosted XML. Supported for On-premises XML and for TFS 2017.2 or later version.-->
+2. Supported for Hosted XML, and for On-premises XML for TFS 2015.2 or later version.  
+3. Supported for Hosted XML, and for On-premises XML for TFS 2017.2 or later version.  
 
 >[!IMPORTANT]  
 >If you want to customize your team project to add custom work item types to appear on your backlogs or boards or add custom portfolio backlogs, see [Add a work item type to a backlog and board](../customize/add-wits-to-backlogs-and-boards.md) and [Add portfolio backlogs](../customize/add-portfolio-backlogs.md).  
@@ -186,7 +185,7 @@ You configure backlogs within the XML sections that appear in the following samp
 ### Map WIT category workflow states to state categories
 Several WITs require their workflow states to be mapped to a state category. Workflow states define how a work item progresses from first activation or creation to closed or complete. For example, the states defined for the Scrum product backlog item define a progression of four states, from **New**, **Approved**, **Committed**, to **Done**, and also includes a fifth state, **Removed**, to account for a state removed from the backlog without being implemented. Workflow states are associated with the `value` attribute. 
 
-State categories, on the other hand, determine how the Agile planning tools treat each workflow state. The primary state categories used by the backlog and task board are **Proposed**, **InProgress**, and **Complete**. State categories are associated with the `type` attribute. 
+State categories, on the other hand, determine how the Agile planning tools treat each workflow state. The primary state categories used by the backlog and task board are **Proposed**, **InProgress**, and **Complete**. State categories are associated with the `type` attribute. To learn more, see  [Workflow states and state categories](../concepts/workflow-and-state-categories.md). 
 
 By associating each workflow state to a state category, the background operations performed to display the backlog and task boards know how to correctly interpret the status of each work item. For example, the following mappings are defined for the Scrum product backlog.
 
@@ -567,7 +566,7 @@ You should not have to change the default assignments made for the following <st
 <a id="weekend_days">  </a>
 ## Set non-working days 
 
-Non-working days are removed from calculations made by the [capacity planning tool](../scale/capacity-planning.md) and [burndown charts](../scrum/sprint-burndown.md). Default processes&mdash;[Agile](../guidance/agile-process.md), [Scrum](../guidance/scrum-process.md), or [CMMI](../guidance/cmmi-process.md)&mdash;specify Saturday and Sunday as non-working days. After you create a team project, [each team can set their specific non-working days](../scale/capacity-planning.md#team_settings).
+Non-working days are removed from calculations made by the [capacity planning tool](../scale/capacity-planning.md) and [burndown charts](../scrum/sprint-burndown.md). Default processes&mdash;[Agile](../guidance/agile-process.md), [Scrum](../guidance/scrum-process.md), or [CMMI](../guidance/cmmi-process.md)&mdash;specify Saturday and Sunday as non-working days. After you create a team project, [each team can set their specific non-working days](../customize/set-working-days.md).
 
     <Weekends>
        <DayOfWeek>Saturday</DayOfWeek>
@@ -673,13 +672,12 @@ Example `Properties` configuration:
       <Property name="BugsBehavior" value="AsTasks" />  
       <Property name="HiddenBacklogs" value="Microsoft.EpicCategory" />  
       <Property name="StateColors" value="Active=#FF00FF00,Resolved=#FFFF0000" />
-  </Properties>  
-```
-<!---<Property name="WorkItemTypeIcons" value="Epic=Icon_Crown,Feature=Icon_Trophy,User Story=icon_book,
+	  <Property name="WorkItemTypeIcons" value="Epic=Icon_Crown,Feature=Icon_Trophy,User Story=icon_book,
 		Task=icon_clipboard,Bug=icon_insect,Issue=icon_traffic_cone,
 		Test Plan=icon_test_plan,Test Suite=icon_test_suite,Test Case=icon_test_case,Shared Steps=icon_test_step,
-		Shared Parameter=icon_test_parameter" />-->    
-
+		Shared Parameter=icon_test_parameter" />  
+  </Properties>  
+```
 The `BugsBehavior` property determines how bugs, and other WITs defined in the Bug Category, show up on backlogs and boards. Basically, you can configure whether bugs are treated as requirements, as tasks, or not appear on backlogs and boards. For details, see [Show bugs on backlogs and board](../customize/show-bugs-on-backlog.md).
 
 The `HiddenBacklogs` property determines which backlogs/portfolio backlogs appear by default. The default is to show just the product backlog and one level of portfolio backlog, the Features backlog. Teams can determine if they want to activate the Epics backlog, or make other changes. For details, see [Organize your backlog, Activate backlog levels for your team](../customize/select-backlog-navigation-levels.md).
@@ -722,7 +720,6 @@ The `HiddenBacklogs` property determines which backlogs/portfolio backlogs appea
 </blockquote> 
 <p>For additional details, see the next section, [Specify workflow state colors](#workflow-colors).</p></li>
 </li> 
-<!---
 <a id="wit-icons">  </a>
 <li>
 <p><strong>WorkItemTypeIcons</strong> defines the icon to display for each work item type. The icon displays in lists of work items and in work item forms. The default entry for the Agile process is as shown. You can only specify an icon from the [supported list of icons](#supported-icons). </p>
@@ -736,7 +733,6 @@ The `HiddenBacklogs` property determines which backlogs/portfolio backlogs appea
 <b>Feature availability: </b> You can customize the icons used for work item types if you use Hosted XML or, for On-premises XML, you have upgraded to TFS 2017.2 or later version.     
 </blockquote> 
 </li>
--->
 </ul>
 </td>
 </tr>
@@ -774,7 +770,7 @@ Here we show how it appears in the work item form:
 - Unmapped colors are defaulted at runtime based on their meta-state mapping  
 - States with no color defined, and no meta-state mapping will show an empty circle.  
 
-<!---
+
 <a id="supported-icons">  </a> 
 ### Specify WIT icons
 
@@ -795,7 +791,6 @@ and, here the icon is shown within the work item form.
  
 <img src="_img/process-config-bug-form-header-bug-icon.png" alt="Bug work item form header, Work item type icon shown" style="border: 1px solid #CCCCCC;" />  
 
--->
 
 
 ## Related notes

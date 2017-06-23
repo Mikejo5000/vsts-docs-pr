@@ -45,7 +45,7 @@ This topic provides descriptions for each built-in group and permission. To lear
 <div style="float:left;width:230px;margin:3px">
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Work tracking permissions</p>
 <ul style="padding-left:30px;font-size:90%">
-<li style="margin-bottom:2px">[Area and iteration paths](../work/customize/modify-areas-iterations.md#set-permissions)</li>
+<li style="margin-bottom:2px">[Area and iteration paths](../work/how-to/set-permissions-access-work-tracking.md)</li>
 <li style="margin-bottom:2px">[Work item query and folder](../work/track/set-query-permissions.md)</li>
 <li style="margin-bottom:2px">[Dashboard permissions](../report/dashboards.md#set-permissions)</li>
 <li style="margin-bottom:2px">[Plan permissions](../work/scale/review-team-plans.md#plan-permissions) (Team Services)</li>
@@ -170,7 +170,7 @@ that contain user accounts. </p>
 				permission to <strong>Deny</strong> or <strong>Not set</strong> for this group, no users will be able to access the deployment.
 			</blockquote>
 <p>**Membership:** Contains all users known to exist in the Team Services account or TFS instance.
-			You can’t modify the membership of this group.</p>
+			You can't modify the membership of this group.</p>
 </div>
 </li>
 
@@ -340,7 +340,7 @@ Native support for TFS-Project Server integration is deprecated for TFS 2017. Go
 				permission to <strong>Deny</strong> or <strong>Not set</strong> for this group, no users will be able to access the deployment.
 			</blockquote>
 <p>**Membership:** Contains all users known to exist in the TFS instance.
-			You can’t modify the membership of this group.</p>
+			You can't modify the membership of this group.</p>
 </div>
 </li>
 
@@ -404,7 +404,7 @@ For each team project that you create, the system creates the followings team pr
 <li style="margin-bottom:2px"><a data-toggle="collapse" href="#project-admin">Project Administrators  &#x25BC;</a>
 
 <div class="collapse" id="project-admin">
-<p>**Permission:** Has permissions to administer all aspects of the team project, although they can’t create team projects.</p>
+<p>**Permission:** Has permissions to administer all aspects of the team project, although they can't create team projects.</p>
 <p>**Membership:** Assign to users who will manage user permissions, create teams, define area an iteration paths, or customize work item tracking.</p>
 </div>
 </li>
@@ -522,7 +522,7 @@ There is no UI associated with managing alert permissions. Instead, you can use 
 <li style="margin-bottom:0px">[Board: WIP limits](../work/kanban/wip-limits.md)   </li>
 <li style="margin-bottom:0px">[Board: Split columns](../work/kanban/split-columns.md)  </li>
 <li style="margin-bottom:0px">[Board: Swimlanes](../work/kanban/expedite-work.md)</li>
-<li style="margin-bottom:0px">[Board: Card reordering](../work/kanban/kanban-basics.md#card-reorder-setting)</li> 
+<li style="margin-bottom:0px">[Board: Card reordering](../work/customize/reorder-cards.md)</li> 
 <li style="margin-bottom:0px">[Board: Definition of Done](../work/kanban/definition-of-done.md)</li>
 <li style="margin-bottom:0px">[Charts: Cumulative flow](../report/guidance/cumulative-flow.md#configure) </li>
 </ul>
@@ -539,7 +539,7 @@ There is no UI associated with managing alert permissions. Instead, you can use 
 
 <li style="margin-bottom:2px"><a data-toggle="collapse" href="#set-working-days-off">Set working days off  &#x25BC;</a>
 <div class="collapse" id="set-working-days-off">
-<p>Sprint planning and tracking tools automatically consider days off when calculating capacity and sprint burndown. Team admins can choose which days are non-working days through the team’s settings page. For details, see [Capacity planning, Set recurring days off](../work/scale/capacity-planning.md#team_settings).</p>
+<p>Sprint planning and tracking tools automatically consider days off when calculating capacity and sprint burndown. Team admins can choose which days are non-working days through the team's Settings dialog. For details, see [Set working days](../work/customize/set-working-days.md).</p>
 </div>
 </li>
 
@@ -1353,7 +1353,7 @@ To learn more, see [Restrict access](restrict-access-tfs.md).
 
 ### Area path permissions (object-level)   
 
-You manage the security of each area path from the [web portal](../work/customize/modify-areas-iterations.md#set-permissions) or using the [TFSSecurity command-line tool](tfs/command-line/tfssecurity-cmd.md#area-permissions). Area permissions grant or restrict access to create and manage area paths as well as create and modify work items defined under area paths.
+You manage the security of each area path from the [web portal](../work/how-to/set-permissions-access-work-tracking.md) or using the [TFSSecurity command-line tool](tfs/command-line/tfssecurity-cmd.md#area-permissions). Area permissions grant or restrict access to create and manage area paths as well as create and modify work items defined under area paths.
 
 Members of the Project Administrators group are automatically granted permissions to manage area paths for a team project. Consider granting team administrators or team leads permissions to create, edit, or delete area nodes.
 
@@ -1454,9 +1454,9 @@ When that's the case, you can set up teams that are associated with an area.
 Permissions for the team's work items are assigned by assigning permissions to the area. 
 There are other [team settings](../work/scale/manage-team-assets.md) 
 that configure the team's agile planning tools.</blockquote>
-<p>To learn more, see [Set permissions to restrict access to work items](../work/customize/modify-areas-iterations.md#set-permissions-to-restrict-access-to-work-items).</p>
+<p>To learn more, see [Set permissions to restrict access to work items](../work/how-to/set-permissions-access-work-tracking.md).</p>
 
-You manage the security of each iteration path from the [web portal](../work/customize/modify-areas-iterations.md#set-permissions) or using the [TFSSecurity command-line tool](tfs/command-line/tfssecurity-cmd.md#iteration-permissions). 
+You manage the security of each iteration path from the [web portal](../work/how-to/set-permissions-access-work-tracking.md) or using the [TFSSecurity command-line tool](tfs/command-line/tfssecurity-cmd.md#iteration-permissions). 
 Members of the Project Administrators group are automatically granted these permissions for each iteration defined for a team project. Consider granting team administrators, scrum masters, or team leads permissions to create, edit, or delete iteration nodes.
 
 <ul style="padding-left:20px;font-size:90%">
@@ -1828,7 +1828,7 @@ You can set these permissions by using the [TFSLabConfig permissions command-lin
 By default, the team project level and collection-level Readers groups have only View lab resources (Read) permissions.
 
 >[!NOTE]  
->Lab Management is deprecated for TFS 2017. We recommend that you [use Build and Release Management instead of Lab Management for automated testing](../test/lab-management/use-build-or-rm-instead-of-lab-management.md).
+>Lab Management is deprecated for TFS 2017. We recommend that you [use Build and Release Management instead of Lab Management for automated testing](https://docs.microsoft.com/visualstudio/test/lab-management/use-build-or-rm-instead-of-lab-management).
 
 <ul style="padding-left:20px;font-size:90%">
 
@@ -2008,9 +2008,9 @@ Use this option to disable inheritance for folders, shared queries, and other ob
 - When adding teams, consider what permissions you want to assign to team leads, scrum masters, and other team members who may need to create and modify area paths, iteration paths, and queries.  
 
 **Don't:**  
-- Don’t add accounts to the team project **Readers** group that you’ve added to the **Project Administrators** group. Because the Readers group denies several permissions that the Project Administrators group allows, and deny takes precedence.  
-- Don’t change the default assignments made to the valid users groups. If you remove or set the **View instance-level information** permission to Deny for one of the Valid Users groups, no users in the group will be able to access the team project, collection, or deployment, depending on the group you set.  
-- Don’t assign permissions that are noted as ‘Assign only to service accounts’ to user accounts.
+- Don't add accounts to the team project **Readers** group that you've added to the **Project Administrators** group. Because the Readers group denies several permissions that the Project Administrators group allows, and deny takes precedence.  
+- Don't change the default assignments made to the valid users groups. If you remove or set the **View instance-level information** permission to Deny for one of the Valid Users groups, no users in the group will be able to access the team project, collection, or deployment, depending on the group you set.  
+- Don't assign permissions that are noted as ‘Assign only to service accounts' to user accounts.
 
 
 
@@ -2028,7 +2028,7 @@ When you add accounts of users directly to a built-in group or through a Windows
 The default permissions assigned to these groups are primarily limited to read access, such as **View build resources**, **View project-level information**, and **View collection-level information**.
 
 This means that all users that you add to one team project can view the objects in other team projects within a collection.
-If you need to restrict view access, then you can [set restrictions through the area path node](../work/customize/modify-areas-iterations.md).
+If you need to restrict view access, then you can [set restrictions through the area path node](../work/customize/set-area-paths.md).
 For additional methods, see [Restrict access in TFS](restrict-access-tfs.md).
 
 If you remove or deny the **View instance-level information** permission for one of the Valid Users groups,

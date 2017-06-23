@@ -7,7 +7,7 @@ ms.assetid: 706331A0-3758-4575-9B51-AC828F57161B
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article  
-ms.date: 03/16/2017
+ms.date: 05/22/2017
 ---
 
 
@@ -22,7 +22,7 @@ Throughout your sprint, you can monitor the sprint burndown chart to determine i
 <li>Based on the actual burn rate, does the team feel confident that they'll complete the work by the end of the sprint?</li>
 </ul>
 
->[!NOTE]
+>[!NOTE]  
 >The system automatically builds a sprint burndown chart based on the tasks and Remaining Work estimates you define and update throughout the sprint cycle. For details, see [Sprint planning](sprint-planning.md) and [Task board](task-board.md).  To open the sprint burndown chart, jump to the section [Open sprint burndown chart](#open-chart).   
 
 <table>
@@ -112,6 +112,10 @@ Click the chart to display it in a larger view.
 
 ![Open sprint burndown chart](_img/sprint-burndown-open-chart.png)
 
+>[!NOTE]  
+>You can't add the system-generated sprint burndown chart to a dashboard. However, you can add the [Sprint burndown widget](../../report/widget-catalog.md#sprint-burndown-widget), which captures the same information for the current sprint, to a dashboard. 
+
+
 In particular you can review your sprint burndown charts to show the team patterns in execution. The burndown charts maintain a record of the team's ability to plan and estimate.  
 
 | Sprint 1   |  Sprint 2  | Sprint 3 | 
@@ -131,13 +135,8 @@ You can use your team [velocity as input into the forecasting tool](velocity-and
 
 ##Related notes
 
-<!---In addition to a scope and schedule management tool, the sprint burndown chart can aid in communicating with customers and other stakeholders.  
-
-For more information, see Address inaccuracies published for summary values.
-
--->
 You can learn more about defining, planning, and executing your sprints from these topics:  
-*	[Define sprints](define-sprints.md)  
+*	[Schedule sprints](define-sprints.md)  
 *	[Sprint planning](sprint-planning.md)  
 *	[Task board](task-board.md)  
 
@@ -191,7 +190,8 @@ As a team, work to determine whether to adapt one or more processes to minimize 
 In some cases, your team may need to do some work to implement an improvement. For example, a team that found themselves negatively impacted by too many failed builds decided to implement continuous integration. Because they didn't want to disrupt process, they allocated a few hours to set up a trial build before turning it on in their production build. To represent this work, they created a spike and prioritized that work against the rest of the product backlog.
 
 For additional guidance, see:
-*	[Agile Principles and Values by Jeff Sutherland](https://msdn.microsoft.com/library/dd997578.aspx)
+*	[What is Scrum?](https://www.visualstudio.com/learn/what-is-scrum/)
+*   [Agile Principles and Values by Jeff Sutherland](https://msdn.microsoft.com/library/dd997578.aspx)
 *	[Putting the Fun Back In Your Retrospectives](http://www.agilealliance.org/files/session_pdfs/Putting%20the%20Fun%20Back%20In%20Your%20Retrospectives.pdf)  
 *	[Agile Retrospectives: Making Good Teams Great](http://www.amazon.com/Agile-Retrospectives-Making-Teams-Great/dp/0977616649/)	
  

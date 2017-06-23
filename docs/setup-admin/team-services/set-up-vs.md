@@ -1,6 +1,6 @@
 ---
-title: Set up Visual Studio with Team Services | Visual Studio Team Services
-description: Share code with Git and manage work with Agile tools in Visual Studio Team Services (VSTS, Visual Studio Online, VSO) for continuous integration and continuous delivery
+title: Set up Visual Studio with Team Services
+description: Share code with Git and manage work with Agile tools in Visual Studio Team Services (VSTS) for continuous integration and continuous delivery
 ms.topic: get-started-article
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
@@ -14,9 +14,13 @@ ms.date: 08/04/2016
 
 **Team Services**
 
-When you first launch [Visual Studio](https://www.visualstudio.com/products/vs-2015-product-editions), 
-sign in and connect to [Visual Studio Team Services](https://www.visualstudio.com/products/visual-studio-team-services-vs) 
-so you can store or share code in free, unlimited, private, 
+When you first launch [Visual Studio 2015](https://www.visualstudio.com/products/vs-2015-product-editions), 
+you can sign in and connect to [Visual Studio Team Services](https://www.visualstudio.com/products/visual-studio-team-services-vs).
+
+If you have already gone through Visual Studio sign in, or you are using Visual Studio 2017, then [learn how](../../git/gitquickstart-vs2017.md) to connect to 
+your Team Services from the Team Explorer window.
+
+Once connected, you can store or share code in free, unlimited, private, 
 cloud-based Git repositories or Team Foundation version control. 
 Organize and manage your work using Agile tools for DevOps, 
 continuous integration, and continuous delivery so your team can build often, 
@@ -38,7 +42,7 @@ If you want, you can also use Team Services with any IDE or code editor, like:
 *	Xcode (see [Git](../../git/share-your-code-in-git-xcode.md) or [TFVC](../../tfvc/share-your-code-in-tfvc-xcode.md))
 *	[Visual Studio Code](https://code.visualstudio.com/docs/editor/versioncontrol)
 
-##	How do I set up Visual Studio for Team Services?
+##	How do I set up Visual Studio 2015 for Team Services during sign in?
 
 0.  [Download and install Visual Studio](https://go.microsoft.com/fwlink/?LinkId=309297&clcid=0x409&slcid=0x409), 
 if you don't have the version you want already. 
@@ -57,7 +61,7 @@ then sign in to create your profile.
 	If you're a Visual Studio subscriber, 
 	use the sign-in address for your subscription. 
 
-	<img src="./_img/set-up-vs/sign-in-visual-studio.png" alt="Sign in to Visual Studio" style="border: 1px solid #CCCCCC">
+	![Sign in to Visual Studio](_img/set-up-vs/sign-in-visual-studio.png)
 
 	[Can't sign in?](#cannot-sign-in)
 
@@ -66,12 +70,12 @@ then enter your password.
 
 0.	Add your Visual Studio profile details. You only have to do this once. 
 
-	<img src="./_img/set-up-vs/profile-account-details.png" alt="Create your profile" style="border: 1px solid #CCCCCC">
+	![Create your profile](_img/set-up-vs/profile-account-details.png)
 
 0.	Give your Team Services account a name, 
 and confirm its location. 
 
-	<img src="./_img/set-up-vs/profile-account-details2.png" alt="Name your account, confirm its location" style="border: 1px solid #CCCCCC">
+	![Name your account, confirm its location](_img/set-up-vs/profile-account-details2.png)
 
 	[How can I create a Team Services account later](#WhatIsVSO) or [change its location?](#change-location)
 
@@ -80,7 +84,7 @@ work items, backlog, builds, tests, and other assets.
 Name your team project, select a process to organize your work, 
 and choose the version control to manage your code.
 
-	<img src="./_img/set-up-vs/create-team-project-vs.png" alt="Create your team project" style="border: 1px solid #CCCCCC">
+	![Create your team project](_img/set-up-vs/create-team-project-vs.png)
 
 	Not sure which to choose? Learn which 
 	[process](../../work/guidance/choose-process.md) 
@@ -91,7 +95,7 @@ and choose the version control to manage your code.
 0.	If you're a new Visual Studio user, you can change your settings here, 
 or change them later in Visual Studio options.
 
-	<img src="./_img/set-up-vs/HelloNewProfile.png" alt="Change settings, if you want" style="border: 1px solid #CCCCCC">
+	![Change settings, if you want](_img/set-up-vs/HelloNewProfile.png)
 
 	These changes are saved with your profile, 
 	and your settings roam with you wherever you sign in. 
@@ -199,7 +203,7 @@ A:	Yes, for a better experience,
 you can change your account's location during signup 
 so that your account is closest to most users.
 
-<img src="./_img/set-up-vs/change-location.png" alt="Change account location" style="border: 1px solid #CCCCCC">
+![Change account location](_img/set-up-vs/change-location.png)
 
 Your account's default location is selected based on the closest 
 [Microsoft Azure region](https://azure.microsoft.com/en-us/regions) 

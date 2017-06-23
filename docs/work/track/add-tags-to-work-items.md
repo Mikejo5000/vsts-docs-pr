@@ -7,7 +7,7 @@ ms.topic: get-started-article
 ms.assetid: 79A08F31-BB8A-48BD-AD17-477EE0B76BC7
 ms.manager: douge
 ms.author: kaelli
-ms.date: 03/16/2017
+ms.date: 06/02/2017
 ---
 
 # Add tags to work items to categorize and filter lists and boards  
@@ -15,7 +15,10 @@ ms.date: 03/16/2017
 
 <b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b>  
 
-Tagging work items helps you quickly filter the product backlog or a work item query by categories that you define.  
+Tagging work items helps you quickly filter the product backlog or a work 
+item query by categories that you define. 
+A tag corresponds to a one or two keyword phrase that you define and that  
+supports your needs to filter a backlog or query, or define a query. 
 
 You can add and modify tags from the web portal, from Team Explorer plug-in for Visual Studio. Also, you can open a query in [Excel](../office/bulk-add-modify-work-items-excel.md) to perform bulk modifications of tags.  
 
@@ -204,9 +207,9 @@ By default, all Contributors are granted permissions to create and modify tags.
 
 
 <a id="assign"></a>
-##Add and assign tags   
+## Add and assign tags   
 
-1. From the web portal, open a work item and add a tag. Or, select from the list of previously assigned tags.  
+1. From the web portal, open a work item and add a tag. Click Add and type your keyword. Or, select from the list of previously assigned tags.  
 
 	![Add one or more tags to a work item](_img/add-tags-to-work-items-vso-tfs.png)  
 
@@ -280,6 +283,7 @@ Tags are a shared resource, they're associated with a team project and not a tea
 - [Bulk modify work items from the web portal](../backlogs/bulk-modify-work-items.md)  
 - [Bulk modify work items from Excel](../office/bulk-add-modify-work-items-excel.md)  
 
+See also the [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?term=tags&target=VS&category=All%20categories&vsVersion=&sortBy=Relevance) for extensions that support managing tags.
 
 ###Filter backlogs or boards using tags  
 
@@ -290,16 +294,16 @@ To filter the Kanban board using tags, make sure that you first [customize cards
 >[!NOTE]  
 ><b>Feature availability: </b>This feature is currently supported only on the Kanban board from Team Services or the web portal for TFS 2015 Update 1 or later version. 
 
-To learn more about filtering, see [Filter your backlog or board](../backlogs/create-your-backlog.md#filter).  
+To learn more about filtering, see [Filter your backlog or board](../how-to/filter-backlog-or-board.md).  
 
 ###Limits on number of tags
 While no hard limit exists, creating more than 100K tags for a team project collection can negatively impact performance. Also, the auto-complete dropdown menu for the tag control displays a maximum of 200 tags. When more than 200 tags are defined, begin typing to cause the tag control to display relevant tags.  
 
-You can't assign more than 256 tags to a work item. And, you can't add more than 32 new tags at a time or you'll receive the following message:  
+You can't assign more than 100 tags to a work item or you'll receive the following message:  
 
 	TF401243: Failed to save work item because too many new tags were added to the work item.
 
-Simply save the work item with the tags (32 or less) that you've added, and then you can add more tags. 
+Simply save the work item with the tags (100 or less) that you've added, and then you can add more tags. 
 
 Limit queries to fewer than 25 tags. More than that and the query will likely time out.  
 

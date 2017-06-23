@@ -2,7 +2,7 @@
 title: Test with unified agents and phases
 description: Manual and exploratory testing. Test with unified agents and phases in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-manual
+ms.technology: vs-devops-test-continuous
 ms.assetid: CAA3900B-1939-41B8-871B-FF0E99DC3E5A
 ms.manager: douge
 ms.author: ahomer
@@ -227,7 +227,7 @@ phase, the tests will be replicated to each of the machines.
 
 * [Associate automated tests with test cases](associate-automated-test-with-test-case.md)
 * [Associate automated test results with requirements](associate-automated-results-with-requirements.md)
-<!-- * [Run automated tests from test plans in the Test hub](run-automated-tests-from-test-hub.md) -->
+* [Run automated tests from test plans in the Test hub](run-automated-tests-from-test-hub.md)
 * [Continuous testing scenarios and capabilities](index.md)
 
 [!INCLUDE [help-and-support-footer](../_shared/help-and-support-footer.md)] 

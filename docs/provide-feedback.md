@@ -43,6 +43,7 @@ Here are the quick-access links to use:
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">What's new</p>
 <ul style="padding-left:30px">
  <li style="margin-bottom:2px">[Features timeline pages](https://www.visualstudio.com/en-us/news/release-archive-vso)</li> 
+ <li style="margin-bottom:2px">[Content updates](./content-updates/updates-2017.md)</li>
  <li style="margin-bottom:2px">[FAQs](https://www.visualstudio.com/support/visual-studio-faq-vs)</li>
  <li style="margin-bottom:2px">[Feature matrix](https://www.visualstudio.com/team-services/compare-features/)</li>
  <li style="margin-bottom:2px">[Enable preview features](collaborate/preview-features.md)</li>

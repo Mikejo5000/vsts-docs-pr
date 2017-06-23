@@ -64,32 +64,25 @@ or [Azure portal](https://portal.azure.com).
 0.	Go to your team project collection or team project, 
 depending on the Team Services group that you want to work on.
 
-0.  Go to the control panel.
+0.  Go to the control panel by choosing the gear icon in the top navigation bar and **Security** in the menu.
 
-    ![Go to team project's control panel, security settings](./_img/manage-azure-ad-groups/ControlPanelSettings.png)
-
-0.	Go to the security settings. 
-Select the Team Services group 
-where you want to add your Azure AD group.
+0.	Select the Team Services group where you want to add your Azure AD group.
 
     ![Select a Team Services group. Go to Members, Add](./_img/manage-azure-ad-groups/VSOGroupAddMemberButton.png)
 
-0.	Find the Azure AD group that you want to add. 
-Just start typing the group's name, alias, 
-or display name. Then select the group to add it.
-
-    To get more details about a group and its members, review the group's contact card.
+0.	Find the Azure AD group that you want to add. Just start typing the group's name, alias, 
+or display name. Then select the group to add it.  You can get more details about a group and its members by choosing 
+the contact card icon to the right of the name.
 
     ![Browse directory for groups](./_img/manage-azure-ad-groups/AddAADGroupPanelBrowse.png)
+    
+    You [invite guests into your Azure AD](https://blogs.msdn.microsoft.com/visualstudioalm/2017/05/11/inviting-directory-guests-to-aad-backed-vsts-accounts) 
+    and into your Azure AD backed Team Services accounts, without waiting for them 
+    to accept, which in turn allows you 
+    to add those guests to your account, grant access to projects, assign extensions, etc.
 
 0.	Add more groups, or save your changes if you're done.
 
-    ![Add more groups, or save changes](./_img/manage-azure-ad-groups/AddAADGroupPanelSaveChanges.png)
-
-0.  Check that your group appears in the 
-Team Services group that you want.
-
-    ![Check your Azure Active Directory group](./_img/manage-azure-ad-groups/CheckAADGroupInVSO.png)
 
 ##	Q&A
 
@@ -221,13 +214,10 @@ Team Services doesn't currently have this capability.
 
 ####Q:	 How do I remove an Azure AD group from Team Services?
 
-A: Go to your team project collection or team project. 
-Then, go to the control panel. 
+A: Go to your team project collection or team project.  Then, go to the control panel by choosing the gear icon in the 
+top navigation bar and **Security** in the menu.
 
-![Team project's control panel, security settings](./_img/manage-azure-ad-groups/ControlPanelSettings.png)
-
-Go to the security settings. Find the Azure AD group, 
-then delete that group from your Team Services account.
+Find the Azure AD group, then delete that group from your Team Services account.
 
 ![Find the Azure Active Directory group, delete from Team Services](./_img/manage-azure-ad-groups/DeleteAADGroupFromVSO.png)
 

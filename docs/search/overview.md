@@ -12,7 +12,7 @@ ms.date: 12/04/2016
 
 # Search across all your code and work items
 
-Visual Studio Team Services and Team Foundation Server stores a tremendous amount of information; 
+Visual Studio Team Services and Team Foundation Server store a tremendous amount of information; 
 work items for planning and tracking your work, version control to track code file changes, 
 and build and release services to help you ship effortlessly. 
 As your backlog and codebase expand and are divided across multiple projects, teams and repositories, 

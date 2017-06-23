@@ -1,18 +1,17 @@
+# [Dashboards & Reports Documentation](index.md)
 # Overview
 ## [Charts, dashboards, and widgets](overview.md)
 ## [Power BI integration overview](powerbi/overview.md)
 
 
-# Get started
-
-## [Monitor progress and trends](monitor-progress-trends.md)  
+# Quickstarts
 ## [Add and manage dashboards](dashboards.md) 
 ## [Add charts and widgets to a dashboard](add-widget-to-dashboard.md)
 ## [Configure work item query-based charts](charts.md)
-## [Configure test status, progress, and result charts](../test/manual-exploratory-testing/getting-started/track-test-status.md) 
+## [Configure test status, progress, and result charts](/docs/test/manual-exploratory-testing/getting-started/track-test-status) 
 
 
-# How to 
+# Tutorials
 ## [Work with cumulative flow](guidance/cumulative-flow.md)
 ## [Work with lead/cycle time](guidance/cycle-time-and-lead-time.md) 
 ## [Work with burndowns and burnups](../work/scrum/sprint-burndown.md) 
@@ -39,15 +38,16 @@
 ## [Widget catalog](widget-catalog.md)
 ## [Power BI available data](powerbi/vso-pbi-whats-available-vs.md)
 
-  
+ 
+# Resources
+## [Marketplace widgets](https://marketplace.visualstudio.com/search?term=widget&target=VSTS&category=All%20categories&sortBy=Relevance)      
+ 
 <!---
 # Troubleshooting
 ## TBD
 
 
-# Resources
-## TBD 
-## Marketplace extensions (TBD)    
+
 
 
 # [Power BI](analytics/access-analytics-power-bi.md)

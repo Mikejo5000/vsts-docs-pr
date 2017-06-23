@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: E5FABB7C-ECA8-4FA5-9488-4AD78C60869A  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 05/23/2017
+ms.date: 06/02/2017
 ---
 
 # Work tracking object limits 
@@ -53,6 +53,8 @@ For additional restrictions and conformance requirements, see [Customize a proce
 >[!NOTE]  
 >For the Hosted XML process model, you can define an approximate total of 10K items for all global lists specified across all WITs. 
  
+## Tags
+- You can't assign more than 100 tags to a work item.
 
 ## Related notes
 

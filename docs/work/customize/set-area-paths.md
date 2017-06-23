@@ -38,7 +38,7 @@ You define both areas and iterations from the Work hub of the team project admin
 [!INCLUDE [temp](../_shared/learn-about-new-nav-experience.md)] 
 
 
-To manage areas and iterations you need to be a project administrator or have the **Create child nodes** permission for an area path. If you aren't a project administrator, [get added as one](../scale/manage-team-assets.md#add-team-admin) or have someone provide you with explicit permissions to <b>Edit project-level information</b>. 
+To manage areas and iterations you need to be a project administrator or have the **Create child nodes** permission for an area path. If you aren't a project administrator, [get added as one](../scale/add-team-administrator.md) or have someone provide you with explicit permissions to <b>Edit project-level information</b>. 
 
 If you want to add area paths to support teams, you can do that when you [add teams to your team project](../scale/multiple-teams.md).  
 

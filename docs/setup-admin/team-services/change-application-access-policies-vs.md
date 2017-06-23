@@ -67,12 +67,12 @@ To continue, you'll need at least Basic access and Team Services account owner p
 
 0.	From your account toolbar, go to **Settings**.
 
-    <img alt="Click the gear icon, go to Settings" src="../../_shared/_img/account-settings-new-ui.png" style="border: 1px solid #CCCCCC" />
+    ![Click the gear icon, go to Settings](../../_shared/_img/account-settings-new-ui.png)
 
 0.  Review your application connection settings. 
 Change these settings, based on your security policies.
 
-    <img alt="Under Application Connections, change each setting as necessary, save your changes" src="./_img/change-account-access-policies/Connections.png" style="border: 1px solid #CCCCCC" />
+    ![Under Application Connections, change each setting as necessary, save your changes](_img/change-account-access-policies/Connections.png)
 
 	[Need help?](#get-support)
 

@@ -30,16 +30,16 @@ you'll need at least Basic access and account owner permissions.
 
 0.  Go to your Team Services account settings.
 
-    <img alt="Go to account settings" src="../../_shared/_img/account-settings-new-ui.png" style="border: 1px solid #CCCCCC" />
+    ![Go to account settings](../../_shared/_img/account-settings-new-ui.png)
 
 0.	Under **Settings**, change your account URL.
 
-    <img alt="Change your account name" src="./_img/rename-vso-account/VSORenameAccount.png" style="border: 1px solid #CCCCCC" />
+    ![Change your account name](_img/rename-vso-account/VSORenameAccount.png)
 
 0.  Confirm that you want to rename your account. 
 Give your account a new name. Save your changes.
 
-    <img alt="Confirm renaming your account, provide new account name" src="./_img/rename-vso-account/VSOConfirmAccountRename.png" style="border: 1px solid #CCCCCC" />
+    ![Confirm renaming your account, provide new account name](_img/rename-vso-account/VSOConfirmAccountRename.png)
 
 	[Need help?](#get-support)
 

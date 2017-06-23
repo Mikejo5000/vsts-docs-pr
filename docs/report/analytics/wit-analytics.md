@@ -9,13 +9,13 @@ ms.author: kaelli
 ms.date: 08/11/2016
 ---
 
-#WIT analytics  
+#Analytics - Work Item Tracking OData queries 
 
 **Team Services**  
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
-Using the OData analytics service, you can construct basic and filtered queries to return work items of interest. With basic querying capabilities you can query data directly from your browser.
+Using the OData service provided by the Analytics Marketplace extension, you can construct basic and filtered queries to return work items of interest. With basic querying capabilities you can query data directly from your browser.
 
 In this topic, the basic root URL is constructed as follows:
 
@@ -45,29 +45,57 @@ For example, to return only the Work Item ID, Work Item Type, Title, and State o
 
 This is equivalent to selecting all rows in the entity, but returning only these specific fields.  
 
-<blockquote style="font-size: 13px">**Note:  **There are no spaces in the field names. The query fails when you add spaces. Both spacing and casing are critical in OData.  
-</blockquote>   
+>[!NOTE]
+>There are no spaces in the field names. The query fails when you add spaces. Both spacing and casing are critical in OData.  
 
 
 ### Target a specific project  
 
-Because Projects are an integral part of VS Team Services, we have added a path property to automatically filter by a project for any entities which are related to the project entity. 
+Because team projects are an integral part of Team Services, we have added the ability to specify the project scope in the URL. By specifying the project, you automatically filter for any entities that are related to the project entity.
 
-For example, the following will return the count of work items for a specific project:  
+For example, the following project-scoped query will return the count of work items for a specific project:  
 
     https://[collection].analytics.visualstudio.com/DefaultCollection/ProjectName/_odata/WorkItems/$count
+
 
 Likewise, this query string will return the areas for a specific project:
 
     https://[collection].analytics.visualstudio.com/DefaultCollection/ProjectName/_odata/Areas
 
-This is equivalent to the following filter:
 
-    /Areas?$filter=Project/ProjectName eq 'project name'   
+This is equivalent to the following filter on a collection-scoped query:
+
+    https://[collection].analytics.visualstudio.com/DefaultCollection/_odata/Areas?$filter=Project/ProjectName eq 'project name'   
 
 
-<blockquote style="font-size: 13px">**Note:  ** If you don't have access to all projects in an account, apply a project filter to your query. When pulling data into client tools such as
-Power BI Desktop or Excel, use the project path form of the URL to ensure your data is constrained by a project, unless you need to report on morethan one project. </blockquote>
+When using a collection-scoped query with an ```expand``` you must provide an additional filter:
+
+The following query, which uses an ```expand``` to retrieve the children of all work items:
+	
+	https://[collection].analytics.visualstudio.com/_odata/WorkItems?$expand=Children&$filter=Project/ProjectName eq ‘x’
+
+
+ Requires an additional filter to verify the children are limited to the specified project:
+	
+	https://[collection].analytics.visualstudio.com/_odata/WorkItems?$expand=Children($filter=Project/ProjectName eq ‘x’)&$filter=Project/ProjectName eq ‘x’
+
+
+Without the additional filter, the request will fail if the child of any work item references work items in a project that you do not have read access to.
+
+
+This query, which is expanding to parents:
+
+	https://[collection].analytics.visualstudio.com/_odata/WorkItems?$expand=Parent&$filter=Project/ProjectName eq ‘x’
+
+
+requires the following filter on the ```expand```:
+
+	https://[collection].analytics.visualstudio.com/_odata/WorkItems?$expand=Parent&$filter=Project/ProjectName eq ‘x’ and Parent/Project/ProjectName eq ‘x’
+
+
+>[!NOTE]
+>If you don't have access to all projects in an account, apply a project filter to your query. When pulling data into client tools such as
+>Power BI Desktop or Excel, use the project path form of the URL to ensure your data is constrained by a project, unless you need to report on more than one project.
 
 ###Filter results  
 
@@ -125,7 +153,8 @@ This query returns all of the work items in a specific iteration:
 
 In this example, ```Iteration``` is the navigation property name and ```IterationPath``` is the full path for the iteration. To use another entity as a filter, put the navigation property followed by a slash followed by the name of the field to filter on.  
 
-<blockquote style="font-size: 13px">**Note:  **You can't use the navigation property in a ```select``` statement. Instead, you can use ```expand```.</blockquote>  
+>[!NOTE]
+>You can't use the navigation property in a ```select``` statement. Instead, you can use ```expand```.
 
 
 ##Return data from related entities

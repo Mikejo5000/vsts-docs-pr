@@ -238,7 +238,7 @@ that's linked to your Team Services account,
 select the directory that you want to connect. 
 Save your changes when you're done.
 
-	<img alt="Select your directory" src="./_img/manage-work-access/AzureConnectDirectory2.png" style="border: 1px solid #CCCCCC">
+	![Select your directory](_img/manage-work-access/AzureConnectDirectory2.png)
 
 	*	[Why don't I see the directory that I want?](#why-not-my-directory)
 	*	[My account's already connected to a directory. What do I do?](#AlreadyConnected)
@@ -451,7 +451,7 @@ To learn more, contact your Azure AD administrator. The setting below doesn't af
 0.	Go to your account settings. 
 Allow or deny account access for external users added as guests. 
 
-	<img alt="Change external guest access" src="./_img/manage-work-access/guest-access.png" style="border: 1px solid #CCCCCC">
+	![Change external guest access](_img/manage-work-access/guest-access.png)
 
 <!-- ENDSECTION --> 
 

@@ -18,16 +18,17 @@ ms.date: 08/04/2016
 
 ![Editor query filter based on recent changes](_img/query-by-date-example.png)  
 
-<p>If you're new to creating queries, see [Use the query editor to list and manage queries](using-queries.md).  </p>
 
 ##Query for items based on when changes occurred
 
-<p>You can filter for work items by the date on which they were changed or for a specific time period. If you limit the scope of your query, it can help with performance by only returning those results that fit the date range that you want to include. </p>
+You can filter for work items by the date on which they were changed or for a specific time period. If you limit the scope of your query, it can help with performance by only returning those results that fit the date range that you want to include. If you're new to creating queries, see [Use the query editor to list and manage queries](using-queries.md). 
+
+Not all fields are valid for all work item types (WITs). Jump to <a href="#date_fields">date fields</a> for the set of fields you can include in queries and which WITs they apply to. Enter dates in the format accepted by your computer's operating system. 
 
 <table valign="top">
 <tbody valign="top">
 <tr>
-  <th>
+  <th width="25%">
     <p>Filter for</p>
   </th>
   <th>
@@ -39,9 +40,7 @@ ms.date: 08/04/2016
     <p>Items created in the last 30 days</p>
   </td>
   <td>
-    <p style="margin-bottom:0px">
-      ```Created Date  _ >=  _ @Today-30```
-    </p>
+    ![Clause for finding items created in the last 30 days](_img/q-by-date-last-30-days.png) 
   </td>
 </tr>
 <tr>
@@ -49,64 +48,49 @@ ms.date: 08/04/2016
     <p>Items modified on a specific date</p>
   </td>
   <td>
-    <p style="margin-bottom:0px">
-      ```Changed Date  _ =  _ 7/14/2014```
-    </p>
+     ![Clause for finding items changed on a specific date](_img/q-by-specific-date.png)
   </td>
 </tr>
 <tr>
   <td>
     <p>Items resolved today</p>
   </td>
-  <td>
-    <p style="margin-bottom:0px">```Resolved Date  _ =  _ @Today```</p>
+  <td>![Clause for finding items resolved today](_img/q-by-resolved-today.png)
   </td>
 </tr>
 <tr>
   <td>
     <p>Items closed within a specified time period</p>
   </td>
-  <td>
-    <p style="margin-bottom:0px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```State _  = _  Done```
-    </p>
-    <p style="margin-bottom:0px">```And _ Closed Date _  > _ 7/1/2014```</p>
-    <p style="margin-bottom:0px">
-      ```And _ Closed Date _ <= _ 7/21/2014```</p>
+  <td>![Clause for finding items closed within a specified time period](_img/q-by-closed-time-period.png)
   </td>
 </tr>
 <tr>
   <td>
     <p>Items whose status was updated within the last week</p>
   </td>
-  <td>
-    <p style="margin-bottom:0px">
-      ```State Changed Date _ <= _ @Today-7```
-    </p>
+  <td>![Clause for finding items whose status was updated within the last week](_img/q-by-state-changed-within-last-week.png)
   </td>
 </tr>
 <tr>
   <td>
-    <p>Items closed in the current sprint</p>
+    <p>Items closed during the current sprint (the `@CurrentIteration` macro references the sprint defined for the current team context) </p>
   </td>
-  <td>
-    <p style="margin-bottom:0px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```State _ = _ Done```
-    </p>
-    <p style="margin-bottom:0px">```And _ Iteration Path _ = _ @CurrentIteration```
-    </p>
+  <td>![Clause for finding items closed during the current sprint](_img/q-by-done-current-iteration.png)
   </td>
 </tr>
 </tbody>
 </table>
 
-<p>Not all fields are valid for all work item types (WITs). Jump to <a href="#date_fields">date fields</a> for the set of fields you can include in queries and which WITs they apply to.</p>
-<p>Enter dates in the format accepted by your computer's operating system.</p>
 
 <a id="current-iteration">  </a>
 
-##Query for items based on belonging to a team's current iteration  
+## Query for items based on belonging to a team's current iteration  
 If your team follows Scrum processes, you [schedule work to be completed in sprints](../scrum/define-sprints.md). You can track the progress of requirements, bugs, and other work to be completed in the current sprint using the **@CurrentIteration** macro.  
 
 Prior to creating or updating a query to use the **@CurrentIteration** macro, make sure you [select your team](#team_view). The **@CurrentIteration** macro references the current team selected in the web portal.  
+
+Any item assigned to a sprint which corresponds to the current iteration path for the team will be found.  For example, if a team is on Sprint 5, then the query will return items assigned to Sprint 5. Later, when the team is working in Sprint 6, the same query will return items assigned to Sprint 6.  
 
 ![Query filter using the @CurrentIteration macro](_img/query-using-at-current-iteration-macro.png)  
 
@@ -114,7 +98,7 @@ You can't use the **@CurrentIteration** macro from some [clients, features, or R
 
 <a id="date_fields">  </a>
 
-##Date fields
+## Date fields
 <p>You can use date fields to filter your queries. Some of these fields are populated with information as a work item progresses from one state to another. Several of these fields do not appear on the work item form, but they are tracked for those WITs listed in the following table.</p>
 
 <table>
@@ -255,7 +239,7 @@ You can't use the **@CurrentIteration** macro from some [clients, features, or R
 </tbody>
 </table>
 
-####Notes:
+#### Notes:
  
 1. For these fields to be defined for a WIT, they must be included in the ```WORKFLOW``` section of the WIT definition. For example, this syntax is included within the ```FIELDS``` definition when transitioning to a Resolved state:  
 	```
@@ -271,12 +255,17 @@ You can't use the **@CurrentIteration** macro from some [clients, features, or R
 To query for items based on text entered in the History field, see
 [History and auditing](history-and-auditing.md). 
  
+- [Create managed queries to list, update, or chart work items ](example-queries.md)    
+- [Query editor](using-queries.md)    
+- [Query operators & macros](query-operators-variables.md)       
+- [Work item field index](../guidance/work-item-field.md)   
+- [Query permissions](set-query-permissions.md)
+
+
+
 <a id="team_view">  </a>
 
-###Switch  team view
-You switch to a different team from the team project/team menu.  
-
-![Switch teams from the team project - team menu](../scrum/_img/switch-team-context.png)  
+[!INCLUDE [temp](../_shared/switch-team-context-work.md)]  
  
 <a id="current_sprint_restrict"> </a> 
 
@@ -284,16 +273,16 @@ You switch to a different team from the team project/team menu.
 You can use the **@CurrentIteration** macro in a query from the following clients:  
 <ul>
   <li>
-    <p>Web portal that connects to VSTS</p>
+    <p>Web portal that connects to Team Services</p>
   </li>
   <li>
-    <p>Web portal that connects to an on-premises TFS 2015 RC</p>
+    <p>Web portal that connects to an on-premises TFS 2015 or later version</p>
   </li>
   <li>
-    <p>Visual Studio 2015 RC or Team Explorer 2015 RC connected to TFS 2015 RC or VSTS.</p>
+    <p>Visual Studio 2015 or Team Explorer 2015 or later versions connected to Team Services or TFS 2015 or later versions.</p>
   </li>
 </ul>
 
-An error occurs if you open a query that contains the **@CurrentIteration** macro in earlier versions of Visual Studio, or from Excel or Project. Also, the macro cannot be used when [copying or cloning test suites and test cases](https://msdn.microsoft.com/library/hh543843.aspx), [defining alerts](alerts-and-notifications.md), or with [VSTS REST APIs](https://www.visualstudio.com/integrate/get-started/rest/basics).
+An error occurs if you open a query that contains the **@CurrentIteration** macro in earlier versions of Visual Studio, or from Excel or Project. Also, the macro cannot be used when [copying or cloning test suites and test cases](https://msdn.microsoft.com/library/hh543843.aspx), [defining alerts](alerts-and-notifications.md), or with [REST APIs](/docs/integrate/get-started/rest/basics).
 
  

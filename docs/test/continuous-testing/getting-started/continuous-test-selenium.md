@@ -7,7 +7,7 @@ ms.assetid: 1B90D2DF-4AB0-4B65-8039-2B14A25FB547
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: ahomer
-ms.date: 08/12/2016
+ms.date: 06/15/2017
 ---
 
 # Get started with Selenium testing in a continuous integration pipeline
@@ -45,7 +45,7 @@ from Visual Studio Test Explorer.
    **Add** then **New Project** and then
    **Unit Test Project**. 
 
-   For more details, see: [Get started with developer testing tools](../../developer-testing/getting-started/getting-started-with-developer-testing.md).
+   For more details, see: [Get started with unit testing](https://docs.microsoft.com/visualstudio/test/getting-started-with-unit-testing).
 
 1. After the project is created, you must add the Selenium and
    browser driver references used by the browser to
@@ -53,9 +53,10 @@ from Visual Studio Test Explorer.
    Unit Test project and choose **Manage NuGet
    Packages**. Add the following packages to your project:
 
-   * Selenium.WebDriver  (for Firefox)
-   * Selenium.WebDriver.IEDriver
+   * Selenium.WebDriver
    * Selenium.WebDriver.ChromeDriver
+   * Selenium.WebDriver.IEDriver
+   * Selenium.Firefox.WebDriver
    * Selenium.WebDriver.PhantomJS.Xplatform<p />
 
    ![Adding the browser driver packages to your solution](_img/continuous-test-selenium/continuous-test-selenium-02.png)
@@ -144,8 +145,11 @@ the source code must be in version control.
  
    - Select the **Default** agent queue in which you have installed an agent.
      If you have not installed an agent in the **Default** queue, choose the
-     **manage queues** link and do that now. For information about installing a build agent, see
+     **manage queues** link and do that now. For information, see
      [Deploy a Windows build agent](../../../build/actions/agents/v2-windows.md).
+     You might decide to [create an Azure VM](https://docs.microsoft.com/azure/virtual-machines/windows/quick-create-portal)
+     to install your agent, or use a [deployment group](../../../build/concepts/definitions/release/deployment-groups/index.md)
+     and [install an agent there](../../../build/concepts/definitions/release/deployment-groups/howto-provision-deployment-group-agents.md). 
 
    >Selenium tests will generally be run interactively, 
    which would fail on the **Hosted** build controller.
@@ -196,7 +200,7 @@ the source code must be in version control.
 * [Use Selenium with cloud-based load testing](http://blogs.msdn.com/visualstudioalm/archive/2014/11/17/using-selenium-with-cloud-load-testing.aspx)
 * [Run tests with builds](getting-started-with-continuous-testing.md)
 * [Create your Visual Studio Team Services Account](http://visualstudio.com/)
-* [Get started with developer testing tools](../../developer-testing/getting-started/getting-started-with-developer-testing.md)
+* [Get started with developer testing tools](https://docs.microsoft.com/visualstudio/test/getting-started-with-unit-testing)
 
 For more information about Selenium browser automation, see:
 

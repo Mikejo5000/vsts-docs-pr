@@ -21,13 +21,13 @@ To fix this, take the following actions:
 
 1. Click the **Create query** link on the backlog page. 
     
-	![Create query of backlog](_img/backlogs-boards-create-query.png)
+	![Create query of backlog](../_img/backlogs-boards-create-query.png)
 
 2. Open the query (click the link that appears). 
 
 3. Review the list of items to determine which items are nested. For example, the following query shows that a bug is a child of a user story. Because the team has configured their backlog to display user stories and bugs at the same level (Requirements category), this corresponds to a nested item that disables the ordering feature. 
 
-	![Query of backlog with a nested item](_img/backlogs-boards-query-nested-items.png)
+	![Query of backlog with a nested item](../_img/backlogs-boards-query-nested-items.png)
 
 4. Remove all parent-child links that exist among nested items. 
 

@@ -161,7 +161,9 @@ Use **Team Project=@Project** to scope the query to find only those work items d
 
 ## Related notes
 
-That's the basics about using queries.  For an index of query examples, see [Create managed queries](example-queries.md#examples). To add a custom field to track additional data, see [Customize your work tracking experience](../customize/customize-work.md). 
+That's the basics about using queries. For an index of query examples, see [Create managed queries](example-queries.md#examples). To add a custom field to track additional data, see [Customize your work tracking experience](../customize/customize-work.md). 
+
+If you want to export a query to Excel, you can do that from [Excel or Visual Studio/Team Explorer](../office/bulk-add-modify-work-items-excel.md). Or, to export a query directly from the web portal Queries page, install the [VSTS Open in Excel Marketplace extension](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel). This extension will add in **Open in Excel** link to the toolbar of the query results page. 
 
 See also: 
 - [Adhoc versus managed queries](adhoc-vs-managed-queries.md)  

@@ -47,7 +47,7 @@ team project after you sign in.
 To manage your code, select Git or Team Foundation Version Control. 
 To manage your work, select Agile or another work item process template. 
 
-	<img alt="Create your first team project" src="../../_shared/_img/create-team-project-updated.png" style="border: 1px solid #CCCCCC">
+	![Create your first team project](../../_shared/_img/create-team-project-updated.png)
 
 	Not sure which to choose? Learn which version control 
 	or [work item process template](../../work/guidance/choose-process.md) 
@@ -74,11 +74,11 @@ or [add users to your team project](add-team-members-vs.md).
 	* [IntelliJ](http://java.visualstudio.com/Docs/tools/intelliJ)
 	* [Visual Studio Code](https://code.visualstudio.com/docs/editor/versioncontrol)
 
-<a name="vs"></a>
-## Connect and share code from Visual Studio
+
+## Connect Visual Studio to Team Services from Team Services
 
 0.	If you haven't already, install 
-[Visual Studio 2015](https://go.microsoft.com/fwlink/?LinkId=309297&clcid=0x409&slcid=0x409).
+[Visual Studio 2017](https://go.microsoft.com/fwlink/?LinkId=309297&clcid=0x409&slcid=0x409).
 
 	[Which other versions of Visual Studio can I use with Visual Studio Team Services?](#vs-versions)
 
@@ -88,38 +88,37 @@ or [add users to your team project](add-team-members-vs.md).
 	*	[Browser problems?](#browser-problems) 
 	*	[Why am I asked to choose between my work or school account and my personal account?](#ChooseOrgAcctMSAcct)
 
-0.	If you've [turned on the Account Landing preview](../../connect/account-home-pages.md), 
-from your **Projects** page (```https://{youraccount}.visualstudio.com/_projects```), 
+0.	On the account landing page (which is your projects page, ```https://{youraccount}.visualstudio.com/_projects```), 
 find and select your team project.
 
-	<img alt="On your Projects page, select your team project" src="../../_shared/_img/select-team-project-updated-ui.png" style="border: 1px solid #CCCCCC" />
+	![On your Projects page, select your team project](_img/add-team-members/select-team-project-updated-ui.png)
 
-	> [!NOTE]
-	> Eventually, the Projects page will be turned on by default, 
-	> so you can always go there to find your team projects. 
+0.  From your team project page, choose the **Dashboards** item in the top navigation bar, and then **Open in Visual Studio**.
 
-	Otherwise, from your account home page 
-	(```https://{youraccount}.visualstudio.com```), 
-	select your team project. If you don't see your team project, 
-	try **Browse**.
+	![On your team project page, click Open with Visual Studio](_img/connect-to-visual-studio-team-services/open-visual-studio.png)
 
-	<img alt="On your account home page, select your team project" src="./_img/_shared/select-team-project-new-ui.png" style="border: 1px solid #CCCCCC" />
 
-	> [!NOTE]
-	> Eventually, **Projects** page will replace the account home page. 
-	> so you can always go to the **Projects** page to create new team projects. 
+<a name="vs"></a>
+## Connect to Team Services from Visual Studio
 
-0.  From your team project page, open Visual Studio.
+0. If you haven't already, install [Visual Studio 2017](https://go.microsoft.com/fwlink/?LinkId=309297&clcid=0x409&slcid=0x409).
 
-	<img src="./_img/connect-to-visual-studio-team-services/open-visual-studio.png" alt="On your team project page, click Open with Visual Studio" style="border: 1px solid #CCCCCC">
+ [Which other versions of Visual Studio can I use with Visual Studio Team Services?](#vs-versions)
 
-0.	Choose your next step based on the version control you selected:
+0. Choose your next step based on the version control you selected:
 
-	*	[Share code in Git using Visual Studio](../../git/share-your-code-in-git-vs.md)
+ * [Share code in Git using Visual Studio](../../git/share-your-code-in-git-vs.md)
 
-	*	[Share code in TFVC using Visual Studio](../../tfvc/share-your-code-in-tfvc-vs.md#workspace)
+ * [Share code in TFVC using Visual Studio](../../tfvc/share-your-code-in-tfvc-vs.md#workspace)
 
-Learn about [connecting to team projects](../../connect/connect-team-projects.md).
+Learn about [connecting to team projects](../../connect/connect-team-projects.md#visual-studio).
+
+
+## Connect from Visual Studio Code
+
+Set up [VS Code](https://code.visualstudio.com/docs/editor/versioncontrol) with Git and Team Services.
+
+
 
 <a name="xcode"></a>
 ## Connect and share code from Xcode
@@ -142,11 +141,11 @@ Choose your next step based on the version control you selected:
 
 0.	Add a repository for Team Explorer Everywhere.
 
-	<img src="./_img/connect-to-visual-studio-online-eclipse/add-site.png" alt="Add repository for Team Explorer Everywhere" style="border: 1px solid #CCCCCC">
+	![Add repository for Team Explorer Everywhere](_img/connect-to-visual-studio-online-eclipse/add-site.png)
 
 0.	Select the "Team Explorer Everywhere" features.
 
-	<img src="./_img/connect-to-visual-studio-online-eclipse/select-tee-for-install.png" alt="Select Team Explorer Everywhere" style="border: 1px solid #CCCCCC">
+	![Select Team Explorer Everywhere](_img/connect-to-visual-studio-online-eclipse/select-tee-for-install.png)
 
 5.	Accept the license agreement and restart Eclipse when prompted.
 
@@ -155,21 +154,21 @@ Choose your next step based on the version control you selected:
 
 0. Show Team Explorer.
 
-	<img src="./_img/connect-to-visual-studio-online-eclipse/show-view.png" alt="Go to Window, Show View, Other" style="border: 1px solid #CCCCCC">
+	![Go to Window, Show View, Other](_img/connect-to-visual-studio-online-eclipse/show-view.png)
 
-	<img src="./_img/connect-to-visual-studio-online-eclipse/team-explorer-view.png" alt="In Show View box, expand Team Foundation Server, select Team Explorer" style="border: 1px solid #CCCCCC">
+	![In Show View box, expand Team Foundation Server, select Team Explorer](_img/connect-to-visual-studio-online-eclipse/team-explorer-view.png)
 
 0. Connect to Team Foundation Server.
 
-	<img src="./_img/connect-to-visual-studio-online-eclipse/connect-to-tfs.jpg" alt="Pending Changes view, click Connect to Team Foundation Server" style="border: 1px solid #CCCCCC">
+	![Pending Changes view, click Connect to Team Foundation Server](_img/connect-to-visual-studio-online-eclipse/connect-to-tfs.jpg)
 
 0. Add the server. 
 
-	<img src="./_img/connect-to-visual-studio-online-eclipse/add-servers.png" alt="Add Existing Team Project box, click Servers" style="border: 1px solid #CCCCCC">
+	![Add Existing Team Project box, click Servers](_img/connect-to-visual-studio-online-eclipse/add-servers.png)
 
 0.	Enter your Visual Studio Team Services account (```https://{youraccount}.visualstudio.com```).
 
-	<img src="./_img/connect-to-visual-studio-online-eclipse/add-server.png" alt="Add Team Foundation Server box, enter account URL" style="border: 1px solid #CCCCCC">
+	![Add Team Foundation Server box, enter account URL](_img/connect-to-visual-studio-online-eclipse/add-server.png)
  
 	**Q:**	I don't remember my account URL. Where can I find it? 
  
@@ -178,7 +177,7 @@ Choose your next step based on the version control you selected:
 
 0. Connect to your team project.
 
-	<img src="../../_shared/_img/add-existing-team-project.png" alt="Add Existing Team Project dialog box with collection and team project selected" style="border: 1px solid #CCCCCC">
+	![Add Existing Team Project dialog box with collection and team project selected](../../_shared/_img/add-existing-team-project.png)
 
 ### Share your code
 

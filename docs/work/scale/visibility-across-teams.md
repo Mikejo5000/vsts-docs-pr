@@ -7,7 +7,7 @@ ms.assetid: C9F129A7-97F9-4C1A-91E2-F59D6EFABE2E
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article  
-ms.date: 05/10/2017
+ms.date: 06/13/2017
 ---
 
 
@@ -31,13 +31,11 @@ For an overview of all team tools, see [Configure team settings](manage-team-ass
 With a Delivery Plan, you gain a tailor-made view across several teams and their development backlogs&mdash;stories, features, or epics. You can use these views to drive alignment across teams by overlaying several backlogs onto your delivery schedule. 
 
 > [!NOTE]  
-> **Feature availability**: Delivery Plans, a [Visual Studio Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans), is available for Team Services. All users with [basic access](../connect/change-access-levels.md) can view, add, and configure Delivery Plans. Stakeholders, however, don’t have access to Delivery Plans.  
+> **Feature availability**: Delivery Plans, a [Visual Studio Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans), is available for Team Services and TFS 2017.2 and later versions. All users with [basic access](../connect/change-access-levels.md) can view, add, and configure Delivery Plans. Stakeholders, however, don’t have access to Delivery Plans.  
 
 When you configure a Delivery Plan, you select the teams and backlog levels of interest. You can then interact with the plan to update it and drill into more details. To learn more about Delivery Plans, see [Review team plans](review-team-plans.md). 
 
 <img src="_img/plans_move1.png" alt="Interactive plan elements" style="border: 1px solid #CCCCCC;" />
-
-
 
 <a id="portfolio-backlogs">  </a>
 ## Use portfolio backlogs to track features and epics  
@@ -169,7 +167,7 @@ While the management teams you configure can use the Kanban board to monitor fea
  Only when the work item state changes does the card column reflect the same on all boards.  
 
 >[!IMPORTANT]   
->Work items that appear on more then one team's Kanban board can yield query results that don't meet your expectations. Because each team can customize the Kanban board columns and swimlanes, the values assigned to work items which appear on different boards may not be the same. The primary work around for this issue is to maintain single ownership of work items by [team area path](../scale/set-team-defaults.md). Another option is to [add custom workflow states (Team Services)](../process/customize-process-workflow.md) which all teams can use.</blockquote>  
+>Work items that appear on more then one team's Kanban board can yield query results that don't meet your expectations. Because each team can customize the Kanban board columns and swimlanes, the values assigned to work items which appear on different boards may not be the same. The primary work around for this issue is to maintain single ownership of work items by [team area path](../scale/set-team-defaults.md). Another option is to add custom workflow states which all teams can use. FOr details, see [Customize your work tracking experience](../customize/customize-work.md).</blockquote>  
 
 <!---  
 ![Multi-team Kanban board view](_img/visibility-multi-team-kanban-board-features.png) 
@@ -222,7 +220,6 @@ To accomplish this, the following configurations are made:
 The management team configures its backlogs to only view Features and Epics
 Feature teams configure their backlogs to view User Stories and Features 
  
-
 This configuration supports management's ability to monitor progress across the five teams at the level they need to monitor, and allow each individual feature team to stay focused on their product backlog of user stories. 
 
 You can replicate this further for program managers who want to monitor progress across broad initiatives by setting up a program management team that monitors Epics. 
