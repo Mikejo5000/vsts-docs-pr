@@ -1,4 +1,4 @@
-- name: Team Services & TFS 
+- name: "Team Services & TFS" 
   tocHref: /team-services/
   topicHref: /team-services/concepts
   items: 
@@ -72,7 +72,7 @@
   tocHref: /team-services/marketplace/vs-subscriptions/
   topicHref: /team-services/marketplace/vs-subscriptions/buy-vs-subscriptions
   items: 
-  - name:" Visual Studio Subscriptions"
+  - name: "Visual Studio Subscriptions"
     tocHref: /team-services/marketplace/vs-subscriptions/
     topicHref: /team-services/marketplace/vs-subscriptions/buy-vs-subscriptions
 
