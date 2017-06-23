@@ -17,7 +17,7 @@
 
 
 
-# [Marketplace & Billing](~/marketplace/TOC.md)
+# [Marketplace & Billing](/marketplace/TOC.md)
 
 # [Agile tools/Work](/docs/work/overview.md)
 # [Dashboard & Reports](/docs/report/overview.md)
