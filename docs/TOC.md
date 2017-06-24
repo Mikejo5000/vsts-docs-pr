@@ -1,4 +1,4 @@
-# [DevOps documentation](index.md)
+﻿# [DevOps documentation](index.md)
 # Overview  
 ## [About Team Services & TFS](about-vsts-tfs.md)
 ## [Key concepts](concepts.md)
@@ -6,13 +6,13 @@
 ## [Clients and tools](tools.md)
 
 # Quickstarts
-## [Set up/sign up with Team Services](/docs/setup-admin/team-services/sign-up-for-visual-studio-team-services)
+## [Set up/sign up with Team Services](/team-services/setup-admin/team-services/sign-up-for-visual-studio-team-services)
 ## [Connect to a team project](connect/connect-team-projects.md)  
-## [Get started coding with Git](/docs/git/gitquickstart)
-## [Get started coding with TFVC](/docs/tfvc/share-your-code-in-tfvc-vs)
-## [Get started tracking work](/docs/work/overview)
-## [Get started with CI/CD](/docs/build/get-started/ci-cd-part-1)
-## [Get started testing](/docs/test/index)  
+## [Get started coding with Git](/team-services/git/gitquickstart)
+## [Get started coding with TFVC](/team-services/tfvc/share-your-code-in-tfvc-vs)
+## [Get started tracking work](/team-services/work/overview)
+## [Get started with CI/CD](/team-services/build/get-started/ci-cd-part-1)
+## [Get started testing](/team-services/test/index)  
 ## [Get started as a Stakeholder](quickstart/get-started-stakeholder.md)
 ## [Go mobile](collaborate/mobile-work.md)
 
@@ -20,17 +20,17 @@
 
 # Tutorials
 ## Manage users and access 
-### [Add users (Team Services, Consolidate)](/docs/setup-admin/team-services/add-account-users-assign-access-levels-team-services) 
-### [Add users to team projects](/docs/setup-admin/add-users)
-### [Add administrators](/docs/setup-admin/add-administrator-tfs)
-### [Change permission levels](/docs/setup-admin/tfs/admin/change-permission-levels)
-### [Change access levels](/docs/work/connect/change-access-levels)
+### [Add users (Team Services, Consolidate)](/team-services/setup-admin/team-services/add-account-users-assign-access-levels-team-services) 
+### [Add users to team projects](/team-services/setup-admin/add-users)
+### [Add administrators](/team-services/setup-admin/add-administrator-tfs)
+### [Change permission levels](/team-services/setup-admin/tfs/admin/change-permission-levels)
+### [Change access levels](/team-services/work/connect/change-access-levels)
 
 ## Install TFS (Single Server)
-### [Get started](/docs/setup-admin/tfs/install/get-started)
-### [Single server](/docs/setup-admin/tfs/install/single-server)
+### [Get started](/team-services/setup-admin/tfs/install/get-started)
+### [Single server](/team-services/setup-admin/tfs/install/single-server)
 
-## [Share your project vision](/docs/collaborate/project-vision-status)
+## [Share your project vision](/team-services/collaborate/project-vision-status)
 
 ## Get familiar with the web portal 
 ### [Work in the web portal](connect/work-web-portal.md)
@@ -46,9 +46,9 @@
 
 ## Share information
 ### [Share your project vision](collaborate/project-vision-status.md)   
-### [Create a readme for your repo](/docs/git/create-a-readme)
-### [Share work plans](/docs/work/track/share-plans)
-### [Team dashboards](/docs/report/dashboards)
+### [Create a readme for your repo](/team-services/git/create-a-readme)
+### [Share work plans](/team-services/work/track/share-plans)
+### [Team dashboards](/team-services/report/dashboards)
 ### Add and edit a wiki (NEW TOPIC)
 
 ## Manage notifications (alerts) 
@@ -64,12 +64,12 @@
 ## [Collaborate in a team room](collaborate/collaborate-in-a-team-room.md)  
 
 
-## [Use Azure Active Directory](/docs/setup-admin/team-services/manage-organization-access-for-your-account-vs) 
+## [Use Azure Active Directory](/team-services/setup-admin/team-services/manage-organization-access-for-your-account-vs) 
 
 
 
 
-## [Authenticate with personal access tokens](/docs/setup-admin/team-services/use-personal-access-tokens-to-authenticate)
+## [Authenticate with personal access tokens](/team-services/setup-admin/team-services/use-personal-access-tokens-to-authenticate)
 
 
 # Concepts
@@ -82,8 +82,8 @@
 ## [Migrate from TFS to Team Services](migrate-to-vsts-from-tfs.md)
 
 # How-to guides
-## [Switch project or team focus](/docs/work/how-to/switch-team-context-work)  
-## [Add and manage teams](/docs/work/scale/multiple-teams) 
+## [Switch project or team focus](/team-services/work/how-to/switch-team-context-work)  
+## [Add and manage teams](/team-services/work/scale/multiple-teams) 
 
 
 # Reference
@@ -96,12 +96,12 @@
 ## Resolve connection issues (NEW TOPIC)
 
 # Resources
-## [Team Services, Account Management](/docs/setup-admin/team-services/overview)
-## [TFS, Administration](/docs/setup-admin/get-started)
+## [Team Services, Account Management](/team-services/setup-admin/team-services/overview)
+## [TFS, Administration](/team-services/setup-admin/get-started)
 ## [Collaborate with Microsoft Teams](https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-teams)
-## [Marketplace & Billing](/docs/marketplace/overview)
-### [Visual Studio Subscriptions](/docs/marketplace/vs-subscriptions/buy-vs-subscriptions)
-### [Try extensions for free](/docs/setup-admin/team-services/try-additional-features-vs)
-### [Get more features for Team Services](/docs/marketplace/get-vsts-extensions)
+## [Marketplace & Billing](/team-services/marketplace/overview)
+### [Visual Studio Subscriptions](/team-services/marketplace/vs-subscriptions/buy-vs-subscriptions)
+### [Try extensions for free](/team-services/setup-admin/team-services/try-additional-features-vs)
+### [Get more features for Team Services](/team-services/marketplace/get-vsts-extensions)
 ### [Pricing: Team Services](https://www.visualstudio.com/team-services/pricing/)
 ### [Pricing: TFS](https://www.visualstudio.com/team-services/tfs-pricing/)

@@ -11,7 +11,7 @@
 ## [Change permission levels](admin/change-permission-levels.md)
 ## [Restrict access to resources](../restrict-access-tfs.md)
 ## [Buy access to TFS or Test hub](../buy-access-tfs-test-hub.md)
-## [Change access levels](/docs/work/connect/change-access-levels)
+## [Change access levels](/team-services/work/connect/change-access-levels)
 ## [Create a team project](../create-team-project.md)
 ## [Set up email alerts and feedback requests](admin/setup-customize-alerts.md)
 
@@ -38,7 +38,7 @@
 ### [Install on different server](install/sharepoint/setup-remote-sharepoint.md)
 ### [Verify SharePoint](install/sharepoint/verify-sharepoint.md)
 ### [Move SharePoint to new hardware](install/sharepoint/move-sharepoint-new-hardware.md)
-### [Share information using the project portal](/docs/report/sharepoint-dashboards/share-information-using-the-project-portal)
+### [Share information using the project portal](/team-services/report/sharepoint-dashboards/share-information-using-the-project-portal)
 ## [Add SharePoint products to TFS](admin/add-sharepoint-to-tfs.md)
 ## [Modify or remove access between sharePoint web app and TFS](admin/modify-remove-access-shareport-tfs.md)
 ## [Configure SharePoint Server 2010 or 2007 for Dashboards](admin/config-ent-sharepoint0710-dashboards.md)
@@ -63,7 +63,7 @@
 ### [Reporting services roles](install/sql-server/reporting-services-roles.md)
 ### [Use always-on availability groups](install/sql-server/use-always-on-groups.md)
 ### [Use always-on availability groups](install/sql-server/use-always-on-groups.md)
-### [SQL Server Reporting Services reports](/docs/report/sql-server/reporting-services-reports)
+### [SQL Server Reporting Services reports](/team-services/report/sql-server/reporting-services-reports)
 
 ## Upgrade TFS
 ### [Get started](upgrade/get-started.md)
@@ -134,7 +134,7 @@
 ## [Rename team project](../rename-team-project.md)
 ## [Delete team project](../delete-team-project.md)
 ## [Clean up data](../clean-up-data.md) 
-## [Connect to team projects](/docs/connect/connect-team-projects)
+## [Connect to team projects](/team-services/connect/connect-team-projects)
 
 # Reference 
 ## [Requirements for TFS](../requirements.md)
@@ -152,8 +152,8 @@
 ## [TFSDeleteProject](command-line/tfsdeleteproject-cmd.md)
 ## [TFSSecurity](command-line/tfssecurity-cmd.md)
 ## [TFSServiceControl](command-line/tfsservicecontrol-cmd.md)
-## [witadmin](/docs/work/reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work)
-## [tcm](/docs/work/reference/witadmin/tcm-customize-manage-test-experience)
+## [witadmin](/team-services/work/reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work)
+## [tcm](/team-services/work/reference/witadmin/tcm-customize-manage-test-experience)
 
 
 # Troubleshooting
@@ -161,10 +161,10 @@
 
 # Resources
 ## [Migrate from TFS to Team Services](https://www.visualstudio.com/articles/migration-overview)
-## [Integrate with other services](/docs/marketplace/integrate/service-hooks/get-started)
+## [Integrate with other services](/team-services/marketplace/integrate/service-hooks/get-started)
 ## [Technical articles](http://visualstudio.com/articles/overview)
-## [Extensibility overview](/docs/integrate/overview)
-## [REST API Reference](/docs/integrate/api/overview)
+## [Extensibility overview](/team-services/integrate/overview)
+## [REST API Reference](/team-services/integrate/api/overview)
 ## [Extend Visual Studio devops](architecture/extend-vs-for-alm.md)
 ## [API Reference for Testing Tools](https://msdn.microsoft.com/library/dd465178.aspx)
  

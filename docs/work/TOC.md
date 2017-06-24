@@ -12,7 +12,7 @@
 ## [Schedule sprints](scrum/define-sprints.md)
 ## [Plan a sprint](scrum/sprint-planning.md)
 ## [Work item search](../search/workitem/get-started.md)  
-## [Get started as a Stakeholder](/docs/quickstart/get-started-stakeholder)
+## [Get started as a Stakeholder](/team-services/quickstart/get-started-stakeholder)
 
 # Tutorials 
 ## [Drive Git development](backlogs/connect-work-items-to-git-dev-ops.md)   
@@ -63,13 +63,13 @@
 ### Manage queries (NEW TOPIC) 
 ### Browse and organize queries (NEW TOPIC) 
 ### Triage work items (NEW TOPIC)   
-### [Add a query chart](/docs/report/charts)  
-### [Copy as HTML](/docs/work/backlogs/copy-clone-work-items#html) 
+### [Add a query chart](/team-services/report/charts)  
+### [Copy as HTML](/team-services/work/backlogs/copy-clone-work-items#html) 
 ### [Set query permissions](track/set-query-permissions.md)
 
 ## Track work
 ### [Add tags to work items](track/add-tags-to-work-items.md)
-### [Follow work](/docs/collaborate/follow-work-items.md) 
+### [Follow work](/team-services/collaborate/follow-work-items.md) 
 ### [Link work items](track/link-work-items-support-traceability.md)
 ### Set personal favorites (TBW, Kathryn)  
 ### [Set personal notifications](../collaborate/manage-personal-notifications.md)
@@ -182,15 +182,15 @@
 
 
 ## Configure your project 
-### [Define area paths](/docs/work/customize/set-area-paths) 
-### [Define iteration paths](/docs/work/customize/set-iteration-paths-sprints) 
+### [Define area paths](/team-services/work/customize/set-area-paths) 
+### [Define iteration paths](/team-services/work/customize/set-iteration-paths-sprints) 
 
 ## Administrate
 ### [Manage permissions and access](how-to/set-permissions-access-work-tracking.md) 
 ### [Change access levels](connect/change-access-levels.md)
 ### [Manage new form rollout](customize/manage-new-form-rollout.md)
-### [Customize work tracking](/docs/work/customize/customize-work) 
-### [TFS-Project Server integration](/docs/work/office/sync-ps-tfs) 
+### [Customize work tracking](/team-services/work/customize/customize-work) 
+### [TFS-Project Server integration](/team-services/work/office/sync-ps-tfs) 
 
 # Reference
 ## [Query fields, operators and macros](track/query-operators-variables.md)
@@ -224,8 +224,8 @@
 ### [Resolve invalid links in an Excel tree list](office/resolve-excel-invalid-links-tree-list.md)
 
 # Resources
-## [Clients that support work tracking](/docs/tools)
-## [Productivity tips](/docs/work/productivity/productivity-tips)
+## [Clients that support work tracking](/team-services/tools)
+## [Productivity tips](/team-services/work/productivity/productivity-tips)
 ## [What is Agile?](https://www.visualstudio.com/learn/what-is-agile/)
 ## [What is Scrum?](https://www.visualstudio.com/learn/what-is-scrum/)
 ## [What is Agile development?](https://www.visualstudio.com/learn/what-is-agile-development/)

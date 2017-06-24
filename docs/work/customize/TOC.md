@@ -65,7 +65,7 @@
 
 
 # Concepts
-## [Default processes](/docs/work/guidance/choose-process)   
+## [Default processes](/team-services/work/guidance/choose-process)   
 
 # Reference
 ## [Field data type and reportable attributes](../reference/define-modify-work-item-fields.md) 
@@ -158,8 +158,8 @@
 ## [Support rollup (TFS)](../reference/support-rollup-of-work-and-other-fields.md)
 
 # Resources
-## [Configure features after an upgrade](/docs/work/customize/configure-features-after-upgrade) 
-## [Marketplace extensions](/docs/marketplace/get-vsts-extensions)  
-## [Extensibility and REST APIs](/docs/integrate/extensions/overview)
+## [Configure features after an upgrade](/team-services/work/customize/configure-features-after-upgrade) 
+## [Marketplace extensions](/team-services/marketplace/get-vsts-extensions)  
+## [Extensibility and REST APIs](/team-services/integrate/extensions/overview)
 
  

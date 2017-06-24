@@ -8,7 +8,7 @@
 ## [Add and manage dashboards](dashboards.md) 
 ## [Add charts and widgets to a dashboard](add-widget-to-dashboard.md)
 ## [Configure work item query-based charts](charts.md)
-## [Configure test status, progress, and result charts](/docs/test/manual-exploratory-testing/getting-started/track-test-status) 
+## [Configure test status, progress, and result charts](/team-services/test/manual-exploratory-testing/getting-started/track-test-status) 
 
 
 # Tutorials
