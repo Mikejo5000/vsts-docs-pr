@@ -1,6 +1,7 @@
 # [Agile Tools Documentation](index.md)
 # Overview  
 ## [About Agile tools](overview.md) 
+## [About teams and team settings](about-teams-and-settings.md) 
 ## [Backlogs, boards, and plans](backlogs-boards-plans.md)
 ## [Processes, process templates, and Agile methods](guidance/choose-process.md)    
 ## [About permissions and access](permissions-access-work-tracking.md)  
