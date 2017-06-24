@@ -1,4 +1,4 @@
-﻿- name: "Team Services & TFS" 
+- name: "Team Services & TFS" 
   tocHref: /team-services/
   topicHref: /team-services/concepts
   items: 
@@ -9,15 +9,15 @@
     tocHref: /team-services/work/
     topicHref: /team-services/work/index
     items: 
-     - name: "Agile tools/Work"
-        tocHref: /team-services/work/
-        topicHref: /team-services/work/index
-     - name: "Customize work tracking"
-        tocHref: /team-services/work/customize/
-        topicHref: /team-services/work/customize/index
-      - name: "TFS-Project Server integration"
-        tocHref: /team-services/work/tfs-ps-sync/
-        topicHref: /team-services/work/office/sync-ps-tfs
+    - name: "Agile tools/Work"
+      tocHref: /team-services/work/
+      topicHref: /team-services/work/index
+    - name: "Customize work tracking"
+      tocHref: /team-services/work/customize/
+      topicHref: /team-services/work/customize/index
+    - name: "TFS-Project Server integration"
+      tocHref: /team-services/work/tfs-ps-sync/
+      topicHref: /team-services/work/office/sync-ps-tfs
   - name: "DevOps"
     tocHref: /team-services/build/
     topicHref: /team-services/build/overview
@@ -30,9 +30,12 @@
   - name: "Git"
     tocHref: /team-services/git/
     topicHref: /team-services/git/overview
-  - name: "Package Management"
+  - name: "Package"
     tocHref: /team-services/package/
     topicHref: /team-services/package/overview
+  - name: "Search"
+    tocHref: /team-services/search/
+    topicHref: /team-services/search/overview 
   - name: "Test"
     tocHref: /team-services/test/
     topicHref: /team-services/test/index
