@@ -176,6 +176,13 @@ Some browser versions do not currently support all the features of the Test &amp
 For more details, see 
 [Visual Studio Marketplace](https://marketplace.visualstudio.com/items/ms.vss-exploratorytesting-web).
 
+<a name="recording-playback"><a/>
+#### Q: How do I play the video recordings I created with the extension?
+
+The video recordings created by the Test &amp; Feedback extension can be
+viewed in [Google Chrome](https://www.google.com/chrome/) browser and in the
+[VLC Video Player](http://www.videolan.org/vlc/download-windows.html).
+
 #### Q: Does the extension support Team Foundation Server?
 
 A: The Test &amp; Feedback extension supports Team Foundation Server 2015 and later. 

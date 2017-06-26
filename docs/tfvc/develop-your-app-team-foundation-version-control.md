@@ -17,15 +17,15 @@ When your codebase is under version control, you can develop your app—create a
 
 Having access to the history of a project has additional benefits, such as being able to find (and undo, when necessary) changes you made during a specific time period. You can also see exactly what changes your team mates have made, and how your changes relate to the latest changes on the server.
 
-## Walk through an Agile Developer devops "Day in the Life"
+## Walk through an Agile Developer "Day in the Life"
 
-Are you a new user of Visual Studio devops and Team Foundation Server (TFS)? Are you wondering how you and your team can get maximum benefit from the most recent version of these tools to build your app?
+Are you a new user of Visual Studio and Team Foundation Server (TFS)? Are you wondering how you and your team can get maximum benefit from the most recent version of these tools to build your app?
 
 If so, we suggest you take a few minutes to walk step-by-step through a day in the life of Peter and Julia, two developers at Fabrikam Fiber—a fictitious company that provides cable television and related services. Their team recently began [adopting Visual Studio and Team Foundation Server](https://msdn.microsoft.com/library/dd286491). You’ll see examples of how you can use Visual Studio Premium and TFS to check out and update code, suspend work when you’re interrupted, request a code review, check in your changes, and perform other tasks.
 
--    [Day in the life of an devops Developer: Write new code for a user story](day-life-alm-developer-write-new-code-user-story.md) 
+-    [Day in the life of a developer: Write new code for a user story](day-life-alm-developer-write-new-code-user-story.md) 
 
--    [Day in the life of an devops Developer: Suspend work, fix a bug, and conduct a code review](day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md) 
+-    [Day in the life of a developer: Suspend work, fix a bug, and conduct a code review](day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md) 
 
 ## What do you want to do?
 

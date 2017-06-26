@@ -212,7 +212,7 @@ For Team Services pricing, see [Visual Studio Team Services Pricing](https://www
 
 For on-premises TFS, go [here for a comparison chart of access levels](change-access-levels.md).  
 
-[!INCLUDE [temp](../_shared/switch-team-context-work.md)]  
+[!INCLUDE [temp](../how-to/switch-team-context-work.md)]  
 
 To view or create work items for another team project or team, switch to that project. 
 

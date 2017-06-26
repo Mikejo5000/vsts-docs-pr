@@ -27,6 +27,10 @@ For example, the following image shows the work item form layout for the Bug WIT
 
 You can customize the elements listed below. Some options of inherited elements are locked and can't be customized. To perform any of these actions, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to edit a specific process](manage-process.md#process-permissions).  
 
+>[!NOTE]  
+>For a list of limits placed on the number of fields, work item types, backlog levels, and other objects you can customize, see [Work tracking object limits](../customize/object-limits.md). 
+
+
 ### Fields
 
 Choose your inherited process, the work item type and then add and edit fields from the **Layout** page. Customizations are subject to the guidelines and limitations outlined under [What is a field?](customize-process-field.md#field-reference).
@@ -254,7 +258,9 @@ Keep in mind that all team projects that reference the inherited process that yo
 
 To customize a single team project, always start by [creating an inherited process and changing the team project to use that process](manage-process.md). Then, all the customizations that you make to the inherited process automatically appear for the team project you migrated.  
 
-For additional customization options, see [Customize the work tracking experience](../customize/customize-work.md). 
+See also: 
+- [Work tracking object limits](../customize/object-limits.md)
+- [Customize the work tracking experience](../customize/customize-work.md) 
 
 <a id="process-rest-api">  </a>
 ### Programmatically query for processes 

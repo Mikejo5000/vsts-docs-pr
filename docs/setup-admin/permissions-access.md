@@ -7,36 +7,50 @@ ms.assetid: B656A277-BA3D-472D-824D-CDD4E067053E
 toc: show
 ms.manager: douge
 ms.author: kaelli
-ms.date: 01/11/2017
+ms.date: 06/02/2017
 ---
 
 # Permissions and access for Team Services and TFS 
 
 <b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b>  
 
-To connect and use the functions and features that Team Services or TFS provides, users must be added to a group with the appropriate permissions. The most common groups include Readers, Contributors, and Project Administrators, all of whom belong to Basic (paid) access. These groups are assigned the default permissions as listed below.  In addition, a Stakeholder access role is available to support free access to a limited set of features by an unlimited set of stakeholders. 
+To connect and use the functions and features that Team Services or TFS provides, users must be added to a group with the appropriate permissions. The most common built-in groups include Readers, Contributors, and Project Administrators. These groups are assigned the default permissions as listed below. 
+
+In addition to permissions, access to select features are controlled by the access level assigned to a user. Contributors and administrators should be added to Basic (paid) access. Stakeholder access is available to support free access to a limited set of features by an unlimited set of stakeholders. 
 
 For a complete reference of all built-in groups and permissions, see [Permissions and groups](permissions.md). For information about assigning access levels and supporting stakeholder access, see [Manage users and access](team-services/add-account-users-assign-access-levels-team-services.md) for Team Services, and [Change access levels](../work/connect/change-access-levels.md) for TFS. 
 
 
 ## Code  
 
-For an overview of code features and functions, see [Git](../git/overview.md) and [Use Team Foundation Version Control](../tfvc/overview.md).
+You can connect to your code from the Code hub or the web portal, and using Xcode, Eclipse, IntelliJ, Android Studio, Visual Studio, Visual Studio Code. For an overview of code features and functions, see [Git](../git/overview.md) and [Use Team Foundation Version Control](../tfvc/overview.md). Stakeholders have no access to the Code hub or its features.
+
+From the team project admin content for Version Control, you can set permissions on a repository. From the **Code>Branches** page, you can set permissions for a specific branch and set branch policies. 
+
 
 <table>
 
 
 <tr valign="bottom">
 <th width="310px">Task</th>
-<th>Stakeholders</th>
 <th>Readers</th>
 <th>Contributors</th>
+<th width="16%">Build Admins</th>
 <th width="16%">Account Owner/<br/>Project Admins</th>
 </tr>
 
 <tbody valign="top" align="center">
 <tr>
-<td align="left">Clone, fetch, pull, and explore the contents of a  repository
+<td align="left">(Git) Clone, fetch, pull, and explore the contents of a  repository
+</td>
+<td>![checkmark](_img/checkmark.png)</td>
+<td>![checkmark](_img/checkmark.png)</td>
+<td>![checkmark](_img/checkmark.png)</td>
+<td>![checkmark](_img/checkmark.png)</td>
+</tr>
+
+<tr>
+<td align="left">(Git) Unlimited private Git repositories
 </td>
 <td>  </td>
 <td>![checkmark](_img/checkmark.png)</td>
@@ -45,79 +59,86 @@ For an overview of code features and functions, see [Git](../git/overview.md) an
 </tr>
 
 <tr>
-<td align="left">Unlimited private Git repositories
+<td align="left">(Git) Create branches and tags, manage notes
 </td>
 <td>  </td>
-<td>  </td>
 <td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-</tr>
-
-<tr>
-<td align="left">Create branches and tags
-</td>
-<td>  </td>
-<td>  </td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-</tr>
-
-<tr>
-<td align="left">Connect to your code using Xcode, Eclipse, IntelliJ, Android Studio, Visual Studio, Visual Studio Code, and more
-</td>
-<td>  </td>
-<td>  </td>
 <td>![checkmark](_img/checkmark.png)</td>
 <td>![checkmark](_img/checkmark.png)</td>
 </tr>
 
 
-
 <tr>
-<td align="left">Centralized version control with TFVC, including Code Review
-
+<td align="left">(Git) Create, delete, and rename repositories 
 </td>
 <td>  </td>
+<td>  </td>
+<td>  </td>
+<td>![checkmark](_img/checkmark.png)</td>
+</tr>
+
+<tr>
+<td align="left">(Git) Manage permissions, manage branches and branch policies 
+</td>
+<td>  </td>
+<td>  </td>
+<td>  </td>
+<td>![checkmark](_img/checkmark.png)</td>
+</tr>
+
+
+<tr>
+<td align="left">(TFVC) Contribute to a centralized version control, including Code Review (Check in, label, lock, merge, pend a change)
+
+</td>
 <td>Read only</td>
 <td>![checkmark](_img/checkmark.png)</td>
 <td>![checkmark](_img/checkmark.png)</td>
-</tr>
-
-<tr>
-<td align="left">Powerful semantic code search
-</td>
-<td>  </td>
-<td>  </td>
-<td>![checkmark](_img/checkmark.png)</td>
 <td>![checkmark](_img/checkmark.png)</td>
 </tr>
 
-<tr>
-<td align="left">Create branches and tags
-</td>
-<td>  </td>
-<td>  </td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-</tr>
 
 <tr>
-<td align="left">Manage, rename, and delete the repositories
+<td align="left">(TFVC) Check in, revise, undo, unlock  other users' changes
 </td>
 <td>  </td>
 <td>  </td>
 <td>  </td>
+<td>![checkmark](_img/checkmark.png)</td>
+</tr>
+
+<tr>
+<td align="left">(TFVC) Manage branches, manage permissions 
+</td>
+<td>  </td>
+<td>  </td>
+<td>  </td>
+<td>![checkmark](_img/checkmark.png)</td>
+</tr>
+
+
+<tr>
+<td align="left">(Git and TFVC) Powerful semantic code search
+</td>
+<td>  </td>
+<td>![checkmark](_img/checkmark.png)</td>
+<td>![checkmark](_img/checkmark.png)</td>
 <td>![checkmark](_img/checkmark.png)</td>
 </tr>
 
 </tbody>
 </table>
 
-## Work item tracking
+## Work tracking
 
-The team administrator role supports configuration of team settings. To be added as a team administrator, go [here](../work/scale/manage-team-assets.md#add-team-admin). To learn more about stakeholder access, see [Work as a stakeholder](../work/connect/work-as-a-stakeholder.md).  
+You can connect to work items from the Work hub of the web portal and using Eclipse, Visual Studio, Excel, Project, and other clients. For an overview of work tracking features and functions, see [About Agile tools](../work/overview.md). Stakeholders have limited access to select work tracking functions as described in [Work as a stakeholder](../quickstart/get-started-stakeholder.md).  
 
-For an overview of work tracking features and functions, see [Agile tools](../work/overview.md).
+In addition to the permissions set at the project level via the built-in groups, you can set permissions for the following objects: [area and iteration paths](../work/how-to/set-permissions-access-work-tracking.md#set-permissions-area-path), [queries and query folders](../work/track/set-query-permissions.md), and [delivery plans](../work/scale/review-team-plans.md#plan-permissions).  
+
+The team administrator role supports configuration of team settings. To be added as a team administrator, see [Configure team settings and add team administrators](../work/scale/add-team-administrator.md). 
+
+>[!NOTE]  
+>There are no UI permissions associated with [managing tags](../work/track/add-tags-to-work-items.md). Instead, you can manage them using the [TFSSecurity command line tool](tfs/command-line/tfssecurity-cmd.md#collection-level-permissions).   
 
 <table>
 <tr valign="bottom">
@@ -266,6 +287,11 @@ For an overview of work tracking features and functions, see [Agile tools](../wo
 
 ## Notifications, alerts, and team collaboration tools 
 
+To manage notifications, see [Manage personal notifications](../collaborate/manage-personal-notifications.md) and [Manage team notifications](../collaborate/manage-team-notifications.md).
+
+>[!NOTE]  
+>There are no UI permissions associated with managing notifications. Instead, you can manage them using the [TFSSecurity command line tool](tfs/command-line/tfssecurity-cmd.md#collection-level-permissions).
+
 <table>
 <tr valign="bottom">
 <th width="310px">Task</th>
@@ -311,7 +337,11 @@ For an overview of work tracking features and functions, see [Agile tools](../wo
 
 ## Build and release
 
-For an overview of build and release management features and functions, see [Continuous integration on any platform](../build/overview.md).
+
+You can define and manage your builds and releases from the web portal, Build & Release hub. For an overview of build and release management features and functions, see [Continuous integration on any platform](../build/overview.md).
+
+From the **Build & Release>Builds** and **Releases** pages, you can set permissions for all or each build definition or release definition, respectively. 
+
 
 <table>
 <tr valign="bottom">
@@ -319,14 +349,16 @@ For an overview of build and release management features and functions, see [Con
 <th>Stakeholders</th>
 <th>Readers</th>
 <th>Contributors</th>
+<th>Build<br/>Admins</th>
 <th width="16%">Account Owner/<br/>Project Admins</th>
 <th>Release Admins</th>
 </tr>
 <tbody valign="top" align="center">
 <tr>
-<td align="left">View builds, releases, and build and release definitions 
+<td align="left">View build and release definitions 
 </td>
 <td>  </td>
+<td>![checkmark](_img/checkmark.png)</td>
 <td>![checkmark](_img/checkmark.png)</td>
 <td>![checkmark](_img/checkmark.png)</td>
 <td>![checkmark](_img/checkmark.png)</td>
@@ -341,6 +373,7 @@ For an overview of build and release management features and functions, see [Con
 <td>![checkmark](_img/checkmark.png)</td>
 <td>![checkmark](_img/checkmark.png)</td>
 <td>![checkmark](_img/checkmark.png)</td>
+<td>  </td>
 </tr>
 
 <tr>
@@ -349,6 +382,7 @@ For an overview of build and release management features and functions, see [Con
 <td>  </td>
 <td>  </td>
 <td>![checkmark](_img/checkmark.png)</td>
+<td> </td>
 <td>![checkmark](_img/checkmark.png)</td>
 <td>![checkmark](_img/checkmark.png)</td>
 </tr>
@@ -359,6 +393,7 @@ For an overview of build and release management features and functions, see [Con
 <td>![checkmark](_img/checkmark.png)</td>
 <td>  </td>
 <td>![checkmark](_img/checkmark.png)</td>
+<td>  </td>
 <td>![checkmark](_img/checkmark.png)</td>
 <td>![checkmark](_img/checkmark.png)</td>
 </tr>
@@ -369,6 +404,7 @@ For an overview of build and release management features and functions, see [Con
 <td>  </td>
 <td>  </td>
 <td>![checkmark](_img/checkmark.png)</td>
+<td>  </td>
 <td>![checkmark](_img/checkmark.png)</td>
 <td>![checkmark](_img/checkmark.png)</td>
 </tr>
@@ -383,6 +419,7 @@ For an overview of build and release management features and functions, see [Con
 <td>![checkmark](_img/checkmark.png)</td>
 <td>![checkmark](_img/checkmark.png)</td>
 <td>![checkmark](_img/checkmark.png)</td>
+<td>  </td>
 </tr>
 
 <tr>
@@ -393,6 +430,7 @@ For an overview of build and release management features and functions, see [Con
 <td>  </td>
 <td>![checkmark](_img/checkmark.png)</td>
 <td>![checkmark](_img/checkmark.png)</td>
+<td>  </td>
 </tr>
 
 <tr>
@@ -403,11 +441,25 @@ For an overview of build and release management features and functions, see [Con
 <td>![checkmark](_img/checkmark.png)</td>
 <td>![checkmark](_img/checkmark.png)</td>
 <td>![checkmark](_img/checkmark.png)</td>
+<td>  </td>
+</tr>
+
+
+<tr>
+<td align="left">Administer build permissions
+</td>
+<td>  </td>
+<td>  </td>
+<td>  </td>
+<td>![checkmark](_img/checkmark.png)</td>
+<td>![checkmark](_img/checkmark.png)</td>
+<td>  </td>
 </tr>
 
 <tr>
 <td align="left">Manage release permissions
 </td>
+<td>  </td>
 <td>  </td>
 <td>  </td>
 <td>  </td>
@@ -418,9 +470,13 @@ For an overview of build and release management features and functions, see [Con
 </tbody>
 </table>
 
-##Test
 
-For an overview of test features and functions, see [Test apps early and often](../test/index.md).
+
+## Test
+
+You can define and manage your builds and releases from the web portal, Test hub.  For an overview of test features and functions, see [Test apps early and often](../test/index.md).  
+
+You set test permissions at the team project level from the admin context Security page.  
 
 <table>
 <tr valign="bottom">
@@ -428,7 +484,7 @@ For an overview of test features and functions, see [Test apps early and often](
 <th>Stakeholders</th>
 <th>Readers</th>
 <th>Contributors</th>
-<th width="16%">Account Owner/<br/>Project Admins</th>
+<th width="20%">Account Owner/<br/>Project Admins</th>
 </tr>
 <tbody valign="top" align="center">
 <tr>
@@ -500,9 +556,11 @@ For an overview of test features and functions, see [Test apps early and often](
 </table>
 
 
-##Charts, dashboards, and other web portal features 
+## Charts, dashboards, and other web portal features 
 
-For an overview of dashboard and chart features, see [Dashboards and reports overview](../report/overview.md).
+You can define and manage dashboards from the web portal, Dashboard hub. For an overview of dashboard and chart features, see [Dashboards and reports overview](../report/overview.md). 
+
+You set [dashboard permissions at the team level](../report/dashboards.md#set-permissions) from the team dashboard page. 
 
 <table>
 <tr valign="bottom">
@@ -511,7 +569,7 @@ For an overview of dashboard and chart features, see [Dashboards and reports ove
 <th>Readers</th>
 <th>Contributors</th>
 <th>Team admins</th>
-<th width="16%">Account Owner/<br/>Project Admins</th>
+<th width="20%">Account Owner/<br/>Project Admins</th>
 </tr>
 <tbody valign="top" align="center">
 <tr>

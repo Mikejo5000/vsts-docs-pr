@@ -95,7 +95,7 @@ After you have converted a folder to a branch, you can convert it back to a fold
 
 ## Branch a branch
 
-After you have converted a folder to a branch, you can then create other branches from that branch. The following procedure shows how you can use the graphical user interface of Visual Studio devops to branch a branch. (For information about how to perform this task at the command prompt, see [Branch Command](branch-command.md).)
+After you have converted a folder to a branch, you can then create other branches from that branch. The following procedure shows how you can use the graphical user interface of Visual Studio to branch a branch. (For information about how to perform this task at the command prompt, see [Branch Command](branch-command.md).)
 
 **Required Permissions**  
 To perform this procedure, your **Manage branch** permission must be set to **Allow** for the paths to the source and target branches. Your **Merge** permission for the path of target branch must set to **Allow**. For more information, see [Permission reference for Team Foundation Server](../setup-admin/permissions.md).

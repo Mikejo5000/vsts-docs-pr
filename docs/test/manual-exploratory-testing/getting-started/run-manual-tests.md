@@ -27,6 +27,8 @@ Learn more about the
 [access](https://www.visualstudio.com/pricing/visual-studio-online-pricing-vs) 
 that you need for more advanced testing features.
 
+[Can I run tests offline and then import the results?](#runoffline)
+
 <a name="run-web"></a>
 ## Run tests for web apps
 
@@ -188,6 +190,11 @@ For more information, see [Collect diagnostic data](../collect-diagnostic-data.m
 #### Q:  How do I control how long I keep my test data?
 
 A:  [Learn more here](how-long-to-keep-test-results.md).
+
+<a name="runoffline"></a>
+#### Q: Can I run tests offline and then import the results?
+
+A: Yes, see the [Offline Test Execution extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.OfflineTestExecution).
 
 <!-- ENDSECTION --> 
 

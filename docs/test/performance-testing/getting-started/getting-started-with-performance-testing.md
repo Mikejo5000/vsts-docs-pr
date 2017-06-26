@@ -14,44 +14,16 @@ ms.date: 08/12/2016
 
 [!INCLUDE [version-header-vs-ts](../../_shared/version-header-vs-ts.md)]
 
-Visual Studio and Team Services provide a wide range of tools and
-capabilities for performance testing your websites and
-applications. You can scale your tests to hundreds 
-of thousands of concurrent users and generate load 
-from multiple regions worldwide. Perfomance testing
-helps you understand and fix performance issues 
-before they impact your business. 
-
-<a name="cloudloadtest"></a>
-## Load test your app in the cloud
-
 Check your app or web site's performance before you launch it or deploy updates to production.
 Find problems before your customers do. Start running 
 [cloud-based load tests](https://www.visualstudio.com/features/vso-cloud-load-testing-vs) 
 in almost no time with Visual Studio Team Services.
 
-**Why load test in the cloud?**
-
-* **Quick**: Just one click gets you a performance lab 
-  in the cloud, no setup needed. Scale up or down based 
-  on your needs.
-
-* **Free load testing**: Get 20,000 virtual user minutes 
-  every month to load test at no extra charge.
-
-* **Real-time charts and graphs**: Watch your app's 
-  performance while your tests run. Share the results 
-  when your tests are done.
-
-* **Test where your users are**: Test from different 
-  locations to reduce latency and simulate local conditions.
-
-* **Get deeper insights about performance**: Get full 
-  server and client diagnostics when you simulate real-life 
-  load patterns for your app.
-
 >If you prefer to run your tests in a local environment rather
-than in the cloud, see [Use a lab environment for your devops](../../lab-management/using-a-lab-environment-for-your-application-lifecycle.md).
+than in the cloud, see [Use a lab environment for your devops](https://docs.microsoft.com/visualstudio/test/lab-management/using-a-lab-environment-for-your-application-lifecycle).
+
+<a name="cloudloadtest"></a>
+## Load test your app in the cloud
 
 You can run cloud-based load tests using your Team Services
 portal, or directly from Visual Studio Enterprise 2015. 

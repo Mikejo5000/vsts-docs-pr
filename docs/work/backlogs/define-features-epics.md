@@ -7,7 +7,7 @@ ms.assetid: 9B517FEE-14FA-41FA-87CD-99D33168D01E
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article  
-ms.date: 05/10/2017
+ms.date: 06/19/2017
 --- 
 
 # Define features and epics  
@@ -155,7 +155,7 @@ Portfolio backlogs are not only a great way to organize your project plan, but a
 - [Select backlog navigation levels for your team](../customize/select-backlog-navigation-levels.md)   
 - [Customize your backlogs or boards for a process](../process/customize-process-backlogs-boards.md)  
 - [Add portfolio backlogs](../customize/add-portfolio-backlogs.md)  
-
+- [Filter backlogs and boards](../how-to/filter-backlog-or-board.md)  
 
 > [!NOTE]
 > To understand the features supported on each backlog and board, and how each display hierarchical items, see [Backlogs, boards, and plans](../backlogs-boards-plans.md). To learn how to track progress across teams, see [Visibility across teams](../scale/visibility-across-teams.md).    
@@ -180,7 +180,7 @@ A few things to keep in mind...
 | Mapping: On/Off     | [Turn mapping Off/On](#mapping)    |
 | Parents: Show/Hide         | Turn tree hierarchy on/off     |
 | In progress items: Show/Hide    |Show or hide list of backlog items whose State is active or in progress       |
-| ![Settings icon](../_img/icons/team-settings-gear-icon.png)  | Configure team settings: [Backlogs](../customize/select-backlog-navigation-levels.md), [Working days](../scale/capacity-planning.md#team_settings), [Working with bugs](../customize/show-bugs-on-backlog.md)   |
+| ![Settings icon](../_img/icons/team-settings-gear-icon.png)  | Configure team settings: [Backlogs](../customize/select-backlog-navigation-levels.md), [Working days](../customize/set-working-days.md), [Working with bugs](../customize/show-bugs-on-backlog.md)   |
 | ![full screen icon](../_img/icons/fullscreen_icon.png)/![exit full screen icon](../_img/icons/exitfullscreen_icon.png)   | Enter or exit full screen mode   |
 | ![expand icon](../_img/icons/expand_icon.png) / ![collapse icon](../_img/icons/collapse_icon.png)    | Expand or collapse one level of the tree hierarchy   |
 | ![mail icon](../_img/icons/mail_icon.png)  | Email a copy of your backlog |
@@ -189,8 +189,6 @@ A few things to keep in mind...
 
 Note that even if you have show parents turned on, the **Create query** and mail ![mail icon](../_img/icons/mail_icon.png) controls will only list items at the currently selected level. 
 
-See also [Keyboard shortcuts](../../reference/keyboard-shortcuts.md).  
-
-[!INCLUDE [temp](../_shared/filter-backlog-or-board.md)]
+See also [Keyboard shortcuts](../../reference/keyboard-shortcuts.md). 
 
 [!INCLUDE [temp](../_shared/assign-to-sprint.md)]

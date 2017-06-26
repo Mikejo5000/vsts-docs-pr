@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: 2407FB2B-FAE6-4BBB-99CB-B88904293A43  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 05/10/2017
+ms.date: 05/23/2017
 ---
 
 # Resolve validation errors for process import
@@ -15,8 +15,10 @@ ms.date: 05/10/2017
 
 >[!IMPORTANT]  
 >**Feature availability:**&#160;&#160;Import process supports the Hosted XML process model which allows you to manage customizations through updating the WIT definition of a process template. This feature is only available for accounts that have been migrated to Team Services using the [TFS Data Import Service](https://aka.ms/TFSDataImport). [Contact us](mailto:vsocustpt@microsoft.com) if you have any questions about Team Services process customization. 
-<br/><br/>If you use the Inheritance process model, you can customize your work tracking through the user interface by [creating an inherited process](../process/manage-process.md). 
-<br/><br/>If you use the On-premises XML process model, you can customize a process template, see [Upload or download a process template](../guidance/manage-process-templates.md) and [Customize a process template](../reference/process-templates/customize-process.md).<br/><br/> To learn more about process models, see [Customize work tracking](../customize/customize-work.md). 
+>
+>If you use the Inheritance process model, you can customize your work tracking through the user interface by [creating an inherited process](../process/manage-process.md). If you use the On-premises XML process model, you can customize a process template, see [Upload or download a process template](../guidance/manage-process-templates.md) and [Customize a process template](../reference/process-templates/customize-process.md).
+>
+>To learn more about process models, see [Customize work tracking](../customize/customize-work.md). 
  
 
 During process import, the process is validated to ensure the system will work as expected for the custom process. 
@@ -35,7 +37,7 @@ If you're just starting your customization, [review the validation rules provide
 ## Information messages - no action required
 
 <a id="TF402555"></a>
-### TF402555: Field *[RefNAME]* will be deleted.
+### TF402555: Field *[refName]* will be deleted.
 The process that you're importing doesn't include the named field in the process being updated, therefore it is removed as part of the update operation.  
 
 #### Scenario example
@@ -52,7 +54,7 @@ The system displays an information message about the field to be deleted.
   ``` TF402555: Field MyCompany.CustomFields.Foo will be deleted ``` 
 
 <a id="TF402591"></a>
-### TF402591: Field *[RefNAME]* will be renamed to '*[NAME1]*' from '*[NAME2]*' in existing processes *[processNAME]*.
+### TF402591: Field *[refName]* will be renamed to '*[name1]*' from '*[name2]*' in existing processes *[processName]*.
 The process that you're importing contains a renamed field that uses the same ```refname``` in the current process(es).  
 The named field will automatically be renamed in all processes where it's defined.
 
@@ -73,8 +75,8 @@ The system will display an information message about the field to be renamed.
   
 
 <a id="TF402598"></a>
-### TF402598: Work item type *[RefNAME]* will be deleted.
-The process that you're updating doesn't include the named WIT that exists in the current process. As part of updating the existing process, the system will delete the named WIT from the current process. .
+### TF402598: Work item type *[refName]* will be deleted.
+The process that you're updating doesn't include the named WIT that exists in the current process. A[name1s part of updating the existing process, the system will delete the named WIT from the current process. .
 
 #### Scenerio example
 1. [Create](../customize/customize-wit-form.md) new work item type called "LSI"  
@@ -89,7 +91,7 @@ The system displays an information message about the deletion.
   ``` TF402598: Work item type My.LSI will be deleted ``` 
 
 <a id="TF402601"></a>
-### TF402601: Work item type *[WITNAME]* will be renamed to *[NAME1]* from *[NAME2]*.
+### TF402601: Work item type *[witName]* will be renamed to *[name1]* from *[name2]*.
 The process contains a renamed WIT. The WIT will be renamed in the existing process.  
 The process that you're updating contains a WIT that's been renamed from the name in the current process.  
 As part of updating the existing process, the system will rename the WIT in the current process. All work items in existing team projects that reference the process are also renamed.
@@ -140,7 +142,7 @@ Extra attribute added to XML element:
 ```
 
 <a id="VS412450"></a>
-### VS412450: Xml schema validation error in  *[FileNAME]*. *[Error message]*
+### VS412450: Xml schema validation error in  *[fileName]*. *[Error message]*
 Correct the schema error in the named file. 
 
 <a id="process-templates"></a>
@@ -153,7 +155,7 @@ the specific tasks are defined. In general, you specify one task group for each 
 The ProcessTemplate.xml definition file must conform to the syntax and rules described in [ProcessTemplate XML element reference](../reference/process-templates/process-template-xml-elements-reference.md).   
 
 <a id="VS412457"></a>
-### VS412457: Specified file '*[fileNAME]*' could not be found in the process package.
+### VS412457: Specified file '*[fileName]*' could not be found in the process package.
 Correct the process zip package to include the named file.  
 
 <a id="VS402452"></a>
@@ -182,7 +184,7 @@ A different GUID is specified.
 
 
 <a id="VS412453"></a>
-### VS412453: Process template zip file doesn't contain required plugin *[plug-inNAME]*.
+### VS412453: Process template zip file doesn't contain required plugin *[pluginName]*.
 All files listed within the ProcessTemplate.xml file and its supported plug-in files must be present within the process zip file. 
 
 Use a search tool to find all instances of filename=value within the set of process files and folders. 
@@ -201,7 +203,7 @@ however it hasn't been added to the WorkItem Tracking\TypeDefinitions folder.
 Add the Epic.xml file to the WorkItem Tracking\TypeDefinitions folder.
 
 <a id="VS412454"></a>
-### VS412454: Plug-in *[Plug-inNAME]* contains several ```taskList``` {1}, {2}. Only one ```taskList``` per plugin is allowed.
+### VS412454: Plug-in *[pluginName]* contains several ```taskList``` {1}, {2}. Only one ```taskList``` per plugin is allowed.
 Correct the ProcessTemplate.xml file for the named plug-in to reduce the number of ```tasklist`````` elements defined. 
 
 #### Error example
@@ -310,12 +312,12 @@ The WorkItems.xml file has been updated to contain the correct configuration ```
 
 
 <a id="TF402577"></a>  
-### TF402577: Field *[REFNAME 1]* specifies friendly name *[FriendlyNAME]*  which is already in use by  fields *[REFNAME 2]* in processes *[ProcessNAMEs]*.  
+### TF402577: Field *[refName]* specifies friendly name *[friendlyName]*  which is already in use by  fields *[refName]* in processes *[processNames]*.  
 Friendly names must be unique across all field definitions for all WIT definitions specified for all processes imported to VSTS.
 
 The named processes contain WITs that define a field that uses the friendly name. 
 
-Modify the WIT definition in your process zip file that contains *[ReferenceNAME 1]* and specify a different friendly name or make it match an existing field in use.  
+Modify the WIT definition in your process zip file that contains *[refName]* and specify a different friendly name or make it match an existing field in use.  
 
 #### Error example
 The UserStory WIT definition contains ```FIELD``` element for Fabrikam.Product.Family with friendly name Product.
@@ -377,7 +379,7 @@ The ```Microsoft.ProjectCreationWizard.WorkItemTracking``` plug-in is missing fr
 The Categories.xml definition file must conform to the syntax and rules described in [Categories XML element reference](../reference/categories-xml-element-reference.md).     
 
 <a id="TF402546"></a>
-### TF402546: Category *[CategoryNAME]* is missing from the categories file.
+### TF402546: Category *[categoryName]* is missing from the categories file.
 All categories that are referenced in the ProcessConfiguration.xml file must be defined in the Categories.xml file. 
 In addition, the system requires that the Categories.xml file contain definitions for the following categories:
 *   Bug Category
@@ -394,7 +396,7 @@ In addition, the system requires that the Categories.xml file contain definition
 *   Test Plan Category 
 *   Test Suite Category 
 
-Update your Categories.xml file to define the missing *[NAME]* category. 
+Update your Categories.xml file to define the missing *[name]* category. 
 
 #### Error example
 ProcessConfiguration references the Epic Category, however it is missing from the Categories.xml definition file.
@@ -408,16 +410,16 @@ Epic Category is added to the Categories file.
 ```
 
 <a id="TF402553"></a>
-### TF402553: Element *[NAME]* references category *[CategoryNAME]* which isn't defined in the categories file.
-Update your Categories.xml file to define the missing *[CategoryNAME]* category. 
+### TF402553: Element *[name]* references category *[categoryName]* which isn't defined in the categories file.
+Update your Categories.xml file to define the missing *[categoryName]* category. 
 
 <a id="TF402560"></a>
-### TF402560: You've defined *[N]* categories. Only *[NN]* are allowed.
+### TF402560: You've defined *[n]* categories. Only *[nn]* are allowed.
 Review your Categories.xml file for all ```CATEGORY``` element statements and determine which ones you can delete so as not exceed the allowed limit. 
 Then, review your ProcessConfiguration.xml file to replace values that reference deleted categories.
 
 <a id="TF402596"></a>
-### TF402596: Category *[CategoryNAME]* doesn't define work Item type *[WITNAME]*.  
+### TF402596: Category *[categoryName]* doesn't define work Item type *[witName]*.  
 Categories must reference WITs that are defined in the /WorkItem Tracking/TypeDefinitions folder and listed as a task for upload in the WorkItems.xml plug-in file.  
 Review your Categories.xml file for references to a WIT that isn't included in the /WorkItem Tracking/TypeDefinitions folder. 
 
@@ -436,10 +438,10 @@ The name of the WIT referenced for Microsoft.EpicCategory is misspelled.
 ```
 
 <a id="TF402597"></a>
-### TF402597: Custom category *[CategoryNAME]* isn't supported because ProcessConfiguration doesn't reference it. 
+### TF402597: Custom category *[categoryName]* isn't supported because ProcessConfiguration doesn't reference it. 
 
 You can only specify custom categories that you use to configure an Agile tool feature in the ProcessConfiguration.  
-Review your ProcessConfiguration.xml file and determine if you've missed adding support for a category. Otherwise, remove *[CategoryNAME]* from the Categories.xml file.
+Review your ProcessConfiguration.xml file and determine if you've missed adding support for a category. Otherwise, remove *[categoryName]* from the Categories.xml file.
  
 #### Error example
 ProcessConfiguration doesn't reference Microsoft.EpicCategory, although it's defined in the Categories.xml definition file. 
@@ -523,7 +525,7 @@ The Classification folder path is misspelled.
 <a id="TF402513"></a>
 ### TF402513: Name *[pathName]* in the Classification plug-in doesn't conform to TreePath naming restrictions.
 Review the ```Node``` elements you've specified and change the names to conform to supporting naming conventions.
-Reference: [Add and modify area and iteration paths](../customize/modify-areas-iterations.md).
+Reference: [Add and modify area and iteration paths](../customize/set-area-paths.md).
 
 #### Error example
 The Path names include the # character which is not allowed. 
@@ -634,8 +636,8 @@ Remove the second statement.
       </Nodes>
 ```
 <a id="TF402523"></a>
-### TF402523: Area or Iteration path '*[pathNAME]*' in the GroupsandPermissions plug-is missing from the Classification plug-in.  
-Add the missing *[pathNAME]* to the Classification.xml file or remove it from the GroupsandPermissions.xml file.
+### TF402523: Area or Iteration path '*[pathName]*' in the GroupsandPermissions plug-is missing from the Classification plug-in.  
+Add the missing *[pathName]* to the Classification.xml file or remove it from the GroupsandPermissions.xml file.
 #### Error example 
 Classification.xml file specfies sprints, not iterations. 
 
@@ -676,7 +678,7 @@ Update GroupsandPermissions.xml to use sprints.
 ## Link types
 <span style="color:red; font-size:1.1em;">*Custom link types aren't supported in the current import process feature.*</span>
 <a id="TF402561"></a>
-### TF402561: You've defined *[N]* custom link types. Only *[NN]* are allowed.
+### TF402561: You've defined *[n]* custom link types. Only *[nn]* are allowed.
 Review your WorkItems.xml plug-in file for all ```LINKTYPE``` element statements. 
 Remove statements associated with custom link types so as not exceed the allowed limit. 
 And then, remove the corresponding  link type definition file from the LinkTypes folder.
@@ -685,7 +687,7 @@ Also, remove any references to the custom link types that you've added to a WIT 
 
 
 <a id="TF402583"></a>
-### TF402583: Custom link type *[NAME]* is invalid because custom link types aren't supported.
+### TF402583: Custom link type *[name]* is invalid because custom link types aren't supported.
 
 Review your WorkItems.xml plug-in file for all ```LINKTYPE``` element statements. Remove any statements that specify a custom link type. 
 And then, remove the corresponding  link type definition file from the LinkTypes folder.
@@ -706,13 +708,13 @@ The following ```LINKTYPE``` element statements within the WorkItems.xml plug-in
 <span style="color:red; font-size:1.1em;">*Global lists aren't supported in the current import process feature.*</span>
 
 <a id="TF402564"></a>
-### TF402564: You've defined *[N]* global lists. Only *[NN]* are allowed.
+### TF402564: You've defined *[n]* global lists. Only *[nn]* are allowed.
 One or more WITs defined in the custom process template contain a ```GLOBALLIST``` element. 
 Search through your WIT definition files and replace any ```GLOBALLIST``` elements with ```ALLOWEDVALUES``` or ```SUGGESTEDVALUES``` elements. 
 For reference syntax, see [Define pick lists](../reference/define-pick-lists.md).  
 
 <a id="TF402565"></a>
-### TF402565: You've defined *[N]* items in global list *[globalListNAME]*. A maximum of *[NN]* is allowed.
+### TF402565: You've defined *[n]* items in global list *[globalListName]*. A maximum of *[nn]* is allowed.
 The named ```GLOBALLIST``` element contains more items than allowed. Either reduce the number of list items contained in the ```GLOBALLIST``` element, 
 or segment the global list into two or more elements so that neither list exceeds the maximum number of allowed items. 
 
@@ -723,7 +725,7 @@ For reference syntax, see [Define pick lists](../reference/define-pick-lists.md)
 The ProcessConfiguration.xml definition file must conform to the syntax and rules described in [ProcessConfiguration XML element reference](../reference/process-configuration-xml-element.md).   
 
 <a id="TF402543"></a>
-### TF402543: Element *[elementNAME]* requires that you map exactly one workflow state to metastate *[metastateName]*.
+### TF402543: Element *[elementName]* requires that you map exactly one workflow state to metastate *[metastateName]*.
 
 Update the ```States``` section within the named element in the ProcessConfiguration.xml file to provide the missing metastate mapping or remove extra mappings.   
 #### Error example
@@ -752,12 +754,12 @@ Missing metastate mappings have been added.
 
 
 <a id="TF402547"></a>
-### TF402547: Element *[elementNAME]* requires that for work item type *[WITNAME]* you map at least one state to metastate *[metastateName]*.
+### TF402547: Element *[elementName]* requires that for work item type *[witName]* you map at least one state to metastate *[metastateName]*.
 Review the ```WORKFLOW``` states defined for the named WIT and then update the ```States``` section within the 
 named element in the ProcessConfiguration.xml file to provide the missing metastate mapping for the named WIT. 
 
 <a id="TF402548"></a>
-### TF402548: Element *[elementNAME]* requires that you map at least one state to metastate *[metastateName]*.
+### TF402548: Element *[elementName]* requires that you map at least one state to metastate *[metastateName]*.
 
 Update the ```States``` section within the named element in the ProcessConfiguration.xml file to provide the missing metastate mapping. 
 #### Error example
@@ -785,7 +787,7 @@ Missing metastate mappings have been added.
 ```
 
 <a id="TF402550"></a>
-### TF402550: Element *[elementNAME]* includes more than one metastate mapping for workflow state *[stateName]*.
+### TF402550: Element *[elementName]* includes more than one metastate mapping for workflow state *[stateName]*.
 Metastate value cannot be mapped to more than one workflow state.
 
 #### Error example
@@ -816,7 +818,7 @@ Metastate mappings have been corrected.
 ```
 
 <a id="TF402551"></a>
-### TF402551: Work item type *[WITNAME]* doesn't define workflow state *[stateNAME]*, which is required because ProcessConfiguration maps it to a metastate for element *[elementNAME]*.
+### TF402551: Work item type *[witName]* doesn't define workflow state *[stateName]*, which is required because ProcessConfiguration maps it to a metastate for element *[elementName]*.
 Either correct the ProcessConfiguration.xml file or the ```WORKFLOW``` section of the named WIT to add the missing ```STATE``` and ```TRANSITION``` elements.
 
 
@@ -849,7 +851,7 @@ Removed the ```State``` element for Committed.
 ```
 
 <a id="TF402552"></a>
-### TF402552: Element *[elementNAME]* requires that for work item type *[WIT NAME]* you map exactly one state to metastate *[metastateName]* for the following states: *[stateNames]*.
+### TF402552: Element *[elementName]* requires that for work item type *[witName]* you map exactly one state to metastate *[metastateName]* for the following states: *[stateNames]*.
 
 Review the ```STATES``` section in the ProcessConfiguration.xml file for the named element and ensure that each sate listed in the error message is present and mapped to a metastate.  
 
@@ -880,7 +882,7 @@ Metastate mapping has been corrected.
 ```
 
 <a id="TF402554"></a>
-### TF402554: Element *[elementNAME]*  specifies an unsupported metastate *[metastateName]*. 
+### TF402554: Element *[elementName]* specifies an unsupported metastate *[metastateName]*. 
 Review the ```STATES``` section in the ProcessConfiguration.xml file for the named element and remove or correct the named metastate.  
 
 #### Error example
@@ -910,7 +912,7 @@ Metastate mapping has been corrected.
 </RequirementBacklog >
 ```
 <a id="TF402571"></a>
-### TF402571: Required element *[elementNAME]* is missing from Process Configuration.
+### TF402571: Required element *[elementName]* is missing from Process Configuration.
 Edit the ProcessConfiguration.xml file to add the missing named element. 
 
 Review [ProcessConfiguration XML element reference](../reference/process-configuration-xml-element.md) for required elements.
@@ -922,7 +924,7 @@ A file specified in a plug-in file for upload is missing from the zip file. Revi
 Review [ProcessConfiguration XML element reference](../reference/process-configuration-xml-element.md) for required elements.
 
 <a id="TF402574"></a>
-### TF402574: ProcessConfiguration doesn't specify required ```TypeField``` *[TypeFieldNAME]*.
+### TF402574: ProcessConfiguration doesn't specify required ```TypeField``` *[typeField]*.
 Edit the ProcessConfiguration.xml file to add the missing named ```TypeField``` element. 
 
 Review [ProcessConfiguration XML element reference](../reference/process-configuration-xml-element.md) for required ```TypeField``` elements. 
@@ -950,7 +952,7 @@ The Scrum process specifies the following ```TypeField``` elements. If any of th
 
 
 <a id="TF402588"></a>
-### TF402588: Several portfolio backlogs *[backlogNAMEs]* have defined *[backlogNAME]* as their parent. A parent backlog may have only one child backlog.
+### TF402588: Several portfolio backlogs *[backlogNames]* have defined *[backlogName]* as their parent. A parent backlog may have only one child backlog.
 Only one child portfolio backlog can map to a single parent backlog.  
 
 Edit ProcessConfiguration to correct the parent-child backlog specifications.
@@ -979,7 +981,7 @@ Change the parent on the Feature backlog to point to the Epic backlog.
 ```
 
 <a id="TF402589"></a>
-### TF402589: Portfolio backlog *[backlogNAME]* references undefined parent portfolio backlog *[backlogNAME]*.
+### TF402589: Portfolio backlog *[backlogName]* references undefined parent portfolio backlog *[backlogName]*.
 The ProcessConfiguration.xml definition contains a ```parent``` value that references an undefined portfolio backlog.
 
 #### Error example
@@ -1033,7 +1035,7 @@ This is caused by templates that are from TFS 2010 or earlier, before the Projec
 ## Work item types  
 
 <a id="TF402570"></a>
-### TF402570: You've defined *[N]* work item types. A maximum of *[WITLIMIT]* is allowed.
+### TF402570: You've defined *[n]* work item types. A maximum of *[witLimit]* is allowed.
 
 You've defined more WITs that are allowed in the process. Review your WorkItems.xml file and reduce the number of ```WORKITEMTYPE``` statements it contains and remove the associated WIT definition files from the process.
 
@@ -1055,7 +1057,7 @@ See [All WITD XML elements reference](../reference/all-witd-xml-elements-referen
 ```
 
 <a id="TF402599"></a>
-### TF402599: The work item type refname *[REFNAME]* isn't valid as it uses a disallowed namespace [NAMESPACE].
+### TF402599: The work item type refname *[refName]* isn't valid as it uses a disallowed namespace [namespace].
 
 Reference names of custom fields and WITs can't use reserved namespaces: System.*XXX* and Microsoft.VSTS.*XXX*.  
 
@@ -1071,7 +1073,7 @@ Edit the ```refname``` attribute of the named WIT.
 ```
 
 <a id="TF402600"></a>
-### TF402600: The work item type reference name *[REFNAME]* isn't valid. Work item type reference names must contain only letters, no spaces, and at least one period (.)   
+### TF402600: The work item type reference name *[refName]* isn't valid. Work item type reference names must contain only letters, no spaces, and at least one period (.)   
 WIT reference names must adhere to established naming conventions: only letters, no spaces, and at least one period (.)
 
 Edit the ```refname``` attribute of the named WIT to meet naming requirements.. 
@@ -1089,14 +1091,14 @@ Edit the ```refname``` attribute of the named WIT to meet naming requirements..
 ## Work item fields  
 
 <a id="TF402538"></a>
-### TF402538: Field rule *[ruleNAME]* isn't supported.  
+### TF402538: Field rule *[ruleName]* isn't supported.  
 
 Edit your WIT definitions to remove the named rule. 
 The following rules are **not** supported for import to VSTS: 
 ```MATCH```, ```CANNOTLOSEVALUE```, ```PROHIBITED VALUES```, and ```NOTSAMEAS```.
 
 <a id="TF402539"></a>
-### TF402539: Field *[REFNAME]* only allows the following rules: *[ruleNAMEs]*.
+### TF402539: Field *[refName]* only allows the following rules: *[ruleNames]*.
 
 Edit your WIT definitions for the named field and remove any non-allowed rule(s). Review both the ```FIELDS``` and ```WORKFLOW``` sections. 
 Most system fields do not allow specifying rules. 
@@ -1111,7 +1113,7 @@ Most system fields do not allow specifying rules.
 | System.ChangedBy     | ```REQUIRED```, ```DEFAULT```, ```ALLOWEXISTINGVALUE```, ```VALIDUSER```                                                              | 
 
 <a id="TF402540"></a>
-### TF402540: Work item type *[WITNAME]* isn't valid because it specifies global list *[GLOBALLIST]*. Global lists aren't supported.
+### TF402540: Work item type *[witName]* isn't valid because it specifies global list *[GLOBALLIST]*. Global lists aren't supported.
 
 Global lists are not supported in VSTS. 
 Replace all instances of ```GLOBALLIST``` elements with 
@@ -1141,7 +1143,7 @@ Reference:  [Define pick lists](../reference/define-pick-lists.md).
 ```
 
 <a id="TF402541"></a>
-### TF402541: Work item type *[WITNAME]* isn't valid because it references global list *[globalListNAME]*. Global lists aren't supported.
+### TF402541: Work item type *[witName]* isn't valid because it references global list *[globalListName]*. Global lists aren't supported.
 
 Global lists are not supported in VSTS. Replace all instances of ```GLOBALLIST``` elements with 
 ```ALLOWEDVALUES``` and ```LISTITEM``` elements in all WIT definition files.
@@ -1169,7 +1171,7 @@ Reference: [Define pick lists](../reference/define-pick-lists.md).
 </FIELD>
 ```
 <a id="TF402542"></a>
-### TF402542: The custom field refname *[REFNAME]* isn't valid as it uses disallowed namespace *[NAMESPACE]*.
+### TF402542: The custom field refname *[refName]* isn't valid as it uses disallowed namespace *[namespace]*.
 
 The namespaces-System.*XXX* and Microsoft.VSTS.*XXX*-are reserved in VSTS. 
 Reference names of custom fields and types can't use these namespaces.   
@@ -1190,7 +1192,7 @@ To fix this error, simply rename the ```refname``` attribute for the named field
 <FIELD name="CustomField" refname="MyCompany.CustomField" type="String" />
 ```
 <a id="TF402544"></a>
-### TF402544: Field *[REFNAME]*, defined in work item type *[WITNAME]*, requires an ```ALLOWEDVALUES``` rule that contains values to support element *[elementName]* specified in ProcessConfiguration.
+### TF402544: Field *[refName]*, defined in work item type *[witName]*, requires an ```ALLOWEDVALUES``` rule that contains values to support element *[elementName]* specified in ProcessConfiguration.
 
 Edit the named field in the named WIT to provide the missing ```ALLOWEDVALUES``` rule, referencing the named element for more details.  
 
@@ -1227,7 +1229,7 @@ Corrected Bug.xml
 ```
 
 <a id="TF402545"></a>
-### TF402545: Element *[elementNAME]* requires that you include field *[fieldNAME]* in the definition of work item type *[WITNAME]*.
+### TF402545: Element *[elementName]* requires that you include field *[fieldName]* in the definition of work item type *[witName]*.
 You should include a corresponding ```FIELD``` element in the named WIT definition for each ```field``` that you specify within the ```AddPanel``` section of the ProcessConfiguration.xml file. \
 You should also include a ```Control``` element within the ```FORM``` section of the named WIT.   
 
@@ -1250,7 +1252,7 @@ Missing ```FIELD``` elements added to the UserStory.xml file.
 ```
 
 <a id="TF402549"></a>
-### To support ProcessConfiguration element *[elementNAME]*, work item type *[WITNAME]* must define TypeField *[typeFieldNAME]* (field refname [REFNAME]).
+### To support ProcessConfiguration element *[elementName]*, work item type *[witName]* must define TypeField *[typeField]* (field refname [refName]).
 
 In the ProcessConfiguration you created a ```TypeField``` with ```TypeFieldValues```. In your work item type you have to reference that same ```TypeField```.
 
@@ -1282,7 +1284,7 @@ FeedbackRequest.xml
 ```
 
 <a id="TF402556"></a>
-### TF402556: For field *[REFNAME]* to be well defined, you must name it *[fieldName]* and set its type to *[fieldTYPE]*.
+### TF402556: For field *[refName]* to be well defined, you must name it *[fieldName]* and set its type to *[fieldType]*.
 
 If you are on TFS and running tfsMigrator, this error is usually generated when your process is out-of-date and a system field is not properly defined. In the majority of those cases you need to use the ```witadmin /changefield``` command to properly rename the field.
 
@@ -1314,7 +1316,7 @@ Bug.xml
 ```
 
 <a id="TF402557"></a>
-### TF402557: Inconsistent definitions exist for field *[REFNAME]* in the following work item types: *[WITNAME]*. Ensure that all references to a field have the same *RefName*, *Name*, and *Type*.
+### TF402557: Inconsistent definitions exist for field *[refName]* in the following work item types: *[witName]*. Ensure that all references to a field have the same *RefName*, *Name*, and *Type*.
 ```FIELD``` element definitions for fields with the same friendly name must be consistent across WITs. 
 Check to ensure that the ```refName```, ```name```, and ```type``` attributes are the same in each of your WIT definitions for the named field.
 
@@ -1341,7 +1343,7 @@ UserStory.xml
 ```
 
 <a id="TF402558"></a>
-### TF402558: The definition of field *[REFNAME]* is inconsistent with the existing definition of the field in the following templates: *[templateNAMEs]*.
+### TF402558: The definition of field *[refName]* is inconsistent with the existing definition of the field in the following templates: *[templateNames]*.
 Fields must be defined consistently across processes that have been or that you plan to import to VSTS. 
 The system will not allow you to import a process that contains a ```FIELD``` element which is defined 
 one way in Process A and another way in Process B.  All ```FIELD``` element attributes must match.
@@ -1372,29 +1374,29 @@ Ensure that fields of the same ```refname``` are defined the same across all pro
 have been imported or that you plan to import to VSTS.
 
 <a id="TF402559"></a>
-### TF402559: The definition for field *[REFNAME]* is inconsistent with an existing field. The ```type``` is *[typeNAME1]* but should be *[typeNAME2]*.
+### TF402559: The definition for field *[refName]* is inconsistent with an existing field. The ```type``` is *[typeName]* but should be *[typeName]*.
 Edit the WIT file(s) that contains the named field to ensure the specified ```type``` attribute value is consistent across all WITs.  
 
 <a id="TF402562"></a>
-### TF402562: You've defined *[N]* fields for work item type *[WITNAME]*. Only *[fieldLIMIT]* are allowed.
-You've defined *[N]* fields for work item type *[WITNAME]*. Only *[fieldLIMIT]* are allowed. Within a single WIT, you can specify only the specified number of fields.  
+### TF402562: You've defined *[n]* fields for work item type *[witName]*. Only *[fieldLimit]* are allowed.
+You've defined *[n]* fields for work item type *[witName]*. Only *[fieldLimit]* are allowed. Within a single WIT, you can specify only the specified number of fields.  
 
 Edit the named WIT and remove the extra custom fields to reduce the total number of fields to be within the allowed limit.
 
 <a id="TF402563"></a>
-### TF402563: You've defined a total of *[N]* fields for all work item types. Only *[fieldLIMIT]* are allowed.
-You've defined *[N]* fields for all WITs defined in the process. Only *[fieldLIMIT]* are allowed. This includes System.*XXX* and Microsoft.VSTS.*XXX* namespace fields as well as custom fields.  
+### TF402563: You've defined a total of *[n]* fields for all work item types. Only *[fieldLimit]* are allowed.
+You've defined *[n]* fields for all WITs defined in the process. Only *[fieldLimit]* are allowed. This includes System.*XXX* and Microsoft.VSTS.*XXX* namespace fields as well as custom fields.  
 
 Review the ```FIELDS``` and ```WORKFLOW``` sections and determine which custom fields to remove.
 
 <a id="TF402566"></a>
-### TF402566: You've defined *[N]* field rules for work item type *[WITNAME]*. A maximum of *[ruleLIMIT]*  is allowed.  
-You've defined *[N]* field rules for the named WIT which exceeds the allowed number of field rules for any one WIT.  
+### TF402566: You've defined *[n]* field rules for work item type *[witName]*. A maximum of *[ruleLimit]*  is allowed.  
+You've defined *[n]* field rules for the named WIT which exceeds the allowed number of field rules for any one WIT.  
 
 Edit the named WIT and remove the extra field rules to reduce the total number of fields to be within the allowed limit.
 
 <a id="TF402568"></a>
-### TF402568: You've defined *[N]* fields with ```syncnamechanges="true"``` for work item type *[WITNAME]*. A maximum of 64 is allowed.
+### TF402568: You've defined *[n]* fields with ```syncnamechanges="true"``` for work item type *[witName]*. A maximum of 64 is allowed.
 
 The number of fields with  ```syncnamechanges="true"``` defined for the named WIT exceeds the allowed limit. This includes System.*XXX* and Microsoft.VSTS.*XXX* namespace fields as well as custom fields.  
 
@@ -1408,7 +1410,7 @@ Review the ```FIELDS``` section of the named WIT and determine which custom fiel
 ```
 
 <a id="TF402569"></a>
-### TF402569: You've defined *[N]* values for field *[FIELDNAME]* in work item type *[WITNAME]*. A maximum of *[listLIMIT]* is allowed.
+### TF402569: You've defined *[n]* values for field *[fieldName]* in work item type *[witName]*. A maximum of *[listLimit]* is allowed.
 
 The number of ```LISTITEM``` elements defined for the named field in the named WIT exceeds the allowed limit.  
 
@@ -1447,7 +1449,7 @@ Review the ```FIELDS``` and ```WORKFLOW``` sections for the presence of ```"for"
 ```
 
 <a id="TF402593"></a>
-### TF402593: Field rules aren't supported for field *[fieldNAME]*.
+### TF402593: Field rules aren't supported for field *[fieldName]*.
 
 Most System and Microsoft.VSTS fields do not support rules. 
 See [Customize a process](customize-process.md#required-fields) 
@@ -1456,7 +1458,7 @@ for complete list of supported field rules.
 Edit the WIT definition files that contain the named field and remove the field rules specified for it. 
 
 <a id="TF402602"></a>
-### TF402602: The field *[REFNAME]* must have exactly these values *[VALUES]*.
+### TF402602: The field *[refName]* must have exactly these values *[values]*.
 
 All fields defined by VSTS in the reserved namespaces-System.*XXX* and Microsoft.VSTS.*XXX*-must not be altered.  If you wish to have a different list of values in these pick list fields, define your own custom field.
 
@@ -1498,7 +1500,7 @@ Corrected Bug.xml including a new field
       </FIELD>
 ```
 
-<a id=""></a>
+<a id="VS402504"></a>
 ### VS402504: User or group cannot be found *[project]\Group Name*. Verify that the users and groups used in your work item type definition exist.
 
 Custom project scoped groups are not supported. You can only reference account level scoped groups.
@@ -1515,11 +1517,25 @@ Create a new account (collection) level group "Organization Leaders" and referen
 ... "[global]\Organization Leaders"
 ```
 
+<a id="TF237094"></a>
+### TF237094: Field name '[fieldName]' is used by the field '[refName]', so it cannot be used by the field '[refName]'.
+
+Field name already exist with that same name on a different field. Change the name of the field.
+
+#### Error example
+```TF237094: Field name 'External ID' is used by the field 'Custom.ExistingField.ExternalID', so it cannot be used by the field 'Custom.NewField.ExternalID'.```
+
+#### Resolution example
+Change the field name of Custom.NewField.ExternalID
+```
+<FIELD name="External ID" refname="Custom.NewField.ExternalID" type="string" reportable="dimension" />
+```
+
 <a id="wit-work-item-layout"></a>
 ## Work item layout
 
 <a id="VS403104"></a>
-### VS403104: Work item type *[WITNAME]* references the required field *[REFNAME]* which is not included in all layouts.
+### VS403104: Work item type *[witName]* references the required field *[refName]* which is not included in all layouts.
 
 This warning is generated if you have a required field in a work item type that is referenced in the ```<Layout>``` node but not the ```<WebLayout>```. The ```<WebLayout>``` is used to modify the layout of the new form. See [WebLayout xml reference](../reference/weblayout-xml-elements.md) for details.
 
@@ -1549,14 +1565,14 @@ This warning is generated if you have a required field in a work item type that 
 ## Workflow definitions
 
 <a id="TF402567"></a>
-### TF402567: You've defined *[N]* workflow states for work item type *[WITNAME]*. A maximum of *[stateLIMIT]*  is allowed.
+### TF402567: You've defined *[n]* workflow states for work item type *[witName]*. A maximum of *[stateLimit]*  is allowed.
 
-You've defined *[N]* workflow states for the named WIT which exceeds the allowed number of workflow states for any one WIT.  
+You've defined *[n]* workflow states for the named WIT which exceeds the allowed number of workflow states for any one WIT.  
 
 Edit the ```WORKFLOW``` section of the named WIT and remove the extra ```STATE``` elements to reduce the total number of states to be within the allowed limit. 
 
 <a id="TF402578"></a>
-### TF402578: Field *[REFNAME]* specifies friendly name *[friendlyName]* which is already in use by field *[REFNAME2]*. Friendly names must be unique across all field definitions.
+### TF402578: Field *[refName]* specifies friendly name *[friendlyName]* which is already in use by field *[refName]*. Friendly names must be unique across all field definitions.
 Field names must be unique within the work item type. 
 
 #### Error example
@@ -1573,7 +1589,7 @@ Notice there are two fields with the name ``` <FIELD name="Foo" ```
 ```
 
 <a id="TF402579"></a>
-### TF402579: Name *[friendlyName]* is used multiple times on different fields across the following work item types: *[WITNAMEs]*. Name for fields must be unique across the project collection.
+### TF402579: Name *[friendlyName]* is used multiple times on different fields across the following work item types: *[witNames]*. Name for fields must be unique across the project collection.
 
 Fields referencing the same ```refname="MyCompany.FieldName"``` must have the same friendly name ```FIELD name="fieldname"``` value. 
 
@@ -1592,7 +1608,7 @@ they must also specify the same friendly name ``` <FIELD name="Foo"  ``` across 
 that have been imported or will be imported to VSTS. 
 
 <a id="TF402580"></a>
-### TF402580: You can only use the name *[WITNAME]* for a single work item type.
+### TF402580: You can only use the name *[witName]* for a single work item type.
 WIT friendly names ```WORKITEMTYPE name="Name" ``` must be unique within the process.
 
 #### Error example
@@ -1619,7 +1635,7 @@ My Work Item B.xml
 ```
 
 <a id="TF402581"></a>
-### TF402581: You can only use the refname *[REFNAME]* for a single work item type.
+### TF402581: You can only use the refname *[refName]* for a single work item type.
 WIT reference names ```refname="value" ``` must be unique within the process.
 
 #### Error example
@@ -1645,7 +1661,7 @@ UserStory.xml
 
 
 <a id="TF402582"></a>
-### TF402582: Work item type *[WITNAME]* contains custom control *[controlNAME]* which is not supported.  
+### TF402582: Work item type *[witName]* contains custom control *[controlName]* which is not supported.  
 Custom controls are not supported in VSTS. Review the ```FORM``` section for the named WIT and remove any custom controls that are defined. 
 
 #### Error example 
@@ -1668,11 +1684,11 @@ must conform to the syntax and rules described in [Define the initial configurat
 
 
 <a id="TF402533"></a>
-### TF402533: Element '*[elementNAME]*' in TestManagement plug-in is missing the  ```'fileName'``` attribute.  
+### TF402533: Element '*[elementName]*' in TestManagement plug-in is missing the  ```'fileName'``` attribute.  
 Add the missing attribute to the named element in the TestManagement.xml file. 
 
 <a id="TF402534"></a>
-### TF402534: TestManagement plug-in contains an unsupported task '*[taskNAME]*'  
+### TF402534: TestManagement plug-in contains an unsupported task '*[taskName]*'  
 
 Correct the named tasked in your TestManagement.xml file.
 

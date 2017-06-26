@@ -9,12 +9,12 @@ ms.author: kaelli
 ms.date: 04/06/2017
 ---
 
-#Show bugs on backlogs and boards  
+# Show bugs on backlogs and boards  
 
 <b>Team Services | TFS 2017 | TFS 2015 | TFS 2013.4 </b>
 
 >[!NOTE]  
->**Feature availability**: This feature is available from Team Services or the web portal for TFS 2013.4 or later version. 
+>**Feature availability**: This feature is available from Team Services and the web portal for TFS 2013.4 and later versions. 
 
 As your team identifies code defects or bugs, they can add them to the backlog and track them similar to requirements. Or, they can schedule them to be fixed within a sprint along with other tasks. 
  
@@ -52,7 +52,7 @@ When you track bugs as requirements, they'll show up on the product backlog and 
 	* Choose the last option if your team manages bugs separate from requirements or tasks. Bugs will be associated with the Bugs category. 
 
 	>[!NOTE]  
-	>Because this setting affects all team members' view of the team backlogs and boards, you must be a team administrator to change the setting. Changing the setting is disabled if you're not a team administrator. Go [here to get added as a team administrator](../scale/manage-team-assets.md#add-team-admin).
+	>Because this setting affects all team members' view of the team backlogs and boards, you must be a team administrator to change the setting. Changing the setting is disabled if you're not a team administrator. Go [here to get added as a team administrator](../scale/add-team-administrator.md).
 	
 	<div style="background-color: #f2f0ee;padding-top:10px;padding-bottom:10px;">
 	<ul class="nav nav-pills" style="padding-right:15px;padding-left:15px;padding-bottom:5px;vertical-align:top;font-size:18px;">

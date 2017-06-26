@@ -7,7 +7,7 @@ ms.assetid: EFAD32DB-8B19-4ACC-8F72-87CC5A513798
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article 
-ms.date: 04/24/2017
+ms.date: 05/22/2017
 ---
 
 
@@ -20,7 +20,7 @@ ms.date: 04/24/2017
 You can quickly view the status of work in progress by charting the results of a [flat-list query](../work/track/using-queries.md). You can create several types of charts&mdash;such as pie, column, or trend&mdash;for the same query.  Charts support viewing a count of work items or a sum of values for select numeric fields, such as Remaining Work or Original Estimate. 
 
 >[!NOTE]  
->For examples of queries based on numeric fields, see [Query by numeric fields](../work/track/query-numeric.md). For information on creating charts that track test progress and results, see [Track test status](../test/manual-exploratory-testing/getting-started/track-test-status.md). 
+>For examples of queries based on numeric fields, see [Query by numeric fields](../work/track/query-numeric.md). For information on creating charts that track test progress and results, see [Track test status](../test/manual-exploratory-testing/getting-started/track-test-status.md).  
 
 For example, the following image illustrates four different charts created from the same flat-list query. The pie chart groups the 146 active bugs by priority, and the bar chart groups the bugs by team and their triage status. The last two chart show two different views of the active bugs as they trend over the last two weeks.  
 
@@ -28,7 +28,7 @@ For example, the following image illustrates four different charts created from 
 
 [!INCLUDE [temp](_shared/image-differences.md)]
 
-## Add a chart  
+## Add and configure a query-based chart  
 
 1.	From the Queries page, open the chart editor for a flat list query. You must belong to the Contributors group to create charts. Stakeholders can view charts but not create them. 
 
@@ -98,7 +98,7 @@ If you've already defined your [flat list query](../work/track/using-queries.md)
 
 2. Click ![Edit dashboard icon](_img/edit-dashboard-icon.png) to modify a dashboard, and then click ![add a widget icon](_img/add-widget-icon.png) to access the widget catalog.  
 
-	If you don't see these icons, then you need to be added as a [team administrator](../work/scale/manage-team-assets.md#add-team-admin) or a member of the Project Administrators group. 
+	If you don't see these icons, then you need to be added as a [team administrator](../work/scale/add-team-administrator.md) or a member of the Project Administrators group. 
 
 3. Choose the Chart for work items widget and then click Add. 
 
@@ -146,7 +146,7 @@ Also, from the web portal, you can view the following charts:
 
 
 ### Requirements to view and create charts  
-If you have [Stakeholder access or license](../work/connect/work-as-a-stakeholder.md), you can only view charts. If you need to create charts, ask your project admin or account owner to grant you elevated access.   
+If you have [Stakeholder access or license](../quickstart/get-started-stakeholder.md), you can only view charts. If you need to create charts, ask your project admin or account owner to grant you elevated access.   
 
 ### Fields that show up in the chart editor
 For fields to appear in the chart editor, you must add the field to either the query filter criteria or a displayed column. 

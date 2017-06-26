@@ -26,6 +26,10 @@ Each process you create inherits the WITs provided with the parent system proces
 
 You can add fields and modify the workflow and form for all inherited WITs that display on the Work Item Types page. If you don't want users to use a WIT, you can disable it. In addition, you can add custom WITs. 
 
+>[!NOTE]  
+>For a list of limits placed on the number of fields, work item types, backlog levels, and other objects you can customize, see [Work tracking object limits](../customize/object-limits.md). 
+
+
 Here are your customization options for inherited and custom WITs. 
 
 <div style="float:left;width:200px;margin:3px;font-size:90%">
@@ -41,7 +45,7 @@ Here are your customization options for inherited and custom WITs.
 <div style="float:left;width:200px;margin:3px;font-size:90%">
 <p style="font-weight:bold;margin-bottom:2px;text-align:center;">**Custom WITs:**</p>
 - [Add custom WIT](#add-wit)   
-- [Change color or description](#overview)     
+- [Change color, icon or description](#overview)     
 - [Add/remove custom fields](customize-process-field.md)   
 - [Add/remove custom groups](customize-process-form.md#groups)    
 - [Add/delete custom pages](customize-process-form.md#pages)    
@@ -64,7 +68,6 @@ Here are your customization options for inherited and custom WITs.
 To perform any of these actions, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to edit a specific process](manage-process.md#process-permissions). 
 
 **What you can't customize**  
-- You can't modify an inherited WIT (you can't change its name, color, nor can you delete an inherited WIT)  
 - You can't add or remove an inherited WIT to or from a backlog  
 - You can't change the position of an inherited field within the form layout
 - You can't remove the inherited portfolio level from the product (but you can rename them)
@@ -88,7 +91,7 @@ You can open the admin context Process hub from a work item form or by choosing 
 
 	<img src="_img/cpwit-add-new-wit.png" alt="Process hub, Inherited process, Work Item Types, Add new work item type" style="border: 1px solid #CCCCCC;" />
  
-0. Name the WIT and optionally specify a description and color. The color you specify will appear throughout the web portal, including on the work item form and when associated work items appear on a backlog, boards, query results, and more. Click Create to save. 
+0. Name the WIT and optionally specify a description, icon and color. The icon and color you specify will appear throughout the web portal, including on the work item form and when associated work items appear on a backlog, boards, query results, and more. Click Create to save. 
 
 	<img src="_img/cwit-create-wit-ticket.png" alt="Create new work item type dialog" style="border: 1px solid #CCCCCC;" /> 
 
@@ -111,13 +114,13 @@ You can open the admin context Process hub from a work item form or by choosing 
 	If you don't see the custom WIT, refresh your browser to make sure it registers all the custom changes you've made. 
 
 <a id="overview">  </a>
-## Change description or color of a custom WIT 
+## Change description, icon or color of a custom WIT 
 
-To change the description or color of a custom WIT, choose Edit from the WIT context menu. 
+To change the description, icon or color of a custom WIT, choose Edit from the WIT context menu. 
 
-Here we change the description and color for the Ticket custom WIT.  
+Here we change the description, icon and color for the Ticket custom WIT.  
 
-<img src="_img/cpwit-edit-color-description.png" alt="Overview page, edit custom ticket description and color" style="border: 1px solid #CCCCCC;" /> 
+<img src="_img/cpwit-edit-color-description.png" alt="Overview page, edit custom ticket description, icon and color" style="border: 1px solid #CCCCCC;" /> 
 
 <a id="enable-disable"></a>
 ## Enable or disable a custom WIT  
@@ -150,7 +153,7 @@ Additional topics of interest:
 - [Customize a process](../process/customize-process-field.md) 
 - [Customize your backlogs or boards for a process](customize-process-backlogs-boards.md)  
 - [Backlogs, boards, and plans](../backlogs-boards-plans.md)  
-
+- [Work tracking object limits](../customize/object-limits.md)
 
 <a id="destroy">  </a>
 ### Delete or destroy a custom WIT 

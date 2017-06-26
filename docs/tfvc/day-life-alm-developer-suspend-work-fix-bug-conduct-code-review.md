@@ -1,6 +1,6 @@
 ---
-title: day in the life of an devops developer-Suspend work, fix a bug, and conduct a code review
-description: day in the life of an devops developer- Suspend work, fix a bug, and conduct a code review
+title: Suspend work, fix a bug, and conduct a code review
+description: Day in the life of a devops developer. Suspend work, fix a bug, and conduct a code review.
 ms.assetid: 2fc2a1ff-70a2-4b4e-8dff-73238628f956
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfvc
@@ -9,7 +9,7 @@ ms.author: routlaw
 ms.date: 08/25/2016
 ---
 
-# Day in the life of an devops Developer: Suspend work, fix a bug, and conduct a code review
+# Day in the life of a devops developer: suspend work, fix a bug, and conduct a code review
 
 **Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
 

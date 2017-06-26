@@ -22,7 +22,7 @@ The Analytics service implements a subset of the security found in the Team Serv
 
 Security is granted by giving a user the **View analytics** permission in Visual Studio Team Services. 
 
-![Analytics Permission](_img/analytics_permission.png)
+<img src="_img/analytics_permission.png" alt="Analytics Permission dialog" style="border: 1px solid #CCCCCC;" />
 
 **The whole truth or nothing at all**
 
@@ -44,7 +44,7 @@ This behavior is different from that provided by the current Work Item Query edi
 the work items in Project B but nothing from Project A without informing you that there is missing data. 
 
 Because of this scenario, the recommended approach for querying the Analytics Service is to always provide
-a project level filter instead of using a global query. <!--- For information on providing a project level filter, see [WIT analytics](wit-analytics.md).  -->
+a project level filter instead of using a global query. For information on providing a project level filter, see [WIT analytics](wit-analytics.md).
 
 ##Related notes 
 

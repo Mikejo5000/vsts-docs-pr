@@ -1,4 +1,4 @@
-[Stakeholders](../../../../work/connect/work-as-a-stakeholder.md)
+[Stakeholders](../../../../quickstart/get-started-stakeholder.md)
 can respond to feedback requests for user stories and 
 features generated in Team Services or Team Foundation Server using
 a lightweight end-to-end flow based on the 
@@ -13,7 +13,8 @@ can provide feedback using the flow described in
 * [Voluntary feedback](../voluntary-stakeholder-feedback.md#voluntary)
 * [Track requests](../track-stakeholder-feedback.md#track)
 
->**NOTE**: This lightweight end-to-end flow is applicable only for web apps. 
-To get feedback for desktop apps, use the feedback flow described in
+>**NOTE**: This lightweight end-to-end flow is applicable only for web apps
+and by using Team Services or TFS 2017. To get feedback for desktop apps, or for 
+earlier versions of TFS, use the feedback flow described in
 **[this topic](https://www.visualstudio.com/en-us/docs/work/connect/get-feedback)**
 about the Microsoft Feedback Client.

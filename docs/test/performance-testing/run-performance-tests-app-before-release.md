@@ -203,5 +203,7 @@ A: If you don't want to set up machines for load testing, or you don’t have av
 * [Run URL-based load tests with Visual Studio Team Services](getting-started/get-started-simple-cloud-load-test.md)
 * [Run Apache JMeter load tests with Visual Studio Team Services](getting-started/get-started-jmeter-test.md)
 * [View and compare performance test results](getting-started/performance-reports.md)
+* [Profiling live Azure web apps with Application Insights](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-profiler)
+
 
 [!INCLUDE [help-and-support-footer](../_shared/help-and-support-footer.md)] 

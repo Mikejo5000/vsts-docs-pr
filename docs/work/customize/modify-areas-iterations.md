@@ -11,7 +11,7 @@ ms.date: 05/11/2017
 ---
 
 
-#Customize area and iteration paths  
+# Customize area and iteration paths  
 
 <b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
 
@@ -39,7 +39,7 @@ The iterations you see depend on the process you used to create your team projec
 
 ## Agile tools that rely on areas or iterations
 
-[!INCLUDE [temp](../_shared/agile-tools-areas-iterations-summary.md)]
+[!INCLUDE [temp](../concepts/agile-tools-areas-iterations.md)]
 
 
 #### Team defaults referenced by backlogs and boards
@@ -219,8 +219,8 @@ Certain [restrictions](#name-restrictions) apply on names of areas.
 </div>
 
 <a id="iterations"></a>  
-##Add an iteration and set iteration dates
-From the **Iterations** page, you can add and select the iterations that will be active for your team. You add iterations in the same way you add areas. For more information about working within a sprint cadence, see [Define sprints](../scrum/define-sprints.md).  
+##Add iterations and set iteration dates
+From the **Iterations** page, you can add and select the iterations that will be active for your team. You add iterations in the same way you add areas. For more information about working within a sprint cadence, see [Schedule sprints](../scrum/define-sprints.md).  
 
 
 <div style="background-color: #f2f0ee;padding-top:10px;padding-bottom:10px;"> 

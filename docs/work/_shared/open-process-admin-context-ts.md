@@ -2,7 +2,7 @@
 0. To open the admin context from the user context, click the ![](../_img/icons/gear_icon.png) gear Settings icon and choose Account settings.
  
 	>[!IMPORTANT]  
-	>If you don't see the Account settings option, then you are working from an on-premises TFS. The Process page isn't supported. You must use the features supported for the On-premises XMl process model as described in [Customize your work tracking experience](../customize/customize-work.md).
+	>If you don't see the Account settings option, then you're working from an on-premises TFS. The Process page isn't supported. You must use the features supported for the On-premises XML process model as described in [Customize your work tracking experience](../customize/customize-work.md).
 	
 	<img src="../process/_img/manage-process-open-account-settings.png" alt="Default Collection Overview, Projects reference processes" style="border: 1px solid #CCCCCC;" /> 
 

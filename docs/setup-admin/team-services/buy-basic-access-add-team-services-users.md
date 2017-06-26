@@ -98,12 +98,12 @@ if your Team Services account isn't linked already.
 sign in to [**Visual Studio Marketplace** > **Other** > **Team Services Users**](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser), 
 and choose **Buy**.
 
-	<img alt="Go to Visual Studio Marketplace, Other, Team Services Users" src="./_img/buy-more-basic-access/team-services-users-vs-marketplace.png" style="border: 1px solid #CCCCCC" />
+	![Go to Visual Studio Marketplace, Other, Team Services Users](_img/buy-more-basic-access/team-services-users-vs-marketplace.png)
 
 0.  Select your Team Services account, 
 if you have multiple accounts.
 
-	<img alt="Select your Team Services account" src="./_img/buy-more-basic-access/select-team-services-account-vs-marketplace.png" style="border: 1px solid #CCCCCC" />
+	![Select your Team Services account](_img/buy-more-basic-access/select-team-services-account-vs-marketplace.png)
 
 	<p><a data-toggle="collapse" href="#expando-why-no-ts-account">Don't see your Team Services accounts? &#x25BC;</a></p>
 	<div class="collapse" id="expando-why-no-ts-account">
@@ -119,7 +119,7 @@ if you have multiple accounts.
 	create a new subscription now to use for billing. 
 	[More about Azure subscriptions for billing](#billing)
 
-	<img alt="Confirm or select your Azure subscription" src="./_img/buy-more-basic-access/confirm-azure-subscription-vs-marketplace.png" style="border: 1px solid #CCCCCC" />
+	![Confirm or select your Azure subscription](_img/buy-more-basic-access/confirm-azure-subscription-vs-marketplace.png)
 
 	<p><a data-toggle="collapse" href="#expando-why-no-azure-sub">Don't see the Azure subscription that you expect? &#x25BC;</a></p>
 	<div class="collapse" id="expando-why-no-azure-sub">
@@ -132,16 +132,16 @@ if you have multiple accounts.
 
 0.	Enter the number of users who need paid Basic access.
 
-	<img alt="Enter the number of users who need paid Basic access" src="./_img/buy-more-basic-access/select-number-users-vs-marketplace.png" style="border: 1px solid #CCCCCC" />
+	![Enter the number of users who need paid Basic access](_img/buy-more-basic-access/select-number-users-vs-marketplace.png)
 
 0.	Now go to your Team Services account, 
 [add your new users, and assign them Basic access](add-account-users-assign-access-levels-team-services.md). 
 
-	<img alt="Go to your Team Services account" src="./_img/buy-more-basic-access/confirm-basic-access-purchase-vs-marketplace.png" style="border: 1px solid #CCCCCC" />
+	![Go to your Team Services account](_img/buy-more-basic-access/confirm-basic-access-purchase-vs-marketplace.png)
 
 	The number of users who you can assign paid Basic access appears here.
 
-	<img alt="Number of users who you can assign paid Basic access" src="./_img/buy-more-basic-access/paid-basic-access-for-team-services-users.png" style="border: 1px solid #CCCCCC" />
+	![Number of users who you can assign paid Basic access](_img/buy-more-basic-access/paid-basic-access-for-team-services-users.png)
 
 	Your user summary shows only the number of users with access levels assigned to them.
 
@@ -179,12 +179,12 @@ have an Azure Account Administrator or Service Administrator
 sign in to [**Visual Studio Marketplace** > **Other** > **Team Services Users**](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser), 
 and choose **Buy**.
 
-	<img alt="Go to Visual Studio Marketplace, Other, Team Services Users" src="./_img/buy-more-basic-access/team-services-users-vs-marketplace.png" style="border: 1px solid #CCCCCC" />
+	![Go to Visual Studio Marketplace, Other, Team Services Users](_img/buy-more-basic-access/team-services-users-vs-marketplace.png)
 
 0.  Select your Team Services account, 
 if you have multiple accounts.
 
-	<img alt="Select your Team Services account" src="./_img/buy-more-basic-access/select-team-services-account-vs-marketplace.png" style="border: 1px solid #CCCCCC" />
+	![Select your Team Services account](_img/buy-more-basic-access/select-team-services-account-vs-marketplace.png)
 
 	<p><a data-toggle="collapse" href="#expando-why-no-ts-account">Don't see your Team Services accounts? &#x25BC;</a></p>
 	<div class="collapse" id="expando-why-no-ts-account">
@@ -198,11 +198,11 @@ reduce this number to zero (0).
 
 	For example, we're going to increase our total paid users from this number:
 
-	<img alt="Current number of users who have paid Basic access" src="./_img/buy-more-basic-access/select-number-users-vs-marketplace.png" style="border: 1px solid #CCCCCC" />
+	![Current number of users who have paid Basic access](_img/buy-more-basic-access/select-number-users-vs-marketplace.png)
 
 	to this number:
 
-	<img alt="Increase users who have paid Basic access" src="./_img/buy-more-basic-access/select-number-users-vs-marketplace-add-more.png" style="border: 1px solid #CCCCCC" />
+	![Increase users who have paid Basic access](_img/buy-more-basic-access/select-number-users-vs-marketplace-add-more.png)
 
 	**Note** When you reduce users, make sure that you don't have more users with paid Basic 
 	access in your Team Services account than you have in the Visual Studio Marketplace. 
@@ -221,7 +221,7 @@ reduce this number to zero (0).
 0.	Confirm your changes. Go back to your Team Services account to 
 [reassign access levels for your users, if necessary](add-account-users-assign-access-levels-team-services.md).
 
-	<img alt="Reassign user access levels, if necesary" src="./_img/buy-more-basic-access/confirm-updated-basic-access-purchase-vs-marketplace.png" style="border: 1px solid #CCCCCC" />
+	![Reassign user access levels, if necesary](_img/buy-more-basic-access/confirm-updated-basic-access-purchase-vs-marketplace.png)
 
 ## Q&A
 
@@ -310,18 +310,18 @@ for the Azure subscription that's linked to your Team Services account.
 <li>Go to **Browse** > **Team Services accounts**. 
 Select your Team Services account.
 <p>
-<p><img alt="Browse, Team Services accounts, select your Team Services account" src="./_img/_shared/AP_VSO_SelectLinkedAccount.png" style="border: 1px solid #CCCCCC" />
+<p>![Browse, Team Services accounts, select your Team Services account](_img/_shared/AP_VSO_SelectLinkedAccount.png)
 <p>
 <p>[Why don't I see my Team Services account?](#WhyNoVSOAccount)
 <p>
 <li>Go to **Settings** > **Users**.
 <p>
-<p><img alt="View users" src="./_img/_shared/AP_VSO_ManageLicenses.png" style="border: 1px solid #CCCCCC" />
+<p>![View users](_img/_shared/AP_VSO_ManageLicenses.png)
 <p>
 <li>Select the number of users with Basic access that you want to pay for. 
 To cancel all paid users, reduce this number to zero (0). Save your changes.
 <p>
-<p><img alt="Update paid users. Save changes" src="./_img/buy-more-basic-access/AP_VSO_SelectTotalUsers.png" style="border: 1px solid #CCCCCC" />
+<p>![Update paid users. Save changes](_img/buy-more-basic-access/AP_VSO_SelectTotalUsers.png)
 <p>If you add users, you're not charged until you save your changes. 
 </ol>
 </div>
@@ -337,24 +337,24 @@ for the Azure subscription that's linked to your Team Services account.
 <li>Go to **Visual Studio Team Services**. 
 Select your Team Services account.
 <p>
-<p><img alt="Visual Studio Team Services, select your Team Services account" src="./_img/_shared/AzureChooseLinkedAccount.png" style="border: 1px solid #CCCCCC" />
+<p>![Visual Studio Team Services, select your Team Services account](_img/_shared/AzureChooseLinkedAccount.png)
 <p>
 <p>[Why don't I see my Team Services account?](#WhyNoVSOAccount)
 <p>
 <li>Go to **Scale**.
 <p>
-<p><img alt="Go to the Scale page" src="./_img/_shared/AzureScaleLicensesResources.png" style="border: 1px solid #CCCCCC" />
+<p>![Go to the Scale page](_img/_shared/AzureScaleLicensesResources.png)
 <p>
 <li>Drag the slider to select the total number of users with Basic access 
 that you want in your Team Services account. To cancel all paid users, 
 drag the slider until only 5 users appear. Save your changes. 
 <p>
-<p><img alt="Update paid users" src="./_img/buy-more-basic-access/AP_VSO_SelectTotalUsers.png" style="border: 1px solid #CCCCCC" />
+<p>![Update paid users](_img/buy-more-basic-access/AP_VSO_SelectTotalUsers.png)
 <p>
 <p>**Note** Your account includes 5 free users who get Basic access. 
 So you'll only pay for users beyond that quantity. You're not charged until you save your changes. 
 <p>
-<p><img alt="Save changes" src="./_img/_shared/save-changes.png" style="border: 1px solid #CCCCCC" />
+<p>![Save changes](_img/_shared/save-changes.png)
 </ol>
 </div>
 

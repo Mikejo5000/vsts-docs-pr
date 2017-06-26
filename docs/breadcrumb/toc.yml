@@ -1,32 +1,32 @@
 - name: "Team Services & TFS" 
   tocHref: /team-services/
-  topicHref: /team-services/vsts-tfs-overview
+  topicHref: /team-services/concepts
   items: 
-  - name: "Overview"
+  - name: "Get started"
     tocHref: /team-services/
-    topicHref: /team-services/vsts-tfs-overview
-  - name: "Set Up & Admin"
-    tocHref: /team-services/setup-admin/
-    topicHref: /team-services/setup-admin/get-started
+    topicHref: /team-services/index
   - name: "Agile tools/Work"
     tocHref: /team-services/work/
-    topicHref: /team-services/work/overview
+    topicHref: /team-services/work/index
     items: 
-      - name: "Customize work tracking"
-        tocHref: /team-services/work/reference
-        topicHref: /team-services/work/customize/customize-work
-      - name: "TFS-Project Server integration"
-        tocHref: /team-services/work/tfs-ps-sync 
-        topicHref: /team-services/work/office/sync-ps-tfs
-  - name: "Build & Release"
+    - name: "Agile tools/Work"
+      tocHref: /team-services/work/
+      topicHref: /team-services/work/index
+    - name: "Customize work tracking"
+      tocHref: /team-services/work/customize/
+      topicHref: /team-services/work/customize/index
+    - name: "TFS-Project Server integration"
+      tocHref: /team-services/work/tfs-ps-sync/
+      topicHref: /team-services/work/office/sync-ps-tfs
+  - name: "DevOps"
     tocHref: /team-services/build/
     topicHref: /team-services/build/overview
-  - name: "Collaborate"
-    tocHref: /team-services/collaborate/
-    topicHref: /team-services/collaborate/overview
   - name: "Dashboards & Reports"
     tocHref: /team-services/report/
     topicHref: /team-services/report/overview
+  - name: "SQL, Excel, & SharePoint (TFS)"
+    tocHref: /team-services/report/sql-reports/
+    topicHref: /team-services/report/sql-reports/reporting-services-reports
   - name: "Git"
     tocHref: /team-services/git/
     topicHref: /team-services/git/overview
@@ -42,9 +42,12 @@
   - name: "TFVC"
     tocHref: /team-services/tfvc/
     topicHref: /team-services/tfvc/overview
-  - name: "Reference"
-    tocHref: /team-services/reference/
-    topicHref: /team-services/reference/overview
+  - name: "Team Services Account Management" 
+    tocHref: /team-services/setup-admin/team-services/
+    topicHref: /team-services/setup-admin/team-services/overview
+  - name: "TFS Administration"
+    tocHref: /team-services/setup-admin/tfs/
+    topicHref: /team-services/setup-admin/get-started
 - name: "Marketplace & Billing"
   tocHref: /team-services/marketplace/
   topicHref: /team-services/marketplace/overview

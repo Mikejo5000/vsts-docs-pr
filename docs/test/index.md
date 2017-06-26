@@ -1,8 +1,8 @@
 ---
-title: Test apps early and often | Visual Studio Team Services and Team Foundation Server
-description: Test apps continuously through development, build, and deployment with Visual Studio Team Services (VSTS) or Team Foundation Server (TFS). Find problems before releasing your app or updates to production.
+title: Test apps early and often - application testing with Visual Studio Team Services and Team Foundation Server
+description: Application testing - test apps continuously through development, build, and deployment with Visual Studio Team Services (VSTS) or Team Foundation Server (TFS). Find problems before releasing your app or updates to production.
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-tools
+ms.technology: vs-devops-test-manual
 ms.assetid: C7D0886A-075D-4A9B-9411-D837F0F02913
 ms.manager: douge
 ms.author: ahomer
@@ -11,9 +11,9 @@ ms.date: 08/12/2016
 
 # Test apps early and often
 
-**Team Services** | **Visual Studio 2017** | **Visual Studio 2015** | [**Previous version**](https://msdn.microsoft.com/library/ms182409%28v=vs.120%29.aspx)
+**Team Services** | **TFS 2017** | **TFS 2015** | [**Previous version**](https://msdn.microsoft.com/library/ms182409%28v=vs.120%29.aspx)
 
-Test continuously while you code, build, and deploy your app.
+Use application testing to test continuously while you code, build, and deploy your app.
 Find problems before launching your app or updates into production. 
 You can then better assess whether your app meets your customers' needs
 and is ready for release. 
@@ -54,9 +54,9 @@ and is ready for release.
 <div style="float:left;width:300px;margin:3px">
 <p style="font-weight:bold;padding-bottom:5px">Developer tools and unit testing</p>
 <ul style="padding-left:30px">
- <li style="margin-bottom:5px">[Overview](developer-testing/index.md)</li>
- <li style="margin-bottom:5px">[Get started](developer-testing/getting-started/getting-started-with-developer-testing.md)</li>
- <li style="margin-bottom:5px">[Unit test your code](https://docs.microsoft.com/en-gb/visualstudio/test/unit-test-your-code)</li>
+ <li style="margin-bottom:5px">[Overview](https://docs.microsoft.com/visualstudio/test/developer-testing-scenarios)</li>
+ <li style="margin-bottom:5px">[Get started](https://docs.microsoft.com/visualstudio/test/unit-test-your-code)</li>
+ <li style="margin-bottom:5px">[Unit test your code](https://docs.microsoft.com/visualstudio/test/unit-test-your-code)</li>
  <li style="margin-bottom:5px">[Perform system tests with Visual Studio](https://msdn.microsoft.com/library/jj620889)</li>
  <li style="margin-bottom:5px">[Automate system tests](https://msdn.microsoft.com/library/ff472576)</li>
 </ul>
@@ -65,7 +65,8 @@ and is ready for release.
 <div style="float:left;width:300px;margin:3px">
 <p style="font-weight:bold;padding-bottom:5px">Set up test environments</p>
 <ul style="padding-left:30px">
- <li style="margin-bottom:5px">[Set up test machines](https://msdn.microsoft.com/library/dd293551)</li>
+ <li style="margin-bottom:5px">[Use a lab environment](https://docs.microsoft.com/visualstudio/test/lab-management/using-a-lab-environment-for-your-application-lifecycle)</li>
+ <li style="margin-bottom:5px">[Use Build and Release instead](https://docs.microsoft.com/visualstudio/test/lab-management/use-build-or-rm-instead-of-lab-management)</li>
  <li style="margin-bottom:5px">[Administer your test lab](https://msdn.microsoft.com/library/dd936084)</li>
  <li style="margin-bottom:5px">[Troubleshoot lab management](https://msdn.microsoft.com/library/ee853230)</li> 
 </ul>

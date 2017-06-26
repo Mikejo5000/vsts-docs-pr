@@ -7,7 +7,7 @@ ms.assetid: 43D2156E-2E20-42B8-B816-43E95CB479C5
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article 
-ms.date: 04/27/2017
+ms.date: 06/01/2017
 ---
 
 # Syntax guidance for Markdown files, widgets, and pull request comments  
@@ -103,13 +103,14 @@ Quote blocks of lines of text by using the same level of `>` across multiple lin
 
 ## Horizontal rules
 
-Add a horizontal rule by adding a new line that's just a series of dashes `---`.
+Add a horizontal rule by adding a new line that's just a series of dashes `---`. There must be a blank line above the line containing the `---`.
 
 **Example:**
 
 <div id="do_not_render">
 <pre>
 above
+&nbsp;
 &#45;&#45;&#45;&#45;
 below
 </pre>

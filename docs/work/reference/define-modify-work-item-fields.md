@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: c735a582-954a-418e-8b12-1b5c0b9857b9  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 03/29/2017
+ms.date: 06/16/2017
 ---
 
 
@@ -34,12 +34,11 @@ The following list shows the supported data types:
 <tbody valign="top">
 <tr>
 	<td><p><strong>Boolean</strong> </p></td>
-	<td><p>Specifies a field that takes on a True/False value. Add a **Boolean** field to a work item form by using the **FieldControl** attributes. </p>
+	<td><p>Specifies a field that takes on a True/False value. Add a **Boolean** field to a work item form by using the **FieldControl** attribute. </p>
 
-<blockquote><b>Feature availability:</b>The Boolean data type field is only supported for Team Services and TFS 2017 and later versions.</blockquote>      
+<blockquote><b>Feature availability:</b> The Boolean data type field is only supported for Team Services and TFS 2017.2 and later versions.</blockquote>      
 
 </td></tr>
-
 <tr>
 	<td><p><strong>DateTime</strong> </p></td>
 	<td><p>Specifies a date according to Coordinated Universal Time (UTC) moment in time. Add a **DateTime** field to a work item form by using either the **FieldControl** or **DateTimeControl** **type** attributes. For query examples, see [Query by date or@CurrentIteration](../track/query-by-date-or-current-iteration.md). </p></td></tr>
@@ -84,7 +83,7 @@ The following list shows the supported data types:
 </td></tr>
 <tr>
 	<td><p> <strong>TreePath</strong> </p></td>
-	<td><p>Specifies a field that displays entries in a hierarchical or tree structure, such as the requirements to display area and iteration paths for a product.   For more information, see [Add and modify area and iteration paths](../customize/modify-areas-iterations.md).</p>
+	<td><p>Specifies a field that displays entries in a hierarchical or tree structure, such as the requirements to display area and iteration paths for a product.   For more information, see [Add and modify area and iteration paths](../customize/set-area-paths.md).</p>
 
 <blockquote><b>Note:</b> The **System.AreaPath** and **System.IterationPath** fields are the only fields that use this data type. You cannot define a custom field using this data type. For the client work item form, you add the **System.AreaPath** and **System.IterationPath** fields to a work item form by using the **WorkItemClassificationControl type** attribute. </blockquote>
 </td></tr>

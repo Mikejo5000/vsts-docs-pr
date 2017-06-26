@@ -24,12 +24,21 @@ The workflow determines the logical progression and regression of work that team
  
 
 > [!NOTE]  
-> This topic describes how to customize a workflow state. If instead, you want to change the State assigned to a specific work item, see one of the following topics: [Add work items, Update work status](../backlogs/add-work-items.md#update-work-status), [Kanban board, Track work in progress](../kanban/kanban-basics.md#track-work), or [Task board, Update task status](../scrum/task-board.md#update-task-status). You can also perform a [bulk update of the State for many work items](../backlogs/bulk-modify-work-items.md).
+> This topic describes how to customize a workflow state. If instead, you want to change the State assigned to a specific work item, see one of the following topics: [Add work items, Update work status](../concepts/work-item-form-controls.md#update-work-status), [Kanban board, Track work in progress](../kanban/kanban-basics.md#track-work), or [Task board, Update task status](../scrum/task-board.md#update-task-status). You can also perform a [bulk update of the State for many work items](../backlogs/bulk-modify-work-items.md).
 > 
 > For information about build definition workflows, see [Get started with CI/CD](../../build/get-started/ci-cd-part-1.md).
 
 
 [!INCLUDE [temp](../_shared/update-xml-wit.md)] 
+
+
+To customize the workflow, follow these two steps:   
+
+1.  Modify the `WORKFLOW` section of the WIT definition as described in this topic.
+
+2.  [Modify the process configuration to map new workflow states to metastates](process-configuration-xml-element.md).  
+
+    This second step is required when you change the workflow for a WIT that appears on an Agile tool page. These WITs belong to either the Requirement or Task categories. To learn more about state categories, see [Workflow states and state categories](../concepts/workflow-and-state-categories.md).  
 
 
 <a name="DesignGuidelines"></a> 
@@ -45,7 +54,7 @@ As you design or modify a workflow, consider the following guidelines:
   
 -  Use the `STATE` element to define a unique state for each team member role that will take a specific action on a work item. The more states you define, the more transitions you must define. Regardless of the sequence in which you define the states, they are listed in alphanumeric order in the drop-down menu for the **State** field.  
   
-     If you add a state to a work item type that appears on the backlog or board pages in the web portal, you must also map the state to a state category. To learn more, review [Workflow states and state categories](#workflow-state-categories).  
+     If you add a state to a work item type that appears on the backlog or board pages in the web portal, you must also map the state to a state category. To learn more, review [Workflow states and state categories](../concepts/workflow-and-state-categories.md).  
   
 -   Use the `TRANSITION` element to define a transition for each valid progression and regression from one state to another.  
   
@@ -63,13 +72,14 @@ As you design or modify a workflow, consider the following guidelines:
   
      The drop-down menus for the State and Reason fields within the work item form or query editor display the values assigned in the `WORKFLOW` section of the work item type.  
   
-##  <a name="ExampleWorkflow"></a> Workflow diagram and code example  
+<a name="ExampleWorkflow"></a> 
+##  Workflow diagram and code example  
 
 The following code example shows the `WORKFLOW` for the Bug WIT definition for the Agile process template. This example defines three states and five transitions. The `STATE` elements specify the Active, Resolved, and Closed states. All possible combinations for progression and regression transitions are defined for the three states, except one. The transition from Closed to Resolved is not defined. Therefore, team members cannot resolve a work item of this type if the work item is closed.  
   
 This example doesn't list all the elements for `DEFAULTREASON`, `REASON`, `ACTION`, and `FIELD`.  
   
-**Example Workflow State Diagram – Agile Bug WIT **
+**Example Workflow State Diagram – Agile Bug WIT**
 
 ![Bug workflow states, Agile process template](_img/procguide_bugworkflow.png "ProcGuide_BugWorkflow") 
   
@@ -271,106 +281,13 @@ You control the states to and from which team members can change a work item if 
 ```  
   
 ## Related notes
+
+- [Workflow states and state categories](../concepts/workflow-and-state-categories.md)  
 - [Customize your work tracking experience](../customize/customize-work.md)  
 - [Query by assignment, workflow or Kanban board changes](../track/query-by-workflow-changes.md)  
 - [Design the work item form](design-work-item-form.md)    
 - [Import, export, and manage work item types](witadmin/witadmin-import-export-manage-wits.md)
 
-
-<a id="workflow-state-categories">  </a> 
-### Workflow elements and state categories
-
-All workflows consist of states, transitions, and reasons. A transition supports forward and backward movement among two states. When you add a custom state, the system automatically adds transitions from the custom state to all other inherited states (except for Removed).  
-
-Each state belongs to a state category (previously referred to as a metastate). State categories support the Agile tool backlog and board views.  If you change or add a state for a WIT that belongs to the Requirements, Task, or Bug categories, you need to update the ProcessConfiguration definition. For details, see [ProcessConfiguration](process-configuration-xml-element.md).
-
-<a id="workflow-states">  </a> 
-#### Workflow states
-
-Workflow states define how a work item progresses from first activation or creation to closed or complete. For example, the four main states defined for the Agile process User Story define a progression of four states, from New, Active, Resolved, to Closed. A fifth state, Removed, also exists to support removing a work item from appearing on the backlog. 
-
-The natural progressions and regressions of the user story, product backlog item, and requirement WITs are as shown.  
-
-<div style="float:left;width:240px;margin:12px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">User Story (Agile)</p>
-<img src="../guidance/_img/ALM_PT_Agile_WF_UserStory.png" title="User Story workflow states, Agile process " alt="User Story workflow states, Agile process" />
-</div>
-
-<div style="float:left;width:220px;margin:12px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Product backlog item (Scrum)</p>
-<img src="../guidance/_img/ALM_PT_Scrum_WF_PBI.png" title="Product backlog item workflow states, Scrum process template" style="padding-left:20px;" alt="Product backlog item workflow states, Scrum process template" />
-</div>
-
-<div style="float:left;width:220px;margin:12px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Requirement (CMMI)</p>
-<img src="../guidance/_img/ALM_PT_CMMI_WF_Requirement.png" title="Requirement workflow states, CMMI process " style="padding-left:20px;" alt="Requirement workflow states, CMMI process " />
-</div>
-
-<div style="clear:left;font-size:100%">
-</div>
-
-
-<a id="state-categories">  </a>  
-#### State  categories
-
-State categories, on the other hand, determine how the Agile planning tools treat each workflow state. The state categories used by the backlogs and boards are Proposed, In Progress, and Complete.
-
-Here's how the default, inherited states map to the state categories for all three system processes plus test case management WITs. The workflow states for Test Case, Test Design, and Test Suite are the same across all three system processes. 
-
-
-<table valign="top" width="100%">
-<tr>
-<th width="30%">Categories</th>
-<th width="14%">Agile</th>
-<th width="14%">Scrum</th>
-<th width="16%">CMMI</th>
-<th width="16%">Test WITs </th>
-</tr>
-<tr valign="top" >
-<td>**Proposed:** Assign to states associated with newly added work items that should appear on the backlog. The first column on the Kanban or task board maps to a Proposed state.</td> 
-<td>New</td> 
-<td>New<br/>Approved<br/>To Do (Task) </td> 
-<td>Proposed<br/></td> 
-<td>Design (Test Case)<br/></td> 
-</tr>
-<tr valign="top" >
-<td>**In Progress:** Assign to states that represent active work. Work items assigned to states mapped to this category will appear in the backlog (unless you choose to hide them) and make up the middle columns on the Kanban boards. </td> 
-<td>Active<br/>Resolved (Epic, Feature, User Story)</td> 
-<td>Committed<br/>Open (Impediment)</td> 
-<td>Active<br/>Resolved (Epic, Feature, Requirement, Task)</td> 
-<td>Active (Test Plan)<br/>In Planning (Test Suite)<br/>In Progress (Test Suite)<br/>Ready (Test Case)<br/></td> 
-</tr>
-<tr valign="top" >
-<td>**Resolved:** Assign to states that represent a solution has been implemented, but are not yet verified. Generally these states apply to bug WITs. Work items in a Resolved state appear on the backlog by default. </td> 
-<td>Resolved (Bug)</td> 
-<td>n/a</td> 
-<td>Resolved (Bug, Issue, Review, Risk)</td> 
-<td>n/a </td> 
-</tr>
-<tr valign="top" >
-<td>**Completed:** Assigned to states that represent work has finished. Work items whose state is in this category don't appear on the backlog and do appear in the last column of the Kanban board. Note that you can't modify states in this category nor can you add states to this category.</td> 
-<td>Closed<br/></td> 
-<td>Done<br/></td> 
-<td>Closed<br/></td> 
-<td>Closed (Test Case)<br/>Completed (Test Suite)<br/>Inactive (Test Plan)</td> 
-</tr>
-<tr valign="top" >
-<td>**Removed:** Assigned to the Removed state. Work items in a state mapped to the Removed category are hidden from the backlog and board experiences.</td> 
-<td>Removed </td> 
-<td>Removed</td> 
-<td>n/a</td> 
-<td>n/a</td> 
-</tr>
-</table>  
-
-
-### When to add a State versus a Kanban column
-
-Both States and Kanban columns are used to track the status of work. Workflow states are shared across a team project while Kanban columns are shared within a team. Only project collection admins can add custom states, while team admins can add Kanban columns.  
-
-Add custom states when you want all teams to track the status according to the business workflow adopted by the organization. By customizing the process, you automatically customize the team projects and WITs that reference that process. 
-
-Also, by adding custom states to support those workflow states that several teams want to track, you avoid the confusion that can arise when team's create a query based on a Kanban column. Because each team can customize the Kanban board columns and swimlanes, the values assigned to work items which appear on different boards may not be the same. The primary work around for this issue is to maintain single ownership of work items by team area path. Another work around is to formalize the columns by adding custom states which can be shared across teams. 
 
 
 <a name="tools"></a> 

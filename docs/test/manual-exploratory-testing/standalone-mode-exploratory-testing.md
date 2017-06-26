@@ -71,6 +71,8 @@ or Team Foundation Server connection to use this mode.
    Share it with the rest of your team as an email attachment, or 
    copy it to OneNote, Word, or in any other format you prefer.
 
+[How do I play the video recordings I created with the extension?](getting-started/perform-exploratory-tests.md#recording-playback)
+
 ## See also
 
 * [Use the Test &amp; Feedback extension in Connected mode](connected-mode-exploratory-testing.md)

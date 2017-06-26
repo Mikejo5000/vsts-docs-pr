@@ -6,8 +6,9 @@ ms.prod: vs-devops-alm
 ms.assetid: 3CEBA118-34EB-4277-B810-418FEC56C860  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/04/2016
----
+ms.date: 05/16/2017
+--- 
+
 
 #Set team defaults  
 
@@ -15,7 +16,7 @@ ms.date: 08/04/2016
  
 Each team has access to a number of Agile tools. Each tool references the team's default area path(s). Several tools reference the team's default and active iteration paths or sprints. Most teams choose one area path and several iteration paths to support their work tracking activities. However, to support other scenarios, it's possible for teams to choose several area paths to appear on their backlogs and boards. 
 
-Prior to setting team defaults, [add the teams](multiple-teams.md) you want and [schedule your shared sprint schedule](../scrum/define-sprints.md). Optionally, [add area paths](../customize/modify-areas-iterations.md) you want to use to group work items. 
+Prior to setting team defaults, [add the teams](multiple-teams.md) you want and [schedule your shared sprint schedule](../scrum/define-sprints.md). Optionally, [add area paths](../customize/set-area-paths.md) you want to use to group work items. 
 
 [!INCLUDE [temp](../_shared/agile-tools-areas-iterations-summary.md)]
 
@@ -45,9 +46,9 @@ You set team defaults from the team admin context.
 
 From a web browser, open the web portal administrative context for your team.  
 
-<img src="_img/stdefaults-open-team-admin-context.png" alt="Open team admin context" style="border: 1px solid #CCCCCC;" />  
+<img src="_img/wit-templates-open-team-admin-context.png" alt="Open team admin context" style="border: 1px solid #CCCCCC;" />  
 
-If you're not a team administrator, [get added as one](../scale/manage-team-assets.md#add-team-admin). Only team or project administrators can change team settings. 
+If you're not a team administrator, [get added as one](../scale/add-team-administrator.md). Only team or project administrators can change team settings. 
 
 <a id="team-area-paths">  </a>
 ## Set team default area path(s) 
@@ -64,7 +65,7 @@ Choose to include sub-area paths when you want to support rollup views of work p
 >Work items that appear on more then one team's Kanban board can yield query results that don't meet your expectations. Because each team can customize the Kanban board [columns](../kanban/add-columns.md) and [swimlanes](../kanban/expedite-work.md), the values assigned to work items which appear on different boards may not be the same. The primary work around for this issue is to maintain single ownership of work items by team area path.   
 
 
-###For Team Services  
+### Team Services and TFS 2017 and later versions 
 
 1.	Open the Work, Areas admin page for the team context.  
 
@@ -85,7 +86,7 @@ Choose to include sub-area paths when you want to support rollup views of work p
 
 	<img src="_img/stdefaults-backlog-management-team-team-services-list.png" alt="Product backlog of team with multiple area paths assigned, Team Services platform" style="border: 1px solid #CCCCCC;" />  
 
-### For TFS  
+### For TFS 2015 and earlier versions  
 
 1. Open the Areas admin page for the team context.  
 
@@ -105,7 +106,7 @@ You [define sprints for the team project](../scrum/define-sprints.md) and then a
 You activate sprints for each team from the admin pages for each team context. The steps differ slightly depending on your platform.
 
 <a id="activate-team-services">  </a>
-### For Team Services  
+### For Team Services and TFS 2017 and later versions  
 
 1.	Open the Work, Iterations page for the team context.  
 
@@ -138,7 +139,7 @@ You activate sprints for each team from the admin pages for each team context. T
 3.	To see the newly activated sprint backlogs, refresh your team's [product backlog page](../backlogs/create-your-backlog.md).  
 
 <a id="activate-sprints-tfs">  </a>
-### For TFS  
+### For TFS 2015 and earlier versions 
 
 1.	Open the Iterations page for the team context.  
 
@@ -170,8 +171,8 @@ You activate sprints for each team from the admin pages for each team context. T
 
 ##Related notes  
 
-- [Define sprints](../scrum/define-sprints.md)  
-- [Customize area and iteration paths](../customize/modify-areas-iterations.md)  
+- [Schedule sprints](../scrum/define-sprints.md)  
+- [Customize area and iteration paths](../customize/set-area-paths.md)  
 - [Query by date or current iteration](../track/query-by-date-or-current-iteration.md)
 - [Multiple teams](multiple-teams.md)  
 - [Configure team settings](manage-team-assets.md)  

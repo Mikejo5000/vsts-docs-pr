@@ -163,7 +163,7 @@ Work Item Type
 ####Notes:   
 
 0. To learn more about working with rich-text fields, see [Share plans](share-plans.md#rich-text).   
-0. Upon upgrade to Team Foundation Server 2012, the Description field was changed from a field type of PlainText to **HTML**. Using the **witadmin changefield** command you can revert the data type for this field. See [Manage work item fields (witadmin)]((../reference/witadmin/manage-work-item-fields.md).
+0. Upon upgrade to Team Foundation Server 2012, the Description field was changed from a field type of PlainText to **HTML**. Using the **witadmin changefield** command you can revert the data type for this field. See [Manage work item fields (witadmin)](../reference/witadmin/manage-work-item-fields.md).
 
 ## Related notes
 - [Query editor](using-queries.md)   

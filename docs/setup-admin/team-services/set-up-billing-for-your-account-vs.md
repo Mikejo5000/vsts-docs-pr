@@ -14,12 +14,10 @@ ms.date: 04/28/2017
 
 **Team Services**
 
-You only have to set up billing when you need more Team Services users, 
-pipelines for Build & Release, and virtual user minutes for 
-Cloud-Based Load Testing than the free amounts get with your Team Services account, 
-or when you want to buy paid Team Services extensions from the 
-[Visual Studio Marketplace](https://marketplace.visualstudio.com/). 
-Learn [what you get for free in Team Services](https://www.visualstudio.com/team-services/pricing/).
+You have to set up billing when you need more than the free limits in your Team Services account (number of Team 
+Services users, pipelines for Build & Release, or virtual user minutes for Cloud-Based Load Testing. Also, when 
+you want to buy Team Services extensions from the 
+[Visual Studio Marketplace](https://marketplace.visualstudio.com/). Learn [what you get for free in Team Services](https://www.visualstudio.com/team-services/pricing/).
 
 > If this is your first time paying for Team Services users, pipelines, 
 > or extensions, you can go directly to the Visual Studio Marketplace and 
@@ -41,25 +39,24 @@ Learn [what you get for free in Team Services](https://www.visualstudio.com/team
 Microsoft Azure handles billing for your Team Services account, 
 so you'll need:
 
-* [Team Services account owner permissions](#find-owner)
+* [Team Services project collection administrator or account owner permissions](#find-owner)
 
 <a name="EligibleAzureSubscription"></a>
 
 * An [Azure subscription](#AzureMSDNSubscription) to bill your purchases. 
-You must have at least subscription [Co-administrator](#AddAzureAdmin) 
-permissions to link this subscription to your Team Services account.
+You must have at least [an **owner** or **contributor** role](#AddAzureAdmin) 
+to link this subscription to your Team Services account.
 
     [Sign up for an Azure subscription](https://account.windowsazure.com/subscriptions/), 
     if you don't have one. Or have an Azure administrator 
-    [add you as Co-administrator](#AddAzureAdmin) 
+    [add you as an **owner** or **contributor** role](#AddAzureAdmin) 
     to an Azure subscription that you can use to bill purchases. 
     Make sure to use the same email address 
-    that you sign in with as Team Services account owner.
+    that you sign in to Team Services with for this activity.
 
     You'll link this Azure subscription to your Team Services 
-    account in the [Azure classic portal](https://manage.windowsazure.com) 
-    or [Azure portal](https://portal.azure.com). 
-    Your Azure subscription has all the necessary billing information, 
+    account in the [Azure portal](https://portal.azure.com).  Your 
+    Azure subscription has all the necessary billing information, 
     so you won't set this up separately for your Team Services account.
     [How does Azure billing work?](#azure-billing)
 
@@ -67,52 +64,8 @@ permissions to link this subscription to your Team Services account.
     contact [Azure Support](http://azure.microsoft.com/en-us/support/options/).
 
 <a name="Link"></a>
-## Link an Azure subscription to your Team Services account for billing
-
-Follow the steps for the Azure classic portal or 
-[Azure portal](#AzurePortal). Both portals give you the same results. 
-
-### Azure classic portal
-
-0. [Sign in to the Azure classic portal](https://manage.windowsazure.com/) 
-as Team Services account owner and as Azure subscription Co-administrator or greater.
-
- [Browser problems in Azure?](https://azure.microsoft.com/en-us/documentation/articles/azure-preview-portal-supported-browsers-devices/)
-
-0. Go to **Visual Studio Team Services**. 
-Start linking your account.
-
-    ![Link your Team Services account to your Azure subscription](./_img/set-up-billing/AzureDeveloperServicesStart.png)
-
-0. Go to **Link to Existing**. 
-Select your Team Services account, 
-if you have multiple accounts. 
-
-  ![Select Team Services account and Azure subscription](./_img/set-up-billing/AzureProvideAccountName.png)
-
-  [Why don't my options look the same?](#SettingsDescription)
-
-  If you have multiple subscriptions, 
-  you can also select an Azure subscription.
-
-  ![Select Team Services account and Azure subscription](./_img/set-up-billing/azure-select-subscription.png)
-
-0.  Finish linking your account. 
-
-    After Azure sets up the link, 
-  your Team Services account appears 
-  linked to your Azure subscription.
-
-    ![Your Team Services account appears in the Azure classic portal](./_img/set-up-billing/AzureAccountNowLinked.png)
-
-#### Next
-
-* [Pay for more users](buy-basic-access-add-team-services-users.md)
-* [Buy more pipeline capacity for builds](buy-more-build-vs.md)  
-* [Buy more cloud-based testing services](buy-load-testing-vs.md)  
-
 <a name="AzurePortal"></a>
-### Azure portal
+## Link an Azure subscription to your Team Services account for billing
 
 0. [Sign in to the Azure portal](https://portal.azure.com/) 
 as Team Services account owner and as Azure subscription Co-administrator or greater.
@@ -122,7 +75,7 @@ as Team Services account owner and as Azure subscription Co-administrator or gre
 0. Go to **More services** > **Developer tools** > **Team Services accounts**. 
 Select your Team Services account.
 
-    ![More services, Developer tools, Team Services accounts, select your account](./_img/set-up-billing/AP_VSO_StartLink.png)
+    ![More services, Developer tools, Team Services accounts, select your account](_img/set-up-billing/AP_VSO_startlink2.png)
 
 0. Choose the **Link** button.
 
@@ -145,21 +98,23 @@ Select your Team Services account.
 <a name="AddAzureAdmin"></a>
 ## Add backup billing managers for your Team Services account
 
-To let others manage billing or make purchases for your Team Services account, 
-add a Co-administrator to the Azure subscription that's linked to your Team Services account.
+To let others manage billing or make purchases through Visual Studio Marketplace for your Team Services account, 
+add **owner** or **contributor** roles to users in the Azure subscription that's linked to your Team Services account.
 
-0. [Sign in to the Azure classic portal](https://manage.windowsazure.com/) 
-as the Azure subscription administrator. 
 
-    You can only add subscription 
-    Co-administrators through the Azure classic portal.
+[Sign in to the Azure portal](https://portal.azure.com/) as the Azure subscription administrator, and navigate to access control to add owners or contributors:
 
-0. Go to **Settings** > **Administrators** > **Add**. 
-Add a Co-administrator to your Azure subscription.
+![access control adding owners and contributors](_img/set-up-billing/ap-add-owncontrib.png)
 
- ![Add a Co-administrator to your Azure subscription](./_img/set-up-billing/AzureAddSubscriptionAdmin.png)
+Owners and contributors of the Azure subscription linked to your Team Services account can make purchases in the 
+Marketplace.  Owners can also add these roles to other users.
 
-See also [Pay for more users](buy-basic-access-add-team-services-users.md).
+Learn more about [viewing access assignments for users](https://docs.microsoft.com/en-us/azure/active-directory/role-based-access-control-manage-assignments#view-access-assignments).
+
+If needed, you can [pay for more users](buy-basic-access-add-team-services-users.md).
+
+Learn more about [adding roles in Azure portal](https://docs.microsoft.com/en-us/azure/active-directory/role-based-access-control-configure#add-access).
+
 
 <a name="change-azure-subscription"></a>
 ## Change the Azure subscription your Team Services account uses for billing
@@ -170,9 +125,9 @@ and relink your account to another Azure subscription that's associated with you
 
 ### What do I need to change my Azure subscription?
 
-* Team Services account owner permissions [How do I find the account owner?](#find-owner)
+* Team Services project collection administrator or account owner permissions ([How do I find the project collection administrator or account owner permissions](#find-owner))
 
-* At least [Co-administrator](#AddAzureAdmin) or greater permisisons for both Azure subscriptions
+* At least [an **owner** or **contributor** role](#AddAzureAdmin) for both Azure subscriptions
 
 > When you unlink your account, any paid users or pipelines that you've 
 > committed for the month will stay unaffected until the 1st of next month, 
@@ -181,12 +136,11 @@ and relink your account to another Azure subscription that's associated with you
 > non-Microsoft paid extensions without refund or credit.
 >
 > When you relink your account to another Azure subscription, 
-> you'll have to restore any previous amounts of paid users, 
-> extensions, or pipelines by repurchasing them in the 
+> you'll have to add again your paid users, 
+> extensions, and pipelines by repurchasing them in the 
 > Visual Studio Marketplace, or if applicable, 
-> resetting previous quantities in the Azure portal, 
-> for example, for Cloud-based Load Testing. 
-> If you've paid for any Microsoft resources this month, 
+> resetting previous quantities in the Azure portal.  If 
+> you've paid for any Microsoft resources this month, 
 > those resources won't be billed again, 
 > but rebuying non-Microsoft extensions 
 > will be treated as new purchases and 
@@ -196,45 +150,11 @@ and relink your account to another Azure subscription that's associated with you
 > your Team Services account will revert back to the free amounts, 
 > for example, 5 free users. This means that if you have 
 > any paid users, they'll appear expired in your Team Services account. 
-> So, make sure to restore any paid users promptly so they don't lose access 
-> on the 1st of next month. Learn more about 
-> [what happens when you unlink your Team Services account](#unlinking).
+> So, make sure to restore any paid users so they don't lose access 
+> on the 1st of next month.
 
-Follow the steps for the Azure classic portal or 
-[Azure portal](#AzurePortal2). Both portals give you the same results.
-
-### Azure classic portal
-
-0. [Sign in to the Azure classic portal](https://manage.windowsazure.com/) 
-as Team Services account owner and as Azure subscription Co-administrator or greater.
-
- [Browser problems in Azure?](https://azure.microsoft.com/en-us/documentation/articles/azure-preview-portal-supported-browsers-devices/)
-
-0. Go to **Visual Studio Team Services**. 
-Select your Team Services account. Unlink your account.
-
- ![Visual Studio Team Services, select your account, unlink your account](./_img/set-up-billing/azure-unlink-account.png)
-
- Your Team Services account is removed from Azure. 
- You'll now relink your account to a new Azure subscription.
-
-0.  Go to **New** > **Link to Existing**. 
-Select your Team Services account and your Azure subscription. 
-
- ![Go to New, App Services, Visual Studio Team Services, Link to Existing. Select account and Azure subscription](./_img/set-up-billing/relink-subscription-account.png)
-
- After you finish relinking, your account 
- reappears in the Azure portal with your 
- selected Azure subscription. For more details, see 
- [how to link your Team Services account to an Azure subscription](#Link).
-
-0. Follow these steps to restore any 
-[paid users](buy-basic-access-add-team-services-users.md), 
-[pipelines, or virtual user minutes for Cloud-based Load Testing](buy-more-build-vs.md), or 
-[virtual user minutes for cloud-based load testing](buy-load-testing-vs.md).
 
 <a name="AzurePortal2"></a>
-### Azure portal
 
 0. [Sign in to the Azure portal](https://portal.azure.com/) 
 as Team Services account owner and as Azure subscription Co-administrator or greater.
@@ -245,11 +165,11 @@ as Team Services account owner and as Azure subscription Co-administrator or gre
 0. Go to **More services** > **Developer tools** > **Team Services accounts**. 
 Select your Team Services account.
 
- ![More services, Developer tools, Team Services, select your account](./_img/_shared/AP_VSO_SelectLinkedAccount.png)
+ ![More services, Developer tools, Team Services, select your account](_img/_shared/AP_VSO_SelectLinkedAccount.png)
 
 0. Unlink your account.
 
- ![Unlink your account](./_img/_shared/azure-portal-unlink-subscription.png)
+ ![Unlink your account](_img/_shared/azure-portal-unlink-subscription.png)
 
  Your Team Services account is removed from Azure. 
  You'll now relink your account to a new Azure subscription.
@@ -257,12 +177,12 @@ Select your Team Services account.
 0. Go to **More services** > **Developer tools** > **Team Services accounts**. 
 Select your Team Services account.
 
- ![More services, Developer tools, Team Services accounts, select your account](./_img/set-up-billing/AP_VSO_StartLink.png)
+ ![More services, Developer tools, Team Services accounts, select your account](_img/set-up-billing/AP_VSO_startlink2.png)
 
 0. Select your Azure subscription. 
 Finish relinking your account.
 
- ![Select an Azure subscription](./_img/set-up-billing/AP_VSO_change-azure-subscription.png)
+ ![Select an Azure subscription](_img/set-up-billing/AP_VSO_change-azure-subscription.png)
 
  After you finish relinking, 
  your account reappears in the Azure portal with 
@@ -276,11 +196,11 @@ that you had in Azure.
 
 ## Q&A
 
-<!-- BEGINSECTION class="md-qanda" -->
-
 [!INCLUDE [browser-problems-azure](../../_shared/qa-browser-problems-azure.md)]
 
 <a name="find-owner"></a>
+
+[!INCLUDE [find project collection administrator](../../_shared/qa-find-project-collection-administrator.md)]
 
 [!INCLUDE [find-account-owner](../../_shared/qa-find-account-owner.md)]
 
@@ -452,7 +372,7 @@ fixing this issue reactivates your subscription and restores your account's paid
 <a name="unlinking"></a>
 ####Q: What happens if I unlink my Team Services account?
 
-A: Your account will revert to the free amounts 
+A: Your account will revert to the free number 
 of users and pipelines on the 1st of next month, 
 but Cloud-based Load Testing **immediately** 
 reverts to your free monthly limits. 
@@ -462,23 +382,19 @@ extensions **without refund or credit**.
 You can relink your Team Services account 
 to another Azure subscription by going to 
 the Visual Studio Marketplace and repurchasing 
-any paid Team Services users, pipelines, 
+Team Services users, pipelines, 
 or other extensions that you paid for this month. 
-You can also relink by going to the Azure portal. 
-Also, if you previously increased your 
-capacity for Cloud-based Load Testing, 
-you'll have to reset this quantity in the Azure portal. 
-If you've paid for any Microsoft resources this month, 
-those resources won't be billed again, 
-but rebuying non-Microsoft extensions will be treated as 
-new purchases and be billed immediately to your 
+You can also relink by going to the Azure portal.  If
+you've paid for any Microsoft resources this month, 
+those resources won't be billed again.  Buying non-Microsoft extensions again will be treated as 
+new purchases, and the Marketplace will bill immediately to your 
 new Azure subscription.
 
 If you wait until the 1st of next month to relink, 
 your Team Services account will revert to the free amounts. 
 Any paid users will appear expired in your account's 
 Users hub. Make sure that you repurchase any paid users 
-promptly so they don't lose access on the 1st of next month.
+so they don't lose access on the 1st of next month.
 
 <a name="get-support"></a>
 

@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: D6616411-43D4-4A81-8951-772D98BD1569  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 03/29/2017
+ms.date: 06/19/2017
 ---
 
 # Add a custom field to a work item type (Inheritance process model)  
@@ -188,7 +188,7 @@ Use the Identity field to add a field similar to the Assigned To field. Identity
 <a id="add-existing-field">  </a>
 ## Add an existing field to another WIT
 
-Existing fields correspond to any inherited field defined within the  collection and any custom fields added to the process you're customizing. Once you've added a custom field to one WIT, you can add it to others from the form menu. Simply open the work item and choose the existing field. Custom fields you added to a different process aren't available for selection.   
+Existing fields correspond to any inherited field and custom field defined within the collection. Once you've added a custom field to one WIT, you can add it to others from the form menu. Simply open the work item and choose the existing field. 
 
 For a list of all work item fields defined for all WITs and processes, see the [Work item field index](../guidance/work-item-field.md).  
 
@@ -255,6 +255,13 @@ Additional topics of interest:
 - [Customize a process](customize-process.md)    
 - [Customize cards on boards](../customize/customize-cards.md)  
 - [Show bugs on backlogs and boards](../customize/show-bugs-on-backlog.md)  
+
+If you are working with test plans or test cases, see these topics: 
+- [Create a test plan](../../test/manual-exploratory-testing/getting-started/create-a-test-plan.md)  
+- [Create manual test cases](../../test/manual-exploratory-testing/getting-started/create-test-cases.md)   
+
+
+
 
 <!---
 <a id="revert">  </a>

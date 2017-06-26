@@ -6,10 +6,10 @@ ms.prod: vs-devops-alm
 ms.assetid: 764D98C3-9DAD-4F40-8D5D-D0C95E023485
 ms.manager: douge
 ms.author: kaelli
-ms.date: 04/04/2017
+ms.date: 05/16/2017
 ---
 
-#Add a portfolio backlog level
+# Add a portfolio backlog level
 
 <b>Team Services (Hosted XML) | TFS 2017 | TFS 2015 | TFS 2013</b> 
 
@@ -26,6 +26,12 @@ Your team project comes equipped with two portfolio backlogs: Features and Epics
 >If you haven't yet enabled the Portfolio Backlogs feature for your on-premises TFS, [do that first](configure-features-after-upgrade.md).  
 
 Here, we add a third portfolio backlog, Initiative. With it, the management team can set priorities and view progress of work belonging to initiatives.  
+
+<a id="image-diff"></a>  
+
+>[!NOTE]  
+>The images you see from your web portal may differ from the images you see in this topic. These differences result from updates made to your on-premises TFS, and the process template chosen when creating your team project&mdash;[Agile](/team-services/work/guidance/agile-process), [Scrum](/team-services/work/guidance/scrum-process), or [CMMI](/team-services/work/guidance/cmmi-process). However, the basic functionality available to you remains the same unless explicitly mentioned. 
+
 
 ![A view of three portfolio backlogs enabled](_img/three-level-portfolio-backlog.png)
 
@@ -125,7 +131,8 @@ Add the Initiative Category to the Categories.xml file. (The Categories.xml file
   <CATEGORY name="Initiative Category" refname="FabrikamFiber.InitiativeCategory">  
     <DEFAULTWORKITEMTYPE name="Initiative" />  
   </CATEGORY>  
-	```  
+```  
+
 You can add this category anywhere within the definition file. Since you are adding a custom category, label the category using your company name.  
 
 
@@ -137,38 +144,43 @@ In this last step, you add the Initiative portfolio backlog to the process and m
 1.	Edit the ProcessConfiguration file to add a new portfolio backlog within the ```PortfolioBacklogs``` section. (The ProcessConfiguration.xml file is located in the WorkItem Tracking/Processfolder of the ProcessTemplate folder.)
 
 	Add the Initiative Category by adding the following syntax. Replace the names, workflow state values, and default column fields to match those that you use. 
+
 	```
-	    <PortfolioBacklog category="FabrikamFiber.InitiativeCategory" pluralName="Initiatives" singularName="Initiative" workItemCountLimit="1000">
-	      <States>
-	        <State value="New" type="Proposed" />
-	        <State value="Active" type="InProgress" />
-	        <State value="Resolved" type="InProgress" />
-	        <State value="Closed" type="Complete" />
-	      </States>
-	      <Columns>
-	        <Column refname="System.WorkItemType" width="100" />
-	        <Column refname="System.Title" width="400" />
-	        <Column refname="System.State" width="100" />
-	        <Column refname="Microsoft.VSTS.Scheduling.Effort" width="50" />
-	        <Column refname="Microsoft.VSTS.Common.BusinessValue" width="50" />
-	        <Column refname="Microsoft.VSTS.Common.ValueArea" width="100" />
-	        <Column refname="System.Tags" width="200" />
-	      </Columns>
-	      <AddPanel>
-	        <Fields>
-	          <Field refname="System.Title" />
-	        </Fields>
-	      </AddPanel>
-	    </PortfolioBacklog>
+    <PortfolioBacklog category="FabrikamFiber.InitiativeCategory" pluralName="Initiatives" singularName="Initiative" workItemCountLimit="1000">
+      <States>
+        <State value="New" type="Proposed" />
+        <State value="Active" type="InProgress" />
+        <State value="Resolved" type="InProgress" />
+        <State value="Closed" type="Complete" />
+      </States>
+      <Columns>
+        <Column refname="System.WorkItemType" width="100" />
+        <Column refname="System.Title" width="400" />
+        <Column refname="System.State" width="100" />
+        <Column refname="Microsoft.VSTS.Scheduling.Effort" width="50" />
+        <Column refname="Microsoft.VSTS.Common.BusinessValue" width="50" />
+        <Column refname="Microsoft.VSTS.Common.ValueArea" width="100" />
+        <Column refname="System.Tags" width="200" />
+      </Columns>
+      <AddPanel>
+        <Fields>
+          <Field refname="System.Title" />
+        </Fields>
+      </AddPanel>
+    </PortfolioBacklog>
 	```
 
 	If you have modified the workflow states, then verify that each work flow state is mapped to one of the metastates of ```Proposed```, ```InProgress```, and ```Complete```. The last state within the workflow must map to ```Complete```.
 
 2.	Edit the ```PortfolioBacklog``` element for the Epic Category to point to ```Initiative``` as the parent backlog.  
 	
-	```<PortfolioBacklog category="Microsoft.EpicCategory" pluralName="Epics" singularName="Epic" parent="FabrikamFiber.InitiativeCategory" workItemCountLimit="1000">``` <br/>
-	```. . . ``` <br/>
-	```</PortfolioBacklog>``` <br/>
+	```
+	<PortfolioBacklog category="Microsoft.EpicCategory" pluralName="Epics"  
+	   singularName="Epic" parent="FabrikamFiber.InitiativeCategory"      
+	   workItemCountLimit="1000">   
+	   . . .  
+	</PortfolioBacklog>
+	```  
 
 	Intermediate portfolio backlogs require specifying the parent category, which must be configured as a portfolio backlog.  
 
@@ -196,7 +208,8 @@ In this last step, you add the Initiative portfolio backlog to the process and m
 
 
 <a id="import-export">  </a>
-##Import and export definition files (on-premises TFS only) 
+## Import and export definition files (on-premises TFS only) 
+
 If you're updating a team project that connects to an on-premises TFS, you'll use the **witadmin** commands to import and export definition files. You need to export the following files: 
 - Epic.xml
 - Categories.xml (located in the WorkItem Tracking folder)

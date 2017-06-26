@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: 2B500AEA-165C-428D-B580-C9C0A8D01635
 ms.manager: douge
 ms.author: kaelli
-ms.date: 05/10/2017
+ms.date: 05/23/2017
 ---
 
 # Differences between Team Services and TFS process template customizations  
@@ -16,9 +16,9 @@ ms.date: 05/10/2017
 >[!IMPORTANT]  
 >**Feature availability:**&#160;&#160;Import process supports the Hosted XML process model which allows you to manage customizations through updating select XML definition files of a process template. This feature is only available for accounts that have been migrated to Team Services using the [TFS Data Import Service](https://aka.ms/TFSDataImport). [Contact us](mailto:vsocustpt@microsoft.com) if you have any questions about Team Services process customization. 
 >
->If you use the Inheritance process model, you can customize your work tracking through the user interface by [creating an inherited process](../process/manage-process.md). 
+>If you use the Inheritance process model, you can customize your work tracking through the user interface by [creating an Inheritance process](../process/manage-process.md). If you use the On-premises XML process model, you can customize a process template, see [Upload or download a process template](../guidance/manage-process-templates.md) and [Customize a process template](../reference/process-templates/customize-process.md).
 >
->If you use the On-premises XML process model, you can customize a process template, see [Upload or download a process template](../guidance/manage-process-templates.md) and [Customize a process template](../reference/process-templates/customize-process.md).<br/><br/> To learn more about process models, see [Customize work tracking](../customize/customize-work.md).  
+>To learn more about process models, see [Customize work tracking](../customize/customize-work.md).  
 
 Team Services uses a different model than Team Foundation Server (TFS) for relating projects and process.  
 * In TFS, process templates are used as starting points for projects and once a project is created, the project is the scope you customize.
@@ -59,18 +59,8 @@ The following plug-ins and their associated files are ignored.
 Custom plug-ins aren't supported. 
 
 ## Object limits 
-When customizing a process template for import, limit the number of the following objects you define.  
-*   64 WITs   
-*   512 fields per process
-*   256 fields per WIT
-*   16 custom states per WIT
-*   64 person-name fields    
-*   1024 field rules per process
-*   64 global lists / 512 items per list with a maximum of 10K items total 
-*   128 pick list values per field   
-*   5 portfolio backlogs  
-*   32 categories per process 
-*   32K character limit on each predefined work item query (.wiq file)                                                                                                                                         
+When customizing a process template for import, limit the number of the objects you define as specified in [Work tracking object limits](../customize/object-limits.md).  
+                                                                                                                            
 
 ## Tools with limited support 
 When you connect to Team Services, you can use the following tools subject to limitations:   
@@ -82,4 +72,7 @@ When you connect to Team Services, you can use the following tools subject to li
 [!INCLUDE [temp](../_shared/process-editor.md)]  
 
 
+## Related notes
 
+- [Work tracking object limits](../customize/object-limits.md)   
+- [Customize work tracking](../customize/customize-work.md) 

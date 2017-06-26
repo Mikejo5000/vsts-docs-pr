@@ -9,7 +9,7 @@ ms.author: ahomer
 ms.date: 08/12/2016
 ---
 
-# User acceptance testing
+# Perform user acceptance testing
 
 [!INCLUDE [version-header-ts-tfs](../../_shared/version-header-ts-tfs.md)] 
 

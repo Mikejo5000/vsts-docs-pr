@@ -81,17 +81,21 @@ You'll need [Team Services project collection administrator or account owner per
 
 	[Why am I asked to choose between my "work or school account" and my "personal account"?](#ChooseOrgAcctMSAcct)
 
-0.  Go to **Users** where you can view 
-and assign access levels for all account users.
+0.  Go to **Users** where you can view and assign access levels for all account users.
 
-	<p><a data-toggle="collapse" href="#expando-no-users-hub">Why can't I access the Users hub? &#x25BC;</a></p>
-	<div class="collapse" id="expando-no-users-hub">
-	<p>You must have [Team Services project collection administrator permissions or account owner permissions](#find-owner) to access the Users hub.
-	</div>
+	Why can't I access the Users hub?  You must have [Team Services project collection administrator permissions or account owner permissions](#find-owner) to access the Users hub.
 
-     <img alt="Go to Users hub" src="./_img/_shared/users-hub-updated.png" style="border: 1px solid #CCCCCC" />
+ > [!NOTE]
+ > If have an Azure Active Directory (Azure AD) backed Team Services account, and you need to add users who are 
+ > external to your Azure AD, first 
+ > [add those users as foreign principals](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-create-users#add-a-user) to 
+ > your Azure AD.  Be sure on the **Tell us about this user page**, under **Type of user**, to choose **User with an 
+ > existing Microsoft account**.  After completing those steps, follow the steps below to add the foreign Azure AD 
+ > user to Team Services.
+
+    ![Go to Users hub](_img/_shared/users-hub-updated.png)
 	
-    <img alt="Your account access appears in the Users hub" src="./_img/assign-licenses/VSO-UsersHub-OwnerOnly.png" style="border: 1px solid #CCCCCC" />
+    ![Your account access appears in the Users hub](_img/assign-licenses/VSO-UsersHub-OwnerOnly.png)
 
 0.	Add the user's email address. 
 Select their access level, based on the features they need. 
@@ -113,7 +117,7 @@ Select their access level, based on the features they need.
 	You can then find them in that directory when you add them to your 
 	account by searching for their email addresses or display names.
 	<p>
-	<img alt="Add users from a directory when connected to your account" src="./_img/assign-licenses/users-hub-add-from-directory.png" style="border: 1px solid #CCCCCC" />
+	![Add users from a directory when connected to your account](_img/assign-licenses/users-hub-add-from-directory.png)
 	<p>
 	</div>
 
@@ -131,7 +135,7 @@ Select their access level, based on the features they need.
 	<li>**[Stakeholder](https://www.visualstudio.com/team-services/compare-features/)**: Unlimited users who get Stakeholder features 
 	<p>
 	<p>For users who just need features like working with your backlog, work items, and queries. 
-	Learn about [working as a stakeholder](../../work/connect/work-as-a-stakeholder.md). 
+	Learn about [working as a stakeholder](../../quickstart/get-started-stakeholder.md). 
 	<p>
 	<li>**[Visual Studio/MSDN Subscriber](https://www.visualstudio.com/team-services/compare-features/)**: 
 	Unlimited users whose [Visual Studio subscriptions include Team Services as a benefit](https://azure.microsoft.com/en-us/pricing/details/visual-studio-team-services/). 
@@ -142,12 +146,12 @@ Select their access level, based on the features they need.
 
 	For example, to add another Visual Studio subscriber:
 
-	<img alt="Add Visual Studio subscribers" src="./_img/assign-licenses/VSO-UsersHub-AddMSDNUsers.png" style="border: 1px solid #CCCCCC" />
+	![Add Visual Studio subscribers](_img/assign-licenses/VSO-UsersHub-AddMSDNUsers.png)
           
 	Team Services automatically recognizes and validates Visual Studio subscribers, 
 	and assigns access levels that match their subscriptions, no matter which access levels you give them.
 	   
-	<img alt="Team Services validates Visual Studio subscribers when they sign in" src="./_img/assign-licenses/VSO-UsersHub-LicenseValidated.png" style="border: 1px solid #CCCCCC" />
+	![Team Services validates Visual Studio subscribers when they sign in](_img/assign-licenses/VSO-UsersHub-LicenseValidated.png)
 
 	[Why won't my subscription validate when I sign in?](#ValidateMSDNSubscription)
 
@@ -155,7 +159,7 @@ Select their access level, based on the features they need.
 	adding Visual Studio subscribers, some free users who get Basic features, 
 	a Stakeholder, and paying for more users with get Basic features:
 
-	<img alt="Added users and assigned access" src="./_img/assign-licenses/VSO-UsersHub-BoughtLicenses-Stake.png" style="border: 1px solid #CCCCCC" />
+	![Added users and assigned access](_img/assign-licenses/VSO-UsersHub-BoughtLicenses-Stake.png)
 
 	Your user summary shows only the number of users with access levels assigned to them.
 
@@ -213,9 +217,9 @@ Before you start, you'll need
 Select the user, 
 then choose **Delete**.
 
-    <img alt="Go to Users hub" src="./_img/_shared/users-hub-updated.png" style="border: 1px solid #CCCCCC" />
+    ![Go to Users hub](_img/_shared/users-hub-updated.png)
 
-    <img alt="Delete users from the Users hub" src="./_img/assign-licenses/VSO-UsersHub-DeleteUser.png" style="border: 1px solid #CCCCCC" />
+    ![Delete users from the Users hub](_img/assign-licenses/VSO-UsersHub-DeleteUser.png)
 
 0.	To make sure that you've removed the user completely, 
 check your [security groups and permissions](../add-users.md). 
@@ -272,7 +276,7 @@ subscribers who have Team Services as a benefit.
 
 For example, if you select "Visual Studio/MSDN Subscriber", 
 but you don't have a valid and active Visual Studio subscription, you can only 
-[work as a stakeholder](../../work/connect/work-as-a-stakeholder.md).
+[work as a stakeholder](../../quickstart/get-started-stakeholder.md).
 
 <a name="EligibleMSDNSubscriptions"></a>
 
@@ -347,7 +351,7 @@ no matter the current access level that's assigned to them.
 ####Q:  What happens if a user's subscription expires?
 
 A:  If no other access levels are available, they'll 
-[work as stakeholders](../../work/connect/work-as-a-stakeholder.md). 
+[work as stakeholders](../../quickstart/get-started-stakeholder.md). 
 To restore access, they must renew their subscription.
 
 <a name="extension-transition"></a>
@@ -355,15 +359,10 @@ To restore access, they must renew their subscription.
 ####Q: What happened to Visual Studio Online Professional?
 
 A:	On December 1, 2015, we replaced Visual Studio Online Professional with the 
-[Visual Studio Professional monthly subscription](https://marketplace.visualstudio.com/items/ms.vs-professional-monthly) 
-and will transition users automatically. While Visual Studio Online Professional 
-purchases now appear as Visual Studio Professional monthly subscriptions on your monthly invoice, 
-we haven't determined when users will be transitioned systematically. 
-This transition provides an upgrade by offering access to unlimited 
-Team Services accounts, not just one account, like Visual Studio Online Professional. 
-The rest stays the same - monthly access to the Visual Studio Professional IDE, 
-and pricing remains at $45 per user, per month.
-Learn more about [Visual Studio subscriptions](https://www.visualstudio.com/products/how-to-buy-vs).
+[Visual Studio Professional monthly subscription](https://marketplace.visualstudio.com/items/ms.vs-professional-monthly). While  Visual Studio Online Professional purchases now appear as Visual Studio Professional monthly subscriptions on your monthly invoice, 
+we haven't determined when users will be transitioned systematically. This transition provides an upgrade by offering access to  unlimited Team Services accounts, not just one account, like Visual Studio Online Professional.  The rest stays the 
+same - monthly access to the Visual Studio Professional IDE, and pricing remains at $45 per user, per month.  Learn more 
+about [Visual Studio subscriptions](https://www.visualstudio.com/products/how-to-buy-vs).
 
 If you're buying Professional users for a specific Team Services account,
 which is possible only if you bought before November 2015,
@@ -407,10 +406,10 @@ Learn [how to buy Visual Studio subscriptions](../../marketplace/vs-subscription
 
 A:  This might happen for different reasons, 
 but meanwhile, you or your team member can continue 
-[working as a stakeholder](../../work/connect/work-as-a-stakeholder.md):
+[working as a stakeholder](../../quickstart/get-started-stakeholder.md):
 
 *	Your or your team member's Visual Studio subscription has expired. 
-Meanwhile, they'll [work as stakeholders](../../work/connect/work-as-a-stakeholder.md), 
+Meanwhile, they'll [work as stakeholders](../../quickstart/get-started-stakeholder.md), 
 or you can give them Basic access until they renew their subscriptions.
 After they sign in, Team Services will restore their access automatically.
 

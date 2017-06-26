@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: 8afd3481-6fab-401d-90ff-0dd443da0f0e
 ms.manager: douge
 ms.author: kaelli
-ms.date: 02/12/2017
+ms.date: 06/22/2017
 ---
 
 #Add columns
@@ -120,7 +120,7 @@ First, open the Kanban portal for your team project. Click the **Board** link fr
 
 	<img src="_img/add-columns-open-settings-ts.png" alt="Team Services, Kanban board, open common configuration settings" style="border: 1px solid #CCCCCC;" />  
 
-	<p>If you're not a team admin, [get added as one](../scale/manage-team-assets.md#add-team-admin). Only team and project admins can customize columns.</p>  
+	<p>If you're not a team admin, [get added as one](../scale/add-team-administrator.md). Only team and project admins can customize columns.</p>  
 </li>
 <li><p>Click a column tab to see all the settings you can modify. Your initial column settings will look something like this.</p>  
 
@@ -151,7 +151,7 @@ First, open the Kanban portal for your team project. Click the **Board** link fr
 <ol>
 <li><p>To open, click ![gear icon](../_img/icons/team-settings-gear-icon.png), the gear icon, to open the team settings dialog and then click Columns.</p>
 <img src="../customize/_img/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 1px solid #CCCCCC;" />
-<p>If you're not a team admin, [get added as one](../scale/manage-team-assets.md#add-team-admin). Only team and project admins can customize columns.</p>
+<p>If you're not a team admin, [get added as one](../scale/add-team-administrator.md). Only team and project admins can customize columns.</p>
 </li>
 <li><p>Click a column tab to see all the settings you can modify. Your initial column settings will look something like this.</p>
 ![Kanban board, Customize columns, default columns, Agile process](_img/add-columns-active-agile-update-1.png)
@@ -180,7 +180,7 @@ First, open the Kanban portal for your team project. Click the **Board** link fr
 <li><p>To open, click ![gear icon](../_img/icons/team-settings-gear-icon.png), the gear icon, to open Customize Columns.</p>
 <img src="../customize/_img/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 1px solid #CCCCCC;" />  
 
-<p>If you're not a team admin, [get added as one](../scale/manage-team-assets.md#add-team-admin). Only team and project admins can customize columns.</p>   
+<p>If you're not a team admin, [get added as one](../scale/add-team-administrator.md). Only team and project admins can customize columns.</p>   
 
 ![Kanban board, Customize columns, default columns, Agile process ](_img/ALM_AC_CustomizeColumns.png)  
 </li>
@@ -214,7 +214,7 @@ First, open the Kanban portal for your team project. Click the **Board** link fr
 
 	<img src="../customize/_img/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 1px solid #CCCCCC;" />  
 
-	If you're not a team admin, [get added as one](../scale/manage-team-assets.md#add-team-admin). Only team and project admins can customize columns.  
+	If you're not a team admin, [get added as one](../scale/add-team-administrator.md). Only team and project admins can customize columns.  
 
 	You'll see different column titles and choices based on the following:  
 	
@@ -300,7 +300,7 @@ That's about all you need to know about working with Kanban columns. Here are a 
 * [Split columns](split-columns.md)   
 * [Definition of Done](definition-of-done.md)  
 * [Customize cards](../customize/customize-cards.md)  
-* [Card reordering](kanban-basics.md#card-reorder-setting)  
+* *	[Card reordering](../customize/reorder-cards.md)  
 * [Cumulative flow diagram](../../report/guidance/cumulative-flow.md)  
 
 <!---

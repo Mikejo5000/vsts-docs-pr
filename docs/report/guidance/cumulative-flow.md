@@ -1,29 +1,26 @@
 ---
 title: Cumulative flow diagram | Team Services & TFS  
-description: Process guidance to use cumulative flow diagrams to improve your Kanban board and Kanban processes - Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)    
+description: Process guidance to configure and use cumulative flow diagrams to improve your Kanban processes - Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)    
 ms.prod: vs-devops-alm  
 ms.technology: vs-devops-reporting  
 ms.assetid: 9A16EDA7-6249-49E1-84A3-FE7550028E9F  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/15/2016
+ms.date: 05/16/2017
 ---
 
-#Cumulative flow
+# Cumulative flow
 
 [!INCLUDE [temp](../../work/_shared/dev15-version-header.md)]
 
+You use cumulative flow diagrams (CFD) to monitor the flow of work through a system. There are two CFD charts, the one viewed from the Kanban board and the one you access by adding the CFD widget to your dashboard. 
+
 >[!NOTE]   
-><b>Feature availability: </b>From the web portal for Team Services and TFS, you can access cumulative flow diagrams (CFD) from the [Kanban board views of each backlog](../../work/kanban/kanban-basics.md).
->
->The [Cumulative Flow Diagram (CFD) widget](#configure-widget), which relies on the Analytics Service, is in preview and only available to select customers of Team Services at this time. The CFD widget provides more configuration options than those supported by the default CFD charts shown on the backlog and board pages. 
+><b>Feature availability:</b> The CFD widget is available only for Team Services at this time. 
 
-You use cumulative flow diagrams to monitor the flow of work through a system.  
-<!---
-With the CFD widget, you can monitor the count of work items as they progressively move through various states which you define. You can configure the CFD chart to monitor the flow of epics, features, user stories ([Agile](../../work/guidance/agile-process.md)), product backlog items ([Scrum](../../work/guidance/scrum-process.md)), or requirements ([CMMI](../../work/guidance/cmmi-process.md)), depending on the process you've selected.
--->
+The CFD widget provides more configuration options than those supported by the default CFD charts shown on the backlog and board pages. With the [CFD widget](#configure-widget), you can monitor the count of work items as they progressively move through various states which you define. You can configure the CFD chart to monitor the flow of epics, features, user stories, product backlog items, or requirements, depending on the process ([Agile](../../work/guidance/agile-process.md), [Scrum](../../work/guidance/scrum-process.md), or ([CMMI](../../work/guidance/cmmi-process.md)) you've selected.
 
-##View the cumulative flow chart
+## View the cumulative flow chart (Kanban board) 
 
 You open the cumulative flow for your backlog or portfolio backlog by clicking the image in the upper-right corner of the Kanban board page. 
 
@@ -39,7 +36,7 @@ A few options are available for you to [configure your chart](#configure).
 A few options are available for you to [configure your chart](#configure) or [configure your CFD widget](#configure-widget).
 -->
 
-##Sample charts and primary metrics 
+## Sample charts and primary metrics 
 The two primary metrics to track, cycle time and lead time, can be extracted from the chart. 
 
 <table>
@@ -78,6 +75,9 @@ The two primary metrics to track, cycle time and lead time, can be extracted fro
 ##Chart metrics  
 CFD charts display the count of work items grouped by state/Kanban column over time. The two primary metrics to track, cycle time and lead time, can be extracted from the chart.  
 
+
+
+
 <table>
 <tbody valign="top">
 <tr>
@@ -88,7 +88,7 @@ CFD charts display the count of work items grouped by state/Kanban column over t
 <tr>
 <td>Cycle Time  <sup>1</sup></td>
 <td>Measures the time it takes to move work through a single process or workflow state, calculated by the start of the given process to the start of the subsequent process. 
-<blockquote><b>Note:</b>  A [Cycle time widget](../widget-catalog.md#cycle-time-widget), which relies on the Analytics Service, is in preview and only available to select customers of Team Services at this time.</blockquote>
+
 </td>
 </tr>
 
@@ -98,7 +98,7 @@ CFD charts display the count of work items grouped by state/Kanban column over t
 <br/>
 *For a sprint or fixed period process:* measures the time from when work on a request begins until the work is completed  (i.e. the time from Active to Closed).  
 
-<blockquote><b>Note:</b>  A [Lead time widget](../widget-catalog.md#lead-time-widget), which relies on the Analytics Service, is in preview and only available to select customers of Team Services at this time.</blockquote>
+
 </td>
 </tr>
 
@@ -116,11 +116,12 @@ CFD charts display the count of work items grouped by state/Kanban column over t
 </tbody>
 </table>
 
-<br/>
+**Note**:
 
+1. The current CFD implementation does not provide discrete numbers on Lead Time and Cycle Time.  
 
-1. The current CFD implementation does notprovide discrete numbers on Lead Time and Cycle Time. Values will be available in future versions of the chart.  
-<br/>
+>[!NOTE]   
+><b>Feature availability:</b>  For Team Services, you can add a [Cycle time widget](../widget-catalog.md#cycle-time-widget) and [Lead time widget](../widget-catalog.md#lead-time-widget) to your dashboard. You need to first install the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You can then [add the widgets to your dashboard](../add-widget-to-dashboard.md).  You must be an account owner or a member of the [Project Collection Administrator grou](../../setup-admin/add-administrator-tfs.md) to add extensions.
 
 
 There is a very tight, well defined correlation between Lead Time/Cycle Time and Work in Progress (WIP). The more work in progress, the longer the cycle time which leads to longer lead times. The opposite is also true&mdash;the less work in progress, the shorter the cycle and lead time is because the development team can focus on fewer items. This is a key reason why you can and should set [Work In Progress limits on the Kanban board](../../work/kanban/wip-limits.md).  
@@ -201,7 +202,8 @@ Teams can proactively fix problems that appear as CFD bulges. Depending on where
 
 Two potentially easy ways to solve this problem are: 1) Shift developers from the development process to the testing process until the bulge is eliminated or 2) change the order of work such that work that can be done quickly is interwoven with work that takes longer to do. Look for simple solutions to eliminate the bulges. 
 
-<blockquote style="font-size: 13px"><b>Note: </b>Because many different scenarios can occur which cause work to proceed unevenly, it's critical that you perform an actual analysis of the problem. The CFD will tell you that there is a problem and approximately where it is but you must investigate to get to the root cause(s). The guidance provided here indicate recommended actions which solve specific problems but which may not apply to your situation.</blockquote>
+>[!NOTE]   
+>Because many different scenarios can occur which cause work to proceed unevenly, it's critical that you perform an actual analysis of the problem. The CFD will tell you that there is a problem and approximately where it is but you must investigate to get to the root cause(s). The guidance provided here indicate recommended actions which solve specific problems but which may not apply to your situation. 
 
 ###Did the scope change?  
 
@@ -218,10 +220,10 @@ Not so oddly, a large amount of work in progress usually shows up as a vertical 
 
 A good rule of thumb for work in progress is that there should be no more than two items in progress per team member at any given time. The main reason for two items versus stricter limits is because reality frequently intrudes on any software development process.  
 
-Sometimes it takes time to get information from a stakeholder, or it takes more time to acquire necessary software. There are any number of reasons why work might be halted so having a secondary item to switch to provides a little bit of leeway. If both items are blocked, it's time to raise a red flag to get something unblocked--not just switch to yet another item. As soon as there are a large number of items in progress, the person working on those items will have difficulty context switching, are more likely to forget what they were doing, and likely incur mistakes.  
+Sometimes it takes time to get information from a stakeholder, or it takes more time to acquire necessary software. There are any number of reasons why work might be halted so having a secondary item to switch to provides a little bit of leeway. If both items are blocked, it's time to raise a red flag to get something unblocked&mdash;not just switch to yet another item. As soon as there are a large number of items in progress, the person working on those items will have difficulty context switching, are more likely to forget what they were doing, and likely incur mistakes.  
 
 <a id="configure"></a>
-##Configure the CFD chart  
+##Configure the CFD chart (Kanban board) 
 
 Each team can set their preferences for the cumulative flow charts for their Kanban boards.  
 
@@ -229,7 +231,7 @@ Each team can set their preferences for the cumulative flow charts for their Kan
 
 	<img src="../../work/customize/_img/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 1px solid #CCCCCC;" />  
 
-	If you're not a team admin, [get added as one](../../work/scale/manage-team-assets.md#add-team-admin). Only team and project admins can customize the team Kanban boards and CFD charts.  
+	If you're not a team admin, [get added as one](../../work/scale/add-team-administrator.md). Only team and project admins can customize the team Kanban boards and CFD charts.  
 
 2. Click the Cumulative flow tab and specify the team's preferences.  
 
@@ -239,10 +241,13 @@ Each team can set their preferences for the cumulative flow charts for their Kan
 
 
 <a id="configure-widget"></a>
-##Configure the CFD widget    
+## Configure the CFD widget    
+
+>[!NOTE]   
+><b>Feature availability:</b> For Team Services, you can add the [CFD widget](../widget-catalog.md#cycle-time-widget) to your dashboard. You need to first install the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You can then [add the widget(s) to your dashboard](../add-widget-to-dashboard.md). You must be an account owner or a member of the [Project Collection Administrator group](../../setup-admin/add-administrator-tfs.md) to add extensions.  
 
 You will need to be a team administrator or a member of the Project Administrators group to perform these tasks. See 
-[Manage team assets](../../work/scale/manage-team-assets.md#add-team-admin) to get added as a team admin. 
+[Manage team assets](../../work/scale/add-team-administrator.md) to get added as a team admin. 
 
 1. If you haven't yet configured your Kanban board, do that now. Define the [columns](../../work/kanban/add-columns.md) and [swimlanes](../../work/kanban/expedite-work.md) that support your workflow processes.  
 
@@ -252,7 +257,7 @@ You will need to be a team administrator or a member of the Project Administrato
 
 	![Cumulative flow diagram widget](_img/cfd-choose-widget.png)  
 
-4. Click the ![Configure widget icon](../_img//icons/configure-icon.png) configure icon to open the configuration dialog. Modify the title, and then select the team, backlog level, swimlanes, and time period you want to monitor.  
+4. Click the ![Configure widget icon](../_img/icons/configure-icon.png) configure icon to open the configuration dialog. Modify the title, and then select the team, backlog level, swimlanes, and time period you want to monitor.  
 
 	<img src="_img/cfd-configure.png" alt="Configure CFD chart" style="border: 1px solid #CCCCCC;" />    
 
@@ -277,7 +282,7 @@ For additional information, see these resources:
 <div style="float:left;width:240px;margin:3px;font-size:100%">
 <p style="font-weight:bold;padding-bottom:5px;text-align:center;">Plan and track</p>
 <ul style="padding-left:30px">
-<li style="margin-bottom:2px">[Monitor progress and trends](../monitor-progress-trends.md)</li>
+<li style="margin-bottom:2px">[Charts, dashboards, and widgets](../overview.md)</li>
 <li style="margin-bottom:2px">[Kanban basics](../../work/kanban/kanban-basics.md)</li>
 <li style="margin-bottom:2px">[Task checklists](../../work/kanban/add-task-checklists.md)</li>
 <li style="margin-bottom:2px">[Features and epics](../../work/kanban/kanban-epics-features-stories.md)</li>
@@ -294,7 +299,7 @@ For additional information, see these resources:
 <li style="margin-bottom:2px">[Expedite work](../../work/kanban/expedite-work.md)</li>
 <li style="margin-bottom:2px">[Definition of done](../../work/kanban/definition-of-done.md)</li>
 <li style="margin-bottom:2px">[Customize cards](../../work/customize/customize-cards.md)</li>
-<li style="margin-bottom:2px">[Card reordering](../../work/kanban/kanban-basics.md#card-reorder-setting)</li>
+<li style="margin-bottom:2px">[Card reordering](../../work/customize/reorder-cards.md)</li>
 </ul>
 </div>
 

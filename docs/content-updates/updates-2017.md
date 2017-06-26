@@ -1,12 +1,12 @@
 ---
-title: Content updates 2017| Team Services & TFS
+title: New and updated topics for 2017 | Team Services & TFS
 description: Access new and updated topics that support Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) 
 ms.technology: vs-devops-overview
 ms.prod: vs-devops-alm
 ms.assetid: 5CA91DA6-5902-4950-8641-BC2B5214BD3A
 ms.manager: douge
 ms.author: kaelli
-ms.date: 05/11/2017  
+ms.date: 06/01/2017   
 ---
 
 # Content updates for 2017
@@ -15,6 +15,307 @@ ms.date: 05/11/2017
 
 Here you'll find links to new and significantly updated topics and blog posts. These articles address new features and guidance for users of Team Services and Team Foundation Server (TFS).    
 
+
+
+
+
+## June 1, 2017  
+
+<table width="100%" valign="top">
+<tr align="center">
+<th width="20%">Area </th>   
+<th width="40%">New </th>
+<th width="40%">Updated </th>
+</tr>
+<tr valign="top">
+<td><i><b>Release notes, setup, & administration</b></i></td>
+<td>
+
+<i><b>Team Services</b> </i>
+<ul>
+<li>[Secure files library, manual intervention task variables, and mobile work item form GA – June 1](https://www.visualstudio.com/en-us/articles/news/2017/jun-01-team-services)</li>
+</ul>
+
+
+
+
+<!---
+<b><i>TFS</i></b>
+<ul>
+<li>[TBR](https://www.visualstudio.com/news/releasenotes/tfs2017-update1)</li>
+</ul>
+
+
+<b><i>Team Services & TFS</i></b>
+<ul>
+<li>[TBR](https://blogs.msdn.microsoft.com/visualstudioalm/2017/04/24/update-on-team-explorer-in-visual-studio-2017/) <i> (blog post)</i></li>
+</ul>
+
+-->
+
+<!---
+
+<i><b>Blog posts</b></i>
+
+
+<b><i>Engineering stories</i></b>
+<ul>
+<li>[TBR](http://stories.visualstudio.com/devops/)</li>
+</ul>
+
+<b><i>Videos</i></b>
+<ul>
+<li>[TBR](https://youtu.be/fTGv3BAgCiM)</li>
+</ul>
+-->
+
+</td>
+<td>
+
+<!--- 2nd column --> 
+
+<!--- 
+
+<b><i>Team Services</i></b>
+<ul>
+<li>[TBR](../setup-admin/team-services/add-account-users-assign-access-levels-team-services.md)</li>
+</ul>
+
+
+<b><i>Team Services and TFS</i></b>
+<ul>
+<li>[TBR](../connect/work-web-portal.md)</li>
+</ul>
+
+--> 
+
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td><i><b>Code and Package Management</b></i></td>
+
+<td>
+<b><i>Git & TFVC </i></b>
+<ul>
+<li>[Introduction - Git at Scale](https://www.visualstudio.com/learn/git-at-scale/)</li>
+<li>[Technical Scale Challenges - Git at Scale](https://www.visualstudio.com/learn/technical-scale-challenges/)</li>
+<li>[Limited Refs - Git at Scale](https://www.visualstudio.com/learn/limited-refs/)</li>
+<li>[GVFS Design History - Git at Scale](https://www.visualstudio.com/learn/gvfs-design-history/)</li>
+<li>[Beyond GVFS: more details on optimizing Git for large repositories](https://blogs.msdn.microsoft.com/visualstudioalm/2017/05/30/optimizing-git-beyond-gvfs/) <i> (blog post)</i></li>
+<li>[Visual Studio Team Services (VSTS) IntelliJ plugin now included with JetBrains Rider IDE releases](https://blogs.msdn.microsoft.com/visualstudioalm/2017/05/15/visual-studio-team-services-vsts-intellij-plugin-now-included-with-jetbrains-rider-ide-releases/) <i> (blog post)</i></li>
+</ul>
+
+
+<b><i>Package management</i></b>  
+<ul>
+<li>[Set up Team Build and Maven](../package/maven/maven-team-build.md)</li>
+<li>[Set up Maven client in Visual Studio Team Services and TFS](../package/maven/pom-and-settings.md)</li>
+</ul>
+
+
+</td>
+
+<td>
+
+<b><i>Git & TFVC </i></b>
+<ul>
+<li>[Drive Git development from a work item](../work/backlogs/connect-work-items-to-git-dev-ops.md)</li>
+<li>[TFVC Overview](../tfvc/overview.md)</li>
+<li>[Manage and store large files in Git](../git/manage-large-files.md)</li>
+<li>[Compare files (TFVC)](../tfvc/compare-files.md)</li>
+<li>[Branch folders and files (TFVC)](../tfvc/branch-folders-files.md)</li>
+</ul>
+
+<!---
+<b><i>Package management</i></b>
+<ul>
+<li>[TBR](../package/get-started-maven.md)</li>
+</ul>
+-->
+
+</td>
+</tr>
+ 
+
+<tr valign="top">
+<td><i><b>Agile tools, dashboards, and reports </b></i></td>
+<td>
+
+<p><b><i>Agile tools</i></b></p>
+<ul>
+<li>[Work tracking object limits](../work/customize/object-limits.md) </li>
+<li>[Workflow states and state categories](../work/concepts/workflow-and-state-categories.md) </li>
+<li>[What is Scrum?](https://www.visualstudio.com/learn/what-is-scrum/) </li>
+<li>[What is Agile Development?](https://www.visualstudio.com/learn/what-is-agile-development/) </li>
+<li>[Agile Culture](https://www.visualstudio.com/learn/agile-culture/) </li>
+<li>[Scale Agile to large teams](https://www.visualstudio.com/learn/productive-teams/) </li>
+<li>[Building productive, customer focused teams](https://www.visualstudio.com/learn/productive-teams/) </li>
+<li>[Announcing the deprecation of the old Work Item Form in TFS](https://blogs.msdn.microsoft.com/visualstudioalm/2017/05/22/announcing-the-deprecation-of-the-old-work-item-form-in-tfs/) <i> (blog post)</i></li>
+</ul>
+
+
+<p><b><i>Dashboards & reports</i></b></p>
+<ul>
+<li>[Lead time and cycle time control charts](../report/guidance/cycle-time-and-lead-time.md) </li>
+</ul>
+
+
+</td>
+<td>
+<!--- 2nd column --> 
+<p><b><i>Agile tools</i></b></p>
+<ul>
+<li>[Create your backlog](../work/backlogs/create-your-backlog.md)</li>
+<li>[Drive Git development from a work item](../work/backlogs/connect-work-items-to-git-dev-ops.md)</li>
+<li>[Schedule sprints](../work/scale/review-team-plans.md)</li>
+<li>[Sprint planning](../work/scrum/sprint-planning.md)</li>
+<li>[Add a portfolio backlog level](../work/customize/add-portfolio-backlogs.md)</li>
+<li>[Manage roll out of the new web form](../work/customize/manage-new-form-rollout.md)</li>
+</ul>
+
+
+<p><b><i>Dashboards & reports</i></b></p>
+<ul>
+<li>[Cumulative flow](../report/guidance/cumulative-flow.md)</li>
+<li>[Widget catalog](../report/widget-catalog.md)</li> 
+</ul>
+</td>
+</tr>
+
+<tr valign="top">
+<td><i><b>DevOps: Build, Test, Release</b></i></td>
+<td>
+
+<p><b><i>Build & Release</i></b></p>
+<ul>
+<li>[Migrate from XAML builds to new builds](../build/actions/migrate-from-xaml-builds.md) </li>
+<li>[Secure files](../build/concepts/library/secure-files.md) </li>
+<li>[Utility: Install Apple Certificate](../build/steps/utility/install-apple-certificate.md) </li>
+<li>[Utility: Install Apple Provisioning Profile](../build/steps/utility/install-apple-provisioning-profile.md) </li>
+<li>[Personalize what notifications you receive for releases](https://blogs.msdn.microsoft.com/visualstudioalm/2017/05/27/personalize-what-notifications-you-receive-for-releases/) <i>(blog post)</i></li>
+<li>[New Release Definition Editor in Team Services](https://blogs.msdn.microsoft.com/visualstudioalm/2017/05/26/new-release-definition-editor-in-team-services/) <i>(blog post)</i></li>
+<li>[Defining variables while creating a Release in RM](https://blogs.msdn.microsoft.com/visualstudioalm/2017/05/18/defining-variables-while-creating-a-release-in-rm-a-k-a-draft-releases/) <i>(blog post)</i></li>
+</ul>
+
+<i><b>DevOps</b> (blog posts)</i>
+<ul>
+<li>[Build 2017 Recap](https://blogs.msdn.microsoft.com/visualstudioalm/2017/05/17/build-2017-recap/)</li>
+<li>[Global DevOps Bootcamp June 17th](https://blogs.msdn.microsoft.com/visualstudioalm/2017/05/17/global-devops-bootcamp-june-17th/)</li>
+<li>[Deploying Applications to Azure Virtual Machine Scale Sets](https://blogs.msdn.microsoft.com/visualstudioalm/2017/05/15/deploying-applications-to-azure-vm-scale-sets/)</li>
+<li>[Visual Studio Team Services demonstrates how Microsoft Loves Java](https://blogs.msdn.microsoft.com/visualstudioalm/2017/05/22/visual-studio-team-services-demonstrates-how-microsoft-loves-java/)</li>
+
+</ul>
+
+
+
+<p><i><b>Test</b> (blog posts)</i></p>
+<ul>
+<li>[Accelerated Continuous Testing with Test Impact Analysis – Part 2](https://blogs.msdn.microsoft.com/visualstudioalm/2017/05/16/accelerated-continuous-testing-with-test-impact-analysis-part-2//)</li>
+</ul>
+
+</td>
+<td>
+
+<!--- 2nd column --> 
+<p><b><i>Build & Release</i></b></p>
+<ul>
+<li>[Team Build & Release release notes](../build/news/2017.md)</li>
+<li>[How to: Work with release definitions](../build/actions/work-with-release-definitions.md)</li>
+<li>[Service endpoints for Build and Release](../build/concepts/library/service-endpoints.md)</li>
+<li>[Phases in Build and Release Management](../build/concepts/process/phases.md)</li>
+<li>[Deployment groups](../build/concepts/definitions/release/deployment-groups/index.md)</li>
+</ul>
+
+<p><b><i>Test</i></b></p>
+<ul>
+<li>[Performance testing scenarios and capabilities](../test/performance-testing/index.md)</li>
+<li>[Get started with performance testing](../test/performance-testing/getting-started/getting-started-with-performance-testing.md)</li>
+<li>[Run automated tests from test plans in the Test hub](../test/continuous-testing/run-automated-tests-from-test-hub.md)</li>
+<li>[Create unit test method stubs with the Create Unit Tests command](https://docs.microsoft.com/visualstudio/test/create-unit-tests-menu)</li>
+<li>[Provide feedback using the Test & Feedback extension](../test/manual-exploratory-testing/stakeholder/provide-stakeholder-feedback.md)</li>
+<li>[Run manual tests](../test/manual-exploratory-testing/getting-started/run-manual-tests.md)</li>
+</ul>
+</td>
+</tr>
+
+
+
+<tr valign="top">
+<td><i><b>Team collaboration, notifications, search, and chat </b></i></td>
+<td>
+
+<ul>
+<li>[Announcing General Availability of Work item search](https://blogs.msdn.microsoft.com/visualstudioalm/2017/05/25/work-item-search-ga/) <i>(blog post)</i></li> 
+
+
+</ul>
+
+</td>
+<td>
+
+<ul>
+<li>[Add teams and team members](../work/scale/multiple-teams.md)</li>
+<li>[View and update work items via the mobile work item form](../collaborate/mobile-work.md)</li>
+<li>[Work as a stakeholder](../quickstart/get-started-stakeholder.md)</li>
+</ul>
+ 
+</td>
+</tr>
+
+
+
+<tr valign="top">
+<td>
+
+<i><b>Marketplace, Billing, & Extensibility</b></i></td>
+<td>
+
+<p><i><b>Marketplace, Billing, & Service hooks</b></i> <i>(blog posts)</i></p>
+<ul>
+<li>[Using Open Source Components? Using TFS?](https://blogs.msdn.microsoft.com/visualstudioalm/2017/05/22/using-open-source-components-using-tfs/) </li>
+<li>[Turn your infrastructure into code with Chef, and update your Assembly information with May’s Team Services Extensions Roundup](https://blogs.msdn.microsoft.com/visualstudioalm/2017/05/31/turn-your-infrastructure-into-code-with-chef-and-update-your-assembly-information-with-mays-team-services-extensions-roundup/) </li>
+</ul>
+
+
+<p><b><i>REST APIs/Extensions </i></b></p>
+<ul>
+<li>[Extension Hub](../../integrate/extensions/extension-report.md)</li>
+<li>[Extension Report](../../integrate/extensions/publish/extension-report.md)</li>
+</ul>
+
+</td>
+
+<td>
+<!--- 2nd column --> 
+<!---
+<p><b><i>Marketplace, Billing, & Service hooks</i></b></p>
+<ul>
+<li>[TBR](../setup-admin/team-services/set-up-billing-for-your-account-vs.md)</li>
+</ul>
+-->
+
+<p><b><i>REST APIs/Extensions </i></b></p>
+<ul>
+<li>[.NET client libraries for VSTS & TFS)](../../integrate/get-started/client-libraries/dotnet.md)</li>
+<li>[Extension manifest reference](../../integrate/extensions/develop/manifest.md)</li>
+<li>[Git branch statistics](../../integrate/api/git/stats.md)</li>
+<li>[Git commits](../../integrate/api/git/commits.md)</li>
+<li>[Processes](../../integrate/api/tfs/processes.md)</li>
+<li>[Projects](../../integrate/api/tfs/projects.md)</li>
+<li>[Teams](../../integrate/api/tfs/teams.md)</li>
+<li>[Test cases](../../integrate/api/test/cases.md)</li>
+<li>[Test plans](../../integrate/api/test/plans.md)</li>
+<li>[Work item tracking artifact uri query](../../integrate/api/wit/artifacturiquery.md)</li>
+<li>[Work item tracking artifact link types](../../integrate/api/wit/artifactlinktypes.md)</li>
+</ul>
+
+
+</td>
+</tr>
+</table>
 
 
 ## May 11, 2017  
@@ -142,7 +443,7 @@ Here you'll find links to new and significantly updated topics and blog posts. T
 <p><b><i>Agile tools</i></b></p>
 <ul>
 <li>[Review team delivery plans](../work/scale/review-team-plans.md)</li>
-<li>[Work as a stakeholder](../work/connect/work-as-a-stakeholder.md)</li>
+<li>[Work as a stakeholder](../quickstart/get-started-stakeholder.md)</li>
 <li>[Customize work](../work/customize/customize-work.md)</li> 
 <li>[ProcessConfiguration XML elements](../work/reference/process-configuration-xml-element.md)</li>
 <li>*Inheritance process model:* [Manage processes](../work/process/manage-process.md), [Customize a process](../work/process/customize-process.md),  [Customize a field for a process](../work/process/customize-process-field.md), [Add or modify a work item type for a process](../work/process/customize-process-wit.md), &hellip;</li>
@@ -436,7 +737,7 @@ Here you'll find links to new and significantly updated topics and blog posts. T
 <li>[Create managed queries to list, update, or chart work items](../work/track/example-queries.md)</li>
 <li>[Use the query editor to create managed queries](../work/track/using-queries.md)</li>  
 <li>[Define-sprints](../work/scrum/define-sprints.md)</li>
-<li>[Customize area and iteration paths](../work/customize/modify-areas-iterations.md)</li>
+<li>[Define area paths](../work/customize/set-area-paths.md) or [Define iteration paths](../work/customize/set-iteration-paths-sprints.md) </li>
 <li>[Upload and download process templates](../work/guidance/manage-process-templates.md)</li>
 <li>[Process template and plug-in files](../work/reference/process-templates/overview-process-template-files.md)</li>
 <li>[Velocity and forecasting](../work/scrum/velocity-and-forecasting.md)</li>
@@ -976,7 +1277,7 @@ Here you'll find links to new and significantly updated topics and blog posts. T
 <li>[Manage bugs](../work/backlogs/manage-bugs.md)</li>
 <li>[Changes made to process templates](../work/guidance/changes-to-process-templates.md)</li>
 <li>[New features added through feature enablement](../work/customize/new-features-added.md)</li> 
-<li>[Work as a stakeholder](../work/connect/work-as-a-stakeholder.md)</li> 
+<li>[Work as a stakeholder](../quickstart/get-started-stakeholder.md)</li> 
 </ul>
 
 <p><i>Topics addressing customization of the Microsoft Project Mapping file and process templates have been migrated and updated. Find them under the following TOC entries:</i></p>

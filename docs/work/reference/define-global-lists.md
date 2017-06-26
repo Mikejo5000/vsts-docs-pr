@@ -8,7 +8,7 @@ ms.assetid: b113865c-c68f-48fa-a467-4a94a8445078
 author: kaelli
 ms.author: kaelli
 ms.manager: douge
-ms.date: 05/10/2017
+ms.date: 05/23/2017
 ---
 
 
@@ -55,10 +55,10 @@ You can define one or more global lists and their items by using one of the foll
  
   
 >[!NOTE]  
->For Team Services and the Hosted XML process model, the following limits are placed on global list import: 
+>For the Hosted XML process model, the following limits are placed on global list import: 
 >- Total of 64 global lists
 >- Total of 512 items per list
->- Total of 10K items defined within all global lists defined across all WITs. 
+>- Approximately 10K items can be defined total within all global lists specified across all WITs. 
 
 
 <a name="SyntaxDefine"></a> 

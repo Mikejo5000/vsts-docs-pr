@@ -6,7 +6,6 @@ description: Use Slack with your Visual Studio Team Services account
 ms.assetid: 8e2fda07-0e1e-40b3-9349-c5de12453411
 ms.manager: douge
 ms.author: elbatk
-ms.date: 01/05/2017
 ms.date: 02/14/2017 
 ---
 

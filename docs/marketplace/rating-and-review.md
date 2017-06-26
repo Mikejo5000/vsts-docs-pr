@@ -73,3 +73,10 @@ resolve the problem, please update your reply with the resolution. You can edit
 your reply, just like customers can edit their reviews.
 * If you come across any inappropriate reviews, like spam, abusive, or offensive
 content, for any extension, please flag it for our review.
+
+## Publisher request to void a review
+
+As a publisher, you can appeal to void a review if the issue reported is due to the Marketplace or the underlying platform. If the issue is valid, Marketplace admins will void the rating. 
+You can **Appeal** from ratings and review section on your extension hub page.  
+
+

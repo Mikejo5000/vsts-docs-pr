@@ -932,7 +932,7 @@ Go here to [download](https://www.visualstudio.com/downloads/) the latest versio
 <b><i>Team Services and TFS</i></b>
 <ul>
 <li>[Custom work item types and stakeholder support for exploratory testing &mdash;Sept 2](https://www.visualstudio.com/articles/news/2016/sep-02-team-services)</li>
-<li>[DevOps](../devops-alm-overview.md)</li>
+<li>[DevOps](../index.md)</li>
 <li>[Work in the web portal](../connect/work-web-portal.md)</li>
 <li>[User-focused features](../connect/user-focused-features.md)</li>
 </ul>
@@ -1401,7 +1401,7 @@ Go here to [download](https://www.visualstudio.com/downloads/) the latest versio
 
 <b><i>Team Services and TFS</i></b>
 <ul>
-<li>[Work as a stakeholder](../work/connect/work-as-a-stakeholder.md)</li>
+<li>[Work as a stakeholder](../quickstart/get-started-stakeholder.md)</li>
 <li>[Manage TFS server configuration with TFSConfig](../setup-admin/tfs/command-line/tfsconfig-cmd.md)</li>
 </ul>
 </td>
@@ -2104,7 +2104,7 @@ Visual Studio 2015 Update 3 and TFS 2015 Update 3 have been released. Go to the 
 <td>
 <ul>
 <li>[Define sprints](../work/scrum/define-sprints.md)   </li>
-<li>[Customize area and iteration paths](../work/customize/modify-areas-iterations.md)   </li>
+<li>[Define area paths](../work/customize/set-area-paths.md) or [Define iteration paths](../work/customize/set-iteration-paths-sprints.md)    </li>
 <li>[Customize a field for a process](../work/process/customize-process-field.md)   </li>
 <li>[Customize a process](../work/process/customize-process.md)      </li>
 
@@ -2401,8 +2401,8 @@ Visual Studio 2015 Update 2 and TFS 2015 Update 2 have been released. Go to the 
 <td><i><b>Agile planning tools, dashboards, and reports </b></i></td>
 <td>
 <ul>
-<li>[Get started planning and tracking work](../work/agile-project-management.md)</li>
-<li>[Get started monitoring progress and trends](../report/monitor-progress-trends.md)</li>
+<li>[Get started planning and tracking work](../work/overview.md)</li>
+<li>[Get started monitoring progress and trends](../report/overview.md)</li>
 <li>[Add, run, and update inline tests from the Kanban board](../Work/kanban/add-run-update-tests.md)</li>
 <li>[Use work item templates to pre-populate fields](../Work/productivity/work-item-template.md)</li>  
 <li>[Add or modify a field](../Work/customize/add-modify-field.md)</li>
@@ -2510,7 +2510,7 @@ Visual Studio 2015 Update 2 and TFS 2015 Update 2 have been released. Go to the 
 <li>[Connect to VS Team Services](../setup-admin/team-services/connect-to-visual-studio-team-services.md)</li>
 <li>[Set up billing for your VS Team Services account](https://www.visualstudio.com/docs/setup-admin/team-services/set-up-billing-for-your-account-vs)</li>
 <li>[Pay for user access to your VS Team Services account](https://www.visualstudio.com/docs/setup-admin/team-services/setup/buy-basic-access-add-team-services-users)</li>
-<li>[Pay for additional services in your VS Team Services account](https://www.visualstudio.com/docs/setup-admin/team-services/get-more-build-or-load-testing-vs)<br/></li>  
+<li>[Pay for additional services in your VS Team Services account](https://www.visualstudio.com/docs/setup-admin/team-services/buy-more-build-vs )<br/></li>  
 <li>[Features (feature index)](../alm-devops-features.md)</li>
 <li>[Keyboard shortcuts ](../reference/keyboard-shortcuts.md)<br/></li>  
 <li>[Manage TFS server configuration with TFSConfig](../setup-admin/tfs/command-line/tfsconfig-cmd.md)</li>
@@ -2611,8 +2611,6 @@ Visual Studio 2015 Update 2 and TFS 2015 Update 2 have been released. Go to the 
 <li>[Set up environments to run automated tests with your builds](../test/continuous-testing/set-up-continuous-test-environments-builds.md)</li>
 <li>[Set up automated testing for your builds](../test/continuous-testing/set-up-continuous-testing-builds.md)</li>
 <li>[Review automated test results after a build](../test/continuous-testing/getting-started/review-continuous-test-results-after-build.md)</li>
-<li>[Install and configure test agents](../test/lab-management/test-machines/install-configure-test-agents.md)</li>
-<li>[Upgrade SCVMM 2008 R2 to SCVMM 2012](../test/lab-management/upgrade-scvmm-2008-r2-scvmm-2012.md)</li>
 <li>[Added parallel test execution for VS IDE to all related topics](https://msdn.microsoft.com/en-us/library/dd264975.aspx)</li>   
 
 <li>[Release Management updates](../build/news/2016.md)</li>

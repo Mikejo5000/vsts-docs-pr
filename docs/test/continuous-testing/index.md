@@ -43,6 +43,7 @@ automatically with each build.
 * [Testing in Continuous Integration and Continuous Deployment Workflows](https://blogs.msdn.microsoft.com/visualstudioalm/2015/05/29/testing-in-continuous-integration-and-continuous-deployment-workflows/)
 * [Learn more about build tasks](../../build/overview.md)
 * [An end-to-end example of continuous testing](example-continuous-testing.md)
+* [Run automated tests from test plans in the Test hub](run-automated-tests-from-test-hub.md)
 
 <a name="test-frameworks"></a>
 ## Any test type and any test framework

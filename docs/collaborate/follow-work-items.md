@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: 77CAEE8E-BF1A-47DA-9818-A0C52BAC813C
 ms.manager: douge
 ms.author: kaelli
-ms.date: 02/14/2017  
+ms.date: 05/22/2017  
 ---
 
 # Follow a work item or pull request  
@@ -75,7 +75,7 @@ You can also view and manage work that you're following from the Account home pa
 - [Manage personal notifications](manage-personal-notifications.md)  
 - [Set team notifications](manage-team-notifications.md)  
 - [Set personal or team alerts](../work/track/alerts-and-notifications.md)  
-- [Productivity tips](../work/productivity/productivity-tips.md)  
+- [View and update work items via the mobile work item form](mobile-work.md)  
 
 To update your on-premises TFS, visit the [Visual Studio downloads page for Team Foundation Server](https://www.visualstudio.com/downloads/#team-foundation-server-2017). 
 

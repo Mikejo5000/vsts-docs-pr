@@ -16,7 +16,6 @@ ms.date: 12/04/2016
 In the Work Item Search results page you can:
 
 * [Use the rich set of options in the results page](#understandchanges)
-* [Change the layout to see results in a list view](#viewoptions)
 * [Change the layout to see more of the work item](#seemoreworkitem)
  
 [!INCLUDE [shared-back-to-overview](../_shared/shared-back-to-overview.md)]

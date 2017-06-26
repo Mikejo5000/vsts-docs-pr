@@ -84,7 +84,7 @@ Most teams specify capacity in terms of hours, however, you can also specify it 
 
 If you haven't set up sprints yet for your team, go [here to do that now](../scrum/define-sprints.md).
 
-If you don't see a team member listed, you need to [add them to the team](../scale/manage-team-assets.md#add-team-admin). Also, you only have to indicate planned days off for the team. You [set weekend days or other recurring days off](#team_settings) under team settings.  
+If you don't see a team member listed, you need to [add them to the team](../scale/add-team-administrator.md). Also, you only have to indicate planned days off for the team. You [set weekend days or other recurring days off](#team_settings) under team settings.  
 
 <a id="copy-capacity">  </a>
 ##Copy capacity planning from the previous sprint 
@@ -150,69 +150,29 @@ For example, both Christie and Raisa split their time between the Web and Phone 
  
 If your name isn't listed in the capacity view, you need to be added as a team member. 
 
-##Related Scrum notes
+## Related Scrum notes
 Setting capacity and [estimating remaining work for each task](../scrum/sprint-planning.md#define-tasks) provides you with the tools you need to track the amount of work and resources you have allocated sprint over sprint. You can learn more about working with your Scrum tools from these topics:
 
+- [Set working days](../customize/set-working-days.md)
 - [Task board](../scrum/task-board.md)
 - [Sprint burndown](../scrum/sprint-burndown.md)
 - [Velocity & forecasting](../scrum/velocity-and-forecasting.md)
 - [Configure team settings](../scale/manage-team-assets.md)
 
 <a id="customize-activity-list">  </a>
-###Customize the pick list of activities or discipline (TFS only)
+###Customize the pick list of activities or discipline 
 
-You can add to or modify the items listed for the [Activity](../track/query-numeric.md)(Agile or Scrum) or [Discipline](../track/query-numeric.md) (CMMI) field by [customizing its pick list (TFS only)](../customize/add-modify-field.md). 
+>[!NOTE]  
+>**Feature availability**: You can customize the pick list of the Activity or Discipline fields if you use the Hosted XML or On-premises process models. To learn more about process models, see [Customize your work tracking experience](../customize/customize-work.md).  
+
+You can add to or modify the items listed for the [Activity](../track/query-numeric.md)(Agile or Scrum) or [Discipline](../track/query-numeric.md) (CMMI) field by [customizing its pick list](../customize/add-modify-field.md). 
 
 >[!NOTE]  
 >The set of values listed corresponds to the combined set of all values defined for the field across all team projects in the collection. 
  
 <a id="team_settings">  </a>
 
-###Set recurring days off  
-Your sprint planning and tracking tools automatically consider days off when calculating capacity and sprint burndown. Leave those days of the week that your team doesn't work unchecked in your team's settings page. 
+### Set recurring days off  
+Your sprint planning and tracking tools automatically consider days off when calculating capacity and sprint burndown. Leave those days of the week that your team doesn't work unchecked in your team's Settings, [Working days](../customize/set-working-days.md) page. 
 
-If you're not a team administrator, [get added as one](../scale/manage-team-assets.md#add-team-admin). Only team and project admins can change team settings. 
-
-<div style="background-color: #f2f0ee;padding-top:10px;padding-bottom:10px;"> 
-
-<ul class="nav nav-pills" style="padding-right:15px;padding-left:15px;padding-bottom:5px;vertical-align:top;font-size:18px;">
-
-<li style="float:left;" data-toggle="collapse" data-target="#working-days">Settings, Working days </li>
-
-<li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:90px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:14px;font-weight:400" data-toggle="pill" href="#tfs-2015-work-days">TFS 2015</a></li>
-
-<li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:90px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:14px;font-weight:400" data-toggle="pill" href="#tfs-2015-1-work-days">TFS 2015.1</a></li>
-
-<li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:90px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:14px;font-weight:400" data-toggle="pill" href="#tfs-15-work-days">TFS 2017</a></li>
-
-<li class="active" style="float: right"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#007acc;margin: 0px 0px 0px 0px;min-width:90px;color: #fff;border: solid 2px #007acc;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:14px;font-weight:400" data-toggle="pill" href="#team-services-work-days">Team Services</a></li>
-</ul>
- 
-<div id="working-days" class="tab-content collapse in fade" style="background-color: #ffffff;margin-left:5px;margin-right:5px;padding: 5px 5px 5px 5px;">
-
-<div id="team-services-work-days" class="tab-pane fade in active">
-Open the Settings dialog from the Capacity page to set Working days.
-<img src="_img/capacity-planning-open-team-settings-tfs-15.png" alt="Team Services, Capacity page, Settings, Working days" style="border: 1px solid #CCCCCC;" />
-</div>
-
-
-<div class="tab-pane fade" id="tfs-2015-work-days" >
-Open your team settings from the Overview tab of your team's admin context.  
-
- <img src="_img/ALM_DS_WorkingDaysOff.png" alt="Team settings page for default working days" style="border: 1px solid #CCCCCC;" /> 
-</div>
-
-<div class="tab-pane fade" id="tfs-2015-1-work-days" >
-Open the Settings dialog from the Capacity page to set Working days.
-<img src="_img/open-team-settings.png" alt="TFS 2015.1, Capacity page, Settings, Working days" style="border: 1px solid #CCCCCC;" />
-</div>
-
-<div class="tab-pane fade" id="tfs-15-work-days" >
-Open the Settings dialog from the Capacity page to set Working days.
-<img src="_img/capacity-planning-open-team-settings-tfs-15.png" alt="TFS '15', Set Capacity" style="border: 1px solid #CCCCCC;" /> 
-</div>
-
-</div>
-</div>
-
- 
+  

@@ -39,7 +39,7 @@ See [Software development roles](roles.md).
 ### Q: Can stakeholders who don't use Visual Studio participate on our team?  
  **A**: Yes. You can provide access to stakeholders who have no CAL for the following activities:  
   
--   **Stakeholder access**: This view allows anyone on your team to check project status and provide feedback. Stakeholders can [track project priorities and provide direction, feature ideas, and business alignment to a team](work/connect/work-as-a-stakeholder.md).  
+-   **Stakeholder access**: This view allows anyone on your team to check project status and provide feedback. Stakeholders can [track project priorities and provide direction, feature ideas, and business alignment to a team](quickstart/get-started-stakeholder.md).  
   
      To grant stakeholders access, add them to the [Stakeholder access group](work/connect/change-access-levels.md).  
   
@@ -61,7 +61,7 @@ See [Software development roles](roles.md).
 >Test Manager is deprecated for TFS 2017.   
 
 Also, you can find several open-source clients that have been added to [Marketplace extensions](https:marketplace.visualstudio.com). For example, you can install extensions to Visual Studio that support additional features:  
-- For TFS 2017 and later versions, you can [install the TFS Process Template editor from the Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=KarthikBalasubramanianMSFT.TFSProcessTemplateEditor). You can use this version of the Process Editor to modify the old-style work item forms. You can't use it to edit forms associated with the [new web forms](/docs/work/process/new-work-item-experience). 
+- For TFS 2017 and later versions, you can [install the TFS Process Template editor from the Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=KarthikBalasubramanianMSFT.TFSProcessTemplateEditor). You can use this version of the Process Editor to modify the old-style work item forms. You can't use it to edit forms associated with the [new web forms](/team-services/work/process/new-work-item-experience). 
 - For TFS 2015 and earlier versions, you can install [TFS Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power) which provides enhancements, tools, and command-line utilities that support increased productivity.
 
 >[!NOTE]  

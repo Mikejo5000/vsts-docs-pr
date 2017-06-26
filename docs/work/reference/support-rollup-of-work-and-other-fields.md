@@ -7,30 +7,63 @@ ms.topic: reference
 ms.assetid: 03d26ae1-cbfa-4156-82e3-1d2fc27f48f3
 ms.manager: douge
 ms.author: kaelli
-ms.date: 01/20/2017
+ms.date: 06/01/2017
 ---
+
+
 # Support rollup of work and other fields
+
 [!INCLUDE [temp](../_shared/dev15-version-header.md)]
 
-<a name="top"></a> Rollup provides summed values of select fields for all child work items of a parent. Because Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) support multiple levels of nesting, when you perform rollup, you want to make sure you don't double-count values. Most project managers are interested in getting rollup of estimated or completed work, effort, size, or story points.  
+Rollup provides summed values of select fields for all child work items of a parent. Because Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) support multiple levels of nesting, when you perform rollup, you want to make sure you don't double-count values. Most project managers are interested in getting rollup of estimated or completed work, effort, size, or story points.  
   
- Natively, VSTS and TFS provide rollup of Remaining Work for tasks on the Task board.  
+>[!NOTE]  
+>The system doesn't support rollup of the Effort, Story Points, or Size fields across product backlogs and portfolio backlogs.
+
+## Native support of rollup within the web portal 
+
+You can view rollup of Remaining Work from a sprint backlog or task board.  
+
+From the sprint backlog, the sum of all Remaining Work defined for all tasks is displayed for the parent work item. This value will also display on the parent work item card when you view the task board.  
+ 
+![Sprint backlog displays rollup of Remaining Work](_img/alm_rup_remworkiteration.png "ALM_RUP_RemWorkIteration")  
   
- ![Task board display rollup of Remaining Work](_img/alm_rup_remworkiteration.png "ALM_RUP_RemWorkIteration")  
-  
- You can obtain rollup of additional data fields in VSTS or TFS data by using one of the following methods:  
-  
-|Method|VSTS|On-premises TFS|  
+From a sprint task board, there are three types of rollup: 
+- The rollup of Remaining Work displays on the card for the parent work item
+- The sum of all Remaining Work defined for all tasks within a column displays at the top of each column
+- The sum of all Remaining Work defined for all tasks for a backlog item displays within each row, grouped by column.      
+
+<img src="../scrum/_img/ALM_TB_Intro.png" alt="Task board, collapsed backlog items" style="border: 1px solid #CCCCCC;" />
+
+When you update the status of a task as Completed, the system automatically zeros out the Remaining Work for that task. To learn more, see [Task board](../scrum/task-board.md).
+
+
+## Other tools that support rollup 
+
+You can obtain rollup of additional data fields in VSTS or TFS data by using one of the following methods:  
+ 
+|Method|Team Services|On-premises TFS|  
 |------------|----------|----------------------|  
-|SQL Server Reporting Services report|![Not supported](_img/icon_witerror.png "Icon_WITerror")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|  
 |Microsoft Project|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|  
 |Microsoft Excel|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|  
+|SQL Server Reporting Services report|![Not supported](_img/icon_witerror.png "Icon_WITerror")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|  
 |TFS-Project Server integration|![Not supported](_img/icon_witerror.png "Icon_WITerror")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|  
 |Custom plug-in or extension|![Not supported](_img/icon_witerror.png "Icon_WITerror")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|  
+ 
+ 
+### Microsoft Project  
+ Project natively supports rollup of summary tasks. With Project, you can round trip TFS data to obtain rollup values.  
   
- In VSTS, you're limited to the work item fields provided with the process template used to create your team project.  
+ ![Task board displays round&#45;trip rollup from Project](_img/alm_rup_roundtriprollup.png "ALM_RUP_RoundTripRollup")  
   
-## SQL Server Reporting Services report  
+ To learn how, see [Rollup estimated and actual work](../office/rollup-estimated-and-actual-work-using-project.md).  
+  
+### Microsoft Excel  
+ You can export a query to Excel that contains the work items you want to provide rollup. You can then write an Excel macro to get the sums and publish data back to TFS.  To learn more about Excel and TFS integration, see [Bulk add or modify work items with Excel](http://msdn.microsoft.com/en-us/67595fec-a872-43e3-b934-9dd1a766218c).  
+  
+ To learn more about Excel macros, see [Automate tasks with the Macro Recorder](https://support.office.com/article/Automate-tasks-with-the-Macro-Recorder-974ef220-f716-4e01-b015-3ea70e64937b).  
+ 
+### SQL Server Reporting Services report  
  Several OOB reports provide rollup. Here's an example of rollup of completed and remaining work that the Stories Overview report provides. This report is part of the default TFS Agile process template.  
   
  ![Stories Overview example report](_img/procguid_agilereports.png "ProcGuid_AgileReports")  
@@ -43,27 +76,16 @@ ms.date: 01/20/2017
   
 -   [Requirements Overview](../../report/sql-reports/requirements-overview-report-cmmi.md)  
   
- If you need to add reports to your on-premises TFS deployment, see [Add reports to a team project](http://msdn.microsoft.com/en-us/00b5b660-5836-4745-94d8-d95fdc8b45ad).  
+ If you need to add reports to your on-premises TFS deployment, see [Add reports to a team project](../../report/admin/add-reports-to-a-team-project.md).  
   
-## Microsoft Project  
- Project natively supports rollup of summary tasks. With Project, you can round trip TFS data to obtain rollup values.  
-  
- ![Task board displays round&#45;trip rollup from Project](_img/alm_rup_roundtriprollup.png "ALM_RUP_RoundTripRollup")  
-  
- To learn how, see [Rollup estimated and actual work](../office/rollup-estimated-and-actual-work-using-project.md).  
-  
-## Microsoft Excel  
- You can export a query to Excel that contains the work items you want to provide rollup. You can then write an Excel macro to get the sums and publish data back to TFS.  To learn more about Excel and TFS integration, see [Bulk add or modify work items with Excel](http://msdn.microsoft.com/en-us/67595fec-a872-43e3-b934-9dd1a766218c).  
-  
- To learn more about Excel macros, see [Create or delete a macro](http://office.microsoft.com/en-us/excel-help/create-or-delete-a-macro-HA102749033.aspx?CTT=1).  
-  
-## TFS-Project Server integration  
+### TFS-Project Server integration  
  Like Project, Project Server natively supports rollup of summary tasks. If you have TFS-Project Server integration deployed, then you have rollup. To learn about how fields are synchronized, see [Understand how updates to specific fields are managed](../tfs-ps-sync/understand-how-updates-to-specific-fields-managed.md). If you need to add fields or change how fields are mapped, see [Customize the field mapping](../tfs-ps-sync/customize-field-mapping-tfs-project-server.md).  
   
-## Custom control or plug-in  
- You can write an extension using the [client object model for Team Foundation](https://msdn.microsoft.com/library/bb130347.aspx) to get rollup. Two code samples available on CodePlex that can get you started are [TFS Aggregrator](http://tfsaggregator.codeplex.com/) and [TfsRollUp](http://tfsrollup.codeplex.com/).  
-  
-##  <a name="requirements"></a> Rollup requirements  
+### Custom control or plug-in  
+ You can write an extension using the [REST API for work tracking](../../../integrate/api/wit/overview.md) to get rollup. A code sample available on github that can get you started is [TFS Aggregrator](https://tfsaggregator.github.io/).  
+
+<a name="requirements"></a>   
+##  Rollup requirements  
  To support rollup, structure your work items according to the following recommendations:  
   
 -   Use parent-child links to link work items that contain values that you want to rollup.  

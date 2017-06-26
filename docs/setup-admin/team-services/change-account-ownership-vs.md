@@ -46,25 +46,25 @@ and agreed to the Terms of Service.
 0.	To find the current account owner, 
 go to your Team Services account settings
 
-	<img alt="Go to account settings" src="../../_shared/_img/account-settings-new-ui.png" style="border: 1px solid #CCCCCC" />
+	![Go to account settings](../../_shared/_img/account-settings-new-ui.png)
 
 0.	Under **Settings**, find the current owner.
 
-	<img alt="Find current owner" src="../../_shared/_img/account-owner-new-ui.png" style="border: 1px solid #CCCCCC" />
+	![Find current owner](../../_shared/_img/account-owner-new-ui.png)
 
 0.	Change the account owner.
 
-	<img alt="Change current owner" src="./_img/change-account-ownership/VSOControlPanelChangeOwner.png" style="border: 1px solid #CCCCCC" />
+	![Change current owner](_img/change-account-ownership/VSOControlPanelChangeOwner.png)
 
 0.	Find and select the new owner.
 
-	<img alt="Find and select owner" src="./_img/change-account-ownership/VSOFindNewAccountOwner.png" style="border: 1px solid #CCCCCC" />
+	![Find and select owner](_img/change-account-ownership/VSOFindNewAccountOwner.png)
 
 	[Can't find the person you want?](#NoNewOwner) 
 
 0.	Save your changes.
 
-	<img alt="Select new owner, save changes" src="./_img/change-account-ownership/VSOSaveNewAccountOwner.png" style="border: 1px solid #CCCCCC" />
+	![Select new owner, save changes](_img/change-account-ownership/VSOSaveNewAccountOwner.png)
 
 	Your Team Services account has a new owner! 
 

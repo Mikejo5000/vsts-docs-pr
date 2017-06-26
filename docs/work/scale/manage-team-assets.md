@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: 6BF2B72D-9160-4140-B8DE-B2C7C42AC338  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 04/05/2017
+ms.date: 05/22/2017
 ---
 
 # Configure team settings and add team administrators 
@@ -147,7 +147,7 @@ Contributors have access to all features available to Readers. Team admins have 
 <li style="margin-bottom:0px">[Board: WIP limits](../kanban/wip-limits.md)   </li>
 <li style="margin-bottom:0px">[Board: Split columns](../kanban/split-columns.md)  </li>
 <li style="margin-bottom:0px">[Board: Swimlanes](../kanban/expedite-work.md)</li>
-<li style="margin-bottom:0px">[Board: Card reordering](../kanban/kanban-basics.md#card-reorder-setting)</li> 
+<li style="margin-bottom:0px">[Board: Card reordering](../customize/reorder-cards.md) </li> 
 <li style="margin-bottom:0px">[Board: Definition of Done](../kanban/definition-of-done.md)</li>
 <li style="margin-bottom:0px">[Charts: Cumulative flow](../../Report/guidance/cumulative-flow.md#configure) </li>
 </ul>
@@ -190,7 +190,7 @@ Contributors have access to all features available to Readers. Team admins have 
 
 
 <tr>
-<td align="left">Area node: [Edit work items under the node](../customize/modify-areas-iterations.md) 
+<td align="left">Area node: [Edit work items under the node](../customize/set-area-paths.md) 
 </td>
 <td align="left"><p>&nbsp;&nbsp;</p></td>
 <td>![checkmark](../_img/icons/checkmark.png)</td>
@@ -198,7 +198,7 @@ Contributors have access to all features available to Readers. Team admins have 
 <td>![checkmark](../_img/icons/checkmark.png)</td>
 </tr>
 <tr>
-<td align="left">[Area nodes and Iteration nodes: Create, delete, edit child nodes](../customize/modify-areas-iterations.md)  
+<td align="left">[Area nodes and Iteration nodes: Create, delete, edit child nodes](../customize/set-area-paths.md)  
 </td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
@@ -230,24 +230,6 @@ Contributors have access to all features available to Readers. Team admins have 
 
 For a simplified view of permissions assigned to built-in groups, see [Permissions and access](../../setup-admin/permissions-access.md). For a comprehensive list of all permissions and default groups, see the [Permissions reference for TFS](../../setup-admin/permissions.md). 
 
-
-<a id="add-team-admin">  </a>  
-
-##Add a team member as a team administrator
-
-It's always a good idea to have more than one person with administration permissions for an area. 
-
-1. If you're not a team administrator, get added as one using this procedure. Ask an administrator for your team project or project collection to add you as an administrator.  
-
-2. Add an administrator from the web portal team admin context.  
-
-	![Open team administration context](_img/add-account-as-team-admin.png)  
-
-	To access this page, choose the ![gear icon](../_img/icons/gear_icon.png) gear icon from your team home page.  
-
-3. Add the account identity.  
-
-	![Add account as a team administrator](_img/add-team-admin-dialog.png) 
 
 <a id="team-settings">  </a>
         
@@ -289,7 +271,7 @@ You can configure all your team settings from the common configuration dialog.
 <ul style="padding-left:30px">
 <li style="margin-bottom:0px">[Columns](../kanban/add-columns.md)</li> 
 <li style="margin-bottom:0px">[Swimlanes](../kanban/expedite-work.md)</li> 
-<li style="margin-bottom:0px">[Card reordering](../kanban/kanban-basics.md#card-reorder-setting)</li> 
+<li style="margin-bottom:0px">[Card reordering](../customize/reorder-cards.md) </li> 
 </ul>
 </div>
 
@@ -320,8 +302,14 @@ You can configure all your team settings from the common configuration dialog.
 
 
 <a id="teamroom">  </a>
+
+## Create and manage a team room  
+A team room is created for each team that gets created. Team administrators can create additional rooms and manage their team rooms.  
+
+Members of the Project Administrators groups can create and administer team rooms that they have created. And, members of the Project Collection Administrators groups can create and administer all team rooms.  
+
 <a id="team-room-permissions"> </a>
-## Administer team room permissions
+### Administer team room permissions
 
 You can grant permissions to users to administer a team room.  
 
@@ -340,6 +328,9 @@ You can grant permissions to users to administer a team room.
 Permissions on team room events are managed by their associated operational area. It is possible for a team member to have permissions to collaborate within a team room, yet not be allowed to view work items, build definitions, or source code that have alerts enabled in the team room. 
 
 
+
+
+
 ## Related notes 
 
 To create additional teams, see [Multiple teams](multiple-teams.md).  
@@ -350,7 +341,7 @@ You can also [restrict access to select features and functions](../../setup-admi
 
 
 <a id="team-favorites"> </a>
-### Team favorites 
+### Set team favorites 
 Team favorites are a quick way for members of your team to quickly access shared resources of interest. You can define team favorites for the following:
 
 - **Code hub/Explorer**: Add repos or folders to team favories  
@@ -358,7 +349,7 @@ Team favorites are a quick way for members of your team to quickly access shared
 - **Build hub/Explorer**: Add build definitions to team favorites   
 
 
-From your team context, drag shared queries, builds, and folders to Team favorites to provide quick access to those items. Or, choose the Add to team favorites option from the context menu for the item. You must be [added as a team admin](../scale/manage-team-assets.md#add-team-admin) to manage team favorites.  
+From your team context, drag shared queries, builds, and folders to Team favorites to provide quick access to those items. Or, choose the Add to team favorites option from the context menu for the item. You must be [added as a team admin](../scale/add-team-administrator.md) to manage team favorites.  
 
 ![Drag items to team favorites](../../_img/alm-index-team-favorites.png)  
  
@@ -379,10 +370,6 @@ Team settings also include the team name, description, and team profile image.
 To add a team picture. Open the team administration page and choose the picture icon under Team Profile. The maximum file size is 4 MB. 
 
 
-### Create and manage a team room  
-A team room is created for each team that gets created. Team administrators can create additional rooms and manage their team rooms.  
-
-Members of the Project Administrators groups can create and administer team rooms that they have created. And, members of the Project Collection Administrators groups can create and administer all team rooms.  
 
 
 [!INCLUDE [temp](../_shared/switch-team-context-work.md)]
