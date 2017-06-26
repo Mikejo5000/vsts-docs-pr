@@ -3,5 +3,5 @@
   topicHref: /team-services/index
   items: 
   - name: "Admin & Setup"
-    tocHref: team-services/setup-admin/team-services/
+    tocHref: team-services/setup-admin/team-services/TOC.md
     topicHref: team-services/setup-admin/team-services/TOC.md
