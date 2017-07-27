@@ -148,7 +148,7 @@ POST /                         200 OK
 
   In the Test Notification window, select the Response tab to see the details of the response from your server.  You should see a content length of 17 that matches the length of the string from your POST handler (i.e. "Received the POST").
 
-![Select the response tab to see the results of the test](../_img/create-pr-status-server/service-hooks-action.png)
+![Select the response tab to see the results of the test](../_img/create-pr-status-server/test-notification.png)
 
 9. Close the Test Notification window, and select **Finish** to create the service hook.  
 
