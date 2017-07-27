@@ -23,7 +23,7 @@ The pull request (PR) workflow provides developers with an opportunity to get fe
 To install Node.js, [download](https://nodejs.org/en/download/) the LTS release appropriate for your platform.  The download contains an installer, which you can run to install the Node.js runtime on your local machine.  When installing Node.js, be sure to also install the [npm package manager](https://www.npmjs.com/).
 
 ## Create a basic web server using Express
-[Express] (https://expressjs.com/) is a lightweight web framework for Node.js that provides a number of HTTP utility methods that simplify creating a web server.  This framework will provide you with the basic functions needed to listen to PR events.
+[Express](https://expressjs.com/) is a lightweight web framework for Node.js that provides a number of HTTP utility methods that simplify creating a web server.  This framework will provide you with the basic functions needed to listen to PR events.
 
 1. From the command line, create a new project folder for your web server.  
 
