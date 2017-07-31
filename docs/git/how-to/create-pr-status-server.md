@@ -11,12 +11,12 @@ ms.date: 07/27/2017
 
 # Create a pull request status server
 
-#### Team Services | TFS 2018 RC1 
+#### Visual Studio Team Services | TFS 2018 RC1 
 
-The pull request (PR) workflow provides developers with an opportunity to get feedback on their code from peers as well as from automated tools.  Continuous integration (CI) can be done using the Team Services Build tools to build and test code.  You can perform additional validation on PRs by writing a status server that leverages service hooks and the PR [Status API](https://visualstudio.com/en-us/docs/integrate/api/git/).  This article guides you through the process of creating a status server to validate PRs in a Team Services Git repository.  
+The pull request (PR) workflow provides developers with an opportunity to get feedback on their code from peers as well as from automated tools.  Continuous integration (CI) can be done using the Visual Studio Team Services (VSTS) Build tools to build and test code.  You can perform additional validation on PRs by writing a status server that leverages service hooks and the PR [Status API](https://visualstudio.com/en-us/docs/integrate/api/git/).  This article guides you through the process of creating a status server to validate PRs in a VSTS Git repository.  
 
 ## Prerequisites
-* A Team Services account with a Git repo
+* A VSTS account with a Git repo
 * Install [VS Code](http://code.visualstudio.com/Docs/setup).
 
 ## Install Node.js
@@ -80,7 +80,7 @@ node app.js
   Verify the server is running by browsing to `http://localhost:3000/`.
 
 ## Listen for HTTP POST requests
-The web server is going to receive `POST` requests from Team Services, so you need to handle those requests in your server.
+The web server is going to receive `POST` requests from VSTS, so you need to handle those requests in your server.
 
 1. At the end of the `app.js` file, add the following code, and save the file.
 
@@ -97,7 +97,7 @@ node app.js
 ```
 
 ## Configure a service hook for PR events
-Service hooks are a Team Services feature that can alert external services when certain events occur.  For this sample, you'll want to set up a service hook for PR events, so the status server can be notified.
+Service hooks are a VSTS feature that can alert external services when certain events occur.  For this sample, you'll want to set up a service hook for PR events, so the status server can be notified.
 
 In order to receive the service hook notifications, you'll need to expose a port to the public internet.  The [ngrok](https://ngrok.com/) utility is very useful for doing this in a development environment.
 
@@ -115,7 +115,7 @@ ngrok http 3000
 http://c3c1bffa.ngrok.io
 ```
 
-3. Browse to your Team Services project, e.g. https://youraccount.visualstudio.com/YourProjectName
+3. Browse to your VSTS project, e.g. https://youraccount.visualstudio.com/YourProjectName
 
 4. From the navigation menu, hover over the **gear** and select **Service Hooks**.
 
@@ -169,7 +169,7 @@ var bodyParser = require('body-parser')
 app.use(bodyParser.json());
 ```
 
-3. To simplify making REST API call to Team Services, install the [vso-node-api](https://www.npmjs.com/package/vso-node-api) package.
+3. To simplify making REST API call to VSTS, install the [vso-node-api](https://www.npmjs.com/package/vso-node-api) package.
 
 ```
 npm install vso-node-api 
