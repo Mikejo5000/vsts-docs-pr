@@ -76,7 +76,7 @@ fast-forward. He can do this by either merging:
 
 Or rebasing:
 
-![Rebaset](./media/race-to-push/race-to-push-diagram-6.png)
+![Rebase](./media/race-to-push/race-to-push-diagram-6.png)
 
 In either case, Bob can now push to the server, because the server will have a path available from either B 
 to D, or B to C'. That is, Bob can not push, as long as no one else succeeded in pushing during the window between 
