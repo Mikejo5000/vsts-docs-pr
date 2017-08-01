@@ -13,19 +13,19 @@ ms.date: 07/27/2017
 
 #### Team Services | TFS 2018 RC1 
 
-The pull request (PR) workflow provides developers with an opportunity to get feedback on their code from peers as well as from automated tools.  Continuous integration (CI) can be done using the Team Services Build tools to build and test code.  You can perform additional validation on PRs by writing a status server that leverages service hooks and the PR [Status API](https://visualstudio.com/en-us/docs/integrate/api/git/).  This article guides you through the process of creating a status server to validate PRs in a Team Services Git repository.  
+The pull request (PR) workflow provides developers with an opportunity to get feedback on their code from peers as well as from automated tools. Continuous integration (CI) can be done using the Team Services Build tools to build and test code. You can perform additional validation on PRs by writing a status server that leverages service hooks and the PR [Status API](https://visualstudio.com/en-us/docs/integrate/api/git/). This article guides you through the process of creating a status server to validate PRs in a Team Services Git repository.
 
 ## Prerequisites
 * A Team Services account with a Git repo
 * Install [VS Code](http://code.visualstudio.com/Docs/setup).
 
 ## Install Node.js
-To install Node.js, [download](https://nodejs.org/en/download/) the LTS release appropriate for your platform.  The download contains an installer, which you can run to install the Node.js runtime on your local machine.  When installing Node.js, be sure to also install the [npm package manager](https://www.npmjs.com/).
+To install Node.js, [download](https://nodejs.org/en/download/) the LTS release appropriate for your platform. The download contains an installer, which you can run to install the Node.js runtime on your local machine. When installing Node.js, be sure to also install the [npm package manager](https://www.npmjs.com/).
 
 ## Create a basic web server using Express
-[Express](https://expressjs.com/) is a lightweight web framework for Node.js that provides a number of HTTP utility methods that simplify creating a web server.  This framework will provide you with the basic functions needed to listen to PR events.
+[Express](https://expressjs.com/) is a lightweight web framework for Node.js that provides a number of HTTP utility methods that simplify creating a web server. This framework will provide you with the basic functions needed to listen to PR events.
 
-1. From the command line, create a new project folder for your web server.  
+1. From the command line, create a new project folder for your web server.
 
 ```
 > mkdir pr-server
@@ -36,7 +36,7 @@ To install Node.js, [download](https://nodejs.org/en/download/) the LTS release 
 
 > npm init
 
-  Accept the defaults for all of the options except the entry point.  Change it to `app.js` 
+  Accept the defaults for all of the options except the entry point. Change it to `app.js` 
 
 ```
 entry point: (index.js) app.js
@@ -48,7 +48,7 @@ entry point: (index.js) app.js
 npm install express
 ```
 
-4. Follow the [Hello world example](https://expressjs.com/en/starter/hello-world.html) for creating a simple Express app to build upon for the PR status server.  Open the project folder in VS Code.
+4. Follow the [Hello world example](https://expressjs.com/en/starter/hello-world.html) for creating a simple Express app to build upon for the PR status server. Open the project folder in VS Code.
 
 ``` 
 code .
@@ -97,19 +97,19 @@ node app.js
 ```
 
 ## Configure a service hook for PR events
-Service hooks are a Team Services feature that can alert external services when certain events occur.  For this sample, you'll want to set up a service hook for PR events, so the status server can be notified.
+Service hooks are a Team Services feature that can alert external services when certain events occur. For this sample, you'll want to set up a service hook for PR events, so the status server can be notified.
 
-In order to receive the service hook notifications, you'll need to expose a port to the public internet.  The [ngrok](https://ngrok.com/) utility is very useful for doing this in a development environment.
+In order to receive the service hook notifications, you'll need to expose a port to the public internet. The [ngrok](https://ngrok.com/) utility is very useful for doing this in a development environment.
 
-1. [Download](https://ngrok.com/download) and unzip the appropriate ngrok release for your platform.  
+1. [Download](https://ngrok.com/download) and unzip the appropriate ngrok release for your platform.
 
-2. Use ngrok to start listening on the same port as your sample server - port 3000.  Run the following command in a new command window.
+2. Use ngrok to start listening on the same port as your sample server - port 3000. Run the following command in a new command window.
 
 ```
 ngrok http 3000
 ```
 
-  Ngrok will create a public URL that forwards to `localhost:3000`.  Note that URL as you will need it in the next step.  It will look something like this:
+  Ngrok will create a public URL that forwards to `localhost:3000`. Note that URL as you will need it in the next step. It will look something like this:
 
 ```
 http://c3c1bffa.ngrok.io
@@ -133,11 +133,11 @@ http://c3c1bffa.ngrok.io
 
 ![Select pull request created from the list of event triggers](../_img/create-pr-status-server/service-hooks-trigger.png)
 
-8. In the Action page, enter the URL from ngrok in the **URL** box.  Select **Test** to send a test event to your server.  
+8. In the Action page, enter the URL from ngrok in the **URL** box. Select **Test** to send a test event to your server.
 
 ![Enter the URL and select Test to test the service hook](../_img/create-pr-status-server/service-hooks-action.png)
 
-  In the ngrok console window, you'll see an incoming `POST` that returned a `200 OK`, indicating your server received the service hook event.  
+  In the ngrok console window, you'll see an incoming `POST` that returned a `200 OK`, indicating your server received the service hook event.
 
 ```
 HTTP Requests
@@ -146,7 +146,7 @@ HTTP Requests
 POST /                         200 OK
 ```
 
-  In the Test Notification window, select the Response tab to see the details of the response from your server.  You should see a content length of 17 that matches the length of the string from your POST handler (i.e. "Received the POST").
+  In the Test Notification window, select the Response tab to see the details of the response from your server. You should see a content length of 17 that matches the length of the string from your POST handler (i.e. "Received the POST").
 
 ![Select the response tab to see the results of the test](../_img/create-pr-status-server/test-notification.png)
 
@@ -155,7 +155,7 @@ POST /                         200 OK
 ## Post status to PRs
 Now that your server can receive service hook events when new PRs are created,update it to post back status to the PR.
 
-1. Service hook requests include a JSON payload describing the event.  To help parse the JSON returned by the service hook, install the [body-parser](https://www.npmjs.com/package/body-parser) package.
+1. Service hook requests include a JSON payload describing the event. To help parse the JSON returned by the service hook, install the [body-parser](https://www.npmjs.com/package/body-parser) package.
 
 ```
 npm install body-parser
@@ -196,7 +196,7 @@ setx COLLECTIONURL "https://account.visualstudio.com/DefaultCollection"
 ```
 
 6. Create a personal auth token (PAT) for your app to use, following these instructions: 
-https://www.visualstudio.com/en-us/docs/integrate/get-started/authentication/pats.  You should create a new PAT for every service that you use to access your account, naming it appropriately.
+https://www.visualstudio.com/en-us/docs/integrate/get-started/authentication/pats. You should create a new PAT for every service that you use to access your account, naming it appropriately.
 
 7. Create an environment variable for your PAT.
 
@@ -212,15 +212,15 @@ var pullRequestId = req.body.resource.pullRequestId;
 var title = req.body.resource.title;
 ```
 
-9. Build the status object to post on the PR.  
+9. Build the status object to post on the PR. 
 
-  `State` is an enum of type [GitStatusState](https://visualstudio.com/en-us/docs/integrate/api/git/contracts?#GitStatusState).  Use `succeeded` to indicate that the PR has passed the status check and is ready to merge.  
+  `State` is an enum of type [GitStatusState](https://visualstudio.com/en-us/docs/integrate/api/git/contracts?#GitStatusState). Use `succeeded` to indicate that the PR has passed the status check and is ready to merge. 
 
   The `description` is a string value that will be displayed to the user in the Status section and activity feed in the PR details view.
 
-  The `targetUrl` is a URL that will be used to create a link for the description text in the Status section and activity feed.  This is the place where users can go to get more information about the status, for example, a build report or test run.  If no URL is specified, the description will appear as text with no link.
+  The `targetUrl` is a URL that will be used to create a link for the description text in the Status section and activity feed. This is the place where users can go to get more information about the status, for example, a build report or test run. If no URL is specified, the description will appear as text with no link.
 
-  The context `name` and `genre` are used to categorize the status and distinguish it from other services posting status.  
+  The context `name` and `genre` are used to categorize the status and distinguish it from other services posting status. 
 
 ``` javascript
     var prStatus = {
@@ -234,7 +234,7 @@ var title = req.body.resource.title;
     }
 ```
 
-10. Instead of just blindly posting the `succeeded` status, inspect the PR title to see if the user has indicated if the PR is a work in progress by adding "WIP" to the title.  If so, change the status posted back to the PR.
+10. Instead of just blindly posting the `succeeded` status, inspect the PR title to see if the user has indicated if the PR is a work in progress by adding "WIP" to the title. If so, change the status posted back to the PR.
 
 ``` javascript
     if (title.includes("WIP")) {
@@ -243,7 +243,7 @@ var title = req.body.resource.title;
     }
 ```
 
-11. Finally, post the status using the `createPullRequestStatus()` method.  It requires the status object, the repo ID, and the pull request ID.  Output the response to the node console so you can see the result of the post.
+11. Finally, post the status using the `createPullRequestStatus()` method. It requires the status object, the repo ID, and the pull request ID. Output the response to the node console so you can see the result of the post.
 
 ``` javascript
 vstsGit.createPullRequestStatus(prStatus, repoId, pullRequestId).then( result => {
@@ -297,9 +297,9 @@ node app.js
 ```
 
 ## Create a new PR to test the status server
-Now that your server is running and listening for service hook notifications, create a pull request to test it out.  
+Now that your server is running and listening for service hook notifications, create a pull request to test it out. 
 
-1. Start in the files view.  Edit the readme.md file in your repo (or any other file if you don't have a readme.md).
+1. Start in the files view. Edit the readme.md file in your repo (or any other file if you don't have a readme.md).
 
 ![Select Edit from the context menu](../_img/create-pr-status-server/edit-readme.png)
 
@@ -315,7 +315,7 @@ Now that your server is running and listening for service hook notifications, cr
 
 ![Select Create a pull request from the suggestion bar](../_img/create-pr-status-server/create-pr.png)
 
-5. Add "WIP" in the title to test the functionality of the app.  Select **Create** to create the PR.
+5. Add "WIP" in the title to test the functionality of the app. Select **Create** to create the PR.
 
 ![Add "WIP" to the default PR title](../_img/create-pr-status-server/new-pr-wip.png)
 
@@ -324,4 +324,4 @@ Now that your server is running and listening for service hook notifications, cr
 ![Add "WIP" to the default PR title](../_img/create-pr-status-server/pr-with-status.png)
 
 ## Summary
-In this article, you learned the basics of how to create a service that listens for PR events via service hooks and can post status messages using the status API.  For more information about the pull request status API see the [REST API documentation]().  
+In this article, you learned the basics of how to create a service that listens for PR events via service hooks and can post status messages using the status API. For more information about the pull request status API see the [REST API documentation](). 
