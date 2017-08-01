@@ -13,11 +13,7 @@ ms.date: 07/27/2017
 
 #### Visual Studio Team Services | TFS 2018 RC1 
 
-<<<<<<< HEAD
-The pull request (PR) workflow provides developers with an opportunity to get feedback on their code from peers as well as from automated tools. Continuous integration (CI) can be done using the Team Services Build tools to build and test code. You can perform additional validation on PRs by writing a status server that leverages service hooks and the PR [Status API](https://visualstudio.com/en-us/docs/integrate/api/git/). This article guides you through the process of creating a status server to validate PRs in a Team Services Git repository.
-=======
-The pull request (PR) workflow provides developers with an opportunity to get feedback on their code from peers as well as from automated tools.  Continuous integration (CI) can be done using the Visual Studio Team Services (VSTS) Build tools to build and test code.  You can perform additional validation on PRs by writing a status server that leverages service hooks and the PR [Status API](https://visualstudio.com/en-us/docs/integrate/api/git/).  This article guides you through the process of creating a status server to validate PRs in a VSTS Git repository.  
->>>>>>> cab1d74382d8dc215fee66073cf06348ce92dc86
+The pull request (PR) workflow provides developers with an opportunity to get feedback on their code from peers as well as from automated tools. Continuous integration (CI) can be done using the Visual Studio Team Services (VSTS) Build tools to build and test code.  You can perform additional validation on PRs by writing a status server that leverages service hooks and the PR [Status API](https://visualstudio.com/en-us/docs/integrate/api/git/). This article guides you through the process of creating a status server to validate PRs in a VSTS Git repository.  
 
 ## Prerequisites
 * A VSTS account with a Git repo
@@ -101,11 +97,7 @@ The web server is going to receive `POST` requests from VSTS, so you need to han
     ```
 
 ## Configure a service hook for PR events
-<<<<<<< HEAD
 Service hooks are a Team Services feature that can alert external services when certain events occur. For this sample, you'll want to set up a service hook for PR events, so the status server can be notified.
-=======
-Service hooks are a VSTS feature that can alert external services when certain events occur.  For this sample, you'll want to set up a service hook for PR events, so the status server can be notified.
->>>>>>> cab1d74382d8dc215fee66073cf06348ce92dc86
 
 In order to receive the service hook notifications, you'll need to expose a port to the public internet. The [ngrok](https://ngrok.com/) utility is very useful for doing this in a development environment.
 
