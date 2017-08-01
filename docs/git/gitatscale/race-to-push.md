@@ -39,27 +39,21 @@ anyone to move the branch pointer from any commit to any other, it would be all 
 Let's examine why that is.
 
 Imagine that the server currently has one commit, named A, and a branch named master pointing to A:
-```
-Server: A <-- master
-```
+
+![Master pointing to A](./media/race-to-push/race-to-push-diagram-1.png)
 
 Then imagine that two people, named Alice and Bob, pull down master with commit A and commit their own 
 changes on top:
-```
-Alice: A <-- B <-- master
-Bob:   A <-- C <-- master
-```
+
+![Alice and Bob pull down master with commit A](./media/race-to-push/race-to-push-diagram-2.png)
 
 Alice pushes first, and succeeds in making the server's DAG and branch look like hers:
-```
-Server: A <-- B <-- master
-```
+
+![Alice pushes first](./media/race-to-push/race-to-push-diagram-3.png)
 
 Now if Bob pushes and isn't stopped, the server's DAG will look like:
-```
-Server: A <-- C <-- master
-          <-- B
-```
+
+![Bob pushes next](./media/race-to-push/race-to-push-diagram-4.png)
 
 Commit B still technically exists, but it's no longer reachable from master, or any other branch. And more importantly, Bob did not 
 consider Alice's changes when constructing commit C, so commit B is effectively lost unless Alice comes back
@@ -77,15 +71,12 @@ arbitrary pushes to shared branches.
 
 So, Bob's push gets blocked, and Bob is now forced to fetch again, and ensure that his push will result in a 
 fast-forward. He can do this by either merging:
-```
-Bob: A <-- B <-- D <-- master
-       <-- C <-/
-```
+
+![Merge](./media/race-to-push/race-to-push-diagram-5.png)
 
 Or rebasing:
-```
-Bob: A <-- B <-- C' <-- master
-```
+
+![Rebaset](./media/race-to-push/race-to-push-diagram-6.png)
 
 In either case, Bob can now push to the server, because the server will have a path available from either B 
 to D, or B to C'. That is, Bob can not push, as long as no one else succeeded in pushing during the window between 
