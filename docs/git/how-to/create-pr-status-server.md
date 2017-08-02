@@ -191,10 +191,10 @@ Now that your server can receive service hook events when new PRs are created,up
     var vstsGit = connection.getGitApi();
     ```
 
-5. Create an environment variable for your collection URL.
+5. Create an environment variable for your collection URL, replacing `<your account>` with the name of your VSTS account.
 
     ```
-    setx COLLECTIONURL "https://account.visualstudio.com/DefaultCollection"
+    setx COLLECTIONURL "https://<your account>.visualstudio.com/DefaultCollection"
     ```
 
 6. Create a personal auth token (PAT) for your app to use, following these instructions: 
