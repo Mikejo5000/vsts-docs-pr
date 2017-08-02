@@ -1,7 +1,7 @@
 ---
 title: Create a pull request status server
 description: Create a web server to listen to pull request events and post status on the pull request status API.
-ms.assetid:
+ms.assetid: 2653589c-d15e-4dab-b8b0-4f8236c4a67b
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-git
 ms.manager: douge
