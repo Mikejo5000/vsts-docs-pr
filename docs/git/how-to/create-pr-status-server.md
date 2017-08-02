@@ -1,5 +1,5 @@
 ---
-title: Create a pull request status server
+title: Create a pull request status server with Node.js
 description: Create a web server to listen to pull request events and post status on the pull request status API.
 ms.assetid: 2653589c-d15e-4dab-b8b0-4f8236c4a67b
 ms.prod: vs-devops-alm
@@ -9,11 +9,11 @@ ms.author: mmitrik
 ms.date: 07/27/2017
 ---
 
-# Create a pull request status server
+# Create a pull request status server with Node.js
 
 #### Visual Studio Team Services | TFS 2018 RC1 
 
-The pull request (PR) workflow provides developers with an opportunity to get feedback on their code from peers as well as from automated tools. Continuous integration (CI) can be done using the Visual Studio Team Services (VSTS) Build tools to build and test code.  You can perform additional validation on PRs by writing a status server that leverages service hooks and the PR [Status API](https://go.microsoft.com/fwlink/?linkid=854107). This article guides you through the process of creating a status server to validate PRs in a VSTS Git repository.  
+The pull request (PR) workflow provides developers with an opportunity to get feedback on their code from peers as well as from automated tools. 3rd party tools and services can participate in the PR workflow by using the PR [Status API](https://go.microsoft.com/fwlink/?linkid=854107). This article guides you through the process of creating a status server to validate PRs in a VSTS Git repository.
 
 ## Prerequisites
 * A VSTS account with a Git repo. If you don't have a VSTS account, [sign up](../setup-admin/team-services/sign-up-for-visual-studio-team-services.md) to upload and share code in free unlimited private Git repositories.
@@ -325,5 +325,6 @@ Now that your server is running and listening for service hook notifications, cr
 
     ![Add "WIP" to the default PR title](../_img/create-pr-status-server/pr-with-status.png)
 
-## Summary
-In this article, you learned the basics of how to create a service that listens for PR events via service hooks and can post status messages using the status API. For more information about the pull request status API see the [REST API documentation](https://go.microsoft.com/fwlink/?linkid=854107). 
+## Next Steps
+* In this article, you learned the basics of how to create a service that listens for PR events via service hooks and can post status messages using the status API. For more information about the pull request status API see the [REST API documentation](https://go.microsoft.com/fwlink/?linkid=854107). 
+* [Configure a branch policy for an external service](https://go.microsoft.com/fwlink/?linkid=854109).
