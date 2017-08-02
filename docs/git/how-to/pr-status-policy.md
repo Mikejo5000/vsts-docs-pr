@@ -1,7 +1,7 @@
 ---
 title: Conifigure a branch policy for an external service 
 description: Configure a branch policy to require status from a 3rd party pull request status server
-ms.assetid:
+ms.assetid: 11f567b2-e45f-434c-88eb-d5f43398b451
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-git
 ms.manager: douge
