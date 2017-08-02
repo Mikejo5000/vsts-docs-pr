@@ -50,7 +50,7 @@ To install Node.js, [download](https://nodejs.org/en/download/) the LTS release 
     npm install express
     ```
 
-4. Follow the [Hello world example](https://expressjs.com/en/starter/hello-world.html) for creating a simple Express app to build upon for the PR status server. Open the project folder in VS Code.
+4. Create a simple Express app to build upon for the PR status server. The following steps are based on the Express [Hello world example](https://expressjs.com/en/starter/hello-world.html). Open the project folder in VS Code by running the following command.
 
     ``` 
     code .
