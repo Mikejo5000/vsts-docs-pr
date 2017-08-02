@@ -28,8 +28,8 @@ To install Node.js, [download](https://nodejs.org/en/download/) the LTS release 
 1. From the command line, create a new project folder for your web server.
 
     ```
-    > mkdir pr-server
-    > cd pr-server
+    mkdir pr-server
+    cd pr-server
     ```
 
 2. Use the `npm init` command to create a new `package.json` file for the project.
