@@ -16,7 +16,7 @@ ms.date: 07/27/2017
 The pull request (PR) workflow provides developers with an opportunity to get feedback on their code from peers as well as from automated tools. Continuous integration (CI) can be done using the Visual Studio Team Services (VSTS) Build tools to build and test code.  You can perform additional validation on PRs by writing a status server that leverages service hooks and the PR [Status API](https://go.microsoft.com/fwlink/?linkid=854107). This article guides you through the process of creating a status server to validate PRs in a VSTS Git repository.  
 
 ## Prerequisites
-* A VSTS account with a Git repo
+* A VSTS account with a Git repo. If you don't have a VSTS account, [sign up](../setup-admin/team-services/sign-up-for-visual-studio-team-services.md) to upload and share code in free unlimited private Git repositories.
 * Install [VS Code](http://code.visualstudio.com/Docs/setup).
 
 ## Install Node.js
