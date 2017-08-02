@@ -34,7 +34,9 @@ To install Node.js, [download](https://nodejs.org/en/download/) the LTS release 
 
 2. Use the `npm init` command to create a new `package.json` file for the project.
 
-    `> npm init`
+    ```
+    npm init
+    ````
 
     Press Enter to accept the defaults for all of the options except the entry point. Change it to `app.js` 
 
