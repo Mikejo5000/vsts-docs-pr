@@ -13,12 +13,12 @@ ms.date: 07/28/2017
 
 #### Team Services | TFS 2018 RC1 
 
-Branch policies are a powerful feature to ensure high quality code in your repo by establishing requirements for all pull requests.  External services can use the PR [Status API]() to post detailed status to your PRs.  The branch policy for external services brings the ability for those 3rd party services to participate in the PR workflow and establish policy requirements.  This article guides you through the process of configuring a branch policy for a service that is posting PR status.  For more information about PR status, see [Create a pull request status server]().
+Branch policies are a powerful feature to ensure high quality code in your repo by establishing requirements for all pull requests.  External services can use the PR [Status API](https://go.microsoft.com/fwlink/?linkid=854107) to post detailed status to your PRs.  The branch policy for external services brings the ability for those 3rd party services to participate in the PR workflow and establish policy requirements.  This article guides you through the process of configuring a branch policy for a service that is posting PR status.  For more information about PR status, see [Create a pull request status server](https://go.microsoft.com/fwlink/?linkid=854108).
 
 ## Prerequisites
 
 * A Team Services account with a Git repo
-* A service that posts status to PRs.  See [Create a pull request status server]().
+* A service that posts status to PRs.  See [Create a pull request status server](https://go.microsoft.com/fwlink/?linkid=854108).
 
 ## Configure the branch policy 
 
