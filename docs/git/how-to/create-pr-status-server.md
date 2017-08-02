@@ -17,13 +17,13 @@ The pull request (PR) workflow provides developers with an opportunity to get fe
 
 ## Prerequisites
 * A VSTS account with a Git repo. If you don't have a VSTS account, [sign up](../setup-admin/team-services/sign-up-for-visual-studio-team-services.md) to upload and share code in free unlimited private Git repositories.
-* Install [VS Code](http://code.visualstudio.com/Docs/setup).
+* Install [VS Code](http://code.visualstudio.com/Docs/setup) or other code editor of your choice. The instructions in this guide use VS Code but the steps in other code editors are similar.
 
 ## Install Node.js
 To install Node.js, [download](https://nodejs.org/en/download/) the LTS release appropriate for your platform. The download contains an installer, which you can run to install the Node.js runtime on your local machine. When installing Node.js, be sure to keep the [npm package manager](https://www.npmjs.com/) portion of the install, which is selected by default.
 
 ## Create a basic web server using Express
-[Express](https://expressjs.com/) is a lightweight web framework for Node.js that provides a number of HTTP utility methods that simplify creating a web server. This framework will provide you with the basic functions needed to listen to PR events.
+[Express](https://expressjs.com/) is a lightweight web framework for Node.js that provides a number of HTTP utility methods that simplify creating a web server. This framework provides you with the basic functions needed to listen to PR events.
 
 1. From the command line, create a new project folder for your web server.
 
@@ -50,7 +50,7 @@ To install Node.js, [download](https://nodejs.org/en/download/) the LTS release 
     npm install express
     ```
 
-4. Create a simple Express app to build upon for the PR status server. The following steps are based on the Express [Hello world example](https://expressjs.com/en/starter/hello-world.html). Open the project folder in VS Code by running the following command.
+4. Create a simple Express app to build upon for the PR status server. The following steps are based on the Express [Hello world example](https://expressjs.com/en/starter/hello-world.html). Open the project folder in VS Code by running the following command from the `pr-server` folder.
 
     ``` 
     code .
@@ -117,7 +117,7 @@ In order to receive the service hook notifications, you'll need to expose a port
     http://c3c1bffa.ngrok.io
     ```
 
-3. Browse to your VSTS project, e.g. https://youraccount.visualstudio.com/YourProjectName
+3. Browse to your VSTS project, e.g. `https://<your account>.visualstudio.com/<your project name>`
 
 4. From the navigation menu, hover over the **gear** and select **Service Hooks**.
 
