@@ -23,7 +23,7 @@ The pull request (PR) workflow provides developers with an opportunity to get fe
 To install Node.js, [download](https://nodejs.org/en/download/) the LTS release appropriate for your platform. The download contains an installer, which you can run to install the Node.js runtime on your local machine. When installing Node.js, be sure to keep the [npm package manager](https://www.npmjs.com/) portion of the install, which is selected by default.
 
 ## Create a basic web server using Express
-[Express](https://expressjs.com/) is a lightweight web framework for Node.js that provides a number of HTTP utility methods that simplify creating a web server. This framework provides you with the basic functions needed to listen to PR events.
+The steps in this section use [Express](https://expressjs.com/), which is a lightweight web framework for Node.js that provides a number of HTTP utility methods that simplify creating a web server. This framework provides you with the basic functions needed to listen to PR events.
 
 1. From the command line, create a new project folder for your web server.
 
@@ -44,7 +44,7 @@ To install Node.js, [download](https://nodejs.org/en/download/) the LTS release 
     entry point: (index.js) app.js
     ```
 
-3. Install Express in the pr-server directory, saving it to the dependencies list.
+3. Install Express in the pr-server directory using the following command. This installs Express and saves it to the dependencies list.
 
     ```
     npm install express
@@ -71,7 +71,7 @@ To install Node.js, [download](https://nodejs.org/en/download/) the LTS release 
     })
     ```
 
-6. Save the file as `app.js`
+6. Save the file as `app.js`.
 
 7. Run the basic web server using the following command:
 
@@ -123,7 +123,11 @@ In order to receive the service hook notifications, you'll need to expose a port
 
     ![Choose Service hooks from the admin menu](../_img/create-pr-status-server/service-hooks-menu.png)
 
-5. Select the green plus `(+)` to create a new service hook subscription.
+5. If this is your first service hook, select **+ Create subscription**. 
+
+    ![Select Create a new subscription from the toolbar](../_img/create-pr-status-server/service-hooks-create-first-service-hook.png)
+
+    If you already have other service hooks configure, select the green plus `(+)` to create a new service hook subscription.
 
     ![Select Create a new subscription from the toolbar](../_img/create-pr-status-server/service-hooks-create.png)
 
