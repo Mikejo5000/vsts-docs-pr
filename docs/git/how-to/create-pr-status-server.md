@@ -127,7 +127,7 @@ In order to receive the service hook notifications, you'll need to expose a port
 
     ![Select Create a new subscription from the toolbar](../_img/create-pr-status-server/service-hooks-create-first-service-hook.png)
 
-    If you already have other service hooks configure, select the green plus `(+)` to create a new service hook subscription.
+    If you already have other service hooks configured, select the green plus `(+)` to create a new service hook subscription.
 
     ![Select Create a new subscription from the toolbar](../_img/create-pr-status-server/service-hooks-create.png)
 
