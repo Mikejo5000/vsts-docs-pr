@@ -18,3 +18,9 @@ ms.custom: mvc
 ---
 
 # CI/CD of an ASP.NET Core app to a Linux virtual machine
+
+[!INCLUDE [include](_shared/prerequisites.md)]
+
+https://docs.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-cli
+
+https://docs.microsoft.com/en-us/aspnet/core/publishing/linuxproduction
