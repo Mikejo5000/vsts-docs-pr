@@ -24,12 +24,3 @@ ms.date: 08/23/2016
 0. Select the trashcan icon next to the branch you want to delete. 
 
     ![Delete your branch in the Team Services/TFS web interface](_img/branches/delete_branch.png)
-
-## Undo a branch delete
-
-If you delete a branch by accident, you can undo the delete by selecting **Undo** next to the branch name.
-
-   ![Undo a delete of a branch in Team Services](_img/branches/undo_delete_branches.png)
-
-If you navigate away from the branches page, you will not see the **Undo** link.  [Push](tutorial/pushing.md) your branch from your local repo
-to your Team Services to restore it. 
