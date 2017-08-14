@@ -1,7 +1,7 @@
 ---
 title: Restore a deleted branch in your Git repo | Team Services & TFS
 description: Use the branches page to restore a deleted Git branch in Team Services or Team Foundation Server
-ms.assetid: [TODO]
+ms.assetid:
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-git
 ms.manager: jepling
