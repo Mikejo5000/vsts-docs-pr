@@ -50,8 +50,8 @@ increase quadratically with the number of people. So while this is a minor issue
 repo, it's a major nuisance for the VSTS repo, and it would be a 
 complete show stopper for the Windows repo.
 
-Coming soon: How pull requests and merge queues solve this issue by 
-handling that race for you
+See [The Race to Push](https://www.visualstudio.com/learn/race-to-push) to see how pull requests and merge queues solve this issue by 
+handling that race for you.
 
 ## Too many branches 
 Branches are cheap to create and easy to use, and people tend to 
