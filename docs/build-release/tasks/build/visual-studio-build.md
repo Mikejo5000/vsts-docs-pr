@@ -23,36 +23,27 @@ msbuild, visualstudio
 
 ## Arguments
 
-<table>
-<thead>
-<tr>
-<th>Argument</th>
-<th>Description</th>
-</tr>
-</thead>
+### Solution
 
-<tr>
-<td>Solution</td>
-<td>
-<p>If you want to build a single solution, click the <strong>...</strong> button and select the solution.</p>
-<p>If you want to build multiple solutions, specify search criteria. You can use a single-folder wildcard (```*```) and recursive wildcards (```**```). For example, ```**\*.sln``` searches for all *.sln* files in all subdirectories.</p>
-<p>Make the sure the solutions you specify are downloaded by this build definition. On the Repository tab:</p>
-<ul>
-<li>
-If you use TFVC, make sure that the  solution is a child of one of the mappings on the Repository tab. 
-</li>
-<li>If you use Git, make sure that the project or solution is in your Git repo, in a branch that you're building.</li>
-</ul>
-<p>Tips:</p>
-<ul>
-<li>You can also build MSBuild project (.&#42;proj) files.</li>
-<li>If you are building a customized MSBuild project file, we recommend you use the [MSBuild step](msbuild.md) instead of the Visual Studio Build step.</li>
-</ul>
-</td>
-</tr>
+If you want to build a single solution, click the <strong>...</strong> button and select the solution.
+
+If you want to build multiple solutions, specify search criteria. You can use a single-folder wildcard (```*```) and recursive wildcards (```**```). For example, ```**\*.sln``` searches for all *.sln* files in all subdirectories.
+
+Make the sure the solutions you specify are downloaded by this build definition. On the Repository tab:
+
+* If you use TFVC, make sure that the  solution is a child of one of the mappings on the Repository tab. 
+
+* If you use Git, make sure that the project or solution is in your Git repo, in a branch that you're building.
+
+> [!TIP]
+>
+> * You can also build MSBuild project (.&#42;proj) files.
+>
+> * If you are building a customized MSBuild project file, we recommend you use the [MSBuild step](msbuild.md) instead of the Visual Studio Build step.
 
 [!INCLUDE [temp](../_shared/msbuild_args.md)]
 
+<table>
 <tr>
 <td>Visual Studio Version</td>
 <td><p>For some kinds of solutions, to avoid problems, you must make sure this value matches the version of Visual Studio used to create your solution.</p>

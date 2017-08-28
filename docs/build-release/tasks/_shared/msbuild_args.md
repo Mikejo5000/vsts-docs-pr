@@ -1,10 +1,11 @@
-<tr>
-<td>MSBuild Arguments</td>
-<td>You can pass additional arguments to MSBuild. For syntax, see [MSBuild Command-Line Reference](https://msdn.microsoft.com/en-us/library/ms164311.aspx).</td>
-</tr>
-<tr>
-<td>Platform</td>
-<td><p>Specify the platform you want to build such as ```Win32```, ```x86```, ```x64``` or ```any cpu```.</p>
+### MSBuild Arguments
+
+You can pass additional arguments to MSBuild. For syntax, see [MSBuild Command-Line Reference](https://msdn.microsoft.com/en-us/library/ms164311.aspx).
+
+### Platform
+
+Specify the platform you want to build such as ```Win32```, ```x86```, ```x64``` or ```any cpu```.
+
 <p>Tips:</p>
 <ul>
 <li>If you are targeting an MSBuild project (.&#42;proj) file instead of a solution, specify ```AnyCPU``` (no whitespace).</li>
