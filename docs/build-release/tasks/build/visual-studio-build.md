@@ -43,20 +43,17 @@ Make the sure the solutions you specify are downloaded by this build definition.
 
 [!INCLUDE [temp](../_shared/msbuild_args.md)]
 
-<table>
-<tr>
-<td>Visual Studio Version</td>
-<td><p>For some kinds of solutions, to avoid problems, you must make sure this value matches the version of Visual Studio used to create your solution.</p>
-<p>The value you select here adds ```/p:VisualStudioVersion={numeric_visual_studio_version}``` argument to the MSBuild command run by the build. For example, if you select Visual Studio 2015, ```/p:VisualStudioVersion=14.0``` is added to the MSBuild command.
-</p>
-<blockquote>
-<p><strong>VSTS and Team Foundation Server 2017:</strong> If you select **Visual Studio 2017** or **Latest** and you want to use our hosted agents, make sure you select as your default queue the **Hosted VS2017**. See [Hosted agents](../../concepts/agents/hosted.md).</p>
-</blockquote>
-</td>
-</tr>
-<tr>
-<th style="text-align: center" colspan="2">Advanced</th>
-</tr>
+### Visual Studio Version
+
+For some kinds of solutions, to avoid problems, you must make sure this value matches the version of Visual Studio used to create your solution.
+
+The value you select here adds ```/p:VisualStudioVersion={numeric_visual_studio_version}``` argument to the MSBuild command run by the build. For example, if you select Visual Studio 2015, ```/p:VisualStudioVersion=14.0``` is added to the MSBuild command.
+
+> [!NOTE]
+>
+> **VSTS and Team Foundation Server 2017:** If you select **Visual Studio 2017** or **Latest** and you want to use our hosted agents, make sure you select as your default queue the **Hosted VS2017**. See [Hosted agents](../../concepts/agents/hosted.md).
+
+### Advanced
 
 [!INCLUDE [temp](../_shared/msbuild_architecture_arg.md)]
 

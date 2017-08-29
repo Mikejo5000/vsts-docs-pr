@@ -6,9 +6,9 @@ You can pass additional arguments to MSBuild. For syntax, see [MSBuild Command-L
 
 Specify the platform you want to build such as ```Win32```, ```x86```, ```x64``` or ```any cpu```.
 
+If you are targeting an MSBuild project (.&#42;proj) file instead of a solution, specify ```AnyCPU``` (no whitespace).
+
 > [!TIP]
->
-> * If you are targeting an MSBuild project (.&#42;proj) file instead of a solution, specify ```AnyCPU``` (no whitespace).
 >
 > * Declare a build variable such as ```BuildPlatform``` on the Variables tab (selecting Allow at Queue Time) and reference it here as ```$(BuildPlatform)```. This way you can modify the platform when you queue the build and enable building multiple configurations.
 
