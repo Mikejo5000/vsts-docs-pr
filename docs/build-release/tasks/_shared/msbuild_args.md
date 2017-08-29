@@ -1,8 +1,8 @@
-### MSBuild Arguments
+## MSBuild Arguments
 
 You can pass additional arguments to MSBuild. For syntax, see [MSBuild Command-Line Reference](https://msdn.microsoft.com/en-us/library/ms164311.aspx).
 
-### Platform
+## Platform
 
 Specify the platform you want to build such as ```Win32```, ```x86```, ```x64``` or ```any cpu```.
 
@@ -12,7 +12,7 @@ If you are targeting an MSBuild project (.&#42;proj) file instead of a solution,
 >
 > * Declare a build variable such as ```BuildPlatform``` on the Variables tab (selecting Allow at Queue Time) and reference it here as ```$(BuildPlatform)```. This way you can modify the platform when you queue the build and enable building multiple configurations.
 
-### Configuration
+## Configuration
 
 Specify the configuration you want to build such as ```debug``` or ```release```.
 
@@ -20,13 +20,13 @@ Specify the configuration you want to build such as ```debug``` or ```release```
 >
 > Declare a build variable such as ```BuildConfiguration``` on the Variables tab (selecting Allow at Queue Time) and reference it here as ```$(BuildConfiguration)```. This way you can modify the platform when you queue the build and enable building multiple configurations.
 
-### Clean
+## Clean
 
 Set to False if you want to make this an incremental build. This setting might reduce your build time, especially if your codebase is large. This option has no practical effect unless you also set Clean repository to False.
 
 Set to True if you want to rebuild all the code in the code projects. This is equivalent to the MSBuild ```/target:clean argument```.
 
-### Restore NuGet Packages
+## Restore NuGet Packages
 
 > [!IMPORTANT]
 >

@@ -23,47 +23,33 @@ msbuild
 
 ## Arguments
 
-<table>
-<thead>
-<tr>
-<th>Argument</th>
-<th>Description</th>
-</tr>
-</thead>
+## Project
 
-<tr>
-<td>Project</td>
-<td>
-<p>If you want to build a single project, click the <strong>...</strong> button and select the project.</p>
-<p>If you want to build multiple projects, specify search criteria. You can use a single-folder wildcard (```*```) and recursive wildcards (```**```). For example, ```**\*.*proj``` searches for all MSBuild project (.&#42;proj) files in all subdirectories.</p>
-<p>Make the sure the projects you specify are downloaded by this build definition. On the Repository tab:</p>
-<ul>
-<li>
-If you use TFVC, make sure that the  project is a child of one of the mappings on the Repository tab. 
-</li>
-<li>If you use Git, make sure that the project or project is in your Git repo, in a branch that you're building.</li>
-</ul>
-<p>Tip: If you are building a solution, we recommend you use the [Visual Studio build step](visual-studio-build.md) instead of the MSBuild step.</p>
-</td>
-</tr>
+If you want to build a single project, click the <strong>...</strong> button and select the project.
+
+If you want to build multiple projects, specify search criteria. You can use a single-folder wildcard (```*```) and recursive wildcards (```**```). For example, ```**\*.*proj``` searches for all MSBuild project (.&#42;proj) files in all subdirectories.
+
+Make the sure the projects you specify are downloaded by this build definition. On the Repository tab:
+
+* If you use TFVC, make sure that the  project is a child of one of the mappings on the Repository tab. 
+
+* If you use Git, make sure that the project or project is in your Git repo, in a branch that you're building.
+
+> [!TIP]
+>
+> * If you are building a solution, we recommend you use the [Visual Studio build step](visual-studio-build.md) instead of the MSBuild step.
 
 [!INCLUDE [temp](../_shared/msbuild_args.md)]
 
-<tr>
-<th style="text-align: center" colspan="2">Advanced</th>
-</tr>
+## Advanced
 
 [!INCLUDE [temp](../_shared/msbuild_record_project_details_arg.md)]
 
-<tr>
-<td>MSBuild</td>
-<td>
-<p>In some cases you might need more control over the version of MSBuild that you are running.</p>
+## MSBuild
 
-</td>
-</tr>
+In some cases you might need more control over the version of MSBuild that you are running.
+
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
-</table>
 
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->
