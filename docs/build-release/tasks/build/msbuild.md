@@ -23,7 +23,7 @@ msbuild
 
 ## Arguments
 
-## Project
+### Project
 
 If you want to build a single project, click the <strong>...</strong> button and select the project.
 
@@ -41,11 +41,11 @@ Make the sure the projects you specify are downloaded by this build definition. 
 
 [!INCLUDE [temp](../_shared/msbuild_args.md)]
 
-## Advanced
+### Advanced
 
 [!INCLUDE [temp](../_shared/msbuild_record_project_details_arg.md)]
 
-## MSBuild
+### MSBuild
 
 In some cases you might need more control over the version of MSBuild that you are running.
 

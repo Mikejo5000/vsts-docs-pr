@@ -23,7 +23,7 @@ msbuild, visualstudio
 
 ## Arguments
 
-## Solution
+### Solution
 
 If you want to build a single solution, click the <strong>...</strong> button and select the solution.
 
@@ -43,7 +43,7 @@ Make the sure the solutions you specify are downloaded by this build definition.
 
 [!INCLUDE [temp](../_shared/msbuild_args.md)]
 
-## Visual Studio Version
+### Visual Studio Version
 
 For some kinds of solutions, to avoid problems, you must make sure this value matches the version of Visual Studio used to create your solution.
 
@@ -53,7 +53,7 @@ The value you select here adds ```/p:VisualStudioVersion={numeric_visual_studio_
 >
 > **VSTS and Team Foundation Server 2017:** If you select **Visual Studio 2017** or **Latest** and you want to use our hosted agents, make sure you select as your default queue the **Hosted VS2017**. See [Hosted agents](../../concepts/agents/hosted.md).
 
-## Advanced
+### Advanced
 
 [!INCLUDE [temp](../_shared/msbuild_architecture_arg.md)]
 

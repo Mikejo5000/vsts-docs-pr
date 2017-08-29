@@ -1,3 +1,3 @@
-## Record Project Details
+### Record Project Details
 
 Select this checkbox if you want details about how much time was needed to build each project. You can see these details when you select this build step in a completed build.
