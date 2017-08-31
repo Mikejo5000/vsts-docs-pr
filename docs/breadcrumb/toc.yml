@@ -89,12 +89,12 @@
     - name: "READMEs & Wikis"
       tocHref: /vsts/collaborate/
       topicHref: /vsts/collaborate/index
-    - name: Search
-      tocHref: /vsts/search/
-      topicHref: /vsts/search/index
     - name: Feedback
       tocHref: /vsts/collaborate/feedback/
       topicHref: /vsts/collaborate/feedback/index
+    - name: Search
+      tocHref: /vsts/search/
+      topicHref: /vsts/search/index
   - name: Admin
     tocHref: /vsts/accounts/
     topicHref: /vsts/index#pivot=services&panel=admin
