@@ -48,9 +48,6 @@ The sample project is a simple shared library written in C#.
 
 The easiest way to use the Team Services NuGet service is by adding the [Microsoft.VisualStudio.Services.NuGet.Bootstrap package](/vsts/package/nuget/bootstrap-nuget.md) to your project.
 
-[!INCLUDE [vss-pm-bootstrap](/vsts/package/_shared/nuget-bootstrap.md)]
-
-
 ## Create a package from your project
 
 *Whenever you work from a command line, run `init.cmd` first. This sets up your environment to allow you to work with nuget.exe and the Team Services NuGet service.*
