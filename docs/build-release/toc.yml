@@ -304,13 +304,9 @@
     - name: CocoaPods
       href: tasks/package/cocoapods.md
     - name: npm
-      href: tasks/package/npm-install.md
-    - name: NuGet Installer
-      href: tasks/package/nuget-installer.md
-    - name: NuGet Packager
-      href: tasks/package/nuget-packager.md
-    - name: NuGet Publisher
-      href: tasks/package/nuget-publisher.md
+      href: tasks/package/npm.md
+    - name: NuGet
+      href: tasks/package/nuget.md
     - name: Xamarin Component Restore
       href: tasks/package/xamarin-component-restore.md
   - name: Deploy tasks
