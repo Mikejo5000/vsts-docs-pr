@@ -209,6 +209,8 @@
   items:
   - name: Build tasks
     items:
+    - name: .NET Core
+      href: tasks/build/dotnet-core.md
     - name: Android build
       href: tasks/build/android-build.md
     - name: Android signing
