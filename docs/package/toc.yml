@@ -4,14 +4,10 @@
   items:
   - name: About Package Management
     href: overview.md
-  - name: Collaborate with packages
-    href: collaborate-with-packages.md
-  - name: About release views
-    href: feeds/about-release-views.md
-  - name: Install and license Package Management
-    href: install.md
 - name: Quickstarts
   items:
+  - name: Install and license Package Management
+    href: install.md
   - name: Get started with NuGet
     href: get-started-nuget.md
   - name: Get started with npm
@@ -98,3 +94,9 @@
       href: ./gradle/pull-package-gradle.md
     - name: Publish a Gradle package
       href: ./gradle/publish-package-gradle.md
+- name: Reference
+  items:
+  - name: Collaborate with packages
+    href: collaborate-with-packages.md
+  - name: About release views
+    href: feeds/about-release-views.md
