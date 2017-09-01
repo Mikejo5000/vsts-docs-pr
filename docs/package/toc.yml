@@ -70,8 +70,6 @@
       href: nuget/bootstrap-nuget.md
     - name: Move your packages to the cloud
       href: nuget/move-from-fileshares.md
-    - name: Set up Jenkins + NuGet
-      href: build/jenkins.md
   - name: Use npm packages
     items:
     - name: Set up your client's npmrc
