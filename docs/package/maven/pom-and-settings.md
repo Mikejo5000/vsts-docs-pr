@@ -11,6 +11,6 @@ ms.date: 09/01/2017
 
 # Set up Maven client in Visual Studio Team Services and TFS
 
-[!INCLUDE [](_shared/availability-maven.md)]
+[!INCLUDE [](../_shared/availability-maven.md)]
 
 [!INCLUDE [](../_shared/maven/pom-and-settings.md)]

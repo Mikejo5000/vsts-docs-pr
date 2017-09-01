@@ -11,6 +11,6 @@ ms.date: 09/01/2017
 
 # Publish Maven packages in Visual Studio Team Services and TFS
 
-[!INCLUDE [](_shared/availability-maven.md)]
+[!INCLUDE [](../_shared/availability-maven.md)]
 
 [!INCLUDE [](../_shared/maven/publish.md)]
