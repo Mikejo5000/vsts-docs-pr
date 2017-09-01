@@ -11,8 +11,7 @@ ms.date: 09/01/2017
 
 # Use dotnet with Team Services feeds
 
-**Availability**<br>
-NuGet Package Management is available with **Visual Studio Team Services** and [**TFS 2017 and newer**](tfs.md).
+[!INCLUDE [](../_shared/availability-nuget.md)]
 
 > [!NOTE]
 > This page covers interactive scenarios. In Team Build, use the .NET Core step. 

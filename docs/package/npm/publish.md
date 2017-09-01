@@ -11,7 +11,6 @@ ms.date: 09/01/2017
 
 # Publish an npm package
 
-**Availability**<br>
-npm Package Management is available with **Visual Studio Team Services** and **TFS 2017 Update 1 and newer**.
+[!INCLUDE [](../_shared/availability-npm.md)]
 
 [!INCLUDE [](../_shared/npm/publish.md)]

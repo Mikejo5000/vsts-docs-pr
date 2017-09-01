@@ -11,8 +11,7 @@ ms.date: 09/01/2017
 
 # Move your packages to the cloud
 
-**Availability**<br>
-NuGet Package Management is available with **Visual Studio Team Services** and **TFS 2017 and newer**.
+[!INCLUDE [](../_shared/availability-nuget.md)]
 
 Visual Studio Team Services provides hosted NuGet feeds as a service. 
 If you're using NuGet packages as a part of your continuous delivery flow, 

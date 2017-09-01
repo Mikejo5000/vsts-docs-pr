@@ -11,16 +11,15 @@ ms.date: 09/01/2017
 
 # Use NuGet with Team Services feeds
 
-**Availability**<br>
-NuGet Package Management is available with **Visual Studio Team Services** and [**TFS 2017 and newer**](tfs.md).
+[!INCLUDE [](../_shared/availability-nuget.md)]
 
-[!INCLUDE [nuget-3x](../_shared/nuget-3x.md)]
-  
 > [!NOTE]
 > This page covers interactive scenarios. In Team Build, use the NuGet step to [restore](/vsts/build-release/package/nuget-restore.md) and [publish](/vsts/build-release/package/nuget-pack-publish.md) packages. 
 
-## Add a feed to NuGet 3
-NuGet 3 supports the Credential Provider, which automatically acquires feed credentials when needed.
+[!INCLUDE [nuget-3x](../_shared/nuget-3x.md)]
+
+## Add a feed to NuGet 3 or later
+NuGet 3 and later supports the Credential Provider, which automatically acquires feed credentials when needed.
 
 [!INCLUDE [](../_shared/nuget-publish-endpoint.md)]
 

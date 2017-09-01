@@ -17,8 +17,7 @@ This guide assumes you've already set up Package Management. You can check out h
 [Install and license Package Management guide](install.md), or go directly to the [Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.feed) 
 listing to install.
 
-**Availability**<br>
-NuGet Package Management is available with **Visual Studio Team Services** and **TFS 2017 and newer**.
+[!INCLUDE [](_shared/availability-nuget.md)]
 
 <a name="create-a-feed"></a>
 ## Create a feed

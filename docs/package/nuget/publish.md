@@ -11,7 +11,6 @@ ms.date: 09/01/2017
 
 # Publish a NuGet package from the command line
 
-**Availability**<br>
-NuGet Package Management is available with **Visual Studio Team Services** and **TFS 2017 and newer**.
+[!INCLUDE [](../_shared/availability-nuget.md)]
 
 [!INCLUDE [](../_shared/publish.md)]
