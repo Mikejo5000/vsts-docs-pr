@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-package
 ms.manager: douge
 ms.author: cajone
-ms.date: 01/30/2017
+ms.date: 09/01/2017
 ---
 
 # Use packages from npmjs.com
@@ -33,6 +33,7 @@ When a feed with upstreams enabled receives a query (e.g. `npm install lodash`),
 If there is at least one local version of that package ID, the upstream source will not be used.
 So, for example, if you publish `lodash@1.0.0` and run `npm install lodash@2.0.0`, the request will fail, even if 2.0.0 exists on npmjs.com and upstream sources are enabled.
 
+> [!NOTE]
 > Shadowing is permanent. So, in the example above, even if you later unpublish `lodash@1.0.0`, requests for any `lodash` version will only check the local feed.
 
 ## Caching
@@ -53,6 +54,7 @@ You can see the packages you have cached in your feed by selecting the "Source =
 ![Viewing your cached packages](_img/view-cached-packages.png)
 
 ### No guarantee of caching
+> [!NOTE]
 > Right now, VSTS and TFS do not provide a guarantee that every package `npm installed` via a feed with upstreams enabled will be cached. 
 
 Packages with malformed version numbers in their packages.json cannot be ingested into the feed, and thus must still be retrieved directly from npmjs.com. If npmjs.com goes down, you are not fully protected if you depend on these packages. 

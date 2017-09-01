@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-package
 ms.manager: douge
 ms.author: amullans
-ms.date: 10/10/2016
+ms.date: 09/01/2017
 ---
 
 # Publish an npm package

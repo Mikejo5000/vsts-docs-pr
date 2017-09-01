@@ -6,13 +6,13 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-package
 ms.manager: douge
 ms.author: amullans
-ms.date: 3/29/2017
+ms.date: 09/01/2017
 ---
 
 # Use NuGet with Team Services feeds
 
 **Availability**<br>
-NuGet Package Management is available with **Visual Studio Team Services** and [**TFS 2017 and newer**TFS 2017](tfs.md).
+NuGet Package Management is available with **Visual Studio Team Services** and [**TFS 2017 and newer**](tfs.md).
 
 [!INCLUDE [nuget-3x](../_shared/nuget-3x.md)]
   
