@@ -19,7 +19,7 @@ This walkthrough will cover packing and publishing .NET Framework NuGet packages
 - [Created a build](/vsts/build-release/) for a .NET Framework solution that produces a set of DLLs and/or other content you wish to package and publish
 - [Added the correct build service identity](/vsts/package/feeds/common-identities.md) to your feed
 
-## Creating a NUGet package
+## Creating a NuGet package
 
 There are a variety of ways to create NuGet packages during a build. If you're already using
 MSBuild or some other step to create your packages, skip this section and 
