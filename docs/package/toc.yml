@@ -25,19 +25,19 @@
     - name: NuGet
       items:
       - name: Restore Package Management NuGet packages
-        href: /vsts/build-release/packages/nuget-restore.md
+        href: /vsts/build-release/packages/nuget-restore.md?toc=/vsts/package/toc.json&bc=/vsts/package/breadcrumb/toc.json
       - name: Publish Package Management NuGet packages
-        href: /vsts/build-release/packages/nuget-pack-publish.md
+        href: /vsts/build-release/packages/nuget-pack-publish.md?toc=/vsts/package/toc.json&bc=/vsts/package/breadcrumb/toc.json
       - name: Set up Jenkins + NuGet
-        href: /vsts/build-release/packages/jenkins.md
+        href: /vsts/build-release/packages/jenkins.md?toc=/vsts/package/toc.json&bc=/vsts/package/breadcrumb/toc.json
     - name: npm
       items:
       - name: Use Package Management npm packages
-        href: /vsts/build-release/packages/npm.md
+        href: /vsts/build-release/packages/npm.md?toc=/vsts/package/toc.json&bc=/vsts/package/breadcrumb/toc.json
     - name: Maven
       items:
       - name: Use Package Management Maven packages
-        href: /vsts/build-release/packages/maven.md
+        href: /vsts/build-release/packages/maven.md?toc=/vsts/package/toc.json&bc=/vsts/package/breadcrumb/toc.json
   - name: Use feeds
     items:
     - name: Create a feed
