@@ -15,10 +15,10 @@ ms.date: 07/05/2017
 
 ![](_img/nuget.png) Install and update NuGet package dependencies, or package and publish NuGet packages. 
 
-If your code depends on NuGet packages, make sure to add this step before your [Visual Studio Build step](../../tasks/build/visual-studio-build.md). Also make sure to clear the deprecated **Restore NuGet Packages** checkbox in that step.
+If your code depends on NuGet packages, make sure to add this step before your [Visual Studio Build step](../build/visual-studio-build.md). Also make sure to clear the deprecated **Restore NuGet Packages** checkbox in that step.
 
 > [!TIP]
-> Looking for help to get started? See [Use Team Build to restore and publish NuGet packages](../../../package/build/team-build-nuget.md).
+> Looking for help to get started? See the how-to's for [restoring](/vsts/build-release/package/nuget-restore.md) and [publishing](/vsts/build-release/package/nuget-pack-publish.md) packages.
 
 ## Restore NuGet packages
 

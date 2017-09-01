@@ -14,6 +14,9 @@ ms.date: 09/01/2017
 **Availability**<br>
 NuGet Package Management is available with **Visual Studio Team Services** and [**TFS 2017 and newer**](tfs.md).
 
+> [!NOTE]
+> This page covers interactive scenarios. In Team Build, use the .NET Core step. 
+
 To use `dotnet` with VSTS NuGet feeds, you'll need to specify a [Personal Access Token](../../accounts/use-personal-access-tokens-to-authenticate.md) in plain text. 
 
 On Windows, [NuGet 4](nuget-exe.md) is functionally equivalent to dotnet, and we recommend using that instead.

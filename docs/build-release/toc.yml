@@ -181,11 +181,15 @@
       - name: Publish Package Management NuGet packages
         href: packages/nuget-pack-publish.md
       - name: Set up Jenkins + NuGet
-        href: /vsts/package/build/jenkins?toc=/vsts/build-release/toc.json&bc=/vsts/build-release/breadcrumb/toc.json
+        href: packages/jenkins.md
     - name: npm
       items:
       - name: Use Package Management npm packages
         href: packages/npm.md
+    - name: Maven
+      items:
+      - name: Use Package Management Maven packages
+        href: packages/maven.md
   - name: Use Release Management
     items:
     - name: Releases and deployments
