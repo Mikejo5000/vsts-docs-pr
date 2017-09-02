@@ -273,7 +273,7 @@ Required membership: [Team Foundation Administrators](../tfs-server/add-administ
 
 Now that you have an understanding of how the user interface is structure, it's time to get started using it.  As you can see, there are a lot of features and functionality.  
 
-If all you need is a code repository and bug tracking solution, then start with the [Git get started guide](../git/get-started.md) and [Manage bugs](../work/backlogs/manage-bugs.md).  
+If all you need is a code repository and bug tracking solution, then start with the [Git get started guide](../git/gitquickstart.md) and [Manage bugs](../work/backlogs/manage-bugs.md).  
 
 To start planning and tracking work, see [Get started with Agile tools to plan and track work](../work/overview.md).
 
