@@ -36,13 +36,13 @@ Get started with a free account, share your code using Git, and track your work 
 ## Step-by-Step Tutorials  
 
 - [Set favorites](/vsts/collaborate/set-favorites?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
-- [Follow work and pull requests](/vsts/collaborate/follow-work-items?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
+- [Follow work and pull requests](../collaborate/follow-work-items.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
 - [Enable preview features](/vsts/collaborate/preview-features?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)  
  
 
 ## Concepts  
 
-- [Key concepts](/vsts/concepts.md)    
+- [Key concepts](../concepts.md)    
 - [Source control](source-control.md)   
 - [Kanban & Agile tools](/vsts/work/overview?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
 - [Clients and tools](/vsts/tools?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)     

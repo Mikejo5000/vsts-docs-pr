@@ -36,7 +36,7 @@ ms.date: 08/04/2017
 
 - [Set Git branch permissions](/vsts/git/branch-permissions?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json  ) 
 - [Set build and release permissions](set-build-release-permissions.md) 
-- [Set permissions and access for work tracking](/vsts/work/how-to-set-permissions-access-work-tracking?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json) 
+- [Set permissions and access for work tracking](../work/how-to/set-permissions-access-work-tracking.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json) 
 - [Change access levels (TFS)](change-access-levels.md)
 - [Restrict access to a resource](/vsts/accounts/restrict-access-tfs?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json)
 
@@ -50,5 +50,5 @@ ms.date: 08/04/2017
 - [Account Management (VSTS)](../accounts/index.md)
 - [Server Administration (TFS)](../tfs-server/index.md)
 - [Billing](../billing/index.md)
-- [Authentication guidance for REST APIs](/vsts/integrate/get-started/authentication/authentication-guidance)
-- [Visual Studio Team Services Data Protection Overview](/vsts/security/team-services-security-whitepaper)
+- [Authentication guidance for REST APIs](../integrate/get-started/authentication/authentication-guidance.md)
+- [Visual Studio Team Services Data Protection Overview](team-services-security-whitepaper.md)
