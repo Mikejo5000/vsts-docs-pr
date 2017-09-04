@@ -25,6 +25,6 @@ VSTS_HTTP_PROXY_USERNAME=proxyuser
 VSTS_HTTP_PROXY_PASSWORD=proxypassword
  ```
 
-0. [Update the environment variables](#service-update-environment-variables).
+0. [Update the environment variables](../../v2-linux.md#service-update-environment-variables).
 
 This procedure enables the agent infrastructure to operate behind a web proxy. Your build definition and scripts must still handle proxy configuration for each task and tool you run in your build. For example, if you are using a task that makes a REST API call, you must configure the proxy for that task.
