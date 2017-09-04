@@ -18,7 +18,7 @@ ms.date: 01/17/2017
 Steps are provided to support generating the following example reports: 
 
 - [Number of Work Items](#Number of Work Items)  
-- [Number of Bugs by Area Path and Priority](Number of Bugs by Area Path and Priority)  
+- [Number of Bugs by Area Path and Priority](#Number of Bugs by Area Path and Priority)  
 
 Prior to generating these reports, you must first [connect to the Analytics Services for VSTS using the Power BI data connector](data-connector-connect.md). 
 
