@@ -22,8 +22,8 @@ You'll need Team Services
 
 > [!IMPORTANT]
 > To cancel access completely to a paid extension, you must 
-> [reduce all extension users to zero (0)](get-vsts-extensions.md#change-extension-quantity). 
-> [How do you bill changes in users?](get-vsts-extensions.md#bill-period)
+> [reduce all extension users to zero (0)](get-tfs-extensions.md#change-extension-quantity). 
+> [How do you bill changes in users?](get-tfs-extensions.md#bill-period)
 
 0.	Sign in to your Team Services account 
 (```https://{youaccount}.visualstudio.com```).
