@@ -106,7 +106,7 @@ To remove the agent:
 .\config remove
 ```
 
-After you've removed the agent, you can [configure it again](#configuration).
+After you've removed the agent, you can [configure it again](#Download and configure the agent).
 
 ## Help on other options
 
