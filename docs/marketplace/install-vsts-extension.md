@@ -31,7 +31,9 @@ if they're offered.
 
 ### What do I need to install extensions?
 Team Services [project collection administrators or account owners](#find-owner) can install extensions. If you don't have permissions, 
-you can [request extensions](#request) instead. 
+you can [request extensions](request-vsts-extension.md) instead. 
+
+[VSTS account owner](../accounts/change-account-ownership-vs.md#Q&A)
 
 Private extensions must be shared with your Team Services account to be installed. Check out the
 [publishing documentation](../extend/publish/overview.md#upload) for information on how to share private extensions.
@@ -94,11 +96,10 @@ that you'll use to pay for extension access.
 0.	Finish your installation. 
 
 0.	If you installed a paid extension like Test Manager, 
-make sure that you [assign the extension to users who need access](#assign-extension).
+make sure that you [assign the extension to users who need access](assign-paid-extensions.md).
 Otherwise, you can now go to your Team Services account to use your extension. 
 Also, tell your team about this extension, so they can start using its capabilities too.
 
 	<img alt="Extension installed" src="_img/get-vsts-extensions/go-to-account.png" style="border: 1px solid #CCCCCC" />
-
 
 [Troubleshooting](faq-extensions.md)

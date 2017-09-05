@@ -16,7 +16,7 @@ ms.date: 08/01/2017
 **Team Services**
 
 
-You need Team Services [project collection administrators or account owners](#find-owner) permissions to install extensions.
+You need Team Services [project collection administrators or account owners](../accounts/change-account-ownership-vs.md#vsts-account-owner) permissions to install extensions.
 
 If you don't have permissions, you can request extensions instead:
 
@@ -47,7 +47,7 @@ you can request it now.
 	Your Team Services account owner or project collection administrator 
 	can review your request after they get it.
 
-	[Need help?](#get-support)
+	[Need help?](../_shared/qa-get-vsts-support.md)
 
 
 [Troubleshooting](faq-extensions.md)

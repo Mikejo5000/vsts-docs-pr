@@ -64,6 +64,8 @@ The build process labels your sources with a [TFVC label](../../../../tfvc/use-l
 
  [How can I clean the repo a different way?](#build_clean_variable)
 
+[How can I clean the repository in a different way?]()
+
 * Set this to false if you want to define an incremental build to improve performance.
 
  > [!TIP]
