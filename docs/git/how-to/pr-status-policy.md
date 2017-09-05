@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-git
 ms.manager: douge
 ms.author: mmitrik
-ms.date: 07/28/2017
+ms.date: 09/05/2017
 ---
 
 # Configure a branch policy for an external service 
