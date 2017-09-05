@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-git
 ms.manager: douge
 ms.author: mmitrik
-ms.date: 07/27/2017
+ms.date: 09/05/2017
 ---
 
 # Create a pull request status server with Node.js
@@ -202,7 +202,7 @@ Now that your server can receive service hook events when new PRs are created,up
     ```
 
 6. Create a personal auth token (PAT) for your app to use, following these instructions: 
-https://www.visualstudio.com/en-us/docs/integrate/get-started/authentication/pats. You should create a new PAT for every service that you use to access your account, naming it appropriately.
+[Authenticating with personal access tokens](../integrate/get-started/authentication/pats.md). You should create a new PAT for every service that you use to access your account, naming it appropriately.
 
 7. Create an environment variable for your PAT.
 
@@ -220,7 +220,7 @@ https://www.visualstudio.com/en-us/docs/integrate/get-started/authentication/pat
 
 9. Build the status object to post on the PR. 
 
-  `State` is an enum of type [GitStatusState](https://visualstudio.com/en-us/docs/integrate/api/git/contracts?#GitStatusState). Use `succeeded` to indicate that the PR has passed the status check and is ready to merge. 
+  `State` is an enum of type [GitStatusState](../integrate/api/git/pull-requests/pullrequeststatuses.md#GitStatusState). Use `succeeded` to indicate that the PR has passed the status check and is ready to merge. 
 
   The `description` is a string value that will be displayed to the user in the Status section and activity feed in the PR details view.
 
