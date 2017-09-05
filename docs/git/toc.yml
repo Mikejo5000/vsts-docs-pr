@@ -95,7 +95,7 @@
   - name: Import a repo from TFVC
     href: import-from-TFVC.md
   - name: Create a pull request status server
-    href: howto/create-pr-status-server.md
+    href: how-to/create-pr-status-server.md
   - name: Manage repos
     items:
     - name: Delete a repo

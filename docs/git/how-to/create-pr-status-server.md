@@ -16,7 +16,7 @@ ms.date: 09/05/2017
 The pull request (PR) workflow provides developers with an opportunity to get feedback on their code from peers as well as from automated tools. 3rd party tools and services can participate in the PR workflow by using the PR [Status API](https://go.microsoft.com/fwlink/?linkid=854107). This article guides you through the process of creating a status server to validate PRs in a VSTS Git repository.
 
 ## Prerequisites
-* A VSTS account with a Git repo. If you don't have a VSTS account, [sign up](../setup-admin/team-services/sign-up-for-visual-studio-team-services.md) to upload and share code in free unlimited private Git repositories.
+* A VSTS account with a Git repo. If you don't have a VSTS account, [sign up](../../setup-admin/team-services/sign-up-for-visual-studio-team-services.md) to upload and share code in free unlimited private Git repositories.
 * Install [VS Code](http://code.visualstudio.com/Docs/setup) or other code editor of your choice. The instructions in this guide use VS Code but the steps in other code editors are similar.
 
 ## Install Node.js
@@ -202,7 +202,7 @@ Now that your server can receive service hook events when new PRs are created,up
     ```
 
 6. Create a personal auth token (PAT) for your app to use, following these instructions: 
-[Authenticating with personal access tokens](../integrate/get-started/authentication/pats.md). You should create a new PAT for every service that you use to access your account, naming it appropriately.
+[Authenticating with personal access tokens](../../integrate/get-started/authentication/pats.md). You should create a new PAT for every service that you use to access your account, naming it appropriately.
 
 7. Create an environment variable for your PAT.
 
@@ -220,7 +220,7 @@ Now that your server can receive service hook events when new PRs are created,up
 
 9. Build the status object to post on the PR. 
 
-  `State` is an enum of type [GitStatusState](../integrate/api/git/pull-requests/pullrequeststatuses.md#GitStatusState). Use `succeeded` to indicate that the PR has passed the status check and is ready to merge. 
+  `State` is an enum of type [GitStatusState](../../integrate/api/git/pull-requests/pullrequeststatuses.md#GitStatusState). Use `succeeded` to indicate that the PR has passed the status check and is ready to merge. 
 
   The `description` is a string value that will be displayed to the user in the Status section and activity feed in the PR details view.
 
