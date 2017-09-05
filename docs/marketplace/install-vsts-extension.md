@@ -17,7 +17,7 @@ ms.date: 1/10/2017
 
 To add new features and capabilities to your Visual Studio Team Services account, 
 install extensions from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vsts). 
-You can install [free, preview, or paid](#difference) extensions, 
+You can install [free, preview, or paid](./faq-extensions.md#difference) extensions, 
 and you can [start extension trials](https://www.visualstudio.com/docs/setup-admin/team-services/try-additional-features-vs), 
 if they're offered. 
 
@@ -30,10 +30,8 @@ if they're offered.
 ## Install an extension for your Team Services account
 
 ### What do I need to install extensions?
-Team Services [project collection administrators or account owners](#find-owner) can install extensions. If you don't have permissions, 
+Team Services [project collection administrators or account owners](faq-extensions.md#find-owner) can install extensions. If you don't have permissions, 
 you can [request extensions](request-vsts-extension.md) instead. 
-
-[VSTS account owner](../accounts/change-account-ownership-vs.md#Q&A)
 
 Private extensions must be shared with your Team Services account to be installed. Check out the
 [publishing documentation](../extend/publish/overview.md#upload) for information on how to share private extensions.
@@ -54,7 +52,7 @@ Your Team Services account will reuse your Azure subscription
 for future Visual Studio Marketplace purchases 
 or for team services purchased through Azure, 
 like Cloud-based Load Testing.
-[Where can I find more info about Azure billing?](#billing)
+[Where can I find more info about Azure billing?](./faq-extensions.md#billing)
 
 0.  Sign in to the [Visual Studio Marketplace > Visual Studio Team Services](https://marketplace.visualstudio.com/vsts).
 	
@@ -67,7 +65,7 @@ install or buy the extension.
 	
 	*	For free or preview extensions, click **Install**.
 	*	For extensions that you haven't paid for access yet, click **Buy**.
-	*	For extensions that you've already [paid for access](#paid-access), 
+	*	For extensions that you've already [paid for access](./faq-extensions.md#paid-access), 
 	expand **Buy**, and select **Install for paid users**. 
 
 	**Start Trial** appears only if the extension offers a trial. 
@@ -79,9 +77,9 @@ install or buy the extension.
 
 	<img alt="Select Team Services account for this extension" src="_img/get-vsts-extensions/account.png" style="border: 1px solid #CCCCCC" />
 
-	*	[Why don't I see any Team Services accounts?](#no-accounts) 
+	*	[Why don't I see any Team Services accounts?](./faq-extensions.md#no-accounts) 
 
-	*	[Why can't I install this extension?](#no-permissions) 
+	*	[Why can't I install this extension?](./faq-extensions.md#no-permissions) 
 
 0.	If you chose a paid extension, 
 select an [Azure subscription](https://azure.microsoft.com/en-us/pricing/purchase-options/) 

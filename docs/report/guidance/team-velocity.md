@@ -4,10 +4,10 @@ description: Track team velocity across several sprints using the velocity chart
 ms.technology: vs-devops-reporting  
 ms.prod: vs-devops-alm
 ms.assetid: 31CBF001-CFF2-49CF-97A1-FDFFEFDDF3AB
+ms.topic: get-started-article
 ms.manager: douge
 ms.author: kaelli
-ms.date: 07/12/2017
-ms.topic: get-started-article
+ms.date: 09/01/2017
 ---
 
 
@@ -87,7 +87,12 @@ In order to add a Velocity widget to a dashboard, you must have the following in
 	**Highlight work completed late**
 	Work items marked complete after the iteration end date are considered to be completed late and will show as light green. 
 	This is useful for spotting a trend where work items are marked complete after the iteration is complete.
-	
+
+	> [!NOTE]  
+	> A work item is considered late when the work item's Completed Date is later than End Date of the Iteration the work item is _currently_ assigned to.
+	> 
+	> It will take into account the value you enter for <i>Days past end date of iteration after which work is late<i>.
+		
 	<b><i>Days past end date of iteration after which work is late:</i></b>  Specify a number of days past which a work item is considered late if it's status is still new or in progress. 
 	For example, entering 3 days will give the team 3 days after the end of an iteration to mark work items complete or done, before they are considered late.
 
