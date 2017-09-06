@@ -1,6 +1,6 @@
 #### Team Services
 
-Choose **PAT**, and then paste the [PAT token you created](prepare-permissions.md) into the command prompt window.
+Choose **PAT**, and then paste the [PAT token you created](#permissions) into the command prompt window.
 
 > [!NOTE]
 > When using PAT as the authentication method, the PAT token is used only for the initial configuration of the agent. Learn more at [Communication with Team Services or TFS](../../../../concepts/agents/agents.md).
