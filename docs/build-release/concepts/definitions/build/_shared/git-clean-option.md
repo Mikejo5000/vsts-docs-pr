@@ -2,7 +2,7 @@
 
 * If you set it to true, this command is run: git clean -fdx, git reset -hard HEAD
 
- [How can I clean the repo a different way?](build-clean-variable.md)
+ [How can I clean the repo a different way?](#build_clean_variable)
 
 * Set this to false if you want to define an incremental build to improve performance.
 
