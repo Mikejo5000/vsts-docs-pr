@@ -1115,7 +1115,7 @@ ms.date: 07/26/2017
                                 <h3>REST APIs</h3>
                                 <ul class="noBullet">
                                     <li>
-                                        <a class="barLink" href="./integrate/rest-api-overview.md">Get Started</a>
+                                        <a class="barLink" href="/vsts/integrate/#rest-apis">Get Started</a>
                                     </li>
                                     <li>
                                         <a class="barLink" href="/rest/api/vsts/">API reference</a>
