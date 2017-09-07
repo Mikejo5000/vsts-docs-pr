@@ -1030,12 +1030,12 @@ ms.date: 07/26/2017
                         <ul id="ecosystem-all" class="cardText cols cols4">
                             <li class="fullSpan" style="margin-top:0;">
                                 <div class="button" style="float:right;">
-                                    <a href="https://marketplace.visualstudio.com" style="text-decoration: none;text-transform:inherit;">
+                                    <a href="https://marketplace.visualstudio.com" style="text-decoration: none;text-transform:inherit;color:#fff !important">
                                         <div style="padding: 10px 15px 12px 15px;font-size:1.5rem;">Marketplace <img src="_img/index/arrow_24x.svg" alt="" style="height: 24px;width: 24px;vertical-align: middle;padding-left: 12px;" /></div>
                                     </a>
                                 </div>
                                 <div class="intro">
-                                    <h2 style="padding-left:0">Get Extensions</h2>
+                                    <h2 style="padding-left:0;font-size:1.8rem;">Get Extensions</h2>
                                     <p>Extend VSTS with popular extensions like Slack or Jenkins.</p>
                                 </div>
                             </li>
