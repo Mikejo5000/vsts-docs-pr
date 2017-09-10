@@ -20,8 +20,7 @@ description: Visual Studio Team Services (VSTS) release notes for Sprint 122 Upd
 
 ### New queries experience
 
-> **Preview feature**
->
+> [!TIP]
 > To use this capability you must have the **New Queries Experience** [preview feature](https://www.visualstudio.com/docs/collaborate/preview-features) enabled on your profile.
 
 The Queries Hub has a new look and feel, changes in navigation, and some exciting new features like the ability to search for queries.
@@ -71,7 +70,108 @@ Based on customer feedback, we have updated the behavior of multi-line text fiel
 
 <img src="_img/09_15_05.png"; alt="Strip HTML tags" style="border:1px solid Silver; display: block; margin: auto;" />
 
-## Packaging
+## Code
+
+### Create a folder in repository using web
+
+You can now create folders via the web in your Git and TFVC repositories. This feature gap has long been filled by the [Folder Management extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.FolderManagement) which will now undergo the process of deprecation.
+
+To create a folder, click New > Folder in either the command bar or context menu:
+
+<img src="_img/09_15_07.png"; alt="New folder option" style="border:1px solid Silver; display: block; margin: auto;" />
+
+For TFVC, you'll specify a folder name and then check it in. For Git, because empty folders aren't permitted, you'll also have to specify a file name, optionally edit the file, then commit it.
+
+Additionally, for Git, The "New file" dialog has been enhanced to accept slashes to create subfolders:
+
+<img src="_img/09_15_08.png"; alt="New file dialog" style="border:1px solid Silver; display: block; margin: auto;" />
+
+## Build
+
+### Multi-phase builds
+
+We are rolling out a new feature in builds called multi-phase builds. Using this, you can define a build to consist of multiple phases. Each phase of the build can be configured to run on a different agent queue. Each phase can also be configured to run multiple jobs in parallel using multipliers. You can publish artifacts in one phase, and then download those artifacts in a subsequent phase. Here are some examples of scenarios that are made possible using multi-phase builds:
+
+1. Compile your app on a build agent pool in the first phase, and then run tests on a test agent pool in the second phase.
+1. Compile the back-end for your app in the first phase on a Windows agent, and then compile the mobile front-end for your app on a Mac agent in the second phase.
+
+You will notice that all your current build definitions have been upgraded to have a single phase. Some of the configuration options such as demands and multi-configuration, which were previously available on the build definition, have now been moved to each phase. You can continue to select a default queue for all the phases in a build definition, and then optionally override that choice in each phase.
+
+Here are some features that are still not available in multi-phase builds, and we will add these over the coming weeks.
+
+- Ability to consume output variables from one phase in a subsequent phase.
+- Ability to run some phases in parallel. (At this time, all the phases you define run sequentially).
+
+## Release
+
+### Personalized notifications for releases
+
+Release notifications are now integrated with the VSTS notification settings experience. Users managing releases are now automatically notified of pending actions (approvals or manual interventions) on them and important deployment failures.
+Users can turn off these notifications by navigating to the Notification settings under the profile menu and switching off Release Subscriptions. Users can also subscribe to additional notifications by creating custom subscriptions.
+Admins can control subscriptions for teams and groups from the notification settings under team and account settings.
+
+Release definition authors will then no longer have a control over whether to send emails for approvals and deployment completions.
+
+This is especially useful for large accounts that have multiple stakeholders for releases, and users other than approver, release creator and environment owner might want to be notified.
+
+This screenshot shows the default subscriptions for release notifications that are enabled for all users of the account.
+
+<img src="_img/09_15_13.png"; alt="Release notifications" style="border:1px solid Silver; display: block; margin: auto;" />
+
+[Learn more](https://blogs.msdn.microsoft.com/devops/2017/09/04/managing-release-notifications/)
+
+### Manage variables using the List and Grid views in the new Release definition editor
+
+Manage variables using the List and Grid views in the new Release definition editor
+We have heard your feedback loud & clear that working with variables in the new Release definition editor was very painful. 
+
+We are excited to announce the ability to filter/search for variables to quickly scope down what you are looking for AND ability to compare variables across environments side-by-side. 
+
+You can now easily manage all your release and environment variables using the two views - List view and Grid view. Use the list view to quickly add release or environment variables and the grid view to compare and edit variables across scopes. Additionally, you can use the filter and keyword search to manage the set of variables to work with in both the views.
+
+<img src="_img/09_15_15.png"; alt="List view" style="border:1px solid Silver; display: block; margin: auto;" />
+
+<img src="_img/09_15_16.png"; alt="Grid view" style="border:1px solid Silver; display: block; margin: auto;" />
+
+### Branch filters in environment triggers
+
+In the new release definition editor you can now specify artifact conditions for a specific environment. You can add multiple filters for each artifact linked to the release definition. Deployment will be triggered to this environment only if all the artifact conditions are successfully met.
+
+<img src="_img/09_15_12.png"; alt="Branch filters" style="border:1px solid Silver; display: block; margin: auto;" />
+
+### Azure Resource Group task - Exposes deployment outputs as Task variables
+
+Azure Resource Manager templates allow defining "outputs" which need to be returned after an Azure deployment. We have now enhanced our inbuilt VSTS Azure RG deploy task to expose the "output" JSON section of the deployment object as task output parameter with name: "<Task Reference name>.DeploymentOutputs".  Users can further parse the JSON object and access the individual output values which can be consumed in subsequent tasks of the release environment.
+
+<img src="_img/09_15_14.png"; alt="Deployment outputs" style="border:1px solid Silver; display: block; margin: auto;" />
+
+## Test
+
+### Run webtests using the VSTest task
+
+Using the Visual Studio test task, webtests can now be run in the CI/CD pipeline. Webtest can be run by specifying the tests to run in the task assembly input. Any test case work item that has an 'associated automation' linked to a webtest, can also be run by selecting the test plan/test suite in the task.
+
+<img src="_img/09_15_09.png"; alt="Test selection" style="border:1px solid Silver; display: block; margin: auto;" />
+
+Webtest results will be available as an attachment to the test result. This can be downloaded for offline analysis in Visual Studio.
+
+<img src="_img/09_15_10.png"; alt="Test summary" style="border:1px solid Silver; display: block; margin: auto;" />
+
+This capability is dependent on changes in the Visual Studio test platform and requires that Visual Studio 2017 Update 4 be installed on the build / release agent. Webtests cannot be run using prior versions of Visual Studio.
+
+Similarly, webtests can be run using the 'Run Functional Test' task. This capability is dependent on changes in the Test Agent, that will be available with the Visual Studio 2017 Update 5.
+
+### Chart widget for test plans and test suites
+
+Until now, you could create charts for test plans and suites in Test hub and pin them to dashboard. We have now added a widget that enables creating charts for test plans and suites from the widget catalog on the dashboard. You can create charts for test authoring status or test execution status. Moreover, adding charts from the widget allows you to create larger charts when you have more data to be shown on a chart.
+
+<img src="_img/09_15_11.png"; alt="Chart widget" style="border:1px solid Silver; display: block; margin: auto;" />
+
+### Better console logs: preview improvements and support for different log types generated by Visual Studio Test task
+
+We enhanced the VSTest task to publish logs generated by different kind of logging statements corresponding to standard output and standard error for failed tests. We have also improved the preview experience to support viewing text and log file formats, with capability to search in the log files.
+
+## Package
 
 ### Gulp, Yarn, and more support authenticated feeds
 
@@ -82,6 +182,12 @@ It's currently easy to work with authenticated npm feeds (in Package Management 
 ### Package feed default permissions now include Project Administrators
 
 Currently, creating a feed sets the creating user as the only feed owner, which can cause administration challenges in large organizations if that user switches teams or leaves the organization. To remove this single point of failure, creating a feed now uses the user's current project context to get the Project Administrators group and make it an owner of the feed as well. As with any permission, you can remove this group and further customize feed permissions using the feed settings dialog.
+
+## Login
+
+### Refreshed error page and seamless tenant switching hint
+
+Users who had an MSA and AAD identity with the same sign in address would receive a disambiguation prompt during login asking which identity they would like to sign in with. For many users, this choice was confusing because they either did not realize they had an MSA and an AAD identity or they we're unsure of which had access to the account. This new feature allows users to who have selected the incorrect identity when prompted to see an error page which indicates that their other identity actually had access and in the future to select the other identity and a button to sign in directly with the correct identity.
 
 ## Feedback
 
