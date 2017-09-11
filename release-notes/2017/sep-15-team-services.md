@@ -13,6 +13,15 @@ description: Visual Studio Team Services (VSTS) release notes for Sprint 122 Upd
 
 # Customizable work item rules – VSTS Sprint 122 Update
 
+> [!IMPORTANT]
+> DRAFT: to do
+> - Add all content
+> - Edit passes
+> - Signer identification
+> - Intro, title, and description
+> - Send for contributor review
+
+
 > [!NOTE]
 > The features discussed in this post will be rolling out over the next three weeks.
 
@@ -25,22 +34,22 @@ description: Visual Studio Team Services (VSTS) release notes for Sprint 122 Upd
 
 The **Queries** hub has a new look and feel, changes in navigation, and some exciting new features such as the ability to search for queries.
 
-#### User Focused Navigation
+#### User focused navigation
 
-When you enable the preview of the Queries Hub, you’ll notice that the left pane is gone. To navigate quickly between your favorite queries, use the dropdown in the query title.
+When you enable the preview of the **Queries** hub, you’ll notice that the left pane has been removed. To navigate quickly between your favorite queries, use the dropdown in the query title.
 
 <img src="_img/09_15_02.png"; alt="New queries experience" style="border:1px solid Silver; display: block; margin: auto;" />
 
-Alternatively, browse all your personal and shared queries in the new directory pages and favorite what is important to you and your team. You can get to the query directory using the "Queries" breadcrumb.
+Alternatively, browse all your personal and shared queries in the new directory pages and favorite what is important to you and your team. You can get to the query directory using the **Queries** breadcrumb.
 
 <img src="_img/09_15_03.png"; alt="New queries directory pages" style="border:1px solid Silver; display: block; margin: auto;" />
 
-In addition the directory pages highlight new metadata for each query including:
+The directory pages highlight new metadata for each query, including:
 
-- The type of query
-- The path within the hierarchy
-- Who last modified it
-- When it was last modified
+* The type of query
+* The path within the hierarchy
+* Who last modified it
+* When it was last modified
 
 #### Find queries faster with filtering
 
@@ -50,13 +59,13 @@ The query directory pages now include a filter bar that lets you quickly search 
 
 #### Other improvements
 
-Besides the big changes listed above, we have made:
+We’ve also made the following improvements:
 
-- Create and edit followed work item queries with the @Follows macro
-- Query for work items you were mentioned in with the @Mentions macro
-- "Save as" now copies charts to the new query
-- Simplified command bars for Results and Editor
-- Expanded filter capabilities in the result grid
+* Create and edit followed work item queries with the @Follows macro
+* Query for work items you were mentioned in with the @Mentions macro
+* **Save as** now copies charts to the new query
+* Simplified command bars for Results and Editor
+* Expanded filter capabilities in the result grid
 
 ### Keyboard shortcuts in the work item form
 
@@ -105,8 +114,8 @@ When this feature reaches your account, you’ll notice that all your current bu
 
 We’re still working on a few features:
 
-- Ability to consume output variables from one phase in a subsequent phase.
-- Ability to run phases in parallel. (For now, all the phases you define run sequentially).
+* Ability to consume output variables from one phase in a subsequent phase.
+* Ability to run phases in parallel. (For now, all the phases you define run sequentially).
 
 ## Release
 
@@ -199,11 +208,11 @@ The Burndown widget helps you answer the question: Will we complete this project
 
 To help you answer that question, it provides these features:
 
-- Displays percentage complete
-- Computes average burndown
-- Shows you when you have items not estimated with story points
-- Tracks your scope increase over the course of the project
-- Projects your project's completion date based on historical burndown and scope increase trends
+* Displays percentage complete
+* Computes average burndown
+* Shows you when you have items not estimated with story points
+* Tracks your scope increase over the course of the project
+* Projects your project's completion date based on historical burndown and scope increase trends
 
 You can burndown on any work item type based on count of work items or by the sum of a specific field (e.g.: Story Points). You can burndown using daily/weekly/monthly intervals or based on an iteration schedule. You can even add additional filter criteria to fine tune the exact scope of work you are burning down.
 The widget is highly configurable allowing you use it for a wide variety of scenarios. We expect our customers will find amazing ways to use these two widgets.
