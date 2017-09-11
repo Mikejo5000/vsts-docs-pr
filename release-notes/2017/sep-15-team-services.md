@@ -90,17 +90,23 @@ Additionally, for Git, The "New file" dialog has been enhanced to accept slashes
 
 ### Multi-phase builds
 
-We are rolling out a new feature in builds called multi-phase builds. Using this, you can define a build to consist of multiple phases. Each phase of the build can be configured to run on a different agent queue. Each phase can also be configured to run multiple jobs in parallel using multipliers. You can publish artifacts in one phase, and then download those artifacts in a subsequent phase. Here are some examples of scenarios that are made possible using multi-phase builds:
+Modern multi-tier apps often must be built with different sets of tasks, on different sets of agents with varying capabilities, sometimes even on different platforms. Until now, in VSTS you had to create a separate build for each aspect of these kinds of apps. Today we’re announcing availability of multi-phase builds.
+
+<img src="_img/09_15_17.png"; alt="New file dialog" style="border:1px solid Silver; display: block; margin: auto;" />
+
+You can configure each phase with the tasks you need, and specify a different agent queue for each phase. Each phase can run multiple jobs in parallel using multipliers. You can publish artifacts in one phase, and then download those artifacts to use them in a subsequent phase.
+
+Some scenarios that are now possible include:
 
 1. Compile your app on a build agent pool in the first phase, and then run tests on a test agent pool in the second phase.
-1. Compile the back-end for your app in the first phase on a Windows agent, and then compile the mobile front-end for your app on a Mac agent in the second phase.
+1. Compile an ASP.NET Core back-end in the first phase on a Windows agent, and then compile the mobile front-end for your app on a macOS agent in the second phase.
 
-You will notice that all your current build definitions have been upgraded to have a single phase. Some of the configuration options such as demands and multi-configuration, which were previously available on the build definition, have now been moved to each phase. You can continue to select a default queue for all the phases in a build definition, and then optionally override that choice in each phase.
+When this feature reaches your account, you’ll notice that all your current build definitions have been upgraded to have a single phase. Some of the configuration options such as demands and multi-configuration will be moved to each phase. You can continue to select a default queue for all the phases in a build definition, and then optionally override that choice in each phase.
 
-Here are some features that are still not available in multi-phase builds, and we will add these over the coming weeks.
+We’re still working on a few features:
 
 - Ability to consume output variables from one phase in a subsequent phase.
-- Ability to run some phases in parallel. (At this time, all the phases you define run sequentially).
+- Ability to run phases in parallel. (For now, all the phases you define run sequentially).
 
 ## Release
 
@@ -123,9 +129,9 @@ This screenshot shows the default subscriptions for release notifications that 
 ### Manage variables using the List and Grid views in the new Release definition editor
 
 Manage variables using the List and Grid views in the new Release definition editor
-We have heard your feedback loud & clear that working with variables in the new Release definition editor was very painful. 
+We have heard your feedback loud & clear that working with variables in the new Release definition editor was very painful.
 
-We are excited to announce the ability to filter/search for variables to quickly scope down what you are looking for AND ability to compare variables across environments side-by-side. 
+We are excited to announce the ability to filter/search for variables to quickly scope down what you are looking for AND ability to compare variables across environments side-by-side.
 
 You can now easily manage all your release and environment variables using the two views - List view and Grid view. Use the list view to quickly add release or environment variables and the grid view to compare and edit variables across scopes. Additionally, you can use the filter and keyword search to manage the set of variables to work with in both the views.
 
@@ -188,6 +194,14 @@ Currently, creating a feed sets the creating user as the only feed owner, which 
 ### Refreshed error page and seamless tenant switching hint
 
 Users who had an MSA and AAD identity with the same sign in address would receive a disambiguation prompt during login asking which identity they would like to sign in with. For many users, this choice was confusing because they either did not realize they had an MSA and an AAD identity or they we're unsure of which had access to the account. This new feature allows users to who have selected the incorrect identity when prompted to see an error page which indicates that their other identity actually had access and in the future to select the other identity and a button to sign in directly with the correct identity.
+
+## Marketplace
+
+### Marketplace moves to new markdown-it parser
+
+Marketplace is now moving to new markdown-it parser which is based on the CommonMark specification. All new extensions created will use the new markdown-it parser. VSTS publishers of current extensions can test their markdown content using the 'try it' experience and can move to the new parser by making the manifest changes. Click here to [learn more](https://aka.ms/vsmarketplace_parser).
+
+<img src="_img/09_15_18.png"; alt="Feedback menu" style="border:1px solid Silver; display: block; margin: auto;" />
 
 ## Feedback
 
