@@ -13,7 +13,7 @@ description: Visual Studio Team Services (VSTS) release notes for Sprint 123 Upd
 
 # Multi-phase builds – VSTS Sprint 123 Update
 
-In the __Sprint 123 Update__ of Visual Studio Team Services (VSTS) we’re announcing the availability of multi-phase builds to build multiple kinds of apps as part of a single build. Read more about [Multi-phase builds](#multi-phase-builds) below.
+In the **Sprint 123 Update** of Visual Studio Team Services (VSTS) we’re announcing the availability of multi-phase builds to build multiple kinds of apps as part of a single build. Read more about [Multi-phase builds](#multi-phase-builds) below.
 
 Some of the other key feature highlights include:
 
@@ -164,7 +164,7 @@ You can also add multiple filters for each artifact that is linked to the releas
 
 <img src="_img/09_15_12.png"; alt="Branch filters" style="border:1px solid Silver; display: block; margin: auto;" />
 
-### Azure Resource Group task - Expose deployment outputs as task variables
+### Expose deployment outputs as task variables in Azure Resource Group task
 
 Azure Resource Manager templates allow defining “outputs” which need to be returned after an Azure deployment. We have now enhanced our native Azure Resource Group deploy task to expose the “output” JSON section of the deployment object as task output parameter with name: “<Task Reference name>.DeploymentOutputs”. You can further parse the JSON object and access the individual output values which can be consumed in subsequent tasks of the release environment.
 
@@ -274,4 +274,4 @@ You can also get advice and your questions answers by the community on [Stack Ov
 
 Thanks,
 
-Aaron Bjork
+Jamie Cool
