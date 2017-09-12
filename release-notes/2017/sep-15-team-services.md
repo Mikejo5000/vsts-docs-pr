@@ -64,7 +64,7 @@ We’ve also made the following improvements:
 * Create and edit followed work item queries with the @Follows macro
 * Query for work items you were mentioned in with the @Mentions macro
 * **Save as** now copies charts to the new query
-* Simplified command bars for Results and Editor
+* Simplified command bars for **Results** and **Editor**
 * Expanded filter capabilities in the result grid
 
 ### Keyboard shortcuts in the work item form
@@ -73,33 +73,51 @@ Assign a work item to yourself (Alt + i), jump to discussion (Ctrl + Alt + d), a
 
 <img src="_img/09_15_01.png"; alt="Keyboard shortcuts in work item form" style="border:1px solid Silver; display: block; margin: auto;" />
 
+### Enable contextual actions in the Work Items hub
+
+From within the work items hubs, users can now make use of contextual actions that change based on the selection of items. Copy to clipboard (Ctrl + C), Email, Delete (Delete), and Open selected items in Queries are now supported and accessible via mouse selection. Alternatively you can use Shift or Ctrl to streamline the selection of multiple items.
+
+<img src="_img/09_15_25.png"; alt="Keyboard shortcuts in work item form" style="border:1px solid Silver; display: block; margin: auto;" />
+
+<img src="_img/09_15_26.png"; alt="Keyboard shortcuts in work item form" style="border:1px solid Silver; display: block; margin: auto;" />
+
 ### Strip HTML tags in work item grids
 
 Based on customer feedback, we have updated the behavior of multi-line text fields in work item grids to remove HTML formatting. When added as a column to the grid, multi-line text fields will now display as plain text.
 
 <img src="_img/09_15_05.png"; alt="Strip HTML tags" style="border:1px solid Silver; display: block; margin: auto;" />
 
+### Add filtering to the Process and Fields pages in the Process admin
+
+The list of process and fields in the Process admin pages can be quite long. To quicker find the process or field you are looking for we have added a text filter to these pages.
+
+<img src="_img/09_15_24.png"; alt="Process admin filtering" style="border:1px solid Silver; display: block; margin: auto;" />
+
 ## Code
 
-### Create a folder in repository using web
+### Create a folder in a repository using web
 
-You can now create folders via the web in your Git and TFVC repositories. This feature gap has long been filled by the [Folder Management extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.FolderManagement) which will now undergo the process of deprecation.
+You can now create folders via the web in your Git and TFVC repositories. This replaces the [Folder Management extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.FolderManagement), which will now undergo the process of deprecation.
 
-To create a folder, click New > Folder in either the command bar or context menu:
+To create a folder, click **New > Folder** in either the command bar or context menu:
 
 <img src="_img/09_15_07.png"; alt="New folder option" style="border:1px solid Silver; display: block; margin: auto;" />
 
 For TFVC, you'll specify a folder name and then check it in. For Git, because empty folders aren't permitted, you'll also have to specify a file name, optionally edit the file, then commit it.
 
-Additionally, for Git, The "New file" dialog has been enhanced to accept slashes to create subfolders:
+Additionally, for Git, The **New file** dialog has been enhanced to accept slashes to create subfolders.
 
 <img src="_img/09_15_08.png"; alt="New file dialog" style="border:1px solid Silver; display: block; margin: auto;" />
+
+### Get a permanent link to code
+
+When viewing a file, you usually see the version at the tip of the selected branch. The version of a file at the tip may change with new commits. Therefore, if you copy a link--which includes the branch name, not the commit SHA--from this view, your links can become stale. You can now easily switch the Files view to update the URL to refer to the commit rather than the branch. If you click "y", your view will switch to the tip commit of the current branch. You can then copy permanent links.
 
 ## Build
 
 ### Multi-phase builds
 
-Modern multi-tier apps often must be built with different sets of tasks, on different sets of agents with varying capabilities, sometimes even on different platforms. Until now, in VSTS you had to create a separate build for each aspect of these kinds of apps. Today we’re announcing availability of multi-phase builds.
+Modern multi-tier apps often must be built with different sets of tasks, on different sets of agents with varying capabilities, sometimes even on different platforms. Until now, in VSTS you had to create a separate build for each aspect of these kinds of apps. Today we’re announcing the availability of multi-phase builds.
 
 <img src="_img/09_15_17.png"; alt="Multi-phase builds" style="border:1px solid Silver; display: block; margin: auto;" />
 
@@ -121,28 +139,25 @@ We’re still working on a few features:
 
 ### Personalized notifications for releases
 
-Release notifications are now integrated with the VSTS notification settings experience. Users managing releases are now automatically notified of pending actions (approvals or manual interventions) on them and important deployment failures.
-Users can turn off these notifications by navigating to the Notification settings under the profile menu and switching off Release Subscriptions. Users can also subscribe to additional notifications by creating custom subscriptions.
-Admins can control subscriptions for teams and groups from the notification settings under team and account settings.
+Release notifications are now integrated with the VSTS notification settings experience. Those managing releases are now automatically notified of pending actions (approvals or manual interventions) and important deployment failures.
+You can turn off these notifications by navigating to the **Notification** settings under the profile menu and switching off **Release Subscriptions**. You can also subscribe to additional notifications by creating custom subscriptions.
+Admins can control subscriptions for teams and groups from the **Notification** settings under **Team** and **Account** settings.
 
-Release definition authors will then no longer have a control over whether to send emails for approvals and deployment completions.
+Release definition authors will no longer have to manually send emails for approvals and deployment completions.
 
-This is especially useful for large accounts that have multiple stakeholders for releases, and users other than approver, release creator and environment owner might want to be notified.
+This is especially useful for large accounts that have multiple stakeholders for releases, and those other than approver, release creator and environment owner that might want to be notified.
 
 This screenshot shows the default subscriptions for release notifications that are enabled for all users of the account.
 
 <img src="_img/09_15_13.png"; alt="Release notifications" style="border:1px solid Silver; display: block; margin: auto;" />
 
-[Learn more](https://blogs.msdn.microsoft.com/devops/2017/09/04/managing-release-notifications/)
+See the [documentation for managing release notifications](https://blogs.msdn.microsoft.com/devops/2017/09/04/managing-release-notifications/) for more information.
 
-### Manage variables using the List and Grid views in the new Release definition editor
+### Manage variables using the List and Grid views in the new release definition editor
 
-Manage variables using the List and Grid views in the new Release definition editor
-We have heard your feedback loud & clear that working with variables in the new Release definition editor was very painful.
+We are excited to announce the ability to filter/search for variables to quickly scope down what you are looking for and the ability to compare variables across environments side-by-side.
 
-We are excited to announce the ability to filter/search for variables to quickly scope down what you are looking for AND ability to compare variables across environments side-by-side.
-
-You can now easily manage all your release and environment variables using the two views - List view and Grid view. Use the list view to quickly add release or environment variables and the grid view to compare and edit variables across scopes. Additionally, you can use the filter and keyword search to manage the set of variables to work with in both the views.
+You can now easily manage all your release and environment variables using the two views - **List** view and **Grid** view. Use the list view to quickly add release or environment variables and the **Grid** view to compare and edit variables across scopes. Additionally, you can use the filter and keyword search to manage the set of variables to work with in both the views.
 
 <img src="_img/09_15_15.png"; alt="List view" style="border:1px solid Silver; display: block; margin: auto;" />
 
@@ -159,6 +174,16 @@ In the new release definition editor you can now specify artifact conditions for
 Azure Resource Manager templates allow defining "outputs" which need to be returned after an Azure deployment. We have now enhanced our inbuilt VSTS Azure RG deploy task to expose the "output" JSON section of the deployment object as task output parameter with name: "<Task Reference name>.DeploymentOutputs".  Users can further parse the JSON object and access the individual output values which can be consumed in subsequent tasks of the release environment.
 
 <img src="_img/09_15_14.png"; alt="Deployment outputs" style="border:1px solid Silver; display: block; margin: auto;" />
+
+### Improved Deployment Groups UI
+
+Continuing our journey of refreshing the Build and Release experiences, we have now re-imagined our deployment groups pages to make it a more clean and intuitive experience. From the landing page you can view the health of the targets in the deployment group. You can also manage security for an individual deployment group, or set default permissions across deployment groups.
+
+<img src="_img/09_15_22.png"; alt="Deployment groups UI" style="border:1px solid Silver; display: block; margin: auto;" />
+
+For a target within a deployment group, you can view a summary, recent deployments, and the target's capabilities. You can set tags on the target, and control what is run on each target. We will be adding filter support for deployment groups in upcoming releases.
+
+<img src="_img/09_15_23.png"; alt="Deployment groups UI tags" style="border:1px solid Silver; display: block; margin: auto;" />
 
 ## Test
 
