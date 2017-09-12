@@ -21,7 +21,6 @@ description: Visual Studio Team Services (VSTS) release notes for Sprint 122 Upd
 > - Intro, title, and description
 > - Send for contributor review
 
-
 > [!NOTE]
 > The features discussed in this post will be rolling out over the next three weeks.
 
@@ -34,7 +33,7 @@ description: Visual Studio Team Services (VSTS) release notes for Sprint 122 Upd
 
 The **Queries** hub has a new look and feel, changes in navigation, and some exciting new features such as the ability to search for queries.
 
-#### User focused navigation
+#### Focused navigation
 
 When you enable the preview of the **Queries** hub, you’ll notice that the left pane has been removed. To navigate quickly between your favorite queries, use the dropdown in the query title.
 
@@ -69,13 +68,13 @@ We’ve also made the following improvements:
 
 ### Keyboard shortcuts in the work item form
 
-Assign a work item to yourself (Alt + i), jump to discussion (Ctrl + Alt + d), and copy a quick link to the work item (Shift + Alt + c) using keyboard shortcuts. For the full list of new shortcuts, type "?" with a work item form open or see the table below.
+Assign a work item to yourself (Alt + i), jump to discussion (Ctrl + Alt + d), and copy a quick link to the work item (Shift + Alt + c) using keyboard shortcuts. For the full list of new shortcuts, type “?” with a work item form open or see the table below.
 
 <img src="_img/09_15_01.png"; alt="Keyboard shortcuts in work item form" style="border:1px solid Silver; display: block; margin: auto;" />
 
 ### Enable contextual actions in the Work Items hub
 
-From within the work items hubs, users can now make use of contextual actions that change based on the selection of items. Copy to clipboard (Ctrl + C), Email, Delete (Delete), and Open selected items in Queries are now supported and accessible via mouse selection. Alternatively you can use Shift or Ctrl to streamline the selection of multiple items.
+From within the **Work Items** hub, you can now make use of contextual actions that change based on the selection of items. Copy to clipboard (Ctrl + C), Email, Delete (Delete), and Open selected items in **Queries** are now supported and accessible via mouse selection. Alternatively you can use Shift or Ctrl to streamline the selection of multiple items.
 
 <img src="_img/09_15_25.png"; alt="Keyboard shortcuts in work item form" style="border:1px solid Silver; display: block; margin: auto;" />
 
@@ -89,7 +88,7 @@ Based on customer feedback, we have updated the behavior of multi-line text fiel
 
 ### Add filtering to the Process and Fields pages in the Process admin
 
-The list of process and fields in the Process admin pages can be quite long. To quicker find the process or field you are looking for we have added a text filter to these pages.
+The list of process and fields in the **Process** admin pages can be quite long. To quicker find the process or field you are looking for we have added a text filter to these pages.
 
 <img src="_img/09_15_24.png"; alt="Process admin filtering" style="border:1px solid Silver; display: block; margin: auto;" />
 
@@ -103,7 +102,7 @@ To create a folder, click **New > Folder** in either the command bar or context 
 
 <img src="_img/09_15_07.png"; alt="New folder option" style="border:1px solid Silver; display: block; margin: auto;" />
 
-For TFVC, you'll specify a folder name and then check it in. For Git, because empty folders aren't permitted, you'll also have to specify a file name, optionally edit the file, then commit it.
+For TFVC, you’ll specify a folder name and then check it in. For Git, because empty folders aren’t permitted, you’ll also have to specify a file name, optionally edit the file, then commit it.
 
 Additionally, for Git, The **New file** dialog has been enhanced to accept slashes to create subfolders.
 
@@ -111,7 +110,7 @@ Additionally, for Git, The **New file** dialog has been enhanced to accept slash
 
 ### Get a permanent link to code
 
-When viewing a file, you usually see the version at the tip of the selected branch. The version of a file at the tip may change with new commits. Therefore, if you copy a link--which includes the branch name, not the commit SHA--from this view, your links can become stale. You can now easily switch the Files view to update the URL to refer to the commit rather than the branch. If you click "y", your view will switch to the tip commit of the current branch. You can then copy permanent links.
+When viewing a file, you usually see the version at the tip of the selected branch. The version of a file at the tip may change with new commits. Therefore, if you copy a link--which includes the branch name, not the commit SHA--from this view, your links can become stale. You can now easily switch the **Files** view to update the URL to refer to the commit rather than the branch. If you click “y”, your view will switch to the tip commit of the current branch. You can then copy permanent links.
 
 ## Build
 
@@ -171,17 +170,17 @@ In the new release definition editor you can now specify artifact conditions for
 
 ### Azure Resource Group task - Exposes deployment outputs as Task variables
 
-Azure Resource Manager templates allow defining "outputs" which need to be returned after an Azure deployment. We have now enhanced our inbuilt VSTS Azure RG deploy task to expose the "output" JSON section of the deployment object as task output parameter with name: "<Task Reference name>.DeploymentOutputs".  Users can further parse the JSON object and access the individual output values which can be consumed in subsequent tasks of the release environment.
+Azure Resource Manager templates allow defining “outputs” which need to be returned after an Azure deployment. We have now enhanced our inbuilt VSTS Azure RG deploy task to expose the “output” JSON section of the deployment object as task output parameter with name: “<Task Reference name>.DeploymentOutputs”.  You can further parse the JSON object and access the individual output values which can be consumed in subsequent tasks of the release environment.
 
 <img src="_img/09_15_14.png"; alt="Deployment outputs" style="border:1px solid Silver; display: block; margin: auto;" />
 
 ### Improved Deployment Groups UI
 
-Continuing our journey of refreshing the Build and Release experiences, we have now re-imagined our deployment groups pages to make it a more clean and intuitive experience. From the landing page you can view the health of the targets in the deployment group. You can also manage security for an individual deployment group, or set default permissions across deployment groups.
+Continuing our journey of refreshing the **Build** and **Release** experiences, we have now re-imagined our deployment groups pages to make it a more clean and intuitive experience. From the landing page you can view the health of the targets in the deployment group. You can also manage security for an individual deployment group, or set default permissions across deployment groups.
 
 <img src="_img/09_15_22.png"; alt="Deployment groups UI" style="border:1px solid Silver; display: block; margin: auto;" />
 
-For a target within a deployment group, you can view a summary, recent deployments, and the target's capabilities. You can set tags on the target, and control what is run on each target. We will be adding filter support for deployment groups in upcoming releases.
+For a target within a deployment group, you can view a summary, recent deployments, and the target’s capabilities. You can set tags on the target, and control what is run on each target. We will be adding filter support for deployment groups in upcoming releases.
 
 <img src="_img/09_15_23.png"; alt="Deployment groups UI tags" style="border:1px solid Silver; display: block; margin: auto;" />
 
@@ -189,7 +188,7 @@ For a target within a deployment group, you can view a summary, recent deployme
 
 ### Run webtests using the VSTest task
 
-Using the Visual Studio test task, webtests can now be run in the CI/CD pipeline. Webtest can be run by specifying the tests to run in the task assembly input. Any test case work item that has an 'associated automation' linked to a webtest, can also be run by selecting the test plan/test suite in the task.
+Using the Visual Studio test task, webtests can now be run in the CI/CD pipeline. Webtest can be run by specifying the tests to run in the task assembly input. Any test case work item that has an “associated automation” linked to a webtest, can also be run by selecting the test plan/test suite in the task.
 
 <img src="_img/09_15_09.png"; alt="Test selection" style="border:1px solid Silver; display: block; margin: auto;" />
 
@@ -199,7 +198,7 @@ Webtest results will be available as an attachment to the test result. This can 
 
 This capability is dependent on changes in the Visual Studio test platform and requires that Visual Studio 2017 Update 4 be installed on the build / release agent. Webtests cannot be run using prior versions of Visual Studio.
 
-Similarly, webtests can be run using the 'Run Functional Test' task. This capability is dependent on changes in the Test Agent, that will be available with the Visual Studio 2017 Update 5.
+Similarly, webtests can be run using the **Run Functional Test** task. This capability is dependent on changes in the Test Agent, that will be available with the Visual Studio 2017 Update 5.
 
 ### Chart widget for test plans and test suites
 
@@ -215,21 +214,21 @@ We enhanced the VSTest task to publish logs generated by different kind of loggi
 
 ### Gulp, Yarn, and more support authenticated feeds
 
-It's currently easy to work with authenticated npm feeds (in Package Management or external registries like npm Enterprise and Artifactory) if you're using the npm task, but more difficult if you're using a task runner like Gulp or an alternate npm client like Yarn. With this deployment, we've added a new 'npm Authenticate' build task that will add credentials to your .npmrc so that subsequent tasks can use authenticated feeds successfully.
+It’s currently easy to work with authenticated npm feeds (in Package Management or external registries like npm Enterprise and Artifactory) if you’re using the npm task, but more difficult if you’re using a task runner like Gulp or an alternate npm client like Yarn. With this deployment, we’ve added a new **npm Authenticate** build task that will add credentials to your .npmrc so that subsequent tasks can use authenticated feeds successfully.
 
 <img src="_img/09_15_06.png"; alt="Auth feeds" style="border:1px solid Silver; display: block; margin: auto;" />
 
 ### Package feed default permissions now include Project Administrators
 
-Currently, creating a feed sets the creating user as the only feed owner, which can cause administration challenges in large organizations if that user switches teams or leaves the organization. To remove this single point of failure, creating a feed now uses the user's current project context to get the Project Administrators group and make it an owner of the feed as well. As with any permission, you can remove this group and further customize feed permissions using the feed settings dialog.
+Currently, creating a feed sets the creating user as the only feed owner, which can cause administration challenges in large organizations if that user switches teams or leaves the organization. To remove this single point of failure, creating a feed now uses the user’s current project context to get the **Project Administrators** group and make it an owner of the feed as well. As with any permission, you can remove this group and further customize feed permissions using the feed settings dialog.
 
 ## Reporting
 
-The Burndown and Burnup Widgets are now available for those who have installed the [Analytics Extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics) on their Visual Studio Team Services (VSTS) accounts.
+The **Burndown** and **Burnup**widgets are now available for those who have installed the [Analytics Extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics) on their Visual Studio Team Services (VSTS) accounts.
 
-The Burndown widget lets you display a burndown across multiple teams and multiple sprints. You can use it to create a release burndown, a bug burndown, or a burndown on just about any scope of work over any time period. You can even create a burndown that spans team projects!
+The **Burndown** widget lets you display a burndown across multiple teams and multiple sprints. You can use it to create a release burndown, a bug burndown, or a burndown on just about any scope of work over any time period. You can even create a burndown that spans team projects!
 
-The Burndown widget helps you answer the question: Will we complete this project on time?
+The **Burndown** widget helps you answer the question: Will we complete this project on time?
 
 To help you answer that question, it provides these features:
 
@@ -237,7 +236,7 @@ To help you answer that question, it provides these features:
 * Computes average burndown
 * Shows you when you have items not estimated with story points
 * Tracks your scope increase over the course of the project
-* Projects your project's completion date based on historical burndown and scope increase trends
+* Projects your project’s completion date based on historical burndown and scope increase trends
 
 You can burndown on any work item type based on count of work items or by the sum of a specific field (e.g.: Story Points). You can burndown using daily/weekly/monthly intervals or based on an iteration schedule. You can even add additional filter criteria to fine tune the exact scope of work you are burning down.
 The widget is highly configurable allowing you use it for a wide variety of scenarios. We expect our customers will find amazing ways to use these two widgets.
@@ -246,7 +245,7 @@ The widget is highly configurable allowing you use it for a wide variety of scen
 
 <img src="_img/09_15_20.png"; alt="bug burndown" style="border:1px solid Silver; display: block; margin: auto;" />
 
-The Burnup widget is just like the Burndown widget, except that it plots the work you have completed, rather than the work you have remaining.
+The **Burnup** widget is just like the Burndown widget, except that it plots the work you have completed, rather than the work you have remaining.
 
 <img src="_img/09_15_21.png"; alt="stories burnup" style="border:1px solid Silver; display: block; margin: auto;" />
 
@@ -254,13 +253,15 @@ The Burnup widget is just like the Burndown widget, except that it plots the wor
 
 ### Refreshed error page and seamless tenant switching hint
 
-Users who had an MSA and AAD identity with the same sign in address would receive a disambiguation prompt during login asking which identity they would like to sign in with. For many users, this choice was confusing because they either did not realize they had an MSA and an AAD identity or they we're unsure of which had access to the account. This new feature allows users to who have selected the incorrect identity when prompted to see an error page which indicates that their other identity actually had access and in the future to select the other identity and a button to sign in directly with the correct identity.
+Users who had an MSA and AAD identity with the same sign in address would receive a disambiguation prompt during login asking which identity they would like to sign in with. For many users, this choice was confusing because they either did not realize they had an MSA and an AAD identity or they we’re unsure of which had access to the account. This new feature allows users to who have selected the incorrect identity when prompted to see an error page which indicates that their other identity actually had access and in the future to select the other identity and a button to sign in directly with the correct identity.
 
 ## Marketplace
 
 ### Marketplace moves to new markdown-it parser
 
-Marketplace is now moving to new markdown-it parser which is based on the CommonMark specification. All new extensions created will use the new markdown-it parser. VSTS publishers of current extensions can test their markdown content using the 'try it' experience and can move to the new parser by making the manifest changes. Click here to [learn more](https://aka.ms/vsmarketplace_parser).
+Marketplace is now moving to new markdown-it parser which is based on the CommonMark specification. All new extensions created will use the new markdown-it parser. VSTS publishers of current extensions can test their markdown content using the **try it** experience and can move to the new parser by making the manifest changes.
+
+See the [documentation for Visual Studio Marketplace and billing overview](https://aka.ms/vsmarketplace_parser) for more information.
 
 <img src="_img/09_15_18.png"; alt="markdown-it parser" style="border:1px solid Silver; display: block; margin: auto;" />
 
@@ -270,7 +271,7 @@ We would love to hear what you think about these features. Report a problem or p
 
 <img src="_img/07_14_00.png"; alt="Feedback menu" style="border:1px solid Silver; display: block; margin: auto;" />
 
-You can also get advice and your questions answers by the community on [Stack Overflow](https://stackoverflow.com/questions/tagged/vs-team-services).
+You can also get advice and your questions answers by the community on [Stack Overflow](https://stackoverflow.com/questions/tagged/vsts).
 
 Thanks,
 
