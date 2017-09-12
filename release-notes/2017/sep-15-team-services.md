@@ -33,8 +33,6 @@ description: Visual Studio Team Services (VSTS) release notes for Sprint 122 Upd
 
 The **Queries** hub has a new look and feel, changes in navigation, and some exciting new features such as the ability to search for queries.
 
-#### Focused navigation
-
 When you enable the preview of the **Queries** hub, you’ll notice that the left pane has been removed. To navigate quickly between your favorite queries, use the dropdown in the query title.
 
 <img src="_img/09_15_02.png"; alt="New queries experience" style="border:1px solid Silver; display: block; margin: auto;" />
@@ -50,13 +48,9 @@ The directory pages highlight new metadata for each query, including:
 * Who last modified it
 * When it was last modified
 
-#### Find queries faster with filtering
-
 The query directory pages now include a filter bar that lets you quickly search for any query you care about.
 
 <img src="_img/09_15_04.png"; alt="Find queries filter" style="border:1px solid Silver; display: block; margin: auto;" />
-
-#### Other improvements
 
 We’ve also made the following improvements:
 
