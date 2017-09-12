@@ -75,9 +75,8 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 
 ## Current features
 
-The features timeline lists significant features delivered to Visual Studio Team Services and the corresponding version of Team Foundation Server.
-Versions in the server column are linked to the appropriate download location. You can also 
-[view the build numbers for each version](#build_numbers).
+The features timeline lists significant features delivered to VSTS and the corresponding version of Team Foundation Server.
+Versions in the server column are linked to the appropriate download location. You can also [view the build numbers for each version](#build_numbers).
 
 <table>
     <thead>
