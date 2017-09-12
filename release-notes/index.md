@@ -1,14 +1,18 @@
 ---
-title: Team Services Feature Updates
-description: Visual Studio Team Services feature updates and release notes
+title: VSTS Features Timeline
+author: alexcnichols
+ms.author: alexn
+ms.date: 09/09/2017
+ms.topic: article
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
-ms.contentid: 96c3bb9f-b3c8-4093-9d2a-a18c6e97c859
+ms.manager: douge
+description: Visual Studio Team Services feature updates and release notes
 ---
 
 # Visual Studio Team Services Features Timeline
 
-### Features under development
+## Features under development
 
 This feature list is a peek into our roadmap. It identifies some of the significant features we are currently working on and a rough timeframe for when you can expect to see them. It is not comprehensive but is intended to provide some visibility into key investments. Most features are linked to a blog post and/or UserVoice entry where you can learn more and comment. These features and dates are the current plans at this time and are subject to change. The “Planned Date” reflects when the feature will be available on VSTS, the “Server” column reflects when it will be available in TFS on-premises, if applicable, and the “Area” column reflects the area of the product the feature aligns with most.
 
@@ -69,7 +73,7 @@ This feature list is a peek into our roadmap. It identifies some of the signific
     </tbody>
 </table>
 
-### Current features
+## Current features
 
 The features timeline lists significant features delivered to Visual Studio Team Services and the corresponding version of Team Foundation Server.
 Versions in the server column are linked to the appropriate download location. You can also 
