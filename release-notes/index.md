@@ -7,10 +7,10 @@ ms.topic: article
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
 ms.manager: douge
-description: Visual Studio Team Services feature updates and release notes
+description: VSTS feature updates and release notes
 ---
 
-# Visual Studio Team Services Features Timeline
+# VSTS Features Timeline
 
 ## Features under development
 
@@ -2438,7 +2438,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(232, 232, 232);">--</td>
         </tr>
         <tr>
-            <td>New Visual Studio Team Services integrations</td>
+            <td>New VSTS integrations</td>
             <td style="background:rgb(232, 232, 232);">--</td>
         </tr>
         <tr>
@@ -2759,7 +2759,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td>--</td>
         </tr>
         <tr>
-            <td>Visual Studio Team Services REST API version 1.0 is here</td>
+            <td>VSTS REST API version 1.0 is here</td>
             <td>--</td>
         </tr>
         <tr>
