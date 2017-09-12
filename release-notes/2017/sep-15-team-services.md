@@ -33,7 +33,7 @@ description: Visual Studio Team Services (VSTS) release notes for Sprint 122 Upd
 
 The **Queries** hub has a new look and feel, changes in navigation, and some exciting new features such as the ability to search for queries.
 
-When you enable the preview of the **Queries** hub, you’ll notice that the left pane has been removed. To navigate quickly between your favorite queries, use the dropdown in the query title.
+You’ll first notice that the left pane has been removed. To quickly navigate between your favorite queries, use the dropdown in the query title.
 
 <img src="_img/09_15_02.png"; alt="New queries experience" style="border:1px solid Silver; display: block; margin: auto;" />
 
@@ -48,7 +48,7 @@ The directory pages highlight new metadata for each query, including:
 * Who last modified it
 * When it was last modified
 
-The query directory pages now include a filter bar that lets you quickly search for any query you care about.
+The pages also include a filter bar that lets you quickly search for any query you care about.
 
 <img src="_img/09_15_04.png"; alt="Find queries filter" style="border:1px solid Silver; display: block; margin: auto;" />
 
@@ -66,7 +66,7 @@ Assign a work item to yourself (Alt + i), jump to discussion (Ctrl + Alt + d), a
 
 <img src="_img/09_15_01.png"; alt="Keyboard shortcuts in work item form" style="border:1px solid Silver; display: block; margin: auto;" />
 
-### Enable contextual actions in the Work Items hub
+### Contextual actions in the Work Items hub
 
 From within the **Work Items** hub, you can now make use of contextual actions that change based on the selection of items. Copy to clipboard (Ctrl + C), Email, Delete (Delete), and Open selected items in **Queries** are now supported and accessible via mouse selection. Alternatively you can use Shift or Ctrl to streamline the selection of multiple items.
 
@@ -74,13 +74,13 @@ From within the **Work Items** hub, you can now make use of contextual actions t
 
 <img src="_img/09_15_26.png"; alt="Keyboard shortcuts in work item form" style="border:1px solid Silver; display: block; margin: auto;" />
 
-### Strip HTML tags in work item grids
+### HTML tags stripped in work item grids
 
 Based on customer feedback, we have updated the behavior of multi-line text fields in work item grids to remove HTML formatting. When added as a column to the grid, multi-line text fields will now display as plain text.
 
 <img src="_img/09_15_05.png"; alt="Strip HTML tags" style="border:1px solid Silver; display: block; margin: auto;" />
 
-### Add filtering to the Process and Fields pages in the Process admin
+### Filtering to the Process and Fields pages in the Process admin
 
 The list of process and fields in the **Process** admin pages can be quite long. To quicker find the process or field you are looking for we have added a text filter to these pages.
 
@@ -123,7 +123,7 @@ Some scenarios that are now possible include:
 
 When this feature reaches your account, you’ll notice that all your current build definitions have been upgraded to have a single phase. Some of the configuration options such as demands and multi-configuration will be moved to each phase. You can continue to select a default queue for all the phases in a build definition, and then optionally override that choice in each phase.
 
-We’re still working on a few features:
+We’re still working on a few features, including:
 
 * Ability to consume output variables from one phase in a subsequent phase.
 * Ability to run phases in parallel. (For now, all the phases you define run sequentially).
@@ -140,15 +140,11 @@ Release definition authors will no longer have to manually send emails for appro
 
 This is especially useful for large accounts that have multiple stakeholders for releases, and those other than approver, release creator and environment owner that might want to be notified.
 
-This screenshot shows the default subscriptions for release notifications that are enabled for all users of the account.
-
 <img src="_img/09_15_13.png"; alt="Release notifications" style="border:1px solid Silver; display: block; margin: auto;" />
 
-See the [documentation for managing release notifications](https://blogs.msdn.microsoft.com/devops/2017/09/04/managing-release-notifications/) for more information.
+See the [post for managing release notifications](https://blogs.msdn.microsoft.com/devops/2017/09/04/managing-release-notifications/) for more information.
 
 ### Manage variables using the List and Grid views in the new release definition editor
-
-We are excited to announce the ability to filter/search for variables to quickly scope down what you are looking for and the ability to compare variables across environments side-by-side.
 
 You can now easily manage all your release and environment variables using the two views - **List** view and **Grid** view. Use the list view to quickly add release or environment variables and the **Grid** view to compare and edit variables across scopes. Additionally, you can use the filter and keyword search to manage the set of variables to work with in both the views.
 
@@ -162,9 +158,9 @@ In the new release definition editor you can now specify artifact conditions for
 
 <img src="_img/09_15_12.png"; alt="Branch filters" style="border:1px solid Silver; display: block; margin: auto;" />
 
-### Azure Resource Group task - Exposes deployment outputs as Task variables
+### Azure Resource Group task - Expose deployment outputs as task variables
 
-Azure Resource Manager templates allow defining “outputs” which need to be returned after an Azure deployment. We have now enhanced our inbuilt VSTS Azure RG deploy task to expose the “output” JSON section of the deployment object as task output parameter with name: “<Task Reference name>.DeploymentOutputs”.  You can further parse the JSON object and access the individual output values which can be consumed in subsequent tasks of the release environment.
+Azure Resource Manager templates allow defining “outputs” which need to be returned after an Azure deployment. We have now enhanced our native Azure Resource Group deploy task to expose the “output” JSON section of the deployment object as task output parameter with name: “<Task Reference name>.DeploymentOutputs”. You can further parse the JSON object and access the individual output values which can be consumed in subsequent tasks of the release environment.
 
 <img src="_img/09_15_14.png"; alt="Deployment outputs" style="border:1px solid Silver; display: block; margin: auto;" />
 
@@ -196,11 +192,11 @@ Similarly, webtests can be run using the **Run Functional Test** task. This capa
 
 ### Chart widget for test plans and test suites
 
-Until now, you could create charts for test plans and suites in Test hub and pin them to dashboard. We have now added a widget that enables creating charts for test plans and suites from the widget catalog on the dashboard. You can create charts for test authoring status or test execution status. Moreover, adding charts from the widget allows you to create larger charts when you have more data to be shown on a chart.
+Previously, you could create charts for test plans and suites in **Test** hub and pin them to dashboard. We have now added a widget that enables creating charts for test plans and suites from the widget catalog on the dashboard. You can create charts for test authoring status or test execution status. Moreover, adding charts from the widget allows you to create larger charts when you have more data to be shown on a chart.
 
 <img src="_img/09_15_11.png"; alt="Chart widget" style="border:1px solid Silver; display: block; margin: auto;" />
 
-### Better console logs: preview improvements and support for different log types generated by Visual Studio Test task
+### Preview improvements and support for different log types generated by Visual Studio Test task
 
 We enhanced the VSTest task to publish logs generated by different kind of logging statements corresponding to standard output and standard error for failed tests. We have also improved the preview experience to support viewing text and log file formats, with capability to search in the log files.
 
@@ -208,17 +204,17 @@ We enhanced the VSTest task to publish logs generated by different kind of loggi
 
 ### Gulp, Yarn, and more support authenticated feeds
 
-It’s currently easy to work with authenticated npm feeds (in Package Management or external registries like npm Enterprise and Artifactory) if you’re using the npm task, but more difficult if you’re using a task runner like Gulp or an alternate npm client like Yarn. With this deployment, we’ve added a new **npm Authenticate** build task that will add credentials to your .npmrc so that subsequent tasks can use authenticated feeds successfully.
+It was previosly easy to work with authenticated npm feeds (in Package Management or external registries like npm Enterprise and Artifactory) if you’re using the npm task, but more difficult if you’re using a task runner like Gulp or an alternate npm client like Yarn. With this update, we’ve added a new **npm Authenticate** build task that will add credentials to your .npmrc so that subsequent tasks can use authenticated feeds successfully.
 
 <img src="_img/09_15_06.png"; alt="Auth feeds" style="border:1px solid Silver; display: block; margin: auto;" />
 
 ### Package feed default permissions now include Project Administrators
 
-Currently, creating a feed sets the creating user as the only feed owner, which can cause administration challenges in large organizations if that user switches teams or leaves the organization. To remove this single point of failure, creating a feed now uses the user’s current project context to get the **Project Administrators** group and make it an owner of the feed as well. As with any permission, you can remove this group and further customize feed permissions using the feed settings dialog.
+Previously, creating a feed sets the creating user as the only feed owner, which can cause administration challenges in large organizations if that user switches teams or leaves the organization. To remove this single point of failure, creating a feed now uses the user’s current project context to get the **Project Administrators** group and make it an owner of the feed as well. As with any permission, you can remove this group and further customize feed permissions using the feed settings dialog.
 
 ## Reporting
 
-The **Burndown** and **Burnup**widgets are now available for those who have installed the [Analytics Extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics) on their Visual Studio Team Services (VSTS) accounts.
+The **Burndown** and **Burnup** widgets are now available for those who have installed the [Analytics Extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics) on their accounts.
 
 The **Burndown** widget lets you display a burndown across multiple teams and multiple sprints. You can use it to create a release burndown, a bug burndown, or a burndown on just about any scope of work over any time period. You can even create a burndown that spans team projects!
 
@@ -233,13 +229,14 @@ To help you answer that question, it provides these features:
 * Projects your project’s completion date based on historical burndown and scope increase trends
 
 You can burndown on any work item type based on count of work items or by the sum of a specific field (e.g.: Story Points). You can burndown using daily/weekly/monthly intervals or based on an iteration schedule. You can even add additional filter criteria to fine tune the exact scope of work you are burning down.
+
 The widget is highly configurable allowing you use it for a wide variety of scenarios. We expect our customers will find amazing ways to use these two widgets.
 
 <img src="_img/09_15_19.png"; alt="release burndown" style="border:1px solid Silver; display: block; margin: auto;" />
 
 <img src="_img/09_15_20.png"; alt="bug burndown" style="border:1px solid Silver; display: block; margin: auto;" />
 
-The **Burnup** widget is just like the Burndown widget, except that it plots the work you have completed, rather than the work you have remaining.
+The **Burnup** widget is just like the **Burndown** widget, except that it plots the work you have completed, rather than the work you have remaining.
 
 <img src="_img/09_15_21.png"; alt="stories burnup" style="border:1px solid Silver; display: block; margin: auto;" />
 
@@ -247,7 +244,7 @@ The **Burnup** widget is just like the Burndown widget, except that it plots the
 
 ### Refreshed error page and seamless tenant switching hint
 
-Users who had an MSA and AAD identity with the same sign in address would receive a disambiguation prompt during login asking which identity they would like to sign in with. For many users, this choice was confusing because they either did not realize they had an MSA and an AAD identity or they we’re unsure of which had access to the account. This new feature allows users to who have selected the incorrect identity when prompted to see an error page which indicates that their other identity actually had access and in the future to select the other identity and a button to sign in directly with the correct identity.
+Users who had an MSA and AAD identity with the same sign in address would receive a disambiguation prompt during login asking which identity they would like to sign in with. For many users, this choice was confusing because they either did not realize they had an MSA and an AAD identity or they were unsure of which had access to the account. This new feature allows users to who have selected the incorrect identity when prompted to see an error page which indicates that their other identity actually had access and in the future to select the other identity and a button to sign in directly with the correct identity.
 
 ## Marketplace
 
