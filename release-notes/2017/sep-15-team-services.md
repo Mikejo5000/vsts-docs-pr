@@ -156,6 +156,10 @@ You can now easily manage all your release and environment variables using the t
 
 In the new release definition editor you can now specify artifact conditions for a specific environment. You can add multiple filters for each artifact linked to the release definition. Deployment will be triggered to this environment only if all the artifact conditions are successfully met.
 
+In the new release definition editor you can now specify artifact conditions for a particular environment. Using these artifact conditions, you will have more granular control on which artifacts should be deployed to a specific environment. For example, for a production environment you may want to make sure that builds generated only from the master branch are deployed. This filter needs to be set for all artifacts that you think should meet this criteria.
+
+You can also add multiple filters for each artifact that is linked to the release definition. Deployment will be triggered to this environment only if all the artifact conditions are successfully met.
+
 <img src="_img/09_15_12.png"; alt="Branch filters" style="border:1px solid Silver; display: block; margin: auto;" />
 
 ### Azure Resource Group task - Expose deployment outputs as task variables
