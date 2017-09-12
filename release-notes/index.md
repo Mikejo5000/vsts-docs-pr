@@ -171,7 +171,7 @@ Versions in the server column are linked to the appropriate download location. Y
         </tr>
         <tr>
             <td>Marketplace moves to new markdown-it parser</td>
-            <td style="background:rgb(232, 232, 232);">Future</td>
+            <td style="background:rgb(232, 232, 232);">--</td>
         </tr>
         <tr>
             <td rowspan="29">[28 Aug 2017](/articles/news/2017/aug-28-team-services)</td>
