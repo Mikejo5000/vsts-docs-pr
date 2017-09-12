@@ -89,7 +89,7 @@ Versions in the server column are linked to the appropriate download location. Y
     </thead>
     <tbody>
         <tr>
-            <td rowspan="21">[15 Sep 2017](/vsts/release-notes/2017/sep-15-team-services)</td>
+            <td rowspan="20">[15 Sep 2017](/vsts/release-notes/2017/sep-15-team-services)</td>
             <td>New Queries experience</td>
             <td style="background:rgb(232, 232, 232);">Future</td>
         </tr>
@@ -131,10 +131,6 @@ Versions in the server column are linked to the appropriate download location. Y
         </tr>
         <tr>
             <td>Branch filters in environment triggers</td>
-            <td style="background:rgb(232, 232, 232);">Future</td>
-        </tr>
-        <tr>
-            <td>Expose deployment outputs as task variables in Azure Resource Group task</td>
             <td style="background:rgb(232, 232, 232);">Future</td>
         </tr>
         <tr>
