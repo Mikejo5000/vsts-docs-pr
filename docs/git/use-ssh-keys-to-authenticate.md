@@ -19,7 +19,7 @@ Connect to your Git repos through SSH when you can't use the recommended [Git Cr
 >[!IMPORTANT]
 > SSH URLs are on September 13, 2017. Old SSH URLs will continue to work through November 17, 2017. If you have already set up SSH, you will need to update your remote URLs:
 > - Visit your repository on the web and select the **Clone** button in the upper right.
-> - Select **SSH** and copy the new SSH URL.
+> - Select **SSH** and [copy the new SSH URL](use-ssh-keys-to-authenticate.md#copy-url).
 > - In your Git client, run: ```git remote set-url <remote name, e.g. origin> <new SSH URL>```. Alternatively, in Visual Studio, go to **Repository Settings**, and edit your remotes.
 
 >[!NOTE]
@@ -81,18 +81,20 @@ Associate the public key generated in the previous step with your user ID.
 0.  Open your security settings by browsing to the web interface and selecting your name in the upper right of the
 user interface. Select **My security** in the menu that appears.
 
-    ![Accessing User Profile in Visual Studio VSTS](_img/use-ssh-authentication/ssh_profile_access.png)
+    ![Accessing User Profile in VSTS](_img/use-ssh-authentication/ssh_profile_access.png)
 
 0. Select **SSH Public Keys** , then select **Add**.
 
-    ![Accessing Security Configuration in Visual Studio VSTS](_img/use-ssh-authentication/ssh_accessing_security_key.png)
+    ![Accessing Security Configuration in VSTS](_img/use-ssh-authentication/ssh_accessing_security_key.png)
 
 0. Copy the contents of the public key (for example, id_rsa.pub) that you generated into the **Key Data** field. Avoid adding whitespace or new lines into the **Key Data** field-they can cause VSTS to use an invalid public key. 
 
-    ![Configuring Public Key in Visual Studio VSTS](_img/use-ssh-authentication/ssh_key_input.png)
+    ![Configuring Public Key in VSTS](_img/use-ssh-authentication/ssh_key_input.png)
 
 0. Give the key a useful description (this will be displayed on the **SSH public keys** page for your profile) so that you can remember it later. Select **Save** to store the public key. Once saved, you cannot change the key. You can delete the key or create a new entry for another key. There are no restrictions on how many keys you can add to your user profile.
   
+<a name="copy-url"></a>
+
 ### Step 3: Clone the Git repository with SSH
 
 > To connect with SSH from an existing cloned repo, see [updating your remotes to SSH](use-ssh-keys-to-authenticate.md#migrate).
