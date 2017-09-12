@@ -2404,7 +2404,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(217, 247, 219);">[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)</td>
         </tr>
         <tr>
-            <td>Libraries for integrating with Visual Studio Team Services now available at nuget.org</td>
+            <td>Libraries for integrating with VSTS now available at nuget.org</td>
             <td style="background:rgb(232, 232, 232);">--</td>
         </tr>
         <tr>
@@ -2721,7 +2721,7 @@ Versions in the server column are linked to the appropriate download location. Y
         </tr>
         <tr>
             <td>[12 Nov 2014](/articles/news/2014/dec-02-team-services#nov12)</td>
-            <td>Release Management Preview as Visual Studio Team Services service</td>
+            <td>Release Management Preview as VSTS service</td>
             <td>--</td>
         </tr>
         <tr>
