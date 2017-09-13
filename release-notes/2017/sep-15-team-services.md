@@ -249,11 +249,9 @@ Users who had an MSA and AAD identity with the same sign in address would receiv
 
 ### Marketplace moves to new markdown-it parser
 
-Marketplace is now moving to new markdown-it parser which is based on the CommonMark specification. All new extensions created will use the new markdown-it parser. VSTS publishers of current extensions can test their markdown content using the **try it** experience and can move to the new parser by making the manifest changes.
-
 Marketplace is moving to markdown-it parser, which is based on the CommonMark specification and will be used for all new extensions published going forward. Publishers of existing VSTS extensions can test their markdown content using the **try it** experience on the extension page and move to the new parser by making the manifest changes. Starting December 1, 2017 Marketplace will be leveraging only the new parser for both new and existing extensions.
 
-See the [documentation for Visual Studio Marketplace and billing overview](https://aka.ms/vsmarketplace_parser) for more information.
+See the [documentation](https://aka.ms/vsmarketplace_parser) for more information.
 
 <img src="_img/09_15_18.png"; alt="markdown-it parser" style="border:1px solid Silver; display: block; margin: auto;" />
 
