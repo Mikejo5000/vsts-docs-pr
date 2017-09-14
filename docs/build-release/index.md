@@ -45,6 +45,10 @@ VSTS and Team Foundation Server help you implement a highly customizable continu
 
 [![Zero to DevOps](../build-release/_img/index/zero-to-devops-video.png)](https://channel9.msdn.com/events/Visual-Studio/Visual-Studio-2017-Launch/190)
 
+![icon](/media/logos/logo_pluralsight.svg)
+
+
+
 ## Resources
 
 - [What is Continuous Integration?](https://www.visualstudio.com/learn/what-is-continuous-integration/)  
