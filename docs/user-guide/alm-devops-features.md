@@ -35,7 +35,7 @@ If you're new to Team Services or TFS, see the [Key concepts](concepts.md) and o
 
 
 <p><b>Browsers</b></p>
-[Connect to the web portal](connect/connect-team-projects.md) from the latest versions of these supported browsers:  
+[Connect to the web portal](../connect/connect-team-projects.md) from the latest versions of these supported browsers:  
 - Chrome  
 - Edge    
 - Firefox   
@@ -53,7 +53,7 @@ Track work and integrate with your code, build, and test environments from the f
 - [IntelliJ](http://java.visualstudio.com/Docs/tools/intellij)   
 - [Visual Studio Code](hhttp://java.visualstudio.com/Docs/tools/vscode)   
  
-To learn how to connect, see [Connect to a team project](connect/connect-team-projects.md).  
+To learn how to connect, see [Connect to a team project](../connect/connect-team-projects.md).  
 <br/>
 <p><b>Office integration clients</b></p>
 Use features supported by these familiar clients to manage your project and illustrate your requirements.  
@@ -71,7 +71,7 @@ Use features supported by these familiar clients to manage your project and illu
 <br/>
 <p><b>Add team members </b></p>
 <p>To share and contribute to your project, add user accounts to [Team Services](../accounts/add-team-members-vs.md) or your [TFS](../work/scale/multiple-teams.md#add-team-members).</p>
-![Manage users, add team members](_img/alm-feature-manage-members.png)  
+![Manage users, add team members](features/_img/alm-feature-manage-members.png)  
 <br/>
 
 <p><b>Azure Active Directory (AAD) (Team Services)</b></p>
@@ -93,13 +93,13 @@ Use features supported by these familiar clients to manage your project and illu
 - [Build](../security/permissions.md#collection)  
 - [Code - Git](../security/permissions.md#git-repo)  
 - [Code - TFVC](../security/permissions.md#tfvc)  
-- [Dashboards](report/dashboards.md#manage)   
+- [Dashboards](../report/dashboards.md#manage)   
 - [Queries](../work/track/set-query-permissions.md)   
-- [Release Management](build/concepts/policies/permissions.md#release-permissions)  
+- [Release Management](../build-release/concepts/policies/permissions.md#release-permissions)  
 - [Team admin role](../work/scale/manage-team-assets.md)  
 - [Test](../security/permissions.md#project_test)  
 - [Work item tags](../security/permissions.md#tags)  
-- [Restrict access](setup-admin/restrict-access-tfs.md)   
+- [Restrict access](../accounts/restrict-access-tfs.md)   
 
 </td>
 </tr>
@@ -120,7 +120,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 <p><b>Create your backlog</b></p>
 <p>Plan your project by [adding a work item for each user story or requirement](../work/backlogs/create-your-backlog.md) you plan to develop.  </p>
-![Build your backlog of user stories and requirements](_img/features-quick-add-panel.png)  
+![Build your backlog of user stories and requirements](features/_img/features-quick-add-panel.png)  
  <br/>
 
 
@@ -150,7 +150,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 <p><b>Backlog and board settings</b></p>
 <p>Click ![Settings icon](../work/_img/icons/team-settings-gear-icon.png)  to configure team backlogs and boards, including [show bugs on backlogs and boards](../work/customize/show-bugs-on-backlog.md) and [set team backlog levels](../work/customize/select-backlog-navigation-levels.md).  </p>
-![Backlog and board settings](_img/alm-feature-team-settings-gear-icon.png)  
+![Backlog and board settings](features/_img/alm-feature-team-settings-gear-icon.png)  
 <br/>
 
 
@@ -172,12 +172,12 @@ Use features supported by these familiar clients to manage your project and illu
 <p><b>Filter your backlog</b></p>
 <p>Use **Show/Hide in progress** to only show or hide items which have moved from the new or proposed state to active or in progress state.     </p>
 <p>Additionally, you can list a subset of items based on keywords [keywords](../work/backlogs/define-features-epics.md#filter) or [tags](../work/track/add-tags-to-work-items.md). </p>
-![Filter based on keywords or tags](_img/alm-feature-filter-backlog.png)  
+![Filter based on keywords or tags](features/_img/alm-feature-filter-backlog.png)  
  <br/>
 
 <p><b>Request feedback</b></p>
 <p>[Request feedback on working software](../work/connect/get-feedback.md) and easily track responses that capture interaction with video, verbal, or type-written comments.  </p>
-![Request feedback](_img/feature-request-feedback.png)  
+![Request feedback](features/_img/feature-request-feedback.png)  
  <br/>
 
 <p><b>Feedback client</b></p>
@@ -200,7 +200,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 <p><b>Track issues and other types of work</b></p>
 <p>Different types of work items [track different types of work](../work/backlogs/add-work-items.md) - such as bugs, test cases, risks, issues, and more. </p>
-![Add new work item widget](_img/alm-feature-new-work-item-widget.png)  
+![Add new work item widget](features/_img/alm-feature-new-work-item-widget.png)  
 
  <br/>
 
@@ -209,12 +209,12 @@ Use features supported by these familiar clients to manage your project and illu
 
 <p><b>Copy or clone a work item</b></p>
 <p>[Copy an existing work item](../work/backlogs/copy-clone-work-items.md#copy-clone) or bulk copy several using [Excel](../work/office/bulk-add-modify-work-items-excel.md).</p>
-![Copy or clone a work item](_img/alm-index-copy-clone-work-item.png)  
+![Copy or clone a work item](features/_img/alm-index-copy-clone-work-item.png)  
  <br/>
 
 <p><b>Follow a work item </b></p>
-<p>Click the ![Follow icon](../work/_img/icons/follow-icon.png)/![Following icon](../work/_img/icons/following-icon.png) Follow/Following icons to quickly [start or stop tracking changes made to a work item](collaborate/follow-work-items.md).  </p>
-![Follow a work item control](_img/alm-feature-follows.png)  
+<p>Click the ![Follow icon](../work/_img/icons/follow-icon.png)/![Following icon](../work/_img/icons/following-icon.png) Follow/Following icons to quickly [start or stop tracking changes made to a work item](../collaborate/follow-work-items.md).  </p>
+![Follow a work item control](features/_img/alm-feature-follows.png)  
 <br/>
 
 <p><b>Rich text comments</b></p>
@@ -262,7 +262,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 <p><b>Tags</b></p>
 <p>[Add tags to work items](../work/track/add-tags-to-work-items.md) to filter backlogs and queries. Also, you can [bulk update work items](../work/backlogs/bulk-modify-work-items.md#tags) or [use work item templates](../work/productivity/work-item-template.md) to add or remove tags. </p>
-![Add tags to filter backlogs, boards, and queries](_img/alm-feature-tags.png)  
+![Add tags to filter backlogs, boards, and queries](features/_img/alm-feature-tags.png)  
 <br/>
 
 <p><b>Work item templates</b></p>
@@ -282,17 +282,17 @@ Use features supported by these familiar clients to manage your project and illu
 
 <p><b>Integrate Git development with work tracking </b></p>
 <p>Drive Git development and stay in sync as a team to complete backlog items and tasks using the [Git Development section](../work/backlogs/connect-work-items-to-git-dev-ops.md). Add branches, create pull requests, and view all development performed to support the specific work item.  </p>
-![Work item form Development section](_img/alm-feature-git-dev-section.png)  
+![Work item form Development section](features/_img/alm-feature-git-dev-section.png)  
 <br/>
 
 
 <p><b>Verify a bug, re-run test case</b></p>
-<p>Choose the **Verify** option from the bug work item form context menu to launch the relevant test case in the web runner. For more information, see [Run tests for web apps](test/manual-exploratory-testing/getting-started/run-manual-tests.md). </p>
+<p>Choose the **Verify** option from the bug work item form context menu to launch the relevant test case in the web runner. For more information, see [Run tests for web apps](../manual-test/getting-started/run-manual-tests.md). </p>
 
 
 <p><b>Link work items  </b></p>
 <p>Track related work, dependencies, and changes made over time by [linking work items](../work/track/link-work-items-support-traceability.md). </p>
-![Link control, web portal](_img/alm-feature-links-control.png)  
+![Link control, web portal](features/_img/alm-feature-links-control.png)  
 <br/>
 
 <p><b>Add or modify a field </b></p>
@@ -326,7 +326,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 <p><b>Create an inherited process</b></p>
 <p>The first step in customizing a team project is to [create an inherited process](../work/process/manage-process.md#create-inherited-process). You can only customize inherited processes.  </p>
-![Customize process](_img/customize-vsts-process.png)   
+![Customize process](features/_img/customize-vsts-process.png)   
 <br/>
 
 <p><b>New work item experience </b></p>
@@ -356,7 +356,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 <p><b>Add or modify a field</b></p>
 <p>[Add a custom field](../work/process/customize-process-field.md) to support tracking additional data requirements or modify an existing field to apply optional rules. </p>
-![Add field](_img/index-add-field.png)   
+![Add field](features/_img/index-add-field.png)   
 <br/>
 
 <p><b>Remove a field from a form</b></p>
@@ -364,12 +364,12 @@ Use features supported by these familiar clients to manage your project and illu
 
 <p><b>Area path pick lists</b></p>
 <p>Change the [pick list of area paths](../work/customize/modify-areas-iterations.md) to support grouping work items by team, product, or feature area. </p>
-![Hierarchical area paths](_img/alm-feature-area-paths.png)   
+![Hierarchical area paths](features/_img/alm-feature-area-paths.png)   
 <br/>
 
 <p><b>Sprint/iteration pick lists</b></p>
 <p>Change the [pick list of iteration paths](../work/scrum/define-sprints.md) to support grouping work into sprints, milestones, or other event-specific or time-related period. Activate sprints for each team. </p>
-![Iterations or sprints](_img/alm-feature-define-sprints.png)  
+![Iterations or sprints](features/_img/alm-feature-define-sprints.png)  
 <br/>
 </td>
 
@@ -389,7 +389,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 <p><b>Customize the web form</b></p>
 <p>For each work item type, you can [add custom pages to group additional custom fields](../work/process/customize-process-form.md) and you can organize your forms by placing logically related groups and HTML fields on separate pages within a form.    </p>
-![Add custom group](_img/index-add-group.png)   
+![Add custom group](features/_img/index-add-group.png)   
 <br/>
 
 <p><b>Add a custom work item type</b></p>
@@ -495,7 +495,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p><b>Filter</b></p>
 <p>[Use key words to filter and find items](../work/kanban/filter-kanban-board.md#text-filter) on the Kanban board.</p>
 
-![Kanban board filter](_img/alm-feature-kanban-filter.png)  
+![Kanban board filter](features/_img/alm-feature-kanban-filter.png)  
 <br/>
 
 
@@ -513,7 +513,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 <p><b>Map your workflow</b></p>
 <p>[Customize columns to support your team's workflow](../work/kanban/add-columns.md) and track work from start to finish. </p>
-![Add columns to map your workflow](_img/alm-feature-kanban-flow.png)  
+![Add columns to map your workflow](features/_img/alm-feature-kanban-flow.png)  
 <br/>
 
 <p><b>Expedite work with swimlanes </b></p>
@@ -525,11 +525,11 @@ Use features supported by these familiar clients to manage your project and illu
 
 <p><b>Filter by field values or parent work items</b></p>
 <p>Click the ![Kanban field filter icon](../work/_img/icons/kanban-filter-icon.png) field filter icon to [filter the board based on assignment, iteration, work item type, or tags](../work/kanban/filter-kanban-board.md#field-filter). </p>
-![Kanban board filter](_img/alm-feature-kanban-filter-fields.png)  
+![Kanban board filter](features/_img/alm-feature-kanban-filter-fields.png)  
 <br/>
 
 <p><b>Cumulative Flow Diagram </b></p>
-<p>With the CFD, you can [monitor the count of work items as they progressively move through various states which you define](Report/guidance/cumulative-flow.md).  </p>
+<p>With the CFD, you can [monitor the count of work items as they progressively move through various states which you define](../report/guidance/cumulative-flow.md).  </p>
 </td>
 
 
@@ -542,7 +542,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 <p><b>Live updates </b></p>
 <p>[Enable live updates](../work/kanban/kanban-basics.md#live-updates) to automatically refresh your Kanban board when changes are made by others or to the board settings. </p>
-![Live updates](_img/alm-feature-live-updates.png)  
+![Live updates](features/_img/alm-feature-live-updates.png)  
 <br/>
 
 
@@ -578,7 +578,7 @@ Use features supported by these familiar clients to manage your project and illu
 <td width="33%">
 <p><b>Add another team</b></p>
 <p>[Add and structure teams](../work/scale/multiple-teams.md) and organize work to support team autonomy and organizational alignment. Teams can manage their work independently of one another while the organization gains visibility across all teams. </p>
-![Multiple teams](_img/alm-feature-multiple-teams.png)  
+![Multiple teams](features/_img/alm-feature-multiple-teams.png)  
 <br/>
 <p><b>Set team defaults</b></p>
 <p>Several Agile tools reference the team's default area path, iteration path, and activated sprints to automatically filter the set of work items they display. Understand how defaults are used and how to [set the defaults for your team](../work/scale/set-team-defaults.md).</p>
@@ -605,7 +605,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p><b>Portfolio management</b></p>
 <p>Manage a [portfolio of backlogs](../work/scale/portfolio-management.md) and gain insight into each team's progress as well as the progress of all programs.</p>
 
-![Portfolio management](_img/alm-feature-portfolio-management.png)
+![Portfolio management](features/_img/alm-feature-portfolio-management.png)
 <br/>
 
 
@@ -650,13 +650,13 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Velocity & forecasting</b></p>
-<p>Use [velocity charts](report/guidance/team-velocity.md) and [forecast](../work/scrum/forecast.md) tools  to estimate work that can be completed in future sprints. </p>
-![Team velocity chart](_img/alm-feature-team-velocity-chart.png)  
+<p>Use [velocity charts](../report/guidance/team-velocity.md) and [forecast](../work/scrum/forecast.md) tools  to estimate work that can be completed in future sprints. </p>
+![Team velocity chart](features/_img/alm-feature-team-velocity-chart.png)  
 <br/>
 
 <p><b>Sprint burndown charts</b></p>
 <p>Monitor progress and review team patterns from [sprint burndown charts](../work/scrum/sprint-burndown.md).</p>
-![Sprint burndown chart](_img/alm-index-sprint-burndown-widget.png)   
+![Sprint burndown chart](features/_img/alm-index-sprint-burndown-widget.png)   
 
 
 
@@ -708,7 +708,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 <p><b>Kanban workflow</b></p>
 <p>You can fully customize your Kanban board to map the workflow your team uses by [adding and renaming columns](../work/kanban/add-columns.md)</p>
-![Add columns to map your workflow](_img/alm-feature-kanban-flow.png)  
+![Add columns to map your workflow](features/_img/alm-feature-kanban-flow.png)  
 <br/>
 
 <p><b>Customize the workflow</b></p>
@@ -762,22 +762,22 @@ Use features supported by these familiar clients to manage your project and illu
 <td width="30%">
 
 <p><b>Personal and team notifications or alerts</b></p>
-<p>Get notified as changes occur to work items, code reviews, source control files, and builds by setting [personal notifications](collaborate/manage-personal-notifications.md) or [team notifications](collaborate/manage-team-notifications.md).</p>
-![Open Notifications from Account menu](_img/features-notifications-option.png)  
+<p>Get notified as changes occur to work items, code reviews, source control files, and builds by setting [personal notifications](../collaborate/manage-personal-notifications.md) or [team notifications](../collaborate/manage-team-notifications.md).</p>
+![Open Notifications from Account menu](features/_img/features-notifications-option.png)  
 <br/>
 
 <p><b>Share queries and sprint plans</b></p>
 <p>Email a query or [sprint plan](../work/scrum/sprint-planning.md).  </p>
-![Share queries, backlogs, and sprint plans with the email control](_img/alm-feature-email-control.png)  
+![Share queries, backlogs, and sprint plans with the email control](features/_img/alm-feature-email-control.png)  
 <br/>
 <p><b>Quick alerts to team members  </b></p>
 <p>Use the **@mention** control to send email to team members to bring them into a discussion around work changes, pull requests, or other items.  </p>
-![@mentions control sends email to team members with links](_img/alm-feature-at-mention-control_305.png)  
+![@mentions control sends email to team members with links](features/_img/alm-feature-at-mention-control_305.png)  
 
 
 <p><b>Client feature flag updates</b></p>
 <p>Alert flag within the IDE automatically notifies you of the latest client changes.</p>
-![Visual Studio feature notification flag](_img/alm-feature-notifications-in-vs.png)  
+![Visual Studio feature notification flag](features/_img/alm-feature-notifications-in-vs.png)  
 <br/>
 
 
@@ -785,19 +785,19 @@ Use features supported by these familiar clients to manage your project and illu
 <td width="30%">
 
 <p><b>Follow a work item </b></p>
-<p>Click the ![Follow icon](../work/_img/icons/follow-icon.png)/![Following icon](../work/_img/icons/following-icon.png) icons to quickly [start or stop tracking changes made to a work item](collaborate/follow-work-items.md).  </p>
-![Follow a work item control](_img/alm-feature-follows.png)  
+<p>Click the ![Follow icon](../work/_img/icons/follow-icon.png)/![Following icon](../work/_img/icons/following-icon.png) icons to quickly [start or stop tracking changes made to a work item](../collaborate/follow-work-items.md).  </p>
+![Follow a work item control](features/_img/alm-feature-follows.png)  
 <br/>
 
 
 <p><b>Follow a pull request</b></p>
-<p>To [track the progress of a single pull request](collaborate/follow-work-items.md), click the ![Follow icon](../work/_img/icons/follow-icon.png) option from the context menu. </p>
-![Follow a pull request](_img/features-follow-pull-request.png)  
+<p>To [track the progress of a single pull request](../collaborate/follow-work-items.md), click the ![Follow icon](../work/_img/icons/follow-icon.png) option from the context menu. </p>
+![Follow a pull request](features/_img/features-follow-pull-request.png)  
 <br/>
 
 <p><b>Manage work items you follow  </b></p>
 <p>From the **Work>Queries** page you can view the list of work items that you're following.  </p>
-![Followed work items list](_img/alm-feature-followed-work-items.png)  
+![Followed work items list](features/_img/alm-feature-followed-work-items.png)  
 <br/>
 
 
@@ -827,66 +827,66 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Get started with Git in Visual Studio </b></p>
-<p>To get started working with Git, [clone a repository, add code, and create topic branches in Team Services](git/gitquickstart.md) or [Visual Studio](git/get-started.md). Learn how to commit, publish, and conduct a pull request of your changes. </p>
-![Visual Studio Git UI pages](_img/features-git-vs-ui.png)  
+<p>To get started working with Git, [clone a repository, add code, and create topic branches in Team Services](../git/gitquickstart.md) or [Visual Studio](../git/get-started.md). Learn how to commit, publish, and conduct a pull request of your changes. </p>
+![Visual Studio Git UI pages](features/_img/features-git-vs-ui.png)  
 <br/>
 
 <p><b>Clone repositories</b></p>
-<p>To work locally, you [clone a repository](git/get-started.md). </p>
+<p>To work locally, you [clone a repository](../git/get-started.md). </p>
 
 <p><b>Commit changes</b></p>
-<p>Enter commit messages and [quickly push your local changes to the shared repo](git/get-started.md).</p>
-![Commit and push changes](_img/alm-feature-git-dev-commit-push.png)  
+<p>Enter commit messages and [quickly push your local changes to the shared repo](../git/get-started.md).</p>
+![Commit and push changes](features/_img/alm-feature-git-dev-commit-push.png)  
 <br/>
 
 <p><b>Pull requests</b></p>
-<p>Use [pull requests to review and merge branch code to a master branch](git/pull-requests.md).   </p>
+<p>Use [pull requests to review and merge branch code to a master branch](../git/pull-requests.md).   </p>
 <p><b>Sync</b></p>
 
-<p>Quickly [sync your local branch with a shared repo](git/get-started.md).</p>
+<p>Quickly [sync your local branch with a shared repo](../git/get-started.md).</p>
 
 
 </td>
 <td width="33%">
 <p><b>Get started using Eclipse</b></p>
-<p>[Work with Git repositories](git/share-your-code-in-git-eclipse.md) using the Team Explorer Everwhere IDE for Eclipse.  </p>
+<p>[Work with Git repositories](../git/share-your-code-in-git-eclipse.md) using the Team Explorer Everwhere IDE for Eclipse.  </p>
 
 <p><b>Add reviewers to get feedback </b></p>
 <p>Use the [**@mention** control to add reviewers](../work/productivity/productivity-tips.md) to your pull request to get their feedback about your changes.  </p>
-![@mentions control sends email to team members with links](_img/alm-feature-at-mention-control_305.png)  
+![@mentions control sends email to team members with links](features/_img/alm-feature-at-mention-control_305.png)  
 <br/>
 
 
 <p><b>Resolve Git merge conflicts</b></p>
-<p>Merge conflicts occur when commits have changes to the same files as other newer commits in the branch history. Learn how to [prevent and resolve merge conflicts](git/tutorial/merging.md).   </p>
+<p>Merge conflicts occur when commits have changes to the same files as other newer commits in the branch history. Learn how to [prevent and resolve merge conflicts](../git/tutorial/merging.md).   </p>
 
 <p><b>Code search</b></p>
-<p>Maximize cross-team collaboration and code sharing by finding code across all the projects to which you have access. Narrow down your results and focus in on code by using [filters, preview code, view history, compare versions, and more](search/overview.md) </p>
-![Search code box](_img/features-index-code-search-vsts.png)  
+<p>Maximize cross-team collaboration and code sharing by finding code across all the projects to which you have access. Narrow down your results and focus in on code by using [filters, preview code, view history, compare versions, and more](../search/overview.md) </p>
+![Search code box](features/_img/features-index-code-search-vsts.png)  
 
 
 <p><b>Get notified about pull requests</b></p>
-<p>Subscribe to email alerts to get notified about [new pull requests, changes, approvals, and rejections](git/pull-requests.md#notifications).</p>
+<p>Subscribe to email alerts to get notified about [new pull requests, changes, approvals, and rejections](../git/pull-requests.md#notifications).</p>
 
 <p><b>Set branch policies </b></p>
-<p>To improve code quality, [set branch policies to require code reviews or  automatically add reviewers](git/branch-policies.md). </p>
+<p>To improve code quality, [set branch policies to require code reviews or  automatically add reviewers](../git/branch-policies.md). </p>
 
 <p><b>Automatically build pull requests </b></p>
-<p>Set a branch policy to [automatically generate a build for a pull request to selected branches](git/branch-policies.md).</p>
+<p>Set a branch policy to [automatically generate a build for a pull request to selected branches](../git/branch-policies.md).</p>
 
 <p><b>Create Git repositories </b></p>
-<p>When you create a team project with Git as your version control system, you automatically create a Git repo. You can [Create additional Git repos](git/repo-rename.md) from the admin context. </p>
+<p>When you create a team project with Git as your version control system, you automatically create a Git repo. You can [Create additional Git repos](../git/repo-rename.md) from the admin context. </p>
 
 
 <p><b>Rename a Git repository </b></p>
-<p>[Rename Git repos](git/repo-rename.md) from the admin context. </p>
+<p>[Rename Git repos](../git/repo-rename.md) from the admin context. </p>
 
 </td>
 <td width="33%">
 
 <p><b>Integrate Git development with work tracking  </b></p>
 <p>Drive Git development and stay in sync as a team to complete backlog items and tasks using the [Git Development section](../work/backlogs/connect-work-items-to-git-dev-ops.md). Add branches, create pull requests, and view all development performed to support the specific work item.  </p>
-![Work item form Development section](_img/alm-feature-git-dev-section.png)  
+![Work item form Development section](features/_img/alm-feature-git-dev-section.png)  
 <br/>
 
 
@@ -894,18 +894,18 @@ Use features supported by these familiar clients to manage your project and illu
 <p>Use the [**#ID** control to link work items](../work/productivity/productivity-tips.md) to your pull request to support tracking work.    </p>
 
 <p><b>Get started using Xcode </b></p>
-<p>[Work with Git repositories](git/share-your-code-in-git-xcode.md) using the Xcode IDE.  </p>
+<p>[Work with Git repositories](../git/share-your-code-in-git-xcode.md) using the Xcode IDE.  </p>
 
 <p><b>Git commands</b></p>
-<p>Use [Git command line tools](git/command-prompt.md) when you need to perform select manual tasks or to automate work using a script.</p>
+<p>Use [Git command line tools](../git/command-prompt.md) when you need to perform select manual tasks or to automate work using a script.</p>
 
 
 
 <p><b>Bypass a branch policy</b></p>
-<p>Grant an [Exempt from policy enforcement permission](git/branch-policies.md) to a user or group.</p>
+<p>Grant an [Exempt from policy enforcement permission](../git/branch-policies.md) to a user or group.</p>
 
 <p><b>Rebase a branch</b></p>
-<p>Before merging a topic branch into master, you may choose to first [rebase your topic branch onto the latest commit in master](git/rebase.md).</p>
+<p>Before merging a topic branch into master, you may choose to first [rebase your topic branch onto the latest commit in master](../git/rebase.md).</p>
 
 
 
@@ -930,8 +930,8 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Get started with TFVC in Visual Studio </b></p>
-<p>[Develop and share your code](tfvc/share-your-code-in-tfvc-vs.md). Learn how to configure your workspace, check-in your code, compare file changes, and view file history. </p>
-![Visual Studio Git UI pages](_img/features-tfvc-ui-vs.png)  
+<p>[Develop and share your code](../tfvc/share-your-code-in-tfvc-vs.md). Learn how to configure your workspace, check-in your code, compare file changes, and view file history. </p>
+![Visual Studio Git UI pages](features/_img/features-tfvc-ui-vs.png)  
 <br/>
 
 <p><b>Set up local or server workspaces</b></p>
@@ -977,8 +977,8 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Code search</b></p>
-<p>Find code across all the projects to which you have access. Narrow down your results and focus in on code by using [filters, preview code, view history, compare versions, and more](search/overview.md) </p>
-![Search code box](_img/features-index-code-search-vsts.png)  
+<p>Find code across all the projects to which you have access. Narrow down your results and focus in on code by using [filters, preview code, view history, compare versions, and more](../search/overview.md) </p>
+![Search code box](features/_img/features-index-code-search-vsts.png)  
 <br/>
 
 
@@ -1013,13 +1013,13 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>What is package management?</b></p>
-<p>Package management helps you [manage code sharing by automating common tasks for discovering, consuming, and sharing components](package/what-is-packaging.md).</p>
+<p>Package management helps you [manage code sharing by automating common tasks for discovering, consuming, and sharing components](../package/what-is-packaging.md).</p>
 
 <p><b>Create feeds </b></p>
-<p>[Create feeds](package/feeds/create-feed.md) to share code through packages.</p>
+<p>[Create feeds](../package/feeds/create-feed.md) to share code through packages.</p>
 
 <p><b>Move existing file shares to the cloud</b></p>
-<p>Eliminate dependencies on on-premises file shares and hosted instances of NuGet.Server by [moving your packages to Team Services](package/nuget/move-from-fileshares.md).</p>
+<p>Eliminate dependencies on on-premises file shares and hosted instances of NuGet.Server by [moving your packages to Team Services](../package/nuget/move-from-fileshares.md).</p>
 
 
 
@@ -1027,27 +1027,27 @@ Use features supported by these familiar clients to manage your project and illu
 <td width="33%">
 
 <p><b>Discover and consume packages </b></p>
-<p>[Consume packages](package/nuget/consume.md) by connecting to a feed.</p>
+<p>[Consume packages](../package/nuget/consume.md) by connecting to a feed.</p>
 
 <p><b>Publish packages to feeds</b></p>
-<p>[Publish packages](package/nuget/publish.md) to share code with your team and your organization.</p>
+<p>[Publish packages](../package/nuget/publish.md) to share code with your team and your organization.</p>
 
 <p><b>Add identities to your feeds </b></p>
-<p>[Give teams and service identities](package/feeds/common-identities.md) access to your feeds.</p>
+<p>[Give teams and service identities](../package/feeds/common-identities.md) access to your feeds.</p>
 
 
 </td>
 <td width="33%">
 
 <p><b>Bootstrap the developer environment</b></p>
-<p>Increase your team's velocity and decrease the amount of code duplication across your organization. Access a set of tools and conventions for integrating Team Services NuGet into your workflow by [getting the NuGet VSS.PackageManagement.Bootstrap package](package/nuget/bootstrap-nuget.md).</p>
+<p>Increase your team's velocity and decrease the amount of code duplication across your organization. Access a set of tools and conventions for integrating Team Services NuGet into your workflow by [getting the NuGet VSS.PackageManagement.Bootstrap package](../package/nuget/bootstrap-nuget.md).</p>
 
 
 <p><b>Remove a NuGet package from a feed </b></p>
-<p>[Unlist or remove a package](package/nuget/remove.md) you no longer want users to discover.</p>
+<p>[Unlist or remove a package](../package/nuget/remove.md) you no longer want users to discover.</p>
 
 <p><b>Secure feeds </b></p>
-<p>Control who can [contribute to or consume from a feed](package/feeds/feed-permissions.md).</p>
+<p>Control who can [contribute to or consume from a feed](../package/feeds/feed-permissions.md).</p>
 </td>
 </tr>
 </tbody>
@@ -1068,47 +1068,47 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Define builds</b></p>
-<p>Start from a build template and customize your build from there. Build for [Windows](build/get-started/dot-net.md), [iOS](build/apps/mobile/xcode-ios.md), Android, Java (Ant, Maven, or Gradle), or Linux using the same domain-specific languages you use every day on your dev machine. [Build Xamarin apps](build/apps/mobile/xamarin.md) for both iOS and Android and run tests on Xamarin's Test Cloud as part of the build.</p>
+<p>Start from a build template and customize your build from there. Build for [Windows](../build-release/get-started/dot-net.md), [iOS](../build-release/apps/mobile/xcode-ios.md), Android, Java (Ant, Maven, or Gradle), or Linux using the same domain-specific languages you use every day on your dev machine. [Build Xamarin apps](../build-release/apps/mobile/xamarin.md) for both iOS and Android and run tests on Xamarin's Test Cloud as part of the build.</p>
 
 <p><b>Customize build process using scripts</b></p>
-<p>[Use a script](build/scripts/index.md) to add your team's business logic to your build process.</p>
+<p>[Use a script](../build-release/scripts/index.md) to add your team's business logic to your build process.</p>
 
 
 <p><b>Build agents and agent pools </b></p>
-<p>At least one [agent](build/concepts/agents/agents.md) is require to build your code. As you scale your system with more code, people, and builds, you'll need more build agents organized within [agent pools](build/concepts/agents/pools-queues.md). You can use both on-premises or hosted agent pools.</p>
+<p>At least one [agent](../build-release/concepts/agents/agents.md) is require to build your code. As you scale your system with more code, people, and builds, you'll need more build agents organized within [agent pools](../build-release/concepts/agents/pools-queues.md). You can use both on-premises or hosted agent pools.</p>
 
 
 <p><b>Gated check-in (TFVC, Team Services) </b></p>
-<p>Use [gated check-in](build/define/triggers.md#gated) to protect against breaking changes when checking code into TFVC.  </p>
+<p>Use [gated check-in](../build-release/define/triggers.md#gated) to protect against breaking changes when checking code into TFVC.  </p>
 
 
 <p><b>Branch policies (Git)</b></p>
-<p>Improve code quality by [setting branch policies](git/branch-policies.md) to ensure build are never broken or getting the right people to review changes. </p>
+<p>Improve code quality by [setting branch policies](../git/branch-policies.md) to ensure build are never broken or getting the right people to review changes. </p>
 
 
 </td>
 <td width="38%">
 <p><b>Specify your build steps</b></p>
-<p>Add steps to specify what you [want to build](build/define/build.md#build), the [tests to run](build/define/build.md#test), and [all the other steps](build/define/build.md) needed to complete the process.</p>
+<p>Add steps to specify what you [want to build](../build-release/define/build.md#build), the [tests to run](../build-release/define/build.md#test), and [all the other steps](../build-release/define/build.md) needed to complete the process.</p>
 
 
-<p>![](build/steps/build/_img/android-build.png)&#160;&#160;[Build an Android app using Gradle](build/steps/build/gradle.md)</p>
-<p>![](build/steps/build/_img/android-signing.png)&#160;&#160;[Sign and align Android APK files](build/steps/build/android-signing.md)</p>
-<p>![](build/steps/build/_img/ant.png)&#160;&#160;[Build with Apache Ant](build/steps/build/ant.md) </p>
-<p>![](build/steps/build/_img/gradle.png)&#160;&#160;[Build using a Gradle wrapper script](build/steps/build/gradle.md)  </p>
-<p>![](build/steps/build/_img/grunt.png)&#160;&#160;[Grunt: The JavaScript Task Runner](build/steps/build/grunt.md) </p>
-<p>![](https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/Gulp/icon.png?raw=true)&#160;&#160;[Gulp: Node.js task-based build system](build/steps/build/gulp.md)</p>
-<p>![](https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/PublishSymbols/icon.png?raw=true)&#160;&#160;[Index source code and publish symbols](build/steps/build/index-sources-publish-symbols.md)</p>
-<p>![](https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/Maven/icon.png?raw=true)&#160;&#160;[Build with Apache Maven](build/steps/build/maven.md)</p>
-<p>![](build/steps/build/_img/msbuild.png)&#160;&#160;[Build with MSbuild](build/steps/build/msbuild.md)</p>
+<p>![](../build-release/steps/build/_img/android-build.png)&#160;&#160;[Build an Android app using Gradle](../build-release/steps/build/gradle.md)</p>
+<p>![](../build-release/steps/build/_img/android-signing.png)&#160;&#160;[Sign and align Android APK files](../build-release/steps/build/android-signing.md)</p>
+<p>![](../build-release/steps/build/_img/ant.png)&#160;&#160;[Build with Apache Ant](../build-release/steps/build/ant.md) </p>
+<p>![](../build-release/steps/build/_img/gradle.png)&#160;&#160;[Build using a Gradle wrapper script](../build-release/steps/build/gradle.md)  </p>
+<p>![](../build-release/steps/build/_img/grunt.png)&#160;&#160;[Grunt: The JavaScript Task Runner](../build-release/steps/build/grunt.md) </p>
+<p>![](https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/Gulp/icon.png?raw=true)&#160;&#160;[Gulp: Node.js task-based build system](../build-release/steps/build/gulp.md)</p>
+<p>![](https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/PublishSymbols/icon.png?raw=true)&#160;&#160;[Index source code and publish symbols](../build-release/steps/build/index-sources-publish-symbols.md)</p>
+<p>![](https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/Maven/icon.png?raw=true)&#160;&#160;[Build with Apache Maven](../build-release/steps/build/maven.md)</p>
+<p>![](../build-release/steps/build/_img/msbuild.png)&#160;&#160;[Build with MSbuild](../build-release/steps/build/msbuild.md)</p>
 <p>![](https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/SonarQubePreBuild/icon.png?raw=true)&#160;&#160;[SonarQube for MSbuild](http://go.microsoft.com/fwlink/?LinkId=620063)</p>
-<p>![](build/steps/build/_img/visual-studio-build.png)&#160;&#160;[Visual Studio and MSbuild](build/steps/build/visual-studio-build.md)</p>
-<p>![](build/steps/build/_img/xamarin-android.png)&#160;&#160;[Build an Android app with Xamarin](build/steps/build/xamarin-android.md) </p>
-<p>![](build/steps/build/_img/xamarin-ios.png)&#160;&#160;[Build an iOS app with Xamarin on Mac OS](build/steps/build/xamarin-ios.md) </p>
+<p>![](../build-release/steps/build/_img/visual-studio-build.png)&#160;&#160;[Visual Studio and MSbuild](../build-release/steps/build/visual-studio-build.md)</p>
+<p>![](../build-release/steps/build/_img/xamarin-android.png)&#160;&#160;[Build an Android app with Xamarin](../build-release/steps/build/xamarin-android.md) </p>
+<p>![](../build-release/steps/build/_img/xamarin-ios.png)&#160;&#160;[Build an iOS app with Xamarin on Mac OS](../build-release/steps/build/xamarin-ios.md) </p>
 
 
 <p><b>Build variables</b></p>
-<p>Use [predefined variables](build/define/variables.md) or add your custom variables when configuring your build definition or your build scripts.</p>
+<p>Use [predefined variables](../build-release/define/variables.md) or add your custom variables when configuring your build definition or your build scripts.</p>
 
 
 </td>
@@ -1116,12 +1116,12 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Continuous integration builds</b></p>
-<p>[Define a CI build](build/define/triggers.md#ci) that compiles and tests your solutions whenever your team checks in code.</p>
+<p>[Define a CI build](../build-release/define/triggers.md#ci) that compiles and tests your solutions whenever your team checks in code.</p>
 
 
 <p><b>Build summary charts</b></p>
-<p>View real-time build status and [add build summary charts to your dashboards](Report/add-widget-to-dashboard.md).  </p>
-![build summary chart](_img/alm-feature-build-summary-widget.png)  
+<p>View real-time build status and [add build summary charts to your dashboards](../report/add-widget-to-dashboard.md).  </p>
+![build summary chart](features/_img/alm-feature-build-summary-widget.png)  
 <br/>
 
 
@@ -1130,11 +1130,11 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Audit changes </b></p>
-<p>Determine who [changed what in the build definition and when they did it](build/define/history.md). </p>
+<p>Determine who [changed what in the build definition and when they did it](../build-release/define/history.md). </p>
 
 
 <p><b>Build retention policies</b></p>
-<p>[Define policies to automatically delete old completed builds ](build/concepts/policies/retention.md) to minimize clutter.</p>
+<p>[Define policies to automatically delete old completed builds ](../build-release/concepts/policies/retention.md) to minimize clutter.</p>
 
 <p><b>Build permissions</b></p>
 <p>Determine who can [define, delete, and manage builds](../security/permissions.md#build).</p>
@@ -1154,80 +1154,80 @@ Use features supported by these familiar clients to manage your project and illu
 <td width="33%">
 
 <p><b>Automate deployments</b></p>
-<p>Reduce time-to-market and respond to customer feedback with greater agility by [automating your release process](build/overview.md). Deploy applications across platforms to all environments of the pipeline with just one click.</p>
-![Release Manager](_img/alm-feature-release-1.png)  
+<p>Reduce time-to-market and respond to customer feedback with greater agility by [automating your release process](../build-release/overview.md). Deploy applications across platforms to all environments of the pipeline with just one click.</p>
+![Release Manager](features/_img/alm-feature-release-1.png)  
 <br />
 
 
 <p><b>When to use Release Management?</b></p>
-<p>Evaluate how Release Management can help you in [your development and deployment efforts](build/overview.md).</p>
+<p>Evaluate how Release Management can help you in [your development and deployment efforts](../build-release/overview.md).</p>
 
 
 <p><b>Release definitions</b></p>
-<p>Add a release definition by [choosing the build version, target release environments, and tasks](build/actions/create-deploy-releases.md).</p>
+<p>Add a release definition by [choosing the build version, target release environments, and tasks](../build-release/actions/create-deploy-releases.md).</p>
 
 
 <p><b>Release environments</b></p>
-<p>[Define and clone release environments](build/concepts/definitions/release/environments.md), logical entities that represent where you want to deploy a release, such as a collection of servers, a cloud, multiple clouds, or an app store.</p>
+<p>[Define and clone release environments](../build-release/concepts/definitions/release/environments.md), logical entities that represent where you want to deploy a release, such as a collection of servers, a cloud, multiple clouds, or an app store.</p>
 
 
 <p><b>Artifacts</b></p>
-<p>A release is fundamentally defined by [versioned artifacts that make up the release](build/concepts/definitions/release/artifacts.md). As you deploy the release to various environments, you deploy and validate the same artifacts on all environments. </p>
+<p>A release is fundamentally defined by [versioned artifacts that make up the release](../build-release/concepts/definitions/release/artifacts.md). As you deploy the release to various environments, you deploy and validate the same artifacts on all environments. </p>
 
 
 <p><b>Tasks</b></p>
-<p>Automate release deployment by [defining the events that will trigger a release](build/concepts/definitions/release/triggers.md#release-triggers).</p>
+<p>Automate release deployment by [defining the events that will trigger a release](../build-release/concepts/definitions/release/triggers.md#release-triggers).</p>
 
 <p><b>Agents and agent pools</b></p>
-<p>Agent pools are the execution containers that specify the security context and runtime environment for the [agents that run when you deploy a release](build/concepts/agents/agents.md).</p>
+<p>Agent pools are the execution containers that specify the security context and runtime environment for the [agents that run when you deploy a release](../build-release/concepts/agents/agents.md).</p>
 
 </td>
 <td width="33%">
 <p><b>Works for any app</b></p>
-<p>Deploy [any type of application across multiple platforms](build/overview.md) including Windows and Linux, whether on-premises or in the cloud.</p>
+<p>Deploy [any type of application across multiple platforms](../build-release/overview.md) including Windows and Linux, whether on-premises or in the cloud.</p>
 
 <p><b>Approval workflows</b></p>
-<p>Streamline your application release workflow by [routing pre- and post-deployment approvals](build/concepts/definitions/release/environments.md#approvals) to multiple approvers or teams.</p>
+<p>Streamline your application release workflow by [routing pre- and post-deployment approvals](../build-release/concepts/definitions/release/environments.md#approvals) to multiple approvers or teams.</p>
 
 <p><b>Release notifications</b></p>
-<p>Receive email messages as releases occur. [Approvers receive notifications automatically when a release is waiting for approval](build/actions/view-manage-releases.md#send-email). </p>
+<p>Receive email messages as releases occur. [Approvers receive notifications automatically when a release is waiting for approval](../build-release/actions/view-manage-releases.md#send-email). </p>
 
 <p><b>Full traceability</b></p>
-<p>[Monitor the status of your release pipelines and track every deployment in each of the environments](build/actions/view-manage-releases.md#release-history). Retain full audit history of all activities performed on a release with detailed release logs and approval tracking.</p>
+<p>[Monitor the status of your release pipelines and track every deployment in each of the environments](../build-release/actions/view-manage-releases.md#release-history). Retain full audit history of all activities performed on a release with detailed release logs and approval tracking.</p>
 
 <p><b>Release logs</b></p>
-<p>View or download log files as zip files. Log files contain the status for each step or task of a release, for each of the environments in the release definition. Each completed release--succeeded, failed, or abandoned--[includes a live log file, details, and history for each step or task](build/actions/debug-deployment-issues.md). </p>
+<p>View or download log files as zip files. Log files contain the status for each step or task of a release, for each of the environments in the release definition. Each completed release--succeeded, failed, or abandoned--[includes a live log file, details, and history for each step or task](../build-release/actions/debug-deployment-issues.md). </p>
 
 <p><b>Triggers</b></p>
-<p>Automate release deployment by [defining the events that will trigger a release](build/concepts/definitions/release/triggers.md#release-triggers).</p>
+<p>Automate release deployment by [defining the events that will trigger a release](../build-release/concepts/definitions/release/triggers.md#release-triggers).</p>
 
 <p><b>Variables</b></p>
-<p>Lookup the description for all [release system, global, and agent variables](build/concepts/process/tasks.md).</p>
+<p>Lookup the description for all [release system, global, and agent variables](../build-release/concepts/process/tasks.md).</p>
 
 </td>
 <td width="33%">
 
 <p><b>Release names </b></p>
-<p>Specify the [naming and numbering scheme you want used when adding releases](build/concepts/definitions/release/index.md#numbering).</p>
+<p>Specify the [naming and numbering scheme you want used when adding releases](../build-release/concepts/definitions/release/index.md#numbering).</p>
 
 <p><b>Global configuration properties</b></p>
-<p>Simplify management of custom values that you use to configure multiple releases by [specifying custom values for any of the tasks in any of the environments of a release definition](build/concepts/definitions/release/variables.md).</p>
+<p>Simplify management of custom values that you use to configure multiple releases by [specifying custom values for any of the tasks in any of the environments of a release definition](../build-release/concepts/definitions/release/variables.md).</p>
 
 <p><b>View test results</b></p>
-<p>[Open the **Tests** tab](build/actions/view-manage-releases.md#test-results) to view a summary of the test results, including pass/fail percentages and run duration. Sort the test results into groups or filter the results to show just passed, failed, or other results.</p>
-![View test results for a release](_img/devops-feature-release-view-tests.png)
+<p>[Open the **Tests** tab](../build-release/actions/view-manage-releases.md#test-results) to view a summary of the test results, including pass/fail percentages and run duration. Sort the test results into groups or filter the results to show just passed, failed, or other results.</p>
+![View test results for a release](features/_img/devops-feature-release-view-tests.png)
 <br />
 
 <p><b>Add release summary to dashboard (Team Services) </b></p>
-<p>[Add a release summary chart](report/widget-catalog.md#release-definition-widget) to a team dashboard. </p>
+<p>[Add a release summary chart](../report/widget-catalog.md#release-definition-widget) to a team dashboard. </p>
 
 <p><b>Extend and customize</b></p>
-<p>[Create workflows tailored to your process](build/concepts/definitions/release/index.md) by customizing our tasks, or extend with your own custom tasks.</p>
-![Customize release definition process](_img/alm-feature-release-3.png)  
+<p>[Create workflows tailored to your process](../build-release/concepts/definitions/release/index.md) by customizing our tasks, or extend with your own custom tasks.</p>
+![Customize release definition process](features/_img/alm-feature-release-3.png)  
 <br />
 
 <p><b>Manage permissions</b></p>
-<p>Grant or deny permissions to [manage release definitions, environments approvers, or release permissions](build/concepts/policies/permissions.md#release-permissions). Set permissions for users, groups, or per release definition. </p>
+<p>Grant or deny permissions to [manage release definitions, environments approvers, or release permissions](../build-release/concepts/policies/permissions.md#release-permissions). Set permissions for users, groups, or per release definition. </p>
 
 </td>
 </tr>
@@ -1244,19 +1244,19 @@ Use features supported by these familiar clients to manage your project and illu
 <td width="33%">
 
 <p><b>Comprehensive testing</b></p>
-<p>[Perform exploratory, manual, system, user acceptance, and performance tests for any app, in any language](test/index.md). Using Visual Studio or 3rd-party test frameworks, you can include automated tests with builds and releases for continuous integration and deployment. </p>
+<p>[Perform exploratory, manual, system, user acceptance, and performance tests for any app, in any language](../manual-test/index.md). Using Visual Studio or 3rd-party test frameworks, you can include automated tests with builds and releases for continuous integration and deployment. </p>
 
 <p><b>Unit testing with Git</b></p>
 <p>Create [unit tests](https://docs.microsoft.com/visualstudio/test/create-unit-tests-menu) and run them frequently to make sure your code is working properly.</p>
-![view tests in test explorer](_img/alm-feature-test-unittests.png)  
+![view tests in test explorer](features/_img/alm-feature-test-unittests.png)  
 <br />
 
 
 <p><b>Manual test plans and test cases</b></p>
-<p>Get started by [creating test plans and test cases](test/manual-exploratory-testing/getting-started/create-test-cases.md) to track manual testing for sprints or milestones.</p>
+<p>Get started by [creating test plans and test cases](../manual-test/getting-started/create-test-cases.md) to track manual testing for sprints or milestones.</p>
 
 <p><b>Shared steps and shared parameters</b></p>
-<p>[Create shared steps](https://msdn.microsoft.com/library/dd286655.aspx) to include often repeated sequence of steps in your manual test cases, such as logging in. Repeat manual tests with different data using [shared parameters](test/manual-exploratory-testing/repeat-test-with-different-data.md). </p>
+<p>[Create shared steps](https://msdn.microsoft.com/library/dd286655.aspx) to include often repeated sequence of steps in your manual test cases, such as logging in. Repeat manual tests with different data using [shared parameters](../manual-test/repeat-test-with-different-data.md). </p>
 
 
 <p><b>Performance and load testing  </b></p>
@@ -1275,14 +1275,14 @@ Use features supported by these familiar clients to manage your project and illu
 <p>Use Visual Studio to create [coded UI tests](https://msdn.microsoft.com/library/dd286726.aspx) to test your application's user interface.</p>
 
 <p><b>Run test with your builds for continuous integration</b></p>
-<p>Use continuous integration builds to [run tests automatically](test/continuous-testing/getting-started/getting-started-with-continuous-testing.md).</p>
+<p>Use continuous integration builds to [run tests automatically](../build-release/test/getting-started-with-continuous-testing.md).</p>
 
 <p><b>Review automated test results after a build</b></p>
-<p>[Review your test results](test/continuous-testing/getting-started/review-continuous-test-results-after-build.md) to analyze any problems that were found.</p>
+<p>[Review your test results](../build-release/test/review-continuous-test-results-after-build.md) to analyze any problems that were found.</p>
 
 <p><b>Quickly assign configurations to test plan, test suite, or test case  </b></p>
 <p>From the context menu of a test plan, test suite, or test case, you can assign a configuration.  </p>
-![Assign configuration to test object](_img/alm-features-test-configuration.png)  
+![Assign configuration to test object](features/_img/alm-features-test-configuration.png)  
 <br/>
 
 
@@ -1291,23 +1291,23 @@ Use features supported by these familiar clients to manage your project and illu
 
 <p><b>Exploratory testing</b></p>
 <p>Explore user stories without test cases or test steps using [Test Manager and exploratory testing](https://msdn.microsoft.com/library/hh191621.aspx).</p>
-![Exploratory testing](_img/features-exploratory-testing.png)  
+![Exploratory testing](features/_img/features-exploratory-testing.png)  
 <br/>
-<p>Or, [download and install the Test &amp; Feedback extension](test/manual-exploratory-testing/getting-started/perform-exploratory-tests.md). Capture screenshots, annotate them, and submit bugs while you explore your web app - all directly from your Chrome browser. </p>
+<p>Or, [download and install the Test &amp; Feedback extension](../manual-test/getting-started/perform-exploratory-tests.md). Capture screenshots, annotate them, and submit bugs while you explore your web app - all directly from your Chrome browser. </p>
 
 <p><b>Record and play back manual tests</b></p>
-<p>With Microsoft Test Manager, you can [record your keystrokes and gestures while you test an application](test/manual-exploratory-testing/getting-started/record-play-back-manual-tests.md). The next time you run the test, you can play back your actions quickly and accurately.</p>
+<p>With Microsoft Test Manager, you can [record your keystrokes and gestures while you test an application](../manual-test/getting-started/record-play-back-manual-tests.md). The next time you run the test, you can play back your actions quickly and accurately.</p>
 
 
 
 <p><b>Track test status and test results</b></p>
-<p>Quickly [view the status](test/manual-exploratory-testing/getting-started/track-test-status.md) of your testing using lightweight charts.</p>
-![Test charts](_img/features-test-results.png)  
+<p>Quickly [view the status](../manual-test/getting-started/track-test-status.md) of your testing using lightweight charts.</p>
+![Test charts](features/_img/features-test-results.png)  
 <br />
 
 
 <p><b>Test environments</b></p>
-<p>[Specify a combination of hardware and software](test/manual-exploratory-testing/test-different-configurations.md) that represents a user or machine environment in which your app will run.</p>
+<p>[Specify a combination of hardware and software](../manual-test/test-different-configurations.md) that represents a user or machine environment in which your app will run.</p>
 
 <p><b>Test permissions</b></p>
 <p>Set permissions on who can [manage test configurations, test environments, and publish and delete test results](../security/permissions.md#project_test).</p>
@@ -1331,38 +1331,38 @@ Use features supported by these familiar clients to manage your project and illu
 <td width="33%">
 
 <p><b>Multiple team dashboards</b></p>
-<p>Each team can create several [team dashboards](report/dashboards.md) to help keep both the team and stakeholders in sync. Each dashboard tile provides quick access to the progress of builds, status of work items, or latest code changes. </p>
-![Add a dashboard control](_img/alm-feature-add-a-dashboard.png)  
+<p>Each team can create several [team dashboards](../report/dashboards.md) to help keep both the team and stakeholders in sync. Each dashboard tile provides quick access to the progress of builds, status of work items, or latest code changes. </p>
+![Add a dashboard control](features/_img/alm-feature-add-a-dashboard.png)  
  <br/>
 
 
 <p><b>Build history charts</b></p>
-<p>[Add build history charts to your dashboards](report/add-widget-to-dashboard.md#build-history).  </p>
-![build summary chart](_img/alm-feature-build-summary-widget.png)  
+<p>[Add build history charts to your dashboards](../report/add-widget-to-dashboard.md#build-history).  </p>
+![build summary chart](features/_img/alm-feature-build-summary-widget.png)  
  <br/>
 
 
 
 <p><b>Test charts</b></p>
 <p>Track the status of your [test progress and test runs](https://msdn.microsoft.com/library/dn282443.aspx). Optionally add these charts to a dashboard.  </p>
-![Test run chart](_img/alm-feature-test-chart.png)  
+![Test run chart](features/_img/alm-feature-test-chart.png)  
  <br/>
 
 <p><b>Test quality trend charts</b></p>
-<p>Add [failure and duration charts for tests run as part of your build](report/add-widget-to-dashboard.md#test-quality) to your team dashboard.    </p>
-![Test quality failure and duration charts](_img/alm-dashboards-test-quality-failure-duration-charts.png)  
+<p>Add [failure and duration charts for tests run as part of your build](../report/add-widget-to-dashboard.md#test-quality) to your team dashboard.    </p>
+![Test quality failure and duration charts](features/_img/alm-dashboards-test-quality-failure-duration-charts.png)  
  <br/>
 
 </td>
 <td width="33%">
 
 <p><b>Restrict or allow team members to manage dashboards (Team Services)</b></p>
-<p>Set permissions to [restrict or allow team members to manage dashboards](report/dashboards.md#manage).  </p>
+<p>Set permissions to [restrict or allow team members to manage dashboards](../report/dashboards.md#manage).  </p>
 
 
 <p><b>Capacity planning and tracking</b></p>
-<p>Easily track how much work your team has completed and has left to do in a sprint by adding the [sprint capacity chart widget](report/widget-catalog.md#sprint-capacity-widget) to your dashboard.  </p>
-![Sprint capacity chart](_img/alm-feature-capacity-widget.png)  
+<p>Easily track how much work your team has completed and has left to do in a sprint by adding the [sprint capacity chart widget](../report/widget-catalog.md#sprint-capacity-widget) to your dashboard.  </p>
+![Sprint capacity chart](features/_img/alm-feature-capacity-widget.png)  
 <br/>
 
 
@@ -1370,48 +1370,48 @@ Use features supported by these familiar clients to manage your project and illu
 <p>Grant non-licensed users access as Stakeholders ([Team Services](../accounts/add-account-users-assign-access-levels-team-services.md) | [TFS](../work/connect/change-access-levels.md)) so they can view progress, run queries, and contribute ideas.  </p>
 
 <p><b>Velocity charts</b></p>
-<p>[Team velocity](report/guidance/team-velocity.md) tracks the total estimated effort (story points or size) of backlog items (user stories or requirements) completed or still in progress within each sprint. </p>
-![Team velocity chart](_img/alm-feature-team-velocity-chart.png)  
+<p>[Team velocity](../report/guidance/team-velocity.md) tracks the total estimated effort (story points or size) of backlog items (user stories or requirements) completed or still in progress within each sprint. </p>
+![Team velocity chart](features/_img/alm-feature-team-velocity-chart.png)  
 
 <br/>
 
 <p><b>Sprint burndown charts</b></p>
 <p>Monitor progress and review team patterns from [sprint burndown charts](../work/scrum/sprint-burndown.md)</p>
-![Sprint burndown chart](_img/alm-index-sprint-burndown-widget.png)  
+![Sprint burndown chart](features/_img/alm-index-sprint-burndown-widget.png)  
 <br/>
 
 <p><b>Add release summary to dashboard (Team Services) </b></p>
-<p>[Add a release summary chart](report/widget-catalog.md#release-definition-widget) to a team dashboard. </p>
+<p>[Add a release summary chart](../report/widget-catalog.md#release-definition-widget) to a team dashboard. </p>
 
 </td>
 <td width="33%">
 <p><b>Edit dashboard mode</b></p>
-<p>Add, remove, move, and configure widgets by [clicking the Edit dashboard icon](report/dashboards.md). Click the checkmark icon to exit.  </p>
-![Edit dashboard icon](report/_img/edit-dashboard-icon.png) | ![Exit dashboard edit mode icon](report/_img/exit-edit-dashboard-mode-icon.png)  
+<p>Add, remove, move, and configure widgets by [clicking the Edit dashboard icon](../report/dashboards.md). Click the checkmark icon to exit.  </p>
+![Edit dashboard icon](../report/_img/edit-dashboard-icon.png) | ![Exit dashboard edit mode icon](../report/_img/exit-edit-dashboard-mode-icon.png)  
 <br/>
 
 <p><b>Auto-refresh dashboards </b></p>
-<p>You can [enable auto-refresh for any team dashboard](report/dashboards.md#manage), and it will automatically update every five minutes. This is a useful feature for when your dashboard serves as a team wallboard.   </p>
+<p>You can [enable auto-refresh for any team dashboard](../report/dashboards.md#manage), and it will automatically update every five minutes. This is a useful feature for when your dashboard serves as a team wallboard.   </p>
 
 
 <p><b>Widget catalog</b></p>
-<p>Add [widgets](report/widget-catalog.md) to your dashboard to provide the information and monitor the data your team needs.   by accessing a growing.</p>
-![add a widget icon](report/_img/add-widget-icon.png)  
+<p>Add [widgets](../report/widget-catalog.md) to your dashboard to provide the information and monitor the data your team needs.   by accessing a growing.</p>
+![add a widget icon](../report/_img/add-widget-icon.png)  
 <br/>
 
 <p><b>Work item query charts</b></p>
-<p>View the status of work in progress by [charting the results of a flat-list query](Report/charts.md). You can create several types of charts&mdash;such as pie, column, or trend&mdash;for the same query. Optionally add these charts to a dashboard.</p>
+<p>View the status of work in progress by [charting the results of a flat-list query](../report/charts.md). You can create several types of charts&mdash;such as pie, column, or trend&mdash;for the same query. Optionally add these charts to a dashboard.</p>
 
 
 
 <p><b>Drag-n-drop layout</b></p>
-<p>Configure the layout to your specifications by [dragging tiles into the sequence you want](report/dashboards.md). </p>
+<p>Configure the layout to your specifications by [dragging tiles into the sequence you want](../report/dashboards.md). </p>
 
 <p><b>Cumulative flow diagrams</b></p>
-<p>Track the progress of work on your backlogs [through the CFD charts](report/guidance/cumulative-flow.md).  </p>
+<p>Track the progress of work on your backlogs [through the CFD charts](../report/guidance/cumulative-flow.md).  </p>
 
 <p><b>Power BI dashboards (Team Services)</b></p>
-<p>You can create dashboards, individual reports, or explore data collected for your Visual Studio Online account once you [connect to Power BI](report/powerbi/report-on-vso-with-power-bi-vs.md). </p>
+<p>You can create dashboards, individual reports, or explore data collected for your Visual Studio Online account once you [connect to Power BI](../report/powerbi/report-on-vso-with-power-bi-vs.md). </p>
 
 
 </td>
@@ -1434,7 +1434,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Get started </b></p>
-<p>You can [create dashboards, individual reports, or explore data](report/powerbi/report-on-vso-with-power-bi-vs.md) collected for your Team Services account once you connect to Power BI. </p>
+<p>You can [create dashboards, individual reports, or explore data](../report/powerbi/report-on-vso-with-power-bi-vs.md) collected for your Team Services account once you connect to Power BI. </p>
 
 
  
@@ -1443,20 +1443,20 @@ Use features supported by these familiar clients to manage your project and illu
 <td width="33%">
 
 <p><b>Connect to Power BI</b></p>
-<p>[Steps required to authorize Power BI to access your Team Services account](report/powerbi/connect-vso-pbi-vs.md).</p>
+<p>[Steps required to authorize Power BI to access your Team Services account](../report/powerbi/connect-vso-pbi-vs.md).</p>
 
 
 <p><b>Available data</b></p>
-<p>The [Power BI data model](report/powerbi/vso-pbi-whats-available-vs.md) currently supports building reports that track status and trends of work items, build, and source code.</p>
+<p>The [Power BI data model](../report/powerbi/vso-pbi-whats-available-vs.md) currently supports building reports that track status and trends of work items, build, and source code.</p>
 
 </td>
 <td width="33%">
 
 <p><b>Create rollup charts</b></p>
-<p>Rollup provides summed values of select fields for all child work items of a parent. You can [create rollups based on counts of work items or selected measures](report/powerbi/create-rollup-charts.md), such as Story Points, Effort, Size for backlog items and Original Estimate, Remaining Work, Completed Work for tasks.</p>
+<p>Rollup provides summed values of select fields for all child work items of a parent. You can [create rollups based on counts of work items or selected measures](../report/powerbi/create-rollup-charts.md), such as Story Points, Effort, Size for backlog items and Original Estimate, Remaining Work, Completed Work for tasks.</p>
 
 <p><b>Create trend charts </b></p>
-<p>[Trend charts show progress or activity over time](report/powerbi/create-trend-charts.md). Common types of trend charts include sprint burndowns or burnups, cumulative flow diagrams, and bug activity..</p>
+<p>[Trend charts show progress or activity over time](../report/powerbi/create-trend-charts.md). Common types of trend charts include sprint burndowns or burnups, cumulative flow diagrams, and bug activity..</p>
 
 
 </td>
@@ -1476,15 +1476,15 @@ Use features supported by these familiar clients to manage your project and illu
 <p>You can [analyze the progress and quality of your project by using the out-of-the-box reports in SQL Server Reporting Services](https://msdn.microsoft.com/library/dd380714.aspx). These reports aggregate metrics from work items, version control, test results, and builds. They are uploaded when you create a team project based on the process - [Agile, Scrum, or CMMI](../work/guidance/choose-process.md) - that you choose.   </p>
 
 <p><b>Add Reporting Services reports</b></p>
-<p>If you need to add reporting services to a team project or on-premises TFS after you've created your team projects, you can by [adding a report server and uploading reports](Report/admin/add-reports-to-a-team-project.md).</p>
+<p>If you need to add reporting services to a team project or on-premises TFS after you've created your team projects, you can by [adding a report server and uploading reports](../report/admin/add-reports-to-a-team-project.md).</p>
 
 <p><b>Manage the data warehouse</b></p>
-<p>The reporting warehouse is a traditional data warehouse that consists of a [relational database and an Analysis Services database](Report/admin/manage-reports-data-warehouse-cube.md). You manage it through the following activities:</p>
+<p>The reporting warehouse is a traditional data warehouse that consists of a [relational database and an Analysis Services database](../report/admin/manage-reports-data-warehouse-cube.md). You manage it through the following activities:</p>
 
-- [Manually process the data warehouse](Report/admin/manually-process-data-warehouse-and-cube.md)  
-- [Rebuild the data warehouse](Report/admin/rebuild-data-warehouse-and-cube.md)  
-- [Resolve schema conflicts](Report/admin/resolve-schema-conflicts.md)  
-- [Change a process control setting](Report/admin/change-a-process-control-setting.md)  
+- [Manually process the data warehouse](../report/admin/manually-process-data-warehouse-and-cube.md)  
+- [Rebuild the data warehouse](../report/admin/rebuild-data-warehouse-and-cube.md)  
+- [Resolve schema conflicts](../report/admin/resolve-schema-conflicts.md)  
+- [Change a process control setting](../report/admin/change-a-process-control-setting.md)  
 <br/>
 </td>
 <td width="33%">
@@ -1510,7 +1510,7 @@ Use features supported by these familiar clients to manage your project and illu
 <br/>
 
 <p><b>Required team activities to generate useful reports</b></p>
-<p>To gain useful, actionable information from your reports, [team members must perform certain activites](Report/admin/review-team-activities-for-useful-reports.md). </p>
+<p>To gain useful, actionable information from your reports, [team members must perform certain activites](../report/admin/review-team-activities-for-useful-reports.md). </p>
 
 
 </td>
@@ -1539,7 +1539,7 @@ Use features supported by these familiar clients to manage your project and illu
 <br/>
 
 <p><b>Set permissions to view or create reports</b></p>
-<p>Enable members of your team to [view or manage Reporting Services reports](Report/admin/grant-permissions-to-reports.md). To create or modify reports, you need to grant them access to read databases. </p>
+<p>Enable members of your team to [view or manage Reporting Services reports](../report/admin/grant-permissions-to-reports.md). To create or modify reports, you need to grant them access to read databases. </p>
 
 
 
@@ -1560,45 +1560,45 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>What is a widget?</b></p>
-<p>You build your dashboards by adding information tiles or widgets. The [widget catalog](report/widget-catalog.md) provides a number of predefined widgets.</p>
+<p>You build your dashboards by adding information tiles or widgets. The [widget catalog](../report/widget-catalog.md) provides a number of predefined widgets.</p>
 
 <p><b>Drag-and-drop widgets</b></p>
-<p>Drag widgets, tiles, or charts anywhere on a dashboard to [configure the layout you want](report/dashboards.md). </p>
+<p>Drag widgets, tiles, or charts anywhere on a dashboard to [configure the layout you want](../report/dashboards.md). </p>
 
 <h4><i>Informational content and other links</i></h4>
 
 
 <p><b>Markdown widget</b></p>
-<p>Adds a configurable tile to your dashboard to [display any type of information, guidance, or links](report/widget-catalog.md#markdown-widget) that you want using markdown syntax.   </p>
-![Markdown widget](_img/alm-feature-markdown-widget.png)  
+<p>Adds a configurable tile to your dashboard to [display any type of information, guidance, or links](../report/widget-catalog.md#markdown-widget) that you want using markdown syntax.   </p>
+![Markdown widget](features/_img/alm-feature-markdown-widget.png)  
 <br/>
 
 
 <p><b>Team member </b></p>
-<p>Opens the team's quick dialog to [add or remove team members](report/widget-catalog.md#team-members-widget).</p>
-![Team member widget](_img/alm-feature-manage-members-widget.png)  
+<p>Opens the team's quick dialog to [add or remove team members](../report/widget-catalog.md#team-members-widget).</p>
+![Team member widget](features/_img/alm-feature-manage-members-widget.png)  
 
 <p><b>Team rooms </b></p>
-<p>Provides [status and access to a team room](report/widget-catalog.md#team-room-widget), an archived space to discuss work in progress, ask questions, share status, and clarify issues that arise.  </p>
+<p>Provides [status and access to a team room](../report/widget-catalog.md#team-room-widget), an archived space to discuss work in progress, ask questions, share status, and clarify issues that arise.  </p>
 
 <p><b>Visual Studio widget</b></p>
-<p>[Provides links to open or download Visual Studio](report/widget-catalog.md#visual-studio-widget). The Visual Studio IDE client comes with the Team Explorer plug-in which provides quick access to several features (some of which aren't available through the web portal). </p>
+<p>[Provides links to open or download Visual Studio](../report/widget-catalog.md#visual-studio-widget). The Visual Studio IDE client comes with the Team Explorer plug-in which provides quick access to several features (some of which aren't available through the web portal). </p>
 
 
 <p><b>Welcome widget</b></p>
-<p>Provides quick access to [getting started info on how to track work, code, build, and test](report/widget-catalog.md#how-to-widget). </p>
-![How to links widget](report/_img/widget-how-to.png)  
+<p>Provides quick access to [getting started info on how to track work, code, build, and test](../report/widget-catalog.md#how-to-widget). </p>
+![How to links widget](../report/_img/widget-how-to.png)  
 <br/>
 
 <h4><i>Code widgets</i></h4>
 
 <p><b>Code tile </b></p>
-<p>Configurable tile to display [status and links to a Git or TFVC code repository, branch, or folder](report/widget-catalog.md#code-tile-widget).
+<p>Configurable tile to display [status and links to a Git or TFVC code repository, branch, or folder](../report/widget-catalog.md#code-tile-widget).
  </p>
 
 <p><b>Pull request </b></p>
-<p>Adds a configurable tile to display [active pull requests requested by the team, or assigned to or requested by the person logged in](report/widget-catalog.md#pull-request-widget). You select the Git repository for the pull requests of interest.  </p>
-![Pull request widget](_img/feature-widget-pull-request.png)
+<p>Adds a configurable tile to display [active pull requests requested by the team, or assigned to or requested by the person logged in](../report/widget-catalog.md#pull-request-widget). You select the Git repository for the pull requests of interest.  </p>
+![Pull request widget](features/_img/feature-widget-pull-request.png)
 
 
 </td>
@@ -1609,35 +1609,35 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Assigned to me widget  </b></p>
-<p>Provides quick access to [work items assigned to the logged in user](report/widget-catalog.md#assigned-to-me-widget). </p>
+<p>Provides quick access to [work items assigned to the logged in user](../report/widget-catalog.md#assigned-to-me-widget). </p>
 
 
 <p><b>Chart for work items</b></p>
-<p>Adds a configurable tile to display the [chart for a shared query](report/widget-catalog.md#chart-wit-widget).  </p>
-![Chart work widget](_img/alm-feature-chart-work.png)  
+<p>Adds a configurable tile to display the [chart for a shared query](../report/widget-catalog.md#chart-wit-widget).  </p>
+![Chart work widget](features/_img/alm-feature-chart-work.png)  
 <br/>
 
 <p><b>New work item </b></p>
-<p>[Add work items](report/widget-catalog.md#new-work-item-widget) pre-scoped to your team's default area and iteration paths.</p>
-![Add new work item widget](_img/alm-feature-new-work-item-widget.png)  
+<p>[Add work items](../report/widget-catalog.md#new-work-item-widget) pre-scoped to your team's default area and iteration paths.</p>
+![Add new work item widget](features/_img/alm-feature-new-work-item-widget.png)  
 <br/>
 
 
 <p><b>Other links widget</b></p>
-<p>Provides quick access links from a team dashboard to [request feedback, define sprints, and modify your team's area paths](report/widget-catalog.md#other-links-widget).</p>
-![Request feedback](_img/alm-feature-widget-other-links.png)  
+<p>Provides quick access links from a team dashboard to [request feedback, define sprints, and modify your team's area paths](../report/widget-catalog.md#other-links-widget).</p>
+![Request feedback](features/_img/alm-feature-widget-other-links.png)  
 <br/>
 
 <p><b>Query tile </b></p>
-<p>Configurable tile to display the [results and link to a shared query](report/widget-catalog.md#query-tile-widget). </p>
-![Query tile widget](_img/alm-feature-widget-query-tile.png)  
+<p>Configurable tile to display the [results and link to a shared query](../report/widget-catalog.md#query-tile-widget). </p>
+![Query tile widget](features/_img/alm-feature-widget-query-tile.png)  
 <br/>
 
 <p><b>Query results </b></p>
-<p>Adds a configurable [query results list](report/widget-catalog.md#query-results-widget) to a team dashboard. </p>
+<p>Adds a configurable [query results list](../report/widget-catalog.md#query-results-widget) to a team dashboard. </p>
 
 <p><b>Requirements quality </b></p>
-<p>Displays a configurable widget that you can use to [track quality continuously from a build or release definition](report/widget-catalog.md#requirements-quality-widget).</p>
+<p>Displays a configurable widget that you can use to [track quality continuously from a build or release definition](../report/widget-catalog.md#requirements-quality-widget).</p>
 
 </td>
 <td width="33%">
@@ -1647,43 +1647,43 @@ Use features supported by these familiar clients to manage your project and illu
 
 <!---
 <p><b>Cumulative flow diagram (Team Services)  </b></p>
-<p>Configurable tile to display the [cumulative flow for a product or portfolio backlog](report/guidance/cumulative-flow.md).
+<p>Configurable tile to display the [cumulative flow for a product or portfolio backlog](../report/guidance/cumulative-flow.md).
 </p>
 -->
 
 <p><b>Sprint burndown </b></p>
-<p>Adds [a burndown chart](report/widget-catalog.md#sprint-burndown-widget) for tracking a team's Scrum progress for the current sprint. </p>
+<p>Adds [a burndown chart](../report/widget-catalog.md#sprint-burndown-widget) for tracking a team's Scrum progress for the current sprint. </p>
 
 
 <p><b>Sprint capacity </b></p>
-<p>Adds [a chart for tracking remaining capacity](report/widget-catalog.md#sprint-capacity-widget) when tracking a team's Scrum progress for the current sprint. </p>
-![Sprint capacity chart](_img/alm-feature-capacity-widget.png)  
+<p>Adds [a chart for tracking remaining capacity](../report/widget-catalog.md#sprint-capacity-widget) when tracking a team's Scrum progress for the current sprint. </p>
+![Sprint capacity chart](features/_img/alm-feature-capacity-widget.png)  
 <br/>
 
 <p><b>Sprint overview </b></p>
-<p>Displays a visual overview of the [current sprint progress](report/widget-catalog.md#sprint-overview-widget) for tracking a team's Scrum progress for the current sprint, indicating the number of backlog items in progress, completed, or not started.</p>
+<p>Displays a visual overview of the [current sprint progress](../report/widget-catalog.md#sprint-overview-widget) for tracking a team's Scrum progress for the current sprint, indicating the number of backlog items in progress, completed, or not started.</p>
 
 <p><b>Work links </b></p>
-<p>Provides quick access links from a team dashboard to open the [team backlog, Kanban board, task board, and queries](report/widget-catalog.md#work-links-widget).   </p>
+<p>Provides quick access links from a team dashboard to open the [team backlog, Kanban board, task board, and queries](../report/widget-catalog.md#work-links-widget).   </p>
 
 
 <h4><i>Build and test widgets</i></h4>
 
 <p><b>Chart for build history </b></p>
-<p>Configurable tile to display the [histogram for a specific build definition](report/widget-catalog.md#build-history-widget).
+<p>Configurable tile to display the [histogram for a specific build definition](../report/widget-catalog.md#build-history-widget).
  </p>
 
 <p><b>Deployment status (Team Services)</b></p>
-<p>Configurable tile that shows you a consolidated view of the [deployment status and test pass rate across multiple environments for a recent set of builds](report/widget-catalog.md#deployment-status-widget).  
+<p>Configurable tile that shows you a consolidated view of the [deployment status and test pass rate across multiple environments for a recent set of builds](../report/widget-catalog.md#deployment-status-widget).  
  </p>
 
 <p><b>Release definition overview</b></p>
-<p>Configurable tile to view and track the status of a release definition. The widget [shows the release as a series of environments, with the name of the release and the date or time it was started](report/widget-catalog.md#release-definition-widget).
+<p>Configurable tile to view and track the status of a release definition. The widget [shows the release as a series of environments, with the name of the release and the date or time it was started](../report/widget-catalog.md#release-definition-widget).
  </p>
 
 <p><b>Test trend results </b></p>
-<p>Provides [trend of test results](report/widget-catalog.md#test-results-widget), such as passed or failed tests, for a selected build definition.</p>
-![Test results trend widget](report/_img/widgets-test-trend-results.png)
+<p>Provides [trend of test results](../report/widget-catalog.md#test-results-widget), such as passed or failed tests, for a selected build definition.</p>
+![Test results trend widget](../report/_img/widgets-test-trend-results.png)
 <br/>
 
 
@@ -1721,7 +1721,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p><b>What is the Marketplace?</b></p>
 <p>From the [Marketplace](https://marketplace.visualstudio.com/), you can extend the functionality available to you by installing free extensions or purchasing a subscription or paid extension. Extensions support adding new capabilities to Visual Studio, Visual Studio Code, Team Services, or TFS.  </p>
 
-![Featured extensions for Team Services](_img/featured-extensions.png)
+![Featured extensions for Team Services](features/_img/featured-extensions.png)
 
 </td>
 <td width="45%">
@@ -1731,7 +1731,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p>[Visual Studio subscriptions](https://www.visualstudio.com/products/how-to-buy-vs) are a way for you to get the Visual Studio IDE, team collaboration benefits like Team Services and TFS, and subscriber benefits like dev/test use of Windows, Windows Server, and SQL Server. </p>
 
 <p><b>Extensions</b></p>
-<p>You can [get and quickly install extensions](marketplace/get-vsts-extensions.md) to add functionality to Visual Studio, Visual Studio Code, or Team Services.</p>
+<p>You can [get and quickly install extensions](../marketplace/get-vsts-extensions.md) to add functionality to Visual Studio, Visual Studio Code, or Team Services.</p>
 
 <p><b>Try extensions for free</b></p>
 <p>You can [start a trial extension for free](../accounts/try-additional-features-vs.md).</p>
@@ -1813,9 +1813,9 @@ the libraries needed by your app or service.</p>
 when events happen in your Visual Studio Online projects</p>
 
 <p><b>Create integrations</b></p>
-<p>Integrate other services like [HipChat](../integrate/get-started/service-hooks/services/hipchat.md),
-[Slack](../integrate/get-started/service-hooks/services/slack.md),
-and [UserVoice](../integrate/get-started/service-hooks/services/uservoice.md) with Team Services
+<p>Integrate other services like [HipChat](../service-hooks/services/hipchat.md),
+[Slack](../service-hooks/services/slack.md),
+and [UserVoice](../service-hooks/services/uservoice.md) with Team Services
 using [service hooks](service-hooks/get-started.md).</p>
 
 
@@ -1823,7 +1823,7 @@ using [service hooks](service-hooks/get-started.md).</p>
 
 <td width="33%">
 
-![service hooks](_img/alm-feature-service-hooks.png)
+![service hooks](features/_img/alm-feature-service-hooks.png)
 
 </td>
 <td width="33%">
@@ -1847,8 +1847,8 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <td width="33%">
 
 <p><b>Web portal preferences </b></p>
-<p><p>Click your name to access [your profile settings](setup-admin/account-preferences.md) and set your web portal preferences which include language (currently only English is supported for Team Services), date and time pattern, and time zone.</p>
-![Profile drop down menu](_img/features-global-profile.png)  
+<p><p>Click your name to access [your profile settings](../accounts/account-preferences.md) and set your web portal preferences which include language (currently only English is supported for Team Services), date and time pattern, and time zone.</p>
+![Profile drop down menu](features/_img/features-global-profile.png)  
 <br/>
 
 
@@ -1950,7 +1950,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 <p><b>Dashboard</b></p>
 <p>Get the full picture with [customizable dashboards that track application health alongside usage metrics and app crashes](https://docs.microsoft.com/azure/application-insights/app-insights-overview). Within the dashboard, you can filter, search, and drill down to an event instance for more detail or to segment data.</p>
-![Application insight dashboard blades](_img/features-app-insights-dashboard-blades.png)  
+![Application insight dashboard blades](features/_img/features-app-insights-dashboard-blades.png)  
 <br/>
 
 
@@ -1995,14 +1995,14 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Get HockeyApp for mobile app development</b></p>
-<p>Distribute mobile apps for testing, collect user metrics and feedback, and respond to crashes more easily by [adding HockeyApp to your Agile, continuous integration, and continuous delivery workflows](marketplace/get-hockeyapp.md). </p>
+<p>Distribute mobile apps for testing, collect user metrics and feedback, and respond to crashes more easily by [adding HockeyApp to your Agile, continuous integration, and continuous delivery workflows](../billing/get-hockeyapp.md). </p>
 
 <p><b>Simplified distribution </b></p>
 <p>[Manage distribution of development and production versions of your apps](http://support.hockeyapp.net/kb/app-management-2/how-to-organize-development-and-production-apps-for-distribution) and use independent bundle identifiers that can run in parallel on the same device.</p>
 
 
 <p><b>Integrate with Team Services and TFS</b></p>
-<p>[Integrate HockeyApp directly in Team Services or TFS](marketplace/get-hockeyapp.md) to upload your Android, iOS, or Windows builds. </p>
+<p>[Integrate HockeyApp directly in Team Services or TFS](../billing/get-hockeyapp.md) to upload your Android, iOS, or Windows builds. </p>
 
 
 
@@ -2013,7 +2013,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p><b>Comprehensive dashboard </b></p>
 <p>Manage all your apps, users, and devices from a single dashboard. Monitor crashes and feedback as well. As an admin, you'll have full control over which user can see and install which app. </p>
 
-![Hockeyapp dashboard](_img/features-hockeyapp-dashboard.png)  
+![Hockeyapp dashboard](features/_img/features-hockeyapp-dashboard.png)  
 <br/>
 
 
@@ -2058,27 +2058,27 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Operational hubs</b></p>
-<p>Each hub&mdash;[Home, Code, Work, build, and Test](connect/work-web-portal.md)&mdash;supports specialized functions to share information, view and create dashboards, collaborate on code, plan and track work, build and test your applications, plus much, much more.</p>
-![Operational hubs](_img/alm-feature-op-hubs-2.png)  
+<p>Each hub&mdash;[Home, Code, Work, build, and Test](../connect/work-web-portal.md)&mdash;supports specialized functions to share information, view and create dashboards, collaborate on code, plan and track work, build and test your applications, plus much, much more.</p>
+![Operational hubs](features/_img/alm-feature-op-hubs-2.png)  
 <br/>
 
 <p><b>Account hub </b></p>
-<p>To view and quickly navigate to teams, team projects, branches, work items, pull requests and other objects that are relevant to you, use your [account hub](connect/account-home-pages.md). </p>
+<p>To view and quickly navigate to teams, team projects, branches, work items, pull requests and other objects that are relevant to you, use your [account hub](../connect/account-home-pages.md). </p>
 
 <p><b>Your profile and preferences</b></p>
-<p>Click your name to access [your profile settings](setup-admin/account-preferences.md), set preferences, [create personal access tokens (Team Services)](git/command-prompt.md#pat), [set alerts](../work/track/alerts-and-notifications.md), and log-in or out.</p>
-![Profile drop down menu](_img/alm-index-my-profile-menu.png)  
+<p>Click your name to access [your profile settings](../accounts/account-preferences.md), set preferences, [create personal access tokens (Team Services)](../git/command-prompt.md#pat), [set alerts](../work/track/alerts-and-notifications.md), and log-in or out.</p>
+![Profile drop down menu](features/_img/alm-index-my-profile-menu.png)  
 <br/>
 
 <p><b>Switch team context</b></p>
 <p>Navigate to a different team or team project from the top row.</p>
-![Switch team context](_img/alm-feature-switch-team-context.png)  
+![Switch team context](features/_img/alm-feature-switch-team-context.png)  
 <br/>
 
 
 <p><b>Change team settings</b></p>
 <p>Customize features to meet your team needs by [configuring your team assets](../work/scale/manage-team-assets.md).</p>
-![Switch team context](_img/alm-feature-team-settings-gear-icon.png)  
+![Switch team context](features/_img/alm-feature-team-settings-gear-icon.png)  
 <br/>
 
 
@@ -2090,35 +2090,35 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Home</b></p>
-<p>Provide team guidance through [Welcome](Reference/markdown-guidance.md) (Markdown format) pages and add team [dashboards](report/dashboards.md) to monitor progress and trends. </p>
+<p>Provide team guidance through [Welcome](Reference/markdown-guidance.md) (Markdown format) pages and add team [dashboards](../report/dashboards.md) to monitor progress and trends. </p>
 
 <p><b>Code</b></p>
-<p>Manage source code using distributed [Git repositories](git/get-started.md) or [Team Foundation version control](https://msdn.microsoft.com/library/ms181384%28v=vs.140%29).  to </p>
+<p>Manage source code using distributed [Git repositories](../git/get-started.md) or [Team Foundation version control](https://msdn.microsoft.com/library/ms181384%28v=vs.140%29).  to </p>
 
 <p><b>Work</b></p>
-<p>Plan and track work by [creating a product backlog](../work/backlogs/create-your-backlog.md), and managing work using [Kanban](../work/kanban/kanban-basics.md) or [Scrum](../work/scrum/sprint-planning.md) processes. Find work items you want to review or update by [creating queries](../work/track/using-queries.md), or visualize progress by [creating query-based charts](report/charts.md)  </p>
+<p>Plan and track work by [creating a product backlog](../work/backlogs/create-your-backlog.md), and managing work using [Kanban](../work/kanban/kanban-basics.md) or [Scrum](../work/scrum/sprint-planning.md) processes. Find work items you want to review or update by [creating queries](../work/track/using-queries.md), or visualize progress by [creating query-based charts](../report/charts.md)  </p>
 
 <p><b>Build</b></p>
-<p>[Define and monitor builds](build/overview.md) and set up continuous builds to improve the quality of your app. </p>
+<p>[Define and monitor builds](../build-release/overview.md) and set up continuous builds to improve the quality of your app. </p>
 
 
 <p><b>Test</b></p>
-<p>[Create and run manual tests](test/manual-exploratory-testing/getting-started/create-a-test-plan.md) and [load tests for your app](test/performance-testing/getting-started/getting-started-with-performance-testing.md).</p>
+<p>[Create and run manual tests](../manual-test/getting-started/create-a-test-plan.md) and [load tests for your app](test/performance-testing/getting-started/getting-started-with-performance-testing.md).</p>
 
 <p><b>Package (Team Services, Preview)</b></p>
-<p>Share code as binary assets and control dependencies by [subscribing to and working with package management feeds](package/what-is-packaging.md).</p>
+<p>Share code as binary assets and control dependencies by [subscribing to and working with package management feeds](../package/what-is-packaging.md).</p>
 
 <p><b>Release (Team Services, Preview)</b></p>
-<p>Manage the release of your app by [deploying it to a specific environment for each separate release step](build/overview.md), and by controlling the process through approvals for each step.</p>
+<p>Manage the release of your app by [deploying it to a specific environment for each separate release step](../build-release/overview.md), and by controlling the process through approvals for each step.</p>
 
 
 <p><b>Code search</b></p>
-<p>[Search within your code branches (TFVC) and repositories (Git)](search/overview.md) to find files, commits, and more using powerful filters to obtain rich results. </p>
-![Search code box](_img/features-index-code-search-vsts.png)  
+<p>[Search within your code branches (TFVC) and repositories (Git)](../search/overview.md) to find files, commits, and more using powerful filters to obtain rich results. </p>
+![Search code box](features/_img/features-index-code-search-vsts.png)  
 <br/>
 <p><b>Find work items</b></p>
 <p>When in the Work hub, [enter IDs or keywords to start a query](../work/track/using-queries.md) to find  work items that you want to review, triage, or update.</p>
-![Search work item box](_img/alm-index-search-work-items-vsts.png)  
+![Search work item box](features/_img/alm-index-search-work-items-vsts.png)  
 <br/>
 
 
@@ -2128,8 +2128,8 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <td width="33%">
 
 <p><b>Collection-project-team structure</b></p>
-<p>The [collection-project-team structure](connect/work-web-portal.md#collection-project-team-structure) provides teams a high-level of autonomy to configure their tools in ways that work for them. It also supports administrative tasks to occur at the appropriate level.</p>
-![Single collection-project-team conceptual image](connect/_img/web-portal-account-project-team-concept.png)
+<p>The [collection-project-team structure](../connect/work-web-portal.md#collection-project-team-structure) provides teams a high-level of autonomy to configure their tools in ways that work for them. It also supports administrative tasks to occur at the appropriate level.</p>
+![Single collection-project-team conceptual image](../connect/_img/web-portal-account-project-team-concept.png)
 <br/>
 
 <p><b>My favorites</b></p>
@@ -2138,14 +2138,14 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 <p><b>Team favorites</b></p>
 <p>From your team context, drag shared queries, builds, and folders to Team favorites to provide quick access to those items. </p>
-![Drag items to team favorites](_img/alm-index-team-favorites.png)  
+![Drag items to team favorites](features/_img/alm-index-team-favorites.png)  
 <br/>
 
 
 
 <p><b>Team project admin context</b></p>
 <p>Open the admin context to [add teams](../work/scale/multiple-teams.md), [configure areas and iterations](../work/customize/modify-areas-iterations.md), and [manage permissions](../tfs-server/admin/change-permission-levels.md). From any team project hub, click the ![gear icon](../work/_img/icons/gear_icon.png) gear icon to open the admin context.</p>
-![Admin context](_img/alm-feature-admin-context.png)  
+![Admin context](features/_img/alm-feature-admin-context.png)  
 <br/>
 
 
@@ -2170,13 +2170,13 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 <p><b>Quick work item search</b></p>
 <p>Find work items based on [ID, assignment, changed date, or keyword](http://msdn.microsoft.com/library/cc668120.aspx). </p>
-![Search work item box](_img/alm-index-search-work-items-vsts.png)  
+![Search work item box](features/_img/alm-index-search-work-items-vsts.png)  
 <br/>
 
 
 <p><b>Code search</b></p>
-<p>[Find code based on keywords and semantic search filters](search/overview.md) across your Git repositories.</p>
-![Search code box](_img/features-index-code-search-vsts.png)  
+<p>[Find code based on keywords and semantic search filters](../search/overview.md) across your Git repositories.</p>
+![Search code box](features/_img/features-index-code-search-vsts.png)  
 
 <p><b>CodeLens search</b></p>
 <p>[Find references and changes to your code, linked bugs, work items, code reviews, and unit tests](http://msdn.microsoft.com/library/dn269218.aspx).</p>
@@ -2198,14 +2198,14 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <td width="33%">
 
 <p><b>Charts</b></p>
-<p>[Turn your queries into a status or trend chart](Report/charts.md) and share them with your team, organization, and stakeholders.</p>
-![Create status and trend charts from flat list queries](_img/alm-feature-test-chart.png)  
+<p>[Turn your queries into a status or trend chart](../report/charts.md) and share them with your team, organization, and stakeholders.</p>
+![Create status and trend charts from flat list queries](features/_img/alm-feature-test-chart.png)  
 <br/>
 
 
 <p><b>Tags</b></p>
 <p>[Add tags to work items](../work/track/add-tags-to-work-items.md) to filter backlogs and queries. Bulk update work items to add or remove tags: [Team Services](../work/backlogs/bulk-modify-work-items.md#tags) | [TFS](../work/office/bulk-add-modify-work-items-excel.md). </p>
-![Add tags to filter backlogs, boards, and queries](_img/alm-feature-tags.png)  
+![Add tags to filter backlogs, boards, and queries](features/_img/alm-feature-tags.png)  
 <br/>
 
 <p
@@ -2259,7 +2259,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 <p><b>Permission states</b></p>
 <p>Understand how [Allow, Deny, Not set and other permissions states](../security/permissions.md#inheritance) control access to features and objects. </p>
-![permission states](_img/alm-feature-permission-states.png)  
+![permission states](features/_img/alm-feature-permission-states.png)  
 <br/>
 
 <p><b>Manage work access (Team Services)</b></p>
@@ -2286,7 +2286,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <li>[TFVC version control source code and folders](../security/permissions.md#tfvc)</li>
 <li>[Build](../security/permissions.md#build)</li>
 <li>[Test](../security/permissions.md#project_test)</li>
-<li>[Release](Release/previous-version/add-users-and-groups.md)</li>
+<li>[Release](../build-release/archive/release/previous-versionprevious-version/add-users-and-groups.md)</li>
 </ul>
 <br/>
 
@@ -2309,7 +2309,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Manage administrative permissions </b></p>
-<p>[Add users to one of the following built-in groups](setup-admin/add-administrator-tfs.md) to provide them permissions assigned to that group: </p>
+<p>[Add users to one of the following built-in groups](../accounts/add-administrator-tfs.md) to provide them permissions assigned to that group: </p>
 <ul>
 <li>Project Administrators, who manage shared features for a team project </li>
 <li>Project Collection Administrators, who manage collection-level features </li>
@@ -2318,7 +2318,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <br/>
 
 <p><b>Restrict access</b></p>
-<p>You can [restrict access to several features and tasks](setup-admin/restrict-access-tfs.md) by setting the permission state to Deny through to individual accounts or a security group.</p>
+<p>You can [restrict access to several features and tasks](../accounts/restrict-access-tfs.md) by setting the permission state to Deny through to individual accounts or a security group.</p>
 
 
 </td>
@@ -2330,7 +2330,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 <p><b>Query permissions</b></p>
 <p>Grant permissions to [create shared queries and query folders](../work/track/set-query-permissions.md).</p>
-![Query permissions](_img/features-query-permissions.png)  
+![Query permissions](features/_img/features-query-permissions.png)  
 <br/>
 
 <p><b>Process permissions</b></p>
@@ -2347,7 +2347,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>Grant permissions to [view and contribute to SharePoint project portals](https://msdn.microsoft.com/library/bb558971.aspx).</p>
 
 <p><b>SQL Server reporting permissions (TFS)</b></p>
-<p>Grant permissions to [view and author Excel and SQL Server reports](report/admin/grant-permissions-to-reports.md).</p>
+<p>Grant permissions to [view and author Excel and SQL Server reports](../report/admin/grant-permissions-to-reports.md).</p>
 
 
 
@@ -2434,7 +2434,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 <p><b>Agile process </b></p>
 <p>Choose [Agile](../work/guidance/agile-process.md) when your team uses Agile planning methods, including Scrum, and tracks development and test activities separately. With Agile, you can track user stories and bugs on the Kanban board, or track bugs and tasks on the task board.</p>
-![Agile process work item types](_img/features-agile-wits.png)  
+![Agile process work item types](features/_img/features-agile-wits.png)  
 <br/>
 
 <p><b>Customize a process (Team Services) </b></p>
@@ -2462,7 +2462,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 <p><b>Scrum process</b></p>
 <p>Choose [Scrum](../work/guidance/scrum-process.md) when your team practices Scrum and you want to track product backlog items (PBIs) and bugs on the Kanban board, or break PBIs and bugs down into tasks on the task board. </p>
-![Scrum process work item types](_img/features-scrum-wits.png)   
+![Scrum process work item types](features/_img/features-scrum-wits.png)   
 <br/>
 
 <p><b>Scrum work items and workflow process guidance</b></p>
@@ -2486,7 +2486,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 <p><b>CMMI process</b></p>
 <p>Choose [CMMI](../work/guidance/cmmi-process.md) when your team follows more formal project methods that require a framework for process improvement and an auditable record of decisions. CMMI supports tracking requirements, change requests, risks, and reviews.</p>
-![CMMI work item types](_img/features-cmmi-wits.png)  
+![CMMI work item types](features/_img/features-cmmi-wits.png)  
 <br/>
 
 
@@ -2558,24 +2558,24 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>What is a team project?</b></p>
-<p>A [team project](setup-admin/create-team-project.md) provides a repository for source code and a place for a group of developers to plan, track progress, and collaborate on building software solutions. A team project lives within a team project collection. You can grant permissions to and customize a team project to support your business needs. </p>
+<p>A [team project](../accounts/create-team-project.md) provides a repository for source code and a place for a group of developers to plan, track progress, and collaborate on building software solutions. A team project lives within a team project collection. You can grant permissions to and customize a team project to support your business needs. </p>
 
 <p><b>Create a team project </b></p>
-<p>You can [create a team project hosted in the cloud (Team Services)](../accounts/connect-to-visual-studio-team-services.md), avoiding maintenance and administrative overhead, or [create a team project on an on-premises TFS](setup-admin/create-team-project.md).</p>
+<p>You can [create a team project hosted in the cloud (Team Services)](../accounts/connect-to-visual-studio-team-services.md), avoiding maintenance and administrative overhead, or [create a team project on an on-premises TFS](../accounts/create-team-project.md).</p>
 
 
 <p><b>Rename a team project</b></p>
-<p>[Rename a team project](setup-admin/rename-team-project.md) as needed to reflect changes that occur within your org.</p>
+<p>[Rename a team project](../accounts/rename-team-project.md) as needed to reflect changes that occur within your org.</p>
 
 <p><b>Delete a team project</b></p>
-<p>Simplify the navigation to team projects that are in use by [deleting team projects you no longer use](setup-admin/delete-team-project.md). </p>
+<p>Simplify the navigation to team projects that are in use by [deleting team projects you no longer use](../accounts/delete-team-project.md). </p>
 
 </td>
 <td width="33%">
 
 <p><b>Collection-project-team structure</b></p>
-<p>The [collection-project-team structure](connect/work-web-portal.md#collection-project-team-structure) provides teams a high-level of autonomy to configure their tools in ways that work for them. It also supports administrative tasks to occur at the appropriate level.</p>
-![Single collection-project-team conceptual image](connect/_img/web-portal-account-project-team-concept.png)
+<p>The [collection-project-team structure](../connect/work-web-portal.md#collection-project-team-structure) provides teams a high-level of autonomy to configure their tools in ways that work for them. It also supports administrative tasks to occur at the appropriate level.</p>
+![Single collection-project-team conceptual image](../connect/_img/web-portal-account-project-team-concept.png)
 <br/>
 
 <p><b>Change the process (Team Services) </b></p>
@@ -2586,7 +2586,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <td width="33%">
 
 <p><b>View your work across teams and team projects (Team Services)</b></p>
-<p>From your [account hub](connect/account-home-pages.md), you can view and quickly navigate to teams, team projects, branches, work items, pull requests and other objects that are relevant to you and that are stored in different team projects within the account collection. </p>
+<p>From your [account hub](../connect/account-home-pages.md), you can view and quickly navigate to teams, team projects, branches, work items, pull requests and other objects that are relevant to you and that are stored in different team projects within the account collection. </p>
 
 <p><b>Customize a team project (TFS) </b></p>
 <p>You customize a team project defined on an on-premises TFS by [modifying definition files for work item types or process configuration, or changing field attributes](../work/customize/customize-work.md).  </p>
@@ -2596,7 +2596,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Upload reports (TFS) </b></p>
-<p>[Upload the latest reports provided for your process](report/admin/upload-reports.md) or add reports after you've already created a team project by adding SQL Server Reporting Services.  </p>
+<p>[Upload the latest reports provided for your process](../report/admin/upload-reports.md) or add reports after you've already created a team project by adding SQL Server Reporting Services.  </p>
 </td>
 </tr>
 </tbody>
@@ -2620,7 +2620,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 <p><b>Add team members</b></p>
 <p>Add accounts--[Team Services](../accounts/add-team-members-vs.md) | [TFS](../work/scale/multiple-teams.md#add-team-members)--to a team to enable users to share code, plan and track work, and access other team assets and resources. </p>
-![Manage users, add team members](_img/alm-feature-manage-members.png)  
+![Manage users, add team members](features/_img/alm-feature-manage-members.png)  
 <br/>
 
 
@@ -2638,8 +2638,8 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <td width="33%">
 
 <p><b>Team dashboards</b></p>
-<p>Share progress, status, and guidance with your team using [configurable team dashboards](report/dashboards.md).  </p>
-![Team dashboards](_img/alm-feature-add-a-dashboard-2.png)   
+<p>Share progress, status, and guidance with your team using [configurable team dashboards](../report/dashboards.md).  </p>
+![Team dashboards](features/_img/alm-feature-add-a-dashboard-2.png)   
 <br/>
 
 <p><b>Team welcome page</b></p>
@@ -2656,7 +2656,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 <p><b>Select team sprints</b></p>
 <p>[Select your team's sprints](../work/scrum/define-sprints.md) to gain access to sprint backlogs and task boards.</p>
-![Set start and end dates for a sprint](_img/features-team-sprints-2.png)  
+![Set start and end dates for a sprint](features/_img/features-team-sprints-2.png)  
 <br/>
 </td>
 <td width="33%">
@@ -2672,7 +2672,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Team rooms</b></p>
-<p>Team rooms, like chat rooms, provide teams with a [space to discuss work in progress, ask questions, share status, and clarify issues](collaborate/collaborate-in-a-team-room.md) that arise. Use team rooms to foster and capture communication among team members, both near and far.</p>
+<p>Team rooms, like chat rooms, provide teams with a [space to discuss work in progress, ask questions, share status, and clarify issues](../collaborate/collaborate-in-a-team-room.md) that arise. Use team rooms to foster and capture communication among team members, both near and far.</p>
 
 
 <p><b>Team groups</b></p>
@@ -2704,7 +2704,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 <p><b>Manage risks and dependencies</b></p>
 <p>Link work items to [track related work, dependencies, and changes made over time](../work/track/link-work-items-support-traceability.md). [Create queries](../work/track/using-queries.md) based on link type to monitor dependencies.</p>
-![Links control](_img/features-wit-link-tab.png)  
+![Links control](features/_img/features-wit-link-tab.png)  
 <br/>
 
 
@@ -2713,7 +2713,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 <p><b>Discussion (Team Services) </b></p>
 <p>[Add or review comments](../work/backlogs/add-work-items.md) added to a work item. Start by clicking the ![Discussions icon](../work/backlogs/_img/icon-discussions-wi.png) discussion icon.  </p>
-![Discussion section](_img/alm-feature-add-work-items-discussion.png)  
+![Discussion section](features/_img/alm-feature-add-work-items-discussion.png)  
 <br/>
 
 
@@ -2725,23 +2725,23 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <td width="50%">
 
 <p><b>Git code changes </b></p>
-<p>[Get detailed information about what changes have been made to your local and centralized branches and repositories](git/get-started.md), compare files and folders, review history of commits and  file changes. </p>
+<p>[Get detailed information about what changes have been made to your local and centralized branches and repositories](../git/get-started.md), compare files and folders, review history of commits and  file changes. </p>
 
 <p><b>Integrate Git development with work tracking (Team Services) </b></p>
 <p>Drive Git development and stay in sync as a team to complete backlog items and tasks using the [Git Development section](../work/backlogs/connect-work-items-to-git-dev-ops.md). Add branches, create pull requests, and view all development performed to support the specific work item.  </p>
-![Work item form Development section](_img/alm-feature-git-dev-section.png)  
+![Work item form Development section](features/_img/alm-feature-git-dev-section.png)  
 <br/>
 <p><b>TFVC code changes </b></p>
 <p>[Get detailed information about what changes have been made to your files](https://msdn.microsoft.com/library/ms245475.aspx), compare files and folders, view where and when changesets have been merged, and view file changes using annotate.</p>
 
 <p><b>Build changes</b></p>
-<p>Determine who [changed what in the build definition and when they did it](build/define/history.md).</p>
+<p>Determine who [changed what in the build definition and when they did it](../build-release/define/history.md).</p>
 
 <p><b>Release audit history</b></p>
-<p>[Retain full audit history](build/actions/view-manage-releases.md#release-history) of all activities performed on a release with detailed release logs and approval tracking.</p>
+<p>[Retain full audit history](../build-release/actions/view-manage-releases.md#release-history) of all activities performed on a release with detailed release logs and approval tracking.</p>
 
 <p><b>Release logs</b></p>
-<p>View or download log files as zip files. Log files contain the status for each step or task of a release, for each of the environments in the release definition. Each completed release--succeeded, failed, or abandoned--[includes a live log file, details, and history for each step or task](build/actions/debug-deployment-issues.md). </p>
+<p>View or download log files as zip files. Log files contain the status for each step or task of a release, for each of the environments in the release definition. Each completed release--succeeded, failed, or abandoned--[includes a live log file, details, and history for each step or task](../build-release/actions/debug-deployment-issues.md). </p>
 
 </td>
 </tr>
