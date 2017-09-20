@@ -2257,7 +2257,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>[Add users to built-in groups](../security/permissions.md) to grant them access to your team project. Optionally, create groups to customize access based on your business requirements.</p>
 
 <p><b>Permission states</b></p>
-<p>Understand how [Allow, Deny, Not set and other permissions states](../security/permissions.md#inheritance) control access to features and objects. </p>
+<p>Understand how [Allow, Deny, Not set and other permissions states](../security/about-permissions.md) control access to features and objects. </p>
 ![permission states](_img/features/alm-feature-permission-states.png)  
 <br/>
 
@@ -2676,7 +2676,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Team groups</b></p>
-<p>A [team group is created](../work/about-teams-and-team-settings.md#team-group) when you create a team. Use this group in queries or to set permissions for your team.  </p>
+<p>A [team group is created](../work/about-teams-and-settings.md#team-group) when you create a team. Use this group in queries or to set permissions for your team.  </p>
 </td>
 </tr>
 </tbody>
