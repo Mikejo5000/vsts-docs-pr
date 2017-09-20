@@ -362,7 +362,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p>You can [remove a custom field and select inherited fields from a work item form](../work/process/customize-process-field.md#remove-field). You can also [relabel the fields](../work/process/customize-process-field.md#rename-field) that appear on the form.   </p>
 
 <p><b>Area path pick lists</b></p>
-<p>Change the [pick list of area paths](../work/customize/modify-areas-iterations.md) to support grouping work items by team, product, or feature area. </p>
+<p>Change the [pick list of area paths](../work/customize/set-area-paths.md) to support grouping work items by team, product, or feature area. </p>
 ![Hierarchical area paths](_img/features/alm-feature-area-paths.png)   
 <br/>
 
@@ -439,7 +439,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Area path pick lists</b></p>
-<p>Change the [pick list of area paths](../work/customize/modify-areas-iterations.md) to support grouping work items by team, product, or feature area. </p>
+<p>Change the [pick list of area paths](../work/customize/set-area-paths.md) to support grouping work items by team, product, or feature area. </p>
 
 <p><b>Sprint/iteration pick lists</b></p>
 <p>Change the [pick list of iteration paths](../work/scrum/define-sprints.md) to support grouping work into sprints, milestones, or other event-specific or time-related period.</p>
@@ -1090,20 +1090,20 @@ Use features supported by these familiar clients to manage your project and illu
 <p><b>Specify your build steps</b></p>
 <p>Add steps to specify what you [want to build](../build-release/tasks/index.md#build), the [tests to run](../build-release/tasks/index.md#test), and [all the other steps](../build-release/tasks/index.md) needed to complete the process.</p>
 
-
-<p>![](../build-release/steps/build/_img/android-build.png)&#160;&#160;[Build an Android app using Gradle](../build-release/steps/build/gradle.md)</p>
-<p>![](../build-release/steps/build/_img/android-signing.png)&#160;&#160;[Sign and align Android APK files](../build-release/steps/build/android-signing.md)</p>
-<p>![](../build-release/steps/build/_img/ant.png)&#160;&#160;[Build with Apache Ant](../build-release/steps/build/ant.md) </p>
-<p>![](../build-release/steps/build/_img/gradle.png)&#160;&#160;[Build using a Gradle wrapper script](../build-release/steps/build/gradle.md)  </p>
-<p>![](../build-release/steps/build/_img/grunt.png)&#160;&#160;[Grunt: The JavaScript Task Runner](../build-release/steps/build/grunt.md) </p>
-<p>![](https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/Gulp/icon.png?raw=true)&#160;&#160;[Gulp: Node.js task-based build system](../build-release/steps/build/gulp.md)</p>
-<p>![](https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/PublishSymbols/icon.png?raw=true)&#160;&#160;[Index source code and publish symbols](../build-release/steps/build/index-sources-publish-symbols.md)</p>
-<p>![](https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/Maven/icon.png?raw=true)&#160;&#160;[Build with Apache Maven](../build-release/steps/build/maven.md)</p>
-<p>![](../build-release/steps/build/_img/msbuild.png)&#160;&#160;[Build with MSbuild](../build-release/steps/build/msbuild.md)</p>
+build-release\tasks\build\_img
+<p>![](../build-release/tasks/build/_img/android-build.png)&#160;&#160;[Build an Android app using Gradle](../build-release/tasks/build/gradle.md)</p>
+<p>![](../build-release/tasks/build/_img/android-signing.png)&#160;&#160;[Sign and align Android APK files](../build-release/tasks/build/android-signing.md)</p>
+<p>![](../build-release/tasks/build/_img/ant.png)&#160;&#160;[Build with Apache Ant](../build-release/tasks/build/ant.md) </p>
+<p>![](../build-release/tasks/build/_img/gradle.png)&#160;&#160;[Build using a Gradle wrapper script](../build-release/tasks/build/gradle.md)  </p>
+<p>![](../build-release/tasks/build/_img/grunt.png)&#160;&#160;[Grunt: The JavaScript Task Runner](../build-release/tasks/build/grunt.md) </p>
+<p>![](https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/Gulp/icon.png?raw=true)&#160;&#160;[Gulp: Node.js task-based build system](../build-release/tasks/build/gulp.md)</p>
+<p>![](https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/PublishSymbols/icon.png?raw=true)&#160;&#160;[Index source code and publish symbols](../build-release/tasks/build/index-sources-publish-symbols.md)</p>
+<p>![](https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/Maven/icon.png?raw=true)&#160;&#160;[Build with Apache Maven](../build-release/tasks/build/maven.md)</p>
+<p>![](../build-release/tasks/build/_img/msbuild.png)&#160;&#160;[Build with MSbuild](../build-release/tasks/build/msbuild.md)</p>
 <p>![](https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/SonarQubePreBuild/icon.png?raw=true)&#160;&#160;[SonarQube for MSbuild](http://go.microsoft.com/fwlink/?LinkId=620063)</p>
-<p>![](../build-release/steps/build/_img/visual-studio-build.png)&#160;&#160;[Visual Studio and MSbuild](../build-release/steps/build/visual-studio-build.md)</p>
-<p>![](../build-release/steps/build/_img/xamarin-android.png)&#160;&#160;[Build an Android app with Xamarin](../build-release/steps/build/xamarin-android.md) </p>
-<p>![](../build-release/steps/build/_img/xamarin-ios.png)&#160;&#160;[Build an iOS app with Xamarin on Mac OS](../build-release/steps/build/xamarin-ios.md) </p>
+<p>![](../build-release/tasks/build/_img/visual-studio-build.png)&#160;&#160;[Visual Studio and MSbuild](../build-release/tasks/build/visual-studio-build.md)</p>
+<p>![](../build-release/tasks/build/_img/xamarin-android.png)&#160;&#160;[Build an Android app with Xamarin](../build-release/tasks/build/xamarin-android.md) </p>
+<p>![](../build-release/tasks/build/_img/xamarin-ios.png)&#160;&#160;[Build an iOS app with Xamarin on Mac OS](../build-release/tasks/build/xamarin-ios.md) </p>
 
 
 <p><b>Build variables</b></p>
@@ -1336,19 +1336,19 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Build history charts</b></p>
-<p>[Add build history charts to your dashboards](../report/add-widget-to-dashboard.md#build-history).  </p>
+<p>[Add build history charts to your dashboards](../report/add-charts-to-dashboard.md#build-history).  </p>
 ![build summary chart](_img/features/alm-feature-build-summary-widget.png)  
  <br/>
 
 
 
 <p><b>Test charts</b></p>
-<p>Track the status of your [test progress and test runs](https://msdn.microsoft.com/library/dn282443.aspx). Optionally add these charts to a dashboard.  </p>
+<p>Track the status of your [test progress and test runs](../manual-test/getting-started/track-test-status.md). Optionally add these charts to a dashboard.  </p>
 ![Test run chart](_img/features/alm-feature-test-chart.png)  
  <br/>
 
 <p><b>Test quality trend charts</b></p>
-<p>Add [failure and duration charts for tests run as part of your build](../report/add-widget-to-dashboard.md#test-quality) to your team dashboard.    </p>
+<p>Add [failure and duration charts for tests run as part of your build](../report/add-charts-to-dashboard.md#test-quality) to your team dashboard. </p>
 ![Test quality failure and duration charts](_img/features/alm-dashboards-test-quality-failure-duration-charts.png)  
  <br/>
 
@@ -1394,7 +1394,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Widget catalog</b></p>
-<p>Add [widgets](../report/widget-catalog.md) to your dashboard to provide the information and monitor the data your team needs.   by accessing a growing.</p>
+<p>Add [widgets](../report/widget-catalog.md) to your dashboard to provide  information and monitor the data your team needs.</p>
 ![add a widget icon](../report/_img/add-widget-icon.png)  
 <br/>
 
@@ -1693,7 +1693,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Dashboard widget SDK  </b></p>
-<p>[Create a dashboard widget](../integrate/extensions/develop/add-dashboard-widget.md) using the REST API service. </p>
+<p>[Create a dashboard widget](../extend/develop/add-dashboard-widget.md) using the REST API service. </p>
 
 </td>
 </tr>
@@ -1808,14 +1808,14 @@ the libraries needed by your app or service.</p>
 
 
 <p><b>Integrate with service hooks</b></p>
-<p>[Service hooks](service-hooks/get-started.md) enable you to perform tasks on other services
+<p>[Service hooks](../service-hooks/overview.md) enable you to perform tasks on other services
 when events happen in your Visual Studio Online projects</p>
 
 <p><b>Create integrations</b></p>
 <p>Integrate other services like [HipChat](../service-hooks/services/hipchat.md),
 [Slack](../service-hooks/services/slack.md),
 and [UserVoice](../service-hooks/services/uservoice.md) with VSTS
-using [service hooks](service-hooks/get-started.md).</p>
+using [service hooks](../service-hooks/overview.md).</p>
 
 
 </td>
@@ -2082,14 +2082,14 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Keyboard shortcuts</b></p>
-<p>Increase your productivity by working with [hot keys and shortcuts](Reference/keyboard-shortcuts.md).</p>
+<p>Increase your productivity by working with [hot keys and shortcuts](../reference/keyboard-shortcuts.md).</p>
 
 </td>
 <td width="33%">
 
 
 <p><b>Home</b></p>
-<p>Provide team guidance through [Welcome](Reference/markdown-guidance.md) (Markdown format) pages and add team [dashboards](../report/dashboards.md) to monitor progress and trends. </p>
+<p>Provide team guidance through [Welcome](../reference/markdown-guidance.md) (Markdown format) pages and add team [dashboards](../report/dashboards.md) to monitor progress and trends. </p>
 
 <p><b>Code</b></p>
 <p>Manage source code using distributed [Git repositories](../git/get-started.md) or [Team Foundation version control](https://msdn.microsoft.com/library/ms181384%28v=vs.140%29).  to </p>
@@ -2143,13 +2143,13 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Team project admin context</b></p>
-<p>Open the admin context to [add teams](../work/scale/multiple-teams.md), [configure areas and iterations](../work/customize/modify-areas-iterations.md), and [manage permissions](../tfs-server/admin/change-permission-levels.md). From any team project hub, click the ![gear icon](../work/_img/icons/gear_icon.png) gear icon to open the admin context.</p>
+<p>Open the admin context to [add teams](../work/scale/multiple-teams.md), [set team defaults](../work/scale/set-team-defaults.md), and [manage permissions](../tfs-server/admin/change-permission-levels.md). From any team project hub, click the ![gear icon](../work/_img/icons/gear_icon.png) gear icon to open the admin context.</p>
 ![Admin context](_img/features/alm-feature-admin-context.png)  
 <br/>
 
 
 <p><b>Project collection admin context</b></p>
-<p>From the collection admin context, you can [manage collection-level permissions](../security/permissions.md), and set build policies, and [manage extensions](../integrate/extensions/overview.md). Click the ![gear icon](../work/_img/icons/gear_icon.png) gear icon to open the admin context and then click DefaultCollection. </p>
+<p>From the collection admin context, you can [manage collection-level permissions](../security/set-project-collection-level-permissions.md), and set build policies, and [manage extensions](../extend/overview.md). Click the ![gear icon](../work/_img/icons/gear_icon.png) gear icon to open the admin context and then click DefaultCollection. </p>
 
 
 </td>
@@ -2262,7 +2262,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <br/>
 
 <p><b>Manage work access (VSTS)</b></p>
-<p>[Control user access with a directory](../accounts/manage-organization-access-for-your-account-vs.md) to enforce policies about accessing company resources.  </p>
+<p>[Control user access with a directory](../accounts/manage-azure-active-directory-groups-vsts.md) to enforce policies about accessing company resources.  </p>
 
 <p><b>Azure Active Directory (VSTS) </b></p>
 <p>Easily control access to your team's critical resources and key business assets with [Azure Active Directory groups](../accounts/manage-azure-active-directory-groups-vsts.md).</p>
@@ -2285,7 +2285,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <li>[Git branches](../git/branch-permissions.md)</li>
 <li>[TFVC source code and folders](../security/set-git-tfvc-repository-permissions.md)</li>
 <li>[Build](../security/set-build-release-permissions.md)</li>
-<li>[Test](../security/(../security/set-project-collection-level-permissions.md))</li>
+<li>[Test](../security/set-project-collection-level-permissions.md))</li>
 <li>[Release](../security/set-build-release-permissions.md)</li>
 </ul>
 <br/>
@@ -2629,7 +2629,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Add a team admin</b></p>
-<p>Add user accounts to the team admin role to enable them to [configure team settings](../work/scale/manage-team-assets.md#add-team-admin). Team settings can only be configured by a team or project admin. </p>
+<p>Add user accounts to the team admin role to enable them to [configure team settings](../work/scale/add-team-administrator.md). Team settings can only be configured by a team or project admin. </p>
 
 
 <p><b>Support stakeholders</b></p>
@@ -2643,7 +2643,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <br/>
 
 <p><b>Team welcome page</b></p>
-<p>Provide in-project guidance through the [Welcome page and other pages you format using Markdown](Reference/markdown-guidance.md).  </p>
+<p>Provide in-project guidance through the [Welcome page and other pages you format using Markdown](../reference/markdown-guidance.md).  </p>
 
 
 
@@ -2753,13 +2753,12 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 ##Related notes
 
 We add new features frequently. We'll work to keep this list up-to-date. Other resources you might want to bookmark:
-- [MSDN Library](https://msdn.microsoft.com/library/vs/alm/fda2bad5.aspx) for the full set of VSTS and TFS content
-- [VSTS - Features update](https://www.visualstudio.com/news/release-archive-vso)  
-- [Microsoft devops blog](http://blogs.msdn.com/b/visualstudioalm/)  
-- [Brian Harry's blog](http://blogs.msdn.com/b/visualstudioalm/)   
+- [VSTS - Features update](https://docs.microsoft.com/vsts/release-notes/index)  
+- [Microsoft devops blog](https://blogs.msdn.microsoft.com/devops/)  
+- [Brian Harry's blog](https://blogs.msdn.microsoft.com/bharry/)   
 
 <br/>
-Get started today using our cloud offering, [VSTS](overview.md), or our [on-premises TFS server](https://www.visualstudio.com/products/visual-studio-2015-downloads-vs).  
+Get started today using our cloud offering, [VSTS](https://www.visualstudio.com/team-services/), or our [on-premises TFS server](https://www.visualstudio.com/downloads/).  
 
 
 ###We welcome your feedback
