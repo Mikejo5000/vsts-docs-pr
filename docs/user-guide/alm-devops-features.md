@@ -484,7 +484,7 @@ Use features supported by these familiar clients to manage your project and illu
 <br/>
 
 <p><b>Drag-n-drop</b></p>
-<p>[Drag and drop items](../work/kanban/kanban-basics.md#reorder-cards) on the Kanban board to update status and to reorder and reparent items.  </p>
+<p>[Drag and drop items](../work/customize/reorder-cards.md) on the Kanban board to update status and to reorder and reparent items.  </p>
 
 <p><b>Add task checklists</b></p>
 <p>Add and mark tasks as done with [lightweight tasks checklists](../work/kanban/add-task-checklists.md). </p>
@@ -552,13 +552,13 @@ Use features supported by these familiar clients to manage your project and illu
 <p>Add and mark user stories and other work items as done from your [Kanban features or epics boards](../work/kanban/kanban-epics-features-stories.md). </p>
 
 <p><b>Set team's card reorder preference </b></p>
-<p>You can preserve the backlog priority when you move a card to a new column by setting your team's [Kanban board card reordering setting](../work/kanban/kanban-basics.md#card-reorder-setting).  </p>
+<p>You can preserve the backlog priority when you move a card to a new column by setting your team's [Kanban board card reordering setting](../work/customize/reorder-cards.md).  </p>
 
 <p><b>Enable/disable card annotations</b></p>
-<p>Turn on or off [task checklists or inline tests](./work/customize/customize-cards.md#annotations) for your Kanban board. </p>
+<p>Turn on or off [task checklists or inline tests](../work/customize/customize-cards.md#annotations) for your Kanban board. </p>
 
 <p><b>Configure inline tests</b></p>
-<p>Configure how new inline tests are added to the Kanban board: [create a new test plan/test suite or choose an existing test plan](./work/customize/customize-cards.md#tests). </p>
+<p>Configure how new inline tests are added to the Kanban board: [create a new test plan/test suite or choose an existing test plan](../work/customize/customize-cards.md#tests). </p>
 
 </td>
 
@@ -1070,7 +1070,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p>Start from a build template and customize your build from there. Build for [Windows](../build-release/get-started/dot-net.md), [iOS](../build-release/apps/mobile/xcode-ios.md), Android, Java (Ant, Maven, or Gradle), or Linux using the same domain-specific languages you use every day on your dev machine. [Build Xamarin apps](../build-release/apps/mobile/xamarin.md) for both iOS and Android and run tests on Xamarin's Test Cloud as part of the build.</p>
 
 <p><b>Customize build process using scripts</b></p>
-<p>[Use a script](../build-release/scripts/index.md) to add your team's business logic to your build process.</p>
+<p>[Use a script](../build-release/actions/scripts/powershell.md) to add your team's business logic to your build process.</p>
 
 
 <p><b>Build agents and agent pools </b></p>
@@ -1078,7 +1078,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Gated check-in (TFVC, VSTS) </b></p>
-<p>Use [gated check-in](../build-release/define/triggers.md#gated) to protect against breaking changes when checking code into TFVC.  </p>
+<p>Use [gated check-in](../build-release/concepts/definitions/build/triggers.md#gated) to protect against breaking changes when checking code into TFVC.  </p>
 
 
 <p><b>Branch policies (Git)</b></p>
@@ -1088,7 +1088,7 @@ Use features supported by these familiar clients to manage your project and illu
 </td>
 <td width="38%">
 <p><b>Specify your build steps</b></p>
-<p>Add steps to specify what you [want to build](../build-release/define/build.md#build), the [tests to run](../build-release/define/build.md#test), and [all the other steps](../build-release/define/build.md) needed to complete the process.</p>
+<p>Add steps to specify what you [want to build](../build-release/tasks/index.md#build), the [tests to run](../build-release/tasks/index.md#test), and [all the other steps](../build-release/tasks/index.md) needed to complete the process.</p>
 
 
 <p>![](../build-release/steps/build/_img/android-build.png)&#160;&#160;[Build an Android app using Gradle](../build-release/steps/build/gradle.md)</p>
@@ -1115,7 +1115,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Continuous integration builds</b></p>
-<p>[Define a CI build](../build-release/define/triggers.md#ci) that compiles and tests your solutions whenever your team checks in code.</p>
+<p>[Define a CI build](../build-release/concepts/definitions/build/triggers.md#ci) that compiles and tests your solutions whenever your team checks in code.</p>
 
 
 <p><b>Build summary charts</b></p>
@@ -1259,11 +1259,11 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Performance and load testing  </b></p>
-<p>Understand and fix performance issues before they impact your business by [running performance tests on your apps](test/performance-testing/getting-started/getting-started-with-performance-testing.md).</p>
+<p>Understand and fix performance issues before they impact your business by [running performance tests on your apps](../load-test/getting-started-with-performance-testing.md).</p>
 
 
 <p><b>Cloud-based load tests</b></p>
-<p>Find performance problems in your app before customers do with [cloud-based load tests](test/performance-testing/getting-started/get-started-simple-cloud-load-test.md).</p>
+<p>Find performance problems in your app before customers do with [cloud-based load tests](../build-release/test/get-started-simple-cloud-load-test.md).</p>
 
 
 </td>
@@ -1289,7 +1289,7 @@ Use features supported by these familiar clients to manage your project and illu
 <td width="33%">
 
 <p><b>Exploratory testing</b></p>
-<p>Explore user stories without test cases or test steps using [Test Manager and exploratory testing](https://msdn.microsoft.com/library/hh191621.aspx).</p>
+<p>Explore user stories without test cases or test steps using [Test Manager and exploratory testing](../manual-test/index.md).</p>
 ![Exploratory testing](_img/features/features-exploratory-testing.png)  
 <br/>
 <p>Or, [download and install the Test &amp; Feedback extension](../manual-test/getting-started/perform-exploratory-tests.md). Capture screenshots, annotate them, and submit bugs while you explore your web app - all directly from your Chrome browser. </p>
@@ -1309,7 +1309,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p>[Specify a combination of hardware and software](../manual-test/test-different-configurations.md) that represents a user or machine environment in which your app will run.</p>
 
 <p><b>Test permissions</b></p>
-<p>Set permissions on who can [manage test configurations, test environments, and publish and delete test results](../security/permissions.md#project_test).</p>
+<p>Set permissions on who can [manage test configurations, test environments, and publish and delete test results](../security/set-project-collection-level-permissions.md).</p>
 
 
 
@@ -2281,11 +2281,12 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p><b>DevOps permissions</b></p>
 <p>Grant or restrict access to: </p>
 <ul>
-<li>[Git repositories and branches](../security/permissions.md#git-repo)</li>
-<li>[TFVC version control source code and folders](../security/permissions.md#tfvc)</li>
-<li>[Build](../security/permissions.md#build)</li>
-<li>[Test](../security/permissions.md#project_test)</li>
-<li>[Release](../build-release/archive/release/previous-versionprevious-version/add-users-and-groups.md)</li>
+<li>[Git repositories](../security/set-git-tfvc-repository-permissions.md)</li>
+<li>[Git branches](../git/branch-permissions.md)</li>
+<li>[TFVC source code and folders](../security/set-git-tfvc-repository-permissions.md)</li>
+<li>[Build](../security/set-build-release-permissions.md)</li>
+<li>[Test](../security/(../security/set-project-collection-level-permissions.md))</li>
+<li>[Release](../security/set-build-release-permissions.md)</li>
 </ul>
 <br/>
 
@@ -2298,7 +2299,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <li>[Work item tags](../security/permissions.md#tags)</li>
 <li>[Move work items to another team project](../work/backlogs/remove-delete-work-items.md#move-delete-permissions)</li>
 <li>[Permanently delete work items](../work/backlogs/remove-delete-work-items.md#move-delete-permissions)</li>
-<li>[Provide feedback through the Microsoft Feedback client](https://msdn.microsoft.com/Library/vs/alm/Work/connect/give-permissions-feedback)</li>
+<li>[Provide feedback through the Microsoft Feedback client](../feedback/give-permissions-feedback.md)</li>
 </ul>
 <br/>
 
@@ -2308,11 +2309,11 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Manage administrative permissions </b></p>
-<p>[Add users to one of the following built-in groups](../accounts/add-administrator-tfs.md) to provide them permissions assigned to that group: </p>
+<p>[Add users to one of the following built-in groups] to provide them permissions assigned to that group: </p>
 <ul>
-<li>Project Administrators, who manage shared features for a team project </li>
-<li>Project Collection Administrators, who manage collection-level features </li>
-<li>Team Foundation Server Administrators, who manage on-premises application servers </li>
+<li>[Project Administrators](../security/set-project-collection-level-permissions.md), who manage shared features for a team project </li>
+<li>[Project Collection Administrators](../security/set-project-collection-level-permissions.md), who manage collection-level features </li>
+<li>[Team Foundation Server Administrators](../tfs-server/add-administrator-tfs.md), who manage on-premises application servers </li>
 </ul>
 <br/>
 
