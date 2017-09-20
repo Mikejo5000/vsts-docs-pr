@@ -57,9 +57,9 @@ To learn how to connect, see [Connect to a team project](../connect/connect-team
 <br/>
 <p><b>Office integration clients</b></p>
 Use features supported by these familiar clients to manage your project and illustrate your requirements.  
-- [Excel](../work/office/bulk-add-modify-work-items-excel.md)  
-- [Project](https://msdn.microsoft.com/library/ms181675.aspx)  
-- [PowerPoint - Storyboarding](../work/office/storyboard-your-ideas-using-powerpoint.md)   
+- [Excel](../work/backlogs/office/bulk-add-modify-work-items-excel.md)  
+- [Project](../work/backlogs/office/create-your-backlog-tasks-using-project.md)  
+- [PowerPoint - Storyboarding](../work/backlogs/office/storyboard-your-ideas-using-powerpoint.md)   
 
 
 </td>
@@ -132,7 +132,7 @@ Use features supported by these familiar clients to manage your project and illu
  <br/>
 
 <p><b>Storyboard</b></p>
-<p>Visualize your ideas and user stories and support greater understanding of them by [storyboarding them with PowerPoint](../work/office/storyboard-your-ideas-using-powerpoint.md), also link your storyboards to your backlog work items.  </p>
+<p>Visualize your ideas and user stories and support greater understanding of them by [storyboarding them with PowerPoint](../work/backlogs/office/storyboard-your-ideas-using-powerpoint.md), also link your storyboards to your backlog work items.  </p>
 
 
 
@@ -204,10 +204,10 @@ Use features supported by these familiar clients to manage your project and illu
  <br/>
 
 <p><b>Bulk modify</b></p>
-<p>Quickly change one or more fields in several work items using [bulk modify in the web portal](../work/backlogs/bulk-modify-work-items.md) or [bulk modify using Excel](../work/office/bulk-add-modify-work-items-excel.md). </p>
+<p>Quickly change one or more fields in several work items using [bulk modify in the web portal](../work/backlogs/bulk-modify-work-items.md) or [bulk modify using Excel](../work/backlogs/office/bulk-add-modify-work-items-excel.md). </p>
 
 <p><b>Copy or clone a work item</b></p>
-<p>[Copy an existing work item](../work/backlogs/copy-clone-work-items.md#copy-clone) or bulk copy several using [Excel](../work/office/bulk-add-modify-work-items-excel.md).</p>
+<p>[Copy an existing work item](../work/backlogs/copy-clone-work-items.md#copy-clone) or bulk copy several using [Excel](../work/backlogs/office/bulk-add-modify-work-items-excel.md).</p>
 ![Copy or clone a work item](_img/features/alm-index-copy-clone-work-item.png)  
  <br/>
 
@@ -1263,7 +1263,7 @@ build-release\tasks\build\_img
 
 
 <p><b>Cloud-based load tests</b></p>
-<p>Find performance problems in your app before customers do with [cloud-based load tests](../build-release/test/get-started-simple-cloud-load-test.md).</p>
+<p>Find performance problems in your app before customers do with [cloud-based load tests](../load-test/get-started-simple-cloud-load-test.md).</p>
 
 
 </td>
@@ -1733,7 +1733,7 @@ build-release\tasks\build\_img
 <p>You can [get and quickly install extensions](../marketplace/get-vsts-extensions.md) to add functionality to Visual Studio, Visual Studio Code, or VSTS.</p>
 
 <p><b>Try extensions for free</b></p>
-<p>You can [start a trial extension for free](../accounts/try-additional-features-vs.md).</p>
+<p>You can [start a trial extension for free](../billing/try-additional-features-vs.md).</p>
 
 
 <p><b>Get extensions for...</b></p>
@@ -1771,7 +1771,7 @@ build-release\tasks\build\_img
 <p>Get authorization from your customers to access VSTS resources using [OAuth 2.0](../integrate/get-started/Authentication/oauth.md).</p>
 
 <p><b>REST API reference</b></p>
-<p>Use the [REST APIs](../integrate/api/overview.md) to work with VSTS and TFS resources.</p>
+<p>Use the [REST APIs](../integrate/index.md) to work with VSTS and TFS resources.</p>
 
 </td>
 <td width="33%">
@@ -1828,7 +1828,7 @@ using [service hooks](../service-hooks/overview.md).</p>
 <td width="33%">
 
 <p><b>Authorize</b></p>
-<p>[Authorize](service-hooks/authorize.md) other services to access your VSTS account using the industry standard OAuth 2.0.
+<p>[Authorize](../service-hooks/authorize.md) other services to access your VSTS account using the industry standard OAuth 2.0.
 Oauth 2.0 provides safe, secure access to your resources like work items, source code and build results by those other services.</p>
 
 </td>
@@ -2102,7 +2102,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Test</b></p>
-<p>[Create and run manual tests](../manual-test/getting-started/create-a-test-plan.md) and [load tests for your app](test/performance-testing/getting-started/getting-started-with-performance-testing.md).</p>
+<p>[Create and run manual tests](../manual-test/getting-started/create-a-test-plan.md) and [load tests for your app](../load-test/getting-started-with-performance-testing.md).</p>
 
 <p><b>Package (VSTS, Preview)</b></p>
 <p>Share code as binary assets and control dependencies by [subscribing to and working with package management feeds](../package/what-is-packaging.md).</p>
@@ -2191,7 +2191,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Bulk add or modify using Excel </b></p>
-<p>[Bulk add items to track or modify multiple field values](../work/office/bulk-add-modify-work-items-excel.md) using Excel.</p>
+<p>[Bulk add items to track or modify multiple field values](../work/backlogs/office/bulk-add-modify-work-items-excel.md) using Excel.</p>
 
 </td>
 <td width="33%">
@@ -2203,7 +2203,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Tags</b></p>
-<p>[Add tags to work items](../work/track/add-tags-to-work-items.md) to filter backlogs and queries. Bulk update work items to add or remove tags: [VSTS](../work/backlogs/bulk-modify-work-items.md#tags) | [TFS](../work/office/bulk-add-modify-work-items-excel.md). </p>
+<p>[Add tags to work items](../work/track/add-tags-to-work-items.md) to filter backlogs and queries. Bulk update work items to add or remove tags: [VSTS](../work/backlogs/bulk-modify-work-items.md#tags) | [TFS](../work/backlogs/office/bulk-add-modify-work-items-excel.md). </p>
 ![Add tags to filter backlogs, boards, and queries](_img/features/alm-feature-tags.png)  
 <br/>
 
@@ -2294,11 +2294,11 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>Control access to specific features by setting permissions for a user or group.</p>
 
 <ul>
-<li>[Area and iteration paths](../work/customize/modify-areas-iterations.md#set-permissions)</li>
+<li>[Area and iteration paths](../work/how-to/set-permissions-access-work-tracking.md)</li>
 <li>[Query permissions](../work/track/set-query-permissions.md)</li>
 <li>[Work item tags](../security/permissions.md#tags)</li>
-<li>[Move work items to another team project](../work/backlogs/remove-delete-work-items.md#move-delete-permissions)</li>
-<li>[Permanently delete work items](../work/backlogs/remove-delete-work-items.md#move-delete-permissions)</li>
+<li>[Move work items to another team project](../work/how-to/set-permissions-access-work-tracking.md#move-delete-permissions)</li>
+<li>[Permanently delete work items](../work/how-to/set-permissions-access-work-tracking.md#move-delete-permissions)</li>
 <li>[Provide feedback through the Microsoft Feedback client](../feedback/give-permissions-feedback.md)</li>
 </ul>
 <br/>
@@ -2337,7 +2337,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>To customize a process, add custom fields, or change the layout of a work item form, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to edit a specific process](../work/process/manage-process.md#process-permissions).  </p>
 
 <p><b>Valid users</b></p>
-<p>Understand how [valid user groups are populated and the permissions they're granted](../security/permissions.md#validusers).</p>
+<p>Understand how [valid user groups are populated and the permissions they're granted](../security/about-permissions.md#validusers).</p>
 
 
 <p><b>Permission reference</b></p>
@@ -2561,7 +2561,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>A [team project](../accounts/create-team-project.md) provides a repository for source code and a place for a group of developers to plan, track progress, and collaborate on building software solutions. A team project lives within a team project collection. You can grant permissions to and customize a team project to support your business needs. </p>
 
 <p><b>Create a team project </b></p>
-<p>You can [create a team project hosted in the cloud (VSTS)](../accounts/connect-to-visual-studio-team-services.md), avoiding maintenance and administrative overhead, or [create a team project on an on-premises TFS](../accounts/create-team-project.md).</p>
+<p>You can [create a team project hosted in the cloud (VSTS)](sign-up-invite-teammates.md), avoiding maintenance and administrative overhead, or [create a team project on an on-premises TFS](../accounts/create-team-project.md).</p>
 
 
 <p><b>Rename a team project</b></p>
@@ -2676,7 +2676,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Team groups</b></p>
-<p>A [team group is created](../work/scale/multiple-teams.md#team-group) when you create a team. Use this group in queries or to set permissions for your team.  </p>
+<p>A [team group is created](../work/about-teams-and-team-settings.md#team-group) when you create a team. Use this group in queries or to set permissions for your team.  </p>
 </td>
 </tr>
 </tbody>
@@ -2718,7 +2718,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Storyboard</b></p>
-<p>[Link your storyboards to you backlog work items](../work/office/storyboard-your-ideas-using-powerpoint.md).  </p>
+<p>[Link your storyboards to you backlog work items](../work/backlogs/office/storyboard-your-ideas-using-powerpoint.md).  </p>
 
 </td>
 
