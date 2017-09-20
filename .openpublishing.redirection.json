@@ -2735,6 +2735,11 @@
             "source_path": "docs/work/office/track-work-vsts-tfs.md",
             "redirect_url": "/vsts/work/backlogs/office/track-work-vsts-tfs",
             "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/alm-devops-features.md",
+            "redirect_url": "/vsts/user-guide/alm-devops-features",
+            "redirect_document_id": false
        }
     ]
 }
