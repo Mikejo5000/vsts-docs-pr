@@ -13,7 +13,7 @@ ms.date: 07/12/2017
 
 # Features
 
-[!INCLUDE [temp](./work/_shared/dev15-version-header.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 Use this end-to-end feature index to learn about all the features available to help you plan and track your projects and code, build, test, and release your software applications.  
 
@@ -57,9 +57,9 @@ To learn how to connect, see [Connect to a team project](connect/connect-team-pr
 <br/>
 <p><b>Office integration clients</b></p>
 Use features supported by these familiar clients to manage your project and illustrate your requirements.  
-- [Excel](work/office/bulk-add-modify-work-items-excel.md)  
+- [Excel](../work/office/bulk-add-modify-work-items-excel.md)  
 - [Project](https://msdn.microsoft.com/library/ms181675.aspx)  
-- [PowerPoint - Storyboarding](work/office/storyboard-your-ideas-using-powerpoint.md)   
+- [PowerPoint - Storyboarding](../work/office/storyboard-your-ideas-using-powerpoint.md)   
 
 
 </td>
@@ -67,38 +67,38 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Manage users and groups</b></p>
-<p>Add members to your team project adds them to the Contributor group. When managing a large group of users, use [built-in groups to manage users and their permissions](setup-admin/permissions.md).</p>
+<p>Add members to your team project adds them to the Contributor group. When managing a large group of users, use [built-in groups to manage users and their permissions](../security/permissions.md).</p>
 <br/>
 <p><b>Add team members </b></p>
-<p>To share and contribute to your project, add user accounts to [Team Services](setup-admin/team-services/add-team-members-vs.md) or your [TFS](work/scale/multiple-teams.md#add-team-members).</p>
+<p>To share and contribute to your project, add user accounts to [Team Services](../accounts/add-team-members-vs.md) or your [TFS](../work/scale/multiple-teams.md#add-team-members).</p>
 ![Manage users, add team members](_img/alm-feature-manage-members.png)  
 <br/>
 
 <p><b>Azure Active Directory (AAD) (Team Services)</b></p>
-<p>Control who can access your team's critical resources and key business assets by [managing access with Azure Active Directory groups](setup-admin/team-services/manage-azure-active-directory-groups-visual-studio-team-services.md). </p>
+<p>Control who can access your team's critical resources and key business assets by [managing access with Azure Active Directory groups](../accounts/manage-azure-active-directory-groups-visual-studio-team-services.md). </p>
 
 </td>
 <td width="30%">
 
 
 <p><b>Access levels</b></p>
-<p>All users that you add to your Team Services account or to your TFS team project have access to Basic features by default, except [Stakeholders](work/connect/work-as-a-stakeholder.md) who have access to a limited set of features, or those added to the Advanced access level in TFS.</p>
-- [Manage users (Team Services)](setup-admin/team-services/add-account-users-assign-access-levels-team-services.md)   
-- [Change access levels (TFS)](work/connect/change-access-levels.md)  
+<p>All users that you add to your Team Services account or to your TFS team project have access to Basic features by default, except [Stakeholders](../work/connect/work-as-a-stakeholder.md) who have access to a limited set of features, or those added to the Advanced access level in TFS.</p>
+- [Manage users (Team Services)](../accounts/add-account-users-assign-access-levels-team-services.md)   
+- [Change access levels (TFS)](../work/connect/change-access-levels.md)  
 <br/>
 <p><b>Permissions</b></p>
 <p>Control access to specific features by setting permissions for a user or group.</p>
 
-- [Area and iteration paths](work/customize/modify-areas-iterations.md#set-permissions)  
-- [Build](setup-admin/permissions.md#collection)  
-- [Code - Git](setup-admin/permissions.md#git-repo)  
-- [Code - TFVC](setup-admin/permissions.md#tfvc)  
+- [Area and iteration paths](../work/customize/modify-areas-iterations.md#set-permissions)  
+- [Build](../security/permissions.md#collection)  
+- [Code - Git](../security/permissions.md#git-repo)  
+- [Code - TFVC](../security/permissions.md#tfvc)  
 - [Dashboards](report/dashboards.md#manage)   
-- [Queries](work/track/set-query-permissions.md)   
+- [Queries](../work/track/set-query-permissions.md)   
 - [Release Management](build/concepts/policies/permissions.md#release-permissions)  
-- [Team admin role](work/scale/manage-team-assets.md)  
-- [Test](setup-admin/permissions.md#project_test)  
-- [Work item tags](setup-admin/permissions.md#tags)  
+- [Team admin role](../work/scale/manage-team-assets.md)  
+- [Test](../security/permissions.md#project_test)  
+- [Work item tags](../security/permissions.md#tags)  
 - [Restrict access](setup-admin/restrict-access-tfs.md)   
 
 </td>
@@ -119,21 +119,21 @@ Use features supported by these familiar clients to manage your project and illu
 <td width="320">
 
 <p><b>Create your backlog</b></p>
-<p>Plan your project by [adding a work item for each user story or requirement](work/backlogs/create-your-backlog.md) you plan to develop.  </p>
+<p>Plan your project by [adding a work item for each user story or requirement](../work/backlogs/create-your-backlog.md) you plan to develop.  </p>
 ![Build your backlog of user stories and requirements](_img/features-quick-add-panel.png)  
  <br/>
 
 
 <p><b>Organize your backlog</b></p>
-<p>[Group items into a hierarchical list using portfolio backlogs](work/backlogs/organize-backlog.md) and quickly reorder and re-parent items to effectively manage your deliverables. </p>
+<p>[Group items into a hierarchical list using portfolio backlogs](../work/backlogs/organize-backlog.md) and quickly reorder and re-parent items to effectively manage your deliverables. </p>
 
 <p><b>Forecast</b></p>
 
-<p>Use the [forecast](work/scrum/forecast.md) tool to estimate work to be completed in future sprints. </p>
+<p>Use the [forecast](../work/scrum/forecast.md) tool to estimate work to be completed in future sprints. </p>
  <br/>
 
 <p><b>Storyboard</b></p>
-<p>Visualize your ideas and user stories and support greater understanding of them by [storyboarding them with PowerPoint](work/office/storyboard-your-ideas-using-powerpoint.md), also link your storyboards to your backlog work items.  </p>
+<p>Visualize your ideas and user stories and support greater understanding of them by [storyboarding them with PowerPoint](../work/office/storyboard-your-ideas-using-powerpoint.md), also link your storyboards to your backlog work items.  </p>
 
 
 
@@ -142,46 +142,46 @@ Use features supported by these familiar clients to manage your project and illu
 </td>
 <td width="320">
 <p><b>Move work item to a different team project (Team Services)</b></p>
-<p>Choose the ![Change team project icon](work/_img/icons/change-team-project-icon.png) Change team project menu option ![Actions icon](work/_img/icons/actions-icon.png) Actions menu in a work item form to [move the work item to a different team project](work/backlogs/remove-delete-work-items.md#move). </p>
+<p>Choose the ![Change team project icon](../work/_img/icons/change-team-project-icon.png) Change team project menu option ![Actions icon](../work/_img/icons/actions-icon.png) Actions menu in a work item form to [move the work item to a different team project](../work/backlogs/remove-delete-work-items.md#move). </p>
 
 <p><b>Full screen mode</b></p>
-<p>Click ![full screen icon](work/_img/icons/fullscreen_icon.png) or ![exit full screen icon](work/_img/icons/exitfullscreen_icon.png)  to enter or exit full screen mode.  </p>
+<p>Click ![full screen icon](../work/_img/icons/fullscreen_icon.png) or ![exit full screen icon](../work/_img/icons/exitfullscreen_icon.png)  to enter or exit full screen mode.  </p>
 
 
 <p><b>Backlog and board settings</b></p>
-<p>Click ![Settings icon](work/_img/icons/team-settings-gear-icon.png)  to configure team backlogs and boards, including [show bugs on backlogs and boards](work/customize/show-bugs-on-backlog.md) and [set team backlog levels](work/customize/select-backlog-navigation-levels.md).  </p>
+<p>Click ![Settings icon](../work/_img/icons/team-settings-gear-icon.png)  to configure team backlogs and boards, including [show bugs on backlogs and boards](../work/customize/show-bugs-on-backlog.md) and [set team backlog levels](../work/customize/select-backlog-navigation-levels.md).  </p>
 ![Backlog and board settings](_img/alm-feature-team-settings-gear-icon.png)  
 <br/>
 
 
 
 <p><b>View portfolio backlog hierarchy</b></p>
-<p>Use [**Parents Show/Hide**](work/backlogs/organize-backlog.md) to drill down into the backlog hierarchy.   </p>
+<p>Use [**Parents Show/Hide**](../work/backlogs/organize-backlog.md) to drill down into the backlog hierarchy.   </p>
 
 
 <p><b>Multi-team backlog ownership</b></p>
-<p>Easily view and track items [owned by other teams](work/backlogs/work-multi-team-ownership-backlogs.md) and quickly reorder and re-parent items to effectively manage your backlog. </p>
+<p>Easily view and track items [owned by other teams](../work/backlogs/work-multi-team-ownership-backlogs.md) and quickly reorder and re-parent items to effectively manage your backlog. </p>
 
 
 </td>
 
 <td width="30%">
 <p><b>Change work item type (Team Services)</b></p>
-<p>If you've added a task instead of a bug and want to change the work item type to bug, you can. Choose the ![Change type icon](work/_img/icons/change-type-icon.png) Change type option from the ![Actions icon](work/_img/icons/actions-icon.png) Actions menu in a work item form to [change the work item type](work/backlogs/remove-delete-work-items.md#change-type). </p>
+<p>If you've added a task instead of a bug and want to change the work item type to bug, you can. Choose the ![Change type icon](../work/_img/icons/change-type-icon.png) Change type option from the ![Actions icon](../work/_img/icons/actions-icon.png) Actions menu in a work item form to [change the work item type](../work/backlogs/remove-delete-work-items.md#change-type). </p>
 
 <p><b>Filter your backlog</b></p>
 <p>Use **Show/Hide in progress** to only show or hide items which have moved from the new or proposed state to active or in progress state.     </p>
-<p>Additionally, you can list a subset of items based on keywords [keywords](work/backlogs/define-features-epics.md#filter) or [tags](work/track/add-tags-to-work-items.md). </p>
+<p>Additionally, you can list a subset of items based on keywords [keywords](../work/backlogs/define-features-epics.md#filter) or [tags](../work/track/add-tags-to-work-items.md). </p>
 ![Filter based on keywords or tags](_img/alm-feature-filter-backlog.png)  
  <br/>
 
 <p><b>Request feedback</b></p>
-<p>[Request feedback on working software](work/connect/get-feedback.md) and easily track responses that capture interaction with video, verbal, or type-written comments.  </p>
+<p>[Request feedback on working software](../work/connect/get-feedback.md) and easily track responses that capture interaction with video, verbal, or type-written comments.  </p>
 ![Request feedback](_img/feature-request-feedback.png)  
  <br/>
 
 <p><b>Feedback client</b></p>
-<p>Provide the free [Microsoft feedback client](work/connect/give-feedback.md) to capture their responses to your feedback requests. </p>
+<p>Provide the free [Microsoft feedback client](../work/connect/give-feedback.md) to capture their responses to your feedback requests. </p>
 
 </td>
 </tr>
@@ -199,35 +199,35 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Track issues and other types of work</b></p>
-<p>Different types of work items [track different types of work](work/backlogs/add-work-items.md) - such as bugs, test cases, risks, issues, and more. </p>
+<p>Different types of work items [track different types of work](../work/backlogs/add-work-items.md) - such as bugs, test cases, risks, issues, and more. </p>
 ![Add new work item widget](_img/alm-feature-new-work-item-widget.png)  
 
  <br/>
 
 <p><b>Bulk modify</b></p>
-<p>Quickly change one or more fields in several work items using [bulk modify in the web portal](work/backlogs/bulk-modify-work-items.md) or [bulk modify using Excel](work/office/bulk-add-modify-work-items-excel.md). </p>
+<p>Quickly change one or more fields in several work items using [bulk modify in the web portal](../work/backlogs/bulk-modify-work-items.md) or [bulk modify using Excel](../work/office/bulk-add-modify-work-items-excel.md). </p>
 
 <p><b>Copy or clone a work item</b></p>
-<p>[Copy an existing work item](work/backlogs/copy-clone-work-items.md#copy-clone) or bulk copy several using [Excel](work/office/bulk-add-modify-work-items-excel.md).</p>
+<p>[Copy an existing work item](../work/backlogs/copy-clone-work-items.md#copy-clone) or bulk copy several using [Excel](../work/office/bulk-add-modify-work-items-excel.md).</p>
 ![Copy or clone a work item](_img/alm-index-copy-clone-work-item.png)  
  <br/>
 
 <p><b>Follow a work item </b></p>
-<p>Click the ![Follow icon](work/_img/icons/follow-icon.png)/![Following icon](work/_img/icons/following-icon.png) Follow/Following icons to quickly [start or stop tracking changes made to a work item](collaborate/follow-work-items.md).  </p>
+<p>Click the ![Follow icon](../work/_img/icons/follow-icon.png)/![Following icon](../work/_img/icons/following-icon.png) Follow/Following icons to quickly [start or stop tracking changes made to a work item](collaborate/follow-work-items.md).  </p>
 ![Follow a work item control](_img/alm-feature-follows.png)  
 <br/>
 
 <p><b>Rich text comments</b></p>
-<p>Describe and comment on work to perform using [formatted text, hyperlinks, and inline images](work/backlogs/add-work-items.md). Click ![full screen icon](work/_img/icons/fullscreen_icon.png) or ![exit full screen icon](work/_img/icons/exitfullscreen_icon.png)  to expand or contract the viewing area. </p>
+<p>Describe and comment on work to perform using [formatted text, hyperlinks, and inline images](../work/backlogs/add-work-items.md). Click ![full screen icon](../work/_img/icons/fullscreen_icon.png) or ![exit full screen icon](../work/_img/icons/exitfullscreen_icon.png)  to expand or contract the viewing area. </p>
 
 
 <p><b>Clear HTML formatting </b></p>
-<p>Use the ![Remove format](work/_img/icons/remove-formatting-icon.png) icon or CTRL+Spacebar to remove formatting from highlighted text.</p>
+<p>Use the ![Remove format](../work/_img/icons/remove-formatting-icon.png) icon or CTRL+Spacebar to remove formatting from highlighted text.</p>
 
 
 
 <p><b>Attachments</b></p>
-<p>To support collaboration of work in progress, [add emails, documents, images, log files, or other file types](work/track/share-plans.md#attach-files) to work items.  </p>
+<p>To support collaboration of work in progress, [add emails, documents, images, log files, or other file types](../work/track/share-plans.md#attach-files) to work items.  </p>
 
 
 </td>
@@ -240,36 +240,36 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>New work item experience</b></p>
-<p>The [new work item experience](work/process/new-work-item-experience.md) provides access to a more modern form, additional features, and the ability to add fields and apply other customizations to the work item type. </p>
+<p>The [new work item experience](../work/process/new-work-item-experience.md) provides access to a more modern form, additional features, and the ability to add fields and apply other customizations to the work item type. </p>
 
 
 <p><b>Manage bugs</b></p>
-<p>[Capture and triage bugs](work/backlogs/manage-bugs.md) using a variety of tools. </p>
+<p>[Capture and triage bugs](../work/backlogs/manage-bugs.md) using a variety of tools. </p>
 
 
 <p><b>Choose how you want to track bugs</b></p>
-<p>Each team can [choose to manage bugs on their backlog or along with tasks](work/customize/show-bugs-on-backlog.md). </p>
+<p>Each team can [choose to manage bugs on their backlog or along with tasks](../work/customize/show-bugs-on-backlog.md). </p>
 
 
 <p><b>Share plans and information</b></p>
-<p>Share information using work items and [generate summary lists with links to backlogs or queries](work/track/share-plans.md). </p>
+<p>Share information using work items and [generate summary lists with links to backlogs or queries](../work/track/share-plans.md). </p>
 
 
 <p><b>Remove or delete a work item</b></p>
-<p>Remove work items from the backlog by changing their State to Removed. Or, [move them to the recycle bin or permanently delete them](work/backlogs/remove-delete-work-items.md).</p>
-![Recycle bin icon](work/backlogs/_img/recycle-bin-icon.png)  
+<p>Remove work items from the backlog by changing their State to Removed. Or, [move them to the recycle bin or permanently delete them](../work/backlogs/remove-delete-work-items.md).</p>
+![Recycle bin icon](../work/backlogs/_img/recycle-bin-icon.png)  
  <br/>
 
 <p><b>Tags</b></p>
-<p>[Add tags to work items](work/track/add-tags-to-work-items.md) to filter backlogs and queries. Also, you can [bulk update work items](work/backlogs/bulk-modify-work-items.md#tags) or [use work item templates](work/productivity/work-item-template.md) to add or remove tags. </p>
+<p>[Add tags to work items](../work/track/add-tags-to-work-items.md) to filter backlogs and queries. Also, you can [bulk update work items](../work/backlogs/bulk-modify-work-items.md#tags) or [use work item templates](../work/productivity/work-item-template.md) to add or remove tags. </p>
 ![Add tags to filter backlogs, boards, and queries](_img/alm-feature-tags.png)  
 <br/>
 
 <p><b>Work item templates</b></p>
-<p>Quickly add new work items based on templates [with  pre-populate values for your team's commonly used fields](work/productivity/work-item-template.md). </p>
+<p>Quickly add new work items based on templates [with  pre-populate values for your team's commonly used fields](../work/productivity/work-item-template.md). </p>
 
 <p><b>History & auditing</b></p>
-<p>Review and query [work item change history](work/track/history-and-auditing.md) to learn of past decisions and support future ones.</p>
+<p>Review and query [work item change history](../work/track/history-and-auditing.md) to learn of past decisions and support future ones.</p>
 
 
 
@@ -277,11 +277,11 @@ Use features supported by these familiar clients to manage your project and illu
 </td>
 <td width="33%">
 <p><b>Discussion </b></p>
-<p>[Add or review comments](work/backlogs/add-work-items.md) added to a work item. Start by clicking the ![Discussions icon](work/backlogs/_img/icon-discussions-wi.png) discussion icon.  </p>
+<p>[Add or review comments](../work/backlogs/add-work-items.md) added to a work item. Start by clicking the ![Discussions icon](../work/backlogs/_img/icon-discussions-wi.png) discussion icon.  </p>
 
 
 <p><b>Integrate Git development with work tracking </b></p>
-<p>Drive Git development and stay in sync as a team to complete backlog items and tasks using the [Git Development section](work/backlogs/connect-work-items-to-git-dev-ops.md). Add branches, create pull requests, and view all development performed to support the specific work item.  </p>
+<p>Drive Git development and stay in sync as a team to complete backlog items and tasks using the [Git Development section](../work/backlogs/connect-work-items-to-git-dev-ops.md). Add branches, create pull requests, and view all development performed to support the specific work item.  </p>
 ![Work item form Development section](_img/alm-feature-git-dev-section.png)  
 <br/>
 
@@ -291,12 +291,12 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Link work items  </b></p>
-<p>Track related work, dependencies, and changes made over time by [linking work items](work/track/link-work-items-support-traceability.md). </p>
+<p>Track related work, dependencies, and changes made over time by [linking work items](../work/track/link-work-items-support-traceability.md). </p>
 ![Link control, web portal](_img/alm-feature-links-control.png)  
 <br/>
 
 <p><b>Add or modify a field </b></p>
-<p>Add a custom field ([Team Services](work/process/customize-process.md) | [TFS](work/customize/add-modify-field.md) to support tracking additional data requirements or modify an existing field to apply optional rules. </p>
+<p>Add a custom field ([Team Services](../work/process/customize-process.md) | [TFS](../work/customize/add-modify-field.md) to support tracking additional data requirements or modify an existing field to apply optional rules. </p>
 
 
 <p><b>Restrict access</b></p>
@@ -304,7 +304,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Field index </b></p>
-<p>Find descriptions and usage information for each field from the [work item field index](work/guidance/work-item-field.md). </p>
+<p>Find descriptions and usage information for each field from the [work item field index](../work/guidance/work-item-field.md). </p>
 
 
 
@@ -325,28 +325,28 @@ Use features supported by these familiar clients to manage your project and illu
 <td width="33%">
 
 <p><b>Create an inherited process</b></p>
-<p>The first step in customizing a team project is to [create an inherited process](work/process/manage-process.md#create-inherited-process). You can only customize inherited processes.  </p>
+<p>The first step in customizing a team project is to [create an inherited process](../work/process/manage-process.md#create-inherited-process). You can only customize inherited processes.  </p>
 ![Customize process](_img/customize-vsts-process.png)   
 <br/>
 
 <p><b>New work item experience </b></p>
-<p>The [new work item experience](work/process/new-work-item-experience.md) provides access to a more modern form, additional features, and the ability to add fields and apply other customizations to the work item type. </p>
+<p>The [new work item experience](../work/process/new-work-item-experience.md) provides access to a more modern form, additional features, and the ability to add fields and apply other customizations to the work item type. </p>
 
 <p><b>Customize a process</b></p>
 <p>Customizations you make to an inherited process automatically update all team projects that reference that process. You can customize your team project as follows:</p>
 <ul>
-<li>[Add and modify fields](work/process/customize-process-field.md)</li>
-<li>[Modify the web form layout](work/process/customize-process-form.md)</li>
-<li>[Modify the workflow states](work/process/customize-process-workflow.md) </li>
-<li>[Add a custom work item type](work/process/customize-process-wit.md) </li>
-<li>[Add a custom control](work/process/custom-controls-process.md) </li>
+<li>[Add and modify fields](../work/process/customize-process-field.md)</li>
+<li>[Modify the web form layout](../work/process/customize-process-form.md)</li>
+<li>[Modify the workflow states](../work/process/customize-process-workflow.md) </li>
+<li>[Add a custom work item type](../work/process/customize-process-wit.md) </li>
+<li>[Add a custom control](../work/process/custom-controls-process.md) </li>
 </ul>
 
 <p><b>Change the process used by a team project</b></p>
-<p>To apply customizations to one or more team projects, you [change the process they reference to a customized inherited process](work/process/manage-process.md#migrate).  </p>
+<p>To apply customizations to one or more team projects, you [change the process they reference to a customized inherited process](../work/process/manage-process.md#migrate).  </p>
 
 <p><b>Enable/disable a process</b></p>
-<p>To make sure no one creates a team project from a process that you don't want used, [you can disable it](work/process/manage-process.md#enable-process).  </p>
+<p>To make sure no one creates a team project from a process that you don't want used, [you can disable it](../work/process/manage-process.md#enable-process).  </p>
 
 
 
@@ -355,20 +355,20 @@ Use features supported by these familiar clients to manage your project and illu
 <td width="33%">
 
 <p><b>Add or modify a field</b></p>
-<p>[Add a custom field](work/process/customize-process-field.md) to support tracking additional data requirements or modify an existing field to apply optional rules. </p>
+<p>[Add a custom field](../work/process/customize-process-field.md) to support tracking additional data requirements or modify an existing field to apply optional rules. </p>
 ![Add field](_img/index-add-field.png)   
 <br/>
 
 <p><b>Remove a field from a form</b></p>
-<p>You can [remove a custom field and select inherited fields from a work item form](work/process/customize-process-field.md#remove-field). You can also [relabel the fields](work/process/customize-process-field.md#rename-field) that appear on the form.   </p>
+<p>You can [remove a custom field and select inherited fields from a work item form](../work/process/customize-process-field.md#remove-field). You can also [relabel the fields](../work/process/customize-process-field.md#rename-field) that appear on the form.   </p>
 
 <p><b>Area path pick lists</b></p>
-<p>Change the [pick list of area paths](work/customize/modify-areas-iterations.md) to support grouping work items by team, product, or feature area. </p>
+<p>Change the [pick list of area paths](../work/customize/modify-areas-iterations.md) to support grouping work items by team, product, or feature area. </p>
 ![Hierarchical area paths](_img/alm-feature-area-paths.png)   
 <br/>
 
 <p><b>Sprint/iteration pick lists</b></p>
-<p>Change the [pick list of iteration paths](work/scrum/define-sprints.md) to support grouping work into sprints, milestones, or other event-specific or time-related period. Activate sprints for each team. </p>
+<p>Change the [pick list of iteration paths](../work/scrum/define-sprints.md) to support grouping work into sprints, milestones, or other event-specific or time-related period. Activate sprints for each team. </p>
 ![Iterations or sprints](_img/alm-feature-define-sprints.png)  
 <br/>
 </td>
@@ -380,30 +380,30 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Review fields</b></p>
-<p>You can [review the list of fields](work/process/customize-process-field.md#review-fields) defined for a process, their data type, and the WITs which reference them. For descriptions and usage of each field, see [Work item field index](work/guidance/work-item-field.md). </p>
+<p>You can [review the list of fields](../work/process/customize-process-field.md#review-fields) defined for a process, their data type, and the WITs which reference them. For descriptions and usage of each field, see [Work item field index](../work/guidance/work-item-field.md). </p>
 
 <p><b>Delete a field from the collection</b></p>
-<p>You can [delete a custom field](work/process/customize-process-field.md#delete-field) if you find it's no longer required. </p>
+<p>You can [delete a custom field](../work/process/customize-process-field.md#delete-field) if you find it's no longer required. </p>
 
 
 
 <p><b>Customize the web form</b></p>
-<p>For each work item type, you can [add custom pages to group additional custom fields](work/process/customize-process-form.md) and you can organize your forms by placing logically related groups and HTML fields on separate pages within a form.    </p>
+<p>For each work item type, you can [add custom pages to group additional custom fields](../work/process/customize-process-form.md) and you can organize your forms by placing logically related groups and HTML fields on separate pages within a form.    </p>
 ![Add custom group](_img/index-add-group.png)   
 <br/>
 
 <p><b>Add a custom work item type</b></p>
-<p>You can [add and modify a custom work item type](work/process/customize-process-wit.md).    </p>
+<p>You can [add and modify a custom work item type](../work/process/customize-process-wit.md).    </p>
 
 <p><b>Customize the workflow</b></p>
-<p>For each work item type, you can [add custom workflow states to support your business tracking needs](work/process/customize-process-workflow.md).    </p>
+<p>For each work item type, you can [add custom workflow states to support your business tracking needs](../work/process/customize-process-workflow.md).    </p>
 
 
 <p><b>Delete a process</b></p>
 <p>Delete those inherited processes that you no longer want used. Simply choose the Delete option from its context menu.  </p>
 
 <p><b>Set process permissions</b></p>
-<p>To customize a process, add custom fields, or change the layout of a work item form, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to edit a specific process](work/process/manage-process.md#process-permissions).  </p>
+<p>To customize a process, add custom fields, or change the layout of a work item form, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to edit a specific process](../work/process/manage-process.md#process-permissions).  </p>
 
 </td>
 
@@ -424,15 +424,15 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Add or modify a field </b></p>
-<p>[Add or modify a field](work/customize/add-modify-field.md) to support work tracking and reporting by editing the WIT definition.</p>
+<p>[Add or modify a field](../work/customize/add-modify-field.md) to support work tracking and reporting by editing the WIT definition.</p>
 
 
 <p><b>Add rules to a field </b></p>
-<p>Apply [various rules to custom fields](work/reference/apply-rule-work-item-field.md) to qualify the value it can have, to copy a value, to specify a default, to restrict who can modify it, to enforce pattern matching, or to enforce conditional values.  </p>
+<p>Apply [various rules to custom fields](../work/reference/apply-rule-work-item-field.md) to qualify the value it can have, to copy a value, to specify a default, to restrict who can modify it, to enforce pattern matching, or to enforce conditional values.  </p>
 
 
 <p><b>Remove a field </b></p>
-<p>[Stop tracking a field by removing the field](work/customize/add-modify-field.md) from the work item form of select work item types. </p>
+<p>[Stop tracking a field by removing the field](../work/customize/add-modify-field.md) from the work item form of select work item types. </p>
 
 
 </td>
@@ -440,10 +440,10 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Area path pick lists</b></p>
-<p>Change the [pick list of area paths](work/customize/modify-areas-iterations.md) to support grouping work items by team, product, or feature area. </p>
+<p>Change the [pick list of area paths](../work/customize/modify-areas-iterations.md) to support grouping work items by team, product, or feature area. </p>
 
 <p><b>Sprint/iteration pick lists</b></p>
-<p>Change the [pick list of iteration paths](work/scrum/define-sprints.md) to support grouping work into sprints, milestones, or other event-specific or time-related period.</p>
+<p>Change the [pick list of iteration paths](../work/scrum/define-sprints.md) to support grouping work into sprints, milestones, or other event-specific or time-related period.</p>
 
 
 <p><b>Custom pick lists </b></p>
@@ -480,20 +480,20 @@ Use features supported by these familiar clients to manage your project and illu
 <td width="33%">
 
 <p><b>Kanban basics</b></p>
-<p>Use your Kanban board to [visualize and track the flow of work](work/kanban/kanban-basics.md) from idea to completion as well as quickly update work item fields</p>
-![Update fields on cards](work/kanban/_img/ALM_KB_UpdateFieldOnCard.png)  
+<p>Use your Kanban board to [visualize and track the flow of work](../work/kanban/kanban-basics.md) from idea to completion as well as quickly update work item fields</p>
+![Update fields on cards](../work/kanban/_img/ALM_KB_UpdateFieldOnCard.png)  
 <br/>
 
 <p><b>Drag-n-drop</b></p>
-<p>[Drag and drop items](work/kanban/kanban-basics.md#reorder-cards) on the Kanban board to update status and to reorder and reparent items.  </p>
+<p>[Drag and drop items](../work/kanban/kanban-basics.md#reorder-cards) on the Kanban board to update status and to reorder and reparent items.  </p>
 
 <p><b>Add task checklists</b></p>
-<p>Add and mark tasks as done with [lightweight tasks checklists](work/kanban/add-task-checklists.md). </p>
-![Track tasks with a checklist](work/_img/kanban-task-checklist.png)  
+<p>Add and mark tasks as done with [lightweight tasks checklists](../work/kanban/add-task-checklists.md). </p>
+![Track tasks with a checklist](../work/_img/kanban-task-checklist.png)  
 <br/>
 
 <p><b>Filter</b></p>
-<p>[Use key words to filter and find items](work/kanban/filter-kanban-board.md#text-filter) on the Kanban board.</p>
+<p>[Use key words to filter and find items](../work/kanban/filter-kanban-board.md#text-filter) on the Kanban board.</p>
 
 ![Kanban board filter](_img/alm-feature-kanban-filter.png)  
 <br/>
@@ -505,26 +505,26 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Set WIP limits</b></p>
-<p>[Set constraints on the amount of work your team undertakes at each work stage](work/kanban/wip-limits.md) to gain access to sprint backlogs and task boards.</p>
+<p>[Set constraints on the amount of work your team undertakes at each work stage](../work/kanban/wip-limits.md) to gain access to sprint backlogs and task boards.</p>
 
 
 <p><b>Split columns</b></p>
-<p>Turn on split columns to [track the lag between when items are done in one state and work actually starts in a new state](work/kanban/split-columns.md). </p>
+<p>Turn on split columns to [track the lag between when items are done in one state and work actually starts in a new state](../work/kanban/split-columns.md). </p>
 
 <p><b>Map your workflow</b></p>
-<p>[Customize columns to support your team's workflow](work/kanban/add-columns.md) and track work from start to finish. </p>
+<p>[Customize columns to support your team's workflow](../work/kanban/add-columns.md) and track work from start to finish. </p>
 ![Add columns to map your workflow](_img/alm-feature-kanban-flow.png)  
 <br/>
 
 <p><b>Expedite work with swimlanes </b></p>
-<p>Use [swimlanes](work/kanban/expedite-work.md) to track work at different service-level classes. </p>
+<p>Use [swimlanes](../work/kanban/expedite-work.md) to track work at different service-level classes. </p>
 
 
 <p><b>Definition of done</b></p>
-<p>Support your team to be in sync by [specifying requirements to fulfill prior to handoff of items to a downstream work stage](work/kanban/definition-of-done.md).</p>  
+<p>Support your team to be in sync by [specifying requirements to fulfill prior to handoff of items to a downstream work stage](../work/kanban/definition-of-done.md).</p>  
 
 <p><b>Filter by field values or parent work items</b></p>
-<p>Click the ![Kanban field filter icon](work/_img/icons/kanban-filter-icon.png) field filter icon to [filter the board based on assignment, iteration, work item type, or tags](work/kanban/filter-kanban-board.md#field-filter). </p>
+<p>Click the ![Kanban field filter icon](../work/_img/icons/kanban-filter-icon.png) field filter icon to [filter the board based on assignment, iteration, work item type, or tags](../work/kanban/filter-kanban-board.md#field-filter). </p>
 ![Kanban board filter](_img/alm-feature-kanban-filter-fields.png)  
 <br/>
 
@@ -536,24 +536,24 @@ Use features supported by these familiar clients to manage your project and illu
 <td width="33%">
 
 <p><b>Customize cards</b></p>
-<p>[Add fields to cards](work/customize/customize-cards.md) that you can edit directly on your Kanban and task boards.</p>  
-![Customized card with added work item fields and styling rules](work/customize/_img/kanban-board-card-style-rule-example.png)  
+<p>[Add fields to cards](../work/customize/customize-cards.md) that you can edit directly on your Kanban and task boards.</p>  
+![Customized card with added work item fields and styling rules](../work/customize/_img/kanban-board-card-style-rule-example.png)  
 <br/>
 
 <p><b>Live updates </b></p>
-<p>[Enable live updates](work/kanban/kanban-basics.md#live-updates) to automatically refresh your Kanban board when changes are made by others or to the board settings. </p>
+<p>[Enable live updates](../work/kanban/kanban-basics.md#live-updates) to automatically refresh your Kanban board when changes are made by others or to the board settings. </p>
 ![Live updates](_img/alm-feature-live-updates.png)  
 <br/>
 
 
 <p><b>Add inline tests </b></p>
-<p>[Add, run, and update tests](work/kanban/add-run-update-tests.md) with inline test on your Kanban board.   </p>
+<p>[Add, run, and update tests](../work/kanban/add-run-update-tests.md) with inline test on your Kanban board.   </p>
 
 <p><b>Add checklists to features and epics</b></p>
-<p>Add and mark user stories and other work items as done from your [Kanban features or epics boards](work/kanban/kanban-epics-features-stories.md). </p>
+<p>Add and mark user stories and other work items as done from your [Kanban features or epics boards](../work/kanban/kanban-epics-features-stories.md). </p>
 
 <p><b>Set team's card reorder preference </b></p>
-<p>You can preserve the backlog priority when you move a card to a new column by setting your team's [Kanban board card reordering setting](work/kanban/kanban-basics.md#card-reorder-setting).  </p>
+<p>You can preserve the backlog priority when you move a card to a new column by setting your team's [Kanban board card reordering setting](../work/kanban/kanban-basics.md#card-reorder-setting).  </p>
 
 <p><b>Enable/disable card annotations</b></p>
 <p>Turn on or off [task checklists or inline tests](./work/customize/customize-cards.md#annotations) for your Kanban board. </p>
@@ -577,40 +577,40 @@ Use features supported by these familiar clients to manage your project and illu
 <tr valign="top">
 <td width="33%">
 <p><b>Add another team</b></p>
-<p>[Add and structure teams](work/scale/multiple-teams.md) and organize work to support team autonomy and organizational alignment. Teams can manage their work independently of one another while the organization gains visibility across all teams. </p>
+<p>[Add and structure teams](../work/scale/multiple-teams.md) and organize work to support team autonomy and organizational alignment. Teams can manage their work independently of one another while the organization gains visibility across all teams. </p>
 ![Multiple teams](_img/alm-feature-multiple-teams.png)  
 <br/>
 <p><b>Set team defaults</b></p>
-<p>Several Agile tools reference the team's default area path, iteration path, and activated sprints to automatically filter the set of work items they display. Understand how defaults are used and how to [set the defaults for your team](work/scale/set-team-defaults.md).</p>
+<p>Several Agile tools reference the team's default area path, iteration path, and activated sprints to automatically filter the set of work items they display. Understand how defaults are used and how to [set the defaults for your team](../work/scale/set-team-defaults.md).</p>
 
 </td>
 <td width="33%">
 
 
 <p><b>Setup a team hierarchy</b></p>
-<p>By [configuring your teams and backlogs into an hierarchical structure](work/scale/portfolio-management.md), program owners can more easily track progress across teams, manage portfolios, and generate rollup data. </p>
+<p>By [configuring your teams and backlogs into an hierarchical structure](../work/scale/portfolio-management.md), program owners can more easily track progress across teams, manage portfolios, and generate rollup data. </p>
 
 
 <p><b>Autonomy and alignment</b></p>
-<p>As your organization grows, your tools can grow to support a [culture of team autonomy and organizational alignment](work/scale/agile-culture.md). </p>
+<p>As your organization grows, your tools can grow to support a [culture of team autonomy and organizational alignment](../work/scale/agile-culture.md). </p>
 
 
 <p><b>Scale your tools and practices</b></p>
-<p>Incrementally adopt [practices that scale](work/scale/practices-that-scale.md) to create greater rhythm and flow within your organization, engage customers, improve project visibility, and develop a productive workforce.</p>
+<p>Incrementally adopt [practices that scale](../work/scale/practices-that-scale.md) to create greater rhythm and flow within your organization, engage customers, improve project visibility, and develop a productive workforce.</p>
 
 </td>
 <td width="33%">
 
 
 <p><b>Portfolio management</b></p>
-<p>Manage a [portfolio of backlogs](work/scale/portfolio-management.md) and gain insight into each team's progress as well as the progress of all programs.</p>
+<p>Manage a [portfolio of backlogs](../work/scale/portfolio-management.md) and gain insight into each team's progress as well as the progress of all programs.</p>
 
 ![Portfolio management](_img/alm-feature-portfolio-management.png)
 <br/>
 
 
 <p><b>Scaled Agile Framework</b></p>
-<p>Structure team projects to support [epics, release trains, and multiple backlogs to support the Scaled Agile Framework](work/scale/scaled-agile-framework.md). </p>
+<p>Structure team projects to support [epics, release trains, and multiple backlogs to support the Scaled Agile Framework](../work/scale/scaled-agile-framework.md). </p>
 
 
 </td>
@@ -631,18 +631,18 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Define sprints</b></p>
-<p>[Schedule and activate your team's sprints](work/scrum/define-sprints.md) to gain access to sprint backlogs and task boards.</p>
+<p>[Schedule and activate your team's sprints](../work/scrum/define-sprints.md) to gain access to sprint backlogs and task boards.</p>
 
 <p><b>Select team sprints, set team defaults</b></p>
-<p>Several tools reference the team's default and active iteration paths or sprints. For the Agile tools to work best, each team needs to [set their team area path(s) and iteration paths](work/scale/set-team-defaults.md) to support their work tracking activities. </p>
+<p>Several tools reference the team's default and active iteration paths or sprints. For the Agile tools to work best, each team needs to [set their team area path(s) and iteration paths](../work/scale/set-team-defaults.md) to support their work tracking activities. </p>
 
 
 <p><b>Plan sprints</b></p>
-<p>Build your sprint backlog, add tasks, and load balance work across your team as you [plan your sprint](work/scrum/sprint-planning.md).</p>
+<p>Build your sprint backlog, add tasks, and load balance work across your team as you [plan your sprint](../work/scrum/sprint-planning.md).</p>
 
 
 <p><b>Track work on your task board</b></p>
-<p>Use your [task board](work/scrum/task-board.md) during your daily Scrum meetings to view  and update progress.  </p>
+<p>Use your [task board](../work/scrum/task-board.md) during your daily Scrum meetings to view  and update progress.  </p>
 
 </td>
 <td width="33%">
@@ -650,12 +650,12 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Velocity & forecasting</b></p>
-<p>Use [velocity charts](report/guidance/team-velocity.md) and [forecast](work/scrum/forecast.md) tools  to estimate work that can be completed in future sprints. </p>
+<p>Use [velocity charts](report/guidance/team-velocity.md) and [forecast](../work/scrum/forecast.md) tools  to estimate work that can be completed in future sprints. </p>
 ![Team velocity chart](_img/alm-feature-team-velocity-chart.png)  
 <br/>
 
 <p><b>Sprint burndown charts</b></p>
-<p>Monitor progress and review team patterns from [sprint burndown charts](work/scrum/sprint-burndown.md).</p>
+<p>Monitor progress and review team patterns from [sprint burndown charts](../work/scrum/sprint-burndown.md).</p>
 ![Sprint burndown chart](_img/alm-index-sprint-burndown-widget.png)   
 
 
@@ -666,8 +666,8 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Manage resources</b></p>
-<p>Use [capacity planning tools](work/scale/capacity-planning.md) to track individual, team, and activity over and under capacity for a sprint.</p>
-![Capacity bars](work/scrum/_img/ALM_DS_CapacityBars_S.png)  
+<p>Use [capacity planning tools](../work/scale/capacity-planning.md) to track individual, team, and activity over and under capacity for a sprint.</p>
+![Capacity bars](../work/scrum/_img/ALM_DS_CapacityBars_S.png)  
 
 
 
@@ -691,13 +691,13 @@ Use features supported by these familiar clients to manage your project and illu
 
 <p><b>What is workflow? </b></p>
 <p>You use workflow to track the progress of work as it moves from new, active, to complete or closed. Each workflow consists of a set of states, the valid transitions between the states, and the reasons for transitioning the work item to the selected state.  </p>
-![User story workflow](work/guidance/_img/ALM_PT_Agile_WF_Bug.png)   
+![User story workflow](../work/guidance/_img/ALM_PT_Agile_WF_Bug.png)   
 
 <br/>
 
 
 <p><b>Default workflows</b></p>
-<p>Each process [defines the workflow](work/guidance/choose-process.md#main-distinctions) for each work item type to track progress from newly defined, to in progress, to completed or closed. </p>
+<p>Each process [defines the workflow](../work/guidance/choose-process.md#main-distinctions) for each work item type to track progress from newly defined, to in progress, to completed or closed. </p>
 
 
 
@@ -707,12 +707,12 @@ Use features supported by these familiar clients to manage your project and illu
 <td width="33%">
 
 <p><b>Kanban workflow</b></p>
-<p>You can fully customize your Kanban board to map the workflow your team uses by [adding and renaming columns](work/kanban/add-columns.md)</p>
+<p>You can fully customize your Kanban board to map the workflow your team uses by [adding and renaming columns](../work/kanban/add-columns.md)</p>
 ![Add columns to map your workflow](_img/alm-feature-kanban-flow.png)  
 <br/>
 
 <p><b>Customize the workflow</b></p>
-<p>For Team Services: [add custom workflow states to support your business tracking needs](work/process/customize-process-workflow.md).  For TFS: [Design your custom workflow](https://msdn.microsoft.com/library/ms194981.aspx) by adding states, transitions, reasons, and optional actions.</p>
+<p>For Team Services: [add custom workflow states to support your business tracking needs](../work/process/customize-process-workflow.md).  For TFS: [Design your custom workflow](https://msdn.microsoft.com/library/ms194981.aspx) by adding states, transitions, reasons, and optional actions.</p>
 
  <p><b>States  </b></p>
 <p>States allow you to [track the status of work](https://msdn.microsoft.com/library/ms194981.aspx). For  example, a bug moves from **Active**, **Resolved**, and **Closed** to correspond to when it's defined, fixed, and verified as fixed.</p>
@@ -732,11 +732,11 @@ Use features supported by these familiar clients to manage your project and illu
 <p>You can [define rules that change a field value](https://msdn.microsoft.com/library/ms194981.aspx) whenever you change the state, perform a transition, or select a reason.   </p>
 
 <p><b>Apply workflow conditional field rules (TFS)  </b></p>
-<p>You can define rules that [change a field value based on the contents of other fields](work/reference/apply-rule-work-item-field.md) during workflow changes. </p>
+<p>You can define rules that [change a field value based on the contents of other fields](../work/reference/apply-rule-work-item-field.md) during workflow changes. </p>
 
 
 <p><b>Restrict who can make changes during workflow transitions (TFS)  </b></p>
-<p>Set a condition field rule that applies to a group to [restrict who can make changes to a workflow or a field](work/reference/apply-rule-work-item-field.md).  </p>
+<p>Set a condition field rule that applies to a group to [restrict who can make changes to a workflow or a field](../work/reference/apply-rule-work-item-field.md).  </p>
 
 
 <p><b>Event-generated workflow changes or field assignments (TFS)</b></p>
@@ -767,7 +767,7 @@ Use features supported by these familiar clients to manage your project and illu
 <br/>
 
 <p><b>Share queries and sprint plans</b></p>
-<p>Email a query or [sprint plan](work/scrum/sprint-planning.md).  </p>
+<p>Email a query or [sprint plan](../work/scrum/sprint-planning.md).  </p>
 ![Share queries, backlogs, and sprint plans with the email control](_img/alm-feature-email-control.png)  
 <br/>
 <p><b>Quick alerts to team members  </b></p>
@@ -785,13 +785,13 @@ Use features supported by these familiar clients to manage your project and illu
 <td width="30%">
 
 <p><b>Follow a work item </b></p>
-<p>Click the ![Follow icon](work/_img/icons/follow-icon.png)/![Following icon](work/_img/icons/following-icon.png) icons to quickly [start or stop tracking changes made to a work item](collaborate/follow-work-items.md).  </p>
+<p>Click the ![Follow icon](../work/_img/icons/follow-icon.png)/![Following icon](../work/_img/icons/following-icon.png) icons to quickly [start or stop tracking changes made to a work item](collaborate/follow-work-items.md).  </p>
 ![Follow a work item control](_img/alm-feature-follows.png)  
 <br/>
 
 
 <p><b>Follow a pull request</b></p>
-<p>To [track the progress of a single pull request](collaborate/follow-work-items.md), click the ![Follow icon](work/_img/icons/follow-icon.png) option from the context menu. </p>
+<p>To [track the progress of a single pull request](collaborate/follow-work-items.md), click the ![Follow icon](../work/_img/icons/follow-icon.png) option from the context menu. </p>
 ![Follow a pull request](_img/features-follow-pull-request.png)  
 <br/>
 
@@ -852,7 +852,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p>[Work with Git repositories](git/share-your-code-in-git-eclipse.md) using the Team Explorer Everwhere IDE for Eclipse.  </p>
 
 <p><b>Add reviewers to get feedback </b></p>
-<p>Use the [**@mention** control to add reviewers](work/productivity/productivity-tips.md) to your pull request to get their feedback about your changes.  </p>
+<p>Use the [**@mention** control to add reviewers](../work/productivity/productivity-tips.md) to your pull request to get their feedback about your changes.  </p>
 ![@mentions control sends email to team members with links](_img/alm-feature-at-mention-control_305.png)  
 <br/>
 
@@ -885,13 +885,13 @@ Use features supported by these familiar clients to manage your project and illu
 <td width="33%">
 
 <p><b>Integrate Git development with work tracking  </b></p>
-<p>Drive Git development and stay in sync as a team to complete backlog items and tasks using the [Git Development section](work/backlogs/connect-work-items-to-git-dev-ops.md). Add branches, create pull requests, and view all development performed to support the specific work item.  </p>
+<p>Drive Git development and stay in sync as a team to complete backlog items and tasks using the [Git Development section](../work/backlogs/connect-work-items-to-git-dev-ops.md). Add branches, create pull requests, and view all development performed to support the specific work item.  </p>
 ![Work item form Development section](_img/alm-feature-git-dev-section.png)  
 <br/>
 
 
 <p><b>Quickly link work items to pull requests </b></p>
-<p>Use the [**#ID** control to link work items](work/productivity/productivity-tips.md) to your pull request to support tracking work.    </p>
+<p>Use the [**#ID** control to link work items](../work/productivity/productivity-tips.md) to your pull request to support tracking work.    </p>
 
 <p><b>Get started using Xcode </b></p>
 <p>[Work with Git repositories](git/share-your-code-in-git-xcode.md) using the Xcode IDE.  </p>
@@ -910,7 +910,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Git permissions</b></p>
-<p>Set permissions on a [Git project, repository, or branch](setup-admin/permissions.md#git-repo) from the context menu or from the web portal administration page.</p>
+<p>Set permissions on a [Git project, repository, or branch](../security/permissions.md#git-repo) from the context menu or from the web portal administration page.</p>
 
 
 </td>
@@ -995,7 +995,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>TFVC permissions</b></p>
-<p>Set permissions on [select code management tasks](setup-admin/permissions.md#tfvc) from the context menu for TFVC files or folders or the admin context for the team project.</p>
+<p>Set permissions on [select code management tasks](../security/permissions.md#tfvc) from the context menu for TFVC files or folders or the admin context for the team project.</p>
 
 
 </td>
@@ -1137,7 +1137,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p>[Define policies to automatically delete old completed builds ](build/concepts/policies/retention.md) to minimize clutter.</p>
 
 <p><b>Build permissions</b></p>
-<p>Determine who can [define, delete, and manage builds](setup-admin/permissions.md#build).</p>
+<p>Determine who can [define, delete, and manage builds](../security/permissions.md#build).</p>
 
 
 </td>
@@ -1310,7 +1310,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p>[Specify a combination of hardware and software](test/manual-exploratory-testing/test-different-configurations.md) that represents a user or machine environment in which your app will run.</p>
 
 <p><b>Test permissions</b></p>
-<p>Set permissions on who can [manage test configurations, test environments, and publish and delete test results](setup-admin/permissions.md#project_test).</p>
+<p>Set permissions on who can [manage test configurations, test environments, and publish and delete test results](../security/permissions.md#project_test).</p>
 
 
 
@@ -1367,7 +1367,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Share dashboards with stakeholders</b></p>
-<p>Grant non-licensed users access as Stakeholders ([Team Services](setup-admin/team-services/add-account-users-assign-access-levels-team-services.md) | [TFS](work/connect/change-access-levels.md)) so they can view progress, run queries, and contribute ideas.  </p>
+<p>Grant non-licensed users access as Stakeholders ([Team Services](../accounts/add-account-users-assign-access-levels-team-services.md) | [TFS](../work/connect/change-access-levels.md)) so they can view progress, run queries, and contribute ideas.  </p>
 
 <p><b>Velocity charts</b></p>
 <p>[Team velocity](report/guidance/team-velocity.md) tracks the total estimated effort (story points or size) of backlog items (user stories or requirements) completed or still in progress within each sprint. </p>
@@ -1376,7 +1376,7 @@ Use features supported by these familiar clients to manage your project and illu
 <br/>
 
 <p><b>Sprint burndown charts</b></p>
-<p>Monitor progress and review team patterns from [sprint burndown charts](work/scrum/sprint-burndown.md)</p>
+<p>Monitor progress and review team patterns from [sprint burndown charts](../work/scrum/sprint-burndown.md)</p>
 ![Sprint burndown chart](_img/alm-index-sprint-burndown-widget.png)  
 <br/>
 
@@ -1473,7 +1473,7 @@ Use features supported by these familiar clients to manage your project and illu
 <td width="33%">
 
 <p><b>Reporting Services reports</b></p>
-<p>You can [analyze the progress and quality of your project by using the out-of-the-box reports in SQL Server Reporting Services](https://msdn.microsoft.com/library/dd380714.aspx). These reports aggregate metrics from work items, version control, test results, and builds. They are uploaded when you create a team project based on the process - [Agile, Scrum, or CMMI](work/guidance/choose-process.md) - that you choose.   </p>
+<p>You can [analyze the progress and quality of your project by using the out-of-the-box reports in SQL Server Reporting Services](https://msdn.microsoft.com/library/dd380714.aspx). These reports aggregate metrics from work items, version control, test results, and builds. They are uploaded when you create a team project based on the process - [Agile, Scrum, or CMMI](../work/guidance/choose-process.md) - that you choose.   </p>
 
 <p><b>Add Reporting Services reports</b></p>
 <p>If you need to add reporting services to a team project or on-premises TFS after you've created your team projects, you can by [adding a report server and uploading reports](Report/admin/add-reports-to-a-team-project.md).</p>
@@ -1734,7 +1734,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p>You can [get and quickly install extensions](marketplace/get-vsts-extensions.md) to add functionality to Visual Studio, Visual Studio Code, or Team Services.</p>
 
 <p><b>Try extensions for free</b></p>
-<p>You can [start a trial extension for free](setup-admin/team-services/try-additional-features-vs.md).</p>
+<p>You can [start a trial extension for free](../accounts/try-additional-features-vs.md).</p>
 
 
 <p><b>Get extensions for...</b></p>
@@ -2066,7 +2066,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>To view and quickly navigate to teams, team projects, branches, work items, pull requests and other objects that are relevant to you, use your [account hub](connect/account-home-pages.md). </p>
 
 <p><b>Your profile and preferences</b></p>
-<p>Click your name to access [your profile settings](setup-admin/account-preferences.md), set preferences, [create personal access tokens (Team Services)](git/command-prompt.md#pat), [set alerts](work/track/alerts-and-notifications.md), and log-in or out.</p>
+<p>Click your name to access [your profile settings](setup-admin/account-preferences.md), set preferences, [create personal access tokens (Team Services)](git/command-prompt.md#pat), [set alerts](../work/track/alerts-and-notifications.md), and log-in or out.</p>
 ![Profile drop down menu](_img/alm-index-my-profile-menu.png)  
 <br/>
 
@@ -2077,7 +2077,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Change team settings</b></p>
-<p>Customize features to meet your team needs by [configuring your team assets](work/scale/manage-team-assets.md).</p>
+<p>Customize features to meet your team needs by [configuring your team assets](../work/scale/manage-team-assets.md).</p>
 ![Switch team context](_img/alm-feature-team-settings-gear-icon.png)  
 <br/>
 
@@ -2096,7 +2096,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>Manage source code using distributed [Git repositories](git/get-started.md) or [Team Foundation version control](https://msdn.microsoft.com/library/ms181384%28v=vs.140%29).  to </p>
 
 <p><b>Work</b></p>
-<p>Plan and track work by [creating a product backlog](work/backlogs/create-your-backlog.md), and managing work using [Kanban](work/kanban/kanban-basics.md) or [Scrum](work/scrum/sprint-planning.md) processes. Find work items you want to review or update by [creating queries](work/track/using-queries.md), or visualize progress by [creating query-based charts](report/charts.md)  </p>
+<p>Plan and track work by [creating a product backlog](../work/backlogs/create-your-backlog.md), and managing work using [Kanban](../work/kanban/kanban-basics.md) or [Scrum](../work/scrum/sprint-planning.md) processes. Find work items you want to review or update by [creating queries](../work/track/using-queries.md), or visualize progress by [creating query-based charts](report/charts.md)  </p>
 
 <p><b>Build</b></p>
 <p>[Define and monitor builds](build/overview.md) and set up continuous builds to improve the quality of your app. </p>
@@ -2117,7 +2117,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 ![Search code box](_img/features-index-code-search-vsts.png)  
 <br/>
 <p><b>Find work items</b></p>
-<p>When in the Work hub, [enter IDs or keywords to start a query](work/track/using-queries.md) to find  work items that you want to review, triage, or update.</p>
+<p>When in the Work hub, [enter IDs or keywords to start a query](../work/track/using-queries.md) to find  work items that you want to review, triage, or update.</p>
 ![Search work item box](_img/alm-index-search-work-items-vsts.png)  
 <br/>
 
@@ -2144,13 +2144,13 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Team project admin context</b></p>
-<p>Open the admin context to [add teams](work/scale/multiple-teams.md), [configure areas and iterations](work/customize/modify-areas-iterations.md), and [manage permissions](setup-admin/tfs/admin/change-permission-levels.md). From any team project hub, click the ![gear icon](work/_img/icons/gear_icon.png) gear icon to open the admin context.</p>
+<p>Open the admin context to [add teams](../work/scale/multiple-teams.md), [configure areas and iterations](../work/customize/modify-areas-iterations.md), and [manage permissions](../tfs-server/admin/change-permission-levels.md). From any team project hub, click the ![gear icon](../work/_img/icons/gear_icon.png) gear icon to open the admin context.</p>
 ![Admin context](_img/alm-feature-admin-context.png)  
 <br/>
 
 
 <p><b>Project collection admin context</b></p>
-<p>From the collection admin context, you can [manage collection-level permissions](setup-admin/permissions.md), and set build policies, and [manage extensions](../integrate/extensions/overview.md). Click the ![gear icon](work/_img/icons/gear_icon.png) gear icon to open the admin context and then click DefaultCollection. </p>
+<p>From the collection admin context, you can [manage collection-level permissions](../security/permissions.md), and set build policies, and [manage extensions](../integrate/extensions/overview.md). Click the ![gear icon](../work/_img/icons/gear_icon.png) gear icon to open the admin context and then click DefaultCollection. </p>
 
 
 </td>
@@ -2182,17 +2182,17 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>[Find references and changes to your code, linked bugs, work items, code reviews, and unit tests](http://msdn.microsoft.com/library/dn269218.aspx).</p>
 
 <p><b>Work item queries</b></p>
-<p>Open shared queries or create your own query using the query editor [to list work items or show hierarchical or dependent items](work/track/using-queries.md).  </p>
+<p>Open shared queries or create your own query using the query editor [to list work items or show hierarchical or dependent items](../work/track/using-queries.md).  </p>
 
 ><b>Manage risks and dependencies</b></p>
-<p>Link work items to [track related work, dependencies, and changes made over time](work/track/link-work-items-support-traceability.md).</p>
+<p>Link work items to [track related work, dependencies, and changes made over time](../work/track/link-work-items-support-traceability.md).</p>
 
 <p><b>History & auditing</b></p>
-<p>Review and query [work item change history](work/track/history-and-auditing.md) to learn of past decisions and support future ones.</p>
+<p>Review and query [work item change history](../work/track/history-and-auditing.md) to learn of past decisions and support future ones.</p>
 
 
 <p><b>Bulk add or modify using Excel </b></p>
-<p>[Bulk add items to track or modify multiple field values](work/office/bulk-add-modify-work-items-excel.md) using Excel.</p>
+<p>[Bulk add items to track or modify multiple field values](../work/office/bulk-add-modify-work-items-excel.md) using Excel.</p>
 
 </td>
 <td width="33%">
@@ -2204,7 +2204,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Tags</b></p>
-<p>[Add tags to work items](work/track/add-tags-to-work-items.md) to filter backlogs and queries. Bulk update work items to add or remove tags: [Team Services](work/backlogs/bulk-modify-work-items.md#tags) | [TFS](work/office/bulk-add-modify-work-items-excel.md). </p>
+<p>[Add tags to work items](../work/track/add-tags-to-work-items.md) to filter backlogs and queries. Bulk update work items to add or remove tags: [Team Services](../work/backlogs/bulk-modify-work-items.md#tags) | [TFS](../work/office/bulk-add-modify-work-items-excel.md). </p>
 ![Add tags to filter backlogs, boards, and queries](_img/alm-feature-tags.png)  
 <br/>
 
@@ -2214,7 +2214,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Bulk modify</b></p>
-<p>[Edit or update multiple work items](work/backlogs/bulk-modify-work-items.md) from any backlog or query result. Supported tasks include:  </p>
+<p>[Edit or update multiple work items](../work/backlogs/bulk-modify-work-items.md) from any backlog or query result. Supported tasks include:  </p>
 <ul>
 <li style="margin-bottom:0px">Modify field values </li>
 <li style="margin-bottom:0px">Add or remove tags  </li>
@@ -2229,13 +2229,13 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <br/>
 
 <p><b>Query by date or current iteration</b></p>
-<p>List work items based on [when changes occurred or if they belong to the team's current sprint](work/track/query-by-date-or-current-iteration.md). </p>
+<p>List work items based on [when changes occurred or if they belong to the team's current sprint](../work/track/query-by-date-or-current-iteration.md). </p>
 
 <p><b>Query by workflow</b></p>
-<p>[Find and list work items based on their current state](work/track/query-by-workflow-changes.md), such as new, in progress, resolved, done, or closed. </p>
+<p>[Find and list work items based on their current state](../work/track/query-by-workflow-changes.md), such as new, in progress, resolved, done, or closed. </p>
 
 <p><b>Query by Kanban board change</b> </p>
-<p>Track status and trends of work items based on [changes made to the Kanban board](work/track/query-by-workflow-changes.md). </p>
+<p>Track status and trends of work items based on [changes made to the Kanban board](../work/track/query-by-workflow-changes.md). </p>
 
 
 
@@ -2255,24 +2255,24 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Manage users and groups</b></p>
-<p>[Add users to built-in groups](setup-admin/permissions.md) to grant them access to your team project. Optionally, create groups to customize access based on your business requirements.</p>
+<p>[Add users to built-in groups](../security/permissions.md) to grant them access to your team project. Optionally, create groups to customize access based on your business requirements.</p>
 
 <p><b>Permission states</b></p>
-<p>Understand how [Allow, Deny, Not set and other permissions states](setup-admin/permissions.md#inheritance) control access to features and objects. </p>
+<p>Understand how [Allow, Deny, Not set and other permissions states](../security/permissions.md#inheritance) control access to features and objects. </p>
 ![permission states](_img/alm-feature-permission-states.png)  
 <br/>
 
 <p><b>Manage work access (Team Services)</b></p>
-<p>[Control user access with a directory](setup-admin/team-services/manage-organization-access-for-your-account-vs.md) to enforce policies about accessing company resources.  </p>
+<p>[Control user access with a directory](../accounts/manage-organization-access-for-your-account-vs.md) to enforce policies about accessing company resources.  </p>
 
 <p><b>Azure Active Directory (Team Services) </b></p>
-<p>Easily control access to your team's critical resources and key business assets with [Azure Active Directory groups](setup-admin/team-services/manage-azure-active-directory-groups-visual-studio-team-services.md).</p>
+<p>Easily control access to your team's critical resources and key business assets with [Azure Active Directory groups](../accounts/manage-azure-active-directory-groups-visual-studio-team-services.md).</p>
 
 <p><b>Set up groups (TFS)</b></p>
-<p>[Create Windows or Active Directory groups](setup-admin/tfs/admin/setup-ad-groups.md) to manage access to your team projects and collections.  </p>
+<p>[Create Windows or Active Directory groups](../tfs-server/admin/setup-ad-groups.md) to manage access to your team projects and collections.  </p>
 
 <p><b>Built-in groups</b></p>
-<p>Understand the [permissions granted to built-in groups](setup-admin/permissions.md#groups) and use them to manage access to your team projects and collections.</p>
+<p>Understand the [permissions granted to built-in groups](../security/permissions.md#groups) and use them to manage access to your team projects and collections.</p>
 
 
 
@@ -2282,10 +2282,10 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p><b>DevOps permissions</b></p>
 <p>Grant or restrict access to: </p>
 <ul>
-<li>[Git repositories and branches](setup-admin/permissions.md#git-repo)</li>
-<li>[TFVC version control source code and folders](setup-admin/permissions.md#tfvc)</li>
-<li>[Build](setup-admin/permissions.md#build)</li>
-<li>[Test](setup-admin/permissions.md#project_test)</li>
+<li>[Git repositories and branches](../security/permissions.md#git-repo)</li>
+<li>[TFVC version control source code and folders](../security/permissions.md#tfvc)</li>
+<li>[Build](../security/permissions.md#build)</li>
+<li>[Test](../security/permissions.md#project_test)</li>
 <li>[Release](Release/previous-version/add-users-and-groups.md)</li>
 </ul>
 <br/>
@@ -2294,18 +2294,18 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>Control access to specific features by setting permissions for a user or group.</p>
 
 <ul>
-<li>[Area and iteration paths](work/customize/modify-areas-iterations.md#set-permissions)</li>
-<li>[Query permissions](work/track/set-query-permissions.md)</li>
-<li>[Work item tags](setup-admin/permissions.md#tags)</li>
-<li>[Move work items to another team project](work/backlogs/remove-delete-work-items.md#move-delete-permissions)</li>
-<li>[Permanently delete work items](work/backlogs/remove-delete-work-items.md#move-delete-permissions)</li>
+<li>[Area and iteration paths](../work/customize/modify-areas-iterations.md#set-permissions)</li>
+<li>[Query permissions](../work/track/set-query-permissions.md)</li>
+<li>[Work item tags](../security/permissions.md#tags)</li>
+<li>[Move work items to another team project](../work/backlogs/remove-delete-work-items.md#move-delete-permissions)</li>
+<li>[Permanently delete work items](../work/backlogs/remove-delete-work-items.md#move-delete-permissions)</li>
 <li>[Provide feedback through the Microsoft Feedback client](https://msdn.microsoft.com/Library/vs/alm/Work/connect/give-permissions-feedback)</li>
 </ul>
 <br/>
 
 
 <p><b>Team admin role and permissions</b></p>
-<p>Add user accounts as team administrators to enable them to [configure team settings and manage team assets](work/scale/manage-team-assets.md).</p>
+<p>Add user accounts as team administrators to enable them to [configure team settings and manage team assets](../work/scale/manage-team-assets.md).</p>
 
 
 <p><b>Manage administrative permissions </b></p>
@@ -2326,22 +2326,22 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Stakeholder access</b></p>
-<p>[Grant stakeholders, non-licensed users, limited access](work/connect/change-access-levels.md) to contribute ideas and access team dashboards.</p>
+<p>[Grant stakeholders, non-licensed users, limited access](../work/connect/change-access-levels.md) to contribute ideas and access team dashboards.</p>
 
 <p><b>Query permissions</b></p>
-<p>Grant permissions to [create shared queries and query folders](work/track/set-query-permissions.md).</p>
+<p>Grant permissions to [create shared queries and query folders](../work/track/set-query-permissions.md).</p>
 ![Query permissions](_img/features-query-permissions.png)  
 <br/>
 
 <p><b>Process permissions</b></p>
-<p>To customize a process, add custom fields, or change the layout of a work item form, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to edit a specific process](work/process/manage-process.md#process-permissions).  </p>
+<p>To customize a process, add custom fields, or change the layout of a work item form, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to edit a specific process](../work/process/manage-process.md#process-permissions).  </p>
 
 <p><b>Valid users</b></p>
-<p>Understand how [valid user groups are populated and the permissions they're granted](setup-admin/permissions.md#validusers).</p>
+<p>Understand how [valid user groups are populated and the permissions they're granted](../security/permissions.md#validusers).</p>
 
 
 <p><b>Permission reference</b></p>
-<p>[Provide or restrict access](setup-admin/permissions.md) for practically any feature, function, or object at the collection or team project level. </p>
+<p>[Provide or restrict access](../security/permissions.md) for practically any feature, function, or object at the collection or team project level. </p>
 
 <p><b>SharePoint permissions (TFS)</b></p>
 <p>Grant permissions to [view and contribute to SharePoint project portals](https://msdn.microsoft.com/library/bb558971.aspx).</p>
@@ -2395,13 +2395,13 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 </td>
 <td width="33%">
 <p><b>Email configuration (TFS)</b></p>
-<p>For feedback requests, alerts, and other special controls to work, you must [configure an SMTP server](setup-admin/tfs/admin/setup-customize-alerts.md) for your on-premises TFS. </p>
+<p>For feedback requests, alerts, and other special controls to work, you must [configure an SMTP server](../tfs-server/admin/setup-customize-alerts.md) for your on-premises TFS. </p>
 
 <p><b>Automated, scheduled backups (TFS)</b></p>
-<p>Reduce the risk of lost data by [scheduling automated backups of the data store](setup-admin/tfs/admin/backup/config-backup-sched-plan.md).</p>
+<p>Reduce the risk of lost data by [scheduling automated backups of the data store](../tfs-server/admin/backup/config-backup-sched-plan.md).</p>
 
 <p><b>Built-in SQL Server database (TFS)</b></p>
-<p>For small teams, you can install [TFS using SQL Server Express which installs with TFS](setup-admin/tfs/install/single-server.md).  </p>
+<p>For small teams, you can install [TFS using SQL Server Express which installs with TFS](../tfs-server/install/single-server.md).  </p>
 
 
 </td>
@@ -2425,29 +2425,29 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>What is a process?</b></p>
-<p>A [process defines the building blocks](work/guidance/choose-process.md) of the work item tracking system as well as other sub-systems you access through your team project.  </p>
+<p>A [process defines the building blocks](../work/guidance/choose-process.md) of the work item tracking system as well as other sub-systems you access through your team project.  </p>
 
 
 <p><b>Compare and choose a process</b></p>
-<p>Compare the three core system processes--[Agile, Scrum, CMMI](work/guidance/choose-process.md)--before you choose one to create a team project. </p>
+<p>Compare the three core system processes--[Agile, Scrum, CMMI](../work/guidance/choose-process.md)--before you choose one to create a team project. </p>
 
 
 <p><b>Agile process </b></p>
-<p>Choose [Agile](work/guidance/agile-process.md) when your team uses Agile planning methods, including Scrum, and tracks development and test activities separately. With Agile, you can track user stories and bugs on the Kanban board, or track bugs and tasks on the task board.</p>
+<p>Choose [Agile](../work/guidance/agile-process.md) when your team uses Agile planning methods, including Scrum, and tracks development and test activities separately. With Agile, you can track user stories and bugs on the Kanban board, or track bugs and tasks on the task board.</p>
 ![Agile process work item types](_img/features-agile-wits.png)  
 <br/>
 
 <p><b>Customize a process (Team Services) </b></p>
 <p>Customizations you make to an inherited process automatically update all team projects that reference that process. You can customize your team project as follows:</p>
 <ul>
-<li>[Add and modify fields](work/process/customize-process-field.md)</li>
-<li>[Modify the web form layout](work/process/customize-process-form.md)</li>
-<li>[Modify the workflow states](work/process/customize-process-workflow.md) </li>
-<li>[Add a custom work item type](work/process/customize-process-wit.md) </li>
+<li>[Add and modify fields](../work/process/customize-process-field.md)</li>
+<li>[Modify the web form layout](../work/process/customize-process-form.md)</li>
+<li>[Modify the workflow states](../work/process/customize-process-workflow.md) </li>
+<li>[Add a custom work item type](../work/process/customize-process-wit.md) </li>
 </ul>
 
 <p><b>Manage processes (Team Services) </b></p>
-<p>[Create inherited processes and migrate team projects to use them](work/process/manage-process.md). Set the default process and enable, disable, or delete processes you no longer want to use.   </p>
+<p>[Create inherited processes and migrate team projects to use them](../work/process/manage-process.md). Set the default process and enable, disable, or delete processes you no longer want to use.   </p>
 
 
 
@@ -2457,41 +2457,41 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Kanban process tools</b></p>
-<p>You can use the Kanban board with any process--Agile, Scrum, CMMI--or team project that you select or create. Agile Kanban tools support working with the [Kanban board](work/kanban/kanban-basics.md), [adding task checklists](work/kanban/add-task-checklists.md), [setting WIP limits](work/kanban/wip-limits.md), [custom columns](work/kanban/add-columns.md), [split columns](work/kanban/split-columns.md), [custom swimlanes](work/kanban/expedite-work.md), and [customizing cards](work/customize/customize-cards.md). </p>
+<p>You can use the Kanban board with any process--Agile, Scrum, CMMI--or team project that you select or create. Agile Kanban tools support working with the [Kanban board](../work/kanban/kanban-basics.md), [adding task checklists](../work/kanban/add-task-checklists.md), [setting WIP limits](../work/kanban/wip-limits.md), [custom columns](../work/kanban/add-columns.md), [split columns](../work/kanban/split-columns.md), [custom swimlanes](../work/kanban/expedite-work.md), and [customizing cards](../work/customize/customize-cards.md). </p>
 
 
 <p><b>Scrum process</b></p>
-<p>Choose [Scrum](work/guidance/scrum-process.md) when your team practices Scrum and you want to track product backlog items (PBIs) and bugs on the Kanban board, or break PBIs and bugs down into tasks on the task board. </p>
+<p>Choose [Scrum](../work/guidance/scrum-process.md) when your team practices Scrum and you want to track product backlog items (PBIs) and bugs on the Kanban board, or break PBIs and bugs down into tasks on the task board. </p>
 ![Scrum process work item types](_img/features-scrum-wits.png)   
 <br/>
 
 <p><b>Scrum work items and workflow process guidance</b></p>
-<p>Plan and track your work using the [work item types and workflow supported by the Scrum process](work/guidance/scrum-process-workflow.md).  </p>
+<p>Plan and track your work using the [work item types and workflow supported by the Scrum process](../work/guidance/scrum-process-workflow.md).  </p>
 
 <p><b>Agile work items and workflow process guidance</b></p>
-<p>Plan and track your work using the [work item types and workflow supported by the Agile process](work/guidance/agile-process-workflow.md).  </p>
+<p>Plan and track your work using the [work item types and workflow supported by the Agile process](../work/guidance/agile-process-workflow.md).  </p>
 
 <p><b>Work item field index</b></p>
-<p>For descriptions and usage of each field used by the core and inherited processes, see [Work item field index](work/guidance/work-item-field.md).   </p>
+<p>For descriptions and usage of each field used by the core and inherited processes, see [Work item field index](../work/guidance/work-item-field.md).   </p>
 
 
 </td>
 <td width="33%">
 <p><b>Scrum process tools</b></p>
-<p>Scrum processes can be used with any process--Agile, Scrum, CMMI--or team project that you select or create. Agile Scrum tools support [sprint planning](work/scrum/sprint-planning.md), [capacity planning](work/scale/capacity-planning.md), [task boards](work/scrum/task-board.md), and [burndown charts](work/scrum/sprint-burndown.md).  </p>
+<p>Scrum processes can be used with any process--Agile, Scrum, CMMI--or team project that you select or create. Agile Scrum tools support [sprint planning](../work/scrum/sprint-planning.md), [capacity planning](../work/scale/capacity-planning.md), [task boards](../work/scrum/task-board.md), and [burndown charts](../work/scrum/sprint-burndown.md).  </p>
 
 
 <p><b>Manage processes (Team Services) </b></p>
-<p>[Add users to built-in groups](setup-admin/permissions.md) to grant them access to your team project. Optionally, create groups to customize access based on your business requirements.</p>
+<p>[Add users to built-in groups](../security/permissions.md) to grant them access to your team project. Optionally, create groups to customize access based on your business requirements.</p>
 
 <p><b>CMMI process</b></p>
-<p>Choose [CMMI](work/guidance/cmmi-process.md) when your team follows more formal project methods that require a framework for process improvement and an auditable record of decisions. CMMI supports tracking requirements, change requests, risks, and reviews.</p>
+<p>Choose [CMMI](../work/guidance/cmmi-process.md) when your team follows more formal project methods that require a framework for process improvement and an auditable record of decisions. CMMI supports tracking requirements, change requests, risks, and reviews.</p>
 ![CMMI work item types](_img/features-cmmi-wits.png)  
 <br/>
 
 
 <p><b>CMMI work items and workflow process guidance</b></p>
-<p>Plan and track your work using the [work item types and workflow supported by the CMMI process](work/guidance/cmmi-process-workflow.md).  </p>
+<p>Plan and track your work using the [work item types and workflow supported by the CMMI process](../work/guidance/cmmi-process-workflow.md).  </p>
 
 
 </td>
@@ -2512,7 +2512,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>A process template is the forerunner and on-premises version of a process. It provides the  building blocks of the work item tracking system as well as other sub-systems you access through your team project. Process templates support full [customization of all its objects](https://msdn.microsoft.com/library/ms243782.aspx). </p>
 
 <p><b>Manage process templates </b></p>
-<p>[Download and upload process templates](work/guidance/manage-process-templates.md) to support customization and upgrade of your work tracking experience and team projects. </p>
+<p>[Download and upload process templates](../work/guidance/manage-process-templates.md) to support customization and upgrade of your work tracking experience and team projects. </p>
 
 
 </td>
@@ -2525,13 +2525,13 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Configure Features Wizard</b></p>
-<p>Use the Configure Features Wizard to [configure team projects after a TFS upgrade to access new features](work/customize/configure-features-after-upgrade.md).  </p>
+<p>Use the Configure Features Wizard to [configure team projects after a TFS upgrade to access new features](../work/customize/configure-features-after-upgrade.md).  </p>
 
 </td>
 <td width="33%">
 
 <p><b>Changes made to process templates</b></p>
-<p>For a catalog of changes, see [Changes made to process templates](work/guidance/changes-to-process-templates.md).</p>
+<p>For a catalog of changes, see [Changes made to process templates](../work/guidance/changes-to-process-templates.md).</p>
 
 
 
@@ -2561,7 +2561,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>A [team project](setup-admin/create-team-project.md) provides a repository for source code and a place for a group of developers to plan, track progress, and collaborate on building software solutions. A team project lives within a team project collection. You can grant permissions to and customize a team project to support your business needs. </p>
 
 <p><b>Create a team project </b></p>
-<p>You can [create a team project hosted in the cloud (Team Services)](setup-admin/team-services/connect-to-visual-studio-team-services.md), avoiding maintenance and administrative overhead, or [create a team project on an on-premises TFS](setup-admin/create-team-project.md).</p>
+<p>You can [create a team project hosted in the cloud (Team Services)](../accounts/connect-to-visual-studio-team-services.md), avoiding maintenance and administrative overhead, or [create a team project on an on-premises TFS](setup-admin/create-team-project.md).</p>
 
 
 <p><b>Rename a team project</b></p>
@@ -2579,7 +2579,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <br/>
 
 <p><b>Change the process (Team Services) </b></p>
-<p>You [change the process of a team project](work/process/manage-process.md) to apply customizations you've made to an inherited process. You can [add and modify fields and modify the layout of each work item type](work/process/customize-process.md) defined for that process.  </p>
+<p>You [change the process of a team project](../work/process/manage-process.md) to apply customizations you've made to an inherited process. You can [add and modify fields and modify the layout of each work item type](../work/process/customize-process.md) defined for that process.  </p>
 
 
 </td>
@@ -2589,10 +2589,10 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>From your [account hub](connect/account-home-pages.md), you can view and quickly navigate to teams, team projects, branches, work items, pull requests and other objects that are relevant to you and that are stored in different team projects within the account collection. </p>
 
 <p><b>Customize a team project (TFS) </b></p>
-<p>You customize a team project defined on an on-premises TFS by [modifying definition files for work item types or process configuration, or changing field attributes](work/customize/customize-work.md).  </p>
+<p>You customize a team project defined on an on-premises TFS by [modifying definition files for work item types or process configuration, or changing field attributes](../work/customize/customize-work.md).  </p>
 
 <p><b>Update a team project after an upgrade (TFS)</b></p>
-<p>Some features added when you upgrade your on-premises application server may require you to [configure features to access them](work/customize/configure-features-after-upgrade.md). </p>
+<p>Some features added when you upgrade your on-premises application server may require you to [configure features to access them](../work/customize/configure-features-after-upgrade.md). </p>
 
 
 <p><b>Upload reports (TFS) </b></p>
@@ -2616,24 +2616,24 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>What is a team?</b></p>
-<p>A team is an organizing unit used to support a number of [team-configurable tools and assets](work/scale/manage-team-assets.md) to plan and manage work and facilitate collaboration.  </p>
+<p>A team is an organizing unit used to support a number of [team-configurable tools and assets](../work/scale/manage-team-assets.md) to plan and manage work and facilitate collaboration.  </p>
 
 <p><b>Add team members</b></p>
-<p>Add accounts--[Team Services](setup-admin/team-services/add-team-members-vs.md) | [TFS](work/scale/multiple-teams.md#add-team-members)--to a team to enable users to share code, plan and track work, and access other team assets and resources. </p>
+<p>Add accounts--[Team Services](../accounts/add-team-members-vs.md) | [TFS](../work/scale/multiple-teams.md#add-team-members)--to a team to enable users to share code, plan and track work, and access other team assets and resources. </p>
 ![Manage users, add team members](_img/alm-feature-manage-members.png)  
 <br/>
 
 
 <p><b>Add a team</b></p>
-<p>As your organization grows, consider moving from your [default team of one to two or more teams](work/scale/multiple-teams.md#add-team-members) to support feature-focused groups within your org.</p>
+<p>As your organization grows, consider moving from your [default team of one to two or more teams](../work/scale/multiple-teams.md#add-team-members) to support feature-focused groups within your org.</p>
 
 
 <p><b>Add a team admin</b></p>
-<p>Add user accounts to the team admin role to enable them to [configure team settings](work/scale/manage-team-assets.md#add-team-admin). Team settings can only be configured by a team or project admin. </p>
+<p>Add user accounts to the team admin role to enable them to [configure team settings](../work/scale/manage-team-assets.md#add-team-admin). Team settings can only be configured by a team or project admin. </p>
 
 
 <p><b>Support stakeholders</b></p>
-<p>Members within your org who don't have a license or contribute to developing the code base [can track project priorities and provide direction, feature ideas, and business alignment to a team](work/connect/work-as-a-stakeholder.md).  </p>
+<p>Members within your org who don't have a license or contribute to developing the code base [can track project priorities and provide direction, feature ideas, and business alignment to a team](../work/connect/work-as-a-stakeholder.md).  </p>
 </td>
 <td width="33%">
 
@@ -2649,26 +2649,26 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Setup a team hierarchy</b></p>
-<p>By [configuring your teams and backlogs into an hierarchical structure](work/scale/portfolio-management.md), program owners can more easily track progress across teams, manage portfolios, and generate rollup data. </p>
+<p>By [configuring your teams and backlogs into an hierarchical structure](../work/scale/portfolio-management.md), program owners can more easily track progress across teams, manage portfolios, and generate rollup data. </p>
 
 <p><b>Set team defaults</b></p>
-<p>Several Agile tools reference the team's default area path, iteration path, and activated sprints to automatically filter the set of work items they display. Understand how defaults are used and how to [set the defaults for your team](work/scale/set-team-defaults.md).</p>
+<p>Several Agile tools reference the team's default area path, iteration path, and activated sprints to automatically filter the set of work items they display. Understand how defaults are used and how to [set the defaults for your team](../work/scale/set-team-defaults.md).</p>
 
 <p><b>Select team sprints</b></p>
-<p>[Select your team's sprints](work/scrum/define-sprints.md) to gain access to sprint backlogs and task boards.</p>
+<p>[Select your team's sprints](../work/scrum/define-sprints.md) to gain access to sprint backlogs and task boards.</p>
 ![Set start and end dates for a sprint](_img/features-team-sprints-2.png)  
 <br/>
 </td>
 <td width="33%">
 
 <p><b>Manage team assets</b></p>
-<p>Configure, customize, and manage all [team-related activities](work/scale/manage-team-assets.md)</p>
+<p>Configure, customize, and manage all [team-related activities](../work/scale/manage-team-assets.md)</p>
 
 
 
 
 <p><b>Team alerts</b></p>
-<p>As changes occur to work items, code reviews, source control files, and builds, your team can automatically [receive email notifications for alerts](work/track/alerts-and-notifications.md) that you define.  </p>
+<p>As changes occur to work items, code reviews, source control files, and builds, your team can automatically [receive email notifications for alerts](../work/track/alerts-and-notifications.md) that you define.  </p>
 
 
 <p><b>Team rooms</b></p>
@@ -2676,7 +2676,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Team groups</b></p>
-<p>A [team group is created](work/scale/multiple-teams.md#team-group) when you create a team. Use this group in queries or to set permissions for your team.  </p>
+<p>A [team group is created](../work/scale/multiple-teams.md#team-group) when you create a team. Use this group in queries or to set permissions for your team.  </p>
 </td>
 </tr>
 </tbody>
@@ -2699,26 +2699,26 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Work item history & auditing</b></p>
-<p>Review and query [work item change history](work/track/history-and-auditing.md) to learn of past decisions and support future ones. </p>
+<p>Review and query [work item change history](../work/track/history-and-auditing.md) to learn of past decisions and support future ones. </p>
 
 
 <p><b>Manage risks and dependencies</b></p>
-<p>Link work items to [track related work, dependencies, and changes made over time](work/track/link-work-items-support-traceability.md). [Create queries](work/track/using-queries.md) based on link type to monitor dependencies.</p>
+<p>Link work items to [track related work, dependencies, and changes made over time](../work/track/link-work-items-support-traceability.md). [Create queries](../work/track/using-queries.md) based on link type to monitor dependencies.</p>
 ![Links control](_img/features-wit-link-tab.png)  
 <br/>
 
 
 <p><b>Rich text comments</b></p>
-<p>Describe and comment on work to perform using [formatted text, hyperlinks, and inline images](work/backlogs/add-work-items.md).  </p>
+<p>Describe and comment on work to perform using [formatted text, hyperlinks, and inline images](../work/backlogs/add-work-items.md).  </p>
 
 <p><b>Discussion (Team Services) </b></p>
-<p>[Add or review comments](work/backlogs/add-work-items.md) added to a work item. Start by clicking the ![Discussions icon](work/backlogs/_img/icon-discussions-wi.png) discussion icon.  </p>
+<p>[Add or review comments](../work/backlogs/add-work-items.md) added to a work item. Start by clicking the ![Discussions icon](../work/backlogs/_img/icon-discussions-wi.png) discussion icon.  </p>
 ![Discussion section](_img/alm-feature-add-work-items-discussion.png)  
 <br/>
 
 
 <p><b>Storyboard</b></p>
-<p>[Link your storyboards to you backlog work items](work/office/storyboard-your-ideas-using-powerpoint.md).  </p>
+<p>[Link your storyboards to you backlog work items](../work/office/storyboard-your-ideas-using-powerpoint.md).  </p>
 
 </td>
 
@@ -2728,7 +2728,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>[Get detailed information about what changes have been made to your local and centralized branches and repositories](git/get-started.md), compare files and folders, review history of commits and  file changes. </p>
 
 <p><b>Integrate Git development with work tracking (Team Services) </b></p>
-<p>Drive Git development and stay in sync as a team to complete backlog items and tasks using the [Git Development section](work/backlogs/connect-work-items-to-git-dev-ops.md). Add branches, create pull requests, and view all development performed to support the specific work item.  </p>
+<p>Drive Git development and stay in sync as a team to complete backlog items and tasks using the [Git Development section](../work/backlogs/connect-work-items-to-git-dev-ops.md). Add branches, create pull requests, and view all development performed to support the specific work item.  </p>
 ![Work item form Development section](_img/alm-feature-git-dev-section.png)  
 <br/>
 <p><b>TFVC code changes </b></p>
