@@ -6,7 +6,7 @@ ms.technology: vs-devops-build
 ms.assetid: 2886C58B-0F4B-4C0C-A248-3980CA629FD8 
 ms.manager: douge
 ms.author: ahomer
-ms.date: 21/03/2017
+ms.date: 09/26/2017
 ---
 
 # Run automated tests from test plans in the Test hub
@@ -99,6 +99,11 @@ You will need:
      using the **Override test run parameters** setting.
 
    ![Specifying the properties for the Visual Studio Test task](_img/run-automated-tests-from-test-hub/run-auto-tests-from-hub-06.png)
+
+   For information about the option settings of the Visual Studio Test task, see:
+   
+   * [Visual Studio Test version 1](https://github.com/Microsoft/vsts-tasks/blob/releases/m109/Tasks/VsTest/README.md)
+   * [Visual Studio Test version 2](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTest/README.md)
 
 1. Choose the **Agent phase** item and verify that the deployment queue
    is set to the one containing the machines where you want to run the

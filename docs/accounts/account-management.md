@@ -5,15 +5,15 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
 ms.assetid: fa1dbe39-08b1-4eba-886a-33c1aa1e6a83
 ms.topic: get-started-article
-toc: show
 ms.manager: douge
-ms.author: elbatk
+ms.author: estfan
 ms.date: 04/04/2017
 ---
 
 
-# About account management  
-<b>VSTS</b> 
+# Account management for VSTS
+
+**VSTS**
 
 With Visual Studio Team Services (VSTS), you can collaborate with others to develop applications using our cloud service.  
 
@@ -36,7 +36,7 @@ and cloud-based load testing.
 
 ## Connect to your account
 After VSTS creates your account, 
-[connect to your account](../connect/connect-team-projects.md) 
+[connect to your account](../user-guide/connect-team-projects.md) 
 with tools like Xcode, Eclipse, or Visual Studio, 
 and add code to your team project.
 

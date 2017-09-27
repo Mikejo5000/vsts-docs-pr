@@ -7,7 +7,7 @@ ms.assetid:
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article
-ms.date: 08/03/2017
+ms.date: 09/29/2017  
 ---
 
 # About work items 
@@ -24,22 +24,22 @@ To track different types of work, different work item types (WITs) are defined. 
 
 For example, the following WITs are available to you when you choose the Agile team project. 
 
-<img src="../guidance/_img/agile-process-plan-wits.png" alt="Agile process, WITs used to plan and track" style="border: 2px solid #C3C3C3;" />
+<img src="guidance/_img/agile-process-plan-wits.png" alt="Agile process, WITs used to plan and track" style="border: 2px solid #C3C3C3;" />
 
-To learn more about processes and process templates, see [Choose a process](../guidance/choose-process.md).
+To learn more about processes and process templates, see [Choose a process](./guidance/choose-process.md).
 
  
 ## Work item form 
 
 Each work item supports tracking data contained in work item fields. Also, it captures changes as updates are made within the History field. 
 
-Each form contains a number of controls as shown below and described in [Work item form controls](../work-items/work-item-form-controls.md). 
+Each form contains a number of controls as shown below and described in [Work item form controls](work-item-form-controls.md). 
 
 ![Work item form to track features or user stories](../backlogs/_img/add-work-item-vsts-user-story-form.png)
 
 
 <a id="assign-work-items"></a>
-## Assign work items  to a team member
+## Assign work items to a team member
 
 You can only assign a work item to one person at a time. The Assigned To field is person-name field designed to hold an account identity recognizable by VSTS or TFS. 
 
@@ -67,13 +67,61 @@ Note the following:
 
 
 >[!NOTE]  
->**On-premises TFS only**: To minimize the list of names that appear in the drop-down menus of person-name fields, you can scope the field to only those groups that you want to appear in the menu. You do this by adding one or more of the following child elements to the **FIELD** definition in the work item type definition: **ALLOWEDVALUES**, **PROHIBITEDVALUES**, and **VALIDUSER**. For details, see [Apply a field rule](../reference/apply-rule-work-item-field.md).
+>**On-premises TFS only**: To minimize the list of names that appear in the drop-down menus of person-name fields, you can scope the field to only those groups that you want to appear in the menu. You do this by adding one or more of the following child elements to the **FIELD** definition in the work item type definition: **ALLOWEDVALUES**, **PROHIBITEDVALUES**, and **VALIDUSER**. For details, see [Apply a field rule](../customize/reference/apply-rule-work-item-field.md).
 
 
 <a id="assign-to-sprint"></a>
 ## Assign work items to a sprint 
 
 To schedule work items to be worked on during at specific time period, you assign the Iteration field. to learn more, see [Schedule sprints](../scrum/define-sprints.md). 
+
+
+<a id="track"> </a>
+## Track bugs as requirements or tasks 
+
+Many Scrum teams treat bugs the same as any backlog item or user story. Others see bugs as work that belongs to implementing a story, and therefore treat them as a task.  
+
+Bugs, like product backlog items (PBIs) and user stories, represent work that needs doing. So, should you track your bugs along with other items in the product backlog items or as tasks linked to those backlog items? How does your team estimate work?  
+
+Based on how your team answers these questions, they can choose how they want to track bugs from one of these three choices. To change the team setting, see [Show bugs on backlogs and boards](../customize/show-bugs-on-backlog.md). 
+
+<table>
+<tbody valign="top">
+<tr>
+<th>Bug tracking options</th>
+<th>Choose this option </th>
+</tr>
+<tr>
+<td>
+<p>**Bugs appear as part of the product backlog**</p>
+<p>Bugs appear on backlogs and boards with requirements </p> 
+</td>
+<td>
+<p>When your team or product owner wants to manage bugs similar to requirements. Bugs can be added and prioritize along with PBIs or user stories on the [product backlog](../backlogs/create-your-backlog.md). </p>
+<p>With this option, the team can estimate the effort or story points for bugs which are then included against team velocity and cumulative flow. </p> 
+</td>
+</tr>
+<tr>
+<td>
+<p>**Bug backlog is separate from the product backlog** </p>
+<p>Bugs appear on backlogs and boards with tasks </p>
+</td>
+<td>
+<p>When your team links bugs to PBIs or user stories, and manages them similar to tasks.</p> 
+<p>With this option, the team can estimate remaining work for bugs and track progress against the sprint capacity and sprint burndown.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>**Bugs don't appear on backlogs and boards** </p>
+</td>
+<td>
+<p>When your team manages bugs separate from requirements or tasks, or a different team is tasked with addressing bugs. </p> 
+</td>
+</tr>
+</tbody>
+</table>  
+
 
 ## Find or list work items 
 
@@ -82,11 +130,11 @@ You can use the search box to perform an adhoc search to find specific work item
 Or, you can create a query to perform a managed search which will list work items based on your query criteria. With manage searches you can perform a number of other tasks, such as to triage work items, create a trend or status chart and add to the dashboard, and more. 
 
 To learn more, see these topics: 
-- [Queries overview](../track/example-queries.md)  
+- [Create managed queries to list, update, or chart work items ](../track/example-queries.md)  
+- [View, run, or email a query](../track/view-run-query.md)  
 - [Adhoc vs managed queries](../track/adhoc-vs-managed-queries.md)  
-- [Managed queries](../track/using-queries.md)  
 - [Charts](../../report/charts.md)  
-- [Dashboards](../../report/dashboards.md)  
+
 
 ## Customize a WIT 
 
@@ -107,11 +155,11 @@ Based on the platform or version you use, you can perform the following tasks.
  
 Prior to creating templates, consider how you and your team(s) will use the templates. If you'll be using several templates, determine a naming convention that will help users easily select the right template for their use. 
 
-If you want to use custom fields in your templates, define those fields prior to creating your templates. See [Customize a field for a process](../process/customize-process-field.md) for VSTS, and [Add or modify a field](../customize/add-modify-field.md) for on-premises TFS. 
+If you want to use custom fields in your templates, define those fields prior to creating your templates. See [Customize a field for a process](../customize/process/customize-process-field.md) for VSTS, and [Add or modify a field](../customize/add-modify-field.md) for on-premises TFS. 
 
 You can specify any number of fields you want, including ones that the user will change&mdash;such as Title or Description. If you want the work item assigned to a specific team, define the team Area Path as part of the template.  
 
-Once you have a template defined, you can share it via email or a dashboard. Copy the link to the template and paste it within a markdown widget or through the Welcome page. See [Markdown guidance](../../reference/markdown-guidance.md).  
+Once you have a template defined, you can share it via email or a dashboard. Copy the link to the template and paste it within a markdown widget or through the Welcome page. See [Markdown guidance](../../collaborate/markdown-guidance.md).  
 
 To learn more, see [Use templates to add and update work items](../backlogs/work-item-template.md).  
  
@@ -119,7 +167,7 @@ To learn more, see [Use templates to add and update work items](../backlogs/work
 ## Try this next 
 
 > [!div class="nextstepaction"]
-> [Add a work item](/vsts/work/backlogs/add-work-items?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)
+> [Add a work item](../backlogs/add-work-items.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)
 
 
 ### Required permissions
@@ -128,17 +176,17 @@ As a member added to the Contributors group of a team project, you can use most 
 
 If you've been added with stakeholder access, you are limited to certain features. For details, see [Work as a Stakeholder](../../security/get-started-stakeholder.md). 
 
-To learn more about permissions and access, see [Permissions and access for work tracking](../permissions-access-work-tracking.md). 
+To learn more about permissions and access, see [Permissions and access for work tracking](../../security/permissions-access-work-tracking.md). 
 
 
 <a id="clients"></a>  
 ### Clients that support tracking work items  
 You can add work items from various clients, such as: 
 - From the web portal backlog pages, you can add user stories, backlog items, features, and epics from the [quick add panel](../backlogs/create-your-backlog.md). 
-- From the [Team Explorer add-in to Visual Studio](../../connect/work-team-explorer.md), you can add most types of work items from the Work page.  
+- From the [Team Explorer add-in to Visual Studio](../../user-guide/work-team-explorer.md), you can add most types of work items from the Work page.  
 - If you work in [Eclipse](https://eclipse.org/home/newcomers.php), you can create work items using [Team Explorer Everywhere](https://www.visualstudio.com/products/team-explorer-everywhere-vs). 
 - From Test Manager or the web portal, you can can [create test cases that automatically link to a user story or product backlog item](../../manual-test/getting-started/create-test-cases.md).
-- You can create bugs from the web portal, Visual Studio, or when [testing with Test Manager](https://msdn.microsoft.com/library/dd286731.aspx).  
+- You can create bugs from the web portal, Visual Studio, or when [testing with Microsoft Test Manager](https://msdn.microsoft.com/library/dd286731.aspx).  
 
 For an overview of all clients that connect to your team project, see [Tools and clients that connect to VSTS and TFS](../../user-guide/tools.md). 
 

@@ -6,7 +6,7 @@ ms.technology: vs-devops-build
 ms.assetid: CAA3900B-1939-41B8-871B-FF0E99DC3E5A
 ms.manager: douge
 ms.author: ahomer
-ms.date: 08/12/2016
+ms.date: 09/26/2017
 ---
 
 # Testing with unified agents and phases
@@ -19,6 +19,11 @@ The new version of the task also integrates intelligently with
 [task phases](../../build-release/concepts/process/phases.md).
 This topic explores how you can use this task, and explains how
 it works in a range of scenarios.  
+
+For more information about the tasks see:
+
+* [Visual Studio Test version 1](https://github.com/Microsoft/vsts-tasks/blob/releases/m109/Tasks/VsTest/README.md)
+* [Visual Studio Test version 2](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTest/README.md)
 
 You select the [specific version](../../build-release/concepts/process/tasks.md#task-versions)
 of a task you want to use in the **Version** list at the top

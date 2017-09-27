@@ -6,7 +6,7 @@ ms.technology: vs-devops-test-manual
 ms.assetid: 1426e139-c7d4-4270-8db7-af7d6da80574
 ms.manager: douge
 ms.author: ahomer
-ms.date: 08/12/2016
+ms.date: 09/26/2017
 ms.topic: get-started-article
 ---
 
@@ -90,7 +90,7 @@ update it automatically.
    a session report to share findings.
  
 >If you have problems connecting to VSTS or TFS, you may find
-the topic [TF31002: Unable to connect](../../work/reference/error/tf31002-unable-connect-tfs.md) useful.
+the topic [TF31002: Unable to connect](../../work/customize/reference/error/tf31002-unable-connect-tfs.md) useful.
 
 ## See also
 

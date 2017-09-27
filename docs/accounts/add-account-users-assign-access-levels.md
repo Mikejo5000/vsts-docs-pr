@@ -1,5 +1,5 @@
 ---
-title: Add user accounts and assign access level in VSTS
+title: Add user accounts and assign access level in VSTS if you turned off User Hub
 description: Add users and assign access levels in Visual Studio Team Services (Visual Studio Online, VSO, VSTS)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
@@ -9,7 +9,7 @@ ms.author: estfan
 ms.date: 1/13/2017
 ---
 
-#	Manage users and access in VSTS
+#	Manage users and access in VSTS (if you turned off User Hub)
 
 **VSTS**
 
@@ -84,10 +84,11 @@ You'll need [VSTS project collection administrator or account owner permissions]
 
  > [!NOTE]
  > If have an Azure Active Directory (Azure AD) backed VSTS account, and you need to add users who are 
- > external to your Azure AD, first 
- > [add those users as foreign principals](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-create-users#add-a-user) to 
- > your Azure AD.  Be sure on the **Tell us about this user page**, under **Type of user**, to choose **User with an 
- > existing Microsoft account**.  After completing those steps, follow the steps below to add the foreign Azure AD 
+ > in a different organization (regardless of whether that organization uses Azure AD) to your Azure AD, you can use  
+ > [business-to-business (B2B) collaboration](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) to 
+ > [add these users](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-create-users#add-a-user) to 
+  > your Azure AD.  Be sure on the **Tell us about this user page**, under **Type of user**, to choose **User with an 
+ > existing Microsoft account**.  After completing those steps, follow the steps below to add the B2B 
  > user to VSTS.
 
     ![Go to Users hub](_img/_shared/users-hub-updated.png)
@@ -183,20 +184,20 @@ you can [add them to team projects](add-team-members-vs.md).
 
 	*	Git with [Eclipse](https://java.visualstudio.com/Docs/tools/eclipse), 
 	[Xcode](../git/share-your-code-in-git-xcode.md), 
-	[Visual Studio](../connect/connect-team-projects.md), 
+	[Visual Studio](../user-guide/connect-team-projects.md), 
 	[Android Studio](http://java.visualstudio.com/Docs/tools/androidstudio), 
 	[IntelliJ](http://java.visualstudio.com/Docs/tools/intelliJ), 
 	or [Visual Studio Code](https://code.visualstudio.com/docs/editor/versioncontrol)
 
 	*	TFVC using [Eclipse](https://java.visualstudio.com/Docs/tools/eclipse), 
 	[Xcode](../tfvc/share-your-code-in-tfvc-xcode.md), 
-	[Visual Studio](../connect/connect-team-projects.md), or 
+	[Visual Studio](../user-guide/connect-team-projects.md), or 
 	[Visual Studio Code](https://code.visualstudio.com/docs/editor/versioncontrol)
 
 *	[Create a backlog](../work/backlogs/create-your-backlog.md) 
 to plan, organize, and track your work, 
-[manage your process](../work/process/manage-process.md), 
-or [customize your process](../work/process/customize-process.md)
+[manage your process](../work/customize/process/manage-process.md), 
+or [customize your process](../work/customize/process/customize-process.md)
 
 *	[Grow and scale your teams](../work/scale/multiple-teams.md)
 
