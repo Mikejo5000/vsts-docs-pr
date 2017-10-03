@@ -16,12 +16,9 @@ In the **Sprint 124 Update** of Visual Studio Team Services (VSTS) we’re annou
 
 Some of the other key feature highlights include:
 
-* [New Queries experience](#new-queries-experience) - Use favorites and a simplified directory to get to the queries that are important to you.
-* [Personalized notifications for releases](#personalized-notifications-for-releases) - Keep the release pipeline moving with automated notifications for interventions.
-* [Run webtests using the VSTest task](#run-webtests-using-the-vstest-task) - Include webtests in your CI/CD pipeline.
-* [Gulp, Yarn, and more authenticated feed support](#gulp-yarn-and-more-authenticated-feed-support) - Use authenticated feeds in subsequent build tasks.
-* [Burndown and Burnup widgets](#burndown-and-burnup-widgets) - Answer the question: Will we complete this project on time?
-* [Deep linking](#wiki-page-deep-linking), [preview content side-by-side](#preview-content-as-you-edit-wiki-pages), and [paste rich HTML content](#paste-rich-content-as-html) in Wiki.
+* [Pull request comments follow renamed files](#pull-request-comments-follow-renamed-files) - Comments now follow renames.
+* [Use Azure Key Vault secrets in your CI build](#use-azure-key-vault-secrets-in-your-ci-build) - Stay secure in your build process by referencing Azure Key Vault secrets.
+* [Bulk Deploy environments manually from Release view](#bulk-deploy-environments-manually-from-release-view) - Go broad across environments with a single Deploy action.
 
 > [!NOTE]
 > The features discussed in this post will be rolling out over the next three weeks.
@@ -76,7 +73,7 @@ You can now leverage Azure’s highly secure storage to manage the secrets you u
 
 See the [Azure Key Vault page](https://azure.microsoft.com/en-us/services/key-vault/) and [Link secrets from an Azure Key vault as variables documentation](https://docs.microsoft.com/en-us/vsts/build-release/concepts/library/variable-groups) for more information.
 
-### New software on our hosted agents
+### New software on our hosted VS2017 agents
 
 Software we’ve updated in the Hosted VS2017 pool includes: Visual Studio 2017 version 15.3.5, Azure Service Fabric SDK 2.7, and Docker version 17.10.0. See the [VSTS Hosted VS2017 image page](https://go.microsoft.com/fwlink/?linkid=859172) for more information.
 
@@ -120,4 +117,3 @@ You can also get advice and your questions answers by the community on [Stack Ov
 
 Thanks,
 
-Jamie Cool
