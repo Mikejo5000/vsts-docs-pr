@@ -1,5 +1,5 @@
 ---
-title:  – VSTS Sprint 124 Update
+title: Streamlined code and work items search – VSTS Sprint 124 Update
 author: alexcnichols
 ms.author: alexn
 ms.date: 10/09/2017
@@ -10,9 +10,9 @@ ms.manager: douge
 description: Visual Studio Team Services (VSTS) release notes for Sprint 124 Update on October 9, 2017.
 ---
 
-#  – VSTS Sprint 124 Update
+# Streamlined code and work items search – VSTS Sprint 124 Update
 
-In the **Sprint 124 Update** of Visual Studio Team Services (VSTS) we’re announcing the availability of multi-phase builds to build multiple kinds of apps as part of a single build. Read more about [Multi-phase builds](#multi-phase-builds) below.
+In the **Sprint 124 Update** of Visual Studio Team Services (VSTS) we’re announcing the availability of the combined, streamlined code and work items search in preview to help you find the code or work items you’re looking for even faster. Read more about [New experience for search](#new-experience-for-code-and-work-items-search) below.
 
 Some of the other key feature highlights include:
 
