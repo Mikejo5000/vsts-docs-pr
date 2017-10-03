@@ -88,9 +88,11 @@ You can now manually trigger a **Deploy** action to multiple environments of a 
 
 <img src="_img/124_04.png"; alt="Bulk deploy" style="border:1px solid Silver; display: block; margin: auto;" />
 
-### Work information in Release with Jenkins CI
+### Process parameters for deployment templates
 
-We want to have better integration with popular continuous integration (CI) systems like Jenkins. Today in the **Release Summary** tab we show work items only if the CI build is coming from VSTS, with this feature we now show work information for Jenkins CI artifacts as well - provided Jenkins server is reachable by the VSTS/TFS agent that is executing the release.
+We are bringing the process parameters that existed in CI templates to the deployment templates. For all native deployment templates, the most important fields across all tasks in the template are now promoted to the process view. You can quickly get started and successfully deploy by providing values for these minimal set of process parameters.
+
+<img src="_img/124_07.png"; alt="Process parameters for deployment templates" style="border:1px solid Silver; display: block; margin: auto;" />
 
 ### Azure Resource Group task - Expose deployment outputs as Task variables
 
@@ -98,7 +100,11 @@ Azure Resource Manager (ARM) templates allow defining outputs that need to be re
 
 <img src="_img/124_05.png"; alt="Deployment outputs as variables" style="border:1px solid Silver; display: block; margin: auto;" />
 
-### Editable artifact properties and branch based on build definition property or variable group
+### Work information in Release with Jenkins CI
+
+We want to have better integration with popular continuous integration (CI) systems like Jenkins. Today in the **Release Summary** tab we show work items only if the CI build is coming from VSTS, with this feature we now show work information for Jenkins CI artifacts as well - provided Jenkins server is reachable by the VSTS/TFS agent that is executing the release.
+
+### Default properties for Git/GitHub artifact types
 
 You can now edit default properties of Git/GitHub artifact types after it has been saved. This will be particularly useful in scenarios where the branch for that stable version of artifact has changed and future continuous delivery releases should use this branch to obtain newer versions of an artifact. The options for checkout (for example: checkout submodules) can also be changed.
 
