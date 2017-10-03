@@ -86,6 +86,51 @@ Versions in the “Server” column are linked to the appropriate download locat
     </thead>
     <tbody>
         <tr>
+            <td rowspan="11">[09 Oct 2017](2017/oct-09-vsts.md)</td>
+            <td>New experience for code and work items search</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Pull request comments follow renamed files</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Enhanced filter capability for commits with more than 1000 files changed</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Ctrl+S to save Wiki page</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Reference work items in Wiki</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Use Azure Key Vault secrets in your CI build</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>New software on our hosted VS2017 agents</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Bulk Deploy environments manually from Release view</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Process parameters for deployment templates</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Azure Resource Group task - Expose deployment outputs as Task variables</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Default properties for Git/GitHub artifact types</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
             <td rowspan="25">[15 Sep 2017](2017/sep-15-team-services.md)</td>
             <td>New Queries experience</td>
             <td style="background:rgb(232, 232, 232);">Future</td>

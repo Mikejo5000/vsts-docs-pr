@@ -59,6 +59,8 @@ It can be common to make multiple edits to a **Wiki** page in a short period of 
 
 Now you can simply press the Ctrl+S keyboard shortcut to save a page and continue editing. To customize the revision message you can instead invoke the revision message dialog by clicking on the drop down next to the **Save** button.
 
+<img src="_img/124_08.png"; alt="Wiki save" style="border:1px solid Silver; display: block; margin: auto;" />
+
 ### Reference work items in Wiki
 
 While writing release notes or epics documents in **Wiki**, it can be helpful to link the pages to work items. Now you can simply press the # key and easily reference a work item in a wiki page as you do in work item discussions and pull requests.
@@ -97,10 +99,6 @@ Azure Resource Manager (ARM) templates allow defining outputs that need to be re
 
 <img src="_img/124_05.png"; alt="Deployment outputs as variables" style="border:1px solid Silver; display: block; margin: auto;" />
 
-### Work information in Release with Jenkins CI
-
-We want to have better integration with popular continuous integration (CI) systems like Jenkins. Today in the **Release Summary** tab we show work items only if the CI build is coming from VSTS, with this feature we now show work information for Jenkins CI artifacts as well - provided Jenkins server is reachable by the VSTS/TFS agent that is executing the release.
-
 ### Default properties for Git/GitHub artifact types
 
 You can now edit default properties of Git/GitHub artifact types after it has been saved. This will be particularly useful in scenarios where the branch for that stable version of artifact has changed and future continuous delivery releases should use this branch to obtain newer versions of an artifact. The options for checkout (for example: checkout submodules) can also be changed.
@@ -117,3 +115,4 @@ You can also get advice and your questions answers by the community on [Stack Ov
 
 Thanks,
 
+Biju Venugopal
