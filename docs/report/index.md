@@ -50,6 +50,7 @@ Start gaining visibility into how your team is progressing by adding one or more
 ## Resources 
 
 - [Build a dashboard widget](/vsts/extend/develop/add-dashboard-widget)  
+- [Build a dashboard widget backed by Analytics](/vsts/extend/develop/add-odata-widget)  
 - [Marketplace widgets](https://marketplace.visualstudio.com/search?term=widget&target=VSTS&category=All%20categories&sortBy=Relevance)  
  
    
