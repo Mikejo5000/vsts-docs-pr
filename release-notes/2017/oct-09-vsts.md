@@ -28,30 +28,6 @@ Some of the other key feature highlights include:
 
 ## Code
 
-### Pull request comments follow renamed files
-
-Sometimes files are renamed or moved while a pull request is active. Previously, if there were comments on those renamed files, the latest view of the code wouldn’t be display the comments. We’ve now improved comment tracking to follow the renames, displaying comments on the latest version of renamed or moved files.
-
-### Reference work items in Wiki
-
-While writing release notes or epics documents in **Wiki**, it can be helpful to link the pages to work items. Now you can simply press the # key and easily reference a work item in a wiki page as you do in work item discussions and pull requests.
-
-<img src="_img/124_01.png"; alt="Reference work items in Wiki" style="border:1px solid Silver; display: block; margin: auto;" />
-
-### Ctrl+S to save Wiki page
-
-It can be common to make multiple edits to a **Wiki** page in a short period of time and you will likely prefer to save changes along the way. Previously when clicking the **Save** button, a dialog would appear to prompt for a revision message and confirm the save.
-
-Now you can simply press the Ctrl+S keyboard shortcut to save a page and continue editing. To customize the revision message you can instead invoke the revision message dialog by clicking on the drop down next to the **Save** button.
-
-### Enhanced filter capability for commits with more than 1000 files changed
-
-There can be several commits and pull requests that have modified more than 1000 files. When you filter content in those commits, content is filtered first and then you would click on **Load more** link several times to see whether the file of interest is in the commit.
-
-Now, when you filter content in the tree view, the search for that file is done in the entire commit instead of just looking at the top 1000 files loaded. The performance of the commit details page is also improved when there are more than 1000 files modified.
-
-<img src="_img/124_02.gif"; alt="Enhanced filter in large commits" style="border:1px solid Silver; display: block; margin: auto;" />
-
 ### New experience for code and work items search
 
 > [!TIP]
@@ -67,6 +43,30 @@ The new **Search** experience for both **Code** and **Work items** is now avail
 * Improved results layout for **Work items** search optimized for scanning through them quickly
 
 <img src="_img/124_03.png"; alt="New search experience" style="border:1px solid Silver; display: block; margin: auto;" />
+
+### Pull request comments follow renamed files
+
+Sometimes files are renamed or moved while a pull request is active. Previously, if there were comments on those renamed files, the latest view of the code wouldn’t be display the comments. We’ve now improved comment tracking to follow the renames, displaying comments on the latest version of renamed or moved files.
+
+### Enhanced filter capability for commits with more than 1000 files changed
+
+There can be several commits and pull requests that have modified more than 1000 files. When you filter content in those commits, content is filtered first and then you would click on **Load more** link several times to see whether the file of interest is in the commit.
+
+Now, when you filter content in the tree view, the search for that file is done in the entire commit instead of just looking at the top 1000 files loaded. The performance of the commit details page is also improved when there are more than 1000 files modified.
+
+<img src="_img/124_02.gif"; alt="Enhanced filter in large commits" style="border:1px solid Silver; display: block; margin: auto;" />
+
+### Ctrl+S to save Wiki page
+
+It can be common to make multiple edits to a **Wiki** page in a short period of time and you will likely prefer to save changes along the way. Previously when clicking the **Save** button, a dialog would appear to prompt for a revision message and confirm the save.
+
+Now you can simply press the Ctrl+S keyboard shortcut to save a page and continue editing. To customize the revision message you can instead invoke the revision message dialog by clicking on the drop down next to the **Save** button.
+
+### Reference work items in Wiki
+
+While writing release notes or epics documents in **Wiki**, it can be helpful to link the pages to work items. Now you can simply press the # key and easily reference a work item in a wiki page as you do in work item discussions and pull requests.
+
+<img src="_img/124_01.png"; alt="Reference work items in Wiki" style="border:1px solid Silver; display: block; margin: auto;" />
 
 ## Build
 
