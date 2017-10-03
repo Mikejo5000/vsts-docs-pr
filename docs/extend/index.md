@@ -30,6 +30,7 @@ Check out the quick starts to get you started:
 * Develop
     * [Add a build task](develop/add-build-task.md)
     * [Add a dashboard widget](develop/add-dashboard-widget.md)
+    * [Add an analytics widget](develop/add-analytics-widget.md)
     * [Call a REST API](develop/call-rest-api.md)
 * Package and publish
     * [Package and publish extensions](publish/overview.md)
