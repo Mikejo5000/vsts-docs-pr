@@ -46,7 +46,7 @@ The new **Search** experience for both **Code** and **Work items** is now avail
 
 <img src="_img/124_03.png"; alt="New search experience" style="border:1px solid Silver; display: block; margin: auto;" />
 
-> In code search we're also announcing multi-branch search capability. You can now have 5 more branches per repository indexed for searching. Your Project Admin can configure the additional branches from the Version Control settings page:
+In code search we're also announcing multi-branch search capability. You can now have 5 more branches per repository indexed for searching. Your Project Admin can configure the additional branches from the Version Control settings page:
 
 <img src="_img/124_09.png"; alt="New multi-branch configuration experience" style="border:1px solid Silver; display: block; margin: auto;" />
 
