@@ -86,7 +86,7 @@ Versions in the “Server” column are linked to the appropriate download locat
     </thead>
     <tbody>
         <tr>
-            <td rowspan="11">[09 Oct 2017](2017/oct-09-vsts.md)</td>
+            <td rowspan="12">[09 Oct 2017](2017/oct-09-vsts.md)</td>
             <td>New experience for code and work items search</td>
             <td style="background:rgb(232, 232, 232);">Future</td>
         </tr>
@@ -107,6 +107,14 @@ Versions in the “Server” column are linked to the appropriate download locat
             <td style="background:rgb(232, 232, 232);">Future</td>
         </tr>
         <tr>
+            <td>Enable Wiki home page to show on the Project description page</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Custom Project image on Project description page</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
             <td>Use Azure Key Vault secrets in your CI build</td>
             <td style="background:rgb(232, 232, 232);">Future</td>
         </tr>
@@ -120,10 +128,6 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Process parameters for deployment templates</td>
-            <td style="background:rgb(232, 232, 232);">Future</td>
-        </tr>
-        <tr>
-            <td>Azure Resource Group task - Expose deployment outputs as Task variables</td>
             <td style="background:rgb(232, 232, 232);">Future</td>
         </tr>
         <tr>

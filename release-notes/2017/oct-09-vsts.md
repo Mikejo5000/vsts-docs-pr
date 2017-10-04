@@ -76,13 +76,25 @@ While writing release notes or epics documents in **Wiki**, it can be helpful to
 
 <img src="_img/124_01.png"; alt="Reference work items in Wiki" style="border:1px solid Silver; display: block; margin: auto;" />
 
+### Enable Wiki home page to show on the Project description page
+
+Wiki now has support for richer formatting and layout capabilities than readme markdown, like HTML support and inline videos. You can now choose to show the wiki home page on the **Project** description page instead of a README.md file.
+
+See the [documentation for add and edit wiki pages](/vsts/collaborate/add-edit-wiki) for more information.
+
+### Custom Project image on Project description page
+
+VSTS has allowed you to upload a custom image for your **Project** (and default team) for some time. However, this image was only visible on the settings page. With this update, you will see the customized image on the description page, which helps to give a unique identity to a **Project**. If not customized, you will see an auto-generated image based on the Project's name.
+
+<img src="_img/124_10.png"; alt="Custom Project image" style="border:1px solid Silver; display: block; margin: auto;" />
+
 ## Build
 
 ### Use Azure Key Vault secrets in your CI build
 
 You can now leverage Azure’s highly secure storage to manage the secrets you use in your build process. Simply create a variable group that points to the key vault and use that variable group in your build definition.
 
-See the [Azure Key Vault page](https://azure.microsoft.com/en-us/services/key-vault/) and [Link secrets from an Azure Key vault as variables documentation](https://docs.microsoft.com/en-us/vsts/build-release/concepts/library/variable-groups) for more information.
+See the [Azure Key Vault page](https://azure.microsoft.com/services/key-vault/) and [Link secrets from an Azure Key vault as variables documentation](https://docs.microsoft.com/vsts/build-release/concepts/library/variable-groups) for more information.
 
 ### New software on our hosted VS2017 agents
 
@@ -102,15 +114,9 @@ We are bringing the process parameters that existed in CI templates to the deplo
 
 <img src="_img/124_07.png"; alt="Process parameters for deployment templates" style="border:1px solid Silver; display: block; margin: auto;" />
 
-### Azure Resource Group task - Expose deployment outputs as Task variables
-
-Azure Resource Manager (ARM) templates allow defining outputs that need to be returned after an Azure deployment. We have enhanced our native **Azure Resource Group Deployment** task to expose the output JSON section of the deployment object as a task output parameter with name: `<Task Reference name>.DeploymentOutputs`. You can further parse the JSON object and access the individual output values that can be consumed in subsequent tasks of the release environment.
-
-<img src="_img/124_05.png"; alt="Deployment outputs as variables" style="border:1px solid Silver; display: block; margin: auto;" />
-
 ### Default properties for Git/GitHub artifact types
 
-You can now edit default properties of Git/GitHub artifact types after it has been saved. This will be particularly useful in scenarios where the branch for that stable version of artifact has changed and future continuous delivery releases should use this branch to obtain newer versions of an artifact. The options for checkout (for example: checkout submodules) can also be changed.
+You can now edit default properties of Git/GitHub artifact types after it has been saved. This will be particularly useful in scenarios where the branch for the stable version of artifact has changed and future continuous delivery releases should use this branch to obtain newer versions of an artifact. The options for checkout (for example: checkout submodules) can also be changed.
 
 <img src="_img/124_06.png"; alt="Editable artifact properties" style="border:1px solid Silver; display: block; margin: auto;" />
 
