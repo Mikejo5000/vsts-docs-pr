@@ -30,30 +30,29 @@ Some of the other key feature highlights include:
 > [!TIP]
 > To use this capability you must have the **New User Experience in Code & Work Item Search** [preview feature](https://www.visualstudio.com/docs/collaborate/preview-features) enabled on your profile.
 
-The new **Search** experience for both **Code** and **Work items** is now available in preview.  With a new layout and controls, it is now much easier to switch between code and work item results while being easy to see what filters are currently applied. Thanks to everyone who provided feedback on our previous experience. The new experience addresses most of the feedback reported on the previous experience and brings in a host of new improvements as well:
+The new **Search** experience for both **Code** and **Work items** is now available in preview. With a new layout and controls, it is now much easier to switch between code and work item results and see what filters are currently applied. Thanks to everyone who provided feedback on our previous experience. The new experience addresses most of the reported feedback and brings in a host of new improvements too:
 
 * A new 2-pane layout open up more space for results and suits more screens sizes
 * The new filtering controls are designed based on extensive feedback from the previous experience
-    * Easily see what filters are applied with just a glance of the filter row
-    * Follows the pattern across VSTS for filters and can even be hidden away to liberate more space for results
-    * Based on where in VSTS you're coming from certain defaults are applied to make it easier to find things
+  * Easily see what filters are applied with just a glance of the filter row
+  * Follows the pattern across VSTS for filters and can even be hidden away to liberate more space for results
+  * Based on where in VSTS you’re coming from, certain defaults are applied to make it easier to find things
 * A streamlined experience that default to results from your project, if that's where the search was started from
-    * Easily navigate up to the account level to broaden your search
+  * Easily navigate up to the account level to broaden your search
 * Sort by filename and filepath in code
 * You can now filter by branch in code
-    * You can now configure 5 additional branches per repo, to be indexed by Code Search, and then use the branch filter to search in a specific branch
+  * You can now configure 5 additional branches per repo, to be indexed by code search, and then use the branch filter to search in a specific branch
 * Improved results layout for **Work items** search optimized for scanning through them quickly
 
 <img src="_img/124_03.png"; alt="New search experience" style="border:1px solid Silver; display: block; margin: auto;" />
 
-In code search we're also announcing multi-branch search capability. You can now have 5 more branches per repository indexed for searching. Your Project Admin can configure the additional branches from the Version Control settings page:
+In code search we’re also announcing multi-branch search capability. You can now have 5 more branches per repository indexed for searching. Your Project Admin can configure the additional branches from the Version Control settings page:
 
 <img src="_img/124_09.png"; alt="New multi-branch configuration experience" style="border:1px solid Silver; display: block; margin: auto;" />
 
-
 ### Pull request comments follow renamed files
 
-Sometimes files are renamed or moved while a pull request is active. Previously, if there were comments on those renamed files, the latest view of the code wouldn’t be display the comments. We’ve now improved comment tracking to follow the renames, displaying comments on the latest version of renamed or moved files.
+Sometimes files are renamed or moved while a pull request is active. Previously, if there were comments on those renamed files, the latest view of the code wouldn’t display the comments. We’ve now improved comment tracking to follow the renames, displaying comments on the latest version of renamed or moved files.
 
 ### Enhanced filter capability for commits with more than 1000 files changed
 
