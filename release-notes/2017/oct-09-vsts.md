@@ -12,7 +12,7 @@ description: Visual Studio Team Services (VSTS) release notes for Sprint 124 Upd
 
 # Streamlined code and work items search – VSTS Sprint 124 Update
 
-In the **Sprint 124 Update** of Visual Studio Team Services (VSTS) we’re announcing the availability of the combined, streamlined code and work items search in preview to help you find the code or work items you’re looking for even faster. Read more about [New experience for search](#new-experience-for-code-and-work-items-search) below.
+In the **Sprint 124 Update** of Visual Studio Team Services (VSTS) we’re announcing the availability of the streamlined code and work items search in preview to help you find the code or work items you’re looking for even faster. Read more about [New experience for search](#new-experience-for-code-and-work-items-search) below.
 
 Some of the other key feature highlights include:
 
@@ -30,7 +30,7 @@ Some of the other key feature highlights include:
 > [!TIP]
 > To use this capability you must have the **New User Experience in Code & Work Item Search** [preview feature](https://www.visualstudio.com/docs/collaborate/preview-features) enabled on your profile.
 
-The new **Search** experience for both **Code** and **Work items** is now available in preview. With a new layout and controls, it is now much easier to switch between code and work item results and see what filters are currently applied. Thanks to everyone who provided feedback on our previous experience. The new experience addresses most of the reported feedback and brings in a host of new improvements too:
+The new **Search** experience for both **Code** and **Work items** is now available in preview. With a new layout and controls, switching between code and work item results and seeing what filters are currently applied is much easier. Thank you to everyone who provided feedback on our previous experience. The new experience addresses most of the reported feedback and brings a host of improvements:
 
 * A new 2-pane layout open up more space for results and suits more screens sizes
 * The new filtering controls are designed based on extensive feedback from the previous experience
@@ -46,7 +46,7 @@ The new **Search** experience for both **Code** and **Work items** is now avail
 
 <img src="_img/124_03.png"; alt="New search experience" style="border:1px solid Silver; display: block; margin: auto;" />
 
-In code search we’re also announcing multi-branch search capability. You can now have 5 more branches per repository indexed for searching. Your Project Admin can configure the additional branches from the Version Control settings page:
+In code search we’re also announcing multi-branch search capability. You can now have 5 more branches per repository indexed for searching. Your Project Admin can configure the additional branches from the **Version Control** settings page:
 
 <img src="_img/124_09.png"; alt="New multi-branch configuration experience" style="border:1px solid Silver; display: block; margin: auto;" />
 
