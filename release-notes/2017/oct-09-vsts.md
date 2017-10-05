@@ -64,15 +64,13 @@ Now, when you filter content in the tree view, the search for that file is done 
 
 ### Ctrl+S to save Wiki page
 
-It can be common to make multiple edits to a **Wiki** page in a short period of time and you will likely prefer to save changes along the way. Previously when clicking the **Save** button, a dialog would appear to prompt for a revision message and confirm the save.
-
-Now you can simply press the Ctrl+S keyboard shortcut to save a page and continue editing. To customize the revision message you can instead invoke the revision message dialog by clicking on the drop down next to the **Save** button.
+Currently saving a wiki page pops-up a dialog that shifts the interaction from keyboard to mouse and takes several clicks to save a page. Now you can simply press Ctrl+S keyboard shortcut to save a page with a default revision message and continue editing.
 
 <img src="_img/124_08.png"; alt="Wiki save" style="border:1px solid Silver; display: block; margin: auto;" />
 
 ### Reference work items in Wiki
 
-While writing release notes or epics documents in **Wiki**, it can be helpful to link the pages to work items. Now you can simply press the # key and easily reference a work item in a wiki page as you do in work item discussions and pull requests.
+Now you can reference work items in wiki pages by pressing the # key to get a list of the most recently accessed work items and selecting the work item of interest. This is particularly useful while writing release notes, epics, specs, or other pages that require referring to a work item.
 
 <img src="_img/124_01.png"; alt="Reference work items in Wiki" style="border:1px solid Silver; display: block; margin: auto;" />
 
@@ -94,7 +92,7 @@ VSTS has allowed you to upload a custom image for your **Project** (and default 
 
 You can now leverage Azure’s highly secure storage to manage the secrets you use in your build process. Simply create a variable group that points to the key vault and use that variable group in your build definition.
 
-See the [Azure Key Vault page](https://azure.microsoft.com/services/key-vault/) and [Link secrets from an Azure Key vault as variables documentation](https://docs.microsoft.com/vsts/build-release/concepts/library/variable-groups) for more information.
+See the [Azure Key Vault page](https://azure.microsoft.com/services/key-vault/) and [Link secrets from an Azure Key vault as variables documentation](/vsts/build-release/concepts/library/variable-groups) for more information.
 
 ### New software on our hosted VS2017 agents
 
@@ -104,7 +102,7 @@ Software we’ve updated in the Hosted VS2017 pool includes: Visual Studio 2017 
 
 ### Bulk Deploy environments manually from Release view
 
-You can now manually trigger a **Deploy** action to multiple environments of a release at the same time. This allows you to select multiple environments in a release with failed configurations or deployments and re-deploy to all of the environments at once.
+You can now manually trigger a **Deploy** action to multiple environments of a release at the same time. This allows you to select multiple environments in a release with failed configurations or deployments and re-deploy to all of the environments in one operation.
 
 <img src="_img/124_04.png"; alt="Bulk deploy" style="border:1px solid Silver; display: block; margin: auto;" />
 
@@ -116,9 +114,9 @@ We are bringing the process parameters that existed in CI templates to the deplo
 
 See the [documentation for the new build editor](/vsts/build-release/archive/preview/2017-user-experience#parameters) for more information.
 
-### Default properties for Git/GitHub artifact types
+### Default properties for Git and GitHub artifact types are now editable
 
-You can now edit default properties of Git/GitHub artifact types after it has been saved. This will be particularly useful in scenarios where the branch for the stable version of artifact has changed and future continuous delivery releases should use this branch to obtain newer versions of an artifact. The options for checkout (for example: checkout submodules) can also be changed.
+This is particularly useful in scenarios where the branch for the stable version of the artifact has changed and future continuous delivery releases should use this branch to obtain newer versions of the artifact. The options for checkout, such as checkout submodules, can also be changed.
 
 <img src="_img/124_06.png"; alt="Editable artifact properties" style="border:1px solid Silver; display: block; margin: auto;" />
 
