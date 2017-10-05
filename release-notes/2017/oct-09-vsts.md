@@ -114,6 +114,8 @@ We are bringing the process parameters that existed in CI templates to the deplo
 
 <img src="_img/124_07.png"; alt="Process parameters for deployment templates" style="border:1px solid Silver; display: block; margin: auto;" />
 
+See the [documentation for the new build editor](/vsts/build-release/archive/preview/2017-user-experience#parameters) for more information.
+
 ### Default properties for Git/GitHub artifact types
 
 You can now edit default properties of Git/GitHub artifact types after it has been saved. This will be particularly useful in scenarios where the branch for the stable version of artifact has changed and future continuous delivery releases should use this branch to obtain newer versions of an artifact. The options for checkout (for example: checkout submodules) can also be changed.
