@@ -36,14 +36,16 @@ The new experience reflects many of these feedback and brings a host of improvem
 * A streamlined layout of the search box, code and work item results pivots, filter controls and two pane results pane makes search a breeze. 
 * When you start a search from with in a project search defaults to results from that project; you can easily navigate up to the account level to broaden your search.
 * The new filtering controls are designed based on extensive feedback on the previous experience
-  * Easily see what filters are applied with just a glance of the filter row
-  * You'll see that the filters no longer move up as you select them
+  * You can wasily see the filters that influence the search results
+  * We have made many minor usability changes E.g. gone are the the filters that move up as you select them
   * You can easily hide the filters to liberate more space for results
   * Based on where in VSTS you’re coming from, certain defaults are applied to make it easier to find things.
 * A new 2-pane layout open up more space for results and suits more screens sizes
 * The results layout for **Work items** search is tweaked for scanning through results quickly
 * You can now sort by filename and filepath in code
 * You can now filter by branch in code. See [Search in branches other than the default](#Search-in-branches-other-than-the-default)
+
+Please do try out the new experience and let us know your feedback.
 
 <img src="_img/124_03.png"; alt="New search experience" style="border:1px solid Silver; display: block; margin: auto;" />
 
