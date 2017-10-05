@@ -30,12 +30,12 @@ Some of the other key feature highlights include:
 > [!TIP]
 > To use this capability you must have the **New User Experience in Code & Work Item Search** [preview feature](https://www.visualstudio.com/docs/collaborate/preview-features) enabled on your profile.
 
-The new **Search** experience for both **Code** and **Work items** is now available in preview. Thank you to everyone who provided feedback on search experience and help us make the product better.
+The new **Search** experience for both **Code** and **Work items** is now available in preview. Thank you to everyone who provided feedback on search experience and helped us make the product better.
 The new experience reflects many of these feedback and brings a host of improvements:
 
-* The streamlined layout of the search box, code and work item results pivots, filter controls and two pane results pane makes search a breeze. 
-* When you start a search from with in a project search defaults to results from that project; you can easily navigate up to the account level to broaden your search
-* The new filtering controls are designed based on extensive feedback from the previous experience
+* A streamlined layout of the search box, code and work item results pivots, filter controls and two pane results pane makes search a breeze. 
+* When you start a search from with in a project search defaults to results from that project; you can easily navigate up to the account level to broaden your search.
+* The new filtering controls are designed based on extensive feedback on the previous experience
   * Easily see what filters are applied with just a glance of the filter row
   * You'll see that the filters no longer move up as you select them
   * You can easily hide the filters to liberate more space for results
