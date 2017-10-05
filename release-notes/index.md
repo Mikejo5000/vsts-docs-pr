@@ -14,6 +14,9 @@ description: VSTS feature updates roadmap, release notes, release timeline, and 
 
 ## Features under development
 
+> [!NOTE]
+> Revisions for 2017 Q4 and 2018 Q1 are coming soon.
+
 This feature list is a peek into our roadmap. It identifies some of the significant features we are currently working on and a rough timeframe for when you can expect to see them. It is not comprehensive but is intended to provide some visibility into key investments. Most features are linked to a blog post and/or UserVoice entry where you can learn more and comment. These features and dates are the current plans at this time and are subject to change. The planned date heading reflects when the feature will be available on Visual Studio Team Services (VSTS), the “Server” column reflects when it will be available in Team Foundation Server (TFS) on-premises, if applicable, and the “Area” column reflects the area of the product the feature aligns with most.
 
 ### 2017 Q3
