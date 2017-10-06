@@ -80,7 +80,7 @@ Now you can reference work items in wiki pages by pressing the '#' key to get a 
 
 ### Enable Wiki home page to show on the Project description page
 
-Wiki has rich formatting and layout capabilities, like HTML support and inline videos. You can now leverage this to create beautiful project description pages; by choosing to show the wiki home page on the **Project** description page.
+Wiki has rich formatting and layout capabilities, like HTML support and inline videos. You can now leverage these capabilities to create beautiful project description pages by choosing to show the wiki home page on the **Project** description page.
 
 See the [documentation for add and edit wiki pages](/vsts/collaborate/add-edit-wiki) for more information.
 
