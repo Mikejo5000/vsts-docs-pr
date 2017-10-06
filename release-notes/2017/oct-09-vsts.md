@@ -30,7 +30,7 @@ Some of the other key feature highlights include:
 ### New experience for code and work items search
 
 > [!TIP]
-> To use this capability you must have the [Code Search extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search) install and **New User Experience in Code & Work Item Search** [preview feature](https://www.visualstudio.com/docs/collaborate/preview-features) enabled on your profile.
+> To use this capability you must have the [Code Search extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search) installed and **New User Experience in Code & Work Item Search** [preview feature](https://www.visualstudio.com/docs/collaborate/preview-features) enabled on your profile.
 
 The new **Search** experience for both **Code** and **Work items** is now available in preview. Thank you to everyone who provided feedback on search experience and helped us make the product better.
 The new experience reflects these feedbacks and brings a host of improvements:
