@@ -12,7 +12,7 @@ description: Visual Studio Team Services (VSTS) release notes for Sprint 124 Upd
 
 # Streamlined code and work items search – VSTS Sprint 124 Update
 
-In the **Sprint 124 Update** of Visual Studio Team Services (VSTS) we’re happy to announce the preview of the new code and work items search experience that helps you to find the code or work items you’re looking for even faster. Read more about [new experience for search](#new-experience-for-code-and-work-items-search) below.
+In the **Sprint 124 Update** of Visual Studio Team Services (VSTS) we’re happy to announce the preview of updated experience for search that gives more real estate for the search results and makes it easier and more intuitive to filter. Read more about [new experience for search](#new-experience-for-code-and-work-items-search) below.
 
 Some of the other key feature highlights include:
 
@@ -20,6 +20,7 @@ Some of the other key feature highlights include:
 * [Reference work items in Wiki](#reference-work-items-in-wiki) - Add a link to workitem in a Wiki.
 * [Use Azure Key Vault secrets in your CI build](#use-azure-key-vault-secrets-in-your-ci-build) - Stay secure in your build process by referencing Azure Key Vault secrets.
 * [Bulk Deploy environments manually from Release view](#bulk-deploy-environments-manually-from-release-view) - Go broad across environments with a single Deploy action.
+* [Process parameters for deployment templates](#process-parameters-for-deployment-templates) - Configuring release made easy with process parameters.
 
 > [!NOTE]
 > The features discussed in this post will be rolling out over the next three weeks.
@@ -29,7 +30,7 @@ Some of the other key feature highlights include:
 ### New experience for code and work items search
 
 > [!TIP]
-> To use this capability you must have the **New User Experience in Code & Work Item Search** [preview feature](https://www.visualstudio.com/docs/collaborate/preview-features) enabled on your profile.
+> To use this capability you must have the [Code Search extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search) install and **New User Experience in Code & Work Item Search** [preview feature](https://www.visualstudio.com/docs/collaborate/preview-features) enabled on your profile.
 
 The new **Search** experience for both **Code** and **Work items** is now available in preview. Thank you to everyone who provided feedback on search experience and helped us make the product better.
 The new experience reflects these feedbacks and brings a host of improvements:
@@ -67,7 +68,7 @@ Now, when you filter content in the tree view, the search for that file is done 
 
 ### Ctrl+S to save Wiki page
 
-We heard you complain about the fact that a simple act of saving a Wiki page required multiple clicks. Now you can simply press Ctrl+S keyboard shortcut to save a page with a default revision message and continue editing. If you'd like to add a custom revision message just click on the chevron next to the save button.
+We heard you wanted a quicker and easier way to save a Wiki page. Now you can simply press Ctrl+S keyboard shortcut to save a page with a default revision message and continue editing. If you'd like to add a custom revision message just click on the chevron next to the save button.
 
 <img src="_img/124_08.png"; alt="Wiki save" style="border:1px solid Silver; display: block; margin: auto;" />
 
@@ -79,7 +80,7 @@ Now you can reference work items in wiki pages by pressing the '#' key to get a 
 
 ### Enable Wiki home page to show on the Project description page
 
-Wiki now has support for richer formatting and layout capabilities than readme markdown, like HTML support and inline videos. You can now choose to show the wiki home page on the **Project** description page instead of a README.md file.
+Wiki has rich formatting and layout capabilities, like HTML support and inline videos. You can now leverage this to create beautiful project description pages; by choosing to show the wiki home page on the **Project** description page.
 
 See the [documentation for add and edit wiki pages](/vsts/collaborate/add-edit-wiki) for more information.
 
@@ -97,9 +98,9 @@ You can now leverage Azure’s highly secure storage to manage the secrets you u
 
 See the [Azure Key Vault page](https://azure.microsoft.com/services/key-vault/) and [Link secrets from an Azure Key vault as variables documentation](/vsts/build-release/concepts/library/variable-groups) for more information.
 
-### New software on our hosted VS2017 agents
+### New software updates available on hosted VS2017 agents
 
-Software we’ve updated in the Hosted VS2017 pool includes: Visual Studio 2017 version 15.3.5, Azure Service Fabric SDK 2.7, and Docker version 17.10.0. See the [VSTS Hosted VS2017 image page](https://go.microsoft.com/fwlink/?linkid=859172) for more information.
+Software updates added to the Hosted VS2017 pool includes: Visual Studio 2017 version 15.3.5, Azure Service Fabric SDK 2.7, and Docker version 17.10.0. See the [VSTS Hosted VS2017 image page](https://go.microsoft.com/fwlink/?linkid=859172) for more information.
 
 ## Release
 
@@ -111,7 +112,7 @@ You can now manually trigger a **Deploy** action to multiple environments of a 
 
 ### Process parameters for deployment templates
 
-We are bringing the process parameters that existed in CI templates to the deployment templates. For all native deployment templates, the most important fields across all tasks in the template are now promoted to the process view. You can quickly get started and successfully deploy by providing values for these minimal set of process parameters.
+The process parameters that existed in build templates is now available for all release templates. The most important fields across all tasks in the template are now promoted to the process view. You can now quickly configure and successfully deploy by providing values for these minimal set of process parameters.
 
 <img src="_img/124_07.png"; alt="Process parameters for deployment templates" style="border:1px solid Silver; display: block; margin: auto;" />
 
@@ -119,7 +120,7 @@ See the [documentation for the new build editor](/vsts/build-release/archive/pre
 
 ### Default properties for Git and GitHub artifact types are now editable
 
-This is particularly useful in scenarios where the branch for the stable version of the artifact has changed and future continuous delivery releases should use this branch to obtain newer versions of the artifact. The options for checkout, such as checkout submodules, can also be changed.
+You can now edit the default properties of Git and GitHub artifact types even after the artifact has been linked. This is particularly useful in scenarios where the branch for the stable version of the artifact has changed, and future continuous delivery releases should use this branch to obtain newer versions of the artifact. 
 
 <img src="_img/124_06.png"; alt="Editable artifact properties" style="border:1px solid Silver; display: block; margin: auto;" />
 
