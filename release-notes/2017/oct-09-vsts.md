@@ -12,11 +12,12 @@ description: Visual Studio Team Services (VSTS) release notes for Sprint 124 Upd
 
 # Streamlined code and work items search – VSTS Sprint 124 Update
 
-In the **Sprint 124 Update** of Visual Studio Team Services (VSTS) we’re announcing the availability of the streamlined code and work items search in preview to help you find the code or work items you’re looking for even faster. Read more about [New experience for search](#new-experience-for-code-and-work-items-search) below.
+In the **Sprint 124 Update** of Visual Studio Team Services (VSTS) we’re happy to announce the preview of the new code and work items search experience that helps you to find the code or work items you’re looking for even faster. Read more about [new experience for search](#new-experience-for-code-and-work-items-search) below.
 
 Some of the other key feature highlights include:
 
 * [Pull request comments follow renamed files](#pull-request-comments-follow-renamed-files) - Comments now follow renames.
+* [Reference work items in Wiki](#reference-work-items-in-wiki) - Add a link to workitem in a Wiki.
 * [Use Azure Key Vault secrets in your CI build](#use-azure-key-vault-secrets-in-your-ci-build) - Stay secure in your build process by referencing Azure Key Vault secrets.
 * [Bulk Deploy environments manually from Release view](#bulk-deploy-environments-manually-from-release-view) - Go broad across environments with a single Deploy action.
 
@@ -35,14 +36,12 @@ The new experience reflects these feedbacks and brings a host of improvements:
 * A streamlined layout of the search box, code and work item results pivots, filter controls and two pane results pane makes search a breeze. 
 * When you start a search from with in a project, search defaults to results from that project; you can easily now navigate up to the account level to broaden your search.
 * The new filtering controls are designed based on extensive feedback on the previous experience
-  * You can easily see the filters that influence the search results
-  * It's easier to work with filters; we have made many usability tweaks E.g. gone are the the filters that move up as you select them
-  * You can easily hide the filters to liberate more space for results
+  * You can easily see the filters that influence the search results.
+  * It's easier to work with filters; we have made many usability tweaks E.g. gone are the the filters that move up as you select them.
+  * You can easily hide the filters to liberate more space for results.
   * Based on where in VSTS you’re coming from, certain defaults are applied to make it easier to find things.
-* A new 2-pane layout open up more space for results
-* The results layout for **Work items** search is tweaked for scanning through results quickly
-* You can now sort by filename and filepath in code
-* You can now filter by branch in code. See [Search in branches other than the default](#Search-in-branches-other-than-the-default)
+* You can now sort by filename and filepath in code.
+* You can now filter by branch in code using the branch filter. See [Search in branches other than the default](#Search-in-branches-other-than-the-default)
 
 Please do try out the new experience and let us know your feedback.
  
@@ -52,7 +51,7 @@ Please do try out the new experience and let us know your feedback.
 In code search we have enabled support to index multi-branches. This will allow you to search in branches other than the default branch. You can now have 5 more branches per repository indexed for searching. Your Project Admin can configure the additional branches from the **Version Control** settings page:
 
 <img src="_img/124_09.png"; alt="New multi-branch configuration experience" style="border:1px solid Silver; display: block; margin: auto;" />
-Note that search across multiple repositories automatically scopes to the default branch.
+Note that search across multiple repositories automatically uses the default branch.
 
 ### Pull request comments follow renamed files
 
@@ -60,21 +59,21 @@ Sometimes files are renamed or moved while a pull request is active. Previously,
 
 ### Enhanced filter capability for commits with more than 1000 files changed
 
-There can be several commits and pull requests that have modified more than 1000 files. When you filter content in those commits, content is filtered first and then you would click on **Load more** link several times to see whether the file of interest is in the commit.
+Searching for a file in a commits or pull requests that have modified more than 1000 files was inefficent; you would need to click on **Load more** link several times to find the file that you interested in. We have improved this experience.
 
-Now, when you filter content in the tree view, the search for that file is done in the entire commit instead of just looking at the top 1000 files loaded. The performance of the commit details page is also improved when there are more than 1000 files modified.
+Now, when you filter content in the tree view, the search for that file is done across all files in the commit instead of just looking at the top 1000 files loaded. The performance of the commit details page is also improved when there are more than 1000 files modified.
 
 <img src="_img/124_02.gif"; alt="Enhanced filter in large commits" style="border:1px solid Silver; display: block; margin: auto;" />
 
 ### Ctrl+S to save Wiki page
 
-Currently saving a wiki page pops-up a dialog that shifts the interaction from keyboard to mouse and takes several clicks to save a page. Now you can simply press Ctrl+S keyboard shortcut to save a page with a default revision message and continue editing.
+We heard you complain about the fact that a simple act of saving a Wiki page required multiple clicks. Now you can simply press Ctrl+S keyboard shortcut to save a page with a default revision message and continue editing. If you'd like to add a custom revision message just click on the chevron next to the save button.
 
 <img src="_img/124_08.png"; alt="Wiki save" style="border:1px solid Silver; display: block; margin: auto;" />
 
 ### Reference work items in Wiki
 
-Now you can reference work items in wiki pages by pressing the # key to get a list of the most recently accessed work items and selecting the work item of interest. This is particularly useful while writing release notes, epics, specs, or other pages that require referring to a work item.
+Now you can reference work items in wiki pages by pressing the '#' key to get a list of the most recently accessed work items and selecting the work item of interest. This is particularly useful while writing release notes, epics, specs, or other pages that require referring to a work item.
 
 <img src="_img/124_01.png"; alt="Reference work items in Wiki" style="border:1px solid Silver; display: block; margin: auto;" />
 
