@@ -30,25 +30,29 @@ Some of the other key feature highlights include:
 > [!TIP]
 > To use this capability you must have the **New User Experience in Code & Work Item Search** [preview feature](https://www.visualstudio.com/docs/collaborate/preview-features) enabled on your profile.
 
-The new **Search** experience for both **Code** and **Work items** is now available in preview. With a new layout and controls, switching between code and work item results and seeing what filters are currently applied is much easier. Thank you to everyone who provided feedback on our previous experience. The new experience addresses most of the reported feedback and brings a host of improvements:
+The new **Search** experience for both **Code** and **Work items** is now available in preview. Thank you to everyone who provided feedback on search experience and helped us make the product better.
+The new experience reflects these feedbacks and brings a host of improvements:
+* A streamlined layout of the search box, code and work item results pivots, filter controls and two pane results pane makes search a breeze. 
+* When you start a search from with in a project, search defaults to results from that project; you can easily now navigate up to the account level to broaden your search.
+* The new filtering controls are designed based on extensive feedback on the previous experience
+  * You can easily see the filters that influence the search results
+  * It's easier to work with filters; we have made many usability tweaks E.g. gone are the the filters that move up as you select them
+  * You can easily hide the filters to liberate more space for results
+  * Based on where in VSTS you’re coming from, certain defaults are applied to make it easier to find things.
+* A new 2-pane layout open up more space for results
+* The results layout for **Work items** search is tweaked for scanning through results quickly
+* You can now sort by filename and filepath in code
+* You can now filter by branch in code. See [Search in branches other than the default](#Search-in-branches-other-than-the-default)
 
-* A new 2-pane layout open up more space for results and suits more screens sizes
-* The new filtering controls are designed based on extensive feedback from the previous experience
-  * Easily see what filters are applied with just a glance of the filter row
-  * Follows the pattern across VSTS for filters and can even be hidden away to liberate more space for results
-  * Based on where in VSTS you’re coming from, certain defaults are applied to make it easier to find things
-* A streamlined experience that default to results from your project, if that's where the search was started from
-  * Easily navigate up to the account level to broaden your search
-* Sort by filename and filepath in code
-* You can now filter by branch in code
-  * You can now configure 5 additional branches per repo, to be indexed by code search, and then use the branch filter to search in a specific branch
-* Improved results layout for **Work items** search optimized for scanning through them quickly
+Please do try out the new experience and let us know your feedback.
  
 <img src="_img/124_03.png"; alt="New search experience" style="border:1px solid Silver; display: block; margin: auto;" />
 
-In code search we’re also announcing multi-branch search capability. You can now have 5 more branches per repository indexed for searching. Your Project Admin can configure the additional branches from the **Version Control** settings page:
+### Search for code in multiple branches
+In code search we have enabled support to index multi-branches. This will allow you to search in branches other than the default branch. You can now have 5 more branches per repository indexed for searching. Your Project Admin can configure the additional branches from the **Version Control** settings page:
 
 <img src="_img/124_09.png"; alt="New multi-branch configuration experience" style="border:1px solid Silver; display: block; margin: auto;" />
+Note that search across multiple repositories automatically scopes to the default branch.
 
 ### Pull request comments follow renamed files
 
