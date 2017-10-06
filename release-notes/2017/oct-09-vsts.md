@@ -43,7 +43,7 @@ The new **Search** experience for both **Code** and **Work items** is now avail
 * You can now filter by branch in code
   * You can now configure 5 additional branches per repo, to be indexed by code search, and then use the branch filter to search in a specific branch
 * Improved results layout for **Work items** search optimized for scanning through them quickly
-
+ 
 <img src="_img/124_03.png"; alt="New search experience" style="border:1px solid Silver; display: block; margin: auto;" />
 
 In code search we’re also announcing multi-branch search capability. You can now have 5 more branches per repository indexed for searching. Your Project Admin can configure the additional branches from the **Version Control** settings page:
