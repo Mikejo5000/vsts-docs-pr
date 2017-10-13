@@ -365,7 +365,7 @@ function createChart(VSS_Auth_Service, WidgetHelpers, settings) {
             groupBy = "";
         }
 
-        var urlString = "https://" + accountName + ".analytics.visualstudio.com/DefaultCollection/" + projectName
+        var urlString = "https://" + accountName + ".analytics.visualstudio.com/" + projectName
             + "/_odata/WorkItems?$apply=groupby((" + groupByClause + "), aggregate($count as Count))";
 
         $.ajax({
