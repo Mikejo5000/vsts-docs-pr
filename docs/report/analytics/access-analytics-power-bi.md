@@ -40,7 +40,7 @@ You can access the Analytics Service data through the Power BI Desktop and then 
 	If the *AccountName* is "foo" then the URL is ```https://foo.analytics.visualstudio.com/_odata/v1.0-preview```.
 
 	>[!NOTE]  
-	>Alternatively, you can enter the URL ```https://{account}.analytics.visualstudio.com/[project]/_odata/v1.0-preview``` which will trim the results by the specified team project across all entities related to that project.  
+	>Alternatively, you can enter the URL ```https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0-preview``` which will trim the results by the specified team project across all entities related to that project.  
 
 5. At this point you will be prompted to authenticate against the service. If you have not done so previously, see this topic: [Client Authentication Options](client-authentication-options.md).  
 6. Next, select the entities you want to retrieve data for by checking those entities.

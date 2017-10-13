@@ -24,7 +24,7 @@ by Children and Parent.
 ## Parent to child queries
 
 ```
-https://{account}.analytics.visualstudio.com/[project]/_odata/v1.0-preview/WorkItems?$select=WorkItemId,Title,State&$expand=Children($select=WorkItemId,Title,State)&$filter=WorkItemId eq [ID #]
+https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0-preview/WorkItems?$select=WorkItemId,Title,State&$expand=Children($select=WorkItemId,Title,State)&$filter=WorkItemId eq [ID #]
 ```
 
 This query is querying the work items, and expanding the children (and work items linked to the work item being filtered with a parent/child
@@ -32,7 +32,7 @@ relationships). It filters the query so only one root work item is returned. The
 
 ```
 {
-  "@odata.context":"https://{account}.analytics.visualstudio.com/[project]/_odata/v1.0-preview/$metadata#WorkItems(WorkItemId,Title,State,Children,Children(WorkItemId,Title,State))","value":[
+  "@odata.context":"https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0-preview/$metadata#WorkItems(WorkItemId,Title,State,Children,Children(WorkItemId,Title,State))","value":[
     {
       "WorkItemId":103,"Title":"Feature Y","State":"New","Children":[
         {
@@ -52,7 +52,7 @@ However, as you might be wondering - a hierarchy can have multiple leves - how d
 Modify the query above so that it looks like this:
 
 ```
-https://{account}.analytics.visualstudio.com/[project]/_odata/v1.0-preview/WorkItems?$select=WorkItemId,Title,State&$expand=Children($select=WorkItemId,Title,State;$levels=max)&$filter=WorkItemId eq 103
+https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0-preview/WorkItems?$select=WorkItemId,Title,State&$expand=Children($select=WorkItemId,Title,State;$levels=max)&$filter=WorkItemId eq 103
 ```
 
 There is only one change in this query - **;$levels=max** in the children clause. This will cause the entire hieararchy to
@@ -61,7 +61,7 @@ returned. The results of this query look like the following:
 
 ```
 {
-  "@odata.context":"https://{account}.analytics.visualstudio.com/[project]/_odata/v1.0-preview/$metadata#WorkItems(WorkItemId,Title,State,Children,Children(WorkItemId,Title,State,Children,Children(WorkItemId,Title,State)))","value":[
+  "@odata.context":"https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0-preview/$metadata#WorkItems(WorkItemId,Title,State,Children,Children(WorkItemId,Title,State,Children,Children(WorkItemId,Title,State)))","value":[
     {
       "WorkItemId":103,"Title":"Feature Y","State":"New","Children":[
         {
@@ -97,14 +97,14 @@ Notice that two of the stories now have child tasks being shown.
 Modify the previous query to this:
 
 ```
-https://{account}.analytics.visualstudio.com/[project]/_odata/v1.0-preview/WorkItems?$select=WorkItemId,Title,State&$expand=Parent($select=WorkItemId,Title,State;$levels=max)&$filter=WorkItemId eq 105
+https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0-preview/WorkItems?$select=WorkItemId,Title,State&$expand=Parent($select=WorkItemId,Title,State;$levels=max)&$filter=WorkItemId eq 105
 ```
 
 See the difference? Change **Children** to **Parent** and replace the ID with the ID of a task. The results are as follows:
 
 ```
 {
-  "@odata.context":"https://{account}.analytics.visualstudio.com/[project]/_odata/v1.0-preview/$metadata#WorkItems(WorkItemId,Title,State,Parent,Parent(WorkItemId,Title,State,Parent,Parent(WorkItemId,Title,State)))","value":[
+  "@odata.context":"https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0-preview/$metadata#WorkItems(WorkItemId,Title,State,Parent,Parent(WorkItemId,Title,State,Parent,Parent(WorkItemId,Title,State)))","value":[
     {
       "WorkItemId":105,"Title":"Task B","State":"New","Parent":{
         "WorkItemId":55,"Title":"Story 22","State":"New","Parent":{
@@ -126,14 +126,14 @@ directed links and to mix and match the data that is returned using the **Links*
 This query will return all of the links (not work items on the other end of those links) for a work item:
 
 ```
-https://{account}.analytics.visualstudio.com/[project]/_odata/v1.0-preview/WorkItems?$select=WorkItemId,Title,WorkItemType,State&$filter=WorkItemId%20eq%20103&$expand=Links
+https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0-preview/WorkItems?$select=WorkItemId,Title,WorkItemType,State&$filter=WorkItemId%20eq%20103&$expand=Links
 ```
 
 This results in the following:
 
 ```
 {
-  "@odata.context":"https://{account}.analytics.visualstudio.com/[project]/_odata/v1.0-preview/$metadata#WorkItems(WorkItemId,Title,WorkItemType,State,Links)","value":[
+  "@odata.context":"https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0-preview/$metadata#WorkItems(WorkItemId,Title,WorkItemType,State,Links)","value":[
     {
       "WorkItemId":103,"Title":"Feature Y","WorkItemType":"Feature","State":"New","Links":[
         {
@@ -155,14 +155,14 @@ This is probably not exactly what you need or wanted, but it's a start that can 
 other end of those links, you can expand the links one more level by doing the following:
 
 ```
-https://{account}.analytics.visualstudio.com/[project]/_odata/v1.0-preview/WorkItems?$select=WorkItemId,Title,WorkItemType,State&$filter=WorkItemId%20eq%20103&$expand=Links($expand=TargetWorkItem($select=WorkItemId,Title,State))
+https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0-preview/WorkItems?$select=WorkItemId,Title,WorkItemType,State&$filter=WorkItemId%20eq%20103&$expand=Links($expand=TargetWorkItem($select=WorkItemId,Title,State))
 ```
 
 By expanding the Links on the TargetWorkItem navigation property you end up with this result:
 
 ```
 {
-  "@odata.context":"https://{account}.analytics.visualstudio.com/[project]/_odata/v1.0-preview/$metadata#WorkItems(WorkItemId,Title,WorkItemType,State,Links,Links(TargetWorkItem(WorkItemId,Title,State)))","value":[
+  "@odata.context":"https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0-preview/$metadata#WorkItems(WorkItemId,Title,WorkItemType,State,Links,Links(TargetWorkItem(WorkItemId,Title,State)))","value":[
     {
       "WorkItemId":103,"Title":"Feature Y","WorkItemType":"Feature","State":"New","Links":[
         {
@@ -191,14 +191,14 @@ By expanding the Links on the TargetWorkItem navigation property you end up with
 Next, is the ability to query only on specific links. To do this, modify the above query as follows:
 
 ```
-https://{account}.analytics.visualstudio.com/[project]/_odata/v1.0-preview/WorkItems?$select=WorkItemId,Title,WorkItemType,State&$filter=WorkItemId%20eq%20103&$expand=Links($filter=LinkTypeName eq 'Related';$expand=TargetWorkItem($select=WorkItemId,Title,State))
+https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0-preview/WorkItems?$select=WorkItemId,Title,WorkItemType,State&$filter=WorkItemId%20eq%20103&$expand=Links($filter=LinkTypeName eq 'Related';$expand=TargetWorkItem($select=WorkItemId,Title,State))
 ```
 
 This query returns only the work items linked with the **Related** link type as shown here:
 
 ```
 {
-  "@odata.context":"https://{account}.analytics.visualstudio.com/[project]/_odata/v1.0-preview/$metadata#WorkItems(WorkItemId,Title,WorkItemType,State,Links,Links(TargetWorkItem(WorkItemId,Title,State)))","value":[
+  "@odata.context":"https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0-preview/$metadata#WorkItems(WorkItemId,Title,WorkItemType,State,Links,Links(TargetWorkItem(WorkItemId,Title,State)))","value":[
     {
       "WorkItemId":103,"Title":"Feature Y","WorkItemType":"Feature","State":"New","Links":[
         {
