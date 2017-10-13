@@ -37,7 +37,7 @@ For example, you query Areas by adding ```/Areas```. The full URL is:
 This is equivalent to performing a select statement on the entity and returning everything, all columns and all rows. If you have a large number of work items, this may take several seconds.
  
 ### Select specific columns  
-Return specific field data by adding a ```select``` clause. 
+Return specific field data by adding a ```$select``` clause. 
 
 For example, to return only the Work Item ID, Work Item Type, Title, and State of work items, enter:   
 
@@ -77,9 +77,9 @@ Would be filtered automatically to enforce security:
 	https://[collection].analytics.visualstudio.com/_odata/WorkItems?$filter=ProjectName eq 'ProjectA'&$expand=Parent($filter=ProjectName eq 'ProjectA')
 
 
-When using a collection-scoped query with an ```expand``` you must provide an additional filter.
+When using a collection-scoped query with an ```$expand``` you must provide an additional filter.
 
-For example, the following collection-scoped query, which uses an ```expand``` to retrieve the children of all work items:
+For example, the following collection-scoped query, which uses an ```$expand``` to retrieve the children of all work items:
 	
 	https://[collection].analytics.visualstudio.com/_odata/WorkItems?$expand=Children&$filter=Project/ProjectName eq 'ProjectA'
 
@@ -87,7 +87,7 @@ For example, the following collection-scoped query, which uses an ```expand``` t
 	
 	https://[collection].analytics.visualstudio.com/_odata/WorkItems?$expand=Children($filter=Project/ProjectName eq 'ProjectA')&$filter=Project/ProjectName eq 'ProjectA'
 
-This query, which uses an ```expand``` to retrieve the parent of all work items:
+This query, which uses an ```$expand``` to retrieve the parent of all work items:
 
 	https://[collection].analytics.visualstudio.com/_odata/WorkItems?$expand=Parent&$filter=Project/ProjectName eq 'ProjectA'
 
@@ -100,11 +100,11 @@ Without the additional filter, the request will fail if the child of any work it
 
 Analytics has a few additional restrictions on query syntax related to Project level security.
 
-The ```any``` or ```all``` filters apply to the base Entity on an ```expand```.  For filters based on a Project we explicitly ignore the filter when using an ```expand```:
+The ```any``` or ```all``` filters apply to the base Entity on an ```$expand```.  For filters based on a Project we explicitly ignore the filter when using an ```$expand```:
 
 	https://[collection].analytics.visualstudio.com/_odata/WorkItems?$expand=Children&$filter=ProjectName eq 'ProjectA' and Children/any(r: r/ProjectName eq 'ProjectA')
 
-Using ```level``` is only supported if you have access to all projects in the collection or when using a project scoped query:
+Using ```$level``` is only supported if you have access to all projects in the collection or when using a project scoped query:
 	
 	https://[collection].analytics.visualstudio.com/_odata/WorkItems?$expand=Children($levels=2;$filter=ProjectName eq 'ProjectA')
 
@@ -124,7 +124,7 @@ Building on the last query, what if you wanted to filter the work items so that 
 
     /WorkItems?$select=WorkItemId,WorkItemType,Title,State&$filter=State eq 'In Progress'
 
-Alternatively, you can exclude the ```select``` clause altogether and just filter the results as follows:
+Alternatively, you can exclude the ```$select``` clause altogether and just filter the results as follows:
 
     /WorkItems?$filter=State eq 'In Progress'
 
@@ -178,14 +178,14 @@ In this example, ```Iteration``` is the navigation property name and ```Iteratio
 
 How do you use navigation properties to select related fields?
 
-The username for Custom fields based on an Identity is not directly accessible using a ```select``` statement. The following query uses a ```expand``` statement to retrieve the Username:
+The username for Custom fields based on an Identity is not directly accessible using a ```$select``` statement. The following query uses a ```$expand``` statement to retrieve the Username:
 
     /WorkItems?$expand=MyIdentityField($select=UserName)
 
 >[!NOTE]
->You can't use the navigation property directly in a ```select``` statement. Instead, you will need to use ```expand```.
+>You can't use the navigation property directly in a ```$select``` statement. Instead, you will need to use ```$expand```.
 
-The filtering example above was on the iteration path but the iteration path is not returned in the results because it is contained in a related entity.  To return data in a related entity, add an ```expand``` statement:
+The filtering example above was on the iteration path but the iteration path is not returned in the results because it is contained in a related entity.  To return data in a related entity, add an ```$expand``` statement:
 
     /WorkItems?$select=WorkItemId,WorkItemType,Title,State&$filter=WorkItemId eq 10000&$expand=Iteration
 
@@ -206,7 +206,7 @@ This returns the following:
 
 Iteration is expanded in the JSON result and all of the iteration data is returned. This is probably more data than you want.  
 
-To return less data, add a ```select``` statement against the iteration as well:
+To return less data, add a ```$select``` statement against the iteration as well:
 
     /WorkItems?$select=WorkItemId,WorkItemType,Title,State&$filter=WorkItemId eq 10000&$expand=Iteration($select=Name,IterationPath)
 
@@ -223,7 +223,7 @@ Which returns the following:
 }
 ```
 
-In OData, you can nest ```expand``` statements. For example, you can write the previous query statement to display the project the iteration is part of:
+In OData, you can nest ```$expand``` statements. For example, you can write the previous query statement to display the project the iteration is part of:
 
     /WorkItems?$filter=WorkItemId eq 10000&$expand=Iteration($expand=Project)
 
@@ -242,7 +242,7 @@ This results in:
 }
 ```
 
-You can also combine ```expand``` and ```select``` statements. For example, you can change the previous query to only return the Iteration Name and Iteration Path:
+You can also combine ```$expand``` and ```$select``` statements. For example, you can change the previous query to only return the Iteration Name and Iteration Path:
 
     /WorkItems?$filter=WorkItemId eq 10000&$expand=Iteration($select=IterationId,IterationPath;$expand=Project)
 
@@ -261,11 +261,11 @@ This results in:
 }
 ```
 
-Notice that the result here shows only the IterationId and IterationPath and that the Project is a nested object within the JSON result.  Another key item to note is the URL itself, when using a ```select``` statement and an ```expand``` clause you must use a semi-colon (;) before the ```$expand```. Anything else will result in an error.
+Notice that the result here shows only the IterationId and IterationPath and that the Project is a nested object within the JSON result.  Another key item to note is the URL itself, when using a ```$select``` statement and an ```$expand``` clause you must use a semi-colon (;) before the ```$expand```. Anything else will result in an error.
 
 ###Sort results
 
-You can sort OData results using the ```orderby``` clause. You can apply this clause to any OData query as shown:
+You can sort OData results using the ```$orderby``` clause. You can apply this clause to any OData query as shown:
 
     /WorkItems?$filter=WorkItemType eq 'User Story'&$orderby=WorkItemId
 
