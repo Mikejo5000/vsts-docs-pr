@@ -366,7 +366,7 @@ function createChart(VSS_Auth_Service, WidgetHelpers, settings) {
         }
 
         var urlString = "https://" + accountName + ".analytics.visualstudio.com/" + projectName
-            + "/_odata/WorkItems?$apply=groupby((" + groupByClause + "), aggregate($count as Count))";
+            + "/_odata/v1.0-preview/WorkItems?$apply=groupby((" + groupByClause + "), aggregate($count as Count))";
 
         $.ajax({
             type: "GET",
