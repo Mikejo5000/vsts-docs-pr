@@ -40,7 +40,7 @@ issue the following query:
 
 For comparison, using data aggregations you enter this query:
 
-    /WorkItems?$apply=aggregate(Count with sum as Count)
+    /WorkItems?$apply=aggregate($count as Count)
 
 For simple counts, the non-aggregation approach has a simpler syntax.  
  
@@ -71,7 +71,7 @@ The following are some concrete examples of this functionality:
 
 **Return the count of work items:**
 
-    /WorkItems?$apply=aggregate(Count with sum as CountOfWorkItems)
+    /WorkItems?$apply=aggregate($count as CountOfWorkItems)
 
 Work items can also be counted by using the following:
 
@@ -100,11 +100,11 @@ in more detail.
 
 For example, the following gives you the count of work items:
 
-    /WorkItems?$apply=aggregate(Count with sum as Count)
+    /WorkItems?$apply=aggregate($count as Count)
 
 Add the ```groupby``` clause to return a count of work items by type:
 
-    /WorkItems?$apply=groupby((WorkItemType), aggregate(Count with sum as Count))
+    /WorkItems?$apply=groupby((WorkItemType), aggregate($count as Count))
 
 This returns a result similar to the following:
 
@@ -136,7 +136,7 @@ This returns a result similar to the following:
 
 You can also group by multiple properties as in the following:
 
-    /WorkItems?$apply=groupby((WorkItemType, State), aggregate(Count with sum as Count))
+    /WorkItems?$apply=groupby((WorkItemType, State), aggregate($count as Count))
 
 You can also group across entities, however OData grouping differs from how you might normally think about it. 
 
@@ -150,7 +150,7 @@ You can also filter aggregated results, however they are applied slightly differ
 
 Filters look like the following:
 
-    /WorkItems?$apply=filter(Iteration/IterationName eq 'Sprint 89')/filter(WorkItemType eq 'User Story')/groupby((State), aggregate(Count with sum as Count))
+    /WorkItems?$apply=filter(Iteration/IterationName eq 'Sprint 89')/filter(WorkItemType eq 'User Story')/groupby((State), aggregate($count as Count))
 
 
 >[!NOTE]  
@@ -193,7 +193,7 @@ it returned 471 rows. The CFD can be created with this data.
 This is what an aggregation query looks like for the exact same data:
 
 ```
-https://[account].analytics.visualstudio.com/[project]/_odata/WorkItemBoardSnapshot?$apply=filter(BoardLocation/Team/TeamName eq '[team name]')/filter(BoardLocation/BoardName eq 'Microsoft.RequirementCategory')/groupby((Date/Date,BoardLocation/ColumnName,BoardLocation/ColumnOrder), aggregate(Count with sum as Count))
+https://[account].analytics.visualstudio.com/[project]/_odata/WorkItemBoardSnapshot?$apply=filter(BoardLocation/Team/TeamName eq '[team name]')/filter(BoardLocation/BoardName eq 'Microsoft.RequirementCategory')/groupby((Date/Date,BoardLocation/ColumnName,BoardLocation/ColumnOrder), aggregate($count as Count))
 ```
 
 This query returns 41 rows. That's better than a 10x reduction in data. Let's take a look at what this query actually does.

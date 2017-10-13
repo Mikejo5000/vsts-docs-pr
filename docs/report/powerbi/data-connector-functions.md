@@ -133,7 +133,7 @@ Basic Query:
 ```
 let
     #"Source" = VSTS.Feed("https://fabrikam-fiber-inc.analytics.visualstudio.com/Fabrikam-Fiber-Git/_odata/"
-        & "WorkItems?$apply=groupby((Iteration/IterationPath), aggregate(Count with sum as Count))")
+        & "WorkItems?$apply=groupby((Iteration/IterationPath), aggregate($count as Count))")
 in
     #"Source"
 ```
@@ -142,7 +142,7 @@ Query with Columns Selected:
 ```
 let
     #"Source" = VSTS.Feed("https://fabrikam-fiber-inc.analytics.visualstudio.com/Fabrikam-Fiber-Git/_odata/"
-        & "WorkItems?$apply=groupby((Iteration/IterationPath), aggregate(Count with sum as Count))"),
+        & "WorkItems?$apply=groupby((Iteration/IterationPath), aggregate($count as Count))"),
     #"Expanded Iteration" = Table.ExpandRecordColumn(Source, "Iteration", {"IterationPath"}, {"Iteration.IterationPath"}),
     #"Removed Other Columns" = Table.SelectColumns(#"Expanded Iteration",{"Count", "Iteration.IterationPath"})
 in

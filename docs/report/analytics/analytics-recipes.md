@@ -40,7 +40,7 @@ https://[account].analytics.visualstudio.com/_odata/WorkItems?$filter=Area/AreaP
 **Get the count of work items in each project**
 
 ```
-https://[account].analytics.visualstudio.com/_odata/WorkItems?$apply=groupby((Project/ProjectName), aggregate(Count with sum as Count))
+https://[account].analytics.visualstudio.com/_odata/WorkItems?$apply=groupby((Project/ProjectName), aggregate($count as Count))
 ```
 
 **Retrieve all work items for a given iteration which fall between the first day of the iteration and the last day of the iteration**

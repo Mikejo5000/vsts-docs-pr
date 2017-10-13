@@ -38,7 +38,7 @@ There are some basic requirements you need to effectively query the WorkItemSnap
 With this in mind, the query to create a bug trend report looks like the following: 
 
 ```
-https://[account].analytics.visualstudio.com/DefaultCollection/[project]/_odata/WorkItemSnapshot?$apply=filter(Date/Date ge 2016-03-01 and Date/Date le 2016-03-31 and WorkItemTyp eq 'Bug')/groupby((Date/Date,State), aggregate(Count with sum as Count))&$orderby=Date/Date
+https://[account].analytics.visualstudio.com/DefaultCollection/[project]/_odata/WorkItemSnapshot?$apply=filter(Date/Date ge 2016-03-01 and Date/Date le 2016-03-31 and WorkItemTyp eq 'Bug')/groupby((Date/Date,State), aggregate($count as Count))&$orderby=Date/Date
 ```
 
 This query will produce at most, 31 * number of bug states. The default bug has three states 
@@ -50,7 +50,7 @@ Before walking you through how to use this in a client tool, let's look at a var
 To construct that query, do the following:  
 
 ```
-https://[account].analytics.visualstudio.com/DefaultCollection/[project]/_odata/WorkItemSnapshot?$apply=filter(Iteration/IterationName eq 'Sprint 99')/filter(Date/Date ge Iteration/StartDate and Date/Date le Iteration/EndDate and WorkItemType eq 'Bug')/groupby((Date/Date,State), aggregate(Count with sum as Count))&$orderby=Date/Date
+https://[account].analytics.visualstudio.com/DefaultCollection/[project]/_odata/WorkItemSnapshot?$apply=filter(Iteration/IterationName eq 'Sprint 99')/filter(Date/Date ge Iteration/StartDate and Date/Date le Iteration/EndDate and WorkItemType eq 'Bug')/groupby((Date/Date,State), aggregate($count as Count))&$orderby=Date/Date
 ```
 
 In this query, there are two key differences. We added a filter clause to filter the data to a specific iteration and the dates are now being compared to the iteration start and end dates versus a hard coded date.  

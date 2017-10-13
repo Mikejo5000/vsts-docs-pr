@@ -25,7 +25,7 @@ In order to use Aggregation Extensions with Power BI Desktop, you must create th
 For the purposes of this walkthrough, we'll create a simple aggregation query which returns the count of work items by Work Item Type and State. The URL for this query is shown below.
 
 ```
-https://[account].analytics.visualstudio.com/DefaultCollection/[project name]/_odata/WorkItems?$apply=groupby((WorkItemType,State), aggregate(Count with sum as Count))  
+https://[account].analytics.visualstudio.com/DefaultCollection/[project name]/_odata/WorkItems?$apply=groupby((WorkItemType,State), aggregate($count as Count))  
 ```
 
 Execute this query in your browser to make sure it works first. Replace the account and project names with the appropriate values.
