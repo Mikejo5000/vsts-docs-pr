@@ -21,7 +21,7 @@ The Analytics service data model consists of data sets, counts, and measures, as
 ##Entities  
 
 >[!NOTE]  
->Information listed may differ from the entities shown as```https://[collection].analytics.visualstudio.com/DefaultCollection/_odata/$metadata```.  
+>Information listed may differ from the entities shown as```https://[collection].analytics.visualstudio.com/_odata/$metadata```.  
 
 The entities support by the data model are as follows:  
 

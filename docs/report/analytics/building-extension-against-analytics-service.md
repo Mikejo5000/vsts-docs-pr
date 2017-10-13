@@ -119,7 +119,7 @@ Once the token is retrieved, you need to add it to the request for data from the
 
     $.ajax({
     type: "GET",
-    url: "https://" + accountName + ".analytics.visualstudio.com/DefaultCollection/_odata/WorkItems?$apply=groupby((WorkItemType), aggregate(Count with sum as Count))",
+    url: "https://" + accountName + ".analytics.visualstudio.com/_odata/WorkItems?$apply=groupby((WorkItemType), aggregate(Count with sum as Count))",
     contentType: "application/json; charset=utf-8",
     dataType: "json",
     beforeSend: function (xhr) {

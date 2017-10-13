@@ -19,7 +19,7 @@ Using the OData service provided by the Analytics Marketplace extension, you can
 
 In this topic, the basic root URL is constructed as follows:
 
-```https://[collection name].analytics.visualstudio.com/DefaultCollection/_odata``` 
+```https://[collection name].analytics.visualstudio.com/_odata``` 
 
 
 All additional URL parts are specified as an additional part of the query string as shown in the examples below.   
@@ -32,7 +32,7 @@ To query a single entity, such as Work Items or Areas or Projects, simply add th
 
 For example, you query Areas by adding ```/Areas```. The full URL is:
 
-```https://[collection name].analytics.visualstudio.com/DefaultCollection/_odata/Areas```
+```https://[collection name].analytics.visualstudio.com/_odata/Areas```
 
 This is equivalent to performing a select statement on the entity and returning everything, all columns and all rows. If you have a large number of work items, this may take several seconds.
  
@@ -55,15 +55,15 @@ Because team projects are an integral part of VSTS, we have added the ability to
 
 For example, the following project-scoped query will return the count of work items for a specific project:  
 
-    https://[collection].analytics.visualstudio.com/DefaultCollection/ProjectA/_odata/WorkItems/$count
+    https://[collection].analytics.visualstudio.com/ProjectA/_odata/WorkItems/$count
 
 Likewise, this query string will return the areas for a specific project:
 
-    https://[collection].analytics.visualstudio.com/DefaultCollection/ProjectA/_odata/Areas
+    https://[collection].analytics.visualstudio.com/ProjectA/_odata/Areas
 
 This is equivalent to the following filter on a collection-scoped query:
 
-    https://[collection].analytics.visualstudio.com/DefaultCollection/_odata/Areas?$filter=Project/ProjectName eq 'ProjectA'   
+    https://[collection].analytics.visualstudio.com/_odata/Areas?$filter=Project/ProjectName eq 'ProjectA'   
 
 
 When using a project-scoped query with an expand you are not required to provide additional filters.
@@ -194,7 +194,7 @@ This returns the following:
 > [!div class="tabbedCodeSnippets"]
 ```JSON
 {
-  "@odata.context":"https://[account].analytics.visualstudio.com/DefaultCollection/_odata/$metadata#WorkItems(WorkItemId,WorkItemType,Title,State,Iteration)","value":[
+  "@odata.context":"https://[account].analytics.visualstudio.com/_odata/$metadata#WorkItems(WorkItemId,WorkItemType,Title,State,Iteration)","value":[
     {
       "WorkItemId":10000,"WorkItemType":"Task","Title":"Some title","State":"Completed","Iteration":{
         "IterationId":"7a2c246e-fc62-41af-ad18-62332017bc46","Name":"Sprint 55","Number":13021,"IterationPath":"Fabrikam\\Sprints\\Sprint 55","StartDate":"2013-09-23T00:00:00Z","EndDate":"2013-10-11T00:00:00Z","IterationLevel0":"VSOnline","IterationLevel1":"OneVS","IterationLevel2":"Previous Sprints","IterationLevel3":"Sprint 55","IterationLevel4":null,"IterationLevel5":null,"IterationLevel6":null,"IterationLevel7":null,"IterationLevel8":null,"IterationLevel9":null,"IterationLevel10":null,"IterationLevel11":null,"IterationLevel12":null,"IterationLevel13":null,"Level":3,"IsDeleted":false
@@ -213,7 +213,7 @@ To return less data, add a ```select``` statement against the iteration as well:
 Which returns the following:
 ```
 {
-  "@odata.context":"https://[account].analytics.visualstudio.com/DefaultCollection/_odata/$metadata#WorkItems(WorkItemId,WorkItemType,Title,State,Iteration,Iteration(Name,IterationPath))","value":[
+  "@odata.context":"https://[account].analytics.visualstudio.com/_odata/$metadata#WorkItems(WorkItemId,WorkItemType,Title,State,Iteration,Iteration(Name,IterationPath))","value":[
     {
       "WorkItemId":10000,"WorkItemType":"Task","Title":"Some title","State":"Completed","Iteration":{
         "Name":"Sprint 55","IterationPath":"Fabrikam\\Sprints\\Sprint 55"
@@ -230,7 +230,7 @@ In OData, you can nest ```expand``` statements. For example, you can write the p
 This results in:
 ```
 {
-  "@odata.context":"https://[collection].analytics.visualstudio.com/DefaultCollection/_odata/$metadata#WorkItems","value":[
+  "@odata.context":"https://[collection].analytics.visualstudio.com/_odata/$metadata#WorkItems","value":[
     {
       "WorkItemId":10000,"Revision":3,"Watermark":283397,"Title":"Production deployment and testing for Entitlement API v2 and Subscriber database","WorkItemType":"Task","ChangedDate":"2014-07-10T19:29:58.41Z","CreatedDate":"2014-04-19T22:44:58.31Z","State":"Completed","Reason":"Completed","FoundIn":null,"IntegrationBuild":null,"ActivatedDate":null,"Activity":null,"BacklogPriority":null,"BusinessValue":null,"ClosedDate":null,"Discipline":null,"Issue":null,"Priority":2,"Rating":null,"ResolvedDate":null,"ResolvedReason":null,"Risk":null,"Severity":null,"StackRank":null,"TimeCriticality":null,"Triage":null,"ValueArea":null,"CompletedWork":10.0,"DueDate":null,"Effort":null,"FinishDate":null,"OriginalEstimate":20.0,"RemainingWork":null,"Size":null,"StartDate":null,"StoryPoints":null,"TargetDate":null,"Blocked":null,"Committed":null,"Escalate":null,"FoundInEnvironment":null,"HowFound":null,"Probability":null,"RequirementType":null,"RequiresReview":null,"RequiresTest":null,"RootCause":null,"SubjectMatterExpert1":null,"SubjectMatterExpert2":null,"SubjectMatterExpert3":null,"TargetResolveDate":null,"TaskType":null,"UserAcceptanceTest":null,"Count":1,"Iteration":{
         "IterationId":"7a2c246e-fc62-41af-ad18-62332017bc46","Name":"Sprint 55","Number":13021,"IterationPath":"Fabrikam\\Sprints\\Sprint 55","StartDate":"2013-09-23T00:00:00Z","EndDate":"2013-10-11T00:00:00Z","IterationLevel0":"VSOnline","IterationLevel1":"OneVS","IterationLevel2":"Previous Sprints","IterationLevel3":"Sprint 55","IterationLevel4":null,"IterationLevel5":null,"IterationLevel6":null,"IterationLevel7":null,"IterationLevel8":null,"IterationLevel9":null,"IterationLevel10":null,"IterationLevel11":null,"IterationLevel12":null,"IterationLevel13":null,"Level":3,"IsDeleted":false,"Project":{
@@ -249,7 +249,7 @@ You can also combine ```expand``` and ```select``` statements. For example, you 
 This results in:
 ```
 {
-  "@odata.context":"https://[collection].analytics.visualstudio.com/DefaultCollection/_odata/$metadata#WorkItems(Iteration(IterationId,IterationPath,Project))","value":[
+  "@odata.context":"https://[collection].analytics.visualstudio.com/_odata/$metadata#WorkItems(Iteration(IterationId,IterationPath,Project))","value":[
     {
       "WorkItemId":10000,"Revision":3,"Watermark":283397,"Title":"Production deployment and testing for Entitlement API v2 and Subscriber database","WorkItemType":"Task","ChangedDate":"2014-07-10T19:29:58.41Z","CreatedDate":"2014-04-19T22:44:58.31Z","State":"Completed","Reason":"Completed","FoundIn":null,"IntegrationBuild":null,"ActivatedDate":null,"Activity":null,"BacklogPriority":null,"BusinessValue":null,"ClosedDate":null,"Discipline":null,"Issue":null,"Priority":2,"Rating":null,"ResolvedDate":null,"ResolvedReason":null,"Risk":null,"Severity":null,"StackRank":null,"TimeCriticality":null,"Triage":null,"ValueArea":null,"CompletedWork":10.0,"DueDate":null,"Effort":null,"FinishDate":null,"OriginalEstimate":20.0,"RemainingWork":null,"Size":null,"StartDate":null,"StoryPoints":null,"TargetDate":null,"Blocked":null,"Committed":null,"Escalate":null,"FoundInEnvironment":null,"HowFound":null,"Probability":null,"RequirementType":null,"RequiresReview":null,"RequiresTest":null,"RootCause":null,"SubjectMatterExpert1":null,"SubjectMatterExpert2":null,"SubjectMatterExpert3":null,"TargetResolveDate":null,"TaskType":null,"UserAcceptanceTest":null,"Count":1,"Iteration":{
         "IterationId":"7a2c246e-fc62-41af-ad18-62332017bc46","IterationPath":"Fabrikam\\Sprints\\Sprint 55","Project":{
