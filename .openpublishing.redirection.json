@@ -32,7 +32,7 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "/vsts/build-release/apps/nodejs/build-nodejs-docker.md",
+            "source_path": "/vsts/build-release/apps/nodejs/build-nodejs-docker",
             "redirect_url": "/vsts/build-release/apps/containers/build-container",
             "redirect_document_id": false
         },
