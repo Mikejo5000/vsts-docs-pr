@@ -33,7 +33,7 @@
     - name: Use containers
       items:
       - name: Build and push a container
-        href: containers/build-container.md
+        href: apps/containers/build-container.md
     - name: Deploy your app
       items:
       - name: Azure Web App

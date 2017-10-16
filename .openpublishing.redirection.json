@@ -1,5 +1,5 @@
 {
-    "redirections": 
+    "redirections":
 	[
         {
             "source_path": "docs/accounts/requirements.md",
@@ -29,6 +29,11 @@
         {
             "source_path": "docs/build/overview.md",
             "redirect_url": "/vsts/build-release/index",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/build/apps/nodejs/build-nodejs-docker.md",
+            "redirect_url": "/vsts/build-release/apps/containers/build-container",
             "redirect_document_id": false
         },
         {
