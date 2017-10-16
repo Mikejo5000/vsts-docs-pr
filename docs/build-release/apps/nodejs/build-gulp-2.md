@@ -147,6 +147,8 @@ Before packaging the app and publishing it as a container, you need access to a 
 
    * **Action:** Push an image.
 
+---
+
 ## Run a build
 
 # [YAML](#tab/yaml)
@@ -160,6 +162,8 @@ Before packaging the app and publishing it as a container, you need access to a 
 1. Click **Save and queue** to kick off your first build. On the **Queue build** dialog box, click **Queue**.
 
 1. A new build is started. You'll see a link to the new build on the top of the page. Click the link to watch the new build as it happens.
+
+---
 
 ## View the build summary
 
