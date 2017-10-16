@@ -20,8 +20,6 @@
         href: apps/windows/dot-net.md
       - name: Node.js
         href: apps/nodejs/build-gulp.md
-      - name: Node.js Container
-        href: apps/nodejs/build-nodejs-docker.md
       - name: Java
         href: apps/java/build-maven.md
       - name: C++
@@ -32,6 +30,10 @@
         href: apps/mobile/xamarin.md
       - name: Universal Windows Platform
         href: apps/windows/universal.md
+    - name: Use containers
+      items:
+      - name: Build and push a container
+        href: containers/build-container.md
     - name: Deploy your app
       items:
       - name: Azure Web App
@@ -49,7 +51,7 @@
   - name: CI builds for Git in VSTS
     href: actions/ci-build-git.md
   - name: CI builds for GitHub repo
-    href: actions/ci-build-github.md  
+    href: actions/ci-build-github.md
   - name: Set up multi-stage release
     href: actions/define-multistage-release-process.md
 - name: Concepts
