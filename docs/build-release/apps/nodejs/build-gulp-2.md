@@ -157,7 +157,7 @@ Before packaging the app and publishing it as a container, you need access to a 
 
 1. Navigate to the **Builds** tab in **Build and Release** hub and notice that a build definition has been automatically started.
 
-# [YAML](#tab/editor)
+# [Editor](#tab/editor)
 
 1. Click **Save and queue** to kick off your first build. On the **Queue build** dialog box, click **Queue**.
 
