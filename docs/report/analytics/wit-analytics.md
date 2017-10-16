@@ -19,7 +19,7 @@ Using the OData service provided by the Analytics Marketplace extension, you can
 
 In this topic, the basic root URL is constructed as follows:
 
-```https://{account}.analytics.visualstudio.com/_odata/v1.0-preview``` 
+```https://{account}.analytics.visualstudio.com/_odata/v1.0-preview ``` 
 
 
 All additional URL parts are specified as an additional part of the query string as shown in the examples below.   
