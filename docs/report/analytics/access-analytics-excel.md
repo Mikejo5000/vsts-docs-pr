@@ -39,7 +39,7 @@ the Power Query add-in which you can do from [Microsoft Power Query for Excel](h
 	If the *account* is "fabrikam" then the URL is ```https://fabrikam.analytics.visualstudio.com/_odata/v1.0-preview```.
 
 	>[!NOTE]  
-	>Alternatively, you can enter the URL ```https://{account}.analytics.visualstudio.com/ProjectName/_odata/v1.0-preview``` which will trim the results by the specified team project across all entities related to that project.  
+	>Alternatively, you can enter the URL ```https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0-preview``` which will trim the results by the specified team project across all entities related to that project.  
 
 5. At this point you will be prompted to authenticate against the service. If you have not done so previously, see this topic: [Client Authentication Options](client-authentication-options.md)
 6. Either select a single entity to retrieve the data for or check **Select multiple items** and choose the data to return
