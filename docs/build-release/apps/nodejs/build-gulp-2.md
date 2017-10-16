@@ -26,7 +26,7 @@ Follow these steps to quickly set up a CI process for your Node.js app using VST
 https://github.com/adventworks/nodejs-sample
 ```
 
-Choose your version control system for specific instructions:
+Choose your version control system to get specific instructions for copying the sample app code:
 
 # [VSTS Git](#tab/vstsgit)
 
@@ -42,9 +42,7 @@ Choose your version control system for specific instructions:
 
 ## Set up CI - build process
 
-The simplest way to define your build process is in a **.vsts-ci.yml** file and to check in that file at the root of your repository. The advantage of this approach is that your build process is managed as code and it follows the same branch structure as the rest of your application code.
-
-Another way to define your build process is to use the build definition editor in VSTS. This provides a more visual approach of your process.
+[!INCLUDE [include](../_shared/setup-ci-build-process-intro.md)]
 
 # [YAML](#tab/yaml/vstsgit)
 
@@ -52,15 +50,7 @@ The sample app already has the .vsts-ci.yml file. View this file in your version
 
 # [YAML](#tab/yaml/github)
 
-1. Navigate to the **Builds** tab of the **Build and Release** hub in VSTS or TFS, and then click **+ New**. You are asked to **Select a template** for the new build definition.
-
-1. In the right panel, select **YAML** and click **Apply**.
-
-1. For the **Default agent queue**, select _Hosted VS2017_. This is how you can use our pool of agents that have the software you need to build your app.
-
-1. For the **Yaml path**, enter **.vsts-ci.yml**.
-
-1. Click **Get sources**. Select your version control repository. You'll need to authorize access to your repo.
+[!INCLUDE [include](../_shared/setup-ci-build-process-yaml.md)]
 
 # [Editor](#tab/editor/vstsgit)
 
@@ -78,7 +68,7 @@ The sample app already has the .vsts-ci.yml file. View this file in your version
 
 1. For the **Default agent queue**, select _Hosted VS2017_. This is how you can use our pool of agents that have the software you need to build your app.
 
-1. Select the **Run gulp** task from the tasks. On the right side, you see the parameters for the task. Under the section JUnit Test Results, select the option to Publish to TFS/VSTS.
+1. Select the **Run gulp** task from the tasks. On the right side, you see the parameters for the task. Under the section JUnit Test Results, select the option to **Publish to TFS/VSTS**.
 
 1. Click the **Triggers** tab in the build definition. Enable the **Continuous Integration** trigger. This will ensure that the build process is automatically triggered every time you commit a change to your repository.
 
@@ -102,43 +92,74 @@ The sample app already has the .vsts-ci.yml file. View this file in your version
 
 ---
 
-## Set up CI - build environment (Optional)
+## Set up CI - publishing artifacts
 
-If you followed the steps above, your build will run on a machine managed by Microsoft in the Hosted VS2017 pool. You can choose to run the build in your custom Docker container if you use containers in your development environment, or on your own private agent if you have special prerequisites that are not met on the hosted agents.
+The build process you set up in the previous section creates a **zip archive** by default. This is convenient if you plan to deploy the app to an Azure web app or to an IIS server. However, if your goal is to deploy the app to a Linux machine, then you can publish the build as a simple **folder**. Or, if your goal is to deploy the app to Azure web apps for containers or a Kubernetes cluster, then you can publish the app as a **container**. See the instructions below to customize your build process for each of these scenarios.
 
-# [Hosted pool](#tab/hosted)
+# [Zip archive](#tab/zip/yaml)
 
-No additional steps are necessary to run your build on the hosted pool.
+The build process you set up in the previous section already publishes a zip archive file for your Node.js web app.
+
+# [Zip archive](#tab/zip/editor)
+
+The build process you set up in the previous section already publishes a zip archive file for your Node.js web app.
+
+# [Folder](#tab/folder/yaml)
+
+Edit the file in the version control editor and remove the **ArchiveFiles** task by deleting the following lines from .vsts-ci.yml file.
+
+```
+- task: ArchiveFiles@1
+  inputs:
+    rootFolder: $(Build.SourcesDirectory)
+    archiveFile: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
+```
+
+# [Folder](#tab/folder/editor)
+
+Remove the **Archive files** task from the build definition.
 
 # [Container](#tab/container/yaml)
 
-Edit the **.vsts-ci.yml** file in the master branch of your repository by adding the following line at the beginning:
-
-```
-_PREVIEW_DOCKER_CONTAINER_ = adventworks/nodejs-build-env
-```
+This is not yet supported in YAML. It will be supported soon.
 
 # [Container](#tab/container/editor)
 
-* Select the **Variables** tab in your build definition, and add the following variable:
+Before packaging the app and publishing it as a container, you need access to a container registry. In the instructions here, we will use Azure Container Registry, but you can also use another Docker registry.
 
-```
-_PREVIEW_DOCKER_CONTAINER_ = adventworks/nodejs-build-env
-```
+1. Remove the **Archive files** task and the **Publish artifacts** task from the build definition.
 
-This defines a sample Node build environment that we have uploaded to the public Docker container registry.
+1. Select **+ Add Task** to add another task to the build definition. From the displayed task catalog, select **Docker** task. Change the parameters for this task as follows:
 
----
+   * **Azure subscription:** Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions connection to your Azure subscription. If you are using VSTS and if you see an **Authorize** button next to the input, click on it to authorize VSTS to connect to your Azure subscription. If you are using TFS or if you do not see
+     the desired Azure subscription in the list of subscriptions, see [Azure Resource Manager service endpoint](../../concepts/library/service-endpoints.md#sep-azure-rm) to manually set up the connection.
 
-## Make a change
+   * **Azure Container Registry:** Select the Azure container registry that you created above.
+
+   * **Action:** Build an image.
+
+1. Select **+ Add Task** to add another **Docker** task to the build definition.
+   Make sure that the task is inserted _after_ the previous **Docker** task. Change the parameters for this task as follows:
+
+   * **Azure subscription:** Same as in previous task.
+
+   * **Azure Container Registry:** Same as in previous task.
+
+   * **Action:** Push an image.
+
+## Run a build
+
+# [YAML](#tab/yaml)
+
+1. If you made any changes in the .vsts-ci.yml file, commit those changes to version control. Or else, make a simple change by adding a comment to it.
+
+1. Navigate to the **Builds** tab in **Build and Release** hub and notice that a build definition has been automatically started.
+
+# [YAML](#tab/editor)
 
 1. Click **Save and queue** to kick off your first build. On the **Queue build** dialog box, click **Queue**.
 
 1. A new build is started. You'll see a link to the new build on the top of the page. Click the link to watch the new build as it happens.
-
-
-[//]: # (TODO:> [!TIP])
-[//]: # (TODO:> To learn more about GitHub CI builds, see [Define CI build process for your Git repo](#)
 
 ## View the build summary
 
