@@ -52,12 +52,12 @@ For more information about the following entities, see [data model](data-model-a
 
 This information can also be found by going to the service root url endpoint. The endpoint is:  
 
-*AccountName*```.analytics.visualstudio.com/DefaultCollection/_odata   ``` 
+*AccountName*```.analytics.visualstudio.com/_odata/v1.0-preview   ``` 
 
 So, for the *FabrikamFiber* account:   
 
 ```
-fabrikamfiber.analytics.visualstudio.com/DefaultCollection/_odata   
+fabrikamfiber.analytics.visualstudio.com/_odata/v1.0-preview   
 ``` 
 
 >[!NOTE]  
@@ -67,7 +67,7 @@ Accessing this URL returns a metadata document similar to the following:
 
 ```
 {
-    "@odata.context":"https://fabrikamfiber.analytics.visualstudio.com/DefaultCollection/_odata/$metadata","value":[
+    "@odata.context":"https://fabrikamfiber.analytics.visualstudio.com/_odata/v1.0-preview/$metadata","value":[
     {
         "name":"WorkItems","kind":"EntitySet","url":"WorkItems"
     },{
@@ -104,7 +104,7 @@ Accessing this URL returns a metadata document similar to the following:
 To access detailed metadata, add ```$metadata``` to the end of the URL:  
 
 ```
-https://fabrikamfiber.analytics.visualstudio.com/DefaultCollection/_odata/$metadata
+https://fabrikamfiber.analytics.visualstudio.com/_odata/v1.0-preview/$metadata
 ```
 <br/>
 This returns a fully qualified XML document which describes all entities, fields, and relationships.  

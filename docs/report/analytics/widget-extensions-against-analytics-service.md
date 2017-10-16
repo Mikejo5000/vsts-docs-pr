@@ -143,8 +143,8 @@ function createChart(VSS_Auth_Service, WidgetHelpers) {
 
         var accountName = VSS.getWebContext().account.name;
         var projectName = VSS.getWebContext().project.name;
-        var urlString = "https://" + accountName + ".analytics.visualstudio.com/DefaultCollection/" + projectName
-            + "/_odata/WorkItems?$apply=groupby((WorkItemType), aggregate(Count with sum as Count))";
+        var urlString = "https://" + accountName + ".analytics.visualstudio.com/" + projectName
+            + "/_odata/v1.0-preview/WorkItems?$apply=groupby((WorkItemType), aggregate($count as Count))";
 
         $.ajax({
             type: "GET",
