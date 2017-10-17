@@ -19,7 +19,7 @@ Using the OData service provided by the Analytics Marketplace extension, you can
 
 In this topic, the basic root URL is constructed as follows:
 
-```https://{account}.analytics.visualstudio.com/_odata/v1.0-preview``` 
+```https://{account}.analytics.visualstudio.com/_odata/v1.0-preview ``` 
 
 
 All additional URL parts are specified as an additional part of the query string as shown in the examples below.   
@@ -32,7 +32,7 @@ To query a single entity, such as Work Items or Areas or Projects, simply add th
 
 For example, you query Areas by adding ```/Areas```. The full URL is:
 
-```https://{account}.analytics.visualstudio.com/_odata/v1.0-preview/Areas```
+```https://{account}.analytics.visualstudio.com/_odata/v1.0-preview/Areas ```
 
 This is equivalent to performing a select statement on the entity and returning everything, all columns and all rows. If you have a large number of work items, this may take several seconds.
  
