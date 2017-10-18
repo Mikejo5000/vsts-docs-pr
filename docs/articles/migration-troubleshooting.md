@@ -262,6 +262,10 @@ Your import files and DACPAC are not located in the **required** Azure region to
 AzCopy.exe /Source:https://accountSCUS.blob.core.windows.net/mycontainer /SourceKey:"primary access key" /Dest:https://accountCUS.blob.core.windows.net/mycontainer /DestKey:"primary access key" /S
 ```
 
+    VS403316: An inconsistency was detected in some TFVC files for this collection. The inconsistency needs to be corrected prior to running an import to Visual Studio Team Services. Please reach out to https://aka.ms/VSTSCustomerSupport for assistance with addressing this issue.
+
+An inconsistency was detected in some TFVC files within your collection. To resolve the error you will need to work VSTS [customer support](https://aka.ms/VSTSCustomerSupport). Please open a support ticket and they will assist you with correcting the error. 
+
 ### Import Failures
 When an imports fails the individual that queued the import will receive an email. In this case, your team will need to roll back by bringing your Team Foundation Server instance back online and attaching your collection. This will allow your team members to continue working. Once your team is back up and working again, follow the instructions in the failure email and file a [support case](https://www.visualstudio.com/team-services/support/#vsts-support) to get assistance. 
 
