@@ -13,26 +13,25 @@ ms.date: 08/11/2016
 
 **VSTS**  
 
-[!INCLUDE [temp](../_shared/analytics-preview.md)]
+Querying work items across links is similar to any other operation across related entities in OData, but because links are entities with their own properties there is some additional complexity.
 
-Querying work items across links is similar to any other operation across related entities in OData, but
-because of the different link types there can be some added complexities.
+There are two ways to query for linked items. The first is the Parent/Child hierarchy, the second is the Links navigation property. The sections below cover each approach.
 
-There are two ways to query links - the first is using the hierarchichal navigation capabilities provided
-by Children and Parent.
+## Parent/Child hierarchy
+Items that are linked together with Parent/Child links can be included in query results by using $expand on the Parent and Children properties.
 
-## Parent to child queries
+### Example: Parent to child query
+To return information about a particular item's children use $expand on the **Children** navigation property.
 
+Request
 ```
-https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0-preview/WorkItems?$select=WorkItemId,Title,State&$expand=Children($select=WorkItemId,Title,State)&$filter=WorkItemId eq [ID #]
+https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$select=WorkItemId,Title,State&$expand=Children($select=WorkItemId,Title,State)&$filter=WorkItemId eq [ID #]
 ```
 
-This query is querying the work items, and expanding the children (and work items linked to the work item being filtered with a parent/child
-relationships). It filters the query so only one root work item is returned. The query result looks like this:
-
+Response
 ```
 {
-  "@odata.context":"https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0-preview/$metadata#WorkItems(WorkItemId,Title,State,Children,Children(WorkItemId,Title,State))","value":[
+  "@odata.context":"https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItems(WorkItemId,Title,State,Children,Children(WorkItemId,Title,State))","value":[
     {
       "WorkItemId":103,"Title":"Feature Y","State":"New","Children":[
         {
@@ -48,20 +47,20 @@ relationships). It filters the query so only one root work item is returned. The
 }
 ```
 
-However, as you might be wondering - a hierarchy can have multiple leves - how do I get all of them?
-Modify the query above so that it looks like this:
+### Example: Multiple levels of hierarchy
+Users may be interested in all descendants of a particular set of work items in which case the **$levels** option can be used. The **$levels** option allows the user to control how many levels deep the service will traverse when retrieving items. In this example **max** actually equates to $levels=5 but users may substitute other values.
 
+**Note:** The $levels option only works for recursive relationships.
+
+Request
 ```
-https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0-preview/WorkItems?$select=WorkItemId,Title,State&$expand=Children($select=WorkItemId,Title,State;$levels=max)&$filter=WorkItemId eq 103
+https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$select=WorkItemId,Title,State&$expand=Children($select=WorkItemId,Title,State;$levels=max)&$filter=WorkItemId eq 103
 ```
 
-There is only one change in this query - **;$levels=max** in the children clause. This will cause the entire hieararchy to
-be returned (**max** actually equates to $levels=5 in this case). This means that you can control how many levels of data are
-returned. The results of this query look like the following:
-
+Response
 ```
 {
-  "@odata.context":"https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0-preview/$metadata#WorkItems(WorkItemId,Title,State,Children,Children(WorkItemId,Title,State,Children,Children(WorkItemId,Title,State)))","value":[
+  "@odata.context":"https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItems(WorkItemId,Title,State,Children,Children(WorkItemId,Title,State,Children,Children(WorkItemId,Title,State)))","value":[
     {
       "WorkItemId":103,"Title":"Feature Y","State":"New","Children":[
         {
@@ -71,9 +70,7 @@ returned. The results of this query look like the following:
             }
           ]
         },{
-          "WorkItemId":50,"Title":"Story 17","State":"New","Children":[
-            
-          ]
+          "WorkItemId":50,"Title":"Story 17","State":"New","Children":[]
         },{
           "WorkItemId":55,"Title":"Story 22","State":"New","Children":[
             {
@@ -88,23 +85,21 @@ returned. The results of this query look like the following:
 
 ```
 
-Notice that two of the stories now have child tasks being shown.
+Notice that the "Story 15" and "Story 22" items now include their child items.
 
-**Note** that $levels only works for recursive relationships and not flat or directed work item links.**
+### Example: Child to parent query
 
-##Child to parent queries
+By replacing **Children** with **Parent** in the $expand option users can retrieve an item's ancestry.
 
-Modify the previous query to this:
-
+Request
 ```
-https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0-preview/WorkItems?$select=WorkItemId,Title,State&$expand=Parent($select=WorkItemId,Title,State;$levels=max)&$filter=WorkItemId eq 105
+https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$select=WorkItemId,Title,State&$expand=Parent($select=WorkItemId,Title,State;$levels=max)&$filter=WorkItemId eq 105
 ```
 
-See the difference? Change **Children** to **Parent** and replace the ID with the ID of a task. The results are as follows:
-
+Response
 ```
 {
-  "@odata.context":"https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0-preview/$metadata#WorkItems(WorkItemId,Title,State,Parent,Parent(WorkItemId,Title,State,Parent,Parent(WorkItemId,Title,State)))","value":[
+  "@odata.context":"https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItems(WorkItemId,Title,State,Parent,Parent(WorkItemId,Title,State,Parent,Parent(WorkItemId,Title,State)))","value":[
     {
       "WorkItemId":105,"Title":"Task B","State":"New","Parent":{
         "WorkItemId":55,"Title":"Story 22","State":"New","Parent":{
@@ -116,24 +111,21 @@ See the difference? Change **Children** to **Parent** and replace the ID with th
 }
 ```
 
-##Non-hierarchical link query
+## Non-hierarchical links
+In addition to the Parent/Child hierarchy items can be directly related to other items with link types like *Related* or *Duplicate*. The **Links** navigation property allows users to request these relationships.
 
-The Parent/Child hierarchy is one way to bring back information. The analytics serivce also provides the ability to return
-directed links and to mix and match the data that is returned using the **Links** navigation property.
+### Example: Request an item's links
+Users interested in the links associated with an item may $expand the **Links** navigation property.
 
-##Get link info query 
-
-This query will return all of the links (not work items on the other end of those links) for a work item:
-
+Request
 ```
-https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0-preview/WorkItems?$select=WorkItemId,Title,WorkItemType,State&$filter=WorkItemId%20eq%20103&$expand=Links
+https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$select=WorkItemId,Title,WorkItemType,State&$filter=WorkItemId%20eq%20103&$expand=Links
 ```
 
-This results in the following:
-
+Response
 ```
 {
-  "@odata.context":"https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0-preview/$metadata#WorkItems(WorkItemId,Title,WorkItemType,State,Links)","value":[
+  "@odata.context":"https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItems(WorkItemId,Title,WorkItemType,State,Links)","value":[
     {
       "WorkItemId":103,"Title":"Feature Y","WorkItemType":"Feature","State":"New","Links":[
         {
@@ -150,19 +142,18 @@ This results in the following:
   ]
 }
 ```
+### Example: Request details of linked items
+The previous query only retreives details on the links between items. A user may include the details of those linked items by using $expand on the **TargetWorkItem** navigation property of the link.
 
-This is probably not exactly what you need or wanted, but it's a start that can be built upon. In order to get the work items on the
-other end of those links, you can expand the links one more level by doing the following:
-
+Request
 ```
-https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0-preview/WorkItems?$select=WorkItemId,Title,WorkItemType,State&$filter=WorkItemId%20eq%20103&$expand=Links($expand=TargetWorkItem($select=WorkItemId,Title,State))
+https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$select=WorkItemId,Title,WorkItemType,State&$filter=WorkItemId%20eq%20103&$expand=Links($expand=TargetWorkItem($select=WorkItemId,Title,State))
 ```
 
-By expanding the Links on the TargetWorkItem navigation property you end up with this result:
-
+Response
 ```
 {
-  "@odata.context":"https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0-preview/$metadata#WorkItems(WorkItemId,Title,WorkItemType,State,Links,Links(TargetWorkItem(WorkItemId,Title,State)))","value":[
+  "@odata.context":"https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItems(WorkItemId,Title,WorkItemType,State,Links,Links(TargetWorkItem(WorkItemId,Title,State)))","value":[
     {
       "WorkItemId":103,"Title":"Feature Y","WorkItemType":"Feature","State":"New","Links":[
         {
@@ -188,17 +179,18 @@ By expanding the Links on the TargetWorkItem navigation property you end up with
 }
 ```
 
-Next, is the ability to query only on specific links. To do this, modify the above query as follows:
+### Example: Links of a specific type
+Users may be interested in a particular type of link between items, in which case the **LinkTypeName** property can be used in a $filter.
 
+Request
 ```
-https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0-preview/WorkItems?$select=WorkItemId,Title,WorkItemType,State&$filter=WorkItemId%20eq%20103&$expand=Links($filter=LinkTypeName eq 'Related';$expand=TargetWorkItem($select=WorkItemId,Title,State))
+https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$select=WorkItemId,Title,WorkItemType,State&$filter=WorkItemId%20eq%20103&$expand=Links($filter=LinkTypeName eq 'Related';$expand=TargetWorkItem($select=WorkItemId,Title,State))
 ```
 
-This query returns only the work items linked with the **Related** link type as shown here:
-
+Response
 ```
 {
-  "@odata.context":"https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0-preview/$metadata#WorkItems(WorkItemId,Title,WorkItemType,State,Links,Links(TargetWorkItem(WorkItemId,Title,State)))","value":[
+  "@odata.context":"https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItems(WorkItemId,Title,WorkItemType,State,Links,Links(TargetWorkItem(WorkItemId,Title,State)))","value":[
     {
       "WorkItemId":103,"Title":"Feature Y","WorkItemType":"Feature","State":"New","Links":[
         {
