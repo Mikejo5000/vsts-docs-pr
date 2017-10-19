@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
 ms.assetid: d5bd13e2-aa7c-4191-aefd-bd9f05663e7b
 ms.manager: douge
-ms.author: estfan
+ms.author: billchi
 ms.date: 10/6/2017
 ---
 
@@ -101,5 +101,5 @@ will be billed on the 1st day of the calendar month after the anniversary date o
 [Visual Studio subscriptions troubleshooting](faq-vs-subscriptions.md), or 
 [Azure billing troubleshooting](faq-azure-billing.md). 
 
-For the billing frequency of extensions, see [Get extensions for VSTS](/vsts/marketplace/install-vsts-extension#bill-period).
+For the billing frequency of extensions, see [Get extensions for VSTS](../marketplace/faq-extensions.md#bill-period).
 

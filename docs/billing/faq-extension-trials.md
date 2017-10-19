@@ -5,7 +5,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
 ms.assetid: 4a6f0af1-aee7-404a-a566-da7922127c69
 ms.manager: douge
-ms.author: estfan
+ms.author: billchi
 ms.date: 10/6/2017
 ---
 
@@ -47,7 +47,7 @@ A:	Check the extension pane in your Users hub.
 ####Q:   How do I cancel my trial?
 
 A: To stop your trial, just 
-[uninstall the extension](/vsts/marketplace/install-vsts-extension#uninstall-disable-extension) 
+[uninstall the extension](../marketplace/uninstall-disable-vsts-extensions.md) 
 from your VSTS account.
 
 <a name="feature-access"></a>

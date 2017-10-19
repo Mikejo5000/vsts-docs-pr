@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
 ms.assetid: 435fb3a4-1766-4172-928d-80c09cfb1410
 ms.manager: douge
-ms.author: estfan
+ms.author: billchi
 ms.date: 10/6/2017
 ---
 
@@ -28,7 +28,7 @@ comprehensive manual and exploratory testing features.
 As the VSTS [account owner or project collection administrator](faq-billing-setup.md#find-owner), 
 you can start extension trials for your VSTS account. 
 Otherwise, you can 
-[request extensions](/vsts/marketplace/install-vsts-extension#request) 
+[request extensions](../marketplace/request-vsts-extension.md) 
 instead. Learn about other 
 [VSTS extensions](https://marketplace.visualstudio.com/vsts).
 

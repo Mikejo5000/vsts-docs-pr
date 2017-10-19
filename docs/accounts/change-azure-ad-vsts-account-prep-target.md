@@ -5,7 +5,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
 ms.assetid: ff735651-3ba6-4c6a-8765-bbd126c45532
 ms.manager: douge
-ms.author: estfan
+ms.author: billchi
 ms.date: 10/6/2017
 ms.topic: get-started-article
 ---
@@ -21,7 +21,7 @@ so they can get VSTS account access as directory members.
 
 ## Set up your Microsoft account as Azure subscription Co-administrator
 
-[See steps here](/azure/billing/billing-add-change-azure-subscription-administrator.md).
+[See steps here](/azure/billing/billing-add-change-azure-subscription-administrator).
 
 [Why am I asked to choose between my work or school account and my personal account?](faq-azure-access.md#ChooseOrgAcctMSAcct)
 
