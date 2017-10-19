@@ -285,26 +285,3 @@ You can order by multiple items, but you can only order by columns that are retu
 
 You can use the following canonical functions with the ```$filter``` or ```$orderby``` system query options. For more information, see the [Odata specifications](http://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part2-url-conventions/odata-v4.0-errata02-os-part2-url-conventions-complete.html#_Toc406398116).
 
-| Canonical function | Description |
-| ------------------ | ----------- |  
-| ```contains``` |  Returns true if the second parameter string value is a substring of the first parameter string value, otherwise it returns false.  |  
-| ```endswith``` | Returns true if the first parameter string value ends with the second parameter string value, otherwise it returns false |  
-| ```startswith``` |  Returns true if the first parameter string value starts with the second parameter string value, otherwise it returns false |  
-| ```length``` | Returns the number of characters in the parameter value |  
-| ```indexof``` | Returns the zero-based character position of the first occurrence of the second parameter value in the first parameter value |  
-| ```substring``` | Returns a substring of the first parameter string value, starting at the Nth character and finishing at the last character (where N is the second parameter integer value) |  
-| ```tolower``` |  Returns the input parameter string value with all uppercase characters converted to lowercase  |  
-| ```toupper``` |  Returns  the input parameter string value with all lowercase characters converted to uppercase |  
-| ```trim``` |  Returns the input parameter string value with all leading and trailing whitespace characters |  
-| ```concat``` | Returns the year component of the Date or DateTimeOffset parameter value |  
-| ```year``` |  Returns the year component of the Date or DateTimeOffset parameter value |  
-| ```month``` | Returns the month component of the Date or DateTimeOffset parameter value |  
-| ```day``` |  Returns the day component of the Date or DateTimeOffset parameter value |  
-| ```second``` | Returns the second component (without the fractional part) of the DateTimeOffset or TimeOfDay parameter value |  
-| ```fractionalseconds``` |  Returns the fractional seconds component of the DateTimeOffset or TimeOfDay parameter value as a non-negative decimal value less than 1 |  
-| ```date``` | Returns the date part of the DateTimeOffset parameter value |  
-| ```time``` |  Returns the time part of the DateTimeOffset parameter value |  
-| ```totaloffsetminutes``` | Returns  the signed number of minutes in the time zone offset part of the DateTimeOffset parameter value |  
-| ```now``` |  Returns the current point in time (date and time with time zone) as a DateTimeOffset value |  
-| ``` maxdatetime``` | Returns  the latest possible point in time as a DateTimeOffset value |  
-| ```mindatetime``` |  Returns the earliest possible point in time as a DateTimeOffset value |  

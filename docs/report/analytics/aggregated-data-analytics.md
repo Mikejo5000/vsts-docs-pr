@@ -77,9 +77,6 @@ Work items can also be counted by using the following:
 
     /WorkItems?$apply=aggregate(WorkItemId with countdistinct as CountOfWorkItems)
 
->[!NOTE]  
->The column "Count" is provided by the model to make it easier to do counts and work with client tools because the underlying OData implementation does not currently support the ```$count``` virtual property within the aggregation extensions. Once we implement this functionality, we'll update this document.  
-
 
 **Return the count of areas**
 
