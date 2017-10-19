@@ -141,7 +141,7 @@ or Area Path or Team Project. To do this, you need to understand the navigation 
 Here is a partial view of the metadata for the Work Items entity:
 
 
-```
+```XML
     <Property ...>
     <Property Name="RequirementType" Type="Edm.String"/>
     <Property Name="RequiresReview" Type="Edm.String"/>
@@ -154,12 +154,11 @@ Here is a partial view of the metadata for the Work Items entity:
     <Property Name="TaskType" Type="Edm.String"/>
     <Property Name="UserAcceptanceTest" Type="Edm.String"/>
     <Property Name="Count" Nullable="false" Type="Edm.Int32"/>
-    <NavigationProperty Name="Revisions" Type="Collection(Microsoft.VisualStudio.Services.Analytics.WebApi.WorkItemRevision)"/>
-    <NavigationProperty Name="BoardLocations" Type="Collection(Microsoft.VisualStudio.Services.Analytics.WebApi.BoardLocation)"/>
-    <NavigationProperty Name="Project" Type="Microsoft.VisualStudio.Services.Analytics.WebApi.Project"/>
-    <NavigationProperty Name="Area" Type="Microsoft.VisualStudio.Services.Analytics.WebApi.Area"/>
-    <NavigationProperty Name="Iteration" Type="Microsoft.VisualStudio.Services.Analytics.WebApi.Iteration"/>
-</EntityType>
+    <NavigationProperty Name="Revisions" Type="Collection(Microsoft.VisualStudio.Services.Analytics.Model.WorkItemRevision)"/>
+    <NavigationProperty Name="BoardLocations" Type="Collection(Microsoft.VisualStudio.Services.Analytics.Model.BoardLocation)"/>
+    <NavigationProperty Name="Project" Type="Microsoft.VisualStudio.Services.Analytics.Model.Project"/>
+    <NavigationProperty Name="Area" Type="Microsoft.VisualStudio.Services.Analytics.Model.Area"/>
+    <NavigationProperty Name="Iteration" Type="Microsoft.VisualStudio.Services.Analytics.Model.Iteration"/>
 ```
 
 
@@ -194,10 +193,25 @@ This returns the following:
 > [!div class="tabbedCodeSnippets"]
 ```JSON
 {
-  "@odata.context":"https://{account}.analytics.visualstudio.com/_odata/v1.0-preview/$metadata#WorkItems(WorkItemId,WorkItemType,Title,State,Iteration)","value":[
+  "@odata.context":"https://{account}.analytics.visualstudio.com/_odata/v1.0-preview/$metadata#WorkItems(WorkItemId,WorkItemType,Title,State,Iteration)",
+  "value":[
     {
-      "WorkItemId":10000,"WorkItemType":"Task","Title":"Some title","State":"Completed","Iteration":{
-        "IterationId":"7a2c246e-fc62-41af-ad18-62332017bc46","Name":"Sprint 55","Number":13021,"IterationPath":"Fabrikam\\Sprints\\Sprint 55","StartDate":"2013-09-23T00:00:00Z","EndDate":"2013-10-11T00:00:00Z","IterationLevel0":"VSOnline","IterationLevel1":"OneVS","IterationLevel2":"Previous Sprints","IterationLevel3":"Sprint 55","IterationLevel4":null,"IterationLevel5":null,"IterationLevel6":null,"IterationLevel7":null,"IterationLevel8":null,"IterationLevel9":null,"IterationLevel10":null,"IterationLevel11":null,"IterationLevel12":null,"IterationLevel13":null,"Level":3,"IsDeleted":false
+      "WorkItemId":10000,
+      "WorkItemType":"Task",
+      "Title":"Some title",
+      "State":"Completed",
+      "Iteration":{
+        "IterationId":"7a2c246e-fc62-41af-ad18-62332017bc46",
+        "Name":"Sprint 55",
+        "Number":13021,
+        "IterationPath":"Fabrikam\\Sprints\\Sprint 55",
+        "StartDate":"2013-09-23T00:00:00Z",
+        "EndDate":"2013-10-11T00:00:00Z",
+        "IterationLevel1":"Fabrikam",
+        "IterationLevel2":"Sprints",
+        "IterationLevel3":"Sprint 55",
+        "Level":2,
+        "IsDeleted":false
       }
     }
   ]
@@ -211,12 +225,18 @@ To return less data, add a ```$select``` statement against the iteration as well
     /WorkItems?$select=WorkItemId,WorkItemType,Title,State&$filter=WorkItemId eq 10000&$expand=Iteration($select=Name,IterationPath)
 
 Which returns the following:
-```
+```JSON
 {
-  "@odata.context":"https://{account}.analytics.visualstudio.com/_odata/v1.0-preview/$metadata#WorkItems(WorkItemId,WorkItemType,Title,State,Iteration,Iteration(Name,IterationPath))","value":[
+  "@odata.context":"https://{account}.analytics.visualstudio.com/_odata/v1.0-preview/$metadata#WorkItems(WorkItemId,WorkItemType,Title,State,Iteration,Iteration(Name,IterationPath))",
+  "value":[
     {
-      "WorkItemId":10000,"WorkItemType":"Task","Title":"Some title","State":"Completed","Iteration":{
-        "Name":"Sprint 55","IterationPath":"Fabrikam\\Sprints\\Sprint 55"
+      "WorkItemId":10000,
+      "WorkItemType":"Task",
+      "Title":"Some title",
+      "State":"Completed",
+      "Iteration":{
+        "Name":"Sprint 55",
+        "IterationPath":"Fabrikam\\Sprints\\Sprint 55"
       }
     }
   ]
@@ -228,13 +248,39 @@ In OData, you can nest ```$expand``` statements. For example, you can write the 
     /WorkItems?$filter=WorkItemId eq 10000&$expand=Iteration($expand=Project)
 
 This results in:
-```
+```JSON
 {
   "@odata.context":"https://{account}.analytics.visualstudio.com/_odata/v1.0-preview/$metadata#WorkItems","value":[
     {
-      "WorkItemId":10000,"Revision":3,"Watermark":283397,"Title":"Production deployment and testing for Entitlement API v2 and Subscriber database","WorkItemType":"Task","ChangedDate":"2014-07-10T19:29:58.41Z","CreatedDate":"2014-04-19T22:44:58.31Z","State":"Completed","Reason":"Completed","FoundIn":null,"IntegrationBuild":null,"ActivatedDate":null,"Activity":null,"BacklogPriority":null,"BusinessValue":null,"ClosedDate":null,"Discipline":null,"Issue":null,"Priority":2,"Rating":null,"ResolvedDate":null,"ResolvedReason":null,"Risk":null,"Severity":null,"StackRank":null,"TimeCriticality":null,"Triage":null,"ValueArea":null,"CompletedWork":10.0,"DueDate":null,"Effort":null,"FinishDate":null,"OriginalEstimate":20.0,"RemainingWork":null,"Size":null,"StartDate":null,"StoryPoints":null,"TargetDate":null,"Blocked":null,"Committed":null,"Escalate":null,"FoundInEnvironment":null,"HowFound":null,"Probability":null,"RequirementType":null,"RequiresReview":null,"RequiresTest":null,"RootCause":null,"SubjectMatterExpert1":null,"SubjectMatterExpert2":null,"SubjectMatterExpert3":null,"TargetResolveDate":null,"TaskType":null,"UserAcceptanceTest":null,"Count":1,"Iteration":{
-        "IterationId":"7a2c246e-fc62-41af-ad18-62332017bc46","Name":"Sprint 55","Number":13021,"IterationPath":"Fabrikam\\Sprints\\Sprint 55","StartDate":"2013-09-23T00:00:00Z","EndDate":"2013-10-11T00:00:00Z","IterationLevel0":"VSOnline","IterationLevel1":"OneVS","IterationLevel2":"Previous Sprints","IterationLevel3":"Sprint 55","IterationLevel4":null,"IterationLevel5":null,"IterationLevel6":null,"IterationLevel7":null,"IterationLevel8":null,"IterationLevel9":null,"IterationLevel10":null,"IterationLevel11":null,"IterationLevel12":null,"IterationLevel13":null,"Level":3,"IsDeleted":false,"Project":{
-          "ProjectId":"b924d696-3eae-4116-8443-9a18392d8544","ProjectName":"Fabrikam","IsDeleted":false
+      "WorkItemId":10000,
+      "Revision":3,
+      "Watermark":283397,
+      "Title":"Production deployment and testing for Entitlement API v2 and Subscriber database",
+      "WorkItemType":"Task",
+      "ChangedDate":"2014-07-10T19:29:58.41Z",
+      "CreatedDate":"2014-04-19T22:44:58.31Z",
+      "State":"Completed",
+      "Reason":"Completed",
+      "Priority":2,
+      "CompletedWork":10.0,
+      "OriginalEstimate":20.0,
+      "Count":1,
+      "Iteration":{
+        "IterationId":"7a2c246e-fc62-41af-ad18-62332017bc46",
+        "Name":"Sprint 55",
+        "Number":13021,
+        "IterationPath":"Fabrikam\\Sprints\\Sprint 55",
+        "StartDate":"2013-09-23T00:00:00Z",
+        "EndDate":"2013-10-11T00:00:00Z",
+        "IterationLevel1":"Fabrikam",
+        "IterationLevel2":" Sprints",
+        "IterationLevel3":"Sprint 55",
+        "Level":2,
+        "IsDeleted":false,
+        "Project":{
+          "ProjectId":"b924d696-3eae-4116-8443-9a18392d8544",
+          "ProjectName":"Fabrikam",
+          "IsDeleted":false
         }
       }
     }
@@ -247,13 +293,29 @@ You can also combine ```$expand``` and ```$select``` statements. For example, yo
     /WorkItems?$filter=WorkItemId eq 10000&$expand=Iteration($select=IterationId,IterationPath;$expand=Project)
 
 This results in:
-```
+```JSON
 {
-  "@odata.context":"https://{account}.analytics.visualstudio.com/_odata/v1.0-preview/$metadata#WorkItems(Iteration(IterationId,IterationPath,Project))","value":[
+  "@odata.context":"https://{account}.analytics.visualstudio.com/_odata/v1.0-preview/$metadata#WorkItems(Iteration(IterationId,IterationPath,Project))",
+  "value":[
     {
-      "WorkItemId":10000,"Revision":3,"Watermark":283397,"Title":"Production deployment and testing for Entitlement API v2 and Subscriber database","WorkItemType":"Task","ChangedDate":"2014-07-10T19:29:58.41Z","CreatedDate":"2014-04-19T22:44:58.31Z","State":"Completed","Reason":"Completed","FoundIn":null,"IntegrationBuild":null,"ActivatedDate":null,"Activity":null,"BacklogPriority":null,"BusinessValue":null,"ClosedDate":null,"Discipline":null,"Issue":null,"Priority":2,"Rating":null,"ResolvedDate":null,"ResolvedReason":null,"Risk":null,"Severity":null,"StackRank":null,"TimeCriticality":null,"Triage":null,"ValueArea":null,"CompletedWork":10.0,"DueDate":null,"Effort":null,"FinishDate":null,"OriginalEstimate":20.0,"RemainingWork":null,"Size":null,"StartDate":null,"StoryPoints":null,"TargetDate":null,"Blocked":null,"Committed":null,"Escalate":null,"FoundInEnvironment":null,"HowFound":null,"Probability":null,"RequirementType":null,"RequiresReview":null,"RequiresTest":null,"RootCause":null,"SubjectMatterExpert1":null,"SubjectMatterExpert2":null,"SubjectMatterExpert3":null,"TargetResolveDate":null,"TaskType":null,"UserAcceptanceTest":null,"Count":1,"Iteration":{
-        "IterationId":"7a2c246e-fc62-41af-ad18-62332017bc46","IterationPath":"Fabrikam\\Sprints\\Sprint 55","Project":{
-          "ProjectId":"b924d696-3eae-4116-8443-9a18392d8544","ProjectName":"Fabrikam","IsDeleted":false
+      "WorkItemId":10000,
+      "Revision":3,
+      "Watermark":283397,
+      "Title":"Production deployment and testing for Entitlement API v2 and Subscriber database","WorkItemType":"Task",
+      "ChangedDate":"2014-07-10T19:29:58.41Z",
+      "CreatedDate":"2014-04-19T22:44:58.31Z",
+      "State":"Completed",
+      "Reason":"Completed",
+      "Priority":2,
+      "CompletedWork":10.0,
+      "OriginalEstimate":20.0,
+      "Count":1,
+      "Iteration":{
+        "IterationId":"7a2c246e-fc62-41af-ad18-62332017bc46","IterationPath":"Fabrikam\\Sprints\\Sprint 55",
+        "Project":{
+          "ProjectId":"b924d696-3eae-4116-8443-9a18392d8544",
+          "ProjectName":"Fabrikam",
+          "IsDeleted":false
         }
       }
     }
