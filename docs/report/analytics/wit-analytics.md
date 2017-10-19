@@ -325,7 +325,7 @@ This results in:
 
 Notice that the result here shows only the IterationId and IterationPath and that the Project is a nested object within the JSON result.  Another key item to note is the URL itself, when using a ```$select``` statement and an ```$expand``` clause you must use a semi-colon (;) before the ```$expand```. Anything else will result in an error.
 
-###Sort results
+##Sort results
 
 You can sort OData results using the ```$orderby``` clause. You can apply this clause to any OData query as shown:
 
@@ -336,14 +336,8 @@ You can order by multiple items, but you can only order by columns that are retu
     /WorkItems?$select=WorkItemId,WorkItemType,State&$orderby=Reason
 
 
-
 ##Related notes  
 
 - [Aggregate data](aggregated-data-analytics.md)
 - [OData Version 4.0 Part 2: URL Conventions Plus Errata 02](http://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part2-url-conventions/odata-v4.0-errata02-os-part2-url-conventions-complete.html)
-
-<a id="canonical-functions"></a>
-###Filter or order by canonical functions
-
-You can use the following canonical functions with the ```$filter``` or ```$orderby``` system query options. For more information, see the [Odata specifications](http://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part2-url-conventions/odata-v4.0-errata02-os-part2-url-conventions-complete.html#_Toc406398116).
-
+- [Supported OData features](odata-supported-features.md) 

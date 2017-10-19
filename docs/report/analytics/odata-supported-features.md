@@ -6,19 +6,17 @@ ms.technology: vs-devops-reporting
 ms.assetid:  
 ms.manager: abjork 
 ms.author: greggboe 
-ms.date: 09/28/17 
-ms.topic: odata-supported-features 
+ms.date: 10/19/17 
 --- 
 
-
-## Supported OData features  
+# Supported OData features  
 
 The following table summarizes the supported and unsupported OData functions.  
 
 > [!NOTE]  
 > OData aggregation extensions are relatively new and either not supported by various client tools (yet) or full support for the extension is not supported by the Analytics Service.  
 
-### Supported clauses
+## Supported clauses
 
 - ```$apply``` 
 - ```$filter```
@@ -48,26 +46,8 @@ Following transformations are supported:
 
 For more samples, see [Aggregate data](aggregated-data-analytics.md)
 
-
-### Not supported clauses, expresions or transformations
-
-- ```concat```  
-- ```$search```  
-- ```$compute```  
-- ```compute```  
-- ```$rollup```  
-- ```isdefined```  
-- ```$crossjoin```  
-- ```topcount```  
-- ```topsum```  
-- ```toppercent```  
-- ```bottomcount```  
-- ```bottomsum```  
-- ```bottompercent```  
-- ```countdistinct```  
-- ```from``` 
-  
-### Supported functions
+ 
+## Supported functions
 | Canonical function | Description |
 | ------------------ | ----------- |  
 | ```contains``` |  Returns true if the second parameter string value is a substring of the first parameter string value, otherwise it returns false.  |  
@@ -106,6 +86,24 @@ However, you can't enter the following:
 ```
 /WorkItems?$select=WorkItemId,State,toupper(Title)
 ```  
+
+## Not supported clauses, expresions or transformations
+
+- ```concat```  
+- ```$search```  
+- ```$compute```  
+- ```compute```  
+- ```$rollup```  
+- ```isdefined```  
+- ```$crossjoin```  
+- ```topcount```  
+- ```topsum```  
+- ```toppercent```  
+- ```bottomcount```  
+- ```bottomsum```  
+- ```bottompercent```  
+- ```countdistinct```  
+- ```from``` 
 
 ## Related notes  
 >[!NOTE]  
