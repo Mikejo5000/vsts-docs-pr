@@ -13,6 +13,8 @@ ms.date: 08/11/2016
 
 **VSTS**  
 
+[!INCLUDE [temp](../_shared/analytics-preview.md)]
+
 Querying work items across links is similar to any other operation across related entities in OData, but because links are entities with their own properties there is some additional complexity.
 
 There are two ways to query for linked items. The first is the Parent/Child hierarchy, the second is the Links navigation property. The sections below cover each approach.
