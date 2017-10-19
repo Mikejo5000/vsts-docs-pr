@@ -1,13 +1,14 @@
---- 
-title: Supported OData features  
-description: TFS/SharePoint integration - About SharePoint Integration 
-ms.prod: visual-studio-tfs-dev16 
-ms.technology: vs-devops-reporting 
-ms.assetid:  
-ms.manager: abjork 
-ms.author: greggboe 
-ms.date: 10/19/17 
---- 
+---
+title: Supported OData features   
+description: Current level of support for OData specification in the Analytics Service
+ms.prod: vs-devops-alm
+ms.technology: vs-devops-reporting
+ms.assetid: 8D81FEFD-F432-4E10-A415-9167B5FE9A57 
+ms.manager: douge
+ms.author: kokosins
+ms.date: 10/17/2017
+---
+
 
 # Supported OData features  
 
@@ -46,7 +47,7 @@ Following transformations are supported:
 
 For more samples, see [Aggregate data](aggregated-data-analytics.md)
 
- 
+<a id="supported-functions"></a> 
 ## Supported functions
 | Canonical function | Description |
 | ------------------ | ----------- |  

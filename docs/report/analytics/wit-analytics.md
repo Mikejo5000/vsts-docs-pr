@@ -6,7 +6,7 @@ ms.technology: vs-devops-reporting
 ms.assetid: 0ABC2F7B-AFA5-465F-8DFE-4779D90452CD  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/11/2016
+ms.date: 10/17/2017
 ---
 
 #Analytics - Work Item Tracking OData queries 
@@ -116,8 +116,7 @@ Analytics does not understand or support any cross level reference with Projects
 >If you don't have access to all projects in an account, apply a project filter to your query. When pulling data into client tools such as
 >Power BI Desktop or Excel, use the project path form of the URL to ensure your data is constrained by a project, unless you need to report on more than one project.
 
-###Filter results  
-
+## Query with filters  
 You can filter data by providing a query filter clause.  
 
 Building on the last query, what if you wanted to filter the work items so that only items with the state "In Progress" were returned? To do that, use the following:
@@ -132,9 +131,7 @@ You can apply multiple filters by concatenating the filters:
 
     /WorkItems?$filter=WorkItemType eq 'Task' and State eq 'In Progress'
 
-Additionally, you can apply various functions such as ```contains```, ```startswith```, ```endswith``` and more. See the [Filter and order by canonical functions](#canonical-functions) section later in this topic. 
-
-## Query with filters  
+Additionally, you can apply various functions such as ```contains```, ```startswith```, ```endswith``` and more. See the [Filter and order by canonical functions](odata-supported-features.md#supported-functions) section later in this topic. 
 Querying work items is helpful, but you will eventually want to be able to filter by other data such as the Iteration Path
 or Area Path or Team Project. To do this, you need to understand the navigation properties of the entity model.  
 
