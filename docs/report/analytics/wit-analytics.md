@@ -19,7 +19,7 @@ Using the Analytics Service, you can construct basic and filtered queries to ret
 
 In this topic, the base root URL is constructed as follows:
 
-```https://{account}.analytics.visualstudio.com/_odata/v1.0 ``` 
+```https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0 ``` 
 
 
 All additional URL parts are specified as an additional part of the query string as shown in the examples below.   
@@ -264,15 +264,19 @@ You can order by multiple items, but you can only order by columns that are retu
 
     /WorkItems?$select=WorkItemId,WorkItemType,State&$orderby=Reason
 
-## Target a specific project  
+## Querying arcoss projects 
 
-Team projects are an integral part of VSTS, Analytics service supports querying on account level and on project level. By specifying the project, you automatically filter for any entities that are related to the project entity.
+The Analytics Service supports querying on an account level and on a project level. By specifying the project, you automatically filter for any entities that are related to the project entity.
 
 For example, the following project-scoped query will return all work items for a specific project:  
 
 ```https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems/$count ```
 
-For more details, see [Account and project scope queries](account-scoped-queries.md)
+The following account-scoped query will return all work items for all projects in the account:
+
+```https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems/$count ```
+
+For successful execution of account level query you need to have access to all projects in the account or filter out projects that you don't have access. For more details, see [Account and project scope queries](account-scoped-queries.md)
 
 ##Related notes  
 
