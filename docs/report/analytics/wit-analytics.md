@@ -258,11 +258,15 @@ Notice that the result here shows only the IterationId and IterationPath and tha
 
 You can sort OData results using the ```$orderby``` clause. You can apply this clause to any OData query as shown:
 
-    /WorkItems?$filter=WorkItemType eq 'User Story'&$orderby=WorkItemId
+    /WorkItems?$orderby=WorkItemId
 
-You can order by multiple items, but you can only order by columns that are returned. For example, the following entry will result in an error:  
+You can sort in ascending or descending order using keywords ```asc``` or ```desc``` correspondingly:
 
-    /WorkItems?$select=WorkItemId,WorkItemType,State&$orderby=Reason
+  /WorkItems?&$orderby=WorkItemId desc
+
+You can order by multiple items:
+
+    /WorkItems?$orderby=WorkItemType,State
 
 ##Related notes 
 
