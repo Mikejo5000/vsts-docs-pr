@@ -32,7 +32,7 @@ To query a single entity set, such as Work Items or Areas or Projects, simply ad
 
 For example, you query Areas by adding ```/Areas```. The full URL is:
 
-```https://{account}.analytics.visualstudio.com/_odata/v1.0/Areas ```
+```https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/Areas ```
 
 This is equivalent to performing a select statement on the entity set and returning everything, all columns and all rows. If you have a large number of work items, this may take several seconds.
  
@@ -122,7 +122,7 @@ This returns the following:
 > [!div class="tabbedCodeSnippets"]
 ```JSON
 {
-  "@odata.context":"https://{account}.analytics.visualstudio.com/_odata/v1.0/$metadata#WorkItems(WorkItemId,WorkItemType,Title,State,Iteration)",
+  "@odata.context":"https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItems(WorkItemId,WorkItemType,Title,State,Iteration)",
   "value":[
     {
       "WorkItemId":10000,
@@ -156,7 +156,7 @@ To return less data, add a ```$select``` statement against the iteration as well
 Which returns the following:
 ```JSON
 {
-  "@odata.context":"https://{account}.analytics.visualstudio.com/_odata/v1.0/$metadata#WorkItems(WorkItemId,WorkItemType,Title,State,Iteration,Iteration(Name,IterationPath))",
+  "@odata.context":"https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItems(WorkItemId,WorkItemType,Title,State,Iteration,Iteration(Name,IterationPath))",
   "value":[
     {
       "WorkItemId":10000,
@@ -179,7 +179,7 @@ In OData, you can nest ```$expand``` statements. For example, you can write the 
 This results in:
 ```JSON
 {
-  "@odata.context":"https://{account}.analytics.visualstudio.com/_odata/v1.0/$metadata#WorkItems","value":[
+  "@odata.context":"https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItems","value":[
     {
       "WorkItemId":10000,
       "Revision":3,
@@ -224,7 +224,7 @@ You can also combine ```$expand``` and ```$select``` statements. For example, yo
 This results in:
 ```JSON
 {
-  "@odata.context":"https://{account}.analytics.visualstudio.com/_odata/v1.0/$metadata#WorkItems(Iteration(IterationId,IterationPath,Project))",
+  "@odata.context":"https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItems(Iteration(IterationId,IterationPath,Project))",
   "value":[
     {
       "WorkItemId":10000,
@@ -264,21 +264,7 @@ You can order by multiple items, but you can only order by columns that are retu
 
     /WorkItems?$select=WorkItemId,WorkItemType,State&$orderby=Reason
 
-## Querying arcoss projects 
-
-The Analytics Service supports querying on an account level and on a project level. By specifying the project, you automatically filter for any entities that are related to the project entity.
-
-For example, the following project-scoped query will return all work items for a specific project:  
-
-```https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems/$count ```
-
-The following account-scoped query will return all work items for all projects in the account:
-
-```https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems/$count ```
-
-For successful execution of account level query you need to have access to all projects in the account or filter out projects that you don't have access. For more details, see [Account and project scope queries](account-scoped-queries.md)
-
-##Related notes  
+##Related notes 
 
 - [Aggregate data](aggregated-data-analytics.md)
 - [Supported OData features](odata-supported-features.md)

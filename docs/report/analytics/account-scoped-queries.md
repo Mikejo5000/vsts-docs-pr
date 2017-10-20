@@ -11,7 +11,7 @@ ms.date: 11/15/2017
 
 #Account and project scope queries
 
-Team projects are an integral part of VSTS, the Analytics Service supports querying on an account level and on a project level.
+The Analytics Service supports querying on an account level and on a project level.
 Base URL for account level queries:
 ```
 https://{account}.analytics.visualstudio.com/_odata/v1.0
