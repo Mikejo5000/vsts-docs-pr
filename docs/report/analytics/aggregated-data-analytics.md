@@ -17,7 +17,7 @@ ms.date: 08/04/2017
 
 Using the OData analytics service, you can aggregate data. 
 
-There are two ways to aggregate data. The simple approach without using aggregation extension provides the just the count of data. The more advanced approach performs aggregations available via the aggregation extensions. 
+There are two ways to aggregate data. The simple approach without using aggregation extension provides just the count of data. The more advanced approach performs aggregations available via the aggregation extensions. 
 
 In this topic, the basic root URL is constructed as:
 
@@ -26,7 +26,7 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0
 ``` 
 
 
-Use the above URL as a perfix for all the examples.   
+Use the above URL as a prefix for all the examples.   
 
 
 ##Simple count aggregations
@@ -53,17 +53,19 @@ You can also filter what you want to count. For example, if you want to know how
 
     /WorkItems/$count?$filter=State eq 'In Progress'
 
+For comparison, using data aggregations you enter this query:
+
+    /WorkItems?$apply=filter(State eq 'In Progress')/aggregate(Count with sum as Count)
+
+
 ## Aggregate data using aggregation extensions
 
-Now that you've seen how to do basic aggregations with ```count```, let's look at more complex examples.
-
->[!NOTE]  
->At this time, aggregation extensions are not supported by any of our client tools although they are being looked at. We've come up with a simple workaround which is explained in the Power BI client documentation.  
+Now that you've seen how to do basic aggregations with count, let's look at more complex examples.
  
 
 First, using OData, you trigger aggregations using the ```$apply``` token at the end of the URL. The basic format is:
 
-    /{entity name}?$apply=aggregate({column to aggregate} with {aggregation type} as {new column name})
+    /{entityName}?$apply=aggregate({columnToAggregate} with {aggregationType} as {newColumnName})
 
 ### Additional examples 
 
