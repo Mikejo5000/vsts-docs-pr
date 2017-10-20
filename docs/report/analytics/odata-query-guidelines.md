@@ -17,7 +17,7 @@ This section provides guidelines for designing OData queries against Analytics S
 
 The guidelines are organized as simple recommendations prefixed with the terms **DO**, **CONSIDER**, **AVOID** and **DO NOT**. In certain cases these recommendations were rules enforced in the service and it is reflected by **[BLOCKED]** prefix. These guidelines are intended to help extension developers understand the trade-offs between different solutions. There might be situations where data requirements force you to violate these guidelines. Such cases should be rare, and it is important that you have a clear and compelling reason for your decision.
 
-## Errors and warnings
+## Errors and warnings guidelines
 
 ### **DO** review warnings in the OData response.
 Every time you execute a query it gets checked against a set of predefined rules. Violations are returned back in the OData response in the `@vsts.warnings`. You should always review these warnings as they provide current and context-sensitive information on how to improve your query.
@@ -26,7 +26,7 @@ Every time you execute a query it gets checked against a set of predefined rules
 {
   "@odata.context": "https://{account}.tfsallin.net/_odata/1.0/$metadata#Projects",
   "@vsts.warnings": [
-  "The specified query does not include a $select or $apply clause which is recommended for all queries. Details on recommended query patterns are available here: <fwdlink>"
+    "The specified query does not include a $select or $apply clause which is recommended for all queries. Details on recommended query patterns are available here: <fwdlink>"
   ],
   "value": [
   ...
@@ -46,7 +46,7 @@ Some rules for OData queries were promoted from warning to error level. Instead 
 ```
 
 
-## Performance
+## Performance guidelines
 
 ### **DO** specify columns in `$select` clause
 You should speciy the columns you care about in the `$select` clause. This decreases the number of columns that have to be scanned and reduces the size of the response payload.
@@ -152,22 +152,37 @@ https://{account}.analytics.visualstudio.com/_odata/1.0/WorkItemSnapshot?
 <a name="ODATA_QUERY_TOO_WIDE"></a>
 
 ### **CONSIDER** filterig on surrogate key date columns.
-For each 
+If you want to filter the data on the value of related object (e.g. filtering work item on project name) you always have two choices. You can either use the navigation property (e.g. `Project/ProjectName`) or capture the *surrogate key* up-front and use it directly in the query (e.g. `ProjectSK`). If you are building a widget you should always prefer the latter option. When the key is passed as part of the query the number of entity sets that have to be touched goes down and the performance improves.
 
+For example, the query below filters `WorkItems` using `ProjectSK` property rather than `Project/ProjectName` navigation property.
+```odata
+https://{account}.analytics.visualstudio.com/_odata/1.0/WorkItems?
+  $filter=ProjectSK eq {projectSK}
+```
 
 ### **AVOID** using Parent, Child or Revision properties in a `$filter` or `$expand` clauses
 <a name="ODATA_QUERY_PARENT_CHILD_RELATIONS"></a>
 
-### **CONSIDER** passing `Prefer` headers to indicate the max number of records that should be returned.
+### **CONSIDER** passing `VSTS.Analytics.MaxSize` preference in the header.
+When you execute a query you don't know how many records there are to retrieve. You have to either send anotehr query with aggregations or follow all the next links and fetch the entire dataset. Analytics Service respects `VSTS.Analytics.MaxSize` preference, which lets you fail fast should the dataset be bigger than what your client can accept. This option is particularly helpful in the data export scenarios. In order to use it you have to add `Prefer` header to your HTTP request and set `VSTS.Analytics.MaxSize` to a non-negative value which represents the max number of records you can accept. If you set it to zero, then a default value of 200k will be used.
 
-VSTS.Analytics.MaxSize
+For example, the query below returns work items provided that the dataset is smller or equal to 1000 records.
+```http
+GET https://{account}.analytics.visualstudio.com/_odata/1.0/WorkItems HTTP/1.1
+User-Agent: Microsoft.Data.Mashup
+Prefer: VSTS.Analytics.MaxSize=1000
+OData-MaxVersion: 4.0
+Accept: application/json;odata.metadata=minimal
+Host: {account}.analytics.visualstudio.com
+```
 
 
-## Style
+## Query style guidelines
 
 ### **DO** use `$count` virtual property in the aggregation methods.
 Some entities expose `Count` property. They make some reporting scenarios easier when the data gets exported to a different storage. However, you should not use these columns in aggregations in OData queries. Please use `$count` virtual property instead.
 
+For example, the query below returns the total number of work items.
 ```odata
 https://{account}.analytics.visualstudio.com/_odata/1.0/WorkItems?
   $apply=aggregate($count as Count)
@@ -175,8 +190,9 @@ https://{account}.analytics.visualstudio.com/_odata/1.0/WorkItems?
 
 
 ### **AVOID** using `$count` virtual property in the URL segment.
-Although OData standard allows you to use `$count` virtual property for entity sets, not all clients can interpret the response correctly. Therefore, it is recommended to use aggregations instead.
+Although OData standard allows you to use `$count` virtual property for entity sets (e.g. `_odata/1.0/WorkItems/$count`), not all clients can interpret the response correctly. Therefore, it is recommended to use aggregations instead.
 
+For example, the query below returns the total number of work items.
 ```odata
 https://{account}.analytics.visualstudio.com/_odata/1.0/WorkItems?
   $apply=aggregate($count as Count)
