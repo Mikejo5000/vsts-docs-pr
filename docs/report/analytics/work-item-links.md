@@ -15,19 +15,19 @@ ms.date: 08/11/2016
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
-Querying work items across links is similar to any other operation across related entities in OData, but because links are entities with their own properties there is some additional complexity.
+Querying work items across links is much like using typical navigation properties. Links themselves are entities though, so there is some additional complexity.
 
 There are two ways to query for linked items. The first is the Parent/Child hierarchy, the second is the Links navigation property. The sections below cover each approach.
 
 ## Parent/Child hierarchy
-Items that are linked together with Parent/Child links can be included in query results by using $expand on the Parent and Children properties.
+You can include items related through Parent/Child links by using ```$expand``` on the Parent and Children properties.
 
 ### Example: Parent to child query
-To return information about a particular item's children use $expand on the **Children** navigation property.
+To return information about an item's children use ```$expand``` on the **Children** navigation property.
 
 Request
 ```
-https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$select=WorkItemId,Title,State&$expand=Children($select=WorkItemId,Title,State)&$filter=WorkItemId eq [ID #]
+https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$select=WorkItemId,Title,State&$expand=Children($select=WorkItemId,Title,State)&$filter=WorkItemId eq 103
 ```
 
 Response
@@ -50,9 +50,10 @@ Response
 ```
 
 ### Example: Multiple levels of hierarchy
-Users may be interested in all descendants of a particular set of work items in which case the **$levels** option can be used. The **$levels** option allows the user to control how many levels deep the service will traverse when retrieving items. In this example **max** actually equates to $levels=5 but users may substitute other values.
+You can retrieve all descendants of your work items by using the ```$levels``` option in your request. The ```$levels``` option allows you to control how deep the service will go when retrieving child items. In this example **max** actually equates to ```$levels=5``` but you may substitute other values. 
 
-**Note:** The $levels option only works for recursive relationships.
+>[!NOTE]  
+>The ```$levels``` option only works for recursive relationships.
 
 Request
 ```
@@ -91,7 +92,7 @@ Notice that the "Story 15" and "Story 22" items now include their child items.
 
 ### Example: Child to parent query
 
-By replacing **Children** with **Parent** in the $expand option users can retrieve an item's ancestry.
+By replacing **Children** with **Parent** in the ```$expand``` option you can retrieve an item's ancestry.
 
 Request
 ```
@@ -114,10 +115,10 @@ Response
 ```
 
 ## Non-hierarchical links
-In addition to the Parent/Child hierarchy items can be directly related to other items with link types like *Related* or *Duplicate*. The **Links** navigation property allows users to request these relationships.
+In addition to the Parent/Child hierarchy items can be directly related to other items with link types like *Related* or *Duplicate*. The **Links** navigation property allows you to request these relationships.
 
 ### Example: Request an item's links
-Users interested in the links associated with an item may $expand the **Links** navigation property.
+To retrieve the links associated with an item you may ```$expand``` the **Links** navigation property.
 
 Request
 ```
@@ -145,7 +146,7 @@ Response
 }
 ```
 ### Example: Request details of linked items
-The previous query only retreives details on the links between items. A user may include the details of those linked items by using $expand on the **TargetWorkItem** navigation property of the link.
+The previous query only retrieves details on the links between items. You may include the details of your linked items by using ```$expand``` on the **TargetWorkItem** navigation property.
 
 Request
 ```
@@ -171,7 +172,7 @@ Response
             "WorkItemId":55,"Title":"Story 22","State":"New"
           }
         },{
-          "SourceWorkItemId":103,"TargetWorkItemId":112,"CreatedDate":"2016-03-03T17:17:46.023Z","DeletedDate":null,"Comment":"","LinkTypeId":1,"LinkTypeReferenceName":"System.LinkTypes.Related-Forward","LinkTypeName":"Related","LinkTypeIsAcyclic":false,"LinkTypeIsDirectional":false,"TargetWorkItem":{
+          "SourceWorkItemId":103,"TargetWorkItemId":112,"CreatedDate":"2016-03-03T17:17:46.023Z","DeletedDate":null,"Comment":"","LinkTypeId":2,"LinkTypeReferenceName":"System.LinkTypes.Related-Forward","LinkTypeName":"Related","LinkTypeIsAcyclic":false,"LinkTypeIsDirectional":false,"TargetWorkItem":{
             "WorkItemId":112,"Title":"Some issue","State":"Active"
           }
         }
@@ -182,7 +183,7 @@ Response
 ```
 
 ### Example: Links of a specific type
-Users may be interested in a particular type of link between items, in which case the **LinkTypeName** property can be used in a $filter.
+You may also be interested in a particular type of link between items, in which case the **LinkTypeName** property can be used in a ```$filter```.
 
 Request
 ```
