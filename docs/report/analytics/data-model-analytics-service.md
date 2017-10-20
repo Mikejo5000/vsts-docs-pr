@@ -16,7 +16,7 @@ ms.date: 08/04/2017
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
 
-The Analytics service data model consists of entities, each containing properties that can be filtered, aggregated, and summarized.  Additionally, entities contain navigation properties that relate entities to each other, providing additional properties for filtering and grouping.
+The Analytics service data model consists of entities, each containing properties that can be filtered, aggregated, and summarized.  Additionally, entities contain [navigation properties](http://www.odata.org/getting-started/basic-tutorial/#relationship) that relate entities to each other, providing additional properties for filtering and grouping.
 
 ##Entities  
 
@@ -38,13 +38,13 @@ The data model contains the following entity sets:
 |WorkItems | The current work items|  
 |WorkItemLinks | The links between work items (e.g. child, parent, related) - includes history of links - hyperlinks not included  
 |WorkItemRevisions | All work item revisions, including the current revision|  
-|WorkItemSnapshot | (Derivative) The state of each work item on each calendar date - a derivative of WorkItemRevisions used for trend reporting|  
-|WorkItemBoardSnapshot | (Derivative) The state of each work item on each calendar date, including Kanban board location - a derivative of WorkItemRevisions used for trend reporting|  
+|WorkItemSnapshot | (Composite) The state of each work item on each calendar date - a composite of WorkItemRevisions used for trend reporting|  
+|WorkItemBoardSnapshot | (Composite) The state of each work item on each calendar date, including Kanban board location - a composite of WorkItemRevisions used for trend reporting|  
 |WorkItemTypeFields | The work item fields for each work item type and process - used for report building|  
 
-##Derivative Entities
+##Composite Entities
 
-Some entities are derived from other simpler entities. Often these entities require more computing resources to generate and can sometimes return larger result sets. These derivative entities are designed to specific scenarios, and care should be taken to query the correct entity for your query scenario, to ensure the best performance and avoid unnecessary throttling.
+Some entities are composed from other simpler entities. Often these entities require more computing resources to generate and can sometimes return larger result sets. These composite entities are designed to specific scenarios, and care should be taken to query the correct entity for your query scenario, to ensure the best performance and avoid unnecessary throttling.
 
 For example, WorkItemSnapshot combines WorkItemRevisions and Dates such that each date has one revision for each work item. This representation is useful for OData queries that want trend data for a filtered set of work items. However, this entity should not be used to query the current state of work items. Such a query would run more quickly using the WorkItem entity.
 
@@ -54,7 +54,7 @@ Similarly, some entities may contain all historic values, while others may only 
 
 Entities can be combined using relationships to compute more complex query results. Within an OData query, relationships can be followed using navigation properties in the ```$expand```, ```$filter```, or ```groupby``` statements.
 
-Some navigation properties result in a single entity, while others result in a collection of entities. In the following diagram, entities and their navigation properties are shown.  For clarity, some derivative entities and relationships have been omitted.
+Some navigation properties result in a single entity, while others result in a collection of entities. In the following diagram, entities and their navigation properties are shown.  For clarity, some composite entities and relationships have been omitted.
 
 ![Analytics Service Data Model](_img/datamodel.png)
 
