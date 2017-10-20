@@ -111,4 +111,5 @@ However, you can't enter the following:
 - [WIT analytics](wit-analytics.md)  
 - [Aggregate data](aggregated-data-analytics.md)
 - [OData v4.0 specification](http://www.odata.org/documentation/)  
-- [OData v4.0 Part 2: URL Conventions Plus Errata 02](http://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part2-url-conventions/odata-v4.0-errata02-os-part2-url-conventions-complete.html)  
+- [OData v4.0 Part 2: URL Conventions Plus Errata 02](http://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part2-url-conventions/odata-v4.0-errata02-os-part2-url-conventions-complete.html)
+- [OData v4.0 Aggregation Extension](http://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/odata-data-aggregation-ext-v4.0.html)

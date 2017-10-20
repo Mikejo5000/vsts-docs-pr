@@ -106,7 +106,7 @@ In this example, ```Iteration``` is the navigation property name and ```Iteratio
 
 How do you use navigation properties to select related fields?
 
-The username for Custom fields based on an Identity is not directly accessible using a ```$select``` statement. The following query uses a ```$expand``` statement to retrieve the Username:
+The username for Custom fields based on an Identity is not directly accessible using a ```$select``` statement. The following query uses a ```$expand``` statement to retrieve the user name:
 
     /WorkItems?$expand=MyIdentityField($select=UserName)
 
@@ -278,5 +278,5 @@ For more details, see [Account and project scope queries](account-scoped-queries
 
 - [Aggregate data](aggregated-data-analytics.md)
 - [Supported OData features](odata-supported-features.md)
-- [OData v4.0 Part 2: URL Conventions Plus Errata 02](http://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part2-url-conventions/odata-v4.0-errata02-os-part2-url-conventions-complete.html)
- 
+- [OData v4.0 specification](http://www.odata.org/documentation/)  
+- [OData v4.0 Part 2: URL Conventions Plus Errata 02](http://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part2-url-conventions/odata-v4.0-errata02-os-part2-url-conventions-complete.html)  
