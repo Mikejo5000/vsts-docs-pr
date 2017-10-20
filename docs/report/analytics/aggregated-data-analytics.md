@@ -1,6 +1,6 @@
 ---
 title: How to aggregate data using the OData Analytics Service for VSTS  
-description: How to aggregate data with the Analytics Service
+description: How to aggregate data with the Analytics Service (SEO; aggregation extenstion in odata, filtering of aggregated results)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
 ms.assetid: 8D81FEFD-F432-4E10-A415-9167B5FE9A57 
