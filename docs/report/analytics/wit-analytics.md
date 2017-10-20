@@ -270,7 +270,7 @@ Team projects are an integral part of VSTS, Analytics service supports quering o
 
 For example, the following project-scoped query will return all work items for a specific project:  
 
-```https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0-preview/WorkItems/$count```
+```https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0-preview/WorkItems/$count ```
 
 For more details, see [Account and project scope queries](account-scoped-queries.md)
 
