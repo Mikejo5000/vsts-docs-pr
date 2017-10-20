@@ -17,7 +17,7 @@ ms.date: 08/04/2017
 
 Examining trends in data and making period-over-period comparisons are two of the most interesting aspects of data analysis. The Analytics service supports this capability fully. It does, depending on what you are trying to accomplish, require some manual work at this point in time.
 
-Trend data is captured in the WorkItemSnapshot and WorkItemBoardSnapshot entities. They are constructed such that every work item, from the day it was created until today, exists for each day. This means that for an account with only one work item that was created a year ago, there are 360 rows in this entity.  
+Trend data is captured in the WorkItemSnapshot and WorkItemBoardSnapshot entities. They are constructed such that every work item, from the day it was created until today, exists for each day. This means that for an account with only one work item that was created a year ago, there are 365 rows in this entity.  
 
 For any project of size, this entity will be far too large to load into a client tool.  
 
