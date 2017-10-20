@@ -22,10 +22,10 @@ In this topic, the base root URL is constructed as follows:
 ```https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0 ``` 
 
 
-All additional URL parts are specified as an additional part of the query string as shown in the examples below.   
+All additional URL parts are specified as an additional part of the query string.
 
 
-##Construct a basic query  
+##Construct a basic query
 
 ###Query a single entity set
 To query a single entity set, such as Work Items or Areas or Projects, simply add the name of the entity: ```/Areas```, ```/Projects```,  or ```/WorkItems```. For full list of entity sets, see [Data model for the Analytics service](data-model-analytics-service.md).
@@ -39,7 +39,7 @@ This is equivalent to performing a select statement on the entity set and return
 ### Select specific columns  
 Return specific field data by adding a ```$select``` clause. 
 
-For example, to return only the Work Item ID, Work Item Type, Title, and State of work items, enter:   
+For example, to return only the Work Item ID, Work Item Type, Title, and State of work items:   
 
 	/WorkItems?$select=WorkItemId,WorkItemType,Title,State	
 
@@ -59,7 +59,7 @@ Alternatively, you can exclude the ```$select``` clause altogether and just filt
 
     /WorkItems?$filter=State eq 'In Progress'
 
-You can apply multiple filters by concatenating the filters:  
+You can apply multiple filters by concatenating the filters:
 
     /WorkItems?$filter=WorkItemType eq 'Task' and State eq 'In Progress'
 
@@ -68,7 +68,6 @@ Querying work items is helpful, but you will eventually want to be able to filte
 or Area Path or Team Project. To do this, you need to understand the navigation properties of the entity model.  
 
 Here is a partial view of the metadata for the Work Items entity:
-
 
 ```XML
     <Property ...>
@@ -89,8 +88,6 @@ Here is a partial view of the metadata for the Work Items entity:
     <NavigationProperty Name="Area" Type="Microsoft.VisualStudio.Services.Analytics.Model.Area"/>
     <NavigationProperty Name="Iteration" Type="Microsoft.VisualStudio.Services.Analytics.Model.Iteration"/>
 ```
-
-
 
 The navigation properties appear towards the bottom of the metadata, which includes ```Revisions```,  ```BoardLocations``` (Kanban metadata), ```Project```, ```Area```, and ```Iteration```. 
 
