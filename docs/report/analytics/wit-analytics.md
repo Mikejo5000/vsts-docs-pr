@@ -266,7 +266,7 @@ You can order by multiple items, but you can only order by columns that are retu
 
 ## Target a specific project  
 
-Team projects are an integral part of VSTS, Analytics service supports quering on account level and on project level. By specifying the project, you automatically filter for any entities that are related to the project entity.
+Team projects are an integral part of VSTS, Analytics service supports querying on account level and on project level. By specifying the project, you automatically filter for any entities that are related to the project entity.
 
 For example, the following project-scoped query will return all work items for a specific project:  
 
