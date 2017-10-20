@@ -252,7 +252,7 @@ This results in:
 }
 ```
 
-Notice that the result here shows only the IterationId and IterationPath and that the Project is a nested object within the JSON result.  Another key item to note is the URL itself, when using a ```$select``` statement and an ```$expand``` clause you must use a semi-colon (;) before the ```$expand```. Anything else will result in an error.
+Notice that the result here shows only the IterationId and IterationPath and that the Project is a nested object within the JSON result.  Another key item to note is the URL itself. When using a ```$select``` statement and an ```$expand``` clause you must use a semi-colon (;) before the ```$expand```. Anything else will result in an error.
 
 ##Sort results
 

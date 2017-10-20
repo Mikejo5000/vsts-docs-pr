@@ -40,7 +40,7 @@ This is equivalent to the following filter on a collection-scoped query:
 https://{account}.analytics.visualstudio.com/_odata/v1.0-preview/Areas?$filter=Project/ProjectName eq 'ProjectA'
 ```
 
-When using a project-scoped query with an expand you are not required to provide additional filters.
+When using a project-scoped query with an ```$expand``` you are not required to provide additional filters.
 
 For example, the following project scoped filter:
 

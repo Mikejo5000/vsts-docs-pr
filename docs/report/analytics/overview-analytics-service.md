@@ -52,7 +52,7 @@ For more information about the following entities, see [data model](data-model-a
 
 This information can also be found by going to the service root url endpoint. The endpoint is:  
 
-*AccountName*```.analytics.visualstudio.com/_odata/v1.0-preview   ``` 
+```{account}.analytics.visualstudio.com/_odata/v1.0-preview   ``` 
 
 So, for the *FabrikamFiber* account:   
 
