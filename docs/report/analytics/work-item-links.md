@@ -31,7 +31,7 @@ https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$se
 ```
 
 Response
-```
+```JSON
 {
   "@odata.context":"https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItems(WorkItemId,Title,State,Children,Children(WorkItemId,Title,State))","value":[
     {
@@ -60,7 +60,7 @@ https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$se
 ```
 
 Response
-```
+```JSON
 {
   "@odata.context":"https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItems(WorkItemId,Title,State,Children,Children(WorkItemId,Title,State,Children,Children(WorkItemId,Title,State)))","value":[
     {
@@ -99,7 +99,7 @@ https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$se
 ```
 
 Response
-```
+```JSON
 {
   "@odata.context":"https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItems(WorkItemId,Title,State,Parent,Parent(WorkItemId,Title,State,Parent,Parent(WorkItemId,Title,State)))","value":[
     {
@@ -125,7 +125,7 @@ https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$se
 ```
 
 Response
-```
+```JSON
 {
   "@odata.context":"https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItems(WorkItemId,Title,WorkItemType,State,Links)","value":[
     {
@@ -153,7 +153,7 @@ https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$se
 ```
 
 Response
-```
+```JSON
 {
   "@odata.context":"https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItems(WorkItemId,Title,WorkItemType,State,Links,Links(TargetWorkItem(WorkItemId,Title,State)))","value":[
     {
@@ -190,7 +190,7 @@ https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$se
 ```
 
 Response
-```
+```JSON
 {
   "@odata.context":"https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItems(WorkItemId,Title,WorkItemType,State,Links,Links(TargetWorkItem(WorkItemId,Title,State)))","value":[
     {
