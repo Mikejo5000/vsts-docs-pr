@@ -45,8 +45,8 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?$apply=groupb
 
 **Retrieve all work items for a given iteration which fall between the first day of the iteration and the last day of the iteration**
 
-This type of query is a little different in that you are constraining your query by data 
-contained with the data. 
+Here your query is constrained by data 
+contained within the VSTS data. 
 
 ```
 https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?$filter=Iteration/IterationPath eq '{iteration path}' and Date/Date ge Iteration/StartDate and Date/Date le Iteration/EndDate
