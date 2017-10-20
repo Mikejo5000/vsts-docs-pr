@@ -235,7 +235,7 @@ Response
 ```
 
 ### Example: Links of a specific type
-You may also be interested in a particular type of link between items, in which case the **LinkTypeName** property can be used in a ```$filter```.
+You may also be interested in a particular type of link between items, in which case the **LinkTypeName** property can be used in a ```$filter```. This query expands all 'Related' links and filters out all other link types.
 
 Request
 ```
