@@ -11,16 +11,17 @@ ms.date: 11/15/2017
 
 #Account and project scope queries
 
-Team projects are an integral part of VSTS, in addition to account level scope:
-```odata
+Team projects are an integral part of VSTS, the Analytics Service supports querying on an account level and on a project level.
+Base URL for account level queries:
+```
 https://{account}.analytics.visualstudio.com/_odata/v1.0
 ```
 
-Analytics service supports querying on project level. By specifying the project:
+Base URL for project level queries:
  ```
 https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0
 ```
-you automatically filter for any entities that are related to the project entity.
+
 
 For example, the following project-scoped query will return the count of work items for a specific project:  
 
@@ -81,13 +82,12 @@ Requires an additional filter to verify the parent is limited to the specified p
 https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?$expand=Parent($filter=Project/ProjectName eq 'ProjectA')&$filter=Project/ProjectName eq 'ProjectA'
 ```
 
-Without the additional filter, the request will fail if the child of any work item references work items in a project that you do not have read access to.
+Without the additional filter, the request will fail if the parent of any work item references work items in a project that you do not have read access to.
 
 
-Analytics has a few additional restrictions on query syntax related to Project level security.
+The Analytics Service has a few additional restrictions on query syntax related to project level security.
 
 The ```any``` or ```all``` filters apply to the base Entity on an ```$expand```.  For filters based on a Project we explicitly ignore the filter when using an ```$expand```:
-
 	
 ```
 https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?$expand=Children&$filter=ProjectName eq 'ProjectA' and Children/any(r: r/ProjectName eq 'ProjectA')

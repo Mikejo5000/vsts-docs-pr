@@ -15,9 +15,9 @@ ms.date: 10/17/2017
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
-Using the OData service provided by the Analytics Marketplace extension, you can construct basic and filtered queries to return work items of interest. With basic querying capabilities you can query data directly from your browser.
+Using the Analytics Service, you can construct basic and filtered queries to return work items of interest. You can run these queries directly in your browser.
 
-In this topic, the basic root URL is constructed as follows:
+In this topic, the base root URL is constructed as follows:
 
 ```https://{account}.analytics.visualstudio.com/_odata/v1.0 ``` 
 
