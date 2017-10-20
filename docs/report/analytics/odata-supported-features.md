@@ -107,8 +107,6 @@ However, you can't enter the following:
 - ```from``` 
 
 ## Related notes  
->[!NOTE]  
->The Analytics Service is on a 15 minute refresh schedule.  
 
 - [WIT analytics](wit-analytics.md)  
 - [Aggregate data](aggregated-data-analytics.md)
