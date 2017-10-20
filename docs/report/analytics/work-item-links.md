@@ -33,19 +33,25 @@ https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$se
 Response
 ```JSON
 {
-  "@odata.context":"https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItems(WorkItemId,Title,State,Children,Children(WorkItemId,Title,State))","value":[
-    {
-      "WorkItemId":103,"Title":"Feature Y","State":"New","Children":[
-        {
-          "WorkItemId":48,"Title":"Story 15","State":"Resolved"
-        },{
-          "WorkItemId":50,"Title":"Story 17","State":"New"
-        },{
-          "WorkItemId":55,"Title":"Story 22","State":"New"
-        }
-      ]
-    }
-  ]
+	"@odata.context": "https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItems(WorkItemId,Title,State,Children,Children(WorkItemId,Title,State))",
+	"value": [{
+		"WorkItemId": 103,
+		"Title": "Feature Y",
+		"State": "New",
+		"Children": [{
+			"WorkItemId": 48,
+			"Title": "Story 15",
+			"State": "Resolved"
+		}, {
+			"WorkItemId": 50,
+			"Title": "Story 17",
+			"State": "New"
+		}, {
+			"WorkItemId": 55,
+			"Title": "Story 22",
+			"State": "New"
+		}]
+	}]
 }
 ```
 
@@ -63,27 +69,36 @@ https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$se
 Response
 ```JSON
 {
-  "@odata.context":"https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItems(WorkItemId,Title,State,Children,Children(WorkItemId,Title,State,Children,Children(WorkItemId,Title,State)))","value":[
-    {
-      "WorkItemId":103,"Title":"Feature Y","State":"New","Children":[
-        {
-          "WorkItemId":48,"Title":"Story 15","State":"Resolved","Children":[
-            {
-              "WorkItemId":104,"Title":"Task A","State":"New"
-            }
-          ]
-        },{
-          "WorkItemId":50,"Title":"Story 17","State":"New","Children":[]
-        },{
-          "WorkItemId":55,"Title":"Story 22","State":"New","Children":[
-            {
-              "WorkItemId":105,"Title":"Task B","State":"New"
-            }
-          ]
-        }
-      ]
-    }
-  ]
+	"@odata.context": "https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItems(WorkItemId,Title,State,Children,Children(WorkItemId,Title,State,Children,Children(WorkItemId,Title,State)))",
+	"value": [{
+		"WorkItemId": 103,
+		"Title": "Feature Y",
+		"State": "New",
+		"Children": [{
+			"WorkItemId": 48,
+			"Title": "Story 15",
+			"State": "Resolved",
+			"Children": [{
+				"WorkItemId": 104,
+				"Title": "Task A",
+				"State": "New"
+			}]
+		}, {
+			"WorkItemId": 50,
+			"Title": "Story 17",
+			"State": "New",
+			"Children": []
+		}, {
+			"WorkItemId": 55,
+			"Title": "Story 22",
+			"State": "New",
+			"Children": [{
+				"WorkItemId": 105,
+				"Title": "Task B",
+				"State": "New"
+			}]
+		}]
+	}]
 }
 
 ```
@@ -102,15 +117,22 @@ https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$se
 Response
 ```JSON
 {
-  "@odata.context":"https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItems(WorkItemId,Title,State,Parent,Parent(WorkItemId,Title,State,Parent,Parent(WorkItemId,Title,State)))","value":[
-    {
-      "WorkItemId":105,"Title":"Task B","State":"New","Parent":{
-        "WorkItemId":55,"Title":"Story 22","State":"New","Parent":{
-          "WorkItemId":103,"Title":"Feature Y","State":"New"
-        }
-      }
-    }
-  ]
+	"@odata.context": "https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItems(WorkItemId,Title,State,Parent,Parent(WorkItemId,Title,State,Parent,Parent(WorkItemId,Title,State)))",
+	"value": [{
+		"WorkItemId": 105,
+		"Title": "Task B",
+		"State": "New",
+		"Parent": {
+			"WorkItemId": 55,
+			"Title": "Story 22",
+			"State": "New",
+			"Parent": {
+				"WorkItemId": 103,
+				"Title": "Feature Y",
+				"State": "New"
+			}
+		}
+	}]
 }
 ```
 
@@ -128,21 +150,58 @@ https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$se
 Response
 ```JSON
 {
-  "@odata.context":"https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItems(WorkItemId,Title,WorkItemType,State,Links)","value":[
-    {
-      "WorkItemId":103,"Title":"Feature Y","WorkItemType":"Feature","State":"New","Links":[
-        {
-          "SourceWorkItemId":103,"TargetWorkItemId":48,"CreatedDate":"2016-01-14T16:30:56.287Z","DeletedDate":null,"Comment":"","LinkTypeId":2,"LinkTypeReferenceName":"System.LinkTypes.Hierarchy-Forward","LinkTypeName":"Child","LinkTypeIsAcyclic":true,"LinkTypeIsDirectional":true
-        },{
-          "SourceWorkItemId":103,"TargetWorkItemId":50,"CreatedDate":"2016-01-14T16:30:50.277Z","DeletedDate":null,"Comment":"","LinkTypeId":2,"LinkTypeReferenceName":"System.LinkTypes.Hierarchy-Forward","LinkTypeName":"Child","LinkTypeIsAcyclic":true,"LinkTypeIsDirectional":true
-        },{
-          "SourceWorkItemId":103,"TargetWorkItemId":55,"CreatedDate":"2016-01-14T16:30:53.867Z","DeletedDate":null,"Comment":"","LinkTypeId":2,"LinkTypeReferenceName":"System.LinkTypes.Hierarchy-Forward","LinkTypeName":"Child","LinkTypeIsAcyclic":true,"LinkTypeIsDirectional":true
-        },{
-          "SourceWorkItemId":103,"TargetWorkItemId":112,"CreatedDate":"2016-03-03T17:17:46.023Z","DeletedDate":null,"Comment":"","LinkTypeId":1,"LinkTypeReferenceName":"System.LinkTypes.Related-Forward","LinkTypeName":"Related","LinkTypeIsAcyclic":false,"LinkTypeIsDirectional":false
-        }
-      ]
-    }
-  ]
+	"@odata.context": "https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItems(WorkItemId,Title,WorkItemType,State,Links)",
+	"value": [{
+		"WorkItemId": 103,
+		"Title": "Feature Y",
+		"WorkItemType": "Feature",
+		"State": "New",
+		"Links": [{
+			"SourceWorkItemId": 103,
+			"TargetWorkItemId": 48,
+			"CreatedDate": "2016-01-14T16:30:56.287Z",
+			"DeletedDate": null,
+			"Comment": "",
+			"LinkTypeId": 2,
+			"LinkTypeReferenceName": "System.LinkTypes.Hierarchy-Forward",
+			"LinkTypeName": "Child",
+			"LinkTypeIsAcyclic": true,
+			"LinkTypeIsDirectional": true
+		}, {
+			"SourceWorkItemId": 103,
+			"TargetWorkItemId": 50,
+			"CreatedDate": "2016-01-14T16:30:50.277Z",
+			"DeletedDate": null,
+			"Comment": "",
+			"LinkTypeId": 2,
+			"LinkTypeReferenceName": "System.LinkTypes.Hierarchy-Forward",
+			"LinkTypeName": "Child",
+			"LinkTypeIsAcyclic": true,
+			"LinkTypeIsDirectional": true
+		}, {
+			"SourceWorkItemId": 103,
+			"TargetWorkItemId": 55,
+			"CreatedDate": "2016-01-14T16:30:53.867Z",
+			"DeletedDate": null,
+			"Comment": "",
+			"LinkTypeId": 2,
+			"LinkTypeReferenceName": "System.LinkTypes.Hierarchy-Forward",
+			"LinkTypeName": "Child",
+			"LinkTypeIsAcyclic": true,
+			"LinkTypeIsDirectional": true
+		}, {
+			"SourceWorkItemId": 103,
+			"TargetWorkItemId": 112,
+			"CreatedDate": "2016-03-03T17:17:46.023Z",
+			"DeletedDate": null,
+			"Comment": "",
+			"LinkTypeId": 1,
+			"LinkTypeReferenceName": "System.LinkTypes.Related-Forward",
+			"LinkTypeName": "Related",
+			"LinkTypeIsAcyclic": false,
+			"LinkTypeIsDirectional": false
+		}]
+	}]
 }
 ```
 ### Example: Request details of linked items
@@ -156,29 +215,78 @@ https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$se
 Response
 ```JSON
 {
-  "@odata.context":"https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItems(WorkItemId,Title,WorkItemType,State,Links,Links(TargetWorkItem(WorkItemId,Title,State)))","value":[
-    {
-      "WorkItemId":103,"Title":"Feature Y","WorkItemType":"Feature","State":"New","Links":[
-        {
-          "SourceWorkItemId":103,"TargetWorkItemId":48,"CreatedDate":"2016-01-14T16:30:56.287Z","DeletedDate":null,"Comment":"","LinkTypeId":2,"LinkTypeReferenceName":"System.LinkTypes.Hierarchy-Forward","LinkTypeName":"Child","LinkTypeIsAcyclic":true,"LinkTypeIsDirectional":true,"TargetWorkItem":{
-            "WorkItemId":48,"Title":"Story 15","State":"Resolved"
-          }
-        },{
-          "SourceWorkItemId":103,"TargetWorkItemId":50,"CreatedDate":"2016-01-14T16:30:50.277Z","DeletedDate":null,"Comment":"","LinkTypeId":2,"LinkTypeReferenceName":"System.LinkTypes.Hierarchy-Forward","LinkTypeName":"Child","LinkTypeIsAcyclic":true,"LinkTypeIsDirectional":true,"TargetWorkItem":{
-            "WorkItemId":50,"Title":"Story 17","State":"Active"
-          }
-        },{
-          "SourceWorkItemId":103,"TargetWorkItemId":55,"CreatedDate":"2016-01-14T16:30:53.867Z","DeletedDate":null,"Comment":"","LinkTypeId":2,"LinkTypeReferenceName":"System.LinkTypes.Hierarchy-Forward","LinkTypeName":"Child","LinkTypeIsAcyclic":true,"LinkTypeIsDirectional":true,"TargetWorkItem":{
-            "WorkItemId":55,"Title":"Story 22","State":"New"
-          }
-        },{
-          "SourceWorkItemId":103,"TargetWorkItemId":112,"CreatedDate":"2016-03-03T17:17:46.023Z","DeletedDate":null,"Comment":"","LinkTypeId":2,"LinkTypeReferenceName":"System.LinkTypes.Related-Forward","LinkTypeName":"Related","LinkTypeIsAcyclic":false,"LinkTypeIsDirectional":false,"TargetWorkItem":{
-            "WorkItemId":112,"Title":"Some issue","State":"Active"
-          }
-        }
-      ]
-    }
-  ]
+	"@odata.context": "https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItems(WorkItemId,Title,WorkItemType,State,Links,Links(TargetWorkItem(WorkItemId,Title,State)))",
+	"value": [{
+		"WorkItemId": 103,
+		"Title": "Feature Y",
+		"WorkItemType": "Feature",
+		"State": "New",
+		"Links": [{
+			"SourceWorkItemId": 103,
+			"TargetWorkItemId": 48,
+			"CreatedDate": "2016-01-14T16:30:56.287Z",
+			"DeletedDate": null,
+			"Comment": "",
+			"LinkTypeId": 2,
+			"LinkTypeReferenceName": "System.LinkTypes.Hierarchy-Forward",
+			"LinkTypeName": "Child",
+			"LinkTypeIsAcyclic": true,
+			"LinkTypeIsDirectional": true,
+			"TargetWorkItem": {
+				"WorkItemId": 48,
+				"Title": "Story 15",
+				"State": "Resolved"
+			}
+		}, {
+			"SourceWorkItemId": 103,
+			"TargetWorkItemId": 50,
+			"CreatedDate": "2016-01-14T16:30:50.277Z",
+			"DeletedDate": null,
+			"Comment": "",
+			"LinkTypeId": 2,
+			"LinkTypeReferenceName": "System.LinkTypes.Hierarchy-Forward",
+			"LinkTypeName": "Child",
+			"LinkTypeIsAcyclic": true,
+			"LinkTypeIsDirectional": true,
+			"TargetWorkItem": {
+				"WorkItemId": 50,
+				"Title": "Story 17",
+				"State": "Active"
+			}
+		}, {
+			"SourceWorkItemId": 103,
+			"TargetWorkItemId": 55,
+			"CreatedDate": "2016-01-14T16:30:53.867Z",
+			"DeletedDate": null,
+			"Comment": "",
+			"LinkTypeId": 2,
+			"LinkTypeReferenceName": "System.LinkTypes.Hierarchy-Forward",
+			"LinkTypeName": "Child",
+			"LinkTypeIsAcyclic": true,
+			"LinkTypeIsDirectional": true,
+			"TargetWorkItem": {
+				"WorkItemId": 55,
+				"Title": "Story 22",
+				"State": "New"
+			}
+		}, {
+			"SourceWorkItemId": 103,
+			"TargetWorkItemId": 112,
+			"CreatedDate": "2016-03-03T17:17:46.023Z",
+			"DeletedDate": null,
+			"Comment": "",
+			"LinkTypeId": 2,
+			"LinkTypeReferenceName": "System.LinkTypes.Related-Forward",
+			"LinkTypeName": "Related",
+			"LinkTypeIsAcyclic": false,
+			"LinkTypeIsDirectional": false,
+			"TargetWorkItem": {
+				"WorkItemId": 112,
+				"Title": "Some issue",
+				"State": "Active"
+			}
+		}]
+	}]
 }
 ```
 
@@ -193,16 +301,29 @@ https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$se
 Response
 ```JSON
 {
-  "@odata.context":"https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItems(WorkItemId,Title,WorkItemType,State,Links,Links(TargetWorkItem(WorkItemId,Title,State)))","value":[
-    {
-      "WorkItemId":103,"Title":"Feature Y","WorkItemType":"Feature","State":"New","Links":[
-        {
-          "SourceWorkItemId":103,"TargetWorkItemId":112,"CreatedDate":"2016-03-03T17:17:46.023Z","DeletedDate":null,"Comment":"","LinkTypeId":1,"LinkTypeReferenceName":"System.LinkTypes.Related-Forward","LinkTypeName":"Related","LinkTypeIsAcyclic":false,"LinkTypeIsDirectional":false,"TargetWorkItem":{
-            "WorkItemId":112,"Title":"Some issue","State":"Active"
-          }
-        }
-      ]
-    }
-  ]
+	"@odata.context": "https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItems(WorkItemId,Title,WorkItemType,State,Links,Links(TargetWorkItem(WorkItemId,Title,State)))",
+	"value": [{
+		"WorkItemId": 103,
+		"Title": "Feature Y",
+		"WorkItemType": "Feature",
+		"State": "New",
+		"Links": [{
+			"SourceWorkItemId": 103,
+			"TargetWorkItemId": 112,
+			"CreatedDate": "2016-03-03T17:17:46.023Z",
+			"DeletedDate": null,
+			"Comment": "",
+			"LinkTypeId": 1,
+			"LinkTypeReferenceName": "System.LinkTypes.Related-Forward",
+			"LinkTypeName": "Related",
+			"LinkTypeIsAcyclic": false,
+			"LinkTypeIsDirectional": false,
+			"TargetWorkItem": {
+				"WorkItemId": 112,
+				"Title": "Some issue",
+				"State": "Active"
+			}
+		}]
+	}]
 }
 ```
