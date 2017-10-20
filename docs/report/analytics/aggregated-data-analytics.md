@@ -59,7 +59,7 @@ You can also filter what you want to count. For example, if you want to know how
 
 For comparison, using data aggregations you enter this query:
 
-    /WorkItems?$apply=filter(State eq 'In Progress')/aggregate(Count with sum as Count)
+    /WorkItems?$apply=filter(State eq 'In Progress')/aggregate($count as Count)
 
 
 ## Aggregate data using aggregation extensions
@@ -111,6 +111,7 @@ Add the ```groupby``` clause to return a count of work items by type:
 
 This returns a result similar to the following:
 
+```JSON
     {
       "@odata.context":"https://{account}.analytics.visualstudio.com/_odata/v1.0/$metadata#WorkItems(WorkItemType,Count)","value":[
 	    {
@@ -121,6 +122,7 @@ This returns a result similar to the following:
         }
       ]
     }
+```
 
 You can also group by multiple properties as in the following:
 
@@ -128,6 +130,7 @@ You can also group by multiple properties as in the following:
 
 This returns a result similar to the following:
 
+```JSON
     {
       "@odata.context": "https://{account}.analytics.visualstudio.com/_odata/v1.0/$metadata#WorkItems(WorkItemType,State,Count)",
       "value": [
@@ -157,6 +160,7 @@ This returns a result similar to the following:
         }
       ]
     }
+```
 
 You can also group across entities, however OData grouping differs from how you might normally think about it. 
 
@@ -185,7 +189,7 @@ When you want to provide multiple pieces of information, such as the sum of comp
 
 This will return a result that looks like the following:
 
-```
+```JSON
 {
   "@odata.context":"https://{account}.analytics.visualstudio.com/_odata/v1.0/$metadata#WorkItems(SumOfCompletedWork,SumOfRemainingWork)","value":[
     {
@@ -212,7 +216,7 @@ This query returns the following:
 With this data, the CFD can be created with further client processing. For a better client experience you can hand that processing to the server via an aggregated query. This would look like:
 
 ```
-/WorkItemBoardSnapshot?$apply=filter(BoardLocation/Team/TeamName eq '{team name}')/filter(BoardLocation/BoardName eq 'Microsoft.RequirementCategory')/groupby((Date/Date,BoardLocation/ColumnName,BoardLocation/ColumnOrder), aggregate(Count with sum as Count))
+/WorkItemBoardSnapshot?$apply=filter(BoardLocation/Team/TeamName eq '{team name}')/filter(BoardLocation/BoardName eq 'Microsoft.RequirementCategory')/groupby((Date/Date,BoardLocation/ColumnName,BoardLocation/ColumnOrder), aggregate($count as Count))
 ```
 This query returns the following:
 
