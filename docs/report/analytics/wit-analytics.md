@@ -64,8 +64,11 @@ You can apply multiple filters by concatenating the filters:
     /WorkItems?$filter=WorkItemType eq 'Task' and State eq 'In Progress'
 
 Additionally, you can apply various functions such as ```contains```, ```startswith```, ```endswith``` and more. See the [Filter and order by canonical functions](odata-supported-features.md#supported-functions) section later in this topic. 
+
+## Work with related entities
 Querying work items is helpful, but you will eventually want to be able to filter by other data such as the Iteration Path
-or Area Path or Team Project. To do this, you need to understand the navigation properties of the entity model.  
+or Area Path or Team Project. To do this, you need to understand the navigation properties of the entity model. You can get metadata using ```/$metadata``` url.
+For details, see  [Metadata](metadata.md) 
 
 Here is a partial view of the metadata for the Work Items entity:
 
@@ -88,8 +91,9 @@ Here is a partial view of the metadata for the Work Items entity:
     <NavigationProperty Name="Area" Type="Microsoft.VisualStudio.Services.Analytics.Model.Area"/>
     <NavigationProperty Name="Iteration" Type="Microsoft.VisualStudio.Services.Analytics.Model.Iteration"/>
 ```
-
 The navigation properties appear towards the bottom of the metadata, which includes ```Revisions```,  ```BoardLocations``` (Kanban metadata), ```Project```, ```Area```, and ```Iteration```. 
+
+### Filter by navigtion properties
 
 How do you use navigation properties to filter results? 
 
@@ -99,7 +103,7 @@ This query returns all of the work items in a specific iteration:
 
 In this example, ```Iteration``` is the navigation property name and ```IterationPath``` is the full path for the iteration. To use another entity as a filter, put the navigation property followed by a slash followed by the name of the field to filter on.  
 
-##Return data from related entities
+### Return data from related entities
 
 How do you use navigation properties to select related fields?
 
@@ -176,7 +180,8 @@ In OData, you can nest ```$expand``` statements. For example, you can write the 
 This results in:
 ```JSON
 {
-  "@odata.context":"https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItems","value":[
+  "@odata.context":"https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItems",
+  "value":[
     {
       "WorkItemId":10000,
       "Revision":3,
