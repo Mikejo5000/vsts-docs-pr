@@ -1,5 +1,5 @@
 ---
-title: Analytics recipes | VSTS  
+title: Analytics basic queries | VSTS  
 description: Provides general queries for use with the Analytics service for VSTS (SEO; work item history, work items in a given iteration, work item in a given area, work items per project, work items per iteration, work items per tag, work items per team, cumulative flow diagram)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
@@ -55,7 +55,7 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?$filter=Itera
 **Retrieve the data for a cumulative flow diagram**
 
 ```
-https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItemBoardSnapshot?$filter=BoardLocation/Team/TeamName eq '[team name]'
+https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItemBoardSnapshot?$filter=BoardLocation/Team/TeamName eq '{team name}'
 and BoardLocation/BoardName eq '[board reference name]'&$expand=Date,BoardLocation
 ```
 
@@ -67,13 +67,13 @@ brackets ([]) is a literal. There are some variations on this (for example, you 
 but following this format keeps it simple.
 
 ```
-https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$filter=Tags/any(d:d/TagName eq '[tag name]')
+https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$filter=Tags/any(d:d/TagName eq '{tag name}')
 ```
 
 **Retrieve all work items for a specific team**
 
 ```
-https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$filter=Teams/any(d:d/TeamName eq '[team name]')&$select=WorkItemId,Title,State
+https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$filter=Teams/any(d:d/TeamName eq '{team name}')&$select=WorkItemId,Title,State
 ```
 ##Related notes 
 
