@@ -21,35 +21,32 @@ The Analytics service data model consists of data sets, counts, and measures, as
 ##Entities  
 
 >[!NOTE]  
->Information listed may differ from the entities shown as```https://{account}.analytics.visualstudio.com/_odata/v1.0-preview/$metadata```.  
+>Information listed may differ from the entities shown as```https://{account}.analytics.visualstudio.com/_odata/v1.0/$metadata```.  
 
-The entities support by the data model are as follows:  
+The data model contains the following entity sets:  
 
-| Entity | Description|  
+| EntitySet | Description|  
 |--------|------------|  
-|Areas | A discrete list of area paths |  
-|BoardLocations | A discrete list of Kanban board columns |  
-|Dates | A date table for use in retrieving dates in a specific format (or filtering by dates) on related entities|  
-|Iterations | A discrete list of iteration paths|  
-|Projects | Contains a list of all of the projects|  
-|Tags | A discrete list of tags related to work items|  
-|Teams | Contains a list of all teams|  
-|WorkItemBoardSnapshot | A list of all revisions for all work items (including the current revision)|  
-|WorkItemLeadTime |  |  
-|WorkItemLinks | Contains link information (all types are supported) for work items only (no hyperlinks for example)|  
-|WorkItemRevisions | A list of all revisions for all work items (including the current revision)|  
-|WorkItemLinks | Contains link information (all types are supported) for work items only (no hyperlinks for example)|  
-|WorkItems | The current list of work items|  
-|WorkItemSnapshot | The state of each work item on each calendar. Use this entity for trend reporting. |  
-|Users | A discrete list of users related to various work item fields (i.e. assigned to, created by, etc.)|  
-
+|Areas | The work item area paths, with fields for grouping and filtering by area hierarchy |  
+|BoardLocations | The Kanban board locations, as identified by board column, lane, and split |  
+|Dates | The dates used to filter and group other entities using navigation or external joins|  
+|Iterations | The work item iteration paths, with fields for grouping and filtering by iteration hierarchy |  
+|Projects | The projects|  
+|Tags | All work item tags for each project|  
+|Teams | All teams|  
+|WorkItemBoardSnapshot | The state of each work item on each calendar date, including Kanban board location - used for trend reporting|  
+|WorkItemLinks | The links between work items (e.g. child, parent, related) - includes history of links - hyperlinks not included  
+|WorkItemRevisions | All work item revisions, including the current revision|  
+|WorkItems | The current work items|  
+|WorkItemSnapshot | The state of each work item on each calendar date - used for trend reporting|  
+|WorkItemTypeFields | The work item fields for each work item type and process - used for report building|  
+|Users | User information - used to expand or filter various work item fields (e.g. Assigned To, Created By)|  
 
 ##Relationships
 
-The entity model for this is fairly complex and is difficult to understand without an interactive model. This is because entities play
-different roles depending on the starting point. For example, a Project contains Teams, Areas and Iterations. However, Teams also "own" a subset of these Iterations and Areas and they can overlap a given team. 
+Entities can be combined using relationships to compute more complex query results. Within an OData query relationships can be followed using navigation properties in the expand, filter, or groupby statements. Entity relationships are also exposed as foreign keys so that external tools can join entities
 
-The following image proves a snapshot of the current data model; only keys and navigation properties are shown here.
+Some navigation properties result in a single entity, while others result in sets of entities. In the following diagram, entities and their navigation properties are shown.  For clarity, some derivitive entities and relationships have been omitted.
 
 ![Analytics Service Data Model](_img/datamodel.png)
 
