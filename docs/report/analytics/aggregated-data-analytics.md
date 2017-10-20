@@ -201,7 +201,7 @@ This will return a result that looks like the following:
 Let's say you want to create a cumulative flow diagram in Power BI. Typically you would execute a query like the following to retrieve raw data:
 
 ```
-https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItemBoardSnapshot?$filter=BoardLocation/Team/TeamName eq '{team name}'
+/WorkItemBoardSnapshot?$filter=BoardLocation/Team/TeamName eq '{team name}'
 and BoardLocation/BoardName eq 'Microsoft.RequirementCategory'&$expand=Date,BoardLocation
 ```
 
@@ -212,7 +212,7 @@ This query returns the following:
 With this data, the CFD can be created with further client processing. For a better client experience you can hand that processing to the server via an aggregated query. This would look like:
 
 ```
-https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItemBoardSnapshot?$apply=filter(BoardLocation/Team/TeamName eq '{team name}')/filter(BoardLocation/BoardName eq 'Microsoft.RequirementCategory')/groupby((Date/Date,BoardLocation/ColumnName,BoardLocation/ColumnOrder), aggregate(Count with sum as Count))
+/WorkItemBoardSnapshot?$apply=filter(BoardLocation/Team/TeamName eq '{team name}')/filter(BoardLocation/BoardName eq 'Microsoft.RequirementCategory')/groupby((Date/Date,BoardLocation/ColumnName,BoardLocation/ColumnOrder), aggregate(Count with sum as Count))
 ```
 This query returns the following:
 
