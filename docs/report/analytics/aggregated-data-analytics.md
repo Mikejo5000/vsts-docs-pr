@@ -63,7 +63,7 @@ Now that you've seen how to do basic aggregations with ```count```, let's look a
 
 First, using OData, you trigger aggregations using the ```$apply``` token at the end of the URL. The basic format is:
 
-    /[entity name]?$apply=aggregate([column to aggregate] with [aggregation type] as [new column name])
+    /{entity name}?$apply=aggregate({column to aggregate} with {aggregation type} as {new column name})
 
 ### Additional examples 
 
@@ -183,7 +183,7 @@ the data. In a normal circumstance you would use a query like the following (thi
 WIT Analytics topic):
 
 ```
-https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItemBoardSnapshot?$filter=BoardLocation/Team/TeamName eq '[team name]'
+https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItemBoardSnapshot?$filter=BoardLocation/Team/TeamName eq '{team name}'
 and BoardLocation/BoardName eq 'Microsoft.RequirementCategory'&$expand=Date,BoardLocation
 ```
 
@@ -193,7 +193,7 @@ it returned 471 rows. The CFD can be created with this data.
 This is what an aggregation query looks like for the exact same data:
 
 ```
-https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItemBoardSnapshot?$apply=filter(BoardLocation/Team/TeamName eq '[team name]')/filter(BoardLocation/BoardName eq 'Microsoft.RequirementCategory')/groupby((Date/Date,BoardLocation/ColumnName,BoardLocation/ColumnOrder), aggregate(Count with sum as Count))
+https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItemBoardSnapshot?$apply=filter(BoardLocation/Team/TeamName eq '{team name}')/filter(BoardLocation/BoardName eq 'Microsoft.RequirementCategory')/groupby((Date/Date,BoardLocation/ColumnName,BoardLocation/ColumnOrder), aggregate(Count with sum as Count))
 ```
 
 This query returns 41 rows. That's better than a 10x reduction in data. Let's take a look at what this query actually does.
