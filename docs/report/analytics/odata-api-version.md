@@ -67,13 +67,13 @@ Now consider a scenario where we revert to the original structure of the User en
     <!-- User Type property has been removed -->
 </EntityType>
 ```
-Since removal of the UserType field is a breaking change the field would not be removed until version **V2.0** of the API. **v1.0** of the data model would still include the UserType field.
+Since removal of the UserType field is a breaking change the field would not be removed until version **v2.0** of the API. **v1.0** of the data model would still include the UserType field.
 
 ## Version lifecycle
 Each version of the OData API will go through three phases during it's lifecycle. 
 
 ### 1 - Preview
-All breaking changes will be combined and released together in future versions of the API. In order to make this functionality available as early as possible we will release new versions in **preview** mode. While a version is in preview mode breaking changes are still possible, there are no guarantees that what is in preview will make it to the released version.
+All breaking changes will be combined and released together in future versions of the API. In order to make this functionality available as early as possible we will release new versions in **preview** mode. While a version is in preview mode breaking changes are still possible. There are no guarantees that what is in preview will make it to the released version.
 
 ### 2 - Released
 Once a preview version matures enough for release it will be made available without the -preview suffix. No breaking changes will be introduced to released versions, but the data model may still grow with additive functionality. Released versions will be supported for a minimum of 12 months. The preview of a version will be available for a minimum of 6 weeks after it is released.
