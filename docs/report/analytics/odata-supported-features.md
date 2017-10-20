@@ -6,7 +6,7 @@ ms.technology: vs-devops-reporting
 ms.assetid: 8D81FEFD-F432-4E10-A415-9167B5FE9A57 
 ms.manager: douge
 ms.author: kokosins
-ms.date: 10/17/2017
+ms.date: 11/15/2017
 ---
 
 
@@ -88,7 +88,7 @@ However, you can't enter the following:
 /WorkItems?$select=WorkItemId,State,toupper(Title)
 ```  
 
-## Not supported clauses, expresions or transformations
+## Not supported clauses, expressions or transformations
 
 - ```concat```  
 - ```$search```  
