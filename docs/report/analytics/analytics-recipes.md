@@ -62,8 +62,7 @@ and BoardLocation/BoardName eq '{board reference name}'&$expand=Date,BoardLocati
 **Retrieve all work items with a specific tag**
 
 Note that the **any** operator is used here because there are a collection of tags that can be associated with a work item.
-From a usage perspective, the format is: **{Navigation Property}/any(d:d/{Field Name} {operator} {expression})**. Any item not surrounded by
-brackets ({}) is a literal. There are some variations on this (for example, you don't have to use "d" as used in the expression above)
+From a usage perspective, the format is: **{Navigation Property}/any(d:d/{Field Name} {operator} {expression})**. Any item not surrounded by curly brackets ({}) is a literal. There are some variations on this (for example, you don't have to use "d" as used in the expression above)
 but following this format keeps it simple.
 
 ```
