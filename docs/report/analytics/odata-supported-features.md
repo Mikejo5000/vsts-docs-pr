@@ -28,9 +28,9 @@ The following table summarizes the supported and unsupported OData functions.
 - ```$expand```  
 - ```$count``` 
 
-When multiple clauses are used in query they will be applied to order as specified above. For example, in following query, first we will group by and aggregate, then filter, then sort and take first 5 records to get top 5 work item types used at least 100 times:
+When multiple clauses are used in query they will be applied in the order specified above. Order of clauses in query string ignored. For example, in the following query, first work items are grouped and aggregated. Next, the groups are filtered. After that, the filtered groups are sorted. Finally, the first 5 records are returned. This means the query returns the top 5 work item types used at least 100 times.
 ``` 
-WorkItems?$apply=groupby((WorkItemType), aggregate($count as Count))&$filter=Count ge 100&$orderby=Count&top=5
+WorkItems?$filter=Count ge 100$apply=groupby((WorkItemType), aggregate($count as Count))&&$orderby=Count&top=5
 ```
 
 $apply clause allow to transform input. Multiple transformations could be combined with ```/```. For example:
@@ -51,11 +51,11 @@ For more samples, see [Aggregate data](aggregated-data-analytics.md)
 ## Supported functions
 | Canonical function | Description |
 | ------------------ | ----------- |  
-| ```contains``` |  Returns true if the second parameter string value is a substring of the first parameter string value, otherwise it returns false.  |  
+| ```contains``` |  Returns true if the second parameter string value is a substring of the first parameter string value, otherwise it returns false  |  
 | ```endswith``` | Returns true if the first parameter string value ends with the second parameter string value, otherwise it returns false |  
 | ```startswith``` |  Returns true if the first parameter string value starts with the second parameter string value, otherwise it returns false |  
 | ```length``` | Returns the number of characters in the parameter value |  
-| ```indexof``` | Returns the zero-based character position of the first occurrence of the second parameter value in the first parameter value |  
+| ```indexof``` | Returns the zero-based character position of the first occurrence of the second parameter value in the first parameter value or -1 if the second parameter value does not occur in the first parameter value|  
 | ```substring``` | Returns a substring of the first parameter string value, starting at the Nth character and finishing at the last character (where N is the second parameter integer value) |  
 | ```tolower``` |  Returns the input parameter string value with all uppercase characters converted to lowercase  |  
 | ```toupper``` |  Returns  the input parameter string value with all lowercase characters converted to uppercase |  
@@ -70,13 +70,13 @@ For more samples, see [Aggregate data](aggregated-data-analytics.md)
 | ```time``` |  Returns the time part of the DateTimeOffset parameter value |  
 | ```totaloffsetminutes``` | Returns  the signed number of minutes in the time zone offset part of the DateTimeOffset parameter value |  
 | ```now``` |  Returns the current point in time (date and time with time zone) as a DateTimeOffset value |  
-| ``` maxdatetime``` | Returns  the latest possible point in time as a DateTimeOffset value |  
+| ``` maxdatetime``` | Returns the latest possible point in time as a DateTimeOffset value |  
 | ```mindatetime``` |  Returns the earliest possible point in time as a DateTimeOffset value |  
 
 
 
 
-You use OData functions in a ```filter``` clause, but not in a ```$select``` clause the way that you would use them in a SQL statement.  
+OData functions are used in a ```$filter``` clause, but not in a ```$select``` clause the way they would be uses in a SQL statement.  
 
 For example, you can specify:  
 
