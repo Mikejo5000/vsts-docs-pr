@@ -22,7 +22,7 @@ There are two ways to aggregate data. The simple approach, which doesn't use agg
 In this topic, the basic root URL is constructed as:
 
 ```
-https://[collection name].analytics.visualstudio.com/DefaultCollection/_odata
+https://{account}.analytics.visualstudio.com/_odata/v1.0
 ``` 
 
 
@@ -109,7 +109,7 @@ Add the ```groupby``` clause to return a count of work items by type:
 This returns a result similar to the following:
 
     {
-      "@odata.context":"https://[collection].analytics.visualstudio.com/DefaultCollection/_odata/$metadata#WorkItems(WorkItemType,Count)","value":[
+      "@odata.context":"https://{account}.analytics.visualstudio.com/_odata/v1.0/$metadata#WorkItems(WorkItemType,Count)","value":[
         {
           "@odata.id":null,"WorkItemType":"Issue","Count":220
         },{
@@ -167,7 +167,7 @@ This will return a result that looks like the following:
 
 ```
 {
-  "@odata.context":"https://[account].analytics.visualstudio.com/DefaultCollection/_odata/$metadata#WorkItems(SumOfCompletedWork,SumOfRemainingWork)","value":[
+  "@odata.context":"https://{account}.analytics.visualstudio.com/_odata/v1.0/$metadata#WorkItems(SumOfCompletedWork,SumOfRemainingWork)","value":[
     {
       "@odata.id":null,"SumOfCompletedWork":1525841.2900000005,"SumOfRemainingWork":73842.39
     }
@@ -183,7 +183,7 @@ the data. In a normal circumstance you would use a query like the following (thi
 WIT Analytics topic):
 
 ```
-https://[account].analytics.visualstudio.com/DefaultCollection/[project]/_odata/WorkItemBoardSnapshot?$filter=BoardLocation/Team/TeamName eq '[team name]'
+https://{account}.analytics.visualstudio.com/[project]/_odata/v1.0/WorkItemBoardSnapshot?$filter=BoardLocation/Team/TeamName eq '[team name]'
 and BoardLocation/BoardName eq 'Microsoft.RequirementCategory'&$expand=Date,BoardLocation
 ```
 
@@ -193,7 +193,7 @@ it returned 471 rows. The CFD can be created with this data.
 This is what an aggregation query looks like for the exact same data:
 
 ```
-https://[account].analytics.visualstudio.com/DefaultCollection/[project]/_odata/WorkItemBoardSnapshot?$apply=filter(BoardLocation/Team/TeamName eq '[team name]')/filter(BoardLocation/BoardName eq 'Microsoft.RequirementCategory')/groupby((Date/Date,BoardLocation/ColumnName,BoardLocation/ColumnOrder), aggregate(Count with sum as Count))
+https://{account}.analytics.visualstudio.com/[project]/_odata/v1.0/WorkItemBoardSnapshot?$apply=filter(BoardLocation/Team/TeamName eq '[team name]')/filter(BoardLocation/BoardName eq 'Microsoft.RequirementCategory')/groupby((Date/Date,BoardLocation/ColumnName,BoardLocation/ColumnOrder), aggregate(Count with sum as Count))
 ```
 
 This query returns 41 rows. That's better than a 10x reduction in data. Let's take a look at what this query actually does.
