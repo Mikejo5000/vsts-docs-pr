@@ -17,7 +17,7 @@ ms.date: 08/04/2017
 
 Using the OData analytics service, you can aggregate data. 
 
-There are two ways to aggregate data. The simple approach, which doesn't use aggregation extensions, only provides access to counts of data. The more advanced approach performs aggregations available via the aggregation extensions. 
+There are two ways to aggregate data. The simple approach without using aggregation extension provides the just the count of data. The more advanced approach performs aggregations available via the aggregation extensions. 
 
 In this topic, the basic root URL is constructed as:
 
@@ -26,7 +26,7 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0
 ``` 
 
 
-All additional URL parts are specified as an additional part of the query string as shown in the examples below.   
+Use the above URL as a perfix for all the examples.   
 
 
 ##Simple count aggregations
@@ -46,7 +46,7 @@ For simple counts, the non-aggregation approach has a simpler syntax.
  
 
 >[!NOTE]  
->There is one other difference in these approaches: using ```$count``` returns a scalar value, that is a single number. Using aggregation extensions returns a formatted JSON result.  
+>There is one other difference in these approaches: Using ```$count``` returns a single number. Using aggregation extensions returns a formatted JSON.  
   
 
 You can also filter what you want to count. For example, if you want to know how many work items are in the "In Progress" state, specify this query:
@@ -55,7 +55,7 @@ You can also filter what you want to count. For example, if you want to know how
 
 ## Aggregate data using aggregation extensions
 
-Now that you've seen how to do basic aggregations with ```count```, let's look at more complex examples that help solve real-world problems.  
+Now that you've seen how to do basic aggregations with ```count```, let's look at more complex examples.
 
 >[!NOTE]  
 >At this time, aggregation extensions are not supported by any of our client tools although they are being looked at. We've come up with a simple workaround which is explained in the Power BI client documentation.  
@@ -78,7 +78,7 @@ Work items can also be counted by using the following:
     /WorkItems?$apply=aggregate(WorkItemId with countdistinct as CountOfWorkItems)
 
 >[!NOTE]  
->The column "Count" is provided by the model to make it easier to do counts and work with client tools because the underlying OData implementation does not currently support the ```$count``` virtual property within the aggregation extensions. Once we implement this functionality, we'll update this document.  
+>The column "Count" is provided by the model to make it easier to do counts and work with client tools because the underlying OData implementation does not currently support the ```$count``` virtual property within the aggregation extensions.
 
 
 **Return the count of areas**
@@ -205,7 +205,7 @@ This query returns 41 rows. That's better than a 10x reduction in data. Let's ta
 * Group by the ColumnId (in the related BoardLocation entity) - note that this is used for ordering the column name correctly and it needs to be returned in the query results
 * Get a count of work items
 
-When refreshing a Power BI workbook and/or PowerBI.com or Excel, the fewer rows required, the faster the refresh occurs.
+When refreshing Power BI or Excel, the fewer rows required, the faster the refresh occurs.
 
 
 ##Related notes 
