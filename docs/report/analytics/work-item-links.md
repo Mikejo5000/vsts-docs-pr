@@ -144,13 +144,13 @@ To retrieve the links associated with an item you may ```$expand``` the **Links*
 
 Request
 ```
-https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$select=WorkItemId,Title,WorkItemType,State&$filter=WorkItemId%20eq%20103&$expand=Links
+https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$select=WorkItemId,Title,WorkItemType,State&$filter=WorkItemId%20eq%20103&$expand=Links($select=SourceWorkItemId,TargetWorkItemId,LinkTypeName)
 ```
 
 Response
 ```JSON
 {
-	"@odata.context": "https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItems(WorkItemId,Title,WorkItemType,State,Links)",
+	"@odata.context": "https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItems(WorkItemId,Title,WorkItemType,State,Links(SourceWorkItemId,TargetWorkItemId,LinkTypeName))",
 	"value": [{
 		"WorkItemId": 103,
 		"Title": "Feature Y",
@@ -159,47 +159,19 @@ Response
 		"Links": [{
 			"SourceWorkItemId": 103,
 			"TargetWorkItemId": 48,
-			"CreatedDate": "2016-01-14T16:30:56.287Z",
-			"DeletedDate": null,
-			"Comment": "",
-			"LinkTypeId": 2,
-			"LinkTypeReferenceName": "System.LinkTypes.Hierarchy-Forward",
-			"LinkTypeName": "Child",
-			"LinkTypeIsAcyclic": true,
-			"LinkTypeIsDirectional": true
+			"LinkTypeName": "Child"
 		}, {
 			"SourceWorkItemId": 103,
 			"TargetWorkItemId": 50,
-			"CreatedDate": "2016-01-14T16:30:50.277Z",
-			"DeletedDate": null,
-			"Comment": "",
-			"LinkTypeId": 2,
-			"LinkTypeReferenceName": "System.LinkTypes.Hierarchy-Forward",
-			"LinkTypeName": "Child",
-			"LinkTypeIsAcyclic": true,
-			"LinkTypeIsDirectional": true
+			"LinkTypeName": "Child"
 		}, {
 			"SourceWorkItemId": 103,
 			"TargetWorkItemId": 55,
-			"CreatedDate": "2016-01-14T16:30:53.867Z",
-			"DeletedDate": null,
-			"Comment": "",
-			"LinkTypeId": 2,
-			"LinkTypeReferenceName": "System.LinkTypes.Hierarchy-Forward",
-			"LinkTypeName": "Child",
-			"LinkTypeIsAcyclic": true,
-			"LinkTypeIsDirectional": true
+			"LinkTypeName": "Child"
 		}, {
 			"SourceWorkItemId": 103,
 			"TargetWorkItemId": 112,
-			"CreatedDate": "2016-03-03T17:17:46.023Z",
-			"DeletedDate": null,
-			"Comment": "",
-			"LinkTypeId": 1,
-			"LinkTypeReferenceName": "System.LinkTypes.Related-Forward",
-			"LinkTypeName": "Related",
-			"LinkTypeIsAcyclic": false,
-			"LinkTypeIsDirectional": false
+			"LinkTypeName": "Related"
 		}]
 	}]
 }
@@ -209,13 +181,13 @@ The previous query only retrieves details on the links between items. You may in
 
 Request
 ```
-https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$select=WorkItemId,Title,WorkItemType,State&$filter=WorkItemId%20eq%20103&$expand=Links($expand=TargetWorkItem($select=WorkItemId,Title,State))
+https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$select=WorkItemId,Title,WorkItemType,State&$filter=WorkItemId%20eq%20103&$expand=Links($select=SourceWorkItemId,TargetWorkItemId,LinkTypeName;$expand=TargetWorkItem($select=WorkItemId,Title,State))
 ```
 
 Response
 ```JSON
 {
-	"@odata.context": "https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItems(WorkItemId,Title,WorkItemType,State,Links,Links(TargetWorkItem(WorkItemId,Title,State)))",
+	"@odata.context": "https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItems(WorkItemId,Title,WorkItemType,State,Links(SourceWorkItemId,TargetWorkItemId,LinkTypeName,TargetWorkItem(WorkItemId,Title,State)))",
 	"value": [{
 		"WorkItemId": 103,
 		"Title": "Feature Y",
@@ -224,14 +196,7 @@ Response
 		"Links": [{
 			"SourceWorkItemId": 103,
 			"TargetWorkItemId": 48,
-			"CreatedDate": "2016-01-14T16:30:56.287Z",
-			"DeletedDate": null,
-			"Comment": "",
-			"LinkTypeId": 2,
-			"LinkTypeReferenceName": "System.LinkTypes.Hierarchy-Forward",
 			"LinkTypeName": "Child",
-			"LinkTypeIsAcyclic": true,
-			"LinkTypeIsDirectional": true,
 			"TargetWorkItem": {
 				"WorkItemId": 48,
 				"Title": "Story 15",
@@ -240,14 +205,7 @@ Response
 		}, {
 			"SourceWorkItemId": 103,
 			"TargetWorkItemId": 50,
-			"CreatedDate": "2016-01-14T16:30:50.277Z",
-			"DeletedDate": null,
-			"Comment": "",
-			"LinkTypeId": 2,
-			"LinkTypeReferenceName": "System.LinkTypes.Hierarchy-Forward",
 			"LinkTypeName": "Child",
-			"LinkTypeIsAcyclic": true,
-			"LinkTypeIsDirectional": true,
 			"TargetWorkItem": {
 				"WorkItemId": 50,
 				"Title": "Story 17",
@@ -256,14 +214,7 @@ Response
 		}, {
 			"SourceWorkItemId": 103,
 			"TargetWorkItemId": 55,
-			"CreatedDate": "2016-01-14T16:30:53.867Z",
-			"DeletedDate": null,
-			"Comment": "",
-			"LinkTypeId": 2,
-			"LinkTypeReferenceName": "System.LinkTypes.Hierarchy-Forward",
 			"LinkTypeName": "Child",
-			"LinkTypeIsAcyclic": true,
-			"LinkTypeIsDirectional": true,
 			"TargetWorkItem": {
 				"WorkItemId": 55,
 				"Title": "Story 22",
@@ -272,14 +223,7 @@ Response
 		}, {
 			"SourceWorkItemId": 103,
 			"TargetWorkItemId": 112,
-			"CreatedDate": "2016-03-03T17:17:46.023Z",
-			"DeletedDate": null,
-			"Comment": "",
-			"LinkTypeId": 2,
-			"LinkTypeReferenceName": "System.LinkTypes.Related-Forward",
 			"LinkTypeName": "Related",
-			"LinkTypeIsAcyclic": false,
-			"LinkTypeIsDirectional": false,
 			"TargetWorkItem": {
 				"WorkItemId": 112,
 				"Title": "Some issue",
@@ -295,13 +239,13 @@ You may also be interested in a particular type of link between items, in which 
 
 Request
 ```
-https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$select=WorkItemId,Title,WorkItemType,State&$filter=WorkItemId%20eq%20103&$expand=Links($filter=LinkTypeName eq 'Related';$expand=TargetWorkItem($select=WorkItemId,Title,State))
+https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$select=WorkItemId,Title,WorkItemType,State&$filter=WorkItemId eq 103&$expand=Links($select=SourceWorkItemId,TargetWorkItemId,LinkTypeName;$filter=LinkTypeName eq 'Related';$expand=TargetWorkItem($select=WorkItemId,Title,State))
 ```
 
 Response
 ```JSON
 {
-	"@odata.context": "https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItems(WorkItemId,Title,WorkItemType,State,Links,Links(TargetWorkItem(WorkItemId,Title,State)))",
+	"@odata.context": "https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItems(WorkItemId,Title,WorkItemType,State,Links(SourceWorkItemId,TargetWorkItemId,LinkTypeName,TargetWorkItem(WorkItemId,Title,State)))",
 	"value": [{
 		"WorkItemId": 103,
 		"Title": "Feature Y",
@@ -310,14 +254,7 @@ Response
 		"Links": [{
 			"SourceWorkItemId": 103,
 			"TargetWorkItemId": 112,
-			"CreatedDate": "2016-03-03T17:17:46.023Z",
-			"DeletedDate": null,
-			"Comment": "",
-			"LinkTypeId": 1,
-			"LinkTypeReferenceName": "System.LinkTypes.Related-Forward",
 			"LinkTypeName": "Related",
-			"LinkTypeIsAcyclic": false,
-			"LinkTypeIsDirectional": false,
 			"TargetWorkItem": {
 				"WorkItemId": 112,
 				"Title": "Some issue",
