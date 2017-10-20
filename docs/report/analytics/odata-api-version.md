@@ -75,11 +75,18 @@ Each version of the OData API will go through three phases during it's lifecycle
 ### 1 - Preview
 All breaking changes will be combined and released together in future versions of the API. In order to make this functionality available as early as possible we will release new versions in **preview** mode. While a version is in preview mode breaking changes are still possible. There are no guarantees that what is in preview will make it to the released version.
 
+The preview of a version will be available for a minimum of 6 weeks after it is released.
+
 ### 2 - Released
-Once a preview version matures enough for release it will be made available without the -preview suffix. No breaking changes will be introduced to released versions, but the data model may still grow with additive functionality. Released versions will be supported for a minimum of 12 months. The preview of a version will be available for a minimum of 6 weeks after it is released.
+Once a preview version matures enough for release it will be made available without the -preview suffix. No breaking changes will be introduced to released versions, but the data model may still grow with additive functionality. Released versions will be supported for a minimum of 12 months. 
 
 ### 3 - Deprecated
-Deprecated versions are no longer supported and requests made to them will not be fulfilled.
+Deprecated versions are no longer supported, and requests made to them will not be fulfilled. If you attempt to request a deprecated or unsupported version you will receive an HTTP 410 response code and a message like:
+
+```
+The {version} OData endpoint for Analytics is not supported. Information on the latest recommended version is available here: https://go.microsoft.com/fwlink/?linkid=856818
+```
+
 
 ## Current preview versions
 None
