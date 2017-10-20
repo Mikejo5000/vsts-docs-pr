@@ -19,7 +19,8 @@ https://{account}.analytics.visualstudio.com/{project}/_odata/{version}/$metadat
 
 
 ## Breaking vs non-breaking changes
-The Data Model exposed by the Analytics Service defines the contract between the service and it's clients. The OData spec requires that clients be tolerant of additive changes but breaking changes will be introduced in future versions. For more information see the OData spec: http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752208
+The Data Model exposed by the Analytics Service defines the contract between the service and it's clients. The OData spec requires that clients be tolerant of additive changes but breaking changes will be introduced in future versions. For more information see the OData spec: 
+[OData Version 4.0 Part 5: Versioning](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752208)
 
 ### Example of non-breaking changes
 Consider a scenario where we add a new UserType property to the User entity.
@@ -86,3 +87,6 @@ V1.0
 
 ## Current deprecated versions
 None
+
+## Related Notes
+[OData Version 4.0 Part 5: Versioning](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752208)
