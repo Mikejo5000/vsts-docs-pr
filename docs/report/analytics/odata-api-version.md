@@ -17,9 +17,8 @@ The API version follows the _odata element in the request path and is formatted 
 https://{account}.analytics.visualstudio.com/{project}/_odata/{version}/$metadata
 ```
 
-
 ## Breaking vs non-breaking changes
-The data model exposed by the Analytics Service defines the contract between the service and its clients. The OData spec requires that clients be tolerant of additive changes but breaking changes will be introduced in future versions. For more information see the OData spec: 
+The data model exposed by the Analytics Service defines the contract between the service and its clients. The OData spec requires that clients be tolerant of additive changes to the data model, so breaking changes will be introduced in future versions. For more information see the OData spec: 
 [OData Version 4.0 Part 5: Versioning](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752208)
 
 ### Example of non-breaking changes
@@ -39,12 +38,14 @@ Consider a scenario where we add a new UserType property to the User entity.
     <Property Name="UserEmail" Type="Edm.String">
         <Annotation Term="Display.DisplayName" String="User Email"/>
     </Property>
+    <!-- New User Type property -->
     <Property Name="UserType" Type="Edm.Int32">
         <Annotation Term="Display.DisplayName" String="User Type"/>
     </Property>
+    <!-- New User Type property -->
 </EntityType>
 ```
-This change is additive and so could be made available in the current **V1.0** version.
+This change is additive and could be made available in the current **V1.0** version.
 
 ### Example of breaking changes
 Now consider a scenario where we revert to the original structure of the User entity.
@@ -63,6 +64,7 @@ Now consider a scenario where we revert to the original structure of the User en
     <Property Name="UserEmail" Type="Edm.String">
         <Annotation Term="Display.DisplayName" String="User Email"/>
     </Property>
+    <!-- User Type property has been removed -->
 </EntityType>
 ```
 Since removal of the UserType field is a breaking change the field would not be removed until version **V2.0** of the API. **V1.0** of the data model would still include the UserType field.
@@ -74,7 +76,7 @@ Each version of the OData API will go through three phases during it's lifecycle
 All breaking changes will be combined and released together in future versions of the API. In order to make this functionality available as early as possible we will release new versions in **preview** mode. While a version is in preview mode breaking changes are still possible, there are no guarantees that what is in preview will make it to the released version.
 
 ### 2 - Released
-Once a preview version matures enough for release it will be made available without the -preview suffix. No breaking changes will be introduced to released versions but the data model may still grow with additive functionality. Released versions will be supported for a minimum of 12 months. The preview of a version will only be available for a few weeks after it is released, so it is important to migrate from the -preview to the released version quickly.
+Once a preview version matures enough for release it will be made available without the -preview suffix. No breaking changes will be introduced to released versions, but the data model may still grow with additive functionality. Released versions will be supported for a minimum of 12 months. The preview of a version will be available for a minimum of 6 weeks after it is released.
 
 ### 3 - Deprecated
 Deprecated versions are no longer supported and requests made to them will not be fulfilled.
