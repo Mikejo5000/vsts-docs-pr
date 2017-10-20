@@ -29,8 +29,8 @@ The data model contains the following entity sets:
 |--------|------------|  
 |Areas | The work item area paths, with fields for grouping and filtering by area hierarchy |  
 |Iterations | The work item iteration paths, with fields for grouping and filtering by iteration hierarchy |  
-|BoardLocations | The Kanban board cell locations, as identified by board column, lane, and split - includes board settings|  
-|Dates | The dates used to filter and group other entities using navigation or external joins|  
+|BoardLocations | The Kanban board cell locations, as identified by board column, lane, and split - includes historic board settings|  
+|Dates | The dates used to filter and group other entities using relationships |  
 |Projects | All VSTS projects|  
 |Tags | All work item tags for each project|  
 |Teams | All VSTS teams|  
@@ -38,8 +38,8 @@ The data model contains the following entity sets:
 |WorkItems | The current work items|  
 |WorkItemLinks | The links between work items (e.g. child, parent, related) - includes history of links - hyperlinks not included  
 |WorkItemRevisions | All work item revisions, including the current revision|  
-|WorkItemSnapshot | (Composite) The state of each work item on each calendar date - a composite of WorkItemRevisions used for trend reporting|  
-|WorkItemBoardSnapshot | (Composite) The state of each work item on each calendar date, including Kanban board location - a composite of WorkItemRevisions used for trend reporting|  
+|WorkItemSnapshot | (Composite) The state of each work item on each calendar date - used for trend reporting|  
+|WorkItemBoardSnapshot | (Composite) The state of each work item on each calendar date, including Kanban board location - used for trend reporting|  
 |WorkItemTypeFields | The work item fields for each work item type and process - used for report building|  
 
 ##Composite Entities
