@@ -19,7 +19,7 @@ Using the OData service provided by the Analytics Marketplace extension, you can
 
 In this topic, the basic root URL is constructed as follows:
 
-```https://{account}.analytics.visualstudio.com/_odata/v1.0-preview ``` 
+```https://{account}.analytics.visualstudio.com/_odata/v1.0 ``` 
 
 
 All additional URL parts are specified as an additional part of the query string as shown in the examples below.   
@@ -32,7 +32,7 @@ To query a single entity set, such as Work Items or Areas or Projects, simply ad
 
 For example, you query Areas by adding ```/Areas```. The full URL is:
 
-```https://{account}.analytics.visualstudio.com/_odata/v1.0-preview/Areas ```
+```https://{account}.analytics.visualstudio.com/_odata/v1.0/Areas ```
 
 This is equivalent to performing a select statement on the entity set and returning everything, all columns and all rows. If you have a large number of work items, this may take several seconds.
  
@@ -122,7 +122,7 @@ This returns the following:
 > [!div class="tabbedCodeSnippets"]
 ```JSON
 {
-  "@odata.context":"https://{account}.analytics.visualstudio.com/_odata/v1.0-preview/$metadata#WorkItems(WorkItemId,WorkItemType,Title,State,Iteration)",
+  "@odata.context":"https://{account}.analytics.visualstudio.com/_odata/v1.0/$metadata#WorkItems(WorkItemId,WorkItemType,Title,State,Iteration)",
   "value":[
     {
       "WorkItemId":10000,
@@ -156,7 +156,7 @@ To return less data, add a ```$select``` statement against the iteration as well
 Which returns the following:
 ```JSON
 {
-  "@odata.context":"https://{account}.analytics.visualstudio.com/_odata/v1.0-preview/$metadata#WorkItems(WorkItemId,WorkItemType,Title,State,Iteration,Iteration(Name,IterationPath))",
+  "@odata.context":"https://{account}.analytics.visualstudio.com/_odata/v1.0/$metadata#WorkItems(WorkItemId,WorkItemType,Title,State,Iteration,Iteration(Name,IterationPath))",
   "value":[
     {
       "WorkItemId":10000,
@@ -179,7 +179,7 @@ In OData, you can nest ```$expand``` statements. For example, you can write the 
 This results in:
 ```JSON
 {
-  "@odata.context":"https://{account}.analytics.visualstudio.com/_odata/v1.0-preview/$metadata#WorkItems","value":[
+  "@odata.context":"https://{account}.analytics.visualstudio.com/_odata/v1.0/$metadata#WorkItems","value":[
     {
       "WorkItemId":10000,
       "Revision":3,
@@ -224,7 +224,7 @@ You can also combine ```$expand``` and ```$select``` statements. For example, yo
 This results in:
 ```JSON
 {
-  "@odata.context":"https://{account}.analytics.visualstudio.com/_odata/v1.0-preview/$metadata#WorkItems(Iteration(IterationId,IterationPath,Project))",
+  "@odata.context":"https://{account}.analytics.visualstudio.com/_odata/v1.0/$metadata#WorkItems(Iteration(IterationId,IterationPath,Project))",
   "value":[
     {
       "WorkItemId":10000,
@@ -270,7 +270,7 @@ Team projects are an integral part of VSTS, Analytics service supports querying 
 
 For example, the following project-scoped query will return all work items for a specific project:  
 
-```https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0-preview/WorkItems/$count ```
+```https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems/$count ```
 
 For more details, see [Account and project scope queries](account-scoped-queries.md)
 

@@ -25,19 +25,19 @@ you automatically filter for any entities that are related to the project entity
 For example, the following project-scoped query will return the count of work items for a specific project:  
 
 ```
-https://{account}.analytics.visualstudio.com/ProjectA/_odata/v1.0-preview/WorkItems/$count
+https://{account}.analytics.visualstudio.com/ProjectA/_odata/v1.0/WorkItems/$count
 ```
 
 Likewise, this query string will return the areas for a specific project:
 
 ```
-https://{account}.analytics.visualstudio.com/ProjectA/_odata/v1.0-preview/Areas
+https://{account}.analytics.visualstudio.com/ProjectA/_odata/v1.0/Areas
 ```
 
 This is equivalent to the following filter on a collection-scoped query:
 
 ```
-https://{account}.analytics.visualstudio.com/_odata/v1.0-preview/Areas?$filter=Project/ProjectName eq 'ProjectA'
+https://{account}.analytics.visualstudio.com/_odata/v1.0/Areas?$filter=Project/ProjectName eq 'ProjectA'
 ```
 
 When using a project-scoped query with an ```$expand``` you are not required to provide additional filters.
@@ -45,13 +45,13 @@ When using a project-scoped query with an ```$expand``` you are not required to 
 For example, the following project scoped filter:
 
 ```
-https://{account}.analytics.visualstudio.com/ProjectA/_odata/v1.0-preview/WorkItems?$expand=Parent
+https://{account}.analytics.visualstudio.com/ProjectA/_odata/v1.0/WorkItems?$expand=Parent
 ```
 
 would be filtered automatically to enforce security:
 
 ```
-https://{account}.analytics.visualstudio.com/_odata/v1.0-preview/WorkItems?$filter=ProjectName eq 'ProjectA'&$expand=Parent($filter=ProjectName eq 'ProjectA')
+https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?$filter=ProjectName eq 'ProjectA'&$expand=Parent($filter=ProjectName eq 'ProjectA')
 ```
 
 
@@ -60,25 +60,25 @@ When using a collection-scoped query with an ```$expand``` you must provide an a
 For example, the following collection-scoped query, which uses an ```$expand``` to retrieve the children of all work items:
 	
 ```
-https://{account}.analytics.visualstudio.com/_odata/v1.0-preview/WorkItems?$expand=Children&$filter=Project/ProjectName eq 'ProjectA'
+https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?$expand=Children&$filter=Project/ProjectName eq 'ProjectA'
 ```
 
  Requires an additional filter to verify the children are limited to the specified project:
 	
 ```
-https://{account}.analytics.visualstudio.com/_odata/v1.0-preview/WorkItems?$expand=Children($filter=Project/ProjectName eq 'ProjectA')&$filter=Project/ProjectName eq 'ProjectA'
+https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?$expand=Children($filter=Project/ProjectName eq 'ProjectA')&$filter=Project/ProjectName eq 'ProjectA'
 ```
 
 This query, which uses an ```$expand``` to retrieve the parent of all work items:
 
 ```
-https://{account}.analytics.visualstudio.com/_odata/v1.0-preview/WorkItems?$expand=Parent&$filter=Project/ProjectName eq 'ProjectA'
+https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?$expand=Parent&$filter=Project/ProjectName eq 'ProjectA'
 ```
 
 Requires an additional filter to verify the parent is limited to the specified project:
 
 ```
-https://{account}.analytics.visualstudio.com/_odata/v1.0-preview/WorkItems?$expand=Parent($filter=Project/ProjectName eq 'ProjectA')&$filter=Project/ProjectName eq 'ProjectA'
+https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?$expand=Parent($filter=Project/ProjectName eq 'ProjectA')&$filter=Project/ProjectName eq 'ProjectA'
 ```
 
 Without the additional filter, the request will fail if the child of any work item references work items in a project that you do not have read access to.
@@ -90,19 +90,19 @@ The ```any``` or ```all``` filters apply to the base Entity on an ```$expand```.
 
 	
 ```
-https://{account}.analytics.visualstudio.com/_odata/v1.0-preview/WorkItems?$expand=Children&$filter=ProjectName eq 'ProjectA' and Children/any(r: r/ProjectName eq 'ProjectA')
+https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?$expand=Children&$filter=ProjectName eq 'ProjectA' and Children/any(r: r/ProjectName eq 'ProjectA')
 ```
 
 Using ```$level``` is only supported if you have access to all projects in the collection or when using a project scoped query:
 	
 ```
-https://{account}.analytics.visualstudio.com/_odata/v1.0-preview/WorkItems?$expand=Children($levels=2;$filter=ProjectName eq 'ProjectA')
+https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?$expand=Children($levels=2;$filter=ProjectName eq 'ProjectA')
 ```
 
 Analytics does not understand or support any cross level reference with Projects. As an example, this query is referencing the root work item’s ProjectName using $it alias which is unsupported:
 
 ```
-https://{account}.analytics.visualstudio.com/_odata/v1.0-preview/WorkItems?$expand=Links($expand=TargetWorkItem;$filter=TargetWorkItem/Project/ProjectName eq $it/Project/ProjectName)
+https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?$expand=Links($expand=TargetWorkItem;$filter=TargetWorkItem/Project/ProjectName eq $it/Project/ProjectName)
 ```
 
 >[!NOTE]
