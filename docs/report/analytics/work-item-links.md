@@ -17,7 +17,7 @@ ms.date: 08/11/2016
 
 Querying work items across links is much like using typical navigation properties. Links themselves are entities though, so there is some additional complexity.
 
-There are two ways to query for linked items. The first is the Parent/Child hierarchy, the second is the Links navigation property. The sections below cover each approach.
+There are two ways to query for linked items. The first is the Parent/Child hierarchy, and the second is the Links navigation property. The sections below cover each approach.
 
 ## Parent/Child hierarchy
 You can include items related through Parent/Child links by using ```$expand``` on the Parent and Children properties.
@@ -50,7 +50,7 @@ Response
 ```
 
 ### Example: Multiple levels of hierarchy
-You can retrieve all descendants of your work items by using the ```$levels``` option in your request. The ```$levels``` option allows you to control how deep the service will go when retrieving child items. In this example **max** actually equates to ```$levels=5``` but you may substitute other values. 
+You can retrieve all descendants of your work items by using the ```$levels``` option in your request. The ```$levels``` option allows you to control how deep the service will go when retrieving child items. In this example, **max** actually equates to ```$levels=5``` but you may substitute other values. 
 
 >[!NOTE]  
 >The ```$levels``` option only works for recursive relationships.
