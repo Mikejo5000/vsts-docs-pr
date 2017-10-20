@@ -4,9 +4,9 @@ description: Describes the data entities and relationships provided by the Analy
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
 ms.assetid: 032FB76F-DC43-4863-AFC6-F8D67963B177  
-ms.manager: douge
-ms.author: kaelli
-ms.date: 08/04/2017
+ms.manager: trevorc
+ms.author: davigust
+ms.date: 10/20/2017
 ---
 
 # Data model for the Analytics Service  
@@ -16,12 +16,12 @@ ms.date: 08/04/2017
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
 
-The Analytics service data model consists of entities, each containing properties that can be filtered, aggregated, and summarized.  Additionally, entities contain [navigation properties](http://www.odata.org/getting-started/basic-tutorial/#relationship) that relate entities to each other, providing additional properties for filtering and grouping.
+The Analytics service data model consists of entities, each containing properties that can be filtered, aggregated, and summarized.  Additionally, entities contain [navigation properties](http://www.odata.org/getting-started/basic-tutorial/#relationship) that relate entities to each other, providing access to additional properties for filtering and grouping.
 
 ##Entities  
 
 >[!NOTE]  
->The complete list of entities and properties varies for each VSTS project, and can be discovered by requestng the OData metadata: ```https://{account}.analytics.visualstudio.com/_odata/v1.0/$metadata```  
+>The complete list of entities and properties varies for each VSTS project, and can be discovered by requesting the OData metadata: ```https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata```  
 
 The data model contains the following entity sets:  
 
@@ -52,7 +52,7 @@ Similarly, some entities may contain all historic values, while others may only 
 
 ##Relationships
 
-Entities can be combined using relationships to compute more complex query results. Within an OData query, relationships can be followed using navigation properties in the ```$expand```, ```$filter```, or ```groupby``` statements.
+Entities can be combined using relationships to generate more complex query results. Within an OData query, relationships can be followed using navigation properties in the ```$expand```, ```$filter```, or ```groupby``` statements.
 
 Some navigation properties result in a single entity, while others result in a collection of entities. In the following diagram, entities and their navigation properties are shown.  For clarity, some composite entities and relationships have been omitted.
 
@@ -75,11 +75,11 @@ The WorkItemRevision entity contains examples of different types of properties. 
 |WorkItemType | String | The work item type (e.g. Bug, Task, User Story) |
 |StoryPoints | Double | The points assign to this story - commonly aggregated as a sum
 | Tags | Navigation | Navigation property to a Tag entity collection. Commonly used in ```$expand``` statements to access the Name property for multiple work item tags.
-|CreatedDate | DateTimeOffset | The date the work item was created, expressed in the timezone for the account. Commonly used for filtering and for display.
-|CreatedDateSK | Int32 | The date the work item was created, expressed as YYYYMMDD in the timezone for the account. Used by external tools to join related entities.
-|CreatedOn | Navigation | Navigation property to the Date entity for the date the work item was created, in the timezone for the account. Commonly used to reference properties from the Date entity in ```groupby``` statements.
+|CreatedDate | DateTimeOffset | The date the work item was created, expressed in the time zone for the account. Commonly used for filtering and for display.
+|CreatedDateSK | Int32 | The date the work item was created, expressed as YYYYMMDD in the time zone for the account. Used by external tools to join related entities.
+|CreatedOn | Navigation | Navigation property to the Date entity for the date the work item was created, in the time zone for the account. Commonly used to reference properties from the Date entity in ```groupby``` statements.
 
-The last three properties here show how the same value is often expressed in multiple properties, each designed for different scenarios.
+The last three properties here show that the same value is often expressed in multiple properties, each designed for different scenarios.
 
 
 ##Related notes 
