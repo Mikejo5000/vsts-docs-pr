@@ -40,7 +40,7 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?$filter=Area/
 **Get the count of work items in each project**
 
 ```
-https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?$apply=groupby((Project/ProjectName), aggregate(Count with sum as Count))
+https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?$apply=groupby((Project/ProjectName), aggregate($count as Count))
 ```
 
 **Retrieve all work items for a given iteration which fall between the first day of the iteration and the last day of the iteration**
@@ -49,14 +49,14 @@ Here your query is constrained by data
 contained within the VSTS data. 
 
 ```
-https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?$filter=Iteration/IterationPath eq '{iteration path}' and Date/Date ge Iteration/StartDate and Date/Date le Iteration/EndDate
+https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?$filter=Iteration/IterationPath eq '{iteration path}' and ChangedDate ge Iteration/StartDate and ChangedDate le Iteration/EndDate
 ```
 
 **Retrieve the data for a cumulative flow diagram**
 
 ```
 https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItemBoardSnapshot?$filter=BoardLocation/Team/TeamName eq '{team name}'
-and BoardLocation/BoardName eq '{board reference name}'&$expand=Date,BoardLocation
+and BoardLocation/BoardName eq '{board reference name}'&$expand=BoardLocation
 ```
 
 **Retrieve all work items with a specific tag**
