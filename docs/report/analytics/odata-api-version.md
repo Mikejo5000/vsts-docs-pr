@@ -45,7 +45,7 @@ Consider a scenario where we add a new UserType property to the User entity.
     <!-- New User Type property -->
 </EntityType>
 ```
-This change is additive and could be made available in the current **V1.0** version.
+This change is additive and could be made available in the current **v1.0** version.
 
 ### Example of breaking changes
 Now consider a scenario where we revert to the original structure of the User entity.
@@ -67,7 +67,7 @@ Now consider a scenario where we revert to the original structure of the User en
     <!-- User Type property has been removed -->
 </EntityType>
 ```
-Since removal of the UserType field is a breaking change the field would not be removed until version **V2.0** of the API. **V1.0** of the data model would still include the UserType field.
+Since removal of the UserType field is a breaking change the field would not be removed until version **V2.0** of the API. **v1.0** of the data model would still include the UserType field.
 
 ## Version lifecycle
 Each version of the OData API will go through three phases during it's lifecycle. 
