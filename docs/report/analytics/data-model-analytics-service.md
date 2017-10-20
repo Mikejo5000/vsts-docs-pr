@@ -1,6 +1,6 @@
 ---
 title: Data model for the Analytics Service for VSTS  
-description: Describes the data sets, counts and calculated measures provided with the Analytics service for Visual Studio Team Services (VSTS) 
+description: Describes the data entities and relationships provided by the Analytics service for Visual Studio Team Services (VSTS) 
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
 ms.assetid: 032FB76F-DC43-4863-AFC6-F8D67963B177  
@@ -16,7 +16,7 @@ ms.date: 08/04/2017
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
 
-The Analytics service data model consists of data sets, counts, and measures, as well as how data sets relate to each other.  
+The Analytics service data model consists of data entities that are related to each other with navigation properties. Each entity contains attributes and measures than can be filtered, aggregated, and summarized.  
 
 ##Entities  
 
@@ -44,11 +44,21 @@ The data model contains the following entity sets:
 
 ##Relationships
 
-Entities can be combined using relationships to compute more complex query results. Within an OData query relationships can be followed using navigation properties in the expand, filter, or groupby statements. Entity relationships are also exposed as foreign keys so that external tools can join entities
+Entities can be combined using relationships to compute more complex query results. Within an OData query relationships can be followed using navigation properties in the expand, filter, or groupby statements.
 
 Some navigation properties result in a single entity, while others result in sets of entities. In the following diagram, entities and their navigation properties are shown.  For clarity, some derivitive entities and relationships have been omitted.
 
 ![Analytics Service Data Model](_img/datamodel.png)
+
+##Relationship Keys
+
+ Entity relationships are also exposed as foreign keys so that external tools can implement joins. These fields have the suffix "SK", and are either integer or GUID data types. Date properties will have corresponding integer date key properties that use the following format: YYYYMMDD
+
+##Attributes and Measures
+
+Data entites contain attribute fields that can be used to filter and summarize query results...
+
+
 
 
 ##Related notes 
