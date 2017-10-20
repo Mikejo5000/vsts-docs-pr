@@ -51,13 +51,6 @@ contained within the VSTS data.
 https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?$filter=Iteration/IterationPath eq '{iteration path}' and ChangedDate ge Iteration/StartDate and ChangedDate le Iteration/EndDate
 ```
 
-**Retrieve the data for a cumulative flow diagram**
-
-```
-https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItemBoardSnapshot?$filter=BoardLocation/Team/TeamName eq '{team name}'
-and BoardLocation/BoardName eq '{board reference name}'&$expand=BoardLocation
-```
-
 **Retrieve all work items with a specific tag**
 
 Note that the **any** operator is used here because there are a collection of tags that can be associated with a work item.

@@ -21,7 +21,7 @@ Trend data is captured in the WorkItemSnapshot and WorkItemBoardSnapshot entitie
 
 For any project of size, this entity will be far too large to load into a client tool.  
 
-What is the solution? [Aggregation Extensions](../aggregated-data-analytics.md). 
+What is the solution? [Aggregation Extensions](aggregated-data-analytics.md). 
 
 Using the OData Aggregation Extensions, you can return aggregated data from VSTS that is conducive to reporting. For example you could show bug trend for the month of March. Bug trends are a common and critical part of managing any project so you can put this to good use immediately.
 
