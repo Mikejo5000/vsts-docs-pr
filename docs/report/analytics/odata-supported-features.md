@@ -33,17 +33,18 @@ When multiple clauses are used in query they will be applied in the order specif
 WorkItems?$filter=Count ge 100$apply=groupby((WorkItemType), aggregate($count as Count))&&$orderby=Count&top=5
 ```
 
-$apply clause allow to transform input. Multiple transformations could be combined with ```/```. For example:
+$apply triggers aggregation behavior. It takes a sequence of set transformations, separated by forward slashes to express that they are consecutively applied, i.e. the result of each transformation is the input to the next transformation. For example in the following query, first work item are filtered. Next, grouped by work item type and state. Then groups are filtered and grouped again.
+
 ``` 
-Workitems?$apply=filter(State ne 'Closed')/groupby((WorkItemType), aggregate($count as Count))  
+Workitems?$apply=filter(State ne 'Closed')/groupby((WorkItemType, State), aggregate($count as Count))/filter(Count gt 100)/groupby((State),aggregate(Count with max as MaxCount))  
 ``` 
 
-Following transformations are supported:
+The following transformations are supported:
 | Transformation | Notes |
 | ------------------ | ----------- |
-| ```groupby```  | Allows to group by properties|
-| ```filter```| Allows to filter input. Supports the same expressions as ```$filter``` |  
-| ```aggregate```  | Allows to aggregate using one of following methods   ```$count```, ```average```, ```max```,  ```min```, ```sum```  |
+| ```groupby```  | Allows grouping by properties|
+| ```filter```| Allows filtering input set. Supports the same expressions as ```$filter``` |  
+| ```aggregate```  | Allows aggregation using one of following methods   ```$count```, ```average```, ```max```,  ```min```, ```sum```  |
 
 For more samples, see [Aggregate data](aggregated-data-analytics.md)
 
