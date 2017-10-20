@@ -28,7 +28,7 @@ All additional URL parts are specified as an additional part of the query string
 ##Construct a basic query  
 
 ###Query a single entity set
-To query a single entity set, such as Work Items or Areas or Projects, simply add the name of the entity: ```/Areas```, ```/Projects```,  or ```/WorkItems```.
+To query a single entity set, such as Work Items or Areas or Projects, simply add the name of the entity: ```/Areas```, ```/Projects```,  or ```/WorkItems```. For full list of entity sets, see [Data model for the Analytics service](data-model-analytics-service.md).
 
 For example, you query Areas by adding ```/Areas```. The full URL is:
 

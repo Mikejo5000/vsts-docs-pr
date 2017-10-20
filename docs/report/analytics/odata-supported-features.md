@@ -111,5 +111,6 @@ However, you can't enter the following:
 >The Analytics Service is on a 15 minute refresh schedule.  
 
 - [WIT analytics](wit-analytics.md)  
-- [Aggregate data](aggregated-data-analytics.md)  
-- [OData Version 4.0 Part 2: URL Conventions Plus Errata 02](http://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part2-url-conventions/odata-v4.0-errata02-os-part2-url-conventions-complete.html)  
+- [Aggregate data](aggregated-data-analytics.md)
+- [OData v4.0 specification](http://www.odata.org/documentation/)  
+- [OData v4.0 Part 2: URL Conventions Plus Errata 02](http://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part2-url-conventions/odata-v4.0-errata02-os-part2-url-conventions-complete.html)  
