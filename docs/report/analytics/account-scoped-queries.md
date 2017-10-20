@@ -12,31 +12,31 @@ ms.date: 11/15/2017
 #Account and project scope queries
 
 Team projects are an integral part of VSTS, in addition to account level scope:
-```
+```odata
 https://{account}.analytics.visualstudio.com/_odata/v1.0
 ```
 
-Analytics service supports quering project level. By specifying the project:
- ```
+Analytics service supports querying project level. By specifying the project:
+ ```odata
 https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0
 ```
 you automatically filter for any entities that are related to the project entity.
 
 For example, the following project-scoped query will return the count of work items for a specific project:  
 
-```
+```odata
 https://{account}.analytics.visualstudio.com/ProjectA/_odata/v1.0-preview/WorkItems/$count
 ```
 
 Likewise, this query string will return the areas for a specific project:
 
-```
+```odata
 https://{account}.analytics.visualstudio.com/ProjectA/_odata/v1.0-preview/Areas
 ```
 
 This is equivalent to the following filter on a collection-scoped query:
 
-```
+```odata
 https://{account}.analytics.visualstudio.com/_odata/v1.0-preview/Areas?$filter=Project/ProjectName eq 'ProjectA'
 ```
 
@@ -48,7 +48,7 @@ For example, the following project scoped filter:
 https://{account}.analytics.visualstudio.com/ProjectA/_odata/v1.0-preview/WorkItems?$expand=Parent
 ```
 
-Would be filtered automatically to enforce security:
+would be filtered automatically to enforce security:
 
 ```
 https://{account}.analytics.visualstudio.com/_odata/v1.0-preview/WorkItems?$filter=ProjectName eq 'ProjectA'&$expand=Parent($filter=ProjectName eq 'ProjectA')
