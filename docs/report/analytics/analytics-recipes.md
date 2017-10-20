@@ -22,19 +22,19 @@ adapted for different needs.
 **Retrieve the history of a work item**
 
 ```
-https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItemRevisions?$filter=WorkItemId eq [Id]
+https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItemRevisions?$filter=WorkItemId eq {Id}
 ```
 
 **Retrieve all work items in a given iteration**
 
 ```
-https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?$filter=Iteration/IterationPath eq '[iteration path]'
+https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?$filter=Iteration/IterationPath eq '{iteration path}'
 ```
 
 **Retrieve all work items in a given area**
 
 ```
-https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?$filter=Area/AreaPath eq '[area path]'
+https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?$filter=Area/AreaPath eq '{area path}'
 ```
 
 **Get the count of work items in each project**
@@ -49,21 +49,21 @@ This type of query is a little different in that you are constraining your query
 contained with the data. 
 
 ```
-https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?$filter=Iteration/IterationPath eq '[iteration path]' and Date/Date ge Iteration/StartDate and Date/Date le Iteration/EndDate
+https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?$filter=Iteration/IterationPath eq '{iteration path}' and Date/Date ge Iteration/StartDate and Date/Date le Iteration/EndDate
 ```
 
 **Retrieve the data for a cumulative flow diagram**
 
 ```
 https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItemBoardSnapshot?$filter=BoardLocation/Team/TeamName eq '{team name}'
-and BoardLocation/BoardName eq '[board reference name]'&$expand=Date,BoardLocation
+and BoardLocation/BoardName eq '{board reference name}'&$expand=Date,BoardLocation
 ```
 
 **Retrieve all work items with a specific tag**
 
 Note that the **any** operator is used here because there are a collection of tags that can be associated with a work item.
-From a usage perspective, the format is: **[Navigation Property]/any(d:d/[Field Name] [operator] [expression])**. Any item not surrounded by
-brackets ([]) is a literal. There are some variations on this (for example, you don't have to use "d" as used in the expression above)
+From a usage perspective, the format is: **{Navigation Property}/any(d:d/{Field Name} {operator} {expression})**. Any item not surrounded by
+brackets ({}) is a literal. There are some variations on this (for example, you don't have to use "d" as used in the expression above)
 but following this format keeps it simple.
 
 ```
