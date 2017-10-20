@@ -17,6 +17,10 @@ ms.date: 08/04/2017
 
 Using the OData analytics service, you can aggregate data. 
 
+##What is the Aggregation Extension for OData?
+
+Analytics relies on OData to author queries over your VSTS data. Aggregations in OData are achieved using an extension that introduces the ```$apply``` keyword. We have some examples of how to use this keyword below. Learn more about the extension at [OData Extension for Data Aggregation](http://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html).
+
 There are two ways to aggregate data. The simple approach without using aggregation extension provides just the count of data. The more advanced approach performs aggregations available via the aggregation extensions. 
 
 In this topic, the basic root URL is constructed as:
