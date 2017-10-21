@@ -13,9 +13,9 @@ ms.date: 10/20/2017
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
-This section provides guidelines for designing OData queries against Analytics Service. The goal is to help extension developers ensure that the queries have good performance in terms of the execution time and the resource consumption. Queries that ❌ DO NOT adhere to these guidelines might provide bad experience when users have to wait long for the reports to be generated or exceed allowed resource consumption and the user get temporarily blocked from the service.
+This section provides guidelines for designing OData queries against Analytics Service. The goal is to help extension developers ensure that the queries have good performance in terms of the execution time and the resource consumption. Queries that do not adhere to these guidelines might provide bad experience when users have to wait long for the reports to be generated or exceed allowed resource consumption and the user get temporarily blocked from the service.
 
-The guidelines are organized as simple recommendations prefixed with the terms **✔️ DO**, **✔️ CONSIDER**, **❌ AVOID** and **❌ DO NOT**. In certain cases these recommendations were rules enforced in the service and it is reflected by **[BLOCKED]** prefix. These guidelines are intended to help extension developers understand the trade-offs between different solutions. There might be situations where data requirements force you to violate these guidelines. Such cases should be rare, and it is important that you have a clear and compelling reason for your decision.
+The guidelines are organized as simple recommendations prefixed with the terms **DO**, **CONSIDER**, **AVOID** and **DO NOT**. In certain cases these recommendations were rules enforced in the service and it is reflected by **[BLOCKED]** prefix. These guidelines are intended to help extension developers understand the trade-offs between different solutions. There might be situations where data requirements force you to violate these guidelines. Such cases should be rare, and it is important that you have a clear and compelling reason for your decision.
 
 ## Errors and warnings guidelines
 
@@ -97,7 +97,7 @@ https://tseadm.analytics.visualstudio.com/_odata/1.0/WorkItemSnapshot?
 > <br>~ *Product Team*
 
 ### **✔️ DO** use weekly or monthly snapshots when your historical query spans long time range.
-By default all the snapshot tables are modelled as *daily snapshot fact* tables. Consequently, if you query for a time range will get a value for each day. For long time ranges this result in a very large number of records. If you ❌ DO NOT need such high precision you can use weekly or even monthly snapshots. This can be achieved by adding additional filter expression to remove days which ❌ DO NOT finish a given week or monnth. In Analytics Service there is `IsLastDayOfPeriod` property, which was added with this sceario in mind. This property is of type `Microsoft.VisualStudio.Services.Analytics.Model.Period` and can tell if day finishes different periods (e.g. weeks, months, etc).
+By default all the snapshot tables are modelled as *daily snapshot fact* tables. Consequently, if you query for a time range will get a value for each day. For long time ranges this result in a very large number of records. If you do not need such high precision you can use weekly or even monthly snapshots. This can be achieved by adding additional filter expression to remove days which do not finish a given week or monnth. In Analytics Service there is `IsLastDayOfPeriod` property, which was added with this sceario in mind. This property is of type `Microsoft.VisualStudio.Services.Analytics.Model.Period` and can tell if day finishes different periods (e.g. weeks, months, etc).
 
 ```xml
 <EnumType Name="Period" IsFlags="true">
@@ -134,12 +134,32 @@ https://{account}.analytics.visualstudio.com/_odata/1.0/WorkItemSnapshot?
 ```
 
 
-### **X [BLOCKED] DO NOT** use snapshot entities for anything other than aggregations
+### **❌ [BLOCKED] DO NOT** use snapshot entities for anything other than aggregations
 <a name="ODATA_SNAPSHOT_WITHOUT_AGGREGATION"></a>
 
 > [!DANGER]
 > Give example of aggregation.
 > Refer to the page which explain what a snapshot is.
+
+### **❌ [BLOCKED] DO NOT** use entity keys in resouce paths for entity addressing.
+
+[OData Version 4.0. Part 2: URL Conventions - 4.3 Addressing Entities](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc453752340)
+
+> The query specified in the URI is not valid. The Analytics Service doesn't support key or property navigation like WorkItems(Id) or WorkItem(Id)/AssignedTo. If you getting that error in PowerBI, please, rewrite your query to avoid incorrect folding that causes N+1 problem.
+
+### **✔️ DO** explicitly address entities with filter clauses.
+
+```odata
+https://{account}.analytics.visualstudio.com/_odata/1.0/WorkItems?
+  $filter=WorkItemId eq {id}
+```
+
+### **❌ [BLOCKED] DO NOT** expand `Revisions` on `WorkItem` entity.
+
+> The query specified in the URI is not valid. The property 'Revisions' cannot be used in the $expand query option.
+
+### **✔️ DO** use `WorkItemRevisions` entity set to load all the revisions for a given work item.
+
 
 ### **❌ DO NOT** use unbounded expansion (`$levels=max`)
 
