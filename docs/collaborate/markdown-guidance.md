@@ -498,10 +498,18 @@ Attachments support the following file formats:
 - Compressed files: ZIP (.zip) and GZIP (.gz)
 - Video files: MOV (.mov), MP4 (.mp4)
 
+In addition, wiki supports the following additional extension formats:
+- Code files: ".CS", ".HTM", ".HTML",  ".JSON",  ".PS1", ".SQL", ".XML"
+- Documents: ".CSV", ".DOC", ".PPT", ".VSD", ".VSDX", ".MPP", ".MD"
+- Images: ".ICO"
+- Compressed files: ".RAR"
+- Other extensions: ".MSG" , ".RDP", ".LYR"
+
 Attaching non-image files creates a link to the file in your comment. Update the description text between the brackets to change the text displayed in the link.
 Attached image files render directly into your comment or wiki pages. 
 
 Once you save or update a comment or wiki page with an attachment, you can see the attached image(s) and can select links to download attached files.
+
 
 
 ## HTML Tags
