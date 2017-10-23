@@ -11,6 +11,7 @@ ms.date: 10/20/2017
 
 # OData Query Guidelines
 
+**VSTS**  
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
 This section provides guidelines for designing OData queries against Analytics Service. The goal is to help extension developers ensure that the queries have good performance in terms of the execution time and the resource consumption. Queries that do not adhere to these guidelines might provide bad experience when users have to wait long for the reports to be generated or exceed allowed resource consumption and the user get temporarily blocked from the service.
