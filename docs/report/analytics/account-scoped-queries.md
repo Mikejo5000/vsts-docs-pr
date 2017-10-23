@@ -11,7 +11,10 @@ ms.date: 11/15/2017
 
 #Account and project scope queries
 
+
 The Analytics Service supports querying on an account level and on a project level.
+
+
 Base URL for account level queries:
 ```
 https://{account}.analytics.visualstudio.com/_odata/v1.0
@@ -21,7 +24,9 @@ Base URL for project level queries:
  ```
 https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0
 ```
-
+>[!NOTE]
+>If you don't have access to all projects in an account, apply a project filter to your query. When pulling data into client tools such as
+>Power BI Desktop or Excel, use the project path form of the URL to ensure your data is constrained by a project, unless you need to report on more than one project.
 
 For example, the following project-scoped query will return the count of work items for a specific project:  
 
@@ -35,7 +40,7 @@ Likewise, this query string will return the areas for a specific project:
 https://{account}.analytics.visualstudio.com/ProjectA/_odata/v1.0/Areas
 ```
 
-This is equivalent to the following filter on a collection-scoped query:
+This is equivalent to the following filter on a account-scoped query:
 
 ```
 https://{account}.analytics.visualstudio.com/_odata/v1.0/Areas?$filter=Project/ProjectName eq 'ProjectA'
@@ -56,15 +61,15 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?$filter=Proje
 ```
 
 
-When using a collection-scoped query with an ```$expand``` you must provide an additional filter.
+When using a account-scoped query with an ```$expand``` you must provide an additional filter.
 
-For example, the following collection-scoped query, which uses an ```$expand``` to retrieve the children of all work items:
+For example, the following account-scoped query, which uses an ```$expand``` to retrieve the children of all work items:
 	
 ```
 https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?$expand=Children&$filter=Project/ProjectName eq 'ProjectA'
 ```
 
- Requires an additional filter to verify the children are limited to the specified project:
+requires an additional filter to verify the children are limited to the specified project:
 	
 ```
 https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?$expand=Children($filter=Project/ProjectName eq 'ProjectA')&$filter=Project/ProjectName eq 'ProjectA'
@@ -105,6 +110,3 @@ Analytics does not understand or support any cross level reference with Projects
 https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?$expand=Links($expand=TargetWorkItem;$filter=TargetWorkItem/Project/ProjectName eq $it/Project/ProjectName)
 ```
 
->[!NOTE]
->If you don't have access to all projects in an account, apply a project filter to your query. When pulling data into client tools such as
->Power BI Desktop or Excel, use the project path form of the URL to ensure your data is constrained by a project, unless you need to report on more than one project.
