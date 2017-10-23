@@ -5,6 +5,7 @@
         "files": [
           "**/*.md", "**/*.yml"
         ],
+        "group": "all",
         "exclude": [
           "**/obj/**",
           "**/includes/**",
@@ -46,6 +47,12 @@
     },
     "fileMetadata": {},
     "template": [],
-    "dest": "team-services"
+    "dest": "team-services",
+    "groups": {
+      "all": {
+        "dest": "all",
+        "moniker_range": "vsts | >= tfs-2013 <= tfs-2018.2 | >= vs-2013 <= vs-2018"
+      }
+    }
   }
 }
