@@ -52,27 +52,24 @@ For more details, see [Aggregate data](aggregated-data-analytics.md)
 ## Supported functions
 | Canonical function | Description |
 | ------------------ | ----------- |  
-| ```contains``` |  Returns true if the second parameter string value is a substring of the first parameter string value, otherwise it returns false  |  
-| ```endswith``` | Returns true if the first parameter string value ends with the second parameter string value, otherwise it returns false |  
-| ```startswith``` |  Returns true if the first parameter string value starts with the second parameter string value, otherwise it returns false |  
-| ```length``` | Returns the number of characters in the parameter value |  
-| ```indexof``` | Returns the zero-based character position of the first occurrence of the second parameter value in the first parameter value or -1 if the second parameter value does not occur in the first parameter value|  
-| ```substring``` | Returns a substring of the first parameter string value, starting at the Nth character and finishing at the last character (where N is the second parameter integer value) |  
-| ```tolower``` |  Returns the input parameter string value with all uppercase characters converted to lowercase  |  
-| ```toupper``` |  Returns  the input parameter string value with all lowercase characters converted to uppercase |  
-| ```trim``` |  Returns the input parameter string value with all leading and trailing whitespace characters |  
-| ```concat``` | Returns the year component of the Date or DateTimeOffset parameter value |  
-| ```year``` |  Returns the year component of the Date or DateTimeOffset parameter value |  
-| ```month``` | Returns the month component of the Date or DateTimeOffset parameter value |  
-| ```day``` |  Returns the day component of the Date or DateTimeOffset parameter value |  
-| ```second``` | Returns the second component (without the fractional part) of the DateTimeOffset or TimeOfDay parameter value |  
-| ```fractionalseconds``` |  Returns the fractional seconds component of the DateTimeOffset or TimeOfDay parameter value as a non-negative decimal value less than 1 |  
-| ```date``` | Returns the date part of the DateTimeOffset parameter value |  
-| ```time``` |  Returns the time part of the DateTimeOffset parameter value |  
-| ```totaloffsetminutes``` | Returns  the signed number of minutes in the time zone offset part of the DateTimeOffset parameter value |  
-| ```now``` |  Returns the current point in time (date and time with time zone) as a DateTimeOffset value |  
-| ``` maxdatetime``` | Returns the latest possible point in time as a DateTimeOffset value |  
-| ```mindatetime``` |  Returns the earliest possible point in time as a DateTimeOffset value |  
+| [```contains```](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc444868695) |  Returns true if the second parameter string value is a substring of the first parameter string value, otherwise it returns false  |  
+| [```endswith```](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc371341774) | Returns true if the first parameter string value ends with the second parameter string value, otherwise it returns false |  
+| [```startswith```](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc444868699) |  Returns true if the first parameter string value starts with the second parameter string value, otherwise it returns false |  
+| [```length```](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc444868698) | Returns the number of characters in the parameter value |  
+| [```indexof```](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc371341774) | Returns the zero-based character position of the first occurrence of the second parameter value in the first parameter value or -1 if the second parameter value does not occur in the first parameter value|  
+| [```substring```](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc371341777) | Returns a substring of the first parameter string value, starting at the Nth character and finishing at the last character (where N is the second parameter integer value) |  
+| [```tolower```](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc371341779) |  Returns the input parameter string value with all uppercase characters converted to lowercase  |  
+| [```toupper```](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc371341780) |  Returns  the input parameter string value with all lowercase characters converted to uppercase |  
+| [```trim```](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc371341781) |  Returns the input parameter string value with all leading and trailing whitespace characters |  
+| [```year```](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc444868718) |  Returns the year component of the Date or DateTimeOffset parameter value |  
+| [```month```](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc371341784) | Returns the month component of the Date or DateTimeOffset parameter value |  
+| [```day```](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc444868706) |  Returns the day component of the Date or DateTimeOffset parameter value |  
+| [```date```](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc371341790) | Returns the date part of the DateTimeOffset parameter value |  
+| [```time```](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc444868715) |  Returns the time part of the DateTimeOffset parameter value |  
+| [```totaloffsetminutes```](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc444868716) | Returns  the signed number of minutes in the time zone offset part of the DateTimeOffset parameter value |  
+| [```now```](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc444868713) |  Returns the current point in time (date and time with time zone) as a DateTimeOffset value |  
+| [``` maxdatetime```](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc444868709) | Returns the latest possible point in time as a DateTimeOffset value |  
+| [```mindatetime```](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc371341795) |  Returns the earliest possible point in time as a DateTimeOffset value |  
 
 
 
