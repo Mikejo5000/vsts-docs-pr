@@ -11,9 +11,7 @@ ms.date: 11/15/2017
 
 #Account and project scope queries
 
-
-The Analytics Service supports querying on an account level and on a project level.
-
+In a lot of cases, you want to query data from the given project, in other data across projects need to be combined. Narrow project-scope queries help answer questions about a single project. And at the same time, account-scope queries to satisfy more sophisticated requests.
 
 Base URL for account level queries:
 ```
