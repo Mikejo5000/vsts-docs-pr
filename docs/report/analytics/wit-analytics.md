@@ -34,7 +34,7 @@ For example, you query Areas by adding ```/Areas```. The full URL is:
 
 ```https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/Areas ```
 
-This is equivalent to performing a select statement on the entity set and returning everything, all columns and all rows. If you have a large number of work items, this may take several seconds.
+This is equivalent to performing a select statement on the entity set and returning everything, all columns and all rows. If you have a large number of work items, this may take several seconds. If you have more than 10000 work items [server-side paging will be enforced](#server-force-paging).
  
 ### Select specific columns  
 Return specific field data by adding a ```$select``` clause. 
@@ -269,6 +269,23 @@ You can sort in ascending or descending order using keywords ```asc``` or ```des
 You can order by multiple items:
 
     /WorkItems?$orderby=WorkItemType,State
+
+<a id="server-force-paging"></a>
+##Server-side enforced paging
+
+The Analytics Service forces paging when query results exceed 10000 records. In that case, you will get first page of data and link to follow to get next page. Link (```@odata.nextLink```) can be found at the end of the JSON output. It will look like original query folled by ```$skip``` or ```$skiptoken```. For example:
+```JSON
+{
+  "@odata.context":"https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItems",
+  "value":[
+   // 10000 values here
+  ],
+  "@odata.nextLink":"https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$skiptoken=10000"
+}
+``` 
+>[!NOTE]
+> When pulling data into client tools such as Power BI Desktop or Excel, tools will automatically follow next link and load all required records. 
+
 
 ##Related notes 
 
