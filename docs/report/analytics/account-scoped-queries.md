@@ -25,6 +25,10 @@ https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0
 
 The following project-scoped query will return the count of work items for a specific project:  
 
+>[!NOTE]
+>If you don’t have access to all projects in an account, it is recommended to apply a project filter to all of your queries. When pulling data into client tools such as Power BI Desktop or Excel, using the project path syntax is the best way to ensure that all your data is constrained by the given project. It is only recommended to use the account-scoped queries when you need to report on more than one project.
+
+
 ```
 https://{account}.analytics.visualstudio.com/ProjectA/_odata/v1.0/WorkItems/$count
 ```
