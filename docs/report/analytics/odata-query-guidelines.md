@@ -45,6 +45,56 @@ Some rules for OData queries were promoted from warning to error level. Instead 
 }
 ```
 
+## Restrictions
+
+### **❌ [BLOCKED] DO NOT** use snapshot entities for anything other than aggregations
+<a name="ODATA_SNAPSHOT_WITHOUT_AGGREGATION"></a>
+
+> [!DANGER]
+> Give example of aggregation.
+> Refer to the page which explain what a snapshot is.
+
+### **❌ [BLOCKED] DO NOT** use entity keys in resouce paths for entity addressing.
+
+[OData Version 4.0. Part 2: URL Conventions - 4.3 Addressing Entities](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc453752340)
+
+> The query specified in the URI is not valid. The Analytics Service doesn't support key or property navigation like WorkItems(Id) or WorkItem(Id)/AssignedTo. If you getting that error in PowerBI, please, rewrite your query to avoid incorrect folding that causes N+1 problem.
+
+### **✔️ DO** explicitly address entities with filter clauses.
+
+```odata
+https://{account}.analytics.visualstudio.com/_odata/1.0/WorkItems?
+  $filter=WorkItemId eq {id}
+```
+
+### **❌ [BLOCKED] DO NOT** expand `Revisions` on `WorkItem` entity.
+
+> The query specified in the URI is not valid. The property 'Revisions' cannot be used in the $expand query option.
+
+### **✔️ DO** use `WorkItemRevisions` entity set to load all the revisions for a given work item.
+
+https://stackoverflow.microsoft.com/questions/48676/how-to-handle-the-property-revisions-cannot-be-used-in-the-expand-query-opti
+
+```odata
+https://{account}.analytics.visualstudio.com/_odata/1.0/WorkItemRevisions?
+  $filter=WorkItemId eq {id}
+```
+
+
+### **❌ [BLOCKED] DO NOT** group on distinct columns.
+<a name="ODATA_QUERY_DISTINCT_COLUMNS_IN_LAST_GROUPBY"></a>
+
+### **✔️ DO** use batch endpoint for long queries.
+
+### **❌ [BLOCKED] DO NOT** use batch endpoint for sending multiple queries.
+Yes, batch endpoint is not for batching multiple requests. The only reason why it was exposed was to support very long queries. As of right now it requires the response to contain exactly one query.
+
+### **❌ AVOID** creating very long queries.
+Just because you can, it does not mean you should.
+https://stackoverflow.microsoft.com/questions/41401/suggestion-for-massive-filter-on-bugs
+
+### **✔️ DO** specify time zone when filtering on date columns.
+https://stackoverflow.microsoft.com/questions/21550/date-filters-using-the-analytics-service-return-a-no-coercion-operator-is-defin
 
 ## Performance guidelines
 
@@ -70,6 +120,10 @@ https://{account}.analytics.visualstudio.com/_odata/1.0/WorkItems?
   $select=WorkItemId, Title, State
   &$expand=Parent($select=WorkItemId, Title, State)
 ```
+
+### **✔️ DO** specify project filter you use `$expand` clause.
+https://stackoverflow.microsoft.com/questions/62583/how-to-add-extra-filter-to-targetworkitem
+
 
 ### **✔️ DO** define a filter on `RevisedDateSK` when you write historical queries agains work items entity sets.
 When you query for historical data, the chances are that you are interested in the most recent period (e.g. 30 days, 90 days). Due to how work items entities were implemented there is a convenient way you can write such queries to get great performance. Each time you update a work item it creates a new revision and records this action in `System.RevisedDate` colum. This makes it perfect for history filters.
@@ -133,45 +187,33 @@ https://{account}.analytics.visualstudio.com/_odata/1.0/WorkItemSnapshot?
     )
 ```
 
-
-### **❌ [BLOCKED] DO NOT** use snapshot entities for anything other than aggregations
-<a name="ODATA_SNAPSHOT_WITHOUT_AGGREGATION"></a>
-
-> [!DANGER]
-> Give example of aggregation.
-> Refer to the page which explain what a snapshot is.
-
-### **❌ [BLOCKED] DO NOT** use entity keys in resouce paths for entity addressing.
-
-[OData Version 4.0. Part 2: URL Conventions - 4.3 Addressing Entities](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc453752340)
-
-> The query specified in the URI is not valid. The Analytics Service doesn't support key or property navigation like WorkItems(Id) or WorkItem(Id)/AssignedTo. If you getting that error in PowerBI, please, rewrite your query to avoid incorrect folding that causes N+1 problem.
-
-### **✔️ DO** explicitly address entities with filter clauses.
+### **✔️ DO** use Tags collection property on work items when filtering by tags.
+There is property `TagNames` which one could use with `contains` function to find the right work items, but for better performance you should use `Tags` navigation property.
 
 ```odata
 https://{account}.analytics.visualstudio.com/_odata/1.0/WorkItems?
-  $filter=WorkItemId eq {id}
+  $filter=Tags/any(t:t/TagName eq '{tag}')
 ```
+https://stackoverflow.microsoft.com/questions/18172/how-to-query-work-items-for-multiple-tags
 
-### **❌ [BLOCKED] DO NOT** expand `Revisions` on `WorkItem` entity.
-
-> The query specified in the URI is not valid. The property 'Revisions' cannot be used in the $expand query option.
-
-### **✔️ DO** use `WorkItemRevisions` entity set to load all the revisions for a given work item.
 
 
 ### **❌ DO NOT** use unbounded expansion (`$levels=max`)
-
-### **❌ DO NOT** group on distinct columns.
-<a name="ODATA_QUERY_DISTINCT_COLUMNS_IN_LAST_GROUPBY"></a>
 
 ### **✔️ CONSIDER** writting query to return small number of records.
 
 ### **✔️ CONSIDER** limiting the number of selected columns to minimum.
 <a name="ODATA_QUERY_TOO_WIDE"></a>
 
-### **✔️ CONSIDER** filterig on surrogate key date columns.
+
+### **✔️ CONSIDER** filterig on date surrogate key columns with DateSK suffix.
+
+```odata
+https://{account}.analytics.visualstudio.com/_odata/1.0/WorkItems?
+  $filter=CreatedDateSK eq {createdDateSK}
+```
+
+### **✔️ CONSIDER** filterig on surrogate key columns.
 If you want to filter the data on the value of related object (e.g. filtering work item on project name) you always have two choices. You can either use the navigation property (e.g. `Project/ProjectName`) or capture the *surrogate key* up-front and use it directly in the query (e.g. `ProjectSK`). If you are building a widget you should always prefer the latter option. When the key is passed as part of the query the number of entity sets that have to be touched goes down and the performance improves.
 
 For example, the query below filters `WorkItems` using `ProjectSK` property rather than `Project/ProjectName` navigation property.
@@ -195,6 +237,12 @@ OData-MaxVersion: 4.0
 Accept: application/json;odata.metadata=minimal
 Host: {account}.analytics.visualstudio.com
 ```
+
+### **❌ AVOID** sending more requests after you received a timeout error.
+https://stackoverflow.microsoft.com/questions/41065/how-do-i-resolve-error-the-request-has-exceeded-request-timeout-please-try-aga
+```
+message: "TF400733: The request has been canceled: The request has exceeded request timeout, please try again.",
+```       
 
 
 ## Query style guidelines
