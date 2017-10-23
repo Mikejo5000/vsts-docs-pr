@@ -39,8 +39,7 @@
   ],
   "notification_subscribers": [
     "douge@microsoft.com",
-    "kaelli@microsoft.com",
-    "pacort@microsoft.com"
+    "kaelli@microsoft.com"
   ],
   "branches_to_filter": [],
   "skip_source_output_uploading": false,
