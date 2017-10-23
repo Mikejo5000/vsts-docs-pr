@@ -12,10 +12,7 @@ ms.date: 11/15/2017
 
 # Supported OData features  
 
-The following table summarizes the supported and unsupported OData functions.  
-
-> [!NOTE]  
-> OData aggregation extensions are relatively new and either not supported by various client tools (yet) or full support for the extension is not supported by the Analytics Service.  
+The following tables summarizes the supported and unsupported OData features.  
 
 ## Supported clauses
 
@@ -32,8 +29,11 @@ When multiple clauses are used in query they will be applied in the order specif
 ``` 
 WorkItems?$filter=Count ge 100$apply=groupby((WorkItemType), aggregate($count as Count))&&$orderby=Count&top=5
 ```
-
+### Aggregation extensions support
 $apply triggers aggregation behavior. It takes a sequence of set transformations, separated by forward slashes to express that they are consecutively applied, i.e. the result of each transformation is the input to the next transformation. For example in the following query, first work item are filtered. Next, grouped by work item type and state. Then groups are filtered and grouped again.
+
+> [!NOTE]  
+> OData aggregation extensions are relatively new and not yet fully supported by various client tools. 
 
 ``` 
 Workitems?$apply=filter(State ne 'Closed')/groupby((WorkItemType, State), aggregate($count as Count))/filter(Count gt 100)/groupby((State),aggregate(Count with max as MaxCount))  
@@ -46,7 +46,7 @@ The following transformations are supported:
 | ```filter```| Allows filtering input set. Supports the same expressions as ```$filter``` |  
 | ```aggregate```  | Allows aggregation using one of following methods   ```$count```, ```average```, ```max```,  ```min```, ```sum```  |
 
-For more samples, see [Aggregate data](aggregated-data-analytics.md)
+For more details, see [Aggregate data](aggregated-data-analytics.md)
 
 <a id="supported-functions"></a> 
 ## Supported functions
@@ -89,15 +89,15 @@ However, you can't enter the following:
 /WorkItems?$select=WorkItemId,State,toupper(Title)
 ```  
 
-## Not supported clauses, expressions or transformations
+## Not supported features
 
-- ```concat```  
 - ```$search```  
 - ```$compute```  
-- ```compute```  
 - ```$rollup```  
-- ```isdefined```  
 - ```$crossjoin```  
+- ```concat```  
+- ```compute```  
+- ```isdefined```  
 - ```topcount```  
 - ```topsum```  
 - ```toppercent```  
