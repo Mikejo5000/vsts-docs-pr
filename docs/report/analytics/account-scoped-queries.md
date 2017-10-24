@@ -11,7 +11,7 @@ ms.date: 11/15/2017
 
 #Account and project scope queries
 
-In a lot of cases, you want to query data from the given project, in other data across projects need to be combined. Narrow project-scope queries help answer questions about a single project. And at the same time, account-scope queries to satisfy more sophisticated requests.
+Project-scope queries help answer questions about a single project. And at the same time, account-scope queries allow you to answer questions which cross project boundaries. However, account scoped queries require broader user permissions or careful scoping scoping restrictions to ensure the query is not blocked with permissions for projects a user does not have access to.
 
 Base URL for account level queries:
 ```
@@ -114,7 +114,7 @@ Using ```$level``` is only supported if you have access to all projects in the c
 https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?$expand=Children($levels=2;$filter=ProjectName eq 'ProjectA')
 ```
 
-Analytics does not understand or support any cross level reference for projects using $it alias. As an example, this query is referencing the root work item’s ProjectName using $it alias which is unsupported:
+Analytics does not support any cross level reference for projects using $it alias. As an example, this query is referencing the root work item’s ProjectName using $it alias which is unsupported:
 
 ```
 https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?$expand=Links($expand=TargetWorkItem;$filter=TargetWorkItem/Project/ProjectName eq $it/Project/ProjectName)

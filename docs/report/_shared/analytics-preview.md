@@ -1,7 +1,7 @@
 
 > [!NOTE]  
 > **Feature availability**: The [Analytics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics) 
-> is available to all VSTS accounts and provides access to several useful  
+> is available to all VSTS accounts and provides access to several useful
 > widgets, such as [Cumulative Flow](../guidance/cumulative-flow.md), 
 > [Velocity](../guidance/team-velocity.md), and [Lead and Cycle Time](../guidance/cycle-time-and-lead-time.md). 
 > The Analytics OData endpoint, which provides a concise model over the 
