@@ -73,7 +73,7 @@ Since removal of the UserType field is a breaking change the field would not be 
 Each version of the OData API will go through three phases during it's lifecycle. 
 
 ### 1 - Preview
-All breaking changes will be combined and released together in future versions of the API. In order to make this functionality available as early as possible we will release new versions in **preview** mode. While a version is in preview mode breaking changes are still possible. There are no guarantees that what is in preview will make it to the released version.
+All breaking changes will be combined and released together in future versions of the API. In order to make this functionality available as early as possible we will release new versions in **preview** mode. Breaking changes are still possible while a version is in preview mode. There are no guarantees that what is in preview will be included in the released version.
 
 The preview of a version will be available for a minimum of 6 weeks after it is released.
 
