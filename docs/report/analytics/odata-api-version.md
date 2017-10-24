@@ -10,7 +10,7 @@ ms.date: 10/18/2017
 ---
 
 # OData API Versioning
-As the Analytics Service grows and changes we are dedicated to providing consistency and reliability to our users. To help meet these goals the Analytics Service provides a versioned OData API that users can trust will remain compatible with clients designed for those versions. Each version may be enhanced with additional functionality and non-breaking changes. Incompatible or breaking changes will be rolled into future versions of the API.
+As the Analytics Service grows and changes we are dedicated to providing consistency and reliability to our users. Therefore the Analytics Service provides a versioned OData API that will remain compatible with clients designed for those versions. Each version may be enhanced with additional functionality and non-breaking changes. Incompatible or breaking changes will be rolled into future versions of the API.
 
 The API version follows the _odata element in the request path and is formatted like **v1.0** or **v1.0-preview**.
 ```
@@ -22,7 +22,7 @@ The data model exposed by the Analytics Service defines the contract between the
 [OData Version 4.0 Part 5: Versioning](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752208)
 
 ### Example of non-breaking changes
-Consider a scenario where we add a new UserType property to the User entity.
+Consider a scenario where a new UserType property is added to the User entity.
 ```
 <EntityType Name="User">
     <Key>
@@ -48,7 +48,7 @@ Consider a scenario where we add a new UserType property to the User entity.
 This change is additive and could be made available in the current **v1.0** version.
 
 ### Example of breaking changes
-Now consider a scenario where we revert to the original structure of the User entity.
+Now consider a scenario where we revert to the original structure of the User entity, causing the removal of a previously available feature.
 ```
 <EntityType Name="User">
     <Key>
