@@ -164,6 +164,7 @@ VSTS is available in several Azure [regions](https://azure.microsoft.com/en-us/r
 |    Australia                    |    Australia East              |      EAU                    |
 |    South America                |    Brazil South                |      SBR                    |
 |    Asia Pacific                 |    South India                 |      MA                     |
+|    Asia Pacific                 |    East Asia (Hong Kong)       |      EA                     |
 |    Canada                       |    Central Canada              |      CC                     |
 
 ### Identity Map
@@ -189,8 +190,6 @@ The table below explains what each column is used for.
 
 
 > [!NOTE]   
-> Only the license assignment override field is editable. Other edits will not be respected and could cause a user to not be imported as active.
-> 
 > The UserPrincipalName[Target] column **CANNOT** be manually updated. Users marked as "NO MATCH" will need to be investigated with your AAD admin to see why they aren't part of your Azure AD Connect sync. 
 
 
@@ -199,8 +198,8 @@ The table below explains what each column is used for.
 |    User                             |    Friendly display name used by the identity in   TFS. Makes it easier to identify which user the line in the map is   referencing.                                                                                                                         |
 |    AD:SecurityIdentifier[Source]    |    The unique identifier for the on-prem AD identity   in TFS. This column is used to identify users in the collection.                                                                                                                                      |
 |    AAD:UserPrincipalName[Target]    |    The identifier for the matching AAD identity.   Entries in this column will show the identity that users will log into after   the migration. Everything belonging to the TFS identity will be remastered to   this AAD identity if the map is valid.                                                                                                                                                                |
-|    License                          |    Desired license the user should have after import.                                                                                                                                                                                                      |
-|    License Assignment Override      |    Used for overriding the value currently in the licensing column. See [overriding licensing](migration-advanced-topics.md) values for more details on using this column.                                                                                                                                                                                    |
+|    License                         |    Desired license the user should have after import.                                                                                                                                                                                                      |
+|    License Assignment Override (**Not Supported**)     |    This feature is no longer supported. Users will be given the best matching licenses in VSTS for free. These free license are good until the 1st of the next month. Licensing changes can be made post import in the users hub.                                                                                                                                                                                  |
 |    Status                           |    Indication of whether or not the identity mapped   on this line is valid or not.                                                                                                                                                                          |
 |    Validation Date                  |    Last time the identity map was validated.                                                                                                                                                                                                                 |
 
@@ -221,8 +220,6 @@ In the first two cases the desired on-premises AD identity will need to be set u
 For the second and third case, the row can be left or removed from the file. The end result will be the same case - a historical identity. It's recommended that you reduce the mapping file down to just the set of identities that you wish be active after import, for simplicity and readability. 
 
 > The UserPrincipalName[Target] column **CANNOT** be manually updated. Users marked as "NO MATCH" will need to be investigated with your AAD admin to see why they aren't part of your directory sync. 
-
-License assignments populated by TfsMigrator's Prepare command can be overriden. Please see [overriding licensing](migration-advanced-topics.md) values for more details on how to change the assignments.
 
 #### No Matched Identities 
 
@@ -332,7 +329,7 @@ Setting up a SQL Azure VM can be done from the Azure portal with just a few clic
 
 VSTS is available in several Azure [regions](https://azure.microsoft.com/en-us/regions/services/) across the globe. When importing to these regions it's critical that you place your data in the correct region to ensure that the import can start correctly. Setting up your SQL Azure VM in a location other than the ones recommended below will result in the import failing to start.
 
-Use the table below to decide where you should create you SQL Azure VM if you're using this method to import.
+Use the table below to decide where you should create you SQL Azure VM if you're using this method to import. Creating your VM in a region outside of the list below is not supported for running an import.
 
 |    Desired Import Region        |    SQL Azure VM Region         |
 |---------------------------------|--------------------------------|
@@ -341,6 +338,7 @@ Use the table below to decide where you should create you SQL Azure VM if you're
 |    Australia East               |    Australia East              |
 |    Brazil South                 |    Brazil South                |
 |    South India                  |    South India                 |
+|    East Asia (Hong Kong)        |    East Asia                   |
 |    Central Canada               |    Central Canada              |
 
 > While VSTS is available in multiple regions in the United States, only the Central United States region is accepting new VSTS accounts. Customers will not be able to import their data into other United States Azure regions at this time. 
@@ -367,13 +365,17 @@ First, no matter what VSTS region you import into the following IP must be grant
 |-------------------------------------------|---------------------|
 |    VSTS Identity Service                  |    168.62.105.45    |
 
-Next you will need to grant access to the TFS Database Import Service itself. Customers in Europe and the United States should select the service which is in their own region from the below table. Customers importing to locations outside of the United States and Europe must add an exception for the United States instance.   
+Next you will need to grant access to the TFS Database Import Service itself. You only need to grant an exception for the Import Service instance in the region that you're importing into. Other regions can be ignored.  
 
-|    Service                                               |    IP               |
-|----------------------------------------------------------|---------------------|
-|    Database Import Service - West Europe                 |    40.115.43.138    |
-|    Database Import Service - Central United States       |    52.173.74.9      |
-|    Database Import Service - South Central United States |    40.124.13.10     |
+|    Service                                      |    IP               |
+|-------------------------------------------------|---------------------|
+|    Import Service - Central United States       |    52.173.74.9      |
+|    Import Service - West Europe                 |    40.115.43.138    |
+|    Import Service - Australia East              |    52.173.74.9      |
+|    Import Service - Brazil South                |    TBD              |
+|    Import Service - South India                 |    TBD              |
+|    Import Service - East Asia (Hong Kong)       |    TBD              |
+|    Import Service - Central Canada              |    TBD              |
   
 Then you will need to grant access to the VSTS instances in the region that you're importing into. 
 
@@ -399,14 +401,19 @@ If you're importing into Australia East you will need to grant access for the fo
 
 |    Service                                |    IP               |
 |-------------------------------------------|---------------------|
-|    VSTS - Australia East                  |    191.239.82.211   |
+|    VSTS - Australia East                  |    13.75.145.145    |
 
-If you're importing into South Brazil you will need to grant access for the following IPs:
+If you're importing into South Brazil you will need to grant access for the following IP:
 
 |    Service                                |    IP               |
 |-------------------------------------------|---------------------|
-|    VSTS - South Brazil 1                  |    191.232.37.247   |
-|    VSTS - South Brazil 2                  |    13.75.145.145    |
+|    VSTS - South Brazil                    |    191.232.37.247   |
+
+If you're importing into East Asia (Hong Kong) you will need to grant access for the following IP:
+
+|    Service                                |    IP               |
+|-------------------------------------------|---------------------|
+|    VSTS - East Asia                       |    TBD              |
 
 Your SQL Azure VM should now be set up to allow your data to be imported to VSTS. Follow the rest of the steps below to queue your import. 
 
@@ -444,7 +451,6 @@ CREATE USER fabrikam FOR LOGIN fabrikam WITH DEFAULT_SCHEMA=[dbo]
 EXEC sp_addrolemember @rolename='TFSEXECROLE', @membername='fabrikam'
 ```
 
-
 #### Configure the Import Specification File to Target the VM
 The import specification file will need to be updated to include information on how to connect to the SQL instance. Open your import specification file and make the following updates:
 
@@ -473,8 +479,6 @@ Following the Fabrikam example, the import specification would look like the fol
 
 Your import specification is now configured to use a SQL Azure VM for import! Proceed with the rest of preparation steps to import to VSTS. Once the import has completed be sure to delete the SQL login or rotate the password. Microsoft does not hold onto the login information once the import has completed. 
 
-
-
 ### Uploading the DACPAC and Import Files
 
 > [!NOTE]   
@@ -482,32 +486,32 @@ Your import specification is now configured to use a SQL Azure VM for import! Pr
 
 All of the files required to run the import need to be placed in an Azure storage container. This can be an existing container or one created specifically for your migration effort. It is important to ensure your container is created in the right region.
 
-VSTS is available in multiple [regions](https://azure.microsoft.com/en-us/regions/services/). When importing to these regions it's critical that you place your data in the correct region to ensure that the import can start correctly. Place your data in a location other than the ones recommended below will result in the the import failing to start. 
+VSTS is available in multiple [regions](https://azure.microsoft.com/en-us/regions/services/). When importing to these regions it's critical that you place your data in the correct region to ensure that the import can start successfully. Your data needs to be placed into the same region that you will be importing into. Placing it somewhere else will result in the import being unable to start. The below table covers the acceptable regions to create your storage account and upload your data.
  
 
 |    Desired Import Region        |    Storage Account Region      |
 |---------------------------------|--------------------------------|
 |    Central United States        |    Central United States       |
 |    Western Europe               |    Western Europe              |
-|    Australia East               |    Central United States       |
-|    Brazil South                 |    Central United States       |
-|    South India                  |    Central United States       |
+|    Australia East               |    Australia East              |
+|    Brazil South                 |    Brazil South                |
+|    South India                  |    South India                 |
+|    East Asia (Hong Kong)        |    East Asia                   | 
+|    Central Canada               |    Central Canada              |
 
 While VSTS is available in multiple regions in the United States, only the Central United States region is accepting new VSTS. Customers will not be able to import their data into other United States Azure regions at this time.  
 
-> Customers outside of the United States and Europe will need to place their data in Central United States. This is temporary as we work to put instances of the TFS Database Import Service in those countries. Your data will still be imported into your desired import region.
-
-[Creating a container](https://docs.microsoft.com/azure/storage/common/storage-create-storage-account) can be done from the Azure portal. Once the container has been created you will need to upload the following files:
+[Creating a blob container](https://docs.microsoft.com/azure/storage/common/storage-create-storage-account) can be done from the Azure portal. Once the container has been created you will need to upload the following files:
 
 * Identity Map CSV 
 * Collection DACPAC 
 
+After the import has been completed you can delete the blob container and accompanying storage account.
 
 This can be accomplished using tools like [AzCopy](https://azure.microsoft.com/en-us/documentation/articles/storage-use-azcopy/) or any other Azure storage [explorer tool](https://storageexplorer.com/). 
 
 > [!NOTE]   
 > If your DACPAC is larger then 10GB then it's recommended that you use AzCopy. AzCopy has multi-threaded upload support for faster uploads.
-
 
 ### Generating SAS Key
 A Shared Access Signature ([SAS](https://azure.microsoft.com/en-us/documentation/articles/storage-dotnet-shared-access-signature-part-1/)) Key provides delegated access to resources in a storage account. This allows you to give Microsoft the lowest level of privilege required to access your data for executing the import. 
@@ -567,14 +571,10 @@ Be sure to check out the [post import](.\migration-post-import.md) documentation
 ## Running an Import
 The great news is that your team is now ready to begin the process of running an import. It's recommended that your team start with a dry run import and then finally a production run import. Dry run imports allow your team to see how the end results of an import will look, identify potential issues, and gain experience before heading into your production run. 
 
-### Considerations for Roll Back Planning
-A common concern that teams have for the final production run is to think through what the rollback plan will be if anything goes wrong with import. This is also why we highly recommend doing a dry run to make sure you are able to test the import settings and identity map that you provide to the TFS Database Import Service.
-
-Rollback for the final production run is fairly simple. Before you queue the import, you will be detaching the team project collection from Team Foundation Server which will make it unavailable to your team members. If for any reason, you need to roll back the production run and have Team Foundation Server come back online for your team members, you can simply attach the team project collection on-premises again and inform your team that they will continue to work as normal while your team regroups to understand any potential failures.
-
 ### Queueing an Import
 
-> **Important**: Before proceeding, ensure that your collection was [detached](migration-import.md#detaching-your-collection) prior to generating a DACPAC or uploading the collection database to a SQL Azure VM. If you didn't complete this step the import will fail. 
+> [!IMPORTANT] 
+> Before proceeding, ensure that your collection was [detached](migration-import.md#detaching-your-collection) prior to generating a DACPAC or uploading the collection database to a SQL Azure VM. If you didn't complete this step the import will fail. 
 
 Starting an import is done by using TfsMigrator's import command. The import command takes an import specification file as input. It will parse through the file to ensure the values which have been provided are valid, and if successful, it will queue an import to VSTS. The import command requires an internet connection, but does **NOT** require a connection to your TFS server. 
 
@@ -597,5 +597,8 @@ TfsMigrator import /importFile:C:\TFSDataImportFiles\import.json
 ```
 
 Once the validation passes you will be asked to sign into to AAD. It’s important that you sign in with an identity that is a member of the same AAD as the identity mapping file was built against. The user that signs in will become the owner of the imported account. 
+
+> [!NOTE]
+> Customers are limited to 5 imports against a single AAD tenant per 24 hour period
 
 After the import starts the user that queued the import will receive an email. Shortly after that the team will be able to navigate to the import account to check on the status. Once the import completes your team will be directed to sign in. The owner of the account will also receive an email when the import finishes. 

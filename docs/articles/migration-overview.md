@@ -27,6 +27,15 @@ The TFS Database Import Service supports the two latest releases of TFS at a giv
 
 Normal release cadence for new TFS versions is once every three-to-four months. Meaning that support for a given version of TFS for migration to VSTS should last for anywhere between six-to-eight months. It’s important to ensure that your planning accounts for this support window to avoid having to suddenly upgrade to migrate. 
 
+## Preview Features
+The following features can be included with your import, but are currently in a preview state. 
+
+* [Release Management](https://www.visualstudio.com/team-services/release-management/)
+
+When queueing an import you can elect to include preview features with your import. If you do, data related to these features will be copied into your new VSTS account along with all your other data. Should you choose to not include these features then their data will not be copied.
+
+For a list of items not included with an import please see the [migration guide](https://aka.ms/TFSDataImport).
+
 ## TFS Database Import Service Resources
 
 In general you should use the [migration guide](https://aka.ms/TFSDataImport) when going through an import. When it's required the guide links back to the below documentation. These articles offer deeper technical knowledge on various import topics. 
@@ -42,7 +51,6 @@ In general you should use the [migration guide](https://aka.ms/TFSDataImport) wh
 * [Troubleshooting validation errors](.\migration-troubleshooting.md)
 * [Troubleshooting process errors](.\migration-processtemplates.md#dealing-with-process-errors)
 * [Troubleshooting import errors](.\migration-troubleshooting.md#dealing-with-import-errors)
-
 
 
 ## FAQ
