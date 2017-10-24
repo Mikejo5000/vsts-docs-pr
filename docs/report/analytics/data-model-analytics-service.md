@@ -1,57 +1,85 @@
 ---
 title: Data model for the Analytics Service for VSTS  
-description: Describes the data sets, counts and calculated measures provided with the Analytics service for Visual Studio Team Services (VSTS) 
+description: Describes the data entities and relationships provided by the Analytics service for Visual Studio Team Services (VSTS) 
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
 ms.assetid: 032FB76F-DC43-4863-AFC6-F8D67963B177  
-ms.manager: douge
-ms.author: kaelli
-ms.date: 08/04/2017
+ms.manager: trevorc
+ms.author: davigust
+ms.date: 10/20/2017
 ---
 
-# Data model for the Analytics service  
+# Data model for the Analytics Service  
 
 **VSTS**  
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
 
-The Analytics service data model consists of data sets, counts, and measures, as well as how data sets relate to each other.  
+The Analytics service data model consists of entity sets, whose members (entities) contains properties that can be filtered, aggregated, and summarized.  Additionally, they contain [navigation properties](http://www.odata.org/getting-started/basic-tutorial/#relationship) that relate entities to one other, providing access to additional properties for selecting, filtering, and grouping.
 
 ##Entities  
 
 >[!NOTE]  
->Information listed may differ from the entities shown as```https://{account}.analytics.visualstudio.com/_odata/v1.0-preview/$metadata```.  
+>Entities are described in OData metadata, and vary by VSTS project. A complete list of entity sets, entity types, and properties can be discovered by requesting the OData metadata for your project: ```https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata```  
 
-The entities support by the data model are as follows:  
+The data model contains the following entity sets:  
 
-| Entity | Description|  
+| EntitySet | Description|  
 |--------|------------|  
-|Areas | A discrete list of area paths |  
-|BoardLocations | A discrete list of Kanban board columns |  
-|Dates | A date table for use in retrieving dates in a specific format (or filtering by dates) on related entities|  
-|Iterations | A discrete list of iteration paths|  
-|Projects | Contains a list of all of the projects|  
-|Tags | A discrete list of tags related to work items|  
-|Teams | Contains a list of all teams|  
-|WorkItemBoardSnapshot | A list of all revisions for all work items (including the current revision)|  
-|WorkItemLeadTime |  |  
-|WorkItemLinks | Contains link information (all types are supported) for work items only (no hyperlinks for example)|  
-|WorkItemRevisions | A list of all revisions for all work items (including the current revision)|  
-|WorkItemLinks | Contains link information (all types are supported) for work items only (no hyperlinks for example)|  
-|WorkItems | The current list of work items|  
-|WorkItemSnapshot | The state of each work item on each calendar. Use this entity for trend reporting. |  
-|Users | A discrete list of users related to various work item fields (i.e. assigned to, created by, etc.)|  
+|Areas | The work item area paths, with properties for grouping and filtering by area hierarchy |  
+|Iterations | The work item iteration paths, with properties for grouping and filtering by iteration hierarchy |  
+|BoardLocations | The Kanban board cell locations, as identified by board column, lane, and split - includes historic board settings|  
+|Dates | The dates used to filter and group other entities using relationships |  
+|Projects | All VSTS projects|  
+|Tags | All work item tags for each project|  
+|Teams | All VSTS teams|  
+|Users | User information - used to expand or filter various work item properties (e.g. Assigned To, Created By)|  
+|WorkItems | The current state of work items|  
+|WorkItemLinks | The links between work items (e.g. child, parent, related) - includes history of links - hyperlinks not included  
+|WorkItemRevisions | All historic work item revisions, including the current revision - does not include deleted work items|  
+|WorkItemSnapshot | (Composite) The state of each work item on each calendar date - used for trend reporting|  
+|WorkItemBoardSnapshot | (Composite) The state of each work item on each calendar date, including Kanban board location - used for trend reporting|  
+|WorkItemTypeFields | The work item properties for each work item type and process - used for report building|  
 
+##Composite Entities
+
+Some entities are composed from other simpler entities. Often these entities require more computing resources to generate and may return larger result sets. These composite entities are designed to specific scenarios. Take care to query the correct entity for your scenario, to achieve the best performance and avoid unnecessary throttling.
+
+For example, WorkItemSnapshot combines WorkItemRevisions and Dates such that each date has one revision for each work item. This representation is useful for OData queries that want trend data for a filtered set of work items. However, this entity should not be used to query the current state of work items. Such a query would run more quickly using the WorkItems entity set.
+
+Similarly, some entities may contain all historic values, while others may only contain current values. WorkItemRevision contains all work item history, and should not be used in scenarios where the current values are of interest.
 
 ##Relationships
 
-The entity model for this is fairly complex and is difficult to understand without an interactive model. This is because entities play
-different roles depending on the starting point. For example, a Project contains Teams, Areas and Iterations. However, Teams also "own" a subset of these Iterations and Areas and they can overlap a given team. 
+Entities can be combined using relationships to generate more complex query results. Relationships can be followed when expanding, filtering, or summarizing data.
 
-The following image proves a snapshot of the current data model; only keys and navigation properties are shown here.
+Some navigation properties result in a single entity, while others result in a collection of entities. In the following diagram, entities and their navigation properties are shown.  For clarity, some composite entities and relationships have been omitted.
 
 ![Analytics Service Data Model](_img/datamodel.png)
+
+##Relationship Keys
+
+ Entity relationships are also represented as foreign keys so that external tools can join entities. These properties have the suffix "SK", and are either integer or GUID data types. Date properties have corresponding integer date key properties with the following format: YYYYMMDD
+
+##Entity Properties
+
+The WorkItemRevision entity can contain hundreds of properties. The sample below is a partial list, to illustrate some commonly found properties:
+
+| Property | Type | Description|  
+|--------|------------|------------|  
+|WorkItemRevisionSK | Int32 | The VSTS Analytics unique key for the work item revision - used by external tools to join related entities |  
+|WorkItemId | Int32 | The VSTS id for the work item |  
+|Revision | Int32 | The revision of the work item |  
+|Title | String | The work item title |
+|WorkItemType | String | The work item type (e.g. Bug, Task, User Story) |
+|StoryPoints | Double | The points assigned to this work item - commonly aggregated as a sum
+| Tags | Navigation | Navigation property to a Tag entity collection. Commonly used in ```$expand``` statements to access the Name property for multiple work item tags.
+|CreatedDate | DateTimeOffset | The date the work item was created, expressed in the time zone for the account. Commonly used for filtering and for display.
+|CreatedDateSK | Int32 | The date the work item was created, expressed as YYYYMMDD in the time zone for the account. Used by external tools to join related entities.
+|CreatedOn | Navigation | Navigation property to the Date entity for the date the work item was created, in the time zone for the account. Commonly used to reference properties from the Date entity in ```groupby``` statements.
+
+The last three properties here show that the same value is often expressed in multiple properties, each designed for different scenarios.
 
 
 ##Related notes 
