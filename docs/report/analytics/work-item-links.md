@@ -15,199 +15,252 @@ ms.date: 08/11/2016
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
-Querying work items across links is similar to any other operation across related entities in OData, but
-because of the different link types there can be some added complexities.
+Querying work items across links is much like using typical navigation properties. Links themselves are entities though, so there is some additional complexity.
 
-There are two ways to query links - the first is using the hierarchichal navigation capabilities provided
-by Children and Parent.
+There are two ways to query for linked items. The first is the Parent/Child hierarchy, and the second is the Links navigation property. The sections below cover each approach.
 
-## Parent to child queries
+## Parent/Child hierarchy
+You can include items related through Parent/Child links by using ```$expand``` on the Parent and Children properties.
 
+### Example: Parent to child query
+To return information about an item's children use ```$expand``` on the **Children** navigation property.
+
+Request
 ```
-https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0-preview/WorkItems?$select=WorkItemId,Title,State&$expand=Children($select=WorkItemId,Title,State)&$filter=WorkItemId eq [ID #]
+https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$select=WorkItemId,Title,State&$expand=Children($select=WorkItemId,Title,State)&$filter=WorkItemId eq 103
 ```
 
-This query is querying the work items, and expanding the children (and work items linked to the work item being filtered with a parent/child
-relationships). It filters the query so only one root work item is returned. The query result looks like this:
-
-```
+Response
+```JSON
 {
-  "@odata.context":"https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0-preview/$metadata#WorkItems(WorkItemId,Title,State,Children,Children(WorkItemId,Title,State))","value":[
-    {
-      "WorkItemId":103,"Title":"Feature Y","State":"New","Children":[
-        {
-          "WorkItemId":48,"Title":"Story 15","State":"Resolved"
-        },{
-          "WorkItemId":50,"Title":"Story 17","State":"New"
-        },{
-          "WorkItemId":55,"Title":"Story 22","State":"New"
-        }
-      ]
-    }
-  ]
+	"@odata.context": "https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItems(WorkItemId,Title,State,Children,Children(WorkItemId,Title,State))",
+	"value": [{
+		"WorkItemId": 103,
+		"Title": "Feature Y",
+		"State": "New",
+		"Children": [{
+			"WorkItemId": 48,
+			"Title": "Story 15",
+			"State": "Resolved"
+		}, {
+			"WorkItemId": 50,
+			"Title": "Story 17",
+			"State": "New"
+		}, {
+			"WorkItemId": 55,
+			"Title": "Story 22",
+			"State": "New"
+		}]
+	}]
 }
 ```
 
-However, as you might be wondering - a hierarchy can have multiple leves - how do I get all of them?
-Modify the query above so that it looks like this:
+### Example: Multiple levels of hierarchy
+You can retrieve all descendants of your work items by using the ```$levels``` option in your request. The ```$levels``` option allows you to control how deep the service will go when retrieving child items. In this example, **max** actually equates to ```$levels=5``` but you may substitute other values. 
 
+>[!NOTE]  
+>The ```$levels``` option only works for recursive relationships.
+
+Request
 ```
-https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0-preview/WorkItems?$select=WorkItemId,Title,State&$expand=Children($select=WorkItemId,Title,State;$levels=max)&$filter=WorkItemId eq 103
+https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$select=WorkItemId,Title,State&$expand=Children($select=WorkItemId,Title,State;$levels=max)&$filter=WorkItemId eq 103
 ```
 
-There is only one change in this query - **;$levels=max** in the children clause. This will cause the entire hieararchy to
-be returned (**max** actually equates to $levels=5 in this case). This means that you can control how many levels of data are
-returned. The results of this query look like the following:
-
-```
+Response
+```JSON
 {
-  "@odata.context":"https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0-preview/$metadata#WorkItems(WorkItemId,Title,State,Children,Children(WorkItemId,Title,State,Children,Children(WorkItemId,Title,State)))","value":[
-    {
-      "WorkItemId":103,"Title":"Feature Y","State":"New","Children":[
-        {
-          "WorkItemId":48,"Title":"Story 15","State":"Resolved","Children":[
-            {
-              "WorkItemId":104,"Title":"Task A","State":"New"
-            }
-          ]
-        },{
-          "WorkItemId":50,"Title":"Story 17","State":"New","Children":[
-            
-          ]
-        },{
-          "WorkItemId":55,"Title":"Story 22","State":"New","Children":[
-            {
-              "WorkItemId":105,"Title":"Task B","State":"New"
-            }
-          ]
-        }
-      ]
-    }
-  ]
+	"@odata.context": "https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItems(WorkItemId,Title,State,Children,Children(WorkItemId,Title,State,Children,Children(WorkItemId,Title,State)))",
+	"value": [{
+		"WorkItemId": 103,
+		"Title": "Feature Y",
+		"State": "New",
+		"Children": [{
+			"WorkItemId": 48,
+			"Title": "Story 15",
+			"State": "Resolved",
+			"Children": [{
+				"WorkItemId": 104,
+				"Title": "Task A",
+				"State": "New"
+			}]
+		}, {
+			"WorkItemId": 50,
+			"Title": "Story 17",
+			"State": "New",
+			"Children": []
+		}, {
+			"WorkItemId": 55,
+			"Title": "Story 22",
+			"State": "New",
+			"Children": [{
+				"WorkItemId": 105,
+				"Title": "Task B",
+				"State": "New"
+			}]
+		}]
+	}]
 }
 
 ```
 
-Notice that two of the stories now have child tasks being shown.
+Notice that the "Story 15" and "Story 22" items now include their child items.
 
-**Note** that $levels only works for recursive relationships and not flat or directed work item links.**
+### Example: Child to parent query
 
-##Child to parent queries
+By replacing **Children** with **Parent** in the ```$expand``` option you can retrieve an item's ancestry.
 
-Modify the previous query to this:
-
+Request
 ```
-https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0-preview/WorkItems?$select=WorkItemId,Title,State&$expand=Parent($select=WorkItemId,Title,State;$levels=max)&$filter=WorkItemId eq 105
+https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$select=WorkItemId,Title,State&$expand=Parent($select=WorkItemId,Title,State;$levels=max)&$filter=WorkItemId eq 105
 ```
 
-See the difference? Change **Children** to **Parent** and replace the ID with the ID of a task. The results are as follows:
-
-```
+Response
+```JSON
 {
-  "@odata.context":"https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0-preview/$metadata#WorkItems(WorkItemId,Title,State,Parent,Parent(WorkItemId,Title,State,Parent,Parent(WorkItemId,Title,State)))","value":[
-    {
-      "WorkItemId":105,"Title":"Task B","State":"New","Parent":{
-        "WorkItemId":55,"Title":"Story 22","State":"New","Parent":{
-          "WorkItemId":103,"Title":"Feature Y","State":"New"
-        }
-      }
-    }
-  ]
+	"@odata.context": "https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItems(WorkItemId,Title,State,Parent,Parent(WorkItemId,Title,State,Parent,Parent(WorkItemId,Title,State)))",
+	"value": [{
+		"WorkItemId": 105,
+		"Title": "Task B",
+		"State": "New",
+		"Parent": {
+			"WorkItemId": 55,
+			"Title": "Story 22",
+			"State": "New",
+			"Parent": {
+				"WorkItemId": 103,
+				"Title": "Feature Y",
+				"State": "New"
+			}
+		}
+	}]
 }
 ```
 
-##Non-hierarchical link query
+## Non-hierarchical links
+In addition to the Parent/Child hierarchy items can be directly related to other items with link types like *Related* or *Duplicate*. The **Links** navigation property allows you to request these relationships.
 
-The Parent/Child hierarchy is one way to bring back information. The analytics serivce also provides the ability to return
-directed links and to mix and match the data that is returned using the **Links** navigation property.
+### Example: Request an item's links
+To retrieve the links associated with an item you may ```$expand``` the **Links** navigation property.
 
-##Get link info query 
-
-This query will return all of the links (not work items on the other end of those links) for a work item:
-
+Request
 ```
-https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0-preview/WorkItems?$select=WorkItemId,Title,WorkItemType,State&$filter=WorkItemId%20eq%20103&$expand=Links
+https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$select=WorkItemId,Title,WorkItemType,State&$filter=WorkItemId%20eq%20103&$expand=Links($select=SourceWorkItemId,TargetWorkItemId,LinkTypeName)
 ```
 
-This results in the following:
-
-```
+Response
+```JSON
 {
-  "@odata.context":"https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0-preview/$metadata#WorkItems(WorkItemId,Title,WorkItemType,State,Links)","value":[
-    {
-      "WorkItemId":103,"Title":"Feature Y","WorkItemType":"Feature","State":"New","Links":[
-        {
-          "SourceWorkItemId":103,"TargetWorkItemId":48,"CreatedDate":"2016-01-14T16:30:56.287Z","DeletedDate":null,"Comment":"","LinkTypeId":2,"LinkTypeReferenceName":"System.LinkTypes.Hierarchy-Forward","LinkTypeName":"Child","LinkTypeIsAcyclic":true,"LinkTypeIsDirectional":true
-        },{
-          "SourceWorkItemId":103,"TargetWorkItemId":50,"CreatedDate":"2016-01-14T16:30:50.277Z","DeletedDate":null,"Comment":"","LinkTypeId":2,"LinkTypeReferenceName":"System.LinkTypes.Hierarchy-Forward","LinkTypeName":"Child","LinkTypeIsAcyclic":true,"LinkTypeIsDirectional":true
-        },{
-          "SourceWorkItemId":103,"TargetWorkItemId":55,"CreatedDate":"2016-01-14T16:30:53.867Z","DeletedDate":null,"Comment":"","LinkTypeId":2,"LinkTypeReferenceName":"System.LinkTypes.Hierarchy-Forward","LinkTypeName":"Child","LinkTypeIsAcyclic":true,"LinkTypeIsDirectional":true
-        },{
-          "SourceWorkItemId":103,"TargetWorkItemId":112,"CreatedDate":"2016-03-03T17:17:46.023Z","DeletedDate":null,"Comment":"","LinkTypeId":1,"LinkTypeReferenceName":"System.LinkTypes.Related-Forward","LinkTypeName":"Related","LinkTypeIsAcyclic":false,"LinkTypeIsDirectional":false
-        }
-      ]
-    }
-  ]
+	"@odata.context": "https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItems(WorkItemId,Title,WorkItemType,State,Links(SourceWorkItemId,TargetWorkItemId,LinkTypeName))",
+	"value": [{
+		"WorkItemId": 103,
+		"Title": "Feature Y",
+		"WorkItemType": "Feature",
+		"State": "New",
+		"Links": [{
+			"SourceWorkItemId": 103,
+			"TargetWorkItemId": 48,
+			"LinkTypeName": "Child"
+		}, {
+			"SourceWorkItemId": 103,
+			"TargetWorkItemId": 50,
+			"LinkTypeName": "Child"
+		}, {
+			"SourceWorkItemId": 103,
+			"TargetWorkItemId": 55,
+			"LinkTypeName": "Child"
+		}, {
+			"SourceWorkItemId": 103,
+			"TargetWorkItemId": 112,
+			"LinkTypeName": "Related"
+		}]
+	}]
+}
+```
+### Example: Request details of linked items
+The previous query only retrieves details on the links between items. You may include the details of your linked items by using ```$expand``` on the **TargetWorkItem** navigation property.
+
+Request
+```
+https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$select=WorkItemId,Title,WorkItemType,State&$filter=WorkItemId%20eq%20103&$expand=Links($select=SourceWorkItemId,TargetWorkItemId,LinkTypeName;$expand=TargetWorkItem($select=WorkItemId,Title,State))
+```
+
+Response
+```JSON
+{
+	"@odata.context": "https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItems(WorkItemId,Title,WorkItemType,State,Links(SourceWorkItemId,TargetWorkItemId,LinkTypeName,TargetWorkItem(WorkItemId,Title,State)))",
+	"value": [{
+		"WorkItemId": 103,
+		"Title": "Feature Y",
+		"WorkItemType": "Feature",
+		"State": "New",
+		"Links": [{
+			"SourceWorkItemId": 103,
+			"TargetWorkItemId": 48,
+			"LinkTypeName": "Child",
+			"TargetWorkItem": {
+				"WorkItemId": 48,
+				"Title": "Story 15",
+				"State": "Resolved"
+			}
+		}, {
+			"SourceWorkItemId": 103,
+			"TargetWorkItemId": 50,
+			"LinkTypeName": "Child",
+			"TargetWorkItem": {
+				"WorkItemId": 50,
+				"Title": "Story 17",
+				"State": "Active"
+			}
+		}, {
+			"SourceWorkItemId": 103,
+			"TargetWorkItemId": 55,
+			"LinkTypeName": "Child",
+			"TargetWorkItem": {
+				"WorkItemId": 55,
+				"Title": "Story 22",
+				"State": "New"
+			}
+		}, {
+			"SourceWorkItemId": 103,
+			"TargetWorkItemId": 112,
+			"LinkTypeName": "Related",
+			"TargetWorkItem": {
+				"WorkItemId": 112,
+				"Title": "Some issue",
+				"State": "Active"
+			}
+		}]
+	}]
 }
 ```
 
-This is probably not exactly what you need or wanted, but it's a start that can be built upon. In order to get the work items on the
-other end of those links, you can expand the links one more level by doing the following:
+### Example: Links of a specific type
+You may also be interested in a particular type of link between items, in which case the **LinkTypeName** property can be used in a ```$filter```. This query expands all 'Related' links and filters out all other link types.
 
+Request
 ```
-https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0-preview/WorkItems?$select=WorkItemId,Title,WorkItemType,State&$filter=WorkItemId%20eq%20103&$expand=Links($expand=TargetWorkItem($select=WorkItemId,Title,State))
+https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$select=WorkItemId,Title,WorkItemType,State&$filter=WorkItemId eq 103&$expand=Links($select=SourceWorkItemId,TargetWorkItemId,LinkTypeName;$filter=LinkTypeName eq 'Related';$expand=TargetWorkItem($select=WorkItemId,Title,State))
 ```
 
-By expanding the Links on the TargetWorkItem navigation property you end up with this result:
-
-```
+Response
+```JSON
 {
-  "@odata.context":"https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0-preview/$metadata#WorkItems(WorkItemId,Title,WorkItemType,State,Links,Links(TargetWorkItem(WorkItemId,Title,State)))","value":[
-    {
-      "WorkItemId":103,"Title":"Feature Y","WorkItemType":"Feature","State":"New","Links":[
-        {
-          "SourceWorkItemId":103,"TargetWorkItemId":48,"CreatedDate":"2016-01-14T16:30:56.287Z","DeletedDate":null,"Comment":"","LinkTypeId":2,"LinkTypeReferenceName":"System.LinkTypes.Hierarchy-Forward","LinkTypeName":"Child","LinkTypeIsAcyclic":true,"LinkTypeIsDirectional":true,"TargetWorkItem":{
-            "WorkItemId":48,"Title":"Story 15","State":"Resolved"
-          }
-        },{
-          "SourceWorkItemId":103,"TargetWorkItemId":50,"CreatedDate":"2016-01-14T16:30:50.277Z","DeletedDate":null,"Comment":"","LinkTypeId":2,"LinkTypeReferenceName":"System.LinkTypes.Hierarchy-Forward","LinkTypeName":"Child","LinkTypeIsAcyclic":true,"LinkTypeIsDirectional":true,"TargetWorkItem":{
-            "WorkItemId":50,"Title":"Story 17","State":"Active"
-          }
-        },{
-          "SourceWorkItemId":103,"TargetWorkItemId":55,"CreatedDate":"2016-01-14T16:30:53.867Z","DeletedDate":null,"Comment":"","LinkTypeId":2,"LinkTypeReferenceName":"System.LinkTypes.Hierarchy-Forward","LinkTypeName":"Child","LinkTypeIsAcyclic":true,"LinkTypeIsDirectional":true,"TargetWorkItem":{
-            "WorkItemId":55,"Title":"Story 22","State":"New"
-          }
-        },{
-          "SourceWorkItemId":103,"TargetWorkItemId":112,"CreatedDate":"2016-03-03T17:17:46.023Z","DeletedDate":null,"Comment":"","LinkTypeId":1,"LinkTypeReferenceName":"System.LinkTypes.Related-Forward","LinkTypeName":"Related","LinkTypeIsAcyclic":false,"LinkTypeIsDirectional":false,"TargetWorkItem":{
-            "WorkItemId":112,"Title":"Some issue","State":"Active"
-          }
-        }
-      ]
-    }
-  ]
-}
-```
-
-Next, is the ability to query only on specific links. To do this, modify the above query as follows:
-
-```
-https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0-preview/WorkItems?$select=WorkItemId,Title,WorkItemType,State&$filter=WorkItemId%20eq%20103&$expand=Links($filter=LinkTypeName eq 'Related';$expand=TargetWorkItem($select=WorkItemId,Title,State))
-```
-
-This query returns only the work items linked with the **Related** link type as shown here:
-
-```
-{
-  "@odata.context":"https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0-preview/$metadata#WorkItems(WorkItemId,Title,WorkItemType,State,Links,Links(TargetWorkItem(WorkItemId,Title,State)))","value":[
-    {
-      "WorkItemId":103,"Title":"Feature Y","WorkItemType":"Feature","State":"New","Links":[
-        {
-          "SourceWorkItemId":103,"TargetWorkItemId":112,"CreatedDate":"2016-03-03T17:17:46.023Z","DeletedDate":null,"Comment":"","LinkTypeId":1,"LinkTypeReferenceName":"System.LinkTypes.Related-Forward","LinkTypeName":"Related","LinkTypeIsAcyclic":false,"LinkTypeIsDirectional":false,"TargetWorkItem":{
-            "WorkItemId":112,"Title":"Some issue","State":"Active"
-          }
-        }
-      ]
-    }
-  ]
+	"@odata.context": "https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItems(WorkItemId,Title,WorkItemType,State,Links(SourceWorkItemId,TargetWorkItemId,LinkTypeName,TargetWorkItem(WorkItemId,Title,State)))",
+	"value": [{
+		"WorkItemId": 103,
+		"Title": "Feature Y",
+		"WorkItemType": "Feature",
+		"State": "New",
+		"Links": [{
+			"SourceWorkItemId": 103,
+			"TargetWorkItemId": 112,
+			"LinkTypeName": "Related",
+			"TargetWorkItem": {
+				"WorkItemId": 112,
+				"Title": "Some issue",
+				"State": "Active"
+			}
+		}]
+	}]
 }
 ```
