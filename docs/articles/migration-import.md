@@ -360,60 +360,37 @@ It's highly recommended that you restrict access to your VM to only IPs from VST
 
 First, no matter what VSTS region you import into the following IP must be granted access to your collection database. 
 
-
 |    Service                                |    IP               |
 |-------------------------------------------|---------------------|
 |    VSTS Identity Service                  |    168.62.105.45    |
 
-Next you will need to grant access to the TFS Database Import Service itself. You only need to grant an exception for the Import Service instance in the region that you're importing into. Other regions can be ignored.  
+Next you will need to grant access to the TFS Database Import Service itself. You only need to grant an exception for the Import Service instance in the region that you're importing into.  
 
 |    Service                                      |    IP               |
 |-------------------------------------------------|---------------------|
 |    Import Service - Central United States       |    52.173.74.9      |
 |    Import Service - West Europe                 |    40.115.43.138    |
-|    Import Service - Australia East              |    52.173.74.9      |
-|    Import Service - Brazil South                |    TBD              |
-|    Import Service - South India                 |    TBD              |
-|    Import Service - East Asia (Hong Kong)       |    TBD              |
-|    Import Service - Central Canada              |    TBD              |
+|    Import Service - Australia East              |    13.75.134.204    |
+|    Import Service - Brazil South                |    104.41.24.164    |
+|    Import Service - India South                 |    13.71.120.31     |
+|    Import Service - East Asia (Hong Kong)       |    52.175.28.40     |
+|    Import Service - Canada Central              |    52.237.18.100    |
   
-Then you will need to grant access to the VSTS instances in the region that you're importing into. 
+Next you will need to grant VSTS access. Again, you only need to grant an exception for the VSTS instance in the region that you're importing into.  
 
-If you're importing into Western Europe you will need grant access for the following IP:
+|    Service                                      |    IP               |
+|-------------------------------------------------|---------------------|
+|    Import Service - Central United States       |    13.89.236.72     |
+|    Import Service - West Europe                 |    40.68.34.220     |
+|    Import Service - Australia East              |    13.75.145.145    |
+|    Import Service - Brazil South                |    191.232.37.247   |
+|    Import Service - India South                 |    104.211.227.29   |
+|    Import Service - East Asia (Hong Kong)       |    52.175.28.40     |
+|    Import Service - Canada Central              |    52.237.19.6      |
 
-|    Service                                |    IP               |
-|-------------------------------------------|---------------------|
-|    VSTS - Western Europe                  |    40.68.34.220     |
+If you're planning on using the [preview](TBD) feature to include Release Management data in your import, then you will need to grant Release Management access as well. 
 
-If you're importing into Central United States you will need to grant access for the following IP:
-
-|    Service                                 |    IP               |
-|--------------------------------------------|---------------------|
-|    VSTS - Central United States            |    13.89.236.72     |
-
-If you're importing into India South you will need to grant access for the following IP:
-
-|    Service                                |    IP               |
-|-------------------------------------------|---------------------|
-|    VSTS - India South                     |    104.211.227.29   |
-
-If you're importing into Australia East you will need to grant access for the following IP:
-
-|    Service                                |    IP               |
-|-------------------------------------------|---------------------|
-|    VSTS - Australia East                  |    13.75.145.145    |
-
-If you're importing into South Brazil you will need to grant access for the following IP:
-
-|    Service                                |    IP               |
-|-------------------------------------------|---------------------|
-|    VSTS - South Brazil                    |    191.232.37.247   |
-
-If you're importing into East Asia (Hong Kong) you will need to grant access for the following IP:
-
-|    Service                                |    IP               |
-|-------------------------------------------|---------------------|
-|    VSTS - East Asia                       |    TBD              |
+TBD: Need RM regions 
 
 Your SQL Azure VM should now be set up to allow your data to be imported to VSTS. Follow the rest of the steps below to queue your import. 
 
@@ -495,9 +472,9 @@ VSTS is available in multiple [regions](https://azure.microsoft.com/en-us/region
 |    Western Europe               |    Western Europe              |
 |    Australia East               |    Australia East              |
 |    Brazil South                 |    Brazil South                |
-|    South India                  |    South India                 |
+|    India South                  |    India South                 |
 |    East Asia (Hong Kong)        |    East Asia                   | 
-|    Central Canada               |    Central Canada              |
+|    Canada Central               |    Canada Central              |
 
 While VSTS is available in multiple regions in the United States, only the Central United States region is accepting new VSTS. Customers will not be able to import their data into other United States Azure regions at this time.  
 
@@ -599,6 +576,6 @@ TfsMigrator import /importFile:C:\TFSDataImportFiles\import.json
 Once the validation passes you will be asked to sign into to AAD. It’s important that you sign in with an identity that is a member of the same AAD as the identity mapping file was built against. The user that signs in will become the owner of the imported account. 
 
 > [!NOTE]
-> Customers are limited to 5 imports against a single AAD tenant per 24 hour period
+> Imports are limited to 5 against a single AAD tenant per 24 hour period
 
 After the import starts the user that queued the import will receive an email. Shortly after that the team will be able to navigate to the import account to check on the status. Once the import completes your team will be directed to sign in. The owner of the account will also receive an email when the import finishes. 
