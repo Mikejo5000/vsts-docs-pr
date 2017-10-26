@@ -12,9 +12,6 @@ ms.date: 10/18/2017
 # OData API Versioning
 As the Analytics Service grows and changes we are dedicated to providing consistency and reliability to our users. Therefore the Analytics Service provides a versioned OData API that will remain compatible with clients designed for those versions. Each version may be enhanced with additional functionality and non-breaking changes. Incompatible or breaking changes will be rolled into future versions of the API.
 
->[!NOTE]
->Custom fields in your model are not versioned. It is possible to cause breaking changes to your model by removing, or changing the types of, custom fields.
-
 The API version follows the _odata element in the request path and is formatted like **v1.0** or **v1.0-preview**.
 ```
 https://{account}.analytics.visualstudio.com/{project}/_odata/{version}/$metadata
@@ -23,6 +20,9 @@ https://{account}.analytics.visualstudio.com/{project}/_odata/{version}/$metadat
 ## Breaking vs non-breaking changes
 The data model exposed by the Analytics Service defines the contract between the service and its clients. The OData spec requires that clients be tolerant of additive changes to the data model, so breaking changes will be introduced in future versions. For more information see the OData spec: 
 [OData Version 4.0 Part 5: Versioning](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752208)
+
+>[!NOTE]
+>Custom fields in your model are not versioned. It is possible to cause breaking changes to your model by removing, or changing the types of, custom fields.
 
 ### Example of non-breaking changes
 Consider a scenario where a new UserType property is added to the User entity.
