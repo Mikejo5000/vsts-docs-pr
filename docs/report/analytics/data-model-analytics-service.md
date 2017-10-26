@@ -81,8 +81,8 @@ The WorkItemRevision entity can contain hundreds of properties and will include 
 
 The last three properties here show that the same value is often expressed in multiple properties, each designed for different scenarios.
 
-[!Note]
-Changes to custom fields will affect the shape of your data model and will affect all revisions.
+>[!NOTE]
+>Changes to custom fields will affect the shape of your data model and will affect all revisions.
 
 
 ##Related notes 
