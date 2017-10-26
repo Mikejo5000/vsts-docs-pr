@@ -380,13 +380,13 @@ Next you will need to grant VSTS access. Again, you only need to grant an except
 
 |    Service                                      |    IP               |
 |-------------------------------------------------|---------------------|
-|    Import Service - Central United States       |    13.89.236.72     |
-|    Import Service - West Europe                 |    40.68.34.220     |
-|    Import Service - Australia East              |    13.75.145.145    |
-|    Import Service - Brazil South                |    191.232.37.247   |
-|    Import Service - India South                 |    104.211.227.29   |
-|    Import Service - East Asia (Hong Kong)       |    52.175.28.40     |
-|    Import Service - Canada Central              |    52.237.19.6      |
+|    VSTS - Central United States                 |    13.89.236.72     |
+|    VSTS - West Europe                           |    40.68.34.220     |
+|    VSTS - Australia East                        |    13.75.145.145    |
+|    VSTS - Brazil South                          |    191.232.37.247   |
+|    VSTS - India South                           |    104.211.227.29   |
+|    VSTS - East Asia (Hong Kong)                 |    52.175.28.40     |
+|    VSTS - Canada Central                        |    52.237.19.6      |
 
 If you're planning on using the [preview](https://aka.ms/vstsimportpreview) feature to include Release Management data with your import, then you will need to grant Release Management access as well. 
 
