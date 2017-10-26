@@ -360,9 +360,9 @@ It's highly recommended that you restrict access to your VM to only IPs from VST
 
 First, no matter what VSTS region you import into the following IP must be granted access to your collection database. 
 
-|    Service                                |    IP               |
-|-------------------------------------------|---------------------|
-|    VSTS Identity Service                  |    168.62.105.45    |
+|    Service                                      |    IP               |
+|-------------------------------------------------|---------------------|
+|    VSTS Identity Service                        |    168.62.105.45    |
 
 Next you will need to grant access to the TFS Database Import Service itself. You only need to grant an exception for the Import Service instance in the region that you're importing into.  
 
@@ -388,9 +388,17 @@ Next you will need to grant VSTS access. Again, you only need to grant an except
 |    Import Service - East Asia (Hong Kong)       |    52.175.28.40     |
 |    Import Service - Canada Central              |    52.237.19.6      |
 
-If you're planning on using the [preview](TBD) feature to include Release Management data in your import, then you will need to grant Release Management access as well. 
+If you're planning on using the [preview](https://aka.ms/vstsimportpreview) feature to include Release Management data with your import, then you will need to grant Release Management access as well. 
 
-TBD: Need RM regions 
+|    Service                                      |    IP               |
+|-------------------------------------------------|---------------------|
+|    Release Management - United States           |    23.102.153.83    |
+|    Release Management - West Europe             |    13.95.223.69     |
+|    Release Management - Australia East          |    13.73.204.151    |
+|    Release Management- Brazil South             |    191.235.94.154   |
+|    Release Management - India South             |    52.172.15.233    |
+|    Release Management - East Asia (Hong Kong)   |    13.94.36.224     |
+|    Release Management - Canada Central          |    52.237.28.171    |
 
 Your SQL Azure VM should now be set up to allow your data to be imported to VSTS. Follow the rest of the steps below to queue your import. 
 
