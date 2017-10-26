@@ -2,6 +2,11 @@
     "redirections": 
 	[
         {
+            "source_path": "docs/marketplace/rating-and-review.md",
+            "redirect_url": "/vsts/extend/publish/manage-ratings-review.md",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/integrate/get-started/client-libraries/dotnet.md",
             "redirect_url": "/vsts/integrate/concepts/dotnet-client-libraries",
             "redirect_document_id": false
@@ -4469,6 +4474,11 @@
        {
             "source_path": "docs/accounts/add-users.md",
             "redirect_url": "/vsts/security/add-users-team-project",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/manual-test/mtm/testing-windows-store-apps.md",
+            "redirect_url": "/vsts/manual-test/mtm/testing-microsoft-store-apps",
             "redirect_document_id": false
        },
        {
