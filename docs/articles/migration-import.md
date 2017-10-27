@@ -164,7 +164,6 @@ VSTS is available in several Azure [regions](https://azure.microsoft.com/en-us/r
 |    Australia                    |    Australia East              |      EAU                    |
 |    South America                |    Brazil South                |      SBR                    |
 |    Asia Pacific                 |    South India                 |      MA                     |
-|    Asia Pacific                 |    East Asia (Hong Kong)       |      EA                     |
 |    Canada                       |    Central Canada              |      CC                     |
 
 ### Identity Map
@@ -338,7 +337,6 @@ Use the table below to decide where you should create you SQL Azure VM if you're
 |    Australia East               |    Australia East              |
 |    Brazil South                 |    Brazil South                |
 |    South India                  |    South India                 |
-|    East Asia (Hong Kong)        |    East Asia                   |
 |    Central Canada               |    Central Canada              |
 
 > While VSTS is available in multiple regions in the United States, only the Central United States region is accepting new VSTS accounts. Customers will not be able to import their data into other United States Azure regions at this time. 
@@ -373,7 +371,6 @@ Next you will need to grant access to the TFS Database Import Service itself. Yo
 |    Import Service - Australia East              |    13.75.134.204    |
 |    Import Service - Brazil South                |    104.41.24.164    |
 |    Import Service - India South                 |    13.71.120.31     |
-|    Import Service - East Asia (Hong Kong)       |    52.175.28.40     |
 |    Import Service - Canada Central              |    52.237.18.100    |
   
 Next you will need to grant VSTS access. Again, you only need to grant an exception for the VSTS instance in the region that you're importing into.  
@@ -385,7 +382,6 @@ Next you will need to grant VSTS access. Again, you only need to grant an except
 |    VSTS - Australia East                        |    13.75.145.145    |
 |    VSTS - Brazil South                          |    191.232.37.247   |
 |    VSTS - India South                           |    104.211.227.29   |
-|    VSTS - East Asia (Hong Kong)                 |    52.175.28.40     |
 |    VSTS - Canada Central                        |    52.237.19.6      |
 
 If you're planning on using the [preview](https://aka.ms/vstsimportpreview) feature to include Release Management data with your import, then you will need to grant Release Management access as well. 
@@ -397,7 +393,6 @@ If you're planning on using the [preview](https://aka.ms/vstsimportpreview) feat
 |    Release Management - Australia East          |    13.73.204.151    |
 |    Release Management- Brazil South             |    191.235.94.154   |
 |    Release Management - India South             |    52.172.15.233    |
-|    Release Management - East Asia (Hong Kong)   |    13.94.36.224     |
 |    Release Management - Canada Central          |    52.237.28.171    |
 
 Your SQL Azure VM should now be set up to allow your data to be imported to VSTS. Follow the rest of the steps below to queue your import. 
@@ -481,7 +476,6 @@ VSTS is available in multiple [regions](https://azure.microsoft.com/en-us/region
 |    Australia East               |    Australia East              |
 |    Brazil South                 |    Brazil South                |
 |    India South                  |    India South                 |
-|    East Asia (Hong Kong)        |    East Asia                   | 
 |    Canada Central               |    Canada Central              |
 
 While VSTS is available in multiple regions in the United States, only the Central United States region is accepting new VSTS. Customers will not be able to import their data into other United States Azure regions at this time.  
