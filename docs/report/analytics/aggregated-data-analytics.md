@@ -71,6 +71,8 @@ First, using OData, you trigger aggregations using the ```$apply``` token at the
 
     /{entityName}?$apply=aggregate({columnToAggregate} with {aggregationType} as {newColumnName})
 
+{entityName} is the entity that needs to be queried for. {columnToAggregate} is the aggregation column. {aggregationType} will specify the type of aggregation used and {newColumnName} specifies the name of the column having values after aggregation.
+
 ### Additional examples 
 
 The following are some concrete examples of this functionality:
@@ -202,7 +204,7 @@ This will return a result that looks like the following:
 
 ##The benefits of aggregation, a real world example - Cumulative Flow Diagram
 
-Let's say you want to create a cumulative flow diagram in Power BI. Typically you would execute a query like the following to retrieve raw data:
+Let's say you want to create a [cumulative flow diagram](…/guidance/cumulative-flow-cycle-lead-time-guidance.md) in Power BI. Typically you would execute a query like the following to retrieve raw data:
 
 ```
 /WorkItemBoardSnapshot?$filter=BoardLocation/Team/TeamName eq '{team name}'

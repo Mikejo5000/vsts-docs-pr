@@ -22,25 +22,27 @@ adapted for different needs.
 **Retrieve the history of a work item**
 
 ```
-https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItemRevisions?$filter=WorkItemId eq {Id}
+https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItemRevisions?$filter=WorkItemId eq {Id}
 ```
 
 **Retrieve all work items in a given iteration**
 
 ```
-https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?$filter=Iteration/IterationPath eq '{iteration path}'
+https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$filter=Iteration/IterationPath eq '{iteration path}'
 ```
 
 **Retrieve all work items in a given area**
 
 ```
-https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?$filter=Area/AreaPath eq '{area path}'
+https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$filter=Area/AreaPath eq '{area path}'
 ```
 
 **Get the count of work items in each project**
 ```
-https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?$apply=groupby((Project/ProjectName), aggregate($count as Count))
+https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$apply=groupby((Project/ProjectName), aggregate($count as Count))
 ```
+
+This query will fail when the user does not have access to all the projects. Read more about [account scoped queries](Account-scoped-queries.md).
 
 **Retrieve all work items for a given iteration which fall between the first day of the iteration and the last day of the iteration**
 
@@ -48,7 +50,7 @@ Here your query is constrained by data
 contained within the VSTS data. 
 
 ```
-https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?$filter=Iteration/IterationPath eq '{iteration path}' and ChangedDate ge Iteration/StartDate and ChangedDate le Iteration/EndDate
+https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$filter=Iteration/IterationPath eq '{iteration path}' and ChangedDate ge Iteration/StartDate and ChangedDate le Iteration/EndDate
 ```
 
 **Retrieve all work items with a specific tag**
