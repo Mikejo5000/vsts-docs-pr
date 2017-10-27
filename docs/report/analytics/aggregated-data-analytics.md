@@ -204,25 +204,38 @@ This will return a result that looks like the following:
 
 ##The benefits of aggregation, a real world example - Cumulative Flow Diagram
 
-Let's say you want to create a [cumulative flow diagram](…/guidance/cumulative-flow-cycle-lead-time-guidance.md) in Power BI. Typically you would execute a query like the following to retrieve raw data:
+Let's say you want to create a [cumulative flow diagram](…/guidance/cumulative-flow-cycle-lead-time-guidance.md) in Power BI. You can use a query similar to the one below:
 
 ```
-/WorkItemBoardSnapshot?$filter=BoardLocation/Team/TeamName eq '{team name}'
-and BoardLocation/BoardName eq 'Microsoft.RequirementCategory'&$expand=Date,BoardLocation
+https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItemBoardSnapshot?$apply=filter(DateValue gt 2015-07-16Z and DateValue le 2015-08-16Z)/filter(BoardLocation/BoardName eq 'Stories' and BoardLocation/Team/TeamName eq '{teamName}')/groupby((DateValue, BoardLocation/ColumnName), aggregate(Count with sum as Count))&$orderby=DateValue
 ```
+This returns a result similar to the following:
 
-This query returns the following:
-
-    TBD::
-
-With this data, the CFD can be created with further client processing. For a better client experience you can hand that processing to the server via an aggregated query. This would look like:
-
+```JSON
+{
+  "@odata.context": "https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItemBoardSnapshot(DateValue,BoardLocation(ColumnName),Count)",
+  "value": [
+    {
+      "@odata.id": null,
+      "DateValue": "2015-07-16T00:00:00-07:00",
+      "Count": 324,
+      "BoardLocation": {
+        "@odata.id": null,
+        "ColumnName": "Completed"
+      }
+    },
+    {
+      "@odata.id": null,
+      "DateValue": "2015-07-16T00:00:00-07:00",
+      "Count": 5,
+      "BoardLocation": {
+        "@odata.id": null,
+        "ColumnName": "In Progress"
+      }
+    }
+  ]
+}
 ```
-/WorkItemBoardSnapshot?$apply=filter(BoardLocation/Team/TeamName eq '{team name}')/filter(BoardLocation/BoardName eq 'Microsoft.RequirementCategory')/groupby((Date/Date,BoardLocation/ColumnName,BoardLocation/ColumnOrder), aggregate($count as Count))
-```
-This query returns the following:
-
-    TBD::
 
 This result can be directly used by your data visualization of choice.
 

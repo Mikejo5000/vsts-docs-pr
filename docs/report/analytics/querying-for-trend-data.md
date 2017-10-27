@@ -36,7 +36,29 @@ There are some basic requirements you need to effectively query the WorkItemSnap
 With this in mind, the query to create a bug trend report looks like the following: 
 
 ```
-https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItemSnapshot?$apply=filter(DateValue ge 2016-03-01 and DateValue le 2016-03-31 and WorkItemTyp eq 'Bug')/groupby((DateValue,State), aggregate($count as Count))&$orderby=DateValue
+https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItemSnapshot?$apply=filter(DateValue ge 2016-03-01Z and DateValue le 2016-03-31Z and WorkItemType eq 'Bug')/groupby((DateValue,State), aggregate($count as Count))&$orderby=DateValue
+```
+
+This returns a result similar to the following:
+
+```JSON
+{
+  "@odata.context": "https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItemSnapshot(DateValue,State,Count)",
+  "value": [
+    {
+      "@odata.id": null,
+      "State": "Active",
+      "DateValue": "2016-03-01T00:00:00-08:00",
+      "Count": 2666
+    },
+    {
+      "@odata.id": null,
+      "State": "Closed",
+      "DateValue": "2016-03-01T00:00:00-08:00",
+      "Count": 51408
+    }
+  ]
+}
 ```
 
 This query will produce at most ```31 * (number of bug states)```. The default bug has three states 
@@ -49,6 +71,28 @@ To construct that query, do the following:
 
 ```
 https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItemSnapshot?$apply=filter(Iteration/IterationName eq 'Sprint 99')/filter(DateValue ge Iteration/StartDate and DateValue le Iteration/EndDate and WorkItemType eq 'Bug')/groupby((DateValue,State), aggregate($count as Count))&$orderby=DateValue
+```
+
+This returns a result similar to the following:
+
+```JSON
+{
+  "@odata.context": "https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItemSnapshot(DateValue,State,Count)",
+  "value": [
+    {
+      "@odata.id": null,
+      "State": "Active",
+      "DateValue": "2016-04-04T00:00:00-07:00",
+      "Count": 320
+    },
+    {
+      "@odata.id": null,
+      "State": "Closed",
+      "DateValue": "2016-04-04T00:00:00-07:00",
+      "Count": 38
+    }
+  ]
+}
 ```
 
 In this query, there are two key differences. We added a filter clause to filter the data to a specific iteration and the dates are now being compared to the iteration start and end dates versus a hard coded date.  
