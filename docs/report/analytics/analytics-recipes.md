@@ -1,6 +1,6 @@
 ---
-title: Analytics recipes | VSTS  
-description: Provides general queries for use with the Analytics service for VSTS 
+title: Analytics basic queries | VSTS  
+description: Provides general queries for use with the Analytics service for VSTS (SEO; work item history, work items in a given iteration, work item in a given area, work items per project, work items per iteration, work items per tag, work items per team, cumulative flow diagram)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
 ms.assetid: 1320852A-5C62-4954-9E9D-508D670777A4
@@ -9,7 +9,7 @@ ms.author: kaelli
 ms.date: 08/11/2016
 ---
 
-#Analytics service recipes  
+#Analytics service basic queries  
 
 **VSTS**  
 
@@ -22,58 +22,51 @@ adapted for different needs.
 **Retrieve the history of a work item**
 
 ```
-https://{account}.analytics.visualstudio.com/_odata/v1.0-preview/WorkItemRevisions?$filter=WorkItemId eq [Id]
+https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItemRevisions?$filter=WorkItemId eq {Id}
 ```
 
 **Retrieve all work items in a given iteration**
 
 ```
-https://{account}.analytics.visualstudio.com/_odata/v1.0-preview/WorkItems?$filter=Iteration/IterationPath eq '[iteration path]'
+https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$filter=Iteration/IterationPath eq '{iteration path}'
 ```
 
 **Retrieve all work items in a given area**
 
 ```
-https://{account}.analytics.visualstudio.com/_odata/v1.0-preview/WorkItems?$filter=Area/AreaPath eq '[area path]'
+https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$filter=Area/AreaPath eq '{area path}'
 ```
 
 **Get the count of work items in each project**
+```
+https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$apply=groupby((Project/ProjectName), aggregate($count as Count))
+```
 
-```
-https://{account}.analytics.visualstudio.com/_odata/v1.0-preview/WorkItems?$apply=groupby((Project/ProjectName), aggregate($count as Count))
-```
+This query will fail when the user does not have access to all the projects. Read more about [account scoped queries](Account-scoped-queries.md).
 
 **Retrieve all work items for a given iteration which fall between the first day of the iteration and the last day of the iteration**
 
-This type of query is a little different in that you are constraining your query by data 
-contained with the data. 
+Here your query is constrained by data 
+contained within the VSTS data. 
 
 ```
-https://{account}.analytics.visualstudio.com/_odata/v1.0-preview/WorkItems?$filter=Iteration/IterationPath eq '[iteration path]' and Date/Date ge Iteration/StartDate and Date/Date le Iteration/EndDate
-```
-
-**Retrieve the data for a cumulative flow diagram**
-
-```
-https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0-preview/WorkItemBoardSnapshot?$filter=BoardLocation/Team/TeamName eq '[team name]'
-and BoardLocation/BoardName eq '[board reference name]'&$expand=Date,BoardLocation
+https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$filter=Iteration/IterationPath eq '{iteration path}' and ChangedDate ge Iteration/StartDate and ChangedDate le Iteration/EndDate
 ```
 
 **Retrieve all work items with a specific tag**
 
 Note that the **any** operator is used here because there are a collection of tags that can be associated with a work item.
-From a usage perspective, the format is: **[Navigation Property]/any(d:d/[Field Name] [operator] [expression])**. Any item not surrounded by
-brackets ([]) is a literal. There are some variations on this (for example, you don't have to use "d" as used in the expression above)
+From a usage perspective, the format is: **{Navigation Property}/any(d:d/{Field Name} {operator} {expression})**. Any item not surrounded by curly brackets ({}) is a literal. There are some variations on this (for example, you don't have to use "d" as used in the expression above)
 but following this format keeps it simple.
 
 ```
-https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0-preview/WorkItems?$filter=Tags/any(d:d/TagName eq '[tag name]')
+https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$filter=Tags/any(d:d/TagName eq '{tag name}')
 ```
 
 **Retrieve all work items for a specific team**
 
 ```
-https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0-preview/WorkItems?$filter=Teams/any(d:d/TeamName eq '[team name]')&$select=WorkItemId,Title,State
+https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$filter=Teams/any(d:d/TeamName eq '{team name}')&$select=WorkItemId,Title,State
 ```
 ##Related notes 
 
