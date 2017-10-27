@@ -198,7 +198,7 @@ The table below explains what each column is used for.
 |    User                             |    Friendly display name used by the identity in   TFS. Makes it easier to identify which user the line in the map is   referencing.                                                                                                                         |
 |    AD:SecurityIdentifier[Source]    |    The unique identifier for the on-prem AD identity   in TFS. This column is used to identify users in the collection.                                                                                                                                      |
 |    AAD:UserPrincipalName[Target]    |    The identifier for the matching AAD identity.   Entries in this column will show the identity that users will log into after   the migration. Everything belonging to the TFS identity will be remastered to   this AAD identity if the map is valid.                                                                                                                                                                |
-|    License                         |    Desired license the user should have after import.                                                                                                                                                                                                      |
+|    License                        |    Expected license that a user will be assigned during the import. This can be changed post import via the [users hub](https://docs.microsoft.com/en-us/vsts/accounts/add-account-users-assign-access-levels).                                                                                                                                                                                                        |
 |    License Assignment Override (**Not Supported**)     |    This feature is no longer supported. Users will be given the best matching licenses in VSTS for free. These free license are good until the 1st of the next month. Licensing changes can be made post import in the users hub.                                                                                                                                                                                  |
 |    Status                           |    Indication of whether or not the identity mapped   on this line is valid or not.                                                                                                                                                                          |
 |    Validation Date                  |    Last time the identity map was validated.                                                                                                                                                                                                                 |
@@ -556,6 +556,11 @@ Be sure to check out the [post import](.\migration-post-import.md) documentation
 ## Running an Import
 The great news is that your team is now ready to begin the process of running an import. It's recommended that your team start with a dry run import and then finally a production run import. Dry run imports allow your team to see how the end results of an import will look, identify potential issues, and gain experience before heading into your production run. 
 
+### Considerations for Roll Back Planning
+A common concern that teams have for the final production run is to think through what the rollback plan will be if anything goes wrong with import. This is also why we highly recommend doing a dry run to make sure you are able to test the import settings and identity map that you provide to the TFS Database Import Service.
+
+Rollback for the final production run is fairly simple. Before you queue the import, you will be detaching the team project collection from Team Foundation Server which will make it unavailable to your team members. If for any reason, you need to roll back the production run and have Team Foundation Server come back online for your team members, you can simply attach the team project collection on-premises again and inform your team that they will continue to work as normal while your team regroups to understand any potential failures.
+
 ### Queueing an Import
 
 > [!IMPORTANT] 
@@ -584,6 +589,6 @@ TfsMigrator import /importFile:C:\TFSDataImportFiles\import.json
 Once the validation passes you will be asked to sign into to AAD. It’s important that you sign in with an identity that is a member of the same AAD as the identity mapping file was built against. The user that signs in will become the owner of the imported account. 
 
 > [!NOTE]
-> Imports are limited to 5 against a single AAD tenant per 24 hour period
+> Imports are limited to 5 against a single AAD tenant per 24 hour period. Only imports that are queued count against this cap.
 
 After the import starts the user that queued the import will receive an email. Shortly after that the team will be able to navigate to the import account to check on the status. Once the import completes your team will be directed to sign in. The owner of the account will also receive an email when the import finishes. 
