@@ -212,14 +212,16 @@ You can solve this problem by using the OData batch endpoint as explained in the
 
 
 ### **❌ [BLOCKED] DO NOT** use batch endpoint for sending multiple queries.
->[!IMPORTANT] Not ready for review.
+<a name="odata_batch_query_size_invalid"></a>
+The batch endpoint was exposed primary to make it possible to send long queries. Its capabilities for handling a batch of multiple requests are restricted. Single request can still have only one query. If you try to send a batch of several queries the operation will fail with the following error message. The only solution is to split queries into multiple requests.
 
-Yes, batch endpoint is not for batching multiple requests. The only reason why it was exposed was to support very long queries. As of right now it requires the response to contain exactly one query.
+> *The Analytics Service doesn’t support processing of multiple operations which the current batch message contains. The Analytics Service uses OData batch in order to support POST requests, but requires you limit the operation to a single request.*
 
 ### **❌ AVOID** creating very long queries.
 >[!IMPORTANT] Not ready for review.
 
 Just because you can, it does not mean you should.
+Long queries can be symptom of optimization opportunity. Instead for listing all the ids of work items you are interested in, define the filter of what you are interested in or modify the process to set a field or tag to make the filtering easier.
 https://stackoverflow.microsoft.com/questions/41401/suggestion-for-massive-filter-on-bugs
 
 ### **✔️ DO** specify time zone when filtering on date columns.
