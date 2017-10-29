@@ -218,11 +218,17 @@ The batch endpoint was exposed primary to make it possible to send long queries.
 > *The Analytics Service doesn’t support processing of multiple operations which the current batch message contains. The Analytics Service uses OData batch in order to support POST requests, but requires you limit the operation to a single request.*
 
 ### **❌ AVOID** creating very long queries.
->[!IMPORTANT] Not ready for review.
+<a name="question-41401"></a>
+Whenever you create a very long query you should question whether it is really necessary. There are many scenarios where long query is absolutely necessary (e.g. very complex filters or long list of properties), but typically they are an early indicator of a suboptimal design. That is why when you notice it, you shoud stop and reevaluate your approach.
 
-Just because you can, it does not mean you should.
-Long queries can be symptom of optimization opportunity. Instead for listing all the ids of work items you are interested in, define the filter of what you are interested in or modify the process to set a field or tag to make the filtering easier.
-https://stackoverflow.microsoft.com/questions/41401/suggestion-for-massive-filter-on-bugs
+If the length is driven by the fact that you are including a lot of entity keys in the query (e.g. `WorkItemId eq {id 1} or WorkItemId eq {id 2} or ...`), then you can probably rewrite it. Instead of passing the identifiers try to define some other criteria that will select the same set of entities. Sometimes it might be necessary to modify your process (e.g. add a new field or tag), but it is typically worth it. Using more abstract filters the query will be easier to maintain and has potential to reach better performance.
+
+Another scenario that can lead you to a long query is including a lot of individual dates (e.g. `DateSK eq {dateSK 1} or DateSK eq {dateSK 2} or ...`). Similarly to the previous case, the chances are that there is some other pattern that can be used to create more abstract filter. For example, The query below gets all the work items which were created on Monday.
+```odata
+https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+  $filter=CreatedOn/DayOfWeek eq 2
+  &$select=WorkItemId, Title, State
+```
 
 ### **✔️ DO** specify time zone when filtering on date columns.
 >[!IMPORTANT] Not ready for review.
