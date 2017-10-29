@@ -235,7 +235,12 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
 
 https://stackoverflow.microsoft.com/questions/21550/date-filters-using-the-analytics-service-return-a-no-coercion-operator-is-defin
 
+
 ## Performance guidelines
+
+### **✔️ DO** measure the impact of implementing a performance guideline.
+As with any performance recommendations you should not blindly implement them. Instead, always capture the baseline and **measure** the impact of changes you make. All of the guidelines were created based on the interactions with clients of Analytis Service who had very specifc requirements and challenges. These recommendations were consider general and potentially useful for anyone who designs similar queries. However, in rare cases, following the guidelines could have none or even negative effect on the performance. You do need to measure the difference to notice it. Should this happen please provide a feedback in the [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html) portal.
+
 
 ### **✔️ DO** use aggregation extensions.
 By far the best thing you can do to improve performance of your queries is to use aggregation extension - [OData Extension for Data Aggregation](http://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html). This allows you to ask the service to summarize data server-side and return response which is much smaller than what you would need to fetch if you wanted to apply the same function client-side. Finally, Analytics Service is optimized for this type of queries, so please make use of it.
@@ -367,6 +372,10 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
 
 ### **❌ DO NOT** use unbounded expansion (`$levels=max`)
 >[!IMPORTANT] Not ready for review.
+
+### **❌ DO NOT** use `$top` and `$skip` options to implement paging.
+>[!IMPORTANT] Not ready for review.
+
 
 ### **✔️ CONSIDER** writting query to return small number of records.
 >[!IMPORTANT] Not ready for review.
