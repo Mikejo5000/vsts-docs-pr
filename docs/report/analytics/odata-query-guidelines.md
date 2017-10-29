@@ -346,10 +346,17 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
 ```
 
 
-### **✔️ CONSIDER** using `TagNames` property on work items in `$select` clauses.
+### **✔️ DO** use `TagNames` property if you want to display all the tags on a work item as text.
 >[!IMPORTANT] Not ready for review.
 
-Property `TagNames` is very useful in `$select` clauses.
+Navigation property `Tags`, described in the previous section, is great for filtering. However, it might be challenging to work with it as the tags are returned in a nested collection. Data model has also `TagNames` primitive property (`Edm.String`), which was added to simplify tags consumption scenarios. It is a single text representation of all the tags and it contains a list of tags combined with "; " separator. It is perfect when all you care about is displaying tags together. Of course you can combine it with the tags filters described previously.
+
+For example, the query below gets all the work items which were tagged with a `{tag}`. The information it gets is identifer, title, state and a text representation of combined tags.
+```odata
+https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+  $filter=Tags/any(t:t/TagName eq '{tag}')
+  &$select=WorkItemId, Title, State, TagNames
+```
 
 
 ### **❌ DO NOT** use unbounded expansion (`$levels=max`)
