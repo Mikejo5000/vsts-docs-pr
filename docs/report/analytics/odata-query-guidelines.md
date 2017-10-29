@@ -347,7 +347,7 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
 
 
 ### **✔️ DO** use `TagNames` property if you want to display all the tags on a work item as text.
-Navigation property `Tags`, described in the previous section, is great for filtering. However, it might be challenging to work with it as the tags are returned in a nested collection. Data model has also `TagNames` primitive property (`Edm.String`), which was added to simplify tags consumption scenarios. It is a single text representation of all the tags and it contains a list of tags combined with "; " separator. It is perfect when all you care about is displaying tags together. Of course you can combine it with the tags filters described previously.
+Navigation property `Tags`, described in the previous section, is great for filtering. However, it might be challenging to work with it as the tags are returned in a nested collection. Data model has also `TagNames` primitive property (`Edm.String`), which was added to simplify tags consumption scenarios. It is a single text value which contains a list of all the tags combined with "; " separator. It is perfect when all you care about is displaying tags together. Of course you can combine it with the tags filters described previously.
 
 For example, the query below gets all the work items which were tagged with a `{tag}`. The information it gets is identifer, title, state and a text representation of combined tags.
 ```odata
@@ -415,7 +415,7 @@ message: "TF400733: The request has been canceled: The request has exceeded requ
 ### **✔️ DO** use `$count` virtual property in the aggregation methods.
 Some entities expose `Count` property. They make some reporting scenarios easier when the data gets exported to a different storage. However, you should not use these columns in aggregations in OData queries. Please use `$count` virtual property instead.
 
-For example, the query below returns the total number of work items.
+For example, the query below gets the total number of work items.
 ```odata
 https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
   $apply=aggregate($count as Count)
@@ -425,7 +425,7 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
 ### **❌ AVOID** using `$count` virtual property in the URL segment.
 Although OData standard allows you to use `$count` virtual property for entity sets (e.g. `_odata/v1.0/WorkItems/$count`), not all clients can interpret the response correctly. Therefore, it is recommended to use aggregations instead.
 
-For example, the query below returns the total number of work items.
+For example, the query below gets the total number of work items.
 ```odata
 https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
   $apply=aggregate($count as Count)
@@ -433,6 +433,8 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
 
 
 ### **❌ AVOID** mixing `$apply` and `$filter` clauses in the same query.
+>[!IMPORTANT] Not ready for review.
+
 `$apply` has precendence over `$filter`, thus, mixing them, might lead to unexpected results.
 
 ```odata
