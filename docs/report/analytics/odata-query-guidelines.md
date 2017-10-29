@@ -229,7 +229,11 @@ https://stackoverflow.microsoft.com/questions/21550/date-filters-using-the-analy
 
 ## Performance guidelines
 
-### **✔️ DO** specify columns in `$select` clause
+### **✔️ DO** use aggregation extensions.
+By far the best thing you can do to improve performance of your queries is to use aggregation extension - [OData Extension for Data Aggregation](http://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html). This allows you to ask the service to summarize data server-side and return response which is much smaller than what you would need to fetch if you wanted to apply the same function client-side. Finally, Analytics Service is optimized for this type of queries, so please make use of it.
+
+
+### **✔️ DO** specify columns in `$select` clause.
 You should speciy the columns you care about in the `$select` clause. This decreases the number of columns that have to be scanned and reduces the size of the response payload.
 
 For example, the query below specifies the columns for work items.
@@ -253,10 +257,10 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
 ```
 
 
-### **✔️ DO** define a filter on `RevisedDateSK` when you write historical queries agains work items entity sets.
-When you query for historical data, the chances are that you are interested in the most recent period (e.g. 30 days, 90 days). Due to how work items entities were implemented there is a convenient way you can write such queries to get great performance. Each time you update a work item it creates a new revision and records this action in `System.RevisedDate` colum. This makes it perfect for history filters.
+### **✔️ DO** define a filter on `RevisedDateSK` when you query for historical work items data (`WorkItemRevisions` or `WorkItemSnapshot` entity sets).
+When you query for historical data, the chances are that you are interested in the most recent period (e.g. 30 days, 90 days). Due to how work items entities are implemented there is a convenient way for you to write such queries to get great performance. Each time you update a work item it creates a new revision and records this action in `System.RevisedDate` field, which makes it perfect for history filters.
 
-In Analytics Servcie revised date is represented by `RevisedDate` (`Edm.DateTimeOffset`) and `RevisedDateSK` (`Edm.Int32`). For best performance you should use the latter. This is date *surrogate key* and it represents the date when revision was create or it might have null for active revisions. If you know that you are interested in all the dates since `{startDate}` inclusive, you should add the following filter to your query.
+In Analytics Servcie, the revised date is represented by `RevisedDate` (`Edm.DateTimeOffset`) and `RevisedDateSK` (`Edm.Int32`) properties. For best performance you should use the latter. This is date *surrogate key* and it represents the date when revision was create or it has `null` for active, uncompleted revisions. If you know that you are interested in all the dates since `{startDate}` inclusive, you should add the following filter to your query.
 
 ```
 RevisedDateSK eq null or RevisedDateSK gt {startDateSK}
@@ -316,15 +320,31 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItemSnapshot?
 ```
 
 ### **✔️ DO** use `Tags` collection property on work items when filtering by tags.
->[!IMPORTANT] Not ready for review.
+<a name="question-18172"></a>
+There is property `TagNames` which one could use with `contains` function to check if a work it was marked with a specific tag. This approach, however, might result in a slow queries especially when checking for multiple tags at the same time. For best performance and accurate results you should use `Tags` navigation property.
 
-There is property `TagNames` which one could use with `contains` function to find the right work items, but for better performance and accurate results you should use `Tags` navigation property.
-
+For example, the query below gets all the work items which were tagged with a `{tag}`.
 ```odata
 https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
   $filter=Tags/any(t:t/TagName eq '{tag}')
+  &$select=WorkItemId, Title, State
 ```
-https://stackoverflow.microsoft.com/questions/18172/how-to-query-work-items-for-multiple-tags
+
+This approach also works great when you need to filter on multiple tags. For example, the query below gets all the work items which were tagged with `{tag1}` **or** `{tag2}`
+
+```odata
+https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+  $filter=Tags/any(t:t/TagName eq {tag1} or t/TagName eq {tag2})
+  &$select=WorkItemId, Title, State
+```
+
+You can also combine these filters with an "and" operator. For example, the query below gets all the work items which were tagged with both `{tag1}` **and** `{tag2}`
+```odata
+https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+  $filter=Tags/any(t:t/TagName eq {tag1}) and Tags/any(t:t/TagName eq {tag2})
+  &$select=WorkItemId, Title, State
+```
+
 
 ### **✔️ CONSIDER** using `TagNames` property on work items in `$select` clauses.
 >[!IMPORTANT] Not ready for review.
