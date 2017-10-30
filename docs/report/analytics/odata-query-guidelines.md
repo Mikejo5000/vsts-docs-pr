@@ -396,6 +396,16 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
   &$select=WorkItemId, Title, State, TagNames
 ```
 
+### **❌ DO NOT** use `tolower` and `toupper` functions to perform case-insensitive comparison.
+Working with other systems you might expect you need to use `tolower` or `toupper` functions for the case-insensitive comparison. With Analytis Servie all the sting comparison is case-insensitive by default, thus you do not need to apply any functions to explicitly handle it.
+
+For example, the following query gets all the work items tagged with 'QUALITY', 'quality' or any other case combination of this word.
+```odata
+https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+  $filter=Tags/any(t:t/TagName eq 'quality')
+  &$select=WorkItemId, Title, State, TagNames
+```
+
 
 ### **❌ DO NOT** use unbounded expansion with `$levels=max`
 OData has a interesting capability of expanding all the levels of a hierarchical structure. In Analytics Service there exists some entities where such unbounded expansion could be applied. This operation does work only for really small accounts because it does not scale well with the account size. Please do not use it at all if you are working with large accounts or you are developing a widget and you have no control over where it is going to be installed.
@@ -448,22 +458,24 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
 ```
 
 
-### **❌ AVOID** using Parent, Child or Revision properties in a `$filter` or `$expand` clauses
-<a name="ODATA_QUERY_PARENT_CHILD_RELATIONS"></a>
->[!IMPORTANT] Not ready for review.
+### **❌ AVOID** using `Parent`, `Children` or `Revisions` properties in `$filter` or `$expand` clauses.
+<a name="odata_query_parent_child_relations"></a>
+Work items are the most expensive entities in the whole model. They have several navigation properties that can be used to access related work items: `Parent`, `Children`, `Revisions`. Every time you use them in your queries you should expect performance decline. Therefore, you should always question if they are necessary and potentially update your design. For example, instead of expanding `Parent` you can fetch more work items and use `ParentWorkItemId` property to recostruct the full hiearchy client-side. Such optimization has to be done on the case-by-case basis.
 
-### **✔️ CONSIDER** passing `VSTS.Analytics.MaxSize` preference in the header.
-When you execute a query you don't know how many records there are to retrieve. You have to either send anotehr query with aggregations or follow all the next links and fetch the entire dataset. Analytics Service respects `VSTS.Analytics.MaxSize` preference, which lets you fail fast should the dataset be bigger than what your client can accept. This option is particularly helpful in the data export scenarios. In order to use it you have to add `Prefer` header to your HTTP request and set `VSTS.Analytics.MaxSize` to a non-negative value which represents the max number of records you can accept. If you set it to zero, then a default value of 200k will be used.
+
+### **✔️ CONSIDER** passing `vsts.analytics.maxsize` preference in the header.
+When you execute a query you don't know how many records there are to retrieve. You have to either send anotehr query with aggregations or follow all the next links and fetch the entire dataset. Analytics Service respects `vsts.analytics.maxsize` preference, which lets you fail fast should the dataset be bigger than what your client can accept. This option is particularly helpful in the data export scenarios. In order to use it you have to add `Prefer` header to your HTTP request and set `vsts.analytics.maxsize` to a non-negative value which represents the max number of records you can accept. If you set it to zero, then a default value of 200k will be used.
 
 For example, the query below returns work items provided that the dataset is smller or equal to 1000 records.
 ```http
 GET https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems HTTP/1.1
 User-Agent: Microsoft.Data.Mashup
-Prefer: VSTS.Analytics.MaxSize=1000
+Prefer: vsts.analytics.maxsize=1000
 OData-MaxVersion: 4.0
 Accept: application/json;odata.metadata=minimal
 Host: {account}.analytics.visualstudio.com
 ```
+
 
 ### **❌ AVOID** sending more requests after you received a timeout error.
 >[!IMPORTANT] Not ready for review.
