@@ -493,22 +493,20 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
 ```
 
 
-### **❌ AVOID** mixing `$apply` and `$filter` clauses in the same query.
->[!IMPORTANT] Not ready for review.
+### **❌ AVOID** mixing `$apply` and `$filter` clauses in a single query.
+If you want to add filter to your query you have two options. You can either do it with `$filter` clause or `$apply=filter()` combination. Each one of these options works great on its own, but combining them together might lead to some unexpected results. Despite the expectation one might have, OData clearly defines an order of the evaluation and `$apply` clause has priority over `$filter`. For this reason, you should choose one or another but avoid these two filter option in a single query. This is particularly important if the queries are generated automatically.
 
-`$apply` has precendence over `$filter`, thus, mixing them, might lead to unexpected results.
-
+For example, the query below first filters work items by `StoryPoint gt 5`, aggregates result by are path and finally filters the result by `StoryPoints gt 2`. Withi this evaluation order the query will always return an empty set.
 ```odata
 https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+  $filter=StoryPoints gt 2
   $apply=
-  filter(StoryPoints gt 2)
-  /groupby(
-    (Area/AreaPath),
-    aggregate(StoryPoints with sum as StoryPoints)
-  )
-  &$filter=StoryPoints gt 5
+    filter(StoryPoints gt 5)/
+    groupby(
+      (Area/AreaPath),
+      aggregate(StoryPoints with sum as StoryPoints)
+    )
 ```
-
 
 
 ### **✔️ CONSIDER** using parameter aliases to separate volatile parts of the query.
