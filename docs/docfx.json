@@ -25,6 +25,7 @@
           "**/*.mp4",
           "**/*.svg"
         ],
+        "group": "all",
         "exclude": [
           "**/obj/**",
           "**/includes/**"
