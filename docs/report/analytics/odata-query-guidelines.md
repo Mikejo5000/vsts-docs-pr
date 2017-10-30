@@ -420,13 +420,15 @@ Working with other REST API's you might want to implement client-driven paging w
 
 
 ### **✔️ CONSIDER** writting query to return small number of records.
->[!IMPORTANT] Not ready for review.
+This is probably the most intuitive guideline. You should always aim to fetch only the data you really care about. This can be achieved by making most of the powerful filtering capabilities available in OData query language.
 
-### **✔️ CONSIDER** limiting the number of selected columns to minimum.
-<a name="ODATA_QUERY_TOO_WIDE"></a>
->[!IMPORTANT] Not ready for review.
 
-### **✔️ CONSIDER** filterig on date surrogate key columns with DateSK suffix.
+### **✔️ CONSIDER** limiting the number of selected properties to minimum.
+<a name="odata_query_too_wide"></a>
+Some project administrators havily customize their processes by adding custom fields. This can lead to performance issues when fetching all the available columns on very wide entities (e.g. `WorkItems`). Please notice that Analytics Service is built on top of a *Columnstore Index* technology which means that data is both storage and query processing is column-based. Therefore, the more properties are refernced in the query, the more expensive it is going to be. You should always aim to limit the set of properties to what you really care about in your reporting scenario.
+
+
+### **✔️ CONSIDER** filterig on date surrogate key properties (`DateSK` suffix).
 >[!IMPORTANT] Not ready for review.
 
 ```odata
