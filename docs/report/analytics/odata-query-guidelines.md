@@ -231,9 +231,35 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
 ```
 
 ### **✔️ DO** specify time zone when filtering on date columns.
->[!IMPORTANT] Not ready for review.
+All the date and time information is exposed with a time zone (`Edm.DateTimeOffset`) and an offset that matches account time zone settings. This is great as the data is precise and simple to interpret at the same time. Another consequence, which might be not so obvious, is that all the filters have to pass the time zone information as well. If you skip it, you will get the following error message.
 
-https://stackoverflow.microsoft.com/questions/21550/date-filters-using-the-analytics-service-return-a-no-coercion-operator-is-defin
+> *The query specified in the URI is not valid. No datetime offset was specified.  Please use either of these formats YYYY-MM-ddZ to specify everything since midnight or yyyy-MM-ddThh:mm-hh:mm (ISO 8601 standard representation of dates and times) to specify the offset.*
+
+The error message explains it well. The only thing you need to do solve this problem is adding the time zone information. For example, assuming that the account is configured to display data in "*(UTC-08:00) Pacific Time (US & Canada)*" time zone, the following query gets all the work items created since the beginning of 2017.
+```odata
+https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+  $filter=CreatedDate ge 2017-01-01T00:00:00-08:00
+  &$select=WorkItemId, Title, State
+```
+
+The same solution works for time zones with positive offsets, however, plus character (`+`)  has a special meaning in the URI and it has to be handled accordingly. If you specify `2017-01-01T00:00:00+08:00` (with a `+` character) as your starting point you will get the following error.
+
+> *The query specified in the URI is not valid. Syntax error at position 31 in 'CreatedDate ge 2017-01-01T0000 08:00'.*
+
+To solve it you need to replace `+` character with its encoded version `%2B`. For example, assuming that the account is configured to display data in "*(UTC+08:00) Beijing, Chongqing, Hong Kong, Urumqi*" time zone, the following query gets all the work items created since the beginning of 2017.
+```odata
+https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+  $filter=CreatedDate ge 2017-01-01T00:00:00%2B08:00
+  &$select=WorkItemId, Title, State
+```
+
+Alternative approach is to use date surrogate key properties as they do not keep the time zone information. For example, the following query gets all the work items created since the beginning of 2017 regardless the account settings.
+
+```odata
+https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+  $filter=CreatedDateSK ge 20170101
+  &$select=WorkItemId, Title, State
+```
 
 
 ## Performance guidelines
