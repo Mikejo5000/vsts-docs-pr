@@ -397,11 +397,26 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
 ```
 
 
-### **❌ DO NOT** use unbounded expansion (`$levels=max`)
->[!IMPORTANT] Not ready for review.
+### **❌ DO NOT** use unbounded expansion with `$levels=max`
+OData has a interesting capability of expanding all the levels of a hierarchical structure. In Analytics Service there exists some entities where such unbounded expansion could be applied. This operation does work only for really small accounts because it does not scale well with the account size. Please do not use it at all if you are working with large accounts or you are developing a widget and you have no control over where it is going to be installed.
 
-### **❌ DO NOT** use `$top` and `$skip` options to implement paging.
->[!IMPORTANT] Not ready for review.
+
+### **✔️ DO** use server-driven paging strategy.
+If you ask for a set that is too large to be sent in a single response Analytics Service will apply paging. The response will include only a partial set and a link that allows retrieving the next partial set of items. This strategy is described in the OData specifiction - [OData Version 4.0. Part 1: Protocol - Server-Driven Paging](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Server-Driven_Paging). By letting the service control the paging you get the best performance as the `skiptoken` has been carefully design for each entity to be as efficient as possible.
+
+The link to the next page is included in the `@odata.nextLink` property.
+```json
+{
+  "@odata.context": "https://{account}.analytics.visualstudio.com/_odata/v1.0/$metadata#WorkItems(*)",
+  "value": [
+    ...
+  ],
+  "@odata.nextLink":"https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?$skiptoken=12345"}
+```
+
+
+### **❌ DO NOT** use `$top` and `$skip` query options to implement client-driven paging.
+Working with other REST API's you might want to implement client-driven paging with `$top` and `$skip` query options. Please do not do it. There are several problems with this approach and performance is one of them. Instead please adopt the server-driven paging strategy explained in the previous section.
 
 
 ### **✔️ CONSIDER** writting query to return small number of records.
