@@ -246,7 +246,7 @@ The same solution works for time zones with positive offsets, however, plus char
 
 > *The query specified in the URI is not valid. Syntax error at position 31 in 'CreatedDate ge 2017-01-01T0000 08:00'.*
 
-To solve it you need to replace `+` character with its encoded version `%2B`. For example, assuming that the account is configured to display data in "*(UTC+08:00) Beijing, Chongqing, Hong Kong, Urumqi*" time zone, the following query gets all the work items created since the beginning of 2017.
+To solve it you need to replace `+` character with its encoded version - `%2B`. For example, assuming that the account is configured to display data in "*(UTC+08:00) Beijing, Chongqing, Hong Kong, Urumqi*" time zone, the following query gets all the work items created since the beginning of 2017.
 ```odata
 https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
   $filter=CreatedDate ge 2017-01-01T00:00:00%2B08:00
@@ -254,7 +254,6 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
 ```
 
 Alternative approach is to use date surrogate key properties as they do not keep the time zone information. For example, the following query gets all the work items created since the beginning of 2017 regardless the account settings.
-
 ```odata
 https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
   $filter=CreatedDateSK ge 20170101
