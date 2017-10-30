@@ -429,12 +429,14 @@ Some project administrators havily customize their processes by adding custom fi
 
 
 ### **✔️ CONSIDER** filterig on date surrogate key properties (`DateSK` suffix).
->[!IMPORTANT] Not ready for review.
+There are many ways you can define a date filter. You can filter on the date property directly (e.g. `CreatedDate`), its navigation counterpart (e.g. `CreatedOnDate`) or its surrogate key representation (e.g. `CreatedDate`). The last option yields the best performance and should always be preffered if the reporting requirements allow for it.
 
+For example, the query below gets all the work items created since the beginning of 2017.
 ```odata
 https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
-  $filter=CreatedDateSK eq {createdDateSK}
+  $filter=CreatedDateSK ge 20170101
 ```
+
 
 ### **✔️ CONSIDER** filterig on surrogate key columns.
 If you want to filter the data on the value of related object (e.g. filtering work item on project name) you always have two choices. You can either use the navigation property (e.g. `Project/ProjectName`) or capture the *surrogate key* up-front and use it directly in the query (e.g. `ProjectSK`). If you are building a widget you should always prefer the latter option. When the key is passed as part of the query the number of entity sets that have to be touched goes down and the performance improves.
@@ -444,6 +446,7 @@ For example, the query below filters `WorkItems` using `ProjectSK` property rath
 https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
   $filter=ProjectSK eq {projectSK}
 ```
+
 
 ### **❌ AVOID** using Parent, Child or Revision properties in a `$filter` or `$expand` clauses
 <a name="ODATA_QUERY_PARENT_CHILD_RELATIONS"></a>
