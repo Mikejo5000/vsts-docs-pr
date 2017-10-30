@@ -1,6 +1,6 @@
 ---
 title: How to aggregate data using the OData Analytics Service for VSTS  
-description: How to aggregate data with the Analytics Service
+description: How to aggregate data with the Analytics Service (SEO; aggregation extension in odata, filtering of aggregated results)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
 ms.assetid: 8D81FEFD-F432-4E10-A415-9167B5FE9A57 
@@ -17,16 +17,20 @@ ms.date: 08/04/2017
 
 Using the OData analytics service, you can aggregate data. 
 
-There are two ways to aggregate data. The simple approach, which doesn't use aggregation extensions, only provides access to counts of data. The more advanced approach performs aggregations available via the aggregation extensions. 
+##What is the Aggregation Extension for OData?
+
+Analytics relies on OData to author queries over your VSTS data. Aggregations in OData are achieved using an extension that introduces the ```$apply``` keyword. We have some examples of how to use this keyword below. Learn more about the extension at [OData Extension for Data Aggregation](http://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html).
+
+There are two ways to aggregate data. The simple approach without using aggregation extension provides just the count of data. The more advanced approach performs aggregations available via the aggregation extensions. 
 
 In this topic, the basic root URL is constructed as:
 
 ```
-https://{account}.analytics.visualstudio.com/_odata/v1.0-preview
+https://{account}.analytics.visualstudio.com/_odata/v1.0
 ``` 
 
 
-All additional URL parts are specified as an additional part of the query string as shown in the examples below.   
+Use the above URL as a prefix for all the examples.   
 
 
 ##Simple count aggregations
@@ -46,24 +50,28 @@ For simple counts, the non-aggregation approach has a simpler syntax.
  
 
 >[!NOTE]  
->There is one other difference in these approaches: using ```$count``` returns a scalar value, that is a single number. Using aggregation extensions returns a formatted JSON result.  
+>There is one other difference in these approaches: Using ```$count``` returns a single number. Using aggregation extensions returns a formatted JSON.  
   
 
 You can also filter what you want to count. For example, if you want to know how many work items are in the "In Progress" state, specify this query:
 
     /WorkItems/$count?$filter=State eq 'In Progress'
 
+For comparison, using data aggregations you enter this query:
+
+    /WorkItems?$apply=filter(State eq 'In Progress')/aggregate($count as Count)
+
+
 ## Aggregate data using aggregation extensions
 
-Now that you've seen how to do basic aggregations with ```count```, let's look at more complex examples that help solve real-world problems.  
-
->[!NOTE]  
->At this time, aggregation extensions are not supported by any of our client tools although they are being looked at. We've come up with a simple workaround which is explained in the Power BI client documentation.  
+Now that you've seen how to do basic aggregations with count, let's look at more complex examples.
  
 
 First, using OData, you trigger aggregations using the ```$apply``` token at the end of the URL. The basic format is:
 
-    /[entity name]?$apply=aggregate([column to aggregate] with [aggregation type] as [new column name])
+    /{entityName}?$apply=aggregate({columnToAggregate} with {aggregationType} as {newColumnName})
+
+{entityName} is the entity that needs to be queried for. {columnToAggregate} is the aggregation column. {aggregationType} will specify the type of aggregation used and {newColumnName} specifies the name of the column having values after aggregation.
 
 ### Additional examples 
 
@@ -105,35 +113,56 @@ Add the ```groupby``` clause to return a count of work items by type:
 
 This returns a result similar to the following:
 
+```JSON
     {
-      "@odata.context":"https://{account}.analytics.visualstudio.com/_odata/v1.0-preview/$metadata#WorkItems(WorkItemType,Count)","value":[
+      "@odata.context":"https://{account}.analytics.visualstudio.com/_odata/v1.0/$metadata#WorkItems(WorkItemType,Count)","value":[
+	    {
+          "@odata.id":null,"WorkItemType":"Bug","Count":3
+        },
         {
-          "@odata.id":null,"WorkItemType":"Issue","Count":220
-        },{
-          "@odata.id":null,"WorkItemType":"Test Plan","Count":469
-        },{
-          "@odata.id":null,"WorkItemType":"Product Backlog Item","Count":915
-        },{
-          "@odata.id":null,"WorkItemType":"Scenario","Count":1382
-        },{
-          "@odata.id":null,"WorkItemType":"Test Suite","Count":6328
-        },{
-          "@odata.id":null,"WorkItemType":"Feature","Count":9829
-        },{
-          "@odata.id":null,"WorkItemType":"Test Case","Count":29516
-        },{
-          "@odata.id":null,"WorkItemType":"User Story","Count":47714
-        },{
-          "@odata.id":null,"WorkItemType":"Bug","Count":63621
-        },{
-          "@odata.id":null,"WorkItemType":"Task","Count":106469
+          "@odata.id":null,"WorkItemType":"Product Backlog Item","Count":13
         }
       ]
     }
+```
 
 You can also group by multiple properties as in the following:
 
     /WorkItems?$apply=groupby((WorkItemType, State), aggregate($count as Count))
+
+This returns a result similar to the following:
+
+```JSON
+    {
+      "@odata.context": "https://{account}.analytics.visualstudio.com/_odata/v1.0/$metadata#WorkItems(WorkItemType,State,Count)",
+      "value": [
+        {
+          "@odata.id": null,
+          "State": "Active",
+          "WorkItemType": "Bug",
+          "Count": 2
+        },
+		{
+          "@odata.id": null,
+          "State": "Committed",
+          "WorkItemType": "Bug",
+          "Count": 1
+        },
+        {
+          "@odata.id": null,
+          "State": "Active",
+          "WorkItemType": "Product Backlog Item",
+          "Count": 5
+        },
+		{
+          "@odata.id": null,
+          "State": "Committed",
+          "WorkItemType": "Product Backlog Item",
+          "Count": 8
+        }
+      ]
+    }
+```
 
 You can also group across entities, however OData grouping differs from how you might normally think about it. 
 
@@ -158,13 +187,13 @@ Filters look like the following:
 
 When you want to provide multiple pieces of information, such as the sum of completed work and separately the sum of remaining work., you can accomplish this with separate calls or with a single call as follows:  
 
-```/WorkItems?$apply=aggregate(CompletedWork with sum as SumOfCompletedWork, RemainingWork with sum as SumOfRemainingWork)```
+    /WorkItems?$apply=aggregate(CompletedWork with sum as SumOfCompletedWork, RemainingWork with sum as SumOfRemainingWork)
 
 This will return a result that looks like the following:
 
-```
+```JSON
 {
-  "@odata.context":"https://{account}.analytics.visualstudio.com/_odata/v1.0-preview/$metadata#WorkItems(SumOfCompletedWork,SumOfRemainingWork)","value":[
+  "@odata.context":"https://{account}.analytics.visualstudio.com/_odata/v1.0/$metadata#WorkItems(SumOfCompletedWork,SumOfRemainingWork)","value":[
     {
       "@odata.id":null,"SumOfCompletedWork":1525841.2900000005,"SumOfRemainingWork":73842.39
     }
@@ -173,36 +202,53 @@ This will return a result that looks like the following:
 
 ```
 
-##The benefits of aggregation, a real world example
+##The benefits of aggregation, a real world example - Cumulative Flow Diagram
 
-Let's say you want to create a cumulative flow diagram in Power BI. To start off with you need to retrieve
-the data. In a normal circumstance you would use a query like the following (this query is explained in the
-WIT Analytics topic):
+Let's say you want to create a [cumulative flow diagram](…/guidance/cumulative-flow-cycle-lead-time-guidance.md) in Power BI. You can use a query similar to the one below:
 
 ```
-https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0-preview/WorkItemBoardSnapshot?$filter=BoardLocation/Team/TeamName eq '[team name]'
-and BoardLocation/BoardName eq 'Microsoft.RequirementCategory'&$expand=Date,BoardLocation
+https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItemBoardSnapshot?$apply=filter(DateValue gt 2015-07-16Z and DateValue le 2015-08-16Z)/filter(BoardLocation/BoardName eq 'Stories' and BoardLocation/Team/TeamName eq '{teamName}')/groupby((DateValue, BoardLocation/ColumnName), aggregate(Count with sum as Count))&$orderby=DateValue
+```
+This returns a result similar to the following:
+
+```JSON
+{
+  "@odata.context": "https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItemBoardSnapshot(DateValue,BoardLocation(ColumnName),Count)",
+  "value": [
+    {
+      "@odata.id": null,
+      "DateValue": "2015-07-16T00:00:00-07:00",
+      "Count": 324,
+      "BoardLocation": {
+        "@odata.id": null,
+        "ColumnName": "Completed"
+      }
+    },
+    {
+      "@odata.id": null,
+      "DateValue": "2015-07-16T00:00:00-07:00",
+      "Count": 5,
+      "BoardLocation": {
+        "@odata.id": null,
+        "ColumnName": "In Progress"
+      }
+    }
+  ]
+}
 ```
 
-This query returns every work item for every day for a given team with no aggregations. In a single test on a small project (just 10 days worth of data)
-it returned 471 rows. The CFD can be created with this data.
+This result can be directly used by your data visualization of choice.
 
-This is what an aggregation query looks like for the exact same data:
+ Let's take a look at what this query actually does:
 
-```
-https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0-preview/WorkItemBoardSnapshot?$apply=filter(BoardLocation/Team/TeamName eq '[team name]')/filter(BoardLocation/BoardName eq 'Microsoft.RequirementCategory')/groupby((Date/Date,BoardLocation/ColumnName,BoardLocation/ColumnOrder), aggregate($count as Count))
-```
+* Filters the data down to a specific team.
+* Filters the data to a specific backlog.
+* Group by the Date (in the related Date entity).
+* Group by the ColumnName (in the related BoardLocation entity).
+* Group by the ColumnOrder (in the related BoardLocation entity).
+* Get a count of work items.
 
-This query returns 41 rows. That's better than a 10x reduction in data. Let's take a look at what this query actually does.
-
-* Filter the data down to the team we want the data for
-* Filter the data to the specific backlog (the default boards are "Microsoft.ScenarioCategory, Microsoft.FeatureCategory and Microsoft.RequirementCategory")
-* Group by the Date (in the related Date entity)
-* Group by the ColumnName (in the related BoardLocation entity)
-* Group by the ColumnId (in the related BoardLocation entity) - note that this is used for ordering the column name correctly and it needs to be returned in the query results
-* Get a count of work items
-
-When refreshing a Power BI workbook and/or PowerBI.com or Excel, the fewer rows required, the faster the refresh occurs.
+When refreshing Power BI or Excel, the fewer rows required, the faster the refresh occurs.
 
 
 ##Related notes 
