@@ -16,9 +16,9 @@ ms.date: 10/20/2017
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
 ## How to query the service for metadata
-This introductory tutorial provides guidance on how to explore Analytics metadata. Understanding the metadata for Analytics is a pre-requisite for programmatically querying the [Analytics OData v4 endpoint](data-model-analytics-service.md).
+This introductory tutorial provides guidance for exploring Analytics metadata.  The metadata is important because it provides a machine readable description of the entity model designed to enable client consumption. Understanding the metadata associated with the entity model is a pre-requisite for programmatically querying the [Analytics OData v4 endpoint](data-model-analytics-service.md).
 
-Analytics exposes the [OData v4 entity model](http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.doc) at the metadata URL, formed by appending $metadata to the service root URL. Analytics provides service roots for the [Projects or entire Account](account-scoped-queries.md).
+Analytics exposes the [entity model](http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.doc) at the metadata URL, formed by appending $metadata to the service root URL. Analytics provides service roots for the [Projects or entire Account](account-scoped-queries.md).
 
 
 ### Querying for metadata on a specific Team Project
