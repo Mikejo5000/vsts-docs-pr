@@ -38,6 +38,7 @@ Future:
 - [Connect to Power BI via the Data Connector](data-connector-connect.md)     
 - [Client authentication Options](../analytics/client-authentication-options.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json)
 - [Power BI desktop and OData aggregations](../analytics/using-odata-aggregations-with-power-bi-desktop.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json)    
+- [Create custom calculations](../analytics/custom-calculations.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json)  
 - [Share reports, publish to PowerBI.com](../analytics/publishing-power-bi-desktop-to-power-bi.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json)    
 
 ### Power BI Content Pack 

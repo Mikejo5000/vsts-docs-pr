@@ -48,6 +48,7 @@ Start gaining visibility into how your team is progressing by adding one or more
 
 ## Reference 
 - [Widget catalog](widget-catalog.md)  
+- [Analytics Widgets in VSTS](guidance/analytics-widgets-VSTS.md) 
  
 ## Resources 
 

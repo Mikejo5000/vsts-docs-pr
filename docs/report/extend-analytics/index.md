@@ -58,7 +58,10 @@ Build a widget that uses the Analytics Service
 -->
 
 ## Reference
-- [Supported OData feature & Operations](wit-analytics.md)    
+- [Query your work tracking data using the OData Analytics service](wit-analytics.md)    
+- [OData API versioning](odata-api-version.md) 
+- [OData Query Guidelines](odata-query-guidelines.md) 
+- [Supported OData features & Operations](odata-supported-features.md) 
    
 ## Resources
 - [VSTS Analytics Service](../analytics/index.md)

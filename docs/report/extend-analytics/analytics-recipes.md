@@ -44,7 +44,7 @@ https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$fi
 https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$apply=groupby((Project/ProjectName), aggregate($count as Count))
 ```
 
-This query will fail when the user does not have access to all the projects. Read more about [account scoped queries](Account-scoped-queries.md).
+This query will fail when the user does not have access to all the projects. Read more about [account scoped queries](account-scoped-queries.md).
 
 **Retrieve all work items for a given iteration which fall between the first day of the iteration and the last day of the iteration**
 
@@ -74,4 +74,4 @@ https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$fi
 
 - [WIT analytics](wit-analytics.md)  
 - [Aggregate data](aggregated-data-analytics.md)
-- [Overview of the analytics service](overview-analytics-service.md)
+- [Overview of the analytics service](../analytics/overview-analytics-service.md)

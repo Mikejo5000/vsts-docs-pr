@@ -54,6 +54,8 @@
     href: ../collaborate/markdown-guidance.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json
   - name: Default dashboard permissions and access
     href: charts-dashboard-permissions-access.md
+  - name: Analytics Widgets in VSTS
+    href: guidance/analytics-widgets-VSTS.md
 - name: Resources
   items:
   - name: Agile

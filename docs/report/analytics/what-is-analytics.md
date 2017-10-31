@@ -29,7 +29,7 @@ For example, the Velocity Widget provides insights to your team's historical per
 
 Here, the Velocity widget shows this team has a history of closing stories late. It  also shows a discrepancy between planned and completed work over the past 4 sprints. The team can drill into the data to determine the root causes. After implementing new practices, the team can use the Velocity widget to track their effectiveness.
 
-Widgets provide the easiest way to get insights from your data. Check out [Enable and use the Analytics Services](enable-analytics-velocity.md) for a step-by-step guide to get started with the Velocity Widget.
+Widgets provide the easiest way to get insights from your data. Check out [Enable and use the Analytics Services](../guidance/enable-analytics-velocity.md) for a step-by-step guide to get started with the Velocity Widget.
 
 If you want to develop your own widget based on the Analytics Service, check out [Build a widget that uses the Analytics Service.]()
 
