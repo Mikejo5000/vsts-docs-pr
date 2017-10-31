@@ -23,7 +23,7 @@
   - name: Configure or view Velocity charts
     href: guidance/team-velocity.md
   - name: Work with sprint burndown
-    href: ../work/scrum/sprint-burndown.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json
+    href: ../../work/scrum/sprint-burndown.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json
 - name: Concepts
   items:
   - name: "Analytics widgets (VSTS)"
@@ -43,7 +43,7 @@
   - name: Configure work item query-based charts
     href: charts.md
   - name: "Configure test status, progress, & result charts"
-    href: ../manual-test/getting-started/track-test-status.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json
+    href: ../../manual-test/getting-started/track-test-status.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json
   - name: Set dashboard permissions
     href: dashboard-permissions.md
 - name: Reference
@@ -51,7 +51,7 @@
   - name: Widget catalog
     href: widget-catalog.md
   - name: Markdown guidance
-    href: ../collaborate/markdown-guidance.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json
+    href: ../../collaborate/markdown-guidance.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json
   - name: Default dashboard permissions and access
     href: charts-dashboard-permissions-access.md
 - name: Resources

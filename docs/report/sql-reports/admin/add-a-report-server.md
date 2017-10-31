@@ -11,10 +11,10 @@ ms.date: 10/17/17
 
 # Add a report server
 
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+[!INCLUDE [temp](../../_shared/tfs-header-17-15.md)]
 
 >[!IMPORTANT]
->**Feature availability**: You can only add a report server to an on-premises TFS.  If you're using VSTS, adding a report server isn't a supported option, instead, you can use [PowerBI](../powerbi/overview.md).
+>**Feature availability**: You can only add a report server to an on-premises TFS.  If you're using VSTS, adding a report server isn't a supported option, instead, you can use [PowerBI](../../powerbi/overview.md).
 
 This is the first task in the four-task sequence to add reports to a team project. If you have already installed SQL Reporting Services and Analysis Server, then go to step 2 to upload reports.
 
@@ -42,7 +42,7 @@ On-premises installations of TFS can include reports to help you manage your sof
 
 ####Q: Can I add reporting if TFS is installed on a client operating system?
 
-**A:** No. You can't add reporting and analysis services on a client operating system. Your choices aren't easy. If you still want to add reporting, either [move the team project collection](../../tfs-server/admin/move-project-collection.md) to a deployment of TFS that supports reporting, or [restore your entire deployment to a different server](../../tfs-server/admin/backup/tut-single-svr-home.md) that is running a server operating system and a version of SQL Server that supports reporting.
+**A:** No. You can't add reporting and analysis services on a client operating system. Your choices aren't easy. If you still want to add reporting, either [move the team project collection](../../../tfs-server/admin/move-project-collection.md) to a deployment of TFS that supports reporting, or [restore your entire deployment to a different server](../../../tfs-server/admin/backup/tut-single-svr-home.md) that is running a server operating system and a version of SQL Server that supports reporting.
 
 ####Q: How do I find out if I already have reporting available for TFS?
 
@@ -54,7 +54,7 @@ Jump to the bottom of this topic to confirm that reports are available for the t
 
 ####Q: Do I need to back up my data first?
 
-**A:** You should have a recent backup available. If you don't, you can [make a backup using Scheduled Backups](../../tfs-server/admin/backup/config-backup-sched-plan.md).
+**A:** You should have a recent backup available. If you don't, you can [make a backup using Scheduled Backups](../../../tfs-server/admin/backup/config-backup-sched-plan.md).
 
 <!-- ENDSECTION -->
 
@@ -149,7 +149,7 @@ You'll need to add reporting in two places: to TFS itself, and then to your team
 
 	**Tip:** Because you're configuring reporting for the first time, the databases don't exist yet. They will be created when you finish the configuration process.
 
-3. Provide the same server and instance information for **Analysis Services**, but use the default name for the analysis database (TFS_Analysis). Provide an account name and password for a data sources account, a special account you've created just for this purpose as described in [Service accounts and dependencies in TFS](../../tfs-server/admin/service-accounts-dependencies-tfs.md). 
+3. Provide the same server and instance information for **Analysis Services**, but use the default name for the analysis database (TFS_Analysis). Provide an account name and password for a data sources account, a special account you've created just for this purpose as described in [Service accounts and dependencies in TFS](../../../tfs-server/admin/service-accounts-dependencies-tfs.md). 
 
 	![You'll need to add the reader account information](_img/analysis-services.png)  
 
@@ -183,19 +183,19 @@ Now that you've added reporting to the server and to the team project collection
 ##Related content
 You can learn more about installing and configuring SQL Server for use with on-premises TFS from these topics:  
 
-*  [Supported versions and editions](../../tfs-server/requirements.md#sql-server)  
-*  [Working with named instances](../../tfs-server/install/sql-server/install-sql-server.md)  
-*  [Using SQL Server 2012 AlwaysOn](../../tfs-server/install/sql-server/use-always-on-groups.md)  
-*  [Understanding how TFS, SQL Server, and Reporting all work together](../../tfs-server/architecture/sql-server-databases.md)   
+*  [Supported versions and editions](../../../tfs-server/requirements.md#sql-server)  
+*  [Working with named instances](../../../tfs-server/install/sql-server/install-sql-server.md)  
+*  [Using SQL Server 2012 AlwaysOn](../../../tfs-server/install/sql-server/use-always-on-groups.md)  
+*  [Understanding how TFS, SQL Server, and Reporting all work together](../../../tfs-server/architecture/sql-server-databases.md)   
 
 ###Set permissions
 
-- [Set administrator permissions](../../tfs-server/add-administrator-tfs.md)  
+- [Set administrator permissions](../../../tfs-server/add-administrator-tfs.md)  
 
 
 ###Change the data reader account  
 
-- [Change the service account or password for SQL Server Reporting Services](../../tfs-server/admin/change-service-account-or-password-sql-reporting.md)
-- [Service accounts and dependencies in Team Foundation Server](../../tfs-server/admin/service-accounts-dependencies-tfs.md) 
+- [Change the service account or password for SQL Server Reporting Services](../../../tfs-server/admin/change-service-account-or-password-sql-reporting.md)
+- [Service accounts and dependencies in Team Foundation Server](../../../tfs-server/admin/service-accounts-dependencies-tfs.md) 
 
 

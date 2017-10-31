@@ -23,13 +23,13 @@ Share progress and status with your team using configurable team dashboards. Das
 
 The Overview page provides access to a default team dashboard which you can customize by adding, removing, or rearranging the tiles. Each tile corresponds to a widget that provides access to one or more features or functions.   
 
-Anyone with access to the team project, including [stakeholders](../security/get-started-stakeholder.md), can view dashboards. However, only team admins can add or modify dashboards. 
+Anyone with access to the team project, including [stakeholders](../../security/get-started-stakeholder.md), can view dashboards. However, only team admins can add or modify dashboards. 
 
-If you need to add a team first, see [add teams and team members](../work/scale/multiple-teams.md). 
+If you need to add a team first, see [add teams and team members](../../work/scale/multiple-teams.md). 
 
 ## Connect to the web portal for your team project 
 
-To add and manage dashboards, you connect to your team project using a [supported web browser](../tfs-server/requirements.md#supported-browsers). If you don't have a team project yet, create one in [VSTS](../accounts/create-account-msa-or-work-student.md) or set one up in an [on-premises TFS](../accounts/create-team-project.md).  
+To add and manage dashboards, you connect to your team project using a [supported web browser](../../tfs-server/requirements.md#supported-browsers). If you don't have a team project yet, create one in [VSTS](../../accounts/create-account-msa-or-work-student.md) or set one up in an [on-premises TFS](../accounts/create-team-project.md).  
 
 Open a browser window and click the **Dashboards** hub. 
 

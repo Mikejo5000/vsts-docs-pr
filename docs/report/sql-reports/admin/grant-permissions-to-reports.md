@@ -12,7 +12,7 @@ ms.date: 10/17/17
 
 # Grant permissions to view or create SQL Server reports in TFS
 
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+[!INCLUDE [temp](../../_shared/tfs-header-17-15.md)]
 
 This is the third task in the four-task sequence to add reports to your team project. You can use the procedures in this topic to set permissions to view or author reports.  
 
