@@ -14,10 +14,6 @@ ms.date: 10/30/2017
 **VSTS**  
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]  
-<!--
-## Overview
-- [What is the Analytics Service](..\analytics\overview-analytics-service.md) 
--->
 
 ## 5-Minute QuickStarts
 

@@ -74,4 +74,3 @@ https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$fi
 
 - [WIT analytics](wit-analytics.md)  
 - [Aggregate data](aggregated-data-analytics.md)
-- [Overview of the analytics service](../analytics/overview-analytics-service.md)

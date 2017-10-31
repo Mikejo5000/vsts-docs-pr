@@ -89,6 +89,5 @@ The last three properties here show that the same value is often expressed in mu
 
 - [WIT analytics](wit-analytics.md)  
 - [Aggregate data](aggregated-data-analytics.md)
-- [Overview of the analytics service](../analytics/overview-analytics-service.md)
 
 
