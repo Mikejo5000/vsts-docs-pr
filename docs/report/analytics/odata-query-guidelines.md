@@ -114,11 +114,19 @@ This solution can only be applied if you are interested in the data from a singl
 ### **️️✔️ DO** wait or stop the operation if your query exeeded usage limits.
 If you execute a lot of queries or the queries require a lot of resources to run you might exceed the limits and get temporarily blocked. Should this happen, please stop the operation as chances are that the next query you send will fail with the same error message.
 
-> *Request was blocked due to exceeding usage of resource '{resource}' 
-in namespace '{namespace}'.*
+> *Request was blocked due to exceeding usage of resource '{resource}' in namespace '{namespace}'.*
 
 For more information on rate limiting, see "Rate limits" topic. 
-To learn more about how to design efficient OData queries please refer to [Performance Guidelines](#performance-guidelines) section.
+To learn how to design efficient OData queries please refer to [Performance Guidelines](#performance-guidelines) section.
+
+
+### **️️✔️ DO** wait or stop the operation if your query fails with a timeout.
+<a name="question-41065"></a>
+Similarly to esceeding usage limits, you should wait or stop the operation if your query hits timeout. There is a chance that this is transient problem and it makes sense to retry once, but if the timeouts are persisting the query is probably too expensive to run and retrying will only result in exceeding usage limits and you will get blocked.
+
+> *TF400733: The request has been canceled: The request has exceeded request timeout, please try again.*
+
+Timeout is a good indication that the query is expensive and should be optimized. To learn how to design efficient OData queries please refer to [Performance Guidelines](#performance-guidelines) section.
 
 
 ### **❌ [BLOCKED] DO NOT** use snapshot entities for anything other than aggregations.
@@ -201,7 +209,7 @@ Groupping operation is intended to reduce the number of records. Using distinct 
 
 
 ### **✔️ DO** use batch endpoint for long queries.
-Sometimes you may run into problems with very long queries. This can happen when you work with project with a lot of custom fields or your query gets constructed programatically. The current limit for OData queries sent with `HTTP GET` is 3000 characters. If you you exeed it, you will get "*404 Not Found*" response back.
+Sometimes you may run into problems with very long queries. This can happen when you work with project with a lot of custom fields or your query gets constructed programatically. The current limit for OData queries sent with `HTTP GET` is 3,000 characters. If you you exeed it, you will get "*404 Not Found*" response back.
 
 ```http
 HTTP/1.1 404 Not Found
@@ -458,7 +466,7 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
 ```
 
 
-### **❌ AVOID** using `Parent`, `Children` or `Revisions` properties in `$filter` or `$expand` clauses.
+### **❌ AVOID** using `Parent`, `Children` or `Revisions` properties in the `$filter` or `$expand` clauses.
 <a name="odata_query_parent_child_relations"></a>
 Work items are the most expensive entities in the whole model. They have several navigation properties that can be used to access related work items: `Parent`, `Children`, `Revisions`. Every time you use them in your queries you should expect performance decline. Therefore, you should always question if they are necessary and potentially update your design. For example, instead of expanding `Parent` you can fetch more work items and use `ParentWorkItemId` property to recostruct the full hiearchy client-side. Such optimization has to be done on the case-by-case basis.
 
@@ -475,15 +483,6 @@ OData-MaxVersion: 4.0
 Accept: application/json;odata.metadata=minimal
 Host: {account}.analytics.visualstudio.com
 ```
-
-
-### **❌ AVOID** sending more requests after you received a timeout error.
->[!IMPORTANT] Not ready for review.
-
-https://stackoverflow.microsoft.com/questions/41065/how-do-i-resolve-error-the-request-has-exceeded-request-timeout-please-try-aga
-```
-message: "TF400733: The request has been canceled: The request has exceeded request timeout, please try again.",
-```       
 
 
 ## Query style guidelines
@@ -508,6 +507,18 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
 ```
 
 
+### **✔️ CONSIDER** using parameter aliases to separate volatile parts of the query.
+Parameter aliases provide an elegant solution to extract volatile parts such as parameter values from the main query text. They can be used in of expressions that evaluate to a primitive value, a complex value, or a collection of primitive or complex values as explained in the specification - [OData Version 4.0. Part 2: URL Conventions - 5.1.1.13 Parameter Aliases](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc444868740). Parameters are particularly useful when the query text is used as a template that can be instantiated with user supplied values.
+
+For example, the following query uses `@createdDateSK` parameter to separate the value from the filter expression.
+```odata
+https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+  $filter=CreatedDateSK ge @createdDateSK
+  &$select=WorkItemId, Title, State
+  &@createdDateSK=20170101
+```
+
+
 ### **❌ AVOID** mixing `$apply` and `$filter` clauses in a single query.
 If you want to add filter to your query you have two options. You can either do it with `$filter` clause or `$apply=filter()` combination. Each one of these options works great on its own, but combining them together might lead to some unexpected results. Despite the expectation one might have, OData clearly defines an order of the evaluation and `$apply` clause has priority over `$filter`. For this reason, you should choose one or another but avoid these two filter option in a single query. This is particularly important if the queries are generated automatically.
 
@@ -524,16 +535,16 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
 ```
 
 
-### **✔️ CONSIDER** using parameter aliases to separate volatile parts of the query.
->[!IMPORTANT] Not ready for review.
-
-[OData Version 4.0. Part 2: URL Conventions - 5.1.1.13 Parameter Aliases](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc444868740)
-
-
 ### **✔️ CONSIDER** structuring your query to match the OData evaluation order.
->[!IMPORTANT] Not ready for review.
+Previous section talked about the potential confusion caused by mixing `$apply` and `filter` clauses in a single query. In order to always make it clear you can structure your query to match the evaluation order.
 
-In summary, start with $appply and.
+1. `$apply`
+2. `$filter`
+3. `$orderby`
+4. `$expand`
+5. `$select`
+6. `$skip`
+7. `$top`
 
 
 ### **✔️ CONSIDER** reviewing OData capabilities described in the metadata annotations.
