@@ -208,6 +208,10 @@ Groupping operation is intended to reduce the number of records. Using distinct 
 >*One or more of the columns specified in the groupby clause of this query are not recommended.*
 
 
+### **❌ AVOID** aggregations that can result in arithmetic overflow.
+In rare cases you may run into problems with arithmetic overflow in the aggregation queries. For example, this can happen when you sum some numeric properties which are not intended for summarization such as `StackRank` in the work item entities. Since [OData Extension for Data Aggregation](http://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html) standard does not provide a way to cast a property to a different type, the only way to solve this problem is to remove the problematic property from the aggregation.
+
+
 ### **✔️ DO** use batch endpoint for long queries.
 Sometimes you may run into problems with very long queries. This can happen when you work with project with a lot of custom fields or your query gets constructed programatically. The current limit for OData queries sent with `HTTP GET` is 3,000 characters. If you you exeed it, you will get "*404 Not Found*" response back.
 
