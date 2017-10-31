@@ -40,7 +40,7 @@ The following table contains a detailed overview of the **Data Connector**.
     </tr>
     <tr>
         <td>Data Source</td>
-        <td>[Analytics Service](../analytics/overview-analytics-service.md)<sup> 1</sup></td>
+        <td>[Analytics Service](../analytics/what-is-analytics.md)<sup> 1</sup></td>
     </tr>
     <tr>
         <td>Power BI Service</td>

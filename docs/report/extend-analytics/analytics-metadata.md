@@ -137,7 +137,7 @@ EntitySets represents a collection of entities and associated Navigational Prope
 ```
 
 ### Capabilities
-Capabilities and Aggregation annotations define the set of functions understood by the Analytics OData endpoint.
+Capabilities and Aggregation annotations define the set of [functions](../extend-analytics/odata-supported-features) understood by the Analytics OData endpoint.
 
 ```XML
 <Annotation Term="Org.OData.Capabilities.V1.FilterFunctions">
