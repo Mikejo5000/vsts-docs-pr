@@ -49,10 +49,3 @@ a project level filter instead of using a global query. For information on provi
 ##Related notes 
 
 -  [Power BI integration overview](../powerbi/overview.md)
-
-<!--- 
-[WIT analytics](wit-analytics.md)  
-[Aggregate data](aggregated-data-analytics.md)
-[Overview of the analytics service](overview-analytics-service.md)
- -->
-

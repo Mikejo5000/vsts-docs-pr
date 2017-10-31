@@ -54,11 +54,10 @@ Future:
 ## Reference
 - [Power BI available data](vso-pbi-whats-available-vs.md)    
 - [Data Connector available functions](data-connector-functions.md)    
-- [Analytics Service overview](../analytics/overview-analytics-service.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json)    
 <!-- Note: The above document will be cut, once all content is verified as moved to extend\Analytics-->
 
 ## Resources 
-- [Analytics](../analytics/index.md)    
+- [Analytics Service](../analytics/index.md)    
 - [Extend on Analytics](../extend-analytics/index.md)    
 - [Dashboards, charts, & widgets](../index.md)  
 - [PowerBI Desktop](https://powerbi.microsoft.com/documentation/powerbi-desktop-get-the-desktop/)  

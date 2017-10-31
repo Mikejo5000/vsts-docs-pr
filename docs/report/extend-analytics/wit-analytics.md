@@ -66,9 +66,7 @@ You can apply multiple filters by concatenating the filters:
 Additionally, you can apply various functions such as ```contains```, ```startswith```, ```endswith``` and more. See the [Filter and order by canonical functions](odata-supported-features.md#supported-functions) section later in this topic. 
 
 ## Work with related entities
-Querying work items is helpful, but you will eventually want to be able to filter by other data such as the Iteration Path
-or Area Path or Team Project. To do this, you need to understand the navigation properties of the entity model. You can get metadata using ```/$metadata``` url.
-For details, see  [Metadata](metadata.md) 
+Querying work items is helpful, but you will eventually want to be able to filter by other data such as the Iteration Path or Area Path or Team Project. To do this, you need to understand the navigation properties of the entity model. You can get metadata using ```/$metadata``` url. For details, see [Exploring Analytics OData metadata](analytics-metadata.md) 
 
 Here is a partial view of the metadata for the Work Items entity:
 
