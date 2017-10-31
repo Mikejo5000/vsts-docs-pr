@@ -49,7 +49,7 @@
   - name: CI builds for Git in VSTS
     href: actions/ci-build-git.md
   - name: CI builds for GitHub repo
-    href: actions/ci-build-github.md  
+    href: actions/ci-build-github.md
   - name: Set up multi-stage release
     href: actions/define-multistage-release-process.md
 - name: Concepts
@@ -64,36 +64,36 @@
       href: concepts/agents/hosted.md
     - name: Deployment groups
       href: concepts/definitions/release/deployment-groups/index.md
-  - name: Definitions
+  - name: Builds
     items:
-    - name: Build
-      items:
-      - name: Artifacts
-        href: concepts/definitions/build/artifacts.md
-      - name: History
-        href: concepts/definitions/build/history.md
-      - name: Options
-        href: concepts/definitions/build/options.md
-      - name: Repository
-        href: concepts/definitions/build/repository.md
-      - name: Triggers
-        href: concepts/definitions/build/triggers.md
-      - name: Variables
-        href: concepts/definitions/build/variables.md
-    - name: Release
-      items:
-      - name: Release definitions
-        href: concepts/definitions/release/index.md
-      - name: Environments
-        href: concepts/definitions/release/environments.md
-      - name: Artifacts
-        href: concepts/definitions/release/artifacts.md
-      - name: Triggers
-        href: concepts/definitions/release/triggers.md
-      - name: Variables
-        href: concepts/definitions/release/variables.md
-      - name: Templates
-        href: concepts/definitions/release/env-templates.md
+    - name: Build definitions
+      href: concepts/definitions/build/index.md
+    - name: Repository
+      href: concepts/definitions/build/repository.md
+    - name: Triggers
+      href: concepts/definitions/build/triggers.md
+    - name: Variables
+      href: concepts/definitions/build/variables.md
+    - name: Artifacts
+      href: concepts/definitions/build/artifacts.md
+    - name: History
+      href: concepts/definitions/build/history.md
+    - name: Options
+      href: concepts/definitions/build/options.md
+  - name: Releases
+    items:
+    - name: Release definitions
+      href: concepts/definitions/release/index.md
+    - name: Environments
+      href: concepts/definitions/release/environments.md
+    - name: Artifacts
+      href: concepts/definitions/release/artifacts.md
+    - name: Triggers
+      href: concepts/definitions/release/triggers.md
+    - name: Variables
+      href: concepts/definitions/release/variables.md
+    - name: Templates
+      href: concepts/definitions/release/env-templates.md
   - name: Process
     items:
     - name: Tasks
