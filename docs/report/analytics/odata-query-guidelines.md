@@ -27,7 +27,7 @@ Every time you execute a query it gets checked against a set of predefined rules
 {
   "@odata.context": "https://{account}.tfsallin.net/_odata/v1.0/$metadata#WorkItems",
   "@vsts.warnings": [
-    "The specified query does not include a $select or $apply clause which is recommended for all queries. Details on recommended query patterns are available here: <fwdlink>"
+    "The specified query does not include a $select or $apply clause which is recommended for all queries."
   ],
   ...
 }
@@ -40,12 +40,12 @@ Some rules for OData queries were promoted from warning to error level. Instead 
 {
   "error": {
   "code": "0",
-  "message": "The query specified in the URI is not valid. The Snapshot tables in Analytics are intended to be used only in an aggregation. Details on recommended query patterns are available here: <fwdlink>"
+  "message": "The query specified in the URI is not valid. The Snapshot tables in Analytics are intended to be used only in an aggregation."
   }
 }
 ```
 
-## Restrictions
+## Restrictions guidelines
 
 ### **️️✔️ DO** limit the query to the project(s) you have access to.
 One of the core principles of Analytics Service is that one query returns the same result for all users of fails in a user does not have permissions to the data. There are no implicit filters added based on who runs the query. One consequence is that you, the query author, have to pay attention to project filters to make sure that the target audince will be able to execute them. If a query tries to access the data in a project for which you do not have access, you will get the following error message.
@@ -407,7 +407,7 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
 ### **❌ DO NOT** use `tolower` and `toupper` functions to perform case-insensitive comparison.
 Working with other systems you might expect you need to use `tolower` or `toupper` functions for the case-insensitive comparison. With Analytis Servie all the sting comparison is case-insensitive by default, thus you do not need to apply any functions to explicitly handle it.
 
-For example, the following query gets all the work items tagged with 'QUALITY', 'quality' or any other case combination of this word.
+For example, the following query gets all the work items tagged with "QUALITY", "quality" or any other case combination of this word.
 ```odata
 https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
   $filter=Tags/any(t:t/TagName eq 'quality')
@@ -419,7 +419,7 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
 OData has a interesting capability of expanding all the levels of a hierarchical structure. In Analytics Service there exists some entities where such unbounded expansion could be applied. This operation does work only for really small accounts because it does not scale well with the account size. Please do not use it at all if you are working with large accounts or you are developing a widget and you have no control over where it is going to be installed.
 
 
-### **✔️ DO** use server-driven paging strategy.
+### **✔️ DO** use server-driven paging.
 If you ask for a set that is too large to be sent in a single response Analytics Service will apply paging. The response will include only a partial set and a link that allows retrieving the next partial set of items. This strategy is described in the OData specifiction - [OData Version 4.0. Part 1: Protocol - Server-Driven Paging](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Server-Driven_Paging). By letting the service control the paging you get the best performance as the `skiptoken` has been carefully design for each entity to be as efficient as possible.
 
 The link to the next page is included in the `@odata.nextLink` property.
