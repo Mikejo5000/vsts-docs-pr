@@ -18,14 +18,8 @@ ms.date: 10/20/2017
 ## How to query the service for metadata
 This introductory tutorial provides guidance on how to explore Analytics metadata. Understanding the metadata for Analytics is a pre-requisite for programmatically querying the [Analytics OData v4 endpoint](data-model-analytics-service.md).
 
-Analytics exposes the [OData v4 entity model](http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.doc) at the metadata URL, formed by appending $metadata to the service root URL. Analytics provides service roots for the Account or a specific Project.
+Analytics exposes the [OData v4 entity model](http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.doc) at the metadata URL, formed by appending $metadata to the service root URL. Analytics provides service roots for the [Projects or entire Account](account-scoped-queries.md).
 
-### Querying for metadata on a Account
-The service root URL at the Account level is constructed as:
-
-```
-https://{account}.analytics.visualstudio.com/_odata/v1.0/$metadata
-```
 
 ### Querying for metadata on a specific Team Project
 The service root URL for Analytics at a Project level is constructed as:
@@ -34,7 +28,13 @@ The service root URL for Analytics at a Project level is constructed as:
 https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata
 ```
 
-The resulting metadata is scoped to the Project specified in the URL.
+
+### Querying for metadata on a Account
+The service root URL at the Account level is constructed as:
+
+```
+https://{account}.analytics.visualstudio.com/_odata/v1.0/$metadata
+```
 
 # How to interpret the metadata response
 The core components of the metadata response are EntityType and EntityContainer.
