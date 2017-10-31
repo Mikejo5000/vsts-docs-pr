@@ -15,11 +15,12 @@ ms.date: 10/10/2017
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]  
 
-## Overview
-- [What is Analytics](what-is-analytics.md)  
-
 ## 5-Minute Quickstarts
  - [Enable and use Analytics with Velocity Widget](../guidance/enable-analytics-Velocity.md)
+
+## Concepts
+- [What is Analytics](what-is-analytics.md)  
+
 
 ## How-to Guides
 - [Set permissions for Analytics Service](analytics-security.md)

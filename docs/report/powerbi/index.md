@@ -18,13 +18,10 @@ ms.date: 10/30/2017
 >  
 > Both the Power BI Content Pack and Power BI Data Connector are only available for VSTS.  
 
-<!--
-## Overview
+## Concepts
 - [Power BI integration overview](../powerbi/overview.md)
--->
 
 ## How-to Guides
-
 - [Set permissions for Analytics Service](../analytics/analytics-security.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json)  
 
 <!---

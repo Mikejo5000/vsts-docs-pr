@@ -25,13 +25,7 @@
 - name: Samples
   items:
   - name: Work Item Tracking Analytics Query Examples
-    href: analytics-recipes.md
-  - name: Hub extension
-    href: ..\analytics\building-extension-against-analytics-service.md
-  - name: Widget View
-    href: ..\analytics\widget-extensions-against-analytics-service.md
-  - name: Widget View
-    href: ..\analytics\widget-extension-against-analytics-service-configuration.md
+    href: analytics-recipes.md  
 - name: Reference
   items:
   - name: Query work tracking data

@@ -4,6 +4,10 @@
   items:
   - name: Enable and use Analytics
     href: ../guidance/Enable-analytics-Velocity.md
+- name: Concepts
+  items:
+  - name: What is Analytics
+    href: what-is-analytics.md
 - name: How-to Guides
   items:
   - name: Set permissions for Analytics Service
