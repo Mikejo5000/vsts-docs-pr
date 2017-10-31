@@ -1,21 +1,21 @@
 ---
-title: How to aggregate data using the OData Analytics Service for VSTS  
+title: Aggregate data using the OData Analytics Service for VSTS  
 description: How to aggregate data with the Analytics Service (SEO; aggregation extension in odata, filtering of aggregated results)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
 ms.assetid: 8D81FEFD-F432-4E10-A415-9167B5FE9A57 
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/04/2017
+ms.date: 10/31/2017
 ---
 
-# Aggregate data   
+# Aggregate data using the Analytics service   
 
 **VSTS**  
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
-Using the OData analytics service, you can aggregate data. 
+You can aggregate your VSTS data using the OData Analytics service and the Aggregation Extension.
 
 ##What is the Aggregation Extension for OData?
 
@@ -23,7 +23,7 @@ Analytics relies on OData to author queries over your VSTS data. Aggregations in
 
 There are two ways to aggregate data. The simple approach without using aggregation extension provides just the count of data. The more advanced approach performs aggregations available via the aggregation extensions. 
 
-In this topic, the basic root URL is constructed as:
+Use the following basic root URL as a prefix for all the examples provided in this topic.
 
 ```
 https://{account}.analytics.visualstudio.com/_odata/v1.0
@@ -62,20 +62,18 @@ For comparison, using data aggregations you enter this query:
     /WorkItems?$apply=filter(State eq 'In Progress')/aggregate($count as Count)
 
 
-## Aggregate data using aggregation extensions
+## Aggregate data using aggregation extension
 
-Now that you've seen how to do basic aggregations with count, let's look at more complex examples.
- 
+Now that you've seen how to do simple counts, let's review how to trigger aggregations using the ```$apply``` token where the basic format at the end of the URL is as follows:
 
-First, using OData, you trigger aggregations using the ```$apply``` token at the end of the URL. The basic format is:
 
     /{entityName}?$apply=aggregate({columnToAggregate} with {aggregationType} as {newColumnName})
 
 {entityName} is the entity that needs to be queried for. {columnToAggregate} is the aggregation column. {aggregationType} will specify the type of aggregation used and {newColumnName} specifies the name of the column having values after aggregation.
 
-### Additional examples 
+### Aggregated data examples 
 
-The following are some concrete examples of this functionality:
+Using the ```apply``` extension, you can obtain counts, sums, and additional information when you query your VSTS data. 
 
 **Return the count of work items:**
 
@@ -86,7 +84,7 @@ Work items can also be counted by using the following:
     /WorkItems?$apply=aggregate(WorkItemId with countdistinct as CountOfWorkItems)
 
 
-**Return the count of areas**
+**Return a count of area paths**
 
     /Areas?$apply=aggregate(AreaId with countdistinct as CountOfAreas)
 
@@ -98,7 +96,7 @@ Work items can also be counted by using the following:
 
     /WorkItems?$apply=aggregate(WorkItemId with max as MaxWorkItemId)
 
-###Group results
+##Group results
 
 Aggregation extensions also support a ```groupby``` clause which is identical to the SQL group by clause. You can use this clause to quickly break down numbers
 in more detail.  
@@ -170,7 +168,7 @@ For example, suppose you wanted to know how many areas are in each project. In O
 
     /Areas?$apply=groupby((Project/ProjectName), aggregate(AreaId with countdistinct as CountOfAreas))
 
-### Filter aggregated results
+## Filter aggregated results
 
 You can also filter aggregated results, however they are applied slightly differently than when you are not using aggregation. The analytics service evaluates filters along a pipe so it's always best to do the most discrete filtering first. 
 
@@ -183,9 +181,9 @@ Filters look like the following:
 >You don't have to provide the ```groupby``` clause. You can simply use the ```aggregate``` clause to return a single value.  
 
 
-###Multiple aggregations in a single call
+##Multiple aggregations in a single call
 
-When you want to provide multiple pieces of information, such as the sum of completed work and separately the sum of remaining work., you can accomplish this with separate calls or with a single call as follows:  
+When you want to provide multiple pieces of information, such as the sum of completed work and separately the sum of remaining work, you can accomplish this with separate calls or with a single call as follows:  
 
     /WorkItems?$apply=aggregate(CompletedWork with sum as SumOfCompletedWork, RemainingWork with sum as SumOfRemainingWork)
 
@@ -202,7 +200,7 @@ This will return a result that looks like the following:
 
 ```
 
-##The benefits of aggregation, a real world example - Cumulative Flow Diagram
+##Aggregating work items to generate a Cumulative Flow Diagram
 
 Let's say you want to create a [cumulative flow diagram](../guidance/cumulative-flow-cycle-lead-time-guidance.md) in Power BI. You can use a query similar to the one below:
 
@@ -241,12 +239,12 @@ This result can be directly used by your data visualization of choice.
 
  Let's take a look at what this query actually does:
 
-* Filters the data down to a specific team.
-* Filters the data to a specific backlog.
-* Group by the Date (in the related Date entity).
-* Group by the ColumnName (in the related BoardLocation entity).
-* Group by the ColumnOrder (in the related BoardLocation entity).
-* Get a count of work items.
+* Filters the data to a specific team
+* Filters the data to a specific backlog
+* Groups the result by Date (in the related Date entity) 
+* Groups the result by the ColumnName (in the related BoardLocation entity) 
+* Groups the result by the ColumnOrder (in the related BoardLocation entity) 
+* Returns a count of work items.
 
 When refreshing Power BI or Excel, the fewer rows required, the faster the refresh occurs.
 
