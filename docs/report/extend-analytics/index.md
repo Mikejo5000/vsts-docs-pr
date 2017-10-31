@@ -40,10 +40,13 @@ Use Agile process data
 
 ## Samples
 - [Work Item Tracking Analytics Query Examples](analytics-recipes.md)
+
 <!--
+
 - [Hub extension](..\analytics\building-extension-against-analytics-service.md)
 - [Widget View](..\analytics\widget-extensions-against-analytics-service.md)
 - [Widget Configuration](..\analytics\widget-extension-against-analytics-service-configuration.md)
+
 -->
 
 <!--

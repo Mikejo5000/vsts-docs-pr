@@ -1,9 +1,5 @@
 - name: "Extend on Analytics with OData"
   href: index.md
-- name: Overview
-  items:
-  - name: What is the Analytics Service
-    href: overview-analytics-service.md
 - name: 5-Minute QuickStarts
   items:
   - name: Get Work Item Tracking data with OData 
