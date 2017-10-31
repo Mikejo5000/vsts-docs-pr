@@ -16,6 +16,8 @@
     href: querying-for-trend-data.md
   - name: Query for Work item links
     href: work-item-links.md
+  - name: Exploring Analytics OData metadata
+    href: analytics-metadata.md
 - name: Concepts
   items:
   - name: Data Model for Work Item Tracking Analytics

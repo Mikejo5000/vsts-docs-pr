@@ -23,12 +23,8 @@ ms.date: 10/30/2017
 - [Aggregate data using OData](aggregated-data-analytics.md)
 - [Query for trend data](querying-for-trend-data.md)
 - [Query for Work item links](work-item-links.md)
-
- <!--
-Planned:
-Explore Metadata
--->
-  
+- [Exploring Analytics OData metadata](analytics-metadata.md) 
+ 
 ## Concepts
 - [Data Model for Work Item Tracking Analytics](data-model-analytics-service.md)
 

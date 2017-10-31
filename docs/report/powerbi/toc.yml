@@ -38,10 +38,10 @@
     href: vso-pbi-whats-available-vs.md
   - name: Data Connector available functions
     href: data-connector-functions.md
-  - name: Analytics Service overview 
-    href: ../analytics/overview-analytics-service.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
 - name: Resources
   items:
+  - name: Analytics Service
+    href: ../analytics/index.md
   - name: "Dashboards, charts, & widgets"
     href: ../index.md
   - name: PowerBI Desktop
