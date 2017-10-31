@@ -9,7 +9,12 @@ ms.author: prprice
 ms.date: 10/18/2017
 ---
 
-# OData API Versioning
+# OData API versioning
+
+**VSTS**  
+
+[!INCLUDE [temp](../_shared/analytics-preview.md)]
+
 As the Analytics Service grows and changes we are dedicated to providing consistency and reliability to our users. Therefore the Analytics Service provides a versioned OData API that will remain compatible with clients designed for those versions. Each version may be enhanced with additional functionality and non-breaking changes. Incompatible or breaking changes will be rolled into future versions of the API.
 
 The API version follows the _odata element in the request path and is formatted like **v1.0** or **v1.0-preview**.

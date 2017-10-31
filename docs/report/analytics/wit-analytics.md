@@ -1,5 +1,5 @@
 ---
-title: Work item tracking analytics | VSTS  
+title: Query VSTS work tracking data using the OData Analytics service
 description: How to query the OData Analytics service to generate work item tracking reports for Visual Studio Team Services (VSTS)  
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
@@ -9,7 +9,7 @@ ms.author: kaelli
 ms.date: 10/17/2017
 ---
 
-#Analytics - Work Item Tracking OData queries 
+#Query your work tracking data using the OData Analytics service
 
 **VSTS**  
 
