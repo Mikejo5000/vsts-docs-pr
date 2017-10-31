@@ -1,6 +1,6 @@
 ﻿---
 title: VSTS Plugin for IntelliJ IDEA and Android Studio | VSTS & TFS
-description: Intro to the IntelliJ plugin available for Visual Studio VSTS.
+description: Intro to the IntelliJ plugin available for VSTS.
 ms.assetid:
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-git 
@@ -12,7 +12,7 @@ ms.date: 09/08/2017
 
 # VSTS Plugin for IntelliJ IDEA and Android Studio
 
-#### VSTS | TFS 2015 & TFS 2017  
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015
 
 IntelliJ IDEA is an IDE produced by JetBrains. You can find out more about it at [https://www.jetbrains.com/idea/](https://www.jetbrains.com/idea/).
 The VSTS Plugin for IntelliJ allows you to connect to your Git repositories on VSTS and Team Foundation Server (TFS) in a seamless and intuitive way.
@@ -37,7 +37,7 @@ To complete the steps in this guide you need:
   
 0. In the **Project** area in the web portal, select **Code**, then select the drop-down next to the current repo name and choose **New Repository**.
 
-  ![Choose new repository from the web interface](_img/create-repo-intellij/create-vsts-repo.png)    
+  ![Choose new repository from the web portal](_img/create-repo-intellij/create-vsts-repo.png)    
 
 0. In the **Create a new repository** dialog, verify that Git is the repo type, enter **DeepSpace** for your new repo name, and click **Create**.
 

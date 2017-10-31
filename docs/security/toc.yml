@@ -4,8 +4,6 @@
   items:
   - name: About security and identity  
     href: about-security-identity.md
-  - name: Default permission and access assignments
-    href: permissions-access.md
 - name: Quickstart
   items:
   - name: View permissions 
@@ -14,6 +12,8 @@
     href: add-users-team-project.md
   - name: Set Git or TFVC repository permissions
     href: set-git-tfvc-repository-permissions.md
+  - name: Add a team administrator
+    href: ../work/scale/add-team-administrator.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json
   - name: Add administrators or set permissions at the project or collection level
     href: set-project-collection-level-permissions.md 
 - name: Concepts
@@ -26,6 +26,10 @@
     href: ../tfs-server/admin/setup-ad-groups.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json
 - name: How-to Guides
   items:
+  - name: Add users to your account (VSTS)
+    href: ../accounts/add-account-users-from-user-hub.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json 
+  - name: Change access levels (TFS)
+    href: change-access-levels.md  
   - name: Set Git branch permissions
     href: ../git/branch-permissions.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json  
   - name: Set build and release permissions 
@@ -34,22 +38,26 @@
     href: set-permissions-access-work-tracking.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json 
   - name: "Set permissions for READMEs & Wikis"
     href: ../collaborate/manage-readme-wiki-permissions.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json 
-  - name: Add users to your account (VSTS)
-    href: ../accounts/add-account-users-from-user-hub.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json 
-  - name: Authenticate access with personal access tokens
-    href: ../accounts/use-personal-access-tokens-to-authenticate.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json  
-  - name: "Change access levels (TFS)" 
-    href: change-access-levels.md  
+  - name: Set feedback permissions
+    href: ../feedback/give-permissions-feedback.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json 
   - name: Restrict access to resources
     href: ../accounts/restrict-access-tfs.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json
+  - name: Set permissions to view or create SQL Server reports
+    href: ../report/admin/grant-permissions-to-reports.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json  
+  - name: Set permissions to access a SharePoint project portal
+    href: set-sharepoint-permissions.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json 
   - name: Sign-in to the web or a client
     href: ../user-guide/connect-team-projects.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json 
+  - name: Authenticate access with personal access tokens
+    href: ../accounts/use-personal-access-tokens-to-authenticate.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json   
 - name: Troubleshooting
   items:
   - name: Network connections
     href: faq-network-connections.md
 - name: Reference
   items:
+  - name: Default permission and access assignments
+    href: permissions-access.md
   - name: Permission lookup guide 
     href: permissions-lookup-guide.md
   - name: Permissions and groups reference
@@ -70,5 +78,7 @@
     href: ../tfs-server/index.md
   - name: Authentication guidance for REST APIs
     href: ../integrate/get-started/authentication/authentication-guidance.md
+  - name: Security REST APIs
+    href: https://www.visualstudio.com/docs/integrate/api/security/overview
   - name: Technical Articles
     href: ../articles/index.md

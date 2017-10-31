@@ -11,21 +11,30 @@ ms.contentid: 3d6edd06-ceed-43b4-9e77-4a121864594c
 > [!NOTE]
 > The TFS Database Import Service for Visual Studio Team Services (VSTS) is currently in preview.
 
-
 ## TFS Database Import Service
-The TFS Database Import Service, also known shorthand as the Import Service, provides a high fidelity way to migrate collection databases from Team Foundation Server (TFS) to Visual Studio Team Services (VSTS). It's recommended that you download the [migration guide](https://aka.ms/TFSDataImport) if you're looking to use this service to import your collection(s). The guide serves as a walk through of the different steps involved in an import. Providing best practices, checklists, and helpful tips to make your import as easy as possible. The guide should be used in conjunction with the more technical documentation referenced below to successfully import to VSTS. 
+The TFS Database Import Service, also known shorthand as the Import Service, provides a high fidelity way to migrate collection databases from Team Foundation Server (TFS) to Visual Studio Team Services (VSTS). It's recommended that you download the [migration guide](https://aka.ms/TFSDataImport) if you're looking to use this service to import your collection(s). The guide serves as a walkthrough of the different steps involved in an import. Providing best practices, checklists, and helpful tips to make your import as easy as possible. The guide should be used in conjunction with the more technical documentation referenced below to successfully import to VSTS. 
 
 
 ## Supported TFS Versions for Import
 The TFS Database Import Service supports the two latest releases of TFS at a given time. Releases include updates and major releases. Currently the following versions of TFS are supported for import:
 
-* TFS 2017 Update 1
 * TFS 2017 Update 2
 
 > [!NOTE]
 > The Import Service doesn't support imports from TFS release candidates (RC). If you’re planning on importing your collection database to VSTS using this service, it's important that you don’t upgrade your production database to an RC release. If you do upgrade, then you will need to wait and upgrade to the release to web (RTW) version when it's available or restore a backup copy of your database from a previous TFS version to import. 
+>
+> It can take up to two weeks after a new RTW version of TFS is released for import support to come online for that version.
 
 Normal release cadence for new TFS versions is once every three-to-four months. Meaning that support for a given version of TFS for migration to VSTS should last for anywhere between six-to-eight months. It’s important to ensure that your planning accounts for this support window to avoid having to suddenly upgrade to migrate. 
+
+## Preview Features
+The following features can be included with your import, but are currently in a preview state. 
+
+* [Release Management](https://www.visualstudio.com/team-services/release-management/)
+
+When queueing an import you can elect to include preview features with your import. If you do, data related to these features will be copied into your new VSTS account along with all your other data. Should you choose to not include these features then their data will not be copied.
+
+For a list of items not included with an import please see the [migration guide](https://aka.ms/TFSDataImport).
 
 ## TFS Database Import Service Resources
 
@@ -42,7 +51,6 @@ In general you should use the [migration guide](https://aka.ms/TFSDataImport) wh
 * [Troubleshooting validation errors](.\migration-troubleshooting.md)
 * [Troubleshooting process errors](.\migration-processtemplates.md#dealing-with-process-errors)
 * [Troubleshooting import errors](.\migration-troubleshooting.md#dealing-with-import-errors)
-
 
 
 ## FAQ

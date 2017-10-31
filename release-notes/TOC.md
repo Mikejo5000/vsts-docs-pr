@@ -1,5 +1,6 @@
 # [Features timeline](index.md)
 # 2017
+## [October 30](2017/oct-30-vsts.md)
 ## [October 6](2017/oct-06-vsts.md)
 ## [September 15](2017/sep-15-team-services.md)
 ## [August 28](2017/aug-28-team-services.md)
@@ -108,4 +109,4 @@
 ## [August 27](2012/aug-27-team-services.md)
 ## [August 13](2012/aug-13-team-services.md)
 ## [August 6](2012/aug-06-team-services.md)
-# [Subscribe to Updates](https://www.visualstudio.com/team-services/updates/?feed=product_updates)
+# [Subscribe to Updates](https://www.visualstudio.com/team-services/release-notes-feed/?feed=release-notes-feed)

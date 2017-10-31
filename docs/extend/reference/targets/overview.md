@@ -121,6 +121,8 @@ Change list summary item menu       | `ms.vss-code-web.change-list-summary-item-
 Git branches tree menu              | `ms.vss-code-web.git-branches-tree-menu`         | ![gitBranchesTree](./vss/code/web/_img/gitBranchesTreeActions.png)
 Git branches summary menu           | `ms.vss-code-web.git-branches-summary-grid-menu` |     
 Git branches diff summary menu      | `ms.vss-code-web.git-branches-summary-grid-diff-menu` |
+Git pull request actions menu       | `ms.vss-code-web.pull-request-action-menu` | ![gitPullRequestActions](./vss/code/web/_img/pullRequestActions.png)
+Git pull request tabs (pivots)      | `ms.vss-code-web.pr-tabs` | ![gitPullRequestTab](./vss/code/web/_img/pullRequestTab.png)
 
 <a name="menus_test"></a>
 ### Test
@@ -153,8 +155,9 @@ Product backlog pane            | `ms.vss-work-web.requirement-backlog-toolpane`
 Iteration backlog pane          | `ms.vss-work-web.iteration-backlog-toolpane`      | ![iterationBacklogPane](../../_shared/procedures/_img/backlog-pane/iteration-backlog-pane.png)
 
 <a name="serviceHooks"></a>
+
 ## Service hooks
 Service hook publishers define a set of events. Subscriptions listen for the events and define actions to take based on the event. 
 Subscriptions also target consumers, which are external services that can perform their own actions, when an event occurs.
 
-### Consumers
+Check out how to [add service hooks](../../develop/add-service-hook.md).

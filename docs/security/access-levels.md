@@ -9,7 +9,7 @@ ms.author: kaelli
 ms.date: 07/20/2017
 ---
 
-# Access levels
+# About access levels
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -39,7 +39,7 @@ Assign **Basic** access to all users with a Visual Studio subscriptions and paid
 
 ## Stakeholder
 
-Assign**Stakeholder** access to those users who need to enter bugs, view backlogs, boards, charts, and dashboards, but who don't have a TFS CAL. Stakeholders can also view releases and manage release approvals. Stakeholder access is free. 
+Assign **Stakeholder** access to those users who need to enter bugs, view backlogs, boards, charts, and dashboards, but who don't have a TFS CAL. Stakeholders can also view releases and manage release approvals. Stakeholder access is free. 
 
 <img src="_img/access-levels-2017-stakeholder.png" alt="Stakeholder access features" style="border: 1px solid #CCCCCC;" />  
 
@@ -77,7 +77,7 @@ For TFS 2017.2, Assign **Advanced** access to those users for whom you've purcha
 <a id="test-manager"  >  </a>
 ## Access to the Test hub and Marketplace extensions
 
-Full access to the Test hub requires Advanced (TFS 2015) or VS Enterprise (TFS 2017) access . Visual Studio Test Professional plus the Test hub features in the TFS web portal are managed through Visual Studio VSTS, Azure billing services, and purchase of Test Manager extensions from the Marketplace.  
+Full access to the Test hub requires Advanced (TFS 2015) or VS Enterprise (TFS 2017) access . Visual Studio Test Professional plus the Test hub features in the TFS web portal are managed through VSTS, Azure billing services, and purchase of Test Manager extensions from the Marketplace.  
 
 To learn how to grant access to an extensions, see [Get extensions for TFS](../marketplace/get-tfs-extensions.md).  
 

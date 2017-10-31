@@ -10,7 +10,8 @@ ms.date: 08/23/2016
 ---
 
 # Create a new Git branch
-#### VSTS | TFS 2017
+
+#### VSTS | TFS 2018 | TFS 2017
 
 >[!TIP]
 > Need help creating a new Git branch in your local repo from Visual Studio or the command line? Visit the [Git tutorial](tutorial/branches.md).   
@@ -23,7 +24,7 @@ ms.date: 08/23/2016
    
 0. From your Team Project, select the **Code** view. Make sure you're working with the right repo, then select **Branches**.
 
-   ![Branches nav view in the web interface](_img/branches/branches_nav.png)
+   ![Branches nav view in the web portal](_img/branches/branches_nav.png)
 
 0. Select the **New branch** button in the upper right corner of the page.
 

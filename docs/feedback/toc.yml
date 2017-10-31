@@ -3,7 +3,9 @@
 - name: Overview
   items:
   - name: About feedback
-    href: about-feedback.md  
+    href: about-feedback.md 
+  - name: Default permissions set for collaboration tools 
+    href: ../collaborate/collaboration-tool-permissions.md?toc=/vsts/feedback/toc.json&bc=/vsts/feedback/breadcrumb/toc.json   
 - name: How-to Guides
   items:
   - name: Request feedback (Test & Feedback extension) 
@@ -26,6 +28,8 @@
     href: change-audio-device-annotation-tool.md
 - name: Reference
   items:
+  - name: Default permissions and access set for collaboration tools 
+    href: ../collaborate/collaboration-tool-permissions.md?toc=/vsts/feedback/toc.json&bc=/vsts/feedback/breadcrumb/toc.json 
   - name: Give us feedback, get support
     href: /vsts/provide-feedback?toc=/vsts/feedback/toc.json&bc=/vsts/feedback/breadcrumb/toc.json 
 - name: Resources 

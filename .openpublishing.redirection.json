@@ -2,8 +2,18 @@
     "redirections": 
 	[
         {
+            "source_path": "docs/marketplace/rating-and-review.md",
+            "redirect_url": "/vsts/extend/publish/manage-ratings-review.md",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/integrate/get-started/client-libraries/dotnet.md",
+            "redirect_url": "/vsts/integrate/concepts/dotnet-client-libraries",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/accounts/requirements.md",
-            "redirect_url": "/vsts/tfs-server/requirements.md",
+            "redirect_url": "/vsts/tfs-server/requirements",
             "redirect_document_id": false
         },
         {
@@ -198,7 +208,7 @@
         },
         {
             "source_path": "docs/setup-admin/requirements.md",
-            "redirect_url": "/vsts/tfs-server/requirements.md",
+            "redirect_url": "/vsts/tfs-server/requirements",
             "redirect_document_id": false
         },
         {
@@ -2923,7 +2933,7 @@
         },
         {
             "source_path": "docs/test/create-tests-vs.md",
-            "redirect_url": "/vsts/manual-test/",
+            "redirect_url": "/vsts/manual-test/create-test-cases",
             "redirect_document_id": false
         },
         {
@@ -2948,7 +2958,7 @@
         },
         {
             "source_path": "docs/test/overview.md",
-            "redirect_url": "/vsts/manual-test/index",
+            "redirect_url": "/vsts/manual-test/overview",
             "redirect_document_id": false
         },
         {
@@ -2973,12 +2983,12 @@
         },
         {
             "source_path": "docs/test/whats-new-test.md",
-            "redirect_url": "/vsts/manual-test/index",
+            "redirect_url": "/vsts/manual-test/overview",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/test/automated-tests/review-automated-test-results-after-build.md",
-            "redirect_url": "/vsts/build-release/test/",
+            "redirect_url": "/vsts/build-release/test/review-continuous-test-results-after-build",
             "redirect_document_id": false
         },
         {
@@ -3213,7 +3223,7 @@
         },
         {
             "source_path": "docs/test/manual-exploratory-testing/manual-testing-extensibility.md",
-            "redirect_url": "/vsts/manual-test/",
+            "redirect_url": "/vsts/manual-test/overview",
             "redirect_document_id": false
         },
         {
@@ -4467,8 +4477,18 @@
             "redirect_document_id": false
        },
        {
+            "source_path": "docs/manual-test/mtm/testing-windows-store-apps.md",
+            "redirect_url": "/vsts/manual-test/mtm/testing-microsoft-store-apps",
+            "redirect_document_id": false
+       },
+       {
             "source_path": "docs/git/concepts/pull-requests.md",
             "redirect_url": "/vsts/git/concepts/pull-requests-overview",
+            "redirect_document_id": false
+       }, 
+       {
+            "source_path": "docs/articles/migration-advanced-topics.md",
+            "redirect_url": "/vsts/articles/migration-overview",
             "redirect_document_id": false
        }
     ]

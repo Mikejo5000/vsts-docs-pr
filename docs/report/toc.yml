@@ -10,6 +10,8 @@
     href: dashboards.md
   - name: Add widgets to a dashboard
     href: add-widget-to-dashboard.md
+  - name: Add Markdown to a dashboard
+    href: add-markdown-to-dashboard.md
 - name: Tutorials
   items:
   - name: Configure burndown or burnup widgets
@@ -24,6 +26,8 @@
     href: ../work/scrum/sprint-burndown.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json
 - name: Concepts
   items:
+  - name: "Analytics widgets (VSTS)"
+    href: guidance/analytics-widgets-VSTS.md
   - name: Cumulative flow, lead time, and cycle time guidance
     href: guidance/cumulative-flow-cycle-lead-time-guidance.md
   - name: Velocity guidance
@@ -32,10 +36,10 @@
     href: guidance/burndown-guidance.md
 - name: How-to Guides
   items:
+  - name: "Add an Analytics widget to a dashboard (VSTS)"  
+    href: guidance/enable-analytics-velocity.md
   - name: Add charts to a dashboard
     href: add-charts-to-dashboard.md
-  - name: Add Markdown to a dashboard
-    href: add-markdown-to-dashboard.md
   - name: Configure work item query-based charts
     href: charts.md
   - name: "Configure test status, progress, & result charts"
@@ -48,6 +52,10 @@
     href: widget-catalog.md
   - name: Markdown guidance
     href: ../collaborate/markdown-guidance.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json
+  - name: Default dashboard permissions and access
+    href: charts-dashboard-permissions-access.md
+  - name: Analytics Widgets in VSTS
+    href: guidance/analytics-widgets-VSTS.md
 - name: Resources
   items:
   - name: Agile

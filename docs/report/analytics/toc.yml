@@ -1,0 +1,18 @@
+- name: "Analytics"
+  href: index.md
+- name: Quickstarts
+  items:
+  - name: Enable and use Analytics
+    href: ../guidance/Enable-analytics-Velocity.md
+- name: How-to Guides
+  items:
+  - name: Set permissions for Analytics Service
+    href: analytics-security.md
+- name: Resources
+  items:
+  - name: VSTS & Power BI
+    href: ../powerbi/index.md
+  - name: Extend on Analytics
+    href: ../extend-analytics/index.md
+  - name: Analytics Widgets in VSTS
+    href: ../guidance/analytics-widgets-VSTS.md

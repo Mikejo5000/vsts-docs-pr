@@ -31,15 +31,15 @@ the Power Query add-in which you can do from [Microsoft Power Query for Excel](h
 4. Enter the URL in the format below and click OK:  
 
 	```
-	https://AccountName.analytics.visualstudio.com/DefaultCollection/_odata
+	https://{account}.analytics.visualstudio.com/_odata/v1.0-preview
 	```  
 
 	![Select OData Feed ](_img/pbi3.png)  
 
-	If the *AccountName* is "fabrikam" then the URL is ```https://fabrikam.analytics.visualstudio.com/DefaultCollection/_odata```.
+	If the *account* is "fabrikam" then the URL is ```https://fabrikam.analytics.visualstudio.com/_odata/v1.0-preview```.
 
 	>[!NOTE]  
-	>Alternatively, you can enter the URL ```https://[collection name].analytics.visualstudio.com/DefaultCollection/ProjectName/_odata``` which will trim the results by the specified team project across all entities related to that project.  
+	>Alternatively, you can enter the URL ```https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0-preview``` which will trim the results by the specified team project across all entities related to that project.  
 
 5. At this point you will be prompted to authenticate against the service. If you have not done so previously, see this topic: [Client Authentication Options](client-authentication-options.md)
 6. Either select a single entity to retrieve the data for or check **Select multiple items** and choose the data to return
