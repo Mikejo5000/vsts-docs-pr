@@ -32,9 +32,9 @@ c:\Users\romik\source\repos\vsts-docs-pr\docs\marketplace\install-vsts-extension
 
 To add a widget to a dashboard, you connect to your team project using a [supported web browser](../../tfs-server/requirements.md#supported-browsers).  If you don't have a team project yet, create one in [VSTS](../../accounts/create-account-msa-or-work-student.md)
 
-1. Connect to the web portal for your team project and click the Dashboards hub. ![Open the Dashboards hub](../_img/dashboards-go-to.png)
+1. Connect to the web portal for your team project and click the Dashboards hub. ![Open the Dashboards hub](../dashboards/_img/dashboards-go-to.png)
 0. Select any dashboard or [create a new dashboard](../dashboards.md)
-0. Click ![Edit dashboard icon](../_img/edit-dashboard-icon.png) to modify a dashboard. Click ![add a widget icon](../_img/add-widget-icon.png) to add a widget to the dashboard.
+0. Click ![Edit dashboard icon](../dashboards/_img/edit-dashboard-icon.png) to modify a dashboard. Click ![add a widget icon](../dashboards/dashboards/_img/add-widget-icon.png) to add a widget to the dashboard.
 0. Search for the **Velocity widget** from the widget catalog in the right pane.
 0. Click to add the Velocity widget and close the widget catalog. Learn more on [adding widgets to dashboard](../add-widget-to-dashboard.md)
     
