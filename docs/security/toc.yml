@@ -4,8 +4,6 @@
   items:
   - name: About security and identity  
     href: about-security-identity.md
-  - name: Default permission and access assignments
-    href: permissions-access.md
 - name: Quickstart
   items:
   - name: View permissions 
@@ -58,6 +56,8 @@
     href: faq-network-connections.md
 - name: Reference
   items:
+  - name: Default permission and access assignments
+    href: permissions-access.md
   - name: Permission lookup guide 
     href: permissions-lookup-guide.md
   - name: Permissions and groups reference
@@ -78,5 +78,7 @@
     href: ../tfs-server/index.md
   - name: Authentication guidance for REST APIs
     href: ../integrate/get-started/authentication/authentication-guidance.md
+  - name: Security REST APIs
+    href: https://www.visualstudio.com/docs/integrate/api/security/overview
   - name: Technical Articles
     href: ../articles/index.md
