@@ -3,7 +3,7 @@
 - name: Overview
   items:
   - name: "What is the Analytics Service?"
-    href: overview-analytics-service.md
+    href: what-is-analytics.md
 - name: How-to Guides
   items:
   - name: Set permissions for Analytics Service

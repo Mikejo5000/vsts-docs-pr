@@ -19,8 +19,8 @@ Currently, Power Query (the underlying technology in both Power BI Desktop and E
 However, Power Query is extremely flexible and as such has an easy mechanism for allowing this content to be used. This article
 walks you through this process.
 
-In order to use Aggregation Extensions with Power BI Desktop, you must create the URL by hand which requires knowledge of [OData](wit-analytics.md) and the
-[Aggreation Extensions](aggregated-data-analytics.md) specifically. Please review these two topics before continuing.
+In order to use Aggregation Extensions with Power BI Desktop, you must create the URL by hand which requires knowledge of [OData on Analytics Service](../extend-analytics/index.md) and the
+[Aggregation Extensions](../extend-analytics/aggregated-data-analytics.md) specifically. Please review these two topics before continuing.
 
 For the purposes of this walkthrough, we'll create a simple aggregation query which returns the count of work items by Work Item Type and State. The URL for this query is shown below.
 
