@@ -17,7 +17,7 @@ ms.date: 05/22/2017
 
 This task allows installing an Apple provisioning profile that is:
 - stored as a [secure file](../../concepts/library/secure-files.md) on the server. 
-- committed to the source repository or copied to a local path on the macOS agent. We recommened encrypting the provisioning profiles if you are committing them to the source repository. The **Decrypt Files** task can be used to decrypt them during a build or release.
+- committed to the source repository or copied to a local path on the macOS agent. We recommened encrypting the provisioning profiles if you are committing them to the source repository. The **Decrypt File** task can be used to decrypt them during a build or release.
 
 You can use this task to install provisioning profiles needed to build iOS Apps, Apple WatchKit Apps and Extensions.
 
