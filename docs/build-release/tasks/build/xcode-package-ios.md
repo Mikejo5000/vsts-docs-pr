@@ -15,7 +15,10 @@ ms.date: 08/10/2016
 
 ![](_img/xcode-package-ios.png) Generate an .ipa file from Xcode build output
 
-This step is relevant if you are using Xcode 6.4.
+## Deprecated
+**The Xcode Package iOS task has been deprecated.
+It is relevant only if you are using Xcode 6.4.
+Otherwise, use the latest version of the Xcode task instead.**
 
 ## Demands
 
