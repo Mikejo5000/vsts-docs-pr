@@ -68,7 +68,7 @@ At this point the data will update on your scheduled basis using the credentials
 
 ## Related notes
 
-- [Analytics service overview](overview-analytics-service.md)  
+- [Analytics Service](index.md)  
 - [Client Authentication Options](client-authentication-options.md)
 - [Authenticate your identity with personal access tokens](../../accounts/use-personal-access-tokens-to-authenticate.md)  
 - [Access data through Excel](access-analytics-excel.md)  

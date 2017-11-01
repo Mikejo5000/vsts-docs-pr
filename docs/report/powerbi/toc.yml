@@ -1,6 +1,6 @@
 - name: "PowerBI (VSTS)"
   href: index.md
-- name: Overview
+- name: Concepts
   items:
   - name: Power BI integration overview
     href: overview.md
@@ -18,6 +18,8 @@
       href: ../analytics/access-analytics-power-bi.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
     - name: Power BI desktop and OData aggregations
       href: ../analytics/using-odata-aggregations-with-power-bi-desktop.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
+    - name: Create custom calculations
+      href: ../analytics/custom-calculations.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
     - name: "Share reports, publish to PowerBI.com"
       href: ../analytics/publishing-power-bi-desktop-to-power-bi.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
   - name: Power BI Content Pack
@@ -36,10 +38,10 @@
     href: vso-pbi-whats-available-vs.md
   - name: Data Connector available functions
     href: data-connector-functions.md
-  - name: Analytics Service overview 
-    href: ../analytics/overview-analytics-service.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
 - name: Resources
   items:
+  - name: Analytics Service
+    href: ../analytics/index.md
   - name: "Dashboards, charts, & widgets"
     href: ../dashboards/index.md
   - name: PowerBI Desktop

@@ -98,4 +98,4 @@ This returns a result similar to the following:
 In this query, there are two key differences. We added a filter clause to filter the data to a specific iteration and the dates are now being compared to the iteration start and end dates versus a hard coded date.  
 
 >[!NOTE]  
->Using Power Query you can craft the query such that it provides a rolling chart using a formal, such as, todays date minus 30 days for a rolling 30 day chart.
+>Using Power Query you can craft the query such that it provides a rolling chart using a form such as, todays date minus 30 days for a rolling 30 day chart.

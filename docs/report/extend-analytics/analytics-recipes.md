@@ -9,15 +9,17 @@ ms.author: kaelli
 ms.date: 08/11/2016
 ---
 
-#Analytics service basic queries  
+#Query your data using the Analytics service  
 
 **VSTS**  
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
-This topic provides a set of general queries that demonstrate various querying capabilities of the
-analytics service and which also provides common queries which solve everyday needs. Most of these can be 
-adapted for different needs. 
+You can query your VSTS work tracking data using the basic queries provided in this topic. These queries address everyday needs while demonstrating various capabilities of the
+Analytics service. You can adapt most of these queries to meet your needs.
+
+All examples are scoped to a project. For account-level scoping, see [account scoped queries](account-scoped-queries.md).
+
 
 **Retrieve the history of a work item**
 
@@ -42,7 +44,7 @@ https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$fi
 https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$apply=groupby((Project/ProjectName), aggregate($count as Count))
 ```
 
-This query will fail when the user does not have access to all the projects. Read more about [account scoped queries](Account-scoped-queries.md).
+This query will fail when the user does not have access to all the projects. Read more about [account scoped queries](account-scoped-queries.md).
 
 **Retrieve all work items for a given iteration which fall between the first day of the iteration and the last day of the iteration**
 
@@ -72,4 +74,3 @@ https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$fi
 
 - [WIT analytics](wit-analytics.md)  
 - [Aggregate data](aggregated-data-analytics.md)
-- [Overview of the analytics service](overview-analytics-service.md)

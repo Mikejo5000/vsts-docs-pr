@@ -10,9 +10,13 @@ ms.date: 11/15/2017
 ---
 
 
-# Supported OData features  
+# VSTS Analytics service supported OData features
 
-The following tables summarizes the supported and unsupported OData features.  
+**VSTS**  
+
+[!INCLUDE [temp](../_shared/analytics-preview.md)]
+
+This topic provides a summary of the OData features and functions supported or not supported by the Analytics Service for VSTS.
 
 ## Supported clauses
 

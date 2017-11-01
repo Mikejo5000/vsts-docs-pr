@@ -14,27 +14,19 @@ ms.date: 10/30/2017
 **VSTS**  
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]  
-<!--
-## Overview
-- [What is the Analytics Service](..\analytics\overview-analytics-service.md) 
--->
 
 ## 5-Minute QuickStarts
 
-- [Get Work Item Tracking data with OData](..\analytics\wit-analytics.md)
+- [Get Work Item Tracking data with OData](wit-analytics.md)
  
 ## Step-by-Step Tutorials
-- [Aggregate data using OData](..\analytics\aggregated-data-analytics.md)
-- [Query for trend data](..\analytics\querying-for-trend-data.md)
-- [Query for Work item links](..\analytics\work-item-links.md)
-
- <!--
-Planned:
-Explore Metadata
--->
-  
+- [Aggregate data using OData](aggregated-data-analytics.md)
+- [Query for trend data](querying-for-trend-data.md)
+- [Query for Work item links](work-item-links.md)
+- [Exploring Analytics OData metadata](analytics-metadata.md) 
+ 
 ## Concepts
-- [Data Model for Work Item Tracking Analytics](..\analytics\data-model-analytics-service.md)
+- [Data Model for Work Item Tracking Analytics](data-model-analytics-service.md)
 
 <!--
 Planned:
@@ -47,10 +39,15 @@ Use Agile process data
 -->
 
 ## Samples
-- [Work Item Tracking Analytics Query Examples](..\analytics\analytics-recipes.md)
+- [Work Item Tracking Analytics Query Examples](analytics-recipes.md)
+
+<!--
+
 - [Hub extension](..\analytics\building-extension-against-analytics-service.md)
 - [Widget View](..\analytics\widget-extensions-against-analytics-service.md)
 - [Widget Configuration](..\analytics\widget-extension-against-analytics-service-configuration.md)
+
+-->
 
 <!--
 Planned:
@@ -58,7 +55,10 @@ Build a widget that uses the Analytics Service
 -->
 
 ## Reference
-- [Supported OData feature & Operations](..\analytics\wit-analytics.md)    
+- [Query your work tracking data using the OData Analytics service](wit-analytics.md)    
+- [OData API versioning](odata-api-version.md) 
+- [OData Query Guidelines](odata-query-guidelines.md) 
+- [Supported OData features & Operations](odata-supported-features.md) 
    
 ## Resources
 - [VSTS Analytics Service](../analytics/index.md)
