@@ -4580,6 +4580,26 @@
             "source_path": "docs/reporting.md",
             "redirect_url": "/vsts/#pivot=services&panel=reporting",
             "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/analytics.md",
+            "redirect_url": "/vsts/#pivot=services&panel=reporting",
+            "redirect_document_id": false
+       },  
+       {
+            "source_path": "docs/report.md",
+            "redirect_url": "/vsts/#pivot=services&panel=reporting",
+            "redirect_document_id": false
+       }, 
+       {
+            "source_path": "docs/report/index.md",
+            "redirect_url": "/vsts/report/dashboards/index",
+            "redirect_document_id": false
+       }, 
+       {
+            "source_path": "docs/reporting.md",
+            "redirect_url": "/vsts/#pivot=services&panel=reporting",
+            "redirect_document_id": false
        }
     ]
 }
