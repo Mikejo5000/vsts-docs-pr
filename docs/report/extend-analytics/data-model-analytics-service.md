@@ -64,7 +64,7 @@ Some navigation properties result in a single entity, while others result in a c
 
 ##Entity Properties
 
-The WorkItemRevision entity can contain hundreds of properties including customized fields specific to your process. The sample below is a partial list, to illustrate some commonly found properties:
+The WorkItemRevision entity can contain hundreds of properties, including customized fields specific to your process. The sample below is a partial list, to illustrate some commonly found properties:
 
 | Property | Type | Description|  
 |--------|------------|------------|  
