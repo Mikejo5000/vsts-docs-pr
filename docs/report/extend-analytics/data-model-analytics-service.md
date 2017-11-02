@@ -64,7 +64,7 @@ Some navigation properties result in a single entity, while others result in a c
 
 ##Entity Properties
 
-The WorkItemRevision entity can contain hundreds of properties and will include any custom properties you add to your process. The sample below is a partial list, to illustrate some commonly found properties:
+The WorkItemRevision entity can contain hundreds of properties including customized fields specific to your process. The sample below is a partial list, to illustrate some commonly found properties:
 
 | Property | Type | Description|  
 |--------|------------|------------|  
@@ -82,7 +82,7 @@ The WorkItemRevision entity can contain hundreds of properties and will include 
 The last three properties here show that the same value is often expressed in multiple properties, each designed for different scenarios.
 
 >[!NOTE]
->Changes to custom fields will affect the shape of your data model and will affect all revisions.
+>Changes to custom fields will affect the shape of your data model and will affect all work item revisions.
 
 
 ##Related notes 
