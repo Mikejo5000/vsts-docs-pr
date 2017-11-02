@@ -26,23 +26,12 @@ In a nutshell, you manage bugs through the following tasks:
 > * Update bug status throughout the bug lifecycle  
 > * Monitor bug assignments and trends    
 
-<!--- TBD  --> 
-In addition, you can: 
-- Capture bugs using test tools
-- Configure how your team manages bugs&mdash;along with requirements or with tasks 
-- Define queries and create charts of bug status, assignments, and trends
-- Manage duplicate bugs by linking and closing one of them    
-- Re-run test cases in the web runner using the Verify option 
-- Automatically capture bugs when using the Test & Feedback extension  
-- Customize the bug template  
-- Interface with UserVoice or Zendesk. 
 
 >[!NOTE]  
 >Depending on the process chosen to create your team project&mdash;[Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md)&mdash;
 the items in your backlog may be called product backlog items (PBIs), user stories, or requirements. All three are similar: they describe the customer value to be delivered and the work to be performed.   
 >
 >By default, product backlog items (PBIs) and bugs appear on Scrum backlogs, user stories on Agile backlogs, and requirements on CMMI backlogs. Each team can choose how [bugs show up on their backlogs and boards](../customize/show-bugs-on-backlog.md). 
-
 
 
 ## Capture bugs  
@@ -58,19 +47,33 @@ The bug work item form tracks similar information to the one shown for the Scrum
 >The images you see from your web portal may differ from the images you see in this topic. These differences result from updates made to VSTSor your on-premises TFS, options that you or your admin have enabled, and which process was chosen when creating your team project&mdash;[Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md). 
 
 
-#### VSTS, TFS 2018, TFS 2017 (new form enabled)
+::: moniker range="vsts"
 
+#### New web form enabled
+The new web form provides a number of experiences not provided with the old web form. To learn more, see [New work item experience](../customize/process/new-work-item-experience.md). 
+
+<img src="_img/manage-bugs-scrum-bug-from-ts.png" alt="Scrum bug work item form, VSTS" style="border: 2px solid #C3C3C3;" />
+</div>
+::: moniker-end
+
+
+::: moniker range=">= tfs-2017 <= tfs-2018"
+#### New web form enabled
 The new web form provides a number of experiences not provided with the old web form. To learn more, see [New work item experience](../customize/process/new-work-item-experience.md). 
 
 <img src="_img/manage-bugs-scrum-bug-from-ts.png" alt="Scrum bug work item form, VSTS" style="border: 2px solid #C3C3C3;" />
 </div>
 
-#### TFS 2015, TFS 2013 (old web form) 
+::: moniker-end
+
+#### Old web form 
+::: moniker range=">= tfs-2013 <= tfs-2015"
 
 To learn more about working in the web form for TFS 2015 or earlier versions, see [Add work items to plan and track your project](add-work-items-tfs.md). 
 
 <img src="_img/scrum-bug-wi-form.png" alt="Scrum bug work item form, TFS 2015 or earlier versions" style="border: 2px solid #C3C3C3;" />
 
+::: moniker-end
 
 ### Fields specific to bugs
 
@@ -275,29 +278,34 @@ For example, here are two examples showing active bugs by priority trend and a s
 
 To learn more about queries, charts, and dashboards; see [Create managed queries](../track/example-queries.md) and [Charts](../../report/dashboards/charts.md), and [Dashboards](../../report/dashboards/dashboards.md).    
 
+<a id="customize"> </a>
 ## Customize the bug form
 
 You can add fields, change the bug workflow, or customize the bug form. The method you use depends on the process model used by your team project. For details, see [Customize the work tracking experience](../customize/customize-work.md). 
+
+
+## Try this next
+> [!div class="nextstepaction"]
+> [Triage work items](../track/triage-work-items.md)
 
 
 ## Related topics 
 
 To track your bugs and integrate with other resources available to you, see these topics: 
 
-- [Triage work items](../track/triage-work-items.md)
 - [Scrum and working with sprints best practices](../scrum/best-practices-scrum.md)  
 - [Follow a work item or pull request](../../collaborate/follow-work-items.md)
 - [Move, change type, or delete work items](remove-delete-work-items.md)
 - [Pre-populate fields using a template](work-item-template.md)
 - [Copy or clone a work item](copy-clone-work-items.md#copy-clone)
 
+<a id="integrate"> </a>
 ### Integrate & Test resources
 - [UserVoice](../../service-hooks/services/uservoice.md)  
 - [Zendesk](../../service-hooks/services/zendesk.md)  
-- [Developer testing tools scenarios and capabilities](https://docs.microsoft.com/visualstudio/test/developer-testing-scenarios)  
+- [Developer testing tools scenarios and capabilities](https://docs.microsoft.com/en-us/visualstudio/test/developer-testing-scenarios)  
 - [Run tests for desktop apps](../../manual-test/getting-started/run-manual-tests.md#run-desktop)  
   
-
 
 ### Pre-defined SQL Server bug reports (on-premises TFS only)
 
