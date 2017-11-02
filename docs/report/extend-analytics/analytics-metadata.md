@@ -15,28 +15,36 @@ ms.date: 10/20/2017
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
-## How to query the service for metadata
+In this topic you'll learn how to:
+>[!div class="checklist"]
+
+>* Query the metadata on a specific team project
+>* Query the metadata on a Account
+>* Identify the keys, properties, and navigational properties associated with an Entity
+>* Identify the capabilities of the Analytics OData endpoint
+
 This introductory tutorial provides guidance for exploring Analytics metadata.  OData metadata is a machine readable description of the entity model designed to enable client consumption. Understanding the metadata associated with the entity model is a pre-requisite for programmatically querying the [Analytics OData v4 endpoint](data-model-analytics-service.md).
 
+## How to query the service for metadata
 Analytics exposes the [entity model](http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.doc) at the metadata URL, formed by appending $metadata to the service root URL. Analytics provides service roots for the [Projects or entire Account](account-scoped-queries.md).
 
 
-### Querying for metadata on a specific Team Project
-The service root URL for Analytics at a Project level is constructed as:
+### Query for metadata on a specific team project
+You construct the service root URL for a team project as shown:
 
 ```
 https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata
 ```
 
 
-### Querying for metadata on a Account
+### Query for metadata on a Account
 The service root URL at the Account level is constructed as:
 
 ```
 https://{account}.analytics.visualstudio.com/_odata/v1.0/$metadata
 ```
 
-# How to interpret the metadata response
+# Interpret the metadata response
 The core components of the metadata response are EntityType and EntityContainer.
 
 ```XML
@@ -53,7 +61,7 @@ The core components of the metadata response are EntityType and EntityContainer.
 </edmx:Edmx>
 ```
 
-## EntityType
+## EntityTypes
 EntityTypes define each of the Entities in the model including properties and relationships. 
 
 ```XML
@@ -124,9 +132,9 @@ ReferentialConstraints tie Navigational Properties to a specific key of an Entit
 </NavigationProperty>
 ```
 
-## Container (OData Capabilities)
+## Container (OData capabilities)
 
-### EntitySet
+### EntitySets
 EntitySets represents a collection of entities and associated Navigational Property Bindings and Annotations.
 
 ```XML
