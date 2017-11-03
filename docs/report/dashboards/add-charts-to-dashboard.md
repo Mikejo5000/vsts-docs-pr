@@ -204,7 +204,7 @@ You add work item queries and charts to a dashboard from the Queries page. Queri
 ::: moniker-end
 
 
-::: moniker range="vsts || >= tfs-2015.3 <= tfs-2018"
+::: moniker range="vsts || > tfs-2015.2 <= tfs-2018"
 <a id="add-to-dashboard">  </a>
 
 ## Add a markdown file to a dashboard  
