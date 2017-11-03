@@ -15,7 +15,10 @@ ms.date: 08/04/2017
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
-You can access the Analytics Service data through the Power BI Desktop and then publish it to PowerBI.com. (For any account that has alternate credentials enabled - OAuth (Organizational Accounts) is currently not supported). Unlike the [Power BI Content Pack](https://www.visualstudio.com/en-us/get-started/report/report-on-vso-with-power-bi-vs) which we previously published, no pre-configured file is required. You can simply just start working in Power BI Desktop.
+You can access the Analytics Service data through the Power BI Desktop Visual Studio Team Services Connector and then publish it to PowerBI.com. (For any account that has alternate credentials enabled - OAuth (Organizational Accounts) is currently not supported). Unlike the [Power BI Content Pack](https://www.visualstudio.com/en-us/get-started/report/report-on-vso-with-power-bi-vs) which we previously published, no pre-configured file is required. You can simply just start working in Power BI Desktop.
+
+>[!IMPORTANT]
+>The default experience for the Power BI OData Connector is not intended for use on accounts with over 50,000 work items. On larger accounts the data set needs to reduced by writing OData queries.  OData queries can be directly used in Power BI through the [VSTS.Feed](./data-connector-functions.md) function .
 
 ##Retrieve data manually
 
@@ -85,33 +88,4 @@ not allowed. To handle this, you could expand the Project column in the Areas ta
     ![Expand Project options](_img/pbi-relationships-3.png) 
 
 Now you can list Areas by Project and get a count of Areas in each project.
-
-## Use a Power BI template
-
-With Power BI Desktop, you can create a templated Power BI file and prompt
-the user for various parameters. We have created such a file with several basic capabilities for reporting on the current
-state of work items to get you started. As we include additional data types, we will improve this file.
-
-The current VSTS work items template file supports a single project only.
-
-**What's included**
-
-* A basic bug status report with five charts  
-* Area hierarchy  
-* Iteration hierarchy  
-* Age in Days column in the WorkItems table  
-
-**How to use this file**
-
-1. [Download Power BI Desktop](https://go.microsoft.com/fwlink/?LinkId=521662&clcid=0x409), the April version or later.  
-
-2. Download the [VSTS work items template file](http://go.microsoft.com/fwlink/?LinkId=797544).  
-
-3. Double-click the downloaded file to open it and enter the account and project as noted here:  
-
-    ![Enter parameters](_img/pbi10.png)  
-
-4. Click **OK**.  
-
-	After the data is downloaded you can create your own reports.
 

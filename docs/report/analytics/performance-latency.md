@@ -1,5 +1,5 @@
 ---
-title: Performance and Latency | VSTS  
+title: Performance and Latency of the Analytics Service for VSTS | VSTS  
 description: S 
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
@@ -9,21 +9,23 @@ ms.author: jozimm
 ms.date: 10/30/2017
 ---
 
-# Performance and Latency
-This document provides an overview of important considerations related to performance and data latency when using [Analytics](./what-is-analytics.md) for reporting.
+# Performance and Latency of the Analytics Service for VSTS
+When you use the Analytics Service for reporting, you’ll want to understand the performance and data latency issues associated with the service. To get started using the Analytics Service, see What is the[Analytics Service](./what-is-analytics.md).
+
+## Installing Analytics
+When you install the [Analytics Marketplace Extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics), you should expect the initial setup to take between ```5 to 30 minutes```. If after 24 hours you aren't able to access your data, contact [Microsoft Support](https://docs.microsoft.com/en-us/vsts/user-guide/provide-feedback?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json) 
 
 ## Performance
-Analytics is designed to respond to any [aggregation](aggregated-data-analytics) following the [recommended query patterns](../extend-analytics/odata-query-guidelines.md) within ```3 to 5 seconds```.  
+Using the [recommended query patterns](../extend-analytics/odata-query-guidelines.md), the Analytics Service will respond to any [aggregation](aggregated-data-analytics) or [non-aggregated query](../extend-analytics/analytics-recipes.md) query within 3 to 5 seconds. The query response will be paged if it exceeds 10,000 results. 
 
-If a [non-aggregated query](../extend-analytics/analytics-recipes.md) exceeds 10,000 results the response will be paged. Depending on the complexity of filters($filter) or the number of selected Properties($select) the response time will vary between ```1 to 30 seconds```. Entities specifically designed for aggregations will be blocked as outlined in the [recommended query patterns](../extend-analytics/odata-query-guidelines.md) 
+Any Entities specifically designed for aggregations that are used in a non-aggregated query will be blocked as outlined in the [recommended query patterns](../extend-analytics/odata-query-guidelines.md) 
 
 ## Latency
-Analytics is built on a curated copy of the data stored in Visual Studio Team Services (VSTS). Creating a copy of the data helps optimize read and aggregation performance and greatly reduces the impact reporting scenarios have on VSTS.
+When you use Analytics, you query a curated copy of the data stored in Visual Studio Team Services (VSTS) for your account or a team project(s). The data copy helps optimize read and aggregation performance, and greatly reduces the impact reporting scenarios have on VSTS.
 
-Copying the data also means that Analytics is ```not real-time```.  The process of copying the data introduces a ```5 to 30 second delay``` before the data associated with any change is represented in Analytics. 
+Because the data is copied, the Analytics service is ```not a real-time dta store```.  Copying the data introduces a ```5 to 30 second delay``` before the data associated with any one change shows up in Analytics. 
 
 ### Data modeling
-Publishing data models based on Analytics will introduce additional latency based on how frequently the model is refreshed.  Refreshing the model on a predefined interval is possible using tools such as [Power BI.com](../powerbi/overview.md).  At this time Analytics does not provide support for any real-time data modeling such as Power BI Direct Query.
+Publishing a data model to [Power BI.com](../powerbi/overview.md) introduces additional data latency because OData is not supported by Power BI Direct Query.  The amount of additional latency is tied to how frequently the model is refreshed.  Power BI.com supports refreshing a data model manually or on a predefined interval.
 
-### Installing Analytics
-When installing the [Analytics Marketplace Extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics) the initial setup process usually takes between ```5 to 30 minutes```. If you are unable to access Analytics after a 24 hour period please contact [Microsoft Support](todo) 
+

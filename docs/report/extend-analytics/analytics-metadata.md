@@ -23,10 +23,10 @@ In this topic you'll learn how to:
 >* Identify the keys, properties, and navigational properties associated with an Entity
 >* Identify the capabilities of the Analytics OData endpoint
 
-This introductory tutorial provides guidance for exploring Analytics metadata.  OData metadata is a machine readable description of the entity model designed to enable client consumption. Understanding the metadata associated with the entity model is a pre-requisite for programmatically querying the [Analytics OData v4 endpoint](data-model-analytics-service.md).
+This introductory tutorial provides guidance for exploring Analytics metadata.  [OData metadata](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part3-csdl/odata-v4.0-errata03-os-part3-csdl-complete.html#_Toc453752662) is a machine readable description of the entity model designed to enable client consumption. Understanding the metadata associated with the entity model is a pre-requisite for programmatically querying the [Analytics OData v4 endpoint](data-model-analytics-service.md).
 
 ## How to query the service for metadata
-Analytics exposes the [entity model](http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.doc) at the metadata URL, formed by appending $metadata to the service root URL. Analytics provides service roots for the [Projects or entire Account](account-scoped-queries.md).
+Analytics exposes the [entity model](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part3-csdl/odata-v4.0-errata03-os-part3-csdl-complete.html#_Toc453752500) at the metadata URL, formed by appending $metadata to the service root URL. Analytics provides service roots for the [Projects or entire Account](account-scoped-queries.md).
 
 
 ### Query for metadata on a specific team project

@@ -27,8 +27,12 @@ The following table contains a detailed overview of the **Data Connector**.
 <table>
 <tbody valign="top">
     <tr>
-        <th width="75%"></th>
-        <th width="25%">Data Connector</th>
+        <th width="100%">
+        <tr>
+        <td style="text-align: center" colspan="2">
+            <b>Data Connector Details</b>
+        </td>
+    <tr>
     </tr>
     <tr>
         <td>First release date</td>
@@ -51,7 +55,7 @@ The following table contains a detailed overview of the **Data Connector**.
         <td><img alt="checked" src="_img/icons/checkmark.png"></td>
     </tr>
     <tr>
-        <td style="text-align: center" colspan="3">
+        <td style="text-align: center" colspan="2">
             <b>Available Data</b>
         </td>
     </tr>
@@ -80,7 +84,7 @@ The following table contains a detailed overview of the **Data Connector**.
         <td><img alt="unchecked" src="_img/icons/delete-icon.png"></td>
     </tr>
         <tr>
-        <td style="text-align: center" colspan="3">
+        <td style="text-align: center" colspan="2">
             <b>Elements</b>
         </td>
     <tr>
@@ -109,7 +113,7 @@ The following table contains a detailed overview of the **Data Connector**.
         <td><img alt="checked" src="_img/icons/checkmark.png"></td>
     </tr>
     <tr>
-        <td style="text-align: center" colspan="3">
+        <td style="text-align: center" colspan="2">
             <b>Authentication</b>
         </td>
     <tr>
@@ -134,7 +138,7 @@ The following table contains a detailed overview of the **Data Connector**.
         <td><img alt="checked" src="_img/icons/checkmark.png"></td>
     </tr>
     <tr>
-        <td style="text-align: center" colspan="3">
+        <td style="text-align: center" colspan="2">
             <b>Other</b>
         </td>
     <tr>
@@ -156,8 +160,7 @@ The following table contains a detailed overview of the **Data Connector**.
 **Notes:**  
 1. The data model is created in *Power BI Desktop*. Then, it can be published and refreshed in *Power BI Service*.
 2. There is a limit on how long a refresh operation can take before it gets terminated by Power BI.com.
-3. Using the number of work items as a proxy measure for the size of account, an account is considered "large" accounts when it has over 400k work items.
-4. Power BI Desktop allows users to load tables from different sources and combine them into a single data model (e.g. custom working days calendar).
+3. Power BI Desktop allows users to load tables from different sources and combine them into a single data model (e.g. custom working days calendar).
 
 
 
