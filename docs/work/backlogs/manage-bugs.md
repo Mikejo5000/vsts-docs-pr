@@ -58,6 +58,7 @@ The new web form provides a number of experiences not provided with the old web 
 
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
+
 #### New web form enabled
 The new web form provides a number of experiences not provided with the old web form. To learn more, see [New work item experience](../customize/process/new-work-item-experience.md). 
 
@@ -66,8 +67,10 @@ The new web form provides a number of experiences not provided with the old web 
 
 ::: moniker-end
 
-#### Old web form 
+
 ::: moniker range=">= tfs-2013 <= tfs-2015"
+
+#### Old web form 
 
 To learn more about working in the web form for TFS 2015 or earlier versions, see [Add work items to plan and track your project](add-work-items-tfs.md). 
 
