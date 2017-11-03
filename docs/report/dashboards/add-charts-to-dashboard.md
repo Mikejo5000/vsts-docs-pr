@@ -6,7 +6,7 @@ ms.technology: vs-devops-reporting
 ms.assetid: 
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/10/2017
+ms.date: 11/10/2017
 ---
 
 # Add charts to a dashboard
@@ -86,6 +86,10 @@ All charts listed in the following table are available from VSTS and TFS 2017.2 
 >**Required permissions:** You must be a team admin to add a chart to a team dashboard or homepage, or be [granted permissions to manage a dashboard](dashboard-permissions.md). Or, if you're a member of the Project Administrators group, you can add charts to any team's dashboards or home page. 
  
 
+
+
+::: moniker range="vsts || >= tfs-2015.1 <= tfs-2018"
+
 <a id="build-history"></a>
 ## Add a build history chart
 
@@ -106,6 +110,10 @@ Each time a build is run, it logs information about the build, including the run
 
 	Hover over a bar to view build information and run time. Click a bar to go to the build summary page.   
 
+::: moniker-end
+
+
+::: moniker range="vsts || >= tfs-2017.1 <= tfs-2018"
 
 <a id="release-summary"></a>
 ## Add a release summary chart
@@ -125,6 +133,9 @@ Each time a [release is deployed](../../build-release/actions/view-manage-releas
 
 	![Release definition tile](_img/add-cd-release-definition-tile.png)  
 
+::: moniker-end
+
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 
 <a id="test-result">  </a>  
 ## Add a test status or result chart  
@@ -139,6 +150,10 @@ As you create and run tests, you can track your status by defining [lightweight 
 2. Open the Test hub charts page and select the dashboard to add the test chart to.  
 
 	![Add a test plan chart to a dashboard](_img/add-a-chart-test-plan.png)  
+
+::: moniker-end
+
+::: moniker range="vsts || >= tfs-2015.2 <= tfs-2018"
 
 <a id="test-quality"></a>  
 ## Add a test quality trend chart   
@@ -161,6 +176,9 @@ You can add trends to the dashboard of the failures and duration of those [tests
 
 	Learn more about [reviewing automated test results after a build](../../build-release/test/review-continuous-test-results-after-build.md).  
 
+::: moniker-end
+
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 
 <a id="work-item-query"></a>
 ## Add a work item query or chart  
@@ -183,8 +201,12 @@ You add work item queries and charts to a dashboard from the Queries page. Queri
 
 	You can only add charts associated with shared queries. Charts associated with queries under My Queries folder won't display the add to dashboard option.  
 
+::: moniker-end
 
+
+::: moniker range="vsts || >= tfs-2015.3 <= tfs-2018"
 <a id="add-to-dashboard">  </a>
+
 ## Add a markdown file to a dashboard  
  
 >[!NOTE]  
@@ -195,6 +217,19 @@ Open the Markdown file defined in your repository and make sure you are in your 
 Click **Add to dashboard**, and then choose the team dashboard to add the markdown file to. As you update the Markdown file, changes will automatically appear on the dashboard upon refresh. See [Dashboards](dashboards.md) for more info.  
 
 <img src="../../collaborate/_img/markdown-guidance/markdown-add-file-to-dashboard.png" alt="Web portal, Code hub, README file, Add Markdown page to a dashboard" style="border: 2px solid #C3C3C3;" />
+
+::: moniker-end
+
+
+## System-generated work tracking charts 
+
+There are a number of system-generated charts that you can access from the web portal, but can't add to a dashboard. However, you may find a comparable widget listed in the [widget catalog](widget-catalog.md) that tracks the same or similar data which you can add to the dashboard. These include: 
+
+- [Team velocity](../guidance/team-velocity.md)
+- [Sprint burndown chart](../../work/scrum/sprint-burndown.md) (see [Sprint burndown widget](widget-catalog.md#sprint-burndown-widget))
+- [Cumulative flow](../guidance/cumulative-flow.md) (see [CFD widget](widget-catalog.md#cfd-widget))
+
+<!---
 
 <a id="markdown-widget">  </a>
 ## Markdown widgets   
@@ -216,11 +251,4 @@ Here's an example:
 
 To edit a markdown widget, you must be a team admin or a member of the Project Administrators group. To be added as a team admin, go [here](../../work/scale/add-team-administrator.md). 
 
-## System-generated work tracking charts 
-
-There are a number of system-generated charts that you can access from the web portal, but can't add to a dashboard. However, you may find a comparable widget listed in the [widget catalog](widget-catalog.md) that tracks the same or similar data which you can add to the dashboard. These include: 
-
-- [Team velocity](../guidance/team-velocity.md)
-- [Sprint burndown chart](../../work/scrum/sprint-burndown.md) (see [Sprint burndown widget](widget-catalog.md#sprint-burndown-widget))
-- [Cumulative flow](../guidance/cumulative-flow.md) (see [CFD widget](widget-catalog.md#cfd-widget))
-
+-->

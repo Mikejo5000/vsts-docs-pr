@@ -47,19 +47,10 @@ The bug work item form tracks similar information to the one shown for the Scrum
 >The images you see from your web portal may differ from the images you see in this topic. These differences result from updates made to VSTSor your on-premises TFS, options that you or your admin have enabled, and which process was chosen when creating your team project&mdash;[Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md). 
 
 
-::: moniker range="vsts"
+::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
 
 #### New web form enabled
-The new web form provides a number of experiences not provided with the old web form. To learn more, see [New work item experience](../customize/process/new-work-item-experience.md). 
 
-<img src="_img/manage-bugs-scrum-bug-from-ts.png" alt="Scrum bug work item form, VSTS" style="border: 2px solid #C3C3C3;" />
-</div>
-::: moniker-end
-
-
-::: moniker range=">= tfs-2017 <= tfs-2018"
-
-#### New web form enabled
 The new web form provides a number of experiences not provided with the old web form. To learn more, see [New work item experience](../customize/process/new-work-item-experience.md). 
 
 <img src="_img/manage-bugs-scrum-bug-from-ts.png" alt="Scrum bug work item form, VSTS" style="border: 2px solid #C3C3C3;" />
