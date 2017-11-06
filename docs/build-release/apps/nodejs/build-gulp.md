@@ -12,11 +12,15 @@ ms.date: 08/28/2017
 
 # Build your Node.js app with Gulp
 
-Follow these steps to quickly set up a CI process for your Node.js app using VSTS. The sample app we use here is a Node server that echoes "Hello world". Tests for the app are written using mocha framework. A gulp file is used to run the tests and to convert the results into junit format so that they can be published to VSTS or TFS.
+**VSTS | TFS 2018 | TFS 2017 Update 3**
+
+Follow these steps to quickly set up a CI process for your Node.js app using Visual Studio Team Services (VSTS) or Team Foundation Server (TFS). The sample app we use here is a Node server that echoes "Hello world". Tests for the app are written using mocha framework. A gulp file is used to run the tests and to convert the results into junit format so that they can be published to VSTS or TFS.
 
 ## Prerequisites
 
 [!INCLUDE [include](../../_shared/ci-cd-prerequisites-vsts.md)]
+
+* While the simplest way to try this quickstart is to use a VSTS account, you can also use a TFS server instead of a VSTS account. Make sure that you have [configured a build agent](../actions/agents/v2-windows.md) for your team project, and that you have Node and Gulp installed on the agent machine.
 
 ## Get sample app code
 
@@ -40,7 +44,7 @@ Choose your version control system to get specific instructions for copying the 
 
 [!INCLUDE [include](../_shared/get-sample-code-other-repos-vsts.md)]
 
-## Set up CI
+## Set up continuous integration
 
 <!--
 [!INCLUDE [include](../_shared/setup-ci-intro.md)]
@@ -57,6 +61,8 @@ Choose your version control system to get specific instructions for copying the 
 
 # [Editor](#tab/editor/github)
 -->
+
+[!INCLUDE [include](../../_shared/ci-quickstart-intro.md)]
 
 # [VSTS Git](#tab/vstsgit)
 

@@ -12,9 +12,9 @@ ms.topic: get-started-article
 
 # Build your ASP.NET Core app
 
-**VSTS | TFS 2017 Update 2**
+**VSTS | TFS 2018 | TFS 2017 Update 3**
 
-[ASP.NET Core](http://www.asp.net/core) is a lean and composable framework for building web and cloud applications. Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide a highly customizable continuous integration (CI) process to automatically build your ASP.NET Core app whenever your team pushes or checks in code. In this tutorial you learn how to define your CI process.
+[ASP.NET Core](http://www.asp.net/core) is a lean and composable framework for building web and cloud applications. Follow these steps to quickly set up a CI process for your ASP.NET Core app using Visual Studio Team Services (VSTS) or Team Foundation Server (TFS). The sample app we use here is a Visual Studio solution that has two projects: An ASP.NET Core Web Application project and a Unit Test project (both targeting .Net Core 2.0 framework). This quickstart works for any apps targeting the .Net Core 1.1 or 2.0 frameworks.
 
 ## Prerequisites
 
@@ -29,6 +29,7 @@ ms.topic: get-started-article
 ```
 https://github.com/adventworks/dotnetcore-sample
 ```
+Choose your version control system to get specific instructions for copying the sample app code:
 
 # [VSTS or TFS repo](#tab/vsts)
 
@@ -40,7 +41,7 @@ https://github.com/adventworks/dotnetcore-sample
 
 ---
 
-The sample app is a Visual Studio solution that has two projects: An ASP.NET Core Web Application project and a Unit Test project (both targeting .Net Core 1.1 framework). This quickstart works for any apps targeting the .Net Core 1.1 or 2.0 frameworks. 
+[!INCLUDE [include](../_shared/get-sample-code-other-repos-vsts.md)]
 
 ## Set up continuous integration
 
