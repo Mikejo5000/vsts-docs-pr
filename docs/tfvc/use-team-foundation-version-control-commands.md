@@ -11,7 +11,7 @@ ms.date: 08/10/2016
 
 # Use Team Foundation version control commands
 
-**VSTS | TFS 2015 | Visual Studio 2013,2015,2017**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 You can use version control commands to do nearly all tasks you can do in Visual Studio, and also several tasks that can’t be done in Visual Studio. You can use the **tf.exe** tool to run version control commands from a command prompt or within a script.
 
@@ -217,7 +217,7 @@ Let’s review the arguments from this example:
 
 You can use itemspecs and versionspecs to specify which items are affected by a command.
 
-<a name="itemspec">
+<a name="itemspec"></a>
 
 #### Use an itemspec argument to specify affected items
 

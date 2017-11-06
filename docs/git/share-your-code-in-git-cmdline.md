@@ -12,11 +12,11 @@ ms.date: 09/08/2017
 
 # Get started with Git from the command line
 
-#### VSTS | TFS 2015 & TFS 2017  
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015
 
 This guide show you how to share your code in a VSTS Git repo using the command line.
 
-The instructions below use the default bash shell used on Linux and Mac OS X, but the Git commands will work in any shell, including Git Bash from Git for Windows.
+The instructions below use the default bash shell used on Linux and macOS, but the Git commands will work in any shell, including Git Bash from Git for Windows.
 
 ## Prerequisites
 

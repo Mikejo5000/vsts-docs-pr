@@ -1,6 +1,6 @@
 ---
 title: Import a Git repo into your team project | VSTS & TFS
-description: Import a repo from Github, Gitlab, or BitBucket into your VSTS/TFS Team Project
+description: Import a repo from GitHub, GitLab, or Bitbucket into your VSTS/TFS Team Project
 ms.assetid: 5439629e-23fd-44f1-a345-f00a435f1430
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-git 
@@ -11,7 +11,7 @@ ms.date: 10/05/2017
 ---
 
 # Import a Git repo
-#### VSTS | TFS 2018, TFS 2017 Update 1
+#### VSTS | TFS 2018 | TFS 2017 Update 1
 
 This guide shows you how to import an existing Git repo from GitHub, Bitbucket, GitLab, or other location into a new or empty existing repo in your VSTS project.
 

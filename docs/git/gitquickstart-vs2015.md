@@ -1,6 +1,6 @@
 ---
 title: Get started with Git and Visual Studio | VSTS & TFS
-description: Quick Start with Git and Visual Studio VSTS
+description: Quick Start with Git and VSTS
 ms.assetid: aa9c2f22-6912-4834-8ed3-ed16771760c2
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-git 
@@ -16,7 +16,7 @@ ms.date: 04/03/2017
 > - [Visual Studio 2015 Update 2](gitquickstart-vs2015.md)
 > - [Visual Studio 2013 and Visual Studio 2015 RTM/Update 1](get-started-vs2013.md) 
 
-###### VSTS | TFS 2015 & TFS 2017 
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015
 
 This guide covers the basics so you can get up and running using Git with code already in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS). 
 Explore our [full tutorial](tutorial/gitworkflow.md) for more information on how to use Git from Visual Studio or the command line. 
@@ -51,7 +51,7 @@ click **Connect**.
 0. Open the VSTS web portal in your browser and find your Git repository. 
 Copy the command line instructions from the **Clone** pop-up.   
 
-  ![Finding the Clone URL for your Git Repository in Visual Studio VSTS](_shared/_img/cloneURL.png)
+  ![Finding the Clone URL for your Git Repository in VSTS](_shared/_img/cloneURL.png)
 
 0. Navigate to the folder where you want the code stored on your local computer using the command line.
 0. From the command line, paste the command you copied from the command line instructions. It will look like this
@@ -139,11 +139,11 @@ team, you complete the pull request through the web browser.
 
 0. Open up the VSTS project in the web portal and browse to your repository under the "Code" tab. Click the **Create Pull Request** button to create a pull request for the branch that you pushed.   
 
-   ![Creating a new Pull Request in Visual Studio VSTS](_shared/_img/vstsCreatePullReq.png)   
+   ![Creating a new Pull Request in VSTS](_shared/_img/vstsCreatePullReq.png)   
 
 0. Create the pull request, adding in team members to review and approve the code changes.
 
-0. Once the changes are approved, complete the pull request in Visual Studio VSTS. 
+0. Once the changes are approved, complete the pull request in VSTS. 
 This will pull your changes from the branch into the master branch of the code.
 
 ---

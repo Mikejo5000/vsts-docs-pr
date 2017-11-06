@@ -1,6 +1,6 @@
 ---
-title: Share work plans | VSTS & TFS
-description: Email links, Copy URL, and share information about work items, queries, and more when connected to Visual Studio Team Services (VSTS) or Team Foundation Server (TFS) 
+title: Share work plans  
+description: Email links, Copy URL, and share information about work items, queries, and more with VSTS or TFS  
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 5edac6b9-2642-419a-8745-9e91ee40993b
@@ -8,6 +8,8 @@ ms.manager: douge
 ms.author: kaelli
 ms.date: 08/10/2017  
 ---
+
+
 
 # Share work plans and progress 
 
@@ -223,7 +225,7 @@ To open PowerPoint with storyboarding, see [Storyboard your ideas using PowerPoi
 
 As you can see, there are many ways to share information using work items alone. See these additional tools and features to support planning, tracking, and sharing information with your team.   
 
-- [Dashboards](../../report/dashboards.md)
+- [Dashboards](../../report/dashboards/dashboards.md)
 - [Add and edit a wiki](../../collaborate/add-edit-wiki.md)
 
 ### SharePoint project portal (on-premises TFS)  

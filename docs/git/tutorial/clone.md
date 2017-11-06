@@ -12,7 +12,7 @@ ms.date: 08/29/2017
 
 # Clone an existing Git repo
 
-##### VSTS | TFS 2015 & TFS 2017 | Visual Studio 2015 & 2017
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
 
 Create a complete local copy of an existing Git repo using by cloning it. 
 Cloning a repo downloads all [commits](commits.md) and [branches](branches.md) in the repo and sets up a named relationship with the existing repo you cloned.
@@ -64,7 +64,7 @@ Copy this URL into the clipboard or store it in a place where you can find it ea
 0. Open Team Explorer (go to **View** and select **Team Explorer** or use the Ctrl+\, Ctrl+M hotkey sequence) and open the **Connect** view. Go to **Projects**, then **Manage Connections** if you don't see the Connect view.
 0. Select **Connect...** under **Hosted Service Providers**.
 
-  ![Connecting to Visual Studio VSTS](_img/connect_to_vsts_from_vs2015.png)
+  ![Connecting to VSTS](_img/connect_to_vsts_from_vs2015.png)
 
 0. Choose your team's account from the drop-down in the dialog that appears and select which Team Projects to connect to Team Explorer. Select **Connect**. 
 

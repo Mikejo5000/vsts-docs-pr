@@ -34,8 +34,10 @@ Here you'll find more resources to support your development efforts with Visual 
 
 ##	DevOps: Continuous integration and continuous delivery
 
+*   [Phase the features of your application with feature flags](phase-features-with-feature-flags.md)
 *   [Build and Deployment Automation Case Study](build-deployment-best-practices.md)
 *   [Phase the roll-out of your application through rings](phase-rollout-with-rings.md)
+*   [Adding Continuous Security Validation to your CI/CD Pipeline](security-validation-cicd-pipeline.md)
 
 ##	Security
 

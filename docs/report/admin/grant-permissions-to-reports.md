@@ -6,18 +6,14 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
 ms.manager: douge
 ms.author: kaelli
-ms.date: 02/22/2017
 ms.topic: get-started-article
+ms.date: 10/17/17
 ---
 
 # Grant permissions to view or create SQL Server reports in TFS
 
-<b>TFS 2017 | TFS 2015 | TFS 2013</b>  
+[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
 
-
->[!IMPORTANT]
->**Feature availability**: You can only add a report server to an on-premises TFS.  If you're using VSTS, adding a report server isn't a supported option, instead, you can use [PowerBI](../powerbi/overview.md).
- 
 This is the third task in the four-task sequence to add reports to your team project. You can use the procedures in this topic to set permissions to view or author reports.  
 
 [![Add a report server](_img/step-1-add-a-report-server.png)](add-a-report-server.md)

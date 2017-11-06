@@ -18,7 +18,7 @@ ms.date: 09/07/2017
 > - [Visual Studio 2015 Update 2](share-your-code-in-git-vs.md)
 > - [Visual Studio 2013](share-your-code-in-git-vs-2013.md)   
    
-#### VSTS | TFS 2015 & TFS 2017  
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 
 
 Share your Visual Studio solution in a new VSTS or Team Foundation Server Git repo.
 
@@ -49,7 +49,7 @@ Once you have a local repo, select items in the status bar to quickly navigate b
 
 ## Publish your code to VSTS
 
-0. In the **Push** view in Team Explorer, select the **Publish Git Repo** button under **Push to Visual Studio VSTS**.
+0. In the **Push** view in Team Explorer, select the **Publish Git Repo** button under **Push to VSTS**.
 
  ![Publish your code from VS directly into VSTS](_img/share-your-code-in-git-vs/vsts_get_started_te.png)
 

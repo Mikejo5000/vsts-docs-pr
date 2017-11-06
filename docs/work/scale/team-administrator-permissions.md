@@ -9,7 +9,7 @@ ms.author: kaelli
 ms.date: 08/15/2017
 ---
 
-# Permissions granted to the team administrator role
+# Team administrator role and permissions
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -60,7 +60,7 @@ Team administrators can fully customize the team's Kanban boards associate with 
 
 ## Add and manage team dashboards   
 
-Team administrators can add, configure, and manage permissions (VSTS and TFS 2017) for team dashboards. For details, see [Add and manage dashboards](../../report/dashboard-permissions.md#set-permissions). 
+Team administrators can add, configure, and manage permissions (VSTS and TFS 2017) for team dashboards. For details, see [Add and manage dashboards](../../report/dashboards/dashboard-permissions.md#set-permissions). 
 
  
 ## Set working days off    	
