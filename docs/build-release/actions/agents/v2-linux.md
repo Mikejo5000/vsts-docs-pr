@@ -18,11 +18,21 @@ To build or deploy you'll need at least one agent. A Linux agent can build and d
 
 ## Check prerequisites
 
+::: moniker range="vsts"
+
+Make sure your machine is prepared with [our prerequisites](https://github.com/Microsoft/vsts-agent/blob/master/docs/start/envlinux.md).
+
+::: moniker-end
+
+::: moniker range=">= tfs-2015 <= tfs-2018"
+
 Make sure your machine is prepared with our prerequisites for either
 
 * [Ubuntu systems](https://aka.ms/vstsagentubuntusystem)
 
 * [Red Hat/CentOS systems](https://aka.ms/vstsagentredhatsystem)
+
+::: moniker-end
 
 If you're building from a Subversion repo, you must install the Subversion client on the machine.
 
