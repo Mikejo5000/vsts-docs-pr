@@ -35,8 +35,12 @@ There are some basic requirements you need to effectively query the WorkItemSnap
 
 With this in mind, the query to create a bug trend report looks like the following: 
 
-```
-https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItemSnapshot?$apply=filter(DateValue ge 2016-03-01Z and DateValue le 2016-03-31Z and WorkItemType eq 'Bug')/groupby((DateValue,State), aggregate($count as Count))&$orderby=DateValue
+```odata
+https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItemSnapshot?
+  $apply=
+    filter(DateValue ge 2016-03-01Z and DateValue le 2016-03-31Z and WorkItemType eq 'Bug')/
+    groupby((DateValue,State), aggregate($count as Count))
+  &$orderby=DateValue
 ```
 
 This returns a result similar to the following:
@@ -69,8 +73,14 @@ Before walking you through how to use this in a client tool, let's look at a var
 
 To construct that query, do the following:  
 
-```
-https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItemSnapshot?$apply=filter(Iteration/IterationName eq 'Sprint 99')/filter(DateValue ge Iteration/StartDate and DateValue le Iteration/EndDate and WorkItemType eq 'Bug')/groupby((DateValue,State), aggregate($count as Count))&$orderby=DateValue
+```odata
+https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItemSnapshot?
+  $apply=
+    filter(WorkItemType eq 'Bug')/
+    filter(Iteration/IterationName eq 'Sprint 99')/
+    filter(DateValue ge Iteration/StartDate and (Iteration/EndDate eq null or DateValue le Iteration/EndDate))/
+    groupby((DateValue, State), aggregate($count as Count))
+  &$orderby=DateValue
 ```
 
 This returns a result similar to the following:
