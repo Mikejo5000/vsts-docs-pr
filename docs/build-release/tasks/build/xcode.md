@@ -3,7 +3,7 @@ title: Xcode build and release task
 description: Xcode build and release task for Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
-ms.assetid: 37B7092E-9205-4050-BBC8-E35C3A4B0A8A
+ms.assetid: 130B3990-0B64-41AE-9330-75AD7228B5C4
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/10/2016
