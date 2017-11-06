@@ -42,6 +42,7 @@ Choose your version control system to get specific instructions for copying the 
 
 ## Set up CI
 
+<!--
 [!INCLUDE [include](../_shared/setup-ci-intro.md)]
 
 # [YAML](#tab/yaml/vstsgit)
@@ -53,6 +54,11 @@ Choose your version control system to get specific instructions for copying the 
 [!INCLUDE [include](../_shared/setup-ci-yaml-github.md)]
 
 # [Editor](#tab/editor/vstsgit)
+
+# [Editor](#tab/editor/github)
+-->
+
+# [VSTS Git](#tab/vstsgit)
 
 1. Navigate to the **Files** tab of the **Code** hub, and then click **Set up build**.
 
@@ -76,7 +82,7 @@ Choose your version control system to get specific instructions for copying the 
 
 1. A new build is started. You'll see a link to the new build on the top of the page. Click the link to watch the new build as it happens.
 
-# [Editor](#tab/editor/github)
+# [GitHub](#tab/github)
 
 1. Navigate to the **Builds** tab of the **Build and Release** hub in VSTS or TFS, and then click **+ New**. You are asked to **Select a template** for the new build definition.
 
@@ -90,7 +96,7 @@ Choose your version control system to get specific instructions for copying the 
 
 1. Click **Get sources**. Select your version control repository. You'll need to authorize access to your repo.
 
-1. Select the **Run gulp** task from the tasks. On the right side, you see the parameters for the task. Under the section JUnit Test Results, select the option to Publish to TFS/VSTS.
+1. Select the **Run gulp** task from the tasks. On the right side, you see the parameters for the task. Under the section JUnit Test Results, select the option to **Publish to TFS/VSTS**.
 
 1. Click the **Triggers** tab in the build definition. Enable the **Continuous Integration** trigger. This will ensure that the build process is automatically triggered every time you commit a change to your repository.
 

@@ -25,9 +25,11 @@ In this quickstart you learn how to define CI process for your Docker-enabled ap
 
 If you created a build definition using one of the topics described in pre-requisites, your build would produce a zip archive by default. This is convenient if you plan to deploy the app to an Azure web app or to an IIS server. If your goal is to deploy the app to Azure web apps for containers or a Kubernetes cluster, then you must publish the app as a container.
 
+<!--
 The steps for doing this depend on whether your CI process is defined through a YAML file or through the web editor in VSTS.
 
-# [Container](#tab/editor)
+# [Editor](#tab/editor)
+-->
 
 1. Remove the **Archive files** task and the **Publish artifacts** task from the build definition.
 
@@ -49,8 +51,9 @@ The steps for doing this depend on whether your CI process is defined through a 
 
    * **Action:** Push an image.
 
+<!--
 # [Container](#tab/yaml)
 
 This is not yet supported in YAML.
-
 ---
+-->
