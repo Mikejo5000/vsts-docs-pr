@@ -22,14 +22,14 @@
         href: apps/java/build-maven.md
       - name: C++
         href: apps/windows/cpp.md
+      - name: Build and push a container
+        href: apps/containers/build-container.md
       - name: Xcode
         href: apps/mobile/xcode-ios.md
       - name: Xamarin
         href: apps/mobile/xamarin.md
       - name: Universal Windows Platform
         href: apps/windows/universal.md
-      - name: Build and push a container
-        href: apps/containers/build-container.md
     - name: Deploy your app
       items:
       - name: Azure Web App
