@@ -6,7 +6,7 @@ ms.technology: vs-devops-build
 ms.assetid: 0f9f66ca-250e-40fd-9678-309bcd439d5e
 ms.manager: dastahel
 ms.author: madhurig
-ms.date: 05/22/2017
+ms.date: 11/13/2017
 ---
 
 # Utility: Install Apple Provisioning Profile
