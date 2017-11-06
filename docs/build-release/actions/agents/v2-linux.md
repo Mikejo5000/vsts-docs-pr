@@ -6,7 +6,7 @@ ms.technology: vs-devops-build
 ms.assetid: 834FFB19-DCC5-40EB-A3AD-18B7EDCA976E
 ms.manager: douge
 ms.author: alewis
-ms.date: 08/26/2016
+ms.date: 11/6/2017
 ---
 # Deploy an agent on Linux
 
