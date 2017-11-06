@@ -2,11 +2,11 @@ You've just put your own CI process in place to automatically build and validate
 
 ### Alternative packaging
 
-You produced a zip archive in your CI process. This is convenient if you plan to deploy the app to an Azure web app or to an IIS server. However, if your goal is to deploy the app to a Linux machine, then you can publish the build as a simple folder. To do this, simply remove the **Archive files** task from your build definition or YAML file.
+You produced a zip archive in the above CI process. This is convenient if you plan to deploy the app to an Azure web app or to an IIS server. Here are a few more options for how you may package your artifact.
 
-If your goal is to deploy the app to Azure web apps for containers or a Kubernetes cluster, then you can publish the app as a container. To learn more, see this topic:
+* Deploy to Linux VMs: If your goal is to deploy the app to a Linux machine, then publish the build as a simple folder. To do this, simply remove the **Archive files** task from your build definition.
 
-* [Build a container](../containers/build-container.md)
+* Deploy to a container service: If your goal is to deploy the app to Azure web apps for containers or a Kubernetes cluster, then publish the app as a container. To learn more, see [Build and push a container for your app](../containers/build-container.md).
 
 ### Extend to other Git workflows
 
