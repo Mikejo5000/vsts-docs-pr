@@ -8,9 +8,6 @@ ms.contentid: 3d6edd06-ceed-43b4-9e77-4a121864594c
 
 # Migrate data from TFS to VSTS
 
-> [!NOTE]
-> The TFS Database Import Service for Visual Studio Team Services (VSTS) is currently in preview.
-
 ## TFS Database Import Service
 The TFS Database Import Service, also known shorthand as the Import Service, provides a high fidelity way to migrate collection databases from Team Foundation Server (TFS) to Visual Studio Team Services (VSTS). It's recommended that you download the [migration guide](https://aka.ms/TFSDataImport) if you're looking to use this service to import your collection(s). The guide serves as a walkthrough of the different steps involved in an import. Providing best practices, checklists, and helpful tips to make your import as easy as possible. The guide should be used in conjunction with the more technical documentation referenced below to successfully import to VSTS. 
 
@@ -31,6 +28,7 @@ Normal release cadence for new TFS versions is once every three-to-four months. 
 The following features can be included with your import, but are currently in a preview state. 
 
 * [Release Management](https://www.visualstudio.com/team-services/release-management/)
+* [Package Management](https://www.visualstudio.com/team-services/package-management/)
 
 When queueing an import you can elect to include preview features with your import. If you do, data related to these features will be copied into your new VSTS account along with all your other data. Should you choose to not include these features then their data will not be copied.
 
@@ -63,7 +61,7 @@ A: No, when it comes to service updates, Hosted XML accounts are treated the sam
 
 #### Q: Will my account be stuck in Hosted XML forever?
 
-A: You are using the Hosted XML, because the Inheritance process model does not contain all features yet. We are planning to allow you to migrate from the Hosted XML into the Inheritance process model later this year.
+A: You are using the Hosted XML because the Inheritance process model does not contain all features yet. We are planning to allow you to migrate from the Hosted XML into the Inheritance process model later this year.
 
 #### Q: Will migrating from Hosted XML into Inheritance process model be a manual process?
 
@@ -83,7 +81,6 @@ A: Yes. For data import accounts, VSTS supports team projects that use  Inherita
 
 #### Q: Where can I find more information on Hosted XML and the Inheritance process model?
 
-* [VSTS Process Customization Roadmap (2017)](https://blogs.msdn.microsoft.com/visualstudioalm/2017/01/26/team-services-process-customization-roadmap-jan-2017/)
 * [Inheritance Process Model](../work/customize/process/manage-process.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json)
 * [Hosted XML](../work/customize/import-process/import-process.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json)
 
