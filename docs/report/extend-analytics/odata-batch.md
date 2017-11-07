@@ -27,10 +27,10 @@ Many modern browsers have limits on the length of a request's URL. Exceeding thi
 ### $batch request with a single query
 #### Request
 URL: ```https://{account}.analytics.visualstudio.com/_odata/{version}/$batch```  
-Content-Type: ```multipart/mixed; boundary=batch_1af9a11e-9dec-4266-a3ab-0db9d10fb55a```
-```
+Content-Type: ```multipart/mixed; boundary=batch_2af9a11e-9dec-4266-a3ab-0db9d10fb55a```  
 Request payload:
-```--batch_1af9a11e-9dec-4266-a3ab-0db9d10fb55a
+```
+--batch_1af9a11e-9dec-4266-a3ab-0db9d10fb55a
 Content-Type: application/http
 Content-Transfer-Encoding: binary
 
@@ -41,7 +41,7 @@ Accept: application/json
 ```
 #### Response
 Status code: ```200```  
-Response body:
+Response body:  
 ```
 --batchresponse_0cc7749e-dcec-4b5e-9380-eb05859fe733
 Content-Type: application/http
@@ -57,10 +57,10 @@ OData-Version: 4.0
 ### $batch request with multiple queries
 #### Request
 URL: ```https://{account}.analytics.visualstudio.com/_odata/{version}/$batch```  
-Content-Type: ```multipart/mixed; boundary=batch_a21dac40-0b65-4e56-8101-73c79d508b39```
-
+Content-Type: ```multipart/mixed; boundary=batch_a21dac40-0b65-4e56-8101-73c79d508b39```  
 Request payload:
-```--batch_1af9a11e-9dec-4266-a3ab-0db9d10fb55a
+```
+--batch_1af9a11e-9dec-4266-a3ab-0db9d10fb55a
 Content-Type: application/http
 Content-Transfer-Encoding: binary
 
