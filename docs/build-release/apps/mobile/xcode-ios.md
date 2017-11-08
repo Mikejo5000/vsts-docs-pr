@@ -113,8 +113,8 @@ The sample provided here is an iOS app, but the concepts described here essentia
 
  > **Troubleshooting Tip**: If you run into issues with your tests hanging and/or not being able to start the iOS Simulator at times you can opt to add a Command Line task for the "killall" tool with "iOS\ Simulator" as an argument (killall iOS\ Simulator). This will force shut down the simulator in the event it is hung. Exercise care when running the command if you have multiple agents running for the same user and that you do not accidently kill other processes.   
 
-> [!TIP]
-> To learn more about GitHub CI builds, see [Define a CI build process for your GitHub repo](../../actions/ci-build-github.md)
+[//]: # (TODO:> [!TIP])
+[//]: # (TODO:> To learn more about GitHub CI builds, see [Define CI build process for your Git repo](#)
 
 ## View the build summary
 

@@ -93,8 +93,8 @@ This quickstart works for apps targeting the .NET Framework 4 or newer. The samp
 
 1. A new build is started. You'll see a link to the new build on the top of the page. Click the link to watch the new build as it happens.
 
-> [!TIP]
-> To learn more about GitHub CI builds, see [Define a CI build process for your GitHub repo](../../actions/ci-build-github.md)
+ [//]: # (TODO:> [!TIP])
+ [//]: # (TODO:> To learn more about GitHub CI builds, see [Define CI build process for your Git repo](#)
 
 ## View the build summary
 
