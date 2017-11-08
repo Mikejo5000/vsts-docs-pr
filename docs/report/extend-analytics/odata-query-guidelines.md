@@ -207,10 +207,12 @@ Groupping operation is intended to reduce the number of records. Using distinct 
 
 >*One or more of the columns specified in the groupby clause of this query are not recommended.*
 
+
 ### **❌ [BLOCKED] DO NOT** use `countdistinct` aggregation.
 <a name="odata_query_with_countdistinct_not_supported"></a>
+Although valid according to OData specification, `countdistinct` is not supported by the Analytics Service. There are plans to add support in the future. Until it is available, if you send a query that uses this aggregation method, you will get the following error message.
 
-
+>*Queries which apply a count distinct with an aggregation are not supported.*
 
 
 ### **❌ AVOID** aggregations that can result in arithmetic overflow.
