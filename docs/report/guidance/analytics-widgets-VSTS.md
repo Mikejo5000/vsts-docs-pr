@@ -1,12 +1,13 @@
 ---
 title:  Available Analytics Service widgets for VSTS
-description: Portfolio overview of the Analytics Service widgets and how they relate together
+description: Portfolio overview of the Analytics Service widgets and how they relate to each other
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
 ms.assetid: 
-ms.manager: greggboe
-ms.author: romik
-ms.date: 10/19/2017
+ms.manager: douge
+ms.reviewer: romik
+ms.author: kaelli
+ms.date: 11/15/2017
 ---
 
 

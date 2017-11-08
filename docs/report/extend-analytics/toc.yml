@@ -1,10 +1,10 @@
 - name: "Extend on Analytics with OData"
   href: index.md
-- name: 5-Minute QuickStarts
+- name: Quickstarts
   items:
   - name: Get Work Item Tracking data with OData 
     href: wit-analytics.md
-- name: Step-by-Step Tutorials
+- name: Tutorials
   items:
   - name: Aggregate data using OData
     href: aggregated-data-analytics.md
