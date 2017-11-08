@@ -159,6 +159,7 @@ VSTS is available in several Azure [regions](https://azure.microsoft.com/en-us/r
 |    Australia                    |    Australia East              |      EAU                    |
 |    South America                |    Brazil South                |      SBR                    |
 |    Asia Pacific                 |    South India                 |      MA                     |
+|    Asia Pacific                 |    East Asia (Hong Kong)       |      EA                     |
 |    Canada                       |    Central Canada              |      CC                     |
 
 ### Identity Map Log
@@ -205,7 +206,6 @@ Next, review the identities that are labeled as 'Historical'. This implies that 
 4. The user that owned that identity no longer works at the company.
 
 In the first two cases the desired on-premises AD identity will need to be set up for sync with Azure AD. Check the [documentation](https://aka.ms/azureadconnect "Integrating your on-premises identities with Azure Active Directory") on setting a sync between your on-premises AD and Azure AD. It's required that Azure AD Connect be setup and run for identities to be imported as active in VSTS. 
-
 
 For the second and third case, the row can be left or removed from the file. The end result will be the same case - a historical identity. It's recommended that you reduce the mapping file down to just the set of identities that you wish be active after import, for simplicity and readability.
 
@@ -327,6 +327,7 @@ Use the table below to decide where you should create you SQL Azure VM if you're
 |    Brazil South                 |    Brazil South                |
 |    South India                  |    South India                 |
 |    Central Canada               |    Central Canada              |
+|    East Asia (Hong Kong)        |    East Asia (Hong Kong)       |
 
 > While VSTS is available in multiple regions in the United States, only the Central United States region is accepting new VSTS accounts. Customers will not be able to import their data into other United States Azure regions at this time. 
 
@@ -361,6 +362,7 @@ Next you will need to grant access to the TFS Database Import Service itself. Yo
 |    Import Service - Brazil South                |    104.41.24.164    |
 |    Import Service - India South                 |    13.71.120.31     |
 |    Import Service - Canada Central              |    52.237.18.100    |
+|    Import Service - East Asia (Hong Kong)       |    13.75.106.194    |
   
 Next you will need to grant VSTS access. Again, you only need to grant an exception for the VSTS instance in the region that you're importing into.  
 
@@ -372,6 +374,7 @@ Next you will need to grant VSTS access. Again, you only need to grant an except
 |    VSTS - Brazil South                          |    191.232.37.247   |
 |    VSTS - India South                           |    104.211.227.29   |
 |    VSTS - Canada Central                        |    52.237.19.6      |
+|    VSTS - East Asia (Hong Kong)                 |    52.175.28.40     |
 
 If you're planning on using the [preview](https://aka.ms/vstsimportpreview) feature to include Release Management and Package Management data with your import, then you will need to grant both features access as well. 
 
@@ -383,6 +386,7 @@ If you're planning on using the [preview](https://aka.ms/vstsimportpreview) feat
 |    Release Management - Brazil South            |    191.235.94.154   |
 |    Release Management - India South             |    52.172.15.233    |
 |    Release Management - Canada Central          |    52.237.28.171    |
+|    Release Management - East Asia (Hong Kong)   |    13.107.6.175     |
 
 <<<<<<< HEAD
 **Pacakage Management IPs**
@@ -501,6 +505,7 @@ VSTS is available in multiple [regions](https://azure.microsoft.com/en-us/region
 |    Brazil South                 |    Brazil South                |
 |    India South                  |    India South                 |
 |    Canada Central               |    Canada Central              |
+|    East Asia (Hong Kong)        |    East Asia (Hong Kong)       |
 
 While VSTS is available in multiple regions in the United States, only the Central United States region is accepting new VSTS. Customers will not be able to import their data into other United States Azure regions at this time.  
 
@@ -606,4 +611,4 @@ Once the validation passes you will be asked to sign into to AAD. It’s importa
 > [!NOTE]
 > Imports are limited to 5 against a single AAD tenant per 24 hour period. Only imports that are queued count against this cap.
 
-After the import starts the user that queued the import will receive an email. Shortly after that the team will be able to navigate to the import account to check on the status. Once the import completes your team will be directed to sign in. The owner of the account will also receive an email when the import finishes. 
+After the import starts the user that queued the import will receive an email. Around 5-10 minutes after queueing the import your team will be able to navigate to the account to check on the status. Once the import completes your team will be directed to sign in. The owner of the account will also receive an email when the import finishes. 
