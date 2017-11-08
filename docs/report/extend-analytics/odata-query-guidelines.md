@@ -207,6 +207,11 @@ Groupping operation is intended to reduce the number of records. Using distinct 
 
 >*One or more of the columns specified in the groupby clause of this query are not recommended.*
 
+### **❌ [BLOCKED] DO NOT** use `countdistinct` aggregation.
+<a name="odata_query_with_countdistinct_not_supported"></a>
+
+
+
 
 ### **❌ AVOID** aggregations that can result in arithmetic overflow.
 In rare cases you may run into problems with arithmetic overflow in the aggregation queries. For example, this can happen when you sum some numeric properties which are not intended for summarization such as `StackRank` in the work item entities. Since [OData Extension for Data Aggregation](http://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html) standard does not provide a way to cast a property to a different type, the only way to solve this problem is to remove the problematic property from the aggregation.
