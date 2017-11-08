@@ -384,7 +384,9 @@ Next you will need to grant VSTS access. Again, you only need to grant an except
 |    VSTS - India South                           |    104.211.227.29   |
 |    VSTS - Canada Central                        |    52.237.19.6      |
 
-If you're planning on using the [preview](https://aka.ms/vstsimportpreview) feature to include Release Management data with your import, then you will need to grant Release Management access as well. 
+If you're planning on using the [preview](https://aka.ms/vstsimportpreview) feature to include Release Management and Package Management data with your import, then you will need to grant both features access as well. 
+
+**Release Management IPs**
 
 |    Service                                      |    IP               |
 |-------------------------------------------------|---------------------|
@@ -394,6 +396,38 @@ If you're planning on using the [preview](https://aka.ms/vstsimportpreview) feat
 |    Release Management - Brazil South            |    191.235.94.154   |
 |    Release Management - India South             |    52.172.15.233    |
 |    Release Management - Canada Central          |    52.237.28.171    |
+
+**Pacakage Management IPs**
+
+You will need to add execptions for all three services that make up Package Management.
+
+|    Service                                      |    IP               |
+|-------------------------------------------------|---------------------|
+|    Package Management - United States           |    TBD              |
+|    Package Management - West Europe             |    TBD              |
+|    Package Management - Australia East          |    TBD              |
+|    Package Management - Brazil South            |    TBD              |
+|    Package Management - India South             |    TBD              |
+|    Package Management - Canada Central          |    TBD              |
+
+|    Service                                      |    IP               |
+|-------------------------------------------------|---------------------|
+|    Package Management Feed - United States      |    TBD              |
+|    Package Management Feed - West Europe        |    TBD              |
+|    Package Management Feed - Australia East     |    TBD              |
+|    Package Management Feed - Brazil South       |    TBD              |
+|    Package Management Feed - India South        |    TBD              |
+|    Package Management Feed - Canada Central     |    TBD              |
+
+|    Service                                      |    IP               |
+|-------------------------------------------------|---------------------|
+|    Package Management Blob - United States      |    TBD              |
+|    Package Management Blob - West Europe        |    TBD              |
+|    Package Management Blob - Australia East     |    TBD              |
+|    Package Management Blob - Brazil South       |    TBD              |
+|    Package Management Blob - India South        |    TBD              |
+|    Package Management Blob - Canada Central     |    TBD              |
+
 
 Your SQL Azure VM should now be set up to allow your data to be imported to VSTS. Follow the rest of the steps below to queue your import. 
 
