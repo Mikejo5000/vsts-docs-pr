@@ -9,6 +9,8 @@ ms.author: alewis
 ms.date: 11/8/2017
 ---
 
+**VSTS**
+
 # Build and publish a container for your app
 
 In this quickstart you learn how to define a continuous integration (CI) process for your Docker-enabled application using VSTS. The CI process will publish a new container image to Azure Container Registry every time a change is pushed to the application code.
@@ -23,7 +25,7 @@ In this quickstart you learn how to define a continuous integration (CI) process
 
 ## Modify the build definition
 
-If you created a build definition using one of the topics described in pre-requisites, your build would produce a zip archive by default. This is convenient if you plan to deploy the app to an Azure web app or to an IIS server. If your goal is to deploy the app to Azure web apps for containers or a Kubernetes cluster, then you must publish the app as a container.
+If you created a build definition by following one of the walkthroughs mentioned in the prerequisites above, then your build produces a web deployment file. This is useful to deploy the app to an Azure web app or to an IIS server. However, here the goal is to deploy your app to Azure web apps for containers or to a Kubernetes cluster. So you will instead publish the app as a container.
 
 <!--
 The steps for doing this depend on whether your CI process is defined through a YAML file or through the web editor in VSTS.
@@ -33,7 +35,7 @@ The steps for doing this depend on whether your CI process is defined through a 
 
 1. Remove the **Archive files** task and the **Publish artifacts** task from the build definition.
 
-1. Select **+ Add Task** to add another task to the build definition. From the displayed task catalog, select **Docker** task. Change the parameters for this task as follows:
+1. Select **+ Add Task** to add another task to the build definition. From the displayed task catalog, select the **Docker** task. Specify the following arguments:
 
    * **Azure subscription:** Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions connection to your Azure subscription. If you are using VSTS and if you see an **Authorize** button next to the input, click on it to authorize VSTS to connect to your Azure subscription. If you are using TFS or if you do not see
      the desired Azure subscription in the list of subscriptions, see [Azure Resource Manager service endpoint](../../concepts/library/service-endpoints.md#sep-azure-rm) to manually set up the connection.
@@ -43,7 +45,7 @@ The steps for doing this depend on whether your CI process is defined through a 
    * **Action:** Build an image.
 
 1. Select **+ Add Task** to add another **Docker** task to the build definition.
-   Make sure that the task is inserted _after_ the previous **Docker** task. Change the parameters for this task as follows:
+   Make sure that the task is inserted _after_ the previous **Docker** task. Specify the following arguments:
 
    * **Azure subscription:** Same as in previous task.
 
@@ -51,7 +53,7 @@ The steps for doing this depend on whether your CI process is defined through a 
 
    * **Action:** Push an image.
 
-1. Click **Save and queue** to kick off a build. On the **Queue build** dialog box, click **Queue**.
+1. Click **Save and queue** to kick off a build. On the **Save build definition and queue** dialog box, click **Save & queue**.
 
 1. A new build is started. You'll see a link to the new build on the top of the page. Click the link to watch the new build as it happens. Verify that a Docker container image is built and pushed to the Azure container registry.
 
