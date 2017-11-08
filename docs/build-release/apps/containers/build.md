@@ -63,3 +63,8 @@ The steps for doing this depend on whether your CI process is defined through a 
 This is not yet supported in YAML.
 ---
 -->
+
+## Next step
+
+> [!div class="nextstepaction"]
+> [Deploy to Azure Web App for Containers](../cd/deploy-docker-webapp.md)
