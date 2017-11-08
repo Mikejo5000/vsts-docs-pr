@@ -1,12 +1,13 @@
 ---
-title: OData API Versioning | VSTS  
+title: OData API Versioning (VSTS)  
 description: How the Analytics service for Visual Studio Team Services (VSTS) manages changes to the OData API. 
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
-ms.assetid: BF30FE4E-0370-4C9B-A660-51207D816F8B
-ms.manager: trevoc
-ms.author: prprice
-ms.date: 10/18/2017
+ms.assetid:  
+ms.reviewer: prprice
+ms.manager: douge
+ms.author: kaelli
+ms.date: 11/15/2017
 ---
 
 # OData API versioning

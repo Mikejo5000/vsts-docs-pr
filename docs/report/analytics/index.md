@@ -4,26 +4,45 @@ description: Index to topics for using the Analytics Service on VSTS
 ms.assetid:  
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
-ms.manager: aacathca
-ms.author: pantal
-ms.date: 10/10/2017
+ms.reviewer: pantal
+ms.manager: douge
+ms.author: kaelli
+ms.date: 11/15/2017
 ---
 
 # Analytics (VSTS) 
 
 **VSTS**  
 
+You can use the Analytics service to answer quantitative questions regarding past or present state and velocity of your projects hosted in Visual Studio Team Services (VSTS). The Analytics service provides a concise OData model of your work tracking data.  
+
+To get started, read [What is Analytics?](what-is-analytics.md) 
+
+
 [!INCLUDE [temp](../_shared/analytics-preview.md)]  
 
 ## 5-Minute Quickstarts
- - [Enable and use Analytics with Velocity Widget](../guidance/enable-analytics-Velocity.md)
+ - [Add an Analytics widget to a dashboard](../guidance/enable-analytics-velocity.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json)
+
+
+## Step-by-Step Tutorials
+
+- [Configure a Cumulative Flow chart](../guidance/cumulative-flow.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json)
+- [Configure a Lead Time or Cycle Time widget](../guidance/cycle-time-and-lead-time.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json)
+- [Configure or view Velocity chart](../guidance/team-velocity.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json)
+
+
 
 ## Concepts
-- [What is Analytics](what-is-analytics.md)  
 
+
+- [Analytics widgets](../guidance/analytics-widgets-vsts.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json)
+- [Cumulative flow, lead time, and cycle time guidance](../guidance/cumulative-flow-cycle-lead-time-guidance.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json)
+- [Velocity guidance](../guidance/velocity-guidance.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json)
+- [Burndown guidance](../guidance/burndown-guidance.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json)
 
 ## How-to Guides
-- [Set permissions for Analytics Service](analytics-security.md)
+- [Set permissions for the Analytics Service](analytics-security.md)
 
 <!---
 Future:
@@ -34,10 +53,9 @@ Understanding Analytics Service data Acquisition
 -->
 
 ## Resources
-- [VSTS & Power BI](../powerbi/index.md)
-- [Extend on Analytics](../extend-analytics/index.md)
-- [Analytics Widgets in VSTS](../guidance/analytics-widgets-VSTS.md)
-- [Developer Community: Analytics support forum] (https://developercommunity.visualstudio.com/search.html?f=&type=question+OR+problem&type=question+OR+problem&c=&redirect=search%2Fsearch&sort=relevance&q=VSTS+Analytics)
+- [PowerBI (VSTS)](../powerbi/index.md)
+- [Extend on Analytics with OData](../extend-analytics/index.md)
+- [Developer Community: Analytics support forum](https://developercommunity.visualstudio.com/search.html?f=&type=question+OR+problem&type=question+OR+problem&c=&redirect=search%2Fsearch&sort=relevance&q=VSTS+Analytics)
 - [User Voice: Reporting feature requests](https://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/category/145257-dashboards-and-reporting)
 
 <!---

@@ -4,9 +4,10 @@ description: Describes the data entities and relationships provided by the Analy
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
 ms.assetid: 032FB76F-DC43-4863-AFC6-F8D67963B177  
-ms.manager: trevorc
-ms.author: davigust
-ms.date: 10/20/2017
+ms.reviewer: davigust
+ms.manager: douge
+ms.author: kaelli
+ms.date: 11/15/2017
 ---
 
 # Data model for the Analytics Service  

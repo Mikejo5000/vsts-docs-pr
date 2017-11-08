@@ -1,12 +1,12 @@
 ---
-title: Extend on Analytics with OData | VSTS 
+title: Extend on Analytics with OData (VSTS)  
 description: Index to topics for using OData backed Analytics Service on VSTS  
 ms.assetid:  
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
 ms.manager: aacathca
 ms.author: pantal
-ms.date: 10/30/2017
+ms.date: 11/15/2017
 ---
 
 #  Extend on Analytics with OData
@@ -15,7 +15,7 @@ ms.date: 10/30/2017
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]  
 
-## 5-Minute QuickStarts
+## 5-Minute Quickstarts
 
 - [Get Work Item Tracking data with OData](wit-analytics.md)
  

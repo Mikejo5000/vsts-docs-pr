@@ -27,7 +27,7 @@
 - name: Concepts
   items:
   - name: "Analytics widgets (VSTS)"
-    href: ../guidance/analytics-widgets-VSTS.md
+    href: ../guidance/analytics-widgets-vsts.md
   - name: Cumulative flow, lead time, and cycle time guidance
     href: ../guidance/cumulative-flow-cycle-lead-time-guidance.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json
   - name: Velocity guidance

@@ -3,21 +3,31 @@ title: Aggregate data using the OData Analytics Service for VSTS
 description: How to aggregate data with the Analytics Service (SEO; aggregation extension in odata, filtering of aggregated results)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
-ms.assetid: 8D81FEFD-F432-4E10-A415-9167B5FE9A57 
+ms.assetid: 
 ms.manager: douge
 ms.author: kaelli
-ms.date: 10/31/2017
+ms.date: 11/15/2017
 ---
 
 # Aggregate data using the Analytics service   
 
 **VSTS**  
 
-[!INCLUDE [temp](../_shared/analytics-preview.md)]
-
 You can aggregate your VSTS data using the OData Analytics service and the Aggregation Extension.
 
-##What is the Aggregation Extension for OData?
+In this topic you'll learn: 
+
+> [!div class="checklist"]   
+> * About the two ways available to aggregate data    
+> * How to generate a simple count of work items         
+> * How to use the Aggregation Extension for OData   
+> * How to group and filter aggregated results 
+> * How to aggregate data to generate a Cumulative Flow diagram  
+
+[!INCLUDE [temp](../_shared/analytics-preview.md)]
+
+
+## What is the Aggregation Extension for OData?
 
 Analytics relies on OData to author queries over your VSTS data. Aggregations in OData are achieved using an extension that introduces the ```$apply``` keyword. We have some examples of how to use this keyword below. Learn more about the extension at [OData Extension for Data Aggregation](http://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html).
 
@@ -33,7 +43,7 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0
 Use the above URL as a prefix for all the examples.   
 
 
-##Simple count aggregations
+## Simple count aggregations
 
 First, let's look at how to do counts without the aggregation extensions.
 
@@ -71,7 +81,7 @@ Now that you've seen how to do simple counts, let's review how to trigger aggreg
 
 {entityName} is the entity that needs to be queried for. {columnToAggregate} is the aggregation column. {aggregationType} will specify the type of aggregation used and {newColumnName} specifies the name of the column having values after aggregation.
 
-### Aggregated data examples 
+## Aggregated data examples 
 
 Using the ```apply``` extension, you can obtain counts, sums, and additional information when you query your VSTS data. 
 
@@ -96,7 +106,7 @@ Work items can also be counted by using the following:
 
     /WorkItems?$apply=aggregate(WorkItemId with max as MaxWorkItemId)
 
-##Group results
+## Group results
 
 Aggregation extensions also support a ```groupby``` clause which is identical to the SQL group by clause. You can use this clause to quickly break down numbers
 in more detail.  
@@ -111,6 +121,8 @@ Add the ```groupby``` clause to return a count of work items by type:
 
 This returns a result similar to the following:
 
+
+> [!div class="tabbedCodeSnippets"]
 ```JSON
     {
       "@odata.context":"https://{account}.analytics.visualstudio.com/_odata/v1.0/$metadata#WorkItems(WorkItemType,Count)","value":[
@@ -130,6 +142,7 @@ You can also group by multiple properties as in the following:
 
 This returns a result similar to the following:
 
+> [!div class="tabbedCodeSnippets"]
 ```JSON
     {
       "@odata.context": "https://{account}.analytics.visualstudio.com/_odata/v1.0/$metadata#WorkItems(WorkItemType,State,Count)",
@@ -189,6 +202,7 @@ When you want to provide multiple pieces of information, such as the sum of comp
 
 This will return a result that looks like the following:
 
+> [!div class="tabbedCodeSnippets"]
 ```JSON
 {
   "@odata.context":"https://{account}.analytics.visualstudio.com/_odata/v1.0/$metadata#WorkItems(SumOfCompletedWork,SumOfRemainingWork)","value":[
@@ -209,6 +223,7 @@ https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItemBoard
 ```
 This returns a result similar to the following:
 
+> [!div class="tabbedCodeSnippets"]
 ```JSON
 {
   "@odata.context": "https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItemBoardSnapshot(DateValue,BoardLocation(ColumnName),Count)",
