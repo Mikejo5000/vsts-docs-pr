@@ -375,8 +375,6 @@ Next you will need to grant VSTS access. Again, you only need to grant an except
 
 If you're planning on using the [preview](https://aka.ms/vstsimportpreview) feature to include Release Management and Package Management data with your import, then you will need to grant both features access as well. 
 
-**Release Management IPs**
-
 |    Service                                      |    IP               |
 |-------------------------------------------------|---------------------|
 |    Release Management - United States           |    23.102.153.83    |
@@ -386,6 +384,7 @@ If you're planning on using the [preview](https://aka.ms/vstsimportpreview) feat
 |    Release Management - India South             |    52.172.15.233    |
 |    Release Management - Canada Central          |    52.237.28.171    |
 
+<<<<<<< HEAD
 **Pacakage Management IPs**
 
 You will need to add execptions for all three services that make up Package Management.
@@ -418,6 +417,8 @@ You will need to add execptions for all three services that make up Package Mana
 |    Package Management Blob - Canada Central     |    52.237.16.145    |
 
 
+=======
+>>>>>>> Removing PKG staging we'll release that documentation earlier
 Your SQL Azure VM should now be set up to allow your data to be imported to VSTS. Follow the rest of the steps below to queue your import. 
 
 #### Restoring your Database on the VM
