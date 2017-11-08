@@ -18,9 +18,10 @@ ms.date: 05/21/2017
 The Analytics service implements a subset of the security found in the VSTS operational store. The security container in the Analytics service is at the team project level.   
 
 >[!NOTE]  
->The Analytics service does not support security at the area path level. Therefore, if a user has access to a team project and can report on that project but they don't have access to work items in specific areas of that project, they can view data through the Analytics service. Therefore, to protect your data, the best practice is to not allow reporting against the Analytics service for any user who does not have access to all data within a team project.  
+>Analytics Service is installed for an account, not individual Team Projects. When installing Analytics from the [Analytics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics), any user with permissions to a project are granted the “View Analytics" permission. This will allow the user to report on data under that project regardless of any security applies to an AreaPath. Therefore, if a user has access to a team project but they don't have access to work items in specific areas of that project, they can still view data for the restricted items through the Analytics service. 
+If you wish to restrict access to data in  the Analytics service, the best practice is to restrict access to “View Analytics” for all users except those that have access to all data in a Team Project.
 
-Security is granted by giving a user the **View analytics** permission in VSTS. 
+Security for Analytics is managed by the **View analytics** permission in VSTS. [Learn more.](../../security/about-permissions.md) 
 
 <img src="_img/analytics_permission.png" alt="Analytics Permission dialog" style="border: 2px solid #C3C3C3;" />
 
