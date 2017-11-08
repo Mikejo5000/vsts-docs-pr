@@ -4,8 +4,9 @@ description: Current level of support for OData specification in the Analytics S
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
 ms.assetid: 8D81FEFD-F432-4E10-A415-9167B5FE9A57 
+ms.reviewer: kokosins
 ms.manager: douge
-ms.author: kokosins
+ms.author: kaelli
 ms.date: 11/15/2017
 ---
 

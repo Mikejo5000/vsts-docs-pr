@@ -1,15 +1,19 @@
 ---
-title: Performance and Latency of the Analytics Service for VSTS | VSTS  
-description: S 
+title: Performance and latency with the Analytics Service for VSTS  
+description: Sets expectations regarding use of the Analytics Service when querying data for Visual Studio Team Services (VSTS) 
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
-ms.assetid: BF30FE4E-0370-4C9B-A660-51207D816F8B
-ms.manager: greggboe
-ms.author: jozimm
-ms.date: 10/30/2017
+ms.assetid: 
+ms.reviewer: jozimm
+ms.manager: douge
+ms.author: kaelli
+ms.date: 11/15/2017
 ---
 
 # Performance and Latency of the Analytics Service for VSTS
+
+**VSTS**
+
 When you use the Analytics Service for reporting, you’ll want to understand the performance and data latency issues associated with the service. To get started using the Analytics Service, see What is the[Analytics Service](./what-is-analytics.md).
 
 ## Installing Analytics

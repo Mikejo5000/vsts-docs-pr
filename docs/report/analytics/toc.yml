@@ -1,4 +1,4 @@
-- name: Analytics (VSTS) 
+- name: "Analytics (VSTS)" 
   href: index.md
 - name: Overview
   items:
@@ -34,11 +34,11 @@
     href: analytics-security.md
 - name: Resources
   items:
-  - name: Power BI (VSTS)
+  - name: "Power BI (VSTS)"
     href: ../powerbi/index.md
   - name: Extend on Analytics with OData
     href: ../extend-analytics/index.md
-  - name: Developer Community: Analytics support forum
+  - name: "Developer Community: Analytics support forum"
     href: https://developercommunity.visualstudio.com/search.html?f=&type=question+OR+problem&type=question+OR+problem&c=&redirect=search%2Fsearch&sort=relevance&q=VSTS+Analytics
-  - name: User Voice: Reporting feature requests
+  - name: "User Voice: Reporting feature requests"
     href: https://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/category/145257-dashboards-and-reporting

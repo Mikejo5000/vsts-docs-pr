@@ -3,10 +3,11 @@ title: Exploring Analytics OData metadata | VSTS
 description: Guidance on how to explore Analytics metadata in Visual Studio Team Services (VSTS). 
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
-ms.assetid: BF30FE4E-0370-4C9B-A660-51207D816F8B
-ms.manager: greggboe
-ms.author: jozimm
-ms.date: 10/20/2017
+ms.assetid:  
+ms.reviewer: jozimm
+ms.manager: douge
+ms.author: kaelli
+ms.date: 11/15/2017
 ---
 
 # Exploring Analytics OData metadata
