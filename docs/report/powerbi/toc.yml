@@ -34,8 +34,6 @@
       href: create-rollup-charts.md      
 - name: Reference
   items:
-  - name: Power BI available data
-    href: vso-pbi-whats-available-vs.md
   - name: Data Connector available functions
     href: data-connector-functions.md
 - name: Resources
