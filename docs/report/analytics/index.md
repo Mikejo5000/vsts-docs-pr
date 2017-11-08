@@ -4,9 +4,10 @@ description: Index to topics for using the Analytics Service on VSTS
 ms.assetid:  
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
-ms.manager: aacathca
-ms.author: pantal
-ms.date: 10/10/2017
+ms.reviewer: pantal
+ms.manager: douge
+ms.author: kaelli
+ms.date: 11/15/2017
 ---
 
 # Analytics (VSTS) 
@@ -15,7 +16,7 @@ ms.date: 10/10/2017
 
 You can use the Analytics service to answer quantitative questions regarding past or present state and velocity of your projects hosted in Visual Studio Team Services (VSTS). The Analytics service provides a concise OData model of your work tracking data.  
 
-To get started, read [What is Analytics?](what-is-analytics.md). 
+To get started, read [What is Analytics?](what-is-analytics.md) 
 
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]  

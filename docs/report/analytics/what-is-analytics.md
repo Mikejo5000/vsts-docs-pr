@@ -4,8 +4,9 @@ description: An overview of Visual Studio Team Services (VSTS) Reporting solutio
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
 ms.assetid: 
-ms.manager: abjork
-ms.author: greggboe
+ms.reviewer: greggboe
+ms.manager: douge
+ms.author: kaelli
 ms.date: 11/15/2017
 ---
 

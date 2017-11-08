@@ -1,5 +1,5 @@
 ---
-title: Access data from Power BI desktop | VSTS  
+title: Access data from Power BI desktop  
 description: How to access Analytics Service OData for Visual Studio Team Services (VSTS) from Power BI Desktop   
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
