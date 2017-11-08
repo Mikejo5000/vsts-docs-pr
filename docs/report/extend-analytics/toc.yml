@@ -1,5 +1,9 @@
 - name: "Extend on Analytics with OData"
   href: index.md
+- name: Overview
+  items:
+  - name: "What is the Analytics Service?"
+    href: ../analytics/what-is-analytics.md?toc=/vsts/report/extend-analytics/toc.json&bc=/vsts/report/extend-analytic/breadcrumb/toc.json
 - name: Quickstarts
   items:
   - name: Get work item tracking data 
