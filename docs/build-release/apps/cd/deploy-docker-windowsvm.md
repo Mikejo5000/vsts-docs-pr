@@ -22,7 +22,7 @@ as long as your continuous integration process publishes a Docker-enabled packag
 Before you begin, you'll need a CI build that publishes your Docker-enabled package.
 To set up CI for your app, see:
 
-* [Build and push your container app](../containers/build-container.md)
+* [Build and push your container app](../containers/build.md)
 
 You'll also need an Azure VM where you will deploy the app.
 

@@ -6,7 +6,7 @@ You produced a zip archive in the above CI process. This is convenient if you pl
 
 * Deploy to Linux VMs: If your goal is to deploy the app to a Linux machine, then publish the build as a simple folder. To do this, simply remove the **Archive files** task from your build definition.
 
-* Deploy to a container service: If your goal is to deploy the app to Azure web apps for containers or a Kubernetes cluster, then publish the app as a container. To learn more, see [Build and push a container for your app](../containers/build-container.md).
+* Deploy to a container service: If your goal is to deploy the app to Azure web apps for containers or a Kubernetes cluster, then publish the app as a container. To learn more, see [Build and push a container for your app](../containers/build.md).
 
 ### Extend to other Git workflows
 
