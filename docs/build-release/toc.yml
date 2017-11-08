@@ -22,7 +22,7 @@
         href: apps/java/build-maven.md
       - name: C++
         href: apps/windows/cpp.md
-      - name: Build and push a container
+      - name: Containers
         href: apps/containers/build-container.md
       - name: Xcode
         href: apps/mobile/xcode-ios.md

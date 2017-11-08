@@ -51,9 +51,9 @@ The steps for doing this depend on whether your CI process is defined through a 
 
    * **Action:** Push an image.
 
- 1. Click **Save and queue** to kick off a build. On the **Queue build** dialog box, click **Queue**.
+1. Click **Save and queue** to kick off a build. On the **Queue build** dialog box, click **Queue**.
 
- 1. A new build is started. You'll see a link to the new build on the top of the page. Click the link to watch the new build as it happens. Verify that a Docker container image is built and pushed to the Azure container registry.
+1. A new build is started. You'll see a link to the new build on the top of the page. Click the link to watch the new build as it happens. Verify that a Docker container image is built and pushed to the Azure container registry.
 
 <!--
 # [Container](#tab/yaml)
