@@ -9,7 +9,7 @@ ms.author: alewis
 ms.date: 11/8/2017
 ---
 
-**VSTS**
+**VSTS | TFS 2018 | TFS 2017 Update 3**
 
 # Build and publish a container for your app
 
