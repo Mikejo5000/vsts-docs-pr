@@ -6,16 +6,16 @@ ms.technology: vs-devops-build
 ms.assetid: E5BEDC1D-0209-40F3-A2AB-591CB7AE97E8
 ms.manager: douge
 ms.author: alewis
-ms.date: 09/27/2017
+ms.date: 11/8/2017
 ---
 
-# Build and push a container for your app
+# Build and publish a container for your app
 
-In this quickstart you learn how to define CI process for your Docker-enabled application using VSTS. The CI process will publish a new container image to Azure Container Registry every time a change is pushed to the application code.
+In this quickstart you learn how to define a continuous integration (CI) process for your Docker-enabled application using VSTS. The CI process will publish a new container image to Azure Container Registry every time a change is pushed to the application code.
 
 ## Prerequisites
 
-* A working CI set up for your application using VSTS. Follow the steps in [Build your Node.js app with Gulp](../nodejs/build-gulp.md) or [Build your ASP.NET Core app](../aspnet/build-aspnet-core.md).
+* A CI build set up for your application. See either [Build your Node.js app with Gulp](../nodejs/build-gulp.md) or [Build your ASP.NET Core app](../aspnet/build-aspnet-core.md).
 
 * An Azure subscription. If you don't have one, you can [create one for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 

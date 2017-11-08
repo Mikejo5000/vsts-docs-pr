@@ -119,3 +119,5 @@ Choose your version control system to get specific instructions for copying the 
 ## Next steps
 
 [!INCLUDE [include](../_shared/ci-web-app-next-steps.md)]
+
+To learn how to deploy your app in a container, see [Build and publish a container for your app](../containers/build.md).
