@@ -13,11 +13,19 @@ ms.date: 11/15/2017
 
 **VSTS**  
 
-[!INCLUDE [temp](../_shared/analytics-preview.md)]
 
 Querying work items across links is much like using typical navigation properties. Links themselves are entities though, so there is some additional complexity.
 
-There are two ways to query for linked items. The first is the Parent/Child hierarchy, and the second is the Links navigation property. The sections below cover each approach.
+There are two ways to query for linked work items. The first is the Parent/Child hierarchy, and the second is the Links navigation property.  
+
+In this topic you'll learn: 
+
+> [!div class="checklist"]     
+> * How to construct a query to return hierarchically (parent-child) linked work items
+> * How to construct a query to return non-hierarchically (related, direct) linked work items 
+
+[!INCLUDE [temp](../_shared/analytics-preview.md)]
+
 
 ## Parent/Child hierarchy
 You can include items related through Parent/Child links by using ```$expand``` on the Parent and Children properties.
@@ -25,12 +33,18 @@ You can include items related through Parent/Child links by using ```$expand``` 
 ### Example: Parent to child query
 To return information about an item's children use ```$expand``` on the **Children** navigation property.
 
-Request
-```
+
+**Request**
+
+> [!div class="tabbedCodeSnippets"]
+```OData
 https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$select=WorkItemId,Title,State&$expand=Children($select=WorkItemId,Title,State)&$filter=WorkItemId eq 103
 ```
 
-Response
+
+**Response**
+
+> [!div class="tabbedCodeSnippets"]
 ```JSON
 {
 	"@odata.context": "https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItems(WorkItemId,Title,State,Children,Children(WorkItemId,Title,State))",
@@ -61,12 +75,16 @@ You can retrieve all descendants of your work items by using the ```$levels``` o
 >[!NOTE]  
 >The ```$levels``` option only works for recursive relationships.
 
-Request
-```
+**Request**
+
+> [!div class="tabbedCodeSnippets"]
+```OData
 https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$select=WorkItemId,Title,State&$expand=Children($select=WorkItemId,Title,State;$levels=max)&$filter=WorkItemId eq 103
 ```
 
-Response
+**Response**
+
+> [!div class="tabbedCodeSnippets"]
 ```JSON
 {
 	"@odata.context": "https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItems(WorkItemId,Title,State,Children,Children(WorkItemId,Title,State,Children,Children(WorkItemId,Title,State)))",
@@ -109,12 +127,16 @@ Notice that the "Story 15" and "Story 22" items now include their child items.
 
 By replacing **Children** with **Parent** in the ```$expand``` option you can retrieve an item's ancestry.
 
-Request
-```
+**Request**
+
+> [!div class="tabbedCodeSnippets"]
+```OData
 https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$select=WorkItemId,Title,State&$expand=Parent($select=WorkItemId,Title,State;$levels=max)&$filter=WorkItemId eq 105
 ```
 
-Response
+**Response**
+
+> [!div class="tabbedCodeSnippets"]
 ```JSON
 {
 	"@odata.context": "https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItems(WorkItemId,Title,State,Parent,Parent(WorkItemId,Title,State,Parent,Parent(WorkItemId,Title,State)))",
@@ -136,18 +158,22 @@ Response
 }
 ```
 
-## Non-hierarchical links
+## Query for non-hierarchical links
 In addition to the Parent/Child hierarchy items can be directly related to other items with link types like *Related* or *Duplicate*. The **Links** navigation property allows you to request these relationships.
 
 ### Example: Request an item's links
 To retrieve the links associated with an item you may ```$expand``` the **Links** navigation property.
 
-Request
-```
+**Request**
+
+> [!div class="tabbedCodeSnippets"]
+```OData
 https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$select=WorkItemId,Title,WorkItemType,State&$filter=WorkItemId%20eq%20103&$expand=Links($select=SourceWorkItemId,TargetWorkItemId,LinkTypeName)
 ```
 
-Response
+**Response**
+
+> [!div class="tabbedCodeSnippets"]
 ```JSON
 {
 	"@odata.context": "https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItems(WorkItemId,Title,WorkItemType,State,Links(SourceWorkItemId,TargetWorkItemId,LinkTypeName))",
@@ -179,12 +205,17 @@ Response
 ### Example: Request details of linked items
 The previous query only retrieves details on the links between items. You may include the details of your linked items by using ```$expand``` on the **TargetWorkItem** navigation property.
 
-Request
-```
+
+**Request**
+
+> [!div class="tabbedCodeSnippets"]
+```OData
 https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$select=WorkItemId,Title,WorkItemType,State&$filter=WorkItemId%20eq%20103&$expand=Links($select=SourceWorkItemId,TargetWorkItemId,LinkTypeName;$expand=TargetWorkItem($select=WorkItemId,Title,State))
 ```
 
-Response
+**Response**
+
+> [!div class="tabbedCodeSnippets"]
 ```JSON
 {
 	"@odata.context": "https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItems(WorkItemId,Title,WorkItemType,State,Links(SourceWorkItemId,TargetWorkItemId,LinkTypeName,TargetWorkItem(WorkItemId,Title,State)))",
@@ -237,12 +268,16 @@ Response
 ### Example: Links of a specific type
 You may also be interested in a particular type of link between items, in which case the **LinkTypeName** property can be used in a ```$filter```. This query expands all 'Related' links and filters out all other link types.
 
-Request
-```
+**Request**
+
+> [!div class="tabbedCodeSnippets"]
+```OData
 https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$select=WorkItemId,Title,WorkItemType,State&$filter=WorkItemId eq 103&$expand=Links($select=SourceWorkItemId,TargetWorkItemId,LinkTypeName;$filter=LinkTypeName eq 'Related';$expand=TargetWorkItem($select=WorkItemId,Title,State))
 ```
 
-Response
+**Response**
+
+> [!div class="tabbedCodeSnippets"]
 ```JSON
 {
 	"@odata.context": "https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItems(WorkItemId,Title,WorkItemType,State,Links(SourceWorkItemId,TargetWorkItemId,LinkTypeName,TargetWorkItem(WorkItemId,Title,State)))",

@@ -21,14 +21,14 @@ If you are just adding an Analytics widget to a dashboard or viewing an Analytic
 
 The Analytics service implements a subset of the security found in the VSTS operational store. The security container in the Analytics service is at the team project level.   
 
+Security is granted by giving a user the **View analytics** permission through the team project admin Security page.    
+
+<img src="_img/analytics-permissions.png" alt="Analytics Permission dialog" style="border: 1px solid #C3C3C3;" />
+
 >[!NOTE]  
 >The Analytics service does not support security at the area path level. Therefore, if a user has access to a team project and can report on that project but they don't have access to work items in specific areas of that project, they can view data through the Analytics service. Therefore, to protect your data, the best practice is to not allow reporting against the Analytics service for any user who does not have access to all data within a team project.  
 
-Security is granted by giving a user the **View analytics** permission through the team project admin Security page. 
-
-<img src="_img/analytics_permissions.png" alt="Analytics Permission dialog" style="border: 1px solid #C3C3C3;" />
-
-
+To learn more about working with permissions, see [Security & Identity](../../security/index.md).
 
 
 **The whole truth or nothing at all**

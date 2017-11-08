@@ -13,29 +13,37 @@ ms.date: 11/15/2017
 
 **VSTS**  
 
+Examining trends in data and making period-over-period comparisons are two of the most interesting aspects of data analysis. The Analytics service supports these capabilities.
+
+Trend data is captured in the WorkItemSnapshot and WorkItemBoardSnapshot entities. They are constructed such that every work item, from the day it was created until today, exists for each day. This means that for an account with only one work item that was created a year ago, there are 365 rows in this entity. For significantly large projects, these entities would be far too large to load into a client tool.  
+
+What is the solution? Use the [Aggregation Extensions](aggregated-data-analytics.md). 
+
+In this topic you'll learn: 
+
+> [!div class="checklist"]     
+> * How to construct a basic query for trend data       
+
+
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
-Examining trends in data and making period-over-period comparisons are two of the most interesting aspects of data analysis. The Analytics service supports this capability.
-
-Trend data is captured in the WorkItemSnapshot and WorkItemBoardSnapshot entities. They are constructed such that every work item, from the day it was created until today, exists for each day. This means that for an account with only one work item that was created a year ago, there are 365 rows in this entity.  
-
-For any project of size, this entity will be far too large to load into a client tool.  
-
-What is the solution? [Aggregation Extensions](aggregated-data-analytics.md). 
 
 Using the OData Aggregation Extensions, you can return aggregated data from VSTS that is conducive to reporting. For example you could show bug trend for the month of March. Bug trends are a common and critical part of managing any project so you can put this to good use immediately.
 
 See the topic [Aggregate data](aggregated-data-analytics.md) for more detailed information on
 constructing aggregation queries.
 
-##Construct the basic query    
+## Construct a basic query for trend data   
+ 
 There are some basic requirements you need to effectively query the WorkItemSnapshot table:  
 * The data needs to be filtered by date.
 * The aggregation should group by, at the very least, date.
 
 With this in mind, the query to create a bug trend report looks like the following: 
 
-```odata
+
+> [!div class="tabbedCodeSnippets"]
+```OData
 https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItemSnapshot?
   $apply=
     filter(DateValue ge 2016-03-01Z and DateValue le 2016-03-31Z and WorkItemType eq 'Bug')/
@@ -45,6 +53,8 @@ https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItemSnaps
 
 This returns a result similar to the following:
 
+
+> [!div class="tabbedCodeSnippets"]
 ```JSON
 {
   "@odata.context": "https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItemSnapshot(DateValue,State,Count)",
@@ -73,7 +83,8 @@ Before walking you through how to use this in a client tool, let's look at a var
 
 To construct that query, do the following:  
 
-```odata
+> [!div class="tabbedCodeSnippets"]
+```OData
 https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItemSnapshot?
   $apply=
     filter(WorkItemType eq 'Bug')/
@@ -85,6 +96,7 @@ https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItemSnaps
 
 This returns a result similar to the following:
 
+> [!div class="tabbedCodeSnippets"]
 ```JSON
 {
   "@odata.context": "https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItemSnapshot(DateValue,State,Count)",
@@ -107,5 +119,5 @@ This returns a result similar to the following:
 
 In this query, there are two key differences. We added a filter clause to filter the data to a specific iteration and the dates are now being compared to the iteration start and end dates versus a hard coded date.  
 
->[!NOTE]  
->Using Power Query you can craft the query such that it provides a rolling chart using a form such as, todays date minus 30 days for a rolling 30 day chart.
+> [!NOTE]  
+> Using Power Query you can craft the query such that it provides a rolling chart using a form such as, todays date minus 30 days for a rolling 30 day chart.  

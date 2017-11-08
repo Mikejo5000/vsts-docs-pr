@@ -1,5 +1,5 @@
 ---
-title: Exploring Analytics OData metadata | VSTS  
+title: Explore Analytics OData metadata for VSTS  
 description: Guidance on how to explore Analytics metadata in Visual Studio Team Services (VSTS). 
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
@@ -10,11 +10,13 @@ ms.author: kaelli
 ms.date: 11/15/2017
 ---
 
-# Exploring Analytics OData metadata
+# Explore the Analytics OData metadata
 
 **VSTS**
 
-[!INCLUDE [temp](../_shared/analytics-preview.md)]
+
+
+This introductory tutorial provides guidance for exploring Analytics metadata.  [OData metadata](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part3-csdl/odata-v4.0-errata03-os-part3-csdl-complete.html#_Toc453752662) is a machine readable description of the entity model designed to enable client consumption. Understanding the metadata associated with the entity model is a pre-requisite for programmatically querying the [Analytics OData v4 endpoint](data-model-analytics-service.md).
 
 In this topic you'll learn how to:
 >[!div class="checklist"]
@@ -24,7 +26,8 @@ In this topic you'll learn how to:
 >* Identify the keys, properties, and navigational properties associated with an Entity
 >* Identify the capabilities of the Analytics OData endpoint
 
-This introductory tutorial provides guidance for exploring Analytics metadata.  [OData metadata](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part3-csdl/odata-v4.0-errata03-os-part3-csdl-complete.html#_Toc453752662) is a machine readable description of the entity model designed to enable client consumption. Understanding the metadata associated with the entity model is a pre-requisite for programmatically querying the [Analytics OData v4 endpoint](data-model-analytics-service.md).
+[!INCLUDE [temp](../_shared/analytics-preview.md)]
+
 
 ## How to query the service for metadata
 Analytics exposes the [entity model](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part3-csdl/odata-v4.0-errata03-os-part3-csdl-complete.html#_Toc453752500) at the metadata URL, formed by appending $metadata to the service root URL. Analytics provides service roots for the [Projects or entire Account](account-scoped-queries.md).
@@ -45,9 +48,10 @@ The service root URL at the Account level is constructed as:
 https://{account}.analytics.visualstudio.com/_odata/v1.0/$metadata
 ```
 
-# Interpret the metadata response
+## Interpret the metadata response
 The core components of the metadata response are EntityType and EntityContainer.
 
+> [!div class="tabbedCodeSnippets"]
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
 <edmx:Edmx xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx" Version="4.0">
@@ -65,6 +69,7 @@ The core components of the metadata response are EntityType and EntityContainer.
 ## EntityTypes
 EntityTypes define each of the Entities in the model including properties and relationships. 
 
+> [!div class="tabbedCodeSnippets"]
 ```XML
 <EntityType Name="Project">
    <Key>
@@ -86,6 +91,7 @@ EntityTypes define each of the Entities in the model including properties and re
 ### Keys
 Keys define the Entity properties available for use as a Navigational Property.
 
+> [!div class="tabbedCodeSnippets"]
 ```XML
 <Key>
    <PropertyRef Name="ProjectSK"/>
@@ -97,6 +103,7 @@ The set of Entity properties available for query. Annotations represent addition
 
 Any property of Analytics that should be visible to end users is annotated with a DisplayName.
 
+> [!div class="tabbedCodeSnippets"]
 ```XML
 <Property Name="ProjectSK" Nullable="false" Type="Edm.Guid"/>
 <Property Name="ProjectId" Nullable="false" Type="Edm.Guid">
@@ -109,6 +116,7 @@ Any property of Analytics that should be visible to end users is annotated with 
 
 ReferenceName is another common annotation used to define the system identifier for a specific property.
 
+> [!div class="tabbedCodeSnippets"]
 ```XML
 <Property Name="State" Type="Edm.String">
    <Annotation String="State" Term="Display.DisplayName"/>
@@ -116,28 +124,31 @@ ReferenceName is another common annotation used to define the system identifier 
 </Property>
 ```
 
-### Navigational Properties
+### Navigational properties
 Querying an individual Entity is useful, but eventually you will want to be able to filter or expand details of another Entity. To do this, you need to understand how to use the [Navigational Properties](data-model-analytics-service.md) of the Entity model. 
 
 A Navigational Property with a Collection type represents a many to many relationship in the model.
 
+> [!div class="tabbedCodeSnippets"]
 ```XML
 <NavigationProperty Name="Teams" Type="Collection(Microsoft.VisualStudio.Services.Analytics.Model.Team)"/>
 ```
 
 ReferentialConstraints tie Navigational Properties to a specific key of an Entity, represeting a many to one relationship in the model.
 
+> [!div class="tabbedCodeSnippets"]
 ```XML
 <NavigationProperty Name="Project" Type="Microsoft.VisualStudio.Services.Analytics.Model.Project">
    <ReferentialConstraint ReferencedProperty="ProjectSK" Property="ProjectSK"/>
 </NavigationProperty>
 ```
 
-## Container (OData capabilities)
+## Containers (OData capabilities)
 
 ### EntitySets
 EntitySets represents a collection of entities and associated Navigational Property Bindings and Annotations.
 
+> [!div class="tabbedCodeSnippets"]
 ```XML
 <EntitySet Name="Projects" EntityType="Microsoft.VisualStudio.Services.Analytics.Model.Project">
    <NavigationPropertyBinding Target="Teams" Path="Teams"/>
@@ -148,6 +159,7 @@ EntitySets represents a collection of entities and associated Navigational Prope
 ### Capabilities
 Capabilities and Aggregation annotations define the set of [functions](./odata-supported-features.md) understood by the Analytics OData endpoint.
 
+> [!div class="tabbedCodeSnippets"]
 ```XML
 <Annotation Term="Org.OData.Capabilities.V1.FilterFunctions">
    <Collection>
@@ -179,6 +191,7 @@ Capabilities and Aggregation annotations define the set of [functions](./odata-s
 </Annotation>
 ```
 
+> [!div class="tabbedCodeSnippets"]
 ```XML
 <Annotation Term="Org.OData.Aggregation.V1.ApplySupported">
    <Record>
@@ -193,6 +206,7 @@ Capabilities and Aggregation annotations define the set of [functions](./odata-s
 </Annotation>
 ```
 
+> [!div class="tabbedCodeSnippets"]
 ```XML
 <Annotation Term="Org.OData.Capabilities.V1.BatchSupportType" Bool="true"/>
 <Annotation Term="Org.OData.Capabilities.V1.BatchSupportType">
