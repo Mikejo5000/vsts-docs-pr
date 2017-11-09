@@ -20,7 +20,7 @@ The $batch endpoint is located at ```https://{account}.analytics.visualstudio.co
 The OData spec allows for numerous operations per $batch request, however the Analytics service limits each $batch request to a single query. The Analytics $batch endpoint is also read-only, no change sets may be published to it.
 
 ### When to use $batch queries
-Use $batch requests when you are in danger of exceeding the browser's limit on URL length. Many modern browsers these limits and exceeding them can result in undesired behavior. Using a $batch request allows long queries to be issued against the Analytics service as the OData query is delivered in a POST body. You may use $batch requests for all your queries, though GET requests are slightly faster.
+Use $batch requests when you are in danger of exceeding the browser's limit on URL length. Many modern browsers have these limits and exceeding them can result in undesirable behavior. Using a $batch request allows long queries to be issued against the Analytics service as the OData query is delivered in a POST body. You may use $batch requests for all your queries, though GET requests are slightly faster.
 
 ## $batch request example
 ### Request
