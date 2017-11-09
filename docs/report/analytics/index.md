@@ -18,8 +18,10 @@ You can use the Analytics service to answer quantitative questions regarding pas
 
 To get started, read [What is Analytics?](what-is-analytics.md) 
 
-
-[!INCLUDE [temp](../_shared/analytics-preview.md)]  
+<!---
+[!INCLUDE [temp](../_shared/analytics-preview.md)] 
+-->
+ 
 
 ## 5-Minute Quickstarts
  - [Add an Analytics widget to a dashboard](../guidance/enable-analytics-velocity.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json)

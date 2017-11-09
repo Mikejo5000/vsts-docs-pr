@@ -2,40 +2,42 @@
   href: index.md
 - name: Overview
   items:
-  - name: "What is the Analytics Service?"
+  - name: "What is Analytics?"
     href: ../analytics/what-is-analytics.md?toc=/vsts/report/extend-analytics/toc.json&bc=/vsts/report/extend-analytic/breadcrumb/toc.json
 - name: Quickstarts
   items:
-  - name: Get work item tracking data 
+  - name: Query work item tracking data 
     href: wit-analytics.md
 - name: Tutorials
   items:
-  - name: Aggregate data using OData
+  - name: Aggregate data
     href: aggregated-data-analytics.md
   - name: Query for trend data
     href: querying-for-trend-data.md
-  - name: Query for work item links
+  - name: Query work item links
     href: work-item-links.md
-  - name: Explore the OData metadata
-    href: analytics-metadata.md
-- name: Concepts
-  items:
-  - name: Work item tracking data model
-    href: data-model-analytics-service.md
 - name: Samples
   items:
-  - name: Work item tacking query examples
+  - name: Work item tacking queries
     href: analytics-recipes.md  
+- name: Concepts
+  items:
+  - name: Performance and latency
+    href: ../analytics/performance-latency.md?toc=/vsts/report/extend-analytics/toc.json&bc=/vsts/report/extend-analytic/breadcrumb/toc.json
+  - name: Data model
+    href: data-model-analytics-service.md
+  - name: Query guidelines
+    href: odata-query-guidelines.md  
+- name: How-to Guides
+  items:
+  - name: Explore Analytics metadata
+    href: analytics-metadata.md
 - name: Reference
   items:
-  - name: Query work tracking data
-    href: wit-analytics.md
-  - name: OData API versioning
-    href: odata-api-version.md
-  - name: OData Query Guidelines
-    href: odata-query-guidelines.md  
-  - name: "Supported OData features & operations"
-    href: odata-supported-features.md  
+  - name: "Supported functions & clauses"
+    href: odata-supported-features.md 
+  - name: API versioning
+    href: odata-api-version.md 
 - name: Resources
   items:
   - name: "Analytics (VSTS)"

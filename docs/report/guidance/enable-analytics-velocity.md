@@ -76,4 +76,4 @@ Learn more about the Velocity widget in [Configure and view Velocity charts](./t
 
 ## Try this next
 > [!div class="nextstepaction"]
-> [Configure and view Velocity charts](team-velocity.md)
+> [Configure and view Velocity charts](team-velocity.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json)

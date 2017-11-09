@@ -1,6 +1,7 @@
 ---
-title: What is the Analytics Service | VSTS  
-description: An overview of Visual Studio Team Services (VSTS) Reporting solution, the Analytics Service
+title: What is the Analytics Service
+titleSuffix: VSTS
+description: Understand the Analytics Service reporting solution for Visual Studio Team Services (VSTS) 
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
 ms.assetid: 
@@ -10,7 +11,7 @@ ms.author: kaelli
 ms.date: 11/15/2017
 ---
 
-# What is the Analytics Service
+# What is the Analytics Service?
 
 The Analytics Service is the reporting platform for Visual Studio Team Services (VSTS). It provides a concise data model over the VSTS suite. You can use it to answer quantitative questions about past or present state of your projects. The Analytics Service is built for reporting. It is optimized for fast read-access and server-based aggregations.
 
