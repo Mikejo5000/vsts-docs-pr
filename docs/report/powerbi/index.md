@@ -10,14 +10,9 @@ ms.date: 10/30/2017
 ---
 
 # PowerBI (VSTS)
+[!INCLUDE [temp](../_shared/content-pack-deprecation.md)]
 
 <b>VSTS</b> 
-
->[!NOTE]  
-> **Feature availability:**  Using the Power BI Content Pack, you can generate PowerBI dashboards and reports. The Power BI Data Connector, however, requires access to the Analytics Service. The Analytics Service is in a closed preview at this time.  
->  
-> Both the Power BI Content Pack and Power BI Data Connector are only available for VSTS.  
-
 ## How-to Guides
 
 - [Set permissions for Analytics Service](../analytics/analytics-security.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json)  
@@ -35,18 +30,8 @@ Future:
 - [Power BI desktop and OData aggregations](../analytics/using-odata-aggregations-with-power-bi-desktop.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json)    
 - [Share reports, publish to PowerBI.com](../analytics/publishing-power-bi-desktop-to-power-bi.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json)    
 
-### Power BI Content Pack 
-<!-- Note: The content pack will be marked as deprecated in a follow up edit.-->
-
-- [Connect to VSTS with Power BI Content Pack](connect-vso-pbi-vs.md)  
-- [Create dashboards and reports](report-on-vso-with-power-bi-vs.md) 
-- [Create trend charts](create-trend-charts.md)  
-- [Create rollup charts](create-rollup-charts.md) 
-
-
-  
+ 
 ## Reference
-- [Power BI available data](vso-pbi-whats-available-vs.md)    
 - [Data Connector available functions](data-connector-functions.md)    
 
 <!-- Note: The above document will be cut, once all content is verified as moved to extend\Analytics-->
