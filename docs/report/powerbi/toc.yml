@@ -21,17 +21,7 @@
     - name: Create custom calculations
       href: ../analytics/custom-calculations.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
     - name: "Share reports, publish to PowerBI.com"
-      href: ../analytics/publishing-power-bi-desktop-to-power-bi.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
-  - name: Power BI Content Pack
-    items:
-    - name: Connect to VSTS with Power BI Content Pack
-      href: connect-vso-pbi-vs.md
-    - name: Create dashboards
-      href: report-on-vso-with-power-bi-vs.md
-    - name: Create trend charts
-      href: create-trend-charts.md
-    - name: Create rollup charts
-      href: create-rollup-charts.md      
+      href: ../analytics/publishing-power-bi-desktop-to-power-bi.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json   
 - name: Reference
   items:
   - name: Data Connector available functions
