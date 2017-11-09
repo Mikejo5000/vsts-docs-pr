@@ -41,8 +41,8 @@ build definitions, test plans, and so forth – are harder to manually migrate.
 
 ### Option 2: High fidelity database migration.
 
-The TFS/VSTS product team recently released a of a high fidelity TFS Database Import Service. A downloadable migration
-guide is available at [https://aka.ms/TFSImportData](https://aka.ms/TFSImportData). 
+The TFS/VSTS product team provides a high fidelity TFS Database Import Service. A downloadable Migration
+Guide is available at [https://aka.ms/TFSImportData](https://aka.ms/TFSImportData). 
 
 <a href="https://aka.ms/TFSImportData">
 <img alt="Migration Guide" src="_img\migration-import\VSTSMigrationGuideCover-227x300.png" align="middle" />
