@@ -21,7 +21,7 @@ The Analytics service data model consists of entity sets, whose members (entitie
 ##Entities  
 
 >[!NOTE]  
->Entities are described in OData metadata, and vary by VSTS project. A complete list of entity sets, entity types, and properties can be discovered by requesting the OData metadata for your project: ```https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata```  
+>Entities are described in OData metadata, and vary by VSTS project. A complete list of entity sets, entity types, and properties can be discovered by requesting the OData metadata for your project: ```https://{account}.analytics.visualstudio.com/{project}/_odata/{version}/$metadata```  
 
 The data model contains the following entity sets:  
 
@@ -64,16 +64,16 @@ Some navigation properties result in a single entity, while others result in a c
 
 ##Entity Properties
 
-The WorkItemRevision entity can contain hundreds of properties, including customized fields specific to your process. The sample below is a partial list, to illustrate some commonly found properties:
+Each entity in the model contains a set of properties. For example, the WorkItemRevision entity can contain hundreds of properties, including customized fields specific to your process. The sample below is a partial list, to illustrate some commonly found properties:
 
 | Property | Type | Description|  
 |--------|------------|------------|  
-|WorkItemRevisionSK | Int32 | The VSTS Analytics unique key for the work item revision - used by external tools to join related entities |  
-|WorkItemId | Int32 | The VSTS id for the work item |  
-|Revision | Int32 | The revision of the work item |  
-|Title | String | The work item title |
-|WorkItemType | String | The work item type (e.g. Bug, Task, User Story) |
-|StoryPoints | Double | The points assigned to this work item - commonly aggregated as a sum
+|WorkItemRevisionSK | Int32 | The VSTS Analytics unique key for the work item revision - used by external tools to join related entities.
+|WorkItemId | Int32 | The VSTS id for the work item.
+|Revision | Int32 | The revision of the work item. 
+|Title | String | The work item title. 
+|WorkItemType | String | The work item type (e.g. Bug, Task, User Story).
+|StoryPoints | Double | The points assigned to this work item - commonly aggregated as a sum.
 | Tags | Navigation | Navigation property to a Tag entity collection. Commonly used in ```$expand``` statements to access the Name property for multiple work item tags.
 |CreatedDate | DateTimeOffset | The date the work item was created, expressed in the time zone for the account. Commonly used for filtering and for display.
 |CreatedDateSK | Int32 | The date the work item was created, expressed as YYYYMMDD in the time zone for the account. Used by external tools to join related entities.
@@ -82,7 +82,7 @@ The WorkItemRevision entity can contain hundreds of properties, including custom
 The last three properties here show that the same value is often expressed in multiple properties, each designed for different scenarios.
 
 >[!NOTE]
->Changes to custom fields will affect the shape of your data model and will affect all work item revisions.
+>Changes to custom work item fields will affect the shape of your data model and will affect all work item revisions.
 
 
 ##Related notes 
