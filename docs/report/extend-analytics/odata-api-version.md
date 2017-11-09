@@ -27,7 +27,7 @@ The data model exposed by the Analytics Service defines the contract between the
 [OData Version 4.0 Part 5: Versioning](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752208)
 
 >[!NOTE]
->Custom fields in your model are not versioned. It is possible to cause breaking changes to your model by removing, or changing the types of, custom fields. All work items, and their revisions, will reflect the current custom field configuration.
+>Custom work item fields in your model are not versioned. It is possible to cause breaking changes to your model by removing, or changing the types of, custom fields. All work items, and their revisions, will reflect the current custom field configuration.
 
 ### Example of non-breaking changes
 Consider a scenario where a new UserType property is added to the User entity.
