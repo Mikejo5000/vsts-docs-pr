@@ -41,5 +41,7 @@ Check out the quick starts to get you started:
 * [Service hooks events reference](../service-hooks/events.md?toc=/vsts/integrate/toc.json)
 
 ## Resources
-* [REST API reference](https://www.visualstudio.com/en-us/docs/integrate/api/overview)
+* [REST API reference](https://docs.microsoft.com/en-us/rest/api/vsts/)
+
+
 
