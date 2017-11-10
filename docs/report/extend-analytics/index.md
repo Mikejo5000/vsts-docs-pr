@@ -23,7 +23,7 @@ ms.date: 11/15/2017
 - [Aggregate data using OData](aggregated-data-analytics.md)
 - [Query for trend data](querying-for-trend-data.md)
 - [Query for Work item links](work-item-links.md)
-- [Exploring Analytics OData metadata](analytics-metadata.md) 
+- [Exploring Analytics OData metadata](analytics-metadata.md)
  
 ## Concepts
 - [Data Model for Work Item Tracking Analytics](data-model-analytics-service.md)
@@ -39,7 +39,8 @@ Use Agile process data
 -->
 
 ## Samples
-- [Work Item Tracking Analytics Query Examples](analytics-recipes.md)
+- [Work item tracking queries](analytics-recipes.md)
+- [Create an Analytics widget](example-analytics-widget.md)
 
 <!--
 
@@ -47,11 +48,6 @@ Use Agile process data
 - [Widget View](..\analytics\widget-extensions-against-analytics-service.md)
 - [Widget Configuration](..\analytics\widget-extension-against-analytics-service-configuration.md)
 
--->
-
-<!--
-Planned:
-Build a widget that uses the Analytics Service
 -->
 
 ## Reference

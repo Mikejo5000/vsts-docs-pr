@@ -24,8 +24,10 @@
     href: data-model-analytics-service.md
 - name: Samples
   items:
-  - name: Work item tacking query examples
+  - name: Work item tracking queries
     href: analytics-recipes.md  
+  - name: Create an Analytics widget
+    href: example-analytics-widget.md  
 - name: Reference
   items:
   - name: Query work tracking data
