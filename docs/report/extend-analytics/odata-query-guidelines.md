@@ -416,7 +416,7 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
 ```
 
 ### **❌ DO NOT** use `tolower` and `toupper` functions to perform case-insensitive comparison.
-Working with other systems you might expect you need to use `tolower` or `toupper` functions for the case-insensitive comparison. With Analytics Service all the string comparison is case-insensitive by default, thus you do not need to apply any functions to explicitly handle it.
+Working with other systems you might expect you need to use `tolower` or `toupper` functions for the case-insensitive comparison. With Analytics Service all the string comparisons are case-insensitive by default, thus you do not need to apply any functions to explicitly handle it.
 
 For example, the following query gets all the work items tagged with "QUALITY", "quality" or any other case combination of this word.
 ```odata
@@ -531,7 +531,7 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
 
 
 ### **❌ AVOID** mixing `$apply` and `$filter` clauses in a single query.
-If you want to add filter to your query you have two options. You can either do it with `$filter` clause or `$apply=filter()` combination. Each one of these options works great on its own, but combining them together might lead to some unexpected results. Despite the expectation one might have, OData clearly defines an order of the evaluation and `$apply` clause has priority over `$filter`. For this reason, you should choose one or another but avoid these two filter option in a single query. This is particularly important if the queries are generated automatically.
+If you want to add a filter to your query you have two options. You can either do it with `$filter` clause or `$apply=filter()` combination. Each one of these options works great on its own, but combining them together might lead to some unexpected results. Despite the expectation one might have, OData clearly defines an order of the evaluation and `$apply` clause has priority over `$filter`. For this reason, you should choose one or another but avoid these two filter option in a single query. This is particularly important if the queries are generated automatically.
 
 For example, the query below first filters work items by `StoryPoint gt 5`, aggregates result by are path and finally filters the result by `StoryPoints gt 2`. Withi this evaluation order the query will always return an empty set.
 ```odata
