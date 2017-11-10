@@ -215,8 +215,8 @@ Filters look like the following:
 `/WorkItems?$apply=filter(Iteration/IterationName eq 'Sprint 89')/filter(WorkItemType eq 'User Story')/groupby((State), aggregate($count as Count))`
 
 
->[!NOTE]  
->You don't have to provide the `groupby` clause. You can simply use the `aggregate` clause to return a single value.  
+> [!NOTE]    
+> You don't have to provide the `groupby` clause. You can simply use the `aggregate` clause to return a single value.  
 
 
 ## Generate multiple aggregations within a single call
@@ -232,11 +232,10 @@ This will return a result that looks like the following:
 {
   "@odata.context":"https://{account}.analytics.visualstudio.com/_odata/v1.0/$metadata#WorkItems(SumOfCompletedWork,SumOfRemainingWork)","value":[
     {
-      "@odata.id":null,"SumOfCompletedWork":1525841.2900000005,"SumOfRemainingWork":73842.39
+"@odata.id":null,"SumOfCompletedWork":1525841.2900000005,"SumOfRemainingWork":73842.39
     }
   ]
 }
-
 ```
 
 ## Generate a Cumulative Flow Diagram from aggregate data
