@@ -283,7 +283,7 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
 ## Performance guidelines
 
 ### **✔️ DO** measure the impact of implementing a performance guideline.
-As with any performance recommendations you should not blindly implement them. Instead, always capture the baseline and **measure** the impact of changes you make. All of the guidelines were created based on the interactions with clients of Analytis Service who had very specifc requirements and challenges. These recommendations were consider general and potentially useful for anyone who designs similar queries. However, in rare cases, following the guidelines could have none or even negative effect on the performance. You do need to measure the difference to notice it. Should this happen please provide a feedback in the [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html) portal.
+As with any performance recommendations you should not blindly implement them. Instead, always capture the baseline and **measure** the impact of changes you make. All of the guidelines were created based on the interactions with clients of Analytics Service who had very specifc requirements and challenges. These recommendations were consider general and potentially useful for anyone who designs similar queries. However, in rare cases, following the guidelines could have none or even negative effect on the performance. You do need to measure the difference to notice it. Should this happen please provide a feedback in the [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html) portal.
 
 There are many options to measure the performance. The simplest one is running two versions of the same query directly in the browser and observing time taken in the developer tools. For example, you can use [Network panel](https://docs.microsoft.com/en-us/microsoft-edge/f12-devtools-guide/network#network-request-list) in [Microsoft Edge F12 Developer Tools](https://docs.microsoft.com/en-us/microsoft-edge/f12-devtools-guide)). Another option is to capture this information using [Fiddler Web Debugger Tool](https://msdn.microsoft.com/en-us/library/windows/desktop/ff966510(v=vs.85).aspx). Regardless the solution you should run both queries multiple times (e.g. 30 runs each) to have a sufficiently large sample to reason about performance characteristics. Please notice that Analytics Service follows multi-tenant architecture, thus, duration of your queries might be impacted by the other operations happening at the same time. 
 
@@ -338,11 +338,11 @@ https://tseadm.analytics.visualstudio.com/_odata/v1.0/WorkItemSnapshot?
 ```
 
 > [!NOTE]
-> We came up with this recommendation when were working on Burndown widgets. Initially we defined filters only for `DateSK` but we could not get this query to scale well to very large accounts. During query profiling we noticed that `DateSK` does not filter revisions well. Only after we did add a filter on `RevisedDateSK` we were able to get great performance at scle.
+> We came up with this recommendation when were working on Burndown widgets. Initially we defined filters only for `DateSK` but we could not get this query to scale well to very large accounts. During query profiling we noticed that `DateSK` does not filter revisions well. Only after we did add a filter on `RevisedDateSK` we were able to get great performance at scale.
 > <br>~ *Product Team*
 
 ### **✔️ DO** use weekly or monthly snapshots when your historical query spans long time range.
-By default all the snapshot tables are modelled as *daily snapshot fact* tables. Consequently, if you query for a time range will get a value for each day. For long time ranges this result in a very large number of records. If you do not need such high precision you can use weekly or even monthly snapshots. This can be achieved by adding additional filter expression to remove days which do not finish a given week or monnth. In Analytics Service there is `IsLastDayOfPeriod` property, which was added with this sceario in mind. This property is of type `Microsoft.VisualStudio.Services.Analytics.Model.Period` and can tell if day finishes different periods (e.g. weeks, months, etc).
+By default all the snapshot tables are modelled as *daily snapshot fact* tables. Consequently, if you query for a time range will get a value for each day. For long time ranges this result in a very large number of records. If you do not need such high precision you can use weekly or even monthly snapshots. This can be achieved by adding additional filter expression to remove days which do not finish a given week or month. In Analytics Service there is `IsLastDayOfPeriod` property, which was added with this sceario in mind. This property is of type `Microsoft.VisualStudio.Services.Analytics.Model.Period` and can tell if day finishes different periods (e.g. weeks, months, etc).
 
 ```xml
 <EnumType Name="Period" IsFlags="true">
@@ -416,7 +416,7 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
 ```
 
 ### **❌ DO NOT** use `tolower` and `toupper` functions to perform case-insensitive comparison.
-Working with other systems you might expect you need to use `tolower` or `toupper` functions for the case-insensitive comparison. With Analytis Servie all the sting comparison is case-insensitive by default, thus you do not need to apply any functions to explicitly handle it.
+Working with other systems you might expect you need to use `tolower` or `toupper` functions for the case-insensitive comparison. With Analytics Service all the string comparison is case-insensitive by default, thus you do not need to apply any functions to explicitly handle it.
 
 For example, the following query gets all the work items tagged with "QUALITY", "quality" or any other case combination of this word.
 ```odata
@@ -483,9 +483,9 @@ Work items are the most expensive entities in the whole model. They have several
 
 
 ### **✔️ CONSIDER** passing `vsts.analytics.maxsize` preference in the header.
-When you execute a query you don't know how many records there are to retrieve. You have to either send anotehr query with aggregations or follow all the next links and fetch the entire dataset. Analytics Service respects `vsts.analytics.maxsize` preference, which lets you fail fast should the dataset be bigger than what your client can accept. This option is particularly helpful in the data export scenarios. In order to use it you have to add `Prefer` header to your HTTP request and set `vsts.analytics.maxsize` to a non-negative value which represents the max number of records you can accept. If you set it to zero, then a default value of 200k will be used.
+When you execute a query you don't know how many records there are to retrieve. You have to either send another query with aggregations or follow all the next links and fetch the entire dataset. Analytics Service respects `vsts.analytics.maxsize` preference, which lets you fail fast should the dataset be bigger than what your client can accept. This option is particularly helpful in the data export scenarios. In order to use it you have to add `Prefer` header to your HTTP request and set `vsts.analytics.maxsize` to a non-negative value which represents the max number of records you can accept. If you set it to zero, then a default value of 200k will be used.
 
-For example, the query below returns work items provided that the dataset is smller or equal to 1000 records.
+For example, the query below returns work items provided that the dataset is smaller or equal to 1000 records.
 ```http
 GET https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems HTTP/1.1
 User-Agent: Microsoft.Data.Mashup
