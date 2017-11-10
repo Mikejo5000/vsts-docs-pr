@@ -1,6 +1,7 @@
 ---
 title: Explore Analytics OData metadata for VSTS  
-description: Guidance on how to explore Analytics metadata in Visual Studio Team Services (VSTS). 
+titleSuffix: VSTS  
+description: How to explore the entity model OData metadata for the Analytics service in Visual Studio Team Services (VSTS) 
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
 ms.assetid:  
@@ -14,9 +15,7 @@ ms.date: 11/15/2017
 
 **VSTS**
 
-
-
-This introductory tutorial provides guidance for exploring Analytics metadata.  [OData metadata](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part3-csdl/odata-v4.0-errata03-os-part3-csdl-complete.html#_Toc453752662) is a machine readable description of the entity model designed to enable client consumption. Understanding the metadata associated with the entity model is a pre-requisite for programmatically querying the [Analytics OData v4 endpoint](data-model-analytics-service.md).
+Understanding the metadata associated with the entity model for the Analytics service is a pre-requisite for programmatically querying the [Analytics OData v4 endpoint](data-model-analytics-service.md). OData metadata  is a machine readable description of the entity model designed to enable client consumption. 
 
 In this topic you'll learn how to:
 >[!div class="checklist"]
@@ -28,23 +27,22 @@ In this topic you'll learn how to:
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
-
 ## How to query the service for metadata
-Analytics exposes the [entity model](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part3-csdl/odata-v4.0-errata03-os-part3-csdl-complete.html#_Toc453752500) at the metadata URL, formed by appending $metadata to the service root URL. Analytics provides service roots for the [Projects or entire Account](account-scoped-queries.md).
-
+Analytics exposes the [entity model](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part3-csdl/odata-v4.0-errata03-os-part3-csdl-complete.html#_Toc453752500) at the metadata URL, formed by appending $metadata to the service root URL. Analytics provides service roots for a [team project or an entire VSTS account](account-scoped-queries.md).
 
 ### Query for metadata on a specific team project
 You construct the service root URL for a team project as shown:
 
-```
+> [!div class="tabbedCodeSnippets"]
+```OData
 https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata
 ```
-
 
 ### Query for metadata on a Account
 The service root URL at the Account level is constructed as:
 
-```
+> [!div class="tabbedCodeSnippets"]
+```OData
 https://{account}.analytics.visualstudio.com/_odata/v1.0/$metadata
 ```
 
@@ -219,3 +217,8 @@ Capabilities and Aggregation annotations define the set of [functions](./odata-s
    </Record>
 </Annotation>
 ```
+
+## Related notes
+- [Data model for the Analytics Service](data-model-analytics-service.md)
+- [Account and project-scoped queries](account-scoped-queries.md).
+- [OData Version 4.0. Part 3: Common Schema Definition Language (CSDL) Plus Errata 03, Entity Model Wrapper](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part3-csdl/odata-v4.0-errata03-os-part3-csdl-complete.html#_Toc453752500) 

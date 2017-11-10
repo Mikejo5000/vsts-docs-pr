@@ -10,15 +10,17 @@ ms.topic: get-started-article
 ms.date: 10/31/2017
 ---
 
-# Power BI integration overview
+# Power BI integration
 
 ***VSTS***
 
-[!INCLUDE [temp](../_shared/analytics-preview.md)]
-
 Gain insight and analyze the progress and quality of your project by connecting Power BI to the data collected and stored in Visual Studio Team Services(VSTS).
 
+[!INCLUDE [temp](../_shared/analytics-preview.md)]
+
 The **Beta VSTS Power BI Desktop Data Connector**, was shipped with the *January 2017 Update* and is currently under development.  The Data Connector will be updated in early 2018, until the updated Data Connector is available we recommend using the [Power BI OData Connector](../analytics/access-analytics-power-bi.md).
+
+
 
 [!INCLUDE [temp](../_shared/content-pack-deprecation.md)]
 
@@ -27,7 +29,7 @@ The following table contains a detailed overview of the **Data Connector**.
 <table>
 <tbody valign="top">
     <tr>
-        <th width="100%">
+        <th>
         <tr>
         <td style="text-align: center" colspan="2">
             <b>Data Connector Details</b>
@@ -158,7 +160,7 @@ The following table contains a detailed overview of the **Data Connector**.
 </table>
 
 **Notes:**  
-1. The data model is created in *Power BI Desktop*. Then, it can be published and refreshed in *Power BI Service*.
+1. The data model is created in *Power BI Desktop*. Then, it can be published and refreshed in the *Power BI Service*.
 2. There is a limit on how long a refresh operation can take before it gets terminated by Power BI.com.
 3. Power BI Desktop allows users to load tables from different sources and combine them into a single data model (e.g. custom working days calendar).
 
@@ -166,7 +168,7 @@ The following table contains a detailed overview of the **Data Connector**.
 
 ## Related notes
 
-To get started using Power BI and the Analytics service, make sure you have [permissions required to access the Analytics service](../analytics/analytics-security.md) and then review the [knowledge base of articles](https://support.powerbi.com/).
+To get started using Power BI and the Analytics service, make sure you have [permissions required to access the Analytics service](../analytics/analytics-security.md) and then review the [knowledge base of Power BI articles](https://powerbi.microsoft.com/en-us/documentation/powerbi-landing-page/).
 
 - [Data Connector - Example reports](../powerbi/data-connector-examples.md)
 - [Functions available in Power BI Data Connector](../powerbi/data-connector-functions.md)  

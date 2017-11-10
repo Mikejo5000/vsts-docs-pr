@@ -1,5 +1,6 @@
 ---
 title:  Available Analytics Service widgets for VSTS
+titleSuffix: VSTS
 description: Portfolio overview of the Analytics Service widgets and how they relate to each other
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting

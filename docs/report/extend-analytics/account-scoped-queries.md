@@ -1,5 +1,6 @@
 ---
 title: Account and project scope queries
+titleSuffix: VSTS 
 description: How to query the OData Analytics service on account and project level  
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
@@ -9,7 +10,7 @@ ms.author: kokosins
 ms.date: 11/15/2017
 ---
 
-#Account and project-scopes queries
+#Account and project-scoped queries
 
 **VSTS**  
 

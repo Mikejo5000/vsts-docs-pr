@@ -1,5 +1,5 @@
 ---
-title: Extend on Analytics with OData (VSTS)  
+title: Extend Analytics with OData (VSTS)  
 description: Index to topics for using OData backed Analytics Service on VSTS  
 ms.assetid:  
 ms.prod: vs-devops-alm
@@ -9,7 +9,7 @@ ms.author: pantal
 ms.date: 11/15/2017
 ---
 
-#  Extend on Analytics with OData (Preview) 
+#  Extend Analytics with OData (Preview) 
 
 **VSTS**  
 

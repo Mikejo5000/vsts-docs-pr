@@ -148,7 +148,7 @@
     - name: Integrate
       tocHref: /vsts/integrate/
       topicHref: /vsts/integrate/index
-    - name: Extend on Analytics with OData
+    - name: Extend Analytics with OData
       tocHref: /vsts/report/extend-analytics/
       topicHref: /vsts/report/extend-analytics/index
   - name: Marketplace

@@ -38,7 +38,7 @@
   items:
   - name: "Power BI (VSTS)"
     href: ../powerbi/index.md
-  - name: Extend on Analytics with OData
+  - name: Extend Analytics with OData
     href: ../extend-analytics/index.md
   - name: Analytics support forum
     href: https://developercommunity.visualstudio.com/search.html?f=&type=question+OR+problem&type=question+OR+problem&c=&redirect=search%2Fsearch&sort=relevance&q=VSTS+Analytics

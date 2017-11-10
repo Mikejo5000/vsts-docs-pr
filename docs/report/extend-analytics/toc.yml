@@ -1,4 +1,4 @@
-- name: "Extend on Analytics with OData"
+- name: "Extend Analytics with OData"
   href: index.md
 - name: Overview
   items:
@@ -32,6 +32,8 @@
   items:
   - name: Explore Analytics metadata
     href: analytics-metadata.md
+  - name: Set permissions (Security) 
+    href: ../analytics/analytics-security.md?toc=/vsts/report/extend-analytics/toc.json&bc=/vsts/report/extend-analytic/breadcrumb/toc.json
 - name: Reference
   items:
   - name: "Supported functions & clauses"

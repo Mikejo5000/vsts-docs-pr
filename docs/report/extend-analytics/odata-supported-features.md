@@ -11,7 +11,7 @@ ms.date: 11/15/2017
 ---
 
 
-# VSTS Analytics service supported OData features
+# Supported OData features and clauses 
 
 **VSTS**  
 

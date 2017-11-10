@@ -1,5 +1,6 @@
 ---
 title: Enable and use Analytics with Velocity Widget
+titleSuffix: VSTS
 description: Walkthrough on mechanics of spinning up and using AX from E2E.
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
