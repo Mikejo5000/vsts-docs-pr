@@ -220,14 +220,14 @@ In rare cases you may run into problems with arithmetic overflow in the aggregat
 
 
 ### **✔️ DO** use batch endpoint for long queries.
-Sometimes you may run into problems with very long queries. This can happen when you work with project with a lot of custom fields or your query gets constructed programatically. The current limit for OData queries sent with `HTTP GET` is 3,000 characters. If you you exeed it, you will get "*404 Not Found*" response back.
+Sometimes you may run into problems with very long queries. This can happen when you work with project with a lot of custom fields or your query gets constructed programatically. The current limit for OData queries sent with `HTTP GET` is 3,000 characters. If you exceed it, you will get "*404 Not Found*" response back.
 
 ```http
 HTTP/1.1 404 Not Found
 Content-Length: 0
 ```
 
-You can solve this problem by using the OData batch endpoint as explained in the specification - [OData Version 4.0. Part 1: Protocol - 11.7 Batch Requests](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752313). Batch capability was primary designed to group multiple operations into a single `HTTP` request payload, but it can also be used as a workaround for the query length limitation. By sending a `HTTP POST` request you can pass a query of an arbitrary lenght and it will be correctly interpreted by se service. 
+You can solve this problem by using the OData batch endpoint as explained in the specification - [OData Version 4.0. Part 1: Protocol - 11.7 Batch Requests](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752313). Batch capability was primary designed to group multiple operations into a single `HTTP` request payload, but it can also be used as a workaround for the query length limitation. By sending a `HTTP POST` request you can pass a query of an arbitrary length and it will be correctly interpreted by the service. 
 
 
 ### **❌ [BLOCKED] DO NOT** use batch endpoint for sending multiple queries.
