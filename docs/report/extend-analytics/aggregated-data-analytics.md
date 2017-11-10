@@ -149,16 +149,16 @@ This returns a result similar to the following:
 
 > [!div class="tabbedCodeSnippets"]
 ```JSON
+{
+  "@odata.context":"https://{account}.analytics.visualstudio.com/_odata/v1.0/$metadata#WorkItems(WorkItemType,Count)","value":[
     {
-      "@odata.context":"https://{account}.analytics.visualstudio.com/_odata/v1.0/$metadata#WorkItems(WorkItemType,Count)","value":[
-	    {
-          "@odata.id":null,"WorkItemType":"Bug","Count":3
-        },
-        {
-          "@odata.id":null,"WorkItemType":"Product Backlog Item","Count":13
-        }
-      ]
+      "@odata.id":null,"WorkItemType":"Bug","Count":3
+    },
+    {
+      "@odata.id":null,"WorkItemType":"Product Backlog Item","Count":13
     }
+  ]
+}
 ```
 
 You can also group by multiple properties as in the following:
@@ -169,35 +169,35 @@ This returns a result similar to the following:
 
 > [!div class="tabbedCodeSnippets"]
 ```JSON
+{
+  "@odata.context": "https://{account}.analytics.visualstudio.com/_odata/v1.0/$metadata#WorkItems(WorkItemType,State,Count)",
+  "value": [
     {
-      "@odata.context": "https://{account}.analytics.visualstudio.com/_odata/v1.0/$metadata#WorkItems(WorkItemType,State,Count)",
-      "value": [
-        {
-          "@odata.id": null,
-          "State": "Active",
-          "WorkItemType": "Bug",
-          "Count": 2
-        },
-		{
-          "@odata.id": null,
-          "State": "Committed",
-          "WorkItemType": "Bug",
-          "Count": 1
-        },
-        {
-          "@odata.id": null,
-          "State": "Active",
-          "WorkItemType": "Product Backlog Item",
-          "Count": 5
-        },
-		{
-          "@odata.id": null,
-          "State": "Committed",
-          "WorkItemType": "Product Backlog Item",
-          "Count": 8
-        }
-      ]
+      "@odata.id": null,
+      "State": "Active",
+      "WorkItemType": "Bug",
+      "Count": 2
+    },
+	{
+      "@odata.id": null,
+      "State": "Committed",
+      "WorkItemType": "Bug",
+      "Count": 1
+    },
+    {
+      "@odata.id": null,
+      "State": "Active",
+      "WorkItemType": "Product Backlog Item",
+      "Count": 5
+    },
+	{
+      "@odata.id": null,
+      "State": "Committed",
+      "WorkItemType": "Product Backlog Item",
+      "Count": 8
     }
+  ]
+}
 ```
 
 You can also group across entities, however OData grouping differs from how you might normally think about it. 

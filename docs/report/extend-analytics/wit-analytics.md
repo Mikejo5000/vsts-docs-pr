@@ -29,7 +29,13 @@ All additional URL parts are specified as an additional part of the query string
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
 
-##Construct a basic query
+## Prerequistes 
+
+- You will need to have a VSTS account and team project. If you haven't one, see [Sign up for a free VSTS account](../../user-guide/sign-up-invite-teammates.md).
+- You will have to have defined several work items. See [Plan and track work](plan-track-work.md). 
+- Install the [Analytics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). To learn more about extensions, see [Install VSTS extensions](../../marketplace/install-vsts-extension.md). 
+
+## Construct a basic query
 
 ###Query a single entity set
 To query a single entity set, such as Work Items or Areas or Projects, simply add the name of the entity: ```/Areas```, ```/Projects```,  or ```/WorkItems```. For full list of entity sets, see [Data model for the Analytics service](data-model-analytics-service.md).

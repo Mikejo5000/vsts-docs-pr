@@ -1,5 +1,6 @@
 ---
-title: Analytics service security, permissions  
+title: Analytics service permissions and security
+titleSuffix: VSTS     
 description: Required permissions necessary to access the Analytics service and how to handle project access denied errors
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting

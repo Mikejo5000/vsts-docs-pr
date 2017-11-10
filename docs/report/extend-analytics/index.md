@@ -13,9 +13,8 @@ ms.date: 11/15/2017
 
 **VSTS**  
 
-The Analytics Service is fully accessible via OData. 
+Using OData, you can directly query the Analytics Service from a supported browser and then use the returned JSON data as you desire. Enterprise organizations can generate queries that span multiple team projects or the entire Visual Studio Team Services (VSTS) account.   
 
-[!INCLUDE [temp](../_shared/analytics-preview.md)]  
 
 ## 5-Minute Quickstarts
 
