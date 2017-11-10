@@ -1,6 +1,7 @@
 ---
-title: Aggregate data using the OData Analytics Service for VSTS  
-description: How to aggregate data with the Analytics Service (SEO; aggregation extension in odata, filtering of aggregated results)
+title: Aggregate work tracking data using the OData Analytics Service
+titleSuffix: VSTS
+description: How to aggregate and filter data with the Analytics Service and the OData aggregation extension
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
 ms.assetid: 
@@ -9,16 +10,16 @@ ms.author: kaelli
 ms.date: 11/15/2017
 ---
 
-# Aggregate data using the Analytics service   
+# Aggregate work tracking data using the Analytics service   
 
 **VSTS**  
 
-You can aggregate your VSTS data using the OData Analytics service and the Aggregation Extension.
+You can get a sum of your VSTS work tracking data in one of two ways using the Analytics service with Odata. The first method returns a simple count of work items based on your  OData query. The second method returns a JSON formatted result based on your OData query which exercises the OData Aggregation Extension.   
 
 In this topic you'll learn: 
 
 > [!div class="checklist"]   
-> * About the two ways available to aggregate data    
+> * About the OData Aggregation Extension   
 > * How to generate a simple count of work items         
 > * How to use the Aggregation Extension for OData   
 > * How to group and filter aggregated results 
@@ -29,16 +30,15 @@ In this topic you'll learn:
 
 ## What is the Aggregation Extension for OData?
 
-Analytics relies on OData to author queries over your VSTS data. Aggregations in OData are achieved using an extension that introduces the ```$apply``` keyword. We have some examples of how to use this keyword below. Learn more about the extension at [OData Extension for Data Aggregation](http://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html).
+Analytics relies on OData to author queries over your VSTS data. Aggregations in OData are achieved using an extension that introduces the `$apply` keyword. We have some examples of how to use this keyword below. Learn more about the extension at [OData Extension for Data Aggregation](http://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html).
 
-There are two ways to aggregate data. The simple approach without using aggregation extension provides just the count of data. The more advanced approach performs aggregations available via the aggregation extensions. 
+## Basic root URL
+Use the following basic root URL as a prefix for all the examples provided in this topic. Replace `{aacount}` with your VSTS account. 
 
-Use the following basic root URL as a prefix for all the examples provided in this topic.
-
-```
+> [!div class="tabbedCodeSnippets"]
+```OData
 https://{account}.analytics.visualstudio.com/_odata/v1.0
 ``` 
-
 
 Use the above URL as a prefix for all the examples.   
 
@@ -47,139 +47,164 @@ Use the above URL as a prefix for all the examples.
 
 First, let's look at how to do counts without the aggregation extensions.
 
-Basic counting is done by adding the ```$count``` query option to the end of the URL. For example, to find out how many work items are in the system you can
-issue the following query:
+Basic counting is done by adding the `$count` query option to the end of the URL. For example, to find out how many work items defined in an account, you add the following to your query:
 
-    /WorkItems/$count
+`/WorkItems/$count`
 
-For comparison, using data aggregations you enter this query:
+Where the full OData query is: 
 
-    /WorkItems?$apply=aggregate($count as Count)
+> [!div class="tabbedCodeSnippets"]
+```OData
+https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems/$count
+``` 
+
+For comparison, using the OData aggregation extension, you add the following to your query:
+
+`/WorkItems?$apply=aggregate($count as Count)`
+
+Where the full OData query is: 
+
+> [!div class="tabbedCodeSnippets"]
+```OData
+https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?$apply=aggregate($count as Count)
+``` 
 
 For simple counts, the non-aggregation approach has a simpler syntax.  
- 
 
->[!NOTE]  
->There is one other difference in these approaches: Using ```$count``` returns a single number. Using aggregation extensions returns a formatted JSON.  
+> [!NOTE]   
+> Using `$count` returns a single number; using the OData aggregation extension returns a formatted JSON.  
   
+You can also filter what you want to count. For example, if you want to know how many work items are in the "In Progress" state, specify the following in your query:
 
-You can also filter what you want to count. For example, if you want to know how many work items are in the "In Progress" state, specify this query:
+`/WorkItems/$count?$filter=State eq 'In Progress'`
 
-    /WorkItems/$count?$filter=State eq 'In Progress'
+Where the full OData query is: 
 
-For comparison, using data aggregations you enter this query:
+> [!div class="tabbedCodeSnippets"]
+```OData
+https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems/$count?$filter=State eq 'In Progress'
+```
 
-    /WorkItems?$apply=filter(State eq 'In Progress')/aggregate($count as Count)
+For comparison, using data aggregations you add the following snippet to your query:
 
+`/WorkItems?$apply=filter(State eq 'In Progress')/aggregate($count as Count)`
 
-## Aggregate data using aggregation extension
+Where the full OData query is: 
 
-Now that you've seen how to do simple counts, let's review how to trigger aggregations using the ```$apply``` token where the basic format at the end of the URL is as follows:
+> [!div class="tabbedCodeSnippets"]
+```OData
+https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?$apply=filter(State eq 'In Progress')/aggregate($count as Count)
+``` 
 
+## Aggregate data using the OData aggregation extension
 
-    /{entityName}?$apply=aggregate({columnToAggregate} with {aggregationType} as {newColumnName})
+Now that you've seen how to do simple counts, let's review how to trigger aggregations using the `$apply` token where the basic format at the end of the URL is as follows:
 
-{entityName} is the entity that needs to be queried for. {columnToAggregate} is the aggregation column. {aggregationType} will specify the type of aggregation used and {newColumnName} specifies the name of the column having values after aggregation.
+`/{entityName}?$apply=aggregate({columnToAggregate} with {aggregationType} as {newColumnName})`
 
-## Aggregated data examples 
+Where: 
+- {entityName} is the entity that needs to be queried for
+- {columnToAggregate} is the aggregation column
+- {aggregationType} will specify the type of aggregation used
+- {newColumnName} specifies the name of the column having values after aggregation.
 
-Using the ```apply``` extension, you can obtain counts, sums, and additional information when you query your VSTS data. 
+## Aggregated data using the apply extension 
+
+Using the `apply` extension, you can obtain counts, sums, and additional information when you query your VSTS data. 
 
 **Return the count of work items:**
 
-    /WorkItems?$apply=aggregate($count as CountOfWorkItems)
+`/WorkItems?$apply=aggregate($count as CountOfWorkItems)`
 
 Work items can also be counted by using the following:
 
-    /WorkItems?$apply=aggregate(WorkItemId with countdistinct as CountOfWorkItems)
-
+`/WorkItems?$apply=aggregate(WorkItemId with countdistinct as CountOfWorkItems)`
 
 **Return a count of area paths**
 
-    /Areas?$apply=aggregate(AreaId with countdistinct as CountOfAreas)
+`/Areas?$apply=aggregate(AreaId with countdistinct as CountOfAreas)`
 
 **Return the sum of all remaining work**
 
-    /WorkItems?$apply=aggregate(RemainingWork with sum as SumOfRemainingWork)
+`/WorkItems?$apply=aggregate(RemainingWork with sum as SumOfRemainingWork)`
 
 **Return the last work item ID**
 
-    /WorkItems?$apply=aggregate(WorkItemId with max as MaxWorkItemId)
+`/WorkItems?$apply=aggregate(WorkItemId with max as MaxWorkItemId)`
 
-## Group results
+## Group results using the groupby clause
 
-Aggregation extensions also support a ```groupby``` clause which is identical to the SQL group by clause. You can use this clause to quickly break down numbers
+The OData aggregation extension also supports a `groupby` clause which is identical to the SQL `GROUP BY` clause. You can use this clause to quickly break down numbers
 in more detail.  
 
-For example, the following gives you the count of work items:
+For example, the following clause will return a  count of work items:
 
-    /WorkItems?$apply=aggregate($count as Count)
+`/WorkItems?$apply=aggregate($count as Count)`
 
-Add the ```groupby``` clause to return a count of work items by type:
+Add the `groupby` clause to return a count of work items by type:
 
-    /WorkItems?$apply=groupby((WorkItemType), aggregate($count as Count))
+`/WorkItems?$apply=groupby((WorkItemType), aggregate($count as Count))`
 
 This returns a result similar to the following:
 
-
 > [!div class="tabbedCodeSnippets"]
 ```JSON
+{
+  "@odata.context":"https://{account}.analytics.visualstudio.com/_odata/v1.0/$metadata#WorkItems(WorkItemType,Count)","value":[
     {
-      "@odata.context":"https://{account}.analytics.visualstudio.com/_odata/v1.0/$metadata#WorkItems(WorkItemType,Count)","value":[
-	    {
-          "@odata.id":null,"WorkItemType":"Bug","Count":3
-        },
-        {
-          "@odata.id":null,"WorkItemType":"Product Backlog Item","Count":13
-        }
-      ]
+      "@odata.id":null,"WorkItemType":"Bug","Count":3
+    },
+    {
+      "@odata.id":null,"WorkItemType":"Product Backlog Item","Count":13
     }
+  ]
+}
 ```
 
 You can also group by multiple properties as in the following:
 
-    /WorkItems?$apply=groupby((WorkItemType, State), aggregate($count as Count))
+`/WorkItems?$apply=groupby((WorkItemType, State), aggregate($count as Count))`
 
 This returns a result similar to the following:
 
 > [!div class="tabbedCodeSnippets"]
 ```JSON
+{
+  "@odata.context": "https://{account}.analytics.visualstudio.com/_odata/v1.0/$metadata#WorkItems(WorkItemType,State,Count)",
+  "value": [
     {
-      "@odata.context": "https://{account}.analytics.visualstudio.com/_odata/v1.0/$metadata#WorkItems(WorkItemType,State,Count)",
-      "value": [
-        {
-          "@odata.id": null,
-          "State": "Active",
-          "WorkItemType": "Bug",
-          "Count": 2
-        },
-		{
-          "@odata.id": null,
-          "State": "Committed",
-          "WorkItemType": "Bug",
-          "Count": 1
-        },
-        {
-          "@odata.id": null,
-          "State": "Active",
-          "WorkItemType": "Product Backlog Item",
-          "Count": 5
-        },
-		{
-          "@odata.id": null,
-          "State": "Committed",
-          "WorkItemType": "Product Backlog Item",
-          "Count": 8
-        }
-      ]
+      "@odata.id": null,
+      "State": "Active",
+      "WorkItemType": "Bug",
+      "Count": 2
+    },
+	{
+      "@odata.id": null,
+      "State": "Committed",
+      "WorkItemType": "Bug",
+      "Count": 1
+    },
+    {
+      "@odata.id": null,
+      "State": "Active",
+      "WorkItemType": "Product Backlog Item",
+      "Count": 5
+    },
+	{
+      "@odata.id": null,
+      "State": "Committed",
+      "WorkItemType": "Product Backlog Item",
+      "Count": 8
     }
+  ]
+}
 ```
 
 You can also group across entities, however OData grouping differs from how you might normally think about it. 
 
 For example, suppose you wanted to know how many areas are in each project. In OData, "count all areas and group them by project" is equivalent to "give me all projects and a count of areas for each project". This results in a query similar to:
 
-    /Areas?$apply=groupby((Project/ProjectName), aggregate(AreaId with countdistinct as CountOfAreas))
+`/Areas?$apply=groupby((Project/ProjectName), aggregate(AreaId with countdistinct as CountOfAreas))`
 
 ## Filter aggregated results
 
@@ -187,18 +212,18 @@ You can also filter aggregated results, however they are applied slightly differ
 
 Filters look like the following:
 
-    /WorkItems?$apply=filter(Iteration/IterationName eq 'Sprint 89')/filter(WorkItemType eq 'User Story')/groupby((State), aggregate($count as Count))
+`/WorkItems?$apply=filter(Iteration/IterationName eq 'Sprint 89')/filter(WorkItemType eq 'User Story')/groupby((State), aggregate($count as Count))`
 
 
 >[!NOTE]  
->You don't have to provide the ```groupby``` clause. You can simply use the ```aggregate``` clause to return a single value.  
+>You don't have to provide the `groupby` clause. You can simply use the `aggregate` clause to return a single value.  
 
 
-##Multiple aggregations in a single call
+## Generate multiple aggregations within a single call
 
 When you want to provide multiple pieces of information, such as the sum of completed work and separately the sum of remaining work, you can accomplish this with separate calls or with a single call as follows:  
 
-    /WorkItems?$apply=aggregate(CompletedWork with sum as SumOfCompletedWork, RemainingWork with sum as SumOfRemainingWork)
+`/WorkItems?$apply=aggregate(CompletedWork with sum as SumOfCompletedWork, RemainingWork with sum as SumOfRemainingWork)`
 
 This will return a result that looks like the following:
 
@@ -214,14 +239,16 @@ This will return a result that looks like the following:
 
 ```
 
-##Aggregating work items to generate a Cumulative Flow Diagram
+## Generate a Cumulative Flow Diagram from aggregate data
 
 Let's say you want to create a [cumulative flow diagram](../guidance/cumulative-flow-cycle-lead-time-guidance.md) in Power BI. You can use a query similar to the one below:
 
-```
+> [!div class="tabbedCodeSnippets"]
+```OData
 https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItemBoardSnapshot?$apply=filter(DateValue gt 2015-07-16Z and DateValue le 2015-08-16Z)/filter(BoardLocation/BoardName eq 'Stories' and BoardLocation/Team/TeamName eq '{teamName}')/groupby((DateValue, BoardLocation/ColumnName), aggregate(Count with sum as Count))&$orderby=DateValue
 ```
-This returns a result similar to the following:
+
+This returns a result similar to the following, which you can then use directly within your data visualization of choice.
 
 > [!div class="tabbedCodeSnippets"]
 ```JSON
@@ -250,9 +277,7 @@ This returns a result similar to the following:
 }
 ```
 
-This result can be directly used by your data visualization of choice.
-
- Let's take a look at what this query actually does:
+Let's take a look at what this query actually does:
 
 * Filters the data to a specific team
 * Filters the data to a specific backlog
@@ -263,8 +288,13 @@ This result can be directly used by your data visualization of choice.
 
 When refreshing Power BI or Excel, the fewer rows required, the faster the refresh occurs.
 
+## Try this next
+> [!div class="nextstepaction"]
+> [Query for trend data](querying-for-trend-data.md)
 
-##Related notes 
 
-- [WIT analytics](wit-analytics.md)  
+
+## Related notes 
+
+- [Query your work tracking data using the OData Analytics service](wit-analytics.md)  
 - [OData Extension for Data Aggregation Version 4.0](http://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html)

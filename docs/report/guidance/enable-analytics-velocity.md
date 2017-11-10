@@ -1,5 +1,6 @@
 ---
 title: Enable and use Analytics with Velocity Widget
+titleSuffix: VSTS
 description: Walkthrough on mechanics of spinning up and using AX from E2E.
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
@@ -76,4 +77,4 @@ Learn more about the Velocity widget in [Configure and view Velocity charts](./t
 
 ## Try this next
 > [!div class="nextstepaction"]
-> [Configure and view Velocity charts](team-velocity.md)
+> [Configure and view Velocity charts](team-velocity.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json)

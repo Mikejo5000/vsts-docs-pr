@@ -1,15 +1,16 @@
 ---
-title: Analytics basic queries | VSTS  
-description: Provides general queries for use with the Analytics service for VSTS (SEO; work item history, work items in a given iteration, work item in a given area, work items per project, work items per iteration, work items per tag, work items per team, cumulative flow diagram)
+title: Analytics basic queries
+titleSuffix: VSTS  
+description: Examples of work item tracking queries of the Analytics service for VSTS 
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
 ms.assetid: 1320852A-5C62-4954-9E9D-508D670777A4
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/11/2016
+ms.date: 11/15/2017
 ---
 
-#Query your data using the Analytics service  
+# Query work tracking data using Analytics  
 
 **VSTS**  
 
@@ -18,7 +19,7 @@ ms.date: 08/11/2016
 You can query your VSTS work tracking data using the basic queries provided in this topic. These queries address everyday needs while demonstrating various capabilities of the
 Analytics service. You can adapt most of these queries to meet your needs.
 
-All examples are scoped to a project. For account-level scoping, see [account scoped queries](account-scoped-queries.md).
+For prerequistes and other information for getting started, see [Query your work tracking data using the OData Analytics service](wit-analytics.md). All examples are scoped to a project. For account-level scoping, see [account scoped queries](account-scoped-queries.md).
 
 
 **Retrieve the history of a work item**

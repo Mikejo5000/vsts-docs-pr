@@ -18,8 +18,10 @@ You can use the Analytics service to answer quantitative questions regarding pas
 
 To get started, read [What is Analytics?](what-is-analytics.md) 
 
-
-[!INCLUDE [temp](../_shared/analytics-preview.md)]  
+<!---
+[!INCLUDE [temp](../_shared/analytics-preview.md)] 
+-->
+ 
 
 ## 5-Minute Quickstarts
  - [Add an Analytics widget to a dashboard](../guidance/enable-analytics-velocity.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json)
@@ -54,7 +56,7 @@ Understanding Analytics Service data Acquisition
 
 ## Resources
 - [PowerBI (VSTS)](../powerbi/index.md)
-- [Extend on Analytics with OData](../extend-analytics/index.md)
+- [Extend Analytics with OData](../extend-analytics/index.md)
 - [Developer Community: Analytics support forum](https://developercommunity.visualstudio.com/search.html?f=&type=question+OR+problem&type=question+OR+problem&c=&redirect=search%2Fsearch&sort=relevance&q=VSTS+Analytics)
 - [User Voice: Reporting feature requests](https://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/category/145257-dashboards-and-reporting)
 
