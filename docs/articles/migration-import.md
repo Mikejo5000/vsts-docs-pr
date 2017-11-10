@@ -403,30 +403,30 @@ You will need to add execptions for all three services that make up Package Mana
 
 |    Service                                      |    IP               |
 |-------------------------------------------------|---------------------|
-|    Package Management - United States           |    TBD              |
-|    Package Management - West Europe             |    TBD              |
-|    Package Management - Australia East          |    TBD              |
-|    Package Management - Brazil South            |    TBD              |
-|    Package Management - India South             |    TBD              |
-|    Package Management - Canada Central          |    TBD              |
+|    Package Management - United States           |    52.173.148.93    |
+|    Package Management - West Europe             |    104.46.45.12     |
+|    Package Management - Australia East          |    40.127.64.137    |
+|    Package Management - Brazil South            |    191.234.179.224  |
+|    Package Management - India South             |    52.172.11.191    |
+|    Package Management - Canada Central          |    52.237.24.224    |
 
 |    Service                                      |    IP               |
 |-------------------------------------------------|---------------------|
-|    Package Management Feed - United States      |    TBD              |
-|    Package Management Feed - West Europe        |    TBD              |
-|    Package Management Feed - Australia East     |    TBD              |
-|    Package Management Feed - Brazil South       |    TBD              |
-|    Package Management Feed - India South        |    TBD              |
-|    Package Management Feed - Canada Central     |    TBD              |
+|    Package Management Feed - United States      |    52.173.251.89    |
+|    Package Management Feed - West Europe        |    104.47.155.93    |
+|    Package Management Feed - Australia East     |    40.127.95.106    |
+|    Package Management Feed - Brazil South       |    191.235.93.87    |
+|    Package Management Feed - India South        |    52.172.8.41      |
+|    Package Management Feed - Canada Central     |    52.237.19.70     |
 
 |    Service                                      |    IP               |
 |-------------------------------------------------|---------------------|
-|    Package Management Blob - United States      |    TBD              |
-|    Package Management Blob - West Europe        |    TBD              |
-|    Package Management Blob - Australia East     |    TBD              |
-|    Package Management Blob - Brazil South       |    TBD              |
-|    Package Management Blob - India South        |    TBD              |
-|    Package Management Blob - Canada Central     |    TBD              |
+|    Package Management Blob - United States      |    70.37.94.103     |
+|    Package Management Blob - West Europe        |    23.97.221.25     |
+|    Package Management Blob - Australia East     |    40.127.86.30     |
+|    Package Management Blob - Brazil South       |    191.235.90.183   |
+|    Package Management Blob - India South        |    52.172.54.122    |
+|    Package Management Blob - Canada Central     |    52.237.16.145    |
 
 
 Your SQL Azure VM should now be set up to allow your data to be imported to VSTS. Follow the rest of the steps below to queue your import. 
