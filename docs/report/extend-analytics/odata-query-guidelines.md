@@ -457,7 +457,7 @@ This is probably the most intuitive guideline. You should always aim to fetch on
 Some project administrators havily customize their processes by adding custom fields. This can lead to performance issues when fetching all the available columns on very wide entities (e.g. `WorkItems`). Please notice that Analytics Service is built on top of a *Columnstore Index* technology which means that data is both storage and query processing is column-based. Therefore, the more properties are refernced in the query, the more expensive it is going to be. You should always aim to limit the set of properties to what you really care about in your reporting scenario.
 
 
-### **✔️ CONSIDER** filterig on date surrogate key properties (`DateSK` suffix).
+### **✔️ CONSIDER** filtering on date surrogate key properties (`DateSK` suffix).
 There are many ways you can define a date filter. You can filter on the date property directly (e.g. `CreatedDate`), its navigation counterpart (e.g. `CreatedOnDate`) or its surrogate key representation (e.g. `CreatedDate`). The last option yields the best performance and should always be preffered if the reporting requirements allow for it.
 
 For example, the query below gets all the work items created since the beginning of 2017.
@@ -467,7 +467,7 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
 ```
 
 
-### **✔️ CONSIDER** filterig on surrogate key columns.
+### **✔️ CONSIDER** filtering on surrogate key columns.
 If you want to filter the data on the value of related object (e.g. filtering work item on project name) you always have two choices. You can either use the navigation property (e.g. `Project/ProjectName`) or capture the *surrogate key* up-front and use it directly in the query (e.g. `ProjectSK`). If you are building a widget you should always prefer the latter option. When the key is passed as part of the query the number of entity sets that have to be touched goes down and the performance improves.
 
 For example, the query below filters `WorkItems` using `ProjectSK` property rather than `Project/ProjectName` navigation property.
