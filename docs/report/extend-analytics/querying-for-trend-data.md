@@ -1,6 +1,6 @@
 ---
-title: Query for trend data | VSTS  
-description: How to query the Analytics service for trend data and consume it in a client tool when working from Visual Studio Team Services (VSTS) 
+title: Query trend data | VSTS  
+description: How to query the Analytics service trend data and consume it in a client tool when working from Visual Studio Team Services (VSTS) 
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
 ms.assetid: FEF88D72-32D7-4DE8-B11E-BCB1A491C3FC
@@ -9,7 +9,7 @@ ms.author: kaelli
 ms.date: 11/15/2017
 ---
 
-# Query for trend data
+# Query trend data
 
 **VSTS**  
 

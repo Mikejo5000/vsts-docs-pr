@@ -12,13 +12,13 @@
   items:
   - name: Aggregate data
     href: aggregated-data-analytics.md
-  - name: Query for trend data
+  - name: Query trend data
     href: querying-for-trend-data.md
   - name: Query work item links
     href: work-item-links.md
 - name: Samples
   items:
-  - name: Work item tacking queries
+  - name: Work item tracking queries
     href: analytics-recipes.md
   - name: Create an Analytics widget
     href: example-analytics-widget.md  
