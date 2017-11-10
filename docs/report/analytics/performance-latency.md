@@ -20,10 +20,10 @@ When you use the Analytics Service for reporting, you’ll want to understand th
 ## Installing Analytics
 When you install the [Analytics Marketplace Extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics), you should expect the initial setup to take between 5 to 30 minutes. If after 24 hours you aren't able to access your data, contact [Microsoft Support](https://docs.microsoft.com/en-us/vsts/user-guide/provide-feedback?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json) 
 
-## Performance
+## Query Performance
 Using the [recommended query patterns](../extend-analytics/odata-query-guidelines.md), the Analytics Service will respond to any [aggregation](../extend-analytics/aggregated-data-analytics.md) or [non-aggregated query](../extend-analytics/analytics-recipes.md) query within 3 to 5 seconds. The query response will be paged if it exceeds 10,000 results. 
 
-Some of the Entities available in Analytics are designed for aggregations.  The service will limit the results from these Entities to a single page for any non-aggregated query as outlined in the [recommended query patterns](../extend-analytics/odata-query-guidelines.md) 
+Some of the Entities available in Analytics are designed for aggregations.  The service will limit the results from these Entities to a single page for any non-aggregated query as outlined in the [recommended query patterns](../extend-analytics/odata-query-guidelines.md).
 
 ## Latency
 When you use Analytics, you query a curated copy of the data stored in Visual Studio Team Services (VSTS) for your account or a team project(s). The data copy helps optimize read and aggregation performance, and greatly reduces the impact reporting scenarios have on VSTS.
