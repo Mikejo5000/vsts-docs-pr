@@ -7,7 +7,7 @@ ms.technology: vs-devops-reporting
 ms.assetid: 868DC7E6-540C-4F9F-B4A3-7680F1C49FC9
 ms.manager: douge
 ms.author: kaelli
-ms.date: 11/15/2017
+ms.date: 11/13/2017
 ---
 
 # Permissions required to access the Analytics service

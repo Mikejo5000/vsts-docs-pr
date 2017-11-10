@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
 ms.manager: aacathca
 ms.author: pantal
-ms.date: 11/15/2017
+ms.date: 11/13/2017
 ---
 
 #  Extend Analytics with OData (Preview) 

@@ -6,7 +6,7 @@ ms.technology: vs-devops-reporting
 ms.assetid: CA782CE8-2BDF-4CDE-BEC7-F3FCF761B1A9
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/11/2016
+ms.date: 11/13/2017
 ---
 
 # Build a dashboard widget extension that calls the Analytics Service

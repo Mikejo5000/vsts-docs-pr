@@ -7,7 +7,7 @@ ms.technology: vs-devops-reporting
 ms.reviewer: pantal
 ms.manager: douge
 ms.author: kaelli
-ms.date: 11/15/2017
+ms.date: 11/13/2017
 ---
 
 # Analytics (VSTS) 

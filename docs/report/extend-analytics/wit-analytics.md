@@ -7,7 +7,7 @@ ms.technology: vs-devops-reporting
 ms.assetid: 0ABC2F7B-AFA5-465F-8DFE-4779D90452CD  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 11/15/2017
+ms.date: 11/13/2017
 ---
 
 # Query your work tracking data using the OData Analytics service

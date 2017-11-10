@@ -6,7 +6,7 @@ ms.technology: vs-devops-reporting
 ms.assetid: 5B665450-00DB-4F59-9948-BDA0BDF8EEC7
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/11/2016
+ms.date: 11/13/2017
 ---
 
 # Add configuration to an extension that calls the Analytics Service

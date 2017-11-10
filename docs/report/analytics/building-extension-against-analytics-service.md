@@ -6,7 +6,7 @@ ms.technology: vs-devops-reporting
 ms.assetid: B1CAEAB1-3D8F-44FA-A2FD-CA24695AEE86
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/11/2016
+ms.date: 11/13/2017
 ---
 
 # Build a hub extension  

@@ -6,7 +6,7 @@ ms.technology: vs-devops-reporting
 ms.assetid: 
 ms.manager: trevorc
 ms.author: prprice
-ms.date: 11/7/2017
+ms.date: 11/13/2017
 ---
 
 # OData batch support

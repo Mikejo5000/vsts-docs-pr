@@ -6,7 +6,7 @@ ms.technology: vs-devops-reporting
 ms.assetid: b26f1d04-95ca-43d5-8333-176780f3980a  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/04/2017
+ms.date: 11/13/2017
 ---
 
 # Access data through Power BI desktop 

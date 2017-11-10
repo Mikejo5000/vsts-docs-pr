@@ -7,7 +7,7 @@ ms.assetid:
 ms.reviewer: prprice
 ms.manager: douge
 ms.author: kaelli
-ms.date: 11/15/2017
+ms.date: 11/13/2017
 ---
 
 # OData API versioning
@@ -19,7 +19,9 @@ ms.date: 11/15/2017
 As the Analytics Service grows and changes we are dedicated to providing consistency and reliability to our users. Therefore the Analytics Service provides a versioned OData API that will remain compatible with clients designed for those versions. Each version may be enhanced with additional functionality and non-breaking changes. Incompatible or breaking changes will be rolled into future versions of the API.
 
 The API version follows the _odata element in the request path and is formatted like **v1.0** or **v1.0-preview**.
-```
+
+> [!div class="tabbedCodeSnippets"]
+```OData
 https://{account}.analytics.visualstudio.com/{project}/_odata/{version}/$metadata
 ```
 
@@ -27,12 +29,14 @@ https://{account}.analytics.visualstudio.com/{project}/_odata/{version}/$metadat
 The data model exposed by the Analytics Service defines the contract between the service and its clients. The OData spec requires that clients be tolerant of additive changes to the data model, so breaking changes will be introduced in future versions. For more information see the OData spec: 
 [OData Version 4.0 Part 5: Versioning](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752208)
 
->[!NOTE]
->Custom work item fields in your model are not versioned. It is possible to cause breaking changes to your model by removing, or changing the types of, custom fields. All work items, and their revisions, will reflect the current custom field configuration.
+> [!NOTE]  
+> The system doesn't version any custom work item fields. Also, it's possible to cause breaking changes to your model by removing, or changing the types of, custom fields. All work items, and their revisions, will reflect the current custom field configuration.
 
 ### Example of non-breaking changes
 Consider a scenario where a new UserType property is added to the User entity.
-```
+
+> [!div class="tabbedCodeSnippets"]
+```XML
 <EntityType Name="User">
     <Key>
         <PropertyRef Name="UserSK"/>
@@ -58,7 +62,10 @@ This change is additive and could be made available in the current **v1.0** vers
 
 ### Example of breaking changes
 Now consider a scenario where we revert to the original structure of the User entity, causing the removal of a previously available feature.
-```
+
+
+> [!div class="tabbedCodeSnippets"]
+```XML
 <EntityType Name="User">
     <Key>
         <PropertyRef Name="UserSK"/>
@@ -76,13 +83,14 @@ Now consider a scenario where we revert to the original structure of the User en
     <!-- User Type property has been removed -->
 </EntityType>
 ```
+
 Since removal of the UserType field is a breaking change the field would not be removed until version **v2.0** of the API. **v1.0** of the data model would still include the UserType field.
 
 ## Version lifecycle
-Each version of the OData API will go through three phases during it's lifecycle. 
+Each version of the OData API will go through three phases during its lifecycle. 
 
 ### 1 - Preview
-All breaking changes will be combined and released together in future versions of the API. In order to make this functionality available as early as possible we will release new versions in **preview** mode. Breaking changes are still possible while a version is in preview mode. There are no guarantees that what is in preview will be included in the released version.
+All breaking changes will be combined and released together in future versions of the API. In order to make this functionality available as early as possible, we will release new versions in **preview** mode. Breaking changes are still possible while a version is in preview mode. Also, there is no guarantee that what is included in a preview version will be included in a released version.
 
 The preview of a version will be available for a minimum of 6 weeks after it is released.
 
@@ -97,11 +105,11 @@ The {version} OData endpoint for Analytics is not supported. Information on the 
 ```
 
 
-## Current preview versions
+## Preview versions
 None
 
-## Current supported versions
+## Supported versions
 v1.0
 
 ## Related Notes
-[OData Version 4.0 Part 5: Versioning](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752208)
+- [OData Version 4.0 Part 5: Versioning](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752208)

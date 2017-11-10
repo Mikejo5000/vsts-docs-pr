@@ -8,7 +8,7 @@ ms.assetid:
 ms.reviewer: greggboe
 ms.manager: douge
 ms.author: kaelli
-ms.date: 11/15/2017
+ms.date: 11/13/2017
 ---
 
 # What is the Analytics Service?

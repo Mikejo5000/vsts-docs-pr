@@ -7,7 +7,7 @@ ms.technology: vs-devops-reporting
 ms.assetid: 91C6424B-3C3D-4773-B252-C627A5CE7C6D 
 ms.manager: douge
 ms.author: kaelli
-ms.date: 11/15/2017
+ms.date: 11/13/2017
 ---
 
 # Client authentication options 
