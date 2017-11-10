@@ -16,7 +16,7 @@ ms.date: 11/15/2017
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
-In general, the order of authentication options should be the following (in order from most secure to least secure): Azure Active Directory (**AAD**) then Personal Access Tokens (**PAT**s) then Alternate Access Credentials (**AAC**s).
+In general, the order of authentication options should be the following (in order from most secure to least secure): Azure Active Directory (**AAD**) then Personal Access Tokens (**PAT**s).
 
 <!---
 
