@@ -27,6 +27,7 @@ Using OData, you can directly query the Analytics Service from a supported brows
 
 ## Samples
 - [Work item tracking queries](analytics-recipes.md)
+- [Create an Analytics widget](example-analytics-widget.md)
 
 <!---
 - [Build a hub extension](..\analytics\building-extension-against-analytics-service.md)
