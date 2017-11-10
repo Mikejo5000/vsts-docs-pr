@@ -84,4 +84,4 @@ The future of reporting for both VSTS and TFS, however, is the Analytics Service
 
 ## Try this next
 > [!div class="nextstepaction"]
-> [Query your work tracking data](wit-analytics.md) 
+> [Analytics widgets](../guidance/analytics-widgets-vsts.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json) 

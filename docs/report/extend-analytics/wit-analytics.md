@@ -32,7 +32,7 @@ All additional URL parts are specified as an additional part of the query string
 ## Prerequistes 
 
 - You will need to have a VSTS account and team project. If you haven't one, see [Sign up for a free VSTS account](../../user-guide/sign-up-invite-teammates.md).
-- You will have to have defined several work items. See [Plan and track work](plan-track-work.md). 
+- You will have to have defined several work items. See [Plan and track work](../../user-guide/plan-track-work.md). 
 - Install the [Analytics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). To learn more about extensions, see [Install VSTS extensions](../../marketplace/install-vsts-extension.md). 
 
 ## Construct a basic query
