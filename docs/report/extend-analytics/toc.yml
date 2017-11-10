@@ -19,7 +19,9 @@
 - name: Samples
   items:
   - name: Work item tacking queries
-    href: analytics-recipes.md  
+    href: analytics-recipes.md
+  - name: Create an Analytics widget
+    href: example-analytics-widget.md  
 - name: Concepts
   items:
   - name: Performance and latency
