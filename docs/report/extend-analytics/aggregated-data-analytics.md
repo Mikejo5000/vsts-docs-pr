@@ -289,7 +289,7 @@ When refreshing Power BI or Excel, the fewer rows required, the faster the refre
 
 ## Try this next
 > [!div class="nextstepaction"]
-> [Query for trend data](querying-for-trend-data.md)
+> [Query trend data](querying-for-trend-data.md)
 
 
 
