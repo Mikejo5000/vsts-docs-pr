@@ -37,7 +37,6 @@ To get started, read [What is Analytics?](what-is-analytics.md)
 
 ## Concepts
 
-
 - [Analytics widgets](../guidance/analytics-widgets-vsts.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json)
 - [Cumulative flow, lead time, and cycle time guidance](../guidance/cumulative-flow-cycle-lead-time-guidance.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json)
 - [Velocity guidance](../guidance/velocity-guidance.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json)

@@ -24,17 +24,17 @@ You can access the Analytics Service through dashboard widgets, OData, and Power
 
 ## Dashboard widgets
 
-In VSTS, you can create [Dashboards](../dashboards.md) and [add widgets to them](../add-widget-to-dashboard.md). We provide several [widgets based on the Analytics Service](../guidance/analytics-widgets-vsts.md). These widgets take advantage of the power of the Analytics Service. 
+In VSTS, you can create [dashboards](../dashboards.md) and [add widgets to them](../add-widget-to-dashboard.md). We provide several [widgets based on the Analytics Service](../guidance/analytics-widgets-vsts.md). These widgets take advantage of the power of the Analytics Service. 
 
-For example, the Velocity Widget provides insights to your team's historical performance. 
+For example, the Velocity widget shown in the following dashboard image provides insights into a team's historical performance over six iterations. 
 
-![Analytics Service - Velocity Widget](../guidance/_img/commerce-team-velocity-eight-iterations.png)
+![Analytics Service - Velocity Widget](_img/what-is-analytics/dashboard-showing-velocity.png)
 
-Here, the Velocity widget shows this team has a history of closing stories late. It  also shows a discrepancy between planned and completed work over the past 4 sprints. The team can drill into the data to determine the root causes. After implementing new practices, the team can use the Velocity widget to track their effectiveness.
+Here, the Velocity widget shows this team has a history of closing stories late. It  also shows a discrepancy between planned and completed work over all past sprints. The team can drill into the data to determine the root causes. After implementing new practices, the team can use the Velocity widget to track their effectiveness.
 
 Widgets provide the easiest way to get insights from your data. Check out [Enable and use the Analytics Services](../guidance/enable-analytics-velocity.md) for a step-by-step guide to get started with the Velocity Widget.
 
-If you want to develop your own widget based on the Analytics Service, check out [Build a widget that uses the Analytics Service.]()
+If you want to develop your own widget based on the Analytics Service, see [Create an Analytics widget for VSTS](../extend-analytics/example-analytics-widget.md).
 
 ## OData
 The Analytics Service is fully accessible via OData. 
@@ -84,4 +84,4 @@ The future of reporting for both VSTS and TFS, however, is the Analytics Service
 
 ## Try this next
 > [!div class="nextstepaction"]
-> [Query your work tracking data](wit-analytics.md) 
+> [Analytics widgets](../guidance/analytics-widgets-vsts.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json) 

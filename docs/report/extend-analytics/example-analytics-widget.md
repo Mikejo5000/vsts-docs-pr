@@ -9,7 +9,7 @@ ms.author: kaelli
 ms.date: 11/15/2017
 ---
 
-#Create an Analytics Widget for VSTS
+#Create an Analytics widget for VSTS
 
 **VSTS**   
 
