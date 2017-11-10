@@ -46,6 +46,14 @@
     href: ../../manual-test/getting-started/track-test-status.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json
   - name: Set dashboard permissions
     href: dashboard-permissions.md
+- name: Samples
+  items:
+  - name: "Add a dashboard widget"  
+    href: ../../extend/develop/add-dashboard-widget.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json
+  - name: "Add a chart widget"  
+    href: ../../extend/develop/add-chart.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json
+  - name: "Add an Analytics widget"  
+    href: ../extend-analytics/example-analytics-widget.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json    
 - name: Reference
   items:
   - name: Widget catalog
@@ -59,8 +67,6 @@
   - name: Agile
     href: /vsts/#pivot=services&panel=agile
   - name: Testing
-    href: /vsts/#pivot=services&panel=testing
-  - name: Build a dashboard widget
-    href: ../../extend/develop/add-dashboard-widget.md
+    href: /vsts/#pivot=services&panel=testing 
   - name: Marketplace widgets
     href: https://marketplace.visualstudio.com/search?term=widget&target=VSTS&category=All%20categories&sortBy=Relevance
