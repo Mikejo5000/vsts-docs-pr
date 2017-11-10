@@ -69,60 +69,6 @@ https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$se
 }
 ```
 
-### Example: Multiple levels of hierarchy
-You can retrieve all descendants of your work items by using the ```$levels``` option in your request. The ```$levels``` option allows you to control how deep the service will go when retrieving child items. In this example, **max** actually equates to ```$levels=5``` but you may substitute other values. 
-
->[!NOTE]  
->The ```$levels``` option only works for recursive relationships.
-
-**Request**
-
-> [!div class="tabbedCodeSnippets"]
-```OData
-https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$select=WorkItemId,Title,State&$expand=Children($select=WorkItemId,Title,State;$levels=max)&$filter=WorkItemId eq 103
-```
-
-**Response**
-
-> [!div class="tabbedCodeSnippets"]
-```JSON
-{
-	"@odata.context": "https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItems(WorkItemId,Title,State,Children,Children(WorkItemId,Title,State,Children,Children(WorkItemId,Title,State)))",
-	"value": [{
-		"WorkItemId": 103,
-		"Title": "Feature Y",
-		"State": "New",
-		"Children": [{
-			"WorkItemId": 48,
-			"Title": "Story 15",
-			"State": "Resolved",
-			"Children": [{
-				"WorkItemId": 104,
-				"Title": "Task A",
-				"State": "New"
-			}]
-		}, {
-			"WorkItemId": 50,
-			"Title": "Story 17",
-			"State": "New",
-			"Children": []
-		}, {
-			"WorkItemId": 55,
-			"Title": "Story 22",
-			"State": "New",
-			"Children": [{
-				"WorkItemId": 105,
-				"Title": "Task B",
-				"State": "New"
-			}]
-		}]
-	}]
-}
-
-```
-
-Notice that the "Story 15" and "Story 22" items now include their child items.
-
 ### Example: Child to parent query
 
 By replacing **Children** with **Parent** in the ```$expand``` option you can retrieve an item's ancestry.
@@ -162,7 +108,7 @@ https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$se
 In addition to the Parent/Child hierarchy items can be directly related to other items with link types like *Related* or *Duplicate*. The **Links** navigation property allows you to request these relationships.
 
 ### Example: Request an item's links
-To retrieve the links associated with an item you may ```$expand``` the **Links** navigation property.
+To retrieve the links associated with an item you may ```$expand``` the **Links** navigation property. In this example the SourceWorkItemId, TargetWorkItemId, and LinkTypeName will be retrieved for all links associated with the work item.
 
 **Request**
 
@@ -203,8 +149,7 @@ https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$se
 }
 ```
 ### Example: Request details of linked items
-The previous query only retrieves details on the links between items. You may include the details of your linked items by using ```$expand``` on the **TargetWorkItem** navigation property.
-
+You may include the details of your linked work items by using ```$expand``` on the **TargetWorkItem** or **SourceWorkItem** navigation properties. In this example we will retrieve the WorkItemId, Title, and State of the target work item for each link.
 
 **Request**
 
