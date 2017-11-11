@@ -13,11 +13,11 @@ ms.date: 08/11/2016
 
 **VSTS**  
 
-[!INCLUDE [temp](../_shared/analytics-preview.md)]
-
 [Access analytics data through a dashboard widget extension](widget-extensions-against-analytics-service.md) describes how to create a chart that pulls a
 pre-determined set of data from the Analytics Service. Rarely will consumers of your extension want to pull just the data
 that has been coded into the widget. Therefore, you can give your users the ability to alter the data returned and to chart that appropriately.
+
+[!INCLUDE [temp](../_shared/analytics-preview.md)]
 
 In this topic, we'll take the chart on the left and give users the ability to slice it by another data point creating the chart on the right. We'll also let the user change the title of the widget.
 

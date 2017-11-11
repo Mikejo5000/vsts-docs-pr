@@ -15,9 +15,9 @@ ms.date: 11/15/2017
 
 **VSTS**  
 
-[!INCLUDE [temp](../_shared/analytics-preview.md)]
-
 This topic provides a summary of the OData features and functions supported or not supported by the Analytics Service for VSTS.
+
+[!INCLUDE [temp](../_shared/analytics-preview.md)]
 
 ## Supported clauses
 

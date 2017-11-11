@@ -13,9 +13,9 @@ ms.date: 08/04/2017
 
 **VSTS**  
 
-[!INCLUDE [temp](../_shared/analytics-preview.md)]
-
 Once you've [created a Power BI Desktop file](access-analytics-power-bi.md) and the associated charts and tables, you can share those with others by creating a dashboard on PowerBI.com. This process walks you through how to do that.
+
+[!INCLUDE [temp](../_shared/analytics-preview.md)]
 
 0. Open the **Power BI Desktop** file with your data.  
 

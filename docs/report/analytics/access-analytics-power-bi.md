@@ -13,9 +13,9 @@ ms.date: 08/04/2017
 
 **VSTS**  
 
-[!INCLUDE [temp](../_shared/analytics-preview.md)]
-
 You can access the Analytics Service data through the Power BI Desktop Visual Studio Team Services Connector and then publish it to PowerBI.com. (For any account that has alternate credentials enabled - OAuth (Organizational Accounts) is currently not supported). Unlike the [Power BI Content Pack](https://www.visualstudio.com/en-us/get-started/report/report-on-vso-with-power-bi-vs) which we previously published, no pre-configured file is required. You can simply just start working in Power BI Desktop.
+
+[!INCLUDE [temp](../_shared/analytics-preview.md)]
 
 >[!IMPORTANT]
 >The default experience for the Power BI OData Connector is not intended for use on accounts with over 50,000 work items. On larger accounts the data set needs to reduced by writing OData queries.  OData queries can be directly used in Power BI through the [VSTS.Feed](../powerbi/data-connector-functions.md) function .

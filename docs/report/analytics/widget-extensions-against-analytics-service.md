@@ -13,11 +13,11 @@ ms.date: 08/11/2016
 
 **VSTS**  
 
-[!INCLUDE [temp](../_shared/analytics-preview.md)]
-
 Building an dashboard widget extension that calls the Analytics Service is identical to building any other extension. However,
 in this early stage, a few things have to be done manually at this point - and then there's working
 with the returned data. This documentation will show you how to do both.
+
+[!INCLUDE [temp](../_shared/analytics-preview.md)]
 
 The following topics describe how to build an extension and a widet extension:  
 - [Overview of extensions for VSTS](../../extend/get-started/node.md)  

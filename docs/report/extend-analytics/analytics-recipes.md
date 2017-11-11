@@ -14,13 +14,12 @@ ms.date: 11/15/2017
 
 **VSTS**  
 
-[!INCLUDE [temp](../_shared/analytics-preview.md)]
-
 You can query your VSTS work tracking data using the basic queries provided in this topic. These queries address everyday needs while demonstrating various capabilities of the
 Analytics service. You can adapt most of these queries to meet your needs.
 
 For prerequistes and other information for getting started, see [Query your work tracking data using the OData Analytics service](wit-analytics.md). All examples are scoped to a project. For account-level scoping, see [account scoped queries](account-scoped-queries.md).
 
+[!INCLUDE [temp](../_shared/analytics-preview.md)]
 
 **Retrieve the history of a work item**
 
