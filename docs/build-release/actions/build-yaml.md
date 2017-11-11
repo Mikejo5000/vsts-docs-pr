@@ -15,7 +15,7 @@ ms.date: 11/11/2017
 
 When it comes to your CI builds on VSTS, you've got a choice: define your process in a web-based interface, or, you can configure your CI process as code in a YAML build. YAML build definitions give you the advantages of _configuration as code_. 
 
-One of the key advantages is that your CI process is versioned with your code. This means, for example, if someone changes your build process and something breaks, you can much more easily see and revert the change. It's just as easy to see and fix as any other kind of bug in your code because the process definition is versioned in your code.
+One of the key advantages is that your CI process is versioned with your code. This means if someone changes your build process and something breaks, you can much more easily see and revert the change. It's just as easy to see and fix as any other kind of bug in your code because the process definition is versioned in your code.
 
 > [!TIP]
 > If you're new to YAML builds, or to VSTS, we suggest you [begin with our tutorial](build-yaml-get-started.md) and then come back here.

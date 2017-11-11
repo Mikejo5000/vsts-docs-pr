@@ -13,3 +13,42 @@ ms.date: 11/11/2017
 
 **VSTS**
 
+When it comes to your CI builds on VSTS, you've got a choice: define your process in a web-based interface, or, you can configure your CI process as code in a YAML build. Here we'll give you a quick walkthrough so you can give it a try and see how it works.
+
+## Prerequisites
+
+[!INCLUDE [include](../_shared/ci-cd-prerequisites-vsts.md)]
+
+[!INCLUDE [include](../_shared/ci-cd-prerequisites-tfs.md)]
+
+## Get the sample code
+
+[!INCLUDE [include](../apps/_shared/get-sample-code-intro.md)]
+
+```
+https://github.com/adventworks/dotnetcore-sample
+```
+
+Next, choose which kind of Git service you're using:
+
+# [VSTS or TFS repo](#tab/vsts)
+
+[!INCLUDE [include](../apps/_shared/get-sample-code-vsts-tfs-2017-update-2.md)]
+
+# [GitHub repo](#tab/github)
+
+[!INCLUDE [include](../apps/_shared/get-sample-code-github.md)]
+
+---
+
+[!INCLUDE [include](../apps/_shared/get-sample-code-other-repos-vsts.md)]
+
+## Set up continuous integration
+
+[!INCLUDE [include](../_shared/ci-quickstart-intro.md)]
+
+[//]: # (TODO: Restore use of includes when we get support for using them in a list.)
+
+## Next steps
+
+[!INCLUDE [include](../apps/_shared/ci-web-app-next-steps-with-containers.md)]
