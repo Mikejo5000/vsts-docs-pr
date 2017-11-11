@@ -17,7 +17,7 @@ ms.date: 11/11/2017
 
 |Capability|YAML|Web interface|
 |-|-|-|
-|Repository|
+|<div style="text-align:center">Repository</div>|
 |Git and GitHub|Yes|Yes|
 |TFVC|No|Yes|
 |Bitbucket, external Git, Subversion|No|Yes|
