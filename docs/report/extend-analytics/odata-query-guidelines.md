@@ -88,7 +88,7 @@ If your query targets data from a project you don't have access to, the query wi
 
 Here is the message you'll see if you don't have access to a project: 
 
->*"The query results include data in one or more projects for which you do not have access. Add one or more projects filters to specify the project(s) you have access to in 'WorkItems' entity. If you are using $expand or navigation properties, project filter is required for those entities.*
+>*The query results include data in one or more projects for which you do not have access. Add one or more projects filters to specify the project(s) you have access to in 'WorkItems' entity. If you are using $expand or navigation properties, project filter is required for those entities.*
 
 <!---One of the core principles of Analytics Service is that one query returns the same result for all users of fails in a user does not have permissions to the data. There are no implicit filters added based on who runs the query. One consequence is that you, the query author, have to pay attention to project filters to make sure that the target audince will be able to execute them. 
 
@@ -429,7 +429,7 @@ To learn more, see [Aggregate data](aggregated-data-analytics.md).
 
 <a id="specify-columns"> </a>
 ### ✔️ DO specify columns in the `$select` clause
-Specify the columns you care about in the `$select` clause. This decreases the number of columns that the service has to scan and reduces the size of the response payload.
+Specify the columns you care about in the `$select` clause. Analytics Service is built on top of a *Columnstore Index* technology which means that data is both storage and query processing is column-based. By reducing the set of properties you reference in `$select` clause you can reduce the number of columns that have to be scanned and improve the overall performance of the query.
 
 For example, the following query specifies the columns for work items.
 
@@ -444,7 +444,7 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
 
 <a id="specify-columns-select"> </a>
 ### ✔️ DO specify columns in the `$select` expand option inside the `$expand` clause
-Similarly to the `$select` clause guidelines, specify the columns in the `$select` expand option within the `$expand` clause. It's easy to forget, but if you omit it, your response will contain all the columns from the expanded object.
+Similarly to the `$select` clause guidelines, specify the properties in the `$select` expand option within the `$expand` clause. It's easy to forget, but if you omit it, your response will contain all the properties from the expanded object.
 
 For example, the query below specifies the columns for both the work item and its parent.
 
@@ -575,6 +575,9 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
   &$select=WorkItemId, Title, State, TagNames
 ```
 
+> [!IMPORTANT]
+> Property `TagNames` has a length limit of 1024 characters. It contains contains a set of tags that fit within that limit. If a work item has many tags or the tags are very long, then `TagNames` will not contain the full set and `Tag` navigation property should be used instead.
+
 
 <a id="perf-case-sensitive"> </a>
 ### ❌ DO NOT use `tolower` and `toupper` functions to perform case-insensitive comparison
@@ -609,6 +612,9 @@ The link to the next page is included in the `@odata.nextLink` property.
   ],
   "@odata.nextLink":"https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?$skiptoken=12345"}
 ```
+
+> [!NOTE]
+> Most existing OData clients can handle server-driven paging automatically. For example this strategy is already used by the following tools: Power BI, SQL Server Integration Services and Azure Data Factory.
 
 <a id="perf-no-top-skip"> </a>
 ### ❌ DO NOT use `$top` and `$skip` query options to implement client-driven paging
@@ -662,22 +668,25 @@ For example, instead of expanding `Parent`, you can fetch more work items and us
 
 
 <a id="perf-max-size"> </a>
-### ✔️ CONSIDER passing `vsts.analytics.maxsize` preference in the header
+### ✔️ CONSIDER passing `VSTS.Analytics.MaxSize` preference in the header
 
-When you execute a query,  you don't know the number of records that the query will return.  You have to either send another query with aggregations or follow all the next links and fetch the entire dataset.The Analytics Service respects `vsts.analytics.maxsize` preference, which lets you fail fast in those instances that the dataset is bigger than what your client can accept. 
+When you execute a query,  you don't know the number of records that the query will return.  You have to either send another query with aggregations or follow all the next links and fetch the entire dataset.The Analytics Service respects `VSTS.Analytics.MaxSize` preference, which lets you fail fast in those instances that the dataset is bigger than what your client can accept. 
 
-This option is particularly helpful in data export scenarios. To use it you have to add `Prefer` header to your HTTP request and set `vsts.analytics.maxsize` to a non-negative value. The `vsts.analytics.maxsize` value represents the maximum number of records you can accept. If you set it to zero, then a default value of 200K will be used.
+This option is particularly helpful in data export scenarios. To use it you have to add `Prefer` header to your HTTP request and set `VSTS.Analytics.MaxSize` to a non-negative value. The `VSTS.Analytics.MaxSize` value represents the maximum number of records you can accept. If you set it to zero, then a default value of 200K will be used.
 
 For example, the following query returns work items provided that the dataset is smaller or equal to 1000 records.
 
 ```http
 GET https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems HTTP/1.1
-User-Agent: Microsoft.Data.Mashup
-Prefer: vsts.analytics.maxsize=1000
+User-Agent: {application}
+Prefer: VSTS.Analytics.MaxSize=1000
 OData-MaxVersion: 4.0
 Accept: application/json;odata.metadata=minimal
 Host: {account}.analytics.visualstudio.com
 ```
+If the dataset exceeds the limit of 1000 records the query will immediatelly fail with the following error.
+
+> *Query result contains 1,296 rows and it exceeds maximum allowed size of 1000. Please reduce the number of records by applying additional filters*
 
 
 ## Query style guidelines
