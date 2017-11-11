@@ -13,6 +13,8 @@ ms.date: 11/15/2017
 
 # What is the Analytics Service?
 
+**VSTS**  
+
 You can use the Analytics Service, the reporting platform for Visual Studio Team Services (VSTS), to answer quantitative questions about the past or present state of your projects. This service provides a concise data model over the VSTS suite. Built for reporting, the Analytics Service is optimized for fast read-access and server-based aggregations.
 
 To gain access to the Analytics Service for your VSTS account, you install the [VSTS Analytics extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). Once installed, the Analytics Service populates itself with all available VSTS data. Once populated, it updates itself as data changes occur. For more information, read read [Performance and latency](performance-latency.md)

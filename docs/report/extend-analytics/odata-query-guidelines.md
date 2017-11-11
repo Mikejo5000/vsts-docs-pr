@@ -12,11 +12,12 @@ ms.date: 10/20/2017
 # OData Query Guidelines
 
 **VSTS**  
-[!INCLUDE [temp](../_shared/analytics-preview.md)]
 
 This section provides guidelines for designing efficient OData queries against Analytics Service. The goal is to help extension developers ensure that the queries have good performance in terms of the execution time and the resource consumption. Queries that do not adhere to these guidelines might provide bad experience when users have to wait long for the reports to be generated or exceed allowed resource consumption and the user get temporarily blocked from the service.
 
 The guidelines are organized as simple recommendations prefixed with the terms **DO**, **CONSIDER**, **AVOID** and **DO NOT**. In certain cases these recommendations were rules enforced in the service and it is reflected by **[BLOCKED]** prefix. These guidelines are intended to help extension developers understand the trade-offs between different solutions. There might be situations where data requirements force you to violate these guidelines. Such cases should be rare, and it is important that you have a clear and compelling reason for your decision.
+
+[!INCLUDE [temp](../_shared/analytics-preview.md)]
 
 ## Errors and warnings guidelines
 

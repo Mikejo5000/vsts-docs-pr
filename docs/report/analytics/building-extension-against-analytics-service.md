@@ -13,11 +13,11 @@ ms.date: 08/11/2016
 
 **VSTS**  
 
-[!INCLUDE [temp](../_shared/analytics-preview.md)]
-
 Building an extension that calls the Analytics Service is identical to building any other extension. However,
 in this early stage, a few things have to be done manually at this point - and then there's working
 with the returned data. This documentation will show you how to do both.
+
+[!INCLUDE [temp](../_shared/analytics-preview.md)]
 
 To build an extension, see [Write your first extension for VSTS](../../extend/get-started/node.md).
 We won't be building a grid control to hold the results though - we'll be building a chart. For the purposes of this
