@@ -93,21 +93,22 @@ However, you can't enter the following:
 
 ## Not supported features
 
-- ```$search```  
-- ```$compute```  
-- ```$rollup```  
+- ```bottomcount```  
+- ```bottomsum```  
+- ```bottompercent``` 
 - ```$crossjoin```  
 - ```concat```  
 - ```compute```  
+- ```$compute```   
+- ```countdistinct```  
+- ```from```
 - ```isdefined```  
+- ```$rollup```  
+- ```$search```  
 - ```topcount```  
 - ```topsum```  
 - ```toppercent```  
-- ```bottomcount```  
-- ```bottomsum```  
-- ```bottompercent```  
-- ```countdistinct```  
-- ```from``` 
+ 
 
 ## Related notes  
 

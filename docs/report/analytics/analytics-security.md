@@ -10,7 +10,7 @@ ms.author: kaelli
 ms.date: 11/13/2017
 ---
 
-# Permissions required to access the Analytics service
+# Permissions required to access the Analytics Service
 
 **VSTS**  
 
@@ -31,6 +31,9 @@ Security is granted by giving a user the **View analytics** permission through t
 
 To learn more about working with permissions, see [Security & Identity](../../security/index.md).
 
+
+<a name="access-denied"></a>
+## Access denied response
 
 **The whole truth or nothing at all**
 
