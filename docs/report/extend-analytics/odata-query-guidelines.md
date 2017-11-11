@@ -639,7 +639,7 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
 ```
 
 <a id="perf-filter-surrogate"> </a>
-### **✔️ CONSIDER filtering on surrogate key columns
+### ✔️ CONSIDER filtering on surrogate key columns
 If you want to filter the data on the value of a related object (e.g. filtering a work item on the project name) you always have two choices. You can either use the navigation property (e.g. `Project/ProjectName`) or capture the *surrogate key* up-front and use it directly in the query (e.g. `ProjectSK`).
 
 If you're building a widget, we recommend you use the latter option. When the key is passed as part of the query, the number of entity sets that have to be touched decreases and the performance improves.
@@ -682,7 +682,15 @@ Host: {account}.analytics.visualstudio.com
 
 ## Query style guidelines
 
+- [✔️ DO use `$count` virtual property in the aggregation methods](#style-count)
+- [❌ AVOID using `$count` virtual property in the URL segment](#style-avoid-count)
+- [❌ AVOID mixing `$apply` and `$filter` clauses in a single query](#style-avoid-mix)
+- [✔️ CONSIDER using parameter aliases to separate volatile parts of the query](#style-aliases)
+- [✔️ CONSIDER structuring your query to match the OData evaluation order](#style-match-order)
+- [✔️ CONSIDER reviewing OData capabilities described in the metadata annotations](#style-metadata)
 
+
+<a id="style-count"> </a>
 ### ✔️ DO use `$count` virtual property in the aggregation methods
 Some entities expose `Count` property. They make some reporting scenarios easier when the data gets exported to a different storage. However, you should not use these columns in aggregations in OData queries. Use  the `$count` virtual property instead.
 
@@ -694,7 +702,7 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
   $apply=aggregate($count as Count)
 ```
 
-
+<a id="style-avoid-count"> </a>
 ### ❌ AVOID using `$count` virtual property in the URL segment
 Although OData standard allows you to use `$count` virtual property for entity sets (e.g. `_odata/v1.0/WorkItems/$count`), not all clients can interpret the response correctly. Therefore, it is recommended to use aggregations instead.
 
@@ -706,7 +714,7 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
   $apply=aggregate($count as Count)
 ```
 
-
+<a id="style-aliases"> </a>
 ### ✔️ CONSIDER using parameter aliases to separate volatile parts of the query
 Parameter aliases provide an elegant solution to extract volatile parts such as parameter values from the main query text. You can use them in expressions that evaluate to a primitive value, a complex value, or a collection of primitive or complex values as explained in the specification, [OData Version 4.0. Part 2: URL Conventions - 5.1.1.13 Parameter Aliases](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc444868740). Parameters are particularly useful when the query text is used as a template that can be instantiated with user supplied values.
 
@@ -720,7 +728,7 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
   &@createdDateSK=20170101
 ```
 
-
+<a id="style-avoid-mix"> </a>
 ### ❌ AVOID mixing `$apply` and `$filter` clauses in a single query
 If you want to add `filter` to your query you have two options. You can either do it with the `$filter` clause or the `$apply=filter()` combination. Each one of these options works great on its own, but combining them together might lead to some unexpected results. 
 
@@ -740,6 +748,7 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
     )
 ```
 
+<a id="style-match-order"> </a>
 ### ✔️ CONSIDER structuring your query to match the OData evaluation order
 
 Because mixing `$apply` and `filter` clauses in a single query can lead to potential confusion, we recommend you structure your query clauses to match the evaluation order. 
@@ -753,6 +762,7 @@ Because mixing `$apply` and `filter` clauses in a single query can lead to poten
 7. `$top`
 
 
+<a id="style-metadata"> </a>
 ### ✔️ CONSIDER reviewing OData capabilities described in the metadata annotations
 When you're unsure about which OData capabilities the Analytics Service supports, you can look up annotations in the metadata. The [OASIS Open Data Protocol (OData) Technical Committee](https://www.oasis-open.org/committees/odata/) in a [TC GitHub repository](https://github.com/oasis-tcs/odata-vocabularies/blob/master/vocabularies/Org.OData.Capabilities.V1.md) maintains a list of available annotations.
 

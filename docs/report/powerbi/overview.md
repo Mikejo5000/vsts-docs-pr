@@ -12,21 +12,20 @@ ms.date: 10/31/2017
 
 # Power BI integration
 
-***VSTS***
+**VSTS**
 
 Gain insight and analyze the progress and quality of your project by connecting Power BI to the data collected and stored in Visual Studio Team Services(VSTS).
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
-The **Beta VSTS Power BI Desktop Data Connector**, was shipped with the *January 2017 Update* and is currently under development.  The Data Connector will be updated in early 2018, until the updated Data Connector is available we recommend using the [Power BI OData Connector](../analytics/access-analytics-power-bi.md).
-
+The **Beta VSTS Power BI Desktop Data Connector**, was shipped with the *January 2017 Update* and is currently under development. The Data Connector will be updated in early 2018, until the updated Data Connector is available we recommend using the [Power BI OData Connector](../analytics/access-analytics-power-bi.md).
 
 
 [!INCLUDE [temp](../_shared/content-pack-deprecation.md)]
 
 The following table contains a detailed overview of the **Data Connector**.
 
-<table>
+<table width="75%">
 <tbody valign="top">
     <tr>
         <th>

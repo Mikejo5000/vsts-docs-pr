@@ -10,13 +10,13 @@
     href: ../analytics/client-authentication-options.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
   - name: Connect to VSTS 
     href: data-connector-connect.md
-  - name: Access data via the Power BI desktop
+  - name: Access data
     href: ../analytics/access-analytics-power-bi.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
-  - name: "Power BI desktop & OData aggregations"
+  - name: OData aggregations
     href: ../analytics/using-odata-aggregations-with-power-bi-desktop.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
   - name: Create custom calculations
     href: ../analytics/custom-calculations.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
-  - name: "Share reports, publish to PowerBI.com"
+  - name: "Publish to PowerBI.com"
     href: ../analytics/publishing-power-bi-desktop-to-power-bi.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json   
   - name: Set permissions (Security)
     href: ../analytics/analytics-security.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json  
@@ -26,7 +26,7 @@
     href: data-connector-functions.md
 - name: Resources
   items:
-  - name: "Dashboards & widgets"
+  - name: Dashboards
     href: ../dashboards/index.md
   - name: "Analytics (VSTS)"
     href: ../analytics/index.md

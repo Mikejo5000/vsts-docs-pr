@@ -14,7 +14,7 @@ ms.date: 11/13/2017
 
 **VSTS**  
 
-You can use the Analytics Service to answer quantitative questions regarding past or present state and velocity of your projects hosted in Visual Studio Team Services (VSTS). The Analytics Service provides a concise OData model of your work tracking data.  
+You can use the Analytics Service to answer quantitative questions regarding past or present state and velocity of your projects hosted in Visual Studio Team Services (VSTS). The Analytics Service provides a concise data model of your work tracking data.  
 
 To get started, read [What is Analytics?](what-is-analytics.md) 
 
@@ -34,27 +34,23 @@ To get started, read [What is Analytics?](what-is-analytics.md)
 - [Configure or view Velocity chart](../guidance/team-velocity.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json)
 
 
-
 ## Concepts
-
 - [Analytics widgets](../guidance/analytics-widgets-vsts.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json)
-- [Cumulative flow, lead time, and cycle time guidance](../guidance/cumulative-flow-cycle-lead-time-guidance.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json)
-- [Velocity guidance](../guidance/velocity-guidance.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json)
-- [Burndown guidance](../guidance/burndown-guidance.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json)
-- [Performance and latency](href: performance-latency.md)
+- [Performance and latency](performance-latency.md)
+
 
 ## How-to Guides
 - [Set permissions for the Analytics Service](analytics-security.md)
 
+
 <!---
 Future:
-
-## Concepts:
 Analytics Views
 Understanding Analytics Service data Acquisition
 -->
 
 ## Resources
+- [Dashboards](../dashboards/index.md)
 - [PowerBI (VSTS)](../powerbi/index.md)
 - [Extend Analytics with OData](../extend-analytics/index.md)
 - [Developer Community: Analytics support forum](https://developercommunity.visualstudio.com/search.html?f=&type=question+OR+problem&type=question+OR+problem&c=&redirect=search%2Fsearch&sort=relevance&q=VSTS+Analytics)
