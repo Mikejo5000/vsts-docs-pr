@@ -13,6 +13,8 @@ ms.date: 11/13/2017
 
 # What is the Analytics Service?
 
+**VSTS**  
+
 You can use the Analytics Service, the reporting platform for Visual Studio Team Services (VSTS), to answer quantitative questions about the past or present state of your projects. This service provides a concise data model over the VSTS suite. Built for reporting, the Analytics Service is optimized for fast read-access and server-based aggregations.
 
 To gain access to the Analytics Service for your VSTS account, you install the [VSTS Analytics extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). Once installed, the Analytics Service populates itself with all available VSTS data. Once populated, it updates itself as data changes occur. For more information, read read [Performance and latency](performance-latency.md)
@@ -37,17 +39,7 @@ Widgets provide the easiest way to get insights from your data. Check out [Enabl
 If you want to develop your own widget based on the Analytics Service, see [Create an Analytics widget for VSTS](../extend-analytics/example-analytics-widget.md).
 
 ## OData
-The Analytics Service is fully accessible via OData. 
-
-
-<!---
-
-With OData, you can perform the following tasks: 
-
->![NOTE] 
-> Need to fill this in after I know what the OData docs look like. I don't want to dupllicate wording here and mostly want to point them to the other docs.
-
---> 
+The Analytics Service is fully accessible via OData. If you would like to prepare custom queries and tooling with our OData API, see[Extend on Analytics](../extend-analytics/index.md)
 
 ## Power BI
 [Power BI](https://powerbi.microsoft.com) is a suite of business analytics tools. Use it to do ad-hoc analysis, produce beautiful reports, and publish for enterprise consumption. We have created a Power BI Desktop connector which simplifies pulling data from the Analytics Service.

@@ -14,7 +14,7 @@ ms.date: 11/13/2017
 
 **VSTS**  
 
-You can use the Analytics service to answer quantitative questions regarding past or present state and velocity of your projects hosted in Visual Studio Team Services (VSTS). The Analytics service provides a concise OData model of your work tracking data.  
+You can use the Analytics Service to answer quantitative questions regarding past or present state and velocity of your projects hosted in Visual Studio Team Services (VSTS). The Analytics Service provides a concise OData model of your work tracking data.  
 
 To get started, read [What is Analytics?](what-is-analytics.md) 
 
@@ -41,6 +41,7 @@ To get started, read [What is Analytics?](what-is-analytics.md)
 - [Cumulative flow, lead time, and cycle time guidance](../guidance/cumulative-flow-cycle-lead-time-guidance.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json)
 - [Velocity guidance](../guidance/velocity-guidance.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json)
 - [Burndown guidance](../guidance/burndown-guidance.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json)
+- [Performance and latency](href: performance-latency.md)
 
 ## How-to Guides
 - [Set permissions for the Analytics Service](analytics-security.md)

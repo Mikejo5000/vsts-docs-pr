@@ -15,10 +15,9 @@ ms.date: 11/13/2017
 
 **VSTS**  
 
-[!INCLUDE [temp](../_shared/analytics-preview.md)]
-
-
 The Analytics service data model consists of entity sets, whose members (entities) contains properties that can be filtered, aggregated, and summarized.  Additionally, they contain [navigation properties](http://www.odata.org/getting-started/basic-tutorial/#relationship) that relate entities to one other, providing access to additional properties for selecting, filtering, and grouping.
+
+[!INCLUDE [temp](../_shared/analytics-preview.md)]
 
 ##Entities  
 
@@ -44,29 +43,29 @@ The data model contains the following entity sets:
 |WorkItemBoardSnapshot | (Composite) The state of each work item on each calendar date, including Kanban board location - used for trend reporting|  
 |WorkItemTypeFields | The work item properties for each work item type and process - used for report building|  
 
-##Composite Entities
+##Composite entities
 
-Some entities are composed from other simpler entities. Often these entities require more computing resources to generate and may return larger result sets. These composite entities are designed to specific scenarios. Take care to query the correct entity for your scenario, to achieve the best performance and avoid unnecessary throttling.
+Composite entities support specific scenarios. They are composed from simpler entities, often require more computing resources to generate, and may return larger result sets. To achieve the best performance and avoid unnecessary throttling, ensure that you query the correct entity for your scenario.
 
-For example, WorkItemSnapshot combines WorkItemRevisions and Dates such that each date has one revision for each work item. This representation is useful for OData queries that want trend data for a filtered set of work items. However, this entity should not be used to query the current state of work items. Such a query would run more quickly using the WorkItems entity set.
+For example, WorkItemSnapshot combines WorkItemRevisions and Dates such that each date has one revision for each work item. This representation supports OData queries that focus on trend data for a filtered set of work items. However, you should not use this composite entity to query the current state of work items. Instead, you should use the WorkItems entity set to generate a more quick-running query.
 
-Similarly, some entities may contain all historic values, while others may only contain current values. WorkItemRevision contains all work item history, and should not be used in scenarios where the current values are of interest.
+Similarly, some entities may contain all historic values, while others may only contain current values. WorkItemRevision contains all work item history, which you should not use in scenarios where the current values are of interest.
 
 ##Relationships
 
-Entities can be combined using relationships to generate more complex query results. Relationships can be followed when expanding, filtering, or summarizing data.
+To generate more complex query results, you can combine entities using relationships. You can employ relationships to expand, filter, or summarize data.
 
-Some navigation properties result in a single entity, while others result in a collection of entities. In the following diagram, entities and their navigation properties are shown.  For clarity, some composite entities and relationships have been omitted.
+Some navigation properties result in a single entity, while others result in a collection of entities. The following diagram shows select entities and their navigation properties. For clarity, some composite entities and relationships have been omitted.
 
 ![Analytics Service Data Model](_img/datamodel.png)
 
-##Relationship Keys
+##Relationship keys
 
- Entity relationships are also represented as foreign keys so that external tools can join entities. These properties have the suffix "SK", and are either integer or GUID data types. Date properties have corresponding integer date key properties with the following format: YYYYMMDD
+ Entity relationships are also represented as foreign keys so that external tools can join entities. These properties have the suffix "SK", and are either integer or GUID data types. Date properties have corresponding integer date key properties with the following format: YYYYMMDD.
 
 ##Entity Properties
 
-Each entity in the model contains a set of properties. For example, the WorkItemRevision entity can contain hundreds of properties, including customized fields specific to your process. The sample below is a partial list, to illustrate some commonly found properties:
+The following table provides a partial list of the WorkItemRevision entity properties to illustrate some common details. The last three properties–CreatedDate, CreatedDateSK, CreatedOn-- show that the same value is often expressed in multiple properties, each designed for different scenarios.
 
 | Property | Type | Description|  
 |--------|------------|------------|  
@@ -81,10 +80,8 @@ Each entity in the model contains a set of properties. For example, the WorkItem
 |CreatedDateSK | Int32 | The date the work item was created, expressed as YYYYMMDD in the time zone for the account. Used by external tools to join related entities.
 |CreatedOn | Navigation | Navigation property to the Date entity for the date the work item was created, in the time zone for the account. Commonly used to reference properties from the Date entity in ```groupby``` statements.
 
-The last three properties here show that the same value is often expressed in multiple properties, each designed for different scenarios.
-
 >[!NOTE]
->Changes to custom work item fields will affect the shape of your data model and will affect all work item revisions.
+>Changes to custom work item fields will affect the shape of your data model and will affect all work item revisions. For instance, if you add a new field, queries on pre-existing revision data will reflect the presence of this field. 
 
 
 ##Related notes 

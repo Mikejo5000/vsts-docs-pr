@@ -13,11 +13,11 @@ ms.date: 11/13/2017
 
 **VSTS**  
 
-[!INCLUDE [temp](../_shared/analytics-preview.md)]
-
 Currently, Power Query (the underlying technology in both Power BI Desktop and Excel) does not support OData Aggregation Extensions.
 However, Power Query is extremely flexible and as such has an easy mechanism for allowing this content to be used. This article
 walks you through this process.
+
+[!INCLUDE [temp](../_shared/analytics-preview.md)]
 
 In order to use Aggregation Extensions with Power BI Desktop, you must create the URL by hand which requires knowledge of [OData on Analytics Service](../extend-analytics/index.md) and the
 [Aggregation Extensions](../extend-analytics/aggregated-data-analytics.md) specifically. Please review these two topics before continuing.

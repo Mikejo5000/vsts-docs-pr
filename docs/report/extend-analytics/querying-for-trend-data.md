@@ -13,9 +13,9 @@ ms.date: 11/13/2017
 
 **VSTS**  
 
-Examining trends in data and making period-over-period comparisons are two of the most interesting aspects of data analysis. The Analytics service supports these capabilities.
+Examining trends in data and making period-over-period comparisons are important aspects of reporting and data analysis. The Analytics service supports these capabilities.
 
-Trend data is captured in the WorkItemSnapshot and WorkItemBoardSnapshot entities. They are constructed such that every work item, from the day it was created until today, exists for each day. This means that for an account with only one work item that was created a year ago, there are 365 rows in this entity. For significantly large projects, these entities would be far too large to load into a client tool.  
+Trend data is exposed in the WorkItemSnapshot and WorkItemBoardSnapshot entity sets. They are constructed such that every work item, from the day it was created until today, exists for each day. This means that for an account with only one work item that was created a year ago, there are 365 rows in this entity. For very large projects, these entities would be impractical to use with client tools.
 
 What is the solution? Use the [Aggregation Extensions](aggregated-data-analytics.md). 
 
@@ -30,8 +30,6 @@ In this topic you'll learn:
 
 Using the OData Aggregation Extensions, you can return aggregated data from VSTS that is conducive to reporting. For example you could show bug trend for the month of March. Bug trends are a common and critical part of managing any project so you can put this to good use immediately.
 
-See the topic [Aggregate data](aggregated-data-analytics.md) for more detailed information on
-constructing aggregation queries.
 
 ## Construct a basic query for trend data   
  
@@ -77,9 +75,9 @@ This returns a result similar to the following:
 
 This query will produce at most ```31 * (number of bug states)```. The default bug has three states 
 (Active, Resolved and Closed) which means at most this query will return 93 rows no matter 
-how many thousands of records actually exist. This provides a much more compact form of returning data and it also loads faster into client tools.  
+how many thousands of records actually exist. This provides a much more compact form of returning data.
 
-Before walking you through how to use this in a client tool, let's look at a variation on this example. You want to see the bug trend for an iteration or a release which starts with one iteration and ends with another.  
+Let's look at a variation on this example. You want to see the bug trend for an iteration or a release which starts with one iteration and ends with another.  
 
 To construct that query, do the following:  
 
@@ -121,3 +119,6 @@ In this query, there are two key differences. We added a filter clause to filter
 
 > [!NOTE]  
 > Using Power Query you can craft the query such that it provides a rolling chart using a form such as, todays date minus 30 days for a rolling 30 day chart.  
+
+## Related notes
+- [Construct aggregate data queries](aggregated-data-analytics.md) to count and analyse groups of related data.

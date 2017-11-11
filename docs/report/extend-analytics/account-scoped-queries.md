@@ -14,9 +14,9 @@ ms.date: 11/13/2017
 
 **VSTS**  
 
-[!INCLUDE [temp](../_shared/analytics-preview.md)]
-
 Project-scope queries help answer questions about a single project. And at the same time, account-scope queries allow you to answer questions which cross project boundaries. However, account scoped queries require broader user permissions or careful scoping restrictions to ensure that the query isn’t blocked due to a lack of project permissions.
+
+[!INCLUDE [temp](../_shared/analytics-preview.md)]
 
 Base URL for account level queries:
 ```

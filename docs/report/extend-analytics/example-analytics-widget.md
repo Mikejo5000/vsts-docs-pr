@@ -15,11 +15,11 @@ ms.date: 11/13/2017
 
 <!-- Note: The github links below will be re-pointed to the master branch sample, once we complete the merge. -->
 
-You can use the information provided in this topic to build your own Analytics widget to display in a VSTS dashboard. The [example widget on github](https://github.com/Microsoft/vsts-extension-samples/tree/master/analytics-example-widget) demonstrates the following: 
+You can use the information provided in this topic to build your own Analytics widget to display in a [VSTS Dashboard](../dashboards/index.md). The [example widget on github](https://github.com/Microsoft/vsts-extension-samples/tree/master/analytics-example-widget) demonstrates the following: 
 [!div class="checklist"] How to render trend lines associated with work item states
 [!div class="checklist"] How to query a dataset, whe a user will configure through the widget configuration view
 [!div class="checklist"] How to build and publish the widget to the VSTS marketplace
-With this information, you'll be able to create your own Analytics widget and add it to a [VSTS Dashboard](../dashboards/index.md)
+With this information, you'll be able to create your own Analytics widget.
 
 ![View of Configuration with Preview of Widget](./_img/extend-analytics-widget.png)  
 

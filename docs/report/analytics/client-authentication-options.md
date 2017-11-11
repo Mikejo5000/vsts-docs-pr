@@ -1,7 +1,7 @@
 ---
 title: Client authentication options
 titleSuffix: VSTS   
-description: Client authentication options to use when connecting to the Analytics service for VSTS using Power BI or Excel
+description: Client authentication options to use when connecting to the Analytics Service for VSTS using Power BI or Excel
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
 ms.assetid: 91C6424B-3C3D-4773-B252-C627A5CE7C6D 
@@ -14,16 +14,9 @@ ms.date: 11/13/2017
 
 **VSTS**  
 
-[!INCLUDE [temp](../_shared/analytics-preview.md)]
-
 In general, the order of authentication options should be the following (in order from most secure to least secure): Azure Active Directory (**AAD**) then Personal Access Tokens (**PAT**s).
 
-<!---
-
-> [!NOTE]  
-> If you are using Team Foundation Server, you should use Integrated Authentication wherever possible as that is the most secure authentication scheme.
- 
---> 
+[!INCLUDE [temp](../_shared/analytics-preview.md)]
 
 ## Azure Active Directory (AAD) 
 
@@ -77,19 +70,6 @@ the **oAuth2** option.
 0. If you need to revoke a token, simply navigate to this page and click the **Revoke** link. That token will immediately be denied access to VSTS.
 	
 	These tokens are your identity. When used, the token is acting as you. Keep your tokens secret and treat them like your password. To help keep your token more secure, consider using credential managers so that you don't have to enter your credentials every time you push.  
-
-<!---
-## Create an Alternate Access Credential 
-
-Alternate Access Credentials should be used as a last resort, but if you have to use them, do the following:
-
-0. From the Security page, open Alternate authentication credentials.
-
-	<img src="_img/client-auth-create-aac.png" alt="Alternate Access Credentials" style="border: 2px solid #C3C3C3;" />
-
-0. Check Enabled alternate access credentials, enter a password, confirm the password and then click Save.
-
--->
 
 ## Enter credentials within a client
 

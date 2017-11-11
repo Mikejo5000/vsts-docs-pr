@@ -14,8 +14,6 @@ ms.date: 11/13/2017
 
 **VSTS**  
 
-[!INCLUDE [temp](../_shared/analytics-preview.md)]
-
 As the Analytics Service grows and changes we are dedicated to providing consistency and reliability to our users. Therefore the Analytics Service provides a versioned OData API that will remain compatible with clients designed for those versions. Each version may be enhanced with additional functionality and non-breaking changes. Incompatible or breaking changes will be rolled into future versions of the API.
 
 The API version follows the _odata element in the request path and is formatted like **v1.0** or **v1.0-preview**.
@@ -24,6 +22,8 @@ The API version follows the _odata element in the request path and is formatted 
 ```OData
 https://{account}.analytics.visualstudio.com/{project}/_odata/{version}/$metadata
 ```
+
+[!INCLUDE [temp](../_shared/analytics-preview.md)]
 
 ## Breaking vs non-breaking changes
 The data model exposed by the Analytics Service defines the contract between the service and its clients. The OData spec requires that clients be tolerant of additive changes to the data model, so breaking changes will be introduced in future versions. For more information see the OData spec: 
