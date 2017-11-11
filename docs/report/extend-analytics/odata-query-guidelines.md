@@ -47,15 +47,15 @@ Some rules for OData queries were promoted from warning to error level. Instead 
 
 ## Restrictions guidelines
 
-### **️️✔️ DO** limit the query to the project(s) you have access to.
+### **✔️ DO** limit the query to the project(s) you have access to.
 One of the core principles of Analytics Service is that one query returns the same result for all users of fails in a user does not have permissions to the data. There are no implicit filters added based on who runs the query. One consequence is that you, the query author, have to pay attention to project filters to make sure that the target audince will be able to execute them. If a query tries to access the data in a project for which you do not have access, you will get the following error message.
 
-> *"The query results include data in one or more projects for which you do not have access. Add one or more projects filters to specify the project(s) you have access to in 'WorkItems' entity. If you are using $expand or navigation properties, project filter is required for those entities.*
+> *The query results include data in one or more projects for which you do not have access. Add one or more projects filters to specify the project(s) you have access to in 'WorkItems' entity. If you are using $expand or navigation properties, project filter is required for those entities.*
 
 In order to solve this problem you can either explicitly add a project filter or use the project-scoped endpoint, as explained two sections below.
 
 For example, this query fetches work items that belong to projects identified with either `{projectSK1}` or `{projectSK2}`.
-```odata
+```OData
 https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
   $filter=ProjectSK eq {projectSK1} or ProjectSK eq {projectSK2}
   &$select=WorkItemId, Title
@@ -65,7 +65,7 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
 When you expand navigation properties, there is a chance that you will end up referencing data from other, inaccessible projects. Should this happen you will receive the same "*"The query results include data in one or more projects...*" error as in the previous section. Similarly, this problem can be solved by adding explicit project filter to control the expanded data.
 
 This can be done in the regular `$filter` clause for simple navigation properties. For example, the query below explicitly asks for `WorkItemLinks` where both the link and its target exist in the same project.
-```odata
+```OData
 https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItemLinks?
   $filter=ProjectSK eq {projectSK} and TargetWorkItem/ProjectSK eq {projectSK}
   &$select=LinkTypeReferenceName, SourceWorkItemId, TargetWorkItemId
@@ -73,7 +73,7 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItemLinks?
 ```
 
 Alternatively, you could move the filter to `$filter` expand option in the `$expand` clause. However, it changes the semantic of the query. For example, the query below gets all the links from a given project and conditionally expands target only if it exists in the same project. Although valid, this approach might lead to some confusion as it might be hard to tell wether a property is not expanded because it is `null` or because it was filtered out. Please use this solution only if you really need this particular behavior.
-```odata
+```OData
 https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItemLinks?
   $filter=ProjectSK eq {projectSK}
   &$select=LinkTypeReferenceName, SourceWorkItemId, TargetWorkItemId
@@ -81,7 +81,7 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItemLinks?
 ```
 
 Filtering with `$filter` expand option is very useful when you expand collection property such as `Children` in `WorkItems` entity set. For example, the query below gets all work items from a given project together with all their children which belong in the same project.
-```odata
+```OData
 https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
   $filter=ProjectSK eq {projectSK}
   &$select=WorkItemId, Title
@@ -92,18 +92,18 @@ You do need to specify the filter if you expand one of the following properties:
 * `WorkItems` entity set: `Parent`, `Children`.
 * `WorkItemLinks` entity set: `TargetWorkItem`.
 
-### **️️✔️ CONSIDER** accessing project-scoped endpoint.
+### **✔️ CONSIDER** accessing project-scoped endpoint.
 Previous two sections explained how to explicitly define filters to restrict the data to selected projects. If you are interested in the data from a only one project there is an easier solution. If you use the project-scoped OData endpoint (`/{project}/_odata/v1.0`), then the project filter will be implicitly applied to referenced entity set as well as all the expanded navigation properties.
 
 With this simplification the queries from the previous section could be rewritten to the following form. Please notice that not only did the filter in expand clause dissapear, but also the filter on the main entity set is no longer needed.
-```odata
+```OData
 https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItemLinks?
   &$select=LinkTypeReferenceName, SourceWorkItemId, TargetWorkItemId
   &$expand=TargetWorkItem($select=WorkItemId, Title)
 ```
 
 Query for work item children is also much shorter and simpler.
-```odata
+```OData
 https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?
   &$select=WorkItemId, Title
   &$expand=Children($select=WorkItemId, Title)
@@ -111,7 +111,7 @@ https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?
 
 This solution can only be applied if you are interested in the data from a single project. For cross-project reporting you have to use filtering strategies described in the previous sections.
 
-### **️️✔️ DO** wait or stop the operation if your query exeeded usage limits.
+### **✔️ DO** wait or stop the operation if your query exeeded usage limits.
 If you execute a lot of queries or the queries require a lot of resources to run you might exceed the limits and get temporarily blocked. Should this happen, please stop the operation as chances are that the next query you send will fail with the same error message.
 
 > *Request was blocked due to exceeding usage of resource '{resource}' in namespace '{namespace}'.*
@@ -120,7 +120,7 @@ For more information on rate limiting, see "Rate limits" topic.
 To learn how to design efficient OData queries please refer to [Performance Guidelines](#performance-guidelines) section.
 
 
-### **️️✔️ DO** wait or stop the operation if your query fails with a timeout.
+### **✔️ DO** wait or stop the operation if your query fails with a timeout.
 <a name="question-41065"></a>
 Similarly to esceeding usage limits, you should wait or stop the operation if your query hits timeout. There is a chance that this is transient problem and it makes sense to retry once, but if the timeouts are persisting the query is probably too expensive to run and retrying will only result in exceeding usage limits and you will get blocked.
 
@@ -134,7 +134,7 @@ Timeout is a good indication that the query is expensive and should be optimized
 Snapshot entity sets with `Snapshot` suffix are special because they are modelled as *daily snapshots*. This means they can be used to get a state of entities as they were at the end of each day in the past. For example if you queried `WorkItemSnapshot` and filter to a single `WorkItemId` you would get one record for each day since the work item was created. Of course loading directly all of this data would be very expensive and most likely would exceed usage limits, thus, it is blocked. Aggregations on these entities, on the other hand, are both allowed and recommended. In fact, these tables were designed with aggregation scenarios in mind.
 
 For example, the query below gets the number of work items as by date to observe how it grew in January 2017.
-```odata
+```OData
 https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItemSnapshot?
   $apply=
     filter(DateSK ge 20170101 and DateSK le 20170131)/
@@ -158,7 +158,7 @@ As the error messages hints, direct entity addressing can be abused by certain c
 If you want to fetch data for a single entity you should use the same approach as for a collection of entities and explicitly define filters in the `$filter` clause.
 
 For example, the query below gets a single work item by its identifier.
-```odata
+```OData
 https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
   $filter=WorkItemId eq {id}
   &$select=WorkItemId, Title
@@ -188,14 +188,14 @@ This restriction was put in place to encourage everyone to the recommended solut
 You should use `WorkItemRevisions` each time you want to fetch full history for a work item or a collection of work items. 
 
 For example, the query below gets all the revisions of a work item with `{id}` identifier.
-```odata
+```OData
 https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItemRevisions?
   $filter=WorkItemId eq {id}
   &$select=WorkItemId, Title
 ```
 
 If you care about full history for all the work items that match certain criteria, you can express it using a filter on `WorkItem` navigation property. For example, the query below gets all the revisions of all the work items which are currently active.
-```odata
+```OData
 https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItemRevisions?
   $filter=WorkItem/State eq 'Active'
   &$select=WorkItemId, Title
@@ -243,7 +243,7 @@ Whenever you create a very long query you should question whether it is really n
 If the length is driven by the fact that you are including a lot of entity keys in the query (e.g. `WorkItemId eq {id 1} or WorkItemId eq {id 2} or ...`), then you can probably rewrite it. Instead of passing the identifiers try to define some other criteria that will select the same set of entities. Sometimes it might be necessary to modify your process (e.g. add a new field or tag), but it is typically worth it. Using more abstract filters the query will be easier to maintain and has potential to reach better performance.
 
 Another scenario that can lead you to a long query is including a lot of individual dates (e.g. `DateSK eq {dateSK 1} or DateSK eq {dateSK 2} or ...`). Similarly to the previous case, the chances are that there is some other pattern that can be used to create more abstract filter. For example, The query below gets all the work items which were created on Monday.
-```odata
+```OData
 https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
   $filter=CreatedOn/DayOfWeek eq 2
   &$select=WorkItemId, Title, State
@@ -255,7 +255,7 @@ All the date and time information is exposed with a time zone (`Edm.DateTimeOffs
 > *The query specified in the URI is not valid. No datetime offset was specified.  Please use either of these formats YYYY-MM-ddZ to specify everything since midnight or yyyy-MM-ddThh:mm-hh:mm (ISO 8601 standard representation of dates and times) to specify the offset.*
 
 The error message explains it well. The only thing you need to do solve this problem is adding the time zone information. For example, assuming that the account is configured to display data in "*(UTC-08:00) Pacific Time (US & Canada)*" time zone, the following query gets all the work items created since the beginning of 2017.
-```odata
+```OData
 https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
   $filter=CreatedDate ge 2017-01-01T00:00:00-08:00
   &$select=WorkItemId, Title, State
@@ -266,14 +266,14 @@ The same solution works for time zones with positive offsets, however, plus char
 > *The query specified in the URI is not valid. Syntax error at position 31 in 'CreatedDate ge 2017-01-01T0000 08:00'.*
 
 To solve it you need to replace `+` character with its encoded version - `%2B`. For example, assuming that the account is configured to display data in "*(UTC+08:00) Beijing, Chongqing, Hong Kong, Urumqi*" time zone, the following query gets all the work items created since the beginning of 2017.
-```odata
+```OData
 https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
   $filter=CreatedDate ge 2017-01-01T00:00:00%2B08:00
   &$select=WorkItemId, Title, State
 ```
 
 Alternative approach is to use date surrogate key properties as they do not keep the time zone information. For example, the following query gets all the work items created since the beginning of 2017 regardless the account settings.
-```odata
+```OData
 https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
   $filter=CreatedDateSK ge 20170101
   &$select=WorkItemId, Title, State
@@ -292,11 +292,11 @@ There are many options to measure the performance. The simplest one is running t
 By far the best thing you can do to improve performance of your queries is to use aggregation extension - [OData Extension for Data Aggregation](http://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html). This allows you to ask the service to summarize data server-side and return response which is much smaller than what you would need to fetch if you wanted to apply the same function client-side. Finally, Analytics Service is optimized for this type of queries, so please make use of it.
 
 
-### **✔️ DO** specify columns in `$select` clause.
-You should speciy the columns you care about in the `$select` clause. This decreases the number of columns that have to be scanned and reduces the size of the response payload.
+### **✔️ DO** specify properties in `$select` clause.
+You should speciy the properties you care about in the `$select` clause. Analytics Service is built on top of a *Columnstore Index* technology which means that data is both storage and query processing is column-based. By reducing the set of properties you reference in `$select` clause you can reduce the number of columns that have to be scanned and improve the overall performance of the query.
 
 For example, the query below specifies the columns for work items.
-```odata
+```OData
 https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
   $select=WorkItemId, Title, State
 ```
@@ -305,15 +305,20 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
 > Visual Studio Team Services supports process customization. Some account administrators use this feature and create hundreds of custom fields. If you omit the `$select` clause, all of these fields will be returned.
 
 
-### **✔️ DO** specify columns in `$select` expand option inside the `$expand` clause.
-Similarly to `$select` clause guidelines, you should also specify the columns in `$select` expand option in the `$expand` clause. It is easy to forget, but if you omit it, response will contain all the columns from the expanded object.
+### **✔️ DO** specify properties in `$select` expand option inside the `$expand` clause.
+Similarly to `$select` clause guidelines, you should also specify the properties in `$select` expand option in the `$expand` clause. It is easy to forget, but if you omit it, response will contain all the properties from the expanded object.
 
 For example, the query below specifies the columns for both the work item and its parent.
-```odata
+```OData
 https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
   $select=WorkItemId, Title, State
   &$expand=Parent($select=WorkItemId, Title, State)
 ```
+
+
+### **✔️ CONSIDER** limiting the number of selected properties to minimum.
+<a name="odata_query_too_wide"></a>
+Some project administrators havily customize their processes by adding custom fields. This can lead to performance issues when fetching all the available columns on very wide entities (e.g. `WorkItems`). Please notice that Analytics Service is built on top of a *Columnstore Index* technology which means that data is both storage and query processing is column-based. Therefore, the more properties are refernced in the query, the more expensive it is going to be. You should always aim to limit the set of properties to what you really care about in your reporting scenario.
 
 
 ### **✔️ DO** define a filter on `RevisedDateSK` when you query for historical work items data (`WorkItemRevisions` or `WorkItemSnapshot` entity sets).
@@ -326,7 +331,7 @@ RevisedDateSK eq null or RevisedDateSK gt {startDateSK}
 ```
 
 For example, the query below returns the number of work items for each day since the beginning of 2017. Please notice that apart from the obvious filter on `DateSK` column there is second filter on `RevisedDateSK`. Although it may seem redundant, it helps query engine filter out revisions taht are not in scope and sigificantly improves performance of the query.
-```odata
+```OData
 https://tseadm.analytics.visualstudio.com/_odata/v1.0/WorkItemSnapshot?
   $apply=
     filter(DateSK gt 20170101)/
@@ -363,12 +368,12 @@ By default all the snapshot tables are modelled as *daily snapshot fact* tables.
 ```
 
 Since `Microsoft.VisualStudio.Services.Analytics.Model.Period` is defined as and enum with flags, you should use [`has`](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc444868681) operator and specify full type for the period literals.
-```odata
+```OData
 IsLastDayOfPeriod has Microsoft.VisualStudio.Services.Analytics.Model.Period'Month'
 ```
 
 For example, the query below returns the number of work items as it was on the last day of each month.
-```odata
+```OData
 https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItemSnapshot?
   $apply=
     filter(IsLastDayOfPeriod has Microsoft.VisualStudio.Services.Analytics.Model.Period'Month')/
@@ -383,7 +388,7 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItemSnapshot?
 There is property `TagNames` which one could use with `contains` function to check if a work it was marked with a specific tag. This approach, however, might result in a slow queries especially when checking for multiple tags at the same time. For best performance and accurate results you should use `Tags` navigation property.
 
 For example, the query below gets all the work items which were tagged with a `{tag}`.
-```odata
+```OData
 https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
   $filter=Tags/any(t:t/TagName eq '{tag}')
   &$select=WorkItemId, Title, State
@@ -391,14 +396,14 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
 
 This approach also works great when you need to filter on multiple tags. For example, the query below gets all the work items which were tagged with `{tag1}` **or** `{tag2}`
 
-```odata
+```OData
 https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
   $filter=Tags/any(t:t/TagName eq {tag1} or t/TagName eq {tag2})
   &$select=WorkItemId, Title, State
 ```
 
 You can also combine these filters with an "and" operator. For example, the query below gets all the work items which were tagged with both `{tag1}` **and** `{tag2}`
-```odata
+```OData
 https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
   $filter=Tags/any(t:t/TagName eq {tag1}) and Tags/any(t:t/TagName eq {tag2})
   &$select=WorkItemId, Title, State
@@ -409,17 +414,21 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
 Navigation property `Tags`, described in the previous section, is great for filtering. However, it might be challenging to work with it as the tags are returned in a nested collection. Data model has also `TagNames` primitive property (`Edm.String`), which was added to simplify tags consumption scenarios. It is a single text value which contains a list of all the tags combined with "; " separator. It is perfect when all you care about is displaying tags together. Of course you can combine it with the tags filters described previously.
 
 For example, the query below gets all the work items which were tagged with a `{tag}`. The information it gets is identifer, title, state and a text representation of combined tags.
-```odata
+```OData
 https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
   $filter=Tags/any(t:t/TagName eq '{tag}')
   &$select=WorkItemId, Title, State, TagNames
 ```
 
+> [!IMPORTANT]
+> Property `TagNames` has a length limit of 1024 characters. It contains contains a set of tags that fit within that limit. If a work item has many tags or the tags are very long, then `TagNames` will not contain the full set and `Tag` navigation property should be used instead.
+
+
 ### **❌ DO NOT** use `tolower` and `toupper` functions to perform case-insensitive comparison.
 Working with other systems you might expect you need to use `tolower` or `toupper` functions for the case-insensitive comparison. With Analytics Service all the string comparisons are case-insensitive by default, thus you do not need to apply any functions to explicitly handle it.
 
 For example, the following query gets all the work items tagged with "QUALITY", "quality" or any other case combination of this word.
-```odata
+```OData
 https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
   $filter=Tags/any(t:t/TagName eq 'quality')
   &$select=WorkItemId, Title, State, TagNames
@@ -443,6 +452,9 @@ The link to the next page is included in the `@odata.nextLink` property.
   "@odata.nextLink":"https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?$skiptoken=12345"}
 ```
 
+> [!NOTE]
+> Most of existing OData clients can handle server-driven paging automatically. For example this strategy is already used by the following tools: Power BI, SQL Server Integration Services and Azure Data Factory.
+
 
 ### **❌ DO NOT** use `$top` and `$skip` query options to implement client-driven paging.
 Working with other REST API's you might want to implement client-driven paging with `$top` and `$skip` query options. Please do not do it. There are several problems with this approach and performance is one of them. Instead please adopt the server-driven paging strategy explained in the previous section.
@@ -452,16 +464,11 @@ Working with other REST API's you might want to implement client-driven paging w
 This is probably the most intuitive guideline. You should always aim to fetch only the data you really care about. This can be achieved by making most of the powerful filtering capabilities available in OData query language.
 
 
-### **✔️ CONSIDER** limiting the number of selected properties to minimum.
-<a name="odata_query_too_wide"></a>
-Some project administrators havily customize their processes by adding custom fields. This can lead to performance issues when fetching all the available columns on very wide entities (e.g. `WorkItems`). Please notice that Analytics Service is built on top of a *Columnstore Index* technology which means that data is both storage and query processing is column-based. Therefore, the more properties are refernced in the query, the more expensive it is going to be. You should always aim to limit the set of properties to what you really care about in your reporting scenario.
-
-
 ### **✔️ CONSIDER** filtering on date surrogate key properties (`DateSK` suffix).
 There are many ways you can define a date filter. You can filter on the date property directly (e.g. `CreatedDate`), its navigation counterpart (e.g. `CreatedOnDate`) or its surrogate key representation (e.g. `CreatedDate`). The last option yields the best performance and should always be preffered if the reporting requirements allow for it.
 
 For example, the query below gets all the work items created since the beginning of 2017.
-```odata
+```OData
 https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
   $filter=CreatedDateSK ge 20170101
 ```
@@ -471,7 +478,7 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
 If you want to filter the data on the value of related object (e.g. filtering work item on project name) you always have two choices. You can either use the navigation property (e.g. `Project/ProjectName`) or capture the *surrogate key* up-front and use it directly in the query (e.g. `ProjectSK`). If you are building a widget you should always prefer the latter option. When the key is passed as part of the query the number of entity sets that have to be touched goes down and the performance improves.
 
 For example, the query below filters `WorkItems` using `ProjectSK` property rather than `Project/ProjectName` navigation property.
-```odata
+```OData
 https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
   $filter=ProjectSK eq {projectSK}
 ```
@@ -482,19 +489,22 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
 Work items are the most expensive entities in the whole model. They have several navigation properties that can be used to access related work items: `Parent`, `Children`, `Revisions`. Every time you use them in your queries you should expect performance decline. Therefore, you should always question if they are necessary and potentially update your design. For example, instead of expanding `Parent` you can fetch more work items and use `ParentWorkItemId` property to recostruct the full hiearchy client-side. Such optimization has to be done on the case-by-case basis.
 
 
-### **✔️ CONSIDER** passing `vsts.analytics.maxsize` preference in the header.
-When you execute a query you don't know how many records there are to retrieve. You have to either send another query with aggregations or follow all the next links and fetch the entire dataset. Analytics Service respects `vsts.analytics.maxsize` preference, which lets you fail fast should the dataset be bigger than what your client can accept. This option is particularly helpful in the data export scenarios. In order to use it you have to add `Prefer` header to your HTTP request and set `vsts.analytics.maxsize` to a non-negative value which represents the max number of records you can accept. If you set it to zero, then a default value of 200k will be used.
+### **✔️ CONSIDER** passing `VSTS.Analytics.MaxSize` preference in the header.
+When you execute a query you don't know how many records there are to retrieve. You have to either send another query with aggregations or follow all the next links and fetch the entire dataset. Analytics Service respects `VSTS.Analytics.MaxSize` preference, which lets you fail fast should the dataset be bigger than what your client can accept. This option is particularly helpful in the data export scenarios. In order to use it you have to add `Prefer` header to your HTTP request and set `VSTS.Analytics.MaxSize` to a non-negative value which represents the max number of records you can accept. If you set it to zero, then a default value of 300k will be used.
 
 For example, the query below returns work items provided that the dataset is smaller or equal to 1000 records.
 ```http
 GET https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems HTTP/1.1
-User-Agent: Microsoft.Data.Mashup
-Prefer: vsts.analytics.maxsize=1000
+User-Agent: {application}
+Prefer: VSTS.Analytics.MaxSize=1000
 OData-MaxVersion: 4.0
 Accept: application/json;odata.metadata=minimal
 Host: {account}.analytics.visualstudio.com
 ```
 
+If the dataset exceeds the limit of 1000 records the query will immediatelly fail with the following error.
+
+> *Query result contains 1,296 rows and it exceeds maximum allowed size of 1000. Please reduce the number of records by applying additional filters*
 
 ## Query style guidelines
 
@@ -502,7 +512,7 @@ Host: {account}.analytics.visualstudio.com
 Some entities expose `Count` property. They make some reporting scenarios easier when the data gets exported to a different storage. However, you should not use these columns in aggregations in OData queries. Please use `$count` virtual property instead.
 
 For example, the query below gets the total number of work items.
-```odata
+```OData
 https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
   $apply=aggregate($count as Count)
 ```
@@ -512,7 +522,7 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
 Although OData standard allows you to use `$count` virtual property for entity sets (e.g. `_odata/v1.0/WorkItems/$count`), not all clients can interpret the response correctly. Therefore, it is recommended to use aggregations instead.
 
 For example, the query below gets the total number of work items.
-```odata
+```OData
 https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
   $apply=aggregate($count as Count)
 ```
@@ -522,7 +532,7 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
 Parameter aliases provide an elegant solution to extract volatile parts such as parameter values from the main query text. They can be used in of expressions that evaluate to a primitive value, a complex value, or a collection of primitive or complex values as explained in the specification - [OData Version 4.0. Part 2: URL Conventions - 5.1.1.13 Parameter Aliases](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc444868740). Parameters are particularly useful when the query text is used as a template that can be instantiated with user supplied values.
 
 For example, the following query uses `@createdDateSK` parameter to separate the value from the filter expression.
-```odata
+```OData
 https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
   $filter=CreatedDateSK ge @createdDateSK
   &$select=WorkItemId, Title, State
@@ -534,7 +544,7 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
 If you want to add a filter to your query you have two options. You can either do it with `$filter` clause or `$apply=filter()` combination. Each one of these options works great on its own, but combining them together might lead to some unexpected results. Despite the expectation one might have, OData clearly defines an order of the evaluation and `$apply` clause has priority over `$filter`. For this reason, you should choose one or another but avoid these two filter option in a single query. This is particularly important if the queries are generated automatically.
 
 For example, the query below first filters work items by `StoryPoint gt 5`, aggregates result by are path and finally filters the result by `StoryPoints gt 2`. Withi this evaluation order the query will always return an empty set.
-```odata
+```OData
 https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
   $filter=StoryPoints gt 2
   $apply=
