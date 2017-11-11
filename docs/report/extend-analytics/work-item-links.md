@@ -6,7 +6,7 @@ ms.technology: vs-devops-reporting
 ms.assetid: BF30FE4E-0370-4C9B-A660-51207D816F8B
 ms.manager: douge
 ms.author: kaelli
-ms.date: 11/15/2017
+ms.date: 11/13/2017
 ---
 
 # Query for linked work items 

@@ -6,7 +6,7 @@ ms.technology: vs-devops-reporting
 ms.assetid: 48FFCA0B-D30B-4C59-B057-0B130577912F
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/11/2016
+ms.date: 11/13/2017
 ---
 
 #Using OData Aggregations with Power BI desktop  

@@ -6,7 +6,7 @@ ms.technology: vs-devops-reporting
 ms.assetid: FEF88D72-32D7-4DE8-B11E-BCB1A491C3FC
 ms.manager: douge
 ms.author: kaelli
-ms.date: 11/15/2017
+ms.date: 11/13/2017
 ---
 
 # Query trend data

@@ -26,8 +26,6 @@
   items:
   - name: Performance and latency
     href: ../analytics/performance-latency.md?toc=/vsts/report/extend-analytics/toc.json&bc=/vsts/report/extend-analytic/breadcrumb/toc.json
-  - name: Data model
-    href: data-model-analytics-service.md
   - name: Query guidelines
     href: odata-query-guidelines.md  
 - name: How-to Guides
@@ -38,6 +36,8 @@
     href: ../analytics/analytics-security.md?toc=/vsts/report/extend-analytics/toc.json&bc=/vsts/report/extend-analytic/breadcrumb/toc.json
 - name: Reference
   items:
+  - name: Data model
+    href: data-model-analytics-service.md
   - name: "Supported functions & clauses"
     href: odata-supported-features.md 
   - name: API versioning

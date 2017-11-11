@@ -6,7 +6,7 @@ ms.technology: vs-devops-reporting
 ms.assetid: C03A04EC-F011-4043-A38E-5C5394F777CE 
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/04/2017
+ms.date: 11/13/2017
 ---
 
 # Publish a Power BI Desktop file to PowerBI.com 

@@ -8,7 +8,7 @@ ms.assetid: 032FB76F-DC43-4863-AFC6-F8D67963B177
 ms.reviewer: davigust
 ms.manager: douge
 ms.author: kaelli
-ms.date: 11/15/2017
+ms.date: 11/13/2017
 ---
 
 # Data model for the Analytics Service  

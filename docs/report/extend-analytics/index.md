@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
 ms.manager: aacathca
 ms.author: pantal
-ms.date: 11/15/2017
+ms.date: 11/13/2017
 ---
 
 #  Extend Analytics with OData (Preview) 
@@ -37,7 +37,7 @@ Using OData, you can directly query the Analytics Service from a supported brows
 
  
 ## Concepts
-- [Data model](data-model-analytics-service.md)
+- [Performance and latency](../analytics/performance-latency.md?toc=/vsts/report/extend-analytics/toc.json&bc=/vsts/report/extend-analytic/breadcrumb/toc.json)
 - [Query guidelines](odata-query-guidelines.md) 
 
 
@@ -58,9 +58,11 @@ Build a widget that uses the Analytics Service
 -->
 
 ## Reference 
-- [API versioning](odata-api-version.md) 
+- [Data model](data-model-analytics-service.md)
 - [Supported functions & clauses](odata-supported-features.md) 
-   
+- [API versioning](odata-api-version.md)
+- 
+-   
 ## Resources
 - [Analytics (VSTS)](../analytics/index.md)
 - [OData Extension for Data Aggregation Version 4.0](http://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html)

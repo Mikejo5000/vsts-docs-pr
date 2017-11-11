@@ -7,7 +7,7 @@ ms.assetid: 8D81FEFD-F432-4E10-A415-9167B5FE9A57
 ms.reviewer: kokosins
 ms.manager: douge
 ms.author: kaelli
-ms.date: 11/15/2017
+ms.date: 11/13/2017
 ---
 
 
@@ -93,21 +93,22 @@ However, you can't enter the following:
 
 ## Not supported features
 
-- ```$search```  
-- ```$compute```  
-- ```$rollup```  
+- ```bottomcount```  
+- ```bottomsum```  
+- ```bottompercent``` 
 - ```$crossjoin```  
 - ```concat```  
 - ```compute```  
+- ```$compute```   
+- ```countdistinct```  
+- ```from```
 - ```isdefined```  
+- ```$rollup```  
+- ```$search```  
 - ```topcount```  
 - ```topsum```  
 - ```toppercent```  
-- ```bottomcount```  
-- ```bottomsum```  
-- ```bottompercent```  
-- ```countdistinct```  
-- ```from``` 
+ 
 
 ## Related notes  
 

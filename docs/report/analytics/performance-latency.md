@@ -8,7 +8,7 @@ ms.assetid:
 ms.reviewer: jozimm
 ms.manager: douge
 ms.author: kaelli
-ms.date: 11/15/2017
+ms.date: 11/13/2017
 ---
 
 # Performance and latency of the Analytics Service for VSTS

@@ -7,7 +7,7 @@ ms.technology: vs-devops-reporting
 ms.assetid: 1320852A-5C62-4954-9E9D-508D670777A4
 ms.manager: douge
 ms.author: kaelli
-ms.date: 11/15/2017
+ms.date: 11/13/2017
 ---
 
 # Query work tracking data using Analytics  

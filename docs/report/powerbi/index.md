@@ -1,18 +1,24 @@
 ---
 title: Power BI (VSTS)
-description: Index to topics for generating PowerBI charts, reports, and dashboards for VSTS 
+description: Index to topics for generating PowerBI charts, reports, and dashboards based on the Analyltics Service for VSTS 
 ms.assetid:  
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
 ms.manager: douge
 ms.author: kaelli
-ms.date: 10/30/2017
+ms.date: 11/15/2017
 ---
 
 # Power BI (VSTS)
-[!INCLUDE [temp](../_shared/content-pack-deprecation.md)]
 
 <b>VSTS</b> 
+
+By connecting to Power BI, you can analyze the progress and quality of your project from data available from the Analytics Service for Visual Studio Team Services (VSTS).
+
+
+[!INCLUDE [temp](../_shared/content-pack-deprecation.md)]
+
+
 ## How-to Guides
 - [Connect using the Data Connector](data-connector-connect.md)     
 - [Client authentication options](../analytics/client-authentication-options.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json)
@@ -27,7 +33,6 @@ Future:
 -->
    
 
- 
 ## Reference
 - [Data Connector available functions](data-connector-functions.md)    
 
