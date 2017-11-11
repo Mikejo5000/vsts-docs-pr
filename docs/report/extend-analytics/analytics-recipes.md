@@ -23,25 +23,32 @@ For prerequistes and other information for getting started, see [Query your work
 
 **Retrieve the history of a work item**
 
-```
-https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItemRevisions?$filter=WorkItemId eq {Id}
+```OData
+https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItemRevisions?
+  $filter=WorkItemId eq {Id}
+  &$select=WorkItemId, Title, State
 ```
 
 **Retrieve all work items in a given iteration**
 
-```
-https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$filter=Iteration/IterationPath eq '{iteration path}'
+```OData
+https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?
+  $filter=Iteration/IterationPath eq '{iteration path}'
+  &$select=WorkItemId, Title, State
 ```
 
 **Retrieve all work items in a given area**
 
-```
-https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$filter=Area/AreaPath eq '{area path}'
+```OData
+https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?
+  $filter=Area/AreaPath eq '{area path}'
+  &$select=WorkItemId, Title, State
 ```
 
 **Get the count of work items in each project**
-```
-https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$apply=groupby((Project/ProjectName), aggregate($count as Count))
+```OData
+https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?
+  $apply=groupby((Project/ProjectName), aggregate($count as Count))
 ```
 
 This query will fail when the user does not have access to all the projects. Read more about [account scoped queries](account-scoped-queries.md).
@@ -51,8 +58,12 @@ This query will fail when the user does not have access to all the projects. Rea
 Here your query is constrained by data 
 contained within the VSTS data. 
 
-```
-https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$filter=Iteration/IterationPath eq '{iteration path}' and ChangedDate ge Iteration/StartDate and ChangedDate le Iteration/EndDate
+```OData
+https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?
+  $filter=Iteration/IterationPath eq '{iteration path}' 
+    and ChangedDate ge Iteration/StartDate 
+    and ChangedDate le Iteration/EndDate
+  &$select=WorkItemId, Title, State
 ```
 
 **Retrieve all work items with a specific tag**
@@ -61,15 +72,20 @@ Note that the **any** operator is used here because there are a collection of ta
 From a usage perspective, the format is: **{Navigation Property}/any(d:d/{Field Name} {operator} {expression})**. Any item not surrounded by curly brackets ({}) is a literal. There are some variations on this (for example, you don't have to use "d" as used in the expression above)
 but following this format keeps it simple.
 
-```
-https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$filter=Tags/any(d:d/TagName eq '{tag name}')
+```OData
+https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?
+  $filter=Tags/any(d:d/TagName eq '{tag name}')
+  &$select=WorkItemId, Title, State
 ```
 
 **Retrieve all work items for a specific team**
 
+```OData
+https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?
+  $filter=Teams/any(d:d/TeamName eq '{team name}')
+  &$select=WorkItemId, Title, State
 ```
-https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$filter=Teams/any(d:d/TeamName eq '{team name}')&$select=WorkItemId,Title,State
-```
+
 ##Related notes 
 
 - [WIT analytics](wit-analytics.md)  
