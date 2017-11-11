@@ -13,3 +13,11 @@ ms.date: 11/11/2017
 
 **VSTS**
 
+## How do YAML builds compare to web-interface builds?
+
+|Capability|YAML|Web interface|
+|-|-|-|
+|Repository|
+|Git and GitHub|Yes|Yes|
+|TFVC|No|Yes|
+|Bitbucket, external Git, Subversion|No|Yes|
