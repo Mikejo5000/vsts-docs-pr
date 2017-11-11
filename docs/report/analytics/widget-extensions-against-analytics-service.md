@@ -343,5 +343,4 @@ You should end up with a widget that looks like this:
 
 ![widget-extension-2.png](_img/widget-extension-2.png)
 
-Continue to the next topic, [Add configuration to the analytics chart](widget-extension-against-analytics-service-configuration.md) to learn how to give users the ability to customize
-your extension.
+Continue to the next topic, [Add configuration to the analytics chart](widget-extension-against-analytics-service-configuration.md) to learn how to give users the ability to customize your extension.
