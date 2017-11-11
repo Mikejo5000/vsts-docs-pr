@@ -30,6 +30,6 @@ Some of the entity sets available in Analytics are designed for aggregations.  T
 ## Latency
 When you use Analytics, you query a curated copy of the data stored in Visual Studio Team Services (VSTS). The data copy helps optimize read and aggregation performance, and greatly reduces the impact reporting scenarios have on VSTS.
 
-Because the data is copied, the Analytics service is **not a real-time time store**.  Copying the data introduces a 5 to 30 second delay before the data associated with any one change shows up in Analytics. 
+Because the data is copied, the Analytics Service is **not a real-time time store**.  Copying the data introduces a 5 to 30 second delay before the data associated with any one change shows up in Analytics. 
 
 

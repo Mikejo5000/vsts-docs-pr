@@ -14,7 +14,7 @@ ms.date: 11/15/2017
 
 **VSTS**  
 
-You can use the Analytics service to answer quantitative questions regarding past or present state and velocity of your projects hosted in Visual Studio Team Services (VSTS). The Analytics service provides a concise OData model of your work tracking data.  
+You can use the Analytics Service to answer quantitative questions regarding past or present state and velocity of your projects hosted in Visual Studio Team Services (VSTS). The Analytics Service provides a concise OData model of your work tracking data.  
 
 To get started, read [What is Analytics?](what-is-analytics.md) 
 

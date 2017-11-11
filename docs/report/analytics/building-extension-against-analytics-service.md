@@ -114,7 +114,7 @@ Once the token is retrieved, you need to add it to the request for data from the
     // Get the token
     var authToken = VSS_Auth_Service.authTokenManager.getAuthorizationHeader(token);
 
-    //Get the account name so that we're calling a valid analytics service endpoint
+    //Get the account name so that we're calling a valid Analytics Service endpoint
     var accountName = VSS.getWebContext().account.name;
 
     $.ajax({
@@ -268,7 +268,7 @@ do exist but they have no content. They must exist otherwise the extension canno
 There are a few key things to note here:
 * This extension adds a work-hub-group (extension points are described in [Extension points](../../extend/reference/targets/overview.md))
 * The name of the hub is "Analytics Sample" and it will load the page "Analytics.html"
-* The scope is **vso.analytics** which is the OAuth scope required to access the analytics service
+* The scope is **vso.analytics** which is the OAuth scope required to access the Analytics Service
 
 At this point the extension can be compiled, deployed, installed and executed following the steps described 
 in the [Create your first extension for VSTS](../../extend/get-started/node.md) documentation, starting from the Create your publisher section.
@@ -278,4 +278,4 @@ Once the solution is deployed you should see something similar to the following:
 ## Build a widget extension  
 
 Widgets allow you to place items on a [dashboard](../dashboards.md) and to compose those items as required. Detailed information
-on creating widget extensions can be found in  [Building a dashboard widget that calls the Analytics Service](../../extend/develop/add-dashboard-widget.md). This topic covers how to call out to the analytics service specifically.
+on creating widget extensions can be found in  [Building a dashboard widget that calls the Analytics Service](../../extend/develop/add-dashboard-widget.md). This topic covers how to call out to the Analytics Service specifically.
