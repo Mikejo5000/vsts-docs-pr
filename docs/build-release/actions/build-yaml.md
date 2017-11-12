@@ -41,8 +41,10 @@ In a YAML definition, your CI build process is versioned with your code. This me
 
 ## Automatic creation of YAML builds
 
-[//]: # (TODO: on 11/12/17 test in OurAccount I found that it does not happen on import. correct? will this change? any other cases where it's created automatically?)
+[//]: # (TODO: on 11/12/17 test in OurAccount I found that it does not happen on import. correct? will this change? any other cases where it is or is not created automatically?)
 
-[//]: # (TODO: on 11/12/17 test in OurAccount I tried to delete definition and YAML file and and start over using same repo; seems that automatic no longer works in this case; is this by design?)
+[//]: # (TODO: if you've already got a build definition in place that's pointing to the file, then this doesn't happen)
+
+[//]: # (TODO: change to "## Create a YAML build definition" with sequential steps)
 
 To make it more convenient to create YAML build definitions, VSTS automatically creates a definition when you add a file named .vsts-ci.yml to the root of your resository. It creates the build definition in a folder that has the same name as your repository.
