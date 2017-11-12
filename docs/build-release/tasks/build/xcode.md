@@ -5,8 +5,8 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: 130B3990-0B64-41AE-9330-75AD7228B5C4
 ms.manager: douge
-ms.author: alewis
-ms.date: 08/10/2016
+ms.author: dastahel
+ms.date: 11/13/2017
 ---
 
 # Build: Xcode
