@@ -388,7 +388,6 @@ If you're planning on using the [preview](https://aka.ms/vstsimportpreview) feat
 |    Release Management - Canada Central          |    52.237.28.171    |
 |    Release Management - East Asia (Hong Kong)   |    13.107.6.175     |
 
-
 **Pacakage Management IPs**
 
 You will need to add execptions for all three services that make up Package Management.

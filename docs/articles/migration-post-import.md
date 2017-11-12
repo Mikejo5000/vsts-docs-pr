@@ -42,6 +42,7 @@ If you plan on using your existing on-premises private build agents, there is on
 ## Package Management (Preview)
 If you elected to include [preview](https://aka.ms/vstsimportpreview) features with your import and you had [Package Management](https://www.visualstudio.com/team-services/package-management/) data in your TFS collection, then you will need to install the Package Management [extension](https://marketplace.visualstudio.com/items?itemName=ms.feed#) on your account post import. 
 
+
 ## Release Management (Preview)
 Release Management is currently a [preview](https://aka.ms/vstsimportpreview) feature that can be included with an import. If you elected to include Release Management with your import then your release definitions and history data will be included with your import. However, like builds, [agents](../build-release/concepts/agents/agents.md) and pools need to be reconfigured against the new VSTS account. 
 
