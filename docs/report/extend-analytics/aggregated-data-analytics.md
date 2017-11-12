@@ -37,7 +37,7 @@ Use the following basic root URL as a prefix for all the examples provided in th
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{account}.analytics.visualstudio.com/_odata/v1.0
+https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0
 ``` 
 
 Use the above URL as a prefix for all the examples.   
@@ -100,17 +100,17 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?$apply=filter
 
 Now that you've seen how to do simple counts, let's review how to trigger aggregations using the `$apply` token where the basic format at the end of the URL is as follows:
 
-`/{entityName}?$apply=aggregate({columnToAggregate} with {aggregationType} as {newColumnName})`
+`/{entitySetName}?$apply=aggregate({columnToAggregate} with {aggregationType} as {newColumnName})`
 
 Where: 
-- {entityName} is the entity that needs to be queried for
+- {entitySetName} is the entity that needs to be queried for
 - {columnToAggregate} is the aggregation column
 - {aggregationType} will specify the type of aggregation used
 - {newColumnName} specifies the name of the column having values after aggregation.
 
 ## Aggregated data using the apply extension 
 
-Using the `apply` extension, you can obtain counts, sums, and additional information when you query your VSTS data. 
+Using the `$apply` extension, you can obtain counts, sums, and additional information when you query your VSTS data. 
 
 **Return the count of work items:**
 

@@ -35,7 +35,7 @@ Using the OData Aggregation Extensions, you can return aggregated data from VSTS
  
 There are some basic requirements you need to effectively query the WorkItemSnapshot table:  
 * The data needs to be filtered by date.
-* The aggregation should group by, at the very least, date.
+* The aggregation should group by, at the very least, date. If not, response will have warning.
 
 With this in mind, the query to create a bug trend report looks like the following: 
 
@@ -116,9 +116,9 @@ This returns a result similar to the following:
 ```
 
 In this query, there are two key differences. We added a filter clause to filter the data to a specific iteration and the dates are now being compared to the iteration start and end dates versus a hard coded date.  
-
-> [!NOTE]  
-> Using Power Query you can craft the query such that it provides a rolling chart using a form such as, todays date minus 30 days for a rolling 30 day chart.  
+ 
+ [!Note]
+ If aggregation is not used in your query on snapshot tables, you will see the warning "The specified query does not include a $select or $apply clause which is recommended for all queries." in the response. 
 
 ## Related notes
 - [Construct aggregate data queries](aggregated-data-analytics.md) to count and analyse groups of related data.
