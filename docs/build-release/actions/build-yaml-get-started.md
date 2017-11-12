@@ -57,7 +57,7 @@ Next, choose which kind of Git service you're using:
 
 1. Change the `dotnet build` command:
 
-```YAML
+ ```YAML
 dotnet build - v diag
 ```
 
@@ -67,7 +67,7 @@ dotnet build - v diag
 
 1. Observe that there's a new build named _{name-of-your-repo} YAML CI. A build is queued; it's status could be either not started or running. Click the number of the build: _{year}{month}{day}.1_.
 
-1. Click **Job**. When a hosted agent is assigned to your job, then you'll see information about the build in the console.
+1. Click **Job**. After a hosted agent is assigned to your job and the agent is initialized, then you'll see information about the build in the console.
 
 ## Next steps
 
