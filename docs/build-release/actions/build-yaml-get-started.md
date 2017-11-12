@@ -47,14 +47,37 @@ Next, choose which kind of Git service you're using:
 
 [!INCLUDE [include](../_shared/ci-quickstart-intro.md)]
 
+[//]: # (TODO: screenshot to set context)
+
+[//]: # (TODO: are we going to make the repo use the well-known name or not? if not, then add steps to set it up? if so, then why isn't it working yet? what is the well-known name supposed to be?)
+
+1. Navigate to the **Code** hub, choose the **Files** tab, and then choose the repository you created in the above steps.
+
+1. Choose the .vsts-ci.yml file, and then click **Edit**.
+
+1. Change the `dotnet build` command:
+
+```YAML
+dotnet build - v diag
+```
+
+1. Commit your change to the master branch.
+
+1. Navigate to the **Build and Release** hub.
+
+1. Observe that there's a new build named _{name-of-your-repo} YAML CI. A build is queued; it's status could be either not started or running. Click the number of the build: _{year}{month}{day}.1_.
+
+1. Click **Job**. When a hosted agent is assigned to your job, then you'll see information about the build in the console.
+
 ## Next steps
 
 [//]: # (TODO: sort out apps/_shared/ci-web-app-next-steps* and implement here)
 
 You've just put your own CI build process in place to automatically build and validate whatever code is checked in by your team.
 
-> [!div class="nextstepaction"]
-> [Learn more about YAML builds](build-yaml.md)
+[//]: # (TODO: if we don't publish how-to below, I guess we should link to GitHub docs; but that might feel a bit of a stark dropoff, so I guess we have to publish the How To with at least minimal context, which can then link to GitHub docs)
+[//]: # (TODO: > [!div class="nextstepaction"])
+[//]: # (TODO: > [Learn more about YAML builds](build-yaml.md)
 
 ### Deploy your app
 
