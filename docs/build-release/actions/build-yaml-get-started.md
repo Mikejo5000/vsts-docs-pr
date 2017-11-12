@@ -13,7 +13,7 @@ ms.date: 11/11/2017
 
 **VSTS**
 
-When it comes to your CI builds on VSTS, you've got a choice: define your process in a web-based interface, or, you can configure your CI process as code in a YAML build. Here we'll give you a quick walkthrough so you can give it a try and see how it works.
+When you define a CI build on VSTS, you've got a fundamental choice: use a web-based interface or configure your CI process as code in a YAML build. Here we'll take you on a quick walkthrough so you can try a YAML build and see how it works.
 
 ## Prerequisites
 
@@ -47,8 +47,28 @@ Next, choose which kind of Git service you're using:
 
 [!INCLUDE [include](../_shared/ci-quickstart-intro.md)]
 
-[//]: # (TODO: Restore use of includes when we get support for using them in a list.)
-
 ## Next steps
 
-[!INCLUDE [include](../apps/_shared/ci-web-app-next-steps-with-containers.md)]
+[//]: # (TODO: sort out apps/_shared/ci-web-app-next-steps* and implement here)
+
+You've just put your own CI build process in place to automatically build and validate whatever code is checked in by your team.
+
+> [!div class="nextstepaction"]
+> [Learn more about YAML builds](build-yaml.md)
+
+### Deploy your app
+
+| If you want to deploy to a... | Then publish your artifact as a...|
+|-|-|
+| Azure web app or to an IIS server | .ZIP file. In this case you're already good to go after following the above steps. Next step is one of the following: <ul><li>[Deploy to Azure Web App](../cd/deploy-webdeploy-webapps.md)</li><li>[Deploy to a Windows VM](../cd/deploy-webdeploy-iis-deploygroups.md)</li></ul> | 
+| Linux VM | Simple folder. To do this, remove the **Archive files** task from your build definition. |
+| Container service (such as Azure web apps for containers, or a Kubernetes cluster) | Container. Next step: [Build and push a container for your app](../containers/build.md).|
+
+
+### Enhance your Git workflows
+
+Now that you have a CI build process for your master branch, you can extend the process to work with other branches in your repository, or to validate all pull requests. See:
+
+* [CI builds for Git in VSTS](../../actions/ci-build-git.md)
+
+* [CI builds for GitHub](../../actions/ci-build-github.md)
