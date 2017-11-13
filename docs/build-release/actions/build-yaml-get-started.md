@@ -49,7 +49,7 @@ Next, choose which kind of Git service you're using:
 
 [//]: # (TODO: screenshot to set context)
 
-Now you'll modify a YAML file that has a well-known name. The first time you change this file, VSTS automatically uses it to create your build defniition. For this example, to learn some of the basics, you'll change the YAML file to use tasks instead of a script. 
+To create a definition that is configured as code, you'll modify a YAML file in the repo root that has a well-known name: **.vsts-ci.yml**. The first time you change this file, VSTS automatically uses it to create your build defniition.
 
 1. Navigate to the **Code** hub, choose the **Files** tab, and then choose the repository you created in the above steps.
 
@@ -58,6 +58,7 @@ Now you'll modify a YAML file that has a well-known name. The first time you cha
 1. Replace the contents of the file with the following:
 
  ```YAML
+
 steps:
 
 - task: dotNetCoreCLI@1
@@ -98,15 +99,15 @@ steps:
 
 1. Navigate to the **Build and Release** hub.
 
-1. Observe that there's a new build named _{name-of-your-repo}_ YAML CI. A build is queued; it's status could be either not started or running. Click the number of the build: _{year}{month}{day}.1_.
+1. Observe that there's a new build named _{name-of-your-repo} YAML CI_. A build is queued; its status could be either not started or running. Click the number of the build: _{year}{month}{day}.1_.
 
 1. In the left column of the running build, click **Job**. After a hosted agent is assigned to your job and the agent is initialized, then you'll see information about the build in the console.
 
-The changes you just made affect how the build looks. Each step shows up in the build summary instead of as the output from a single script.
+For this example, to learn some of the basics, you changed the YAML file to use tasks instead of a script. The changes you just made affect how the build looks. Each step shows up in the build summary instead of as the output from a single script.
 
 [//]: # (TODO: SCREENSHOT)
 
-> In this case, these changes also change what the build does. For example, the `dotnet restore` command that is run by the script in the repo creates .DLL files, but doesn't create a .ZIP file. After you've completed the above steps, you're using the `dotNetCoreCLI` task, which in addition to creating the .DLL file, also creates a web deployment package (a .ZIP file) that is more efficient to deploy.
+These changes also modified what the build does. For example, the `dotnet restore` command that is run by the script in the repo creates .DLL files, but it doesn't create a .ZIP file. After you've completed the above steps, you're using the `dotNetCoreCLI` task, which in addition to creating the .DLL file, also creates a web deployment package (a .ZIP file) that is more efficient to deploy.
 
 ## Next steps
 
