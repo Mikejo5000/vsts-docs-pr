@@ -84,6 +84,7 @@ steps:
   inputs:
     command: publish
     arguments: --configuration release --output $(Build.ArtifactStagingDirectory)
+	zipAfterPublish: true
   displayName: dotnet publish
 
 - task: publishBuildArtifacts@1
@@ -112,10 +113,12 @@ You've just put your own CI build process in place to automatically build and va
 
 ### Deploy your app
 
+[//]: # (TODO: I expect we might want to get rid of the table unfortunately because we'll want to make the Linux VM more explicit with a code block that has the Copy button.)
+
 | If you want to deploy to a... | Then publish your artifact as a...|
 |-|-|
 | Azure web app or to an IIS server | .ZIP file. In this case you're already good to go after following the above steps. Next step is one of the following: <ul><li>[Deploy to Azure Web App](../apps/cd/deploy-webdeploy-webapps.md)</li><li>[Deploy to a Windows VM](../apps/cd/deploy-webdeploy-iis-deploygroups.md)</li></ul> | 
-| Linux VM | Simple folder. To do this, remove the **Archive files** task from your build definition. |
+| Linux VM | Simple folder. To do this, set `zipAfterPublish` to `false` |
 | Container service (such as Azure web apps for containers, or a Kubernetes cluster) | Container. Next step: [Build and push a container for your app](../apps/containers/build.md).|
 
 ### Learn more about YAML builds
