@@ -57,7 +57,7 @@ Now you'll modify a YAML file that has a well-known name. The first time you cha
 
 1. Replace the contents of the file with the following:
 
-```YAML
+ ```YAML
 steps:
 
 - task: dotNetCoreCLI@1
@@ -91,6 +91,7 @@ steps:
     PathtoPublish: $(Build.ArtifactStagingDirectory)
     ArtifactName: drop
     ArtifactType: Container
+
 ```
 
 1. Commit your change to the master branch.
