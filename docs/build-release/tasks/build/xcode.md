@@ -56,7 +56,7 @@ Specify an SDK to use when building the Xcode project or workspace. From the mac
 <tr>
 <td>Scheme</td>
 <td>
-(Optional, unless you specify a <strong>Workspace or project path</strong> above.) Enter the scheme name defined in Xcode. It must be a shared scheme, with its <strong>Shared</strong> checkbox enabled under <strong>Managed Schemes</strong> in Xcode.
+(Optional.) Enter the scheme name defined in Xcode. It must be a shared scheme, with its <strong>Shared</strong> checkbox enabled under <strong>Managed Schemes</strong> in Xcode. If you specify a <strong>Workspace or project path</strong> above without specifying a scheme, and the workspace has a single shared scheme, it will be automatically selected.
 </td>
 </tr>
 <tr>
@@ -153,6 +153,35 @@ Enter the path to the plist file that contains options to use during export.
 </tr>
 
 <tr>
+<th style="text-align: center" colspan="2">Devices &amp; simulators</th>
+</tr>
+<tr>
+<td>Destination platform</td>
+<td>
+Select the destination device's platform, `iOS and watchOS`, `tvOS` or `macOS`. Primarily used for UI testing when the generic build device isn't valid. Use `Custom` to specify a new platform not included in this list. When `Default` is selected, no simulators or devices are targeted.
+</td>
+</tr>
+<tr>
+<td>Destination type</td>
+<td>
+Choose the destination type, `Simulators` or `Devices`. Primarily used for UI testing. Devices must be connected to the Mac performing the build via a cable or network connection. See `Devices and Simulators` in Xcode.
+</td>
+</tr>
+<tr>
+<td>Simulators</td>
+<td>
+An Xcode simulator name. Primarily used for UI testing. For example, `iPhone X` (iOS and watchOS) or `Apple TV 4K` (tvOS). A target OS version is optional and can be specified with OS=versionNumber (`iPhone X,OS=11.1`). See below for a list of simulators installed on the Hosted macOS Preview agent.
+</td>
+</tr>
+<tr>
+<td>Devices</td>
+<td>
+A device name. Primarily used for UI testing. For example, `Chidi’s iPad`.
+</td>
+</tr>
+
+
+<tr>
 <th style="text-align: center" colspan="2">Advanced</th>
 </tr>
 <tr>
@@ -190,8 +219,40 @@ If xcpretty is enabled above, specify whether to publish JUnit test results to V
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
+## Xcode simulators installed on the Hosted macOS Preview agent
 
-## Example 
+### iOS simulators
+- iPad (5th generation)
+- iPad 2
+- iPad Air
+- iPad Air 2
+- iPad Pro
+- iPad Pro (9.7-inch)
+- iPad Pro (10.5-inch)
+- iPad Pro (12.9-inch)
+- iPad Pro (12.9-inch) (2nd generation)
+- iPad Retina
+- iPhone 4s
+- iPhone 5
+- iPhone 5s
+- iPhone 6
+- iPhone 6 Plus
+- iPhone 6s
+- iPhone 6s Plus
+- iPhone 7
+- iPhone 7 Plus
+- iPhone 8
+- iPhone 8 Plus
+- iPhone SE
+- iPhone X
+
+### tvOS simulators
+
+- Apple TV
+- Apple TV 4K
+- Apple TV 4K (at 1080p)
+
+## Example
 
 [Build and test Xcode projects](../../apps/mobile/xcode-ios.md)
 
