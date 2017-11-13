@@ -100,7 +100,7 @@ steps:
 - archiveFiles@1
   rootFolder: $(Build.SourcesDirectory)
   displayName: Zip it
- # default value for archiveFile is $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
+# ommitting archiveFile because has default value of $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
  
 - publishBuildArtifacts@1
   pathToPublish: $(Build.ArtifactStagingDirectory)
