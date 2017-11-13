@@ -120,13 +120,21 @@ You've just put your own CI build process in place to automatically build and va
 
 ### Learn more about YAML builds
 
-[//]: # (TODO: > [!div class="nextstepaction"])
-[//]: # (TODO: > [Learn more about YAML builds](build-yaml.md)
+> [!div class="nextstepaction"]
+> [Learn more about YAML builds](build-yaml.md)
 
 ### Enhance your Git workflows
 
-Now that you have a CI build process for your master branch, you can extend the process to work with other branches in your repository, or to validate all pull requests. See:
+Now that you have a CI build process for your master branch, you can extend the process to work with other branches in your repository, or to validate pull requests. 
 
-* [CI builds for Git in VSTS](../actions/ci-build-git.md)
+# [VSTS or TFS repo](#tab/vsts)
 
-* [CI builds for GitHub](../actions/ci-build-github.md)
+> [!div class="nextstepaction"]
+> [CI builds for Git in VSTS](../actions/ci-build-git.md)
+
+# [GitHub repo](#tab/github)
+
+> [!div class="nextstepaction"]
+> [CI builds for GitHub](../actions/ci-build-github.md)
+
+---
