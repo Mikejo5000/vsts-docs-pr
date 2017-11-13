@@ -33,12 +33,12 @@ collection upgrade log file.
 If you kept the server configuration wizard open during collection upgrade, you can 
 open up the collection logs right from there.
 
-[screenshot needed]
+![Collection log files within wizard](./_img/view-logs-wizard.png)
 
 If you closed the server configuration wizard while your collections were
 upgrading, you'll need to open up the logs from the TFS Administration Console.
 
-[screenshot needed]
+![Collection log files within console](./_img/view-logs-console.png)
 
 If you find an existing problem report for your issue on Developer Community, add a vote to 
 it. If the problem report does not have a solution that works for you, add a new comment
