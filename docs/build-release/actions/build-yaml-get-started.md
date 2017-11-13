@@ -91,7 +91,6 @@ steps:
     ArtifactType: Container
 ```
 </li>
-
 1. Test
 
 1. Replace the contents of the file with the following:
