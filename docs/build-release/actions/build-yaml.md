@@ -108,7 +108,7 @@ steps:
   artifactType: Container
 ```
 
-Notice how you don't have to supply the default arguments.
+Notice how you don't have to supply the default arguments such as `archiveFile`.
 
 ## Look up tasks
 
