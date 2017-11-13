@@ -58,4 +58,4 @@ for the collection(s) that failed. This can be done by selecting the collection 
 TFS Administration Console, selecting the Status tab, selecting the failed job, and
 clicking the Re-Run Job link.
 
-[screenshot needed]
+![Rerun upgrade job within console](./_img/rerun-job-console.png)
