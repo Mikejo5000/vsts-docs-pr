@@ -56,7 +56,7 @@ Specify an SDK to use when building the Xcode project or workspace. From the mac
 <tr>
 <td>Scheme</td>
 <td>
-(Optional.) Enter the scheme name defined in Xcode. It must be a shared scheme, with its <strong>Shared</strong> checkbox enabled under <strong>Managed Schemes</strong> in Xcode. If you specify a <strong>Workspace or project path</strong> above without specifying a scheme, and the workspace has a single shared scheme, it will be automatically selected.
+(Optional) Enter a scheme name defined in Xcode. It must be a shared scheme, with its <strong>Shared</strong> checkbox enabled under <strong>Managed Schemes</strong> in Xcode. If you specify a <strong>Workspace or project path</strong> above without specifying a scheme, and the workspace has a single shared scheme, it will be automatically used.
 </td>
 </tr>
 <tr>
@@ -158,25 +158,25 @@ Enter the path to the plist file that contains options to use during export.
 <tr>
 <td>Destination platform</td>
 <td>
-Select the destination device's platform, `iOS and watchOS`, `tvOS` or `macOS`. Primarily used for UI testing when the generic build device isn't valid. Use `Custom` to specify a new platform not included in this list. When `Default` is selected, no simulators or devices are targeted.
+Select the destination device's platform to be used for UI testing when the generic build device isn't valid. Choose `Custom` to specify a platform not included in this list. When `Default` is selected, no simulators nor devices will be targeted.
 </td>
 </tr>
 <tr>
 <td>Destination type</td>
 <td>
-Choose the destination type, `Simulators` or `Devices`. Primarily used for UI testing. Devices must be connected to the Mac performing the build via a cable or network connection. See `Devices and Simulators` in Xcode.
+Choose the destination type to be used for UI testing. Devices must be connected to the Mac performing the build via a cable or network connection. See <strong>Devices and Simulators</strong> in Xcode.
 </td>
 </tr>
 <tr>
 <td>Simulators</td>
 <td>
-An Xcode simulator name. Primarily used for UI testing. For example, `iPhone X` (iOS and watchOS) or `Apple TV 4K` (tvOS). A target OS version is optional and can be specified with OS=versionNumber (`iPhone X,OS=11.1`). See below for a list of simulators installed on the Hosted macOS Preview agent.
+Enter an Xcode simulator name to be used for UI testing. For example, enter `iPhone X` (iOS and watchOS) or `Apple TV 4K` (tvOS). A target OS version is optional and can be specified in the format 'OS=<i>versionNumber</i>', such as `iPhone X,OS=11.1`. A list of simulators installed on the <strong>Hosted macOS Preview</strong> agent can be [found here](https://docs.microsoft.com/en-us/mobile-center/build/software).
 </td>
 </tr>
 <tr>
 <td>Devices</td>
 <td>
-A device name. Primarily used for UI testing. For example, `Chidi’s iPad`.
+Enter the name of the device to be used for UI testing, such as `Raisa's iPad`. Only one device is currently supported.
 </td>
 </tr>
 
