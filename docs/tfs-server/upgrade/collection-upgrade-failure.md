@@ -1,8 +1,8 @@
---
-title: Collection Upgrade Failure
-description: What to do when upgrading one or more collections fails
+---
+title: Collection upgrade failures when upgrading TFS
+description: What to do when upgrading one or more Team Foundatino Server (TFS) collections fails 
 ms.prod: vs-devops-alm
-ms.technology: tfs-on-prem
+ms.technology: vs-devops-admin
 ms.assetid: 078f1738-ad00-40f6-8253-7e0cfce838c5
 toc: show
 ms.manager: douge
