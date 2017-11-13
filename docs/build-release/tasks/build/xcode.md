@@ -219,43 +219,9 @@ If xcpretty is enabled above, specify whether to publish JUnit test results to V
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
-## Xcode simulators installed on the Hosted macOS Preview agent
-
-### iOS simulators
-- iPad (5th generation)
-- iPad 2
-- iPad Air
-- iPad Air 2
-- iPad Pro
-- iPad Pro (9.7-inch)
-- iPad Pro (10.5-inch)
-- iPad Pro (12.9-inch)
-- iPad Pro (12.9-inch) (2nd generation)
-- iPad Retina
-- iPhone 4s
-- iPhone 5
-- iPhone 5s
-- iPhone 6
-- iPhone 6 Plus
-- iPhone 6s
-- iPhone 6s Plus
-- iPhone 7
-- iPhone 7 Plus
-- iPhone 8
-- iPhone 8 Plus
-- iPhone SE
-- iPhone X
-
-### tvOS simulators
-
-- Apple TV
-- Apple TV 4K
-- Apple TV 4K (at 1080p)
-
 ## Example
 
-[Build and test Xcode projects](../../apps/mobile/xcode-ios.md)
-
+[Build your Xcode app](../../apps/mobile/xcode-ios.md)
 
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->
