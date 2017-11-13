@@ -55,10 +55,8 @@ To create a definition that is configured as code, you'll modify a YAML file in 
 
 1. Choose the **.vsts-ci.yml** file, and then click **Edit**.
 
-1. Replace the contents of the file with the following:
-
- ```YAML
-
+<li><p>Replace the contents of the file with the following:</p>
+```YAML
 steps:
 
 - task: dotNetCoreCLI@1
@@ -92,8 +90,8 @@ steps:
     PathtoPublish: $(Build.ArtifactStagingDirectory)
     ArtifactName: drop
     ArtifactType: Container
-
 ```
+</li>
 
 1. Commit your change to the master branch.
 
@@ -103,11 +101,11 @@ steps:
 
 1. In the left column of the running build, click **Job**. After a hosted agent is assigned to your job and the agent is initialized, then you'll see information about the build in the console.
 
-For this example, to learn some of the basics, you changed the YAML file to use tasks instead of a script. The changes you just made affect how the build looks. Each step shows up in the build summary instead of as the output from a single script.
+For this example, to learn some of the basics, you changed the YAML file to use the  `dotNetCoreCLI` task instead of calling the `dotnet` command directly in a script. The changes you made affect how the build output is organized. Each step shows up in the build summary instead of as the output from a single script.
 
 [//]: # (TODO: SCREENSHOT)
 
-These changes also modified what the build does. For example, the `dotnet restore` command that is run by the script in the repo creates .DLL files, but it doesn't create a .ZIP file. After you've completed the above steps, you're using the `dotNetCoreCLI` task, which in addition to creating the .DLL file, also creates a web deployment package (a .ZIP file) that is more efficient to deploy.
+These changes also modified what the build does. For example, the `dotnet restore` command you replaced creates .DLL files, but it doesn't create a .ZIP file. After you've completed the above steps, you're using the `dotNetCoreCLI` task, which in addition to creating the .DLL file, also creates a web deployment package (a .ZIP file) that is more efficient to deploy.
 
 ## Next steps
 
