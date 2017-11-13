@@ -65,9 +65,9 @@ dotnet build - v diag
 
 1. Navigate to the **Build and Release** hub.
 
-1. Observe that there's a new build named _{name-of-your-repo} YAML CI. A build is queued; it's status could be either not started or running. Click the number of the build: _{year}{month}{day}.1_.
+1. Observe that there's a new build named _{name-of-your-repo}_ YAML CI. A build is queued; it's status could be either not started or running. Click the number of the build: _{year}{month}{day}.1_.
 
-1. Click **Job**. After a hosted agent is assigned to your job and the agent is initialized, then you'll see information about the build in the console.
+1. In the left column of the running build, click **Job**. After a hosted agent is assigned to your job and the agent is initialized, then you'll see information about the build in the console.
 
 ## Next steps
 
@@ -88,7 +88,9 @@ If you want to deploy to:
  - [Deploy to a Windows VM](../apps/cd/deploy-webdeploy-iis-deploygroups.md)
 
 * **Linux VM**: 
-Remove 
+
+[//]: # (TODO: finish)
+
 
 | If you want to deploy to a... | Then publish your artifact as a...|
 |-|-|
