@@ -54,7 +54,6 @@ To create a definition that is configured as code, you'll modify a YAML file in 
 1. Navigate to the **Code** hub, choose the **Files** tab, and then choose the repository you created in the above steps.
 
 1. Choose the **.vsts-ci.yml** file, and then click **Edit**.
-
 <li><p>Replace the contents of the file with the following:</p>
 ```YAML
 steps:

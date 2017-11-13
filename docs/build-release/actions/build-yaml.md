@@ -48,3 +48,10 @@ In a YAML definition, your CI build process is versioned with your code. This me
 [//]: # (TODO: change to "## Create a YAML build definition" with sequential steps)
 
 To make it more convenient to create YAML build definitions, VSTS automatically creates a definition when you add a file named .vsts-ci.yml to the root of your resository. It creates the build definition in a folder that has the same name as your repository.
+
+## Look up tasks
+
+To look up the syntax of the tasks that are built into VSTS and TFS, see https://github.com/Microsoft/vsts-tasks/tree/master/Tasks. 
+
+For example, if you want to use the [Copy Files](../tasks/utility/copy-files.md) task, go to https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/CopyFiles and then click the **task.json** file. In this file you'll find the name of task, which in this case is `CopyFiles`. You'll also find the valid `inputs`, for example the `SourceFolder` input.
+
