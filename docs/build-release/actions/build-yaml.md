@@ -13,13 +13,15 @@ ms.date: 11/11/2017
 
 **VSTS**
 
-When it comes to your CI builds on VSTS, you've got a choice: define your process in a web-based interface, or, you can configure your CI process as code in a YAML build. YAML build definitions give you the advantages of _configuration as code_. 
+When you define a CI build on VSTS, you've got a fundamental choice: use a web-based interface or configure your CI process as code in a YAML build. YAML build definitions give you the advantages of _configuration as code_. 
 
-In a YAML definition, your CI build process is versioned with your code. This means: 
+In a YAML build definition, your CI build process is versioned with your code. This means: 
 
-* If someone changes your build process and something breaks or works differently than you expect, you can much more easily identify the issue in the context of the rest of your codebase. This way you see and fix as any other kind of bug in your code because the process definition is versioned in your code.
+* If a change to the build process causes a break or results in an unexpected outcome, you can much more easily identify the issue because the change is in version control with the rest of your codebase. This way you can more clearly see the issue and fix it like any other kind of bug.
 
 * It's easier to copy and paste from one build definition into another.
+
+* People who prefer to work in code are more comfortable with this kind of build definition.
 
 > [!TIP]
 > If you're new to YAML builds, or to VSTS, we suggest you [begin with our tutorial](build-yaml-get-started.md) and then come back here.
@@ -39,15 +41,27 @@ In a YAML definition, your CI build process is versioned with your code. This me
 |Test and debug the process locally|Yes|No|
 |Inline bash scripts|Yes|No|
 
-## Automatic creation of YAML builds
-
-[//]: # (TODO: on 11/12/17 test in OurAccount I found that it does not happen on import. correct? will this change? any other cases where it is or is not created automatically?)
-
-[//]: # (TODO: if you've already got a build definition in place that's pointing to the file, then this doesn't happen)
-
-[//]: # (TODO: change to "## Create a YAML build definition" with sequential steps)
+## Create a YAML build definition
 
 To make it more convenient to create YAML build definitions, VSTS automatically creates a definition when you add a file named .vsts-ci.yml to the root of your resository. It creates the build definition in a folder that has the same name as your repository.
+
+1. Navigate to the **Code** hub, choose the **Files** tab, and then choose the repository you created in the above steps.
+
+1. In the root folder of the repo, create a new file called **.vsts-ci.yml**.
+
+1. Paste the following content into the file:
+
+```YAML
+steps:
+- script: echo hello world from $MyName
+  env:
+    MyName: $(Agent.MachineName)
+  displayName: Hello world
+```
+
+> [!NOTE]
+> If your team project already has a build definition that's pointing to the file, then the system does not automatically create another build definition.
+
 
 ## Look up tasks
 
