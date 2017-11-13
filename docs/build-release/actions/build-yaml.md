@@ -56,7 +56,15 @@ steps:
 - script: echo hello world 
 ```
 
-For a more interesting example, replace the file with this content:
+1. A new build is automatically created.
+
+ > [!NOTE]
+ > If your team project already has a build definition that's pointing to the file, then the system does not automatically create another build definition.
+
+
+To see a more interesting example in action:
+
+1. Replace the file with this content:
 
 ```YAML
 steps:
@@ -80,12 +88,9 @@ steps:
   displayName: Greeting from macOS or Linux machine
 ```
 
-> [!TIP]
-> You can queue the build on any of our hosted agent pools, including **Hosted VS 2017**, **Hosted Linux Preview** or **Hosted macOS Preview**.
+1. Queue the build on any of our hosted agent pools, including **Hosted VS 2017**, **Hosted Linux Preview** or **Hosted macOS Preview**.
 
 
-> [!NOTE]
-> If your team project already has a build definition that's pointing to the file, then the system does not automatically create another build definition.
 
 
 ## Look up tasks
