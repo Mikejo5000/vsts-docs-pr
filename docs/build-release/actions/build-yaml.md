@@ -90,8 +90,25 @@ steps:
 
 1. Queue the build on any of our hosted agent pools, including **Hosted VS 2017**, **Hosted Linux Preview** or **Hosted macOS Preview**.
 
+## Create an artifact
 
+This build archives your entire repo into a .ZIP file and publishes it as an artifact.
 
+```YAML
+steps:
+
+- archiveFiles@1
+  rootFolder: $(Build.SourcesDirectory)
+  displayName: Zip it
+ # default value for archiveFile is $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
+ 
+- publishBuildArtifacts@1
+  pathToPublish: $(Build.ArtifactStagingDirectory)
+  artifactName: drop
+  artifactType: Container
+```
+
+Notice how you don't have to supply the default arguments.
 
 ## Look up tasks
 
