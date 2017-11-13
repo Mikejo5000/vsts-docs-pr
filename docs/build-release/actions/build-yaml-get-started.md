@@ -57,7 +57,7 @@ To create a definition that is configured as code, you'll modify a YAML file in 
 
 1. Replace the contents of the file with the following:
 
-```YAML
+ ```YAML
 steps:
 
 - task: dotNetCoreCLI@1
@@ -83,7 +83,7 @@ steps:
 - task: dotNetCoreCLI@1
   inputs:
     command: publish
-    arguments: --configuration release --output $(build.artifactstagingdirectory)
+    arguments: --configuration release --output $(Build.ArtifactStagingDirectory)
   displayName: dotnet publish
 
 - task: publishBuildArtifacts@1
@@ -96,38 +96,21 @@ steps:
 
 1. Navigate to the **Build and Release** hub.
 
-1. Observe that there's a new build named _{name-of-your-repo} YAML CI_. A build is queued; its status could be either not started or running. Click the number of the build: _{year}{month}{day}.1_.
+1. Observe that there's a new build definition named _{name-of-your-repo} YAML CI_. A build is queued; its status could be either not started or running. Click the number of the build: _{year}{month}{day}.1_.
 
 1. In the left column of the running build, click **Job**. After a hosted agent is assigned to your job and the agent is initialized, then you'll see information about the build in the console.
 
-For this example, to learn some of the basics, you changed the YAML file to use the  `dotNetCoreCLI` task instead of calling the `dotnet` command directly in a script. The changes you made affect how the build output is organized. Each step shows up in the build summary instead of as the output from a single script.
+For this example, to learn some of the basics, you changed the YAML file to use the  `dotNetCoreCLI` task instead of calling the `dotnet` command directly in a script. The changes you made affect how the build output is organized. Each step is shown and can be inspected in the build summary, instead of all the output combined in one log from a single script.
 
 [//]: # (TODO: SCREENSHOT)
 
-These changes also modified what the build does. For example, the `dotnet restore` command you replaced creates .DLL files, but it doesn't create a .ZIP file. After you've completed the above steps, you're using the `dotNetCoreCLI` task, which in addition to creating the .DLL file, also creates a web deployment package (a .ZIP file) that is more efficient to deploy.
+The changes you made also modified what the build does. For example, the `dotnet restore` command you replaced creates .DLL files, but it doesn't create a web deployment file. After you've completed the above steps, your build instead the `dotNetCoreCLI` task, which in addition to creating the .DLL file, also creates a web deployment package (a .ZIP file) that is more efficient to deploy.
 
 ## Next steps
 
-[//]: # (TODO: sort out apps/_shared/ci-web-app-next-steps* and implement here)
-
-You've just put your own CI build process in place to automatically build and validate whatever code is checked in by your team.
-
-[//]: # (TODO: if we don't publish how-to below, I guess we should link to GitHub docs; but that might feel a bit of a stark dropoff, so I guess we have to publish the How To with at least minimal context, which can then link to GitHub docs)
-[//]: # (TODO: > [!div class="nextstepaction"])
-[//]: # (TODO: > [Learn more about YAML builds](build-yaml.md)
+You've just put your own CI build process in place to automatically build and validate whatever code is checked in by your team. Your next step depends on what you want to do.
 
 ### Deploy your app
-
-If you want to deploy to:
-
-* **Azure web app or to an IIS server**: You're already good to go after following the above steps. Your CI build is publishing a .ZIP file. See either
- - [Deploy to Azure Web App](../apps/cd/deploy-webdeploy-webapps.md)
- - [Deploy to a Windows VM](../apps/cd/deploy-webdeploy-iis-deploygroups.md)
-
-* **Linux VM**: 
-
-[//]: # (TODO: finish)
-
 
 | If you want to deploy to a... | Then publish your artifact as a...|
 |-|-|
@@ -135,6 +118,10 @@ If you want to deploy to:
 | Linux VM | Simple folder. To do this, remove the **Archive files** task from your build definition. |
 | Container service (such as Azure web apps for containers, or a Kubernetes cluster) | Container. Next step: [Build and push a container for your app](../apps/containers/build.md).|
 
+### Learn more about YAML builds
+
+[//]: # (TODO: > [!div class="nextstepaction"])
+[//]: # (TODO: > [Learn more about YAML builds](build-yaml.md)
 
 ### Enhance your Git workflows
 
