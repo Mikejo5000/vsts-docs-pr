@@ -54,49 +54,11 @@ To create a definition that is configured as code, you'll modify a YAML file in 
 1. Navigate to the **Code** hub, choose the **Files** tab, and then choose the repository you created in the above steps.
 
 1. Choose the **.vsts-ci.yml** file, and then click **Edit**.
-<li><p>Replace the contents of the file with the following:</p>
-```YAML
-steps:
-- task: dotNetCoreCLI@1
-  inputs:
-    command: restore
-    projects: "**/*.csproj"
-  displayName: dotnet restore
-
-- task: dotNetCoreCLI@1
-  inputs:
-    command: build
-    projects: "**/*.csproj"
-    arguments: --configuration release
-  displayName: dotnet build
-
-- task: dotNetCoreCLI@1
-  inputs:
-    command: test 
-    projects: "**/*Tests/*.csproj"
-    arguments: --configuration release
-  displayName: dotnet build
-
-- task: dotNetCoreCLI@1
-  inputs:
-    command: publish
-    arguments: --configuration release --output $(build.artifactstagingdirectory)
-  displayName: dotnet publish
-
-- task: publishBuildArtifacts@1
-  inputs:
-    PathtoPublish: $(Build.ArtifactStagingDirectory)
-    ArtifactName: drop
-    ArtifactType: Container
-```
-</li>
-1. Test
 
 1. Replace the contents of the file with the following:
 
  ```
 steps:
-
 - task: dotNetCoreCLI@1
   inputs:
     command: restore
@@ -129,45 +91,6 @@ steps:
     ArtifactName: drop
     ArtifactType: Container
 ```
-1. Test
-
-1. Replace the contents of the file with the following:
- ```YAML
-steps:
-
-- task: dotNetCoreCLI@1
-  inputs:
-    command: restore
-    projects: "**/*.csproj"
-  displayName: dotnet restore
-
-- task: dotNetCoreCLI@1
-  inputs:
-    command: build
-    projects: "**/*.csproj"
-    arguments: --configuration release
-  displayName: dotnet build
-
-- task: dotNetCoreCLI@1
-  inputs:
-    command: test 
-    projects: "**/*Tests/*.csproj"
-    arguments: --configuration release
-  displayName: dotnet build
-
-- task: dotNetCoreCLI@1
-  inputs:
-    command: publish
-    arguments: --configuration release --output $(build.artifactstagingdirectory)
-  displayName: dotnet publish
-
-- task: publishBuildArtifacts@1
-  inputs:
-    PathtoPublish: $(Build.ArtifactStagingDirectory)
-    ArtifactName: drop
-    ArtifactType: Container
-```
-
 1. Commit your change to the master branch.
 
 1. Navigate to the **Build and Release** hub.
