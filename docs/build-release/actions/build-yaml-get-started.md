@@ -57,7 +57,6 @@ To create a definition that is configured as code, you'll modify a YAML file in 
 <li><p>Replace the contents of the file with the following:</p>
 ```YAML
 steps:
-
 - task: dotNetCoreCLI@1
   inputs:
     command: restore
