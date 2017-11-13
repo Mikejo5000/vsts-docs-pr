@@ -53,11 +53,36 @@ To make it more convenient to create YAML build definitions, VSTS automatically 
 
 ```YAML
 steps:
-- script: echo hello world from $MyName
+- script: echo hello world 
+```
+
+For a more interesting example, replace the file with this content:
+
+```YAML
+steps:
+
+- script: |
+    echo hello world from %MyName%
+    echo Agent.HomeDirectory is %CD%
+  workingDirectory: $(Agent.HomeDirectory)
   env:
     MyName: $(Agent.MachineName)
-  displayName: Hello world
+  condition: and(succeeded(), eq(variables['agent.os'], 'windows_nt'))
+  displayName: Greeting from Windows machine
+
+- script: |
+    echo hello world from $MyName
+    echo Agent.HomeDirectory is $PWD
+  workingDirectory: $(Agent.HomeDirectory)
+  env:
+    MyName: $(Agent.MachineName)
+  condition: and(succeeded(), in(variables['agent.os'], 'darwin', 'linux'))
+  displayName: Greeting from macOS or Linux machine
 ```
+
+> [!TIP]
+> You can queue the build on any of our hosted agent pools, including **Hosted VS 2017**, **Hosted Linux Preview** or **Hosted macOS Preview**.
+
 
 > [!NOTE]
 > If your team project already has a build definition that's pointing to the file, then the system does not automatically create another build definition.
