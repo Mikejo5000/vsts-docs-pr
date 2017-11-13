@@ -49,16 +49,48 @@ Next, choose which kind of Git service you're using:
 
 [//]: # (TODO: screenshot to set context)
 
-[//]: # (TODO: are we going to make the repo use the well-known name or not? if not, then add steps to set it up? if so, then why isn't it working yet? what is the well-known name supposed to be?)
+Now you'll modify a YAML file that has a well-known name. The first time you change this file, VSTS automatically uses it to create your build defniition. For this example, to learn some of the basics, you'll change the YAML file to use tasks instead of a script. 
 
 1. Navigate to the **Code** hub, choose the **Files** tab, and then choose the repository you created in the above steps.
 
-1. Choose the .vsts-ci.yml file, and then click **Edit**.
+1. Choose the **.vsts-ci.yml** file, and then click **Edit**.
 
-1. Change the `dotnet build` command:
+1. Replace the contents of the file with the following:
 
  ```YAML
-dotnet build - v diag
+steps:
+
+- task: dotNetCoreCLI@1
+  inputs:
+    command: restore
+    projects: "**/*.csproj"
+  displayName: dotnet restore
+
+- task: dotNetCoreCLI@1
+  inputs:
+    command: build
+    projects: "**/*.csproj"
+    arguments: --configuration release
+  displayName: dotnet build
+
+- task: dotNetCoreCLI@1
+  inputs:
+    command: test 
+    projects: "**/*Tests/*.csproj"
+    arguments: --configuration release
+  displayName: dotnet build
+
+- task: dotNetCoreCLI@1
+  inputs:
+    command: publish
+    arguments: --configuration release --output $(build.artifactstagingdirectory)
+  displayName: dotnet publish
+
+- task: publishBuildArtifacts@1
+  inputs:
+    PathtoPublish: $(Build.ArtifactStagingDirectory)
+    ArtifactName: drop
+    ArtifactType: Container
 ```
 
 1. Commit your change to the master branch.
@@ -68,6 +100,12 @@ dotnet build - v diag
 1. Observe that there's a new build named _{name-of-your-repo}_ YAML CI. A build is queued; it's status could be either not started or running. Click the number of the build: _{year}{month}{day}.1_.
 
 1. In the left column of the running build, click **Job**. After a hosted agent is assigned to your job and the agent is initialized, then you'll see information about the build in the console.
+
+The changes you just made affect how the build looks. Each step shows up in the build summary instead of as the output from a single script.
+
+[//]: # (TODO: SCREENSHOT)
+
+> In this case, these changes also change what the build does. For example, the `dotnet restore` command that is run by the script in the repo creates .DLL files, but doesn't create a .ZIP file. After you've completed the above steps, you're using the `dotNetCoreCLI` task, which in addition to creating the .DLL file, also creates a web deployment package (a .ZIP file) that is more efficient to deploy.
 
 ## Next steps
 
