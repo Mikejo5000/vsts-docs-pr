@@ -27,8 +27,8 @@ database might have run out of disk space. Other failures will be more
 difficult to diagnose and resolve. For these, start by searching on
 [Developer Community](https://developercommunity.visualstudio.com/spaces/22/index.html).
 Good search terms include "upgrade", the error message(s) reported in the
-collection upgrade log file, and the names of any failed steps from the 
-collection upgrade log file.
+collection upgrade log file, and the names of any failed steps from that
+log file.
 
 If you kept the server configuration wizard open during collection upgrade, you can 
 open up the collection logs right from there.
