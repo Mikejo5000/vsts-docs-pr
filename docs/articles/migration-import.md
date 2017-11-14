@@ -134,9 +134,6 @@ Here is the breakdown of the fields and what action needs to be taken:
 |    ImportType        |    The type of import that you want to run.      |    None - In a later step you will select the type of import to run. |
  
 
-> [!IMPORTANT] 
-> If you have selected to import your collection into a region outside of the United States or Europe, then your data will be held in a secured location in the United States for up to 7 days as a staging point for the data import process. After that period has ended your staged data will be deleted.
-
 After following the above instructions, you should have a file that looks somewhat like the below. 
 
 ![Half filled out import specification file](_img/migration-import/importSpecHalfFilledOut.png)
@@ -196,7 +193,7 @@ The table below explains what each column is used for.
 Reading through the file you will notice the Expected Import Status column has either 'Active' or 'Historical'. Active indicates that it's expected that the identity on this row will map correctly on import and will become active. Historical will become historical identities on import. It's important that you review the generated mapping file for completeness and correctness.
 
 > [!IMPORTANT]  
-> Your import will fail if major changes occur to your Azure AD Connect SID sync between import attempts. New users can be added between dry runs, and corrections to ensure previously imported historical identities become active are also OK. However, changing an existing user that was previously imported as active is not supported at this time. Doing so will cause your import to fail. For example, completing a dry run import, deleting an identity from your AAD that was imported actively, recreating a new user in AAD for that same identity, and attempting another import where the AD identity tries to import actively into the newly created AAD identity is not supported. 
+> Your import will fail if major changes occur to your Azure AD Connect SID sync between import attempts. New users can be added between dry runs, and corrections to ensure previously imported historical identities become active are also OK. However, changing an existing user that was previously imported as active is not supported at this time. Doing so will cause your import to fail. For example, completing a dry run import, deleting an identity from your AAD that was imported actively, recreating a new user in AAD for that same identity, and attempt another import. In this case an active identity import will be attempted between the AD and newly created AAD identity, but it will cause an import failure as this isn't supported. 
 
 Start by reviewing the correctly matched identities. Are all of the expected identities present? Are the users mapped to the correct AAD identity? If any values are incorrectly mapped or need to be changed then you'll need to contact your Azure AD administrator to check whether the on-premises AD identity is part of the sync to Azure AD and has setup correctly. Check the [documentation](https://aka.ms/vstsaadconnect "Integrating your on-premises identities with Azure Active Directory") on setting a sync between your on-premises AD and Azure AD. 
 
