@@ -78,6 +78,30 @@ To see a more interesting example in action:
    condition: and(succeeded(), eq(variables['agent.os'], 'windows_nt'))
    displayName: Greeting from Windows machine
 
+ - script: |
+     echo hello world from $MyName
+     echo Agent.HomeDirectory is $PWD
+   workingDirectory: $(Agent.HomeDirectory)
+   env:
+     MyName: $(Agent.MachineName)
+   condition: and(succeeded(), in(variables['agent.os'], 'darwin', 'linux'))
+   displayName: Greeting from macOS or Linux machine
+ ```
+
+1. Queue the build on any of our hosted agent pools, including **Hosted VS 2017**, **Hosted Linux Preview** or **Hosted macOS Preview**.
+
+```YAML
+steps:
+
+- script: |
+    echo hello world from %MyName%
+    echo Agent.HomeDirectory is %CD%
+  workingDirectory: $(Agent.HomeDirectory)
+  env:
+    MyName: $(Agent.MachineName)
+  condition: and(succeeded(), eq(variables['agent.os'], 'windows_nt'))
+  displayName: Greeting from Windows machine
+
 - script: |
     echo hello world from $MyName
     echo Agent.HomeDirectory is $PWD
@@ -86,9 +110,7 @@ To see a more interesting example in action:
     MyName: $(Agent.MachineName)
   condition: and(succeeded(), in(variables['agent.os'], 'darwin', 'linux'))
   displayName: Greeting from macOS or Linux machine
-```
-
-1. Queue the build on any of our hosted agent pools, including **Hosted VS 2017**, **Hosted Linux Preview** or **Hosted macOS Preview**.
+ ```
 
 ## Create an artifact
 
