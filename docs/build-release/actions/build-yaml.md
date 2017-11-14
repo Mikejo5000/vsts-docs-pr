@@ -66,7 +66,7 @@ To see a more interesting example in action:
 
 1. Replace the file with this content:
 
-```YAML
+ ```YAML
  steps:
 
  - script: |
