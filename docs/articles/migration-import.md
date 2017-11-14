@@ -195,6 +195,9 @@ The table below explains what each column is used for.
 
 Reading through the file you will notice the Expected Import Status column has either 'Active' or 'Historical'. Active indicates that it's expected that the identity on this row will map correctly on import and will become active. Historical will become historical identities on import. It's important that you review the generated mapping file for completeness and correctness.
 
+> [!IMPORTANT]  
+> Your import will fail if major changes occur to your Azure AD Connect SID sync between import attempts. New users can be added between dry runs, and corrections to ensure previously imported historical identities become active are also OK. However, changing an existing user that was previously imported as active is not supported at this time. Doing so will cause your import to fail. For example, completing a dry run import, deleting an identity from your AAD that was imported actively, recreating a new user in AAD for that same identity, and attempting another import where the AD identity tries to import actively into the newly created AAD identity is not supported. 
+
 Start by reviewing the correctly matched identities. Are all of the expected identities present? Are the users mapped to the correct AAD identity? If any values are incorrectly mapped or need to be changed then you'll need to contact your Azure AD administrator to check whether the on-premises AD identity is part of the sync to Azure AD and has setup correctly. Check the [documentation](https://aka.ms/vstsaadconnect "Integrating your on-premises identities with Azure Active Directory") on setting a sync between your on-premises AD and Azure AD. 
 
 Next, review the identities that are labeled as 'Historical'. This implies that a matching AAD identity couldn't be found. This could be for one of four reasons.
@@ -494,7 +497,6 @@ Your import specification is now configured to use a SQL Azure VM for import! Pr
 Your DACPAC will need to be placed in an Azure storage container. This can be an existing container or one created specifically for your migration effort. It is important to ensure your container is created in the right region.
 
 VSTS is available in multiple [regions](https://azure.microsoft.com/en-us/regions/services/). When importing to these regions it's critical that you place your data in the correct region to ensure that the import can start successfully. Your data needs to be placed into the same region that you will be importing into. Placing it somewhere else will result in the import being unable to start. The below table covers the acceptable regions to create your storage account and upload your data.
- 
 
 |    Desired Import Region        |    Storage Account Region      |
 |---------------------------------|--------------------------------|
@@ -574,9 +576,6 @@ Be sure to check out the [post import](.\migration-post-import.md) documentation
 
 ## Running an Import
 The great news is that your team is now ready to begin the process of running an import. It's recommended that your team start with a dry run import and then finally a production run import. Dry run imports allow your team to see how the end results of an import will look, identify potential issues, and gain experience before heading into your production run. 
-
-> [!IMPORTANT]  
-> Import will fail if you edit a SID sync AD to AAD mapping after a dry run. New users can be added, but existing user mappings cannot be changed. If your import fails due to this you can either revert the SID sync mapping and import again or contact [VSTS customer service](https://www.visualstudio.com/team-services/support/) and tell them you are experiencing "Import failure: SID sync mapping change after dry run".
 
 ### Considerations for Roll Back Planning
 A common concern that teams have for the final production run is to think through what the rollback plan will be if anything goes wrong with import. This is also why we highly recommend doing a dry run to make sure you are able to test the import settings you provide to the TFS Database Import Service.
