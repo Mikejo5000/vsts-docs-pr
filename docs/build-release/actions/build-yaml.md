@@ -67,16 +67,16 @@ To see a more interesting example in action:
 1. Replace the file with this content:
 
 ```YAML
-steps:
+ steps:
 
-- script: |
-    echo hello world from %MyName%
-    echo Agent.HomeDirectory is %CD%
-  workingDirectory: $(Agent.HomeDirectory)
-  env:
-    MyName: $(Agent.MachineName)
-  condition: and(succeeded(), eq(variables['agent.os'], 'windows_nt'))
-  displayName: Greeting from Windows machine
+ - script: |
+     echo hello world from %MyName%
+     echo Agent.HomeDirectory is %CD%
+   workingDirectory: $(Agent.HomeDirectory)
+   env:
+     MyName: $(Agent.MachineName)
+   condition: and(succeeded(), eq(variables['agent.os'], 'windows_nt'))
+   displayName: Greeting from Windows machine
 
 - script: |
     echo hello world from $MyName
