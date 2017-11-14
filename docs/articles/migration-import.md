@@ -340,7 +340,7 @@ Below are some additional recommended configurations for your SQL Azure VM.
 4. If your source database is still over 1TB after [reducing the size](https://docs.microsoft.com/en-us/vsts/tfs-server/upgrade/clean-up-data) then you will need to [attach](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/attach-disk-portal) additional 1TB disks and combine them into a single partition to restore your database on the VM. 
 5. Collection databases over 1TB in size should consider using Solid State Drives (SSDs) for both the temporary database and collection database. 
 
-#### Configuring IP Firewall Rules for VSTS
+#### Configuring IP Firewall Rules for VSTS 
 
 It's highly recommended that you restrict access to your VM to only IPs from VSTS. This can be accomplished by allowing connections only from the set of VSTS IPs that are involved in the collection database import process. The IPs that need to be granted access to your collection database will depend on what region you're importing into. The tables below will help you identify the correct IPs. The only port that is required to be opened to connections is the standard SQL connection port 1433.
 
