@@ -15,19 +15,15 @@ ms.date: 11/13/2017
 
 ![](../build/_img/xcode-build.png) Install an Apple provisioning profile required to build on a macOS agent
 
-This task allows installing an Apple provisioning profile that is:
-- stored as a [secure file](../../concepts/library/secure-files.md) on the server. 
-- committed to the source repository or copied to a local path on the macOS agent. We recommend encrypting the provisioning profiles if you are committing them to the source repository. The **Decrypt File** task can be used to decrypt them during a build or release.
-
 You can use this task to install provisioning profiles needed to build iOS Apps, Apple WatchKit Apps and App Extensions.
+
+This task allows installing an Apple provisioning profile that is:
+- Stored as a [secure file](../../concepts/library/secure-files.md) on the server. 
+- Committed to the source repository or copied to a local path on the macOS agent. We recommend encrypting the provisioning profiles if you are committing them to the source repository. The **Decrypt File** task can be used to decrypt them during a build or release.
 
 ## Demands
 
 xcode
-
-## Agent version
-
-2.116.0 or higher is required
 
 ## Arguments
 
