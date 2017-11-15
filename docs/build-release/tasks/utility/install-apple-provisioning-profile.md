@@ -18,7 +18,7 @@ ms.date: 11/14/2017
 
 You can use this task to install provisioning profiles needed to build iOS Apps, Apple WatchKit Apps and App Extensions.
 
-YOu can install an Apple provisioning profile that is:
+You can install an Apple provisioning profile that is:
 - Stored as a [secure file](../../concepts/library/secure-files.md) on the server. 
 - (**VSTS**) Committed to the source repository or copied to a local path on the macOS agent. We recommend encrypting the provisioning profiles if you are committing them to the source repository. The **Decrypt File** task can be used to decrypt them during a build or release.
 
