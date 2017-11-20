@@ -293,7 +293,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/logo-git-mark.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/logos/logo_git-color.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -369,7 +369,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/logo_vs-team-services.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/logos/logo_vs-team-services.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -775,7 +775,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/logo_power-bi.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/logos/logo_power-bi.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -1017,7 +1017,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/logo_sharepoint.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/logos/logo_sharepoint.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -1036,7 +1036,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/logo_project-server.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/logos/logo_project-server.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -1137,7 +1137,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/logo_REST.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/logos/logo_REST.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
