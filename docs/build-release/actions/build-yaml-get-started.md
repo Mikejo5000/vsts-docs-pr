@@ -58,42 +58,8 @@ To create a definition that is configured as code, you'll modify a YAML file in 
 
 3. Replace the contents of the file with the following:
 
-   ```YAML
-   steps:
-   
-   - task: dotNetCoreCLI@1
-     inputs:
-       command: restore
-       projects: "**/*.csproj"
-       displayName: dotnet restore
-   
-   - task: dotNetCoreCLI@1
-     inputs:
-       command: build
-       projects: "**/*.csproj"
-       arguments: --configuration release
-       displayName: dotnet build
-   
-   - task: dotNetCoreCLI@1
-     inputs:
-       command: test 
-       projects: "**/*Tests/*.csproj"
-       arguments: --configuration release
-       displayName: dotnet build
-   
-   - task: dotNetCoreCLI@1
-     inputs:
-       command: publish
-       arguments: --configuration release --output $(Build.ArtifactStagingDirectory)
-   	   zipAfterPublish: true
-       displayName: dotnet publish
-   
-   - task: publishBuildArtifacts@1
-     inputs:
-       PathtoPublish: $(Build.ArtifactStagingDirectory)
-       ArtifactName: drop
-       ArtifactType: Container
-   ```
+   [!INCLUDE [include](_shared/yaml-build-definition-aspnet-core.md)]
+
 4. Commit your change to the master branch.
 
 5. Navigate to the **Build and Release** hub.
