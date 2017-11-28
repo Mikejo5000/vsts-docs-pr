@@ -48,7 +48,7 @@ Next, choose which kind of Git service you're using:
 
 [!INCLUDE [include](../_shared/ci-quickstart-intro.md)]
 
-> The following steps describe how to edit and automatically generate a YAML build definition with the code in VSTS. The same process works if your code is in GitHub, in that case the build definition is not automatically created. To learn how to create a YAML build manually, see [How to use YAML builds](build-yaml.md).
+# [VSTS or TFS repo](#tab/vsts)
 
 To create a definition that is configured as code, you'll modify a YAML file in the repo root that has a well-known name: **.vsts-ci.yml**. The first time you change this file, VSTS automatically uses it to create your build defniition.
 
@@ -101,6 +101,12 @@ To create a definition that is configured as code, you'll modify a YAML file in 
 6. Observe that there's a new build definitionnamed _{name-of-your-repo} YAML CI_. A build is queued; its status could be either not started or running. Click the number of the build: _{year}{month}{day}.1_.
 
 7. In the left column of the running build, click **Job**. After a hosted agent is assigned to your job and the agent is initialized, then you'll see information about the build in the console.
+
+# [GitHub repo](#tab/github)
+
+The same process works if your code is in GitHub, in that case the build definition is not automatically created. To learn how to create a YAML build manually, see [How to use YAML builds](build-yaml.md).
+
+---
 
 For this example, to learn some of the basics, you changed the YAML file to use the  `dotNetCoreCLI` task instead of calling the `dotnet` command directly in a script. The changes you made affect how the build output is organized. Each step is shown and can be inspected in the build summary, instead of all the output combined in one log from a single script.
 
