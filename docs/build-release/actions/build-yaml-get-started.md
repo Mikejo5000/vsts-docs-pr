@@ -50,7 +50,7 @@ Next, choose which kind of Git service you're using:
 
 # [VSTS or TFS repo](#tab/vsts)
 
-To create a definition that is configured as code, you'll modify a YAML file in the repo root that has a well-known name: **.vsts-ci.yml**. The first time you change this file, VSTS automatically uses it to create your build defniition.
+To create a definition that is configured as code, you'll modify a YAML file in the repo root that has a well-known name: **.vsts-ci.yml**. The first time you change this file, VSTS automatically uses it to create your build definition.
 
 1. Navigate to the **Code** hub, choose the **Files** tab, and then choose the repository you created in the above steps.
 
@@ -70,7 +70,23 @@ To create a definition that is configured as code, you'll modify a YAML file in 
 
 # [GitHub repo](#tab/github)
 
-The same process works if your code is in GitHub, in that case the build definition is not automatically created. To learn how to create a YAML build manually, see [How to use YAML builds](build-yaml.md).
+1. In VSTS, navigate to the **Builds** tab of the **Build and Release** hub, and then click **+ New**. You are asked to **Select a template** for the new build definition.
+
+1. Select **YAML**, and then select **Apply**.
+
+1. Select **Get sources**, and then select your version control repository. You'll need to authorize access to your repo.
+
+1. Select **Process**.
+
+1. For the **Agent queue** select _Hosted VS2017_. This is how you can use our pool of agents that have the software you need to build your app.
+
+1. For the **Yaml path**, select the **.vsts-ci.yml** file in the root of your repo.
+
+1. Set the CI trigger.
+
+1. In GitHub, edit the **.vsts-ci.yml** file in the root of your repo, and replace the contents of the file with the following:
+
+   [!INCLUDE [include](_shared/yaml-build-definition-aspnet-core.md)]
 
 ---
 
