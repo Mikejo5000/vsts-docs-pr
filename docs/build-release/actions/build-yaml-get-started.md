@@ -28,9 +28,19 @@ When you define a CI build on VSTS, you've got a fundamental choice: use a web-b
 
 [!INCLUDE [include](../apps/_shared/get-sample-code-intro.md)]
 
+# [ASP.NET Core](#tab/aspnet-core)
+
 ```
 https://github.com/adventworks/dotnetcore-sample
 ```
+
+# [Node.js](#tab/node-js)
+
+```
+https://github.com/adventworks/nodejs-sample
+```
+
+---
 
 Next, choose which kind of Git service you're using:
 
@@ -48,7 +58,7 @@ Next, choose which kind of Git service you're using:
 
 [!INCLUDE [include](../_shared/ci-quickstart-intro.md)]
 
-# [VSTS or TFS repo](#tab/vsts)
+# [VSTS or TFS repo](#tab/vsts/aspnet-core)
 
 To create a definition that is configured as code, you'll modify a YAML file in the repo root that has a well-known name: **.vsts-ci.yml**. The first time you change this file, VSTS automatically uses it to create your build definition.
 
@@ -68,7 +78,11 @@ To create a definition that is configured as code, you'll modify a YAML file in 
 
 7. In the left column of the running build, click **Job**. After a hosted agent is assigned to your job and the agent is initialized, then you'll see information about the build in the console.
 
-# [GitHub repo](#tab/github)
+# [VSTS or TFS repo](#tab/vsts/node-js)
+
+This will be same as asp.net core, but with node.js tasks.
+
+# [GitHub repo](#tab/github/aspnet-core)
 
 1. In VSTS, navigate to the **Builds** tab of the **Build and Release** hub, and then click **+ New**. You are asked to **Select a template** for the new build definition.
 
@@ -87,6 +101,10 @@ To create a definition that is configured as code, you'll modify a YAML file in 
 1. In GitHub, edit the **.vsts-ci.yml** file in the root of your repo, and replace the contents of the file with the following:
 
    [!INCLUDE [include](_shared/yaml-build-definition-aspnet-core.md)]
+
+# [GitHub repo](#tab/github/node-js)
+
+This will be same as asp.net core, but with node.js tasks.
 
 ---
 
