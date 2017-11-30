@@ -22,6 +22,29 @@ ms.topic: get-started-article
 
 [!INCLUDE [include](../../_shared/ci-cd-prerequisites-tfs.md)]
 
+## Choose web interface or config as code
+
+Do you want to configure your build definition in the web or as code?
+
+# [Web](#tab/web)
+
+Advantages include a GUI interface in the web.
+
+![PowerShell script task says "Hello World"](../_shared/_img/powershell-script-hello-world-do-not-publish.png)
+
+# [YAML](#tab/yaml)
+
+Advantages include config as code, parallel processing (fan out and fan in), and the ability to test and debug the process locally.
+
+```YAML
+steps:
+- script: echo hello world 
+```
+
+---
+
+[Tell me more to help me decide](../../actions/build-yaml.md).
+
 ## Get the sample code
 
 [!INCLUDE [include](../_shared/get-sample-code-intro.md)]
@@ -54,26 +77,6 @@ Next, choose which kind of Git service you're using:
 
 [//]: # (TODO: [!INCLUDE [include](_shared/aspnet-core-build-tasks.md)
 
-Do you want to configure your build definition in the web or as code?
-
-# [Web](#tab/web)
-
-Advantages include a GUI interface in the web.
-
-![PowerShell script task says "Hello World"](../_shared/_img/powershell-script-hello-world-do-not-publish.png)
-
-# [YAML](#tab/yaml)
-
-Advantages include config as code, parallel processing (fan out and fan in), and the ability to test and debug the process locally.
-
-```YAML
-steps:
-- script: echo hello world 
-```
-
----
-
-[Tell me more to help me decide](../../actions/build-yaml.md).
 
 ### Create the definition
 
