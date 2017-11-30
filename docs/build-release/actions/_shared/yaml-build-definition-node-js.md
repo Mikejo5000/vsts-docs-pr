@@ -1,9 +1,3 @@
-queue:
-  name: Hosted VS2017
-  demands: 
-    - npm
-    - node.js
-
 steps:
 - task: Npm@1
   displayName: npm install

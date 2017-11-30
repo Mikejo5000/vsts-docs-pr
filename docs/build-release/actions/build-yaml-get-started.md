@@ -100,7 +100,9 @@ To create a definition that is configured as code, you'll modify a YAML file in 
 
 # [GitHub repo](#tab/github/aspnet-core)
 
-1. In VSTS, navigate to the **Builds** tab of the **Build and Release** hub, and then click **+ New**. You are asked to **Select a template** for the new build definition.
+In VSTS:
+
+1. Navigate to the **Builds** tab of the **Build and Release** hub, and then click **+ New**. You are asked to **Select a template** for the new build definition.
 
 1. Select **YAML**, and then select **Apply**.
 
@@ -112,11 +114,25 @@ To create a definition that is configured as code, you'll modify a YAML file in 
 
 1. For the **Yaml path**, select the **.vsts-ci.yml** file in the root of your repo.
 
-1. Set the CI trigger.
+1. Select the **Triggers** tab, and then enable continuous integration (CI).
 
-1. In GitHub, edit the **.vsts-ci.yml** file in the root of your repo, and replace the contents of the file with the following:
+1. Save the build definition.
+
+In GitHub:
+
+1. Edit the **.vsts-ci.yml** file in the root of your repo, and replace the contents of the file with the following:
 
    [!code-yaml[code](_shared/yaml-build-definition-aspnet-core.md)]
+
+1. Commit your change to the master branch.
+
+ In VSTS:
+
+1. Navigate to the **Build and Release** hub.
+
+1. Observe that there's a new build definitionnamed _{name-of-your-repo} YAML CI_. A build is queued; its status could be either not started or running. Click the number of the build: _{year}{month}{day}.1_.
+
+1. In the left column of the running build, click **Job**. After a hosted agent is assigned to your job and the agent is initialized, then you'll see information about the build in the console.
 
 # [GitHub repo](#tab/github/node-js)
 
