@@ -60,7 +60,7 @@ Do you want to configure your build definition in the web or as code?
 
 Benefits include a GUI interface in the web, Bitbucket repository (eventually it will be added to YAML).
 
-SCREENSHOT OF SCRIPT THAT PRINTS HELLO WORLD
+![PowerShell script task says "Hello World"](_shared/_img/powershell-script-hello-world-do-not-publish.png)
 
 # [YAML](#tab/yaml)
 
