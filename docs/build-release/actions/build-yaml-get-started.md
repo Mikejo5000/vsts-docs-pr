@@ -178,7 +178,7 @@ You've just put your own CI build process in place with the configuration as cod
 | Azure web app or to an IIS server | .ZIP file. In this case you're already good to go after following the above steps. Next step is one of the following: <ul><li>[Deploy to Azure Web App](../apps/cd/deploy-webdeploy-webapps.md)</li><li>[Deploy to a Windows VM](../apps/cd/deploy-webdeploy-iis-deploygroups.md)</li></ul> | 
 | Linux VM | Simple folder. To do this, set `zipAfterPublish` to `false` |
 
-# [Node.js](#tab/github/node-js)
+# [Node.js](#tab/node-js)
 
 | If you want to deploy to a... | Then publish your artifact as a...|
 |-|-|
