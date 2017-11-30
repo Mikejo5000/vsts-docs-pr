@@ -192,7 +192,6 @@ You've just put your own CI build process in place with the configuration as cod
 | Linux VM | Simple folder. To do this, change the YAML build definition to the following. |
 
 ```yaml
-
 steps:
 - task: Npm@1
   displayName: npm install
@@ -208,7 +207,6 @@ steps:
     ArtifactName: "drop"
     ArtifactType: "Container"
     displayName: Publish the artifacts
-
 ```
 
 ---
