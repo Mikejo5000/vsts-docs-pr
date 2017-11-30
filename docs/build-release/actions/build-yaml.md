@@ -16,7 +16,7 @@ ms.date: 11/11/2017
 When you define a CI build on VSTS, you've got a fundamental choice: use a web-based interface or configure your CI process as code in a YAML build. YAML build definitions give you the advantages of _configuration as code_. 
 
 > [!NOTE]
-> To use this capability, you must have the **Build Yaml definitions** [preview feature](/vsts/collaborate/preview-features) enabled on your account.
+> To use this capability, you must have the **Build YAML definitions** [preview feature](/vsts/collaborate/preview-features) enabled on your account.
 
 In a YAML build definition, your CI build process is versioned with your code. This means: 
 
