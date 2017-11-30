@@ -80,7 +80,23 @@ To create a definition that is configured as code, you'll modify a YAML file in 
 
 # [VSTS or TFS repo](#tab/vsts/node-js)
 
-This will be same as asp.net core, but with node.js tasks.
+To create a definition that is configured as code, you'll modify a YAML file in the repo root that has a well-known name: **.vsts-ci.yml**. The first time you change this file, VSTS automatically uses it to create your build definition.
+
+1. Navigate to the **Code** hub, choose the **Files** tab, and then choose the repository you created in the above steps.
+
+2. Choose the **.vsts-ci.yml** file, and then click **Edit**.
+
+3. Replace the contents of the file with the following:
+
+   [!INCLUDE [include](_shared/yaml-build-definition-node-js.md)]
+
+4. Commit your change to the master branch.
+
+5. Navigate to the **Build and Release** hub.
+
+6. Observe that there's a new build definitionnamed _{name-of-your-repo} YAML CI_. A build is queued; its status could be either not started or running. Click the number of the build: _{year}{month}{day}.1_.
+
+7. In the left column of the running build, click **Job**. After a hosted agent is assigned to your job and the agent is initialized, then you'll see information about the build in the console.
 
 # [GitHub repo](#tab/github/aspnet-core)
 
