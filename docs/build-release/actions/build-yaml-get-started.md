@@ -15,6 +15,12 @@ ms.date: 11/11/2017
 
 When you define a CI build on VSTS, you've got a fundamental choice: use a web-based interface or configure your CI process as code in a YAML build. Here we'll take you on a quick walkthrough so you can try a YAML build and see how it works.
 
+In this tutorial, you'll learn how to:
+
+> [!div class="checklist"]
+> * Get the sample code
+> * Set up continuous integration (CI)
+
 ## Prerequisites
 
 > [!NOTE]
