@@ -102,19 +102,15 @@ To create a definition that is configured as code, you'll modify a YAML file in 
 
 7. In the left column of the running build, click **Job**. After a hosted agent is assigned to your job and the agent is initialized, then you'll see information about the build in the console.
 
-For this example, to learn some of the basics, you changed the YAML file to use the  `dotNetCoreCLI` task instead of calling the `dotnet` command directly in a script. The changes you made affect how the build output is organized. Each step is shown and can be inspected in the build summary, instead of all the output combined in one log from a single script.
-
-The changes you made also modified what the build does. For example, the `dotnet restore` command you replaced creates .DLL files, but it doesn't create a web deployment file. After you've completed the above steps, your build instead uses the `dotNetCoreCLI` task, which in addition to creating the .DLL file, also creates a web deployment package (a .ZIP file) that is more efficient to deploy.
-
 # [GitHub repo](#tab/github/aspnet-core)
 
-[//]: # (TODO In GitHub:)
+In GitHub:
 
-[//]: # (TODO 1. Edit the **.vsts-ci.yml** file in the root of your repo, and replace the contents of the file with the following:)
+1. Edit the **.vsts-ci.yml** file in the root of your repo, and replace the contents of the file with the following:
 
-[//]: # (TODO    [!code-yaml[code](_shared/yaml-build-definition-aspnet-core.md)
+   [!code-yaml[code](_shared/yaml-build-definition-aspnet-core.md)]
 
-[//]: # (TODO 1. Commit your change to the master branch.)
+1. Commit your change to the master branch.
 
 In VSTS:
 
@@ -138,13 +134,13 @@ In VSTS:
 
 # [GitHub repo](#tab/github/node-js)
 
-[//]: # (TODO In GitHub:)
+In GitHub:
 
-[//]: # (TODO 1. Edit the **.vsts-ci.yml** file in the root of your repo, and replace the contents of the file with the following:)
+1. Edit the **.vsts-ci.yml** file in the root of your repo, and replace the contents of the file with the following:
 
-[//]: # (TODO    [!code-yaml[code](_shared/yaml-build-definition-aspnet-core.md)
+   [!code-yaml[code](_shared/yaml-build-definition-aspnet-core.md)]
 
-[//]: # (TODO 1. Commit your change to the master branch.)
+1. Commit your change to the master branch.
 
 In VSTS:
 
@@ -174,10 +170,42 @@ You've just put your own CI build process in place with the configuration as cod
 
 ### Deploy your app
 
+
+# [ASP.NET Core](#tab/aspnet-core)
+
 | If you want to deploy to a... | Then publish your artifact as a...|
 |-|-|
 | Azure web app or to an IIS server | .ZIP file. In this case you're already good to go after following the above steps. Next step is one of the following: <ul><li>[Deploy to Azure Web App](../apps/cd/deploy-webdeploy-webapps.md)</li><li>[Deploy to a Windows VM](../apps/cd/deploy-webdeploy-iis-deploygroups.md)</li></ul> | 
 | Linux VM | Simple folder. To do this, set `zipAfterPublish` to `false` |
+
+# [Node.js](#tab/github/node-js)
+
+| If you want to deploy to a... | Then publish your artifact as a...|
+|-|-|
+| Azure web app or to an IIS server | .ZIP file. In this case you're already good to go after following the above steps. Next step is one of the following: <ul><li>[Deploy to Azure Web App](../apps/cd/deploy-webdeploy-webapps.md)</li><li>[Deploy to a Windows VM](../apps/cd/deploy-webdeploy-iis-deploygroups.md)</li></ul> | 
+| Linux VM | Simple folder. To do this, change the YAML build definition to the following. |
+
+```yaml
+
+steps:
+- task: Npm@1
+  displayName: npm install
+
+- task: Gulp@0
+  inputs:
+    publishJUnitResults: "true"
+    displayName: Gulp
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: $(Build.SourcesDirectory)
+    ArtifactName: "drop"
+    ArtifactType: "Container"
+    displayName: Publish the artifacts
+
+```
+
+---
 
 ### Learn more about YAML builds
 
