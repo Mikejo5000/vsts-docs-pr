@@ -58,13 +58,13 @@ Do you want to configure your build definition in the web or as code?
 
 # [Web](#tab/web)
 
-Benefits include a GUI interface in the web, Bitbucket repository (eventually it will be added to YAML).
+Advantages include a GUI interface in the web.
 
 ![PowerShell script task says "Hello World"](../_shared/_img/powershell-script-hello-world-do-not-publish.png)
 
 # [YAML](#tab/yaml)
 
-Benefits include config as code, parallel processing (fan out and fan in), and the ability to test and debug the process locally.
+Advantages include config as code, parallel processing (fan out and fan in), and the ability to test and debug the process locally.
 
 ```YAML
 steps:
