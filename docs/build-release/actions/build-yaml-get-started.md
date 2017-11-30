@@ -88,7 +88,7 @@ To create a definition that is configured as code, you'll modify a YAML file in 
 
 3. Replace the contents of the file with the following:
 
-   [!INCLUDE [include](_shared/yaml-build-definition-node-js.md)]
+   [!code-yaml[name](_shared/yaml-build-definition-node-js.md)]
 
 4. Commit your change to the master branch.
 
