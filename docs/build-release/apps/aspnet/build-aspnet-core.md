@@ -60,7 +60,7 @@ Do you want to configure your build definition in the web or as code?
 
 Benefits include a GUI interface in the web, Bitbucket repository (eventually it will be added to YAML).
 
-![PowerShell script task says "Hello World"](_shared/_img/powershell-script-hello-world-do-not-publish.png)
+![PowerShell script task says "Hello World"](../_shared/_img/powershell-script-hello-world-do-not-publish.png)
 
 # [YAML](#tab/yaml)
 
@@ -167,7 +167,7 @@ In GitHub:
 
 1. Edit the **.vsts-ci.yml** file in the root of your repo, and replace the contents of the file with the following:
 
-   [!code-yaml[code](_shared/yaml-build-definition-aspnet-core.md)]
+   [!code-yaml[code](../../actions/_shared/yaml-build-definition-aspnet-core.md)]
 
 1. Commit your change to the master branch.
 
