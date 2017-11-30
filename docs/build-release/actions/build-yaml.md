@@ -37,7 +37,7 @@ In a YAML build definition, your CI build process is versioned with your code. T
 |Git and GitHub|Yes|Yes|
 |Bitbucket|Not yet|Yes|
 |TFVC|No|Yes|
-|external Git, Subversion|No|Yes|
+|External Git, Subversion|No|Yes|
 |<center>**Capabilities**</center>|
 |Configuration as code|Yes|No|
 |Fan out and fan in|Yes|Not yet|
