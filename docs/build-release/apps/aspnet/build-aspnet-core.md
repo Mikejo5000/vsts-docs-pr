@@ -163,6 +163,8 @@ The changes you made also modified what the build does. For example, the `dotnet
 
 # [GitHub repo](#tab/github/yaml)
 
+To create a definition that is configured as code, you'll modify a YAML file in the repo root that has a well-known name: **.vsts-ci.yml**. You'll then create a build definition that points to the YAML file.
+
 In GitHub:
 
 1. Edit the **.vsts-ci.yml** file in the root of your repo, and replace the contents of the file with the following:
