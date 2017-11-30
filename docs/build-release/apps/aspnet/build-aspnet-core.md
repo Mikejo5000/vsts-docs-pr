@@ -54,21 +54,37 @@ Next, choose which kind of Git service you're using:
 
 [//]: # (TODO: [!INCLUDE [include](_shared/aspnet-core-build-tasks.md)
 
-1. Create a new build definition.
+Do you want to configure your build definition in the web or as code?
+
+# [Web](#tab/web)
+
+Benefits include a GUI interface in the web, Bitbucket repository (eventually it will be added to YAML).
+
+SCREENSHOT OF SCRIPT THAT PRINTS HELLO WORLD
+
+# [YAML](#tab/yaml)
+
+Benefits include config as code, parallel processing (fan out and fan in), and the ability to test and debug the process locally.
+
+```YAML
+steps:
+- script: echo hello world 
+```
+
+---
+
+[Tell me more to help me decide](../../actions/build-yaml.md).
+
 
  # [VSTS or TFS repo](#tab/vsts)
+
+1. Create a new build definition.
 
  Navigate to the **Files** tab of the **Code** hub, and then click **Set up build**.
 
  ![Screenshot showing button to set up build for a repository](../_shared/_img/set-up-first-build-from-code-hub.png)
 
  You are taken to the **Build & Release** hub and asked to **Select a template** for the new build definition.
-
- # [GitHub repo](#tab/github)
-
- Navigate to the **Builds** tab of the **Build and Release** hub in VSTS or TFS, and then click **+ New**. You are asked to **Select a template** for the new build definition.
-
- ---
 
 1. In the right panel, click **ASP.NET Core**, and then click **Apply**.
 
@@ -84,21 +100,43 @@ Next, choose which kind of Git service you're using:
 
 1. Click **Get sources** and then:
 
- # [VSTS or TFS repo](#tab/vsts)
-
  Observe that the new build definition is automatically linked to your repository.
-
- # [GitHub repo](#tab/github)
-
- Select your version control repository. You'll need to authorize access to your repo.
-
- ---
 
 1. Click the **Triggers** tab in the build definition. Enable the **Continuous Integration** trigger. This will ensure that the build process is automatically triggered every time you commit a change to your repository.
 
 1. Click **Save and queue** to kick off your first build. On the **Queue build** dialog box, click **Queue**.
 
 1. A new build is started. You'll see a link to the new build on the top of the page. Click the link to watch the new build as it happens.
+
+ # [GitHub repo](#tab/github)
+
+1. Create a new build definition.
+
+ Navigate to the **Builds** tab of the **Build and Release** hub in VSTS or TFS, and then click **+ New**. You are asked to **Select a template** for the new build definition.
+
+1. In the right panel, click **ASP.NET Core**, and then click **Apply**.
+
+ ![Screenshot showing dotnet core template](_shared/_img/apply-aspnet-core-build-template.png)
+
+ You now see all the tasks that were automatically added to the build definition by the template. These are the steps that will automatically run every time you check in code.
+
+1. For the **Default agent queue**:
+
+ * **VSTS:** Select _Hosted VS2017_. This is how you can use our pool of agents that have the software you need to build your app.
+
+ * **TFS:** Select a queue that includes a [Windows build agent](../../actions/agents/v2-windows.md).
+
+1. Click **Get sources** and then:
+
+ Select your version control repository. You'll need to authorize access to your repo.
+
+1. Click the **Triggers** tab in the build definition. Enable the **Continuous Integration** trigger. This will ensure that the build process is automatically triggered every time you commit a change to your repository.
+
+1. Click **Save and queue** to kick off your first build. On the **Queue build** dialog box, click **Queue**.
+
+1. A new build is started. You'll see a link to the new build on the top of the page. Click the link to watch the new build as it happens.
+
+---
 
 [//]: # (TODO:> [!TIP])
 [//]: # (TODO:> To learn more about GitHub CI builds, see [Define CI build process for your Git repo](#)
