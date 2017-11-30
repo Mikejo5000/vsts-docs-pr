@@ -124,7 +124,7 @@ In VSTS:
 
 1. Select **YAML**, and then select **Apply**.
 
-1. Select **Get sources**, and then select your version control repository. You'll need to authorize access to your repo.
+1. Select **Get sources**, select **GitHub**, and then select your version control repository. You'll need to authorize access to your repo.
 
 1. Select **Process**.
 
@@ -144,7 +144,7 @@ In GitHub:
 
 1. Edit the **.vsts-ci.yml** file in the root of your repo, and replace the contents of the file with the following:
 
-   [!code-yaml[code](_shared/yaml-build-definition-aspnet-core.md)]
+   [!code-yaml[code](_shared/yaml-build-definition-node-js.md)]
 
 1. Commit your change to the master branch.
 
@@ -154,7 +154,7 @@ In VSTS:
 
 1. Select **YAML**, and then select **Apply**.
 
-1. Select **Get sources**, and then select your version control repository. You'll need to authorize access to your repo.
+1. Select **Get sources**, select **GitHub**, and then select your version control repository. You'll need to authorize access to your repo.
 
 1. Select **Process**.
 
