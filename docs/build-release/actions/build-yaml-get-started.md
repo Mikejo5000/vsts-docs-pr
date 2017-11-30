@@ -78,6 +78,10 @@ To create a definition that is configured as code, you'll modify a YAML file in 
 
 7. In the left column of the running build, click **Job**. After a hosted agent is assigned to your job and the agent is initialized, then you'll see information about the build in the console.
 
+For this example, to learn some of the basics, you changed the YAML file to use the  `dotNetCoreCLI` task instead of calling the `dotnet` command directly in a script. The changes you made affect how the build output is organized. Each step is shown and can be inspected in the build summary, instead of all the output combined in one log from a single script.
+
+The changes you made also modified what the build does. For example, the `dotnet restore` command you replaced creates .DLL files, but it doesn't create a web deployment file. After you've completed the above steps, your build instead uses the `dotNetCoreCLI` task, which in addition to creating the .DLL file, also creates a web deployment package (a .ZIP file) that is more efficient to deploy.
+
 # [VSTS or TFS repo](#tab/vsts/node-js)
 
 To create a definition that is configured as code, you'll modify a YAML file in the repo root that has a well-known name: **.vsts-ci.yml**. The first time you change this file, VSTS automatically uses it to create your build definition.
@@ -98,15 +102,19 @@ To create a definition that is configured as code, you'll modify a YAML file in 
 
 7. In the left column of the running build, click **Job**. After a hosted agent is assigned to your job and the agent is initialized, then you'll see information about the build in the console.
 
+For this example, to learn some of the basics, you changed the YAML file to use the  `dotNetCoreCLI` task instead of calling the `dotnet` command directly in a script. The changes you made affect how the build output is organized. Each step is shown and can be inspected in the build summary, instead of all the output combined in one log from a single script.
+
+The changes you made also modified what the build does. For example, the `dotnet restore` command you replaced creates .DLL files, but it doesn't create a web deployment file. After you've completed the above steps, your build instead uses the `dotNetCoreCLI` task, which in addition to creating the .DLL file, also creates a web deployment package (a .ZIP file) that is more efficient to deploy.
+
 # [GitHub repo](#tab/github/aspnet-core)
 
-In GitHub:
+[//]: # (TODO In GitHub:)
 
-1. Edit the **.vsts-ci.yml** file in the root of your repo, and replace the contents of the file with the following:
+[//]: # (TODO 1. Edit the **.vsts-ci.yml** file in the root of your repo, and replace the contents of the file with the following:)
 
-   [!code-yaml[code](_shared/yaml-build-definition-aspnet-core.md)]
+[//]: # (TODO    [!code-yaml[code](_shared/yaml-build-definition-aspnet-core.md)
 
-1. Commit your change to the master branch.
+[//]: # (TODO 1. Commit your change to the master branch.)
 
 In VSTS:
 
@@ -130,13 +138,13 @@ In VSTS:
 
 # [GitHub repo](#tab/github/node-js)
 
-In GitHub:
+[//]: # (TODO In GitHub:)
 
-1. Edit the **.vsts-ci.yml** file in the root of your repo, and replace the contents of the file with the following:
+[//]: # (TODO 1. Edit the **.vsts-ci.yml** file in the root of your repo, and replace the contents of the file with the following:)
 
-   [!code-yaml[code](_shared/yaml-build-definition-node-js.md)]
+[//]: # (TODO    [!code-yaml[code](_shared/yaml-build-definition-aspnet-core.md)
 
-1. Commit your change to the master branch.
+[//]: # (TODO 1. Commit your change to the master branch.)
 
 In VSTS:
 
@@ -159,10 +167,6 @@ In VSTS:
 1. In the left column of the running build, click **Job**. After a hosted agent is assigned to your job and the agent is initialized, then you'll see information about the build in the console.
 
 ---
-
-For this example, to learn some of the basics, you changed the YAML file to use the  `dotNetCoreCLI` task instead of calling the `dotnet` command directly in a script. The changes you made affect how the build output is organized. Each step is shown and can be inspected in the build summary, instead of all the output combined in one log from a single script.
-
-The changes you made also modified what the build does. For example, the `dotnet restore` command you replaced creates .DLL files, but it doesn't create a web deployment file. After you've completed the above steps, your build instead uses the `dotNetCoreCLI` task, which in addition to creating the .DLL file, also creates a web deployment package (a .ZIP file) that is more efficient to deploy.
 
 ## Next steps
 
