@@ -32,4 +32,4 @@ steps:
     PathtoPublish: $(Build.ArtifactStagingDirectory)
     ArtifactName: drop
     ArtifactType: Container
-	displayName: Publish the artifacts
+    displayName: Publish the artifacts
