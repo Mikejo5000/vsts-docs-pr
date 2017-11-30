@@ -75,8 +75,9 @@ steps:
 
 [Tell me more to help me decide](../../actions/build-yaml.md).
 
+### Create the definition
 
- # [VSTS or TFS repo](#tab/vsts)
+# [VSTS or TFS repo](#tab/vsts)
 
 1. Create a new build definition.
 
@@ -108,7 +109,7 @@ steps:
 
 1. A new build is started. You'll see a link to the new build on the top of the page. Click the link to watch the new build as it happens.
 
- # [GitHub repo](#tab/github)
+# [GitHub repo](#tab/github)
 
 1. Create a new build definition.
 
