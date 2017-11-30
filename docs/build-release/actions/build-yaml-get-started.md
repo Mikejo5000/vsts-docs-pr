@@ -18,7 +18,7 @@ When you define a CI build on VSTS, you've got a fundamental choice: use a web-b
 ## Prerequisites
 
 > [!NOTE]
-> To use this capability, you must have the **Build Yaml definitions** [preview feature](/vsts/collaborate/preview-features) enabled on both your profile and account.
+> To use this capability, you must have the **Build Yaml definitions** [preview feature](/vsts/collaborate/preview-features) enabled on your account.
 
 [!INCLUDE [include](../_shared/ci-cd-prerequisites-vsts.md)]
 
