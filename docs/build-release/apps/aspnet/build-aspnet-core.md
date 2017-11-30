@@ -77,7 +77,7 @@ steps:
 
 ### Create the definition
 
-# [VSTS or TFS repo](#tab/vsts)
+# [VSTS or TFS repo](#tab/vsts/web)
 
 1. Create a new build definition.
 
@@ -109,7 +109,31 @@ steps:
 
 1. A new build is started. You'll see a link to the new build on the top of the page. Click the link to watch the new build as it happens.
 
-# [GitHub repo](#tab/github)
+# [VSTS or TFS repo](#tab/vsts/yaml)
+
+To create a definition that is configured as code, you'll modify a YAML file in the repo root that has a well-known name: **.vsts-ci.yml**. The first time you change this file, VSTS automatically uses it to create your build definition.
+
+1. Navigate to the **Code** hub, choose the **Files** tab, and then choose the repository you created in the above steps.
+
+2. Choose the **.vsts-ci.yml** file, and then click **Edit**.
+
+3. Replace the contents of the file with the following:
+
+   [!code-yaml[code](../../actions/_shared/yaml-build-definition-aspnet-core.md)]
+
+4. Commit your change to the master branch.
+
+5. Navigate to the **Build and Release** hub.
+
+6. Observe that there's a new build definitionnamed _{name-of-your-repo} YAML CI_. A build is queued; its status could be either not started or running. Click the number of the build: _{year}{month}{day}.1_.
+
+7. In the left column of the running build, click **Job**. After a hosted agent is assigned to your job and the agent is initialized, then you'll see information about the build in the console.
+
+For this example, to learn some of the basics, you changed the YAML file to use the  `dotNetCoreCLI` task instead of calling the `dotnet` command directly in a script. The changes you made affect how the build output is organized. Each step is shown and can be inspected in the build summary, instead of all the output combined in one log from a single script.
+
+The changes you made also modified what the build does. For example, the `dotnet restore` command you replaced creates .DLL files, but it doesn't create a web deployment file. After you've completed the above steps, your build instead uses the `dotNetCoreCLI` task, which in addition to creating the .DLL file, also creates a web deployment package (a .ZIP file) that is more efficient to deploy.
+
+# [GitHub repo](#tab/github/web)
 
 1. Create a new build definition.
 
@@ -136,6 +160,36 @@ steps:
 1. Click **Save and queue** to kick off your first build. On the **Queue build** dialog box, click **Queue**.
 
 1. A new build is started. You'll see a link to the new build on the top of the page. Click the link to watch the new build as it happens.
+
+# [GitHub repo](#tab/github/yaml)
+
+In GitHub:
+
+1. Edit the **.vsts-ci.yml** file in the root of your repo, and replace the contents of the file with the following:
+
+   [!code-yaml[code](_shared/yaml-build-definition-aspnet-core.md)]
+
+1. Commit your change to the master branch.
+
+In VSTS:
+
+1. Navigate to the **Builds** tab of the **Build and Release** hub, and then click **+ New**. You are asked to **Select a template** for the new build definition.
+
+1. Select **YAML**, and then select **Apply**.
+
+1. Select **Get sources**, select **GitHub**, and then select your version control repository. You'll need to authorize access to your repo.
+
+1. Select **Process**.
+
+1. For the **Agent queue** select _Hosted VS2017_. This is how you can use our pool of agents that have the software you need to build your app.
+
+1. For the **Yaml path**, select the **.vsts-ci.yml** file in the root of your repo.
+
+1. Select the **Triggers** tab, and then enable continuous integration (CI).
+
+1. Save and queue the build, and then click the number of the build: _{year}{month}{day}.1_ that has been queued.
+
+1. In the left column of the running build, click **Job**. After a hosted agent is assigned to your job and the agent is initialized, then you'll see information about the build in the console.
 
 ---
 
