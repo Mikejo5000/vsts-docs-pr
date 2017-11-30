@@ -6,7 +6,7 @@ ms.technology: vs-devops-build
 ms.assetid: 70DE052F-9F5F-4733-B831-EF8C2C490716
 ms.manager: douge
 ms.author: alewis
-ms.date: 11/11/2017
+ms.date: 11/30/2017
 ---
 
 # Get started configuring your CI Build in code using YAML
