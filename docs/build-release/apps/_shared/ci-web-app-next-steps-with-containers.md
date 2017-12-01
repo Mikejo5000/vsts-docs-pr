@@ -1,4 +1,4 @@
-You've just put your own CI build process in place to automatically build and validate whatever code is checked in by your team.
+You've just put your own CI build process in place to automatically build and validate whatever code is checked in by your team. What do you want to do next?
 
 ### Extend to other Git workflows
 
