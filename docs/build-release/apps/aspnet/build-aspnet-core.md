@@ -22,7 +22,7 @@ ms.topic: get-started-article
 
 [!INCLUDE [include](../../_shared/ci-cd-prerequisites-tfs.md)]
 
-## Choose the web interface or config as code
+## Choose the web interface or configuration as code
 
 Do you want to define your build process in your web browser or configure it as code in YAML?
 
@@ -43,7 +43,7 @@ steps:
 
 ---
 
-[Tell me more to help me decide](../../actions/build-yaml.md).
+[Learn more about YAML builds](../../actions/build-yaml.md).
 
 ## Get the sample code
 
