@@ -36,7 +36,7 @@ Choose your version control system to get specific instructions for copying the 
 
 [!INCLUDE [include](../_shared/get-sample-code-vsts-tfs-2017-update-2.md)]
 
-# [GitHub](#tab/github)
+# [GitHub repo](#tab/github)
 
 [!INCLUDE [include](../_shared/get-sample-code-github.md)]
 
