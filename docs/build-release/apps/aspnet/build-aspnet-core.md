@@ -12,7 +12,7 @@ ms.topic: get-started-article
 
 # Build your ASP.NET Core app
 
-**VSTS | TFS 2018 | TFS 2017 Update 3**
+**VSTS | TFS 2018 | TFS 2017.3**
 
 [ASP.NET Core](http://www.asp.net/core) is a lean and composable framework for building web and cloud applications. Follow these steps to quickly set up a continuous integration (CI) process for an ASP.NET Core app using Visual Studio Team Services (VSTS) or Team Foundation Server (TFS). The sample app we use here is a Visual Studio solution that has two projects: An ASP.NET Core Web Application project and a Unit Test project (both targeting .Net Core 2.0 framework). This quickstart works for any apps that target the .Net Core 1.1 or 2.0 frameworks.
 
@@ -110,9 +110,7 @@ Next, choose which kind of Git service you're using:
 
  Observe that the new build definition is automatically linked to your repository.
 
-1. If you are creating a build that you want to deploy to Linux, then follow these additional steps:
-
-   1. Select the **.NET Core** publish task, and then clear the **Zip published projects** checkbox.
+1. Are you creating a build that you want to deploy to Linux? If so, then select the **.NET Core** publish task, and then clear the **Zip published projects** checkbox.
   
    > **Why do this?** By default, the build template creates a .ZIP file for deploying to an Azure Web App or a Windows VM.
    This change causes the build to publish a set of uncompressed files and folders suitable for deployment
@@ -135,6 +133,12 @@ To create a definition that is configured as code, you'll modify a YAML file in 
 3. Replace the contents of the file with the following:
 
    [!code-yaml[code](../../actions/_shared/yaml-build-definition-aspnet-core.md)]
+
+1. Are you creating a build that you want to deploy to Linux? If so, then change the `publish` command so that  `zipAfterPublish` is set to `false`
+
+   > **Why do this?** By default, the build template creates a .ZIP file for deploying to an Azure Web App or a Windows VM.
+   This change causes the build to publish a set of uncompressed files and folders suitable for deployment
+   to a Linux VM running the **nginx** web server.
 
 4. Commit your change to the master branch.
 
@@ -170,9 +174,7 @@ The changes you made also modified what the build does. For example, the `dotnet
 
  Select your version control repository. You'll need to authorize access to your repo.
 
-1. If you are creating a build that you want to deploy to Linux, then follow these additional steps:
-
-   1. Select the **.NET Core** publish task, and then clear the **Zip published projects** checkbox.
+1. Are you creating a build that you want to deploy to Linux? If so, then select the **.NET Core** publish task, and then clear the **Zip published projects** checkbox.
   
    > **Why do this?** By default, the build template creates a .ZIP file for deploying to an Azure Web App or a Windows VM.
    This change causes the build to publish a set of uncompressed files and folders suitable for deployment
@@ -193,6 +195,12 @@ In GitHub:
 1. Edit the **.vsts-ci.yml** file in the root of your repo, and replace the contents of the file with the following:
 
    [!code-yaml[code](../../actions/_shared/yaml-build-definition-aspnet-core.md)]
+
+1. Are you creating a build that you want to deploy to Linux? If so, then change the `publish` command so that  `zipAfterPublish` is set to `false`
+
+   > **Why do this?** By default, the build template creates a .ZIP file for deploying to an Azure Web App or a Windows VM.
+   This change causes the build to publish a set of uncompressed files and folders suitable for deployment
+   to a Linux VM running the **nginx** web server.
 
 1. Commit your change to the master branch.
 
