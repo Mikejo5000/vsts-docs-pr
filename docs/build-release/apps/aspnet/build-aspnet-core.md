@@ -30,7 +30,7 @@ Do you want to define your build process in your web browser or configure it as 
 
 **VSTS | TFS**
 
-Advantages include a GUI interface in the web.
+Use a GUI interface in the web.
 
 ![PowerShell script task says "Hello World"](../_shared/_img/powershell-script-hello-world-do-not-publish.png)
 
@@ -38,7 +38,7 @@ Advantages include a GUI interface in the web.
 
 **VSTS**
 
-Advantages include config as code, parallel processing (fan out and fan in), and the ability to test and debug the process locally.
+Advantages include configuration as code, parallel processing (fan out and fan in), and the ability to test and debug the process locally.
 
 ```YAML
 steps:
@@ -114,7 +114,7 @@ Next, choose which kind of Git service you're using:
   
    > **Why do this?** By default, the build template creates a .ZIP file for deploying to an Azure Web App or a Windows VM.
    This change causes the build to publish a set of uncompressed files and folders suitable for deployment
-   to a Linux VM running the **nginx** web server.
+   to a Linux VM running the nginx web server.
 
 1. Click the **Triggers** tab in the build definition. Enable the **Continuous Integration** trigger. This will ensure that the build process is automatically triggered every time you commit a change to your repository.
 
