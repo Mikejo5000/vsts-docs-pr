@@ -124,7 +124,7 @@ You'll create your build definition after you decide on your deployment target.
 
 ## Choose your deployment target
 
-## # Azure web app or IIS server
+##   Azure web app or IIS server
 
 # [VSTS or TFS repo](#tab/vsts/web)
 
@@ -136,7 +136,7 @@ You'll create your build definition after you decide on your deployment target.
 
 ---
 
-## # Linux VM
+##   Linux VM
 
 # [VSTS or TFS repo](#tab/vsts/web)
 
@@ -148,7 +148,7 @@ You'll create your build definition after you decide on your deployment target.
 
 ---
 
-## # Container service
+##   Container service
 
 # [VSTS or TFS repo](#tab/vsts/web)
 
