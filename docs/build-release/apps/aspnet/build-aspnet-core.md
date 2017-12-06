@@ -143,7 +143,7 @@ Commit this change to the master branch:
 
 # [Linux](#tab/deploy-linux/web)
 
-1. Select **Tasks** or the phase that contains your tasks.
+1. Select **Tasks**.
 
 1. Select the **.NET Core** publish task, and then clear the **Zip published projects** checkbox.
   
@@ -197,7 +197,7 @@ steps:
 
 To deploy to a container service (such as Azure web apps for containers, or a Kubernetes cluster):
 
-1. Select **Tasks** or the phase that contains your tasks.
+1. Select **Tasks**.
 
 1. Select the **.NET Core** publish task and disable or remove it.
 
