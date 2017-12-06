@@ -71,7 +71,7 @@ Next, choose which kind of Git service you're using:
 
 [!INCLUDE [include](../_shared/get-sample-code-other-repos-vsts.md)]
 
-## Set up continuous integration
+## Create the CI process definition
 
 [!INCLUDE [include](../../_shared/ci-quickstart-intro.md)]
 
@@ -81,8 +81,6 @@ Next, choose which kind of Git service you're using:
 
 [//]: # (TODO: [!INCLUDE [include](_shared/aspnet-core-build-tasks.md)
 
-
-### Create the definition
 
 # [VSTS or TFS repo](#tab/vsts/web)
 
@@ -100,57 +98,9 @@ Next, choose which kind of Git service you're using:
 
  You now see all the tasks that were automatically added to the build definition by the template. These are the steps that will automatically run every time you check in code.
 
-1. For the **Default agent queue**:
-
- * **VSTS:** Select _Hosted VS2017_. This is how you can use our pool of agents that have the software you need to build your app.
-
- * **TFS:** Select a queue that includes a [Windows build agent](../../actions/agents/v2-windows.md).
-
-1. Click **Get sources** and then:
-
- Observe that the new build definition is automatically linked to your repository.
-
-1. Are you creating a build that you want to deploy to Linux? If so, then select the **.NET Core** publish task, and then clear the **Zip published projects** checkbox.
-  
-   > **Why do this?** By default, the build template creates a .ZIP file for deploying to an Azure Web App or a Windows VM.
-   This change causes the build to publish a set of uncompressed files and folders suitable for deployment
-   to a Linux VM running the nginx web server.
-
-1. Click the **Triggers** tab in the build definition. Enable the **Continuous Integration** trigger. This will ensure that the build process is automatically triggered every time you commit a change to your repository.
-
-1. Click **Save and queue** to kick off your first build. On the **Queue build** dialog box, click **Queue**.
-
-1. A new build is started. You'll see a link to the new build on the top of the page. Click the link to watch the new build as it happens.
-
 # [VSTS or TFS repo](#tab/vsts/yaml)
 
-To create a definition that is configured as code, you'll modify a YAML file in the repo root that has a well-known name: **.vsts-ci.yml**. The first time you change this file, VSTS automatically uses it to create your build definition.
-
-1. Navigate to the **Code** hub, choose the **Files** tab, and then choose the repository you created in the above steps.
-
-2. Choose the **.vsts-ci.yml** file, and then click **Edit**.
-
-3. Replace the contents of the file with the following:
-
-   [!code-yaml[code](../../actions/_shared/yaml-build-definition-aspnet-core.md)]
-
-1. Are you creating a build that you want to deploy to Linux? If so, then change the `publish` command so that  `zipAfterPublish` is set to `false`
-
-   > **Why do this?** By default, the build template creates a .ZIP file for deploying to an Azure Web App or a Windows VM.
-   This change causes the build to publish a set of uncompressed files and folders suitable for deployment
-   to a Linux VM running the **nginx** web server.
-
-4. Commit your change to the master branch.
-
-5. Navigate to the **Build and Release** hub.
-
-6. Observe that there's a new build definition named _{name-of-your-repo} YAML CI_. A build is queued; its status could be either not started or running. Click the number of the build: _{year}{month}{day}.1_.
-
-7. In the left column of the running build, click **Job**. After a hosted agent is assigned to your job and the agent is initialized, then you'll see information about the build in the console.
-
-For this example, to learn some of the basics, you changed the YAML file to use the  `dotNetCoreCLI` task instead of calling the `dotnet` command directly in a script. The changes you made affect how the build output is organized. Each step is shown and can be inspected in the build summary, instead of all the output combined in one log from a single script.
-
-The changes you made also modified what the build does. For example, the `dotnet restore` command you replaced creates .DLL files, but it doesn't create a web deployment file. After you've completed the above steps, your build instead uses the `dotNetCoreCLI` task, which in addition to creating the .DLL file, also creates a web deployment package (a .ZIP file) that is more efficient to deploy.
+Your definition will be automatically created when you create the YAML file.
 
 # [GitHub repo](#tab/github/web)
 
@@ -228,6 +178,68 @@ In VSTS:
 
 [//]: # (TODO:> [!TIP])
 [//]: # (TODO:> To learn more about GitHub CI builds, see [Define CI build process for your Git repo](#)
+
+## Finish the CI process definition
+
+# [VSTS or TFS repo](#tab/vsts/web)
+
+1. For the **Default agent queue**:
+
+ * **VSTS:** Select _Hosted VS2017_. This is how you can use our pool of agents that have the software you need to build your app.
+
+ * **TFS:** Select a queue that includes a [Windows build agent](../../actions/agents/v2-windows.md).
+
+1. Click **Get sources** and then:
+
+ Observe that the new build definition is automatically linked to your repository.
+
+1. Are you creating a build that you want to deploy to Linux? If so, then select the **.NET Core** publish task, and then clear the **Zip published projects** checkbox.
+  
+   > **Why do this?** By default, the build template creates a .ZIP file for deploying to an Azure Web App or a Windows VM.
+   This change causes the build to publish a set of uncompressed files and folders suitable for deployment
+   to a Linux VM running the nginx web server.
+
+1. Click the **Triggers** tab in the build definition. Enable the **Continuous Integration** trigger. This will ensure that the build process is automatically triggered every time you commit a change to your repository.
+
+1. Click **Save and queue** to kick off your first build. On the **Queue build** dialog box, click **Queue**.
+
+1. A new build is started. You'll see a link to the new build on the top of the page. Click the link to watch the new build as it happens.
+
+# [VSTS or TFS repo](#tab/vsts/yaml)
+
+To create a definition that is configured as code, you'll modify a YAML file in the repo root that has a well-known name: **.vsts-ci.yml**. The first time you change this file, VSTS automatically uses it to create your build definition.
+
+1. Navigate to the **Code** hub, choose the **Files** tab, and then choose the repository you created in the above steps.
+
+2. Choose the **.vsts-ci.yml** file, and then click **Edit**.
+
+3. Replace the contents of the file with the following:
+
+   [!code-yaml[code](../../actions/_shared/yaml-build-definition-aspnet-core.md)]
+
+1. Are you creating a build that you want to deploy to Linux? If so, then change the `publish` command so that  `zipAfterPublish` is set to `false`
+
+   > **Why do this?** By default, the build template creates a .ZIP file for deploying to an Azure Web App or a Windows VM.
+   This change causes the build to publish a set of uncompressed files and folders suitable for deployment
+   to a Linux VM running the **nginx** web server.
+
+4. Commit your change to the master branch.
+
+5. Navigate to the **Build and Release** hub.
+
+6. Observe that there's a new build definition named _{name-of-your-repo} YAML CI_. A build is queued; its status could be either not started or running. Click the number of the build: _{year}{month}{day}.1_.
+
+7. In the left column of the running build, click **Job**. After a hosted agent is assigned to your job and the agent is initialized, then you'll see information about the build in the console.
+
+For this example, to learn some of the basics, you changed the YAML file to use the  `dotNetCoreCLI` task instead of calling the `dotnet` command directly in a script. The changes you made affect how the build output is organized. Each step is shown and can be inspected in the build summary, instead of all the output combined in one log from a single script.
+
+The changes you made also modified what the build does. For example, the `dotnet restore` command you replaced creates .DLL files, but it doesn't create a web deployment file. After you've completed the above steps, your build instead uses the `dotNetCoreCLI` task, which in addition to creating the .DLL file, also creates a web deployment package (a .ZIP file) that is more efficient to deploy.
+
+# [GitHub repo](#tab/github/web)
+
+# [GitHub repo](#tab/github/yaml)
+
+---
 
 ## View the build summary
 
