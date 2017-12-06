@@ -124,11 +124,11 @@ You'll create your build definition after you decide on your deployment target.
 
 ## Choose your deployment target
 
-### # Azure web app or IIS server
+## # Azure web app or IIS server
 
-### # Linux VM
+## # Linux VM
 
-### # Container service
+## # Container service
 
 ## Finish the CI process definition
 
