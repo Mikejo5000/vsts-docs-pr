@@ -126,9 +126,39 @@ You'll create your build definition after you decide on your deployment target.
 
 ## # Azure web app or IIS server
 
+# [VSTS or TFS repo](#tab/vsts/web)
+
+# [VSTS or TFS repo](#tab/vsts/yaml)
+
+# [GitHub repo](#tab/github/web)
+
+# [GitHub repo](#tab/github/yaml)
+
+---
+
 ## # Linux VM
 
+# [VSTS or TFS repo](#tab/vsts/web)
+
+# [VSTS or TFS repo](#tab/vsts/yaml)
+
+# [GitHub repo](#tab/github/web)
+
+# [GitHub repo](#tab/github/yaml)
+
+---
+
 ## # Container service
+
+# [VSTS or TFS repo](#tab/vsts/web)
+
+# [VSTS or TFS repo](#tab/vsts/yaml)
+
+# [GitHub repo](#tab/github/web)
+
+# [GitHub repo](#tab/github/yaml)
+
+---
 
 ## Finish the CI process definition
 
