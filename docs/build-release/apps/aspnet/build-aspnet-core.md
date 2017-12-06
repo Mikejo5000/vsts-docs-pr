@@ -98,8 +98,6 @@ Next, choose which kind of Git service you're using:
 
  ![Screenshot showing dotnet core template](_shared/_img/apply-aspnet-core-build-template.png)
 
- You now see all the tasks that were automatically added to the build definition by the template. These are the steps that will automatically run every time you check in code.
-
 # [VSTS or TFS repo](#tab/vsts/yaml)
 
 Your definition will be automatically created when you create the YAML file.
@@ -114,8 +112,6 @@ Your definition will be automatically created when you create the YAML file.
 
  ![Screenshot showing dotnet core template](_shared/_img/apply-aspnet-core-build-template.png)
 
- You now see all the tasks that were automatically added to the build definition by the template. These are the steps that will automatically run every time you check in code.
-
 # [GitHub repo](#tab/github/yaml)
 
 You'll create your build definition after you decide on your deployment target.
@@ -128,11 +124,33 @@ You'll create your build definition after you decide on your deployment target.
 
 # [VSTS or TFS repo](#tab/vsts/web)
 
+All the tasks you need were automatically added to the build definition by the template. These are the steps that will automatically run every time you check in code. Proceed to finish the CI process definition.
+
 # [VSTS or TFS repo](#tab/vsts/yaml)
+
+To create a definition that is configured as code, you'll modify a YAML file in the repo root that has a well-known name: **.vsts-ci.yml**. The first time you change this file, VSTS automatically uses it to create your build definition.
+
+1. Navigate to the **Code** hub, choose the **Files** tab, and then choose the repository you created in the above steps.
+
+2. Choose the **.vsts-ci.yml** file, and then click **Edit**.
+
+3. Replace the contents of the file with the following:
+
+   [!code-yaml[code](../../actions/_shared/yaml-build-definition-aspnet-core.md)]
 
 # [GitHub repo](#tab/github/web)
 
+All the tasks you need were automatically added to the build definition by the template. These are the steps that will automatically run every time you check in code. Proceed to finish the CI process definition.
+
 # [GitHub repo](#tab/github/yaml)
+
+To create a definition that is configured as code, you'll modify a YAML file in the repo root that has a well-known name: **.vsts-ci.yml**. You'll then create a build definition that points to the YAML file.
+
+In GitHub:
+
+1. Edit the **.vsts-ci.yml** file in the root of your repo, and replace the contents of the file with the following:
+
+   [!code-yaml[code](../../actions/_shared/yaml-build-definition-aspnet-core.md)]
 
 ---
 
@@ -140,9 +158,67 @@ You'll create your build definition after you decide on your deployment target.
 
 # [VSTS or TFS repo](#tab/vsts/web)
 
+Select the **.NET Core** publish task, and then clear the **Zip published projects** checkbox.
+  
+> **Why do this?** 
+By default, the build template creates a .ZIP file for deploying to an Azure Web App or a Windows VM.
+This change causes the build to publish a set of uncompressed files and folders suitable for deployment to a Linux VM running the nginx web server.
+
 # [VSTS or TFS repo](#tab/vsts/yaml)
 
+To create a definition that is configured as code, you'll modify a YAML file in the repo root that has a well-known name: **.vsts-ci.yml**. The first time you change this file, VSTS automatically uses it to create your build definition.
+
+1. Navigate to the **Code** hub, choose the **Files** tab, and then choose the repository you created in the above steps.
+
+2. Choose the **.vsts-ci.yml** file, and then click **Edit**.
+
+3. Replace the contents of the file with the following:
+
+   ```yaml
+   steps:
+
+   - task: dotNetCoreCLI@1
+     inputs:
+       command: restore
+       projects: "**/*.csproj"
+       displayName: dotnet restore
+   
+   - task: dotNetCoreCLI@1
+     inputs:
+       command: build
+       projects: "**/*.csproj"
+       arguments: --configuration release
+       displayName: dotnet build
+   
+   - task: dotNetCoreCLI@1
+     inputs:
+       command: test 
+       projects: "**/*Tests/*.csproj"
+       arguments: --configuration release
+       displayName: dotnet build
+   
+   - task: dotNetCoreCLI@1
+     inputs:
+       command: publish
+       arguments: --configuration release --output $(Build.ArtifactStagingDirectory)
+       zipAfterPublish: false
+       displayName: dotnet publish
+   
+   - task: publishBuildArtifacts@1
+     inputs:
+       PathtoPublish: $(Build.ArtifactStagingDirectory)
+       ArtifactName: drop
+       ArtifactType: Container
+       displayName: Publish the artifacts
+   ```
+
 # [GitHub repo](#tab/github/web)
+
+Select the **.NET Core** publish task, and then clear the **Zip published projects** checkbox.
+  
+> **Why do this?** 
+By default, the build template creates a .ZIP file for deploying to an Azure Web App or a Windows VM.
+This change causes the build to publish a set of uncompressed files and folders suitable for deployment to a Linux VM running the nginx web server.
 
 # [GitHub repo](#tab/github/yaml)
 
@@ -174,12 +250,6 @@ You'll create your build definition after you decide on your deployment target.
 
  Observe that the new build definition is automatically linked to your repository.
 
-1. Are you creating a build that you want to deploy to Linux? If so, then select the **.NET Core** publish task, and then clear the **Zip published projects** checkbox.
-  
-   > **Why do this?** By default, the build template creates a .ZIP file for deploying to an Azure Web App or a Windows VM.
-   This change causes the build to publish a set of uncompressed files and folders suitable for deployment
-   to a Linux VM running the nginx web server.
-
 1. Click the **Triggers** tab in the build definition. Enable the **Continuous Integration** trigger. This will ensure that the build process is automatically triggered every time you commit a change to your repository.
 
 1. Click **Save and queue** to kick off your first build. On the **Queue build** dialog box, click **Queue**.
@@ -188,21 +258,7 @@ You'll create your build definition after you decide on your deployment target.
 
 # [VSTS or TFS repo](#tab/vsts/yaml)
 
-To create a definition that is configured as code, you'll modify a YAML file in the repo root that has a well-known name: **.vsts-ci.yml**. The first time you change this file, VSTS automatically uses it to create your build definition.
 
-1. Navigate to the **Code** hub, choose the **Files** tab, and then choose the repository you created in the above steps.
-
-2. Choose the **.vsts-ci.yml** file, and then click **Edit**.
-
-3. Replace the contents of the file with the following:
-
-   [!code-yaml[code](../../actions/_shared/yaml-build-definition-aspnet-core.md)]
-
-1. Are you creating a build that you want to deploy to Linux? If so, then change the `publish` command so that  `zipAfterPublish` is set to `false`
-
-   > **Why do this?** By default, the build template creates a .ZIP file for deploying to an Azure Web App or a Windows VM.
-   This change causes the build to publish a set of uncompressed files and folders suitable for deployment
-   to a Linux VM running the **nginx** web server.
 
 4. Commit your change to the master branch.
 
@@ -228,12 +284,6 @@ The changes you made also modified what the build does. For example, the `dotnet
 
  Select your version control repository. You'll need to authorize access to your repo.
 
-1. Are you creating a build that you want to deploy to Linux? If so, then select the **.NET Core** publish task, and then clear the **Zip published projects** checkbox.
-  
-   > **Why do this?** By default, the build template creates a .ZIP file for deploying to an Azure Web App or a Windows VM.
-   This change causes the build to publish a set of uncompressed files and folders suitable for deployment
-   to a Linux VM running the **nginx** web server.
-
 1. Click the **Triggers** tab in the build definition. Enable the **Continuous Integration** trigger. This will ensure that the build process is automatically triggered every time you commit a change to your repository.
 
 1. Click **Save and queue** to kick off your first build. On the **Queue build** dialog box, click **Queue**.
@@ -242,13 +292,7 @@ The changes you made also modified what the build does. For example, the `dotnet
 
 # [GitHub repo](#tab/github/yaml)
 
-To create a definition that is configured as code, you'll modify a YAML file in the repo root that has a well-known name: **.vsts-ci.yml**. You'll then create a build definition that points to the YAML file.
 
-In GitHub:
-
-1. Edit the **.vsts-ci.yml** file in the root of your repo, and replace the contents of the file with the following:
-
-   [!code-yaml[code](../../actions/_shared/yaml-build-definition-aspnet-core.md)]
 
 1. Are you creating a build that you want to deploy to Linux? If so, then change the `publish` command so that  `zipAfterPublish` is set to `false`
 
