@@ -110,6 +110,8 @@ To create a definition that is configured as code, you'll modify a YAML file in 
 
 # [GitHub repo](#tab/github/web)
 
+In VSTS:
+
 1. Create a new build definition.
 
  Navigate to the **Builds** tab of the **Build and Release** hub in VSTS or TFS, and then choose **+ New**. You're asked to **Select a template** for the new build definition.
@@ -204,7 +206,7 @@ To deploy to a container service (such as Azure web apps for containers, or a Ku
 1. Select the **Publish build artifacts** task and then disable or remove it.
 
 > **Why do this?** 
-You don't need build artifacts to deploy to a container.
+You don't need artifacts to deploy to a container.
 
 # [Container](#tab/deploy-container/yaml)
 
