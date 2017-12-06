@@ -132,13 +132,25 @@ In GitHub:
 
 # [Azure web app or IIS server](#tab/deploy-windows/web)
 
+All the tasks you need were automatically added to the build definition by the template. These are the steps that will automatically run every time you check in code. Proceed to finish the CI process definition.
+
 # [Azure web app or IIS server](#tab/deploy-windows/yaml)
+
+Commit this change to the master branch:
 
 [!code-yaml[code](../../actions/_shared/yaml-build-definition-aspnet-core.md)]
 
 # [Linux VM](#tab/deploy-linux/web)
 
+Select the **.NET Core** publish task, and then clear the **Zip published projects** checkbox.
+  
+> **Why do this?** 
+By default, the build template creates a .ZIP file for deploying to an Azure Web App or a Windows VM.
+This change causes the build to publish a set of uncompressed files and folders suitable for deployment to a Linux VM running the nginx web server.
+
 # [Linux VM](#tab/deploy-linux/yaml)
+
+Commit this change to the master branch:
 
 ```yaml
 steps:
@@ -182,6 +194,8 @@ steps:
 
 # [Container](#tab/container/yaml)
 
+Commit this change to the master branch:
+
 ```yaml
 steps:
 
@@ -215,121 +229,6 @@ steps:
 
 ---
 
-## ### Azure web app or IIS server
-
-# [VSTS or TFS repo](#tab/vsts/web)
-
-All the tasks you need were automatically added to the build definition by the template. These are the steps that will automatically run every time you check in code. Proceed to finish the CI process definition.
-
-# [VSTS or TFS repo](#tab/vsts/yaml)
-
-To create a definition that is configured as code, you'll modify a YAML file in the repo root that has a well-known name: **.vsts-ci.yml**. The first time you change this file, VSTS automatically uses it to create your build definition.
-
-1. Navigate to the **Code** hub, choose the **Files** tab, and then choose the repository you created in the above steps.
-
-2. Choose the **.vsts-ci.yml** file, and then click **Edit**.
-
-3. Replace the contents of the file with the following:
-
-   [!code-yaml[code](../../actions/_shared/yaml-build-definition-aspnet-core.md)]
-
-# [GitHub repo](#tab/github/web)
-
-All the tasks you need were automatically added to the build definition by the template. These are the steps that will automatically run every time you check in code. Proceed to finish the CI process definition.
-
-# [GitHub repo](#tab/github/yaml)
-
-To create a definition that is configured as code, you'll modify a YAML file in the repo root that has a well-known name: **.vsts-ci.yml**. You'll then create a build definition that points to the YAML file.
-
-In GitHub:
-
-1. Edit the **.vsts-ci.yml** file in the root of your repo, and replace the contents of the file with the following:
-
-   [!code-yaml[code](../../actions/_shared/yaml-build-definition-aspnet-core.md)]
-
----
-
-## ### Linux VM
-
-# [VSTS or TFS repo](#tab/vsts/web)
-
-Select the **.NET Core** publish task, and then clear the **Zip published projects** checkbox.
-  
-> **Why do this?** 
-By default, the build template creates a .ZIP file for deploying to an Azure Web App or a Windows VM.
-This change causes the build to publish a set of uncompressed files and folders suitable for deployment to a Linux VM running the nginx web server.
-
-# [VSTS or TFS repo](#tab/vsts/yaml)
-
-To create a definition that is configured as code, you'll modify a YAML file in the repo root that has a well-known name: **.vsts-ci.yml**. The first time you change this file, VSTS automatically uses it to create your build definition.
-
-1. Navigate to the **Code** hub, choose the **Files** tab, and then choose the repository you created in the above steps.
-
-2. Choose the **.vsts-ci.yml** file, and then click **Edit**.
-
-3. Replace the contents of the file with the following:
-
-   ```yaml
-   steps:
-
-   - task: dotNetCoreCLI@1
-     inputs:
-       command: restore
-       projects: "**/*.csproj"
-       displayName: dotnet restore
-   
-   - task: dotNetCoreCLI@1
-     inputs:
-       command: build
-       projects: "**/*.csproj"
-       arguments: --configuration release
-       displayName: dotnet build
-   
-   - task: dotNetCoreCLI@1
-     inputs:
-       command: test 
-       projects: "**/*Tests/*.csproj"
-       arguments: --configuration release
-       displayName: dotnet build
-   
-   - task: dotNetCoreCLI@1
-     inputs:
-       command: publish
-       arguments: --configuration release --output $(Build.ArtifactStagingDirectory)
-       zipAfterPublish: false
-       displayName: dotnet publish
-   
-   - task: publishBuildArtifacts@1
-     inputs:
-       PathtoPublish: $(Build.ArtifactStagingDirectory)
-       ArtifactName: drop
-       ArtifactType: Container
-       displayName: Publish the artifacts
-   ```
-
-# [GitHub repo](#tab/github/web)
-
-Select the **.NET Core** publish task, and then clear the **Zip published projects** checkbox.
-  
-> **Why do this?** 
-By default, the build template creates a .ZIP file for deploying to an Azure Web App or a Windows VM.
-This change causes the build to publish a set of uncompressed files and folders suitable for deployment to a Linux VM running the nginx web server.
-
-# [GitHub repo](#tab/github/yaml)
-
----
-
-## ### Container service
-
-# [VSTS or TFS repo](#tab/vsts/web)
-
-# [VSTS or TFS repo](#tab/vsts/yaml)
-
-# [GitHub repo](#tab/github/web)
-
-# [GitHub repo](#tab/github/yaml)
-
----
 
 ## Finish the CI process definition
 
@@ -352,10 +251,6 @@ This change causes the build to publish a set of uncompressed files and folders 
 1. A new build is started. You'll see a link to the new build on the top of the page. Click the link to watch the new build as it happens.
 
 # [VSTS or TFS repo](#tab/vsts/yaml)
-
-
-
-4. Commit your change to the master branch.
 
 5. Navigate to the **Build and Release** hub.
 
@@ -386,16 +281,6 @@ The changes you made also modified what the build does. For example, the `dotnet
 1. A new build is started. You'll see a link to the new build on the top of the page. Click the link to watch the new build as it happens.
 
 # [GitHub repo](#tab/github/yaml)
-
-
-
-1. Are you creating a build that you want to deploy to Linux? If so, then change the `publish` command so that  `zipAfterPublish` is set to `false`
-
-   > **Why do this?** By default, the build template creates a .ZIP file for deploying to an Azure Web App or a Windows VM.
-   This change causes the build to publish a set of uncompressed files and folders suitable for deployment
-   to a Linux VM running the **nginx** web server.
-
-1. Commit your change to the master branch.
 
 In VSTS:
 
