@@ -140,15 +140,17 @@ Commit this change to the master branch:
 
 [!code-yaml[code](../../actions/_shared/yaml-build-definition-aspnet-core.md)]
 
-# [Linux VM](#tab/deploy-linux/web)
+# [Linux](#tab/deploy-linux/web)
 
-Select the **.NET Core** publish task, and then clear the **Zip published projects** checkbox.
+1. Select **Tasks** or the phase that contains your tasks.
+
+1. Select the **.NET Core** publish task, and then clear the **Zip published projects** checkbox.
   
 > **Why do this?** 
 By default, the build template creates a .ZIP file for deploying to an Azure Web App or a Windows VM.
 This change causes the build to publish a set of uncompressed files and folders suitable for deployment to a Linux VM running the nginx web server.
 
-# [Linux VM](#tab/deploy-linux/yaml)
+# [Linux](#tab/deploy-linux/yaml)
 
 Commit this change to the master branch:
 
@@ -190,9 +192,20 @@ steps:
     displayName: Publish the artifacts
 ```
 
-# [Container](#tab/container/web)
+# [Container](#tab/deploy-container/web)
 
-# [Container](#tab/container/yaml)
+To deploy to a container service (such as Azure web apps for containers, or a Kubernetes cluster):
+
+1. Select **Tasks** or the phase that contains your tasks.
+
+1. Select the **.NET Core** publish task and disable or remove it.
+
+1. Select the **Publish build artifacts** task and then disable or remove it.
+
+> **Why do this?** 
+You don't need build artifacts to deploy to a container.
+
+# [Container](#tab/deploy-container/yaml)
 
 Commit this change to the master branch:
 
@@ -228,7 +241,6 @@ steps:
 ```
 
 ---
-
 
 ## Finish the CI process definition
 
@@ -310,4 +322,28 @@ In VSTS:
 
 ## Next steps
 
-[!INCLUDE [include](../_shared/ci-web-app-next-steps-with-containers.md)]
+You've just put your own CI build process in place to automatically build and validate whatever code is checked in by your team. What do you want to do next?
+
+### Deploy your app
+
+# [Azure web app or IIS server](#tab/deploy-windows)
+
+See one of the following: <ul><li>[Deploy to Azure Web App](../cd/deploy-webdeploy-webapps.md)</li><li>[Deploy to a Windows VM](../cd/deploy-webdeploy-iis-deploygroups.md)</li></ul>
+
+# [Linux](#tab/deploy-linux)
+
+See [Deploy to a Linux Virtual Machine](../cd/deploy-linuxvm-deploygroups.md).
+
+# [Container](#tab/deploy-container)
+
+To deploy to a container service (such as Azure web apps for containers, or a Kubernetes cluster), see [Build and push a container for your app](../containers/build.md).
+
+---
+
+### Extend to other Git workflows
+
+Now that you have a CI build process for your master branch, you can extend the process to work with other branches in your repository, or to validate all pull requests. See:
+
+* [CI builds for Git in VSTS](../../actions/ci-build-git.md)
+
+* [CI builds for GitHub](../../actions/ci-build-github.md)
