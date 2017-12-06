@@ -100,7 +100,13 @@ Next, choose which kind of Git service you're using:
 
 # [VSTS or TFS repo](#tab/vsts/yaml)
 
-Your definition will be automatically created when you create the YAML file.
+To create a definition that is configured as code, you'll modify a YAML file in the repo root that has a well-known name: **.vsts-ci.yml**. The first time you change this file, VSTS automatically uses it to create your build definition.
+
+1. Navigate to the **Code** hub, choose the **Files** tab, and then choose the repository you created in the above steps.
+
+1. Choose the **.vsts-ci.yml** file, and then click **Edit**.
+
+1. Replace the contents of the file with code from the next section.
 
 # [GitHub repo](#tab/github/web)
 
@@ -114,11 +120,100 @@ Your definition will be automatically created when you create the YAML file.
 
 # [GitHub repo](#tab/github/yaml)
 
-You'll create your build definition after you decide on your deployment target.
+To create a definition that is configured as code, you'll modify a YAML file in the repo root that has a well-known name: **.vsts-ci.yml**. You'll then create a build definition that points to the YAML file.
+
+In GitHub:
+
+1. Edit the **.vsts-ci.yml** file in the root of your repo, and replace the contents of the file with code from the next section.
 
 ---
 
 ## Choose your deployment target
+
+# [Azure web app or IIS server](#tab/deploy-windows/web)
+
+# [Azure web app or IIS server](#tab/deploy-windows/yaml)
+
+[!code-yaml[code](../../actions/_shared/yaml-build-definition-aspnet-core.md)]
+
+# [Linux VM](#tab/deploy-linux/web)
+
+# [Linux VM](#tab/deploy-linux/yaml)
+
+```yaml
+steps:
+
+- task: dotNetCoreCLI@1
+  inputs:
+    command: restore
+    projects: "**/*.csproj"
+    displayName: dotnet restore
+   
+- task: dotNetCoreCLI@1
+  inputs:
+    command: build
+    projects: "**/*.csproj"
+    arguments: --configuration release
+    displayName: dotnet build
+   
+- task: dotNetCoreCLI@1
+  inputs:
+    command: test 
+    projects: "**/*Tests/*.csproj"
+    arguments: --configuration release
+    displayName: dotnet build
+   
+- task: dotNetCoreCLI@1
+  inputs:
+    command: publish
+    arguments: --configuration release --output $(Build.ArtifactStagingDirectory)
+    zipAfterPublish: false
+    displayName: dotnet publish
+   
+- task: publishBuildArtifacts@1
+  inputs:
+    PathtoPublish: $(Build.ArtifactStagingDirectory)
+    ArtifactName: drop
+    ArtifactType: Container
+    displayName: Publish the artifacts
+```
+
+# [Container](#tab/container/web)
+
+# [Container](#tab/container/yaml)
+
+```yaml
+steps:
+
+- task: dotNetCoreCLI@1
+  inputs:
+    command: restore
+    projects: "**/*.csproj"
+    displayName: dotnet restore
+   
+- task: dotNetCoreCLI@1
+  inputs:
+    command: build
+    projects: "**/*.csproj"
+    arguments: --configuration release
+    displayName: dotnet build
+   
+- task: dotNetCoreCLI@1
+  inputs:
+    command: test 
+    projects: "**/*Tests/*.csproj"
+    arguments: --configuration release
+    displayName: dotnet build
+   
+- task: dotNetCoreCLI@1
+  inputs:
+    command: publish
+    arguments: --configuration release --output $(Build.ArtifactStagingDirectory)
+    zipAfterPublish: false
+    displayName: dotnet publish   
+```
+
+---
 
 ## ### Azure web app or IIS server
 
