@@ -18,13 +18,13 @@ Your Kanban board provides you with a visual interactive space for you and your 
 
 Each card on the board corresponds to a user story or work item the team is tracking.
 
-<img src="_img/kanban-basics-intro.png" alt="Kanban board, Agile template" style="border: 2px solid #C3C3C3;" />  
+<img src="_img/kanban-basics-intro.png" alt="Kanban board, Agile template" style="border: 1px solid #C3C3C3;" />  
 
 Your Kanban board is fully customizable to support your team's workflow. 
 
 The main steps you'll typically want to follow are outlined below. 
 
-[![Configure Kanban board](../backlogs/_img/overview/gs-planning-configure-kanban.png)](kanban-basics.md)[![Update the Kanban board](../backlogs/_img/overview/gs-planning-track-kanban.png)](kanban-basics.md)[![Monitor progress](../backlogs/_img/overview/gs-planning-monitor-kanban.png)](../../report/guidance/cumulative-flow.md)
+[![Configure Kanban board](../backlogs/_img/overview/gs-planning-configure-kanban.png)](kanban-basics.md)[![Update the Kanban board](../backlogs/_img/overview/gs-planning-track-kanban.png)](kanban-basics.md)[![Monitor progress](../backlogs/_img/overview/gs-planning-monitor-kanban.png)](../../report/dashboards/cumulative-flow.md)
 
 Once you've configured your Kanban board, you can add work items directly to the board. You then update the status of work by dragging a card to another column on the Kanban board. You can even change the order of items as you move a card to a new column.   
 

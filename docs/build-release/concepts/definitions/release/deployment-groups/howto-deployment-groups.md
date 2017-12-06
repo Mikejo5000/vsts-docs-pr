@@ -6,13 +6,12 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+ms.date: 11/14/2017
 ---
 
 # How to: Use deployment groups
 
->**VSTS:** Deployment groups are not yet available to all VSTS accounts.  
->**TFS:** At present, deployment groups are not available in Team Foundation Server.
+**VSTS | TFS 2018**
 
 ## View and manage deployment groups
 

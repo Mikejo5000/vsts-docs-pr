@@ -6,7 +6,7 @@ ms.technology: vs-devops-setup
 ms.assetid: 19ac647f-04c1-4ddd-9953-b3ecfa0f1457
 ms.manager: douge
 ms.author: billchi
-ms.date: 10/6/2017
+ms.date: 11/13/2017
 ---
 
 #	Add account users for Visual Studio Team Services (VSTS)
@@ -69,16 +69,20 @@ link to the account page.
  > existing Microsoft account**.  After completing those steps, follow the steps below to add the foreign Azure AD 
  > user to VSTS.
 
-![Click the Add Users button](_img/user-hub/add-users-button.png)
+
+Go to the User Hub:
+
+![go to the user hub](_img/_shared/users-hub-updated.png)
+
+Choose **Add new users** below "Manage users".
+
+![Click the Add Users button](_img/user-hub/add-users-button-718.png)
+
+Then fill in the "Add new users" dialog:
 
 ![Add users by inviting them to the account](_img/user-hub/add-users.png)
 
-
-[Manage users in table view](manage-users-table-view.md)
-
+Next steps: [Manage users in table view](manage-users-table-view.md)
 
 
-## Troubleshooting
-
-[Troubleshooting](faq-add-delete-users.md)
 

@@ -13,12 +13,12 @@ ms.date: 09/29/2017
 
 # View, run, or email a work item query  
 
-<b>VSTS</b> 
+<b>VSTS | TFS 2018</b> 
 
 To find work items assigned to you or your team, run a query. A number of work item queries are predefined with your process. Also, members of your team may have created shared queries that you can view and run. Oftentimes, it's easier to define a new query by building on the query definition that's already available to you. 
 
 >[!NOTE]  
->**Feature availability**: The New Queries experience is supported on VSTS. To learn more, see [New Queries experience](queries-preview.md).  
+>**Feature availability**: The New Queries experience is supported on VSTS and TFS 2018 and later versions. To learn more, see [New Queries experience](queries-preview.md).  
 
 By default, all contributors and stakeholders can view and run all shared queries. You can change the permissions set for a shared query folder or shared query. For details, see [Set query permissions](set-query-permissions.md).  
 
@@ -36,11 +36,11 @@ Use this topic to learn:
 
 0. From your web browser, open the **Work** hub, **Queries** page. If you don't have a team project yet, create one in [VSTS](../../user-guide/sign-up-invite-teammates.md).   
  
-	<img src="_img/view-run-queries/open-hub-page.png" alt="Web portal, choose Work hub, Queries" style="border: 2px solid #C3C3C3;" /> 
+	<img src="_img/view-run-queries/open-hub-page.png" alt="Web portal, choose Work hub, Queries" style="border: 1px solid #C3C3C3;" /> 
 
 0. If you see the following message, click **Try it!** to enable the new queries experience.   
  
-	<img src="_img/view-run-queries/try-new-queries-experience.png" alt="Web portal, choose Work hub, Queries" style="border: 2px solid #C3C3C3;" /> 
+	<img src="_img/view-run-queries/try-new-queries-experience.png" alt="Web portal, choose Work hub, Queries" style="border: 1px solid #C3C3C3;" /> 
 
 	Otherwise, you can enable it from the [Preview features menu](../../collaborate/preview-features.md). 
  
@@ -53,7 +53,7 @@ Use this topic to learn:
 
 0. Click **All** to open the page where you can view all queries you've defined or that are shared within your team project. Expand **My Queries** as needed.
 
-	<img src="_img/view-run-queries/queries-all.png" alt="Web portal, choose Work hub, Queries, All page" style="border: 2px solid #C3C3C3;" />  
+	<img src="_img/view-run-queries/queries-all.png" alt="Web portal, choose Work hub, Queries, All page" style="border: 1px solid #C3C3C3;" />  
 	 
 	To view all work items assigned to you, click **Assigned to me**. This query uses the **@Me**  macro to list all work items assigned to you.  
 	To view all work items you are following, click **Followed work items**. This query uses the **@Follows**  macro (ID in @Follows) to list all work items you've elected to follow. To learn more, see [Follow a work item or pull request](../../collaborate/follow-work-items.md).   
@@ -112,13 +112,13 @@ From the Query Editor or Results page, you can select to email a formatted list 
 
 Click the ![Actions icon](../_img/icons/actions-icon.png) Actions icon to open the menu and choose from the options listed: **Email query** or **Copy query URL**. 
  
-<img src="_img/view-run-queries/email-copy-url.png" alt="Web portal, Query Editor/Results, Open Actions menu, Choose Email query or Copy query URL" style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/view-run-queries/email-copy-url.png" alt="Web portal, Query Editor/Results, Open Actions menu, Choose Email query or Copy query URL" style="border: 1px solid #C3C3C3;" /> 
 
 <!---**VSTS: Old queries experience, TFS 2017**  
 	
 Choose **Copy query URL**. To email query items, see [Copy a list of work items](../backlogs/copy-clone-work-items.md#html).  
 
-<img src="_img/view-run-queries/copy-url-old-exp.png" alt=alt="Web portal, Query Editor/Results, Copy query URL" style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/view-run-queries/copy-url-old-exp.png" alt=alt="Web portal, Query Editor/Results, Copy query URL" style="border: 1px solid #C3C3C3;" /> 
 
 -->
 
@@ -133,6 +133,7 @@ Choose **Copy query URL**. To email query items, see [Copy a list of work items]
 
 #### Related topics
 
+
+- [Change column options](https://docs.microsoft.com/en-us/vsts/work/backlogs/set-column-options?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json)
+- [New Queries Experience](queries-preview.md) 
 - [Set personal or team favorites](../../collaborate/set-favorites.md) 
-
-

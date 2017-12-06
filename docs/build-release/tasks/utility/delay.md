@@ -6,14 +6,14 @@ ms.technology: vs-devops-build
 ms.assetid: 1EFDAB02-66D7-4B8A-A8BC-43AF2C43F282
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+ms.date: 11/14/2017
 ---
 
 # Utility: Delay
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-update.md)]
 
-![icon](_img/delay.png) Pause execution of the process for a fixed delay time.
+![icon](_img/delay.png) &nbsp; Pause execution of the process for a fixed delay time.
 
 ## Demands
 
@@ -23,8 +23,8 @@ Can be used in only an [agentless phase](../../concepts/process/phases.md#agentl
 
 | Parameter | Comments |
 | --- | --- |
-| Display name | Required. The name to display for this task. |
-| Delay Time (minutes) | Required. The number of minutes to delay execution. |
+| **Display name** | Required. The name to display for this task. |
+| **Delay Time (minutes)** | Required. The number of minutes to delay execution. |
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
 
 Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/Delay).

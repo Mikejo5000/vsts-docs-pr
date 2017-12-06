@@ -9,8 +9,6 @@ ms.contentid: db186305-0d82-4152-bb04-e7b44b56305f
 # Post Import
 
 > [!NOTE]
-> The TFS Database Import Service for Visual Studio Team Services (VSTS) is currently in preview.
->
 > It's recommended that you use the [Migration Guide](https://aka.ms/tfsimport) to progress through your import. The guide links to the technical documentation as needed.
 
 A Visual Studio Team Services (VSTS) account is ready for use once an import has completed successfully. However, there are common tasks that you should perform before opening the account up to all of your users. Below is a list of the most common after import tasks that should be completed. Tasks are listed in recommended order of completion. 
@@ -40,6 +38,16 @@ Next, you will want to configure your build agents. As part of the migration, al
 * [Build Agents](../build-release/concepts/agents/agents.md) 
 
 If you plan on using your existing on-premises private build agents, there is one more recommended step that needs to be taken after registering them to your new account. Clearing their cache will ensure that you don't encounter any build issues related to older TFVC or Git pointers to your on-premises TFS collection. See [refreshing caches on client computers](../tfs-server/admin/backup/refresh-data-caches.md) for details on how to accomplish this task. 
+
+## Package Management (Preview)
+If you elected to include [preview](https://aka.ms/vstsimportpreview) features with your import and you had [Package Management](https://www.visualstudio.com/team-services/package-management/) data in your TFS collection, then you will need to install the Package Management [extension](https://marketplace.visualstudio.com/items?itemName=ms.feed#) on your account post import. 
+
+
+## Release Management (Preview)
+Release Management is currently a [preview](https://aka.ms/vstsimportpreview) feature that can be included with an import. If you elected to include Release Management with your import then your release definitions and history data will be included with your import. However, like builds, [agents](../build-release/concepts/agents/agents.md) and pools need to be reconfigured against the new VSTS account. 
+
+## Package Management (Preview)
+If you elected to include [preview](https://aka.ms/vstsimportpreview) features with your import and you had [Package Management](https://www.visualstudio.com/team-services/package-management/) data in your TFS collection, then you will need to install the Package Management [extension](https://marketplace.visualstudio.com/items?itemName=ms.feed#) on your account post import. 
 
 ## Notifying the Team
 After getting your builds running and license subscription configured, it's recommended that the account be opened up to all users for validation. This is when individual users can ensure that all of the content is in place, they have the right access level, and that they can pull code. Be sure to point users to our [documentation](../accounts/set-up-vs.md) on connecting to VSTS from all of our supported IDEs and Team Explorer.  Users of TFVC with local workspaces will need to remap their workspaces against the new account and Git users will have to reconfigure their remotes to be able to pull code. If anything is reported as missing from the migrated account, please reach out to [vstsdataimport@microsoft.com](mailto:vstsdataimport@microsoft.com). For other functional issues, please reach out to [customer support](https://www.visualstudio.com/support/).  

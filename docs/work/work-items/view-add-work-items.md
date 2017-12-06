@@ -1,6 +1,8 @@
 ---
 title: View and add work items | VSTS  
 description: View and add work items using the work items page      
+f1_keywords: 
+- vs.tfc.teamexplorer.workitems
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: EBDE0739-FAE6-4BEA-8F59-E9D20AFE5FE8
@@ -50,7 +52,7 @@ Add a work item from within the hub is just one click away. You can add a work i
 
 0. Enter a title and then save the work item. Before you can change the State from its initial default, you must save it.  
 
-	<img src="../backlogs/_img/add-new-work-item-vsts-user-story.png" alt="Agile process, User story work item form" style="border: 2px solid #C3C3C3;" />  
+	<img src="../backlogs/_img/add-new-work-item-vsts-user-story.png" alt="Agile process, User story work item form" style="border: 1px solid #C3C3C3;" />  
 
 	You can [add tags to any work item to filter backlogs and queries](../track/add-tags-to-work-items.md).
 

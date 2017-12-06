@@ -6,7 +6,7 @@ ms.technology: vs-devops-setup
 ms.assetid: 62d94b8a-256a-4347-905a-3393f5d8a13f
 ms.manager: douge
 ms.author: billchi
-ms.date: 10/6/2017
+ms.date: 11/09/2017
 ---
 
 #Troubleshooting Azure billing
@@ -118,6 +118,8 @@ years will be billed on the 1st day of the calendar month
 after the anniversary date of your subscription purchase.
 
 [!INCLUDE [azure-bill-larger](../_shared/qa-azure-bill-larger.md)]
+
+[!INCLUDE [azure-account-billing-support](../_shared/qa-azure-account-billing-support.md)]
 
 [!INCLUDE [azure-billing-support](_shared/qa-azure-billing-support.md)]
 
