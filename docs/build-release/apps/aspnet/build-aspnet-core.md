@@ -51,6 +51,8 @@ steps:
 
 ## Get the sample code
 
+[//]: # (TODO: Add link to GitHub tutorial from the appropriate sections below after advice is added there on authentication)
+
 [!INCLUDE [include](../_shared/get-sample-code-intro.md)]
 
 ```
@@ -116,46 +118,9 @@ Your definition will be automatically created when you create the YAML file.
 
 # [GitHub repo](#tab/github/yaml)
 
-To create a definition that is configured as code, you'll modify a YAML file in the repo root that has a well-known name: **.vsts-ci.yml**. You'll then create a build definition that points to the YAML file.
-
-In GitHub:
-
-1. Edit the **.vsts-ci.yml** file in the root of your repo, and replace the contents of the file with the following:
-
-   [!code-yaml[code](../../actions/_shared/yaml-build-definition-aspnet-core.md)]
-
-1. Are you creating a build that you want to deploy to Linux? If so, then change the `publish` command so that  `zipAfterPublish` is set to `false`
-
-   > **Why do this?** By default, the build template creates a .ZIP file for deploying to an Azure Web App or a Windows VM.
-   This change causes the build to publish a set of uncompressed files and folders suitable for deployment
-   to a Linux VM running the **nginx** web server.
-
-1. Commit your change to the master branch.
-
-In VSTS:
-
-1. Navigate to the **Builds** tab of the **Build and Release** hub, and then click **+ New**. You are asked to **Select a template** for the new build definition.
-
-1. Select **YAML**, and then select **Apply**.
-
-1. Select **Get sources**, select **GitHub**, and then select your version control repository. You'll need to authorize access to your repo.
-
-1. Select **Process**.
-
-1. For the **Agent queue** select _Hosted VS2017_. This is how you can use our pool of agents that have the software you need to build your app.
-
-1. For the **Yaml path**, select the **.vsts-ci.yml** file in the root of your repo.
-
-1. Select the **Triggers** tab, and then enable continuous integration (CI).
-
-1. Save and queue the build, and then click the number of the build: _{year}{month}{day}.1_ that has been queued.
-
-1. In the left column of the running build, click **Job**. After a hosted agent is assigned to your job and the agent is initialized, then you'll see information about the build in the console.
+You'll create your build definition after you decide on your deployment target.
 
 ---
-
-[//]: # (TODO:> [!TIP])
-[//]: # (TODO:> To learn more about GitHub CI builds, see [Define CI build process for your Git repo](#)
 
 ## Finish the CI process definition
 
@@ -238,6 +203,42 @@ The changes you made also modified what the build does. For example, the `dotnet
 1. A new build is started. You'll see a link to the new build on the top of the page. Click the link to watch the new build as it happens.
 
 # [GitHub repo](#tab/github/yaml)
+
+To create a definition that is configured as code, you'll modify a YAML file in the repo root that has a well-known name: **.vsts-ci.yml**. You'll then create a build definition that points to the YAML file.
+
+In GitHub:
+
+1. Edit the **.vsts-ci.yml** file in the root of your repo, and replace the contents of the file with the following:
+
+   [!code-yaml[code](../../actions/_shared/yaml-build-definition-aspnet-core.md)]
+
+1. Are you creating a build that you want to deploy to Linux? If so, then change the `publish` command so that  `zipAfterPublish` is set to `false`
+
+   > **Why do this?** By default, the build template creates a .ZIP file for deploying to an Azure Web App or a Windows VM.
+   This change causes the build to publish a set of uncompressed files and folders suitable for deployment
+   to a Linux VM running the **nginx** web server.
+
+1. Commit your change to the master branch.
+
+In VSTS:
+
+1. Navigate to the **Builds** tab of the **Build and Release** hub, and then click **+ New**. You are asked to **Select a template** for the new build definition.
+
+1. Select **YAML**, and then select **Apply**.
+
+1. Select **Get sources**, select **GitHub**, and then select your version control repository. You'll need to authorize access to your repo.
+
+1. Select **Process**.
+
+1. For the **Agent queue** select _Hosted VS2017_. This is how you can use our pool of agents that have the software you need to build your app.
+
+1. For the **Yaml path**, select the **.vsts-ci.yml** file in the root of your repo.
+
+1. Select the **Triggers** tab, and then enable continuous integration (CI).
+
+1. Save and queue the build, and then click the number of the build: _{year}{month}{day}.1_ that has been queued.
+
+1. In the left column of the running build, click **Job**. After a hosted agent is assigned to your job and the agent is initialized, then you'll see information about the build in the console.
 
 ---
 
