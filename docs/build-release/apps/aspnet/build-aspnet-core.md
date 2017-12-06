@@ -331,7 +331,7 @@ You've just put your own CI build process in place to automatically build and va
 # [Azure web app or IIS server](#tab/deploy-windows)
 
 > [!IMPORTANT]
-> Make sure you followed the [deployment instructions](#deploy) above with the **Azure web app or IIS server** tab selected.
+> Make sure you followed the **[deployment instructions above](#deploy)** with the **Azure web app or IIS server** tab selected.
 
 See one of the following:
 
@@ -342,14 +342,14 @@ See one of the following:
 # [Linux](#tab/deploy-linux)
 
 > [!IMPORTANT]
-> Make sure you followed the [deployment instructions](#deploy) above with the **Linux** tab selected.
+> Make sure you followed the **[deployment instructions above](#deploy)** with the **Linux** tab selected.
 
 See [Deploy to a Linux Virtual Machine](../cd/deploy-linuxvm-deploygroups.md).
 
 # [Container](#tab/deploy-container)
 
 > [!IMPORTANT]
-> Make sure you followed the [deployment instructions](#deploy) above with the **Container** tab selected.
+> Make sure you followed the **[deployment instructions above](#deploy)** with the **Container** tab selected.
 
 To deploy to a container service (such as Azure web apps for containers, or a Kubernetes cluster), see [Build and push a container for your app](../containers/build.md).
 
