@@ -108,7 +108,7 @@ Your definition will be automatically created when you create the YAML file.
 
 1. Create a new build definition.
 
- Navigate to the **Builds** tab of the **Build and Release** hub in VSTS or TFS, and then click **+ New**. You are asked to **Select a template** for the new build definition.
+ Navigate to the **Builds** tab of the **Build and Release** hub in VSTS or TFS, and then click **+ New**. You're asked to **Select a template** for the new build definition.
 
 1. In the right panel, click **ASP.NET Core**, and then click **Apply**.
 
@@ -121,6 +121,14 @@ Your definition will be automatically created when you create the YAML file.
 You'll create your build definition after you decide on your deployment target.
 
 ---
+
+## Choose your deployment target
+
+### # Azure web app or IIS server
+
+### # Linux VM
+
+### # Container service
 
 ## Finish the CI process definition
 
@@ -222,7 +230,7 @@ In GitHub:
 
 In VSTS:
 
-1. Navigate to the **Builds** tab of the **Build and Release** hub, and then click **+ New**. You are asked to **Select a template** for the new build definition.
+1. Navigate to the **Builds** tab of the **Build and Release** hub, and then click **+ New**. You're asked to **Select a template** for the new build definition.
 
 1. Select **YAML**, and then select **Apply**.
 
