@@ -88,13 +88,13 @@ Next, choose which kind of Git service you're using:
 
 1. Create a new build definition.
 
- Navigate to the **Files** tab of the **Code** hub, and then click **Set up build**.
+ Navigate to the **Files** tab of the **Code** hub, and then choose **Set up build**.
 
  ![Screenshot showing button to set up build for a repository](../_shared/_img/set-up-first-build-from-code-hub.png)
 
  You are taken to the **Build & Release** hub and asked to **Select a template** for the new build definition.
 
-1. In the right panel, click **ASP.NET Core**, and then click **Apply**.
+1. In the right panel, select **ASP.NET Core**, and then choose **Apply**.
 
  ![Screenshot showing dotnet core template](_shared/_img/apply-aspnet-core-build-template.png)
 
@@ -104,7 +104,7 @@ To create a definition that is configured as code, you'll modify a YAML file in 
 
 1. Navigate to the **Code** hub, choose the **Files** tab, and then choose the repository you created in the above steps.
 
-1. Choose the **.vsts-ci.yml** file, and then click **Edit**.
+1. Choose the **.vsts-ci.yml** file, and then choose **Edit**.
 
 1. Replace the contents of the file with code from the next section.
 
@@ -112,9 +112,9 @@ To create a definition that is configured as code, you'll modify a YAML file in 
 
 1. Create a new build definition.
 
- Navigate to the **Builds** tab of the **Build and Release** hub in VSTS or TFS, and then click **+ New**. You're asked to **Select a template** for the new build definition.
+ Navigate to the **Builds** tab of the **Build and Release** hub in VSTS or TFS, and then choose **+ New**. You're asked to **Select a template** for the new build definition.
 
-1. In the right panel, click **ASP.NET Core**, and then click **Apply**.
+1. In the right panel, select **ASP.NET Core**, and then choose **Apply**.
 
  ![Screenshot showing dotnet core template](_shared/_img/apply-aspnet-core-build-template.png)
 
@@ -240,23 +240,23 @@ steps:
 
  * **TFS:** Select a queue that includes a [Windows build agent](../../actions/agents/v2-windows.md).
 
-1. Click **Get sources** and then:
+1. Select **Get sources** and then:
 
  Observe that the new build definition is automatically linked to your repository.
 
-1. Click the **Triggers** tab in the build definition. Enable the **Continuous Integration** trigger. This will ensure that the build process is automatically triggered every time you commit a change to your repository.
+1. Select the **Triggers** tab in the build definition. Enable the **Continuous Integration** trigger. This will ensure that the build process is automatically triggered every time you commit a change to your repository.
 
-1. Click **Save and queue** to kick off your first build. On the **Queue build** dialog box, click **Queue**.
+1. Choose **Save and queue** to kick off your first build. On the **Queue build** dialog box, choose **Queue**.
 
-1. A new build is started. You'll see a link to the new build on the top of the page. Click the link to watch the new build as it happens.
+1. A new build is started. You'll see a link to the new build on the top of the page. Choose the link to watch the new build as it happens.
 
 # [VSTS or TFS repo](#tab/vsts/yaml)
 
 5. Navigate to the **Build and Release** hub.
 
-6. Observe that there's a new build definition named _{name-of-your-repo} YAML CI_. A build is queued; its status could be either not started or running. Click the number of the build: _{year}{month}{day}.1_.
+6. Observe that there's a new build definition named _{name-of-your-repo} YAML CI_. A build is queued; its status could be either not started or running. Choose the number of the build: _{year}{month}{day}.1_.
 
-7. In the left column of the running build, click **Job**. After a hosted agent is assigned to your job and the agent is initialized, then you'll see information about the build in the console.
+7. In the left column of the running build, select **Job**. After a hosted agent is assigned to your job and the agent is initialized, then you'll see information about the build in the console.
 
 For this example, to learn some of the basics, you changed the YAML file to use the  `dotNetCoreCLI` task instead of calling the `dotnet` command directly in a script. The changes you made affect how the build output is organized. Each step is shown and can be inspected in the build summary, instead of all the output combined in one log from a single script.
 
@@ -270,21 +270,21 @@ The changes you made also modified what the build does. For example, the `dotnet
 
  * **TFS:** Select a queue that includes a [Windows build agent](../../actions/agents/v2-windows.md).
 
-1. Click **Get sources** and then:
+1. Select **Get sources** and then:
 
  Select your version control repository. You'll need to authorize access to your repo.
 
-1. Click the **Triggers** tab in the build definition. Enable the **Continuous Integration** trigger. This will ensure that the build process is automatically triggered every time you commit a change to your repository.
+1. Select the **Triggers** tab in the build definition. Enable the **Continuous Integration** trigger. This will ensure that the build process is automatically triggered every time you commit a change to your repository.
 
-1. Click **Save and queue** to kick off your first build. On the **Queue build** dialog box, click **Queue**.
+1. Choose **Save and queue** to kick off your first build. On the **Queue build** dialog box, choose **Queue**.
 
-1. A new build is started. You'll see a link to the new build on the top of the page. Click the link to watch the new build as it happens.
+1. A new build is started. You'll see a link to the new build on the top of the page. Choose the link to watch the new build as it happens.
 
 # [GitHub repo](#tab/github/yaml)
 
 In VSTS:
 
-1. Navigate to the **Builds** tab of the **Build and Release** hub, and then click **+ New**. You're asked to **Select a template** for the new build definition.
+1. Navigate to the **Builds** tab of the **Build and Release** hub, and then choose **+ New**. You're asked to **Select a template** for the new build definition.
 
 1. Select **YAML**, and then select **Apply**.
 
@@ -298,9 +298,9 @@ In VSTS:
 
 1. Select the **Triggers** tab, and then enable continuous integration (CI).
 
-1. Save and queue the build, and then click the number of the build: _{year}{month}{day}.1_ that has been queued.
+1. Save and queue the build, and then choose the number of the build: _{year}{month}{day}.1_ that has been queued.
 
-1. In the left column of the running build, click **Job**. After a hosted agent is assigned to your job and the agent is initialized, then you'll see information about the build in the console.
+1. In the left column of the running build, select **Job**. After a hosted agent is assigned to your job and the agent is initialized, then you'll see information about the build in the console.
 
 ---
 
