@@ -22,32 +22,7 @@ ms.topic: get-started-article
 
 [!INCLUDE [include](../../_shared/ci-cd-prerequisites-tfs.md)]
 
-## Choose the web interface or configuration as code
-
-Do you want to define your build process in your web browser or configure it as code in YAML?
-
-# [Web](#tab/web)
-
-**VSTS | TFS**
-
-Use a GUI interface in the web.
-
-![PowerShell script task says "Hello World"](../_shared/_img/powershell-script-hello-world-do-not-publish.png)
-
-# [YAML](#tab/yaml)
-
-**VSTS**
-
-Advantages include configuration as code, parallel processing (fan out and fan in), and the ability to test and debug the process locally.
-
-```YAML
-steps:
-- script: echo hello world 
-```
-
----
-
-[Learn more about YAML builds](../../actions/build-yaml.md).
+[!INCLUDE [include](../../_shared/web-or-yaml.md)]
 
 ## Get the sample code
 
