@@ -9,62 +9,61 @@ ms.author: yohasna
 ms.date: 12/31/2017
 ---
 
-# Create a pull request serverless status server with Azure Functions
+# Use Azure Functions to create custom branch policies
 
 #### VSTS | TFS 2018
 
-The pull request (PR) workflow provides developers with an opportunity to get feedback on their code from peers as well as from automated tools. 3rd party tools and services can participate in the PR workflow by using the PR [Status API](https://go.microsoft.com/fwlink/?linkid=854107). This article guides you through the process of creating a serverless status server to validate PRs in a VSTS Git repository.
+The pull request (PR) workflow provides developers with an opportunity to get feedback on their code from peers as well as from automated tools. 3rd party tools and services can participate in the PR workflow by using the PR [Status API](https://go.microsoft.com/fwlink/?linkid=854107). This article guides you through the process of creating a serverless status server using [Azure Functions](https://azure.microsoft.com/en-us/services/functions/) to validate PRs in a VSTS Git repository. With Azure Functions you don’t have to worry about provisioning and maintaining servers, especially when your workload grows. Azure Functions provides a fully managed compute platform with high reliability and security.
 
 ## Prerequisites
 A VSTS account with a Git repo. If you don't have a VSTS account, [sign up](../../accounts/create-account-msa-or-work-student.md) to upload and share code in free unlimited private Git repositories.
-
 
 ## Create a basic Azure function to listen to VSTS events
 Follow the [how-to create your first Azure function](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-first-azure-function) documentation to create a simple function. Modify the code in the sample to look like this:
 
 ```cs
-	#r "Newtonsoft.Json"
-	
-	using System;
-	using System.Net;
-	using System.Net.Http;
-	using System.Net.Http.Headers;
-	using System.Text;
-	using Newtonsoft.Json;
-	
-	public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceWriter log)
-	{
-	    try
-	    {
-	        log.Info("Service Hook Recieved.");
-	
-	        // Get request body
-	        dynamic data = await req.Content.ReadAsAsync<object>();
-	
-	        log.Info("Data Recieved: " + data.ToString());
-	
-	        // Get the pull request object from the service hooks payload
-	        dynamic jObject = JsonConvert.DeserializeObject(data.ToString());
-	
-	        // Get the pull request id
-	        int pullRequestId;
-	        if (!Int32.TryParse(jObject.resource.pullRequestId.ToString(), out pullRequestId))
-	        {
-	            log.Info("Failed to parse the pull request id from the service hooks payload.");
-	        };
-	
-	        // Get the pull request title
-	        string pullRequestTitle = jObject.resource.title;
-	
-	        log.Info("Service Hook Recieved for PR: " + pullRequestId + " " + pullRequestTitle);
-	
-	        return req.CreateResponse(HttpStatusCode.OK);
-	    }
-	    catch (Exception ex)
-	    {
-	        log.Info(ex.ToString());
-	        return req.CreateResponse(HttpStatusCode.InternalServerError);
-	    }
+#r "Newtonsoft.Json"
+
+using System;
+using System.Net;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using System.Text;
+using Newtonsoft.Json;
+
+public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceWriter log)
+{
+    try
+    {
+        log.Info("Service Hook Recieved.");
+
+        // Get request body
+        dynamic data = await req.Content.ReadAsAsync<object>();
+
+        log.Info("Data Recieved: " + data.ToString());
+
+        // Get the pull request object from the service hooks payload
+        dynamic jObject = JsonConvert.DeserializeObject(data.ToString());
+
+        // Get the pull request id
+        int pullRequestId;
+        if (!Int32.TryParse(jObject.resource.pullRequestId.ToString(), out pullRequestId))
+        {
+            log.Info("Failed to parse the pull request id from the service hooks payload.");
+        };
+
+        // Get the pull request title
+        string pullRequestTitle = jObject.resource.title;
+
+        log.Info("Service Hook Recieved for PR: " + pullRequestId + " " + pullRequestTitle);
+
+        return req.CreateResponse(HttpStatusCode.OK);
+    }
+    catch (Exception ex)
+    {
+        log.Info(ex.ToString());
+        return req.CreateResponse(HttpStatusCode.InternalServerError);
+    }
 }
 ```
 
@@ -73,7 +72,7 @@ Service hooks are a VSTS feature that can alert external services when certain e
 
 For this sample you will need to configure 2 service hooks. The first for the **Pull request created** the second for the **Pull request updated** event.
 
-1. Get the function URL from the Azure portal by clicking the `Get function URL` in your Azure function view. Then copy the URL.
+1. Get the function URL from the Azure portal by clicking the **Get function URL** in your Azure function view. Then copy the URL.
 
     ![Get function url](../_img/create-pr-status-server-with-azure-functions/get-function-url.png)
 
@@ -103,7 +102,7 @@ For this sample you will need to configure 2 service hooks. The first for the **
 
 7. In the Action page, enter the URL that you copied in step 1 in the **URL** box. Select **Test** to send a test event to your server.
 
-    ![Enter the URL and select Test to test the service hook](../_img/create-pr-status-server/service-hooks-action.png)
+    ![Enter the URL and select Test to test the service hook](../_img/create-pr-status-server-with-azure-functions/service-hooks-action.png)
 
     In the Azure function log window, you'll see an incoming `POST` that returned a `200 OK`, indicating your function received the service hook event.
 
@@ -114,15 +113,15 @@ For this sample you will need to configure 2 service hooks. The first for the **
     POST /                         200 OK
     ```
 
-    In the Test Notification window, select the Response tab to see the details of the response from your server. You should see a content length of 17 that matches the length of the string from your POST handler (i.e. "Received the POST").
+    In the Test Notification window, select the Response tab to see the details of the response from your server. You should see the response from your server.
 
-    ![Select the response tab to see the results of the test](../_img/create-pr-status-server/test-notification.png)
+    ![Select the response tab to see the results of the test](../_img/create-pr-status-server-with-azure-functions/test-notification.png)
 
 8. Close the Test Notification window, and select **Finish** to create the service hook.
 
 Go through steps 2-8 again but this time configure the **Pull request updated** event.
 
-At this point you could create a pullrequest and make sure that your Azure function is recieving notifications when pull requests are created and updated.
+Create a pull request to verify your azure function is receiving notifications.
 
 ## Post status to PRs
 Now that your server can receive service hook events when new PRs are created, update it to post back status to the PR. Service hook requests include a JSON payload describing the event. 
@@ -130,6 +129,8 @@ Now that your server can receive service hook events when new PRs are created, u
 Update the code of your Azure function to look like this:
 
 Note: Make sure to update the code with your account name, project name, repository name and [PAT token](https://docs.microsoft.com/en-us/vsts/git/_shared/personal-access-tokens).
+
+This sample inspects the PR title to see if the user has indicated if the PR is a work in progress by adding "WIP" to the title. If so, change the status posted back to the PR.
 
 ```cs
 #r "Newtonsoft.Json"
@@ -245,8 +246,6 @@ private static string ComputeStatus(string pullRequestTitle)
         });
 }
 ```
-
-This sample inspects the PR title to see if the user has indicated if the PR is a work in progress by adding "WIP" to the title. If so, change the status posted back to the PR.
 
 ## Create a new PR to test the status server
 Now that your server is running and listening for service hook notifications, create a pull request to test it out. 
