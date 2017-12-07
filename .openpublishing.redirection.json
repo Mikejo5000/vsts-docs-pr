@@ -202,6 +202,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/git/howto/create-pr-status-server-with-azure-functions.md",
+            "redirect_url": "/vsts/git/how-to/create-pr-status-server-with-azure-functions",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/git/howto/pr-status-policy.md",
             "redirect_url": "/vsts/git/how-to/pr-status-policy",
             "redirect_document_id": false
