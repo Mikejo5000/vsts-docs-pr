@@ -128,7 +128,7 @@ Now that your server can receive service hook events when new PRs are created, u
 
 Update the code of your Azure function to look like the following example.
 
-Make sure to update the code with your account name, project name, repository name and [PAT token](https://docs.microsoft.com/en-us/vsts/git/_shared/personal-access-tokens). For a PR Status Server, the PAT requires [vso.code_status](/integrate/api/git/pull-requests/pullrequeststatuses#authorization-scopes) scope, which you can grant by selecting the **Code (status)** scope on the **Create a personal access token** page.
+Make sure to update the code with your account name, project name, repository name and [PAT token](../../integrate/get-started/authentication/pats.md). For a PR Status Server, the PAT requires [vso.code_status](https://www.visualstudio.com/docs/integrate/api/git/pull-requests/pullrequeststatuses#authorization-scopes) scope, which you can grant by selecting the **Code (status)** scope on the **Create a personal access token** page.
 
 >[!Important]
 >This sample code stores the PAT in code to simplify the sample, it is recommended to store secrets in KeyVault and retrieve them from there.
