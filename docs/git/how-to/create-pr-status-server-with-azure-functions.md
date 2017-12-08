@@ -134,7 +134,7 @@ Make sure to update the code with your account name, project name, repository na
 >This sample code stores the PAT in code to simplify the sample, it is recommended to store secrets in KeyVault and retrieve them from there.
 
 
-This sample inspects the PR title to see if the user has indicated if the PR is a work in progress by adding **WIP** to the title. If so, change the status posted back to the PR.
+This sample inspects the PR title to see if the user has indicated if the PR is a work in progress by adding **WIP** to the title. If so, the sample code changes the status posted back to the PR.
 
 ```cs
 #r "Newtonsoft.Json"
