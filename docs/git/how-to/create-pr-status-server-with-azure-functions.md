@@ -1,5 +1,5 @@
 ---
-title: Create a pull request status server with Azure Functions
+title: Use Azure Functions to create custom branch policies
 description: Create a serverless function to listen to pull request events and post status on the pull request status API.
 ms.assetid: 
 ms.prod: vs-devops-alm
