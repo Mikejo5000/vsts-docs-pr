@@ -237,6 +237,7 @@ private static string ComputeStatus(string pullRequestTitle)
         {
             State = state,
             Description = description,
+            TargetUrl = "http://www.visualstudio.com",
 
             Context = new
             {
