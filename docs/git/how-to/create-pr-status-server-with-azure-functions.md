@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-git
 ms.manager: douge
 ms.author: yohasna
-ms.date: 12/31/2017
+ms.date: 12/08/2017
 ---
 
 # Use Azure Functions to create custom branch policies
@@ -126,9 +126,13 @@ Create a pull request to verify your azure function is receiving notifications.
 ## Post status to PRs
 Now that your server can receive service hook events when new PRs are created, update it to post back status to the PR. Service hook requests include a JSON payload describing the event. 
 
-Update the code of your Azure function to look like this:
+Update the code of your Azure function to look like the following example.
 
-Note: Make sure to update the code with your account name, project name, repository name and [PAT token](https://docs.microsoft.com/en-us/vsts/git/_shared/personal-access-tokens).
+Make sure to update the code with your account name, project name, repository name and [PAT token](https://docs.microsoft.com/en-us/vsts/git/_shared/personal-access-tokens). For a PR Status Server, the PAT requires [vso.code_status](/integrate/api/git/pull-requests/pullrequeststatuses#authorization-scopes) scope, which you can grant by selecting the **Code (status)** scope on the **Create a personal access token** page.
+
+>[!Important]
+>This sample code stores the PAT in code to simplify the sample, it is recommended to store secrets in KeyVault and retrieve them from there.
+
 
 This sample inspects the PR title to see if the user has indicated if the PR is a work in progress by adding "WIP" to the title. If so, change the status posted back to the PR.
 
@@ -267,13 +271,15 @@ Now that your server is running and listening for service hook notifications, cr
 
     ![Select Create a pull request from the suggestion bar](../_img/create-pr-status-server/create-pr.png)
 
-5. Add "WIP" in the title to test the functionality of the app. Select **Create** to create the PR.
+5. Add **WIP** in the title to test the functionality of the app. Select **Create** to create the PR.
 
-    ![Add "WIP" to the default PR title](../_img/create-pr-status-server/new-pr-wip.png)
+    ![Add WIP to the default PR title](../_img/create-pr-status-server/new-pr-wip.png)
 
-6. Once the PR has been created, you will see the status section, with the "Work in progress" entry and a message in the activity feed, both of which link to the URL specfied in the payload.
+6. Once the PR has been created, you will see the status section, with the **Work in progress** entry which links to the URL specfied in the payload.
 
-    ![Add "WIP" to the default PR title](../_img/create-pr-status-server/pr-with-status.png)
+    ![Add WIP to the default PR title](../_img/create-pr-status-server/pr-with-status.png)
+
+0. Update the PR title and remove the **WIP** text and note that the status changes from **Work in progress** to **Ready for review**.
 
 ## Next Steps
 * In this article, you learned the basics of how to create a serverless Azure function that listens for PR events via service hooks and can post status messages using the status API. For more information about the pull request status API see the [REST API documentation](https://go.microsoft.com/fwlink/?linkid=854107). 
