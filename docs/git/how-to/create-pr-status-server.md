@@ -240,7 +240,7 @@ Now that your server can receive service hook events when new PRs are created,up
         }
     ```
 
-10. Instead of just blindly posting the `succeeded` status, inspect the PR title to see if the user has indicated if the PR is a work in progress by adding "WIP" to the title. If so, change the status posted back to the PR.
+10. Instead of just blindly posting the `succeeded` status, inspect the PR title to see if the user has indicated if the PR is a work in progress by adding **WIP** to the title. If so, change the status posted back to the PR.
 
     ``` javascript
         if (title.includes("WIP")) {
