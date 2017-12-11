@@ -13,13 +13,13 @@ ms.date: 12/08/2017
 
 #### VSTS | TFS 2018
 
-The pull request (PR) workflow provides developers with an opportunity to get feedback on their code from peers as well as from automated tools. 3rd party tools and services can participate in the PR workflow by using the PR [Status API](https://go.microsoft.com/fwlink/?linkid=854107). This article guides you through the process of creating a serverless status server using [Azure Functions](https://azure.microsoft.com/en-us/services/functions/) to validate PRs in a VSTS Git repository. With Azure Functions you don’t have to worry about provisioning and maintaining servers, especially when your workload grows. Azure Functions provides a fully managed compute platform with high reliability and security.
+The pull request (PR) workflow provides developers with an opportunity to get feedback on their code from peers as well as from automated tools. 3rd party tools and services can participate in the PR workflow by using the PR [Status API](https://go.microsoft.com/fwlink/?linkid=854107). This article guides you through the process of creating a custom branch policy using [Azure Functions](https://azure.microsoft.com/en-us/services/functions/) to validate PRs in a VSTS Git repository. With Azure Functions you don’t have to worry about provisioning and maintaining servers, especially when your workload grows. Azure Functions provide a fully managed compute platform with high reliability and security.
 
 ## Prerequisites
 A VSTS account with a Git repo. If you don't have a VSTS account, [sign up](../../accounts/create-account-msa-or-work-student.md) to upload and share code in free unlimited private Git repositories.
 
 ## Create a basic Azure function to listen to VSTS events
-Follow the [how-to create your first Azure function](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-first-azure-function) documentation to create a simple function. Modify the code in the sample to look like this:
+Follow the [create your first Azure function](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-first-azure-function) documentation to create a simple function. Modify the code in the sample to look like this:
 
 ```cs
 #r "Newtonsoft.Json"
@@ -35,12 +35,12 @@ public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceW
 {
     try
     {
-        log.Info("Service Hook Recieved.");
+        log.Info("Service Hook Received.");
 
         // Get request body
         dynamic data = await req.Content.ReadAsAsync<object>();
 
-        log.Info("Data Recieved: " + data.ToString());
+        log.Info("Data Received: " + data.ToString());
 
         // Get the pull request object from the service hooks payload
         dynamic jObject = JsonConvert.DeserializeObject(data.ToString());
@@ -55,7 +55,7 @@ public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceW
         // Get the pull request title
         string pullRequestTitle = jObject.resource.title;
 
-        log.Info("Service Hook Recieved for PR: " + pullRequestId + " " + pullRequestTitle);
+        log.Info("Service Hook Received for PR: " + pullRequestId + " " + pullRequestTitle);
 
         return req.CreateResponse(HttpStatusCode.OK);
     }
@@ -68,11 +68,11 @@ public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceW
 ```
 
 ## Configure a service hook for PR events
-Service hooks are a VSTS feature that can alert external services when certain events occur. For this sample, you'll want to set up a service hook for PR events, so the status server can be notified. The Azure function is going to receive `POST` requests from VSTS, so you need to the url that VSTS will call into.
+Service hooks are a VSTS feature that can alert external services when certain events occur. For this sample, you'll want to set up a service hook for PR events, your azure function will be notified when a pull request changes. In order to receive `POST` requests from VSTS when pull requests change, you will need to provide the service hook with the Azure function URL.
 
-For this sample you will need to configure 2 service hooks. The first for the **Pull request created** the second for the **Pull request updated** event.
+For this sample you will need to configure 2 service hooks. The first will be for the **Pull request created** and the second will be for the **Pull request updated** event.
 
-1. Get the function URL from the Azure portal by clicking the **Get function URL** in your Azure function view. Then copy the URL.
+1. Get the function URL from the Azure portal by clicking the **Get function URL** in your Azure function view and copy the URL.
 
     ![Get function url](../_img/create-pr-status-server-with-azure-functions/get-function-url.png)
 
@@ -124,14 +124,14 @@ Go through steps 2-8 again but this time configure the **Pull request updated** 
 Create a pull request to verify your azure function is receiving notifications.
 
 ## Post status to PRs
-Now that your server can receive service hook events when new PRs are created, update it to post back status to the PR. Service hook requests include a JSON payload describing the event. 
+Now that your server can receive service hook events when new PRs are created, update it to post back status to the PR. You can use the JSON payload posted by the service hook in order to determine what status to set on your PR.
 
 Update the code of your Azure function to look like the following example.
 
-Make sure to update the code with your account name, project name, repository name and [PAT token](../../integrate/get-started/authentication/pats.md). For a PR Status Server, the PAT requires [vso.code_status](https://www.visualstudio.com/docs/integrate/api/git/pull-requests/pullrequeststatuses#authorization-scopes) scope, which you can grant by selecting the **Code (status)** scope on the **Create a personal access token** page.
+Make sure to update the code with your account name, project name, repository name and [PAT token](../../integrate/get-started/authentication/pats.md). In order to have permission to change PR status, the PAT requires [vso.code_status](https://www.visualstudio.com/docs/integrate/api/git/pull-requests/pullrequeststatuses#authorization-scopes) scope, which you can grant by selecting the **Code (status)** scope on the **Create a personal access token** page.
 
 >[!Important]
->This sample code stores the PAT in code to simplify the sample, it is recommended to store secrets in KeyVault and retrieve them from there.
+>This sample code stores the PAT in code to simplify the sample. It is recommended to store secrets in KeyVault and retrieve them from there.
 
 
 This sample inspects the PR title to see if the user has indicated if the PR is a work in progress by adding **WIP** to the title. If so, the sample code changes the status posted back to the PR.
@@ -160,12 +160,12 @@ public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceW
 {
     try
     {
-        log.Info("Service Hook Recieved.");
+        log.Info("Service Hook Received.");
 
         // Get request body
         dynamic data = await req.Content.ReadAsAsync<object>();
 
-        log.Info("Data Recieved: " + data.ToString());
+        log.Info("Data Received: " + data.ToString());
 
         // Get the pull request object from the service hooks payload
         dynamic jObject = JsonConvert.DeserializeObject(data.ToString());
@@ -180,7 +180,7 @@ public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceW
         // Get the pull request title
         string pullRequestTitle = jObject.resource.title;
 
-        log.Info("Service Hook Recieved for PR: " + pullRequestId + " " + pullRequestTitle);
+        log.Info("Service Hook Received for PR: " + pullRequestId + " " + pullRequestTitle);
 
         PostStatusOnPullRequest(pullRequestId, ComputeStatus(pullRequestTitle));
 
@@ -195,15 +195,12 @@ public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceW
 
 private static void PostStatusOnPullRequest(int pullRequestId, string status)
 {
-    string Url = "https://"
-        + accountName
-        + ".visualstudio.com/"
-        + projectName
-        + "/_apis/git/repositories/"
-        + repositoryName
-        + "/pullrequests/"
-        + pullRequestId
-        + "/statuses?api-version=4.0-preview";
+    string Url = string.Format(
+        @"https://{0}.visualstudio.com/{1}/_apis/git/repositories/{2}/pullrequests/{3}/statuses?api-version=4.0-preview",
+        accountName,
+        projectName,
+        repositoryName,
+        pullRequestId);
 
     using (HttpClient client = new HttpClient())
     {
