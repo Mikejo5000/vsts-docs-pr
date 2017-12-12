@@ -15,13 +15,27 @@ ms.date: 11/05/2017
 
 At the beginning of the build process, the agent downloads files from your remote repository into a local sources directory. If your build consists of multiple jobs (for example, because of multiple phases), the agent downloads the files at the beginning of each job. You can specify only a single source repository for your entire build process. 
 
+::: moniker range=">= tfs-2018 <= vsts"
+
+To specify the source repository, click the **Tasks** tab, and then click **Get sources**, and then select the type of repo that contains your source files.
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017"
+
 To specify the source repository:
 
-* **VSTS, TFS 2017.2, and newer:** Click the **Tasks** tab, and then click **Get sources**, and then select the type of repo that contains your source files.
+* **TFS 2017.3** Click the **Tasks** tab, and then click **Get sources**, and then select the type of repo that contains your source files.
 
-* **TFS 2017 RTM and older:** Click the **Repository** tab, and then select the type of repo that contains your source files.
+* **TFS 2017 RTM** Click the **Repository** tab, and then select the type of repo that contains your source files.
 
-> If you use YAML files for defining your build process in VSTS, then the repository is implicitly the same as the one in which your YAML file is present.
+::: moniker-end
+
+::: moniker range=">= tfs-2015"
+
+To specify the source repository, click the **Repository** tab, and then select the type of repo that contains your source files.
+
+::: moniker-end
 
 You can choose from the following repository types:
 
@@ -52,9 +66,13 @@ When you select a Git repo (in a team project, GitHub, Bitbucket, or Remote Git 
 |Don't sync sources|Yes|Yes|Yes|No|No|No|
 |Shallow fetch|Yes|Yes|Yes|macOS and Linux agents|macOS and Linux agents|macOS and Linux agents|
 
+::: moniker range=">= tfs-2107 <= vsts"
+
 > [!NOTE]
 > **VSTS, TFS 2017.2 or newer:** Click **Advanced settings** in the **Get Sources** task to see some of the above options.<br/>
 > **VSTS (YAML):** Not all of these options are available yet. For available options and syntax, refer to [YAML documentation](https://github.com/Microsoft/vsts-agent/blob/master/docs/preview/yamlgettingstarted-checkout.md).
+
+::: moniker-end
 
 ### Branch
 
@@ -63,6 +81,8 @@ When you select a Git repo (in a team project, GitHub, Bitbucket, or Remote Git 
 ### Clean the local repo on the agent
 
 [!INCLUDE [include](_shared/build-clean-intro.md)]
+
+::: moniker range=">= tfs-2107 <= vsts"
 
 #### VSTS, TFS 2018, TFS 2017.2
 
@@ -81,6 +101,10 @@ Select one of the following options:
 * **Sources directory**: Deletes and recreates `$(Build.SourcesDirectory)`. This results in initializing a new local git repository for every build.
 
 * **All build directories**: Deletes and recreates `$(Agent.BuildDirectory)`. This results in initializing a new local git repository for every build.
+
+::: moniker-end
+
+::: moniker range=">= tfs-2015 <= tfs-2017"
 
 #### TFS 2017 RTM, TFS 2015.4
 
@@ -101,6 +125,8 @@ The build process labels your sources with a [Git tag](https://git-scm.com/book/
 Some build variables might yield a value that is not a valid label. For example variables such as `$(Build.RequestedFor)` and `$(Build.DefinitionName)` can contain white space. If the value contains white space, the tag is not created.
 
 After the sources are tagged by your build process, an artifact with the git ref `refs/tags/{tag}` is automatically added to the completed build. This gives your team additional traceability and a more user-friendly way to navigate from the build to the code that was built.
+
+::: moniker-end
 
 ### Report build status
 
