@@ -76,7 +76,13 @@ When you select a Git repo (in a team project, GitHub, Bitbucket, or Remote Git 
 
 ### Branch
 
-(On **TFS 2017 RTM** or older, **Default branch**): This is the branch that you want to be the default when you manually queue this build. If you set a scheduled trigger for the build, this is the branch from which your build will get the latest sources. The default branch has no bearing when the build is triggered through continuous integration (CI). Usually you'll set this to be the same as the default branch of the repository (for example, "master").
+::: moniker range="<= tfs-2107"
+
+**TFS 2017 RTM** or older: This field is called **Default branch**.
+
+::: moniker-end
+
+This is the branch that you want to be the default when you manually queue this build. If you set a scheduled trigger for the build, this is the branch from which your build will get the latest sources. The default branch has no bearing when the build is triggered through continuous integration (CI). Usually you'll set this to be the same as the default branch of the repository (for example, "master").
 
 ### Clean the local repo on the agent
 
