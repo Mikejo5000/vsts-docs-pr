@@ -15,13 +15,13 @@ ms.date: 11/05/2017
 
 At the beginning of the build process, the agent downloads files from your remote repository into a local sources directory. If your build consists of multiple jobs (for example, because of multiple phases), the agent downloads the files at the beginning of each job. You can specify only a single source repository for your entire build process. 
 
-::: moniker range=">= tfs-2018 <= vsts"
+::: moniker range=">= tfs-2018"
 
 **VSTS and TFS 2018:** To specify the source repository, click the **Tasks** tab, and then click **Get sources**, and then select the type of repo that contains your source files.
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017"
+::: moniker range=">= tfs-2017 < tfs-2018"
 
 **TFS 2017:** To specify the source repository:
 
@@ -31,7 +31,7 @@ At the beginning of the build process, the agent downloads files from your remot
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015"
+::: moniker range=">= tfs-2015 < tfs-2017"
 
 **TFS 2015:** To specify the source repository, click the **Repository** tab, and then select the type of repo that contains your source files.
 
