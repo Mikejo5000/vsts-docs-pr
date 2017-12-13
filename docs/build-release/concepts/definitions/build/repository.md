@@ -17,13 +17,13 @@ At the beginning of the build process, the agent downloads files from your remot
 
 ::: moniker range=">= tfs-2018 <= vsts"
 
-To specify the source repository, click the **Tasks** tab, and then click **Get sources**, and then select the type of repo that contains your source files.
+**VSTS and TFS 2018:** To specify the source repository, click the **Tasks** tab, and then click **Get sources**, and then select the type of repo that contains your source files.
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017"
 
-To specify the source repository:
+**TFS 2017:** To specify the source repository:
 
 * **TFS 2017.3** Click the **Tasks** tab, and then click **Get sources**, and then select the type of repo that contains your source files.
 
@@ -33,7 +33,7 @@ To specify the source repository:
 
 ::: moniker range=">= tfs-2015"
 
-To specify the source repository, click the **Repository** tab, and then select the type of repo that contains your source files.
+**TFS 2015:** To specify the source repository, click the **Repository** tab, and then select the type of repo that contains your source files.
 
 ::: moniker-end
 
