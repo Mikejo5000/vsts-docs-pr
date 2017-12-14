@@ -66,7 +66,7 @@ When you select a Git repo (in a team project, GitHub, Bitbucket, or Remote Git 
 |Don't sync sources|Yes|Yes|Yes|No|No|No|
 |Shallow fetch|Yes|Yes|Yes|macOS and Linux agents|macOS and Linux agents|macOS and Linux agents|
 
-::: moniker range=">= tfs-2107 <= vsts"
+::: moniker range=">= tfs-2107 || <= vsts"
 
 > [!NOTE]
 > **VSTS, TFS 2017.2 or newer:** Click **Advanced settings** in the **Get Sources** task to see some of the above options.<br/>
@@ -88,7 +88,7 @@ This is the branch that you want to be the default when you manually queue this 
 
 [!INCLUDE [include](_shared/build-clean-intro.md)]
 
-::: moniker range=">= tfs-2107 <= vsts"
+::: moniker range=">= tfs-2107 || <= vsts"
 
 #### VSTS, TFS 2018, TFS 2017.2
 
