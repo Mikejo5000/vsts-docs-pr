@@ -429,8 +429,6 @@ Make sure your AssemblyInfo.cs files contain the information you want shown in y
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-### Why should I check in a NuGet.Config?
-
 [!INCLUDE [temp](../_shared/nuget-step-qa.md)]
 
 [!INCLUDE [temp](../../_shared/qa-definition-common-all-platforms.md)]

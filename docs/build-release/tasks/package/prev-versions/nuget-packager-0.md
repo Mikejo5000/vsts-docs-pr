@@ -64,7 +64,7 @@ None
 <tr>
 <td>Package Folder</td>
 <td>
-<p>(Optional) Specify the folder where you want to put the packages. You can use a [variable](../../define/variables.md) such as ```$(Build.StagingDirectory)\packages```</p>
+<p>(Optional) Specify the folder where you want to put the packages. You can use a [variable](../../../concepts/definitions/variables.md) such as ```$(Build.StagingDirectory)\packages```</p>
 <p>If you leave it empty, the package will be created in the same directory that contains the .csproj or .nuspec file.</p>
 </td>
 </tr>
