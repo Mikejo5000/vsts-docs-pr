@@ -11,7 +11,7 @@ ms.date: 07/05/2017
 
 # Package: NuGet
 
-**Version 2.\*** | **[Other versions](#versions)**
+**Version 2.\* | [Other versions](#versions)**
 
 **VSTS | TFS 2018**
 
