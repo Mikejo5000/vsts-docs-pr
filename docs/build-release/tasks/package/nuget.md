@@ -399,7 +399,7 @@ Make sure your AssemblyInfo.cs files contain the information you want shown in y
     </tr>
 </table>
 
-<a name="versions /">
+<a name="versions" />
 
 ## Task versions
 
