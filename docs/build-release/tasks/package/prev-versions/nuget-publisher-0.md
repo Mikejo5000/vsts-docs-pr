@@ -13,7 +13,7 @@ ms.date: 08/10/2016
 
 **VSTS (deprecated) | TFS 2017 Update 2 and below (deprecated in TFS 2018)**
 
-![](_img/nuget-publisher.png) Publish your NuGet package to a server and update your feed.
+![](../_img/nuget-publisher.png) Publish your NuGet package to a server and update your feed.
 
 
 ## Demands
@@ -37,7 +37,7 @@ None
 <li>Default value: ```**\*.nupkg;-:**\packages\**\*.nupkg```</li>
 <li>To publish a single package, click the <strong>...</strong> button and select the file.</li>
 <li>Use single-folder wildcards (```*```) and recursive wildcards (```**```) to publish multiple packages.</li>
-<li>Use [variables](../../define/variables.md) to specify directories. For example, if you specified ```$(Build.StagingDirectory)\packages``` as the **package folder** in the [NuGet Packager](nuget-packager.md) step, you could specify ```$(Build.StagingDirectory)\packages\**\*.nupkg``` here.</li>
+<li>Use [variables](../../../concepts/definitions/build/variables.md) to specify directories. For example, if you specified ```$(Build.StagingDirectory)\packages``` as the **package folder** in the NuGet Packager step, you could specify ```$(Build.StagingDirectory)\packages\**\*.nupkg``` here.</li>
 </ul>
 <!-- https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/NugetPublisher/task.json says you can specify multiple patterns separated by semicolons. That doesn't seem to work -->
 </td>
@@ -60,18 +60,13 @@ None
 (Optional) Additional arguments passed to [nuget push](https://docs.nuget.org/consume/command-line-reference#user-content-push-command).
 </td>
 </tr>
-[!INCLUDE [temp](../_shared/nuget-step-arguments.md)]
-[!INCLUDE [temp](../_shared/control-options-arguments.md)]
+[!INCLUDE [temp](../../_shared/nuget-step-arguments.md)]
+[!INCLUDE [temp](../../_shared/control-options-arguments.md)]
 </table>
 
 
 ## Examples
 
-[!INCLUDE [temp](../_shared/nuget-create-step-examples.md)]
+[!INCLUDE [temp](../../_shared/nuget-create-step-examples.md)]
 
-## Related steps
-
-![](_img/nuget-packager.png) [NuGet Packager](nuget-packager.md) Create a NuGet package from either a .csproj or .nuspec file
-
-![](_img/nuget-installer.png) [NuGet Installer](nuget-installer.md) Install and update NuGet package dependencies
 

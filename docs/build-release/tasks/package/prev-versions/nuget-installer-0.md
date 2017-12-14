@@ -13,11 +13,11 @@ ms.date: 08/10/2016
 
 **VSTS (deprecated) | TFS 2017 (deprecated in 2017 Update 2)**
 
-![](_img/nuget-installer.png) Install and update NuGet package dependencies.
+![](../_img/nuget-installer.png) Install and update NuGet package dependencies.
 
 ## Demands
 
-If your code depends on NuGet packages, make sure to add this step before your [Visual Studio Build step](../../steps/build/visual-studio-build.md). Also make sure to clear the deprecated **Restore NuGetPackages** checkbox in that step.
+If your code depends on NuGet packages, make sure to add this step before your [Visual Studio Build step](../../build/visual-studio-build.md). Also make sure to clear the deprecated **Restore NuGetPackages** checkbox in that step.
 
 ## Arguments
 
@@ -31,7 +31,7 @@ If your code depends on NuGet packages, make sure to add this step before your [
 <tr>
 <td>Path to Solution</td>
 <td>
-<p>Copy the value from the **Solution** argument in your [Visual Studio Build step](../../steps/build/visual-studio-build.md) and paste it here.</p>
+<p>Copy the value from the **Solution** argument in your [Visual Studio Build step](../../build/visual-studio-build.md) and paste it here.</p>
 </td>
 </tr>
 <tr>
@@ -53,8 +53,8 @@ Additional arguments passed to [nuget restore](https://docs.nuget.org/consume/co
 </td>
 </tr>
 <tr><th style="text-align: center" colspan="2">Advanced</th></tr>
-[!INCLUDE [temp](../_shared/nuget-step-arguments.md)]
-[!INCLUDE [temp](../_shared/control-options-arguments.md)]
+[!INCLUDE [temp](../../_shared/nuget-step-arguments.md)]
+[!INCLUDE [temp](../../_shared/control-options-arguments.md)]
 </table>
 
 ## Examples
@@ -76,7 +76,7 @@ You're building a Visual Studio solution that depends on a NuGet feed.
 
 <table>
 <tr>
-<td>![Package: NuGet Installer](_img/nuget-installer.png)<br/>**Package: NuGet Installer**</td>
+<td>![Package: NuGet Installer](../_img/nuget-installer.png)<br/>**Package: NuGet Installer**</td>
 <td>
 <p>Install your NuGet package dependencies.</p>
 <ul>
@@ -86,7 +86,7 @@ You're building a Visual Studio solution that depends on a NuGet feed.
 </td>
 </tr>
 <tr>
-<td>![Build: Visual Studio Build](../build/_img/visual-studio-build.png)<br/>**Build: Visual Studio Build**</td>
+<td>![Build: Visual Studio Build](../../build/_img/visual-studio-build.png)<br/>**Build: Visual Studio Build**</td>
 <td>
 <p>Build your solution.</p>
 <ul>

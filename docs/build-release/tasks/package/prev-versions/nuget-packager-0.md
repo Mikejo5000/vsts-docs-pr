@@ -13,7 +13,7 @@ ms.date: 08/10/2016
 
 **VSTS (deprecated) | TFS 2017 Update 2 and below (deprecated in TFS 2018)**
 
-![](_img/nuget-packager.png) Create a NuGet package from either a .csproj or .nuspec file.
+![](../_img/nuget-packager.png) Create a NuGet package from either a .csproj or .nuspec file.
 
 
 ## Demands
@@ -55,7 +55,7 @@ None
 <tr>
 <td>Use build number to version package</td>
 <td>
-<p>Select if you want to use the build number to version your package. If you select this option, for the [definition options](../../define/options.md), set the **build number format** to something like ```$(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)```</p>
+<p>Select if you want to use the build number to version your package. If you select this option, for the [definition options](../../../concepts/definitions/build/options.md), set the **build number format** to something like ```$(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)```</p>
 <p>The build number format must be ```{some_characters}_0.0.0.0```. The characters and the underscore character are omitted from the output. The version number at the end must be a unique number in a format such as ```0.0.0.0``` that is higher than the last published number.</p>
 <p>The version number is passed to [nuget pack](https://docs.nuget.org/consume/command-line-reference#pack) with the ```-Version``` option.</p>
 <p>Versions are shown prominently on NuGet servers. For example they are listed on the Visual Studio Team Services feeds page and on the NuGet.org package page.</p>
@@ -88,11 +88,11 @@ If you are packaging a .csproj file, you must specify a configuration that you a
 (Optional) Additional arguments passed [nuget pack](https://docs.nuget.org/consume/command-line-reference#pack).
 </td>
 </tr>
-[!INCLUDE [temp](../_shared/nuget-step-arguments.md)]
-[!INCLUDE [temp](../_shared/control-options-arguments.md)]
+[!INCLUDE [temp](../../_shared/nuget-step-arguments.md)]
+[!INCLUDE [temp](../../_shared/control-options-arguments.md)]
 </table>
 
 
 ## Examples
 
-[!INCLUDE [temp](../_shared/nuget-create-step-examples.md)]
+[!INCLUDE [temp](../../_shared/nuget-create-step-examples.md)]
