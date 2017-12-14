@@ -360,6 +360,18 @@
       href: tasks/package/nuget.md
     - name: Xamarin Component Restore
       href: tasks/package/xamarin-component-restore.md
+    - name: Previous versions
+      items:
+      - name: NuGet Installer 0.*
+        href: tasks/package/nuget-installer-0.md
+      - name: Nuget Restore 1.*
+        href: tasks/package/nuget.md#restore-nuget-packages
+      - name: Nuget Packager 0.*
+        href: tasks/package/nuget-packager-0.md
+      - name: Nuget Publisher 0.*
+        href: 
+      - name: Nuget Command 0.*
+        href: tasks/package/nuget.md#custom-nuget-command
   - name: Deploy tasks
     items:
     - name: App Center Distribute

@@ -11,7 +11,9 @@ ms.date: 07/05/2017
 
 # Package: NuGet
 
-[!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
+**Version 2.\*** | **[Other versions](#versions)**
+
+**VSTS | TFS 2018**
 
 ![](_img/nuget.png) Install and update NuGet package dependencies, or package and publish NuGet packages. 
 
@@ -396,6 +398,32 @@ Make sure your AssemblyInfo.cs files contain the information you want shown in y
         </td>
     </tr>
 </table>
+
+<a name="versions /">
+
+## Task versions
+
+### Task: NuGet (formerly NuGet Restore at 1.\*, NuGet Installer at 0.\*)
+| Task version | VSTS                     | TFS                                           |
+|--------------|--------------------------|-----------------------------------------------|
+| 2.*          | Available                | Appeared in 2018                              |
+| 1.*          | Deprecated but available | Appeared in 2017 Update 2, deprecated in 2018 |
+| 0.*          | Deprecated but available | Appeared in 2017, deprecated in 2017 Update 2 |
+
+### Task: NuGet Packager
+| Task version | VSTS                     | TFS                                           |
+|--------------|--------------------------|-----------------------------------------------|
+| 0.*          | Deprecated but available | Available in TFS < 2018, deprecated in TFS >= 2018 |
+
+### Task: NuGet Publisher
+| Task version | VSTS                     | TFS                                           |
+|--------------|--------------------------|-----------------------------------------------|
+| 0.*          | Deprecated but available | Available in TFS < 2018, deprecated in TFS >= 2018 |
+
+### Task: NuGet Command
+| Task version | VSTS                     | TFS                                           |
+|--------------|--------------------------|-----------------------------------------------|
+| 0.*          | Deprecated but available | Available in TFS < 2017 Update 2, deprecated in TFS >= 2018 |
 
 ## Q & A
 
