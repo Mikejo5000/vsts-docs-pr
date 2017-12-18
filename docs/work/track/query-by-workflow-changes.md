@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: 1FD042F2-D503-40A3-A6C7-1E25A0F664C6  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/18/2017
+ms.date: 12/18/2017  
 ---
 
 # Query by assignment, workflow or Kanban board changes
@@ -118,11 +118,7 @@ To filter on items assigned to someone who belongs to a VSTS or TFS group, use t
 
 ![Filter based on assignment to a TFS security group](_img/example-work-item-queries/IC675038.png)  
 
-You can use the **In Group** or **Not In Group** operators to filter a query based on several values that are members of a group, or that are not members of a group. Examples of groups are teams, VSTS/TFS groups, and work item categories.
-
-
->[!NOTE]  
->**In Group** clauses don't support references to Azure Active Directory (AAD) groups. 
+You can use the **In Group** or **Not In Group** operators to filter a query based on several values that are members of a group, or that are not members of a group. Examples of groups are teams, VSTS/TFS security groups, Active Directory (AD) and Azure Active Directory (AAD) security groups, and work item categories.
 
 <a id="workflow-change"/> 
 
@@ -220,7 +216,8 @@ You can quickly find items that you changed, resolved or closed. You can also fi
 
 ##List items based on Kanban board changes  
 
-<blockquote><span style="font-size:1.0em;"><b>Feature availability: </b>Kanban query fields are currently available from VSTS or from TFS 2015 Update 1 or later versions. </span></blockquote>
+> [!NOTE]   
+> **Feature availability**: Kanban query fields are currently available from VSTS or from TFS 2015.1 and later versions. 
 
 Using the Kanban query fields&mdash;Board Column, Board Column Done, and Board Lane&mdash;you can list work items according to their flow status on the Kanban board. And, you can create a [status or trend chart](../../report/dashboards/charts.md) based on these queries. 
 
@@ -229,8 +226,8 @@ For example, you can list items based on the team area path, and if they are in 
 <img src="_img/query-kanban-fields.png" alt="Query filter on Kanban board fields" style="border: 1px solid #C3C3C3;" />  
 
 
->[!NOTE]  
->Queries are now scoped to the current team project by default. Check the **Query across projects** to find work items defined in other team projects within the collection.  
+> [!NOTE]  
+> Queries are now scoped to the current team project by default. Check the **Query across projects** to find work items defined in other team projects within the collection.  
 
 
 <table valign="top">
@@ -278,8 +275,8 @@ For example, you can list items based on the team area path, and if they are in 
 
 <a id="kanban-query-results">  </a>
 
->[!IMPORTANT] 
->Work items that appear on more then one team's Kanban board can yield query results that don't meet your expectations. Because each team can customize the Kanban board columns and swimlanes, the values assigned to work items which appear on different boards may not be the same. The primary work around for this issue is to maintain single ownership of work items by [team area path](../scale/set-team-defaults.md). Another option is to [add custom workflow states (VSTS)](../customize/process/customize-process-workflow.md) which all teams can use.</blockquote>  
+> [!IMPORTANT] 
+> Work items that appear on more then one team's Kanban board can yield query results that don't meet your expectations. Because each team can customize the Kanban board columns and swimlanes, the values assigned to work items which appear on different boards may not be the same. The primary work around for this issue is to maintain single ownership of work items by [team area path](../scale/set-team-defaults.md). Another option is to [add custom workflow states (VSTS)](../customize/process/customize-process-workflow.md) which all teams can use.   
 
 
 <a id="workflow-fields">  </a>

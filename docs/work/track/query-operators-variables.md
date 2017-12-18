@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: 814c2dca-cf8f-44bf-bba1-a5d8e293fc05
 ms.manager: douge
 ms.author: kaelli
-ms.date: 09/29/2017  
+ms.date: 12/18/2017  
 ---
 
 
@@ -214,21 +214,21 @@ You can use query operators in the following table to specify how each value in 
 	<td><p>Does not match any value in a delimited set. For example, you can exclude work items whose States are not Resolved, Completed, or Closed from query results if you specify those values for the State field.</p>
 <blockquote><strong>Important:</strong>  Separate values with the list separator that corresponds to the regional settings that are defined for your client computer. For example, you might use a comma(,).
 </blockquote>
-<blockquote><strong>Feature availability:</strong>  The <strong>Not In</strong> operator is currently only available from VSTS. Support for TFS 2018 is planned for a future update.</blockquote>
+<blockquote><strong>Feature availability:</strong>  The <strong>Not In</strong> operator is currently only available from VSTS. Support  is planned for a future release of TFS.</blockquote>
 </td>
 	<td><p>Number, <strong>String</strong>, <strong>DateTime</strong>, <strong>TreePath</strong></p></td></tr>
 <tr>
 	<td><p><strong>In Group</strong></p></td>
 	<td><p>Matches a value that is a member of the group in the clause. Groups correspond to the name of a category or a TFS group. For example, you can create a query to find all work items that are assigned to members of the Contributors group or to a team. Team groups are created when you create a team. The name of team groups follows the pattern [<em>Team Project Name</em>]\ <em>Team Name</em>.</p><p>You can't specify a security or email distribution group as a value.</p><p>For worked examples, see [Create managed queries](example-queries.md).</p></td>
 	<td><p> <strong>String</strong>  that matches the name of a user group or category group in Team Foundation Server.</p>
-<blockquote><strong>Note:</strong>  You can use the <strong>In Group</strong> operator only with fields that use the <strong>String</strong> data type or the <strong>Work Item Type</strong> field. The operator cannot be used to query Azure Active Directory groups.
+<blockquote><strong>Note:</strong>  You can use the <strong>In Group</strong> operator only with fields that use the <strong>String</strong> data type or the <strong>Work Item Type</strong> field. You can also use groups defined in Azure Active Directory (AAD) when your VSTS account is backed by AAD, or Active Directory (AD) when your server instance is backed by Active Directory.  
 </blockquote>
 <p>For information about category groups, see [Use categories to group work item types](../customize/reference/use-categories-to-group-work-item-types.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json). For more information about Azure Active Directory and VSTS, see [Access with Azure Active Directory groups](../../accounts/manage-azure-active-directory-groups-vsts.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json).</p></td></tr>
 <tr>
 	<td><p><strong>Not in Group</strong></p></td>
 	<td><p>Does not match a value that is a member of the group in the clause.</p></td>
 	<td><p> <strong>String</strong>  that matches the name of a user group in Team Foundation Server or a category group defined for a team project.</p>
-<blockquote><strong>Note:</strong>  You can use the <strong>Not In Group</strong> operator only with fields that use the <strong>String</strong> data type or the <strong>Work Item Type</strong> field. The operator cannot be used to query Azure Active Directory groups.
+<blockquote><strong>Note:</strong>  You can use the <strong>Not In Group</strong> operator only with fields that use the <strong>String</strong> data type or the <strong>Work Item Type</strong> field. You can also use groups defined in AAD when your VSTS account is backed by AAD, or AD when your server instance is backed by AD. 
 </blockquote>
 <p>For more information about Azure Active Directory and VSTS, see [Access with Azure Active Directory groups](../../accounts/manage-azure-active-directory-groups-vsts.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json).</p></td>
 </tr>
