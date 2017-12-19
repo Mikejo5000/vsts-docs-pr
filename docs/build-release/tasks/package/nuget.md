@@ -404,26 +404,26 @@ Make sure your AssemblyInfo.cs files contain the information you want shown in y
 ## Task versions
 
 ### Task: NuGet (formerly NuGet Restore at 1.\*, NuGet Installer at 0.\*)
-| Task version | VSTS                     | TFS                                           |
-|--------------|--------------------------|-----------------------------------------------|
-| 2.*          | Available                | Appeared in 2018                              |
-| 1.*          | Deprecated but available | Appeared in 2017 Update 2, deprecated in 2018 |
-| 0.*          | Deprecated but available | Appeared in 2017, deprecated in 2017 Update 2 |
+| Task version                                | VSTS                     | TFS                                           |
+|---------------------------------------------|--------------------------|-----------------------------------------------|
+| 2.*                                         | Available                | Appeared in 2018                              |
+| [1.*](#restore-nuget-packages)              | Deprecated but available | Appeared in 2017 Update 2, deprecated in 2018 |
+| [0.*](./prev-versions/nuget-installer-0.md) | Deprecated but available | Appeared in 2017, deprecated in 2017 Update 2 |
 
 ### Task: NuGet Packager
-| Task version | VSTS                     | TFS                                           |
-|--------------|--------------------------|-----------------------------------------------|
-| 0.*          | Deprecated but available | Available in TFS < 2018, deprecated in TFS >= 2018 |
+| Task version | VSTS                         | TFS                                           |
+|--------------|------------------------------|-----------------------------------------------|
+| [0.*](./prev-versions/nuget-packager-0.md)  | Deprecated but available | Available in TFS < 2018, deprecated in TFS >= 2018 |
 
 ### Task: NuGet Publisher
-| Task version | VSTS                     | TFS                                           |
-|--------------|--------------------------|-----------------------------------------------|
-| 0.*          | Deprecated but available | Available in TFS < 2018, deprecated in TFS >= 2018 |
+| Task version | VSTS                         | TFS                                           |
+|--------------|------------------------------|-----------------------------------------------|
+| [0.*](./prev-versions/nuget-publisher-0.md) | Deprecated but available | Available in TFS < 2018, deprecated in TFS >= 2018 |
 
 ### Task: NuGet Command
 | Task version | VSTS                     | TFS                                           |
 |--------------|--------------------------|-----------------------------------------------|
-| 0.*          | Deprecated but available | Available in TFS < 2017 Update 2, deprecated in TFS >= 2018 |
+| [0.*](#custom-nuget-command)            | Deprecated but available | Available in TFS < 2017 Update 2, deprecated in TFS >= 2018 |
 
 ## Q & A
 

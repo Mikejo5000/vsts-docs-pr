@@ -364,13 +364,13 @@
       items:
       - name: NuGet Installer 0.*
         href: tasks/package/prev-versions/nuget-installer-0.md
-      - name: Nuget Restore 1.*
+      - name: NuGet Restore 1.*
         href: tasks/package/nuget.md#restore-nuget-packages
-      - name: Nuget Packager 0.*
+      - name: NuGet Packager 0.*
         href: tasks/package/prev-versions/nuget-packager-0.md
-      - name: Nuget Publisher 0.*
+      - name: NuGet Publisher 0.*
         href: tasks/package/prev-versions/nuget-publisher-0.md
-      - name: Nuget Command 0.*
+      - name: NuGet Command 0.*
         href: tasks/package/nuget.md#custom-nuget-command
   - name: Deploy tasks
     items:
