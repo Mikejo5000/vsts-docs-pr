@@ -33,7 +33,7 @@ None
 <td>Path/Pattern to nuspec files</td>
 <td>
 
-<p>Specify .csproj files (for example, ```**\*.csproj```) for simple projects. In this case:</p>
+Specify .csproj files (for example, ```**\*.csproj```) for simple projects. In this case:
 <ul>
 <li>The packager compiles the .csproj files for packaging.</li>
 <li>You must specify <strong>Configuration to Package</strong> (see below).</li>
@@ -55,7 +55,7 @@ None
 <tr>
 <td>Use build number to version package</td>
 <td>
-<p>Select if you want to use the build number to version your package. If you select this option, for the [definition options](../../../concepts/definitions/build/options.md), set the **build number format** to something like ```$(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)```</p>
+Select if you want to use the build number to version your package. If you select this option, for the [definition options](../../../concepts/definitions/build/options.md), set the **build number format** to something like ```$(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)```
 <p>The build number format must be ```{some_characters}_0.0.0.0```. The characters and the underscore character are omitted from the output. The version number at the end must be a unique number in a format such as ```0.0.0.0``` that is higher than the last published number.</p>
 <p>The version number is passed to [nuget pack](https://docs.nuget.org/consume/command-line-reference#pack) with the ```-Version``` option.</p>
 <p>Versions are shown prominently on NuGet servers. For example they are listed on the Visual Studio Team Services feeds page and on the NuGet.org package page.</p>
@@ -78,7 +78,7 @@ If you are packaging a .csproj file, you must specify a configuration that you a
 <tr>
 <td>Additional build properties</td>
 <td>
-<p>Semicolon delimited list of properties used to build the package. For example, you could replace  ```<description>$description$</description>``` in the <a href="#nuspec">.nuspec file</a> this way: ```Description="This is a great package"```</p>
+Semicolon delimited list of properties used to build the package. For example, you could replace  ```<description>$description$</description>``` in the <a href="#nuspec">.nuspec file</a> this way: ```Description="This is a great package"```
 <p>Using this argument is equivalent to supplying properties from [nuget pack](https://docs.nuget.org/consume/command-line-reference#pack) with the ```-Properties``` option.</p>
 </td>
 </tr>

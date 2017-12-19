@@ -31,13 +31,13 @@ If your code depends on NuGet packages, make sure to add this step before your [
 <tr>
 <td>Path to Solution</td>
 <td>
-<p>Copy the value from the **Solution** argument in your [Visual Studio Build step](../../build/visual-studio-build.md) and paste it here.</p>
+Copy the value from the **Solution** argument in your [Visual Studio Build step](../../build/visual-studio-build.md) and paste it here.
 </td>
 </tr>
 <tr>
 <td>Path to NuGet.config</td>
 <td>
-<p>If you are using a package source other than NuGet.org, you must check in a [NuGet.config](http://docs.nuget.org/Consume/NuGet-Config-File) file and specify the path to it here.</p>
+If you are using a package source other than NuGet.org, you must check in a [NuGet.config](http://docs.nuget.org/Consume/NuGet-Config-File) file and specify the path to it here.
 </td>
 </tr>
 <tr>
