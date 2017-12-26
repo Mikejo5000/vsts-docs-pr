@@ -15,7 +15,7 @@ ms.topic: get-started-article
 **TFS 2017 | TFS 2015 | TFS 2013**
 
 Administrators in VSTS and TFS exist at three levels:
-the team, the team project, and the team project collection.
+the team, the team project, and the team project collection..
 
 In TFS, there are also server-level administrators.
 
