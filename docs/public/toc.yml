@@ -1,0 +1,37 @@
+- name: Public Projects
+  href: index.md
+- name: Overview
+  items:
+  - name: What is a public project? 
+    href: about-public-projects.md
+- name: Quickstarts
+  items:
+  - name: Create a public project
+    href: create-public-project.md
+  - name: Make a team project public
+    href: make-project-public.md
+- name: Tutorials
+  items:
+  - name: Browse the code base 
+    href: browse-code.md
+- name: Concepts
+  items:
+  - name: Default roles and permissions
+    href: ../security/permissions-access.md?toc=/vsts/public/toc.json&bc=/vsts/public/breadcrumb/toc.json 
+- name: How-to Guides
+  items:
+  - name: Filter basics
+    href: ../work/backlogs/filter-backlogs.md?toc=/vsts/public/toc.json&bc=/vsts/public/breadcrumb/toc.json 
+- name: Reference
+  items:
+  - name: Terms of service
+    href: ../collaborate/rate-limits.md?toc=/vsts/public/toc.json&bc=/vsts/public/breadcrumb/toc.json 
+  - name: Work item form controls
+    href: ../work/work-items/work-item-form-controls.md?toc=/vsts/public/toc.json&bc=/vsts/public/breadcrumb/toc.json 
+- name: Resources
+  items:
+  - name: New User Guide
+    href: ../user-guide/index.md
+  - name: VSTS data protection overview
+    href: ../articles/team-services-security-whitepaper.md 
+
