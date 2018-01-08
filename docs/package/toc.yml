@@ -24,6 +24,8 @@
     href: concepts/views.md
   - name: Upstream sources
     href: concepts/upstream-sources.md
+  - name: Complete graphs
+    href: concepts/package-graph.md
   - name: Symbols
     href: concepts/symbols.md
 - name: How-to
