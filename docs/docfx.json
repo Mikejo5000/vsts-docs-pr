@@ -52,7 +52,7 @@
     "groups": {
       "all": {
         "dest": "all",
-        "moniker_range": "vsts || >= tfs-2013 <= tfs-2018.2"
+        "moniker_range": ">= tfs-2013"
       }
     }
   }

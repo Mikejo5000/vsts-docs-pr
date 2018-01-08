@@ -24,7 +24,7 @@
       "build_output_subfolder": "team-services",
       "locale": "en-us",
       "monikers": [],
-      "moniker_ranges": [ "vsts || >= tfs-2013 <= tfs-2018.2" ],
+      "moniker_ranges": [ ">= tfs-2013" ],
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
