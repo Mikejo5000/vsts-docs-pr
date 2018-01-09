@@ -66,7 +66,7 @@ Copy this URL into the clipboard or store it in a place where you can find it ea
 0. Enter the folder where Git will store the local repository in the **Local Git Repositories** section.
 0. Select **Clone** to clone your repo. 
 
-  ![Cloning a VSTS Repository in Visual Studio](..git//_shared/_img/cloneVsRepo.png)
+  ![Cloning a VSTS Repository in Visual Studio](../git/_shared/_img/cloneVsRepo.png)
 
 
 # [Command Line](#tab/command-line)
