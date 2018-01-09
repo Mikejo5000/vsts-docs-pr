@@ -21,6 +21,7 @@ Create a public project, make an existing project public, or work in a public pr
 
 * [Create a public project](create-public-project.md)
 * [Make a team project public](make-project-public.md)
+* Download code
 * View and filter work items
 * View a project page or dashboard
 * View the project Wiki 
