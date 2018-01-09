@@ -1,6 +1,6 @@
 ---
 title: Make your team project a public project 
-titleSuffix: VSTS  
+titleSuffix: VSTS Public Project 
 description: Switch your team project from private to public
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
@@ -13,7 +13,7 @@ ms.date: 01/05/2018
 
 # Make your team project a public project
 
-**VSTS**
+**VSTS Public Project**
 
  
 

@@ -28,7 +28,7 @@ Create a public project, make an existing project public, or work in a public pr
 ## Step-by-Step Tutorials
 
 * [Browse the code base](browse-code.md)
-* [Clone a repository](../git/tutorial.md?toc=/vsts/public/toc.json&bc=/vsts/public/breadcrumb/toc.json)
+* [Clone a repository](clone-git-repo.md)
 * View build progress  
 * View release progress  
 * View test plans and test results  
@@ -39,8 +39,8 @@ Create a public project, make an existing project public, or work in a public pr
 ## How-to Guides
 * [Filter basics](../work/backlogs/filter-backlogs.md?toc=/vsts/public/toc.json&bc=/vsts/public/breadcrumb/toc.json)  
 * Share or email a work item or set of work items 
-* [Search the code base](../search/code/code-search.md?toc=/vsts/public/toc.json&bc=/vsts/public/breadcrumb/toc.json)  
-* [Search work items](../search/workitem/work-item-search.md?toc=/vsts/public/toc.json&bc=/vsts/public/breadcrumb/toc.json)   
+* [Search the code base](code-search.md)  
+* [Search work items](work-item-search.md)   
 
 ## Reference 
 

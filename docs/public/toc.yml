@@ -20,7 +20,7 @@
   - name: Browse the code base 
     href: browse-code.md
   - name: Clone a repository
-    href: ../git/tutorial.md?toc=/vsts/public/toc.json&bc=/vsts/public/breadcrumb/toc.json
+    href: clone-git-repo.md 
   - name: View build progress  
   - name: View release progress  
   - name: View test plans and test results  
@@ -34,9 +34,9 @@
     href: ../work/backlogs/filter-backlogs.md?toc=/vsts/public/toc.json&bc=/vsts/public/breadcrumb/toc.json 
   - name: Share or email a work item or set of work items 
   - name: Search the code base
-    href: ../search/code/code-search.md?toc=/vsts/public/toc.json&bc=/vsts/public/breadcrumb/toc.json 
+    href: code-search.md
   - name: Search work items
-    href: ../search/workitem/work-item-search.md?toc=/vsts/public/toc.json&bc=/vsts/public/breadcrumb/toc.json  
+    href: work-item-search.md
 - name: Reference
   items:
   - name: Terms of service
@@ -46,9 +46,9 @@
 - name: Resources
   items:
   - name: Git
-    href: ../git.md
+    href: ../git/index.md
   - name: Work items
-    href: ../work/work-items.md
+    href: ../work/work-items/index.md 
   - name: VSTS data protection overview
     href: ../articles/team-services-security-whitepaper.md 
 
