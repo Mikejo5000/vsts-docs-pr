@@ -89,6 +89,9 @@
     tocHref: /vsts/
     topicHref: /vsts/index#pivot=services&panel=collaboration
     items:
+    - name: Public Project
+      tocHref: /vsts/public/
+      topicHref: /vsts/public/index
     - name: Notifications
       tocHref: /vsts/notifications/
       topicHref: /vsts/notifications/index
