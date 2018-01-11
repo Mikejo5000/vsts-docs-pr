@@ -76,7 +76,7 @@ see <span sdata="link"> How to: Install Team Foundation Proxy and set up a remot
 			<td><strong>/inputs</strong>:Key1=Value1; Key2=Value2;...</td>
 			<td>
 				Optional. Specifies additional settings and values to use while configuring the proxy.<br/><br/>
-				For example, values for “GvfsProjectName” and “GvfsRepositoryName” can be used to configure the Git Virtual File System (GVFS) cache server against a team project and Git repository. (Added in TFS 2018 update 1)”
+				For example, values for “GvfsProjectName” and “GvfsRepositoryName” can be used to configure the <a href="http://gvfs.io">Git Virtual File System</a> (GVFS) cache server against a team project and Git repository. (Added in TFS 2018 update 1)”
 			</td>
 		</tr>
 	</tbody>
