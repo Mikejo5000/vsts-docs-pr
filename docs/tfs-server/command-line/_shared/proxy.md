@@ -72,6 +72,12 @@ see <span sdata="link"> How to: Install Team Foundation Proxy and set up a remot
 			<td><strong>/PersonalAccessTokenFile</strong>:PathToFileWithPAT</td>
 			<td>Optionally specifies the path to a file that contains a personal access token. This token will be used authenticate to the collection or account while registering a proxy. (Added in TFS 2018 Update 1)</td>
 		</tr>
+		<tr>
+			<td><strong>/inputs</strong>:Key1=Value1; Key2=Value2;...</td>
+			<td>
+				Optionally specifies GvfsProjectName and GvfsRepositoryName used to add a repository to the GVFS cache. (Added in TFS 2018 Update 1)
+			</td>
+		</tr>
 	</tbody>
 </table>
 
@@ -102,3 +108,7 @@ The following example shows how to change the service account used by the proxy 
 
     TFSConfig Proxy /change /Collection:https://HelenaPetersen.tfs.visualstudio.com/PhoneSaver
 		/account:"My Proxy Service Account"
+
+The following example shows how to add a Git repository to the GVFS cache.
+
+    TFSConfig Proxy /add /Collection:https://HelenaPetersen.tfs.visualstudio.com/PhoneSaver /inputs:GvfsProjectName=PhoneSaver;GvfsRepositoryName=AnotherRepository
