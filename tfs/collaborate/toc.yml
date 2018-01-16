@@ -3,17 +3,17 @@
 - name: Overview
   items:
   - name: "About READMEs & Wikis"
-    href: ../../docs/collaborate/about-readme-wiki.md?toc=/tfs/collaborate/toc.json&bc=/tfs/collaborate/breadcrumb/toc.json  
+    href: about-readme-wiki.md  
 - name: Quickstarts
   items:
   - name: Share your project vision
-    href: project-vision-status.md?toc=/tfs/collaborate/toc.json&bc=/tfs/collaborate/breadcrumb/toc.json 
+    href: project-vision-status.md
   - name: Add Markdown to a dashboard
-    href: ../report/add-markdown-to-dashboard.md?toc=/tfs/collaborate/toc.json&bc=/tfs/collaborate/breadcrumb/toc.json 
+    href: ../report/add-markdown-to-dashboard.md?toc=/vsts/collaborate/toc.json&bc=/vsts/collaborate/breadcrumb/toc.json
 - name: Concepts
   items:
   - name: Create a readme for your repo
-    href: ../git/create-a-readme.md?toc=/tfs/collaborate/toc.json&bc=/tfs/collaborate/breadcrumb/toc.json 
+    href: ../git/create-a-readme.md?toc=/vsts/collaborate/toc.json&bc=/vsts/collaborate/breadcrumb/toc.json 
 - name: How-to guides
   items:
   - name: Create a wiki for your team project
@@ -39,4 +39,4 @@
 - name: Resources 
   items:
   - name: Dashboards
-    href: /vsts/report/dashboards
+    href: /vsts/report/dashboards?toc=/vsts/report/toc.json
