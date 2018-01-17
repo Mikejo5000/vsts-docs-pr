@@ -133,12 +133,13 @@ In the **Tests** tab under **Build and Release**, you can filter the test result
 When running automated tests using a .testsettings file, you can now pass parameters to the test, such as appURL. This information can be accessed via the TestContext object in the test code. 
 You can also override these parameters in the CI/CD pipeline using the test tasks.
 To use this, you need Visual Studio 2017.5 or higher. 
-a. In Visual Studio, open your .testsettings file using the XML editor and add the parameters you need in the "Properties" node as follows:
+1. In Visual Studio, open your .testsettings file using the XML editor and add the parameters you need in the "Properties" node as follows:
 <Properties>
     <Property name="appURL" value="http://www.bing.com"/>
     <Property name="browser" value="Edge"/>
 </Properties> 
-b. Access the parameters using the TestContext object. For e.g., 
+2. Access the parameters using the TestContext object. For e.g., 
+
 string appURL = TestContext.Properties["appURL"].ToString();
 
 ### Access information pertinent to test cases in your automated tests when running in the CI/CD pipeline.
