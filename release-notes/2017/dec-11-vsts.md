@@ -149,8 +149,8 @@ This includes \_\_Tfs_TestPlanId__, \_\_Tfs_TestCaseId__, \_\_Tfs_TestPointId__,
 
 ### Automated tests that use TestCase as a data source can now be run in the CI/CD pipeline using the VSTest task.
 The following pre-requisites are needed:
-1. Visual Studio 2017.6 or higher. If you are using the "Test Platform Tools Installer" to run tests using the VSTest task, make sure you pick the appropriate version of the package.
-2. Create a PAT that is authorized for the scope 'Work Items (full)'.
+1. Visual Studio 2017.6 or higher. If you are using the ["Test Platform Installer"](https://docs.microsoft.com/en-us/vsts/release-notes/2017/nov-28-vsts#test) task to run tests using the VSTest task, make sure you pick the appropriate version of the package.
+2. Create a [PAT](https://docs.microsoft.com/en-us/vsts/accounts/use-personal-access-tokens-to-authenticate?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json) that is authorized for the scope 'Work Items (full)'.
 3. Add a secure Build or Release variable called Test.TestCaseAccessToken with the value set to the PAT created in step 2.
 
 Please note that tests that use TestCase as a data source cannot be used with the 'Run Functional Tests' task.
