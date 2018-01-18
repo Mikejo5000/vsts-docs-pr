@@ -135,10 +135,7 @@ You can also override these parameters in the CI/CD pipeline using the test task
 To use this, you need Visual Studio 2017.5 or higher. 
 
 1. In Visual Studio, open your .testsettings file using the XML editor and add the parameters you need in the “Properties” node as follows:
-`<Properties>`
-`    <Property name="appURL" value="http://www.bing.com"/>`
-`    <Property name="browser" value="Edge"/>`
-`</Properties>`
+`<Properties><Property name="appURL" value="http://www.bing.com"/><Property name="browser" value="Edge"/></Properties>`
 2. Access the parameters using the TestContext object. For e.g.
 `string appURL = TestContext.Properties["appURL"].ToString();`
 
