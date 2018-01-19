@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-git 
 ms.manager: douge
 ms.author: sdanie
-ms.date: 10/31/2017
+ms.date: 01/19/2018
 ---
 
 # Customize and extend pull request workflows with pull request status
