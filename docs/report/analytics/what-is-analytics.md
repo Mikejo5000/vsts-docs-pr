@@ -20,11 +20,11 @@ You can use the Analytics Service, the reporting platform for Visual Studio Team
 To gain access to the Analytics Service for your VSTS account, you install the [VSTS Analytics extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). Once installed, the Analytics Service populates itself with all available VSTS data. Once populated, it updates itself as data changes occur. For more information, read read [Performance and latency](performance-latency.md)
 
 > [!NOTE]
-> **The Analytics Service is in Public Preview**. While in preview, it is available to everyone free of charge. We encourage you to use it and provide us feedback. As we add features, we will post them on the [Microsoft DevOps Blog](https://blogs.msdn.microsoft.com/devops/?s=VSTS+Analytics+Extension).
+> **The Analytics Service is in public preview**. While in preview, it is available to everyone free of charge. We encourage you to use it and provide us feedback. As we add features, we will post them on the [Microsoft DevOps Blog](https://blogs.msdn.microsoft.com/devops/?s=VSTS+Analytics+Extension).
 
 You can access the Analytics Service through dashboard widgets, OData, and Power BI.
 
-## Dashboard Widgets
+## Dashboard widgets
 
 In VSTS, you can create [dashboards](../dashboards/dashboards.md) and [add widgets to them](../dashboards/add-widget-to-dashboard.md). We provide several [widgets based on the Analytics Service](analytics-widgets-vsts.md). These widgets take advantage of the power of the Analytics Service. 
 
