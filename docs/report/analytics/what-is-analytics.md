@@ -24,7 +24,7 @@ To gain access to the Analytics Service for your VSTS account, you install the [
 
 You can access the Analytics Service through dashboard widgets, OData, and Power BI.
 
-## Dashboard widgets
+## Dashboard Widgets
 
 In VSTS, you can create [dashboards](../dashboards/dashboards.md) and [add widgets to them](../dashboards/add-widget-to-dashboard.md). We provide several [widgets based on the Analytics Service](analytics-widgets-vsts.md). These widgets take advantage of the power of the Analytics Service. 
 
