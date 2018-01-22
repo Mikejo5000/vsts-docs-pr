@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-git 
 ms.manager: douge
 ms.author: sdanie
-ms.date: 01/19/2018
+ms.date: 01/26/2018
 ---
 
 # Customize and extend pull request workflows with pull request status
@@ -100,9 +100,7 @@ An **Authorized account** can also be selected to require that a specific accoun
 
 ## Custom actions
 
-```
-TODO: Get details about extensibility points from Ruslan
-```
+In addition to predefined service hook events that can trigger the service to update PR status it is possible to extend status menu by using [VSTS extensions](../../extend/index.md) to give the trigger actions to the end user. For example, if status that corresponds to test run can be restarted by the end user it is possible to have 'Restart' menu item to the status menu that would trigger tests to run.
 
 ## Additional concepts
 
