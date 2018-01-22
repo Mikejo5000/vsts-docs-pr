@@ -1,30 +1,33 @@
 # Git at Scale - Git Virtual File System Architecture
 
-In the article on [GVFS Design History](https://www.visualstudio.com/learn/gvfs-design-history), 
-we discussed some of the challenges in working with a repo with millions of files, 
-and some of the approaches that we tried and discarded to fix those issues. In this 
-article we'll take a look at how we designed the Git Virtual File System (GVFS) to 
-make Git commands run more efficiently on a repo with millions of files in it.
+In previous articles, we have disccused the challenges of working in a 
+[Git repo with millions of files](https://www.visualstudio.com/learn/technical-scale-challenges/#too-many-files)
+and some of 
+[our previous attempts](https://www.visualstudio.com/learn/gvfs-design-history) 
+to solve those issues. After trying out various simpler solutions, we realized that 
+the only way to work in a repo at the scale of the Windows codebase, but make it
+appear as fast as a normal sized repo, is to virtualize the file system. This is
+why we built the [Git Virtual File System (GVFS)](https://github.com/Microsoft/GVFS)
+to address the challenges of working in such a large repo.
+
+In this article, we'll talk about the architecture of GVFS and how it allows Git to 
+run more efficiently on the largest Git repositories.
 
 GVFS was designed to solve the following issues:
-* Speed up Git commands by enabling them to scale to the number of files that a 
-developer needs to use, not the number of files that exist in the repo.
-* Speed up network downloads by only downloading contents, current and historical, 
+* Speed up Git commands by focusing on the set of files that a 
+developer needs to use, not the total set of files that exist in the repo.
+* Speed up network downloads by only downloading contents - current and historical - 
 that the developer actually needs to use.
 
-With the following constraints:
+with the following constraints:
 * Maintain full file system functionality, so that tools like IDEs and compilers can 
 continue to work without having to be made aware of GVFS.
 * Maintain file system performance that matches the local file system for 
 already-downloaded contents.
 
-In this article we'll cover the architecture of GVFS and how it enables us to solve all
-of these issues in an efficient way. Some of the finer points of the design will be
-covered in future articles.
-
 # Architecture overview
 
-GVFS is made up of the following pieces, and we'll talk about each one in detail
+GVFS is made up of the following pieces, and we'll talk about each one in detail:
 * GvFlt: a file system filter driver, responsible for projecting a user mode
 application's view of a file system down into NTFS
 * GVFS: A user mode process that knows how to work with GvFlt to project the 
@@ -44,11 +47,13 @@ TODO: insert picture of how those components interact
 
 ## GvFlt
 
-GvFlt is a file system filter driver. We won't get into the technical details of
-how filter drivers work, but you can read more about them [here](https://docs.microsoft.com/en-us/windows-hardware/drivers/ifs/file-system-filter-drivers).
-GvFlt also makes heavy use of reparse points, which you can read about [here](https://msdn.microsoft.com/en-us/library/windows/desktop/aa365503(v=vs.85).aspx).
+Some optional background reading for those who are curious: GvFlt is a 
+[file system filter driver](https://docs.microsoft.com/en-us/windows-hardware/drivers/ifs/file-system-filter-drivers).
+that makes heavy use of 
+[reparse points](https://msdn.microsoft.com/en-us/library/windows/desktop/aa365503(v=vs.85).aspx).
 
-The simplified description is that filter drivers allow us to extend and modify the behavior
+We won't get into the technical details of how filter drivers work, but the simplified
+description is that filter drivers allow us to extend and modify the behavior
 of the NTFS file system. On Windows, every file system driver can have a stack of one or 
 more filter drivers sitting on top of it. These filter drivers can intercept messages
 intended for the file system, and they can modify, reject, or ignore those messages,
@@ -167,8 +172,8 @@ When GVFS first creates a new clone, it creates the following layout on disk:
 
 Prerequisite reading: to really follow along here, you should be familiar with Git's
 commits, trees, blobs, index, and basic operation of commands like status, checkout,
-merge, rebase. These topics are covered in some depth over at 
-[https://git-scm.com/book/en/v2](https://git-scm.com/book/en/v2. )
+merge, rebase. See this 
+[description of Git's internals](https://git-scm.com/book/en/v2) for more details.
 
 Now let's go over how GVFS uses GvFlt to create a virtual Git repo.
 
@@ -200,9 +205,9 @@ efficiently to enumeration requests from GvFlt.
 ### Making Git commands run fast
 
 So how does all of this help with making Git commands fast? Nothing we've discussed so 
-far helps with that directly (downloading files on demand is great, and helps with 
+far helps with that directly. Downloading files on demand is great, and helps with 
 download times, but if Git decides to walk every file in the repo during a status or 
-checkout command, all of that lazy downloading is moot), so let's cover some more
+checkout command, all of that lazy downloading is moot. So let's cover some more
 background and then we can get into the crux of the solution.
 
 As we discussed in a 
@@ -216,8 +221,8 @@ Luckily, Git had a couple of existing features that we were able to enhance with
 so that we can preserve the benefits of lazy hydration and also convince Git to only 
 open files that need to be opened.
 
-The first existing feature is sparse-checkout (you can find some documentation 
-on it [here](https://git-scm.com/docs/git-read-tree)). The sparse-checkout feature allows
+The first existing feature is [sparse-checkout](https://git-scm.com/docs/git-read-tree),
+which allows
 you to tell Git about a set of files and directories in the repo, and have Git only 
 write out those files when you do run a `git checkout`. It also tells Git to ignore all
 other files when you run a command like `git status`, since otherwise all of those other
@@ -225,7 +230,8 @@ files would look like they were deleted. This feature allows you to work with a 
 of the files in a repo (though normally Git still has to download _all_ contents when you
 run `git clone` or `git fetch`).
 
-The other existing feature is Git's highly configurable set of ignored files, via 
+The other existing feature is Git's highly configurable set of 
+[ignore files](https://docs.microsoft.com/en-us/vsts/git/tutorial/ignore-files), via 
 `.gitignore` files in the repo and exclude files outside of it. Ignore files tell 
 Git about files that it does not need to report as new untracked files in the 
 `git status` command.
@@ -262,22 +268,23 @@ deeper, the skip-worktree bits in the index) so that Git commands that deal with
 directory files always behave _as if_ this were a normal, non-virtualized repo. 
 
 The key here is that GVFS knows which files have been modified. Any file that has never
-been written to by the usre can be safely ignored by Git, since its contents can always 
+been written to by the user can be safely ignored by Git, since its contents can always 
 be projected correctly by GVFS. But once a file is modified, GVFS hands the responsibility 
 for that file over to Git from that point on, both for tracking changes and for updating
 it when needed.
 
 Whenever a file is modified, GVFS adds the path of that file to the `sparse-checkout` and 
-`always_exclude` files (the details here can get quite involved, we may cover the specifics
-in a later article). This causes all future Git commands to consider this file and report
-it in `git status` if it's been modified, update it in `git checkout` if it needs to change, etc.
+`always_exclude` files (beware: the details here can get quite involved). 
+This causes all future Git commands to consider this file and report
+it in `git status` if it's been modified, update it in `git checkout` if it needs to 
+change, etc.
 
 Similarly, when a new file is created, it is added to `always_exclude` (actually it's added
 as a negation, since the first line in `always_exclude` says ignore everything, and now we're
 saying "except for this file"), so that new files can show up as untracked files in the 
 output of `git status`.
 
-I've skipped over a lot of the nitty gritty details here, but hopefully you can see the 
+We've skipped over a lot of the nitty gritty details here, but hopefully you can see the 
 overall picture. Any files that have never been modified are "owned" by GVFS, and they 
 get projected with the correct contents when they are accessed. Any files that have been 
 written to by the user are "owned" by Git, and must be considered by any Git command that
@@ -313,12 +320,13 @@ to reduce the latency of downloading files on demand.
 
 To state the obvious, developers care deeply about performance. We have succeeded in
 designing GVFS such that Git commands are no longer linear on the number of files in the
-repo, but we're still a ways off from making a giant repo feel like a tiny one. For example,
+repo, but we're still a ways off from making a giant repo feel like a tiny one. 
+
+For example,
 the `git status` command now takes 2-5 seconds in the Windows repo, as opposed to several
 minutes without GVFS, and that's a huge win. But in any other repo, developers are used to
 seeing status run nearly instantaneously, and so we continue to work on ways to make status
-faster. Our goal here is sub-second status, and once that's done, we'll go on to the next
-command, and then the next, and then the next...
+(and all other commands) faster.
 
 Stay tuned for future articles on our caching solution, more details about speeding up
 particular Git commands, and what we plan to do for GVFS on other operating systems.
