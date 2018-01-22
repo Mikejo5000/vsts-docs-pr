@@ -31,7 +31,7 @@ To add new features and capabilities to your Visual Studio Team Services (VSTS) 
 
 0.  Sign in to the [Visual Studio Marketplace > VSTS](https://marketplace.visualstudio.com/vsts).
 	
-	<img alt="Visual Studio Marketplace" src="_img/get-vsts-extensions/marketplace.png" style="border: 1px solid #CCCCCC" />
+	<img alt="Visual Studio Marketplace" src="_img/get-vsts-extensions/marketplace-test.png" style="border: 1px solid #CCCCCC" />
 
 0.	Find and select the extension that you want to install. For this Quickstart, you can choose [**Code Search**](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search).
 
