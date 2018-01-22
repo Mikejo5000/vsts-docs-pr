@@ -85,10 +85,8 @@ because GvFlt injects it into the enumeration result.
 contents. The file object and its metadata exist on disk, but its contents do not.
 * Hydrated placeholder. A hydrated placeholder is also an NTFS file with a reparse point,
 but it does have its contents.
-* Dirty placeholder. If any of the metadata of a file gets modified, GvFlt remembers
-that this file is no longer just a cache of the file projected by the provider.
-This file on disk now contains changes made by the user.
-* Full. A full file is a normal NTFS file, with no reparse point.
+* Full. A full file is a normal NTFS file, with no reparse point. This file on disk now 
+contains changes made by the user.
 * Tombstone. A tombstone file records that a file with the same name was deleted. This
 prevents a deleted file from being immediately resurrected because it is being projected
 by the provider. It also allows providers to project a readonly view of their file system,
@@ -102,8 +100,6 @@ placeholder file on disk. This handle can be used to read the metadata of the fi
 * Placeholder -> hydrated placeholder. If a read handle is used to read the contents of
 a placeholder file, GvFlt asks the provider for those contents and writes them into the
 file.
-* [Hydrated] placeholder -> dirty placeholder. If the metadata of a placeholer file 
-is modified, it becomes dirty.
 * Any sort of placeholder -> full file. If the user writes to the file contents, it
 gets converted into a normal NTFS file.
 * Any state -> tombstone. If a file is deleted, GvFlt records a tombstone in its place.
@@ -127,7 +123,7 @@ on disk, and returns that full set in the enumeration response that goes back up
 file system stack.
 * When the provider supplies the contents of that root directory, it specifies if 
 each item is a file or directory. For each child that is a file, when the user 
-opens the file, GvFlt calls the provider to hydrate its contents. For each child 
+reads the file, GvFlt calls the provider to hydrate its contents. For each child 
 that is a directory, the whole process recurses, and in this way the contents of 
 the file system are populated on demand as they are accessed.
 
