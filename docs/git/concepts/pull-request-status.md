@@ -100,7 +100,7 @@ An **Authorized account** can also be selected to require that a specific accoun
 
 ## Custom actions
 
-In addition to predefined service hook events that can trigger the service to update PR status it is possible to extend status menu by using [VSTS extensions](../../extend/index.md) to give the trigger actions to the end user. For example, if status that corresponds to test run can be restarted by the end user it is possible to have 'Restart' menu item to the status menu that would trigger tests to run.
+In addition to predefined service hook events that can trigger the service to update PR status, it is possible to extend the status menu by using [VSTS extensions](../../extend/index.md) to give the trigger actions to the end user. For example, if status that corresponds to a test run can be restarted by the end user, it is possible to have a **Restart** menu item to the status menu that would trigger tests to run.
 
 ## Additional concepts
 
