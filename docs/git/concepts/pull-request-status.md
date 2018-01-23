@@ -15,7 +15,7 @@ ms.date: 01/26/2018
 
 [Pull requests](../pull-requests.md) are a great tool for facilitating code reviews and managing code movement within a repository. 
 [Branch policies](../branch-policies.md) enforce code quality during the pull request process by establishing requirements that must be performed for every code change. 
-These policies enable teams to enforce many best practices related to reviewing code and running automated builds, but many teams have additional requirements and validations to perform on code. To cover these individual and custom needs, VSTS offers pull request statuses. Pull request statuses integrate into the PR workflow and allow external services to programmatically sign off on a code change. Optionally, pull requests can be blocked until the external service approves the change.
+These policies enable teams to enforce many best practices related to reviewing code and running automated builds, but many teams have additional requirements and validations to perform on code. To cover these individual and custom needs, VSTS offers pull request statuses. Pull request statuses integrate into the PR workflow and allow external services to programmatically sign off on a code change by associating simple success/failure type information with a pull request, using the [Status API](https://go.microsoft.com/fwlink/?linkid=854107). Optionally, pull requests can be blocked until the external service approves the change.
 
 In this topic, you'll learn about pull request statuses and how they can be used to integrate in the PR workflow.
 
