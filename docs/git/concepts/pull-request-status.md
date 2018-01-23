@@ -38,7 +38,7 @@ Ensure that there are subscriptions for both of these events to receive notifica
 Pull request status provides a way for services to associate simple success/failure type information with a pull request, using the [Status API](https://go.microsoft.com/fwlink/?linkid=854107). 
 A status consists of four key pieces of data:
 
-* **State**. One of the following predefined states: `succeeded`, `failed`, `pending`, `notSet`, or `error`.
+* **State**. One of the following predefined states: `succeeded`, `failed`, `pending`, `notSet`, `notApplicable`, or `error`.
 * **Description**. A string that describes the status to the end user.
 * **Context**. A name for the status - typically describing the entity posting the status.
 * **URL**. A link where users can get more information specific to the status. 
@@ -103,7 +103,7 @@ Sometimes, sharing information about a PR is all that is necessary, but in other
 Like the in-box policies, the **Status policy** provides a way for external services to block PR completion until requirements are met. 
 
 Status policies are configured just like other [branch policies](../branch-policies.md). 
-When adding a new status policy, the **name** of the status policy must be entered. 
+When adding a new status policy, the **name** and **genre** of the status policy must be entered. 
 This requires that a status of `succeeded` with the `context.name` matching the selected name must be present to complete PRs. 
 An **Authorized account** can also be selected to require that a specific account has the authority to post status that will approve the policy. 
 
