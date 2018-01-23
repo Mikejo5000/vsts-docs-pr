@@ -104,7 +104,7 @@ Versions in the “Server” column are linked to the appropriate download locat
     </thead>
     <tbody>
         <tr>
-            <td rowspan="19">[11 Dec 2017](2017/dec-11-vsts.md)</td>
+            <td rowspan="22">[11 Dec 2017](2017/dec-11-vsts.md)</td>
             <td>Track code pushes to a Git repo to builds and releases</td>
             <td style="background:rgb(232, 232, 232);">Future</td>
         </tr>
