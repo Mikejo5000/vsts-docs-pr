@@ -41,7 +41,7 @@ A status consists of four key pieces of data:
 * **State**. One of the following predefined states: `succeeded`, `failed`, `pending`, `notSet`, or `error`.
 * **Description**. A string that describes the status to the end user.
 * **Context**. A name for the status - typically describing the entity posting the status.
-* **URL**. A link where users can get more information specific to the status.  
+* **URL**. A link where users can get more information specific to the status. 
 
 Essentially, status is the way a user or service posts their evaluation about a pull request.
 Did the changes meet the requirements? 
@@ -83,23 +83,6 @@ Using an informative `description` such as the following examples can further he
 * "Build in progress"
 * "Build succeeded"
 
-## Status policy
-
-Using status alone, details from an external service can be provided to users within the PR experience. 
-Sometimes, sharing information about a PR is all that is necessary, but in other cases PRs should be blocked from merging until requirements are met. 
-Like the in-box policies, the **Status policy** provides a way for external services to block PR completion until requirements are met. 
-
-Status policies are configured just like other [branch policies](../branch-policies.md). 
-When adding a new status policy, the **name** of the status policy must be entered. 
-This requires that a status of `succeeded` with the `context.name` matching the selected name must be present to complete PRs. 
-An **Authorized account** can also be selected to require that a specific account has the authority to post status that will approve the policy.  
-
-## Custom actions
-
-In addition to predefined service hook events that can trigger the service to update PR status, it is possible to extend the status menu by using [VSTS extensions](../../extend/index.md) to give the trigger actions to the end user. For example, if status that corresponds to a test run can be restarted by the end user, it is possible to have a **Restart** menu item to the status menu that would trigger tests to run.
-
-## Additional concepts
-
 ### Iteration status
 
 When the source branch in a PR changes, a new "iteration" is created to track the latest changes. 
@@ -113,6 +96,17 @@ This further guarantees that the PR will not be able to be merged until the late
 
 See the REST API examples for posting status [on an iteration](https://docs.microsoft.com/en-us/rest/api/vsts/git/pull%20request%20statuses/create#on_iteration) and [on a pull request](https://docs.microsoft.com/en-us/rest/api/vsts/git/pull%20request%20statuses/create#on_pull_request).
 
+## Status policy
+
+Using status alone, details from an external service can be provided to users within the PR experience. 
+Sometimes, sharing information about a PR is all that is necessary, but in other cases PRs should be blocked from merging until requirements are met. 
+Like the in-box policies, the **Status policy** provides a way for external services to block PR completion until requirements are met. 
+
+Status policies are configured just like other [branch policies](../branch-policies.md). 
+When adding a new status policy, the **name** of the status policy must be entered. 
+This requires that a status of `succeeded` with the `context.name` matching the selected name must be present to complete PRs. 
+An **Authorized account** can also be selected to require that a specific account has the authority to post status that will approve the policy. 
+
 ### Policy applicability
 
 Status policies can be conditionally required by using the **Policy applicability** options. 
@@ -120,15 +114,19 @@ There are two models for conditionally applying a status policy:
 
 1. **Apply by default** (opt-out). 
 With this option, all PRs are blocked from merging until `succeeded` status is posted. 
-A PR can be marked exempt from the policy by posting a status of `notApplicable`, which will remove the policy requirement.  
+A PR can be marked exempt from the policy by posting a status of `notApplicable`, which will remove the policy requirement. 
 
 2. **Conditional** (opt-in). 
-When a PR is created, the policy does not initially apply.  Only after status has been applied is the policy enforced.
+When a PR is created, the policy does not initially apply. Only after status has been applied is the policy enforced.
 
 Together, these options can be used to create a suite of dynamic policies. 
 A "master" policy could be set to apply by default while the PR is being evaluated for applicable policies. 
 Then, as additional conditional policies are determined to apply (perhaps based on specific build output), status can be posted to make them required. 
 The master policy could be marked `succeeded` when it is finished evaluating or could be dismissed by marking it `notApplicable`.
+
+## Custom actions
+
+In addition to predefined service hook events that can trigger the service to update PR status, it is possible to extend the status menu by using [VSTS extensions](../../extend/index.md) to give the trigger actions to the end user. For example, if status that corresponds to a test run can be restarted by the end user, it is possible to have a **Restart** menu item to the status menu that would trigger tests to run.
 
 ## Next Steps
 
