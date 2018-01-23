@@ -15,7 +15,7 @@ ms.date: 01/26/2018
 
 [Pull requests](../pull-requests.md) are a great tool for facilitating code reviews and managing code movement within a repository. 
 [Branch policies](../branch-policies.md) enforce code quality during the pull request process by establishing requirements that must be performed for every code change. 
-These policies enable teams to enforce many best practices related to reviewing code and running automated builds, but many teams have additional requirements and validations to perform on code. To cover these individual and custom needs, VSTS offers pull request statuses. Pull request statuses integrate into the PR workflow and allow external services to programmatically sign off on a code change by associating simple success/failure type information with a pull request, using the [Status API](https://go.microsoft.com/fwlink/?linkid=854107). Optionally, pull requests can be blocked until the external service approves the change.
+These policies enable teams to enforce many best practices related to reviewing code and running automated builds, but many teams have additional requirements and validations to perform on code. To cover these individual and custom needs, VSTS offers pull request statuses. Pull request statuses integrate into the PR workflow and allow external services to programmatically sign off on a code change by associating simple success/failure type information with a pull request. Optionally, pull requests can be blocked until the external service approves the change.
 
 In this topic, you'll learn about pull request statuses and how they can be used to integrate in the PR workflow.
 
@@ -72,7 +72,7 @@ This status would be displayed to the end user in the PR Details view:
 TODO: Screenshot of status section
 ```
 
-The `state` is shown to the user using an icon (green check for `succeded`, red X for `failed`, etc.). 
+The `state` is shown to the user using an icon (green check for `succeeded`, red X for `failed`, etc.). 
 The `description` is displayed next to the icon, and the `context` is available in a tooltip. 
 When a `targetUrl` is applied, the description will be rendered as a link to the URL. 
 
@@ -81,7 +81,7 @@ When a `targetUrl` is applied, the description will be rendered as a link to the
 A service may update a PR status for a single PR by posting additional statuses, only the latest of which is shown for each unique `context`. 
 Posting multiple statuses helps users manage expectations.
 For example, posting `pending` status is a good way to acknowledge to the user that a system has received an event and is starting work. 
-Using an informative `description` can further help the user understand how the system is working:
+Using an informative `description` such as the following examples can further help the user understand how the system is working:
 
 * "Build queued"
 * "Build in progress"
@@ -110,8 +110,7 @@ When the source branch in a PR changes, a new "iteration" is created to track th
 Services that evaluate code changes will want to post new status on each iteration of a PR. 
 Posting status to a specific iteration of a PR guarantees that status applies only to the code that was evaluated and none of the future updates. 
 
-Conversely, if the status posted applies to the entire PR, independent of the code, posting to the iteration may be unnecessary.  
-For example, checking that the author (an immutable PR property) belongs to a specific group would only need to be evaluated once, and iteration status would not be needed.
+Conversely, if the status posted applies to the entire PR, independent of the code, posting to the iteration may be unnecessary. For example, checking that the author (an immutable PR property) belongs to a specific group would only need to be evaluated once, and iteration status would not be needed.
 
 When configuring the status policy, if iteration status is being used, the **Status expiration** should be set to expire **Immediately**. 
 This further guarantees that the PR will not be able to be merged until the latest iteration has a status of `succeeded`.
@@ -139,6 +138,6 @@ The master policy could be marked `succeeded` when it is finished evaluating or 
 
 Learn more about the [PR Status API](https://go.microsoft.com/fwlink/?linkid=854107) and check out the how-to guides:
 
-* [Create a pull request status server with Node.js](https://go.microsoft.com/fwlink/?linkid=854108)
-* [Use Azure Functions to create custom branch policies](https://docs.microsoft.com/en-us/vsts/git/how-to/create-pr-status-server-with-azure-functions)
-* [Configure a branch policy for an external service](https://go.microsoft.com/fwlink/?linkid=854109)
+* [Create a pull request status server with Node.js](../how-to/create-pr-status-server.md)
+* [Use Azure Functions to create custom branch policies](../how-to/create-pr-status-server-with-azure-functions.md)
+* [Configure a branch policy for an external service](../how-to/pr-status-policy.md)
