@@ -17,16 +17,14 @@ ms.date: 01/26/2018
 [Branch policies](../branch-policies.md) enforce code quality during the pull request process by establishing requirements that must be performed for every code change. 
 These policies enable teams to enforce many best practices related to reviewing code and running automated builds, but many teams have additional requirements and validations to perform on code. To cover these individual and custom needs, VSTS offers pull request statuses. Pull request statuses integrate into the PR workflow and allow external services to programmatically sign off on a code change by associating simple success/failure type information with a pull request. Optionally, pull requests can be blocked until the external service approves the change.
 
-In this topic, you'll learn about pull request statuses and how they can be used to integrate in the PR workflow.
-
-## Overview
-
 Integrating into the PR workflow involves a few different concepts:
 
-* Service hooks
-* Pull request status
-* Status policy
-* Custom actions
+* [Service hooks](#service-hooks) - this is how services that want to integrate with a pull request know when a pull request has been created or updated.
+* [Pull request status](#pull-request-status) - provides a way for services to associate success/failure information with a pull request.
+* [Status policy](#status-policy) - provides a mechanism to block pull request completion until the pull request status indicates success.
+* [Custom actions](#custom-actions) - provides a way to extend the status menu using VSTS extensions.
+
+In this topic, you'll learn about pull request statuses and how they can be used to integrate in the PR workflow.
 
 ## Service hooks
 
