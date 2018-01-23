@@ -113,7 +113,7 @@ Status policies can be conditionally required by using the **Policy applicabilit
 There are two models for conditionally applying a status policy:
 
 1. **Apply by default** (opt-out). 
-With this option, all PRs are blocked from merging until `succeeded` status is posted. 
+With this option, all PRs are blocked from merging until the `succeeded` status is posted. 
 A PR can be marked exempt from the policy by posting a status of `notApplicable`, which will remove the policy requirement. 
 
 2. **Conditional** (opt-in). 
