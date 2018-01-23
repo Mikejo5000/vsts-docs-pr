@@ -6,10 +6,10 @@ ms.technology: vs-devops-build
 ms.assetid: 5C348EA7-3DC3-42E4-A66D-9A602441CDF3
 ms.manager: douge
 ms.author: ahomer
-ms.date: 11/14/2017
+ms.date: 01/19/2018
 ---
 
-# How to: View and manage releases
+# View and manage releases
 
 [!INCLUDE [version-rm-dev14](../_shared/version-rm-dev14.md)]
 
@@ -18,7 +18,7 @@ releases you have initiated, and the results of deployments.
 This includes a [list](#release-list) and an [overview](#release-overview) of 
 all releases, a [summary](#release-summary) of the details 
 for each release, [test results](#test-results),
-and [release logs](debug-deployment-issues.md).
+and release logs.
 
 From the Release Management UI you can also
 [restore deleted releases](#restore-release),
@@ -224,11 +224,7 @@ environment to open the shortcut menu and choose **Deploy**.
 details about starting deployment of a release, see
 [How to: Create and deploy a release from a release definition](create-deploy-releases.md).
 
-Choose the **Logs** tab at the top of the page to view the log files
-and the current deployment status. For more details, see [How To: Monitor releases and debug deployment issues](debug-deployment-issues.md).
-
-Use the other tab links to see more information about an in-progress or a completed
-release.
+Use the tab links at the top of the page to see more information about an in-progress or a completed release.
 
 ![Links for more information about an in-progress release](_img/view-manage-releases/summary-links-01.png)
 
@@ -261,6 +257,9 @@ release.
 
 * Use the **Tests** tab to see a summary of the test results for this release.
   For more details, see [View test results](#test-results).
+
+* Use the **Logs** tab at the top of the page to view the log files
+  and the current deployment status. 
 
 * Use the **History** tab to see details of the changes to and deployments from
   the release definitions associated with this release.
@@ -431,8 +430,6 @@ removal of Christie Church as an approver.
 * [Work with release definitions](work-with-release-definitions.md)
 
 * [Create and deploy a release](create-deploy-releases.md)
-
-* [Monitor releases and debug deployment issues](debug-deployment-issues.md)
 
 ## Q&A
 

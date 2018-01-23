@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
-ms.date: 11/14/2017
+ms.date: 01/19/2018
 ---
 
 # Release definitions in Release Management
@@ -88,8 +88,6 @@ Every time you save a release definition, Release Management keeps a copy of the
 * [Work with release definitions](../../../actions/work-with-release-definitions.md)
 
 * [View and manage releases](../../../actions/view-manage-releases.md)
-
-* [Monitor releases and debug deployment issues](../../../actions/debug-deployment-issues.md)
 
 * [Configure your release pipelines for safe deployments](https://blogs.msdn.microsoft.com/visualstudioalm/2017/04/24/configuring-your-release-pipelines-for-safe-deployments/)
 

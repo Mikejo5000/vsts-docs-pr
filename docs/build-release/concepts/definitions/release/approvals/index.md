@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
-ms.date: 11/14/2017
+ms.date: 01/19/2018
 ---
 
 # Approvals and gates overview
@@ -58,7 +58,6 @@ You can, of course, combine all three techniques within a release definition to 
 
 * [Work with release definitions](../../../../actions/work-with-release-definitions.md)
 * [View and manage releases](../../../../actions/view-manage-releases.md)
-* [Monitor releases and debug deployment issues](../../../../actions/debug-deployment-issues.md)
 * [Configure your release pipelines for safe deployments](https://blogs.msdn.microsoft.com/visualstudioalm/2017/04/24/configuring-your-release-pipelines-for-safe-deployments/)
 
 [!INCLUDE [rm-help-support-shared](../../../../_shared/rm-help-support-shared.md)]

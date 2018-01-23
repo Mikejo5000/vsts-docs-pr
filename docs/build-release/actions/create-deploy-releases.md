@@ -6,10 +6,10 @@ ms.technology: vs-devops-build
 ms.assetid: DCAD8C16-242E-4672-A5C6-5894C25CAF11
 ms.manager: douge
 ms.author: ahomer
-ms.date: 12/20/2017
+ms.date: 01/19/2018
 ---
 
-# How to: Create and deploy a release
+# Create and deploy a release
 
 [!INCLUDE [version-rm-dev14](../_shared/version-rm-dev14.md)]
 
@@ -116,8 +116,6 @@ For more details, see [Task phases](../concepts/process/phases.md).
 * [Work with release definitions](work-with-release-definitions.md)
 
 * [View and manage releases](view-manage-releases.md)
-
-* [Monitor releases and debug deployment issues](debug-deployment-issues.md)
 
 ## Q&A
 
