@@ -68,13 +68,11 @@ For changes that pass the build, a status like this might be posted on the PR:
 
 This status would be displayed to the end user in the PR Details view:
 
-``` 
-TODO: Screenshot of status section
-```
+![Pull request status](_img/pull-request-status/pull-request-status.png)
 
-The `state` is shown to the user using an icon (green check for `succeeded`, red X for `failed`, etc.). 
-The `description` is displayed next to the icon, and the `context` is available in a tooltip. 
-When a `targetUrl` is applied, the description will be rendered as a link to the URL. 
+* The `state` is shown to the user using an icon (green check for `succeeded`, red X for `failed`, etc.). 
+* The `description` is displayed next to the icon, and the `context` is available in a tooltip. 
+* When a `targetUrl` is applied, the description will be rendered as a link to the URL. 
 
 ### Updating status
 
