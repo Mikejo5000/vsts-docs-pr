@@ -1,0 +1,22 @@
+- name: Navigation Basics 
+  href: index.md
+  items:
+  - name: Add an artifact or team 
+    href: create-new-artifact-team.md
+  - name: Work with Favorites 
+    href: work-with-favorites.md     
+  - name: Go to a different app, hub, page 
+    href: go-to-app-hub-page.md   
+  - name: Filter basics 
+    href: filter-basics.md
+  - name: Search across your code base or work items 
+    href: search-basics.md
+  - name: Enable a preview feature 
+    href: enable-preview-feature.md
+  - name: Navigate to a different team project
+    href: go-to-team-project.md 
+  - name: Switch teams (Dashboards, Work)
+    href: ../teams/switch-team-context.md?toc=/vsts/navigation/toc.json&bc=/vsts/navigatio/breadcrumb/toc.json   
+  - name: Define project or account settings  
+    href: configure-project-account-settings.md  
+
