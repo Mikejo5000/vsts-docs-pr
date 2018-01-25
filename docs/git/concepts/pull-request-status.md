@@ -109,14 +109,15 @@ When adding a new status policy, the **name** and **genre** of the status policy
 
 ![Status policy](_img/pull-request-status/pull-request-status-policy.png)
 
-When a status policy is specified, it requires that a status of `succeeded` with the `context` matching the selected name be present to in order for this policy to pass.  
+When a status policy is specified, it requires that a status of `succeeded` with the `context` matching the selected name be present to in order for this policy to pass.
+  
 An **Authorized account** can also be selected to require that a specific account has the authority to post status that will approve the policy. 
 
 ### Policy applicability
 
 The the **Policy applicability** options determine whether this policy applies as soon as a pull request is created, or whether the policy applies only after the first status is posted to the pull request.
 
-![Policy applicability](_img/pull-request-status/policy-applicability.png.png)
+![Policy applicability](_img/pull-request-status/policy-applicability.png)
 
 1. **Apply by default** - The policy applies as soon as the pull request is created. With this option, the policy does not pass after pull request creation until a `succeeded` status is posted.
 A PR can be marked exempt from the policy by posting a status of `notApplicable`, which will remove the policy requirement. 
@@ -130,7 +131,7 @@ This orchestration policy could be marked `succeeded` when it is finished evalua
 
 ## Custom actions
 
-In addition to predefined service hook events that can trigger the service to update PR status, it is possible to extend the status menu by using [VSTS extensions](../../extend/index.md) to give trigger actions to the end user. For example, if status that corresponds to a test run can be restarted by the end user, it is possible to have a **Restart** menu item to the status menu that would trigger tests to run. To add a status menu, you'll need to use the contribution model. Check out the [Contributions guide sample](https://github.com/Microsoft/vsts-extension-samples/blob/master/contributions-guide/vss-extension.json#L670) on Github where you can see the parts of code that add the following items to the status menu by using the [contribution model](../../extend/develop/contributions-overview).
+In addition to predefined service hook events that can trigger the service to update PR status, it is possible to extend the status menu by using [VSTS extensions](../../extend/index.md) to give trigger actions to the end user. For example, if status corresponds to a test run can be restarted by the end user, it is possible to have a **Restart** menu item to the status menu that would trigger tests to run. To add a status menu, you'll need to use the [contribution model](../../extend/develop/contributions-overview). Check out the [Contributions guide sample](https://github.com/Microsoft/vsts-extension-samples/blob/master/contributions-guide/vss-extension.json#L670) on Github where you can see the parts of code that add the following items to the status menu..
 
 ![Status menu](_img/pull-request-status/custom-status-menu-entries.png)
 
