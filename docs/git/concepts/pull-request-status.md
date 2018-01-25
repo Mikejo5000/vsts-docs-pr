@@ -116,6 +116,8 @@ An **Authorized account** can also be selected to require that a specific accoun
 
 The the **Policy applicability** options determine whether this policy applies as soon as a pull request is created, or whether the policy applies only after the first status is posted to the pull request.
 
+![Policy applicability](_img/pull-request-status/policy-applicability.png.png)
+
 1. **Apply by default** - The policy applies as soon as the pull request is created. With this option, the policy does not pass after pull request creation until a `succeeded` status is posted.
 A PR can be marked exempt from the policy by posting a status of `notApplicable`, which will remove the policy requirement. 
 
