@@ -103,8 +103,11 @@ Sometimes, sharing information about a PR is all that is necessary, but in other
 Like the in-box policies, the **Status policy** provides a way for external services to block PR completion until requirements are met. 
 
 Status policies are configured just like other [branch policies](../branch-policies.md). 
-When adding a new status policy, the **name** and **genre** of the status policy must be entered. 
-This requires that a status of `succeeded` with the `context.name` matching the selected name must be present to complete PRs. 
+When adding a new status policy, the **name** and **genre** of the status policy must be entered. If the status has been posted previously you can pick it from the list; if it is a new policy you can type in the name of the policy.
+
+![Status policy](_img/pull-request-status/pull-request-status-policy.png)
+
+When a status policy is specifed, it requires that a status of `succeeded` with the `context` matching the selected name must be present to complete PRs. 
 An **Authorized account** can also be selected to require that a specific account has the authority to post status that will approve the policy. 
 
 ### Policy applicability
@@ -117,16 +120,16 @@ With this option, all PRs are blocked from merging until the `succeeded` status 
 A PR can be marked exempt from the policy by posting a status of `notApplicable`, which will remove the policy requirement. 
 
 2. **Conditional** (opt-in). 
-When a PR is created, the policy does not initially apply. Only after status has been applied is the policy enforced.
+When a PR is created, the policy does not initially apply. Only after status has been posted is the policy enforced.
 
 Together, these options can be used to create a suite of dynamic policies. 
-A "master" policy could be set to apply by default while the PR is being evaluated for applicable policies. 
+A top-level "orchestration" policy could be set to apply by default while the PR is being evaluated for applicable policies. 
 Then, as additional conditional policies are determined to apply (perhaps based on specific build output), status can be posted to make them required. 
-The master policy could be marked `succeeded` when it is finished evaluating or could be dismissed by marking it `notApplicable`.
+This orchestration policy could be marked `succeeded` when it is finished evaluating or could be marked `notApplicable` to indicate to the PR that the policy doesn't apply.
 
 ## Custom actions
 
-In addition to predefined service hook events that can trigger the service to update PR status, it is possible to extend the status menu by using [VSTS extensions](../../extend/index.md) to give the trigger actions to the end user. For example, if status that corresponds to a test run can be restarted by the end user, it is possible to have a **Restart** menu item to the status menu that would trigger tests to run.
+In addition to predefined service hook events that can trigger the service to update PR status, it is possible to extend the status menu by using [VSTS extensions](../../extend/index.md) to give trigger actions to the end user. For example, if status that corresponds to a test run can be restarted by the end user, it is possible to have a **Restart** menu item to the status menu that would trigger tests to run. To add a status menu, you'll need to use the contribution model. Check out the sample on Github where you can see the parts of code that add to the menu.
 
 ## Next Steps
 
