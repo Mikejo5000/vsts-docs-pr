@@ -91,8 +91,10 @@ Posting status to a specific iteration of a PR guarantees that status applies on
 
 Conversely, if the status posted applies to the entire PR, independent of the code, posting to the iteration may be unnecessary. For example, checking that the author (an immutable PR property) belongs to a specific group would only need to be evaluated once, and iteration status would not be needed.
 
-When configuring the status policy, if iteration status is being used, the **Status expiration** should be set to expire **Immediately**. 
+When configuring the status policy, if iteration status is being used, the **Reset conditions** should be set to **Reset status whenever there are new changes**. 
 This further guarantees that the PR will not be able to be merged until the latest iteration has a status of `succeeded`.
+
+![Status policy reset conditions](_img/pull-request-status/pull-request-status-policy-reset-conditions.png)
 
 See the REST API examples for posting status [on an iteration](https://docs.microsoft.com/en-us/rest/api/vsts/git/pull%20request%20statuses/create#on_iteration) and [on a pull request](https://docs.microsoft.com/en-us/rest/api/vsts/git/pull%20request%20statuses/create#on_pull_request).
 
@@ -112,15 +114,12 @@ An **Authorized account** can also be selected to require that a specific accoun
 
 ### Policy applicability
 
-Status policies can be conditionally required by using the **Policy applicability** options. 
-There are two models for conditionally applying a status policy:
+The the **Policy applicability** options determine whether this policy applies as soon as a pull request is created, or whether the policy applies only after the first status is posted to the pull request.
 
-1. **Apply by default** (opt-out). 
-With this option, all PRs are blocked from merging until the `succeeded` status is posted. 
+1. **Apply by default** - The policy applies as soon as the pull request is created. With this option, the policy does not pass after pull request creation until a `succeeded` status is posted.
 A PR can be marked exempt from the policy by posting a status of `notApplicable`, which will remove the policy requirement. 
 
-2. **Conditional** (opt-in). 
-When a PR is created, the policy does not initially apply. Only after status has been posted is the policy enforced.
+2. **Conditional** - The policy doesn't apply until the first status is posted to the pull request.
 
 Together, these options can be used to create a suite of dynamic policies. 
 A top-level "orchestration" policy could be set to apply by default while the PR is being evaluated for applicable policies. 
