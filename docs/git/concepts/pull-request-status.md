@@ -48,8 +48,8 @@ Did the changes meet the requirements?
 Where can I learn more about what I need to do to meet the requirements?
 
 Let's look at an example. 
-Consider a CI service that is required to build all code changes in a project. 
-When that service evaluates the changes a pull request, it needs to post back the results of the build and tests. 
+Consider a [CI service](../../build-release/index.md) that is required to build all code changes in a project. 
+When that service evaluates the changes in a pull request, it needs to post back the results of the build and tests. 
 For changes that pass the build, a status like this might be posted on the PR:
 
 ``` json
@@ -76,7 +76,7 @@ This status would be displayed to the end user in the PR Details view:
 
 A service may update a PR status for a single PR by posting additional statuses, only the latest of which is shown for each unique `context`. 
 Posting multiple statuses helps users manage expectations.
-For example, posting `pending` status is a good way to acknowledge to the user that a system has received an event and is starting work. 
+For example, posting a `pending` status is a good way to acknowledge to the user that a system has received an event and is starting work. 
 Using an informative `description` such as the following examples can further help the user understand how the system is working:
 
 * "Build queued"
@@ -102,14 +102,14 @@ See the REST API examples for posting status [on an iteration](https://docs.micr
 
 Using status alone, details from an external service can be provided to users within the PR experience. 
 Sometimes, sharing information about a PR is all that is necessary, but in other cases PRs should be blocked from merging until requirements are met. 
-Like the in-box policies, the **Status policy** provides a way for external services to block PR completion until requirements are met. 
+Like the in-box policies, the **Status policy** provides a way for external services to block PR completion until requirements are met. If the policy is required, it must pass in order to complete the pull request. If the policy is optional, it is informational only, and a status of `succeeded` is not required in order to complete the pull request.
 
 Status policies are configured just like other [branch policies](../branch-policies.md). 
 When adding a new status policy, the **name** and **genre** of the status policy must be entered. If the status has been posted previously you can pick it from the list; if it is a new policy you can type in the name of the policy.
 
 ![Status policy](_img/pull-request-status/pull-request-status-policy.png)
 
-When a status policy is specifed, it requires that a status of `succeeded` with the `context` matching the selected name must be present to complete PRs. 
+When a status policy is specified, it requires that a status of `succeeded` with the `context` matching the selected name be present to in order for this policy to pass.  
 An **Authorized account** can also be selected to require that a specific account has the authority to post status that will approve the policy. 
 
 ### Policy applicability
@@ -128,7 +128,9 @@ This orchestration policy could be marked `succeeded` when it is finished evalua
 
 ## Custom actions
 
-In addition to predefined service hook events that can trigger the service to update PR status, it is possible to extend the status menu by using [VSTS extensions](../../extend/index.md) to give trigger actions to the end user. For example, if status that corresponds to a test run can be restarted by the end user, it is possible to have a **Restart** menu item to the status menu that would trigger tests to run. To add a status menu, you'll need to use the contribution model. Check out the sample on Github where you can see the parts of code that add to the menu.
+In addition to predefined service hook events that can trigger the service to update PR status, it is possible to extend the status menu by using [VSTS extensions](../../extend/index.md) to give trigger actions to the end user. For example, if status that corresponds to a test run can be restarted by the end user, it is possible to have a **Restart** menu item to the status menu that would trigger tests to run. To add a status menu, you'll need to use the contribution model. Check out the [Contributions guide sample](https://github.com/Microsoft/vsts-extension-samples/blob/master/contributions-guide/vss-extension.json#L670) on Github where you can see the parts of code that add the following items to the status menu by using the [contribution model](../../extend/develop/contributions-overview).
+
+![Status menu](_img/pull-request-status/custom-status-menu-entries.png)
 
 ## Next Steps
 
