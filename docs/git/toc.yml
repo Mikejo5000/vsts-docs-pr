@@ -70,7 +70,7 @@
       href: pull-requests.md
     - name: Squash merge pull requests
       href: merging-with-squash.md
-    - name: Customize and extend pull request workflows with pull request status
+    - name: Extend pull request workflows with pull request status
       href: concepts/pull-request-status.md
   - name: Forks
     href: concepts/forks.md

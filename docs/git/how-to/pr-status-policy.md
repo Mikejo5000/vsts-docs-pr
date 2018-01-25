@@ -26,9 +26,9 @@ Branch policies are a powerful feature to ensure high quality code in your repo 
 
     ![Select Branch policies from the context menu](../_img/pr-status-policy/branches.png)
 
-2. Select **Protect this branch** then find the policy to **Require approval from external services**. Select **Add service**.
+2. Scroll down to find the policy to **Require approval from external services**. Select **Add status policy**.
 
-    ![Select the Add service button](../_img/pr-status-policy/add-service.png)
+    ![Select the Add policy button](../_img/pr-status-policy/add-service.png)
 
 3. Select the service you want to create a policy for from the list.  If the status has been posted previously you can pick it from the list; if it is a new policy you can type in the name of the policy.
 
