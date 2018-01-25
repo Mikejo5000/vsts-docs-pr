@@ -37,7 +37,7 @@ Branch policies are a powerful feature to ensure high quality code in your repo 
   - **Policy requirement** determines whether or not this policy is optional or required to complete pull requests into the branch. 
   - **Authorized account** is used to enforce that status from only the specified account will be counted towards the policy fulfillment. 
   - **Reset conditions** is used to determine when a posted status is no longer valid. If the status posted is specific to the latest code (i.e. a build), check **Reset status whenever there are new changes** to reset the status when the source branch changes. 
-  - **Policy applicability** determines whether this policy applies as soon as a pull request is created, or whether the policy applies only when the first status is posted to the pull request.
+  - **Policy applicability** determines whether this policy applies as soon as a pull request is created, or whether the policy applies only after the first status is posted to the pull request.
   - **Default display name** allows you to specify an optional display name for your policy.
 
 ## Create a new pull request
