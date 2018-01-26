@@ -17,11 +17,11 @@ ms.date: 05/01/2018
 Intro paragraph here. 
 
 ## 5-Minute Quickstarts    
-
+- [Define area paths](../work/customize/set-area-paths.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json )
+- [Define iteration paths or sprints](../work/customize/set-iteration-paths-sprints.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json ) 
 - [Add a team & team members](../work/scale/multiple-teams.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)  
 - [Add a team administrator](../work/scale/add-team-administrator.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json) 
-- [Define area paths](set-area-paths.md)
-- [Define iteration paths or sprints](set-iteration-paths-sprints.md)  
+
 
 ## Tutorials
 
