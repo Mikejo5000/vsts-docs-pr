@@ -70,7 +70,7 @@ public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceW
 ```
 
 ## Configure a service hook for PR events
-Service hooks are a VSTS feature that can alert external services when certain events occur. For this sample, you'll want to set up a service hook for PR events, your azure function will be notified when a pull request changes. In order to receive `POST` requests from VSTS when pull requests change, you will need to provide the service hook with the Azure function URL.
+Service hooks are a VSTS feature that can alert external services when certain events occur. For this sample, you'll want to set up a service hook for PR events, your Azure function will be notified when a pull request changes. In order to receive `POST` requests from VSTS when pull requests change, you will need to provide the service hook with the Azure function URL.
 
 For this sample you will need to configure 2 service hooks. The first will be for the **Pull request created** and the second will be for the **Pull request updated** event.
 
@@ -123,7 +123,7 @@ For this sample you will need to configure 2 service hooks. The first will be fo
 
 Go through steps 2-8 again but this time configure the **Pull request updated** event.
 
-Create a pull request to verify your azure function is receiving notifications.
+Create a pull request to verify your Azure function is receiving notifications.
 
 ## Post status to PRs
 Now that your server can receive service hook events when new PRs are created, update it to post back status to the PR. You can use the JSON payload posted by the service hook in order to determine what status to set on your PR.
