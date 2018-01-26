@@ -1,8 +1,0 @@
-- name: TFS
-  tocHref: /tfs/
-  topicHref: /tfs/index#pivot=services
-  items: 
-  - name: New User Guide
-    tocHref: /tfs/
-    topicHref: /tfs/user-guide/index
-

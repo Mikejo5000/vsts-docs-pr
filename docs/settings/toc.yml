@@ -33,10 +33,9 @@
   - name: About process customization
     href: ../work/customize/inheritance-process-model.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
   - name: Build and release
-	items:
+    items:
     - name: Agent pools and queues
     - name: Hosted agents
-    - name: Pipelines
     - name: Service endpoints
     - name: Retention policies
 - name: How-to Guides
