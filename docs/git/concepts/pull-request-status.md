@@ -69,7 +69,7 @@ This status would be displayed to the end user in the PR Details view:
 
 ![Pull request status](_img/pull-request-status/pull-request-status.png)
 
-* The `state` is shown to the user using an icon (green check for `succeeded`, red X for `failed`, etc.). 
+* The `state` is shown to the user using an icon (green check for `succeeded`, red X for `failed`, a clock for `pending`, and a red ! for `error`). 
 * The `description` is displayed next to the icon, and the `context` is available in a tooltip. 
 * When a `targetUrl` is applied, the description will be rendered as a link to the URL. 
 
@@ -106,7 +106,7 @@ Sometimes, sharing information about a PR is all that is necessary, but in other
 Like the in-box policies, the **Status policy** provides a way for external services to block PR completion until requirements are met. If the policy is required, it must pass in order to complete the pull request. If the policy is optional, it is informational only, and a status of `succeeded` is not required in order to complete the pull request.
 
 Status policies are configured just like other [branch policies](../branch-policies.md). 
-When adding a new status policy, the **name** and **genre** of the status policy must be entered. If the status has been posted previously you can pick it from the list; if it is a new policy you can type in the name of the policy.
+When adding a new status policy, the **name** and **genre** of the status policy must be entered. If the status has been posted previously you can pick it from the list; if it is a new policy you can type in the name of the policy in the format **genre**/**name**.
 
 ![Status policy](_img/pull-request-status/pull-request-status-policy.png)
 
