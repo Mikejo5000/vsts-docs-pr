@@ -2,11 +2,10 @@
   href: index.md
 - name: Overview
   items:
-  - name: About project & account settings 
+  - name: About project & account settings
+    href: about-settings.md
   - name: When and why to add a team
     href: ../work/scale/scale-teams.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json 
-  - name: "About teams & Agile tools"
-    href: about-teams-and-settings.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
 - name: Quickstarts
   items:
   - name: Define area paths
@@ -21,23 +20,25 @@
   items:
   - name: Add and manage users
     href: ../accounts/add-account-users-from-user-hub.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json 
+  - name: Customize a process
+    href: ../work/customize/process/customize-process.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
 - name: Concepts
   items:
   - name: About areas and iterations
     href: ../work/customize/about-areas-iterations.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
-  - name: Team administrator role and permissions
-    href: ../work/scale/team-administrator-permissions.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+  - name: "About teams & Agile tools"
+    href: about-teams-and-settings.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
   - name: About notifications
     href: ../notifications/about-notifications.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
   - name: About process customization
     href: ../work/customize/inheritance-process-model.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
-  - name: Build and release agents
-  - name: Agent pools and queues
-  - name: Hosted agents
-  - name: Deployment groups
-  - name: Pipelines in VSTS
-  - name: Service endpoints
-  - name: Retention policies
+  - name: Build and release
+	items:
+    - name: Agent pools and queues
+    - name: Hosted agents
+    - name: Pipelines
+    - name: Service endpoints
+    - name: Retention policies
 - name: How-to Guides
   items:
   - name: Set team defaults
@@ -46,16 +47,12 @@
     href: ../work/scale/manage-team-assets.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json  
   - name: Switch team context
     href: switch-team-context.md
-  - name: "Manage permissions & access"
-    href: ../security/set-permissions-access-work-tracking.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
   - name: Set test retention policies
     href: ../manual-test/getting-started/how-long-to-keep-test-results.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
   - name: Process configuration
     items:
     - name: Manage processes
       href: ../work/customize/process/manage-process.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json 
-    - name: Customize a process
-      href: ../work/customize/process/customize-process.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
     - name: Add a custom field
       href: ../work/customize/process/customize-process-field.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
     - name: Customize a web form
@@ -76,8 +73,10 @@
     href: ../report/dashboards/dashboard-permissions.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
 - name: Reference
   items:
-  - name: "Permissions & access for work tracking"
-    href: ../security/permissions-access-work-tracking.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+  - name: Team administrator role and permissions
+    href: ../work/scale/team-administrator-permissions.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+  - name: "Default permissions & access"
+    href: ../security/permissions-access.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
 - name: Resources
   items:
   - name: Navigation Basics

@@ -1,6 +1,6 @@
 ---
 title: Project & Account Settings
-titleSuffix: VSTS
+titleSuffix: VSTS & Vertical Apps
 description: Index to topics for configuring account and project settings for VSTS and Vertical Apps 
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -26,6 +26,8 @@ Intro paragraph here.
 ## Tutorials
 
 - [Add and manage users](../accounts/add-account-users-from-user-hub.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)  
+- [Customize a process](../work/customize/process/customize-process.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json) 
+
 
 ## Concepts 
 
@@ -36,8 +38,7 @@ Intro paragraph here.
 ## How-to Guides
 - [Set team defaults](../work/scale/set-team-defaults.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)    
 - [Configure team settings](../work/scale/manage-team-assets.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json) 
-- [Manage processes](../work/customize/process/manage-process.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)  
-- [Customize a process](../work/customize/process/customize-process.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)  
+- [Manage processes](../work/customize/process/manage-process.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)   
 - [Switch team context](switch-team-context.md)
 
 
