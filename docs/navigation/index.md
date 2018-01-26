@@ -22,7 +22,7 @@ ms.date: 02-24-2018
 - [Search across your code base or work items](search-basics.md)
 - [Enable a preview feature ](enable-preview-feature.md)
 - [Navigate to a different team project](go-to-team-project.md) 
-- [Switch teams (Dashboards, Work)](../teams/switch-team-context.md?toc=/vsts/navigation/toc.json&bc=/vsts/navigatio/breadcrumb/toc.json)   
+- [Switch teams (Dashboards, Work)](../settings/switch-team-context.md?toc=/vsts/navigation/toc.json&bc=/vsts/navigatio/breadcrumb/toc.json)   
 - [Define project or account settings](configure-project-account-settings.md) 
 
 ## Resources 

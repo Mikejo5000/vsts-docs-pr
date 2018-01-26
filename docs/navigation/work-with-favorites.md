@@ -75,6 +75,6 @@ You'll see something similar to the following welcome page.
 
 ## Related content
 
-- [Enable preview features](enable-preview-features.md)  
+- [Enable preview features](enable-preview-feature.md)  
 
 
