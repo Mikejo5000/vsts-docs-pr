@@ -1,5 +1,6 @@
 ---
-title: View and add work items | VSTS  
+title: View and add work items
+titleSuffix: VSTS  
 description: View and add work items using the work items page      
 f1_keywords: 
 - vs.tfc.teamexplorer.workitems
@@ -10,14 +11,14 @@ ms.assetid: EBDE0739-FAE6-4BEA-8F59-E9D20AFE5FE8
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article 
-ms.date: 09/28/2017
+ms.date: 02/14/2018 
 ---
 
 # View and add work items using the Work Items page  
 
 **VSTS**  
 
-From the **Work>Work Items** page you can quickly see all work items assigned to you, that you are following, in which you were mentioned, and more. The set of features available to you through this page and its personalized pivots and filter functions will help streamline your ability to find work items important to you defined across teams within a team project. <!---You can enable it from the [Preview features menu](../../collaborate/preview-features.md) that you access from your account profile.-->
+View work items that you created or are assigned to you.  The **Work>Work Items** page provides several personalized pivots and filter functions to streamline listing work items. Use this page to quickly find work items defined across teams within a team project. <!---You can enable it from the [Preview features menu](../../collaborate/preview-features.md) that you access from your account profile.--> 
 
 >[!NOTE]   
 ><b>Feature availability: </b>The **Work Items** page is currently available from VSTS.
@@ -71,22 +72,20 @@ Using the drop-down menu, you can focus on relevant items inside a team project 
  
 
 ## Add a work item
-Add a work item from within the hub is just one click away. You can add a work item for any type that's enabled in the project from the **New item** drop down menu.  
+Adding a work item from is just one click away. Simply choose the work item type from the **New Work Item** drop down menu.  
 
-0. Click New Work Item and choose the work item type you want. 
+For example, here we choose User Story. 
 
-	For example, here we choose User Story. 
+> [!div class="mx-imgBorder"]  
+![Work hub, Work Items page, Add a work item ](_img/view-add/work-items-hub-new.png)
 
-	> [!div class="mx-imgBorder"]
-	![Work hub, Work Items page, Add a work item ](_img/view-add/work-items-hub-new.png)
+Enter a title and then save the work item. Before you can change the State from its initial default, you must save it.  
 
-0. Enter a title and then save the work item. Before you can change the State from its initial default, you must save it.  
+<img src="../backlogs/_img/add-new-work-item-vsts-user-story.png" alt="Agile process, User story work item form" style="border: 1px solid #C3C3C3;" />  
 
-	<img src="../backlogs/_img/add-new-work-item-vsts-user-story.png" alt="Agile process, User story work item form" style="border: 1px solid #C3C3C3;" />  
+You can [add tags to any work item to filter backlogs and queries](../track/add-tags-to-work-items.md).
 
-	You can [add tags to any work item to filter backlogs and queries](../track/add-tags-to-work-items.md).
-
-	Work items you add are automatically scoped to your [team's area and iteration paths](../scale/set-team-defaults.md). To change the team context, see [Switch team project or team focus](../../teams/switch-team-context.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json).
+Work items you add are automatically scoped to your [team's area and iteration paths](../scale/set-team-defaults.md). To change the team context, see [Switch team project or team focus](../../teams/switch-team-context.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json).
  
 
 ## Filter to create personal views
@@ -123,7 +122,7 @@ You can sort your view by one of the column fields that you select from the **Vi
 
 ## Copy selected items to the clipboard or email them
 
-To select several items in a sequence, hold down the shift key. To select several non-sequential items, use the Ctrl key. Then, you can open the context menu for the selected work items, click (![actions icon](../_img/icons/actions-icon.png)) or (![context icon](../_img/icons/context_menu.png)), and then choose the option you want from the menu. 
+To select several items in a sequence, hold down the shift key. To select several non-sequential items, use the Ctrl key. Then, you can use **Ctrl+c** to copy the selected items to a clipboard. Or, you can open the context menu for the selected work items, click (![actions icon](../_img/icons/actions-icon.png)), and then choose the option you want from the menu. 
 
 > [!div class="mx-imgBorder"]
 ![Work hub, Work Items page, Following view, Select work items, context menu](_img/view-add/following-context-menu.png)
