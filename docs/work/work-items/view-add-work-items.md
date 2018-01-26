@@ -17,30 +17,58 @@ ms.date: 09/28/2017
 
 **VSTS**  
 
-We have launched the preview of the new **Work Items** page under the **Work** hub in your VSTS account. You can enable it from the [Preview features menu](../../collaborate/preview-features.md) that you access from your account profile.
+From the **Work>Work Items** page you can quickly see all work items assigned to you, that you are following, in which you were mentioned, and more. The set of features available to you through this page and its personalized pivots and filter functions will help streamline your ability to find work items important to you defined across teams within a team project. <!---You can enable it from the [Preview features menu](../../collaborate/preview-features.md) that you access from your account profile.-->
 
 >[!NOTE]   
-><b>Feature availability: </b>The **Work Items** page is in preview and currently available from VSTS only.  
+><b>Feature availability: </b>The **Work Items** page is currently available from VSTS.
 
-The set of features available to you through this page and its personalized pivots and filter functions will help streamline your ability to find work items important to you defined across teams within a team project. 
+## Prerequisites 
+
+- You must connect to a team project. If you don't have an account or team project yet, create one in [VSTS](../../user-guide/sign-up-invite-teammates.md). You can then [connect to a team project from your web portal or Visual Studio](../../user-guide/connect-team-projects.md).
+- To create work items, you must be a member of the Contributors group. If you don't have access to the team project, ask the [account owner or project administrator](../../security/add-users-team-project.md) to add you.
+ 
 
 ## Open the Work Items page
+You can start viewing and adding work items once you connect to a team project. 
 
-You can start viewing and adding work items once you connect to a team project. If you don't have a team project yet, create one in [VSTS](../../accounts/set-up-vs.md). If you haven't been added as a team member, [get added now](../../accounts/add-account-users-assign-access-levels.md).
+<a id="browser" /> 
 
 Open a browser window, click the **Work** hub, and then the **Work Items** page. If you don't see the **Work Items** option, you must enable it from the [preview features menu](../../collaborate/preview-features.md).
 
-<img src="_img/work-items-hub.png" alt="Work hub, Work Items page, Add a work item" style="border: 2px solid #C3C3C3;" />
+> [!div class="mx-imgBorder"]
+![Work hub, Work Items page ](_img/view-add/work-items-hub.png)
+
+>[!NOTE]  
+>Depending on the process chosen when the team project was created&mdash;[Agile](guidance/agile-process-workflow.md), [Scrum](guidance/scrum-process-workflow.md), or [CMMI](guidance/cmmi-process-workflow.md)&mdash;the types of work items you can create will differ. For example, backlog items may be called product backlog items (Scrum), user stories (Agile), or requirements (CMMI). All three are similar: they describe the customer value to deliver and the work to be performed.
+>
+> For an overview of all three processes, see [Choose a process](../work-items/guidance/choose-process.md). 
 
 ## View work items
 
-With the Work Items views, you can focus on relevant items inside a team project via these five pivots:
+Using the drop-down menu, you can focus on relevant items inside a team project via these seven pivots:
 
-* **Assigned to me**: lists all work items assigned to you in the project in the order they were last updated. To open or update a work item, simply click its title.
-* **Following**: lists all work items that you're [following](../../collaborate/follow-work-items.md). 
-* **Mentioned**: lists all work items in which you've been mentioned in the last 30 days.   
-* **My activity**: lists all work items that you have recently viewed or updated. 
-* **Recently created**: lists all work items recently created in the project. 
+<table>
+<tbody valign="top">
+<tr>
+<td>
+![Work hub, Work Items page ](_img/view-add/view-menu.png)
+</td>
+<td>
+<ul>
+<li>**Assigned to me**: lists all work items assigned to you in the project in the order they were last updated. To open or update a work item, simply click its title.</li>
+<li>**Following**: lists work items that you've elected to [follow](../../collaborate/follow-work-items.md). </li>
+<li>**Mentioned**: lists work items in which you've been mentioned in the last 30 days. </li>
+<li>**My activity**: lists work items that you have recently viewed or updated.</li>
+<li>**Recently updated**: lists work items recently updated in the project. </li>
+<li>**Recently completed**: lists work items completed or closed in the project.</li>
+<li>**Recently created**: lists work items created within the last 30 days in the team project.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+
+ 
 
 ## Add a work item
 Add a work item from within the hub is just one click away. You can add a work item for any type that's enabled in the project from the **New item** drop down menu.  
@@ -49,7 +77,8 @@ Add a work item from within the hub is just one click away. You can add a work i
 
 	For example, here we choose User Story. 
 
-	<img src="_img/work-items-hub-new.png" alt="Work hub, Work Items page, Add a work item" style="border: 2px solid #C3C3C3;" />
+	> [!div class="mx-imgBorder"]
+	![Work hub, Work Items page, Add a work item ](_img/view-add/work-items-hub-new.png)
 
 0. Enter a title and then save the work item. Before you can change the State from its initial default, you must save it.  
 
@@ -63,18 +92,60 @@ Add a work item from within the hub is just one click away. You can add a work i
 ## Filter to create personal views
 Work items can be filtered by typing a keyword or using one or more of the fields provided, such as work item type, assigned to, state, and tags. The page remembers the filters you set for each pivot, supporting personalized views across all pivots.  
 
-<img src="_img/work-items-filter-bug.png" alt="Filter Work Items page" style="border: 2px solid #C3C3C3;" />
+> [!div class="mx-imgBorder"]
+![Work hub, Work Items page, Filter to show Bugs ](_img/view-add/work-items-filter-bug.png)
 
->[!NOTE]  
->Depending on the process chosen when the team project was created&mdash;[Agile](guidance/agile-process-workflow.md), [Scrum](guidance/scrum-process-workflow.md), or [CMMI](guidance/cmmi-process-workflow.md)&mdash;the types of work items you can create will differ. For example, backlog items may be called product backlog items (Scrum), user stories (Agile), or requirements (CMMI). All three are similar: they describe the customer value to deliver and the work to be performed.
->
-> For an overview of all three processes, see [Choose a process](../work-items/guidance/choose-process.md). 
+## Sort your view and other View options 
+
+You can sort your view by one of the column fields that you select from the **View options** menu. 
+
+> [!NOTE]   
+> The column fields differ depending on the view that you select. You can't change the fields supported by a view. 
+
+
+<table>
+<tbody valign="top">
+<tr>
+<td>
+![Work hub, Work Items page ](_img/view-add/view-options.png)
+</td>
+<td>
+<ul>
+<li>**ID, Work Item Type, Title, State, Area Path, Tags** (Assigned to me view): Sorts by the column selected.<br/><br/></li>
+<li>**Ascending/Descending**: click to change the sort order. <br/><br/></li>
+<li>**Completed Work Items**: Click the slider to choose to show completed work items in all your views.  </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+## Copy selected items to the clipboard or email them
+
+To select several items in a sequence, hold down the shift key. To select several non-sequential items, use the Ctrl key. Then, you can open the context menu for the selected work items, click (![actions icon](../_img/icons/actions-icon.png)) or (![context icon](../_img/icons/context_menu.png)), and then choose the option you want from the menu. 
+
+> [!div class="mx-imgBorder"]
+![Work hub, Work Items page, Following view, Select work items, context menu](_img/view-add/following-context-menu.png)
+
+
+## Open a view as a query  
+
+You can open any view, filtered view, or selected set of work items as a query. Simply click the **Open in Queries** link or **Open selected items in Queries** option from the context menu. 
+
+Queries provide additional features that you can use, including: 
+* Edit one or more fields of several work items    
+* Add or remove tags from several work items 
+* Change the work item type 
+* Delete work items 
+* Apply work item templates
+* And more
+
+For details, see [Bulk modify work items](../backlogs/bulk-modify-work-items.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json ). To learn more about queries, see [Use the query editor to list and manage queries](../track/using-queries.md).  
+
 
 ## Related notes
 - [Work from the account home page](../../user-guide/account-home-pages.md)
 - [Enable preview features](../../collaborate/preview-features.md)
 - [Keyboard shortcuts for work item forms and the Work Items page](work-item-form-keyboard-shortcuts.md)
 
-### Got feedback?
-
-Fill out the comment box that appears when you turn the feature off. See also our [comprehensive feedback and support page](../../user-guide/provide-feedback.md).
