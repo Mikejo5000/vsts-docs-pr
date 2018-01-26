@@ -1,4 +1,4 @@
-- name: Project & Account Settings 
+- name: "Project & Account Settings" 
   href: index.md
 - name: Overview
   items:
@@ -85,7 +85,7 @@
 - name: Resources
   items:
   - name: Navigation Basics
-    href: ../user-guide/work-web-portal.md
+    href: ../navigation/index.md
   - name: Account Management
     href: ../accounts/index.md
   - name: Security & Identity
