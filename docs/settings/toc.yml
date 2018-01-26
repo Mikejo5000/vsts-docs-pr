@@ -4,7 +4,7 @@
   items:
   - name: About project & account settings
     href: about-settings.md
-  - name: When and why to add a team
+  - name: When and why to add a team or team project
     href: ../work/scale/scale-teams.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json 
 - name: Quickstarts
   items:
@@ -22,6 +22,8 @@
     href: ../accounts/add-account-users-from-user-hub.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json 
   - name: Customize a process
     href: ../work/customize/process/customize-process.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+  - name: Create a team project
+    href: ../accounts/create-team-project.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
 - name: Concepts
   items:
   - name: About areas and iterations
@@ -46,6 +48,10 @@
     href: ../work/scale/manage-team-assets.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json  
   - name: Switch team context
     href: switch-team-context.md
+  - name: Manage team projects
+    href: ../accounts/rename-team-project.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+  - name: Change account settings
+    href: ../accounts/change-account-ownership-vs.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
   - name: Set test retention policies
     href: ../manual-test/getting-started/how-long-to-keep-test-results.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
   - name: Process configuration
