@@ -6,7 +6,7 @@ ms.technology: vs-devops-build
 ms.assetid: 2FF35C3B-FBF9-407F-8467-2D336973E63C
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+ms.date: 01/19/2018
 ---
 
 # Releases in Release Management
@@ -77,7 +77,6 @@ or immediately start a deployment. For example:
 
 * [Create and deploy a release](../../actions/create-deploy-releases.md)
 * [View and manage releases](../../actions/view-manage-releases.md)
-* [Monitor releases and debug deployment issues](../../actions/debug-deployment-issues.md)
 * [Work with release definitions](../../actions/work-with-release-definitions.md)
 
 [!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]

@@ -1382,11 +1382,6 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/tfs-server/team-services/link-msdn-subscription-to-organizational-account-vs.md",
-            "redirect_url": "/vsts/billing/link-msdn-subscription-to-organizational-account-vs",
-            "redirect_document_id": false
-        },
-        {
             "source_path": "docs/tfs-server/team-services/manage-azure-active-directory-groups-visual-studio-team-services.md",
             "redirect_url": "/vsts/accounts/manage-azure-active-directory-groups-vsts",
             "redirect_document_id": false
@@ -2843,62 +2838,72 @@
        },
         {
             "source_path": "docs/build-release/apps/jenkins/build-deploy-jenkins.md",
-            "redirect_url": " https://docs.microsoft.com/en-us/azure/virtual-machines/linux/tutorial-build-deploy-jenkins",
+            "redirect_url": "https://docs.microsoft.com/en-us/azure/virtual-machines/linux/tutorial-build-deploy-jenkins",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/build-release/tasks/tool/net-core-installer.md",
+            "redirect_url": "https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/DotNetCoreInstaller",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/build-release/tasks/build/net-core-cli.md",
+            "redirect_url": "https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/DotNetCoreCLI",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/tasks/deploy/azure-app-service-deploy.md",
-            "redirect_url": " https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureRmWebAppDeployment",
+            "redirect_url": "https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureRmWebAppDeployment",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/tasks/deploy/azure-app-service-manage.md",
-            "redirect_url": " https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureAppServiceManage",
+            "redirect_url": "https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureAppServiceManage",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/tasks/deploy/azure-cloud-service-deployment.md",
-            "redirect_url": " https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureCloudPowerShellDeployment",
+            "redirect_url": "https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureCloudPowerShellDeployment",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/tasks/deploy/azure-powershell.md",
-            "redirect_url": " https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzurePowerShell",
+            "redirect_url": "https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzurePowerShell",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/tasks/deploy/azure-resource-group-deployment.md",
-            "redirect_url": " https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureResourceGroupDeployment",
+            "redirect_url": "https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureResourceGroupDeployment",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/tasks/deploy/azure-sql-database-deployment.md",
-            "redirect_url": " https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/SqlAzureDacpacDeployment",
+            "redirect_url": "https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/SqlAzureDacpacDeployment",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/tasks/deploy/azure-web-app-deployment.md",
-            "redirect_url": " https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureRmWebAppDeployment",
+            "redirect_url": "https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureRmWebAppDeployment",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/tasks/deploy/deploy-to-kubernetes.md",
-            "redirect_url": " https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/Kubernetes",
+            "redirect_url": "https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/Kubernetes",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/tasks/deploy/docker-deploy.md",
-            "redirect_url": " https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/Docker",
+            "redirect_url": "https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/Docker",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/tasks/deploy/mobile-center-upload.md",
-            "redirect_url": " https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/MobileCenterDistribute",
+            "redirect_url": "https://docs.microsoft.com/en-us/appcenter/distribution/",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/tasks/deploy/sql-server-database-deployment.md",
-            "redirect_url": " https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/SqlDacpacDeploymentOnMachineGroup",
+            "redirect_url": "https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/SqlDacpacDeploymentOnMachineGroup",
             "redirect_document_id": false
         },
         {
@@ -4747,8 +4752,33 @@
         "redirect_document_id": false
        },
        {
+        "source_path": "docs/build-release/concepts/definitions/release/deployment-groups/howto-deployment-groups.md",
+        "redirect_url": "/vsts/build-release/apps/cd/deploy-webdeploy-iis-deploygroups#create-a-deployment-group",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/build-release/actions/debug-deployment-issues.md",
+        "redirect_url": "/vsts/build-release/concepts/definitions/release/variables#debug-mode",
+        "redirect_document_id": false
+       },
+       {
         "source_path": "docs/accounts/restrict-access-tfs.md",
         "redirect_url": "/vsts/security/restrict-access",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/billing/vs-subscriptions/view-vs-subscriptions.md",
+        "redirect_url": "/visualstudio/subscriptions/manage-vs-subscriptions",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/billing/link-msdn-subscription-concept.md",
+        "redirect_url": "/vsts/billing/faq-vs-subscriptions",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/billing/billing-concepts.md",
+        "redirect_url": "/vsts/billing/overview",
         "redirect_document_id": false
        }
     ]

@@ -30,7 +30,9 @@
         href: apps/windows/dot-net.md
       - name: Node.js
         href: apps/nodejs/build-gulp.md
-      - name: Java
+      - name: Gradle
+        href: apps/java/build-gradle.md
+      - name: Maven
         href: apps/java/build-maven.md
       - name: C++
         href: apps/windows/cpp.md
@@ -108,6 +110,11 @@
       href: concepts/definitions/release/variables.md
     - name: Approvals and gates
       href: concepts/definitions/release/approvals/index.md
+      items:
+      - name: Approvals
+        href: concepts/definitions/release/approvals/approvals.md
+      - name: Gates
+        href: concepts/definitions/release/approvals/gates.md
     - name: Templates
       href: concepts/definitions/release/env-templates.md
     - name: Releases and deployments
@@ -163,6 +170,8 @@
       href: actions/agents/v2-linux.md
     - name: Run an agent behind a web proxy
       href: actions/agents/proxy.md
+    - name: Run an agent with self-signed certificate
+      href: actions/agents/certificate.md
     - name: Configure TFS authentication
       href: actions/agents/configure-tfs-authentication.md
   - name: Use YAML CI (config as code)
@@ -236,7 +245,7 @@
     - name: Troubleshooting build
       href: actions/troubleshooting.md
     - name: Debug deployment issues
-      href: actions/debug-deployment-issues.md
+      href: concepts/definitions/release/variables.md#debug-mode
     - name: Troubleshoot Azure connections
       href: actions/azure-rm-endpoint.md
   - name: Migrate
@@ -250,6 +259,8 @@
     items:
     - name: .NET Core
       href: tasks/build/dotnet-core.md
+    - name: .NET Core CLI
+      href: tasks/build/net-core-cli.md
     - name: Android build
       href: tasks/build/android-build.md
     - name: Android signing
@@ -381,7 +392,7 @@
   - name: Deploy tasks
     items:
     - name: App Center Distribute
-      href: tasks/deploy/mobile-center-upload.md
+      href: https://docs.microsoft.com/en-us/appcenter/distribution/
     - name: Azure App Service Deploy
       href: tasks/deploy/azure-app-service-deploy.md
     - name: Azure App Service Manage
@@ -418,6 +429,8 @@
       href: tasks/deploy/windows-machine-file-copy.md
   - name: Tool tasks
     items:
+    - name: .NET Core Tool Installer
+      href: tasks/tool/net-core-installer.md
     - name: Node Tool Installer
       href: tasks/tool/node-js.md
     - name: Java Tool Installer

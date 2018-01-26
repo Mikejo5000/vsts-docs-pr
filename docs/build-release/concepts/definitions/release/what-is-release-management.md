@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
-ms.date: 11/14/2017
+ms.date: 01/19/2018
 ---
 
 # What is Release Management?
@@ -132,8 +132,6 @@ Simply follow these steps:
 1. **[Create and deploy releases](../../../actions/create-deploy-releases.md)** based on your release definition.
 
 1. **[View and manage your releases](../../../actions/view-manage-releases.md)** using the comprehensive UI and tools.
-
-1. **[Monitor and debug your releases](../../../actions/debug-deployment-issues.md)** during and after the deployments. 
 
 ## Related topics
 
