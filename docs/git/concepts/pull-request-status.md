@@ -43,9 +43,10 @@ A status consists of four key pieces of data:
 * **Context**. A name for the status - typically describing the entity posting the status.
 * **URL**. A link where users can get more information specific to the status. 
 
-Essentially, status is the way a user or service posts their evaluation about a pull request.
-Did the changes meet the requirements? 
-Where can I learn more about what I need to do to meet the requirements?
+Essentially, status is the way a user or service posts their evaluation about a pull request and provides the answer to questions such as:
+
+* Did the changes meet the requirements? 
+* Where can I learn more about what I need to do to meet the requirements?
 
 Let's look at an example. 
 Consider a [CI service](../../build-release/index.md) that is required to build all code changes in a project. 
