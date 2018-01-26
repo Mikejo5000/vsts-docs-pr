@@ -280,7 +280,7 @@
   - name: Work items
     href: ../work-items/index.md
   - name: "Scale & Configure Teams"
-    href: ../../teams/index.md
+    href: ../../settings/index.md
   - name: Account Management (VSTS)
     href: ../../accounts/index.md
   - name: Marketplace extensions

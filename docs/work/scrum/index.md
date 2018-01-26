@@ -18,7 +18,7 @@ With Scrum, you can schedule and plan sprints, update your task board, and monit
 <!---
 ## Overview  
 [About Scrum](scrum-overview.md) 
-[About teams and Agile tools](../../teams/about-teams-and-settings.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json)  
+[About teams and Agile tools](../../settings/about-teams-and-settings.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json)  
 -->
 
 ## 5-Minute Quickstarts  

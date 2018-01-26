@@ -56,7 +56,7 @@ Use the guidance provided in the following topics based on the process model or 
 ## Resources 
 
 - [Work items](../work-items/index.md)
-- [Scale & configure teams](../../teams/index.md)
+- [Scale & configure teams](../../settings/index.md)
 - [Account Management (VSTS)](../../accounts/index.md)
 - [Marketplace extensions](../../marketplace/install-vsts-extension.md)
 - [Extensibility and REST APIs](../../extend/overview.md) 

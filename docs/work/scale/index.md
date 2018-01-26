@@ -13,7 +13,7 @@ ms.date: 10/04/2017
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-Manage portfolios and gain visibility across teams. For guidance on adding teams, see [Scale & Configure teams](../../teams/index.md).
+Manage portfolios and gain visibility across teams. For guidance on adding teams, see [Scale & Configure teams](../../settings/index.md).
 
 ## Quickstarts
 
@@ -40,7 +40,7 @@ Manage portfolios and gain visibility across teams. For guidance on adding teams
 - [Scaled Agile Framework](scaled-agile-framework.md)   
 
 ## Resources  
-- [Scale & Configure Teams](../../teams/index.md)
+- [Scale & Configure Teams](../../settings/index.md)
 - [Customization](../customize/index.md)
 - [Agile culture](https://www.visualstudio.com/learn/agile-culture/)  
 - [Scale Agile to large teams](https://www.visualstudio.com/learn/scale-agile-large-teams/)  

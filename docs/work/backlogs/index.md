@@ -19,7 +19,7 @@ Start planning your project by quickly adding user stories or requirements to yo
 ## Overview  
 
 [Backlogs, boards, and plans](backlogs-boards-plans.md)  
-[About teams and Agile tools](../../teams/about-teams-and-settings.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)
+[About teams and Agile tools](../../settings/about-teams-and-settings.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)
 -->
 
 

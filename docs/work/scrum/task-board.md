@@ -48,7 +48,7 @@ During your daily Scrum, you can filter your task board to help focus on items o
 Use the Person filter when you want to focus on work assigned to individual team members.
 
 >[!TIP]    
->If you're seeing tasks that don't belong to your team, check that you've [selected the correct team](../../teams/switch-team-context.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json). 
+>If you're seeing tasks that don't belong to your team, check that you've [selected the correct team](../../settings/switch-team-context.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json). 
 
 
 
