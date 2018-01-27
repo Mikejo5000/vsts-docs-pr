@@ -5,22 +5,22 @@ description: Understand the Analytics Service reporting solution for Visual Stud
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
 ms.assetid: 
-ms.reviewer: greggboe
-ms.manager: douge
-ms.author: kaelli
-ms.date: 11/13/2017
+ms.reviewer: kaelli
+ms.manager: abjork
+ms.author: greggboe
+ms.date: 2/8/2018
 ---
 
 # What is the Analytics Service?
 
 **VSTS**  
 
-You can use the Analytics Service, the reporting platform for Visual Studio Team Services (VSTS), to answer quantitative questions about the past or present state of your projects. This service provides a concise data model over the VSTS suite. Built for reporting, the Analytics Service is optimized for fast read-access and server-based aggregations.
+The Analytics Service provides the reporting platform for Visual Studio Team Services (VSTS) Use it to answer quantitative questions about the past or present state of your projects. This service provides a concise data model over the VSTS suite. Built for reporting, the Analytics Service is optimized for fast read-access and server-based aggregations.
 
-To gain access to the Analytics Service for your VSTS account, you install the [VSTS Analytics extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). Once installed, the Analytics Service populates itself with all available VSTS data. Once populated, it updates itself as data changes occur. For more information, read read [Performance and latency](performance-latency.md)
+To gain access to the Analytics Service for your VSTS account, install the [VSTS Analytics extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). Once installed, the Analytics Service populates itself with all available VSTS data. Once populated, it updates itself as data changes occur. For more information, read [Data Available in Analytics Service](./data-available-in-analytics.md) and [Performance and latency](performance-latency.md)
 
 > [!NOTE]
-> **The Analytics Service is in public preview**. While in preview, it is available to everyone free of charge. We encourage you to use it and provide us feedback. As we add features, we will post them on the [Microsoft DevOps Blog](https://blogs.msdn.microsoft.com/devops/?s=VSTS+Analytics+Extension).
+> **The Analytics Service is in public preview**. While in preview, it is available to everyone free of charge. We encourage you to use it and provide us feedback. As we add features, we will post them on the [Microsoft DevOps Blog](https://blogs.msdn.microsoft.com/devops/tag/reporting/).
 
 You can access the Analytics Service through dashboard widgets, OData, and Power BI.
 
@@ -42,32 +42,27 @@ If you want to develop your own widget based on the Analytics Service, see [Crea
 The Analytics Service is fully accessible via OData. If you would like to prepare custom queries and tooling with our OData API, see [Extend on Analytics](../extend-analytics/index.md)
 
 ## Power BI
-[Power BI](https://powerbi.microsoft.com) is a suite of business analytics tools. Use it to do ad-hoc analysis, produce beautiful reports, and publish for enterprise consumption. We have created a Power BI Desktop connector which simplifies pulling data from the Analytics Service.
+[Power BI](https://powerbi.microsoft.com) is a suite of business analytics tools. Use it to do ad-hoc analysis, produce beautiful reports, and publish for enterprise consumption.
 
-From Power BI Desktop, select the connector "Visual Studio Team Services (Beta)". 
+There are 3 ways for Power BI to connect to the VSTS Analytics service. For an overview, read [Power BI Integration Overview](../powerbi/overview.md)
+
+The easiest way is to use Power BI Data Connector we created for VSTS. For more information read [Connect to VSTS with Power BI Data Connector](../powerbi/data-connector-connect.md)
 
 ![Power BI VSTS Connector (Beta)](../powerbi/_img/data-connector-get-data.png)
 
-**The VSTS connector is in beta.**
-
-For more information on the version of the connector, check out [Connect to VSTS with Power BI Data Connector](../powerbi/data-connector-connect.md)
 
 ## Data available in the Analytics Service
 
-**The Analytics Service is in public preview.** At this point, only Work Item Tracking data is modeled in the Analytics Service.
+**The Analytics Service is in public preview.** At this point, not all data is available via the Analytics Service.
 
-We are working hard to add more types of data, including:
-* Code (Pull Requests, Commits, etc...)
-* Automated Test Results
-* Manual Test Results (Test Manager)
-* Build
-* Release
-* Packaging
-
-As more data types come online, we will update this page. Look for annoucements on the [Microsoft DevOps Blog](https://blogs.msdn.microsoft.com/devops).
+For more information read [Data available in Analytics](./data-available-in-analytics.md)
 
 ## Availability for Team Foundation Server (TFS)
-**The Analytics Service is not yet available for our on-premises product, Team Foundation Server (TFS).** When we have information on when it will be available, we will update this page. Look for announcements on the [Microsoft DevOps Blog](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics).
+**The Analytics Service is not yet available for our on-premises product, Team Foundation Server (TFS).** 
+
+We are working on a plan to bring Analytics to the next major release of TFS (after TFS 2018).
+
+When we have information on when it will be available, we will update this page. Look for announcements on the [Microsoft DevOps Blog](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics).
 
 For TFS reporting, you may use [Dashboards](../dashboards/dashboards.md) with a [variety of widgets](../dashboards/widget-catalog.md) that don't require the Analytics Service. You may also use [SQL Server Reporting](../sql-reports/index.md). 
 

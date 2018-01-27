@@ -28,6 +28,8 @@
     href: example-analytics-widget.md  
 - name: Concepts
   items:
+  - name: Data available in Analytics
+    href: ../analytics/data-available-in-analytics.md
   - name: Performance and latency
     href: ../analytics/performance-latency.md?toc=/vsts/report/extend-analytics/toc.json&bc=/vsts/report/extend-analytic/breadcrumb/toc.json
   - name: Query guidelines
