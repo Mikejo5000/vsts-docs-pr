@@ -71,6 +71,8 @@ Follow the steps below to get started using the VSTS Power BI Data Connector:
 
 11. **Select the view**. The Data Connector will present a list of available [Analytics Views](../analytics/what-are-analytics-views.md). Each view represents a set of data that can be pulled into Power BI. 
 
+	VSTS provides a set of [default Analytics Views](../analytics-default-views.md) when you first enable Analytics. You can also [create custom Analytics Views](../analytics/analytics-views-create.md). The image below shows the default Analytics Views. Your list of views may be different.
+
 	![](./_img/data-connector-navigator.png)
 
 	Click *Work Items - Today* table and wait for the preview to load.

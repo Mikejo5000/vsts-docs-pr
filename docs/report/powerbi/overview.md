@@ -38,7 +38,8 @@ VSTS supports three ways to pull data from VSTS into Power BI:
     </tr>
     <tr>
         <td><a href="data-connector-connect.md">Connect using the VSTS Data Connector</href></td>
-        <td>The VSTS Data Connector is the recommended way to connect Power BI to VSTS. The connector simplifies the VSTS data model into a single table and models historical data to simplify trend reporting. Last updated January 8th, 2018</td>
+        <td>The VSTS Data Connector is the recommended way to connect Power BI to VSTS. The connector simplifies the VSTS data model into a single table and models historical data to simplify trend reporting.
+        The VSTS Power BI Data connector works with <a href="../analytics/what-are-analytics-views.md">Analytics Views</href></a>. Last updated January 8th, 2018</td>
     </tr>
     <tr>
         <td><a href="access-analytics-power-bi.md">Connect to VSTS using the Power BI OData feed</href></td>
@@ -46,7 +47,8 @@ VSTS supports three ways to pull data from VSTS into Power BI:
     </tr>
     <tr>
         <td><a href="data-connector-functions.md">Connect using VSTS functions</href></td>
-        <td>Intended for advanced users who need a greater degree of control of what data is included in the model.  Using the functions, you can specify OData queries as well as combine data from other sources, such as VSTS REST APIs. You can also support complex model structures not supported by the VSTS Data Connector. Last updated January 8th, 2018</td>
+        <td>Intended for advanced users who need a greater degree of control of what data is included in the model.  Using the functions, you can specify OData queries as well as combine data from other sources, such as VSTS REST APIs. You can also support complex model structures not supported by the VSTS Data Connector. 
+        Last updated January 8th, 2018</td>
     </tr>
 </tbody>
 </table>
