@@ -17,7 +17,7 @@ ms.date: 2/82/108
 
 **The Analytics Service is in public preview.** At this point, the following data is available in the Analytics Service.
 
-| Data | Availbility | [Widgets](./analytics-widgets-VSTS) | [OData](../extend-analytics) | [Power BI](../powerbi) |
+| Data | Availbility | [Widgets](./analytics-widgets-VSTS.md) | [OData](../extend-analytics.md) | [Power BI](../powerbi/overview.md) |
 |-|-|-|-|-|
 | Work Item Tracking | Available Now | Yes | Yes | Yes |
 | Automated Testing Data | Target - Q2, 2018 |  |  |  |

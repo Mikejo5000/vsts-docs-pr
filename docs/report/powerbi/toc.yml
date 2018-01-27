@@ -25,7 +25,7 @@
 - name: References
   items:
   - name: Default Analytics Views
-    href: default-analytics-views.md
+    href: ../analytics/default-analytics-views.md
   - name: Data available in the VSTS Data Connector
     href: data-connector-available-data.md
 - name: Resources

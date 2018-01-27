@@ -47,4 +47,4 @@ The default Analytics Views return all the specified data in a VSTS team project
 
 **If the default Analytics Views do not meet your needs**, you can create your customized Analytics Views to fine-tune the data, fields, and history returned to Power BI.
 
-For more information on creating custom Analytics Views, read [Create & manage Analytics views](./manage-analytics-views.md).
+For more information on creating custom Analytics Views, read [Create & manage Analytics views]("analytics-views-create.md).
