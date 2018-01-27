@@ -17,7 +17,7 @@ ms.date: 2/8/2018
 
 The Analytics Service provides the reporting platform for Visual Studio Team Services (VSTS) Use it to answer quantitative questions about the past or present state of your projects. This service provides a concise data model over the VSTS suite. Built for reporting, the Analytics Service is optimized for fast read-access and server-based aggregations.
 
-To gain access to the Analytics Service for your VSTS account, install the [VSTS Analytics extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). Once installed, the Analytics Service populates itself with all available VSTS data. Once populated, it updates itself as data changes occur. For more information, read [Data Available in Analytics Service](./data-available-in-analytics.md) and [Performance and latency](performance-latency.md)
+To gain access to the Analytics Service for your VSTS account, install the [VSTS Analytics extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). Once installed, the Analytics Service populates itself with all available VSTS data. Once populated, it updates itself as data changes occur. For more information, read [Data available in Analytics Service](./data-available-in-analytics.md) and [Performance and latency](performance-latency.md)
 
 > [!NOTE]
 > **The Analytics Service is in public preview**. While in preview, it is available to everyone free of charge. We encourage you to use it and provide us feedback. As we add features, we will post them on the [Microsoft DevOps Blog](https://blogs.msdn.microsoft.com/devops/tag/reporting/).
@@ -44,13 +44,13 @@ The Analytics Service is fully accessible via OData. If you would like to prepar
 ## Power BI
 [Power BI](https://powerbi.microsoft.com) is a suite of business analytics tools. Use it to do ad-hoc analysis, produce beautiful reports, and publish for enterprise consumption.
 
-There are 3 ways for Power BI to connect to the VSTS Analytics service. For an overview, read [Power BI Integration Overview](../powerbi/overview.md)
-
-**The easiest way is to pull data from VSTS into Power BI**, is to use the VSTS Power BI Data Connector. For more information read [Connect to VSTS with Power BI Data Connector](../powerbi/data-connector-connect.md). 
-
+The easiest way Power BI to connect to VSTS is to use the [VSTS Power BI Data Connector](../powerbi/data-connector-connect.md): 
 ![Power BI VSTS Connector (Beta)](../powerbi/_img/data-connector-get-data.png)
 
 The VSTS Power BI Data connector works with Analytics Views. For more information, read [What are Analytics Views](./what-are-analytics-views.md).
+
+We offer other ways to pull VSTS Data into Power BI. For information on all the options, read our [Power BI Integration Overview](../powerbi/overview.md)
+
 
 ## Data available in the Analytics Service
 
