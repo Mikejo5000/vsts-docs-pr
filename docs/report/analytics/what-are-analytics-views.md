@@ -22,8 +22,14 @@ When using the VSTS Power BI Data Connect, you are provided a list of Analytics 
 ![VSTS Power BI Integration - Data Connector - Default Analytics Views](./_img/data-connector-views-default.png)
 
 ## Creating your own Analytics Views
-When you install the [VSTS Analytics extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics), we create a set of default Analytics Views. You can use these views immediately
-> STOPPED HERE
+When you install the [VSTS Analytics extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics), we create a set of default Analytics Views. These views are immediately available from Power BI and are a great way to get started.
+
+The default Analytics Views return all the specified data in a VSTS team project. They work well for customers with smaller accounts. 
+
+**If the default Analytics Views do not meet your needs**, you can create your customized Analytics Views to fine-tune the data, fields, and history returned to Power BI.
+
+For more information on creating custom Analytics Views, read [Create & manage Analytics views](./manage-analytics-views.md).
+
 
 ## Using Analytics Views makes Power BI reporting easier
 Each view loads a set of data into Power BI. The data model built in Power BI is modeled to make it easy to get started with Power BI reports.

@@ -15,27 +15,6 @@ ms.date: 03/02/2017
 
 To connect to the Analytics Services for VSTS from the Power BI Desktop Data Connector, you must download the *Power BI Desktop January 2018 Update* or a newer version. You can download it from the official [Power BI Desktop download page](https://powerbi.microsoft.com/desktop/).
 
-<!--  THIS SHOULD BE INCLUDED IN THE RELEASE NOTES PAGE>
-The current release of the Data Connector supports custom fields added to the process references by a team project. 
-
-## Options for work item types
-
-| Work item type option | Description |
-|-|-|
-| Work Items | Load current or historical state of all Work Items  |
-| Bugs | Load current or historical state of Bugs only |
-
-## Options for Historical data
-
-| Historical option | Description |
-|-|-|
-| Today | Loads only the most recent revision for each work item. |
-| Last 30 days | Loads work item history for the last 30 days, on a daily interval.
-| Last 26 weeks | Loads work item history for the last 26 weeks, on a weekly interval.
-| All history by month | Loads all work item history, on a monthly interval
--->
-
-
 ## How historical data is modelled
 Historical data is modelled as a **periodic snapshot fact table**. The fact table contains one row created at midnight for each work item at the end of each period. For example, history on a daily period is modeled as one row at midnight for each day, while a weekly period would be one row at midnight of the last day of the week. 
 
