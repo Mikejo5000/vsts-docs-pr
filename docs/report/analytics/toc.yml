@@ -4,6 +4,8 @@
   items:
   - name: "What is Analytics?"
     href: what-is-analytics.md
+  - name: "What are Analytics Views?"
+    href: what-is-analytics.md
 - name: Quickstarts
   items:
   - name: Add an Analytics widget to the dashboard
@@ -24,6 +26,8 @@
     href: data-available-in-analytics.md
   - name: Analytics widgets
     href: analytics-widgets-vsts.md
+  - name: Default Analytics Views
+    href: analytics-default-views.md
   - name: Performance and latency
     href: performance-latency.md
 - name: How-to Guides
