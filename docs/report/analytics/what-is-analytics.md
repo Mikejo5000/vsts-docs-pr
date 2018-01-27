@@ -5,9 +5,9 @@ description: Understand the Analytics Service reporting solution for Visual Stud
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
 ms.assetid: 
-ms.reviewer: kaelli
-ms.manager: abjork
-ms.author: greggboe
+ms.reviewer: greggboe
+ms.manager: douge
+ms.author: kaelli
 ms.date: 2/8/2018
 ---
 
@@ -46,10 +46,11 @@ The Analytics Service is fully accessible via OData. If you would like to prepar
 
 There are 3 ways for Power BI to connect to the VSTS Analytics service. For an overview, read [Power BI Integration Overview](../powerbi/overview.md)
 
-The easiest way is to use Power BI Data Connector we created for VSTS. For more information read [Connect to VSTS with Power BI Data Connector](../powerbi/data-connector-connect.md)
+**The easiest way is to pull data from VSTS into Power BI**, is to use the VSTS Power BI Data Connector. For more information read [Connect to VSTS with Power BI Data Connector](../powerbi/data-connector-connect.md). 
 
 ![Power BI VSTS Connector (Beta)](../powerbi/_img/data-connector-get-data.png)
 
+The VSTS Power BI Data connector works with Analytics Views. For more information, read [What are Analytics Views](./what-are-analytics-views.md).
 
 ## Data available in the Analytics Service
 

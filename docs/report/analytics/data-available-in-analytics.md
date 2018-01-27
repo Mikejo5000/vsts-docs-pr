@@ -5,9 +5,9 @@ description: What VSTS data is available in the VSTS Analytics Service
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
 ms.assetid: 
-ms.reviewer: kaelli
-ms.manager: abjork
-ms.author: greggboe
+ms.reviewer: greggboe   
+ms.manager: douge
+ms.author: kaelli
 ms.date: 2/82/108
 ---
 
