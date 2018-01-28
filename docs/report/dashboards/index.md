@@ -16,7 +16,7 @@ ms.date: 10/31/2017
 
 Start gaining visibility into how your team is progressing by adding one or more widgets to your dashboard. Each team can customize and configure dashboards to share information and monitor their progress. 
 
-To learn about VSTS/TFS Reporting Roadmap, read [VSTS/TFS Reporting Roadmap](./reporting-roadmap.md) 
+To learn about VSTS/TFS Reporting Roadmap, read [VSTS/TFS Reporting Roadmap](../analytics/reporting-roadmap.md) 
 
 <!---
 ## Overview  

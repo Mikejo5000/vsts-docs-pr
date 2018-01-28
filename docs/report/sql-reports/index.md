@@ -19,7 +19,7 @@ ms.date: 09/05/2017
 > 
 > For information on what is supported for VSTS, see [Dashboards and reports overview](../dashboards/overview.md?toc=/vsts/report/sql-reports/toc.json&bc=/vsts/report/sql-reports/breadcrumb/toc.json). 
 
-To learn about VSTS/TFS Reporting Roadmap, read [VSTS/TFS Reporting Roadmap](./reporting-roadmap.md) 
+To learn about VSTS/TFS Reporting Roadmap, read [VSTS/TFS Reporting Roadmap](../analytics/reporting-roadmap.md) 
 
 
 ## 5-Minute Quickstarts  
