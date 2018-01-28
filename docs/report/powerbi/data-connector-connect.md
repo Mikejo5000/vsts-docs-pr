@@ -4,15 +4,17 @@ description: Step-by-step guidance on how to connect to Power BI Data Connector 
 ms.assetid: 509ECCF2-E18E-4F14-B7EE-8802AB8938A2
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
-ms.reviewer: stansw
+ms.reviewer: jozimm
 ms.manager: douge
 ms.author: kaelli
-ms.date: 1/4/2018
+ms.date: 2/8/2018
 ---
 
 # Connect to VSTS with Power BI Data Connector
 
 **VSTS**
+
+> The VSTS Power BI Data connector works with Analytics Views. For more information on Analytics Views, read [What are Analytics Views](../analytics/what-are-analytics-views.md)
 
 Follow the steps below to get started using the VSTS Power BI Data Connector:
 
@@ -67,7 +69,9 @@ Follow the steps below to get started using the VSTS Power BI Data Connector:
 
 	![](./_img/data-connector-get-data-8.png)
 
-11. **Select the view**. The Data Connector will present a list of available views. Each view represents a set of data that can be pulled into Power BI. 
+11. **Select the view**. The Data Connector will present a list of available [Analytics Views](../analytics/what-are-analytics-views.md). Each view represents a set of data that can be pulled into Power BI. 
+
+	VSTS provides a set of [default Analytics Views](../analytics/analytics-default-views.md) when you first enable Analytics. You can also [create custom Analytics Views](../analytics/analytics-views-create.md). The image below shows the default Analytics Views. Your list of views may be different.
 
 	![](./_img/data-connector-navigator.png)
 
