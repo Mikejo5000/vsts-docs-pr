@@ -30,6 +30,8 @@
     href: data-connector-available-data.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
 - name: Resources
   items:
+  - name: VSTS/TFS Reporting Roadmap
+    href: ../analytics/reporting-roadmap.md
   - name: "Analytics (VSTS)"
     href: ../analytics/index.md
   - name: Extend Analytics with OData

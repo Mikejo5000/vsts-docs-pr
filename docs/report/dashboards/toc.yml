@@ -66,6 +66,8 @@
     href: charts-dashboard-permissions-access.md
 - name: Resources
   items:
+  - name: VSTS/TFS Reporting Roadmap
+    href: ../analytics/reporting-roadmap.md
   - name: Agile
     href: /vsts/#pivot=services&panel=agile
   - name: Testing

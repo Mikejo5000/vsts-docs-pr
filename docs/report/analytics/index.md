@@ -16,7 +16,9 @@ ms.date: 11/13/2017
 
 You can use the Analytics Service to answer quantitative questions regarding past or present state and velocity of your projects hosted in Visual Studio Team Services (VSTS). The Analytics Service provides a concise data model of your work tracking data.  
 
-To get started, read [What is Analytics?](what-is-analytics.md) 
+To get started, read [What is Analytics?](what-is-analytics.md)
+
+To learn about VSTS/TFS Reporting Roadmap, read [VSTS/TFS Reporting Roadmap](./reporting-roadmap.md)
 
 <!---
 [!INCLUDE [temp](../_shared/analytics-preview.md)] 
