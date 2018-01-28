@@ -16,7 +16,7 @@ ms.date: 2/8/2018
 **VSTS / TFS **  
  
 ## TFS and SQL Server Reporting
-Since [Team Foundation Server (TFS)](https://www.visualstudio.com/tfs/) released in 2005, we've offered a reporting solution [based on a data warehouse and OLAP cube](../sql-reports/index.md), coupled with [an SSRS server](../sql-reports/create-and-manage-reporting-services-reports.md?toc=../sql-reports/toc.json&bc=../sql-reports/breadcrumb/toc.json) to host reports:
+Since [Team Foundation Server (TFS)](https://www.visualstudio.com/tfs/) was released in 2005, we've offered a reporting solution [based on a data warehouse and OLAP cube](../sql-reports/index.md), coupled with [an SSRS server](../sql-reports/create-and-manage-reporting-services-reports.md?toc=../sql-reports/toc.json&bc=../sql-reports/breadcrumb/toc.json) to host reports:
 
 <!-- ![](../sql-reports/_img/tfs_datawarearch_r.png) -->
 
@@ -32,10 +32,10 @@ Analytics is in Public Preview. It currently [contains partial data](./data-avai
 We have no plans to bring a cloud version of our SQL Server Reporting story to VSTS.
 
 
-## Support of TFS + SQL Server Reporting
-We currently support TFS + SQL Server Reporting through TFS 2018. 
+## Support of TFS & SQL Server Reporting
+We currently support TFS & SQL Server Reporting through TFS 2018. 
 
-We will continue support TFS + SQL Server Reporting until Analytics is brought to TFS and can fully replace its functionality. After that, we will likely support both SQL Servier Reporting and Analytics for one additional major TFS release. This allows customers time to convert their reports to Analytics.
+We will continue support SQL Server Reporting until Analytics is brought to TFS and can fully replace its functionality. After that, we will likely support both SQL Servier Reporting and Analytics for one additional major TFS release. This allows customers time to convert their reports to Analytics.
 
 ## Roadmap Timeline
 ### 2018 Q1
@@ -57,6 +57,3 @@ We will continue support TFS + SQL Server Reporting until Analytics is brought t
 ### 2019
 * Add all data to Analytics
 * Bring full version of Analytics to TFS
-
-
-
