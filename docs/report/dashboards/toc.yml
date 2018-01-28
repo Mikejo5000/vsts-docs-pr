@@ -4,6 +4,8 @@
   items:
   - name: "Dashboards & widgets"
     href: overview.md
+  - name: VSTS/TFS Reporting Roadmap
+    href: ../analytics/reporting-roadmap.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json
 - name: Quickstarts
   items:
   - name: "Add & manage dashboards"

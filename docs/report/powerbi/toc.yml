@@ -4,6 +4,8 @@
   items:
   - name: Power BI Integration overview
     href: overview.md
+  - name: VSTS/TFS Reporting Roadmap
+    href: ../analytics/reporting-roadmap.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
 - name: How-to Guides
   items:
   - name: Connect using Data Connector 

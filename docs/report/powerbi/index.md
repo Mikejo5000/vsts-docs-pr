@@ -15,6 +15,8 @@ ms.date: 11/15/2017
 
 Our Power BI integration makes getting the data into Power BI easy, so you can focus on creating amazing Power BI reports.
 
+To learn about VSTS/TFS Reporting Roadmap, read [VSTS/TFS Reporting Roadmap](./reporting-roadmap.md) 
+
 ## How-to Guides
 - [Connect using the VSTS Data Connector](data-connector-connect.md)
 - [Connect using VSTS OData feed](access-analytics-power-bi.md)    

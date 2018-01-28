@@ -6,6 +6,8 @@
     href: what-is-analytics.md
   - name: What are Analytics Views?
     href: what-are-analytics-views.md
+  - name: VSTS/TFS Reporting Roadmap
+    href: reporting-roadmap.md
 - name: Quickstarts
   items:
   - name: Add an Analytics widget to the dashboard

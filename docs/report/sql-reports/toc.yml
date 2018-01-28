@@ -4,6 +4,8 @@
   items:
   - name: Reporting Services Reports
     href: reporting-services-reports.md
+  - name: VSTS/TFS Reporting Roadmap
+    href: ../analytics/reporting-roadmap.md?toc=/vsts/report/sql-reports/toc.json&bc=/vsts/report/sql-reports/breadcrumb/toc.json
 - name: Quickstarts
   items:
   - name: Create Excel reports from a work item query
