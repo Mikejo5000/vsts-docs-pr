@@ -4,8 +4,6 @@
   items:
   - name: Reporting Services Reports
     href: reporting-services-reports.md
-  - name: VSTS/TFS Reporting Roadmap
-    href: ../analytics/reporting-roadmap.md?toc=/vsts/report/sql-reports/toc.json&bc=/vsts/report/sql-reports/breadcrumb/toc.json
 - name: Quickstarts
   items:
   - name: Create Excel reports from a work item query
@@ -152,6 +150,8 @@
     href: ../admin/resolve-schema-conflicts.md?toc=/vsts/report/sql-reports/toc.json&bc=/vsts/report/sql-reports/breadcrumb/toc.json
 - name: Resources
   items:
+  - name: VSTS/TFS Reporting Roadmap
+    href: ../analytics/reporting-roadmap.md
   - name: SharePoint Integration
     href: ../sharepoint-dashboards/index.md
   - name: Server Administration (TFS)
