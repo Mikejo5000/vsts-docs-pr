@@ -34,7 +34,7 @@ For more information on creating custom Analytics Views, read [Create & manage A
 
 ## Using Analytics Views makes Power BI reporting easier
 Each view loads a set of data into Power BI. The data model built in Power BI is modeled to make it easy to get started with Power BI reports.
-The data model has the following characteristics
+The data model has the following characteristics:
 * The data is flattened (denormalized) into a single table. For example, the user name is modeled as a string (User Name), rather than the user ID. This eliminates the need to join between tables to create reports.
 * Historical data is modeled as snapshots for each time period, so trending reporting is extremely simple.
 

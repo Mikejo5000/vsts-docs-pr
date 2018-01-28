@@ -14,7 +14,7 @@ ms.date: 2/8/2018
 
 **VSTS**
 
-> The VSTS Power BI Data connector works with Analytics Views. For more information on Analytics Views, read [What are Analytics Views](../analytics/what-are-analytics-views.md)
+> The VSTS Power BI Data connector works with Analytics Views. For more information on Analytics Views, read [What are Analytics Views](../analytics/what-are-analytics-views.md).
 
 Follow the steps below to get started using the VSTS Power BI Data Connector:
 
