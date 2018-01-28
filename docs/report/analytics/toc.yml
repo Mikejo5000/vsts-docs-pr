@@ -5,7 +5,7 @@
   - name: What is Analytics?
     href: what-is-analytics.md
   - name: What are Analytics Views?
-    href: what-is-analytics.md
+    href: what-are-analytics-views.md
 - name: Quickstarts
   items:
   - name: Add an Analytics widget to the dashboard
