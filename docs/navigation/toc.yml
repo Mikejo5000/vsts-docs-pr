@@ -17,6 +17,6 @@
     href: go-to-team-project.md 
   - name: Switch teams (Dashboards, Work)
     href: ../settings/switch-team-context.md?toc=/vsts/navigation/toc.json&bc=/vsts/navigatio/breadcrumb/toc.json   
-  - name: Define project or account settings  
-    href: configure-project-account-settings.md  
+  - name: "Project & Account Settings"  
+    href: ../settings/index.md  
 
