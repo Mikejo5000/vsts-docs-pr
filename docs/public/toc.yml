@@ -48,6 +48,10 @@
     href: ../git/index.md
   - name: Work items
     href: ../work/work-items/index.md 
+  - name: Search   
+    href: ../search/index.md  
+  - name: Notifications 
+    href: ../notifications/index.md  
   - name: VSTS data protection overview
     href: ../articles/team-services-security-whitepaper.md 
 

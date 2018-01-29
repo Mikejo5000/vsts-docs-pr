@@ -42,7 +42,3 @@ ms.date: 02-24-2018
 ## Resources 
 
 - [Project & Account Settings](../settings/index.md) 
-
-
-> [!div class="mx-imgBorder"]
-![Vertical apps navigation experience ](_img/vertical-app-navigation.gif)

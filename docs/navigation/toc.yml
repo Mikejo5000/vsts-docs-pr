@@ -17,6 +17,11 @@
     href: go-to-team-project.md 
   - name: Switch teams (Dashboards, Work)
     href: ../settings/switch-team-context.md?toc=/vsts/navigation/toc.json&bc=/vsts/navigatio/breadcrumb/toc.json   
+- name: Resources
+  items:
   - name: "Project & Account Settings"  
     href: ../settings/index.md  
-
+  - name: Search   
+    href: ../search/index.md  
+  - name: Notifications 
+    href: ../notifications/index.md  
