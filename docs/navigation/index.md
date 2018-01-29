@@ -19,7 +19,7 @@ ms.date: 02-24-2018
 <tbody valign="top">
 <tr>
 <td>
-![Vertical apps navigation experience ](_img/vertical-app-navigation.gif)
+<img src="_img/vertical-app-navigation.gif" alt="Vertical apps navigation experience" style="border: 1px solid #C3C3C3;" /> 
 </td>
 <td>
 <ul>
