@@ -123,11 +123,11 @@
   - name: Client APIs
     items:
     - name: Core SDK
-    - href: refrence/client/code-sdk.md
+      href: refrence/client/code-sdk.md
     - name: Client services
-    - href: refrence/client/client-services.md
+      href: refrence/client/client-services.md
     - name: Calling RESDT APIs
-    - href: refrence/client/rest-clients.md
+      href: refrence/client/rest-clients.md
   - name: UI controls
     items:
     - name: Combo
