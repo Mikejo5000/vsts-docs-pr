@@ -186,6 +186,8 @@ If your source is in any other type of remote repository, then you cannot use VS
 
 [//]: # (::: moniker-end)
 
+[//]: # (::: moniker range=">= tfs-2015")
+
 ### Checkout submodules
 
 Select if you want to download files from [submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules).
@@ -201,15 +203,16 @@ The build process will check out your Git submodules so long as they are:
 
  - Added by using a relative url from main repository. For example this one would be checked out: ```git submodule add /../../submodule.git mymodule``` This one would not be checked out: ```git submodule add https://fabrikamfiber.visualstudio.com/DefaultCollection/_git/ConsoleApp mymodule```
 
- [//]: # (TODO follow up on warning "Invalid moniker zone parameter: -end")
- [//]: # (moniker range="<= tfs-2017")
+[//]: # (::: moniker-end)
 
- [//]: # (::: moniker range="<= tfs-2017")
+[//]: # (::: moniker range=">= tfs-2015 <= tfs-2017")
 
- > [!NOTE]
-> If you're running **TFS 2017.1 or older**, then the submodules must be children (immediate submodules)** of the Git repo you've selected for this build process. In effect, the build process runs ```git submodule update --init``` (not ```git submodule update -init --recursive```).
+> [!NOTE]
+> If you're running **TFS 2017.1, TFS 2017 RTM, or TFS 2015**, then the submodules must be children (immediate submodules)** of the Git repo you've selected for this build process. In effect, the build process runs ```git submodule update --init``` (not ```git submodule update -init --recursive```).
 
 [//]: # (::: moniker-end)
+
+[//]: # (::: moniker range=">= tfs-2015")
 
 #### Authenticated submodules
 
@@ -243,11 +246,15 @@ Use a secret variable in your project or build definition to store the personal 
 > [!NOTE]
 > **Q: Why can't I use a Git credential manager on the agent?** **A:** Storing the submodule credentials in a git credential manager installed on your private build agent is usually not effective as the credential manager may prompt you to re-enter the credentials whenever the submodule is updated. This is not desirable in automated builds.
 
+[//]: # (::: moniker-end)
+
+[//]: # (::: moniker range=">= tfs-2015")
+
 ### Checkout files from LFS
 
 Select if you want to download files from [large file storage (LFS)](../../../../git/manage-large-files.md).
 
-[//]: # (TODO: bug - the following moniker displays in the rendered content)
+[//]: # (::: moniker-end)
 
 [//]: # (::: moniker range=">= tfs-2017")
 
@@ -261,10 +268,15 @@ Select if you want to download files from [large file storage (LFS)](../../../..
 
 [//]: # (::: moniker-end)
 
-[//]: # (TODO: add moniker after transition)
+[//]: # (::: moniker range=">= tfs-2015")
+
 If you're using TFS, or if you're using VSTS with a private agent, then you must install git-lfs on the agent to make this option work.
 
-### Don't sync sources
+[//]: # (::: moniker-end)
+
+[//]: # (::: moniker range=">= tfs-2017")
+
+### Don't sync sources (TFS 2017 and newer only)
 
 Use this option if you want to skip fetching new commits. This option can be useful in cases such as when you want to:
 
@@ -274,34 +286,22 @@ Use this option if you want to skip fetching new commits. This option can be use
 
 If you want to disable downloading sources:
 
-[//]: # (::: moniker range=">= tfs-2017")
-
 * **VSTS, TFS 2017.2, and newer:** Click **Advanced settings**, and then select **Don't sync sources**.
-
-[//]: # (::: moniker-end)
-
-[//]: # (::: moniker range="tfs-2017")
 
 * **TFS 2017 RTM:** Define `Build.SyncSources` on the **Variables** and set its value to false.
 
-[//]: # (::: moniker-end)
-
-[//]: # (::: moniker range="tfs-2015")
-
-* **TFS 2015:** This feature is not available.
-
-[//]: # (::: moniker-end)
-
 > [!NOTE]
 > When you use this option, the agent also skips running git commands that clean the repo.
+
+[//]: # (::: moniker-end)
+
+[//]: # (::: moniker range=">= tfs-2015")
 
 ### Shallow fetch
 
 Select if you want to limit how far back in history to download. Effectively this results in `git fetch --depth=n`. If your repository is large, this option might make your build process more efficient. Your repository might be large if it has been in use for a long time. It also might be large if you added and later deleted large files.
 
 In these cases this option can help you conserve network and storage resources. It might also save time. The reason it doesn't always save time is because in some situations the server might need to spend time calculating the commits to download.
-
-[//]: # (::: moniker range=">= tfs-2017")
 
 #### VSTS, TFS 2018, TFS 2017.2
 
@@ -311,7 +311,7 @@ After you select the check box to enable this option, in the **Depth** box speci
 
 [//]: # (::: moniker-end)
 
-[//]: # (::: moniker range="<= tfs-2017")
+[//]: # (::: moniker range=">= tfs-2015 <= tfs-2017")
 
 #### TFS 2017 RTM, TFS 2015 (macOS and Linux only)
 
