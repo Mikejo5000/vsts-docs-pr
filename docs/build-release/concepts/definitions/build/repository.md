@@ -396,7 +396,7 @@ If you want to clean the repo, then select **true**, and then select one of the 
 
 [//]: # (::: moniker-end)
 
-[//]: # (::: moniker range=">= tfs-2015 <= tfs2017")
+[//]: # (::: moniker range=">= tfs-2015 <= tfs-2017")
 
 #### TFS 2017 RTM, TFS 2015.4
 
