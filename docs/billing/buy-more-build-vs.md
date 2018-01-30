@@ -6,7 +6,7 @@ ms.technology: vs-devops-setup
 ms.assetid: 3f42a1b2-1a32-440a-bf43-61006c59c5bf
 ms.manager: douge
 ms.author: chcomley
-ms.date: 1/24/2018
+ms.date: 1/25/2018
 ---
 
 #  How to buy VSTS CI/CD
@@ -25,12 +25,13 @@ Typically you'll choose this option when:
 * there is custom software that runs in your build process which is not included on the virtual machines managed 
 by Microsoft for the Hosted Pipeline option above, or
 * you already have a TFS build server running, and aren't ready to move your build definitions to VSTS
+
 You can run one concurrent pipeline for free, and if you need more capacity you can 
 [pay for more CI/CD concurrency: Private Pipelines](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines).
 
 
 <a name="buy-build-release"></a>
-## Before you start
+## Prerequisites
 
 *	To manage purchases, you'll need VSTS 
 [project collection administrator or account owner permissions](faq-pay-for-basic-users.md#FindOwnerPCA).
