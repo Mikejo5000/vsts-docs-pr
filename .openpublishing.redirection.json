@@ -4780,6 +4780,11 @@
         "source_path": "docs/billing/billing-concepts.md",
         "redirect_url": "/vsts/billing/overview",
         "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/billing/link-msdn-subscription-to-organizational-account-vs.md",
+        "redirect_url": "/vsts/billing/faq-link-msdn-subscription-org-account",
+        "redirect_document_id": false
        }
     ]
 }
