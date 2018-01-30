@@ -14,7 +14,9 @@ ms.date: 02-24-2018
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-# [Horizontal navigation](#tab/horizontal)
+# [Vertical navigation](#tab/vertical)
+
+CodeX uses vertical navigation to select applications&mdash;such as **CodeBox**, **CodeLaunch**, and **CodePlan**&mdash;and pages within those apps. With VSTS, you can choose between vertical and horizontal navigation by selecting the option through [Preview Features](enable-preview-feature.md).
 
 <table>
 <tbody valign="top">
@@ -26,7 +28,7 @@ ms.date: 02-24-2018
 <ul>
 <li>[Add an artifact or team](create-new-artifact-team.md)</li>
 <li>[Favorites](work-with-favorites.md)</li>
-<li>[Go to a different app, hub, page]( go-to-app-hub-page.md)</li>
+<li>[Go to a different app, hub, page](go-to-app-hub-page.md)</li>
 <li>[Filter basics](filter-basics.md)</li>
 <li>[Search across your code base or work items](search-basics.md)</li>
 <li>[Enable a preview feature](enable-preview-feature.md)</li>
@@ -39,7 +41,9 @@ ms.date: 02-24-2018
 </tbody>
 </table>
 
-# [Vertical navigation](#tab/vertical)
+# [Horizontal navigation](#tab/horizontal)
+
+TFS uses hortizontal navigation to select an application hub&mdash;such as **Code**, **Work**, and **Build and Release**&mdash;and pages within those apps. With VSTS, you can choose between vertical and horizontal navigation by selecting the option through [Preview Features](enable-preview-feature.md).
 
 <table>
 <tbody valign="top">
@@ -49,9 +53,9 @@ ms.date: 02-24-2018
 </td>
 <td>
 <ul>
-<li>[Add an artifact or team](create-new-artifact-team.md).</li>
+<li>[Add an artifact or team](create-new-artifact-team.md)</li>
 <li>[Work with Favorites](work-with-favorites.md)</li>
-<li>[Go to a different app, hub, page](go-to-app-hub-page.md)</li>  
+<li>[Go to a different app, hub, page](go-to-app-hub-page.md)</li>
 <li>[Filter basics](filter-basics.md)</li>
 <li>[Search across your code base or work items](search-basics.md)</li>
 <li>[Enable a preview feature ](enable-preview-feature.md)</li>
