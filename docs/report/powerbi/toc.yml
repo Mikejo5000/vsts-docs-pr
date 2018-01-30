@@ -24,10 +24,14 @@
     href: data-connector-examples.md
 - name: References
   items:
+  - name: Default Analytics Views
+    href: ../analytics/analytics-default-views.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
   - name: Data available in the VSTS Data Connector
-    href: data-connector-available-data.md
+    href: data-connector-available-data.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
 - name: Resources
   items:
+  - name: VSTS/TFS Reporting Roadmap
+    href: ../analytics/reporting-roadmap.md
   - name: "Analytics (VSTS)"
     href: ../analytics/index.md
   - name: Extend Analytics with OData
