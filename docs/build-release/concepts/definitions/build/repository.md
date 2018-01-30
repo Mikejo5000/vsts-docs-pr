@@ -13,11 +13,18 @@ ms.date: 11/05/2017
 
 **VSTS | TFS 2018 | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/hh190721%28v=vs.120%29.aspx)**
 
-At the beginning of the build process, the agent downloads files from your remote repository into a local sources directory. 
+[//]: # (::: moniker range=">= tfs-2017")
+
+At the beginning of the build process, the agent downloads files from your remote repository into a local sources directory.
+
+[//]: # (::: moniker-end)
 
 [//]: # (TODO: confirm 2018 was version of multiple phases)
+
 [//]: # (::: moniker range=">= tfs-2018")
+
 If your build consists of multiple jobs (for example, because of multiple phases), the agent downloads the files at the beginning of each job. You can specify only a single source repository for your entire build process. 
+
 [//]: # (::: moniker-end)
 
 [//]: # (::: moniker range=">= tfs-2018")
@@ -84,19 +91,31 @@ When you select a Git repo (in a team project, GitHub, Bitbucket, or Remote Git 
 
 [//]: # (::: moniker-end)
 
+[//]: # (::: moniker range=">= tfs-2015")
+
 ### Branch
-
-[//]: # (::: moniker range="<= tfs-2017")
-
-**TFS 2017 RTM** and older: This field is called **Default branch**.
 
 [//]: # (::: moniker-end)
 
+[//]: # (::: moniker range=">= tfs-2015 <= tfs-2017")
+
+**TFS 2017 RTM and TFS 2015**: This field is called **Default branch**.
+
+[//]: # (::: moniker-end)
+
+[//]: # (::: moniker range=">= tfs-2015")
+
 This is the branch that you want to be the default when you manually queue this build. If you set a scheduled trigger for the build, this is the branch from which your build will get the latest sources. The default branch has no bearing when the build is triggered through continuous integration (CI). Usually you'll set this to be the same as the default branch of the repository (for example, "master").
+
+[//]: # (::: moniker-end)
+
+[//]: # (::: moniker range=">= tfs-2015")
 
 ### Clean the local repo on the agent
 
 [!INCLUDE [include](_shared/build-clean-intro.md)]
+
+[//]: # (::: moniker-end)
 
 [//]: # (::: moniker range=">= tfs-2017")
 
@@ -146,6 +165,8 @@ Select **true** to delete the repository folder.
 
 [//]: # (::: moniker-end)
 
+[//]: # (::: moniker range=">= tfs-2015")
+
 [!INCLUDE [include](_shared/label-sources.md)]
 
 The build process labels your sources with a [Git tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging).
@@ -154,7 +175,10 @@ Some build variables might yield a value that is not a valid label. For example 
 
 After the sources are tagged by your build process, an artifact with the git ref `refs/tags/{tag}` is automatically added to the completed build. This gives your team additional traceability and a more user-friendly way to navigate from the build to the code that was built.
 
+[//]: # (::: moniker-end)
+
 [//]: # (TODO: confirm I got this next section right; e.g. GitHub not in TFS 2018 Update 1)
+
 [//]: # (::: moniker range=">= tfs-2017")
 
 ### Report build status (VSTS, TFS 2017 and newer)
@@ -319,6 +343,8 @@ On the **Variables** tab, define `Agent.Source.Git.ShallowFetchDepth` and set it
 
 [//]: # (::: moniker-end)
 
+[//]: # (::: moniker range=">= tfs-2015")
+
 ## TFVC options
 
 | Feature | VSTS, TFS 2018, TFS 2017, TFS 2015.4 | TFS 2015 RTM |
@@ -352,6 +378,10 @@ For more information on how to optimize a TFVC workspace, see [Optimize your wor
 
 [!INCLUDE [include](_shared/build-clean-intro.md)]
 
+[//]: # (::: moniker-end)
+
+[//]: # (::: moniker range=">= tfs-2017")
+
 #### VSTS, TFS 2018, TFS 2017.2
 
 If you want to clean the repo, then select **true**, and then select one of the following options:
@@ -364,11 +394,19 @@ If you want to clean the repo, then select **true**, and then select one of the 
 
 * **All build directories**: Deletes and recreates `$(Agent.BuildDirectory)`.
 
+[//]: # (::: moniker-end)
+
+[//]: # (::: moniker range=">= tfs-2015 <= tfs2017")
+
 #### TFS 2017 RTM, TFS 2015.4
 
 If you select **True** then the build process performs an undo of any changes and scorches the workspace.
 
 [!INCLUDE [temp](_shared/build-clean-variable.md)]
+
+[//]: # (::: moniker-end)
+
+[//]: # (::: moniker range="tfs-2015")
 
 #### TFS 2015 RTM
 
@@ -379,6 +417,10 @@ Select **true** to delete the repository folder.
 [!INCLUDE [include](_shared/label-sources.md)]
 
 The build process labels your sources with a [TFVC label](../../../../tfvc/use-labels-take-snapshot-your-files.md).
+
+[//]: # (::: moniker-end)
+
+[//]: # (::: moniker range=">= tfs-2015")
 
 ## Q&A  
 
@@ -402,6 +444,8 @@ Scorch is a TFVC power tool. See [Microsoft Visual Studio Team Foundation Server
 [!INCLUDE [temp](../../../_shared/qa-agents.md)]
 
 [!INCLUDE [temp](../../../_shared/qa-versions.md)]
+
+[//]: # (::: moniker-end)
 
 [//]: # (::: moniker range="tfs-2013")
 
