@@ -1,6 +1,6 @@
 # Git at Scale - Git Virtual File System Architecture
 
-In previous articles, we have disccused the challenges of working in a 
+In previous articles, we have discussed the challenges of working in a 
 [Git repo with millions of files](https://www.visualstudio.com/learn/technical-scale-challenges/#too-many-files)
 and some of 
 [our previous attempts](https://www.visualstudio.com/learn/gvfs-design-history) 
