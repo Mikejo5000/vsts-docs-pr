@@ -9,6 +9,7 @@ ms.author: alewis
 ms.date: 12/20/2017
 ms.topic: get-started-article
 ---
+[//]: # (monikerRange: '>= tfs-2017')
 
 # Build your ASP.NET Core app
 
@@ -50,7 +51,17 @@ Where do you want to keep your code? Whichever service you choose, our system ca
 
 # [GitHub repo](#tab/github)
 
+[//]: # (::: moniker range="vsts")
+
 [!INCLUDE [include](../_shared/get-sample-code-github.md)]
+
+[//]: # (::: moniker-end)
+
+[//]: # (::: moniker range="< vsts")
+
+**TFS**: Does not apply.
+
+[//]: # (::: moniker-end)
 
 ---
 
@@ -64,13 +75,13 @@ Do you want to define your build process in your web browser or configure it as 
 
 # [Web](#tab/web)
 
-**VSTS | TFS**
-
 Choose this option if you prefer a graphical interface in your web browser.
 
 ![PowerShell script task says "Hello World"](../../_shared/_img/powershell-script-hello-world.png)
 
 # [YAML](#tab/yaml)
+
+[//]: # (::: moniker range="vsts")
 
 **VSTS**
 
@@ -84,6 +95,14 @@ steps:
 This choice also offers parallel processing (fan out and fan in), and the ability to test and debug the process locally.
 
 [Learn more about YAML builds](../../actions/build-yaml.md).
+
+[//]: # (::: moniker-end)
+
+[//]: # (::: moniker range="< vsts")
+
+**TFS**: Does not apply.
+
+[//]: # (::: moniker-end)
 
 ---
 
@@ -109,6 +128,8 @@ Begin by creating your build definition.
 
 # [VSTS or TFS repo](#tab/gitvsts/yaml)
 
+[//]: # (::: moniker range="vsts")
+
 To create a definition that is configured as code, you'll modify a YAML file in the repo root that has a well-known name: **.vsts-ci.yml**. The first time you change this file, VSTS automatically uses it to create your build definition.
 
 1. Navigate to the **Code** hub, choose the **Files** tab, and then choose the repository you created in the above steps.
@@ -117,7 +138,17 @@ To create a definition that is configured as code, you'll modify a YAML file in 
 
 1. Replace the contents of the file with code from the next section.
 
+[//]: # (::: moniker-end)
+
+[//]: # (::: moniker range="< vsts")
+
+**TFS**: Does not apply.
+
+[//]: # (::: moniker-end)
+
 # [GitHub repo](#tab/github/web)
+
+[//]: # (::: moniker range="vsts")
 
 In VSTS:
 
@@ -127,13 +158,31 @@ In VSTS:
 
  ![Screenshot showing dotnet core template](_shared/_img/apply-aspnet-core-build-template.png)
 
+[//]: # (::: moniker-end)
+
+[//]: # (::: moniker range="< vsts")
+
+**TFS**: Does not apply.
+
+[//]: # (::: moniker-end)
+
 # [GitHub repo](#tab/github/yaml)
+
+[//]: # (::: moniker range="vsts")
 
 To create a definition that is configured as code, you'll modify a YAML file in the repo root that has a well-known name: **.vsts-ci.yml**. You'll then create a build definition that points to the YAML file.
 
 In GitHub:
 
 1. Edit the **.vsts-ci.yml** file in the root of your repo, and replace the contents of the file with code from the next section.
+
+[//]: # (::: moniker-end)
+
+[//]: # (::: moniker range="< vsts")
+
+**TFS**: Does not apply.
+
+[//]: # (::: moniker-end)
 
 ---
 
