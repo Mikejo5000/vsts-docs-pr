@@ -1,4 +1,4 @@
-- name: CodePlan Work Items
+- name: CodePlan Backlogs
   href: index.md
 - name: Overview
   items:
@@ -59,7 +59,7 @@
       - name: Project inception
         href: ../work-items/guidance/cmmi/guidance-project-inception.md?toc=/vsts/work/codeplan-items/toc.json&bc=/vsts/work/codeplan-items/breadcrumb/toc.json  
       - name: Plan a project
-        href: guidance/cmmi/guidance-plan-a-project-cmmi.md?toc=/vsts/work/codeplan-items/toc.json&bc=/vsts/work/codeplan-items/breadcrumb/toc.json 
+        href: ../work-items/guidance/cmmi/guidance-plan-a-project-cmmi.md?toc=/vsts/work/codeplan-items/toc.json&bc=/vsts/work/codeplan-items/breadcrumb/toc.json 
       - name: Manage change
         href: ../work-items/guidance/cmmi/guidance-manage-change.md?toc=/vsts/work/codeplan-items/toc.json&bc=/vsts/work/codeplan-items/breadcrumb/toc.json 
       - name: Manage risk
@@ -124,7 +124,7 @@
 - name: Reference
   items:
   - name: Work item form controls 
-    href: ../work-items/work-item-form-controls.m?toc=/vsts/work/codeplan-items/toc.json&bc=/vsts/work/codeplan-items/breadcrumb/toc.json 
+    href: ../work-items/work-item-form-controls.md?toc=/vsts/work/codeplan-items/toc.json&bc=/vsts/work/codeplan-items/breadcrumb/toc.json 
   - name: "Keyboard shortcuts for work item forms & the Work Items page" 
     href: ../work-items/work-item-form-keyboard-shortcuts.md?toc=/vsts/work/codeplan-items/toc.json&bc=/vsts/work/codeplan-items/breadcrumb/toc.json  
   - name: Query by title, ID, or description

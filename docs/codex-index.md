@@ -200,7 +200,7 @@ featureFlags:
                         <ul id="all" class="cardText">
                             <li>
                                 <div class="group">
-                                    <h3>Code</h3>
+                                    <h3>CodeBox</h3>
                                     <ul>
                                         <li><a class="barLink" href="/vsts/git/index">Git Repositories</a></li>
                                         <li><a class="barLink" href="/vsts/git/tutorial/pullrequest">Pull Requests</a></li>
@@ -208,7 +208,7 @@ featureFlags:
                                         <li><a class="barLink" href="/vsts/git/branch-policies">Branch Policies</a></li>
                                         <li><a class="barLink" href="/vsts/tfvc/index">TFVC</a></li>
                                     </ul>
-                                    <h3>Continuous Integration &amp; Delivery</h3>
+                                    <h3>CodeLaunch</h3>
                                     <ul>
                                         <li><a class="barLink" href="/vsts/build-release/index">Build &amp; Release</a></li>
                                         <li><a class="barLink" href="/vsts/build-release/test/index">Continuous Testing</a></li>
@@ -218,7 +218,7 @@ featureFlags:
                                         <li><a class="barLink" href="/vsts/build-release/concepts/agents/agents">Hosted and Private Agents</a></li>
                                         <li><a class="barLink" href="/vsts/build-release/tasks">Task Reference</a></li>
                                     </ul>
-                                    <h3>Testing</h3>
+                                    <h3>CodeTest</h3>
                                     <ul>
                                         <li><a class="barLink" href="/visualstudio/test/unit-test-your-code">Unit and Functional Testing</a></li>
                                         <li><a class="barLink" href="/vsts/manual-test/index">Exploratory &amp; Manual Testing</a></li>
@@ -239,15 +239,15 @@ featureFlags:
                                         <li><a class="barLink" href="/vsts/work/customize/process/customize-process">Process Customization</a></li>
                                         <li><a class="barLink" href="/vsts/work/scale/index">Agile at Scale</a></li>
                                     </ul>
-                                    <h3>Reporting</h3>
+                                    <h3>Dashboards</h3>
                                     <ul>
                                         <li><a class="barLink" href="/vsts/report/dashboards/index">Dashboards</a></li>
                                         <li><a class="barLink" href="/vsts/report/analytics/index">Analytics (VSTS)</a></li>
                                         <li><a class="barLink" href="/vsts/report/powerbi/index">Power BI (VSTS)</a></li>
-                                        <li><a class="barLink" href="/vsts/report/sql-reports/">SQL Server Reporting (TFS)</a></li>
                                     </ul>
                                     <h3>Collaboration</h3>
                                     <ul>
+                                        <li><a class="barLink" href="/vsts/public/index">Public Projects</a></li>
                                         <li><a class="barLink" href="/vsts/notifications/index">Notifications</a></li>
                                         <li><a class="barLink" href="/vsts/collaborate/index">READMEs &amp; Wikis</a></li>
                                         <li><a class="barLink" href="/vsts/search/index">Search</a></li>
@@ -259,14 +259,12 @@ featureFlags:
                                 <div class="group">
                                     <h3>Admin</h3>
                                     <ul>
+                                        <li><a class="barLink" href="/vsts/settings/index">Project & Account Settings</a></li>
                                         <li><a class="barLink" href="/vsts/accounts/index">Account Management</a></li>
-                                        <li><a class="barLink" href="/vsts/tfs-server/index">Server Administration (TFS)</a></li>
                                         <li><a class="barLink" href="/vsts/security/index">Security and Identity</a></li>
                                         <li><a class="barLink" href="/vsts/billing/index">Billing</a></li>
                                         <li><a class="barLink" href="/vsts/settings/index">Scale and Configure Teams</a></li>
                                         <li><a class="barLink" href="/vsts/marketplace/index">Manage Extensions</a></li>
-                                        <li><a class="barLink" href="/vsts/report/sharepoint-dashboards/">SharePoint Integration</a></li>
-                                        <li><a class="barLink" href="/vsts/work/tfs-ps-sync/">Project Server Integration</a></li>
                                     </ul>
                                     <h3>Extend</h3>
                                     <ul>
@@ -286,7 +284,7 @@ featureFlags:
                         </ul>
                     </li>
                     <li>
-                        <a href="#code">Code</a>
+                        <a href="#code">CodeBox</a>
                         <ul id="code" class="cardsA">
                             <li>
                                 <a href="/vsts/git">
@@ -364,29 +362,10 @@ featureFlags:
                                     </div>
                                 </a>
                             </li>
-                            <li>
-                                <a href="/vsts/tfvc">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="_img/index/logo_vs-team-services.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>TFVC</h3>
-                                                    <p>Manage code with centralized, conventional version control.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
                         </ul>
                     </li>
                     <li>
-                        <a href="#delivery">Continuous Integration &amp; Delivery</a>
+                        <a href="#delivery">CodeLaunch</a>
                         <ul id="delivery" class="cardsA">
                             <li>
                                 <a href="/vsts/build-release/index">
@@ -526,7 +505,7 @@ featureFlags:
                         </ul>
                     </li>
                     <li>
-                        <a href="#testing">Testing</a>
+                        <a href="#testing">CodeTest</a>
                         <ul id="testing" class="cardsA">
                             <li>
                                 <a href="/visualstudio/test/unit-test-your-code">

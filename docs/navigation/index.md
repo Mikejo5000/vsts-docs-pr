@@ -16,8 +16,12 @@ ms.date: 02-24-2018
 
 # [Vertical navigation](#tab/vertical)
 
-CodeX uses vertical navigation to select applications&mdash;such as **CodeBox**, **CodeLaunch**, and **CodePlan**&mdash;and pages within those apps. With VSTS, you can choose between vertical and horizontal navigation by selecting the option through [Preview Features](enable-preview-feature.md).
+**CodeX** uses vertical navigation to select applications&mdash;such as **CodeBox**, **CodeLaunch**, and **CodePlan**&mdash;and pages within those apps. With VSTS, you can choose between vertical and horizontal navigation by selecting the option through [Preview Features](enable-preview-feature.md).
 
+
+<img src="_img/vertical-app-715-navigation.gif" alt="Vertical apps navigation experience" style="border: 1px solid #C3C3C3;" /> 
+
+<!---
 <table>
 <tbody valign="top">
 <tr>
@@ -41,10 +45,16 @@ CodeX uses vertical navigation to select applications&mdash;such as **CodeBox**,
 </tbody>
 </table>
 
+-->
+
 # [Horizontal navigation](#tab/horizontal)
 
-TFS uses hortizontal navigation to select an application hub&mdash;such as **Code**, **Work**, and **Build and Release**&mdash;and pages within those apps. With VSTS, you can choose between vertical and horizontal navigation by selecting the option through [Preview Features](enable-preview-feature.md).
+**VSTS** and **TFS** uses hortizontal navigation to select an application hub&mdash;such as **Code**, **Work**, and **Build and Release**&mdash;and pages within those apps. With VSTS, you can choose between vertical and horizontal navigation by selecting the option through [Preview Features](enable-preview-feature.md).
 
+
+<img src="_img/horizontal-app-navigation.gif" alt="Horizontal navigation experience" style="border: 1px solid #C3C3C3;" /> 
+
+<!---
 <table>
 <tbody valign="top">
 <tr>
@@ -67,6 +77,7 @@ TFS uses hortizontal navigation to select an application hub&mdash;such as **Cod
 </tbody>
 </table>
  
+-->
 
 ---
 
