@@ -12,9 +12,6 @@ ms.date: 02/24/2018
 
 # CodePlan Work Items
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]   
-
-
 Track the features and requirements you're developing, code defects or bugs, and other particulars using work items. 
 
 <!---
@@ -69,7 +66,7 @@ Track the features and requirements you're developing, code defects or bugs, and
 - [Scrum](../codeplan-scrum/index.md)
 - [Backlogs](../codeplan-backlogs/index.md)
 - [Queries](../codeplan-queries/index.md)
-- [Customization](../customize/process/customize-process.md)
+- [Customization](../customize/process/customize-process.md?toc=/vsts/settings/toc.json&bc=/vsts/work/settings/breadcrumb/toc.json)
 
 
 
