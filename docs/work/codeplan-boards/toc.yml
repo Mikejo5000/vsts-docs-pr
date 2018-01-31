@@ -1,5 +1,5 @@
 - name: CodePlan Boards 
-  href: index.md
+  href: index.md?toc=/vsts/work/codeplan-boards/toc.json&bc=/vsts/work/codeplan-boards/breadcrumb/toc.json
 - name: Overview
   items:
   - name: About Kanban and project management

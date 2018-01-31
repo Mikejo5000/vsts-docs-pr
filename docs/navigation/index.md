@@ -10,9 +10,7 @@ ms.author: kaelli
 ms.date: 02-24-2018
 ---
 
-# Navigation basics
-
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+# Navigation basics 
 
 # [Vertical navigation](#tab/vertical)
 

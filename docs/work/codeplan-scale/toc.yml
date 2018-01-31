@@ -1,5 +1,5 @@
 - name: CodePlan Scale
-  href: index.md
+  href: index.md?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json
 - name: Overview
   items:
   - name: "About teams & CodePlan tools"

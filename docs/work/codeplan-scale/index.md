@@ -1,7 +1,7 @@
 ---
-title: Index to topics for work item tracking
+title: Index to topics for working with multiple teams
 titleSuffix: CodeX, CodePlan
-description: Index to topics for planning and tracking work 
+description: Index to topics for planning and tracking work across an enterprise using multiple teams
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid:  
@@ -10,66 +10,50 @@ ms.author: kaelli
 ms.date: 02/24/2018
 ---
 
-# CodePlan Work Items
+# CodePlan Scale 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]   
+Manage portfolios and gain visibility across teams. For guidance on adding teams, see [Scale & Configure teams](../work/scale/multiple-teams.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json).
 
+## Quickstarts
 
-Track the features and requirements you're developing, code defects or bugs, and other particulars using work items. 
+- [Add and manage dashboards](../../report/dashboards/dashboards.md?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json)
 
-<!---
-## Overview  
-[About work items](../work-items/about-work-items.md?toc=/vsts/work/codeplan-items/toc.json&bc=/vsts/work/codeplan-items/breadcrumb/toc.json) 
--->
-
-## 5-Minute Quickstarts  
- 
-- [View and add work items](../work-items/view-add-work-items.md?toc=/vsts/work/codeplan-items/toc.json&bc=/vsts/work/codeplan-items/breadcrumb/toc.json)  
-- [Add work items](../backlogs/add-work-items.md?toc=/vsts/work/codeplan-items/toc.json&bc=/vsts/work/codeplan-items/breadcrumb/toc.json)
-- [Drive Git development](../backlogs/connect-work-items-to-git-dev-ops.md?toc=/vsts/work/codeplan-items/toc.json&bc=/vsts/work/codeplan-items/breadcrumb/toc.json) 
 
 ## Step-by-Step Tutorials
 
-- [Manage bugs](../backlogs/manage-bugs.md?toc=/vsts/work/codeplan-items/toc.json&bc=/vsts/work/codeplan-items/breadcrumb/toc.json)
-- [Manage issues](../backlogs/manage-issues-impediments.md?toc=/vsts/work/codeplan-items/toc.json&bc=/vsts/work/codeplan-items/breadcrumb/toc.json)
-- [Move, change, or delete items](../backlogs/remove-delete-work-items.md?toc=/vsts/work/codeplan-items/toc.json&bc=/vsts/work/codeplan-items/breadcrumb/toc.json)
-- [Copy/clone work items](../backlogs/copy-clone-work-items.md?toc=/vsts/work/codeplan-items/toc.json&bc=/vsts/work/codeplan-items/breadcrumb/toc.json)
-- [Link work items](../backlogs/add-link.md?toc=/vsts/work/codeplan-items/toc.json&bc=/vsts/work/codeplan-items/breadcrumb/toc.json)
-- [Bulk modify (web)](../backlogs/bulk-modify-work-items.md?toc=/vsts/work/codeplan-items/toc.json&bc=/vsts/work/codeplan-items/breadcrumb/toc.json)
-- [Follow work](../../collaborate/follow-work-items.md?toc=/vsts/work/codeplan-items/toc.json&bc=/vsts/work/codeplan-items/breadcrumb/toc.json)
-
+- [Manage portfolios](../scale/portfolio-management.md?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json)
+- [Review delivery plans](../scale/review-team-plans.md?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json) 
+- [Set team favorites](../../collaborate/set-favorites.md?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json)  
 
 ## Concepts 
-
-- [Choose a process](../work-items/guidance/choose-process.md?toc=/vsts/work/codeplan-items/toc.json&bc=/vsts/work/codeplan-items/breadcrumb/toc.json)  
-- [Agile process guidance](../work-items/guidance/agile-process.md?toc=/vsts/work/codeplan-items/toc.json&bc=/vsts/work/codeplan-items/breadcrumb/toc.json)  
-- [CMMI process guidance](../work-items/guidance/cmmi-process.md?toc=/vsts/work/codeplan-items/toc.json&bc=/vsts/work/codeplan-items/breadcrumb/toc.json)  
-- [Scrum process guidance](../work-items/guidance/scrum-process.md?toc=/vsts/work/codeplan-items/toc.json&bc=/vsts/work/codeplan-items/breadcrumb/toc.json)         
-- [Agile glossary](../work-items/agile-glossary.md?toc=/vsts/work/codeplan-items/toc.json&bc=/vsts/work/codeplan-items/breadcrumb/toc.json) 
+       
+- [Visibility across teams](../scale/visibility-across-teams.md?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json)   
+- [Agile culture and scale](../scale/agile-culture.md?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json)   
+- [Practices that scale](../scale/practices-that-scale.md?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json)  
+- [Team administrator role and permissions](../scale/team-administrator-permissions.md?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json)
 
 ## How-to Guides
-- [Use @mentions to further discussion](../../notifications/at-mentions.md?toc=/vsts/work/codeplan-items/toc.json&bc=/vsts/work/codeplan-items/breadcrumb/toc.json)
-- [Use #ID to link to work items](../../notifications/add-links-to-work-items.md?toc=/vsts/work/codeplan-items/toc.json&bc=/vsts/work/codeplan-items/breadcrumb/toc.json)
-- [Use work item form controls](../work-items/work-item-form-controls.md?toc=/vsts/work/codeplan-items/toc.json&bc=/vsts/work/codeplan-items/breadcrumb/toc.json)
-- [Add tags to work items](../track/add-tags-to-work-items.md?toc=/vsts/work/codeplan-items/toc.json&bc=/vsts/work/codeplan-items/breadcrumb/toc.json)
-- [Use work item templates](../backlogs/work-item-template.md?toc=/vsts/work/codeplan-items/toc.json&bc=/vsts/work/codeplan-items/breadcrumb/toc.json)
-- [Go mobile](../../collaborate/mobile-work.md?toc=/vsts/work/codeplan-items/toc.json&bc=/vsts/work/codeplan-items/breadcrumb/toc.json)  
-- [Email/print work items](../work-items/email-work-items.md?toc=/vsts/work/codeplan-items/toc.json&bc=/vsts/work/codeplan-items/breadcrumb/toc.json)      
-- [Bulk add or modify (Excel)](../backlogs/office/bulk-add-modify-work-items-excel.md?toc=/vsts/work/codeplan-items/toc.json&bc=/vsts/work/codeplan-items/breadcrumb/toc.json)
+- [Define a work item template](../backlogs/work-item-template.md?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json)
+- [Configure team settings](../scale/manage-team-assets.md?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json) 
+- [Set team defaults](../scale/set-team-defaults.md?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json) 
+- [Scaled Agile Framework](../scale/scaled-agile-framework.md?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json)   
+
 
 ## Reference
-- [Work item form controls](../work-items/work-item-form-controls.md?toc=/vsts/work/codeplan-items/toc.json&bc=/vsts/work/codeplan-items/breadcrumb/toc.json)     
-- [Work item field index](../work-items/guidance/work-item-field.md?toc=/vsts/work/codeplan-items/toc.json&bc=/vsts/work/codeplan-items/breadcrumb/toc.json)
-- [Keyboard shortcuts for work item forms & the Work Items page](../work-items/work-item-form-keyboard-shortcuts.md?toc=/vsts/work/codeplan-items/toc.json&bc=/vsts/work/codeplan-items/breadcrumb/toc.json)     
-  
+- [Permissions & access for work tracking](../../security/permissions-access-work-tracking.md?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json)
+- [Delivery plan keyboard shortcuts](../scale/delivery-plan-keyboard-shortcuts.md?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json)  
 
-## Resources 
 
+## Resources  
+- [Scale & Configure Teams](../work/scale/multiple-teams.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)
 - [Kanban](../codeplan-boards/index.md)
-- [Scrum](../codeplan-scrum/index.md)
 - [Backlogs](../codeplan-backlogs/index.md)
 - [Queries](../codeplan-queries/index.md)
-- [Customization](../customize/process/customize-process.md)
+- [Process Customization](../customize/process/customize-process.md)
+- [Agile culture](https://www.visualstudio.com/learn/agile-culture/)  
+- [Scale Agile to large teams](https://www.visualstudio.com/learn/scale-agile-large-teams/)  
+- [Creating productive teams](https://www.visualstudio.com/learn/productive-teams/)      
+  
 
 
 

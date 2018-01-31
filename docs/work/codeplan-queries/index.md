@@ -1,7 +1,7 @@
 ---
-title: Index to topics for work item tracking
+title: Index to work item query topics 
 titleSuffix: CodeX, CodePlan
-description: Index to topics for planning and tracking work 
+description: Create, edit, and use queries to bulk update and triage work items 
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid:  
@@ -10,65 +10,67 @@ ms.author: kaelli
 ms.date: 02/24/2018
 ---
 
-# CodePlan Work Items
+# CodePlan Queries 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]   
-
-
-Track the features and requirements you're developing, code defects or bugs, and other particulars using work items. 
+List bugs, user stories, or other work items based on field criteria you specify. Then you can review with your team, triage, or perform bulk updates.  
 
 <!---
 ## Overview  
-[About work items](../work-items/about-work-items.md?toc=/vsts/work/codeplan-items/toc.json&bc=/vsts/work/codeplan-items/breadcrumb/toc.json) 
--->
+* [Adhoc vs managed queries](../track/adhoc-vs-managed-queries.md?toc=/vsts/work/codeplan-queries/toc.json&bc=/vsts/work/codeplan-queries/breadcrumb/toc.json) 
 
-## 5-Minute Quickstarts  
+-->
  
-- [View and add work items](../work-items/view-add-work-items.md?toc=/vsts/work/codeplan-items/toc.json&bc=/vsts/work/codeplan-items/breadcrumb/toc.json)  
-- [Add work items](../backlogs/add-work-items.md?toc=/vsts/work/codeplan-items/toc.json&bc=/vsts/work/codeplan-items/breadcrumb/toc.json)
-- [Drive Git development](../backlogs/connect-work-items-to-git-dev-ops.md?toc=/vsts/work/codeplan-items/toc.json&bc=/vsts/work/codeplan-items/breadcrumb/toc.json) 
+## 5-Minute Quickstarts  
+
+- [View, run, or email a query](../track/view-run-query.md?toc=/vsts/work/codeplan-queries/toc.json&bc=/vsts/work/codeplan-queries/breadcrumb/toc.json)
+- [Perform an adhoc search (search box query)](../track/search-box-queries.md?toc=/vsts/work/codeplan-queries/toc.json&bc=/vsts/work/codeplan-queries/breadcrumb/toc.json)
 
 ## Step-by-Step Tutorials
 
-- [Manage bugs](../backlogs/manage-bugs.md?toc=/vsts/work/codeplan-items/toc.json&bc=/vsts/work/codeplan-items/breadcrumb/toc.json)
-- [Manage issues](../backlogs/manage-issues-impediments.md?toc=/vsts/work/codeplan-items/toc.json&bc=/vsts/work/codeplan-items/breadcrumb/toc.json)
-- [Move, change, or delete items](../backlogs/remove-delete-work-items.md?toc=/vsts/work/codeplan-items/toc.json&bc=/vsts/work/codeplan-items/breadcrumb/toc.json)
-- [Copy/clone work items](../backlogs/copy-clone-work-items.md?toc=/vsts/work/codeplan-items/toc.json&bc=/vsts/work/codeplan-items/breadcrumb/toc.json)
-- [Link work items](../backlogs/add-link.md?toc=/vsts/work/codeplan-items/toc.json&bc=/vsts/work/codeplan-items/breadcrumb/toc.json)
-- [Bulk modify (web)](../backlogs/bulk-modify-work-items.md?toc=/vsts/work/codeplan-items/toc.json&bc=/vsts/work/codeplan-items/breadcrumb/toc.json)
-- [Follow work](../../collaborate/follow-work-items.md?toc=/vsts/work/codeplan-items/toc.json&bc=/vsts/work/codeplan-items/breadcrumb/toc.json)
+- [Create or edit a managed query](../track/using-queries.md?toc=/vsts/work/codeplan-queries/toc.json&bc=/vsts/work/codeplan-queries/breadcrumb/toc.json)
+- [Triage work items](../track/triage-work-items.md?toc=/vsts/work/codeplan-queries/toc.json&bc=/vsts/work/codeplan-queries/breadcrumb/toc.json)
+- [Bulk modify work items](../backlogs/bulk-modify-work-items.md?toc=/vsts/work/codeplan-queries/toc.json&bc=/vsts/work/codeplan-queries/breadcrumb/toc.json)
 
 
-## Concepts 
+## Concepts
 
-- [Choose a process](../work-items/guidance/choose-process.md?toc=/vsts/work/codeplan-items/toc.json&bc=/vsts/work/codeplan-items/breadcrumb/toc.json)  
-- [Agile process guidance](../work-items/guidance/agile-process.md?toc=/vsts/work/codeplan-items/toc.json&bc=/vsts/work/codeplan-items/breadcrumb/toc.json)  
-- [CMMI process guidance](../work-items/guidance/cmmi-process.md?toc=/vsts/work/codeplan-items/toc.json&bc=/vsts/work/codeplan-items/breadcrumb/toc.json)  
-- [Scrum process guidance](../work-items/guidance/scrum-process.md?toc=/vsts/work/codeplan-items/toc.json&bc=/vsts/work/codeplan-items/breadcrumb/toc.json)         
-- [Agile glossary](../work-items/agile-glossary.md?toc=/vsts/work/codeplan-items/toc.json&bc=/vsts/work/codeplan-items/breadcrumb/toc.json) 
+- [New queries experience](../track/queries-preview.md?toc=/vsts/work/codeplan-queries/toc.json&bc=/vsts/work/codeplan-queries/breadcrumb/toc.json)
+
+
+## Samples
+
+- [Query by title, ID, or description](../track/titles-ids-descriptions.md?toc=/vsts/work/codeplan-queries/toc.json&bc=/vsts/work/codeplan-queries/breadcrumb/toc.json)
+- [Query by assignment or workflow changes](../track/query-by-workflow-changes.md?toc=/vsts/work/codeplan-queries/toc.json&bc=/vsts/work/codeplan-queries/breadcrumb/toc.json)  
+- [Query by area or iteration path](../track/query-by-area-iteration-path.md?toc=/vsts/work/codeplan-queries/toc.json&bc=/vsts/work/codeplan-queries/breadcrumb/toc.json)   
+- [Query by date or current iteration](../track/query-by-date-or-current-iteration.md?toc=/vsts/work/codeplan-queries/toc.json&bc=/vsts/work/codeplan-queries/breadcrumb/toc.json)   
+- [Query history](../track/history-and-auditing.md?toc=/vsts/work/codeplan-queries/toc.json&bc=/vsts/work/codeplan-queries/breadcrumb/toc.json)  
+- [Query a numeric field](../track/query-numeric.md?toc=/vsts/work/codeplan-queries/toc.json&bc=/vsts/work/codeplan-queries/breadcrumb/toc.json)  
+- [Query by pick list value](../track/planning-ranking-priorities.md?toc=/vsts/work/codeplan-queries/toc.json&bc=/vsts/work/codeplan-queries/breadcrumb/toc.json)  
+- [Query by build & test integration fields](../track/build-test-integration.md?toc=/vsts/work/codeplan-queries/toc.json&bc=/vsts/work/codeplan-queries/breadcrumb/toc.json)  
+- [Query by links or attachments](../track/linking-attachments.md?toc=/vsts/work/codeplan-queries/toc.json&bc=/vsts/work/codeplan-queries/breadcrumb/toc.json) 
+
 
 ## How-to Guides
-- [Use @mentions to further discussion](../../notifications/at-mentions.md?toc=/vsts/work/codeplan-items/toc.json&bc=/vsts/work/codeplan-items/breadcrumb/toc.json)
-- [Use #ID to link to work items](../../notifications/add-links-to-work-items.md?toc=/vsts/work/codeplan-items/toc.json&bc=/vsts/work/codeplan-items/breadcrumb/toc.json)
-- [Use work item form controls](../work-items/work-item-form-controls.md?toc=/vsts/work/codeplan-items/toc.json&bc=/vsts/work/codeplan-items/breadcrumb/toc.json)
-- [Add tags to work items](../track/add-tags-to-work-items.md?toc=/vsts/work/codeplan-items/toc.json&bc=/vsts/work/codeplan-items/breadcrumb/toc.json)
-- [Use work item templates](../backlogs/work-item-template.md?toc=/vsts/work/codeplan-items/toc.json&bc=/vsts/work/codeplan-items/breadcrumb/toc.json)
-- [Go mobile](../../collaborate/mobile-work.md?toc=/vsts/work/codeplan-items/toc.json&bc=/vsts/work/codeplan-items/breadcrumb/toc.json)  
-- [Email/print work items](../work-items/email-work-items.md?toc=/vsts/work/codeplan-items/toc.json&bc=/vsts/work/codeplan-items/breadcrumb/toc.json)      
-- [Bulk add or modify (Excel)](../backlogs/office/bulk-add-modify-work-items-excel.md?toc=/vsts/work/codeplan-items/toc.json&bc=/vsts/work/codeplan-items/breadcrumb/toc.json)
+- [Configure work item query-based charts](../../report/dashboards/charts.md?toc=/vsts/work/codeplan-queries/toc.json&bc=/vsts/work/codeplan-queries/breadcrumb/toc.json) 
+- [Organize queries, add a query folder](../track/organize-queries.md?toc=/vsts/work/codeplan-queries/toc.json&bc=/vsts/work/codeplan-queries/breadcrumb/toc.json)
+- [Change column options](../backlogs/set-column-options.md?toc=/vsts/work/codeplan-queries/toc.json&bc=/vsts/work/codeplan-queries/breadcrumb/toc.json)  
+- [Email/print work items](../work-items/email-work-items.md?toc=/vsts/work/codeplan-queries/toc.json&bc=/vsts/work/codeplan-queries/breadcrumb/toc.json) 
 
-## Reference
-- [Work item form controls](../work-items/work-item-form-controls.md?toc=/vsts/work/codeplan-items/toc.json&bc=/vsts/work/codeplan-items/breadcrumb/toc.json)     
-- [Work item field index](../work-items/guidance/work-item-field.md?toc=/vsts/work/codeplan-items/toc.json&bc=/vsts/work/codeplan-items/breadcrumb/toc.json)
-- [Keyboard shortcuts for work item forms & the Work Items page](../work-items/work-item-form-keyboard-shortcuts.md?toc=/vsts/work/codeplan-items/toc.json&bc=/vsts/work/codeplan-items/breadcrumb/toc.json)     
+
+## Reference 
+- [Query fields, operators & macros](../track/query-operators-variables.md?toc=/vsts/work/codeplan-queries/toc.json&bc=/vsts/work/codeplan-queries/breadcrumb/toc.json)      
+- [Query keyboard shortcuts](../track/queries-keyboard-shortcuts.md?toc=/vsts/work/codeplan-queries/toc.json&bc=/vsts/work/codeplan-queries/breadcrumb/toc.json)
+- [Work item field index](../work-items/guidance/work-item-field.md?toc=/vsts/work/codeplan-queries/toc.json&bc=/vsts/work/codeplan-queries/breadcrumb/toc.json) 
+- [WIQL syntax](../../collaborate/wiql-syntax.md?toc=/vsts/work/codeplan-queries/toc.json&bc=/vsts/work/codeplan-queries/breadcrumb/toc.json)
+- [Permissions and access for work tracking](../../security/permissions-access-work-tracking.md?toc=/vsts/work/codeplan-queries/toc.json&bc=/vsts/work/codeplan-queries/breadcrumb/toc.json)
+      
   
 
 ## Resources 
-
+- [Work Items](../codeplan-items/index.md)
 - [Kanban](../codeplan-boards/index.md)
 - [Scrum](../codeplan-scrum/index.md)
 - [Backlogs](../codeplan-backlogs/index.md)
-- [Queries](../codeplan-queries/index.md)
 - [Customization](../customize/process/customize-process.md)
 
 

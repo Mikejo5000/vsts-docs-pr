@@ -1,5 +1,5 @@
 - name: "Project & Account Settings" 
-  href: index.md
+  href: index.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json 
 - name: Overview
   items:
   - name: About project & account settings

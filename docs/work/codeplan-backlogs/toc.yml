@@ -1,5 +1,5 @@
 - name: CodePlan Backlogs
-  href: index.md
+  href: index.md?toc=/vsts/work/codeplan-backlogs/toc.json&bc=/vsts/work/codeplan-backlogs/breadcrumb/toc.json
 - name: Overview
   items:
   - name: "Backlogs, boards, & plans"
