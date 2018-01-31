@@ -21,11 +21,11 @@
   - name: Visibility across teams
     href: ../codeplan-scale/visibility-across-teams.md?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json
   - name: Agile culture
-    href: ../codeplan-scale/agile-culture.md?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json
+    href: ../scale/agile-culture.md?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json
   - name: Practices that scale
-    href: ../codeplan-scale/practices-that-scale.md?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json
+    href: ../scale/practices-that-scale.md?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json
   - name: Team administrator role and permissions
-    href: ../codeplan-scale/team-administrator-permissions.md?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json	
+    href: ../scale/team-administrator-permissions.md?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json	
 - name: How-to Guides
   items:
   - name: Use work item templates
@@ -33,10 +33,10 @@
   - name: Manage team notifications
     href: ../../collaborate/manage-team-notifications.md?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json   
   - name: Configure team settings
-    href: ../codeplan-scale/manage-team-assets.md?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json
+    href: ../scale/manage-team-assets.md?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json
     items:
     - name: Set team defaults
-      href: ../codeplan-scale/set-team-defaults.md?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json  
+      href: ../scale/set-team-defaults.md?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json  
     - name: Select backlog levels
       href: ../customize/select-backlog-navigation-levels.md?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json 
     - name: "Show bugs on backlogs & boards"
@@ -44,7 +44,7 @@
     - name: Set working days
       href: ../customize/set-working-days.md?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json 
   - name: Scaled Agile Framework
-    href: ../codeplan-scale/scaled-agile-framework.md?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json
+    href: ../scale/scaled-agile-framework.md?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json
   - name: Switch project or team focus
     href: ../../settings/switch-team-context.md?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json 
   - name: "Manage permissions & access"
@@ -54,11 +54,11 @@
   - name: "Permissions & access for work tracking"
     href: ../../security/permissions-access-work-tracking.md?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json 
   - name:  Delivery plan keyboard shortcuts
-    href: ../codeplan-scale/delivery-plan-keyboard-shortcuts.md?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json
+    href: ../scale/delivery-plan-keyboard-shortcuts.md?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json
 - name: Resources
   items:
   - name: "Scale & Configure Teams"
-    href: ../../teams/index.md?toc=/vsts/work/teams/toc.json&bc=/vsts/work/teams/breadcrumb/toc.json
+    href: ../../settings/index.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
   - name: Process Customization
     href: ../customize/process/customize-process.md?toc=/vsts/work/settings/toc.json&bc=/vsts/work/settings/breadcrumb/toc.json
   - name: Agile culture

@@ -1,10 +1,10 @@
-- name: VSTS and TFS
+- name: CodeX
   tocHref: /vsts/
-  topicHref: /vsts/index
+  topicHref: /vsts/codex-index
   items: 
-  - name: Admin
-    tocHref: /vsts/
-    topicHref: /vsts/index#pivot=services&panel=admin
+  - name: CodeX Settings
+    tocHref: /vsts/work/
+    topicHref: /vsts/codex-index#pivot=services&panel=codex-settings
     items:
     - name: "Project & Account Settings"
       tocHref: /vsts/

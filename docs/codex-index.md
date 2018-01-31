@@ -92,6 +92,21 @@ featureFlags:
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardText">
+                                                <h3>Navigation & Settings</h3>
+                                                <ul class="noBullet">
+                                                    <li><a class="barLink" href="/en-us/vsts/git/">Navigation Basics</a></li>
+                                                    <li><a class="barLink" href="/en-us/vsts/git/">Project & Account Settings</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardText">
                                                 <h3>Add your code</h3>
                                                 <ul class="noBullet">
                                                     <li><a class="barLink" href="/en-us/vsts/git/">Git Repositories</a></li>
@@ -893,8 +908,27 @@ featureFlags:
                         </ul>
                     </li>
                     <li>
-                        <a href="#admin">Admin</a>
-                        <ul id="admin" class="cardsA">
+                        <a href="#codex-settings">CodeX Settings</a>
+                        <ul id="codex-settings" class="cardsA">
+                            <li>
+                                <a href="/vsts/tfs-server/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com/media/common/i_tools.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>"Project & Account Settings"</h3>
+                                                    <p>Configure resources for CodeBox, CodeLaunch, CodePlan, and other CodeX apps.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
                             <li>
                                 <a href="/vsts/accounts/index">
                                     <div class="cardSize">
@@ -914,26 +948,7 @@ featureFlags:
                                         </div>
                                     </div>
                                 </a>
-                            </li>
-                            <li>
-                                <a href="/vsts/tfs-server/index">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/media/common/i_tools.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Server Administration (TFS)</h3>
-                                                    <p>Install, upgrade, and manage resources for your on-premises deployment.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
+                            </li>                            
                             <li>
                                 <a href="/vsts/security/index">
                                     <div class="cardSize">
@@ -1005,44 +1020,6 @@ featureFlags:
                                                 <div class="cardText">
                                                     <h3>Manage Extensions</h3>
                                                     <p>Install or remove Marketplace extensions.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/vsts/report/sharepoint-dashboards/">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="_img/index/logo_sharepoint.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>SharePoint Integration</h3>
-                                                    <p>Configure integration for TFS 2017 and prior. Upgrade integration for TFS 2018 and after.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/vsts/work/tfs-ps-sync/">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="_img/index/logo_project-server.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Project Server Integration</h3>
-                                                    <p>Native solution deprecated with TFS 2017. Find Microsoft partners who provide this integration.</p>
                                                 </div>
                                             </div>
                                         </div>

@@ -12,7 +12,7 @@ ms.date: 02/24/2018
 
 # CodePlan Scale 
 
-Manage portfolios and gain visibility across teams. For guidance on adding teams, see [Scale & Configure teams](../work/scale/multiple-teams.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json).
+Manage portfolios and gain visibility across teams. For guidance on adding teams, see [Scale & Configure teams](../scale/multiple-teams.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json).
 
 ## Quickstarts
 
