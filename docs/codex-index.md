@@ -73,7 +73,7 @@ featureFlags:
         </ul>
     </div>
     <div class="container">
-        <h1>Visual Studio Team Services Documentation</h1>
+        <h1>CodeX - CodeBox, CodeLaunch, CodeTest, CodePlan, CodeFeed Documentation</h1>
         <ul class="pivots">
             <li>
                 <a href="#start">Get Started</a>
@@ -83,7 +83,7 @@ featureFlags:
                         <ul id="start-all" class="cardsL">
                             <li class="fullSpan">
                                 <div class="intro">
-                                    <h1>Get Started with VSTS and TFS</h1>
+                                    <h1>Get Started with CodeX</h1>
                                     <p>Explore our most popular services with quickstarts, samples, and tutorials.</p>
                                 </div>
                             </li>
@@ -257,7 +257,7 @@ featureFlags:
                             </li>
                             <li>
                                 <div class="group">
-                                    <h3>Admin</h3>
+                                    <h3>Settings</h3>
                                     <ul>
                                         <li><a class="barLink" href="/vsts/settings/index">Project & Account Settings</a></li>
                                         <li><a class="barLink" href="/vsts/accounts/index">Account Management</a></li>
@@ -436,7 +436,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Package Management</h3>
+                                                    <h3>CodeFeed</h3>
                                                     <p>Create, host, and share NuGet and npm packages with your teams.</p>
                                                 </div>
                                             </div>
