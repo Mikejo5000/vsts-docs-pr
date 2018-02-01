@@ -1,7 +1,7 @@
 ---
 title: View and add work items
 titleSuffix: VSTS  
-description: View and add work items using the work items page      
+description: Use the Work Items page to view and add work items that support 7 personalized pivot views       
 f1_keywords: 
 - vs.tfc.teamexplorer.workitems
 - vs.tfc.teamexplorer.TeamExplorer
@@ -18,15 +18,15 @@ ms.date: 02/14/2018
 
 **VSTS**  
 
-View work items that you created or are assigned to you.  The **Work>Work Items** page provides several personalized pivots and filter functions to streamline listing work items. Use this page to quickly find work items defined across teams within a team project. <!---You can enable it from the [Preview features menu](../../collaborate/preview-features.md) that you access from your account profile.--> 
+View work items that you created or are assigned to you.  The **Work>Work Items** page provides several personalized pivots and filter functions to streamline listing work items. Use this page to quickly find work items defined across teams within a team project. You can enable it from the [Preview features menu](../../collaborate/preview-features.md) that you access from your account profile.
 
 >[!NOTE]   
-><b>Feature availability: </b>The **Work Items** page is currently available from VSTS.
+><b>Feature availability: </b>The **Work Items** page is in preview and currently available from VSTS only.
 
 ## Prerequisites 
 
 - You must connect to a team project. If you don't have an account or team project yet, create one in [VSTS](../../user-guide/sign-up-invite-teammates.md). You can then [connect to a team project from your web portal or Visual Studio](../../user-guide/connect-team-projects.md).
-- To create work items, you must be a member of the Contributors group. If you don't have access to the team project, ask the [account owner or project administrator](../../security/add-users-team-project.md) to add you.
+- To create work items, you must be a member of the Contributors group. If you don't have access to the team project, ask the [account owner or project administrator](../../security/lookup-account-owner-admin.md) to add you.
  
 
 ## Open the Work Items page
@@ -34,7 +34,7 @@ You can start viewing and adding work items once you connect to a team project.
 
 <a id="browser" /> 
 
-Open a browser window, click the **Work** hub, and then the **Work Items** page. If you don't see the **Work Items** option, you must enable it from the [preview features menu](../../collaborate/preview-features.md).
+Open a browser window, click the **Work** hub, and then the **Work Items** page. If you don't see the **Work Items** link, you must enable it from the [preview features menu](../../collaborate/preview-features.md).
 
 > [!div class="mx-imgBorder"]
 ![Work hub, Work Items page ](_img/view-add/work-items-hub.png)
@@ -46,7 +46,8 @@ Open a browser window, click the **Work** hub, and then the **Work Items** page.
 
 ## View work items
 
-Using the drop-down menu, you can focus on relevant items inside a team project via these seven pivots:
+Using the drop-down menu, you can focus on relevant items inside a team project using one of the seven pivots as described next. Additionally, you can [filter](#filter) and [sort](#sort) each pivot view.  
+
 
 <table>
 <tbody valign="top">
@@ -72,28 +73,31 @@ Using the drop-down menu, you can focus on relevant items inside a team project 
  
 
 ## Add a work item
-Adding a work item from is just one click away. Simply choose the work item type from the **New Work Item** drop down menu.  
+Adding a work item is just one click away. Simply choose the work item type from the **New Work Item** drop down menu.  
 
 For example, here we choose User Story. 
 
 > [!div class="mx-imgBorder"]  
 ![Work hub, Work Items page, Add a work item ](_img/view-add/work-items-hub-new.png)
 
+> [!TIP]    
+> Work items you add are automatically scoped to the [Currently selected team's area and iteration paths](../scale/set-team-defaults.md). To change the team context, see [Switch team project or team focus](../../teams/switch-team-context.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json).
+
 Enter a title and then save the work item. Before you can change the State from its initial default, you must save it.  
 
 <img src="../backlogs/_img/add-new-work-item-vsts-user-story.png" alt="Agile process, User story work item form" style="border: 1px solid #C3C3C3;" />  
 
-You can [add tags to any work item to filter backlogs and queries](../track/add-tags-to-work-items.md).
+You can [add tags to any work item](../track/add-tags-to-work-items.md) to filter backlogs, queries, and work item lists.
 
-Work items you add are automatically scoped to your [team's area and iteration paths](../scale/set-team-defaults.md). To change the team context, see [Switch team project or team focus](../../teams/switch-team-context.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json).
  
-
+<a id="filter" />
 ## Filter to create personal views
-Work items can be filtered by typing a keyword or using one or more of the fields provided, such as work item type, assigned to, state, and tags. The page remembers the filters you set for each pivot, supporting personalized views across all pivots.  
+You can filter each work item pivot view by typing a keyword or using one or more of the fields provided, such as work item type (Types), State, Area Path, and Tags. The page remembers the filters you set for each pivot, supporting personalized views across all pivots.  
 
 > [!div class="mx-imgBorder"]
 ![Work hub, Work Items page, Filter to show Bugs ](_img/view-add/work-items-filter-bug.png)
 
+<a id="sort" />
 ## Sort your view and other View options 
 
 You can sort your view by one of the column fields that you select from the **View options** menu. 
@@ -112,7 +116,7 @@ You can sort your view by one of the column fields that you select from the **Vi
 <ul>
 <li>**ID, Work Item Type, Title, State, Area Path, Tags** (Assigned to me view): Sorts by the column selected.<br/><br/></li>
 <li>**Ascending/Descending**: click to change the sort order. <br/><br/></li>
-<li>**Completed Work Items**: Click the slider to choose to show completed work items in all your views.  </li>
+<li>**Completed Work Items**: Click the slider to choose to show completed work items in the current pivot view.  </li>
 </ul>
 </td>
 </tr>
@@ -140,11 +144,27 @@ Queries provide additional features that you can use, including:
 * Apply work item templates
 * And more
 
-For details, see [Bulk modify work items](../backlogs/bulk-modify-work-items.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json ). To learn more about queries, see [Use the query editor to list and manage queries](../track/using-queries.md).  
+For details, see [Bulk modify work items](../backlogs/bulk-modify-work-items.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json). To learn more about queries, see [Use the query editor to list and manage queries](../track/using-queries.md).  
 
+
+<a id="page-controls">  </a>
+## Work Items page controls  
+
+Use the following three controls to manage your views.
+
+> [!div class="mx-tdBreakAll"]   
+> | Control                  | Function                      |
+> |--------------------------|-------------------------------|
+> | ![View options](../_img/icons/view-options-icon.png) | [Set sort order, view completed items](#sort)  | 
+> | ![Filter](../_img/icons/filter-icon.png) | [Turn filtering On/Off](#filter)  | 
+> | ![full screen icon](../_img/icons/full-screen-icon.png) / ![exit full screen icon](../_img/icons/exit-full-screen-icon.png)     | Enter or exit full screen mode      |
 
 ## Related notes
-- [Work from the account home page](../../user-guide/account-home-pages.md)
+- [Move, change, or delete work items (REcycle Bin)](../backlogs/remove-delete-work-items.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)
 - [Enable preview features](../../collaborate/preview-features.md)
+- [Use work item form controls](work-item-form-controls.md)
 - [Keyboard shortcuts for work item forms and the Work Items page](work-item-form-keyboard-shortcuts.md)
+- [Work from the account home page](../../user-guide/account-home-pages.md)
 
+
+[!INCLUDE [temp](../../_shared/help-support-shared.md)] 
