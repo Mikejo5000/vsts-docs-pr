@@ -58,7 +58,7 @@ From the Work hub, choose a work item, for example User Story, from the New Work
 
 <img src="../work/backlogs/_img/add-work-items-choose-user-story.png" alt="Web portal, project page, Work hub, Add a work item" style="border: 1px solid #CCCCCC;" />  
 
-Enter a title and then save the work item. Before you can change the State from its initial default, you must save it. For descriptions of each field, see [Work item field index](guidance/work-item-field.md). 
+Enter a title and then save the work item. Before you can change the State from its initial default, you must save it. For descriptions of each field, see [Work item field index](../work/work-items/guidance/work-item-field.md). 
 
 <img src="../work/backlogs/_img/add-new-work-item-vsts-user-story.png" alt="Agile process, User story work item form" style="border: 1px solid #CCCCCC;" />
 
@@ -172,4 +172,4 @@ If you need access to the following features&mdash;which support the daily work 
 
 
 
-[!INCLUDE [temp](../../_shared/help-support-shared.md)] 
+[!INCLUDE [temp](../_shared/help-support-shared.md)] 
