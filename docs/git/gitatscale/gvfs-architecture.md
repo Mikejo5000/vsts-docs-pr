@@ -5,8 +5,8 @@ In previous articles, we have discussed the challenges of working in a
 and some of 
 [our previous attempts](https://www.visualstudio.com/learn/gvfs-design-history) 
 to solve those issues. After trying out various simpler solutions, we realized that 
-the only way to work in a repo at the scale of the Windows codebase, but make it
-appear as fast as a normal sized repo, is to virtualize the file system. This is
+the only way to work in a repo at the scale of the Windows codebase and make it as 
+fast as a normal sized repo is to virtualize the file system. This is
 why we built the [Git Virtual File System (GVFS)](https://github.com/Microsoft/GVFS)
 to address the challenges of working in such a large repo.
 
