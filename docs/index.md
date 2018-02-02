@@ -9,7 +9,7 @@ ms.manager: douge
 ms.author: kaelli 
 ms.date: 07/26/2017
 featureFlags:
-- clicktale 
+ clicktale 
 ---
 
 <div id="main" class="v2">
