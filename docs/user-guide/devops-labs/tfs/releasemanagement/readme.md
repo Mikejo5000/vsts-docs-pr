@@ -713,4 +713,4 @@ The release management tools are incredibly flexible. Not only can you automate 
 
 1. It's important to note that while we deployed to the staging slot using Visual Studio, you could have just as easily set up CICD in TFS to deploy to the staging slot as well. There are even tasks to automate the swapping of slots, so you could set up everything you need in the release definition.
 
-[!INCLUDE [rm-help-support-shared](../../../_shared/rm-help-support-shared.md)]
+   

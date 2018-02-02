@@ -289,4 +289,4 @@ In this exercise, you will learn about managing the feedback lifecycle in TFS. D
 
    ![](images/054.png)
 
-[!INCLUDE [help-and-support-footer](../../../_shared/help-and-support-footer.md)] 
+   

@@ -337,4 +337,4 @@ In order to complete this lab you will need the Visual Studio 2017 virtual machi
 
    ![](images/072.png)
 
-[!INCLUDE [help-and-support-footer](../../../_shared/help-and-support-footer.md)] 
+   

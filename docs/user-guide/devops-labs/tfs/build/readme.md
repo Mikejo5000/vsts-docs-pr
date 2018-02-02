@@ -418,4 +418,4 @@ In this exercise, you will learn how to modify a build to support continuous int
 
     ![](images/074.png)
 
-[!INCLUDE [rm-help-support-shared](../../../_shared/rm-help-support-shared.md)]
+   

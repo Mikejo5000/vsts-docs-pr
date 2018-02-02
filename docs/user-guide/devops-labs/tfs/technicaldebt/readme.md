@@ -199,4 +199,4 @@ In this exercise, you will learn about the main configuration points that are ne
 
    <img src="./media/techdebt_img22.png" />
 
-[!INCLUDE [rm-help-support-shared](../../../_shared/rm-help-support-shared.md)]
+   

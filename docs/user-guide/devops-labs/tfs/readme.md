@@ -188,4 +188,3 @@ If you wish to download the previous versions of the Visual Studio ALM VM - here
 * Version 2017 -  [VM](media/almvm2017url.md) \|  [Lab documents](https://almvm2017.blob.core.windows.net/vm2017/VisualStudio ALMVM 2017 Labs.zip)
 * Version 2015 Update 2: [VM](https://msdnshared.blob.core.windows.net/media/2016/06/ALMVM-2015-Update-2-Downloads.txt) \| [Lab documents](http://vsalmvm.azurewebsites.net/visual-studio-2015-update-2-alm-virtual-machine-and-hands-on-labs-demo-scripts/)
 
-[!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]

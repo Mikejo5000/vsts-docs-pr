@@ -461,4 +461,4 @@ In this exercise, you will learn how to create a manual test plan and populate i
 
    ![](images/087.png)
 
-[!INCLUDE [help-and-support-footer](../../../_shared/help-and-support-footer.md)] 
+   
