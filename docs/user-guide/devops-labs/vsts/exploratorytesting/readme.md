@@ -150,5 +150,3 @@ For using the Test & Feedback extension you will need Chrome, as it is the only 
     <img src="images/24.jpg" width="624"/>
 
     > It is very important to provide all the information you can within the bugs to developers. This will ease all the process of reproducing and solving bugs during development cycles.
-
-[!INCLUDE [help-and-support-footer](../../../_shared/help-and-support-footer.md)] 
