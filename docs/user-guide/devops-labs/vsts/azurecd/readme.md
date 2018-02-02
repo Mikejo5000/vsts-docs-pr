@@ -139,4 +139,4 @@ If in case you have to disconnect, you can stop a deployment to your Azure App S
 
 To ensure the build and release history is preserved, the build and release definitions are not deleted from Team Services when you disconnect.
 
-   
+[!INCLUDE [rm-help-support-shared](../../../_shared/rm-help-support-shared.md)]

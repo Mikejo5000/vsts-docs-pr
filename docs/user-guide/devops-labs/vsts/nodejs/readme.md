@@ -313,4 +313,4 @@ Now the build definition is complete running it will result in the code being de
 
    ![New updates deployed](media/51-new-changes-deployed.png)
     
-   
+[!INCLUDE [rm-help-support-shared](../../../_shared/rm-help-support-shared.md)]

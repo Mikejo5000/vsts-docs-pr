@@ -335,6 +335,6 @@ You can define approvers for each environment in a release definition. When a re
 
    <img src="images/47.png" width="624"/>
 
-   
+[!INCLUDE [rm-help-support-shared](../../../_shared/rm-help-support-shared.md)]
     
 

@@ -252,7 +252,7 @@ The **Test** task that we have in the build defintion will need to be modified t
 
 8. We now have an automated CI build with automated tests that wil run every time a change is committed and verify the changes are not breaking the code. The next lab will cover **Continuous Delivery (CD)** - the ability to release frequently and consistently into various environments including dev, staging, production.
 
-   
+[!INCLUDE [rm-help-support-shared](../../../_shared/rm-help-support-shared.md)]
    
 
 

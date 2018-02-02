@@ -149,4 +149,4 @@ All results from previous test executions can be reviewed as they are stored in 
 
    > Here you can review again the whole results from this execution.
 
-   
+[!INCLUDE [help-and-support-footer](../../../_shared/help-and-support-footer.md)] 

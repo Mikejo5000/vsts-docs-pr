@@ -182,3 +182,5 @@ As there is no template for Selenium testing, the easiest way to get started is 
     > The build summary includes a snapshot of the test results. There is also a Tests results page that highlights the build-on-build changes, including errors, stack traces, and the ability to easily create a bug that contains this information.
 
     <img src="./images/10.png" width="624"/>
+
+[!INCLUDE [help-and-support-footer](../../../test/_shared/help-and-support-footer.md)] 
