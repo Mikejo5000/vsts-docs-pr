@@ -1,12 +1,17 @@
 ---
-title: Package Management in Team Services
-layout: page
-sidebar: vsts
-permalink: /labs/vsts/packagemanagement/
-folder: /labs/vsts/packagemanagement/
---- 
+title: Package Management in VSTS
+description: Package Management in Visual Studio Team Services
+ms.prod: vs-devops-alm
+ms.technology: 
+ms.assetid: CF667953-9BCB-4ACE-A221-1EB14EC68839 
+ms.manager: douge
+ms.author:  
+ms.date: 01/25/2018
+---
 
-## Overview
+# Package Management in VSTS
+
+**VSTS**
 
 <a href="https://www.visualstudio.com/en-us/docs/package/overview/">Package Management</a> is an extension that makes it easy to discover, install, and publish packages. 
 
@@ -33,8 +38,6 @@ In order to complete this lab you will need-
 - You can use the **[VSTS Demo Data generator](http://vstsdemogenerator.azurewebsites.net/Environment/Create)** to provision a project with pre-defined data on to your Visual Studio Team Services account. Please use the ***My Health Clinic*** template to follow the hands-on-labs.
 
 - If you are not using the VSTS Demo Data Generator, you can clone the code from here
-
-
 
 ## Task 1: Installing Package Manager Extension  
 

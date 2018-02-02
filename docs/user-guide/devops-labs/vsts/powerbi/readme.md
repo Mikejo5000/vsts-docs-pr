@@ -1,14 +1,17 @@
 ---
-title: Connect to Visual Studio Team Services with Power BI
-layout: page
-sidebar: vsts
-permalink: /labs/vsts/powerbi/
-folder: /labs/vsts/powerbi/
+title: Connect to VSTS with Power BI
+description: Connect to Visual Studio Team Services with Power BI
+ms.prod: vs-devops-alm
+ms.technology: 
+ms.assetid: E137589C-F31D-4753-9D23-4E2F49A466A8 
+ms.manager: douge
+ms.author:  
+ms.date: 01/25/2018
 ---
 
-Last updated:6/28/2017
+# Connect to VSTS with Power BI
 
-## Overview
+**VSTS**
 
 You can gain insight and analyze the progress and quality of your project by connecting Power BI to the data collected and stored for Team Services.
 

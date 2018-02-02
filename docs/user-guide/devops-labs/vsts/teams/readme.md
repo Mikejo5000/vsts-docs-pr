@@ -1,14 +1,17 @@
 ---
-title: Microsoft Teams Integration (Collaborate, Communicate and Celebrate)
-layout: page
-sidebar: vsts
-permalink: /labs/vsts/teams/
-folder: /labs/vsts/teams/
+title: Collaborate, Communicate, and Celebrate with Teams
+description: Microsoft Teams Integration (Collaborate, Communicate and Celebrate)
+ms.prod: vs-devops-alm
+ms.technology: 
+ms.assetid: F20E9BA1-BDEB-4BFE-B120-86BD6DF90940 
+ms.manager: douge
+ms.author:  
+ms.date: 01/25/2018
 ---
 
-Last updated:6/27/2017
+# Collaborate, Communicate, and Celebrate with Teams
 
-## Overview
+**VSTS**
 
 <a href="https://teams.microsoft.com/start">**Microsoft Teams**</a> is your chat-centered workspace in Office 365. Software development teams get instant access to everything they need in a dedicated
 hub for teamwork, that brings your teams, conversations, content and tools from across Office 365 and Visual Studio Team Services together into one place.

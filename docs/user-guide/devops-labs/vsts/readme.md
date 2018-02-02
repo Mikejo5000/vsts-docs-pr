@@ -82,18 +82,22 @@ Visual Studio Team Services Demo Generator helps you create projects on your Vis
       <td><a href="load/readme.md">Load Testing using Visual Studio Team Services</a></td>
       <td>March 6, 2017</td>
    </tr>
+<!--
    <tr>
       <td><a href="monitor/readme.md">Monitoring Applications using Application Insights</a></td>
       <td>March 6, 2017</td>
    </tr>
+-->
    <tr>
       <td><a href="appservice/readme.md">Deploy an ASP.NET Web App in Azure App Service from Visual Studio</a></td>
       <td>March 8, 2017</td>
    </tr>
+<!--
    <tr>
       <td><a href="azureresource/readme.md">Deploy and Manage Azure Resources from Visual Studio</a></td>
       <td>March 2, 2017</td>
    </tr>
+-->
    <tr>
       <td><a href="teams/readme.md">Microsoft Teams Integration (Collaborate, Communicate and Celebrate)</a></td>
       <td>June 30, 2017</td>

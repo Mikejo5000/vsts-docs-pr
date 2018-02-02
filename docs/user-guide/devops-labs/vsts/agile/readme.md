@@ -1,12 +1,17 @@
 ---
-title: Agile Planning and Portfolio Management with Visual Studio Team Services
-layout: page
-sidebar: vsts
-permalink: /labs/vsts/agile/
-folder: /labs/vsts/agile/
+title: Agile Planning and Portfolio Management with VSTS
+description: Agile Planning and Portfolio Management with Visual Studio Team Services
+ms.prod: vs-devops-alm
+ms.technology: 
+ms.assetid: 826EEF03-0F3A-4723-A625-1036526267F1 
+ms.manager: douge
+ms.author:  
+ms.date: 01/25/2018
 ---
 
-## Overview
+# Agile Planning and Portfolio Management with VSTS
+
+**VSTS**
 
 In this lab, you will learn about the agile planning and portfolio management tools and processes provided by Visual Studio Team Services and how they can help you quickly plan, manage, and track work across your entire team. You will explore the product backlog, sprint backlog, and task boards which can be used to track the flow of work during an iteration. We will also look at how the tools have been enhanced in this release to scale for larger teams and organizations.
 
