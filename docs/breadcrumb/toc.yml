@@ -1,6 +1,6 @@
 - name: VSTS and TFS
   tocHref: /vsts/
-  topicHref: /vsts/index#pivot=services
+  topicHref: /vsts/index
   items:
   - name: New User Guide
     tocHref: /vsts/user-guide/
