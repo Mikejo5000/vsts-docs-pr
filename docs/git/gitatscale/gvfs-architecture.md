@@ -23,7 +23,7 @@ with the following constraints:
 * Maintain full file system functionality, so that tools like IDEs and compilers can 
 continue to work without having to be made aware of GVFS.
 * Maintain file system performance that matches the local file system for 
-already-downloaded contents.
+already-hydrated contents.
 
 # Architecture overview
 
@@ -73,8 +73,8 @@ First some necessary background. GvFlt introduces some new states for directorie
 A directory can be in one of these states:
 * Virtual. The directory does not actually exist on disk, but it appears as if it does
 because GvFlt injects it into the enumeration result.
-* Placeholder. A placeholder directory is an NTFS directory with a reparse point, and one
-or more of its children can exist on disk, while others can be virtual items enumerated
+* Placeholder. A placeholder directory is an NTFS directory with a reparse point, and
+any of its children can exist on disk, while others can be virtual items enumerated
 by the provider.
 * Full. A full directory is a normal NTFS directory.
 
@@ -95,7 +95,7 @@ without having to worry about what modifications the user has made.
 And here is how a file transitions through those states:
 * Initial state: virtual. When a placeholder directory is enumerated, its children 
 initially exist only in the enumeration response, with no representation on disk.
-* Virtual -> placeholder. When a read handle is opened to a file, GvFlt creates a 
+* Virtual -> placeholder. The first time a read handle is opened to a file, GvFlt creates a 
 placeholder file on disk. This handle can be used to read the metadata of the file.
 * Placeholder -> hydrated placeholder. If a read handle is used to read the contents of
 a placeholder file, GvFlt asks the provider for those contents and writes them into the
@@ -109,8 +109,8 @@ gets converted into a normal NTFS file.
 Now let's go over how all those states enable a provider application to create a 
 virtual file system.
 
-A provider application starts things off by creating an empty directory to serve as a
-virtualization root, and attaching GvFlt to that directory. The first time a user
+A provider application starts things off by creating a directory and informing GvFlt
+to treat the directory as a virtualization root. The first time a user
 enumerates the root directory, the following happens:
 * GvFlt intercepts the enumeration request. Because the virtualization root is 
 always a partial directory, GvFlt will send an enumeration request up to the provider
