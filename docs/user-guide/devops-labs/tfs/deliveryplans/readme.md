@@ -1,16 +1,17 @@
 ---
-title: Managing Delivery Plans with Team Foundation Server 2018
-layout: page
-sidebar: tfs
-permalink: /labs/tfs/deliveryplans/
-folder: /labs/tfs/deliveryplans/
+title: Managing Delivery Plans with TFS
+description: Managing Delivery Plans with Team Foundation Server
+ms.prod: vs-devops-alm
+ms.technology: 
+ms.assetid: 187FC8C6-0BF7-4C0A-A1B2-6632E9D8713F 
+ms.manager: douge
+ms.author:  
+ms.date: 01/25/2018
 ---
 
-Lab version:15.4.1
+# Managing Delivery Plans with TFS
 
-Last updated:10/31/2017
-
-## Overview
+**TFS 2018 | TFS 2017** Lab version:15.4.1
 
 It takes several teams to develop large software projects. Very large projects require multiple autonomous teams that can manage their own backlog and priority while contributing to a unified direction for that project. Regular reviews of the project schedule with these teams help ensure that the teams are working toward common goals. Delivery Plans provide the needed multi-team view of your project schedule.
 

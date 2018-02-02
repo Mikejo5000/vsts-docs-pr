@@ -1,16 +1,17 @@
 ---
-title: Agile Planning & Portfolio Management with Team Foundation Server 2018
-layout: page
-sidebar: tfs
-permalink: /labs/tfs/agile/
-folder: /labs/tfs/agile/
+title: Agile Planning & Portfolio Management with TFS
+description: Agile Planning & Portfolio Management with Team Foundation Server
+ms.prod: vs-devops-alm
+ms.technology: 
+ms.assetid: EDFD1D35-5F98-4686-9419-0F00ECCC0E98 
+ms.manager: douge
+ms.author:  
+ms.date: 01/25/2018
 ---
 
-Lab version:15.4
+# Agile Planning & Portfolio Management with TFS
 
-Last updated:12/5/2017
-
-## Overview
+**TFS 2018 | TFS 2017** Lab version:15.4
 
 In this lab, you will learn about the agile planning and portfolio management tools and processes provided by Team Foundation Server 2018 and how they can help you quickly plan, manage, and track work across your entire team. You will explore the product backlog, sprint backlog, and task boards which can be used to track the flow of work during the course of an iteration. We will also take a look at how the tools have been enhanced in this release to scale for larger teams and organizations.
 

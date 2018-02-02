@@ -1,17 +1,17 @@
 ---
-title: Agile Work Item Management with Team Foundation Server 2018 
-layout: page
-sidebar: tfs
-permalink: /labs/tfs/agileworkitems/
-folder: /labs/tfs/agileworkitems/
+title: Agile Work Item Management with TFS
+description: Agile Work Item Management with Team Foundation Server
+ms.prod: vs-devops-alm
+ms.technology: 
+ms.assetid: 7C8A363E-B958-41B3-942E-9488E4773279 
+ms.manager: douge
+ms.author:  
+ms.date: 01/25/2018
 ---
 
-Lab version:15.4
+# Agile Work Item Management with TFS
 
-Last updated:12/5/2017
-
-## Overview
-
+**TFS 2018 | TFS 2017** Lab version:15.4
 In this lab, you will learn about the agile planning and portfolio management tools and processes provided by Team Foundation Server 2018 and how they can help you quickly plan, manage, and track work across your entire team. You will explore the product backlog, sprint backlog, and task boards which can be used to track the flow of work during the course of an iteration. We will also take a look at how the tools have been enhanced in this release to scale for larger teams and organizations.
 
 ## Prerequisites
