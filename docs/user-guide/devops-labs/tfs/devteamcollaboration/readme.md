@@ -1,16 +1,17 @@
 ---
-title: Collaboration Experiences for Development Teams with Wiki
-layout: page    
-sidebar: tfs
-permalink: /labs/tfs/devteamcollaboration/
-folder: /labs/tfs/devteamcollaboration/
+title: Collaboration Experiences with Wiki
+description: Collaboration Experiences for Development Teams with Wiki
+ms.prod: vs-devops-alm
+ms.technology: 
+ms.assetid: 5ECA3623-CA34-4BDC-B026-ED7AEDE50291 
+ms.manager: douge
+ms.author:  
+ms.date: 01/25/2018
 ---
 
-Lab version:15.4
+# Collaboration Experiences with Wiki 
 
-Last updated:12/5/2017
-
-## Overview
+**TFS 2018 | TFS 2017** Lab version:15.4
 
 In this lab, you'll learn about some of the features in Visual Studio 2017 and Team Foundation Server 2018 that enable collaboration experiences for development teams including Lightweight Code Comments and CodeLens. In addition, each project in Team Foundation Server (TFS) now supports its own Wiki. This enables you to conveniently write pages that help your team members and other users understand, use, and contribute to your project.
 

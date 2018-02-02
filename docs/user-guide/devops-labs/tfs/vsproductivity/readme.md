@@ -1,16 +1,17 @@
 ---
-title: Making Developers More Productive with Visual Studio Team Foundation Server 2018
-layout: page
-sidebar: tfs
-permalink: /labs/tfs/vsproductivity/
-folder: /labs/tfs/vsproductivity/
+title: Making Developers More Productive with TFS
+description: Making Developers More Productive with Team Foundation Server
+ms.prod: vs-devops-alm
+ms.technology: 
+ms.assetid: 6406126D-BA02-488F-82CD-348122729F0A 
+ms.manager: douge
+ms.author:  
+ms.date: 01/25/2018
 ---
 
-Lab version:15.4
+# Making Developers More Productive with TFS
 
-Last updated:11/6/2017
-
-## Overview
+**TFS 2018 | TFS 2017** Lab version:15.4
 
 This lab is all about those "fit-and-finish" scenarios in Visual Studio Team Foundation Server that will make developers more productive as they write code and collaborate with other team members. You'll learn about integrated code reviews; the "My Work" experience for managing your active tasks; and once you're "in the zone", Visual Studio will now help you stay focused on the task at hand, no matter how much you're randomized, with a suspend/resume experience. You'll also learn how to work offline seamlessly, how the new merging experience works, and how you can more easily find work items.
 

@@ -1,16 +1,17 @@
 ---
-title: Introduction to the Modern Requirements Suite4TFS & Team Foundation Server 2018
-layout: page    
-sidebar: tfs
-permalink: /labs/tfs/smartword4tfs/
-folder: /labs/tfs/smartword4tfs/
+title: Modern Requirements Suite4TFS & TFS
+description: Introduction to the Modern Requirements Suite4TFS & Team Foundation Server
+ms.prod: vs-devops-alm
+ms.technology: 
+ms.assetid: 2E760670-A84A-4A6A-8963-63AE15772ED7 
+ms.manager: douge
+ms.author:  
+ms.date: 01/25/2018
 ---
 
-Lab version: 14.0.25123
+**TFS 2018 | TFS 2017** Lab version: 14.0.25123
 
-Last updated: 12/7/2017
-
-## Overview
+# Modern Requirements Suite4TFS & TFS
 
 Modern Requirements Suite4TFS provides a collaborative platform based on “a single source of truth,” while automating each phase of your requirements lifecycle. The user interface is Microsoft Office or Smart Office4TFS, ensuring that you, and your new recruits, can start enjoying the benefits quickly. You can also use the browser-based interface, Modern Requirements4TFS. Microsoft’s industry leading TFS/VSTS is the requirements database, with optional extensions supporting your end-to-end ALM process. Whether you deploy it on premises or in the Azure cloud, it provides the security, scalability and workflow enterprises demand; all while supporting Agile, Waterfall or Hybrid methodologies.
 

@@ -1,16 +1,17 @@
 ---
-title: Package Management in Team Foundation Server 2018
-layout: page
-sidebar: tfs
-permalink: /labs/tfs/packagemanagement/
-folder: /labs/tfs/packagemanagement/
+title: Package Management in TFS
+description: Package Management in Team Foundation Server
+ms.prod: vs-devops-alm
+ms.technology: 
+ms.assetid: 43DEF58B-0FDB-476C-A385-3DCB70D0C653 
+ms.manager: douge
+ms.author:  
+ms.date: 01/25/2018
 ---
 
-Lab version:15.4
+# Package Management in TFS
 
-Last updated:11/7/2017
-
-# Overview
+**TFS 2018 | TFS 2017** Lab version:15.4
 
 Package Management is an extension that makes it easy to discover, install, and publish NuGet, npm, and Maven packages in Team Foundation Server. It's deeply integrated with other hubs like Build so that package management can become a seamless part of your existing workflows.
 

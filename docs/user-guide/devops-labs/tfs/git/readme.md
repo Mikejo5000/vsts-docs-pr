@@ -1,16 +1,17 @@
 ---
-title: Version Controlling with Git using Team Foundation Server 2018
-layout: page
-sidebar: tfs
-permalink: /labs/tfs/git/
-folder: /labs/tfs/git/
+title: Version Control with Git
+description: Version Controlling with Git using Team Foundation Server
+ms.prod: vs-devops-alm
+ms.technology: 
+ms.assetid: 2F821F3A-B2CF-4A15-A499-6E574CA1AAB6 
+ms.manager: douge
+ms.author:  
+ms.date: 01/25/2018
 ---
 
-Lab version:15.4
+# Version Control with Git
 
-Last updated:11/15/2017
-
-## Overview
+**TFS 2018 | TFS 2017** Lab version:15.4
 
 In this lab, you'll learn about Git support in Team Foundation Server 2018 and Visual Studio 2017. Git is a distributed version control system with repositories that live both locally (such as on a developer's machine) and hosted on Team Foundation Server. And if you have any doubt about the scalability of Git, rest assured that TFS support for Git Virtual File System ([GVFS](http://www.gvfs.io/)) empowers you to virtually unlimited scale. Just ask the Windows team-they use it to manage over 300GB across 3.5 million files.
 
