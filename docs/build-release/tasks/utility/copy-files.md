@@ -7,6 +7,7 @@ ms.assetid: BB8401FB-652A-406B-8920-4BD8977BFE68
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
 
 # Utility: Copy Files

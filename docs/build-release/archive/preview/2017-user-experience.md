@@ -7,6 +7,7 @@ ms.assetid: 27AD0094-FDF1-4B36-A82E-B845980984AF
 ms.manager: douge
 ms.author: alewis
 ms.date: 01/03/2017
+monikerRange: '>= tfs-2015'
 ---
 
 # New Build Editor
@@ -23,9 +24,9 @@ from the Build Definitions page.
  
 You can also enable this editor for your entire account from the [preview features](../../../collaborate/preview-features.md) menu. 
 
-##What’s in the new build editor
+##Whatâ€™s in the new build editor
 * **Quickly get started by searching for templates.** You can search for one of the out-of-the-box or customized templates and choose
-‘Apply’, or simply choose ‘empty template’ to get started.
+â€˜Applyâ€™, or simply choose â€˜empty templateâ€™ to get started.
 
  ![Schematic showing template selection](_img/2017-user-experience/Apply template.png)
 
@@ -35,14 +36,14 @@ directly drag and drop them to your desired location. You can also reorder tasks
 
  ![Schematic showing tasks](_img/2017-user-experience/Tasks.png)
 
-* **Getting started made easy with ‘Process parameters’.** When you start with one of the out-of-the-box templates, 
-the most important fields across all tasks in the template are displayed in a single view called “Process”. You can also link additional fields across all tasks to new or existing 
+* **Getting started made easy with â€˜Process parametersâ€™.** When you start with one of the out-of-the-box templates, 
+the most important fields across all tasks in the template are displayed in a single view called â€œProcessâ€. You can also link additional fields across all tasks to new or existing 
 process parameters to bubble them to the Process view. [More details](#parameters)
  
  ![Schematic showing tasks](_img/2017-user-experience/Process parameters view.png)
 
 *  **Configuring sources is now in-context.** 
-You can configure the sources to build along with tasks. If you’re pulling sources from GitHub, external
+You can configure the sources to build along with tasks. If youâ€™re pulling sources from GitHub, external
 Git, or subversion repos, you can configure connections to those endpoints in-line - without going to Services tab in Admin hub.
 
  ![Schematic showing tasks](_img/2017-user-experience/Configuring sources.png)

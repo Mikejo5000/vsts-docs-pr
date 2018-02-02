@@ -14,6 +14,7 @@ ms.tgt_pltfrm: acs
 ms.workload: ''
 ms.date: 01/19/2018
 ms.custom: mvc
+monikerRange: '>= tfs-2015'
 ---
 
 # Deploy your ASP.NET Core app as a container

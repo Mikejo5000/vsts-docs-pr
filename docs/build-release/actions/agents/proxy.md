@@ -7,6 +7,7 @@ ms.assetid: 6AC4BA22-9F6F-44B5-BB15-445A7CFD2AD4
 ms.manager: douge
 ms.author: alewis
 ms.date: 11/16/2017
+monikerRange: '>= tfs-2015'
 ---
 
 # Run a private agent behind a web proxy

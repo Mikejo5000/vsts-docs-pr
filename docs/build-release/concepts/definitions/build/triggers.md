@@ -7,6 +7,7 @@ ms.assetid: 250D4E5B-B2E5-4370-A801-E601C4871EE1
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/04/2016
+monikerRange: '>= tfs-2015'
 ---
 
 # Build definition triggers

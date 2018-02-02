@@ -7,6 +7,7 @@ ms.assetid: 2717783B-7754-4888-9A79-8DB5EC74626A
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/19/2018
+monikerRange: '>= tfs-2015'
 ---
 
 # Utility: Manual intervention

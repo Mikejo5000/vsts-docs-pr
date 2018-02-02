@@ -7,6 +7,7 @@ ms.assetid: AB81E23E-DD84-4BDB-ACD9-AE03D783A303
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/04/2016
+monikerRange: '>= tfs-2015'
 ---
 
 # Build definition history

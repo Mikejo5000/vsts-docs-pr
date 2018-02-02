@@ -7,6 +7,7 @@ ms.assetid: AC41DC40-0843-47A1-B82E-5C3EACB2C434
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/18/2018
+monikerRange: '>= tfs-2015'
 ---
 
 # Run tests with your builds for continuous integration

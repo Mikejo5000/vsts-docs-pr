@@ -7,6 +7,7 @@ ms.assetid: 8D3F3DAA-92C8-4631-96C6-938D43C60008
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/19/2018
+monikerRange: '>= tfs-2015'
 ---
 
 # Utility: Azure function

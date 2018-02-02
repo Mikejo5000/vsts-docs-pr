@@ -7,6 +7,7 @@ ms.assetid: 3A1C529F-DF6B-470A-9047-2758644C3D95
 ms.manager: douge
 ms.author: alewis
 ms.date: 12/13/2017
+monikerRange: '>= tfs-2015'
 ---
 
 # Build variables

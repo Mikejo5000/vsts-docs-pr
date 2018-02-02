@@ -7,6 +7,7 @@ ms.assetid: C71CD55E-3028-4526-A9C3-779ECE31CCD1
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
 
 # Utility: Delete files

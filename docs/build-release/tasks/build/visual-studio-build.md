@@ -7,6 +7,7 @@ ms.assetid: 11E76804-BA67-4086-9CF1-8CB2887169BA
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
 
 # Build: Visual Studio Build

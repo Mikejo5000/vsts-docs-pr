@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: alewis
 ms.reviewer: dastahel
 ms.date: 11/15/2017
+monikerRange: '>= tfs-2015'
 ---
 
 # Tool: Java Tool Installer

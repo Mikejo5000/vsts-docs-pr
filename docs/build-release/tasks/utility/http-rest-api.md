@@ -7,6 +7,7 @@ ms.assetid: 3F5394FC-37A9-4381-8F49-4F39369E1BDD
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/19/2018
+monikerRange: '>= tfs-2015'
 ---
 
 # Utility: Invoke HTTP REST API

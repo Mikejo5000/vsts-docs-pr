@@ -7,6 +7,7 @@ ms.assetid: A104BE40-2BFD-4E80-828B-F50944C12107
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
 
 # Build: MSBuild

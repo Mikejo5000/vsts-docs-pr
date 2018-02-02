@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: alewis
 ms.reviewer: dastahel
 ms.date: 01/19/2018
+monikerRange: '>= tfs-2015'
 ---
 
 # Utility: Download Secure File

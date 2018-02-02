@@ -7,6 +7,7 @@ ms.assetid: 20409B8F-A3A9-49A0-A418-1840BD7ADA8E
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/26/2016
+monikerRange: '>= tfs-2015'
 ---
 
 # Deploy an agent on Windows

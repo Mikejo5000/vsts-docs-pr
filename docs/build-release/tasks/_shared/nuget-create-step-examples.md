@@ -36,6 +36,7 @@ Make sure your AssemblyInfo.cs files contain the information you want shown in y
 #### [Options](../../concepts/definitions/build/options.md)
 
 | Setting | Value | 
+monikerRange: '>= tfs-2015'
 |---|---|
 | Build number format | ```$(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)```|
 

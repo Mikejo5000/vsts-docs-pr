@@ -7,6 +7,7 @@ ms.assetid: F9D118B6-BA56-406C-8223-6934F6BCBEA1
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
 
 # Build: Xamarin.Android

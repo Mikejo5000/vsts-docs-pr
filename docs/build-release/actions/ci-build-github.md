@@ -10,6 +10,7 @@ ms.manager: douge
 ms.author: mlearned
 ms.reviewer: dastahel
 ms.date: 12/19/2017
+monikerRange: '>= tfs-2015'
 ---
 
 # Define a continuous integration (CI) build process for your GitHub repository

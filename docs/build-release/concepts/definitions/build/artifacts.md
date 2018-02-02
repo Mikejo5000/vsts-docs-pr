@@ -7,6 +7,7 @@ ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: alewis
 ms.date: 10/12/2017
+monikerRange: '>= tfs-2015'
 ---
 
 # Artifacts in Team Build

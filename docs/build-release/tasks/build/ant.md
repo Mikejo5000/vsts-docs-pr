@@ -7,6 +7,7 @@ ms.assetid: EDC23F42-D73B-479C-9626-4C9D6E09B57B
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
 
 # Build: Ant

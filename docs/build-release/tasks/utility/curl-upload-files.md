@@ -7,6 +7,7 @@ ms.assetid: E231D775-2BCE-4DFA-8C20-C17F83ECD700
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
 
 # Utility: cURL Upload Files

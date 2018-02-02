@@ -8,6 +8,7 @@ ms.topic: get-started-article
 ms.manager: douge
 ms.author: amullans
 ms.date: 09/01/2017
+monikerRange: '>= tfs-2015'
 ---
 
 # Publish NuGet packages from Team Build to Package Management

@@ -7,6 +7,7 @@ ms.assetid: 22879225-BB1B-436A-ADF3-6E0B6E5E6EF4
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/19/2018
+monikerRange: '>= tfs-2015'
 ---
 
 # Deploy: Azure File Copy

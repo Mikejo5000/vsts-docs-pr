@@ -7,6 +7,7 @@ ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: alewis
 ms.date: 10/20/2016
+monikerRange: '>= tfs-2015'
 ---
 # Concurrent build and release pipelines in VSTS
 

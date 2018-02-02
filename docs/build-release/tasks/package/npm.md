@@ -7,6 +7,7 @@ ms.assetid: BE298C30-3B6D-4E06-B747-62A8AF6E10A6
 ms.manager: douge
 ms.author: alewis
 ms.date: 07/05/2017
+monikerRange: '>= tfs-2015'
 ---
 
 # Package: npm

@@ -7,6 +7,7 @@ ms.assetid: 9FD46361-985B-4886-A042-9C322CE3CD92
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/26/2016
+monikerRange: '>= tfs-2015'
 ---
 # Deploy an agent on Windows for TFS 2015
 

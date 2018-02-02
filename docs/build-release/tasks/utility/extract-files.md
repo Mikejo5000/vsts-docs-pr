@@ -7,6 +7,7 @@ ms.assetid: fe025768-2cb4-4939-b22f-8f69155bf310
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/15/2016
+monikerRange: '>= tfs-2015'
 ---
 
 # Utility: Extract Files

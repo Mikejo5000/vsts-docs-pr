@@ -7,6 +7,7 @@ ms.assetid: E60FC8AE-EDA7-4C1D-BDA5-CDC741FAD3E4
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
 
 # Utility: Batch script

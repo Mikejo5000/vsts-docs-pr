@@ -7,6 +7,7 @@ ms.assetid: 01533845-5D63-4DAC-97DF-D55F1E4DCF53
 ms.manager: douge
 ms.author: alewis
 ms.date: 10/12/2017
+monikerRange: '>= tfs-2015'
 ---
 
 # Utility: Publish Build Artifacts

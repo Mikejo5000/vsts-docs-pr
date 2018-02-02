@@ -7,6 +7,7 @@ ms.assetid: dcd2ed8f-5bc6-4fc5-8787-4d9f6fe63f65
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/19/2018
+monikerRange: '>= tfs-2015'
 ---
 
 # Deploy: SSH

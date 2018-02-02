@@ -7,6 +7,7 @@ ms.assetid: 66E3A184-6F3F-41D3-B522-55671DD5B98D
 ms.manager: douge
 ms.author: alewis
 ms.date: 03/03/2017
+monikerRange: '>= tfs-2015'
 ---
 
 # Configure TFS authentication for your private build and release agents

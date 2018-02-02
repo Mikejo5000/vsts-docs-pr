@@ -7,6 +7,7 @@ ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/19/2018
+monikerRange: '>= tfs-2015'
 ---
 
 # Implement continuous deployment of your app to an Azure Virtual Machine Scale Set

@@ -7,6 +7,7 @@ ms.assetid: FF2CCF1C-0237-451F-AA1F-654DB8C72089
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/19/2018
+monikerRange: '>= tfs-2015'
 ---
 
 # Utility: Azure monitor

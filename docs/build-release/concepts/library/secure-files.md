@@ -7,6 +7,7 @@ ms.technology: vs-devops-build
 ms.manager: dastahel
 ms.author: madhurig
 ms.date: 04/26/2017
+monikerRange: '>= tfs-2015'
 ---
 
 # Secure files

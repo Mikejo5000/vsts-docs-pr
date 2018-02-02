@@ -8,6 +8,7 @@ ms.topic: get-started-article
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/18/2018
+monikerRange: '>= tfs-2015'
 ---
 
 # Get started with Selenium testing in a CI pipeline
@@ -38,15 +39,15 @@ from Visual Studio Test Explorer.
    then choose **Test** and select **Unit Test Project**. Alternatively,
    open the shortcut menu for the solution and choose
    **Add** then **New Project** and then
-   **Unit Test Project**. 
+   **Unit Test Project**.Â 
 
-   For more details, see: [Get started with unit testing](https://docs.microsoft.com/visualstudio/test/getting-started-with-unit-testing).
+   For more details, see:Â [Get started with unit testing](https://docs.microsoft.com/visualstudio/test/getting-started-with-unit-testing).
 
 1. After the project is created, you must add the Selenium and
    browser driver references used by the browser to
    execute the tests. Open the shortcut menu for the
    Unit Test project and choose **Manage NuGet
-   Packages**. Add the following packages to your project:
+   Packages**.Â Add the following packages to your project:
 
    * Selenium.WebDriver
    * Selenium.WebDriver.ChromeDriver

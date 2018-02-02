@@ -7,6 +7,7 @@ ms.assetid: 81D73795-0171-434F-AE37-5386F4E71915
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/19/2018
+monikerRange: '>= tfs-2015'
 ---
 
 # Utility: Publish To Azure Service Bus

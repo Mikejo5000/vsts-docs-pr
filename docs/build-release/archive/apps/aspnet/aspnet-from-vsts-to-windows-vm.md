@@ -14,6 +14,7 @@ ms.devlang: aspnet
 ms.author: alewis
 ms.date: 06/27/2017
 ms.custom: mvc
+monikerRange: '>= tfs-2015'
 ---
 
 # Implement a CI/CD process to build and deploy your ASP.NET app to Azure

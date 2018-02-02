@@ -7,6 +7,7 @@ ms.assetid: 43289B55-AB44-415C-BD44-DC6C8BC0479E
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
 
 # Package: NuGet Installer version 0.*

@@ -7,6 +7,7 @@ ms.assetid: 891A8845-6EC1-4A70-B187-BBF9416AB41F
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/19/2018
+monikerRange: '>= tfs-2015'
 ---
 
 # Deploy: Service Fabric Compose Deploy

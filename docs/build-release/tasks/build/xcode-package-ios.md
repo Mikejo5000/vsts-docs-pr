@@ -7,6 +7,7 @@ ms.assetid: FF3E5771-481B-4D72-B3D5-ED9B3379E298
 ms.manager: douge
 ms.author: dastahel
 ms.date: 11/13/2017
+monikerRange: '>= tfs-2015'
 ---
 
 # Build: Xcode Package iOS

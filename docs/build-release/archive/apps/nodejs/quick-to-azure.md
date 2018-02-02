@@ -7,6 +7,7 @@ ms.assetid: 37846FD6-85D3-4CB1-97CD-11F30ADD0AFA
 ms.manager: douge
 ms.author: alewis
 ms.date: 06/27/2017
+monikerRange: '>= tfs-2015'
 ---
 
 # Implement a CI/CD process to build and deploy your Node.js app to Azure

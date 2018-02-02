@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: alewis
 ms.reviewer: chrispat
 ms.date: 01/25/2018
+monikerRange: '>= tfs-2015'
 ---
 
 # Run the agent with self-signed certificate (on-premises TFS only)

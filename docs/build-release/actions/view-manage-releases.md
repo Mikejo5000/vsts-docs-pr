@@ -7,6 +7,7 @@ ms.assetid: 5C348EA7-3DC3-42E4-A66D-9A602441CDF3
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/19/2018
+monikerRange: '>= tfs-2015'
 ---
 
 # View and manage releases

@@ -7,6 +7,7 @@ ms.assetid: A5B82F26-1053-47E4-B264-6E01B37C215F
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
 
 # Build: Maven

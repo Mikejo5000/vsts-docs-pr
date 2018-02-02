@@ -7,6 +7,7 @@ ms.assetid: 1CFB5762-5ABB-4107-BDF0-5079555101DC
 ms.manager: douge
 ms.author: amullans
 ms.date: 09/01/2017
+monikerRange: '>= tfs-2015'
 ---
 
 # Build: .NET Core

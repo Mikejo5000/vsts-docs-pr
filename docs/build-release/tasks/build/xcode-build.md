@@ -7,6 +7,7 @@ ms.assetid: 37B7092E-9205-4050-BBC8-E35C3A4B0A8A
 ms.manager: douge
 ms.author: dastahel
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
 
 # Build: Xcode Build

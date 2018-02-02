@@ -7,6 +7,7 @@ ms.assetid: BD5478A8-48CF-4859-A0CB-6E1948CE2C89
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/26/2016
+monikerRange: '>= tfs-2015'
 ---
 # Agent pools and queues
 

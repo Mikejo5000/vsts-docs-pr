@@ -7,6 +7,7 @@ ms.assetid: 1EFDAB02-66D7-4B8A-A8BC-43AF2C43F282
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/19/2018
+monikerRange: '>= tfs-2015'
 ---
 
 # Utility: Delay

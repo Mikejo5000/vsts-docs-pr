@@ -8,13 +8,14 @@ ms.manager: douge
 ms.author: elbatk
 ms.reviewer: dastahel
 ms.date: 01/31/2018
+monikerRange: '>= tfs-2015'
 ---
 
 # Set up Team Build and Maven
 
 This guide covers the basics of using Team Build to work with Maven artifacts in Package Management feeds.
  
-This walkthrough assumes that you've already added the correct build service identity to your feed. 
+This walkthrough assumes that you've already added the correct build service identityâ€¯to your feed. 
 
 1. Create a new build definition and select the **Maven** template.
 <br>

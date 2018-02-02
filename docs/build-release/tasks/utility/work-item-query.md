@@ -7,6 +7,7 @@ ms.assetid: F24517BD-FEA2-4EFF-8030-EF441B9C7F67
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/19/2018
+monikerRange: '>= tfs-2015'
 ---
 
 # Utility: Query Work Items

@@ -7,6 +7,7 @@ ms.assetid: 5C14A166-CA77-4484-8074-9E0AA060DE58
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/26/2016
+monikerRange: '>= tfs-2015'
 ---
 # Build and Release Agents
 

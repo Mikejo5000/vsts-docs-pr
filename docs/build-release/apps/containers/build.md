@@ -7,6 +7,7 @@ ms.assetid: E5BEDC1D-0209-40F3-A2AB-591CB7AE97E8
 ms.manager: douge
 ms.author: alewis
 ms.date: 12/11/2017
+monikerRange: '>= tfs-2015'
 ---
 
 # Build and publish a container for your app

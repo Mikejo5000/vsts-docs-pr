@@ -7,6 +7,7 @@ ms.assetid: 834FFB19-DCC5-40EB-A3AD-18B7EDCA976E
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/26/2016
+monikerRange: '>= tfs-2015'
 ---
 # Deploy an agent on Linux
 

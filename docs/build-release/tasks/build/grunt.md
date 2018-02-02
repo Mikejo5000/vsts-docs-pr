@@ -7,6 +7,7 @@ ms.assetid: FB181C61-BAC3-4568-B340-48ACE15C2519
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
 
 # Build: Grunt 

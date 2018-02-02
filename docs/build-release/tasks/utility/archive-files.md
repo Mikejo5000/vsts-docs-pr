@@ -7,6 +7,7 @@ ms.assetid: 9D2AE683-E116-4CEA-B673-CD7BEFB8F415
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/30/2016
+monikerRange: '>= tfs-2015'
 ---
 
 # Utility: Archive Files

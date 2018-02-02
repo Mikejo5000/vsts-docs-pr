@@ -15,6 +15,7 @@ ms.topic: get-started-article
 ms.date: 01/19/2018
 ms.author: alewis
 ms.custom: mvc
+monikerRange: '>= tfs-2015'
 ---
 
 # Build and deploy to an Azure Web App

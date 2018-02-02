@@ -7,6 +7,7 @@ ms.assetid: EE9455CD-5E1A-42C8-AC6D-8CF44878F090
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/19/2018
+monikerRange: '>= tfs-2015'
 ---
 
 # Utility: Service Fabric PowerShell 

@@ -7,6 +7,7 @@ ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
 ms.date: 08/04/2016
+monikerRange: '>= tfs-2015'
 ---
 
 # Install Release Management server/client for VS 2015 and TFS 2015

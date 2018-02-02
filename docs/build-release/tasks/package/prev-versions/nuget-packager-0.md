@@ -7,6 +7,7 @@ ms.assetid: E725F98F-8753-4946-A3D0-B7B0C92AFF22
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
 
 # Package: NuGet Packager version 0.*

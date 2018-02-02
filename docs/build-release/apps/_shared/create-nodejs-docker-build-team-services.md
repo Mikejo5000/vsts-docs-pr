@@ -30,6 +30,7 @@
 
   Select your version control repository. You'll need to authorize access to your repo.
 
+monikerRange: '>= tfs-2015'
   ---
 
 1. Select **+ Add Task** to add another task to the build definition. From the displayed task catalog, select **Docker** task. Change the parameters for this task as follows:

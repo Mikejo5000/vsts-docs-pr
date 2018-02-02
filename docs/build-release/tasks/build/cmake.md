@@ -7,6 +7,7 @@ ms.assetid: A0C6CAF5-E953-4705-80C5-896267A910AF
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
 
 # Build: CMake

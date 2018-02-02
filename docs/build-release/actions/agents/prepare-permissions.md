@@ -7,6 +7,7 @@ ms.assetid: D54EB55B-78E0-4B32-9DDB-C8C0B58A3AB3
 ms.manager: douge
 ms.author: alewis
 ms.date: 12/01/2016
+monikerRange: '>= tfs-2015'
 ---
 
 # Prepare permissions

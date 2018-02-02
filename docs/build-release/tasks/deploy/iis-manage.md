@@ -7,6 +7,7 @@ ms.assetid: 96E96D35-71D9-4A15-AA34-B9355D05AD98
 ms.manager: douge
 ms.author: ahomer
 ms.date: 05/03/2017
+monikerRange: '>= tfs-2015'
 ---
 
 # Deploy: IIS Web App Manage

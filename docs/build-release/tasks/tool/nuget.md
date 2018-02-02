@@ -7,6 +7,7 @@ ms.assetid: 740DA69C-E173-46AD-BA6F-0F138285AC39
 ms.manager: douge
 ms.author: amullans
 ms.date: 7/05/2017
+monikerRange: '>= tfs-2015'
 ---
 
 # Tool: NuGet Tool Installer

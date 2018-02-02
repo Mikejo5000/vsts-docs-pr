@@ -7,6 +7,7 @@ ms.assetid: 546DE4F0-79B7-43F0-AD1F-BCD20FEB2B37
 ms.manager: douge
 ms.author: alewis
 ms.date: 4/17/2017
+monikerRange: '>= tfs-2015'
 ---
 
 # Tool: Node Tool Installer

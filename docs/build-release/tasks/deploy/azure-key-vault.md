@@ -7,6 +7,7 @@ ms.assetid: 591A3606-F693-4DDD-9E9D-9F11BDD48C51
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/19/2018
+monikerRange: '>= tfs-2015'
 ---
 
 # Deploy: Azure Key Vault

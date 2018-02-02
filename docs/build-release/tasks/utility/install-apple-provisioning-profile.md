@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: alewis
 ms.reviewer: dastahel
 ms.date: 11/14/2017
+monikerRange: '>= tfs-2015'
 ---
 
 # Utility: Install Apple Provisioning Profile

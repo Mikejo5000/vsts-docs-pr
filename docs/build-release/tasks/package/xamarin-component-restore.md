@@ -7,6 +7,7 @@ ms.assetid: D50172C9-5AEE-4055-9795-342D5B2ABEF4
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
 
 # Package: Xamarin component restore

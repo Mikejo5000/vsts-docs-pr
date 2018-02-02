@@ -7,6 +7,7 @@ ms.assetid: 7ff495cf-2d1f-4baa-a052-d176bd507ef4
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/19/2018
+monikerRange: '>= tfs-2015'
 ---
 
 # Deploy: Copy Files Over SSH

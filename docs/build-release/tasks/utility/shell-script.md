@@ -7,6 +7,7 @@ ms.assetid: 8D152C13-0934-4665-8D08-30E2A7841351
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
 
 # Utility: Shell script

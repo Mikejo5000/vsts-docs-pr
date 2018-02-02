@@ -7,6 +7,7 @@ ms.assetid: 7C469647-117D-4867-B094-8BC811C0003E
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/04/2016
+monikerRange: '>= tfs-2015'
 ---
 
 # Build definition options

@@ -7,6 +7,7 @@ ms.assetid: 0D682DFA-9BC7-47A7-B0D3-C59DE1D431B5
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
 
 # Utility: PowerShell

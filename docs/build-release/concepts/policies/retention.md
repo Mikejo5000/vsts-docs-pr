@@ -7,6 +7,7 @@ ms.assetid: A9AC68EB-E013-4F86-8604-E69BB330817B
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/26/2016
+monikerRange: '>= tfs-2015'
 ---
 
 # Build and release retention policies

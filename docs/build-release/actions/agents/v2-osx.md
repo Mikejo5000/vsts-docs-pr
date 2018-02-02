@@ -7,6 +7,7 @@ ms.assetid: 3D487E4E-D940-4DA9-BDE1-1F60E74DD6F1
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/26/2016
+monikerRange: '>= tfs-2015'
 ---
 # Deploy an agent on macOS
 

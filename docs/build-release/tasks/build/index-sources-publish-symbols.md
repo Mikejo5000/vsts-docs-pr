@@ -7,6 +7,7 @@ ms.assetid: BD27A4F7-F870-4D90-AD3F-C74E2A94538B
 ms.manager: douge
 ms.author: alewis
 ms.date: 11/14/2017
+monikerRange: '>= tfs-2015'
 ---
 
 # Build: Index Sources & Publish Symbols

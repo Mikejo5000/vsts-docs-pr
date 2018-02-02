@@ -7,6 +7,7 @@ ms.assetid: 7e2793cd-7ce1-4268-9f51-ecb41842f13e
 ms.manager: douge
 ms.author: elbatk
 ms.date: 07/05/2017
+monikerRange: '>= tfs-2015'
 ---
 
 # Package: NuGet
