@@ -81,8 +81,6 @@ Need to include an equation or mathematical expression in your pull request comm
 
 Previously, anyone who could view a Git repository could work with its pull requests. We’ve added a new permission called **Contribute to pull requests** that controls access to creating and commenting on pull requests. All users and groups that previously held the **Read** permission will also be granted this new permission by default. The introduction of this new permission gives administrators additional flexibility and control. If you require your **Readers** group to be truly read-only, you can deny the **Contribute to pull requests** permission.
 
-Related to this change, we’ve updated the logic for who can edit the name, edit the description, and vote on a pull request. Previously, it was anyone who could read the repository. Now, someone must either be the creator of the pull request or have the **Contribute** permission. Core contributors to your repository continue to have all the flexibility they need. Casual contributors can weigh in on comment threads, but can’t make changes to the pull request itself.
-
 See the [quickstart documentation for setting repository permissions](/vsts/security/set-git-tfvc-repository-permissions#set-git-repository-permissions) for more information.
 
 ### Integrate using the pull request status API and branch policy
@@ -167,6 +165,12 @@ Over the course of the last several sprints, we delivered several crucial pieces
 * Automated test cases can be [run from the Test hub](/vsts/build-release/test/run-automated-tests-from-test-hub) using the VSTest task
 
 With all the above now in place, we are ready to deprecate these two tasks. While existing definitions that use the deprecated tasks will continue to work, we encourage you to move to using VSTest to take advantage of continued enhancement over time.
+
+### Delete Test Plans / Test suites
+Users can now delete Test Plans / Test suites if they the following permisssions 
+* Test suite delete: View test runs + Delete test runs + Manage test suites
+* Test plan delete: View test runs + Delete test runs + Manage plan suites
+
 
 ## Wiki
 
