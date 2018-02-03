@@ -7,7 +7,7 @@ ms.assetid: 6E5710EE-21C8-4264-AD65-A827D186F134
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article
-ms.date: 11/10/2017  
+ms.date: 02/24/2018  
 ---
 
 # Manage bugs
