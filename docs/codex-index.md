@@ -2,7 +2,8 @@
 title: CodeX Documentation 
 titleSuffix: CodeX, CodePlan, CodeBox, CodeLaunch
 description: Share code, track work, continuous build and deploy using CodeX cloud service apps 
-layout: HubPage 
+layout: HubPage
+hide_bc: true 
 ms.prod: vs-devops-alm 
 ms.technology: vs-devops-overview 
 ms.assetid: 
