@@ -13,6 +13,8 @@ monikerRange: '>= tfs-2013'
 
 # Build definition source repositories
 
+[!INCLUDE [temp](../../../../_shared/banner-vsts-tfs.md)]
+
 **VSTS | TFS 2018 | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/hh190721%28v=vs.120%29.aspx)**
 
 ::: moniker range=">= tfs-2017"

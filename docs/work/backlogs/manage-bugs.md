@@ -12,7 +12,7 @@ ms.date: 11/10/2017
 
 # Manage bugs
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/banner-vsts-tfs.md)]
       
 How do you track and manage defects in your code? How do you make sure software problems and customer feedback get addressed in a timely manner to support high-quality software deployments? And, how do you do this while making good progress on new features? 
 

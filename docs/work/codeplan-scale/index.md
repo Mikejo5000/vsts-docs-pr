@@ -45,7 +45,7 @@ Manage portfolios and gain visibility across teams. For guidance on adding teams
 
 
 ## Resources  
-- [Scale & Configure Teams](../work/scale/multiple-teams.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)
+- [Scale & Configure Teams](../scale/multiple-teams.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)
 - [Kanban](../codeplan-boards/index.md)
 - [Backlogs](../codeplan-backlogs/index.md)
 - [Queries](../codeplan-queries/index.md)

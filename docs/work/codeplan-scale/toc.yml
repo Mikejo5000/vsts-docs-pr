@@ -11,15 +11,15 @@
 - name: Tutorials
   items:
   - name: Manage portfolios
-    href: ../codeplan-scale/portfolio-management.md?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json
+    href: ../codeplan/portfolio-management.md?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json
   - name: Review team delivery plans
-    href: ../codeplan-scale/review-team-plans.md?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json
+    href: ../scale/review-team-plans.md?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json
   - name: Set team favorites
     href: ../../collaborate/set-favorites.md?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json
 - name: Concepts
   items:
   - name: Visibility across teams
-    href: ../codeplan-scale/visibility-across-teams.md?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json
+    href: ../scale/visibility-across-teams.md?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json
   - name: Agile culture
     href: ../scale/agile-culture.md?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json
   - name: Practices that scale
