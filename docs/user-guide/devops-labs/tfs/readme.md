@@ -86,16 +86,16 @@ Here are the 2018 hands-on-labs for Team Foundation Server. If you want to acces
       <td><a href="agileworkitems/readme.md">Agile Work Item Management with Team Foundation Server 2018</a></td>
    </tr>
    <tr>
-      <td><a href="armtemplates/readme.md">Authoring ARM Templates with Visual Studio</a>     <span class="label label-success">New</span></td>
+      <td><a href="armtemplates/readme.md">Authoring ARM Templates with Visual Studio</a></td>
    </tr>
    <tr>
-      <td><a href="aspnetazure/readme.md">Building ASP.NET apps in Azure with SQL Database</a>     <span class="label label-success">New</span></td>
+      <td><a href="aspnetazure/readme.md">Building ASP.NET apps in Azure with SQL Database</a></td>
    </tr>
    <tr>
-      <td><a href="devteamcollaboration/readme.md">Collaboration Experiences for Development Teams with Wiki</a> <span class="label label-success">New</span></td>
+      <td><a href="devteamcollaboration/readme.md">Collaboration Experiences for Development Teams with Wiki</a></td>
    </tr>
    <tr>
-      <td><a href="snapshotdebugger/readme.md">Debugging with Snapshot Debugger</a>     <span class="label label-success">New</span></td>
+      <td><a href="snapshotdebugger/readme.md">Debugging with Snapshot Debugger</a></td>
    </tr>
    <tr>
       <td><a href="debugging/readme.md">Debugging with IntelliTrace using Visual Studio Enterprise 2017</a></td>
@@ -134,7 +134,7 @@ Here are the 2018 hands-on-labs for Team Foundation Server. If you want to acces
       <td><a href="vsproductivity/readme.md">Making Developers More Productive with Visual Studio Team Foundation Server 2018</a></td>
    </tr>
    <tr>
-      <td><a href="deliveryplans/readme.md">Managing Delivery Plans with Team Foundation Server 2018     <span class="label label-success">New</span></a></td>
+      <td><a href="deliveryplans/readme.md">Managing Delivery Plans with Team Foundation Server 2018</a></td>
    </tr>
    <tr>
       <td><a href="technicaldebt/readme.md">Managing Technical Debt with Team Foundation Server 2018 and SonarQube</a></td>
