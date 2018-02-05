@@ -65,6 +65,34 @@
       href: devops-labs/tfs/manualtesting/readme.md
     - name: Load and Performance Testing
       href: devops-labs/tfs/load/readme.md
+    - name: Authoring ARM Templates
+      href: devops-labs/tfs/armtemplates/readme.md
+    - name: ASP.NET apps with SQL Database
+      href: devops-labs/tfs/aspnetazure/readme.md
+    - name: Debugging with Snapshot
+      href: devops-labs/tfs/snapshotdebugger/readme.md
+    - name: Debugging with IntelliTrace
+      href: devops-labs/tfs/debugging/readme.md
+    - name: Developer experience enhancements
+      href: devops-labs/tfs/devexp/readme.md
+    - name: Diagnosing Issues with IntelliTrace
+      href: devops-labs/tfs/intellitrace/readme.md
+    - name: ASP.NET with Application Insights
+      href: devops-labs/tfs/appinsights/readme.md
+    - name: Generate Unit Tests with IntelliTest
+      href: devops-labs/tfs/intellitest/readme.md
+    - name: Live Dependency Validation
+      href: devops-labs/tfs/livedependencyvalidation/readme.md
+    - name: Live Unit Testing
+      href: devops-labs/tfs/liveunittesting/readme.md
+    - name: SQL Prompt for Visual Studio
+      href: devops-labs/tfs/sqlprompt/readme.md
+    - name: UI Automation using Coded UI
+      href: devops-labs/tfs/codedui/readme.md
+    - name: Using Code Analysis
+      href: devops-labs/tfs/codeanalysis/readme.md
+    - name: Working with EditorConfig
+      href: devops-labs/tfs/editorconfig/readme.md
   - name: VSTS labs overview
     href: devops-labs/vsts/readme.md     
     items:
@@ -88,8 +116,12 @@
       href: devops-labs/vsts/selenium/readme.md
     - name: Load Testing using VSTS
       href: devops-labs/vsts/load/readme.md
+    - name: Using Application Insights
+      href: devops-labs/vsts/monitor/readme.md
     - name: Deploy an ASP.NET Web App
       href: devops-labs/vsts/appservice/readme.md
+    - name: Manage Azure Resources
+      href: devops-labs/vsts/azureresource/readme.md
     - name: Microsoft Teams Integration
       href: devops-labs/vsts/teams/readme.md
     - name: Connect VSTS with Power BI

@@ -11,7 +11,7 @@ ms.date: 01/25/2018
 
 # Deploy and Manage Azure Resources
 
-**TFS 2018 | TFS 2017**
+**VSTS**
 
 Azure Resource Manager enables you to work with the resources in your solution as a group. You can deploy, update, or delete all the resources for your solution in a single, coordinated operation. You use a template for deployment and that template can work for different environments such as testing, staging, and production. Resource Manager provides security, auditing, and tagging features to help you manage your resources after deployment.
 

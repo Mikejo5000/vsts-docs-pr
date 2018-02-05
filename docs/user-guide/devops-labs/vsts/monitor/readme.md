@@ -11,7 +11,7 @@ ms.date: 01/25/2018
 
 # Monitoring Applications using Application Insights
 
-**TFS 2018 | TFS 2017**
+**VSTS**
 
 <a href="https://docs.microsoft.com/en-us/azure/application-insights/">Application Insights</a> comes as part of Visual Studio. You get automatic instrumentation for ASP.NET developers and vital application telemetry data right out of the box; including usage, exceptions, requests, performance, and logs.
 
