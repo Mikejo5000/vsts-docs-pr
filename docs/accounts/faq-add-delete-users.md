@@ -5,11 +5,11 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
 ms.assetid: 7107fb6c-c132-45c2-a0d1-d44e9270e907
 ms.manager: douge
-ms.author: billchi
+ms.author: chcomley
 ms.date: 10/6/2017
 ---
 
-#	Troubleshoot adding and deleting account users in the VSTS user hub
+# Troubleshoot adding and deleting account users in the VSTS user hub
 
 **VSTS**
 
@@ -159,7 +159,7 @@ Learn [how to buy Visual Studio subscriptions](../billing/vs-subscriptions/buy-v
 
 	**Note** If you want to use your monthly Azure credits as a Visual Studio subscriber to pay for users, 
 	make sure to remove your subscription's default spending limit indefinitely. 
-	[Learn more](../billing/faq-billing-setup.md#AzureMSDNSubscription).
+	[Learn more](../billing/faq-billing-setup.md#EligibleAzureSubscriptions).
 
 
 ## User access

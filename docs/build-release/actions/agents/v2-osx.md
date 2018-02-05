@@ -10,7 +10,7 @@ ms.date: 08/26/2016
 ---
 # Deploy an agent on macOS
 
-**VSTS | TFS 2017 | TFS 2015**
+**VSTS | TFS 2018 | TFS 2017 | TFS 2015**
 
 To build and deploy Xcode apps or Xamarin.iOS projects, you'll need at least one macOS agent. This agent can also build and deploy Java and Android apps.
 
@@ -33,7 +33,7 @@ If you're building from a Subversion repo, you must install the Subversion clien
 <a name="download-configure"></a>
 ## Download and configure the agent
 
-### VSTS and TFS 2017
+### VSTS and TFS 2017 and newer
 
 <ol>
 <li>Log on to the machine using the account for which you've prepared permissions as explained above.</li>
@@ -65,7 +65,7 @@ If you're building from a Subversion repo, you must install the Subversion clien
 
 * VSTS: `https://{your-account}.visualstudio.com`
 
-* TFS 2017: `https://{your_server}/tfs`
+* TFS 2017 and newer: `https://{your_server}/tfs`
 
 * TFS 2015: `http://{your_server}:8080/tfs`
 
@@ -288,6 +288,10 @@ You can use the template described above as to facilitate generating other kinds
 [launchd.plist manpage](https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man5/launchd.plist.5.html)
 
 [!INCLUDE [include](_shared/v2/qa-firewall.md)]
+
+### How do I run the agent with self-signed certificate?
+
+[Run the agent with self-signed certificate](certificate.md)
 
 ### How do I run the agent behind a web proxy?
 

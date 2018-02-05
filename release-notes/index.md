@@ -2,7 +2,7 @@
 title: VSTS Features Timeline
 author: alexcnichols
 ms.author: alexn
-ms.date: 11/29/2017
+ms.date: 1/24/2018
 ms.topic: article
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
@@ -17,7 +17,7 @@ hide_comments: true
 
 This feature list is a peek into our roadmap. It identifies some of the significant features we are currently working on and a rough timeframe for when you can expect to see them. It is not comprehensive but is intended to provide some visibility into key investments. Some features are linked to a blog post and/or UserVoice entry where you can learn more and comment. These features and dates are the current plans at this time and are subject to change. The planned date heading reflects when the feature will be available on Visual Studio Team Services (VSTS), the “Area” column reflects the area of the product the feature aligns with most, and the “Server” column reflects when it will be available in Team Foundation Server (TFS) on-premises, if applicable.
 
-### 2017 Q4
+### 2018 Q1
 
 |Feature  |Area  |Server  |
 |---------|---------|---------|
@@ -25,54 +25,37 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 |Work Items – Process read-only rule support|Work|TBD|
 |Work Items – Filtering on the Taskboard|Work|TBD|
 |Favoriting Backlogs, Boards, Sprints, and Dashboards|Work|TBD|
-|Git – API to extend Pull Requests for custom status policies|Code|TBD|
-|Git – File viewer / editor preferences, such as show white space characters, highlight whitespace changes in diffs, and word wrap.|Code|TBD|
-|Wiki – GA |Code|TBD|
-|Visual Studio Git – Worktree support, submodules behavior like normal repos|Code|TBD|
-|Visual Studio Git – Settings for ‘fetch –prune’ and ‘pull –rebase’, as well as performance improvements|Code|TBD|
-|Updated Windows shell extension for TFVC|Code|N/A|
-|Scheduled builds – Do not schedule build if nothing has changed in repo|Build|TBD|
-|CI – GitHub Enterprise integration|Build|TBD|
-|Release Management orchestration improvements – Selective artifacts download and tag based triggers|Release|TBD|
-|[Agent-based deployment in Release Management](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/03/deployment-groups/) – Sharing of VMs|Release|TBD|
-|Azure Portal Continuous Delivery support – VMs|Release|TBD|
-|Package Management – Maven general availability (GA)|Package|TBD|
-|Search/Filter tests in build/release summary|Test|TBD|
-|[Encryption at rest for disks used by code and work item search](https://blogs.msdn.microsoft.com/devops/2017/09/05/visual-studio-team-services-encryption-at-rest/)|Admin|N/A|
-|Request workflow for account (project collection) admins who don't have payment access|Admin|TBD|
-|Change Azure subscription when purchase is blocked|Admin|TBD|
-|Simplified publisher onboarding and member management|Marketplace|N/A|
-|CC/BCC (carbon copy) recipient support for email notifications|Notifications|TBD|
-
-### 2018 Q1
-
-|Feature  |Area  |Server  |
-|---------|---------|---------|
 |Work Items – Discussion-centric work item form|Work|TBD|
 |Work Items – Cross account linking|Work|TBD|
 |Work Items – Edit/Delete discussion comments|Work|TBD|
-|Wiki Search|Code|TBD|
-|Pull request labels|Code|TBD|
+|Updated Windows shell extension for TFVC|Code|N/A|
+|Visual Studio Git – Worktree support, submodules behavior like normal repos|Code|TBD|
+|Visual Studio Git – Settings for ‘fetch –prune’ and ‘pull –rebase’, as well as performance improvements|Code|TBD|
 |User-added required reviewers for pull requests|Code|TBD|
 |Build completion triggers – Trigger a build after completion of another build|Build|TBD|
 |XAML deprecation – XAML builds no longer supported in VSTS new accounts|Build|N/A|
 |Updated build summary and log views|Build|TBD|
 |Hosted build images – Ability to use latest or previous version of image|Build|N/A|
-|Build PRs from forks in GitHub|Build|TBD|
+|Release Management orchestration improvements – Selective artifacts download and tag based triggers|Release|TBD|
+|[Agent-based deployment in Release Management](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/03/deployment-groups/) – Sharing of VMs|Release|TBD|
+|Azure Portal Continuous Delivery support – VMs|Release|TBD|
 |Better Traceability – Code PR Integration, Work Item Integration|Release|TBD|
 |Deployment Groups easy configuration of Azure VMs|Release|TBD|
 |Deployment Groups auto triggering a release for all new Azure VMs|Release|TBD|
 |Extend Greenlighting with more gates – Test, Azure Log Analytics|Release|TBD|
 |Azure App Services Deployment – Go and Ruby frameworks|Release|TBD|
 |Azure Portal Continuous Delivery support – ACS Containers and VM enhancements|Release|TBD|
+|Package Management – Maven general availability (GA)|Package|TBD|
 |Package Management – Retention policies|Package|TBD|
 |Package Management – Repo, Build provenance information for a package|Package|TBD|
 |Distribute tests in CI pipeline using Phases|Test|TBD|
 |Make test platform bits xcopyable to remove VS dependency in CI/CD workflows|Test|TBD|
 |Reporting – Public preview of our cloud reporting experience (Power BI, widgets, OData)|Reporting|TBD|
+|[Encryption at rest for disks used by code and work item search](https://blogs.msdn.microsoft.com/devops/2017/09/05/visual-studio-team-services-encryption-at-rest/)|Admin|N/A|
 |Streamlined purchasing experience|Admin|TBD|
 |[Licensing users and extensions using AAD groups](https://blogs.msdn.microsoft.com/visualstudioalm/2017/04/04/team-services-large-account-user-management-roadmap-april-2017/)|Admin|TBD|
 |Publisher certification process|Marketplace|N/A|
+|CC/BCC (carbon copy) recipient support for email notifications|Notifications|TBD|
 |Notification feed|Notifications|TBD|
 
 ### 2018 Q2
@@ -110,6 +93,58 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
     </thead>
     <tbody>
+        <tr>
+            <td rowspan="22">[24 Jan 2018](2018/jan-24-vsts.md)</td>
+            <td>View Analystics Widgets as a Stakeholder</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr><td>Integrate Power BI with VSTS Analytics using new views</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>View pull request merge commit</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Help reviewers using pull request labels</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>View remaining policy criteria for pull request auto-complete</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Discuss math in pull requests</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Control who can contribute to pull requests</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Integrate using the pull request status API and branch policy</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Move work using suggested Areas and Iterations</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Build GitHub pull requests from repository forks</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Build with continuous integration from GitHub Enterprise</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Build with the appropriate agent by default</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Screenshot desktop apps through the Chrome browser</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Filter large test results by Test Name</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Run Functional Tests and Deploy Test Agent tasks are now deprecated</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Wiki Search now Generally Available</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Print Wiki pages</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Contribute to Wiki pages with ease using keyboard shortcuts</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Calculate price without leaving the extension page</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
+        <tr><td>Manage permissions directly on Azure AD groups</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Consider warning of single Project Collection Administrator</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
+        <tr><td>Connect or disconnect a VSTS account to Azure Active Directory via new Azure portal</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
+        <tr>
+            <td rowspan="22">[11 Dec 2017](2017/dec-11-vsts.md)</td>
+            <td>Track code pushes to a Git repo to builds and releases</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr><td>Blame now has history</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>SSH URLs are changing</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
+        <tr><td>Generate YAML templates from existing build definitions</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Enhancements to multi-phase builds</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Hide empty contributed sections in build results page</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Skip scheduled builds if nothing has changed in the repo</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Run UI tests and install software on Hosted VS2017 agents</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
+        <tr><td>ASP.NET Core 2.0 agents</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
+        <tr><td>Release trigger for a Package Management artifact</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Default artifact versions</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Release triggers branch enhancements</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Filter large test results</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Identify flaky tests</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Pass parameters to your test run using .testsettings file</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Access information pertinent to test cases in your automated tests when running in the CI/CD pipeline</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Automated tests that use TestCase as a data source can now be run using the VSTest task</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Improved Marketplace experience</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
+        <tr><td>Refreshed publisher management portal</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
+        <tr><td>Virus scan of all public extensions on Marketplace</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
+        <tr><td>TFX CLI changes for extension publish</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
+        <tr><td>Cloud Solution Provider purchasing now generally available</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
         <tr>
             <td rowspan="43">[28 Nov 2017](2017/nov-28-vsts.md)</td>
             <td>Azure DevOps Project</td>
@@ -3617,6 +3652,7 @@ Versions in the “Server” column are linked to the appropriate download locat
 
 We would love to hear what you think about these features. Report any problems through [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html) or provide a suggestion on [UserVoice](https://visualstudio.uservoice.com/forums/330519-team-services) if you have ideas on things you’d like to see us prioritize.
 
-<img src="2017/_img/125_00.png" alt="Feedback menu" style="border:1px solid Silver; display: block; margin: auto;" />
+> [!div class="mx-imgBorder"]
+![Feedback options](2017/_img/125_00.png)
 
 You can also get advice and your questions answered by the community on [Stack Overflow](https://stackoverflow.com/questions/tagged/vsts).

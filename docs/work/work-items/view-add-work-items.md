@@ -3,6 +3,7 @@ title: View and add work items | VSTS
 description: View and add work items using the work items page      
 f1_keywords: 
 - vs.tfc.teamexplorer.workitems
+- vs.tfc.teamexplorer.TeamExplorer
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: EBDE0739-FAE6-4BEA-8F59-E9D20AFE5FE8
@@ -56,7 +57,7 @@ Add a work item from within the hub is just one click away. You can add a work i
 
 	You can [add tags to any work item to filter backlogs and queries](../track/add-tags-to-work-items.md).
 
-	Work items you add are automatically scoped to your [team's area and iteration paths](../scale/set-team-defaults.md). To change the team context, see [Switch team project or team focus](../../teams/switch-team-context.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json).
+	Work items you add are automatically scoped to your [team's area and iteration paths](../scale/set-team-defaults.md). To change the team context, see [Switch team project or team focus](../../settings/switch-team-context.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json).
  
 
 ## Filter to create personal views
@@ -72,7 +73,7 @@ Work items can be filtered by typing a keyword or using one or more of the field
 ## Related notes
 - [Work from the account home page](../../user-guide/account-home-pages.md)
 - [Enable preview features](../../collaborate/preview-features.md)
-
+- [Keyboard shortcuts for work item forms and the Work Items page](work-item-form-keyboard-shortcuts.md)
 
 ### Got feedback?
 

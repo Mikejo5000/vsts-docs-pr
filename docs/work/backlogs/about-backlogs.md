@@ -19,7 +19,7 @@ You access all Agile tools from the **Work** hub. If you're new to Agile, see [W
 
 <img src="_img/plan-intro.png" alt="Work hub, product backlog page" style="border: 1px solid #C3C3C3;" />  
 
-Most Agile tools are [scoped to a team](../../teams/about-teams-and-settings.md?toc=/vsts/work/backlogs/toc.json). This supports team autonomy as well as scaling the system. 
+Most Agile tools are [scoped to a team](../../settings/about-teams-and-settings.md?toc=/vsts/work/backlogs/toc.json). This supports team autonomy as well as scaling the system. 
  
 
 You build your project plan by creating a backlog of work items that represent the features, requirements, user stories, or other work to perform. Portfolio backlogs provide support for organizing work in a hierarchical fashion and tracking major product initiatives or scenarios that rely on many stories or requirements.  Different types of work items help you track different types of work, such as user stories, tasks, bugs, issues, and more. 

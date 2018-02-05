@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
 ms.assetid: e2eacd25-e6be-4294-b1da-5529195f30d0
 ms.manager: douge
-ms.author: billchi
+ms.author: chcomley
 ms.date: 10/17/2017
 ---
 
@@ -139,9 +139,9 @@ add code, work items, or more users.
 	> as a benefit, learn [how to add your work or school account](../billing/link-msdn-subscription-to-organizational-account-vs.md) to your
 	> subscription so you can use your subscriber benefits in VSTS.
 
-## Next steps 
-
-*	[Manage users and access](add-account-users-assign-access-levels.md)
+## Try this next
+> [!div class="nextstepaction"]
+> [Manage users and access](add-account-users-assign-access-levels.md)
 
 *	Add code to Git or Team Foundation version control
 

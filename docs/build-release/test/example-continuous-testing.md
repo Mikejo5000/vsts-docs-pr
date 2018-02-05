@@ -6,7 +6,7 @@ ms.technology: vs-devops-build
 ms.assetid: 447F1F56-993A-4AB0-B521-ED72514BDEE3
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+ms.date: 01/18/2018
 ms.topic: get-started-article
 ---
 
@@ -117,6 +117,8 @@ will automatically execute the unit tests it contains.
 >For more details about build definitions in VSTS, see
 [Continuous integration on any platform](../../build-release/overview.md). For more details about unit tests and the results, see 
 [Get started with unit testing](https://docs.microsoft.com/visualstudio/test/getting-started-with-unit-testing).
+For information about reducing test running time, see
+[Speed up testing with Test Impact Analysis](test-impact-analysis.md) and [Run tests in parallel](run-tests-in-parallel.md).
 
 <a name="configure-cd"></a>
 ## Configure continuous deployment

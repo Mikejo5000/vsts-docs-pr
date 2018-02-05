@@ -6,10 +6,10 @@ ms.technology: vs-devops-build
 ms.assetid: A38FB217-B259-4DD1-B5BF-D945278493C2
 ms.manager: douge
 ms.author: ahomer
-ms.date: 11/14/2017
+ms.date: 01/19/2018
 ---
 
-# How to: Work with release definitions
+# Work with release definitions
 
 [!INCLUDE [version-rm-dev14](../_shared/version-rm-dev14.md)]
 
@@ -35,7 +35,7 @@ This topic shows you how to:
 
    ![Creating a new release definition](_img/work-with-release-definitions/create-new.png)
 
-   <a name="create-template"></a><a name="create-empty"></a>
+   <a name="create-empty"></a>
 1. Select a template or start with an empty definition:
 
    * If a template is relevant to your scenario, select it to
@@ -53,12 +53,12 @@ This topic shows you how to:
    you want to deploy. Choose the type of source and specify
    the details such as the project and build definition.
 
-   ![Selecting the artifacts to deploy](_img/work-with-release-definitions/add-artifacts.png)
+   ![Selecting the artifacts to deploy](../concepts/definitions/release/_img/artifacts-02.png)
 
 1. Open the **Continuous deployment trigger** panel and set the [trigger](../concepts/definitions/release/triggers.md)
    if you want a new release to be created when a new version of the source artifacts are available.
 
-   ![Setting the continuous deployment trigger](_img/work-with-release-definitions/cd-trigger.png)
+   ![Setting the continuous deployment trigger](../concepts/definitions/release/_img/trigger-01.png)
 
    [What's the difference between a release definition and a release?](../concepts/releases/index.md)
 
@@ -66,7 +66,7 @@ This topic shows you how to:
    is set to automatically start a deployment when the release is created.
    You can also specify other pre-deployment conditions here if required.
 
-   ![Setting the pre-deployment options](_img/work-with-release-definitions/set-conditions.png)
+   ![Setting the pre-deployment options](../concepts/definitions/release/_img/trigger-02.png)
 
 1. Open the **Tasks** tab and select the default **Run on agent** item. In the properties
    panel, under **Agent selection**, check that a hosted agent is selected to use the default 
@@ -93,12 +93,10 @@ When you export a definition, you can import it afterwards. Then, if required, m
 
 ![Importing an existing release definition](_img/work-with-release-definitions/import.png)
 
-<a name="use-template"></a>
+<a name="create-template"></a><a name="use-template"></a>
 ### Create and use a template
 
-Create a template for a definition from an environment within the definition by using the old definition editor.
-
-![Switching to the previoius release definition editor](_img/work-with-release-definitions/old-editor.png)
+Create a template for a definition from an environment within the definition.
 
 ![Creating a template from an existing release definition](_img/work-with-release-definitions/save-template.png)
 
@@ -216,8 +214,6 @@ For more details, see [Task groups](../concepts/library/task-groups.md).
 * [Create and deploy a release from a release definition](create-deploy-releases.md)
 
 * [View and manage releases](view-manage-releases.md)
-
-* [Monitor releases and debug deployment issues](debug-deployment-issues.md)
 
 * [Configure your release pipelines for safe deployments](https://blogs.msdn.microsoft.com/visualstudioalm/2017/04/24/configuring-your-release-pipelines-for-safe-deployments/)
 

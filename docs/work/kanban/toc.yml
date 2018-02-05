@@ -27,7 +27,7 @@
   - name: "Workflow states & state categories"
     href: ../customize/workflow-and-state-categories.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json 
   - name: About teams and Agile tools
-    href: ../../teams/about-teams-and-settings.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json 
+    href: ../../settings/about-teams-and-settings.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json 
   - name: Agile glossary
     href: ../work-items/agile-glossary.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json 
 - name: How-to guides
@@ -54,8 +54,8 @@
   items:
   - name: Kanban board controls
     href: kanban-board-controls.md
-  - name: Keyboard shortcuts
-    href: ../../collaborate/keyboard-shortcuts.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json 
+  - name: Kanban board keyboard shortcuts
+    href: kanban-board-keyboard-shortcuts.md
   - name: Query by assignment,workflow or Kanban board changes
     href: ../track/query-by-workflow-changes.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json  
   - name: "Permissions & access for work tracking"
@@ -71,7 +71,7 @@
   - name: Customization
     href: ../customize/index.md
   - name: "Scale & Configure Teams"
-    href: ../../teams/index.md
+    href: ../../settings/index.md
   - name: "What is Agile?"
     href: https://www.visualstudio.com/learn/what-is-agile/
   - name: "What is Agile development?"

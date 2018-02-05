@@ -185,9 +185,9 @@ The following table indicates those elements or tasks associated with each type 
 
 <tr>
 <td>Charts </td>
-<td>[Cumulative flow](../../report/dashboards/cumulative-flow.md)<br/>[Velocity](../../report/dashboards/team-velocity.md)</td>
-<td>[Cumulative flow](../../report/dashboards/cumulative-flow.md)<br/>[Velocity](../../report/dashboards/team-velocity.md)</td>
-<td>[Cumulative flow](../../report/dashboards/cumulative-flow.md)<br/>[Velocity](../../report/dashboards/team-velocity.md)</td>
+<td>[Cumulative flow](../../report/dashboards/cumulative-flow.md)<br/>[Velocity](../../report/dashboards/velocity-chart-data-store.md)</td>
+<td>[Cumulative flow](../../report/dashboards/cumulative-flow.md)<br/>[Velocity](../../report/dashboards/velocity-chart-data-store.md)</td>
+<td>[Cumulative flow](../../report/dashboards/cumulative-flow.md)<br/>[Velocity](../../report/dashboards/velocity-chart-data-store.md)</td>
 <td>[Sprint burndown](../scrum/sprint-burndown.md) </td>
 <td>[Sprint burndown](../scrum/sprint-burndown.md) </td>
 </tr>
@@ -207,7 +207,7 @@ The following table indicates those elements or tasks associated with each type 
 
 **Notes:**
 1. Each team can determine how they want to track bugs: as requirements, as tasks, or not at all. When tracked as requirements, they appear in your product backlog, sprint backlogs, and Kanban board. When tracked as tasks, they appear in your sprint backlogs and task boards. For details, see [Show bugs on backlogs and boards](../customize/show-bugs-on-backlog.md).  
-2. Work items that appear on each team backlog and board meet the criteria defined for the [team selected area and iteration paths](../../teams/about-teams-and-settings.md).  
+2. Work items that appear on each team backlog and board meet the criteria defined for the [team selected area and iteration paths](../../settings/about-teams-and-settings.md).  
 3. The "In progress items Show/Hide" control is another filter you can apply to your product and portfolio backlogs. This control essentially shows or hides those work items where work has begun. It's useful to show/hide In Progress items when [forecasting sprint work](../scrum/forecast.md).  
 4. When you [add a team](../scale/multiple-teams.md), you essentially add another product backlog associated with that team. Each team can then manage their own set of sprint backlogs and portfolio backlogs. See [Configure team settings](../scale/manage-team-assets.md) for details.  
 5. Duration refers to how you use your backlog or board to plan and track work over time. Once you change the State of a work item to done or completed, it no longer appears on a portfolio or project backlog. As you complete each sprint, the system maintains a history of your activity. You can review past sprints and sprint burndown charts by choosing the sprint listed under the Past section. For more information, see [Sprint burndown](../scrum/sprint-burndown.md#current-and-past-sprint-burndown-charts).
@@ -244,7 +244,7 @@ A few things to keep in mind...
 
 Additional topics of interest:
 
-- [About teams and Agile tools](../../teams/about-teams-and-settings.md)   
+- [About teams and Agile tools](../../settings/about-teams-and-settings.md)   
 - [Add work items](add-work-items.md)   
 - [Adhoc vs managed work item queries](../track/adhoc-vs-managed-queries.md)   
 - [Dashboards](../../report/dashboards/dashboards.md)   

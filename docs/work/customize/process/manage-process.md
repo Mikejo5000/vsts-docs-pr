@@ -16,7 +16,7 @@ ms.date: 10/09/2017
 
 [!INCLUDE [temp](../../_shared/process-feature-availability.md)]
 
-In VSTS, you customize your team project through a process. (You configure your [Agile tools&mdash;Scrum and Kanban&mdash;through the web UI](../../../teams/about-teams-and-settings.md).) A process defines the building blocks of the work tracking system. Whenever you create a team project, you select the process you want your team project to use. 
+In VSTS, you customize your team project through a process. (You configure your [Agile tools&mdash;Scrum and Kanban&mdash;through the web UI](../../../settings/about-teams-and-settings.md).) A process defines the building blocks of the work tracking system. Whenever you create a team project, you select the process you want your team project to use. 
 
 VSTS supports two types of processes. 
 

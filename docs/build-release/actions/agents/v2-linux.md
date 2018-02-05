@@ -43,7 +43,7 @@ If you're building from a Subversion repo, you must install the Subversion clien
 <a name="download-configure"></a>
 ## Download and configure the agent
 
-### VSTS and TFS 2017
+### VSTS and TFS 2017 and newer
 
 <ol>
 <li>Log on to the machine using the account for which you've prepared permissions as explained above.</li>
@@ -75,7 +75,7 @@ If you're building from a Subversion repo, you must install the Subversion clien
 
 * VSTS: `https://{your-account}.visualstudio.com`
 
-* TFS 2017: `https://{your_server}/tfs`
+* TFS 2017 and newer: `https://{your_server}/tfs`
 
 * TFS 2015: `http://{your_server}:8080/tfs`
 
@@ -233,6 +233,10 @@ You can use the template described above as to facilitate generating other kinds
 Source code: [systemd.svc.sh.template on GitHub](https://github.com/Microsoft/vsts-agent/blob/master/src/Misc/layoutbin/systemd.svc.sh.template)
 
 [!INCLUDE [include](_shared/v2/qa-firewall.md)]
+
+### How do I run the agent with self-signed certificate?
+
+[Run the agent with self-signed certificate](certificate.md)
 
 ### How do I run the agent behind a web proxy?
 

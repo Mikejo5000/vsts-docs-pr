@@ -1,0 +1,57 @@
+- name: Public Projects
+  href: index.md
+- name: Overview
+  items:
+  - name: What is a public project? 
+    href: about-public-projects.md
+- name: Quickstarts
+  items:
+  - name: Create a public project
+    href: create-public-project.md
+  - name: Make a team project public
+    href: make-project-public.md
+  - name: Download code
+  - name: View and filter work items
+  - name: View a project page or dashboard
+  - name: View the project Wiki 
+- name: Tutorials
+  items:
+  - name: Browse the code base 
+    href: browse-code.md
+  - name: Clone a repository
+    href: clone-git-repo.md 
+  - name: View build progress  
+  - name: View release progress  
+  - name: View test plans and test results  
+- name: Concepts
+  items:
+  - name: Default roles and permissions
+    href: ../security/permissions-access.md?toc=/vsts/public/toc.json&bc=/vsts/public/breadcrumb/toc.json 
+- name: How-to Guides
+  items:
+  - name: Filter basics
+    href: ../work/backlogs/filter-backlogs.md?toc=/vsts/public/toc.json&bc=/vsts/public/breadcrumb/toc.json 
+  - name: Share or email a work item or set of work items 
+  - name: Search the code base
+    href: code-search.md
+  - name: Search work items
+    href: work-item-search.md
+- name: Reference
+  items:
+  - name: Terms of service
+    href: ../collaborate/rate-limits.md?toc=/vsts/public/toc.json&bc=/vsts/public/breadcrumb/toc.json 
+  - name: Work item form controls
+    href: ../work/work-items/work-item-form-controls.md?toc=/vsts/public/toc.json&bc=/vsts/public/breadcrumb/toc.json 
+- name: Resources
+  items:
+  - name: Git
+    href: ../git/index.md
+  - name: Work items
+    href: ../work/work-items/index.md 
+  - name: Search   
+    href: ../search/index.md  
+  - name: Notifications 
+    href: ../notifications/index.md  
+  - name: VSTS data protection overview
+    href: ../articles/team-services-security-whitepaper.md 
+

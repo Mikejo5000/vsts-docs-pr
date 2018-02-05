@@ -18,10 +18,8 @@
     href: inheritance-process-model.md
   - name: Hosted XML process model
     href: hosted-xml-process-model.md
-  - name: On-premises XML process model
-    href: on-premises-xml-process-model.md
   - name: Differences between cloud and on-premises process customizations
-    href: import-process/differences.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json 
+    href: import-process/differences.md 
   - name: "Workflow states & state categories"
     href: workflow-and-state-categories.md
   - name: Agile glossary
@@ -85,6 +83,8 @@
       href: ./reference/combine-list-types.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: Change reporting attributes (TFS)
       href: ./reference/add-or-modify-work-item-fields-to-support-reporting.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+  - name: Manage roll out of the new web form
+    href: manage-new-form-rollout.md 
   - name: Change the workflow
     href: ./reference/change-workflow-wit.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
   - name: Work item type or form
@@ -119,26 +119,6 @@
       href: ../work-items/guidance/manage-process-templates.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: Customize a process template
       href: ./reference/process-templates/customize-process.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
-  - name: On-premises TFS only
-    items:
-    - name: Configure features after an upgrade
-      href: configure-features-after-upgrade.md
-    - name: Add features manually 
-      href: add-features-manually.md
-    - name: Additional configuration options
-      href: additional-configuration-options.md
-    - name: New features added through feature enablement 
-      href: new-features-added.md
-    - name: Update a customized process template to access new features
-      href: update-customized-process-template.md
-    - name: When upgrading from TFS 2008 or TFS 2010  
-      href: upgrade-tfs-2008-or-2010.md
-    - name: Define a custom link type
-      href: ./reference/define-custom-link-type.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
-    - name: Change the maximum attachment size for work items
-      href: ./reference/change-maximum-attachment-size-work-items.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
-    - name: Use team fields instead of area paths
-      href: use-team-fields-instead-area-paths.md
 - name: Troubleshooting
   items:
     - name: Resolve validation errors
@@ -191,18 +171,6 @@
         href: ./reference/weblayout-xml-elements.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
       - name: LinksControlOptions (web)
         href: ./reference/linkscontroloptions-xml-elements.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
-    - name: Old (web and client) form layout
-      items:
-      - name: All FORM elements
-        href: ./reference/all-form-xml-elements-reference.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
-      - name: Layout
-        href: ./reference/layout-xml-element-reference.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
-      - name: Control
-        href: ./reference/control-xml-element-reference.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
-      - name: Tab
-        href: ./reference/tab-xml-element-reference.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
-      - name: LinksControlOptions (web/client)
-        href: ./reference/linkscontroloptions-elements.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: LabelText and Text
       href: ./reference/labeltext-and-text-xml-elements-reference.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: Link and Param
@@ -320,11 +288,9 @@
   - name: Work items
     href: ../work-items/index.md
   - name: "Scale & Configure Teams"
-    href: ../../teams/index.md
+    href: ../../settings/index.md
   - name: Account Management (VSTS)
     href: ../../accounts/index.md
-  - name: Server Administration (TFS)
-    href: ../../tfs-server/index.md
   - name: Marketplace extensions
     href: ../../marketplace/get-vsts-extensions.md
   - name: Extensibility and REST APIs

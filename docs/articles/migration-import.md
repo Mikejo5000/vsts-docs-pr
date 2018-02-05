@@ -204,10 +204,7 @@ Next, review the identities that are labeled as 'Historical'. This implies that 
 3. The identity simply doesn't exist in your AAD.
 4. The user that owned that identity no longer works at the company.
 
-In the first two cases the desired on-premises AD identity will need to be set up for sync with Azure AD. Check the [documentation](https://aka.ms/azureadconnect "Integrating your on-premises identities with Azure Active Directory") on setting a sync between your on-premises AD and Azure AD. It's required that Azure AD Connect be setup and run for identities to be imported as active in VSTS. 
-
-For the second and third case, the row can be left or removed from the file. The end result will be the same case - a historical identity. It's recommended that you reduce the mapping file down to just the set of identities that you wish be active after import, for simplicity and readability.
-
+In the first three cases the desired on-premises AD identity will need to be set up for sync with Azure AD. Check the [documentation](https://aka.ms/azureadconnect "Integrating your on-premises identities with Azure Active Directory") on setting a sync between your on-premises AD and Azure AD. It's required that Azure AD Connect be setup and run for identities to be imported as active in VSTS. The final case can generally be ignored as employees no longer at your company should be imported historically. 
 #### Historical Identities (Small Teams) 
 
 > The identity import strategy proposed in this section should only be considered by small teams. 
@@ -257,17 +254,19 @@ Data-tier Application Component Packages ([DACPAC](https://docs.microsoft.com/sq
 
 When generating a DACPAC there are two considerations that you'll want to keep in mind, the disk that the DACPAC will be saved on and the space on disk for the machine performing the DACPAC generation. Before generating a DACPAC you’ll want to ensure that you have enough space on disk to complete the operation. While creating the package, SqlPackage.exe temporarily stores data from your collection in the temp directory on the C: drive of the machine you initiate the packaging request from. Some users might find that their C: drive is too small to support creating a DACPAC. Estimating the amount of space you'll need can be found by looking for the largest table in your collection database. As DACPACs are created one table at a time. The maximum space requirement to run the generation will be roughly equivalent to the size of the largest table in the collection's database. You will also need to take into account the size of the collection database as reported in TfsMigrator.log file from a validation run, if you choose to save the generated DACPAC on the C: drive.
 
-Running the below query will display the size of the largest table in your collection's database in MBs. Compare that size with the free space on the C: drive for the machine you plan to run the generation on. 
+TfsMigrator.log provides a list of the largest tables in the collection each time the validate command is run. See the example below for a sample output showing table sizes for a collection. Compare the size of the largest table with the free space on the drive hosting your temporary directory. 
 
-```SQL 
-SELECT TOP 1 OBJECT_NAME(object_id), sum(reserved_page_count) * 8/1024.0 as SizeInMb
-FROM sys.dm_db_partition_stats
-WHERE index_id = 1
-GROUP BY object_id
-ORDER BY SizeInMb DESC
+```cmdline 
+[Info   @08:23:59.539] Table name                               Size in MB
+[Info   @08:23:59.539] dbo.tbl_Content                          38984
+[Info   @08:23:59.539] dbo.tbl_LocalVersion                     1935
+[Info   @08:23:59.539] dbo.tbl_Version                          238
+[Info   @08:23:59.539] dbo.tbl_FileReference                    85
+[Info   @08:23:59.539] dbo.Rules                                68
+[Info   @08:23:59.539] dbo.tbl_FileMetadata                     61
 ```
 
-Using the size output from the SQL command, ensure that the C: drive of the machine that will create the DACPAC has at least that much space. If it doesn't then you'll need to redirect the temp directory by setting an environment variable. 
+Ensure that the drive hosting your temporary directory has at least that much free space. If it doesn't then you'll need to redirect the temp directory by setting an environment variable. 
 
 ```cmdline
 SET TEMP={location on disk}
@@ -340,7 +339,7 @@ Below are some additional recommended configurations for your SQL Azure VM.
 4. If your source database is still over 1TB after [reducing the size](https://docs.microsoft.com/en-us/vsts/tfs-server/upgrade/clean-up-data) then you will need to [attach](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/attach-disk-portal) additional 1TB disks and combine them into a single partition to restore your database on the VM. 
 5. Collection databases over 1TB in size should consider using Solid State Drives (SSDs) for both the temporary database and collection database. 
 
-#### Configuring IP Firewall Rules for VSTS 
+#### VSTS IPs 
 
 It's highly recommended that you restrict access to your VM to only IPs from VSTS. This can be accomplished by allowing connections only from the set of VSTS IPs that are involved in the collection database import process. The IPs that need to be granted access to your collection database will depend on what region you're importing into. The tables below will help you identify the correct IPs. The only port that is required to be opened to connections is the standard SQL connection port 1433.
 
@@ -421,8 +420,23 @@ You will need to add exceptions for all three services that make up Package Mana
 |    Package Management Blob - India South            |    52.172.54.122    |
 |    Package Management Blob - Canada Central         |    52.237.16.145    |
 |    Package Management Blob - East Asia (Hong Kong)  |    13.94.26.58      |
+ 
 
-Your SQL Azure VM should now be set up to allow your data to be imported to VSTS. Follow the rest of the steps below to queue your import. 
+#### Configuring IP Firewall Exceptions
+
+Granting exceptions for the necessary IPs is handled at the Azure networking layer for your SQL Azure VM. To get started you will need to navigate to your SQL Azure VM on the [Azure portal](https://ms.portal.azure.com). Then select 'Networking' from the settings. This will take you to the network interface page for your SQL Azure VM. The Import Service requires the VSTS IPs to be configured for inbound connections only on port 1433. Exceptions for the IPs can be made by selecting "Add inbound port rule" from the networking settings. 
+
+![Add inbound port rule](_img/migration-import/inbound.png)
+
+Select advanced to configure an inbound port rul for a specific IP. 
+
+![Advanced inbound port rule configuration](_img/migration-import/advanced.png)
+
+Set the source to "IP Addresses", enter one of the IPs that need to be granted an exception, set the destination port range to 1433, and provide a name that best describes the exception you're configuring. Depending on other inbound port rules that have been configured, the default priority for the VSTS exceptions might need to be changed so they don't get ignored. For example, if you have a deny on all inbound connections to 1433 rule with a higher priority than your VSTS exceptions, the Import Service might not be able to make a successful connection to your database. 
+
+![Completed inbound port rule configuration](_img/migration-import/example.png)
+
+You will need to repeat adding inbound port rules until all necessary VSTS IPs have been granted an exception. Missing one IP could result in your import failing to start. 
 
 #### Restoring your Database on the VM
 
@@ -573,6 +587,9 @@ Be sure to check out the [post import](.\migration-post-import.md) documentation
 
 ## Running an Import
 The great news is that your team is now ready to begin the process of running an import. It's recommended that your team start with a dry run import and then finally a production run import. Dry run imports allow your team to see how the end results of an import will look, identify potential issues, and gain experience before heading into your production run. 
+
+> [!NOTE]
+> Repeating a production run import of a completed import for a collection, such as in the event of a rollback, requires reaching out to VSTS [Customer Support](https://www.visualstudio.com/team-services/support/) before queuing another import.
 
 ### Considerations for Roll Back Planning
 A common concern that teams have for the final production run is to think through what the rollback plan will be if anything goes wrong with import. This is also why we highly recommend doing a dry run to make sure you are able to test the import settings you provide to the TFS Database Import Service.
