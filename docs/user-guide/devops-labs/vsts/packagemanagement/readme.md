@@ -157,7 +157,7 @@ When we create builds, the first step is the **Nuget package restore** step, but
 
 1. Create an empty file named **nuget.config** at the same level as the solution file you will be building with **Team Build** and paste this code:  
 
-   ```
+   ```xml
    <?xml version="1.0" encoding="utf-8"?>
    <configuration>
    <packageSources>
@@ -178,7 +178,7 @@ When we create builds, the first step is the **Nuget package restore** step, but
 
 4. During the build you can see the console output while building the project which references the internal Nuget feed.
 
-   ```
+   ```output
    Feeds used:
    C:\Users\buildguest\AppData\Local\NuGet\Cache
    https://api.nuget.org/v3/index.json
