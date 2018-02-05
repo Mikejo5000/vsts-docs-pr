@@ -3,7 +3,7 @@ title: Deploying a SQL Database ASP.NET app to Azure
 description: Deploying a SQL Database backed ASP.NET apps to Azure with Visual Studio 
 ms.prod: vs-devops-alm
 ms.technology: 
-ms.assetid:  
+ms.assetid: 8BB5830F-50F5-4799-AF80-4268DCE3AB26 
 ms.manager: douge
 ms.author: sraj 
 ms.date: 01/25/2018
