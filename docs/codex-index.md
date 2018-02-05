@@ -74,7 +74,7 @@ featureFlags:
         </ul>
     </div>
     <div class="container">
-        <h1>CodeX - CodeBox, CodeLaunch, CodeTest, CodePlan, CodeFeed Documentation</h1>
+        <h1>CodeX Documentation</h1>
         <ul class="pivots">
             <li>
                 <a href="#start">Get Started</a>
@@ -607,7 +607,7 @@ featureFlags:
                         <a href="#codeplan">CodePlan</a>
                         <ul id="codeplan" class="cardsA">
                             <li>
-                                <a href="/vsts/work/work-items/index">
+                                <a href="/vsts/work/codeplan-items/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -704,7 +704,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/work/customize/process/customize-process">
+                                <a href="/vsts/work/customize/inheritance-process-model?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -745,7 +745,7 @@ featureFlags:
                         </ul>
                     </li>
                     <li>
-                        <a href="#reporting">Reporting</a>
+                        <a href="#reporting">Dashboards</a>
                         <ul id="reporting" class="cardsA">
                             <li>
                                 <a href="/vsts/report/dashboards/index">
@@ -804,43 +804,24 @@ featureFlags:
                                     </div>
                                 </a>
                             </li>
-                            <li>
-                                <a href="/vsts/report/sql-reports/">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="_img/index/sql-server-reporting.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>SQL Server Reporting (TFS)</h3>
-                                                    <p>Work with Reporting Services reports, add reports, and manage the data warehouse and cube.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
                         </ul>
                     </li>
                     <li>
-                        <a href="#collaboration">Collaboration</a>
+                        <a href="#collaboration">Wiki, Search, Navigation</a>
                         <ul id="collaboration" class="cardsA">
                             <li>
-                                <a href="/vsts/notifications/index">
+                                <a href="/vsts/navigation/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/media/common/i_alert.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/common/i_feedback.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Notifications</h3>
-                                                    <p>Define which events generate alerts or post messages in third party tools.</p>
+                                                    <h3>Navigation</h3>
+                                                    <p>Switch apps, team projects, teams, and manage settings.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -860,6 +841,25 @@ featureFlags:
                                                 <div class="cardText">
                                                     <h3>READMEs &amp; Wikis</h3>
                                                     <p>Share information with your team and stakeholders.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/vsts/notifications/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com/media/common/i_alert.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Notifications</h3>
+                                                    <p>Define which events generate alerts or post messages in third party tools.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -922,7 +922,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>"Project & Account Settings"</h3>
+                                                    <h3>Project & Account Settings</h3>
                                                     <p>Configure resources for CodeBox, CodeLaunch, CodePlan, and other CodeX apps.</p>
                                                 </div>
                                             </div>

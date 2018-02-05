@@ -11,7 +11,11 @@ ms.date: 11/10/2017
 
 # Widget catalog 
 
-**VSTS | TFS 2018 | TFS 2017 | TFS 2015.1-2015.3**  
+[!INCLUDE [temp](../../_shared/banner-vsts-tfs.md)]
+
+<!---
+**VSTS | TFS 2018 | TFS 2017 | TFS 2015.1-2015.3** 
+--> 
 
 Widgets display information and charts on dashboards. Many of them are configurable and display information available from one or more data stores or charts maintained within the system. 
 
@@ -517,7 +521,7 @@ Provides status and access to [team rooms](../../collaborate/collaborate-in-a-te
 Team rooms support increased team productivity by providing a space to discuss work in progress, ask questions, share status, and clarify issues that arise. Team administrators can create additional team rooms.  
 
 > [!NOTE]  
-> **Feature availability:** Team Rooms have been deprecated for VSTS and TFS 2018 and later versions as described in this blog post,  [Deprecation of the Team Rooms in VSTS and TFS](https://blogs.msdn.microsoft.com/devops/2017/01/04/deprecation-of-the-team-rooms-in-team-services-and-tfs/). Several good solutions are available that integrate well with TFS that support notifications and chat, such as [Microsoft Teams](https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-teams) and [Slack](../service-hooks/services/slack.md).  
+> **Feature availability:** Team Rooms have been deprecated for VSTS and TFS 2018 and later versions as described in this blog post,  [Deprecation of the Team Rooms in VSTS and TFS](https://blogs.msdn.microsoft.com/devops/2017/01/04/deprecation-of-the-team-rooms-in-team-services-and-tfs/). Several good solutions are available that integrate well with TFS that support notifications and chat, such as [Microsoft Teams](https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-teams) and [Slack](../../service-hooks/services/slack.md).  
 
 
 ---- 
