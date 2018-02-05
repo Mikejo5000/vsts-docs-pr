@@ -11,7 +11,7 @@
 - name: Tutorials
   items:
   - name: Manage portfolios
-    href: ../codeplan/portfolio-management.md?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json
+    href: ../scale/portfolio-management.md?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json
   - name: Review team delivery plans
     href: ../scale/review-team-plans.md?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json
   - name: Set team favorites
