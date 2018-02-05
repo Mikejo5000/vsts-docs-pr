@@ -21,7 +21,7 @@ ms.date: 01/25/2018
 
     <img src="images/vsupdate.png" />
 
-1.	Select the check box next to **Data Storage and Processing** to add the components relating to this workload. Click the **Modify** button to complete the installation
+1. Select the check box next to **Data Storage and Processing** to add the components relating to this workload. Click the **Modify** button to complete the installation
 
     <img src="images/vsselectdataworkload.png" />
 

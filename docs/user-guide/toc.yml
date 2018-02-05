@@ -93,6 +93,8 @@
       href: devops-labs/tfs/codeanalysis/readme.md
     - name: Working with EditorConfig
       href: devops-labs/tfs/editorconfig/readme.md
+    - name: Installing Redgate Data Tools
+      href: devops-labs/tfs/redgateinstall/readme.md
   - name: VSTS labs overview
     href: devops-labs/vsts/readme.md     
     items:

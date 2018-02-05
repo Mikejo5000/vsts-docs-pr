@@ -166,6 +166,9 @@ Here are the 2018 hands-on-labs for Team Foundation Server. If you want to acces
    <tr>
       <td><a href="editorconfig/readme.md">Working with EditorConfig in Visual Studio 2017</a></td>
    </tr>
+   <tr>
+      <td><a href="redgateinstall/readme.md">Installing Redgate Data Tools and ReadyRoll Extension</a></td>
+   </tr>
 </table>
 
 ## Previous Versions
