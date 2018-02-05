@@ -5,7 +5,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-performance
 ms.assetid: 063D6E13-C330-46F9-9B86-24168E6F6646
 ms.manager: douge
-ms.author: ahomer
+ms.author: sraj
 ms.date: 01/29/2018
 ---
 

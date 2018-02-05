@@ -5,7 +5,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: BAA4F980-9B3A-4C19-9997-8ABF0B0F9D43 
 ms.manager: douge
-ms.author: ahomer 
+ms.author: sraj 
 ms.date: 01/25/2018
 ---
 
