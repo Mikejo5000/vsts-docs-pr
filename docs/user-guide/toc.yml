@@ -32,7 +32,7 @@
     href: ../security/get-started-stakeholder.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
 - name: Hands-on Labs
   items:
-  - name: TFS labs overview
+  - name: TFS and VS labs overview
     href: devops-labs/tfs/readme.md
     items:
     - name: Agile Planning and Portfolio Management

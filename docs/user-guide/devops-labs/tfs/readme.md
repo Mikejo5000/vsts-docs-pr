@@ -1,6 +1,6 @@
 ---
-title: ALM VM 2018 - Hands-on-Labs
-description: ALM VM 2018 - Overview of the Hands-on-Labs
+title: TFS and VS Hands-on-Labs
+description: ALM VM 2018 - Overview of the TFS and Visual Studio Hands-on-Labs
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: 4A2E7ABD-D74F-46E8-BF68-63CC6E72B0CC 
@@ -9,7 +9,7 @@ ms.author: sraj
 ms.date: 01/25/2018
 ---
 
-# TFS Hands-on-Labs Overview
+# TFS and Visual Studio Hands-on-Labs Overview
 
 The Microsoft Visual Studio ALM VM and the accompanying hands-on-labs are now updated to Visual Studio 2017 (15.5) and Team Foundation Server 2018. 
 
