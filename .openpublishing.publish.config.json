@@ -1,4 +1,6 @@
 {
+  "need_generate_pdf_url_template": true,
+  "need_generate_intellisense": false,
   "docsets_to_publish": [
     {
       "docset_name": "release-notes",
@@ -6,6 +8,7 @@
       "build_output_subfolder": "release-notes",
       "locale": "en-us",
       "monikers": [],
+      "moniker_ranges": [],
       "open_to_public_contributors": false,
       "type_mapping": {
         "Conceptual": "Content",
@@ -13,9 +16,7 @@
         "RestApi": "Content"
       },
       "build_entry_point": "docs",
-      "template_folder": "_themes",
-      "moniker_groups": [],
-      "version": 0
+      "template_folder": "_themes"
     },
     {
       "docset_name": "team-services",
@@ -51,27 +52,21 @@
       "branch_mapping": {}
     },
     {
-      "path_to_root": "_themes.pdf",
-      "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
-      "branch": "master",
-      "branch_mapping": {}
-    }
+			"path_to_root": "_themes.pdf",
+			"url": "https://github.com/Microsoft/templates.docs.msft.pdf",
+			"branch": "master"
+		}
+
   ],
+
+  "Targets": {  
+    "Pdf": {  
+    "template_folder": "_themes.pdf"  
+    }  
+   },
+
   "branch_target_mapping": {
-    "live": [
-      "Publish",
-      "Pdf"
-    ],
-    "master": [
-      "Publish",
-      "Pdf"
-    ]
-  },
-  "need_generate_pdf_url_template": true,
-  "need_generate_intellisense": false,
-  "Targets": {
-    "Pdf": {
-      "template_folder": "_themes.pdf"
-    }
-  }
+      "live": ["Publish", "Pdf"], 
+      "master": ["Publish", "Pdf"]
+}
 }
