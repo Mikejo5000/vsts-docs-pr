@@ -247,13 +247,13 @@ featureFlags:
                                 <div class="group">
                                     <h3>CodePlan</h3>
                                     <ul>
-                                        <li><a class="barLink" href="/vsts/work/codeplan-items/index">Work Items</a></li>
-                                        <li><a class="barLink" href="/vsts/work/codeplan-backlogs/index">Backlogs</a></li>
-                                        <li><a class="barLink" href="/vsts/work/codeplan-boards/index">Kanban</a></li>
-                                        <li><a class="barLink" href="/vsts/work/codeplan-scrum/index">Scrum</a></li>
-                                        <li><a class="barLink" href="/vsts/work/codeplan-queries/index">Queries</a></li>
-                                        <li><a class="barLink" href="/vsts/work/customize/process/customize-process">Process Customization</a></li>
-                                        <li><a class="barLink" href="/vsts/work/scale/index">Agile at Scale</a></li>
+                                        <li><a class="barLink" href="/vsts/work/codeplan-items/index?toc=/vsts/work/codeplan-items/toc.json&bc=/vsts/work/codeplan-items/breadcrumb/toc.json">Work Items</a></li>
+                                        <li><a class="barLink" href="/vsts/work/codeplan-backlogs?toc=/vsts/work/codeplan-backlogs/toc.json&bc=/vsts/work/codeplan-backlogs/breadcrumb/toc.json/index">Backlogs</a></li>
+                                        <li><a class="barLink" href="/vsts/work/codeplan-boards/index?toc=/vsts/work/codeplan-boards/toc.json&bc=/vsts/work/codeplan-boards/breadcrumb/toc.json">Kanban</a></li>
+                                        <li><a class="barLink" href="/vsts/work/codeplan-scrum/index?toc=/vsts/work/codeplan-scrum/toc.json&bc=/vsts/work/codeplan-scrum/breadcrumb/toc.json">Scrum</a></li>
+                                        <li><a class="barLink" href="/vsts/work/codeplan-queries/index?toc=/vsts/work/codeplan-queries/toc.json&bc=/vsts/work/codeplan-queries/breadcrumb/toc.json">Queries</a></li>
+                                        <li><a class="barLink" href="/vsts/work/customize/process/customize-process?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json">Process Customization</a></li>
+                                        <li><a class="barLink" href="/vsts/work/codeplan-scale/index?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json">Agile at Scale</a></li>
                                     </ul>
                                     <h3>Dashboards</h3>
                                     <ul>
