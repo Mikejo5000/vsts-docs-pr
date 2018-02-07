@@ -60,7 +60,7 @@ To use the **destroy** command, you must belong to the **Team Foundation Adminis
 <tr>
 	<td><p><strong>/startcleanup</strong></p></td>
 	<td><p>Forces the TFVC metadata clean-up process to start immediately after the deletion finishes. If the user does not specify <strong>/startcleanup</strong>, the destroyed metadata clean-up process occurs when the database maintenance cleans up all the files that are no longer referenced by Visual Studio Team Foundation Server. By default, the clean-up is scheduled to run every 5 days. Seven days after the TFVC metadata are cleaned up the content will be deleted by another clean-up process. By default, this content clean-up process runs once each day.<br/>
-	Note that the collection must be active to ensure the clean-up processes are scheduled.</p></td></tr>
+	<strong>Note:</strong> The collection must be active to ensure the clean-up processes are scheduled.</p></td></tr>
 <tr>
 	<td><p><strong>/noprompt</strong></p><p><strong>/i</strong></p></td>
 	<td><p>Specifies that the destruction of files is non-interactive. <strong>/i</strong> is an alias for <strong>/noprompt</strong>.</p></td></tr>
