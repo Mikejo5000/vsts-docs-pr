@@ -34,102 +34,144 @@
   items:
   - name: TFS and VS labs overview
     href: devops-labs/tfs/readme.md
-    items:
-    - name: Agile Planning and Portfolio Management
-      href: devops-labs/tfs/agile/readme.md
-    - name: Agile Work Item Management
-      href: devops-labs/tfs/agileworkitems/readme.md
-    - name: Collaboration Experiences
-      href: devops-labs/tfs/devteamcollaboration/readme.md
-    - name: Embracing Continuous Delivery
-      href: devops-labs/tfs/releasemanagement/readme.md
-    - name: Exploratory Testing and Feedback
-      href: devops-labs/tfs/exploratorytesting/readme.md
-    - name: Getting Started with Git
-      href: devops-labs/tfs/git/readme.md
-    - name: Modern Requirements Suite4TFS
-      href: devops-labs/tfs/smartword4tfs/readme.md
-    - name: Making Developers More Productive
-      href: devops-labs/tfs/vsproductivity/readme.md
-    - name: Managing Delivery Plans
-      href: devops-labs/tfs/deliveryplans/readme.md
-    - name: Managing Technical Debt
-      href: devops-labs/tfs/technicaldebt/readme.md
-    - name: Package Management in TFS
-      href: devops-labs/tfs/packagemanagement/readme.md
-    - name: Develop and Deploy Databases
-      href: devops-labs/tfs/readyroll/readme.md
-    - name: Enabling Continuous Delivery
-      href: devops-labs/tfs/build/readme.md
-    - name: Test Planning and Management
-      href: devops-labs/tfs/manualtesting/readme.md
-    - name: Load and Performance Testing
-      href: devops-labs/tfs/load/readme.md
-    - name: Authoring ARM Templates
-      href: devops-labs/tfs/armtemplates/readme.md
-    - name: ASP.NET apps with SQL Database
-      href: devops-labs/tfs/aspnetazure/readme.md
-    - name: Debugging with Snapshot
-      href: devops-labs/tfs/snapshotdebugger/readme.md
-    - name: Debugging with IntelliTrace
-      href: devops-labs/tfs/debugging/readme.md
-    - name: Developer experience enhancements
-      href: devops-labs/tfs/devexp/readme.md
-    - name: Diagnosing Issues with IntelliTrace
-      href: devops-labs/tfs/intellitrace/readme.md
-    - name: ASP.NET with Application Insights
-      href: devops-labs/tfs/appinsights/readme.md
-    - name: Generate Unit Tests with IntelliTest
-      href: devops-labs/tfs/intellitest/readme.md
-    - name: Live Dependency Validation
-      href: devops-labs/tfs/livedependencyvalidation/readme.md
-    - name: Live Unit Testing
-      href: devops-labs/tfs/liveunittesting/readme.md
-    - name: SQL Prompt for Visual Studio
-      href: devops-labs/tfs/sqlprompt/readme.md
-    - name: UI Automation using Coded UI
-      href: devops-labs/tfs/codedui/readme.md
-    - name: Using Code Analysis
-      href: devops-labs/tfs/codeanalysis/readme.md
-    - name: Working with EditorConfig
-      href: devops-labs/tfs/editorconfig/readme.md
-    - name: Installing Redgate Data Tools
-      href: devops-labs/tfs/redgateinstall/readme.md
   - name: VSTS labs overview
-    href: devops-labs/vsts/readme.md     
+    href: devops-labs/vsts/readme.md
+  - name: Continuous integration and deployment
     items:
-    - name: Agile Planning and Portfolio Management
-      href: devops-labs/vsts/agile/readme.md
-    - name: Version Controlling with Git
-      href: devops-labs/vsts/git/readme.md
-    - name: Package Management in VSTS
-      href: devops-labs/vsts/packagemanagement/readme.md
-    - name: Continuous Integration
-      href: devops-labs/vsts/continuousintegration/readme.md
-    - name: Continuous Deployment
-      href: devops-labs/vsts/continuousdeployment/readme.md
-    - name: Azure Continuous Delivery Workflow
-      href: devops-labs/vsts/azurecd/readme.md
-    - name: Test Planning and Management
-      href: devops-labs/vsts/testmanagement/readme.md
-    - name: Exploratory Testing and Feedback
-      href: devops-labs/vsts/exploratorytesting/readme.md
-    - name: UI Testing using Selenium
-      href: devops-labs/vsts/selenium/readme.md
-    - name: Load Testing using VSTS
-      href: devops-labs/vsts/load/readme.md
-    - name: Using Application Insights
-      href: devops-labs/vsts/monitor/readme.md
-    - name: Deploy an ASP.NET Web App
-      href: devops-labs/vsts/appservice/readme.md
-    - name: Manage Azure Resources
-      href: devops-labs/vsts/azureresource/readme.md
-    - name: Microsoft Teams Integration
-      href: devops-labs/vsts/teams/readme.md
-    - name: Connect VSTS with Power BI
-      href: devops-labs/vsts/powerbi/readme.md
-    - name: DevOps for Node.js
-      href: devops-labs/vsts/nodejs/readme.md
+    - name: TFS labs
+      items:
+      - name: Enabling Continuous Delivery
+        href: devops-labs/tfs/build/readme.md
+      - name: Embracing Continuous Delivery
+        href: devops-labs/tfs/releasemanagement/readme.md
+      - name: ASP.NET apps with SQL Database
+        href: devops-labs/tfs/aspnetazure/readme.md
+      - name: Managing Technical Debt
+        href: devops-labs/tfs/technicaldebt/readme.md
+      - name: Package Management in TFS
+        href: devops-labs/tfs/packagemanagement/readme.md
+    - name: VSTS labs
+      items:
+      - name: Continuous Integration
+        href: devops-labs/vsts/continuousintegration/readme.md
+      - name: Continuous Deployment
+        href: devops-labs/vsts/continuousdeployment/readme.md
+      - name: Azure Continuous Delivery Workflow
+        href: devops-labs/vsts/azurecd/readme.md
+      - name: Deploy an ASP.NET Web App
+        href: devops-labs/vsts/appservice/readme.md
+      - name: DevOps for Node.js
+        href: devops-labs/vsts/nodejs/readme.md
+      - name: Package Management in VSTS
+        href: devops-labs/vsts/packagemanagement/readme.md
+  - name: Testing applications
+    items:
+    - name: TFS labs
+      items:
+      - name: Test Planning and Management
+        href: devops-labs/tfs/manualtesting/readme.md
+      - name: Load and Performance Testing
+        href: devops-labs/tfs/load/readme.md
+      - name: Exploratory Testing and Feedback
+        href: devops-labs/tfs/exploratorytesting/readme.md
+      - name: Generate Unit Tests with IntelliTest
+        href: devops-labs/tfs/intellitest/readme.md
+      - name: Live Unit Testing
+        href: devops-labs/tfs/liveunittesting/readme.md
+    - name: VSTS labs
+      items:
+      - name: Test Planning and Management
+        href: devops-labs/vsts/testmanagement/readme.md
+      - name: Exploratory Testing and Feedback
+        href: devops-labs/vsts/exploratorytesting/readme.md
+      - name: UI Testing using Selenium
+        href: devops-labs/vsts/selenium/readme.md
+      - name: Load Testing using VSTS
+        href: devops-labs/vsts/load/readme.md
+  - name: Work tracking
+    items:
+    - name: TFS labs
+      items:
+      - name: Agile Planning and Portfolio Management
+        href: devops-labs/tfs/agile/readme.md
+      - name: Agile Work Item Management
+        href: devops-labs/tfs/agileworkitems/readme.md
+      - name: Managing Delivery Plans
+        href: devops-labs/tfs/deliveryplans/readme.md
+    - name: VSTS labs
+      items:
+      - name: Agile Planning and Portfolio Management
+        href: devops-labs/vsts/agile/readme.md
+  - name: Working with Git
+    items:
+    - name: TFS labs
+      items:
+      - name: Getting Started with Git
+        href: devops-labs/tfs/git/readme.md
+    - name: VSTS labs
+      items:
+      - name: Version Controlling with Git
+        href: devops-labs/vsts/git/readme.md
+  - name: Microsoft Azure
+    items:
+    - name: TFS labs
+      items:
+      - name: Authoring ARM Templates
+        href: devops-labs/tfs/armtemplates/readme.md
+      - name: ASP.NET with Application Insights
+        href: devops-labs/tfs/appinsights/readme.md
+    - name: VSTS labs
+      items:
+      - name: Using Application Insights
+        href: devops-labs/vsts/monitor/readme.md
+      - name: Manage Azure Resources
+        href: devops-labs/vsts/azureresource/readme.md
+  - name: Debugging applications
+    items:
+    - name: TFS labs
+      items:
+      - name: Debugging with IntelliTrace
+        href: devops-labs/tfs/debugging/readme.md
+      - name: Diagnosing Issues with IntelliTrace
+        href: devops-labs/tfs/intellitrace/readme.md
+      - name: Debugging with Snapshot
+        href: devops-labs/tfs/snapshotdebugger/readme.md
+  - name: Visual Studio client
+    items:
+    - name: TFS labs
+      items:
+      - name: Making Developers More Productive
+        href: devops-labs/tfs/vsproductivity/readme.md
+      - name: Developer experience enhancements
+        href: devops-labs/tfs/devexp/readme.md
+      - name: Live Dependency Validation
+        href: devops-labs/tfs/livedependencyvalidation/readme.md
+      - name: Using Code Analysis
+        href: devops-labs/tfs/codeanalysis/readme.md
+      - name: UI Automation using Coded UI
+        href: devops-labs/tfs/codedui/readme.md
+      - name: Develop and Deploy Databases
+        href: devops-labs/tfs/readyroll/readme.md
+      - name: Installing Redgate Data Tools
+        href: devops-labs/tfs/redgateinstall/readme.md
+      - name: Working with EditorConfig
+        href: devops-labs/tfs/editorconfig/readme.md
+      - name: SQL Prompt for Visual Studio
+        href: devops-labs/tfs/sqlprompt/readme.md
+  - name: Other topics
+    items:
+    - name: TFS labs
+      items:
+      - name: Collaboration Experiences
+        href: devops-labs/tfs/devteamcollaboration/readme.md
+      - name: Modern Requirements Suite4TFS
+        href: devops-labs/tfs/smartword4tfs/readme.md
+    - name: VSTS labs
+      items:
+      - name: Microsoft Teams Integration
+        href: devops-labs/vsts/teams/readme.md
+      - name: Connect VSTS with Power BI
+        href: devops-labs/vsts/powerbi/readme.md
 - name: Concepts
   items:
   - name: Key concepts 
