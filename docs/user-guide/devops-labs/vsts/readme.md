@@ -42,7 +42,6 @@ Visual Studio Team Services Demo Generator helps you create projects on your Vis
          <th><b>Last Updated</b></th>
       </tr>
    </thead>
-   
    <tr>
       <td><b>Continuous integration and deployment</b></td>
       <td></td>
@@ -71,7 +70,6 @@ Visual Studio Team Services Demo Generator helps you create projects on your Vis
       <td><a href="packagemanagement/readme.md">Package Management using Visual Studio Team Services</a></td>
       <td>May 15, 2017</td>
    </tr>
-   
    <tr>
       <td><b>Testing applications</b></td>
       <td></td>
@@ -92,7 +90,6 @@ Visual Studio Team Services Demo Generator helps you create projects on your Vis
       <td><a href="load/readme.md">Load Testing using Visual Studio Team Services</a></td>
       <td>March 6, 2017</td>
    </tr>
-
    <tr>
       <td><b>Work tracking</b></td>
       <td></td>
@@ -101,7 +98,6 @@ Visual Studio Team Services Demo Generator helps you create projects on your Vis
       <td><a href="agile/readme.md">Agile Planning and Portfolio Management using Visual Studio Team Services</a></td>
       <td>April 19, 2017</td>
    </tr>
-   
    <tr>
       <td><b>Working with Git</b></td>
       <td></td>
@@ -110,7 +106,6 @@ Visual Studio Team Services Demo Generator helps you create projects on your Vis
       <td><a href="git/readme.md">Version Controlling with Git using Visual Studio Team Services</a></td>
       <td>April 22, 2017</td>
    </tr>
-   
    <tr>
       <td><b>Microsoft Azure</b></td>
       <td></td>
@@ -119,7 +114,6 @@ Visual Studio Team Services Demo Generator helps you create projects on your Vis
       <td><a href="monitor/readme.md">Monitoring Applications using Application Insights</a></td>
       <td>March 6, 2017</td>
    </tr>
-   
    <tr>
       <td><b>Visual Studio client</b></td>
       <td></td>
@@ -128,7 +122,6 @@ Visual Studio Team Services Demo Generator helps you create projects on your Vis
       <td><a href="azureresource/readme.md">Deploy and Manage Azure Resources from Visual Studio</a></td>
       <td>March 2, 2017</td>
    </tr>
-   
    <tr>
       <td><b>Other topics</b></td>
       <td></td>
@@ -141,5 +134,4 @@ Visual Studio Team Services Demo Generator helps you create projects on your Vis
       <td><a href="powerbi/readme.md">Connect to Visual Studio Team Services with Power BI</a></td>
       <td>June 30, 2017</td>
    </tr>
-   
 </table>

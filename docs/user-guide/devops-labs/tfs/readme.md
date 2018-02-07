@@ -77,7 +77,6 @@ Here are the 2018 hands-on-labs for Team Foundation Server. If you want to acces
    <tr>
       <td><a href="started/readme.md">Working with the Visual Studio 2017 (Winter Update) ALM Virtual Machine</a></td>
    </tr>
-
    <tr>
       <td><b>Continuous integration and deployment</b></td>
    </tr>
@@ -96,7 +95,6 @@ Here are the 2018 hands-on-labs for Team Foundation Server. If you want to acces
    <tr>
       <td><a href="packagemanagement/readme.md">Package Management in Team Foundation Server 2018</a></td>
    </tr>
-
    <tr>
       <td><b>Testing applications</b></td>
    </tr>
@@ -115,7 +113,6 @@ Here are the 2018 hands-on-labs for Team Foundation Server. If you want to acces
    <tr>
       <td><a href="liveunittesting/readme.md">Live Unit Testing, Code Coverage and Code Clone Analysis with Visual Studio 2017</a></td>
    </tr>
-
    <tr>
       <td><b>Work tracking</b></td>
    </tr>
@@ -128,14 +125,12 @@ Here are the 2018 hands-on-labs for Team Foundation Server. If you want to acces
    <tr>
       <td><a href="deliveryplans/readme.md">Managing Delivery Plans with Team Foundation Server 2018</a></td>
    </tr>
-
    <tr>
       <td><b>Working with Git repositories</b></td>
    </tr>
    <tr>
       <td><a href="git/readme.md">Getting Started with Git using Team Foundation Server 2018</a></td>
    </tr>
-
    <tr>
       <td><b>Microsoft Azure</b></td>
    </tr>
@@ -145,7 +140,6 @@ Here are the 2018 hands-on-labs for Team Foundation Server. If you want to acces
    <tr>
       <td><a href="appinsights/readme.md">Instrumenting ASP.NET with Application Insights in Visual Studio 2017</a></td>
    </tr>
-
    <tr>
       <td><b>Debugging applications</b></td>
    </tr>
@@ -158,7 +152,6 @@ Here are the 2018 hands-on-labs for Team Foundation Server. If you want to acces
    <tr>
       <td><a href="snapshotdebugger/readme.md">Debugging with Snapshot Debugger</a></td>
    </tr>
-
    <tr>
       <td><b>Visual Studio client</b></td>
    </tr>
@@ -189,7 +182,6 @@ Here are the 2018 hands-on-labs for Team Foundation Server. If you want to acces
    <tr>
       <td><a href="redgateinstall/readme.md">Installing Redgate Data Tools and ReadyRoll Extension</a></td>
    </tr>
-
    <tr>
       <td><b>Other topics</b></td>
    </tr>
@@ -199,7 +191,6 @@ Here are the 2018 hands-on-labs for Team Foundation Server. If you want to acces
    <tr>
       <td><a href="smartword4tfs/readme.md">Introduction to the Modern Requirements Suite4TFS & Team Foundation Server 2017</a></td>
    </tr>
-
 </table>
 
 ## Previous Versions
