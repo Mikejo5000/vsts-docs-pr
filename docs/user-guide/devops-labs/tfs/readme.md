@@ -72,12 +72,49 @@ Here are the 2018 hands-on-labs for Team Foundation Server. If you want to acces
 
 <table width="100%">
    <thead>
-      <td><b>
-         Lab Name</b>
-      </td>
+      <td><b>Lab Name</b></td>
    </thead>
    <tr>
       <td><a href="started/readme.md">Working with the Visual Studio 2017 (Winter Update) ALM Virtual Machine</a></td>
+   </tr>
+
+   <tr>
+      <td><b>Continuous integration and deployment</b></td>
+   </tr>
+   <tr>
+      <td><a href="releasemanagement/readme.md">Embracing Continuous Delivery with Release Management for Team Foundation Server 2018</a></td>
+   </tr>
+   <tr>
+      <td><a href="aspnetazure/readme.md">Building ASP.NET apps in Azure with SQL Database</a></td>
+   </tr>
+   <tr>
+      <td><a href="build/readme.md">Enabling Continuous Delivery with Team Foundation Build 2018</a></td>
+   </tr>
+   <tr>
+      <td><a href="technicaldebt/readme.md">Managing Technical Debt with Team Foundation Server 2018 and SonarQube</a></td>
+   </tr>
+   <tr>
+      <td><a href="packagemanagement/readme.md">Package Management in Team Foundation Server 2018</a></td>
+   </tr>
+
+   <tr>
+      <td><b>Testing applications</b></td>
+   </tr>
+   <tr>
+      <td><a href="exploratorytesting/readme.md">Exploratory Testing and Feedback Management with Team Foundation Server 2018</a></td>
+   </tr>
+   <tr>
+      <td><a href="intellitest/readme.md">Generate Unit Tests with IntelliTest using Visual Studio Enterprise 2017</a></td>
+   </tr>
+   <tr>
+      <td><a hrf="manualtesting/readme.md">Test Planning and Management with Team Foundation Server 2018</a></td>
+   </tr>
+   <tr>
+      <td><a href="load/readme.md">Web Application Load and Performance Testing with Visual Studio 2017</a></td>
+   </tr>
+
+   <tr>
+      <td><b>Work tracking</b></td>
    </tr>
    <tr>
       <td><a href="agile/readme.md">Agile Planning and Portfolio Management with Team Foundation Server 2018</a></td>
@@ -86,13 +123,28 @@ Here are the 2018 hands-on-labs for Team Foundation Server. If you want to acces
       <td><a href="agileworkitems/readme.md">Agile Work Item Management with Team Foundation Server 2018</a></td>
    </tr>
    <tr>
+      <td><a href="deliveryplans/readme.md">Managing Delivery Plans with Team Foundation Server 2018</a></td>
+   </tr>
+
+   <tr>
+      <td><b>Working with Git repositories</b></td>
+   </tr>
+   <tr>
+      <td><a href="git/readme.md">Getting Started with Git using Team Foundation Server 2018</a></td>
+   </tr>
+
+   <tr>
+      <td><b>Microsoft Azure</b></td>
+   </tr>
+   <tr>
       <td><a href="armtemplates/readme.md">Authoring ARM Templates with Visual Studio</a></td>
    </tr>
    <tr>
-      <td><a href="aspnetazure/readme.md">Building ASP.NET apps in Azure with SQL Database</a></td>
+      <td><a href="appinsights/readme.md">Instrumenting ASP.NET with Application Insights in Visual Studio 2017</a></td>
    </tr>
+
    <tr>
-      <td><a href="devteamcollaboration/readme.md">Collaboration Experiences for Development Teams with Wiki</a></td>
+      <td><b>Debugging applications</b></td>
    </tr>
    <tr>
       <td><a href="snapshotdebugger/readme.md">Debugging with Snapshot Debugger</a></td>
@@ -101,28 +153,14 @@ Here are the 2018 hands-on-labs for Team Foundation Server. If you want to acces
       <td><a href="debugging/readme.md">Debugging with IntelliTrace using Visual Studio Enterprise 2017</a></td>
    </tr>
    <tr>
-      <td><a href="devexp/readme.md">Developer experience enhancements in Visual Studio 2017</a></td>
-   </tr>
-   <tr>
       <td><a href="intellitrace/readme.md">Diagnosing Issues in Production with IntelliTrace and Visual Studio 2017</a></td>
    </tr>
+
    <tr>
-      <td><a href="releasemanagement/readme.md">Embracing Continuous Delivery with Release Management for Team Foundation Server 2018</a></td>
+      <td><b>Visual Studio client</b></td>
    </tr>
    <tr>
-      <td><a href="exploratorytesting/readme.md">Exploratory Testing and Feedback Management with Team Foundation Server 2018</a></td>
-   </tr>
-   <tr>
-      <td><a href="git/readme.md">Getting Started with Git using Team Foundation Server 2018</a></td>
-   </tr>
-   <tr>
-      <td><a href="appinsights/readme.md">Instrumenting ASP.NET with Application Insights in Visual Studio 2017</a></td>
-   </tr>
-   <tr>
-      <td><a href="intellitest/readme.md">Generate Unit Tests with IntelliTest using Visual Studio Enterprise 2017</a></td>
-   </tr>
-   <tr>
-      <td><a href="smartword4tfs/readme.md">Introduction to the Modern Requirements Suite4TFS & Team Foundation Server 2017</a></td>
+      <td><a href="devexp/readme.md">Developer experience enhancements in Visual Studio 2017</a></td>
    </tr>
    <tr>
       <td><a href="livedependencyvalidation/readme.md">Live Dependency Validation with Visual Studio 2017</a></td>
@@ -131,16 +169,13 @@ Here are the 2018 hands-on-labs for Team Foundation Server. If you want to acces
       <td><a href="liveunittesting/readme.md">Live Unit Testing, Code Coverage and Code Clone Analysis with Visual Studio 2017</a></td>
    </tr>
    <tr>
+      <td><a href="codedui/readme.md">UI Automation using Coded UI Tests with Visual Studio Enterprise 2017</a></td>
+   </tr>
+   <tr>
+      <td><a href="codeanalysis/readme.md">Using Code Analysis with Visual Studio 2017 to Improve Code Quality</a></td>
+   </tr>
+   <tr>
       <td><a href="vsproductivity/readme.md">Making Developers More Productive with Visual Studio Team Foundation Server 2018</a></td>
-   </tr>
-   <tr>
-      <td><a href="deliveryplans/readme.md">Managing Delivery Plans with Team Foundation Server 2018</a></td>
-   </tr>
-   <tr>
-      <td><a href="technicaldebt/readme.md">Managing Technical Debt with Team Foundation Server 2018 and SonarQube</a></td>
-   </tr>
-   <tr>
-      <td><a href="packagemanagement/readme.md">Package Management in Team Foundation Server 2018</a></td>
    </tr>
    <tr>
       <td><a href="readyroll/readme.md">ReadyRoll- Develop and deploy databases in Visual Studio Enterprise 2017</a></td>
@@ -149,26 +184,22 @@ Here are the 2018 hands-on-labs for Team Foundation Server. If you want to acces
       <td><a href="sqlprompt/readme.md">SQL Prompt for Visual Studio Enterprise 2017</a></td>
    </tr>
    <tr>
-      <td><a href="build/readme.md">Enabling Continuous Delivery with Team Foundation Build 2018</a></td>
-   </tr>
-   <tr>
-      <td><a hrf="manualtesting/readme.md">Test Planning and Management with Team Foundation Server 2018</a></td>
-   </tr>
-   <tr>
-      <td><a href="codedui/readme.md">UI Automation using Coded UI Tests with Visual Studio Enterprise 2017</a></td>
-   </tr>
-   <tr>
-      <td><a href="codeanalysis/readme.md">Using Code Analysis with Visual Studio 2017 to Improve Code Quality</a></td>
-   </tr>
-   <tr>
-      <td><a href="load/readme.md">Web Application Load and Performance Testing with Visual Studio 2017</a></td>
-   </tr>
-   <tr>
       <td><a href="editorconfig/readme.md">Working with EditorConfig in Visual Studio 2017</a></td>
    </tr>
    <tr>
       <td><a href="redgateinstall/readme.md">Installing Redgate Data Tools and ReadyRoll Extension</a></td>
    </tr>
+
+   <tr>
+      <td><b>Other topics</b></td>
+   </tr>
+   <tr>
+      <td><a href="devteamcollaboration/readme.md">Collaboration Experiences for Development Teams with Wiki</a></td>
+   </tr>
+   <tr>
+      <td><a href="smartword4tfs/readme.md">Introduction to the Modern Requirements Suite4TFS & Team Foundation Server 2017</a></td>
+   </tr>
+
 </table>
 
 ## Previous Versions
