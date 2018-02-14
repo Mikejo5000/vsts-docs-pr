@@ -43,7 +43,7 @@ end users, to reduce the latency that is inherent in fetching contents on demand
 * Applications: Other applications sitting on top of GVFS need to think they are
 interacting with a normal Git repo and file system
 
-TODO: insert picture of how those components interact
+![GVFS architecture](./media/gvfs-architecture/docs-gvfs-architecture.png)
 
 ## GvFlt
 
