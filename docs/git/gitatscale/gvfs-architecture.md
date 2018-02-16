@@ -21,7 +21,7 @@ that the developer actually needs to use.
 
 with the following constraints:
 * Maintain full file system functionality, so that tools like IDEs and compilers can 
-continue to work without having to be made aware of GVFS.
+continue to work without being aware of GVFS.
 * Maintain file system performance that matches the local file system for 
 already-hydrated contents.
 
@@ -29,7 +29,8 @@ already-hydrated contents.
 
 GVFS is made up of the following pieces, and we'll talk about each one in detail:
 * GvFlt: a file system filter driver, responsible for projecting a user mode
-application's view of a file system down into NTFS
+application's view of a file system down into NTFS. (Note: GvFlt is in the process of being
+renamed to ProjFS, short for Windows Projected File System)
 * GVFS: A user mode process that knows how to work with GvFlt to project the 
 correct view of the file system based on the current state of the Git repo, 
 how to respond to user edits to update Git's data structures appropriately, 
@@ -68,7 +69,7 @@ Let's go over some of the details of how this is accomplished.
 
 ### Virtual file system objects
 
-First some necessary background. GvFlt introduces some new states for directories and files. 
+GvFlt introduces some new states for directories and files. 
 
 A directory can be in one of these states:
 * Virtual. The directory does not actually exist on disk, but it appears as if it does
@@ -132,7 +133,7 @@ the file system are populated on demand as they are accessed.
 GvFlt also provides a set of notifications of file system events, so that the provider
 can respond to, and sometimes prevent, changes in the file system. For example, the
 provider might need to know if a file was modified, or it might need to block deletes
-of certain files, etc.
+of certain files.
 
 ## GVFS
 
@@ -147,7 +148,6 @@ Git repo
 ### Disk layout
 
 When GVFS first creates a new clone, it creates the following layout on disk:
-(TODO: convert to image?)
 
 ```
 <clone root>
@@ -179,7 +179,7 @@ is, what should those contents be?
 
 In our initial designs, GVFS would look at the current HEAD commit, and parse the
 tree objects referenced by that commit to know what directories and files ought to exist
-in the working directory. This makes sense conceptually - when you run a command like
+in the working directory. This makes sense conceptually. When you run a command like
 `git checkout`, that's exactly what Git does; it takes a commit, walks through its trees
 and blobs, and lays down files and directories accordingly. So what GVFS used to do 
 is monitor the HEAD for changes, and whenever GvFlt asked for the contents of a 
@@ -189,7 +189,7 @@ through Git's behavior during a `git merge` conflict, and the fact that Git paus
 merge after it has written some files to disk, but before it has updated the HEAD).
 
 Instead, we realized that there is another Git data structure that does match what the 
-file system ought to look like: the `.git\index`. Git always updates the index to match
+file system ought to look like: the Git index. Git always updates its index to match
 the files that it has written to disk. So the index is an accurate representation of the 
 files in a Git repo that are being tracked by Git, and this became the source of truth
 for GVFS's projection of a repo.
