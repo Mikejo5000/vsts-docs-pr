@@ -50,7 +50,7 @@
     href: office/storyboard-your-ideas-using-powerpoint.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json
   - name: Add and share storyboard shapes
     href: office/add-share-storyboard-shapes.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json
-  - name: "Manage permissions & access"
+  - name: "Manage permissions & access (Security)"
     href: ../../security/set-permissions-access-work-tracking.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json
 - name: Troubleshooting
   items:
@@ -68,7 +68,9 @@
   items:
   - name: Product backlog controls
     href: product-backlog-controls.md 
-  - name: "Permissions & access for work tracking"
+  - name: Backlog keyboard shortcuts
+    href: backlogs-keyboard-shortcuts.md
+  - name: "Permissions & access (Security)"
     href: ../../security/permissions-access-work-tracking.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json 
 - name: Resources
   items:

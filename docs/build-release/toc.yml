@@ -22,28 +22,32 @@
         href: apps/cd/azure/azure-devops-project-php.md
     - name: Build your app
       items:
+      - name: Android
+        href: apps/mobile/android.md
       - name: ASP.NET Core
         href: apps/aspnet/build-aspnet-core.md
       - name: ASP.NET
         href: apps/aspnet/build-aspnet-4.md
-      - name: .NET for Windows
-        href: apps/windows/dot-net.md
-      - name: Node.js
-        href: apps/nodejs/build-gulp.md
+      - name: C/C++ with GCC
+        href: apps/c-cpp/gcc.md
+      - name: C/C++ with VC++
+        href: apps/windows/cpp.md
+      - name: Containers
+        href: apps/containers/build.md
       - name: Gradle
         href: apps/java/build-gradle.md
       - name: Maven
         href: apps/java/build-maven.md
-      - name: C++
-        href: apps/windows/cpp.md
-      - name: Containers
-        href: apps/containers/build.md
-      - name: Xcode
-        href: apps/mobile/xcode-ios.md
-      - name: Xamarin
-        href: apps/mobile/xamarin.md
+      - name: .NET for Windows
+        href: apps/windows/dot-net.md
+      - name: Node.js
+        href: apps/nodejs/build-gulp.md
       - name: Universal Windows Platform
         href: apps/windows/universal.md
+      - name: Xamarin
+        href: apps/mobile/xamarin.md
+      - name: Xcode
+        href: apps/mobile/xcode-ios.md
     - name: Deploy your app
       items:
       - name: Azure Web App
@@ -57,7 +61,7 @@
     - name: Test your app
       items:
       - name: VS Test
-        href: test/getting-started-with-continuous-testing.md?toc=/vsts/build-release/toc.json
+        href: test/getting-started-with-continuous-testing.md
 - name: Tutorials
   items:
   - name: CI builds for Git in VSTS
@@ -98,6 +102,8 @@
       href: concepts/definitions/build/variables.md
   - name: Releases
     items:
+    - name: What is Release Management?
+      href: concepts/definitions/release/what-is-release-management.md
     - name: Release definitions
       href: concepts/definitions/release/index.md
     - name: Environments
@@ -150,12 +156,8 @@
       href: concepts/library/service-endpoints.md
     - name: Secure files
       href: concepts/library/secure-files.md
-  - name: Policies
-    items:
-    - name: Retention policies
-      href: concepts/policies/retention.md
-    - name: Permissions
-      href: concepts/policies/permissions.md
+  - name: Retention policies
+    href: concepts/policies/retention.md
 - name: How-to Guides
   items:
   - name: Deploy an agent
@@ -170,6 +172,8 @@
       href: actions/agents/v2-linux.md
     - name: Run an agent behind a web proxy
       href: actions/agents/proxy.md
+    - name: Run an agent with self-signed certificate
+      href: actions/agents/certificate.md
     - name: Configure TFS authentication
       href: actions/agents/configure-tfs-authentication.md
   - name: Use YAML CI (config as code)
@@ -184,8 +188,8 @@
       href: actions/scripts/powershell.md
     - name: Run Git commands
       href: actions/scripts/git-commands.md
-    - name: Sign your Xcode app
-      href: apps/mobile/secure-certs.md
+    - name: Sign your mobile app
+      href: apps/mobile/app-signing.md
   - name: Deploy to more targets
     items:
     - name: Azure web app
@@ -208,8 +212,8 @@
       href: apps/cd/deploy-database-sqlscripts.md
     - name: SCVMM
       href: apps/cd/scvmm/configure-scvmm.md
-    - name: Run SCVMM scripts for managing VMs
-      href: apps/cd/scvmm/manage-vms-using-scvmm.md
+    - name: SCVMM actions for managing VMs
+      href: actions/virtual-networks/manage-vms-using-scvmm.md
     - name: VMware
       href: apps/cd/provision-vm-in-vmware.md
   - name: Test your apps
@@ -238,18 +242,24 @@
       items:
       - name: Use Package Management
         href: packages/maven.md
-  - name: Troubleshoot issues
-    items:
-    - name: Troubleshooting build
-      href: actions/troubleshooting.md
-    - name: Debug deployment issues
-      href: concepts/definitions/release/variables.md#debug-mode
-    - name: Troubleshoot Azure connections
-      href: actions/azure-rm-endpoint.md
   - name: Migrate
     items:
     - name: Migrate from XAML builds
       href: actions/migrate-from-xaml-builds.md
+    - name: Migrate from Lab Management
+      href: actions/virtual-networks/create-virtual-network.md
+    - name: Use Build & Release for automated testing
+      href: https://docs.microsoft.com/visualstudio/test/lab-management/use-build-or-rm-instead-of-lab-management
+  - name: "Set build and release permissions (Security)"
+    href: set-permissions.md 
+- name: Troubleshooting
+  items:
+  - name: Troubleshooting build
+    href: actions/troubleshooting.md
+  - name: Debug deployment issues
+    href: concepts/definitions/release/variables.md#debug-mode
+  - name: Troubleshoot Azure connections
+    href: actions/azure-rm-endpoint.md
 - name: Reference
   href: tasks/index.md
   items:
@@ -437,3 +447,5 @@
     href: tasks/file-matching-patterns.md
   - name: File and variable transform
     href: tasks/transforms-variable-substitution.md
+  - name: Permissions & security roles
+    href: concepts/policies/permissions.md

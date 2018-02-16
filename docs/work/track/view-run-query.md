@@ -1,5 +1,6 @@
 ---
 title: View or run a query 
+titleSuffix: VSTS & TFS
 description: View a list of queries or run a query using Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-wit
@@ -7,7 +8,7 @@ ms.assetid:
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: kaelli
-ms.date: 09/29/2017  
+ms.date: 02/05/2018  
 ---
 
 
@@ -133,7 +134,7 @@ Choose **Copy query URL**. To email query items, see [Copy a list of work items]
 
 #### Related topics
 
-
 - [Change column options](https://docs.microsoft.com/en-us/vsts/work/backlogs/set-column-options?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json)
 - [New Queries Experience](queries-preview.md) 
 - [Set personal or team favorites](../../collaborate/set-favorites.md) 
+- [Query keyboard shortcuts](queries-keyboard-shortcuts.md)

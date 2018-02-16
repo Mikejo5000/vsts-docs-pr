@@ -17,13 +17,13 @@
 - name: Concepts
   items:
   - name: Feeds
-    items:
+    href: concepts/feeds.md
     # - name: Deleted packages
     #   href: concepts/feeds/deleted-packages.md
-    - name: Views
-      href: concepts/feeds/views.md
-    - name: Upstream sources
-      href: concepts/feeds/upstream-sources.md
+  - name: Views
+    href: concepts/views.md
+  - name: Upstream sources
+    href: concepts/upstream-sources.md
   - name: Symbols
     href: concepts/symbols.md
 - name: How-to
@@ -52,7 +52,7 @@
       href: feeds/create-feed.md
     - name: Edit a feed
       href: feeds/edit-feed.md
-    - name: Set permissions
+    - name: Set permissions (Security)
       href: feeds/feed-permissions.md
     - name: Communicate quality with release views
       href: feeds/views.md
@@ -98,15 +98,15 @@
     items:
     - name: Set up authentication
       href: maven/pom-and-settings.md
-    - name: Publish a Maven project
+    - name: Publish a Maven artifact
       href: maven/publish.md
-    - name: Install a Maven project
+    - name: Install a Maven artifact
       href: maven/install.md
   - name: Use Gradle
     items:
-    - name: Pull and build a Gradle package
+    - name: Install a Maven artifact using Gradle
       href: gradle/pull-package-gradle.md
-    - name: Publish a Gradle package
+    - name: Publish a Maven artifact using Gradle
       href: gradle/publish-package-gradle.md
   - name: Use symbols
     items:

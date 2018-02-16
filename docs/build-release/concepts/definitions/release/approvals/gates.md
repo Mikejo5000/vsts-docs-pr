@@ -15,7 +15,9 @@ ms.date: 01/19/2018
 
 Gates allow you to query a range of external services, and wait for a positive input from all of
 them before continuing with a deployment to an environment. When a release is created from a definition
-that contains gates, the deployment stops until the health signals from all the configured services are successful.   
+that contains gates, the deployment stops until the health signals from all the configured services are successful.
+
+>You may need to enable Gates in your profile [Preview features](../../../../../collaborate/preview-features.md) list. 
 
 ## Define a gate for an environment
 
@@ -53,7 +55,9 @@ that contains gates, the deployment stops until the health signals from all the 
    * **Work item query**: Ensure the number of matching work items returned from a query is within a threshold.
      For more details, see [Work item query task](../../../../tasks/utility/work-item-query.md).
 
-   > Also see the blog post [Twitter sentiment as a release gate](https://blogs.msdn.microsoft.com/bharry/2017/12/15/twitter-sentiment-as-a-release-gate/), which includes an example of a gate that uses an Azure function.
+   > Also see the tutorial [Use approvals and gates to control your deployment](../../../../actions/deploy-using-approvals.md)
+     and the blog post [Twitter sentiment as a release gate](https://blogs.msdn.microsoft.com/bharry/2017/12/15/twitter-sentiment-as-a-release-gate/), which includes an example of a gate that uses an Azure function.
+     A [library with examples](https://github.com/Microsoft/vsts-rm-extensions/tree/master/ServerTaskHelper/DistributedTask.ServerTask.Remote.Common) is available to help you create your own custom gate tasks.
 
 1. Select and enter the required gate arguments, depending on the type of gate you chose.
 
@@ -77,6 +81,8 @@ that contains gates, the deployment stops until the health signals from all the 
      This ensures the approvers have all the information required for a sign-off. 
 
    ![Selecting the gate and approval evaluation order](_img/gated-releases-04.png)
+   
+   > Watch [this video on Channel 9](https://channel9.msdn.com/Events/Connect/2017/T181) to see gates in action.
 
 ### Gate evaluation flow examples
 
@@ -107,11 +113,13 @@ about the evaluation of all the gates you configured for the release.
 
 * [Approvals and gates overview](index.md)
 * [Manual intervention](../../../../tasks/utility/manual-intervention.md)
+* [Use approvals and gates to control your deployment](../../../../actions/deploy-using-approvals.md)
 * [Environments](../environments.md)
 * [Triggers](../triggers.md)
 
 ## See also
 
+* [Video: Deploy quicker and safer with gates in VSTS](https://channel9.msdn.com/Events/Connect/2017/T181)
 * [Work with release definitions](../../../../actions/work-with-release-definitions.md)
 * [View and manage releases](../../../../actions/view-manage-releases.md)
 * [Configure your release pipelines for safe deployments](https://blogs.msdn.microsoft.com/visualstudioalm/2017/04/24/configuring-your-release-pipelines-for-safe-deployments/)

@@ -7,7 +7,7 @@ ms.technology: vs-devops-setup
 ms.assetid: 02cb8774-6d1d-4f15-8818-b56541033b1f
 ms.manager: douge
 ms.author: chcomley
-ms.date: 1/22/2018
+ms.date: 1/29/2018
 ---
 
 # Pay for VSTS users
@@ -25,9 +25,9 @@ these additional VSTS users, you can then [add more team members to your VSTS ac
 
 Your team members--whether they're Visual Studio subscribers, or are among the 5 free or the paid VSTS users--can use a comprehensive set of features in your VSTS account including 
 version control, tools for Agile, Java, build, release management, and more. For a list of features included, see our 
-[Feature Comparison](https://www.visualstudio.com/team-services/compare-features/).
+[feature comparison](https://www.visualstudio.com/team-services/compare-features/).
 
-## Before you start
+## Prerequisites
 
 *	To manage purchases, you'll need VSTS 
 [project collection administrator or account owner permissions](faq-pay-for-basic-users.md#FindOwnerPCA).
@@ -37,19 +37,20 @@ that you can link to your VSTS account for billing,
 if your VSTS account isn't linked already. 
 [Which Azure subscriptions can I use?](faq-pay-for-basic-users.md#EligibleAzureSubscriptions)
 
-	To use an existing Azure subscription for billing, 
-	you'll need at least Co-administrator permissions for that subscription. 
+>[!NOTE]
+> To use an existing Azure subscription for billing, 
+	you'll need at least co-administrator permissions for that subscription. 
 	If you don't have permissions, 
 	have an Azure Account Administrator or Service Administrator 
-	[add you as a Co-administrator to the Azure subscription that you want to use for billing](add-backup-billing-managers.md).
-
-	If you don't have an Azure subscription, 
+	[add you as a co-administrator to the Azure subscription that you want to use for billing](add-backup-billing-managers.md).
+>
+>	If you don't have an Azure subscription, 
 	you can create a subscription when you start your purchase. 
 	Or [create your Azure subscription here before you start](https://portal.azure.com). 
 	You'll get the necessary administrator permissions 
 	with your new subscription. 
-
-	Your VSTS account will reuse this Azure subscription 
+>
+>	Your VSTS account will reuse this Azure subscription 
 	when you make future purchases for your VSTS account 
 	via the [Visual Studio Marketplace](https://marketplace.visualstudio.com) 
 	or the Azure portal. 
@@ -72,11 +73,11 @@ if you have multiple accounts.
 
 	<p><a data-toggle="collapse" href="#expando-why-no-ts-account">Don't see your VSTS accounts? &#x25BC;</a></p>
 	<div class="collapse" id="expando-why-no-ts-account">
-	<p>To select your VSTS account here, you must have have VSTS 
+	<p>To select your VSTS account here, you must have VSTS 
 	[project collection administrator or account owner permissions](faq-pay-for-basic-users.md#FindOwnerPCA).	
 	</div>
 
-0.	Confirm the Azure subscription where your VSTS charges will be billed. 
+0.	Confirm the Azure subscription, where your VSTS charges will be billed. 
 
 	If you have multiple Azure subscriptions, 
 	select the Azure subscription that you want to use.
@@ -88,7 +89,7 @@ if you have multiple accounts.
 	<p><a data-toggle="collapse" href="#expando-why-no-azure-sub">Don't see the Azure subscription that you expect? &#x25BC;</a></p>
 	<div class="collapse" id="expando-why-no-azure-sub">
 	<p>To use an existing Azure subscription for billing, 
-	you'll need at least Co-administrator permissions for that subscription. 
+	you'll need at least co-administrator permissions for that subscription. 
 	If you don't have permissions, 
 	have an Azure Account Administrator or Service Administrator 
 	[add you as a Co-administrator to the linked Azure subscription](add-backup-billing-managers.md).

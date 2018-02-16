@@ -1,5 +1,6 @@
 ---
-title: Create your backlog | VSTS & TFS
+title: Create your backlog 
+titleSuffix: VSTS & TFS
 description: Add items, plan your project, order/prioritize, and estimate your backlog of deliverables - Visual Studio Team Services (VSTS) and Team Foundation Server 
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
@@ -134,7 +135,7 @@ Open each item (double-click, or press Enter to open the selected item) and add 
 <tr>
 <td>[Acceptance Criteria](../track/titles-ids-descriptions.md) </td> 
 <td><p>Define what "Done" means by describing the criteria that the team should use to verify whether the PBI or the bug fix has been fully implemented.</p>
-<p>Before work begins on a PBI or bug, describe the [criteria for customer acceptance](#acceptance) as clearly as possible. Conversations between the team and customers to determine the acceptance criteria help ensure a common understanding within the team to meet customers' expectations. Also, this info provides the basis for acceptance testing.</p></td> 
+<p>Before work begins on a PBI or bug, describe the [criteria for customer acceptance](best-practices-product-backlog.md#acceptance) as clearly as possible. Conversations between the team and customers to determine the acceptance criteria help ensure a common understanding within the team to meet customers' expectations. Also, this info provides the basis for acceptance testing.</p></td> 
 </tr>
 
 </tbody>
@@ -168,6 +169,7 @@ the items in your backlog may be called product backlog items (PBIs), user stori
 - [Product backlog controls](product-backlog-controls.md)
 - [Filter product and portfolio backlogs ](filter-backlogs.md)
 - [Backlog priority or stack rank order](stack-rank-backlog-position.md)
+- [Backlog keyboard shortcuts](backlogs-keyboard-shortcuts.md)
 
 If you've already defined a long list of items, you don't have to reenter them one at a time. Instead, use [Microsoft Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to quickly import them to your backlog.
 

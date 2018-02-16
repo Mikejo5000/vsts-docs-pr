@@ -333,7 +333,7 @@
         },
         {
             "source_path": "docs/setup-admin/team-services/link-msdn-subscription-to-organizational-account-vs.md",
-            "redirect_url": "/vsts/billing/link-msdn-subscription-to-organizational-account-vs",
+            "redirect_url": "/vsts/billing/faq-link-msdn-subscription-org-account",
             "redirect_document_id": false
         },
         {
@@ -1379,11 +1379,6 @@
         {
             "source_path": "docs/tfs-server/team-services/get-more-user-licenses-vs.md",
             "redirect_url": "/vsts/billing/buy-basic-access-add-users",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "docs/tfs-server/team-services/link-msdn-subscription-to-organizational-account-vs.md",
-            "redirect_url": "/vsts/billing/link-msdn-subscription-to-organizational-account-vs",
             "redirect_document_id": false
         },
         {
@@ -3147,6 +3142,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "vsts/build-release/test/test-build.md",
+            "redirect_url": "/vsts/build-release/test/getting-started-with-continuous-testing",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/test/continuous-testing/test-with-unified-agent-and-phases.md",
             "redirect_url": "/vsts/build-release/test/test-with-unified-agent-and-phases",
             "redirect_document_id": false
@@ -4782,13 +4782,38 @@
         "redirect_document_id": false
        },
        {
-        "source_path": "docs/billing/link-msdn-subscription-to-organizational-account-vs.md",
-        "redirect_url": "/vsts/billing/faq-vs-subscriptions",
+        "source_path": "docs/billing/billing-concepts.md",
+        "redirect_url": "/vsts/billing/overview",
         "redirect_document_id": false
        },
        {
-        "source_path": "docs/billing/billing-concepts.md",
-        "redirect_url": "/vsts/billing/overview",
+        "source_path": "docs/user-guide/kanban-agile.md",
+        "redirect_url": "/vsts/work/backlogs/overview",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/billing/link-msdn-subscription-to-organizational-account-vs.md",
+        "redirect_url": "/vsts/billing/faq-link-msdn-subscription-org-account",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/user-guide/team-projects-teams-repos.md",
+        "redirect_url": "/vsts/work/scale/scale-teams",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/git/concepts/pull-requests-overview.md",
+        "redirect_url": "/vsts/git/pull-requests-overview",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/tfs-server/admin/change-permission-levels.md",
+        "redirect_url": "/vsts/security/change-individual-permissions",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/security/set-build-release-permissions.md",
+        "redirect_url": "/vsts/build-release/set-permissions",
         "redirect_document_id": false
        }
     ]
