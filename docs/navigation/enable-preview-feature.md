@@ -30,7 +30,7 @@ Some features provide a new user interface and functionality, which can be manag
 > |- [Approval gates in releases](../build-release/concepts/definitions/release/approvals/index.md)<br/>- [Build Yaml Definitions](../build-release/actions/build-yaml-get-started.md)<br/>- New Boards Hub<br/>- New Dashboards Experience<br/>- [New experience in Code & Work Item search and new wiki search](https://docs.microsoft.com/vsts/release-notes/2017/oct-06-vsts#code)<br/>- [New Queries Experience](../work/track/view-run-query.md)<br/>- [New Work Items Hub](../work/work-items/view-add-work-items.md)<br/>- [Streamlined User Management](../accounts/add-account-users-assign-access-levels.md)<br/>- [Updated package experience](../package/index.md) |- [Build with multiple queues](https://github.com/Microsoft/vsts-agent/blob/master/docs/preview/yamlgettingstarted.md)<br/>-- [Git Forks](../git/concepts/forks.md)<br/>- [New Work Items Hub](../work/work-items/view-add-work-items.md)<br/>- [NuGet.org upstream sources](../package/nuget/upstream-sources.md)<br/>- [Pull Request Status Policy](../git/how-to/pr-status-policy.md)<br/>-  [Streamlined User Management](../accounts/add-account-users-assign-access-levels.md)<br/>- [Symbol server](../build-release/symbols/index.md)|
 
 **Features now enabled for all VSTS accounts:**
-- [Combine email recipients](manage-team-notifications.md)  
+- [Combine email recipients](../collaborate/manage-team-notifications.md)  
 - [New Account Landing page](../user-guide/account-home-pages.md)
 - [New Release Definition Editor](../build-release/archive/preview/release-definition-editor.md) 
 - [Team expansion for notifications](#team-expansion-notifications) 

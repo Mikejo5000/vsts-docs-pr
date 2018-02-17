@@ -12,32 +12,36 @@ ms.date: 02-24-2018
 
 # Work with Favorites  
 
-<!--- 
-
 **VSTS | TFS 2018 | TFS 2017.1**  
 
 > [!NOTE]  
 > **Feature availability**: The features described in this topic are available from Visual Studio Team Services (VSTS) and TFS 2017.1 and later versions. To upgrade to TFS 2017.1, go to the [Visual Studio downloads page](https://www.visualstudio.com/downloads/download-visual-studio-vs).  
--->
 
-By favoriting an artifact or view, you can quickly access or open it. You favorite an item by clicking the ![favorites](../_img/icons/icon-favorite-star.png) star icon. The favorited item will then show up easily from one or more directory lists.  
+By favoriting an artifact or view, you can quickly access it. You favorite an item by clicking the ![favorites](../_img/icons/icon-favorite-star.png) star icon. The favorited item will then show up easily from one or more directory lists.  
 
 You can favorite the following artifacts: 
 
-- Build and release definitions 
-- Repositories 
-- Work item backlogs, boards, queries, and plans  
+- Build definitions, 
+- Code repositories, 
+- Work item queries, and more &mdash   
 - Team projects   
+- Repositories   
+- Work item queries   
+- Plans (requires installation of the [Delivery Plans extension](../work/scale/review-team-plans.md))
+- Build definitions  
 - Test plans
 
 
 <a id="favorites">  </a>
-## View items you've favorited  
+## Favorites: Open items you've marked as Favorites  
 
-Open your personal **My favorites** page to quickly access any object or item that you've marked as a favorite. 
+Open the **Favorites** page to quickly access any object or item that you've marked as a favorite. 
 
 <img src="../user-guide/_img/account-home-favorites.png" alt="Account home, Favorites page" style="border: 1px solid #CCCCCC;" />   
 
+Favorited objects include:
+
+ 
 
 ## Mark an object as a favorite 
 
@@ -71,6 +75,6 @@ You'll see something similar to the following welcome page.
 
 ## Related content
 
-- [Enable preview features](enable-preview-features.md)  
+- [Enable preview features](enable-preview-feature.md)  
 
 
