@@ -1,7 +1,7 @@
 ---
-title: Enable or disable a preview feature 
+title: Enable a preview feature 
 titleSuffix: VSTS & TFS   
-description: Turn on/off or activate/deactivate features in preview at the user or account level   
+description: Turn on/off or enable/disable a feature in preview at the user or account level   
 ms.technology: collaborate
 ms.prod: vs-devops-alm
 ms.assetid:  

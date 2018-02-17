@@ -1,7 +1,7 @@
 ---
-title: Navigate to a hub or page
+title: Navigate to an application or functional area
 titleSuffix: VSTS & TFS   
-description: Open a hub or change your app view  
+description: Access the application area or change your view
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid:  
@@ -11,10 +11,41 @@ ms.date: 02-24-2018
 ---
 
 
-# Navigate to an application, hub, or page  
+# Navigate to an application or functional area  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+When navigating within the VSTS user interface, there are four levels supported:  
+- *Account-level*, which supports navigation to a team project or repository that you have access to providing "me pages"   
+- *Team project or repository level*, which supports navigation to one or more applications or functional views for a team project   
+- *Within a functional view*, you may then have a choice of options to select a specific artifact depending on the functional area you've selected  
+- *Settings*, which supports an administrative context for configuring settings at the account/collection or team project level   
+- *Account profile*, which supports setting personal preferences, notifications, and enabling/disabling preview features   
 
+## Open an application 
+<--- Support horizontal navigation --> 
+
+In horizontal navigation mode, you navigate to a different application by clicking one of the hubs in the horizonal blue bar. 
+
+![Horizontal nav, open an app](_img/go-to-app/project-app-horizontal-selection.png)
+
+Within a hub, you then select a page within the horizontal tabs available.
+
+![Horizontal nav, open a functional are or page for an app](_img/go-to-app/project-app-page-horizontal-selection.png)
+
+<---Optionally, you can choose a page to open from the hub menu of options. --> 
+
+<--- Support vertical navigation --> 
+
+In vertical navigation mode, you navigate to a different application by clicking the ![waffle icon](_img/go-to-app/waffle-icon.png) waffle icon and then selecting from one of the applications listed.  
+
+Within an application, you navigate to different functional areas by clicking one of the tabs provided in the vertical pane.  
+
+![Horizontal nav, open a functional are or page for an app](_img/go-to-app/vertical-work-apps.png)
+
+
+
+
+
+ 
 Guide to navigating within the web portal for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS). 
 
 The web portal provides support for teams to collaborate through the planning, development, and release cycles. You use the web portal to perform both software development and administrative tasks.  

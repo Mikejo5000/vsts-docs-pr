@@ -1,7 +1,7 @@
 ---
 title: Navigation basics
 titleSuffix: VSTS & TFS 
-description: Index to navigation topics for VSTS and and Team Foundation Server (TFS)  
+description: Navigate within the user interface of VSTS & Team Foundation Server (TFS)  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
 ms.assetid: 
@@ -12,6 +12,13 @@ ms.date: 02-24-2018
 
 # Navigation basics 
 
+When navigating within the VSTS user interface, there are four levels supported:  
+- *Account-level*, which supports navigation to a team project or repository that you have access to providing "me pages"   
+- *Team project or repository level*, which supports navigation to one or more applications or functional views for a team project   
+- *Within a functional view*, you may then have a choice of options to select a specific artifact depending on the functional area you've selected  
+- *Settings*, which supports an administrative context for configuring settings at the account/collection or team project level   
+- *Account profile*, which supports setting personal preferences, notifications, and enabling/disabling preview features   
+- 
 # [Vertical navigation](#tab/vertical)
 
 **CodeX** uses vertical navigation to select applications&mdash;such as **CodeBox**, **CodeLaunch**, and **CodePlan**&mdash;and pages within those apps. With VSTS, you can choose between vertical and horizontal navigation by selecting the option through [Preview Features](enable-preview-feature.md).
