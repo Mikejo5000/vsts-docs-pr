@@ -88,4 +88,4 @@ When navigating within the VSTS user interface, there are four levels supported:
 
 ## Resources 
 
-- [Project & Account Settings](../settings/index.md) 
+- [Project & Account Settings](../teams/index.md) 

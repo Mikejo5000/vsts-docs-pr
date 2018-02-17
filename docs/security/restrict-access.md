@@ -169,7 +169,7 @@ VSTS and TFS are designed to enable all valid users to be able to view all objec
 
 <tr>
 <td>View, create, or modify work items within an area path</td>
-<td>Edit work items in this node, View work items in this node<br/>See [Set permissions and access for work tracking, Modify work items under an area path](set-permissions-access-work-tracking.md#modify-work-items-under-an-area-path).</td>
+<td>Edit work items in this node, View work items in this node<br/>See [Set permissions and access for work tracking, Modify work items under an area path](set-permissions-access-work-tracking.md#set-permissions-area-path).</td>
 </tr>
 
 <tr>
