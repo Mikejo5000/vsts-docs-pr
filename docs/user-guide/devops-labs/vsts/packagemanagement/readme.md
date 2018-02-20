@@ -15,7 +15,7 @@ ms.date: 01/25/2018
 
 <a href="https://www.visualstudio.com/en-us/docs/package/overview/">Package Management</a> is an extension that makes it easy to discover, install, and publish packages. 
 
-It's deeply integrated with other Team Services hubs like Build so that package management can become a seamless part of your existing workflows.
+It's integrated with other Team Services hubs like Build so that Package Management can become a seamless part of your existing workflows.
 
 Your product is successful, your organization is growing, and it’s time to scale up your codebase to match. As you scale out past 2-3 teams working in a single codebase on a single product, you may find yourself asking questions like:
 
@@ -25,7 +25,7 @@ Your product is successful, your organization is growing, and it’s time to sca
 
 These questions aren’t just applicable to newly growing teams. If you’re an established team with a legacy code base, you may be asking these same questions as you’re being asked to deliver more value, ever faster. Regardless of your situation, componentization can help you build a code base that scales to the size of your team and the speed of today’s development.
 
-In this module, we'll explore how binary composition through package management can help you manage and share your external dependencies, your OSS, and your isolated shared components.
+In this module, we'll explore how to share a library with the rest of your team using Package Management.
 
 ## Pre-requisites
 
@@ -39,7 +39,7 @@ In order to complete this lab you will need-
 
 - If you are not using the VSTS Demo Data Generator, you can clone the code from here
 
-## Task 1: Installing Package Manager Extension  
+## Task 1: Installing Package Management Extension  
 
 1. To start using Package Management from Visual Studio Team Services we must first install the Package Management extension from the Visual Studio Market place, you can find the extension <a href="https://marketplace.visualstudio.com/items?itemName=ms.feed">here</a>.
 
@@ -50,13 +50,14 @@ In order to complete this lab you will need-
     <img src="images/2.png">
 
     > This has installed the extension on your account. 
-    > Package feeds are our own NuGet package feeds we can use for our own dependencies, or even share dependencies with other teams. **Nuget.org** is a public feed where we can publish packages for other developers.
 
 3. After installation click on **Proceed to the account**. You can now see the  **Package** menu option inside the Team Projects under the **Build & Release** section.
 
     <img src="images/3.png" width="624">
 
 ## Task 2: Creating feed
+
+Package feeds are our own NuGet package feeds we can use for our own dependencies, or even share dependencies with other teams. **Nuget.org** is a public feed where we can publish packages for other developers.
 
 1. Sign in to your Visual Studio Team Services account.
 
@@ -125,7 +126,7 @@ We will publish packages to the feed with an automated build. So we will start c
 
    <img src="images/14.png" width="624">
 
-## Task 4: Configure Visual Studio
+## Task 4: Consume packages in Visual Studio
 
 1. Open Visual Studio, and goto **Tools** \| **NuGet Package Manager** \|**Package Manager Settings**. 
 
