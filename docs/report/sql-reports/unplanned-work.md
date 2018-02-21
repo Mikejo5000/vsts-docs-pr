@@ -6,10 +6,13 @@ ms.technology: vs-devops-reporting
 ms.assetid: 4c174c3c-2e3d-4f09-913d-bbc17b6382a8
 ms.manager: douge
 ms.author: kaelli
-ms.date: 12/30/2016
+ms.date: 10/17/17
 ---
+
+
+
 # Unplanned Work
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 Toward the end of an iteration, you can use the Unplanned Work report to determine how much work was added to the iteration that was not planned at the start of the iteration. You can view the unplanned work as measured by work items added, such as tasks, test cases, user stories, and bugs.  
   
@@ -24,7 +27,7 @@ Toward the end of an iteration, you can use the Unplanned Work report to determi
   
  **Required Permissions**  
   
- To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in Reporting Services. For more information, see [Add users to team projects](../../setup-admin/add-users.md).  
+ To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in Reporting Services. For more information, see [Add users to team projects](../admin/grant-permissions-to-reports.md).  
   
 ##  <a name="Data"></a> Data in the Report  
  The Unplanned Work report is useful when the team plans an iteration by identifying all work items that they intend to resolve or close during the course of the iteration. The work items that are assigned to the iteration by the plan completion date of the report are considered planned work. All work items that are added to the iteration after that date are identified as unplanned work.  

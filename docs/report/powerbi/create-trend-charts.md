@@ -1,6 +1,6 @@
 ---
-title: Create trend charts | Team Services
-description: Create trend, burnup, and burndown charts in Power BI from data collected for Visual Studio Team Services 
+title: Create trend charts | VSTS
+description: Create trend, burnup, and burndown charts in Power BI from data collected for VSTS 
 ms.assetid: 94080282-C697-4AF2-BD2E-414674701234  
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
@@ -11,20 +11,21 @@ ms.date: 04/06/2016
 
 #Create trend charts
 
-<b>Team Services</b>
+<b>VSTS</b>
+[!INCLUDE [temp](../_shared/content-pack-deprecation.md)]
 
 Trend charts show progress or activity over time. Common types of trend charts include sprint burndowns or burnups, cumulative flow diagrams, and bug activity. 
 
-##Story points burnup trend chart 
+## Story points burnup trend chart 
 
 By following steps ![step 1](../_img/icons/step1.png) through ![step 4](../_img/icons/step4.png) of the [basic steps shown below](#basic-steps), you'll see the trend of story points as their added to the work item store. 
   
 ![Story Points VSTS   trend chart in power bi](_img/powerbi-story-points-trend.png) 
 
-Story points provide an estimate of the amount of work required to complete a user story ([Agile](../../work/guidance/agile-process.md) process) using any unit of measurement your team prefers, such as t-shirt size, story points, or time. 
+Story points provide an estimate of the amount of work required to complete a user story ([Agile](../../work/work-items/guidance/agile-process.md) process) using any unit of measurement your team prefers, such as t-shirt size, story points, or time. 
 
-If you use the [Scrum](../../work/guidance/scrum-process.md) or 
-[CMMI](../../work/guidance/cmmi-process.md) processes, you can create similar charts by filtering on the Effort or Size fields. 
+If you use the [Scrum](../../work/work-items/guidance/scrum-process.md) or 
+[CMMI](../../work/work-items/guidance/cmmi-process.md) processes, you can create similar charts by filtering on the Effort or Size fields. 
 
 <a id="basic-steps"></a>
 ##Basic steps to create a trend chart
@@ -34,9 +35,9 @@ The following image shows the basic steps to create a trend chart. In step ![ste
 
 After you have your initial chart, you can change the chart type and apply additional filters as shown in the examples below. 
 
-If your new to Power BI, go [here to Connect to Power BI](connect-vso-pbi-vs.md).  
+if you're new to Power BI, go [here to Connect to Power BI](connect-vso-pbi-vs.md).  
 
-You can create Power BI trend charts for data stored in Team Services. To access similar charts for on-premises TFS, see [Create status and trend charts in Excel](../excel/create-status-and-trend-excel-reports.md). 
+You can create Power BI trend charts for data stored in VSTS. To access similar charts for on-premises TFS, see [Create status and trend charts in Excel](../excel/create-status-and-trend-excel-reports.md). 
 
 ##Apply State filter 
 
@@ -73,9 +74,8 @@ This chart indicates that some work wasn't scoped until a day or two after the s
 The sprint burndown chart based on Story Points provides you with a daily update of your sprint progress when you don't break your stories down into tasks. You can update the chart further by adding Work Item Type as an additional filter to differentiate the story point count for bugs versus user stories.  
 
 
-###Get started using Power BI and the Visual Studio Team Services connector 
+###Get started using Power BI and the VSTS connector 
 - [Create dashboards and reports](report-on-vso-with-power-bi-vs.md)
-- [What's available in the Power BI Visual Studio Team Services connector](vso-pbi-whats-available-vs.md)
 - [Add a page to a Power BI report](https://support.powerbi.com/knowledgebase/articles/474804-add-a-page-to-a-power-bi-report)
 - [Save a report in Power BI](https://support.powerbi.com/knowledgebase/articles/444112-save-a-report-in-power-bi)
 

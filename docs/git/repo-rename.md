@@ -1,20 +1,23 @@
 ---
-title: Rename a Git repo in your team project | Team Services & TFS
+title: Rename a Git repo in your team project | VSTS & TFS
 description: You can rename a Git repository in a few steps, but be aware that your team will have to take a few more steps to adapt to the change.
 ms.assetid: 05971618-4ea9-4997-bb51-2d74211352ef
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-git
+ms.technology: vs-devops-git 
 ms.manager: douge
-ms.author: routlaw
+ms.author: sdanie
 ms.date: 12/15/2016
 ---
 
 #  Rename a Git repository in your team project
-#### Team Services | TFS 2017 | Visual Studio 2015 | [Previous version](repo-rename-tfs2015.md)
+#### VSTS | TFS 2018 | TFS 2017 | VS 2017 | VS 2015
 
 You can rename a Git repository in a team project from your web browser. After you rename the repo, each member of your team will have to take a few steps to re-enable their dev machines to connect to the repo on the server.
 
-## Rename the repo in Team Services or TFS
+>[!NOTE]
+>The steps in this article refer to VSTS and TFS 2017 and higher. For TFS 2015, see [Rename a Git repository in TFS 2015](repo-rename-tfs2015.md).
+
+## Rename the repo in VSTS or TFS
 
 0. Open the team project administration page while working in your team project on the web.
 
@@ -28,7 +31,7 @@ You can rename a Git repository in a team project from your web browser. After y
 
 0. Enter a new repo name in the **Repository name** field in the dialog, then select **Rename**
 
-> This step requires [Rename Repository permissions](../setup-admin/permissions.md#git-repository) on your Git repo.
+> This step requires [Rename Repository permissions](../security/set-git-tfvc-repository-permissions.md#git-repository) on your Git repo.
 
 ## Update the Git remotes on your dev machines
 
@@ -41,7 +44,7 @@ Each member of your team must update their local Git repos to continue connectin
 
 Copy the repository clone URL to your clipboard.
 
-![Remote URL for the repository from the Clone button in TFS and Team Services](/tutorial/_img/get_clone_url.gif)
+![Remote URL for the repository from the Clone button in TFS and VSTS](/tutorial/_img/get_clone_url.gif)
 
 ### Update your remote in Visual Studio 2015 or 2017
 

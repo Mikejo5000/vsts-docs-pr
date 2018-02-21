@@ -1,19 +1,20 @@
 ---
 title: Collaborate more and build faster with packages
-description: Componentize a large codebase with source and package composition using Package Management in Visual Studio Team Services or Team Foundation Server
+description: Componentize a large codebase with source and package composition using Package Management in VSTS or Team Foundation Server
 ms.assetid: EA33E340-EC9A-4F75-A201-82CE9685662B
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-package
 ms.manager: douge
 ms.author: amullans
 ms.date: 09/29/2016
+ms.topic: get-started-article
 ---
 
 # Collaborate more and build faster with packages
 
-**Team Services | TFS 2017**
+**VSTS | TFS 2017**
 
-*If you're familiar with componentization and composition, you can learn more about [Package Management in Team Services and TFS](overview.md).*
+*If you're familiar with componentization and composition, you can learn more about [Package Management in VSTS and TFS](overview.md).*
 
 Your product is successful, your organization is growing, and it’s time to scale up your codebase to match. As you scale out past 2-3 teams working in a single codebase on a single product, you may find yourself asking questions like:
 - How do my teams effectively share reusable components?

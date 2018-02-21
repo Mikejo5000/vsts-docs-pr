@@ -5,13 +5,13 @@ ms.assetid: 097adb8d-9509-48bb-804e-37456ff80ee8
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfvc
 ms.manager: douge
-ms.author: routlaw
+ms.author: sdanie
 ms.date: 08/10/2016
 ---
 
 # Work with version control locks
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 This section describes how to lock a file or folder to prevent it from being checked out and altered. You lock a file or folder using Team Foundation version control locks.
 

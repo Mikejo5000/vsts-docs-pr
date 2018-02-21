@@ -4,14 +4,15 @@ description: Day in the life of a devops developer. Suspend work, fix a bug, and
 ms.assetid: 2fc2a1ff-70a2-4b4e-8dff-73238628f956
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfvc
+ms.topic: get-started-article
 ms.manager: douge
-ms.author: routlaw
+ms.author: sdanie
 ms.date: 08/25/2016
 ---
 
 # Day in the life of a devops developer: suspend work, fix a bug, and conduct a code review
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 A powerful one-click way to switch your working context from one thread of work to another is available in Visual Studio Premium and Visual Studio Ultimate with Team Foundation Server. Also, team members can easily exchange messages about proposed changes to the code. This topic illustrates these features, continuing a tutorial that follows members of a fictitious agile team for a day.
 
@@ -38,7 +39,7 @@ Now that his workspace is clean, Peter drags the new task from **Available Work 
 ### To suspend current work and begin work on a different task
 
  ![Suspending some work](_img/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/IC591024.png)
-1.  **Connect:** If you are not already connected to the team project that you want to work in, then [connect to the team project](../setup-admin/team-services/connect-to-visual-studio-team-services.md):
+1.  **Connect:** If you are not already connected to the team project that you want to work in, then [connect to the team project](../user-guide/connect-team-projects.md):
 
     1.  In **Team Explorer**, choose ![Home icon](_img/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/IC547418.png) **Home**, and then choose ![My Work icon](_img/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/IC588354.png) **My Work**.
 

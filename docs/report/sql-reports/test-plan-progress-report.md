@@ -6,12 +6,12 @@ ms.technology: vs-devops-reporting
 ms.assetid: 97d112d1-2d31-4890-b518-124fbeebea30
 ms.manager: douge
 ms.author: kaelli
-ms.date: 12/30/2016
+ms.date: 10/17/17
 ---
 
 # Test Plan Progress Report
 
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 After the team creates test plans and starts to run tests by using the test management tools provided with Team Foundation Server (TFS) which include Test Runner, Microsoft Test Manager, or Team Web Access (TWA) Test hub. With the Test Plan Progress report, you can track the team's progress in testing the product.  
   
@@ -23,7 +23,7 @@ After the team creates test plans and starts to run tests by using the test mana
   
  **Requirements**  
   
--   To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in Reporting Services. For more information, see [Add users to team projects](../../setup-admin/add-users.md).  
+-   To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in Reporting Services. For more information, see [Add users to team projects](../admin/grant-permissions-to-reports.md).  
   
 -   The team project collection that contains your team project was provisioned with SQL Server Reporting Services. This report is not available if ![Report](_img/icon_reportte.png "Icon_reportTE") **Reports** does not appear when you open Team Explorer and expand your team project node. If you need to add reports, see [Add reports to a team project](../admin/add-reports-to-a-team-project.md).  
   
@@ -128,4 +128,4 @@ After the team creates test plans and starts to run tests by using the test mana
   
 ## Related notes
 -  [Reporting Services Reports](reporting-services-reports.md)   
--  [Agile process](../../work/guidance/agile-process.md)
+-  [Agile process](../../work/work-items/guidance/agile-process.md)

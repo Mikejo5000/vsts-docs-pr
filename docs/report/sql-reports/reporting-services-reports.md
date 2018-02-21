@@ -6,10 +6,12 @@ ms.technology: vs-devops-reporting
 ms.assetid: c784953f-5faf-43eb-a4a9-080afd9270de
 ms.manager: douge
 ms.author: kaelli
-ms.date: 03/28/17
+ms.topic: get-started-article
+ms.date: 10/17/17
 ---
+
 # Reporting Services Reports
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 You can analyze the progress and quality of your project by using the reports in SQL Server Reporting Services. These reports aggregate metrics from work items, version control, test results, and builds. These reports answer questions about the actual state of your project.  
   
@@ -35,7 +37,7 @@ Build reports track the quality of software under development. By defining tests
 <b>Build and test activities</b> 
 <ol>
 <li>[Configure a build system](../../build-release/concepts/agents/agents.md)</li>
-<li>[Get started with CI/CD](../../build-release/get-started/ci-cd-part-1.md)</li>
+<li>[Get started with CI/CD](../../build-release/actions/ci-cd-part-1.md)</li>
 <li>[Run tests in your build process](../../build-release/test/getting-started-with-continuous-testing.md)</li>
 <li>(Optional) [Rate completed builds](https://msdn.microsoft.com/library/ms181734.aspx) to populate the Build Quality dimension.</li>
 </ol>
@@ -193,7 +195,7 @@ Test planning reports support monitoring the test progress and coverage of backl
 ## Q & A  
   
 ### Q: Do reports handle stories and substories or tasks and subtasks?  
- **A:**  Yes, you can subdivide stories or backlog items as well as tasks, creating a nested hierarchy of both backlog items and tasks. You can nest items several levels deep. If you subdivide a task into subtasks, specify hours only for the subtasks. These hours are rolled up as summary values for the parent task and their parent backlog item. To correct reports you believe are in error, see [Address inaccuracies published for summary values](../../report/address-inaccuracies-published-for-summary-values.md).  
+ **A:**  Yes, you can subdivide stories or backlog items as well as tasks, creating a nested hierarchy of both backlog items and tasks. You can nest items several levels deep. If you subdivide a task into subtasks, specify hours only for the subtasks. These hours are rolled up as summary values for the parent task and their parent backlog item. To correct reports you believe are in error, see [Address inaccuracies published for summary values](address-inaccuracies-published-for-summary-values.md).  
   
 ### Q: Which reports depend on linking work items?  
  **A:**  The overview and progress reports depend on linking tasks, test cases, and bugs to backlog items. You must link these items using the parent-child link for tasks and bugs and the Tested By link for test cases.  
@@ -211,5 +213,5 @@ Test planning reports support monitoring the test progress and coverage of backl
  **A:**  See [Bulk modify work items](../../work/backlogs/bulk-modify-work-items.md).  
   
 ### Q: Do you want to add a field to track additional data?  
-**A:**  See [Add or modify a work item field to support reporting](../../work/reference/add-or-modify-work-item-fields-to-support-reporting.md).   
+**A:**  See [Add or modify a work item field to support reporting](../../work/customize/reference/add-or-modify-work-item-fields-to-support-reporting.md).   
 

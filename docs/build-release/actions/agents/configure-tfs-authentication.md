@@ -1,6 +1,6 @@
 ---
 title: Configure TFS authentication for private agents
-description: Configure authentication for your private build and release agents to connect to your Team Foundation Server (TFS)
+description: Configure authentication for all your private build and release agents to connect to your Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: 66E3A184-6F3F-41D3-B522-55671DD5B98D
@@ -11,7 +11,7 @@ ms.date: 03/03/2017
 
 # Configure TFS authentication for your private build and release agents
 
-**TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/en-us/library/ms252495%28v=vs.120%29.aspx)**
+**TFS 2018 | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/en-us/library/ms252495%28v=vs.120%29.aspx)**
 
 When you deploy a private agent, you choose how the agent will authenticate to your Team Foundation Server (TFS). Here we'll show you how to configure TFS to enable your agents to use different authentication methods.
 
@@ -43,14 +43,14 @@ Start Internet Information Services (IIS) Manager. Select your TFS site and make
 
 ### PAT
 
-Personal access token (PAT) authentication is available in TFS 2015 Update 3 or newer and TFS 2017 RTM and newer. To use PAT, your server must be configured with HTTPS. See [Web site settings and security](../../../setup-admin/websitesettings.md).
+Personal access token (PAT) authentication is available in TFS 2015.3 and newer. To use a PAT, your server must be configured with HTTPS. See [Web site settings and security](../../../security/websitesettings.md).
 
 ## Deploy your agent
 
-### TFS 2017
+### TFS 2017 and newer
 
 * [Windows agent v2](../../actions/agents/v2-windows.md)
-* [OSX agent](../../actions/agents/v2-osx.md)
+* [macOS agent](../../actions/agents/v2-osx.md)
 * [Ubuntu 14.04 agent](../../actions/agents/v2-linux.md)
 * [Ubuntu 16.04 agent](../../actions/agents/v2-linux.md)
 * [RedHat agent](../../actions/agents/v2-linux.md)
@@ -58,7 +58,7 @@ Personal access token (PAT) authentication is available in TFS 2015 Update 3 or 
 ### TFS 2015
 
 * [Windows agent v1](../../actions/agents/v1-windows.md)
-* [OSX agent](../../actions/agents/v2-osx.md)
+* [macOS agent](../../actions/agents/v2-osx.md)
 * [Ubuntu 14.04 agent](../../actions/agents/v2-linux.md)
 * [Ubuntu 16.04 agent](../../actions/agents/v2-linux.md)
 * [RedHat agent](../../actions/agents/v2-linux.md)

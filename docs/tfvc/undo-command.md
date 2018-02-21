@@ -5,17 +5,17 @@ ms.assetid: e10ca7c5-98d5-4c51-99fa-74b4eb7ceb49
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfvc
 ms.manager: douge
-ms.author: routlaw
+ms.author: sdanie
 ms.date: 08/10/2016
 ---
 
 # Undo command
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Discards one or more pending changes to files or folders.
 
-**Requirements:** See [Pernission reference for Team Foundation Server](../setup-admin/permissions.md).
+**Requirements:** See [Permissions and groups reference](../security/permissions.md).
 
     tf undo [/workspace:workspacename[;workspaceowner]]
     [/recursive] itemspec [/noprompt] [/login:username,[password]]

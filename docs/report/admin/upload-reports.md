@@ -11,10 +11,7 @@ ms.date: 03/02/2017
 
 #Upload reports to a team project
 
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
-
->[!IMPORTANT]
->**Feature availability**: You can only add a report server to an on-premises TFS.  If you're using Team Services, adding a report server isn't a supported option, instead, you can use [PowerBI](../powerbi/overview.md). 
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 This is the second task in the four-task sequence to add reports to your team project. You can use the procedures in this topic to upload reports for the first time, or to upload updated reports provided with the latest process templates. 
 
@@ -22,6 +19,9 @@ This is the second task in the four-task sequence to add reports to your team pr
 [![Upload reports](_img/step-2-upload-reports.png)](upload-reports.md)
 [![Grant permissions](_img/step-3-grant-permissions.png)](grant-permissions-to-reports.md) 
 [![Review team activities](_img/step-4-review-team-activities.png)](review-team-activities-for-useful-reports.md)
+
+>[!IMPORTANT]
+>**Feature availability**: You can only add a report server to an on-premises TFS. If you're using VSTS, adding a report server isn't a supported option, instead, you can use the [Analytics Service](../analytics/index.md).
 
 
 By adding a report server to your TFS (on-premises) deployment, you can access a wealth of data about your team's projects, such as build quality, bug trends, burndown, and test progress. SQL Server Reporting Services (SSRS) reports provide insight to help teams manage work and improve processes.  
@@ -40,14 +40,14 @@ You use the **TFSConfig addProjectReports** command line tool to upload reports.
 
 1. Verify that you have the following tools, configurations, and permissions. 
 
-	* If you aren't an administrator for the team project, [get added now](../../setup-admin/add-administrator-tfs.md).  
+	* If you aren't an administrator for the team project, [get added now](../../tfs-server/add-administrator-tfs.md).  
 	* If you haven't been added to the Content Manager or Team Foundation Content Manager role for SQL Server Reporting Services, [get added now](grant-permissions-to-reports.md).  
 	* If you haven't installed [Team Foundation Server](https://www.visualstudio.com/downloads/download-visual-studio-vs), install it now. This is the only way to obtain the latest version of the default process templates, which contains the latest version of the reports.  
 
 2. Open a Command Prompt in administrative mode and change to the following directory:   
 
 	```
-	%programfiles%\Microsoft Team Foundation Server 15.0\Tools
+	%programfiles%\TFS 15.0\Tools
 	```
  	On a 64-bit edition of Windows, replace **%programfiles%** with **%programfiles(x86)%**.
 
@@ -71,25 +71,25 @@ You use the **tfpt** command line tool that TFS Power Tools provides.
 
 	* If you haven't installed TFS power tools, [install them now](http://go.microsoft.com/fwlink/?LinkId=320602).  
 	* If you haven't installed Visual Studio, [install a version of them now](https://www.visualstudio.com/downloads/download-visual-studio-vs). You can download Visual Studio Community for free. Each version of Visual Studio installs Team Explorer, which must be present on the same machine where you run the **tfpt** command line tool.  
-	* If you aren't an administrator for the team project, [get added now](../../setup-admin/add-administrator-tfs.md).  
+	* If you aren't an administrator for the team project, [get added now](../../tfs-server/add-administrator-tfs.md).  
 	* If you haven't been added to the Content Manager or Team Foundation Content Manager role for SQL Server Reporting Services, [get added now](grant-permissions-to-reports.md).  
 	* If you haven't installed [Team Foundation Server](https://www.visualstudio.com/downloads/download-visual-studio-vs), install it now. This is the only way to obtain the latest version of the default process templates, which contains the latest version of the reports.  
 
 2. From Team Explorer, download the latest process template that is compatible with the one used to create your team project.  
 
-	![Download process template](../../Work/guidance/_img/process-template-manager.png)  
+	![Download process template](../../work/work-items/guidance/_img/process-template-manager.png)  
 
-	To determine the type of process template that was used to create your team project, review the work item types that appear in the **New Work Item** menu for Team Explorer and then compare them with the work item types shown in [Process template correlation with an existing team project](../../Work/guidance/manage-process-templates.md#wit_correlation). If your work item types differ from those shown listed, then a custom process template might have been used.
+	To determine the type of process template that was used to create your team project, review the work item types that appear in the **New Work Item** menu for Team Explorer and then compare them with the work item types shown in [Process template correlation with an existing team project](../../work/work-items/guidance/manage-process-templates.md#wit_correlation). If your work item types differ from those shown listed, then a custom process template might have been used.
 
 	>[!NOTE]  
 	>In general, you can use the most recent version of the process template that was used to create your team project. For example, you can upload reports from Scrum, even if your team project was created with Visual Studio Scrum 2.0.  <br/><br/>
 	To download a process template, you need to be an administrator for the team project collection, and you must connect to TFS using the same version of Visual Studio. For example, connect to TFS 2015 from Visual Studio Community 2015. <br/><br/>
-	>To learn more about process templates and work item types, see [Choose a process](../../work/guidance/choose-process.md). 
+	>To learn more about process templates and work item types, see [Choose a process](../../work/work-items/guidance/choose-process.md). 
 
 3. Open a Command Prompt in administrative mode and change to the directory where you installed the power tools.  
 
 	```
-	cd %programfiles%\Microsoft Team Foundation Server 2015 Power Tools
+	cd %programfiles%\TFS 2015 Power Tools
 	```
 
 On a 64-bit edition of Windows, replace **%programfiles%** with **%programfiles(x86)%**.
@@ -139,7 +139,7 @@ To learn about which reports are provided with which process templates, see [Rev
 **A:** Reports will be out of date when all or some data stops flowing into the data warehouse. To verify the data flow, run the **GetProcessStatus** of the [Warehouse Control Web service](manually-process-data-warehouse-and-cube.md). Also, fix any [schema conflicts that may be occurring](resolve-schema-conflicts.md).
 
 ####Q: What tasks does tfpt addprojectreports perform?
-**A:** The **tfpt addprojectreports** command performs the instructions contained in the [ReportTasks file of the process template](../../work/reference/process-templates/add-reports-to-the-process-template.md). This file is located in the Reports folder of the process template. The tasks include creating report folders, setting report parameters and data sources for each report, and uploading reports to the report server.
+**A:** The **tfpt addprojectreports** command performs the instructions contained in the [ReportTasks file of the process template](../../work/customize/reference/process-templates/add-reports-to-the-process-template.md). This file is located in the Reports folder of the process template. The tasks include creating report folders, setting report parameters and data sources for each report, and uploading reports to the report server.
 
 ####Q: What if I just want to upload a single report?
 **A:** You can upload a single report using **Upload file** in Report Manager. You'll need to define the report's data source and possibly other parameters.
@@ -155,7 +155,7 @@ You can always check the names by opening the context menu for any report, choos
 ####Q: What about uploading Excel reports?
 **A:** For TFS 2015 and earlier versions, you can use **tfpt addprojectportal** command to add a project portal and Excel reports once you have [added a SharePoint web application](https://msdn.microsoft.com/library/ee805928.aspx) to your team project collection. 
 
-####Q: Can I get these same reports using Team Services?
+####Q: Can I get these same reports using VSTS?
 **A:** Not at this time. Uploading reports is only supported for an on-premises TFS. You can, however, [chart the results of a flat-list query](../charts.md).
 
 ####Q: How do I customize a report?

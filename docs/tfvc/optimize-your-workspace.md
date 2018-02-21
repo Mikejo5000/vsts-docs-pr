@@ -5,13 +5,13 @@ ms.assetid: 0ad2897c-5a99-455e-a5ee-16e4413d0b6b
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfvc
 ms.manager: douge
-ms.author: routlaw
+ms.author: sdanie
 ms.date: 08/10/2016
 ---
 
 # Optimize your workspace
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Does your team have a large and complex codebase? Do you want your workspace to contain only the files you need to improve performance, reduce network traffic, and reduce the disk space required on your dev machine?
 

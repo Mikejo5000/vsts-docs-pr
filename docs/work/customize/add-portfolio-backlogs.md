@@ -1,20 +1,21 @@
 ---
-title: Add portfolio backlogs | Team Services & TFS
+title: Add portfolio backlogs
+titleSuffix: VSTS & TFS 
 description: Add up to two additional work item types and portfolio backlogs to Visual Studio Team Services (VSTS) or Team Foundation Server 
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 764D98C3-9DAD-4F40-8D5D-D0C95E023485
 ms.manager: douge
 ms.author: kaelli
-ms.date: 05/16/2017
+ms.date: 12/15/2017  
 ---
 
 # Add a portfolio backlog level
 
-<b>Team Services (Hosted XML) | TFS 2017 | TFS 2015 | TFS 2013</b> 
+[!INCLUDE [temp](../_shared/version-header-hosted-plus-tfs.md)]
 
 >[!IMPORTANT]  
->This topic applies to team project customization for Hosted XML and On-premises XML process models. For the Inheritance process model, see [Customize your backlogs or boards for a process](../process/customize-process.md). 
+>This topic applies to team project customization for Hosted XML and On-premises XML process models. For the Inheritance process model, see [Customize your backlogs or boards for a process](process/customize-process.md). 
 >
 >For an overview of process models, see [Customize your work tracking experience](../customize/customize-work.md).  
 
@@ -29,8 +30,8 @@ Here, we add a third portfolio backlog, Initiative. With it, the management team
 
 <a id="image-diff"></a>  
 
->[!NOTE]  
->The images you see from your web portal may differ from the images you see in this topic. These differences result from updates made to your on-premises TFS, and the process template chosen when creating your team project&mdash;[Agile](/team-services/work/guidance/agile-process), [Scrum](/team-services/work/guidance/scrum-process), or [CMMI](/team-services/work/guidance/cmmi-process). However, the basic functionality available to you remains the same unless explicitly mentioned. 
+> [!NOTE]  
+> The images you see from your web portal may differ from the images you see in this topic. These differences result from updates made to your on-premises TFS, and the process template chosen when creating your team project&mdash;[Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md). However, the basic functionality available to you remains the same unless explicitly mentioned. 
 
 
 ![A view of three portfolio backlogs enabled](_img/three-level-portfolio-backlog.png)
@@ -44,25 +45,25 @@ The process to add another portfolio backlog differs slightly depending on the [
 - For **Hosted XML**: You'll first export your process, add or update definition files, and then import that process to either update existing team projects or use it to create a team project.  
 - For **On-premises XML**: You'll first export your work tracking definition files, update them, and then import them to your team project.  
 
-This topic walks you through adding a portfolio backlog to a team project based on the [Agile process](../guidance/agile-process.md) in these five steps: 
+This topic walks you through adding a portfolio backlog to a team project based on the [Agile process](../work-items/guidance/agile-process.md) in these five steps: 
 1.	[Export the files you need](#export-files)
 2.	[Create the Initiative work item type](#create-initiative)
 3.	[Update Categories with the Initiative Category](#update-categories)
 4.	[Update ProcessConfiguration to add the Initiative portfolio backlog](#update-processconfig)
 5.	[Update your team project and verify your changes](#update-team-project)  
 
-You can apply the same steps if you work with a team project based on the [Scrum](../guidance/scrum-process.md) or [CMMI](../guidance/cmmi-process.md) process. When you're done, you'll get to manage your portfolio of projects by grouping work within these four levels: User Stories (or Product backlog items or Requirements), Features, Epics, and Initiatives.   
+You can apply the same steps if you work with a team project based on the [Scrum](../work-items/guidance/scrum-process.md) or [CMMI](../work-items/guidance/cmmi-process.md) process. When you're done, you'll get to manage your portfolio of projects by grouping work within these four levels: User Stories (or Product backlog items or Requirements), Features, Epics, and Initiatives.   
  
-For an overview of the three system processes, see [Choose a process](../guidance/choose-process.md). For an overview of the three process models, see [Customize your work tracking experience](customize-work.md). 
+For an overview of the three system processes, see [Choose a process](../work-items/guidance/choose-process.md). For an overview of the three process models, see [Customize your work tracking experience](customize-work.md). 
 
 <a id="export-files">  </a>
 ##1. Export the files you need
 <ol>
 
-<li>If you aren't the account owner or a member of the Project Collection Administrator's group, [get added as an administrator](../../setup-admin/add-administrator-tfs.md). You need these permissions to customize the team project.</li>   
+<li>If you aren't the account owner or a member of the Project Collection Administrator's group, [get added as an administrator](../../security/set-project-collection-level-permissions.md). You need these permissions to customize the team project.</li>   
 <li>Get the files you need: 
 <ul>
-<li>For **Hosted XML**: [Export the process you want to update](../import-process/import-process.md)<br/>
+<li>For **Hosted XML**: [Export the process you want to update](import-process/import-process.md)<br/>
 Save the files to a folder that you'll use to update these files and folders: Categories, ProcessConfiguration, and WorkItemTypes</li> 
 <li> For **On-premises XML**: <br/>
 <ul>
@@ -196,15 +197,15 @@ In this last step, you add the Initiative portfolio backlog to the process and m
 ##5. Update your team project and verify access to the new portfolio backlog  
 
 1.	Update your team project: 
-	- For **Hosted XML:**  [Import your process](../import-process/import-process.md).  
+	- For **Hosted XML:**  [Import your process](import-process/import-process.md).  
 	- For **On-premises XML:**  [Import the definition files you updated](#import-export) in this order:  
 		a. Initiative.xml  
 		b. Categories.xml   
 		c. ProcessConfiguration.xml   
 
 2.	Open or refresh the web portal and confirm that Initiative appears as a portfolio backlog as expected. See [Organize your backlog](../backlogs/organize-backlog.md).  
-3.	Grant [Advanced access](../connect/change-access-levels.md) to users who'll need to exercise all the features available with portfolio backlogs.  
-	For **Hosted XML:**  See [Assign licenses to users](../../setup-admin/team-services/add-account-users-assign-access-levels-team-services.md).
+3.	Grant [Advanced access](../../security/change-access-levels.md) to users who'll need to exercise all the features available with portfolio backlogs.  
+	For **Hosted XML:**  See [Assign licenses to users](../../accounts/add-account-users-assign-access-levels.md).
 
 
 <a id="import-export">  </a>
@@ -217,13 +218,9 @@ If you're updating a team project that connects to an on-premises TFS, you'll us
 
 [!INCLUDE [temp](../_shared/process-editor.md)]   
 
-1. Open a Command Prompt window where either Visual Studio or Team Explorer is installed and enter:  
+[!INCLUDE [temp](../_shared/witadmin-run-tool-example.md)]
 
-	```cd %programfiles(x86)%\Microsoft Visual Studio 14.0\Common7\IDE```  
-
-	On a 32-bit edition of Windows, replace ```%programfiles(x86)%``` with ```%programfiles%```. The version of Visual Studio or Team Explorer must be at the same version as the on-premises TFS. 
-
-2.	Enter the ```witadmin``` command, substituting your data for the arguments that are shown. For example, to import a WIT:   
+0.	Enter the ```witadmin``` command, substituting your data for the arguments that are shown. For example, to import a WIT:   
 
 	```witadmin importwitd /collection:CollectionURL /p:"ProjectName" /f:"DirectoryPath\WITDefinitionFile.xml"```
 
@@ -250,7 +247,7 @@ Use these commands to export and import categories and process configuration:
 	witadmin importprocessconfig /collection:"CollectionURL" /p:"ProjectName" /f:"DirectoryPath/ProcessConfiguration.xml"
 
 
-##Related notes  
+## Related notes  
 We've just shown how to add another portfolio backlog level. You can add up to five portfolio backlogs. This includes the default backlogs of Feature and Epic. In total, this provides you with seven levels from the top-level portfolio backlog to task.  
 
 ![Conceptual image of 5 levels of portfolio backlog](_img/five-levels-portfolio-backlogs.png)
@@ -259,12 +256,12 @@ If you want to add another WIT to your backlogs or boards, see [work item types 
 
 To learn more about the syntax for a definition file or command line tool, see these topics:  
 
-- [All WITD XML elements reference](../reference/all-witd-xml-elements-reference.md)  
-- [Categories XML element reference](../reference/categories-xml-element-reference.md)  
-- [Process configuration XML element reference](../reference/process-configuration-xml-element.md)  
-- [Import, export, and manage work item types](../reference/witadmin/witadmin-import-export-manage-wits.md)  
-- [Import and export categories](../reference/witadmin/witadmin-import-export-categories.md)  
-- [Import and export process configuration](../reference/witadmin/witadmin-import-export-process-configuration.md)  
+- [All WITD XML elements reference](reference/all-witd-xml-elements-reference.md)  
+- [Categories XML element reference](reference/categories-xml-element-reference.md)  
+- [Process configuration XML element reference](reference/process-configuration-xml-element.md)  
+- [Import, export, and manage work item types](reference/witadmin/witadmin-import-export-manage-wits.md)  
+- [Import and export categories](reference/witadmin/witadmin-import-export-categories.md)  
+- [Import and export process configuration](reference/witadmin/witadmin-import-export-process-configuration.md)  
 
 Otherwise, see [Customize your work tracking experience](customize-work.md) to access other configuration and customization options available to you.  
 
@@ -288,5 +285,5 @@ Yes. For example, you can add Goal and Initiative WITs to a portfolio backlog ca
 
 While you can nest backlog items, we don't recommend you do. We don't support drag-and-drop linking of nested backlog items. Instead, we support [mapping of backlog items to portfolio items](../backlogs/organize-backlog.md).  
 
-For examples of how hierarchically linked items that belong to the Requirements Category appear on the backlogs and boards, see [How backlogs and boards display hierarchical (nested) items](../troubleshoot/resolve-backlog-reorder-issues.md).
+For examples of how hierarchically linked items that belong to the Requirements Category appear on the backlogs and boards, see [How backlogs and boards display hierarchical (nested) items](../backlogs/resolve-backlog-reorder-issues.md).
 

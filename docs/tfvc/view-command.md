@@ -1,23 +1,23 @@
 ---
-title: View Command
-description: View Command
+title: Retrieve a file using the TFVC View Command
+description: Retrieve a file using the TFVC View Command for VSTS or TFS
 ms.assetid: d67fcb55-6f54-434f-ba05-4564f976b8d9
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfvc
 ms.manager: douge
-ms.author: routlaw
+ms.author: sdanie
 ms.date: 08/10/2016
 ---
 
 # View Command
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 The **view** command retrieves a specific version of a file to a temporary folder on your computer and displays it.
 
 **Required Permissions**
 
-To use the **view** command, you must have the **Read** permission set to **Allow**. For more information, see [Team Foundation Server Permissions](../setup-admin/permissions.md).
+To use the **view** command, you must have the **Read** permission set to **Allow**. For more information, see [Permissions and groups reference](../security/permissions.md).
 
     tf view [/collection:TeamProjectCollectionUrl] [/console] [/recursive] [/output:localfile]
     [/shelveset:shelvesetname[;owner]] [/noprompt] itemspec 

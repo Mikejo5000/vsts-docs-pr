@@ -1,28 +1,27 @@
 ---
-title: Get started with Git and Visual Studio 2013 | Team Services & TFS
+title: Get started with Git and Visual Studio 2013 | VSTS & TFS
 description: Get started using Git in Visual Studio
 toc: show
 ms.assetid: BFDE8FAF-63B8-4BC9-9A24-32EE2CA73C13
-ms.topic: code reference (API)
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-git
+ms.technology: vs-devops-git 
 ms.manager: douge
 ms.author: sdanie
-ms.date: 03/29/2017
+ms.date: 08/28/2017
 ---
 
 #  Get started using Git in Visual Studio
 
 > [!div class="op_single_selector"]
-> - [Visual Studio 2015 Update 2](gitquickstart.md)
-> - [Visual Studio 2017](gitquickstart-vs2017.md)
+> - [Visual Studio 2017](gitquickstart.md)
+> - [Visual Studio 2015 Update 2](gitquickstart-vs2015.md)
 > - [Visual Studio 2013 and Visual Studio 2015 RTM/Update 1](get-started-vs2013.md) 
 
-#### Team Services | TFS 2015 
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 
 
 Whether your software project is large, small, or brand new, in most cases you'll be better off if you use version control as early as possible. 
 Here, we'll show you how to get started with Git, a distributed version control system. 
-If you want to work in a centralized version control system, you can instead use [Team Foundation Version Control](https://www.visualstudio.com/en-us/docs/tfvc/overview) (TFVC).
+If you want to work in a centralized version control system, you can instead use [Team Foundation Version Control](../tfvc/overview.md) (TFVC).
 
 ## Create a team project for your repositories
 Team projects hold your repositories, backlogs, and builds.  When you create a team project, a new repository will be automatically created for you.
@@ -49,7 +48,7 @@ To get started, you'll first need to clone your repo to your local machine.  Onc
 
 	![Click Home, then Open in Visual Studio](_img/get-started/GoHomeOpenInVisualStudio.png)
 
-0. Sign in to Visual Studio Team Services from Visual Studio.
+0. Sign in to VSTS from Visual Studio.
 
 0. Clone the repository to your computer.
 
@@ -74,7 +73,7 @@ Let's add a new app to the repo so we can make some changes.
 
 	![Navigate to the Changes page](_img/get-started/VSChanges1.png)
 	
-0. The new app appears under the Included Changes section.  Enter a commit message and click the **Commit and Push** button to commit the changes to your local repo then push your changes to Visual Studio Team Services.
+0. The new app appears under the Included Changes section.  Enter a commit message and click the **Commit and Push** button to commit the changes to your local repo then push your changes to VSTS.
 If you haven't previously used Git on this computer, you may have to [configure your username and email address](#configure_username_email).
 
 	![Enter a message and click Commit](_img/get-started/VSChangesCommitPush.png)
@@ -164,15 +163,15 @@ Now you can add reviewers to get their feedback on your changes before you merge
 <!-- BEGINSECTION class="md-qanda" -->
 
 <a name="create_team_project"></a>
-#### Q: How do I create a team project on Visual Studio Team Services?
-* [Sign up and create your team project](https://www.visualstudio.com/docs/setup-admin/team-services/sign-up-for-visual-studio-team-services).  Be sure to select **Git** from the version control options:
+#### Q: How do I create a team project on VSTS?
+* [Sign up and create your team project](../accounts/create-account-msa-or-work-student.md).  Be sure to select **Git** from the version control options:
 
 	![Select Git from the Version Control menu](_img/get-started/CreateProjGitFirstRun.png)
 	
 
 #### Q: How do I create a team project on an on-premises Team Foundation Server?
-* [Set up TFS on a server](https://www.visualstudio.com/en-us/docs/setup-admin/tfs/install/get-started).
-* [Create a team project](https://www.visualstudio.com/en-us/docs/setup-admin/create-team-project).  Be sure to select **Git** from the version control options:
+* [Set up TFS on a server](../tfs-server/install/get-started.md).
+* [Create a team project](../accounts/create-team-project.md).  Be sure to select **Git** from the version control options:
 
 	![Select Git from the Version Control menu](_img/get-started/CreateProjGitPCW.png)
 
@@ -184,7 +183,7 @@ First you'll need to:
 
  ![Prompt to install Git command prompt tools](_img/command-prompt/IC675719.png)
 
-* Get the clone URL from the CODE hub in Visual Studio Team Services.
+* Get the clone URL from the CODE hub in VSTS.
 
 For the Fabrikam project on VSTS, the command to clone would look like this:
 

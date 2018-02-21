@@ -5,13 +5,13 @@ ms.assetid: b23efc53-f715-4eef-9631-64455663cfcc
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfvc
 ms.manager: douge
-ms.author: routlaw
+ms.author: sdanie
 ms.date: 08/10/2016
 ---
 
 # Merge folders and files
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 For the various reasons described in [Branch folders and files](branch-folders-files.md), many software development teams work in a codebase that is forked into various branches. If you use branches, eventually your team must integrate the work that has been completed on different branches during certain phases of your project. For example, when you are ready to test a full version of your software, you will need the changes made on different feature team branches to be merged together.
 
@@ -27,7 +27,7 @@ To perform these procedures, you must have the following permissions set:
 
 -   If the item in the target tree is being renamed, you must have the **Check out** permission for both the source tree and the target tree set to **Allow**.
 
--   If any files affected by the operation are locked, you must have the **Lock** permission set to **Allow**. For more information about permissions, see [Pernission reference for Team Foundation Server](../setup-admin/permissions.md).
+-   If any files affected by the operation are locked, you must have the **Lock** permission set to **Allow**. For more information about permissions, see [Permissions and groups reference](../security/permissions.md).
 
 ## Initiate a Merge from the Source Control Window
 

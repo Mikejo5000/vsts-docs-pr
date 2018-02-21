@@ -1,17 +1,17 @@
 ---
-title: Track test status in Visual Studio Team Services
-description: Track test status with charts and graphs using Visual Studio Team Services
+title: Track test status in VSTS
+description: Track test status with charts and graphs using VSTS
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-manual
 ms.assetid: cd74abc1-44c0-4390-8d5d-4d1afbd4606c
 ms.manager: douge
 ms.author: ahomer
-ms.date: 08/12/2016
+ms.date: 01/18/2018
 ---
 
 # Track test status
 
-**Visual Studio 2017 | Visual Studio 2015 | TFS 2017 | TFS 2015 | [Previous version](https://msdn.microsoft.com/library/dn282443%28v=vs.120%29.aspx)**
+[!INCLUDE [version-header-vs-ts-tfs](../_shared/version-header-vs-ts-tfs.md)] 
 
 Quickly view the status of your testing using lightweight charts. 
 For example, find out how many test cases are ready to run,
@@ -20,6 +20,8 @@ You can pin these charts to your home page, then all the team
 can see the progress at a glance.
 
 ![On the Charts tab, view test plan status with charts that you created](_img/track-test-status/OverviewTrackResults.png) 
+
+[!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
 
 ## Track testing progress
 
@@ -184,57 +186,21 @@ Use the chart's context menu.
 
 ![Open the chart](_img/track-test-status/EditDeletePinChart.png)
 
-You can configure the dashboard widget to show a range of chart types.
-
-![Configure chart widget](_img/track-test-status/configure-dashboard-widget.png)
-
+You can [configure the dashboard widget](../../report/widget-catalog.md)
+to show a range of chart types.
 You must be a team administrator to do this, but team members with 
 Stakeholder access can view the charts on the dashboard. 
+
 Learn more about
 [dashboards](../../report/dashboards.md). 
 Or learn more about
 [team administration](../../work/scale/manage-team-assets.md).
 
-##  Try this next
+## See also
 
-* [Control how long to keep test results](how-long-to-keep-test-results.md)
+*  [FAQs for manual testing](../reference-qa.md#trackstatus)
 
-<a name="qa"></a>
-## Q&A
+##  Next step
 
-<!-- BEGINSECTION class="md-qanda" -->
-
-#### Q: Can I view the recent test results for an individual test case?
-
-A:  Yes, select the test case within a test suite and then 
-choose to view the test details pane.
-
-![From test suite, select test case. On toolbar, click test details icon to view the test details pane](_img/track-test-status/ShowDetailsPane.png)
-
-View the recent test results for this test case.
-
-![In test details pane, open the Pane list, choose Test Results](_img/track-test-status/TestResultsPane.png)
-
-#### Q: How is data shown in the charts for test cases that are in multiple test suites?
-
-A:  For test case charts, if a test case has been added to 
-multiple test suites in a plan then it's only counted once.
-
-For test result charts, each instance of a test that is run 
-is counted for each of the test suites separately.
-
-#### Q: Who can create charts?
-
-A: You need at least a Basic access to create charts.
-
-#### Q: How can I edit or delete a chart?
-
-A: Select the option you want from the chart's context menu.
-
-#### Q: How do I control how long I keep my test data?
-
-A: [Learn more here](how-long-to-keep-test-results.md).
-
-<!-- ENDSECTION --> 
-
-[!INCLUDE [help-and-support-footer](../_shared/help-and-support-footer.md)] 
+> [!div class="nextstepaction"]
+> [Control how long to keep test results](how-long-to-keep-test-results.md)

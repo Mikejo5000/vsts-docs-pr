@@ -5,13 +5,13 @@ ms.assetid: a074c178-1b40-44dd-9e0f-8e9c7f565bfc
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfvc
 ms.manager: douge
-ms.author: routlaw
-ms.date: 08/10/2016
+ms.author: sdanie
+ms.date: 11/22/2017
 ---
 
 # Folder comparison filters
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 The folder comparison filter is an ordered list of name filters that is used to match the names of files or folders that you are comparing. You can use **Compare** to evaluate the file or folder names against the name filters. Once **Compare** finds a match or exclusion, the comparison stops.
 
@@ -56,18 +56,18 @@ The following table lists filter name mask examples.
 
 |**Name Mask**|**Description**|
 |---|---|
-|.cs|Matches all C# files.|
-|My*.bmp|Matches all bitmap files that begin with My.|
-|!*.exe|Excludes all executable files.|
-|!objd\\|Excludes all objd folders.|
+|.cs | Matches all C# files.|
+|My*.bmp | Matches all bitmap files that begin with My.|
+|!*.exe | Excludes all executable files.|
+|!objd\\ | Excludes all objd folders.|
 
 
 The following table lists filter examples.
 
 |**Filter**|**Description**|
 |---|---|
-|.cs;!objd\;!obj\;!bin\\|Matches all C# files except those in objd, obj, or bin folders.|
-|!*.resx;!*ini;!resources\;!\*junk*\\|Excludes all .resx and .ini files, all files in the resources folder, and all files in any folder that has a name that includes the word junk.|
+|.cs;!objd\;!obj\;!bin\\ | Matches all C# files except those in objd, obj, or bin folders.|
+|!*.resx;!*ini;!resources\;!\*junk*\\ | Excludes all .resx and .ini files, all files in the resources folder, and all files in any folder that has a name that includes the word junk.|
 
 
 ## See Also

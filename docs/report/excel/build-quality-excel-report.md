@@ -10,7 +10,7 @@ ms.date: 12/30/2016
 ---
 # Build Quality Excel Report
 
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 
 Teams who are responsible for testing software can use the Build Quality report to help monitor the success or failure rate of test activity with each build. The Build Quality report provides the following reports, which show the test results for all build definitions for a team project.  
@@ -58,7 +58,7 @@ Teams who are responsible for testing software can use the Build Quality report 
   
 -   **Run builds regularly**. You can run builds at set intervals or after every check-in. You can create regular builds when you use the schedule trigger.  
   
-     For more information, see [Get started with CI/CD](../../build-release/get-started/ci-cd-part-1.md).  
+     For more information, see [Get started with CI/CD](../../build-release/actions/ci-cd-part-1.md).  
   
 -   **Run tests**. For more information, see [Run your tests](../../manual-test/getting-started/run-manual-tests.md).  
   

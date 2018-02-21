@@ -6,10 +6,12 @@ ms.technology: vs-devops-reporting
 ms.assetid: ab92d41e-aab1-4d82-ad57-a4f868adc102
 ms.manager: douge
 ms.author: kaelli
-ms.date: 12/30/2016
+ms.date: 10/17/17
 ---
+
+
 # Status on All Iterations Report
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 After work has progressed on several iterations, also known as sprints, you can view the team progress by viewing the Status on All Iterations report. This report helps you track the team's performance over successive iterations.  
   
@@ -23,7 +25,7 @@ After work has progressed on several iterations, also known as sprints, you can 
   
  **Requirements**  
   
- To view this report, you must be assigned or belong to a group that has been assigned the **Browser** role in Reporting Services. For more information, see [Add users to team projects](../../setup-admin/add-users.md).  
+ To view this report, you must be assigned or belong to a group that has been assigned the **Browser** role in Reporting Services. For more information, see [Add users to team projects](../admin/grant-permissions-to-reports.md).  
   
 ##  <a name="Data"></a> Data in the report  
  The Status on All Iterations report presents a snapshot of work that the team accomplished across several iterations, as the following illustration shows. The data is derived from the data warehouse.  
@@ -51,7 +53,7 @@ After work has progressed on several iterations, also known as sprints, you can 
 -   Specify the **Original Estimate**, **Completed**, and **Remaining** fields for each task or subtask, and update the **Completed** and **Remaining** fields during the iteration.  
   
     > [!IMPORTANT]
-    >  If you subdivide a task into subtasks, specify hours only for the subtasks. These hours are rolled up as summary values for the parent task and the user story. For more information, see [Address inaccuracies published for summary values](../../report/address-inaccuracies-published-for-summary-values.md).  
+    >  If you subdivide a task into subtasks, specify hours only for the subtasks. These hours are rolled up as summary values for the parent task and the user story. For more information, see [Address inaccuracies published for summary values](address-inaccuracies-published-for-summary-values.md).  
   
 -   Update the **State** of each story, task, and bug as it progresses from active to closed.  
   

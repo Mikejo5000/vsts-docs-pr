@@ -5,13 +5,13 @@ ms.assetid: 62dd76a4-8315-4415-8bd9-4cbddc689e7f
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfvc
 ms.manager: douge
-ms.author: routlaw
+ms.author: sdanie
 ms.date: 08/10/2016
 ---
 
 # Compare folders and files
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 This section explains how to compare folders and files. You can compare server folders and local folders to each other, and view the differences between the contents of each folder. You can compare two server files, two local files, or a server file against a local file and view the differences between the files.
 

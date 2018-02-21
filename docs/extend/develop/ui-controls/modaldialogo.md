@@ -1,6 +1,6 @@
 ---
-title: Use the Dialog Control | Extensions for Visual Studio Team Services
-description: Use the modal dialog control to collect user input or display message in your app for Visual Studio Team Services.
+title: Use the Dialog Control | Extensions for VSTS
+description: Use the modal dialog control to collect user input or display message in your app for VSTS.
 ms.assetid: 84F3452D-9EB6-4908-AB52-07903644EDA8
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
@@ -20,7 +20,7 @@ When using this modal dialog, dialog overlay will cover only the area dedicated 
 </div> 
 
 <a name="basic"></a>
-### Simple modal dialog
+## Simple modal dialog
 Below sample use the simplistic modal dialog usage where no button is displayed and `contextText` is specified.
 ``` javascript
 	import Dialogs = require("VSS/Controls/Dialogs");
@@ -35,7 +35,7 @@ Below sample use the simplistic modal dialog usage where no button is displayed 
 ```
 
 <a name="form"></a>
-### Displaying a form in a modal dialog
+## Displaying a form in a modal dialog
 Below sample shows displaying a form in a modal dialog and getting the result when it is valid.
 
 ``` html
@@ -109,7 +109,7 @@ Below sample shows displaying a form in a modal dialog and getting the result wh
 ```
 
 <a name="confirmation"></a>
-### Confirmation dialog
+## Confirmation dialog
 Below sample displays how to use modal dialgo as a confirmation dialog.
 
 ``` javascript

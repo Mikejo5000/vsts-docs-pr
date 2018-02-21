@@ -1,10 +1,10 @@
-0. Sign in to your Visual Studio Team Services account 
+0. Sign in to your VSTS account 
 (```https://{youraccount}.visualstudio.com```).
 
 0.	From your home page, open your profile. 
 Go to your security details.
 
-	<img alt="Go to Team Services home, open your profile, go to Security" src="./_img/create-pat/my-profile.png" style="border: 1px solid #CCCCCC" />
+	<img alt="Go to VSTS home, open your profile, go to Security" src="./_img/create-pat/my-profile.png" style="border: 1px solid #CCCCCC" />
  
 0. Under **Security**, go to **Personal access tokens**, 
 then choose **Add**.
@@ -23,7 +23,7 @@ publishing APIs work outside the context of an account.
 This will limit the token to only being able 
 to publish extensions to the Visual Studio Marketplace.
 
-   <img alt="Marketplace scope" src="./_img/create-pat/marketplace-scope.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Marketplace scope" src="_img/create-pat/marketplace-scope.png" style="border: 1px solid #CCCCCC" />
        
 0. Finish creating your token. 
     

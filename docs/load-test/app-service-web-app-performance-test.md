@@ -6,41 +6,28 @@ ms.technology: vs-devops-test-performance
 ms.assetid: D39BF037-ADF1-41D7-BA6D-84AADA2A16DE
 ms.manager: douge
 ms.author: ahomer
-ms.date: 08/12/2016
+ms.date: 01/18/2018
+ms.topic: get-started-article
 ---
 
 # Load test with the Azure portal
 
-**| Team Services |**
+[!INCLUDE [version-header-ts](_shared/version-header-ts.md)] 
 
 Check your web app's performance before you launch it or deploy updates to production. 
 That way, you can better assess whether your app is ready for release. Feel more
 confident that your app can handle the traffic during peak use or at your next marketing push.
 
-These tests simulate user load on your app over a specific time period and measure your app's response.
-For example, your test results show how fast your app responds to a specific number 
-of users. They also show how many requests failed, which might indicate problems with your app.      
-
-![Find performance problems in your web app](_img/app-service-web-app-performance-test/azure-np-perf-test-overview.png)
-
-In this example, you'll learn how to:
-
-* [Prepare your environment for load testing](#preparetests)
-* [Set up and run your performance test](#singletest)
-* [Test multiple URLs](#multitest)
-
 <a name="preparetests"></a>
 ## Prepare your environment
 
-* You'll need an [Azure subscription](https://account.windowsazure.com/subscriptions), 
-  if you don't have one already. Learn how you can 
-  [open an Azure account for free](https://azure.microsoft.com/pricing/free-trial/?WT.mc_id=A261C142F).
+* You'll need an Azure subscription. You can get one free through [Visual Studio Dev Essentials](https://www.visualstudio.com/dev-essentials/).
 
-* You'll need a [Visual Studio Team Services (Team Services)](https://www.visualstudio.com/products/what-is-visual-studio-online-vs) 
+* You'll need a [Visual Studio Team Services (VSTS)](https://www.visualstudio.com/products/what-is-visual-studio-online-vs) 
   account to keep your performance test history. A suitable account will be created 
   automatically when you set up your performance test. Or you can create a new account 
   or use an existing account if you're the account owner. 
-  [What else can I do with a Visual Studio Team Services account?](reference-qa.md#TeamServicesAccount)
+  [What else can I do with a VSTS account?](reference-qa.md#Team ServicesAccount)
 
 * Deploy your app for testing in a non-production environment. 
   Have your app use an App Service plan other than the plan used in production. 
@@ -50,7 +37,7 @@ In this example, you'll learn how to:
 ## Set up and run your performance test
 
 1. Sign in to the [Azure Portal](https://portal.azure.com). 
-   To use a Visual Studio Team Services account that you own, 
+   To use a VSTS account that you own, 
    sign in as the account owner.
 
 1. Go to your web app.
@@ -61,24 +48,23 @@ In this example, you'll learn how to:
 
    ![Go to Tools, Performance Test](_img/app-service-web-app-performance-test/azure-np-web-app-details-tools-expanded.png)
  
-1. Now you'll link a [Visual Studio Team Services (Team Services)](https://www.visualstudio.com/products/what-is-visual-studio-online-vs) 
+1. Now you'll link a [VSTS](https://www.visualstudio.com/products/what-is-visual-studio-online-vs) 
    account to keep your performance test history.
+   If you have a VSTS account to use, select that account. If you don't, create a new account.
 
-   If you have a Team Services account to use, select that account. If you don't, create a new account.
-
-   ![Select existing Team Services account, or create a new account](_img/app-service-web-app-performance-test/azure-np-no-vso-account.png)
+   ![Select existing VSTS account, or create a new account](_img/app-service-web-app-performance-test/azure-np-no-vso-account.png)
 
 1. Create your performance test. Set the details and run the test. 
    You can watch the results in real time while the test runs.
 
-   For example, suppose we have an app that gave out coupons at last year's holiday sale. 
+   For example, suppose you have an app that gave out coupons at last year's holiday sale. 
    This event lasted 15 minutes with a peak load of 100 concurrent customers. 
-   We want to double the number of customers this year. We also want to improve 
+   You want to double the number of customers this year. You also want to improve 
    customer satisfaction by reducing the page load time from 5 seconds to 2 seconds. 
-   So, we'll test our updated app's performance with 250 users for 15 minutes.
+   So, you can test your updated app's performance with 250 users for 15 minutes.
 
-   We'll simulate load on our app by generating virtual users (customers) 
-   who visit our web site at the same time. This will show us how many 
+   You simulate load on your app by generating virtual users (customers) 
+   who visit your web site at the same time. This will show how many 
    requests are failing or responding slowly.
 
    ![Create, set up, and run your performance test](_img/app-service-web-app-performance-test/azure-np-new-performance-test.png)
@@ -90,13 +76,12 @@ In this example, you'll learn how to:
      select a location closest to your users for generating load.
 
    Here's the test in progress. During the first minute, 
-   our page loads slower than we want.
+   the page loads slower than is required.
 
    ![Performance test in progress with real-time data](_img/app-service-web-app-performance-test/azure-np-running-perf-test.png)
 
-   After the test is done, we learn that the page loads much faster 
-   after the first minute. This helps identify where we might want to 
-   start troubleshooting the problem.
+   After the test is done, you can see that the page loads much faster 
+   after the first minute. This helps identify where you might start troubleshooting the problem.
 
    ![Completed performance test shows results, including failed requests](_img/app-service-web-app-performance-test/azure-np-perf-test-done.png)
 
@@ -131,7 +116,7 @@ To upload and run a Visual Studio Web Test file:
    ![Selecting the user load and duration](_img/app-service-web-app-performance-test/multiple-01-authoring-blade3.png)
 
    After the test has finished, you see the results in two panes. The left pane
-   shows the performnace information as a series of charts.
+   shows the performance information as a series of charts.
 
    ![The performance results pane](_img/app-service-web-app-performance-test/multiple-01a-results.png)
 
@@ -144,19 +129,7 @@ To upload and run a Visual Studio Web Test file:
 
    ![Rerunning the test](_img/app-service-web-app-performance-test/multiple-rerun-test.png)
 
-## Next steps
+## Next step
 
-* [Add app performance data](get-performance-data-for-load-tests.md)
-* [Run Apache JMeter load tests](get-started-jmeter-test.md) 
-* [Record and replay tests](record-and-replay-cloud-load-tests.md)
-* [Profile live Azure web apps with Application Insights](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-profiler)
-
-## See also
-
-* [Q &amp; A for load testing](reference-qa.md#qaazure)
-* [Load test with Visual Studio](getting-started-with-performance-testing.md) 
-* [Load test with Team Services](get-started-simple-cloud-load-test.md) 
-* [View and compare results](performance-reports.md) 
-* [Tutorial: Run load tests before release](run-performance-tests-app-before-release.md) 
-
-[!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
+> [!div class="nextstepaction"]
+> [Add app performance data](get-performance-data-for-load-tests.md)

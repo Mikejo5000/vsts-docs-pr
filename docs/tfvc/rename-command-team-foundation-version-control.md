@@ -5,13 +5,13 @@ ms.assetid: 5d754d91-41b0-40bd-a57a-aa22518deb23
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfvc
 ms.manager: douge
-ms.author: routlaw
+ms.author: sdanie
 ms.date: 08/10/2016
 ---
 
 # Rename Command (Team Foundation Version Control)
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 The **rename** command changes the name or the path of a file or folder. You can use the **rename** command or the aliases **move** or **ren**, to move a file or folder to a new location.
 
@@ -20,7 +20,7 @@ The **rename** command changes the name or the path of a file or folder. You can
 
 **Required Permissions**
 
-To use the **rename** command, you have the **Check out** permission set to **Allow**. For more information, see [Team Foundation Server Permissions](../setup-admin/permissions.md).
+To use the **rename** command, you have the **Check out** permission set to **Allow**. For more information, see [Permissions and groups reference](../security/permissions.md).
 
     tf rename [/lock:(none|checkout|checkin)] [/login:username,[password]] olditem newitem
 

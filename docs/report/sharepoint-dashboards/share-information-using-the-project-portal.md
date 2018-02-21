@@ -6,12 +6,13 @@ ms.technology: vs-devops-reporting
 ms.assetid: 74f0e0bc-6528-4757-b906-b53aa869507b
 ms.manager: douge
 ms.author: kaelli
-ms.date: 03/28/17
+ms.date: 09/09/17
+ms.topic: get-started-article
 ---
 
 # Share information using the project portal
 
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 Teams use project portals to share information and support how their team works. If you install TFS with a configuration that includes SharePoint Products and you created a project portal when you created your team project, your team project is configured with a SharePoint site for the project portal.  
   
@@ -44,40 +45,18 @@ Teams use project portals to share information and support how their team works.
   
      To learn more about SharePoint dashboards, see [Project portal dashboards](project-portal-dashboards.md).  
   
-     If you can't open the portal, you need to be added to a [permissions group in SharePoint](../../setup-admin/add-users.md).  
+     If you can't open the portal, you need to be added to a [permissions group in SharePoint](../../security/set-sharepoint-permissions.md).  
   
-## Ways your team can share information using the project portal  
- Your team can use the SharePoint portal to share information in the following ways:  
-  
--   **Share data contained in reports or dashboards**.  
-  
-     The reports and dashboards that you'll have access to depend on the process template created with your team project.   
-  
--   **Share team progress using predefined or customized dashboards**.  
-  
-     Dashboards provide information necessary to quickly understand the status of a team project. Because the project portal is composed of Web parts, you can create a customized version of it. Besides the standard information displayed on the project portal, you can add Web parts that connect to other data sources inside and outside the project. For more information about customizing the page layout or adding Web parts, choose  **Help** on the project portal menu bar.  
-  
--   **Share documents, files, images**.  
-  
-     Teams can [upload and organize documents into folders and subfolders](manage-documents-and-document-libraries.md).  
-  
--   **Share team knowledge and processes using the SharePoint wiki**.  
-  
-     See [Manage a wiki](http://office.microsoft.com/en-us/sharepoint-server-help/manage-a-wiki-HA101631713.aspx?CTT=1).  
-  
--   **Reference process guidance for select team project artifacts**.  
-  
-     Process guidance provides information about how to coordinate work on a team project and how to use a type of work item in the overall project life cycle.  
   
 ## Related notes
 
 - [Dashboards and reports](../overview.md)   
-- [Agile process guidance](../../work/guidance/agile-process.md)
-- [CMMI process guidance](../../work/guidance/cmmi-process.md) 
-- [Scrum process guidance](../../work/guidance/scrum-process.md)
+- [Agile process guidance](../../work/work-items/guidance/agile-process.md)
+- [CMMI process guidance](../../work/work-items/guidance/cmmi-process.md) 
+- [Scrum process guidance](../../work/work-items/guidance/scrum-process.md)
   
 ### Q: What artifacts are available with a SharePoint project portal?  
- **A:** The artifacts you'll have access to depend on the process template created with your team project. For an overview of the artifacts available with the default process templates, see [Choose a process](../../work/guidance/choose-process.md).  
+ **A:** The artifacts you'll have access to depend on the process template created with your team project. For an overview of the artifacts available with the default process templates, see [Choose a process](../../work/work-items/guidance/choose-process.md).  
   
 ### Q: How do I access process guidance?  
  **A:** If your team project is configured with a SharePoint site for its project portal, you can access process guidance from the work item forms in Team Explorer.  Choose the ![Open process guidance for work item](_img/processguidance_wi_icon.png "ProcessGuidance_WI_Icon") process guidance icon or press F1.  These links access information contained in the Documents **Support** folder.  
@@ -96,7 +75,7 @@ Teams use project portals to share information and support how their team works.
   
  **A:** If you have a SharePoint site already configured with Team Foundation Server Extensions for SharePoint, see [Configure a project portal](configure-or-add-a-project-portal.md).  
   
- If you need to install a SharePoint product first, see [Manually install SharePoint products for Team Foundation Server](../../setup-admin/tfs/install/sharepoint/install-sharepoint.md).  
+ If you need to install a SharePoint product first, see [Manually install SharePoint products for Team Foundation Server](../../tfs-server/install/sharepoint/install-sharepoint.md).  
   
 ### Q: Can I customize the process guidance?  
  **A:** Yes. See [Configure or redirect process guidance](configure-or-redirect-process-guidance.md).  

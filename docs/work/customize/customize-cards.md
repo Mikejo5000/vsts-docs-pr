@@ -1,13 +1,14 @@
 ---
-title: Customize cards | Team Services & TFS
+title: Customize cards | VSTS & TFS
 description: Customize cards on the Kanban and Sprint/Scrum/Task boards for Agile planning tools in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 951A73EA-7411-4A2A-B3F0-ACBBC7EFC68F
 ms.manager: douge
 ms.author: kaelli
-ms.date: 06/22/2017   
+ms.date: 08/10/2017
 ---
+
 
 # Customize cards  
 
@@ -48,7 +49,7 @@ Your best bet is to show fields on cards based on what your team frequently refe
 <table width="80%">
 <tr>
 <th width="20%">Option </th>
-<th width="20%">Team Services</th>
+<th width="20%">VSTS</th>
 <th width="20%">TFS 2015 </th>
 <th width="20%">TFS 2015.1,2 </th>
 <th width="20%">TFS 2017 </th>
@@ -123,7 +124,7 @@ To customize cards on the Kanban board, see [Change how cards display on the Kan
 ## Highlight work items based on custom criteria 
 
 >[!NOTE]  
-><b>Feature availability: </b>This feature is supported from Team Services or the web portal for TFS 2015.1 or later version. 
+><b>Feature availability: </b>This feature is supported from VSTS or the web portal for TFS 2015.1 or later version. 
 
 With styling rules, you can cause cards to change color when their corresponding work items meet criteria that you set. Here, we highlight severity 1 bugs by having the cards display as yellow. 
 
@@ -156,7 +157,7 @@ As a first step, you'll see that you can change the card display for each work i
 
 1. From your Kanban board, open Settings (for on-premises TFS, choose Cards).   
 
-	<img src="_img/kanban-card-customize-open-settings.png" alt="Kanban board, open card customizationd" style="border: 1px solid #CCCCCC;" />  
+	<img src="_img/kanban-card-customize-open-settings.png" alt="Kanban board, open card customizationd" style="border: 1px solid #C3C3C3;" />  
 
 	If you're not a team admin, [get added as one](../scale/add-team-administrator.md). Only team and project admins can customize cards. Learn more about accessing and using your Kanban board from [Kanban basics](../kanban/kanban-basics.md).  
 
@@ -164,15 +165,15 @@ As a first step, you'll see that you can change the card display for each work i
 
 	Here we choose User Story. Your choices will vary based on the following:   
 	<ul>
-	<li>You connect to Visual Studio Team Services or an on-premises TFS</li>
-	<li>[Process](../guidance/choose-process.md) used to create your team project</li>
+	<li>You connect to VSTS or an on-premises TFS</li>
+	<li>[Process](../work-items/guidance/choose-process.md) used to create your team project</li>
 	<li>Whether your team has chosen to [treat bugs like requirements or like tasks](show-bugs-on-backlog.md) </li>
 
 	**Card field options:** <br/>
 	<table>
 	<tbody valign="top">
 	<tr>
-	<th>Team Services and TFS 2015 Update 1 options</th>
+	<th>VSTS and TFS 2015 Update 1 options</th>
 	<th>TFS 2015 options</th>
 	</tr>
 	<tr><td>Select core fields&mdash;ID, Assigned to, Estimate, Tags&mdash;to display on the card</td>  <td>Select core fields to display on the card</td> </tr>
@@ -183,9 +184,9 @@ As a first step, you'll see that you can change the card display for each work i
 	</tbody>
 	</table>
 
-	**Team Services and TFS 2015 Update 1 options:**  
+	**VSTS and TFS 2015 Update 1 options:**  
 
-	<img src="_img/vso-kanban-card-customize.png" alt="Kanban board, Team Services card customization dialog" style="border: 1px solid #CCCCCC;" />
+	<img src="_img/vso-kanban-card-customize.png" alt="Kanban board, VSTS card customization dialog" style="border: 2px solid #C3C3C3;" />
 
 	**TFS 2015 options:**   
 
@@ -193,17 +194,17 @@ As a first step, you'll see that you can change the card display for each work i
 
 1. Once you've clicked a WIT, select all the options that you want for that work item type.
 
-	If you want work estimates to show, check the Show Effort, Story Points, Size, or Cost option. Cost corresponds to these fields: Effort ([Scrum](../guidance/scrum-process.md)), Story Points ([Agile](../guidance/agile-process.md)), and Size ([CMMI](../guidance/cmmi-process.md)) field.
+	If you want work estimates to show, check the Show Effort, Story Points, Size, or Cost option. Cost corresponds to these fields: Effort ([Scrum](../work-items/guidance/scrum-process.md)), Story Points ([Agile](../work-items/guidance/agile-process.md)), and Size ([CMMI](../work-items/guidance/cmmi-process.md)) field.
 
 2. To add a field to a card, click ![add icon](../_img/icons/add_icon.png) to select a field from the drop-down menu. <br/>
 
-	<img src="_img/customize-cards-add-fields.png" alt="Kanban board, Add fields to a card" style="border: 1px solid #CCCCCC;" />  
+	<img src="_img/customize-cards-add-fields.png" alt="Kanban board, Add fields to a card" style="border: 1px solid #C3C3C3;" />  
 
 3. To add a custom field, you must first [add it to the WIT definition](add-modify-field.md). <br/>
 
 	Here we've added three fields:<br/>
 
-	<img src="_img/customize-cards-three-fields-added.png" alt="Kanban board, three fields added" style="border: 1px solid #CCCCCC;" />  
+	<img src="_img/customize-cards-three-fields-added.png" alt="Kanban board, three fields added" style="border: 1px solid #C3C3C3;" />  
 
 	You can edit a value in a field you add to a card, unless it's a read-only field, such as the Change By and Changed Date fields.  
 
@@ -219,19 +220,19 @@ You change the way cards display on the task board the same way you change the K
 
 1.	Open Settings from your task board (for on-premises TFS, choose Cards).  
 
-	<img src="_img/task-board-customize-open-settings.png" alt="Task board, open card customization dialog" style="border: 1px solid #CCCCCC;" />  
+	<img src="_img/task-board-customize-open-settings.png" alt="Task board, open card customization dialog" style="border: 1px solid #C3C3C3;" />  
 
 	Remember, only [team or project administrators](../scale/add-team-administrator.md) can customize the task board.  
 
 2.	Just as before, choose the WIT you want to customize, and then checkmark or select the options you want.  
 
-	**Team Services and TFS 2015 Update 1 options:**   
+	**VSTS and TFS 2015 Update 1 options:**   
 	
-	<img src="_img/vso-task-board-card-customize.png" alt="Task board, card customization dialog" style="border: 1px solid #CCCCCC;" />  
+	<img src="_img/vso-task-board-card-customize.png" alt="Task board, card customization dialog" style="border: 1px solid #C3C3C3;" />  
 
 	**TFS 2015 options:**  
 
-	<img src="_img/ALM_CC_TaskCardOptions.png" alt="Task board, TFS card customization dialog" style="border: 1px solid #CCCCCC;" />  
+	<img src="_img/ALM_CC_TaskCardOptions.png" alt="Task board, TFS card customization dialog" style="border: 1px solid #C3C3C3;" />  
 
 3.	Repeat this step for each WIT you want to change. Don't be surprised if the options change when you click on a different WIT. For example, Show Remaining Work only applies to tasks and perhaps bugs, but not to PBIs or requirements.  
 
@@ -241,11 +242,11 @@ You change the way cards display on the task board the same way you change the K
 ## Add style rules to highlight work items with color 
 
 >[!NOTE]  
-><b>Feature availability: </b>This feature is supported from Team Services or the web portal for TFS 2015.1 or later version.   
+><b>Feature availability: </b>This feature is supported from VSTS or the web portal for TFS 2015.1 or later version.   
 
 1.	To cause a card on the Kanban board to change color based on criteria you specify, open Styles. Add a styling rule and set the criteria for the rule.  
 
-	<img src="_img/vso-card-styling.png" alt="Kanban board, Style dialog" style="border: 1px solid #CCCCCC;" />  
+	<img src="_img/vso-card-styling.png" alt="Kanban board, Style dialog" style="border: 1px solid #C3C3C3;" />  
 
 	Follow these rules when creating and ordering your style rules:
 	- The criteria you specify works in a similar fashion as when [constructing a query](../track/using-queries.md) 
@@ -260,16 +261,16 @@ You change the way cards display on the task board the same way you change the K
 	![Task board, Style dialog, example style rule](_img/task-board-card-style-rule-stale-tasks.png)  
 
 <a id="color-tags">  </a>
-##Add color to your tags  
+## Add color to your tags  
 
 >[!NOTE]  
-><b>Feature availability: </b>This feature is supported from Team Services or the web portal for TFS 2015.1 or later version. 
+><b>Feature availability: </b>This feature is supported from VSTS or the web portal for TFS 2015.1 or later version. 
 
 1.	Prior to setting tag colors, first [add tags to backlog items](../track/add-tags-to-work-items.md) that you want to highlight with color.   
 
 2.	To add color to Kanban cards, open Tag colors and select a tag and the color you want it to display.  
 
-	<img src="_img/kanban-card-customize-tag-colors.png" alt="Kanban board, tag colors" style="border: 1px solid #CCCCCC;" />  
+	<img src="_img/kanban-card-customize-tag-colors.png" alt="Kanban board, tag colors" style="border: 1px solid #C3C3C3;" />  
  
 	If tags don't display on the cards, open Fields and make sure that you've checked Show Tags. 
 
@@ -278,31 +279,16 @@ You change the way cards display on the task board the same way you change the K
 ## Annotations  
 
 >[!NOTE]  
-><b>Feature availability: </b>This feature is supported from Team Services and TFS 2017.  
+><b>Feature availability: </b>This feature is supported from VSTS and TFS 2017.  
 
 With the Kanban board, you gain a rich set of tools and a rich set of customization options. Annotations provide visual cues about work items, indicating the number of tasks or tests that have been defined for that work item. Click an annotation to expand the set or gain more information. 
 
 As shown in the following examples, the Task and Test annotations indicate that two each of tasks and tests have been defined for the work item. If you find that there are some features you're not using, you can disable them from the Annotations tab. 
 
-
-<div style="float:left;width:220px;margin:8px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Task annotations</p>
-<img src="_img/annotate-task.png" alt="Task annotations enabled" style="border: 1px solid #CCCCCC;" />  
-</div>
-
-<div style="float:left;width:220px;margin:8px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Test annotations</p>
-<img src="_img/annotate-test.png" alt="Test annotations enabled" style="border: 1px solid #CCCCCC;" />  
-</div>
-
-<div style="float:left;width:220px;margin:8px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">No annotations</p>
-<img src="_img/annotate-none.png" alt="Annotations disabled" style="border: 1px solid #CCCCCC;" />  
-</div>
-
-<div style="clear:left;font-size:100%">
-</div>
-<br/>
+> [!div class="mx-tdBreakAll"]  
+> | Task annotations  |Test annotations  |No annotations |
+> |-------------|----------|----------|    
+> |<img src="_img/annotate-task.png" alt="Task annotations enabled" style="border: 1px solid #C3C3C3;" /> | <img src="_img/annotate-test.png" alt="Test annotations enabled" style="border: 1px solid #C3C3C3;" />  | <img src="_img/annotate-none.png" alt="Annotations disabled" style="border: 1px solid #C3C3C3;" /> | 
 
 To learn more about using these features, see [Add task checklists](../kanban/add-task-checklists.md) and [Add, run, and update inline tests](../kanban/add-run-update-tests.md).  
 
@@ -310,13 +296,13 @@ To learn more about using these features, see [Add task checklists](../kanban/ad
 
 1. To open, click the ![gear icon](../_img/icons/team-settings-gear-icon.png) gear icon from your team's Kanban board.  
 
-	<img src="../customize/_img/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 1px solid #CCCCCC;" /> 
+	<img src="../customize/_img/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 1px solid #C3C3C3;" /> 
 
 	If you're not a team admin, [get added as one](../scale/add-team-administrator.md). Only team and project admins can set team settings.  
 
 2. From the Annotations tab, check those annotations that you want enabled. For example, to enable tasks but disable tests, check the following boxes.     
 
-	<img src="_img/annotate-settings.png" alt="Kanban board, Settings dialog, Annotations tab" style="border: 1px solid #CCCCCC;" />  
+	<img src="_img/annotate-settings.png" alt="Kanban board, Settings dialog, Annotations tab" style="border: 1px solid #C3C3C3;" />  
 
 	The setting you choose applies to all active Kanban boards for your team, i.e., backlog, features, and epics.  
 
@@ -325,7 +311,7 @@ To learn more about using these features, see [Add task checklists](../kanban/ad
 ## Configure inline tests
 
 >[!NOTE]  
-><b>Feature availability: </b>This feature is available from Team Services and TFS 2017. 
+><b>Feature availability: </b>This feature is available from VSTS and TFS 2017. 
 
 You can control the test plan under which inline tests you add through the Kanban board are created. You can choose to create a new test plan for each new test that you add, or add all new tests to a selected test plan going forward. 
 
@@ -335,7 +321,7 @@ You can control the test plan under which inline tests you add through the Kanba
 
 2. From the Tests tab, choose the option you want. You must enable the Test annotation feature in order to configure tests. To select a test plan, click the ![Actions icon](../_img/icons/actions-icon.png) actions icon and select one test plan from the query provided.      
 
-	<img src="_img/c-cards-test-settings.png" alt="Kanban board, Settings dialog, Tests tab" style="border: 1px solid #CCCCCC;" />  
+	<img src="_img/c-cards-test-settings.png" alt="Kanban board, Settings dialog, Tests tab" style="border: 1px solid #C3C3C3;" />  
 
 3. Save your changes. 
 	  
@@ -343,7 +329,7 @@ You can control the test plan under which inline tests you add through the Kanba
 
 From a card on the Kanban board, you can easily navigate to the underlying test plan and test suite under which the tests are created. Click the ![open icon](../_img/icons/open-icon.png) open icon to open another browser tab showing the Test hub and associated test plan and test suite that controls the inline tests.
 
-<img src="_img/c-cards-navigate-to-test-suite.png" alt="Kanban board, Card, Go to test plan" style="border: 1px solid #CCCCCC;" />  
+<img src="_img/c-cards-navigate-to-test-suite.png" alt="Kanban board, Card, Go to test plan" style="border: 1px solid #C3C3C3;" />  
 
 
 ## Related notes

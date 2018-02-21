@@ -1,18 +1,17 @@
 ---
 title: Edit a feed
-description: Edit a feed in Visual Studio Team Services or Team Foundation Server
+description: Edit a feed in VSTS or Team Foundation Server
 ms.assetid: 83348be7-228b-43d1-8374-6046836ed0f5
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-package
-ms.topic: get-started-article
 ms.manager: douge
 ms.author: amullans
-ms.date: 10/15/2016
+ms.date: 11/30/2017
 ---
 
 # Edit a feed
 
-**Team Services | TFS 2017**
+**VSTS | TFS 2017**
 
 Feeds have some basic settings: name, description, and permissions.
 
@@ -29,6 +28,8 @@ In the edit feed dialog:
 To edit permissions, see [Secure feeds using permissions](feed-permissions.md#edit-permissions).
 
 ## Removing a feed
+
+![Delete a feed](../_shared/_img/deletefeed.png)
 
 In the edit feed dialog:
 - Select **Delete feed**

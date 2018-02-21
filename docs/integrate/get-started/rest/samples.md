@@ -1,6 +1,6 @@
 ---
-title: Simple example of using the REST APIs for Visual Studio Team Services and Team Foundation Server
-description: Simple example of using the REST APIs for Visual Studio Team Services and Team Foundation Server.
+title: REST API samples for VSTS and Team Foundation Server
+description: REST API samples for VSTS and Team Foundation Server.
 ms.assetid: 9E17A266-051F-403F-A285-7F21D9CC52F0
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-integrate
@@ -13,7 +13,7 @@ ms.date: 08/25/2016
 
 ## Personal Access Tokens
 
-When using the REST APIs or .Net Libraries, you need to authenticate with Team Services. Most samples on this site use Personal Access Tokens as they're a compact example for authenticating with the service.  However, there are a variety of authentication mechanisms available for VSTS including ADAL, OAuth and Session Tokens.  Refer to the [Authentication](../authentication/authentication-guidance.md) section for guidance on which one is best suited for your scenario.
+When using the REST APIs or .NET Libraries, you need to authenticate with Visual Studio Team Services (VSTS). Most samples on this site use Personal Access Tokens as they're a compact example for authenticating with the service.  However, there are a variety of authentication mechanisms available for VSTS including ADAL, OAuth and Session Tokens.  Refer to the [Authentication](../authentication/authentication-guidance.md) section for guidance on which one is best suited for your scenario.
 
 To get started with these samples [create a personal access token](../authentication/PATs.md).
 
@@ -39,14 +39,12 @@ using System.Net.Http.Headers;
 //encode your personal access token                   
 string credentials = Convert.ToBase64String(System.Text.ASCIIEncoding.ASCII.GetBytes(string.Format("{0}:{1}", "", personalAccessToken)));
 
-//create a viewmodel object that is a class that represents 
-//the content in the returned json response
-ListofProjectsResponse.Projects viewModel = new ListofProjectsResponse.Projects();
+ListofProjectsResponse.Projects viewModel = null;
 
 //use the httpclient
 using (var client = new HttpClient())
 {
-    client.BaseAddress = new Uri("https://accountname.visualstudio.com:");  //url of our account
+    client.BaseAddress = new Uri("https://{accountname}.visualstudio.com");  //url of our account
     client.DefaultRequestHeaders.Accept.Clear();
     client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
     client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Basic", credentials); 
@@ -70,7 +68,7 @@ using (var client = new HttpClient())
 
 In this example we are using two of the .Net Client Libraries. Make sure these are referenced within your .net project.
 
-[Microsoft Team Foundation Server Client](https://www.nuget.org/packages/Microsoft.TeamFoundationServer.Client/)
+[TFS Client](https://www.nuget.org/packages/Microsoft.TeamFoundationServer.Client/)
 
 [Microsoft Visual Studio Services Client](https://www.nuget.org/packages/Microsoft.VisualStudio.Services.Client/)
 
@@ -95,7 +93,7 @@ using (ProjectHttpClient projectHttpClient = new ProjectHttpClient(uri, credenti
 
 ## Work item tracking
 
-You can find the following samples and more in C# and .NET at the [work item tracking samples page](https://visualstudio.com/api/wit/samples.md).
+You can find the following samples and more in C# and .NET at the [work item tracking samples page](https://www.visualstudio.com/docs/integrate/api/wit/overview).
 
 - [Create a bug](https://visualstudio.com/api/wit/samples.md#create-bug)
 - [Migrating work items](https://visualstudio.com/api/wit/samples.md#migrating-work-items)

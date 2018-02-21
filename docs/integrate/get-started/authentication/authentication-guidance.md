@@ -1,6 +1,6 @@
 ---
-title: Guidance for authentication | Visual Studio Team Services REST APIs
-description: Guidance for authentication with with Visual Studio Team Services.
+title: Guidance for authentication | VSTS REST APIs
+description: Guidance for authentication with with VSTS.
 ms.assetid: 15CCEB1E-F42B-4439-8C35-B8A225F5546C
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-integrate
@@ -17,27 +17,39 @@ When writing an application which interfaces with VSTS, you will have to authent
 
 | Type of application | Description | example |Authentication mechanism | Code samples |
 |---------------------|-------------|---------|-------------------------|--------|
-| Interactive client-side  | GUI based client side application | Windows app enumerating bugs for a user | [Active Directory authentication library (ADAL)](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/ManagedClientConsoleAppSample) |
-| Interactive Javascript | GUI based Javascript application | AngularJS single page app displaying work items for a user | [ADAL](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries) | sample (coming soon) |
+ Interactive client-side (REST) | Client application, that allows user interaction, calling VSTS REST APIs | Console application enumerating projects in an account | [Active Directory authentication library (ADAL)](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/ManagedClientConsoleAppSample) |
+| Interactive client-side (Client library) | Client application, that allows user interaction, calling VSTS Client libraries | Console application enumerating bugs assigned to the current user |  [Client libraries](../../concepts/dotnet-client-libraries.md) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/ClientLibraryConsoleAppSample) |
+| Interactive Javascript | GUI based Javascript application | AngularJS single page app displaying project information for a user | [Active Directory authentication Library for JS (ADAL JS)](https://github.com/AzureAD/azure-activedirectory-library-for-js) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/JavascriptWebAppSample) |
 | Non-interactive client-side | Headless text only client side application | Console app displaying all bugs assigned to a user | [Device Profile](https://azure.microsoft.com/en-us/resources/samples/active-directory-dotnet-deviceprofile/?v=17.23h) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/DeviceProfileSample) |
+| Interactive client-side app targeting VSTS and TFS | Client application, that allows user interaction, authenticates VSTS and TFS users | Console application allowing VSTS and TFS users to see assigned bugs |  [Client Library (Interactive and Windows authentication)](/vsts/integrate/get-started/client-libraries/samples#authenticating-team-foundation-server) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/DualSupportClientSample) |
 | Interactive web | GUI based web application | Custom Web dashboard displaying build summaries |[OAuth](./oauth.md) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/OAuthWebSample) |
-| TFS application | TFS app using the Client OM library | TFS extension displaying team bug dashboards | [Client Libraries](./../client-libraries/dotnet.md) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/ClientLibraryConsoleAppSample) |
-| [VSTS Extension](https://www.visualstudio.com/en-us/docs/integrate/extensions/get-started/node#files) | Visual Studio Team Services extension | [Agile Cards](https://marketplace.visualstudio.com/items?itemName=spartez.agile-cards) | [VSS Web Extension SDK](https://github.com/Microsoft/vss-web-extension-sdk) | [sample walkthrough](https://www.visualstudio.com/en-us/docs/integrate/extensions/develop/add-dashboard-widget) |
+| TFS application | TFS app using the Client OM library | TFS extension displaying team bug dashboards | [Client Libraries](../../concepts/dotnet-client-libraries.md) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/ClientLibraryConsoleAppSample) |
+| [VSTS Extension](../../../extend/get-started/node.md#files) | VSTS extension | [Agile Cards](https://marketplace.visualstudio.com/items?itemName=spartez.agile-cards) | [VSS Web Extension SDK](https://github.com/Microsoft/vss-web-extension-sdk) | [sample walkthrough](../../../extend/develop/add-dashboard-widget.md) |
+
+
+
+## Enabling IIS Basic Authentication invalidates using PATs for TFS
+
+Learn more about [using IIS Basic Authentication with TFS on-premises](iis-basic-auth.md).
+
+
 
 ## Q&A
 
-<!-- BEGINSECTION class="md-qanda" -->
+#### Q: I am making an interactive client-side application. Should I use [VSTS Client Libraries](./../client-libraries/dotnet.md) or [VSTS REST API's](https://www.visualstudio.com/en-us/docs/integrate/api/overview)?
+A: We recommend using VSTS Client Libraries over REST API's when accessing VSTS resources. They are simplier and more easily maintained when version changes to our REST endpoints occur. If there is missing functionality from the client libraries [ADAL](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries) is the best authentication mechanism to use with our REST API's.
 
 #### Q: Can I use ADAL if I log into my VSTS account with a Microsoft account (MSA)?
 
-A: Yes, you do not need an Azure Active Directory (AAD) account to use ADAL.
+A: Yes, you can use ADAL to create client side applications for an MSA backed account using ADAL with some limitiations. Instead of configuring ADAL with a `Client ID` or `Reply URL` from Azure Portal, MSA users can use the `Client ID: "872cd9fa-d31f-45e0-9eab-6e460a02d1f"` and `Reply URL: "urn:ietf:wg:oauth:2.0:oob"` as replacement values to get a valid ADAL access token without needing an Azure Active Directory. 
 
-#### Q: Is this guidence only for VSTS or is this also relevant for on-prem TFS users?
+>Note: This approach will only work for client side applications. For JS web apps, ADAL JS will not work without an AAD tenant.
 
-A: This guidence is mainly for VSTS users. [Client Libraries](./../client-libraries/dotnet.md) are a series of packages built specifically for extending TFS functionality. For on-prem users, we recommend using the [Client Libraries](./../client-libraries/dotnet.md), Windows Auth, or [Personal Access Tokens (PATs)](./PATs.md) to authenticate on behalf of a user.
+#### Q: Is this guidance only for VSTS or is this also relevant for on-prem TFS users?
 
-#### Q: What if I want my application to authenticate with both TFS and Team Services?
+A: This guidance is mainly for VSTS users. [Client Libraries](./../client-libraries/dotnet.md) are a series of packages built specifically for extending TFS functionality. For on-prem users, we recommend using the [Client Libraries](./../client-libraries/dotnet.md), Windows Auth, or [Personal Access Tokens (PATs)](./PATs.md) to authenticate on behalf of a user.
 
-A: The best practice is to have different authentication paths for TFS and Team Services. You can use the requestContext to find out which you’re hitting and then use the best mechanism for each. Alternatively, if you want a unified solution, [PATs](./PATs.md) will work for both.
+#### Q: What if I want my application to authenticate with both TFS and VSTS?
 
-<!-- ENDSECTION -->
+A: The best practice is to have different authentication paths for TFS and VSTS. You can use the requestContext to find out which you’re hitting and then use the best mechanism for each. Alternatively, if you want a unified solution, [PATs](./PATs.md) will work for both.
+

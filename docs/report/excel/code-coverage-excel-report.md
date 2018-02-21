@@ -11,7 +11,7 @@ ms.manager: douge
 
 # Code Coverage Excel Report
 
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 With the Code Coverage report, you can monitor how much code the team is testing over time. Team members can use this report to help determine how close parts of the code are to release quality. For information about how to access this report, see [Excel reports](excel-reports.md).  
   
@@ -40,7 +40,7 @@ With the Code Coverage report, you can monitor how much code the team is testing
   
 -   **Create build definitions**. You can create several build definitions and then run each of them to produce code for a different platform. Also, you can run each build for a different configuration.  
   
-     For more information, see [Get started with CI/CD](../../build-release/get-started/ci-cd-part-1.md).
+     For more information, see [Get started with CI/CD](../../build-release/actions/ci-cd-part-1.md).
   
 -   **Define tests to run automatically as part of the build**. As part of the build definition, you can define tests to run as part of the build or to fail if the tests fail.  
   
@@ -50,7 +50,7 @@ With the Code Coverage report, you can monitor how much code the team is testing
   
 -   **Run builds regularly**. You can run builds at set intervals or after every check-in. You can create regular builds when you use the schedule trigger.  
   
-     For more information, see [Build triggers](../../build-release/define/triggers.md).
+     For more information, see [Build triggers](../../build-release/concepts/definitions/build/triggers.md).
   
     > [!NOTE]
     >  Although a team member can manually rate a build by using Build Explorer, this rating is not reflected in the Build Quality Indicators report. The build rating appears in the Build Summary report. For more information, see [Rate the quality of a completed build](https://msdn.microsoft.com/library/ms181734.aspx) and [Build Summary](../sql-reports/build-summary-report.md).  

@@ -6,12 +6,14 @@ ms.technology: vs-devops-reporting
 ms.assetid: 5fc5d272-2569-4dd8-b493-704f03f2aca1
 ms.manager: douge
 ms.author: kaelli
-ms.date: 03/15/2017
+ms.date: 10/17/17
 ---
+
+
 
 # Create a Report Server project 
 
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 You can track your team's progress by using SQL Server Report Designer to create reports. Before you can base these reports on data from Visual Studio Team Foundation Server (TFS), you must first create a Report Server project in Visual Studio.  
   
@@ -25,7 +27,7 @@ You can track your team's progress by using SQL Server Report Designer to create
   
 -   You must be a member of the **TfsWarehouseDataReaders** security role in the Analysis Services database on the data-tier server of Team Foundation Server. For more information, see [How to: Grant Access to the Databases of the Data Warehouse](../admin/grant-permissions-to-reports.md).  
   
--   You must be a member of the **Team Foundation Content Manager** role in SQL Server Reporting Services. For more information, see [Add accounts to administer TFS](../../setup-admin/add-administrator-tfs.md).  
+-   You must be a member of the **Team Foundation Content Manager** role in SQL Server Reporting Services. For more information, see [Add accounts to administer TFS](../../tfs-server/add-administrator-tfs.md).  
   
 ### To create a Reporting Server project  
   

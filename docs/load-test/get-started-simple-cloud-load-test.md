@@ -1,26 +1,21 @@
 ---
-title: URL-based load testing with Visual Studio Team Services
-description: Get app performance data when you load test with Visual Studio Team Services
+title: URL-based load testing with VSTS
+description: Get app performance data when you load test with VSTS
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-performance
 ms.assetid: 65E96414-756B-4BD9-92C3-4DDB4C7A6B57
 ms.manager: douge
 ms.author: ahomer
-ms.date: 08/12/2016
+ms.date: 01/18/2018
+ms.topic: get-started-article
 ---
 
-# Run URL-based load tests with Visual Studio Team Services
+# Run URL-based load tests with VSTS
 
-[!INCLUDE [version-header-ts](_shared/version-header-ts.md)]
+[!INCLUDE [version-header-ts](_shared/version-header-ts.md)] 
 
 You can run a load test on your web app or site directly
-using Visual Studio Team Services.
-
-In this example, you'll learn how to:
-
-* [Prepare your environment](#prepareenvir)
-* [Run a URL-based load test](#runtests)
-* [View the results of the load test](#viewresults)
+using Visual Studio Team Services (VSTS).
 
 <a name="prepareenvir"></a>
 ## Prepare your environment
@@ -28,13 +23,13 @@ In this example, you'll learn how to:
 * You will need a [Visual Studio Enterprise subscription](https://www.visualstudio.com/products/visual-studio-enterprise-vs)
   (monthly, annual, or MSDN) to run URL-based load tests.
 
-* [Create your Visual Studio Team Services account](https://www.visualstudio.com/products/visual-studio-team-services-vs), 
+* [Create your VSTS account](https://www.visualstudio.com/products/visual-studio-team-services-vs), 
   if you don't have one already. 
 
 <a name="runtests"></a>
 ## Run a URL-based load test
 
-1. Sign in to your Visual Studio Team Services account (```https://{youraccount}.visualstudio.com```).
+1. Sign in to your VSTS account (**https://**your-account-name**.visualstudio.com**).
 
 1. Go to the **Load test** hub, open the **+ New** 
    menu and choose **URL based test**.
@@ -117,21 +112,23 @@ In this example, you'll learn how to:
 
    ![Rerunning the same test](_img/get-started-simple-cloud-load-test/SimpleLoadTestVSO-rerun-test.png)
 
-## Next steps
+### Key metrics
 
-* [View and compare load test runs](performance-reports.md)
-* [Add app performance data](get-performance-data-for-load-tests.md)
-* [Run Apache JMeter load tests](get-started-jmeter-test.md) 
-* [Record and replay tests](record-and-replay-cloud-load-tests.md)
-* [Profile live Azure web apps with Application Insights](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-profiler)
+* **Response Time**. The time it takes for your app to respond to requests
+  is one of the key metrics for measuring app performance.
+  Most apps perform well when a single user is accessing them, but the response
+  time can increase dramatically when the app is under load. This can happen
+  if resources such as CPU, database or other services are at peak capacity,
+  resulting in longer response times.
 
-## See also
+* **User Load**. The peak user load encountered during the load test run.
 
-* [Q &amp; A for load testing](reference-qa.md)
-* [Load test with Visual Studio](getting-started-with-performance-testing.md) 
-* [Load test with Azure portal](app-service-web-app-performance-test.md) 
-* [Tutorial: Run load tests before release](run-performance-tests-app-before-release.md) 
-* [Run Apache JMeter load tests with Visual Studio Team Services](get-started-jmeter-test.md)
-* [Analyze load test results using the Load Test Analyzer](https://msdn.microsoft.com/library/ee923686.aspx)
+* **Failed Requests**. The number of requests that failed, either because
+  the app did not respond or due to other issues such as connectivity errors.
+  Your app might start throttling requests when under load by discarding new
+  requests in order to allow existing requests to be processed.
 
-[!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
+## Next step
+
+> [!div class="nextstepaction"]
+> [View and compare load test runs](performance-reports.md)

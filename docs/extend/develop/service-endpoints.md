@@ -1,18 +1,17 @@
 ---
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
-title: Service Endpoints | Extensions for Visual Studio Team Services
+title: Service Endpoints | Extensions for VSTS
 description: Browse through the places where your extension can extend Visual Studio Online.
 ms.assetid: ad0ea9de-620e-4605-8fcd-3c1443b26d8c
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/22/2016
-ms.topic: get-started-article
 ---
 
-# Service Endpoints in Team Services
+# Service Endpoints in VSTS
 
-Service endpoints are a way for Team Services to connect to external systems or services. They are a bundle of properties securely stored by Team Services which includes but is not limited to:
+Service endpoints are a way for VSTS to connect to external systems or services. They are a bundle of properties securely stored by VSTS which includes but is not limited to:
 
 - Service Name
 - Description
@@ -25,7 +24,7 @@ Follow this guide to create a new Service Point contribution and leverage it in 
 
 ## Tutorial Overview
 
-This tutorial walks through developing a service endpoint by creating an example extension for Team Services that includes:
+This tutorial walks through developing a service endpoint by creating an example extension for VSTS that includes:
 -	A custom service endpoint with data sources. This enables a build task or dashboard widget to call a REST endpoint on the service/server defined by the endpoint.
 -	A build task which defines 2 properties: The service endpoint & a picklist which has values populated from the REST endpoint data source.
 
@@ -35,7 +34,8 @@ The steps involved in completing this tutorial are:
 - [Step 1: Creating the extension manifest file](#step1)
 - [Step 2: The build task definition, in the task.json file](#step2)
 
-> Note: This tutorial will refer to the home directory for your project as "home". 
+> [!NOTE]
+> This tutorial will refer to the home directory for your project as "home". 
 
 <a name="step1" />
 
@@ -58,7 +58,7 @@ Create a json file (`vss-extension.json`, for example) in the `home` directory o
   "id": "service-endpoint-tutorial",
   "version": "0.1.1",
   "name": "Sample extension that leverages a service endpoint",
-  "description": "A sample Visual Studio Team Services extension which shows how to create a custom endpoint and dynamic build task parameters taking value from a REST API.",
+  "description": "A sample VSTS extension which shows how to create a custom endpoint and dynamic build task parameters taking value from a REST API.",
   "publisher": "francistotten",
   "targets": [
     {
@@ -73,9 +73,11 @@ Create a json file (`vss-extension.json`, for example) in the `home` directory o
 }
 ```
 
-> **Note:** You will need to update the `publisher` property.
+> [!NOTE]
+> You will need to update the `publisher` property.
 
-> **Note:** "BuildTaskFolder" is the path where we'll eventually place our build task definition
+> [!NOTE]
+> "BuildTaskFolder" is the path where we'll eventually place our build task definition
 
 <a name="customendpoint" />
 
@@ -142,7 +144,7 @@ Add the following `contributions` array underneath the `targets` array of the ba
   ],
 ```
 
-If you have successfully added the service contribution correctly, you will see the Fabrikam endpoint when trying to add a new Service Endpoint to your Team Services account.
+If you have successfully added the service contribution correctly, you will see the Fabrikam endpoint when trying to add a new Service Endpoint to your VSTS account.
 <img src="./_img/service-endpoint-endpoint-picker.png" style="padding:10px;display:block;margin-left:auto;margin-right:auto">
 
 Go ahead and create a service endpoint using the Fabrikam endpoint.
@@ -275,20 +277,10 @@ The authentication scheme in a service endpoint determines the credentials that 
 - No authentication
 
 
-## Next Steps:
+## Next Steps
 
 Now that you've written your extension, the next steps are to Package, Publish, and Install your extension. You can also check out the 
 documentation for Testing and Debugging your extension. 
 
-<div name="row" style="padding-top:15px">
-    <div style="vertical-align:top;display:inline-block;float:left;width:50%">
-        <div class="index-button" align="right" style="padding-right:10px">
-        <a href="../publish/overview.md"><button style="background-color:#4CAF50;border:none;color:white;padding:15px;font-size:16px;margin:4px;cursor:pointer;border-radius:8px;">Package, Publish, and Install</button></a>
-        </div>
-    </div>
-    <div style="vertical-align:top;display:inline-block;float:left;width:50%">
-        <div class="index-button" align="left" style="padding-left:10px">
-        <a href="../test/debug-in-browser.md"><button style="background-color:#4CAF50;border:none;color:white;padding:15px;font-size:16px;margin:4px;cursor:pointer;border-radius:8px;">Testing and Debugging</button></a>
-        </div>
-    </div>
-</div>
+* [Package, publish, and install extensions](../publish/overview.md)
+* [Testing and debugging extensions](../test/debug-in-browser.md)

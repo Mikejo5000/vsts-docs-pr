@@ -6,15 +6,14 @@ ms.technology: vs-devops-test-manual
 ms.assetid: AFD66FBF-5DEC-4457-8867-A47FFB8EF407
 ms.manager: douge
 ms.author: ahomer
-ms.date: 08/12/2016
+ms.date: 01/18/2018
 ---
 
 # Explore work items with the Test &amp; Feedback extension
  
 [!INCLUDE [version-header-ts-tfs](_shared/version-header-ts-tfs.md)] 
 
-Use the Test &amp; Feedback extension (previously known as the
-Exploratory Testing extension) to explore existing work items and 
+Use the Test &amp; Feedback extension to explore existing work items and 
 associate them with a new or an in-progress exploratory session. 
 After a work item is associated with a session, all new bugs, tasks and test cases created 
 in the current session are automatically linked to that work item.
@@ -26,8 +25,10 @@ You can explore:
 * Work items belonging to a requirement category, a feature category, or an epic category
 * Requirements-based test suites and test cases.
 
-You can explore a work item from the 
-[Kanban board](#kanban) or from the [extension](#extension).
+You can explore a work item from the [Kanban board](#kanban) or from the [extension](#extension).
+You can also explore [multiple work items in the same session](#multipleitems).
+
+[!INCLUDE [feature-availability](_shared/feature-availability.md)] 
 
 <a name="kanban"></a>
 ## Explore work items from the Kanban board
@@ -60,7 +61,7 @@ You can explore a work item from the
 1. Open the **Explore work item** page in the extension and search for 
    the work item you want to explore.
  
-   ![](_img/explore-workitems-exploratory-testing/explore-workitems-05.png)
+   ![Searching for a workitem](_img/explore-workitems-exploratory-testing/explore-workitems-05.png)
 
    You can search using the work item identifier or keywords in the work item title.
   
@@ -78,25 +79,20 @@ You can explore a work item from the
 
    ![Viewing the current work item](_img/explore-workitems-exploratory-testing/explore-workitems-04.png)
  
-## Q&A
+<a name="multipleitems"></a>
+## Explore multiple work items  in the same session
 
-<!-- BEGINSECTION class="md-qanda" -->
+To explore another work item, you must first dissociate the current work item from the in-progress session.
 
-#### Q: Can I explore multiple work-items in the same session?
+1. Open the **Explore work item** page and choose **Change**. 
 
-**A**: Yes. To explore another work item, you must first dissociate the current 
-work item from the in-progress session. Open the 
-**Explore work item** page and choose **Change**. 
+   ![Changing the work item you are exploring](_img/explore-workitems-exploratory-testing/explore-workitems-09.png)
 
-![Changing the work item you are exploring](_img/explore-workitems-exploratory-testing/explore-workitems-09.png)
-
-Then associate the new work item with the in-progress session
-as described above.
- 
-<!-- ENDSECTION --> 
+2. Associate the new work item with the in-progress session as [described above](#extension).
 
 ## See Also
 
+* [FAQs for manual testing](reference-qa.md#tandfext)
 * [Use the Test &amp; Feedback extension in Connected mode](connected-mode-exploratory-testing.md)
 * [Add findings to existing bugs with exploratory testing](add-to-bugs-exploratory-testing.md)
 * [Get insights across your exploratory testing sessions](insights-exploratory-testing.md)

@@ -1,34 +1,29 @@
 ---
-title: Q & A for load testing   
-description: Q & A for load testing topics for Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
+title: FAQs for load testing   
+description: FAQs for load testing topics for Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-performance
 ms.assetid: 1A993338-0EEE-4C54-BA07-F9E54312BDE6
 ms.manager: douge
 ms.author: ahomer
-ms.date: 07/04/2017
+ms.date: 01/18/2018
 ---
 
-# Q &amp; A for load testing
+# FAQs for load testing
 
-* [General](#qageneral)
-* [Visual Studio](#qavisualstudio)
-* [Azure portal](#qaazure)
-* [Setting up tests](#set-up-tests)
-* [Apache JMeter tests](#jmeter-tests)
-* [Running and monitoring tests](#run-monitor-tests)
-* [Recording and replaying tests](#recordreplay)
-* [Application Insights](#qaappinsights)
-* [Troubleshooting](#troubleshooting)
-* [Errors](#errors)
+[!INCLUDE [version-header-vs-ts](_shared/version-header-vs-ts.md)] 
 
 <a name="qageneral"></a>
-## General Q &amp; A
+## General
+
+[Go to related topic &gt;](get-started-simple-cloud-load-test.md)
+
+[Pricing for VSTS features](https://www.visualstudio.com/team-services/pricing/)
 
 ### Q: How do I learn more about Cloud-based Load Testing?
 
 **A**: Watch this video, or check out the 
-[Cloud-based Load Testing blog](http://aka.ms/loadtestkb). 
+[Cloud-based Load Testing blog](https://blogs.msdn.microsoft.com/devops/?s=clt). 
 
 <iframe src="//channel9.msdn.com/Events/Visual-Studio/Launch-2013/QE103/player" width="600" height="315" allowFullScreen="true" frameBorder="0"></iframe>
 
@@ -45,11 +40,15 @@ Visual Studio Enterprise 2017 or 2015 license, or a Visual Studio Ultimate 2013 
 ### Q: Can I run cloud-based load tests on any app, even behind a firewall?
 
 **A**:  Yes, you can load test apps or sites that are only available to your company, 
-like internal or pre-release apps, staging or preproduction deployments. To learn more, see 
-[Testing private and intranet applications using cloud-based load testing](https://blogs.msdn.microsoft.com/visualstudioalm/2016/08/23/testing-privateintranet-applications-using-cloud-based-load-testing/).
+such as internal or pre-release apps, staging or preproduction deployments. To learn more, see 
+[Testing private and intranet applications using cloud-based load testing](clt-behind-firewall.md).
 
-Or, you can 
-[run a load test locally using Visual Studio](../load-test/run-performance-tests-app-before-release.md).
+Or, you can [run a load test locally using Visual Studio](../load-test/run-performance-tests-app-before-release.md).
+
+### Q: Can I run cloud-based load tests on my on-premises servers or on an Azure Virtual Machine?
+
+**A**:  Yes, several scenarios are supported. To learn more, see 
+[Run cloud-based load tests using your own machines](clt-with-private-machines.md).
 
 ### Q: What are virtual users?
 
@@ -63,7 +62,7 @@ or projected conditions. Virtual users are simulated by test agents.
 that generate load by simulating virtual users. Test agents use agent cores 
 to create virtual users. Each core creates at least 1 virtual user. 
 
-For load test runs in Visual Studio Team Services with the Visual Studio IDE,
+For load test runs in Visual Studio Team Services (VSTS) with the Visual Studio IDE,
 you can specify the number of cores to use. For example,
 if you get errors when you run your test, 
 you might have to increase the number of cores.
@@ -71,7 +70,7 @@ you might have to increase the number of cores.
 Otherwise, your tests and the number of virtual users that 
 you specify determine how many cores and agents are used.
 
-### Q: Where do I specify the number of cores for runs in Visual Studio Team Services with the Visual Studio IDE?
+### Q: Where do I specify the number of cores for runs in VSTS with the Visual Studio IDE?
 
 **A**: You can do that here:
 
@@ -130,9 +129,17 @@ For runs that end in an error state, no virtual user minutes will be deducted fr
 
 Note that there is an additional charge for [resource retention](#retain-resources).
 
-To check how many virtual user minutes that your Visual Studio Team Services account 
-has used or has remaining, go to your Visual Studio Team Services account home page 
-(```https://{youraccount}.visualstudio.com```).
+[Pricing for VSTS features](https://www.visualstudio.com/team-services/pricing/)
+
+<a name="iterations"></a>
+### Q: I'm running load tests using test iterations. How is load test duration determined?
+
+**A**: When load tests are configured to run using test iterations, the test duration cannot be
+determined when the test run starts. In such cases, the load test run assumes the maximum duration
+of 48 hours. If the test iterations complete in this time, the duration used for calculating the
+virtual user minutes consumed by your load test is the actual duration for which the test ran.
+If the test iterations do not complete in 48 hours, the load test will be stopped after 48 hours
+and virtual user minutes will be charged accordingly.
 
 <a name="test-limits"></a>
 ### Q: Are there any limits when running the cloud-based load tests?
@@ -140,7 +147,7 @@ has used or has remaining, go to your Visual Studio Team Services account home p
 **A**: Yes. Based on where you're running the test, each test run duration limit is:
 
 * Visual Studio IDE: 48 hours
-* Visual Studio Team Services Load test hub:
+* VSTS Load test hub:
  - URL-based load tests: 48 hours
  - JMeter load tests: 4 hours
 * Azure portal: 1 hour
@@ -195,7 +202,9 @@ For more details, see [this blog post](https://blogs.msdn.microsoft.com/visualst
 ----------
 
 <a name="qavisualstudio"></a>
-## Q &amp; A for Visual Studio load testing
+## Visual Studio load testing
+
+[Go to related topic &gt;](getting-started-with-performance-testing.md)
 
 ### Q: How can I increase the capacity of my load tests?
 
@@ -228,16 +237,18 @@ For more details, see [this blog post](https://blogs.msdn.microsoft.com/visualst
 
 ### Q: Why should I use Cloud-based Load Testing?
 
-**A**: If you don't want to set up machines for load testing, or you don't have available resources, you can use the [Cloud-based Load Testing service](https://go.microsoft.com/fwlink/?LinkID=317257). It sets up virtual machines in the cloud that will run your load test. Note that your web site must be publicly available on the internet for load testing using Visual Studio Team Services to access it.
+**A**: If you don't want to set up machines for load testing, or you don't have available resources, you can use the [Cloud-based Load Testing service](https://go.microsoft.com/fwlink/?LinkID=317257). It sets up virtual machines in the cloud that will run your load test. Note that your web site must be publicly available on the internet for load testing using VSTS to access it.
 
 ----------
 
 <a name="qaazure"></a>
-## Q &amp; A for Azure load testing
+## Azure load testing
 
-### Q: Why can't I see my existing Team Services account to run load tests? 
+[Go to related topic &gt;](app-service-web-app-performance-test.md)
 
-**A**: To use a Team Services account for running load tests from the Azure
+### Q: Why can't I see my existing VSTS account to run load tests? 
+
+**A**: To use a VSTS account for running load tests from the Azure
 portal, one of the following criteria must be satisfied:
 
 * The account is backed by Azure Active Directory,
@@ -254,7 +265,7 @@ portal, one of the following criteria must be satisfied:
 ### Q: How much time do I get to run performance tests? 
 
 **A**: After public preview, you get 20,000 virtual user minutes (VUMs) 
-free each month with your Visual Studio Team Services account. 
+free each month with your VSTS account. 
 A VUM is the number of virtual users multipled by the number 
 of minutes in your test. If your needs exceed the free limit, 
 you can purchase more time and pay only for what you use.
@@ -263,7 +274,7 @@ you can purchase more time and pay only for what you use.
 
 **A**: You can check this amount in the Azure Portal.
 
-![Go to your Team Services account](_img/app-service-web-app-performance-test/azure-np-vso-accounts.png)
+![Go to your VSTS account](_img/app-service-web-app-performance-test/azure-np-vso-accounts.png)
 
 ![Check VUMs used](_img/app-service-web-app-performance-test/azure-np-vso-accounts-vum-summary.png)
 
@@ -285,12 +296,12 @@ these. We hope to add support for these features in future updates.
 We'd be pleased to hear from you if you need support for other file formats. 
 Email us at [vsoloadtest@microsoft.com](mailto:vsoloadtest@microsoft.com).
 
-<a name="TeamServicesAccount"></a>
-### Q: What else can I do with a Visual Studio Team Services account?
+<a name="Team ServicesAccount"></a>
+### Q: What else can I do with a VSTS account?
 
 **A**: To find your new account, go to ```https://{accountname}.visualstudio.com```. 
 Share your code, build, test, track work, and ship software - all in the cloud 
-using any tool or language. Learn more about how [Visual Studio Team Services](https://www.visualstudio.com/products/what-is-visual-studio-online-vs) 
+using any tool or language. Learn more about how [VSTS](https://www.visualstudio.com/products/what-is-visual-studio-online-vs) 
 features and services help your team collaborate more easily and deploy continuously.
 
 ### Q: Can I get more detailed profiler information?
@@ -300,16 +311,18 @@ features and services help your team collaborate more easily and deploy continuo
 ----------
 
 <a name="set-up-tests"></a>
-## Q &amp; A for setting up tests
+## Setting up tests
+
+[Go to related topic &gt;](getting-started-with-performance-testing.md)
 
 ### Q: Can I have other test types, besides web performance tests, in a load test mix?
 
 **A**: Yes, you can include unit tests and coded web tests, but not coded UI tests.
 
-### Q: How long do I have to wait until I can run my load test after creating a Visual Studio Team Services account?
+### Q: How long do I have to wait until I can run my load test after creating a VSTS account?
 
 **A**:  It can take between 5 seconds to 3 hours until you get permissions 
-to run the load test in the cloud. If you previously created your Visual Studio Team Services account, 
+to run the load test in the cloud. If you previously created your VSTS account, 
 you might be able to run the load test right away.
 
 ### Q: How do I provide different values to the same test?
@@ -330,15 +343,15 @@ If you need more help, contact
 ### Q: Where are the test agents used for my load test runs located?
 
 **A**:  When you set up your load test run, you can select the test agent location from any supported Azure datacenter, starting with Visual Studio Ultimate 2013 Update 5 and Visual Studio Enterprise 2015. 
-After your run finishes, your results are stored in the same location as your Visual Studio Team Services account.
+After your run finishes, your results are stored in the same location as your VSTS account.
 
 ![Edit load test to set location](_img/CLT_LoadTestSetLocation.png)
 
 If you're using an earlier version of Visual Studio, 
 the agent location is based on the location that you chose 
-when you created your Visual Studio Team Services account.
+when you created your VSTS account.
 
-| Visual Studio Team Services Account Region | Test Agent Azure Datacenter |
+| VSTS Account Region | Test Agent Azure Datacenter |
 | :---------------------------------- | :-------------------------- |
 | South Central US                    | East US 2                   |
 | West Europe                         | West Europe                 |
@@ -380,11 +393,13 @@ add WebDeploy_x64_en-US.msi to Deployment window. The setup.cmd will look like t
 ----------
 
 <a name="jmeter-tests"></a>
-## Q &amp; A for Apache JMeter tests
+## Apache JMeter tests
 
-### Q: What is the supported JMeter version?
+[Go to related topic &gt;](get-started-jmeter-test.md)
 
-**A**: The load test agents run Apache JMeter version 2.13 only.
+### Q: What are the supported JMeter versions?
+
+**A**: The latest supported version of Apache JMeter is version 3.2.
 
 ### Q: Which samplers are supported?
 
@@ -403,30 +418,32 @@ when you set up the test, and it will be applied when the load test runs.
 ----------
 
 <a name="run-monitor-tests"></a>
-## Q &amp; A for running and monitoring load tests
+## Running and monitoring load tests
 
-### Q:  Can I use mstest to run load tests with Visual Studio Team Services?
+[Go to related topic &gt;](performance-reports.md)
 
-**A**: Yes, you can in Team Foundation Server 2015 and in Visual Studio Team Services.
+### Q:  Can I use mstest to run load tests with VSTS?
+
+**A**: Yes, you can in VSTS, and in TFS 2015 and later.
 For more information, see
 [this blog post](https://blogs.msdn.microsoft.com/visualstudioalm/2015/08/24/cloud-load-test-support-in-mstest-exe-command-line-and-xaml-builds/).
 
 ### Q:  Can I debug a load test while it's running in the cloud?
 
-**A**: Yes, you can do this when you use Visual Studio Enterprise 2015. 
+**A**: Yes, you can do this when you use Visual Studio Enterprise 2015 or later. 
 [Learn more](https://blogs.msdn.com/b/visualstudioalm/archive/2015/02/06/using-advanced-diagnostics-to-debug-issues-in-cloud-load-test.aspx).
 
 ### Q: How can I check the status of the Cloud-based Load Testing service?
 
 **A**: You can view the service status at the top of the 
-[Visual Studio Team Services support page](https://www.visualstudio.com/support-overview-vs) 
+[VSTS support page](https://www.visualstudio.com/support-overview-vs) 
 and on our [service blog](http://blogs.msdn.com/b/vsoservice/). 
 You can also subscribe to alerts for service status by following 
 [this post in our support forum](https://social.msdn.microsoft.com/Forums/vstudio/74fdaf92-e293-4d71-bd63-cfcc8a9dcd60/subscribe-to-alerts-about-team-foundation-service-and-elastic-load-service-status).
 
 ### Q: What are the possible load test run states?
 
-**A**: When you run load tests with Visual Studio Team Services, the test run states are:
+**A**: When you run load tests with VSTS, the test run states are:
 
 * **In-Progress**: The test run is currently running in the cloud.
 * **Completed**: The test run was completed successfully.
@@ -459,7 +476,7 @@ For better performance as you download more reports, use SQL Server.
     C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE
 1.  Change the value of bindingRedirect to "8.0.0.0-14.0.0.0"
 
-    ```
+    ```xml
     <dependentAssembly>
       <assemblyIdentity name="Microsoft.VisualStudio.QualityTools.LoadTest" publicKeyToken="b03f5f7f11d50a3a" culture="neutral" />
       <bindingRedirect oldVersion="8.0.0.0-14.0.0.0" newVersion="12.0.0.0"/>
@@ -469,7 +486,9 @@ For better performance as you download more reports, use SQL Server.
 ----------
 
 <a name="recordreplay"></a>
-## Q &amp; A for recording and replaying tests
+## Recording and replaying tests
+
+[Go to related topic &gt;](record-and-replay-cloud-load-tests.md)
 
 ### Q: Can I simulate actions from different users and data-drive my test?
 
@@ -482,7 +501,7 @@ such as VIEWSTATE, EVENTVALIDATION, and similar values. Your request may fail if
 contains other dynamic information. In these cases, you should 
 [run the tests using Visual Studio](record-and-replay-cloud-load-tests.md#exportvs).
 
-### Q: Can I test REST APIs using the functionality provided by the Team Services portal?
+### Q: Can I test REST APIs using the functionality provided by the VSTS portal?
 
 **A**: Yes, you can use the URL-based test to test REST APIs. Enter the request URL of your 
 API and the details required to create your test.
@@ -496,30 +515,32 @@ allows you to run cloud-based load tests. See
 ----------
 
 <a name="qaappinsights"></a>
-## Q &amp; A for Application Insights
+## Application Insights
+
+[Go to related topic &gt;](get-performance-data-for-load-tests.md)
 
 ### Q: Can I get more detailed profiler information?
 
-*A**: Yes, see [Profiling live Azure web apps with Application Insights](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-profiler).
+**A**: Yes, see [Profiling live Azure web apps with Application Insights](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-profiler).
 
 ### Q: Can I view data from other app monitoring tools when load testing in the cloud?
 
-*A**: No.
+**A**: No.
 
 ### Q: Can I increase how often data is collected?
 
-*A**: No, this is currently a fixed frequency of one minute.
+**A**: No, this is currently a fixed frequency of one minute.
 
 ### Q: I don't see any counters even after waiting a few minutes. What's wrong?
 
-*A**: Go to Application Insights and check that you can view performance data 
+**A**: Go to Application Insights and check that you can view performance data 
 for your app there. If you see data collected there, report your issue to 
 [vsoloadtest@microsoft.com](mailto:vsoloadtest@microsoft.com). 
 
 <a name="qaconnectts"></a>
-### Q: Why do I get an "Unable to connect to Team Services due to network failure" error when trying to add apps using the Get Performance Data from Application Insights menu command?
+### Q: Why do I get an "Unable to connect to VSTS due to network failure" error when trying to add apps using the Get Performance Data from Application Insights menu command?
  
-*A**: This can happen because:
+**A**: This can happen because:
 
 * No apps are configured to push analytics data to Application Insights. See 
   [Get started with Visual Studio Application Insights](https://azure.microsoft.com/en-in/documentation/articles/app-insights-get-started/).
@@ -529,11 +550,11 @@ for your app there. If you see data collected there, report your issue to
   ![Checking that the apps are listed in the Azure portal](_img/get-performance-data-for-load-tests/get-load-test-insights-05.png)
  
 * The Azure Resource Manager access token has expired. The token is valid for 12 hours 
-  in the context of Team Services. Sign out of your Team Services account and then sign 
+  in the context of VSTS. Sign out of your VSTS account and then sign 
   in again to refresh the token.
 
-* Azure Active Directory is not enabled for your Team Services account.
-  See [Enable Azure Active Directory](https://www.visualstudio.com/docs/setup-admin/team-services/manage-organization-access-for-your-account-vs).
+* Azure Active Directory is not enabled for your VSTS account.
+  See [Access VSTS with Azure Active Directory](../accounts/access-with-azure-ad.md).
 
 If none of the above works, contact us at [vsoloadtest@microsoft.com](mailto:vsoloadtest@microsoft.com).
 
@@ -573,10 +594,10 @@ connection will keep trying to connect indefinitely.
 
 ### Q: Why can't I use more than 250 virtual users or plug-ins when I have Visual Studio Ultimate or Visual Studio Enterprise?
 
-**A**: If this happens, you must take the Visual Studio Ultimate 2013 or Visual Studio 
-Enterprise 2015 Product Key from your MSDN subscription and use the "Change my Product License" 
+**A**: If this happens, you must take the Visual Studio 
+product key from your MSDN subscription and use the "Change my Product License" 
 option on the Product Information page. You must do this on every machine where you want 
-to run load tests using Visual Studio Team Services. To get the product key, 
+to run load tests using VSTS. To get the product key, 
 [visit this site](https://msdn.microsoft.com/subscriptions/keys/).
 
 ### Q: Why did the REST API calls that I use stop working?
@@ -590,7 +611,7 @@ in your REST API calls. To do this, see
 
 ### Q: I noticed that user code fails to execute if it depends on the test names. Are test names changed when run against the service?
 
-**A**: When the test runs using Visual Studio Team Services, 
+**A**: When the test runs using VSTS, 
 test names in load tests are converted to lower case. 
 Any string match done on a test name by user code should 
 ignore the case or convert test names to lower case.
@@ -603,7 +624,7 @@ ignore the case or convert test names to lower case.
 
 1. Add this line inside the &lt;appSettings&lt; section:
 
-   ```
+   ```xml
    <add key="ElsClientLogLevel" value="XXX"/>
    ```
 
@@ -621,7 +642,7 @@ ignore the case or convert test names to lower case.
    just above the closing tag. You can specify the path for the log 
    file by changing the initializeData value.
 
-   ```
+   ```xml
    <system.diagnostics>
      <trace autoflush="true" indentsize="4">
       <listeners>
@@ -662,7 +683,7 @@ See [Load Test Run Settings Properties](https://msdn.microsoft.com/library/ff406
 * VS1550082
 * VS1550083
 
-[Contact Visual Studio Team Services Support](https://www.visualstudio.com/team-services/support). 
+[Contact VSTS Support](https://www.visualstudio.com/team-services/support). 
 You will have to give them your test run id.
 
 ### Q: My run was aborted because the .loadtest xml file could not be parsed. What do I do?
@@ -692,12 +713,56 @@ To fix this problem, create another load test. Delete the failed test run.
 
 ### Q: My load test got an error when it started or was aborted during the run. What do I do?
 
-**A**: Generally, these problems happen due to issues with the cloud-based load testing service. Just try and run your load test again. If these problems still happen, contact Visual Studio Team Services support. You will have to give them your test run id.
+**A**: Generally, these problems happen due to issues with the cloud-based load testing service. Just try and run your load test again. If these problems still happen, contact VSTS support. You will have to give them your test run id.
 
 ### Q: Where can I find information about other errors?
 
 **A**: See [Visual Studio Cloud Load Testing error codes](https://blogs.msdn.com/b/visualstudioalm/archive/2014/10/21/visual-studio-cloud-load-testing-amp-error-codes.aspx) to find more details about other errors and their resolutions, where applicable.
 
 ----------
+
+<a name="qalinks"></a>
+## Links to useful resources
+
+**Tutorials**
+
+* [All about Load Test planning](https://blogs.msdn.microsoft.com/geoffgr/archive/2014/08/22/all-about-test-planning-part-1-introduction.aspx)
+* [Simulating expected load - how to model real world load in CLT](https://blogs.msdn.microsoft.com/edglas/archive/2010/04/02/simulating-peak-load-with-vs-load-tests.aspx)
+* [Analyzing Load Test results](https://blogs.msdn.microsoft.com/visualstudioalm/archive/2014/06/10/analyzing-load-test-results-and-everything-you-wanted-to-know-about-load-test-reports.aspx)
+* [Data driven Load Tests with VSO and SQL Azure](https://blogs.msdn.microsoft.com/visualstudioalm/archive/2014/08/26/data-driven-load-tests-using-visual-studio-online-and-sql-azure.aspx)
+* [Driving Unit Tests from Cloud-based Load test](https://blogs.msdn.microsoft.com/visualstudioalm/archive/2014/08/01/driving-unit-tests-from-cloud-load-test.aspx)
+* [Parameterizing tests to run in different environments](https://blogs.msdn.microsoft.com/edglas/archive/2010/02/16/parameterizing-tests-to-run-in-different-environments.aspx)
+* [A Web Performance Test primer](https://blogs.msdn.microsoft.com/edglas/archive/2010/03/24/web-test-authoring-and-debugging-techniques-for-visual-studio-2010.aspx)
+* [Managing Load Test results](https://blogs.msdn.microsoft.com/slumley/archive/2007/06/14/managing-load-test-results.aspx)
+* [Getting 90th and 95th percentile results in a Load Test](https://blogs.msdn.microsoft.com/slumley/archive/2007/07/06/how-to-get-90th-and-95th-percentile-information-as-well-as-timing-details-for-every-page-test-and-transcation.aspx)
+* [Understanding Load Test results schema](https://blogs.msdn.microsoft.com/billbar/archive/2006/02/10/what-is-the-data-in-the-vsts-load-test-results-store.aspx)
+* [Load Test plug-ins](https://blogs.msdn.microsoft.com/slumley/archive/2009/04/10/load-test-plug-ins.aspx)
+* [Generating Excel reports for your Load Test runs](https://blogs.msdn.microsoft.com/slumley/archive/2009/05/22/dev10-feature-load-test-excel-report-integration.aspx)
+* [Generating Run Comparison report in Excel](https://blogs.msdn.microsoft.com/slumley/archive/2009/11/07/vsts-2010-feature-load-testing-run-comparison-report-in-excel.aspx)
+* [Understanding Virtual User Activity visualization](https://blogs.msdn.microsoft.com/slumley/archive/2009/06/09/vsts-2010-feature-load-test-virtual-user-activity-visualization.aspx)
+* [Using fiddler to create web tests](http://www.bugtrap.co.uk/2010/06/using-fiddler-with-visual-studio-team.html) 
+* [Creating web tests transactions from fiddler](https://blogs.msdn.microsoft.com/nexpert/archive/2009/05/04/creating-transactional-web-tests-for-visual-studio-with-fiddler-nexpert.aspx)
+* [Creating custom Load profiles via plug-ins](https://blogs.msdn.microsoft.com/slumley/archive/2009/05/04/creating-a-custom-load-profile-which-will-step-user-load-up-and-then-back-down.aspx)
+
+**Case Studies**
+
+* [Load Testing Visual Studio Online itself](https://blogs.msdn.microsoft.com/edglas/archive/2013/11/27/load-testing-visual-studio-online.aspx)
+* [NORAD Tracks Santa](https://blogs.msdn.microsoft.com/visualstudioalm/archive/2014/01/23/using-visual-studio-online-to-load-test-the-norad-tracks-santa-website.aspx)
+* [Eovendo - Ad Rating Service](http://www.microsoft.com/casestudies/Case_Study_Detail.aspx?CaseStudyID=710000003474)
+
+**Blogs and other references**
+
+* [Quick Reference Guide for VS Performance Testing](http://vsptqrg.codeplex.com/)
+* [Geoff Gray's blog](https://blogs.msdn.microsoft.com/geoffgr/)
+* [Ed Glas' blog](https://blogs.msdn.microsoft.com/edglas/archive/2007/12/17/content-index-for-web-tests-and-load-tests.aspx)
+* [Sean Lumley's blog](https://blogs.msdn.microsoft.com/slumley/)
+
+**Samples**
+
+* [Sample plugins](http://teamtestplugins.codeplex.com/)
+* [Sample code for REST APIs (Test Execution)](https://code.msdn.microsoft.com/windowsdesktop/Cloud-Load-Testing-API-b333e778)
+* [Sample code for REST APIs (Importing Results)](https://code.msdn.microsoft.com/windowsdesktop/Importing-Load-Test-Results-b577864b)
+
+-----------------
 
 [!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 

@@ -1,7 +1,7 @@
 ---
-title: Agile culture | Team Services & TFS  
+title: Agile culture | VSTS & TFS  
 description: Create an Agile culture of autonomous teams and an aligned enterprise using Agile tools when working in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)  
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 3C43B829-3514-4493-8D5A-896375835FE7  
 ms.manager: douge
@@ -9,9 +9,9 @@ ms.author: kaelli
 ms.date: 08/04/2016
 ---
 
-#Agile culture  
+# Agile culture  
 
-[!INCLUDE [temp](../_shared/dev15-version-header.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 > [!NOTE] 
 > Are you new to Agile? Learn more about [Agile Culture] (https://www.visualstudio.com/learn/agile-culture/) and [Scaling Agile to Large Teams] (https://www.visualstudio.com/learn/scale-agile-large-teams/).
@@ -148,7 +148,7 @@ As your organization grows, you can scale your Agile tools in the following ways
 
 	If additional portfolio backlogs are needed --for example, Scenarios or Initiatives--you can [add them as well](../customize/add-portfolio-backlogs.md).  
 
-- **[Configure dashboards](../../Report/dashboards.md):** With team dashboards, you can configure a number of charts that track progress within a team or across teams. Specifically, you can add status and trend charts based on queries you create. 
+- **[Configure dashboards](../../report/dashboards/dashboards.md):** With team dashboards, you can configure a number of charts that track progress within a team or across teams. Specifically, you can add status and trend charts based on queries you create. 
 
 - **Group or categorize work:**  There are several ways to group work that you want to track. Backlogs filter work items based on team area assignments. And, portfolio backlogs allow you to [group backlog items under Features and Epics](../backlogs/organize-backlog.md). 
 
@@ -158,7 +158,7 @@ As your organization grows, you can scale your Agile tools in the following ways
 
 ## Related notes  
 
-Before you can create or work with any of the Agile tools, you need a team project. If you don't have one yet, you can [create one in Visual Studio Team Services](../../setup-admin/team-services/connect-to-visual-studio-team-services.md)  or on an [on-premises TFS](../../setup-admin/create-team-project.md). 
+Before you can create or work with any of the Agile tools, you need a team project. If you don't have one yet, you can [create one in VSTS](../../user-guide/connect-team-projects.md)  or on an [on-premises TFS](../../accounts/create-team-project.md). 
 
 If you're ready to move from one team to two teams, or configure several teams, see [Multiple teams](multiple-teams.md). To add a team administrator or configure team assets, see [Configure team settings](manage-team-assets.md). 
 

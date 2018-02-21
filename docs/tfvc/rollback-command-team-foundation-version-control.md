@@ -5,19 +5,19 @@ ms.assetid: 8cbca369-eda2-459b-aa37-c86ec2eab3b0
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfvc
 ms.manager: douge
-ms.author: routlaw
+ms.author: sdanie
 ms.date: 08/10/2016
 ---
 
 # Rollback Command (Team Foundation Version Control)
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 You can use this command to roll back the effects of one or more changesets to one or more version-controlled items. This command does not remove the changesets from an item's version history. Instead, this command creates in your workspace a set of pending changes that negate the effects of the changesets that you specify.
 
 **Required Permissions**
 
-To use this command, you must have the **Read**, **Check Out**, and **Check In** permissions set to **Allow**. For more information, see [Team Foundation Server Permissions](../setup-admin/permissions.md).
+To use this command, you must have the **Read**, **Check Out**, and **Check In** permissions set to **Allow**. For more information, see [Permissions and groups reference](../security/permissions.md).
 
 	tf rollback /toversion:VersionSpec ItemSpec [/recursive] [/lock:none|checkin|checkout] [/version:versionspec] [/keepmergehistory] [/login:username,[password]] [/noprompt]
 
@@ -37,12 +37,12 @@ To use this command, you must have the **Read**, **Check Out**, and **Check In**
 	<td><p>Use this argument with the <strong>/changeset</strong> option to specify the changesets that you want to roll back. You can specify the changesets in the following ways:</p><ul><li><p>A single changeset</p><p>Example: <strong>/changeset:C11</strong></p></li><li><p>A range of changesets</p><p>Example: <strong>/changeset:C7~C20</strong></p></li><li><p>A date</p><p>Example: <strong>/changeset:D09/30/09</strong></p></li><li><p>A range of dates</p><p>Example:<strong>/changeset:D09/23/09~D10/07/09</strong></p></li><li><p>The most recent changeset</p><p>Example: <strong>/changeset:Tip</strong> or <strong>/changeset:T</strong></p></li></ul></td></tr>
 <tr>
 	<td><p><em>ItemSpec</em></p></td>
-	<td><p>Use this argument to specify one or more items that you want to roll back. If you are using the <strong>/toversion</strong> option, you must specify this argument.</p><p>For more information about how Team Foundation parses item specifications, see <a href="https://msdn.microsoft.com/library/56f7w6be)">Command-Line Syntax (Version Control)</a>.</p><div class="alert"><div class="mtps-table" xmlns="http://www.w3.org/1999/xhtml"><div class="mtps-row"><strong>Note:</strong></div><div class="mtps-row">
+	<td><p>Use this argument to specify one or more items that you want to roll back. If you are using the <strong>/toversion</strong> option, you must specify this argument.</p><p>For more information about how Team Foundation parses item specifications, see <a href="https://msdn.microsoft.com/library/56f7w6be">Command-Line Syntax (Version Control)</a>.</p><div class="alert"><div class="mtps-table" xmlns="http://www.w3.org/1999/xhtml"><div class="mtps-row"><strong>Note:</strong></div><div class="mtps-row">
 You can specify more than one <em>Itemspec</em> argument.
 </div></div></div></td></tr>
 <tr>
 	<td><p><em>VersionSpec</em></p></td>
-	<td><p>The user-provided value for both the <strong>/version</strong> option and the <strong>/toversion</strong> option.</p><p>Use this argument with the <strong>/toversion</strong> option to revert a file to its state in a specific changeset. You can specify the version in the following ways:</p><ul><li><p>A single changeset</p><p>Example: <strong>/toversion:C32</strong></p></li><li><p>A date (at midnight)</p><p>Example: <strong>/toversion:D06/19/09</strong></p></li><li><p>A date and a time</p><p>Example: <strong>/toversion:D06/19/09T14:32</strong></p></li><li><p>A label</p><p>Example: <strong>/toversion:LTestLabel</strong></p></li><li><p>The version in the workspace that is mapped to the current directory</p><p>Example: <strong>/toversion:W</strong></p></li><li><p>The version in a specific workspace</p><p>Example: <strong>/toversion:WResolveRIConflicts;AKerry</strong></p></li></ul><p>For more information about how Team Foundation parses versionspecs, see <a href="https://msdn.microsoft.com/library/56f7w6be)">Command-Line Syntax (Version Control)</a>.</p></td></tr></tbody>
+	<td><p>The user-provided value for both the <strong>/version</strong> option and the <strong>/toversion</strong> option.</p><p>Use this argument with the <strong>/toversion</strong> option to revert a file to its state in a specific changeset. You can specify the version in the following ways:</p><ul><li><p>A single changeset</p><p>Example: <strong>/toversion:C32</strong></p></li><li><p>A date (at midnight)</p><p>Example: <strong>/toversion:D06/19/09</strong></p></li><li><p>A date and a time</p><p>Example: <strong>/toversion:D06/19/09T14:32</strong></p></li><li><p>A label</p><p>Example: <strong>/toversion:LTestLabel</strong></p></li><li><p>The version in the workspace that is mapped to the current directory</p><p>Example: <strong>/toversion:W</strong></p></li><li><p>The version in a specific workspace</p><p>Example: <strong>/toversion:WResolveRIConflicts;AKerry</strong></p></li></ul><p>For more information about how Team Foundation parses versionspecs, see <a href="https://msdn.microsoft.com/library/56f7w6be">Command-Line Syntax (Version Control)</a>.</p></td></tr></tbody>
 </table>
 
 <table><tbody>

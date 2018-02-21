@@ -1,12 +1,12 @@
 ---
 ms.assetid: 1A6903E4-B0B3-426E-9E07-67492ADB1F42
-title: Provision and manage virtual machines in VMware vCenter Server from Release Management in Visual Studio Team Services or Microsoft Team Foundation Server
-description: Example of provisioning and managing virtual machine in VMware vCenter Server from Release Management in Visual Studio Team Services (VSTS) or Microsoft Team Foundation Server (TFS)
+title: Provision and manage virtual machines in VMware vCenter Server
+description: Provision and manage VMs in VMware vCenter Server from Release Management in VSTS or TFS
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-release
+ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
-ms.date: 10/20/2016
+ms.date: 01/19/2018
 ---
 
 # Provision and manage virtual machines in VMware
@@ -15,7 +15,7 @@ ms.date: 10/20/2016
 
 This example shows how you can integrate **VMware 
 vCenter Server** with Release Management in Visual 
-Studio Team Services or Team Foundation Server. 
+Studio Team Services (VSTS) or Team Foundation Server (TFS). 
 You can provision and manage virtual machines in vCenter 
 and then deploy your apps to them.
 
@@ -60,13 +60,13 @@ the agent machine:
 1. Install an agent on the **agent machine**:
 
    * [Deploy an agent on Windows](../../actions/agents/v2-windows.md)
-   * [Deploy an agent on OSX](../../actions/agents/v2-osx.md)
+   * [Deploy an agent on macOS](../../actions/agents/v2-osx.md)
    * [Deploy an agent on Linux](../../actions/agents/v2-linux.md)<p />
 
 1. Install the VMware extension 
    from Visual Studio Marketplace into your server or account.
 
-   * If you are using **Visual Studio Team Services**, 
+   * If you are using **VSTS**, 
      install the extension from [this location](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.vmwareapp)
      in Visual Studio Marketplace. 
    * If you are using **Team Foundation Server**, download 
@@ -77,7 +77,7 @@ the agent machine:
 1. Follow these steps to create a vCenter Server Service 
    endpoint in your team project:
 
-   * Open your Team Services or TFS team project in 
+   * Open your VSTS or TFS team project in 
      your web browser. Choose the **Settings** icon in the menu bar and select **Services**.
 
    * In the **Services** tab, choose **New Service Endpoint**, and select **VMware vCenter Server**.

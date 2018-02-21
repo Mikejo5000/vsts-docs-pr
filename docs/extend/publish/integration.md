@@ -1,24 +1,24 @@
 ---
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
-title: Package and Publish an Integration | Extensions for Visual Studio Team Services
+title: Package and Publish an Integration | Extensions for VSTS
 description: How to package and publish your integration to the Visual Studio Marketplace
 ms.assetid: 61550050-c6d7-40e1-9ea7-030b48b04e3b
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/29/2016
-ms.topic: get-started-article
 ---
 
 # Package and Publish an integration to the Marketplace
 
-Do you have a tool, service, or product that integrates with Visual Studio Team Services or Team Foundation Server?
+Do you have a tool, service, or product that integrates with VSTS or Team Foundation Server?
 If so, help users find it by publishing it on the Visual Studio Marketplace.
 The Visual Studio Marketplace is a one-stop-shop for individuals and teams to find tools that extend and enhance the experience. 
 
 [Browse the marketplace](https://marketplace.visualstudio.com) to see examples of other integrations and extensions.
 
->Note: If you're looking for packaging and publishing information for extensions, check out [Package & Publish Extensions](./overview.md).
+> [!NOTE]
+> If you're looking for packaging and publishing information for extensions, check out [Package & Publish Extensions](./overview.md).
 
 ## Publishing Requirements
 
@@ -36,7 +36,7 @@ Publishing to the Marketplace is an iterative process that starts with creating 
 
 ![example](./_img/integration-example.png)
 
-[Jenkins for Visual Studio Team Services](https://marketplace.visualstudio.com/items/ms.jenkins)
+[Jenkins for VSTS](https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-jenkins)
 
 Note: you will see the term `extension` used in documentations referenced below. Extensions are another type of Marketplace item and share many similarities from a discovery standpoint as integrations.
 
@@ -105,22 +105,22 @@ npm i -g tfx-cli
 tfx extension create --manifest-globs vss-extension.json
 ```
 
->[!NOTE]
->An extension/integration's version must be incremented on every update. <br>
->If you haven't incremented your extension/integration in the manifest, you should pass the `--rev-version` command line switch. This will increment the *patch* version number of your extension and save the new version to your manifest.
+> [!NOTE]
+> An extension/integration's version must be incremented on every update. <br>
+> If you haven't incremented your extension/integration in the manifest, you should pass the `--rev-version` command line switch. This will increment the *patch* version number of your extension and save the new version to your manifest.
 
 ### Publish your integration to the Marketplace
 
 [!INCLUDE [Publish_extension](../_shared/procedures/publish.md)]
 
 ### Share your integration
-Before an integration can be installed into a Visual Studio Team Services account, it must be shared with that account. Sharing is a requirement during development and testing of an integration, as it is the only way to run an integration.
+Before an integration can be installed into a VSTS account, it must be shared with that account. Sharing is a requirement during development and testing of an integration, as it is the only way to run an integration.
 
 To share an integration so it can be installed:
 
 1. Click an integration from the list of displayed items 
 2. Click the **Share** button
-3. Specify the name of the Visual Studio Team Services account to make this integration visible to.
+3. Specify the name of the VSTS account to make this integration visible to.
   - For example, to make an integration visible to the fabrikam-fiber-inc.visualstudio.com account, specify `fabrikam-fiber-inc`.
 
 #### Update an item

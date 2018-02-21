@@ -1,12 +1,12 @@
 ---
-title: User acceptance testing with Visual Studio Team Services and Team Foundation Server
-description: Create and run user acceptance tests in Visual Studio Team Services and Team Foundation Server to easily verify value and business requirements, and deliver high quality software 
+title: User acceptance testing
+description: Create and run user acceptance tests in VSTS and TFS
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-manual
 ms.assetid: C52CDC6D-1B01-4A63-A265-B68C4E3DDE7D
 ms.manager: douge
 ms.author: ahomer
-ms.date: 08/12/2016
+ms.date: 01/18/2018
 ---
 
 # Perform user acceptance testing
@@ -19,13 +19,15 @@ on business requirements, and the high quality
 software demanded by customers.
 This type of testing is often referred to as 
 _user acceptance testing_ and is available as a 
-feature in Visual Studio Team Services and Team 
-Foundation Server.
+feature in Visual Studio Team Services (VSTS) and Team 
+Foundation Server (TFS).
 
 Typically you create a Test Suite using a formal 
 requirement work item type. However, today’s 
 agile teams often prefer to work from User Stories 
 or Product Backlog items as their requirements.
+
+[!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
 
 ## Before you start
 
@@ -37,7 +39,7 @@ a test plan. If not, follow the steps in:
 
 ## Assign and invite testers
 
-Visual Studio Team Services makes it easy to assign
+VSTS makes it easy to assign
 testers to individual test cases.  A typical 
 scenario for user acceptance testing is the ability
 to not just assign one tester to a test case (see 
@@ -74,7 +76,7 @@ of them a notification email.
 ## Easily track results
 
 A key principle of good user acceptance testing practice is to minimize the effort required to determine whether a requirement has been achieved. 
-There are two ways this can be achieved, you can focus on individual test runs and tests in the **Test** hub to see which failed or use the charts views make it much easy and accessible to all members  of Visual Studio Team Services makes this much easier.   
+There are two ways this can be achieved, you can focus on individual test runs and tests in the **Test** hub to see which failed or use the charts views make it much easy and accessible to all members of VSTS makes this much easier.   
 
 ![Exploring test results in the Test hub](_img/user-acceptance-testing/uat8.png)
 

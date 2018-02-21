@@ -5,19 +5,19 @@ ms.assetid: f306bc7a-db55-47d8-aa22-e2399260e838
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfvc
 ms.manager: douge
-ms.author: routlaw
+ms.author: sdanie
 ms.date: 08/10/2016
 ---
 
 # Properties Command
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Displays information about items under version control.
 
 **Required Permissions**
 
-To use the **properties** command, you must have the **Read** permission set to **Allow** for all specified files and folders. For more information, see [Team Foundation Server Permissions](../setup-admin/permissions.md).
+To use the **properties** command, you must have the **Read** permission set to **Allow** for all specified files and folders. For more information, see [Permissions and groups reference](../security/permissions.md).
 
     tf properties [/collection:TeamProjectCollectionUrl] [/recursive] [/login:username,[password]]
     itemspec [/version:versionspec] [/workspace] 
@@ -30,10 +30,10 @@ To use the **properties** command, you must have the **Read** permission set to 
 	<td><p>The URL of the team project collection that contains the items for which you want to display properties (for example, http://myserver:8080/tfs/DefaultCollection).</p></td></tr>
 <tr>
 	<td><p><em>Itemspec</em></p></td>
-	<td><p>Identifies the files and folders that are specified for property retrieval.</p><p>For more information about how Visual Studio Team Foundation Server parses <em>itemspecs</em> to determine which items are within scope, see <a href="https://msdn.microsoft.com/library/4y2ash30)">Command-Line Options</a>.</p><p><strong>Note:</strong> You can specify more than one <em>Itemspec</em> argument.</p></td></tr>
+	<td><p>Identifies the files and folders that are specified for property retrieval.</p><p>For more information about how Visual Studio Team Foundation Server parses <em>itemspecs</em> to determine which items are within scope, see <a href="https://msdn.microsoft.com/library/4y2ash30">Command-Line Options</a>.</p><p><strong>Note:</strong> You can specify more than one <em>Itemspec</em> argument.</p></td></tr>
 <tr>
 	<td><p><em>Versionspec</em></p></td>
-	<td><p>Provides a value such as C3 for the <strong>/version</strong> option. For more information about how Team Foundation Server parses a version specification to determine which items are within its scope, see <a href="https://msdn.microsoft.com/library/56f7w6be)">Command-Line Syntax (Version Control)</a>.</p></td></tr>
+	<td><p>Provides a value such as C3 for the <strong>/version</strong> option. For more information about how Team Foundation Server parses a version specification to determine which items are within its scope, see <a href="https://msdn.microsoft.com/library/56f7w6be">Command-Line Syntax (Version Control)</a>.</p></td></tr>
 <tr>
 	<td><p><em>username</em></p></td>
 	<td><p>Provides a value to the <strong>/login</strong> option. You can specify a username value as either <em>Domain</em>\<em>UserName</em> or <em>UserName</em>.</p></td></tr></tbody>
@@ -57,7 +57,7 @@ The properties command displays several pieces of information about a version-co
 	<td><p>Indicates the local path of the workspace folder for the specified item.</p></td></tr>
 <tr>
 	<td><p>Changeset</p></td>
-	<td><p>Indicates the version number of the file or folder that was last retrieved to the current workspace using the <a href="/docs/tfvc/get-command">Get Command</a>.</p></td></tr>
+	<td><p>Indicates the version number of the file or folder that was last retrieved to the current workspace using the <a href="get-command.md">Get Command</a>.</p></td></tr>
 <tr>
 	<td><p>Change</p></td>
 	<td><p>Indicates where a change is pending.</p></td></tr>
@@ -75,7 +75,7 @@ The properties command displays several pieces of information about a version-co
 	<td><p>If the item is deleted, the deletion identification; otherwise 0.</p></td></tr>
 <tr>
 	<td><p>Lock</p></td>
-	<td><p>Indicates the type of lock.</p><ul><li><p><strong>Checkin</strong>   Check in is not permitted for the file.</p></li><li><p><strong>Checkout</strong>   Check out in not permitted for the file.</p></li><li><p><strong>None</strong>   A lock is not set. For more information, see <a href="/docs/tfvc/lock-command">Lock Command</a>.</p></li></ul></td></tr>
+	<td><p>Indicates the type of lock.</p><ul><li><p><strong>Checkin</strong>   Check in is not permitted for the file.</p></li><li><p><strong>Checkout</strong>   Check out in not permitted for the file.</p></li><li><p><strong>None</strong>   A lock is not set. For more information, see <a href="lock-command.md">Lock Command</a>.</p></li></ul></td></tr>
 <tr>
 	<td><p>Lock Owner</p></td>
 	<td><p>Indicates the person who set a check-in lock.</p></td></tr>

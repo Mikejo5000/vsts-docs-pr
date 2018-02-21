@@ -1,12 +1,12 @@
 ---
 title: Associate an automated test with a test case
-description: Manual and exploratory testing. Associate an automated test with a test case using Microsoft Test Manager
+description: Continuous testing. Associate an automated test with a test case using Microsoft Test Manager (MTM) and VSTS
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-continuous
+ms.technology: vs-devops-build
 ms.assetid: 606679F2-1604-40EA-A720-63CDDA93DD76
 ms.manager: douge
 ms.author: ahomer
-ms.date: 08/12/2016
+ms.date: 01/18/2018
 ---
 
 # Associate automated tests with test cases
@@ -30,7 +30,7 @@ The process to associate an automated test with a test case is:
 1. Create a test project containing your automated test.
    [What types of tests are supported?](reference-qa.md#test-types)
 
-1. Check your test project into a Team Services or Team
+1. Check your test project into a VSTS or Team
    Foundation Server (TFS) repository.
 
 1. Create a build definition for your project, ensuring that it
@@ -43,16 +43,10 @@ The process to associate an automated test with a test case is:
    been added to a test plan that uses the build you just defined. 
 
 If you are using Team Foundation Build and Release Management in
-Team Services or TFS (not a [XAML build](reference-qa.md#xaml-build)), you can run associated tests in the 
-Build & Release pipeline by using the
-[Visual Studio Test Agent Deployment](../../build-release/steps/test/visual-studio-test-agent-deployment.md) and
-[Run Functional Tests](../../build-release/steps/test/run-functional-tests.md) tasks.
-You must configure the [Run Functional Tests](../../build-release/steps/test/run-functional-tests.md) task to use the
-**Test Plan** option. You _cannot_ run tests on-demand using
+VSTS or TFS (not a [XAML build](reference-qa.md#xaml-build)), you can run associated tests in the 
+Build and Release pipeline - see [Test with unified agents and phases](test-with-unified-agent-and-phases.md)
+for details. You _cannot_ run tests on-demand using
 Microsoft Test Manager (MTM) unless you are using a [XAML build](reference-qa.md#xaml-build). 
-
->See [Test with unified agents and phases](test-with-unified-agent-and-phases.md)
-for details of how you can avoid using the Visual Studio Test Agent Deployment task. 
 
 The parameters in a test case are not used by any automated test that
 you associate with a test case. Iterations of a test case that use these

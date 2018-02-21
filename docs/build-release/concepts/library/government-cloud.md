@@ -1,29 +1,25 @@
 ---
-title: Azure Government Cloud deployment in Visual Studio Team Services and Team Foundation Server
-description: Understand Azure Government Cloud deployment in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+title: Azure Government Cloud deployment
+description: Understand Azure Government Cloud deployment in Microsoft Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.assetid: 857AB27D-FA16-44DB-B1C4-CBE946A0A1AD
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-release
-ms.topic: get-started-article
+ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
-ms.date: 10/20/2016
+ms.date: 01/19/2018
 ---
 
 # Deployments to Azure Government Cloud
 
-**| Team Services |**
+**VSTS | TFS 2017**
 
 [Azure Government Clouds](https://azure.microsoft.com/en-us/overview/clouds/government/)
 provide private and semi-isolated locations for specific Government or other services, separate from the normal
 Azure services. Highest levels of privacy have been adopted for these clouds, including restricted data access policies.
 
-Visual Studio Team Services is not available in Azure Government Clouds, so there are some special considerations when you
+Visual Studio Team Services (VSTS) is not available in Azure Government Clouds, so there are some special considerations when you
 want to deploy apps to Government Clouds because artifact storage, build,
 and deployment orchestration must execute outside the Government Cloud.
-
->At present, Team Foundation Server cannot be used to deploy to
-an Azure Government Cloud. This capability will be added in the future.
 
 To enable connection to an Azure Government Cloud, you specify
 it as the **Environment** parameter when you create a [service endpoint](service-endpoints.md)
@@ -92,7 +88,7 @@ See also [Troubleshoot Azure Resource Manager service endpoints](../../actions/a
 
 * [Deploy an Azure web app](../../apps/cd/deploy-webdeploy-webapps.md)
 
-* [Deploy an Azure cloud service](../../apps/aspnet/cd/deploy-cloudservice-cloudservice.md)
+* [Deploy an Azure cloud service](../../apps/cd/deploy-cloudservice-cloudservice.md)
 
 * [Examples index](../../apps/index.md)
 

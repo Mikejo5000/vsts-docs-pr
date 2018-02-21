@@ -7,25 +7,26 @@ ms.topic: get-started-article
 ms.assetid: 2C83E7E1-93BE-44F9-A041-AC23963404D3
 ms.manager: douge
 ms.author: ahomer
-ms.date: 08/12/2016
+ms.date: 01/18/2018
 ---
 
 # Tutorial: Load test your app before release
 
-**Team Services | Visual Studio 2017 | Visual Studio 2015 | [Previous version](https://msdn.microsoft.com/library/dn250793%28v=vs.120%29.aspx)**
+[!INCLUDE [version-header-vs-ts](_shared/version-header-vs-ts.md)] 
 
-Find performance issues before you release your app 
-by running load tests with with Visual Studio 
+Find performance issues before you release your app by running load tests with with Visual Studio 
 Enterprise using [Cloud-based Load Testing](http://go.microsoft.com/fwlink/?LinkID=317257)
-to provide virtual machines in the cloud that generate the load of 
-many users accessing your web site at the same time.
-All you need is a [Visual Studio Team Services account](http://go.microsoft.com/fwlink/?LinkId=307137).
+to provide virtual machines in the cloud that generate the load of many users accessing your web site at the same time.
+All you need is a [Visual Studio Team Services (VSTS) account](http://go.microsoft.com/fwlink/?LinkId=307137).
 
-* [Create a web performance and load test project](#createtests)
-* [Record a web performance test](#recordtests)
-* [Create a load test](#createload)
-* [Run and analyze your load test](#runanalyze)
-* [Improve your load tests](#improvetests)
+In this tutorial, you'll learn how to:
+
+> [!div class="checklist"]
+> * [Create a web performance and load test project](#createtests)
+> * [Record a web performance test](#recordtests)
+> * [Create a load test](#createload)
+> * [Run and analyze your load test](#runanalyze)
+> * [Improve your load tests](#improvetests)
 
 <a name="createtests"></a>
 ## Create a web performance and load test project
@@ -52,14 +53,11 @@ actions in your app at the same time.
 
    ![Create web performance test](_img/run-performance-tests-app-before-release/create-web-perf-test.png)
 
-   Your web browser opens.
-
-1. Enter the URL for the website that you want to test.
+1. Your web browser opens. Enter the URL for the website that you want to test.
 
    ![Enter url - web test recorder automatically starts](_img/run-performance-tests-app-before-release/provide-site-url-for-testing.png)
 
 1. Use your application like you expect your customers to use it. For example, search for items and add them to the shopping cart.
-
    The recorder will capture the HTTP requests and responses.
 
 1. When you're done, stop recording.
@@ -67,14 +65,13 @@ actions in your app at the same time.
    ![Use your application as user would, stop recording](_img/run-performance-tests-app-before-release/use-app-stop-recording.png)
 
    Now, Visual Studio looks for dynamic parameters for the HTTP responses to each of your HTTP requests. A progress bar appears while this happens.
-
    If dynamic parameters are found, a table appears. You can assign constant values to each dynamic parameter.
 
 1. Rename your test. For example, ShoppingCart.webtest.
 
    ![Rename web performance test](_img/run-performance-tests-app-before-release/rename-web-perf-test.png)
 
-1. Edit test properties to specify performance goals. For example, you can set a page response time goal to 1 second.
+1. Edit test properties to specify performance goals. For example, you can set a page response time goal of one second.
 
    ![Edit page response time goal property to 1 second](_img/run-performance-tests-app-before-release/edit-page-response-time-goal.png)
 
@@ -108,21 +105,20 @@ actions in your app at the same time.
 
    ![Select which tests to include in the test mix](_img/run-performance-tests-app-before-release/select-tests-for-test-mix.png)
 
-   When you run cloud-based load tests using your Visual Studio Team Services account, you can run those tests and generate load in an Azure datacenter that's closer to your users. That way, you reduce latency and simulate local conditions.
-
-1. Select the location where you want to run your load test.
+1. When you run cloud-based load tests using your VSTS account, you can run those tests and generate load in an Azure datacenter that's closer to your users. That way, you reduce latency and simulate local conditions.
+   Select the location where you want to run your load test.
 
    ![Select load test location](_img/run-performance-tests-app-before-release/select-load-test-location.png)
 
-1. When you finish the wizard, the web performance test is added to the load test and appears in the load test editor.
+1. After you finish the wizard, the web performance test is added to the load test and appears in the load test editor.
 
    ![Load test editor](_img/run-performance-tests-app-before-release/web-perf-test-in-load-test-editor.png)
 
 <a name="runanalyze"></a>
 ## Run and analyze your load test
 
-You can run your load test locally, or you can run it in the cloud using Visual Studio Team Services. 
-All you need is a [Visual Studio Team Services account](https://www.visualstudio.com/docs/setup-admin/team-services/sign-up-for-visual-studio-team-services). 
+You can run your load test locally, or you can run it in the cloud using VSTS. 
+All you need is a [VSTS account](../accounts/set-up-vs.md). 
 If you run the load test in the cloud, you can generate more load without setting up test controllers and test agents. 
 To learn how easy it is to use Cloud-based Load Testing to run your load tests, go 
 [here](getting-started-with-performance-testing.md).
@@ -154,7 +150,7 @@ Follow these steps to run your load test on your local machine.
 
 1. Fix any performance issues in your application's code and rerun the test.
 
-<a name="improvetests"</a>
+<a name="improvetests"></a>
 ## Improve your load tests
 
 You can improve your test to better simulate 
@@ -164,12 +160,7 @@ and [run settings properties](https://msdn.microsoft.com/library/ff406976%28v=vs
 
 ![Percentage of new users property](_img/run-performance-tests-app-before-release/percentage-new-users.png)
 
-## See also
+## Next step
 
-* [Q &amp; A for load testing](reference-qa.md#qavisualstudio)
-* [Run Apache JMeter load tests](get-started-jmeter-test.md) 
-* [Add app performance data](get-performance-data-for-load-tests.md)
-* [Record and replay tests](record-and-replay-cloud-load-tests.md)
-* [Profile live Azure web apps with Application Insights](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-profiler)
-
-[!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
+> [!div class="nextstepaction"]
+> [Run URL-based load tests](get-started-simple-cloud-load-test.md)

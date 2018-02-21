@@ -5,18 +5,18 @@ ms.assetid: c7829273-4d53-412c-99d6-4944780ebc74
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfvc
 ms.manager: douge
-ms.author: routlaw
+ms.author: sdanie
 ms.date: 08/10/2016
 ---
 
 # Configure Check-In Notes
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Administrators of Team Foundation version control can add, configure, and remove check-in notes. Check-in notes settings are set in the Source Control Settings window. For more information about check-ins, see [Check In Pending Changes](https://msdn.microsoft.com/library/ms181411).
 
 **Required Permissions**  
-To complete this procedure, you must have the **Edit project-level information** permission set to **Allow**. For more information, see [Team Foundation Server Permissions](../setup-admin/permissions.md).
+To complete this procedure, you must have the **Edit project-level information** permission set to **Allow**. For more information, see [Permissions and groups reference](../security/permissions.md).
 
 ### To add check-in notes
 

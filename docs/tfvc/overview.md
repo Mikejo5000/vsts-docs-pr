@@ -4,20 +4,21 @@ description: Use Team Foundation Version Control
 ms.assetid: 1d629052-c65d-4c5d-81eb-eaa4413fe285
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfvc
+ms.topic: get-started-article
 ms.manager: douge
 ms.author: sdanie
-ms.date: 05/12/2017
+ms.date: 08/29/2017
 ---
 
 # Use Team Foundation Version Control
 
-**Team Services | TFS 2017 | TFS 2015 | Visual Studio 2017, 2015, and 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Whether your software project is large or small, using version control as soon as possible is a good idea. 
 Version control systems are software that help you track changes you make in your code over time. As you edit your code, you tell the version control system to take a snapshot of your files. 
 The version control system saves that snapshot permanently so you can recall it later if you need it.
 
-Visual Studio Team Services and TFS provide two models of version control: [Git](../git/overview.md), which is distributed version control, and [Team Foundation Version Control (TFVC)](#team-foundation-version-control), which is centralized version control. This article provides an overview and a starting point for using Team Foundation Version Control. If you're deciding which type of Team Services/TFS version control to use, see [Choosing the right version control for your project](comparison-git-tfvc.md).
+VSTS and TFS provide two models of version control: [Git](../git/overview.md), which is distributed version control, and [Team Foundation Version Control (TFVC)](#team-foundation-version-control), which is centralized version control. This article provides an overview and a starting point for using Team Foundation Version Control. If you're deciding which type of VSTS/TFS version control to use, see [Choosing the right version control for your project](comparison-git-tfvc.md).
 
 ## Why use version control?
 
@@ -37,7 +38,7 @@ There are plenty of things that can take up your time as a developer: reproducin
 
 Team Foundation Version Control (TFVC) is a centralized version control system. Typically, team members have only one version of each file on their dev machines. Historical data is maintained only on the server. Branches are path-based and created on the server.
 
-TFVC lets you apply [granular permissions](../setup-admin/permissions.md) and restrict access down to a file level. Because your team checks in all their work into your Team Foundation server, you can easily audit changes and identify which user checked in a [changeset](find-view-changesets.md). By using [compare](compare-files.md) and [annotate](view-file-changes-using-annotate.md) you can identify the exact changes that they made.
+TFVC lets you apply [granular permissions](../security/permissions.md) and restrict access down to a file level. Because your team checks in all their work into your Team Foundation server, you can easily audit changes and identify which user checked in a [changeset](find-view-changesets.md). By using [compare](compare-files.md) and [annotate](view-file-changes-using-annotate.md) you can identify the exact changes that they made.
 
 ## What do you want to do?
 
@@ -95,7 +96,7 @@ TFVC lets you apply [granular permissions](../setup-admin/permissions.md) and re
 
 - [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md)     
 
-- [Learn about TFVC permissions](../setup-admin/permissions.md#tfvc)    
+- [Learn about TFVC permissions](../security/permissions.md#tfvc)    
 
 We are not currently republishing the following sections. However, you can read the Visual Studio 2010 version of this guidance.
 

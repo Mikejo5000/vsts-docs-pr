@@ -2,11 +2,11 @@
 title: Test with unified agents and phases
 description: Manual and exploratory testing. Test with unified agents and phases in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-continuous
+ms.technology: vs-devops-build
 ms.assetid: CAA3900B-1939-41B8-871B-FF0E99DC3E5A
 ms.manager: douge
 ms.author: ahomer
-ms.date: 08/12/2016
+ms.date: 01/18/2018
 ---
 
 # Testing with unified agents and phases
@@ -19,6 +19,11 @@ The new version of the task also integrates intelligently with
 [task phases](../../build-release/concepts/process/phases.md).
 This topic explores how you can use this task, and explains how
 it works in a range of scenarios.  
+
+For more information about the tasks see:
+
+* [Visual Studio Test version 1](https://github.com/Microsoft/vsts-tasks/blob/releases/m109/Tasks/VsTest/README.md)
+* [Visual Studio Test version 2](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTest/README.md)
 
 You select the [specific version](../../build-release/concepts/process/tasks.md#task-versions)
 of a task you want to use in the **Version** list at the top
@@ -47,7 +52,7 @@ a selected property setting.
 
 You can add [different types of phases](../../build-release/concepts/process/phases.md)
 to a release definition. The properties of these phases include settings for
-**Run on multiple agents in parallel**.
+**Parallelism**.
 
 ![Selecting a mode to run tasks on multiple agents in parallel](_img/test-with-unified-agent-and-phases/agent-phase-settings.png)
 
@@ -70,7 +75,7 @@ environment configured as follows:
 
 ![Configuring tasks for no parallelism to deploy and test an Azure web app](_img/test-with-unified-agent-and-phases/single-phase-env.png)
 
-### Multi-configuration
+### Multiple executions
 
 This mode is driven by 'multipliers', in much the same way as a multi-configuration Build or Release.
 You define the multipliers as variables. Based on the values for these variables, the various configurations
@@ -81,35 +86,35 @@ The same logic applies to testing. For example, you could deploy a web app to Az
 cross-browser tests on IE and Firefox by configuring an environment to use two phases - one
 for the deploy phase and one for the test phase: 
 
-![Configuring the release definition with two phases for multi-configuration testing](_img/test-with-unified-agent-and-phases/multiconfig.png)
+![Configuring the release definition with two phases for multiple executions testing](_img/test-with-unified-agent-and-phases/multiconfig.png)
 
-The test phase is set up as a multi-configuration process using a variable named **Browser**, which
+The test phase is set up as a multiple executions process using a variable named **Browser**, which
 has the values `IE` and `Firefox`. The phase will run twice using these two configurations - one
 agent is assigned the value `IE` for its **Browser** variable, and one with the value `Firefox`.
 
-![Specifying the multipliers for multi-configuration testing](_img/test-with-unified-agent-and-phases/multipliers1.png)
+![Specifying the multipliers for multiple executions testing](_img/test-with-unified-agent-and-phases/multipliers1.png)
 
-![Defining the multiplier variable for multi-configuration testing](_img/test-with-unified-agent-and-phases/multipliers2.png)
+![Defining the multiplier variable for multiple executions testing](_img/test-with-unified-agent-and-phases/multipliers2.png)
 
 In the tasks for the environment, the **Browser** value could be used to instantiate the appropriate
 browser for the tests. For example, you might pass the values as **Test Run Parameters** and access them
 using **TestContext** in the test code. You could also use the values to provide appropriate titles
 for your test runs so that, if a test fails in a particular configuration, you can easily tell which run it came from.
 
-![Configuring the test task parameters for multi-configuration testing](_img/test-with-unified-agent-and-phases/multiconfig-task-settings.png)
+![Configuring the test task parameters for multiple executions testing](_img/test-with-unified-agent-and-phases/multiconfig-task-settings.png)
 
 The execution results might look like this:
 
-![Results in release for multi-configuration testing](_img/test-with-unified-agent-and-phases/multiconfig-logs.png)
+![Results in release for multiple executions testing](_img/test-with-unified-agent-and-phases/multiconfig-logs.png)
 
-### Multi-agent
+### Multiple agents
 
 Multiple agents will be allocated to the phase. You specify the number of agents to be allocated
 from the pool, and the set of tasks in that phase will be distributed across all these agents.
 
-![Configuring the number of agents for multi-agent parallelism](_img/test-with-unified-agent-and-phases/multi-agent.png)
+![Configuring the number of agents for multiple agents parallelism](_img/test-with-unified-agent-and-phases/multi-agent.png)
 
-In this mode, the Visual Studio Test task runs in a special way. It recognizes that its a multi-agent
+In this mode, the Visual Studio Test task runs in a special way. It recognizes that its a multiple agents
 phase, and runs tests in a distributed manner across all the allocated agents. Because other tasks run
 across all agents, any pre- and post-test steps also run equally on all the agents. Therefore, all the
 agents are prepared and cleaned up in a consistent manner.
@@ -118,7 +123,7 @@ are busy with another release or build, the phase can still start with the avail
 that match the demand, and test execution starts. As additional agents become available, they can pick
 up any remaining tests that have not yet run.
 
-For example, the log from a multi-agent test run, where some tests have failed, might look like this:
+For example, the log from a multiple agents test run, where some tests have failed, might look like this:
 
 ![Results in release when running three agents in parallel](_img/test-with-unified-agent-and-phases/multi-agent-test-run.png)
 
@@ -126,14 +131,14 @@ Artifacts are automatically downloaded when the phase starts, so the test assemb
 are already located on the agent, and no "copy files" task is required. So, to publish an Azure web app
 and run a large number of tests with fast test execution, you could model the environment as two phases -
 one being the deploy phase (which runs on a single agent because you don't want multiple agents to deploy
-the same app concurrently), and the other a test phase that uses multi-agent mode to achieve test distribution.
+the same app concurrently), and the other a test phase that uses multiple agents mode to achieve test distribution.
 
 This also means that you can use different agent queues for the two phases, allowing you to manage agents
 for different purposes separately if required.
 
 ![Configuring the release definition with two phases for distributed tests](_img/test-with-unified-agent-and-phases/distributed-tests.png)
 
-## Q & A
+## FAQs
 
 <a name="use-build"></a>
 ### Q: How do I do this with Build? 
@@ -145,7 +150,7 @@ for different purposes separately if required.
 
 **A**: No, the version 1 task cannot be used for test distribution. On the single agent (the default,
 no parallelism) setting, the task will run in the same way as on the previous test agent. In the
-multi-configuration and multi-agent modes, it is replicated on the agents, in the same way as all other tasks.
+multiple executions and multiple agents modes, it is replicated on the agents, in the same way as all other tasks.
 
 <a name="run-ui-tests"></a>
 ### Q: What is required to run UI tests?
@@ -174,17 +179,17 @@ to ensure the appropriate set of agents that can run UI tests are used.
 See [Build and Release agent capabilities](../../build-release/concepts/agents/agents.md#capabilities).
 
 <a name="multi-config-mode"></a>
-### Q: In multi-configuration mode, do I get distribution of tests as well?
+### Q: In multiple executions mode, do I get distribution of tests as well?
 
-**A**: No, multi-configuration mode assigns only one agent per configuration.
+**A**: No, multiple executions mode assigns only one agent per configuration.
 
 <a name="map-multi-config"></a>
-### Q: How do I map the configuration in multi-configuration mode to my Test Configurations using tcm.exe?
+### Q: How do I map the configuration in multiple executions mode to my Test Configurations using tcm.exe?
 
 **A**: Currently this is not possible.
 
 <a name="other-multi-config"></a>
-### Q: How else can I use multi-configuration mode?
+### Q: How else can I use multiple executions mode?
 
 **A**: This mode can be used whenever you need multiple agents to execute jobs in parallel.
 For more examples, see [Parallel execution using agent phases](../../build-release/concepts/process/phases.md#parallelexec).
@@ -194,7 +199,7 @@ For more examples, see [Parallel execution using agent phases](../../build-relea
 
 **A**: No, the Run Functional Tests (RFT) task has not changed. If you are using this task
 you _do_ need the **Deploy Test Agent** task step. Note that, because tasks are replicated
-in the multi-agent and multi-configuration mode, using the Run Functional Tests task in this
+in the multiple agents and multiple executions mode, using the Run Functional Tests task in this
 mode will lead to undesirable effects.
 
 <a name="install-vs"></a>
@@ -207,8 +212,8 @@ of agents for testing purposes.
 <a name="other-test-runner"></a>
 ### Q: I am using my own test runner (not the Visual Studio Test task) in the pipeline. What happens to it?
 
-**A**: In the multi-agent and multi-configuration mode, the task will be replicated on each
-of the agents. You can use the multi-configuration mode to partition your tests on different
+**A**: In the multiple agents and multiple executions mode, the task will be replicated on each
+of the agents. You can use the multiple executions mode to partition your tests on different
 configuration using the configuration variable. For example, if you have a configuration variable
 named **Platform** that has values `x86` and `x64`, you can run the two sets of tests on two
 agents in parallel by referring to your test assemblies using `**\$(Platform)\*test*.dll`
@@ -228,6 +233,8 @@ phase, the tests will be replicated to each of the machines.
 * [Associate automated tests with test cases](associate-automated-test-with-test-case.md)
 * [Associate automated test results with requirements](associate-automated-results-with-requirements.md)
 * [Run automated tests from test plans in the Test hub](run-automated-tests-from-test-hub.md)
+* [Speed up testing with Test Impact Analysis](test-impact-analysis.md)
+* [Run tests in parallel](run-tests-in-parallel.md)
 * [Continuous testing scenarios and capabilities](index.md)
 
 [!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 

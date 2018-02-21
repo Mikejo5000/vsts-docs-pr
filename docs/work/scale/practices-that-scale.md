@@ -1,17 +1,17 @@
 ---
-title: Practices that scale  | Team Services & TFS
+title: Practices that scale  | VSTS & TFS
 description: Scaling Agile recommended practices for working in Visual Studio Team Services (VSTS) or Team Foundation Server     
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 46F7A310-B6BD-46FA-88E2-91521BEE3BC4  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 03/28/2017
+ms.date: 08/02/2017
 ---
 
 #Scaling Agile - Practices that scale  
 
-[!INCLUDE [temp](../_shared/dev15-version-header.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 Enterprise organizations adopt Agile practices for a number of reasons. Prime among these include:  
 
@@ -42,7 +42,7 @@ By adopting a shared cadence and set of periodic communications, you create a co
 Engaging customers throughout your product lifecycle is a primary Agile principle. Empower each team to interact directly with customers on the feature sets they own. 
 
 - **Continuous feedback**: Build in customer feedback loops. These can take many forms: 
-	- **Customer voice**: Make it easy for customers to give feedback, add ideas, and vote on next generation features. This is often done through a dedicated website similar to [Visual studio User Voice](https://visualstudio.uservoice.com/forums/121579-visual-studio). 
+	- **Customer voice**: Make it easy for customers to give feedback, add ideas, and vote on next generation features. This is often done through a dedicated website similar to [Visual studio User Voice](https://visualstudio.uservoice.com/forums/330519-team-services). 
 	- **Product feedback**: In-product feedback buttons are another way to solicit feedback about the product experience or specific features. 
 	- **Customer demos**: Regularly scheduled demos that solicit feedback from your customers can help shape next generation products and keep you on track to build applications your customers want to consume.  
 - **Early adopter programs**: Such programs should be developed with the idea that all teams may want to participate as some point. Early adopters gain access to early versions of working software which they then can provide feedback. Oftentimes, these programs work by turning select [feature flags](#feature-flags) on for an early adopter list. 
@@ -55,16 +55,15 @@ The more insight you and your teams have into the goal, vision, and progress of 
 
 - **Team structure**: No matter how large your organization gets, structuring your organization around small teams of 6 to 9 scales. Create [vertical, autonomous feature teams](agile-culture.md#horizontal-vs-vertical) grouped under portfolio management areas. 
 - **Work breakdown structure**: Breaking down large goals, features, or requirements into smaller ones remains a stable of project management. By breaking down work into similar-sized tasks, teams can make better estimates and identify risks and dependencies.    
-- **Consolidated views**: Use your online tracking tools to aggregate work to gain knowledge across teams. Build dashboards to show progress and trends. 
--**Experience reviews**: These meetings, held before development begins on a feature, are used to educate leadership on scenarios and priorities, collect feedback, set expectations, and surface any cross-team issues about the feature. 
+- **Consolidated views**: Use your online tracking tools to aggregate work to gain knowledge across teams. Build dashboards to show progress and trends.  
+- **Experience reviews**: These meetings, held before development begins on a feature, are used to educate leadership on scenarios and priorities, collect feedback, set expectations, and surface any cross-team issues about the feature. 
 
-##Productive workforce 
->*Agile at scale requires trust at scale, no fear, no politics - [Spotify Training & Development](https://technology1unplugged.wordpress.com/2015/01/25/agile-engineering-and-collaboration-culture-at-spotify/)*     
+## Productive workforce 
 
 Some specific Agile practices that scale well and lead to happier, engaged, and productive employees include:  
 
 - **Embedded leadership**: Empower teams and leaders within the organization to self-organize and self-manage as much as possible. Team autonomy increases organizational agility team effectiveness. Ensure teams have the corporate sponsorship needed to succeed.  
-- **Daily stand-ups**: Or, [Scrum meetings](../scrum/task-board.md#daily-scrum-meetings) help keeps teams focused on what they need to do daily to maximize their ability to meet their sprint commitments. As organizations grow, they should consider staggering these meetings so that cross-team participation can occur as needed.  
+- **Daily stand-ups**: Or, [Scrum meetings](../scrum/best-practices-scrum.md#daily-scrum-meetings) help keeps teams focused on what they need to do daily to maximize their ability to meet their sprint commitments. As organizations grow, they should consider staggering these meetings so that cross-team participation can occur as needed.  
 - **[Scrum of scrums](http://guide.agilealliance.org/guide/scrumofscrums.html)**: Daily standups of members from different Agile teams meet daily to report work completed, next steps, and issues or blocks occurring within their representative teams. 
 - **Team communications**: Provide and encourage teams to share their practices and guidance, which they and other teams can access through the corporate network. Common tools used for this purpose include team wikis, OneNotes, or markdown sites.  
 - **Collaboration**: Encourage informal team-to-team communications as well as collaboration within the team. Institutionalizing practices such as code reviews, design reviews, spec reviews not only increase team collaboration but help develop individual as well as overall corporate competence.  
@@ -74,7 +73,7 @@ Some specific Agile practices that scale well and lead to happier, engaged, and 
 You improve organizational effectiveness by attending to the culture you want to build. Culture changes occur when individuals, teams, and organizations adopt one or more continuous improvement practices. Several scalable Agile practices include: 
 
 - **Retrospectives**: By asking questions such as: “What went well?”, “What should we do differently?”, and “What should we stop doing?” help teams reflect on how they can improve on their processes and practices. Retrospectives help teams surface what is working well and what needs improvement. Retrospectives can be conducted anytime and anywhere. However, institutionalizing certain retrospectives at a regular cadence help institutionalize continuous improvement practices. For example:  
-	- **[Sprint retrospectives](../scrum/sprint-burndown.md#sprint-retrospective-meeting)** can help teams identify areas to improve at a regular cadence.   
+	- **[Sprint retrospectives](../scrum/best-practices-scrum.md#sprint-retrospective-meeting)** can help teams identify areas to improve at a regular cadence.   
 	- **Release retrospectives** can help organizations identify areas to improve communications and internal practices and fuel improvement for the next release.
 	- **Operational reviews**: are typically held monthly and include representatives from a whole value stream. Spanning a portfolio of projects and other initiatives and using objective, quantitative data, design these retrospectives to provoke discussions about the dynamics affecting performance between teams. 
 
@@ -127,5 +126,5 @@ In addition to the above practices, you'll find additional guidance around scali
 
 ###Practices that don't scale
 - **Estimating large initiatives**: Part of waterfall project methods involved estimating resources and schedules. The larger the initiatives, the less likely these estimates were of any value. As projects grow, risks and unforeseen issues and impediments can arise, invalidating many estimates.   
-- **Velocity**: While [team velocity](../../report/guidance/team-velocity.md) can provide a useful metric for gaining insight into how much work each team can complete during a sprint cycle, you can't add team velocities to gain meaningful or useful metrics. Also, using velocity gained from a number of teams to reliably perform long range forecasts is problematic. Teams vary in the way they estimate their work, and those variations increase over time.  
+- **Velocity**: While [team velocity](../../report/dashboards/velocity-chart-data-store.md) can provide a useful metric for gaining insight into how much work each team can complete during a sprint cycle, you can't add team velocities to gain meaningful or useful metrics. Also, using velocity gained from a number of teams to reliably perform long range forecasts is problematic. Teams vary in the way they estimate their work, and those variations increase over time.  
 - **Top-down prescriptive solutions**: One size does not fit all, and one solution typically does not fit all teams. Supporting team autonomy means letting teams find their own solutions. 

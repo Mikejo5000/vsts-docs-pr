@@ -5,13 +5,13 @@ ms.assetid: 457567ff-7da3-4098-b047-bd169bad5a38
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfvc
 ms.manager: douge
-ms.author: routlaw
+ms.author: sdanie
 ms.date: 08/10/2016
 ---
 
 # View where and when changesets have been merged
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Branching your code base can be a useful way to isolate concurrent development efforts and to take snapshots. However, when your team members are working in a branched code base, they may have trouble finding information about which branches have received a particular set of changes and when those changes were merged.
 
@@ -25,7 +25,7 @@ Tracking Changeset window shows branches to which a changeset has merged
 
 **Required Permissions**
 
-To perform these procedures, your **Read** permission must be set to **Allow** for the branches with which you are working. For more information about permissions, see [Pernission reference for Team Foundation Server](../setup-admin/permissions.md).
+To perform these procedures, your **Read** permission must be set to **Allow** for the branches with which you are working. For more information about permissions, see [Permissions and groups reference](../security/permissions.md).
 
 ## View the Tracking Changeset Window
 
@@ -97,7 +97,7 @@ You can get information about when a changeset was merged to one or more branche
 
 **Required Permissions**
 
-To perform these procedures, your **Manage branch object** permission must be set to **Allow**. For more information about permissions, see [Pernission reference for Team Foundation Server](../setup-admin/permissions.md).
+To perform these procedures, your **Manage branch object** permission must be set to **Allow**. For more information about permissions, see [Permissions and groups reference](../security/permissions.md).
 
 ### To display the Timeline View of a changeset
 

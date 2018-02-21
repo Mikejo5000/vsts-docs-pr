@@ -2,16 +2,17 @@
 title: Build Project tables | TFS
 description: Query for data about the files and projects that were built and information about those files  
 ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
-ms.topic: reference
+ms.technology: vs-devops-reporting
 ms.assetid: 3d97e0e9-84ac-4662-84fe-36a38eb463b7
 ms.manager: douge
 ms.author: kaelli
-ms.date: 03/09/2017
+ms.date: 10/17/17
 ---
+
+
 # Build Project tables 
 
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 You can query for data about the files and projects that were built and information about those files by using FactBuildProjects and the associated dimensions. Records contain the static analysis and compiler warnings and errors for each file that was built. If it was built for more than one platform or flavor, you can find records for each platform and flavor.  
   

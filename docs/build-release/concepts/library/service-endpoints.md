@@ -1,18 +1,17 @@
 ---
-title: Service endpoints in Visual Studio Team Services and Team Foundation Server
-description: Understand Service endpoints in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+title: Service endpoints in VSTS and Team Foundation Server
+description: Understand Service endpoints in Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
 ms.assetid: A40435C0-2053-4D99-9A75-CCB97FBB15D2
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-release
-ms.topic: get-started-article
+ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
-ms.date: 10/20/2016
+ms.date: 01/19/2018
 ---
 
 # Service endpoints for Build and Release
 
-**TFS 2015 | TFS 2017 | Team Services**
+**VSTS | TFS 2018 | TFS 2017 | TFS 2015**
 
 You will typically need to connect to external and remote services to execute tasks
 for a build or deployment. For example, you may need to connect to your Microsoft Azure
@@ -23,19 +22,19 @@ Watch this video on Channel 9 to learn about service endpoints.
 
 <iframe width="640" height="360" src="//channel9.msdn.com/Series/DevOps-Release-Management/Service-Endpoints-with-Visual-Studio-Team-Services/player" frameborder="0" allowfullscreen="true"></iframe><p />
 
-You can define endpoints in Team Services or Team Foundation Server that are available for use in all
+You can define endpoints in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS) that are available for use in all
 your tasks. For example, you can create an endpoint for your Azure subscription
 and use this endpoint name in an Azure Web Site Deployment task in a release definition.
 
 You define and manage service endpoints from the Admin settings of your team project.
-* Team Services: `https://{account}.visualstudio.com/{teamproject}/_admin/_services`
+* VSTS: `https://{account}.visualstudio.com/{teamproject}/_admin/_services`
 * TFS: `https://{tfsserver}/{collection}/{teamproject}/_admin/_services`
 
 Service endpoints are created at project scope. An endpoint created in one project is not visible in another team project.
 
 ## Common endpoint types
 
-Team Services and TFS support a variety of endpoint types by default. Some of these are described below:
+VSTS and TFS support a variety of endpoint types by default. Some of these are described below:
 
 * [Azure Classic service endpoint](#sep-azure-classic)
 * [Azure Resource Manager service endpoint](#sep-azure-rm)
@@ -55,8 +54,8 @@ Team Services and TFS support a variety of endpoint types by default. Some of th
 * [Service Fabric service endpoint](#sep-fabric)
 * [SSH service endpoint](#sep-ssh)
 * [Subversion service endpoint](#sep-subversion)
-* [Team Foundation Server / Team Services service endpoint](#sep-tfsts)
-* [Visual Studio Mobile Center service endpoint](#sep-vsmobile)
+* [Team Foundation Server / VSTS service endpoint](#sep-tfsts)
+* [Visual Studio Mobile Center (App Center) service endpoint](#sep-vsmobile)
 
 After you enter the parameters when creating a service endpoint, validate the
 connection. The validation link uses a REST call to the external service with
@@ -78,7 +77,7 @@ using Azure credentials or an Azure management certificate.
 | Password | Required for Credentials authentication. Password for the user specified above. |
 | Management Certificate | Required for Certificate based authentication. Copy the value of the management certificate key from your [publish settings XML file](https://go.microsoft.com/fwlink/?LinkID=312990) or the Azure portal. |
 
->If your subscription is defined in an [Azure Government Cloud](government-cloud.md), ensure your application meets the relevant compliance requirements before you configure a service endpoint.
+> If your subscription is defined in an [Azure Government Cloud](government-cloud.md), ensure your application meets the relevant compliance requirements before you configure a service endpoint.
 
 <h3 id="sep-azure-rm">Azure Resource Manager service endpoint</h3>
 
@@ -105,10 +104,12 @@ You must use this version of the dialog when connecting to an [Azure Government 
 | Environment | Required. Select **Azure Cloud** or one of the pre-defined [Azure Government Clouds](government-cloud.md) where your subscription is defined. |
 | Subscription ID | Required only if you want to use an existing service principal. The GUID-like identifier for your Azure subscription (not the subscription name). [More information](#sep-azure-rm-existingsp). |
 | Subscription Name | Required only if you want to use an existing service principal. The name of your Microsoft Azure subscription (account). [More information](#sep-azure-rm-existingsp). |
-| Service Principal ID | Required only if you want to use an existing service principal. The Azure Active Directory client ID of the account. [More information](#sep-azure-rm-existingsp). |
-| Service Principal Key | Required only if you want to use an existing service principal. The Azure Active Directory client key of the account. [More information](#sep-azure-rm-existingsp). |
+| Service Principal ID | Required only if you want to use an existing service principal. The Azure Active Directory client application ID for the account. [More information](#sep-azure-rm-existingsp). |
+| Service Principal Key | Required only if you want to use an existing service principal. The Azure Active Directory client authentication key for the account. [More information](#sep-azure-rm-existingsp). |
 | Tenant ID | Required only if you want to use an existing service principal. The ID of the client tenant in Azure Active Directory. [More information](#sep-azure-rm-existingsp). |
 <p />
+
+See [Use portal to create an Azure Active Directory application and service principal that can access resources](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-create-service-principal-portal).
 
 **Restricting access rights**
 
@@ -126,12 +127,12 @@ a service principal's access rights by using Role-Based Access Control
 <a name="sep-azure-rm-conditions"></a>
 When you start to create the endpoint, the code interrogates Azure
 for subscriptions that are valid for the credentials you are currently
-signed into Team Services or TFS with. This applies to both Microsoft
+signed into VSTS or TFS with. This applies to both Microsoft
 accounts and School or Work accounts. It displays a list of these for
 you to select the one you want to use.
 
 If no subscriptions are shown, or subscriptions other than the one you
-want to use, you must sign out of Team Services or TFS and sign in again
+want to use, you must sign out of VSTS or TFS and sign in again
 using the appropriate account credentials. See also
 [Troubleshoot Azure Resource Manager service endpoints](../../actions/azure-rm-endpoint.md).
 
@@ -141,12 +142,12 @@ service principal that is assigned the **Contributor** role and so has
 access to all resources within the subscription.
 You can edit this service principal in the Azure portal,
 **Subscriptions | Users | Roles** section. For more details, see
-[Team Services: Access with Azure Active Directory (Azure AD)](https://www.visualstudio.com/en-us/docs/setup-admin/team-services/manage-organization-access-for-your-account-vs).
+[Azure Active Directory for developers](https://docs.microsoft.com/en-gb/azure/active-directory/develop/active-directory-developers-guide).
 
 If you want to use an existing service principal instead of creating
 a new one:
 
-1. Download and run [this PowerShell script](https://github.com/Microsoft/vsts-rm-documentation/blob/master/Azure/SPNCreation.ps1) in an Azure PowerShell window.
+1. Download and run [this PowerShell script](https://github.com/Microsoft/vsts-rm-extensions/blob/master/TaskModules/powershell/Azure/SPNCreation.ps1) in an Azure PowerShell window.
    When prompted, enter your subscription name, password, role (optional), and the type of cloud such as Azure Cloud (the default) or an Azure Government Cloud.
 1. Switch from the simplified version of the dialog to the full version using the link in the dialog.
 
@@ -193,7 +194,7 @@ Defines and secures a connection to a Microsoft Azure Service Fabric cluster.
 
 You can use the following PowerShell script to obtain a Base64-encoded representation of a certificate:
 
-```
+```powershell
 [System.Convert]::ToBase64String([System.IO.File]::ReadAllBytes("path-to-certificate-file\certificate.pfx"))
 ```
 
@@ -281,7 +282,8 @@ Note that there is a specific endpoint for [other Git servers](#sep-extgit).
 | Connection name | Required. The name you will use to refer to this endpoint in task properties. This is not the name of your GitHub account or subscription. |
 <p />
 
-**Notes**: If you select **Grant authorization** for the **Choose authorization** option,
+> [!NOTE]
+> If you select **Grant authorization** for the **Choose authorization** option,
 the dialog shows an **Authorize** button that opens the GitHub login page.
 If you select **Personal access token** you must obtain a suitable token
 and paste it into the **Token** textbox. The dialog shows the recommended scopes
@@ -290,7 +292,7 @@ for the token: **repo, user, admin:repo_hook**. See
 on GitHub for information about obtaining an access token. Then register your
 GitHub account in your profile:
 
-* Open your profile from your account name at the right of the Visual Studio Team Services page heading.
+* Open your profile from your account name at the right of the VSTS page heading.
 * At the top of the left column, under **DETAILS**, choose **Security**.
 * In the **Security** tab, in the right column, choose **Personal access tokens**.
 * Choose the **Add** link and enter the information required to create the token.
@@ -309,7 +311,7 @@ Defines a connection to the Jenkins service.
 | User name | Required. The username to connect to the service. |
 | Password | Required. The password for the specified username. |
 
-Also see [Visual Studio Team Services Integration with Jenkins](https://blogs.msdn.microsoft.com/visualstudioalm/2017/04/25/vsts-visual-studio-team-services-integration-with-jenkins/) 
+Also see [VSTS Integration with Jenkins](https://blogs.msdn.microsoft.com/visualstudioalm/2017/04/25/vsts-visual-studio-team-services-integration-with-jenkins/) 
 and [Artifact sources](../definitions/release/artifacts.md#jenkinssource).
 
 <h3 id="sep-kuber">Kubernetes service endpoint</h3>
@@ -332,7 +334,7 @@ Defines and secures a connection to an npm server.
 | Registry URL | Required. The URL of the npm server. |
 | Username | Required when connection type is **Basic authentication**. The username for authentication. |
 | Password | Required when connection type is **Basic authentication**. The password for the username. |
-| Personal Access Token | Required when connection type is **External VSTS**. The token to use to authenticate with the service. [Learn more](../../../setup-admin/team-services/use-personal-access-tokens-to-authenticate.md). |
+| Personal Access Token | Required when connection type is **External VSTS**. The token to use to authenticate with the service. [Learn more](../../../accounts/use-personal-access-tokens-to-authenticate.md). |
 
 <h3 id="sep-nuget">NuGet service endpoint</h3>
 
@@ -343,7 +345,7 @@ Defines and secures a connection to a NuGet server.
 | Connection Name | Required. The name you will use to refer to this endpoint in task properties. This is not the name of your account or subscription with the service. |
 | Feed URL | Required. The URL of the NuGet server. |
 | ApiKey | Required when connection type is **ApiKey**. The authentication key. |
-| Personal Access Token | Required when connection type is **External VSTS**. The token to use to authenticate with the service. [Learn more](../../../setup-admin/team-services/use-personal-access-tokens-to-authenticate.md). |
+| Personal Access Token | Required when connection type is **External VSTS**. The token to use to authenticate with the service. [Learn more](../../../accounts/use-personal-access-tokens-to-authenticate.md). |
 | Username | Required when connection type is **Basic authentication**. The username for authentication. |
 | Password | Required when connection type is **Basic authentication**. The password for the username. |
 
@@ -376,8 +378,8 @@ Defines and secures a connection to a remote host using Secure Shell (SSH).
 | Password or passphrase | The password or passphrase for the specified username if using a keypair as credentials. |
 | Private key | The entire contents of the private key file if using this type of authentication. |
 
-Also see [SSH task](../../steps/deploy/ssh.md)
-and [Copy Files Over SSH](../../steps/deploy/copy-files-over-ssh.md).
+Also see [SSH task](../../tasks/deploy/ssh.md)
+and [Copy Files Over SSH](../../tasks/deploy/copy-files-over-ssh.md).
 
 <h3 id="sep-subversion">Subversion service endpoint</h3>
 
@@ -392,26 +394,26 @@ Defines and secures a connection to the Subversion repository.
 | User name | Required. The username to connect to the service. |
 | Password | Required. The password for the specified username. |
 
-<h3 id="sep-tfsts">Team Foundation Server / Team Services service endpoint</h3>
+<h3 id="sep-tfsts">Team Foundation Server / VSTS service endpoint</h3>
 
-Defines and secures a connection to another Team Foundation Server or Team Services account.
+Defines and secures a connection to another TFS or VSTS account.
 
 | Parameter | Description |
 | --------- | ----------- |
 | (authentication) | Select **Basic** or **Token Based** authentication. |
 | Connection Name | Required. The name you will use to refer to this endpoint in task properties. This is not the name of your account or subscription with the service. |
-| Connection URL | Required. The URL of the Team Foundation Server or Team Services instance. |
+| Connection URL | Required. The URL of the TFS or VSTS instance. |
 | User name | Required for Basic authentication. The username to connect to the service. |
 | Password | Required for Basic authentication. The password for the specified username. |
-| Personal Access Token | Required for Token Based authentication (TFS 2017 and Team Services only). The token to use to authenticate with the service. [Learn more](../../../setup-admin/team-services/use-personal-access-tokens-to-authenticate.md). |
+| Personal Access Token | Required for Token Based authentication (TFS 2017 and newer and VSTS only). The token to use to authenticate with the service. [Learn more](../../../accounts/use-personal-access-tokens-to-authenticate.md). |
 
 Use the **Verify connection** link to validate your connection information.
 
-See also [Authenticate access with personal access tokens for Team Services and TFS](../../../setup-admin/team-services/use-personal-access-tokens-to-authenticate.md).
+See also [Authenticate access with personal access tokens for VSTS and TFS](../../../accounts/use-personal-access-tokens-to-authenticate.md).
 
-<h3 id="sep-vsmobile">Visual Studio Mobile Center service endpoint</h3>
+<h3 id="sep-vsmobile">Visual Studio Mobile Center (App Center) service endpoint</h3>
 
-Defines and secures a connection to Visual Studio Mobile Center.
+Defines and secures a connection to Visual Studio App Center.
 
 | Parameter | Description |
 | --------- | ----------- |
@@ -420,16 +422,16 @@ Defines and secures a connection to Visual Studio Mobile Center.
 
 ## Extensions for other endpoints
 
-Other service endpoint types and tasks can be installed in Team Services
+Other service endpoint types and tasks can be installed in VSTS
 and Team Foundation Server as extensions. Some examples of service endpoints currently
 available through extensions are:
 
 * [TFS artifacts for Release Management](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.vss-services-externaltfs).
-  Deploy on-premises TFS builds with Team Services
+  Deploy on-premises TFS builds with VSTS
   Release Management through a TFS service endpoint
   connection and the **Team Build (external)** artifact,
   even when the TFS machine is not reachable directly
-  from Team Services. For more information, see
+  from VSTS. For more information, see
   [External TFS](../definitions/release/artifacts.md#onpremtfssource) and
   [this blog post](https://blogs.msdn.microsoft.com/visualstudioalm/2016/04/05/deploy-artifacts-from-onprem-tfs-server-with-release-management-service/).
 
@@ -452,7 +454,7 @@ available through extensions are:
   start, stop, or snapshot VMware virtual machines.
 
 For information about creating your own custom extensions, see
-[Overview of extensions for Visual Studio Team Services](../../../integrate/extensions/overview.md).
+[Overview of extensions for VSTS](../../../integrate/index.md).
 
 <h2 id="security">Endpoint security</h2>
 
@@ -463,6 +465,9 @@ You can control who can define new service endpoints in a library, and who can u
 | User | Members of this role can use the endpoint when authoring build or release definitions. |
 | Administrator | In addition to using the endpoint, members of this role can manage membership of all other roles for the service endpoint. The user that created the service endpoint is automatically added to the Administrator role for that service endpoint.
 
-A special group called **Endpoint administrators** is added to every team project. Members of this group can create new endpoints. By default, project administrators are added as members of this group. This group is also added as an administrator to every endpoint created.
+Two special groups called **Endpoint administrators** and **Endpoint creators** are added to every team project. 
+Members of the Endpoint administrators group can manage all endpoints. By default, project administrators are added as members of this group. This group is also added as an administrator to every endpoint created.
+Members of the Endpoint creators group can create new endpoints. By default, project contributors are added as members of this group. 
+
 
 [!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]

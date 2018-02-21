@@ -1,6 +1,6 @@
 ---
-title: Use the Wait Control | Extensions for Visual Studio Team Services
-description: Use the wait control to display progress message for long running operations in your app for Visual Studio Team Services.
+title: Use the Wait Control | Extensions for VSTS
+description: Use the wait control to display progress message for long running operations in your app for VSTS.
 ms.assetid: 175EDE3B-6989-4485-8FEC-014F6380D44F
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
@@ -16,10 +16,10 @@ This page shows different samples about the wait control.
 **Go to [API Reference](../../reference/client/controls/waitcontrol.md) for more details.**
 
 <a name="basic"></a>
-### Start and end
+## Start and end
 This sample shows basic start and end operations for the wait control. 
 
-``` javascript
+``` typescript
   import Controls = require("VSS/Controls");
   import StatusIndicator = require("VSS/Controls/StatusIndicator");
 
@@ -39,10 +39,10 @@ This sample shows basic start and end operations for the wait control.
   $("#end").click(function() { waitControl.endWait(); });
 ```
 <a name="long-running"></a>
-### Long running operation
+## Long running operation
 This sample shows a cancellable long running operation which simulates 10 steps. This operation can be cancelled at any time using cancel link or ESC key.
 
-``` javascript
+``` typescript
   import Controls = require("VSS/Controls");
   import StatusIndicator = require("VSS/Controls/StatusIndicator");
 

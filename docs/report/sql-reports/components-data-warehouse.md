@@ -1,17 +1,18 @@
 ---
-title: Components of the TFS data warehouse | TFS
+title: Components of the TFS data warehouse 
 description: Understand the components of the Team Foundation Server data warehouse 
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-reporting
-ms.topic: sql-reports
 ms.assetid: 5aafaefc-84c1-4f8d-a716-753f5b74caa0
 manager: douge
 ms.author: kaelli
-ms.date: 03/09/2017
+ms.date: 10/26/17
 ---
+
+
 # Components of the TFS data warehouse
 
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 The Team Foundation reporting warehouse is a traditional data warehouse consisting of a relational database organized in an approximate star schema and a SQL Server Analysis Services cube built on top of the relational database. The following diagram shows the high-level architecture of the Team Foundation data warehouse and the relationships between the operational stores, the data warehouse, and the team reports.  
   
@@ -19,7 +20,7 @@ The Team Foundation reporting warehouse is a traditional data warehouse consisti
   
 <a name="operational_stores"></a> 
 ##  Operational stores  
- Each tool or plug-in in Team Foundation uses a relational database in SQL Server 2008 to store the data used by the tool in its day-to-day operations. This relational database is often referred to as the operational store. The operational stores for Team Foundation include:  
+ Each tool or plug-in in Team Foundation uses a relational database in SQL Server to store the data used by the tool in its day-to-day operations. This relational database is often referred to as the operational store. The operational stores for Team Foundation include:  
   
 -   Common structure databases (Tfs_Configuration)  
   

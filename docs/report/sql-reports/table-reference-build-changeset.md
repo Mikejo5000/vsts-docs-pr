@@ -2,17 +2,16 @@
 title: Build Changeset tables | TFS
 description: Uses FactBuildChangeset to query for data about the changesets.
 ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
-ms.topic: reference
+ms.technology: vs-devops-reporting
 ms.assetid: 66ab6ac3-ff81-4ed7-9535-dd7ce9ebbb37
 ms.manager: douge
 ms.author: kaelli
-ms.date: 03/09/2017
+ms.date: 10/17/17
 ---
 
 # Build Changeset tables
 
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 You can query for data about the changesets that were incorporated in each build by using FactBuildChangeset and the associated dimension tables.  
   

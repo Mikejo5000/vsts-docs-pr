@@ -1,12 +1,12 @@
 ---
-title: Record and replay cloud-based load tests with Visual Studio Team Services
-description: Get app performance data by recording and replaying cloud-based load tests when use Visual Studio Team Services
+title: Record and replay cloud-based load tests with VSTS
+description: Get app performance data by recording and replaying cloud-based load tests when use VSTS
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-performance
 ms.assetid: 4D07F0F0-01FE-4BC7-A338-599D54E81134
 ms.manager: douge
 ms.author: ahomer
-ms.date: 08/12/2016
+ms.date: 01/18/2018
 ---
 
 # Record and replay cloud-based load tests
@@ -14,28 +14,22 @@ ms.date: 08/12/2016
 [!INCLUDE [version-header-ts](_shared/version-header-ts.md)]
 
 You can record and then replay cloud-based load tests on your web app or website directly
-using an HTTP Archive file and Visual Studio Team Services.
+using an HTTP Archive file and Visual Studio Team Services (VSTS).
 
 Before you start:
 
-<!-- You will need a [Visual Studio Enterprise subscription](https://www.visualstudio.com/products/visual-studio-enterprise-vs) (monthly, annual, or MSDN) to run cloud-based load tests. -->
-
-* This feature is currently a preview version. 
-  During the preview period it is available to all users except 
-  Stakeholders. You can use your monthly free 20,000 
-  virtual user minutes (VUM) allowance to try it. 
-  If you want to use load testing beyond this, you can
-  [set up billing](https://www.visualstudio.com/docs/setup-admin/team-services/set-up-billing-for-your-account-vs)
-  for your Team Services account.
-
-* [Create your Visual Studio Team Services account](https://www.visualstudio.com/products/visual-studio-team-services-vs), 
+* [Create a VSTS account](https://www.visualstudio.com/products/visual-studio-team-services-vs), 
   if you don't have one already. 
+
+* You can use your monthly free 20,000 virtual user minutes (VUM) allowance to try it. 
+  If you want to use load testing beyond this, you can
+  [set up billing](../billing/set-up-billing-for-your-account-vs.md) for your VSTS account.
 
 ## About HTTP Archive testing
 
 If you have used cloud-based load testing before, you may be 
 familiar with the ability to get performance information on your
-app when under load by using the Visual Studio Team Services web 
+app when under load by using the VSTS web 
 portal. It's a great way to:
 
 * Quickly run a URL-based load test for your app; you just need to enter the app URL.
@@ -129,10 +123,10 @@ using your browser.
  
 ## Create a load test using the HTTP Archive file
 
-Follow these steps to create a load test in the Team Services
+Follow these steps to create a load test in the VSTS
 web portal using an HTTP Archive (**.har**) file.
 
-1. Sign in to your Visual Studio Team Services account (```https://{youraccount}.visualstudio.com```).
+1. Sign in to your VSTS account (**https://**your-account-name**.visualstudio.com**).
 
 1. Go to the **Load Test** hub, open the **+ New**
    menu and choose **HTTP Archive based test**.
@@ -186,7 +180,7 @@ web portal using an HTTP Archive (**.har**) file.
    ![The test results](_img/record-and-replay-cloud-load-tests/07e-har-import.png)
 
    For more information about the results and reports, see 
-   [URL-based load testing with Visual Studio Team Services](get-started-simple-cloud-load-test.md#viewresults).
+   [URL-based load testing with VSTS](get-started-simple-cloud-load-test.md#viewresults).
 
 <a name="troubleshooting"></a>
 ## Troubleshooting
@@ -246,11 +240,11 @@ has a detailed example of how dynamic parameters can be identified by inspecting
 
 ## See also
 
-* [Q &amp; A for load testing](reference-qa.md#recordreplay)
+* [FAQs for load testing](reference-qa.md#recordreplay)
 * [Load test with Visual Studio](getting-started-with-performance-testing.md) 
 * [Load test with Azure portal](app-service-web-app-performance-test.md) 
 * [Tutorial: Run load tests before release](run-performance-tests-app-before-release.md) 
-* [Run Apache JMeter load tests with Visual Studio Team Services](get-started-jmeter-test.md)
+* [Run Apache JMeter load tests with VSTS](get-started-jmeter-test.md)
 * [Analyze load test results using the Load Test Analyzer](https://msdn.microsoft.com/library/ee923686.aspx)
 
 [!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 

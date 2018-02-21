@@ -1,17 +1,18 @@
 ---
-title: Create a readme for your Git repo | Team Services & TFS
+title: Create a readme for your Git repo | VSTS & TFS
 description: Tips, advice, and suggestions on how to create a great readne file for your Git repo.
 ms.assetid: fcd84ee1-909c-4837-9c39-bf036afe6232
 toc: show
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-git
-ms.topic: get-started-article
+ms.technology: vs-devops-git 
 ms.manager: douge
-ms.author: routlaw
+ms.author: sdanie
 ms.date: 10/18/2016
 ---
 
 # Create a README for your repo
+
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015
 
 Your Git repo should have a readme file so that viewers know what your code does and how they can get started using it. 
 Your readme should speak to the following audiences:
@@ -20,7 +21,7 @@ Your readme should speak to the following audiences:
 - Developers that want to build and test your code. Developers are also users.
 - Contributors that want to submit changes to your code. Contributors are both developers and users.
 
-Write your readme in [Markdown](../reference/markdown-guidance.md) instead of plain text. Markdown makes it easy to format text, include images, and link as needed to additional documentation from your readme.
+Write your readme in [Markdown](../collaborate/markdown-guidance.md) instead of plain text. Markdown makes it easy to format text, include images, and link as needed to additional documentation from your readme.
 
 Here are some great readmes that use this format and speak to all three audiences, for reference and inspiration:
 

@@ -3,16 +3,15 @@ title: Relational warehouse database tables | TFS
 description: Create reports and query for Team Foundation Server (TFS) data 
 ms.prod: visual-studio-tfs-dev14
 ms.technology:  vs-devops-reporting 
-ms.topic: sql-reports
 ms.assetid: 0f398cef-add1-4112-85e8-016108de10b3
 ms.manager: douge
 ms.author: kaelli
-ms.date: 03/03/2017
+ms.date: 10/17/17
 ---
 
 # Table reference for the relational warehouse database
 
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 You can create reports and query for data by using the warehouse database. The data in the warehouse is collected from the TFS operational stores and organized in a set of tables, views, and table-valued functions that are designed for creating reports.  
   
@@ -88,6 +87,4 @@ You can create reports and query for data by using the warehouse database. The d
 |[Work Item Changeset tables](work-item-changeset-tables.md)|Links between work items and changesets.|  
 |[Work Item Test Result tables](work-item-test-result-tables.md)|Links between work items and test results.|  
   
-##Related notes
-- [Agile tools](../../work/overview.md)
-- [Dashboards and reports](../overview.md) 
+ 

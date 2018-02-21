@@ -5,19 +5,19 @@ ms.assetid: 6bfb8318-ee32-4114-b5d1-d7196b1a1855
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfvc
 ms.manager: douge
-ms.author: routlaw
+ms.author: sdanie
 ms.date: 08/10/2016
 ---
 
 # Folderdiff Command
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Use the **folderdiff** command to display and compare a visual representation of the differences between files in two server folders, in a server folder and a local folder, or in two local folders.
 
 **Required Permissions**
 
-To use the **folderdiff** command, you must have the **Read** permission set to **Allow**. For more information, see [Team Foundation Server Permissions](../setup-admin/permissions.md).
+To use the **folderdiff** command, you must have the **Read** permission set to **Allow**. For more information, see [Permissions and groups reference](../security/permissions.md).
 
     tf folderdiff [sourcePath] targetPath [/recursive] [/noprompt] [/collection:TeamProjectCollectionUrl] [/filter:filter] [/filterLocalPathsOnly] [/login:username,[password]] [/view:same,different,sourceOnly,targetOnly]
 

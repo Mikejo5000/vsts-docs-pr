@@ -1,48 +1,39 @@
 ---
-title: Functions available in Power BI Data Connector | Team Services  
-description: Description of functions available from the Power BI Data Connector and the Analytics Service for Visual Studio Team Services
+title: Functions available in Power BI Data Connector 
+titleSuffix: VSTS 
+description: Descriptions of functions available from the Power BI Data Connector and the Analytics Service for VSTS
 ms.assetid: EC735BA2-24C9-4BA3-B35E-2CE9D2F1D7F1
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
+ms.reviewer: stansw
 ms.manager: douge
-ms.author: stansw
-ms.topic: get-started-article 
-ms.date: 01/17/2017
+ms.author: kaelli
+ms.date: 11/13/2017
 ---
 
-# Functions available in Power BI Data Connector
+# Connecting using the VSTS Functions in Power Query
 
-<b>Team Services</b>
+**VSTS**
 
-[!INCLUDE [temp](../_shared/analytics-preview.md)]
+The Data Connector for VSTS includes functions which can be used by query authors. These functions can handle VSTS specific requirements, such as authentication for you. The following functions are provided:
 
-The Data Connector for Team Services contributes functions which can be used by query authors.  For example, VSTS.Feed adds to the functionality of OData.Feed by handling unique requirements of the VSTS OData feed such as authentication.  We strongly recommend using VSTS.Feed and using the latest version of Power BI when possible.
+| Function | Description |
+|-|-|
+| VSTS.Feed | Replacement for Power Query M function [OData.feed](https://msdn.microsoft.com/library/mt260868.aspx). Allows users to easily execute OData queries against VSTS Analytics.  |
+| VSTS.Contents | Deprecated. Please use VSTS.AdvancedContents
+| VSTS.AccountContents | Replacement for Power Query M function [Web.Contents](https://msdn.microsoft.com/library/mt260892.aspx). Intended for more advanced scenarios, VSTS.AccountContents returns the contents downloaded from the URL for the Analytics Service for VSTS as a binary value.  |
 
-
-<table>
-    <tr>
-        <th>Function</th>
-        <th>Description</th>
-    </tr>
-	<tr>
-        <td><a href="#vstsfeed"><code>VSTS.Feed</code></a></td>
-        <td>Allows for users to easily execute OData queries against Analytics in Visual Studio Team Services.</td>
-    </tr>
-    <tr>
-        <td><a href="#vstscontents"><code>VSTS.Contents</code></a></td>
-        <td>Intended for more advanced scenarios, VSTS.Contents returns the contents downloaded from the URL for the Analytics Service for Team Services as a binary value.</td>
-    </tr>
-
-</table>
+<!--We strongly recommend using VSTS.Feed instead of VSTS.Contents and using the latest version of Power BI when possible.-->
 
 ## VSTS.Feed
-Allows for users to easily execute OData queries against Analytics in Visual Studio Team Services.
+Allows for users to easily execute OData queries against Analytics in VSTS.
 
-The `VSTS.Feed` function is similar to the standard `OData.Feed` function in terms of the arguments it accepts and the format of the returned value. For more information, see  [Power Query (M) Formula Reference - OData.Feed](https://msdn.microsoft.com/library/mt260868.aspx).
+The `VSTS.Feed` function has the same arguments, options and return value format as `OData.Feed`. For more information, see  [Power Query (M) Formula Reference - OData.Feed](https://msdn.microsoft.com/library/mt260868.aspx).
 
-> [!TIP]
-> If you are already using `OData.Feed` to access data from Team Services, then just replace it with `VSTS.Feed` to leverage Data Connector authentication.
-> This will also inform Power BI that these requests are referencing the same data source and you'll be able to combine the data without violating the single data source constraints for refreshing data sets in the Power BI.com.
+If you are already using `OData.Feed` to access data from VSTS, you can replace it with `VSTS.Feed` to leverage Data Connector authentication.  
+This will also inform Power BI that these requests are referencing the same data source and you'll be able to combine the data without violating the single data source constraints for refreshing data sets in the PowerBI.com.
+
+'VSTS.Feed' provides a subset of the Arguments and Options available through 'OData.Feed'. The specific limitations are outlined in the table below:
 
 ### Arguments for VSTS.Feed
 
@@ -108,7 +99,7 @@ Use `VSTS.Feed` function to count the number of work items in a project.
 Basic Query:
 ```
 let
-    Source = VSTS.Feed("https://fabrikam-fiber-inc.analytics.visualstudio.com/Fabrikam-Fiber-Git/_odata/"
+    Source = VSTS.Feed("https://fabrikam-fiber-inc.analytics.visualstudio.com/Fabrikam-Fiber-Git/_odata/v1.0-preview/"
         & "WorkItems?$apply=aggregate($count as Count)")
 in
     Source
@@ -117,7 +108,7 @@ in
 Query with Columns Selected:
 ```
 let
-    Source = VSTS.Feed("https://fabrikam-fiber-inc.analytics.visualstudio.com/Fabrikam-Fiber-Git/_odata/"
+    Source = VSTS.Feed("https://fabrikam-fiber-inc.analytics.visualstudio.com/Fabrikam-Fiber-Git/_odata/v1.0-preview/"
         & "WorkItems?$apply=aggregate($count as Count)"),
     #"Removed Other Columns" = Table.SelectColumns(Source,{"Count"})
 in
@@ -133,8 +124,8 @@ Use `VSTS.Feed` function to load a count of User Stories for each Iteration Path
 Basic Query:
 ```
 let
-    #"Source" = VSTS.Feed("https://fabrikam-fiber-inc.analytics.visualstudio.com/Fabrikam-Fiber-Git/_odata/"
-        & "WorkItems?$apply=groupby((Iteration/IterationPath), aggregate(Count with sum as Count))")
+    #"Source" = VSTS.Feed("https://fabrikam-fiber-inc.analytics.visualstudio.com/Fabrikam-Fiber-Git/_odata/v1.0-preview/"
+        & "WorkItems?$apply=groupby((Iteration/IterationPath), aggregate($count as Count))")
 in
     #"Source"
 ```
@@ -142,8 +133,8 @@ in
 Query with Columns Selected:
 ```
 let
-    #"Source" = VSTS.Feed("https://fabrikam-fiber-inc.analytics.visualstudio.com/Fabrikam-Fiber-Git/_odata/"
-        & "WorkItems?$apply=groupby((Iteration/IterationPath), aggregate(Count with sum as Count))"),
+    #"Source" = VSTS.Feed("https://fabrikam-fiber-inc.analytics.visualstudio.com/Fabrikam-Fiber-Git/_odata/v1.0-preview/"
+        & "WorkItems?$apply=groupby((Iteration/IterationPath), aggregate($count as Count))"),
     #"Expanded Iteration" = Table.ExpandRecordColumn(Source, "Iteration", {"IterationPath"}, {"Iteration.IterationPath"}),
     #"Removed Other Columns" = Table.SelectColumns(#"Expanded Iteration",{"Count", "Iteration.IterationPath"})
 in
@@ -159,7 +150,7 @@ Use VSTS.Feed function to load detailed information about bugs.
 Basic Query:
 ```
 let
-    #"Source" = VSTS.Feed("https://fabrikam-fiber-inc.analytics.visualstudio.com/Fabrikam-Fiber-Git/_odata/"
+    #"Source" = VSTS.Feed("https://fabrikam-fiber-inc.analytics.visualstudio.com/Fabrikam-Fiber-Git/_odata/v1.0-preview/"
         & "WorkItems?$select=WorkItemId,State&$filter=WorkItemType eq 'Bug'")
 in
     #"Source"
@@ -167,7 +158,7 @@ in
 Query with Columns Selected:
 ```
 let
-    #"Source" = VSTS.Feed("https://fabrikam-fiber-inc.analytics.visualstudio.com/Fabrikam-Fiber-Git/_odata/"
+    #"Source" = VSTS.Feed("https://fabrikam-fiber-inc.analytics.visualstudio.com/Fabrikam-Fiber-Git/_odata/v1.0-preview/"
         & "WorkItems?$select=WorkItemId,State&$filter=WorkItemType eq 'Bug'"),
     #"Removed Other Columns" = Table.SelectColumns(Source,{"WorkItemId", "State"})
 in
@@ -175,15 +166,17 @@ in
 ```
 
 ## VSTS.Contents
-Advanced function which returns the contents downloaded from the URL for the Analytics Service for Team Services as a binary value.
+VSTS.Contents is being deprecated and will be removed in an upcoming release. Please use VSTS.AccountContents.  
 
-The `VSTS.Contents` function is similar to the standard `Web.Contents` function in terms of the arguments it accepts and the format of the returned value.
-For more information please refer to: [Power Query (M) Formula Reference - Web.Contents](https://msdn.microsoft.com/library/mt260892.aspx).
+## VSTS.AccountContents 
+Advanced function which returns the contents downloaded from the URL for the Analytics Service for VSTS as a binary value.
 
-> [!TIP]
-> If you are already using `Web.Contents` to access data from Team Services (REST API or OData), then just replace it with `VSTS.Contents` to leverage Data Connector authentication.
-> This will also inform Power BI that these requests are referencing the same data source and you'll be able to combine the data without violating the single data source constraints in Power BI Service.
+The `VSTS.AccountContents` function has the same arguments, options and return value format as `Web.Concents`. For more information please refer to: [Power Query (M) Formula Reference - Web.Contents](https://msdn.microsoft.com/library/mt260892.aspx).
 
+If you are already using `Web.Contents` to access data from VSTS (REST API or OData), you can replace it with `VSTS.AccountContents` to leverage Data Connector authentication.
+This will also inform Power BI that these requests are referencing the same data source and you'll be able to combine the data without violating the single data source constraints in Power BI Service.
+
+'VSTS.AccountContents' provides a subset of the Arguments and Options available through 'OData.Contents'. The specific limitations are outlined in the table below:
 
 ### Arguments for VSTS.Contents
 
@@ -242,8 +235,6 @@ For more information please refer to: [Power Query (M) Formula Reference - Web.C
         <td>Version of the data model. This option is primary for diagnostics.</td>
     </tr>
 </table>
-
-
 
 ## Related notes
 * [Power Query (M) Formula Reference](https://msdn.microsoft.com/library/mt270235.aspx)

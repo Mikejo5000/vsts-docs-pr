@@ -3,11 +3,10 @@ title: Environment templates in Release Management
 description: Understand environment templates in Release Management for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.assetid: BE9E2883-5CEB-4A91-A038-CB45B728A0C4
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-release
-ms.topic: get-started-article
+ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
-ms.date: 10/20/2016
+ms.date: 01/19/2018
 ---
 
 # Environment templates in Release Management
@@ -21,7 +20,7 @@ appropriate tasks and settings, which can considerably reduce the time and
 effort required to create a release definition.
 
 A set of pre-defined environment templates are available in
-Team Services and in each version of TFS. You can use these templates
+VSTS and in each version of TFS. You can use these templates
 when you create a new release definition or add a new
 environment to a definition. You can also create your own custom
 environment templates from an environment you have populated and
@@ -49,10 +48,16 @@ Then you can re-create the template for use in that location.
 
 ### Can I publish or consume new templates through extensions in VS Marketplace?
 
-No.
+Yes. See [Adding release management environment templates to your VSS extension](https://blogs.msdn.microsoft.com/divman/2017/05/30/adding-release-management-environment-templates-to-your-vss-extension/) for more details.
+
+### How do I delete a custom environment template?
+
+You can delete an existing custom template from the list of templates that is displayed when you add a new environment to our definition. 
+
+![Delete custom template](_img/delete-custom-template.png)
 
 ### How do I update a custom environment template?
 
-To update an environment template, save the environment in a release definition as a template with the same name. This overwrites the original template.
+To update an environment template, delete the existing template in a release definition and then save the environment as a template with the same name. 
 
 [!INCLUDE [rm-help-support-shared](../../../_shared/rm-help-support-shared.md)]

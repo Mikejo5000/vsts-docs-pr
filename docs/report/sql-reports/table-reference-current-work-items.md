@@ -3,16 +3,15 @@ title: Current Work Item tables | TFS
 description: Query for data about the current state of bugs, task, and other type of work items 
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-reporting 
-ms.topic: sql-reports
 ms.assetid: 8f70c31b-1c6f-4d5b-8413-3948a298d879
 ms.manager: douge
 ms.author: kaelli
-ms.date: 03/09/2017
+ms.date: 10/17/17
 ---
 
 # Current Work Item tables
 
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 
 You can query for data about the current state of bugs, tasks, and other types of work items by using the FactCurrentWorkItem table and the associated dimension tables.  

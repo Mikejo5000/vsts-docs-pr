@@ -1,12 +1,12 @@
 ---
-title: Voluntarily provide stakeholder feedback using the Test &amp; Feedback extension
-description: Manual and exploratory testing - voluntarily provide stakeholder feedback in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS) using the Exploratory Testing browser extension
+title: Voluntarily provide stakeholder feedback
+description: Voluntarily provide stakeholder feedback in VSTS or TFS using the Exploratory Testing browser extension
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-manual
 ms.assetid: 4E467527-62C6-4321-BA56-FF82F0FFFD69
 ms.manager: douge
 ms.author: ahomer
-ms.date: 08/26/2016
+ms.date: 01/18/2018
 ---
 
 # Voluntarily provide stakeholder feedback using the Test &amp; Feedback extension
@@ -48,7 +48,7 @@ voluntarily, even if you haven't received a specific
    such as capturing screenshots, notes, and screen recordings.
 
    >Some browsers may not provide all of the capture capabilities.
-   See [Which web browsers does the extension support?](../getting-started/perform-exploratory-tests.md#browser-support) 
+   See [Which web browsers does the extension support?](../reference-qa.md#browser-support) 
  
 1. When you are done capturing feedback, Choose **Provide feedback**.
 
@@ -64,7 +64,7 @@ voluntarily, even if you haven't received a specific
 
    ![Entering a title and star rating](../_img/_shared/provide-stakeholder-feedback-09.png)
 
-1. Save your feedback. This create a work item in Team Services
+1. Save your feedback. This create a work item in VSTS
    or TFS containing all your feedback.
  
 1. Continue to capture more feedback if required. You can submit 

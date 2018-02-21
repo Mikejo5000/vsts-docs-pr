@@ -5,13 +5,13 @@ ms.assetid: 7ecab78e-f9f5-43d1-982f-b300ee1c4c16
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfvc
 ms.manager: douge
-ms.author: routlaw
+ms.author: sdanie
 ms.date: 08/10/2016
 ---
 
 # View the branch hierarchy of a team project
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 As a project grows, typically the branch structure also grows and becomes more complex. Your team members, especially those who are new, will require answers to simple questions such as the following:
 

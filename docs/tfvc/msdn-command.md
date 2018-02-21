@@ -1,17 +1,17 @@
 ---
-title: Msdn Command
-description: Msdn Command
+title: Use the Msdn Command to display a help topic from the MSDN library 
+description: Display a help topic from the MSDN library using the Msdn Command
 ms.assetid: 6a1c9dfe-dacb-466b-a68e-efe3cd6df3e8
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfvc
 ms.manager: douge
-ms.author: routlaw
+ms.author: sdanie
 ms.date: 08/10/2016
 ---
 
 # Msdn Command
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Displays a help topic from the MSDN library that contains detailed information about a Team Foundation version control command.
 

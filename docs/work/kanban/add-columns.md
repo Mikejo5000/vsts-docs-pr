@@ -1,23 +1,18 @@
 ---
-title: Add columns | Team Services & TFS 
+title: Add columns on your Kanban board
+titleSuffix: VSTS & TFS
 description: Map your Kanban board to follow the flow of how your team works by adding columns that map to a stage in your process - Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 8afd3481-6fab-401d-90ff-0dd443da0f0e
 ms.manager: douge
 ms.author: kaelli
-ms.date: 07/20/2017
+ms.date: 02/16/2018
 --- 
 
-#Add columns
+# Add columns
 
 [!INCLUDE [temp](../_shared/dev15-version-header.md)]  
-
-
->[!NOTE]  
->If you're looking at how to add columns to a task board, you need to customize the workflow. For details, see [Customize your work tracking experience](../customize/customize-work.md). To add columns to a backlog or query results, see [Change column options](../how-to/set-column-options.md).   
->
->For an overview of the features supported on each backlog and board, see [Backlog, board, and plan views](../backlogs-boards-plans.md).
 
 Kanban's number one practice is to visualize the flow of work. Accordingly, your number one task is to visualize your team's workflow. You do this by identifying the types of work and handoffs that occur regularly as your team moves items off the backlog and into a shippable state.
 
@@ -28,6 +23,12 @@ For example, the main workflow stages performed by our example dev team are capt
 ![Kanban board, columns customized ](_img/ALM_AC_KanbanIntro.png)
 
 If you're just getting started, review [Kanban basics](kanban-basics.md) to get an overview of how to access your board and implement Kanban.
+
+
+>[!NOTE]  
+>If you're looking at how to add columns to a task board, you need to customize the workflow. For details, see [Customize your work flow (Inheritance process model](../customize/customize-work.md) or [Add or modify a work item type (Hosted XML or On-premises XML process models](../customize/add-modify-wit.md). To add columns to a backlog or query results, see [Change column options](../backlogs/set-column-options.md).   
+>
+>For an overview of the features supported on each backlog and board, see [Backlog, board, and plan views](../backlogs/backlogs-boards-plans.md).
 
 <a id="map-the-flow-of-work">  </a>
 
@@ -94,26 +95,26 @@ Now that you've got the essentials of how to work with your Kanban board, here's
 
 You'll see different column titles and choices based on the following:  
 	
-- You connect to Team Services, TFS 2015 Update 1, or TFS 2015  
-- The [Process](../guidance/choose-process.md) you used to create your team project  
+- You connect to VSTS, TFS 2015 Update 1, or TFS 2015  
+- The [Process](../work-items/guidance/choose-process.md) you used to create your team project  
 - Whether your team has chosen to [treat bugs like requirements or like tasks](../customize/show-bugs-on-backlog.md).
 <br/>
   
 First, open the Kanban portal for your team project. Click the **Board** link from the **Work>Backlogs** page. 
 
-<img src="_img/kanban-basics-intro.png" alt="Kanban board, Agile template" style="border: 1px solid #CCCCCC;" />  
+<img src="_img/kanban-basics-intro.png" alt="Kanban board, Agile template" style="border: 1px solid #C3C3C3;" />  
 
-#### Team Services, TFS 2017  
+#### VSTS, TFS 2017  
         
 1. To open, click ![gear icon](../_img/icons/team-settings-gear-icon.png), the gear icon, to open the team settings dialog and then click Columns.   
 
-	<img src="_img/add-columns-open-settings-ts.png" alt="Team Services, Kanban board, open common configuration settings" style="border: 1px solid #CCCCCC;" />  
+	<img src="_img/add-columns-open-settings-ts.png" alt="VSTS, Kanban board, open common configuration settings" style="border: 1px solid #C3C3C3;" />  
 
 	If you're not a team admin, [get added as one](../scale/add-team-administrator.md). Only team and project admins can customize columns. 
 
 2. Click a column tab to see all the settings you can modify. Your initial column settings will look something like this. 
 
-	<img src="_img/add-columns-settings-dialog-ts.png" alt="Team Services, Kanban board, Customize columns, default columns, Agile process" style="border: 1px solid #CCCCCC;" />  
+	<img src="_img/add-columns-settings-dialog-ts.png" alt="VSTS, Kanban board, Customize columns, default columns, Agile process" style="border: 1px solid #C3C3C3;" />  
 
 3. Change your column titles to map to your workflow stages. You can add, rename, and move columns to support more stages. 
 
@@ -121,11 +122,11 @@ First, open the Kanban portal for your team project. Click the **Board** link fr
 
 	You can rename a column directly form the Kanban board. 
 
-	<img src="_img/rename-kanban-columns-direct-ts.png" alt="Kanban board, rename a column directly" style="border: 1px solid #CCCCCC;" />
+	<img src="_img/rename-kanban-columns-direct-ts.png" alt="Kanban board, rename a column directly" style="border: 2px solid #C3C3C3;" />
 
 	Or, you can open the dialog and change one or more settings for a Kanban column. 
 
-	<img src="_img/add-columns-settings-dialog-add-test-ts.png" alt="Team Services, Kanban board, Settings, Columns, Add and rename  columns, Agile process" style="border: 1px solid #CCCCCC;" /> 
+	<img src="_img/add-columns-settings-dialog-add-test-ts.png" alt="VSTS, Kanban board, Settings, Columns, Add and rename  columns, Agile process" style="border: 1px solid #C3C3C3;" /> 
 
 4. To change the column order, simply drag the column tab to the position you want.  
 
@@ -135,13 +136,13 @@ First, open the Kanban portal for your team project. Click the **Board** link fr
 
 6.	[Change State mappings as needed](#state-mappings) for added columns, added workflow states, or added work item types (WITs). 
 
-	Usually you need to do this when you change the [Working with bugs](../customize/show-bugs-on-backlog.md) setting, add [WITs to the Requirement Category](../customize/add-wits-to-backlogs-and-boards.md), or [customize the workflow](../process/customize-process-workflow.md).  
+	Usually you need to do this when you change the [Working with bugs](../customize/show-bugs-on-backlog.md) setting, add [WITs to the Requirement Category](../customize/add-wits-to-backlogs-and-boards.md), or [customize the workflow](../customize/process/customize-process-workflow.md).  
  
 #### TFS 2015.1
 
 1. To open, click ![gear icon](../_img/icons/team-settings-gear-icon.png), the gear icon, to open the team settings dialog and then click Columns. 
 
-	<img src="../customize/_img/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 1px solid #CCCCCC;" />
+	<img src="../customize/_img/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 2px solid #C3C3C3;" />
 
 	If you're not a team admin, [get added as one](../scale/add-team-administrator.md). Only team and project admins can customize columns. 
 
@@ -176,7 +177,7 @@ First, open the Kanban portal for your team project. Click the **Board** link fr
 
 <ol>
 <li><p>To open, click ![gear icon](../_img/icons/team-settings-gear-icon.png), the gear icon, to open Customize Columns.</p>
-<img src="../customize/_img/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 1px solid #CCCCCC;" />  
+<img src="../customize/_img/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 1px solid #C3C3C3;" />  
 
 <p>If you're not a team admin, [get added as one](../scale/add-team-administrator.md). Only team and project admins can customize columns.</p>   
 
@@ -203,17 +204,17 @@ First, open the Kanban portal for your team project. Click the **Board** link fr
 <!---
 1. To open, click ![gear icon](../_img/icons/team-settings-gear-icon.png), the gear icon, to open the team settings dialog and then click Columns.  
 
-	<img src="../customize/_img/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 1px solid #CCCCCC;" />  
+	<img src="../customize/_img/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 1px solid #C3C3C3;" />  
 
 	If you're not a team admin, [get added as one](../scale/add-team-administrator.md). Only team and project admins can customize columns.  
 
 	You'll see different column titles and choices based on the following:  
 	
-	- You connect to Team Services, TFS 2015 Update 1, or TFS 2015  
-	- The [Process](../guidance/choose-process.md) you used to create your team project  
+	- You connect to VSTS, TFS 2015 Update 1, or TFS 2015  
+	- The [Process](../work-items/guidance/choose-process.md) you used to create your team project  
 	- Whether your team has chosen to [treat bugs like requirements or like tasks](../customize/show-bugs-on-backlog.md)  
 
-	**Team Services and TFS 2015 Update 1 options:**  
+	**VSTS and TFS 2015 Update 1 options:**  
 
 	Click a column tab to see all the settings you can modify. Your initial column settings will look something like this.  
 
@@ -226,7 +227,7 @@ First, open the Kanban portal for your team project. Click the **Board** link fr
 
 	Here, we rename the first, second, and third columns to Backlog, Analyze, and Develop. We then add a column and label it Test. 
 	
-	**Team Services and TFS 2015 Update 1 :**  
+	**VSTS and TFS 2015 Update 1 :**  
 	You can rename a column directly form the Kanban board. 
 
 	![Kanban board, rename a column directly](_img/rename-kanban-columns-direct.png)
@@ -241,12 +242,12 @@ First, open the Kanban portal for your team project. Click the **Board** link fr
 	Rename column titles to best reflect each stage of work. Keep the column titles as simple as possible.
 	
 4.	To change the column order:  
-	- **Team Services and TFS 2015 Update 1 :** Simply drag the column tab to the position you want.  
+	- **VSTS and TFS 2015 Update 1 :** Simply drag the column tab to the position you want.  
 	- **TFS 2015:** use the left ![left arrow](_img/ALM_AC_LeftIcon.png) or right ![right arrow](_img/ALM_AC_RightIcon.png) arrow icons.   
 
 5.	To delete a column, first make sure that the column doesn't contain any work items. If it does, move the items to another column.  
 
-	**Team Services and TFS 2015 Update 1 :**  Click Delete on the column tab menu.  
+	**VSTS and TFS 2015 Update 1 :**  Click Delete on the column tab menu.  
 	![Kanban board, delete a column](_img/kanban-delete-column.png)  
 
 	**TFS 2015:**   Click X at the top of the column.  
@@ -267,22 +268,24 @@ What does this mean for Kanban board users? First, only work items whose WITs be
 
 * Your team admin chooses to [show bugs on backlogs and boards](../customize/show-bugs-on-backlog.md)  
 * Your project admin [adds WITs to backlogs and boards](../customize/add-wits-to-backlogs-and-boards.md)
-* Your project collection or project admin customizes the workflow for a WIT in the Requirement Category: [Team Services](../process/customize-process-workflow.md) or [TFS](http://msdn.microsoft.com/library/ms194981.aspx)  
+* Your project collection or project admin customizes the workflow for a WIT in the Requirement Category: [VSTS](../customize/process/customize-process-workflow.md) or [TFS](../customize/reference/change-workflow-wit.md)  
 
 For example, if you change the team setting and add bugs to the Requirements Category, the bug WIT will now appear in the Columns dialog. You'll want to make sure that the Kanban column-to-State mappings match what you want. 
 
 
-**Team Services**  
+**VSTS**  
 In this example two new states have been added, Triaged for bug, and Investigate for user story. Each needs to be mapped to an existing or new column in order for the Kanban board to display work items assigned to these states.  
-<img src="_img/add-columns-custom-states-mapping.png" alt="Kanban board settings, Columns" style="border: 1px solid #CCCCCC;" />  
+
+<img src="_img/add-columns-custom-states-mapping.png" alt="Kanban board settings, Columns" style="border: 1px solid #C3C3C3;" />  
 
 **TFS 2015** 
 
-In this example, bugs have been added to show on the Kanban board. You need to map the bug state for each column on the Kanban board.   
+In this example, bugs have been added to show on the Kanban board. You need to map the bug state for each column on the Kanban board.  
+ 
 ![Kanban column to State mappings with bugs ](_img/ALM_AC_Update.png)
 
 
-## Related Kanban notes
+## Related notes
 
 That's about all you need to know about working with Kanban columns. Here are a few more options you have for customizing the look and feel of the board. 
 
@@ -290,9 +293,8 @@ That's about all you need to know about working with Kanban columns. Here are a 
 * [Add swimlanes, expedite work](expedite-work.md)   
 * [Split columns](split-columns.md)   
 * [Definition of Done](definition-of-done.md)  
-* [Customize cards](../customize/customize-cards.md)  
-* [Card reordering](../customize/reorder-cards.md)  
-* [Cumulative flow diagram](../../report/guidance/cumulative-flow.md)  
+* [Customize cards](../customize/customize-cards.md) 
+* [Cumulative flow diagram](../../report/dashboards/cumulative-flow.md)  
 
 
 <a id="state-mappings" >   </a>
@@ -300,9 +302,9 @@ That's about all you need to know about working with Kanban columns. Here are a 
 
 Your Kanban board is one of several tools you have for tracking work. The [query tool](../track/using-queries.md) allows you to list a subset of work items for the purposes of review, triage, update, or chart generation. For example, you can create a query to list all active user stories (specify two clauses: Work Item Type=User Story; State=Active). 
 
-But what if you want to list items based on their Kanban column assignment? Can you do that? Yes, from Team Services or from TFS 2015 Update 1 or later version. No, if you work from TFS 2015 or earlier versions. 
+But what if you want to list items based on their Kanban column assignment? Can you do that? Yes, from VSTS or from TFS 2015 Update 1 or later version. No, if you work from TFS 2015 or earlier versions. 
 
-**Team Services and TFS 2015 Update 1 :**
+**VSTS and TFS 2015 Update 1 :**
 
 You can track Kanban board column moves using the [Board Column and Board Column Done fields](../track/query-by-workflow-changes.md#kanban_query_fields).  
 
@@ -321,4 +323,4 @@ As an item's card moves from one Kanban column to the next, the item's workflow 
 Kanban columns may correspond to an actual workflow state or a pseudo state. For example, Develop, Test, and Verify columns may all map to the Active state. In this case, when you move an item from Develop to Test or from Test to Verify, the item's State doesn't change. 
 
 ###REST API resources
-To programmatically interact with the Kanban board and other team settings, see the [Work API reference](https://www.visualstudio.com/integrate/api/work/overview).
+To programmatically interact with Kanban board and other team settings, see the [REST API, Boards reference](https://docs.microsoft.com/en-us/rest/api/vsts/work/boards).

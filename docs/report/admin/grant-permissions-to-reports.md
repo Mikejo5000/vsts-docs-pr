@@ -6,17 +6,14 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
 ms.manager: douge
 ms.author: kaelli
-ms.date: 02/22/2017
+ms.topic: get-started-article
+ms.date: 11/15/2017
 ---
 
-# Grant permissions to view or create reports in TFS
+# Grant permissions to view or create SQL Server reports in TFS
 
-<b>TFS 2017 | TFS 2015 | TFS 2013</b>  
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
-
->[!IMPORTANT]
->**Feature availability**: You can only add a report server to an on-premises TFS.  If you're using Team Services, adding a report server isn't a supported option, instead, you can use [PowerBI](../powerbi/overview.md).
- 
 This is the third task in the four-task sequence to add reports to your team project. You can use the procedures in this topic to set permissions to view or author reports.  
 
 [![Add a report server](_img/step-1-add-a-report-server.png)](add-a-report-server.md)
@@ -24,13 +21,17 @@ This is the third task in the four-task sequence to add reports to your team pro
 [![Grant permissions](_img/step-3-grant-permissions.png)](grant-permissions-to-reports.md) 
 [![Review team activities](_img/step-4-review-team-activities.png)](review-team-activities-for-useful-reports.md)
 
+>[!IMPORTANT]
+>**Feature availability**: You can only add a report server to an on-premises TFS. If you're using VSTS, adding a report server isn't a supported option, instead, you can use the [Analytics Service](../analytics/index.md).
+
 
 Now that you've uploaded reports, you'll want to enable members of your team to view or manage them. Also, to create or modify reports, you'll need to grant them access to read databases. 
 
 ##Add accounts to predefined roles to view or manage reports
 Add report viewers to the **Browser** role. Add TFS report authors to the **Team Foundation Content Manager** role.
 
-<blockquote style="font-size: 13px">**Tip:**  Permissions to access Report Manager are managed separately from TFS permissions. Even if you have added team members to a TFS group, you will still have to add them to a Report Manager role. </blockquote>  
+> [!TIP]    
+> Permissions to access Report Manager are managed separately from TFS permissions. Even if you have added team members to a TFS group, you will still have to add them to a Report Manager role.  
 
 1. If you haven't been added to the **Content Manager** role for Reporting Services, get added by someone who has been added to this role.  
 
@@ -44,7 +45,8 @@ Add report viewers to the **Browser** role. Add TFS report authors to the **Team
 
 	![Open SSRS new role assignment](_img/IC665039.png)
 
-	<blockquote style="font-size: 13px">**Tip:  ** To limit access to reports defined for a team project or team project collection, first navigate to the corresponding folder and then open New Role Assignment.</blockquote>  
+	> [!TIP]    
+	> To limit access to reports defined for a team project or team project collection, first navigate to the corresponding folder and then open New Role Assignment.  
 
  
 4. Add the account name and select their role. 
@@ -53,7 +55,7 @@ Add report viewers to the **Browser** role. Add TFS report authors to the **Team
 ##Add report authors to database roles
 If members need to create or customize reports, add their accounts to the **TfsWarehouseDataReader** role. Report authors need read access to both the relational data warehouse and Analysis Services cube. Team members who create Excel reports from work item queries or by connecting to the cube need only read access to the cube. 
 
-1. If you aren't an administrator for the TFS database, [get added as one](../../setup-admin/add-administrator-tfs.md). 
+1. If you aren't an administrator for the TFS database, [get added as one](../../tfs-server/add-administrator-tfs.md). 
 
 2. Connect to the **Database Engine** for TFS using **SQL Server Management Studio**.
 
@@ -79,7 +81,8 @@ If members need to create or customize reports, add their accounts to the **TfsW
 
 	![Add member to Tfs_Analysis data reader role](_img/IC665046.png)
 
-<blockquote style="font-size: 13px"><b>Important: </b>  Accounts that you add to the **TfsWarehouseDataReader** roles can view data for all team projects that are hosted in all team project collections in the TFS deployment. There is no way to limit access to a team project or collection.</blockquote>  
+> [!IMPORTANT]  
+> Accounts that you add to the **TfsWarehouseDataReader** roles can view data for all team projects that are hosted in all team project collections in the TFS deployment. There is no way to limit access to a team project or collection.   
 
 
 ##Try this next

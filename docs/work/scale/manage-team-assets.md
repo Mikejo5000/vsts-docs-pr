@@ -1,36 +1,38 @@
 ---
-title: Configure team settings | Team Services  & TFS 
+title: Configure team settings | VSTS  & TFS 
 description: Manage team-specific tools such as sprint settings, backlogs, Kanban boards, and more as well as add team administrators 
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 6BF2B72D-9160-4140-B8DE-B2C7C42AC338  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 07/21/2017
+ms.date: 10/17/2017
 ---
 
 # Configure team settings 
 
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 <!--- Still needs work, versioning, and other team settings from the admin context, add something about something, team-specific widgets--> 
 
+<a id="team-settings"></a>
+
 Within a team project, you [add teams](multiple-teams.md) to support the needs of several feature teams, or an enterprise organized to deliver different products. Each team is then able to configure the Agile tools the way that works for their team, supporting each team to collaborate most effectively in planning and managing their work.  
 
-As a team administrator, you can configure, customize, and manage all team-related activities for your team. These include being able to add team members, add team admins, and configure Agile tools and team assets. 
+As a team administrator, you can configure, customize, and manage all team-related activities for your team. These include being able to add team members, add team admins, and configure Agile tools and team assets. Members of the Project Administrators group can manage all team-related activities for all teams. 
 
 Team admin permissions are role-based, unlike project admin permissions which are set through the user interface. Also, because team administrators are members of the Contributor role they have permissions assigned to that role.  
 
 You can configure most of your team settings from the common configuration dialog. 
 
->[!NOTE]
-><b>Feature availability: </b>The common configuration dialog is available from Team Services and the web portal for TFS 2015.1 and later versions.  
+> [!NOTE]
+> **Feature availability:** The common configuration dialog is available from VSTS and the web portal for TFS 2015.1 and later versions.  
 
 1. To open, click ![gear icon](../_img/icons/team-settings-gear-icon.png), the gear icon, from any team backlog or board to set one or more team settings.  
 
 	For example, from the Kanban board ...  
 
-	<img src="../customize/_img/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 1px solid #CCCCCC;" /><br/>  
+	<img src="../customize/_img/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 2px solid #C3C3C3;" /><br/>  
 
 2. Click a tab under Cards or Board to configure card and Kanban board settings.  
 
@@ -40,18 +42,17 @@ You can configure most of your team settings from the common configuration dialo
 
 
 > [!div class="mx-tdBreakAll"]  
-> |Cards  | Board  | Charts|  General  | 
+> |Cards  | Board  | Charts & widgets |  General  | 
 > |-------------|----------|---------|---------|   
-> |- [Fields](../customize/customize-cards.md)<br/>- [Styles](../customize/customize-cards.md#style-rule)<br/>- [Tag colors](../customize/customize-cards.md#color-tags)<br/>- [Annotations](../customize/customize-cards.md#annotations)<br/>- [Tests](../customize/customize-cards.md#tests) |- [Columns](../kanban/add-columns.md)<br/>- [Swimlanes](../kanban/expedite-work.md)<br/>- [Card reordering](../customize/reorder-cards.md) |- [Cumulative flow](../../report/guidance/cumulative-flow.md#configure) |-[Backlogs](../customize/select-backlog-navigation-levels.md)<br/>- [Working days](../kanban/expedite-work.md)<br/>- [Working with bugs](../customize/show-bugs-on-backlog.md) |
+> |- [Fields](../customize/customize-cards.md)<br/>- [Styles](../customize/customize-cards.md#style-rule)<br/>- [Tag colors](../customize/customize-cards.md#color-tags)<br/>- [Annotations](../customize/customize-cards.md#annotations)<br/>- [Tests](../customize/customize-cards.md#tests) |- [Columns](../kanban/add-columns.md)<br/>- [Swimlanes](../kanban/expedite-work.md)<br/>- [Card reordering](../customize/reorder-cards.md) |- [Cumulative flow chart & widget](../../report/dashboards/cumulative-flow.md#configure)<br/> -[Lead & Cycle time widgets](../../report/dashboards/cycle-time-and-lead-time.md)<br/> -[Velocity chart and widget](../../report/dashboards/velocity-chart-data-store.md) |-[Backlogs](../customize/select-backlog-navigation-levels.md)<br/>- [Working days](../kanban/expedite-work.md)<br/>- [Working with bugs](../customize/show-bugs-on-backlog.md) |
 
 
 ## Related notes 
 
-To create additional teams, see [Multiple teams](multiple-teams.md).  
+To create additional teams, see [Add teams and team members](multiple-teams.md).  
 
-If team members don't have access to all the features they want, check that they have [the access level needed for those features](../connect/change-access-levels.md).  
+If team members don't have access to all the features they want, check that they have [the permissions needed for those features](../../security/set-permissions-access-work-tracking.md).  
 
-You can also [restrict access to select features and functions](../../setup-admin/restrict-access-tfs.md).
 
 
 ### Team name, description, and picture

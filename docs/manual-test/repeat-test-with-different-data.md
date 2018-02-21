@@ -1,4 +1,4 @@
---
+---
 title: Repeat a test with different data
 description: Manual and exploratory testing - repeat a test with different data in Team Services (VSTS) and Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
@@ -6,7 +6,7 @@ ms.technology: vs-devops-test-manual
 ms.assetid: C9953A56-9BD6-408B-899B-FAD816B9FC0C
 ms.manager: douge
 ms.author: ahomer
-ms.date: 08/12/2016
+ms.date: 01/18/2018
 ---
 
 # Repeat a test with different data
@@ -22,9 +22,11 @@ to check that a quantity of 200 works just as well as a quantity of 1.
 To do this, you insert parameters in your test steps. Along with 
 the test steps, you provide a table of parameter values. You can 
 also share parameters and their data between test cases when you 
-use the web portal with Team Foundation Server 2015 and higher or 
-Team Services. That way you can run multiple test cases with the 
+use the web portal with TFS 2015 and later or 
+VSTS. That way you can run multiple test cases with the 
 same data.
+
+[!INCLUDE [feature-availability](_shared/feature-availability.md)] 
 
 ## Add parameters to a test case
 
@@ -105,7 +107,7 @@ entire test is shown as failed.
 1. Double-click a test result to view the test run details, 
    and the test results for each iteration.
 
-   ![](_img/repeat-test-with-different-data/repeat-test-with-different-data-10.png)
+   ![Viewing the test run details](_img/repeat-test-with-different-data/repeat-test-with-different-data-10.png)
  
 ## Speed up test iterations by using record and playback
 
@@ -128,32 +130,11 @@ values, and then play it back for the other sets.
    verify the results. 
 
 Record and playback doesn't work with all applications. For details, see 
-[Supported Configurations and Platforms for Coded UI Tests and Action Recordings](https://msdn.microsoft.com/en-us/library/dd380742.aspx).
-
-## Q&A
-
-<!-- BEGINSECTION class="md-qanda" -->
-
-#### Q: Are parameters the best way to specify that the test should be run on different operating system platforms? And with different browsers, databases, and so on?
-
-**A**: It's better to use [test configurations](test-different-configurations.md) for that.
-With test case parameters, you run the different parameter values one after another, 
-which makes it difficult to switch from one platform to another.
-
-#### Q: Can I use parameters in shared steps?
-
-**A**: Yes. You set the parameter values in the test cases where you use the shared steps.
-
-#### Q: Can I import parameter values from an Excel spreadsheet to my shared parameter sets?
-
-**A**: Yes. Copy the data from your Excel spreadsheet and paste it 
-into your shared parameters grid. You can also copy the data from 
-your grid back into Excel if you need to.
-
-<!-- ENDSECTION --> 
+[Supported Configurations and Platforms for Coded UI Tests and Action Recordings](https://docs.microsoft.com/visualstudio/test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings).
 
 ## See also
 
+* [FAQs for manual testing](reference-qa.md#repeatdifferent)
 * [Overview of manual and exploratory testing](index.md)
 * [Testing different configurations](test-different-configurations.md)
 * [Collect diagnostic data](collect-diagnostic-data.md)

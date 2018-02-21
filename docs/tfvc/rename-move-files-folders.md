@@ -5,13 +5,13 @@ ms.assetid: 90839209-cb51-4c00-ae19-08e7343093ea
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfvc
 ms.manager: douge
-ms.author: routlaw
+ms.author: sdanie
 ms.date: 08/10/2016
 ---
 
 # Rename or move files and folders in TFVC
 
-**Team Services | TFS 2015 & TFS 2017 | Visual Studio 2013 | Visual Studio 2015**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 > [!IMPORTANT]
 > If you're not using TFVC for version control, use [Solution Explorer](https://docs.microsoft.com/en-us/visualstudio/ide/solutions-and-projects-in-visual-studio#managing-projects-in-solution-explorer) to

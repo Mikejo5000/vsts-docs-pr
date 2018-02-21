@@ -1,20 +1,18 @@
 ---
-title: Review your repo history | Team Services & TFS
+title: Review your repo history | VSTS & TFS
 description: Git history tools with Visual Studio and git command line tools to help you determine the changes in your files.
 ms.assetid: aed4bd97-378a-45f6-8b13-59143fccfe3b
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-git
+ms.technology: vs-devops-git 
 ms.topic: get-started-article
 ms.manager: douge
-ms.author: routlaw
-ms.date: 08/04/2016
+ms.author: sdanie
+ms.date: 11/14/2017
 ---
 
 # Review history
 
-###### Team Services | TFS 2015 & TFS 2017 | Visual Studio 2015 & 2017
-
-## Overview
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
 
 Git uses the parent reference information stored in each [commit](commits.md) to manage a full history of your development. 
 Review this commit history to find out when file changes were made and determine differences between versions of your code.
@@ -23,36 +21,32 @@ Git's use of feature [branches](branches.md) and merges through [pull requests](
 When you use history to compare versions, think in terms of file changes between two commits instead of file changes between two points in time. 
 A recent change to a file in the `master` branch may have come from a commit created two weeks ago in a feature branch but was only merged yesterday. 
 
+In this tutorial you learn how to:
+
+> [!div class="checklist"]
+> * Compare files
+> * Retrieve files
+> * Compare branches
+
 ## Compare files
 
 Compare the changes between two versions of a file in your Git repo. 
 
-<div style="background-color: #f2f0ee;padding-top:10px;padding-bottom:10px;">
-<ul class="nav nav-pills" style="padding-right:15px;padding-left:15px;padding-bottom:5px;vertical-align:top;font-size:18px;">
-<li style="float:left;" data-toggle="collapse" data-target="#changeexample">How to compare files</li>
-<li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:90px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:14px;font-weight:400" data-toggle="pill" href="#cmdline0">Command Line</a></li>
-<li class="active" style="float: right"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#007acc;margin: 0px 0px 0px 0px;min-width:90px;color: #fff;border: solid 2px #007acc;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:14px;font-weight:400" data-toggle="pill" href="#vs0">Visual Studio</a></li>
-</ul>
+# [Visual Studio](#tab/visual-studio)
 
-<div id="changeexample" class="tab-content collapse in fade" style="background-color: #ffffff;margin-left: 15px;margin-right:15px;padding: 5px 5px 5px 5px;">
-<div id="vs0" class="tab-pane fade in active">
-<h6 style="padding-left:25px;">Team Services | TFS 2015 &amp; 2017 | Visual Studio 2015 &amp; 2017</h6>
-<ol>
-<li>Right-click the file in Solution Explorer and choose **View History...**. The history window will appear showing the commit ID, author, date, and description of all changes to the file in your local repo across all branches.   
+0. Right-click the file in Solution Explorer and choose **View History...**. The history window will appear showing the commit ID, author, date, and description of all changes to the file in your local repo across all branches.   
 
-<p>![View history in your repo for a file](_img/vs_history_view.png)     
+    ![View history in your repo for a file](_img/history/vs-history-view.png)     
 
-<li>Find the latest commit for a branch by looking for its name on an arrow to the right of a commit.
-<li>View changes from the previous version of the file by right-clicking and choosing **Compare with previous...**. View the changes between any two versions by selecting both commits, then right-clicking and select **Compare...**
-<li>The diff view shows lines removed from the older commit and added in the new one.
+0. Find the latest commit for a branch by looking for its name on an arrow to the right of a commit.
+0. View changes from the previous version of the file by right-clicking and choosing **Compare with previous...**. View the changes between any two versions by selecting both commits, then right-clicking and select **Compare...**
+0. The diff view shows lines removed from the older commit and added in the new one.
 
-<p>![View diff changes in Visual Studio](_img/vs_diff_changes.png)
+    ![View diff changes in Visual Studio](_img/history/vs-diff-changes.png)
 
-</div>
+# [Command Line](#tab/command-line)
 
-<div class="tab-pane fade" id="cmdline0" style="background-color: #ffffff;margin-left: 15px;margin-right:15px;padding: 5px 5px 5px 5px;">
-
-<p>Use the `git log` command to view the commits that changed a file in your repo for your current branch.
+Use the `git log` command to view the commits that changed a file in your repo for your current branch.
 
 <pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
 &gt; git log index.html   
@@ -70,7 +64,8 @@ Date:   Thu Jun 30 13:42:23 2016 -0400
     initial commit
 </font>
 </pre>
-<p>Filter the `git log` output based on author, description or date information by using the corresponding options. 
+
+Filter the `git log` output based on author, description or date information by using the corresponding options. 
 Leave out the filename if you want to see the commits matching all files in your repo.
 
 <pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
@@ -80,7 +75,7 @@ Leave out the filename if you want to see the commits matching all files in your
 &gt; git log <font color="#b5bd68">--grep="css change"</font>
 </pre>
 
-<p>View changes between two commits using `git diff`:
+View changes between two commits using `git diff`:
 
 <pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
 &gt; git diff bbc3b67 e5402fe71 index.html
@@ -88,48 +83,54 @@ Leave out the filename if you want to see the commits matching all files in your
 <font color="#c66">-    &lt;link rel="stylesheet" href="app.cs"/&gt;</font>   
 <font color="#b5bd68">+    &lt;link rel="stylesheet" href="fabrikam.cs"/&gt;</font>
 </pre>
-</div></div></div>
+
+---
 
 ## Retrieve files
 
 Retrieve a specific version of a file from your history, even if the file was deleted or renamed in the latest version of your code.
-Retrieving a older version of the file doesn't make any changes to your current branch. Create a new commit to bring the older version of the file into
+Retrieving an older version of the file doesn't make any changes to your current branch. Create a new commit to bring the older version of the file into
 your branch.
 
-<div style="background-color: #f2f0ee;padding-top:10px;padding-bottom:10px;">
-<ul class="nav nav-pills" style="padding-right:15px;padding-left:15px;padding-bottom:5px;vertical-align:top;font-size:18px;">
-<li style="float:left;" data-toggle="collapse" data-target="#changeexample2">How to retrieve files</li>
-<li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:90px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:14px;font-weight:400" data-toggle="pill" href="#cmdline2">Command Line</a></li>
-<li class="active" style="float: right"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#007acc;margin: 0px 0px 0px 0px;min-width:90px;color: #fff;border: solid 2px #007acc;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:14px;font-weight:400" data-toggle="pill" href="#vs2">Visual Studio</a></li>
-</ul>
+# [Visual Studio](#tab/visual-studio)
 
-<div id="changeexample2" class="tab-content collapse in fade" style="background-color: #ffffff;margin-left: 15px;margin-right:15px;padding: 5px 5px 5px 5px;">
-<div id="vs2" class="tab-pane fade in active">
-<h6>Team Services | TFS 2015 &amp; 2017 | Visual Studio 2015 &amp; 2017</h6>
-<p>Right-click the file in Solution Explorer and select **View History**. The Visual Studio **History** view will appear, showing the commits in your repo that updated the file.
+To retrieve a previous version of a file that exists in your Visual Studio project:
+
+0. Right-click the file in Solution Explorer and select **View History**. The Visual Studio **History** view will appear, showing the commits in your repo that updated the file.
 You can filter the commits to find the exact commit with the file version you want to restore. Double click on the version to open it in Visual Studio.
    
-<p>![View file versions in Visual Studio](_img/vs_view_file_commit_details.png)    
-<p>Retrieve deleted files in your repo by opening the **Changes** view in Team Explorer. Select **View History** from the **Actions** drop-down. Right-click the commit
-containing the version of the file you want to restore and select **View Commit Details**. 
-<p>![View deleted files in your Git repo with Visual Studio](_img/vs_view_commit_details.png)
-<p>Right click the file to restore in the **Commit Details** in Team Explorer and select **Open**.
-<p>Save the version to your project by selecting **Save As...** from the **File** menu. If you save the file in your current project, either as a new file or overwriting
+  ![View file versions in Visual Studio](_img/history/vs-history-view.png)   
+
+To retrieve a previous version of a file that was deleted in a previous commit:
+
+0. Open the **Changes** view in Team Explorer and select **View History** from the **Actions** drop-down. 
+
+  ![View changes](_img/history/team-explorer-changes.png) 
+
+0. Right-click the commit containing the version of the file you want to restore and select **View Commit Details**. 
+
+  ![View changes](_img/history/vs-view-commit-details.png) 
+
+0. Right click the file to restore in the **Commit Details** in Team Explorer and select **Open**.
+
+  ![View deleted files in your Git repo with Visual Studio](_img/history/vs-open-deleted-file.png)
+
+>[!NOTE]
+>The retrieved version of a file is not automatically saved to your project. To save the retrieved version to your project, select **Save As...** from the **File** menu. If you save the file in your current project, either as a new file or overwriting
 an existing one, you'll need to commit your changes to add the previous version to your local branch.
 
-</div>
+# [Command Line](#tab/command-line)
 
-<div class="tab-pane fade" id="cmdline2" style="background-color: #ffffff;margin-left: 15px;margin-right:15px;padding: 5px 5px 5px 5px;">
 Use `git log` to find the version to restore and `git checkout` or `git show` to restore the file from your history.
 
-<p>Find the commit with the version of the file you need to restore using `git log` using the steps from [comparing versions](history.md#compare-files) above.
+Find the commit with the version of the file you need to restore using `git log` using the steps from [comparing versions](history.md#compare-files?tabs=command-line) above.
 Restore the version in its current location using `git checkout`:
    
 <pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
 &gt; git checkout <font color="#b5bd68">85435fac src/app.ts</font>
 </pre>
 
-<blockquote> Using `git checkout` this way will rewrite the current verison of the file at that path location.</blockquote>
+Using `git checkout` this way will rewrite the current verison of the file at that path location.
 
 Restore a file to any location by using `git show`. This command prints the file contents to the terminal-you'll want to redirect the output to your desired location.
 
@@ -137,7 +138,10 @@ Restore a file to any location by using `git show`. This command prints the file
 &gt; git show <font color="#b5bd68">85435fac:src/app.ts &gt; /home/frank/oldapp.ts</font>
 </pre>
 
-</div></div></div>
+---
+
+
+
 
 ## Compare branches
 
@@ -145,29 +149,22 @@ Review potential changes from a [merge](merging.md) or [rebase](rebase.md) by co
 You can compare both local and remote branches, which is useful when checking for potential merge conflicts or to see how the 
 changes others have made will affect your work.
 
-<div style="background-color: #f2f0ee;padding-top:10px;padding-bottom:10px;">
-<ul class="nav nav-pills" style="padding-right:15px;padding-left:15px;padding-bottom:5px;vertical-align:top;font-size:18px;">
-<li style="float:left;" data-toggle="collapse" data-target="#changeexample1">How to compare branches</li>
-<li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:90px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:14px;font-weight:400" data-toggle="pill" href="#cmdline1">Command Line</a></li>
-<li class="active" style="float: right"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#007acc;margin: 0px 0px 0px 0px;min-width:90px;color: #fff;border: solid 2px #007acc;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:14px;font-weight:400" data-toggle="pill" href="#vs1">Visual Studio</a></li>
-</ul>
+# [Visual Studio](#tab/visual-studio)
 
-<div id="changeexample1" class="tab-content collapse in fade" style="background-color: #ffffff;margin-left: 15px;margin-right:15px;padding: 5px 5px 5px 5px;">
-<div id="vs1" class="tab-pane fade in active">
+Comparing branches can be done in the web portal, which you can access from the Team Explorer **Home** view in Visual Studio by choosing **Web Portal**. 
 
-<h6>Team Services | TFS 2015 &amp; 2017 | Visual Studio 2015 &amp; 2017</h6>
+![Web portal](_img/history/vs-browse-web-portal.png) 
 
-<p>Browse to your repo in Team Services or TFS. Select **Branches** from the menu under **Code**:   
+Select **Branches** from the menu under **Code**. Locate your branch and select the **...** icon to view the branch options. Select **Compare branches**.  
 
-<p>![Open the branches view in Team Services/TFS](_img/branches_view_team_services.png)   
+![Compare branches](_img/history/compare-branches.png) 
 
-<p>Locate your branch and select the **...** icon to  view the branch options. Select **Compare branches**.   
+Select the branch to compare to from the drop-downs at the top. The view will display all changes between the branches.
 
-<p>![Select the ellipses icon to open branch options, then select team services](_img/team_services_branch_options.png)
-   
-<p>Select the branch to compare to from the drop-downs at the top. The view will display all changes between the branches.
+![Comparing branches](_img/history/comparing-branches.png) 
 
-</div>
+
+# [Command Line](#tab/command-line)
 
 <div class="tab-pane fade" id="cmdline1" style="background-color: #ffffff;margin-left: 15px;margin-right:15px;padding: 5px 5px 5px 5px;">
 
@@ -207,6 +204,5 @@ You can narrow down specific file changes by specifying a file after the branch 
 &gt; git diff <font color="#b5bd68">users/frank/feature origin/master index.html</font>
 </pre>
 
-</div></div>
-
+---
 

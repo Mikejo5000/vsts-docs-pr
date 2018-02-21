@@ -1,24 +1,24 @@
 ---
-title: Add command
-description: Add command
+title: Add files to version control using the TFVC Add command
+description: Use the TFVC Add command to add files to version control in TFS
 ms.assetid: 0b61e4c6-a3da-48d6-bda0-7b14452049a4
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfvc
 ms.manager: douge
-ms.author: routlaw
+ms.author: sdanie
 ms.date: 08/10/2016
 ---
 
 # Add command
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Adds files and folders to version control.
 
 >**Tip:**  
 >Before you add files to version control, you should first set up the workspace on your dev machine. See [Workspace Command](workspace-command.md) or [Set up Team Foundation Version Control on your dev machine](set-up-team-foundation-version-control-your-dev-machine.md).  
 
-**Requirements:** See [Permission reference for Team Foundation Server](../setup-admin/permissions.md).
+**Requirements:** See [Permissions and groups reference](../security/permissions.md).
 
     tf add itemspec [/lock:(none|checkin|checkout)] [/encoding:filetype] 
     [/noprompt] [/recursive] [/noignore] [/login:username,[password]] 

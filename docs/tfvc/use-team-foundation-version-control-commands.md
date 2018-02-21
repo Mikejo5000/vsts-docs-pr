@@ -5,13 +5,13 @@ ms.assetid: efeff6e0-c4ab-4686-bc63-20a6136be39a
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfvc
 ms.manager: douge
-ms.author: routlaw
+ms.author: sdanie
 ms.date: 08/10/2016
 ---
 
 # Use Team Foundation version control commands
 
-**Team Services | TFS 2015 | Visual Studio 2013,2015,2017**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 You can use version control commands to do nearly all tasks you can do in Visual Studio, and also several tasks that can’t be done in Visual Studio. You can use the **tf.exe** tool to run version control commands from a command prompt or within a script.
 
@@ -217,7 +217,7 @@ Let’s review the arguments from this example:
 
 You can use itemspecs and versionspecs to specify which items are affected by a command.
 
-<a name="itemspec">
+<a name="itemspec"></a>
 
 #### Use an itemspec argument to specify affected items
 
@@ -333,7 +333,7 @@ Use the following syntax to specify a *versionspec*.
 </div>
 </div>
 
-<p>Retrieves the version of all labeled items (and deletes those items not labeled) in the workspace as they existed when the changeset labeled as <strong>LastKnownGood</strong> was created, for example, perhaps as part of an <a href="../build-release/define/triggers.md">automated build process<a/>.</p></td>
+<p>Retrieves the version of all labeled items (and deletes those items not labeled) in the workspace as they existed when the changeset labeled as <strong>LastKnownGood</strong> was created, for example, perhaps as part of an <a href="../build-release/concepts/definitions/build/triggers.md">automated build process<a/>.</p></td>
 </tr>
 <tr>
 <td><p>Date and time</p></td>
@@ -362,7 +362,7 @@ Use the following syntax to specify a *versionspec*.
 </div>
 
 <p>Updates the workspace to match the codebase as it existed on 3/22/2004 at 09:00 (9 AM).</p>
-<p>For more information about .NET Framework-supported date and time formats see <a href="https://msdn.microsoft.com/library/system.datetime) and [Standard Date and Time Format Strings](https://msdn.microsoft.com/library/az4se3k1">DateTime<a/>.</p></td>
+<p>For more information about .NET Framework-supported date and time formats see [DateTime](https://msdn.microsoft.com/library/system.datetime) and [Standard Date and Time Format Strings](https://msdn.microsoft.com/library/az4se3k1).</p></td>
 </tr>
 <tr>
 <td><p>Workspace (current)</p></td>

@@ -6,12 +6,12 @@ ms.technology: vs-devops-reporting
 ms.assetid: 2b21601e-c737-4eda-b836-87517e19cf63
 ms.manager: douge
 ms.author: kaelli
-ms.date: 03/03/2017
+ms.date: 10/17/17
 ---
 
 # Stories Overview Report (Agile)
 
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 The Stories Overview report lists all user stories, filtered by area and iteration and in order of importance. For information about how to open this report, refresh the data, or manage reports, see [Reporting Services Reports](reporting-services-reports.md).  
   
@@ -23,7 +23,7 @@ The Stories Overview report lists all user stories, filtered by area and iterati
   
  **Required Permissions**  
   
- To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in Reporting Services. For more information, see [Add users to team projects](../../setup-admin/add-users.md) or [Managing Permissions in Team Foundation Server](../../setup-admin/permissions.md).  
+ To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in Reporting Services. For more information, see [Grant permissions to view or create reports in TFS](../admin/grant-permissions-to-reports.md).  
   
 <a name="Data"></a> 
 ## Data in the report  

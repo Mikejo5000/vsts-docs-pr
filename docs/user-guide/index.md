@@ -1,43 +1,65 @@
 ---
-title: Get started with VSTS and TFS | VSTS & TFS    
+title: Guide for users new to VSTS and TFS 
 description: Learn the very basics of Visual Studio Team Services (VSTS) and Team Foundation Server (TFS).  
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
-ms.topic: get-started-article  
+ms.technology: vs-devops-overview
 ms.assetid: 00f4ed452-fbb8-45f9-8f0a-343702aac5b8  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 07/20/2017
+ms.date: 08/18/2017
 ---
 
-# New user guide for VSTS and TFS
+# New User Guide
 
-New to Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)? We'll walk you through the basics of the web interface and some common tasks.
+**VSTS | TFS**
+
+New to Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)? 
+
+We'll walk you through the basics of the web interface and some common tasks.  
+
+<!---
+## Overview
+[What is VSTS?](what-is-vsts.md)
+[What is TFS?](what-is-tfs.md)
+[Overview of services](services.md)
+-->
+
 
 ## 5-Minute Quickstarts
 
-Get oriented to the basics of VSTS and TFS.
+Get started with a free account, share your code using Git, and track your work using a Kanban board.  
+
+- [Sign up and invite some teammates](sign-up-invite-teammates.md)  
+- [Code with Git](code-with-git.md)
+- [Set up continuous integration & delivery](../build-release/actions/ci-cd-part-1.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
+- [Plan & track work](plan-track-work.md)
 
 
-![Learn the UI](_img/index/azure-web-app-card.png)   ![Create a repo](_img/index/azure-vm-card.png)   ![Create a Kanban](_img/index/azure-containers-card.png)   
+## Step-by-Step Tutorials  
 
-
-## Tutorials  
-
-* LIST_TUTORIALS_HERE
-
-## Videos
-
-[![Guided tour of the VSTS user interface](_img/index/build-ci-cd-pipeline-vs-video.png)](https://channel9.msdn.com/Events/build-release/2017/P4105/player)   [![Build a backlog and track your work](_img/index/azure-stack-video.png)](#)   [![Create a Git repo for code sharing](_img/index/ci-cd-azure-container-service-video.png)](https://channel9.msdn.com/Events/Connect/2016/204/player)
+- [Set favorites](/vsts/collaborate/set-favorites?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
+- [Follow work and pull requests](../collaborate/follow-work-items.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
+- [Enable preview features](/vsts/collaborate/preview-features?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)  
+ 
 
 ## Concepts  
 
-- [What is VSTS?]()
-- [What is TFS?](concepts/agents/agents.md)
-- [What's the difference between VSTS and TFS?](concepts/process/tasks.md)  
-- [Accounts]
-- [Licensing](concepts/licensing/concurrent-pipelines-ts.md)
+- [Key concepts](concepts.md)    
+- [Source control](source-control.md)   
+- [Kanban & Agile tools](../work/backlogs/overview.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
+- [Clients and tools](tools.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)     
+- [Software development roles](roles.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)   
+- [What's the difference between VSTS and TFS?](about-vsts-tfs.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)  
+
+
+## Reference
+- [Permissions and access](../security/permissions-access.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
+- [Keyboard shortcuts](../collaborate/keyboard-shortcuts.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
+- [Markdown guidance](../collaborate/markdown-guidance.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
+
 
 ## Resources
 
-- VSCOM_RESOURCE_LINKS_HERE
+- [Visual Studio IDE](https://docs.microsoft.com/visualstudio/)
+- [Visual Studio Code](https://code.visualstudio.com/docs)
+- [Visual Studio for Mac](https://docs.microsoft.com/visualstudio/mac)

@@ -1,18 +1,17 @@
 ---
 title: Secure feeds using permissions
-description: Secure feeds using permissions in Package Management in Visual Studio Team Services or Team Foundation Server
+description: Secure feeds using permissions in Package Management in VSTS or Team Foundation Server
 ms.assetid: 70313C3C-2E52-4FFC-94C2-41F1E37C9D26
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-package
-ms.topic: get-started-article
 ms.manager: douge
 ms.author: amullans
-ms.date: 02/13/2017
+ms.date: 11/30/2017
 ---
 
 # Secure feeds using permissions
 
-**Team Services | TFS 2017**
+**VSTS | TFS 2017**
 
 ## Feed permissions overview
 Feeds have three levels of access: Owners, Contributors, and Readers. Owners can add any type of identity&mdash;individuals, teams, and groups&mdash;to any access level.
@@ -40,6 +39,5 @@ Select **Permissions**.
 ![Editing a feed's permissions](_img/editfeeddialog1.png)
 
 In the edit feed dialog:
-- Search for the person or team you want to make an Owner, Contributor, or Reader.
-- Select them or press Enter. 
-- When you're done, select **Save and close**.
+- Choose to make each person or team an Owner, Contributor, or Reader.
+- When you're done, select **Save**.

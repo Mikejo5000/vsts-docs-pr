@@ -1,21 +1,22 @@
 ---
-title: Add WITs to backlogs and boards | Team Services & TFS  
+title: Add work item types to backlogs and boards   
+titleSuffix: VSTS & TFS
 description: Add work item types to customize your tracking capabilities on product backlogs and Kanban, Scrum, Sprint, and task boards when working with team projects that connect to Visual Studio Team Services (VSTS) Team Foundation Server (TFS)  
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: f3e42cd4-912b-4fff-a6f2-cf584edc782a
 ms.manager: douge
 ms.author: kaelli
-ms.date: 03/16/2017
+ms.date: 12/15/2017  
 ---
 
 #Add a work item type to a backlog and board
 
-<b>Team Services (Hosted XML) | TFS 2017 | TFS 2015 | TFS 2013</b>
+[!INCLUDE [temp](../_shared/version-header-hosted-plus-tfs.md)]
 
 
 >[!IMPORTANT]  
->This topic applies to team project customization for Hosted XML and On-premises XML process models. For the Inheritance process model, see [Customize your backlogs or boards for a process](../process/customize-process.md). 
+>This topic applies to team project customization for Hosted XML and On-premises XML process models. For the Inheritance process model, see [Customize your backlogs or boards for a process](process/customize-process.md). 
 >
 >For an overview of process models, see [Customize your work tracking experience](../customize/customize-work.md).   
 
@@ -30,9 +31,9 @@ For example, you may want to track different types of requirements based on thei
 
 
 To add a WIT to track as requirements, tasks, or as bugs perform the corresponding steps:  
-- [Add a WIT to track as requirements](#wit-as-requirements)
-- [Add a WIT to track as tasks](#wit-as-tasks)
-- [Add a WIT to the Bug Category](#wit-as-bugs)
+- [Add a WIT to track as requirements](#wits-as-requirements)
+- [Add a WIT to track as tasks](#wits-as-tasks)
+- [Add a WIT to the Bug Category](#wits-as-bugs)
 
 >[!NOTE]  
 >We recommend that you add a WIT to one and only one of the following categories: Requirement Category, Task Category, or Bug Category. The system prevents you from adding the same WIT to both the Requirement Category and Task Category. WITs that you add to the Bug Category will follow the [bug behavior set for the team](show-bugs-on-backlog.md). 
@@ -42,20 +43,20 @@ To add a WIT to track as requirements, tasks, or as bugs perform the correspondi
 
 ###Hosted XML process model customization sequence  
 >[!NOTE]  
->Use the following guidance if you customize your process through import/export of definition files. Otherwise, if you customize your process through the admin UI, see [Add or modify a custom work item type for a process](../process/customize-process-wit.md).
+>Use the following guidance if you customize your process through import/export of definition files. Otherwise, if you customize your process through the admin UI, see [Add or modify a custom work item type for a process](process/customize-process-wit.md).
 
 You'll make your changes to your process definition files, and then import that process to either update existing team projects or use the process to create a team project. 
 
-- If you aren't the account owner or a member of the Project Collection Administrator's group, [get added](../../setup-admin/add-administrator-tfs.md). 
-- [Export the process you want to update](../import-process/import-process.md) 
+- If you aren't the account owner or a member of the Project Collection Administrator's group, [get added](../../security/set-project-collection-level-permissions.md). 
+- [Export the process you want to update](import-process/import-process.md) 
 -  If you're new to customizing a process, familiarize yourself with the following resources:
-	- [Customize a process for import to Team Services](../import-process/customize-process.md)
+	- [Customize a process for import to VSTS](import-process/customize-process.md)
 
 
 
 ###On-premises XML process model customization sequence 
 You'll first export your work tracking definition files, update them, and then import them to your team project.  
--  If you aren't a member of the Project Administrator or Project Collection Administrator's group, [get added](../../setup-admin/add-administrator-tfs.md). 
+-  If you aren't a member of the Project Administrator or Project Collection Administrator's group, [get added](../../security/set-project-collection-level-permissions.md). 
 -  Update your team project to [enable the latest features](configure-features-after-upgrade.md)
 -  [Export the following objects from your team project](#import-export): 
 	- WIT you want to add to backlogs and boards (if you haven't created it, [do that now](https://msdn.microsoft.com/library/ms404855.aspx))
@@ -64,7 +65,7 @@ You'll first export your work tracking definition files, update them, and then i
 -  If you're new to customizing work tracking objects, familiarize yourself with the following resources:  
 	- [Add or modify a field](add-modify-field.md)  
 	- [Add or modify a work item type](add-modify-wit.md)  
-	- [ProcessConfiguration XML reference](../reference/process-configuration-xml-element.md). 
+	- [ProcessConfiguration XML reference](reference/process-configuration-xml-element.md). 
 
 
 <a id="wits-as-requirements">  </a>
@@ -207,7 +208,7 @@ WITs that you add to the Requirement Category show up on the product backlog and
 	```<WorkItemColor primary="FF33CC33" secondary="FFD6F5D6" name="Service App" />```  
 
 6.	Update your team project:  
-	- **Hosted XML:**  [Import your process](../import-process/import-process.md).  
+	- **Hosted XML:**  [Import your process](import-process/import-process.md).  
 	- **On-premises XML:**  [Import the definition files you updated](#import-export) in this order:  
 		a. WIT 
 		b. Categories  
@@ -372,7 +373,7 @@ WITs that you add to the Task Category show up on the sprint backlogs and task b
 	```<WorkItemColor primary="FFF2CB1D" secondary="FFF6F5D2" name="Service Task" />```
 
 6.	Update your team project:  
-	- **Hosted XML:**  [Import your process](../import-process/import-process.md).  
+	- **Hosted XML:**  [Import your process](import-process/import-process.md).  
 	- **On-premises XML:**  [Import the definition files you updated](#import-export) in this order:  
 		a. WIT  
 		b. Categories   
@@ -390,7 +391,7 @@ WITs that you add to the Task Category show up on the sprint backlogs and task b
 
 WITs that you add to the Bug Category will be treated based on the [team setting](show-bugs-on-backlog.md). Because these WITs may be treated either as requirements or tasks, they must meet Agile planning tool requirements for both requirements and tasks.  
 1.	Export your process (Hosted XML) or your definition files (On-premises XML) as indicated in [First steps](#first-steps).
-2.	Edit the WIT definition to support planning tools by meeting the conditions listed for Step 2 of [Add a WIT to track as requirements](#wit-as-requirements) and [Add a WIT to track as tasks](#wit-as-tasks).  
+2.	Edit the WIT definition to support planning tools by meeting the conditions listed for Step 2 of [Add a WIT to track as requirements](#wits-as-requirements) and [Add a WIT to track as tasks](#wits-as-tasks).  
 
 3.	Edit the Categories definition. Add the WIT to the Bug Category. Here we add two WITs.  
 
@@ -426,7 +427,7 @@ WITs that you add to the Bug Category will be treated based on the [team setting
 	```<WorkItemColor primary="FFFF00FF" secondary="FFFFCCFF" name="Feedback" />```
 
 6.	Update your team project:  
-	- **Hosted XML:**  [Import your process](../import-process/import-process.md).  
+	- **Hosted XML:**  [Import your process](import-process/import-process.md).  
 	- **On-premises XML:**  [Import the definition files you updated](#import-export) in this order:  
 		a. WIT  
 		b. Categories   
@@ -438,20 +439,13 @@ WITs that you add to the Bug Category will be treated based on the [team setting
 
 <a id="import-export">  </a>
 ##Import and export definition files (On-premises XML) 
-Use the **witadmin** commands to import and export definition files. For details, see [witAdmin: Customize and manage objects for tracking work](../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md).   
+Use the **witadmin** commands to import and export definition files. For details, see [witAdmin: Customize and manage objects for tracking work](reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md).   
 
 [!INCLUDE [temp](../_shared/process-editor.md)]  
 
+[!INCLUDE [temp](../_shared/witadmin-run-tool-example.md)] 
 
-1. Open a Command Prompt window where  Visual Studio is installed and enter:  
-
-	```cd %programfiles(x86)%\Microsoft Visual Studio 14.0\Common7\IDE```  
-
-	On a 32-bit edition of Windows, replace ```%programfiles(x86)%``` with ```%programfiles%```. 
-
-	The version of Visual Studio must be at the same version as the on-premises TFS. 
-
-2.	Enter the ```witadmin``` command, substituting your data for the arguments that are shown. For example, to import a WIT:   
+0.	Enter the ```witadmin``` command, substituting your data for the arguments that are shown. For example, to import a WIT:   
 
 	```witadmin importwitd /collection:CollectionURL /p:"ProjectName" /f:"DirectoryPath\WITDefinitionFile.xml"```
 
@@ -483,4 +477,4 @@ We've just shown how to add another WIT to your backlogs or boards. However, if 
 
 See [Customize your work tracking experience](customize-work.md) for an overview of all the options available for customizing work tracking objects. 
 
-To learn how hierarchical or nested elements are displayed on a backlog or board, see [How backlogs and boards display hierarchical (nested) items](../troubleshoot/resolve-backlog-reorder-issues.md).
+To learn how hierarchical or nested elements are displayed on a backlog or board, see [How backlogs and boards display hierarchical (nested) items](../backlogs/resolve-backlog-reorder-issues.md).

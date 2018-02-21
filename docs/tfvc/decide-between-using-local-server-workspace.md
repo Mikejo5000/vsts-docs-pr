@@ -5,13 +5,13 @@ ms.assetid: 492696f5-cafe-4090-af07-6dbbb0bd6a86
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfvc
 ms.manager: douge
-ms.author: routlaw
+ms.author: sdanie
 ms.date: 08/10/2016
 ---
 
 # Decide between using a local or a server workspace
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 When you [create or edit a workspace](create-work-workspaces.md), you can specify whether its location is **Local** or **Server**. In most cases, local is best because it provides several advantages. Most notably, you can perform core version control operations even when you're not connected to your Team Foundation Server.
 
@@ -76,7 +76,7 @@ If working offline is important to you, then you should consider using a local w
 
 3.  In **Solution Explorer**, open the context menu for the files that you edited offline, and then choose **Check In** to commit the changes to the server.
 
-<a name="Admin_Settings">
+<a name="Admin_Settings"><a/>
 
 ## Manage team project collection workspace settings for your team
 
@@ -103,7 +103,7 @@ If you are an [administrator](https://msdn.microsoft.com/library/ms253077), you 
  
 ### Q: Someone checked out a file even though a check-out lock was applied to it. How did this happen?
 
-**A:** The use of local workspaces makes [check-out locks](understand-lock-types.md) un-enforceable. If you have [sufficient permissions](../setup-admin/permissions.md#tfvc) you can use the [workspaces command](workspaces-command.md) to see the local workspaces being used in your team project collection.
+**A:** The use of local workspaces makes [check-out locks](understand-lock-types.md) un-enforceable. If you have [sufficient permissions](../security/permissions.md#tfvc) you can use the [workspaces command](workspaces-command.md) to see the local workspaces being used in your team project collection.
 
     tf workspaces /format:detailed /owner:* /collection:https://YourServer/YourCollection/
 

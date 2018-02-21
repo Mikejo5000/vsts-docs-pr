@@ -5,19 +5,19 @@ ms.assetid: 468ab1f4-f565-41d9-a5ad-1481ad29b176
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfvc
 ms.manager: douge
-ms.author: routlaw
+ms.author: sdanie
 ms.date: 08/10/2016
 ---
 
 # Unshelve Command
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Restores shelved file revisions, check-in notes, comments, and work item associations to the current workspace or removes an existing shelveset from the server.
 
 **Required Permissions**
 
-To use the **unshelve** command, you must have the **Read** permission set to **Allow**, and you must have the **Check out** permission for the items in the shelveset set to **Allow**. Additionally, to delete a shelveset, you must be its owner or have the **Administer shelved changes** global permission set to **Allow**. For more information, see [Team Foundation Server Permissions](../setup-admin/permissions.md).
+To use the **unshelve** command, you must have the **Read** permission set to **Allow**, and you must have the **Check out** permission for the items in the shelveset set to **Allow**. Additionally, to delete a shelveset, you must be its owner or have the **Administer shelved changes** global permission set to **Allow**. For more information, see [Permissions and groups reference](../security/permissions.md).
 
     tf unshelve [/move] [shelvesetname[;username]] itemspec 
     [/recursive] [/noprompt][/login:username,[password]]

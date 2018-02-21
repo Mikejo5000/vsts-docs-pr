@@ -1,7 +1,7 @@
 ---
-title: Build and test integration queries | Team Services & TFS
+title: Build and test integration queries 
 description: Track work by creating queries based on build and test integration fields in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 6e162a82-c98b-4c94-862c-addcdcbc182d
 ms.manager: douge
@@ -12,7 +12,7 @@ ms.date: 04/14/2017
 
 # Query based on build and test integration fields
 
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 Build and test integration work item fields support the following actions:  
 -   Associate bugs with the builds where they were found or fixed  
@@ -66,14 +66,14 @@ Build and test integration work item fields support the following actions:
 
 Open a new query, set the query type to Work items and direct links. Filter for bugs in the top-level and add the filter for Test Cases in the linked work items filter. 
 
-<img src="_img/query-build-integration-bugs-linked-test-cases.png" alt="List bugs and the test cases that test them" style="border: 1px solid #CCCCCC;" />
+<img src="_img/query-build-integration-bugs-linked-test-cases.png" alt="List bugs and the test cases that test them" style="border: 2px solid #C3C3C3;" />
 
 >[!NOTE]  
 >You can't construct a query that shows a hierarchical view of Test Plans, Test Suites, and Test Cases. These items aren't linked together using parent-child link types. You can [view the hierarchy through the Test Plans page of the Test hub](../../manual-test/getting-started/create-a-test-plan.md). 
 
 ## Build and test data fields  
 
-The following table describes the fields that are defined in one or more of the test WITs. For information about data types and field attributes, see [Define and modify work item fields](../reference/define-modify-work-item-fields.md).
+The following table describes the fields that are defined in one or more of the test WITs. For information about data types and field attributes, see [Define and modify work item fields](../customize/reference/define-modify-work-item-fields.md).
 
 To customize a field or pick list, see [Add or modify a field to support queries, reports, and workflow](../customize/add-modify-field.md).
 
@@ -106,7 +106,7 @@ To customize a field or pick list, see [Add or modify a field to support queries
 <td><p>Product build number, also known as a revision, in which a bug was found.</p>
 <p>Reference name=Microsoft.VSTS.Build.FoundIn, Data type=String</p>
 <blockquote>
-**Note:** You can also use the **Found in build** link type to link a work item to a build. This link type is available from Team Services and only work with the current build processes (not XAML builds).   
+**Note:** You can also use the **Found in build** link type to link a work item to a build. This link type is available from VSTS and only work with the current build processes (not XAML builds).   
 </blockquote>
 </td>
 <td>Bug</td>
@@ -117,7 +117,7 @@ To customize a field or pick list, see [Add or modify a field to support queries
 <td><p>Product build number that incorporates the code or fixes a bug.</p>
 <p>Reference name=Microsoft.VSTS.Build.IntegrationBuild, Data type=String</p>
 <blockquote>
-**Note:** You can also use the **Integrated in build** link type to link a work item to a build. This link type is available from Team Services and only work with the current build processes (not XAML builds).  
+**Note:** You can also use the **Integrated in build** link type to link a work item to a build. This link type is available from VSTS and only work with the current build processes (not XAML builds).  
 </blockquote>
 </td>
 <td>All</td>
@@ -265,7 +265,7 @@ The following fields do not appear on work item forms, but these fields are trac
 
 ## Related notes
 
-- [Work item field index](../guidance/work-item-field.md)  
+- [Work item field index](../work-items/guidance/work-item-field.md)  
 - [Drive Git development from a work item](../backlogs/connect-work-items-to-git-dev-ops.md) 
 - [Link work items to support traceability and manage dependencies](link-work-items-support-traceability.md)  
 - [Link and attachment queries](linking-attachments.md)

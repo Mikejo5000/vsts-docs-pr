@@ -1,28 +1,43 @@
 ---
-title: Advanced search options in Microsoft Work Item Search in VS Team Services
-description: Advanced options for Work Item Search in Visual Studio Team Services
+title: Advanced search options in Microsoft Work Item Search in VS VSTS
+description: Advanced options for Work Item Search in VSTS
 ms.assetid: B64E70C5-E5B2-49E6-BD05-FF5932F9894C
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-search
 ms.manager: douge
 ms.author: ahomer
-ms.date: 12/04/2016
+ms.date: 01/18/2018
 ---
 
-# Advanced Work Item Search options
+# How To: Use Work Item Search
 
-[!INCLUDE [version-header-shared-tsonly](../_shared/version-header-shared-tsonly.md)]
+[!INCLUDE [version-header-shared-vsts-tfs](../_shared/version-header-shared-vsts-tfs.md)]
 
-You can:
+Work Item Search is available as a built-in extension in Visual Studio Team Services (VSTS).
+Users can use Work Item Search by default without any installation.
 
-* [Use full text search across all fields](#acrossfield)
-* [Use quick inline filters for matching in specific field](#quickfilters)
-* [Use functions to specify projects, area and iteration paths](#locationfunctions)
-* [Use work item IDs to quickly navigate to the work item](#quicknavigation)
-* [Use Boolean operators to create specific searches](#boolean)
-* [Use wildcards to broaden your search criteria](#wildcards)
+By using Work Item Search you can:
 
-[!INCLUDE [shared-back-to-overview](../_shared/shared-back-to-overview.md)]
+* **Search over all your projects**:
+  Search in your own and your partner teams' backlog. Use cross-project 
+  searches over all the work items in your VSTS account to search 
+  across your organization's entire work items. Narrow your search by using project and 
+  area path filters. 
+  
+* **Search across all work item fields**:
+  Quickly and easily find relevant work items by searching across all work item fields
+  (including custom fields). Use a full text search across all fields to efficiently
+  locate relevant work items. The snippet view indicates where matches were found.<p />
+  
+* **Search in specific fields**:
+  Use the quick in-line search filters, on any work item field, to narrow down to a
+  list of work items in seconds. The dropdown list of suggestions helps complete your
+  search faster. For example, a search such as **AssignedTo:Chris WorkItemType:Bug
+  State:Active** finds all active bugs assigned to a user named Chris. 
+
+* **Take advantage of integration with work item tracking**:
+  The Work Item Search interface integrates with familiar controls in the **Work** hub,
+  letting you view, edit, comment, share, and much more.
 
 <a name="acrossfield"></a>
 ## Full text search across all fields
@@ -30,11 +45,27 @@ You can:
 You can easily search across all work item fields, including custom fields, 
 which enables more natural searches. The snippet view indicates where matches were found.
 
-<img src="_img/get-started/NewSearchAcross.gif" width="710" height="400" border="0"></img>  
+<img alt="Search across all work item fields" src="_img/get-started/NewSearchAcross.gif" width="710" height="400" border="0"></img>  
 
 Use simple search strings for words or phrases. Work item search matches derived forms 
 of your search terms; for example, a search for "updating" will also find instances of the word 
 "updated" and "update". Note that searches are _not_ case-sensitive.
+
+When you search from inside a project, the default is to search only within that 
+project. When you search from inside a team, the default is to search 
+only within the default area path of that team. When you have one project selected, 
+you see a list of area paths in that project for which you have read access - 
+you won't see any projects and area paths for which you don't have read permission. 
+Select area paths in the tree to narrow your search if required.
+
+The selected projects are always at the top of the list.
+Notice that hit counts are also shown for projects that are not selected. 
+
+Open the search results in a new browser tab from either search box by
+pressing _Ctrl_ + _Enter_ or by holding _Ctrl_ and clicking  the
+![start search icon](../_img/_shared/start-search-icon.png) icon.
+In Google Chrome, press _Ctrl_ + _Shift_ + _Enter_ to switch the focus
+to the new browser tab. 
 
 <a name="quickfilters"></a>
 ## Quick Filters for matching in specific fields
@@ -56,7 +87,7 @@ For example, a search such as **t: Bug CreatedDate> @Today-7** finds all bugs cr
 * For the search query that contain multiple terms and users looking for exact match, embed the search term inside " ";
 for example, a search such as **BuildPath: "tools.demoproject.com"** finds all work items that neccesarily contain the path "tools.demoproject.com". 
 
-<img src="_img/get-started/NewFilters.gif" width="710" height="400" border="0"></img>  
+<img alt="Quick inline search filters let you refine work items in seconds" src="_img/get-started/NewFilters.gif" width="710" height="400" border="0"></img>  
 
 ## Quick Filters shortcuts
 
@@ -88,7 +119,7 @@ Narrow the search to a specific location using the `proj`, `area`, or `iteration
 <a name="quicknavigation"></a>
 ## Quickly navigate to a work item using its ID
 
-Type or paste the work item ID in the search box in the Team Services title bar 
+Type or paste the work item ID in the search box in the VSTS title bar 
 to quickly navigate to it. Searching for a work item ID opens the work item in a 
 modal dialog, providing quick access to read and edit work items.
 
@@ -138,7 +169,8 @@ other search filter functions; for example, the search query strings
 
 You can use more than one `?` wildcard to match more than one character.
 
-![Horizontal line](../_img/_shared/horizontal-line.png)  
+-----------------
+
 ![Warning](../_img/_shared/Warning-hightop.png) **No results found for ...**  
 
 * If there are no results matching the input, try removing filters and retry the search. This will broaden the search and after you view the search results,
@@ -152,9 +184,23 @@ You can use more than one `?` wildcard to match more than one character.
  of matches. For example, specify more characters of the word(s) you want to find,
  or add a condition or filter to limit the number of possible matches.
 
+-----------------
 
-![Horizontal line](../_img/_shared/horizontal-line.png)  
+<a name="seemoreworkitem"></a>
+## See more of the work item
 
-[!INCLUDE [shared-back-to-overview](../_shared/shared-back-to-overview.md)]
+You can quickly get a full screen view of the selected work item using the expand
+![Expand the file to fullscreen](../_img/_shared/fullscreen-icon-expand.png)
+and shrink ![Shrink the file to a window](../_img/_shared/fullscreen-icon-shrink.png)
+icons in the toolbar. However, another way to see more of the work item, while still being able to 
+select work items from the list of matching results, is to hide the left column filter pane
+by choosing the **&lt;** icon at the top left of the column. Use the **&gt;** icon to restore the filter pane. 
+
+If you are using a portrait orientation screen, use the **Preview pane: Right**
+link at the top right of the window to display the code below the 
+search results list.
+
+>Search remembers the state of the filter pane, configuration of the work item 
+view pane, and its position between sessions as part of your user preferences.
 
 [!INCLUDE [shared-got-feedback](../_shared/shared-got-feedback.md)]

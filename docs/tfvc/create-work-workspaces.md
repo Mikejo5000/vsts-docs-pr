@@ -11,7 +11,7 @@ ms.date: 05/12/2017
 
 # Create and work with workspaces
 
-**Team Services | TFS 2017 | TFS 2015 | Visual Studio 2017, 2015, and 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Your workspace is your local copy of the team’s codebase. This is where you develop and test your code in isolation until you are ready to check in your work. In most cases the only workspace you need is created automatically for you and you don’t have to edit it.
 
@@ -19,7 +19,7 @@ In some cases, you might want to modify your workspace or create multiple worksp
 
 ## Add, edit, or remove a workspace
 
-After you have [connected to the team project](../setup-admin/team-services/connect-to-visual-studio-team-services.md#TEEConnect) (Keyboard: Ctrl + 0, C), you can manage your workspaces from the Team Explorer home page (Keyboard: Ctrl + 0, H)
+After you have [connected to the team project](../user-guide/connect-team-projects.md) (Keyboard: Ctrl + 0, C), you can manage your workspaces from the Team Explorer home page (Keyboard: Ctrl + 0, H)
 
 ![Manage workspaces from Team Explorer](_img/create-work-workspaces/IC698935.png)   
    
@@ -41,7 +41,7 @@ If you want to remove the workspace, before you do so, make sure there are no pe
 
 When you switch from one workspace to another, to avoid confusing yourself, make sure you switch to the same workspace in both **Team Explorer** and **Source Control Explorer**.
 
-1.  [Connect to the team project](../setup-admin/team-services/connect-to-visual-studio-team-services.md#TEEConnect) (Keyboard: Ctrl + 0, C).
+1.  [Connect to the team project](../user-guide/connect-team-projects.md) (Keyboard: Ctrl + 0, C).
 
 2.  On the home page (Keyboard: Ctrl + 0, H) choose the workspace you want to use.
 
@@ -53,7 +53,7 @@ When you switch from one workspace to another, to avoid confusing yourself, make
 
 ## Work from the command prompt
 
-You can create and manage your workspaces from the command prompt. You can also perform some tasks that are not possible in Visual Studio. For example, you can delete another user’s workspace if you have [sufficient permissions](../setup-admin/permissions.md#tfvc). See [Workspace Command](workspace-command.md), [Workspaces Command](workspaces-command.md), and [Workfold Command](workfold-command.md).
+You can create and manage your workspaces from the command prompt. You can also perform some tasks that are not possible in Visual Studio. For example, you can delete another user’s workspace if you have [sufficient permissions](../security/permissions.md#tfvc). See [Workspace Command](workspace-command.md), [Workspaces Command](workspaces-command.md), and [Workfold Command](workfold-command.md).
 
 ## Q & A
 
@@ -73,7 +73,7 @@ If your team has a large and complex codebase or if you want your workspace to c
 
 #### Q: Can I reuse and share folder mappings?
 
-**A:** Yes. If you want to reuse or share folder mappings with other team members, you can copy the folder mappings. Simply open the shortcut menu in the **Working folders** list and choose **Copy**. To reuse the folder mappings, paste them into another version control workspace or a [build definition workspace](../build-release/define/repository.md). To share the folder mappings with your teammates, paste them into a text file and then share the file.
+**A:** Yes. If you want to reuse or share folder mappings with other team members, you can copy the folder mappings. Simply open the shortcut menu in the **Working folders** list and choose **Copy**. To reuse the folder mappings, paste them into another version control workspace or a [build definition workspace](../build-release/concepts/definitions/build/repository.md). To share the folder mappings with your teammates, paste them into a text file and then share the file.
 
 #### Q: What does “Cloaked” mean?
 
@@ -121,4 +121,4 @@ If your team has a large and complex codebase or if you want your workspace to c
 
 #### Q: I work at a remote site. Is there any way I can save bandwidth?
 
-**A:** [Install Team Foundation Proxy and set up a remote site](../setup-admin/tfs/install/install-proxy-setup-remote.md).
+**A:** [Install Team Foundation Proxy and set up a remote site](../tfs-server/install/install-proxy-setup-remote.md).

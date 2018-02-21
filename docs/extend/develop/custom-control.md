@@ -1,10 +1,9 @@
 ---
-title: Add a custom control to the work item form | Extensions for Visual Studio Team Services
+title: Add a custom control to the work item form | Extensions for VSTS
 description: Describes how to extend the work item form by adding a custom control.
 ms.prod: vs-devops-alm
 ms.contentid: 0956ACA7-B1C4-443F-A79A-A62EDD02FC15
-ms.technology: vs-devops-integrate
-ms.topic: get-started-article
+ms.technology: vs-devops-extensions-api
 ms.manager: douge
 ms.author: elbatk
 ---
@@ -28,7 +27,7 @@ and it should target the `ms.vss-work-web.work-item-form` contribution.
         "type": "ms.vss-work-web.work-item-form-control",
         "description": "Custom work item form control",
         "targets": [
-            "ms.vss-work-web.work-item-control"
+            "ms.vss-work-web.work-item-form"
         ],
         "properties": {
             "name": "My Control",
@@ -49,9 +48,9 @@ The work item form adds an iframe to host the custom control.
 | ```uri```          | URI to a page that hosts the html that is loaded by the iframe.
 | ```height```       | (Optional) Defines the height of the iframe. When omitted, it is 50 pixels.
 
-If you want to dynamically resize the iframe, you can use the [resize method](https://www.visualstudio.com/en-us/docs/integrate/extensions/reference/client/core-sdk#method_resize) available in the client SDK. 
+If you want to dynamically resize the iframe, you can use the `resize method` available in the client SDK. 
 
-A custom control on the work item form is another type of [contribution](https://www.visualstudio.com/en-us/docs/integrate/extensions/develop/contributions-overview) like [group & page contribution](https://www.visualstudio.com/en-us/docs/integrate/extensions/develop/add-workitem-extension). The main difference between a control contribution and group and page contribution is that a control contribution can take a set of user inputs while group and page contributions can not. 
+A custom control on the work item form is another type of [contribution](./contributions-overview.md) like [group & page contribution](./add-workitem-extension.md). The main difference between a control contribution and group and page contribution is that a control contribution can take a set of user inputs while group and page contributions can not. 
 
 ## Control Contribution Inputs
 To define the inputs for your control contribution, use `inputs` property in the contribution object in the manifest. In the sample below you see two inputs, FieldName and Colors.  `FieldName` specifies which field the control associates with.  `Colors` configures which colors map to which values in the control. The values for the inputs are provided by the users when they add it to the work item form and the values would be passed to the control contribution when its loaded on the form.

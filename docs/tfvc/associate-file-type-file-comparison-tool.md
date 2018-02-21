@@ -5,18 +5,18 @@ ms.assetid: 3cda923d-7bd8-4ff7-a071-03d8cf60d509
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfvc
 ms.manager: douge
-ms.author: routlaw
+ms.author: sdanie
 ms.date: 08/10/2016
 ---
 
 # Associate a file type with a file-comparison tool
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 You can compare text files by using the default file-comparison tool integrated with Visual Studio, the [Diff window](compare-files.md). However, you can, for file types that you specify, enable the file-comparison tool that you prefer to use. You can use any comparison tool that supports, as command-line arguments, the full paths of the two files that you want to compare.
 
 **Required Permissions**  
-To perform this procedure, you must be a member of the **Administrators** or **Users** security group on the computer where Visual Studio is installed. For more information, see [Pernission reference for Team Foundation Server](../setup-admin/permissions.md).
+To perform this procedure, you must be a member of the **Administrators** or **Users** security group on the computer where Visual Studio is installed. For more information, see [Permissions and groups reference](../security/permissions.md).
 
 ### To associate a file type with a third-party compare tool
 

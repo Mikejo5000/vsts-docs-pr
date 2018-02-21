@@ -5,19 +5,19 @@ ms.assetid: 34e29de4-0972-4e32-9d3d-26dc09f00713
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfvc
 ms.manager: douge
-ms.author: routlaw
+ms.author: sdanie
 ms.date: 08/10/2016
 ---
 
 # View file changes using annotate
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 You can annotate a file to learn who made changes and what changes they made in all earlier versions of the file.
 
 **Required Permissions**
 
-To perform these procedures, you must have the **Read** permission set to **Allow**. For more information, see [Permission reference for Team Foundation Server](../setup-admin/permissions.md).
+To perform these procedures, you must have the **Read** permission set to **Allow**. For more information, see [Permissions and groups reference](../security/permissions.md).
 
 ### To annotate a file
 

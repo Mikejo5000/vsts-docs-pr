@@ -6,12 +6,12 @@ ms.technology: vs-devops-reporting
 ms.assetid: c4e804d5-1549-41c0-a365-28fdec77bffe
 ms.manager: douge
 ms.author: kaelli
-ms.date: 12/30/2016
+ms.date: 10/17/17
 ---
 
 # Test Case Readiness report
 
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 After the team starts to define test cases, you can use the Test Case Readiness report to determine how many test cases have been defined and are ready to run.  
   
@@ -109,5 +109,5 @@ After the team starts to define test cases, you can use the Test Case Readiness 
 2.  Click **View Report**.  
   
 ## Related notes
- [Reporting Services Reports](reporting-services-reports.md)
-- 
+- [Reporting Services Reports](reporting-services-reports.md)
+

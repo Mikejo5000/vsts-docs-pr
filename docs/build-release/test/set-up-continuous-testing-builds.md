@@ -1,35 +1,43 @@
 ---
-title: Set up continuous testing for your builds - Visual Studio Team Services and Team Foundation Server
-description: Set up continuous testing for your builds in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)
+title: Set up continuous testing for your builds
+description: Set up continuous testing for your builds in VSTS and TFS 
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-continuous
+ms.technology: vs-devops-build
 ms.assetid: 7849EF41-BE1A-4342-B1DA-583DB6DD1831
 ms.manager: douge
 ms.author: ahomer
-ms.date: 06/15/2017
+ms.date: 01/18/2018
 ---
 
 # Set up continuous testing for your builds
 
 [!INCLUDE [version-header-ts-tfs](_shared/version-header-ts-tfs.md)]
 
-Find problems early after changes are checked in and built by running continuous tests using Visual Studio Team Services or Team Foundation Server.
+Find problems early after changes are checked in and built by running continuous tests using Visual Studio Team Services (VSTS) or Team Foundation Server (TFS).
 
-Before you start:
+**NOTE**: You can use version 2.x or higher of the [Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTest/README.md) task to deploy and run
+unit and functional tests without requiring the **Deploy Test Agent** and **Run Functional Tests** tasks,
+and run tests on platforms that don't have Visual Studio installed by using the 
+[Visual Studio Test Platform](https://blogs.msdn.microsoft.com/devops/2016/07/25/evolving-the-visual-studio-test-platform-part-1/). 
+
+For more details, see [Testing with unified agents and phases](test-with-unified-agent-and-phases.md).
+
+## Before you start
 
 * [Create a build definition](../../build-release/overview.md) that builds your solution after each check-in, using continuous integration.
 
 * [Set up environments](set-up-continuous-test-environments-builds.md) to run your app and tests remotely in a distributed environment after each build.
 
-## Step 1: Set up app deployment for your build
+## Set up app deployment for your build
 
-1. In Visual Studio Team Services or Team Foundation Server, go to your team project.
+1. In VSTS or TFS, go to your team project.
 
-1. Go to your build definition. Add steps to deploy your app for testing. For example, if you're testing a Visual Studio solution:
+1. Go to your build definition and open it for editing.
 
    ![Edit build definition](_img/edit-build-definition.png)
-
-   ![Add a step to your build definition](_img/set-up-continuous-testing-builds/add-build-step.png)
+   
+1. Choose the **+** icon for the process phase and add steps to deploy your app for testing. For example, if you're testing a Visual Studio solution
+   and want to use the **Window Machine File Copy** and **PowerShell on Target Machines** steps:
 
    ![Add File Copy and PowerShell steps](_img/set-up-continuous-testing-builds/add-file-copy-powershell-steps.png)
 
@@ -39,7 +47,7 @@ Before you start:
 
    * List of machines where you want to deploy your app
 
-   * Credentials to connect to the target machines  
+   * Credentials to connect to the target machines
 
    * Target folder where to put your app
 
@@ -53,7 +61,7 @@ Before you start:
    Using a variable means that you can change the list of machines in one place
    and have the change apply to all the tasks that use the variable.
 
-1. Add the details to deploy your app using PowerShell:
+1. Add the details to deploy your app using PowerShell.
 
    * List of machines where you want to deploy your app
 
@@ -67,9 +75,16 @@ Before you start:
 
    ![Build definition: save](_img/set-up-continuous-testing-builds/save-build-definition.png)
 
-## Step 2: Set up test deployment for your build
+## Set up test deployment for your build
 
-1. In your build definition, add a step with these details to deploy your tests:
+**NOTE**: You can use version 2.x of the [Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTest/README.md) task to deploy and run
+unit and functional tests without requiring the **Deploy Test Agent** and **Run Functional Tests** tasks,
+and run tests on platforms that don't have Visual Studio installed by using the 
+[Visual Studio Test Platform](https://blogs.msdn.microsoft.com/devops/2016/07/25/evolving-the-visual-studio-test-platform-part-1/). 
+
+If you want to use the **Deploy Test Agent** and **Run Functional Tests** tasks:
+
+1. In your build definition, add a **Window Machine File Copy** step with these details to deploy your tests:
 
    * Source folder for your tests
 
@@ -95,7 +110,7 @@ Before you start:
 
    ![Build definition: save](_img/set-up-continuous-testing-builds/save-build-definition.png)
 
-## Step 3: Set up your tests to run with your build
+## Set up your tests to run with your build
 
 1. In your build definition, add a step with these details to run your tests with the test agent:
 
@@ -105,11 +120,7 @@ Before you start:
 
    ![Build definition: Run tests with test agent](_img/set-up-continuous-testing-builds/run-tests-with-test-agent.png)
 
-1. Save your build definition.
-
-   ![Build definition: save](_img/set-up-continuous-testing-builds/save-build-definition.png)
-
-1. To check your test run, queue your build.
+1. Save your build definition and queue a build to check your test run.
 
    ![Build definition: queue build](_img/queue-build.png)
 
@@ -117,9 +128,13 @@ Before you start:
 
 ## See also
 
+* [Visual Studio Test task](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTest/README.md)
+* [Visual Studio Test Platform](https://blogs.msdn.microsoft.com/devops/2016/07/25/evolving-the-visual-studio-test-platform-part-1/)
 * [Set up environments for continuous testing with your builds](set-up-continuous-test-environments-builds.md)
 * [Review continuous test results after a build](review-continuous-test-results-after-build.md)
 * [Run tests with your builds](getting-started-with-continuous-testing.md)
 * [End-to-end example of continuous testing](example-continuous-testing.md)
+* [Speed up testing with Test Impact Analysis](test-impact-analysis.md)
+* [Run tests in parallel](run-tests-in-parallel.md)
 
 [!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 

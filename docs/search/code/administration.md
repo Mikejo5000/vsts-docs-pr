@@ -1,59 +1,59 @@
 ---
-title: Set up and administration for Microsoft Code Search & Work Item Search in Visual Studio Team Services and Team Foundation Server
+title: Code and Work Item Search set up
 description: Setup notes and administration links for Microsoft Code Search & Work Item Search in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.assetid: A78DC9CF-4ADD-46D7-9E25-D1A0764FCB06
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-search
 ms.manager: douge
 ms.author: douge
-ms.date: 08/04/2016
+ms.date: 01/18/2018
 ---
 
-# Set up and administer Microsoft Code Search/Work Item Search
+# Set up and administer Microsoft Code Search and Work Item Search
 
-[!INCLUDE [version-header-shared](../_shared/version-header-shared.md)]
+[!INCLUDE [version-header-shared-vsts-tfs](../_shared/version-header-shared-vsts-tfs.md)]
 
 In this topic:
 
-* **Configure Code Search in Team Services**
+* **Configure Code Search in VSTS**
   - [Install the Code Search extension](#config-ts)
   - [Uninstall the Code Search extension](#uninstall-ts)<p />
 
 * **Configure Search in Team Foundation Server**
   - [Configure Search](#config-tfs)
   - [Secure Search](#secure-search)
-  - [Upgrade Search](#upgrading-search) (new!)
+  - [Upgrade Search](#upgrading-search)
   - [Manage Search](#manage-tfs)
   - [Uninstall Search](#uninstall-tfs)
   - [Limitations of Search](#limit-tfs)
   - [Troubleshoot Search](#trouble-tfs)
 
-Also see [Install and configure TFS](../../setup-admin/tfs/install/get-started.md)
-and [TFS requirements and compatibility](../../setup-admin/requirements.md).
+Also see [Install and configure TFS](../../tfs-server/install/get-started.md)
+and [TFS requirements and compatibility](../../accounts/requirements.md).
 
 >Users with at least a **Basic** access can use Code Search. 
 Stakeholders do not have access to code, and therefore no access to Code Search. 
 All users have access to Work Item Search.
 
 <a name="config-ts"></a>
-## Install Code Search in Team Services
+## Install Code Search in VSTS
 
 Go to [Visual Studio Marketplace](http://go.microsoft.com/fwlink/?LinkId=703823&clcid=0x409)
-to install the extension in your Team Services account as an administrator.
-Non-administrative users can also go here to request the extension be added to Team Services. 
+to install the extension in your VSTS account as an administrator.
+Non-administrative users can also go here to request the extension be added to VSTS. 
 
-For more details, see [Install an extension](../../marketplace/get-vsts-extensions.md#install-extension) in the Marketplace documentation.
+For more details, see [Install an extension](../../marketplace/install-vsts-extension.md#install-extension) in the Marketplace documentation.
 
 <a name="uninstall-ts"></a>
-## Uninstall Code Search in Team Services
+## Uninstall Code Search in VSTS
 
-See [Uninstall or disable an extension](../../marketplace/get-vsts-extensions.md#uninstall-disable-extension) in the Marketplace documentation. 
+See [Uninstall or disable an extension](../../marketplace/uninstall-disable-vsts-extensions.md) in the Marketplace documentation. 
 
 <a name="config-tfs"></a>
 ## Configure Code Search/Work Item Search in Team Foundation Server
 
-Code Search is available in Microsoft Team Foundation Server 2017 and later.
-Work Item Search is available in Microsoft Team Foundation Server 2017 Update 2 and later.
+Code Search is available in TFS 2017 and later.
+Work Item Search is available in TFS 2017 Update 2 and later.
 Configure the Search service using the dedicated pages in the TFS Configuration Wizard
 as you install TFS. You can also [configure and unconfigure Search](#uninstall-tfs)
 afterwards by running the TFS Configuration Wizard again or lauching the Search Configuration Wizard.
@@ -331,11 +331,14 @@ the **SqlScripts** folder and its contents is present, along with the PowerShell
 
 ![Download script files for administration](_img/administration/script-filesv2.png)
 
-**NOTE**: When executing scripts, ensure you run the appropriate script for your TFS version:
-
-* [TFS 2017 RTM](https://github.com/Microsoft/Code-Search/tree/master/TFS_2017RTW)
-* [TFS 2017 Update 1](https://github.com/Microsoft/Code-Search/tree/master/TFS_2017Update1)
-* [TFS 2017 Update 2](https://github.com/Microsoft/Code-Search/tree/master/TFS_2017Update2)
+> [!NOTE]
+> When executing scripts, ensure you run the appropriate script for your TFS version:
+> 
+> * [TFS 2017 RTM](https://github.com/Microsoft/Code-Search/tree/master/TFS_2017RTW)
+> * [TFS 2017 Update 1](https://github.com/Microsoft/Code-Search/tree/master/TFS_2017Update1)
+> * [TFS 2017 Update 2](https://github.com/Microsoft/Code-Search/tree/master/TFS_2017Update2)
+> * [TFS 2017 Update 3](https://github.com/Microsoft/Code-Search/tree/master/TFS_2017Update3)
+> * [TFS 2018 RTM](https://github.com/Microsoft/Code-Search/tree/master/TFS_2018RTW)
 
 <a name="check-index"></a>
 ### Check indexing status for TFS 2017 RTM
@@ -594,6 +597,7 @@ Code Search for Team Foundation Server 2017 has the following limitations:
 * [Search stops working and no results are shown](#no-results-later)
 * [Search does not show the expected results](#unexpected-results)
 * [TFS server overall performance is affected](#server-slow)
+* ["Unexpected error in Search service" message](https://blogs.msdn.microsoft.com/tapas_sahoos_blog/2017/09/11/resetting-search-index-in-team-foundation-server/)
 
 <a name="no-search-box"></a>
 **Search is configured but the Search box is not displayed**
@@ -601,7 +605,7 @@ Code Search for Team Foundation Server 2017 has the following limitations:
 1. The search box is shown only in the context of a project page. 
    Navigate to a project and check if the search box is displayed at the top right. 
 
-   ![The Code Search textbox in the VS Team Services title bar](_img/get-started/title-bar-search-box-empty-outlined.png)    
+   ![The Code Search textbox in the VSTS title bar](_img/get-started/title-bar-search-box-empty-outlined.png)    
 
 1. If the search box is not shown, verify that the extension is installed for the collection. 
    If not, [install](#config-ts) or [configure](#config-tfs) the extension.
@@ -675,17 +679,6 @@ name of the server where Search is installed:
 1. If performance does recover, consider locating Code Search 
    on a separate server if you have not already done so.
 
-## See also
-
-* [Install and configure TFS](../../setup-admin/tfs/install/get-started.md)
-* [TFS requirements and compatibility](../../setup-admin/requirements.md)
-* [Get started with Code Search](get-started.md)
-* [Choose your search scope](repos-and-projects.md)
-* [Advanced Code Search options](advanced-search.md)
-* [Rich Code Search results](search-results.md)
-
 <a name="support"></a>
 
 [!INCLUDE [shared-got-feedback](../_shared/shared-got-feedback.md)]
-
-[!INCLUDE [shared-back-to-overview](../_shared/shared-back-to-overview.md)]

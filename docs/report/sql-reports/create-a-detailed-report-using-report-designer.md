@@ -6,12 +6,14 @@ ms.technology: vs-devops-reporting
 ms.assetid: 073c4d96-8525-40fc-8fd6-944d161acc2d
 ms.manager: douge
 ms.author: kaelli
-ms.date: 12/30/2016
+ms.date: 10/17/17
 ---
+
+
 
 # Create a Detailed Report using Report Designer
 
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 You can track your team's progress more easily by creating reports that contain detailed information from Visual Studio Application Lifecycle Management (ALM) (TFS). For example, you can create a report that includes details such as titles of work items. To create this type of report, you can use SQL Server's Report Designer and the relational database of the TFS data warehouse.  
   
@@ -27,7 +29,7 @@ You can track your team's progress more easily by creating reports that contain 
   
 -   You must be a member of the **TfsWarehouseDataReaders** security role in the Analysis Services database on the data-tier server of Team Foundation Server. For more information, see [How to: Grant Access to the Databases of the Data Warehouse](../admin/grant-permissions-to-reports.md).  
   
--   You must be a member of the **Team Foundation Content Manager** role in SQL Server Reporting Services. For more information, see [Add accounts to administer TFS](../../setup-admin/add-administrator-tfs.md).  
+-   You must be a member of the **Team Foundation Content Manager** role in SQL Server Reporting Services. For more information, see [Add accounts to administer TFS](../../tfs-server/add-administrator-tfs.md).  
   
 ### To create a report  
   

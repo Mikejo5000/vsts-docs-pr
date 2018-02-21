@@ -1,17 +1,17 @@
 ---
-title: Record and play back manual tests | Visual Studio 
+title: Record and play back manual tests
 description: Record and play back manual tests
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-manual
 ms.assetid: 6B6E991A-969F-4AB3-8031-9BFF260D9142
 ms.manager: douge
 ms.author: ahomer
-ms.date: 08/12/2016
+ms.date: 01/18/2018
 ---
 
 # Record and play back manual tests
 
-**Visual Studio 2017** | **Visual Studio 2015** | [**Previous version**](https://msdn.microsoft.com/library/dd286714%28v=vs.120%29.aspx)
+[!INCLUDE [version-header-vs-ts-tfs](../_shared/version-header-vs-ts-tfs.md)] 
 
 Record keystrokes and mouse actions with Microsoft Test Manager 
 while you are testing an app. You can then play back your actions 
@@ -30,7 +30,9 @@ to the next to make sure that everything still works correctly.
 You can record and play back tests in a wide range of desktop apps, 
 and also web apps that you access through a supported browser. 
 For a detailed list, see 
-[Supported configurations and platforms for coded UI tests and action recordings](https://msdn.microsoft.com/library/dd380742).
+[Supported configurations and platforms for coded UI tests and action recordings](https://docs.microsoft.com/visualstudio/test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings).
+
+[!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
 
 ## Run Microsoft Test Manager on your client machine
 
@@ -43,8 +45,8 @@ a web-based app, install the app on a test server,
 and run Microsoft Test Manager on the machine where 
 you'll run your web browser.
 
-To get Microsoft Test Manager, install Visual Studio Test Professional 
-or Visual Studio Enterprise.
+To get Microsoft Test Manager, install [Visual Studio Test Professional ](https://www.visualstudio.com/vs/test-professional/)
+or [Visual Studio Enterprise](https://www.visualstudio.com/downloads/)
 
 ### Run a test case
 
@@ -121,39 +123,8 @@ you'll have to manually perform that step.
 
    ![Play each step and then check the result.](_img/record-play-manual-tests/play-check-result.png)
 
-## Q & A
+## See Also
 
-<!-- BEGINSECTION class="m-qanda" -->
-
-####Q: Can I record a test in one test plan and play it back in another?
-  
-A:  Yes, this is a great way to do regression tests quickly and accurately. 
-If you want to repeat some tests you did in a previous sprint, 
-just add those test cases to the test plan for the current sprint.
-The recording is linked to the test case, not to its appearance 
-in any particular test plan or suite.
-
-####Q: Can I record a test in one test configuration and play it back in a different configuration? The tests for different configurations show up as separate tests in the Run page.
-  
-A:  Yes, the recording is linked to the test case, 
-so you can play it back from any instance of that test case, even in different 
-[test configurations](../test-different-configurations.md), 
-test suites, or test plans.
-
-####Q: Some or all of my actions aren't recorded, or the playback doesn’t work properly. Why?
-  
-A:  Action recording works best for apps in which each user 
-interface field has a unique ID, and for basic actions such as keystrokes, 
-clicks, and menu selections. It doesn't work for some apps and web browsers.
-See [Supported configurations and platforms for coded UI tests and action recordings](https://msdn.microsoft.com/library/dd380742).
-
-To learn how to develop your app so that it's easier to record tests, 
-see [Enable coded UI testing of your controls](https://msdn.microsoft.com/library/hh552522).
-
-#### Q: Record and playback is great. But can I completely automate a test, including verifying the results?
-
-A:  Yes, see [Automate system tests](https://msdn.microsoft.com/library/ff472576%28v=vs.140%29.aspx).
-
-<!-- ENDSECTION -->
+* [FAQs for recording and playing back manual tests](../reference-qa.md#mtmqna)
 
 [!INCLUDE [help-and-support-footer](../_shared/help-and-support-footer.md)] 

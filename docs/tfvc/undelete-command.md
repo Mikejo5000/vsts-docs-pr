@@ -5,13 +5,13 @@ ms.assetid: f3b7c02e-7799-4632-b786-551f31741401
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfvc
 ms.manager: douge
-ms.author: routlaw
+ms.author: sdanie
 ms.date: 08/10/2016
 ---
 
 # Undelete Command
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 The **undelete** command restores items that were previously deleted.
 
@@ -20,7 +20,7 @@ The **undelete** command restores items that were previously deleted.
 
 **Required Permissions**
 
-To use the **undelete** command, you must have the **Check out** permission set to **Allow**. If you include the **/lock** option with a value other than none, you must have the **Lock** permission set to **Allow**. Additionally, you must own the workspace or have the global **Administer workspaces** permission set to **Allow**. For more information, see [Team Foundation Server Permissions](../setup-admin/permissions.md).
+To use the **undelete** command, you must have the **Check out** permission set to **Allow**. If you include the **/lock** option with a value other than none, you must have the **Lock** permission set to **Allow**. Additionally, you must own the workspace or have the global **Administer workspaces** permission set to **Allow**. For more information, see [Permissions and groups reference](../security/permissions.md).
 
     tf undelete [/noget] [/lock:(none|checkin|checkout)] 
     [/recursive] itemspec[;deletionID] [/login:username,[password]]
@@ -39,7 +39,7 @@ To use the **undelete** command, you must have the **Check out** permission set 
 	<td><p>Restores the deleted item to your workspace and then, pending completion of a check-in operation, restores the item on the server but does not immediately retrieve a physical copy of the item to disk.</p></td></tr>
 <tr>
 	<td><p><strong>/lock</strong></p></td>
-	<td><p>Prevents other users from checking in or checking out the specified files. For more information, see <a href="/docs/tfvc/understand-lock-types">Understanding Lock Types</a>.</p><p>Lock Options:</p><ul><li><p><strong>None</strong></p><p>Default. No lock is applied.</p></li><li><p><strong>Checkin</strong></p><p>Other users can check out the specified items but they cannot check in revisions to locked files until you release the lock by performing a check-in. If any other users have locked any one of the specified items, the lock operation fails.</p></li><li><p><strong>Checkout</strong></p><p>Prevents other users from checking in or checking out any one of the specified items until you release the lock by performing a check in. If any other users have locked any one of the specified items, the lock operation fails.</p></li></ul></td></tr>
+	<td><p>Prevents other users from checking in or checking out the specified files. For more information, see <a href="understand-lock-types.md">Understanding Lock Types</a>.</p><p>Lock Options:</p><ul><li><p><strong>None</strong></p><p>Default. No lock is applied.</p></li><li><p><strong>Checkin</strong></p><p>Other users can check out the specified items but they cannot check in revisions to locked files until you release the lock by performing a check-in. If any other users have locked any one of the specified items, the lock operation fails.</p></li><li><p><strong>Checkout</strong></p><p>Prevents other users from checking in or checking out any one of the specified items until you release the lock by performing a check in. If any other users have locked any one of the specified items, the lock operation fails.</p></li></ul></td></tr>
 <tr>
 	<td><p><strong>/recursive</strong></p></td>
 	<td><p>Restores all files and subfolders from the specified directory.</p></td></tr>

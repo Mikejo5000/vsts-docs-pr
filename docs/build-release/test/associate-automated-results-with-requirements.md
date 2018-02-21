@@ -1,17 +1,17 @@
 ---
 title: Associate automated test results with requirements
-description: Manual and exploratory testing Associate automated test results with requirements using Microsoft Test Manager
+description: Continuous testing. Associate automated test results with requirements using  Microsoft Test Manager (MTM)
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-continuous
+ms.technology: vs-devops-build
 ms.assetid: 30F9B666-02D7-4A94-9EA1-EC8B8E5F1D8F
 ms.manager: douge
 ms.author: ahomer
-ms.date: 08/12/2016
+ms.date: 01/18/2018
 ---
 
 # Associate automated test results with requirements
 
-[!INCLUDE [version-header-ts-tfs](_shared/version-header-ts-tfs.md)] 
+[!INCLUDE [version-header-ts-tfs](_shared/version-header-ts-tfs.md)]
 
 If your test suites include **requirements**, link these to your test results
 and view the results on your team's dashboard. This enables end-to-end 
@@ -26,25 +26,25 @@ To associate automated test results with requirements:
 1. On the test results page, select the tests you want to link to requirements
 and choose the **Associate tests to work item** (link) icon.
 
-   ![](_img/associate-automated-results-with-requirements/associate-tests-results.png)
+   ![Select the tests you want to link to requirements](_img/associate-automated-results-with-requirements/associate-tests-results.png)
 
 1. Select the requirements from the list of suggested work items and choose **Associate**. 
 
-   ![](_img/associate-automated-results-with-requirements/associate-tests.png)
+   ![Select the requirements from the list](_img/associate-automated-results-with-requirements/associate-tests.png)
 
 1. To see the related test results, select **Requirements** in the **Group by** list.  
 
-   ![](_img/associate-automated-results-with-requirements/associate-tests-groupby.png)
+   ![Select **Requirements** in the **Group by** list](_img/associate-automated-results-with-requirements/associate-tests-groupby.png)
 
 1. On your team's dashboard, add the **Requirements quality** widget and configure
    it for the appropriate build definition and work item query.  
 
-   ![](_img/associate-automated-results-with-requirements/associate-tests-configuration.png)
+   ![Add the **Requirements quality** widget](_img/associate-automated-results-with-requirements/associate-tests-configuration.png)
 
 1. This shows the pass rate for each of your requirements.
    Use the links to view the results in more detail, and the **Expand** link to see more.
 
-   ![](_img/associate-automated-results-with-requirements/associate-tests-dashboard.png)
+   ![Links to view the results in more detail, and the **Expand** link](_img/associate-automated-results-with-requirements/associate-tests-dashboard.png)
 
 ## See Also
 

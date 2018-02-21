@@ -6,10 +6,12 @@ ms.technology: vs-devops-reporting
 ms.assetid: de38d7e8-4bd4-4b43-be4f-a116ea424bee
 ms.manager: douge
 ms.author: kaelli
-ms.date: 12/30/2016
+ms.date: 10/17/17
 ---
+
+
 # Reactivations Report
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 As the team resolves and closes bugs, you can use the Reactivations report to determine how effectively the team is fixing bugs. Reactivations generally refer to bugs that have been resolved or closed prematurely and then reopened. The reactivation rate is also referred to as the fault feedback ratio.  
   
@@ -25,7 +27,7 @@ As the team resolves and closes bugs, you can use the Reactivations report to de
   
  **Required Permissions**  
   
- To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in SQL Server Reporting Services. For more information, see [Add users to team projects](../../setup-admin/add-users.md).  
+ To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in SQL Server Reporting Services. For more information, see [Add users to team projects](../admin/grant-permissions-to-reports.md).  
   
 ##  <a name="Data"></a> Data in the Report  
  The Reactivations report shows an area graph of the number of bugs or stories that are in a resolved state or that have been reactivated from the closed state. The data is derived from the data warehouse. The graph depicts the number of items based on the time duration and filters that you specify, as the following illustration shows.  

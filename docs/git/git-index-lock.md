@@ -1,16 +1,16 @@
 ---
-title: Git index.lock file | Team Services & TFS
+title: Git index.lock file | VSTS & TFS
 description: Learn more about the Git index.lock file in Visual Studio
 ms.assetid: d7f960e7-7132-4ee3-ba27-5bb5fd60e625
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-git
+ms.technology: vs-devops-git 
 ms.manager: douge
 ms.author: sdanie
 ms.date: 06/22/2017
 ---
 
 #  Git index.lock file
-#### Team Services | TFS 2015 & 2017 | Visual Studio 2015 & 2017
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
 
 ## What is a Git index.lock file?
 

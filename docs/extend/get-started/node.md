@@ -1,8 +1,8 @@
 ---
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
-title: Write your first extension for Visual Studio Team Services
-description: Tutorial for creating your first extension, a hub page, for Visual Studio Team Services
+title: Write your first extension for VSTS
+description: Tutorial for creating your first extension, a hub page, for VSTS
 ms.assetid: ae82118c-82fa-40ec-9f29-989ce981f566
 ms.manager: douge
 ms.author: elbatk
@@ -10,16 +10,16 @@ ms.date: 08/26/2016
 ms.topic: get-started-article
 ---
 
-# Write your first extension for Visual Studio Team Services
+# Write your first extension for VSTS
 
 [!INCLUDE [preview](../_data/private-preview.md)]
 
 ## Your first extension
-This page guides you through creating your first extension for Visual Studio Team Services. It will introduce the basic extensibility concepts 
-and give you the knowledge needed to get started on your own unqiue extension.
+This page guides you through creating your first extension for VSTS. It will introduce the basic extensibility concepts 
+and give you the knowledge needed to get started on your own unique extension.
 
 In this tutorial we'll create a custom hub that displays the results of a query. A <b>hub</b> is, simply put, a type of contribution that displays
-a web page. You can have multiple hubs in Visual Studio Team Services and they live in <b>hub groups</b>. 
+a web page. You can have multiple hubs in VSTS and they live in <b>hub groups</b>. 
 
 We'll create a new hub that displays in the Work hub group, after the Backlogs and Queries hubs.
 
@@ -28,9 +28,9 @@ We'll create a new hub that displays in the Work hub group, after the Backlogs a
 </div>
 
 ## Preparation and required setup for this tutorial
-In order to create extensions for Team Services, there are some prerequisite software and tools you'll need:
+In order to create extensions for VSTS, there are some prerequisite software and tools you'll need:
 
-- A **Visual Studio Team Services account**, more information can be found [here](https://www.visualstudio.com/en-us/products/visual-studio-team-services-vs.aspx)
+- A **VSTS account**, more information can be found [here](https://www.visualstudio.com/en-us/products/visual-studio-team-services-vs.aspx)
 - **A text editor**. For many of the tutorials we used `Visual Studio Code`, which can be downloaded [here](https://code.visualstudio.com/)
 - The latest version of **node**, which can be downloaded [here](https://nodejs.org/en/download/)
 - **TFS Cross Platform Command Line Interface (tfx-cli)** to package your extensions.
@@ -56,7 +56,7 @@ If you haven't, you'll want to create a `home` directory that contains the follo
 <a name='client-sdk'/>
 
 ## Get the client SDK: `VSS.SDK.js`
-The core SDK script, **VSS.SDK.js**, enables web extensions to communicate to the host Team Services frame and to perform operations like 
+The core SDK script, **VSS.SDK.js**, enables web extensions to communicate to the host VSTS frame and to perform operations like 
 initializing, notifying that an extension is loaded, or getting context about the current page. Get the Client SDK **VSS.SDK.js** file and add it to your web app. Place it in the `home/sdk/scripts` folder.
 
 Use the *npm install* command via the command line (requires [Node](https://nodejs.org/en/download/)) to retrieve the SDK:
@@ -65,7 +65,7 @@ Use the *npm install* command via the command line (requires [Node](https://node
 npm install vss-web-extension-sdk
 ```
 
-> To learn more about the SDK, visit the [Client SDK Github Page](https://github.com/Microsoft/vss-sdk).
+> To learn more about the SDK, visit the [Client SDK GitHub Page](https://github.com/Microsoft/vss-sdk).
 
 <a name="extension-manifest" />
 
@@ -236,7 +236,7 @@ If you aren't already a member of an existing publisher, you'll create one.
 
 1. Sign in to the [Visual Studio Marketplace Publishing Portal](http://aka.ms/vsmarketplace-manage)
 2. If you are not already a member of an existing publisher, you'll be prompted to create a publisher. If you're not prompted to create a publisher, scroll down to the bottom of the page and select <i>Publish Extensions</i> underneath <b>Related Sites</b>.
- * Specify an idenitifer for your publisher, for example: `mycompany-myteam`
+ * Specify an identifier for your publisher, for example: `mycompany-myteam`
     * This will be used as the value for the `publisher` attribute in your extensions' manifest file.
  * Specify a display name for your publisher, for example: `My Team`
 3. Review the [Marketplace Publisher Agreement](http://aka.ms/vsmarketplace-agreement) and click **Create**
@@ -294,18 +294,7 @@ Go to your hub in the **Work** hub group. You should see your simple `.html` pag
 
 ## See our library of examples
 
-To get started with building your own extension, take a look at some of the sample extensions or dive into another tutorial from our Tutorial Catalog. 
+To get started with building your own extension, take a look at some of the sample extensions.
 
-<div name="row" style="padding-top:10px">
-    <div style="vertical-align:top;display:inline-block;float:left;width:50%">
-        <div class="index-button" align="right" style="padding-right:10px">
-        <a href="../develop/samples-overview.md"><button style="background-color:#4CAF50;border:none;color:white;padding:15px;font-size:16px;margin:4px;cursor:pointer;border-radius:8px;">Look at Sample Extensions</button></a>
-        </div>
-    </div>
-    <div style="vertical-align:top;display:inline-block;float:left;width:50%">
-        <div class="index-button" align="left" style="padding-left:10px">
-        <a href="./tutorials.md"><button style="background-color:#4CAF50;border:none;color:white;padding:15px;font-size:16px;margin:4px;cursor:pointer;border-radius:8px;">Check out the Tutorial Catalog</button></a>
-        </div>
-    </div>
-</div>
+* [Look at sample extensions](../develop/samples-overview.md)
  

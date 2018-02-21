@@ -1,7 +1,7 @@
 ---
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
-title: Extension Points | Extensions for Visual Studio Team Services
+title: Extension Points | Extensions for VSTS
 description: Browse through the places where your extension can extend Visual Studio Online.
 ms.assetid: 007954b7-9424-4ea6-916b-8cb2f215f5c4
 ms.manager: douge
@@ -11,7 +11,7 @@ ms.date: 08/26/2016
 
 # Extension points
 
-This reference is designed to show where extensions can contribute new capabilities into Visual Studio Team Services.
+This reference is designed to show where extensions can contribute new capabilities into VSTS.
 An understanding of two key concepts: contributions and contribution types, is recommended.
 See [contribution model](../../develop/contributions-overview.md) for an overview.
 
@@ -64,15 +64,14 @@ This new hub is rendered under the Code hub group:
 
 Here are the most common, Microsoft-provided hub groups that hubs can be contributed to:  
 
-Name     | ID                                         | Level                           | Preview
----------|--------------------------------------------|---------------------------------|-----------------------------          
-Code     | `ms.vss-code-web.code-hub-group`           | Project/team                    | ![sourcesshub](./vss/code/web/_img/hubs-source.png)
-Work     | `ms.vss-work-web.work-hub-group`           | Project/team                    | ![workhub](./vss/work/web/_img/hubs-workitems.png)
-Build    | `ms.vss-build-web.build-hub-group`         | Project/team                    | ![build](./vss/build/web/_img/hubs-build.png)
-Release  | `ms.vss-releaseManagement-web.hub-group-rm` | Project/team                   | ![releasehub](./vss/release/web/_img/hubs-release.png)
-Test     | `ms.vss-test-web.test-hub-group`           | Project/team                    | ![build](./vss/test/web/_img/hubs-testmanagement.png)
-Admin    | `ms.vss-web.collection-admin-hub-group`    | Project Collection (admin)      | ![projectadmin](./vss/web/_img/hubs-admin-collection.png) 
-Admin    | `ms.vss-web.project-admin-hub-group`       | Project (admin)                 | ![projectadmin](./vss/web/_img/hubs-admin-project.png) 
+Name                | ID                                         | Level                           | Preview
+--------------------|--------------------------------------------|---------------------------------|-----------------------------          
+Code                | `ms.vss-code-web.code-hub-group`           | Project/team                    | ![sourcesshub](./vss/code/web/_img/hubs-source.png)
+Work                | `ms.vss-work-web.work-hub-group`           | Project/team                    | ![workhub](./vss/work/web/_img/hubs-workitems.png)
+Build and Release   | `ms.vss-build-web.build-release-hub-group` | Project/team                    | ![build](./vss/build/web/_img/hubs-build-release.png)
+Test                | `ms.vss-test-web.test-hub-group`           | Project/team                    | ![build](./vss/test/web/_img/hubs-testmanagement.png)
+Admin               | `ms.vss-web.collection-admin-hub-group`    | Project Collection (admin)      | ![projectadmin](./vss/web/_img/hubs-admin-collection.png) 
+Admin               | `ms.vss-web.project-admin-hub-group`       | Project (admin)                 | ![projectadmin](./vss/web/_img/hubs-admin-project.png) 
 
 <a name="menus"></a>
 ## Menus and toolbars
@@ -121,6 +120,8 @@ Change list summary item menu       | `ms.vss-code-web.change-list-summary-item-
 Git branches tree menu              | `ms.vss-code-web.git-branches-tree-menu`         | ![gitBranchesTree](./vss/code/web/_img/gitBranchesTreeActions.png)
 Git branches summary menu           | `ms.vss-code-web.git-branches-summary-grid-menu` |     
 Git branches diff summary menu      | `ms.vss-code-web.git-branches-summary-grid-diff-menu` |
+Git pull request actions menu       | `ms.vss-code-web.pull-request-action-menu` | ![gitPullRequestActions](./vss/code/web/_img/pullRequestActions.png)
+Git pull request tabs (pivots)      | `ms.vss-code-web.pr-tabs` | ![gitPullRequestTab](./vss/code/web/_img/pullRequestTab.png)
 
 <a name="menus_test"></a>
 ### Test
@@ -153,8 +154,9 @@ Product backlog pane            | `ms.vss-work-web.requirement-backlog-toolpane`
 Iteration backlog pane          | `ms.vss-work-web.iteration-backlog-toolpane`      | ![iterationBacklogPane](../../_shared/procedures/_img/backlog-pane/iteration-backlog-pane.png)
 
 <a name="serviceHooks"></a>
+
 ## Service hooks
 Service hook publishers define a set of events. Subscriptions listen for the events and define actions to take based on the event. 
 Subscriptions also target consumers, which are external services that can perform their own actions, when an event occurs.
 
-### Consumers
+Check out how to [add service hooks](../../develop/add-service-hook.md).

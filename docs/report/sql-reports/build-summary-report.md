@@ -6,12 +6,14 @@ ms.technology: vs-devops-reporting
 ms.assetid: ac74cae8-5c9b-43d6-b4ef-c889dcb9440f
 ms.author: kaelli
 ms.manager: douge
-ms.date: 12/30/2016
+ms.date: 10/17/17
 ---
+
+
 
 # Build Summary Report
 
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 
 The Build Summary lists builds and provides information about test results, test coverage, code churn, and quality notes for each build.  
@@ -25,7 +27,7 @@ The Build Summary lists builds and provides information about test results, test
   
  **Required Permissions**  
   
- To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in Reporting Services. For more information, see [Add users to team projects](../../setup-admin/add-users.md).  
+ To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in Reporting Services. For more information, see [Add users to team projects](../admin/grant-permissions-to-reports.md).  
   
 ##  <a name="Data"></a> Data in the Report  
  The data that appears in the Build Summary report is derived from the data warehouse. The report presents a visual display of the percentage of tests that are passing, code that is being tested, and changes in code across several builds.  
@@ -63,7 +65,7 @@ The Build Summary lists builds and provides information about test results, test
   
 -   **Create build definitions**. You can create several build definitions, each of which can be run to produce code for a different platform. Also, you can run each build for a different configuration.  
   
-     For more information, see [Get started with CI/CD](../../build-release/get-started/ci-cd-part-1.md).
+     For more information, see [Get started with CI/CD](../../build-release/actions/ci-cd-part-1.md).
   
 -   **Define tests to run automatically as part of the build**. As part of the build definition, you can define tests to run as part of the build or to fail if the tests fail.  
   
@@ -73,7 +75,7 @@ The Build Summary lists builds and provides information about test results, test
   
 -   **Run builds regularly**. Builds can be run at set intervals or after every check-in. You can schedule regular builds when you use the schedule trigger.  
   
-     For more information, see [Build triggers](../../build-release/define/triggers.md).
+     For more information, see [Build triggers](../../build-release/concepts/definitions/build/triggers.md).
   
 -   (Optional) **Rate completed builds**. A team member can manually rate a build by using Build Explorer.  
   

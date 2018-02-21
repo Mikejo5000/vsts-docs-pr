@@ -1,6 +1,6 @@
 ---
-title: Deploy an agent on OSX
-description: Deploy an OSX agent to build and deploy your iOS application.
+title: Deploy an agent on macOS
+description: Deploy a macOS agent to build and deploy your iOS application.
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: 3D487E4E-D940-4DA9-BDE1-1F60E74DD6F1
@@ -8,17 +8,21 @@ ms.manager: douge
 ms.author: alewis
 ms.date: 08/26/2016
 ---
-# Deploy an agent on OSX
+# Deploy an agent on macOS
 
-**Team Services | TFS 2017 | TFS 2015**
+**VSTS | TFS 2018 | TFS 2017 | TFS 2015**
 
-To build and deploy Xcode apps or Xamarin.iOS projects, you'll need at least one OSX agent. This agent can also build and deploy Java and Android apps.
+To build and deploy Xcode apps or Xamarin.iOS projects, you'll need at least one macOS agent. This agent can also build and deploy Java and Android apps.
+
+> Before you begin:
+> * If your build and release definitions are in [VSTS](https://www.visualstudio.com/products/visual-studio-team-services-vs) and a [hosted agent](../../concepts/agents/hosted.md) meets your needs, you can skip setting up a private macOS agent.
+> *  Otherwise, you've come to the right place to set up an agent on macOS. Continue to the next section.
 
 [!INCLUDE [include](_shared/concepts.md)]
 
 ## Check prerequisites
 
-Make sure your machine is prepared with our [OSX system prerequisites](https://aka.ms/vstsagentosxsystem). 
+Make sure your machine is prepared with our [macOS system prerequisites](https://aka.ms/vstsagentosxsystem). 
 
 <h2 id="permissions">Prepare permissions</h2>
 
@@ -26,13 +30,14 @@ If you're building from a Subversion repo, you must install the Subversion clien
 
 [!INCLUDE [permissions](_shared/v2/prepare-permissions.md)]
 
+<a name="download-configure"></a>
 ## Download and configure the agent
 
-### Team Services and TFS 2017
+### VSTS and TFS 2017 and newer
 
 <ol>
 <li>Log on to the machine using the account for which you've prepared permissions as explained above.</li>
-<li>In your web browser, sign on to Team Services or TFS, and navigate to the **Agent pools** tab:
+<li>In your web browser, sign on to VSTS or TFS, and navigate to the **Agent pools** tab:
 [!INCLUDE [include](../../concepts/agents/_shared/agent-pools-tab.md)]
 </li>
 
@@ -58,9 +63,9 @@ If you're building from a Subversion repo, you must install the Subversion clien
 
 ### Server URL
 
-* Team Services: `https://{your-account}.visualstudio.com`
+* VSTS: `https://{your-account}.visualstudio.com`
 
-* TFS 2017: `https://{your_server}/tfs`
+* TFS 2017 and newer: `https://{your_server}/tfs`
 
 * TFS 2015: `http://{your_server}:8080/tfs`
 
@@ -85,7 +90,8 @@ To run the agent interactively:
 
 We provide the `./svc.sh` script for you to run and manage your agent as a launchd LaunchAgent service. The service has access to the UI to run your UI tests.
 
-> **Note:** If you prefer other approaches, you can use whatever kind of service mechanism you prefer. See [Service files](#service-files).
+> [!NOTE]
+> If you prefer other approaches, you can use whatever kind of service mechanism you prefer. See [Service files](#service_files).
 
 ### Tokens
 
@@ -97,7 +103,7 @@ In the section below, these tokens are replaced:
 
 For example, you have configured an agent (see above) with the name `our-osx-agent`. In the following examples, `{tfs-name}` will be either:
 
-* Team Services: the name of your account. For example if you connect to `https://fabrikam.visualstudio.com` , then the service name would be `vsts.agent.fabrikam.our-osx-agent`
+* VSTS: the name of your account. For example if you connect to `https://fabrikam.visualstudio.com` , then the service name would be `vsts.agent.fabrikam.our-osx-agent`
 
 * TFS: the name of your on-premises TFS AT server. For example if you connect to `http://our-server:8080/tfs`, then the service name would be `
 vsts.agent.our-server.our-osx-agent`
@@ -233,7 +239,7 @@ You can also run your own instructions and commands to run when the service star
 
 ```
 
-<h3 id="service_files">Service Files</h3>
+<h3 id="service-files">Service Files</h3>
 
 When you install the service, some service files are put in place.
 
@@ -261,7 +267,7 @@ For example:
 
 We provide the `./svc.sh` script as a convenient way for you to run and manage your agent as a launchd LaunchAgent service. But you can use whatever kind of service mechanism you prefer.
 
-You can use the template described above as to facilitate generating other kinds of service files. For example, you modify the template to generate a service that runs as a launch daemon if you don't need UI tests and don't want to configure automatic log on and lock. See [Mac Developer Library: Creating Launch Daemons and Agents](https://developer.apple.com/library/mac/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/CreatingLaunchdJobs.html).
+You can use the template described above as to facilitate generating other kinds of service files. For example, you modify the template to generate a service that runs as a launch daemon if you don't need UI tests and don't want to configure automatic log on and lock. See [Apple Developer Library: Creating Launch Daemons and Agents](https://developer.apple.com/library/content/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/CreatingLaunchdJobs.html).
 
 [!INCLUDE [include](_shared/v2/replace-agent.md)]
 
@@ -277,13 +283,19 @@ You can use the template described above as to facilitate generating other kinds
 
 ### Where can I learn more about how the launchd service works?
 
-[Mac Developer Library: Creating Launch Daemons and Agents](https://developer.apple.com/library/mac/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/CreatingLaunchdJobs.html)
+[Apple Developer Library: Creating Launch Daemons and Agents](https://developer.apple.com/library/content/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/CreatingLaunchdJobs.html)
 
 [launchd.plist manpage](https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man5/launchd.plist.5.html)
 
 [!INCLUDE [include](_shared/v2/qa-firewall.md)]
 
-[!INCLUDE [include](_shared/v2/qa-proxy-unix.md)]
+### How do I run the agent with self-signed certificate?
+
+[Run the agent with self-signed certificate](certificate.md)
+
+### How do I run the agent behind a web proxy?
+
+[Run the agent behind a web proxy](proxy.md)
 
 [!INCLUDE [include](_shared/v2/web-proxy-bypass.md)]
 

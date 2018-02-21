@@ -1,18 +1,17 @@
 ---
 title: Give teams and builds access to feeds
-description:  Give teams and builds access to Package Management feeds in Visual Studio Team Services or Team Foundation Server
+description:  Give teams and builds access to Package Management feeds in VSTS or Team Foundation Server
 ms.assetid: 6b806512-b99d-45ab-85dc-cdbc1985f0f8
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-package
-ms.topic: get-started-article
 ms.manager: douge
 ms.author: amullans
-ms.date: 08/10/2016
+ms.date: 11/30/2017
 ---
 
 # Give teams and builds access to feeds
 
-**Team Services | TFS 2017**
+**VSTS | TFS 2017**
 
 In addition to individuals, you typically give teams and service identities access to your feeds.
 If you aren't familiar with permissions on feeds, read [the overview](../feeds/feed-permissions.md) first.
@@ -33,7 +32,7 @@ Teams in the Fabrikam project begin with "[Fabrikam]\".
 To find and give a team access to a feed, search for the team name.
 
 Project collections always have a team called **[DefaultCollection]\Project Collection Valid Users**.
-This team automatically contains everyone who is allowed to login to your Team Services account.
+This team automatically contains everyone who is allowed to login to your VSTS account.
 
 ## Build service identities
 
@@ -44,10 +43,10 @@ Giving the **Project Collection Build Service** access to a feed allows all buil
 
 ## Example permissions
 
-In the screenshot below, the Fabrikam Team (1) owns the feed.
+In the screenshot below, the **FabrikamFiber Team** owns the feed.
 
-The Project Collection Build Service (2) is a contributor, so any build which runs with Project Collection scope can add packages to the feed.
+The **Project Collection Build Service** is a contributor, so any build which runs with Project Collection scope can add packages to the feed.
 
-Project Collection Valid Users (3), meaning anyone who can log into the Team Services account, can restore packages from the feed.
+**Project Collection Valid Users**, meaning anyone who can log into the VSTS account, can restore packages from the feed.
 
-![Example permissions settings](_img/identity-perms.png)
+![Example permissions settings](_img/editfeeddialog1.png)

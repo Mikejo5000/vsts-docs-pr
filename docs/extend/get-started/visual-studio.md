@@ -1,8 +1,8 @@
 ---
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
-title: Create your first Extension with Visual Studio | Extensions for Visual Studio Team Services
-description: Use Visual Studio with ASP.NET to create your first extension for Visual Studio Team Services.
+title: Create your first Extension with Visual Studio | Extensions for VSTS
+description: Use Visual Studio with ASP.NET to create your first extension for VSTS.
 ms.assetid: 387f13db-bb06-4f8e-baf8-3f0ea05903e5
 ms.manager: douge
 ms.author: elbatk
@@ -13,7 +13,7 @@ ms.date: 08/04/2016
 
 [!INCLUDE [preview](../_data/private-preview.md)]
 
-Extensions enable you to create first-class integration experiences within Visual Studio Team Services.
+Extensions enable you to create first-class integration experiences within VSTS.
 An extension can be a simple context menu or toolbar action
 or it can be a complex and powerful custom UI experience that light up within the account, collection, or project hubs.
 
@@ -36,10 +36,10 @@ and an action on the queries context menu to launch your hub.
 <a id="hub"></a>
 ## Create a hub
 
-Use a hub to surface your web app in an iframe in Visual Studio Team Services.
+Use a hub to surface your web app in an iframe in VSTS.
 The one we're creating here will show up in the team project's **Work** hub group.
 
-![Location of a new hub in Visual Studio Team Services](../_shared/procedures/_img/hub-location.png)
+![Location of a new hub in VSTS](../_shared/procedures/_img/hub-location.png)
 
 <a id="app"></a>
 ### Create the web app
@@ -58,7 +58,7 @@ We'll display it when someone installs your extension.
 <a id="manifest"></a>
 ### Create the extension manifest
 
-The extension manifest tells Visual Studio Team Services about your extension.
+The extension manifest tells VSTS about your extension.
 
 [!INCLUDE [Extension_manifest](../_shared/procedures/create-base-manifest.md)]
 
@@ -82,7 +82,7 @@ The extension manifest tells Visual Studio Team Services about your extension.
 
 	![Properties dialog with SSL enabled](../_shared/procedures/_img/create-hub-app-asp4/enable-ssl.png)
 
-1. Start your app in Visual Studio so that Visual Studio Team Services can access it.
+1. Start your app in Visual Studio so that VSTS can access it.
 
 1. Go to your hub in the **Work** hub group.
 
@@ -100,7 +100,7 @@ Now add a grid control to display some data in ```hello-world.html```.
 
 Call a REST API and display the results in the grid control.
 
-1. Get the [client service](../reference/client/rest-clients.md). In this case, we're getting the work item tracking client.
+1. Get the `client service`. In this case, we're getting the work item tracking client.
 
 	Change this:
 	```javascript
@@ -185,7 +185,7 @@ with a callback that loads the grid control with the results.
 <a id="action"></a>
 ## Add an action
 
-You can add actions to the Visual Studio Team Services user interface that call your extension. 
+You can add actions to the VSTS user interface that call your extension. 
 In this case, you'll add an action to the context menu for queries and folders in the work hub
 that launches the Hello hub and send it a query to run.
 

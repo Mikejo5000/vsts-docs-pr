@@ -5,22 +5,22 @@ ms.assetid: 4075b4a8-1d11-49d5-8dbe-4fd00cdb0fca
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfvc
 ms.manager: douge
-ms.author: routlaw
+ms.author: sdanie
 ms.date: 08/10/2016
 ---
 
 # Merge Command
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 The **merge** command applies changes from one branch into another.
 
->**Note:**  
->The results of this command are not reflected in the Team Foundation version control server until you perform a check-in operation. For more information, see [Check In Pending Changes](https://msdn.microsoft.com/library/ms181411).
+> [!NOTE]
+> The results of this command are not reflected in the Team Foundation version control server until you perform a check-in operation. For more information, see [Check In Pending Changes](https://msdn.microsoft.com/library/ms181411).
 
 **Required Permissions**
 
-To use the **merge** command, you must have the **Check out** permission set to **Allow** for the workspace folder that contains the *destination* and you must have the **Read** permission set to **Allow** for the workspace folder that contains the source. For more information, see [Team Foundation Server Permissions](../setup-admin/permissions.md).
+To use the **merge** command, you must have the **Check out** permission set to **Allow** for the workspace folder that contains the *destination* and you must have the **Read** permission set to **Allow** for the workspace folder that contains the source. For more information, see [Permissions and groups reference](../security/permissions.md).
 
     tf merge [/recursive] [/force] [/candidate] [/discard] 
     [/version:versionspec] [/lock:none|checkin|checkout] [/preview] 
@@ -53,7 +53,7 @@ To use the **merge** command, you must have the **Check out** permission set to 
 	<td><p>For a selective merge, this option specifies the range that should be merged into the destination. For a catch-up merge, this parameter specifies the version before which all un-merged changes should be merged.</p><p>For a selective merge, the version range denotes the beginning and end points of the set of changes to be merged. For example, if you attempt to merge version 4~6, the changesets 4, 5, and 6 are merged.</p></td></tr>
 <tr>
 	<td><p><strong>/lock</strong></p></td>
-	<td><p>Specifies a lock type or removes a lock from an item. For more information, see <a href="/docs/tfvc/understand-lock-types">Understanding Lock Types</a>.</p><p>Lock Options:</p><ul><li><p><strong>None</strong></p><p>No lock is placed on an item and removes any existing lock from an item.</p></li><li><p><strong>Checkin</strong></p><p>Other users can check out the specified items but they cannot check in revisions to locked files until you release the lock by performing a check-in. If any other users have locked any one of the specified items, the lock operation fails.</p></li><li><p><strong>Checkout</strong></p><p>Prevents users from checking in or checking out any one of the specified items until you explicitly release the lock. If any other users have locked any one of the specified items, or if there are existing pending changes against any item, the lock operation fails.</p></li></ul></td></tr>
+	<td><p>Specifies a lock type or removes a lock from an item. For more information, see <a href="understand-lock-types.md">Understanding Lock Types</a>.</p><p>Lock Options:</p><ul><li><p><strong>None</strong></p><p>No lock is placed on an item and removes any existing lock from an item.</p></li><li><p><strong>Checkin</strong></p><p>Other users can check out the specified items but they cannot check in revisions to locked files until you release the lock by performing a check-in. If any other users have locked any one of the specified items, the lock operation fails.</p></li><li><p><strong>Checkout</strong></p><p>Prevents users from checking in or checking out any one of the specified items until you explicitly release the lock. If any other users have locked any one of the specified items, or if there are existing pending changes against any item, the lock operation fails.</p></li></ul></td></tr>
 <tr>
 	<td><p><strong>/preview</strong></p></td>
 	<td><p>Shows a preview of the merge.</p></td></tr>

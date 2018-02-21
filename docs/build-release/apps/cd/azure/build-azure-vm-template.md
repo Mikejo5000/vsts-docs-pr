@@ -1,12 +1,12 @@
 ---
 ms.assetid: 10C708EC-0D2A-4EF8-9381-4CF8B1EBA755
-title: Build an Azure Virtual Machine using Azure RM templates with Microsoft Release Management in Visual Team Services and Team Foundation Server
-description: Build a Microsoft Azure Virtual Machine using Azure Resource Manager templates in Microsoft Release Management in Visual Team Services (VSTS) and Team Foundation Server (TFS)
+title: Build an Azure Virtual Machine using Azure RM templates
+description: Build an Azure Virtual Machine using ARM templates in Release Management in VSTS and TFS
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-release
+ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
-ms.date: 10/20/2016
+ms.date: 01/19/2018
 ---
 
 # Build an Azure virtual machine using an Azure RM template
@@ -51,8 +51,8 @@ Follow these steps to create and check-in a new Resource Manager template.
    Visual Studio **File | Add | New project** menu.
 
 1. Save the entire solution (not just the project) and 
-   commit the changes into a Team Foundation Server or 
-   Visual Studio Team Services Git repository.
+   commit the changes into a [Team Foundation Server](../../../../tfvc/index.md) or 
+   [VSTS Git](../../../../git/index.md) repository.
 
 ### Create the build definition
 
@@ -77,7 +77,7 @@ Save the build definition and queue a new build by selecting the **Queue new bui
 
 After you've run the build, you're ready to create a release definition to provision your virtual machine:
 
-![icon](../../../steps/deploy/_img/azure-resource-group-deployment-icon.png) [Provision an Azure virtual machine using an Azure RM template](deploy-provision-azure-vm.md)
+![icon](../../../tasks/deploy/_img/azure-resource-group-deployment-icon.png) [Provision an Azure virtual machine using an Azure RM template](deploy-provision-azure-vm.md)
 
 ## Q&A
 

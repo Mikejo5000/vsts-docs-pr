@@ -3,16 +3,17 @@ title: Work Item Category tables | TFS
 description: Query for categories of work items defined in Team Foundation Server  
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-reporting 
-ms.topic: sql-reports
 ms.assetid: ae8ea834-400f-4cda-98d4-a7e612c91cce
 ms.manager: douge
 ms.author: kaelli
-ms.date: 03/09/2017
+ms.date: 10/17/17
 ---
+
+
 
 # Work Item Category tables
 
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 You can query for categories of work items by using the FactWorkItemToCategory and DimWorkItemCategory tables. You can organize the results of other work item queries by category if you join these tables with the DimWorkItem by using `FactWorkItemToCategory.WorkItemTypeName = DimWorkItem.System_WorkItemType`.  
   
@@ -28,5 +29,5 @@ You can query for categories of work items by using the FactWorkItemToCategory a
   
 ## Related notes 
 -  [Test cases and work items](perspective-test-analyze-report-work.md)   
--  [Use categories to group work item types](../../work/reference/use-categories-to-group-work-item-types.md)   
+-  [Use categories to group work item types](../../work/customize/reference/use-categories-to-group-work-item-types.md)   
 -  [Table reference for the relational warehouse database](table-reference-relational-warehouse-database.md)

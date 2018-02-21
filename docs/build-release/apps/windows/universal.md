@@ -1,114 +1,105 @@
 ---
 title: Build your Universal Windows Platform app
-description: Define a CI process that builds your Universal Windows Platform (UWP) solution on Team Foundation Server and Visual Team Services.
+description: Define a CI process that builds your Universal Windows Platform (UWP) solution on Team Foundation Server and Visual VSTS.
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: E3E15C22-3211-4FCC-A10C-5717EA8B116E
 ms.manager: douge
 ms.author: alewis
-ms.date: 08/04/2016
+ms.date: 12/20/2017
+ms.topic: get-started-article
 ---
 
 # Build your Universal Windows Platform app
 
-[!INCLUDE [temp](../../_shared/version.md)]
+**VSTS | TFS 2018 | TFS 2017.2**
 
-## Upload your code
+Universal Windows Platform (UWP) is a common app platform available on every device that runs Windows 10. Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide a highly customizable continuous integration (CI) process to automatically build and package your UWP app whenever your team pushes or checks in code. In this quickstart you learn how to define your CI process.
 
-Upload your code to [Visual Studio Team Services](https://www.visualstudio.com/products/visual-studio-team-services-vs) or your [on-premises Team Foundation Server](../../../setup-admin/tfs/install/get-started.md). Either push your code to Git or check in your code to TFVC.
+## Prerequisites
 
-You must also upload your .pfx certificate file. For example if you are working in a Git repo:
+[!INCLUDE [include](../../_shared/ci-cd-prerequisites-vsts.md)]
+
+* While the simplest way to try this quickstart is to use a VSTS account, you can also use a TFS server instead of a VSTS account. Make sure that you have [configured a build agent](../../actions/agents/v2-windows.md) for your team project, and that you have a version of Visual Studio matching your development machine installed on the agent machine.
+
+## Get sample app code
+
+[!INCLUDE [include](../_shared/get-sample-code-intro.md)]
 
 ```
-C:\Users\YourName\Source\Repos\Universal>git add App1\App1\App1_TemporaryKey.pfx -f
+https://github.com/Microsoft/UWPQuickStart
 ```
 
-## Define your CI build
+# [VSTS or TFS repo](#tab/vsts)
 
-Your CI build compiles your app into native code so you can run and test the app on your device.
+[!INCLUDE [include](../_shared/get-sample-code-vsts-tfs-2017-update-2.md)]
 
-### Create the definition
+# [GitHub repo](#tab/github)
 
-<ol>
-[!INCLUDE [include](../../_shared/begin-create-build-definition.md)]
+[!INCLUDE [include](../_shared/get-sample-code-github.md)]
 
-<li>On the Create new build definition dialog box, select **Universal Windows Platform ** and click Next.</li>
+---
 
-<li>Select the repo, branch, and **continuous integration**.</li>
-</ol>
+## Set up continuous integration
 
-### Modify the build step
+[!INCLUDE [include](../../_shared/ci-quickstart-intro.md)]
 
-On the Build tab:
+[//]: # (TODO: Restore use of includes when we get support for using them in a list.)
 
-<table>
-   <tr>
-      <td>![](../../steps/build/_img/visual-studio-build.png)<br/>
-**Visual Studio Build**</td>
-      <td>
-<p>Build your app.</p>
-<ul>
-[!INCLUDE [include](../_shared/uwp-ci-vsbuild-arguments.md)]
-</ul>
-</td>
-</tr>
-</table>
+1. Create a new build definition.
 
-## Define your publication build
+ # [VSTS or TFS repo](#tab/vsts)
 
-Your publication build compiles your app into an appxupload file that the store needs to offer your app to customers.
+ Navigate to the **Files** tab of the **Code** hub, and then click **Set up build**.
 
-### Create the definition
+ ![Screenshot showing button to set up build for a repository](../_shared/_img/set-up-first-build-from-code-hub.png)
 
-Create another build using the Universal Windows Platform template.
+ You are taken to the **Build and Release** hub and asked to **Select a template** for the new build definition.
 
-### Modify the build step
+ # [GitHub repo](#tab/github)
 
-On the Build tab:
+ Navigate to the **Builds** tab of the **Build and Release** hub in VSTS or TFS, and then click **+ New**. You are asked to **Select a template** for the new build definition.
 
-<table>
-   <tr>
-      <td>![](../../steps/build/_img/visual-studio-build.png)<br/>
- **Visual Studio Build**</td>
-      <td>
-<p>Build your app.</p>
-<ul>
-<li><p>MSBuild Arguments: Add a switch to the default setting.</p>
-<pre style="margin-bottom: 0px;"><code>/p:AppxBundlePlatforms="$(BuildPlatform)" /p:AppxPackageDir="$(Build.BinariesDirectory)\AppxPackages\\" /p:AppxBundle=Always <span style="font-weight:bold; background-color:yellow">/p:UapAppxPackageBuildMode=StoreUpload</span>
-</code></pre>
-<p><strong>Q:</strong> Why do I need these arguments? <strong>A:</strong></p>
-<ul>
-<li>```/p:AppxBundlePlatforms="$(BuildPlatform)"``` The template is setup with BuildPlatform="x86|x64|ARM" so the bundle will include all three platforms. All three platform should be included when creating an appxupload file.
-</li>
-<li>```/p:AppxPackageDir="$(Build.BinariesDirectory)\AppxPackages\\"``` Location where the bundle directories are created.
-</li>
-<li>```/p:AppxBundle=Always``` Always produce a bundle.
-</li>
-<li>```/p:UapAppxPackageBuildMode=StoreUpload``` Produces an appxupload file.
-</li>
-</ul>
-</li>
-<li>Platform: Leave it blank. (The bundle platforms are specified in the above MSBuild Arguments.)
-</li>
-<li><p>Configuration: Leave it set to ```$(BuildConfiguration)```</p>
-<p>Note: By default BuildConfiguration is set to ```release``` on the Variables tab. Release should be used for upload builds.
-</p>
-</li>
-</ul>
-</td>
-</tr>
-</table>
+ ---
 
-[!INCLUDE [temp](../../_shared/definition-finish-and-test.md)]
+1. In the right panel, click **Universal Windows Platform**, and then click **Apply**.
 
-## Q&A
+ You now see all the tasks that were automatically added to the build definition by the template. These are the steps that will automatically run every time you check in code.
 
-<!-- BEGINSECTION class="md-qanda" -->
+1. For the **Agent queue**:
 
-### How do I associate my package with the store?
+ * **VSTS:** Select _Hosted VS2017_. This is how you can use our pool of agents that have the software you need to build your app.
 
-See [Packaging Universal Windows apps for Windows 10](https://msdn.microsoft.com/en-us/library/windows/apps/hh454036.aspx).
+ * **TFS:** Select a queue that includes a [Windows build agent](../../actions/agents/v2-windows.md).
 
-[!INCLUDE [temp](../../_shared/qa-versions.md)]
+1. Click **Get sources** and then:
 
-<!-- ENDSECTION -->
+ # [VSTS or TFS repo](#tab/vsts)
+
+ Observe that the new build definition is automatically linked to your repository.
+
+ # [GitHub repo](#tab/github)
+
+ Select your version control repository. You'll need to authorize access to your repo.
+
+ ---
+
+1. Click the **Triggers** tab in the build definition. Enable the **Continuous Integration** trigger. This will ensure that the build process is automatically triggered every time you commit a change to your repository.
+
+1. Click **Save & queue** to kick off your first build. On the **Save build definition and queue** dialog box, click **Save & queue**.
+
+1. A new build is started. You'll see a link to the new build on the top of the page. Click the link to watch the new build as it happens.
+
+[//]: # (TODO:> [!TIP])
+[//]: # (TODO:> To learn more about GitHub CI builds, see [Define CI build process for your Git repo](#)
+
+## View the build summary
+
+[!INCLUDE [include](../_shared/view-build-summary.md)]
+
+## Next steps
+
+You can now update the build definition to generate production builds.
+
+ * [Signing UWP package](https://docs.microsoft.com/en-us/windows/uwp/packaging/create-certificate-package-signing)
+ * [Associate package with the store](https://msdn.microsoft.com/en-us/library/windows/apps/hh454036.aspx)

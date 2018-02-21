@@ -1,12 +1,12 @@
 ---
 ms.assetid: 0D65C5BE-DF92-42F6-B6A4-217F0509D425
 title: Deploy your Web Deploy package to IIS servers using WinRM
-description: Example of deploying a ASP.NET or Node Web Deploy package to IIS servers from Visual Studio Team Services (VSTS) or Microsoft Team Foundation Server (TFS) using Windows Remote Management (WinRM)
+description: Deploy a ASP.NET or Node Web Deploy package to IIS servers from VSTS or TFS using WinRM
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-release
+ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
-ms.date: 02/01/2017
+ms.date: 01/19/2018
 ---
 
 # Deploy your Web Deploy package to IIS servers using WinRM
@@ -14,7 +14,7 @@ ms.date: 02/01/2017
 [!INCLUDE [temp](../../_shared/version-rm-dev14.md)]
 
 > A simpler way to deploy web applications to IIS servers is by using [deployment groups](deploy-webdeploy-iis-deploygroups.md)
-instead of WinRM. Deployment groups are currently in preview for some accounts in Team Services. They are not yet available in TFS.
+instead of WinRM. Deployment groups are currently in preview for some accounts in VSTS. They are not yet available in TFS.
 
 Continuous deployment means starting an automated deployment process whenever a new successful build is available.
 Here we'll show you how to set up continuous deployment of your ASP.NET or Node app to one or more IIS servers using Release Management.
@@ -26,11 +26,11 @@ A task running on the [Build and Release agent](../../concepts/agents/agents.md)
 
 Before you begin, you'll need a CI build that publishes your Web Deploy package. To set up CI for your specific type of app, see:
 
-* [Build your ASP.NET 4 app](../aspnet/ci/build-aspnet-4.md)
+* [Build your ASP.NET 4 app](../aspnet/build-aspnet-4.md)
 
-* [Build your ASP.NET Core app](../aspnet/ci/build-aspnet-core.md)
+* [Build your ASP.NET Core app](../aspnet/build-aspnet-core.md)
 
-* [Build your Node app with Gulp](../node/nodejs-to-azure.md)
+* [Build your Node app with Gulp](../nodejs/build-gulp.md)
 
 ### WinRM configuration
 
@@ -72,9 +72,11 @@ Follow these steps to configure each target server.
    or higher installed on every target machine. See
    [How to: Determine Which .NET Framework Versions Are Installed](https://msdn.microsoft.com/en-in/library/hh925568(v=vs.110).aspx).
 
-1. Download the two scripts from [this GitHub repository](https://github.com/Microsoft/vsts-rm-documentation/tree/master/WinRM/WinRM-Http-Https-Without-Makecert)
-   and copy them to every target machine. You will use them to configure WinRM in the following steps.
-
+1. Download from GitHub [this PowerShell script](https://github.com/Microsoft/vsts-rm-extensions/blob/master/TaskModules/powershell/WinRM/WinRM-Http-Https/ConfigureWinRM.ps1)
+   for Windows 10 and Windows Server 2016, or
+   [this PowerShell script](https://github.com/Microsoft/vsts-rm-extensions/blob/master/TaskModules/powershell/WinRM/WinRM-Http-Https-With-Makecert/ConfigureWinRM.ps1)
+   for previous versions of Windows. Copy them to every target machine. You will use them to configure WinRM in the following steps.
+   
 1. Decide if you want to use HTTP or HTTPS to communicate
    with the target machine(s).
 
@@ -119,7 +121,7 @@ In this example, we will deploy to the Default Web Site on each of the servers. 
 ### IIS WinRM extension
 
 Install the [IIS Web App Deployment Using WinRM](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.iiswebapp)
-extension from Visual Studio Marketplace to your Team Services account or Team Foundation Server.
+extension from Visual Studio Marketplace to your VSTS account or TFS.
 
 ## Define and test your CD release process
 
@@ -144,7 +146,7 @@ Continuous deployment (CD) means starting an automated release process whenever 
 
 1. Configure the following tasks in the environment:
   
-   ![Windows Machine File Copy](../../steps/deploy/_img/windows-machine-file-copy-icon.png) [Deploy: Windows Machine File Copy](../../steps/deploy/windows-machine-file-copy.md) - Copy the Web Deploy package to the IIS servers.
+   ![Windows Machine File Copy](../../tasks/deploy/_img/windows-machine-file-copy-icon.png) [Deploy: Windows Machine File Copy](../../tasks/deploy/windows-machine-file-copy.md) - Copy the Web Deploy package to the IIS servers.
    
    - **Source**: Select the Web deploy package (zip file) from the artifact source.
    
@@ -156,7 +158,7 @@ Continuous deployment (CD) means starting an automated release process whenever 
    
    - **Destination Folder**: Specify a folder on the target server where the files should be copied to.<p />
    
-   ![WinRM - IIS Web App Deployment](../../steps/deploy/_img/iis-web-application-deployment-icon.png) [Deploy: WinRM - IIS Web App Deployment](https://github.com/Microsoft/vsts-rm-extensions/blob/master/Extensions/IISWebAppDeploy/Src/Tasks/IISWebAppDeploy/README_IISAppDeploy.md) - Deploy the package.
+   ![WinRM - IIS Web App Deployment](../../tasks/deploy/_img/iis-web-application-deployment-icon.png) [Deploy: WinRM - IIS Web App Deployment](https://github.com/Microsoft/vsts-rm-extensions/blob/master/Extensions/IISWebAppDeploy/Src/Tasks/IISWebAppDeploy/README_IISAppDeploy.md) - Deploy the package.
    
    - **Machines**: `$(WebServers)`
    

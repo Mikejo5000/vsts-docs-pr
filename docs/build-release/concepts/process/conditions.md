@@ -1,6 +1,6 @@
 ---
 title: Conditional task expressions
-description: Write custom conditions for running your task in Visual Studio Team Services or Microsoft Team Foundation Server (TFS)
+description: Write custom conditions for running your task in VSTS or Microsoft Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: C79149CC-6E0D-4A39-B8D1-EB36C8D3AB89
@@ -11,9 +11,10 @@ ms.date: 03/22/2017
 
 # Specify conditions for running a task
 
-**Team Services** 
+**VSTS** 
 
-Inside the **Control Options** of each task, you can specify the conditions under which the task is run:
+Inside the **Control Options** of each task, and in the **Additional options** for a phase in a release definition,
+you can specify the conditions under which the task or phase will run:
 
 [!INCLUDE [include](_shared/task-run-built-in-conditions.md)]
 * Custom conditions
@@ -24,7 +25,7 @@ If the built-in conditions don't meet your needs, then you can specify **custom 
 
 Express the condition as a nested set of functions. The agent evaluates the innermost function and works its way out. The final result is a boolean value that determines if the task is run or not. Details on syntax are described below.
 
-Do any of your conditions make it possible for the task to run even after the build is canceled by a user? If so, then specify a reasonable value for **Build job cancel timeout in minutes** [in the options](../../define/options.md) so that these kinds of tasks have enough time to complete after the user clicks **Cancel**.
+Do any of your conditions make it possible for the task to run even after the build is canceled by a user? If so, then specify a reasonable value for **Build job cancel timeout in minutes** [in the options](../../concepts/definitions/build/options.md) so that these kinds of tasks have enough time to complete after the user clicks **Cancel**.
 
 ## Examples
 
@@ -63,6 +64,8 @@ and(failed(), eq(variables['Build.Reason'], 'PullRequest'))
 ```
 and(always(), eq(variables['Build.Reason'], 'Schedule'))
 ```
+
+> **Release.Artifacts.{artifact-alias}.SourceBranch** is equivalent to **Build.SourceBranch**.
 
 ## Types
 
@@ -179,11 +182,13 @@ Alias to reference a build variable. For example:
 
 Some of the more useful predefined variables include:
 
-* `Build.Reason` which you an use to check whether the build was the result of a [build trigger](../../define/triggers.md), a [Git PR affected by a branch policy](../../../git/branch-policies.md), or a [TFVC gated check-in](../../../tfvc/check-folder-controlled-by-gated-check-build-process.md).
+* `Build.Reason` which you an use to check whether the build was the result of a [build trigger](../../concepts/definitions/build/triggers.md), a [Git PR affected by a branch policy](../../../git/branch-policies.md), or a [TFVC gated check-in](../../../tfvc/check-folder-controlled-by-gated-check-build-process.md).
 
 * `Build.SourceBranch`
 
-For details on these and other variables, including predefined variables and their possible values, see [Build variables](../../define/variables.md).
+* `Release.Artifacts.{artifact-alias}.SourceBranch`
+
+For details on these and other variables, including predefined variables and their possible values, see [Build variables](../../concepts/definitions/build/variables.md) and [Release variables](../../concepts/definitions/release/variables.md).
 
 ## Job status functions
 
@@ -303,10 +308,6 @@ For details on these and other variables, including predefined variables and the
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-### Can I specify custom conditions for tasks in a release process?
-
-Not yet, but we're working on it.
-
 ### What about string parsing and other operations?
 
 We might add these later. [Vote on user voice](https://visualstudio.uservoice.com/forums/330519-team-services)
@@ -314,5 +315,9 @@ We might add these later. [Vote on user voice](https://visualstudio.uservoice.co
 ### I've got a condition that runs even when build was cancelled. Does this affect a build that I cancelled in the queue?
 
 No. If you cancel a build while it's in the queue, then the entire build is canceled, including tasks like this.
+
+### I've got a task condition that runs even when the deployment was canceled. How do I specify this?
+
+This scenario is not yet supported for release definitions.
 
 <!-- ENDSECTION -->

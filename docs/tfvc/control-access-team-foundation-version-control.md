@@ -5,13 +5,13 @@ ms.assetid: cccf50be-5503-4155-974b-c75b57888603
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfvc
 ms.manager: douge
-ms.author: routlaw
+ms.author: sdanie
 ms.date: 08/10/2016
 ---
 
 # Control Access to Team Foundation Version Control
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Team Foundation version control supports granting access control permissions to Windows Groups, Windows Users, and Team Foundation Groups. Permissions can be inherited from the containing folder, or you can declare permissions explicitly.
 
@@ -19,7 +19,7 @@ Permission settings are in the form of either **Grant** or **Deny**. **Deny** al
 
 **Required Permissions**
 
-To complete this task, you must have the **Manipulate security settings** permission set to **Allow**. For more information, see [Team Foundation Server Permissions](../setup-admin/permissions.md).
+To complete this task, you must have the **Manipulate security settings** permission set to **Allow**. For more information, see [Permissions and groups reference](../security/permissions.md).
 
 ### To set permissions for users or groups
 

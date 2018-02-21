@@ -5,18 +5,18 @@ ms.assetid: 5531edc7-0333-43eb-bea0-59db9bc35c33
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfvc
 ms.manager: douge
-ms.author: routlaw
+ms.author: sdanie
 ms.date: 08/10/2016
 ---
 
 # LocalVersions Command
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Displays the version of one or more items in a workspace.
 
 **Required Permissions**  
-To use the **localversions** command, you must have the **Use** permission to the workspace. For more information, see [Team Foundation Server Permissions](../setup-admin/permissions.md).
+To use the **localversions** command, you must have the **Use** permission to the workspace. For more information, see [Permissions and groups reference](../security/permissions.md).
 
     tf localversions ItemSpec
     [/recursive] [/format:brief|detailed]

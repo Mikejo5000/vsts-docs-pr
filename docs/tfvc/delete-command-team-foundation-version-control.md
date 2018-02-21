@@ -5,22 +5,22 @@ ms.assetid: c4cf7a59-26c8-490c-a065-279888019c36
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfvc
 ms.manager: douge
-ms.author: routlaw
+ms.author: sdanie
 ms.date: 08/10/2016
 ---
 
 # Delete Command (Team Foundation Version Control)
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Removes files and folders from the Team Foundation version control server and deletes them from the disk.
 
->**Note:**  
->The results of this command are not visible in other workspaces until you perform a check-in operation. For more information, see [Check In Pending Changes](https://msdn.microsoft.com/library/ms181411).
+> [!NOTE]
+> The results of this command are not visible in other workspaces until you perform a check-in operation. For more information, see [Check In Pending Changes](https://msdn.microsoft.com/library/ms181411).
 
 **Required Permissions**
 
-To use the **delete** command, you must have the **Check out** permission set to **Allow**. If you include the **/lock** option with a value other than *none*, you must have the **Lock** permission set to **Allow**. Additionally, you must own the workspace or have the global **Administer workspaces** permission set to **Allow**. For more information, see [Team Foundation Server Permissions](../setup-admin/permissions.md).
+To use the **delete** command, you must have the **Check out** permission set to **Allow**. If you include the **/lock** option with a value other than *none*, you must have the **Lock** permission set to **Allow**. Additionally, you must own the workspace or have the global **Administer workspaces** permission set to **Allow**. For more information, see [Permissions and groups reference](../security/permissions.md).
 
     tf delete [/lock:(none|checkin|checkout)] [/recursive] [/login:username,[password]] itemspec
 ## Parameters
@@ -39,7 +39,7 @@ To use the **delete** command, you must have the **Check out** permission set to
 <tr><th><p><strong>Option</strong></p></th><th><p><strong>Description</strong></p></th></tr></thead><tbody>
 <tr>
 	<td><p><strong>/lock</strong></p></td>
-	<td><p>Prevents other users from checking in or checking out the specified items. For more information, see <a href="/docs/tfvc/understand-lock-types">Understanding Lock Types</a>.</p><p>Lock Options:</p><ul><li><p><strong>None</strong></p><p>Default. No lock is applied. If you have placed a lock on the specified file, this option removes it. It does not remove a lock placed by someone else.</p></li><li><p><strong>Checkin</strong></p><p>Other users can check out the specified items but they cannot check in revisions to locked files until you release the lock by performing a check-in. If any other users have locked any one of the specified items, the lock operation fails.</p></li><li><p><strong>Checkout</strong></p><p>Prevents other users from checking in or checking out any one of the specified items until you release the lock by performing a check-in. If any other users have locked any one of the specified items, the lock operation fails.</p></li></ul></td></tr>
+	<td><p>Prevents other users from checking in or checking out the specified items. For more information, see <a href="understand-lock-types.md">Understanding Lock Types</a>.</p><p>Lock Options:</p><ul><li><p><strong>None</strong></p><p>Default. No lock is applied. If you have placed a lock on the specified file, this option removes it. It does not remove a lock placed by someone else.</p></li><li><p><strong>Checkin</strong></p><p>Other users can check out the specified items but they cannot check in revisions to locked files until you release the lock by performing a check-in. If any other users have locked any one of the specified items, the lock operation fails.</p></li><li><p><strong>Checkout</strong></p><p>Prevents other users from checking in or checking out any one of the specified items until you release the lock by performing a check-in. If any other users have locked any one of the specified items, the lock operation fails.</p></li></ul></td></tr>
 <tr>
 	<td><p><strong>/recursive</strong></p></td>
 	<td><p>Deletes all files and/or folders and subfolders that match the itemspec from the specified directory.</p><ul><li><p><strong>tf delete folder1\folder2 /recursive</strong> (where folder1\folder2 exists and is a directory) deletes all the files and subdirectories contained by folder1\folder2 and folder1\folder2 itself.</p></li><li><p><strong>tf delete folder1\folder2\filespec<em> /recursive</strong> deletes all files and subdirectories matching filespec contained in folder1\folder2 and each of its subdirectories, as well as all files and subdirectories contained within any directory that matches the filespec.</p><p>For example, in a workspace containing:</p><p>Folder1\AVeryLongDirectoryName (with some files inside) and Folder1\Folder2\AVeryImportantFile.txt</p><p><strong>tf delete 'Folder1\AVer</em>' /recursive</strong></p><p>deletes folder1\folder2\NeverDelete\AVeryImportantFile.txt because it matches the wildcard character.</p></li></ul></td></tr>

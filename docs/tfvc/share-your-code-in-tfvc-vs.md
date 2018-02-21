@@ -1,18 +1,19 @@
 ---
-title: Develop and share your code in TFVC using Visual Studio | Visual Studio Team Services
+title: Develop and share your code in TFVC using Visual Studio | VSTS
 description: Share code in Team Foundation Version Control using Visual Studio
 ms.assetid: 108544c0-c29e-4b3b-9a39-4573cf4a71dc
 toc: show
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfvc
+ms.topic: get-started-article
 ms.manager: douge
-ms.author: routlaw
+ms.author: sdanie
 ms.date: 08/10/2016
 ---
 
 # Develop and share your code in TFVC using Visual Studio
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Whether your software project is large, small, or brand new, 
 in most cases you'll be better off if you use version control 
@@ -20,7 +21,7 @@ as early as possible.
 Here, we'll show you how to get started with 
 Team Foundation Version Control (TFVC), a centralized system.
 If you want to work in a distributed system, 
-you can instead use [Git with Visual Studio Team Services](../git/share-your-code-in-git-vs.md).
+you can instead use [Git with VSTS](../git/share-your-code-in-git-vs.md).
 
 Is your code in another place? [Learn how to migrate it here](#migrate).
 
@@ -66,20 +67,20 @@ Now that you've added your app, you can skip down to
 
 0. Move the code you want to upload to the workspace folder.
 
- ![Move your source code to your workspace folder](_img/share-your-code-in-tfvc-vs/IC689415.jpg)
+ ![Move your source code to your workspace folder](_img/share-your-code-in-tfvc-vs/IC689415.png)
 
 0. Open your solution in Visual Studio.
 
  ![Open your solution in Visual Studio](_img/share-your-code-in-tfvc-vs/open-solution-from-team-explorer-home.png)
 
 
-### Add the solution to Visual Studio Team Services
+### Add the solution to VSTS
 
 0. Open the solution explorer (Keyboard: Ctrl + Alt + L).
 
 0. Add your solution to version control.
 
- ![Add the solution to Visual Studio Team Services](_img/share-your-code-in-tfvc-vs/IC682953.png)
+ ![Add the solution to VSTS](_img/share-your-code-in-tfvc-vs/IC682953.png)
 
 0. Check in the solution.
 
@@ -140,37 +141,30 @@ Your whole team can work on the code now. All your changes are tracked in versio
 
  ![History window](_img/share-your-code-in-tfvc-vs/IC682163.png)
 
-## Try this next
+## Troubleshooting
 
-[Get your code reviewed](get-code-reviewed-vs.md)
-
-## Q&A
-
-<!-- BEGINSECTION class="md-qanda" -->
+* [My code is somewhere else. Can I migrate it to my TFVC project on VSTS?](#my-code-is-somewhere-else-can-i-migrate-it-to-my-tfvc-project-on-visual-studio-team-services)
+* [I don't see the Configure Workspace link shown in the steps above. What do I do next?](#i-dont-see-the-configure-workspace-link-shown-in-the-steps-above-what-do-i-do-next)
 
 <a name="migrate"></a>
-#### Q: My code is somewhere else. Can I migrate it to my TFVC project on Visual Studio Team Services?
+### My code is somewhere else. Can I migrate it to my TFVC project on VSTS?
 
-A: Yes:
+Yes:
 
  * [Upgrade From Visual SourceSafe](http://msdn.microsoft.com/library/ms253060).
-
- * [Migrate from Team Foundation Server into Visual Studio Team Services](https://www.visualstudio.com/en-us/articles/adopting-vsts).
-
-[!INCLUDE [temp](_shared/open-team-project-in-vs-qa.md)]
-
-[!INCLUDE [temp](../_shared/qa-vs-launch-fail.md)]
-
-[!INCLUDE [temp](../_shared/qa-vs-legacy-connect.md)]
+ * [Migrate from Team Foundation Server into VSTS](../articles/migrate-to-vsts-from-tfs.md).
 
 <a name="workspace_exists"></a>
-#### Q:	I don't see the Configure Workspace link shown in the steps above. What do I do next?
+### I don't see the Configure Workspace link shown in the steps above. What do I do next?
 
-A:	You might already have a workspace on your computer. To see your workspace, open Source 
+You might already have a workspace on your computer. To see your workspace, open Source 
 Control Explorer. Or change your workspace. Find out how to [manage files under 
 source control](http://msdn.microsoft.com/library/ms181370.aspx) or 
 [manage workspaces](http://msdn.microsoft.com/library/ms181383.aspx).
 
 ![In Team Explorer, click Source Control Explorer or Manage Workspaces](_img/share-your-code-in-tfvc-vs/OpenSCE_ManageWorkspaces.png)
 
-<!-- ENDSECTION --> 
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Get your code reviewed](get-code-reviewed-vs.md)

@@ -1,31 +1,32 @@
 ---
-title: Release Definitions for Release Management in Visual Studio Team Services and Team Foundation Server (TFS)
+title: Release Definitions for Release Management in VSTS and TFS
 description: Understand release definitions in Release Management for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.assetid: 604AFC89-57CD-44F9-B440-5F07F88F0BD4
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-release
-ms.topic: get-started-article
+ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
-ms.date: 10/20/2016
+ms.date: 01/19/2018
 ---
 
 # Release definitions in Release Management
 
 [!INCLUDE [version-rm-dev14](../../../_shared/version-rm-dev14.md)]
 
-A **release definition** is one of the fundamental concepts in Release Management for Team Services and TFS.
+A **release definition** is one of the fundamental concepts in Release Management for VSTS and TFS.
 It defines the end-to-end release process for an application to be deployed across various environments.
 
 You start using Release Management by authoring a release definition for your application. To author a release definition, you must specify the [artifacts](artifacts.md) that make up the application and the **release process**.
 
 An **artifact** is a deployable component of your application. It is typically produced through a Continuous Integration or a build process. Release Management can deploy artifacts that are produced by a [wide range of artifact sources](artifacts.md#sources) such as Team Build, Jenkins, or Team City.
 
-You define the **release process** using [environments](environments.md), and restrict deployments into or out of an environment using [approvals](environments.md#approvals). You define the automation in each environment using [phases](../../process/phases.md) and [tasks](../../process/tasks.md). You use [variables](variables.md) to generalize your automation and [triggers](triggers.md) to control when the deployments should be kicked off automatically.
+You define the **release process** using [environments](environments.md), and restrict deployments into or out of an environment using [approvals](approvals/index.md). You define the automation in each environment using [phases](../../process/phases.md) and [tasks](../../process/tasks.md). You use [variables](variables.md) to generalize your automation and [triggers](triggers.md) to control when the deployments should be kicked off automatically.
 
 An example of a release process that can be modeled through a release definition in shown below:
 
 ![Artifacts in a definition and release](_img/definition-01.png)
+
+[What's the difference between a release definition and a release?](../../releases/index.md)
 
 In this example, a release of a website is created by collecting specific versions of two builds (artifacts), each from a different build definition. The release is first deployed to a Dev environment and then forked in parallel to two QA environments in parallel. If the deployment succeeds in both the QA environments, the release is deployed to Prod ring 1 and then to Prod ring 2. Each production ring represents multiple instances of the same website deployed at various locations around the globe.
 
@@ -87,8 +88,6 @@ Every time you save a release definition, Release Management keeps a copy of the
 * [Work with release definitions](../../../actions/work-with-release-definitions.md)
 
 * [View and manage releases](../../../actions/view-manage-releases.md)
-
-* [Monitor releases and debug deployment issues](../../../actions/debug-deployment-issues.md)
 
 * [Configure your release pipelines for safe deployments](https://blogs.msdn.microsoft.com/visualstudioalm/2017/04/24/configuring-your-release-pipelines-for-safe-deployments/)
 

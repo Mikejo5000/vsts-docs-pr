@@ -7,11 +7,12 @@ ms.assetid: 63eae10a-b4d6-4ef5-93fd-270d20a8a2cf
 ms.manager: douge
 ms.author: kaelli
 ms.date: 03/09/2017
+ms.topic: get-started-article
 ---
 
 # Configure or add a project portal
 
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 The project portal is a site associated with a team project for the purposes of sharing information. Project portals that are created when the team project is created are associated with a SharePoint site. These [portals](share-information-using-the-project-portal.md) provide access to shared documents, dashboards, and support files that contain redirect links to MSDN process guidance topics.  
   
@@ -38,7 +39,7 @@ The project portal is a site associated with a team project for the purposes of 
 ##  <a name="portal_enabled"></a> Determine if your team project portal is enabled  
  If you cannot access Excel reports or dashboards, you might want to verify whether a portal has been enabled for your team project.  
   
-1.  From Visual Studio or Team Explorer, [connect to your team project](../../connect/connect-team-projects.md).  
+1.  From Visual Studio or Team Explorer, [connect to your team project](../../user-guide/connect-team-projects.md).  
   
 2.  Open Portal Settings.  
   
@@ -51,7 +52,7 @@ The project portal is a site associated with a team project for the purposes of 
 ##  <a name="simple"></a> Configure a Web site for your portal  
  Configure this option when you aren't using SharePoint Products or when your team project is hosted on VSTS.  
   
-1.  If you aren't a member of the Team Project Administrators group, [get added now](https://www.visualstudio.com/en-us/docs/setup-admin/add-users).  
+1.  If you aren't a member of the Team Project Administrators group, [get added now](/vsts/accounts/add-administrator-team-project).  
   
 2.  Open Portal Settings.  
   
@@ -60,9 +61,9 @@ The project portal is a site associated with a team project for the purposes of 
      ![Specify URL  for project portal Web site](_img/alm_pg_portalwebsite.png "ALM_PG_PortalWebSite")  
   
 ##  <a name="validtfs"></a> Configure a prepared SharePoint site for your portal  
- Choose this option when you have a SharePoint Web application that has been integrated to work with TFS. To learn how to do this, see [SharePoint Products requirements for Team Foundation Server](https://www.visualstudio.com/en-us/docs/setup-admin/requirements#sharepoint).  
+ Choose this option when you have a SharePoint Web application that has been integrated to work with TFS. To learn how to do this, see [SharePoint Products requirements for Team Foundation Server](/vsts/accounts/requirements#sharepoint).  
   
-1.  If you aren't a member of the Team Project Administrators group, [get added now](https://www.visualstudio.com/en-us/docs/setup-admin/add-users).  
+1.  If you aren't a member of the Team Project Administrators group, [get added now](/vsts/accounts/add-administrator-team-project).  
   
 2.  Open Portal Settings from the Settings page in Team Explorer.  
   
@@ -75,7 +76,7 @@ The project portal is a site associated with a team project for the purposes of 
 ##  <a name="addsp"></a> Add SharePoint site integration and upload portal contents from a process template  
  Choose this option to gain access to Excel reports, dashboards, and process guidance support.  To add the portal to the team project, use the **tfpt** command line tool that TFS Power Tools provides.  
   
-1.  [Add SharePoint products to your deployment](../../setup-admin/tfs/admin/add-sharepoint-to-tfs.md).  
+1.  [Add SharePoint products to your deployment](../../tfs-server/admin/add-sharepoint-to-tfs.md).  
   
 2.  Verify that you have the following tools, configurations, and permissions.  
   
@@ -85,14 +86,14 @@ The project portal is a site associated with a team project for the purposes of 
   
     2.  If you haven't installed a version of Visual Studio, [install one of them now](https://www.visualstudio.com/downloads/download-visual-studio-vs). You can download Team Explorer for free. Team Explorer must be installed on the same machine where you run the **tfpt** command line tool.  
   
-    3.  If you aren't an administrator for the team project, [get added now](../../setup-admin/add-administrator-tfs.md#project-collection).  
+    3.  If you aren't an administrator for the team project, [get added now](../../security/set-project-collection-level-permissions.md).  
   
-    4.  If you haven't been granted Full Control for the SharePoint site, [get that permission now](../../setup-admin/add-users.md).  
+    4.  If you haven't been granted Full Control for the SharePoint site, [get that permission now](../../security/set-sharepoint-permissions.md).  
   
 3.  Open a Command Prompt in administrative mode and change to the directory where you installed the power tools.  
   
     ```  
-    cd %programfiles%\Microsoft Team Foundation Server 2013 Power Tools  
+    cd %programfiles%\TFS 2013 Power Tools  
     ```  
   
      On a 64-bit edition of Windows, replace `%programfiles%` with %`programfiles(x86)%`.  
@@ -130,11 +131,11 @@ The project portal is a site associated with a team project for the purposes of 
   
      ![Show Project Portal link on Documents page](_img/alm_pg_showprojectportal.png "ALM_PG_ShowProjectPortal")  
   
-8.  From your project portal, [add team member accounts to the Contributors group](https://www.visualstudio.com/en-us/docs/setup-admin/add-users) for the SharePoint site.  
+8.  From your project portal, [add team member accounts to the Contributors group](/vsts/security/set-sharepoint-permissions) for the SharePoint site.  
   
 ## Related notes 
 
-The artifacts you'll have access to depend on the process template created with your team project. For an overview of the artifacts available with the default process templates, see [Choose a process](../..//work/guidance/choose-process.md).  
+The artifacts you'll have access to depend on the process template created with your team project. For an overview of the artifacts available with the default process templates, see [Choose a process](../..//work/work-items/guidance/choose-process.md).  
   
 - [SharePoint Online Tutorial](http://office.microsoft.com/sharepoint-server-help/sharepoint-pages-i-an-introduction-RZ101837217.aspx?CTT=1)
 

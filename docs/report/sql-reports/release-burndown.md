@@ -6,10 +6,12 @@ ms.technology: vs-devops-reporting
 ms.assetid: 9044206f-c993-451d-bcc8-6f3980c90b3e
 ms.manager: douge
 ms.author: kaelli
-ms.date: 12/30/2016
+ms.date: 10/17/17
 ---
+
+
 # Release Burndown
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 By reviewing the release burndown report, you can understand how quickly your team has delivered backlog items and track how much work the team must still perform to complete a product release.  
   
@@ -46,5 +48,5 @@ By reviewing the release burndown report, you can understand how quickly your te
 -   How quickly is your team working through the product backlog?  
   
 ## Related notes 
- [Scrum process](../../work/guidance/scrum-process.md)   
+ [Scrum process](../../work/work-items/guidance/scrum-process.md)   
 [Define area paths](../../work/customize/set-area-paths.md) or [Define iteration paths](../../work/customize/set-iteration-paths-sprints.md) 

@@ -5,13 +5,13 @@ ms.assetid: be153b5c-b26d-4bfe-aec2-fd23156ead68
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfvc
 ms.manager: douge
-ms.author: routlaw
+ms.author: sdanie
 ms.date: 08/10/2016
 ---
 
 # Associate a file type with a merge tool
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 The diff/merge tool included in Team Foundation opens when the user tries to compare two files (or two versions of a file), or when the user elects to perform a manual merge of a file that has conflicting changes.
 
@@ -19,7 +19,7 @@ The tool is compatible with text and XML based files; however, should you want t
 
 **Required Permissions**
 
-To perform this procedure, you must be a member of the **Administrators** or **Users** security group on the computer where Visual Studio is installed. For more information, see [Pernission reference for Team Foundation Server](../setup-admin/permissions.md).
+To perform this procedure, you must be a member of the **Administrators** or **Users** security group on the computer where Visual Studio is installed. For more information, see [Permissions and groups reference](../security/permissions.md).
 
 ### To associate a file type with a third-party merge tool
 

@@ -1,23 +1,23 @@
 ---
-title: Chat using team rooms  | Team Services & TFS   
-description: Increase team productivity and collaboration, discuss progress, share status, and clarify issues in the team room for Team Services (VSTS) and TFS
+title: Chat using team rooms
+titleSuffix: TFS  
+description: Increase team productivity and collaboration, discuss progress, share status, and clarify issues in a team room for TFS
 ms.technology: collaborate
 ms.prod: vs-devops-alm
 ms.assetid: 5f3d7c83-15bd-4176-b594-3e2ddc1afd6b 
 ms.manager: douge
 ms.author: kaelli
-ms.date: 07/21/2017
+ms.date: 02/20/2018
 ---
 
 # Collaborate in a team room  
 
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
+<b>TFS 2017 | TFS 2015 | TFS 2013</b> 
 
-
->[!NOTE]  
-><b>Feature availability: </b>The Team Room feature is in the process of being deprecated. Several good solutions are available that integrate well with TFS that support notifications and chat, such as [Microsoft Teams](https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-teams) and [Slack](slack.md). As a result, the Team Room feature will be deprecated from both Team Services and TFS.
->
->To learn more about this change and the timeline for deprecation, see this blog post: [Deprecation of the Team Rooms in Team Services and TFS](https://blogs.msdn.microsoft.com/visualstudioalm/2017/01/04/deprecation-of-the-team-rooms-in-team-services-and-tfs/).  
+> [!NOTE]  
+> **Feature availability:** Team Rooms are deprecated for sual Studio Team Services (VSTS) and Team Foundation Server (TFS) 2018 and later versionsas described in this blog post,  [Deprecation of the Team Rooms in VSTS and TFS](https://blogs.msdn.microsoft.com/devops/2017/01/04/deprecation-of-the-team-rooms-in-team-services-and-tfs/).  
+> 
+> Several good solutions are available that integrate well with VSTS and TFS that support notifications and chat, such as [Microsoft Teams](../service-hooks/services/teams.md) and [Slack](../service-hooks/services/slack.md). Microsoft Teams also provides support for a [developer platform](https://docs.microsoft.com/en-us/microsoftteams/platform/).
 
 Team rooms, like chat rooms, provide teams with a space to discuss work in progress, ask questions, share status, and clarify issues that arise. By fostering and capturing communication among team members, both near and far, team rooms can help increase your team's productivity.    
 
@@ -34,9 +34,9 @@ Members of the Project Administrators groups can create and administer team room
 
 	![Team room tile on team project home page](_img/ALM_CT_TeamroomTile.png) 
 	
-	If you don't see the room tile, [(Visual Studio Team Services) ask your account administrator to grant you a Basic license](../setup-admin/team-services/add-account-users-assign-access-levels-team-services.md) or [(on-premises TFS) request Basic access from your TFS administrator](../work/connect/change-access-levels.md).  
+	If you don't see the room tile, [(VSTS) ask your account administrator to grant you a Basic license](../accounts/add-account-users-assign-access-levels.md) or [(on-premises TFS) request Basic access from your TFS administrator](../security/change-access-levels.md).  
 
-	If you can't enter the room, get added as a member: [(Visual Studio Team Services) Add team members](../setup-admin/team-services/add-team-members-vs.md) or [(on-premises TFS) Add team members](../work/scale/multiple-teams.md#add-team-members).
+	If you can't enter the room, get added as a member: [(VSTS) Add team members](../accounts/add-team-members-vs.md) or [(on-premises TFS) Add team members](../work/scale/multiple-teams.md#add-team-members).
 
 2. To switch to another team room, open it from the **Rooms** list. 
 
@@ -117,8 +117,8 @@ A team room is automatically created when you [add a team](../work/scale/multipl
 
 - To completely exit a team room, close all browser instances where you've logged into the team room  
 - To mute the sound, click the ![Audio icon on the Rooms page](_img/ALM_CT_AudioIcon.png) audio icon to turn the sound off or on  
-- For other uses of the `#mention` control plus more ways to increase your productivity, see [Productivity tips](../work/productivity/productivity-tips.md)   
-- To change your profile image, see [Account preferences](../setup-admin/account-preferences.md).  
+- For other uses of the `@mention`, see [Use @mentions to further discussion](../notifications/at-mentions.md)   
+- To change your profile image, see [Account preferences](../accounts/account-preferences.md).  
 
 
 <a id="team-room-permissions"> </a>

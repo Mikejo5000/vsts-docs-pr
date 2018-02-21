@@ -6,10 +6,12 @@ ms.technology: vs-devops-reporting
 ms.assetid: 1478227b-50b9-4ef1-be5b-838cd5a5467b
 ms.manager: douge
 ms.author: kaelli
-ms.date: 12/30/2016
+ms.date: 10/17/17
 ---
+
+
 # Stories Progress Report (Agile)
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 The Stories Progress report lists all user stories, filtered by product area and iteration in order of importance.  
   
@@ -23,7 +25,7 @@ The Stories Progress report lists all user stories, filtered by product area and
   
  **Required Permissions**  
   
- To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in Reporting Services. For more information, see [Add users to team projects](../../setup-admin/add-users.md).  
+ To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in Reporting Services. For more information, see [Add users to team projects](../admin/grant-permissions-to-reports.md).  
   
 ##  <a name="Data"></a> Data in the Report  
  The Stories Progress report shows the status of completion as determined by the tasks that have been defined to implement the user story, as the following illustration shows. The data in the report is derived from the data warehouse.  

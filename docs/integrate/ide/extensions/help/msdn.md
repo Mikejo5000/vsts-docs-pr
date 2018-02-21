@@ -1,6 +1,6 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-integrate-ide
+ms.technology: vs-devops-integrate
 title: MSDN
 description: Find additional help at MSDN.
 ms.assetid: 31BD6BC8-A377-4F02-974E-03C480C43A54

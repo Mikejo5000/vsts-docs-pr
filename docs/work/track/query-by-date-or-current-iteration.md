@@ -1,20 +1,21 @@
 ---
-title: Query by date or current iteration | Team Services & TFS
-description: Find or list work items based on a date or a team's current iteration using Agile tools and Scrum methods when working in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) 
-ms.technology: vs-devops-agile-wit
+title: Query by date or current iteration 
+titleSuffix: VSTS & TFS
+description: Create a query that finds work items based on a date or a team's current iteration using when working in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) 
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 95D9F558-E3C4-4D5F-BB69-76A3BD7625D8
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/04/2016
+ms.date: 02/05/2018  
 ---
 
 # Query by date or current iteration
 
 [!INCLUDE [temp](../_shared/dev15-version-header.md)]
 
-<p>Two query macros help you find work items based on when changes occurred or if they belong to the current sprint. To list work items based on when they were created, closed, resolved, or changed state─use **@Today** or specify dates.  For queries that list work items based on their assignment to a team's current sprint, use **@CurrentIteration**.</p>
-<p>For example, you can find work items that were modified in the last 3 days with the following query.</p>
+Two query macros help you find work items based on when changes occurred or if they belong to the current sprint. To list work items based on when they were created, closed, resolved, or changed state&mdash;use **@Today** or specify dates.  For queries that list work items based on their assignment to a team's current sprint, use **@CurrentIteration**.</p>
+<p>For example, you can find work items that were modified in the last 3 days with the following query.
 
 ![Editor query filter based on recent changes](_img/query-by-date-example.png)  
 
@@ -96,8 +97,27 @@ Any item assigned to a sprint which corresponds to the current iteration path fo
 
 You can't use the **@CurrentIteration** macro from some [clients, features, or REST APIs](#current_sprint_restrict).  
 
-<a id="date_fields">  </a>
 
+<!---
+<a id="current-iteration-plus-minus-n">  </a>
+
+## Query for items based on a sliding window of team iterations 
+
+The <b>@CurrentIteration +/- <i>n</i></b> macro is useful for tracking work a team plans for upcoming sprints and for understanding work that wasn't completed in previous sprints. 
+
+> [!NOTE] 
+> **Feature availability**: The <b>@CurrentIteration +/- <i>n</i></b> macro is supported from the web portal for VSTS. The macro only works when run from the web portal. 
+
+Here we show how to list all Features, User Stories, and Bugs assigned to the previous, current, and next sprints selected for the current team context and under the specified Area Path. 
+
+> [!div class="mx-imgBorder"]
+![At Current Iteration plus and minus claused](_img/query-at-current-iteration-plus-minus.png)
+
+To use this macro, a team must have [selected a set of sprints](../scale/set-team-defaults.md) that span the <b>+/- <i>n</i></b> value entered for the macro.  
+
+-->
+
+<a id="date_fields">  </a>
 ## Date fields
 <p>You can use date fields to filter your queries. Some of these fields are populated with information as a work item progresses from one state to another. Several of these fields do not appear on the work item form, but they are tracked for those WITs listed in the following table.</p>
 
@@ -248,7 +268,7 @@ You can't use the **@CurrentIteration** macro from some [clients, features, or R
 	</FIELD >  
 	```
 
-2. Start and Finish Date fields are calculated if you create a project plan in Microsoft Project and then synchronize that plan with tasks that are stored in TFS or Team Services. These fields do not appear on the work item form, but they are calculated for those backlog items and tasks that are linked to backlog items. You can view their read-only values in results from a query or from Microsoft Excel or Project. For more information, see [Create your backlog and tasks using Project](../office/create-your-backlog-tasks-using-project.md).
+2. Start and Finish Date fields are calculated if you create a project plan in Microsoft Project and then synchronize that plan with tasks that are stored in TFS or VSTS. These fields do not appear on the work item form, but they are calculated for those backlog items and tasks that are linked to backlog items. You can view their read-only values in results from a query or from Microsoft Excel or Project. For more information, see [Create your backlog and tasks using Project](../backlogs/office/create-your-backlog-tasks-using-project.md).
 
 
 ##Related notes
@@ -258,7 +278,7 @@ To query for items based on text entered in the History field, see
 - [Create managed queries to list, update, or chart work items ](example-queries.md)    
 - [Query editor](using-queries.md)    
 - [Query operators & macros](query-operators-variables.md)       
-- [Work item field index](../guidance/work-item-field.md)   
+- [Work item field index](../work-items/guidance/work-item-field.md)   
 - [Query permissions](set-query-permissions.md)
 
 
@@ -273,16 +293,18 @@ To query for items based on text entered in the History field, see
 You can use the **@CurrentIteration** macro in a query from the following clients:  
 <ul>
   <li>
-    <p>Web portal that connects to Team Services</p>
+    <p>Web portal that connects to VSTS</p>
   </li>
   <li>
     <p>Web portal that connects to an on-premises TFS 2015 or later version</p>
   </li>
   <li>
-    <p>Visual Studio 2015 or Team Explorer 2015 or later versions connected to Team Services or TFS 2015 or later versions.</p>
+    <p>Visual Studio 2015 or Team Explorer 2015 or later versions connected to VSTS and TFS 2015 or later versions.</p>
   </li>
 </ul>
 
-An error occurs if you open a query that contains the **@CurrentIteration** macro in earlier versions of Visual Studio, or from Excel or Project. Also, the macro cannot be used when [copying or cloning test suites and test cases](https://msdn.microsoft.com/library/hh543843.aspx), [defining alerts](alerts-and-notifications.md), or with [REST APIs](/team-services/integrate/get-started/rest/basics).
+An error occurs if you open a query that contains the **@CurrentIteration** macro in earlier versions of Visual Studio, or from Excel or Project. Also, you can't use the macro when [copying or cloning test suites and test cases](../../manual-test/mtm/copying-and-cloning-test-suites-and-test-cases.md), [defining alerts](../../notifications/index.md), or with [REST APIs](../../integrate/get-started/rest/basics.md).
 
- 
+[!INCLUDE [temp](../_shared/rest-apis-queries.md)]
+
+[!INCLUDE [temp](../../_shared/help-support-shared.md)] 

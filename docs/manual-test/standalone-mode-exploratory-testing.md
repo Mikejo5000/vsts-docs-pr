@@ -6,17 +6,20 @@ ms.technology: vs-devops-test-manual
 ms.assetid: 762A75FB-0B6D-47C3-9232-371348D8D529
 ms.manager: douge
 ms.author: ahomer
-ms.date: 08/12/2016
+ms.date: 01/18/2018
+ms.topic: get-started-article
 ---
 
 # Exploratory testing with the Test &amp; Feedback extension in Standalone mode
- 
-[!INCLUDE [version-header-none](_shared/version-header-none.md)] 
 
-All teams can use the Test &amp; Feedback extension (previously 
-called the Exploratory Testing extension) in **Standalone** mode. 
-Users don't need a Visual Studio Team Services account 
+[!INCLUDE [version-header-ts-tfs](_shared/version-header-ts-tfs.md)] 
+
+All teams can use the Test &amp; Feedback extension in **Standalone** mode. 
+Users don't need a Visual Studio Team Services (VSTS) account 
 or Team Foundation Server connection to use this mode.
+
+<a name="testmode"></a>
+## Start testing in Standalone mode
 
 1. If you haven't already, [install the Test &amp; Feedback extension](getting-started/perform-exploratory-tests.md).
 
@@ -41,7 +44,10 @@ or Team Foundation Server connection to use this mode.
 
    ![Add notes about the issue if required](_img/standalone-mode-exploratory-testing/standalonemode-05.png)
 
-1. When you have finished capturing information for this issue, choose **Create bug**.
+<a name="createbug"></a>
+## Create a bug
+
+1. When you have finished capturing information for an issue, choose **Create bug**.
 
    ![Create a bug from the captured information](_img/standalone-mode-exploratory-testing/standalonemode-06.png)
 
@@ -57,8 +63,13 @@ or Team Foundation Server connection to use this mode.
 
    ![Review your captured information](_img/standalone-mode-exploratory-testing/standalonemode-07a.png)
 
+<a name="endsession"></a>
+## End your testing session
+
 1. Continue exploring the application. Create more bugs as you encounter
-   issues with the app. When you're done, stop your session.
+   issues with the app.
+   
+1. When you're done, stop your session.
 
    ![Stop the exploratory testing session](_img/standalone-mode-exploratory-testing/standalonemode-08.png)
 
@@ -71,12 +82,9 @@ or Team Foundation Server connection to use this mode.
    Share it with the rest of your team as an email attachment, or 
    copy it to OneNote, Word, or in any other format you prefer.
 
-[How do I play the video recordings I created with the extension?](getting-started/perform-exploratory-tests.md#recording-playback)
+[How do I play the video recordings I created with the extension?](reference-qa.md#recording-playback)
 
-## See also
+## Next step
 
-* [Use the Test &amp; Feedback extension in Connected mode](connected-mode-exploratory-testing.md)
-* [Exploratory testing with Microsoft Test Manager](mtm/exploratory-testing-using-microsoft-test-manager.md)
-* [Overview of manual and exploratory testing](index.md)
-
-[!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
+> [!div class="nextstepaction"]
+> [Use the extension in Connected mode](connected-mode-exploratory-testing.md)

@@ -6,17 +6,17 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-manual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 10/20/2016
+ms.date: 01/18/2018
 ---
 
 # Guidance on Microsoft Test Manager usage
 
 [!INCLUDE [version-header-ts-tfs15](../_shared/version-header-ts-tfs15.md)] 
 
-Team Services and Team Foundation Server offer both web-based and client-based solutions for manual testing:
+Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) offer both web-based and client-based solutions for manual testing:
 
-* The **Test Center** in Microsoft Test Manager (MTM) client is a desktop-based manual testing solution, which has traditionally been used by testers for their Manual testing needs.
-* The **Test hub** in Team Services and Team Foundation Server (TFS) is a web-based manual testing solution, which works across all platforms and with all browsers. We have invested in Test hub over past two years to provide you better experiences across Plan, Author, Execute and Track phases of Manual testing.
+* The **Test Center** in Microsoft Test Manager (MTM) client is a desktop-based manual testing solution, which has traditionally been used by testers for their Manual testing needs (see [Run manual tests with Microsoft Test Manager](run-manual-tests-with-microsoft-test-manager.md)).
+* The **Test hub** in VSTS and TFS is a web-based manual testing solution, which works across all platforms and with all browsers. We have invested in Test hub over past two years to provide you better experiences across Plan, Author, Execute and Track phases of Manual testing.
 
 >Because the **Test hub** is a fully featured Test management solution which works across all platforms and with all browsers, 
 we **recommend** you use the **Test hub** over Microsoft Test Manager for
@@ -29,14 +29,16 @@ solution for manual testing compared to Microsoft Test Manager.
 
 ## Manual Testing with the Test hub 
 
-The **Test hub** in Team Services and TFS is a fully-featured test
+The **Test hub** in VSTS and TFS is a fully-featured test
 management solution spanning all phases of the testing lifecycle.
-The **Test hub** works on all platforms (such as Windows, MacOS,
-Linux, and others) and all browsers (such as Edge, Chrome, Firefox,
+The **Test hub** works on all platforms (such as Linux, macOS,
+Windows, and others) and all browsers (such as Edge, Chrome, Firefox,
 and others). You can easily get started with using manual testing
 features right from your Kanban board, and use the **Test hub**
 for more advanced manual testing capabilities. 
 This topic shows new capabilities introduced in the **Test hub**. 
+
+[!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
 
 ### Test planning
 
@@ -55,9 +57,9 @@ and [test planning with MTM](plan-manual-tests-with-microsoft-test-manager.md)**
 | Create/edit/assign configurations | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) |
 | Clone test plan/test suite\*  | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) |
 | Add tests from other test suites\*  | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) |
-| [Order manual tests within suites (RBS, QBS, Static)](https://www.visualstudio.com/articles/news/2016/jun-01-team-services#ordering-of-tests-in-test-hub) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![no](../_img/table-no.png) |
-| [Export test plans and test suites](../getting-started/create-a-test-plan.md#qa) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![no](../_img/table-no.png) |
-| [View test case references across test suites](../getting-started/create-test-cases.md#qa) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![no](../_img/table-no.png) |
+| [Order manual tests within suites (RBS, QBS, Static)](/vsts/release-notes/2016/jun-01-team-services#ordering-of-tests-in-test-hub) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![no](../_img/table-no.png) |
+| [Export test plans and test suites](../reference-qa.md#testcases) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![no](../_img/table-no.png) |
+| [View test case references across test suites](../reference-qa.md#testcases) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![no](../_img/table-no.png) |
 | [Assign multiple testers to test plans and test suites for user acceptance testing](../getting-started/user-acceptance-testing.md#assign-and-invite-testers) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![no](../_img/table-no.png) |
 
 \* These capabilities are included as part of the upcoming version of the [Test Case Explorer](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.TestCaseExplorer)
@@ -78,7 +80,7 @@ and [test authoring with MTM](plan-manual-tests-with-microsoft-test-manager.md)*
 | --- | --- | --- |
 | Create and edit test cases using WIT form | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) |
 | Create and edit shared steps | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) |
-| [Bulk author and edit test cases](../getting-started/create-test-cases.md#qa) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![no](../_img/table-no.png) |
+| [Bulk author and edit test cases](../reference-qa.md#testcases) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![no](../_img/table-no.png) |
 | [Inline tests on Kanban board](../../work/kanban/add-run-update-tests.md)  | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![no](../_img/table-no.png) |
 | [Create and edit shared parameters](../repeat-test-with-different-data.md)  | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![no](../_img/table-no.png) |
 
@@ -144,7 +146,7 @@ and [test result tracking with MTM](https://msdn.microsoft.com/library/hh553099%
 | Test run and results analysis | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) |
 | [Create, configure, and pin light-weight test result charts](../getting-started/track-test-status.md)  | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![no](../_img/table-no.png) |
 | [Test run and results retention policy](../getting-started/how-long-to-keep-test-results.md) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![no](../_img/table-no.png) |
-| [View test results history across test suites and test plans](../getting-started/track-test-status.md#qa) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![no](../_img/table-no.png) |
+| [View test results history across test suites and test plans](../reference-qa.md#trackstatus) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![no](../_img/table-no.png) |
 
 ## Exploratory Testing
 
@@ -182,7 +184,7 @@ all platforms and all browsers, and has a rich and modern web UI that improves y
 experience across all phases of manual testing. 
 
 All the test plans, test suites, test cases, and other test management data you create
-using MTM are stored in your Team Services account or Team Foundation Server, so existing
+using MTM are stored in your VSTS account or TFS, so existing
 MTM users can easily get started using the **Test hub**.
 
 [!INCLUDE [help-and-support-footer](../_shared/help-and-support-footer.md)] 

@@ -1,16 +1,16 @@
 ---
-title: How to troubleshoot Azure Resource Manager service endpoints in Visual Studio Team Services and Team Foundation Server
-description: How to troubleshoot Azure Resource Manager service endpoints for Microsoft Release Management in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+title: How to troubleshoot Azure Resource Manager service endpoints in VSTS and TFS
+description: Troubleshoot Azure Resource Manager service endpoints in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.assetid: B43E78DE-5D73-4303-981F-FB86D46F0CAE
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-release
+ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
-ms.date: 10/20/2016
+ms.date: 01/19/2018
 ---
 # How to: Troubleshoot Azure Resource Manager service endpoints
 
-**Team Services | TFS 2017 | TFS 2015**
+**VSTS | TFS 2018 | TFS 2017 | TFS 2015**
 
 This topic will help you resolve issues you may encounter when creating
 a connection to Microsoft Azure using an **Azure Resource Manager** service endpoint.
@@ -57,25 +57,37 @@ This is a permission issue that may be due to the following causes:
 <a name="guestonly"></a>
 #### The user has only guest permission in the directory
 
-You must be a member of the **Global Admin** role in the directory in order
-to create an Azure Resource Manager service endpoint.
-The directory administrator has permission to change a user's role, as follows:
+The best approach to resolve this issue, while granting only the minimum additional permissions
+to the user, is to increase the Guest user permissions as follows:
 
-1. Sign into to Azure Classic portal at [https://manage.windowsazure.com](https://manage.windowsazure.com) using an Administrator account.
+1. Sign into the Azure portal at [https://portal.azure.com](https://portal.azure.com) using an Administrator account.
 
-1. Choose **Active Directory** in the left navigation bar, select the directory
-   corresponding to the user subscription, and open the **USERS** tab.
+1. Choose **Azure Active Directory** in the left navigation bar.
 
-   ![Opening the USERS tab in Azure Active Directory](_img/azure-rm-endpoint/azure-rm-endpoint-03.png)
+1. Ensure you are editing the appropriate directory corresponding to the user subscription. If not, select **Switch directory** and log in using the appropriate credentials if required.
 
-1. Select the user from the list and, in the **role** section change the
-   **ORGANIZATION ROLE** to **Global Admin**.
+1. In the **MANAGE** section choose **Users**.
 
-   ![Changing the ORGANIZATION ROLE to Global Admin](_img/azure-rm-endpoint/azure-rm-endpoint-04.png)
+1. Choose **User settings**.
+
+1. In the **External users** section, change **Guest user permissions are limited** to **No**.
+
+Alternatively, if you are prepared to give the user additional (administrator-level) permissions,
+you can make the user a member of the **Global administrator** role as follows:
+
+1. Sign into the Azure portal at [https://portal.azure.com](https://portal.azure.com) using an Administrator account.
+
+1. Choose **Azure Active Directory** in the left navigation bar.
+
+1. Ensure you are editing the appropriate directory corresponding to the user subscription. If not, select **Switch directory** and log in using the appropriate credentials if required.
+
+1. In the **MANAGE** section choose **Users**.
+   
+1. Use the search box to filter the list and then choose the user you want to manage.
+
+1. In the **MANAGE** section choose **Directory role** and change the role to **Global administrator**.
 
 1. Save the change.
-
-   ![Saving the change](_img/azure-rm-endpoint/azure-rm-endpoint-05.png)
 
 It typically takes 15 to 20 minutes to apply the changes globally.
 After this period has elapsed, the user can retry creating the service endpoint.
@@ -86,17 +98,15 @@ After this period has elapsed, the user can retry creating the service endpoint.
 You must have permission to add integrated applications in the directory.
 The directory administrator has permission to change this setting, as follows:
 
-1. Sign into to Azure Classic portal at [https://manage.windowsazure.com](https://manage.windowsazure.com) using an Administrator account.
+1. Choose **Azure Active Directory** in the left navigation bar.
 
-1. Choose **Active Directory** in the left navigation bar, select the directory
-   corresponding to the user subscription, and open the **CONFIGURE** tab.
+1. Ensure you are editing the appropriate directory corresponding to the user subscription. If not, select **Switch directory** and log in using the appropriate credentials if required.
 
-   ![Opening the CONFIGURE tab in Azure Active Directory](_img/azure-rm-endpoint/azure-rm-endpoint-06.png)
+1. In the **MANAGE** section choose **Users**.
 
-1. Ensure the value of the **USERS MAY ADD INTEGRATED APPLICATIONS** is set to
-   **YES**. If not, change it to **YES** and save the change.
+1. Choose **User settings**.
 
-   ![](_img/azure-rm-endpoint/azure-rm-endpoint-07.png)
+1. In the **App registrations** section, change **Users can register applications** to **Yes**.
 
 <a name="sessionexpired"></a>
 ### Failed to obtain an access token or A valid refresh token was not found
@@ -107,7 +117,7 @@ These errors typically occur when your session has expired.
 
 To resolve these issues:
 
-* Sign out of Team Services or TFS.
+* Sign out of VSTS or TFS.
 * Open an InPrivate or incognito browser window and navigate to [https://www.visualstudio.com/team-services/](https://www.visualstudio.com/team-services/).
 * If you are prompted to sign out, do so.
 * Sign in using the appropriate credentials.

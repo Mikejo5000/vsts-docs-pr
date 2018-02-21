@@ -1,26 +1,27 @@
 ---
-title: Get started with the REST APIs for Visual Studio Team Services and Team Foundation Server
-description: Learn the basic patterns for using the REST APIs for Visual Studio Team Services and Team Foundation Server.
+title: Get started with the REST APIs for VSTS and Team Foundation Server
+description: Learn the basic patterns for using the REST APIs for VSTS and Team Foundation Server.
 ms.assetid: bdddaf58-6849-4134-a295-2887dafeeea3
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-integrate
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/04/2016
+robots: NOINDEX, NOFOLLOW
 ---
 
-# Visual Studio Team Services REST API Reference
+# VSTS REST API Reference
 
-Welcome to the Visual Studio Team Services REST API Reference. 
+Welcome to the VSTS REST API Reference. 
 
 Representational State Transfer (REST) APIs are service endpoints that support sets of HTTP operations (methods), which provide create, retrieve, update, or delete access to the service's resources. This article walks you through:
 
 - The basic components of a REST API request/response pair.
 - Overviews of creating and sending a REST request, and handling the response.
 
->[!NOTE]
->Most REST APIs have a corresponding .NET Client Library that can be used to greatly simplify your client code. Find out more about them at the 
->[.NET Client Libraries documentation](./concepts/dotnet-client-libraries.md)
+> [!NOTE]
+> Most REST APIs have a corresponding .NET Client Library that can be used to greatly simplify your client code. Find out more about them at the 
+> [.NET Client Libraries documentation](./concepts/dotnet-client-libraries.md)
 
 
 ## Components of a REST API request/response pair
@@ -28,16 +29,18 @@ Representational State Transfer (REST) APIs are service endpoints that support s
 A REST API request/response pair can be separated into five components:
 
 1. The **request URI**, in the following form: `VERB https://{instance}[/{collection}[/{team-project}]/_apis[/{area}]/{resource}?api-version={version}`
-    * *instance*: The Team Services account or TFS server you're sending the request to. They are structured as follows,
-        * Team Services: `{account}.visualstudio.com`
+    * *instance*: The VSTS account or TFS server you're sending the request to. They are structured as follows,
+        * VSTS: `{account}.visualstudio.com`
         * TFS: `server:port` (the default port is 8080)
-    * *collection*: The value for collection should be `DefaultCollection` for both TFS and Team Services.
+    * *collection*: The value for collection should be `DefaultCollection` for both TFS and VSTS.
     * *resource path*: The collection should be followed by `_apis/{area}/{resource}`. For example `_apis/wit/workitems`.
     * *api-version*: Every API request should include an api-version to avoid having your app or service break as APIs evolve. api-versions are in the following format: `{major}.{minor}[-{stage}[.{resource-version}]], for example:
         * `api-version=1.0`
         * `api-version=1.2-preview`
         * `api-version=2.0-preview.1`
-> Note: *area** and *team-project* are optional, depending on the API request. 
+
+        *area* and *team-project* are optional, depending on the API request. 
+    
 2. HTTP **request message header** fields:
     * A required [HTTP method](https://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html) (also known as an operation or verb), which tells the service what type of operation you are requesting. Azure REST APIs support GET, HEAD, PUT, POST, and PATCH methods.
     * Optional additional header fields, as required by the specified URI and HTTP method. For example, an Authorization header that provides a bearer token containing client authorization information for the request.
@@ -54,7 +57,7 @@ A REST API request/response pair can be separated into five components:
 
 ### Authenticate 
 
-There are many ways to authenticate your application or service with Team Services or TFS. The following table is an excellent way to decide which method is the best for you:
+There are many ways to authenticate your application or service with VSTS or TFS. The following table is an excellent way to decide which method is the best for you:
 
 | Type of application | Description | example |Authentication mechanism | Code samples |
 |---------------------|-------------|---------|-------------------------|--------|
@@ -63,21 +66,22 @@ There are many ways to authenticate your application or service with Team Servic
 | Non-interactive client-side | Headless text only client side application | Console app displaying all bugs assigned to a user | [Device Profile](https://azure.microsoft.com/en-us/resources/samples/active-directory-dotnet-deviceprofile/?v=17.23h) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/DeviceProfileSample) |
 | Interactive web | GUI based web application | Custom Web dashboard displaying build summaries |[OAuth](./get-started/authentication/oauth.md) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/OAuthWebSample) |
 | TFS application | TFS app using the Client OM library | TFS extension displaying team bug dashboards | [Client Libraries](./get-started/client-libraries/dotnet.md) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/ClientLibraryConsoleAppSample) |
-| [VSTS Extension](https://www.visualstudio.com/en-us/docs/integrate/extensions/get-started/node#files) | Visual Studio Team Services extension | [Agile Cards](https://marketplace.visualstudio.com/items?itemName=spartez.agile-cards) | [VSS Web Extension SDK](https://github.com/Microsoft/vss-web-extension-sdk) | [sample walkthrough](https://www.visualstudio.com/en-us/docs/integrate/extensions/develop/add-dashboard-widget) |
+| [VSTS Extension](../extend/get-started/node.md#files) | VSTS extension | [Agile Cards](https://marketplace.visualstudio.com/items?itemName=spartez.agile-cards) | [VSS Web Extension SDK](https://github.com/Microsoft/vss-web-extension-sdk) | [sample walkthrough](../extend/develop/add-dashboard-widget.md) |
 
-> **Note:** You can find more information on authentication on our [authentication guidance page](./get-started/authentication/authentication-guidance.md)
+> [!NOTE]
+> You can find more information on authentication on our [authentication guidance page](./get-started/authentication/authentication-guidance.md)
 
 ### Assemble the request
 
-**Team Services**
+**VSTS**
 
-For Team Services, *instance* is `{account}.visualstudio.com` and *collection* is `DefaultCollection`, so the pattern looks like this:
+For VSTS, *instance* is `{account}.visualstudio.com` and *collection* is `DefaultCollection`, so the pattern looks like this:
 
 ```
 VERB https://{account}.VisualStudio.com/DefaultCollection/_apis[/{area}]/{resource}?api-version={version}
 ```
 
-For example, here's how to get a list of team projects in a Visual Studio Team Services account.
+For example, here's how to get a list of team projects in a VSTS account.
 
 ```dos
 curl -u {username}[:{personalaccesstoken}] https://{account}.VisualStudio.com/DefaultCollection/_apis/projects?api-version=2.0
@@ -197,7 +201,7 @@ Keep reading to learn more about the general patterns that are used in these API
 
 ## Related Content
 
-* Check out the [Integrate documentation](./overview.md) for REST API samples and use cases
+* Check out the [Integrate documentation](./index.md) for REST API samples and use cases
     * [Authentication guidance](./get-started/authentication/authentication-guidance.md)
     * [Samples](./get-started/rest/samples.md)
 * Discover the [.NET Client Libraries](./concepts/dotnet-client-libraries.md) for these REST APIs.

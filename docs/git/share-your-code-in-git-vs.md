@@ -1,27 +1,27 @@
 ---
-title: Share your code with Git using Visual Studio 2015 | Team Services & TFS
+title: Share your code with Git using Visual Studio 2015 | VSTS & TFS
 description: Share code in Git using Visual Studio
 ms.assetid: 0c1dc48e-6f52-499d-a03e-6361c9a838dd
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-git
-ms.topic: get-started-article
+ms.technology: vs-devops-git 
 toc: show
 ms.manager: douge
 ms.author: sdanie
-ms.date: 04/03/2017
+ms.date: 08/29/2017
 ---
 
-# Share your code with Visual Studio 2015 and Team Services Git
+# Share your code with Visual Studio 2015 and VSTS Git
 
 > [!div class="op_single_selector"]
-> - [Visual Studio 2015 Update 2](share-your-code-in-git-vs.md)
 > - [Visual Studio 2017](share-your-code-in-git-vs-2017.md)
+> - [Visual Studio 2015 Update 2](share-your-code-in-git-vs.md)
 > - [Visual Studio 2013](share-your-code-in-git-vs-2013.md)   
    
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015  
 
-Share your Visual Studio solution in a new Team Services or Team Foundation Server Git repo.
+Share your Visual Studio solution in a new VSTS or Team Foundation Server Git repo.
 
-> This article walks you through the steps to get a Visual Studio solution on your PC into a Git repo you can share with others, even if you don't have a Team Services account.
+> This article walks you through the steps to get a Visual Studio solution on your PC into a Git repo you can share with others, even if you don't have a VSTS account.
 > If you need to work with a Visual Studio solution hosted in an existing repo, use the [Git quick start](gitquickstart.md) instead.
 
 ##  Create a local Git repo for your project
@@ -41,22 +41,22 @@ Once you have a local repo, select items in the status bar to quickly navigate b
  
 ----
 
-## Publish your code to Team Services
+## Publish your code to VSTS
 
-0. In the **Sync** view in Team Explorer, select the **Publish Git Repo** button under **Publish to Visual Studio Team Services**.
+0. In the **Sync** view in Team Explorer, select the **Publish Git Repo** button under **Publish to VSTS**.
 
- ![Publish your code from VS directly into Team Services](_img/share-your-code-in-git-vs/vsts_get_started_te.png)
+ ![Publish your code from VS directly into VSTS](_img/share-your-code-in-git-vs/vsts_get_started_te.png)
 
 0. Verify your email and select your account in the **Account Url** drop down. 
 
 0. Enter your repository name and select **Publish Repository**. 
 
- ![Publish your VS project to a new Team Services Git repo](_img/share-your-code-in-git-vs/vsts_publish_repo.png)
+ ![Publish your VS project to a new VSTS Git repo](_img/share-your-code-in-git-vs/vsts_publish_repo.png)
 
  > This creates a new Team Project in your account with the same name as the repository. To create the repo in an existing Team Project, click **Advanced** 
 next to **Repository name** and select a team project.
 
-Your code is now in a Team Services repo. You can view your code on the web by selecting **See it on the web** .
+Your code is now in a VSTS repo. You can view your code on the web by selecting **See it on the web** .
   
   ![View your VSTS Git repo on the Web](_img/share-your-code-in-git-vs/vsts_view_on_web.png)
   
@@ -70,7 +70,7 @@ You can [commit](tutorial/commits.md) changes to your local Git repository by se
  ![Add a comment and choose Commit](_img/share-your-code-in-git-vs/vs_commit_te.png)
 
 0. Select the unpublished changes status bar icon ( ![Visual Studio Unpublished Changes Status Bar icon](_img/share-your-code-in-git-vs/vs_unpublished_changes.png) ) or the **Sync** view in Team Explorer. Select **Push** to 
-update your code in Team Services/TFS.
+update your code in VSTS/TFS.
 
  ![Push your changes](tutorial/_img/vspush.gif)
 
@@ -83,7 +83,7 @@ Double-click a commit to view its file changes.
 
  ![Choose Fetch to see any changes that your team has made](_img/share-your-code-in-git-vs/vs_fetch_commits.png)
 
-0. Select **Sync** to merge the fetched commits into your local repo and then [push](tutorial/pushing.md) any unpublished changes to Team Services.
+0. Select **Sync** to merge the fetched commits into your local repo and then [push](tutorial/pushing.md) any unpublished changes to VSTS.
 
  ![Choose Pull to get these commits locally](_img/share-your-code-in-git-vs/vs_sync_commits.png)
 
@@ -93,7 +93,7 @@ Double-click a commit to view its file changes.
  
 ## Try this next
 
-[Set up a build](../build-release/overview.md) for your code and learn more about using Git in the [Team Services Git tutorial](tutorial/gitworkflow.md).
+[Set up a build](../build-release/overview.md) for your code and learn more about using Git in the [VSTS Git tutorial](tutorial/gitworkflow.md).
 
 ## Troubleshooting
 
@@ -123,13 +123,13 @@ A: You can include work items in your commits through **Related Work Items** in 
 ![Adding work items to changes](_img/share-your-code-in-git-vs/vs_linked_work_items.png)
 
 Work items can be included in commits by adding #_ID_ into the commit message. For example, "Fixing bug #23 in the reporting tools" would link work item 23
-to the commit. The work item is linked when the commit is pushed to Team Services.
+to the commit. The work item is linked when the commit is pushed to VSTS.
 
 ### Can I use the Git command prompt with Visual Studio?
 
 A: Visual Studio's Team Explorer and the Git command line work great together. Changes to your repos made in either tool will be reflected in the other. 
-Make sure to install the latest release of [Git for Windows](https://git-scm.com/download/win), which has tools to help you connect to your Team Services/TFS repos.
+Make sure to install the latest release of [Git for Windows](https://git-scm.com/download/win), which has tools to help you connect to your VSTS/TFS repos.
 
-See [the Team Services Git tutorial](tutorial/gitworkflow.md) and the [command reference](command-prompt.md) for additional help using Git from the command line.
+See [the VSTS Git tutorial](tutorial/gitworkflow.md) and the [command reference](command-prompt.md) for additional help using Git from the command line.
 
 <!-- ENDSECTION --> 

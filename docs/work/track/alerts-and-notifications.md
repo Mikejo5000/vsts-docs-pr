@@ -1,12 +1,11 @@
 ---
-title: Set alerts, get notified when changes occur | TFS
+title: Set alerts, get notified when changes occur 
 description: Set alerts to get email notifications when changes occur to source code, git, work items, and builds when using Team Foundation Server (TFS)
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 50bac275-61fd-4ded-9c41-ec4c2412160e
 ms.manager: douge
 ms.author: kaelli
-ms.topic: get-started-article  
 ms.date: 03/16/2017
 ---
 
@@ -14,15 +13,16 @@ ms.date: 03/16/2017
 
 <b>TFS 2017 | TFS 2015 | TFS 2013</b> 
 
+
 >[!IMPORTANT]  
->This topic describes how to manage alerts or email notifications when working from the web portal for an on-premises TFS. If you work in Team Services or TFS 2017.1 or later version, see [Manage your notifications](../../collaborate/manage-personal-notifications.md) and  [Manage notifications for a team](../../collaborate/manage-team-notifications.md). 
+>This topic describes how to manage alerts or email notifications when working from the web portal for an on-premises TFS. If you work in VSTS and TFS 2017.1 or later version, see [Manage your notifications](../../notifications/manage-personal-notifications.md) and  [Manage notifications for a team](../../collaborate/manage-team-notifications.md). 
 
 
 As changes occur to work items, code reviews, source control files, and builds, you can receive email notifications for alerts that you define. For example, you can set an alert to be notified whenever a bug that you opened is resolved or a work item is assigned to you. You can set personal alerts or [team alerts](#team-alerts).
 
 ## Set alerts just for yourself
 
-1. Open alerts management (My alerts from your profile menu). If you don't see this option, then you must [configure an SMTP server to support TFS](../../setup-admin/tfs/admin/setup-customize-alerts.md). 
+1. Open alerts management (My alerts from your profile menu). If you don't see this option, then you must [configure an SMTP server to support TFS](../../tfs-server/admin/setup-customize-alerts.md). 
 	
 	![Manage individual alerts from the web portal](_img/set-alerts-from-profile-menu.png)
 
@@ -51,7 +51,7 @@ As changes occur to work items, code reviews, source control files, and builds, 
 	
 	![Fill out the custom alerts form](_img/personal/ALM_AN_DefiningAlerts.png)
 	
-	For a list of available fields, see [Index of work item fields](../guidance/work-item-field.md).
+	For a list of available fields, see [Index of work item fields](../work-items/guidance/work-item-field.md).
 
 6.	For even more options, open the Select New Alert Template. 
 	
@@ -88,7 +88,7 @@ As changes occur to work items, code reviews, source control files, and builds, 
 You can set filters for as many as 20 different alert types, specify the email addresses for yourself and other team members, and select the delivery format. Also, you can set team alerts to keep all team members notified of important changes. 
 
 ##Administer alerts for a team project
-To administer alerts for a team project, you must be a member of the Project Collection Administrator or Team Foundation Administrator groups. To get added, see [Add an administrator](../../setup-admin/add-administrator-tfs.md). If you're not a member of these groups, you won't see the options available for administering alerts.
+To administer alerts for a team project, you must be a member of the Project Collection Administrator or Team Foundation Administrator groups. To get added, see [Add an administrator](../../security/set-project-collection-level-permissions.md). If you're not a member of these groups, you won't see the options available for administering alerts.
 
 As an administrator, you can view, create, edit, and delete alerts for team members and teams. 
 
@@ -120,7 +120,7 @@ As an administrator, you can view, create, edit, and delete alerts for team memb
 ##Related notes
 
 - [Follow a work item or pull request](../../collaborate/follow-work-items.md)  
-- [Manage your notifications](../../collaborate/manage-personal-notifications.md) (Team Services, TFS 2017.1)
-- [Manage notifications for a team](../../collaborate/manage-team-notifications.md) (Team Services, TFS 2017.1) 
-- [Account preferences](../../setup-admin/account-preferences.md)  
-- [Work effectively from your account hub](../../connect/account-home-pages.md) (Team Services, TFS 2017.1)
+- [Manage your notifications](../../notifications/manage-personal-notifications.md) (VSTS, TFS 2017.1)
+- [Manage notifications for a team](../../collaborate/manage-team-notifications.md) (VSTS, TFS 2017.1) 
+- [Account preferences](../../accounts/account-preferences.md)  
+- [Work effectively from your account hub](../../user-guide/account-home-pages.md) (VSTS, TFS 2017.1)

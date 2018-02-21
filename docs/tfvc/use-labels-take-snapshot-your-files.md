@@ -5,13 +5,13 @@ ms.assetid: 8945006e-3a03-4ae1-b5a1-79be57610321
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfvc
 ms.manager: douge
-ms.author: routlaw
+ms.author: sdanie
 ms.date: 08/10/2016
 ---
 
 # Use labels to take a snapshot of your files
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Labels let you take a snapshot of your files so that at a later date you can refer back to that snapshot. By using your label, you can view, build, or even roll back a large set of files to the state they were in when you applied the label.
 
@@ -278,7 +278,7 @@ When you open the shortcut menu for an item in the Label window, you can also ch
 
  [Create and work with workspaces](create-work-workspaces.md) 
 
- [Pernission reference for Team Foundation Server](../setup-admin/permissions.md) 
+ [Permissions and groups reference](../security/permissions.md) 
 
  [Use branches to isolate risk in Team Foundation Version Control](use-branches-isolate-risk-team-foundation-version-control.md) 
 

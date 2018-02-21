@@ -1,18 +1,19 @@
 ---
-title: Set query permissions | Team Services & TFS  
+title: Set query permissions | VSTS & TFS  
 description: How to guide for setting permissions on work item queries when working in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) item types  
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 682f0eb0-462d-41e2-b6a2-41949d1b90fb  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 04/14/2017  
+ms.date: 11/07/2017
 ---
 
 
-# Set permissions on queries
+# Set permissions on queries and query folders
 
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b>  
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+
 
 As with most team project objects, you can control who has access by setting permissions. With queries, you can configure users and groups to create, delete, view, and manage permissions of shared queries and shared query folders. 
 
@@ -26,27 +27,27 @@ You set permissions from the web portal. By default, only members of the Project
 
 ## Set permissions on a new query folder
 
-1. If you're not a member of the project administrators group, [get added](../../setup-admin/add-administrator-tfs.md), or have your **Edit project-level information** permission set to **Allow**.
+1. If you're not a member of the project administrators group, [get added](../../security/set-project-collection-level-permissions.md), or have your **Edit project-level information** permission set to **Allow**.
 
 2. Create a folder.  
 
-	<img src="_img/set-query-perm-new-folder.png" alt="New query folder link on queries context menu" style="border: 1px solid #CCCCCC;" />  
+	<img src="_img/set-query-perm-new-folder.png" alt="New query folder link on queries context menu" style="border: 1px solid #C3C3C3;" />  
 
 3.  Open permissions for the folder you just created.
 
-	<img src="_img/set-permissions-query-folder-security.png" alt="Permissions dialog for a query" style="border: 1px solid #CCCCCC;" />  
+	<img src="_img/set-permissions-query-folder-security.png" alt="Permissions dialog for a query" style="border: 1px solid #C3C3C3;" />  
 
 4.  Change the permissions so that the team member or group can contribute and manage permissions for the folder.  
 
 	Here we add the Web team and grant them permissions to create and manage permissions to all queries and folders under the Triage folder.  
 
-	<img src="_img/set-permissions-triage-folder-dialog.png" alt="Permissions dialog for a query" style="border: 1px solid #CCCCCC;" />    
+	<img src="_img/set-permissions-triage-folder-dialog.png" alt="Permissions dialog for a query" style="border: 1px solid #C3C3C3;" />    
 
     Use the **Add** menu to add a user identity or group.
 
     **Contribute** allows team members to create and edit queries and folders under the folder where the permissions were granted. And, **Manage Permissions** allows team members to manage the permission settings on queries and subfolders.
 
-5.  (Optional) Turn inheritance off. Default is On. By turning inheritance off for a folder, you disallow inheritance of permissions that exist up the chain of query folders. To learn more, see [Permissions, Inheritance](../../setup-admin/permissions.md#inheritance).  
+5.  (Optional) Turn inheritance off. Default is On. By turning inheritance off for a folder, you disallow inheritance of permissions that exist up the chain of query folders. To learn more, see [Permissions, Inheritance](../../security/about-permissions.md#inheritance).  
 
 ## Set permissions on shared query 
 
@@ -54,22 +55,22 @@ To keep anyone else from modifying a shared query that you create, you may want 
 
 0.  Open permissions for the query.
 
-	<img src="_img/set-query-perm-security-menu-option.png" alt="Permissions dialog for a query" style="border: 1px solid #CCCCCC;" />  
+	<img src="_img/set-query-perm-security-menu-option.png" alt="Permissions dialog for a query" style="border: 1px solid #C3C3C3;" />  
 
 4.  Change the permissions so that the team member or group can't edit, delete, or change permissions for the query.  
 
 	Here we deny permissions for project admins.  
 
-	<img src="_img/set-permissions-deny-for-query.png" alt="Permissions dialog for a query, set to deny" style="border: 1px solid #CCCCCC;" />  
+	<img src="_img/set-permissions-deny-for-query.png" alt="Permissions dialog for a query, set to deny" style="border: 1px solid #C3C3C3;" />  
 
 ## Related notes  
 
 With queries, you can not only list work items, you can create status and trend charts and add them to dashboards. You can learn more about permissions and working with queries from these resources: 
 
 - [Run and edit queries](using-queries.md)  
-- [Dashboards](../../report/dashboards.md)  
-- [Add a chart to a dashboard](../../report/add-widget-to-dashboard.md#add-charts)   
-- [Permissions and access](../../setup-admin/permissions-access.md)  
+- [Dashboards](../../report/dashboards/dashboards.md)  
+- [Add a chart to a dashboard](../../report/add-charts-to-dashboard.md)   
+- [Permissions and access](../../security/permissions-access.md)  
 
 ### Q & A   
 <!-- BEGINSECTION class="md-qanda" -->
@@ -94,4 +95,3 @@ In Team Explorer for Eclipse, choose **Move** from the context menu and select t
 
 <!-- ENDSECTION --> 
 
-[!INCLUDE [temp](../_shared/help-support-shared.md)]

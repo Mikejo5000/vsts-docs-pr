@@ -2,17 +2,16 @@
 title: Code Churn tables | TFS
 description: Query for data about the changes in the code that is under version control  
 ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
-ms.topic: reference
+ms.technology: vs-devops-reporting
 ms.assetid: c158a791-7f9d-4440-aa47-87a9497da9e2
 ms.manager: douge
 ms.author: kaelli
-ms.date: 03/09/2017
+ms.date: 10/17/17
 ---
 
 # Code Churn tables
 
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 You can query for data about the changes in the code that is under version control by using FactCodeChurn and the associated dimension tables. The fact table contains one record for each revision of a file in each changeset.  
   

@@ -1,7 +1,7 @@
 ---
-title: Link and attachment queries | Team Services & TFS
+title: Link and attachment queries | VSTS & TFS
 description: QUery work items based on link type, link count, link restrictions, and attachment file count in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 219717a0-de6e-4f70-8558-54f813f82507
 ms.manager: douge
@@ -11,7 +11,7 @@ ms.date: 05/10/2017
 
 # Link and attachment queries  
 
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 You can [link work items to track related work and dependencies](link-work-items-support-traceability.md) and [attach files to share information with your team](share-plans.md#attachments). You can then list work items based on their link type, link count, or attachment file count.
 
@@ -84,7 +84,7 @@ You can [link work items to track related work and dependencies](link-work-items
 
 Add a query and select **Tree of work items** to begin your query. You should see something similar to the following: 
 
-<img src="_img/query-link-attach-all-items-tree-query.png" alt="Query editor, new tree of work items query" style="border: 1px solid #CCCCCC;" />
+<img src="_img/query-link-attach-all-items-tree-query.png" alt="Query editor, new tree of work items query" style="border: 2px solid #C3C3C3;" />
 
 >[!NOTE]  
 >You can't construct a query that shows a hierarchical view of Test Plans, Test Suites, and Test Cases. These items aren't linked together using parent-child link types. You can [view the hierarchy through the Test Plans page of the Test hub](../../manual-test/getting-started/create-a-test-plan.md). 
@@ -180,7 +180,7 @@ The following table describes fields associated with links and attachments. Most
 
 <blockquote>
 ![note icon](../_img/icons/note-icon.png)<br/>
-For Team Services, you can add up to 100 attachments to a work item. Attempts to add more result in an error message upon saving the work item.    
+For VSTS, you can add up to 100 attachments to a work item. Attempts to add more result in an error message upon saving the work item.    
 </blockquote> 
 </td>
 <td><p>All</p></td>
@@ -226,7 +226,7 @@ For Team Services, you can add up to 100 attachments to a work item. Attempts to
 - [Query editor](using-queries.md)   
 - [Query fields, operators, and macros](query-operators-variables.md)   
 - [Add work items](../backlogs/add-work-items.md)  
-- [Work item field index](../guidance/work-item-field.md) 
+- [Work item field index](../work-items/guidance/work-item-field.md) 
 
  
 
@@ -238,9 +238,9 @@ You can view related work items and object within a work item form by installing
 
 ### Add custom link types or customize the links controls 
 
-To add link types (TFS only), see [Manage link types [witadmin]](../reference/witadmin/manage-link-types.md). 
+To add link types (TFS only), see [Manage link types [witadmin]](../customize/reference/witadmin/manage-link-types.md). 
 
-All tabs that support creating links between work items are implemented by using the **LinksControl** element on the work item form. This element controls filtering and restricting the types of work items to which you can link, the types of links that you can create, and whether you can link to work items in another team project. To customize the link controls and restrictions, you modify the definition of the `LinksControlOptions` for a work item type, see [LinksControlOptions XML elements](../reference/linkscontroloptions-xml-elements.md).  
+All tabs that support creating links between work items are implemented by using the **LinksControl** element on the work item form. This element controls filtering and restricting the types of work items to which you can link, the types of links that you can create, and whether you can link to work items in another team project. To customize the link controls and restrictions, you modify the definition of the `LinksControlOptions` for a work item type, see [LinksControlOptions XML elements](../customize/reference/linkscontroloptions-xml-elements.md).  
 
 
 
@@ -292,7 +292,7 @@ All lists of links display these data fields:
 -   State
 -   [Link Comment]
 
-You can add or remove columns from the list of links, and you can customize the default columns and the column order. For more information, see [LinksControlOptions XML elements](../reference/linkscontroloptions-xml-elements.md).
+You can add or remove columns from the list of links, and you can customize the default columns and the column order. For more information, see [LinksControlOptions XML elements](../customize/reference/linkscontroloptions-xml-elements.md).
 
 For more information about these fields, see [Titles, IDs, and descriptions](titles-ids-descriptions.md) and [Create managed queries](example-queries.md).
 

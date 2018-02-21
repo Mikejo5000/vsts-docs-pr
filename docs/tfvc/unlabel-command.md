@@ -5,19 +5,19 @@ ms.assetid: 37b15bd4-ec75-4fbe-938e-544793c88a3c
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfvc
 ms.manager: douge
-ms.author: routlaw
+ms.author: sdanie
 ms.date: 08/10/2016
 ---
 
 # Unlabel Command
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Removes an item from an existing label in the server for Team Foundation version control.
 
 **Required Permissions**
 
-To use the **unlabel** command, you must either own the label, or have the **Administer labels** permission set to **Allow**. For more information, see [Team Foundation Server Permissions](../setup-admin/permissions.md).
+To use the **unlabel** command, you must either own the label, or have the **Administer labels** permission set to **Allow**. For more information, see [Permissions and groups reference](../security/permissions.md).
 
     tf unlabel [/collection:TeamProjectCollectionUrl] [/recursive] [/login:username, [password]] labelname itemspec
 

@@ -1,18 +1,17 @@
 ---
 title: Unlist or delete a NuGet package
-description: Unlist or delete a NuGet package from Visual Studio Team Services or Team Foundation Server to discourage or prevent its usage 
+description: Unlist or delete a NuGet package from VSTS or Team Foundation Server to discourage or prevent its usage 
 ms.assetid: 173070F7-CF0B-41DE-AD8B-1881E04E1457
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-package
 ms.manager: douge
 ms.author: amullans
-ms.date: 10/24/2016
+ms.date: 09/01/2017
 ---
 
 # Unlist or delete a NuGet package
 
-**Availability**<br>
-NuGet Package Management is available with **Visual Studio Team Services** and **TFS 2017 and newer**.
+[!INCLUDE [](../_shared/availability-nuget.md)]
 
 There are two options available to remove a version of a NuGet package from a feed.
 
@@ -33,7 +32,7 @@ To unlist or delete a version of a package, choose the package from the **Packag
 ## Unlisting a package using NuGet.exe
 First, get the tools (make sure you're using NuGet 3.5 or later) and your feed URL:
 
-[!INCLUDE [](../_shared/nuget-publish-endpoint.md)]
+[!INCLUDE [](../_shared/nuget/nuget-publish-endpoint.md)]
 
 Then, run
 
@@ -41,4 +40,4 @@ Then, run
 nuget.exe delete {your_package_id} {version} -Source {feed URL} -ApiKey key
 ```
 
-Currently, NuGet.exe can only **unlist** packages; Team Services and TFS interpret `nuget.exe delete` as an unlist operation to be consistent with NuGet.org. To **delete** a package, you must use either the REST APIs or the web interface. 
+Currently, NuGet.exe can only **unlist** packages; VSTS and TFS interpret `nuget.exe delete` as an unlist operation to be consistent with NuGet.org. To **delete** a package, you must use either the REST APIs or the web interface. 

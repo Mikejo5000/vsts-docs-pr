@@ -11,7 +11,7 @@ ms.date: 08/11/2016
 
 #Manage the data warehouse and analysis services cube 
 
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 If you added SQL Server Reporting Services at installation, then your on-premises Team Foundation Server (TFS) deployment is configured with a data warehouse and SQL Server Analysis Services cube. If you didn't add these services previously and want to add them now, see [Add reports to a team project](add-reports-to-a-team-project.md).
 
@@ -26,7 +26,7 @@ With SQL Server Reporting Services, you gain access to many default Excel and SQ
 Without these services, you can [create status and trend charts from work item queries](../charts.md) directly from the operational data stores.
 
 ##View, add, update, or customize reports or report functionality
-You use work item fields to track data for a work item type, to define the filter criteria for queries, and to design reports. To support reporting, you can add fields or change the attributes of existing fields. When you add or modify fields, you will want to apply systematic naming conventions to make sure that data is logically grouped into folders in the cube. To learn more, see [Add or modify work item fields to support reporting](../../work/reference/add-or-modify-work-item-fields-to-support-reporting.md). 
+You use work item fields to track data for a work item type, to define the filter criteria for queries, and to design reports. To support reporting, you can add fields or change the attributes of existing fields. When you add or modify fields, you will want to apply systematic naming conventions to make sure that data is logically grouped into folders in the cube. To learn more, see [Add or modify work item fields to support reporting](../../work/customize/reference/add-or-modify-work-item-fields-to-support-reporting.md). 
 
 To bulk add or update reports for a team project, see [Upload reports to a team project](upload-reports.md). To manage Reporting Services Reports, see [Reporting Services Reports (SSRS)](https://msdn.microsoft.com/library/bb522712.aspx) .
 
@@ -73,9 +73,9 @@ You can manage the warehouse and analysis services cube to address the following
 
 ##Related content
 
-- [Reportable fields reference](../../work/reference/reportable-fields-reference.md) provides definitions for eacha reportable field. A default set of fields appears in the relational warehouse database or the cube. These fields have a reportable attribute value of Detail, Dimension, or Measure. 
-[Understanding SQL Server and SQL Server Reporting Services](../../setup-admin/tfs/architecture/sql-server-databases.md) describes the relationships and dependencies between SQL Server and TFS.
+- [Reportable fields reference](../../work/customize/reference/reportable-fields-reference.md) provides definitions for eacha reportable field. A default set of fields appears in the relational warehouse database or the cube. These fields have a reportable attribute value of Detail, Dimension, or Measure. 
+[Understanding SQL Server and SQL Server Reporting Services](../../tfs-server/architecture/sql-server-databases.md) describes the relationships and dependencies between SQL Server and TFS.
  
-- [Manage team project collections](../../setup-admin/tfs/admin/manage-team-project-collections.md) describes how you can enable and disable data that flows into the data warehouse by editing the reporting configuration for your team project collections. After you add a report server to your deployment, you can configure reporting resources for your team project collections and the projects in those collections.
+- [Manage team project collections](../../tfs-server/admin/manage-team-project-collections.md) describes how you can enable and disable data that flows into the data warehouse by editing the reporting configuration for your team project collections. After you add a report server to your deployment, you can configure reporting resources for your team project collections and the projects in those collections.
 
 - [Data Warehouse extensibility](https://msdn.microsoft.com/library/bb130342.aspx) describes how you can add new data types to the data warehouse by implementing a warehouse adaptor. 

@@ -5,13 +5,13 @@ ms.assetid: 8cd73edc-8d60-42be-a840-616e6207a1d8
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfvc
 ms.manager: douge
-ms.author: routlaw
+ms.author: sdanie
 ms.date: 08/10/2016
 ---
 
 # Help Command (Team Foundation Version Control)
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Displays help on the command line that contains information about syntax for a Team Foundation version control command.
 

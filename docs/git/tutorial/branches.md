@@ -1,20 +1,18 @@
 ---
-title: Create and delete a branch in your Git repo | Team Services & TFS
+title: Create and delete a branch in your Git repo | VSTS & TFS
 description: Create, use, and delete Git Branches in Visual Studio and from the command line
 ms.assetid: 4b18a164-d1cb-4f87-89cb-8dc227e64af1
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-git
-ms.topic: get-started-article 
+ms.technology: vs-devops-git 
+ms.topic: get-started-article
 ms.manager: douge
-ms.author: routlaw
-ms.date: 08/26/2016
+ms.author: sdanie
+ms.date: 09/14/2017
 ---
 
 #  Create work in branches  
 
-###### Team Services | TFS 2015 & TFS 2017 | Visual Studio 2015 & 2017
-
-## Overview
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
 
 Git branches aren't much more than a small reference that keeps an exact history of commits, so they are very cheap to create.
 [Committing](commits.md) changes to a branch will not affect other branches, and you can share branches with others without having to merge the changes into the main project.
@@ -25,6 +23,14 @@ Git does not create multiple copies of your source when working with branches&md
 Your [Git workflow](gitworkflow.md) should create and use branches for managing features and bugfixes.
 The rest of the Git workflow, such as [sharing code](pushing.md) and [reviewing code with pull requests](pullrequest.md) all work through branches.
 Isolating work in branches makes it very simple to change what you are working on by simply changing your current branch.
+
+In this tutorial you learn:
+
+> [!div class="checklist"]
+> * How are Git branches created?
+> * How to to create a branch
+> * How to delete a branch
+> * How to use branches
 
 ## Video Overview
 
@@ -41,7 +47,7 @@ This makes it very simple to sync changes with others using [push](pushing.md) a
 In this image, a new branch is created from the main branch. Work continues on both branches and commits are added to both branches. 
 
 Git always adds new commits to the current local branch. Check what branch you are working on before you commit so that you don't commit changes to the wrong branch. 
-Swap between local branches using the `checkout` command. Git will change the files on you computer to match the latest commit on the checked out branch.
+Swap between local branches using the `checkout` command. Git will change the files on your computer to match the latest commit on the checked out branch.
 When your work in the branch is ready to share with the rest of the team, you [push](pushing.md) the changes to update the remote branch. 
 
 A common mistake is to make some changes and `commit` them, realize you are on an incorrect branch, then `checkout` to the correct branch.
@@ -51,74 +57,65 @@ You'll need to either [cherry-pick](cherry-pick.md) the commits from the branch 
  
 ## Create a branch
 
-<div style="background-color: #f2f0ee;padding-top:10px;padding-bottom:10px;">
-<ul class="nav nav-pills" style="padding-right:15px;padding-left:15px;padding-bottom:5px;vertical-align:top;font-size:18px;">
-<li style="float:left;" data-toggle="collapse" data-target="#changeexample">How to create a branch</li>
-<li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:90px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:14px;font-weight:400" data-toggle="pill" href="#cmdline0">Command Line</a></li>
-<li class="active" style="float: right"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#007acc;margin: 0px 0px 0px 0px;min-width:90px;color: #fff;border: solid 2px #007acc;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:14px;font-weight:400" data-toggle="pill" href="#vs0">Visual Studio</a></li>
-</ul>
+# [Visual Studio](#tab/visual-studio)
 
-<div id="changeexample" class="tab-content collapse in fade" style="background-color: #ffffff;margin-left: 15px;margin-right:15px;padding: 5px 5px 5px 5px;">
-<div id="vs0" class="tab-pane fade in active">
-<h6 style="padding-left:25px;">Visual Studio 2015 &amp; 2017</h6>
+Visual Studio 2015 & 2017
 
-<p><ol><li>Open up Team Explorer and go to the **Branches** view.
-<li> Right-click the parent branch (usually `master`) to base your changes and choose **New Local Branch From...**. 
-<li>Supply a branch name in the required field and click **Create Branch**.
-   <p>![Creating Git Branches in Visual Studio](_img/vsbranch.gif)   
+0. Open up Team Explorer and go to the **Branches** view.
+0. Right-click the parent branch (usually `master`) to base your changes and choose **New Local Branch From...**. 
+0. Supply a branch name in the required field and click **Create Branch**. Visual Studio automatically performs a `checkout` to the newly created branch.
 
-<p>Visual Studio will automatically `checkout` to the newly created branch.</ol>
+    ![Creating Git Branches in Visual Studio](_img/vsbranch.gif)   
 
-</div>
+# [Command Line](#tab/command-line)
 
-<div class="tab-pane fade" id="cmdline0" style="background-color: #ffffff;margin-left: 15px;margin-right:15px;padding: 5px 5px 5px 5px;">
-
-<p>Use the `branch` command to create the branch and `checkout` to swap to that branch.
+Use the `branch` command to create the branch and `checkout` to swap to that branch.
  
-<pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
-&gt; git branch <font color="#b5bd68">feature1</font>
-&gt; git checkout <font color="#b5bd68">feature1</font>
-<font color="#b5bd68"> Switched to branch 'feature1'</font>
-</pre>
+```
+git branch feature1
+git checkout feature1
+```
 
-</div></div></div>
+---
+
+
 
 ## Delete a branch
 
+> [!NOTE] 
 > Deleting a branch in your local repo doesn't remove the branch on the remote.
 
-<div style="background-color: #f2f0ee;padding-top:10px;padding-bottom:10px;">
-<ul class="nav nav-pills" style="padding-right:15px;padding-left:15px;padding-bottom:5px;vertical-align:top;font-size:18px;">
-<li style="float:left;" data-toggle="collapse" data-target="#changeexample1">How to delete a branch</li>
-<li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:90px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:14px;font-weight:400" data-toggle="pill" href="#cmdline1">Command Line</a></li>
-<li class="active" style="float: right"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#007acc;margin: 0px 0px 0px 0px;min-width:90px;color: #fff;border: solid 2px #007acc;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:14px;font-weight:400" data-toggle="pill" href="#vs1">Visual Studio</a></li>
-</ul>
+# [Visual Studio](#tab/visual-studio)
 
-<div id="changeexample" class="tab-content collapse in fade" style="background-color: #ffffff;margin-left: 15px;margin-right:15px;padding: 5px 5px 5px 5px;">
-<div id="vs1" class="tab-pane fade in active">
-<h6 style="padding-left:25px;">Visual Studio 2015 &amp; 2017 </h6>
-<p><ol><li>Open up Team Explorer and go to the **Branches** view.
-<li>Locate the branch you want to delete. Make sure that you aren't checked out to that branch-you can't delete the branch you are currently working in.
-<li>Right-click the branch name and select **Delete**. If you have unpublished changes, Visual Studio will ask and make sure you want to delete the branch so you don't possibly lose work.
-   <p>![Deleting a branch in Visual Studio](_img/vsbranchdelete.gif)</ol>
+Visual Studio 2015 & 2017
 
-<p style="padding-left:25px;">Delete a remote branch using the same method-locate the tree for the remote in Team Explorer's **Branches** view (such as `remotes/origin`), right-click and select **Delete**.
-</div>
+0. Open up Team Explorer and go to the **Branches** view.
+0. Locate the branch you want to delete. Make sure that you aren't checked out to that branch, as you can't delete the branch you are currently working in.
+0. Right-click the branch name and select **Delete**. If you have unpublished changes, Visual Studio will ask and make sure you want to delete the branch so you don't possibly lose work.
 
-<div class="tab-pane fade" id="cmdline1" style="background-color: #ffffff;margin-left: 15px;margin-right:15px;padding: 5px 5px 5px 5px;">
+    ![Deleting a branch in Visual Studio](_img/vsbranchdelete.gif)
+
+You can delete a remote branch using the same method - locate the tree for the remote in Team Explorer's **Branches** view (such as `remotes/origin`), right-click and select **Delete**.
+
+# [Command Line](#tab/command-line)
 
 Delete a local branch using `git branch -d` while checked out to a different branch.
-<pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
-&gt; git branch -d <font color="#b5bd68">bugfix</font>
-</pre>
+
+```
+git branch -d
+```
 
 Deleting a remote branch requires use of the `git push` command using the `--delete` option.
 
-<pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
-&gt; git push origin --delete  <font color="#b5bd68">bugfix</font>
-</pre>
+```
+git push origin --delete
+```
 
-</div></div></div>
+---
+
+
+
+
 
 ## Use branches to manage development
 
@@ -129,6 +126,7 @@ Tell Git which branch you want to work on with `checkout`, and Git takes care of
 You shouldn't need more than one repo on your system when you use branches to isolate your work. 
 Set up your development environment one time after you [clone](clone.md), and then use Git branches to swap between feature work and bug fixing. 
 
-## What's next
+## Next steps
 
-[Share code with push](pushing.md)
+> [!div class="nextstepaction"]
+> [Share code with push](pushing.md)

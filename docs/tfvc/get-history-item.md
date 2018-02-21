@@ -5,13 +5,13 @@ ms.assetid: 5a29031c-7fb6-42ac-885c-276b59a4b951
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfvc
 ms.manager: douge
-ms.author: routlaw
+ms.author: sdanie
 ms.date: 08/10/2016
 ---
 
 # Get the history of an item
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 One advantage of a version control system is that you can look back in time to get detailed information about what changes have been made to your files. Team Foundation version control maintains historical data related to every version of every file that has ever been checked in.
 
@@ -37,8 +37,8 @@ To display the History window:
 
 -   In [Source Control Explorer](use-source-control-explorer-manage-files-under-version-control.md), select an item, open its shortcut menu, and then choose **View History**.
 
-	>**Tip:**  
-	>You can customize the position of the window by right-clicking the title and then choosing one of these options: **Float**, **Dock**, or **Dock as Tabbed Document**.
+	> [!TIP]
+	> You can customize the position of the window by right-clicking the title and then choosing one of these options: **Float**, **Dock**, or **Dock as Tabbed Document**.
 
 -   Use the [History Command](history-command.md).
 
@@ -48,7 +48,7 @@ The **History** window displays the historical data about the item in two tabs:
 
 -   The [Labels tab](get-history-item.md#labels_tab) lists every label that has been applied to the item.
 
-<a name="changesets_tab">
+<a name="changesets_tab"><a/>
 
 ## Changesets Tab
 
@@ -62,7 +62,8 @@ The **Changesets** tab displays detailed data about every change that has been m
 
 -   **Comment**   The comment entered by the user who checked in the changeset.
 
-**Note**   If you open this window by using the **History** command and you are displaying data about a team project, branch, or folder, then the history of children items (for example, the files contained by a folder) is shown only if you use the **/recursive** option.
+> [!NOTE]
+> If you open this window by using the **History** command and you are displaying data about a team project, branch, or folder, then the history of children items (for example, the files contained by a folder) is shown only if you use the **/recursive** option.
 
 If the item is a file, then additional data is displayed in the following columns:
 
@@ -70,8 +71,8 @@ If the item is a file, then additional data is displayed in the following column
 
 -   **Path**  The path to the file.
 
->**Tip:**
-Sometimes you need to share this kind of data with someone else. You can select one or more rows from the table in the **Labels** tab, right-click them, click **Copy** to copy the data to the clipboard, and then paste the data into an e-mail message, document, or spreadsheet.
+> [!TIP]
+> Sometimes you need to share this kind of data with someone else. You can select one or more rows from the table in the **Labels** tab, right-click them, click **Copy** to copy the data to the clipboard, and then paste the data into an e-mail message, document, or spreadsheet.
 
 ### Common Tasks
 
@@ -84,16 +85,16 @@ By using the **Changesets** tab, you can perform the following tasks:
 	<td><p>None</p></td></tr>
 <tr>
 	<td><p><strong>Get more details about a changeset:</strong> Right-click a changeset and then click <strong>Changeset Details</strong> to get information such as:</p><ul><li><p>Other source files that are part of the changeset.</p></li><li><p>Work items associated with the changeset.</p></li><li><p>Any check-in notes left for reviewers.</p></li></ul></td>
-	<td><p> <a href="/docs/tfvc/find-view-changesets">Find and view changesets</a> </p></td></tr>
+	<td><p> <a href="find-view-changesets.md">Find and view changesets</a> </p></td></tr>
 <tr>
 	<td><p><strong>Compare a past version with the current version:</strong> Right-click a changeset and then click <strong>Compare</strong>.</p><p><strong>Compare a past version with another past version:</strong></p><ol><li><p>Select a changeset.</p></li><li><p>Press and hold the CONTROL key and then select the second changeset.</p></li><li><p>Right-click the second changeset and click <strong>Compare</strong>.</p></li></ol></td>
-	<td><p> <a href="/docs/tfvc/compare-files">Compare files</a> </p><p> <a href="/docs/tfvc/compare-folders">Compare folders</a> </p></td></tr>
+	<td><p> <a href="compare-files.md">Compare files</a> </p><p> <a href="compare-folders.md">Compare folders</a> </p></td></tr>
 <tr>
 	<td><p><strong>Get a past version of the item: </strong>Right-click a changeset and then click <strong>Get This Version</strong> to download the past version of the item to your workspace.</p></td>
-	<td><p> <a href="/docs/tfvc/download-get-files-from-server">Download (get) files from the Server</a> </p></td></tr>
+	<td><p> <a href="download-get-files-from-server.md">Download (get) files from the Server</a> </p></td></tr>
 <tr>
 	<td><p><strong>View which users made specific changes within a file:</strong> Right-click a changeset and then click <strong>Annotate</strong>. (This command is available only if the item is a file.)</p></td>
-	<td><p> <a href="/docs/tfvc/view-file-changes-using-annotate">View file changes using annotate</a> </p></td></tr>
+	<td><p> <a href="view-file-changes-using-annotate.md">View file changes using annotate</a> </p></td></tr>
 <tr>
 	<td><p><strong>Get more details about a merge:</strong> If the changeset resulted from a <strong>merge</strong> change, you can expand this item. Expand the node to display the changesets that were merged into this item from another branch. (This command is available only if the item is a file.)</p></td>
 	<td><p>None</p></td></tr>
@@ -102,19 +103,19 @@ By using the **Changesets** tab, you can perform the following tasks:
 	<td><p>None</p></td></tr>
 <tr>
 	<td><p><strong>View other branches to which this changeset has been merged: </strong>Right-click the changeset and click <strong>Track Changeset</strong>.</p></td>
-	<td><p> <a href="/docs/tfvc/view-where-when-changesets-have-been-merged">View where and when changesets have been merged</a> </p></td></tr>
+	<td><p> <a href="view-where-when-changesets-have-been-merged.md">View where and when changesets have been merged</a> </p></td></tr>
 <tr>
 	<td><p><strong>Roll back changes from one changeset</strong> Select a single changeset and choose <strong>Rollback Entire Changeset</strong>.</p></td>
-	<td><p> <a href="/docs/tfvc/roll-back-changesets">Roll back changesets</a> </p></td></tr>
+	<td><p> <a href="roll-back-changesets.md">Roll back changesets</a> </p></td></tr>
 <tr>
 	<td><p><strong>Roll back changes from two or more consecutive changesets</strong> Select a set of consecutive changesets and choose <strong>Rollback</strong>.</p></td>
-	<td><p> <a href="/docs/tfvc/roll-back-changesets">Roll back changesets</a> </p></td></tr>
+	<td><p> <a href="roll-back-changesets.md">Roll back changesets</a> </p></td></tr>
 <tr>
 	<td><p><strong>Display non-recursive history of a folder</strong> You can get this data only from the command prompt.</p></td>
-	<td><p><a href="/docs/tfvc/history-command">History Command</a></p></td></tr></tbody>
+	<td><p><a href="history-command.md">History Command</a></p></td></tr></tbody>
 </table>
 
-<a name="labels_tab">
+<a name="labels_tab"><a/>
 
 ## Labels tab
 
@@ -130,13 +131,13 @@ All labels that have been applied to the item are listed in a table that include
 
 -   **Comment**   The comment made by the user who applied the label.
 
->**Note:**  
->When you display historical data about a team project, branch, or folder, the data about labels applied to children items (for example, the files contained by a folder) is not shown.
+> [!NOTE]
+> When you display historical data about a team project, branch, or folder, the data about labels applied to children items (for example, the files contained by a folder) is not shown.
 
 &nbsp;
 
->**Tip:**
-Sometimes you need to share this kind of data with someone else. You can select one or more rows from the table in the **Labels** tab, right-click them, click **Copy** to copy the data to the clipboard, and then paste the data into an e-mail message, document, or spreadsheet.
+> [!TIP]
+> Sometimes you need to share this kind of data with someone else. You can select one or more rows from the table in the **Labels** tab, right-click them, click **Copy** to copy the data to the clipboard, and then paste the data into an e-mail message, document, or spreadsheet.
 
 ## Common Tasks
 

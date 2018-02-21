@@ -1,12 +1,12 @@
 ---
 ms.assetid: 4FC75F92-EC04-4458-8069-53EEBF855D2F
-title: Manage a virtual machine in Azure DevTest Labs using Microsoft Release Management in Visual Team Services and Team Foundation Server
-description: Create, manage, and delete virtual machines in Azure DevTest Labs service using Microsoft Release Management in Visual Team Services (VSTS) and Team Foundation Server (TFS)
+title: Manage a virtual machine in Azure DevTest Labs
+description: Create, manage, and delete VMs in Azure DevTest Labs using Microsoft Release Management in VSTS and TFS
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-release
+ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
-ms.date: 10/20/2016
+ms.date: 01/19/2018
 ---
 
 # Manage a virtual machine in Azure DevTest Labs
@@ -18,7 +18,7 @@ service lets you quickly provision development and test environments using reusa
 templates. You can use pre-created images, minimize waste with quotas and policies,
 and minimize costs by using automated shutdown. 
 
-By using an extension installed in Team Services or Team Foundation Server you
+By using an extension installed in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS) you
 can easily integrate your build and release pipeline with  Azure DevTest Labs.
 The extension installs three tasks to create a VM, create a custom image from
 a VM, and delete a VM. This makes it easy to, for example, quickly deploy a 
@@ -34,20 +34,18 @@ Start by installing the
 [Azure DevTest Labs Tasks](https://marketplace.visualstudio.com/items?itemName=ms-azuredevtestlabs.tasks)
 extension from Visual Studio Marketplace:
 
-* For Team Services, choose **Install**
-* For Team Foundation Server, choose **Download** and install the extension on your server.
+* For VSTS, choose **Install**
+* For TFS, choose **Download** and install the extension on your server.
 
 ## Create an Azure RM template
 
 Carry out these tasks to create the Azure Resource Manager (ARM) template that you can
 use to create an Azure Virtual Machine on demand.
 
-1. Follow the steps in the section 
-   [Add a VM with artifacts](https://azure.microsoft.com/en-us/documentation/articles/devtest-lab-add-vm-with-artifacts/#add-a-vm-with-artifacts)
+1. Follow the steps in [these documents](https://docs.microsoft.com/en-us/azure/devtest-lab/devtest-lab-overview)
    on the Azure website to create an ARM template in your subscription.
 
-1. Follow the steps in the section 
-   [Save ARM template](https://azure.microsoft.com/en-us/documentation/articles/devtest-lab-add-vm-with-artifacts/#save-arm-template)
+1. Follow the steps in [these documents](https://docs.microsoft.com/en-us/azure/devtest-lab/devtest-lab-overview)
    on the Azure website to save the ARM template as a file
    on your computer. Name the file **CreateVMTemplate.json**.
 
@@ -63,30 +61,33 @@ use to create an Azure Virtual Machine on demand.
 
 1. Open a text editor and copy the following script into it.
 
-        Param( [string] $labVmId)
+   ```powershell
+   Param( [string] $labVmId)
 
-        $labVmComputeId = (Get-AzureRmResource -Id $labVmId).Properties.ComputeId
+   $labVmComputeId = (Get-AzureRmResource -Id $labVmId).Properties.ComputeId
 
-        # Get lab VM resource group name
-        $labVmRgName = (Get-AzureRmResource -Id $labVmComputeId).ResourceGroupName
+   # Get lab VM resource group name
+   $labVmRgName = (Get-AzureRmResource -Id $labVmComputeId).ResourceGroupName
 
-        # Get the lab VM Name
-        $labVmName = (Get-AzureRmResource -Id $labVmId).Name
+   # Get the lab VM Name
+   $labVmName = (Get-AzureRmResource -Id $labVmId).Name
 
-        # Get lab VM public IP address
-        $labVMIpAddress = (Get-AzureRmPublicIpAddress -ResourceGroupName $labVmRgName �Name $labVmName).IpAddress
+   # Get lab VM public IP address
+   $labVMIpAddress = (Get-AzureRmPublicIpAddress -ResourceGroupName $labVmRgName
+                      -Name $labVmName).IpAddress
 
-        # Get lab VM FQDN
-        $labVMFqdn = (Get-AzureRmPublicIpAddress -ResourceGroupName $labVmRgName -Name $labVmName).DnsSettings.Fqdn
+   # Get lab VM FQDN
+   $labVMFqdn = (Get-AzureRmPublicIpAddress -ResourceGroupName $labVmRgName
+                 -Name $labVmName).DnsSettings.Fqdn
 
-        # Set a variable labVmRgName to store the lab VM resource group name
-        Write-Host "##vso[task.setvariable variable=labVmRgName;]$labVmRgName"
+   # Set a variable labVmRgName to store the lab VM resource group name
+   Write-Host "##vso[task.setvariable variable=labVmRgName;]$labVmRgName"
 
-        # Set a variable labVMIpAddress to store the lab VM Ip address
-        Write-Host "##vso[task.setvariable variable=labVMIpAddress;]$labVMIpAddress"
+   # Set a variable labVMIpAddress to store the lab VM Ip address
+   Write-Host "##vso[task.setvariable variable=labVMIpAddress;]$labVMIpAddress"
 
-        # Set a variable labVMFqdn to store the lab VM FQDN name
-        Write-Host "##vso[task.setvariable variable=labVMFqdn;]$labVMFqdn"
+   # Set a variable labVMFqdn to store the lab VM FQDN name
+   Write-Host "##vso[task.setvariable variable=labVMFqdn;]$labVMFqdn"
 
 1. Check the script into your source control system. Name 
    it something like **GetLabVMParams.ps1**. 
@@ -145,7 +146,7 @@ release definition in Release Management.
    
    - **Lab Name**: Select the name of the instance you created earlier.
    
-   - **Template Name**: Enter the full path and name of the template file you saved into your source code repository. You can use the built-in properties of Release Management to simplify the path, for example: `$(System.DefaultWorkingDirectory/Contoso/ARMTemplates/CreateVMTemplate.json`.
+   - **Template Name**: Enter the full path and name of the template file you saved into your source code repository. You can use the built-in properties of Release Management to simplify the path, for example: `$(System.DefaultWorkingDirectory)/Contoso/ARMTemplates/CreateVMTemplate.json`.
    
    - **Template Parameters**: Enter the parameters for the variables defined in the template. Use the names of the variables you defined in the environment, for example: `-newVMName '$(vmName)' -userName '$(userName)' -password (ConvertTo-SecureString -String '$(password)' -AsPlainText -Force)`.
    
@@ -157,7 +158,7 @@ release definition in Release Management.
    and add an **Azure PowerShell** task from the **Deploy** tab.
    Configure the task as follows:
 
-   ![Azure PowerShell](../../../steps/deploy/_img/azure-powershell-icon.png) [Deploy: Azure PowerShell](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzurePowerShell) - Execute the script to collect the details of the DevTest Labs VM.
+   ![Azure PowerShell](../../../tasks/deploy/_img/azure-powershell-icon.png) [Deploy: Azure PowerShell](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzurePowerShell) - Execute the script to collect the details of the DevTest Labs VM.
    
    - **Azure Connection Type**: `Azure Resource Manager`.
    

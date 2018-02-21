@@ -5,13 +5,13 @@ ms.assetid: fc14da45-891e-4f18-bbc2-9829b80531db
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfvc
 ms.manager: douge
-ms.author: routlaw
+ms.author: sdanie
 ms.date: 08/10/2016
 ---
 
 # Destroy Command (Team Foundation Version Control)
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Use the **tf destroy** command to destroy, or permanently delete, version-controlled files from Team Foundation version control.
 
@@ -23,7 +23,7 @@ After you delete the files you can synchronize the Team Foundation warehouse. Ot
 
 **Required Permissions**
 
-To use the **destroy** command, you must belong to the **Team Foundation Administrators** security group. For more information, see [Team Foundation Server Permissions](../setup-admin/permissions.md).
+To use the **destroy** command, you must belong to the **Team Foundation Administrators** security group. For more information, see [Permissions and groups reference](../security/permissions.md).
 
     tf destroy [/keephistory] <itemspec1>[;<versionspec>][<itemspec2>...<itemspecN>] 
     [/stopat:<versionspec>] [/preview] [/startcleanup] [/noprompt] [/silent] [/login:username,[password]] [/collection:TeamProjectCollectionUrl]]
@@ -37,7 +37,7 @@ To use the **destroy** command, you must belong to the **Team Foundation Adminis
 	<td><p>Specifies the server path of the file or folder to be destroyed. Use multiple <em>itemspec</em> values to delete multiple items. For example, <code>tf destroy $/TeamProject1 $/teamProject2 $/TeamProject3</code>.</p><p>Local paths are not supported.</p></td></tr>
 <tr>
 	<td><p><em>versionspec</em></p></td>
-	<td><p>Provides a version such as C58 for the <strong>/keephistory</strong> or <strong>/stopat</strong> options. The allowed values are date, tip, or a specific changeset. For more information about how Team Foundation parses a version specification to determine which items are within its scope, see <a href="https://msdn.microsoft.com/library/56f7w6be)">Command-Line Syntax (Version Control)</a>.</p></td></tr>
+	<td><p>Provides a version such as C58 for the <strong>/keephistory</strong> or <strong>/stopat</strong> options. The allowed values are date, tip, or a specific changeset. For more information about how Team Foundation parses a version specification to determine which items are within its scope, see <a href="https://msdn.microsoft.com/library/56f7w6be">Command-Line Syntax (Version Control)</a>.</p></td></tr>
 <tr>
 	<td><p><em>username</em></p></td>
 	<td><p>Provides a value to the <strong>/login</strong> option. You can specify a username value as either <em>DOMAIN</em>\<em>UserName</em> or <em>UserName.</em></p></td></tr>
@@ -59,7 +59,7 @@ To use the **destroy** command, you must belong to the **Team Foundation Adminis
 	<td><p>Displays in the Command Prompt window the files that would be destroyed. When <strong>tf destroy</strong> runs in the preview mode, the files are not actually destroyed.</p><strong>Note:</strong> The text in the Command Prompt window displays the word &quot;Destroyed&quot; with each file that would be destroyed. However, the file is actually not destroyed when the <strong>/preview</strong> option is used.</td></tr>
 <tr>
 	<td><p><strong>/startcleanup</strong></p></td>
-	<td><p>Forces the file content clean-up process to start immediately after the content deletion finishes. If the user does not specify <strong>/startcleanup</strong>, the destroyed content clean-up process occurs when the database maintenance cleans up all the files that are no longer referenced by Visual Studio Team Foundation Server. By default, the clean-up is scheduled to run once each day.</p></td></tr>
+	<td><p>Forces the TFVC metadata clean-up process to start immediately after the deletion finishes. If the user does not specify <strong>/startcleanup</strong>, the destroyed metadata clean-up process occurs when the database maintenance cleans up all the files that are no longer referenced by Visual Studio Team Foundation Server. By default, the clean-up is scheduled to run every 5 days. Seven days after the TFVC metadata are cleaned up the content will be deleted by another clean-up process. By default, this content clean-up process runs once each day.</p></td></tr>
 <tr>
 	<td><p><strong>/noprompt</strong></p><p><strong>/i</strong></p></td>
 	<td><p>Specifies that the destruction of files is non-interactive. <strong>/i</strong> is an alias for <strong>/noprompt</strong>.</p></td></tr>

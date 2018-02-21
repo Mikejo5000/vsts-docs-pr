@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-manual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 10/20/2016
+ms.date: 01/18/2018
 ---
 
 # Exploratory testing using Microsoft Test Manager
@@ -14,10 +14,12 @@ ms.date: 10/20/2016
 [!INCLUDE [version-header-vs-ts-tfs](../_shared/version-header-vs-ts-tfs.md)] 
 
 While you work with your application, Microsoft Test Manager (MTM) can record your actions, comments, screenshots and other data. The recording makes it easy to reproduce bugs. And you can quickly play back your tests whenever the application is updated.  
+
+[!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
   
-### Exploring your app  
+## Explore your app  
   
-1. Install [the latest build of your application](../../build-release/apps/index.md). If it's a desktop application, install it on a machine that has MTM. If it's a server, you can install it on any other machine, but you'll want to run the browser or client on the same machine where you have MTM.  
+1. Install [the latest build of your application](../../build-release/index.md). If it's a desktop application, install it on a machine that has MTM. If it's a server, you can install it on any other machine, but you'll want to run the browser or client on the same machine where you have MTM.  
   
 1. [Connect MTM to your test plan](connect-microsoft-test-manager-to-your-team-project-and-test-plan.md) if you haven't already. The test plan stores default settings and test results.  
   
@@ -63,17 +65,20 @@ While you work with your application, Microsoft Test Manager (MTM) can record yo
   
    ![Summary of the exploratory test session](_img/exploratory-testing-using-microsoft-test-manager/almp_t_explore14.png)  
   
-## Q & A  
-  
-### Q: How do I enable screen recording during testing?  
+## Enable screen recording during testing  
 
-A: That's an option in your test settings. Open **Plan**, **Properties**, and under **Manual runs** choose **Test settings** = **&lt;New&gt;**.
-In the test settings wizard, give the new settings a name. On the **Data and Diagnostics** page, scroll down and select **Screen and Voice recorder**.
-Choose **Configure** if you want to record your voice along with the screen.  
+1. In your test settings, open **Plan**, **Properties**, and - under **Manual runs** - choose **Test settings** = **&lt;New&gt;**.
+
+2. In the test settings wizard, give the new settings a name.
+
+3. On the **Data and Diagnostics** page, scroll down and select **Screen and Voice recorder**.
+
+4. Choose **Configure** if you want to record your voice along with the screen.  
   
- Close the test settings and **Save and Close** the test plan properties. When you start a test, a real-time screen recording will be added.  
-  
- When you want to run tests without real-time recording, go back to the test plan properties and set **Test Settings = &lt;Default&gt;**.  
+5. Close the test settings and **Save and Close** the test plan properties.
+
+When you start a test, a real-time screen recording will be added.  
+If you want to run tests without real-time recording, go back to the test plan properties and set **Test Settings = &lt;Default&gt;**.  
   
 ## Try this next  
   

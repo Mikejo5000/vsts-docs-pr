@@ -1,63 +1,61 @@
 ---
-title: Git index to content | VSTS & TFS    
+title: Git index to content for VSTS & TFS    
 description: Guide to getting started with Git documentation  
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-git  
-ms.topic: get-started-article  
+ms.technology: vs-devops-git 
 ms.assetid: 36A4986E-BFB8-422B-BFC9-8A0CB75D0603    
 ms.manager: douge
-ms.author: kaelli
-ms.date: 07/20/2017
+ms.author: sdanie
+ms.date: 01/19/2018
+layout: LandingPage
 ---
 
-# Git documentation for Team Services and TFS
+# Git Repositories
 
-Use Git repos to host and collaborate on your code using Team Services or Team Foundation Server.  
+Use Git repositories to host and collaborate on your code using Visual Studio Team Services (VSTS) or Team Foundation Server (TFS).  
 
 ## 5-Minute Quickstarts 
 
 Get started by creating a repo, uploading your code, and inviting developers to work in the repo. You can use any one of these clients or IDEs: 
 
 <!--- All images are Placeholder --> 
+<!-- Converting to icon48 format, this gets cleaner in YAML -->
+<div class="ico48Case halfStack"><div class="ico48Link"><a href="create-new-repo.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/common/i_web.svg"><span>Web</span></a></div><div class="ico48Link"><a href="share-your-code-in-git-vs-2017.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_visual-studio.svg"><span>Visual Studio</span></a></div><div class="ico48Link"><a href="share-your-code-in-git-cmdline.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/common/i_cligeneric.svg"><span>Command-line</span></a></div><div class="ico48Link"><a href="share-your-code-in-git-xcode.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_xcode.svg"><span>Xcode</span></a></div><div class="ico48Link"><a href="share-your-code-in-git-eclipse.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_eclipse.svg"><span>Eclipse</span></a></div>
 
-<table>
-<tr valign="middle" align="center">
-<td>![Placeholder](_img/index/placeholder-img.png)<br/>[Web](create-new-repo.md)</td>
-<td>![VS](_img/index/vs-ide-placeholder.png)<br/>[Visual Studio](share-your-code-in-git-vs.md)</td>
-<td>![CLI](_img/index/cli-placeholder.png)<br/>
-[Command line](share-your-code-in-git-cmdline.md)</td>
-<td>![Placeholder](_img/index/placeholder-img.png)<br/>[Xcode](share-your-code-in-git-xcode.md)</td>
-<td>![Placeholder](_img/index/placeholder-img.png)<br/>[Eclipse](share-your-code-in-git-eclipse.md)
-</td>
-</tr>
-</table>    
+<div class="ico48Link"><a href="create-repo-intellij.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/en-us/media/logos/logo_intellij.svg"><span>IntelliJ</span></a></div>
 
+</div>
 
-Or, you can [import an existing repo](import-git-repository.md) from GitHub, BitBucket, GitLab, or other location to a new, empty repo. 
+Or, you can [import an existing repo](import-git-repository.md) from GitHub, Bitbucket, GitLab, or other location to a new, empty repo. 
 
-## Step-by-step Tutorials  
+## Step-by-Step Tutorials  
 
 Learn the basics of working in Git with these tutorials which show tasks performed using Visual Studio or the command line.  
 
-1. [Create a new repo](tutorial/creatingrepo.md)  
-1. [Clone an existing repo](tutorial/clone.md)  
-1. [Save work with commits](tutorial/commits.md)  
-1. [Create work in branches](tutorial/branches.md)  
-1. [Share code with push](tutorial/pushing.md)  
-1. [Update code with fetch and pull](tutorial/pulling.md)  
-1. [Review code with pull requests](tutorial/pullrequests.md)  
-1. [Apply changes with rebase](tutorial/rebased.md)  
-1. [Copy changes with cherry-pick](tutorial/cherry-pick.md)  
-1. [Resolve merge conflicts](tutorial/merging.md)  
-1. [Undo changes](tutorial/undo.md)  
-1. [Ignore files](tutorial/ignore-files.md)  
-1. [Review history](tutorial/history.md)  
+- [Clone an existing repo](tutorial/clone.md)  
+- [Save work with commits](tutorial/commits.md)  
+- [Create work in branches](tutorial/branches.md)  
+- [Share code with push](tutorial/pushing.md)  
+- [Update code with fetch and pull](tutorial/pulling.md)  
+- [Review code with pull requests](tutorial/pullrequest.md)  
+- [Review history](tutorial/history.md)  
 
+## Concepts
 
-## Videos 
- 
-[![Git at scale video](_img/index/git-at-scale-video-img.png)](https://channel9.msdn.com/Events/Build/2017/P4101/player)  
+- [Authentication](auth-overview.md)
+- [History in Git](concepts/history.md)
+- [Branch organization](concepts/git-branching-guidance.md)
+- [Pull requests](pull-requests-overview.md)
+- [Forks](forks-overview.md)
+- [Branch policies](branch-policies-overview.md)
+- [Customize and extend pull request workflows with pull request status](concepts/pull-request-status.md)
+- [How we use Git at Microsoft](https://www.visualstudio.com/learn/use-git-microsoft/)
 
+## Reference
+
+- [Format comments with markdown](../collaborate/markdown-guidance.md?toc=/vsts/git/toc.json&bc=/vsts/git/breadcrumb/toc.json)
+- [Command reference](command-prompt.md)
+- [Frequently asked questions](tutorial/howto.md)
 
 ## Resources 
 

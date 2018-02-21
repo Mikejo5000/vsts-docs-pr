@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-manual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 10/20/2016
+ms.date: 01/18/2018
 ---
 
 # Run manual tests with Microsoft Test Manager
@@ -14,6 +14,8 @@ ms.date: 10/20/2016
 [!INCLUDE [version-header-vs-ts-tfs](../_shared/version-header-vs-ts-tfs.md)] 
 
 Microsoft Test Runner sits at the side of the screen while you test your application. It displays the steps you planned and the results you expected, and you check them off as you work. It can record your actions along with comments, screenshots, and other data, so that if you find a bug, it's easy to reproduce.  
+
+[!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
   
 >**The web portal or Microsoft Test Runner?** Use the web-based test runner
 in the **Test** hub when you want to test web applications, and Microsoft 
@@ -29,7 +31,8 @@ from the **Test** hub instead of using Microsoft Test Manager.
   
    - [Create some test cases.](plan-manual-tests-with-microsoft-test-manager.md) Typically you create them at the start of a sprint, and aim to have them all pass by the end of the sprint. You can create them either with the web portal or Microsoft Test Manager.  
   
-   - Install Microsoft Test Manager (MTM) on the machine where you want to run your tests. To get MTM, install Visual Studio Test Professional or Visual Studio Enterprise.  
+   - Install Microsoft Test Manager (MTM) on the machine where you want to run your tests.
+     To get MTM, install [Visual Studio Enterprise](https://www.visualstudio.com/downloads/) or [Visual Studio Test Professional ](https://www.visualstudio.com/vs/test-professional/).
   
    - [Connect MTM to your test plan](connect-microsoft-test-manager-to-your-team-project-and-test-plan.md)  
   
@@ -71,7 +74,6 @@ from the **Test** hub instead of using Microsoft Test Manager.
 ## Replay previous tests
   
 If you ran a test before, you can repeat it quickly by replaying the same actions.  
-  
 (This works with most applications, though not all).  
   
 1. Start the test. Don't overwrite the recording.  
@@ -85,7 +87,6 @@ If you ran a test before, you can repeat it quickly by replaying the same action
 ## Track the progress of your tests  
 
 Monitor the progress of your project by seeing how many tests have passed.  
-  
 Tests begin in the Active state, meaning that they are ready to run. When a bug has been fixed, you can set the state of a failed test back to Active.  
   
 ![View test results and reset a test ready to re&#45;run](_img/run-manual-tests-with-microsoft-test-manager/almp_t_run13.png)  
@@ -96,6 +97,6 @@ Tests begin in the Active state, meaning that they are ready to run. When a bug 
 * [Test configurations: specifying test platforms](../test-different-configurations.md)   
 * [Record and play back manual tests](../getting-started/record-play-back-manual-tests.md)   
 * [Collect more diagnostic data](collect-more-diagnostic-data-in-manual-tests.md)   
-* [Testing Windows Store apps](testing-windows-store-apps.md)
+* [Testing Microsoft Store apps](testing-windows-store-apps.md)
 
 [!INCLUDE [help-and-support-footer](../_shared/help-and-support-footer.md)] 

@@ -5,13 +5,13 @@ ms.assetid: 815fd18a-1511-4f72-8a4a-7b1b0d3b2144
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfvc
 ms.manager: douge
-ms.author: routlaw
+ms.author: sdanie
 ms.date: 08/10/2016
 ---
 
 # Label Command (Team Foundation Version Control)
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Updated: October 2011
 
@@ -19,7 +19,7 @@ Attaches a label to or removes a label from a version of a file or folder in the
 
 **Required Permissions**
 
-To use the **label** command, you must have the **Label** permission set to **Allow**. To modify or delete labels created by other users, you must have the **Administer labels** permission set to **Allow**. For more information, see [Team Foundation Server Permissions](../setup-admin/permissions.md).
+To use the **label** command, you must have the **Label** permission set to **Allow**. To modify or delete labels created by other users, you must have the **Administer labels** permission set to **Allow**. For more information, see [Permissions and groups reference](../security/permissions.md).
 
     tf label labelname[@scope] [/owner:ownername] 
     itemspec [/version:versionspec] [/comment:("comment"|@commentfile)] 

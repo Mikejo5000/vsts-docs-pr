@@ -5,13 +5,13 @@ ms.assetid: c61c2a48-20d4-4452-b6e1-6c1aa3b521ee
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfvc
 ms.manager: douge
-ms.author: routlaw
+ms.author: sdanie
 ms.date: 08/10/2016
 ---
 
 # Configure Command
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Enables an administrator to view and change the following configuration settings for a team project in the **Source Control Settings** dialog box:
 
@@ -23,7 +23,7 @@ Enables an administrator to view and change the following configuration settings
 
 **Required Permissions**
 
-To use the **configure** command, you must have the **Edit server-level information** permission set to **Allow**. For more information, see [Team Foundation Server Permissions](../setup-admin/permissions.md).
+To use the **configure** command, you must have the **Edit server-level information** permission set to **Allow**. For more information, see [Permissions and groups reference](../security/permissions.md).
 
     tf configure [PathOfTeamProject] [/collection:TeamProjectCollectionUrl][/login:username,[password]]
 
@@ -76,7 +76,7 @@ The following example displays the myproj team project settings in the team proj
 
 #### Concepts
 
-[Managing File Types](../setup-admin/tfs/admin/manage-file-types.md)
+[Managing File Types](../tfs-server/admin/manage-file-types.md)
 
 #### Other Resources
 

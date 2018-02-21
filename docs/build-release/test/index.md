@@ -1,82 +1,62 @@
 ---
-title: Continuous testing with Visual Studio Team Services and Team Foundation Server
-description: Use continuous testing in Visual Studio Team Services and Team Foundation Server to ensures your app still works after every check-in and build, enabling you to find problems earlier. 
+title: Continuous Testing
+description: Continuous testing in VSTS and TFS 
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-continuous
-ms.assetid: 574CD62B-38DA-4015-9E15-36673C489D36
+ms.technology: vs-devops-build
+ms.assetid: 55B050E3-64A2-4EEA-A1DD-43700B8EC2A8
 ms.manager: douge
 ms.author: ahomer
-ms.date: 08/12/2016
+ms.date: 01/18/2018
 ---
 
-# Continuous testing scenarios and capabilities
+# Continuous Testing
 
-**Team Services | TFS 2017 | TFS 2015 | [Previous version](https://msdn.microsoft.com/library/ee702477%28v=vs.120%29.aspx)**  
+**VSTS | TFS 2018 | TFS 2017 | TFS 2015 | [Previous version](https://msdn.microsoft.com/library/ee702477%28v=vs.120%29.aspx)**
 
-> See also [Manual and exploratory testing](../../manual-test/index.md), [Load and performance testing](../../load-test/index.md), [Unit testing](https://docs.microsoft.com/visualstudio/test/developer-testing-scenarios).
+Whether your app is on-premises or in the cloud, you can automate build-deploy-test workflows and 
+choose the technologies and frameworks, then test your changes continuously in a fast, scalable, and efficient manner. 
 
-Whether your app is on-premises or in the cloud, 
-you can automate build-deploy-test workflows and 
-choose the technologies and frameworks, then test 
-your changes continuously in a fast, scalable, and 
-efficient manner. 
+## 5-Minute Quickstarts
 
-![Test with Visual Studio Team Services and Team Foundation Server](_img/continuous-testing/test-types.png)
+| | | |
+| --- | --- | --- |
+| ![icon](_img/continuoustest-icon.png)<br />[Test with builds](getting-started-with-continuous-testing.md) | ![icon](_img/reviewresults-icon.png)<br />[Review test results](review-continuous-test-results-after-build.md) |
+| | | |
 
-<a name="maintain-quality"></a>
-## Maintain quality and find problems as you develop
+<!-- | ![icon](_img/selenium-icon.png)<br />[Selenium testing](continuous-test-selenium.md) -->
 
-Continuous testing with Visual Studio Team Services
-or Team Foundation Server ensures your app still 
-works after every check-in and build, enabling you 
-to find problems earlier by running tests 
-automatically with each build.
+## Videos
 
-<iframe width="640" height="360" src="//channel9.msdn.com/Series/Test-Tools-in-Visual-Studio/Unit-Testing-from-a-CI-Build-with-Visual-Studio-Team-Services/player" frameborder="0" allowfullscreen="true"></iframe><p />
+| | |
+| --- | --- |
+| <iframe src="https://channel9.msdn.com/Events/Build/2016/P581/player" width="340" height="190" allowFullScreen="true" frameBorder="0"></iframe> | <iframe src="https://channel9.msdn.com/Events/Seth-on-the-Road/That-Conference-2016/Creating-a-Software-Immune-System-for-Testing-under-DevOps/player" width="340" height="190" allowFullScreen="true" frameBorder="0"></iframe> |
+| <iframe src="https://channel9.msdn.com/Series/Parts-Unlimited-Labs/Parts-Unlimited-Continuous-Integration/player" width="340" height="190" allowFullScreen frameBorder="0"></iframe> | <iframe src="https://channel9.msdn.com/Events/TechDaysOnline/UK-TechDays-Online-September-2016/Supporting-DevOps-through-testing--its-not-just-about-automating-tests/player" width="340" height="190" allowFullScreen frameBorder="0"></iframe> |
+| | |
 
-* [Get started with continuous testing](getting-started-with-continuous-testing.md)
-* [Testing in Continuous Integration and Continuous Deployment Workflows](https://blogs.msdn.microsoft.com/visualstudioalm/2015/05/29/testing-in-continuous-integration-and-continuous-deployment-workflows/)
-* [Learn more about test task steps](../define/build.md#test)
-* [An end-to-end example of continuous testing](example-continuous-testing.md)
-* [Run automated tests from test plans in the Test hub](run-automated-tests-from-test-hub.md)
+## Step-by-Step Tutorials
 
-<a name="test-frameworks"></a>
-## Any test type and any test framework
+* [Run unit tests and load tests as you build and deploy your app](example-continuous-testing.md)
 
-Choose the test technologies and frameworks you
-prefer to use.
- 
-<iframe width="640" height="360" src="//channel9.msdn.com/Series/Test-Tools-in-Visual-Studio/Testing-Java-Applications-with-Visual-Studio-Team-Services/player" frameborder="0" allowfullscreen="true"></iframe><p />
+## How-to Guides
 
-* [Get started with Java testing](continuous-test-java.md).
-* [Get started with Selenium testing](continuous-test-selenium.md).
-* [Use Maven to build your Java app](../steps/build/maven.md)
-* [Unit testing framework plug-ins for Visual Studio](http://go.microsoft.com/fwlink/?LinkID=246630) 
+* [Set up continuous testing](set-up-continuous-testing-builds.md)
+* [Run tests from the Test hub](run-automated-tests-from-test-hub.md)
+* [Associate tests with test cases](associate-automated-test-with-test-case.md)
+* [Associate results with requirements](associate-automated-results-with-requirements.md)
+* [Speed up testing with Test Impact Analysis](test-impact-analysis.md)
+* [Run tests in parallel](run-tests-in-parallel.md)
 
-<a name="analytics-reporting"></a>
-## Rich analytics and reporting
+## Reference
 
-When your build is done, review your test results 
-to start resolving the problems you find.
-Rich and actionable build-on-build reports 
-let you instantly see if your builds are getting 
-healthier. But it's not just about speed - detailed and 
-customizable test results measure the quality of 
-your app.
+* [Unified agents and phases](test-with-unified-agent-and-phases.md)
+* [Test Java applications](continuous-test-java.md)
+* [Set up environments](set-up-continuous-test-environments-builds.md)
+* [FAQs](reference-qa.md)
 
-![Build results showing rich test results](_img/continuous-testing/BuildSummary.png)
+## Resources
 
-* [Review continuous test results after a build](review-continuous-test-results-after-build.md).
-* [Get started with continuous testing](getting-started-with-continuous-testing.md)
-
-<a name="devops-practice"></a>
-## Advanced DevOps practices
-
-If you are already using advanced continuous 
-testing practices in DevOps workflows, or just 
-using continuous testing and looking for advanced 
-content, check out 
-[Test automation, planning, and management concepts](https://vsartestreleaseguide.codeplex.com/)
-from the DevOps Rangers.
-
-[!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
+* [DevOps Rangers](https://vsartestreleaseguide.codeplex.com/)
+* [Plug-ins for Visual Studio](http://go.microsoft.com/fwlink/?LinkID=246630)
+* [Manual and exploratory testing](../../manual-test/index.md)
+* [Load and performance testing](../../load-test/index.md) 
+* [Unit testing](https://docs.microsoft.com/visualstudio/test/developer-testing-scenarios)

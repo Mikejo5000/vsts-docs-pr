@@ -5,20 +5,20 @@ ms.assetid: 0d96b6d2-f00a-4d28-98b9-83fe75cde284
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfvc
 ms.manager: douge
-ms.author: routlaw
+ms.author: sdanie
 ms.date: 08/10/2016
 ---
 
 # Administering Team Foundation Version Control
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Topics in this section describe how to complete common administrative version control tasks using Team Foundation.
 ## In This Section
 [Configure Check-Out Settings](configure-check-out-settings.md)  
 Explains how to configure source control check-out settings.
 
-[Managing File Types](../setup-admin/tfs/admin/manage-file-types.md)  
+[Managing File Types](../tfs-server/admin/manage-file-types.md)  
 Describes how to add, edit, and remove file type extensions associated with Team Foundation version control check-ins.
 
 [Set and Enforce Quality Gates](set-enforce-quality-gates.md)  

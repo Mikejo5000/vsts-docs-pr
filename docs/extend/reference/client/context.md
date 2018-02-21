@@ -1,7 +1,7 @@
 ---
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
-title: Web Context | Extensions for Visual Studio Team Services
+title: Web Context | Extensions for VSTS
 description: Context data avaialble in your web extensions 
 ms.assetid: b926a050-1e70-4907-8963-e4f2ee9939e5
 ms.manager: douge
@@ -11,7 +11,7 @@ ms.date: 08/04/2016
 
 # Web context
 
-The [core SDK](core-sdk.md) provides an API for getting context information, for example the current project's ID (if your extension is operating at a project or team level).
+The `core SDK` provides an API for getting context information, for example the current project's ID (if your extension is operating at a project or team level).
 
 
 

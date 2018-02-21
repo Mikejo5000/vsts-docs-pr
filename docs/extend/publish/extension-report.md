@@ -1,6 +1,7 @@
 ---
 ms.prod: vs-devops-alm
-title: Extension Report | Visual Studio Team Services
+ms.technology: vs-devops-extensions-api
+title: Extension Report | VSTS
 description: An overview of reports available for an extension. 
 ---
 

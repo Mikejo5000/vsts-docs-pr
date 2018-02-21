@@ -5,18 +5,18 @@ ms.assetid: dfa1c139-028d-4329-aa03-0f9845337f82
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfvc
 ms.manager: douge
-ms.author: routlaw
+ms.author: sdanie
 ms.date: 08/10/2016
 ---
 
 # Merges Command
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Displays detailed information about past merges between the specified source and destination branches.
 
 **Required Permissions**  
-To use the **merges** command, you must have the **Read** permission set to **Allow** for both source and destination branches. For more information, see [Team Foundation Server Permissions](../setup-admin/permissions.md).
+To use the **merges** command, you must have the **Read** permission set to **Allow** for both source and destination branches. For more information, see [Permissions and groups reference](../security/permissions.md).
 
     tf merges [source] destination [/recursive] [/extended] [/format:(brief|deltailed)] [/login:username, [password]] [/showall]]] [/collection:TeamProjectCollectionUrl]
 

@@ -1,17 +1,17 @@
 ---
-title: Run automated tests from test plans in the Test hub | Visual Studio Team Services and Team Foundation Server
+title: Run automated tests from test plans in the Test hub VSTS and TFS 
 description: Run automated tests on-demand against Team Foundation builds from test plans in the Test hub
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-continuous
+ms.technology: vs-devops-build
 ms.assetid: 2886C58B-0F4B-4C0C-A248-3980CA629FD8 
 ms.manager: douge
 ms.author: ahomer
-ms.date: 21/03/2017
+ms.date: 01/18/2018
 ---
 
 # Run automated tests from test plans in the Test hub
 
-**Team Services | TFS 2017 Update 2**
+**VSTS | TFS 2018 | TFS 2017.2**
 
 Automate test cases in your test plans and run them directly from the **Test** hub:
 
@@ -34,7 +34,7 @@ You will need:
   [Visual Studio 2017](associate-automated-test-with-test-case.md), 
   or [Visual Studio 2015 or earlier](https://msdn.microsoft.com/en-us/library/dd380741%28v=vs.120%29.aspx).
 
-* A [Team Build definition](../../build-release/get-started/dot-net.md)
+* A [Team Build definition](../../build-release/apps/windows/dot-net.md)
   that generates builds containing the test binaries.
 
 * The app to test. You can deploy the app as part of the 
@@ -73,9 +73,13 @@ You will need:
    * Verify that version 2 of the Visual Studio Test task is selected.
      The version number is shown in the drop-down list at the top left
      of the task settings panel. 
- 
-   * Verify that **Select tests using** is set to **Test run (for on-demand-runs)**.
+
+     ![Checking the task version number setting](_img/run-automated-tests-from-test-hub/run-auto-tests-from-hub-03.png) 
+
+   * Verify that **Select tests using** is set to **Test run**.
      [What does this setting mean?](reference-qa.md#faq-ondemandruns) 
+
+     ![Checking the test selection method setting](_img/run-automated-tests-from-test-hub/run-auto-tests-from-hub-02.png) 
 
    * If you have UI tests that run on real browsers or thick clients,
      set (tick) the **Test mix contains UI tests** checkbox. This is not
@@ -96,7 +100,12 @@ You will need:
 
    ![Specifying the properties for the Visual Studio Test task](_img/run-automated-tests-from-test-hub/run-auto-tests-from-hub-06.png)
 
-1. Choose the **Run on agent** link and verify that the deployment queue
+   For information about the option settings of the Visual Studio Test task, see:
+   
+   * [Visual Studio Test version 1](https://github.com/Microsoft/vsts-tasks/blob/releases/m109/Tasks/VsTest/README.md)
+   * [Visual Studio Test version 2](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTest/README.md)
+
+1. Choose the **Agent phase** item and verify that the deployment queue
    is set to the one containing the machines where you want to run the
    tests. If your tests require special machines from the agent pool,
    you can add demands that will select these at runtime.
@@ -104,7 +113,7 @@ You will need:
    ![Specifying the properties for the Agent phase](_img/run-automated-tests-from-test-hub/run-auto-tests-from-hub-04.png)
 
    You may be able to minimize test times by distributing tests across multiple
-   agents by setting **Type of parallelism** to **Multi-agent** and specifying the number of agents.
+   agents by setting **Parallelism** to **Multiple executions** and specifying the number of agents.
    [More details](test-with-unified-agent-and-phases.md).
 
    > **Note**: If you are running UI tests such as CodeUI or Selenium
@@ -112,7 +121,7 @@ You will need:
    on the machines must be running in interactive mode and not
    as a service. [More details](reference-qa.md#faq-agentmode). 
 
-1. Open the **Artifacts** tab of the release definition and verify
+1. In the **Pipeline** tab of the release definition, verify
    that the build definition containing the test binaries is linked
    to this release definition as an artifact source.  
 

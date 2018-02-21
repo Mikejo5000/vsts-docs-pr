@@ -1,18 +1,19 @@
 ---
-title: Get your code reviewed with Visual Studio | Visual Studio Team Services
+title: Get your code reviewed with Visual Studio | VSTS
 description: Get a code review from your team using Visual Studio
 ms.assetid: 115cc8ee-e3b3-4bb4-a50f-604a75d52a8e
 toc: show
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfvc
+ms.topic: get-started-article
 ms.manager: douge
-ms.author: routlaw
+ms.author: sdanie
 ms.date: 08/10/2016
 ---
 
 # Get your code reviewed with Visual Studio
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Before you check in your code, you can use Visual Studio to ask someone else from your team to review it. Your request will show up in his team explorer, in the my work page.
 
@@ -87,6 +88,7 @@ If you aren't getting them, you can sign up in the team explorer settings page.
 
  ![Work environment restored after resuming work](_img/get-code-reviewed-vs/IC683039.png)
 
-## Try this next
+## Next steps
 
- * [Create your backlog](../work/backlogs/create-your-backlog.md)
+> [!div class="nextstepaction"]
+> [Create your backlog](../work/backlogs/create-your-backlog.md)

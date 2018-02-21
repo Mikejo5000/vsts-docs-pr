@@ -1,65 +1,69 @@
 ---
-title: Kanban guidance | Team Services & TFS
-description: Index to topics for working with Kanban in VSTS and and Team Foundation Server (TFS)  
-ms.technology: vs-devops-agile-wit
+title: Kanban board for VSTS & TFS content
+description: Index to topics for working with Kanban in VSTS and Team Foundation Server (TFS)  
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid:  
 ms.manager: douge
 ms.author: kaelli
-ms.topic: landing-page 
 ms.date: 07/25/2017
 ---
 
-# Kanban guidance 
+# Kanban
 
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]  
 
-Your Kanban board turns your backlog into an interactive signboard, providing a visual flow of work. As work progresses from idea to completion, you update the items on the board. Each column represents a work stage, and each card represents a backlog item, user story, or bug at that stage of work.  
+Get collaboration going by adding to, updating, and then reviewing your Kanban board with others. 
 
+<!---
 ## Overview  
-- [About Kanban and Agile](../../concepts/kanban-agile.md) 
-- [About teams and Agile tools](../about-teams-and-settings.md)  
- 
+[About Kanban and Agile project management](kanban-overview.md) 
+[Backlogs, boards, & plans](../backlogs/backlogs-boards-plans.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json)   
+-->
 
-## 5-minute quickstart  
+## 5-Minute Quickstarts  
 
-Start tracking work by adding work items, updating status, and inviting others to use your Kanban board.  
+- [Kanban quickstart](kanban-quickstart.md)  
 
-- [Kanban](kanban-quickstart.md)  
-
-## Step-by-step tutorials
-
-Whether you use scrum, Kanban, or a combination of Agile methods, you can get started tracking bugs, driving your Git development, and more using the Agile tools available to you. 
+## Step-by-Step Tutorials
 
 - [Kanban basics](kanban-basics.md)
 - [Task checklists](add-task-checklists.md)
 - [Epics & features](kanban-epics-features-stories.md)
-- [Add inline tests](/add-run-update-tests.md)
-- [Cumulative flow](../../report/guidance/cumulative-flow.md)  |
+- [Add inline tests](add-run-update-tests.md)
+- [Cumulative flow](../../report/dashboards/cumulative-flow.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json)  
+
 
 ## Concepts 
       
-- [Kanban best practices](../concepts/best-practices-kanban.md)    
-- [Backlogs, boards, & plans](../backlogs-boards-plans.md)   
+- [Kanban best practices](best-practices-kanban.md)      
+- [About teams and Agile tools](../../teams/about-teams-and-settings.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json)  
 
 
-## How-to guides
+## How-to Guides
 
+- [Filter your Kanban board](filter-kanban-board.md)  
 - [Add columns](add-columns.md)  
 - [WIP limits](wip-limits.md)  
 - [Split columns](split-columns.md)  
 - [Expedite work (swimlanes)](expedite-work.md)  
 - [Definition of done](definition-of-done.md)  
-- [Customize cards](../customize/customize-cards.md)  
-- [Card reordering](../customize/reorder-cards.md)  
+- [Customize cards](../customize/customize-cards.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json)    
+- [Card reordering](../customize/reorder-cards.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json)  
+- [Use work item form controls](../work-items/work-item-form-controls.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json)    
 
 ## Reference   
-- [Permissions and access for work tracking](../permissions-access-work-tracking.md) 
-- [Work item field index](../guidance/work-item-field.md)    
- 
+- [Permissions and access for work tracking](../../security/permissions-access-work-tracking.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json)  
+- [Work item field index](../work-items/guidance/work-item-field.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json)      
+- [Kanban board keyboard shortcuts](kanban-board-keyboard-shortcuts.md)
   
 ## Resources 
-- [What is Agile?](https://www.visualstudio.com/learn/what-is-agile/)  
+
+- [Backlogs](../backlogs/index.md)
+- [Scrum](../scrum/index.md)
+- [Work item queries](../track/index.md)
+- [Work item customization](../customize/index.md)
+- [What is Agile?](https://www.visualstudio.com/learn/what-is-agile/)   
 - [What is Agile development?](https://www.visualstudio.com/learn/what-is-agile-development/)  
 
 

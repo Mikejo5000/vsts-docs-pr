@@ -5,19 +5,19 @@ ms.assetid: 629bf67c-22c5-4047-92b8-aa8f7c201cc9
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfvc
 ms.manager: douge
-ms.author: routlaw
+ms.author: sdanie
 ms.date: 08/10/2016
 ---
 
 # Enable and Disable Check-In Policies
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Administrators of Team Foundation version control can add check-in policy requirements. These check-in policies require the user to take actions when they conduct a check-in to source control; for example a user can be required to associate a work item with a changeset. For more information, see [Add Check-In Policies](add-check-policies.md). Prior to enabling or disabling check-in policies, you must first create a check-in policy. For more information, see [Add Check-In Policies](add-check-policies.md). The following procedures demonstrate how to enable or disable check-in policies for your team project.
 
 **Required Permissions**
 
-To complete this procedure, you must have the **Edit project-level information** permission set to **Allow**. For more information, see [Team Foundation Server Permissions](../setup-admin/permissions.md).
+To complete this procedure, you must have the **Edit project-level information** permission set to **Allow**. For more information, see [Permissions and groups reference](../security/permissions.md).
 
 ## Procedure
 

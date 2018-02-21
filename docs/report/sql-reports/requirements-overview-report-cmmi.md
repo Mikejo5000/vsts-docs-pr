@@ -6,10 +6,12 @@ ms.technology: vs-devops-reporting
 ms.assetid: 18214bb0-6ff1-4e91-b354-a9b46823f69d
 ms.manager: douge
 ms.author: kaelli
-ms.date: 12/30/2016
+ms.date: 10/17/17
 ---
+
+
 # Requirements Overview Report (CMMI)
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 The Requirements Overview report lists all requirements, filtered by area and iteration and in order of importance. For information about how to open this report, refresh the data, or manage reports, see [Reporting Services Reports](reporting-services-reports.md).  
   
@@ -21,7 +23,7 @@ The Requirements Overview report lists all requirements, filtered by area and it
   
  **Required Permissions**  
   
- To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in Reporting Services. For more information, see [Add users to team projects](../../setup-admin/add-users.md).  
+ To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in Reporting Services. For more information, see [Add users to team projects](../admin/grant-permissions-to-reports.md).  
   
 ##  <a name="Data"></a> Data in the Report  
  The Requirements Overview report presents a snapshot of the work that has been performed for the filtered set of requirements to the current date, as the following illustration shows:  
@@ -137,7 +139,7 @@ The Requirements Overview report lists all requirements, filtered by area and it
   
 -   The team is making more progress on requirements that have a lower rank than on requirements that have a higher rank.  
   
--   More tesst are failing than are passing.  
+-   More tests are failing than are passing.  
   
 -   Tests are failing for a requirement, but no bug work items are being created.  
   

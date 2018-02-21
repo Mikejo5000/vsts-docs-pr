@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-manual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 10/20/2016
+ms.date: 01/18/2018
 ---
 
 # Collect more diagnostic data in manual tests
@@ -18,6 +18,8 @@ While you are testing your application, Microsoft Test Manager can collect data 
 ![Test settings machine roles and adapters](_img/collect-more-diagnostic-data-in-manual-tests/testsettingsmachineroleconceptual.png)  
   
 You can decide what kinds of data you want to collect.  
+
+[!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
   
 ## What diagnostic data can I collect in a test?
 
@@ -77,7 +79,7 @@ On the Data and Diagnostics page you can add and configure diagnostic adapters t
 |**Action Log**: Allows you to record the actions you perform during your test, so that you can play them back rapidly on a subsequent occasion. The actions are also recorded as text descriptions in any bug report that you create.|[Record and play back manual tests](../getting-started/record-play-back-manual-tests.md).<br /><br /> Not all gestures and applications are recorded.|  
 |**ASP.NET Client Proxy for IntelliTrace and Test Impact**|Select this adapter in a web client role. It is required if you are testing an ASP.NET application, and you want to collect **Test Impact** or **Intellisense** data on the web server role.|  
 |**Event log**<br /><br /> Collects events that your application wrote to the event logs.|Choose **Configure** to select the types of events you want.<br /><br /> Your application has to write events using **WriteEntry**.  
-|**IntelliTrace**: Generates an .itrace file that is linked to any bug that you create. From this IntelliTrace file, the local session can be simulated on another computer.|[Using IntelliTrace](https://msdn.microsoft.com/library/dd264915.aspx).|  
+|**IntelliTrace**: Generates an .itrace file that is linked to any bug that you create. From this IntelliTrace file, the local session can be simulated on another computer.|[Using IntelliTrace](https://docs.microsoft.com/visualstudio/debugger/walkthrough-using-intellitrace).|  
 |**System information**: Records information about the machine.|No additional configuration.|  
 |**Test impact**: Enables the **Recommended Tests** feature in Testing Center, Track. This determines which tests are affected by the changes since a previous build, based on code coverage.|If you are testing an ASP.NET application:<br /><br /> 1. On the role where the IIS server will run, enable **Test Impact** and then choose **Configure**, **Advanced**, **ASP.NET**.<br />2.  In the web client role, enable **ASP.NET Client Proxy for IntelliTrace and Test Impact**<br /><br /> Restart your server application after enabling this option.|  
 |**Video Recorder** records the desktop in real time while you work.|To record audio, choose **Configure**.|

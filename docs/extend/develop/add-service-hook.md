@@ -1,18 +1,17 @@
 ---
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
-title: Create a consumer service for service hooks | Extensions for Visual Studio Team Services
-description: Tutorial for creating a custom consumer service for service hooks in Visual Studio Team Services.
+title: Create a consumer service for service hooks | Extensions for VSTS
+description: Tutorial for creating a custom consumer service for service hooks in VSTS.
 ms.assetid: 294ae93b-7522-40ef-95ab-d5002f8c3ca8
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/22/2016
-ms.topic: get-started-article
 ---
 
-# Service hooks in Team Services
+# Service hooks in VSTS
 
-Service hooks enable you to perform tasks on other services when events happen in your Visual Studio Team Services projects. For example, create a card in Trello 
+Service hooks enable you to perform tasks on other services when events happen in your VSTS projects. For example, create a card in Trello 
 when a work item is created or send a push notification to your team's mobile devices when a build fails. Service hooks can also be used in custom apps and services 
 as a more efficient way to drive activities when events happen in your projects.
 
@@ -158,15 +157,5 @@ For each contribution in your extension, the manifest defines
 Now that you've written your extension, the next steps are to Package, Publish, and Install your extension. You can also check out the 
 documentation for Testing and Debugging your extension. 
 
-<div name="row" style="padding-top:15px">
-    <div style="vertical-align:top;display:inline-block;float:left;width:50%">
-        <div class="index-button" align="right" style="padding-right:10px">
-        <a href="../publish/overview.md"><button style="background-color:#4CAF50;border:none;color:white;padding:15px;font-size:16px;margin:4px;cursor:pointer;border-radius:8px;">Package, Publish, and Install</button></a>
-        </div>
-    </div>
-    <div style="vertical-align:top;display:inline-block;float:left;width:50%">
-        <div class="index-button" align="left" style="padding-left:10px">
-        <a href="../test/debug-in-browser.md"><button style="background-color:#4CAF50;border:none;color:white;padding:15px;font-size:16px;margin:4px;cursor:pointer;border-radius:8px;">Testing and Debugging</button></a>
-        </div>
-    </div>
-</div>
+* [Package, publish, and install extensions](../publish/overview.md)
+* [Testing and debugging extensions](../test/debug-in-browser.md)

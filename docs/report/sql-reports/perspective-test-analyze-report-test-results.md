@@ -2,17 +2,16 @@
 title: Analyze and report on test results | TFS
 description: View the measures, dimensions, and attributes that pertain to reporting on tests results and test runs 
 ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
-ms.topic: reference
+ms.technology: vs-devops-reporting
 ms.assetid: 85cbf27b-d908-4fa1-8f72-d9a584922a45
 ms.manager: douge
 ms.author: kaelli
-ms.date: 03/09/2017
+ms.date: 10/17/17
 ---
 
 # Analyze and report on test results using the test perspective 
 
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 <a name="top"></a> By using the Test perspective in the SQL Server Analysis Services cube, you can view just the measures, dimensions, and attributes that pertain to reporting on tests results and test runs. For example, you can use these measures to determine the overall quality of each build, the tests that a particular build affected, and the number of test cases that were run. You can also answer questions about changes to the result outcomes.  
   
@@ -34,7 +33,8 @@ By using the Test perspective, you can create reports that answer the following 
 - How many tests are regressing?  
 - How consistent is the manual test activity over time?   
 
-**Note:**  If your data warehouse is using SQL Server Enterprise Edition, the list of cubes will include Team System and a set of perspectives. The perspectives provide a focused view of the data so that you do not have to scroll through all of the dimensions and measure groups in the whole Team System cube.
+> [!NOTE]
+> If your data warehouse is using SQL Server Enterprise Edition, the list of cubes will include Team System and a set of perspectives. The perspectives provide a focused view of the data so that you do not have to scroll through all of the dimensions and measure groups in the whole Team System cube.
   
  To use many Test measures and dimension attributes, the test team must publish the test results to the data store for Team Foundation Server. For more information, see [Required activities](#tracking) later in this topic.  
   
@@ -45,7 +45,7 @@ By using the Test perspective, you can create reports that answer the following 
   
  ![User Story Test Status Excel Report](_img/procguid_exruserstore.png "ProcGuid_ExRUserStore")  
   
- The [Agile](../../work/guidance/agile-process.md) and [CMMI](../../work/guidance/cmmi-process.md) process templates include the [User Story Test Status](../excel/user-story-test-status-excel-report-agile.md) and [Requirement Test Status](../excel/requirement-test-status-excel-report-cmmi.md) in Excel, respectively.  
+ The [Agile](../../work/work-items/guidance/agile-process.md) and [CMMI](../../work/work-items/guidance/cmmi-process.md) process templates include the [User Story Test Status](../excel/user-story-test-status-excel-report-agile.md) and [Requirement Test Status](../excel/requirement-test-status-excel-report-cmmi.md) in Excel, respectively.  
   
 ### Specify and filter pivot fields  
 
@@ -96,10 +96,10 @@ By using the Test perspective, you can create reports that answer the following 
 |---------------|---------------|-----------------|  
 |Build|Build Definition Name|The name that is assigned to the build definition for which a build was executed.<br /><br /> For an example of a report that uses this attribute, see [Build Quality](../excel/build-quality-excel-report.md).|  
 ||Build ID|The number that is assigned to the build. Each time that a particular build definition is run, the **Build ID** is incremented by 1.|  
-||Build Name|The name or expression that uniquely identifies a build. For more information, see [build definition options](../../build-release/define/options.md).|  
+||Build Name|The name or expression that uniquely identifies a build. For more information, see [build definition options](../../build-release/concepts/definitions/build/options.md).|  
 ||Build Start Time|The date and time when the build started.|  
-||Build Type|The reason why the build was run. Build types are associated with the trigger that was defined for the build. Team Foundation Server supports the following types of build: manual, continuous (triggered by every check-in), rolling (accumulate check-ins until the previous build finishes), gated check-in, and scheduled. For more information, see [Build definition triggers](../../build-release/define/triggers.md).|  
-||Drop Location|The drop folder that is defined for the build and that is specified as a Uniform Resource Locator (URL). A URL specifies the protocol with which web browsers will locate Internet resources. The URL also includes the name of the server on which the resource resides. You can also include the path to a resource.<br /><br /> For more information, see [Utility: Publish Build Artifacts](../../build-release/steps/utility/publish-build-artifacts.md).|  
+||Build Type|The reason why the build was run. Build types are associated with the trigger that was defined for the build. Team Foundation Server supports the following types of build: manual, continuous (triggered by every check-in), rolling (accumulate check-ins until the previous build finishes), gated check-in, and scheduled. For more information, see [Build definition triggers](../../build-release/concepts/definitions/build/triggers.md).|  
+||Drop Location|The drop folder that is defined for the build and that is specified as a Uniform Resource Locator (URL). A URL specifies the protocol with which web browsers will locate Internet resources. The URL also includes the name of the server on which the resource resides. You can also include the path to a resource.<br /><br /> For more information, see [Utility: Publish Build Artifacts](../../build-release/tasks/utility/publish-build-artifacts.md).|  
 |Build Flavor|Build Flavor|(Published test results only) A name that designates the category of builds that are assigned to a set of completed builds that were published as part of a test run. For example, a build flavor can be used to designate a beta release or a final release.|  
 |Build Platform|Build Platform|The name of the machine platform for which an end-to-end (not desktop) build was made (for example, **x86** or **Any CPU**). |  
   
@@ -114,7 +114,7 @@ The Test Case, Test Configuration, Test Plan, and Test Suite dimensions correspo
   
 |Dimension|Attribute|Description|  
 |---------------|---------------|-----------------|  
-|Test Case|Area Hierarchy and more|The Work Item and Test Case dimensions contain all attributes that relate to work items, such as State, Work Item Type, and Work Item ID. For information about the structure of the Test Case dimension, see [Test cases and work items](perspective-test-analyze-report-work.md).<br /><br /> For a description of each attribute, see [Work item field index](../../work/guidance/work-item-field.md).<br /><br /> For information about how to work with date, area, and iteration hierarchies, see [Shared dimensions](shared-dimensions-in-the-analysis-services-cube.md).<br /><br /> This measure group contains additional attributes when custom fields in the definition for a type of work item specify `Dimension` as the reportable attribute. For more information about how to use the optional `reportable` attribute and its values, see [Add or modify work item fields to support reporting](../../work/reference/add-or-modify-work-item-fields-to-support-reporting.md).|  
+|Test Case|Area Hierarchy and more|The Work Item and Test Case dimensions contain all attributes that relate to work items, such as State, Work Item Type, and Work Item ID. For information about the structure of the Test Case dimension, see [Test cases and work items](perspective-test-analyze-report-work.md).<br /><br /> For a description of each attribute, see [Work item field index](../../work/work-items/guidance/work-item-field.md).<br /><br /> For information about how to work with date, area, and iteration hierarchies, see [Shared dimensions](shared-dimensions-in-the-analysis-services-cube.md).<br /><br /> This measure group contains additional attributes when custom fields in the definition for a type of work item specify `Dimension` as the reportable attribute. For more information about how to use the optional `reportable` attribute and its values, see [Add or modify work item fields to support reporting](../../work/customize/reference/add-or-modify-work-item-fields-to-support-reporting.md).|  
 |Test Configuration|Configuration ID and Configuration Name|The number that the system assigns and the name of a test configuration.|  
 |Test Plan|Area Hierarchy, Area Path, Iteration Hierarchy, and Iteration Path|The product area and milestone that is assigned to the test plan.<br /><br /> For more information, see [Test cases and work items](perspective-test-analyze-report-work.md).|  
 ||End Date Hierarchy By Month or By Week<br /><br /> Start Date Hierarchy By Month or By Week|Optional values that a test plan owner can assign to the test plan. They represent the date on which the test plan should start and the date on which the test plan should finish.<br /><br /> For more information about how to work with date hierarchies, see [Shared dimensions](shared-dimensions-in-the-analysis-services-cube.md).|  
@@ -133,7 +133,7 @@ The Test Case, Test Configuration, Test Plan, and Test Suite dimensions correspo
 |Failure Type and Failure Type Id|Corresponds to one of the following reasons why a test failed: **None**, **Known Issue**, **New Issue**, or **Regression**.<br /><br /> Microsoft Test Manager automatically assigns a number or an ID to each reason. The test team can, but is not required to, assign a failure type to each failed test. **Note:**  You cannot add to or change the set of failure types. <br /><br /> For an example of a trend report that shows the outcome of test results based on failure type, see [Failure Analysis](../excel/failure-analysis-excel-report.md).|  
 |Outcome and Outcome Id|The outcome of the test (for example, **Passed**, **Failed**, or **Inconclusive**).<br /><br /> For an example of a trend report that shows the outcome of test plans and test configurations, see [Test Plan Progress](test-plan-progress-report.md).|  
 |Readiness State and Readiness State Id|The state of a particular test within a test run. Valid values are **Completed**, **InProgress**, **None**, **NotReady**, and **Ready**.|  
-|Resolution State|(Optional) The name of the **Resolution** with which a tester identified the cause of a failed test. By default, all MSF process templates have the following resolution states: **Needs investigation**, **Test issue**, **Product issue**, and **Configuration issue**. The test team can, but is not required to, assign a resolution state to each failed test. **Note:**  You can change these states or add states using the `tcm` command line tool. See [tcm: Customize and manage the test experience](../../work/reference/witadmin/tcm-customize-manage-test-experience.md).|  
+|Resolution State|(Optional) The name of the **Resolution** with which a tester identified the cause of a failed test. By default, all MSF process templates have the following resolution states: **Needs investigation**, **Test issue**, **Product issue**, and **Configuration issue**. The test team can, but is not required to, assign a resolution state to each failed test. **Note:**  You can change these states or add states using the `tcm` command line tool. See [tcm: Customize and manage the test experience](../../work/customize/reference/witadmin/tcm-customize-manage-test-experience.md).|  
 |Test Result Executed By|The name of the user or other account under which the test was run.<br /><br /> For an example of a report that uses this attribute, see [Test Team Productivity](../excel/test-team-productivity-excel-report.md).|  
 |Test Result Owner|The name of the user or other account that is assigned as the owner of the test result. The assignment corresponds to the value that is set by using the `tcm /resultowner` switch.|  
 |Test Result Priority|The priority of a particular test within a test run.|  
@@ -157,7 +157,7 @@ The following table describes the attributes that are defined for the Test Run d
 ###  Work item and work item linked dimensions  
 You can link test cases to other work items such as user stories, requirements, and bugs. By using the Work Item Linked dimension, you can create a report that provides test results that relate to the linked work items. The progress report for testing user stories, described earlier in this topic, provides an example of using the linked work item.  
   
- For a description of each attribute, see [Index of work item fields](../../work/guidance/work-item-field.md).  
+ For a description of each attribute, see [Index of work item fields](../../work/work-items/guidance/work-item-field.md).  
   
 ##  <a name="tracking"></a> Required activities  
 To create reports that contain useful data about test efforts and test results, team members should review the information in the following topics:  

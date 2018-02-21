@@ -1,18 +1,17 @@
 ---
-title: Organize your backlog | Team Services & TFS  
-description:  Organize your backlog by mapping backlog items to features, and features to epics in Visual Studio Team Services or the web portal for Team Foundation Server (TFS)  
-ms.technology: vs-devops-agile-wit
+title: Organize your backlog | VSTS & TFS  
+description:  Organize your backlog by mapping backlog items to features, and features to epics in VSTS or Team Foundation Server (TFS)  
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: DD78C7B9-A6B5-4596-9ADB-281578E615E2  
 ms.manager: douge
 ms.author: kaelli
-ms.topic: get-started-article  
 ms.date: 05/10/2017
 --- 
 
 # Work with multi-team ownership of backlog items  
 
-**Team Services | TFS 2017 | TFS 2015**  
+[!INCLUDE [temp](../_shared/dev15-version-header.md)]
 
 <a id="multi-team">  </a>
 
@@ -22,13 +21,13 @@ Your team's product backlog lists only those items whose area path matches those
 you'll see the parent epic of the features and backlog items, even if the epic or feature is owned by another team. 
 Items that are owned by other teams appear with hollow-filled bars.  
 
-<img src="_img/ALM_OB_CustServTeamBacklog.png" alt="Team backlog is filtered based on area path ownership" style="border: 1px solid #CCCCCC;" />  
+<img src="_img/ALM_OB_CustServTeamBacklog.png" alt="Team backlog is filtered based on area path ownership" style="border: 1px solid #C3C3C3;" />  
 
 Here's another example that shows the Epics backlog for the Fabrikam Fiber team. 
 Drilling down, you can see all the backlog items and features, even though they 
 belong to one of three different teams - Customer Service, Phone, and Web.  
  
-<img src="_img/ALM_OB_MutliTeamOwnershipEpics.png" alt="Drill-down of Epics showing features and backlog items owned by other teams" style="border: 1px solid #CCCCCC;" />  
+<img src="_img/ALM_OB_MutliTeamOwnershipEpics.png" alt="Drill-down of Epics showing features and backlog items owned by other teams" style="border: 1px solid #C3C3C3;" />  
 
 From these views, you can reparent items, both those that you own and those owned by other teams. 
 However, you can't reorder items that another team owns.  
@@ -48,5 +47,5 @@ To learn more about hierarchical team and backlog structures, see [Portfolio man
 
 - [Define features and epics](define-features-epics.md)
 - [Organize your backlog](organize-backlog.md)
-- [Backlogs, boards, and plans](../backlogs-boards-plans.md)  
+- [Backlogs, boards, and plans](backlogs-boards-plans.md)  
 - [Select backlog navigation levels for your team](../customize/select-backlog-navigation-levels.md)  

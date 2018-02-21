@@ -10,7 +10,7 @@ ms.date: 12/30/2016
 ---
 # Build dashboard  (Agile and CMMI)
 
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 You can use the Build dashboard to obtain an overview of the development activities that are affecting the quality of the builds. Nightly builds are important to software development projects. When builds are not completing successfully or are not passing build verification tests (BVT), the team must fix the problem immediately.  
   
@@ -46,7 +46,7 @@ You can use the Build dashboard to obtain an overview of the development activit
   
 -   **Create build definitions**. You can create several build definitions and then run each of them to produce code for a different platform. Also, you can run each build for a different configuration.  
   
-     For more information, see [Get started with CI/CD](../../build-release/get-started/ci-cd-part-1.md).
+     For more information, see [Get started with CI/CD](../../build-release/actions/ci-cd-part-1.md).
   
 -   **Define tests to run automatically as part of the build**. As part of the build definition, you can define tests to run as part of the build or to fail if the tests fail.  
   
@@ -58,7 +58,7 @@ You can use the Build dashboard to obtain an overview of the development activit
   
 -   **Run builds regularly**. You can run builds at regular intervals or after every check-in. You can create regular builds when you use the schedule trigger.  
   
-     For more information, see [Build triggers](../../build-release/define/triggers.md).
+     For more information, see [Build triggers](../../build-release/concepts/definitions/build/triggers.md).
   
     > [!NOTE]
     >  Although a team member can manually rate a build by using Build Explorer, this rating is not reflected in the Build Quality Indicators report. The build rating appears in the Build Summary report. For more information, see [Rate the quality of a completed build](https://msdn.microsoft.com/library/ms181734.aspx) and [Build Summary](../sql-reports/build-summary-report.md).  

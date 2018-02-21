@@ -5,19 +5,19 @@ ms.assetid: 8891c77c-490c-489c-99c7-860b4a92737c
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfvc
 ms.manager: douge
-ms.author: routlaw
+ms.author: sdanie
 ms.date: 12/05/2016
 ---
 
 # Delete or restore files and folders in Team Foundation Version Control (TFVC)
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 You can delete files and folders from TFVC and also restore them, from both in the workspace on your dev machine or on the server.
 
 **Requirements**
 
-See [Permission reference for Team Foundation Server](../setup-admin/permissions.md).
+See [Permissions and groups reference](../security/permissions.md).
 
 ## Delete an item
 

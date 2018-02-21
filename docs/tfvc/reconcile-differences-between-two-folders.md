@@ -5,19 +5,19 @@ ms.assetid: 8776e3dd-fc70-422c-a191-81b22a989403
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfvc
 ms.manager: douge
-ms.author: routlaw
+ms.author: sdanie
 ms.date: 08/10/2016
 ---
 
 # Reconcile differences between two folders
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 After you compare a server folder and a local folder, you can reconcile the differences between the folder contents and between files that have conflicting pending changes in your local folder. For more information, see [Compare folders](compare-folders.md).
 
 **Required Permissions**
 
-To perform these procedures, you must have the **Read** and **Check out** permissions set to **Allow**. For more information, see [Pernission reference for Team Foundation Server](../setup-admin/permissions.md).
+To perform these procedures, you must have the **Read** and **Check out** permissions set to **Allow**. For more information, see [Permissions and groups reference](../security/permissions.md).
 
 >**Note:**
 >  To reconcile two local folders or files, you do not need Team Foundation Server permissions.

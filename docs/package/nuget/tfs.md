@@ -1,19 +1,17 @@
 ---
 title: Use NuGet or dotnet with Team Foundation Server feeds
-description: Authenticating to feeds with NuGet in Visual Studio Team Services
+description: Authenticating to feeds with NuGet in VSTS
 ms.assetid: 1BB88A4E-C40E-48CD-B44A-25C90B935E5B
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-package
-ms.topic: get-started-article
 ms.manager: douge
 ms.author: amullans
-ms.date: 3/29/2017
+ms.date: 09/01/2017
 ---
 
 # Use NuGet or dotnet with Team Foundation Server feeds
 
-**Availability**<br>
-NuGet Package Management is available with [**Visual Studio Team Services**](nuget-exe.md) and **TFS 2017**.
+[!INCLUDE [](../_shared/availability-nuget.md)]
 
 Authentication from command-line clients like `nuget` and `dotnet` is a little different for Team Foundation Server users.
 
@@ -25,7 +23,7 @@ You can use [consume packages with Visual Studio](consume.md), [publish with nug
 
 > This workflow is **not recommended**, because it requires that you store **your encrypted domain password** on disk. Please consider the security implications before continuing.
 
-[!INCLUDE [](../_shared/nuget-consume-endpoint.md)]
+[!INCLUDE [](../_shared/nuget/nuget-consume-endpoint.md)]
 
 Then, run the following command (replacing {values} where applicable):
 

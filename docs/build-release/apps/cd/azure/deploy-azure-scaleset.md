@@ -1,17 +1,17 @@
 ---
 ms.assetid: C08EC3FB-6787-4956-86D3-B4085B69FCBA
-title: Implement continuous deployment of your app to an Azure Virtual Machine Scale Set
-description: Implement continuous deployment of your app to an Azure Virtual Machine Scale Set in Microsoft Release Management in Visual Team Services (VSTS) and Team Foundation Server (TFS)
+title: Implement deployment of your app to Azure Virtual Machine Scale Set
+description: Implement deployment of your app to an Azure Virtual Machine Scale Set
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-release
+ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
-ms.date: 10/20/2016
+ms.date: 01/19/2018
 ---
 
 # Implement continuous deployment of your app to an Azure Virtual Machine Scale Set
 
-[!INCLUDE [version-rm-dev14](../../../_shared/version-rm-dev14.md)]
+VSTS | TFS 2018 | TFS 2017
 
 The **Build Machine Image** task makes it easy for users who are new to immutable
 VHD-based deployments to use **Packer** without learning concepts such as provisioners
@@ -61,7 +61,7 @@ Before you begin, you need a CI build that creates your app. To set up CI, see:
 
 1. Configure the **Build Machine Image** task as follows:
 
-   ![Build Machine Image](../../../steps/deploy/_img/build-machine-image.png) [Deploy: Build Machine Image](https://blogs.msdn.microsoft.com/visualstudioalm/2017/05/15/deploying-applications-to-azure-vm-scale-sets/) - Build machine image using Packer.
+   ![Build Machine Image](../../../tasks/deploy/_img/build-machine-image.png) [Deploy: Build Machine Image](https://blogs.msdn.microsoft.com/visualstudioalm/2017/05/15/deploying-applications-to-azure-vm-scale-sets/) - Build machine image using Packer.
    
    - **Packer template**: You can use your own packer configuration JSON file or use the auto-generate feature where the task generates a packer template for you. This example uses the auto-generated packer configuration.
    
@@ -78,7 +78,7 @@ Before you begin, you need a CI build that creates your app. To set up CI, see:
    
    - **Output - Image URL**: Provide a name for the output variable that will hold the URL of the generated machine image. For example, `bakedImageUrl`<p />
    
-   ![Azure PowerShell](../../../steps/deploy/_img/azure-powershell-icon.png) [Deploy: Azure PowerShell](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzurePowerShell) - Run a PowerShell script to update the Virtual Machine Scale Set with the new VHD.
+   ![Azure PowerShell](../../../tasks/deploy/_img/azure-powershell-icon.png) [Deploy: Azure PowerShell](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzurePowerShell) - Run a PowerShell script to update the Virtual Machine Scale Set with the new VHD.
    
    - **Azure Connection Type**: Select `Azure Resource Manager`
    
@@ -91,7 +91,7 @@ Before you begin, you need a CI build that creates your app. To set up CI, see:
    
    Use the following script for the **Inline Script** parameter of the **Azure PowerShell** task: 
    
-   ```
+   ```powershell
    # get the VMSS model
 
    $vmss = Get-AzureRmVmss -ResourceGroupName resource_group_name -VMScaleSetName VM_scale_set_name

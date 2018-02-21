@@ -5,13 +5,13 @@ ms.assetid: 5da8c9b3-78cf-4d49-827f-3f1a95bf4b9b
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfvc
 ms.manager: douge
-ms.author: routlaw
+ms.author: sdanie
 ms.date: 08/10/2016
 ---
 
 # Understand lock types
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 You can use the lock command to temporarily prevent changes to a particular file or folder in the source control server. This can be helpful if you want to change an item in your workspace and then check it in without being forced to resolve any merge conflicts. Only one user at a time may hold a lock on a particular file or folder. If you want to prevent access to an item in a persistent way, you should use the [Permission Command](permission-command.md) instead.
 

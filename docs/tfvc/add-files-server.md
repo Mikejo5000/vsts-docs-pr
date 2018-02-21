@@ -5,13 +5,13 @@ ms.assetid: 9b457eb0-9cdf-438d-935d-ceac7ce2201a
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfvc
 ms.manager: douge
-ms.author: routlaw
+ms.author: sdanie
 ms.date: 08/10/2016
 ---
 
 # Add files to the server
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Adding a file to version control is often automatic when you use Solution Explorer and your project is under version control. However, in some cases, you have to take some extra steps to add the project to version control.
 
@@ -24,7 +24,7 @@ You can simultaneously create a new team project and add it to version control s
 
 ![New Project dialog box](_img/add-files-server/IC579084.png)
 
-1.  In Visual Studio, if you have not already done so, [connect to the team project](../setup-admin/team-services/connect-to-visual-studio-team-services.md).
+1.  In Visual Studio, if you have not already done so, [connect to the team project](../user-guide/connect-team-projects.md).
 
 2.  Choose **File**, **New**, **Project** (Keyboard: Ctrl + Shift + N).
 
@@ -53,7 +53,7 @@ To add an existing solution to version control, move all the solution files into
 >**Note:**  
 >Avoid using the **Add Solution to Source Control** dialog box to upload your solution into version control. Use the following procedure instead.
 
-1.  In Visual Studio, if you have not already done so, [connect to the team project](../setup-admin/team-services/connect-to-visual-studio-team-services.md).
+1.  In Visual Studio, if you have not already done so, [connect to the team project](../user-guide/connect-team-projects.md).
 
 2.  Choose **View**, **Other Windows**, **Source Control Explorer**.
 
@@ -96,7 +96,7 @@ When you use Solution Explorer to add a file to your code project, the system au
 
 If you are using a [local workspace](decide-between-using-local-server-workspace.md), then new files are automatically detected by the **Pending Changes** page.
 
-1.  In Visual Studio, if you have not already done so, [connect to the team project](../setup-admin/team-services/connect-to-visual-studio-team-services.md).
+1.  In Visual Studio, if you have not already done so, [connect to the team project](../user-guide/connect-team-projects.md).
 
 2.  Choose **View**, **Other Windows**, **Source Control Explorer**.
 

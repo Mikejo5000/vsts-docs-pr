@@ -3,11 +3,10 @@ title: Environments in Release Management
 description: Understand environments in Release Management for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.assetid: F3AB8DE0-CBB6-4B52-B483-435E0000E594
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-release
-ms.topic: get-started-article
+ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
-ms.date: 10/20/2016
+ms.date: 01/19/2018
 ---
 
 # Environments in Release Management
@@ -64,76 +63,13 @@ Here are some suggestions and examples for environments:
   the same shared deployment, you risk overriding the shared environment with a newer build while testing
   of the previous builds is still in progress.
 
+<a name="approvals"></a><a name="conditions"></a>
 The deployment process of a release to an environment is defined in terms of [phases](../../process/phases.md) and [tasks](../../process/tasks.md).
-The physical deployment of a release to an environment is controlled through three features: 
-[approvals](#approvals), [deployment conditions](triggers.md#env-triggers),
+The physical deployment of a release to an environment is controlled through  
+[approvals and gates](approvals/index.md), [deployment conditions and triggers](triggers.md#env-triggers),
 and [queuing policies](#queuing-policies).
 
 ![Environment](_img/definition-02.png)
-
-<h2 id="approvals">Approvals</h2>
-
-You can define approvers for each environment in a release definition.
-When a release is created from a release definition that contains
-approvers, the deployment stops at each point where approval is required
-until the specified approver grants approval or rejects the release (or
-re-assigns the approval to another user).
-
-You can define pre-deployment approvers, post-deployment approvers, or both for an environment.
-
-![Pre-deployment approvals settings](_img/environments-01.png)
-
-![Post-deployment approvals settings](_img/environments-01a.png)
-
-The **Automatic** option allows you to approve a deployment automatically.
-When you select the **Specific Users** option, you can select
-one or more approvers for an approval step. You can add multiple approvers for both pre-deployment
-and post-deployment settings. 
-
-When you add multiple approvers, you can control how they can approve the
-deployment. The options are:
-
-* **All users in any order**:
-  Choose this option if you want sign-off from a set of users,
-  all of them must approve, and it does
-  not matter in what order they approve.
-
-* **All users in sequential order**:
-  Choose this option if you want sign-off from a
-  set of users, all of them must approve, and you want
-  them to approve in the specified order. For example,
-  the second user can approve only after the first user
-  approves, and so on.
-
-* **Any one user**: Choose this option
-  if you want sign-off from only one of a set of users.
-  When any one of the users approves, the release
-  moves forward.
-
-You can also specify account (user) groups as approvers.
-When a group is specified as an approver, only one of
-the users in that group needs to approve in order for the release
-to move forward.
-
-* If you are using **Visual Studio Team Services**, you
-  can use local groups managed in Team Services or
-  Azure Active Directory (AAD) groups if they have been
-  added into Team Services.
-
-* If you are using **Team Foundation Server** (TFS),
-  you can use local groups managed in TFS or Active
-  Directory (AD) groups if they have been added into TFS.
-
-The creator of a deployment is considered to be a separate user
-role for deployments. Either the release creator or the deployment
-creator can be restricted from approving deployments. For more details,
-see [Release permissions](../../policies/permissions.md#release-permissions).
-  
-<h2 id="conditions">Deployment conditions</h2>
-
-You control when a release should be deployed to an environment
-using deployment conditions. For more information about deployment conditions,
-see [triggers](triggers.md#env-triggers).
 
 ## Queuing policies
 
@@ -207,19 +143,15 @@ defined.
 
 While the most important part of defining an environment is the
 automation tasks, you can also configure several properties and options
-for an environment in a release definition.
+for an environment in a release definition. You can:
 
-* **Environment name:** You can edit the name of the environment here if required.
+* Edit the name of the environment here if required.
 
-* **Environment owner:** You can designate a single user or a single
+* Designate a single user or a single
   group to be the environment owner. Environment owners are
   notified whenever a deployment of a release is completed to that
   environment. Environment owners are not automatically assigned
   any addition permissions.
-
-* **Send email notifications:** The environment owner and the creator of a release can
-  receive email notifications when deployments occur to this environment.
-  This can be for every deployment, or just for failed deployments.
 
 * Prevent the user who created a release or started the deployment from approving
   his or her own release. This is often useful to ensure

@@ -11,9 +11,9 @@ ms.date: 08/11/2016
 
 # Rebuild the data warehouse and cube
 
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
-Whenever you move, restore, rename, or fail over the data-tier server for Team Foundation Server (TFS), you must rebuild the data warehouse and cube to access high-level reports. Also, if you move, attach, detach, or delete a team project collection, you must rebuild the warehouse and cube.  
+Whenever you move, restore, rename, or fail over the data-tier server for Team Foundation Server (TFS), you should rebuild the data warehouse and cube to access high-level reports. Also, if you move, attach, detach, or delete a team project collection, you should rebuild the warehouse and cube.  
 
 The data warehouse aggregates all operational data, such as version control, work item tracking, build, and test. The warehouse corresponds to the relational database, Tfs_Warehouse, and the cube corresponds to Tfs_Analysis, the SQL Server Analysis Services database. 
 
@@ -41,7 +41,7 @@ You must be a member of these security groups or have the corresponding permissi
 
 * Your **View project-level information** permission on the team project must be set to **Allow** to run and view a report. Also, you must be a member of the **Browser** role in SQL Server Reporting Services 
 
-For more information, see [Add accounts to administer TFS](../../setup-admin/add-administrator-tfs.md).
+For more information, see [Add accounts to administer TFS](../../tfs-server/add-administrator-tfs.md).
 
 In addition to these permissions, you might need to address these requirements on a computer that is running Windows Server 2008 or Windows Vista:
 
@@ -81,11 +81,11 @@ By default, TCP/IP is disabled when you install SQL Server.
 	</tr>
 	<tr>
 	<td>Application tier</td>
-	<td>- Microsoft Team Foundation Server Application Pool</td>
+	<td>- TFS Application Pool</td>
 	</tr>
 	</table>
 
-	For more information, see [Stop and start services, application pools, and websites](../../setup-admin/tfs/admin/stop-start-stuff.md).
+	For more information, see [Stop and start services, application pools, and websites](../../tfs-server/admin/stop-start-stuff.md).
 
 2. Log on to the server that hosts Reporting Services, and stop the SQL Server Reporting Services (*TFSINSTANCE*) service.  
 
@@ -96,7 +96,7 @@ By default, TCP/IP is disabled when you install SQL Server.
 
 ##2. Rebuild the data warehouse and restart services
 
-1. [Open the Team Foundation administration console](../../setup-admin/tfs/admin/config-tfs-resources.md).
+1. [Open the Team Foundation administration console](../../tfs-server/admin/config-tfs-resources.md).
 
 2. Under **Application Tier>Reporting**, choose **Start Rebuild**.  
 	
@@ -119,7 +119,8 @@ By default, TCP/IP is disabled when you install SQL Server.
 
 	The rebuild process starts first for the warehouse and then for the cube. The time that is required to rebuild the databases is based on the amount of data that is stored in the data warehouse. When the databases have been rebuilt, the jobs for processing the databases are automatically started. 
 
-	<blockquote style="font-size: 13px"><b>Note: </b>While the warehouse and the cube are being rebuilt, the administration console for Team Foundation may stop responding. You might need to refresh the administration console after the warehouse and the cube have been rebuilt.</blockquote>  
+	> [!NOTE]  
+	> While the warehouse and the cube are being rebuilt, the administration console for Team Foundation may stop responding. You might need to refresh the administration console after the warehouse and the cube have been rebuilt. 
 
 5. (Optional) To check the status of the rebuild process, you can use the Warehouse Control Web service. For more information, see [Manually process the TFS data warehouse and analysis services cube](manually-process-data-warehouse-and-cube.md).  
 
@@ -133,7 +134,8 @@ By default, TCP/IP is disabled when you install SQL Server.
 
 	```http://localhost/Reports  ```
 
-	<blockquote style="font-size: 13px">**Tip:  **You may need to start Internet Explorer as an administrator by choosing **Start**, **All Programs**, open the context menu of Internet Explorer, and then choosing **Run as administrator**. </blockquote>   
+	> [!TIP]  
+	> You may need to start Internet Explorer as an administrator by choosing **Start**, **All Programs**, open the context menu of Internet Explorer, and then choosing **Run as administrator**.   
 
 	If you have deployed a named instance on the data-tier server, type this string instead:
 
@@ -156,11 +158,11 @@ By default, TCP/IP is disabled when you install SQL Server.
 ####Q: How can I resolve failure errors that occur when rebuilding or processing the data warehouse?
 **A:** The following actions can cause failure errors to occur.  
 
-* You manually modified a TFS database or edited a SQL table. You should not manually modify any of the TFS databases unless you're either instructed to do so by Microsoft Support or when you're following the procedures described for manually backing up the databases ([Manually back up Team Foundation Server](../../setup-admin/tfs/admin/backup/manually-backup-tfs.md)). Any other modifications can invalidate your service agreement, block upgrades and patches, and result in data loss or corruption.  
+* You manually modified a TFS database or edited a SQL table. You should not manually modify any of the TFS databases unless you're either instructed to do so by Microsoft Support or when you're following the procedures described for manually backing up the databases ([Manually back up Team Foundation Server](../../tfs-server/admin/backup/manually-backup-tfs.md)). Any other modifications can invalidate your service agreement, block upgrades and patches, and result in data loss or corruption.  
 
 * A detach/attach operation resulted in a misconfiguration of a team project collection. For example, a collection has become attached to two different data-tier servers, which is an unsupported scenario. Correcting the configuration and then rebuilding the data warehouse should resolve the errors.  
 
-* You've performed an unsupported backup or restore operation as described in [Back up and restore TFS](../../setup-admin/tfs/admin/backup/back-up-restore-tfs.md).   
+* You've performed an unsupported backup or restore operation as described in [Back up and restore TFS](../../tfs-server/admin/backup/back-up-restore-tfs.md).   
 
 ####Q: How do I modify the reporting configuration?
 **A:** To modify the reporting configuration for team project collections, use the **Edit** function that is provided on the Reporting page of the administration console for Team Foundation.

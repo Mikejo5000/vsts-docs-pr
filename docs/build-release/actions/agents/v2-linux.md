@@ -1,6 +1,6 @@
 ---
 title: Deploy an agent on Linux
-description: Deploy an agent on Linux (Red Hat or Ubuntu)
+description: Deploy an agent on Linux
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: 834FFB19-DCC5-40EB-A3AD-18B7EDCA976E
@@ -10,19 +10,29 @@ ms.date: 08/26/2016
 ---
 # Deploy an agent on Linux
 
-**Team Services | TFS 2017 | TFS 2015**
+**VSTS | TFS 2018 | TFS 2017 | TFS 2015**
 
 To build or deploy you'll need at least one agent. A Linux agent can build and deploy different kinds of apps, including Java and Android apps. We support Ubuntu, Red Hat, and CentOS.
+
+> Before you begin:
+> * If your build and release definitions are in [VSTS](https://www.visualstudio.com/products/visual-studio-team-services-vs) and a [hosted agent](../../concepts/agents/hosted.md) meets your needs, you can skip setting up a private Linux agent.
+> *  Otherwise, you've come to the right place to set up an agent on Linux. Continue to the next section.
 
 [!INCLUDE [include](_shared/concepts.md)]
 
 ## Check prerequisites
 
-Make sure your machine is prepared with our prerequisites for either
+Where are your builds and releases running?
 
-* [Ubuntu systems](https://aka.ms/vstsagentubuntusystem)
+* **VSTS**: The agent is based on CoreCLR 2.0. You can run this agent on several Linux distributions. Make sure your machine is prepared with [our prerequisites](https://github.com/Microsoft/vsts-agent/blob/master/docs/start/envlinux.md).
 
-* [Red Hat/CentOS systems](https://aka.ms/vstsagentredhatsystem)
+* **TFS 2018 RTM and older**: The agent is based on CoreCLR 1.0. Make sure your machine is prepared with our prerequisites for either of the supported distributions:
+
+ - [Ubuntu systems](https://aka.ms/vstsagentubuntusystem)
+
+ - [Red Hat/CentOS systems](https://aka.ms/vstsagentredhatsystem)
+
+### Subversion
 
 If you're building from a Subversion repo, you must install the Subversion client on the machine.
 
@@ -30,13 +40,14 @@ If you're building from a Subversion repo, you must install the Subversion clien
 
 [!INCLUDE [include](_shared/v2/prepare-permissions.md)]
 
+<a name="download-configure"></a>
 ## Download and configure the agent
 
-### Team Services and TFS 2017
+### VSTS and TFS 2017 and newer
 
 <ol>
 <li>Log on to the machine using the account for which you've prepared permissions as explained above.</li>
-<li>In your web browser, sign on to Team Services or TFS, and navigate to the **Agent pools** tab:
+<li>In your web browser, sign on to VSTS or TFS, and navigate to the **Agent pools** tab:
 [!INCLUDE [include](../../concepts/agents/_shared/agent-pools-tab.md)]
 </li>
 
@@ -62,9 +73,9 @@ If you're building from a Subversion repo, you must install the Subversion clien
 
 ### Server URL
 
-* Team Services: `https://{your-account}.visualstudio.com`
+* VSTS: `https://{your-account}.visualstudio.com`
 
-* TFS 2017: `https://{your_server}/tfs`
+* TFS 2017 and newer: `https://{your_server}/tfs`
 
 * TFS 2015: `http://{your_server}:8080/tfs`
 
@@ -94,7 +105,8 @@ If your agent is running on these operating systems you can run the agent as a s
 
 We provide the `./svc.sh` script for you to run and manage your agent as a systemd service.
 
-> **Note:** If you have a different distribution, or if you prefer other approaches, you can use whatever kind of service mechanism you prefer. See [Service files](#service-files).
+> [!NOTE]
+> If you have a different distribution, or if you prefer other approaches, you can use whatever kind of service mechanism you prefer. See [Service files](#service-files).
 
 ### Commands
 
@@ -186,7 +198,7 @@ A systemd service file is created:
 
 For example, you have configured an agent (see above) with the name `our-linux-agent`. The service file will be either:
 
-* Team Services: the name of your account. For example if you connect to `https://fabrikam.visualstudio.com` , then the service name would be `/etc/systemd/system/vsts.agent.fabrikam.our-linux-agent.service`
+* VSTS: the name of your account. For example if you connect to `https://fabrikam.visualstudio.com` , then the service name would be `/etc/systemd/system/vsts.agent.fabrikam.our-linux-agent.service`
 
 * TFS: the name of your on-premises TFS AT server. For example if you connect to `http://our-server:8080/tfs`, then the service name would be `/etc/systemd/system/vsts.agent.our-server.our-linux-agent.service`
 
@@ -222,7 +234,13 @@ Source code: [systemd.svc.sh.template on GitHub](https://github.com/Microsoft/vs
 
 [!INCLUDE [include](_shared/v2/qa-firewall.md)]
 
-[!INCLUDE [include](_shared/v2/qa-proxy-unix.md)]
+### How do I run the agent with self-signed certificate?
+
+[Run the agent with self-signed certificate](certificate.md)
+
+### How do I run the agent behind a web proxy?
+
+[Run the agent behind a web proxy](proxy.md)
 
 [!INCLUDE [include](_shared/v2/web-proxy-bypass.md)]
 

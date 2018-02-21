@@ -1,20 +1,19 @@
 ---
-title: Continuous testing Java applications - Visual Studio Team Services
-description: Continuous testing with Java in a continuous integration pipeline with Visual Studio Team Services (VSTS)
+title: Continuous testing Java applications - VSTS
+description: Continuous testing with Java in a continuous integration pipeline with Visual Studio Team Services (VSTS) and TFS 
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-continuous
+ms.technology: vs-devops-build
 ms.assetid: 3A1A725F-4E7B-4652-BFD1-FC7C9A248B7B
-ms.topic: get-started-article
 ms.manager: douge
 ms.author: ahomer
-ms.date: 08/12/2016
+ms.date: 01/18/2018
 ---
 
-# Testing Java applications with Visual Studio Team Services
+# Testing Java applications with VSTS
 
-[!INCLUDE [version-header-vs-tfs](_shared/version-header-vs-tfs.md)]
+[!INCLUDE [version-header-vs-vsts-tfs](_shared/version-header-vs-vsts-tfs.md)]
 
-Visual Studio Team Services includes build tasks to
+Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) include build tasks to
 make it easy to integrate your build and testing 
 efforts into your release pipelines with rich 
 reporting highlighting build-on-build changes, 
@@ -22,27 +21,19 @@ easy-to-create actionable bugs for regressions and
 the ability to create and display code coverage 
 with a simple checkbox. 
 
-In this topic:
-
-* [Build integration](#build-integration)
-* [Build-on-build summary results](#summary-results)
-* [Test details view](#test-details)
-* [Easily create actionable bugs](#actionable)
-* [Code coverage results](#code-coverage)
-
 [See this topic on Channel9 video](https://channel9.msdn.com/Series/Test-Tools-in-Visual-Studio/Testing-Java-Applications-with-Visual-Studio-Team-Services)
 
 <a name="build-integration"></a>
 ## Build integration
 
-Visual Studio Team Services build tasks make it 
+VSTS build tasks make it 
 easy to build to build Java applications. These 
 same tasks also make it easy to test your Java 
 applications. The example below uses Maven to build
-a Java application, and then uses both Maven and 
-Perfecto Mobile to test the application.
+a Java application, runs JUnit tests, and uses Maven and 
+to test the application.
 
-![Visual Studio Team Services build and test integration](_img/continuous-test-java/continuous-test-java-01.png)
+![VSTS build and test integration](_img/continuous-test-java/continuous-test-java-01.png)
 
 The output of these tests and other testing 
 frameworks is made available in the standard 
@@ -55,7 +46,7 @@ importing the test results from JUnit.
 <a name="summary-results"></a>
 ## Build-on-build summary results
 
-Visual Studio Team Services automatically adds 
+VSTS automatically adds 
 build-on-build changes in the summary view to give 
 a clear indication if your quality is improving.
 In the example below you can see 16 new tests were 
@@ -105,7 +96,7 @@ coverage in different areas.
 
 ## See also
 
-[Visual Studio Team Services Java website](http://java.visualstudio.com/)
+[VSTS Java website](http://java.visualstudio.com/)
 
 [!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
  

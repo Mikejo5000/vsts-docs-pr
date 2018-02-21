@@ -1,12 +1,13 @@
 ---
-title: Follow work | Team Services  
+title: Follow work or pull requests in VSTS or TFS
 description: Quickly track the progress made to a work item by following it when using Visual Studio Team Services (VSTS)  
 ms.technology: collaborate
 ms.prod: vs-devops-alm
 ms.assetid: 77CAEE8E-BF1A-47DA-9818-A0C52BAC813C
 ms.manager: douge
 ms.author: kaelli
-ms.date: 05/22/2017  
+ms.topic: get-started-article
+ms.date: 11/01/2017  
 ---
 
 # Follow a work item or pull request  
@@ -16,36 +17,46 @@ ms.date: 05/22/2017
 <a id="follow"></a>
 
 >[!NOTE]  
-><b>Feature availability: </b>The Follow a work item feature is available from Team Services and TFS 2017. The Follow a pull request feature is available from Team Services and TFS 2017 Update 1. For on-premises TFS, [you must configure an SMTP sever](../setup-admin/tfs/admin/setup-customize-alerts.md) for the follow features to work.   
+><b>Feature availability: </b>The Follow a work item feature is available from VSTS and TFS 2017. The Follow a pull request feature is available from VSTS and TFS 2017 Update 1. For on-premises TFS, [you must configure an SMTP sever](../tfs-server/admin/setup-customize-alerts.md) for the follow features to work.   
 
-##Follow a work item or pull request  
+To get notified of changes made to a work item or a pull request, you can elect to follow them. 
+
+This topic shows you how to:
+
+> [!div class="checklist"] 
+> * Follow a work item
+> * Follow a pull request 
+> * Manage work items that you're following
+
+
+## Follow a work item
 
 When you want to track the progress of a single work item, click the ![Follow icon](../work/_img/icons/follow-icon.png) icon. This signals the system to notify you when changes are made to the work item.  
 
-<img src="_img/follow-work-item.png" alt="Team Services Work item form, Follow icon control" style="border: 1px solid #CCCCCC;" />  
+<img src="_img/follow-work-item.png" alt="VSTS Work item form, Follow icon control" style="border: 1px solid #C3C3C3;" />   
 
 >[!IMPORTANT]
->For on-premises TFS, [you must configure an SMTP server](../setup-admin/tfs/admin/setup-customize-alerts.md) in order for team members to receive notifications.  
+>For on-premises TFS, [you must configure an SMTP server](../tfs-server/admin/setup-customize-alerts.md) in order for team members to receive notifications.  
 
 You'll only receive notifications when other members of your team modifies the work item, such as adding to the discussion, changing a field value, or adding an attachment. 
 
-Notifications are sent to your preferred email address, which you can change from your [account preferences](../setup-admin/account-preferences.md).  
+Notifications are sent to your preferred email address, which [you can change from your account preferences](../notifications/change-email-address.md)
 
-To stop following changes, click the ![Following icon](../work/_img/icons/following-icon.png)  icon.
+To stop following changes, click the ![Following icon](../work/_img/icons/following-icon.png) icon.
  
 <a id="follow-pr"></a>
-##Follow a pull request 
+## Follow a pull request 
 
 To track the progress of a single pull request, click the ![Follow icon](../work/_img/icons/follow-icon.png) option from the context menu. This signals the system to notify you when changes are made to the PR.  
 
-<img src="_img/follow-pull-request.png" alt="Pull Request, context menu, Follow icon option" style="border: 1px solid #CCCCCC;" />  
+<img src="_img/follow-pull-request.png" alt="Pull Request, context menu, Follow icon option" style="border: 1px solid #C3C3C3;" />   
 
 >[!IMPORTANT]
->For on-premises TFS, [you must configure an SMTP server](../setup-admin/tfs/admin/setup-customize-alerts.md) in order for team members to receive notifications.  
+>For on-premises TFS, [you must configure an SMTP server](../tfs-server/admin/setup-customize-alerts.md) in order for team members to receive notifications.  
 
 You'll only receive notifications when other members of your team modifies the PR, such as adding to the discussion or adding an attachment. 
 
-Notifications are sent to your preferred email address, which you can change from your [account preferences](../setup-admin/account-preferences.md).  
+Notifications are sent to your preferred email address, which [you can change from your account preferences](../notifications/change-email-address.md).  
 
 To stop following changes, open the PR context menu and click the ![Following icon](../work/_img/icons/following-icon.png) icon. 
 
@@ -54,7 +65,7 @@ To stop following changes, open the PR context menu and click the ![Following ic
 
 You can review and manage all the work items you've selected to follow from the Followed work items page. You access this page from the **Work>Queries** page. 
 
-<img src="_img/follows-followed-work-items.png" alt="Followed work items, Follow icon control" style="border: 1px solid #CCCCCC;" />  
+<img src="_img/follows-followed-work-items.png" alt="Followed work items, Follow icon control" style="border: 1px solid #C3C3C3;" />   
 
 From this view, you can view all items you're following across all team projects within the account. Also, you can perform similar actions supported with a query results view, such as:
 - Refresh the view
@@ -66,13 +77,13 @@ From this view, you can view all items you're following across all team projects
 
 However, this view isn't based on a query so you can't modify the parameters of the view. 
 
-You can also view and manage work that you're following from the Account home pages. To learn more, see [Work effectively from your account hub](../connect/account-home-pages.md#follow-work). 
+You can also view and manage work that you're following from the Account home pages. To learn more, see [Work effectively from your account hub](../user-guide/account-home-pages.md#follow-work). 
 
-<img src="../connect/_img/account-home-work-followed.png" alt="Account home, Work, Followed page" style="border: 1px solid #CCCCCC;" />   
+<img src="../user-guide/_img/account-home-work-followed.png" alt="Account home, Work, Followed page" style="border: 1px solid #C3C3C3;" />    
 
 ## Related notes  
 
-- [Manage personal notifications](manage-personal-notifications.md)  
+- [Manage personal notifications](../notifications/manage-personal-notifications.md)  
 - [Set team notifications](manage-team-notifications.md)  
 - [Set personal or team alerts](../work/track/alerts-and-notifications.md)  
 - [View and update work items via the mobile work item form](mobile-work.md)  

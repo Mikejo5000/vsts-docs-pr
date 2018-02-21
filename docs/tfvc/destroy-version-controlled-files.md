@@ -5,13 +5,13 @@ ms.assetid: 9be4d796-b448-4084-a102-a0e95e7b0053
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfvc
 ms.manager: douge
-ms.author: routlaw
+ms.author: sdanie
 ms.date: 08/10/2016
 ---
 
 # Destroy Version Controlled Files
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Over time, a version control server acquires a growing number of files and folders. This can cause problems as you try to manage disk space requirements. You might be forced to remove all the team projects and their hierarchies from version control. For example, a team project might be created for learning purposes only, or perhaps some files are contaminated with a virus. Therefore, as a Team Foundation administrator, occasionally you may have to destroy files and folders that are under version control.
 
@@ -22,7 +22,7 @@ The following procedure shows you how to destroy files and folders by using the 
 
 **Required Permissions**
 
-To use the **destroy** command, you must be a member of the **Team Foundation Administrators** security group. For more information, see [Team Foundation Server Permissions](../setup-admin/permissions.md).
+To use the **destroy** command, you must be a member of the **Team Foundation Administrators** security group. For more information, see [Permissions and groups reference](../security/permissions.md).
 ## Prerequisites for Running tf destroy
 Before you run **tf destroy** without the **/keephistory** option, we recommend that you first delete the files you want to destroy. For more information, see [Delete Files and Folders from Version Control](delete-restore-files-folders.md). After you delete a file, its file name now includes a deletion ID. For example, if a file name is aFile.cs, after deletion the file name is aFile.cs;x123, where x123 is the deletion ID.
 
@@ -60,7 +60,7 @@ After you delete the files, you can synchronize the Team Foundation warehouse. O
 
             >tf destroy $/MyTeamProject /keephistory /stopat:D10/23/2005
 
-    -   Use the **/startcleanup** option to immediately clean up the content that is no longer referenced by Team Foundation Server. Without this option, the destroyed files are removed when the database is maintained by a SQL process that generally runs one time a day.
+    -   Use the **/startcleanup** option to immediately clean up the TFVC metadata of the files that are no longer referenced by Team Foundation Server. Without this option, those metadata are removed when the database is maintained by a SQL process that runs every 5 days. Seven days after the TFVC metadata deletion, the content of the destroyed files will be deleted by another SQL process.
 
         To immediately destroy all the files in aFolder, type:
 

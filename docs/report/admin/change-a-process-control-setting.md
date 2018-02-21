@@ -6,12 +6,12 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
 ms.manager: douge
 ms.author: kaelli
-ms.date: 02/22/2017
+ms.date: 11/15/2017
 ---
 
-#Change a process control setting for the data warehouse or Analysis Services cube
+# Change a process control setting for the data warehouse or Analysis Services cube
 
-<b>TFS 2017 | TFS 2015 | TFS 2013</b>  
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)] 
 
 You can change the refresh frequency and time-out values that control the processing of the data warehouse. You change a process control setting only if you want to tune it for your specific deployment.
 
@@ -25,9 +25,9 @@ You can determine the current settings and change a setting by using the Warehou
 
   * SQL Server Reporting Services must be configured for the TFS deployment. If it isn't, see [Add a report server](add-a-report-server.md).  
 
-  * You must be a member of the **Team Foundation Administrators** security group, or you must have the server-level **Administer warehouse** permission set to **Allow**. See [Set administrator permissions for Team Foundation Server](../../setup-admin/add-administrator-tfs.md).  
+  * You must be a member of the **Team Foundation Administrators** security group, or you must have the server-level **Administer warehouse** permission set to **Allow**. See [Set administrator permissions for Team Foundation Server](../../tfs-server/add-administrator-tfs.md).  
 
-  * The Microsoft Team Foundation Server Application Pool must be running for the Warehouse Control Web service to be available.
+  * The TFS Application Pool must be running for the Warehouse Control Web service to be available.
 
 ##Access the Warehouse Control Web Service
 1. Log on to the application-tier server.
@@ -64,7 +64,8 @@ You can change the refresh frequency of the data warehouse or other process cont
 
 3. In the **newValue** box, type the new number in seconds, and then click **Invoke**.  
 
-	<blockquote style="font-size: 13px"><b>Important: </b>If you reduce the interval to less than the default of two hours (7200 seconds), processing of the data warehouse will consume server resources more frequently. Depending on the volume of data that your deployment has to process, you may want to reduce the interval to one hour (3600 seconds) or increase it to more than two hours. </blockquote>  
+	> [!IMPORTANT]  
+	> If you reduce the interval to less than the default of two hours (7200 seconds), processing of the data warehouse will consume server resources more frequently. Depending on the volume of data that your deployment has to process, you may want to reduce the interval to one hour (3600 seconds) or increase it to more than two hours.  
  
   A confirmation Web page appears and indicates that the **IncrementalProcessIntervalSeconds** setting has been changed.
 

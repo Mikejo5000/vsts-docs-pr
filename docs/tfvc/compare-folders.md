@@ -5,18 +5,18 @@ ms.assetid: 9c894c51-c34c-4c03-a840-5e485dbbc55d
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfvc
 ms.manager: douge
-ms.author: routlaw
+ms.author: sdanie
 ms.date: 08/10/2016
 ---
 
 # Compare folders
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 You can compare the differences between two server folders, two local folders, or a server folder and a local folder.
 
 **Required Permissions**  
-To perform these procedures, you must have the **Read** permission set to **Allow**. For more information, see [Pernission reference for Team Foundation Server](../setup-admin/permissions.md).
+To perform these procedures, you must have the **Read** permission set to **Allow**. For more information, see [Permissions and groups reference](../security/permissions.md).
 
 >**Note:**  
 >To compare two local folders, you do not need Team Foundation Server permissions.

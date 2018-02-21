@@ -1,5 +1,5 @@
 ---
-title: Excel reports (CMMI) | TFS
+title: Excel reports provided with the CMMI process template for TFS
 description: Summary of Excel reports made available with the CMMI process template for Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-reporting
@@ -11,11 +11,11 @@ ms.date: 04/05/2017
 
 # Excel reports (CMMI)
 
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
-You can use the Excel reports to display information from the data warehouse for your team project. This topic describes reports that are provided with the [CMMI process template](../../work/guidance/cmmi-process.md).  
+You can use the Excel reports to display information from the data warehouse for your team project. This topic describes reports that are provided with the [CMMI process template](../../work/work-items/guidance/cmmi-process.md).  
   
-If you want to export work items to Excel, see [Bulk add or modify work items with Excel](../../work/office/bulk-add-modify-work-items-excel.md). Or, if you want to create an Excel report from a query, see [Create Excel reports from a work item query](create-status-and-trend-excel-reports.md).  
+If you want to export work items to Excel, see [Bulk add or modify work items with Excel](../../work/backlogs/office/bulk-add-modify-work-items-excel.md). Or, if you want to create an Excel report from a query, see [Create Excel reports from a work item query](create-status-and-trend-excel-reports.md).  
 
 > [!NOTE]
 >  These reports require your team project portal to be configured with SharePoint Server Enterprise Edition. Also, you can view these reports in your team project's [portal dashboards](../sharepoint-dashboards/project-portal-dashboards.md).  
@@ -56,7 +56,7 @@ If you want to export work items to Excel, see [Bulk add or modify work items wi
   
     -   You must add users to the **TfsWarehouseDataReaders** security role in SQL Server Analysis Services.  
   
- The following table summarizes the required permissions based on activity. For information about how to grant these permissions to team members, see [Add users to team projects](../../setup-admin/add-users.md). For information about permissions that are required to work with Excel reports in general, see [Grant permissions to view and manage reports](../admin/grant-permissions-to-reports.md).  
+ The following table summarizes the required permissions based on activity. For information about how to grant these permissions to team members, see [Add users to team projects](../../security/add-users-team-project.md). For information about permissions that are required to work with Excel reports in general, see [Grant permissions to view and manage reports](../admin/grant-permissions-to-reports.md).  
   
 |Activity|Team Foundation Server|Team project portal|SQL Server Analysis Services cube (Tfs_Analysis)|Notes|  
 |--------------|------------------------------------------------------------------|-------------------------|----------------------------------------------------------------------------------------------------------|-----------|  

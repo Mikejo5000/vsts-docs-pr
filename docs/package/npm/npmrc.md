@@ -1,24 +1,23 @@
 ---
 title: Set up your client's npmrc
-description: Authenticating to feeds with npm in Visual Studio Team Services
+description: Authenticating to feeds with npm in VSTS
 ms.assetid: A5364E3A-3918-4318-AAE0-430EA91AD5F1
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-package
 ms.manager: douge
 ms.author: amullans
-ms.date: 10/10/2016
+ms.date: 09/01/2017
 ---
 
 # Set up your client's npmrc
 
-**Availability**<br>
-npm Package Management is available with **Visual Studio Team Services** and **TFS 2017 Update 1 and newer**.
+[!INCLUDE [](../_shared/availability-npm.md)]
 
 All Package Management feeds require authentication, so you'll need to store credentials for the feed before you can install or publish packages. npm uses [`.npmrc` configuration files](https://docs.npmjs.com/files/npmrc) to store feed URLs and credentials.
 
 ## Where are my `.npmrc` files?
 
-Team Services recommends using two `.npmrc` files: 
+VSTS recommends using two `.npmrc` files: 
 
 1. One at the root of your project that contains *configuration* that's shared with the whole team.
 2. One in your user profile folder (`$home`, `~`, etc. depending on your shell) that contains *credentials* and never leaves your machine.
@@ -26,8 +25,8 @@ Team Services recommends using two `.npmrc` files:
 This enables you to share your configuration with the whole team while keeping your credentials secure. 
 
 ## Getting credentials
-- For **Windows** users on **Team Services**, the [vsts-npm-auth package](https://www.npmjs.com/package/vsts-npm-auth) can help you acquire and manage credentials. When you execute `vsts-npm-auth`, it reads your configured package source from the provided `.npmrc`, and writes credentials to your user profile `.npmrc`.
-- For **Mac and Linux** users on **Team Services**, and all **Team Foundation Server** users, the *Connect to feed* dialog will generate an appropriately-formatted token that you can place into your `.npmrc` file.
+- For **Windows** users on **VSTS**, the [vsts-npm-auth package](https://www.npmjs.com/package/vsts-npm-auth) can help you acquire and manage credentials. When you execute `vsts-npm-auth`, it reads your configured package source from the provided `.npmrc`, and writes credentials to your user profile `.npmrc`.
+- For **macOS, Linux, and Windows Bash Shell** users on **VSTS**, and all **Team Foundation Server** users, the *Connect to feed* dialog will generate an appropriately-formatted token that you can place into your `.npmrc` file.
 
 [!INCLUDE [](../_shared/npm/npmrc.md)]
 

@@ -1,7 +1,7 @@
 ---
 ms.prod: vs-devops-alm
 title: Agents, pools, and queues
-description: Agent pools and queues for build and release management.
+description: Agent pools and queues for build and release management in VSTS and Team Foundation Server
 ms.technology: vs-devops-build
 ms.assetid: BD5478A8-48CF-4859-A0CB-6E1948CE2C89
 ms.manager: douge
@@ -10,23 +10,23 @@ ms.date: 08/26/2016
 ---
 # Agent pools and queues
 
-**Team Services | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/dd793166%28v=vs.120%29.aspx)**
+**VSTS | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/dd793166%28v=vs.120%29.aspx)**
 
-Instead of managing each [agent](agents.md) individually, you organize agents into **agent pools**. An agent pool defines the sharing boundary for all agents in that pool. In TFS, pools are scoped across all of your Team Foundation Server (TFS); so you can share an agent pool across team project collections and team projects. In Team Services, agent pools are scoped to the Team Services account; so you can share an agent pool across team projects.
+Instead of managing each [agent](agents.md) individually, you organize agents into **agent pools**. An agent pool defines the sharing boundary for all agents in that pool. In TFS, pools are scoped across all of your Team Foundation Server (TFS); so you can share an agent pool across team project collections and team projects. In VSTS, agent pools are scoped to the VSTS account; so you can share an agent pool across team projects.
 
-An **agent queue** provides access to an agent pool. When you create a build or release definition, you specify which queue it uses. Queues are scoped to your team project in TFS 2017 and in Team Services, so you can only use them across build and release definitions within a team project.
+An **agent queue** provides access to an agent pool. When you create a build or release definition, you specify which queue it uses. Queues are scoped to your team project in TFS 2017 and newer and in VSTS, so you can only use them across build and release definitions within a team project.
 
 To share an agent pool with multiple team projects, you create an agent queue pointing to that pool in each of those team projects. While multiple queues across team projects can use the same agent pool, multiple queues within a team project cannot use the same pool. Also, each queue can use only one agent pool.
 
-![TFS 2017 build system architecture](_img/build-system-architecture.png)
+#### VSTS and TFS 2017 and newer
 
-<div class="NOTE">
-<h5>NOTE</h5>
-<p>In **TFS 2015** agent queues are scoped to team project collections. <a data-toggle="collapse" href="#expando-tfs-2015-architecture">Show me &#x25BC;</a></p>
-<div class="collapse" id="expando-tfs-2015-architecture">
+![TFS 2017 and newer build system architecture](_img/build-system-architecture.png)
+
+#### TFS 2015
+
+In TFS 2015 agent queues are scoped to team project collections.
+
 ![TFS 2015 build system architecture](_img/build-system-architecture-tfs-2015.png)
-</div>
-</div>
 
 You create and manage pools from the Agent pools tab.
 
@@ -42,16 +42,19 @@ We provide the following agent pools by default:
 
 * **Default** pool: Use it to register [private agents](agents.md) that you've set up.
 
-* **Hosted** pool (Team Services only): Contains at least one free hosted agent, and also any [hosted agents you've purchased](../licensing/concurrent-pipelines-tfs.md). The **Hosted** pool is the built-in pool that is a collection of hosted agents.
+* **Hosted** pool (VSTS only): Contains at least one free hosted agent, and also any [hosted agents you've purchased](../licensing/concurrent-pipelines-tfs.md). The **Hosted** pool is the built-in pool that is a collection of hosted agents. Machines in this pool have Visual Studio 2010, Visual Studio 2012, Visual Studio 2013, and Visual Studio 2015 installed on Windows Server 2012 R2 operating system. For a complete list of software installed on hosted agents, see [Hosted agents](hosted.md).
 
- We provide the Hosted pool to each team project through a **Hosted** queue. By default, all contributors in a team project are members of the **User** role on a each hosted queue. This allows every contributor in a team project to author and run build and release definitions using the hosted queue.
+* **Hosted VS2017** pool (VSTS only): The **Hosted VS2017** pool is another built-in pool in VSTS. Machines in this pool have Visual Studio 2017 installed on Windows Server 2016 operating system. For a complete list of software installed on these machines, see [Hosted agents](hosted.md).
 
- [Learn more about hosted agents](agents.md).
-
-* **Hosted Linux** pool (Team Services only): Enables you to build and release on
+* **Hosted Linux** pool (VSTS only): Enables you to build and release on
   Linux machines without having to configure a private agent. The agents
   in this pool run on an Ubuntu Linux host inside the
   [**vsts-agent-docker** container](https://github.com/Microsoft/vsts-agent-docker).
+
+* **Hosted macOS Preview** pool (VSTS only): Enables you to build and release on
+  Mac machines without having to configure a private agent. This option affects where your data is stored. [Learn more](https://www.microsoft.com/en-us/trustcenter/privacy/vsts-location)
+
+Each of these hosted pools is exposed to each team project through a corresponding hosted queue. By default, all contributors in a team project are members of the **User** role on each hosted queue. This allows every contributor in a team project to author and run build and release definitions using hosted queues.
 
 If you've got a lot of agents intended for different teams or purposes, you might want to create additional pools as explained below.
 
@@ -69,9 +72,9 @@ Here are some typical situations when you might want to create agent pools and q
 
 Understanding how security works for agent pools and queues helps you control sharing and use of agents.
 
-### Team Services and TFS 2017
+### VSTS and TFS 2017 and newer
 
-In Team Services and TFS 2017, **roles** are defined on each agent pool, and **membership** in these roles governs what operations you can perform on an agent pool.
+In VSTS and TFS 2017 and newer, **roles** are defined on each agent pool, and **membership** in these roles governs what operations you can perform on an agent pool.
 
 | Role on an agent pool | Purpose |
 |------|---------|
@@ -109,11 +112,11 @@ On the Create Queue dialog box, you can't use an existing pool if it is already 
 
 ### I can't select the Hosted queue and I can't queue my build. How do I fix this?
 
-Ask the owner of your Team Services account to grant you permission to use the queue. See [Security of agent pools and queues](#security).
+Ask the owner of your VSTS account to grant you permission to use the queue. See [Security of agent pools and queues](#security).
 
 ### I need more hosted build resources. What can I do?
 
-A: The hosted pool provides all Visual Studio Team Services accounts with a single hosted build agent and a limited number of free build minutes each month. If you need more hosted build resources, or need to run more than one build concurrently, then you can either:
+A: The hosted pool provides all VSTS accounts with a single hosted build agent and a limited number of free build minutes each month. If you need more hosted build resources, or need to run more than one build concurrently, then you can either:
 
 * [Deploy your own on-premises build agents](agents.md).
-* [Buy additional hosted pipelines](../../../setup-admin/team-services/buy-more-build-vs.md#buy-build-release).
+* [Buy additional hosted pipelines](../../../billing/buy-more-build-vs.md#buy-build-release).

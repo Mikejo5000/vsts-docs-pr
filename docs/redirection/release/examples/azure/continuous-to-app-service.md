@@ -1,3 +1,0 @@
----
-redirect_url: /vsts/build-release/get-started/aspnet-4-ci-cd-azure-automatic
----

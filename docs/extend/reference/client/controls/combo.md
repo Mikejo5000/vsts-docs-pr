@@ -1,5 +1,5 @@
 ---
-title: Combo Control | Extensions for Visual Studio Team Services
+title: Combo Control | Extensions for VSTS
 description: Use the combo control to have an editable control with the drop down support like list, tree, date-time and multi-value.
 ms.assetid: 830B76D7-FE6F-CE63-0689-7DA663207A51
 ms.prod: vs-devops-alm
@@ -31,11 +31,3 @@ See [Use combo](../../../develop/ui-controls/comboo.md) for basic usage and adva
       var combo = Controls.create(Combos.Combo, container, options);
   });
 ```
-
-## Options
-
-[!INCLUDE [x](../api/VSS/Controls/_shared/Combos/IComboOptions.md)]
-
-## Methods
-
-[!INCLUDE [x](../api/VSS/Controls/_shared/Combos/ComboO.md)]

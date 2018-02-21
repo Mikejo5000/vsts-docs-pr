@@ -3,67 +3,85 @@ title: CI/CD index to content | VSTS & TFS
 description: Learn how to configure CI/CD for the app and platform of your choice. Tutorials, references, and other documentation.  
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
-ms.topic: get-started-article  
 ms.assetid: 00f4ed452-fbb8-45f9-8f0a-343702aac5b8  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 07/20/2017
+ms.reviewer: dastahel
+ms.date: 02/19/2018
+layout: LandingPage
 ---
+[//]: # (monikerRange: '>= tfs-2013')
 
-# Build and Release documentation for Team Services and TFS
+# Build and release
 
-Visual Studio Team Services and Team Foundation Server help you implement a highly customizable continuous integration (CI) and deployment (CD) pipeline for your .NET, Java, Node, PHP, or Python apps. Tutorials, references, and other documentation show you how to configure and manage CI/CD for the app and platform of your choice.
+[//]: # (::: moniker range=">= tfs-2015")
 
+VSTS and Team Foundation Server help you implement a continuous integration (CI) and deployment (CD) pipeline for any app. Tutorials, references, and other documentation show you how to configure and manage CI/CD for the app and platform of your choice.
 
-## 5-Minute Quickstarts
+## 5-Minute quickstarts
 
-Learn how to build your app and deploy it to your choice of Azure service.
+### Learn how to build your app
 
-* Azure web apps
-  * [ASP.NET Core](apps/aspnet-core-to-azure-webapp.md)
-  * ASP.NET
-  * Node
-  * Java
-* Windows virtual machines
-  * [ASP.NET Core](apps/aspnet-core-to-windows-vm.md)
-  * ASP.NET
-* Linux virtual machines
-  * ASP.NET Core
-  * Node
-  * Java
-* Containers
-  * ASP.NET Core
-  * Node
-<!---
-![Azure web app](_img/index/azure-web-app-card.png)   ![Azure VM](_img/index/azure-vm-card.png)   ![Azure container](_img/index/azure-containers-card.png)   
--->
+<!-- Converting to icon48 format, this gets cleaner in YAML -->
+<div class="ico48Case halfStack">
+<div class="ico48Link"><a href="apps/mobile/android.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/en-us/media/logos/logo_android.svg"><span>Android</span></a></div>
+<div class="ico48Link"><a href="apps/aspnet/build-aspnet-4.md"><img width="48" height="48" alt="" src="_img/index/logo_net.svg"><span>ASP.NET</span></a></div>
+<div class="ico48Link"><a href="apps/aspnet/build-aspnet-core.md"><img width="48" height="48" alt="" src="_img/index/logo_net.svg"><span>ASP.NET Core</span></a></div>
+<div class="ico48Link"><a href="apps/c-cpp/gcc.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg"><span>C/C++ with GCC</span></a></div>
+<div class="ico48Link"><a href="apps/windows/cpp.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_visual-studio.svg"><span>C/C++ with VC++</span></a></div>
+<div class="ico48Link"><a href="apps/containers/build.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_docker.svg"><span>Docker image</span></a></div>
+<div class="ico48Link"><a href="apps/go/go.md"><img width="48" height="48" alt="" src="_img/index/logo_go.png"><span>Go</span></a></div>
+<div class="ico48Link"><a href="apps/java/build-gradle.md"><img width="48" height="48" alt="" src="_img/index/logo_gradle.png"><span>Gradle</span></a></div>
+<div class="ico48Link"><a href="apps/java/build-maven.md"><img width="48" height="48" alt="" src="_img/index/logo_maven.svg"><span>Maven</span></a></div>
+<div class="ico48Link"><a href="apps/windows/dot-net.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_NET.svg"><span>.NET Desktop</span></a></div>
+<div class="ico48Link"><a href="apps/nodejs/build-gulp.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_nodejs.svg"><span>Node.js</span></a></div>
+<div class="ico48Link"><a href="apps/windows/universal.md"><img width="48" height="48" alt="" src="_img/index/logo_uwp.svg"><span>UWP</span></a></div>
+<div class="ico48Link"><a href="apps/mobile/xamarin.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_xamarin.svg"><span>Xamarin</span></a></div>
+<div class="ico48Link"><a href="apps/mobile/xcode-ios.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_xcode.svg"><span>Xcode</span></a></div>
+</div>
 
-## Tutorials  
+### Learn how to deploy your app
 
-<!--- These were taken from the CI/CD MVC deck -->
+<!-- Converting to icon48 format, this gets cleaner in YAML -->
+<div class="ico48Case halfStack">
+<div class="ico48Link"><a href="apps/cd/azure/aspnet-core-to-azure-webapp.md"><img width="48" height="48" alt="" src="_img/index/app-service-web.png"><span>Azure Web App</span></a></div>
+<div class="ico48Link"><a href="apps/cd/deploy-linuxvm-deploygroups.md"><img width="48" height="48" alt="" src="_img/index/virtualmachine.png"><span>Linux VM</span></a></div>
+<div class="ico48Link"><a href="apps/cd/deploy-docker-webapp.md"><img width="48" height="48" alt="" src="_img/index/app-service-web.png"><span>Web App for Containers</span></a></div>
+<div class="ico48Link"><a href="apps/cd/deploy-webdeploy-iis-deploygroups.md"><img width="48" height="48" alt="" src="_img/index/virtualmachine.png"><span>Windows VM</span></a></div>
+</div>
 
-* Set up build
-* Set up release
-* Set up multi-stage release
-* Use CI with Git workflows  
-* Integrate Build with GitHub
-* Integrate Release with Jenkins
-* Extend CI/CD
+### Learn how to test your app
 
-## Videos
+<!-- Converting to icon48 format, this gets cleaner in YAML -->
+<div class="ico48Case halfStack"><div class="ico48Link"><a href="test/getting-started-with-continuous-testing.md?toc=/vsts/build-release/toc.json"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_visual-studio.svg"><span>VS Test</span></a></div></div>
 
-[![Build pipeline via Visual Studio](_img/index/build-ci-cd-pipeline-vs-video.png)](https://channel9.msdn.com/Events/build-release/2017/P4105/player)   [![Azure Stack CI/CD](_img/index/azure-stack-video.png)](#)   [![Azure Container Service video](_img/index/ci-cd-azure-container-service-video.png)](https://channel9.msdn.com/Events/Connect/2016/204/player)
+## Step-by-step tutorials
 
-## Concepts  
+* [CI builds for Git in VSTS](actions/ci-build-git.md)
+* [Set up multi-stage release](actions/define-multistage-release-process.md)
+
+## Concepts
 
 - [Release definitions](concepts/definitions/release/index.md)
 - [Build and release agents](concepts/agents/agents.md)
 - [Build and release tasks](concepts/process/tasks.md)  
 - [Licensing and build and release pipelines](concepts/licensing/concurrent-pipelines-ts.md)
 
+## Videos
+
+[![Zero to DevOps](../build-release/_img/index/zero-to-devops-video.png)](https://channel9.msdn.com/events/Visual-Studio/Visual-Studio-2017-Launch/190)
+
 ## Resources
 
-- [What is Continuous Integration?](https://www.visualstudio.com/learn/what-is-continuous-integration/)  
-- [What is Continuous Delivery?](https://www.visualstudio.com/learn/what-is-continuous-delivery/)  
+- [What is continuous integration?](https://www.visualstudio.com/learn/what-is-continuous-integration/)  
+- [What is continuous delivery?](https://www.visualstudio.com/learn/what-is-continuous-delivery/)  
 - [What is DevOps?](https://www.visualstudio.com/learn/what-is-devops/)   
-- [Build and release Marketplace extensions](https://marketplace.visualstudio.com/search?target=VSTS&category=Build%20and%20release&sortBy=Downloads)
+- [Build and release marketplace extensions](https://marketplace.visualstudio.com/search?target=VSTS&category=Build%20and%20release&sortBy=Downloads)
+
+[//]: # (::: moniker-end)
+
+[//]: # (::: moniker range="tfs-2013")
+
+**TFS 2013:** We recommend that you [Migrate from XAML builds to new builds](actions/migrate-from-xaml-builds.md). If you're not yet ready to do that, then see [XAML builds](http://msdn.microsoft.com/library/ms181709%28v=vs.120%29.aspx).
+
+[//]: # (::: moniker-end)

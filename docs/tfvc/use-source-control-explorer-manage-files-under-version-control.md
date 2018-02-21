@@ -5,18 +5,18 @@ ms.assetid: 2781688e-ac66-4ea5-acd3-f045ba757f13
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfvc
 ms.manager: douge
-ms.author: routlaw
+ms.author: sdanie
 ms.date: 12/05/2016
 ---
 
 # Use Source Control Explorer to manage files in TFVC 
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Use Source Control Explorer to browse file versions and work with your codebase under Team Foundation version control (TFVC). 
 
 > [!NOTE]
-> If you're using Git for version control, manage your Visual Studio project files in [Team Explorer](https://www.visualstudio.com/en-us/docs/connect/work-team-explorer) and [Solution Explorer](https://docs.microsoft.com/en-us/visualstudio/ide/solutions-and-projects-in-visual-studio#managing-projects-in-solution-explorer). Learn more about using Git with Visual Studio in the [Team Services Git tutorial](../git/tutorial/gitworkflow.md). 
+> If you're using Git for version control, manage your Visual Studio project files in [Team Explorer](../user-guide/work-team-explorer.md) and [Solution Explorer](https://docs.microsoft.com/en-us/visualstudio/ide/solutions-and-projects-in-visual-studio#managing-projects-in-solution-explorer). Learn more about using Git with Visual Studio in the [VSTS Git tutorial](../git/tutorial/gitworkflow.md). 
 
 > [!TIP]
 > If you need to work with your Visual Studio solution files outside of version control, use [Solution Explorer](https://docs.microsoft.com/en-us/visualstudio/ide/solutions-and-projects-in-visual-studio#managing-projects-in-solution-explorer).
@@ -66,4 +66,4 @@ See [Create and work with workspaces](create-work-workspaces.md)
 
 ### Q: Why do I see this error message: “Team Foundation Server is not your current Source Control plug-in. Click here to set the current Source Control plug-in”?
 
-**A:** You might have connected to a Git repository in your team project. Use [Team Explorer](https://www.visualstudio.com/en-us/docs/connect/work-team-explorer) and [Solution Explorer](https://docs.microsoft.com/en-us/visualstudio/ide/solutions-and-projects-in-visual-studio#managing-projects-in-solution-explorer) to manage your files in Git repos.
+**A:** You might have connected to a Git repository in your team project. Use [Team Explorer](../user-guide/work-team-explorer.md) and [Solution Explorer](https://docs.microsoft.com/en-us/visualstudio/ide/solutions-and-projects-in-visual-studio#managing-projects-in-solution-explorer) to manage your files in Git repos.

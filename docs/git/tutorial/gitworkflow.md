@@ -1,25 +1,26 @@
 ---
-title: Visual Studio Git tutorial | Team Services & TFS
-description: Learn Git with the Team Services/TFS Git tutorial.
+title: VSTS Git tutorial | VSTS & TFS
+description: Learn Git with the VSTS/TFS Git tutorial.
 ms.assetid: 0270b0fa-461b-4079-9703-cdcf53bdf39f
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-git
+ms.technology: vs-devops-git 
 ms.topic: get-started-article
 ms.manager: douge
-ms.author: routlaw
-ms.date: 08/19/2016
+ms.author: sdanie
+ms.date: 10/24/2017
 ---
 
-#  Learn about version control and Git
+#  VSTS Git tutorial
 
-###### Team Services | TFS 2015 & TFS 2017 | Visual Studio 2015 & 2017
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
 
-Use version control to save your work and coordinate code changes across your team. Even if you're just a single developer, version control helps you stay organized as you fix bugs and develop new features.  
-Version control keeps a history of your development so that you can review and even rollback to any version of your code with ease.
+Use version control to save your work and coordinate code changes across your team. Even if you're just a single developer, version control helps you stay organized as you fix bugs and develop new features. Version control keeps a history of your development so that you can review and even rollback to any version of your code with ease.
+
+The steps in the following tutorials show how to perform common version controls tasks using the following version control workflow.
 
 ## Version control workflow
 
-Version control has a general workflow that most developers will use when writing code and sharing it with the team.
+Version control has a general workflow that most developers use when writing code and sharing it with the team.
 
 These steps are:
 
@@ -47,9 +48,12 @@ These terms might sound familiar if you've used a version control system like Te
 
 ---
 
-Use this workflow if you're new to Git. As your team gets more experienced and confident with Git,  extend it to suit your team's needs.
+Use this workflow if you're new to Git. As your team gets more experienced and confident with Git, extend it to suit your team's needs.
 
-## What's next
+## Next steps
 
-[Create a new Git repository](creatingrepo.md)
-[Clone an existing Git repository](clone.md)
+> [!div class="nextstepaction"]
+> [Create a new Git repository](creatingrepo.md)
+
+> [!div class="nextstepaction"]
+> [Clone an existing Git repository](clone.md)

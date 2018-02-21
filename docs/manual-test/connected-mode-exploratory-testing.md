@@ -1,21 +1,21 @@
 ---
 title: Exploratory testing with the Test &amp; Feedback extension in Connected mode
-description: Manual and exploratory testing - exploratory testing with the Test &amp; Feedback extension in Connected mode for a full integrated experience with team systems and environments such as Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+description: Exploratory testing with the Test &amp; Feedback extension in Connected mode
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-manual
 ms.assetid: 0F52826C-218D-437A-B6FF-EB8E8292CE3C
 ms.manager: douge
 ms.author: ahomer
-ms.date: 08/12/2016
+ms.date: 01/18/2018
+ms.topic: get-started-article
 ---
 
 # Exploratory testing with the Test &amp; Feedback extension in Connected mode
- 
+
 [!INCLUDE [version-header-ts-tfs](_shared/version-header-ts-tfs.md)] 
 
-To use the Test &amp; Feedback extension (previously called the 
-Exploratory Testing extension) in **Connected** mode you must connect 
-to your Team Services account or Team Foundation Server 2015 and later.
+To use the Test &amp; Feedback extension in **Connected** mode you must connect 
+to your VSTS account or TFS 2015 and later.
 This automatically configures the extension based on your access level: 
 
 * Users with **Basic** access can use the extension to perform exploratory
@@ -29,10 +29,13 @@ This automatically configures the extension based on your access level:
   by the team by choosing the **Provide feedback** link in the email.
   [More details](stakeholder/provide-stakeholder-feedback.md#email).
 
-## Connect to Team Services or TFS
+[!INCLUDE [feature-availability](_shared/feature-availability.md)] 
 
-1. If you want to use Team Services, and you haven't already done so, 
-   [sign up for a Team Services account](https://www.visualstudio.com/products/visual-studio-team-services-vs)
+<a name="connectvtfs"></a>
+## Connect to VSTS or TFS
+
+1. If you want to use VSTS, and you haven't already done so, 
+   [sign up for a VSTS account](https://www.visualstudio.com/products/visual-studio-team-services-vs)
    now. Make sure you create a team project when you create your account.
 
 1. If you haven't already, [install the Test &amp; Feedback extension](getting-started/perform-exploratory-tests.md).
@@ -41,9 +44,9 @@ This automatically configures the extension based on your access level:
 
    ![Start the extension in Connected mode](_img/_shared/connectedmode-01.png)
  
-1. Enter the URL of the Team Services account or TFS you want to connect to and choose **Next**.
+1. Enter the URL of the VSTS account or TFS you want to connect to and choose **Next**.
 
-   ![Enter the URL of your Team Services account or TFS](_img/_shared/connectedmode-02.png)
+   ![Enter the URL of your VSTS account or TFS](_img/_shared/connectedmode-02.png)
 
    If you are connecting for the first time, you may be prompted to sign in. 
  
@@ -80,7 +83,7 @@ After you have connected, you are ready to begin testing your app.
    ![Take a screenshot, make notes, or record your actions as a video](_img/connected-mode-exploratory-testing/create-bugs-01a.png)
 
    >Some browsers may not provide all of the capture capabilities.
-   See [Which web browsers does the extension support?](getting-started/perform-exploratory-tests.md#browser-support) 
+   See [Which web browsers does the extension support?](reference-qa.md#browser-support) 
 
 1. When you are done exploring and capturing information, create a bug or a task. 
 
@@ -104,7 +107,7 @@ After you have connected, you are ready to begin testing your app.
 
    ![Save the bug or task](_img/connected-mode-exploratory-testing/create-bugs-04.png)
 
-   > You can also [add your findings to an existing similar bug](#addsimilar). 
+   > You can also [add your findings to an existing similar bug](reference-qa.md#addsimilar). 
 
 1. View a list of all your activities in reverse chronological order
    in the **Session timeline** page. It shows all the screenshots, videos, and notes 
@@ -114,18 +117,19 @@ After you have connected, you are ready to begin testing your app.
    ![Review your captured information](_img/connected-mode-exploratory-testing/create-bugs-08.png)
 
    > You can use the extension to [explore work items](explore-workitems-exploratory-testing.md)
-   in Team Services or TFS.
+   in VSTS or TFS.
 
-1. To view a bug or task in Team Services or TFS, choose the link in the session timeline.
+1. To view a bug or task in VSTS or TFS, choose the link in the session timeline.
 
    ![View a bug or task](_img/connected-mode-exploratory-testing/create-bugs-09.png)
 
-   This opens the work item form in Team Services or TFS.
+   This opens the work item form in VSTS or TFS.
 
    ![The bug or task in TS or TFS](_img/connected-mode-exploratory-testing/create-bugs-10.png)
 
-[How do I play the video recordings I created with the extension?](getting-started/perform-exploratory-tests.md#recording-playback)
+[How do I play the video recordings I created with the extension?](reference-qa.md#recording-playback)
  
+<a name="create-testcase"></a>
 ## Create test cases
 
 The extension lets you create test cases as you explore your application.
@@ -148,14 +152,15 @@ The extension lets you create test cases as you explore your application.
 
 1. Continue exploring the application. Create more bugs, tasks, or test cases  as required. 
 
+<a name="endsession"></a>
 ## End your testing session
 
 1. When you're done, stop your session.
 
    ![Stop the exploratory testing session](_img/connected-mode-exploratory-testing/create-bugs-05.png)
 
-1. If you are using Team Services, or TFS 2017 and higher, open the **Session timeline** page and choose the "view" icon to see your completed exploratory 
-   sessions in Team Services or TFS.
+1. If you are using VSTS, or TFS 2017 and higher, open the **Session timeline** page and choose the "view" icon to see your completed exploratory 
+   sessions in VSTS or TFS.
 
    ![View the exploratory testing session](_img/connected-mode-exploratory-testing/create-bugs-06.png)
 
@@ -165,28 +170,9 @@ The extension lets you create test cases as you explore your application.
 
 1. Now see how you can [view your sessions and get insights](insights-exploratory-testing.md).
 
-[How do I play the video recordings I created with the extension?](getting-started/perform-exploratory-tests.md#recording-playback)
+[How do I play the video recordings I created with the extension?](reference-qa.md#recording-playback)
 
-## Q&A
+## Next step
 
-<!-- BEGINSECTION class="md-qanda" -->
-
-<a name="addsimilar"></a>
-#### Q: Can I edit an existing bug instead of creating a new bug when using the Test &amp; Feedback extension?
-
-**A**: Yes, the extension automatically shows bugs that may be related to the one you are creating
-and allows you to add your screenshots, notes, and videos to this existing bug. 
-For more details, see [Add findings to existing bugs with exploratory testing](add-to-bugs-exploratory-testing.md).
-
-<!-- ENDSECTION --> 
-
-## See also
-
-* [Explore work items with exploratory testing](explore-workitems-exploratory-testing.md)
-* [Add findings to existing bugs with exploratory testing](add-to-bugs-exploratory-testing.md)
-* [Get insights across your exploratory testing sessions](insights-exploratory-testing.md)
-* [Use the Test &amp; Feedback extension in Standalone mode](standalone-mode-exploratory-testing.md)
-* [Exploratory testing with Microsoft Test Manager](mtm/exploratory-testing-using-microsoft-test-manager.md)
-* [Overview of manual and exploratory testing](index.md)
-
-[!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
+> [!div class="nextstepaction"]
+> [Get insights across your sessions](insights-exploratory-testing.md)

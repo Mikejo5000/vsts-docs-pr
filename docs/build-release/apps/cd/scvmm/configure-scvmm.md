@@ -1,12 +1,12 @@
 ---
 ms.assetid: 1ACB0A12-84D5-4859-989C-723986F8FEF2
 title: Configure and deploy with System Center Virtual Machine Manager (SCVMM)
-description:  Configure and deploy with System Center Virtual Machine Manager (SCVMM) using Microsoft Release Management in Visual Team Services (VSTS) and Team Foundation Server (TFS)
+description:  Configure and deploy with SCVMM using Microsoft Release Management in VSTS and TFS
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-release
+ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
-ms.date: 10/20/2016
+ms.date: 09/26/2017
 ---
 
 # Configure and manage VMs with System Center Virtual Machine Manager (SCVMM)
@@ -15,11 +15,11 @@ ms.date: 10/20/2016
 
 This example shows how you can integrate **System 
 Center Virtual Machine Manager** (SCVMM) with Release Management in 
-Visual Studio Team Services or Team Foundation Server.
+VSTS or Team Foundation Server.
 
 ## Prepare
 
-You need SCVMM. 
+You need SCVMM. If you want to create an isolated virtual network using SCVMM, see [this topic](../../../actions/virtual-networks/create-virtual-network.md).
 
 1. Install the **Virtual Machine Manager** (VMM) console by
    following [these instructions](https://technet.microsoft.com/library/gg610627.aspx).
@@ -28,13 +28,13 @@ You need SCVMM.
 1. Install an agent on the **agent machine**:
 
    * [Deploy an agent on Windows](../../../actions/agents/v2-windows.md)
-   * [Deploy an agent on OSX](../../../actions/agents/v2-osx.md)
+   * [Deploy an agent on macOS](../../../actions/agents/v2-osx.md)
    * [Deploy an agent on Linux](../../../actions/agents/v2-linux.md)<p />
 
 1. Install the **System Center Virtual Machine Manager (SCVMM)** extension
    from Visual Studio Marketplace into your server or account:
 
-   * If you are using **Visual Studio Team Services**,
+   * If you are using **VSTS**,
      install the extension from [this location](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.scvmmapp)
      in Visual Studio Marketplace.
    * If you are using **Team Foundation Server**, download
@@ -44,7 +44,7 @@ You need SCVMM.
 
 1. Create an SCVMM service endpoint in your team project:
 
-   * Open your Team Services or TFS team project in 
+   * Open your VSTS or TFS team project in 
      your web browser. Choose the **Settings** icon in the menu bar and select **Services**.
 
    * In the **Services** tab, choose **New Service Endpoint**, and select **SCVMM**.
@@ -82,7 +82,7 @@ You need SCVMM.
    dialog to the environment.
 
 1. You can select the action from the list of actions available in the task.
-   See [SCVMM task actions](manage-vms-using-scvmm.md) for details.
+   See [SCVMM task actions](../../../actions/virtual-networks/manage-vms-using-scvmm.md) for details.
   
 1. You can now add other tasks to the environment, 
    such as **PowerShell on Target Machines** and then 
@@ -100,6 +100,11 @@ You need SCVMM.
 
 1. Create a new release from the release definition
    and deploy it to the environment.
+
+## See also
+
+* [Create a virtual network isolated environment for build-deploy-test scenarios](../../../actions/virtual-networks/create-virtual-network.md)
+* [Task actions for managing VMs using SCVMM](../../../actions/virtual-networks/manage-vms-using-scvmm.md)
 
 ## Q&A
 

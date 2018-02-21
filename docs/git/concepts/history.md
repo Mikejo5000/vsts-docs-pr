@@ -1,9 +1,9 @@
 ---
-title: History in Git | Team Services & TFS
+title: History in Git | VSTS & TFS
 description: Overview of Git history
 ms.assetid: 0094b6c0-d841-48e6-bb5d-82596198ef08
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-git
+ms.technology: vs-devops-git 
 ms.manager: douge
 ms.author: sdanie
 ms.date: 06/16/2017
@@ -34,7 +34,7 @@ To do this, I'll pull the master branch with the following command:
 
 `git pull origin master`
 
-This merges all changes from the master branch in the remote repository, which Git names `origin` by default. This pull brought one new commit, and `master` in my local repo moves to that commit.
+This copies ("pulls") all commits from the `master` branch of the remote repo (called `origin` by default) to the `master` branch of the local repo. The pull operation copied one new commit, and the `master` branch in the local repo is now pointing to this new commit.
 
 ![a fourth commit, D, is added to the line](_img/history/history-abcd.png)
 

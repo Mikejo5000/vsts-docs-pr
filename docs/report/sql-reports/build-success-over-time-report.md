@@ -6,12 +6,14 @@ ms.technology: vs-devops-reporting
 ms.assetid: 1791d80f-91f6-4e4a-a544-a3289a8a39ac
 ms.author: kaelli
 ms.manager: douge
-ms.date: 12/30/2016
+ms.date: 10/17/17
 ---
+
+
 
 # Build Success Over Time Report
 
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 
 The Build Success Over Time report provides a pictorial version of the Build Summary report. The Build Success Over Time report displays the status of the last build for each build category run for each day. You can use this report to help track the quality of the code that the team is checking in. In addition, for any day on which a build ran, you can view the Build Summary for that day.  
@@ -25,7 +27,7 @@ The Build Success Over Time report provides a pictorial version of the Build Sum
   
  **Required Permissions**  
   
- To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in Reporting Services. For more information, see [Add users to team projects](../../setup-admin/add-users.md).  
+ To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in Reporting Services. For more information, see [Add users to team projects](../admin/grant-permissions-to-reports.md).  
   
 ##  <a name="Data"></a> Data That Appears in the Report  
  The data that appears in the Build Success Over Time report is derived from the data warehouse. The report summarizes build and test results for a set of build definitions in one or more projects over time.  
@@ -62,9 +64,9 @@ The Build Success Over Time report provides a pictorial version of the Build Sum
   
 -   **Create build definitions**. You can create several build definitions, each of which can be run to produce code for a different platform. Also, you can run each build for a different configuration.  
   
-     For more information, see [Get started with CI/CD](../../build-release/get-started/ci-cd-part-1.md).
+     For more information, see [Get started with CI/CD](../../build-release/actions/ci-cd-part-1.md).
   
--   **Run builds regularly**. You can run builds can be run at set intervals or after every check-in. You can schedule regular builds when you use the schedule trigger. For more information, see [Build triggers](../../build-release/define/triggers.md).
+-   **Run builds regularly**. You can run builds can be run at set intervals or after every check-in. You can schedule regular builds when you use the schedule trigger. For more information, see [Build triggers](../../build-release/concepts/definitions/build/triggers.md).
   
     > [!NOTE]
     >  Although a team member can manually rate a build by using Build Explorer, this rating is not reflected in the Build Success Over Time report. The build rating appears in the Build Summary report. For more information, see [Rate the quality of a completed build](https://msdn.microsoft.com/library/ms181734.aspx) and [Build Summary](build-summary-report.md).  

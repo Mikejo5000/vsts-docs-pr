@@ -1,40 +1,37 @@
 ---
-title: Use the search box for quick queries | Team Services & TFS
+title: Use the search box for quick queries | VSTS & TFS
 description: Use the search box to create a query and filter for assigned to, created by, state, or work item type  
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-agile-wit
-ms.topic: get-started-article 
+ms.technology: vs-devops-wit
+ms.topic: get-started-article
 ms.assetid: D5A98F10-AAD2-46DD-91DE-41497CF5ECEF 
 ms.manager: douge
 ms.author: kaelli
-ms.date: 04/14/2017  
+ms.date: 08/28/2017
 ---
 
 
-# Use the search box to create a work item query 
+# Perform an adhoc search
 
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 <a id="search-box"/>
 
-You can initiate your query from the work item search box. You can find items using shortcut filters or by specifying keywords or phrases, specific fields/field values, assignment or date modifications, or using Equals, Contains, and Not operators.
+You can find items using shortcut filters or by specifying keywords or phrases, specific fields/field values, assignment or date modifications, or using Equals, Contains, and Not operators.
 
-Search box queries automatically scope to the items defined to the team project you're currently connected to. To search across team projects, use the [query editor](using-queries.md). Also, searching is not case-sensitive.
-
-
-[!INCLUDE [temp](../_shared/image-differences.md)]
-
+<!---Search box queries automatically scope to the items defined to the team project you're currently connected to. To search across team projects, use the [query editor](using-queries.md). Also, searching is not case-sensitive.-->
 
 <a id="search-selector" /> 
 <a id="search-box" /> 
 ## Code search vs work item search
  
+<!---
 >[!NOTE]  
-><b>Feature availability: </b>You can add the Code Search extension to  [Team Services or by upgrading to TFS 2017](../../search/code/administration.md).   
+><b>Feature availability: </b>You can add the Code Search extension to  [VSTS or by upgrading to TFS 2017](../../search/code/administration.md).   
 
-If you've added the [Code Search extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search) to Team Services or TFS 2017, you'll notice that the search box moves to the top row, and you can quickly switch between work item and code searches. 
+If you've added the [Code Search extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search) to VSTS and TFS 2017, you'll notice that the search box moves to the top row, and you can quickly switch between work item and code searches. -->
 
-The search box retains the last used search context for each hub. To learn more about code search, see [Get started with Code Search](../../search/code/get-started.md).
+The search box retains the last used search context for each hub. To learn more about code search, see [Get started with Code Search](../../search/code/code-search.md).
 
 [!INCLUDE [temp](../_shared/search-box.md)]
 
@@ -42,7 +39,7 @@ Type the ID in the Search work items box and then choose the search icon. The Se
 
 
 
-### Team Services and TFS 2017 
+### VSTS and TFS 2017 
 ![Search Work Items Text Box](_img/using-queries-search-box-ts.png)
 
 Click within the box to view the set of filters for [assignment,  workflow state](query-by-workflow-changes.md), [keyword, or work item type](titles-ids-descriptions.md). 
@@ -109,7 +106,7 @@ You can perform partial or exact match queries on a keyword or a phrase containe
 
 ## Find items based on specific fields and field values
 
-To find work items based on a keyword or phrase contained within other text string fields, specify either the friendly name or the reference name of the field. Enclose each phrase in quotation marks. You can determine the friendly name of a field by hovering over the field within a work item form. To determine the reference name of commonly used fields or to find a field that is not listed on the form, see [Work item field index](../guidance/work-item-field.md).
+To find work items based on a keyword or phrase contained within other text string fields, specify either the friendly name or the reference name of the field. Enclose each phrase in quotation marks. You can determine the friendly name of a field by hovering over the field within a work item form. To determine the reference name of commonly used fields or to find a field that is not listed on the form, see [Work item field index](../work-items/guidance/work-item-field.md).
 
 |Filter for items that meet this criteria:|Type the following string:|  
 |---|---|  
@@ -204,9 +201,9 @@ The following examples show how to use operators when you create a search string
 - [Adhoc versus managed queries](adhoc-vs-managed-queries.md)  
 - [Use the query editor to list and manage queries](using-queries.md)   
 - [Query fields, operators, and macros](query-operators-variables.md)   
-- [Work item field index](../guidance/work-item-field.md)   
-- [User-focused features](../../connect/user-focused-features.md)  
+- [Work item field index](../work-items/guidance/work-item-field.md)     
 
+[!INCLUDE [temp](../_shared/image-differences.md)]
 
 ### Does the search box support less than/greater than operators?
 

@@ -1,32 +1,26 @@
 ---
-title: Review continuous test results after a build | Visual Studio Team Services and Team Foundation Server
+title: Review continuous test results after a build VSTS and TFS 
 description: Review continuous test results after a build
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-continuous
+ms.technology: vs-devops-build
 ms.assetid: 9A38578C-3310-4DE3-949F-C302AB545C10
 ms.manager: douge
 ms.author: ahomer
-ms.date: 08/12/2016
+ms.date: 01/18/2018
+ms.topic: get-started-article
 ---
 
 # Review continuous test results after a build
 
-[!INCLUDE [version-header-vs-tfs](_shared/version-header-vs-tfs.md)]
+[!INCLUDE [version-header-vs-vsts-tfs](_shared/version-header-vs-vsts-tfs.md)]
 
-After your build finishes running continuous tests using Visual Studio Team Services or Team Foundation Server,
+After your build finishes running continuous tests using Visual Studio Team Services (VSTS) or Team Foundation Server (TFS),
 review your test results to start analyzing any problems that you found.
-
-In this example, you'll learn how to:
-
-* [Review your test results](#reviewtests)
-* [Organize your test results](#organizetests)
-* [Debug failed tests](#debugtests)
-* [View tests in the Release hub](#viewrelease)
 
 <a name="reviewtests"></a>  
 ## Review your test results
 
-1. In Visual Studio Team Services or Team Foundation Server, go to your team project.
+1. In VSTS or TFS, go to your team project.
 
 1. Find your build and open the build summary.
 
@@ -72,15 +66,7 @@ In this example, you'll learn how to:
 
   ![Test result summary in Release hub](_img/review-continuous-test-results-after-build/release-test-results-01.png)
 
-## Next steps
+## Next step
 
-* [Run automated tests from test plans in the Test hub](run-automated-tests-from-test-hub.md)
-* [Testing with unified agents and phases](test-with-unified-agent-and-phases.md)
-
-## See also
-
-* [Q &amp; A for continuous testing](reference-qa.md)
-* [Run tests with your builds](getting-started-with-continuous-testing.md)
-* [Get started with Selenium testing in a CI pipeline](continuous-test-selenium.md)
-
-[!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
+> [!div class="nextstepaction"]
+> [Run automated tests from test plans in the Test hub](run-automated-tests-from-test-hub.md)

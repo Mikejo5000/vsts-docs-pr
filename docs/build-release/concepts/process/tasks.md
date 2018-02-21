@@ -1,30 +1,29 @@
 ---
-title: Build and Release Tasks in Visual Studio Team Services and Team Foundation Server
-description: Understand Build and Release tasks in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+title: Build and Release Tasks in VSTS and TFS
+description: Understand Build and Release tasks in Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
 ms.assetid: 3293E200-6B8C-479D-9EA0-B3E82CE1450F
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
-ms.topic: get-started-article
 ms.manager: douge
 ms.author: alewis
-ms.date: 4/19/2017
+ms.date: 01/19/2018
 ---
 
 # Tasks for Build and Release
 
-**TFS 2015 | TFS 2017 | Team Services**
+**VSTS | TFS 2018 | TFS 2017 | TFS 2015**
 
 A **task** is the building block for defining automation in a
 build definition, or in an environment of a release definition.
 A task is simply a packaged script or procedure that has been
-abstracted with a set of inputs. We provide some [built-in tasks](../../define/build.md) 
+abstracted with a set of inputs. We provide some [built-in tasks](../../tasks/index.md) 
 to enable fundamental build and deployment scenarios.
 
 In addition, [Visual Studio Marketplace](https://marketplace.visualstudio.com/VSTS)
 offers a number of extensions; each of which, when installed to your
 account or collection, extends the task catalog with one or more tasks.
-Furthermore, you can write your own [custom extensions](../../../integrate/extensions/overview.md)
-to add tasks to your account in Team Services or your collection in TFS.
+Furthermore, you can write your own [custom extensions](../../../integrate/index.md)
+to add tasks to your account in VSTS or your collection in TFS.
 
 When you add a task to your build or release definition, it may also add a set of **demands** to the definition. The demands define the prerequisites that must be installed on the [agent](../agents/agents.md) for the task to run. When you run the build or deployment, an agent that meets these demands will be chosen.
 
@@ -65,7 +64,6 @@ Clear this check box to disable a task. This is useful
 when you want to temporarily take task out of the process for testing or for specific deployments.
 
 > [!TIP]
-> 
 > You can also right-click the task to toggle this setting.
 
 ### Timeout
@@ -73,7 +71,7 @@ when you want to temporarily take task out of the process for testing or for spe
 The timeout for this task in minutes. The default is zero (infinite timeout).
 Setting a value other than zero overrides the setting for the parent task phase.
 
-### Team Services options
+### VSTS options
 
 #### Continue on error (partially successful)
 
@@ -87,10 +85,9 @@ Select the condition for running this task:
 * [Custom conditions](conditions.md)
 
 > [!NOTE]
-> 
-> If you're running tasks in cases when the build is canceled, then make sure you specify sufficient time for these tasks to run the [definition options](../../define/options.md#job-cancel-timeout).
+> If you're running tasks in cases when the build is canceled, then make sure you specify sufficient time for these tasks to run the [definition options](../../concepts/definitions/build/options.md#job-cancel-timeout).
 
-### TFS 2015 and TFS 2017 options
+### TFS 2015 and newer options
 
 #### Continue on error (partially successful)
 
@@ -100,11 +97,11 @@ Select this option if you want subsequent tasks in the same phase to run even if
 
 Select this check box if you want the task to run even if the build or deployment is failing.
 
-<h2 id="tool-installers">Build tool installers (Team Services)</h2>
+<h2 id="tool-installers">Build tool installers (VSTS)</h2>
 
-> **Team Services preview feature**
+> **VSTS preview feature**
 >
-> To use this capability you must be working on Team Services and enable the **Task tool installers** [preview feature](../../../collaborate/preview-features.md) for your account.
+> To use this capability you must be working on VSTS and enable the **Task tool installers** [preview feature](../../../collaborate/preview-features.md) for your account.
 
 Tool installers enable your build process to install and control your dependencies. Specifically, you can:
 
@@ -117,15 +114,15 @@ For example, you can set up your build process to run and validate your app for 
 ### Example: Test and validate your app on multiple versions of Node.js
 
 > [!TIP]
-> Want a visual walkthrough? See [our April 19 news release](../../news/2017.md#april-19).
+> Want a visual walkthrough? See [our April 19 news release](../../archive/news/2017.md#april-19).
 
-[Create a new build definition](../../get-started/ci-cd-part-1.md) (start with an empty process) to try this out.
+[Create a new build definition](../../actions/ci-cd-part-1.md) (start with an empty process) to try this out.
 
 #### Tasks tab
 
 Add these tasks:
 
-![icon](../../steps/tool/_img/node.png) Tool: Node Installer
+![icon](../../tasks/tool/_img/node.png) Tool: Node Installer
 
 * Version Spec: 
 
@@ -133,14 +130,14 @@ Add these tasks:
 $(NodeVersionSpec)
 ```
 
-![icon](../../steps/utility/_img/command-line.png) Utility: Command Line
+![icon](../../tasks/utility/_img/command-line.png) Utility: Command Line
 
 * Tool (if you're running on a Windows agent)
  ```
 where
 ```
 
-* Tool (if you're running on an OSX or Linux agent)
+* Tool (if you're running on a macOS or Linux agent)
  ```
 which
 ```
@@ -152,7 +149,7 @@ node
 
 #### Variables tab
 
-On the [Variables tab](../../define/variables.md) define this variable:
+On the [Variables tab](../../concepts/definitions/build/variables.md) define this variable:
 
 |Name|Value|Settable at queue time|
 |-|-|-|
@@ -160,7 +157,7 @@ On the [Variables tab](../../define/variables.md) define this variable:
 
 #### Options tab
 
-On the [Options tab](../../define/options.md):
+On the [Options tab](../../concepts/definitions/build/options.md):
 
 0. Enable **Multi-configuration**.
 
@@ -174,16 +171,16 @@ NodeVersionSpec
 
 #### Save & queue
 
-Click **Save & queue**. Observe how two builds are run. The [Node Tool Installer](../../steps/tool/node-js.md) downloads each of the Node.js versions if they are not already on the agent. The [Command Line](../../steps/utility/command-line.md) task logs the location of the Node.js version on disk.
+Click **Save & queue**. Observe how two builds are run. The [Node Tool Installer](../../tasks/tool/node-js.md) downloads each of the Node.js versions if they are not already on the agent. The [Command Line](../../tasks/utility/command-line.md) task logs the location of the Node.js version on disk.
 
 ### Tool installer tasks
 
-For a list of our tool installer tasks, see [Tool installer tasks](../../define/build.md#tool).
+For a list of our tool installer tasks, see [Tool installer tasks](../../tasks/index.md#tool).
 
 ## Related topics
 
 * [Task phases](phases.md)
 * [Task groups](../library/task-groups.md)
-* [Built-in task catalog](../../define/build.md)
+* [Built-in task catalog](../../tasks/index.md)
  
 [!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]

@@ -1,6 +1,6 @@
 ---
-title: REST API versioning for Visual Studio Team Services (and TFS)
-description: Learn how versioning works for REST APIs for Visual Studio Team Services and TFS
+title: REST API versioning for VSTS (and TFS)
+description: Learn how versioning works for REST APIs for VSTS and TFS
 ms.assetid: 5fc6efd4-9947-40f2-b4f6-9695a24de87c
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-integrate
@@ -11,7 +11,7 @@ ms.date: 08/04/2016
 
 # REST API Versioning
 
-Visual Studio Team Services and Team Foundation Server REST APIs are versioned to ensure applications and services continue to work as APIs evolve.
+Visual Studio Team Services (VSTS) and Team Foundation Server REST APIs are versioned to ensure applications and services continue to work as APIs evolve.
 
 ### Guidelines
 
@@ -37,11 +37,13 @@ GET https://{account}.visualstudio.com/defaultcollection/_apis/{area}/{resource}
 
 ### Supported versions
 
-| Product                     | 1.0    | 2.0    | 3.0    |
-|:----------------------------|:------:|:------:|:------:|
-| Team Services               | X      | X      | X      | 
-| Team Foundation Server 2017 | X      | X      | X      |
-| Team Foundation Server 2015 | X      | X      | -      |
+| Product                     | 1.0    | 2.0    | 3.0    | 4.0    |
+|:----------------------------|:------:|:------:|:------:|:------:|
+| Visual Studio Team Services | X      | X      | X      | X      |
+| Team Foundation Server 2018 | X      | X      | X      | X      |
+| Team Foundation Server 2017 | X      | X      | X      | -      |
+| Team Foundation Server 2015 | X      | X      | -      | -      |
+
 
 Major API version releases align with Team Foundation Server RTM releases. For example, the `3.0` API set was introduced with Team Foundation Server 2017.
 

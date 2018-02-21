@@ -5,13 +5,13 @@ ms.assetid: 8535caa8-584a-454b-8c71-ce0cd362d9b1
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfvc
 ms.manager: douge
-ms.author: routlaw
+ms.author: sdanie
 ms.date: 08/10/2016
 ---
 
 # Develop your app in Team Foundation version control
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 When your codebase is under version control, you can develop your app—create and open files in Solution Explorer and write your code—while version control does other work for you. When you check files in and out, it keeps track of your changes and creates a history of your project.
 
@@ -47,4 +47,4 @@ If so, we suggest you take a few minutes to walk step-by-step through a day in t
 
 -    [Testing the application](../manual-test/index.md) 
 
--    [Track work with Visual Studio devops and TFS](../work/overview.md) 
+-    [Track work with Visual Studio devops and TFS](../work/backlogs/overview.md) 

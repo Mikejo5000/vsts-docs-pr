@@ -1,30 +1,24 @@
 ---
-title: Selenium testing in Visual Studio Team Services
-description: UI Testing with Selenium in a continuous integration pipeline in Visual Studio Team Services (VSTS)
+title: Selenium testing in VSTS
+description: UI Testing with Selenium in a continuous integration pipeline in Visual Studio Team Services (VSTS) and Team Foundation Server TFS
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-continuous
+ms.technology: vs-devops-build
 ms.assetid: 1B90D2DF-4AB0-4B65-8039-2B14A25FB547
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: ahomer
-ms.date: 06/15/2017
+ms.date: 01/18/2018
 ---
 
 # Get started with Selenium testing in a CI pipeline
 
-[!INCLUDE [version-header-vs-tfs](_shared/version-header-vs-tfs.md)]
+[!INCLUDE [version-header-vs-vsts-tfs](_shared/version-header-vs-vsts-tfs.md)]
 
 Performing user interface testing as part of the
 build process is a great way of detecting
-unexpected changes and need not be difficult. This
+unexpected changes, and need not be difficult. This
 topic describes using Selenium to test your website
 in a continuous integration build.
-
-In this example, you'll learn how to:
-
-* [Create the test project](#create-project)
-* [Include the test in a CI build](#include-test)
-* [View the test results](#view-results)
 
 For more information about Selenium browser automation, see:
 
@@ -65,56 +59,60 @@ from Visual Studio Test Explorer.
 1. The Unit Test project creates a default class
    named **UnitTest1.cs**. To author a Selenium Test,
    replace the contents of the file with the following
-   code.
+   code. You'll need to insert your own website URL in
+   the **baseURL** variable, and change the **driver**
+   assignment if you are not using the Firefox browser.
 
-         namespace Partsunlimited.UITests
-         {
-           using Microsoft.VisualStudio.TestTools.UnitTesting;
-           using OpenQA.Selenium;
-           using OpenQA.Selenium.Chrome;
-           using OpenQA.Selenium.Firefox;
-           using OpenQA.Selenium.IE;
-           using OpenQA.Selenium.Remote;
-           using OpenQA.Selenium.PhantomJS;
-           using System;
+   ```csharp
+   namespace Partsunlimited.UITests
+   {
+     using Microsoft.VisualStudio.TestTools.UnitTesting;
+     using OpenQA.Selenium;
+     using OpenQA.Selenium.Chrome;
+     using OpenQA.Selenium.Firefox;
+     using OpenQA.Selenium.IE;
+     using OpenQA.Selenium.Remote;
+     using OpenQA.Selenium.PhantomJS;
+     using System;
 
-           [TestClass]
-           public class ChucksClass1
-           {
-             private string baseURL = "http://your-website.azurewebsites.net/";
-             private RemoteWebDriver driver;
-             private string browser;
-             public TestContext TestContext { get; set; }
+     [TestClass]
+     public class ChucksClass1
+     {
+       private string baseURL = "http://your-website.azurewebsites.net/";
+       private RemoteWebDriver driver;
+       private string browser;
+       public TestContext TestContext { get; set; }
 
-             [TestMethod]
-             [TestCategory("Selenium")]
-             [Priority(1)]
-             [Owner("FireFox")]
+       [TestMethod]
+       [TestCategory("Selenium")]
+       [Priority(1)]
+       [Owner("FireFox")]
 
-             public void TireSearch_Any()
-             {
-               driver = new FirefoxDriver();
-               driver.Manage().Window.Maximize();
-               driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(30));
-               driver.Navigate().GoToUrl(this.baseURL);
-               driver.FindElementById("search - box").Clear();
-               driver.FindElementById("search - box").SendKeys("tire");
-               //do other Selenium things here!
-             }
+       public void TireSearch_Any()
+       {
+         driver = new FirefoxDriver();
+         driver.Manage().Window.Maximize();
+         driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(30));
+         driver.Navigate().GoToUrl(this.baseURL);
+         driver.FindElementById("search - box").Clear();
+         driver.FindElementById("search - box").SendKeys("tire");
+         //do other Selenium things here!
+       }
 
-             [TestCleanup()]
-             public void MyTestCleanup()
-             {
-               driver.Quit();
-             }
+       [TestCleanup()]
+       public void MyTestCleanup()
+       {
+         driver.Quit();
+       }
 
-             [TestInitialize()]
-             public void MyTestInitialize()
-             {
-             }
-           }
-         }
-
+       [TestInitialize()]
+       public void MyTestInitialize()
+       {
+       }
+     }
+   }
+   ```
+   
    ![Replacing the code in UnitTest1.cs](_img/continuous-test-selenium/continuous-test-selenium-03.png)
 
 1. Run the Selenium test locally using Test Explorer.
@@ -127,9 +125,9 @@ from Visual Studio Test Explorer.
 To include the Selenium test as part of a build,
 the source code must be in version control.
 
-![Checking the code into Visual Studio Team Services](_img/continuous-test-selenium/continuous-test-selenium-05.png)
+![Checking the code into VSTS](_img/continuous-test-selenium/continuous-test-selenium-05.png)
 
-1. In your Visual Studio Team Services account where
+1. In your Visual Studio Team Services (VSTS) account where
    you checked in the test code, open the **Build &amp; Release** hub and select the **Builds** tab.
 
 1. Create a new build definition using the **.NET Desktop**
@@ -137,7 +135,7 @@ the source code must be in version control.
 
 1. In the new build definition, select the **Default** agent queue in which you have installed an agent.
    If you have not installed an agent in the **Default** queue, choose the
-   **manage queues** link and do that now. For information, see
+   **Manage** link and do that now. For more information, see
    [Deploy a Windows build agent](../actions/agents/v2-windows.md).
    You might decide to [create an Azure VM](https://docs.microsoft.com/azure/virtual-machines/windows/quick-create-portal)
    to install your agent, or use a [deployment group](../concepts/definitions/release/deployment-groups/index.md)
@@ -161,13 +159,13 @@ the source code must be in version control.
 
 1. Configure the tasks as shown here:
 
-   ![Nuget Installer](../steps/package/_img/nuget-installer.png) [Package: Nuget Installer](../steps/package/nuget-installer.md) - Install and update NuGet package dependencies.
+   ![Nuget Installer](../tasks/package/_img/nuget-installer.png) [Package: Nuget Installer](../tasks/package/nuget-installer.md) - Install and update NuGet package dependencies.
    
    - **Path to solution or packages.config**: Select your app solution (.sln) file.
    
    - **Installation type**: `Restore`<p />
    
-   ![Visual Studio Build](../steps/build/_img/visual-studio-build.png) [Build: Visual Studio Build](../steps/build/visual-studio-build.md) - Build with MSBuild and set the Visual Studio version property.
+   ![Visual Studio Build](../tasks/build/_img/visual-studio-build.png) [Build: Visual Studio Build](../tasks/build/visual-studio-build.md) - Build with MSBuild and set the Visual Studio version property.
    
    - **Solution**:  Select your app solution (.sln) file.
    
@@ -177,11 +175,11 @@ the source code must be in version control.
    
    - **Visual Studio Version**: Select the version used to create your app.<p />
    
-   ![Index Sources &amp; Publish Symbols](../steps/build/_img/index-sources-publish-symbols.png) [Test: Index Sources &amp; Publish Symbols](../steps/build/index-sources-publish-symbols.md) - Index the source code and optionally publish symbols to a SymStore file share.
+   ![Index Sources &amp; Publish Symbols](../tasks/build/_img/index-sources-publish-symbols.png) [Test: Index Sources &amp; Publish Symbols](../tasks/build/index-sources-publish-symbols.md) - Index the source code and optionally publish symbols to a SymStore file share.
    
    - **Search pattern**: `**\bin\**\*.pdb`<p />
    
-   ![Visual Studio Test Agent Deployment](../steps/test/_img/visual-studio-test-agent-deployment-icon.png) [Test: Visual Studio Test Agent Deployment](../steps/test/visual-studio-test-agent-deployment.md) - Deploy and configure the test agent to run tests on a set of machines.
+   ![Visual Studio Test Agent Deployment](../tasks/test/_img/visual-studio-test-agent-deployment-icon.png) [Test: Visual Studio Test Agent Deployment](../tasks/test/visual-studio-test-agent-deployment.md) - Deploy and configure the test agent to run tests on a set of machines.
    
    - **Machines**: Comma-delimited list of machine names, or a variable containing the list.
    
@@ -199,7 +197,7 @@ the source code must be in version control.
    
    - **Agent Configuration - Interactive Process**: Checked<p />
    
-   ![Windows Machine File Copy](../steps/deploy/_img/windows-machine-file-copy-icon.png) [Deploy: Windows Machine File Copy](../steps/deploy/windows-machine-file-copy.md) - Copy files to remote machines.
+   ![Windows Machine File Copy](../tasks/deploy/_img/windows-machine-file-copy-icon.png) [Deploy: Windows Machine File Copy](../tasks/deploy/windows-machine-file-copy.md) - Copy files to remote machines.
    
    - **Source**: `$(Build.Repository.LocalPath)`
    
@@ -211,7 +209,7 @@ the source code must be in version control.
    
    - **Destination Folder**: `C:\Deploy` or another folder on the target server.<p />
    
-   ![Run Functional Tests](../steps/test/_img/run-functional-tests-icon.png) [Test: Run Functional Tests](../steps/test/run-functional-tests.md) - Run Coded UI tests, Selenium tests, and functional tests on a set of machines using the test agent.
+   ![Run Functional Tests](../tasks/test/_img/run-functional-tests-icon.png) [Test: Run Functional Tests](../tasks/test/run-functional-tests.md) - Run Coded UI tests, Selenium tests, and functional tests on a set of machines using the test agent.
    
    - **Machines**: Comma-delimited list of machine names, or a variable containing the list.
    
@@ -221,7 +219,7 @@ the source code must be in version control.
    
    - **Execution Options - Test Assembly**: `**\*Test*.dll`<p />
    
-   ![Copy Files](../steps/utility/_img/copy-files.png) [Test: Copy Files](../steps/utility/copy-files.md) - Copy files from a source folder to a target folder using match patterns.
+   ![Copy Files](../tasks/utility/_img/copy-files.png) [Test: Copy Files](../tasks/utility/copy-files.md) - Copy files from a source folder to a target folder using match patterns.
    
    - **Source Folder**: `$(build.sourcesdirectory)`
    
@@ -229,7 +227,7 @@ the source code must be in version control.
    
    - **Target Folder**: `$(build.artifactstagingdirectory)`<p />
    
-   ![Publish Build Artifacts](../steps/utility/_img/publish-build-artifacts.png) [Test: Publish Build Artifacts](../steps/utility/publish-build-artifacts.md) - Publish Build artifacts to the server or a file share.
+   ![Publish Build Artifacts](../tasks/utility/_img/publish-build-artifacts.png) [Test: Publish Build Artifacts](../tasks/utility/publish-build-artifacts.md) - Publish Build artifacts to the server or a file share.
    
    - **Path to Publish**: Select your Azure subscription.
    
@@ -239,7 +237,7 @@ the source code must be in version control.
 
    >It's generally advisable to use custom variables for parameter values, especially
    where the same value is used in the parameters of more than one task. You can also 
-   secure and hide values by using custom variables. See [Build Variables](../define/variables.md). 
+   secure and hide values by using custom variables. See [Build Variables](../concepts/definitions/build/variables.md). 
 
 1. Save the build definition and queue a new build.
 
@@ -261,21 +259,5 @@ the source code must be in version control.
 
 ## Next steps
 
-* [Review your test results](review-continuous-test-results-after-build.md) 
-* [Testing with unified agents and phases](test-with-unified-agent-and-phases.md)
-
-## Also see
-
-* [Use Selenium with cloud-based load testing](http://blogs.msdn.com/visualstudioalm/archive/2014/11/17/using-selenium-with-cloud-load-testing.aspx)
-* [Run tests with builds](getting-started-with-continuous-testing.md)
-* [Create your Visual Studio Team Services Account](http://visualstudio.com/)
-* [Get started with developer testing tools](https://docs.microsoft.com/visualstudio/test/getting-started-with-unit-testing)
-
-For more information about Selenium browser automation, see:
-
-* [Selenium HQ](http://docs.seleniumhq.org/)
-* [Selenium documentation](http://www.seleniumhq.org/docs/01_introducing_selenium.jsp)
-
-For information about deploying PhantomJS.exe as part of your test, see [this blog post](http://blogs.msdn.com/visualstudioalm/archive/2014/11/17/using-selenium-with-cloud-load-testing.aspx).
-
-[!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)]
+> [!div class="nextstepaction"]
+> [Review your test results](review-continuous-test-results-after-build.md) 

@@ -1,188 +1,97 @@
 ---
 ms.assetid: 979E4504-C88A-4D0A-A912-6E5998D87445
-title: Deploy your Web Deploy package to IIS servers
-description: Example of deploying an ASP.NET or Node Web Deploy package to IIS servers using Deployment Groups in Release Management in Visual Studio Team Services (VSTS) or Microsoft Team Foundation Server (TFS)
+title: Deploy to an IIS web server on a Windows Virtual Machine
+description: Deploy an ASP.NET or Node web deployment package to an IIS web server on a Windows virtual machine using Deployment Groups
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-release
+ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/02/2017
+ms.date: 01/19/2018
+ms.topic: get-started-article
 ---
 
-# Deploy your Web Deploy package to IIS servers
+# Deploy to a Windows Virtual Machine
 
-**| Team Services |**
+**VSTS | TFS 2018**
 
-> This is a preview feature that is available to only some accounts in Team Services.
+We'll show you how to set up continuous deployment of your ASP.NET or Node app to an IIS web server running on Windows using
+Visual Studio Team Services (VSTS). You can use the steps in this quickstart as long as your continuous integration process publishes a web deployment package.
 
-Continuous deployment means starting an automated deployment process whenever a new successful build is available. Here we'll show you how to set up continuous deployment of your ASP.NET or Node app to one or more IIS servers using Release Management.
+![A typical release pipeline for web applications](azure/_shared/_img/vscode-git-ci-cd-to-azure.png)
 
-## Get set up
+After you commit and push a code change, it is automatically built and then deployed. The results will automatically show up on your site.
 
-### Begin with a CI build
+## Define your CI build process
 
-Before you begin, you'll need a CI build that publishes your Web Deploy package. To set up CI for your specific type of app, see:
+You'll need a continuous integration (CI) build process that publishes your web deployment package. To set up a CI build process, see:
 
-* [Build your ASP.NET 4 app](../aspnet/ci/build-aspnet-4.md)
+* [Build your ASP.NET 4 app](../aspnet/build-aspnet-4.md)
 
-* [Build your ASP.NET Core app](../aspnet/ci/build-aspnet-core.md)
+* [Build your ASP.NET Core app](../aspnet/build-aspnet-core.md)
 
-* [Build your Node app with Gulp](../node/nodejs-to-azure.md)
+* [Build your Node app with Gulp](../nodejs/build-gulp.md)
+
+## Prerequisites
 
 ### IIS configuration
 
-If you are deploying an ASP.NET app, make sure that you have ASP.NET 4.5 or ASP.NET 4.6 installed on each of your IIS target servers. For more information, see [this topic](https://www.asp.net/web-forms/overview/deployment/visual-studio-web-deployment/deploying-to-iis).
+The configuration varies depending on the type of app you are deploying.
 
-If you are deploying an ASP.NET Core application to IIS target servers, follow the additional instructions in [this topic](https://docs.microsoft.com/en-us/aspnet/core/publishing/iis) to install .NET Core Windows Server Hosting Bundle.
+#### ASP.NET app
 
-If you are deploying a Node application to IIS target servers, follow the instructions in [this topic](https://github.com/tjanczuk/iisnode) to install and configure IISnode on IIS servers.
+[!INCLUDE [prepare-aspnet-windows-vm](../_shared/prepare-aspnet-windows-vm.md)]
 
-In this example, we will deploy to the Default Web Site on each of the servers. If you need to deploy to another website, make sure you configure this as well.
+#### ASP.NET Core app
 
-### Deployment group
+[!INCLUDE [prepare-aspnetcore-windows-vm](../_shared/prepare-aspnetcore-windows-vm.md)]
 
-Carry out the following steps in your Team Services account to create a Deployment Group consisting of the target IIS servers.
+#### Node app
 
-1. Open the **Deployment groups** tab of the **Build &amp; Release** hub
-   and choose **+ New** to create a new group
+Follow the instructions in [this topic](https://github.com/tjanczuk/iisnode) to install and configure IISnode on IIS servers.
 
-1. Enter a name for the group in the **Details** tab and then choose **Create**.
+[!INCLUDE [create-deployment-group](../_shared/create-deployment-group.md)]
 
-1. Set (tick) the **Use a personal access token** checkbox.
+## Define your CD release process
 
-1. Choose **Copy script to clipboard**.
-
-Sign into each of the IIS server where you will deploy your web app, and perform the following steps:
-
-1. Open an **Administrator Powershell** command prompt on each of the target IIS servers and paste the script you copied,
-   then execute it to register the machine with this group.
-
-1. When prompted to configure tags for the agent, press `Y` and enter `web`.
-
-1. When prompted for the user account, press _Return_ to accept the defaults.
-
-1. Wait for the script to finish with a message **Service vstsagent._account_._computername_ started successfully**.
-
-1. In the **Deployment groups** page of the **Build &amp; Release** hub, open
-   the **Machines** tab and verify that the agent is running. If the
-   tag named `web` is not visible, refresh the page.
-
-## Define and test your CD release process
-
-Continuous deployment (CD) means starting an automated release process whenever a new successful build is available.
 Your CD release process picks up the artifacts published by your CI build and then deploys them to your IIS servers.
 
 1. Do one of the following:
 
-   * If you've just completed a CI build (see above) then, in the build's **Summary** tab under **Deployments**,
+   * If you've just completed a CI build then, in the build's **Summary** tab under **Deployments**,
      choose **Create release** followed by **Yes**. This starts a new release definition that's automatically linked to the build definition.
+
+    ![Creating a new release definition from the build summary](../_shared/_img/release-from-build-summary.png)
 
    * Open the **Releases** tab of the **Build &amp; Release** hub, open the **+** drop-down
      in the list of release definitions, and choose **Create release definition**.
 
-1. Select the **IIS Website and SQL Database Deployment** template and choose **Next**.
+     ![Creating a new release definition in the Releases page](../_shared/_img/release-from-release-page.png)
 
-1. In the **Artifacts** section, make sure your CI build definition that publishes the Web deploy package is selected as the artifact source.
+1. In the **Create release definition** wizard, select **IIS Website Deployment** template, and then click **Apply**.
 
-1. Select the **Continuous deployment** check box, and then choose **Create**.
+ ![Screenshot showing IIS website deployment template](../_shared/_img/aspnet-core-to-windows-vm/select-iis-website-deployment-release-template.png)
 
-1. Select the _second_ **SQL Deployment** section containing the **SQL DB Deploy** task and delete it
-   (you will not be deploying a database in this example).
+1. Click the **Tasks** tab, and then click the **IIS Deployment** phase. For the **Deployment Group**, click the deployment group you created earlier, such as *myIIS*.
 
-1. Configure the phases and tasks in the environment as follows:
+ ![iis deployment group in release definition](../_shared/_img/aspnet-core-to-windows-vm/iis-deployment-group-in-release-definition.png)
 
-   **[Run on deployment group phase](../../concepts/process/phases.md)** for configuration of web servers.
-   
-   - **Deployment Group**: Select the deployment group you created earlier.
-   
-   - **Machine tags**: `web`<p />
-   
-   ![IIS Web App Manage](../../steps/deploy/_img/iis-manage-icon.png) [Deploy: IIS Web App Manage](../../steps/deploy/iis-manage.md) - Create or update the websites.
-   
-   - **Website Name**: `Default Web Site`. If you created a different website on the IIS servers, use that name instead.
-   
-   - **Port**: `80`
-   
-   - **IIS Application pool**: `DefaultAppPool`<p />
-   
-   ![IIS Web App Deploy](../../steps/deploy/_img/iis-deploy-icon.png) [Deploy: IIS Web App Deploy](../../steps/deploy/iis-deploy.md) - Deploy the app to IIS.
-   
-   - **Website Name**: `Default Web Site`. If you created a different website on the IIS servers, use that name instead.<p />
-   
-1. Edit the name of the release definition, choose **Save**, and choose **OK**. Note that the default environment is named "Environment1", which you can edit by selecting the name.
+1. Save the release definition.
 
-You're now ready to create a release, which means to start the process of running the release definition with the artifacts produced by a specific build. This will result in deploying the build to the IIS servers:
+## Create a release to deploy your app
 
-1. Choose **+ Release** and select **Create Release**.
+You're now ready to create a release, which means to start the process of running the release definition with the artifacts produced by a specific build. This will result in deploying the build:
 
-1. Select the build you just completed in the highlighted drop-down list and choose **Create**.
+1. To test the release definition, choose **Release** and then **Create release**.
 
-1. Choose the release link in the popup message. For example: "Release **Release-1** has been created".
+1. In the Create new release panel, choose **Create**. Choose the link near the top of the window that indicates a new release was created.
 
-1. Open the **Logs** tab to watch the release console output.
+1. Open the **Logs** tab to watch the live logs from the deployment as it happens. Wait for the release to be deployed to the Azure web app.
 
-1. After the release is complete, navigate to your site running on the IIS servers, and verify its contents.
+1. Once deployment has completed, open your web browser and test your web app: `http://<publicIpAddress>`, where `<publicIpAddress>` is the IP address of your web site on your IIS web server.
 
-## Next
+## Next steps
 
-### Dynamically create and remove a deployment group
-
-You can create and remove deployment groups dynamically if you prefer by using
-the [Azure Resource Group Deployment task](https://aka.ms/argtaskreadme)
-to install the agent on the machines in a deployment group using ARM templates.
-See [Provision deployment group agents](../../concepts/definitions/release/deployment-groups/howto-provision-deployment-group-agents.md).  
-
-### Environment specific configuration
-
-If you deploy releases to multiple environments, you can substitute configuration settings in **Web.config** and other configuration files of your website using these steps:
-
-1. Define environment-specific configuration settings in the **Variables** tab of an environment in a release definition; for example,
-   `<connectionStringKeyName> = <value>`.
-
-1. In the **IIS Web App Deploy** task, select the checkbox for **XML variable substitution** under **File Transforms and Variable Substitution Options**.
-
-   > If you prefer to manage environment configuration settings in
-   your own database or Azure keyvault, add a task to the environment to read and emit those values using
-   `##vso[task.setvariable variable=connectionString;issecret=true]<value>`.
-
-   > At present, you cannot apply a different configuration to individual IIS servers.
-
-### Safe rolling deployment
-If your deployment group consists of many IIS target servers, you can deploy to a subset of servers at a time.
-This ensures that your application is available to your customers at all times.
-Simply select the **Run on machine group** phase and select the option to deploy to **1/2 of the targets in parallel**.
-You can also choose other rolling options for your deployment.
-
-<h3 name="database">Database deployment</h3>
-
-To deploy a database with your app:
-
-1. Add both the IIS target servers and database servers to your deployment group. Tag all the IIS servers as `web` and all database servers as `database`.
-
-1. Add two machine group phases to environments in the release definition, and a task in each phase as follows:
-
-   **First [Run on deployment group phase](../../concepts/process/phases.md)** for configuration of web servers.
-   
-   - **Deployment group**: Select the deployment group you created earlier.
-   
-   - **Machine tags**: `web`<p />
-   
-   Then add an **IIS Web App Deploy** task to this phase.
-   
-   **Second [Run on deployment group phase](../../concepts/process/phases.md)** for configuration of database servers.
-   
-   - **Deployment group**: Select the deployment group you created earlier.
-   
-   - **Machine tags**: `database`<p />
-   
-   Then add a **SQL Server Database Deploy** task to this phase.
-
-## Q&A
-
-<!-- BEGINSECTION class="md-qanda" -->
-
-[!INCLUDE [temp](../../_shared/qa-versions.md)]
-
-<!-- ENDSECTION -->
-
-[!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]
+* [Dynamically create and remove a deployment group](howto-webdeploy-iis-deploygroups.md#depgroup)
+* [Apply environment-specific configurations](howto-webdeploy-iis-deploygroups.md#envirconfig)
+* [Perform a safe rolling deployment](howto-webdeploy-iis-deploygroups.md#rolling)
+* [Deploy a database with your app](howto-webdeploy-iis-deploygroups.md#database)

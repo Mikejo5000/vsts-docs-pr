@@ -1,16 +1,16 @@
 ---
-title: Lock a branch in your Git repo | Team Services & TFS
-description: Use the branches page to lock a branch in Team Services or TFS, preventing pushes to the branch.
+title: Lock a branch in your Git repo | VSTS & TFS
+description: Use the branches page to lock a branch in VSTS or TFS, preventing pushes to the branch.
 ms.assetid: 9eecbacc-e3f2-44cb-887e-6c886001d2b6
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-git
+ms.technology: vs-devops-git 
 ms.manager: douge
-ms.author: routlaw
+ms.author: sdanie
 ms.date: 08/23/2016
 ---
 
 # Lock a branch
-###### Team Services
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015
 
 Prevent updates to a Git [branch](tutorial/branches.md) by locking the branch. 
 Locking a branch prevents other users from changing the existing commit history. 
@@ -24,7 +24,7 @@ Use [branch policies](branch-policies.md) and [pull requests](pull-requests.md) 
 Locking does not prevent cloning of a repo or fetching updates made in the branch into your local repo.
 Share with your team the reason for the locking of the branch and make sure your team knows what to do to work with the branch after it is unlocked. 
 
-> Only the user who locked the branch or a user with [Remove Others' Locks permissions](../setup-admin/permissions.md#git-repository) for the branch can remove the lock.
+> Only the user who locked the branch or a user with [Remove Others' Locks permissions](../security/set-git-tfvc-repository-permissions.md#git-repository) for the branch can remove the lock.
 
 ## Lock a branch using the Branches view
 

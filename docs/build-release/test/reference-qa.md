@@ -1,22 +1,22 @@
 ---
-title: Q & A for continuous testing   
-description: Q & A for continuous testing topics for Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
+title: FAQs for continuous testing   
+description: FAQs for continuous testing topics for Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-continuous
+ms.technology: vs-devops-build
 ms.assetid: F9F85914-C81A-4D9E-80CA-36EC4E8A5677 
 ms.manager: douge
 ms.author: ahomer
-ms.date: 08/12/2016
+ms.date: 01/18/2018
 ---
 
-# Q & A for continuous testing
+# FAQs for continuous testing
 
-* [General topics](#gentopics)
-* [Associating tests with test cases](#associate)
-* [Running automated tests from the Test hub](#test-hub)
+[!INCLUDE [version-header-vs-vsts-tfs](_shared/version-header-vs-vsts-tfs.md)]
 
 <a name="gentopics"></a>
 ## General topics
+
+[Go to related topic &gt;](getting-started-with-continuous-testing.md)
 
 ### Q: How do I run tests from different unit test frameworks with my build?
 
@@ -34,7 +34,7 @@ ms.date: 08/12/2016
 
 ### Q: I'm having problems using xUnit with .NET Core apps. Where can I get more information?
 
-**A**: See the blog post [Unit Tests with .NET Core and Visual Studio Team Services](http://blogs.perficient.com/microsoft/2016/08/unit-test-with-net-core-and-vsts/).
+**A**: See the blog post [Unit Tests with .NET Core and VSTS](http://blogs.perficient.com/microsoft/2016/08/unit-test-with-net-core-and-vsts/).
 
 <a name="qa-more-tests"></a>
 ### Q: What are the typical types of tests I can run to validate my app and deployment?
@@ -54,7 +54,7 @@ ms.date: 08/12/2016
 1. Run **load tests** after the app is deployed to staging and production, after it passes all functional tests.
    The example shown above is just a simple test that accesses a single page in the web app to validate that 
    deployment succeeded and the app is running successfully. You can perform must more comprehensive load testing
-   to validate the entire app by running [cloud-based load tests](../../build-release/steps/test/cloud-based-load-test.md)
+   to validate the entire app by running [cloud-based load tests](../../build-release/tasks/test/cloud-based-load-test.md)
    and [Apache JMeter load tests](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/RunJMeterLoadTest).
 
 ### Q: Can I find a specific test run?
@@ -72,11 +72,11 @@ ms.date: 08/12/2016
 <a name="qa-stagingslot"></a>
 ### Q: Can I deploy to a staging slot first, and then to production?
 
-A: Yes, you can create additional deployment slots in Azure Web Apps,
+**A**: Yes, you can create additional deployment slots in Azure Web Apps,
 and specify which slot to deploy your app to. If you do not specify a slot,
 the default **Production** slot is used. After you deploy, you can swap an
 app to a different slot using the **Azure App Service Manage** task. See
-[Swap deployment slots](../../build-release/apps/cd/deploy-webdeploy-webapps.md#swap-deployment-slots).
+[Swap deployment slots](../../build-release/apps/cd/howto-webdeploy-webapps.md#swapslots).
 
 You can use [task phases](../../build-release/concepts/process/phases.md)
 and the [**Manual Intervention**](../../build-release/concepts/process/phases.md#the-manual-intervention-task) task
@@ -101,13 +101,17 @@ If you're running release builds of .cpp unit tests, make sure that you have Win
 * [Testing in Continuous Integration and Continuous Deployment Workflows](http://blogs.msdn.com/b/visualstudioalm/archive/2015/05/29/testing-in-continuous-integration-and-continuous-deployment-workflows.aspx)
 * [Integrating Testing Efforts into the DevOps Process with Build vNext and Visual Studio Release Management](https://channel9.msdn.com/Series/ConnectOn-Demand/234)
 
+---------------------
+
 <a name="associate"></a>
 ## Associating tests with test cases
+
+[Go to related topic &gt;](associate-automated-test-with-test-case.md)
 
 <a name="xaml-build"></a>
 ### Q: What are the differences if I am still using a XAML build?
 
-**A**: If you are using a XAML build in Team Services or TFS, you can run tests
+**A**: If you are using a XAML build in VSTS or TFS, you can run tests
 that you have associated in a Build-Deploy-Test workflow using a
 [Lab environment](https://docs.microsoft.com/visualstudio/test/lab-management/using-a-lab-environment-for-your-application-lifecycle).
 You can also run tests using Microsoft Test Manager (MTM) and a
@@ -119,26 +123,30 @@ You can also run tests using Microsoft Test Manager (MTM) and a
 **A**: These are the limitations for each type of test:
 
 * Coded UI test, Selenium tests, and unit tests written using
-  the MSTest framework **can** be associated with a test case.
+  Version 1 of the MSTest framework **can** be associated with a test case.
 * Unit tests that use the.NET Core framework **cannot** be
   associated with a test case.
-* Tests that use other test frameworks such as xUnit, nUnit,
-  Chutzpah, and others **cannot** be associated with a test case.
+* Tests that use other test frameworks such as [Version 2 of the MSTest framework](https://blogs.msdn.microsoft.com/devops/2016/06/17/taking-the-mstest-framework-forward-with-mstest-v2/),
+  xUnit, nUnit, Chutzpah, and others **cannot** be associated with a test case.
 * Associating ordered tests and generic tests **may** work, but running these tests is not supported.
 
 <a name="open-in-vs"></a>
 ### Q: Can I configure work items to open in Visual Studio?
 
 **A**: Yes, if you want test work items to open inside Visual Studio
-instead of the default Team Services or TFS UI in your web browser,
+instead of the default VSTS or TFS UI in your web browser,
 change the **Work Items | General** setting from the **Tools | Options** menu in Visual Studio. 
 
 ![Change work item display mode](_img/associate-automated-test-with-test-case/work-item-compatibility.png)
 
+----------------------------
+
 <a name="test-hub"></a>
 ## Running automated tests from the Test hub
 
-#### Q: Can I override the build or environment set at the test plan level for a specific instance of test run?
+[Go to related topic &gt;](run-automated-tests-from-test-hub.md)
+
+### Q: Can I override the build or environment set at the test plan level for a specific instance of test run?
 
 **A:** Yes, you can do this using the **Run with options** command.
 Open the shortcut menu for the test suite in the left column and choose
@@ -158,7 +166,7 @@ Enter the following values in the Run with options dialog and then choose **OK**
 
 ![Configuring the Run with options dialog](_img/run-automated-tests-from-test-hub/run-auto-tests-from-hub-09a.png)
 
-#### Q: Why use release environments to run tests? 
+### Q: Why use release environments to run tests? 
 
 **A:** Release Management offers a compelling orchestration workflow
 to obtain test binaries as artifacts and run tests. This workflow shares
@@ -172,7 +180,7 @@ and after running tests. Examples include preparing and cleaning test data,
 creating and cleaning configuration files, and more.
 
 <a name="faq-ondemandruns"></a>
-#### Q: How does selecting "Test run (for on-demand runs)" in the Visual Studio Test task work?
+### Q: How does selecting "Test run" in the Visual Studio Test task version 2 work?
 
 **A:** The Test management sub-system uses the test run object to
 pass the list of tests selected for execution. The test task looks
@@ -185,7 +193,7 @@ and the test run identifiers to the tests that were submitted for
 on-demand test execution. 
 
 <a name="faq-agentmode"></a>
-#### Q: Should the agent run in interactive mode or as a service?
+### Q: Should the agent run in interactive mode or as a service?
 
 **A:** If you are running UI tests such as
 [coded UI](https://docs.microsoft.com/en-us/visualstudio/test/use-ui-automation-to-test-your-code)
@@ -198,24 +206,24 @@ the agent can be run as a service or in interactive mode. See
 [Deploy an agent on Windows](../../build-release/actions/agents/v2-windows.md),
 and [Agent pools and queues](../../build-release/concepts/agents/pools-queues.md). 
 
-#### Q: Where can I find detailed documentation on how to run Selenium tests?
+### Q: Where can I find detailed documentation on how to run Selenium tests?
 
 **A:** See [Get started with Selenium testing](continuous-test-selenium.md). 
 
-#### Q: What happens if I select multiple configurations for the same test?
+### Q: What happens if I select multiple configurations for the same test?
 
 **A:** Currently, the on-demand workflow is not configuration-aware. 
 In future releases, we plan to pass configuration context to the test
 method and report the appropriate results. 
 
-#### Q: What if I need to download product binaries and test binaries from different builds? Or if I need to obtain artifacts from a source such as Jenkins?
+### Q: What if I need to download product binaries and test binaries from different builds? Or if I need to obtain artifacts from a source such as Jenkins?
 
 **A:** The current capability is optimized for a single team build
 to be tested on-demand using a Release Management workflow.
 We will evaluate support for multi-artifact releases, including
 non-Team Build artifacts such as Jenkins, based on user feedback. 
 
-#### Q: I already have a scheduled testing release definition. Can I reuse the same definition to run test on-demand, or should I create a new definition as shown above? 
+### Q: I already have a scheduled testing release definition. Can I reuse the same definition to run test on-demand, or should I create a new definition as shown above? 
 
 **A:** We recommend you use a separate release definition and environment for on-demand automated testing from the **Test** hub because:
 
@@ -232,15 +240,15 @@ pipeline that contains scheduled testing and deployment to production.
 identifier as an input so that you can trace what triggered the release.
 See [How does selecting "Test run (for on-demand runs)" in the Visual Studio Test task work?](#faq-ondemandruns).
 
-#### Q: Can I trigger these runs and view the results in Microsoft Test Manager?
+### Q: Can I trigger these runs and view the results in Microsoft Test Manager?
 
 **A:** No. MTM will not support running automated tests against Team Foundation
-builds. It only works in the web-based interface for Team Services and TFS.
+builds. It only works in the web-based interface for VSTS and TFS.
 All new manual and automated testing product development investments will be
 in the web-based interface. No further development is planned for MTM. See
 [Guidance on Microsoft Test Manager usage](../../manual-test/mtm/guidance-mtm-usage.md).
 
-#### Q: I have multiple testers in my team. Can they run tests from different test suites or test plans in parallel using the same release definition?
+### Q: I have multiple testers in my team. Can they run tests from different test suites or test plans in parallel using the same release definition?
 
 **A:** They can use the same release definition to trigger multiple
 test runs in parallel if:
@@ -251,7 +259,7 @@ runs can still be triggered but releases will be queued for processing
 until agents are available.
 
 * You have sufficient concurrent pipelines to enable concurrent releases.
-See [Concurrent pipelines in Team Services](../../build-release/concepts/licensing/concurrent-pipelines-ts.md) 
+See [Concurrent pipelines in VSTS](../../build-release/concepts/licensing/concurrent-pipelines-ts.md) 
 or [Concurrent pipelines in TFS](../../build-release/concepts/licensing/concurrent-pipelines-tfs.md) for more information. 
 
 * Testers do not run the same tests in parallel. Doing so may cause
@@ -270,8 +278,8 @@ sources, set this option to
 from different sources, set this option to
 **Allow only one active deployment at a time**. 
 
-<a name="faq-errors".</a>
-#### Q: What are the typical error scenarios or issues I should look out for if my tests don't run?
+<a name="faq-errors"></a>
+### Q: What are the typical error scenarios or issues I should look out for if my tests don't run?
 
 **A:** Check and resolve issues as follows:
 

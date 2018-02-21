@@ -1,12 +1,12 @@
 ---
 title: Provide feedback using the Test &amp; Feedback extension
-description: Manual and exploratory testing - provide feedback in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS) using the Exploratory Testing browser extension
+description: Provide feedback in VSTS or TFS using the Exploratory Testing browser extension
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-manual
 ms.assetid: 41CCD562-C071-4C33-A178-71DDAE83912E
 ms.manager: douge
 ms.author: ahomer
-ms.date: 08/26/2016
+ms.date: 01/18/2018
 ---
 
 # Provide feedback using the Test &amp; Feedback extension
@@ -39,7 +39,7 @@ to assist test teams by providing feedback.
  
    ![Choosing the Provide feedback link in the request email](_img/provide-stakeholder-feedback/provide-stakeholder-feedback-04.png)
 
-1. The Team Services or TFS landing page opens to confirm
+1. The VSTS or TFS landing page opens to confirm
    that the extension has been automatically configured with 
    the feedback request. Choose the ![launch extension](../_img/_shared/exp-test-icon.png)
    icon in the toolbar to launch the extension.
@@ -74,7 +74,7 @@ to assist test teams by providing feedback.
    For more details, see [this topic](../connected-mode-exploratory-testing.md). 
 
    >Some browsers may not provide all the capture capabilities.
-   See [Which web browsers does the extension support?](../getting-started/perform-exploratory-tests.md#browser-support) 
+   See [Which web browsers does the extension support?](../reference-qa.md#browser-support) 
  
 1. When you are done capturing feedback:
 
@@ -96,7 +96,7 @@ to assist test teams by providing feedback.
 
    ![Entering a title and star rating](../_img/_shared/provide-stakeholder-feedback-09.png)
 
-1. Save your feedback. This create a work item in Team Services
+1. Save your feedback. This create a work item in VSTS
    or TFS containing all your feedback.
  
 1. Continue to capture more feedback if required. You can submit 

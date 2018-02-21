@@ -1,33 +1,30 @@
 ---
-title: Run manual tests in Visual Studio Team Services
-description: Run manual tests and record their results with Microsoft Test Runner and Visual Studio Team Services
+title: Run manual tests in VSTS
+description: Run manual tests and record their results with Microsoft Test Runner and VSTS
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-manual
 ms.assetid: 616919f3-7339-4813-9dcf-82ead3476b1a
 ms.manager: douge
 ms.author: ahomer
-ms.date: 08/12/2016
+ms.date: 01/18/2018
+ms.topic: get-started-article
 ---
 
 # Run manual tests
 
-[!INCLUDE [version-header-ts-tfs15](../_shared/version-header-ts-tfs15.md)] 
+[!INCLUDE [version-header-vs-ts-tfs](../_shared/version-header-vs-ts-tfs.md)] 
 
 Run your manual tests and record the test results for each test step 
 using Microsoft Test Runner. If you find an issue when testing, 
 use Test Runner to create a bug. Test steps, screenshots, and comments 
 are automatically included in the bug. 
 
-* [Run tests for web apps](#run-web)
-* [Run tests for desktop apps](#run-desktop)
-
-You just need [Basic access](https://www.visualstudio.com/team-services/compare-features/) 
-to run tests that have been assigned to you with Visual Studio Team Services. 
-Learn more about the
-[access](https://www.visualstudio.com/pricing/visual-studio-online-pricing-vs) 
+> You just need [Basic access](https://www.visualstudio.com/team-services/compare-features/) 
+to run tests that have been assigned to you with Visual Studio Team Services (VSTS). 
+Learn more about the [access](https://www.visualstudio.com/pricing/visual-studio-online-pricing-vs) 
 that you need for more advanced testing features.
 
-[Can I run tests offline and then import the results?](#runoffline)
+[!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
 
 <a name="run-web"></a>
 ## Run tests for web apps
@@ -68,8 +65,8 @@ that you need for more advanced testing features.
    ![Bugs logged](_img/run-manual-tests/RunTest_5.png)
 
 1. When you've run all your tests, save the results and close Test Runner. 
-   All the test results are stored in Visual Studio Team Services.
-   [How do I resume testing, or run one or more tests again?](#qanda)
+   All the test results are stored in VSTS.
+   [How do I resume testing, or run one or more tests again?](../reference-qa.md#qanda)
 
 1. View the testing status for your test suite.
    You see the most recent results for each test.
@@ -81,6 +78,8 @@ that you need for more advanced testing features.
    work item to view the bugs filed by the tester.
    
    ![View bugs filed](_img/run-manual-tests/view-bugs.png)  
+
+[Can I run tests offline and then import the results?](../reference-qa.md#runoffline)
 
 <a name="run-desktop"></a>
 ## Run tests for desktop apps
@@ -105,97 +104,16 @@ However, if you want to collect more types of data, run your tests using
 
    ![Selecting the Test Runner and options](../_img/_shared/run-manual-tests-19.png)
 
-1. Choose **OK** to start testing. 
+1. Choose **OK** to start testing. For more information, see
+   [Collect diagnostic data](../collect-diagnostic-data.md#collect-desktop).
 
-For more information, see
-[Collect diagnostic data](../collect-diagnostic-data.md#collect-desktop).
+[Can I run tests offline and then import the results?](../reference-qa.md#runoffline)
 
-## Try this next
+## See also
 
-* [View your test progress with lightweight charts](track-test-status.md)
-* [Control how long to keep test results](how-long-to-keep-test-results.md)
+*  [FAQs for manual testing](../reference-qa.md#runtests)
 
-## Q&A
+## Next step
 
-<!-- BEGINSECTION class="md-qanda" -->
-
-<a name="qanda"></a>
-#### Q:  How do I rerun a test?
-
-A:  Just select any test and choose **Run**.
-
-#### Q:  Can I run all the tests in a test suite together?
-
-A:  Yes, select a test suite and choose **Run**. This runs all the active 
-tests in the test suite. If you haven't run a test yet, its state 
-is active. You can reset the state of a test to active if you want to rerun it.  
-
-![Select and run all active tests in a test suite](_img/run-manual-tests/RunTestsRunSuite.png)
-
-#### Q: Can I choose a build to run tests against?
-
-A: Yes, Choose **Run** and then select **Run with options**.
-
-![Starting a test with options](../_img/_shared/collect-diagnostic-data-16.png) 
-
-Select the build you want from the drop-down list.
-
-![Selecting the build to include a link to in the results](_img/run-manual-tests/select-build-for-webrunner.png) 
-
-Any bug filed during the run will automatically be associated 
-with the selected build, and the test outcome will be published
-against that build.
-
-#### Q: Can I fix my test steps while I'm running a test?
-
-A:  Yes, if you have the Test Manager for Visual Studio Team Services. 
-You can insert, move, or delete steps. 
-Or you can edit the text itself. Use the edit icon next to the test 
-step number to do this.
-    
-![Select the edit icon to edit test steps](_img/run-manual-tests/RunTest_11.png) 
-
-The tool to edit the test steps is shown.
-    
-![Fix test steps when you run a test](_img/run-manual-tests/RunTest_9.png) 
-
-#### Q: Can I add a screenshot to the test results when I am running a test?
-
-A: If you are using Google Chrome, you can use 
-the web runner to take screenshots of the web 
-app while testing. 
-
-![Capturing a screenshot from the app](../_img/_shared/collect-diagnostic-data-01.png) 
-
-For more information, see [Collect diagnostic data](../collect-diagnostic-data.md#web-screenshot).
-
-#### Q: Can I capture my actions on the app as a log? 
-A: If you are using Google Chrome, you can use 
-the web runner capture your actions on the web 
-app as image logs while testing.
- 
-![Capturing an image action log from the app](../_img/_shared/collect-diagnostic-data-06.png) 
-
-For more information, see [Collect diagnostic data](../collect-diagnostic-data.md#web-log).
-
-#### Q: Can I capture screen recordings of my app?
-A: If you are using Google Chrome, you can use 
-the web runner to capture screen recordings of 
-your web and desktop apps while testing. 
-
-![Capturing a screen recording from the app](../_img/_shared/collect-diagnostic-data-11.png) 
-
-For more information, see [Collect diagnostic data](../collect-diagnostic-data.md#web-recording).
-
-#### Q:  How do I control how long I keep my test data?
-
-A:  [Learn more here](how-long-to-keep-test-results.md).
-
-<a name="runoffline"></a>
-#### Q: Can I run tests offline and then import the results?
-
-A: Yes, see the [Offline Test Execution extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.OfflineTestExecution).
-
-<!-- ENDSECTION --> 
-
-[!INCLUDE [help-and-support-footer](../_shared/help-and-support-footer.md)] 
+> [!div class="nextstepaction"]
+> [View your test progress](track-test-status.md)

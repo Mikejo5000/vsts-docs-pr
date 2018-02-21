@@ -3,9 +3,9 @@ title: Understand SSH passphrases
 description: Understand what a SSH passphrase is and why the Git Credential Manager for Windows needs it.
 ms.assetid: 266f5d0e-78b9-4911-9bdf-ab509f17ff23
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-git
+ms.technology: vs-devops-git 
 ms.manager: douge
-ms.author: routlaw
+ms.author: sdanie
 ms.date: 08/11/2016
 ---
 

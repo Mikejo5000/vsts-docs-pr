@@ -1,12 +1,12 @@
 ---
 title: Request stakeholder feedback using the Test &amp; Feedback extension
-description: Manual and exploratory testing - request stakeholder feedback in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS) using the Exploratory Testing browser extension
+description: Request stakeholder feedback in VSTS or TFS using the Exploratory Testing browser extension
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-manual
 ms.assetid: 6AE1D62D-43EE-4C0B-92CD-F11BC10A9CA8
 ms.manager: douge
 ms.author: ahomer
-ms.date: 08/26/2016
+ms.date: 01/18/2018
 ---
 
 # Request stakeholder feedback using the Test &amp; Feedback extension
@@ -18,7 +18,7 @@ ms.date: 08/26/2016
 <a name="request"></a>
 ## Request feedback from stakeholders
 
-Request feedback from stakeholders directly from a Team Services or TFS work item. 
+Request feedback from stakeholders directly from a VSTS or TFS work item. 
 
 1. Open the work item form for the user story or feature for which
    you want to request feedback.
@@ -35,18 +35,10 @@ Request feedback from stakeholders directly from a Team Services or TFS work ite
 
 1. Choose **Send** to generate emails to all the selected stakeholders.
 
-## Q&A
-
-<!-- BEGINSECTION class="md-qanda" -->
-
-#### Q: Can teams request feedback from other team members, such as users having Basic access?
-
-**A**: Yes, teams can request feedback from other team members too. 
-Just add their names in the feedback request form so that a 
-**Request feedback** email is sent to them. Also see
-[Can users with Basic access respond to feedback requests?](provide-stakeholder-feedback.md#non-stakeholder-feedback).
-
-<!-- ENDSECTION --> 
+> [!NOTE]
+> Teams can request feedback from other team members, such as users having Basic access. 
+> Just add their names in the feedback request form so that a **Request feedback** email is sent to them.
+> Also see [Can users with Basic access respond to feedback requests?](provide-stakeholder-feedback.md#non-stakeholder-feedback).
 
 ## See also
 

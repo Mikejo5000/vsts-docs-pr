@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-manual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 10/20/2016
+ms.date: 01/18/2018
 ---
 
 # Plan manual tests with Microsoft Test Manager
@@ -14,6 +14,8 @@ ms.date: 10/20/2016
 [!INCLUDE [version-header-vs-ts-tfs](../_shared/version-header-vs-ts-tfs.md)] 
 
 At the start of a sprint, find out what you need to test. Discussing test cases is a great way to help the team understand the detail of what your users need. Tests planned in this way provide a clear target for the development team.  
+
+[!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
   
 > **TIP**
 > You can also use [the web portal to plan manual tests](../getting-started/create-a-test-plan.md). It is generally more convenient for creating test cases.  

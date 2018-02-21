@@ -1,18 +1,18 @@
 ---
-title: Release Management concurrent pipelines in Team Foundation Server
-description: Release Management concurrent pipelines in Team Foundation Server (TFS)
+title: Concurrent pipelines in Team Foundation Server
+description: Release Management concurrent pipelines pricing and availability in Microsoft Team Foundation Server (TFS)
 ms.assetid: 8C578915-5C23-4563-957E-7AD1C6FB80FF
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-release
+ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: alewis
 ms.date: 10/20/2016
 ---
 # Concurrent release pipelines in Team Foundation Server
 
-**TFS 2017 | [Team Services](concurrent-pipelines-ts.md)**
+**[VSTS](concurrent-pipelines-ts.md) | TFS 2018 | TFS 2017**
 
-This article describes the licensing model for Release Management in Team Foundation Server 2017 (TFS 2017). We don't charge you for Team Foundation Build (TFBuild) so long as you have a TFS Client Access License (CAL).
+This article describes the licensing model for Release Management in Team Foundation Server 2017 (TFS 2017) or later. We don't charge you for Team Foundation Build (TFBuild) so long as you have a TFS Client Access License (CAL).
 
 A TFS _concurrent pipeline_ gives you the ability to run a single release at a time in a team project collection. You can keep hundreds or even thousands of release definitions in your collection. But, to run more than one release at a time, you need additional concurrent pipelines.
 
@@ -35,7 +35,7 @@ A release requires a concurrent pipeline only when it is being actively deployed
 0. Even though Release 11 is approved, it resumes only after Release 12's deployment is completed.
 0. Release 11 is waiting for manual intervention. Release 13 cannot start because the manual intervention state consumes a concurrent pipeline.
 
-> Manual intervention does not consume a pipeline in TFS 2017 Update 1 and newer.
+> Manual intervention does not consume a pipeline in TFS 2017.1 and newer.
 
 ## Concurrent processing within a single release
 
@@ -85,7 +85,7 @@ After you've added these users, additional licenses will appear on the resource 
 
 ## Purchase additional concurrent pipelines
 
-If you need to run more concurrent releases, you can [buy additional private pipelines from the Visual Studio marketplace](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines). Since there is no way to directly purchase concurrent pipelines from Marketplace for a TFS instance at present, you must first buy concurrent pipelines for a Team Services account. After you buy the private pipelines for a Team Services account, you enter the number of purchased concurrent pipelines manually on the resource limits page described below.
+If you need to run more concurrent releases, you can [buy additional private pipelines from the Visual Studio marketplace](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines). Since there is no way to directly purchase concurrent pipelines from Marketplace for a TFS instance at present, you must first buy concurrent pipelines for a VSTS account. After you buy the private pipelines for a VSTS account, you enter the number of purchased concurrent pipelines manually on the resource limits page described below.
 
 ## View and manage concurrent pipelines
 
@@ -103,7 +103,7 @@ If you need to run more concurrent releases, you can [buy additional private pip
 
 TFS users with a [TFS CAL](https://www.visualstudio.com/team-services/tfs-pricing) can author as many releases as they want.
 
-To approve releases, a TFS CAL is not necessary; any user with [stakeholder access](../../../work/connect/work-as-a-stakeholder.md) can approve or reject releases.
+To approve releases, a TFS CAL is not necessary; any user with [stakeholder access](../../../security/get-started-stakeholder.md) can approve or reject releases.
 
 ### Do I need concurrent pipelines to run builds on TFS?
 
@@ -117,6 +117,6 @@ In TFS 2015, so long as your users have a TFS CAL, they can use release manageme
 
 In TFS 2013 there is no change in the licensing of release management features.
 
-### How is release management licensed in Team Services?
+### How is release management licensed in VSTS?
 
-See [concurrent pipelines in Team Services](concurrent-pipelines-ts.md).
+See [concurrent pipelines in VSTS](concurrent-pipelines-ts.md).

@@ -5,13 +5,13 @@ ms.assetid: 4264ddaf-ef39-430a-a388-770e2d06b319
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfvc
 ms.manager: douge
-ms.author: routlaw
+ms.author: sdanie
 ms.date: 08/10/2016
 ---
 
 # Remove Access to Version Control Files
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 As a Team Foundation administrator, you may have to remove access to a file that is under version control. For example, someone may check in a file infected with a virus. You can also permanently destroy version controlled files. For more information, see [Destroy Version Controlled Files](destroy-version-controlled-files.md).
 
@@ -27,7 +27,7 @@ The following procedure provides the details for removing the file by using the 
 
 **Required Permissions**
 
-To remove access to Team Foundation version control files, you must belong to the **Team Foundation Administrators** group. For more information, see [Team Foundation Server Permissions](../setup-admin/permissions.md).
+To remove access to Team Foundation version control files, you must belong to the **Team Foundation Administrators** group. For more information, see [Permissions and groups reference](../security/permissions.md).
 
 ### To remove access to a file under version control
 

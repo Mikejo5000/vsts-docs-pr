@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-manual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 10/20/2016
+ms.date: 01/18/2018
 ---
 
 # Connect Microsoft Test Manager to your team project and test plan
@@ -14,12 +14,14 @@ ms.date: 10/20/2016
 [!INCLUDE [version-header-vs-ts-tfs](../_shared/version-header-vs-ts-tfs.md)] 
 
 Use Microsoft Test Manager (MTM) to help you test the application you built. MTM stores your test plans and results on Team Foundation Server (TFS).  
+
+[!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
   
 ### Connect Microsoft Test Manager to your Team Project and Test Plan  
   
-1. If you don't have MTM, download and install [Microsoft Visual Studio Test Professional](https://www.visualstudio.com/downloads/).  
+1. If you don't have MTM, download and install [Visual Studio Enterprise](https://www.visualstudio.com/downloads/) or [Visual Studio Test Professional ](https://www.visualstudio.com/vs/test-professional/).  
   
-   Don't have a team project? [Set up a team project](../../setup-admin/create-team-project.md)  
+   Don't have a team project? [Set up a team project](../../accounts/create-team-project.md)  
   
 1. Connect to TFS and choose your team project.  
   

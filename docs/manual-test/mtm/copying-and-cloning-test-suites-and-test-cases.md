@@ -6,17 +6,21 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-manual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 10/20/2016
+ms.date: 01/18/2018
 ---
 
 # Copying and cloning test suites and test cases
 
 [!INCLUDE [version-header-vs-ts-tfs](../_shared/version-header-vs-ts-tfs.md)] 
 
-There are several ways to duplicate test suites and test cases when you are [planning tests](../getting-started/create-a-test-plan.md) in Team Foundation Server (TFS).  
-  
-It's important to understand that a test suite or plan contains a set of *references* to test cases. If you delete the suite, or if you delete a test case from every suite, the test case still exists as a work item in Team Foundation, and you can find it with a query.  
-  
+There are several ways to duplicate test suites and test cases.
+It's important to understand that a test suite or plan contains a set of *references* to test cases.
+If you delete the suite, or if you delete a test case from every suite, the test case still exists as a work item in VSTS or TFS, and you can find it there with a query.  
+
+For details about copying tests in VSTS or TFS, see [this FAQ](../reference-qa.md#copyclonetce).
+
+[!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
+
 ## Copying and cloning in Microsoft Test Manager  
 
 All these procedures are performed in Microsoft Test Manager. Choose **Testing Center**, **Plan**, **Contents**. (You can also [clone from the command line](#tcm).)  
@@ -128,7 +132,7 @@ Tcm.exe can be used to copy test suites. Open a command prompt and change direct
   
 Open the Developer Command Prompt. Alternatively, use a standard command prompt and change directory to **%VS110COMNTOOLS%..\IDE**. Use tcm.exe:  
   
-```ms-dos  
+```MS-DOS  
 cd %VS110COMNTOOLS%..\IDE  
   
 tcm suites /clone       
@@ -159,7 +163,7 @@ Parameters:
   
  Examples:  
   
-```  
+```MS-DOS  
 tcm suites /clone /collection:http://tfs.fabrikam.com:8080/tfs/DefaultCollection  
    /teamproject:IceCream /destinationteamproject:ToyStore  
    /clonerequirements  

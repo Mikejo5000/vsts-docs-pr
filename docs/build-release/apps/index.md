@@ -1,6 +1,6 @@
 ---
-title: Build and deploy your app - examples | Team Services & TFS 
-description: Build and deploy your app examples with Visual Studio Team Services and Team Foundation Server
+title: Build and deploy your app - examples | VSTS & TFS 
+description: Build and deploy your app examples with VSTS and Team Foundation Server
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: 955133FD-76B4-4D63-AB46-9043D96F8A9D
@@ -13,8 +13,6 @@ ms.date: 08/22/2016
 
 [!INCLUDE [temp](../_shared/version.md)]
 
-[!INCLUDE [temp](../_shared/ci-cd-newbies.md)]
-
 This is a selection of the growing range of examples we are creating
 to demonstrate the many ways you can build and deploy
 a range of application types, code languages, development
@@ -24,12 +22,13 @@ continuous integration (CI) and continuous deployment (CD) process.
 <div style="float:left;width:325px;margin:3px">
 <p style="font-weight:bold;padding-top:10px">Build your app</p>
 <ul style="padding-left:30px">
- <li style="margin-bottom:5px">[ASP.NET 4 apps](aspnet/ci/build-aspnet-4.md)</li>
- <li style="margin-bottom:5px">[ASP.NET Core apps](aspnet/ci/build-aspnet-core.md)</li>
- <li style="margin-bottom:5px">[Java apps with Maven](../get-started/java-maven.md)</li>
- <li style="margin-bottom:5px">[Node apps](node/nodejs-to-azure.md)</li>
- <li style="margin-bottom:5px">[Cloud Services apps](aspnet/ci/build-aspnet-cloudservice.md)</li>
- <li style="margin-bottom:5px">[SQL database DACPAC](aspnet/ci/build-aspnet-dacpac.md)</li>
+ <li style="margin-bottom:5px">[ASP.NET 4 apps](aspnet/build-aspnet-4.md)</li>
+ <li style="margin-bottom:5px">[ASP.NET Core apps](aspnet/build-aspnet-core.md)</li>
+ <li style="margin-bottom:5px">[Java apps with Gradle](../apps/java/build-gradle.md)</li>
+ <li style="margin-bottom:5px">[Java apps with Maven](../apps/java/build-maven.md)</li>
+ <li style="margin-bottom:5px">[Node apps](nodejs/build-gulp.md)</li>
+ <li style="margin-bottom:5px">[Cloud Services apps](aspnet/build-aspnet-cloudservice.md)</li>
+ <li style="margin-bottom:5px">[SQL database DACPAC](aspnet/build-aspnet-dacpac.md)</li>
  <li style="margin-bottom:5px">[C++ apps for Windows](windows/cpp.md)</li>
  <li style="margin-bottom:5px">[Universal Windows Platform apps](windows/universal.md)</li>
 </ul>
@@ -40,9 +39,7 @@ continuous integration (CI) and continuous deployment (CD) process.
 <ul style="padding-left:30px">
  <li style="margin-bottom:5px">[Xamarin mobile apps](mobile/xamarin.md)</li>
  <li style="margin-bottom:5px">[Xcode mobile projects](mobile/xcode-ios.md)</li>
- <li style="margin-bottom:5px">[Cordova Build](mobile/cordova-build.md)</li>
- <li style="margin-bottom:5px">[Cordova Command](mobile/cordova-command.md)</li>
- <li style="margin-bottom:5px">[Simple, secure CI app signing](mobile/secure-certs.md)</li>
+ <li style="margin-bottom:5px">[Sign your mobile app](mobile/app-signing.md)</li>
 </ul>
 </div>
 
@@ -52,9 +49,9 @@ continuous integration (CI) and continuous deployment (CD) process.
 <p style="font-weight:bold;padding-top:10px">Deploy your app</p>
 <ul style="padding-left:30px">
  <li style="margin-bottom:5px">[Azure web apps](cd/deploy-webdeploy-webapps.md)</li>
- <li style="margin-bottom:5px">[Azure cloud services](aspnet/cd/deploy-cloudservice-cloudservice.md)</li>
- <li style="margin-bottom:5px">[Azure SQL database](aspnet/cd/deploy-dacpac-sqlpackage.md)</li>
- <li style="margin-bottom:5px">[Azure SQL database scripted](aspnet/cd/deploy-database-sqlscripts.md)</li>
+ <li style="margin-bottom:5px">[Azure cloud services](cd/deploy-cloudservice-cloudservice.md)</li>
+ <li style="margin-bottom:5px">[Azure SQL database](cd/deploy-dacpac-sqlpackage.md)</li>
+ <li style="margin-bottom:5px">[Azure SQL database scripted](cd/deploy-database-sqlscripts.md)</li>
  <li style="margin-bottom:5px">[Azure Container Service (Kubernetes)](cd/azure/deploy-container-kubernetes.md)</li>
  <li style="margin-bottom:5px">[IIS using deployment groups](cd/deploy-webdeploy-iis-deploygroups.md)</li>
  <li style="margin-bottom:5px">[IIS using Win RM](cd/deploy-webdeploy-iis-winrm.md)</li>
@@ -77,8 +74,6 @@ continuous integration (CI) and continuous deployment (CD) process.
 <div style="float:left;width:325px;margin:3px">
 <p style="font-weight:bold;padding-top:10px">Azure Continuous Delivery preview</p>
 <ul style="padding-left:30px">
- <li style="margin-bottom:5px">[ASP.NET 4 using Azure](../get-started/aspnet-4-ci-cd-azure-automatic.md)</li>
- <li style="margin-bottom:5px">[ASP.NET 4 using Visual Studio](../get-started/aspnet-4-ci-cd-vs-automatic.md)</li>
 </ul>
 </div>
 
@@ -95,7 +90,7 @@ continuous integration (CI) and continuous deployment (CD) process.
 <p style="font-weight:bold;padding-top:10px">More examples</p>
 <ul style="padding-left:30px">
  <li style="margin-bottom:5px">[Continuous integration, test, and deployment](../test/example-continuous-testing.md)</li>
- <li style="margin-bottom:5px">[Continuous integration for a Service Fabric app using Team Services](https://azure.microsoft.com/en-us/documentation/articles/service-fabric-set-up-continuous-integration/)</li>
+ <li style="margin-bottom:5px">[Continuous integration for a Service Fabric app using VSTS](https://azure.microsoft.com/en-us/documentation/articles/service-fabric-set-up-continuous-integration/)</li>
 </ul>
 </div>
 

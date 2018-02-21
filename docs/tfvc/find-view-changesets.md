@@ -5,13 +5,13 @@ ms.assetid: bf36f78e-231a-46a1-94e4-4b44852f30b0
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfvc
 ms.manager: douge
-ms.author: routlaw
+ms.author: sdanie
 ms.date: 08/10/2016
 ---
 
 # Find and view changesets
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 When you [check in your changes](check-your-work-team-codebase.md), they are stored on the server as a changeset. Changesets contain the history of each item in version control.
 

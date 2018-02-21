@@ -1,7 +1,7 @@
 ---
-title: Pick list queries | Team Services & TFS
+title: Pick list queries | VSTS & TFS
 description: Creating queries based on planning, ranking, and priority, integer and pick list fields in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: ca05800c-905a-407f-bea8-a7ee32b65973
 ms.manager: douge
@@ -11,7 +11,7 @@ ms.date: 04/14/2017
 
 # Query by pick list value
 
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 You use planning, ranking, and priority fields to specify which work the team should complete first. By ranking and prioritizing work items, all team members gain an understanding of the relative importance of the work that they must accomplish.  
 
@@ -61,7 +61,7 @@ Features and stories that address Architectural areas<br/>
 </table>  
 
 ##Fields used to plan and prioritize work  
-<p>The following table describes the fields that you can use to plan and prioritize work. Some fields are only valid for a specific process&mdash;[Agile](../guidance/agile-process.md), [Scrum](../guidance/scrum-process.md), or [CMMI](../guidance/cmmi-process.md).</p>
+<p>The following table describes the fields that you can use to plan and prioritize work. Some fields are only valid for a specific process&mdash;[Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md).</p>
 <table width="100%">
 <thead>
 <tr>
@@ -168,8 +168,8 @@ Features and stories that address Architectural areas<br/>
 ## Related notes 
 
 - [Query by a numeric field](query-numeric.md)   
-- [Work item field index](../guidance/work-item-field.md)  
-- [Data types and work item fields](../reference/define-modify-work-item-fields.md).  
+- [Work item field index](../work-items/guidance/work-item-field.md)  
+- [Data types and work item fields](../customize/reference/define-modify-work-item-fields.md).  
  
 ###More on Backlog Priority or Stack Rank fields
 
@@ -177,7 +177,7 @@ The Backlog Priority and Stack Rank fields don't appear on the work item forms. 
 
 To add the field to the form: 
 
-- **Team Services**: Add the Stack Rank field to a work item type ([for the custom process that your team project references](../process/customize-process-form.md)).
+- **VSTS**: Add the Stack Rank field to a work item type ([for the custom process that your team project references](../customize/process/customize-process-form.md)).
 - **TFS**: [Modify the WIT XML definition to add the following control element](../customize/add-modify-wit.md):
 
 	`<Control FieldName="Microsoft.VSTS.Common.StackRank" Type="FieldControl" Label="Stack Rank" LabelPosition="Left" />`

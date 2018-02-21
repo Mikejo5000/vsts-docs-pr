@@ -1,6 +1,6 @@
 ---
-title: Build and Release Management concurrent pipelines in Visual Studio Team Services
-description: Build and Release Management concurrent pipelines in Visual Studio Team Services (VSTS)
+title: Concurrent pipelines in VSTS
+description: Build and Release Management concurrent pipelines pricing and availability in Visual Studio Team Services (VSTS)
 ms.assetid: FAFB2DE4-F462-4E9E-8312-4F343F2A35B8
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
@@ -8,15 +8,18 @@ ms.manager: douge
 ms.author: alewis
 ms.date: 10/20/2016
 ---
-# Concurrent build and release pipelines in Visual Studio Team Services
+# Concurrent build and release pipelines in VSTS
 
-**[TFS 2017](concurrent-pipelines-tfs.md) | Team Services**
+**VSTS | [TFS 2018](concurrent-pipelines-tfs.md) | [TFS 2017](concurrent-pipelines-tfs.md)**
 
-A Team Services _concurrent pipeline_ gives you the ability to run a single build or a single release at a time in your account. There are two types of concurrent pipelines in Visual Studio Team Services.
+> [!NOTE]
+> October 2017 update: We're temporarily providing unlimited private pipelines while we work on fixing an issue. We estimate that we'll fix the issue and return to providing only the private pipelines you have sometime in November 2017.
+
+A VSTS _concurrent pipeline_ gives you the ability to run a single build or a single release at a time in your account. There are two types of concurrent pipelines in VSTS.
 
 ## Private pipelines
 
-If you want to run builds and releases on your own machines ([private agents](../agents/agents.md)), then you need _private pipelines_. We provide one free private pipeline in each Team Services account. In addition, every active Visual Studio Enterprise subscriber in your account contributes a free private pipeline. You can buy [additional private pipelines](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines) from the Visual Studio Marketplace. After you've done this, you can deploy your own [private agents](../../concepts/agents/agents.md) and use them with these private pipelines. You can register any number of private agents with your account for no additional charge.
+If you want to run builds and releases on your own machines ([private agents](../agents/agents.md)), then you need _private pipelines_. We provide one free private pipeline in each VSTS account. In addition, every active Visual Studio Enterprise subscriber in your account contributes a free private pipeline. You can buy [additional private pipelines](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines) from the Visual Studio Marketplace. After you've done this, you can deploy your own [private agents](../../concepts/agents/agents.md) and use them with these private pipelines. You can register any number of private agents with your account for no additional charge.
 
 ## Hosted pipelines
 
@@ -24,7 +27,7 @@ If you want to run builds and releases on machines managed by Microsoft ([hosted
 
 ## How a concurrent pipeline is consumed
 
-For example, consider a Team Services account that has only one concurrent pipeline. This allows users in that account to run only one build or release at a time. When additional builds and releases are triggered, they are queued and will wait for the previous one to complete.
+For example, consider a VSTS account that has only one concurrent pipeline. This allows users in that account to run only one build or release at a time. When additional builds and releases are triggered, they are queued and will wait for the previous one to complete.
 
 A release requires a concurrent pipeline only when it is being actively deployed to an environment. Waiting for an approval or a manual intervention does not consume a concurrent pipeline.
 
@@ -44,7 +47,7 @@ Concurrent processing within a single build or release does not require addition
 
 * In a release process, deploy to multiple environments at the same time.
 
-For example, suppose your Team Services account has three concurrent pipelines. You can have more than three agents running at the same time to perform parallel operations within builds and releases. For instance, notice below at 9 a.m. that five agents are actively running jobs from three concurrent pipelines.
+For example, suppose your VSTS account has three concurrent pipelines. You can have more than three agents running at the same time to perform parallel operations within builds and releases. For instance, notice below at 9 a.m. that five agents are actively running jobs from three concurrent pipelines.
 
 ![Concurrent pipelines with additional agents example](_img/concurrent-pipelines-vsts/concurrent-pipelines-with-additional-agents-example.png)
 
@@ -78,43 +81,7 @@ In the following scenarios you might need multiple concurrent pipelines:
 
 0. Select **Pipelines queue...** to display all the builds and releases that are actively consuming an available pipeline or that are queued waiting for a pipeline to be available.
 
-<h2 id="pipeline-issues">Known issues and planned improvements</h2>
-
-### Blocked pipelines under certain conditions
-
-Builds and releases from all projects are queued and allocated to pipelines in the order they are created. Because of this, it may so happen that a build or a release may wait for a pipeline because of earlier builds waiting for agents. For example:
-
-0. You purchase three pipelines in your account. You have configured two agent pools: A and B, and each contain two agents.
-
-0. You queue three builds targeted for pool A. Two of these builds will start running immediately since you have two agents in pool A. The third has an available pipeline, however it does not have an agent available.
-
-0. You then queue a fourth build targeted for pool B. Since builds are assigned pipelines in the order in which they are created, this build waits for the three builds above to complete, even though there are agents available in pool B.
-
-We're working to improve this model. For now, the workaround is to add more agents to your pool. For example, you could add an agent to pool A mentioned above.
-
-### Sharing of concurrent pipelines among private and hosted agents
-
-If you have sufficient private agents, you can use the concurrent pipelines - both private and hosted - to run builds and releases on private agents. For example:
-
-0. You purchase a single private pipeline and a single hosted pipeline.
-
-0. You deploy two private agents in a pool.
-
-0. One build and one release are running in your private agent pool.
-
-0. A build is queued in the hosted pool. That build will not start until one of the builds in your private pool is completed.
-
-The same is not true with hosted pipelines and hosted agents. For example:
-
-0. You purchase a single private pipeline and a single hosted pipeline.
-
-0. You see a single hosted agent in Hosted pool and a single hosted agent in Hosted VS2017 pool.
-
-0. You can only run one build or release at a time across all of the hosted pools.
-
-We're working on using only private pipelines for jobs that run on private agents.
-
-### Sharing of pipelines across projects in a collection
+## Sharing of pipelines across projects in a collection
 
 Pipelines are purchased at the account level, and they are shared amongst all projects in an account. We don't yet offer a way to partition or dedicate certain pipelines to a specific project or agent pool. For example:
 
@@ -130,9 +97,9 @@ In the future, we plan to support finer control on allocation of pipelines.
 
 ### Who can use the Build and Release Management features?
 
-Team Services users with [basic access](https://www.visualstudio.com/products/visual-studio-team-services-feature-matrix-vs) can author as many builds and releases as they want.
+VSTS users with [basic access](https://www.visualstudio.com/products/visual-studio-team-services-feature-matrix-vs) can author as many builds and releases as they want.
 
-To approve releases, basic access is not necessary. Any user with [stakeholder access](../../../work/connect/work-as-a-stakeholder.md) can approve or reject releases.
+To approve releases, basic access is not necessary. Any user with [stakeholder access](../../../security/get-started-stakeholder.md) can approve or reject releases.
 
 ### Are there any limits on the number of builds and release definitions that I can create?
 
@@ -142,10 +109,6 @@ No. You can create hundreds or even thousands of definitions for no charge. You 
 
 You can register one XAML build controller for each private pipeline in your account. Your account gets at least one free private pipeline, so you can register one XAML build controller for no additional charge. For each additional XAML build controller, you'll need an additional private pipeline.
 
-### As a Visual Studio Enterprise subscriber, do I get additional pipelines for TFS and Team Services?
+### As a Visual Studio Enterprise subscriber, do I get additional pipelines for TFS and VSTS?
 
-Yes. Visual Studio Enterprise subscribers get [one concurrent private pipeline in Team Foundation Server 2017](concurrent-pipelines-tfs.md) and one concurrent private pipeline in each Team Services account of which they are a member.
-
-### I'm using the Hosted Linux Preview queue and I'm getting only one agent at a time even though I purchased multiple hosted pipelines. Why?
-
-We're offering the **Hosted Linux Preview** queues as a preview. So we provide only one of these agents at a time. Eventually we'll offer multiple hosted agents with these capabilities.
+Yes. Visual Studio Enterprise subscribers get [one concurrent private pipeline in Team Foundation Server 2017 or later](concurrent-pipelines-tfs.md) and one concurrent private pipeline in each VSTS account of which they are a member.

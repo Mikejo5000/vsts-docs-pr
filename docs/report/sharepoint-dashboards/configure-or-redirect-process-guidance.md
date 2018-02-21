@@ -7,15 +7,16 @@ ms.assetid: 644ee4b7-3653-4943-9809-3d14d4d79c48
 ms.manager: douge
 ms.author: kaelli
 ms.date: 03/09/2017
+ms.topic: get-started-article
 ---
 
 # Configure or redirect process guidance
 
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
-Your team can use process guidance to capture how they coordinate work on a team project, how to use work item types (WITs), and how to work with reports throughout the project life cycle. For generic guidance, see [Agile](../../work/guidance/agile-process.md), [Scrum](../../work/guidance/scrum-process.md), and [CMMI](../../work/guidance/cmmi-process.md) process template artifacts. You can customize your own process guidance and redirect the F1 help links from select artifacts to point to your custom guidance.  
+Your team can use process guidance to capture how they coordinate work on a team project, how to use work item types (WITs), and how to work with reports throughout the project life cycle. For generic guidance, see [Agile](../../work/work-items/guidance/agile-process.md), [Scrum](../../work/work-items/guidance/scrum-process.md), and [CMMI](../../work/work-items/guidance/cmmi-process.md) process template artifacts. You can customize your own process guidance and redirect the F1 help links from select artifacts to point to your custom guidance.  
   
- If your team project was created using the Basic configuration or is hosted on Team Services, neither your project portal nor process guidance is enabled. This means that the links that redirect F1 help within a work item form aren't available.  
+ If your team project was created using the Basic configuration or is hosted on VSTS, neither your project portal nor process guidance is enabled. This means that the links that redirect F1 help within a work item form aren't available.  
   
  To configure a project portal, see [Configure or add a project portal](configure-or-add-a-project-portal.md). If you want to configure process guidance, choose from one of the following options based on your deployment configuration and team requirements:  
   
@@ -41,7 +42,7 @@ Your team can use process guidance to capture how they coordinate work on a team
   
 ##  <a name="guid_enabled"></a> Determine if process guidance is enabled for your team project portal  
   
-1.  From Visual Studio or Team Explorer, [connect to your team project](https://www.visualstudio.com/en-us/docs/connect/connect-team-projects).  
+1.  From Visual Studio or Team Explorer, [connect to your team project](/vsts/user-guide/connect-team-projects).  
   
 2.  Open Portal Settings.  
   
@@ -56,7 +57,7 @@ Your team can use process guidance to capture how they coordinate work on a team
 ##  <a name="simple"></a> Specify a website for your process guidance  
  Choose this option when you aren't using SharePoint Products or when your team project is hosted on VSTS.  
   
-1.  If you aren't a member of the Team Project Administrators group, [get added now](https://www.visualstudio.com/en-us/docs/setup-admin/add-users).  
+1.  If you aren't a member of the Team Project Administrators group, [get added now](/vsts/accounts/add-administrator-team-project).  
   
 2.  Open Portal Settings and choose the Process Guidance tab.  
   
@@ -69,7 +70,7 @@ Your team can use process guidance to capture how they coordinate work on a team
 ##  <a name="sp"></a> Specify a SharePoint document library that contains your process guidance  
  Some process guidance links will work only if process guidance has been enabled for your team project.  
   
-1.  If you aren't a member of the Team Project Administrators group, [get added now](https://www.visualstudio.com/en-us/docs/setup-admin/add-users).  
+1.  If you aren't a member of the Team Project Administrators group, [get added now](/vsts/accounts/add-administrator-team-project).  
   
 2.  Open Portal Settings and choose the Process Guidance tab.  
   
@@ -81,7 +82,7 @@ Your team can use process guidance to capture how they coordinate work on a team
   
 ##  <a name="upload"></a> Upload files that support linking to process guidance  
   
-1.  To obtain the process guidance support files for your team project, download them using the Process Template Manager. See [Download the latest version of the process templates](../../work/guidance/manage-process-templates.md).  
+1.  To obtain the process guidance support files for your team project, download them using the Process Template Manager. See [Download the latest version of the process templates](../../work/work-items/guidance/manage-process-templates.md).  
   
 2.  Upload the contents of the Windows SharePoint Services/Process Guidance folder to the SharePoint document library that you have configured for process guidance.  
   
@@ -161,6 +162,6 @@ Your team can use process guidance to capture how they coordinate work on a team
   
 <a name="addportal"></a> 
 ###  Q: Can I embed process guidance within a work item form?  
- **A:** Yes. To specify text or a hyperlink within a work item form, see [LabelText and Text](../../work/reference/labeltext-and-text-xml-elements-reference.md).  
+ **A:** Yes. To specify text or a hyperlink within a work item form, see [LabelText and Text](../../work/customize/reference/labeltext-and-text-xml-elements-reference.md).  
   
- To embed a webpage or html content within a work item form, see [WebpageControlOptions](../../work/reference/webpagecontroloptions-xml-elements-reference.md).
+ To embed a webpage or html content within a work item form, see [WebpageControlOptions](../../work/customize/reference/webpagecontroloptions-xml-elements-reference.md).

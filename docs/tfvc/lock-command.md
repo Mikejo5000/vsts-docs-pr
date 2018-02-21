@@ -1,23 +1,23 @@
 ---
-title: Lock Command
-description: Lock Command
+title: Use the Lock Command to lock or unlock a TFVC file or folder
+description: Lock or unlock files or folder under TFVC version control using the Lock Command
 ms.assetid: 5b62627b-fdb3-4832-a387-811dcc2808e3
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfvc
 ms.manager: douge
-ms.author: routlaw
+ms.author: sdanie
 ms.date: 08/10/2016
 ---
 
 # Lock Command
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Locks or unlocks a file or folder to deny or restore the right of users to check out an item for edit into a different workspace or to check in pending changes to an item from a different workspace.
 
 **Required Permissions**
 
-To use the **lock** command, you must have the **Lock** permission set to **Allow**. Having the Unlock other user's changes permission set to **Allow** is required to remove a lock held by another user if you do not have **Write** permission for that user's workspace. For more information, see [Team Foundation Server Permissions](../setup-admin/permissions.md).
+To use the **lock** command, you must have the **Lock** permission set to **Allow**. Having the Unlock other user's changes permission set to **Allow** is required to remove a lock held by another user if you do not have **Write** permission for that user's workspace. For more information, see [Permissions and groups reference](../security/permissions.md).
 
     tf lock itemspec /lock:(none|checkout|checkin) 
     [/workspace:workspacename] [/recursive] [/login:username,[password]] [/collection:TeamProjectCollectionUrl] 
@@ -44,7 +44,7 @@ To use the **lock** command, you must have the **Lock** permission set to **Allo
 <tr><th><p><strong>Option</strong></p></th><th><p><strong>Description</strong></p></th></tr></thead><tbody>
 <tr>
 	<td><p><strong>/lock</strong></p></td>
-	<td><p>Specifies a lock type or removes a lock from an item. For more information, see <a href="/docs/tfvc/understand-lock-types">Understanding Lock Types</a>.</p><p>Lock Options:</p><ul><li><p><strong>None</strong></p><p>Removes a lock from an item.</p></li><li><p><strong>Checkin</strong></p><p>Enables an item to be checked out and edited in all workspaces but prevents users from checking in changes to the item outside the specified <strong>/workspace</strong> until you explicitly release the check-in lock. If the specified item is locked in any other workspace, the lock operation fails.</p></li><li><p><strong>Checkout</strong></p><p>Prevents users from checking in or checking out the specified items until you explicitly release the lock. If users have locked any one of the specified items, or if pending changes exists against any one of the items, the lock operation fails.</p></li></ul></td></tr>
+	<td><p>Specifies a lock type or removes a lock from an item. For more information, see <a href="understand-lock-types.md">Understanding Lock Types</a>.</p><p>Lock Options:</p><ul><li><p><strong>None</strong></p><p>Removes a lock from an item.</p></li><li><p><strong>Checkin</strong></p><p>Enables an item to be checked out and edited in all workspaces but prevents users from checking in changes to the item outside the specified <strong>/workspace</strong> until you explicitly release the check-in lock. If the specified item is locked in any other workspace, the lock operation fails.</p></li><li><p><strong>Checkout</strong></p><p>Prevents users from checking in or checking out the specified items until you explicitly release the lock. If users have locked any one of the specified items, or if pending changes exists against any one of the items, the lock operation fails.</p></li></ul></td></tr>
 <tr>
 	<td><p><strong>/workspace</strong></p></td>
 	<td><p>Specifies the name of a different workspace in which to apply the lock. By default, the lock is applied in the workspace in which you are currently.</p></td></tr>

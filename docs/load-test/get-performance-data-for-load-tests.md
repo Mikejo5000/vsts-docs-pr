@@ -1,12 +1,12 @@
 ---
-title: Get Application Insights performance data with load tests in Visual Studio Team Services
-description: Get app performance data from Application Insights when you load test with Visual Studio Team Services
+title: Get Application Insights performance data with load tests
+description: Get app performance data from Application Insights in VSTS and TFS
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-performance
 ms.assetid: 5658166B-CA7F-4C6B-B55D-AE745FB78D5C
 ms.manager: douge
 ms.author: ahomer
-ms.date: 08/12/2016
+ms.date: 01/18/2018
 ---
 
 <a name="ApplicationInsights"></a>
@@ -14,24 +14,24 @@ ms.date: 08/12/2016
 
 [!INCLUDE [version-header-vs-ts](_shared/version-header-vs-ts.md)]
 
-When you load test your app in the cloud using Visual Studio Team Services, 
+When you load test your app in the cloud using Visual Studio Team Services (VSTS), 
 you can compare app performance with virtual user load using 
 [Application Insights](https://azure.microsoft.com/documentation/articles/app-insights-overview/).
 Then, by doing a quick root cause analysis, you can figure out which code 
 is causing performance problems.
 
 1. Download and install 
-   [Visual Studio Enterprise 2015](https://www.visualstudio.com/downloads/download-visual-studio-vs), 
+   [Visual Studio Enterprise](https://www.visualstudio.com/downloads/download-visual-studio-vs), 
    if you haven't already done so.
 
-1. [Enable Azure Active Directory](https://www.visualstudio.com/docs/setup-admin/team-services/manage-organization-access-for-your-account-vs)
-   for your Team Services account, if you haven't already done so.
+1. [Enable Azure Active Directory](../accounts/access-with-azure-ad.md)
+   for your VSTS account, if you haven't already done so.
 
-1. [Link your Team Services account with your Azure subscription](https://www.visualstudio.com/docs/setup-admin/team-services/manage-organization-access-for-your-account-vs#connect-your-team-services-account-to-your-directory),
+1. [Link your VSTS account with your Azure subscription](../accounts/connect-account-to-aad.md),
    if you haven't already done so.
 
-1. Sign in to your Team Services account from your web browser to refresh the Azure Resources Manager access token. 
-   The token is valid for 12 hours in the context of Team Services.
+1. Sign in to your VSTS account from your web browser to refresh the Azure Resources Manager access token. 
+   The token is valid for 12 hours in the context of VSTS.
 
    - If you have already signed, you must sign out and then sign in again.<p />
 
@@ -72,9 +72,9 @@ is causing performance problems.
 
 ## See also
 
-* [Q &amp; A for load testing](reference-qa.md#qaappinsights)
+* [FAQs for load testing](reference-qa.md#qaappinsights)
 * [Load test with Visual Studio](getting-started-with-performance-testing.md) 
-* [Load test with Team Services](get-started-simple-cloud-load-test.md) 
+* [Load test with VSTS](get-started-simple-cloud-load-test.md) 
 * [Load test with Azure portal](app-service-web-app-performance-test.md) 
 * [Tutorial: Run load tests before release](run-performance-tests-app-before-release.md) 
 * [Analyze load test results using the Load Test Analyzer](https://msdn.microsoft.com/library/ee923686.aspx)

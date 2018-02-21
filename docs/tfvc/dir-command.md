@@ -1,23 +1,23 @@
 ---
-title: Dir Command
-description: Dir Command
+title: Use the Dir Command to display contents of TFVC directory
+description: Displays all or some of the contents of the server for Team Foundation version control using the Dir command
 ms.assetid: 1e226700-a685-4c42-970b-fa6fd764726f
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfvc
 ms.manager: douge
-ms.author: routlaw
+ms.author: sdanie
 ms.date: 08/10/2016
 ---
 
 # Dir Command
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 The **dir** command displays all or some of the contents of the server for Team Foundation version control.
 
 **Required Permissions**
 
-To use the **dir** command, you must have **Read** permission set to **Allow**. For more information, see [Team Foundation Server Permissions](../setup-admin/permissions.md).
+To use the **dir** command, you must have **Read** permission set to **Allow**. For more information, see [Permissions and groups reference](../security/permissions.md).
 
     tf dir itemspec [/version:versionspec] [/recursive] 
     [/folders] [/deleted] [/login:username,[password]] [/collection:TeamProjectCollectionUrl]

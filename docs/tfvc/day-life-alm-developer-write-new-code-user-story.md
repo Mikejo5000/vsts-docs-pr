@@ -5,13 +5,13 @@ ms.assetid: 1407effb-0d9b-451b-97b0-b40e0c48594c
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfvc
 ms.manager: douge
-ms.author: routlaw
+ms.author: sdanie
 ms.date: 08/10/2016
 ---
 
 # Day in the life of a devops developer: write new code for a user story
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Are you a new user of Visual Studio and Team Foundation Server (TFS)? Are you wondering how you and your team can get maximum benefit from the most recent version of these tools to build your app?
 
@@ -35,7 +35,7 @@ In **Team Explorer**, Peter opens the **My Work** page. The team has agreed that
  ![To Do List on My Work Page in Team Navigator](_img/day-life-alm-developer-write-new-code-user-story/IC591023.png)  
 
 1.  In **Team Explorer**:  
-    1.  If you are not already connected to the team project that you want to work in, then [connect to the team project](../setup-admin/team-services/connect-to-visual-studio-team-services.md).  
+    1.  If you are not already connected to the team project that you want to work in, then [connect to the team project](../user-guide/connect-team-projects.md).  
     2.  Choose ![Home icon](_img/day-life-alm-developer-write-new-code-user-story/IC547418.png) **Home**, and then choose ![My Work icon](_img/day-life-alm-developer-write-new-code-user-story/IC588354.png) **My Work**.  
 2.  On the **My Work** page, drag the task from the **Available Work Items** list to the **In Progress Work Items** section.
 
@@ -436,7 +436,7 @@ After it is fixed, all the tests pass:
 >**Tip:**  
 >Make sure every tests passes after every change that you make to the code.
 
-<a name="coverage">
+<a name="coverage"></a>
 
 ## Code coverage
 
@@ -459,7 +459,7 @@ To verify that a specific test reaches into specific branches of the code, you c
 Peter continues to update the code in small steps until he is satisfied that:  
 -   All the available unit tests pass.
 
-    In a project with a very large set of unit tests, it can be impractical for a developer to wait for them all to run. Instead, the project operates a gated check-in service, in which all the automated tests are run for each checked-in shelveset before it is merged into the source tree. The check-in is rejected if the run fails. This allows the developer to run a minimal set of unit tests on his own machine, and then proceed with other work, without running the risk of breaking the build. For more information, see [Use a gated check-in build process to validate changes](../build-release/define/repository.md).  
+    In a project with a very large set of unit tests, it can be impractical for a developer to wait for them all to run. Instead, the project operates a gated check-in service, in which all the automated tests are run for each checked-in shelveset before it is merged into the source tree. The check-in is rejected if the run fails. This allows the developer to run a minimal set of unit tests on his own machine, and then proceed with other work, without running the risk of breaking the build. For more information, see [Use a gated check-in build process to validate changes](../build-release/concepts/definitions/build/repository.md).  
 -   Code coverage meets the team’s standard. 75% is a typical project requirement.  
 -   His unit tests simulate every aspect of the behavior that is required, including both typical and exceptional inputs.  
 -   His code is easy to understand and extend.
@@ -505,7 +505,7 @@ Peter is notified when the build is completed. In the build results window, he s
 
 ### To continuously integrate the code
 
-For more information about how to define a continuous integration build process, see [Set up a CI build](../build-release/define/triggers.md). After you have set up this build process, you can choose to be notified about the results of team builds.
+For more information about how to define a continuous integration build process, see [Set up a CI build](../build-release/concepts/definitions/build/triggers.md). After you have set up this build process, you can choose to be notified about the results of team builds.
 
 ![Peter is notified that CI Build succeeded](_img/day-life-alm-developer-write-new-code-user-story/IC558300.png)
 

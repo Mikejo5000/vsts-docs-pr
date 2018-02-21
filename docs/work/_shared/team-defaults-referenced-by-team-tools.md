@@ -1,7 +1,7 @@
 
 <!--- Team defaults referenced by Agile tools --> 
 
->**Note**: Some features are available only from Team Services or TFS 2017 or later versions. For details, see [Set team defaults](../scale/set-team-defaults.md).
+>**Note**: Some features are available only from VSTS and TFS 2017 or later versions. For details, see [Set team defaults](../scale/set-team-defaults.md).
 
 When you define a team, you define the team's: 
 - Selected area path(s) 
@@ -66,8 +66,8 @@ In addition, several tools reference the team's default iteration and selected i
 <ol>
 <li>Agile tools filter items based on the team's selected area path(s). Teams can choose [whether to include or exclude items assigned to subarea paths](../scale/set-team-defaults.md#team-area-paths).</li>
 <li>Work items whose State equals Closed, Done, or Removed (corresponding to a Completed category state) don't appear on portfolio and product backlogs.</li>
-<li>You can add custom workflow states and assign them to one of three state categories. The [state categories](../concepts/workflow-and-state-categories.md) determine which work items appear on backlog and board views. </li>
-<li>Kanban boards, sprint backlogs, and task boards only show the last node in a hierarchy, called the leaf node. For example, if you link items within a hierarchy that is four levels deep, only the items at the fourth level appear on the Kanban board, sprint backlog, and task board. To learn more, see [parent-child links between items](../troubleshoot/resolve-backlog-reorder-issues.md#leaf-nodes).</li>
+<li>You can add custom workflow states and assign them to one of three state categories. The [state categories](../customize/workflow-and-state-categories.md) determine which work items appear on backlog and board views. </li>
+<li>Kanban boards, sprint backlogs, and task boards only show the last node in a hierarchy, called the leaf node. For example, if you link items within a hierarchy that is four levels deep, only the items at the fourth level appear on the Kanban board, sprint backlog, and task board. To learn more, see [parent-child links between items](../backlogs/resolve-backlog-reorder-issues.md#leaf-nodes).</li>
 <li>Work items whose State equals Removed don't appear on boards.</li> 
 </ol>
 </div>

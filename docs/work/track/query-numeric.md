@@ -1,18 +1,18 @@
 ---
-title: Query by numeric field | Team Services & TFS
+title: Query by numeric field
+titleSuffix: VSTS & TFS
 description: Track work by creating queries based on effort, story points, schedules, or time tracking fields in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 78fe418f-fbd8-4ae2-97d7-c754c14dd3cd
 ms.manager: douge
 ms.author: kaelli
-ms.date: 11/02/2016
+ms.date: 02/05/2018  
 ---
-
 
 # Query by numeric fields    
 
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 How do I determine how much work each developer has completed on my team? Is there a way to sum up the effort or story points for an iteration? 
 
@@ -26,7 +26,7 @@ The most common numeric fields track effort for items in the Requirements catego
 - Save changes you make to your query prior to adding or modifying a chart. 
 - To group one or more clauses, select them and then choose the ![Group Query Clause icon](../_img/icons/group-clauses-icon.png) group clauses icon. To ungroup, click on the grouped clause. 
 
-For additional details on creating queries and chart-based-queries, see [Use the query editor to list and manage queries](using-queries.md) and [Charts](../../report/charts.md).  If you want to add a custom field to track and generate sums of other numeric values, see [Add or modify a field](../customize/add-modify-field.md).
+For additional details on creating queries and chart-based-queries, see [Use the query editor to list and manage queries](using-queries.md) and [Charts](../../report/dashboards/charts.md).  If you want to add a custom field to track and generate sums of other numeric values, see [Add or modify a field](../customize/add-modify-field.md).
 
 ### Useful filters 
 <table width="100%">
@@ -86,7 +86,7 @@ Unestimated user stories
 
 All queries show a count of items when you run the query. Here we define a flat-list query that filters for bugs in any state.  
 
-<img src="_img/query-effort-active-bugs-count-summary.png" alt="Query bugs any state, count of work items summary" style="border: 1px solid #CCCCCC;" />
+<img src="_img/query-effort-active-bugs-count-summary.png" alt="Query bugs any state, count of work items summary" style="border: 2px solid #C3C3C3;" />
 
 In addition, all charts contain a Values selection designed to display a count of work items within the chart. 
 
@@ -94,44 +94,44 @@ In addition, all charts contain a Values selection designed to display a count o
  
 Create an  active bugs query and modify the column options to show Assigned To and State. Then, add a pivot chart that displays the assignments and state. 
 
-<img src="_img/query-effort-config-chart-count-bugs-state-pivot-chart.png" alt="Configure chart, count of bugs by developer, area, pivot chart" style="border: 1px solid #CCCCCC;" />  
+<img src="_img/query-effort-config-chart-count-bugs-state-pivot-chart.png" alt="Configure chart, count of bugs by developer, area, pivot chart" style="border: 1px solid #C3C3C3;" />  
 
 ### Count of bugs by state and area 
 
 Using the same flat-list query that filters for bugs shown in the previous section, you can show a count based on area. Modify the column options to show the Area Path. Then, add a pivot chart that displays the state and area path. 
 
-<img src="_img/query-effort-config-chart-count-bugs-area-state-pivot-chart.png" alt="Configure chart, count of bugs by area, state, pivot chart" style="border: 1px solid #CCCCCC;" />
+<img src="_img/query-effort-config-chart-count-bugs-area-state-pivot-chart.png" alt="Configure chart, count of bugs by area, state, pivot chart" style="border: 2px solid #C3C3C3;" />
 
 <a id="effort"/>
 ##Queries and charts based on effort or story points 
 
-You can assign Story Points to user stories or bugs when you work in an Agile process. Or, Effort to product backlog items and bugs when you work in a Scrum process. For more information, see [Agile](../guidance/agile-process.md), [Scrum](../guidance/scrum-process.md), or [CMMI](../guidance/cmmi-process.md) work item types and workflow topics.  
+You can assign Story Points to user stories or bugs when you work in an Agile process. Or, Effort to product backlog items and bugs when you work in a Scrum process. For more information, see [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md) work item types and workflow topics.  
 
 ### Sum of story points and their status   
 
 >[!NOTE]  
->**Feature availability**: The **Sum** feature is supported on Team Services and TFS 2013.4 and later versions.
+>**Feature availability**: The **Sum** feature is supported on VSTS and TFS 2013.4 and later versions.
 
 Create a query that filters for User Story as the work item type and modify the column options to show Story Points and State. 
 
-<img src="_img/query-effort-sum-story-points-iteration.png" alt="Query editor, flat list, open stories" style="border: 1px solid #CCCCCC;" />
+<img src="_img/query-effort-sum-story-points-iteration.png" alt="Query editor, flat list, open stories" style="border: 2px solid #C3C3C3;" />
 
 Then, add a stacked bar chart that sums the Story Points. 
 
-<img src="_img/query-effort-config-chart-sum-story-points-iteration.png" alt="Configure chart, sum of story points per iteration, stacked bar chart" style="border: 1px solid #CCCCCC;" />
+<img src="_img/query-effort-config-chart-sum-story-points-iteration.png" alt="Configure chart, sum of story points per iteration, stacked bar chart" style="border: 2px solid #C3C3C3;" />
 
 >[!NOTE]  
->For information on system-defined cumulative flow diagrams, see [Cumulative flow](../../report/guidance/cumulative-flow.md).
+>For information on system-defined cumulative flow diagrams, see [Cumulative flow](../../report/dashboards/cumulative-flow.md).
 
 ###Show a burnup chart of user stories for an iteration 
 
 Create a query that filters for User Story as the work item type and in the Active or Closed state. Modify the column options to show Story Points. 
 
-<img src="_img/query-effort-sum-story-points-active-closed.png" alt="Query editor, flat list, user stories - active or closed" style="border: 1px solid #CCCCCC;" />
+<img src="_img/query-effort-sum-story-points-active-closed.png" alt="Query editor, flat list, user stories - active or closed" style="border: 2px solid #C3C3C3;" />
 
 Then, add a stacked area trend chart that sums the Story Points. 
 
-<img src="_img/query-effort-config-chart-sum-story-points-burnup.png" alt="Configure chart, sum of story points per iteration, stacked bar chart" style="border: 1px solid #CCCCCC;" />
+<img src="_img/query-effort-config-chart-sum-story-points-burnup.png" alt="Configure chart, sum of story points per iteration, stacked bar chart" style="border: 2px solid #C3C3C3;" />
 
 <a id="work"/>
 ##Queries and charts based on remaining and completed work 
@@ -151,15 +151,15 @@ Based on the process your team project references, you can assign the following 
 ### Sum of remaining work per developer 
 
 >[!NOTE]  
->**Feature availability**: The **Sum** feature is supported on Team Services and TFS 2013.4 and later versions.
+>**Feature availability**: The **Sum** feature is supported on VSTS and TFS 2013.4 and later versions.
 
 If you follow Scrum practices and estimate Remaining Work for your tasks and bugs, you can get a roll up of the amount of work remaining for each developer with the following query and chart. By using the In operator and including both Task and Bug, you include any bugs that are being tracked as tasks. 
 
-<img src="_img/query-effort-tasks-bugs-list.png" alt="Query of tasks and bugs for sprint" style="border: 1px solid #CCCCCC;" />  
+<img src="_img/query-effort-tasks-bugs-list.png" alt="Query of tasks and bugs for sprint" style="border: 1px solid #C3C3C3;" />  
 
 Add Remaining Work as a column option to the query and save. To view a sum of the remaining work, add a pivot chart as shown. 
 
-<img src="_img/example-query-config-chart-sum-remaining-work-pivot-chart.png" alt="Configure chart, sum of remaining work by developer, area, pivot chart" style="border: 1px solid #CCCCCC;" />  
+<img src="_img/example-query-config-chart-sum-remaining-work-pivot-chart.png" alt="Configure chart, sum of remaining work by developer, area, pivot chart" style="border: 1px solid #C3C3C3;" />  
 
 
 >[!NOTE]  
@@ -247,7 +247,7 @@ The following table describes the activity-based and numeric fields that you can
 	<td><p>The amount of work that remains to finish a task. You can specify work in hours or in days. There are no inherent time units associated with this field.</p>
 <p>This field <sup>3</sup> is also used to calculate burn down. It is assigned to <code>type=&quot;RemainingWork&quot;</code> in the ProcessConfiguration file.</p>
 <blockquote>
-<b>Note:</b> For Team Services, the task board always shows "h" for hours in relationship to Remaining Work. For TFS, you can modify the ProcessConfiguration filefor the Remaining Work type field to specify "d" for days, or other preferred label.  
+<b>Note:</b> For VSTS, the task board always shows "h" for hours in relationship to Remaining Work. For TFS, you can modify the ProcessConfiguration filefor the Remaining Work type field to specify "d" for days, or other preferred label.  
 </blockquote>
 <p>Reference name=Microsoft.VSTS.Scheduling.RemainingWork, Data type=Double</p>
 </td>
@@ -291,7 +291,7 @@ The following table describes the activity-based and numeric fields that you can
 1.  To change the menu selection (on-premises TFS only), see [Add or modify a field, customize a pick list](../customize/add-modify-field.md).   
 2.  The values displayed in the [Capacity page](../scale/capacity-planning.md) for Activity(Agile or Scrum) or Discipline (CMMI) reflect a union of all values defined for the field in all team projects within the project collection instance. Therefore, to restrict the values that appear for Capacity on the sprint backlog pages, you must make the values match in all the team projects for the field assigned to `type="Activity"`.</p>
 
-3.  To change the ProcessConfiguration field assignment (on-premises TFS only), see [Process configuration XML element reference](../reference/process-configuration-xml-element.md).
+3.  To change the ProcessConfiguration field assignment (on-premises TFS only), see [Process configuration XML element reference](../customize/reference/process-configuration-xml-element.md).
 
 4. Each team can configure their Agile tools to determine if [bugs are treated similar to requirements or tasks](#show-bugs). Since bugs can appear either with requirements or tasks, fields used to estimate effort at the requirement-level and the task-level are included in the work item form. 
 
@@ -309,7 +309,7 @@ For more information on using work items and queries, see:
 - [Query editor](using-queries.md)   
 - [Query fields, operators, and macros](query-operators-variables.md)   
 - [Add work items](../backlogs/add-work-items.md)  
-- [Work item field index](../guidance/work-item-field.md) 
+- [Work item field index](../work-items/guidance/work-item-field.md) 
 - [Create managed queries](example-queries.md)  
 
 <a id="show-bugs"/>
@@ -317,9 +317,9 @@ For more information on using work items and queries, see:
 <a id="rollup"/>
 ### Rollup numeric values across work item types  
 
-Rollup provides summed values of select fields for all child work items of a parent. Natively, Team Services and TFS provide rollup of Remaining Work for tasks on the Task board. For other rollup requirements, see the following topics: 
-- [Support rollup of work and other fields](../reference/support-rollup-of-work-and-other-fields.md)  
--[Rollup estimated and actual work using Project](../office/rollup-estimated-and-actual-work-using-project.md)  
+Rollup provides summed values of select fields for all child work items of a parent. Natively, VSTS and TFS provide rollup of Remaining Work for tasks on the Task board. For other rollup requirements, see the following topics: 
+- [Support rollup of work and other fields](../customize/reference/support-rollup-of-work-and-other-fields.md)  
+-[Rollup estimated and actual work using Project](../backlogs/office/rollup-estimated-and-actual-work-using-project.md)  
 - [Create rollup charts with Power BI](../../report/powerbi/create-rollup-charts.md)
 
 <a id="category"/>
@@ -338,11 +338,7 @@ However, each team can determine if the Bug work item type appears in either the
 Also, you can add custom work item types to a backlog. For details, see [Add or modify a work item type, Add a custom WIT to a backlog or board ](../customize/add-modify-wit.md). 
  
 
-<!---
-For more information about how to track work, see [Sprint planning](../scrum/sprint-planning.md).
 
- By tracking work, you gain more insight into which user stories, requirements, or backlog items are almost finished and what the team burn rate is. Several reports and dashboards provide charts that display the data that these fields contain.
-
-You specify the level of effort for the tasks that you are assigned. 
-
---> 
+[!INCLUDE [temp](../_shared/rest-apis-queries.md)]
+ 
+[!INCLUDE [temp](../../_shared/help-support-shared.md)] 

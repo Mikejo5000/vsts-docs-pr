@@ -1,7 +1,7 @@
 ---
-title: Scaled Agile Framework | Team Services & TFS 
+title: Scaled Agile Framework | VSTS & TFS 
 description: How to implement the Scaled Agile Framework to support epics, release trains, and multiple backlogs when working in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: C8E9CFD2-F08A-4FB8-AC53-B9B6B49A22A3
 ms.manager: douge
@@ -12,11 +12,11 @@ ms.date: 07/22/2017
 
 # Implement Scaled Agile Framework® to support epics, release trains, and multiple backlogs  
 
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 As enterprises are benefiting from individual agile teams, the question now is how do we scale these practices across teams and gain a portfolio view of the progress of agile teams throughout the enterprise? To address these needs, many businesses are using the Scaled Agile Framework® (SAFe®).  
 
-If you're interested in using SAFe, you can configure projects created with the [Scrum](../guidance/scrum-process.md), [Agile](../guidance/agile-process.md),  or [CMMI](../guidance/cmmi-process.md) processes to track SAFe criteria. Moreover, just as your Agile tools support Scrum and Agile practices, it can support SAFe and large numbers of teams to work together on epics that span releases. 
+If you're interested in using SAFe, you can configure projects created with the [Scrum](../work-items/guidance/scrum-process.md), [Agile](../work-items/guidance/agile-process.md),  or [CMMI](../work-items/guidance/cmmi-process.md) processes to track SAFe criteria. Moreover, just as your Agile tools support Scrum and Agile practices, it can support SAFe and large numbers of teams to work together on epics that span releases. 
 
 In this article you'll learn how SAFe concepts map to your Agile tools, how to plan and track SAFe projects using your Agile tools, and how to configure your Agile tools to support SAFe.  
 
@@ -33,7 +33,7 @@ The SAFe big picture addresses how a portfolio vision is met by a hierarchy of t
 
 Reproduced with permission from &#169; 2011-2016  [Scaled Agile Inc.](http://www.scaledagile.com/). All rights reserved.  
 
-Examples provided below illustrate how to configure a three-level team hierarchy and map teams to their respective area and iteration paths. The examples build from the [Agile process](../guidance/agile-process.md), However, the changes can be applied to any team project hosted on Visual Studio Team Services or an on-premises TFS.
+Examples provided below illustrate how to configure a three-level team hierarchy and map teams to their respective area and iteration paths. The examples build from the [Agile process](../work-items/guidance/agile-process.md), However, the changes can be applied to any team project hosted on Visual Studio Team Services (VSTS) or an on-premises TFS.
 
 ![Agile tool structure to support SAFe](_img/safe-objects-map-to-vso-objects.png)  
 
@@ -115,7 +115,8 @@ Another view available to program teams shows query-based graphs of release trai
 
 Since so much of a program team's work revolves around PIs and Release Trains, a custom report showing the scheduled shipping dates and what is projected to be on any given train might be useful. In addition, you can take advantage of the rich reporting options and the built-in reports the following services have to offer:
 
-- When connecting to Visual Studio Team Services: [Power BI integration overview](../../report/powerbi/overview.md) 
+- VSTS or TFS: [Dashboards, charts, and widgets](../../report/overview.md)
+- When connecting to VSTS: [Power BI integration overview](../../report/powerbi/overview.md) 
 - On-premises TFS: [SQL Server Reports](../../report/sql-reports/reporting-services-reports.md)  
 
 ###Feature teams' view of progress
@@ -151,7 +152,7 @@ In this way, all teams can manage their own workload and priorities while clearl
 All this might sound complicated, but it actually takes very little configuration to set up the teams and get started.
 In order to go from one project with one default team, area, and set of iterations, we'll first configure an area path structure to support the hierarchy of teams we want. Then we'll make sure that the iteration paths support the release structure we want and the program and feature teams to use. Finally, we'll create, configure, and populate the membership of teams.  
 
-You'll need to be a [member of the Project Administrators group](../../setup-admin/add-users.md) to make these configurations.    
+You'll need to be a [member of the Project Administrators group](../../security/add-users-team-project.md) to make these configurations.    
 
 ###Create areas to support your team hierarchy
 
@@ -188,7 +189,7 @@ This structure maps the following SAFe teams to your Agile tools' teams:
 - 
 If you need more-detailed guidance, see [Portfolio management](portfolio-management.md).  
 
-You'll need to be a [project administrator](../../setup-admin/add-users.md) to perform these steps. 
+You'll need to be a [project administrator](../../security/add-users-team-project.md) to perform these steps. 
 ####Create and configure each Program team
 
 1. From the Overview page for the team project, create a new team. Make sure that you clear the checkbox for Create an area path with the name of the team.  
@@ -313,7 +314,7 @@ Repeat this process at each backlog level until you've created the hierarchy you
 
 What about features already in progress? They definitely won't appear on the Portfolio team's backlog. They are the responsibility of the program teams, so they appear on that team's backlog. (This is actually a function of the area path set for the work item; a work item will only appear on a team's backlog if you assign it to the area path you created for that team.) You can map them from there.  
 
-You can also [bulk edit work items and manage their hierarchy in Microsoft Excel](../office/bulk-add-modify-work-items-excel.md).  
+You can also [bulk edit work items and manage their hierarchy in Microsoft Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).  
 
 Since an important aspect of SAFe is to map work to business or architecture goals, you'll want to make sure to set the Value Area=Architectural for any feature mapped to an architecture epic. (Because the default choice is Business, you don't have to change the field for any item that supports a business epic.) You can also add tags to track the investment.  
 
@@ -324,18 +325,18 @@ The same principles apply to user stories in progress. You can map them to featu
 
 ##Related notes
 
-There's no customization required to implement SAFe when working in Visual Studio Team Services or an on-premises TFS 2015 deployment. However, if you're working with TFS 2013, see the [Upgrade/Publish TFS 2013 Process Templates with PowerShell: blog post by Gordon Beeming](http://31og.com/post/upgradepublish-tfs-2013-process-templates-with-powershell). This post provides a PowerShell script which you can use to apply the customizations documented in the TFS 2013 version of this article.   
+There's no customization required to implement SAFe when working in VSTS or an on-premises TFS 2015 deployment. However, if you're working with TFS 2013, see the [Upgrade/Publish TFS 2013 Process Templates with PowerShell: blog post by Gordon Beeming](http://31og.com/post/upgradepublish-tfs-2013-process-templates-with-powershell). This post provides a PowerShell script which you can use to apply the customizations documented in the TFS 2013 version of this article.   
 
 
 ###Resources
 Resources mentioned earlier in this article and a few more are provided here for convenient reference.  
-- SAFe enabled processes: Link to a download of the three Agile tool processes: [Scrum](../guidance/scrum-process.md), [Agile](../guidance/agile-process.md), and [CMMI](../guidance/cmmi-process.md).  
+- SAFe enabled processes: Link to a download of the three Agile tool processes: [Scrum](../work-items/guidance/scrum-process.md), [Agile](../work-items/guidance/agile-process.md), and [CMMI](../work-items/guidance/cmmi-process.md).  
 
 - [Scaled Agile Framework](http://scaledagileframework.com/): SAFe resource site.  
 - [SAFe in 7 minutes](http://www.youtube.com/watch?feature=player_embedded&v=RXzurBazN-I): video from Inbar Oren, the Lean Samurai (also viewable from the [Scaled Agile Framework Foundations](http://scaledagileframework.com/foundations/)).
 - [Scaling Agile and SAFe Metrics with TFS](http://www.incyclesoftware.com/2014/08/scaling-agile-and-safe-metrics-with-tfs/): Blog post that illustrates a SQL Server report developed by InCycle to illustrate how TFS can be used to support scaled agile or SAFe.  
 - Agile Portfolio Management: Using TFS to support backlogs across multiple teams : white paper that shows how to configure TFS to support multiple teams and multiple backlogs.  
-- [Support rollup of work and other fields](../reference/support-rollup-of-work-and-other-fields.md): Describes how to configure TFS to support rollup, the summed values of select fields for all child work items of a parent. Because TFS supports multiple levels of nesting, when you perform rollup, you want to make sure you don't double-count values.  
+- [Support rollup of work and other fields](../customize/reference/support-rollup-of-work-and-other-fields.md): Describes how to configure TFS to support rollup, the summed values of select fields for all child work items of a parent. Because TFS supports multiple levels of nesting, when you perform rollup, you want to make sure you don't double-count values.  
 - [Out of the box Reports (SQL Server Reporting Services)](../../report/sql-reports/reporting-services-reports.md): Summarizes the reports TFS provides to monitor progress and code quality.  
 - [Synchronize Team Foundation Server with Project Server](../tfs-ps-sync/synchronize-tfs-project-server.md): Describes how project managers and development teams can use the tools that they prefer and share information transparently by enabling data to flow from work items in TFS to tasks in enterprise project plans in Project Server.  
 - [Track your work when assigned to two or more teams](capacity-planning.md): Shows how a developer or tester can track work when they support more than one feature team.  
@@ -344,7 +345,7 @@ Resources mentioned earlier in this article and a few more are provided here for
 This article has been updated from the previous white paper developed in collaboration with the following authors:  
 - Gordon Beeming is a Software Developer at Derivco in the sunny city of Durban, South Africa. He spends most his time hacking away at the keyboard in Visual Studio or with his family relaxing. His blog is at [31og.com](http://31og.com) and you can follow him on Twitter at [twitter.com/gordonbeeming](http://twitter.com/gordonbeeming).  
 - Brian Blackman is a principal consultant with Microsoft Premier Developer, focusing on affecting ISV partners and Enterprises success in engineering and the marketplace. He has an MBA, and is a CSM, CSP, MCSD (C++), and MCTS and is a Visual Studio ALM Ranger. When he is not Ruck Mastering and contributing to Visual Studio ALM Ranger projects, he spends his time writing code, creating and delivering workshops, and consulting in various concentrations, especially helping organizations in their quest for business agility.  
-- Gregg Boer is a principal program manager at Microsoft. Gregg is the product owner for the Agile management experience provided by Visual Studio Team Services and on-premises TFS.
+- Gregg Boer is a principal program manager at Microsoft. Gregg is the product owner for the Agile management experience provided by VSTS and on-premises TFS.
 - Kathryn Elliott is a senior technical writer at Microsoft.  
 - Susan Ferrell is a senior technical writer and a Visual Studio ALM Ranger.  
 - Willy-Peter Schaub is a program manager with the Visual Studio ALM Rangers at the Microsoft Canada Development Center. Since the mid-'80s, he has been striving for simplicity and maintainability in software engineering. His blog is at [blogs.msdn.com/b/willy-peter_schaub](http://blogs.msdn.com/b/willy-peter_schaub) and you can follow him on Twitter at [twitter.com/wpschaub](http://twitter.com/wpschaub).  

@@ -1,7 +1,7 @@
 ---
 title: Additional configuration options | TFS  
 description: Options to configure or customize after you upgrade an on-premises Team Foundation Server to get full access to specific features  
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: F89F5890-31E6-47EF-810F-AB75E1AE7E00
 ms.manager: douge
@@ -11,15 +11,14 @@ ms.date: 04/05/2017
 
 <!---
 Supports the following FWLINK: Additional configuration options are available - changes: http://go.microsoft.com/fwlink/?LinkID=242982 - 
-
 -->
 
 #Additional configuration options post update
 
-<b>TFS 2017 | TFS 2015 | TFS 2013</b>
+[!INCLUDE [temp](../_shared/version-header-tfs-only.md)]
 
 >[!IMPORTANT]  
->This topic applies only to team projects hosted on an on-premises Team Foundation Server (TFS). Team projects on Visual Studio Team Services [update automatically with each service upgrade](https://www.visualstudio.com/articles/news/features-timeline). 
+>This topic applies only to team projects hosted on an on-premises Team Foundation Server (TFS). Team projects on VSTS [update automatically with each service upgrade](/vsts/release-notes/index). 
 
 
 After you update your team project with the Configure Features wizard, you have access to the latest features. However, you may need to make some additional configurations or customizations to support your work tracking needs. Also, you have access to some features based on the source control setting selected when your team project was created.  
@@ -36,10 +35,10 @@ After you update your team project with the Configure Features wizard, you have 
 Code Review
 </td>
 <td>
-Adds the Code Review Request and Code Review Response work item types (WITs). With them, you can [request a code review and track code review responses](https://www.visualstudio.com/get-started/code/get-code-reviewed-vs).  
+Adds the Code Review Request and Code Review Response work item types (WITs). With them, you can [request a code review and track code review responses](../../tfvc/get-code-reviewed-vs.md).  
 </td>
 <td>
-**Required:** [Configure an SMTP server for TFS](../../setup-admin/tfs/admin/setup-customize-alerts.md). <br/>
+**Required:** [Configure an SMTP server for TFS](../../tfs-server/admin/setup-customize-alerts.md). <br/>
 **Required:** Visual Studio (any version).
 **Availability:** Only supported when your team project uses Team Foundation version control for source control.
 </td></tr>
@@ -60,12 +59,12 @@ Adds support for automatic update of bug status when using My Work. Use to autom
 Feedback
 </td>
 <td>
-You can [request feedback](../connect/get-feedback.md) from your stakeholders and capture their comments on your working software. Reviewer feedback--in the form of videos, screenshots, type-written comments, and ratings--is captured into work items that you can review and use to create a bug or suggest a new backlog item. 
+You can [request feedback](../../feedback/get-feedback.md) from your stakeholders and capture their comments on your working software. Reviewer feedback--in the form of videos, screenshots, type-written comments, and ratings--is captured into work items that you can review and use to create a bug or suggest a new backlog item. 
 </td>
 <td>
-**Required:** Provide [Advanced access](../connect/change-access-levels.md) to users who'll request feedback.<br/>
-**Required:** [Configure an SMTP server for TFS](../../setup-admin/tfs/admin/setup-customize-alerts.md). <br/>
-**Required:** [Grant stakeholders permission](../connect/give-permissions-feedback.md).
+**Required:** Provide [Advanced access](../../security/change-access-levels.md) to users who'll request feedback.<br/>
+**Required:** [Configure an SMTP server for TFS](../../tfs-server/admin/setup-customize-alerts.md). <br/>
+**Required:** [Grant stakeholders permission](../../feedback/give-permissions-feedback.md).
 
 </td>
 </tr>
@@ -89,7 +88,7 @@ Additional options that you can configure:<br/>
 <li>[Set team working days off](../customize/set-working-days.md)</li>
 <li>[Define additional sprints or releases](../scrum/define-sprints.md).</li>
 </ul> 
-In addition, you can customize the following options by modifying the [ProcessConfiguration](../reference/process-configuration-xml-element.md) definition:<br/>
+In addition, you can customize the following options by modifying the [ProcessConfiguration](reference/process-configuration-xml-element.md) definition:<br/>
 <ul>
 <li>Add fields to the quick add panel of backlogs</li>
 <li>Change the color used to display work items</li>
@@ -108,7 +107,7 @@ If you've upgraded your TFS instance from [TFS 2010](#update-from-2010) or [TFS 
 Storyboarding
 </td>
 <td>
-With this feature, you can [storyboard your ideas using the Storyboarding add-in to PowerPoint](../office/storyboard-your-ideas-using-powerpoint.md).  
+With this feature, you can [storyboard your ideas using the Storyboarding add-in to PowerPoint](../backlogs/office/storyboard-your-ideas-using-powerpoint.md).  
 </td>
 <td>
 **Required:** [Office PowerPoint 2007 or later](http://www.microsoftstore.com/store/msstore/pd/PowerPoint-2010/productID.216564300)<br/>
@@ -122,7 +121,7 @@ With this feature, you can [storyboard your ideas using the Storyboarding add-in
 <td>
 Most of your team will be able to view and create Epics and Features once you've enabled the Portfolio Backlogs feature. However, you may need to enable one or more of these backlogs for a team as described in [Organize your backlogs](../backlogs/organize-backlog.md). <br/>
 
-All stakeholders and contributors to your team project can view and add items to a portfolio backlog. However, to reorder, reparent, and exercise other portfolio backlog features, you need to have [Advanced access](../connect/change-access-levels.md).<br/>
+All stakeholders and contributors to your team project can view and add items to a portfolio backlog. However, to reorder, reparent, and exercise other portfolio backlog features, you need to have [Advanced access](../../security/change-access-levels.md).<br/>
 
 <p>Other resources you may find useful to manage your teams and backlogs:</p>
 <ul>
@@ -153,14 +152,14 @@ Test Plan and Test Suite
 This feature adds the Test Plan and Test Suite WITs, and converts existing test plans and test suites to work items. With this feature enabled, you can now customize these WITs like other work items, and create queries to find test plans and test suites.  
 </td>
 <td>
-To fully manage web-based test plans, you need to have [Advanced access](../connect/change-access-levels.md).<br/>
+To fully manage web-based test plans, you need to have [Advanced access](../../security/change-access-levels.md).<br/>
 You can customize the test plan and test suite WITs in the same way you can customize other WITs. See these topics to learn more: <br/> 
 <ul>
 <li>[Field customizations](add-modify-field.md): Add a custom field, modify a pick list, or add a field rule.</li>
 <li>[Work item form customizations](add-modify-wit.md) : Modify the form layout for the bug, test case, test plan, or test suite.</li>
 <li>[Workflow customizations](add-modify-wit.md) : Modify the workflow definitions for the bug, test case, test plan, or test suite.</li>
-<li>[Test failure types](../reference/witadmin/tcm-customize-manage-test-experience.md): Specifies the reasons why a test run failed. The default configuration includes: Regression, New Issue, Known Issue, and Unknown.</li>
-<li>[Test resolution states](../reference/witadmin/tcm-customize-manage-test-experience.md): Specifies the action to take after a test run failure. The default configuration includes: Needs investigation, Test issue, Product issue, and Configuration issue.</li>
+<li>[Test failure types](reference/witadmin/tcm-customize-manage-test-experience.md): Specifies the reasons why a test run failed. The default configuration includes: Regression, New Issue, Known Issue, and Unknown.</li>
+<li>[Test resolution states](reference/witadmin/tcm-customize-manage-test-experience.md): Specifies the action to take after a test run failure. The default configuration includes: Needs investigation, Test issue, Product issue, and Configuration issue.</li>
 </ul> 
 If you add or change the workflow states for the test plan or test suite type definitions, review the [additional configuration requirements when working with  Visual Studio 2013.2 or earlier versions](#test-case-management). 
 </td>
@@ -183,9 +182,9 @@ To get started, each team must choose their preference as described in [Show bug
 
 ##Related notes 
 
-If you are the server administrator for TFS and don't actually contribute to a team, then you may want to [remove yourself as a member, and add a project lead as the team administrator](../../setup-admin/add-users.md). (When you ran the Configure Features wizard, the system automatically added your user account as a team administrator for the team project.)
+If you are the server administrator for TFS and don't actually contribute to a team, then you may want to [remove yourself as a member, and add a project lead as the team administrator](../../security/add-users-team-project.md). (When you ran the Configure Features wizard, the system automatically added your user account as a team administrator for the team project.)
 
-If you have updated a team project based on v5.0 of MSF for Agile, do the manual updates described in [Update the Workflow for Agile Team Projects](../reference/update-the-workflow-for-agile-team-projects.md).
+If you have updated a team project based on v5.0 of MSF for Agile, do the manual updates described in [Update the Workflow for Agile Team Projects](reference/update-the-workflow-for-agile-team-projects.md).
 
 <a id="test-case-management">   </a> 
 
@@ -194,7 +193,7 @@ If you add or change the workflow states for the test plan or test suite type de
 
 ![Application fault error message after TFS upgrade](_img/ALM_CF_AppFaultErrMsg.png)  
 
-To resolve this error, see [Import and export process configuration [witadmin]](../reference/witadmin/witadmin-import-export-process-configuration.md).  
+To resolve this error, see [Import and export process configuration [witadmin]](reference/witadmin/witadmin-import-export-process-configuration.md).  
 
 <a id="update-from-2012">   </a> 
 ###Recommended updates to team projects created from TFS 2012 process templates 
@@ -209,15 +208,15 @@ You might want to update the workflow of specific WITs to support missing transi
 * Agile 6.0 to Agile 2013: User Story  
 * CMMI 6.0 to CMMI 2013: Requirement  
 
-For details, see [Upgrade your 2012 team project from RTM to Update 2](http://blogs.msdn.com/b/visualstudioalm/archive/2013/04/04/upgrade-your-2012-process-template-from-rtm-to-update-2.aspx). You can learn about additional changes made to enable features from [Changes made to process templates](../guidance/changes-to-process-templates.md).
+For details, see [Upgrade your 2012 team project from RTM to Update 2](http://blogs.msdn.com/b/visualstudioalm/archive/2013/04/04/upgrade-your-2012-process-template-from-rtm-to-update-2.aspx). You can learn about additional changes made to enable features from [Changes made to process templates](../work-items/guidance/changes-to-process-templates.md).
 
 
-If you haven't customized your work item types or process configuration, you can update the items quickly by using **witadmin**. Just [download the latest version of the process template](../guidance/manage-process-templates.md) that is compatible with the one used to create your team project and then [import the updated WITs](../reference/witadmin/witadmin-import-export-manage-wits.md).
+If you haven't customized your work item types or process configuration, you can update the items quickly by using **witadmin**. Just [download the latest version of the process template](../work-items/guidance/manage-process-templates.md) that is compatible with the one used to create your team project and then [import the updated WITs](reference/witadmin/witadmin-import-export-manage-wits.md).
 
 <a id="update-from-2010">   </a> 
 ###Recommended updates to team projects created from TFS 2010 process templates 
 
-If you've updated a team project that was created with an MSF v 5.0 Agile process template, then you'll also want to [manually update the user story and task workflow assignments](../reference/update-the-workflow-for-agile-team-projects.md). 
+If you've updated a team project that was created with an MSF v 5.0 Agile process template, then you'll also want to [manually update the user story and task workflow assignments](reference/update-the-workflow-for-agile-team-projects.md). 
 
 If you don't update the workflow, then the task board provides only two states, Active and Closed. This prevents you and your team from distinguishing between tasks that are in progress from those that haven't been started.
 

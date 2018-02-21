@@ -1,12 +1,12 @@
 ---
 title: Track stakeholder feedback using the Test &amp; Feedback extension
-description: Manual and exploratory testing - track stakeholder feedback in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS) using the Exploratory Testing browser extension
+description: Track stakeholder feedback in VSTS or TFS using the Exploratory Testing browser extension
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-manual
 ms.assetid: DADC6608-1830-4FDA-9007-6539859F4866
 ms.manager: douge
 ms.author: ahomer
-ms.date: 08/26/2016
+ms.date: 01/18/2018
 ---
 
 # Track stakeholder feedback using the Test &amp; Feedback extension
@@ -18,7 +18,7 @@ ms.date: 08/26/2016
 <a name="track"></a>
 ## Track feedback requests
 
-1. In Team Services or TFS, select your project and open 
+1. In VSTS or TFS, select your project and open 
    the **Queries** tab of the **Work** hub.
 
    ![Opening the Queries tab of the Work hub](_img/track-stakeholder-feedback/track-stakeholder-feedback-30.png)

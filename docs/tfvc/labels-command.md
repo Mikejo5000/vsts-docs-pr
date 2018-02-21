@@ -5,19 +5,19 @@ ms.assetid: 7772bc3d-7c43-47d8-ba5c-eee89aeed3ce
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfvc
 ms.manager: douge
-ms.author: routlaw
+ms.author: sdanie
 ms.date: 08/10/2016
 ---
 
 # Labels Command
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Displays the list of labels in the server for Team Foundation version control.
 
 **Required Permissions**
 
-To use the **labels** command, you must have the **Read** permission set to **Allow** for all files or folders to which the specified label is attached. If you have permission to some, but not all the files referenced in the label, partial results are displayed. For more information, see [Team Foundation Server Permissions](../setup-admin/permissions.md).
+To use the **labels** command, you must have the **Read** permission set to **Allow** for all files or folders to which the specified label is attached. If you have permission to some, but not all the files referenced in the label, partial results are displayed. For more information, see [Permissions and groups reference](../security/permissions.md).
 
     tf labels [/owner:ownername] [/format:(brief|detailed)] 
     [/collection:TeamProjectCollectionUrl] [labelname] [/login:username,[password]]

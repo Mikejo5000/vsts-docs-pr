@@ -6,12 +6,14 @@ ms.technology: vs-devops-reporting
 ms.assetid: b02997f4-2c4b-4814-868e-37e0c2414254
 ms.manager: douge
 ms.author: kaelli
-ms.date: 12/30/2016
+ms.date: 10/17/17
 ---
+
+
 
 # Create an aggregate report using Report Designer and the Analysis Services Cube
 
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 You can track your team's progress more easily by creating reports that aggregate data from Visual Studio Application Lifecycle Management (ALM) (TFS) into charts and tables. For example, you can create a report that shows how many active work items are assigned to each person on the team. To create this type of report, you use Report Designer in SQL Server and the SQL Server Analysis Services cube for TFS.  
   
@@ -27,7 +29,7 @@ You can track your team's progress more easily by creating reports that aggregat
   
 -   You must be a member of the **TfsWarehouseDataReaders** security role in the Analysis Services database on the data-tier server of Team Foundation Server. For more information, see [How to: Grant Access to the Databases of the Data Warehouse](../admin/grant-permissions-to-reports.md).  
   
--   You must be a member of  the **Team Foundation Content Manager** role in SQL Server Reporting Services. For more information, see [Add accounts to administer TFS](../../setup-admin/add-administrator-tfs.md).  
+-   You must be a member of  the **Team Foundation Content Manager** role in SQL Server Reporting Services. For more information, see [Add accounts to administer TFS](../../tfs-server/add-administrator-tfs.md).  
   
 ### To create a report  
   

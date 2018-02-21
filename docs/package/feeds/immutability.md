@@ -1,18 +1,17 @@
 ---
 title: Understand immutability of packages
-description: Immutable packages lead to predictable builds in Visual Studio Team Services or Team Foundation Server
+description: Immutable packages lead to predictable builds in VSTS or Team Foundation Server
 ms.assetid: d8a522c4-cc96-4e41-9fdd-5e55a7ea8345
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-package
-ms.topic: get-started-article
 ms.manager: douge
 ms.author: amullans
-ms.date: 08/10/2016
+ms.date: 09/01/2017
 ---
 
 # Understand immutability of packages
 
-**Team Services | TFS 2017**
+**VSTS | TFS 2017**
 
 Once you publish a particular version of a package to a feed, that version number is permanently reserved. 
 You cannot upload a newer revision package with that same version number, or delete it and upload a new package at the same version.
@@ -31,4 +30,4 @@ For example, a developer's machine and the build agent might have cached differe
 ## Dealing with broken and incorrect packages
 
 If a package is broken, buggy, or shares unintended content (like secrets), the best response is to prepare a fix and publish it as a new version.
-Then, depending on the severity of the issue and how widely depended-on the package is, you can [unlist or delete](../nuget/remove.md) the package to make it unavailable for consumption.
+Then, depending on the severity of the issue and how widely depended-on the package is, you can [unlist or delete](../nuget/unlist-delete.md) the package to make it unavailable for consumption.

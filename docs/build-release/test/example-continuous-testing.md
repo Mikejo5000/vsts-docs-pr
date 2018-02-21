@@ -1,32 +1,34 @@
 ---
-title: Continuous integration, test, and deployment example with Visual Studio Team Services and Team Foundation Server
-description: Continuous integration, test, and deployment example using Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)
+title: Continuous integration, test, and deployment tutorial
+description: Continuous integration, test, and deployment example in VSTS and TFS 
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-continuous
+ms.technology: vs-devops-build
 ms.assetid: 447F1F56-993A-4AB0-B521-ED72514BDEE3
 ms.manager: douge
 ms.author: ahomer
-ms.date: 08/12/2016
+ms.date: 01/18/2018
+ms.topic: get-started-article
 ---
 
-# Continuous integration, test, and deployment example
+# Continuous integration, test, and deployment tutorial
 
-**Visual Studio 2017 | Visual Studio  2015 | Team Services** 
+[!INCLUDE [version-header-vs-vsts-tfs](_shared/version-header-vs-vsts-tfs.md)]
 
-This walk-through demonstrates how you can use the continuous integration and
-continuous deployment features of Visual Studio Team Services and
+This tutorial demonstrates how you can use the continuous integration and
+continuous deployment features of Visual Studio Team Services (VSTS) and
 Microsoft Team Foundation Server (TFS) to build, test, and deploy
 applications quickly and efficiently to Azure App Services; and
 run a simple load test after deploying every update.
 
-The walkthrough is divided into the following sections:
+In this tutorial, you will learn how to:
 
-* [Create the Azure app service instance for your sample app](#create-service).
-* [Create and check in a sample ASP.NET MVC web app containing unit tests](#create-app).
-* [Configure continuous integration (CI) to build the sample application and run the unit tests](#configure-ci).
-* [Configure continuous deployment (CD) to deploy the sample app and run a quick performance test](#configure-cd).
-* [Modify the sample app to explore behavior when a test fails](#test-failure).
-* [Fix the test failure and view the complete CI/CD process](#view-process).
+> [!div class="checklist"]
+> * [Create the Azure app service instance for your sample app](#create-service).
+> * [Create and check in a sample ASP.NET MVC web app containing unit tests](#create-app).
+> * [Configure continuous integration (CI) to build the app and run the unit tests](#configure-ci).
+> * [Configure continuous deployment (CD) to deploy the app and run a quick performance test](#configure-cd).
+> * [Modify the sample app to explore behavior when a test fails](#test-failure).
+> * [Fix the test failure and view the complete CI/CD process](#view-process).
 
 It will take around 45 minutes to complete all of the steps.
 
@@ -34,35 +36,7 @@ It will take around 45 minutes to complete all of the steps.
 [Build and deploy your app](../../build-release/apps/index.md).
 
 <a name="create-service"></a>
-## Create the Azure app service 
-
-In this section, you'll create the Azure app service instance you'll need to deploy the app. 
-
-1. Sign into the [Azure portal](https://portal.azure.com) using the same credentials as your Visual Studio Team Services
-   account, choose **App Services**, and add a new service instance. 
- 
-   ![Creating an Azure app service instance, adding a new service](_img/example-continuous-testing/example-continuous-testing-01.png)
-
-1. Select the simple **Web App** type for your new service.
-
-   ![Creating an Azure app service instance, choosing the type](_img/example-continuous-testing/example-continuous-testing-02.png)
-
-1. In the confirmation page, choose **Create**.
-
-   ![Creating an Azure app service instance, starting to create](_img/example-continuous-testing/example-continuous-testing-03.png)
-   
-1. Enter a name for the new Web App instance and the new Resource Group, then
-   choose **Create**. 
- 
-   ![Creating an Azure app service instance, entering the parameters](_img/example-continuous-testing/example-continuous-testing-04.png)
-
-1. In the navigation bar, select **All resources** and check that the list
-   contains the new App Service instance. It may take a few minutes to be fully available.
-
-   ![Creating an Azure app service instance, checking for the new instance](_img/example-continuous-testing/example-continuous-testing-05.png)
-
->For more details about creating web apps in Azure App Services, see
-[Azure Web Apps Documentation](https://docs.microsoft.com/azure/app-service-web/)
+[!INCLUDE [create-azure-web-app-portal](../apps/cd/azure/_shared/create-azure-web-app-portal.md)]
 
 <a name="create-app"></a>
 ## Create the sample web app
@@ -79,15 +53,14 @@ unit tests that you can execute as part of the build process.
 
    ![Including unit tests in your project](_img/example-continuous-testing/example-continuous-testing-11.png)
 
-1. Save and close the new project, then check it into your Visual Studio Team Services or
-   Team Foundation Server repository. 
+1. Save and close the new project, then check it into your VSTS or TFS repository. 
 
    ![Checking the sample app into the repository](_img/example-continuous-testing/example-continuous-testing-12.png)
 
 >For more details about creating apps in Visual Studio, see
 [Solutions and Projects in Visual Studio](https://docs.microsoft.com/visualstudio/ide/solutions-and-projects-in-visual-studio).
-For more details about using Team Services code repositories, see
-[Share your code with Visual Studio and Team Services Git](../../git/share-your-code-in-git-vs.md).
+For more details about using VSTS code repositories, see
+[Share your code with Visual Studio and VSTS Git](../../git/share-your-code-in-git-vs.md).
 
 <a name="configure-ci"></a>
 ## Configure continuous integration
@@ -96,7 +69,7 @@ In this section, you will create a build definition that is configured to
 run automatically when you check in any changes to the sample app, and it
 will automatically execute the unit tests it contains.
 
-1. Sign into your Visual Studio Team Services account (**https://**_your-acccount_**.visualstudio.com**)
+1. Sign into your VSTS account (**https://**_your-acccount_**.visualstudio.com**)
    and open the project where you checked in the sample app.
 
 1. Open the **Build &amp; Release** hub and, in the **Builds** tab, choose
@@ -108,30 +81,22 @@ will automatically execute the unit tests it contains.
 
    ![Choosing the build type](_img/example-continuous-testing/example-continuous-testing-21.png)
 
-1. In the next page of the wizard, make sure you set (tick) the **Continuous integration...** checkbox, 
-   then choose **Create**.
+1. In the new build definition, select the **Process** item and then select the **Hosted VS2017** agent queue. 
+
+   ![Choosing the default agent queue](_img/example-continuous-testing/example-continuous-testing-21a.png)
+
+1. Open the **Triggers** tab and turn on the **Continuous integration** trigger. Make sure the repository containing your app is selected. 
 
    ![Specifying continuous integration](_img/example-continuous-testing/example-continuous-testing-22.png)
 
-1. For the **NuGet restore** task in the new definition, use the file selector to select the
-   solution file for your sample web app.
-
-   ![Specifying the source solution for the Nuget task](_img/example-continuous-testing/example-continuous-testing-25.png)
-
-1. For the **Build solution** task, use the file selector to select the
-   solution file for your sample web app and choose the version of
-   Visual Studio you used to create the app. 
-
-   ![Specifying the source solution for the Visual Studio Build task](_img/example-continuous-testing/example-continuous-testing-26.png)
-
-1. Save the new build definition.
-
-   ![Saving the definition](_img/example-continuous-testing/example-continuous-testing-27.png)
-
-1. Queue a new build of the definition.
+1. Save the new build definition and queue a new build.
 
    ![Starting a test build](_img/example-continuous-testing/example-continuous-testing-28.png)
 
+1. Choose the link to the build in the message bar that appears.
+
+   ![Choosing the build link](_img/example-continuous-testing/example-continuous-testing-28a.png)
+ 
 1. After the build has finished, you see the summary for each task and the results in the live log file.
    Choose the **Tests** link.
 
@@ -149,9 +114,11 @@ will automatically execute the unit tests it contains.
 
    ![Viewing the test results](_img/example-continuous-testing/example-continuous-testing-31.png)
 
->For more details about build definitions in Team Services, see
+>For more details about build definitions in VSTS, see
 [Continuous integration on any platform](../../build-release/overview.md). For more details about unit tests and the results, see 
 [Get started with unit testing](https://docs.microsoft.com/visualstudio/test/getting-started-with-unit-testing).
+For information about reducing test running time, see
+[Speed up testing with Test Impact Analysis](test-impact-analysis.md) and [Run tests in parallel](run-tests-in-parallel.md).
 
 <a name="configure-cd"></a>
 ## Configure continuous deployment
@@ -162,34 +129,24 @@ occurs. After successful deployment, the release will automatically execute
 a simple load test to validate the deployment.
 
 1. Close the **Test** hub browser window and, in the build summary page in
-   the **Builds** hub, choose the **Release** icon and then choose **Yes** to
-   confirm.
+   the **Builds** hub, choose the **Release** icon.
 
    ![Starting a new release definition ](_img/example-continuous-testing/example-continuous-testing-40.png)
 
 1. Select the **Azure App Service Deployment with Performance Test** template.
-
-   ![Selecting the release definition template](_img/example-continuous-testing/example-continuous-testing-41.png)
-
-1. In the next page of the wizard, check that the correct **Source (Build definition)**
-   is selected and make sure your set (tick) the **Continuous deployment** checkbox. 
-   Then choose **Create**.
- 
-   ![Specifying continuous deployment ](_img/example-continuous-testing/example-continuous-testing-42.png)
 
 1. In the new release definition, choose the "pencil" edit icon next to the default
    name and enter some meaningful name. Press _RETURN_ to save it.
 
    ![Editing the definition name](_img/example-continuous-testing/example-continuous-testing-43.png)
 
-1. In the new release definition, select the **Deploy Azure App Service** task.
-   In the parameters pane, select your Azure subscription from the drop-down list and
-   choose **Authorize** to validate it. Then select your App Service name 
-   from the drop-down list. 
+1. In the new release definition, open the **Tasks** tab and select the **Deploy Azure App Service** task.
+   In the parameters pane, select your Azure subscription from the drop-down list.
+   Then select your App Service name from the drop-down list. 
 
    ![Configuring the Deploy Azure App Service task](_img/example-continuous-testing/example-continuous-testing-44.png)
 
-   If you don't see any subscriptions listed, choose the **Manage** link and, in the 
+   If you don't see any subscriptions listed, choose the ![Settings](_img/example-continuous-testing/settings-icon.png) icon and, in the 
    **Services** page, create a new **Azure Resource Manager** service endpoint. If you
    have problems creating the connection, see 
    [Troubleshoot Azure Resource Manager service endpoints](../../build-release/actions/azure-rm-endpoint.md).
@@ -239,7 +196,7 @@ a simple load test to validate the deployment.
 
 1. Open the **Load test** tab of the **Test** hub. This shows a summary of all 
    the load test runs you have executed. Open the **LoadTest.loadtest** run that
-   was just completed, 
+   was just completed.
 
    ![Viewing all the load test runs](_img/example-continuous-testing/example-continuous-testing-53.png)
 
@@ -249,9 +206,9 @@ a simple load test to validate the deployment.
    ![Viewing details of the load test run](_img/example-continuous-testing/example-continuous-testing-54.png)
 
    >For more details about release definitions, see
-   [Release Management in Team Services](../../build-release/concepts/definitions/release/index.md).
+   [Release Management in VSTS](../../build-release/concepts/definitions/release/index.md).
    For more details about load tests and the results, see 
-   [Run URL-based load tests with Visual Studio Team Services](../../load-test/get-started-simple-cloud-load-test.md).
+   [Run URL-based load tests with VSTS](../../load-test/get-started-simple-cloud-load-test.md).
 
 <a name="test-failure"></a>
 ## Explore behavior when a test fails
@@ -266,7 +223,7 @@ the build process.
 
 1. Change the line in the **About** method to show a different message, such as: 
 
-   ```
+   ```csharp
    public ActionResult About()
    {
      ViewBag.Message = "My super new web app.";
@@ -274,7 +231,7 @@ the build process.
    }
    ```
 
-1. Save the change and check in the change to your Team Services repository.
+1. Save the change and check in the change to your VSTS repository.
 
 1. Open the **Builds** tab of the **Build &amp; Release** hub. You'll see
    a build of your build definition in "_in progress_". Choose the build number link 
@@ -315,7 +272,7 @@ post-deployment load test.
 1. Change the line in the **About** test method so that it matches the
    message you specified when you edited the main project earlier. In this example: 
 
-   ```
+   ```csharp
    [TestMethod]
    public void About()
    {
@@ -331,7 +288,7 @@ post-deployment load test.
 
    ```
 
-1. Save the change and check in the change to your Team Services repository.
+1. Save the change and check in the change to your VSTS repository.
 
 1. Open the **Builds** tab of the **Build &amp; Release** hub. You'll see
    a build of your build definition in "_in progress_". Choose the build number link 
@@ -351,11 +308,7 @@ post-deployment load test.
 
    ![Viewing the final result website](_img/example-continuous-testing/example-continuous-testing-71.png)
 
-## See also
+## Next step
 
-* [Continuous integration on any platform](../../build-release/overview.md)
-* [Get started with continuous testing](getting-started-with-continuous-testing.md)
-* [Git and Team Services](../../git/overview.md)
-* [More examples](../../build-release/apps/index.md)
-
-[!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
+> [!div class="nextstepaction"]
+> [CI/CD in depth](../../build-release/overview.md)

@@ -1,6 +1,6 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-integrate-ide
+ms.technology: vs-devops-integrate
 title: Building extensions for Visual Studio
 description: Build extensions for Visual Studio
 ms.assetid: A5549D87-6E1E-4429-BE46-8A46A7260A83
@@ -15,8 +15,8 @@ ms.date: 08/04/2016
 
 Extensions allow you to add new features to or integrate existing tools into Visual Studio. An extension can be as simple as adding grid lines to show indentation levels in the editor or as complex as a suite of tools specific to how your team works. There are thousands of extensions already out there and available through the Marketplace; however, this Beginner’s Guide to Extensions will show you how to create your own.
 
->**Note:**
->You can also [Create Extensions for Team Services](../../../extend/overview.md).
+> [!NOTE]
+> You can also [Create Extensions for VSTS](../../../extend/index.md).
 
 ## How do I start?
 

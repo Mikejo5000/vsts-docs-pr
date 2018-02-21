@@ -1,7 +1,7 @@
 ---
 ms.prod: vs-devops-alm
 title: Build and release retention policies
-description: Build and release retention policies in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+description: Build and release retention policies in Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
 ms.technology: vs-devops-build
 ms.assetid: A9AC68EB-E013-4F86-8604-E69BB330817B
 ms.manager: douge
@@ -11,7 +11,7 @@ ms.date: 08/26/2016
 
 # Build and release retention policies
 
-**Team Services | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/ms181716%28v=vs.120%29.aspx)**
+**VSTS | TFS 2018 | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/ms181716%28v=vs.120%29.aspx)**
 
 Retention policies are used to configure how long builds and
 releases are to be retained by the system. The primary reasons to
@@ -36,15 +36,15 @@ if you are building from [Git repositories](#git-repositories).
 
 If you are using an on-premises Team Foundation Server, you can specify build retention policy defaults and maximums for a team project collection. You can also specify when builds are permanently destroyed (removed from the **Deleted** tab in the build explorer).
 
-If you are using Team Services, you can view but not change these settings for your account.
+If you are using VSTS, you can view but not change these settings for your account.
 
 Global build retention policy settings can be managed from the **Build and Release** settings of your account or team project collection:
 
-* Team Services: `https://{your_account}.visualstudio.com/_admin/_buildQueue`
+* VSTS: `https://{your_account}.visualstudio.com/_admin/_buildQueue`
 
-* TFS 2017: `https://{your_server}/tfs/DefaultCollection/_admin/_buildQueue`
+* TFS 2017 and newer: `https://{your_server}/tfs/DefaultCollection/_admin/_buildQueue`
 
-* TFS 2015 Update 3: `http://{your_server}:8080/tfs/DefaultCollection/_admin/_buildQueue`
+* TFS 2015.3: `http://{your_server}:8080/tfs/DefaultCollection/_admin/_buildQueue`
 
 * TFS 2015 RTM: `http://{your_server}:8080/tfs/DefaultCollection/_admin/_buildQueue#_a=settings`
 
@@ -59,9 +59,9 @@ The **build destruction policy** helps you keep the builds for a certain period 
 
 ### Git repositories
 
-If your [repository type](../../define/repository.md) is one of the following, you can define multiple retention policies with branch filters:
+If your [repository type](../../concepts/definitions/build/repository.md) is one of the following, you can define multiple retention policies with branch filters:
 
-* Git in Visual Studio Team Services (Team Services) or Team Foundation Server (TFS)
+* Git in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)
 * GitHub
 * External Git
 
@@ -90,7 +90,7 @@ refs/pull/*
 
 ### TFVC and Subversion repositories
 
-For TFVC and Subversion [repository types](../../define/repository.md) you can modify a single policy with the same options shown above.
+For TFVC and Subversion [repository types](../../concepts/definitions/build/repository.md) you can modify a single policy with the same options shown above.
 
 ### Policy order
 
@@ -111,12 +111,12 @@ When the retention policies mark a build for deletion, you can control which inf
 The following information is deleted when a build is deleted:
 
 * Logs
-* [Published artifacts](../../steps/utility/publish-build-artifacts.md)
-* [Published symbols](../../steps/build/index-sources-publish-symbols.md)
+* [Published artifacts](../../tasks/utility/publish-build-artifacts.md)
+* [Published symbols](../../tasks/build/index-sources-publish-symbols.md)
 
 ### When are builds deleted
 
-#### Team Services
+#### VSTS
 
 Your retention policies are processed once per day. The timing of this process varies because we spread the work throughout the day for load balancing purposes. There is no option to change this process.
 
@@ -138,11 +138,11 @@ You can also customize these policies on an [environment-by-environment basis](#
 
 If you are using an on-premises Team Foundation Server, you can specify release retention policy defaults and maximums for a team project. You can also specify when releases are permanently destroyed (removed from the **Deleted** tab in the build explorer).
 
-If you are using Team Services, you can view but not change these settings for your team project.
+If you are using VSTS, you can view but not change these settings for your team project.
 
 Global release retention policy settings can be managed from the **Release** settings of your team project:
 
-* Team Services: `https://{your_account}.visualstudio.com/{team_project}/_admin/_apps/hub/ms.vss-releaseManagement-web.release-project-admin-hub`
+* VSTS: `https://{your_account}.visualstudio.com/{team_project}/_admin/_apps/hub/ms.vss-releaseManagement-web.release-project-admin-hub`
 * On-premises: `https://{your_server}/tfs/{collection_name}/{team_project}/_admin/_apps/hub/ms.vss-releaseManagement-web.release-project-admin-hub`
 
 The **maximum retention policy** sets the upper limit for how long releases can be retained
@@ -153,7 +153,7 @@ The **default retention policy** sets the default retention values for all the r
 
 The **destruction policy** helps you keep the releases for a certain period of time after they are deleted. This policy cannot be overridden in individual release definitions.
 
-> In TFS, release retention management is restricted to specifying the number of days, and this is available only in Update 3 and later.
+> In TFS, release retention management is restricted to specifying the number of days, and this is available only in TFS 2015.3 and newer.
 
 ### Environment-specific retention
 
@@ -190,7 +190,7 @@ When you delete a release definition, delete a release, or when the
 retention policy deletes a release automatically, the retention policy
 for the associated build will determine when that build is deleted.
 
-> In TFS, interaction between build and release retention is available starting from TFS 2017. 
+> In TFS, interaction between build and release retention is available in TFS 2017 and newer.
 
 ## Q&A
 

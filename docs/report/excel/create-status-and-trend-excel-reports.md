@@ -6,17 +6,18 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
 ms.manager: douge
 ms.author: kaelli
-ms.date: 05/22/2017
+ms.topic: get-started-article
+ms.date: 10/10/2017
 ---
 
 # Create Excel reports from a work item query  
 
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b>  
+<b>TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013</b>  
 
 >[!NOTE]  
 ><b>Feature availability: </b>You can use this feature only when you connect to a team project hosted an on-premises Team Foundation Server (TFS) and with SQL Server Analysis Services configured. 
 > 
->If you want to export work items to Excel, see [Bulk add or modify work items with Excel](../../work/office/bulk-add-modify-work-items-excel.md).
+>If you want to export work items to Excel, see [Bulk add or modify work items with Excel](../../work/backlogs/office/bulk-add-modify-work-items-excel.md).
 
 One of the quickest ways to generate a custom report in Excel is to start with a flat list query. You can generate both status and trend charts. Also, once you've build a report, you can manipulate the data further by adding or filtering fields using the PivotTable.  
 
@@ -75,7 +76,7 @@ Use this procedure when you work from the web portal or the Team Explorer plug-i
 
 2. Connect to the team project and choose the query.   
 
-   If the server you need isn't listed, [add it now](../../connect/connect-team-projects.md).  
+   If the server you need isn't listed, [add it now](../../user-guide/connect-team-projects.md).  
 
 3. Choose the reports to generate (steps 3 and 4 from the previous procedure).  
 
@@ -86,7 +87,7 @@ Use this procedure when you work from the web portal or the Team Explorer plug-i
 
 ### Q: Can I export a query to Excel? 
 
-**A:** If you want to export a query to Excel, you can do that from [Excel or Visual Studio/Team Explorer](../../work/office/bulk-add-modify-work-items-excel.md). Or, to export a query directly from the web portal Queries page, install the [VSTS Open in Excel Marketplace extension](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel). This extension will add in **Open in Excel** link to the toolbar of the query results page.
+**A:** If you want to export a query to Excel, you can do that from [Excel or Visual Studio/Team Explorer](../../work/backlogs/office/bulk-add-modify-work-items-excel.md). Or, to export a query directly from the web portal Queries page, install the [VSTS Open in Excel Marketplace extension](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel). This extension will add in **Open in Excel** link to the toolbar of the query results page.
 
 
 <a id="which_fields_are_non_reportable"></a>

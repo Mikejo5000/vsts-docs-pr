@@ -5,17 +5,17 @@ ms.assetid: 377fec8a-bdc5-4e3c-ac8c-79ee85eef4ce
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfvc
 ms.manager: douge
-ms.author: routlaw
+ms.author: sdanie
 ms.date: 08/10/2016
 ---
 
 # Checkout (or Edit) command
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Checks out a file and changes its pending change status to Edit. You can call this command using either **Checkout** or **Edit**.
 
-**Requirements:** See [Pernission reference for Team Foundation Server](../setup-admin/permissions.md).
+**Requirements:** See [Permissions and groups reference](../security/permissions.md).
 
     tf checkout [/lock:(none|checkin|checkout)] [/recursive] [/encoding:encoding] itemspec [/login: username,[password]]
 
@@ -24,8 +24,8 @@ Checks out a file and changes its pending change status to Edit. You can call th
 |**Parameter**|**Description**|
 |---|---|
 |**/encoding**|Ignore this parameter.|
-|*itemspec*|Specifies the scope of the items to check in. For syntax, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).|
-|**/lock**|Applies or removes a lock. See [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).|
+|*itemspec*|Specifies the scope of the items to check out. For syntax, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).|
+|**/lock**|Applies or removes a lock. See [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md#itemspec).|
 |**/login**:*username*,[*password*]|Specifies the user account to run the command. See [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).|
 |**/recursive**|Recursively checks out items in the specified directory and any subdirectories.|
 

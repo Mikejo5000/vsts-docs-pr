@@ -1,15 +1,17 @@
 ---
-title: Work with large files in your Git repo | Team Services & TFS
+title: Work with large files in your Git repo | VSTS & TFS
 description: Recommendations on how to manage large binary files in Git, Visual Studio, and Team Foundation Server.
 ms.assetid: 57ad13a3-9178-4f31-b776-79f32b1afa58
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-git
+ms.technology: vs-devops-git 
 ms.manager: douge
-ms.author: routlaw
+ms.author: sdanie
 ms.date: 08/04/2016
 ---
 
 # Manage and store large files in Git
+
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015
 
 Git is great at keeping the footprint of your source code small because the differences between versions are easily picked out and code is easily compressed. 
 Large files that don't compress well and change entirely between versions (such as binaries) present problems when stored in your Git repos. 
@@ -71,9 +73,9 @@ The benefit of Git LFS is that your team can use the familiar end to end Git wor
 LFS files can be as big as you need them to be.
 Additionally, as of version 2.0, Git LFS supports [file locking](https://github.com/git-lfs/git-lfs/wiki/File-Locking) to help your team work on large, undiffable assets like videos, sounds, and game maps.
 
-Git LFS is [is fully supported and free in Team Services](https://blogs.msdn.microsoft.com/visualstudioalm/2015/10/01/announcing-git-lfs-on-all-vso-git-repos/).
+Git LFS is [is fully supported and free in VSTS](https://blogs.msdn.microsoft.com/visualstudioalm/2015/10/01/announcing-git-lfs-on-all-vso-git-repos/).
 To use LFS with Visual Studio, you need at least [Visual Studio 2015 Update 2](https://www.visualstudio.com/en-us/news/vs2015-update2-vs.aspx).
-Just follow the [instructions to install the client](https://git-lfs.github.com/), set up LFS tracking for files on your local repo, and then push your changes to Team Services.
+Just follow the [instructions to install the client](https://git-lfs.github.com/), set up LFS tracking for files on your local repo, and then push your changes to VSTS.
 
 ### Limitations
 
@@ -87,7 +89,7 @@ Committing large binaries without the Git LFS client installed will push the bin
 If two people are working on the same file at the same time, they must work together to reconcile their changes to avoid overwriting the other's work.
 Git LFS provides [file locking](https://github.com/git-lfs/git-lfs/wiki/File-Locking) to help.
 Users must still take care to always pull the latest copy of a binary asset before beginning work.
-0. Team Services currently does not support using SSH in repos with Git LFS tracked files.   
+0. VSTS currently does not support using SSH in repos with Git LFS tracked files.   
    
 ### File format
 
@@ -109,6 +111,10 @@ If you use TFS, Git may be using the Kerberos protocol to authenticate.
 (This does not apply to VSTS, which uses a different form of authentication.)
 LFS does not support Kerberos, so you will get errors which say "Your user name must be of the form DOMAIN\user".
 To get out of this state, you will need to remove the Kerberos credential and let Git pick up a new NTLM credential instead.
+
+> [!NOTE]
+> Credentials sent via HTTP will be passed in clear text.
+> [Ensure your instance of TFS is configured for HTTPS](../security/websitesettings.md), and do not use HTTP with Git-LFS.
 
 0. Open the Windows Credential Manager. On Windows 10, you can press Start and then type "Credential Manager".
 

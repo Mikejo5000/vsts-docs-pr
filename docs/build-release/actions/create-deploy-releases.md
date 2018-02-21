@@ -1,15 +1,15 @@
 ---
-title: Create and deploy a release with Release Management in Team Services or Team Foundation Server
+title: Create and deploy a release with Release Management
 description: Create and deploy a release with Release Management in Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-release
+ms.technology: vs-devops-build
 ms.assetid: DCAD8C16-242E-4672-A5C6-5894C25CAF11
 ms.manager: douge
 ms.author: ahomer
-ms.date: 02/16/2017
+ms.date: 01/19/2018
 ---
 
-# How to: Create and deploy a release
+# Create and deploy a release
 
 [!INCLUDE [version-rm-dev14](../_shared/version-rm-dev14.md)]
 
@@ -18,6 +18,8 @@ You can create a [release](../concepts/releases/index.md) from the
 [continuous deployment](../concepts/definitions/release/triggers.md) scenario.
 You can also create a [draft](#create-draft) release. After you create a release,
 you may need to [deploy](#deploy-command) (and redeploy) it manually.
+
+[What's the difference between a release definition and a release?](../concepts/releases/index.md)
 
 <h2 id="create-from-release">Create a release from the Releases tab</h2>
 
@@ -28,41 +30,33 @@ you may need to [deploy](#deploy-command) (and redeploy) it manually.
    ![Creating a new release manually](_img/create-deploy-releases/create-release-manually-01.png)
 
    Alternatively, open the definition for editing. Then choose **Create Release**
-   from the **Release** drop-down list, or open the shortcut menu for a release
-   definition in the left column and choose **Release**.   
+   from the **Release** drop-down list.   
 
    ![Creating a new release manually](_img/create-deploy-releases/create-release-manually-02.png)
 
-1. In the **Create new release for...** dialog, optionally enter a description
+1. In the **Create new release** panel, optionally enter a description
    for this release. Then select the version of the linked build artifacts
    you want to include in this release. If the version you want to use is not
-   shown in the list, type the version number.
+   shown in the list, type the version number. Then choose **Create**.
 
    ![Specifying details of a release](_img/create-deploy-releases/create-release-manually-03.png)
 
    For artifact sources of type Build, you must enter the **BuildId** value,
    not the **BuildNumber**. See [Artifact variables](../concepts/definitions/release/variables.md#artifact-variables).  
 
-1. Specify the **Automated deployment** setting for each environment.
-   The **Manual deployments** section lists the environments for which users
-   will need to manually initiate deployment.
-
-   ![Specifying the automated deployment for a release](_img/create-deploy-releases/create-release-manually-04.png)
-
 >Specifying manual deployment for an environment is one way to prevent a deployment
 happening until you are sure it is ready to go. However, you can also use
-approvals at intermediate stages to pause a release and allow
+approvals, gates, and manual intervention at intermediate stages to pause a release and allow
 it to be cancelled before it reaches the target or final environment.
-For more details, see [Approvals](../concepts/definitions/release/environments.md#approvals).
+For more details, see [Approvals and gates overview](../concepts/definitions/release/approvals/index.md).
 
 <h2 id="create-from-build">Create a release from the Builds tab</h2>
 
 If you have not set the [continuous deployment trigger](../concepts/definitions/release/triggers.md),
 or you have not defined a fully orchestrated pipeline for deploying the artifacts
-specified in your releases, you will need to manually initiate the deployment
-for some environments.
+specified in your releases, you will need to manually initiate the deployment for some environments.
 
-1. Open the **Builds** tab of the **Build & Release** hub and select a build result
+1. Open the **Builds** tab of the **Build and Release** hub and select a build result
    (not the build definition name).
 
    ![Selecting a build in the Builds tab](_img/create-deploy-releases/build-release-01.png)
@@ -75,10 +69,6 @@ for some environments.
    choose the **Create release** link in the **Deployments** section.
 
    ![Creating a release from the Builds tab build status view](_img/create-deploy-releases/build-release-03.png)
-
-1. In the **Create new release** dialog select the release definition to use
-   be used with this build (one that is linked to this build definition),
-   and the version of the build artifacts to deploy. Then specify the **Automated deployment** setting for each environment.
 
 <h2 id="create-draft">Create a draft release</h2>
 
@@ -109,9 +99,10 @@ column and choosing **Deploy**.
 ![Starting a deployment in a release](_img/create-deploy-releases/deploy-manually-01.png)
 
 Alternatively, choose the environment you want to deploy to from the **Deploy**
-drop-down list in the toolbar.  
+drop-down list in the toolbar. You can choose a single target environment or
+select multiple environments.
 
-![Starting a deployment using the Deploy drop-down list](_img/create-deploy-releases/deploy-manually-02.png)
+![Starting a deployment using the Deploy drop-down list](_img/view-manage-releases/deploy-03.png)
 
 >By selecting an environment that is not the final one, you can test the initial steps
 and tasks in a release safe in the knowledge that it will stop before, for example,
@@ -127,15 +118,13 @@ For more details, see [Task phases](../concepts/process/phases.md).
 
 * [View and manage releases](view-manage-releases.md)
 
-* [Monitor releases and debug deployment issues](debug-deployment-issues.md)
-
 ## Q&A
 
 <!-- BEGINSECTION class="md-qanda" -->
 
 ### How do I programmatically create a release definition?
 
-[Release Management REST API](../../integrate/overview.md)
+[Release Management REST API](../../integrate/index.md)
 
 [!INCLUDE [qa-versions](../_shared/qa-versions.md)]
 

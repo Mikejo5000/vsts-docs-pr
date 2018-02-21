@@ -2,16 +2,17 @@
 title: Build Details tables | TFS
 description: Query for data about builds, such as the status and quality.
 ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
-ms.topic: reference
+ms.technology: vs-devops-reporting
 ms.assetid: cbcabf4d-d334-4c17-a003-315e337a49b3
 ms.manager: douge
 ms.author: kaelli
-ms.date: 03/09/2017
+ms.date: 10/17/17
 ---
+
+
 # Build Details tables
 
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 You can query for data about builds, such as the status and quality, by using FactBuildDetails and the associated dimension tables.  
   

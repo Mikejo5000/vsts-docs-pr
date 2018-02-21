@@ -6,11 +6,13 @@ ms.technology: vs-devops-reporting
 ms.assetid: 631ec793-644f-4eff-8403-e48e746e369e
 ms.author: kaelli
 ms.manager: douge
-ms.date: 12/30/2016
+ms.date: 10/17/17
 ---
+
+
 # Bug Trends Report
 
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 You can use the Bug Trends report to help track the rate at which your team is discovering and resolving bugs. This report shows a rolling or moving average of bugs being reported, resolved, and closed over time. When you manage a large team or a large number of bugs, you can monitor the Bug Trends report weekly to gain insight into how well the team is finding, resolving, and closing bugs.  
   
@@ -23,7 +25,7 @@ You can use the Bug Trends report to help track the rate at which your team is d
   
  **Required Permissions**  
   
- To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in SQL Server Reporting Services. For more information, see [Add users to team projects](../../setup-admin/add-users.md) or [Managing Permissions in Team Foundation Server](../../setup-admin/permissions.md).  
+ To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in SQL Server Reporting Services. For more information, see [Grant permissions to view or create reports in TFS](../admin/grant-permissions-to-reports.md).  
   
 ##  <a name="Data"></a> Data in the Report  
  The Bug Trends report calculates a rolling average of the number of bugs that the team has opened, resolved, and closed based on the filters that you specify. The rolling average is based on the seven days before the date for which it is calculated. That is, the report averages the number of bugs in each state for each of the seven days before the date, and then the result is divided by seven. The data is derived from the data warehouse.  
@@ -51,7 +53,7 @@ You can use the Bug Trends report to help track the rate at which your team is d
   
 -   Specify the **Priority** and **Severity** of each bug during triage.  
   
- You can use the Triage workbook to quickly update the iteration, area, state, priority, and severity of bugs. For more information, see [Workbooks](../guidance/workbooks.md).  
+ You can use the Triage workbook to quickly update the iteration, area, state, priority, and severity of bugs. For more information, see [Workbooks](../sharepoint-dashboards/workbooks.md).  
   
 ##  <a name="Duration"></a> Setting the Duration of the Sprint or Iteration  
  To understand the bug trends for your current iteration, the start and end dates for the report must match those of your current iteration cycle.  
@@ -112,7 +114,7 @@ You can use the Bug Trends report to help track the rate at which your team is d
   
 ## Related notes  
  [Bugs](../sharepoint-dashboards/bugs-dashboard-agile-cmmi.md)   
- [Workbooks](../guidance/workbooks.md)   
+ [Workbooks](../sharepoint-dashboards/workbooks.md)   
  [Bug Status](bug-status-report.md)   
  [Reactivations](reactivations-report.md)   
  [Reporting Services Reports](reporting-services-reports.md)

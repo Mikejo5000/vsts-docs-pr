@@ -5,13 +5,13 @@ ms.assetid: 3fe6cce2-b152-4733-8aa1-4f74072e8767
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfvc
 ms.manager: douge
-ms.author: routlaw
+ms.author: sdanie
 ms.date: 08/10/2016
 ---
 
 # Lock and unlock folders or files in Team Foundation Version Control
 
-**Team Services | TFS 2015 | Visual Studio 2013 | Visual Studio 2015**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 > [!NOTE]
 > This content applies to files managed by Team Foundation Version Control (TFVC) that you need to lock or unlock. For help unlocking files in use by programs on your PC, use the [Handle](https://technet.microsoft.com/en-us/sysinternals/bb896655.aspx) and
@@ -28,7 +28,7 @@ You can use a lock to temporarily freeze the server version of an item so that y
 
 **Requirements**
 
-See [Permission reference for Team Foundation Server](../setup-admin/permissions.md).
+See [Permissions and groups reference](../security/permissions.md).
 
 ### To lock a folder or file from Source Control Explorer
 
@@ -55,7 +55,7 @@ See [Permission reference for Team Foundation Server](../setup-admin/permissions
 ### To unlock a folder or file from Source Control Explorer
 
 > [!IMPORTANT]
-> You can only unlock files other members of your team have locked if you have [UnlockOther permissions]((../setup-admin/permissions.md). 
+> You can only unlock files other members of your team have locked if you have [UnlockOther permissions](../security/permissions.md). 
 > If you don't have permission to unlock a file the option will be inaccessible.
 
 1.  While working in the server workspace, navigate to the **View** menu and choose **Other Windows**, then choose **Source Control Explorer**.

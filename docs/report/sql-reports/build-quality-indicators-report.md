@@ -6,11 +6,13 @@ ms.technology: vs-devops-reporting
 ms.assetid: 7e9e87ae-43c7-4ede-9c66-dd887f5a8905
 ms.author: kaelli
 ms.manager: douge
-ms.date: 12/30/2016
+ms.date: 10/17/17
 ---
+
+
 # Build Quality Indicators Report
 
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 
 The Build Quality Indicators report shows test coverage, code churn, and bug counts for a specified build definition. You can use this report to help determine how close portions of the code are to release quality.  
@@ -26,7 +28,7 @@ The Build Quality Indicators report shows test coverage, code churn, and bug cou
   
  **Required Permissions**  
   
- To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in Reporting Services. For more information, see [Add users to team projects](../../setup-admin/add-users.md).  
+ To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in Reporting Services. For more information, see [Add users to team projects](../admin/grant-permissions-to-reports.md).  
   
 ##  <a name="Data"></a> Data in the Report  
  The data that appears in the Build Quality Indicators report is derived from the data warehouse. The X-axis lists the specific builds that the report includes, based on the filters that you have set for the platform, configuration, and build definition.  
@@ -70,7 +72,7 @@ The Build Quality Indicators report shows test coverage, code churn, and bug cou
   
 -   **Create build definitions**. You can create several build definitions, each of which can be run to produce code for a different platform. Also, you can run each build for a different configuration.  
   
-     For more information, see [Get started with CI/CD](../../build-release/get-started/ci-cd-part-1.md).
+     For more information, see [Get started with CI/CD](../../build-release/actions/ci-cd-part-1.md).
   
 -   **Define tests to run automatically as part of the build**. As part of the build definition, you can define tests to run as part of the build or to fail if the tests fail.  
   
@@ -80,7 +82,7 @@ The Build Quality Indicators report shows test coverage, code churn, and bug cou
   
 -   **Run builds regularly**. You can run builds at set intervals or after every check-in. You can create regular builds when you use the schedule trigger.  
   
-     For more information, see [Build triggers](../../build-release/define/triggers.md).
+     For more information, see [Build triggers](../../build-release/concepts/definitions/build/triggers.md).
   
     > [!NOTE]
     >  Although a team member can manually rate a build by using Build Explorer, this rating is not reflected in the Build Quality Indicators report. The build rating appears in the Build Summary report. For more information, see [Rate the quality of a completed build](https://msdn.microsoft.com/library/ms181734.aspx) and [Build Summary](build-summary-report.md).  

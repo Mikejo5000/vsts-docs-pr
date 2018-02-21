@@ -1,7 +1,8 @@
 ---
-title: Use team fields instead of area paths to support teams | Team Services & TFS
-description: Steps to modify the XML syntax to support using a team field  for Visual Studio Team Services (VSTS) and Team Foundation Server
-ms.technology: vs-devops-agile-wit
+title: Use team fields instead of area paths to support teams 
+titleSuffix: TFS
+description: Steps to modify the XML syntax to support using a team field with Team Foundation Server
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: d61dcfa8-e9ec-4b50-b79b-89512cf1e3ea
 ms.manager: douge
@@ -11,10 +12,11 @@ ms.date: 04/14/2017
 
 # Use team fields instead of area paths to support teams
 
-<b>TFS 2017 | TFS 2015 | TFS 2013</b> 
+[!IN
+CLUDE [temp](../_shared/version-header-tfs-only.md)]
 
 >[!IMPORTANT]  
->**Feature availability:**&#160;&#160;Team fields are only supported for on-premises TFS. Team fields are not supported in Team Services. 
+>**Feature availability:**&#160;&#160;Team fields are only supported for on-premises TFS. Team fields are not supported in VSTS. 
 >
 >Also, you can use a Team field or Area Paths to configure Team-scoped tools, but not both. 
 
@@ -30,7 +32,7 @@ When you customize your team project to support team fields, the Team field tab 
 
 [!INCLUDE [temp](../_shared/image-differences.md)] 
 
-<img src="_img/use-team-fields-instead-area-paths-support-teams/IC686847.png" alt="Web portal, team project admin context, Team field page added" style="border: 1px solid #CCCCCC;" />
+<img src="_img/use-team-fields-instead-area-paths-support-teams/IC686847.png" alt="Web portal, team project admin context, Team field page added" style="border: 2px solid #C3C3C3;" />
 
 >[!NOTE]  
 >This topic describes how to reconfigure a team project that is based on the Scrum process template. If your team project is based on another process template and that template is compatible with TFS 2013 or later version, you can make similar changes. Even if you've used the default configuration, you can reconfigure your team project. 
@@ -39,30 +41,19 @@ When you customize your team project to support team fields, the Team field tab 
 <a id="globallist">  </a>  
 ### 1. Create a global list to manage teams 
 
-1.  If you aren't a member of the **Project Administrators** group, [get those permissions](../../setup-admin/add-administrator-tfs.md).
+0. If you aren't a member of the **Project Administrators** group, [get those permissions](../../security/set-project-collection-level-permissions.md).
 
-2.  Open a Command Prompt window where you've installed a version of Visual Studio (you can [download Visual Studio Community](https://www.visualstudio.com/downloads/) for free) and enter:
+[!INCLUDE [temp](../_shared/witadmin-run-tool-example.md)]
 
-	**For Visual Studio 2017:**
-     ```cd %programfiles%\Microsoft Visual Studio 15.0\Common7\IDE```
-
-	**For Visual Studio 2015:**
-    ```cd %programfiles%\Microsoft Visual Studio 14.0\Common7\IDE```
-
-	**For Visual Studio 2013**: 
-	```cd %programfiles%\Microsoft Visual Studio 12.0\Common7\IDE```  
-
-    On a 64-bit edition of Windows, replace %programfiles% with %programfiles(x86)%. 
-
-	[!INCLUDE [temp](../_shared/process-editor.md)]  
-
-3.  Export the global list for the team project collection.
+0.  Export the global list for the team project collection.
 
         witadmin exportgloballist /collection:"http://MyServer:8080/tfs/DefaultCollection" /f:Directory/globallist.xml"
 
     Add the global list definition for your team. Include a value you'll want to use for items not yet assigned to a team. If your global list is empty, simply copy the following code, paste into the XML file, and modify to support your team labels.
 
-        <?xml version="1.0" encoding="utf-8"?>
+        > [!div class="tabbedCodeSnippets"]
+		```XML
+		<?xml version="1.0" encoding="utf-8"?>
         <gl:GLOBALLISTS xmlns:gl="http://schemas.microsoft.com/VisualStudio/2005/workitemtracking/globallists">
            <GLOBALLIST name="Teams">
               <LISTITEM value="Unassigned"/>
@@ -72,8 +63,9 @@ When you customize your team project to support team fields, the Team field tab 
               <LISTITEM value="Team D"/>
            </GLOBALLIST>
         </gl:GLOBALLISTS>
+		```
 
-4.  Import the global list definition.
+0.  Import the global list definition.
 
         witadmin importgloballist /collection:"http://MyServer:8080/tfs/DefaultCollection" /f:Directory/globallist.xml"
 
@@ -95,6 +87,8 @@ Add a custom team field to all work item types (WITs) that are included in the F
 
 2.  For each type, add a custom Team field that references the global list.
 
+        > [!div class="tabbedCodeSnippets"]
+		```XML
         <FIELDS>
         . . . 
            <FIELD name="Team" refname="MyCompany.Team" type="String" reportable="dimension">
@@ -107,12 +101,15 @@ Add a custom team field to all work item types (WITs) that are included in the F
            </FIELD>
         . . . 
         </FIELDS>
+		```
 
     >[!TIP]  
     >Name your custom field to distinguish it from other system fields. Do not use "System" as a prefix for `refname`. And, keep the `name` and `refname` labels to 128 characters and 70, respectively.
 
-3.  Add the **Team** field to the [Layout section](../reference/layout-xml-element-reference.md) of the work item form. If you are working in Team Services or TFS 2017, you'll also need to edit the [**WebLayout** section](../reference/weblayout-xml-elements.md) of the WIT definition. 
+3.  Add the **Team** field to the [Layout section](reference/layout-xml-element-reference.md) of the work item form. If you are working in VSTS and TFS 2017, you'll also need to edit the [**WebLayout** section](reference/weblayout-xml-elements.md) of the WIT definition. 
 
+        > [!div class="tabbedCodeSnippets"]
+		```XML
         <FORM>
         . . . 
            <Group Label="Status">
@@ -125,6 +122,7 @@ Add a custom team field to all work item types (WITs) that are included in the F
            </Group>
         . . . 
         </FORM>
+		```
 
     Optionally, move the Area Path field to appear before or after the Iteration Path.
 
@@ -146,7 +144,10 @@ Add a custom team field to all work item types (WITs) that are included in the F
 
         <TypeField refname="MyCompany.Team" type="Team" />
 
-3.  (Optional) Add the Team field to the quick add panel for the backlog page.
+3.  (Optional) Add the Team field to the quick add panel for the backlog page.  
+  
+        > [!div class="tabbedCodeSnippets"]
+		```XML
         <RequirementBacklog category="Microsoft.RequirementCategory" parent="Microsoft.FeatureCategory" pluralName="Stories" singularName="User Story">
             <AddPanel>
               <Fields>
@@ -155,6 +156,7 @@ Add a custom team field to all work item types (WITs) that are included in the F
               </Fields>
             </AddPanel> 
         . . .
+		```
 
 4.  Import the definition file.
 
@@ -167,7 +169,7 @@ Create and configure teams in the web portal to both match and reference the Tea
 
 1.  Refresh your web portal, and from the team project home page, open a product backlog item, PBI or user story. Verify that the changes appear as you expect and that you can select a team.
 
-    <img src="_img/use-team-fields-instead-area-paths-support-teams/IC649971.png" alt="Open PBI and confirm the Team field" style="border: 1px solid #CCCCCC;" /> 
+    <img src="_img/use-team-fields-instead-area-paths-support-teams/IC649971.png" alt="Open PBI and confirm the Team field" style="border: 2px solid #C3C3C3;" />
 
 2.  If you haven't yet created teams to match those that are in your global list, do that now. See [Multiple teams, Add another team](../scale/multiple-teams.md).
 
@@ -197,7 +199,7 @@ Create and configure teams in the web portal to both match and reference the Tea
 
 From the product backlog page for the team project, you can create backlog items and assign them to teams by opening each item and selecting the Team field. Assigned items will show up on the team's backlog, and they can then work with them using their sprint backlog and task board.
 
-<img src="_img/use-team-fields-instead-area-paths-support-teams/IC778365.png" alt="Work from a common backlog" style="border: 1px solid #CCCCCC;" /> 
+<img src="_img/use-team-fields-instead-area-paths-support-teams/IC778365.png" alt="Work from a common backlog" style="border: 2px solid #C3C3C3;" />
 
 For backlog items you create from a team's backlog page, TFS assigns the default value associated with the team to the Team field.
 
@@ -205,24 +207,23 @@ For backlog items you create from a team's backlog page, TFS assigns the default
 ##Related notes
 
 - [Add a team, add team members](../scale/multiple-teams.md)
-- [Customize a process template](../reference/process-templates/customize-process.md)  
-- [**witadmin** command-line tools](../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md).
-- [ProcessConfiguration XML element reference](../reference/process-configuration-xml-element.md) 
+- [Customize a process template](reference/process-templates/customize-process.md)  
+- [**witadmin** command-line tools](reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md).
+- [ProcessConfiguration XML element reference](reference/process-configuration-xml-element.md) 
 
 
 ### Q: Why don't teams that I add to a team project show up in the Team field?
 
 **A:** Teams that you [add to a team project from the Overview page of the team project](../scale/multiple-teams.md), will not show up in the pick list of the custom field that you created to capture teams. You must update the global list that you created in [Create a global list to manage teams](#globallist) for new teams to appear.
 
-Use the global list to add new teams and then configure them as described in [Configure Team settings](#configteam).
 
 ### Q: How do I configure features for an upgraded team project that has been customized to use team fields?
 
 **A:** Before you can [configure features for an upgraded team project](configure-features-after-upgrade.md) that you have customized to use team fields, you'll need to customize the latest process template with the same changes outlined in this topic. Here are the basic steps:
 
-1.  Upgrade TFS [to the latest version](https://www.visualstudio.com/downloads/#team-foundation-server-2017).
+1.  Upgrade TFS [to the latest version](https://www.visualstudio.com/downloads).
 
-2.  [Download the process template](../guidance/manage-process-templates.md) that corresponds to the template used to create your team project.
+2.  [Download the process template](../work-items/guidance/manage-process-templates.md) that corresponds to the template used to create your team project.
 
 	>[!IMPORTANT]  
 	>Make sure that you download the process template from the upgraded server. Also, the Visual Studio client version you use for both the download process and using **witadmin** must match the server version. For example, if you have upgraded to TFS 2015, you need to work from Visual Studio 2015. If you use an older version of Visuals Studio, you may get errors during the upload process. 
@@ -240,7 +241,7 @@ Use the global list to add new teams and then configure them as described in [Co
 
 5.  As described in [Change process configuration to reference the team field](#processconfig), update the ProcessConfiguration file to use the custom team field.
 
-6.  [Upload the process template](../guidance/manage-process-templates.md) that you just modified.
+6.  [Upload the process template](../work-items/guidance/manage-process-templates.md) that you just modified.
 
 7.  [Configure features](configure-features-after-upgrade.md) using the wizard. Upon verify, the wizard should select the process template that you uploaded in the previous step.
 
