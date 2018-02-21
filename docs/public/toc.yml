@@ -12,21 +12,24 @@
     href: make-project-public.md
   - name: Download code
   - name: View and filter work items
+    href: view-filter-work-items-public.md
   - name: View a project page or dashboard
-  - name: View the project Wiki 
+    href: view-project-dashboard-public.md
+  - name: View the project Wiki
+    href: view-wiki-public.md 
 - name: Tutorials
   items:
   - name: Browse the code base 
-    href: browse-code.md
+    href: browse-code-public.md
   - name: Clone a repository
-    href: clone-git-repo.md 
+    href: clone-git-repo-public.md 
   - name: View build progress  
   - name: View release progress  
   - name: View test plans and test results  
 - name: Concepts
   items:
-  - name: Default roles and permissions
-    href: ../security/permissions-access.md?toc=/vsts/public/toc.json&bc=/vsts/public/breadcrumb/toc.json 
+  - name: Default roles and access
+    href: default-roles-access-public.md 
 - name: How-to Guides
   items:
   - name: Filter basics
