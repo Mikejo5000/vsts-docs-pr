@@ -49,7 +49,7 @@ interacting with a normal Git repo and file system
 ## GvFlt
 
 Some optional background reading for those who are curious: GvFlt is a 
-[file system filter driver](https://docs.microsoft.com/en-us/windows-hardware/drivers/ifs/file-system-filter-drivers).
+[file system filter driver](https://docs.microsoft.com/en-us/windows-hardware/drivers/ifs/file-system-filter-drivers)
 that makes heavy use of 
 [reparse points](https://msdn.microsoft.com/en-us/library/windows/desktop/aa365503(v=vs.85).aspx).
 
