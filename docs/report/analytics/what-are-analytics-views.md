@@ -17,7 +17,7 @@ ms.date: 2/8/2018
 
 Analytics Views work with our [VSTS Power BI Data Connector](../powerbi/data-connector-connect.md). Together they provide a easy way to get your VSTS data into Power BI so you can start creating amazing reports.
 
-When using the VSTS Power BI Data Connect, you are provided a list of Analytics Views to choose from:
+When using the VSTS Power BI Data Connector, you are provided a list of Analytics Views to choose from:
 ![VSTS Power BI Integration - Data Connector - Default Analytics Views](./_img/data-connector-views-default.png)
 
 The view you select determines what records, fields, and history is pulled into Power BI.
