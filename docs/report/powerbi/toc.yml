@@ -4,6 +4,10 @@
   items:
   - name: Power BI Integration overview
     href: overview.md
+  - name: Quickstarts
+  items:
+  - name: Add a report using Power BI Analytics view
+    href: create-quick-report.md
 - name: How-to Guides
   items:
   - name: Connect using Data Connector 
