@@ -14,16 +14,23 @@ ms.date: 02-24-2018
 # Navigate to an application or functional area  
 
 When navigating within the web portal for VSTS, there are four levels supported:  
-- *Account-level*, which supports navigation to a team project or repository that you have access to providing "me pages"   
-- *Team project or repository level*, which supports navigation to one or more applications or functional views for a team project   
-- *Within a functional view*, you may then have a choice of options to select a specific artifact depending on the functional area you've selected  
-- *Settings*, which supports an administrative context for configuring settings at the account/collection or team project level   
-- *Account profile*, which supports setting personal preferences, notifications, and enabling/disabling preview features   
+- *Account-level*, navigate to a team project or repository that you have access to providing "me pages"   
+- *Team project or repository level*, navigate to one or more applications or functional views for a team project   
+- *Within a functional view*, navigate to a specific artifact or view depending on the functional area you're in  
+- *Settings*, navigate to an administrative context for configuring settings at the account/collection or team project level   
+- *Account profile*, [set personal preferences](../accounts/account-preferences.md), [notifications](../notifications/manage-personal-notifications.md), or [turn on/off a preview feature](../collaborate/preview-features.md)  
 
 If you don't have a team project yet, create one in [VSTS](../accounts/create-account-msa-or-work-student.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json) or set one up in an [on-premises TFS](../accounts/create-team-project.md). If you don't have access to the team project, [get invited to the team](../work/scale/multiple-teams.md#add-team-members).
 
-## Open an application 
+## Open a team project or repository 
 
+# [Vertical navigation](#tab/vertical)
+
+# [Horizontal navigation](#tab/horizontal)
+
+---
+
+## Open an application 
 
 # [Vertical navigation](#tab/vertical)
 
@@ -36,11 +43,7 @@ Within an application, you navigate to different functional areas by clicking on
 # [Horizontal navigation](#tab/horizontal)
 <!--- Support horizontal navigation --> 
 
-In horizontal navigation mode, you navigate to a different application by clicking one of the hubs in the horizonal blue bar. 
-
-![Horizontal nav, open an app](_img/go-to-app/project-app-horizontal-selection.png)
-
-Within a hub, you then select a page within the horizontal tabs available.
+In horizontal navigation mode, you navigate to a different application by clicking one of the hubs in the horizonal blue bar. Within a hub, you then select a page within the horizontal tabs available.
 
 ![Horizontal nav, open a functional are or page for an app](_img/go-to-app/project-app-page-horizontal-selection.png)
 
