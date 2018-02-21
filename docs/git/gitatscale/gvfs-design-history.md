@@ -276,5 +276,5 @@ even though it looks like they're all on disk? How thoroughly does Git honor the
 sparse-checkout configuration in all of its commands? Are there cases where it will 
 walk through too many blobs? (Hint: this is called foreshadowing)
 
-In a future article, we'll discuss how we designed GVFS to solve those issues
+In - [GVFS Design History](https://www.visualstudio.com/learn/gvfs-design-history), we'll discuss how we designed GVFS to solve those issues
 and meet our performance goals.
