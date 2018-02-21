@@ -110,7 +110,7 @@ we'll discuss the specific issues that Git encounters as a repo grows in size.
 - [Limited Refs](https://www.visualstudio.com/learn/limited-refs)
 - [The Race to Push](https://www.visualstudio.com/learn/race-to-push)
 - [GVFS Design History](https://www.visualstudio.com/learn/gvfs-design-history)
-
+- [GVFS Architecture](https://www.visualstudio.com/learn/gvfs-architecture)
+- 
 ## Other articles coming soon
-- GVFS internals
 - Windows repo case study
