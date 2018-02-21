@@ -11,6 +11,7 @@
   - name: Make a team project public
     href: make-project-public.md
   - name: Download code
+    href: download-code-public.md
   - name: View and filter work items
     href: view-filter-work-items-public.md
   - name: View a project page or dashboard

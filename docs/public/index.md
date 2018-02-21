@@ -21,15 +21,15 @@ Create a public project, make an existing project public, or work in a public pr
 
 * [Create a public project](create-public-project.md)
 * [Make a team project public](make-project-public.md)
-* Download code
-* View and filter work items
-* View a project page or dashboard
-* View the project Wiki 
+* [Download code](download-code-public.md)
+* [View and filter work items](view-filter-work-items-public.md)
+* [View a project page or dashboard](view-project-dashboard-public.md)
+* [View the project Wiki](view-wiki-public.md) 
 
 ## Step-by-Step Tutorials
 
-* [Browse the code base](browse-code.md)
-* [Clone a repository](clone-git-repo.md)
+* [Browse the code base](browse-code-project.md)
+* [Clone a repository](clone-git-repo-project.md)
 * View build progress  
 * View release progress  
 * View test plans and test results  

@@ -15,22 +15,9 @@ ms.date: 02/20/2018
 
 **VSTS Public Project**
 
-You can quickly get started with a team project from the project page. You can share your project vision with your team, add team members, and check the latest activity. Use this page to leverage all the built-in DevOps functionality of VSTS and to perform the following activities:
-
-  
-> [!NOTE]    
-> The features and functions available from your project page depend on the source control&#151;Git or Team Foundation Version Control (TFVC)&#151;that you selected when you [created your team project](../accounts/create-team-project.md).  
-
-
-> [!div class="mx-tdBreakAll"]   
-> |Git repository |TFVC repository |  
-> |-------------|----------|  
-> |- Clone your project to your client computer<br/>- Push an existing repository from the command line<br/>- Import a repository<br/>- Initialize a README or gitignore<br/>- Setup a build from an external repository<br/>- [Add team members](#cross-project-activity)<br/>- [View code, build, and work activity](#cross-project-activity)|- Setup a build<br/>- Add a README for your project<br/>- [Add team members](#cross-project-activity)<br/>- [View code, build, and work activity](#cross-project-activity) |
-
-## Prerequisites
-
-- To view the team project page, you must be a valid member of the team project. For more information, see [Default roles and access for public projects](default-roles-access-public.md) 
-
+You can view the homepage or dashboards defined for a public project. 
+Use the project page to XXX. If you're a contributor, you can also [add and edit dashboards](../report/dashboards/dashboards.md).  
+Use the project page to XXX. 
 
 ## Open the project home page
 From your web browser, open the team project drop down menu and select the home page. If you don't have a public project yet, [create one](create-public-project.md).   
