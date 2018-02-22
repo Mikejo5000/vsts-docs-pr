@@ -13,8 +13,9 @@ ms.date: 03/01/2018
 
 # Manage bugs
 
-[!INCLUDE [temp](../../_shared/banner-vsts-tfs.md)]
-      
+[!INCLUDE [temp](../../_shared/banner-vsts-tfs.md)]
+
+    
 How do you track and manage defects in your code? How do you make sure software problems and customer feedback get addressed in a timely manner to support high-quality software deployments? And, how do you do this while making good progress on new features? 
 
 At a minimum, you need a way to capture your software issues, prioritize them, assign them, and track progress. Moreover, you'll want to manage your bugs in ways that align with your Agile practices. 
