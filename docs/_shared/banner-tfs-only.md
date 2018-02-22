@@ -1,0 +1,1 @@
+![Version selector notice](_img/version-selector-banner-tfs-only.png)
