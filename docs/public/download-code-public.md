@@ -1,6 +1,6 @@
 ---
 title: Download code 
-titleSuffix: VSTS Public Project
+titleSuffix: Azure CodeX Public Project
 description: Review the code base and current work by browsing repos, files, branches, pushes, commits, & pull requests 
 ms.technology: 
 ms.prod: vs-devops-alm
@@ -13,7 +13,7 @@ ms.date: 01/05/2018
 
 # Browse repos, files, branches, pushes, commits, & pull requests 
 
-**VSTS Public Project**
+**Azure CodeX Public Project** 
 
  
 

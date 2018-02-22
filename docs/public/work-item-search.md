@@ -1,6 +1,6 @@
 ---
 title: Search for work items in a public project
-titleSuffix: VSTS Public Project
+titleSuffix: Azure CodeX Public Project
 description: Use Work Item Search to search across all work item fields over one or more public projects  
 ms.assetid:  
 ms.prod: vs-devops-alm
@@ -13,7 +13,7 @@ ms.date: 01/05/2018
 
 # Search for work items defined in a public project
 
-**VSTS Public Project**
+**Azure CodeX Public Project** 
 
 Work Item Search provides fast and flexible search across all your work items over all projects in an account. 
 

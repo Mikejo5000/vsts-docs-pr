@@ -1,6 +1,6 @@
 ---
 title: Clone an existing Git repo
-titleSuffix: VSTS Public Project
+titleSuffix: Azure CodeX Public Project
 description: Create a local copy of an existing repo using Visual Studio or command line clone 
 ms.assetid:  
 ms.prod: vs-devops-alm
@@ -13,7 +13,7 @@ ms.date: 01/05/2018
 
 # Clone an existing Git repo
 
-**VSTS Public Project**
+**Azure CodeX Public Project** 
 
 Create a complete local copy of an existing Git repo by cloning it. 
 Cloning a repo downloads all commits and branches in the repo and sets up a named relationship with the existing repo you cloned.

@@ -1,6 +1,6 @@
 ---
 title: Public Projects 
-titleSuffix: VSTS 
+titleSuffix: Azure CodeX Public Project 
 description: Index to topics for creating and working in public projects for Visual Studio Team Services (VSTS)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
@@ -12,7 +12,7 @@ ms.date: 01/05/2018
 
 # Public Projects 
 
-**VSTS**
+**Azure CodeX Public Project**
 
 Create a public project, make an existing project public, or work in a public project to collaborate with others to develop software applications.  
 

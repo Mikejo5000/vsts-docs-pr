@@ -1,6 +1,6 @@
 ---
 title: Default roles & access for public projects
-titleSuffix: VSTS Public Project
+titleSuffix: Azure CodeX Public Project
 description: Overview of public project user roles and access
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-admin
@@ -15,4 +15,4 @@ ms.date: 02/20/2018
 
 # Default roles & access for public projects
 
-**VSTS Public Project**
+**Azure CodeX Public Project** 

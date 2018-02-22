@@ -1,6 +1,6 @@
 ---
 title: View wiki pages
-titleSuffix: VSTS Public Project
+titleSuffix: Azure CodeX Public Project
 description: view pages in the team project wiki 
 ms.technology: collaborate
 ms.prod: vs-devops-alm
@@ -14,7 +14,7 @@ ms.date: 02/20/2018
 
 # View and filter wiki pages 
 
-**VSTS Public Project**  
+**Azure CodeX Public Project**  
 
 When you connect to a public project, you're able to view pages added to the Wiki for that project. If you're a contributor, you can also [add and edit pages](../collaborate/add-edit-wiki.md).  
 

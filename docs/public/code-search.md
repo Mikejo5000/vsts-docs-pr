@@ -1,6 +1,6 @@
 ---
 title: Search the work items of a public project  
-titleSuffix: VSTS Public Project
+titleSuffix: Azure CodeX Public Project
 description: Search across all public projects to find specific types of code 
 ms.assetid:  
 ms.prod: vs-devops-alm
@@ -13,7 +13,7 @@ ms.date: 01/05/2018
 
 # Search the code base of a public project
 
-**VSTS Public Project**
+**Azure CodeX Public Project** 
 
 Use Code Search to search across all of your projects, find specific types of code,
 and easily drill down or widen your search
