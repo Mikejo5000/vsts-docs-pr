@@ -45,7 +45,7 @@ In addition to sharing information, the project home page pulls data from the va
 
 To view a dashboard, open a browser window and click the **Dashboards** link. 
 
-![Open the Dashboards hub](../report/dashbords/_img/dashboards-go-to.png) 
+![Open the Dashboards hub](../report/dashboards/_img/dashboards-go-to.png) 
 
 
 ## Unavailable dashboard widgets
