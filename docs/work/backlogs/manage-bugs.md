@@ -1,5 +1,6 @@
 ---
-title: Manage bugs using Agile tools provided by VSTS & TFS
+title: Manage bugs using Agile tools
+titleSuffix: VSTS & TFS 
 description: Manage technical debt and triage bugs using Agile tools and Scrum methods when working in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
@@ -7,12 +8,12 @@ ms.assetid: 6E5710EE-21C8-4264-AD65-A827D186F134
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article
-ms.date: 09/29/2017  
+ms.date: 03/01/2018
 ---
 
 # Manage bugs
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/banner-vsts-tfs.md)]
       
 How do you track and manage defects in your code? How do you make sure software problems and customer feedback get addressed in a timely manner to support high-quality software deployments? And, how do you do this while making good progress on new features? 
 
@@ -26,16 +27,6 @@ In a nutshell, you manage bugs through the following tasks:
 > * Update bug status throughout the bug lifecycle  
 > * Monitor bug assignments and trends    
 
-<!--- TBD  --> 
-In addition, you can: 
-- Capture bugs using test tools
-- Configure how your team manages bugs&mdash;along with requirements or with tasks 
-- Define queries and create charts of bug status, assignments, and trends
-- Manage duplicate bugs by linking and closing one of them    
-- Re-run test cases in the web runner using the Verify option 
-- Automatically capture bugs when using the Test & Feedback extension  
-- Customize the bug template  
-- Interface with UserVoice or Zendesk. 
 
 >[!NOTE]  
 >Depending on the process chosen to create your team project&mdash;[Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md)&mdash;
@@ -44,33 +35,58 @@ the items in your backlog may be called product backlog items (PBIs), user stori
 >By default, product backlog items (PBIs) and bugs appear on Scrum backlogs, user stories on Agile backlogs, and requirements on CMMI backlogs. Each team can choose how [bugs show up on their backlogs and boards](../customize/show-bugs-on-backlog.md). 
 
 
-
 ## Capture bugs  
 You can track bugs in much the same way that you track product backlog items (PBIs) or user stories. Using the bug work item form, you capture the code defect in the Title, Steps to Reproduce, and other fields.  
 
-You can create bugs from the [web portal](add-work-items.md), Visual Studio/Team Explorer, a [work item template](work-item-template.md), or through one of the testing tools.  
+You can create bugs from the [web portal](add-work-items.md), Visual Studio/Team Explorer, a [work item template](work-item-template.md), or through one of the [testing tools](../../manual-test/overview.md).  
 
 ### Bug work item form 
 
 The bug work item form tracks similar information to the one shown for the Scrum process.  
 
 >[!NOTE]  
->The images you see from your web portal may differ from the images you see in this topic. These differences result from updates made to VSTSor your on-premises TFS, options that you or your admin have enabled, and which process was chosen when creating your team project&mdash;[Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md). 
+>The images you see from your web portal may differ from the images you see in this topic. These differences result from updates made to VSTS or your on-premises TFS, options that you or your admin have enabled, and which process was chosen when creating your team project&mdash;[Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md). 
+
+[//]: # (::: moniker range="vsts")
+
+<img src="_img/manage-bugs-scrum-bug-from-ts.png" alt="Scrum bug work item form, VSTS" style="border: 2px solid #C3C3C3;" />
+
+> [!TIP]
+> Use the [Discussion section](../work-items/work-item-form-controls.md#discussion) to add and review comments made about the work being performed to resolve the bug.  
+
+[//]: # (::: moniker-end)
 
 
-#### VSTS, TFS 2018, TFS 2017 (new form enabled)
+
+[//]: # (::: moniker range=">= tfs-2017 <= tfs-2018")
+
+# [New web form](#tab/new-web-form)
 
 The new web form provides a number of experiences not provided with the old web form. To learn more, see [New work item experience](../customize/process/new-work-item-experience.md). 
 
 <img src="_img/manage-bugs-scrum-bug-from-ts.png" alt="Scrum bug work item form, VSTS" style="border: 2px solid #C3C3C3;" />
-</div>
 
-#### TFS 2015, TFS 2013 (old web form) 
+> [!TIP]
+> Use the [Discussion section](../work-items/work-item-form-controls.md#discussion) to add and review comments made about the work being performed to resolve the bug. 
 
-To learn more about working in the web form for TFS 2015 or earlier versions, see [Add work items to plan and track your project](add-work-items-tfs.md). 
+
+# [Old web form](#tab/old-web-form)
+
+To learn more about working in the old web form, see [Add work items to plan and track your project](add-work-items-tfs.md). 
 
 <img src="_img/scrum-bug-wi-form.png" alt="Scrum bug work item form, TFS 2015 or earlier versions" style="border: 2px solid #C3C3C3;" />
 
+---
+
+[//]: # (::: moniker-end)
+
+
+[//]: # (::: moniker range=">= tfs-2013 <= tfs-2015")
+To learn more about working in the old web form, see [Add work items to plan and track your project](add-work-items-tfs.md). 
+
+<img src="_img/scrum-bug-wi-form.png" alt="Scrum bug work item form, TFS 2015 or earlier versions" style="border: 2px solid #C3C3C3;" />
+
+[//]: # (::: moniker-end)
 
 ### Fields specific to bugs
 
@@ -178,9 +194,6 @@ For information about fields specific to the CMMI process, see [Bugs, issues, an
 Add and review comments made about the work being performed by going to the discussion section. 
 
 
-> [!TIP]
-> Use the [Discussion section](../work-items/work-item-form-controls.md#discussion) to add and review comments made about the work being performed to resolve the bug. This feature is only available from the new web form.   
-
 
 ## Capture bugs using test tools
 
@@ -194,7 +207,7 @@ You can create bugs during test sessions using one of the following tools:
  
 Once you've started coding and testing, you'll want to hold periodic triage meetings to review and prioritize your bugs. How frequently you meet and for how long depends on your situation. Typically, the project owner runs the bug triage meetings, and team leads, business analysts and other stakeholders who can speak about specific project risks attend them.  
 
-The project owner can create or open a shared query for new and reopened bugs to generate a list of bugs to be triaged.  
+The project owner can create or open a shared query for new and reopened bugs to generate a list of bugs to be triaged. 
 
 ### Bug queries
 Open a shared query or [use the query editor](../track/using-queries.md) to create useful bug queries, such as the following:
@@ -203,7 +216,7 @@ Open a shared query or [use the query editor](../track/using-queries.md) to crea
 - Bugs to fix for a target release (```Tags Contains RTM```)
 - Recent bugs - bugs opened within the last 3 weeks (```Created Date > @Today-21```) 
 
-Once you have the queries of interest to your team, you can [create status or trend charts](../../report/dashboards/charts.md) that you can also pin to a [team dashboard](../../report/dashboards/dashboards.md).  
+Once you have the queries of interest to your team, you can [create status or trend charts](../../report/dashboards/charts.md) that you can also add the chart to a [dashboard](../../report/dashboards/dashboards.md).  
 
 ### Triage mode in query results
 
@@ -221,10 +234,16 @@ When bugs are treated as tasks, they're often automatically linked to a PBI or u
  
 Your team should consider fixing all bugs found during a sprint when testing a feature in development.  
 
+<!---
+[//]: # (::: moniker range="vsts || >= tfs-2015 <= tfs-2018")
+
 >[!TIP]
->If you work from VSTS and TFS 2015.1 and later versions, you can 
+>From VSTS and TFS 2015.1 and later versions, you can 
 >[drag-and-drop work items onto a sprint from any backlog or board](../scrum/define-sprints.md#drag-drop-to-sprint).   
 
+[//]: # (::: moniker-end)
+
+-->
 
 
 <a id="fix-resolve-close">  </a>
@@ -275,22 +294,39 @@ For example, here are two examples showing active bugs by priority trend and a s
 
 To learn more about queries, charts, and dashboards; see [Create managed queries](../track/example-queries.md) and [Charts](../../report/dashboards/charts.md), and [Dashboards](../../report/dashboards/dashboards.md).    
 
+<a id="customize"> </a>
 ## Customize the bug form
 
-You can add fields, change the bug workflow, or customize the bug form. The method you use depends on the process model used by your team project. For details, see [Customize the work tracking experience](../customize/customize-work.md). 
+[//]: # (::: moniker range="vsts")
+
+You can add fields, change the bug workflow, or customize the bug form. For details, see [Customize an inheritance process](../customize/inheritance-process-model.md). 
+
+[//]: # (::: moniker-end)
+
+
+[//]: # (::: moniker range=">= tfs-2013 <= tfs-2018")
+You can add fields, change the bug workflow, or customize the bug form. For details, see [Customize the On-premises XML process model](../customize/on-premises-xml-process-model.md). 
+
+[//]: # (::: moniker-end)
+
+
+
+## Try this next
+> [!div class="nextstepaction"]
+> [Triage work items](../track/triage-work-items.md)
 
 
 ## Related topics 
 
 To track your bugs and integrate with other resources available to you, see these topics: 
 
-- [Triage work items](../track/triage-work-items.md)
 - [Scrum and working with sprints best practices](../scrum/best-practices-scrum.md)  
 - [Follow a work item or pull request](../../collaborate/follow-work-items.md)
 - [Move, change type, or delete work items](remove-delete-work-items.md)
 - [Pre-populate fields using a template](work-item-template.md)
 - [Copy or clone a work item](copy-clone-work-items.md#copy-clone)
 
+<a id="integrate"> </a>
 ### Integrate & Test resources
 - [UserVoice](../../service-hooks/services/uservoice.md)  
 - [Zendesk](../../service-hooks/services/zendesk.md)  
@@ -299,11 +335,20 @@ To track your bugs and integrate with other resources available to you, see thes
   
 
 
-### Pre-defined SQL Server bug reports (on-premises TFS only)
+[//]: # (::: moniker range="vsts")
 
-<!---
-If you work from VSTS, you can use Power BI to access [bug reports and dashboards](../../report/powerbi/report-on-vso-with-power-bi-vs.md).
--->
+
+### Use the Analytics service to create bug reports
+You can use Power BI to create more complex reports than what you can get from a query. To learn more, see [Connect to VSTS with Power BI Data Connector](../../report/powerbi/data-connector-connect.md). 
+
+[//]: # (::: moniker-end)
+
+
+
+[//]: # (::: moniker range=">= tfs-2013 <= tfs-2018")
+
+
+### Pre-defined SQL Server bug reports
 
 If you work from an on-premises TFS and you have SQL Server Analysis Services and SQL Server Reporting Services configured for your team project, you have access to the following reports (Agile and CMMI processes only).  
 
@@ -313,9 +358,11 @@ If you work from an on-premises TFS and you have SQL Server Analysis Services an
 
 To learn how to add SQL Server reports for a team project, see [Add reports to a team project](../../report/admin/add-reports-to-a-team-project.md).  
 
+[//]: # (::: moniker-end)
 
 
-###Use SonarQube to help manage technical debt
+
+### Use SonarQube to help manage technical debt
 
 SonarQube provides a way of automatically measuring some technical debt. SonarQube finds important violations of best coding practices. You implement Sonar to ensure that developers follow important code metrics like appropriate class and method size or low cyclomatic complexity (a quantitative measure of the number of linearly independent paths through a program's source code).  
 
@@ -326,6 +373,3 @@ By integrating your on-premises TFS with a SonarQube server, you can get the fol
 - Metrics for .Net and JavaScript  
 
 See [Technical Debt Management: Announcing SonarQube integration with MSBuild and Team Build](http://blogs.msdn.com/b/visualstudioalm/archive/2015/05/05/technical-debt-management-announcing-sonarqube-integration-with-msbuild-and-team-build.aspx) for details.
-
-
-
