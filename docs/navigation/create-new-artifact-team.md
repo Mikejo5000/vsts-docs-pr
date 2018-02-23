@@ -32,6 +32,10 @@ You can quickly add a pull request, repository, branch, or new work item using t
 
 From the **Code** hub and a git repository selected, open one of the functional pages to add files or folders, a new branch, or a new pull request.  
 
+
+> [!div class="mx-imgBorder"]
+![Code hub, add artifact](_img/create-artifact/code-hub.png)
+
 ---
 
 To learn more about Git artifacts, see one of the following topics:
@@ -92,13 +96,27 @@ From the **Build and Release** hub, open one of the functional pages to add a ar
 > [!div class="mx-imgBorder"]
 ![Build and Release hub, add an artifact](_img/create-artifact/build-release-hub.png)
 
---
+---
 
 
 
 ## Add a team 
 
-Agile tools and dashboards are typically associated with teams. To learn more about teams, see [About teams and Agile tools](../teams/about-teams-and-settings.md). To add a team, see [Add a team and team members](../work/scale/multiple-teams.md). 
+Agile tools and dashboards are typically associated with teams. You add teams to a team project. To learn more about teams, see [About teams and Agile tools](../teams/about-teams-and-settings.md). To add a team, see [Add a team and team members](../work/scale/multiple-teams.md). 
+
+### View teams already defined 
+
+# [Vertical navigation](#tab/vertical)
+
+TBD 
+
+# [Horizontal navigation](#tab/horizontal)
+
+To view a list of teams already defined, open the admin context for the team project, and choose **Overview**.  
+
+<img src="../work/scale/_img/multiple-teams-view-teams.png" alt="Web portal, admin context, team project, Overview page" style="border: 2px solid #C3C3C3;" /> 
+
+---
 
 
 ## Add a dashboard 

@@ -64,7 +64,6 @@ To start planning and tracking work, see [Get started with Agile tools to plan a
 <li>[Search across your code base or work items](search-basics.md)</li>
 <li>[Enable a preview feature ](enable-preview-feature.md)</li>
 <li>[Navigate to a different team project](go-to-team-project-repo.md)</li>
-<li>[Switch teams (Dashboards, Work)](../settings/switch-team-context.md?toc=/vsts/navigation/toc.json&bc=/vsts/navigatio/breadcrumb/toc.json)</li>
 </ul>
 </td>
 </tr>

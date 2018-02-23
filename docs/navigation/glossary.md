@@ -14,13 +14,12 @@ ms.date: 08/04/2017
 
 **CodeX** 
 
-## Notifications
+## Notification
 ## Process
-## Projects
+## Project
+## Repository
+## Team
 
-## Repositories
-
-## Teams
 
 <!---
 The set of platforms, services, and tools you have access to through Visual Studio Team Services (VSTS) can be overwhelming. Before you start using our products, you'll want to become familiar with how they fit together. You'll gain that understanding here as well as pointers to additional topics and tutorials to gain confidence in using our products to develop your software.   

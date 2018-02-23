@@ -1,7 +1,7 @@
 ---
-title: Switch team project or team context 
-titleSuffix: VSTS & TFS  
-description: Change the focus of your view to another team project or team Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
+title: Switch team project or repository 
+titleSuffix: Azure CodeX 
+description: Open another team project or repository for Azure CodeX, CodeVault, CodePlan, or CodeLaunch  
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid:  
@@ -11,9 +11,9 @@ ms.date: 02-24-2018
 ---
 
 
-# Switch team project or team focus   
+# Switch team project or repository
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+**Azure CodeX**  
 
 <a id="switch-team-context">  </a>
 
