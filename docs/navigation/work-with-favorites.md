@@ -19,18 +19,17 @@ ms.date: 02-24-2018
 
 By favoriting an artifact or view, you can quickly access it. You favorite an item by clicking the ![favorites](../_img/icons/icon-favorite-star.png) star icon. The favorited item will then show up easily from one or more directory lists.  
 
-You can favorite the following artifacts: 
+You can favorite the following artifacts:
 
-- Build definitions, 
-- Code repositories, 
-- Work item queries, and more &mdash   
-- Team projects   
-- Repositories   
-- Work item queries   
-- Plans (requires installation of the [Delivery Plans extension](../work/scale/review-team-plans.md))
-- Build definitions  
-- Test plans
-
+> [!div class="mx-tdCol2BreakAll"]  
+> | Application | Artifacts  |   
+> |---------------|---------| 
+> | CodeX | Team projects |
+> | CodeVault |Repositories | 
+> | CodePlan | Queries, Delivery plans |
+> | CodeLaunch |Build definitions, Release definitions | 
+> | CodeTest |Test plans | 
+ 
 
 <a id="favorites">  </a>
 ## Favorites: Open items you've marked as Favorites  
