@@ -16,10 +16,12 @@
   - name: Navigate to a different team project
     href: go-to-team-project.md 
   - name: Switch teams (Dashboards, Work)
-    href: ../teams/switch-team-context.md?toc=/vsts/navigation/toc.json&bc=/vsts/navigation/breadcrumb/toc.json   
+    href: ../teams/switch-team-context.md?context=vsts/default
+  - name: Glossary of terms
+    href: glossary.md  
 - name: Resources
   items:
-  - name: "Project & Account Settings"  
+  - name: Settings 
     href: ../teams/index.md
   - name: Dashboards   
     href: ../report/dashboards/index.md  

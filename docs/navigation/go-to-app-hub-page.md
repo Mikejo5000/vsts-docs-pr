@@ -13,18 +13,13 @@ ms.date: 02-24-2018
 
 # Navigate to an application or functional area  
 
-When navigating within the web portal for VSTS, there are four levels supported:  
-- *Account-level*, navigate to a team project or repository that you have access to providing "me pages"   
-- *Team project or repository level*, navigate to one or more applications or functional views for a team project   
-- *Within a functional view*, navigate to a specific artifact or view depending on the functional area you're in  
-- *Settings*, navigate to an administrative context for configuring settings at the account/collection or team project level   
-- *Account profile*, [set personal preferences](../accounts/account-preferences.md), [notifications](../notifications/manage-personal-notifications.md), or [turn on/off a preview feature](../collaborate/preview-features.md)  
-
 If you don't have a team project yet, create one in [VSTS](../accounts/create-account-msa-or-work-student.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json) or set one up in an [on-premises TFS](../accounts/create-team-project.md). If you don't have access to the team project, [get invited to the team](../work/scale/multiple-teams.md#add-team-members).
 
 ## Open a team project or repository 
 
-# [Vertical navigation](#tab/vertical)
+A team project defines a process and data storage in which you manage your software projects from planning to deployment.  
+
+# [Vertical navigation](#tab/vertical) 
 
 # [Horizontal navigation](#tab/horizontal)
 
@@ -63,11 +58,6 @@ To be written
 -->
 
 
-Now that you have an understanding of how the user interface is structure, it's time to get started using it.  As you can see, there are a lot of features and functionality.  
-
-If all you need is a code repository and bug tracking solution, then start with the [Git get started guide](../git/gitquickstart.md) and [Manage bugs](../work/backlogs/manage-bugs.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json).  
-
-To start planning and tracking work, see [Get started with Agile tools to plan and track work](../work/backlogs/overview.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json).
 
 
 ## Related content 

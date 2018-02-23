@@ -14,12 +14,13 @@ ms.date: 02-24-2018
 
 Here's what you need to know to get up and running using Azure CodeX or once of it's apps.  
 
-- **Start page**: use to switch an app or a team project 
-- **Search box**: use to find code, work items, or a wiki page 
-- **Your profile menu**: use to set personal preferences, notifications, and preview features  
-- **Settings**: use to add teams, manage security, and configure other project and account-level elements 
+- **[Start page](go-to-app-hub-page.md)**: use to switch an app or a team project 
+- **[Search box](search-basics.md)**: use to find code, work items, or a wiki page 
+- **[Your profile menu](enable-preview-feature.md?context=vsts/default)**: use to set personal preferences, notifications, and preview features  
+- **[Settings](../teams/settings.md)**: use to add teams, manage security, and configure other project and account-level elements 
+- **Help**: use to quickly access the most relevant topics for the page you're on.  
 
-Each app provides you with one or more pages which support a number of features and functional operations. Within a functional view, you may then have a choice of options to select a specific object or artifact, many of which may be associated with a team. 
+Each app provides you with one or more pages which support a number of features and functional operations. Within a functional view, you may then have a choice of options to select a specific object or artifact or create an artifact.  
 
 
 # [Vertical navigation](#tab/vertical)
@@ -38,6 +39,13 @@ Each app provides you with one or more pages which support a number of features 
 <img src="_img/horizontal-app-navigation.gif" alt="Horizontal navigation experience" style="border: 1px solid #C3C3C3;" /> 
 
 ---
+
+
+Now that you have an understanding of how the user interface is structure, it's time to get started using it.  As you can see, there are a lot of features and functionality.  
+
+If all you need is a code repository and bug tracking solution, then start with the [Git get started guide](../git/gitquickstart.md?context=vsts/default) and [Manage bugs](../work/backlogs/manage-bugs.md?context=vsts/default).  
+
+To start planning and tracking work, see [Get started with Agile tools to plan and track work](../work/backlogs/overview.md?context=vsts/default).
 
 
 <!---
