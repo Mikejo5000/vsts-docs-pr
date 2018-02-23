@@ -1,7 +1,7 @@
 ---
 title: Work with favorites 
-titleSuffix: VSTS & TFS 
-description: Use favorites to quickly open a view or page within the web portal for VSTS and Team Foundation Server (TFS) 
+titleSuffix: Azure CodeX 
+description: Use favorites to quickly open a view or page within the web portal for Azure CodeX, CodeVault, CodePlan, or CodeLaunch  
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 
@@ -12,10 +12,7 @@ ms.date: 02-24-2018
 
 # Work with Favorites  
 
-**VSTS | TFS 2018 | TFS 2017.1**  
-
-> [!NOTE]  
-> **Feature availability**: The features described in this topic are available from Visual Studio Team Services (VSTS) and TFS 2017.1 and later versions. To upgrade to TFS 2017.1, go to the [Visual Studio downloads page](https://www.visualstudio.com/downloads/download-visual-studio-vs).  
+**Azure CodeX**  
 
 By favoriting an artifact or view, you can quickly access it. You favorite an item by clicking the ![favorites](../_img/icons/icon-favorite-star.png) star icon. The favorited item will then show up easily from one or more directory lists.  
 
@@ -71,9 +68,6 @@ You'll see something similar to the following welcome page.
 <img src="../user-guide/_img/account-home-welcome.png" alt="Account home, Projects page" style="border: 1px solid #CCCCCC;" />   
 
  
-
-## Related content
-
-- [Enable preview features](enable-preview-feature.md)  
+ 
 
 

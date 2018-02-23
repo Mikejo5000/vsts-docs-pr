@@ -1,7 +1,7 @@
 ---
 title: Create a new artifact or team
-titleSuffix: VSTS & TFS   
-description: How to add a new artifact, view, or team in Visual Studio Team Services or on-premises Team Foundation Server 
+titleSuffix: Azure CodeX 
+description: How to add a new artifact, view, or team within the web portal for Azure CodeX, CodeVault, CodePlan, or CodeLaunch  
 ms.technology: vs-devops-overview 
 ms.prod: vs-devops-alm
 ms.assetid:  
@@ -10,80 +10,109 @@ ms.author: kaelli
 ms.date: 02-24-2018
 ---
 
-#Create a new artifact or team
+# Add a new artifact or team
 
-You create a new artifact from the following pages: 
+**Azure CodeX**  
 
-##CodeBox
+Select the application or hub to get started adding new artifacts. When you add a team, you automatially create several CodePlan artifacts, such as a product backlog, Kanban board, portfolio backlogs and more. 
 
-## Create Git artifacts 
-- [Git repository](/vsts/git/tutorial/creatingrepo?tabs=visual-studio)
-- [Git branch](/vsts/git/create-branch)
-- [Git commit](/vsts/git/tutorial/commits?tabs=visual-studio)
-- [Git local branch](/vsts/git/tutorial/branches?tabs=visual-studio)
-- [Git pull request](/vsts/git/tutorial/pullrequest) 
-- [Fork](/vsts/git/concepts/forks)
-- [Git tag](/vsts/git/how-to/git-tags?tabs=vsts-tfs-web-portal)
-- [README](/vsts/git/create-a-readme)
+Prior to adding an artifact, make sure that you've [selected the team project and repository](go-to-team-project-repo.md) that you want to work in.  
 
+## Add artifacts to a CodeVault git repository 
+
+
+# [Vertical navigation](#tab/vertical) 
+
+You can quickly add a pull request, repository, branch, or new work item using the **Add** menu. 
+
+> [!div class="mx-imgBorder"]
+![CodePlan, add artifact](_img/create-artifact/codevault-add.png)
+
+# [Horizontal navigation](#tab/horizontal)
+
+From the **Code** hub and a git repository selected, open one of the functional pages to add files or folders, a new branch, or a new pull request.  
+
+---
+
+To learn more about Git artifacts, see one of the following topics:
+- [Git repository](../git/tutorial/creatingrepo.md)
+- [Git branch](../git/create-branch.md)
+- [Git pull request](../git/tutorial/pullrequest.md) 
+
+<!---
 ## Create TFVC artifacts
 
 TBD 
+-->
 
-##CodePlan
-
-To add a product backlog, Kanban board, dashboard or other 
-
-- [Add a team](/vsts/work/scale/multiple-teams?toc=/vsts/teams/toc.json&bc=/vsts/teams/breadcrumb/toc.json)  
-	When you add a team, you add the following artifacts that each team can configure to meet their needs:  
-	- [Product backlog](/vsts/work/backlogs/create-your-backlog)
-	- [Feature and Epic portfolio backlogs](/vsts/work/backlogs/define-features-epics)
-	- [Kanban boards](/vsts/work/kanban/kanban-quickstart)
-
-	When you select iteration paths for use by a team, you create the following artfifacts for each iteration:  
-	- [Sprint backlog](/vsts/work/scrum/sprint-planning)
-	- [Sprint task board](/vsts/work/scrum/task-board)
-
-- [Delivery plan](/vsts/work/scale/review-team-plans)
-- [Work item](/vsts/work/work-items/view-add-work-items)
+## Add a CodePlan artifact
 
 
-###Customize work tracking 
-- [Add area paths](/vsts/work/customize/set-area-paths)
-- [Add iterations](/vsts/work/customize/set-iteration-paths-sprints)
+# [Vertical navigation](#tab/vertical) 
 
-You customize a team project by customizing a process. 
-- [Add or modify a process](/vsts/work/customize/process/manage-process)
-- [Add or customize a work item type](/vsts/work/customize/process/customize-process-wit)
-- [Add a custom field](/vsts/work/customize/process/customize-process-field)
-- [Add a custom rule](/vsts/work/customize/process/custom-rules)
-- [Add a custom control](/vsts/work/customize/process/custom-controls-process)
-- [Add a custom backlog](/vsts/work/customize/process/customize-process-backlogs-boards)
+You can quickly add a query, backlog, board, plan, or work item using the **Add** menu. 
+
+> [!div class="mx-imgBorder"]
+![CodePlan, add artifact](_img/create-artifact/codeplan-add.png)
+
+# [Horizontal navigation](#tab/horizontal)
+
+From the **Work** hub, you can add a work item from the menu of options as shown in the following image.
+ 
+> [!div class="mx-imgBorder"]
+![Work hub, add a work item](../work/backlogs/_img/add-work-items-choose-user-story.png)
+
+ Or, you can open one of the pages&mdash;**Boards**, **Backlogs**, **Queries**, or **Plans**&mdash;to add an artifact specific to each of these functional pages.
+ 
+---
+
+To learn more, see one of the following topics: 
+
+- [Add a board]
+- [Add a backlog]
+- [Add a delivery plan](../work/scale/review-team-plans.md)
+- [Add a managed work item query](../work/track/using-queries.md) 
+
+---
 
 
-## Dashboards and Wikis
+## Add CodeLaunch artifacts
 
-Dashboards are typically associated with teams. Each team can create and configure a number of dashboards. One wiki can be created for a team project.  
+# [Vertical navigation](#tab/vertical) 
 
-- [Add a dashboard](/vsts/report/dashboards/dashboards)
-- [Create a wiki](/vsts/collaborate/wiki-create-repo)
-- [Add and edit a wiki page](/vsts/collaborate/add-edit-wiki)
+You can quickly add a pipeline using the **Add** menu. 
 
+> [!div class="mx-imgBorder"]
+![CodeLaunch, add pipeline](_img/create-artifact/codelaunch-add-pipeline.png)
 
-##CodeLaunch 
+# [Horizontal navigation](#tab/horizontal)
 
-- [Build definition](/vsts/report/dashboards/dashboards)
-- [Release definition](/vsts/report/dashboards/dashboards)
-- [Agent queues and pools](/vsts/build-release/concepts/agents/pools-queues)
-- [Task group](/vsts/build-release/concepts/library/task-groups)
-- [Deployment groups and pools](/vsts/build-release/concepts/definitions/release/deployment-groups/) 
-- [Variable group](/vsts/build-release/concepts/library/variable-groups) 
-- [Secure file](/vsts/build-release/concepts/library/secure-files)
-- [Retention policy](/vsts/build-release/concepts/policies/retention)
-- [Service endpoints](/vsts/build-release/concepts/library/service-endpoints)
+From the **Build and Release** hub, open one of the functional pages to add a artifact associated with that page.
+ 
+> [!div class="mx-imgBorder"]
+![Build and Release hub, add an artifact](_img/create-artifact/build-release-hub.png)
+
+--
 
 
 
-## Related content
-To be written.
+## Add a team 
+
+Agile tools and dashboards are typically associated with teams. To learn more about teams, see [About teams and Agile tools](../teams/about-teams-and-settings.md). To add a team, see [Add a team and team members](../work/scale/multiple-teams.md). 
+
+
+## Add a dashboard 
+
+Dashboards are typically associated with teams, however you can create a dashboard not affiliated with a team. How??? Each team can create and configure a number of dashboards. 
+
+- [Add a dashboard](../report/dashboards/dashboards.md)
+- [Add and edit a wiki page](../collaborate/add-edit-wiki.md)
+
+
+## Add a wiki 
+
+If you don't have a wiki yet, you can add one and only one. Once added, you can add and update pages to that wiki. 
+
+- [Create a wiki](../collaborate/wiki-create-repo.md)
+- [Add and edit wiki pages](../collaborate/add-edit-wiki.md)
 

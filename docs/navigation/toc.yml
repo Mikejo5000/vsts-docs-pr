@@ -13,10 +13,10 @@
     href: search-basics.md
   - name: Enable a preview feature 
     href: enable-preview-feature.md
-  - name: Navigate to a different team project
-    href: go-to-team-project.md 
+  - name: Navigate to a different team project or repo
+    href: go-to-team-project-repo.md 
   - name: Switch teams (Dashboards, Work)
-    href: ../teams/switch-team-context.md?context=vsts/default
+    href: ../teams/switch-team-context.md?toc=/vsts/navigation/toc.json&bc=/vsts/navigation/breadcrumb/toc.json
   - name: Glossary of terms
     href: glossary.md  
 - name: Resources
