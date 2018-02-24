@@ -35,11 +35,11 @@ Create a public project, make an existing project public, or work in a public pr
 * View test plans and test results  
  
 ## Concepts
-* [Default roles and permissions](../security/permissions-access.md?toc=/vsts/public/toc.json&bc=/vsts/public/breadcrumb/toc.json) 
+* [Default roles and permissions](default-roles-access-public.md) 
+* [Recommendations when moving a private project to public](recommendations-make-project-public.md)
 
 ## How-to Guides
 * [Filter basics](../work/backlogs/filter-backlogs.md?toc=/vsts/public/toc.json&bc=/vsts/public/breadcrumb/toc.json)  
-* Share or email a work item or set of work items 
 * [Search the code base](code-search.md)  
 * [Search work items](work-item-search.md)   
 
