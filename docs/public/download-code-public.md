@@ -1,7 +1,7 @@
 ---
 title: Download code 
 titleSuffix: Azure CodeX Public Project
-description: Review the code base and current work by browsing repos, files, branches, pushes, commits, & pull requests 
+description: Download code from a public project
 ms.technology: 
 ms.prod: vs-devops-alm
 ms.assetid: 
@@ -11,7 +11,7 @@ ms.topic: get-started-article
 ms.date: 01/05/2018
 ---
 
-# Browse repos, files, branches, pushes, commits, & pull requests 
+# Download code 
 
 **Azure CodeX Public Project** 
 
