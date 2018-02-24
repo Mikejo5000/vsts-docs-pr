@@ -43,9 +43,3 @@ Create a public project, make an existing project public, or work in a public pr
 * [Search the code base](../search/code/code-search.md?toc=/vsts/public/toc.json&bc=/vsts/public/breadcrumb/toc.json)  
 * [Search work items](../search/workitem/work-item-search.md?toc=/vsts/public/toc.json&bc=/vsts/public/breadcrumb/toc.json)   
 
-## Reference 
-
-* [Terms of service](../collaborate/rate-limits.md?toc=/vsts/public/toc.json&bc=/vsts/public/breadcrumb/toc.json)
-* [Work item form controls](../work/work-items/work-item-form-controls.md?toc=/vsts/public/toc.json&bc=/vsts/public/breadcrumb/toc.json) 
-
-
