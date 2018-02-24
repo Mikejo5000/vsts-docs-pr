@@ -28,8 +28,8 @@ Create a public project, make an existing project public, or work in a public pr
 
 ## Step-by-Step Tutorials
 
-* [Browse the code base](browse-code-project.md)
-* [Clone a repository](clone-git-repo-project.md)
+* [Browse the code base](browse-code-public.md)
+* [Clone a repository](clone-git-repo-public.md)
 * View build progress  
 * View release progress  
 * View test plans and test results  
@@ -40,8 +40,8 @@ Create a public project, make an existing project public, or work in a public pr
 
 ## How-to Guides
 * [Filter basics](../work/backlogs/filter-backlogs.md?toc=/vsts/public/toc.json&bc=/vsts/public/breadcrumb/toc.json)  
-* [Search the code base](code-search.md)  
-* [Search work items](work-item-search.md)   
+* [Search the code base](../search/code/code-search.md?toc=/vsts/public/toc.json&bc=/vsts/public/breadcrumb/toc.json)  
+* [Search work items](../search/workitem/work-item-search.md?toc=/vsts/public/toc.json&bc=/vsts/public/breadcrumb/toc.json)   
 
 ## Reference 
 

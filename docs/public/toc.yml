@@ -33,14 +33,16 @@
     href: default-roles-access-public.md 
   - name: Recommendations when moving a private project to public 
     href: recommendations-make-project-public.md
+  - name: Glossary of key terms
+    href: glossary-public.md
 - name: How-to Guides
   items:
   - name: Filter basics
     href: ../work/backlogs/filter-backlogs.md?toc=/vsts/public/toc.json&bc=/vsts/public/breadcrumb/toc.json 
   - name: Search the code base
-    href: ../search/code-search.md?toc=/vsts/public/toc.json&bc=/vsts/public/breadcrumb/toc.json
+    href: ../search/code/code-search.md?toc=/vsts/public/toc.json&bc=/vsts/public/breadcrumb/toc.json
   - name: Search work items
-    href: ../search/work-item-search.md
+    href: ../search/workitem/work-item-search.md?toc=/vsts/public/toc.json&bc=/vsts/public/breadcrumb/toc.json
 - name: Reference
   items:
   - name: Terms of service
