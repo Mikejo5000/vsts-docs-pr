@@ -17,13 +17,13 @@
 - name: Concepts
   items:
   - name: Feeds
-    items:
+    href: concepts/feeds.md
     # - name: Deleted packages
     #   href: concepts/feeds/deleted-packages.md
-    - name: Views
-      href: concepts/feeds/views.md
-    - name: Upstream sources
-      href: concepts/feeds/upstream-sources.md
+  - name: Views
+    href: concepts/views.md
+  - name: Upstream sources
+    href: concepts/upstream-sources.md
   - name: Symbols
     href: concepts/symbols.md
 - name: How-to
@@ -52,7 +52,7 @@
       href: feeds/create-feed.md
     - name: Edit a feed
       href: feeds/edit-feed.md
-    - name: Set permissions
+    - name: Set permissions (Security)
       href: feeds/feed-permissions.md
     - name: Communicate quality with release views
       href: feeds/views.md
@@ -116,6 +116,8 @@
       href: symbols/debug-with-symbols-windbg.md
     - name: Publish symbols
       href: /vsts/build-release/symbols/index?toc=/vsts/package/toc.json
+  - name: Recover a deleted package
+    href: how-to/recover-deleted-package.md
 - name: Reference
   items:
   - name: Collaborate with packages

@@ -5,22 +5,24 @@
     href: create-new-artifact-team.md
   - name: Work with Favorites 
     href: work-with-favorites.md     
-  - name: Go to a different app, hub, page 
+  - name: Go to an app, hub, or page 
     href: go-to-app-hub-page.md   
   - name: Filter basics 
     href: filter-basics.md
-  - name: Search across your code base or work items 
+  - name: Search your project or repo
     href: search-basics.md
   - name: Enable a preview feature 
     href: enable-preview-feature.md
-  - name: Navigate to a different team project
-    href: go-to-team-project.md 
-  - name: Switch teams (Dashboards, Work)
-    href: ../settings/switch-team-context.md?toc=/vsts/navigation/toc.json&bc=/vsts/navigation/breadcrumb/toc.json   
+  - name: Open another project or repo
+    href: go-to-team-project-repo.md 
+  - name: Configure your project or account
+    href: configure-project-account-settings.md 
+  - name: Glossary of terms
+    href: glossary.md  
 - name: Resources
   items:
-  - name: "Project & Account Settings"  
-    href: ../settings/index.md
+  - name: Settings 
+    href: ../teams/index.md
   - name: Dashboards   
     href: ../report/dashboards/index.md  
   - name: Wiki 
