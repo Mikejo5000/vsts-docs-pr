@@ -102,7 +102,7 @@ From the **Build and Release** hub, open one of the functional pages to add a ar
 
 ## Add a team 
 
-Agile tools and dashboards are typically associated with teams. You add teams to a team project. To learn more about teams, see [About teams and Agile tools](../teams/about-teams-and-settings.md). To add a team, see [Add a team and team members](../work/scale/multiple-teams.md). 
+Agile tools and dashboards are typically associated with teams. You add teams to a team project. To learn more about teams, see [About teams and Agile tools](../settings/about-teams-and-settings.md). To add a team, see [Add a team and team members](../work/scale/multiple-teams.md). 
 
 ### View teams already defined 
 

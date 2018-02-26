@@ -22,7 +22,7 @@
 - name: Resources
   items:
   - name: Settings 
-    href: ../teams/index.md
+    href: ../settings/index.md
   - name: Dashboards   
     href: ../report/dashboards/index.md  
   - name: Wiki 

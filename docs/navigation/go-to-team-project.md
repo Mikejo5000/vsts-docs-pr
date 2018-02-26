@@ -19,7 +19,7 @@ ms.date: 02-24-2018
 
 Several features depend on the team project or team that you have selected. For example, dashboards, backlogs, and board views will change depending on the context selected. 
 
-For example, when you add a work item, the system references the default area and iteration paths defined for the team context. Work items you add from the team dashboard (new work item widget) and queries page are assigned the team default iteration. Work items you add from a team backlog or board, are assigned the team default backlog iteration. To change team defaults, see [Set team defaults](../work/scale/set-team-defaults.md?toc=/vsts/teams/toc.json&bc=/vsts/teams/breadcrumb/toc.json).  
+For example, when you add a work item, the system references the default area and iteration paths defined for the team context. Work items you add from the team dashboard (new work item widget) and queries page are assigned the team default iteration. Work items you add from a team backlog or board, are assigned the team default backlog iteration. To change team defaults, see [Set team defaults](../work/scale/set-team-defaults.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json).  
 
 You navigate to your team context from the top navigation bar. The method changes slightly depending on the platform/version you work from.     
 
@@ -57,7 +57,7 @@ If you're an account administrator or are a member of the Project Collection Adm
 ## Switch to a different team 
 
 >[!NOTE]  
->**Feature availability**: The Account Landing Page feature is in preview mode for VSTS and enabled for all users from web portal for TFS 2017.1 and later versions. To learn more about this feature, see [Work effectively from your account hub](../user-guide/account-home-pages.md?toc=/vsts/teams/toc.json&bc=/vsts/teams/breadcrumb/toc.json). To enable or disable the feature, see [Enable preview features](../collaborate/preview-features.md?toc=/vsts/teams/toc.json&bc=/vsts/teams/breadcrumb/toc.json).   
+>**Feature availability**: The Account Landing Page feature is in preview mode for VSTS and enabled for all users from web portal for TFS 2017.1 and later versions. To learn more about this feature, see [Work effectively from your account hub](../user-guide/account-home-pages.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json). To enable or disable the feature, see [Enable preview features](../collaborate/preview-features.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json).   
 
  
 
@@ -65,7 +65,7 @@ If you're an account administrator or are a member of the Project Collection Adm
 ### VSTS
 <a id="switch-context-team-services" />
  
-You can switch your team focus to a team project or team you've recently viewed from the team project/team drop-down menu. If you don't see the team or team project you want, click **Browse&hellip;** or click the ![VSTS icon](../settings/_img/switch-team-focus-account-project-page-icon.png) VSTS icon to [access your account hub and browse all team projects and teams](../user-guide/account-home-pages.md?toc=/vsts/teams/toc.json&bc=/vsts/teams/breadcrumb/toc.json). If you haven't yet enabled the Account Landing Page, you'll be taken to the account home page. 
+You can switch your team focus to a team project or team you've recently viewed from the team project/team drop-down menu. If you don't see the team or team project you want, click **Browse&hellip;** or click the ![VSTS icon](../settings/_img/switch-team-focus-account-project-page-icon.png) VSTS icon to [access your account hub and browse all team projects and teams](../user-guide/account-home-pages.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json). If you haven't yet enabled the Account Landing Page, you'll be taken to the account home page. 
 
 To go directly to the [project vision and status page](../collaborate/project-vision-status.md), choose the project home icon from the drop-down menu, for example, ![project home icon](../_shared/_img/work-web-portal-home-page-icon.png).
 
@@ -74,11 +74,11 @@ To go directly to the [project vision and status page](../collaborate/project-vi
 ### TFS 2017.1 
 <a id="switch-context-tfs-2017-1" /> 
 
-To switch your team focus to a team project or team you've recently viewed, hover over the ![VSTS icon](../settings/_img/switch-team-focus-account-project-page-icon.png) VSTS icon and choose from the drop-down menu of options. If you don't see the team or team project you want, choose **Browse&hellip;** to [browse all team projects and teams](../user-guide/account-home-pages.md?toc=/vsts/teams/toc.json&bc=/vsts/teams/breadcrumb/toc.json). Your selection will open the [project vision and status page](../collaborate/project-vision-status.md?toc=/vsts/teams/toc.json&bc=/vsts/teams/breadcrumb/toc.json) for the team project.
+To switch your team focus to a team project or team you've recently viewed, hover over the ![VSTS icon](../settings/_img/switch-team-focus-account-project-page-icon.png) VSTS icon and choose from the drop-down menu of options. If you don't see the team or team project you want, choose **Browse&hellip;** to [browse all team projects and teams](../user-guide/account-home-pages.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json). Your selection will open the [project vision and status page](../collaborate/project-vision-status.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json) for the team project.
 
-To access your [account hub](../user-guide/account-home-pages.md?toc=/vsts/teams/toc.json&bc=/vsts/teams/breadcrumb/toc.json), click the ![VSTS icon](../settings/_img/switch-team-focus-account-project-page-icon.png) VSTS icon. If you haven't yet enabled the Account Landing Page, you'll be taken to the account home page.  
+To access your [account hub](../user-guide/account-home-pages.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json), click the ![VSTS icon](../settings/_img/switch-team-focus-account-project-page-icon.png) VSTS icon. If you haven't yet enabled the Account Landing Page, you'll be taken to the account home page.  
 
-To go directly to the [project vision and status page](../collaborate/project-vision-status.md?toc=/vsts/teams/toc.json&bc=/vsts/teams/breadcrumb/toc.json), choose the project home icon from the drop-down menu, for example, ![project home icon](../_shared/_img/work-web-portal-home-page-icon.png).
+To go directly to the [project vision and status page](../collaborate/project-vision-status.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json), choose the project home icon from the drop-down menu, for example, ![project home icon](../_shared/_img/work-web-portal-home-page-icon.png).
 
 <img src="../_shared/_img/work-web-portal-tfs-2017-1-switch-team-focus.png" alt="Choose another team from the team project menu" style="border: 2px solid #C3C3C3;" /> 
 
@@ -100,10 +100,10 @@ Open the team project/team drop-down menu and select the team project/team that 
 
 
 ## Switch to a team project or team from the account hub 
-If you work in VSTS and TFS 2017.1, you can use your account hub to view and quickly navigate to teams, team projects, branches, work items, pull requests and other objects that are relevant to you. For details, see [Work effectively from your account hub](../user-guide/account-home-pages.md?toc=/vsts/teams/toc.json&bc=/vsts/teams/breadcrumb/toc.json).  
+If you work in VSTS and TFS 2017.1, you can use your account hub to view and quickly navigate to teams, team projects, branches, work items, pull requests and other objects that are relevant to you. For details, see [Work effectively from your account hub](../user-guide/account-home-pages.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json).  
 
 
 
 ## Related content
-- [Work effectively from your account hub](../user-guide/account-home-pages.md?toc=/vsts/teams/toc.json&bc=/vsts/teams/breadcrumb/toc.json)
-- [Add teams and team members](../work/scale/multiple-teams.md?toc=/vsts/teams/toc.json&bc=/vsts/teams/breadcrumb/toc.json)
+- [Work effectively from your account hub](../user-guide/account-home-pages.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)
+- [Add teams and team members](../work/scale/multiple-teams.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)

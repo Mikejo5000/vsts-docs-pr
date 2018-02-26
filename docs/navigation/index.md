@@ -19,7 +19,7 @@ Here's what you need to know to get up and running using Azure CodeX or one of i
 - **[Start page](go-to-app-hub-page.md)**: use to switch an app or a team project 
 - **[Search box](search-basics.md)**: use to find code, work items, or a wiki page 
 - **[Your profile menu](enable-preview-feature.md?toc=/vsts/navigation/toc.json&bc=/vsts/navigation/breadcrumb/toc.json)**: use to set personal preferences, notifications, and preview features  
-- **[Settings](../teams/index.md)**: use to add teams, manage security, and configure other project and account-level elements 
+- **[Settings](../settings/index.md)**: use to add teams, manage security, and configure other project and account-level elements 
 - **Help**: use to quickly access the most relevant topics for the page you're on.  
 
 Each app provides you with one or more pages which support a number of features and functional operations. Within a functional view, you may then have a choice of options to select a specific object or artifact or create an artifact.  
@@ -104,4 +104,4 @@ To start planning and tracking work, see [Get started with Agile tools to plan a
 
 ## Resources 
 
-- [Project & Account Settings](../teams/index.md) 
+- [Project & Account Settings](../settings/index.md) 
