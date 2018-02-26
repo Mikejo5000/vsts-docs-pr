@@ -23,12 +23,6 @@ When you connect to a public project and the Azure CodePlan app, you're able to 
 
 From the **Work Items** page, you can view recently created, updated, and completed work items.   
 
-# [Vertical navigation](#tab/vertical) 
-
-In CodePlan, click the **Work Items** link located in the left navigation pane.
-
-> [!div class="mx-imgBorder"]
-![Work items link, vertical navigation](_img/view-work-items-vertical.png) 
 
 # [Horizontal navigation](#tab/horizontal) 
 
@@ -36,6 +30,14 @@ Click the **Wiki** link located in the top navigation bar.  If you don't see the
 
 > [!div class="mx-imgBorder"]
 ![Work hub, Work Items page ](_img/view-work-items/view-recently-updated-work-items.png)
+
+# [Vertical navigation](#tab/vertical) 
+
+In CodePlan, click the **Work Items** link located in the left navigation pane.
+
+> [!div class="mx-imgBorder"]
+![Work items link, vertical navigation](_img/view-work-items-vertical.png) 
+
 
 ---
 
