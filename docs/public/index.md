@@ -1,6 +1,6 @@
 ---
 title: Public Projects 
-titleSuffix: VSTS 
+titleSuffix: Azure CodeX Public Project 
 description: Index to topics for creating and working in public projects for Visual Studio Team Services (VSTS)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
@@ -12,7 +12,7 @@ ms.date: 01/05/2018
 
 # Public Projects 
 
-**VSTS**
+**Azure CodeX Public Project**
 
 Create a public project, make an existing project public, or work in a public project to collaborate with others to develop software applications.  
 
@@ -21,31 +21,25 @@ Create a public project, make an existing project public, or work in a public pr
 
 * [Create a public project](create-public-project.md)
 * [Make a team project public](make-project-public.md)
-* Download code
-* View and filter work items
-* View a project page or dashboard
-* View the project Wiki 
+* [Download code](download-code-public.md)
+* [View and filter work items](view-filter-work-items-public.md)
+* [View a project page or dashboard](view-project-dashboard-public.md)
+* [View the project Wiki](view-wiki-public.md) 
 
 ## Step-by-Step Tutorials
 
-* [Browse the code base](browse-code.md)
-* [Clone a repository](clone-git-repo.md)
+* [Browse the code base](browse-code-public.md)
+* [Clone a repository](clone-git-repo-public.md)
 * View build progress  
 * View release progress  
 * View test plans and test results  
  
 ## Concepts
-* [Default roles and permissions](../security/permissions-access.md?toc=/vsts/public/toc.json&bc=/vsts/public/breadcrumb/toc.json) 
+* [Default roles and permissions](default-roles-access-public.md) 
+* [Recommendations when moving a private project to public](recommendations-make-project-public.md)
 
 ## How-to Guides
 * [Filter basics](../work/backlogs/filter-backlogs.md?toc=/vsts/public/toc.json&bc=/vsts/public/breadcrumb/toc.json)  
-* Share or email a work item or set of work items 
-* [Search the code base](code-search.md)  
-* [Search work items](work-item-search.md)   
-
-## Reference 
-
-* [Terms of service](../collaborate/rate-limits.md?toc=/vsts/public/toc.json&bc=/vsts/public/breadcrumb/toc.json)
-* [Work item form controls](../work/work-items/work-item-form-controls.md?toc=/vsts/public/toc.json&bc=/vsts/public/breadcrumb/toc.json) 
-
+* [Search the code base](../search/code/code-search.md?toc=/vsts/public/toc.json&bc=/vsts/public/breadcrumb/toc.json)  
+* [Search work items](../search/workitem/work-item-search.md?toc=/vsts/public/toc.json&bc=/vsts/public/breadcrumb/toc.json)   
 
