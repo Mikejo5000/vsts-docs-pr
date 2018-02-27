@@ -5,6 +5,7 @@ description: Use swimlanes to differentiate different types of work you track on
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 0BBD90C3-7156-4027-B100-9E46F5BD53FB
+monikerRange: vsts || >= tfs-2015 <= tfs-2018
 ms.manager: douge
 ms.author: kaelli
 ms.date: 10/20/2017
@@ -93,6 +94,7 @@ As you can see, swimlanes provides another way to organize and visualize the flo
 **VSTS and TFS 2015.1 and later versions**
 
 You can track Kanban board swimlane moves using the [Board Lane field](../track/query-by-workflow-changes.md#kanban_query_fields).  
+
 
 **TFS 2015**
 

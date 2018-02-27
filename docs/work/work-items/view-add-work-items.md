@@ -1,5 +1,6 @@
 ---
-title: View and add work items | VSTS  
+title: View and add work items
+titleSuffix: VSTS  
 description: View and add work items using the work items page      
 f1_keywords: 
 - vs.tfc.teamexplorer.workitems
@@ -7,6 +8,7 @@ f1_keywords:
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: EBDE0739-FAE6-4BEA-8F59-E9D20AFE5FE8
+monikerRange: vsts
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article 
@@ -19,18 +21,22 @@ ms.date: 09/28/2017
 
 We have launched the preview of the new **Work Items** page under the **Work** hub in your VSTS account. You can enable it from the [Preview features menu](../../collaborate/preview-features.md) that you access from your account profile.
 
->[!NOTE]   
-><b>Feature availability: </b>The **Work Items** page is in preview and currently available from VSTS only.  
-
 The set of features available to you through this page and its personalized pivots and filter functions will help streamline your ability to find work items important to you defined across teams within a team project. 
+
+##Prerequisites
+
+* You must be a member of a team project. If you don't have a team project yet, create one in [VSTS](../../accounts/set-up-vs.md). If you haven't been added as a team member, [get added now](../../accounts/add-account-users-assign-access-levels.md). 
+
 
 ## Open the Work Items page
 
-You can start viewing and adding work items once you connect to a team project. If you don't have a team project yet, create one in [VSTS](../../accounts/set-up-vs.md). If you haven't been added as a team member, [get added now](../../accounts/add-account-users-assign-access-levels.md).
+You can start viewing and adding work items once you connect to a team project. 
 
 Open a browser window, click the **Work** hub, and then the **Work Items** page. If you don't see the **Work Items** option, you must enable it from the [preview features menu](../../collaborate/preview-features.md).
 
 <img src="_img/work-items-hub.png" alt="Work hub, Work Items page, Add a work item" style="border: 2px solid #C3C3C3;" />
+
+
 
 ## View work items
 
@@ -42,8 +48,11 @@ With the Work Items views, you can focus on relevant items inside a team project
 * **My activity**: lists all work items that you have recently viewed or updated. 
 * **Recently created**: lists all work items recently created in the project. 
 
-## Add a work item
-Add a work item from within the hub is just one click away. You can add a work item for any type that's enabled in the project from the **New item** drop down menu.  
+
+
+## Add a work item 
+
+Add a work item from within the hub is just one click away. You can add a work item for any type that's defined for the project from the **New item** drop down menu.  
 
 0. Click New Work Item and choose the work item type you want. 
 
@@ -61,7 +70,7 @@ Add a work item from within the hub is just one click away. You can add a work i
  
 
 ## Filter to create personal views
-Work items can be filtered by typing a keyword or using one or more of the fields provided, such as work item type, assigned to, state, and tags. The page remembers the filters you set for each pivot, supporting personalized views across all pivots.  
+You can filter your Work items view by typing a keyword or using one or more of the fields provided, such as work item type, assigned to, state, and tags. The page remembers the filters you set for each pivot, supporting personalized views across all pivots.  
 
 <img src="_img/work-items-filter-bug.png" alt="Filter Work Items page" style="border: 2px solid #C3C3C3;" />
 
@@ -70,11 +79,9 @@ Work items can be filtered by typing a keyword or using one or more of the field
 >
 > For an overview of all three processes, see [Choose a process](../work-items/guidance/choose-process.md). 
 
+
+
 ## Related notes
 - [Work from the account home page](../../user-guide/account-home-pages.md)
 - [Enable preview features](../../collaborate/preview-features.md)
 - [Keyboard shortcuts for work item forms and the Work Items page](work-item-form-keyboard-shortcuts.md)
-
-### Got feedback?
-
-Fill out the comment box that appears when you turn the feature off. See also our [comprehensive feedback and support page](../../user-guide/provide-feedback.md).

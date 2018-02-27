@@ -5,19 +5,22 @@ description: Add task checklists to your Kanban board for lightweight tracking o
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: D4CE68D6-8056-4CB7-ACFA-1FCD05223040  
+monikerRange: vsts || >= tfs-2015 <= tfs-2018
 ms.manager: douge
 ms.author: kaelli
-ms.date: 07/20/2017
 ms.topic: get-started-article
+ms.date: 07/20/2017
 ---
+
 
 #Add task checklists
 
 <b>VSTS | TFS 2018 | TFS 2017 | TFS 2015.1</b> 
 
-
+<!---
 > [!NOTE]  
-> **Feature availability:** Task checklists on the Kanban board are supported from VSTS and the web portal for TFS 2015.1 and later versions.  
+> **Feature availability:** Task checklists on the Kanban board are supported from VSTS and the web portal for TFS 2015.1 and later versions. 
+--> 
 
 Many teams find Kanban ideal for tracking work as it supports visualizing the flow of work in progress. And, you can quickly add new items and update status. If you're new to working with the Kanban board, see [Kanban basics](kanban-basics.md).  
 
@@ -36,16 +39,16 @@ In this topic, you'll learn:
 
 [!INCLUDE [temp](../_shared/image-differences.md)]  
 
-
+[//]: # (::: moniker-end)
 ## Add a task or set of tasks 
 
 1. To start adding tasks, open the menu for the work item.  
-
-	<img src="_img/kanban-board-add-task-checklist.png" alt="Open the context menu of a backlog item to add a task" style="border: 1px solid #C3C3C3;" />  
-
-	For users of VSTS and TFS 2017 or later versions, you'll see several additional menu options: 
-
+[//]: # (::: moniker range="vsts || >= tfs-2017 <= tfs-2018")
 	<img src="_img/add-tasks-menu-options-vs-ts.png" alt="Open the context menu of a backlog item to add a task" style="border: 1px solid #C3C3C3;" /> 
+[//]: # (::: moniker-end)
+[//]: # (::: moniker range="= tfs-2015")
+	<img src="_img/kanban-board-add-task-checklist.png" alt="Open the context menu of a backlog item to add a task" style="border: 1px solid #C3C3C3;" />  
+[//]: # (::: moniker-end)
 
 2. If you have a number of tasks to add, simply keep typing your task titles and click Enter. 
 

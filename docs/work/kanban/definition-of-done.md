@@ -1,9 +1,11 @@
 ---
-title: Definition of Done | VSTS & TFS
-description: Support teams shared understanding by providing a definition for what "done" means for each column of the Kanban board when working in VSTS or Team Foundation Server
+title: Definition of Done on the Kanban board
+titleSuffix: VSTS & TFS
+description: Support teams shared understanding by providing a definition for what "done" means for each column of the Kanban board  
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: f5b9223e-5be2-4df7-a735-02f0cb59a46b
+monikerRange: vsts || >= tfs-2015 <= tfs-2018
 ms.manager: douge
 ms.author: kaelli
 ms.date: 10/20/2017

@@ -4,6 +4,7 @@ description: Use the Kanban board, process, and tools to plan and track work in 
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: BDB9CF5A-D83C-4823-BD53-29D49F797FB4
+monikerRange: vsts || >= tfs-2015 <= tfs-2018
 ms.manager: douge
 ms.author: kaelli
 ms.date: 07/14/2017

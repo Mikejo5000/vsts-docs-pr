@@ -1,6 +1,7 @@
 ---
-title: Understand and configure your Kanban board provided by VSTS & TFS
-description: Use the Kanban board, process, and tools to plan and track work in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
+title: Understand and configure your Kanban board 
+titleSuffix: VSTS & TFS
+description: Use the Kanban board, process, and tools to plan and track work in Visual Studio Team Services or Team Foundation Server  
 ms.topic: get-started-article
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
@@ -39,12 +40,26 @@ To view your Kanban board, click the **Board** link from the **Work>Backlogs** p
 
 User stories and bugs correspond to types of work items. You use  [work items](../backlogs/add-work-items.md) to share information, assign work to team members, update status, track dependencies, and more.
 
+
+##Prerequisites
+[//]: # (::: moniker range="vsts")
+* You must be a member of a team project. If you don't have a team project yet, create one in [VSTS](../../accounts/set-up-vs.md). If you haven't been added as a team member, [get added now](../../accounts/add-account-users-assign-access-levels.md). 
+[//]: # (::: moniker-end)
+[//]: # (::: moniker range=">= tfs-2013 <= tfs-2018")
+* You must be a member of a team project. If you don't have a team project yet, create one in an [on-premises TFS](../../accounts/create-team-project.md). If you haven't been added as a team member, [get added now](../../security/add-users-team-project.md). 
+[//]: # (::: moniker-end)
+
+## Open your Kanban board 
 You open your Kanban board using one of these URLs that connects you to your team project:   
 
-**VSTS**:  ```http://AccountName/DefaultCollection/TeamProjectName/_backlogs/board/ ```  
-**On-premises TFS**:  ```http://ServerName:8080/tfs/DefaultCollection/TeamProjectName/_backlogs/board/```  
+[//]: # (::: moniker range="vsts")
+**VSTS**:  ```http://AccountName/DefaultCollection/TeamProjectName/_backlogs/board/ ``` 
+[//]: # (::: moniker-end)
 
-If you don't have a team project yet, create one in [VSTS](../../accounts/set-up-vs.md) or set one up in an [on-premises TFS](../../accounts/create-team-project.md). If you don't have access to the team project, ask the account owner or project administrator to add you: [VSTS](../../accounts/add-account-users-assign-access-levels.md) or [TFS](../../security/add-users-team-project.md).
+[//]: # (::: moniker range=">= tfs-2013 <= tfs-2018")
+**On-premises TFS**:  ```http://ServerName:8080/tfs/DefaultCollection/TeamProjectName/_backlogs/board/```  
+[//]: # (::: moniker-end)
+
 
 ## 1. Map the flow of how your team works
 <meta name="description" content="Kanban workflow" />
@@ -120,16 +135,22 @@ The CFD shows the count of items in each Kanban column for the past 30 weeks or 
 
 By monitoring these metrics, you can gain insight into how to optimize your processes and minimize lead time. For additional guidance, see [Cumulative Flow](../../report/dashboards/cumulative-flow.md) 
  
+
+[//]: # (::: moniker range="vsts")
+
 >[!NOTE]  
 ><b>Feature availability: </b>From VSTS, you can also add the [Cumulative Flow Diagram (CFD)](../../report/dashboards/cumulative-flow.md), [Lead Time and Cycle Time](../../report/dashboards/cycle-time-and-lead-time.md), and [Velocity](../../report/dashboards/velocity-chart-data-store.md) widgets to a team dashboard.  
+
+
+[//]: # (::: moniker-end)
 
 ## Try this next
 
 Here are some useful tips when working with the Kanban board:
 - To focus on select work items, [filter your Kanban board](filter-kanban-board.md)
-- To quickly assign items to a team member, add the Assign To field to display on the cards (see [Customize cards](../customize/customize-cards.md))    
-- Add a swimlane to track high-priority work or track work which falls into different service level agreements (see [Swimlanes](expedite-work.md))   
-- Highlight specific work items by color coding cards based on a field value or tag (see [Customize cards](../customize/customize-cards.md)) 
+- To quickly assign items to a team member, add the Assign To field to display on the cards, see [Customize cards](../customize/customize-cards.md)     
+- Add a swimlane to track high-priority work or track work which falls into different service level agreements, see [Swimlanes](expedite-work.md)   
+- Highlight specific work items by color coding cards based on a field value or tag, (see [Customize cards](../customize/customize-cards.md)) 
 - If you use Scrumban, drag-and-drop cards onto a sprint to quickly assign them to a sprint.  
 
 

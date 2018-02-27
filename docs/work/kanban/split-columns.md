@@ -1,9 +1,11 @@
 ---
-title: Split columns on your Kanban board for VSTS & TFS
-description: Implement Kanban pull model by dividing each column into Doing and Done when working in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) 
+title: Split columns on your Kanban board
+titleSuffix: VSTS & TFS
+description: Implement Kanban pull model by dividing each column into Doing and Done when working in Visual Studio Team Services or Team Foundation Server  
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: BD18A2A1-56C4-40F8-983C-012A407AC7BB
+monikerRange: vsts || >= tfs-2015 <= tfs-2018
 ms.manager: douge
 ms.author: kaelli
 ms.date: 10/20/2017
@@ -65,13 +67,15 @@ Now that you understand how your team can use split columns, here's how to turn 
 
 2.	Select each column that you want to split. Before you split columns, you'll want to have [mapped each stage of your team's process to a Kanban column](add-columns.md). 
 
-	**VSTS:**  Click the column tab that you want to set.   
+	**VSTS and TFS 2015.1 and later versions**  
+
+	Click the column tab that you want to set.   
 
 	![Kanban board, Customize columns, split columns, Agile process](_img/vso-kanban-split-columns-settings-analyze-no-tags.png)  
 
 	<blockquote><b>Note:</b> When you connect to VSTS, you can can filter queries and create charts using the [Board Column Done field](../track/query-by-workflow-changes.md#kanban_query_fields).</blockquote>  
 
-	**On-premises TFS options:**   
+	**TFS 2013, TFS 2015:**   
 
 	![Customize Kanban board with split columns](_img/kanban-board-configure-split-columns.png)  
 

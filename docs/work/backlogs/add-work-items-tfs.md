@@ -4,6 +4,7 @@ description: Add work items to plan and manage a software project when connected
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 982891A4-A875-478D-AD37-5A0915D11E00  
+monikerRange: >= tfs-2013 <= tfs-2015
 ms.manager: douge
 ms.author: kaelli
 ms.date: 03/16/2017
@@ -29,7 +30,7 @@ For an overview of all three processes, see [Choose a process](../work-items/gui
  
 
 
-##Add work items to define new work
+## Add work items to define new work
 You can start adding work items once you connect to a team project. Here we show how to add work items from the web portal. For additional clients that you can use, see [Clients that support tracking work items](../work-items/about-work-items.md#clients).
 
 1. From a web browser, connect to the team project that you want to work in. For example, the Fabrikam, Inc. team navigates to ```http://fabrikamprime:8080/tfs/DefaultCollection/Fabrikam%20Fiber%20Website/```.  
