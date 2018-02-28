@@ -1,5 +1,6 @@
 ---
-title: Schedule sprints | VSTS & TFS  
+title: Schedule sprints
+titleSuffix: VSTS & TFS  
 description: Add and set dates for sprints, releases, or iterations to implement Scrum and also to gain access to several built-in charts and widgets   
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
@@ -7,7 +8,7 @@ ms.assetid: 1DB81E71-36D7-43A5-9C9A-38AA1777715A
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article
-ms.date: 10/10/2017
+ms.date: 02/27/2018
 ---
 
 
@@ -23,7 +24,14 @@ Many teams choose a two or three week cadence. However, you can specify shorter 
 <a id="quick-start-schedule">   </a>
 ## Quick start guide to scheduling sprints
 
-To quickly get started, you can use the default sprints, also referred to as iterations, that were added when your team project was created.  Note, you must be a [member of the Project Administrators group](../../security/set-project-collection-level-permissions.md) in order to add sprints and schedule sprint dates. (If you created the team project, you're a member.) 
+[//]: # (::: moniker range="vsts")
+To Be Written, New Sprints page, New Sprint dialog 
+ 
+[//]: # (::: moniker-end)
+
+
+[//]: # (::: moniker range=">= tfs-2013 <= tfs-2018")
+To quickly get started, you can use the default sprints, also referred to as iterations, that were added when your team project was created. Note, you must be a [member of the Project Administrators group](../../security/set-project-collection-level-permissions.md) in order to add sprints and schedule sprint dates. (If you created the team project, you're a member.) 
 
 [!INCLUDE [temp](../_shared/image-differences.md)]
 
@@ -36,6 +44,8 @@ To quickly get started, you can use the default sprints, also referred to as ite
 	<img src="_img/define-sprints-edit-iteration-set-sprint-dates.png" alt="Sprint 1 backlog, Set dates" style="border: 1px solid #C3C3C3;" />  
 
 That's it! You can now start [planning your first sprint](sprint-planning.md). 
+
+[//]: # (::: moniker-end)
 
 Of course, if you have several teams, more complex release and sprint cadences to schedule, or want to create child , or creating child iterations, then you'll need to read further. You define these through the admin context for the team project.  
 
