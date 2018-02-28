@@ -14,7 +14,7 @@ ms.date: 02/27/2018
 
 # Schedule sprints  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 With Scrum, teams plan and track work at regular time intervals, referred to as a sprint cadence. 
 You define sprints to correspond to the cadence your team uses. 
@@ -39,6 +39,9 @@ To quickly get started, you can use the default sprints, also referred to as ite
 
 	<img src="_img/define-sprints-set-sprint-dates.png" alt="Sprint 1 backlog, Set dates" style="border: 1px solid #C3C3C3;" />  
 
+	> [!NOTE]   
+	> If you don't see any sprints listed or the **Set dates** link, then no sprints have been selected for the team context you've selected. To select sprints for the team context, see [Select team sprints](../scale/set-team-defaults.md). To switch team context, see [Switch team project or team focus](../../teams/switch-team-context.md). 
+
 2. Click the calendar icon to choose the date for the start and then the end of the sprint. 
 
 	<img src="_img/define-sprints-edit-iteration-set-sprint-dates.png" alt="Sprint 1 backlog, Set dates" style="border: 1px solid #C3C3C3;" />  
@@ -62,7 +65,7 @@ You can quickly assign work items to a sprint by dragging and dropping them from
 ![Assign work items to a sprint](_img/assign-to-sprint-from-kanban-animated.gif)-->
 
 <a id="schedule">   </a>
-## Define and schedule sprints for several teams and release cadences 
+## Add and schedule new sprints for several teams and release cadences 
  
 >[!NOTE]  
 >Your sprint backlog and task board are designed to support your Scrum processes. In addition, you have access to product and portfolio backlogs and Kanban boards. For an overview of the features supported on each backlog and board, see [Backlogs, boards, and plans](../backlogs/backlogs-boards-plans.md).  
