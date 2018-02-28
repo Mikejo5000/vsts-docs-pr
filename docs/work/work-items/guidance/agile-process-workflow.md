@@ -204,12 +204,15 @@ You can [create bugs from the web portal web portal, Visual Studio, or when test
 
 [!INCLUDE [temp](../../_shared/common-work-item-fields.md)]   
 
+## Customize work item types
+[!INCLUDE [temp](../../_shared/customize-work-tracking.md)] 
+
 
 ## Related notes
 
 [!INCLUDE [temp](../../_shared/create-team-project-links.md)]  
   
-[!INCLUDE [temp](../../_shared/customize-work-tracking.md)]  
+ 
 
 
 ### Track issues 

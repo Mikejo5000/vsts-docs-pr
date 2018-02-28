@@ -36,15 +36,18 @@ Each work item supports tracking data contained in work item fields. Also, it ca
 
 Each form contains a number of controls as shown below and described in [Work item form controls](work-item-form-controls.md). 
 
+[//]: # (::: moniker range="vsts || >= tfs-2017 <= tfs-2018")
 ![Work item form to track features or user stories](../backlogs/_img/add-work-item-vsts-user-story-form.png)
+[//]: # (::: moniker-end)
 
+[//]: # (::: moniker range=">= tfs-2013 <= tfs-2015")
+![Work item form to track features or user stories](../backlogs/_img/work-item-form-to-track-user-stories.png)
+[//]: # (::: moniker-end)
 
 <a id="assign-work-items"></a>
 ## Assign work items to a team member
 
-You can only assign a work item to one person at a time. The Assigned To field is person-name field designed to hold an account identity recognizable by the system. 
-
-By default, the system synchronizes system-defined person-name fields with  Azure Active Directory or Active Directory. These fields include: Activated By, Assigned To, Closed By, Created By, and Resolved By. 
+You can only assign a work item to one person at a time. The Assigned To field is person-name field designed to hold an account identity recognizable by the system. By default, the system synchronizes system-defined person-name fields with  Azure Active Directory or Active Directory. These fields include: Activated By, Assigned To, Closed By, Created By, and Resolved By. 
 
 You can grant access to a team project by adding security groups that you created in AD or AAD or by adding accounts to existing or custom groups defined from the collection setting Security hub. See these topics for more information: 
 
@@ -52,20 +55,7 @@ You can grant access to a team project by adding security groups that you create
 - [Set up groups for use in TFS deployments](../../tfs-server/admin/setup-ad-groups.md).
 
 Anyone who has read-write access to a team project can assign work items to a team member. This includes team members and [stakeholders](../../security/get-started-stakeholder.md).  
-
-Within the work item form, such as the web form shown, click the Assigned To field to select a team member to assign the work item to. Or, you can begin typing the name of a team member to quickly focus your search to a select few. 
-
-![Web work item form, Assign to field](../_shared/_img/assign-work-items.png)  
-
-
-Note the following: 
-- You can assign a work item only to team members recognized by the system, ones that you have added as team members 
-- The default list of names available in the drop-down menu for the Assigned To field contains all user accounts added to the [VSTS account](../../accounts/add-team-members-vs.md) or [TFS team project](../../security/add-users-team-project.md). These accounts are all members of the Project Collection Valid Users group.  Also, these names are automatically synchronized with Azure Active Direct or Active Directory when AAD or AD is configured as part of the account (VSTS) or deployment (TFS).    
-- Some drop-down menus that support assignment from the backlog or board pages in the web portal are automatically limited to team members 
-- Over time, the drop-down menu of person-name fields will display most recently selected names  
-- The system shows the display name and adds the account name when required to disambiguate identical display names  
-- You can assign a work item to one and only one team member at a time. If work is split across two or more team members, then you should consider creating additional work items that you'll assign to each member responsible for the work to be completed  
-- You can assign several work items at once from the backlog or query results, see [Bulk modify work items](../backlogs/bulk-modify-work-items.md) for details.  
+ 
 
 [//]: # (::: moniker range=">= tfs-2013 <= tfs-2018")
 
@@ -83,24 +73,20 @@ To schedule work items to be worked on during at specific time period, you assig
 <a id="track"> </a>
 ## Track bugs as requirements or tasks 
 
-Many Scrum teams treat bugs the same as any backlog item or user story. Others see bugs as work that belongs to implementing a story, and therefore treat them as a task.  
-
-Bugs, like product backlog items (PBIs) and user stories, represent work that needs doing. So, should you track your bugs along with other items in the product backlog items or as tasks linked to those backlog items? How does your team estimate work?  
+Many Scrum teams treat bugs the same as any backlog item or user story. Others see bugs as work that belongs to implementing a story, and therefore treat them as a task. Bugs, like product backlog items (PBIs) and user stories, represent work that needs doing. So, should you track your bugs along with other items in the product backlog items or as tasks linked to those backlog items? How does your team estimate work?  
 
 Based on how your team answers these questions, they can choose how they want to track bugs from one of these three choices. To change the team setting, see [Show bugs on backlogs and boards](../customize/show-bugs-on-backlog.md). 
 
 
 ## Find or list work items 
 
-You can use the search box to perform an adhoc search to find specific work items based on select field criteria. 
-
-Or, you can create a query to perform a managed search which will list work items based on your query criteria. With manage searches you can perform a number of other tasks, such as to triage work items, create a trend or status chart and add to the dashboard, and more. 
+You can use the search box to perform an adhoc search to find specific work items based on select field criteria. Or, you can create a query to perform a managed search which will list work items based on your query criteria. With manage searches you can perform a number of other tasks, such as to triage work items, create a trend or status chart and add to the dashboard, and more. 
 
 To learn more, see these topics: 
 - [Create managed queries to list, update, or chart work items ](../track/example-queries.md)  
 - [View, run, or email a query](../track/view-run-query.md)  
 - [Adhoc vs managed queries](../track/adhoc-vs-managed-queries.md)  
-- [Charts](../../report/dashboards/charts.md)  
+- [Work item query charts](../../report/dashboards/charts.md)  
 
 
 <a id="customize"> </a>
@@ -120,6 +106,7 @@ To learn more, see [Customize the On-premises XML process model](../customize/on
 
 With work item templates you can quickly create work items which have pre-populated values for your team's commonly used fields. For example, you can create a task template that will set the area path, iteration path, and discipline or activity whenever you use it to create a task.  
 
+<!---
 Based on the platform or version you use, you can perform the following tasks. 
 - Capture a work item as a template 
 - Add a work item using a template
@@ -133,13 +120,25 @@ If you want to use custom fields in your templates, define those fields prior to
 You can specify any number of fields you want, including ones that the user will change&mdash;such as Title or Description. If you want the work item assigned to a specific team, define the team Area Path as part of the template.  
 
 Once you have a template defined, you can share it via email or a dashboard. Copy the link to the template and paste it within a markdown widget. See [Add Markdown to a dashboard](../../report/dashboards/add-markdown-to-dashboard.md).  
-
+-->
  
 
 ## Try this next 
 
 > [!div class="nextstepaction"]
 > [Add a work item](../backlogs/add-work-items.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)
+
+
+## Related notes
+
+To add team members to a team project, see 
+[//]: # (::: moniker range="vsts") 
+[Add users to your VSTS account](../../accounts/add-team-members-vs.md).
+[//]: # (::: moniker-end)
+[//]: # (::: moniker range=">= tfs-2013 <= tfs-2018")
+[TFS team project](../../security/add-users-team-project.md). 
+[//]: # (::: moniker-end)
+These accounts are all members of the Project Collection Valid Users group.  <!---Also, these names are automatically synchronized with Azure Active Direct or Active Directory when AAD or AD is configured as part of the account (VSTS) or deployment (TFS).-->   
 
 
 ### Required permissions
@@ -150,6 +149,23 @@ If you've been added with stakeholder access, you are limited to certain feature
 
 To learn more about permissions and access, see [Permissions and access for work tracking](../../security/permissions-access-work-tracking.md). 
 
+
+### Additional notes on assigning work to a team member
+
+Within the work item form, such as the web form shown, click the Assigned To field to select a team member to assign the work item to. Or, you can begin typing the name of a team member to quickly focus your search to a select few. 
+
+![Web work item form, Assign to field](../_shared/_img/assign-work-items.png)  
+
+Note the following: 
+- You can assign a work item only to team members recognized by the system, ones that you have added as team members 
+- You can assign a work item to one and only one team member at a time. If work is split across two or more team members, then you should consider creating additional work items that you'll assign to each member responsible for the work to be completed  
+- The default list of names available in the drop-down menu for the Assigned To field contains all user accounts added to the system 
+- Some drop-down menus that support assignment from the backlog or board pages in the web portal are automatically limited to team members 
+- Over time, the drop-down menu of person-name fields will display most recently selected names  
+- The system shows the display name and adds the account name when required to disambiguate identical display names  
+- You can assign several work items at once from the backlog or query results, see [Bulk modify work items](../backlogs/bulk-modify-work-items.md) for details. 
+ 
+ 
 
 <a id="clients"></a>  
 ### Clients that support tracking work items  
@@ -163,7 +179,3 @@ You can add work items from various clients, such as:
 For an overview of all clients that connect to your team project, see [Tools and clients that connect to VSTS and TFS](../../user-guide/tools.md). 
 
 
-
- 
-
- 

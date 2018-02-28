@@ -15,7 +15,6 @@ ms.date: 03/01/2018
 
 [!INCLUDE [temp](../../_shared/banner-vsts-tfs.md)]
 
-    
 How do you track and manage defects in your code? How do you make sure software problems and customer feedback get addressed in a timely manner to support high-quality software deployments? And, how do you do this while making good progress on new features? 
 
 At a minimum, you need a way to capture your software issues, prioritize them, assign them, and track progress. Moreover, you'll want to manage your bugs in ways that align with your Agile practices. 
@@ -48,7 +47,7 @@ The bug work item form tracks similar information to the one shown for the Scrum
 >[!NOTE]  
 >The images you see from your web portal may differ from the images you see in this topic. These differences result from updates made to VSTS or your on-premises TFS, options that you or your admin have enabled, and which process was chosen when creating your team project&mdash;[Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md). 
 
-[//]: # (::: moniker range="vsts")
+[//]: # (::: moniker range="vsts || >= tfs-2018")
 
 <img src="_img/manage-bugs-scrum-bug-from-ts.png" alt="Scrum bug work item form, VSTS" style="border: 2px solid #C3C3C3;" />
 
@@ -59,7 +58,7 @@ The bug work item form tracks similar information to the one shown for the Scrum
 
 
 
-[//]: # (::: moniker range=">= tfs-2017 <= tfs-2018")
+[//]: # (::: moniker range="= tfs-2017")
 
 # [New web form](#tab/new-web-form)
 
@@ -298,17 +297,7 @@ To learn more about queries, charts, and dashboards; see [Create managed queries
 <a id="customize"> </a>
 ## Customize the bug form
 
-[//]: # (::: moniker range="vsts")
-
-You can add fields, change the bug workflow, or customize the bug form. For details, see [Customize an inheritance process](../customize/inheritance-process-model.md). 
-
-[//]: # (::: moniker-end)
-
-
-[//]: # (::: moniker range=">= tfs-2013 <= tfs-2018")
-You can add fields, change the bug workflow, or customize the bug form. For details, see [Customize the On-premises XML process model](../customize/on-premises-xml-process-model.md). 
-
-[//]: # (::: moniker-end)
+[!INCLUDE [temp](../../_shared/customize-work-tracking.md)] 
 
 
 

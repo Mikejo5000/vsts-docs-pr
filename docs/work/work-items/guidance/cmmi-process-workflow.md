@@ -434,12 +434,12 @@ Work items you add from the widget are automatically scoped to your [team's defa
 
 [!INCLUDE [temp](../../_shared/common-work-item-fields.md)]   
 
+## Customize work item types
+[!INCLUDE [temp](../../_shared/customize-work-tracking.md)] 
 
 ## Related notes 
 
 [!INCLUDE [temp](../../_shared/create-team-project-links.md)]  
-
-[!INCLUDE [temp](../../_shared/customize-work-tracking.md)]   
 
 
 ### Backlog list order
