@@ -44,6 +44,8 @@ Certain [restrictions](about-areas-iterations.md#name-restrictions) apply on nam
 <a id="open-admin-context">  </a>
 ## Open the administration context for the team project
 
+[//]: # (::: moniker range="vsts")
+<!---**VSTS** -->
 You enable Vertical navigation from the preview features option of your profile menu. To learn more about navigating within the user interface, see Navigation basics. 
 
 # [Horizontal navigation](#tab/horizontal)
@@ -54,16 +56,28 @@ You define both areas and iterations from the Work hub of the team project admin
 
 [!INCLUDE [temp](../_shared/learn-about-new-nav-experience.md)] 
 
-  
+<a id="admin-intro-team-services" /> 
+
+1. From the web portal for the team project context, click the ![gear icon](../_img/icons/gear_icon.png) gear Settings.  
+
+	<img src="_img/modify-areas-its-open-admin-context-ts.png" alt="Web portal, VSTS, Open Admin context, team project level" style="border: 1px solid #C3C3C3;" />  
+
+	If you're currently working from a team context, then hover over the ![gear icon](../_img/icons/gear_icon.png) and choose Project settings.  
+
+	<img src="_img/modify-areas-its-choose-project-settings-admin-context-ts.png" alt="Default Collection Overview, Projects reference processes" style="border: 1px solid #C3C3C3;" /> 
+
+2.	Open the **Work** hub.   
+3.	  
 # [Vertical navigation](#tab/vertical)
 From the web portal, open the Settings page for the team project.
 
 To Be Written
 
 ---
+[//]: # (::: moniker-end)
 
-[//]: # (::: moniker range="vsts || >= tfs-2018")
-<!---**VSTS & TFS 2018** -->
+[//]: # (::: moniker range=">= tfs-2018")
+<!---**TFS 2018** -->
 <a id="admin-intro-team-services" /> 
 
 1. From the web portal for the team project context, click the ![gear icon](../_img/icons/gear_icon.png) gear Settings.  

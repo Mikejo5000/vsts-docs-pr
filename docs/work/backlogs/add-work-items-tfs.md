@@ -4,7 +4,6 @@ description: Add work items to plan and manage a software project when connected
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 982891A4-A875-478D-AD37-5A0915D11E00  
-monikerRange: >= tfs-2013 <= tfs-2015
 ms.manager: douge
 ms.author: kaelli
 ms.date: 03/16/2017
