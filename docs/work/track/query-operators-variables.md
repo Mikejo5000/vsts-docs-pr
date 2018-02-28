@@ -374,4 +374,4 @@ You use the **witadmin indexfield** command to enable or disable indexing for a 
 
 [!INCLUDE [temp](../_shared/rest-apis-queries.md)]
  
-[!INCLUDE [temp](../../_shared/help-support-shared.md)] 
+ 

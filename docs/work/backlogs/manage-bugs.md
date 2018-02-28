@@ -297,7 +297,7 @@ To learn more about queries, charts, and dashboards; see [Create managed queries
 <a id="customize"> </a>
 ## Customize the bug form
 
-[!INCLUDE [temp](../../_shared/customize-work-tracking.md)] 
+[!INCLUDE [temp](../_shared/customize-work-tracking.md)] 
 
 
 

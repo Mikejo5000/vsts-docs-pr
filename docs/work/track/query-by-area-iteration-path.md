@@ -127,4 +127,4 @@ For the Hosted XML and On-premises XML process models, you can apply rules to fi
 
 [!INCLUDE [temp](../_shared/rest-apis-queries.md)]
  
-[!INCLUDE [temp](../../_shared/help-support-shared.md)] 
+ 

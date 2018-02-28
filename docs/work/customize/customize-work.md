@@ -244,6 +244,6 @@ Here are a few options available to you:
 
  
  
-[!INCLUDE [temp](../../_shared/help-support-shared.md)]
+
 
 

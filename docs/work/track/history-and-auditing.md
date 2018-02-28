@@ -290,5 +290,5 @@ See the [Work item tracking](https://docs.microsoft.com/rest/api/vsts/wit/)  for
 
 [!INCLUDE [temp](../_shared/rest-apis-queries.md)]
  
-[!INCLUDE [temp](../../_shared/help-support-shared.md)] 
+ 
  

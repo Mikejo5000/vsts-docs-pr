@@ -307,4 +307,4 @@ An error occurs if you open a query that contains the **@CurrentIteration** macr
 
 [!INCLUDE [temp](../_shared/rest-apis-queries.md)]
 
-[!INCLUDE [temp](../../_shared/help-support-shared.md)] 
+ 

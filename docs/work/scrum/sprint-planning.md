@@ -216,5 +216,5 @@ If you receive the following message, [you can fix it by removing nested child i
 
 ![Can't reorder with nested backlog items message](_img/nested_info.png)  
 
-[!INCLUDE [temp](../../_shared/help-support-shared.md)] 
+ 
 
