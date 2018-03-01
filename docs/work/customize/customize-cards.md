@@ -12,13 +12,13 @@ ms.date: 03/01/2018
 ---
 
 
-
 # Customize cards  
 
 <b>VSTS | TFS 2018 | TFS 2017 | TFS 2015</b>  
 
 [//]: # (::: moniker range="tfs-2013")
-Card customization is not a supported feature in TFS 2013. Consider upgrading to a later TFS version. 
+> [!NOTE]   
+> Card customization is not a supported feature in TFS 2013. Consider upgrading to a later TFS version. 
 [//]: # (::: moniker-end)
 
 [//]: # (::: moniker range="vsts || >= tfs-2015 <= tfs-2018")
@@ -47,15 +47,15 @@ In this example, the following customizations have been set for the bug work ite
 </tbody>
 </table>
 [//]: # (::: moniker-end)
-[//]: # (::: moniker range="vsts || >= tfs-2015 <= tfs-2018")
->[!NOTE]
->You can customize a work item type which is different then customizing the card displayed on the Kanban board or taskboard. You customize a WIT by adding fields, changing the workflow, adding custom rules and more. You can also add custom work item types and custom backlog levels.
-[//]: # (::: moniker-end)
+
 [//]: # (::: moniker range="vsts")
->For details, see [Customize an inheritance process](/vsts/work/customize/inheritance-process-model). 
+>[!NOTE]
+>You can customize a work item type which is different then customizing the card displayed on the Kanban board or taskboard. You customize a WIT by adding fields, changing the workflow, adding custom rules and more. You can also add custom work item types and custom backlog levels. For details, see [Customize an inheritance process](/vsts/work/customize/inheritance-process-model). 
 [//]: # (::: moniker-end)
+
 [//]: # (::: moniker range=">= tfs-2015 <= tfs-2018")
->For details, see [Customize the On-premises XML process model](/vsts/work/customize/on-premises-xml-process-model.md). 
+>[!NOTE]
+>You can customize a work item type which is different then customizing the card displayed on the Kanban board or taskboard. You customize a WIT by adding fields, changing the workflow, adding custom rules and more. You can also add custom work item types and custom backlog levels. For details, see [Customize the On-premises XML process model](/vsts/work/customize/on-premises-xml-process-model.md). 
 [//]: # (::: moniker-end)
 
 [//]: # (::: moniker range="vsts || >= tfs-2015 <= tfs-2018")
@@ -95,8 +95,6 @@ With styling rules, you can cause cards to change color when their corresponding
 
 ![Styling rule applied to bugs with Severity=1](_img/kanban-board-card-style-rule-example.png)
 
-
-
 ### Example styling rules 
 What rules should you apply to highlight work items? Here are a few examples and their associated criteria . 
 
@@ -123,7 +121,7 @@ What rules should you apply to highlight work items? Here are a few examples and
 As a first step, you'll see that you can change the card display for each work item type (WIT) that shows up on your Kanban board. 
 
 0. From your Kanban board, click the gear icon to open Settings.   
-[//]: # (::: moniker-end)
+	[//]: # (::: moniker-end)    
 	![Kanban board, open card customization](_img/customize-cards/open-config-dialog.png)
 	<!---<img src="_img/kanban-card-customize-open-settings.png" alt="Kanban board, open card customization" style="border: 1px solid #C3C3C3;" /> --> 
 
@@ -134,20 +132,20 @@ As a first step, you'll see that you can change the card display for each work i
 	Here we choose User Story. Your choices will vary based on the following:   
 	- [Process](../work-items/guidance/choose-process.md) used to create your team project 
 	- Whether your team has chosen to [treat bugs like requirements or like tasks](show-bugs-on-backlog.md)  
-	[//]: # (::: moniker-end)
-	[//]: # (::: moniker range="vsts || >= tfs-2017 <= tfs-2018")
+	[//]: # (::: moniker-end)  
+	[//]: # (::: moniker range="vsts || >= tfs-2017 <= tfs-2018")  
 	<!---**VSTS and TFS 2017, 2018 options:**--> 
 	![VSTS Kanban board, card customization dialog](_img/customize-cards/kanban-board-settings-card-fields-dialog-user-story.png)
 
-	[//]: # (::: moniker range="tfs-2015")
+	[//]: # (::: moniker range="tfs-2015")  
 	**TFS 2015.1 options:**  
 	![TFS 2015.1 Kanban board, card customization dialog](_img/vso-kanban-card-customize.png)
 
 	**TFS 2015 options:**   
 
 	![Kanban board, card customization dialog](_img/ALM_CC_KBCardOptions.png)
-	[//]: # (::: moniker-end)
-[//]: # (::: moniker range="vsts || >= tfs-2015 <= tfs-2018")
+	[//]: # (::: moniker-end)  
+	[//]: # (::: moniker range="vsts || >= tfs-2015 <= tfs-2018")
 0. Once you've clicked a WIT, select all the options that you want for that work item type.
 
 	If you want work estimates to show, check the Show Effort, Story Points, Size, or Cost option. Cost corresponds to these fields: Effort ([Scrum](../work-items/guidance/scrum-process.md)), Story Points ([Agile](../work-items/guidance/agile-process.md)), and Size ([CMMI](../work-items/guidance/cmmi-process.md)) field.
@@ -163,8 +161,9 @@ As a first step, you'll see that you can change the card display for each work i
 	![Kanban board, Three fields added to a card](_img/customize-cards/three-fields-added.png)
 
 	> [!TIP]    
-	> You can edit a value in a field you add to a card, unless it's a read-only field, such as the Change By and Changed Date fields. You can also customize the cards that appear on the Kanban board for features and epics. You follow similar steps, however you start from the [corresponding portfolio backlog](../backlogs/define-features-epics.md). 
-[//]: # (::: moniker-end)
+	> You can edit a value in a field you add to a card, unless it's a read-only field, such as the Change By and Changed Date fields. You can also customize the cards that appear on the Kanban board for features and epics. You follow similar steps, however you start from the [corresponding portfolio backlog](../backlogs/define-features-epics.md).  
+	
+[//]: # (::: moniker-end)   
 
 [//]: # (::: moniker range="vsts || >= tfs-2015 <= tfs-2018")
 <a id="task-board">  </a>
@@ -180,28 +179,29 @@ You change the way cards display on the task board the same way you change the K
 	Remember, only [team or project administrators](../scale/add-team-administrator.md) can customize the task board.
 
 2.	Just as before, choose the WIT you want to customize, and then checkmark or select the options you want.   
-	[//]: # (::: moniker-end) 
-	[//]: # (::: moniker range="vsts || >= tfs-2017 <= tfs-2018")
+	[//]: # (::: moniker-end)   
+	[//]: # (::: moniker range="vsts || >= tfs-2017 <= tfs-2018")  
 	<!---**VSTS and TFS 2017, 2018 options:**--> 
 	![VSTS Kanban board, card customization dialog](_img/customize-cards/kanban-board-settings-card-fields-dialog-task.png)
-	[//]: # (::: moniker-end) 
-	[//]: # (::: moniker range="tfs-2015")
-	**TFS 2015.1 options:**  
+	[//]: # (::: moniker-end)   
+	[//]: # (::: moniker range="tfs-2015")  
+	**TFS 2015.1 options:** 
+ 
 	<img src="_img/vso-task-board-card-customize.png" alt="Task board, card customization dialog" style="border: 1px solid #C3C3C3;" />  
 
 	**TFS 2015 options:**  
 
 	<img src="_img/ALM_CC_TaskCardOptions.png" alt="Task board, TFS card customization dialog" style="border: 1px solid #C3C3C3;" />  
-	[//]: # (::: moniker-end)
-	[//]: # (::: moniker range="vsts || >= tfs-2015 <= tfs-2018")
+	[//]: # (::: moniker-end)  
+	[//]: # (::: moniker range="vsts || >= tfs-2015 <= tfs-2018")  
 3.	Repeat this step for each WIT you want to change. Don't be surprised if the options change when you click on a different WIT. For example, Show Remaining Work only applies to tasks and perhaps bugs, but not to PBIs or requirements.  
 
 4.	To add a field to a card, click the add field icon to select a field from the drop-down menu. 
-	[//]: # (::: moniker-end)
+	[//]: # (::: moniker-end)  
+
 [//]: # (::: moniker range="vsts || >= tfs-2015 <= tfs-2018")
 <a id="style-rule">  </a>
 ## Add style rules to highlight work items with color 
-
 <!---
 >[!NOTE]  
 ><b>Feature availability: </b>This feature is supported from VSTS or the web portal for TFS 2015.1 or later version.
@@ -216,7 +216,7 @@ You change the way cards display on the task board the same way you change the K
 	- All clauses are considered AND clauses, grouping clauses isn't supported  
 	- Card rules apply to all work items that meet the rule criteria  
 	- Rule color applies to work items based on the order in which rules are listed. If you add more than one style rule, make sure that you move them in the order of most importance. Simply drag them into the order you want them applied.  
-	- You can quickly enable and disable a style rule  
+	- You can quickly enable and disable a style rule    
 <br/>
 2.	To highlight work items on the task board, open Styles from the task board Settings and add a styling rule.  
 	Here we add a Stale tasks rule which highlights tasks that haven't changed in the last five days.
@@ -239,7 +239,7 @@ You change the way cards display on the task board the same way you change the K
  
 	If tags don't display on the cards, open Fields and make sure that you've checked Show Tags. 
 
-[//]: # (::: moniker-end)
+	[//]: # (::: moniker-end)
  
 [//]: # (::: moniker range="vsts || >= tfs-2017 <= tfs-2018")
 <a id="annotations">  </a>
