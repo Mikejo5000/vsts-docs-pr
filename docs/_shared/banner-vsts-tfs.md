@@ -1,1 +1,2 @@
-![Version selector notice](_img/version-selector-banner.png)
+
+![Version selector notice](/vsts/_shared/_img/version-selector-banner.png)

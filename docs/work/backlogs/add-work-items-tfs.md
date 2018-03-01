@@ -29,7 +29,7 @@ For an overview of all three processes, see [Choose a process](../work-items/gui
  
 
 
-##Add work items to define new work
+## Add work items to define new work
 You can start adding work items once you connect to a team project. Here we show how to add work items from the web portal. For additional clients that you can use, see [Clients that support tracking work items](../work-items/about-work-items.md#clients).
 
 1. From a web browser, connect to the team project that you want to work in. For example, the Fabrikam, Inc. team navigates to ```http://fabrikamprime:8080/tfs/DefaultCollection/Fabrikam%20Fiber%20Website/```.  
@@ -54,14 +54,14 @@ As work progresses, team members can update the state and reassign it as needed.
 <tbody valign="top">
 <tr>
 <td>
-<p><b>Typical workflow progression:</b> </p> 
+<p><b>Typical workflow progression:</b> </p> 
 <ul>
 <li>Create a product backlog item in the default state, New.</li>
 <li>Change the state from New to Approved.</li>
 <li>Change the state from Approved to Committed.</li>
 <li>Change the state from Committed to Done.</li>
 </ul>
-<p><b>Atypical transitions:</b> </p> 
+<p><b>Atypical transitions:</b> </p> 
 <ul>
 <li>Change the state from New to Removed.</li>
 <li>Change the state from Removed to New.</li>

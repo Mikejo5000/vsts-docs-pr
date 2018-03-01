@@ -4,6 +4,7 @@ description: Use the Kanban board, process, and tools to plan and track work in 
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: BDB9CF5A-D83C-4823-BD53-29D49F797FB4
+monikerRange: vsts || >= tfs-2015 <= tfs-2018
 ms.manager: douge
 ms.author: kaelli
 ms.date: 07/14/2017
@@ -14,7 +15,7 @@ ms.date: 07/14/2017
 <b>VSTS | TFS 2018 | TFS 2017 | TFS 2015</b> 
 
 > [!NOTE]  
-> **Feature availability:** This feature is supported from VSTS or an on-premises TFS 2015.1 or later version.   
+> **Feature availability:** This feature is supported from VSTS or an on-premises TFS 2015.1 or later version.   
 
 <a id="reorder-cards"></a>
 You can drag any work item to any column or swimlane on the Kanban board. You can even change the order of items as you move a card to a new column.   

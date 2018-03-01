@@ -104,7 +104,7 @@ First, open the Kanban portal for your team project. Click the **Board** link fr
 
 <img src="_img/kanban-basics-intro.png" alt="Kanban board, Agile template" style="border: 1px solid #C3C3C3;" />  
 
-#### VSTS, TFS 2017  
+[//]: # (::: moniker range="vsts || >= tfs-2017 <= tfs-2018")
         
 1. To open, click ![gear icon](../_img/icons/team-settings-gear-icon.png), the gear icon, to open the team settings dialog and then click Columns.   
 
@@ -137,7 +137,11 @@ First, open the Kanban portal for your team project. Click the **Board** link fr
 6.	[Change State mappings as needed](#state-mappings) for added columns, added workflow states, or added work item types (WITs). 
 
 	Usually you need to do this when you change the [Working with bugs](../customize/show-bugs-on-backlog.md) setting, add [WITs to the Requirement Category](../customize/add-wits-to-backlogs-and-boards.md), or [customize the workflow](../customize/process/customize-process-workflow.md).  
+
+
+[//]: # (::: moniker-end)
  
+[//]: # (::: moniker range=">= tfs-2013 <= tfs-2015")
 #### TFS 2015.1
 
 1. To open, click ![gear icon](../_img/icons/team-settings-gear-icon.png), the gear icon, to open the team settings dialog and then click Columns. 
@@ -201,6 +205,8 @@ First, open the Kanban portal for your team project. Click the **Board** link fr
 </li>
 </ol>
  
+[//]: # (::: moniker-end)
+
 <!---
 1. To open, click ![gear icon](../_img/icons/team-settings-gear-icon.png), the gear icon, to open the team settings dialog and then click Columns.  
 
@@ -272,18 +278,19 @@ What does this mean for Kanban board users? First, only work items whose WITs be
 
 For example, if you change the team setting and add bugs to the Requirements Category, the bug WIT will now appear in the Columns dialog. You'll want to make sure that the Kanban column-to-State mappings match what you want. 
 
+[//]: # (::: moniker range="vsts || >= tfs-2017 <= tfs-2018")
 
-**VSTS**  
 In this example two new states have been added, Triaged for bug, and Investigate for user story. Each needs to be mapped to an existing or new column in order for the Kanban board to display work items assigned to these states.  
 
 <img src="_img/add-columns-custom-states-mapping.png" alt="Kanban board settings, Columns" style="border: 1px solid #C3C3C3;" />  
+[//]: # (::: moniker-end)
 
-**TFS 2015** 
+[//]: # (::: moniker range=">= tfs-2013 <= tfs-2015")
 
 In this example, bugs have been added to show on the Kanban board. You need to map the bug state for each column on the Kanban board.  
  
 ![Kanban column to State mappings with bugs ](_img/ALM_AC_Update.png)
-
+[//]: # (::: moniker-end)
 
 ## Related notes
 
@@ -304,12 +311,17 @@ Your Kanban board is one of several tools you have for tracking work. The [query
 
 But what if you want to list items based on their Kanban column assignment? Can you do that? Yes, from VSTS or from TFS 2015 Update 1 or later version. No, if you work from TFS 2015 or earlier versions. 
 
-**VSTS and TFS 2015 Update 1 :**
+[//]: # (::: moniker range="vsts || >= tfs-2017 <= tfs-2018")
 
+You can track Kanban board column moves using the [Board Column and Board Column Done fields](../track/query-by-workflow-changes.md#kanban_query_fields).
+
+[//]: # (::: moniker-end)
+  
+[//]: # (::: moniker range=">= tfs-2013 <= tfs-2015")
+**TFS 2015.1 :**
 You can track Kanban board column moves using the [Board Column and Board Column Done fields](../track/query-by-workflow-changes.md#kanban_query_fields).  
 
-**TFS 2015:**
-
+**TFS 2013, TFS 2015:**
 What you can do is view the history of changes made to a work item. The [History field](../track/history-and-auditing.md) captures all updates made to an item, including column moves. You can view this by opening the card (double-click to open). 
 
 For example, the following History shows two updates made by dragging the item into a different Kanban column. The first (revision 8) involved a column move, from Analyze to Develop; and a State change, New to Active. However, the second (revision 9) only involved a column move, from Develop to Test; the State remains at Active.
