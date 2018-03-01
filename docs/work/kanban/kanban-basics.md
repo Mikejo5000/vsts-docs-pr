@@ -42,23 +42,23 @@ User stories and bugs correspond to types of work items. You use  [work items](.
 
 
 ##Prerequisites
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 * You must be a member of a team project. If you don't have a team project yet, create one in [VSTS](../../accounts/set-up-vs.md). If you haven't been added as a team member, [get added now](../../accounts/add-account-users-assign-access-levels.md). 
-[//]: # (::: moniker-end)
-[//]: # (::: moniker range=">= tfs-2013 <= tfs-2018")
+::: moniker-end
+::: moniker range=">= tfs-2013 <= tfs-2018"
 * You must be a member of a team project. If you don't have a team project yet, create one in an [on-premises TFS](../../accounts/create-team-project.md). If you haven't been added as a team member, [get added now](../../security/add-users-team-project.md). 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ## Open your Kanban board 
 You open your Kanban board using one of these URLs that connects you to your team project:   
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 **VSTS**:  ```http://AccountName/DefaultCollection/TeamProjectName/_backlogs/board/ ``` 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range=">= tfs-2013 <= tfs-2018")
+::: moniker range=">= tfs-2013 <= tfs-2018"
 **On-premises TFS**:  ```http://ServerName:8080/tfs/DefaultCollection/TeamProjectName/_backlogs/board/```  
-[//]: # (::: moniker-end)
+::: moniker-end
 
 
 ## 1. Map the flow of how your team works
@@ -136,13 +136,13 @@ The CFD shows the count of items in each Kanban column for the past 30 weeks or 
 By monitoring these metrics, you can gain insight into how to optimize your processes and minimize lead time. For additional guidance, see [Cumulative Flow](../../report/dashboards/cumulative-flow.md) 
  
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 >[!NOTE]  
 ><b>Feature availability: </b>From VSTS, you can also add the [Cumulative Flow Diagram (CFD)](../../report/dashboards/cumulative-flow.md), [Lead Time and Cycle Time](../../report/dashboards/cycle-time-and-lead-time.md), and [Velocity](../../report/dashboards/velocity-chart-data-store.md) widgets to a team dashboard.  
 
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ## Try this next
 

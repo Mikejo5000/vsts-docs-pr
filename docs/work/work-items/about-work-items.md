@@ -36,13 +36,13 @@ Each work item supports tracking data contained in work item fields. Also, it ca
 
 Each form contains a number of controls as shown below and described in [Work item form controls](work-item-form-controls.md). 
 
-[//]: # (::: moniker range="vsts || >= tfs-2017 <= tfs-2018")
+::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
 ![Work item form to track features or user stories](../backlogs/_img/add-work-item-vsts-user-story-form.png)
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range=">= tfs-2013 <= tfs-2015")
+::: moniker range=">= tfs-2013 <= tfs-2015"
 ![Work item form to track features or user stories](../backlogs/_img/work-item-form-to-track-user-stories.png)
-[//]: # (::: moniker-end)
+::: moniker-end
 
 <a id="assign-work-items"></a>
 ## Assign work items to a team member
@@ -57,12 +57,12 @@ You can grant access to a team project by adding security groups that you create
 Anyone who has read-write access to a team project can assign work items to a team member. This includes team members and [stakeholders](../../security/get-started-stakeholder.md).  
  
 
-[//]: # (::: moniker range=">= tfs-2013 <= tfs-2018")
+::: moniker range=">= tfs-2013 <= tfs-2018"
 
 >[!NOTE]  
 >**On-premises TFS only**: To minimize the list of names that appear in the drop-down menus of person-name fields, you can scope the field to only those groups that you want to appear in the menu. You do this by adding one or more of the following child elements to the **FIELD** definition in the work item type definition: **ALLOWEDVALUES**, **PROHIBITEDVALUES**, and **VALIDUSER**. For details, see [Apply a field rule](../customize/reference/apply-rule-work-item-field.md).
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 <a id="assign-to-sprint"></a>
 ## Assign work items to a sprint 
@@ -93,13 +93,13 @@ To learn more, see these topics:
 ## Customize a work item type (WIT)
 
 You can add or modify the fields contained within a WIT or add a custom WIT. The process you use depends on the process model in affect for your team project. 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 To learn more, see [Customize an inheritance process](../customize/inheritance-process-model.md). 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range=">= tfs-2013 <= tfs-2018")
+::: moniker range=">= tfs-2013 <= tfs-2018"
 To learn more, see [Customize the On-premises XML process model](../customize/on-premises-xml-process-model.md). 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 
 ## Fill in work item fields quickly using work item templates 
@@ -132,12 +132,12 @@ Once you have a template defined, you can share it via email or a dashboard. Cop
 ## Related notes
 
 To add team members to a team project, see 
-[//]: # (::: moniker range="vsts") 
+::: moniker range="vsts" 
 [Add users to your VSTS account](../../accounts/add-team-members-vs.md).
-[//]: # (::: moniker-end)
-[//]: # (::: moniker range=">= tfs-2013 <= tfs-2018")
+::: moniker-end
+::: moniker range=">= tfs-2013 <= tfs-2018"
 [TFS team project](../../security/add-users-team-project.md). 
-[//]: # (::: moniker-end)
+::: moniker-end
 These accounts are all members of the Project Collection Valid Users group.  <!---Also, these names are automatically synchronized with Azure Active Direct or Active Directory when AAD or AD is configured as part of the account (VSTS) or deployment (TFS).-->   
 
 

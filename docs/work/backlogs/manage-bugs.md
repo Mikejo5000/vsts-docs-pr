@@ -47,18 +47,18 @@ The bug work item form tracks similar information to the one shown for the Scrum
 >[!NOTE]  
 >The images you see from your web portal may differ from the images you see in this topic. These differences result from updates made to VSTS or your on-premises TFS, options that you or your admin have enabled, and which process was chosen when creating your team project&mdash;[Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md). 
 
-[//]: # (::: moniker range="vsts || >= tfs-2018")
+::: moniker range="vsts || >= tfs-2018"
 
 <img src="_img/manage-bugs-scrum-bug-from-ts.png" alt="Scrum bug work item form, VSTS" style="border: 2px solid #C3C3C3;" />
 
 > [!TIP]
 > Use the [Discussion section](../work-items/work-item-form-controls.md#discussion) to add and review comments made about the work being performed to resolve the bug.  
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 
 
-[//]: # (::: moniker range="tfs-2017")
+::: moniker range="tfs-2017"
 
 # [New web form](#tab/new-web-form)
 
@@ -78,15 +78,15 @@ To learn more about working in the old web form, see [Add work items to plan and
 
 ---
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 
-[//]: # (::: moniker range=">= tfs-2013 <= tfs-2015")
+::: moniker range=">= tfs-2013 <= tfs-2015"
 To learn more about working in the old web form, see [Add work items to plan and track your project](add-work-items-tfs.md). 
 
 <img src="_img/scrum-bug-wi-form.png" alt="Scrum bug work item form, TFS 2015 or earlier versions" style="border: 2px solid #C3C3C3;" />
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ### Fields specific to bugs
 
@@ -235,13 +235,13 @@ When bugs are treated as tasks, they're often automatically linked to a PBI or u
 Your team should consider fixing all bugs found during a sprint when testing a feature in development.  
 
 <!---
-[//]: # (::: moniker range="vsts || >= tfs-2015 <= tfs-2018")
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 
 >[!TIP]
 >From VSTS and TFS 2015.1 and later versions, you can 
 >[drag-and-drop work items onto a sprint from any backlog or board](../scrum/define-sprints.md#drag-drop-to-sprint).   
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 -->
 
@@ -325,17 +325,17 @@ To track your bugs and integrate with other resources available to you, see thes
   
 
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 
 ### Use the Analytics service to create bug reports
 You can use Power BI to create more complex reports than what you can get from a query. To learn more, see [Connect to VSTS with Power BI Data Connector](../../report/powerbi/data-connector-connect.md). 
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 
 
-[//]: # (::: moniker range=">= tfs-2013 <= tfs-2018")
+::: moniker range=">= tfs-2013 <= tfs-2018"
 
 
 ### Pre-defined SQL Server bug reports
@@ -348,7 +348,7 @@ If you work from an on-premises TFS and you have SQL Server Analysis Services an
 
 To learn how to add SQL Server reports for a team project, see [Add reports to a team project](../../report/admin/add-reports-to-a-team-project.md).  
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 
 

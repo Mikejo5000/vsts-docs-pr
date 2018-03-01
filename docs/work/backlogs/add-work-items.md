@@ -20,14 +20,14 @@ You add work items to plan and manage your project. You use different types of w
 
 
 ##Prerequisites
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 * You must be a member of a team project. If you don't have a team project yet, create one in [VSTS](../../accounts/set-up-vs.md). If you haven't been added as a team member, [get added now](../../accounts/add-account-users-assign-access-levels.md). 
-[//]: # (::: moniker-end)
-[//]: # (::: moniker range=">= tfs-2013 <= tfs-2018")
+::: moniker-end
+::: moniker range=">= tfs-2013 <= tfs-2018"
 * You must be a member of a team project. If you don't have a team project yet, create one in an [on-premises TFS](../../accounts/create-team-project.md). If you haven't been added as a team member, [get added now](../../security/add-users-team-project.md). 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range="vsts || >= tfs-2018")
+::: moniker range="vsts || >= tfs-2018"
 
 <a id="define-new-work">  </a>
 ## Add a work item 
@@ -65,14 +65,14 @@ Here we show how to add work items from the web portal.
 That's it! 
 
 Create as many work items as you need of the type you need to track the work you want to manage.  
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range="tfs-2017")
+::: moniker range="tfs-2017"
 
 TO BE COMPLETED 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range=">= tfs-2013 <= tfs-2015")
+::: moniker range=">= tfs-2013 <= tfs-2015"
 ## Add work items to define new work
 You can start adding work items once you connect to a team project. Here we show how to add work items from the web portal. For additional clients that you can use, see [Clients that support tracking work items](../work-items/about-work-items.md#clients).
 
@@ -83,7 +83,7 @@ You can start adding work items once you connect to a team project. Here we show
 
 	![Home page -  create work items](_img/work-items-tfs-team-home-page.png)  
 
-	Work items you add are automatically scoped to your [team's area and iteration paths](../scale/multiple-teams.md). To change the team context, see [Switch team project or team focus](../../teams/switch-team-context.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json)
+	Work items you add are automatically scoped to your [team's area and iteration paths](../scale/multiple-teams.md). To change the team context, see [Switch team project or team focus](../../settings/switch-team-context.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json)
 
 3. Enter a title and then save the work item. Before you change the default State, you must save it.  
 
@@ -130,9 +130,9 @@ With each update, changes are recorded in the History field which you can view t
 
 To find work items based on their history, see [History & auditing](../track/history-and-auditing.md).  
  
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range="vsts || >= tfs-2017 <= tfs-2018")
+::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
 ## Follow a work item
 
 When you want to track the progress of a single work item, click the ![Follow icon](../_img/icons/follow-icon.png) icon. This signals the system to notify you when changes are made to the work item.  
@@ -145,14 +145,14 @@ Notifications are sent to your preferred email address, which which [you can cha
 
 To stop following changes, click the ![Following icon](../../work/_img/icons/following-icon.png)  icon.
  
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range=">= tfs-2017 <= tfs-2018")
+::: moniker range=">= tfs-2017 <= tfs-2018"
 
 >[!IMPORTANT]
 >For on-premises TFS, [you must configure an SMTP sever](../../tfs-server/admin/setup-customize-alerts.md) in order for team members to receive notifications.  
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ## Try this next  
 

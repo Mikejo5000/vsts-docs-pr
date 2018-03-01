@@ -17,12 +17,12 @@ ms.date: 03/01/2018
 
 <b>VSTS | TFS 2018 | TFS 2017 | TFS 2015</b> 
 
-[//]: # (::: moniker range="tfs-2013")
+::: moniker range="tfs-2013"
 > [!NOTE]   
 > The Definition of Done feature is not a supported feature in TFS 2013. Consider upgrading to a later TFS version. 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range="vsts || >= tfs-2015 <= tfs-2018")
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 As your team updates the status of work as it progresses from one stage to the next, it helps that they agree on what "done" means. By specifying the Definition of Done criteria for each Kanban column, you help share the essential tasks to complete before moving an item into a downstream stage. 
 
 Also, you'll have implemented one of the core Kanban tenets: **make processes and policies explicit.**
@@ -44,12 +44,12 @@ If you're just getting started, review [Kanban basics](kanban-basics.md) to get 
 2. Open the Definition of Done for the column that applies to the criteria you'll enter. You can specify the Definition of Done for each intermediate column on your team's Kanban board.
 
 3. 	Click a column tab and enter the Definition of Done for that column. Enter text that defines your [team's Definition of Done](#definition-of-done).  
-	[//]: # (::: moniker-end)  
-	[//]: # (::: moniker range="vsts || >= tfs-2017 <= tfs-2018")	
+	::: moniker-end  
+	::: moniker range="vsts || >= tfs-2017 <= tfs-2018"	
 	<!---**VSTS and TFS 2017 and later versions**-->
  	<img src="_img/vso-kanban-board-definition-of-done-no-tags.png" alt="Kanban board, Coding column tab, Definition of done]" style="border: 1px solid #C3C3C3;" />  
-	[//]: # (::: moniker-end)  
-	[//]: # (::: moniker range="tfs-2015")  
+	::: moniker-end  
+	::: moniker range="tfs-2015"  
 	**For TFS 2015.1 and later versions**
 
  	<img src="_img/vso-kanban-board-definition-of-done-no-tags.png" alt="Kanban board, Coding column tab, Definition of done]" style="border: 1px solid #C3C3C3;" />  
@@ -61,8 +61,8 @@ If you're just getting started, review [Kanban basics](kanban-basics.md) to get 
 	Enter text that defines your [team's Definition of Done](#definition-of-done).
 
 	![Definition Text](_img/ALM_DD_DefinitionText.png)
-	[//]: # (::: moniker-end)   
-	[//]: # (::: moniker range="vsts || >= tfs-2015 <= tfs-2018")   
+	::: moniker-end   
+	::: moniker range="vsts || >= tfs-2015 <= tfs-2018"   
 4. Team members can quickly check that they have met the criteria by clicking the Information tooltip ![Info Icon](_img/ALM_DD_InfoIcon.png) icon.
 
 
@@ -76,4 +76,4 @@ See these choices for further options to customize the Kanban board:
 - [Customize cards ](../customize/customize-cards.md)
 
 
-[//]: # (::: moniker-end)
+::: moniker-end

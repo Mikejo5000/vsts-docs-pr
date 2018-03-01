@@ -39,7 +39,7 @@ In this topic you'll learn:
 
 All of the following actions can be performed by team members that belong to the Contributors group. Members provided with Stakeholder access can perform multi-select, bulk edit, change type, email, and copy as HTML/copy to clipboard actions. For details, see [Work as a stakeholder](../../security/get-started-stakeholder.md).  
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 > [!div class="mx-tdBreakAll"]  
 > |Multi-select work items|Bulk edit/update/delete|Copy, clone, change type,<br/>move, or email work items|  
 > |-------------|----------|---------|  
@@ -51,10 +51,10 @@ All of the following actions can be performed by team members that belong to the
 2. You can choose to copy or clone a single work item from a query results list or from the [Actions menu of the work item form](remove-delete-work-items.md). You can only perform a clone or copy action for a single work item. Choose Copy work item when you want to create a copy of a work item and change its work item type. Choose Clone when you want to create another instance of the work item without changes to its work item type. 
 3. You must be a member of the Project Administrators group or be [granted explicit permissions to move work items](../../security/set-permissions-access-work-tracking.md#move-delete-permissions).  
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 
-[//]: # (::: moniker range=">= tfs-2017 <= tfs-2018")
+::: moniker range=">= tfs-2017 <= tfs-2018"
 > [!div class="mx-tdBreakAll"]  
 > |Multi-select work items|Bulk edit/update/delete|Copy, clone, change type,<br/>move, or email work items|  
 > |-------------|----------|---------|  
@@ -67,11 +67,11 @@ All of the following actions can be performed by team members that belong to the
 3. For on-premises TFS, you must have an [SMTP server configured for your deployment](../../tfs-server/admin/setup-customize-alerts.md). 
 
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 
 
-[//]: # (::: moniker range=">= tfs-2013 <= tfs-2015")
+::: moniker range=">= tfs-2013 <= tfs-2015"
 > [!div class="mx-tdBreakAll"]  
 > |Multi-select work items|Bulk edit/update/delete|Copy, clone, change type,<br/>move, or email work items|  
 > |-------------|----------|---------|  
@@ -84,7 +84,7 @@ All of the following actions can be performed by team members that belong to the
 3. For on-premises TFS, you must have an [SMTP server configured for your deployment](../../tfs-server/admin/setup-customize-alerts.md). 
 
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 [!INCLUDE [temp](../_shared/image-differences.md)]  
 
@@ -93,17 +93,17 @@ All of the following actions can be performed by team members that belong to the
 
 ## Multi-select work items   
 
-[//]: # (::: moniker range="vsts || >= tfs-2015 <= tfs-2018")
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 Multi-select of work items on the backlog and sprint backlogs works in the same way as multi-select works within query results. 
-[//]: # (::: moniker-end)
-[//]: # (::: moniker range="tfs-2015")
+::: moniker-end
+::: moniker range="tfs-2015"
 (Requires TFS 2015.1 or later versions)  
-[//]: # (::: moniker-end)
+::: moniker-end
 You can use bulk modify by selecting work items from the backlog page or query results list. From the backlog page context menu, you can change the backlog priority of several items (Change position or Move to position),  assign them to a team member, move them to a different sprint, or [map them to a feature](organize-backlog.md#mapping).
 
 The menu options available to you change depending on the platform you work from and whether you work from a backlog page or query results list.  
 
-[//]: # (::: moniker range="vsts || >= tfs-2018")
+::: moniker range="vsts || >= tfs-2018"
 <!---#### VSTS and TFS 2018-->
 
 <table valign="top">
@@ -119,9 +119,9 @@ The menu options available to you change depending on the platform you work from
 </td>
 </tr>
 </table>
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range="tfs-2017")
+::: moniker range="tfs-2017"
 <!---#### TFS 2017-->
 
 <table valign="top">
@@ -137,9 +137,9 @@ The menu options available to you change depending on the platform you work from
 </td>
 </tr>
 </table>
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range=">= tfs-2013 <= tfs-2015")
+::: moniker range=">= tfs-2013 <= tfs-2015"
 <!---#### TFS 2015, TFS 2013-->
 
 <table valign="top">
@@ -156,7 +156,7 @@ The menu options available to you change depending on the platform you work from
 </tr>
 </table>
  
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ### To multi-select and open the context menu 
 
@@ -166,18 +166,18 @@ To open the context menu, click (![actions icon](../_img/icons/actions-icon.png)
 
 Here, we use the context menu to move several non-sequential items to the current sprint.
 
-[//]: # (::: moniker range="vsts || >= tfs-2017 <= tfs-2018")
+::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
 <!---#### VSTS and TFS 2017 -->
 
 <img src="_img/bulk-modify-multi-select-ts.png" alt="VSTS, Backlog page, multi-select items, Open context menu, Move to iteration,  " style="border: 2px solid #C3C3C3;" />
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range=">= tfs-2013 <= tfs-2015")
+::: moniker range=">= tfs-2013 <= tfs-2015"
 <!---#### TFS 2015, TFS 2013-->
 
 <img src="_img/backlog-multi-select-non-sequential-items.png" alt="TFS 2015, web portal, Backlog page, multi-select items, Open context menu, Move to iteration,  " style="border: 2px solid #C3C3C3;" />
 
-[//]: # (::: moniker-end)
+::: moniker-end
 >[!TIP]  
 >Use the backlog <b>Create Query</b> feature to create a query with the backlog items. You can then open the query within the web portal or [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to perform bulk updates.  
 
@@ -207,7 +207,7 @@ To learn more about the Assign To and Iteration Path fields, see [Query by assig
 
 To assign or modify several fields, choose Edit from the context menu of one of the selected work items. Enter a value for each field that you want to update.  
 
-[//]: # (::: moniker range="vsts || >= tfs-2017 <= tfs-2018")
+::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
 <!---#### VSTS and TFS 2017 -->
 
 1. For audit purposes, you can type a description for your bulk update task. To learn more about each field, see the [Work item field index](../work-items/guidance/work-item-field.md). 
@@ -218,9 +218,9 @@ To assign or modify several fields, choose Edit from the context menu of one of 
 
 	<img src="_img/bulk-modify-save-ts.png" alt="VSTS and TFS 2017, Query results page, save bulk modified items" style="border: 2px solid #C3C3C3;" />
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range=">= tfs-2013 <= tfs-2015")
+::: moniker range=">= tfs-2013 <= tfs-2015"
 <!---#### TFS 2015, TFS 2013-->
 
 1. For audit purposes, you can type a description for your bulk update task. To learn more about each field, see the [Work item field index](../work-items/guidance/work-item-field.md). 
@@ -231,12 +231,12 @@ To assign or modify several fields, choose Edit from the context menu of one of 
 
 	![TFS 2015, web portal, query results page, Bulk modify save results](_img/IC677240.png)  
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 [!INCLUDE [temp](../_shared/assign-to-sprint.md)]
 
 
-[//]: # (::: moniker range="vsts || >= tfs-2015 <= tfs-2018")
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 <a id="tags"></a>
 ## Bulk modify tags 
  
@@ -247,7 +247,7 @@ From the Edit work items dialog, select Tags (Add) or Tags (Remove).
 Here we choose to add the Beta tag to the selected work items. 
 
 ![Edit work items - Add tags](../track/_img/tags-bulk-add.png)  
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ## Related notes
 

@@ -39,16 +39,16 @@ In this topic, you'll learn:
 
 [!INCLUDE [temp](../_shared/image-differences.md)]  
 
-[//]: # (::: moniker-end)
+::: moniker-end
 ## Add a task or set of tasks 
 
 1. To start adding tasks, open the menu for the work item.  
-[//]: # (::: moniker range="vsts || >= tfs-2017 <= tfs-2018")
+::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
 	<img src="_img/add-tasks-menu-options-vs-ts.png" alt="Open the context menu of a backlog item to add a task" style="border: 1px solid #C3C3C3;" /> 
-[//]: # (::: moniker-end)
-[//]: # (::: moniker range="tfs-2015")
+::: moniker-end
+::: moniker range="tfs-2015"
 	<img src="_img/kanban-board-add-task-checklist.png" alt="Open the context menu of a backlog item to add a task" style="border: 1px solid #C3C3C3;" />  
-[//]: # (::: moniker-end)
+::: moniker-end
 
 2. If you have a number of tasks to add, simply keep typing your task titles and click Enter. 
 

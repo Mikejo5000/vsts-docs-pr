@@ -27,12 +27,12 @@ You add iteration paths under this root. To understand how the system uses area 
 
 ## Prerequisites
 <a name="permissions"></a>
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 * You must be a member of a team project. If you don't have a team project yet, create one in [VSTS](../../accounts/set-up-vs.md). If you haven't been added as a team member, [get added now](../../accounts/add-account-users-assign-access-levels.md). 
-[//]: # (::: moniker-end)
-[//]: # (::: moniker range=">= tfs-2013 <= tfs-2018")
+::: moniker-end
+::: moniker range=">= tfs-2013 <= tfs-2018"
 * You must be a member of a team project. If you don't have a team project yet, create one in an [on-premises TFS](../../accounts/create-team-project.md). If you haven't been added as a team member, [get added now](../../security/add-users-team-project.md). 
-[//]: # (::: moniker-end)
+::: moniker-end
 * To create or modify areas or iterations, you must either be a member of the **Project Administrators** group, or your **Create and order child nodes**, **Delete this node**, and **Edit this node** permissions must be set to **Allow** for the area or iteration node that you want to modify.
 
 To manage areas and iterations you need to be a project administrator or have the **Create child nodes** permission for an area path. If you aren't a project administrator, [get added as one](../scale/add-team-administrator.md) or have someone provide you with explicit permissions to <b>Edit project-level information</b>. 
@@ -44,7 +44,7 @@ Certain [restrictions](about-areas-iterations.md#name-restrictions) apply on nam
 <a id="open-admin-context">  </a>
 ## Open the administration context for the team project
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 <!---**VSTS** -->
 You enable Vertical navigation from the preview features option of your profile menu. To learn more about navigating within the user interface, see Navigation basics. 
 
@@ -74,9 +74,9 @@ From the web portal, open the Settings page for the team project.
 To Be Written
 
 ---
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range=">= tfs-2018")
+::: moniker range=">= tfs-2018"
 <!---**TFS 2018** -->
 <a id="admin-intro-team-services" /> 
 
@@ -90,11 +90,11 @@ To Be Written
 
 2.	Open the **Work** hub.   
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 <a id="admin-intro-tfs-2017-1" /> 
 
-[//]: # (::: moniker range="tfs-2017")
+::: moniker range="tfs-2017"
 
 **TFS 2017.1**
 
@@ -122,11 +122,11 @@ To Be Written
 
 2. Open the **Work** hub.   
  
-[//]: # (::: moniker-end)
+::: moniker-end
 
 
 
-[//]: # (::: moniker range=">= tfs-2013 <= tfs-2015")
+::: moniker range=">= tfs-2013 <= tfs-2015"
 <!---**TFS 2015** -->
 <a id="admin-intro-tfs-2015" />
 
@@ -138,13 +138,13 @@ To Be Written
 2. Open the **Work** hub.   
  
   
-[//]: # (::: moniker-end)
+::: moniker-end
 
 <a id="iterations"></a>  
 ##Add iterations and set iteration dates
 From the **Iterations** page, you can add and select the iterations that will be active for your team. You add iterations in the same way you add areas. For more information about working within a sprint cadence, see [Schedule sprints](../scrum/define-sprints.md).  
 
-[//]: # (::: moniker range=">= tfs-2017 <= tfs-2018")
+::: moniker range=">= tfs-2017 <= tfs-2018"
 <a id="define-sprints-team-services">   </a>
 ### Schedule sprints 
 
@@ -165,10 +165,10 @@ From the **Iterations** page, you can add and select the iterations that will be
 	<img src="_img/modify-areas-its-iterations-scheduled-ts.png" alt="Work, Iterations page, scheduled set of sprints, VSTS platform" style="border: 2px solid #C3C3C3;" />
 
 	Your next step is to [choose the sprints each team will use](../scale/set-team-defaults.md#activate-team-services). 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 
-[//]: # (::: moniker range=">= tfs-2013 <= tfs-2015")
+::: moniker range=">= tfs-2013 <= tfs-2015"
 
 <a id="tfs-2015-iteration-paths" />
 
@@ -194,7 +194,7 @@ From the **Iterations** page, you can add and select the iterations that will be
 
 	Your next step is to [activate the sprints each team will use](../scale/set-team-defaults.md#activate-sprints-tfs). 
  
-[//]: # (::: moniker-end)
+::: moniker-end
 
 <!---
 0. Teams can choose which iterations they work in by checking the check box next to each iteration.  
