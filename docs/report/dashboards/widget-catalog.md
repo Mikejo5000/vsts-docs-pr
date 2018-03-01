@@ -234,9 +234,8 @@ The following links are displayed when the corresponding resource is configured 
 - [View process guidance](../sharepoint-dashboards/configure-or-redirect-process-guidance.md) (opens either a SharePoint site or URL that's been configured as the team project's process guidance.  
 - [View reports](../sql-reports/reporting-services-reports.md) (opens SQL Server Reporting Services). To add or update reports for a team project, see [Add reports to a team project](../admin/add-reports-to-a-team-project.md). 
 
-::: moniker-end
-
 ----
+
 ::: moniker-end
 
 ::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
