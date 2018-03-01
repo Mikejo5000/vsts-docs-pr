@@ -1,12 +1,14 @@
 ---
-title: Catalog of widgets supported for team dashboards in VSTS or TFS 
-description: Determine which widgets you want to add to your dashboards when working in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS) 
+title: Catalog of widgets you can add to a dashboard
+titleSuffix: VSTS & TFS
+ms.custom: Widget catalog
+description: Determine which widgets you want to add to your dashboards when working in Visual Studio Team Services or Team Foundation Server
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
 ms.assetid: C9FD12C0-033E-4A4D-AF63-6EF67E7B4828
 ms.manager: douge
 ms.author: kaelli
-ms.date: 11/10/2017
+ms.date: 03/01/2018
 ---
 
 # Widget catalog 
@@ -209,7 +211,7 @@ Work items that you add using this widget are automatically scoped to the team's
 ----
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2015.1 <= tfs-2018"
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 
 <a id="other-links-widget"></a> 
 ##&nbsp;&nbsp;&nbsp;Other links (team-scoped) 
@@ -221,21 +223,23 @@ Provides links to the following features:
 - Opens the team's quick dialog to add or modify the active sprints or iteration paths for your team. To learn more see [Define sprints](../../work/scrum/define-sprints.md).
 - Opens the team's quick dialog to modify your [team's area path](../../work/scale/set-team-defaults.md).
 
-For on-premises TFS, additional links are displayed when the corresponding resource is configured for the team project: 
+::: moniker-end
 
-**On-premises TFS with configured resources**
+::: moniker range=">= tfs-2015 <= tfs-2018"
+The following links are displayed when the corresponding resource is configured for the team project: 
 
 ![Other links widget](_img/widget-other-links-tfs.png)  
 
 - [View project portal](../sharepoint-dashboards/share-information-using-the-project-portal.md) (opens either a SharePoint site or URL that's been configured as the team project's portal.  
 - [View process guidance](../sharepoint-dashboards/configure-or-redirect-process-guidance.md) (opens either a SharePoint site or URL that's been configured as the team project's process guidance.  
 - [View reports](../sql-reports/reporting-services-reports.md) (opens SQL Server Reporting Services). To add or update reports for a team project, see [Add reports to a team project](../admin/add-reports-to-a-team-project.md). 
- 
+
+::: moniker-end
 
 ----
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2015.1 <= tfs-2018"
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 
 <a id="query-results-widget"></a> 
 ##&nbsp;&nbsp;&nbsp;Query results 
@@ -251,7 +255,7 @@ To create a shared query, see [Use the query editor to list and manage queries](
 ----
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2015.1 <= tfs-2018"
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 <a id="query-tile-widget"></a> 
 ##&nbsp;&nbsp;&nbsp;Query tile 
 
@@ -265,7 +269,7 @@ To create a shared query, see [Use the query editor to list and manage queries](
 ::: moniker-end
 
 
-::: moniker range="vsts || >= tfs-2015.1 <= tfs-2018"
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 
 <a id="sprint-burndown-widget"></a>
 <a id="burndown-widget"></a> 
@@ -280,7 +284,7 @@ Teams [use the burndown chart to mitigate risk and check for scope creep](../../
 ----
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2015.1 <= tfs-2018"
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 
 <a id="sprint-capacity-widget"></a> 
 ##&nbsp;&nbsp;&nbsp;Sprint capacity (team-scoped) 
@@ -295,7 +299,7 @@ Teams [specify their capacity to plan and monitor their sprint resources](../../
 ::: moniker-end
 
  
-::: moniker range="vsts || >= tfs-2015.1 <= tfs-2018"
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 
 <a id="sprint-overview-widget"></a> 
 ##&nbsp;&nbsp;&nbsp;Sprint overview (team-scoped) 
@@ -327,7 +331,7 @@ For additional guidance, see [Velocity](team-velocity.md).
 ----
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2015.1 <= tfs-2018"
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 <a id="work-links-widget"></a> 
 ##&nbsp;&nbsp;&nbsp;Work links (team-scoped) 
 
@@ -342,13 +346,13 @@ Provides quick access to open the following Agile tools and team resources:
 ----
 ::: moniker-end
  
-::: moniker range="vsts || >= tfs-2015.2 <= tfs-2018"
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 
 ## Build, test, release
   
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2015.2 <= tfs-2018"
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 
 <a id="build-history-widget"></a> 
 ##&nbsp;&nbsp;&nbsp;Chart for build history  
@@ -365,7 +369,7 @@ Hover over a bar to learn how long the build took to complete. Click the bar to 
 ----
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2017.2 <= tfs-2018"
+::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
 
 <a id="chart-test-plan-widget"></a> 
 ##&nbsp;&nbsp;&nbsp;Chart for test plans  
@@ -384,7 +388,7 @@ To learn more, see [Track your test results](../../manual-test/getting-started/t
 
 
 
-::: moniker range="vsts || >= tfs-2017.1 <= tfs-2018"
+::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
 
 <a id="deployment-status-widget"></a> 
 ##&nbsp;&nbsp;&nbsp;Deployment status 
@@ -410,7 +414,6 @@ Configurable widget that shows a consolidated view of the deployment status and 
 > **Feature availability:**  You can access this widget from VSTS.   
 
 Configurable widget that you can use to view and track the status of a release definition. The widget shows the release as a series of environments, with the name of the release and the date or time it was started. The color of the heading and the icon in each environment indicate the current status of the release, which are the same as are used on the **Releases** page. Select a release definition in the left column to filter the list to just releases for that definition.
-To learn more, see [Add release information to the dashboard](../../build-release/actions/view-manage-releases.md#add-widget). 
 
 ---- 
 ::: moniker-end

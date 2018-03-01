@@ -85,6 +85,7 @@ Once you've identified one or two, add them to your working Kanban board.
 
 	<img src="_img/ALM_EW_DeleteLane.png" alt="Kanban board, Delete a swimlane" style="border: 2px solid #C3C3C3;" />
 ::: moniker-end
+
 ::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 ## Related Kanban notes
 
@@ -96,20 +97,21 @@ As you can see, swimlanes provides another way to organize and visualize the flo
 *	[Definition of Done](definition-of-done.md)   
 *	[Customize cards](../customize/customize-cards.md)   
 *	[Show bugs on backlogs and boards](../customize/show-bugs-on-backlog.md)   
-
-	
-### Tracking lane moves  
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"	
+
+::: moniker range="vsts || >= tfs-2017 <= tfs-2018"		
+### Tracking lane moves  
+
 <!---**VSTS and TFS 2015.1 and later versions**-->
 You can track Kanban board swimlane moves using the [Board Lane field](../track/query-by-workflow-changes.md#kanban_query_fields). 
 ::: moniker-end
 
 ::: moniker range="tfs-2015"
+### Tracking lane moves  
+
 **For TFS 2015.1 and later versions**
 You can track Kanban board swimlane moves using the [Board Lane field](../track/query-by-workflow-changes.md#kanban_query_fields).  
-
 
 **For TFS 2015**
 
@@ -129,4 +131,5 @@ To programmatically interact with Kanban board and other team settings, see the 
 ::: moniker range="tfs-2013"
 > [!NOTE]   
 > Swimlanes is not a supported feature in TFS 2013. Consider upgrading to a later TFS version. 
+> 
 ::: moniker-end

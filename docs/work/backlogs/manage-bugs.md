@@ -1,6 +1,7 @@
 ---
 title: Create & manage bugs using Agile tools
 titleSuffix: VSTS & TFS 
+ms.custom: Manage bugs
 description: Manage technical debt and triage bugs using Agile tools and Scrum methods when working in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
@@ -42,10 +43,9 @@ You can create bugs from the [web portal](add-work-items.md), Visual Studio/Team
 
 ### Bug work item form 
 
-The bug work item form tracks similar information to the one shown for the Scrum process.  
+The bug work item form tracks similar information to the one shown for the Scrum process. 
 
->[!NOTE]  
->The images you see from your web portal may differ from the images you see in this topic. These differences result from updates made to VSTS or your on-premises TFS, options that you or your admin have enabled, and which process was chosen when creating your team project&mdash;[Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md). 
+[!INCLUDE [temp](../_shared/image-differences-with-wits.md)] 
 
 ::: moniker range="vsts || >= tfs-2018"
 
@@ -55,7 +55,6 @@ The bug work item form tracks similar information to the one shown for the Scrum
 > Use the [Discussion section](../work-items/work-item-form-controls.md#discussion) to add and review comments made about the work being performed to resolve the bug.  
 
 ::: moniker-end
-
 
 
 ::: moniker range="tfs-2017"

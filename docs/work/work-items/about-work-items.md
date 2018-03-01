@@ -60,7 +60,7 @@ Anyone who has read-write access to a team project can assign work items to a te
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 
 >[!NOTE]  
->**On-premises TFS only**: To minimize the list of names that appear in the drop-down menus of person-name fields, you can scope the field to only those groups that you want to appear in the menu. You do this by adding one or more of the following child elements to the **FIELD** definition in the work item type definition: **ALLOWEDVALUES**, **PROHIBITEDVALUES**, and **VALIDUSER**. For details, see [Apply a field rule](../customize/reference/apply-rule-work-item-field.md).
+>To minimize the list of names that appear in the drop-down menus of person-name fields, you can scope the field to only those groups that you want to appear in the menu. You do this by adding one or more of the following child elements to the **FIELD** definition in the work item type definition: **ALLOWEDVALUES**, **PROHIBITEDVALUES**, and **VALIDUSER**. For details, see [Apply a field rule](../customize/reference/apply-rule-work-item-field.md).
 
 ::: moniker-end
 
@@ -90,7 +90,7 @@ To learn more, see these topics:
 
 
 <a id="customize"> </a>
-## Customize a work item type (WIT)
+## Customize a work item type (WIT) 
 
 You can add or modify the fields contained within a WIT or add a custom WIT. The process you use depends on the process model in affect for your team project. 
 ::: moniker range="vsts"
@@ -123,34 +123,25 @@ Once you have a template defined, you can share it via email or a dashboard. Cop
 -->
  
 
-## Try this next 
+## Required permissions
 
-> [!div class="nextstepaction"]
-> [Add a work item](../backlogs/add-work-items.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)
-
-
-## Related notes
-
-To add team members to a team project, see 
-::: moniker range="vsts" 
-[Add users to your VSTS account](../../accounts/add-team-members-vs.md).
-::: moniker-end
-::: moniker range=">= tfs-2013 <= tfs-2018"
-[TFS team project](../../security/add-users-team-project.md). 
-::: moniker-end
-These accounts are all members of the Project Collection Valid Users group.  <!---Also, these names are automatically synchronized with Azure Active Direct or Active Directory when AAD or AD is configured as part of the account (VSTS) or deployment (TFS).-->   
-
-
-### Required permissions
-
-As a member added to the Contributors group of a team project, you can use most features provided under the **Work** hub. 
-
-If you've been added with stakeholder access, you are limited to certain features. For details, see [Work as a Stakeholder](../../security/get-started-stakeholder.md). 
+As a member added to the Contributors group of a team project, you can use most features provided under the **Work** hub. If you've been added with stakeholder access, you are limited to certain features. For details, see [Work as a Stakeholder](../../security/get-started-stakeholder.md). 
 
 To learn more about permissions and access, see [Permissions and access for work tracking](../../security/permissions-access-work-tracking.md). 
 
+::: moniker range="vsts" 
+To add team members to a team project, see [Add users to your VSTS account](../../accounts/add-team-members-vs.md).
+::: moniker-end
+::: moniker range=">= tfs-2013 <= tfs-2018"
+To add team members to a team project, see [TFS team project](../../security/add-users-team-project.md). 
+::: moniker-end
 
-### Additional notes on assigning work to a team member
+To learn more about user accounts, permissions, and access, see [Security & Identity](../../security/index.md).
+<!--- User names you add are all members of the Project Collection Valid Users group.  Also, these names are automatically synchronized with Azure Active Direct or Active Directory when AAD or AD is configured as part of the account (VSTS) or deployment (TFS).-->   
+
+
+
+## Additional notes on assigning work to a team member
 
 Within the work item form, such as the web form shown, click the Assigned To field to select a team member to assign the work item to. Or, you can begin typing the name of a team member to quickly focus your search to a select few. 
 
@@ -165,10 +156,9 @@ Note the following:
 - The system shows the display name and adds the account name when required to disambiguate identical display names  
 - You can assign several work items at once from the backlog or query results, see [Bulk modify work items](../backlogs/bulk-modify-work-items.md) for details. 
  
- 
 
 <a id="clients"></a>  
-### Clients that support tracking work items  
+## Clients that support tracking work items  
 You can add work items from various clients, such as: 
 - From the web portal backlog pages, you can add user stories, backlog items, features, and epics from the [quick add panel](../backlogs/create-your-backlog.md). 
 - From the [Team Explorer add-in to Visual Studio](../../user-guide/work-team-explorer.md), you can add most types of work items from the Work page.  
@@ -179,3 +169,7 @@ You can add work items from various clients, such as:
 For an overview of all clients that connect to your team project, see [Tools and clients that connect to VSTS and TFS](../../user-guide/tools.md). 
 
 
+## Try this next 
+
+> [!div class="nextstepaction"]
+> [Add a work item](../backlogs/add-work-items.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)

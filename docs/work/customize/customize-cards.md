@@ -178,12 +178,12 @@ You change the way cards display on the task board the same way you change the K
 	Remember, only [team or project administrators](../scale/add-team-administrator.md) can customize the task board.
 
 2.	Just as before, choose the WIT you want to customize, and then checkmark or select the options you want.   
-	::: moniker-end   
-	::: moniker range="vsts || >= tfs-2017 <= tfs-2018"  
+::: moniker-end   
+::: moniker range="vsts || >= tfs-2017 <= tfs-2018"  
 	<!---**VSTS and TFS 2017, 2018 options:**--> 
 	![VSTS Kanban board, card customization dialog](_img/customize-cards/kanban-board-settings-card-fields-dialog-task.png)
-	::: moniker-end   
-	::: moniker range="tfs-2015"  
+::: moniker-end   
+::: moniker range="tfs-2015"  
 	**TFS 2015.1 options:** 
  
 	<img src="_img/vso-task-board-card-customize.png" alt="Task board, card customization dialog" style="border: 1px solid #C3C3C3;" />  
@@ -191,12 +191,12 @@ You change the way cards display on the task board the same way you change the K
 	**TFS 2015 options:**  
 
 	<img src="_img/ALM_CC_TaskCardOptions.png" alt="Task board, TFS card customization dialog" style="border: 1px solid #C3C3C3;" />  
-	::: moniker-end  
-	::: moniker range="vsts || >= tfs-2015 <= tfs-2018"  
+::: moniker-end  
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"  
 3.	Repeat this step for each WIT you want to change. Don't be surprised if the options change when you click on a different WIT. For example, Show Remaining Work only applies to tasks and perhaps bugs, but not to PBIs or requirements.  
 
 4.	To add a field to a card, click the add field icon to select a field from the drop-down menu. 
-	::: moniker-end  
+::: moniker-end  
 
 ::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 <a id="style-rule">  </a>
@@ -215,13 +215,15 @@ You change the way cards display on the task board the same way you change the K
 	- All clauses are considered AND clauses, grouping clauses isn't supported  
 	- Card rules apply to all work items that meet the rule criteria  
 	- Rule color applies to work items based on the order in which rules are listed. If you add more than one style rule, make sure that you move them in the order of most importance. Simply drag them into the order you want them applied.  
-	- You can quickly enable and disable a style rule    
-<br/>
+	- You can quickly enable and disable a style rule     
+
 2.	To highlight work items on the task board, open Styles from the task board Settings and add a styling rule.  
 	Here we add a Stale tasks rule which highlights tasks that haven't changed in the last five days.
 
 	![Task board, Style dialog, example style rule](_img/task-board-card-style-rule-stale-tasks.png)  
+::: moniker-end  
 
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 <a id="color-tags">  </a>
 ## Add color to your tags  
 
@@ -238,7 +240,7 @@ You change the way cards display on the task board the same way you change the K
  
 	If tags don't display on the cards, open Fields and make sure that you've checked Show Tags. 
 
-	::: moniker-end
+::: moniker-end
  
 ::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
 <a id="annotations">  </a>
@@ -260,6 +262,9 @@ As shown in the following examples, the Task and Test annotations indicate that 
 
 To learn more about using these features, see [Add task checklists](../kanban/add-task-checklists.md) and [Add, run, and update inline tests](../kanban/add-run-update-tests.md).  
 
+::: moniker-end
+ 
+::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
 ### Enable or disable an annotation 
 
 1. To open, click the ![gear icon](../_img/icons/team-settings-gear-icon.png) gear icon from your team's Kanban board.  
@@ -274,7 +279,9 @@ To learn more about using these features, see [Add task checklists](../kanban/ad
 
 	The setting you choose applies to all active Kanban boards for your team, i.e., backlog, features, and epics.  
 
-
+::: moniker-end
+ 
+::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
 <a id="tests">  </a>
 ## Configure inline tests
 

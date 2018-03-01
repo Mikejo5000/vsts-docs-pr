@@ -69,6 +69,7 @@ In this topic, you'll learn:
 
 	Tasks that you create from the Kanban board will show up on your sprint task board. Also, tasks that you create from the [sprint backlog](../scrum/sprint-planning.md) or [taskboard](../scrum/task-board.md) will show up within tasks checklists on the Kanban board.  
 ::: moniker-end
+
 ::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 ## Mark a task as done 
 
@@ -78,6 +79,9 @@ When you complete a task, simply click the checkbox to change its status to Done
  
 The State of the work item is updated from To Do to Done for Scrum projects, and from Active to Closed for Agile and CMMI projects.  
 
+::: moniker-end
+
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 ## Expand or collapse the task checklist  
 
 Upon first opening the Kanban board, you'll see an unexpanded view of checklists.
@@ -85,9 +89,10 @@ Upon first opening the Kanban board, you'll see an unexpanded view of checklists
 <img src="_img/kanban-board-first-open-collapsed-checklists.png" alt="Expand task checklist for a work item" style="border: 1px solid #C3C3C3;" /> 
 
 Simply click the task checklist summary to expand a collapsed task checklist. Click the same summary to collapse an expanded checklist. 
-::: moniker-end
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 
+::: moniker-end
+
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 ## Reorder and reparent tasks or reassign them to a sprint
 
 Tasks that you create from the Kanban board are automatically assigned to the sprint/iteration path of the parent work item under which you define them. 
@@ -98,6 +103,9 @@ You can drag a task within a work item to reorder it. Or, you can drag the task 
 
 To reassign a task to a different sprint, you must open the sprint backlog where it's currently defined and then drag it to the new sprint.  
 
+::: moniker-end
+
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 ## Customize the Kanban board 
 To customize or change the layout of the board, see one of these topics. 
 
@@ -108,6 +116,9 @@ To customize or change the layout of the board, see one of these topics.
 * [Split columns](split-columns.md)   
 * [Definition of Done](definition-of-done.md)  
 
+::: moniker-end
+
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 ## Related notes  
 Use your task checklist for lightweight tracking of to-do lists. If you find that you don't use this feature, you can disable it from the [common configurations dialog](../customize/customize-cards.md#annotations). 
 
@@ -118,8 +129,9 @@ In addition, you can:
 - [Add, run, update manual tests](add-run-update-tests.md)
 - [Create a new branch, drive Git development](../backlogs/connect-work-items-to-git-dev-ops.md)
 - [Kanban board controls](kanban-board-controls.md)
+::: moniker-end
 
-
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 ### REST API resources
 To programmatically create tasks, see the [REST API, Work Items reference](https://docs.microsoft.com/en-us/rest/api/vsts/wit/work%20items).
 

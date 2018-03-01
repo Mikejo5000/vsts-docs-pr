@@ -1,6 +1,7 @@
 ---
 title: Add work items
-titleSuffix: VSTS & TFS  
+titleSuffix: VSTS & TFS 
+ms.custom: Add and follow work items 
 description: Add work items to plan and manage a software project using Agile tools, Scrum, or Kanban when connected to a team project in Visual Studio Team Services or Team Foundation Server  
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
@@ -8,7 +9,7 @@ ms.assetid: 9474A25E-A9D8-433D-8370-C94624B4ACD6
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article
-ms.date: 09/28/2017
+ms.date: 03/01/2018
 ---
 
 # Add and follow a work item 
@@ -27,16 +28,19 @@ You add work items to plan and manage your project. You use different types of w
 * You must be a member of a team project. If you don't have a team project yet, create one in an [on-premises TFS](../../accounts/create-team-project.md). If you haven't been added as a team member, [get added now](../../security/add-users-team-project.md). 
 ::: moniker-end
 
+<!---If you don't have a team project yet, create one in [VSTS](../../accounts/set-up-vs.md)or set one up in an [on-premises TFS](../../accounts/create-team-project.md)
+>[!IMPORTANT]   
+><b>Feature availability: </b>The new work item  form is available from VSTS and TFS 2017 and later versions. This topic describes how to track work using the new form. If you don't see the new form, [your admin may need to enable it](../customize/manage-new-form-rollout.md), or if it's enabled, [you may need to switch to use it](../customize/process/new-work-item-experience.md#switch-new). 
+
+-->.
+
 ::: moniker range="vsts || >= tfs-2018"
 
 <a id="define-new-work">  </a>
 ## Add a work item 
-You can start adding work items once you connect to a team project. If you don't have a team project yet, create one in [VSTS](../../accounts/set-up-vs.md)<!---or set one up in an [on-premises TFS](../../accounts/create-team-project.md)-->.
+You can start adding work items once you connect to a team project. 
 
 Here we show how to add work items from the web portal. 
-
->[!IMPORTANT]   
-><b>Feature availability: </b>The new work item  form is available from VSTS and TFS 2017 and later versions. This topic describes how to track work using the new form. If you don't see the new form, [your admin may need to enable it](../customize/manage-new-form-rollout.md), or if it's enabled, [you may need to switch to use it](../customize/process/new-work-item-experience.md#switch-new). 
 
 1.  From the **Work** hub, choose the work item type from the New Work Item list of options. Here, we choose to create a User Story. 
 
@@ -73,11 +77,10 @@ TO BE COMPLETED
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"
-## Add work items to define new work
+## Add work items
 You can start adding work items once you connect to a team project. Here we show how to add work items from the web portal. For additional clients that you can use, see [Clients that support tracking work items](../work-items/about-work-items.md#clients).
 
 1. From a web browser, connect to the team project that you want to work in. For example, the Fabrikam, Inc. team navigates to ```http://fabrikamprime:8080/tfs/DefaultCollection/Fabrikam%20Fiber%20Website/```.  
-	If you haven't been added as a team member, [get added now](../scale/multiple-teams.md#add-team-members).
 
 2. From a team home page, you can choose the type of work item you want to create.  
 
@@ -90,6 +93,10 @@ You can start adding work items once you connect to a team project. Here we show
 	![Product backlog item work item form](_img/work-items-pbi-form.png)  
 
 	You can [add tags to any work item to filter backlogs and queries](../track/add-tags-to-work-items.md).
+
+::: moniker-end
+
+::: moniker range="vsts || >= tfs-2013 <= tfs-2018"
 
 ##Update work items as work progresses
 As work progresses, team members can update the state and reassign it as needed. While the workflow states differ for different work item types, they usually follow a progression from New or Active to Completed or Done. The following image shows the work flow states for a product backlog item. If you want to discard a work item, change the state to Removed.  
@@ -125,17 +132,18 @@ As work progresses, team members can update the state and reassign it as needed.
 Removed work items remain in the data store and can be reactivated by changing the State.  
 
 With each update, changes are recorded in the History field which you can view through the **History** tab.  
-
-![View change history](_img/work-items-view-change-history.png)  
-
-To find work items based on their history, see [History & auditing](../track/history-and-auditing.md).  
- 
 ::: moniker-end
+::: moniker range="vsts || >= tfs-2013 <= tfs-2015"
+![View change history](_img/work-items-view-change-history.png)  
+::: moniker-end
+::: moniker range="vsts || >= tfs-2013 <= tfs-2018"
+To find work items based on their history, see [History & auditing](../track/history-and-auditing.md).  
+::: moniker-end 
 
 ::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
 ## Follow a work item
 
-When you want to track the progress of a single work item, click the ![Follow icon](../_img/icons/follow-icon.png) icon. This signals the system to notify you when changes are made to the work item.  
+When you want to track the progress of a single work item, click the ![Follow icon](../_img/icons/follow-icon.png) icon. This signals the system to notify you when changes are made to the work item.   
 
 <img src="_img/follow-work-item.png" alt="VSTS Work item form, Follow icon control" style="border: 1px solid #CCCCCC;" />  
 
@@ -150,7 +158,7 @@ To stop following changes, click the ![Following icon](../../work/_img/icons/fol
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
 >[!IMPORTANT]
->For on-premises TFS, [you must configure an SMTP sever](../../tfs-server/admin/setup-customize-alerts.md) in order for team members to receive notifications.  
+>To support the Follow feature, [you must configure an SMTP sever](../../tfs-server/admin/setup-customize-alerts.md) in order for team members to receive notifications.  
 
 ::: moniker-end
 
