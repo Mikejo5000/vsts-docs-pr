@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: chcomley
 ms.date: 1/29/2018
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
 # Change number of paid extension users for VSTS
 
