@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: chcomley
 ms.date: 1/29/2018
 ---
+[//]: # (monikerRange: 'vsts')
 
 #  Add backup billing managers for your VSTS account
 
