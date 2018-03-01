@@ -44,7 +44,8 @@ Once you've set up your swimlanes, you can drag items into a swimlane as well as
 You can also focus on a single swimlane by collapsing all other lanes.
 
 <img src="_img/ALM_EW_CollapseLanes.png" alt="Kanban board, Collapsed swimlanes" style="border: 1px solid #C3C3C3;" /> 
-
+::: moniker-end
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"	
 ## Configure swimlanes 
 So, what swimlanes will support your tracking needs?  
 
@@ -57,13 +58,13 @@ Once you've identified one or two, add them to your working Kanban board.
 	If you're not a team admin, [get added as one](../scale/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
 2.	Click ![add icon](../_img/icons/add_icon.png) and enter the name of the swimlane you want to add.  
-	::: moniker-end
-	::: moniker range="vsts || >= tfs-2017 <= tfs-2018"	
+::: moniker-end
+::: moniker range="vsts || >= tfs-2017 <= tfs-2018"	
 	<img src="_img/kanban-board-add-swimlane.png" alt="Kanban board, Add a swimlane" style="border: 1px solid #C3C3C3;" />   
 
 	The default lane appears unlabeled on the Kanban board. You can rename it to anything you like, however, you can't delete it. Also, you can rename it directly from the Kanban board.
- 	::: moniker-end
-	::: moniker range="tfs-2015"
+::: moniker-end
+::: moniker range="tfs-2015"
 	**For TFS 2015.1 and later versions**
 	<img src="_img/kanban-board-add-swimlane.png" alt="Kanban board, Add a swimlane" style="border: 1px solid #C3C3C3;" />   
 
@@ -74,7 +75,7 @@ Once you've identified one or two, add them to your working Kanban board.
 	![Add a swimlane](_img/ALM_SW.AddLane.png)  
 
 	The default lane is automatically renamed to Standard when you add a second lane. You can rename it to anything you like, however, you can't delete it. 
-	::: moniker-end
+::: moniker-end
 
 3.	To reorder your swimlanes, simply grab the lane and move it up or down.
 
@@ -83,7 +84,7 @@ Once you've identified one or two, add them to your working Kanban board.
 4.	If you need to delete a lane, first move all items out of the lane, and then click Delete from the lane's context menu.  
 
 	<img src="_img/ALM_EW_DeleteLane.png" alt="Kanban board, Delete a swimlane" style="border: 2px solid #C3C3C3;" />
-	::: moniker-end
+::: moniker-end
 ::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 ## Related Kanban notes
 

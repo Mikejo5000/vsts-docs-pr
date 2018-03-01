@@ -1,12 +1,14 @@
 ---
-title: Filter Kanban board | VSTS & TFS 
+title: Filter your Kanban board 
+titleSuffix: VSTS & TFS
+ms.custom: Filter guidance
 description: Filter your Kanban board based on work item type, assigned to, iteration or sprint, tags, or parent work items  
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid:  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 11/28/2017
+ms.date: 03/01/2018
 ---
   
 
@@ -15,45 +17,15 @@ ms.date: 11/28/2017
 
 <b>VSTS | TFS 2018 | TFS 2017 | TFS 2015</b>  
 
-<!--- NEEDS UPDATING BASED ON FEATURES UNDER RELEASE  --> 
+::: moniker range="tfs-2013"
+> [!NOTE]   
+> Filtering of the Kanban board is not a supported feature in TFS 2013. Consider upgrading to TFS 2015 or later version. 
+::: moniker-end
+
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 <a id="filter"></a>
 
- 
 Depending on the size of your team and the number of stories in progress, your Kanban board can get a bit crowded. With filtering, you can selectively choose what cards display to focus on what's of interest in the moment. With parent work item filters, you can focus on one or more select features or epics.  
-
-<table>
-<tr>
-<th>Filter options </th>
-<th>TFS 2015 </th>
-<th>VSTS, TFS 2018, TFS 2017 </th>
-</tr>
-
-
-<tr>
-<td align="left">[Filter by keyword and tags](#text-filter)</td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
-</tr>
-
-
-<tr>
-<td align="left">
-[Filter by select field values](#field-filter)
-</td>
-<td>   </td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
-</tr>
-
-<tr>
-<td align="left">
-[Filter by parent work items](#parent-filter)
-</td>
-<td>   </td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
-</tr>
-
-</table>
-
 
 
 <a id="text-filter"></a>
@@ -80,12 +52,17 @@ If you want to filter for a specific work item ID, you must choose to show IDs o
 
 The filter criteria ignores the following characters when the field value starts with the character: ```{, (, [, !, @, #, $, %, ^, &, *, ~, `, ', "```.
 
+::: moniker-end
+
+::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
 
 <a id="field-filter"></a>
 ## Filter your Kanban board using select field values  
 
+<!---
 >[!NOTE]  
 ><b>Feature availability: </b>Filter by select fields is available from VSTS and TFS 2017 and later versions.  
+-->
 
 You can filter by select field values using the Kanban board for your product backlog (Stories, Product Backlog Items, or Requirements) or a portfolio backlog (Features or Epics). 
 
@@ -129,12 +106,9 @@ Here, we choose two features on which to filter the board.
 
 The final board displays just those stories linked as child work items to the selected features.
 
-## Related notes  
-- [Tags](../track/add-tags-to-work-items.md) 
-- [Customize cards](../customize/customize-cards.md)
 
 <a id="filter-logic"></a>
-### Filter logic    
+## Filter logic    
 Cards are filtered based on the assignments made in the following order and logic: 
  
 1. **Assigned to**:  Show all cards that are assigned to user 1 ```OR``` user 2  
@@ -145,7 +119,51 @@ Cards are filtered based on the assignments made in the following order and logi
 	```AND```  
 4.	**Tags**: Show all cards that have tag 1 ```AND``` or ```OR``` tags 2, based on your selection of ```AND | OR```.  
 	```AND```  
-5.	**Parent Work Items**: Show all cards that have Parent Work Item 1 ```OR``` Parent Work Item 2.    
+5.	**Parent Work Items**: Show all cards that have Parent Work Item 1 ```OR``` Parent Work Item 2.   
+
+::: moniker-end
+
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+
+## Related notes  
+- [Tags](../track/add-tags-to-work-items.md) 
+- [Customize cards](../customize/customize-cards.md)
+
+::: moniker-end
+
+<!---
+<table>
+<tr>
+<th>Filter options </th>
+<th>TFS 2015 </th>
+<th>VSTS, TFS 2018, TFS 2017 </th>
+</tr>
 
 
+<tr>
+<td align="left">[Filter by keyword and tags](#text-filter)</td>
+<td>![checkmark](../_img/icons/checkmark.png)</td>
+<td>![checkmark](../_img/icons/checkmark.png)</td>
+</tr>
+
+
+<tr>
+<td align="left">
+[Filter by select field values](#field-filter)
+</td>
+<td>   </td>
+<td>![checkmark](../_img/icons/checkmark.png)</td>
+</tr>
+
+<tr>
+<td align="left">
+[Filter by parent work items](#parent-filter)
+</td>
+<td>   </td>
+<td>![checkmark](../_img/icons/checkmark.png)</td>
+</tr>
+
+</table>
+
+-->
 

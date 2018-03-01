@@ -1,14 +1,15 @@
 ---
-title: Set Kanban board card reordering | VSTS & TFS
-description: Use the Kanban board, process, and tools to plan and track work in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
+title: Set Kanban board card reordering
+titleSuffix: VSTS & TFS
+description: Use the Kanban board, process, and tools to plan and track work in Visual Studio Team Services and Team Foundation Server 
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: BDB9CF5A-D83C-4823-BD53-29D49F797FB4
 monikerRange: vsts || >= tfs-2013 <= tfs-2018
 ms.manager: douge
 ms.author: kaelli
-ms.date: 07/14/2017
---- 
+ms.date: 03/01/2018
+---
 
 
 # Reorder cards  
@@ -23,23 +24,24 @@ ms.date: 07/14/2017
 > [!NOTE]  
 > **Feature availability:** This feature is supported from VSTS or an on-premises TFS 2015.1 or later version.  
 > --> 
-
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 <a id="reorder-cards"></a>
-You can drag any work item to any column or swimlane on the Kanban board. You can even change the order of items as you move a card to a new column.   
+You can drag any work item to any column or swimlane on the Kanban board. You can even change the order of items as you move a card to a new column. (Requires TFS 2015.1 or later version.)  
 
 ![Reorder cards while changing columns](https://i3-vso.sec.s-msft.com/dynimg/IC822185.gif)
 
 > [!TIP]
-> If you work from VSTS and TFS 2015.1 and later versions, you can 
-> [drag-and-drop work items onto a sprint from any backlog or board](../scrum/define-sprints.md). 
+> You can [drag-and-drop work items onto a sprint from any backlog or board](../scrum/define-sprints.md). 
 
 <a id="card-reorder-setting"></a>
 ## Set card reordering team preference  
 
+<!---
 > [!NOTE]  
 > **Feature availability:** This feature is currently supported only from VSTS or to an on-premises application server that's been upgraded to TFS 2015 Update 2 or later version.  
+-->
 
-If you want to preserve the backlog priority when you move a card to a new column, you can change the Kanban board card reordering setting for your team. 
+If you want to preserve the backlog priority when you move a card to a new column, you can change the Kanban board card reordering setting for your team. (Requires TFS 2015.2 or later version.)
 
 1. To open, click the ![gear icon](../_img/icons/team-settings-gear-icon.png) gear icon from your team's Kanban board.  
 
@@ -55,7 +57,7 @@ If you want to preserve the backlog priority when you move a card to a new colum
 <a id="card-reorder-note"></a>
 > [!NOTE]  
 > The last column, typically the Closed or Done column, is always ordered by Closed Date with recently Closed showing at the top. In all other columns, cards are ordered by the backlog order or they are reorder based on the Card reordering setting selected.  
-
+::: moniker-end
 
 
 

@@ -34,7 +34,8 @@ When set, team members can quickly double-check the done criteria.
 If you're just getting started, review [Kanban basics](kanban-basics.md) to get an overview of how to access your board and implement Kanban.
 
 ## Specify the Definition of Done for a column
- 
+ 	::: moniker-end 
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018" 
 1. From your Kanban board, click ![settings icon](../_img/icons/team-settings-gear-icon.png) and as needed, click Columns.  
 
 	<img src="../customize/_img/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 2px solid #C3C3C3;" />
@@ -44,12 +45,12 @@ If you're just getting started, review [Kanban basics](kanban-basics.md) to get 
 2. Open the Definition of Done for the column that applies to the criteria you'll enter. You can specify the Definition of Done for each intermediate column on your team's Kanban board.
 
 3. 	Click a column tab and enter the Definition of Done for that column. Enter text that defines your [team's Definition of Done](#definition-of-done).  
-	::: moniker-end  
-	::: moniker range="vsts || >= tfs-2017 <= tfs-2018"	
+::: moniker-end  
+::: moniker range="vsts || >= tfs-2017 <= tfs-2018"	
 	<!---**VSTS and TFS 2017 and later versions**-->
  	<img src="_img/vso-kanban-board-definition-of-done-no-tags.png" alt="Kanban board, Coding column tab, Definition of done]" style="border: 1px solid #C3C3C3;" />  
-	::: moniker-end  
-	::: moniker range="tfs-2015"  
+::: moniker-end  
+::: moniker range="tfs-2015"  
 	**For TFS 2015.1 and later versions**
 
  	<img src="_img/vso-kanban-board-definition-of-done-no-tags.png" alt="Kanban board, Coding column tab, Definition of done]" style="border: 1px solid #C3C3C3;" />  
@@ -61,8 +62,8 @@ If you're just getting started, review [Kanban basics](kanban-basics.md) to get 
 	Enter text that defines your [team's Definition of Done](#definition-of-done).
 
 	![Definition Text](_img/ALM_DD_DefinitionText.png)
-	::: moniker-end   
-	::: moniker range="vsts || >= tfs-2015 <= tfs-2018"   
+::: moniker-end   
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"   
 4. Team members can quickly check that they have met the criteria by clicking the Information tooltip ![Info Icon](_img/ALM_DD_InfoIcon.png) icon.
 
 
@@ -74,6 +75,5 @@ See these choices for further options to customize the Kanban board:
 - [Add swimlanes, expedite work](expedite-work.md)
 - [Split columns](split-columns.md) 
 - [Customize cards ](../customize/customize-cards.md)
-
 
 ::: moniker-end

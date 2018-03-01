@@ -120,8 +120,7 @@ What rules should you apply to highlight work items? Here are a few examples and
 
 As a first step, you'll see that you can change the card display for each work item type (WIT) that shows up on your Kanban board. 
 
-0. From your Kanban board, click the gear icon to open Settings.   
-	::: moniker-end    
+0. From your Kanban board, click the gear icon to open Settings.      
 	![Kanban board, open card customization](_img/customize-cards/open-config-dialog.png)
 	<!---<img src="_img/kanban-card-customize-open-settings.png" alt="Kanban board, open card customization" style="border: 1px solid #C3C3C3;" /> --> 
 
@@ -132,20 +131,20 @@ As a first step, you'll see that you can change the card display for each work i
 	Here we choose User Story. Your choices will vary based on the following:   
 	- [Process](../work-items/guidance/choose-process.md) used to create your team project 
 	- Whether your team has chosen to [treat bugs like requirements or like tasks](show-bugs-on-backlog.md)  
-	::: moniker-end  
-	::: moniker range="vsts || >= tfs-2017 <= tfs-2018"  
+::: moniker-end  
+::: moniker range="vsts || >= tfs-2017 <= tfs-2018"  
 	<!---**VSTS and TFS 2017, 2018 options:**--> 
 	![VSTS Kanban board, card customization dialog](_img/customize-cards/kanban-board-settings-card-fields-dialog-user-story.png)
-
-	::: moniker range="tfs-2015"  
+::: moniker-end 
+::: moniker range="tfs-2015"  
 	**TFS 2015.1 options:**  
 	![TFS 2015.1 Kanban board, card customization dialog](_img/vso-kanban-card-customize.png)
 
 	**TFS 2015 options:**   
 
 	![Kanban board, card customization dialog](_img/ALM_CC_KBCardOptions.png)
-	::: moniker-end  
-	::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker-end  
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 0. Once you've clicked a WIT, select all the options that you want for that work item type.
 
 	If you want work estimates to show, check the Show Effort, Story Points, Size, or Cost option. Cost corresponds to these fields: Effort ([Scrum](../work-items/guidance/scrum-process.md)), Story Points ([Agile](../work-items/guidance/agile-process.md)), and Size ([CMMI](../work-items/guidance/cmmi-process.md)) field.

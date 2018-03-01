@@ -396,8 +396,6 @@ To learn more, see [Track your test results](../../manual-test/getting-started/t
 
 Configurable widget that shows a consolidated view of the deployment status and test pass rate across multiple environments for a recent set of builds. You configure the widget by specifying a build definition, branch, and linked release definitions. 
 
-To learn more, see [View and manage releases](../../build-release/actions/view-manage-releases.md#release-overview).
-
 ---- 
 ::: moniker-end
 

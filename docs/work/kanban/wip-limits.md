@@ -1,12 +1,14 @@
 ---
-title: Configure WIP limits for Kanban board in VSTS & TFS
+title: Configure WIP limits for Kanban board
+titleSuffix: VSTS & TFS
+ms.custom: Swt WIP limits
 description: Set Work In Progress Limits on the Kanban board and use to improve your Kanban process - Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: d18351c1-e9e1-4c16-869d-e15ca478c748
 ms.manager: douge
 ms.author: kaelli
-ms.date: 10/20/2017
+ms.date: 03/01/2018
 ---
 
 
@@ -106,8 +108,12 @@ Eliminating waste calls for team discussions to identify causes and solutions ac
 
 ##Set WIP limits
 
-With an understanding of how you'll use WIT limits, here's how you set them.  
-1. From your Kanban board, click ![settings icon](../_img/icons/team-settings-gear-icon.png) and as needed, click Columns.  
+With an understanding of how you'll use WIT limits, here's how you set them.
+  
+> [!TIP]    
+> If you haven't yet [mapped your team's work flow to Kanban columns](add-columns.md), do that first. 
+
+1. From your Kanban board, click ![settings icon](../_img/icons/team-settings-gear-icon.png) and as needed, click Columns.     
 
 	<img src="../customize/_img/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 2px solid #C3C3C3;" />
 	
@@ -115,11 +121,19 @@ With an understanding of how you'll use WIT limits, here's how you set them.
 
 	You'll see different column titles and choices based on the following:
 	
-	- You connect to VSTS or an on-premises TFS
 	- The [Process](../work-items/guidance/choose-process.md) you used to create your team project  
 	- Whether your team has chosen to [treat bugs like requirements or like tasks](../customize/show-bugs-on-backlog.md)  
 
-	**VSTS and TFS 2015.1 and later versions**  
+	::: moniker range="vsts || >= tfs-2017 <= tfs-2018"  
+2. Click a column tab to set the WIP limit for that column.  
+
+	<img src="_img/wip-columns-settings.png" alt="Kanban board, Customize columns, default columns, Agile process, set WIP limits" style="border: 1px solid #C3C3C3;" /> 
+
+	Go to [Kanban basics](kanban-basics.md) for information about accessing your Kanban board. And, if you're not a team admin, [get added as one](../scale/add-team-administrator.md). Only team and project admins can customize columns.  
+	::: moniker-end
+
+	::: moniker range="tfs-2015"
+	**TFS 2015.1 and later versions**  
 2. Click a column tab to set the WIP limit for that column.  
 
 	<img src="_img/wip-columns-settings.png" alt="Kanban board, Customize columns, default columns, Agile process, set WIP limits" style="border: 1px solid #C3C3C3;" /> 
@@ -130,9 +144,7 @@ With an understanding of how you'll use WIT limits, here's how you set them.
 	Set the WIP limits for each intermediate column.  
 
 	![Customize WIP limits](_img/WIP_5.png)  
-
-If you haven't yet [mapped your team's work flow to Kanban columns](add-columns.md), do that first. 
-
+	::: moniker-end
 
 <a id="Related notes" />
 
@@ -146,9 +158,3 @@ Here are some additional ways your team can implement Kanban practices and custo
 * [Customize cards](../customize/customize-cards.md)  
 * [Show bugs on backlogs and boards](../customize/show-bugs-on-backlog.md)  
 
-
-<!---
->[!NOTE]  
-><b>Feature availability: </b>If you connect to VSTS, you can [add and configure the Cumulative Flow Diagram (CFD) widget to a team dashboard](../../report/dashboards/cumulative-flow.md).  
-
---> 

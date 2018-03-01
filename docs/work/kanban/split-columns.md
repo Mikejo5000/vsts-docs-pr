@@ -16,7 +16,6 @@ ms.date: 03/01/2018
 <b>VSTS | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013</b> 
 
 
-
 You use your Kanban board to visualize the flow of work, and monitor how items are or aren't progressing. Because each column corresponds to a stage of work, you can quickly see the number of items in progress at any each stage.  
 
 However, a lag often exists between when work gets moved into a column and when work actually starts. To counter that lag and reveal the actual state of work in progress, you can turn on split columns.  
