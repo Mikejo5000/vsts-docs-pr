@@ -14,8 +14,6 @@ ms.topic: get-started-article
 # Create a team project
 
 **VSTS | TFS 2018 | TFS 2017 | TFS 2015 | [Previous versions](https://msdn.microsoft.com/library/ms181477%28v=vs.120%29.aspx)**  
-
-
 >[!NOTE]
 >If you don’t want to manage an on-premises server, you can 
 [sign up for VSTS and create a team project](create-account-msa-or-work-student.md). This topic applies to creating a team project when you have an on-premises Team Foundation Server (TFS) deployed.
@@ -33,7 +31,7 @@ If you have a team project already, and want to start coding an application proj
 
 ## From the web
 
-[//]: # (::: moniker range="vsts")
+[//]: # (::: moniker range= "vsts")
 
 ### VSTS
 
@@ -54,7 +52,7 @@ If you have a team project already, and want to start coding an application proj
 
 [//]: # (::: moniker-end)
 
-[//]: # (::: moniker range=">= tfs-2015 < vsts")
+[//]: # (::: moniker range=">= tfs-2015")
 
 ### TFS
 

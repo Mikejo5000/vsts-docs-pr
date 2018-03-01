@@ -7,6 +7,8 @@ ms.manager: douge
 ms.author: chcomley
 ms.date: 02/27/2018
 ---
+[//]: # (monikerRange: '>= tfs-2015')
+
 # Troubleshoot Visual Studio subscriptions
 
 **VSTS** | **TFS 2017** | **TFS 2015**

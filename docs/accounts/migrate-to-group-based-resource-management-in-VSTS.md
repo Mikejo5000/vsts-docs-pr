@@ -8,8 +8,11 @@ ms.manager: douge
 ms.author: chcomley
 ms.date: 02/28/2018
 ---
+[//]: # (monikerRange: 'vsts')
 
 # Migrate to group-based resource management in VSTS
+
+**VSTS**
 
 All current users in your VSTS account are considered to have resources via “explicit assignment” instead of implicit group assignment. If you would like to start using group-based licensing to manage licenses in your organization, you will need a migration plan to seamlessly replace existing solutions with group-based licensing.
 

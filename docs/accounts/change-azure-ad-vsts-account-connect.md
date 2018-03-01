@@ -9,6 +9,7 @@ ms.author: chcomley
 ms.date: 02/01/2018
 ms.topic: get-started-article
 ---
+[//]: # (monikerRange: 'vsts')
 
 #	Change Azure AD tenant -- connect your VSTS account to the target directory
 

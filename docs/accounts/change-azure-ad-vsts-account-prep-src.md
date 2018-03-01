@@ -9,8 +9,9 @@ ms.author: chcomley
 ms.date: 10/17/2017
 ms.topic: get-started-article
 ---
+[//]: # (monikerRange: 'vsts')
 
-#	Change Azure AD tenant -- prepare source directory
+# Change Azure AD tenant -- prepare source directory
 
 **VSTS**
 

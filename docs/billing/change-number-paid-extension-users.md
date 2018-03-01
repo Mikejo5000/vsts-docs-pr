@@ -14,7 +14,6 @@ ms.date: 1/29/2018
 
 **VSTS** | **TFS 2018** | **TFS 2017** | **TFS 2015**
 
-
 To scale with your team's needs, you can increase or decrease your total number of paid extension users.
 You'll need VSTS 
 [project collection administrator or account owner permissions](../accounts/faq-add-delete-users.md#find-owner). 

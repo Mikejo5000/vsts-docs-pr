@@ -9,6 +9,8 @@ ms.manager: douge
 ms.author: chcomley
 ms.date: 02/28/2018
 ---
+[//]: # (monikerRange: '>= tfs-2015')
+
 # VSTS billing overview
 
 **VSTS**

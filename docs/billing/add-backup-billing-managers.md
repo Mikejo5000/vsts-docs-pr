@@ -14,8 +14,6 @@ ms.date: 1/29/2018
 
 **VSTS**
 
-
-
 To let others manage billing or make purchases through Visual Studio Marketplace for your VSTS account, 
 add **owner** or **contributor** roles to users in the Azure subscription that's linked to your VSTS account.
 

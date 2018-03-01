@@ -9,11 +9,11 @@ ms.author: kaelli
 ms.topic: get-started-article
 ms.date: 10/10/2017
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
-# Get started as a Stakeholder  
+# Get started as a Stakeholder
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
-
 
 With Stakeholder access, you can add and modify work items, approve releases, and view dashboards. You can check project status and provide direction, feedback, feature ideas, and business alignment to a team. 
 
@@ -50,7 +50,9 @@ You might see different work item types in your view based on the process select
 
 >[!NOTE]  
 >A caution icon on a tab indicates values that violate validation rules. You must correct information on that tab in order to save the work item.    
-    
+ 
+[//]: # (::: moniker range=">= tfs-2017")
+   
 #### VSTS, TFS 2017
 
 From the Work hub, choose a work item, for example User Story, from the New Work Item list of options. Click the ![pin icon](../work/_img/icons/pin-icon.png) pin icon to have it show up within the Work hub drop down menu.   
@@ -60,6 +62,10 @@ From the Work hub, choose a work item, for example User Story, from the New Work
 Enter a title and then save the work item. Before you can change the State from its initial default, you must save it.  
 
 <img src="../work/backlogs/_img/add-new-work-item-vsts-user-story.png" alt="Agile process, User story work item form" style="border: 1px solid #CCCCCC;" />
+
+[//]: # (::: moniker-end)
+
+[//]: # (::: moniker range=">= tfs-2015")
 
 #### TFS 2015
 
@@ -80,10 +86,11 @@ Work items you add are automatically scoped to your [team's area and iteration p
 >	
 > For an overview of all three processes, see [Choose a process](../work/work-items/guidance/choose-process.md). 
 
+[//]: # (::: moniker-end)
 
+<a id="check-backlog">  </a>
 
-<a id="check-backlog">  </a> 
-## Check the backlog or add new work  
+## Check the backlog or add new work
 
 Work appears in the backlog in priority order.
 
