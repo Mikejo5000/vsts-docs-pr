@@ -47,7 +47,7 @@ Each form contains a number of controls as shown below and described in [Work it
 <a id="assign-work-items"></a>
 ## Assign work items to a team member
 
-You can only assign a work item to one person at a time. The Assigned To field is person-name field designed to hold an account identity recognizable by the system. By default, the system synchronizes system-defined person-name fields with  Azure Active Directory or Active Directory. These fields include: Activated By, Assigned To, Closed By, Created By, and Resolved By. 
+You can only assign a work item to one person at a time. The Assigned To field is person-name field designed to hold an account identity recognizable by the system. When your system is configured with Azure Active Directory or Active Directory, then the system will synchronize person-name fields with these directories. Person-name fields include Activated By, Assigned To, Closed By, Created By, and Resolved By. 
 
 You can grant access to a team project by adding security groups that you created in AD or AAD or by adding accounts to existing or custom groups defined from the collection setting Security hub. See these topics for more information: 
 
