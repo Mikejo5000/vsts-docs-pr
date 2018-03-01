@@ -16,12 +16,12 @@ ms.date: 03/01/2018
 
 <b>VSTS | TFS 2018 | TFS 2017 | TFS 2015</b>  
 
-[//]: # (::: moniker range="tfs-2013")
+::: moniker range="tfs-2013"
 > [!NOTE]   
 > Card customization is not a supported feature in TFS 2013. Consider upgrading to a later TFS version. 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range="vsts || >= tfs-2015 <= tfs-2018")
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 While many work tracking views show up as lists&mdash;such as your backlogs and queries&mdash;board views display cards. Information rich cards not only provide at-a-glance info of interest to you and your team, they also provide a way for you to update a field without opening the work item. And, with style rules, you can highlight those work items with select colors based on the criteria you set.  
 
 Each card corresponds to a work item which you use to share information, track status, and assign work. 
@@ -46,19 +46,19 @@ In this example, the following customizations have been set for the bug work ite
 </tr>
 </tbody>
 </table>
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 >[!NOTE]
 >You can customize a work item type which is different then customizing the card displayed on the Kanban board or taskboard. You customize a WIT by adding fields, changing the workflow, adding custom rules and more. You can also add custom work item types and custom backlog levels. For details, see [Customize an inheritance process](/vsts/work/customize/inheritance-process-model). 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range=">= tfs-2015 <= tfs-2018")
+::: moniker range=">= tfs-2015 <= tfs-2018"
 >[!NOTE]
 >You can customize a work item type which is different then customizing the card displayed on the Kanban board or taskboard. You customize a WIT by adding fields, changing the workflow, adding custom rules and more. You can also add custom work item types and custom backlog levels. For details, see [Customize the On-premises XML process model](/vsts/work/customize/on-premises-xml-process-model.md). 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range="vsts || >= tfs-2015 <= tfs-2018")
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 You can either increase or simplify the information that displays on your cards. It all depends on what's of interest to your team. Does your team like to refer to work items by their ID? Do they want to see estimates? Do they want to highlight work items according to set criteria? Or, will just the bare bones of title and assignment suffice? 
 
 Your best bet is to show fields on cards based on what your team frequently refers to or updates when using the Kanban and task boards. Also, add fields with information that you can use to filter the board. If you're new to working with these tools, see [Kanban basics](../../Work/kanban/kanban-basics.md) and [Sprint planning](../scrum/sprint-planning.md). 
@@ -111,17 +111,17 @@ What rules should you apply to highlight work items? Here are a few examples and
 |Contains specific tag   | ```Tags Contain RTM``` |
 |Blocked tasks (Scrum process only) | ```Blocked = Yes``` |
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 <a id="kanban-board">  </a>
-[//]: # (::: moniker range="vsts || >= tfs-2015 <= tfs-2018")
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 
 ## Change how cards display on the Kanban board
 
 As a first step, you'll see that you can change the card display for each work item type (WIT) that shows up on your Kanban board. 
 
 0. From your Kanban board, click the gear icon to open Settings.   
-	[//]: # (::: moniker-end)    
+	::: moniker-end    
 	![Kanban board, open card customization](_img/customize-cards/open-config-dialog.png)
 	<!---<img src="_img/kanban-card-customize-open-settings.png" alt="Kanban board, open card customization" style="border: 1px solid #C3C3C3;" /> --> 
 
@@ -132,20 +132,20 @@ As a first step, you'll see that you can change the card display for each work i
 	Here we choose User Story. Your choices will vary based on the following:   
 	- [Process](../work-items/guidance/choose-process.md) used to create your team project 
 	- Whether your team has chosen to [treat bugs like requirements or like tasks](show-bugs-on-backlog.md)  
-	[//]: # (::: moniker-end)  
-	[//]: # (::: moniker range="vsts || >= tfs-2017 <= tfs-2018")  
+	::: moniker-end  
+	::: moniker range="vsts || >= tfs-2017 <= tfs-2018"  
 	<!---**VSTS and TFS 2017, 2018 options:**--> 
 	![VSTS Kanban board, card customization dialog](_img/customize-cards/kanban-board-settings-card-fields-dialog-user-story.png)
 
-	[//]: # (::: moniker range="tfs-2015")  
+	::: moniker range="tfs-2015"  
 	**TFS 2015.1 options:**  
 	![TFS 2015.1 Kanban board, card customization dialog](_img/vso-kanban-card-customize.png)
 
 	**TFS 2015 options:**   
 
 	![Kanban board, card customization dialog](_img/ALM_CC_KBCardOptions.png)
-	[//]: # (::: moniker-end)  
-	[//]: # (::: moniker range="vsts || >= tfs-2015 <= tfs-2018")
+	::: moniker-end  
+	::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 0. Once you've clicked a WIT, select all the options that you want for that work item type.
 
 	If you want work estimates to show, check the Show Effort, Story Points, Size, or Cost option. Cost corresponds to these fields: Effort ([Scrum](../work-items/guidance/scrum-process.md)), Story Points ([Agile](../work-items/guidance/agile-process.md)), and Size ([CMMI](../work-items/guidance/cmmi-process.md)) field.
@@ -163,9 +163,9 @@ As a first step, you'll see that you can change the card display for each work i
 	> [!TIP]    
 	> You can edit a value in a field you add to a card, unless it's a read-only field, such as the Change By and Changed Date fields. You can also customize the cards that appear on the Kanban board for features and epics. You follow similar steps, however you start from the [corresponding portfolio backlog](../backlogs/define-features-epics.md).  
 	
-[//]: # (::: moniker-end)   
+::: moniker-end   
 
-[//]: # (::: moniker range="vsts || >= tfs-2015 <= tfs-2018")
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 <a id="task-board">  </a>
 ## Change how cards display on the task board
 Scrum teams use the task board to burn down work and report on progress during daily standups. Your task board shows cards that correspond to both requirements and tasks. If you want bugs to appear on the task board, change your team settings for [show bugs on the backlogs and boards](show-bugs-on-backlog.md).
@@ -179,12 +179,12 @@ You change the way cards display on the task board the same way you change the K
 	Remember, only [team or project administrators](../scale/add-team-administrator.md) can customize the task board.
 
 2.	Just as before, choose the WIT you want to customize, and then checkmark or select the options you want.   
-	[//]: # (::: moniker-end)   
-	[//]: # (::: moniker range="vsts || >= tfs-2017 <= tfs-2018")  
+	::: moniker-end   
+	::: moniker range="vsts || >= tfs-2017 <= tfs-2018"  
 	<!---**VSTS and TFS 2017, 2018 options:**--> 
 	![VSTS Kanban board, card customization dialog](_img/customize-cards/kanban-board-settings-card-fields-dialog-task.png)
-	[//]: # (::: moniker-end)   
-	[//]: # (::: moniker range="tfs-2015")  
+	::: moniker-end   
+	::: moniker range="tfs-2015"  
 	**TFS 2015.1 options:** 
  
 	<img src="_img/vso-task-board-card-customize.png" alt="Task board, card customization dialog" style="border: 1px solid #C3C3C3;" />  
@@ -192,14 +192,14 @@ You change the way cards display on the task board the same way you change the K
 	**TFS 2015 options:**  
 
 	<img src="_img/ALM_CC_TaskCardOptions.png" alt="Task board, TFS card customization dialog" style="border: 1px solid #C3C3C3;" />  
-	[//]: # (::: moniker-end)  
-	[//]: # (::: moniker range="vsts || >= tfs-2015 <= tfs-2018")  
+	::: moniker-end  
+	::: moniker range="vsts || >= tfs-2015 <= tfs-2018"  
 3.	Repeat this step for each WIT you want to change. Don't be surprised if the options change when you click on a different WIT. For example, Show Remaining Work only applies to tasks and perhaps bugs, but not to PBIs or requirements.  
 
 4.	To add a field to a card, click the add field icon to select a field from the drop-down menu. 
-	[//]: # (::: moniker-end)  
+	::: moniker-end  
 
-[//]: # (::: moniker range="vsts || >= tfs-2015 <= tfs-2018")
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 <a id="style-rule">  </a>
 ## Add style rules to highlight work items with color 
 <!---
@@ -239,9 +239,9 @@ You change the way cards display on the task board the same way you change the K
  
 	If tags don't display on the cards, open Fields and make sure that you've checked Show Tags. 
 
-	[//]: # (::: moniker-end)
+	::: moniker-end
  
-[//]: # (::: moniker range="vsts || >= tfs-2017 <= tfs-2018")
+::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
 <a id="annotations">  </a>
 ## Annotations  
 
@@ -302,9 +302,9 @@ From a card on the Kanban board, you can easily navigate to the underlying test 
 
 <img src="_img/c-cards-navigate-to-test-suite.png" alt="Kanban board, Card, Go to test plan" style="border: 1px solid #C3C3C3;" />  
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range="vsts || >= tfs-2015 <= tfs-2018")
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 ## Related notes
 That's all there is to card customization. See these choices for further options to customize the Kanban and task board:
 
@@ -314,7 +314,7 @@ That's all there is to card customization. See these choices for further options
 *	[Expedite work](../kanban/expedite-work.md)  
 *	[Show bugs on backlogs and boards](show-bugs-on-backlog.md)  
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 
 <!---

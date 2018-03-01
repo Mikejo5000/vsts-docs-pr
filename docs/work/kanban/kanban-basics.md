@@ -13,7 +13,7 @@ ms.date: 10/20/2017
 
 # Kanban basics
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDEÂ [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 To maximize a team's ability to consistently deliver high quality software, Kanban emphasize two main practices. The first, visualize the flow of work, requires you to map your team's workflow stages and configure your Kanban board to match. The second, constrain the amount of work in progress, requires you to set work-in-progress (WIP) limits. You're then ready to track progress on your Kanban board and monitor key metrics to reduce lead or cycle time.  
 
@@ -42,23 +42,23 @@ User stories and bugs correspond to types of work items. You use  [work items](.
 
 
 ##Prerequisites
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 * You must be a member of a team project. If you don't have a team project yet, create one in [VSTS](../../accounts/set-up-vs.md). If you haven't been added as a team member, [get added now](../../accounts/add-account-users-assign-access-levels.md). 
-[//]: # (::: moniker-end)
-[//]: # (::: moniker range=">= tfs-2013 <= tfs-2018")
+::: moniker-end
+::: moniker range=">= tfs-2013 <= tfs-2018"
 * You must be a member of a team project. If you don't have a team project yet, create one in an [on-premises TFS](../../accounts/create-team-project.md). If you haven't been added as a team member, [get added now](../../security/add-users-team-project.md). 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ## Open your Kanban board 
 You open your Kanban board using one of these URLs that connects you to your team project:   
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 **VSTS**:  ```http://AccountName/DefaultCollection/TeamProjectName/_backlogs/board/ ``` 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range=">= tfs-2013 <= tfs-2018")
+::: moniker range=">= tfs-2013 <= tfs-2018"
 **On-premises TFS**:  ```http://ServerName:8080/tfs/DefaultCollection/TeamProjectName/_backlogs/board/```  
-[//]: # (::: moniker-end)
+::: moniker-end
 
 
 ## 1. Map the flow of how your team works
@@ -116,7 +116,7 @@ Here are a few things you can do. See at a glance the estimated size of work for
 <img src="_img/ALM_CC_MoveCard.png" alt="Kanban board, move a card to update status" style="border: 1px solid #C3C3C3;" />   
 
 > [!NOTE]  
-> **Feature availability:** You can [reorder items within a column](../customize/reorder-cards.md#reorder-cards) from VSTS and the web portal for TFS 2015.1 and later versions.   
+> **Feature availability:** You can [reorder items within a column](../customize/reorder-cards.md#reorder-cards) from VSTS and the web portal for TFS 2015.1 and later versions.  Â 
 
 Also, you can quickly update a field or reassign ownership directly from the board.
 
@@ -134,15 +134,15 @@ The CFD shows the count of items in each Kanban column for the past 30 weeks or 
 <img src="_img/ALM_KB_CumulativeFlow.png" alt="Kanban board, cumulative flow diagram" style="border: 1px solid #C3C3C3;" />   
 
 By monitoring these metrics, you can gain insight into how to optimize your processes and minimize lead time. For additional guidance, see [Cumulative Flow](../../report/dashboards/cumulative-flow.md) 
- 
+Â 
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 >[!NOTE]  
 ><b>Feature availability: </b>From VSTS, you can also add the [Cumulative Flow Diagram (CFD)](../../report/dashboards/cumulative-flow.md), [Lead Time and Cycle Time](../../report/dashboards/cycle-time-and-lead-time.md), and [Velocity](../../report/dashboards/velocity-chart-data-store.md) widgets to a team dashboard.  
 
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ## Try this next
 

@@ -68,7 +68,7 @@ Iterations do not enforce any rules. For example, you can assign a task to an it
 
 The **Area Path** and **Iteration Path** fields, [data type=TreePath](reference/define-modify-work-item-fields.md), consist of multiple node items which are separated by the backslash (&#92;) character. We recommend that you minimize the names of nodes, and make sure that you conform to the following restrictions when adding child nodes:
 
-> [!div class="mx-tdCol2BreakAll"]  
+> [!div class="mx-tdCol2BreakAll"]Â Â 
 > | Restriction type                 | Restriction                                 | 
 > | -------------------------------- | ------------------------------------------- | 
 > | Node length | Must not contain more than 255 characters | 
@@ -98,7 +98,7 @@ To create or modify areas or iterations, you must either be a member of the **Pr
 
 You can't export the structure of tree paths for one team project to use with another team project.  
 
-[//]: # (::: moniker range=">= tfs-2013 <= tfs-2018")
+::: moniker range=">= tfs-2013 <= tfs-2018"
 <a name="field-rules"></a>
 ### Supported field rules  
 
@@ -109,5 +109,5 @@ You can [specify only a small subset of rules](reference/apply-rule-work-item-fi
 ### Team field versus team area path  
 If your organization has several teams that work from a common backlog and across many product areas, you might want to change how teams are configured. By [adding a custom field to represent teams](use-team-fields-instead-area-paths.md) in your organization, you can reconfigure the agile planning tools and pages to support your teams and decouple assignment to teams and area paths. 
 
-[//]: # (::: moniker-end)
+::: moniker-end
  

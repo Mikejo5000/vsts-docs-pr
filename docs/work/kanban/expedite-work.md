@@ -16,7 +16,7 @@ ms.date: 03/01/2018
 
 <b>VSTS | TFS 2018 | TFS 2017 | TFS 2015</b> 
 
-[//]: # (::: moniker range="vsts || >= tfs-2015 <= tfs-2018")
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 Your Kanban board supports your ability to visualize the flow of work as it moves from new to done. When you add swimlanes, you can also visualize the status of work that supports different service-level classes. You can create a swimlane to represent any other dimension that supports your tracking needs.    
 
 For example, you can create three swimlanes&mdash;Expedite, Standard, and Park&mdash;to track high-priority work, standard work, and work that's currently blocked.  
@@ -57,13 +57,13 @@ Once you've identified one or two, add them to your working Kanban board.
 	If you're not a team admin, [get added as one](../scale/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
 2.	Click ![add icon](../_img/icons/add_icon.png) and enter the name of the swimlane you want to add.  
-	[//]: # (::: moniker-end)
-	[//]: # (::: moniker range="vsts || >= tfs-2017 <= tfs-2018")	
+	::: moniker-end
+	::: moniker range="vsts || >= tfs-2017 <= tfs-2018"	
 	<img src="_img/kanban-board-add-swimlane.png" alt="Kanban board, Add a swimlane" style="border: 1px solid #C3C3C3;" />   
 
 	The default lane appears unlabeled on the Kanban board. You can rename it to anything you like, however, you can't delete it. Also, you can rename it directly from the Kanban board.
- 	[//]: # (::: moniker-end)
-	[//]: # (::: moniker range="tfs-2015")
+ 	::: moniker-end
+	::: moniker range="tfs-2015"
 	**For TFS 2015.1 and later versions**
 	<img src="_img/kanban-board-add-swimlane.png" alt="Kanban board, Add a swimlane" style="border: 1px solid #C3C3C3;" />   
 
@@ -74,7 +74,7 @@ Once you've identified one or two, add them to your working Kanban board.
 	![Add a swimlane](_img/ALM_SW.AddLane.png)  
 
 	The default lane is automatically renamed to Standard when you add a second lane. You can rename it to anything you like, however, you can't delete it. 
-	[//]: # (::: moniker-end)
+	::: moniker-end
 
 3.	To reorder your swimlanes, simply grab the lane and move it up or down.
 
@@ -83,8 +83,8 @@ Once you've identified one or two, add them to your working Kanban board.
 4.	If you need to delete a lane, first move all items out of the lane, and then click Delete from the lane's context menu.  
 
 	<img src="_img/ALM_EW_DeleteLane.png" alt="Kanban board, Delete a swimlane" style="border: 2px solid #C3C3C3;" />
-	[//]: # (::: moniker-end)
-[//]: # (::: moniker range="vsts || >= tfs-2015 <= tfs-2018")
+	::: moniker-end
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 ## Related Kanban notes
 
 As you can see, swimlanes provides another way to organize and visualize the flow of work using [Kanban](kanban-basics.md). Here are a few more options you have for customizing the look and feel of your Kanban board.   
@@ -98,14 +98,14 @@ As you can see, swimlanes provides another way to organize and visualize the flo
 
 	
 ### Tracking lane moves  
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range="vsts || >= tfs-2017 <= tfs-2018")	
+::: moniker range="vsts || >= tfs-2017 <= tfs-2018"	
 <!---**VSTS and TFS 2015.1 and later versions**-->
 You can track Kanban board swimlane moves using the [Board Lane field](../track/query-by-workflow-changes.md#kanban_query_fields). 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range="tfs-2015")
+::: moniker range="tfs-2015"
 **For TFS 2015.1 and later versions**
 You can track Kanban board swimlane moves using the [Board Lane field](../track/query-by-workflow-changes.md#kanban_query_fields).  
 
@@ -118,14 +118,14 @@ Similar to the way [column moves are tracked](add-columns.md), swimlane moves ar
 
 For TFS 2015 and earlier versions, you can't [query](../track/using-queries.md) for all items in a particular swimlane. To perform such a query, you'd have to assign a value to a field, such as the Priority field, or [tag](../track/add-tags-to-work-items.md) each item in a similar way.  
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range="vsts || >= tfs-2015 <= tfs-2018")	
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"	
 ###REST API resources
 To programmatically interact with Kanban board and other team settings, see the [REST API, Boards reference](https://docs.microsoft.com/en-us/rest/api/vsts/work/boards).
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range="tfs-2013")
+::: moniker range="tfs-2013"
 > [!NOTE]   
 > Swimlanes is not a supported feature in TFS 2013. Consider upgrading to a later TFS version. 
-[//]: # (::: moniker-end)
+::: moniker-end

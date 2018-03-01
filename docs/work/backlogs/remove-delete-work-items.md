@@ -14,27 +14,27 @@ ms.date: 03/01/2018
 ---
 
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 # Move, change, or delete work items 
 
 [!INCLUDE [temp](../../_shared/banner-vsts-tfs.md)]
 
 Often times you find that someone created a work item of the wrong work item type (WIT) or within an incorrect team project. You can correct these issues for individual work items or bulk modify several work items. You can also remove work items added to your backlog or task board that aren't relevant anymore.  
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range=">= tfs-2013 <= tfs-2018")
+::: moniker range=">= tfs-2013 <= tfs-2018"
 # Delete or restore work items 
 
 [!INCLUDE [temp](../../_shared/banner-vsts-tfs.md)]
 
 You can remove work items added to your backlog or task board that aren't relevant anymore. Simply change the State to Remove, or delete the work item. You can perform  operations on individual work items or bulk modify several work items. 
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 In this topic you'll learn:  
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 > [!div class="checklist"] 
 > * How to change the work item type of one or more work items   
@@ -45,32 +45,32 @@ In this topic you'll learn:
 > * How to permanently delete work items (command-line tool)  
 > * What permissions are required to delete work items and test artifacts    
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range=">= tfs-2015 <= tfs-2018")
+::: moniker range=">= tfs-2015 <= tfs-2018"
 
 > [!div class="checklist"]      
 > * How to remove work items from the backlog by changing the State to Removed     
 > * How to permanently delete work items (command-line tool)  
 > * What permissions are required to delete work items and test artifacts    
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range="tfs-2013")
+::: moniker range="tfs-2013"
 
 > [!div class="checklist"]      
 > * How to remove work items from the backlog by changing the State to Removed     
 > * How to permanently delete work items (command-line tool)  
 > * What permissions are required to delete work items   
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 You only have access to those actions that are supported on your platform and for which you have permissions. If you are a member of the Contributors group (anyone who has been added as a team member) or Project Administrators groups, you have access to the following features. For a simplified view of permissions assigned to built-in groups, see [Permissions and access](../../security/permissions-access.md). 
 
 
 You can access the following actions for which you have permissions. If you are a member of the Contributors group (anyone who has been added as a team member) or Project Administrators groups, you have access to the following features. For a simplified view of permissions assigned to built-in groups, see [Permissions and access](../../security/permissions-access.md). 
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 > [!div class="mx-tdBreakAll"]  
 > |Contributors|Project Administrators|  
@@ -80,10 +80,10 @@ You can access the following actions for which you have permissions. If you are 
 
 You can't change type, move work items, or delete/restore work items whose WITs support test management or that belong to the [Hidden Types Category](../work-items/agile-glossary.md#hidden-types). This includes all work items that track tests&mdash;such as test cases, shared steps, and shared parameters&mdash;code review requests and responses, and feedback requests and responses.   
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 
-[//]: # (::: moniker range=">= tfs-2017 <= tfs-2018")
+::: moniker range=">= tfs-2017 <= tfs-2018"
 
 > [!div class="mx-tdBreakAll"]  
 > |Contributors|Project Administrators|  
@@ -91,9 +91,9 @@ You can't change type, move work items, or delete/restore work items whose WITs 
 > |- [Remove work items (change State)](#remove)<br/>- [Delete work items](#delete)<br/>- [Restore work items](#restore) |- [Permanently delete work items (web portal)](#restore)<br/>- [Permanently delete work items (command-line tool)](#perm-delete)<br/>- [Permanently delete test artifacts](#delete-test)| 
 
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range="tfs-2015")
+::: moniker range="tfs-2015"
 
 > [!div class="mx-tdBreakAll"]  
 > |Contributors|Project Administrators|  
@@ -101,9 +101,9 @@ You can't change type, move work items, or delete/restore work items whose WITs 
 > |- [Remove work items (change State)](#remove)<br/>- [Delete work items](#delete)<br/>- [Restore work items](#restore)|- [Permanently delete work items (web portal)](#restore) <br/>- [Permanently delete work items (command-line tool)](#perm-delete)| 
 
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range="tfs-2013")
+::: moniker range="tfs-2013"
 
 > [!div class="mx-tdBreakAll"]  
 > |Contributors|Project Administrators|  
@@ -111,20 +111,20 @@ You can't change type, move work items, or delete/restore work items whose WITs 
 > |- [Remove work items (change State)](#remove)|- [Permanently delete work items (command-line tool)](#perm-delete)| 
 
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range="vsts || >= tfs-2015 <= tfs-2018")
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 
 >[!TIP]  
 >From the web portal, you can [multi-select several work items](bulk-modify-work-items.md) from a backlog or query results page and perform a bulk update using the associated feature.  To change, move, delete, or restore several work items at the same time, see [Bulk modify work items](bulk-modify-work-items.md). 
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 
 [!INCLUDE [temp](../_shared/image-differences.md)]  
 
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 <a id="change-type"> </a>  
 ## Change the work item type 
@@ -192,7 +192,7 @@ You can only move work items from one team project to another team project withi
   
 	Comments are automatically added to the [Discussion control](../work-items/work-item-form-controls.md#discussion) and an entry is made to the History control. Also, the system automatically resets the State and Reason fields to the default initial values for the work item type that you move.  
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 
 <a id="remove"> </a>  
@@ -207,7 +207,7 @@ By changing the State of a work item to Removed, you effectively remove it from 
 To cause removed items to not show up in queries, you must add a clause that indicates which states you want the query to filter for. 
 
 
-[//]: # (::: moniker range="vsts || >= tfs-2015 <= tfs-2018")
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 
 <a id="delete"> </a> 
 ## Delete work items  
@@ -235,10 +235,10 @@ Deleted work items won't appear in your backlogs, boards, or queries. Deleted it
 
 	Or, you can drag them to the ![Recycle bin](_img/recycle-bin-icon.png) (Recycle bin). You can only access the (Recycle bin) from the Work hub. 
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 <a id="restore"> </a> 
 ## Restore or permanently delete work items   
@@ -260,9 +260,9 @@ To permanently delete work items from the web portal, you must be a member of th
 
 3.	Confirm your selection. 
 	
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range=">= tfs-2015 <= tfs-2018")
+::: moniker range=">= tfs-2015 <= tfs-2018"
 
 ## Restore or permanently delete work items   
 
@@ -310,13 +310,13 @@ Use the ```witadmin destroywi``` command to permanently remove work items from t
 	```witadmin destroywi /collection:http://TFSServerName:8080/tfs/DefaultCollection /id:2003```  
 
 	>[!NOTE] 
-	>**Required permissions:** For TFS 2015.2 or later versions, you must have [Permanently delete work items permission set to Allow](../../security/set-permissions-access-work-tracking.md#move-delete-permissions). For TFS 2015.1 or earlier versions, you must be a member of the Project Administrators group of have Edit project-level information permissions set to Allow.    
+	>**Required permissions:** For TFS 2015.2 or later versions, you must have [Permanently delete work items permission set to Allow](../../security/set-permissions-access-work-tracking.md#move-delete-permissions). For TFS 2015.1 or earlier versions, you must be a member of the Project Administrators group of have Edit project-level information permissions set to Allow.  Â Â 
 
 ---
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range="tfs-2013")
+::: moniker range="tfs-2013"
 
 ## Permanently delete work items
 
@@ -325,7 +325,7 @@ Use the ```witadmin destroywi``` command to permanently remove work items from t
 Use the ```witadmin destroywi``` command to permanently remove work items from the data store. A permanent delete means all information in the WIT data store is deleted and cannot be restored nor reactivated.
 
 >[!NOTE] 
->**Required permissions:** You must be a member of the Project Administrators group of have your **Edit project-level information** permission set to Allow.   
+>**Required permissions:** You must be a member of the Project Administrators group of have your **Edit project-level information** permission set to Allow.  Â 
 
 1. Open a Command Prompt window where the latest version of Visual Studio is installed and enter:  
 
@@ -343,9 +343,9 @@ Use the ```witadmin destroywi``` command to permanently remove work items from t
 
 	```witadmin destroywi /collection:http://TFSServerName:8080/tfs/DefaultCollection /id:2003```  
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range="vsts || >= tfs-2017 <= tfs-2018")
+::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
 
 <a id="delete-test"> </a> 
 ## Delete test artifacts  
@@ -381,7 +381,7 @@ To delete test artifacts, the following restrictions and operations apply:
 	
 	<img src="_img/delete-test-shared-steps-remove-link.png" alt="Delete shared steps from form" style="border: 2px solid #C3C3C3;" />
  
-[//]: # (::: moniker-end)
+::: moniker-end
 
 
 ## Related notes   
@@ -392,7 +392,7 @@ To learn more about managing test artifacts, see:
 - [Create a test plan](../../manual-test/getting-started/create-a-test-plan.md)
 - [Control how long to keep test results](../../manual-test/getting-started/how-long-to-keep-test-results.md) 
 
-[//]: # (::: moniker range="vsts || >= tfs-2015 <= tfs-2018")
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 
 ### Delete and restore actions performed under the hood  
 
@@ -422,16 +422,16 @@ When you restore a work item, the following actions occur:
 - Adds the work item back to the data warehouse/cube similar  
 - Sets the area or iteration path fields to the root node if the previous area path or iteration paths were deleted.   
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range="vsts || >= tfs-2017 <= tfs-2018")
+::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
 
 #### Delete test artifacts
 1.	Removes the deleted test artifact from the test case management (TCM) data store and deletes the underlying work item
 2.	Runs a job to delete all the child items both from the TCM side and the underlying work items. This action may take time (up to a few minutes) depending on the number of artifacts to be deleted. 
 3.	Causes all information in the WIT data store and TCM data store to be deleted and cannot be reactivated nor restored. 
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 
 

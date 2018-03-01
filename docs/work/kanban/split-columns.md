@@ -50,11 +50,11 @@ Split columns provides you even greater insight into how many items sit idle in 
 
 By reviewing the frequency of pile ups and where they occur, your team can adjust their processes to eliminate the bottlenecks. Workflow processes that incur no or very few bottlenecks correspond to perfect flows. No item sits in a queue for any 
 
-[//]: # (::: moniker range="vsts || >= tfs-2013 <= tfs-2018")
+::: moniker range="vsts || >= tfs-2013 <= tfs-2018"
 ##Choose which columns you want to split  
 Now that you understand how your team can use split columns, here's how to turn them on.
-[//]: # (::: moniker-end)   
-[//]: # (::: moniker range="vsts || >= tfs-2017 <= tfs-2018")  
+::: moniker-end   
+::: moniker range="vsts || >= tfs-2017 <= tfs-2018"  
 1. From your Kanban board, click ![settings icon](../_img/icons/team-settings-gear-icon.png) and as needed, click Columns.  
 
 	<img src="../customize/_img/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 2px solid #C3C3C3;" />
@@ -70,9 +70,9 @@ Now that you understand how your team can use split columns, here's how to turn 
 > [!TIP]    
 > You can can filter queries and create charts using the [Board Column Done field](../track/query-by-workflow-changes.md#kanban_query_fields). 
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range="tfs-2015")
+::: moniker range="tfs-2015"
 
 **For TFS 2015.1 and later versions**    
 
@@ -97,14 +97,14 @@ Now that you understand how your team can use split columns, here's how to turn 
 
 	Only split columns where clear hand-offs exist and you want teams to pull the item into the next stage. 
    
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range="tfs-2013") 
+::: moniker range="tfs-2013" 
 Click the column tab that you want to set.   
 ![Customize Kanban board with split columns](_img/kanban-board-configure-split-columns.png)  
 
 Only split columns where clear hand-offs exist and you want teams to pull the item into the next stage.  
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ##Related Kanban notes  
 For more ways to implement Kanban and customize your board:  

@@ -7,8 +7,9 @@ ms.assetid: A38FB217-B259-4DD1-B5BF-D945278493C2
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/19/2018
+monikerRange: ">= tfs-2015"
 ---
-[//]: # (monikerRange: ">= tfs-2015")
+
 
 # Work with release definitions
 
