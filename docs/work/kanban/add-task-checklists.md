@@ -46,7 +46,7 @@ In this topic, you'll learn:
 [//]: # (::: moniker range="vsts || >= tfs-2017 <= tfs-2018")
 	<img src="_img/add-tasks-menu-options-vs-ts.png" alt="Open the context menu of a backlog item to add a task" style="border: 1px solid #C3C3C3;" /> 
 [//]: # (::: moniker-end)
-[//]: # (::: moniker range="= tfs-2015")
+[//]: # (::: moniker range="tfs-2015")
 	<img src="_img/kanban-board-add-task-checklist.png" alt="Open the context menu of a backlog item to add a task" style="border: 1px solid #C3C3C3;" />  
 [//]: # (::: moniker-end)
 

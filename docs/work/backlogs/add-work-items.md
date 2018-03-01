@@ -67,7 +67,7 @@ That's it!
 Create as many work items as you need of the type you need to track the work you want to manage.  
 [//]: # (::: moniker-end)
 
-[//]: # (::: moniker range="= tfs-2017")
+[//]: # (::: moniker range="tfs-2017")
 
 TO BE COMPLETED 
 [//]: # (::: moniker-end)

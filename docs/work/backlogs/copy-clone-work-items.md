@@ -48,7 +48,7 @@ Copy a work item when you want to create another instance of it and optionally c
 [//]: # (::: moniker-end)
 
 
-[//]: # (::: moniker range="= tfs-2017")
+[//]: # (::: moniker range="tfs-2017")
 <!---#### TFS 2017-->
 1. From the web portal, open the work item you want to copy or clone, open the &hellip; context menu, and click **Create copy of work item**.   
 
@@ -59,7 +59,7 @@ Copy a work item when you want to create another instance of it and optionally c
 	<img src="_img/copy-wi-copy-clone-2017-dialogue.png" alt="TFS 2017, web portal, user story work item form, open context menu, click Copy work item " style="border: 1px solid #CCCCCC;" /> 
 [//]: # (::: moniker-end)
 
-[//]: # (::: moniker range="= tfs-2015")
+[//]: # (::: moniker range="tfs-2015")
 <!---#### TFS 2015-->
 1. From the web portal, open the work item you want to copy or clone, and click the copy/clone icon. The copied work item is automatically linked to the original work item through a Related link type.
 
@@ -69,7 +69,7 @@ Copy a work item when you want to create another instance of it and optionally c
 [//]: # (::: moniker-end)
 
 
-[//]: # (::: moniker range="= tfs-2013")
+[//]: # (::: moniker range="tfs-2013")
 <!---#### TFS 2013-->
 
 1. From the web portal, open the work item you want to copy or clone, and click the copy/clone icon. The copied work item is automatically linked to the original work item through a Related link type. 
@@ -112,7 +112,7 @@ With this option, you can copy an HTML formatted table of selected items from ei
 
 [//]: # (::: moniker-end)
 
-[//]: # (::: moniker range="= tfs-2017")
+[//]: # (::: moniker range="tfs-2017")
 <!---#### TFS 2017-->
 
 1. From the web portal, open a backlog or query results page, and [multi-select the work items](bulk-modify-work-items.md#multi-select) you want to copy to the clipboard. 

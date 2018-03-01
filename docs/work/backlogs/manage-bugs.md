@@ -58,7 +58,7 @@ The bug work item form tracks similar information to the one shown for the Scrum
 
 
 
-[//]: # (::: moniker range="= tfs-2017")
+[//]: # (::: moniker range="tfs-2017")
 
 # [New web form](#tab/new-web-form)
 

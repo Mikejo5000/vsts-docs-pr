@@ -94,7 +94,7 @@ To Be Written
 
 <a id="admin-intro-tfs-2017-1" /> 
 
-[//]: # (::: moniker range="= tfs-2017")
+[//]: # (::: moniker range="tfs-2017")
 
 **TFS 2017.1**
 

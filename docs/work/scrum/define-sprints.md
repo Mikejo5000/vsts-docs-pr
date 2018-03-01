@@ -24,13 +24,6 @@ Many teams choose a two or three week cadence. However, you can specify shorter 
 <a id="quick-start-schedule">   </a>
 ## Quick start guide to scheduling sprints
 
-[//]: # (::: moniker range="vsts")
-To Be Written, New Sprints page, New Sprint dialog 
- 
-[//]: # (::: moniker-end)
-
-
-[//]: # (::: moniker range=">= tfs-2013 <= tfs-2018")
 To quickly get started, you can use the default sprints, also referred to as iterations, that were added when your team project was created. Note, you must be a [member of the Project Administrators group](../../security/set-project-collection-level-permissions.md) in order to add sprints and schedule sprint dates. (If you created the team project, you're a member.) 
 
 [!INCLUDE [temp](../_shared/image-differences.md)]
@@ -48,7 +41,6 @@ To quickly get started, you can use the default sprints, also referred to as ite
 
 That's it! You can now start [planning your first sprint](sprint-planning.md). 
 
-[//]: # (::: moniker-end)
 
 Of course, if you have several teams, more complex release and sprint cadences to schedule, or want to create child , or creating child iterations, then you'll need to read further. You define these through the admin context for the team project.  
 
@@ -58,11 +50,9 @@ Of course, if you have several teams, more complex release and sprint cadences t
 <a id="drag-drop-to-sprint">   </a>
 ## Assign work to a sprint using drag-and-drop
 
-<!--- NOTE FEATURE AVAILABILITY --> 
 You can quickly assign work items to a sprint by dragging and dropping them from the product backlog to the sprint. 
 
-<!---
-![Assign work items to a sprint](_img/assign-to-sprint-from-kanban-animated.gif)-->
+![Assign work items to a sprint](_img/assign-to-sprint-from-kanban-animated.gif)--
 
 <a id="schedule">   </a>
 ## Add and schedule new sprints for several teams and release cadences 

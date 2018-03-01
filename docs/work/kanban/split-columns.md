@@ -5,15 +5,16 @@ description: Implement Kanban pull model by dividing each column into Doing and 
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: BD18A2A1-56C4-40F8-983C-012A407AC7BB
-monikerRange: vsts || >= tfs-2015 <= tfs-2018
 ms.manager: douge
 ms.author: kaelli
-ms.date: 10/20/2017
+ms.date: 03/01/2018
 ---
 
 # Split columns
 
-<b>VSTS | TFS 2018 | TFS 2017 | TFS 2015</b> 
+<b>VSTS | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013</b> 
+
+[//]: # (::: moniker range="vsts || >= tfs-2015 <= tfs-2018")
 
 You use your Kanban board to visualize the flow of work, and monitor how items are or aren't progressing. Because each column corresponds to a stage of work, you can quickly see the number of items in progress at any each stage.  
 
@@ -52,35 +53,50 @@ By reviewing the frequency of pile ups and where they occur, your team can adjus
 
 ##Choose which columns you want to split  
 Now that you understand how your team can use split columns, here's how to turn them on.
-
+[//]: # (::: moniker-end)
+[//]: # (::: moniker range="vsts || >= tfs-2017 <= tfs-2018")
 1. From your Kanban board, click ![settings icon](../_img/icons/team-settings-gear-icon.png) and as needed, click Columns.  
 
 	<img src="../customize/_img/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 2px solid #C3C3C3;" />
 	
 	Go to [Kanban basics](kanban-basics.md) to learn how to access your Kanban board. And, if you aren't a team admin, [get added as one](../scale/add-team-administrator.md). Only team and project admins can customize columns.  
 
-	You'll see different column titles and choices based on the following:
-	
-	- You connect to VSTS or an on-premises TFS  
+	You'll see different column titles and choices based on the following:		  
 	- The [Process](../work-items/guidance/choose-process.md) you used to create your team project  
 	- Whether your team has chosen to [treat bugs like requirements or like tasks](../customize/show-bugs-on-backlog.md)  
 
-2.	Select each column that you want to split. Before you split columns, you'll want to have [mapped each stage of your team's process to a Kanban column](add-columns.md). 
+2.	Select each column that you want to split. Before you split columns, you'll want to have [mapped each stage of your team's process to a Kanban column](add-columns.md).
 
-	**VSTS and TFS 2015.1 and later versions**  
+	
+> [!TIP]    
+> You can can filter queries and create charts using the [Board Column Done field](../track/query-by-workflow-changes.md#kanban_query_fields). 
 
-	Click the column tab that you want to set.   
+[//]: # (::: moniker-end)
+[//]: # (::: moniker range="tfs-2015")
+**For TFS 2015.1 and later versions**
+1. From your Kanban board, click ![settings icon](../_img/icons/team-settings-gear-icon.png) and as needed, click Columns.  
 
-	![Kanban board, Customize columns, split columns, Agile process](_img/vso-kanban-split-columns-settings-analyze-no-tags.png)  
+	<img src="../customize/_img/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 2px solid #C3C3C3;" />
+	
+	Go to [Kanban basics](kanban-basics.md) to learn how to access your Kanban board. And, if you aren't a team admin, [get added as one](../scale/add-team-administrator.md). Only team and project admins can customize columns.  
 
-	<blockquote><b>Note:</b> When you connect to VSTS, you can can filter queries and create charts using the [Board Column Done field](../track/query-by-workflow-changes.md#kanban_query_fields).</blockquote>  
+	You'll see different column titles and choices based on the following:		  
+	- The [Process](../work-items/guidance/choose-process.md) you used to create your team project  
+	- Whether your team has chosen to [treat bugs like requirements or like tasks](../customize/show-bugs-on-backlog.md)  
 
-	**TFS 2013, TFS 2015:**   
+2.	Select each column that you want to split. Before you split columns, you'll want to have [mapped each stage of your team's process to a Kanban column](add-columns.md).
+ 
+**For TFS 2015** 
+Click the column tab that you want to set.   
 
+![Kanban board, Customize columns, split columns, Agile process](_img/vso-kanban-split-columns-settings-analyze-no-tags.png)  
+[//]: # (::: moniker-end)
+
+[//]: # (::: moniker range="tfs-2013") 
 	![Customize Kanban board with split columns](_img/kanban-board-configure-split-columns.png)  
 
 	Only split columns where clear hand-offs exist and you want teams to pull the item into the next stage.  
-
+[//]: # (::: moniker-end)
 ##Related Kanban notes  
 For more ways to implement Kanban and customize your board:  
 
@@ -90,3 +106,7 @@ For more ways to implement Kanban and customize your board:
 * [Definition of Done](definition-of-done.md)  
 * [Customize cards](../customize/customize-cards.md)   
 
+[//]: # (::: moniker range="vsts || >= tfs-2015 <= tfs-2018")	
+> [!TIP]    
+> You can can filter queries and create charts using the [Board Column Done field](../track/query-by-workflow-changes.md#kanban_query_fields). 
+[//]: # (::: moniker-end)  
