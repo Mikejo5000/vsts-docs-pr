@@ -9,6 +9,7 @@ ms.author: chcomley
 ms.date: 10/17/2017
 ms.topic: get-started-article
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
 # Create a team project
 
@@ -33,7 +34,9 @@ If you have a team project already, and want to start coding an application proj
 
 ## From the web
 
-# [VSTS](#tab/vsts)
+[//]: # (::: moniker range=">= vsts")
+
+### VSTS
 
 1.  If you're not a member of the Project Collection Administrators Group, [get added as one](../security/set-project-collection-level-permissions.md). To create team projects you must have the Create new projects permission set to **Allow**.
 
@@ -50,6 +53,9 @@ If you have a team project already, and want to start coding an application proj
 
     ![Create Team Project VSTS](_img/create-team-project/clickcreatevsts.png)
 
+[//]: # (::: moniker-end)
+
+[//]: # (::: moniker range=">= tfs-2015")
 
 # [TFS](#tab/tfs) 
 
@@ -72,7 +78,7 @@ If you're using TFS 2015 Update 2 or later then you can create a team project fr
 
     ![Create team project dialog](_img/create-team-project/clickcreatetfs.png)
 
----
+[//]: # (::: moniker-end)
 
 ## From Team Explorer
 You can create a team project from Team Explorer after you have connected to an on-premises server. 
