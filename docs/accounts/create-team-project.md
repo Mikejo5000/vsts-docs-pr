@@ -33,7 +33,7 @@ If you have a team project already, and want to start coding an application proj
 
 ## From the web
 
-[//]: # (::: moniker range=">= vsts")
+[//]: # (::: moniker range="vsts")
 
 ### VSTS
 
@@ -54,7 +54,7 @@ If you have a team project already, and want to start coding an application proj
 
 [//]: # (::: moniker-end)
 
-[//]: # (::: moniker range=">= tfs-2015")
+[//]: # (::: moniker range=">= tfs-2015 < vsts")
 
 ### TFS
 
