@@ -53,8 +53,8 @@ By reviewing the frequency of pile ups and where they occur, your team can adjus
 [//]: # (::: moniker range="vsts || >= tfs-2013 <= tfs-2018")
 ##Choose which columns you want to split  
 Now that you understand how your team can use split columns, here's how to turn them on.
-
-[//]: # (::: moniker range="vsts || >= tfs-2017 <= tfs-2018")
+[//]: # (::: moniker-end)   
+[//]: # (::: moniker range="vsts || >= tfs-2017 <= tfs-2018")  
 1. From your Kanban board, click ![settings icon](../_img/icons/team-settings-gear-icon.png) and as needed, click Columns.  
 
 	<img src="../customize/_img/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 2px solid #C3C3C3;" />
