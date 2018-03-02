@@ -52,17 +52,17 @@ By reviewing the frequency of pile ups and where they occur, your team can adjus
 ::: moniker range="vsts || >= tfs-2013 <= tfs-2018"
 ##Choose which columns you want to split  
 Now that you understand how your team can use split columns, here's how to turn them on.
+
+> [!TIP]    
+> Before you split columns, you'll want to have [mapped each stage of your team's process to a Kanban column](add-columns.md).
+
 ::: moniker-end   
 ::: moniker range="vsts || >= tfs-2017 <= tfs-2018"  
-1. From your Kanban board, click ![settings icon](../_img/icons/team-settings-gear-icon.png) and as needed, click Columns.  
-
-	<img src="../customize/_img/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 2px solid #C3C3C3;" />
-	
-	Go to [Kanban basics](kanban-basics.md) to learn how to access your Kanban board. And, if you aren't a team admin, [get added as one](../scale/add-team-administrator.md). Only team and project admins can customize columns.  
-
-	You'll see different column titles and choices based on the following:		  
-	- The [Process](../work-items/guidance/choose-process.md) you used to create your team project  
-	- Whether your team has chosen to [treat bugs like requirements or like tasks](../customize/show-bugs-on-backlog.md)  
+1. From your Kanban board, click ![settings icon](../_img/icons/team-settings-gear-icon.png) and as needed, click Columns.   
+	<img src="../customize/_img/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 2px solid #C3C3C3;" />  	
+	Go to [Kanban basics](kanban-basics.md) to learn how to access your Kanban board. And, if you aren't a team admin, [get added as one](../scale/add-team-administrator.md). Only team and project admins can customize columns.
+   
+	You'll see different column titles and choices based on the [process](../work-items/guidance/choose-process.md) used to create your team project  and whether your team has chosen to [treat bugs like requirements or like tasks](../customize/show-bugs-on-backlog.md). 
 
 2.	Select each column that you want to split. Before you split columns, you'll want to have [mapped each stage of your team's process to a Kanban column](add-columns.md).
 	
@@ -73,23 +73,20 @@ Now that you understand how your team can use split columns, here's how to turn 
 
 ::: moniker range="tfs-2015"
 
-**For TFS 2015.1 and later versions**    
-
 1. From your Kanban board, click ![settings icon](../_img/icons/team-settings-gear-icon.png) and as needed, click Columns.    
 
 	<img src="../customize/_img/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 2px solid #C3C3C3;" />
 	
 	Go to [Kanban basics](kanban-basics.md) to learn how to access your Kanban board. And, if you aren't a team admin, [get added as one](../scale/add-team-administrator.md). Only team and project admins can customize columns.  
 
-	You'll see different column titles and choices based on the following:		  
-	- The [Process](../work-items/guidance/choose-process.md) you used to create your team project  
-	- Whether your team has chosen to [treat bugs like requirements or like tasks](../customize/show-bugs-on-backlog.md)  
+	You'll see different column titles and choices based on the [process](../work-items/guidance/choose-process.md) used to create your team project  and whether your team has chosen to [treat bugs like requirements or like tasks](../customize/show-bugs-on-backlog.md).  
 
-2.	Select each column that you want to split. Before you split columns, you'll want to have [mapped each stage of your team's process to a Kanban column](add-columns.md).
+2.	Select each column that you want to split. 
  
+	**For TFS 2015.1 and later versions**      
 	![Kanban board, Customize columns, split columns, Agile process](_img/vso-kanban-split-columns-settings-analyze-no-tags.png)
 
-	**For TFS 2015** 
+	**For TFS 2015**   
 	Click the column tab that you want to set.   
 
 	![Customize Kanban board with split columns](_img/kanban-board-configure-split-columns.png)  

@@ -62,7 +62,6 @@ Our example dev team came up with these stages as essential to their process:
 * **Test**: Perform exploratory, automated, integration, and other tests
 * **Done**: Item ready to handoff to production.  
 
-
 You can always revisit these initial stages later and adjust. 
 
 Another idea, capture the list of items your team identifies as critical-to-complete for each stage. You can use that later to fill out the [Definition of Done](http://msdn.microsoft.com/library/dn914589.aspx) for each column. 

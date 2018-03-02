@@ -68,7 +68,6 @@ By monitoring your Kanban board over time, you can learn where bottlenecks occur
 The free eBook, [Kanban and Scrum - making the most of both](http://www.infoq.com/minibooks/kanban-scrum-minibook), provides this guidance:
 
 *Too low WIP limit => idle people => bad productivity*
-
 *Too high WIP limit => idle tasks => bad lead time* 
 
 Taking periodic snapshots of your Kanban board can visually catalog where work flows smoothly and where bottlenecks appear.
@@ -77,14 +76,10 @@ Taking periodic snapshots of your Kanban board can visually catalog where work f
 
 Such snapshots can show your team:
 
-* How many items on average reside within a workflow stage/column
-
-* How many items are being worked versus team members who work within a workflow stage/column
-
-* How many and which items remained in a workflow stage/column for long periods of time
-
-* How many items did the team complete at the end of a one, two, or three week period?
-
+* How many items on average reside within a workflow stage/column  
+* How many items are being worked versus team members who work within a workflow stage/column  
+* How many and which items remained in a workflow stage/column for long periods of time  
+* How many items did the team complete at the end of a one, two, or three week period?  
 
 <a id="Eliminate waste" />
 
@@ -111,7 +106,7 @@ Eliminating waste calls for team discussions to identify causes and solutions ac
 With an understanding of how you'll use WIT limits, here's how you set them.
   
 > [!TIP]    
-> If you haven't yet [mapped your team's work flow to Kanban columns](add-columns.md), do that first. 
+> If you haven't yet [mapped your team's work flow to Kanban columns](add-columns.md), do that first. For information about accessing your Kanban board, see [Kanban basics](kanban-basics.md). 
 
 1. From your Kanban board, click ![settings icon](../_img/icons/team-settings-gear-icon.png) and as needed, click Columns.     
 
@@ -119,32 +114,26 @@ With an understanding of how you'll use WIT limits, here's how you set them.
 	
 	If you're not a team admin, [get added as one](../scale/add-team-administrator.md). Only team and project admins can customize columns.
 
-	You'll see different column titles and choices based on the following:
-	
-	- The [Process](../work-items/guidance/choose-process.md) you used to create your team project  
-	- Whether your team has chosen to [treat bugs like requirements or like tasks](../customize/show-bugs-on-backlog.md)  
+	You'll see different column titles and choices based on the [process](../work-items/guidance/choose-process.md) used to create your team project  and whether your team has chosen to [treat bugs like requirements or like tasks](../customize/show-bugs-on-backlog.md).
 
-	::: moniker range="vsts || >= tfs-2017 <= tfs-2018"  
+::: moniker range="vsts || >= tfs-2017 <= tfs-2018"  
 2. Click a column tab to set the WIP limit for that column.  
 
 	<img src="_img/wip-columns-settings.png" alt="Kanban board, Customize columns, default columns, Agile process, set WIP limits" style="border: 1px solid #C3C3C3;" /> 
 
 	Go to [Kanban basics](kanban-basics.md) for information about accessing your Kanban board. And, if you're not a team admin, [get added as one](../scale/add-team-administrator.md). Only team and project admins can customize columns.  
-	::: moniker-end
+::: moniker-end
+::: moniker range="tfs-2015"
+ 
+2. Click a column tab to set the WIP limit for that column.    
+	**TFS 2015.1 and later versions**   
+	<img src="_img/wip-columns-settings.png" alt="Kanban board, Customize columns, default columns, Agile process, set WIP limits" style="border: 1px solid #C3C3C3;" /> 	
 
-	::: moniker range="tfs-2015"
-	**TFS 2015.1 and later versions**  
-2. Click a column tab to set the WIP limit for that column.  
+	**TFS 2015**     
+	Set the WIP limits for each intermediate column.   
 
-	<img src="_img/wip-columns-settings.png" alt="Kanban board, Customize columns, default columns, Agile process, set WIP limits" style="border: 1px solid #C3C3C3;" /> 
-
-	Go to [Kanban basics](kanban-basics.md) for information about accessing your Kanban board. And, if you're not a team admin, [get added as one](../scale/add-team-administrator.md). Only team and project admins can customize columns.  
-
-	**TFS 2015**   
-	Set the WIP limits for each intermediate column.  
-
-	![Customize WIP limits](_img/WIP_5.png)  
-	::: moniker-end
+	![Customize WIP limits](_img/WIP_5.png)    
+::: moniker-end
 
 <a id="Related notes" />
 
