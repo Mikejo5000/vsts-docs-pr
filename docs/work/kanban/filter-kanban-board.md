@@ -82,7 +82,7 @@ You can filter by select field values using the Kanban board for your product ba
 
 To start filtering, click the ![Kanban filter icon](../_img/icons/kanban-filter-icon.png) Kanban board filter icon. 
 
-<img src="_img/filter-kb-choose-filter.png" alt="Enable kanban field-based filtering" style="border: 1px solid #C3C3C3;" />  
+![Enable kanban field-based filtering](_img/filter/filter-kb-choose-filter.png)
 
 Choose one or more values from the multi-select drop-down menu for each field. The values for these fields are populated  as follows: 
 - **Assigned To**: All users who are currently assigned to work items on the board plus Unassigned  

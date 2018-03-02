@@ -72,7 +72,7 @@ You can only assign a work item to one person at a time. The Assigned To field i
 
 Anyone who has write access to a team project can assign work items to a team member. This includes team members and [stakeholders](../../security/get-started-stakeholder.md).  
 
-**Note the following: **
+**Note the following:**
 - You can assign a work item only to team members recognized by the system, ones that you have added as team members 
 - You can assign a work item to one and only one team member at a time. If work is split across two or more team members, then you should consider creating additional work items that you'll assign to each member responsible for the work to be completed  
 - Over time, the drop-down menu of person-name fields will display most recently selected names

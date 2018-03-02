@@ -128,26 +128,23 @@ As a first step, you'll see that you can change the card display for each work i
 
 0. Select the WIT you want to customize. Different WITs may present different options for customization.   
 
-	Here we choose User Story. Your choices will vary based on the [process](../work-items/guidance/choose-process.md) used to create your team project and whether your team has chosen to [treat bugs like requirements or like tasks](show-bugs-on-backlog.md).
+	Here we choose User Story. Your choices will vary based on the [process](../work-items/guidance/choose-process.md) used to create your team project and whether your team has chosen to [treat bugs like requirements or like tasks](show-bugs-on-backlog.md).     
+::: moniker-end    
+::: moniker range="vsts || >= tfs-2017 <= tfs-2018"     
+<!---**VSTS and TFS 2017, 2018 options:**-->     
+	![VSTS Kanban board, card customization dialog](_img/customize-cards/kanban-board-settings-card-fields-dialog-user-story.png)   
+::: moniker-end   
+::: moniker range="tfs-2015"    
+	**TFS 2015.1 options:**  
   
-::: moniker-end  
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"  
-	<!---**VSTS and TFS 2017, 2018 options:**--> 
-	![VSTS Kanban board, card customization dialog](_img/customize-cards/kanban-board-settings-card-fields-dialog-user-story.png)
+	![TFS 2015.1 Kanban board, card customization dialog](_img/vso-kanban-card-customize.png)  
 
-::: moniker-end 
-::: moniker range="tfs-2015"  
-	**TFS 2015.1 options:**
-  
-	![TFS 2015.1 Kanban board, card customization dialog](_img/vso-kanban-card-customize.png)
+	**TFS 2015 options:**    
 
-	**TFS 2015 options:**   
-
-	![Kanban board, card customization dialog](_img/ALM_CC_KBCardOptions.png)
-
-::: moniker-end  
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018" 
-0. Once you've clicked a WIT, select all the options that you want for that work item type.
+	![Kanban board, card customization dialog](_img/ALM_CC_KBCardOptions.png)  
+::: moniker-end   
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"   
+0. Once you've clicked a WIT, select all the options that you want for that work item type.  
 
 	If you want work estimates to show, check the Show Effort, Story Points, Size, or Cost option. Cost corresponds to these fields: Effort ([Scrum](../work-items/guidance/scrum-process.md)), Story Points ([Agile](../work-items/guidance/agile-process.md)), and Size ([CMMI](../work-items/guidance/cmmi-process.md)) field.
 
@@ -179,28 +176,25 @@ You change the way cards display on the task board the same way you change the K
 
 	Remember, only [team or project administrators](../scale/add-team-administrator.md) can customize the task board.
 
-2.	Just as before, choose the WIT you want to customize, and then checkmark or select the options you want.   
-::: moniker-end   
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"  
-	<!---**VSTS and TFS 2017, 2018 options:**--> 
-	![VSTS Kanban board, card customization dialog](_img/customize-cards/kanban-board-settings-card-fields-dialog-task.png)
-::: moniker-end   
-::: moniker range="tfs-2015"  
-	**TFS 2015.1 options:** 
- 
-	<img src="_img/vso-task-board-card-customize.png" alt="Task board, card customization dialog" style="border: 1px solid #C3C3C3;" />  
-
-	**TFS 2015 options:**  
-
-	<img src="_img/ALM_CC_TaskCardOptions.png" alt="Task board, TFS card customization dialog" style="border: 1px solid #C3C3C3;" />  
-::: moniker-end  
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"  
-3.	Repeat this step for each WIT you want to change. Don't be surprised if the options change when you click on a different WIT. For example, Show Remaining Work only applies to tasks and perhaps bugs, but not to PBIs or requirements.  
+2.	Just as before, choose the WIT you want to customize, and then checkmark or select the options you want.     
+::: moniker-end    
+::: moniker range="vsts || >= tfs-2017 <= tfs-2018"    
+<!---**VSTS and TFS 2017, 2018 options:**--> 
+	![VSTS Kanban board, card customization dialog](_img/customize-cards/kanban-board-settings-card-fields-dialog-task.png)   
+::: moniker-end     
+::: moniker range="tfs-2015"     
+	**TFS 2015.1 options:**     
+	<img src="_img/vso-task-board-card-customize.png" alt="Task board, card customization dialog" style="border: 1px solid #C3C3C3;" />    
+	**TFS 2015 options:**      
+	<img src="_img/ALM_CC_TaskCardOptions.png" alt="Task board, TFS card customization dialog" style="border: 1px solid #C3C3C3;" />      
+::: moniker-end    
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"    
+3.	Repeat this step for each WIT you want to change. Don't be surprised if the options change when you click on a different WIT. For example, Show Remaining Work only applies to tasks and perhaps bugs, but not to PBIs or requirements.   
 
 4.	To add a field to a card, click the add field icon to select a field from the drop-down menu. 
-::: moniker-end  
+::: moniker-end    
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"  
 <a id="style-rule">  </a>
 ## Add style rules to highlight work items with color 
 <!---

@@ -22,17 +22,19 @@ You add work items to plan and manage your project. You use different types of w
 
 ##Prerequisites
 ::: moniker range="vsts"
-* You must be a member of a team project. If you don't have a team project yet, create one in [VSTS](../../accounts/set-up-vs.md). If you haven't been added as a team member, [get added now](../../accounts/add-account-users-assign-access-levels.md). 
+* You must be a member of a team project. If you don't have a team project yet, create one in [VSTS](../../accounts/set-up-vs.md). 
+* If you haven't been added as a team member, [get added now](../../accounts/add-account-users-assign-access-levels.md). 
 ::: moniker-end
 ::: moniker range=">= tfs-2013 <= tfs-2018"
-* You must be a member of a team project. If you don't have a team project yet, create one in an [on-premises TFS](../../accounts/create-team-project.md). If you haven't been added as a team member, [get added now](../../security/add-users-team-project.md). 
+* You must be a member of a team project. If you don't have a team project yet, create one in an [on-premises TFS](../../accounts/create-team-project.md). 
+* If you haven't been added as a team member, [get added now](../../security/add-users-team-project.md). 
 ::: moniker-end
 
-<!---If you don't have a team project yet, create one in [VSTS](../../accounts/set-up-vs.md)or set one up in an [on-premises TFS](../../accounts/create-team-project.md)
+<!---
 >[!IMPORTANT]   
 ><b>Feature availability: </b>The new work item  form is available from VSTS and TFS 2017 and later versions. This topic describes how to track work using the new form. If you don't see the new form, [your admin may need to enable it](../customize/manage-new-form-rollout.md), or if it's enabled, [you may need to switch to use it](../customize/process/new-work-item-experience.md#switch-new). 
 
--->.
+-->
 
 ::: moniker range="vsts || >= tfs-2018"
 
@@ -128,14 +130,17 @@ As work progresses, team members can update the state and reassign it as needed.
 </tbody>
 </table>
 
-
 Removed work items remain in the data store and can be reactivated by changing the State.  
 
 With each update, changes are recorded in the History field which you can view through the **History** tab.  
 ::: moniker-end
+::: moniker range="vsts || >= tfs-2017 <= tfs-2015"
+![View change history](_img/add-work-item-history.png)  
+::: moniker-end
 ::: moniker range="vsts || >= tfs-2013 <= tfs-2015"
 ![View change history](_img/work-items-view-change-history.png)  
 ::: moniker-end
+
 ::: moniker range="vsts || >= tfs-2013 <= tfs-2018"
 To find work items based on their history, see [History & auditing](../track/history-and-auditing.md).  
 ::: moniker-end 
