@@ -1,15 +1,25 @@
 ---
-title: Add built-in charts to a team dashboard in VSTS or TFS
+title: Add built-in charts to a team dashboard
+titleSuffix: VSTS & TFS
 description: Add system-generated charts or query-based charts to a team dashboard  
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
 ms.assetid: 
 ms.manager: douge
 ms.author: kaelli
-ms.date: 11/10/2017
+ms.date: 03/01/2018
 ---
 
 # Add charts to a dashboard
+
+[!INCLUDE [temp](../../_shared/banner-vsts-tfs.md)]
+
+::: moniker range="tfs-2013"
+> [!NOTE]   
+> Adding charts to a dashboard is not a supported feature in TFS 2013 or TFS 2015, instead, you can [pin items to a team homepage](team-dashboard.md).  Consider [upgrading to the latest TFS version](https://www.visualstudio.com/downloads/) to get access to the widget catalog and [multiple team dashboards](dashboards.md).  
+::: moniker-end
+
+<!---
 
 <b>VSTS | TFS 2018 | TFS 2017 | TFS 2015.1-2015.3  </b>  
 
@@ -80,25 +90,26 @@ All charts listed in the following table are available from VSTS and TFS 2017.2 
 1. These charts are configured by the system. You can't edit them. 
 2. These charts are user-configurable.     
  
+-->
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 
+## Prerequistes
 
->[!NOTE]  
->**Required permissions:** You must be a team admin to add a chart to a team dashboard or homepage, or be [granted permissions to manage a dashboard](dashboard-permissions.md). Or, if you're a member of the Project Administrators group, you can add charts to any team's dashboards or home page. 
+You must be a team admin to add a chart to a team dashboard or homepage, or be [granted permissions to manage a dashboard](dashboard-permissions.md). Or, if you're a member of the Project Administrators group, you can add charts to any team's dashboards or home page. 
+::: moniker-end
  
 
-
-
-::: moniker range="vsts || >= tfs-2015.1 <= tfs-2018"
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 
 <a id="build-history"></a>
 ## Add a build history chart
 
->[!NOTE]  
-><b>Feature availability: </b> This chart is supported from VSTS and TFS 2015.1 and later versions. With VSTS and later versions of TFS, you can also add it to a team dashboard from the [widget catalog](widget-catalog.md#build-history-widget).  
-
 Each time a build is run, it logs information about the build, including the run time, errors and warnings, and whether it successfully completed or failed.   
 
-1. Select your [team context](../../settings/switch-team-context.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json) and then open the Build hub to add a build history chart to a team dashboard.   
+>[!NOTE]  
+>You can also add this chart to a team dashboard from the [widget catalog](widget-catalog.md#build-history-widget).  
+
+1. Select your [team context](../../settings/switch-team-context.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json) and then open the Build hub to add a build history chart to a team dashboard. (Requires TFS 2015.1 or later version).  
 
 	![Add a build summary chart to a dashboard](_img/add-chart-build-summary.png)  
 
@@ -113,15 +124,15 @@ Each time a build is run, it logs information about the build, including the run
 ::: moniker-end
 
 
-::: moniker range="vsts || >= tfs-2017.1 <= tfs-2018"
+::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
 
 <a id="release-summary"></a>
 ## Add a release summary chart
 
->[!NOTE]  
-><b>Feature availability: </b> This chart is supported from VSTS and TFS 2017.1 and later versions. You can also add it to a team dashboard from the [widget catalog](widget-catalog.md#release-definition-widget).  
+Each time a release is deployed, it logs information about the release to each of its environments. You can add a release tile to your team dashboard to monitor release progress and gain quick access to each release. (Requires TFS 2017.1 or later versions). 
 
-Each time a release is deployed, it logs information about the release to each of its environments. You can add a release tile to your team dashboard to monitor release progress and gain quick access to each release. 
+>[!NOTE]  
+>You can also add this chart to a team dashboard from the [widget catalog](widget-catalog.md#release-definition-widget).  
 
 1. Select your [team context](../../settings/switch-team-context.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json) and then open the Release hub to add a release definition chart to a team dashboard.   
 
@@ -140,10 +151,10 @@ Each time a release is deployed, it logs information about the release to each o
 <a id="test-result">  </a>  
 ## Add a test status or result chart  
 
->[!NOTE]  
-><b>Feature availability: </b> This feature is supported from VSTS and TFS 2015. From VSTS, you can add a [Chart for test plans widget](widget-catalog.md#chart-test-plan-widget) to a dashboard. 
-
 As you create and run tests, you can track your status by defining [lightweight charts of test plans and test results](../../manual-test/getting-started/track-test-status.md).  
+
+>[!NOTE]  
+>You can also add a [Chart for test plans widget](widget-catalog.md#chart-test-plan-widget) to a dashboard. 
 
 1. Select your [team context](../../settings/switch-team-context.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json), make sure you're a [team admin](../../work/scale/add-team-administrator.md), and if you haven't yet created the dashboard, [do that now](dashboards.md).  
 
@@ -153,17 +164,22 @@ As you create and run tests, you can track your status by defining [lightweight 
 
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2015.2 <= tfs-2018"
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 
 <a id="test-quality"></a>  
 ## Add a test quality trend chart   
 
+You can add trends to the dashboard of the failures and duration of those [tests that were run as part of a build](../../build-release/test/getting-started-with-continuous-testing.md).
+::: moniker-end
+::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
 >[!NOTE]  
-><b>Feature availability: </b> This chart is supported from VSTS and TFS 2015.2 or later versions. From VSTS and TFS 2017 and later versions, you can add a [test result trend chart widget](widget-catalog.md#test-results-widget) to a dashboard. 
+><b>You can also add a [test result trend chart widget](widget-catalog.md#test-results-widget) to a dashboard. 
 
-
-You can add trends to the dashboard of the failures and duration of those [tests that were run as part of a build](../../build-release/test/getting-started-with-continuous-testing.md).  
-
+::: moniker-end
+::: moniker range="tfs-2015"
+Requires TFS 2015.2 or later version. 
+::: moniker-end
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 1. Select your [team context](../../settings/switch-team-context.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json), make sure you're a [team admin](../../work/scale/add-team-administrator.md), and if you haven't yet created the dashboard, [do that now](dashboards.md).  
 
 2. Open a build summary for a build definition to which you've added tests, open the Tests page, and click the bar chart for either Test failures or Test duration.    
@@ -183,11 +199,10 @@ You can add trends to the dashboard of the failures and duration of those [tests
 <a id="work-item-query"></a>
 ## Add a work item query or chart  
 
->[!NOTE]  
-><b>Feature availability: </b> This feature is supported from VSTS or TFS 2015. With VSTS, you can add a [work item query chart widget](widget-catalog.md#build-history-widget) to a team dashboard.  
-
-
 You add work item queries and charts to a dashboard from the Queries page. Queries and charts must be associated with queries under the Shared queries folder.  
+
+>[!NOTE]  
+><b>You can also add a [work item query chart widget](widget-catalog.md#build-history-widget) to a team dashboard.  
 
 1. First, make sure you have selected your team context. Only those dashboards created for a team appear in the context menu for each query or chart. [Switch team context](../../settings/switch-team-context.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json) as needed.  
 
@@ -204,18 +219,20 @@ You add work item queries and charts to a dashboard from the Queries page. Queri
 ::: moniker-end
 
 
-::: moniker range="vsts || > tfs-2015.2 <= tfs-2018"
+::: moniker range="vsts || > tfs-2015 <= tfs-2018"
 <a id="add-to-dashboard">  </a>
 
 ## Add a markdown file to a dashboard  
  
->[!NOTE]  
->**Feature availability:** Adding a Markdown file to a team dashboard is available from VSTS and the web portal for TFS 2015.3 and later versions.
-
 Open the Markdown file defined in your repository and make sure you are in your team context. 
 
 Click **Add to dashboard**, and then choose the team dashboard to add the markdown file to. As you update the Markdown file, changes will automatically appear on the dashboard upon refresh. See [Dashboards](dashboards.md) for more info.  
 
+::: moniker-end
+::: moniker range="tfs-2015"
+Requires TFS 2015.2 or later version. 
+::: moniker-end
+::: moniker range="vsts || > tfs-2015 <= tfs-2018"
 <img src="../../collaborate/_img/markdown-guidance/markdown-add-file-to-dashboard.png" alt="Web portal, Code hub, README file, Add Markdown page to a dashboard" style="border: 2px solid #C3C3C3;" />
 
 ::: moniker-end
@@ -225,30 +242,8 @@ Click **Add to dashboard**, and then choose the team dashboard to add the markdo
 
 There are a number of system-generated charts that you can access from the web portal, but can't add to a dashboard. However, you may find a comparable widget listed in the [widget catalog](widget-catalog.md) that tracks the same or similar data which you can add to the dashboard. These include: 
 
+- [Add Markdown to a dashboard](add-markdown-to-dashboard.md)
 - [Team velocity](../guidance/team-velocity.md)
-- [Sprint burndown chart](../../work/scrum/sprint-burndown.md) (see [Sprint burndown widget](widget-catalog.md#sprint-burndown-widget))
-- [Cumulative flow](../guidance/cumulative-flow.md) (see [CFD widget](widget-catalog.md#cfd-widget))
+- [Sprint burndown chart](../../work/scrum/sprint-burndown.md), see [Sprint burndown widget](widget-catalog.md#sprint-burndown-widget)
+- [Cumulative flow](../guidance/cumulative-flow.md), see [CFD widget](widget-catalog.md#cfd-widget)
 
-<!---
-
-<a id="markdown-widget">  </a>
-## Markdown widgets   
-
-Use these widgets to support your team and stakeholders by adding information such as:  
-- Team goals  
-- Provide links to team backlogs or boards, metrics, or other items located in a network share such as a OneNote, SharePoint site or wiki pages   
-- Important dates or target deadlines  
-
-Here's an example:  
-
-<img src="../../collaborate/_img/markdown-guidance/markdown-widget-configured.png" alt="Web portal, Sample Markdown widget" style="border: 2px solid #C3C3C3;" /> 
-
-
->[!NOTE]  
->Links to documents on file shares using `file://` are not supported on VSTS or TFS 2017.1 and later versions. This restriction has been implemented for security purposes.
->
->For information on how to specify relative links from a Welcome page or Markdown widget, see [Source control relative links](../../collaborate/markdown-guidance.md#relative-links). 
-
-To edit a markdown widget, you must be a team admin or a member of the Project Administrators group. To be added as a team admin, go [here](../../work/scale/add-team-administrator.md). 
-
--->

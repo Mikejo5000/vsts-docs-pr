@@ -1,2 +1,3 @@
 
-![Version selector notice](/vsts/_shared/_img/_img/version-selector-banner-tfs-only.png)
+![NOTE]
+This topic applies to Team Foundation Server. Use the version selector located to the left of the topic title.  

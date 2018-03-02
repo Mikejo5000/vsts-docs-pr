@@ -1,6 +1,6 @@
 ---
 title: View and filter work items 
-titleSuffix: Azure CodeX Public Project
+titleSuffix: VSTS & TFS
 description: View and filter work items using the work items page       
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
@@ -14,9 +14,9 @@ ms.date: 02/20/2018
 
 # View and filter work items  
 
-**Azure CodePlan Public Project**  
+**Public Project**  
 
-When you connect to a public project and the Azure CodePlan app, you're able to view work items defined for that project. If you're a contributor or stakeholder, you can also [add and edit work items](../work/work-items/view-add-work-items.md).  
+When you connect to a public project, you're able to view work items defined for that project. If you're a contributor or stakeholder, you can also [add and edit work items](../work/work-items/view-add-work-items.md).  
 
 
 ## View work items 
@@ -33,7 +33,7 @@ Click the **Wiki** link located in the top navigation bar.  If you don't see the
 
 # [Vertical navigation](#tab/vertical) 
 
-In CodePlan, click the **Work Items** link located in the left navigation pane.
+Click the **Work Items** link located in the left navigation pane.
 
 > [!div class="mx-imgBorder"]
 ![Work items link, vertical navigation](_img/view-work-items-vertical.png) 
@@ -73,7 +73,7 @@ Using the drop-down menu, you can focus on relevant items using one of the three
 You can filter each work item pivot view by typing a keyword or using one or more of the fields provided, such as work item type (Types), State, Area Path, and Tags. The page remembers the filters you set for each pivot, supporting personalized views across all pivots.  
 
 > [!div class="mx-imgBorder"]
-![Work hub, Work Items page, Filter to show Bugs ](../work/work-items/_img/work-items-filter-bug.png)
+![Work hub, Work Items page, Filter to show Bugs ](../work/work-items/_img/view-add/work-items-filter-bug.png)
 
 <a id="sort" />
 ## Sort your view and other View options 
@@ -88,7 +88,7 @@ You can sort your view by one of the column fields that you select from the **Vi
 <tbody valign="top">
 <tr>
 <td>
-![Work hub, Work Items page ](../work/work-items/_img/view-add/work-items-filter-bug.png)
+![Work hub, Work Items page ](../work/work-items/_img/view-add/view-options.png)
 </td>
 <td>
 <ul>
