@@ -51,7 +51,7 @@ Track work and integrate with your code, build, and test environments from the f
 - [Visual Studio](https://www.visualstudio.com/downloads/download-visual-studio-vs.aspx)      
 - [Android Studio](/vsts/java/download-android-studio-plug-in)     
 - [IntelliJ](/vsts/java/download-intellij-plug-in)   
-- [Visual Studio Code](hhttp://java.visualstudio.com/Docs/tools/vscode)   
+- [Visual Studio Code](/vsts/java/vscode-extension)   
  
 To learn how to connect, see [Connect to a team project](connect-team-projects.md).  
 <br/>
