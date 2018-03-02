@@ -36,8 +36,27 @@ Each work item supports tracking data contained in work item fields. Also, it ca
 
 Each form contains a number of controls as shown below and described in [Work item form controls](work-item-form-controls.md). 
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range="vsts || >= tfs-2018"
 ![Work item form to track features or user stories](../backlogs/_img/add-work-item-vsts-user-story-form.png)
+::: moniker-end
+
+::: moniker range="tfs-2017"
+
+The new form and its corresponding features are available from the web portal. The new form is automatically available when you add team projects to a new collection. For existing team projects, an admin is required to [enable the new form](../manage-new-form-rollout.md).
+
+# [New web form](#tab/new-web-form)
+
+The new web form provides a number of experiences not provided with the old web form. To learn more, see [New work item experience](../customize/process/new-work-item-experience.md). 
+
+![Work item form to track features or user stories](../backlogs/_img/add-work-item-vsts-user-story-form.png)
+
+
+# [Old web form](#tab/old-web-form)
+
+![Work item form to track features or user stories](../backlogs/_img/work-item-form-to-track-user-stories.png)
+
+---
+
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"
@@ -47,16 +66,30 @@ Each form contains a number of controls as shown below and described in [Work it
 <a id="assign-work-items"></a>
 ## Assign work items to a team member
 
-You can only assign a work item to one person at a time. The Assigned To field is person-name field designed to hold an account identity recognizable by the system. When your system is configured with Azure Active Directory or Active Directory, then the system will synchronize person-name fields with these directories. Person-name fields include Activated By, Assigned To, Closed By, Created By, and Resolved By. 
+You can only assign a work item to one person at a time. The Assigned To field is person-name field designed to hold an account identity recognizable by the system. Within the work item form, click the Assigned To field to select a team member. Or, you can begin typing the name of a team member to quickly focus your search to a select few. 
+
+![Web work item form, Assign to field](../_shared/_img/assign-work-items.png)  
+
+Anyone who has write access to a team project can assign work items to a team member. This includes team members and [stakeholders](../../security/get-started-stakeholder.md).  
+
+**Note the following: **
+- You can assign a work item only to team members recognized by the system, ones that you have added as team members 
+- You can assign a work item to one and only one team member at a time. If work is split across two or more team members, then you should consider creating additional work items that you'll assign to each member responsible for the work to be completed  
+- Over time, the drop-down menu of person-name fields will display most recently selected names
+- Some drop-down menus that support assignment from the backlog or board pages in the web portal are automatically limited to team members   
+- The system shows the display name and adds the account name when required to disambiguate identical display names  
+- You can assign several work items at once from the backlog or query results, see [Bulk modify work items](../backlogs/bulk-modify-work-items.md) for details. 
+ 
+###Integration with Azure Active Directory or Active Directory
+
+When your system is configured with Azure Active Directory or Active Directory, then the system will synchronize person-name fields with these directories. Person-name fields include Activated By, Assigned To, Closed By, Created By, and Resolved By. 
 
 You can grant access to a team project by adding security groups that you created in AD or AAD or by adding accounts to existing or custom groups defined from the collection setting Security hub. See these topics for more information: 
 
 - [Access with Azure Active Directory (Azure AD)](../../accounts/add-users-to-aad.md) 
 - [Set up groups for use in TFS deployments](../../tfs-server/admin/setup-ad-groups.md).
 
-Anyone who has read-write access to a team project can assign work items to a team member. This includes team members and [stakeholders](../../security/get-started-stakeholder.md).  
  
-
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 
 >[!NOTE]  
@@ -139,23 +172,6 @@ To add team members to a team project, see [TFS team project](../../security/add
 To learn more about user accounts, permissions, and access, see [Security & Identity](../../security/index.md).
 <!--- User names you add are all members of the Project Collection Valid Users group.  Also, these names are automatically synchronized with Azure Active Direct or Active Directory when AAD or AD is configured as part of the account (VSTS) or deployment (TFS).-->   
 
-
-
-## Additional notes on assigning work to a team member
-
-Within the work item form, such as the web form shown, click the Assigned To field to select a team member to assign the work item to. Or, you can begin typing the name of a team member to quickly focus your search to a select few. 
-
-![Web work item form, Assign to field](../_shared/_img/assign-work-items.png)  
-
-Note the following: 
-- You can assign a work item only to team members recognized by the system, ones that you have added as team members 
-- You can assign a work item to one and only one team member at a time. If work is split across two or more team members, then you should consider creating additional work items that you'll assign to each member responsible for the work to be completed  
-- The default list of names available in the drop-down menu for the Assigned To field contains all user accounts added to the system 
-- Some drop-down menus that support assignment from the backlog or board pages in the web portal are automatically limited to team members 
-- Over time, the drop-down menu of person-name fields will display most recently selected names  
-- The system shows the display name and adds the account name when required to disambiguate identical display names  
-- You can assign several work items at once from the backlog or query results, see [Bulk modify work items](../backlogs/bulk-modify-work-items.md) for details. 
- 
 
 <a id="clients"></a>  
 ## Clients that support tracking work items  

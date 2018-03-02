@@ -128,23 +128,25 @@ As a first step, you'll see that you can change the card display for each work i
 
 0. Select the WIT you want to customize. Different WITs may present different options for customization.   
 
-	Here we choose User Story. Your choices will vary based on the following:   
-	- [Process](../work-items/guidance/choose-process.md) used to create your team project 
-	- Whether your team has chosen to [treat bugs like requirements or like tasks](show-bugs-on-backlog.md)  
+	Here we choose User Story. Your choices will vary based on the [process](../work-items/guidance/choose-process.md) used to create your team project and whether your team has chosen to [treat bugs like requirements or like tasks](show-bugs-on-backlog.md).
+  
 ::: moniker-end  
 ::: moniker range="vsts || >= tfs-2017 <= tfs-2018"  
 	<!---**VSTS and TFS 2017, 2018 options:**--> 
 	![VSTS Kanban board, card customization dialog](_img/customize-cards/kanban-board-settings-card-fields-dialog-user-story.png)
+
 ::: moniker-end 
 ::: moniker range="tfs-2015"  
-	**TFS 2015.1 options:**  
+	**TFS 2015.1 options:**
+  
 	![TFS 2015.1 Kanban board, card customization dialog](_img/vso-kanban-card-customize.png)
 
 	**TFS 2015 options:**   
 
 	![Kanban board, card customization dialog](_img/ALM_CC_KBCardOptions.png)
+
 ::: moniker-end  
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018" 
 0. Once you've clicked a WIT, select all the options that you want for that work item type.
 
 	If you want work estimates to show, check the Show Effort, Story Points, Size, or Cost option. Cost corresponds to these fields: Effort ([Scrum](../work-items/guidance/scrum-process.md)), Story Points ([Agile](../work-items/guidance/agile-process.md)), and Size ([CMMI](../work-items/guidance/cmmi-process.md)) field.

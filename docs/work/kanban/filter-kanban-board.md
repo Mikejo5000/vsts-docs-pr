@@ -1,7 +1,7 @@
 ---
 title: Filter your Kanban board 
 titleSuffix: VSTS & TFS
-ms.custom: Filter guidance
+ms.custom: Filter your board
 description: Filter your Kanban board based on work item type, assigned to, iteration or sprint, tags, or parent work items  
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
@@ -26,10 +26,11 @@ ms.date: 03/01/2018
 <a id="filter"></a>
 
 Depending on the size of your team and the number of stories in progress, your Kanban board can get a bit crowded. With filtering, you can selectively choose what cards display to focus on what's of interest in the moment. With parent work item filters, you can focus on one or more select features or epics.  
+::: moniker-end
 
 
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 <a id="text-filter"></a>
-
 ## Filter your Kanban board using keywords and tags 
 
 To filter the Kanban board, first customize the board settings so that the cards display the fields or tags that contain keywords that you want to filter on. Otherwise, the keywords you enter will filter work items based on title.    
@@ -40,13 +41,21 @@ For example, to filter by Assign To, Iteration Path, or Work Item Type&mdash;or 
 
 The filter function displays work items based on any visible/displayed column or field, including tags, based on the keyword that you enter. 
 
-For example, here we filter the backlog to only show items that include 'Web' in any one of the displayed column fields. 
+For example, here we filter the backlog to only show items that include 'Web' in any one of the displayed column fields.  
 
+::: moniker-end
+::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+![Kanban board, Filter using keyword search](../kanban/_img/filter/filter-options-web.png)
+::: moniker-end
+::: moniker range="tfs-2015"
 ![Kanban board, Filter using keyword search](../kanban/_img/filter-kb-filter-text-web.png)
+::: moniker-end
 
+
+::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
 >[!TIP]  
->Type <span style="color:purple; font-family:Courier new; font-size:1.1em; font-weight:bold">f</span> to move your cursor to the filter box. To move the focus up or down within a column, enter the ![Up/Down arrow](../_img/icons/Arrow_Up.png)![ ](../_img/icons/Arrow_Down.png) up/down arrows.    
->For more tips, see [Keyboard shortcuts for VSTS, TFS, and Team Explorer](../../collaborate/keyboard-shortcuts.md).
+>Type **f** to move your cursor to the filter box. To move the focus up or down within a column, enter the ![Up/Down arrow](../_img/icons/Arrow_Up.png)![ ](../_img/icons/Arrow_Down.png) up/down arrows.    
+>For more tips, see [Kanban board keyboard shortcuts](kanban-board-keyboard-shortcuts.md).
  
 If you want to filter for a specific work item ID, you must choose to show IDs on the cards. 
 
@@ -81,15 +90,20 @@ For example, here we filter for all items assigned to Jamal and Raisa.
 
 <img src="../kanban/_img/filter-kb-filters-chosen.png" alt="Kanban board, Filter on assignment field" style="border: 1px solid #C3C3C3;" />  
 
-Filters remain in place until you explicitly clear them by clicking <span style="color:blue">Clear filters</span>.   When you refresh your Kanban board or log in from another browser, filters remain set to your previous values. 
+Filters remain in place until you explicitly clear them by clicking **Clear filters**. When you refresh your Kanban board or log in from another browser, filters remain set to your previous values. 
 
 Once the board is filtered, you can click the filter icon to hide the drop downs and view the applied filters on the board. The filter icon also turns opaque to signify a filtered board.
 
+::: moniker-end
 
+::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
 <a id="parent-filter"></a>
 ## Filter your Kanban board by specifying parent work items
+
+<!---
 >[!NOTE]  
 ><b>Feature availability: </b>The **Filter by parent** feature is available from VSTS and TFS 2017 and later versions.  
+-->
 
 You can use the **Filter by parent** feature to filter by select parent work items using the Kanban board for your product backlog (Stories, Product Backlog Items, or Requirements) or a portfolio backlog (Features).
 
