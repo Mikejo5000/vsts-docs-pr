@@ -142,7 +142,7 @@ First, open the Kanban portal for your team project. Click the **Board** link fr
 
 1. To open, click ![gear icon](../_img/icons/team-settings-gear-icon.png), the gear icon, to open the team settings dialog and then click Columns. 
 
-	<img src="../customize/_img/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 2px solid #C3C3C3;" />
+	![Kanban board, open common configuration settings](../customize/_img/customize-cards/open-config-dialog.png)
 
 	If you're not a team admin, [get added as one](../scale/add-team-administrator.md). Only team and project admins can customize columns. 
 
@@ -341,7 +341,7 @@ In this example two new states have been added, Triaged for bug, and Investigate
 <img src="_img/add-columns-custom-states-mapping.png" alt="Kanban board settings, Columns" style="border: 1px solid #C3C3C3;" />  
 ::: moniker-end
 
-::: moniker range=">= tfs-2013"
+::: moniker range=">= tfs-2013 <= tfs-2015"
 
 In this example, bugs have been added to show on the Kanban board. You need to map the bug state for each column on the Kanban board.  
  

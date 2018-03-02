@@ -53,7 +53,7 @@ If you want to preserve the backlog priority when you move a card to a new colum
 
 1. To open, click the ![gear icon](../_img/icons/team-settings-gear-icon.png) gear icon from your team's Kanban board.  
 
-	<img src="_img/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 1px solid #C3C3C3;" />  
+	![Kanban board, open common configuration settings](_img/customize-cards/open-config-dialog.png)  
 
 	If you're not a team admin, [get added as one](../scale/add-team-administrator.md). Only team and project admins can set team settings.  
 
@@ -72,7 +72,7 @@ If you want to preserve the backlog priority when you move a card to a new colum
 
 1. To open, click the ![gear icon](../_img/icons/team-settings-gear-icon.png) gear icon from your team's Kanban board.  
 
-	<img src="_img/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 1px solid #C3C3C3;" />  
+	![Kanban board, open common configuration settings](_img/customize-cards/open-config-dialog.png)  
 
 	If you're not a team admin, [get added as one](../scale/add-team-administrator.md). Only team and project admins can set team settings.  
 

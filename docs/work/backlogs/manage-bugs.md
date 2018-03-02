@@ -234,16 +234,15 @@ When bugs are treated as tasks, they're often automatically linked to a PBI or u
 Your team should consider fixing all bugs found during a sprint when testing a feature in development.  
 
 <!---
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+
 
 >[!TIP]
 >From VSTS and TFS 2015.1 and later versions, you can 
 >[drag-and-drop work items onto a sprint from any backlog or board](../scrum/define-sprints.md#drag-drop-to-sprint).   
 
-::: moniker-end
+
 
 -->
-
 
 <a id="fix-resolve-close">  </a>
 ## Fix, resolve and close bugs (update status) 
@@ -268,7 +267,22 @@ To verify a fix, a developer or tester should attempt to reproduce the bug and l
 
 When verifying a bug resolution, you may find that the bug was not completely fixed or you may disagree with the resolution. In this case, discuss the bug with the person who resolved it, come to an agreement, and possibly reactivate the bug. If you reactivate a bug, include the reasons for reactivating the bug in the bug description.
 
-[!INCLUDE [temp](../_shared/verify-bug-test-runner.md)]
+::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+
+<a id="verify-bug">  </a>
+###Verify a bug, re-run tests defined for web apps 
+::: moniker-end
+::: moniker range="vsts" 
+Choose the **Verify** option to re-run tests which identified the bug. (Requires TFS 2017.1 or later version.) You can invoke the Verify option from the bug work item form context menu to launch the relevant test case in the web runner. Perform your validation using the web runner and update the bug work item directly within the web runner.
+::: moniker-end
+::: moniker range=">= tfs-2017 <= tfs-2018"
+Choose the **Verify** option to re-run tests which identified the bug. (Requires TFS 2017.1 or later version.) You can invoke the Verify option from the bug work item form context menu to launch the relevant test case in the web runner. Perform your validation using the web runner and update the bug work item directly within the web runner.
+::: moniker-end
+::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+<img src="../_shared/_img/verify-bug-menu-option.png" alt="Bug work item form, Actions menu, Verify option" style="border: 1px solid #C3C3C3;" />  
+ 
+To learn more about running test from the web portal, see [Run tests for web apps](../../manual-test/getting-started/run-manual-tests.md).
+::: moniker-end
 
 <a id="close">  </a>
 ### Close a bug  
@@ -299,7 +313,6 @@ To learn more about queries, charts, and dashboards; see [Create managed queries
 [!INCLUDE [temp](../_shared/customize-work-tracking.md)] 
 
 
-
 ## Try this next
 > [!div class="nextstepaction"]
 > [Triage work items](../track/triage-work-items.md)
@@ -323,9 +336,7 @@ To track your bugs and integrate with other resources available to you, see thes
 - [Run tests for desktop apps](../../manual-test/getting-started/run-manual-tests.md#run-desktop)  
   
 
-
 ::: moniker range="vsts"
-
 
 ### Use the Analytics service to create bug reports
 You can use Power BI to create more complex reports than what you can get from a query. To learn more, see [Connect to VSTS with Power BI Data Connector](../../report/powerbi/data-connector-connect.md). 

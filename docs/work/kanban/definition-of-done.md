@@ -40,7 +40,7 @@ If you're just getting started, review [Kanban basics](kanban-basics.md) to get 
 
 1. From your Kanban board, click ![settings icon](../_img/icons/team-settings-gear-icon.png) and as needed, click Columns.  
 
-	<img src="../customize/_img/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 2px solid #C3C3C3;" />
+	![Kanban board, open common configuration settings](../customize/_img/customize-cards/open-config-dialog.png)
 
 	If you're not a team administrator, [get added as one](../scale/add-team-administrator.md). Only team or project administrators can customize the Kanban board.
 
@@ -48,8 +48,7 @@ If you're just getting started, review [Kanban basics](kanban-basics.md) to get 
 
 3. 	Click a column tab and enter the Definition of Done for that column. Enter text that defines your [team's Definition of Done](#definition-of-done).    
 ::: moniker-end  
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"	  
-<!---**VSTS and TFS 2017 and later versions**-->   
+::: moniker range="vsts || >= tfs-2017 <= tfs-2018"	    
  	<img src="_img/vso-kanban-board-definition-of-done-no-tags.png" alt="Kanban board, Coding column tab, Definition of done]" style="border: 1px solid #C3C3C3;" />    
 ::: moniker-end   
 ::: moniker range="tfs-2015"   

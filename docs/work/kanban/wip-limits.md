@@ -110,7 +110,7 @@ With an understanding of how you'll use WIT limits, here's how you set them.
 
 1. From your Kanban board, click ![settings icon](../_img/icons/team-settings-gear-icon.png) and as needed, click Columns.     
 
-	<img src="../customize/_img/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 2px solid #C3C3C3;" />
+	![Kanban board, open common configuration settings](../customize/_img/customize-cards/open-config-dialog.png)
 	
 	If you're not a team admin, [get added as one](../scale/add-team-administrator.md). Only team and project admins can customize columns.
 
