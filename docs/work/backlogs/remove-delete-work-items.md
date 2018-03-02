@@ -1,7 +1,7 @@
 ---
 title: Move, change, or delete work items
 titleSuffix: VSTS & TFS  
-description: Guide to removing or deleting working items and test artifacts from VSTS and TFS 
+description: Guide to removing or deleting working items and test artifacts in Visual Studio Team Services and Team Foundation Server
 keywords: backlogs
 ms.custom: Move, change, or delete work items
 ms.technology: vs-devops-wit
