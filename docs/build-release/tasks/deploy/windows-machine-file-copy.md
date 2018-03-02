@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: ahomer
 ms.date: 01/19/2018
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
 # Deploy: Windows Machine File Copy
 
@@ -36,6 +37,27 @@ command-line utility built for fast copying of data.
 | **Filter Criteria** | Optional. A list of machine names or tag names that identifies the machines that the task will target. The filter criteria can be:<br />- The name of an <a href="https://azure.microsoft.com/en-gb/documentation/articles/resource-group-overview/">Azure Resource Group</a>.<br />- An output variable from a previous task.<br />- A comma-delimited list of tag names or machine names.<br />Format when using machine names is a comma-separated list of the machine FDQNs or IP addresses.<br />Specify tag names for a filter as {TagName}<strong>:</strong>{Value} Example: `Role:DB;OS:Win8.1` |
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
 
+[//]: # (::: moniker range="vsts")
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: WindowsMachineFileCopy@2
+  inputs:
+    SourcePath:
+    MachineNames:
+    AdminUserName:
+    AdminPassword:
+    TargetPath:
+#   CleanTargetBeforeCopy: false
+#   CopyFilesInParallel: true
+    AdditionalArguments:
+```
+
+[//]: # (::: moniker-end)
+
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->
 
@@ -44,8 +66,7 @@ command-line utility built for fast copying of data.
 Typically this occurs when the specified path cannot be located.
 This may be due to a firewall blocking the necessary ports for file and printer sharing,
 or an invalid path specification. For more details, see
-[Error 53](https://technet.microsoft.com/library/cc940100.aspx) on Technet and
-[Troubleshooting System Error: 53 - Network Path not found errors](http://support.dameware.com/kb/article.aspx?ID=300059) on the Dameware knowledgebase.
+[Error 53](https://technet.microsoft.com/library/cc940100.aspx) on Technet.
 
 [!INCLUDE [qa-agents](../../_shared/qa-agents.md)]
 

@@ -6,7 +6,6 @@ documentationcenter: ''
 author: ahomer
 manager: douge
 editor: ''
-
 ms.assetid: 12F57ADB-49B9-4E21-A346-5EDB1D1EC2F7
 ms.devlang: dotnetcore
 ms.topic: get-started-article
@@ -15,6 +14,7 @@ ms.workload: ''
 ms.date: 01/19/2018
 ms.custom: mvc
 ---
+[//]: # (monikerRange: ">= tfs-2015")
 
 # Define your multi-stage continuous deployment (CD) process
 
@@ -42,8 +42,6 @@ You'll need:
   - [Deploy to an Azure Web App](../apps/cd/deploy-webdeploy-webapps.md)
   - [Build and Deploy to an Azure Web App](../apps/cd/azure/aspnet-core-to-azure-webapp.md)
   - [Deploy to IIS web server on Windows](../apps/cd/deploy-webdeploy-iis-deploygroups.md)
-
-  or see [How to: Work with release definitions](work-with-release-definitions.md).
 
 * Two separate targets where you will deploy the app. These could be virtual machines,
   web servers, on-premises physical deployment groups, or other types of deployment target.

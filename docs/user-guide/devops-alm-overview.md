@@ -51,7 +51,7 @@ Depending on whether you use Git or TFVC as a repo, you can develop your code in
 
 Git is a distributed version control system. Each developer has a copy of the source repository on their dev machine. Developers can commit each set of changes on their dev machine and perform version control operations such as history and compare without a network connection. Branches are lightweight. 
 
-[![Android Studio](_img/overview/code-git-android-studio-1.png)](http://java.visualstudio.com/docs/tools/androidstudio)&#160;&#160;&#160;&#160;&#160;&#160;[![Eclipse](_img/overview/code-git-eclipse-2.png)](../git/share-your-code-in-git-eclipse.md)&#160;&#160;&#160;&#160;&#160;&#160;[![IntelliJ](_img/overview/code-git-intellij-3.png)](http://java.visualstudio.com/docs/tools/intellij)  
+[![Android Studio](_img/overview/code-git-android-studio-1.png)](/vsts/java/download-android-studio-plug-in)&#160;&#160;&#160;&#160;&#160;&#160;[![Eclipse](_img/overview/code-git-eclipse-2.png)](../git/share-your-code-in-git-eclipse.md)&#160;&#160;&#160;&#160;&#160;&#160;[![IntelliJ](_img/overview/code-git-intellij-3.png)](/vsts/java/download-intellij-plug-in)  
 
 <br/>
 [![Visual Studio](_img/overview/code-git-visual-studio.png)](../git/share-your-code-in-git-vs.md)&#160;&#160;&#160;&#160;&#160;&#160;[![Visual Studio Code](_img/overview/code-git-visual-studio-code.png)](https://code.visualstudio.com/docs/editor/versioncontrol)&#160;&#160;&#160;&#160;&#160;&#160;[![Xcode](_img/overview/code-git-xcode.png)](../git/share-your-code-in-git-xcode.md)  
@@ -91,7 +91,7 @@ You also gain access to a [rich set of customization capabilities](../work/custo
 
 Help your team continuously deliver software at a faster pace and with lower risk, while improving efficiency and collaboration between all teams that participate in release processes. Set up continuous integration builds for your app that run with every check in. Multi-platform build agents support Android, iOS, Java, .NET, and other applications. Easily load test your apps and provision test environments. Track when the quality is sufficient to release to the customer.  
 
-[![Build your software](_img/overview/ov-devops-build.png)](../build-release/tasks/index.md)[![Set up continuous testing](_img/overview/ov-devops-test.png)](../build-release/test/set-up-continuous-testing-builds.md)[![Create a release](_img/overview/ov-devops-release.png)](../build-release/actions/create-deploy-releases.md)   
+[![Build your software](_img/overview/ov-devops-build.png)](../build-release/tasks/index.md)[![Set up continuous testing](_img/overview/ov-devops-test.png)](../build-release/test/set-up-continuous-testing-builds.md)[![Create a release](_img/overview/ov-devops-release.png)](../build-release/apps/cd/deploy-webdeploy-webapps.md)   
 
 <!---
 

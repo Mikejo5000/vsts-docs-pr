@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: ahomer
 ms.date: 01/19/2018
 ---
+[//]: # (monikerRange: ">= tfs-2015")
 
 # What is Release Management?
 
@@ -127,11 +128,11 @@ Release Management runs the following steps as part of every deployment:
 
 Simply follow these steps:
 
-1. **[Create a release definition](../../../actions/work-with-release-definitions.md)** that defines the deployment processes and targets.  
+1. **[Deploy your Azure Web App quickly and simply](../../../apps/cd/azure/aspnet-core-to-azure-webapp.md)**
 
-1. **[Create and deploy releases](../../../actions/create-deploy-releases.md)** based on your release definition.
-
-1. **[View and manage your releases](../../../actions/view-manage-releases.md)** using the comprehensive UI and tools.
+1. **[Set up a multi-stage managed release pipeline](../../../actions/define-multistage-release-process.md)**
+    
+1. **[Manage deployments by using approvals and gates](../../../actions/deploy-using-approvals.md)**
 
 ## Related topics
 

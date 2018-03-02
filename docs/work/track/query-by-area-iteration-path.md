@@ -13,7 +13,7 @@ ms.date: 03/06/2018
 
 # Query by area or iteration path 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 The Area Path and Iteration Path are two fields that appear on the work tracking form for all work item types. You define them for a team project&mdash;[area paths](../customize/set-area-paths.md) and [iteration paths](../customize/set-iteration-paths-sprints.md) &mdash;and then select the ones you want to [associate with a team](../scale/set-team-defaults.md). 
 
@@ -22,8 +22,8 @@ To better understand how to work with area and iteration paths, see [About area 
 ## Supported operators and macros 
 When creating queries and specifying the Area Path and Iteration Path fields, you can use the following operators: 
 
-> [!div class="mx-tdBreakAll"]  
-> |Operator     | Use when you want to...  | 
+> [!div class="mx-tdBreakAll"]
+> |Operator     | Use when you want to...| 
 > |-------------|--------------|
 > | **=**           | Specify one, specific area path.  |
 > | **<>**          | Filter out one, specific area path. |
@@ -36,8 +36,8 @@ In addition, you can use the @CurrentIteration macro when filtering on the Itera
 
 In addition to these operators, you can use the following macros when you select the Iteration Path. For examples, see [Query by date or current iteration](query-by-area-iteration-path.md). 
 
-> [!div class="mx-tdBreakAll"]  
-> |Macro   | Use when you want to...  |
+> [!div class="mx-tdBreakAll"]&nbsp;&nbsp; 
+> |Macro   | Use when you want to...&nbsp;&nbsp; |
 > |-------------|--------------|
 > | **@CurrentIteration**        | Specify the current iteration associated with the selected team context.  |
 > | **@CurrentIteration +/- n**  | Filter items based on assignment to a sliding window of sprints associated with the selected team context.  |
@@ -85,7 +85,7 @@ Another way to filter items based on the area path is to use the Node Name. The 
 
 For each field, data path=```TreePath```, reportable type=```Dimension```, index attribute=```True```. 
  
-If you define a path name that is longer than 256 characters, you will not be able to specify it in Microsoft Project. To avoid this problem, define path names of no more than 10 characters, and do not nest nodes more than 14 levels deep.
+If you define a path name that is longer than 256 characters, you will not be able to specify it in Microsoft Project. To avoid this problem, define path names of no more than 10 characters, and do not nest nodes more than 14 levels deep.
 
 You can't apply most field rules to the System.AreaPath and System.IterationPath fields. To learn more, see [Apply a field rule](../customize/reference/apply-rule-work-item-field.md).
 
@@ -118,4 +118,4 @@ For the Hosted XML and On-premises XML process models, you can apply rules to fi
 
 [!INCLUDE [temp](../_shared/rest-apis-queries.md)]
  
-[!INCLUDE [temp](../../_shared/help-support-shared.md)] 
+[!INCLUDE [temp](../../_shared/help-support-shared.md)] 

@@ -62,7 +62,7 @@ This spaces your text better and makes it easier to read.
 </pre>
 
 **Result:**   
-Add lines between your text with the return key      
+Add lines between your text with the Enter key.      
 This spaces your text better and makes it easier to read.
 
 
@@ -200,7 +200,7 @@ When linking to another Markdown page in the same Git or TFVC repository, the li
 [C# language reference](https://msdn.microsoft.com/en-us/library/618ayhy6.aspx)
 
 <a id="link-work-items">  </a>
-## Link to work items from a Wiki page
+### Link to work items from a Wiki page
  
 >[!NOTE]  
 >**Feature availability**: You can use the **#ID** control to link to a work item from within a Wiki page from your VSTS account or TFS 2018.   
@@ -448,7 +448,7 @@ To escape emojis, enclose them using the \` character.
  `:smile:` `:)` `:angry:`
 
 
-## Special characters 
+## Special characters
 
 <table width="650px">
 <tbody valign="top">
