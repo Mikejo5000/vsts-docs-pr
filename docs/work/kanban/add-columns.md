@@ -2,14 +2,14 @@
 title: Add columns to your Kanban board
 titleSuffix: VSTS & TFS
 ms.custom: Add columns
-description: Map your Kanban board to follow the flow of how your team works by adding columns that map to a stage in your process - Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
+description: Map your Kanban board, support your team's work flow in Visual Studio Team Services and Team Foundation Server 
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 8afd3481-6fab-401d-90ff-0dd443da0f0e
 ms.manager: douge
 ms.author: kaelli
-ms.date: 02/16/2018
---- 
+ms.date: 03/01/2018
+---
 
 # Add columns to your Kanban board
 
@@ -202,7 +202,7 @@ First, open the Kanban portal for your team project. Click the **Board** link fr
 
 ::: moniker-end
 
-
+::: moniker range="tfs-2013"
 <!---TFS 2013--> 
 0. To open, click ![gear icon](../_img/icons/team-settings-gear-icon.png), the gear icon, to open Customize Columns.  
 
@@ -288,47 +288,8 @@ First, open the Kanban portal for your team project. Click the **Board** link fr
 -->
 
 
-<a id="when-to-update-the-kanban-column-to-state-mappings"></a>
-## Update Kanban column-to-State mappings
- 
-Another "under the hood" item that impacts Kanban column-to-State mappings is categories. The Kanban board and other Agile tools uses categories to group WITs that they want to treat the same. 
-
-What does this mean for Kanban board users? First, only work items whose WITs belong to the Requirement Category show up on the Kanban board. Second, if you add bugs or other WITs to appear on the Kanban board, you potentially introduce additional workflow states. This means that you may need to adjust the Kanban column-to-State mappings when you perform one of these additional customizations:
-
-* Your team admin chooses to [show bugs on backlogs and boards](../customize/show-bugs-on-backlog.md)  
-* Your project admin [adds WITs to backlogs and boards](../customize/add-wits-to-backlogs-and-boards.md)
-* Your project collection or project admin customizes the workflow for a WIT in the Requirement Category: [VSTS](../customize/process/customize-process-workflow.md) or [TFS](../customize/reference/change-workflow-wit.md)  
-
-For example, if you change the team setting and add bugs to the Requirements Category, the bug WIT will now appear in the Columns dialog. You'll want to make sure that the Kanban column-to-State mappings match what you want. 
-
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
-
-In this example two new states have been added, Triaged for bug, and Investigate for user story. Each needs to be mapped to an existing or new column in order for the Kanban board to display work items assigned to these states.  
-
-<img src="_img/add-columns-custom-states-mapping.png" alt="Kanban board settings, Columns" style="border: 1px solid #C3C3C3;" />  
-::: moniker-end
-
-::: moniker range=">= tfs-2013 <= tfs-2015"
-
-In this example, bugs have been added to show on the Kanban board. You need to map the bug state for each column on the Kanban board.  
- 
-![Kanban column to State mappings with bugs ](_img/ALM_AC_Update.png)
-::: moniker-end
-
-## Related notes
-
-That's about all you need to know about working with Kanban columns. Here are a few more options you have for customizing the look and feel of the board. 
-
-* [Work in Progress limits ](wip-limits.md)  
-* [Add swimlanes, expedite work](expedite-work.md)   
-* [Split columns](split-columns.md)   
-* [Definition of Done](definition-of-done.md)  
-* [Customize cards](../customize/customize-cards.md) 
-* [Cumulative flow diagram](../../report/dashboards/cumulative-flow.md)  
-
-
 <a id="state-mappings" >   </a>
-### Track Kanban column status  
+## Track Kanban column status  
 
 Your Kanban board is one of several tools you have for tracking work. The [query tool](../track/using-queries.md) allows you to list a subset of work items for the purposes of review, triage, update, or chart generation. For example, you can create a query to list all active user stories (specify two clauses: Work Item Type=User Story; State=Active). 
 
@@ -358,6 +319,48 @@ As an item's card moves from one Kanban column to the next, the item's workflow 
 Kanban columns may correspond to an actual workflow state or a pseudo state. For example, Develop, Test, and Verify columns may all map to the Active state. In this case, when you move an item from Develop to Test or from Test to Verify, the item's State doesn't change. 
 
 ::: moniker-end
+
+
+<a id="when-to-update-the-kanban-column-to-state-mappings"></a>
+## Update Kanban column-to-State mappings
+ 
+Another "under the hood" item that impacts Kanban column-to-State mappings is categories. The Kanban board and other Agile tools uses categories to group WITs that they want to treat the same. 
+
+What does this mean for Kanban board users? First, only work items whose WITs belong to the Requirement Category show up on the Kanban board. Second, if you add bugs or other WITs to appear on the Kanban board, you potentially introduce additional workflow states. This means that you may need to adjust the Kanban column-to-State mappings when you perform one of these additional customizations:
+
+* Your team admin chooses to [show bugs on backlogs and boards](../customize/show-bugs-on-backlog.md)  
+* Your project admin [adds WITs to backlogs and boards](../customize/add-wits-to-backlogs-and-boards.md)
+* Your project collection or project admin customizes the workflow for a WIT in the Requirement Category: [VSTS](../customize/process/customize-process-workflow.md) or [TFS](../customize/reference/change-workflow-wit.md)  
+
+For example, if you change the team setting and add bugs to the Requirements Category, the bug WIT will now appear in the Columns dialog. You'll want to make sure that the Kanban column-to-State mappings match what you want. 
+
+::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+
+In this example two new states have been added, Triaged for bug, and Investigate for user story. Each needs to be mapped to an existing or new column in order for the Kanban board to display work items assigned to these states.  
+
+<img src="_img/add-columns-custom-states-mapping.png" alt="Kanban board settings, Columns" style="border: 1px solid #C3C3C3;" />  
+::: moniker-end
+
+::: moniker range=">= tfs-2013 <= tfs-2015"
+
+In this example, bugs have been added to show on the Kanban board. You need to map the bug state for each column on the Kanban board.  
+ 
+![Kanban column to State mappings with bugs ](_img/ALM_AC_Update.png)
+::: moniker-end
+
+
+## Related notes
+
+That's about all you need to know about working with Kanban columns. Here are a few more options you have for customizing the look and feel of the board. 
+
+* [Work in Progress limits ](wip-limits.md)  
+* [Add swimlanes, expedite work](expedite-work.md)   
+* [Split columns](split-columns.md)   
+* [Definition of Done](definition-of-done.md)  
+* [Customize cards](../customize/customize-cards.md) 
+* [Cumulative flow diagram](../../report/dashboards/cumulative-flow.md)  
+
+
 
 ###REST API resources
 To programmatically interact with Kanban board and other team settings, see the [REST API, Boards reference](https://docs.microsoft.com/en-us/rest/api/vsts/work/boards).

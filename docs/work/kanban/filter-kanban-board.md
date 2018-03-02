@@ -31,14 +31,19 @@ Depending on the size of your team and the number of stories in progress, your K
 
 ::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 <a id="text-filter"></a>
-## Filter your Kanban board using keywords and tags 
+## Filter using keywords and tags 
 
 To filter the Kanban board, first customize the board settings so that the cards display the fields or tags that contain keywords that you want to filter on. Otherwise, the keywords you enter will filter work items based on title.    
 
 For example, to filter by Assign To, Iteration Path, or Work Item Type&mdash;or the contents of any other field&mdash;you add those fields to show on the cards. For details, see [Customize cards](../customize/customize-cards.md).  
-
+::: moniker-end
+::: moniker range="vsts || >= tfs-2018"
+![Kanban board, customize card fields](_img/filter/filter-kb-card-field-settings-ts.png)
+::: moniker-end
+::: moniker range=">= tfs-2015 <= tfs-2017"
 ![Kanban board, customize card fields](_img/filter-kb-card-field-settings.png)
-
+::: moniker-end
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 The filter function displays work items based on any visible/displayed column or field, including tags, based on the keyword that you enter. 
 
 For example, here we filter the backlog to only show items that include 'Web' in any one of the displayed column fields.  
@@ -66,7 +71,7 @@ The filter criteria ignores the following characters when the field value starts
 ::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
 
 <a id="field-filter"></a>
-## Filter your Kanban board using select field values  
+## Filter using select field values  
 
 <!---
 >[!NOTE]  
@@ -98,7 +103,7 @@ Once the board is filtered, you can click the filter icon to hide the drop downs
 
 ::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
 <a id="parent-filter"></a>
-## Filter your Kanban board by specifying parent work items
+## Filter by specifying parent work items
 
 <!---
 >[!NOTE]  
@@ -122,7 +127,7 @@ The final board displays just those stories linked as child work items to the se
 
 
 <a id="filter-logic"></a>
-## Filter logic    
+## Kanban board filter logic    
 Cards are filtered based on the assignments made in the following order and logic: 
  
 1. **Assigned to**:  Show all cards that are assigned to user 1 ```OR``` user 2  

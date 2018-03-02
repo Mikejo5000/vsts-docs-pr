@@ -58,31 +58,31 @@ Once you've identified one or two, add them to your working Kanban board.
 
 	If you're not a team admin, [get added as one](../scale/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-2.	Click ![add icon](../_img/icons/add_icon.png) and enter the name of the swimlane you want to add.  
-::: moniker-end
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"	
-	<img src="_img/kanban-board-add-swimlane.png" alt="Kanban board, Add a swimlane" style="border: 1px solid #C3C3C3;" />   
+2.	Click ![add icon](../_img/icons/add_icon.png) and enter the name of the swimlane you want to add.     
+::: moniker-end  
+::: moniker range="vsts || >= tfs-2017 <= tfs-2018"  	
+	<img src="_img/kanban-board-add-swimlane.png" alt="Kanban board, Add a swimlane" style="border: 1px solid #C3C3C3;" />     
 
 	The default lane appears unlabeled on the Kanban board. You can rename it to anything you like, however, you can't delete it. Also, you can rename it directly from the Kanban board.
 ::: moniker-end  
 
 ::: moniker range="tfs-2015"  
-	**For TFS 2015.1 and later versions**     
-	<img src="_img/kanban-board-add-swimlane.png" alt="Kanban board, Add a swimlane" style="border: 1px solid #C3C3C3;" />   
-	The default lane appears unlabeled on the Kanban board. You can rename it to anything you like, however, you can't delete it. Also, you can rename it directly from the Kanban board.  
-	**For TFS 2015**   
-	![Add a swimlane](_img/ALM_SW.AddLane.png)   
-	The default lane is automatically renamed to Standard when you add a second lane. You can rename it to anything you like, however, you can't delete it. 
-::: moniker-end   
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"   
+	**For TFS 2015.1 and later versions**       
+	<img src="_img/kanban-board-add-swimlane.png" alt="Kanban board, Add a swimlane" style="border: 1px solid #C3C3C3;" />     
+	The default lane appears unlabeled on the Kanban board. You can rename it to anything you like, however, you can't delete it. Also, you can rename it directly from the Kanban board.    
+	**For TFS 2015**    
+	![Add a swimlane](_img/ALM_SW.AddLane.png)     
+	The default lane is automatically renamed to Standard when you add a second lane. You can rename it to anything you like, however, you can't delete it.   
+::: moniker-end    
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"     
 3.	To reorder your swimlanes, simply grab the lane and move it up or down.   
-	<img src="_img/ALM_EW_ReorderLanes.png" alt="Kanban board, Open swimlanes" style="border: 2px solid #C3C3C3;" />  
+	<img src="_img/ALM_EW_ReorderLanes.png" alt="Kanban board, Open swimlanes" style="border: 2px solid #C3C3C3;" />   
 
-4.	If you need to delete a lane, first move all items out of the lane, and then click Delete from the lane's context menu.    
-	<img src="_img/ALM_EW_DeleteLane.png" alt="Kanban board, Delete a swimlane" style="border: 2px solid #C3C3C3;" />  
-::: moniker-end  
+4.	If you need to delete a lane, first move all items out of the lane, and then click Delete from the lane's context menu.      
+	<img src="_img/ALM_EW_DeleteLane.png" alt="Kanban board, Delete a swimlane" style="border: 2px solid #C3C3C3;" />   
+::: moniker-end   
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"  
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"    
 ## Related Kanban notes
 
 As you can see, swimlanes provides another way to organize and visualize the flow of work using [Kanban](kanban-basics.md). Here are a few more options you have for customizing the look and feel of your Kanban board.   
@@ -121,7 +121,7 @@ For TFS 2015 and earlier versions, you can't [query](../track/using-queries.md) 
 
 ::: moniker range="vsts || >= tfs-2015 <= tfs-2018"	
 ###REST API resources
-To programmatically interact with Kanban board and other team settings, see the [REST API, Boards reference](https://docs.microsoft.com/en-us/rest/api/vsts/work/boards).
+To programmatically interact with the Kanban board and other team settings, see the [REST API, Boards reference](https://docs.microsoft.com/en-us/rest/api/vsts/work/boards).
 ::: moniker-end
 
 ::: moniker range="tfs-2013"

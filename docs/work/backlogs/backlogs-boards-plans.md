@@ -1,13 +1,14 @@
 ---
-title: Backlogs, boards, plans | VSTS & TFS
-description: Understand the tasks supported among backlogs, Kanban boards, and task boards  when working in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
+title: Backlogs, boards, & plans
+titleSuffix: VSTS & TFS
+description: Understand the tasks supported among backlogs, Kanban boards, and task boards in Visual Studio Team Services and Team Foundation Server  
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 00D09790-63C3-4E3F-91BA-122CE2779A70
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article
-ms.date: 08/11/2017
+ms.date: 03/01/2018
 ---
 
 # Backlogs, boards, and plans  
@@ -213,19 +214,42 @@ The following table indicates those elements or tasks associated with each type 
 5. Duration refers to how you use your backlog or board to plan and track work over time. Once you change the State of a work item to done or completed, it no longer appears on a portfolio or project backlog. As you complete each sprint, the system maintains a history of your activity. You can review past sprints and sprint burndown charts by choosing the sprint listed under the Past section. For more information, see [Sprint burndown](../scrum/sprint-burndown.md#current-and-past-sprint-burndown-charts).
 
 
+## Product backlog "In Progress" filter
+ 
+The In progress items **Show/Hide** filter causes some backlog items to display or not display. Bugs and other backlog items aren't listed when In progress items=Hide and their assigned State corresponds to In Progress state category. Bugs in a New state will display, however, bugs in an Assigned state won't. 
 
+On your [backlog](create-your-backlog.md), set ```In progress items=Show``` to see all active bugs and other items on your backlog.  
 
+::: moniker range="vsts || >= tfs-2017 <= tfs-2018"  
 <a id="plans">  </a>
 ## Review team deliverables using Delivery Plans   
 
 With Delivery Plans, you gain  tailor-made views across several teams and their development backlogs&mdash;stories, features, or epics.  You can use these views to drive alignment across teams by overlaying several backlogs onto your delivery schedule. 
 
+::: moniker-end
+::: moniker range="vsts" 
+You install Delivery Plans from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans). All users with [basic access](../../security/change-access-levels.md) can view, add, and configure Delivery Plans. Stakeholders, however, don’t have access to Delivery Plans.  
+::: moniker-end
+::: moniker range=">= tfs-2017 <= tfs-2018" 
 > [!NOTE]  
-> **Feature availability**: Delivery Plans, a [Visual Studio Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans), is available for VSTS and TFS 2017.2 and later versions. All users with [basic access](../../security/change-access-levels.md) can view, add, and configure Delivery Plans. Stakeholders, however, don’t have access to Delivery Plans.  
-
+> **Feature availability**: Delivery Plans, a [Visual Studio Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans), is available for TFS 2017.2 and later versions. All users with [basic access](../../security/change-access-levels.md) can view, add, and configure Delivery Plans. Stakeholders, however, don’t have access to Delivery Plans.  
+::: moniker-end
+::: moniker range="vsts || >= tfs-2017 <= tfs-2018" 
 When you configure a plan, you select the team or teams and backlog levels of interest. To learn more about Delivery Plans, see [Review team plans](../scale/review-team-plans.md). 
 
 <img src="_img/backlogs-boards-plans-delivery-plans.png" alt="Example plans view" style="border: 1px solid #C3C3C3;" /> 
+::: moniker-end
+
+::: moniker range="vsts"
+## Customize backlog levels 
+If you need more than three backlog levels, you can add more. To learn how, see [Customize your backlogs or boards for a process](../customize/process/customize-process-backlogs-boards.md). 
+::: moniker-end
+ 
+::: moniker range=">= tfs-2013 <= tfs-2018" 
+## Customize backlog levels 
+If you need more than three backlog levels, you can add more. To learn how, see [Add portfolio backlogs](../customize/add-portfolio-backlogs.md).
+::: moniker-end
+
 
 
 ## Related notes   
@@ -237,11 +261,8 @@ A few things to keep in mind...
 - Every backlog has a corresponding [Kanban board](../kanban/kanban-basics.md) you can use to track progress and update status  
 - Each team can control how [bugs show up on their backlogs ](../customize/show-bugs-on-backlog.md)  
 - When you add child items they're linked to their parent using parent-child links which support hierarchical views and [tree queries](../track/using-queries.md#tree-query)    
-- If you need more than three backlog levels, you can add more based on the process model you use: 
-	- **Inheritance**: [Customize your backlogs or boards for a process](../customize/process/customize-process-backlogs-boards.md)  
-	- **Hosted XML or On-premises XML**: [Add portfolio backlogs](../customize/add-portfolio-backlogs.md).  
- 
 
+ 
 Additional topics of interest:
 
 - [About teams and Agile tools](../../settings/about-teams-and-settings.md)   
@@ -262,26 +283,21 @@ You may notice and wonder why the items shown on the task board may differ from 
 
 It's possible to assign tasks to an iteration but not have them linked to a parent backlog item. These items will show up in the created query, but might not show up on the task board itself. The system runs the query and then applies a few background processes before displaying the task board items.
 
+<!---
 >[!NOTE]  
->Appearance of task and child items on the task board may differ depending on whether you work in VSTS and TFS. 
+>Appearance of task and child items on the task board may differ depending on whether you work in VSTS and TFS.
 
-These reasons can cause work items that belong to the Task Category to not appear on a sprint backlog or task board: 
+>[!NOTE]  
+>In VSTS and TFS 2015.2 and later versions, Tasks not linked to a parent appear under an *Unparented* section.
 
-- The task hasn't been linked to a parent backlog item. Only those bugs and tasks that you have linked to a parent product backlog item (Scrum), user story (Agile), or requirement (CMMI) whose iteration path is set to the sprint will appear on the sprint backlog page. 
-	>[!NOTE]  
-	>In VSTS and TFS 2015.2 and later versions, tasks not linked to a parent appear under an *Unparented* section. 
-
-- The task is a parent of another task, or the user story is a parent of another user story. If you've created a hierarchy of tasks or user stories, [only the child-level tasks or the child-level stories at the bottom of the hierarchy appear](resolve-backlog-reorder-issues.md#leaf-nodes). 
-
+>[!NOTE]  
+>In VSTS and TFS 2015.2 and later versions, tasks linked to a parent work item assigned to another team's area path will appear under the *Unparented* section.  
+-->
+These reasons can cause work items that belong to the Task Category to not appear on a sprint backlog or task board:  
+- The task hasn't been linked to a parent backlog item. Only those bugs and tasks that you have linked to a parent product backlog item (Scrum), user story (Agile), or requirement (CMMI) whose iteration path is set to the sprint will appear on the sprint backlog page.   
+- The task is a parent of another task, or the user story is a parent of another user story. If you've created a hierarchy of tasks or user stories, [only the child-level tasks or the child-level stories at the bottom of the hierarchy appear](resolve-backlog-reorder-issues.md#leaf-nodes).  
 - The task's linked parent corresponds to a backlog item defined for another team. Or, the area path of the task's parent backlog item differs from the task's area path.  
-	>[!NOTE]  
-	>In VSTS and TFS 2015.2 and later versions, tasks linked to a parent work item assigned to another team's area path will appear under the *Unparented* section.
+	
 
-
-### In Progress items filter
- 
-The In progress items Show/Hide filter causes some backlog items to display or not display. Bugs and other backlog items aren't listed when In progress items=Hide and their assigned State corresponds to In Progress state category. Bugs in a New state will display, however, bugs in an Assigned state won't. 
-
-On your [backlog](create-your-backlog.md), set ```In progress items=Show``` to see all active bugs and other items on your backlog.  
 
  

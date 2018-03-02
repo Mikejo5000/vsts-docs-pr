@@ -42,7 +42,7 @@ Each form contains a number of controls as shown below and described in [Work it
 
 ::: moniker range="tfs-2017"
 
-The new form and its corresponding features are available from the web portal. The new form is automatically available when you add team projects to a new collection. For existing team projects, an admin is required to [enable the new form](../manage-new-form-rollout.md).
+The new form and its corresponding features are available from the web portal. The new form is automatically available when you add team projects to a new collection. For existing team projects, an admin is required to [enable the new form](../customize/manage-new-form-rollout.md).
 
 # [New web form](#tab/new-web-form)
 
