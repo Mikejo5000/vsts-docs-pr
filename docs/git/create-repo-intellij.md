@@ -195,5 +195,5 @@ future traceability purposes.
 > [Check out the entire DeepSpace IntelliJ tutorial](https://java.visualstudio.com/Docs/gettingstarted/intro)
 
 > [!div class="nextstepaction"]
-> [View the IntelliJ plugin FAQ](https://java.visualstudio.com/Docs/tools/intelliJ#_frequently-asked-questions-faq)
+> [View the IntelliJ plugin FAQ](https:///vsts/java/download-intellij-plug-in#_frequently-asked-questions-faq)
 
