@@ -19,7 +19,7 @@ ms.date: 03/01/2018
 
 ::: moniker range="tfs-2013"
 > [!NOTE]   
-> Filtering of the Kanban board is not a supported feature in TFS 2013. Consider upgrading to TFS 2015 or later version. 
+> Filtering of the Kanban board is not a supported feature in TFS 2013. Consider upgrading to a later TFS version.
 ::: moniker-end
 
 ::: moniker range="vsts || >= tfs-2015 <= tfs-2018"

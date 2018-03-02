@@ -19,7 +19,7 @@ ms.date: 03/01/2018
 
 ::: moniker range="tfs-2013"
 > [!NOTE]   
-> Task checklists is not a supported feature in TFS 2013. Consider upgrading to TFS 2015.1 or later version. 
+> Task checklists is not a supported feature in TFS 2013. Consider upgrading to a  later TFS version. 
 ::: moniker-end
 
 <!---

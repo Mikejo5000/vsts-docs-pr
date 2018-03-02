@@ -17,7 +17,7 @@ ms.date: 03/01/2018
 
 ::: moniker range="tfs-2013"
 > [!NOTE]   
-> Reordering cards is not a supported feature in TFS 2013. Consider upgrading to TFS 2015.1 or later version. 
+> Reordering cards is not a supported feature in TFS 2013. Consider upgrading to a  later TFS version. 
 ::: moniker-end
 
 <!---

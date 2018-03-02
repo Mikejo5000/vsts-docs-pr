@@ -18,6 +18,18 @@ ms.date: 08/15/2017
 
 <b>VSTS | TFS 2018 | TFS 2017 | TFS 2015</b> 
 
+
+::: moniker range="tfs-2013"
+> [!NOTE]   
+> The Feature and Epic work item type and portfolio backlogs are not supported features in TFS 2013. Consider upgrading to a later TFS version.
+
+<!---
+>[!NOTE]  
+><b>Feature availability: </b>Child checklists for feature and epic Kanban boards are supported from VSTS and TFS 2017 and later versions.
+-->  
+::: moniker-end
+
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 If you use Kanban to track progress on your backlog, you can also use Kanban boards to track epics and features.  
 
 And, just as with [child task checklists for backlog items](add-task-checklists.md), you can quickly define and track the progress of child items for your features or epics. Here we see several stories defined for features, both in progress and those completed.    
@@ -27,18 +39,20 @@ In this topic, you'll learn:
 > * How to add epics and features using your portfolio backlogs    
 > * Keyboard shortcuts for working with the Kanban board  
 
-
 <img src="_img/features-with-stories.png" alt="Web portal, Features Kanban board with several user stories defined" style="border: 2px solid #C3C3C3;" />
 
+::: moniker-end
+::: moniker range="tfs-2015"
 >[!NOTE]  
-><b>Feature availability: </b>Child checklists for feature and epic Kanban boards are supported from VSTS and TFS 2017 and later versions.  
+>Child checklists for feature and epic Kanban boards are supported from TFS 2017 and later versions.
+::: moniker-end
 
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018" 
 ## Add epics or features    
 
 Add new items to a feature or epic through the item's ![actions icon](../_img/icons/actions-icon.png) Action menu. For descriptions of fields used to support features and epics, see [Define features and epics](../backlogs/define-features-epics.md). 
 
 <img src="_img/features-add-story.png" alt="Web portal, Feature Kanban board, Open the context menu of a feature to add a story" style="border: 1px solid #C3C3C3;" /> 
-
 
 If you have a number of items to add, simply keep typing your task titles and click Enter. If you have details you want to add about to a work item, hover over the item and press Enter.  
  
@@ -62,3 +76,5 @@ To customize the columns, swimlanes, or cards for each Kanban board, make sure y
 
 ### REST API resources
 To programmatically interact with Kanban board and other team settings, see the [REST API, Boards reference](https://docs.microsoft.com/en-us/rest/api/vsts/work/boards).
+
+::: moniker-end
