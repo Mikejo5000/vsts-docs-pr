@@ -130,7 +130,7 @@ You can't change type, move work items, or delete/restore work items whose WITs 
 ## Change the work item type 
 
 >[!NOTE]  
-><b>Feature availability: </b> The **Change type&hellip;** menu option is supported only from VSTS. You can't change the work item type of work items associated with test management. Both Contributors and users assigned Stakeholder access can change the work item type.       
+>You can't change the work item type of work items associated with test management. Both Contributors and users assigned Stakeholder access can change the work item type.       
 
 Changing the work item type refreshes the work item form with the fields defined for the type selected. For example, you can change a bug to a task and the form will refresh with the fields defined for a task. 
 
@@ -166,15 +166,18 @@ When you connect to TFS, you can't change the work item type for an existing wor
 
 4. From the Query results page, you must save all work items that you bulk-modified. When you bulk modify items from the backlog, they are automatically saved. Work items shown in bold text indicate that local changes have not yet been saved to the data store. The system automatically saves each work item. Refresh the page to reflect your changes.   
 
-
+::: moniker-end
+ 
+::: moniker range="vsts"
 
 <a id="move"> </a>  
 ## Move a work item to another team project  
 
 When you discover that a work item belongs to a different team project within your account or collection, you can move it where it belongs. You can move a single work item or several [multi-selected work items](bulk-modify-work-items.md). 
 
->[!NOTE]    
-><b>Feature availability: </b> The **Move to team project&hellip;** menu option is supported only from VSTS.  
+<!---
+Feature availability: The **Move to team project&hellip;** menu option is supported only from VSTS.
+-->  
 
 You can only move work items from one team project to another team project within the account or collection. You can't move work items associated with test management. To move work items to another team project, you must be a member of the Project Administrators group or be [granted explicit permissions to move work items](../../security/set-permissions-access-work-tracking.md#move-delete-permissions).
 
@@ -206,15 +209,15 @@ By changing the State of a work item to Removed, you effectively remove it from 
 
 To cause removed items to not show up in queries, you must add a clause that indicates which states you want the query to filter for. 
 
-
 ::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
-
 <a id="delete"> </a> 
 ## Delete work items  
-
+::: moniker-end
+::: moniker range=">= tfs-2015 <= tfs-2018"
 >[!NOTE]  
-><b>Feature availability: </b> The Delete and Recycle bin features are available from VSTS and for TFS 2015.2 or later versions. 
-
+><b>Feature availability: </b> The Delete and Recycle bin features are available from TFS 2015.2 and later versions. 
+::: moniker-end
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 Deleted work items won't appear in your backlogs, boards, or queries. Deleted items are moved to a recycle bin from which you can recover them if needed. To delete a test case, test plan, or test suite, or other test-related WITS, see [Delete test artifacts](#delete-test). 
 
 1. You can delete a work item from within the work item form, or by multi-selecting work items from a backlog or query results page.   
@@ -270,7 +273,7 @@ To permanently delete work items from the web portal, you must be a member of th
 
 # [Browser](#tab/browser)
 >[!NOTE]  
-><b>Feature availability: </b>The Delete and Recycle bin features are available from VSTS and from the web portal for TFS 2015.2 or later versions.  
+><b>Feature availability: </b>The Delete and Recycle bin features are available from TFS 2015.2 and later versions.  
 
 1. To restore deleted items, open the Recycle bin from the web portal.  
  
@@ -356,12 +359,16 @@ To delete test artifacts, the following restrictions and operations apply:
 - Users with Basic access and with permissions to permanently delete work items and manage test artifacts can only delete orphaned test cases. That is, they can delete test cases created from the work hub that aren't linked to any test plans or test suites.  
 - When you delete a test plan, test suite, test case, shared steps, or shared parameters, you not only permanently delete them, you also delete all associated test artifacts such as test results.  
 - You can't bulk delete test artifacts. If test artifacts are part of a bulk selection to be deleted, all other work items except the test artifact(s) will get deleted.
- 
+::: moniker-end
+
+::: moniker range=">= tfs-2017 <= tfs-2018" 
 >[!IMPORTANT]   
-><b>Feature availability: </b> The permanently delete feature of test artifacts is available from the Test and Work hubs for VSTS and TFS 2017.1 and later versions. 
+><b>Feature availability: </b> The permanently delete feature of test artifacts is available from the Test and Work hubs for TFS 2017.1 and later versions. 
 >
 >We only support permanent deletion of test artifacts such as test plans, test suites, test cases, shared steps and shared parameters. Deleted test artifacts won't appear in the recycle bin and cannot be restored. Deletion of test artifacts not only deletes the selected test artifact but also all its associated child items such as child test suites, test points across all configurations, testers (the underlying test case work item doesn't get deleted), test results history, and other associated history.
+::: moniker-end
 
+::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
 1. To delete a test case, open it from the web portal and choose the Permanently delete option from the actions menu. (Bulk deletion is not supported from a query results page.)     
  
 	![Delete a test case and associated test artifacts from the web form](_img/move-change-delete/delete-test-artifacts-form.png)  
@@ -385,8 +392,6 @@ To delete test artifacts, the following restrictions and operations apply:
 
 
 ## Related notes   
-
-To add fields or customize a work item form, see [Customize your work tracking experience](../customize/customize-work.md). The method you use depends on the process model that supports your team project.  
 
 To learn more about managing test artifacts, see: 
 - [Create a test plan](../../manual-test/getting-started/create-a-test-plan.md)

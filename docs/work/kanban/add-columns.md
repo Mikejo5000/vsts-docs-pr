@@ -341,7 +341,7 @@ In this example two new states have been added, Triaged for bug, and Investigate
 <img src="_img/add-columns-custom-states-mapping.png" alt="Kanban board settings, Columns" style="border: 1px solid #C3C3C3;" />  
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
+::: moniker range=">= tfs-2013"
 
 In this example, bugs have been added to show on the Kanban board. You need to map the bug state for each column on the Kanban board.  
  
