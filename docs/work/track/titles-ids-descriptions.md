@@ -1,13 +1,13 @@
 ---
 title: Query by title, ID, or rich-text fields 
 titleSuffix: VSTS & TFS
-description: Example work queries based on titles, IDs, rich-text fields in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+description: Example work queries based on titles, IDs, rich-text fields in Visual Studio Team Services and Team Foundation Server 
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: c0b1fcb1-c4f4-4651-a401-171fa4372518
 ms.manager: douge
 ms.author: kaelli
-ms.date: 02/05/2018  
+ms.date: 03/01/2018  
 ---
 
 # Query by titles, IDs, and rich-text fields
