@@ -1,13 +1,14 @@
 ---
-title: Create managed queries 
-description: Track work by creating queries to list items using Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+title: Create managed queries
+titleSuffix: VSTS & TFS 
+description: Track work by creating queries to list items using Visual Studio Team Services and Team Foundation Server 
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-wit
 ms.assetid: 285a014e-89bf-4e5f-bebf-11094e93d796  
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: kaelli
-ms.date: 09/29/2017  
+ms.date: 03/01/2018
 ---
 
 
@@ -68,10 +69,6 @@ If you are looking for a specific work item, use the adhoc search box. If you wa
 > |Links and attachments |Tags |Build and Test fields  |  
 > |-------------|----------|---------|  
 > |-  [All child items of a single epic ](linking-attachments.md)<br/>- [All related items](linking-attachments.md)<br/>- [Items with one or more attachments](linking-attachments.md)<br/>- [Items with 2 or more hyperlinks](linking-attachments.md) <br/>- [Items containing external links](linking-attachments.md) |- [Items containing a specific tag](add-tags-to-work-items.md)<br/>- [Items that don't contain a specific tag](add-tags-to-work-items.md)<br/>- [Items that contain two or more tags ](add-tags-to-work-items.md) |- [List bugs and linked test cases](build-test-integration.md#linked-bugs)<br/>- [List automated test cases](build-test-integration.md)<br/>- [List requirement-based test suites](build-test-integration.md)<br/>- [List query-based test suites](build-test-integration.md) |    
-
-
-## Get started with queries 
-
 
 
 ## Related notes

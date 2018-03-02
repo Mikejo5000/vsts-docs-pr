@@ -120,7 +120,8 @@ What rules should you apply to highlight work items? Here are a few examples and
 
 As a first step, you'll see that you can change the card display for each work item type (WIT) that shows up on your Kanban board. 
 
-0. From your Kanban board, click the gear icon to open Settings.      
+0. From your Kanban board, click the gear icon to open Settings.        
+
 	![Kanban board, open card customization](_img/customize-cards/open-config-dialog.png)
 	<!---<img src="_img/kanban-card-customize-open-settings.png" alt="Kanban board, open card customization" style="border: 1px solid #C3C3C3;" /> --> 
 
