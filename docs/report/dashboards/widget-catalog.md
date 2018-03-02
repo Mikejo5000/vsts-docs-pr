@@ -39,9 +39,10 @@ To add a widget to a dashboard or copy a widget from one dashboard to another, s
 The following widgets are available to you. Team-scoped widgets display data based on the selected team context. User-focused widgets display information based on the logged-in user.  
   
 > [!div class="mx-tdCol2BreakAll"]
-> |Analytics  |Team-scoped  |User-focused |  
-> |-------------|----------|---------|
-> |- [Burndown chart](#burndown-analytics-widget)<br/>- [Burnup chart](#burnup--analytics-widget)<br/>- [Cumulative flow diagram](#cfd-widget)<br/>- [Cycle time](#cycle-time-widget)<br/>- [Lead time](#lead-time-widget)<br/>- [Velocity](#velocity-widget) |- [New Work item](#new-work-item-widget)<br/>- [Other links](#other-links-widget)<br/>- [Pull request](#pull-request-widget)<br/>- [Sprint burndown](#sprint-burndown-widget)<br/>- [Sprint capacity](#sprint-capacity-widget)<br/>- [Sprint overview](#sprint-overview-widget)<br/>- [Team members](#team-members-widget)<br/>- [Team room](#team-room-widget)<br/>- [Work links](#work-links-widget) |- [Assigned to me](#assigned-to-me-widget)<br/>- [Pull request](#pull-request-widget) |  
+> |Analytics  |Team-scoped  |User-focused |  Build, test, release |Other |
+> |-------------|----------|---------|---------|---------|
+> |- [Burndown chart](#burndown-analytics-widget)<br/>- [Burnup chart](#burnup--analytics-widget)<br/>- [Cumulative flow diagram](#cfd-widget)<br/>- [Cycle time](#cycle-time-widget)<br/>- [Lead time](#lead-time-widget)<br/>- [Velocity](#velocity-widget) |- [New Work item](#new-work-item-widget)<br/>- [Other links](#other-links-widget)<br/>- [Pull request](#pull-request-widget)<br/>- [Sprint burndown](#sprint-burndown-widget)<br/>- [Sprint capacity](#sprint-capacity-widget)<br/>- [Sprint overview](#sprint-overview-widget)<br/>- [Team members](#team-members-widget)<br/>- [Team room](#team-room-widget)<br/>- [Work links](#work-links-widget) |- [Assigned to me](#assigned-to-me-widget)<br/>- [Pull request](#pull-request-widget) |- [Chart for build history](#build-history-widget)<br/>- [Chart for test plans](#chart-test-plan-widget)<br/>- [Chart for test plans](#chart-test-plan-widget)<br/>- [Deployment status](#deployment-status-widget)<br/>- [Release definition overview](#release-definition-widget)<br/>- [Requirements quality](#requirements-quality-widget)<br/>- [Test results trend](#test-results-widget) |- [Code tile](code-tile-widget)<br/>- [Chart for work items](#chart-wit-widget)<br/>- [Embedded web page](#embedded-webpage-widget)<br/>- [Query results](#query-results-widget)<br/>- [Query tile](#query-tile-widget)<br/>- [Markdown](#markdown-widget)<br/>- [Visual Studio Shortcuts](#visual-studio-widget)<br/>- [Welcome](#how-to-widget) | 
+
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"
@@ -50,9 +51,9 @@ The following widgets are available to you. Team-scoped widgets display data bas
 The following widgets are available to you. Team-scoped widgets display data based on the selected team context. User-focused widgets display information based on the logged-in user.  
   
 > [!div class="mx-tdCol2BreakAll"]
-> |Team-scoped  |User-focused |  
-> |----------|---------|
-> |- [New Work item](#new-work-item-widget)<br/>- [Other links](#other-links-widget)<br/>- [Pull request](#pull-request-widget)<br/>- [Sprint burndown](#sprint-burndown-widget)<br/>- [Sprint capacity](#sprint-capacity-widget)<br/>- [Sprint overview](#sprint-overview-widget)<br/>- [Team members](#team-members-widget)<br/>- [Team room](#team-room-widget)<br/>- [Work links](#work-links-widget) |- [Assigned to me](#assigned-to-me-widget)<br/>- [Pull request](#pull-request-widget) |  
+> |Team-scoped  |User-focused |  Build, test, release |Other |  
+> |----------|---------|---------|---------|
+> |- [New Work item](#new-work-item-widget)<br/>- [Other links](#other-links-widget)<br/>- [Pull request](#pull-request-widget)<br/>- [Sprint burndown](#sprint-burndown-widget)<br/>- [Sprint capacity](#sprint-capacity-widget)<br/>- [Sprint overview](#sprint-overview-widget)<br/>- [Team members](#team-members-widget)<br/>- [Team room](#team-room-widget)<br/>- [Work links](#work-links-widget) |- [Assigned to me](#assigned-to-me-widget)<br/>- [Pull request](#pull-request-widget) |- [Chart for build history](#build-history-widget)<br/>- [Chart for test plans](#chart-test-plan-widget)<br/>- [Chart for test plans](#chart-test-plan-widget)<br/>- [Deployment status](#deployment-status-widget)<br/>- [Release definition overview](#release-definition-widget)<br/>- [Requirements quality](#requirements-quality-widget)<br/>- [Test results trend](#test-results-widget) |- [Code tile](code-tile-widget)<br/>- [Chart for work items](#chart-wit-widget)<br/>- [Embedded web page](#embedded-webpage-widget)<br/>- [Query results](#query-results-widget)<br/>- [Query tile](#query-tile-widget)<br/>- [Markdown](#markdown-widget)<br/>- [Visual Studio Shortcuts](#visual-studio-widget)<br/>- [Welcome](#how-to-widget) |   
 ::: moniker-end
 
 
@@ -131,7 +132,7 @@ From the configuration dialog, select a shared query and [specify the chart type
 
 ::: moniker-end
 ::: moniker range="tfs-2015"
-Requires TFS 2015.2 or later version. For TFS 2015.1 and earlier versions, see [Add charts to a dashboard](add-charts-to-dashboard.md#add-charts) to add shared query charts to a dashboard.    
+Requires TFS 2015.2 or later version. For TFS 2015.1 and earlier versions, see [Add charts to a dashboard](add-charts-to-dashboard.md#work-item-query) to add shared query charts to a dashboard.    
 ::: moniker-end
 ::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 ----
@@ -365,13 +366,20 @@ For additional guidance, see [Velocity](team-velocity.md).
 
 ![Build history widget](_img/widget-build-history-chart.png)   
 
+<!---
 > [!NOTE]  
-> **Feature availability:** You can access this widget from VSTS or TFS 2015.2 or later version. For TFS 2015.1 and earlier versions, see [Add charts to a dashboard](add-charts-to-dashboard.md#add-charts) to add a build summary chart to a dashboard.  
+> **Feature availability:** You can access this widget from VSTS or TFS 2015.2 or later version.  
+-->
 
 Adds a tile to display a histogram of all builds run for the configured build definition.
 From the configuration dialog, select the build you want to monitor. 
 Hover over a bar to learn how long the build took to complete. Click the bar to open the summary for that specific build. Bar color indicates: green-completed, red-failed, and yellow-completed without tests. 
 
+::: moniker-end
+::: moniker range="tfs-2015"
+Requires TFS 2015.2 or later version. For TFS 2015.1 and earlier versions, see [Add charts to a dashboard](add-charts-to-dashboard.md#build-history) to add a build summary chart to a dashboard. 
+::: moniker-end
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 ----
 ::: moniker-end
 
@@ -382,16 +390,37 @@ Hover over a bar to learn how long the build took to complete. Click the bar to 
 	
 ![Chart work item query widget](_img/widget-chart-test-plans.png)  
 
+<!---
 > [!NOTE]  
-> **Feature availability:** You can access this widget from VSTS and TFS 2017.2 and later versions. For TFS 2015.1 and earlier versions, see [Add charts to a dashboard](add-charts-to-dashboard.md#add-charts) to add other supported chart types to a dashboard.    
+> **Feature availability:** You can access this widget from VSTS and TFS 2017.2 and later versions. For TFS 2015.1 and earlier versions, see [Add charts to a dashboard](add-charts-to-dashboard.md#test-quality) to add other supported chart types to a dashboard.   
+--> 
 
 Adds a configurable widget that lets you track the progress of test case authoring or status of test execution for tests in a test plan. Get started by selecting a test plan and a test suite. Then select test case chart for test authoring progress or test results for test execution progress. Finally, select the chart type and the pivots. 
 
 To learn more, see [Track your test results](../../manual-test/getting-started/track-test-status.md).
 
----- 
+::: moniker-end
+::: moniker range="tfs-2017"
+Requires TFS 2017.2 or later version.
+::: moniker-end
+::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+----
 ::: moniker-end
 
+
+
+
+::: moniker range="vsts || >= tfs-2018"
+
+<a id="chart-test-plan-widget"></a> 
+##&nbsp;&nbsp;&nbsp;Chart for test plans 
+
+![Chart for test plans widget](_img/widget-catalog/chart-test-plan-widget.png)
+
+With this widget, you can create charts for test plans, test suites, test authoring status, and test execution status. 
+
+----
+::: moniker-end
 
 
 ::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
@@ -401,12 +430,19 @@ To learn more, see [Track your test results](../../manual-test/getting-started/t
 
 ![Deployment status widget](_img/widget-deployment-status.png)  
 
+<!---
 > [!NOTE]  
 > **Feature availability:** You can access this widget from VSTS or TFS 2017.1 or later versions.  
+-->
 
 Configurable widget that shows a consolidated view of the deployment status and test pass rate across multiple environments for a recent set of builds. You configure the widget by specifying a build definition, branch, and linked release definitions. 
 
----- 
+::: moniker-end
+::: moniker range="tfs-2017"
+Requires TFS 2017.1 or later version. 
+::: moniker-end
+::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+----
 ::: moniker-end
 
 ::: moniker range="vsts"
@@ -416,8 +452,10 @@ Configurable widget that shows a consolidated view of the deployment status and 
 
 ![Release definition overview widget](_img/widget-release-definitions.png)  
 
+<!---
 > [!NOTE]  
 > **Feature availability:**  You can access this widget from VSTS.   
+-->
 
 Configurable widget that you can use to view and track the status of a release definition. The widget shows the release as a series of environments, with the name of the release and the date or time it was started. The color of the heading and the icon in each environment indicate the current status of the release, which are the same as are used on the **Releases** page. Select a release definition in the left column to filter the list to just releases for that definition.
 
@@ -433,8 +471,10 @@ Configurable widget that you can use to view and track the status of a release d
 
 ![Requirements quality widget](_img/widget-requirements-quality.png)  
 
+<!---
 > [!NOTE]  
 > **Feature availability:** You can access this widget from VSTS or TFS 2017.   
+-->
 
 Configurable widget that you can use to track quality continuously from a build or release definition. 
 To learn more, see [Associate automated test results with requirements](../../build-release/test/associate-automated-results-with-requirements.md). 
@@ -450,8 +490,10 @@ To learn more, see [Associate automated test results with requirements](../../bu
 
 ![Test results trend widget](_img/widget-test-results-trend.png)
 
+<!---
 > [!NOTE]  
 > **Feature availability:** You can access this widget from VSTS or TFS 2017.   
+-->
 
 Adds a configurable tile that displays the trend of test results, such as passed or failed tests, for the selected build definition. 
 
@@ -486,8 +528,10 @@ Adds a configurable tile to display the contents of a web page. Only webpages th
 
 ![Markdown widget](_img/widget-markdown-tile.png)
 
+<!---
 > [!NOTE]  
 > **Feature availability:** For VSTS and TFS 2015.2 or later versions, you can configure the widget to point to a file stored in your repository.  
+-->
 
 ::: moniker-end
 

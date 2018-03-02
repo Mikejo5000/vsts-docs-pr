@@ -20,78 +20,13 @@ ms.date: 03/01/2018
 ::: moniker-end
 
 <!---
-
 <b>VSTS | TFS 2018 | TFS 2017 | TFS 2015.1-2015.3  </b>  
+-->
 
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 <a id="add-charts"></a>
 
-All charts listed in the following table are available from VSTS and TFS 2017.2 and later versions. You can add them to a dashboard from the widget catalog or directly from the Build, Release, Test, or Work hubs. For TFS 2015 and earlier versions, some charts require you to add them to a team dashboard from their respective hub. 
-
-<table >
-<thead align="center">
-<tr >
-<th align="center" width="30%">Chart </th>
-<th align="center" width="18%">TFS 2015 </th>
-<th align="center" width="18%">TFS 2015.1</th>
-<th align="center" width="18%">TFS 2015.2</th>
-<th align="center" width="18%">TFS 2017.1</th>
-</tr>
-</thead>
-<tbody align="center"  >
-
-<tr>
-<td align="left">[Build history chart](#build-history) <sup> 1</sup></td>
-<td>  </td>
-<td>![checkmark](_img/icons/checkmark.png)</td>
-<td>![checkmark](_img/icons/checkmark.png)</td>
-<td>![checkmark](_img/icons/checkmark.png)</td>
-</tr>
-
-<tr>
-<td align="left">[Release summary chart](#release-summary) <sup> 1</sup></td>
-<td>  </td>
-<td>  </td>
-<td>  </td>
-<td>![checkmark](_img/icons/checkmark.png)</td>
-</tr>
-
-<tr>
-<td align="left">[Test status or result chart](#test-result) <sup> 2</sup> </td>
-<td>![checkmark](_img/icons/checkmark.png)</td>
-<td>![checkmark](_img/icons/checkmark.png)</td>
-<td>![checkmark](_img/icons/checkmark.png)</td>
-<td>![checkmark](_img/icons/checkmark.png)</td>
-</tr>
-<tr>
-<td align="left">[Test quality trend chart](#test-quality) <sup>1</sup>  </td>
-<td>  </td>
-<td>  </td>
-<td>![checkmark](_img/icons/checkmark.png)</td>
-<td>![checkmark](_img/icons/checkmark.png)</td>
-</tr>
-<tr>
-<td align="left">[Work item query](#work-item-query) <sup> 2</sup></td>
-<td>![checkmark](_img/icons/checkmark.png)</td>
-<td>![checkmark](_img/icons/checkmark.png)</td>
-<td>![checkmark](_img/icons/checkmark.png)</td>
-<td>![checkmark](_img/icons/checkmark.png)</td>
-</tr>
-<tr>
-<td align="left">[Work item query chart](#work-item-query) <sup> 2</sup></td>
-<td>![checkmark](_img/icons/checkmark.png)</td>
-<td>![checkmark](_img/icons/checkmark.png)</td>
-<td>![checkmark](_img/icons/checkmark.png)</td>
-<td>![checkmark](_img/icons/checkmark.png)</td>
-</tr>
-
-</tbody>
-</table>
-
-1. These charts are configured by the system. You can't edit them. 
-2. These charts are user-configurable.     
- 
--->
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+You can add the charts described in this topic to a dashboard from their corresponding functional page, such as Builds, Releases, or Queries. 
 
 ## Prerequistes
 
@@ -164,7 +99,7 @@ As you create and run tests, you can track your status by defining [lightweight 
 
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
 
 <a id="test-quality"></a>  
 ## Add a test quality trend chart   
@@ -176,10 +111,10 @@ You can add trends to the dashboard of the failures and duration of those [tests
 ><b>You can also add a [test result trend chart widget](widget-catalog.md#test-results-widget) to a dashboard. 
 
 ::: moniker-end
-::: moniker range="tfs-2015"
-Requires TFS 2015.2 or later version. 
+::: moniker range="tfs-2017"
+Requires TFS 2017.2 or later version. 
 ::: moniker-end
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
 1. Select your [team context](../../settings/switch-team-context.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json), make sure you're a [team admin](../../work/scale/add-team-administrator.md), and if you haven't yet created the dashboard, [do that now](dashboards.md).  
 
 2. Open a build summary for a build definition to which you've added tests, open the Tests page, and click the bar chart for either Test failures or Test duration.    
@@ -247,3 +182,72 @@ There are a number of system-generated charts that you can access from the web p
 - [Sprint burndown chart](../../work/scrum/sprint-burndown.md), see [Sprint burndown widget](widget-catalog.md#sprint-burndown-widget)
 - [Cumulative flow](../guidance/cumulative-flow.md), see [CFD widget](widget-catalog.md#cfd-widget)
 
+
+<!---
+
+All charts listed in the following table are available from VSTS and TFS 2017.2 and later versions. You can add them to a dashboard from the widget catalog or directly from the Build, Release, Test, or Work hubs. For TFS 2015 and earlier versions, some charts require you to add them to a team dashboard from their respective hub. 
+
+<table >
+<thead align="center">
+<tr >
+<th align="center" width="30%">Chart </th>
+<th align="center" width="18%">TFS 2015 </th>
+<th align="center" width="18%">TFS 2015.1</th>
+<th align="center" width="18%">TFS 2015.2</th>
+<th align="center" width="18%">TFS 2017.1</th>
+</tr>
+</thead>
+<tbody align="center"  >
+
+<tr>
+<td align="left">[Build history chart](#build-history) <sup> 1</sup></td>
+<td>  </td>
+<td>![checkmark](_img/icons/checkmark.png)</td>
+<td>![checkmark](_img/icons/checkmark.png)</td>
+<td>![checkmark](_img/icons/checkmark.png)</td>
+</tr>
+
+<tr>
+<td align="left">[Release summary chart](#release-summary) <sup> 1</sup></td>
+<td>  </td>
+<td>  </td>
+<td>  </td>
+<td>![checkmark](_img/icons/checkmark.png)</td>
+</tr>
+
+<tr>
+<td align="left">[Test status or result chart](#test-result) <sup> 2</sup> </td>
+<td>![checkmark](_img/icons/checkmark.png)</td>
+<td>![checkmark](_img/icons/checkmark.png)</td>
+<td>![checkmark](_img/icons/checkmark.png)</td>
+<td>![checkmark](_img/icons/checkmark.png)</td>
+</tr>
+<tr>
+<td align="left">[Test quality trend chart](#test-quality) <sup>1</sup>  </td>
+<td>  </td>
+<td>  </td>
+<td>![checkmark](_img/icons/checkmark.png)</td>
+<td>![checkmark](_img/icons/checkmark.png)</td>
+</tr>
+<tr>
+<td align="left">[Work item query](#work-item-query) <sup> 2</sup></td>
+<td>![checkmark](_img/icons/checkmark.png)</td>
+<td>![checkmark](_img/icons/checkmark.png)</td>
+<td>![checkmark](_img/icons/checkmark.png)</td>
+<td>![checkmark](_img/icons/checkmark.png)</td>
+</tr>
+<tr>
+<td align="left">[Work item query chart](#work-item-query) <sup> 2</sup></td>
+<td>![checkmark](_img/icons/checkmark.png)</td>
+<td>![checkmark](_img/icons/checkmark.png)</td>
+<td>![checkmark](_img/icons/checkmark.png)</td>
+<td>![checkmark](_img/icons/checkmark.png)</td>
+</tr>
+
+</tbody>
+</table>
+
+1. These charts are configured by the system. You can't edit them. 
+2. These charts are user-configurable.     
+ 
+-->

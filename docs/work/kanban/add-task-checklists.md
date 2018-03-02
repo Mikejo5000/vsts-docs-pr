@@ -1,7 +1,7 @@
 ---
 title: Add task checklists
 titleSuffix: VSTS & TFS
-ms.custom: Add task checklists
+ms.custom: Add checklists
 description: Add task checklists to your Kanban board for lightweight tracking of to do lists when working in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)    
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
@@ -45,9 +45,11 @@ In this topic, you'll learn:
 [!INCLUDE [temp](../_shared/image-differences.md)]  
 
 ::: moniker-end
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 ## Add a task or set of tasks 
 
-1. To start adding tasks, open the menu for the work item.  
+1. To start adding tasks, open the menu for the work item.
+::: moniker-end 
 ::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
 	<img src="_img/add-tasks-menu-options-vs-ts.png" alt="Open the context menu of a backlog item to add a task" style="border: 1px solid #C3C3C3;" /> 
 ::: moniker-end
