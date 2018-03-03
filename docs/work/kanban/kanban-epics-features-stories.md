@@ -5,12 +5,13 @@ description: Quickly define and view the status of child features, user stories,
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 489C612D-983E-47D3-BD1A-F13C5DCD74E2  
-monikerRange: vsts || >= tfs-2015 <= tfs-2018
+monikerRange: vsts || >= tfs-2013 <= tfs-2018
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/15/2017
+ms.date: 03/01/2018
 ---
+
 
 
 # Kanban board features and epics  

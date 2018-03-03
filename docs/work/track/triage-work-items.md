@@ -48,7 +48,7 @@ The buttons to move up or down within the query results list are outside the wor
 
 <img src="_img/triage-queries/triage-buttons-new-exp.png" alt="Web portal, choose Work hub, Queries" style="border: 1px solid #C3C3C3;" /> 
 
-# [Old Queries Experience](#tab/new-query-exp)
+# [Old Queries Experience](#tab/old-query-exp)
 <!---### VSTS: Old queries experience, TFS 2017, TFS 2015, TFS 2013-->
 
 The buttons to move up or down within the query results list are inside the work item form. Click Bottom to cycle through the choices for where the work item form appears: Bottom, Right, or Off.
@@ -78,7 +78,7 @@ Click **Save items** to save all work items you've modified.
 
 <img src="_img/triage-queries/save-work-items-new-exp.png" alt="Choose Save work items to save all modified work items" style="border: 1px solid #C3C3C3;" /> 
 
-# [Old Queries Experience](#tab/new-query-exp)
+# [Old Queries Experience](#tab/old-query-exp)
 Click the ![double-save-icon](../_img/icons/icon-double-save.png) double-save icon to save all work items you've modified.
 
 <img src="../backlogs/_img/bulk-modify-save-ts.png" alt="VSTS and TFS 2017, Query results page, save bulk modified items" style="border: 2px solid #C3C3C3;" />

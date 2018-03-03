@@ -64,7 +64,7 @@ You add query folders from the **Work>Queries>All** page.
 
 	<img src="_img/organize-queries/save-query-as-dialog.png" alt="Save query as dialog" style="border: 2px solid #C3C3C3;" />
 
-# [Old Queries Experience](#tab/new-query-exp)
+# [Old Queries Experience](#tab/old-query-exp)
 
 You add query folders from the **Work>Queries** page.
 
