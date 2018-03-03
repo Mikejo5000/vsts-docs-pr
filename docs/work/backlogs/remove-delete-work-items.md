@@ -30,6 +30,8 @@ Often times you find that someone created a work item of the wrong work item typ
 
 You can remove work items added to your backlog or task board that aren't relevant anymore. Simply change the State to Remove, or delete the work item. You can perform  operations on individual work items or bulk modify several work items. 
 
+>[!TIP]    
+You can't change the work item type for an existing work item, but you can [copy the work item and specify a new type](copy-clone-work-items.md#copy-clone). Also, if you have several work items with type changes you want to make, you can [export them using Excel](office/bulk-add-modify-work-items-excel.md), and then re-add them as a new type. 
 ::: moniker-end
 
 In this topic you'll learn:  
@@ -136,9 +138,6 @@ Changing the work item type refreshes the work item form with the fields defined
 
 You can change a single work item or several [multi-selected work items](bulk-modify-work-items.md) to a new type. 
 
-
->[!TIP]    
-When you connect to TFS, you can't change the work item type for an existing work item, but you can [copy the work item and specify a new type](copy-clone-work-items.md#copy-clone). Also, if you have several work items with type changes you want to make, you can [export them using Excel](office/bulk-add-modify-work-items-excel.md), and then re-add them as a new type. 
 
 1. Select the ![Change team project icon](../_img/icons/change-type-icon.png) Change type... option from the work item form's ![Action icon](../_img/icons/actions-icon.png) Actions menu.    
 
