@@ -117,10 +117,6 @@ Prior to creating or updating a query to use the **@CurrentIteration** macro, ma
 > [!div class="mx-imgBorder"]
 > ![Query filter using the @CurrentIteration macro](_img/query-date-iteration/at-current-no-team-specified.png)  
 
-> [!TIP]    
-> The **@CurrentIteration** macro only works from the web portal. You can't use it from some [clients, features, or REST APIs](#current_sprint_restrict).  
-
-
 
 <a id="current-iteration-plus-minus-n">  </a>
 ## Query for items based on a sliding window of team iterations 
@@ -301,8 +297,10 @@ You can use the **@CurrentIteration** in a query from the following clients:
 - Web portal that connects to VSTS 
 - Web portal that connects to an on-premises TFS 2015 or later version 
 - Visual Studio 2015 or Team Explorer 2015 or later versions connected to VSTS or TFS 2015 or later versions. 
+- Using the REST API
 
-You can use the <b>@CurrentIteration +/- <i>n</i></b> macro in a query only from a web portal connected to VSTS.   
+You can use the <b>@CurrentIteration +/- <i>n</i></b> macro in a query against VSTS and with a REST API which includes the team as a parameter, for example, `@CurrentIteration('[Project]/Team')`.
+  
 
 An error occurs if you open a query that contains the **@CurrentIteration** macro in earlier versions of Visual Studio, or from Excel or Project. Also, you can't use the macro when [copying or cloning test suites and test cases](../../manual-test/mtm/copying-and-cloning-test-suites-and-test-cases.md), [defining alerts](../../notifications/index.md), or with [REST APIs](../../integrate/get-started/rest/basics.md).
 
