@@ -8,7 +8,7 @@ ms.manager: douge
 ms.author: chcomley
 ms.date: 1/29/2018
 ---
-[//]: # (monikerRange: '>= tfs-2015')
+[//]: # (monikerRange: 'vsts')
 
 #  Set up billing for your VSTS account
 

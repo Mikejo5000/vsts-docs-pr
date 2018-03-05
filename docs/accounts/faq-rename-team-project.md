@@ -9,9 +9,9 @@ ms.manager: douge
 ms.author: chcomley
 ms.date: 10/6/2017
 ---
-[//]: # (monikerRange: 'vsts')
+[//]: # (monikerRange: '>= tfs-2015')
 
-# Troubleshooting renaming a team project
+# Troubleshoot renaming a team project
 
 **VSTS** | **TFS 2015**
 

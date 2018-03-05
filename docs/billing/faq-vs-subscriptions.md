@@ -11,7 +11,7 @@ ms.date: 02/27/2018
 
 # Troubleshoot Visual Studio subscriptions
 
-**VSTS** | **TFS 2017** | **TFS 2015**
+**VSTS** | **TFS 2018** | **TFS 2017** | **TFS 2015**
 
 Visual Studio Professional and Visual Studio Enterprise
 are both available as monthly and annual subscriptions.

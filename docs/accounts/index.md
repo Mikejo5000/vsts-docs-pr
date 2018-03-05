@@ -8,16 +8,16 @@ ms.manager: douge
 ms.author: chcomley
 ms.date: 10/6/2017
 ---
-[//]: # (monikerRange: 'vsts')
+[//]: # (monikerRange: '>= tfs-2013')
 
-# Account Management 
+# Account Management
 
-**VSTS**
+**VSTS | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013**
 
 Sign up for a VSTS account, add users, and manage permissions and access.
 
 
-## 5-Minute Quickstarts  
+## 5-Minute Quickstarts
 
 * [Create your VSTS account](create-account-msa-or-work-student.md)
 <!-- Can't add "add user" which is really obvious quick start item because it must then be in the quick starts in
@@ -34,7 +34,7 @@ Sign up for a VSTS account, add users, and manage permissions and access.
 * [Change Azure AD tenant](change-azure-active-directory-vsts-account.md)
 
  
-## Reference 
+## Reference
 
 * [Default permissions and access](../security/permissions-access.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json)
 * [Access with Azure AD](access-with-azure-ad.md)

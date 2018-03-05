@@ -8,7 +8,7 @@ ms.manager: douge
 ms.author: esther
 ms.date: 10/6/2017
 ---
-[//]: # (monikerRange: '>= tfs-2015 RTM')
+[//]: # (monikerRange: '>= tfs-2015')
 
 # Buy Xamarin University
 

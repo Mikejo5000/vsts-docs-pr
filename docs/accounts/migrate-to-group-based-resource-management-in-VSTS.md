@@ -1,6 +1,6 @@
 ---
 title: Migrate to group-based resource management
-description: Group-based resource management migration
+description: Group-based user and resource management migration
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
 ms.assetid:

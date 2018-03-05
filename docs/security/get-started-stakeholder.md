@@ -13,6 +13,8 @@ ms.date: 10/10/2017
 
 # Get started as a Stakeholder
 
+**VSTS** | **TFS 2017** | **TFS 2015**
+
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 With Stakeholder access, you can add and modify work items, approve releases, and view dashboards. You can check project status and provide direction, feedback, feature ideas, and business alignment to a team. 
