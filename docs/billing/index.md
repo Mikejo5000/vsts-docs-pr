@@ -23,7 +23,7 @@ All VSTS charges appear on your monthly Azure bill. Azure supports payment by cr
 
 [//]: # (::: moniker-end)
 
-[//]: # (::: moniker range=">= tfs-2015")
+[//]: # (::: moniker range=">= tfs-2015 < vsts")
 
 ## Billing for TFS
 
@@ -34,6 +34,8 @@ You can also make some purchases for TFS on your monthly Azure bill.
 
 [//]: # (::: moniker-end)
 
+[//]: # (::: moniker range=">= tfs-2015 < vsts")
+
 ## 5-Minute Quickstarts
 
  * [Set up billing for VSTS](set-up-billing-for-your-account-vs.md)
@@ -41,6 +43,7 @@ You can also make some purchases for TFS on your monthly Azure bill.
  * [How to pay for VSTS users](buy-basic-access-add-users.md)
  * [How to buy VSTS CI/CD](buy-more-build-vs.md)
 
+[//]: # (::: moniker-end)
 
 ## Other Resources
 
