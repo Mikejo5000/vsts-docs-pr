@@ -48,6 +48,7 @@ Get started with a free account, share your code using Git, and track your work 
 - [Clients and tools](tools.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)     
 - [Software development roles](roles.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)   
 - [What's the difference between VSTS and TFS?](about-vsts-tfs.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)  
+- [Use VSTS with a screen reader](VSTS-Screen-reader-guides.md)   
 
 
 ## Reference
