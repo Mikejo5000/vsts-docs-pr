@@ -15,7 +15,7 @@ ms.date: 08/10/2016
 
 Are you a new user of Visual Studio and Team Foundation Server (TFS)? Are you wondering how you and your team can get maximum benefit from the most recent version of these tools to build your app?
 
-Then take a few minutes to walk step-by step through this two-chapter tutorial and follow a day in the lives of Peter and Julia, two developers at Fabrikam Fiber—a fictitious company that provides cable television and related services. You'll see examples of how you can use Visual Studio and TFS to check out and update code, suspend work when you're interrupted, request a code review, check in your changes, and perform other tasks.
+Then take a few minutes to walk step-by step through this two-chapter tutorial and follow a day in the lives of Peter and Julia, two developers at Fabrikam Fiber-a fictitious company that provides cable television and related services. You'll see examples of how you can use Visual Studio and TFS to check out and update code, suspend work when you're interrupted, request a code review, check in your changes, and perform other tasks.
 
 **The story so far**  
 The team recently began [adopting Visual Studio and Team Foundation Server for devops](https://msdn.microsoft.com/library/dd286491). They set up their server and client machines, created a backlog, planned an iteration, and completed other planning necessary to begin developing their app.
@@ -50,7 +50,7 @@ At the end of every small step, he runs all the unit tests that are relevant to 
 However, he will not check the code into Team Foundation Server until he has finished the entire task.
 
 Peter writes down a rough plan for this sequence of small steps. He knows that the exact details and order of the later ones will probably change as he works. Here is his initial list of steps for this particular task:  
-1.  Create test method stub—that is, just the signature of the method.  
+1.  Create test method stub-that is, just the signature of the method.  
 2.  Satisfy one specific typical case.  
 3.  Test broad range. Make sure that the code responds correctly to a large range of values.  
 4.  Exception on negative. Deal gracefully with incorrect parameters.  
@@ -257,11 +257,11 @@ Together they write the following test:
             }
 
 >**Tip:**  
->For this function, Peter is using Test First Development, in which he first writes the unit test for a feature, and then writes code that satisfies the test. In other cases, he finds that this practice is not realistic, so instead, he writes the tests after he writes the code. But he considers it very important to write unit tests—whether before or after the code—because they keep the code stable.
+>For this function, Peter is using Test First Development, in which he first writes the unit test for a feature, and then writes code that satisfies the test. In other cases, he finds that this practice is not realistic, so instead, he writes the tests after he writes the code. But he considers it very important to write unit tests-whether before or after the code-because they keep the code stable.
 
 ## Red, Green, Refactor...
 
-Peter follows a cycle in which he repeatedly writes a test and confirms that it fails, writes code to make the test pass, and then considers refactoring—that is, improving the code without changing the tests.
+Peter follows a cycle in which he repeatedly writes a test and confirms that it fails, writes code to make the test pass, and then considers refactoring-that is, improving the code without changing the tests.
 
 ### Red
   
@@ -479,7 +479,7 @@ Peter applies the following principles while developing code:
 
 Before checking in his changes, Peter again uses Lync to share his screen with his colleague Julia so she can informally and interactively review with him what he has created. The tests continue to be the focus of their discussion because Julia is primarily interested in what the code does, not how it works. Julia agrees that what Peter has written meets her needs.
 
-Peter checks in all changes he has made, including the both the tests and the code, and associates them with the task he has completed. The check-in queues the team's automated team build system to validate his changes using the team's **CI Build** build process. This build process helps the team minimize errors in their codebase by building and testing—in a clean environment separate from their development computers—every change the team makes.
+Peter checks in all changes he has made, including the both the tests and the code, and associates them with the task he has completed. The check-in queues the team's automated team build system to validate his changes using the team's **CI Build** build process. This build process helps the team minimize errors in their codebase by building and testing-in a clean environment separate from their development computers-every change the team makes.
 
 Peter is notified when the build is completed. In the build results window, he sees that the build succeeded and all the tests passed.
 

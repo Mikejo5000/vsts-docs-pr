@@ -214,7 +214,7 @@ The reviewers and author of the code can exchange comments as often as they like
 
     -   **Complete** to indicate that the review is finished.
 
-    -   —or—
+    -   -or-
 
     -   **Abandon** to indicate you are canceling the review.
 

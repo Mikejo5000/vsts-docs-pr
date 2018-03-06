@@ -194,7 +194,7 @@ The following examples display the differences between the version of 314.cs tha
 
     c:\projects>tf difference 314.cs;Lrelease 314.cs;C3200
 
-—or—
+-or-
 
     c:\projects>tf difference 314.cs;Lrelease~C3200
 

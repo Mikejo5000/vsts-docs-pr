@@ -338,11 +338,11 @@ Use the following syntax to specify a *versionspec*.
 <tr>
 <td><p>Date and time</p></td>
 <td><p><strong>D</strong><i>yyyy-mm-ddTxx:xx</i></p>
-<p>—or—</p>
+<p>-or-</p>
 <p><strong>D</strong><i>mm/dd/yyyy</i></p>
-<p>—or—</p>
+<p>-or-</p>
 <p>Any .NET Framework-supported format.</p>
-<p>—or—</p>
+<p>-or-</p>
 <p>Any of the date formats supported on the local machine.</p></td>
 <td><p>Specifies a changeset created on a specified date and time.</p>
 <p><strong>Examples</strong></p>
