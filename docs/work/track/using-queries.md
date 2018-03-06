@@ -38,9 +38,6 @@ The easiest way to define a query is to start with an existing shared query.
 The following example shows how to find all closed bugs by modifying the 
 Active Bugs shared query provided with the Agile process template. Examples are based on the user interface provided through the web portal. 
 
-::: moniker range="vsts"  
-
-
 1.	Open a shared query. For example, from the web portal, open the Active Bugs or similar flat list query.   
   
 	<img src="_img/using-queries-active-bugs-ts.png" alt="Web portal, Work>Queries, Open Shared queries, Active Bugs" style="border: 2px solid #C3C3C3;" />
