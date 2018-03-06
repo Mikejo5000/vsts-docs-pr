@@ -115,10 +115,6 @@ For example, here we query for all work items that are tagged either ```performa
 > You can use the **Contains** or **Does Not Contain** operators. To learn more about queries, see [Create managed queries](using-queries.md). 
 
 
-::: moniker-end
-
-
-
 <a id="show-tags"></a>
 ##Show tags in your backlog or query results
 

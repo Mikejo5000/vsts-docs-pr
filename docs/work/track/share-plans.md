@@ -18,7 +18,7 @@ ms.date: 11/27/2017
 Using work items to track your work provides a host of benefits, including the ability to easily share information. You can capture most information within the work item Description or other rich-text formatted field. If you need to maintain the information in a different format, you can easily link to or attach a file.  
 
 Using work items, you can share information in the following ways: 
-- 
+
 - Add information to the Description or other rich-text field
 - Link to a web site or file, or attach files 
 - Link to a storyboard file 
@@ -52,7 +52,6 @@ You can use the ![Remove format](../_img/icons/remove-formatting-icon.png) icon 
 # [Visual Studio](#tab/visual-studio) 
 
 <a id="team-explorer-rich-text" />
-#### Visual Studio, Rich text formatting toolbar
 
 <img src="_img/rich-text-ui-te.png" alt="Rich text tool bar - Team Explorer" style="border: 2px solid #C3C3C3;" />
 
@@ -60,7 +59,7 @@ From Team Explorer you can choose the font, font size, and text and background c
 
 If inline images aren't displaying correctly, see [Resolve images that don't display in Team Explorer](#images-missing-te).
 
-You can also use the following shortcut keys to format your text: 
+You can also use the following shortcut keys to format your text:  
 - **Bold**: Ctrl+B  
 - *Italic*: Ctrl+I  
 - <u>Underscore</u>: Ctrl+U 
@@ -68,6 +67,8 @@ You can also use the following shortcut keys to format your text:
 You can copy and paste HTML text or an image from another application directly into the text box using Ctrl+C and Ctrl+V shortcuts.
 
 ---
+
+
 ::: moniker-end 
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"
@@ -100,6 +101,8 @@ You can copy and paste HTML text or an image from another application directly i
 
 
 ---
+
+
 ::: moniker-end 
 
 
@@ -127,6 +130,7 @@ For example, you can attach a screen image that illustrates a problem, a line of
 
 <a id="team-services" />
 # [Browser](#tab/browser)
+
 ####Attachment control toolbar 
 
 <img src="_img/share-plans-attachment-tab-vsts.png" alt="Attachment controls, web portal VSTS" style="border: 1px solid #C3C3C3;" />  
@@ -169,6 +173,8 @@ Click one or more items and then right-click to open the menu options to downloa
 By default, the size of work item attachments is limited to 4 MB. For on-premises deployments, you can use the TFS web service to [increase the size of files you attach up to 2GB](https://msdn.microsoft.com/library/ms400780.aspx).
 
 ---
+
+
 ::: moniker-end 
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"
@@ -209,6 +215,7 @@ Click one or more items and then right-click to open the menu options to downloa
 ####Attachment control toolbar
 
 <img src="_img/share-plans-attachment-controls-tfs.png" alt="Attachment controls, Visual Studio and Eclipse" style="border: 2px solid #C3C3C3;" /> 
+
 ---
 
 ::: moniker-end 
@@ -235,7 +242,7 @@ To link to an existing storyboard, click the ![Links page icon](../_img/icons/ic
 
 # [Visual Studio](#tab/visual-studio) 
 <a id="team-explorer-storyboard" />
-#### Visual Studio, Storyboards tab control  
+#### Storyboards tab control  
 
 <img src="_img/share-plans-storyboard-vs-tab.png" alt="Storyboards tab, Visual Studio Team Explorer and Eclipse" style="border: 2px solid #C3C3C3;" />
  
@@ -312,55 +319,4 @@ You may find additional ways to share information and collaborate as a team by a
 
 ::: moniker-end
 
-
-<!---
-
-Here's a list of the most common ways in which teams share information and plans using work item tracking. 
-
->[!NOTE]  
-><b>Feature availability: </b>Some features are only available from the web portal or a Team Foundation client such as Visual Studio or the Eclipse plug-in, Team Explorer Everywhere (TEE). 
-
-
-<table >
-<thead align="center">
-<tr >
-<th align="left" width="46%">Task/feature </th>
-<th align="center" width="15%">Web portal</th>
-<th align="center" width="15%">Visual Studio</th>
-<th align="center" width="24%">TEE (Eclipse plug-in)</th>
-
-</tr>
-</thead>
-<tbody align="center"  >
-
-
-<tr>
-<td align="left">[Rich text fields](#rich-text) </td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
-
-</tr>
-
-
-<tr>
-<td align="left">[Link objects](#link-items), [attach files](#attachments)</td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
-
-</tr>
-
-<tr>
-<td align="left">[Storyboard and link to storyboards](#storyboard)</td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
-
-</tr>
-
-
-</tbody>
-</table>
-
--->
+ 
