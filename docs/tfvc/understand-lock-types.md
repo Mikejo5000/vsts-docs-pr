@@ -31,7 +31,7 @@ In Visual Studio Team Foundation Server 2012, check-out locks are generally not 
 
 -   Not available if you are using a local workspace.
 
--   Disabled if a member of the Administrators security group of your team project collection has enabled asynchronous checkout for your team’s server workspaces.
+-   Disabled if a member of the Administrators security group of your team project collection has enabled asynchronous checkout for your team's server workspaces.
 
 A check-out lock prevents users who are using server workspaces from checking out and making changes to the locked item in their workspaces. You cannot apply a check-out lock to an item for which any [pending changes](develop-code-manage-pending-changes.md) exist, in any workspace other than your own.
 

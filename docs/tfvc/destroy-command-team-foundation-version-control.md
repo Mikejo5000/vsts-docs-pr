@@ -33,7 +33,7 @@ To use the **destroy** command, you must belong to the **Team Foundation Adminis
 <thead>
 <tr><th><p><strong>Argument</strong></p></th><th><p><strong>Description</strong></p></th></tr></thead><tbody>
 <tr>
-	<td><p><em>itemspec1</em> <em>[itemspec2…itemspecN]</em></p></td>
+	<td><p><em>itemspec1</em> <em>[itemspec2...itemspecN]</em></p></td>
 	<td><p>Specifies the server path of the file or folder to be destroyed. Use multiple <em>itemspec</em> values to delete multiple items. For example, <code>tf destroy $/TeamProject1 $/teamProject2 $/TeamProject3</code>.</p><p>Local paths are not supported.</p></td></tr>
 <tr>
 	<td><p><em>versionspec</em></p></td>

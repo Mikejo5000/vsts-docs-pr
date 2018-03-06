@@ -21,7 +21,7 @@ Having access to the history of a project has additional benefits, such as being
 
 Are you a new user of Visual Studio and Team Foundation Server (TFS)? Are you wondering how you and your team can get maximum benefit from the most recent version of these tools to build your app?
 
-If so, we suggest you take a few minutes to walk step-by-step through a day in the life of Peter and Julia, two developers at Fabrikam Fiber—a fictitious company that provides cable television and related services. Their team recently began [adopting Visual Studio and Team Foundation Server](https://msdn.microsoft.com/library/dd286491). You’ll see examples of how you can use Visual Studio Premium and TFS to check out and update code, suspend work when you’re interrupted, request a code review, check in your changes, and perform other tasks.
+If so, we suggest you take a few minutes to walk step-by-step through a day in the life of Peter and Julia, two developers at Fabrikam Fiber—a fictitious company that provides cable television and related services. Their team recently began [adopting Visual Studio and Team Foundation Server](https://msdn.microsoft.com/library/dd286491). You'll see examples of how you can use Visual Studio Premium and TFS to check out and update code, suspend work when you're interrupted, request a code review, check in your changes, and perform other tasks.
 
 -    [Day in the life of a developer: Write new code for a user story](day-life-alm-developer-write-new-code-user-story.md) 
 

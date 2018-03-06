@@ -94,13 +94,13 @@ In either Solution Explorer or Source Control Explorer, you can shelve a specifi
     ![](_img/suspend-your-work-manage-your-shelvesets/IC612902.png)
 
 	>**Tip:**  
-	>If you don’t know the name of the owner, you can type ***** to list shelvesets for all users.
+	>If you don't know the name of the owner, you can type ***** to list shelvesets for all users.
 
 4.  A list of shelvesets appears in the **Results** list. You can type a filter to reduce the size of the list.
 
 ## View and work with a shelveset
 
-After you have a list of shelvesets (explained in “To find a shelveset”) in the **Find Shelvesets** page, double-click the shelveset to view it.
+After you have a list of shelvesets (explained in "To find a shelveset") in the **Find Shelvesets** page, double-click the shelveset to view it.
 
 The **Shelveset Details** page appears.
 

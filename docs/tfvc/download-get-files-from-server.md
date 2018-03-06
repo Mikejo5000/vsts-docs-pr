@@ -23,7 +23,7 @@ You must be one of the **Contributors** for your team project. See [Team Foundat
 
 You should get the latest files from your server after you [set up your dev machine](set-up-team-foundation-version-control-your-dev-machine.md). Then you can begin developing your app.
 
-Later, as you develop functionality in the workspace on your dev machine, your code is isolated from the changes that are made by other developers. But when you are ready (for example, you have completed and checked in the code that completes a task), you should get the latest version of your team’s files.
+Later, as you develop functionality in the workspace on your dev machine, your code is isolated from the changes that are made by other developers. But when you are ready (for example, you have completed and checked in the code that completes a task), you should get the latest version of your team's files.
 
 ### To get the latest version of some files
 

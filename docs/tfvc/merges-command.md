@@ -82,7 +82,7 @@ The following example displays information about all merge operations performed 
         146         162                   Justin      10/31/2003
         147*        167                   Bill       11/02/2003
 
-    The asterisk ‘\*’ next to changeset 147 indicates that only some of the changes in that changeset \#147 were merged into changeset \#167.
+    The asterisk '\*' next to changeset 147 indicates that only some of the changes in that changeset \#147 were merged into changeset \#167.
 
 ## See Also
 

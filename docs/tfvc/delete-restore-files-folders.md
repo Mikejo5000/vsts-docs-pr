@@ -71,7 +71,7 @@ Verify the checkboxes to make sure they include the deleted files, then select *
 
 5.  In Source Control Explorer, navigate to the folder that contains the item you want to restore.
 
-6.  Open the item’s context menu (select the item and right-click it) and then choose **Undelete**.
+6.  Open the item's context menu (select the item and right-click it) and then choose **Undelete**.
 
 ## Restore TFVC managed items deleted from your dev machine outside of Visual Studio
 

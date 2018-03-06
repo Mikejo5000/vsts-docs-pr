@@ -126,9 +126,9 @@ When you choose **AutoResolve All**, and then **Specific Conflict Types**, the *
 <table>
 <thead>
 <tr>
-<th><p>If you want the system to automatically resolve conflicts that occurred because…</p></th>
-<th><p>As explained in this example…</p></th>
-<th><p>Then select this check box…</p></th>
+<th><p>If you want the system to automatically resolve conflicts that occurred because...</p></th>
+<th><p>As explained in this example...</p></th>
+<th><p>Then select this check box...</p></th>
 </tr>
 </thead>
 <tbody>

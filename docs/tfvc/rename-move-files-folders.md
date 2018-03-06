@@ -58,6 +58,6 @@ You should avoid renaming items managed by TFVC using your operating system (for
 
 You must be one of the **Contributors** for your team project. See [Team Foundation Server default groups, permissions, and roles](https://msdn.microsoft.com/library/ms253077).
 
--   If you are beginning a new task, it’s a good practice to [download the latest files from the server](download-get-files-from-server.md) before you make changes to files in your workspace.  
+-   If you are beginning a new task, it's a good practice to [download the latest files from the server](download-get-files-from-server.md) before you make changes to files in your workspace.  
 -   Avoid renaming an item that has been branched but not yet checked in. If you try to do so, a conflict will occur.  
--   You can [review and manage your work](develop-code-manage-pending-changes.md), [suspend your work](suspend-your-work-manage-your-shelvesets.md), and ultimately [contribute your work to the team’s codebase](check-your-work-team-codebase.md).
+-   You can [review and manage your work](develop-code-manage-pending-changes.md), [suspend your work](suspend-your-work-manage-your-shelvesets.md), and ultimately [contribute your work to the team's codebase](check-your-work-team-codebase.md).

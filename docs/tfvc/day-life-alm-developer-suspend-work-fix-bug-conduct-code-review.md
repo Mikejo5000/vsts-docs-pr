@@ -25,13 +25,13 @@ A powerful one-click way to switch your working context from one thread of work 
 
 As Peter works on a backlog item, Julia comes to discuss a bug that is blocking her. It is in an area with which Peter is familiar, so he creates a task to fix the bug and assigns it to himself. He decides to start work on the fix immediately.
 
-Before he starts to work on the new bug, Peter wants to make sure that his current work is set aside in a safe place on the team’s server. On the **My Work** page, Peter chooses **Suspend** to save (on Team Foundation Server):
+Before he starts to work on the new bug, Peter wants to make sure that his current work is set aside in a safe place on the team's server. On the **My Work** page, Peter chooses **Suspend** to save (on Team Foundation Server):
 
 -   All the work he has done, including changes to code, tests, and other files.
 
 -   Open solutions, windows, breakpoints, watch window variables, and other bits of Visual Studio state.
 
-Now that his workspace is clean, Peter drags the new task from **Available Work Items** to **In Progress Work**. He’s ready to research and write the fix.
+Now that his workspace is clean, Peter drags the new task from **Available Work Items** to **In Progress Work**. He's ready to research and write the fix.
 
 >**Note:**
 >  Your working context is linked to the work items that show as In Progress on the My Work page. By using **Suspend** and **Resume**, you can quickly switch between different tasks. Your open solutions and files, code changes, and Visual Studio layout are all switched together.
@@ -79,7 +79,7 @@ From the IntelliTrace log, Peter sees that sometimes the method returns false be
 
 ### 
 ## Augment the tests to show the error
-When a bug is found, it shows that there was a gap in the unit tests, or that the test did not match the users’ actual needs. Therefore, before fixing the bug, Peter adds a test that will demonstrate the presence of this error.
+When a bug is found, it shows that there was a gap in the unit tests, or that the test did not match the users' actual needs. Therefore, before fixing the bug, Peter adds a test that will demonstrate the presence of this error.
 
      
             // Added 2012-02-02 for bug 654321:
@@ -210,7 +210,7 @@ The reviewers and author of the code can exchange comments as often as they like
 
 3.  To view a file and see the code-blocks that have comments, or to edit a file, go to the **Comments** section. In the **Files** sub-section, open the shortcut menu for the file and choose either **Compare (Read-Only)** or **Edit File**.
 
-4.  When you and the other reviewers finish responding to each other’s comments and you are ready to close the review, click **Close Review**, and then choose either:
+4.  When you and the other reviewers finish responding to each other's comments and you are ready to close the review, click **Close Review**, and then choose either:
 
     -   **Complete** to indicate that the review is finished.
 
@@ -220,7 +220,7 @@ The reviewers and author of the code can exchange comments as often as they like
 
 ## Fix the test and the code
 
-Having read Julia’s comments, Peter fixes his unit test as she suggests. The test now fails. This shows that the code is not yet correct.
+Having read Julia's comments, Peter fixes his unit test as she suggests. The test now fails. This shows that the code is not yet correct.
 
 Peter fixes the code:
 

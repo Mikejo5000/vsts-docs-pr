@@ -33,7 +33,7 @@ You must be one of the **Contributors** for your team project. See [Team Foundat
 
     Type the number of the changeset and choose **OK**.
 
-    If you don’t know the number, choose **Find**. See [Find a changeset](find-view-changesets.md#find).
+    If you don't know the number, choose **Find**. See [Find a changeset](find-view-changesets.md#find).
 
 ## List changesets that update a specific file or folder
 
