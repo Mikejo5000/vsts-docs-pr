@@ -37,7 +37,7 @@ You can perform a branching operation by using either **Source Control Explorer*
 
 ## Convert a Folder to a Branch
 
-The release of Visual Studio Team Foundation Server 2010 began a distinction between branches and folders. The following illustration shows the top-level of the DinnerNow folder structure:
+The release of Visual Studio Team Foundation Server 2010 began a distinction between branches and folders. The following illustration shows the top-level of the DinnerNow folder structure:
 
 DinnerNow folder structure in Source Control Explorer  
 

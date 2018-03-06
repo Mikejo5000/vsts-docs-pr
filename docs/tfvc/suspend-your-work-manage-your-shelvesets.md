@@ -113,7 +113,7 @@ The **Shelveset Details** page appears.
 
     1.  For any file changes that you do not want to unshelve, open the context menu of the file, and then choose **Exclude**.
 
-    2.  If you want to delete the shelveset, clear the **Preserve shelveset on server** check box.
+    2.  If you want to delete the shelveset, clear the **Preserve shelveset on server** check box.
 
     3.  If you do not want to restore the work item list and check-in notes that are stored in the shelveset clear the **Restore work items and check-in notes** check box.
 

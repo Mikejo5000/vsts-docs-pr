@@ -24,7 +24,7 @@ To apply a label, you must have the **Label** permission set to **Allow**. To fi
 
 In many software projects, when the code has reached a reasonable level of quality and stability, the team will build and release a new version of the product. The team needs to mark the current version of each file so that even as the files continue to change, the team can still get and build the new version of every file in their project.
 
-Theoretically, you could record the ID of each changeset for each file manually; but clearly this kind of process is not practical. Team Foundation version control makes the job simple: You apply a label to the folder, branch, or team project that contains the files. You can give the label a name that follows whatever naming convention you prefer. Some examples of label names include: "Sprint 5", "M1", "Beta2", and "Release Candidate 0".
+Theoretically, you could record the ID of each changeset for each file manually; but clearly this kind of process is not practical. Team Foundation version control makes the job simple: You apply a label to the folder, branch, or team project that contains the files. You can give the label a name that follows whatever naming convention you prefer. Some examples of label names include: "Sprint 5", "M1", "Beta2", and "Release Candidate 0".
 
 After you have applied the label, you can use it to qualify operations such as building, branching, merging, comparing, and getting specific versions of files and folders.
 

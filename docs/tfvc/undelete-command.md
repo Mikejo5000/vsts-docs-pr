@@ -16,7 +16,7 @@ ms.date: 08/10/2016
 The **undelete** command restores items that were previously deleted.
 
 >**Note:**  
->  ** **The results of this command are not visible in other workspaces until you perform a check-in operation. For more information, see [Check In Pending Changes](https://msdn.microsoft.com/library/ms181411).
+>  ** **The results of this command are not visible in other workspaces until you perform a check-in operation. For more information, see [Check In Pending Changes](https://msdn.microsoft.com/library/ms181411).
 
 **Required Permissions**
 

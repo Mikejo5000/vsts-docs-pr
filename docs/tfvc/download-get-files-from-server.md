@@ -50,15 +50,15 @@ In special cases (for example, to fix a regression bug), you might need to get a
 
 2.  Choose an option from the **Type** drop-down list:
 
-    -   **Changeset**   Get a version by specifying a [changeset](find-view-changesets.md). For more information, see [Find and view changesets](find-view-changesets.md).
+    -   **Changeset**   Get a version by specifying a [changeset](find-view-changesets.md). For more information, see [Find and view changesets](find-view-changesets.md).
 
-    -   **Date**   Get a version by specifying a date. If selected, select a date in the **Date** list.
+    -   **Date**   Get a version by specifying a date. If selected, select a date in the **Date** list.
 
-    -   **Label**   Get a version by specifying a [label](use-labels-take-snapshot-your-files.md). For more information, see [Use labels to take a snapshot of your files](use-labels-take-snapshot-your-files.md).
+    -   **Label**   Get a version by specifying a [label](use-labels-take-snapshot-your-files.md). For more information, see [Use labels to take a snapshot of your files](use-labels-take-snapshot-your-files.md).
 
-    -   **Latest Version**   Select this option to get the latest version on the server.
+    -   **Latest Version**   Select this option to get the latest version on the server.
 
-    -   **Workspace Version**   Gets a version by specifying a [workspace](create-work-workspaces.md).
+    -   **Workspace Version**   Gets a version by specifying a [workspace](create-work-workspaces.md).
 
 3.  (Optional) Select the **Overwrite writable files that are not checked out** option.
 

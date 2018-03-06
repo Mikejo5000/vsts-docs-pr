@@ -77,7 +77,7 @@ To use the **destroy** command, you must belong to the **Team Foundation Adminis
 ## Remarks
 When you use **tf destroy** to destroy version-control files, the application tier of Team Foundation Server receives the destroy request and checks to see whether you are a member of the **Team Foundation Administrators** security group. If you are not a member, the system displays an error-message dialog box that tells you that you do not have sufficient permissions to perform the operation.
 
-After the system verifies your permissions, it runs the destroy command. This command deletes all file references, shelvesets, and pending changes. The actual destruction of files, which is a permanent deletion, happens the next time that the content that is no longer referenced by Team Foundation Server is cleaned up. You can also specify the **/startcleanup** option to clean up the files immediately after **tf destroy** runs.
+After the system verifies your permissions, it runs the destroy command. This command deletes all file references, shelvesets, and pending changes. The actual destruction of files, which is a permanent deletion, happens the next time that the content that is no longer referenced by Team Foundation Server is cleaned up. You can also specify the **/startcleanup** option to clean up the files immediately after **tf destroy** runs.
 
 If you run **tf destroy** without specifying **/i** and **/preview**, the system displays a console **Yes** or **No** prompt for each *filespec* value. Otherwise, you can specify **Yes to all**. If you do not specify **/keephistory**, you are prompted by an interactive text that warns of pending changes, if they exist. The interactive text points to **/preview** if you want more information about the changes. If you specify **/keephistory**, you are also prompted by **Yes**, **No**, or **All** text. If you select **Yes** or **All**, the destruction process starts, and the server paths to the destroyed items appear in the Command Prompt window.
 
@@ -99,9 +99,9 @@ For more information about how to find the **tf** command-line utility, see [Tf 
 
 If you specify the **/keephistory** option to retain the history of destroyed files, the files are treated as destroyed by the following Team Foundation version control operations:
 
--   **Change content   **If you try to change the content of a destroyed file, for example edit or branch, the system issues an error message that states the content has been destroyed.
+-   **Change content   **If you try to change the content of a destroyed file, for example edit or branch, the system issues an error message that states the content has been destroyed.
 
--   **Branch, merge, or unshelve   **If you try to branch, merge, or unshelve destroyed items, the system issues an error message that states the content of the items has been destroyed.
+-   **Branch, merge, or unshelve   **If you try to branch, merge, or unshelve destroyed items, the system issues an error message that states the content of the items has been destroyed.
 
 ### Destroying Previously Deleted Items
 

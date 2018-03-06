@@ -45,7 +45,7 @@ Locks on folders are implicitly recursive. If you lock a folder, you do not have
 
 Only one user at a time may hold a lock on a particular file or folder. You can learn which files are locked in the Team Foundation version control server and by whom they were locked by using the [Status command](status-command.md).
 
-A lock may be placed either as its own operation or as part of several other operations. These include rename, checkout, delete, undelete, merge, branch, and add to source control. When you lock an item as part of an add to source control or branch operation, Team Foundation places the lock on the server path where the new item will be created. This prevents another user from adding or branching a file to the same location. When you lock an item by using the rename command, both old and new server paths are locked.
+A lock may be placed either as its own operation or as part of several other operations. These include rename, checkout, delete, undelete, merge, branch, and add to source control. When you lock an item as part of an add to source control or branch operation, Team Foundation places the lock on the server path where the new item will be created. This prevents another user from adding or branching a file to the same location. When you lock an item by using the rename command, both old and new server paths are locked.
 
 ## Unlocking an Item
 

@@ -126,7 +126,7 @@ For more information about how to find the **tf** command-line utility, see [Tf 
 
 ### Removing and Deleting Labels
 
-You can use the [Unlabel Command](unlabel-command.md) to remove a label from a file or folder. Alternatively, you can delete a label from the system using the `tf label /delete` command.
+You can use the [Unlabel Command](unlabel-command.md) to remove a label from a file or folder. Alternatively, you can delete a label from the system using the `tf label /delete` command.
 
 For information about an existing label that includes a list of the items to which the label has been attached, its comment, scope, and owner, see [Labels Command](labels-command.md).
 
