@@ -46,20 +46,18 @@ If you're just getting started, review [Kanban basics](kanban-basics.md) to get 
 
 2. Open the Definition of Done for the column that applies to the criteria you'll enter. You can specify the Definition of Done for each intermediate column on your team's Kanban board.
 
-3. 	Click a column tab and enter the Definition of Done for that column. Enter text that defines your [team's Definition of Done](#definition-of-done).    
-::: moniker-end  
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"	    
- 	<img src="_img/vso-kanban-board-definition-of-done-no-tags.png" alt="Kanban board, Coding column tab, Definition of done]" style="border: 1px solid #C3C3C3;" />    
-::: moniker-end   
-::: moniker range="tfs-2015"   
+3. Click a column tab and enter the Definition of Done for that column. Enter text that defines your [team's Definition of Done](#definition-of-done).    
+	::: moniker range="vsts || >= tfs-2017 <= tfs-2018"	    
+	<img src="_img/vso-kanban-board-definition-of-done-no-tags.png" alt="Kanban board, Coding column tab, Definition of done]" style="border: 1px solid #C3C3C3;" />    
+	::: moniker-end   
+	::: moniker range="tfs-2015"   
 	**For TFS 2015.1 and later versions**    
- 	<img src="_img/vso-kanban-board-definition-of-done-no-tags.png"   alt="Kanban board, Coding column tab, Definition of done]" style="border: 1px solid #C3C3C3;" />     
+	<img src="_img/vso-kanban-board-definition-of-done-no-tags.png"   alt="Kanban board, Coding column tab, Definition of done]" style="border: 1px solid #C3C3C3;" />     
 	**For TFS 2015**  
 	![Edit Definition](_img/ALM_DD_EditDefinition.png)    	 
 	Enter text that defines your [team's Definition of Done](#definition-of-done).    
 	![Definition Text](_img/ALM_DD_DefinitionText.png)  
-::: moniker-end   
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"     
+	::: moniker-end   
 4. Team members can quickly check that they have met the criteria by clicking the Information tooltip ![Info Icon](_img/ALM_DD_InfoIcon.png) icon.  
 ::: moniker-end  
 
