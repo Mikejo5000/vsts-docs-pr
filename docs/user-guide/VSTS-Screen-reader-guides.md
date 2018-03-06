@@ -27,7 +27,7 @@ There are three landmarks on every VSTS page:
 
 **The layout of VSTS pages**
 
-In general, all pages in VSTS have a common layout. At the very top of the page is the first level navigation section, with links to major hubs like Dashboards, Code, and Work on the top left. In addition there is a project/team picker to the left of these links. The project/team picker can be used to look at different teams boards or pull requests. On the right of this navigation section is a work item/code search input, as well as links to your profile settings, and a link to give feedback to VSTS.
+In general, all pages in VSTS have a common layout. At the very top of the page is the first level navigation section, with links to major hubs like Dashboards, Code, and Work on the top left. In addition there is a project/team picker to the left of these links, which is detailed below. On the right of this navigation section is a work item/code search input, as well as links to your profile settings, and a link to give feedback to VSTS.
 
 Below the first level navigation setting is a second level navigation menu. Each of the major hubs has it's own second level navigation section with it's own links. The Work hub has the backlogs and queries hubs, the code hub has the files, pull requests, and branches hubs. 
 
