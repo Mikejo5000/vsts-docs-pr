@@ -8,14 +8,14 @@ ms.assetid: 364000d3-200a-495a-bfb9-83915240af67
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article
-ms.date: 02/05/2018  
+ms.date: 03/01/2018
 ---
 
 # Create managed queries with the query editor
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-You can create queries in VSTS, the  web portal for Team Foundation Server (TFS), and Team Explorer. Also, you can open a query in [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) or [Project](../backlogs/office/create-your-backlog-tasks-using-project.md) to perform bulk additions and modifications.  
+Managed queries generate a list of work items based on the filter criteria you provide. You can create queries from the web portal or from a supported client, such as Visual Studio Team Explorer and Team Explorer Everywhere.  Also, you can open a query in [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) or [Project](../backlogs/office/create-your-backlog-tasks-using-project.md) to perform bulk additions and modifications.  
 
 For details on constructing query clauses and information on each query operator&mdash;such as, `Contains`, `In`, `In Group`, and `<>`(not operator) &mdash;and macros, see [Query fields, operators, and macros](query-operators-variables.md). For an index of example queries, see [Create managed queries](example-queries.md#examples). 
 
@@ -37,6 +37,9 @@ In this topic you'll learn:
 The easiest way to define a query is to start with an existing shared query. 
 The following example shows how to find all closed bugs by modifying the 
 Active Bugs shared query provided with the Agile process template. Examples are based on the user interface provided through the web portal. 
+
+::: moniker range="vsts"  
+
 
 1.	Open a shared query. For example, from the web portal, open the Active Bugs or similar flat list query.   
   
@@ -190,7 +193,7 @@ See also:
 - [Adhoc versus managed queries](adhoc-vs-managed-queries.md)  
 - [Add work items](../backlogs/add-work-items.md)  
 - [Chart a flat-list query](../../report/dashboards/charts.md)  
-- [Change column options](https://docs.microsoft.com/en-us/vsts/work/backlogs/set-column-options?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json)
+- [Change column options](../backlogs/set-column-options.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json)
 - [Define a query as a hyperlink](define-query-hyperlink.md) 
 - [Work item field index](../work-items/guidance/work-item-field.md) 
 - [Query keyboard shortcuts](queries-keyboard-shortcuts.md)

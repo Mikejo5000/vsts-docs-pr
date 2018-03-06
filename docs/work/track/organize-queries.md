@@ -1,7 +1,7 @@
 ---
-title: Organize and view queries 
+title: Organize and view queries, create query folders 
 titleSuffix: VSTS & TFS  
-ms.custom: Triage work items
+ms.custom: Organize queries
 description: Manage your queries by using favorites and folders in Visual Studio Team Services and Team Foundation Server 
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-wit
