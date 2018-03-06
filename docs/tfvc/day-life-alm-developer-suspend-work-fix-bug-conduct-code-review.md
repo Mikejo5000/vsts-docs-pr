@@ -9,6 +9,7 @@ ms.manager: douge
 ms.author: sdanie
 ms.date: 08/25/2016
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
 # Day in the life of a devops developer: suspend work, fix a bug, and conduct a code review
 
@@ -175,7 +176,7 @@ In her comments, Julia points out that the test is wrong. The allowable error sh
 
     -   Choose **Accept** or **Decline** to notify the author whether you will perform the review.
 
-    -   Choose **Add Reviewer** to add other reviewers to the code–review request.
+    -   Choose **Add Reviewer** to add other reviewers to the code-review request.
 
     -   View the changes to each file that has been updated for this work item.
 

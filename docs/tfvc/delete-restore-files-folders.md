@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: sdanie
 ms.date: 12/05/2016
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
 # Delete or restore files and folders in Team Foundation Version Control (TFVC)
 

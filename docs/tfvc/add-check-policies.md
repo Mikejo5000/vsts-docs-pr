@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: sdanie
 ms.date: 08/18/2016
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
 # Add Check-In Policies
 

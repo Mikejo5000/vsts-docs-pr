@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: sdanie
 ms.date: 08/10/2016
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
 # Difference Command
 
@@ -129,7 +130,7 @@ The *format* parameter, used with the **/format** option, specifies many differe
 
 -   **Context**
 
-    **Context** format provides lines of context for the differences in the files. This format is derived from the UNIX based **diff –c** output format.
+    **Context** format provides lines of context for the differences in the files. This format is derived from the UNIX based **diff -c** output format.
 
 -   **RCS**
 
@@ -151,7 +152,7 @@ The *format* parameter, used with the **/format** option, specifies many differe
 
 -   **Unified**
 
-    **Unified** format is derived from the UNIX based **diff –u** output format. **/format:context** repeats identical context lines between the difference strings although **/format:unified** does not.
+    **Unified** format is derived from the UNIX based **diff -u** output format. **/format:context** repeats identical context lines between the difference strings although **/format:unified** does not.
 
     **Unified** format produces a new unified difference string (@@ ... @@) line only when the distance to the next difference string is larger than the number of context lines.
 
