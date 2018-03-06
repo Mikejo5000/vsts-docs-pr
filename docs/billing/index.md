@@ -6,7 +6,7 @@ ms.technology: vs-devops-setup
 ms.assetid: eec3c8aa-7985-47fc-8c10-6be0f41eb441
 ms.manager: douge
 ms.author: chcomley
-ms.date: 1/29/2018
+ms.date: 03/06/2018
 ---
 [//]: # (monikerRange: '>= tfs-2015')
 
@@ -23,7 +23,7 @@ All VSTS charges appear on your monthly Azure bill. Azure supports payment by cr
 
 [//]: # (::: moniker-end)
 
-[//]: # (::: moniker range=">= tfs-2015 < vsts")
+//]: # (::: moniker range=">= tfs-2015")
 
 ## Billing for TFS
 
@@ -34,7 +34,7 @@ You can also make some purchases for TFS on your monthly Azure bill.
 
 [//]: # (::: moniker-end)
 
-[//]: # (::: moniker range=">= tfs-2015 < vsts")
+[//]: # (::: moniker range="vsts")
 
 ## 5-Minute Quickstarts
 
