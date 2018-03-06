@@ -12,6 +12,8 @@ ms.topic: VSTS-Screen-reader-guides
 VSTS strives to be an accessible product for all, but using the product can still be a challenge if you rely on a screen reader. If you use a screen reader, this article can help you understand how to use VSTS.
 
 Here you will find guidance on the layout of all of our pages in general, common patterns for navigating the product, and more specific guidance on how to go through our most common scenarios. We hope you find this documentation useful and would always love to hear feedback on how we can improve this.
+
+
 **VSTS**
 
 
@@ -35,6 +37,10 @@ Below both of these navigation sections is the main landmark of the page. This c
 
 VSTS is an application that enables teams to work better together. The experience is largely driven off the current team context, which is visible at the top left of the application. Depending on the current team, you will see different work items/kanban boards/pull requests. It is important to pick the team that you want to see work items for here before navigating to our other experiences.
 
+**Experience as a public user**
+
+VSTS has recently added public projects support, which allows a project to be publicly visible by anyone. If you are visiting a VSTS project as an anonymous user, you will probably be greeted with a read-only experience. The application may look different than you are used to, and the application may be for the most part disabled due to your lack of permissions. If you are having trouble using this experience, please reach out to us with feedback.
+
 **The Work Hub**
 
 The work hub consists of four sections, Work Items, Boards, Backlogs, and Queries. Work Items contains groupings of work items that show you the most pressing work of the day. This section is useful for quickly finding work that is assigned to you, or has been recently created. The hub consists of a grid displaying a list of work items, with a set of filters at the top that you can use to change the work items being shown. Clicking on a work item in the grid will take you to the Work Item Form.
@@ -44,10 +50,6 @@ The work hub consists of four sections, Work Items, Boards, Backlogs, and Querie
 The work item form is probably the most commonly used piece of UI in VSTS, but it can be hard to understand and navigate for users with screen readers. At the top of the form is the title of the work item next to it's ID. Below this are a variety of controls that are used to edit the work items data. They may be editable, or they may be read-only, depending on the state of the work item and your permissions. At the top right of the form is the save button, along with a context menu with a list of items with further operations you can do on this work item.
 
 The work item form is customizable, and may have a different structure depending on your projects process. Talk to your project administrator if you are having trouble understanding the work item form your team uses.
-
-**Boards**
-
-The Boards section contains a Kanban board
 
 **Asking for feedback**
 
