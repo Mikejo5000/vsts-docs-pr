@@ -8,7 +8,7 @@ ms.manager: douge
 ms.author: chcomley
 ms.date: 03/06/2018
 ---
-[//]: # (::: moniker range=">= tfs-2015 < vsts")
+[//]: # (::: moniker range=">= tfs-2015")
 
 **VSTS | TFS 2018 | TFS 2017 | TFS 2015**
 
@@ -23,7 +23,7 @@ All VSTS charges appear on your monthly Azure bill. Azure supports payment by cr
 
 [//]: # (::: moniker-end)
 
-//]: # (::: moniker range=">= tfs-2015")
+[//]: # (::: moniker range=">= tfs-2015 < vsts")
 
 ## Billing for TFS
 
