@@ -8,8 +8,9 @@ ms.manager: douge
 ms.author: chcomley
 ms.date: 10/17/2017
 ms.topic: get-started-article
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
+
 
 # Change Azure AD tenant -- Reassign VSTS account ownership to a directory member
 

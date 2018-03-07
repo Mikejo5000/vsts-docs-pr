@@ -8,15 +8,16 @@ ms.manager: douge
 ms.reviewer: jrice 
 ms.author: kaelli
 ms.date: 11/28/2017
+monikerRange: '>= tfs-2013'
 ---
 
-[//]: # (monikerRange: '>= tfs-2013')
+
 
 # About access levels
 
 **TFS 2018** | **TFS 2017** | **TFS 2015** | **TFS 2013**
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDEÂ [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 Access levels enable administrators the ability to provide their user base access to the features they need and only pay for those features. To connect and use the functions and features that TFS provides, users must be added to a group with the appropriate permissions. To use select web portal features, they must also belong to the access level that enables access to that feature.
 
@@ -74,7 +75,7 @@ For TFS 2017.2, Assign **Advanced** access to those users for whom you've purcha
 **TFS 2017.1**
 
 > [!NOTE]   
-> With TFS 2017.1, the Advanced access level was temporarily disabled. Updating to TFS 2017.2 will re-enable it. If you are on TFS 2017.1 and have users with Visual Studio Test Professional or MSDN Platforms subscriptions, you should assign them Basic access level. In addition, you need to open the **Users** hub for the project collections in which they are a member and [assign them the Test Manager extension](../marketplace/assign-paid-extensions.md). To learn more, see [Buy access to TFS or the TFS Test hub](../billing/buy-access-tfs-test-hub.md). 
+> With TFS 2017.1, the Advanced access level was temporarily disabled. Updating to TFS 2017.2 will re-enable it. If you are on TFS 2017.1 and have users with Visual Studio Test Professional or MSDN Platforms subscriptions, you should assign them Basic access level. In addition, you need to open the **Users** hub for the project collections in which they are a member and [assign them the Test Manager extension](../marketplace/assign-paid-extensions.md).Â To learn more, see [Buy access to TFS or the TFS Test hub](../billing/buy-access-tfs-test-hub.md). 
 
 **TFS 2017, TFS 2015, TFS 2013**
 

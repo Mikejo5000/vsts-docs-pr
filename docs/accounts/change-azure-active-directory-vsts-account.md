@@ -8,8 +8,9 @@ ms.manager: douge
 ms.author: chcomley
 ms.date: 02/28/2018
 ms.topic: get-started-article
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
+
 
 # Change Azure Active Directory (Azure AD) tenant
 

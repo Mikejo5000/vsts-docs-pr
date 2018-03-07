@@ -8,19 +8,20 @@ ms.assetid: 5AD0BF62-C91E-46DD-8C1A-C8D1F8F8D05F
 ms.manager: douge
 ms.author: kaelli
 ms.date: 11/27/2017
+monikerRange: '>= tfs-2013'
 ---
 
-[//]: # (monikerRange: '>= tfs-2013')
+
 
 # Set permissions and access for work tracking
 
 **VSTS** | **TFS 2017** | **TFS 2015** | **TFS 2013**
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDEÂ [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 You grant or restrict access to various work tracking features by granting users or groups specific permissions for an object, team project, or collection. Or, when you assign a user as a team administrator, they have permissions to manage all assets for the specific team. Add users to the Contributors group to provide access to most features as listed in [Permissions and access for work tracking](permissions-access-work-tracking.md). 
 
-> [!div class="mx-tdBreakAll"]  
+> [!div class="mx-tdBreakAll"]Â Â 
 > | Role or permission level | Functional areas set  |
 > |-----------------------|-----------------------------------|
 > |**Team administrator role** | - Configure team settings<br/>- Define and edit team dashboards<br/>- Define and edit team-level work item templates<br/>- Add team members and team administrators|
@@ -36,7 +37,7 @@ To add a user to the team administrator role, see [Add a team administrator](../
 
 The **Edit project-level information** and **Edit instance-level information** (also referred to as Edit collection-level information) provide permissions to several work tracking features as summarized below. To add users or set permissions at these levels, see [Add administrators, set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md).
 
-> [!div class="mx-tdBreakAll"]  
+> [!div class="mx-tdBreakAll"]Â Â 
 > | Edit project-level information | Edit instance-level information  |
 > |-----------------------|-----------------------------------|
 > - Add and administer teams and all team-related features<br/>- Create and modify areas and iterations<br/>- Edit shared work item queries<br/>- Edit team project level permission ACLs<br/>- Manage process templates<br/>- Customize a team project <br/>- Create and modify global lists<br/>- Edit event subscriptions (email or SOAP) on team project level events.|- Add and administer teams and all team-related features<br/>- Create and modify areas and iterations<br/>- Edit check-in policies<br/>- Edit shared work item queries<br/>- Edit team project level and collection level permission ACLs<br/>- Manage process templates<br/>- Customize a team project or process<br/>- Create and modify global lists<br/>- Edit event subscriptions (email or SOAP) on team project or collection level events. |
@@ -126,7 +127,7 @@ Set the permissions for **Manage test plans** and **Manage test suites** to **Al
 
 To have full access to the Test feature set, your [access level must be set to Advanced](change-access-levels.md). Users with Basic access and with permissions to permanently delete work items and manage test artifacts can only delete orphaned test cases. 
  
-[//]: # (monikerRange: 'vsts')
+
 
 <a id="process-permissions"></a>
 
@@ -149,7 +150,7 @@ To customize a process, you need to grant **Edit process**  permissions to a use
 >[!NOTE]  	  
 > Each process is a securable unit and has individual access control lists (ACLs) that govern creating, editing, and deleting inherited processes.  At the collection level, team project collection administrators can choose which processes can be inherited from and by whom. When you create a new inherited process, the process creator as well as team project collection administrators have full control of the process and can also set individual ACLs for other users and groups to edit and delete the process.
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ## Additional options for restricting access to work items   
 

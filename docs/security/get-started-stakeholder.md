@@ -8,20 +8,21 @@ ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article
 ms.date: 10/10/2017
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: '>= tfs-2015')
+
 
 # Get started as a Stakeholder
 
 **VSTS** | **TFS 2017** | **TFS 2015**
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDEÂ [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 With Stakeholder access, you can add and modify work items, approve releases, and view dashboards. You can check project status and provide direction, feedback, feature ideas, and business alignment to a team. 
 
 Use this topic to learn:
 
-> [!div class="checklist"]   
+> [!div class="checklist"]Â Â Â 
 > * How to sign-in to an account
 > * How to add a work item
 > * How to view the product backlog and add new work to it
@@ -51,9 +52,9 @@ You might see different work item types in your view based on the process select
 
 
 >[!NOTE]  
->A caution icon on a tab indicates values that violate validation rules. You must correct information on that tab in order to save the work item.    
+>A caution icon on a tab indicates values that violate validation rules. You must correct information on that tab in order to save the work item. Â Â  
  
-[//]: # (::: moniker range=">= tfs-2017")
+::: moniker range=">= tfs-2017"
    
 #### VSTS, TFS 2017
 
@@ -65,9 +66,9 @@ Enter a title and then save the work item. Before you can change the State from 
 
 <img src="../work/backlogs/_img/add-new-work-item-vsts-user-story.png" alt="Agile process, User story work item form" style="border: 1px solid #CCCCCC;" />
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range=">= tfs-2015")
+::: moniker range=">= tfs-2015"
 
 #### TFS 2015
 
@@ -88,7 +89,7 @@ Work items you add are automatically scoped to your [team's area and iteration p
 >	
 > For an overview of all three processes, see [Choose a process](../work/work-items/guidance/choose-process.md). 
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 <a id="check-backlog">  </a>
 

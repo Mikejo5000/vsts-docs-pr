@@ -9,14 +9,15 @@ ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article
 ms.date: 02/06/2018
+monikerRange: '>= tfs-2013'
 ---
-[//]: # (monikerRange: '>= tfs-2013')
+
 
 # Remove user accounts
 
 **VSTS** | **TFS 2017** | **TFS 2015** | **TFS 2013**
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDEÂ [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 When a user with access to Visual Studio Team Services (VSTS) or Team Foundation Server (TFS) leaves a company, an administrator would typically remove them from Azure Active Directory or Active Directory. This will automatically void their user account and remove their ability to access or connect to VSTS or TFS. 
 
@@ -24,7 +25,7 @@ If you manage your VSTS users with Microsoft Service Accounts (MSA), then you'll
 
 
 In this topic you'll find:
-> [!div class="checklist"]   
+> [!div class="checklist"]Â Â Â 
 > * A checklist to review when removing user accounts
 > * Options for removing users from VSTS accounts
 > * Links to topics for removing user accounts from AD or Azure AD  
@@ -66,5 +67,5 @@ For information on removing users from AD or Azure AD, see one of these topics:
 - [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md)
 - [About security and identity](about-security-identity.md)
 
-[!INCLUDE [temp](../_shared/help-support-shared.md)] 
+[!INCLUDEÂ [temp](../_shared/help-support-shared.md)]Â 
 

@@ -7,9 +7,10 @@ ms.assetid: 4600B0D9-3799-4902-814B-F6EC9098C4CE
 ms.manager: douge
 ms.author: kaelli
 ms.date: 12/07/2016
+monikerRange: '>= tfs-2015'
 ---
 
-[//]: # (monikerRange: '>= tfs-2015')
+
 
 # Software development roles supported by VSTS and TFS
 

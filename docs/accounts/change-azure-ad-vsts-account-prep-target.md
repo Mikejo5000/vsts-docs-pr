@@ -8,8 +8,9 @@ ms.manager: douge
 ms.author: chcomley
 ms.date: 01/29/2018
 ms.topic: get-started-article
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
+
 
 #	Change Azure AD tenant -- prepare target directory
 

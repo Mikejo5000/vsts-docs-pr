@@ -8,15 +8,16 @@ ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article
 ms.date: 12/18/2017
+monikerRange: '>= tfs-2013'
 ---
 
-[//]: # (monikerRange: '>= tfs-2013')
+
 
 # Change individual permissions, grant select access to specific functions  
 
 **VSTS** | **TFS 2017** | **TFS 2015** | **TFS 2013**
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDEÂ [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 The standard way for permissions to accrue to individuals are by adding user accounts to one or more built-in security groups. However, in certain instances, you'll want to grant additional permissions to select individuals, but perhaps not all permissions assigned to the security group. For example, you might want to grant several individuals the ability to add or edit area and iteration paths, but not have all permissions available to members of the Project Administrators group. 
 
@@ -26,7 +27,7 @@ The three ways to change permissions for an individual are:
 - For project or collection-level permissions: Search for the user account and selectively change their permission assignments  
 
 In this topic you'll learn how to:
-> [!div class="checklist"]   
+> [!div class="checklist"]Â Â Â 
 > * Create a custom security group 
 > * Set permissions for a custom security group 
 > * Add members to a custom security group 
@@ -34,7 +35,7 @@ In this topic you'll learn how to:
 
 If you are new to administrating permissions and groups, review [About permissions and groups](about-permissions.md) to learn about permission states and inheritance. 
 
-[!INCLUDE [temp](../_shared/image-differences.md)]
+[!INCLUDEÂ [temp](../_shared/image-differences.md)]
 
 <a id="create-custom-group" />
 
