@@ -8,8 +8,9 @@ ms.topic: get-started-article
 toc: show
 ms.manager: douge
 ms.author: sdanie
-ms.date: 02/14/2018
+ms.date: 03/08/2018
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
 # Share your code with Visual Studio 2017 and VSTS Git
 

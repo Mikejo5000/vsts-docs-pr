@@ -9,6 +9,7 @@ ms.manager: douge
 ms.author: sdanie
 ms.date: 09/08/2017
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
 # VSTS Plugin for IntelliJ IDEA and Android Studio
 
