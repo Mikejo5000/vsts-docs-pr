@@ -7,15 +7,16 @@ ms.technology: vs-devops-admin
 ms.manager: douge
 ms.author: kaelli
 ms.date: 10/24/2017
+monikerRange: '>= tfs-2013'
 ---
 
-[//]: # (monikerRange: '>= tfs-2013')
+
 
 # Security & Identity 
 
 **VSTS** | **TFS 2017** | **TFS 2015** | **TFS 2013**
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDEÂ [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 For anyone to access a team project, you must add them to a security group. For a quick look at what permissions are assigned to the default security groups, see [Default permissions and access assignments](permissions-access.md).
 

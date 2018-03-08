@@ -10,14 +10,15 @@ ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article
 ms.date: 02/12/18
+monikerRange: '>= tfs-2013'
 ---
-[//]: # (monikerRange: '>= tfs-2013')
+
 
 # About security and identity
 
 **TFS 2018** | **TFS 2017** | **TFS 2015** | **TFS 2013**
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDEÂ [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 Visual Studio Team Services (VSTS), our cloud-hosted application, is based on the capabilities of Team Foundation Server, with additional cloud services. Both support development projects, from planning through deployment. 
 VSTS uses Microsoft Azure's Platform as a Service infrastructure and many of Azure's services, including Azure SQL databases, to deliver a reliable, globally available service for your development projects. 
@@ -137,8 +138,8 @@ see [Permissions and groups reference](permissions.md).
 
 There are a number of artifacts whose permissions are managed by role. These include the following artifacts and features.  
 
-> [!div class="mx-tdCol2BreakAll"]    
-> |**Object-level** |**Project-level settings**  |**Collection-level settings**  | 
+> [!div class="mx-tdCol2BreakAll"]Â Â Â  
+> |**Object-level** |**Project-level settings**Â Â |**Collection-level settings**Â Â | 
 > |-------------|----------|----------|
 > |- Deployment groups<br/>- Secure files<br/>- Variable groups<br/>|- Agent queues<br/>- Service endpoints<br/>-Team administration|- Agent pools<br/>- Deployment pools<br/>- Marketplace extensions |
 

@@ -7,15 +7,16 @@ ms.assetid:
 ms.manager: douge
 ms.author: kaelli
 ms.date: 12/18/2017
+monikerRange: '>= tfs-2013'
 ---
 
-[//]: # (monikerRange: '>= tfs-2013')
+
 
 # Security glossary
 
 **VSTS** | **TFS 2017** | **TFS 2015** | **TFS 2013**
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDEÂ [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 The Microsoft Security glossary is a short dictionary of terms used in authenticating users and managing permissions on the Visual Studio Team Services (VSTS) and Team Foundation Server platforms.   
 

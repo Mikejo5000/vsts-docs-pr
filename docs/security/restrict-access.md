@@ -8,15 +8,16 @@ ms.technology: vs-devops-admin
 ms.manager: douge
 ms.author: kaelli
 ms.date: 02/12/2018
+monikerRange: '>= tfs-2013'
 ---
 
-[//]: # (monikerRange: '>= tfs-2013')
+
 
 # Grant or restrict access to select features and functions
 
 **VSTS** | **TFS 2017** | **TFS 2015** | **TFS 2013**
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDEÂ [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 
 You can grant or restrict access to resources that you manage in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS). Depending on your project needs, you may want to open up or close down access to a select set of features and for a select set of users. While the built-in security groups provide a standard set of permission assignments, you may need additional security requirements not met by these assignments.   
@@ -34,8 +35,8 @@ Maybe consider this in a 2 or 3 step process:
 
 Use this topic to learn: 
 
-> [!div class="checklist"]  
-> * Recommended method for granting and restricting permissions       
+> [!div class="checklist"]Â Â 
+> * Recommended method for granting and restricting permissions  Â     
 > * How to delegate tasks by assigning select permissions to specific roles
 > * How to restrict access to view or modify objects 
 > * How to restrict modification of work items based on a user or group 

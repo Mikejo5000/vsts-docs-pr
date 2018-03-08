@@ -7,14 +7,15 @@ ms.assetid: 5AD0BF62-C91E-46DD-8C1A-C8D1F8F8D05F
 ms.manager: douge
 ms.author: kaelli
 ms.date: 10/23/2017
+monikerRange: '>= tfs-2013'
 ---
-[//]: # (monikerRange: '>= tfs-2013')
+
 
 # Permissions and access for work tracking
 
 **VSTS** | **TFS 2017** | **TFS 2015** | **TFS 2013**
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDEÂ [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 You can use the majority of work tracking functions and features that VSTS or TFS provides if you are added as a team member, which adds you to the Contributors group. The most common built-in groups include Readers, Contributors, and Project Administrators. These groups are assigned the default permissions for tracking work as listed below.
 
@@ -26,14 +27,14 @@ The team administrator role supports configuration of team settings. To be added
 
 ## Default work tracking permissions and access 
 
-[!INCLUDE [temp](_shared/work.md)]
+[!INCLUDEÂ [temp](_shared/work.md)]
 
 
 ## Test management permissions   
 
 Test plans, test suites, test cases and other test artifacts are specific work item types that support manual and exploratory testing. You set [test permissions at the team project level](set-project-collection-level-permissions.md) from the admin context Security page.  
 
-[!INCLUDE [temp](_shared/test.md)]
+[!INCLUDEÂ [temp](_shared/test.md)]
 
 
 Area permissions for web-based test case management and test execution control access to the following actions.  

@@ -8,9 +8,10 @@ ms.assetid: D861983F-CC66-4314-A3C6-E2F30A37923D
 ms.manager: douge
 ms.author: kaelli
 ms.date: 09/19/2017
+monikerRange: '>= tfs-2015'
 ---
 
-[//]: # (monikerRange: '>= tfs-2015')
+
 
 # Overview of VSTS and TFS services
  

@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article
 ms.date: 12/12/2017
+monikerRange: 'vsts'
 ---
 
 
@@ -16,7 +17,7 @@ ms.date: 12/12/2017
 
 **TFS 2018** | **TFS 2017** | **TFS 2015** | **TFS 2013**
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDEÂ [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 When you need to have your permissions changed or you need to get access to select features or functions, you may need to find out who can grant them. Usually it is an administrator or the account owner.  
 
@@ -50,7 +51,7 @@ To find out who is a member, check the Security settings at the collection level
 
 	<img alt="Click gear button, Security" src="_img//view-permissions/collection-admins.png" style="border: 1px solid #CCCCCC" />
   
-[//]: # (monikerRange: 'vsts')
+
 
 <a name="find-owner"></a>
 
@@ -60,15 +61,15 @@ Only VSTS accounts have account owners.
 
 0.	Open the admin context for your account.  
 
-	<img alt="Go to account settings" src="../_shared/_img/account-settings-new-ui.png" style="border: 1px solid #C3C3C3;" /> 
+	<img alt="Go to account settings" src="../_shared/_img/account-settings-new-ui.png" style="border: 1px solid #C3C3C3;" />Â 
 
 0.	Under **Settings**, find the current owner.
 
-	<img alt="Find current owner" src="../_shared/_img/account-owner-new-ui.png" style="border: 1px solid #C3C3C3;" /> 
+	<img alt="Find current owner" src="../_shared/_img/account-owner-new-ui.png" style="border: 1px solid #C3C3C3;" />Â 
 
 	To change the account owner, see [Change account ownership](../accounts/change-account-ownership-vs.md). 
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 <!---
 ## Find out who is a team administrator for a specific team
