@@ -128,11 +128,3 @@ You can migrate code from an existing TFVC repository to a new Git repository wi
 > [Learn more about using Git in the Git tutorial](tutorial/gitworkflow.md)
 
 [//]: # (::: moniker-end)
-
-| Special character                         | Replace with                                                                                                                       |
-|-------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| ’ or ‘                                    | '                                                                                                                                  |
-| The item between the 2 ' characters: ' '  | Replace with a space, if it has encoded to garbage characters, just replace the "A" part with nothing (just delete all occurrences) |
-| “ or ”                                    | "                                                                                                                                  |
-| … or …                                    | Replace with 3 periods: ...                                                                                                        |
-| − or —                                    | Replace with -                                                                                                                     |
