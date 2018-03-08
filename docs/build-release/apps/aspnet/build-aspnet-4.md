@@ -71,17 +71,17 @@ This quickstart works for apps targeting the .NET Framework 4 or newer. The samp
 
  # [GitHub repo](#tab/github)
 
- [//]: # (::: moniker range="vsts")
+[//]: # (::: moniker range="vsts")
 
  Navigate to the **Builds** tab of the **Build and Release** hub in VSTS or TFS, and then click **+ New**. You are asked to **Select a template** for the new build definition.
 
- [//]: # (::: moniker-end)
+[//]: # (::: moniker-end)
 
- [//]: # (::: moniker range="< vsts")
+[//]: # (::: moniker range="< vsts")
 
  **TFS**: Does not apply.
 
- [//]: # (::: moniker-end)
+[//]: # (::: moniker-end)
 
  ---
 
@@ -91,17 +91,17 @@ This quickstart works for apps targeting the .NET Framework 4 or newer. The samp
 
 1. For the **Agent queue**:
 
- [//]: # (::: moniker range="vsts")
+[//]: # (::: moniker range="vsts")
 
  * **VSTS:** Select _Hosted VS2017_. This is how you can use our pool of agents that have the software you need to build your app.
  
- [//]: # (::: moniker-end)
+[//]: # (::: moniker-end)
 
- [//]: # (::: moniker range="< vsts")
+[//]: # (::: moniker range="< vsts")
 
  * **TFS:** Select a queue that includes a [Windows build agent](../../actions/agents/v2-windows.md).
  
- [//]: # (::: moniker-end)
+[//]: # (::: moniker-end)
 
 1. Click **Get sources** and then:
 
@@ -111,17 +111,17 @@ This quickstart works for apps targeting the .NET Framework 4 or newer. The samp
 
  # [GitHub repo](#tab/github)
 
- [//]: # (::: moniker range="vsts")
+[//]: # (::: moniker range="vsts")
 
  Select your version control repository. You'll need to authorize access to your repo.
 
- [//]: # (::: moniker-end)
+[//]: # (::: moniker-end)
 
- [//]: # (::: moniker range="< vsts")
+[//]: # (::: moniker range="< vsts")
 
  **TFS**: Does not apply.
 
- [//]: # (::: moniker-end)
+[//]: # (::: moniker-end)
 
  ---
 
