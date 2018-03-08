@@ -8,8 +8,9 @@ ms.assetid: 5AD0BF62-C91E-46DD-8C1A-C8D1F8F8D05F
 ms.manager: douge
 ms.author: kaelli
 ms.date: 11/27/2017
+monikerRange: '>= tfs-2013'
 ---
-[//]: # (monikerRange: '>= tfs-2013')
+
 
 # Set permissions and access for work tracking
 
@@ -148,7 +149,7 @@ To customize a process, you need to grant **Edit process**  permissions to a use
 >[!NOTE]  	  
 > Each process is a securable unit and has individual access control lists (ACLs) that govern creating, editing, and deleting inherited processes.  At the collection level, team project collection administrators can choose which processes can be inherited from and by whom. When you create a new inherited process, the process creator as well as team project collection administrators have full control of the process and can also set individual ACLs for other users and groups to edit and delete the process.
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ## Additional options for restricting access to work items   
 
