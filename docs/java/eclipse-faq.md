@@ -7,8 +7,9 @@ ms.manager: douge
 ms.author: douge
 ms.reviewer: dastahel
 ms.date: 01/31/2018
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
+
 
 # Eclipse Plug-in for VSTS & TFS Frequently Asked Questions (FAQ)
 

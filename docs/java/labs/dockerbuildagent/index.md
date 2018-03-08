@@ -6,8 +6,9 @@ ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: douge
 ms.date: 01/22/2018
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
+
 
 # Configure a private Java build agent with VSTS
 

@@ -7,8 +7,9 @@ ms.manager: douge
 ms.author: douge
 ms.reviewer: dastahel
 ms.date: 01/31/2018
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
+
 
 # Get started with Java DevOps and Visual Studio Team Services (VSTS)
 
