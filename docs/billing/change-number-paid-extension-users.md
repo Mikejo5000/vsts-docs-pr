@@ -7,8 +7,9 @@ ms.assetid: efbb3c0f-3128-4b34-bd3b-82f31677293f
 ms.manager: douge
 ms.author: chcomley
 ms.date: 1/29/2018
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: '>= tfs-2015')
+
 
 # Change number of paid extension users for VSTS
 
