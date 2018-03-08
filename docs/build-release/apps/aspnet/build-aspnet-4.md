@@ -83,7 +83,7 @@ This quickstart works for apps targeting the .NET Framework 4 or newer. The samp
 
  [//]: # (::: moniker-end)
 
-  ---
+ ---
 
 1. In the right panel, click **ASP.NET**, and then click **Apply**.
 
