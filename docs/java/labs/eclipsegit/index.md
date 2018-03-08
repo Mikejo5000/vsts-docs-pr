@@ -7,6 +7,7 @@ ms.manager: douge
 ms.author: douge
 ms.date: 01/22/2018
 ---
+[//]: # (monikerRange: 'vsts')
 
 # Clone a VSTS Git repo using Eclipse
 

@@ -8,6 +8,7 @@ ms.author: douge
 ms.reviewer: dastahel
 ms.date: 01/31/2018
 ---
+[//]: # (monikerRange: 'vsts')
 
 # Visual Studio Team Explorer Everywhere for Eclipse (VSTS and TFS)
 

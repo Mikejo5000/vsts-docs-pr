@@ -7,6 +7,7 @@ ms.manager: douge
 ms.author: douge
 ms.date: 01/22/2018
 ---
+[//]: # (monikerRange: 'vsts')
 
 # Use Visual Studio Code with VSTS
 
@@ -67,7 +68,7 @@ Once your credentials are verified, the status bar indicators will be active and
 
 > [!div class="mx-imgBorder"]
 ![Build status indicator](_img/buildstatus-indicator.png)
- This status bar item shows the status of the build for this particular repository and branch. Hovering over the item will provide additional information about which build was referenced (if any). Clicking on the item will take you to that build’s summary page in your browser. This indicator will update its status every 5 minutes.
+ This status bar item shows the status of the build for this particular repository and branch. Hovering over the item will provide additional information about which build was referenced (if any). Clicking on the item will take you to that build's summary page in your browser. This indicator will update its status every 5 minutes.
 
 > [!div class="mx-imgBorder"]
 ![Work item count status indicator](_img/pinnedquery-indicator.png)
@@ -76,20 +77,20 @@ Once your credentials are verified, the status bar indicators will be active and
 ## Comands
 In addition to the status bar integrations, the extension also provides several commands for interacting with VSTS and Team Foundation Server. In the Command Palette (F1), type team and choose a command.
 
-- `team create bug` – Opens your browser to the webpage used to create a new bug. If a single line of text is highlighted in Visual Studio Code, it will be used as the title of the bug. The bug will be assigned to you. You can then choose to update the fields, save, cancel, etc.
-- `team create pull request` – Opens your browser for a new pull request based on the current repository and branch. Before creating the pull request, ensure that you save, commit and push any changes you have before running the command. Doing so will ensure that all of your latest changes are part of the pull request.
-- `team create task` – Opens your browser to the webpage used to create a new task. If a single line of text is highlighted in Visual Studio Code, it will be used as the title of the task. The task will be assigned to you. You can then choose to update the fields, save, cancel, etc.
-- `team create work item` – Prompts you to choose a work item type from the list available in your team project. Once you make a selection, your browser is opened to the webpage used to create the work item. If a single line f text is highlighted in Visual Studio Code, it will be used as the title of the task. The work item will be assigned to you. You can then choose to update the fields, save, cancel, etc.
-- `team send feedback` – Prompts you to either send a smile or a frown. After choosing, you can provide us feedback of up to 1000 characters. Optionally, provide your email address so we can contact if you needed. If you do not want to provide your email address, just leave it empty (we'll still get your feedback). Note: Feedback can be sent even if telemetry reporting is disabled.
+- `team create bug` - Opens your browser to the webpage used to create a new bug. If a single line of text is highlighted in Visual Studio Code, it will be used as the title of the bug. The bug will be assigned to you. You can then choose to update the fields, save, cancel, etc.
+- `team create pull request` - Opens your browser for a new pull request based on the current repository and branch. Before creating the pull request, ensure that you save, commit and push any changes you have before running the command. Doing so will ensure that all of your latest changes are part of the pull request.
+- `team create task` - Opens your browser to the webpage used to create a new task. If a single line of text is highlighted in Visual Studio Code, it will be used as the title of the task. The task will be assigned to you. You can then choose to update the fields, save, cancel, etc.
+- `team create work item` - Prompts you to choose a work item type from the list available in your team project. Once you make a selection, your browser is opened to the webpage used to create the work item. If a single line f text is highlighted in Visual Studio Code, it will be used as the title of the task. The work item will be assigned to you. You can then choose to update the fields, save, cancel, etc.
+- `team send feedback` - Prompts you to either send a smile or a frown. After choosing, you can provide us feedback of up to 1000 characters. Optionally, provide your email address so we can contact if you needed. If you do not want to provide your email address, just leave it empty (we'll still get your feedback). Note: Feedback can be sent even if telemetry reporting is disabled.
 - `team view blame`- If a file in the repository is opened in the editor, it will open your browser to the blame page for that file in the current branch in the server repository.
-- `team view build summary` – Same behavior as clicking on the Build Status status bar item.
- - `team view history` – If a file in the repository is opened in the editor, it will open your browser to the history page for that file in the current branch in the server repository. Otherwise, the history of the current branch in the server repository will be opened.
- - `team signin` – Use this command to log in to a VSTS account or Team Foundation Server 2015 Update 2 (and later) server. When your credentials are provided, they will be stored securely on your computer. The saved credentials will be used for that account until they are removed by the team signout command or overwritten by a subsequent team signin command. See the "Secure Credential Storage" topic below for more details.
- - `team signout` – Use this command to log out from a VSTS account or Team Foundation Server 2015 Update 2 (and later) server. Logging out will remove your credentials from your local computer. To log back in, you will need to run the team signout command again.
- - `team view pull requests` – Same behavior as clicking on the Pull Requests status bar item.
- - `team view website` – Same behavior as clicking on the team project status bar item.
- - `team view work items` – Prompts you to choose a work item that is assigned to you, sorted by ChangedDate descending. Choosing a work item will open it in your browser. This command will return a maximum of 200 results with an option to "Browse additional work items...". Choosing that option will open your browser to show all of the results of your query.
- - `team view work item queries` – Prompts you to choose a query stored in your “My Queries” folder in your team project. Choosing a query will run it and display the results in the Quick Pick list. Choosing one of the results will open that work item in your browser. This command will return a maximum of 200 results with an option to "Browse additional work items...". Choosing that option will open your browser to show all of the results of your query.
+- `team view build summary` - Same behavior as clicking on the Build Status status bar item.
+ - `team view history` - If a file in the repository is opened in the editor, it will open your browser to the history page for that file in the current branch in the server repository. Otherwise, the history of the current branch in the server repository will be opened.
+ - `team signin` - Use this command to log in to a VSTS account or Team Foundation Server 2015 Update 2 (and later) server. When your credentials are provided, they will be stored securely on your computer. The saved credentials will be used for that account until they are removed by the team signout command or overwritten by a subsequent team signin command. See the "Secure Credential Storage" topic below for more details.
+ - `team signout` - Use this command to log out from a VSTS account or Team Foundation Server 2015 Update 2 (and later) server. Logging out will remove your credentials from your local computer. To log back in, you will need to run the team signout command again.
+ - `team view pull requests` - Same behavior as clicking on the Pull Requests status bar item.
+ - `team view website` - Same behavior as clicking on the team project status bar item.
+ - `team view work items` - Prompts you to choose a work item that is assigned to you, sorted by ChangedDate descending. Choosing a work item will open it in your browser. This command will return a maximum of 200 results with an option to "Browse additional work items...". Choosing that option will open your browser to show all of the results of your query.
+ - `team view work item queries` - Prompts you to choose a query stored in your "My Queries" folder in your team project. Choosing a query will run it and display the results in the Quick Pick list. Choosing one of the results will open that work item in your browser. This command will return a maximum of 200 results with an option to "Browse additional work items...". Choosing that option will open your browser to show all of the results of your query.
 
 ## Secure Credential Storage
 When you run the `team signin` command, the credentials that you provide will be stored securely on your computer. On Windows, your credentials wil be stored by Windows Credential Manager. 

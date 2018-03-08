@@ -8,6 +8,7 @@ ms.author: douge
 ms.reviewer: dastahel
 ms.date: 01/31/2018
 ---
+[//]: # (monikerRange: 'vsts')
 
 # IntelliJ Plug-in for VSTS & TFS Frequently Asked Questions (FAQ)
 

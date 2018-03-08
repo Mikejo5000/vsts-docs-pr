@@ -7,6 +7,7 @@ ms.manager: douge
 ms.author: douge
 ms.date: 01/22/2018
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
 # Use Subversion with Visual Studio Team Services (VSTS) or Team Foundation Server (TFS) for Java development
 
@@ -116,7 +117,7 @@ Congratulations! You've successfully created a build definition that polls for c
 
 **Q: What does the value of "Default branch or tag" represent?**
 
-**A:** You can change this value to build a default branch (or tag) in your Subversion repository with this build definition. For instance, if you want to create a Release build definition to build a “branches/releases/v14.0” branch, you would set the value of “Default branch or tag” to “branches/releases/v14.0”.
+**A:** You can change this value to build a default branch (or tag) in your Subversion repository with this build definition. For instance, if you want to create a Release build definition to build a "branches/releases/v14.0" branch, you would set the value of "Default branch or tag" to "branches/releases/v14.0".
 
 **Q: What does "Batch changes" do? And what if I uncheck it?**
 

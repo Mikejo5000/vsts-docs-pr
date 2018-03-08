@@ -7,6 +7,7 @@ ms.manager: douge
 ms.author: douge
 ms.date: 01/22/2018
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
 # Use SonarQube with Visual Studio Team Services (VSTS) or Team Foundation Server (TFS) for Java development
 
