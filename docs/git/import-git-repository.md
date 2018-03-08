@@ -14,14 +14,14 @@ ms.date: 03/08/2018
 # Import a Git repo
 #### VSTS | TFS 2018 | TFS 2017 Update 1
 
-[//]: # (::: moniker range=">= tfs-2017")
-
 This guide shows you how to import an existing Git repo from GitHub, Bitbucket, GitLab, or other location into a new or empty existing repo in your VSTS project.
 
 ## Prerequisites
 
-* A VSTS account. If you don’t have one, you can [sign up](../accounts/create-account-msa-or-work-student.md) for one for free. Each account includes free, unlimited private Git repositories.
-  * If you are using TFS, you must have TFS 2017 Update 1 or higher. For instructions on manually importing a Git repo using TFS 2017 RTM, see [Manually import a repo](#manually-import-a-repo).
+* A VSTS account. If you don't have one, you can [sign up](../accounts/create-account-msa-or-work-student.md) for one for free. Each account includes free, unlimited private Git repositories.
+  * If you are using TFS, you must have TFS 2017 Update 1 or higher. For instructions on manually importing a Git repo using TFS 2017 RTM or earlier, see [Manually import a repo](#manually-import-a-repo).
+
+[//]: # (::: moniker range=">= tfs-2017")
 
 ## Import into a new repo
 
@@ -102,7 +102,7 @@ This failure can happen when creating import request or while import is in progr
 
 ### Can I import from previous versions of Team Foundation Server?
 If the source Git repository is in a TFS version earlier than TFS 2017 RTM, then import will fail.
-This happens because of a contract mismatch between latest VSTS/TFS and pre-2017 RTM versions of TFS.
+This happens because of a contract mismatch between the latest VSTS/TFS and pre-2017 RTM versions of TFS.
 
 [//]: # (::: moniker-end)
 [//]: # (::: moniker range=">= tfs-2017")
