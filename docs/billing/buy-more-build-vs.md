@@ -6,66 +6,45 @@ ms.technology: vs-devops-setup
 ms.assetid: 3f42a1b2-1a32-440a-bf43-61006c59c5bf
 ms.manager: douge
 ms.author: chcomley
-ms.date: 1/29/2018
+ms.date: 3/9/2018
 ---
 
 #  How to buy VSTS CI/CD
 
 **VSTS**
-
-## Hosted Pipelines
-VSTS offers a CI/CD service that allows you to run builds and deploy releases using a cloud-hosted pool of virtual machines managed by Microsoft. If you need to exceed the free 
-amount of CI/CD that is provided per VSTS account (4 hours per month) or you need to run more than one agent at a time, you will need to 
-[pay for more CI/CD concurrency: Hosted Pipelines](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines). In this model, the price includes 
-all infrastructure that Microsoft runs (virtual machines, databases, storage, egress, etc.) to deliver this CI/CD service.
-
-## Private Pipelines
-VSTS also offers you a way to run a Microsoft CI/CD agent on machines that you manage, whether your machines are on premises or in the cloud. 
-Typically you'll choose this option when:
-* there is custom software that runs in your build process which is not included on the virtual machines managed 
-by Microsoft for the Hosted Pipeline option above, or
-* you already have a TFS build server running, and aren't ready to move your build definitions to VSTS.
-You can run one concurrent pipeline for free, and if you need more capacity you can 
-[pay for more CI/CD concurrency: Private Pipelines](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines).
-
-
 <a name="buy-build-release"></a>
+
+With VSTS you can run builds and deploy releases using the Microsoft-hosted CI/CD service, your own machines, or both. 
+We offer a **Free Tier** for each.
+
+## Microsoft-hosted CI/CD (formerly Hosted Pipelines)
+Each VSTS starts out with the free tier of Microsoft-hosted CI/CD, which provides the ability to run one concurrent build or release job, for 
+up to 4 hours per month. If you need to run more than 4 hours per month, or you need to run more than one job at a time, you can switch to 
+paid Microsoft-hosted CI/CD. When you pay per concurrent job, there are no monthly time limits for your builds and releases, and the maximum 
+runtime for a single job is increased from 30 minutes to 6 hours. With Microsoft-hosted CI/CD, the price includes 
+all infrastructure that Microsoft runs (virtual machines, databases, storage, egress, etc.) to deliver this service.
+
+[Buy Microsoft-hosted CI/CD for your account](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines)
+
+## Self-hosted CI/CD (formerly Private Pipelines)
+VSTS also offers you a way to run a Microsoft CI/CD agent on machines that you manage, whether your machines are on premises or in the cloud. 
+The free tier is one concurrent job.
+Typically you'll choose this option when:
+* there is custom software that runs in your build process which is not included in the Microsoft-hosted option above, or
+* you already have a TFS build server running, and aren't ready to move your build definitions to VSTS.
+
+[Buy self-hosted CI/CD](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines)
+
 ## Before you start
 
-*	To manage purchases, you'll need VSTS 
-[project collection administrator or account owner permissions](faq-pay-for-basic-users.md#FindOwnerPCA).
+The first time that you set up billing for your VSTS account--whether you do this via the Azure portal or as part of making a purchase in the Visual Studio Marketplace, you will need:
 
-*	You'll need an Azure subscription 
-that you can link to your VSTS account for billing, 
-if your VSTS account isn't linked already. 
-[Which Azure subscriptions can I use?](faq-pay-for-basic-users.md#EligibleAzureSubscriptions)
+0. [VSTS project collection administrator or account owner permissions](../accounts/faq-add-delete-users.md#find-owner)
+0. [The **owner** or **contributor** role on your Azure subscription](add-backup-billing-managers.md)
 
->[!NOTE]
-> To use an existing Azure subscription for billing, 
-	you'll need at least Co-administrator permissions for that subscription. 
-	If you don't have permissions, 
-	have an Azure Account Administrator or Service Administrator 
-	[add you as a Co-administrator to the Azure subscription that you want to use for billing](add-backup-billing-managers.md).
->
->	If you don't have an Azure subscription, 
-	you can create a subscription when you start your purchase. 
-	Or [create your Azure subscription here before you start](https://portal.azure.com). 
-	You'll get the necessary administrator permissions 
-	with your new subscription. 
->
->	Your VSTS account will reuse this Azure subscription 
-	when you make future purchases for your VSTS account 
-	via the [Visual Studio Marketplace](https://marketplace.visualstudio.com) 
-	or the Azure portal. 
+You will also need these same permissions/roles to make subsequent changes, such as changing paid quantities or adding additional paid services in your VSTS account.
 
-## Buy pipelines
-
-> **Note** If you previously bought agents in the Azure portal, they're now pipelines,
-> but don't worry, your monthly purchases and pricing won't change.
-> If you need to change the number of pipelines that you're buying each month,
-> please go to the Visual Studio Marketplace.
-> We plan to retire the experience for buying agents in the Azure portal soon.
-
+## Buying process
 
 0.  As VSTS project collection administrator or account owner,
 sign in to either:
@@ -73,12 +52,11 @@ sign in to either:
   *  [**Visual Studio Marketplace** > **Build and release** > **Hosted pipelines for Build and Release**](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines)
   *  [**Visual Studio Marketplace** > **Build and release** > **Private pipelines for Build and Release**](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines)<p/>
 
-0.  Choose **Buy** for your selected pipeline.
+0.  Choose **Get**
 
   ![Select your VSTS account](_img/get-more-build-load-testing/buy-hosted-build-release-pipelines.png)
 
-0.  Select your VSTS account,
-if you have multiple accounts.
+0.  Select your VSTS account, if you have multiple accounts.
 
   ![Select your VSTS account](_img/get-more-build-load-testing/select-team-services-account.png)
 
@@ -88,7 +66,7 @@ if you have multiple accounts.
   [project collection administrator or account owner permissions](faq-pay-for-basic-users.md#FindOwnerPCA).
   </div>
 
-0.  Confirm the Azure subscription that you'll use for billing.
+0.  Confirm the Azure subscription that you'll use for billing (you'll only see this the first time you set up billing).
 
   If you have multiple Azure subscriptions,
   select the Azure subscription that you want to use.
@@ -107,14 +85,14 @@ if you have multiple accounts.
   [add you as a Co-administrator to the linked Azure subscription](add-backup-billing-managers.md).
   </div>
 
-0.  Select the number of pipelines that you want to buy.
+0.  Select the number of concurrent jobs that you want to buy.
 Finish your purchase.
 
-  ![Select number of pipelines to buy](_img/get-more-build-load-testing/select-number-hosted-pipelines.png)
+  ![Select number of concurrent jobs to buy](_img/get-more-build-load-testing/select-number-hosted-pipelines.png)
 
-0.  To view your pipelines, go to your VSTS account.
+0.  To view your current CI/CD capacity, go to your VSTS account.
 
-  ![View pipelines in your VSTS account](_img/get-more-build-load-testing/confirm-hosted-pipeline-purchase.png)
+  ![View CI/CD capacity in your VSTS account](_img/get-more-build-load-testing/confirm-hosted-pipeline-purchase.png)
 
   ![Go to VSTS account toolbar > Build and Release](_img/get-more-build-load-testing/manage-pipelines-team-services.png)
 
@@ -125,10 +103,9 @@ Finish your purchase.
   (```https://{youraccount}.visualstudio.com/_admin/_buildQueue?_a=resourceLimits```).
 
 <a name="change-paid-pipelines"></a>
-## Change your purchased pipelines
+## Change your CI/CD capacity
 
-When your team's needs for build or release capacity changes,
-you can update your number of paid pipelines.
+When your team's needs for build or release capacity changes, you can change the number of paid concurrent jobs.
 
 0.  Go to your VSTS account toolbar,
 then go to **Build and Release**
@@ -149,9 +126,8 @@ then update your number of paid pipelines.
 ## Related notes  
 
 - [Build your app](../build-release/apps/index.md)
-- [Concurrent build and release pipelines in VSTS](../build-release/concepts/licensing/concurrent-pipelines-ts.md)
-- [Concurrent release pipelines in Team Foundation Server](../build-release/concepts/licensing/concurrent-pipelines-tfs.md)
-- [How to buy cloud-based load testing in VSTS](buy-load-testing-vs.md)  
+- [Understanding CI/CD in VSTS](../build-release/concepts/licensing/concurrent-pipelines-ts.md)
+- [Understanding CI/CD in Team Foundation Server](../build-release/concepts/licensing/concurrent-pipelines-tfs.md)
 - [Marketplace support](../marketplace/marketplace-billing-qa.md)  
 
 

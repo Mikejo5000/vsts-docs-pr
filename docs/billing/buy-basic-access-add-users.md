@@ -7,10 +7,10 @@ ms.technology: vs-devops-setup
 ms.assetid: 02cb8774-6d1d-4f15-8818-b56541033b1f
 ms.manager: douge
 ms.author: chcomley
-ms.date: 1/29/2018
+ms.date: 3/9/2018
 ---
 
-# Pay for VSTS users
+# Pay for VSTS users (Basic)
 
 **VSTS**
 
@@ -21,7 +21,8 @@ So if you have a team of 25 people and 20 of them have Visual Studio Professiona
 When you reach the point where you exceed these free limits, you can [pay for additional VSTS users](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser) 
 in whatever quantity you need. There are no required tiers--so if you only need to pay for 1 user, you can pay for 1 user. If you need 27, you pay for 27. 
 When you pay for VSTS users, this increases the total number of users you can add as members in your account, adding to the free limits mentioned above. By paying for 
-these additional VSTS users, you can then [add more team members to your VSTS account](../accounts/add-account-users-from-user-hub.md).
+these additional VSTS users, you can then [add more team members to your VSTS account](../accounts/add-account-users-from-user-hub.md) and you can even automate this 
+using our [group rules](../accounts/assign-access-levels-and-extensions-by-group-membership) feature.
 
 Your team members--whether they're Visual Studio subscribers, or are among the 5 free or the paid VSTS users--can use a comprehensive set of features in your VSTS account including 
 version control, tools for Agile, Java, build, release management, and more. For a list of features included, see our 
@@ -29,33 +30,12 @@ version control, tools for Agile, Java, build, release management, and more. For
 
 ## Prerequisites
 
-*	To manage purchases, you'll need VSTS 
-[project collection administrator or account owner permissions](faq-pay-for-basic-users.md#FindOwnerPCA).
+The first time that you set up billing for your VSTS account--whether you do this via the Azure portal or as part of making a purchase in the Visual Studio Marketplace, you will need:
 
-*	You'll need an Azure subscription 
-that you can link to your VSTS account for billing, 
-if your VSTS account isn't linked already. 
-[Which Azure subscriptions can I use?](faq-pay-for-basic-users.md#EligibleAzureSubscriptions)
+0. [VSTS project collection administrator or account owner permissions](../accounts/faq-add-delete-users.md#find-owner)
+0. [The **owner** or **contributor** role on your Azure subscription](add-backup-billing-managers.md)
 
->[!NOTE]
-> To use an existing Azure subscription for billing, 
-	you'll need at least co-administrator permissions for that subscription. 
-	If you don't have permissions, 
-	have an Azure Account Administrator or Service Administrator 
-	[add you as a co-administrator to the Azure subscription that you want to use for billing](add-backup-billing-managers.md).
->
->	If you don't have an Azure subscription, 
-	you can create a subscription when you start your purchase. 
-	Or [create your Azure subscription here before you start](https://portal.azure.com). 
-	You'll get the necessary administrator permissions 
-	with your new subscription. 
->
->	Your VSTS account will reuse this Azure subscription 
-	when you make future purchases for your VSTS account 
-	via the [Visual Studio Marketplace](https://marketplace.visualstudio.com) 
-	or the Azure portal. 
-
-
+You will also need these same permissions/roles to make subsequent changes, such as changing paid quantities or adding additional paid services in your VSTS account.
 
 <a name="buy-access-vs-marketplace"></a>
 ## Increase the number of paid VSTS users on your account
