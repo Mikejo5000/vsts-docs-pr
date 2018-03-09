@@ -9,8 +9,9 @@ ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article
 ms.date: 02/14/2018 
+monikerRange: '>= tfs-2013'
 ---
-[//]: # (monikerRange: '>= tfs-2013')
+
 
 # Get started as a Stakeholder  
 
@@ -63,7 +64,7 @@ Enter a title and then save the work item. Before you can change the State from 
 <img src="../work/backlogs/_img/add-new-work-item-vsts-user-story.png" alt="Agile process, User story work item form" style="border: 1px solid #CCCCCC;" />
 
 >[!NOTE]  
->A caution icon on a tab indicates values that violate validation rules. You must correct information on that tab in order to save the work item.   
+>A caution icon on a tab indicates values that violate validation rules. You must correct information on that tab in order to save the work item. Â Â 
 
 
 #### TFS 2015
@@ -172,4 +173,4 @@ If you need access to the following features&mdash;which support the daily work 
 
 
 
-[!INCLUDE [temp](../_shared/help-support-shared.md)] 
+[!INCLUDEÂ [temp](../_shared/help-support-shared.md)]Â 
