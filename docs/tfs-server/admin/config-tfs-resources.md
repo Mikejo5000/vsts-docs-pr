@@ -10,6 +10,8 @@ ms.technology: vs-devops-admin
 ms.topic: get-started-article
 ---
 
+[//]: # (monikerRange: '>= tfs-2013 < vsts') 
+
 # Configure and manage TFS resources
 
 **TFS 2017 | TFS 2015 | TFS 2013**

@@ -10,6 +10,8 @@ ms.technology: vs-devops-admin
 ms.topic: get-started-article
 ---
 
+[//]: # (monikerRange: '>= tfs-2013 < tfs-2017')
+
 # Reconnect services and users
 
 **TFS 2015** | **TFS 2013**
