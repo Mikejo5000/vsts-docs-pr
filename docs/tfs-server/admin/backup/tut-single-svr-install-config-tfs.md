@@ -25,7 +25,7 @@ analysis services to work with the new server.
 
 Use this topic to:
 
-> [!div class="checklist"]   
+> [!div class="checklist"]
 > * Install Team Foundation Server and the Extensions for SharePoint Products
 > * Configure SharePoint Foundation 
 > * Configure reporting and Analysis Services  

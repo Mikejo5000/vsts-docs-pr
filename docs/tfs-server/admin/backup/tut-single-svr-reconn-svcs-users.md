@@ -20,7 +20,7 @@ This topic, the fourth part of the Restore a Single-Server tutorial, teaches you
 
 Use this topic to:
 
-> [!div class="checklist"]   
+> [!div class="checklist"]
 > * Start team project collections and verify permissions
 > * Refresh the version control cache on client computers and reconnect to TFS
 
