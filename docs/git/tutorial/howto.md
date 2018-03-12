@@ -8,7 +8,7 @@ ms.manager: douge
 ms.author: sdanie
 ms.date: 03/14/2018
 ---
-[//]: # (monikerRange: '>= tfs-2015')
+[//]: # (monikerRange: '>= tfs-2013')
 
 #  Frequently Asked Git Questions
 
