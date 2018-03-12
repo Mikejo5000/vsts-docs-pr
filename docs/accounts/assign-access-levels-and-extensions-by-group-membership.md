@@ -7,8 +7,9 @@ ms.assetid:
 ms.manager: douge
 ms.author: chcomley
 ms.date: 02/20/2018
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
+
 
 # Assign access levels and extensions to users by group membership
 
@@ -35,7 +36,7 @@ This eliminates the need for automating license management on your own to reflec
 
     ![choose-add-to-add-group-rule](_img/manage-group-licensing/adding-group-rule.png)
 
-A notification is displayed that shows the status and outcome of the rule. If the assignment couldn’t be completed (for example, because your VSTS account didn’t have enough licenses purchased), choose **View status** to view details.
+A notification is displayed that shows the status and outcome of the rule. If the assignment couldnâ€™t be completed (for example, because your VSTS account didnâ€™t have enough licenses purchased), choose **View status** to view details.
 
 ## Resolve assignment errors
 
