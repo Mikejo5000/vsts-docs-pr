@@ -1,102 +1,51 @@
 ---
-title: How to pay for VSTS users (Basic) | VSTS
-description: Pay for VSTS users when you need more than the free amount (Visual Studio Online, VSO, VSTS)
+title: VSTS billing overview 
+description: VSTS billing overview
 ms.topic: get-started-article
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
-ms.assetid: 02cb8774-6d1d-4f15-8818-b56541033b1f
+ms.assetid: d5bd13e2-aa7c-4191-aefd-bd9f05663e7b
 ms.manager: douge
 ms.author: chcomley
 ms.date: 3/13/2018
 ---
-[//]: # (monikerRange: 'vsts')
-
-# Pay for VSTS users (Basic)
+# VSTS billing overview
 
 **VSTS**
 
-You only need to pay for users in your VSTS account when your team size exceeds the free limits. It's free to add users who have a 
-[Visual Studio subscription](https://www.visualstudio.com/team-services/pricing/), plus you get 5 additional users free in your VSTS account. 
-So if you have a team of 25 people and 20 of them have Visual Studio Professional subscriptions, then you would not need to pay for any VSTS users in your account.
+You have to set up billing when you need more than the **free tier** of resources in your VSTS account: (5 VSTS users (Basic), 5 Package Management users, 
+Free Tier of Microsoft-hosted CI/CD (1 concurrent job, up to 4 hours per month), 1 self-hosted CI/CD concurrent job, 20,000 virtual user minutes of cloud-based load testing), 
+or to buy other features for your users that are offered by Microsoft or by other companies via the [Visual Studio Marketplace](https://marketplace.visualstudio.com/).
 
-When you reach the point where you exceed these free limits, you can [pay for additional VSTS users](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser) 
-in whatever quantity you need. There are no required tiers--so if you only need to pay for 1 user, you can pay for 1 user. If you need 27, you pay for 27. 
-When you pay for VSTS users, this increases the total number of users you can add as members in your account, adding to the free limits mentioned above. By paying for 
-these additional VSTS users, you can then [add more team members to your VSTS account](../accounts/add-account-users-from-user-hub.md) and you can even automate this 
-using our [group rules](../accounts/assign-access-levels-and-extensions-by-group-membership) feature.
+> During your first purchase for your VSTS account, we'll prompt you to select the Azure subscription to use for billing. This can be part of your 
+> Enterprise Agreement, Pay-As-You-Go, CSP, or many other types of Azure subscriptions. All VSTS services are billed via Azure, though you are not required to pay for or 
+> use any other Azure services. 
+> 
+> These are the paid services offered by Microsoft:
+>
+> * [VSTS users/Basic](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser)
+> * [Microsoft-hosted CI/CD](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines) (hosted pipelines)
+> * [Self-hosted CI/CD](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines) (private pipelines)
+> * [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
+> * [Package Management](https://marketplace.visualstudio.com/items?itemName=ms.feed)
+>
+> [Cloud-based load testing](buy-load-testing-vs.md) is charged based on the load tests you run. By default, paid usage is turned off for your VSTS account. 
+> You can only enable paid usage via the Azure portal. If you want to change the Azure subscription that you use for billing, follow the guidance in this topic to go through the Azure portal.
 
-Your team members--whether they're Visual Studio subscribers, or are among the 5 free or the paid VSTS users--can use a comprehensive set of features in your VSTS account including 
-version control, tools for Agile, Java, build, release management, and more. For a list of features included, see our 
-[feature comparison](https://www.visualstudio.com/team-services/compare-features/).
-
-## Prerequisites
+## What do I need to set up billing?
 
 The first time that you set up billing for your VSTS account--whether you do this via the Azure portal or as part of making a purchase in the Visual Studio Marketplace, you will need:
 
 0. [VSTS project collection administrator or account owner permissions](../accounts/faq-add-delete-users.md#find-owner)
 0. [The **owner** or **contributor** role on your Azure subscription](add-backup-billing-managers.md)
 
-To make subsequent edits to paid quantities in your VSTS account, you only need the owner or contributor role on your Azure subscription.
-
-<a name="buy-access-vs-marketplace"></a>
-## Increase the number of paid VSTS users on your account
-
-0.	As VSTS project collection administrator or account owner, 
-sign in to [**Visual Studio Marketplace** > **Other** > **VSTS Users**](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser), 
-and choose **Buy**.
-
-	![Go to Visual Studio Marketplace, Other, VSTS Users](_img/buy-more-basic-access/team-services-users-vs-marketplace.png)
-
-0.  Select your VSTS account, 
-if you have multiple accounts.
-
-	![Select your VSTS account](_img/buy-more-basic-access/select-team-services-account-vs-marketplace.png)
-
-	<p><a data-toggle="collapse" href="#expando-why-no-ts-account">Don't see your VSTS accounts? &#x25BC;</a></p>
-	<div class="collapse" id="expando-why-no-ts-account">
-	<p>To select your VSTS account here, you must have VSTS 
-	[project collection administrator or account owner permissions](faq-pay-for-basic-users.md#FindOwnerPCA).	
-	</div>
-
-0.	Confirm the Azure subscription, where your VSTS charges will be billed. 
-
-	If you have multiple Azure subscriptions, 
-	select the Azure subscription that you want to use.
-	Or if you don't have an Azure subscription, 
-	you can create a new one. 
-	
-	![Confirm or select your Azure subscription](_img/buy-more-basic-access/confirm-azure-subscription-vs-marketplace.png)
-
-	<p><a data-toggle="collapse" href="#expando-why-no-azure-sub">Don't see the Azure subscription that you expect? &#x25BC;</a></p>
-	<div class="collapse" id="expando-why-no-azure-sub">
-	<p>To use an existing Azure subscription for billing, 
-	you'll need at least co-administrator permissions for that subscription. 
-	If you don't have permissions, 
-	have an Azure Account Administrator or Service Administrator 
-	[add you as a Co-administrator to the linked Azure subscription](add-backup-billing-managers.md).
-	</div>
-
-0.	Enter the number of paid VSTS users. You will also see the number of free users included, which is separate.
-
-	![Enter the number of paid VSTS users](_img/buy-more-basic-access/select-number-users-vs-marketplace.png)
-
-0.	Now go to your VSTS account, and 
-[add new users](../accounts/add-account-users-assign-access-levels.md). 
-
-	![Go to your VSTS account](_img/buy-more-basic-access/confirm-basic-access-purchase-vs-marketplace.png)
-
-	The number of users to whom you can assign Basic appears here.
-
-	![Number of users to whom you can assign Basic](_img/buy-more-basic-access/paid-basic-access-for-team-services-users.png)
-
+You will also need these same permissions/roles to make subsequent changes, such as changing paid quantities or adding additional paid services in your VSTS account.
 
 ## Related information
 
-- [Reduce or cancel paid VSTS users](reduce-cancel-paid-vsts-users.md)
-- [Add more team members to your VSTS account](../accounts/add-account-users-from-user-hub.md)
-- [Pay for TFS users](buy-access-tfs-test-hub.md)
-- [Set up billing](set-up-billing-for-your-account-vs.md)
-- [Add backup billing managers](add-backup-billing-managers.md)
-- [Change the Azure subscription for billing](change-azure-subscription.md)
-- [VSTS pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
-- [VSTS billing support](https://www.visualstudio.com/team-services/support/)
+* [Set up billing](set-up-billing-for-your-account-vs.md)
+* [Add backup billing managers](add-backup-billing-managers.md)
+* [Troubleshoot VSTS billing] (faq-billing-setup.md)
+* [Change the Azure subscription for billing](change-azure-subscription.md)
+* [VSTS pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
+* [VSTS billing support](https://www.visualstudio.com/team-services/support/)
