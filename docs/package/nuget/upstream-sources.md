@@ -14,6 +14,8 @@ ms.date: 01/20/2018
 
 # Use packages from nuget.org
 
+**VSTS** | **TFS 2018**
+
 > [!NOTE]
 > NuGet upstream sources are only available for **VSTS and TFS 2018 Update 2 and newer**.
 

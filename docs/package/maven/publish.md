@@ -14,4 +14,6 @@ ms.date: 01/31/2018
 
 # Publish Maven artifacts using VSTS and TFS
 
+**VSTS** | **TFS 2018**
+
 [!INCLUDE [](../_shared/maven/publish.md)]

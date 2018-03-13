@@ -13,6 +13,8 @@ ms.date: 09/01/2017
 
 # Use npm scopes
 
+**VSTS** | **TFS 2018** | **TFS 2017**
+
 [!INCLUDE [](../_shared/availability-npm.md)]
 
 [Scopes](https://docs.npmjs.com/misc/scope) are built into npm and are a way of grouping packages together.

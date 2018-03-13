@@ -13,6 +13,8 @@ ms.date: 09/01/2017
 
 # Move your packages to the cloud
 
+**VSTS** | **TFS 2018** | **TFS 2017**
+
 VSTS provides hosted NuGet feeds as a service. 
 If you're using NuGet packages as a part of your continuous delivery flow, 
 VSTS Package Management can eliminate your dependencies on on-premises file shares and hosted instances of NuGet.Server.

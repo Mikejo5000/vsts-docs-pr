@@ -13,6 +13,8 @@ ms.date: 09/01/2017
 
 # Unlist or delete a NuGet package
 
+**VSTS** | **TFS 2018** | **TFS 2017**
+
 There are two options available to remove a version of a NuGet package from a feed.
 
 1. **Unlist:** unlisting a version of a package modifies how the package appears in NuGet clients (see the [NuGet docs](https://docs.microsoft.com/en-us/nuget/policies/deleting-packages) for a full description of how unlist works).

@@ -13,4 +13,6 @@ ms.date: 09/01/2017
 
 # Publish a NuGet package from the command line
 
+**VSTS** | **TFS 2018** | **TFS 2017**
+
 [!INCLUDE [](../_shared/nuget/publish.md)]

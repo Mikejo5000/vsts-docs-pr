@@ -13,6 +13,8 @@ ms.date: 09/01/2017
 
 # Publish an npm package
 
+**VSTS** | **TFS 2018** | **TFS 2017**
+
 [!INCLUDE [](../_shared/availability-npm.md)]
 
 [!INCLUDE [](../_shared/npm/publish.md)]

@@ -12,7 +12,7 @@ ms.date: 11/07/2016
 
 # Use Team Build to restore and publish npm packages
 
-**VSTS**
+**VSTS** | **TFS 2018** | **TFS 2017**
 
 [!INCLUDE [](../../package/_shared/availability-npm.md)]
 

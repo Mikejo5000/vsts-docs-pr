@@ -13,6 +13,8 @@ ms.date: 09/01/2017
 
 # Use dotnet with VSTS feeds
 
+**VSTS**
+
 > [!NOTE]
 > This page covers interactive scenarios. In Team Build, use the [.NET Core step](../../build-release/tasks/build/dotnet-core.md). 
 

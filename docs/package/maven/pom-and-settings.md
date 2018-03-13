@@ -14,4 +14,6 @@ ms.date: 01/31/2018
 
 # Set up the Maven client in VSTS and TFS
 
+**VSTS** | **TFS 2018**
+
 [!INCLUDE [](../_shared/maven/pom-and-settings.md)]

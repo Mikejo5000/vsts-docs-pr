@@ -14,7 +14,7 @@ ms.date: 2/1/2018
 
 # Upstream sources
 
-**VSTS | TFS 2017**
+**VSTS** | **TFS 2018** | **TFS 2017**
 
 Check the ([availability note](../overview.md#versions-compatibility)) to ensure compatibility. 
 

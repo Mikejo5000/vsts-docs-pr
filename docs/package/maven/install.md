@@ -14,6 +14,8 @@ ms.date: 01/31/2018
 
 # Install Maven artifacts using VSTS and TFS
 
+**VSTS** | **TFS 2018**
+
 [!INCLUDE [](../_shared/maven/install.md)]
 
 	

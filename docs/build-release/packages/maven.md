@@ -13,6 +13,8 @@ ms.date: 01/31/2018
 
 # Set up Team Build and Maven
 
+**VSTS** | **TFS 2018**
+
 This guide covers the basics of using Team Build to work with Maven artifacts in Package Management feeds.
  
 This walkthrough assumes that you've already added the correct build service identity to your feed. 

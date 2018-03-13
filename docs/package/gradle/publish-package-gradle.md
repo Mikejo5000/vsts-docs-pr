@@ -12,6 +12,8 @@ ms.date: 01/31/2018
 
 # Publish a Maven artifact using Gradle
 
+**VSTS** | **TFS 2018**
+
 This topic covers creating and publishing a Maven artifact with Gradle using Visual Studio Team Services (VSTS).
 
 ## Prerequisites

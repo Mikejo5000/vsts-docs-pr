@@ -13,6 +13,8 @@ ms.date: 09/01/2017
 
 # Use NuGet or dotnet with Team Foundation Server feeds
 
+**TFS 2018** | **TFS 2017**
+
 Authentication from command-line clients like `nuget` and `dotnet` is a little different for Team Foundation Server users.
 
 ## Domain users on domain-joined machines

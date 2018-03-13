@@ -13,6 +13,8 @@ ms.date: 09/01/2017
 
 # Deprecate or unpublish an npm package
 
+**VSTS** | **TFS 2018** | **TFS 2017**
+
 [!INCLUDE [](../_shared/availability-npm.md)]
 
 There are two options available to remove a version of an npm package from a feed.

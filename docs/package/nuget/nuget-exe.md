@@ -13,6 +13,8 @@ ms.date: 09/01/2017
 
 # Use NuGet with VSTS feeds
 
+**VSTS**
+
 > [!NOTE]
 > This page covers interactive scenarios. In Team Build, use the NuGet step to [restore](/vsts/build-release/packages/nuget-restore) and [publish](/vsts/build-release/packages/nuget-pack-publish) packages. 
 
