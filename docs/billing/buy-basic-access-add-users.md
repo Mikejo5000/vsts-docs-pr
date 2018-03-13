@@ -23,7 +23,7 @@ When you reach the point where you exceed these free limits, you can [pay for ad
 in whatever quantity you need. There are no required tiers--so if you only need to pay for 1 user, you can pay for 1 user. If you need 27, you pay for 27. 
 When you pay for VSTS users, this increases the total number of users you can add as members in your account, adding to the free limits mentioned above. By paying for 
 these additional VSTS users, you can then [add more team members to your VSTS account](../accounts/add-account-users-from-user-hub.md) and you can even automate this 
-using our [group rules](../accounts/assign-access-levels-and-extensions-by-group-membership) feature.
+using our [group rules](../accounts/assign-access-levels-and-extensions-by-group-membership.md) feature.
 
 Your team members--whether they're Visual Studio subscribers, or are among the 5 free or the paid VSTS users--can use a comprehensive set of features in your VSTS account including 
 version control, tools for Agile, Java, build, release management, and more. For a list of features included, see our 
