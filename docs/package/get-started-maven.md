@@ -15,6 +15,8 @@ ms.date: 01/31/2018
 
 # Get started with Maven Package Management in VSTS and TFS
 
+**VSTS** | **TFS 2018**
+
 ## Before you start
 
 This guide assumes you've already set up Package Management. You can check out how to install and license the extension in the 
