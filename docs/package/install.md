@@ -8,9 +8,10 @@ ms.assetid: 45ECCEFD-3804-4D8C-8567-57C84F92A705
 ms.manager: douge
 ms.author: amullans
 ms.date: 01/24/2018
+monikerRange: '>= tfs-2017'
 ---
 
-[//]: # (monikerRange: '>= tfs-2017') 
+ 
 
 # Install and license Package Management
 
@@ -18,7 +19,7 @@ ms.date: 01/24/2018
 
 Package Management is an *extension* to VSTS and TFS.  This means you'll need the Package Management extension installed in your account and have Package Management assigned to you in order to view, upload, and download packages.  
 
-[//]: # (::: moniker range="vsts") 
+::: moniker range="vsts" 
 
 ## Install Package Management in VSTS
 
@@ -30,7 +31,7 @@ Package Management is an *extension* to VSTS and TFS.  This means you'll need th
 
 1. Select your account into which the Package Management extension should be installed
 
-1. Each account gets five (5) free licenses. If you need more than 5 licenses, click **Buy** and purchase the additional licenses you need.  If you aren’t sure you can click **Start 30 day free trial** and every user in your account will be granted access to Package Management for 30 days.  After the 30-day trial period your account will revert back to five (5) entitled users and you must assign licenses to individual users.  If you need additional licenses at this point, you may purchase them from this same dialog in the Marketplace.
+1. Each account gets five (5) free licenses. If you need more than 5 licenses, click **Buy** and purchase the additional licenses you need.  If you arenâ€™t sure you can click **Start 30 day free trial** and every user in your account will be granted access to Package Management for 30 days.  After the 30-day trial period your account will revert back to five (5) entitled users and you must assign licenses to individual users.  If you need additional licenses at this point, you may purchase them from this same dialog in the Marketplace.
 
 1. After the install is completed, select **Proceed to the account**. Then, go to any project and select the **Packages** hub in the **Build & Release** hub group
 
@@ -48,17 +49,17 @@ After you've installed Package Management using the instructions in the previous
 1. Toggle the **Symbol server** toggle to **On**
 1. Close the panel
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range=">= tfs-2017 < vsts") 
+::: moniker range=">= tfs-2017 < vsts" 
 
 ## Install Package Management in TFS
 
 Package Management is installed by default for TFS 2017 customers.  You must upgrade to TFS 2017 in order to use Package Management.
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range=">= tfs-2017") 
+::: moniker range=">= tfs-2017" 
 
 ## Buying Package Management
 
@@ -91,9 +92,9 @@ To buy additional licenses of Package Management:
 
 For further help on the purchasing process, check out the [documentation on Marketplace](/vsts/marketplace/install-vsts-extension).
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range="vsts") 
+::: moniker range="vsts" 
 
 ## Assign Package Management in VSTS
 
@@ -107,9 +108,9 @@ To assign your five free licenses of Package Management and any additional licen
    
    >If you have a Visual Studio Enterprise license, you already have access to Package Management and don't need to be assigned a license.
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range=">= tfs-2017 < vsts") 
+::: moniker range=">= tfs-2017 < vsts" 
 
 ## Assign licenses in TFS
 
@@ -123,7 +124,7 @@ To assign your five free licenses of Package Management and any additional licen
 
    * Users using an instance of TFS disconnected from the internet (and thus unable to purchase licenses from the marketplace) can still assign licenses purchased through an enterprise agreement.
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 <!-- BEGINSECTION class="md-qanda" -->
 

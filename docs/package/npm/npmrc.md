@@ -7,9 +7,10 @@ ms.technology: vs-devops-package
 ms.manager: douge
 ms.author: amullans
 ms.date: 09/01/2017
+monikerRange: '>= tfs-2017'
 ---
 
-[//]: # (monikerRange: '>= tfs-2017') 
+ 
 
 # Set up your client's npmrc
 
@@ -29,12 +30,12 @@ VSTS recommends using two **_.npmrc_** files:
 This enables you to share your configuration with the whole team while keeping your credentials secure. 
 
 ## Set up authentication on your dev box
-At this point you should have a project specific **_.npmrc_** containing only your Feed’s registry information that you discovered from the CtF dialog.  There should be no credentials in this file and the file itself is usually adjacent to your project’s **_package.json_**.  
+At this point you should have a project specific **_.npmrc_** containing only your Feedâ€™s registry information that you discovered from the CtF dialog.  There should be no credentials in this file and the file itself is usually adjacent to your projectâ€™s **_package.json_**.  
 
-> **IMPORTANT:** There can only be a single “registry=” line in your **_.npmrc_**.  Multiple registries are possible with scopes (discussed later) and our new upstream feature (discussed here).
+> **IMPORTANT:** There can only be a single â€œregistry=â€ line in your **_.npmrc_**.  Multiple registries are possible with scopes (discussed later) and our new upstream feature (discussed here).
 
 ### Windows
-If you are developing on Windows, we recommend that you use `vsts-npm-auth` to fetch credentials and inject them into your **_~/.npmrc_** on a periodic basis.  The easiest way to set this up is to install `vsts-npm-auth` globally (i.e. `npm install -g vsts-npm-auth`) and then add a run script in your project’s **_package.json_**.  
+If you are developing on Windows, we recommend that you use `vsts-npm-auth` to fetch credentials and inject them into your **_~/.npmrc_** on a periodic basis.  The easiest way to set this up is to install `vsts-npm-auth` globally (i.e. `npm install -g vsts-npm-auth`) and then add a run script in your projectâ€™s **_package.json_**.  
 
 ```json
 "scripts": {
@@ -53,11 +54,11 @@ For **macOS, Linux, and Windows Bash Shell** users on **VSTS**, and all **Team F
 ## Set up authentication in a build task
 
 ### Without a Task Runner
-* We need to get some screenshots of a simple npm install using “Feeds in my .npmrc” can use buildcanary
-* Need to get some screenshots of a simple npm install using “Feeds I select here”  can use buildcanary
+* We need to get some screenshots of a simple npm install using â€œFeeds in my .npmrcâ€ can use buildcanary
+* Need to get some screenshots of a simple npm install using â€œFeeds I select hereâ€  can use buildcanary
 
 ### With a Task Runner (e.g. make gulp work)
-* Need to demonstrate how to use “NPM Authenticate” to inject credentials into a .npmrc.  We have an example on su0 an buildcanary
+* Need to demonstrate how to use â€œNPM Authenticateâ€ to inject credentials into a .npmrc.  We have an example on su0 an buildcanary
 
 ## Troubleshooting `vsts-npm-auth`
 
