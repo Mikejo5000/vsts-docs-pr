@@ -82,6 +82,8 @@ For existing builds, just add or update a NuGet Tool Installer step to select th
 
 [//]: # (::: moniker range="tfs-2017") 
 
+#### TFS 2017 and earlier
+
 Because the NuGet Tool Installer is not available in TFS versions prior to TFS 2018, there is a recommended workaround to use versions of NuGet > 4.0.0 in Team Build.
 
 1. Add the task, if you haven’t already. If you have a “NuGet Restore” step in the catalog (it may be in the Deprecated tasks section), insert it into your build. Otherwise, insert a “NuGet” step.
@@ -91,3 +93,5 @@ $(Build.BinariesDirectory)\nuget.exe
 1. Before your NuGet step, add a “PowerShell” step, select “Inline Script” as the Type, enter this PowerShell script as the Inline Script, and enter “4.3.0” (or any version of NuGet from this list) as the Arguments.
 
 Our thanks to [GitHub user leftler](https://github.com/Microsoft/vsts-tasks/issues/3756#issuecomment-288185011) for creating the original version of the PowerShell script linked above.
+
+[//]: # (::: moniker-end) 
