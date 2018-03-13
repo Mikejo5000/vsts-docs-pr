@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: chcomley
 ms.date: 1/22/2018
 ---
+[//]: # (monikerRange: 'vsts')
 
 # Set up Cloud Solution Provider customer and billing in Partner Center
 
