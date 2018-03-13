@@ -9,6 +9,8 @@ ms.manager: douge
 ms.author: chcomley
 ms.date: 3/13/2018
 ---
+[//]: # (monikerRange: 'vsts')
+
 # VSTS billing overview
 
 **VSTS**
