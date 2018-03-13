@@ -9,9 +9,9 @@ ms.author: amullans
 ms.date: 09/01/2017
 ---
 
-# Unlist or delete a NuGet package
+[//]: # (monikerRange: '>= tfs-2017') 
 
-[!INCLUDE [](../_shared/availability-nuget.md)]
+# Unlist or delete a NuGet package
 
 There are two options available to remove a version of a NuGet package from a feed.
 

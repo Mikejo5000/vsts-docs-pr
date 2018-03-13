@@ -8,10 +8,13 @@ ms.manager: douge
 ms.author: amullans
 ms.date: 11/07/2016
 ---
+[//]: # (monikerRange: '>= tfs-2017') 
 
 # Use Team Build to restore and publish npm packages
 
 **VSTS**
+
+[!INCLUDE [](../../package/_shared/availability-npm.md)]
 
 This guide covers the basics of using Team Build to work with npm packages in Package Management feeds.
 

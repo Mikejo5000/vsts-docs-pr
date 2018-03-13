@@ -10,8 +10,8 @@ ms.reviewer: dastahel
 ms.date: 01/31/2018
 ---
 
-# Set up the Maven client in VSTS and TFS
+[//]: # (monikerRange: '>= tfs-2018') 
 
-[!INCLUDE [](../_shared/availability-maven.md)]
+# Set up the Maven client in VSTS and TFS
 
 [!INCLUDE [](../_shared/maven/pom-and-settings.md)]

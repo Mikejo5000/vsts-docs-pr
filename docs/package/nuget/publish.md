@@ -9,8 +9,8 @@ ms.author: amullans
 ms.date: 09/01/2017
 ---
 
-# Publish a NuGet package from the command line
+[//]: # (monikerRange: '>= tfs-2017') 
 
-[!INCLUDE [](../_shared/availability-nuget.md)]
+# Publish a NuGet package from the command line
 
 [!INCLUDE [](../_shared/nuget/publish.md)]

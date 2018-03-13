@@ -9,9 +9,9 @@ ms.author: amullans
 ms.date: 09/01/2017
 ---
 
-# Use dotnet with VSTS feeds
+[//]: # (monikerRange: 'vsts') 
 
-[!INCLUDE [](../_shared/availability-nuget.md)]
+# Use dotnet with VSTS feeds
 
 > [!NOTE]
 > This page covers interactive scenarios. In Team Build, use the [.NET Core step](../../build-release/tasks/build/dotnet-core.md). 

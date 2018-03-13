@@ -9,6 +9,8 @@ ms.author: amullans
 ms.date: 09/01/2017
 ---
 
+[//]: # (monikerRange: '>= tfs-2017') 
+
 # Use npm scopes
 
 [!INCLUDE [](../_shared/availability-npm.md)]

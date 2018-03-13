@@ -9,8 +9,8 @@ ms.author: amullans
 ms.date: 08/10/2016
 ---
 
-# Consume NuGet packages in Visual Studio
+[//]: # (monikerRange: '>= tfs-2017') 
 
-[!INCLUDE [](../_shared/availability-nuget.md)]
+# Consume NuGet packages in Visual Studio
 
 [!INCLUDE [](../_shared/nuget/consume.md)]

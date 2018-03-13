@@ -9,9 +9,9 @@ ms.author: amullans
 ms.date: 09/01/2017
 ---
 
-# Move your packages to the cloud
+[//]: # (monikerRange: '>= tfs-2017') 
 
-[!INCLUDE [](../_shared/availability-nuget.md)]
+# Move your packages to the cloud
 
 VSTS provides hosted NuGet feeds as a service. 
 If you're using NuGet packages as a part of your continuous delivery flow, 

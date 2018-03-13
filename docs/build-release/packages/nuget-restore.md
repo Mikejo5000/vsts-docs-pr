@@ -10,6 +10,8 @@ ms.author: amullans
 ms.date: 09/01/2017
 ---
 
+[//]: # (monikerRange: '>= tfs-2017')
+
 # Restore Package Management NuGet packages in Team Build
 
 **VSTS | TFS 2018 | TFS 2017**
@@ -67,13 +69,18 @@ The example below demonstrates how that might look.
 NuGet restore can fail due to a variety of issues. One of the most common issues is the introduction of a new project in your solution that requires a [target framework](https://docs.microsoft.com/en-us/nuget/schema/target-frameworks) that isn't understood by the version of NuGet your build is using. This issue generally doesn't present itself on a developer machine because Visual Studio updates the NuGet restore mechanism at the same time it adds new project types. We're looking into similar features for VSTS. In the meantime though, the first thing to try when you can't restore packages is to update to the latest version of NuGet.
 
 ### How do I use the latest version of NuGet?
+
+[//]: # (::: moniker range=">= tfs-2018") 
+
 If you’re using VSTS or the upcoming TFS 2018 release, new template-based builds will work automatically thanks to a new “NuGet Tool Installer” task that’s been added to the beginning of all build templates that use the NuGet task. We periodically update the default version that's selected for new builds around the same time we install Visual Studio updates on the Hosted build agents.
 
 For existing builds, just add or update a NuGet Tool Installer step to select the version of NuGet for all the subsequent steps. You can see all available versions of NuGet [on nuget.org](https://dist.nuget.org/tools.json).
 
 ![Build with NuGet Tool Installer step](_img/nuget-tool-installer.jpg)
 
-#### TFS 2017 and earlier
+[//]: # (::: moniker-end) 
+
+[//]: # (::: moniker range="tfs-2017") 
 
 Because the NuGet Tool Installer is not available in TFS versions prior to TFS 2018, there is a recommended workaround to use versions of NuGet > 4.0.0 in Team Build.
 

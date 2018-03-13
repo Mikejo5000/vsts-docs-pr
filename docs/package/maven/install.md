@@ -10,9 +10,9 @@ ms.reviewer: dastahel
 ms.date: 01/31/2018
 ---
 
-# Install Maven artifacts using VSTS and TFS
+[//]: # (monikerRange: '>= tfs-2018') 
 
-[!INCLUDE [](../_shared/availability-maven.md)]
+# Install Maven artifacts using VSTS and TFS
 
 [!INCLUDE [](../_shared/maven/install.md)]
 

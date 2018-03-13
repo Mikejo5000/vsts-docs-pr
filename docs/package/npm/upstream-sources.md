@@ -9,6 +9,8 @@ ms.author: cajone
 ms.date: 11/13/2017
 ---
 
+[//]: # (monikerRange: '>= tfs-2017') 
+
 # Use packages from npmjs.com
 
 [!INCLUDE [](../_shared/availability-npm.md)]
