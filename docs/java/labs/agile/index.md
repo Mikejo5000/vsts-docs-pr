@@ -7,7 +7,7 @@ ms.manager: douge
 ms.author: douge
 ms.date: 01/22/2018
 ---
-[//]: # (monikerRange: 'vsts')
+[//]: # (monikerRange: '>= tfs-2017')
 
 # Manage your Java project with VSTS Agile tools
 

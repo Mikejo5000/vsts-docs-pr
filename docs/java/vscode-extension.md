@@ -1,24 +1,24 @@
 ---
-title: VSCode extension for Java development with VSTS
-description: Learn how to use the VSCode extension for Java development with VSTS
+title: VS Code extension for Java development with VSTS
+description: Learn how to use the VS Code extension for Java development with VSTS
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build 
 ms.manager: douge
 ms.author: douge
-ms.date: 01/22/2018
+ms.date: 03/14/2018
 ---
-[//]: # (monikerRange: 'vsts')
+[//]: # (monikerRange: '>= tfs-2015')
 
 # Use Visual Studio Code with VSTS
 
-Visual Studio Code (VSCode) is a code editor produced by Microsoft. You can find out more about it at https://code.visualstudio.com. The Visual Studio (VSTS) extension allows you to connect to VSTS, monitor your builds and manage your pull requests and work items for your VSTS Git repositories.
+Visual Studio Code (VS Code) is a code editor produced by Microsoft. You can find out more about it at https://code.visualstudio.com. The Visual Studio Team Services (VSTS) extension allows you to connect to VSTS, monitor your builds and manage your pull requests and work items for your VSTS Git and TFVC repositories.
 
 > [!div class="mx-imgBorder"]
-![The VSTS VSCode extension in action](_img/vscode.png)
+![The VSTS VS Code extension in action](_img/vscode.png)
 
 ## Prerequisites
 
- - You already have a Visual Studio Team Services account. If you do not already have a VSTS account, [sign up for VSTS](https://docs.microsoft.com/en-us/vsts/accounts/create-account-msa-or-work-student).
+ - You already have a VSTS account. If you do not already have a VSTS account, [sign up](https://docs.microsoft.com/en-us/vsts/accounts/create-account-msa-or-work-student).
  - You have Visual Studio Code 1.11.1 or later installed on your machine (if not, [download and install it](https://code.visualstudio.com/Download)).
  - You have already [cloned a VSTS Git repository](https://docs.microsoft.com/en-us/vsts/git/tutorial/clone?tabs=command-line) to your computer locally.
 
@@ -26,7 +26,7 @@ Visual Studio Code (VSCode) is a code editor produced by Microsoft. You can find
 
 ## Install the extension
 
-To install the extension with the latest version of Visual Studio Code, bring up the **Visual Studio Code Command Palette** (press **F1**), type `install` and choose **Extensions: Install Extensions**. In the **Search Extensions in Marketplace** text box, type team. Find the Visual Studio Team Services extension published by Microsoft and click the **Install** button. 
+To install the extension with the latest version of Visual Studio Code, bring up the **Visual Studio Code Command Palette** (press **F1**), type `install` and choose **Extensions: Install Extensions**. In the **Search Extensions in Marketplace** text box, type team. Find the VSTS extension published by Microsoft and click the **Install** button. 
 
 Restart Visual Studio Code.
 
@@ -42,7 +42,7 @@ Once you have installed the extension, open either the root folder or a sub-fold
 The indicator looks like this:
 
 > [!div class="mx-imgBorder"]
-![VSTS VSCode extension login indicator](_img/team-error.png)
+![VSTS VS Code extension login indicator](_img/team-error.png)
 
 
 To log in to your account, run the `team signin` command. If your repository is a VSTS repository, you will be prompted to enter your personal access token. When you do, it will be stored securely on your computer and used to connect to VSTS. 
@@ -94,7 +94,7 @@ In addition to the status bar integrations, the extension also provides several 
 
 ## Secure Credential Storage
 When you run the `team signin` command, the credentials that you provide will be stored securely on your computer. On Windows, your credentials wil be stored by Windows Credential Manager. 
- - On OS X and macOS, your credentials will be stored in the Keychain. 
+ - On macOS, your credentials will be stored in the Keychain. 
  - On Linux, your credentials will be stored in a file on your local file system in a subdirectory of your home folder. That file is created only with RW rights for the user running Visual Studio Code. It is not encrypted on disk.
 
 ## Next Steps
@@ -103,10 +103,10 @@ Check out the [README.md in the GitHub repository](https://github.com/Microsoft/
 ## Frequently Asked Questions (FAQ)
 
 **Q: What platforms does the extension run on?**
-**A:** The extension runs on OS X, macOS, Windows and Linux (we've tested on RedHat, Ubuntu and CentOS).
+**A:** The extension runs on Linux, macOS, and Windows (we've tested on RedHat, Ubuntu, and CentOS).
 
 **Q: Does the Visual Studio Code extension support Team Foundation Server (on-premises)?**
 **A:** Yes! With version 1.103.0 the extension supports Team Foundation Server 2015 Update 2 and later.
 
 **Q: Where can I find the source code for the extension?**
-**A:** The code is open source on [GitHub at Microsoft/vsts-vscode](https://github.com/Microsoft/vsts-vscode). We welcome feedback and contributions!
+**A:** The code is open source on GitHub at [Microsoft/vsts-vscode](https://github.com/Microsoft/vsts-vscode). We welcome feedback and contributions!

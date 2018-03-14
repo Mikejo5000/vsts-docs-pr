@@ -7,7 +7,7 @@ ms.manager: douge
 ms.author: douge
 ms.date: 01/22/2018
 ---
-[//]: # (monikerRange: 'vsts')
+[//]: # (monikerRange: '>= tfs-2017')
 
 This exercise will walk you through the steps to creating your Visual Studio Team Services (VSTS) account and create a new project. 
 
