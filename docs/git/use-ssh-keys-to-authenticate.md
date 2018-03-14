@@ -7,6 +7,7 @@ ms.technology: vs-devops-git
 ms.manager: douge
 ms.author: sdanie
 ms.date: 03/14//2018
+monikerRange: '>= tfs-2015'  # Use SSH key authentication #### VSTS | TFS 2018 | TFS 2017 | TFS 2015 Update 3  Connect to your Git repos through SSH when you can't use the recommended [Git Credential Managers](set-up-credential-managers.md
 ---
 [//]: # (monikerRange: '>= tfs-2015'
 

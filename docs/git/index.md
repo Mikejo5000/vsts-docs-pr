@@ -9,6 +9,7 @@ ms.author: sdanie
 ms.date: 03/14//2018
 ms.topic: landing-page
 layout: LandingPage
+monikerRange: '>= tfs-2013'  # Git Repositories  Use Git repositories to host and collaborate on your code using Visual Studio Team Services (VSTS
 ---
 [//]: # (monikerRange: '>= tfs-2013'
 
