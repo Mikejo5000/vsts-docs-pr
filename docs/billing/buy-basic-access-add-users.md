@@ -41,9 +41,8 @@ To make subsequent edits to paid quantities in your VSTS account, you only need 
 <a name="buy-access-vs-marketplace"></a>
 ## Increase the number of paid VSTS users on your account
 
-0.	As VSTS project collection administrator or account owner, 
-sign in to [**Visual Studio Marketplace** > **Other** > **VSTS Users**](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser), 
-and choose **Buy**.
+0.	Sign in to [**Visual Studio Marketplace** > **Other** > **VSTS Users**](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser), 
+and choose **Get**.
 
 	![Go to Visual Studio Marketplace, Other, VSTS Users](_img/buy-more-basic-access/team-services-users-vs-marketplace.png)
 
@@ -51,12 +50,6 @@ and choose **Buy**.
 if you have multiple accounts.
 
 	![Select your VSTS account](_img/buy-more-basic-access/select-team-services-account-vs-marketplace.png)
-
-	<p><a data-toggle="collapse" href="#expando-why-no-ts-account">Don't see your VSTS accounts? &#x25BC;</a></p>
-	<div class="collapse" id="expando-why-no-ts-account">
-	<p>To select your VSTS account here, you must have VSTS 
-	[project collection administrator or account owner permissions](faq-pay-for-basic-users.md#FindOwnerPCA).	
-	</div>
 
 0.	Confirm the Azure subscription, where your VSTS charges will be billed. 
 
@@ -66,15 +59,6 @@ if you have multiple accounts.
 	you can create a new one. 
 	
 	![Confirm or select your Azure subscription](_img/buy-more-basic-access/confirm-azure-subscription-vs-marketplace.png)
-
-	<p><a data-toggle="collapse" href="#expando-why-no-azure-sub">Don't see the Azure subscription that you expect? &#x25BC;</a></p>
-	<div class="collapse" id="expando-why-no-azure-sub">
-	<p>To use an existing Azure subscription for billing, 
-	you'll need at least co-administrator permissions for that subscription. 
-	If you don't have permissions, 
-	have an Azure Account Administrator or Service Administrator 
-	[add you as a Co-administrator to the linked Azure subscription](add-backup-billing-managers.md).
-	</div>
 
 0.	Enter the number of paid VSTS users. You will also see the number of free users included, which is separate.
 

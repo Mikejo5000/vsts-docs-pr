@@ -15,9 +15,9 @@ ms.date: 3/13/2018
 
 **VSTS**
 
-You have to set up billing when you need more than the **free tier** of resources in your VSTS account: (5 VSTS users (Basic), 5 Package Management users, 
-Free Tier of Microsoft-hosted CI/CD (1 concurrent job, up to 4 hours per month), 1 self-hosted CI/CD concurrent job, 20,000 virtual user minutes of cloud-based load testing), 
-or to buy other features for your users that are offered by Microsoft or by other companies via the [Visual Studio Marketplace](https://marketplace.visualstudio.com/).
+You have to set up billing when you need more than the **Free Tier** of resources in your VSTS account—5 VSTS users (Basic), 5 Package Management users, 
+Free Tier of Microsoft-hosted CI/CD (1 concurrent job, up to 4 hours per month), 1 self-hosted CI/CD concurrent job, and 20,000 virtual user minutes of 
+cloud-based load testing—or to buy other features for your users that are offered by Microsoft or by other companies via the [Visual Studio Marketplace](https://marketplace.visualstudio.com/).
 
 > During your first purchase for your VSTS account, we'll prompt you to select the Azure subscription to use for billing. This can be part of your 
 > Enterprise Agreement, Pay-As-You-Go, CSP, or many other types of Azure subscriptions. All VSTS services are billed via Azure, though you are not required to pay for or 
@@ -26,13 +26,13 @@ or to buy other features for your users that are offered by Microsoft or by othe
 > These are the paid services offered by Microsoft:
 >
 > * [VSTS users/Basic](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser)
-> * [Microsoft-hosted CI/CD](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines) (hosted pipelines)
-> * [Self-hosted CI/CD](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines) (private pipelines)
+> * [Microsoft-hosted CI/CD](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines) (formerly hosted pipelines)
+> * [Self-hosted CI/CD](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines) (formerly private pipelines)
 > * [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
 > * [Package Management](https://marketplace.visualstudio.com/items?itemName=ms.feed)
 >
 > [Cloud-based load testing](buy-load-testing-vs.md) is charged based on the load tests you run. By default, paid usage is turned off for your VSTS account. 
-> You can only enable paid usage via the Azure portal. If you want to change the Azure subscription that you use for billing, follow the guidance in this topic to go through the Azure portal.
+> You can only enable paid usage via the Azure portal. 
 
 ## What do I need to set up billing?
 
