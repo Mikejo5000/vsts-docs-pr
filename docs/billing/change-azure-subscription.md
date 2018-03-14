@@ -64,6 +64,8 @@ Select your VSTS account.
 
 0. Make your purchases again. During your first purchase, select the new Azure subscription to use for billing going forward.
 
+## Releated information
+
 - [VSTS users](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser)
 - [Microsoft-hosted CI/CD](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines) (hosted pipelines)
 - [Self-hosted CI/CD](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines) (private pipelines)

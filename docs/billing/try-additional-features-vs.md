@@ -15,7 +15,7 @@ ms.date: 3/13/2018
 
 **VSTS**
 
-There are two paid features/extensions in VSTS offered by Microsoft that you can use free for a 30-day trial:
+There are two paid features in VSTS offered by Microsoft that you can use free for a 30-day trial:
 - [Test Manager](https://marketplace.visualstudio.com/items/ms.vss-testmanager-web) (which is included on an ongoing basis for Visual Studio Enterprise, 
 Visual Studio Test Professional, and MSDN Platforms subscribers)
 - [Package Management](https://marketplace.visualstudio.com/items?itemName=ms.feed) (which is included on an ongoing basis for Visual Studio Enterprise subscribers, 
@@ -34,7 +34,7 @@ This same process applies to paid extensions offered by other publishers within 
 ## Who can start these trials?
 
 As the VSTS [account owner or project collection administrator](faq-billing-setup.md#find-owner), you can start trials for your VSTS account. 
-All other users can [request extensions](../marketplace/install-vsts-extension.md#request).
+All other users can [request extensions](../marketplace/install-vsts-extension.md).
 
 ##  Start a trial for your VSTS account
 
@@ -71,3 +71,11 @@ If you lose access because the trial expired before you could purchase, just buy
 	![Users hub, extension pane](_img/try-additional-features/extension-trial-in-account-updated-ui.png)
 
 0.	[Assign the extension](../marketplace/assign-paid-extensions.md) to the users who need it.
+
+## Related information
+
+- [Set up billing](set-up-billing-for-your-account-vs.md)
+- [Add backup billing managers](add-backup-billing-managers.md)
+- [Change the Azure subscription for billing](change-azure-subscription.md)
+- [VSTS pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
+- [VSTS billing support](https://www.visualstudio.com/team-services/support/)

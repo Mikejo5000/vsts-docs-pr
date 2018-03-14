@@ -116,6 +116,7 @@ The hosted XAML build controller is no longer supported.
 * [VSTS Support](https://www.visualstudio.com/team-services/support).
 
 ## Additional resources
+
 * [VSTS: CI/CD concepts](../build-release/concepts/licensing/concurrent-pipelines-ts.md)
 * [TFS: CI/CD concepts](../build-release/concepts/licensing/concurrent-pipelines-tfs.md)
 * [Pricing for VSTS CI/CD](https://www.visualstudio.com/team-services/pricing)
