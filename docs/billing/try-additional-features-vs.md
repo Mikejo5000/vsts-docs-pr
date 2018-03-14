@@ -34,7 +34,7 @@ This same process applies to paid extensions offered by other publishers within 
 ## Who can start these trials?
 
 As the VSTS [account owner or project collection administrator](faq-billing-setup.md#find-owner), you can start trials for your VSTS account. 
-All other users can [request extensions](../marketplace/install-vsts-extension#request).
+All other users can [request extensions](../marketplace/install-vsts-extension.md#request).
 
 ##  Start a trial for your VSTS account
 
