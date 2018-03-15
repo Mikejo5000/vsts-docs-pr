@@ -7,7 +7,7 @@ ms.technology: vs-devops-setup
 ms.assetid: 02cb8774-6d1d-4f15-8818-b56541033b1f
 ms.manager: douge
 ms.author: chcomley
-ms.date: 3/13/2018
+ms.date: 3/15/2018
 ---
 [//]: # (monikerRange: 'vsts')
 
@@ -28,6 +28,8 @@ using our [group rules](../accounts/assign-access-levels-and-extensions-by-group
 Your team members--whether they're Visual Studio subscribers, or are among the 5 free or the paid VSTS users--can use a comprehensive set of features in your VSTS account including 
 version control, tools for Agile, Java, build, release management, and more. For a list of features included, see our 
 [feature comparison](https://www.visualstudio.com/team-services/compare-features/).
+
+[Pay for more VSTS users on your account](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser)
 
 ## Prerequisites
 

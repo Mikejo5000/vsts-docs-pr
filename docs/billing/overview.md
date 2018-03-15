@@ -7,7 +7,7 @@ ms.technology: vs-devops-setup
 ms.assetid: d5bd13e2-aa7c-4191-aefd-bd9f05663e7b
 ms.manager: douge
 ms.author: chcomley
-ms.date: 3/13/2018
+ms.date: 3/15/2018
 ---
 [//]: # (monikerRange: 'vsts')
 
@@ -15,9 +15,9 @@ ms.date: 3/13/2018
 
 **VSTS**
 
-You have to set up billing when you need more than the **Free Tier** of resources in your VSTS account—5 VSTS users (Basic), 5 Package Management users, 
+You have to set up billing when you need more than the **Free Tier** of resources in your VSTS account--5 VSTS users (Basic), 5 Package Management users, 
 Free Tier of Microsoft-hosted CI/CD (1 concurrent job, up to 4 hours per month), 1 self-hosted CI/CD concurrent job, and 20,000 virtual user minutes of 
-cloud-based load testing—or to buy other features for your users that are offered by Microsoft or by other companies via the [Visual Studio Marketplace](https://marketplace.visualstudio.com/).
+cloud-based load testing--or to buy other features for your users that are offered by Microsoft or by other companies via the [Visual Studio Marketplace](https://marketplace.visualstudio.com/).
 
 > During your first purchase for your VSTS account, we'll prompt you to select the Azure subscription to use for billing. This can be part of your 
 > Enterprise Agreement, Pay-As-You-Go, CSP, or many other types of Azure subscriptions. All VSTS services are billed via Azure, though you are not required to pay for or 
