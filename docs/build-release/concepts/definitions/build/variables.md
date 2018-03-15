@@ -143,8 +143,8 @@ You can pass environment variables of the build machine into build steps. For ex
                 </p>
             </td>
         </tr>
-         <tr>
 [//]: # (::: moniker range="> tfs-2015")
+         <tr>
             <td>
                 <p style="font-size:80%">
                     Agent.JobStatus
@@ -165,8 +165,9 @@ You can pass environment variables of the build machine into build steps. For ex
                   <li style="font-size:80%">`SucceededWithIssues` (partially successful)</li>
                 </ul>
             </td>
+        </tr>
 [//]: # (::: moniker-end)
-        </tr>        <tr>
+		<tr>
             <td>
                 <p style="font-size:80%">
                     Agent.MachineName
