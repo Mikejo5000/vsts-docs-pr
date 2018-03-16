@@ -11,8 +11,9 @@ ms.manager: douge
 ms.author: mlearned
 ms.reviewer: dastahel
 ms.date: 02/07/2018
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
+
 
 # Define a continuous integration (CI) build process for your GitHub repository
 

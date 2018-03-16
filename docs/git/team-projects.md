@@ -8,6 +8,7 @@ ms.technology: vs-devops-git
 ms.manager: douge
 ms.author: sdanie
 ms.date: 03/14//2018 
+monikerRange: '>= tfs-2015'  #  Use Git and TFVC repos in the same team project #### VSTS | TFS 2018 | TFS 2017 | TFS 2015 Update 1  In Team Foundation Server 2015 Update 1, a project administrator can add a Git repo to a team project created with Team Foundation Version Control (TFVC
 ---
 [//]: # (monikerRange: '>= tfs-2015'
 
