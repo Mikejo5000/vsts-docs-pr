@@ -26,7 +26,7 @@ When you add someone as a member of a public project, you are also trusting that
 Under the hood, a project member belongs to one or more [project-related VSTS groups](../security/about-security-identity.md#security-groups-and-permissions) such as "Project Valid Users" and "Project Contributors".
 That person is also a member of an account-level group known as "Project Collection Valid Users".
 Also, that person's identity appears in the [identity service](../security/about-security-identity.md#authentication) which backs the account.
-In VSTS accounts backed by [Azure Active Directory](../../azure/active-directory/), identities may be [native](../../azure/active-directory/add-users-azure-active-directory) or [guests](../../azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b), which grant different levels of access.
+In VSTS accounts backed by [Azure Active Directory](/azure/active-directory/), identities may be [native](/azure/active-directory/add-users-azure-active-directory) or [guests](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b), which grant different levels of access.
 
 ## Account-level resources
 
