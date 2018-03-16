@@ -36,7 +36,8 @@ Create a public project, make an existing project public, or work in a public pr
  
 ## Concepts
 * [Default roles and permissions](default-roles-access-public.md) 
-* [Recommendations when moving a private project to public](recommendations-make-project-public.md)
+* [Inviting outside users](inviting-outside-users.md)
+* [Recommendations when moving a private project to public](migration-checklist.md)
 
 ## How-to Guides
 * [Filter basics](../work/backlogs/filter-backlogs.md?toc=/vsts/public/toc.json&bc=/vsts/public/breadcrumb/toc.json)  
