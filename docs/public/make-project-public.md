@@ -15,7 +15,6 @@ ms.date: 01/05/2018
 
 **Azure CodeX Public Project**  
 
- 
-
-
- 
+>[!TIP]  
+> Look through our [migration checklist](migration-checklist.md) before you make an existing project public.
+> It has tips and ideas for exposing a limited set of data, in case you don't want your entire history available.

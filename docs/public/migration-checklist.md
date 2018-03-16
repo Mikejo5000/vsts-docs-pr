@@ -1,5 +1,5 @@
 ---
-title: Recommendations when making a project public 
+title: Migration checklist
 titleSuffix: Azure CodeX Public Project 
 description: Best practices when changing a private project to a public project 
 ms.technology: vs-devops-wit
@@ -11,7 +11,7 @@ ms.topic: get-started-article
 ms.date: 01/05/2018
 ---
 
-# Recommendations when moving a private project to public 
+# Migration checklist
 
 **Azure CodeX Public Project**  
 
