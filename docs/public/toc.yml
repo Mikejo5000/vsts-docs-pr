@@ -51,6 +51,8 @@
     href: ../work/work-items/work-item-form-controls.md?toc=/vsts/public/toc.json&bc=/vsts/public/breadcrumb/toc.json 
   - name: Terms of service
     href: service-limits-public.md 
+  - name: Feature differences for non-members
+    href: feature-differences.md 
 - name: Resources
   items:
   - name: Git
