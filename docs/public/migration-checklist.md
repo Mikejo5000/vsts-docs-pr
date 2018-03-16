@@ -22,21 +22,37 @@ Also, it has ideas for migrating the latest state to a new project so that you c
 
 ## Agile
 
-Bug history, sensitive details
+* Confirm that your work items, even closed ones, don't contain sensitive details: undisclosed security flaws, credentials, and customer data.
+* Be aware that all discussions and descriptions are available. Check that none contain embarrassing or problematic speech.
+* Confirm that none of your area paths have special, locked-down security settings. Denied permissions are not enforced in a public project, so these restricted area paths will become public.
+
+>[!TIP]
+> If you aren't comfortable exposing the whole work item database, you have migration options.
+> See the [instructions for moving work items](#work-item-migration).
 
 ## Code
 
-Bad words, credentials
+* Confirm that you have no sensitive details in your repositories' history: unpatched security bugs, credentials, and code you don't have the right to distribute.
+* Be aware that all file contents and commit messages are available. Check that none contain embarrassing or problematic speech.
 
 >[!TIP]
-> If you aren't comfortable exposing the entire repository, you can migrate the tip to another project.
+> If you aren't comfortable exposing an entire repository, you can migrate the tip to another project.
 > See the [instructions for a tip migration](#git-tip-only-migration).
 
 ## CI/CD
 
+* Confirm that none of your definitions exposes sensitive data: credentials/secrets, obscure URLs, and private environment names.
+* Confirm that non-members don't require access to your private packaging feeds. Builds can still access feeds, but non-members cannot.
+
+If you need to migrate build definitions to a new project (perhaps because you're moving code or work items), you can import & export using [YAML](../build-release/actions/build-yaml.md).
+
 ## Testing
 
-## Reporting
+* Understand that your manual testing and Cloud Load Testing features will not be available to non-members.
+
+## Analytics & dashboards
+
+* Consider building a dashboard intended for the public. Some [widgets are unavailable](feature-differences.md#analytics--dashboards) to non-members, so don't rely on these.
 
 ## Extensions
 
@@ -44,14 +60,16 @@ Are any extensions vital to your project's experience?
 For instance, do you have a control on your work item form which renders data in a particular way?
 Are there custom hubs which expose important details?
 
-* Check whether each extension's author has made it available for non-members by testing it.
+* Confirm that each extension's author has made it available for non-members by testing it.
 * If not, ask the extension author to add support for non-members.
-
-- Migrate just the tip of all Git repos, after ensuring nothing undesirable exists there 
-- Copy any important bugs (maybe with the new WIMigrator tool?)
-- Export and import build definitions 
  
 # Partial migration tips
+
+## Work item migration
+
+**TODO** talk about moving individual work items
+
+**TODO** talk about WImigrator
 
 ## Git tip-only migration
 You can do a tip-only migration if you don't want to share your repository's history.
