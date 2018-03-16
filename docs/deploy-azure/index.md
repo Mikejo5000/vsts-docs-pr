@@ -54,6 +54,6 @@ Learn how to build your app and deploy it to your choice of Azure service.
 
 [//]: # (::: moniker range="tfs-2013")
 
-**TFS 2013:** We recommend that you [Migrate from XAML builds to new builds](actions/migrate-from-xaml-builds.md).
+**TFS 2013:** We recommend that you [Migrate from XAML builds to new builds](../build-release/actions/migrate-from-xaml-builds.md).
 
 [//]: # (::: moniker-end)
