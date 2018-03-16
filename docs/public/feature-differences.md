@@ -22,6 +22,13 @@ Non-members get read-only access to the project, and members have the access the
 There are some features which work differently or are completely unavailable for non-members.
 Over time, we intend to reduce the number of differences and increase the availability of other features.
 
+## Read-only access and permissions-based UI
+CodeX has a permissions-driven user interface.
+If a user doesn't have the permissions needed to complete an action, gestures for attempting that action will be disabled or hidden.
+By default, inaccessible commands are disabled, minimizing the layout changes that would be needed if elements could appear and disappear.
+For example, for a user lacking permission to create pull requests, the "Create pull request" button will be disabled.
+Entire hub groups, the settings area, and favorites/follows are the exceptions to this, and they are hidden when the user doesn't have access to them.
+
 ## Differences between a public and private project
 When marking a project public, there are two changes which affect all members of the project:
 * Permissions marked "deny" are not honored. The permissions automatically granted to a non-member act as a "floor" on the capabilities that can be assigned to any member in the project.
