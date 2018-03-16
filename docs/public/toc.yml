@@ -31,6 +31,8 @@
   items:
   - name: Default roles and access
     href: default-roles-access-public.md 
+  - name: Inviting outside users
+    href: inviting-outside-users.md
   - name: Migration checklist
     href: migration-checklist.md
   - name: Glossary of key terms
