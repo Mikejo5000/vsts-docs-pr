@@ -20,7 +20,9 @@ Old work items, early commits, and previous build definitions might have content
 This checklist contains a list of things to think about before making a project public.
 Also, it has ideas for migrating the latest state to a new project so that you can expose only current and future content.
 
-## Agile
+## Checklist by area
+
+### Agile
 
 * Confirm that your work items, even closed ones, don't contain sensitive details: undisclosed security flaws, credentials, and customer data.
 * Be aware that all discussions and descriptions are available. Check that none contain embarrassing or problematic speech.
@@ -30,7 +32,7 @@ Also, it has ideas for migrating the latest state to a new project so that you c
 > If you aren't comfortable exposing the whole work item database, you have migration options.
 > See the [instructions for moving work items](#work-item-migration).
 
-## Code
+### Code
 
 * Confirm that you have no sensitive details in your repositories' history: unpatched security bugs, credentials, and code you don't have the right to distribute.
 * Be aware that all file contents and commit messages are available. Check that none contain embarrassing or problematic speech.
@@ -39,22 +41,22 @@ Also, it has ideas for migrating the latest state to a new project so that you c
 > If you aren't comfortable exposing an entire repository, you can migrate the tip to another project.
 > See the [instructions for a tip migration](#git-tip-only-migration).
 
-## CI/CD
+### CI/CD
 
 * Confirm that none of your definitions exposes sensitive data: credentials/secrets, obscure URLs, and private environment names.
 * Confirm that non-members don't require access to your private packaging feeds. Builds can still access feeds, but non-members cannot.
 
 If you need to migrate build definitions to a new project (perhaps because you're moving code or work items), you can import & export using [YAML](../build-release/actions/build-yaml.md).
 
-## Testing
+### Testing
 
 * Understand that your manual testing and Cloud Load Testing features will not be available to non-members.
 
-## Analytics & dashboards
+### Analytics & dashboards
 
 * Consider building a dashboard intended for the public. Some [widgets are unavailable](feature-differences.md#analytics--dashboards) to non-members, so don't rely on these.
 
-## Extensions
+### Extensions
 
 Are any extensions vital to your project's experience?
 For instance, do you have a control on your work item form which renders data in a particular way?
@@ -63,21 +65,27 @@ Are there custom hubs which expose important details?
 * Confirm that each extension's author has made it available for non-members by testing it.
 * If not, ask the extension author to add support for non-members.
  
-# Partial migration tips
+## Partial migration tips
 
-## Work item migration
+### Work item migration
 
-**TODO** talk about moving individual work items
+If one or a handful of work items are sensitive, you can [move them](../work/backlogs/remove-delete-work-items.md#move-a-work-item-to-another-team-project) out into a separate, private project.
+Cross-project linkages will continue to work for members.
+Non-members will not have access to the content since it resides in a private project.
 
-**TODO** talk about WImigrator
+If you have a large number of sensitive work items, consider keeping your current project private and creating a new public project.
+You can migrate a few work items by hand into the new project.
+Migrating a large number of work items can be accomplished using the open source [WiMigrator](https://github.com/Microsoft/vsts-work-item-migrator) maintained by Microsoft.
 
-## Git tip-only migration
-You can do a tip-only migration if you don't want to share your repository's history.
+### Git tip-only migration
+If a repository cannot be shared due to problematic history, consider doing a tip-only migration to a new repository in a different project.
+The project containing the problematic repository should remain private.
+The new repository should be created in a project you don't mind making public.
 
 >[!WARNING]
 >The new repository will have no connection to the old one.
 >You won't easily be able to migrate changes between them in the future.
->You should have all your developers switch to using the new repository.
+>Also, your pull request history will not be migrated.
 
 - Clone the existing repository: `git clone <clone_URL>`
 - Make sure you're in the root of the repository: `cd <reponame>`
