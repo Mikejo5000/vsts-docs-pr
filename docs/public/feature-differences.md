@@ -22,6 +22,11 @@ Non-members get read-only access to the project, and members have the access the
 There are some features which work differently or are completely unavailable for non-members.
 Over time, we intend to reduce the number of differences and increase the availability of other features.
 
+## Differences between a public and private project
+When marking a project public, there are two changes which affect all members of the project:
+* Permissions marked "deny" are not honored. The permissions automatically granted to a non-member act as a "floor" on the capabilities that can be assigned to any member in the project.
+* If a build definition specifies Project Collection scope, it will run with Project scope instead. This reduces the risk if a malicious user exfiltrates the build service's authentication token.
+
 ## Features unavailable for non-members
 
 * Any form of editing or creating artifacts
@@ -52,13 +57,10 @@ Git repositories can be browsed and cloned, but only via HTTPS.
 SSH and GVFS endpoints are unavailable.
 Clients like Visual Studio and IntelliJ work with the HTTPS clone URL but don't offer the connected experience linking to work items and other collateral.
 
-### CI/CD - non-members
+### CI/CD
 The definition & task editors are not available to non-members.
 The environment summary page and library views are not available.
 Only the new Release views are available, so there is no fallback to the old views when functionality hasn't yet been added in the new ones.
-
-### CI/CD - everyone
-Even if a build definition specifies Project Collection scope, it will run with Project scope in a public project.
 
 ### Analytics & dashboards
 The analytics OData feed, cross-project queries, and analytics views are not available.
