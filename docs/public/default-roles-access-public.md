@@ -19,7 +19,8 @@ ms.date: 02/20/2018
 
 Public projects enable users to view the contents of a project without being added to it as a member. These users are referred to as anonymous users, ones who aren't signed in. In addition, there are public users, ones who are signed in but not a member of a project. Both of these types of users are granted read-only access as indicated in the following chart.  
 
-Stakeholders and regular contributors must be added to a team project and are managed in the same way as for a private project. To learn more, see [Add users to your account](../accounts/add-account-users-from-user-hub.md). 
+Stakeholders and regular contributors must be added to a team project and are managed in the same way as for a private project. To learn more, see [Add users to your account](../accounts/add-account-users-from-user-hub.md).
+Be sure you understand what it means to [invite an outside user](inviting-outside-users.md) into your project.
  
 
 
