@@ -21,11 +21,14 @@ ms.date: 02/20/2018
 
 An unauthenticated user of a project. The user is visiting a project and has not signed in to an Azure CodeX account. 
 
-##Basic or premium user	
+## Basic or premium user	
 
 An authenticated user of a project who was granted membership to an Azure CodeX account as a Basic User (or Premium user in Premium accounts).
 
+## Non-member User
 
+Either a [public user](#public-user) or an [anonymous user](#anonymous-user).
+Many of the controls in place for public projects apply equally to public and anonymous users.
 
 <!---
 ##Org User	
@@ -49,7 +52,7 @@ A team project created within an Azure CodeX account that are visible only to me
 
 Administrators can control who gets to fully contribute.
 
-##Public project	
+## Public project	
 
 A team project created within an Azure CodeX account that are visible to the whole world. Everyone in the world can discover them and perform limited operations.
 
