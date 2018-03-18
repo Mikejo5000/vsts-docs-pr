@@ -81,7 +81,7 @@ You must be a member of the **Windows Administrators** security group on the ser
 
     -   Analysis Services (required for reporting)
 
-    -   Reporting Services – Native (required for reporting)
+    -   Reporting Services - Native (required for reporting)
 
     -   Client Tools Connectivity (required only if no other SQL Server components are installed on the server that is running Team Foundation Server - not pictured)
 

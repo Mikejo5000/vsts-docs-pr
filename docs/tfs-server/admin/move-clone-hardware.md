@@ -165,7 +165,7 @@ If your deployment uses SharePoint Products, you've already installed the same v
 
 2.  Change directories to *Drive*:\\Program Files\\Common Files\\Microsoft Shared\\Web Server Extensions\\15\\bin and run stsadm.exe with the following parameters, where *SharePointFoundationServerName* is the name of the server where you installed SharePoint Foundation 2013, and *SQLServerName* is the name of the server where you restored the WSS\_Content database as part of restoring TFS databases:
 
-        stsadm.exe –o addcontentdb –url http://SharePointFoundationServerName/sites -databasename WSS_Content -databaseserver SQLServerName
+        stsadm.exe -o addcontentdb -url http://SharePointFoundationServerName/sites -databasename WSS_Content -databaseserver SQLServerName
 
 3.  After that command completes successfully, type the following command, where *Domain\\UserName* is the account you used to install and configure SharePoint Foundation 2013 for use with TFS:
 

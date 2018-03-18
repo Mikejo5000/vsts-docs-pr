@@ -103,7 +103,7 @@ The three core scenarios we're using are:
 
 ## Managing features with feature flags in our engineering process
 
-To protect the flags from malicious users, we need to generate and pass the hash of the user key to the LaunchDarkly API calls. As VSTS extensions can only use client-side code, we chose Azure Functions to help us generate the hash, as shown. Read [Building VSTS Extensions with feature flags – Part 2](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2017/07/18/building-vsts-extensions-with-feature-flags-part-2/) for details.
+To protect the flags from malicious users, we need to generate and pass the hash of the user key to the LaunchDarkly API calls. As VSTS extensions can only use client-side code, we chose Azure Functions to help us generate the hash, as shown. Read [Building VSTS Extensions with feature flags - Part 2](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2017/07/18/building-vsts-extensions-with-feature-flags-part-2/) for details.
 
 ![Use of Azure Functions](./_img/phase-features-with-ff/phase-features-with-ff-az-fx.png)
 

@@ -35,9 +35,9 @@ The CI build should be executed as part of the pull request (PR-CI) process disc
 
 - [Visual Studio Code Analysis and the Roslyn Security Analyzers](https://blogs.msdn.microsoft.com/secdevblog/2016/03/30/roslyn-diagnostics-security-analyzers-overview/)
 
-- [Checkmarx](https://www.checkmarx.com/) – A Static Application Security Testing (SAST) tool
+- [Checkmarx](https://www.checkmarx.com/) - A Static Application Security Testing (SAST) tool
 
-- [BinSkim](https://github.com/Microsoft/binskim) – A binary static analysis tool that provides security and correctness results for Windows portable executables
+- [BinSkim](https://github.com/Microsoft/binskim) - A binary static analysis tool that provides security and correctness results for Windows portable executables
 
 - [Other 3rd party tools](https://blogs.msdn.microsoft.com/devops/2016/10/11/team-services-october-extensions-roundup-rugged-devops/)
 
@@ -71,8 +71,8 @@ Minimize security vulnerabilities by taking a holistic and layered approach to s
 
 ##Reference information
 
-- [BinSkim](https://github.com/Microsoft/binskim) – A binary static analysis tool that provides security and correctness results for Windows portable executables
-- [Checkmarx](https://www.checkmarx.com/) – A Static Application Security Testing (SAST) tool
+- [BinSkim](https://github.com/Microsoft/binskim) - A binary static analysis tool that provides security and correctness results for Windows portable executables
+- [Checkmarx](https://www.checkmarx.com/) - A Static Application Security Testing (SAST) tool
 - [Manage your open source usage and security as reported by your CI/CD pipeline](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2017/06/08/manage-your-open-source-usage-and-security-as-reported-by-your-cicd-pipeline/)
 - [OWASP](https://www.owasp.org)
 - [OSWAP zap vsts extension](https://github.com/deliveron/owasp-zap-vsts-extension)

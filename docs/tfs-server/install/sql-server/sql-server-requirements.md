@@ -33,7 +33,7 @@ Regardless of which option you choose, your instance of SQL Server must meet the
 | --- | --- |
 | Supported editions | SQL Server 2014¹ (Express,² Standard,² and Enterprise editions) </br> SQL Server 2012 with SP1³ or newer service pack (Express,² Standard,² and Enterprise Editions) **Tip**: TFS Express only supports SQL Server Express instances that use the default instance name (SQLExpress). |
 | Required for Team Foundation Server | Database Engine Services </br></br> Full-Text and Semantic Extractions for Search |
-Required for reporting | Reporting Services – Native </br> Analysis Services |
+Required for reporting | Reporting Services - Native </br> Analysis Services |
 | Collation settings | Must be accent sensitive </br> Must not be case sensitive </br> Must not be Binary </br> Must not be Binary - code point </br> For more information, see [SQL Server Collation Requirements for Team Foundation Server](collation-requirements.md) |
 | Authentication | Windows authentication |
 | Service account | You can use a domain account or a built-in account. |

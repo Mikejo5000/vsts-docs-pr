@@ -42,7 +42,7 @@ We started with *source composition*, where each component is referenced via a p
 Source composition is possible as long as your source lives in a single composition boundary: a single solution within a single source repository.
 
 Unfortunately, these project references start to break down when multiple solutions are involved. 
-At this point, when solution A depends on solution B it must refer to the built binaries (i.e. DLLs) produced by solution B – this is binary composition.
+At this point, when solution A depends on solution B it must refer to the built binaries (i.e. DLLs) produced by solution B - this is binary composition.
 
 Accordingly, these binaries now need to be built and made available to A before A can build successfully. There are a few ways to do that:
 

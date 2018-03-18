@@ -48,7 +48,7 @@ Don't confuse the multiple server installation with the robust scale-out feature
 
 For more information, see [System requirements for Team Foundation Server](../../requirements.md), [Accounts required for installation of Team Foundation Server](../../requirements.md#accounts).
 
-![Step 2](../_img/ic646325.png) Install a supported version of SQL Server. You must install these SQL Server features: Database Engine, Full-Text and Semantic Extractions for Search. To get HTML reports from your TFS team projects, add these features: Analysis Services, and Reporting Services – Native
+![Step 2](../_img/ic646325.png) Install a supported version of SQL Server. You must install these SQL Server features: Database Engine, Full-Text and Semantic Extractions for Search. To get HTML reports from your TFS team projects, add these features: Analysis Services, and Reporting Services - Native
 
 ![SQL R2 installation](../_img/ic665430.png)
 For more information, see: [SQL Server requirements for Team Foundation Server](../../requirements.md#sql-server), [Manually install SQL Server for Team Foundation Server](../sql-server/install-sql-server.md)

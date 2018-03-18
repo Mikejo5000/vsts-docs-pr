@@ -119,7 +119,7 @@ to addresses another (different) issue where SQL Server 2012 with SP1 might requ
 | Category | Requirements |
 | --- | --- |
 | Required for TFS | Database Engine Services </br></br> Full-Text and Semantic Extractions for Search |
-Required for reporting | Reporting Services – Native </br> Analysis Services |
+Required for reporting | Reporting Services - Native </br> Analysis Services |
 | Collation settings | Must be accent sensitive </br> Must not be case sensitive </br> Must not be Binary </br> Must not be Binary - code point </br> For more information, see [SQL Server Collation Requirements for Team Foundation Server](../tfs-server/install/sql-server/collation-requirements.md) |
 | Authentication | Windows authentication |
 | Service account | You can use a domain account or a built-in account. |
@@ -422,7 +422,7 @@ recommend using higher spec application and data tiers to avoid performance
 issues. For example, a team of 250 might use a multiple server deployment 
 that is more in line with the recommendations for a team of 500-2,000 users. We also 
 recommend that you keep an eye on your automated processes to ensure that 
-they are efficient – for example, retrieve data from source control 
+they are efficient - for example, retrieve data from source control 
 incrementally during builds whenever possible, rather than fully refreshing 
 on each build. NOTE: except for very small teams with extremely limited usage 
 of these features we do not recommend installing build, test, or release 
