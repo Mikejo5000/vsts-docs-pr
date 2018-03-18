@@ -44,15 +44,15 @@ The following table lists the server on which each service, application pool, an
 
 | Element | Location | Name |
 | --- | --- | --- |
-| Services | Application-tier server | Code Coverage Analysis Service </br> Internet Information Services Administration Service (IISADMIN) </br> HTTP SSL (HTTPFilter) </br> Visual Studio Team Foundation Build (VSTFBUILD) (only when Team Foundation Build is installed) </br> Visual Studio Team Foundation Background Job Agent (TFSJobAgent) </br> World Wide Web Publishing Service (W3SVC) |
+| Services | Application-tier server | Code Coverage Analysis Service </br> Internet Information Services Administration Service (IISADMIN) </br> HTTP SSL (HTTPFilter) </br> Visual Studio Team Foundation Build (VSTFBUILD) (only when Team Foundation Build is installed) </br> Visual Studio Team Foundation Background Job Agent (TFSJobAgent) </br> World Wide Web Publishing Service (W3SVC) |
 | . | Server that hosts the databases for Team Foundation | SQL Server (<em>TFSINSTANCE</em>) </br> SQL Server Agent (<em>TFSINSTANCE</em>) (SQLSERVERAGENT) |
 | . | Server that hosts SQL Server Reporting Services | IIS Admin Service (IISADMIN) </br> HTTP SSL (HTTPFilter) </br> SQL Server Reporting Services (<em>TFSINSTANCE</em>) (ReportServer) </br> World Wide Web Publishing Service (W3SVC) |
 | . | Server that hosts SQL Server Analysis Services | SQL Server Analysis Services |
-| . | Server that hosts SharePoint Products  | Internet Information Services Administration (IISADMIN) </br> HTTP SSL (HTTPFilter) </br> Windows SharePoint Services Timer (SPTimer) </br> World Wide Web Publishing Service (W3SVC) |
-| Application pools | Application-tier server | TFS Application Pool </br> TFS Proxy Application Pool (only when Team Foundation Server Proxy is installed) |
-| . | Server that hosts SharePoint Products | DefaultAppPool (used by the Team Project portal) </br> **Note**: The name might vary based on how SharePoint Products was installed. </br> SharePoint Central Administration v3 |
-| Web sites | Application-tier server | Team Foundation Server </br> Team Foundation Server Proxy (only if Team Foundation Server Proxy is installed) |
-| . | Server that hosts SharePoint Products | Default Web Site or Team Web site </br> **Note**: The name might vary based on how SharePoint Products was installed. </br> SharePoint Central Administration v3 |</tbody>
+| . | Server that hosts SharePoint Products  | Internet Information Services Administration (IISADMIN) </br> HTTP SSL (HTTPFilter) </br> Windows SharePoint Services Timer (SPTimer) </br> World Wide Web Publishing Service (W3SVC) |
+| Application pools | Application-tier server | TFS Application Pool </br> TFS Proxy Application Pool (only when Team Foundation Server Proxy is installed) |
+| . | Server that hosts SharePoint Products | DefaultAppPool (used by the Team Project portal) </br> **Note**: The name might vary based on how SharePoint Products was installed. </br> SharePoint Central Administration v3 |
+| Web sites | Application-tier server | Team Foundation Server </br> Team Foundation Server Proxy (only if Team Foundation Server Proxy is installed) |
+| . | Server that hosts SharePoint Products | Default Web Site or Team Web site </br> **Note**: The name might vary based on how SharePoint Products was installed. </br> SharePoint Central Administration v3 |</tbody>
 
 
 ## Q & A

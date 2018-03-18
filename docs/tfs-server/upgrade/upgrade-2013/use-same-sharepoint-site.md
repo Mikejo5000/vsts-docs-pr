@@ -62,7 +62,7 @@ Run the TFS installation program from the product DVD and then use the **Configu
 
     2.  Type the name of the SQL Server or named instance that will host the configuration databases for SharePoint and choose **Next**.
 
-    3.  Type a user account and password for the service account for SharePoint and then choose **Next**.
+    3.  Type a user account and password for the service account for SharePoint and then choose **Next**.
 
         For more information, see [Accounts required for installation of Team Foundation Server](../../requirements.md#accounts)
 

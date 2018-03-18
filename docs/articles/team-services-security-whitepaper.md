@@ -283,7 +283,7 @@ The team reviews the results to identify other areas of improvement and
 to increase the quality of the preventative systems and training.
 
 >[!IMPORTANT]
->While notifying Microsoft of penetration testing activities is no longer required customers must still comply with the [Microsoft Cloud Unified Penetration Testing Rules of Engagement](https://technet.microsoft.com/en-us/mt784683)
+>While notifying Microsoft of penetration testing activities is no longer required customers must still comply with the [Microsoft Cloud Unified Penetration Testing Rules of Engagement](https://technet.microsoft.com/en-us/mt784683)
 
 ### Restricting access
 

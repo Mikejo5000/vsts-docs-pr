@@ -13,7 +13,7 @@ ms.date: 09/09/2017
 
 # Manually Install SharePoint products for Team Foundation Server
 
-[!INCLUDE [temp](../../_shared/about-sharepoint-deprecation.md)]
+[!INCLUDE [temp](../../_shared/about-sharepoint-deprecation.md)]
 
 This procedure is for installing and configuring SharePoint Server 2013 on the same server as TFS and SQL Server.
 
@@ -43,9 +43,9 @@ If you use the enterprise edition of SharePoint Server, as we are going to in th
 
 ### Dashboard differences between SharePoint products
 
-Team Foundation Server contains dashboards that use SharePoint Products features to display team data. The dashboards that are available to you depend on the version of SharePoint that you use.
+Team Foundation Server contains dashboards that use SharePoint Products features to display team data. The dashboards that are available to you depend on the version of SharePoint that you use.
 
--   If you use any supported enterprise edition of SharePoint Server, you get five dashboards that are based on Microsoft Excel. 
+-   If you use any supported enterprise edition of SharePoint Server, you get five dashboards that are based on Microsoft Excel. 
 
 -   If you use any other SharePoint Product (including the standard editions of SharePoint Server), you get two dashboards that are based on SQL Server Reporting Services.
 
@@ -140,7 +140,7 @@ Remember that you’ll need a single domain account to act as the TFS Report Rea
         > [!TIP]
         > If you used a named instance in step 10 of your SQL Server install, type the named instance here. For example, servername\InstanceName.
 
-    2.  Type the name of the report reader account and its password. 
+    2.  Type the name of the report reader account and its password. 
 
         ![Add report reader account](_img/ic666688.png)
 

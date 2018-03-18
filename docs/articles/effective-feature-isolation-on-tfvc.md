@@ -78,7 +78,7 @@ Similarly, the **Source Control Explorer** view becomes noisy and impractical as
 >
 > **Delete** your feature branch when you're done!
 
-#Impact of deleting a feature branch
+#Impact of deleting a feature branch
 
 By [deleting](../tfvc/delete-restore-files-folders.md#delete-an-item) feature branches you minimise noise and focus on active feature development. 
 

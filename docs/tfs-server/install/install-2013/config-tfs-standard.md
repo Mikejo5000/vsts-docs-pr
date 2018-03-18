@@ -17,7 +17,7 @@ ms.technology: vs-devops-admin
 
 ![Standard configuration on single server](../_img/std-config-intro.png)
 
-You can configure Team Foundation Server to use the standard configuration. To complete this procedure, you must have a domain account. 
+You can configure Team Foundation Server to use the standard configuration. To complete this procedure, you must have a domain account. 
 
 For more information about accounts, see [Accounts required for installation of Team Foundation Server](../../requirements.md#accounts)
 
@@ -26,7 +26,7 @@ For more information about accounts, see [Accounts required for installation of 
 
 **Required Permissions**
 
-You must be a member of the **Administrators** security group on the server that is running TFS. 
+You must be a member of the **Administrators** security group on the server that is running TFS. 
 
 ### To configure Team Foundation Server by using the standard configuration
 

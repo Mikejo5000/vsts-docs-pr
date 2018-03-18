@@ -91,7 +91,7 @@ Code is compiled, environments are configured, many types of tests run, and fina
 considered "done". By done, we mean that the code is in production. Anything you successfully put 
 through the release pipeline should be something you would give to your customers. Here is a diagram 
 based on the one you will see on Jez Humble's
-[Continuous Delivery](http://continuousdelivery.com/) website. It is an example of what can 
+[Continuous Delivery](http://continuousdelivery.com/) website. It is an example of what can 
 occur as code moves through a release pipeline.
 
 ![Pipeline for continuous delivery](./_img/build-deployment-best-practices/continuous-delivery-release-pipeline.png)
@@ -206,7 +206,7 @@ MSDN Article
 [Building a Release Pipeline with Team Foundation Server 2012](https://msdn.microsoft.com/en-us/library/dn449957.aspx), 
 MSDN Article
 
-*(c) 2015 Microsoft Corporation. All rights reserved. This document is
+*(c) 2015 Microsoft Corporation. All rights reserved. This document is
 provided "as-is." Information and views expressed in this document,
 including URL and other Internet Web site references, may change without
 notice. You bear the risk of using it.*

@@ -109,7 +109,7 @@ You can create a team project from Team Explorer after you have connected to an 
 
     ![ALM\_EXL\_Connect](_img/IC680074.png)
 
-    >**Tip:**  If you are running Team Explorer from a server that hosts SharePoint Products and SQL Server Reporting Services, you might need to run Visual Studio as an administrator.
+    >**Tip:**  If you are running Team Explorer from a server that hosts SharePoint Products and SQL Server Reporting Services, you might need to run Visual Studio as an administrator.
 
 5.  If it’s your first time connecting to TFS, you’ll need to add TFS to the list of recognized servers.
 
@@ -174,5 +174,5 @@ From the admin context of the web portal, you can add additional repositories to
 
 ![Add repositories to an existing team project](_img/create-team-project-add-repositories.png) 
 
-<blockquote style="font-size: 13px"><b>Feature availability: </b>The ability to work from both Git and TFVC repositories from the same team project is only supported when you connect to VSTS or an on-premises application server that you've upgraded to TFS 2015 Update 1. Additional steps to address permissions may be required. See [Git team projects](../git/team-projects.md) or [TFVC team projects](../git/team-projects.md).</blockquote>  
+<blockquote style="font-size: 13px"><b>Feature availability: </b>The ability to work from both Git and TFVC repositories from the same team project is only supported when you connect to VSTS or an on-premises application server that you've upgraded to TFS 2015 Update 1. Additional steps to address permissions may be required. See [Git team projects](../git/team-projects.md) or [TFVC team projects](../git/team-projects.md).</blockquote>  
 

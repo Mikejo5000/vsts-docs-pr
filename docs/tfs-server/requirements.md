@@ -490,7 +490,7 @@ The following rules clarify the language requirements for installations of Team 
 
 -   If you want to use SharePoint Products, it must match the language of the installation of Team Foundation Server, or you must install the language pack that matches the language of your installation of Team Foundation Server.
 
-For example, you can install a Japanese version of Team Foundation Server on an English or Japanese operating system but not on a German operating system. If you install a Japanese version of Team Foundation Server, you must also have either a Japanese version of SharePoint Products or the Japanese language pack for SharePoint Products on the server that is running SharePoint Products.
+For example, you can install a Japanese version of Team Foundation Server on an English or Japanese operating system but not on a German operating system. If you install a Japanese version of Team Foundation Server, you must also have either a Japanese version of SharePoint Products or the Japanese language pack for SharePoint Products on the server that is running SharePoint Products.
 
 The following components do not have additional language requirements that are specific to working with Team Foundation Server:
 

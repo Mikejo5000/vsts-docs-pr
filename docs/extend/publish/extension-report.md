@@ -20,7 +20,7 @@ If your extension is paid you can also Contact your users for transactional comm
 **Important** Please follow the below guidance on transactional and promotional communication. A publisher found to do promotional communication or spamming users will be blacklisted and won't be able to use the **Contact** feature for any of his extensions. 
 
 **Transactional Communication**: Transactional emails convey critical information necessary for the continued use of the extension or service.  Examples include critical security notices, transaction confirmations, product recall notices, specific feedback request and service discontinuation.  notices.
-**Promotional Emails**: Promotional emails are used to market your extension, product, service, website, or event.  Examples include invitations to events or Web casts, information about new marketing or partner programs, offers to prospects to obtain value-added content.  Almost all newsletters fall into the promotional bucket as they generally contain at least some promotional content.
+**Promotional Emails**: Promotional emails are used to market your extension, product, service, website, or event.  Examples include invitations to events or Web casts, information about new marketing or partner programs, offers to prospects to obtain value-added content.  Almost all newsletters fall into the promotional bucket as they generally contain at least some promotional content.
 
 ## Ratings and Review
 This tab will give you the information of the average rating for the selected period w.r.t. to overall rating, the average rating by number of reviewers and the daily trend of average rating. The details section provides all the reviews and your responses in transactional view. 

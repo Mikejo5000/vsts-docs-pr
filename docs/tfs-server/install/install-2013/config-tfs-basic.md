@@ -17,14 +17,14 @@ ms.technology: vs-devops-admin
 
 ![](../_img/ic552206.png)
 
-You can configure Team Foundation Server to use the basic configuration, which enables you to use SQL Server Express. 
+You can configure Team Foundation Server to use the basic configuration, which enables you to use SQL Server Express. 
 
 > [!TIP]
 > You can access the Team Foundation Server Configuration tool by launching Team Foundation Server Administration Console, choosing **Application Tier**, and then choosing **Configure Installed Features**.
 
 **Required Permissions**
 
-To perform this procedure, you must be a member of the **Administrators** security group on the server that is running Team Foundation Server. 
+To perform this procedure, you must be a member of the **Administrators** security group on the server that is running Team Foundation Server. 
 
 ### To configure Team Foundation Server by using the basic configuration
 

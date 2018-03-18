@@ -534,7 +534,7 @@ On every client computer from which users access Team Foundation, you must insta
 6.  Repeat these steps for the account of every user who has accessed Team Foundation from that computer.
 
     > [!NOTE]
-    > You might want to distribute instructions for clearing the cache to all of your Team Foundation users so that they can clear the caches for themselves.
+    > You might want to distribute instructions for clearing the cache to all of your Team Foundation users so that they can clear the caches for themselves.
 
 ### To connect client computers to the reconfigured deployment
 

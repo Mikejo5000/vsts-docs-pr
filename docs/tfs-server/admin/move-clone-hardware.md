@@ -121,7 +121,7 @@ To configure a new server or servers for TFS, you must first install and configu
 > [!NOTE]
 > Unlike installing a new deployment of TFS, you will not be able to install SharePoint Products as part of the Standard Single-Server or Advanced options when moving to a new server. You must manually install the same version and edition of SharePoint Products that you used in your previous deployment, or follow the guidance for your version and edition of SharePoint Products to move its deployment to the new hardware separately.
 
--   Install and configure Windows, IIS (if not configured by default), and SharePoint (if using) in the new environment, and make sure that the server and its software are operational. 
+-   Install and configure Windows, IIS (if not configured by default), and SharePoint (if using) in the new environment, and make sure that the server and its software are operational. 
 
     For more information, see [the system requirements for Team Foundation Server](../requirements.md) and [Move SharePoint to new hardware for TFS](../install/sharepoint/move-sharepoint-new-hardware.md).
 
@@ -324,7 +324,7 @@ Now that you've moved TFS, you'll need to tell your users how to connect to the 
 
 -   If they are members of a team project that uses Git, instructions for how to update every clone they have locally for every repository for that project. Specifically, they will have to run the following command for every clone:
 
-        git remote set-url <remote name> <new URL>
+        git remote set-url <remote name> <new URL>
 
     Users can see what the URL is for each clone by browsing the team project from the Explorer tab.
 
