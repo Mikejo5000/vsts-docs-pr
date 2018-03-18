@@ -58,7 +58,7 @@ If you selected **Buy** or **Get it free**, you will need to assign your license
 1. Go to your account, select the **Users** hub, and select **Package Management**.
 1. Select **Assign**, type the users you want to assign licenses to, then select **Ok.**
 
-   > If you have a Visual Studio Enterprise license, you already have access to Package Management and don't need to be assigned a license, just ensure that you've been assigned the “Visual Studio Enterprise” access level.
+   > If you have a Visual Studio Enterprise license, you already have access to Package Management and don't need to be assigned a license, just ensure that you've been assigned the "Visual Studio Enterprise" access level.
 
 [//]: # (::: moniker-end)
 

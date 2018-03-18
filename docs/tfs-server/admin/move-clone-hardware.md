@@ -203,7 +203,7 @@ Perform the next set of steps on the new application-tier server if you intend t
 
     ![Select the SQL Server and database backup set](_img/ic682729.png)
 
-3.  Before you close the final page of the wizard, look for the “i” symbol. It signifies information that you might want for future reference. The final page also includes the location of the configuration log.
+3.  Before you close the final page of the wizard, look for the "i" symbol. It signifies information that you might want for future reference. The final page also includes the location of the configuration log.
 
     ![Note any issues and the log file location](_img/ic688120.png)
 

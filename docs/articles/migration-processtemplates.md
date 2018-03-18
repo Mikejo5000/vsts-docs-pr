@@ -107,7 +107,7 @@ Once you make a fix then you need to conform. Conform is defined as taking the X
 You can get the scripts at https://github.com/Microsoft/process-customization-scripts. Use the import/ConformProject.ps1 script.
 
 ```cmdline
-.\conformproject.ps1 “<collection url>” “<project name>” “<process template folder>”
+.\conformproject.ps1 "<collection url>" "<project name>" "<process template folder>"
 ```
 ![Conform project processes script running](_img/migration-troubleshooting/conformProjectProcessesPowerShell.png)
 

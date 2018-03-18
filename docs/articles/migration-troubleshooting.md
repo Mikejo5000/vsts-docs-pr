@@ -69,11 +69,11 @@ In order to continue your collection's collation will need to be [changed](https
 Identity errors aren't common when validating a collection, but when they do come up it's important to fix them prior to migration to avoid any undesired results. Generally, identity problems stem from valid operations on previous versions of TFS that are no longer valid on your current TFS version. For example, some users being members of a built-in valid users group was once allowed, but isn't in more recent versions. The most common identity errors and guidance on fixing them can be found below.
 
 ### ISVError:100014
-This error indicates that a permission is missing from a system group. System groups are well known groups in TFS and VSTS. For example, every collection that you create has “Project Collection Valid Users” and “Project Collection Administrators” groups. They're created by default and it's not possible to edit the permissions for these groups. What this error indicates is that somehow one or more of these groups is missing a permission that it's expected to have. In order to fix this, you will need to use TFSSecurity.exe to apply the expected permissions onto the flagged system groups. To get started you will need to identify which [TFSSecurity](../tfs-server/command-line/tfssecurity-cmd.md) command(s) will need to be run.
+This error indicates that a permission is missing from a system group. System groups are well known groups in TFS and VSTS. For example, every collection that you create has "Project Collection Valid Users" and "Project Collection Administrators" groups. They're created by default and it's not possible to edit the permissions for these groups. What this error indicates is that somehow one or more of these groups is missing a permission that it's expected to have. In order to fix this, you will need to use TFSSecurity.exe to apply the expected permissions onto the flagged system groups. To get started you will need to identify which [TFSSecurity](../tfs-server/command-line/tfssecurity-cmd.md) command(s) will need to be run.
 
 #### Project Collection Valid Users Error Message
 
-Carefully examine the error message(s) TfsMigrator highlighted. If the group that was flagged ends with “**0-0-0-0-3**”, such as in the example below, then you will need to fix a missing permission for the “Project Collection Valid Users” group. Run the below command against TFSSecurity.exe after replacing the scope with the one from the error message and adding in your collection URL.
+Carefully examine the error message(s) TfsMigrator highlighted. If the group that was flagged ends with "**0-0-0-0-3**", such as in the example below, then you will need to fix a missing permission for the "Project Collection Valid Users" group. Run the below command against TFSSecurity.exe after replacing the scope with the one from the error message and adding in your collection URL.
 
 ```cmdline
 TFSSecurity.exe /a+ Identity "{scope}\\" Read sid:{Group SID} ALLOW /collection:{collectionUrl}
@@ -91,7 +91,7 @@ TFSSecurity.exe /a+ Identity "397c326b-b97c-4510-8271-75aac13de7a9\\" Read sid:S
 ```
 #### Project Collection Administrators Error Message
 
-Carefully examine the error message(s) TfsMigrator highlighted. If the group that was flagged ends with “**0-0-0-0-1**”, such as in the example below, then you will need to fix a missing permission for the “Project Collection Administrators” group. Run the below commands against TFSSecurity.exe after replacing the scope with the one from the error message and adding in your collection.
+Carefully examine the error message(s) TfsMigrator highlighted. If the group that was flagged ends with "**0-0-0-0-1**", such as in the example below, then you will need to fix a missing permission for the "Project Collection Administrators" group. Run the below commands against TFSSecurity.exe after replacing the scope with the one from the error message and adding in your collection.
 
 ```cmdline
 TFSSecurity.exe /a+ Identity "{scope}\\" Read sid:{Group SID} ALLOW /collection:{collectionUrl}

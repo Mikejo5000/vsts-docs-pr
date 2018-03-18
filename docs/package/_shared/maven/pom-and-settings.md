@@ -23,7 +23,7 @@ To talk to VSTS feeds, you'll need a token on your local machine that Maven can 
 ```xml
 <settings>
   <servers>
-    <!-- Copy this section from the Maven section of the "Connect to Feed” dialog" -->
+    <!-- Copy this section from the Maven section of the "Connect to Feed" dialog" -->
     <server>
       <id>yourAccount-visualstudio.com-yourFeedName</id>
       <configuration>

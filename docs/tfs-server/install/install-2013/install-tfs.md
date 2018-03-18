@@ -61,7 +61,7 @@ For more information, see [SharePoint Products requirements for Team Foundation 
 > [!TIP]
 > You can also [verify](../sharepoint/verify-sharepoint.md) and use an existing SharePoint deployment that meets the [TFS requirements for SharePoint](../../requirements.md#sharepoint). If you're existing SharePoint is not on the same server as where you'll install TFS, you'll want to first install the TFS SharePoint extensions on the SharePoint site. See [How to: Install Remote SharePoint Products for Team Foundation Server](../sharepoint/setup-remote-sharepoint.md).
 
-![Step 4](../_img/ic646327.png) Run the Team Foundation Server install from the product DVD and then use one of the configuration wizards to configure your installation. Use the standard wizard if you have SQL Server on the default instance, and TFS will install SharePoint Foundation 2013 for you. For everything else, use the advanced wizard. See, “Why use the advanced wizard?” earlier.
+![Step 4](../_img/ic646327.png) Run the Team Foundation Server install from the product DVD and then use one of the configuration wizards to configure your installation. Use the standard wizard if you have SQL Server on the default instance, and TFS will install SharePoint Foundation 2013 for you. For everything else, use the advanced wizard. See, "Why use the advanced wizard?" earlier.
 
 ![Select TFS standard configuration](../_img/ic665325.png)
 

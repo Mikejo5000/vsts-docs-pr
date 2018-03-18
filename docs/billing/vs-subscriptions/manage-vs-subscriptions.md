@@ -17,7 +17,7 @@ Keep this in mind when you use the Visual Studio Subscriptions Administration Po
  
 - **Visual Studio Subscriptions are licensed per user.** Each subscriber can use the software on as many computers as needed for development and testing. 
 - **Assign only one subscription level for each subscriber**, corresponding to the Visual Studio Subscription your organization purchased. If you have subscribers with more than one subscription level assigned to them, edit their settings so that they only have one. 
-- **A subscriber's subscription level will need to be updated** when the subscription is upgraded (after the purchase of a “step-up” license) or renewed at a lower level. 
+- **A subscriber's subscription level will need to be updated** when the subscription is upgraded (after the purchase of a "step-up" license) or renewed at a lower level. 
 - **Do not share subscriptions between subscribers.** You must assign a subscription to anyone who uses all or part of the subscription benefits (software for development and testing, Microsoft Azure, e-learning, etc.). 
 
 ## Adminstrator Roles

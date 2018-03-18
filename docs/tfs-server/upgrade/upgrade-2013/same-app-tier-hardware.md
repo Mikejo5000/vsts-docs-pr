@@ -41,7 +41,7 @@ For more information, see: [Run the TFS Upgrade Wizard](../run-upgrade-wizard.md
 ![](../../install/_img/ic612456.png)
 
 > [!TIP]
-> If you have Project Server added to TFS, this is when you should upgrade the TFS Extensions for Project Server. See the heading “Less-common upgrade tasks” for more information in [TFS upgrade requirements](upgrade-2013-requirements.md).
+> If you have Project Server added to TFS, this is when you should upgrade the TFS Extensions for Project Server. See the heading "Less-common upgrade tasks" for more information in [TFS upgrade requirements](upgrade-2013-requirements.md).
 
 ## Next Step: Set up a new build machine
 

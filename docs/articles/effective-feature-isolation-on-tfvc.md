@@ -26,7 +26,7 @@ This topic aims to answer those questions, and give you a clear perspective on f
 
 #What's feature isolation?
 
-The feature isolation strategy allows you work on your features or fix bugs in **feature** branches (also known as “topic branches”) based off your **main** branch, or **dev**, or other central branches. It isolates your changes from the rest of your team, allows you to experiment with a feature, and enables easy rollback or merging of changes with your parent branch.
+The feature isolation strategy allows you work on your features or fix bugs in **feature** branches (also known as "topic branches") based off your **main** branch, or **dev**, or other central branches. It isolates your changes from the rest of your team, allows you to experiment with a feature, and enables easy rollback or merging of changes with your parent branch.
 
 > [!NOTE]
 > 

@@ -20,7 +20,7 @@ This procedure is for installing and configuring SharePoint Server 2013 on the s
 We're going to install SharePoint after we install SQL Server, so that we can use the same Database Engine instance we installed for TFS for our SharePoint deployment, although using the same SQL Server instance for both SharePoint and TFS is not a requirement.
 
 > [!TIP]
-> Installing SharePoint on the same server as TFS isn't a requirement either. TFS is very flexible with regard to the topology of your SharePoint installation. See “What If I Already Have SharePoint?” later.
+> Installing SharePoint on the same server as TFS isn't a requirement either. TFS is very flexible with regard to the topology of your SharePoint installation. See "What If I Already Have SharePoint?" later.
 
 ## Do I even need SharePoint?
 
@@ -94,7 +94,7 @@ Remember that you'll need a single domain account to act as the TFS Report Reade
 
 Once the SharePoint Products Preparation tool finishes, you might have to launch the SharePoint installer again, especially if you had to restart your computer.
 
-Remember that you'll need a single domain account to act as the TFS Report Reader account to complete this section. See “What will I need?” earlier in this topic.
+Remember that you'll need a single domain account to act as the TFS Report Reader account to complete this section. See "What will I need?" earlier in this topic.
 
 1.  Insert the SharePoint Server 2013 DVD and launch default.hta, or run sharepoint.exe (for SharePoint Foundation installations).
 

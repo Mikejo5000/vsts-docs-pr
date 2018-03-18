@@ -39,7 +39,7 @@ directly drag and drop them to your desired location. You can also reorder tasks
  ![Schematic showing tasks](_img/2017-user-experience/Tasks.png)
 
 * **Getting started made easy with ‘Process parameters'.** When you start with one of the out-of-the-box templates, 
-the most important fields across all tasks in the template are displayed in a single view called “Process”. You can also link additional fields across all tasks to new or existing 
+the most important fields across all tasks in the template are displayed in a single view called "Process". You can also link additional fields across all tasks to new or existing 
 process parameters to bubble them to the Process view. [More details](#parameters)
  
  ![Schematic showing tasks](_img/2017-user-experience/Process parameters view.png)

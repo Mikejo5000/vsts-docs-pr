@@ -254,9 +254,9 @@ and Fabrikam is simply the name of the object.
 <br>
 This is the second field. It's a picklist
 - This field is populated by a REST call. 
-- The values from the field “project” are taken from the “Projects” REST data source of the custom endpoint.
+- The values from the field "project" are taken from the "Projects" REST data source of the custom endpoint.
 - This is expressed in the `dataSourceBindings` array
-  -	The target is the name of the build task field to be populated (“project”)
+  -	The target is the name of the build task field to be populated ("project")
   -	The endpointId is the name of the build task field containing the custom endpoint type
   -	The REST call is chosen by the dataSourceName
 
