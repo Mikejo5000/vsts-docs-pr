@@ -34,7 +34,7 @@ In addition, you must consider the interactions between these entities. For exam
 
 Besides its own services, Team Foundation Server depends on other services in order to function. For information about these services, see Team Foundation Server concepts and Components of the TFS data warehouse. For more information about the requirements and dependencies for installation, see Team Foundation Server install guide.
 
-> **Caution!** You should not manually modify any of the TFS databases unless you’re instructed to do so by Microsoft Support or you’re following the procedures described for manually backing up the databases. Any other modifications can invalidate your service agreement.
+> **Caution!** You should not manually modify any of the TFS databases unless you're instructed to do so by Microsoft Support or you're following the procedures described for manually backing up the databases. Any other modifications can invalidate your service agreement.
 
 
 <a name="teamservices"></a>

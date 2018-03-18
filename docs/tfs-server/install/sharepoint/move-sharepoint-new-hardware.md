@@ -17,7 +17,7 @@ ms.date: 09/09/2017
 
 ## Set up a new SharePoint site 
 
-You can install SharePoint Foundation using the TFS extensions for SharePoint wizard. The TFS wizard will install a fresh copy of SharePoint using the installation of SQL Server you just set up, and then configure the TFS extensions for the new installation of TFS. After you install SharePoint, you’ll detach its content database to prepare for the migration of the data from your previous SharePoint installation in step 4, Back up and Restore Data.
+You can install SharePoint Foundation using the TFS extensions for SharePoint wizard. The TFS wizard will install a fresh copy of SharePoint using the installation of SQL Server you just set up, and then configure the TFS extensions for the new installation of TFS. After you install SharePoint, you'll detach its content database to prepare for the migration of the data from your previous SharePoint installation in step 4, Back up and Restore Data.
 
 **Required Permissions**
 
@@ -121,7 +121,7 @@ When you installed SharePoint, a brand new content database was created for Shar
 
 ## Next Step: Back up and restore data
 
-You can use TFS custom backup and restore tools to manage your data. First you’re going to back up your data, including the encryption key on the report server. Next, you’re going to restore your data to the SQL Server instance you set up in step 2. With the restore complete, you’ll use the SQL Server Reporting tool to restart the database, restore the encryption key, and then verify access to the report server. If you installed SharePoint, you’ll use a SharePoint command line tool to attach and upgrade your content database
+You can use TFS custom backup and restore tools to manage your data. First you're going to back up your data, including the encryption key on the report server. Next, you're going to restore your data to the SQL Server instance you set up in step 2. With the restore complete, you'll use the SQL Server Reporting tool to restart the database, restore the encryption key, and then verify access to the report server. If you installed SharePoint, you'll use a SharePoint command line tool to attach and upgrade your content database
 
 For more information, see [Back up and restore data for TFS](../../upgrade/upgrade-2013/backup-and-restore-data.md)
 

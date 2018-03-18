@@ -38,7 +38,7 @@ To perform these procedures, you must be a member of the following groups or hav
 <a name="restore-tfs-dbs"></a>
 ## Restore Team Foundation Server databases
 
-Installing and configuring software isn't sufficient to recover a deployment. You must restore the data before your users will be able to get back to work. There’s a wizard to help you do this..
+Installing and configuring software isn't sufficient to recover a deployment. You must restore the data before your users will be able to get back to work. There's a wizard to help you do this..
 
 ### To restore databases
 

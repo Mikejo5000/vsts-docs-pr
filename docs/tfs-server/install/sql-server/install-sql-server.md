@@ -15,23 +15,23 @@ ms.technology: vs-devops-admin
 
 **TFS 2015** | **TFS 2013**
 
-The steps in this topic are for installing SQL Server 2012 enterprise edition, but you can use the same steps for installing the standard edition. The steps for SQL 2014 are also very similar to these. We’ll install all the SQL Server 2012 features that TFS requires on the same server as TFS, but this isn’t a requirement. TFS is very flexible with regard to SQL Server topologies. See [One Server or Two?](#one-svr-or-two)
+The steps in this topic are for installing SQL Server 2012 enterprise edition, but you can use the same steps for installing the standard edition. The steps for SQL 2014 are also very similar to these. We'll install all the SQL Server 2012 features that TFS requires on the same server as TFS, but this isn't a requirement. TFS is very flexible with regard to SQL Server topologies. See [One Server or Two?](#one-svr-or-two)
 
 > [!TIP]
-> You can also use an existing installation of SQL Server for TFS, but to do this you’ll need the SQL Server administrator to grant you a lot of administrative credentials. You must be a member of the sysadmin Server role in SQL Server to install and configure TFS. [Why does TFS need so much privilege on the SQL Server?](http://blogs.msdn.com/b/bharry/archive/2010/08/20/database-permissions-required-to-configure-tfs.aspx) (blog post)
+> You can also use an existing installation of SQL Server for TFS, but to do this you'll need the SQL Server administrator to grant you a lot of administrative credentials. You must be a member of the sysadmin Server role in SQL Server to install and configure TFS. [Why does TFS need so much privilege on the SQL Server?](http://blogs.msdn.com/b/bharry/archive/2010/08/20/database-permissions-required-to-configure-tfs.aspx) (blog post)
 
 <a name="one-svr-or-two"></a>
 ## One server or two?
 
-If you’re going to use only one server for TFS, you can safely ignore this section.
+If you're going to use only one server for TFS, you can safely ignore this section.
 
 If you plan to have more than 500 users accessing your TFS server, the recommendation is to put SQL Server on a second server. This splits the load between TFS and its configuration database. You could install all the SQL Server features that TFS requires on the second server, or you could split the features up. Some teams like to put the report server on the TFS server, and the Database engine, Full text search, and Analysis services on the second server, splitting HTTP traffic from SQL Server traffic.
 
 There are many different topology choices you could make. In general, TFS allows you to install SQL Server instance features (Database engine, Reporting Services, Analysis Services) on different servers. Here are some caveats for various SQL Server topologies to keep in mind:
 
 -   TFS requires the Database Engine and Full text search features on the same instance.  
--   TFS reporting is optional, but if you want reporting you must install Reporting Services and Analysis Services (each can go on its own server, if you want that topology). If you skip reporting, you don’t have to set up Reporting Services or Analysis Services.  
--   If you don’t install any SQL Server instances on the TFS server, you must at least install the SQL Server feature Client Tools Connectivity on TFS. If you have a SQL Server instance on the TFS server (either the Database Engine, Reporting Services or Analysis Services) you don’t have to install Client Tools Connectivity.
+-   TFS reporting is optional, but if you want reporting you must install Reporting Services and Analysis Services (each can go on its own server, if you want that topology). If you skip reporting, you don't have to set up Reporting Services or Analysis Services.  
+-   If you don't install any SQL Server instances on the TFS server, you must at least install the SQL Server feature Client Tools Connectivity on TFS. If you have a SQL Server instance on the TFS server (either the Database Engine, Reporting Services or Analysis Services) you don't have to install Client Tools Connectivity.
 
 If you want to install SQL Server features on different servers, run the SQL Server installation on each server where you want to install a feature. Use the same instructions below for each installation, but at step 9, only install the features that you require.
 
@@ -65,7 +65,7 @@ You must be a member of the **Windows Administrators** security group on the ser
     ![Windows Firewall warning](_img/ic688130.png)
 
     > [!TIP]
-    > A Windows Firewall warning might appear, but you can safely ignore this warning if you’re planning to also install TFS on this server. TFS automatically adds an exception to Windows Firewall for SQL Server, if both servers (TFS and SQL Server) are installed on the same machine. If you’re installing TFS on some other server, you’ll want to [open a port for SQL Server in Windows Firewall on this server](http://elhajj.wordpress.com/2013/02/25/workaround-error-tf255049-punching-a-hole-through-windows-firewall/) (blog post).
+    > A Windows Firewall warning might appear, but you can safely ignore this warning if you're planning to also install TFS on this server. TFS automatically adds an exception to Windows Firewall for SQL Server, if both servers (TFS and SQL Server) are installed on the same machine. If you're installing TFS on some other server, you'll want to [open a port for SQL Server in Windows Firewall on this server](http://elhajj.wordpress.com/2013/02/25/workaround-error-tf255049-punching-a-hole-through-windows-firewall/) (blog post).
 	>
 	>For more information about SQL Server ports required for Team Foundation Server, see [Ports required for installation of Team Foundation Server](../../architecture/required-ports.md).
 
@@ -106,7 +106,7 @@ You must be a member of the **Windows Administrators** security group on the ser
     ![Server Configuration (details)](_img/ic665100.png)
 
     > [!NOTE]
-    > Are you using a non-English version of SQL Server? The default collation settings for U.S. English meet the requirements for Team Foundation Server. If you’re not using English, you can set collation settings for the Database Engine on this page. For more information, see [SQL Server Collation Requirements for Team Foundation Server](collation-requirements.md).
+    > Are you using a non-English version of SQL Server? The default collation settings for U.S. English meet the requirements for Team Foundation Server. If you're not using English, you can set collation settings for the Database Engine on this page. For more information, see [SQL Server Collation Requirements for Team Foundation Server](collation-requirements.md).
 
 14. If you selected the **Database Engine Services** check box in step 8, on the **Database Engine Configuration** page, choose **Windows authentication mode**, choose **Add Current User**. Otherwise skip to the next step.
 
@@ -142,7 +142,7 @@ No automatic configuration of Reporting Services
 
 ![SQL Server 2008 R2 no SSRS auto configure](_img/ic662962.png)  
 
-If you don’t install the Database Engine on the same server as Reporting Services, you must manually configure your report server using the steps below after you finish SQL Server installation. 
+If you don't install the Database Engine on the same server as Reporting Services, you must manually configure your report server using the steps below after you finish SQL Server installation. 
 
 In the unlikely case that Reporting Services is on the same server as Team Foundation Server and you have not configured the report server, you are prompted during Team Foundation Server installation to complete the report server configuration, starting on step 3.
 

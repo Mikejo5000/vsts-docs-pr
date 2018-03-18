@@ -53,7 +53,7 @@ You must be a member of the **Administrators** security group on the server that
 
     The wizard validates your configuration.
 
-    If you run into a problem, you can use the detailed results to identify the issue. If you can, fix the issue, and then choose the link to run the ready checks over again. If you resolved the problem, you’ll be able to configure TFS in the next step.
+    If you run into a problem, you can use the detailed results to identify the issue. If you can, fix the issue, and then choose the link to run the ready checks over again. If you resolved the problem, you'll be able to configure TFS in the next step.
 
 8.  Choose **Configure**.
 

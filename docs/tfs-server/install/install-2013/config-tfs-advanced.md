@@ -15,11 +15,11 @@ ms.technology: vs-devops-admin
 
 **TFS 2013**
 
-The advanced configuration for Team Foundation Server lets you customize most settings. Although you can run the advanced configuration on either a client or a server operating system, if you use a client, you won’t be able to add a portal or reporting to your deployment.
+The advanced configuration for Team Foundation Server lets you customize most settings. Although you can run the advanced configuration on either a client or a server operating system, if you use a client, you won't be able to add a portal or reporting to your deployment.
 
 ![Installing on more than one server](../../admin/_img/ic665322.png)
 
-If you use advanced on a client operating system, you don’t need any domain accounts. On a server, you must have at least one domain account, which you can use for all of the following identities:
+If you use advanced on a client operating system, you don't need any domain accounts. On a server, you must have at least one domain account, which you can use for all of the following identities:
 
 -   The service account for Team Foundation Server.  
 -   The report reader account for creating HTML reports.  
@@ -69,7 +69,7 @@ You must be a member of the **Administrators** security group on the server on w
     Network Service is the default value for the TFS service account.
 
     > [!TIP]
-    > If your report server and SharePoint servers are not installed on the same server as TFS, you should add the account you use here to the Farm Administrators group (for SharePoint) and the content manager group on the report server. If you’re installing TFS on the same server as the report server and SharePoint, this account is added to these groups automatically.
+    > If your report server and SharePoint servers are not installed on the same server as TFS, you should add the account you use here to the Farm Administrators group (for SharePoint) and the content manager group on the report server. If you're installing TFS on the same server as the report server and SharePoint, this account is added to these groups automatically.
 
 4.  Choose **NTLM** as an **Authentication Method**. If you choose **Negotiate (Kerberos)**, Kerberos authentication is attempted first. If that attempt fails, NTLM authentication is used.
 
@@ -97,7 +97,7 @@ You must be a member of the **Administrators** security group on the server on w
 
     ![Take note of the site URL.](../../admin/_img/ic676485.png)
 
-    On a client operating system, you must skip to step 10. You can’t add a portal or reporting (steps 8 and 9) on a client operating system.
+    On a client operating system, you must skip to step 10. You can't add a portal or reporting (steps 8 and 9) on a client operating system.
 
 9.  Choose **Configure Reporting for use with Team Foundation Server** to use reporting. Otherwise, clear the check box to skip it.
 
@@ -167,7 +167,7 @@ You must be a member of the **Administrators** security group on the server on w
 
     ![Readiness checks validate your system](../../admin/_img/ic742592.png)
 
-    If you run into a problem, you can use the detailed results to identify the issue. If you can, fix the issue, and then choose the link to run the ready checks over again. If you resolved the problem, you’ll be able to configure TFS in the next step.
+    If you run into a problem, you can use the detailed results to identify the issue. If you can, fix the issue, and then choose the link to run the ready checks over again. If you resolved the problem, you'll be able to configure TFS in the next step.
 
     ![Use detailed results to troublshoot any problems](../../admin/_img/ic676788.png)
 

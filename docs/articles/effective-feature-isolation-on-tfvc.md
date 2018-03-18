@@ -16,7 +16,7 @@ Are you planning to implement Team Foundation Version Control‘s feature isolat
 
 - Is it practical with large development teams?
 - Does it align well with your agile process(es)?
-- What’s the proper lifetime of isolated feature branches? 
+- What's the proper lifetime of isolated feature branches? 
 
 This topic aims to answer those questions, and give you a clear perspective on feature isolation in TFVC. (For guidance on TFVC branch strategies overall, read [Branching Strategies with TFVC](./effective-tfvc-branching-strategies-for-devops.md).) 
 
@@ -32,7 +32,7 @@ The feature isolation strategy allows you work on your features or fix bugs in *
 > 
 > The reference to "feature" is **not** related to the Feature work item type. This strategy can be used with Epic, Feature, Program Backlog Item, User Story, or whatever work item type you've defined in your process. 
 
-It’s typical to create one feature branch per feature or bug, but in this strategy, you can create a miscellaneous feature branch to isolate a couple of low risk features. 
+It's typical to create one feature branch per feature or bug, but in this strategy, you can create a miscellaneous feature branch to isolate a couple of low risk features. 
 
 ![Basic feature isolation](./_img/effective-feature-isolation-on-tfvc/feature-isolation-basic.png)
 

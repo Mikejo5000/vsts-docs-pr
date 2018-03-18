@@ -166,7 +166,7 @@ practice restoring various data sets from backup.  The geo-redundant
 storage that we get from Azure is tested regularly. In addition, from 
 time to time we restore from backups to recover from human error, 
 such as when a customer has inadvertently deleted  a VSTS team project. While our turnaround time sometimes takes more than day, we have always 
-been able to restore the customer’s data given enough time.  Since 
+been able to restore the customer's data given enough time.  Since 
 there are many permutations of disaster and data corruption 
 scenarios, we continue to plan and execute new tests on a regular basis 
 to ensure our systems and associated process are up to the challenge. 
@@ -371,10 +371,10 @@ legitimate reasons.
 
 The General Data Protection Regulation (GDPR) is the biggest change in data protection laws 
 in Europe since the 1995 introduction of the European Union (EU) Data Protection Directive 95/46/EC. 
-The GDPR’s main objective is to strengthen the protection and security of your personal data and 
+The GDPR's main objective is to strengthen the protection and security of your personal data and 
 will replace the Directive and all local laws relating to it. VSTS is committed to achieving compliance 
 with the GDPR when enforcement begins on May 25, 2018 and is mindful of your own compliance efforts and duties. 
-To learn more about this new regulation, please visit the following page in [Microsoft’s Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx).
+To learn more about this new regulation, please visit the following page in [Microsoft's Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx).
 
 
 ### Data residency and sovereignty

@@ -18,11 +18,11 @@ ms.technology: vs-devops-admin
 First, install TFS, then run the upgrade configuration wizard. If you move the TFS application tier to new hardware, you must update the URL for the application tier after you finish running the TFS upgrade wizard.
 
 > [!TIP]
-> After you install TFS, its configuration tool appears automatically. If for some reason you don’t see it, you can access it from the TFS administration console. Launch TFS administration console from the **Start** menu. In the admin console, choose **Application Tier**, and then choose **Configure Installed Features**.
+> After you install TFS, its configuration tool appears automatically. If for some reason you don't see it, you can access it from the TFS administration console. Launch TFS administration console from the **Start** menu. In the admin console, choose **Application Tier**, and then choose **Configure Installed Features**.
 
 **Required Permissions**
 
-You must be a member of the Windows Administrators security group. If you’re upgrading a basic TFS installation, these are the only permissions you need. If you plan to configure reporting, you must also be a member of the Windows Administrators security group on the server that is running SQL Server Reporting Services. If you plan to configure SharePoint Products, you must be a member of the Farm Administrators group on the SharePoint Products administration site. If you did not install the Database Engine that will host the configuration database or a database administrator manages the instance of SQL Server that you are using, you must be a member of sysadmin Server role in SQL Server.
+You must be a member of the Windows Administrators security group. If you're upgrading a basic TFS installation, these are the only permissions you need. If you plan to configure reporting, you must also be a member of the Windows Administrators security group on the server that is running SQL Server Reporting Services. If you plan to configure SharePoint Products, you must be a member of the Farm Administrators group on the SharePoint Products administration site. If you did not install the Database Engine that will host the configuration database or a database administrator manages the instance of SQL Server that you are using, you must be a member of sysadmin Server role in SQL Server.
 
 ### To run the Team Foundation Server installer
 

@@ -15,7 +15,7 @@ To view the extension's report, visit your [publisher page](https://aka.ms/vsmar
 You can view how many accounts have uninstalled your extension, daily trend of uninstall, detailed deedback shared during uninstall and top uninstall reasons.
 You can use search for text and dates to analyze and draw more insights from the detailed feedback. 
 
-If your extension is paid you can also Contact your users for transactional communication. Marketplace will broker the first communication with the user as our privacy policy doesn’t allow direct sharing of customer email address.
+If your extension is paid you can also Contact your users for transactional communication. Marketplace will broker the first communication with the user as our privacy policy doesn't allow direct sharing of customer email address.
 
 **Important** Please follow the below guidance on transactional and promotional communication. A publisher found to do promotional communication or spamming users will be blacklisted and won't be able to use the **Contact** feature for any of his extensions. 
 

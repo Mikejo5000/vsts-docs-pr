@@ -99,7 +99,7 @@ For more information about service accounts for SQL Server, see the following pa
 
 ### Q: Do service accounts require a license?
 
-**A:** No. Service accounts don’t require a separate license.
+**A:** No. Service accounts don't require a separate license.
 
 ### Q: How do I change the password or account for a service account?
 

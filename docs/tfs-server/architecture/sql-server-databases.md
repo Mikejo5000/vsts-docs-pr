@@ -37,7 +37,7 @@ The following table describes the databases that might be present in your deploy
 The following diagram illustrates the logical architecture of a deployment of Team Foundation Server that is integrated with both SQL Server Reporting Services and SharePoint Products:
 
 ![Database relationships with SharePoint Products](../_img/ic347963.png)  
-One advantage of storing all your data in a database is that it simplifies data management because you don’t have to back up individual client computers. If you are familiar with backing up SQL Server databases, you will find backing up and restoring Team Foundation Server databases equally familiar. 
+One advantage of storing all your data in a database is that it simplifies data management because you don't have to back up individual client computers. If you are familiar with backing up SQL Server databases, you will find backing up and restoring Team Foundation Server databases equally familiar. 
 
 > [!TIP]
 > Team Foundation Server requires that collation settings are case insensitive, are accent sensitive, and are not binary. If you want to use an existing installation of SQL Server with Team Foundation Server, you must verify that the collation settings meet these requirements. If they do not, installation of Team Foundation Server will fail. For more information, see [SQL Server Collation Requirements for Team Foundation Server](../install/sql-server/collation-requirements.md)

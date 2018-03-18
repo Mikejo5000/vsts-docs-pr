@@ -63,7 +63,7 @@ As shown, most users prefer the email feature. Option (A) is more popular with t
 
 As outlined in [How to implement feature flags and A|B testing](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2017/04/04/how-to-implement-feature-flags-and-ab-testing/) we considered a number of FF frameworks and solutions. We chose the [LaunchDarkly](https://launchdarkly.com/index.html) solution for several reasons:
 
-- It’s a software as a service (SaaS) solution.
+- It's a software as a service (SaaS) solution.
 	- No custom solution to maintain.
 	- No upgrades - we're always using the latest and greatest.
 	- No servers - [LaunchDarkly](https://launchdarkly.com/index.html) takes care of the machines that LaunchDarkly runs on.

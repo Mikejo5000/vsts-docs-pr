@@ -169,7 +169,7 @@ TFS 2010    | Office SharePoint Server 2007 (Standard, Enterprise)<br/>Windows S
 You can configure the TFS extension for SharePoint Products on your SharePoint server from the [TFS administration console](../tfs-server/command-line/open-admin-console.md).
 
 >**Tip:**
-If you plan to install SharePoint, make sure that the version of SharePoint you want to use is compatible with the server operating system you’re using. Support for server operating systems in TFS is more amenable than in SharePoint.
+If you plan to install SharePoint, make sure that the version of SharePoint you want to use is compatible with the server operating system you're using. Support for server operating systems in TFS is more amenable than in SharePoint.
 
 Here are your main options:
 

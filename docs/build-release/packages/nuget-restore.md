@@ -72,7 +72,7 @@ NuGet restore can fail due to a variety of issues. One of the most common issues
 
 [//]: # (::: moniker range=">= tfs-2018") 
 
-If you’re using VSTS or the upcoming TFS 2018 release, new template-based builds will work automatically thanks to a new “NuGet Tool Installer” task that’s been added to the beginning of all build templates that use the NuGet task. We periodically update the default version that's selected for new builds around the same time we install Visual Studio updates on the Hosted build agents.
+If you're using VSTS or the upcoming TFS 2018 release, new template-based builds will work automatically thanks to a new “NuGet Tool Installer” task that's been added to the beginning of all build templates that use the NuGet task. We periodically update the default version that's selected for new builds around the same time we install Visual Studio updates on the Hosted build agents.
 
 For existing builds, just add or update a NuGet Tool Installer step to select the version of NuGet for all the subsequent steps. You can see all available versions of NuGet [on nuget.org](https://dist.nuget.org/tools.json).
 
@@ -86,7 +86,7 @@ For existing builds, just add or update a NuGet Tool Installer step to select th
 
 Because the NuGet Tool Installer is not available in TFS versions prior to TFS 2018, there is a recommended workaround to use versions of NuGet > 4.0.0 in Team Build.
 
-1. Add the task, if you haven’t already. If you have a “NuGet Restore” step in the catalog (it may be in the Deprecated tasks section), insert it into your build. Otherwise, insert a “NuGet” step.
+1. Add the task, if you haven't already. If you have a “NuGet Restore” step in the catalog (it may be in the Deprecated tasks section), insert it into your build. Otherwise, insert a “NuGet” step.
 1. For your NuGet/NuGet Installer step, use the version selector under the task name to select version “0.*”.
 1. In the Advanced section, set the NuGet Version to “Custom” and the Path to NuGet.exe as
 $(Build.BinariesDirectory)\nuget.exe
