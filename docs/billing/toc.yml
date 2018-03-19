@@ -27,7 +27,7 @@
     - name: Set up billing
       href: set-up-billing-for-your-account-vs.md
     - name: VSTS billing FAQ
-      href: vsts-billing-faq.md
+      href: faq-azure-billing.md
     - name: Add backup billing managers
       href: add-backup-billing-managers.md
     - name: Change billing to a different Azure subscription
