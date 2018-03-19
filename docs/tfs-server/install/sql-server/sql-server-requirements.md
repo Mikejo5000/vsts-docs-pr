@@ -31,7 +31,7 @@ Regardless of which option you choose, your instance of SQL Server must meet the
 
 | Category | Requirements |
 | --- | --- |
-| Supported editions | SQL Server 2014¹ (Express,² Standard,² and Enterprise editions) </br> SQL Server 2012 with SP1³ or newer service pack (Express,² Standard,² and Enterprise Editions) **Tip**: TFS Express only supports SQL Server Express instances that use the default instance name (SQLExpress). |
+| Supported editions | SQL Server 2014&#091;1&#093; (Express,[2] Standard,[2] and Enterprise editions) </br> SQL Server 2012 with SP1[3] or newer service pack (Express,[2] Standard,[2] and Enterprise Editions) **Tip**: TFS Express only supports SQL Server Express instances that use the default instance name (SQLExpress). |
 | Required for Team Foundation Server | Database Engine Services </br></br> Full-Text and Semantic Extractions for Search |
 Required for reporting | Reporting Services - Native </br> Analysis Services |
 | Collation settings | Must be accent sensitive </br> Must not be case sensitive </br> Must not be Binary </br> Must not be Binary - code point </br> For more information, see [SQL Server Collation Requirements for Team Foundation Server](collation-requirements.md) |
@@ -45,11 +45,11 @@ Required for reporting | Reporting Services - Native </br> Analysis Services |
 **Your limits on database read operations**  
 Microsoft does not support any read operations against the TFS databases that originate from queries, scripts, .dll files, and so on, not provided by Microsoft or its support teams. If Microsoft Support determines that those read operations prevent them from solving your problem, the entire database will be unsupported. To return the database to a supported state, all unsupported read operations must stop.
 
-¹ SQL Server 2014 has increased hardware requirements compared with previous versions. Certain configurations might hurt TFS performance. For more information, read [TFS 2013 Update 2: performance considerations using SQL Server 2014](http://support.microsoft.com/kb/2953452).
+[1] SQL Server 2014 has increased hardware requirements compared with previous versions. Certain configurations might hurt TFS performance. For more information, read [TFS 2013 Update 2: performance considerations using SQL Server 2014](http://support.microsoft.com/kb/2953452).
 
-² Limited or no SQL Server High Availability support.
+[2] Limited or no SQL Server High Availability support.
 
-³ If you're using SQL Server 2012 with SP1, we recommend you also apply [cumulative update 2 on top of SP1](http://support.microsoft.com/kb/2790947) to address a critical SQL Server bug around resource consumption. This isn't a requirement because the bug only affects a small number of instances, but we wanted you to be aware of it. If you don't apply CU2, you should apply a SQL Server hotfix ([KB2793634](http://support.microsoft.com/kb/2793634)) to addresses another (different) issue where SQL Server 2012 with SP1 might request an excessive amount of restarts.
+[3] If you're using SQL Server 2012 with SP1, we recommend you also apply [cumulative update 2 on top of SP1](http://support.microsoft.com/kb/2790947) to address a critical SQL Server bug around resource consumption. This isn't a requirement because the bug only affects a small number of instances, but we wanted you to be aware of it. If you don't apply CU2, you should apply a SQL Server hotfix ([KB2793634](http://support.microsoft.com/kb/2793634)) to addresses another (different) issue where SQL Server 2012 with SP1 might request an excessive amount of restarts.
 
 ## SQL Server High Availability features Supported by Team Foundation Server
 

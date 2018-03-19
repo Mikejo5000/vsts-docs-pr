@@ -17,7 +17,7 @@ ms.technology: vs-devops-admin
 
 ![Install on more than one server](../_img/2013-install.png)
 
-If you intend to have SQL Server and TFS on the same server, then you might be able to use the TFS standard installation wizard, which is designed to streamline the number of decisions you have to make during TFS installation. To use the standard wizard, you have to have SQL Server set up on the default instance (as we did in the SQL Server installation topic) and the reporting features must be installed. We recommend that you have 24 GB of RAM to run SharePoint on the same server as SQL Server. If you're okay with all these requirements and with the default TFS options¹ (SharePoint Foundation is installed), then use the standard wizard.
+If you intend to have SQL Server and TFS on the same server, then you might be able to use the TFS standard installation wizard, which is designed to streamline the number of decisions you have to make during TFS installation. To use the standard wizard, you have to have SQL Server set up on the default instance (as we did in the SQL Server installation topic) and the reporting features must be installed. We recommend that you have 24 GB of RAM to run SharePoint on the same server as SQL Server. If you're okay with all these requirements and with the default TFS options&#091;1&#093; (SharePoint Foundation is installed), then use the standard wizard.
 
 If you want more control over installation options, use the advanced configuration.
 

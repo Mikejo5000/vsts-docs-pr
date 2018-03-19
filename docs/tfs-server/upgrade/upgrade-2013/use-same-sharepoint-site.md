@@ -17,7 +17,7 @@ ms.technology: vs-devops-admin
 
 ![Uninstall previous version](../_img/ic612457.png)
 
-If your current SharePoint site meets the new requirements for TFS 2013, you can continue to use it, if you perform a few procedures. First you have to uninstall the old TFS extensions for SharePoint¹, and then install the new version of the extensions. You also want to make sure the service account that you will use on the upgraded Team Foundation Server is a member of the Farm administrators group. If you're currently using Windows SharePoint Services 3.0 or SharePoint Server 2007, you'll have to upgrade to supported version of SharePoint. For more information, see [Upgrade from Office SharePoint Server 2007 or Windows SharePoint Services 3.0 to SharePoint Server 2013 or SharePoint Foundation 2013](https://technet.microsoft.com/library/ee947141.aspx)
+If your current SharePoint site meets the new requirements for TFS 2013, you can continue to use it, if you perform a few procedures. First you have to uninstall the old TFS extensions for SharePoint[1], and then install the new version of the extensions. You also want to make sure the service account that you will use on the upgraded Team Foundation Server is a member of the Farm administrators group. If you're currently using Windows SharePoint Services 3.0 or SharePoint Server 2007, you'll have to upgrade to supported version of SharePoint. For more information, see [Upgrade from Office SharePoint Server 2007 or Windows SharePoint Services 3.0 to SharePoint Server 2013 or SharePoint Foundation 2013](https://technet.microsoft.com/library/ee947141.aspx)
 
 > [!TIP]
 > If you're upgrading TFS 2012, you don't have to uninstall the old version of TFS extensions.

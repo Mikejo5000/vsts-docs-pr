@@ -85,7 +85,7 @@ You must be a member of the **Windows Administrators** security group on the ser
 
     -   Client Tools Connectivity (required only if no other SQL Server components are installed on the server that is running Team Foundation Server - not pictured)
 
-    -   Management Tools - Basic ¹ (not pictured)
+    -   Management Tools - Basic &#091;1&#093; (not pictured)
 
     ![Feature Selection](_img/ic665097.png)
 
@@ -133,7 +133,7 @@ You must be a member of the **Windows Administrators** security group on the ser
 
     ![Complete](_img/ic662712.png)
 
-¹ To install Team Foundation Server, you do not need to install **Management Tools** (Basic or Complete) on the same computer as SQL Server. However, you must use the SQL Server Management Studio management tool to verify your installation of SQL Server.
+[1] To install Team Foundation Server, you do not need to install **Management Tools** (Basic or Complete) on the same computer as SQL Server. However, you must use the SQL Server Management Studio management tool to verify your installation of SQL Server.
 
 <a name="config-report-svr-manually"></a>
 ## Configure Report Server Manually

@@ -17,13 +17,13 @@ ms.technology: vs-devops-admin
 
 Review the requirements listed here and then choose a server upgrade path. You can upgrade from any of the following earlier releases:
 
--   Team Foundation Server 2013 RTM ¹
+-   Team Foundation Server 2013 RTM [1]
 
 -   Team Foundation Server 2012 with Update 4 (TFS 2012.4), TFS 2012.3, TFS 2012.2, TFS 2012.1, or TFS 2012 releases
 
 -   Team Foundation Server 2010 with or without Service Pack 1
 
-¹ Unlike Visual Studio 2013, there was no Update 1 for TFS 2013. The first update for TFS 2013 is Update 2.
+[1] Unlike Visual Studio 2013, there was no Update 1 for TFS 2013. The first update for TFS 2013 is Update 2.
 
 > [!TIP]
 > Do you need to upgrade from TFS 2008? You must upgrade to TFS 2012 first: [There is an ISO of TFS 2012 available](http://go.microsoft.com/fwlink?linkid=255990) for you to prepare your TFS 2008 installation for an upgrade to TFS 2013.

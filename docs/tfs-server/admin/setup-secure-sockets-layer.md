@@ -192,7 +192,7 @@ After you enlist in a certification authority, you must either request a certifi
 
 -   Each server that is running Team Foundation Build Service as either a build controller or a build agent, if any are configured for your deployment.
 
--   Each server that is running Release Management Server, or any servers¹ in a release environment that are running the deployment agent, if Release Management is part of your deployment.
+-   Each server that is running Release Management Server, or any servers[1] in a release environment that are running the deployment agent, if Release Management is part of your deployment.
 
 -   Each server that is running SharePoint Products, if SharePoint Products is configured for your deployment.
 
@@ -201,9 +201,9 @@ After you enlist in a certification authority, you must either request a certifi
 
 -   The server that is running Reporting Services, if one is configured for your deployment.
 
-In addition, the client computers in your deployment will need to be enrolled in the certificate chain and request the needed certificate. If you're using Release Management, this includes any computers running the Release Management client, as well as any clients¹ running the deployment agent in your release environments. If one or more of your projects uses Git for version control, users in those projects will also have to configure Git on their computers to recognize and use the client certificate. For information about how to request a client certificate from a specific CA, see the documentation for that certification authority.
+In addition, the client computers in your deployment will need to be enrolled in the certificate chain and request the needed certificate. If you're using Release Management, this includes any computers running the Release Management client, as well as any clients[1] running the deployment agent in your release environments. If one or more of your projects uses Git for version control, users in those projects will also have to configure Git on their computers to recognize and use the client certificate. For information about how to request a client certificate from a specific CA, see the documentation for that certification authority.
 
-¹ Clients and servers are called out separately here, but that's just a convention of this document. Any computer running the deployment agent needs the certificate installed.
+[1] Clients and servers are called out separately here, but that's just a convention of this document. Any computer running the deployment agent needs the certificate installed.
 
 1.  Open **Internet Information Services (IIS) Manager**.
 

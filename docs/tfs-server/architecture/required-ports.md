@@ -29,13 +29,13 @@ The following table specifies the TCP ports that SQL Server requires.
 
 |**Server or Application Context**|**TCP Port**|
 |---|---|
-|SQL Service (Database Engine)|1433¹|
+|SQL Service (Database Engine)|1433[1]|
 |SQL Browser Service (Database Engine)|1434|
 |SQL Server Analysis Services Redirector |2382|
 |SQL Server Analysis Services|2383|
 |SQL Server Reporting Services|80|
 
-¹ SQL Server uses port 1433 for the default instance. For named instances, SQL Server uses a dynamic port that the operating system assigns. Use SQL Server Configuration Manger to determine the SQL Server port number for any named instances. For more information, see this page on the Microsoft website: [Configuring the Windows Firewall to Allow SQL Server Access](https://msdn.microsoft.com/en-us/library/cc646023.aspx).
+[1] SQL Server uses port 1433 for the default instance. For named instances, SQL Server uses a dynamic port that the operating system assigns. Use SQL Server Configuration Manger to determine the SQL Server port number for any named instances. For more information, see this page on the Microsoft website: [Configuring the Windows Firewall to Allow SQL Server Access](https://msdn.microsoft.com/en-us/library/cc646023.aspx).
 
 **Report Server Port Requirements**
 
