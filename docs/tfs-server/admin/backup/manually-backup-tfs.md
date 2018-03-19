@@ -198,7 +198,7 @@ To make sure that all databases are restored to the same point, you can create a
 
 7.  (Optional) Save the script.
 
-8.  Repeat steps 4−7 for every database in your deployment of TFS, except for those used by SharePoint Products. In the fictitious Fabrikam, Inc. deployment, you would repeat this process for all of the following databases:
+8.  Repeat steps 4-7 for every database in your deployment of TFS, except for those used by SharePoint Products. In the fictitious Fabrikam, Inc. deployment, you would repeat this process for all of the following databases:
 
     -   Tfs\_Warehouse
 
@@ -235,7 +235,7 @@ After the tables have been created in each database that you want to back up, yo
 
 5.  (Optional) Save the procedure.
 
-6.  Repeat steps 2−5 for every TFS database.  In the Fabrikam, Inc. deployment, you would repeat this process for all of the following databases:
+6.  Repeat steps 2-5 for every TFS database.  In the Fabrikam, Inc. deployment, you would repeat this process for all of the following databases:
 
     -   Tfs\_Warehouse
 
