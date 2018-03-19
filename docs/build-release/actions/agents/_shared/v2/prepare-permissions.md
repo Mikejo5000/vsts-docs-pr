@@ -2,7 +2,7 @@
 
 Decide which user account you're going to use to register the agent.
 
-[//]: # (::: moniker range=">= tfs-2017")
+::: moniker range=">= tfs-2017"
 
 #### Authenticate with a personal access token (PAT) to VSTS or TFS 2017 or newer
 
@@ -22,25 +22,25 @@ or your Team Foundation Server web portal (```https://{your-server}:8080/tfs/```
 
 1. Copy the token. You'll use this token when you configure the agent.
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 [//]: # (ideally this would be ">= tfs-2017 < vsts" but we can't because blurb is shared inside topics that include vsts)
-[//]: # (::: moniker range=">= tfs-2017")
+::: moniker range=">= tfs-2017"
 
 #### Authenticate as a user of TFS 2017 or newer
 
 You can use either a domain user or a local Windows user on each of your TFS application tiers.
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 [//]: # (ideally this would be "tfs-2015" but we can't because blurb is shared inside topics that include vsts)
-[//]: # (::: moniker range="tfs-2015 || vsts")
+::: moniker range="tfs-2015 || vsts"
 
 #### Authenticate as a user of TFS 2015
 
 (Applies only to macOS and Linux.) We recommend that you create a local Windows user on each of your TFS application tiers and dedicate that user for the purpose of deploying build agents.
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ### Confirm the user has permission
 

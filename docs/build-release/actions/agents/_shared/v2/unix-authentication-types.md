@@ -1,4 +1,4 @@
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 #### VSTS
 
@@ -7,9 +7,9 @@ Choose **PAT**, and then paste the [PAT token you created](#permissions) into th
 > [!NOTE]
 > When using PAT as the authentication method, the PAT token is used only for the initial configuration of the agent. Learn more at [Communication with VSTS or TFS](../../../../concepts/agents/agents.md).
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range="< vsts")
+::: moniker range="< vsts"
 
 #### TFS
 
@@ -30,4 +30,4 @@ When you configure your agent to connect to TFS, you've got the following option
 > [!NOTE]
 > When using PAT as the authentication method, the PAT token is used only for the initial configuration of the agent on newer versions of TFS. Learn more at [Communication with VSTS or TFS](../../../../concepts/agents/agents.md).
 
-[//]: # (::: moniker-end)
+::: moniker-end
