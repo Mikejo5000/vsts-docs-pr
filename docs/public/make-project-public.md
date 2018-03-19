@@ -13,7 +13,7 @@ ms.date: 01/05/2018
 
 # Make your team project a public project
 
-**Azure CodeX Public Project**  
+[!INCLUDE [temp](_shared/version-public-projects.md)] 
 
  
 

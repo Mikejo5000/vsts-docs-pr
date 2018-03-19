@@ -13,7 +13,7 @@ ms.date: 02/20/2018
 
 # View project homepage or a dashboard 
 
-**Azure CodeX Public Project**  
+[!INCLUDE [temp](_shared/version-public-projects.md)] 
 
 You can view the homepage or dashboards defined for an Azure CodeX public project. From the project page, you can XXX. From a dashboard, you can XXX. 
 

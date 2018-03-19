@@ -13,7 +13,7 @@ ms.date: 01/05/2018
 
 # Recommendations when moving a private project to public 
 
-**Azure CodeX Public Project**  
+[!INCLUDE [temp](_shared/version-public-projects.md)] 
 
 This topic is to support the sanitize and move content 
  

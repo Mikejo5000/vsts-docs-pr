@@ -13,7 +13,7 @@ ms.date: 01/05/2018
 
 # Clone an existing Git repo
 
-**Azure CodeX Public Project** 
+[!INCLUDE [temp](_shared/version-public-projects.md)] 
 
 Create a complete local copy of an existing Git repo by cloning it. 
 Cloning a repo downloads all commits and branches in the repo and sets up a named relationship with the existing repo you cloned.

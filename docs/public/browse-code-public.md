@@ -13,7 +13,7 @@ ms.date: 01/05/2018
 
 # Browse repos, files, branches, pushes, commits, & pull requests 
 
-**Azure CodeX Public Project** 
+[!INCLUDE [temp](_shared/version-public-projects.md)] 
 
  
 
