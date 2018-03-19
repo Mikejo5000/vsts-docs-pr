@@ -165,7 +165,7 @@ Your client remembers the set of connections you've configured. You can quickly 
 
 	![Connect with VS 2017 TFS or VSTS using a different account](_img/connect-team-projects-tfs/choose-different-user-vs2017.png) 
 
-2. Sign on using a valid Microsoft account—an account that is associated with a VSTS team project.
+2. Sign on using a valid Microsoft account-an account that is associated with a VSTS team project.
 
 [//]: # (::: moniker-end)
 
@@ -181,7 +181,7 @@ Your client remembers the set of connections you've configured. You can quickly 
 
 	![Connect to Team Foundation Server dialog box](_img/connect-team-projects-tfs/IC719958.png) 
 
-2. Sign on using a valid Microsoft account—an account that is associated with a VSTS team project. 
+2. Sign on using a valid Microsoft account-an account that is associated with a VSTS team project. 
 
 [//]: # (::: moniker-end)
 

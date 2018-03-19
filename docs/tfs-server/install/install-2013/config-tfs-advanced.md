@@ -130,7 +130,7 @@ You must be a member of the **Administrators** security group on the server on w
 
     ![Choose to configure SharePoint](../../admin/_img/ic742588.png)
 
-    If you chose to configure SharePoint, then you have two choices—either install and configure SharePoint on this machine or specify a SharePoint location. Here are the details:
+    If you chose to configure SharePoint, then you have two choices-either install and configure SharePoint on this machine or specify a SharePoint location. Here are the details:
 
     -   Install and configure SharePoint on this machine
 

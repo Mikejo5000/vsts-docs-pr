@@ -34,7 +34,7 @@ For more information, see: [System requirements for Team Foundation Server](../.
 
 ![](../_img/ic552209.png)
 
-![](../../install/_img/ic646326.png) **Upgrade TFS**. Run the Team Foundation Server install from the product DVD and then use the Upgrade Configuration wizard to upgrade your installation. <span class="parameter">But wait</span>—if SharePoint Products is running on a computer other than Team Foundation Server, [you'll first want to install the new TFS Extensions for SharePoint on the SharePoint server](use-same-sharepoint-site.md). Similar to the previous step, if SharePoint Products is on the TFS application-tier, we'll install the Extensions for SharePoint at the same time that we set up the new version of TFS.
+![](../../install/_img/ic646326.png) **Upgrade TFS**. Run the Team Foundation Server install from the product DVD and then use the Upgrade Configuration wizard to upgrade your installation. <span class="parameter">But wait</span>-if SharePoint Products is running on a computer other than Team Foundation Server, [you'll first want to install the new TFS Extensions for SharePoint on the SharePoint server](use-same-sharepoint-site.md). Similar to the previous step, if SharePoint Products is on the TFS application-tier, we'll install the Extensions for SharePoint at the same time that we set up the new version of TFS.
 
 For more information, see: [Run the TFS Upgrade Wizard](../run-upgrade-wizard.md).
 

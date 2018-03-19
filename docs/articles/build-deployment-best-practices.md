@@ -27,7 +27,7 @@ intervention. However, automating multiple components of a system has its own ch
 automated in silos, if we need a one-click deployment for the entire system, we need to have an 
 automation framework that can automate an entire custom workflow.
 
-Throughout this paper, we give insight on our project - World Wide Time Keeping — and how we implemented build 
+Throughout this paper, we give insight on our project - World Wide Time Keeping - and how we implemented build 
 and deployment automation using Gated Check-ins, Code Analysis, and Fortify Integrations. We discuss build and 
 deployment automation by using PowerShell scripts and how we can create custom workflows and deploy all at once 
 using Release Management. We also talk about how these can help you cut down your engineering cycle time and 
@@ -98,7 +98,7 @@ occur as code moves through a release pipeline.
 
 ### Using Release Management
 
-If your team is working on Azure-based components - web apps, services, web jobs, and so on — you can use 
+If your team is working on Azure-based components - web apps, services, web jobs, and so on - you can use 
 Release Management for automating deployments.
 
 Release Management consists of various pre-created components which you can configure and use either 

@@ -54,7 +54,7 @@ Team Foundation Server contains dashboards that use SharePoint Products features
 If your existing SharePoint installation meets the TFS requirements for SharePoint, you can [verify your existing SharePoint deployment](verify-sharepoint.md) and then integrate it with TFS. Before you verify, review the [SharePoint requirements for TFS](../../requirements.md#sharepoint).
 
 > [!TIP]
-> You can use a remote SharePoint installation—an instance of SharePoint that is not installed on the TFS server—but to do this you'll need to install the TFS extensions for SharePoint on the SharePoint server. See [How to: Install Remote SharePoint Products for Team Foundation Server](setup-remote-sharepoint.md).
+> You can use a remote SharePoint installation-an instance of SharePoint that is not installed on the TFS server-but to do this you'll need to install the TFS extensions for SharePoint on the SharePoint server. See [How to: Install Remote SharePoint Products for Team Foundation Server](setup-remote-sharepoint.md).
 
 ## To install SharePoint 2013 products for TFS
 
