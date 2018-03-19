@@ -1,125 +1,175 @@
 ---
-title: Troubleshoot Azure billing for VSTS and Visual Studio Subscriptions 
-description: Troubleshoot Azure billing for VSTS and Visual Studio Subscriptions 
+title: VSTS billing FAQ 
+description: VSTS is billed via Microsoft Azure.
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
 ms.assetid: 62d94b8a-256a-4347-905a-3393f5d8a13f
 ms.manager: douge
 ms.author: chcomley
-ms.date: 02/27/2018
+ms.date: 3/19/2018
 ---
 [//]: # (monikerRange: 'vsts')
 
-# Troubleshoot Azure billing
+# Visual Studio Team Services (VSTS) billing FAQ
+Make sure to review [VSTS pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services//) and the [VSTS billing overview](overview.md) to start.
 
-**VSTS**
+You have to set up billing when you need more than the **Free Tier** of resources in your VSTS account--5 VSTS users (Basic), 5 Package Management users, 
+Free Tier of Microsoft-hosted CI/CD (1 concurrent job, up to 4 hours per month), 1 self-hosted CI/CD concurrent job, and 20,000 virtual user minutes of 
+cloud-based load testing--or to buy other features for your users that are offered by Microsoft or by other companies via the [Visual Studio Marketplace](https://marketplace.visualstudio.com/).
 
-<a name="billing"></a>
-When you buy from the Visual Studio Marketplace,
-you select an Azure subscription to use for billing.
-If you don't have an Azure subscription,
-you can [sign up](https://portal.azure.com)
-either before or during your first purchase.
-You can set up payment with a credit card
-or by invoice in some cases. Charges for your
-purchases will show up on your monthly Azure bill.
+### Q: Can I buy VSTS using a Purchase Order?
+A: No. VSTS must be purchased using an Azure subscription. (Think of it as your Azure billing account.)
 
->[!NOTE]
->You must keep your Azure subscription in good
-standing to use your Visual Studio Marketplace purchases.
+### Q: What types of Azure subscriptions can be used to buy VSTS?
+A: Almost all Azure subscriptions can be used--we support Azure subscriptions connected to your 
+[Enterprise Agreement (EA)](https://azure.microsoft.com/pricing/enterprise-agreement/), Azure subscriptions set up by 
+Cloud Solution Providers (CSPs), Azure subscriptions set up through Microsoft Open License resellers, Pay-As-You-Go Azure subscriptions, and 
+you can even buy using Azure subscriptions that Visual Studio subscribers set up as a subscriber benefit (but no, you can't use your monthly credit to 
+pay for more Visual Studio subscriptions).
 
-If your Azure subscription is canceled or becomes disabled,
-for example, because the credit card used for payment expires,
-then any purchases with this Azure subscription are
-deactivated on the 1st day of next month.
-To continue using your Visual Studio Marketplace purchases,
-please keep your Azure subscription active and updated.
+The only notable exclusion is that you cannot use the [Azure Free Trial](https://azure.microsoft.com/en-us/pricing/free-trial/).
 
-For example, if you bought a Visual Studio Professional subscription, 
-and you used an Azure subscription that became disabled,
-your Visual Studio Professional IDE stops working on
-the 1st of the following month. This also applies to annual
-Visual Studio subscriptions that are paid in full for the year.
+### Q: Can I use the monthly Azure credits from my Visual Studio subscription to buy VSTS?
 
-## Enterprise Agreement (EA) customers
-
-### Q: Can I use an Enterprise Agreement to buy from the Visual Studio Marketplace?
-
-A: Yes, please buy directly from the Visual Studio Marketplace 
-where you can bill purchases to the Azure subscription that was created
-under your [Enterprise Agreement (EA)](https://azure.microsoft.com/en-us/pricing/enterprise-agreement/).
-Don't order Visual Studio Marketplace services through your reseller.
-
-### Q: How can I tell whether I have the necessary privileges to buy services in the Visual Studio Marketplace through my organization's Enterprise Agreement?
-
-A: The easiest approach to determine if you have the right privileges is to click the **Buy** button for a service offered in the Visual Studio Marketplace. You need to select an Azure subscription (which is a billing account) from a presented list of Azure subscriptions that are currently linked to your login. Because the name of the Azure subscription defaults to the type of billing account ("Pay-As-You-Go", "Enterprise Agreement", etc.), it is often clear if the Azure subscription is part of your Enterprise Agreement.
-
-Another approach is to attempt to visit the [Azure Enterprise Portal](http://ea.azure.com).  If you can reach it successfully, then you already have either the Enterprise Admin or the Account Owner role. Only Account Owners can set up new Azure billing accounts in an Enterprise Agreement. If you cannot access the Azure Enterprise Portal, then please inquire within your organization to find out who your Enterprise Admin is, and ask that person to add you as an Account Owner within the Azure Enterprise Portal.  If you are unable to find this person, you can [submit a support ticket](http://aka.ms/AzureEntSupport) and request the contact information.  You need your organization's name and your Enterprise Agreement enrollment number for the support ticket.
-
-### Q: Can I use the Azure Monetary Commitment funds from my Enterprise Agreement to buy from the Visual Studio Marketplace?
-
-A: You can use these prepaid funds to pay for: 
-
-* [VSTS users](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser) 
-* [Microsoft-published extensions for VSTS and Team Foundation Server](https://marketplace.visualstudio.com/vsts)
-* [Virtual user minutes for Cloud-based Load Testing](/vsts/billing/buy-more-build-vs)
-* [HockeyApp plans](https://marketplace.visualstudio.com/subscriptions)
-
-You can't use these funds to pay for Visual Studio cloud 
-subscriptions and non-Microsoft extensions for VSTS and Team Foundation Server.
-
-## Free Trial customers and customers using their monthly Azure credits
-
-### Q: Can I use the Azure Free Trial to buy from the Visual Studio Marketplace?
-
-A: No, you can't use the
-[Azure Free Trial](https://azure.microsoft.com/en-us/pricing/free-trial/)
-to pay for Visual Studio Marketplace purchases,
-which applies to VSTS, HockeyApp user plans, and so on.
-Instead, set up a separate Pay-As-You-Go Azure subscription,
-which you can do before or during your purchase.
-
-### Q: Can I use the monthly Azure credits from Visual Studio subscriptions or Visual Studio Dev Essentials to buy from the Visual Studio Marketplace?
-
-A: No, you can't use the monthly Azure credits from
-[Visual Studio subscriptions](https://www.visualstudio.com/products/subscriber-benefits-vs)
-and [Visual Studio Dev Essentials](https://www.visualstudio.com/products/visual-studio-dev-essentials-vs.aspx)
-to pay for Visual Studio Marketplace purchases.
-However, you can use the included Azure subscriptions to bill your purchases.
-Before you make purchases though, you must
-[remove your spending limit](https://azure.microsoft.com/pricing/spending-limits/)
-from these subscriptions.
+A: No, you can't use the monthly Azure credits from [Visual Studio subscriptions](https://www.visualstudio.com/products/subscriber-benefits-vs) 
+to pay for VSTS. Before you make purchases using this type of Azure subscription, you must [remove your spending limit](https://azure.microsoft.com/pricing/spending-limits/).
 
 <img alt="Spending limit" src="_shared/_img/spending-limit.png" style="border: 1px solid #CCCCCC" />
 
 <a name="spending-limit"></a>
 
->[!IMPORTANT]
->Remove your spending limit indefinitely.
-This prevents disabling your Azure subscription
-when your monthly charges are billed the next month.
-Otherwise, all resources billed to this subscription will be suspended,
-including virtual machines and all other workloads.
+> [!NOTE]
+> Remove your spending limit indefinitely. This prevents disabling your Azure subscription when your recurring monthly charges are billed the next month.
+> Otherwise, all resources billed to this subscription will be suspended, including virtual machines and all other workloads.
 
 <img alt="Remove spending limit indefinitely" src="_shared/_img/remove-spending-limit.png" style="border: 1px solid #CCCCCC" />
 
-## Other
+### Q: Am I required to buy other Azure services?
+A: Not at all. If you only want to buy VSTS via Azure, you can do that. 
 
-### Q: How often am I billed for Visual Studio subscriptions?
+## Enterprise Agreement (EA) customers
 
-A: Your billing frequency depends on the subscriptions that you purchased:
+### Q: Can I use an Enterprise Agreement to buy VSTS?
 
-* Monthly subscriptions are prorated during the 1st month.  After that, they're billed on the 1st day of the calendar month.
+A: Yes, you can. You'll need to be an owner or contributor for an Azure subscription that was created for your EA. Please make sure that you make your 
+purchases for VSTS directly in the Visual Studio Marketplace. You cannot purchase VSTS using a Purchase Order. 
 
-    Increases for monthly subscriptions are prorated,
-    while updated charges for decreases take effect on the 1st of next month.
+### Q: How can I tell whether I have the necessary privileges to buy services in the Visual Studio Marketplace through my organization's Enterprise Agreement?
 
-* Annual subscriptions are always purchased in whole increments and are never prorated. Charges for subsequent years will be billed on the 1st day of the calendar month after the anniversary date of your subscription purchase.
+A: The easiest approach to determine if you have the right privileges is to click the **Buy** button for a service offered in the Visual Studio Marketplace. 
+You need to select an Azure subscription (which is a billing account) from a presented list of Azure subscriptions that are currently linked to your login. 
+Because the name of the Azure subscription defaults to the type of billing account ("Pay-As-You-Go", "Enterprise Agreement", etc.), it is often clear if the 
+Azure subscription is part of your Enterprise Agreement.
 
-[!INCLUDE [azure-bill-larger](../_shared/qa-azure-bill-larger.md)]
+Another approach is to attempt to visit the [Azure Enterprise Portal](http://ea.azure.com).  If you can reach it successfully, then you already have either 
+the Enterprise Admin or the Account Owner role. Only Account Owners can set up new Azure billing accounts in an Enterprise Agreement. If you cannot access 
+the Azure Enterprise Portal, then please inquire within your organization to find out who your Enterprise Admin is, and ask that person to add you as an 
+Account Owner within the Azure Enterprise Portal.  If you are unable to find this person, you can [submit a support ticket](http://aka.ms/AzureEntSupport) 
+and request the contact information.  You need your organization's name and your Enterprise Agreement enrollment number for the support ticket.
 
-[!INCLUDE [azure-billing-support](_shared/qa-azure-billing-support.md)]
+### Q: Can I use the Azure Monetary Commitment funds from my Enterprise Agreement to buy VSTS?
 
-<a name="EligibleAzureSubscriptions"></a>
+A: Yes, you can use these prepaid funds for all VSTS services offered by Microsoft. Make sure to choose an Azure subscription that was created for your 
+EA when you [set up billing for your VSTS account](set-up-billing-for-your-account-vs.md).
 
-[!INCLUDE [azure-subscriptions-for-billing](../_shared/qa-azure-subscriptions-for-billing.md)]
+The only exclusion is for VSTS extensions offered by partners in the Visual Studio Marketplace; these charges will appear on your next "overage" invoice. 
+Typically this happens monthly, but due to historical rules for some EA customers, an overage invoice might not be issued for several months. Please consult 
+a licensing specialist for your EA if you need to know what amount of additional purchases (purchases which are not eligible for Azure Monetary Commitment funds) 
+will trigger an overage invoice.
+
+## How charges are processed
+
+### Q: How are user charges (VSTS User/Basic, Test Manager, and Package Management) and CI/CD concurrent job charges (for both Microsoft-hosted and self-hosted CI/CD) processed?
+A: At the first purchase, we bill a prorated quantity to cover the remaining days in the current month. For instance, if a purchase of 10 Test Manager users  
+was made on April 15, then we would charge 5 units because 50% of the month remains (15 days of a 30-day month). On the first of May, and each month thereafter 
+until you cancel, the full 10 units will be billed.
+
+When you increase the paid quantity later, we also prorate the increased units to cover the remaining days in the current month. So if you bought 1 more Test Manager  
+users on May 10, we would bill roughly 0.677 units (21 days remaining in the 31-day month of May). 
+
+### Q: How do reductions or cancelations work?
+A: When you reduce or cancel user charges or CI/CD charges, you are canceling automatic renewal. The features and/or CI/CD capacity continue through the end of the current 
+calendar month, taking effect on the fist day of the next month.
+
+## Changes in Azure subscription status
+
+### Q: What happens if I cancel my Azure subscription or my credit card expires?
+
+A: When the Azure subscription used for billing on your VSTS account is not in active status--for example, because you cancel it or when the credit card used for billing 
+expires--your VSTS account will revert to the free tier of service, but you'll keep any paid users or paid CI/CD concurrent jobs until next month.
+
+>[!NOTE]
+>You must keep your Azure subscription in good standing to avoid interruptions in paid VSTS services.
+
+###Q:  Where can I check my bill or update billing details on my Azure subscription?
+
+A:  If you're the owner or contributor for the Azure subscription used for billing your VSTS account, you can view your billing details on the 
+[Azure account portal](https://account.azure.com/).
+
+## Other questions
+
+### Q: Why is my VSTS account already linked to an Azure subscription?
+
+A: This happens if someone already set up billing for your VSTS account, either through the Azure portal or while purchasing something for this account via the
+[Visual Studio Marketplace](https://marketplace.visualstudio.com/vsts). Each VSTS account can only use one Azure subscription for billing; 
+charges cannot be split across multiple Azure subscriptions.
+
+### Q:  Can I use the same Azure subscription for billing across multiple VSTS accounts?
+
+A:  Yes, you can use the same Azure subscription for billing across multiple VSTS accounts. But you can't link a single VSTS account to multiple Azure subscriptions.
+
+###Q:	How do I find a project collection administrator?
+
+A: You can find your [project collection administrator](../security/set-project-collection-level-permissions.md) in your VSTS account's security settings.
+
+0.	Go to your VSTS account's security settings. 
+
+	<img alt="Click gear button, Security" src="./_img/account-settings-new-ui.png" style="border: 1px solid #CCCCCC" />
+
+0.	Under **Security**, view your project collection administrators.
+
+	<img alt="Go to Project Collection Administrators, Members" src="./_img/collection-manage-security-groups-new-ui.png" style="border: 1px solid #CCCCCC" />
+
+###Q:	How do I find the account owner?
+
+A: You can find the current owner in your VSTS account settings.
+
+0.	Go to your VSTS account settings.
+
+	<img alt="Go to account settings" src="./_img/account-settings-new-ui.png" style="border: 1px solid #CCCCCC" />
+
+0.	Under **Settings**, find the current owner.
+
+	<img alt="Find current owner" src="./_img/account-owner-new-ui.png" style="border: 1px solid #CCCCCC" />
+
+### Q: Can I buy VSTS from my software reseller?
+
+A:  Yes you can, if your reseller participates in the Cloud Solution Provider (CSP) program. Just ask them.
+
+## Buy VSTS now
+
+* [VSTS users/Basic](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser)
+* [Microsoft-hosted CI/CD](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines) (formerly hosted pipelines)
+* [Self-hosted CI/CD](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines) (formerly private pipelines)
+* [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
+* [Package Management](https://marketplace.visualstudio.com/items?itemName=ms.feed)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
