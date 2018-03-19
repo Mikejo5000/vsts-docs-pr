@@ -7,8 +7,9 @@ ms.assetid: 3A1C529F-DF6B-470A-9047-2758644C3D95
 ms.manager: douge
 ms.author: alewis
 ms.date: 03/15/2018
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: '>= tfs-2015')
+
 
 # Build variables
 
@@ -144,7 +145,7 @@ You can pass environment variables of the build machine into build steps. For ex
             </td>
         </tr>
          <tr>
-[//]: # (::: moniker range="> tfs-2015")
+::: moniker range="> tfs-2015"
             <td>
                 <p style="font-size:80%">
                     Agent.JobStatus
@@ -165,7 +166,7 @@ You can pass environment variables of the build machine into build steps. For ex
                   <li style="font-size:80%">`SucceededWithIssues` (partially successful)</li>
                 </ul>
             </td>
-[//]: # (::: moniker-end)
+::: moniker-end
         </tr>
 		<tr>
             <td>
