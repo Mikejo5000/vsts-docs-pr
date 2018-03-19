@@ -30,7 +30,7 @@ You must be a member of the Windows Administrators security group. If you're upg
 
 2.  On the license terms dialog box, accept the license terms and then choose **Install Now**.
 
-    If you want to install Team Foundation Server to a specific location in the file system, choose the browse button (…) next to the default install location.
+    If you want to install Team Foundation Server to a specific location in the file system, choose the browse button (...) next to the default install location.
 
 ### To run the Team Foundation Server upgrade wizard
 

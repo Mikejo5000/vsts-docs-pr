@@ -31,7 +31,7 @@ To talk to VSTS feeds, you'll need a token on your local machine that Maven can 
           <property>
             <name>Authorization</name>
             <!--The generated token expires on or before 7/19/2017-->
-            <value>Basic Y2Fqb…</value>
+            <value>Basic Y2Fqb...</value>
           </property>
         </httpHeaders>
       </configuration>

@@ -81,7 +81,7 @@ To run the Team Foundation Server installer:
 	> [!TIP]
 	> If you don't want to install all of Team Foundation Server on the server that is running SharePoint Products, launch the tfs_sharePointExtensions.exe file from the SharePoint Extensions folder to install only the Team Foundation Server Extensions for SharePoint Products.
 
-2.  On the license terms dialog box, accept the license terms and then choose **Install Now**. If you want to install Team Foundation Server to a specific location in the file system, choose the browse button **(…)** next to the default install location.
+2.  On the license terms dialog box, accept the license terms and then choose **Install Now**. If you want to install Team Foundation Server to a specific location in the file system, choose the browse button **(...)** next to the default install location.
 
 For more information, see [Configure Team Foundation Server using the advanced configuration](config-tfs-advanced.md) and [Configure Team Foundation Server using the standard configuration](config-tfs-standard.md).
 

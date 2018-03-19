@@ -34,7 +34,7 @@ Run the TFS installation program from the product DVD and then use the **Configu
 
 2.  On the license terms dialog box, accept the license terms and then choose **Install Now**.
 
-    If you want to install Team Foundation Server to a specific location in the file system, choose the browse button (…) next to the default install location.
+    If you want to install Team Foundation Server to a specific location in the file system, choose the browse button (...) next to the default install location.
 
 ### To install SharePoint
 
