@@ -28,7 +28,7 @@ You can also enable this editor for your entire account from the [preview featur
 
 ##What's in the new build editor
 * **Quickly get started by searching for templates.** You can search for one of the out-of-the-box or customized templates and choose
-‘Apply', or simply choose ‘empty template' to get started.
+'Apply', or simply choose 'empty template' to get started.
 
  ![Schematic showing template selection](_img/2017-user-experience/Apply template.png)
 
@@ -38,7 +38,7 @@ directly drag and drop them to your desired location. You can also reorder tasks
 
  ![Schematic showing tasks](_img/2017-user-experience/Tasks.png)
 
-* **Getting started made easy with ‘Process parameters'.** When you start with one of the out-of-the-box templates, 
+* **Getting started made easy with 'Process parameters'.** When you start with one of the out-of-the-box templates, 
 the most important fields across all tasks in the template are displayed in a single view called "Process". You can also link additional fields across all tasks to new or existing 
 process parameters to bubble them to the Process view. [More details](#parameters)
  

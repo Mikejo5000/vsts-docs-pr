@@ -12,7 +12,7 @@ author: willys
 
 #Effective feature isolation on TFVC
 
-Are you planning to implement Team Foundation Version Control‘s feature isolation strategy ([TFVC](../tfvc/overview.md)? You probably have a few questions, such as:
+Are you planning to implement Team Foundation Version Control's feature isolation strategy ([TFVC](../tfvc/overview.md)? You probably have a few questions, such as:
 
 - Is it practical with large development teams?
 - Does it align well with your agile process(es)?
