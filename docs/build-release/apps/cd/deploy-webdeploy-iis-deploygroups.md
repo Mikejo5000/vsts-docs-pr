@@ -6,9 +6,10 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+ms.date: 01/19/2018
 ms.topic: get-started-article
 ---
+[//]: # (monikerRange: ">= tfs-2017")
 
 # Deploy to a Windows Virtual Machine
 
@@ -49,7 +50,7 @@ The configuration varies depending on the type of app you are deploying.
 
 Follow the instructions in [this topic](https://github.com/tjanczuk/iisnode) to install and configure IISnode on IIS servers.
 
-[!INCLUDE [temp](../_shared/create-deployment-group.md)]
+[!INCLUDE [create-deployment-group](../_shared/create-deployment-group.md)]
 
 ## Define your CD release process
 

@@ -6,8 +6,9 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/17/2017
+ms.date: 01/19/2018
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
 # Test: Publish Test Results
 
@@ -23,8 +24,8 @@ including [JUnit](https://github.com/windyroad/JUnit-Schema/blob/master/JUnit.xs
 Visual Studio Test (TRX), and
 [xUnit 2](https://xunit.github.io/docs/format-xml-v2.html). 
 If you use the built-in tasks such as
-[Visual Studio Test](visual-studio-test.md) or [Run Functional Tests](run-functional-tests.md) to run tests, results are
-automatically published and you do not need a separate publish test results task.  
+[Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTest/README.md)
+to run tests, results are automatically published and you do not need a separate publish test results task.  
 
 ## Demands
 
@@ -47,6 +48,26 @@ The build agent must have the following capabilities:
 | **Advanced - Upload test results files** | When selected, the task will upload all the test result files as attachments to the test run. |
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
 
+[//]: # (::: moniker range="vsts")
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: PublishTestResults@2
+  inputs:
+#   testRunner: JUnit # JUnit (default), NUnit, VSTest, XUnit
+#   testResultsFiles: **\TEST-*.xml
+#   searchFolder: $(System.DefaultWorkingDirectory)
+#   mergeTestResults: false
+    testRunTitle:
+    platform:
+    configuration:
+#   publishRunAttachments: true
+```
+
+[//]: # (::: moniker-end)
 
 ## More Information
 
@@ -54,9 +75,7 @@ The build agent must have the following capabilities:
 
 ## Related tasks
 
-* [Visual Studio Test](visual-studio-test.md)  
-* [Visual Studio Test Agent Deployment](visual-studio-test-agent-deployment.md)  
-* [Run Functional Tests](run-functional-tests.md)
+* [Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTest/README.md)  
 * [Publish Code Coverage Results](publish-code-coverage-results.md)
 
 ## Q&A

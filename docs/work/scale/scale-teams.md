@@ -1,5 +1,6 @@
 ---
-title: Scale and manage work across the enterprise | VSTS & TFS
+title: Scale and manage work across the enterprise 
+titleSuffix: VSTS & TFS
 description: Scale your team project by adding teams  
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
@@ -7,7 +8,7 @@ ms.assetid:
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article
-ms.date: 08/15/2017
+ms.date: 02/05/2018
 ---
 
 
@@ -15,7 +16,7 @@ ms.date: 08/15/2017
 <a id="collection-project-team-structure">  </a>
 ## Support a growing organization, manage work across the enterprise
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 How do you manage work across the enterprise using Agile tools?  How will you scale your Agile tools to support your growing enterprise?  
 

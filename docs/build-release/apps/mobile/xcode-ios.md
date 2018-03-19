@@ -9,6 +9,7 @@ ms.author: alewis
 ms.date: 08/04/2016
 ms.topic: get-started-article
 ---
+[//]: # (monikerRange: '>= tfs-2017')
 
 # Build your Xcode app
 
@@ -20,11 +21,11 @@ Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide a hi
 
 [!INCLUDE [include](../../_shared/ci-cd-prerequisites-vsts.md)]
 
-* While the simplest way to try this quickstart is to use a VSTS account, you can also use a TFS server instead of a VSTS account.
+* While the simplest way to try this quickstart is to use a VSTS account, you can also use a TFS server instead.
 
-* You need a build agent configured on a Mac machine. You may use one of the following:
+* First, you will need a build agent configured on a Mac machine. You may use one of the following:
+
   1. The **Hosted macOS Preview** agent provided by VSTS, or
-
   1. Provide your own agent by opening the macOS Terminal app on your Mac and following these [setup instructions](../../actions/agents/v2-osx.md). The agent will automatically register itself with VSTS / TFS when you start it for the first time. Your Mac also needs to have Node.js, Xcode, and [xcpretty](https://github.com/supermarin/xcpretty) (for testing) installed.
 
 ## Get the sample code
@@ -97,7 +98,7 @@ The sample provided here is an iOS app, but the concepts described here translat
 
 ## Troubleshooting tips
 
-If you encounter a "User interaction not allowed" error when running the agent as a launch agent, on the **Xcode** task, you will either need enable the "Unlock default keychain" option, or switch to referencing signing certificates using a file. See [Sign your mobile app](secure-certs.md) for details.
+If you encounter a "User interaction not allowed" error when running the agent as a launch agent, on the **Xcode** task, you will either need enable the "Unlock default keychain" option, or switch to referencing signing certificates using a file. See [Sign your mobile app](app-signing.md) for details.
 
 If you run into issues with your tests hanging and/or not being able to start the iOS Simulator at times, you can add the **Command Line** task to run the `killall` tool with "Simulator" as an argument (i.e. `killall "Simulator"`). This will force the simulator to shut down in the event it is hung. Exercise care when running the command if you have multiple agents running for the same user and that you do not accidently kill other processes.
 
@@ -107,7 +108,7 @@ If you run into issues with your tests hanging and/or not being able to start th
 
 ## Next steps
 
-To sign your application with a certificate and provisioning profile as part of CI, see [Sign your mobile app](secure-certs.md).
+To sign your application with a certificate and provisioning profile as part of CI, see [Sign your mobile app](app-signing.md).
 
 If you plan to use your own Xcode project for this quickstart, an additional step is required to configure your project for a CI environment. Mark a scheme of your Xcode project as "Shared" and add it to source control to be used during your CI builds.  Follow these steps:
 

@@ -4,7 +4,7 @@ Deployment groups in VSTS make it easier to organize the servers that you want t
 
 1. Open the VSTS web portal (`https://{your-account}.visualstudio.com`), navigate to the **Build and Release** hub, and then click **Deployment groups**.
 
-1. Click **Add Deployment group** (or **New** if there are already deployment groups in place.
+1. Click **Add Deployment group** (or **New** if there are already deployment groups in place).
 
 1. Enter a name for the group, such as *myIIS*, and then click **Create**.
 
@@ -27,6 +27,6 @@ Deployment groups in VSTS make it easier to organize the servers that you want t
 
 1. When the script is done, it displays the message *Service vstsagent.account.computername started successfully*.
 
-1. On the **Deployment groups** page of the **Build and Release** hub in VSTS, open the *myIIS* deployment group. On the **Machines** tab, verify that your VM is listed.
+1. On the **Deployment groups** page of the **Build and Release** hub in VSTS, open the *myIIS* deployment group. On the **Targets** tab, verify that your VM is listed.
 
  ![Screenshot showing update to code](./_img/windows-deployment-group.png)

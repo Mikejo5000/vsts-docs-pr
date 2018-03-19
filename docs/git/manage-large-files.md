@@ -6,8 +6,9 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-git 
 ms.manager: douge
 ms.author: sdanie
-ms.date: 08/04/2016
+ms.date: 03/14/2018
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
 # Manage and store large files in Git
 
@@ -111,6 +112,10 @@ If you use TFS, Git may be using the Kerberos protocol to authenticate.
 (This does not apply to VSTS, which uses a different form of authentication.)
 LFS does not support Kerberos, so you will get errors which say "Your user name must be of the form DOMAIN\user".
 To get out of this state, you will need to remove the Kerberos credential and let Git pick up a new NTLM credential instead.
+
+> [!NOTE]
+> Credentials sent via HTTP will be passed in clear text.
+> [Ensure your instance of TFS is configured for HTTPS](../security/websitesettings.md), and do not use HTTP with Git-LFS.
 
 0. Open the Windows Credential Manager. On Windows 10, you can press Start and then type "Credential Manager".
 

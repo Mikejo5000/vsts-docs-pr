@@ -20,9 +20,9 @@ You define area and iteration paths for a team project. Teams can then choose wh
 
 The areas and iterations you see depend on the process you used to create your team project. Here we show the defaults defined for the Scrum process. No dates are set. You set dates to correspond to your sprint or release schedules.
 
-> [!div class="mx-tdBreakAll"]  
-> |Areas|Iterations| 
-> |-------------|----------|  
+> [!div class="mx-tdBreakAll"] 
+> |Areas|Iterations| 
+> |-------------|----------| 
 > |<img src="_img/areas-iterations-areas-intro-ts-2016.png" alt="A set of sample area paths" style="border: 1px solid #C3C3C3;" /> | <img src="_img/areas-iterations-iterations-intro-ts-2016.png" alt="Default iterations, Scrum process" style="border: 1px solid #C3C3C3;" /> |
   
 ## How many areas should a team define?
@@ -75,7 +75,7 @@ The **Area Path** and **Iteration Path** fields, [data type=TreePath](reference/
 | Restriction type                 | Restriction                                 | 
 | -------------------------------- | ------------------------------------------- | 
 | Node length | Must not contain more than 255 characters | 
-| Special characters for nodes | Must not contain Unicode control characters<br/>Must not contain any of the following characters: \ / $ ? * : " & > < # % + ,<br/>Must not contain characters that the [local file system prohibits](https://msdn.microsoft.com/library/aa365247.aspx). | 
+| Special characters for nodes | Must not contain Unicode control characters<br/>Must not contain any of the following characters: \ / $ ? * : " & > < # % + <br/>Must not contain characters that the [local file system prohibits](https://msdn.microsoft.com/library/aa365247.aspx). |
 | Reserved names | Must contain more than a period (.) or two periods (..)<br/>Must not be a [system-reserved name](https://msdn.microsoft.com/library/aa365247.aspx) such as PRN, COM1, COM2, COM3, COM4, COM5, COM6, COM7, COM8, COM9, COM10, LPT1, LPT2, LPT3, LPT4, LPT5, LPT6, LPT7, LPT8, LPT9, NUL, CON, or AUX<br/>| 
 | Path length | Must contain fewer than 4,000 Unicode characters | 
 | Path hierarchy depth | Must be fewer than 14 levels deep | 

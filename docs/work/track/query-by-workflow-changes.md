@@ -6,12 +6,12 @@ ms.prod: vs-devops-alm
 ms.assetid: 1FD042F2-D503-40A3-A6C7-1E25A0F664C6  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/18/2017
+ms.date: 02/05/2018  
 ---
 
 # Query by assignment, workflow or Kanban board changes
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 Workflow states support tracking the status of work as it moves from a new state to a closed or a done state. Kanban query fields support tracking the status of work as it moves from one column or swimlane to another on the Kanban board. 
 
@@ -31,7 +31,7 @@ For example, you can find all work items that were closed but then reactivated. 
 You can also use the Activated By and Activated Date fields, or other workflow fields.
 
 >[!TIP]  
->Not all fields are valid for all WITs. Jump to [Workflow and Kanban query fields](#Workflow and Kanban board fields) for the set of fields you can include in queries and which WITs they apply to.  
+>Not all fields are valid for all WITs. Jump to [Workflow and Kanban query fields](#workflow-fields) for the set of fields you can include in queries and which WITs they apply to.  
 
 If you're new to creating queries, see [Use the query editor to list and manage queries](using-queries.md).  
 
@@ -467,9 +467,9 @@ For information about data types and default field attributes, see [Work item da
 
 ##Related notes
 
-For more query examples, see [Create managed queries](example-queries.md).  
+For more query examples, see [Create managed queries](example-queries.md). 
 
-<a id="assigned_to-field">  </a>
 
 [!INCLUDE [temp](../_shared/rest-apis-queries.md)]
  
+[!INCLUDE [temp](../../_shared/help-support-shared.md)] 

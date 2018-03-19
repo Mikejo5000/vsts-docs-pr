@@ -9,6 +9,7 @@ ms.manager: douge
 ms.author: alewis
 ms.date: 12/20/2017
 ---
+[//]: # (monikerRange: '>= tfs-2017')
 
 # Build your Node.js app with Gulp
 
@@ -364,7 +365,7 @@ See [Deploy to a Linux Virtual Machine](../cd/deploy-linuxvm-deploygroups.md).
 > [!IMPORTANT]
 > Make sure you followed the **[deployment instructions above](#deploy)** with the **Container** tab selected.
 
-See [Build and push a container for your app](../containers/build.md).
+See [Build and push a Docker image](../containers/build.md).
 
 ---
 

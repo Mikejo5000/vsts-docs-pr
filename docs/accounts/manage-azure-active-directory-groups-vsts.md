@@ -5,9 +5,10 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
 ms.assetid: 882E6E07-F407-478A-9DCC-9324493CBE11
 ms.manager: douge
-ms.author: billchi
+ms.author: chcomley
 ms.date: 10/6/2017
 ---
+[//]: # (monikerRange: 'vsts')
 
 # VSTS: Access with Azure Active Directory (Azure AD) groups
 

@@ -2,20 +2,22 @@
 title: Create a CI/CD pipeline for your existing code with the Azure DevOps Project | VSTS Tutorial
 description: The DevOps Project makes it easy to get started on Azure. It helps you use your own code and GitHub repository to launch an app on an Azure service of your choice in few quick steps.
 services: vsts
-documentationcenter: ''
-author: mlearned
-manager: douge
+documentationcenter: vs-devops-build
+ms.author: mlearned
+ms.manager: douge
 editor: ''
-
 ms.assetid:
 ms.workload: web
+ms.prod: vs-devops-alm
+ms.technology: vs-devops-build
 ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: tutorial
-ms.date: 11/13/2017
+ms.date: 03/17/2018
 ms.author: mlearned
 ms.custom: mvc
 ---
+[//]: # (monikerRange: 'vsts')
 
 # Create a CI/CD pipeline for your existing code with the Azure DevOps Project
 
@@ -148,7 +150,7 @@ With Azure Application insights, you can easily monitor your application's perfo
 
 ## Clean up resources
 
-When no longer needed, you can delete the Azure App service and related resources created in this quickstart.
+When no longer needed, you can delete the Azure App service and related resources created in this quickstart by using the **Delete** functionality on the Azure DevOps Project dashboard.
 
 ## Next steps
 

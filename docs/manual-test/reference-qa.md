@@ -6,8 +6,9 @@ ms.technology: vs-devops-test-manual
 ms.assetid: C9467223-4513-4F46-812C-44FFE2B27F28
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+ms.date: 01/18/2018
 ---
+[//]: # (monikerRange: ">= tfs-2015")
 
 # FAQs for manual testing
 

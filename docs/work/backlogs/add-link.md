@@ -1,19 +1,20 @@
 ---
-title: Add links to several work items | VSTS & TFS
+title: Add links to several work items 
+titleSuffix: VSTS & TFS
 description: Link several work items to other work items or to a new git branch in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)   
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 7130A14B-C760-4622-B97A-8DA27A1B3D02  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 07/25/2017  
 ms.topic: get-started-article
+ms.date: 07/25/2017 
 ---
 
 
 # Add link to work items  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 You can add a link to a work item from within the work item form or from a backlog or query results list. From a backlog or query results list, you can [select multiple work items](bulk-modify-work-items.md#multi-select) and then link them to a new or existing work item. In general, use the bulk edit to update several work items to link to the same work item, either new or existing. 
 

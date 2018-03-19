@@ -1,5 +1,6 @@
 ---
-title: Quickly link to work items in discussions & pull request in VSTS & TFS
+title: Use #ID to link work items in discussions & pull requests 
+titleSuffix: VSTS & TFS
 description: Link to work items in discussions and pull requests 
 ms.prod: vs-devops-alm
 ms.technology: collaborate
@@ -40,6 +41,12 @@ To further filter the list, continue entering keywords until you've found a matc
 ><b>Feature availability: </b>The **#ID** special control has been extended to additional objects when working from VSTS and TFS 2015.2 and later versions.   
 
 You can also use the **#ID** control in pull request discussions, commit comments, changeset comments, and shelveset comments. 
+
+## Link to work items from a Wiki page
+ 
+You can use the **#ID** control to link to a work item from within a Wiki page.   
+
+To learn more about the built-in wiki, see [Add & edit wiki pages](../collaborate/add-edit-wiki.md). 
 
 
 ## Related notes

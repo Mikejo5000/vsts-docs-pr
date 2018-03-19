@@ -6,8 +6,9 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
-ms.date: 11/14/2017
+ms.date: 01/19/2018
 ---
+[//]: # (monikerRange: "vsts")
 
 # Gates
 
@@ -15,7 +16,9 @@ ms.date: 11/14/2017
 
 Gates allow you to query a range of external services, and wait for a positive input from all of
 them before continuing with a deployment to an environment. When a release is created from a definition
-that contains gates, the deployment stops until the health signals from all the configured services are successful.   
+that contains gates, the deployment stops until the health signals from all the configured services are successful.
+
+>You may need to enable Gates in your profile [Preview features](../../../../../collaborate/preview-features.md) list. 
 
 ## Define a gate for an environment
 
@@ -53,28 +56,33 @@ that contains gates, the deployment stops until the health signals from all the 
    * **Work item query**: Ensure the number of matching work items returned from a query is within a threshold.
      For more details, see [Work item query task](../../../../tasks/utility/work-item-query.md).
 
+   > Also see the tutorial [Use approvals and gates to control your deployment](../../../../actions/deploy-using-approvals.md)
+     and the blog post [Twitter sentiment as a release gate](https://blogs.msdn.microsoft.com/bharry/2017/12/15/twitter-sentiment-as-a-release-gate/), which includes an example of a gate that uses an Azure function.
+     A [library with examples](https://github.com/Microsoft/vsts-rm-extensions/tree/master/ServerTaskHelper/DistributedTask.ServerTask.Remote.Common) is available to help you create your own custom gate tasks.
+
 1. Select and enter the required gate arguments, depending on the type of gate you chose.
 
    ![Setting the arguments for a gate function](_img/gated-releases-03.png)
 
-1.  Set the options that apply to all the gates you added:
+1.  Set the evaluation options that apply to all the gates you added:
 
-   * **Timeout**. The maximum evaluation period for all gates. 
-     The deployment will be rejected if the timeout is reached before
-     all gates succeed during the same sampling interval. 
-
-   * **Sampling interval**. The time interval between each evaluation of 
+   * **Time between re-evaluation of gates**. The time interval between each evaluation of 
      all the gates. At each sampling interval, new requests are sent concurrently to each gate
      for fresh results. The sampling interval must be greater than the longest
      typical response time of any configured gate to allow time for all responses to be received.     
 
-   * **Execution order**. Select the required order of execution for gates and approvals if you have configured both.
+   * **Timeout after which gates fail**. The maximum evaluation period for all gates. 
+     The deployment will be rejected if the timeout is reached before all gates succeed during the same sampling interval. 
+
+   * **Gates and approvals**. Select the required order of execution for gates and approvals if you have configured both.
      For pre-deployment conditions, the default is to prompt for manual (user) approvals first, then evaluate gates afterwards.
      This saves the system from evaluating the gate functions if the release is rejected by the user. 
      For post-deployment conditions, the default is to evaluate gates and prompt for manual approvals only when all gates are successful.
      This ensures the approvers have all the information required for a sign-off. 
 
    ![Selecting the gate and approval evaluation order](_img/gated-releases-04.png)
+   
+   > Watch [this video on Channel 9](https://channel9.msdn.com/Events/Connect/2017/T181) to see gates in action.
 
 ### Gate evaluation flow examples
 
@@ -105,14 +113,13 @@ about the evaluation of all the gates you configured for the release.
 
 * [Approvals and gates overview](index.md)
 * [Manual intervention](../../../../tasks/utility/manual-intervention.md)
+* [Use approvals and gates to control your deployment](../../../../actions/deploy-using-approvals.md)
 * [Environments](../environments.md)
 * [Triggers](../triggers.md)
 
 ## See also
 
-* [Work with release definitions](../../../../actions/work-with-release-definitions.md)
-* [View and manage releases](../../../../actions/view-manage-releases.md)
-* [Monitor releases and debug deployment issues](../../../../actions/debug-deployment-issues.md)
+* [Video: Deploy quicker and safer with gates in VSTS](https://channel9.msdn.com/Events/Connect/2017/T181)
 * [Configure your release pipelines for safe deployments](https://blogs.msdn.microsoft.com/visualstudioalm/2017/04/24/configuring-your-release-pipelines-for-safe-deployments/)
 
 [!INCLUDE [rm-help-support-shared](../../../../_shared/rm-help-support-shared.md)]

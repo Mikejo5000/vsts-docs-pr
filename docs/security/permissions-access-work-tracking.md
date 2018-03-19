@@ -8,11 +8,13 @@ ms.manager: douge
 ms.author: kaelli
 ms.date: 10/23/2017
 ---
+[//]: # (monikerRange: '>= tfs-2013')
+
+# Permissions and access for work tracking
 
 
-# Permissions and access for work tracking   
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 You can use the majority of work tracking functions and features that VSTS or TFS provides if you are added as a team member, which adds you to the Contributors group. The most common built-in groups include Readers, Contributors, and Project Administrators. These groups are assigned the default permissions for tracking work as listed below.
 
@@ -24,14 +26,14 @@ The team administrator role supports configuration of team settings. To be added
 
 ## Default work tracking permissions and access 
 
-[!INCLUDE [temp](_shared/work.md)]
+[!INCLUDE [temp](_shared/work.md)]
 
 
 ## Test management permissions   
 
 Test plans, test suites, test cases and other test artifacts are specific work item types that support manual and exploratory testing. You set [test permissions at the team project level](set-project-collection-level-permissions.md) from the admin context Security page.  
 
-[!INCLUDE [temp](_shared/test.md)]
+[!INCLUDE [temp](_shared/test.md)]
 
 
 Area permissions for web-based test case management and test execution control access to the following actions.  
@@ -190,7 +192,8 @@ The following table summarizes a subset of the default permissions assigned to t
 
 
 
-<a id="stakeholder-access"></a>  
+<a id="stakeholder-access"></a>
+
 ## Stakeholder access
 
 Stakeholder access supports business owners and analysts and other team members who don't contribute to code, build, and test activities. They contribute by adding ideas to the backlog, adding context and information to work items, and reviewing status and progress. All members of an organization who don't use Visual Studio but want to contribute to work item tracking and monitor progress can be assigned as a stakeholder. To learn more about stakeholder access, see [Work as a stakeholder](get-started-stakeholder.md). 

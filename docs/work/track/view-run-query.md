@@ -1,13 +1,14 @@
 ---
 title: View or run a query 
-description: View a list of queries or run a query using Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)
+titleSuffix: VSTS & TFS
+description: View, run, or favorite a query using Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-wit
 ms.assetid:  
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: kaelli
-ms.date: 09/29/2017  
+ms.date: 03/06/2018  
 ---
 
 
@@ -29,7 +30,6 @@ Use this topic to learn:
 > * How to view all or favorited queries  
 > * How to filter a query list       
 > * How to run a query 
-    
 -->
 
 ## Open the Queries page from the web portal
@@ -133,7 +133,7 @@ Choose **Copy query URL**. To email query items, see [Copy a list of work items]
 
 #### Related topics
 
-
-- [Change column options](https://docs.microsoft.com/en-us/vsts/work/backlogs/set-column-options?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json)
+- [Change column options](../backlogs/set-column-options.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json)
 - [New Queries Experience](queries-preview.md) 
 - [Set personal or team favorites](../../collaborate/set-favorites.md) 
+- [Query keyboard shortcuts](queries-keyboard-shortcuts.md)

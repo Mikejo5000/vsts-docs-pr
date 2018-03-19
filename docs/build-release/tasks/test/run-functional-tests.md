@@ -6,27 +6,41 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/17/2017
+ms.date: 01/19/2018
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
 # Test: Run Functional Tests
 
-[!INCLUDE [temp](../../_shared/version-tfs-2015-update.md)]
+[//]: # (::: moniker range=">= tfs-2018")
+
+This task is deprecated in VSTS and TFS 2018 and later. Use version 2.x or higher of the
+[Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTest/README.md)
+task together with [phases](../../concepts/process/phases.md)
+to run unit and functional tests on the universal agent.
+
+For more details, see [Testing with unified agents and phases](../../test/test-with-unified-agent-and-phases.md).
+
+[//]: # (::: moniker-end)
+
+[//]: # (monikerRange: '>= tfs-2015 <= tfs-2017')
+
+## TFS 2017 and earlier
 
 ![icon](_img/run-functional-tests-icon.png)
 Run Coded UI tests, Selenium tests, and functional tests on a set of machines using the test agent.
 Use this task when you want to run tests on remote machines, and you cannot run
 tests on the build machine.
 
-## Demands and prerequisites
+### Demands and prerequisites
 
 This task must be preceded by a **Visual Studio Test Agent Deployment** task.
 
-## Arguments
+### Arguments
 
 | Argument | Description |
 | -------- | ----------- |
-| **Machines** | A comma-separated list of machine FQDNs or IP addresses, optionally including the port number. Can be:<br />- The name of an <a href="https://azure.microsoft.com/en-gb/documentation/articles/resource-group-overview/">Azure Resource Group</a>.<br />- A comma-delimited list of machine names. Example: `dbserver.fabrikam.com,dbserver_int.fabrikam.com:5986,192.168.34:5986`<br />- An output variable from a previous task. |
+| **Machines** | A comma-separated list of machine FQDNs or IP addresses, optionally including the port number. The maximum is 32 machines (or 32 agents). Can be:<br />- The name of an <a href="https://azure.microsoft.com/en-gb/documentation/articles/resource-group-overview/">Azure Resource Group</a>.<br />- A comma-delimited list of machine names. Example: `dbserver.fabrikam.com,dbserver_int.fabrikam.com:5986,192.168.34:5986`<br />- An output variable from a previous task. |
 | **Test Drop Location** | Required. The location on the test machine(s) where the test binaries have been copied by a <a href="../deploy/windows-machine-file-copy.md">Windows Machine File Copy</a> or <a href="../deploy/azure-file-copy.md">Azure File Copy</a> task. System environment variables from the test agent machines can be used to specify the drop location. Examples: `c:\tests` and `%systemdrive%\Tests` |
 | **Test Selection** | Required. Whether the tests are to be selected from test assemblies or from a test plan. |
 | **Test Assembly** | Required when **Test Selection** is set to **Test Assembly**. The test assemblies from which the tests should be executed. Paths are relative to the sources directory.<br />- Separate multiple paths with a semicolon.<br />- Default is `**\*test*.dll`<br />- For JavaScript tests, enter the path and name of the **.js** files containing the tests.<br />- Wildcards can be used. Example: `**\commontests\*test*.dll; **\frontendtests\*test*.dll` |
@@ -45,7 +59,9 @@ This task must be preceded by a **Visual Studio Test Agent Deployment** task.
 | **Application Under Test Machines** | A list of the machines on which the Application Under Test (AUT) is deployed, or on which a specific process such as W3WP.exe is running. Used to collect code coverage data from these machines. Use this in conjunction with the **Code Coverage Enabled** setting. The list can be a comma-delimited list of machine names or an output variable from an earlier task. |
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
 
-## Scenarios
+> The task supports a maximum of 32 machines/agents.
+
+### Scenarios
 
 Typical scenarios include:
 
@@ -107,13 +123,13 @@ These scenarios are supported for:
   - Configuring a test agent and running tests under a non-administrative
     account or under a service account is not supported.
 
-## More information
+### More information
 
 * [Using the Visual Studio Agent Deployment task on machines not connected to the internet](https://blogs.msdn.microsoft.com/visualstudioalm/2017/05/05/using-visual-studio-agent-deployment-task-on-machines-not-connected-to-the-internet/)
 * [Set up environments to run continuous test tasks with your builds](../../test/set-up-continuous-test-environments-builds.md)
 * [Testing in Continuous Integration and Continuous Deployment Workflows](https://blogs.msdn.microsoft.com/visualstudioalm/2015/05/29/testing-in-continuous-integration-and-continuous-deployment-workflows/)
 
-## Related tasks
+### Related tasks
 
 * [Deploy Azure Resource Group](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureResourceGroupDeployment)
 * [Azure File Copy](https://github.com/Microsoft/vso-agent-tasks/tree/master/Tasks/AzureFileCopy)
@@ -121,7 +137,7 @@ These scenarios are supported for:
 * [PowerShell on Target Machines](../deploy/powershell-on-target-machines.md)
 * [Visual Studio Test Agent Deployment](visual-studio-test-agent-deployment.md)
 
-## Q&A
+### Q&A
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [qa-test-azurerg-machine-group](../_shared/qa-test-azurerg-machine-group.md)]
@@ -135,5 +151,7 @@ These scenarios are supported for:
 [!INCLUDE [qa-versions](../../_shared/qa-versions.md)]
 
 <!-- ENDSECTION -->
+
+[//]: # (::: moniker-end)
 
 [!INCLUDE [test-help-support-shared](../../_shared/test-help-support-shared.md)]

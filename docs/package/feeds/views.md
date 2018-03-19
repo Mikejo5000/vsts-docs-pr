@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: amullans
 ms.date: 10/27/2016
 ---
+[//]: # (monikerRange: '>= tfs-2017') 
 
 # Communicate package quality with release views
 
@@ -18,7 +19,7 @@ Views filter the feed to a subset of packages that meet criteria defined by the 
 Right now, the only [kind of view](#views-for-other-scenarios) is a *release view*. 
 Release views contain the subset of the feed's package-versions that have been *promoted* into that view.
 
-*If you've never used release views, read more about [why and how they're useful for package continuous integration and delivery](../concepts/feeds/views.md) before getting started.*
+*If you've never used release views, read more about [why and how they're useful for package continuous integration and delivery](../concepts/views.md) before getting started.*
 
 ## Get started with release views
 

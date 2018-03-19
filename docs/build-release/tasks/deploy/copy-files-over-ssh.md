@@ -6,8 +6,9 @@ ms.technology: vs-devops-build
 ms.assetid: 7ff495cf-2d1f-4baa-a052-d176bd507ef4
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/17/2017
+ms.date: 01/19/2018
 ---
+[//]: # (monikerRange: '>= tfs-2017')
 
 # Deploy: Copy Files Over SSH
 
@@ -35,6 +36,27 @@ Supported protocols for file transfer are SFTP and SCP via SFTP.
 | **Advanced - Overwrite** | If this option is selected (the default), existing files in the target folder will be replaced. |
 | **Advanced - Flatten folders** | If this option is selected, the folder structure is not preserved and all the files will be copied into the specified target folder on the remote machine. |
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
+
+[//]: # (::: moniker range="vsts")
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: CopyFilesOverSSH@0
+  inputs:
+    sshEndpoint:
+    sourceFolder:
+#   contents: **
+    targetFolder:
+#   cleanTargetFolder: false
+#   overwrite: true
+#   failOnEmptySource: false
+#   flattenFolders: false
+```
+
+[//]: # (::: moniker-end)
 
 ## See also
 

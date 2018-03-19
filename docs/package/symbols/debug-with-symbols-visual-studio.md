@@ -29,16 +29,20 @@ Click **Connect** in the above dialog. The VSTS Symbol Server is now remembered 
 
 ![Add VSTS Symbol Server in VS Debugger](_img/vsdebugger2.png)
 
-## Debugging optimized modules 
+## Debugging optimized modules
 
 If you're debugging an optimized module (e.g. something that was built with the `Release` configuration) and you haven't changed the default "Enable Just My Code" setting in Options, Visual Studio will not automatically fetch symbols for the optimized module. If this is the case, the Modules window will have a warning message.
 
 To debug the module, you can either:
-- Open the Modules window, right-click the module, and choose “Load Symbols” (recommended)
+- Open the Modules window, right-click the module, and choose "Load Symbols" (recommended)
 - In Options > Debugging > General, uncheck "Enable Just My Code"
 
-## Source server and source link support
+## Source Link support
 
 We recommend checking "Enable Source Link support" in Options > Debugging > General (it's checked by default).
 
 If you choose to enable source server support, please consider the [security implications](https://docs.microsoft.com/en-us/visualstudio/debugger/source-server-security-alert) before doing so.
+
+### Portable PDBs and Source Link
+
+If you're using [Portable PDBs](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md), [Source Link](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/source_link.md) cannot currently authenticate to private source repositories (like VSTS), and thus will not work.

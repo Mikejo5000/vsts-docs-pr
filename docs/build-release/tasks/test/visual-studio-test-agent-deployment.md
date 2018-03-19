@@ -6,12 +6,26 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/17/2017
+ms.date: 01/19/2018
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
 # Test: Visual Studio Test Agent Deployment
 
-[!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
+[//]: # (::: moniker range=">= tfs-2018")
+
+This task is deprecated in VSTS and TFS 2018 and later. Use version 2.x or higher of the
+[Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTest/README.md)
+task together with [phases](../../concepts/process/phases.md)
+to run unit and functional tests on the universal agent.
+
+For more details, see [Testing with unified agents and phases](../../test/test-with-unified-agent-and-phases.md).
+
+[//]: # (::: moniker-end)
+
+[//]: # (monikerRange: '>= tfs-2015 <= tfs-2017')
+
+## TFS 2017 and earlier
 
 ![icon](_img/visual-studio-test-agent-deployment-icon.png)
 Deploy and configure the test agent to run tests on a set of machines.
@@ -20,7 +34,7 @@ The test agent deployed by this task can collect data
 or run distributed tests using the [Visual Studio Test](visual-studio-test.md)
 task.
 
-## Demands and prerequisites
+### Demands and prerequisites
 
 This task requires the target computer to have:
 
@@ -28,15 +42,15 @@ This task requires the target computer to have:
 * .NET 4.5 or higher
 * PSRemoting enabled by running the [Enable-PSRemoting](https://technet.microsoft.com/en-us/library/hh849694.aspx) PowerShell script
 
-### Windows Remote Management (WinRM)
+#### Windows Remote Management (WinRM)
 
 [!INCLUDE[deploy-winrm-setup](../_shared/deploy-winrm-setup.md)]
 
-## Arguments
+### Arguments
 
 | Argument | Description |
 | -------- | ----------- |
-| **Machines** | A comma-separated list of machine FQDNs or IP addresses, optionally including the port number. Can be:<br />- The name of an <a href="https://azure.microsoft.com/en-gb/documentation/articles/resource-group-overview/">Azure Resource Group</a>.<br />- A comma-delimited list of machine names. Example: `dbserver.fabrikam.com,dbserver_int.fabrikam.com:5986,192.168.34:5986`<br />- An output variable from a previous task. |
+| **Machines** | A comma-separated list of machine FQDNs or IP addresses, optionally including the port number. The maximum is 32 machines (or 32 agents). Can be:<br />- The name of an <a href="https://azure.microsoft.com/en-gb/documentation/articles/resource-group-overview/">Azure Resource Group</a>.<br />- A comma-delimited list of machine names. Example: `dbserver.fabrikam.com,dbserver_int.fabrikam.com:5986,192.168.34:5986`<br />- An output variable from a previous task. |
 | **Admin Login** | The username of either a domain or a local administrative account on the target host(s). This parameter is required when used with a list of machines. It is optional when specifying a machine group and, if specified, overrides the credential settings defined for the machine group.<br />- Formats such as **username**, **domain\username**, **machine-name\username**, and **.\username** are supported.<br />- UPN formats such as **username@domain.com** and built-in system accounts such as **NT Authority\System** are not supported. |
 | **Password** | The password for the administrative account specified above. This parameter is required when used with a list of machines. It is optional when specifying a machine group and, if specified, overrides the credential settings defined for the machine group. Consider using a secret variable global to the build or release definition to hide the password. Example: `$(passwordVariable)` |
 | **Protocol** | The protocol that will be used to connect to the target host, either **HTTP** or **HTTPS**. |
@@ -49,7 +63,9 @@ This task requires the target computer to have:
 | **Advanced - Update test agent** | If set, and the test agent is already installed on the test machines, the task will check if a new version of the test agent is available. |
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
 
-## Supported scenarios
+> The task supports a maximum of 32 machines/agents.
+
+### Supported scenarios
 
 Use this task for:
 
@@ -107,24 +123,24 @@ The supported options for these scenarios are:
     supported. Use the [Visual Studio Test task](visual-studio-test.md) 
     to run these tests.
 
-## Example
+### Example
 
 * [Testing in Continuous Integration and Continuous Deployment Workflows](http://blogs.msdn.com/b/visualstudioalm/archive/2015/06/28/10618066.aspx)
 
-## More information
+### More information
 
 * [Using the Visual Studio Agent Deployment task on machines not connected to the internet](https://blogs.msdn.microsoft.com/visualstudioalm/2017/05/05/using-visual-studio-agent-deployment-task-on-machines-not-connected-to-the-internet/)
 * [Set up automated testing for your builds](https://msdn.microsoft.com/Library/vs/alm/Test/automated-tests/set-up-automated-testing-builds)
 * [Source code for this task](https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/DeployVisualStudioTestAgent/README.md)
 
-## Related tasks
+### Related tasks
 
 * [Visual Studio Test](visual-studio-test.md)
 * [Azure File Copy](../deploy/azure-file-copy.md)
 * [Windows Machine File Copy](../deploy/windows-machine-file-copy.md)
 * [PowerShell on Target Machines](../deploy/powershell-on-target-machines.md)
 
-## Q&A
+### Q&A
 <!-- BEGINSECTION class="md-qanda" -->
 
 #### When would I use the Enable Data Collection Only option?
@@ -145,4 +161,10 @@ machines.
 
 <!-- ENDSECTION -->
 
+[//]: # (::: moniker-end)
+
 [!INCLUDE [test-help-support-shared](../../_shared/test-help-support-shared.md)]
+
+
+
+

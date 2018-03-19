@@ -1,5 +1,6 @@
 ---
-title: On-premises XML process model | TFS
+title: On-premises XML process model
+titleSuffix: TFS
 description: Guide to configuring and customizing work tracking features for TFS and the on-premises process model  
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
@@ -14,7 +15,7 @@ ms.date: 08/02/2017
 
 # On-premises XML process model 
 
-[!INCLUDE [temp](../_shared/version-header-tfs-only.md)]
+[!INCLUDE [temp](../_shared/version-header-tfs-only.md)]
 
 
 > [!NOTE]   

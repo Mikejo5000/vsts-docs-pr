@@ -6,8 +6,9 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+ms.date: 01/19/2018
 ---
+[//]: # (monikerRange: ">= tfs-2015")
 
 # Deploy your database to Azure SQL Database using DACPACs
 
@@ -89,6 +90,8 @@ Continuous deployment (CD) means starting an automated release process whenever 
    
    - **Firewall - Specify Firewall Rules Using**: `AutoDetect`<p />
 
+   > [How can I perform other actions on a SQL Server or Azure SQL Database?](sql-server-actions.md)
+
 1. Edit the name of the release definition, choose **Save**, and choose **OK**.
    Note that the default environment is named Environment1, which you can edit by clicking directly on the name.
 
@@ -106,6 +109,11 @@ This will result in deploying the database DACPAC to Azure SQL Database:
 ## Q&A
 
 <!-- BEGINSECTION class="md-qanda" -->
+
+### How can I perform other actions on a SQL Server or Azure SQL Database?
+
+You can use a PowerShell task to execute other types of SQL scripts.
+For more details, see [Perform SQL server actions in VSTS or TFS](sql-server-actions.md).
 
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
 

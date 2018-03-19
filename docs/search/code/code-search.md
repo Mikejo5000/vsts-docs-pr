@@ -7,8 +7,9 @@ ms.technology: vs-devops-search
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: douge
-ms.date: 09/26/2017
+ms.date: 01/18/2018
 ---
+[//]: # (monikerRange: '>= tfs-2017')
 
 # Search your code
 

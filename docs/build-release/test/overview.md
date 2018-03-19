@@ -6,9 +6,10 @@ ms.technology: vs-devops-build
 ms.assetid: 574CD62B-38DA-4015-9E15-36673C489D36
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+ms.date: 01/18/2018
 ms.topic: get-started-article
 ---
+[//]: # (monikerRange: ">= tfs-2015")
 
 # Continuous testing scenarios and capabilities
 
@@ -33,22 +34,24 @@ automatically with each build.
 
 <iframe width="640" height="360" src="//channel9.msdn.com/Series/Test-Tools-in-Visual-Studio/Unit-Testing-from-a-CI-Build-with-Visual-Studio-Team-Services/player" frameborder="0" allowfullscreen="true"></iframe><p />
 
-* [Get started with continuous testing](getting-started-with-continuous-testing.md)
-* [Testing in Continuous Integration and Continuous Deployment Workflows](https://blogs.msdn.microsoft.com/visualstudioalm/2015/05/29/testing-in-continuous-integration-and-continuous-deployment-workflows/)
+* [Run unit tests with your builds](getting-started-with-continuous-testing.md)
+* [Get started with Selenium testing](continuous-test-selenium.md)
+* [Testing with unified agents and phases](test-with-unified-agent-and-phases.md)
 * [Learn more about test task steps](../tasks/index.md#test)
 * [An end-to-end example of continuous testing](example-continuous-testing.md)
 * [Run automated tests from test plans in the Test hub](run-automated-tests-from-test-hub.md)
+* [Speed up testing with Test Impact Analysis](test-impact-analysis.md)
+* [Run tests in parallel](run-tests-in-parallel.md)
 
 <a name="test-frameworks"></a>
 ## Any test type and any test framework
 
-Choose the test technologies and frameworks you
-prefer to use.
+Choose the test technologies and frameworks you prefer to use.
  
 <iframe width="640" height="360" src="//channel9.msdn.com/Series/Test-Tools-in-Visual-Studio/Testing-Java-Applications-with-Visual-Studio-Team-Services/player" frameborder="0" allowfullscreen="true"></iframe><p />
 
-* [Get started with Java testing](continuous-test-java.md).
-* [Get started with Selenium testing](continuous-test-selenium.md).
+* [Get started with Selenium testing](continuous-test-selenium.md)
+* [Get started with Java testing](continuous-test-java.md)
 * [Use Maven to build your Java app](../tasks/build/maven.md)
 * [Unit testing framework plug-ins for Visual Studio](http://go.microsoft.com/fwlink/?LinkID=246630) 
 
@@ -65,8 +68,9 @@ your app.
 
 ![Build results showing rich test results](_img/continuous-testing/BuildSummary.png)
 
-* [Review continuous test results after a build](review-continuous-test-results-after-build.md).
+* [Review continuous test results after a build](review-continuous-test-results-after-build.md)
 * [Get started with continuous testing](getting-started-with-continuous-testing.md)
+* [Get Test Impact Analysis reports](test-impact-analysis.md)
 
 <a name="devops-practice"></a>
 ## Advanced DevOps practices

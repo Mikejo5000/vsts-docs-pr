@@ -15,7 +15,7 @@ ms.date: 09/29/2017
 
 # Define a query as a hyperlink  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 <a id="define-query-hyperlink" />  
 
@@ -96,6 +96,7 @@ SELECT [System.ID], [System.Title], [System.State]
 ## Related notes: 
 - [Syntax for the Work Item Query Language (WIQL)](../../reference/wiql-syntax.md)  
 - [Wiql Editor, a Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor)  
+- [REST API, Wiql](https://docs.microsoft.com/en-us/rest/api/vsts/wit/wiql)
  
 > [!NOTE]  
 > For queries made against VSTS, the WIQL length must not exceed 32K characters. The system won't allow you to create or run queries that exceed that length.  

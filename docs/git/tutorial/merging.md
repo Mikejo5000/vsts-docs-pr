@@ -7,8 +7,9 @@ ms.technology: vs-devops-git
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: sdanie
-ms.date: 08/30/2017
+ms.date: 03/14/2018
 ---
+[//]: # (monikerRange: '>= tfs-2013')
 
 #  Resolve merge conflicts
 
@@ -37,7 +38,7 @@ that reconciles the conflicting changes between the two branches.
 ![Create a merge commit to resolve the conflict between the two branches](_img/merge-conflict-resolved.png)
 
 The most common merge conflict situation is when you pull updates from a remote branch to your local branch, for example from `origin/bugfix` into your local `bugfix` branch.
-Resolve these conflicts is the same way-create a merge commit on your local branch reconciling the changes and complete the merge.
+Resolve these conflicts in the same way - create a merge commit on your local branch reconciling the changes and complete the merge.
 
 ### What does Git do to prevent merge conflicts?
 

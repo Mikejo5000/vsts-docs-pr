@@ -6,9 +6,10 @@ ms.technology: vs-devops-test-manual
 ms.assetid: 762A75FB-0B6D-47C3-9232-371348D8D529
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+ms.date: 01/18/2018
 ms.topic: get-started-article
 ---
+[//]: # (monikerRange: ">= tfs-2015")
 
 # Exploratory testing with the Test &amp; Feedback extension in Standalone mode
 

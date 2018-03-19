@@ -10,16 +10,17 @@ ms.reviewer: jrice
 ms.author: kaelli
 ms.date: 12/12/2017
 ---
-
+[//]: # (monikerRange: '>= tfs-2013')
 
 # Export a list of users and their access levels
 
-**TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013**  
-
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 <a id="export-audit-log" >  </a>
 
 You can get a list of users and groups that have access to your Visual Studio Team Services (VSTS) account or Team Foundation Server (TFS) by exporting the audit log. The audit log also indicates which access level has been granted.   
+
+[//]: # (::: moniker range="vsts")
 
 ## VSTS  
 
@@ -29,12 +30,16 @@ You can get a list of users and groups that have access to your Visual Studio Te
 
 	<img src="_img/export-users-audit/go-to-users-hub.png" alt="From the Users hub, click Export users" style="border: 1px solid #C3C3C3;" />  
 
-	Otherwise, the the URL follows this pattern: ```https://{account name}.visualstudio.com/_users```  
+	Otherwise, the URL follows this pattern: ```https://{account name}.visualstudio.com/_users```  
 
 	<img src="_img/export-users-audit/go-to-users-hub-not-streamlined.png" alt="From the Users hub, click Export users" style="border: 1px solid #C3C3C3;" />  
 
 0. The user log file is saved as a .csv file to your Download folder.   
 	To determine the access level assigned to each user or group, open the file in Excel.
+
+[//]: # (::: moniker-end)
+
+[//]: # (::: moniker range=">= tfs-2013 <= tfs-2018")
 
 ## TFS 
 
@@ -49,6 +54,7 @@ You can get a list of users and groups that have access to your Visual Studio Te
 0. The user log file is saved as a .csv file to your Download folder.  
 	To determine the access level assigned to each user or group, open the file in Excel.
 
+[//]: # (::: moniker-end)
 
 ## Related notes
 

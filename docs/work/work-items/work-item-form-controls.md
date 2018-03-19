@@ -1,12 +1,13 @@
 ---
 title: Use work item form controls to track your work
+titleSuffix: "VSTS & TFS" 
 description: Use the controls provided in the work item form to update status, link work items, and more in Visual Studio Team Services (VSTS) and Team Foundation Server  
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: A9AB9B95-61B4-41E7-AE7A-B96CD4AF9B33  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/11/2017
+ms.date: 02/14/2018 
 ---
 
 # Use work item form controls
@@ -61,7 +62,7 @@ While the workflow states differ for different work item types, they usually fol
 <tbody valign="top">
 <tr>
 <td>
-<p><b>Typical workflow progression:</b> </p> 
+<p><b>Typical workflow progression:</b> </p> 
 <ul>
 <li>Create a user story in the default state, New.</li>
 <li>Change the state from New to Active.</li>
@@ -69,7 +70,7 @@ While the workflow states differ for different work item types, they usually fol
 <li>Change the state from Resolved to Closed.</li>
 </ul>
 <br/>
-<p><b>Atypical transitions:</b> </p> 
+<p><b>Atypical transitions:</b> </p> 
 <ul>
 <li>Change the state from New to Removed.</li>
 <li>Change the state from Removed to New.</li>
@@ -136,13 +137,16 @@ In addition, the Links control tab provides access to all links made to the work
 <a id="discussion">  </a>
 ## Add to the discussion  
 
-Add and review comments made about the work being performed by going to the discussion section. 
+Add and review comments made about the work being performed by going to the discussion section. This way, you capture all comments within the work item rather than maintaining a long email thread. 
 
 Click the ![Discussions icon](../_img/icons/icon-discussions-wi.png) discussion icon, which indicates how many comments have been added, to move your focus to the discussion section.  Click the ![full screen icon](../_img/icons/fullscreen_icon.png) full screen icon to expand the display of the discussion section within the form.   
 
 <img src="../backlogs/_img/add-work-items-discussion.png" alt="Discussion section" style="border: 1px solid #C3C3C3;" />  
 
 Within the discussion section, you can use the [**@mention** control](../../notifications/at-mentions.md) to notify another team member about the discussion. Simply type **@** and their name. 
+
+> [!NOTE]   
+> **Feature availability**: From VSTS, you can also use group mentions. Simply start type the name of a team or a security group, click the search icon and then select from the options listed.    
 
 To reference a work item, use the [**#ID** control](../../notifications/add-links-to-work-items.md). Type **#** and a list of work items that you've recently referenced will appear from which you can select.  
 
@@ -183,6 +187,9 @@ Once you have a results list, you can [modify the filter criteria to refine your
 ## Related notes
 
 Keep in mind that the work item tracking experience and forms that appear in Visual Studio won't show several of the features that the web portal makes available. To add a field or customize a work item type, see [Customize your work tracking experience](../customize/customize-work.md). 
+
+See also: 
+- [Keyboard shortcuts for work item forms and the Work Items page](work-item-form-keyboard-shortcuts.md)
 
 <!---
 

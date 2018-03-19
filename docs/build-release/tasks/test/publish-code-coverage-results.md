@@ -6,8 +6,9 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/17/2017
+ms.date: 01/19/2018
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
 # Test: Publish Code Coverage Results
 
@@ -33,16 +34,32 @@ The build agent must have the following capabilities:
 | **Additional Files** | The file path pattern specifying any additional code coverage files to be published as artifacts of the build. The value may contain [minimatch patterns](../file-matching-patterns.md). Example: `$(System.DefaultWorkingDirectory)/**/*.exec` |
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
 
+[//]: # (::: moniker range="vsts")
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: PublishCodeCoverageResults@1
+  inputs:
+#   codeCoverageTool: JaCoCo # Cobertura, JaCoCo (default)
+    summaryFileLocation:
+    reportDirectory:
+    additionalCodeCoverageFiles:
+#   failIfCoverageEmpty: false
+```
+
+[//]: # (::: moniker-end)
+
 ## More Information
 
 * [Continuous testing scenarios and capabilities](../../test/index.md)
 
 ## Related tasks
 
-* [Visual Studio Test](visual-studio-test.md)  
-* [Visual Studio Test Agent Deployment](visual-studio-test-agent-deployment.md)  
+* [Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTest/README.md)  
 * [Publish Test Results](publish-test-results.md)
-* [Run Functional Tests](run-functional-tests.md)
 
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->

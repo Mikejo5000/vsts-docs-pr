@@ -6,8 +6,9 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+ms.date: 01/19/2018
 ---
+[//]: # (monikerRange: ">= tfs-2015")
 
 # Deploy your database to Azure SQL database using SQL scripts
 
@@ -20,7 +21,7 @@ Here we'll show you how to run SQL scripts against an Azure SQL Database as part
 
 ### Azure SQL Database
 
-Carry out the following steps to set up an Azure SQL Database server against which the
+Carry out the following steps to set up an Azure SQL Database server against which
 the database script will be executed.
 
 1. Sign into the Azure management portal and choose
@@ -113,6 +114,8 @@ In addition, you will need Azure Powershell scripts to create and remove firewal
   }
   ```
 
+> [How can I perform other actions on a SQL Server or Azure SQL Database?](sql-server-actions.md)
+
 ## Define and test your CD release process
 
 1. Open the **Releases** tab of the **Build &amp; Release** hub, open the **+** drop-down
@@ -172,6 +175,11 @@ You're now ready to create a release, which means to start the process of runnin
 ## Q&A
 
 <!-- BEGINSECTION class="md-qanda" -->
+
+### How can I perform other actions on a SQL Server or Azure SQL Database?
+
+You can use a PowerShell task to execute other types of SQL scripts.
+For more details, see [Perform SQL server actions in VSTS or TFS](sql-server-actions.md).
 
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
 

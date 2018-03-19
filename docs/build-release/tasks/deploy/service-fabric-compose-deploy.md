@@ -6,10 +6,13 @@ ms.technology: vs-devops-build
 ms.assetid: 891A8845-6EC1-4A70-B187-BBF9416AB41F
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/17/2017
+ms.date: 01/19/2018
 ---
+[//]: # (monikerRange: 'vsts')
 
 # Deploy: Service Fabric Compose Deploy
+
+**VSTS**
 
 ![icon](_img/azure-service-fabric.png) Deploy a Docker-compose application to a Service Fabric cluster.
 
@@ -41,12 +44,35 @@ See [https://docs.microsoft.com/azure/service-fabric/service-fabric-docker-compo
 
 Also see: [Service Fabric PowerShell Utility ](../utility/service-fabric-powershell.md)
 
+[//]: # (::: moniker range="vsts")
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: ServiceFabricComposeDeploy@0
+  inputs:
+    clusterConnection:
+#   composeFilePath: **/docker-compose.yml
+#   applicationName: fabric:/Application1
+#   registryCredentials: AzureResourceManagerEndpoint # AzureResourceManagerEndpoint (default), ContainerRegistryEndpoint, UsernamePassword, None
+    dockerRegistryConnection:
+    azureSubscription:
+    registryUserName:
+    registryPassword:
+#   passwordEncrypted: True
+    deployTimeoutSec:
+    removeTimeoutSec:
+    getStatusTimeoutSec:
+```
+
+[//]: # (::: moniker-end)
+
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [qa-agents](../../_shared/qa-agents.md)]
-
-[!INCLUDE [qa-versions](../../_shared/qa-versions.md)]
 
 <!-- ENDSECTION -->
 

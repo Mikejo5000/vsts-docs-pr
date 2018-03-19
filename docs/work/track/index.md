@@ -11,7 +11,7 @@ ms.date: 09/12/2017
 
 # Queries
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]  
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]  
 
 List bugs, user stories, or other work items based on field criteria you specify. Then you can review with your team, triage, or perform bulk updates.  
 
@@ -60,6 +60,7 @@ List bugs, user stories, or other work items based on field criteria you specify
 
 ## Reference 
 - [Query fields, operators & macros](query-operators-variables.md)      
+- [Query keyboard shortcuts](queries-keyboard-shortcuts.md)
 - [Work item field index](../work-items/guidance/work-item-field.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json) 
 - [WIQL syntax](../../collaborate/wiql-syntax.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json)
 - [Permissions and access for work tracking](../../security/permissions-access-work-tracking.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json)

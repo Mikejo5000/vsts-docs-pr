@@ -12,27 +12,17 @@
     href: create-account-msa-or-work-student.md
   - name: Try extensions for free
     href: ../billing/try-additional-features-vs.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
-  - name: Add administrators or set permissions at the project or collection level
+  - name: Add administrators or set permissions
     href: ../security/set-project-collection-level-permissions.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json 
   - name: Add a team administrator
     href: ../work/scale/add-team-administrator.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
 - name: Tutorials
   items:
-  - name: "1 - Change Azure AD tenant: setup"
-    href: change-azure-active-directory-vsts-account.md
-  - name: "2 - Change Azure AD tenant: prepare source directory"
-    href: change-azure-ad-vsts-account-prep-src.md
-  - name: "3 - Change Azure AD tenant: prepare target directory"
-    href: change-azure-ad-vsts-account-prep-target.md
-  - name: "4 - Change Azure AD tenant: disconnect from source directory"
-    href: change-azure-ad-vsts-account-disconnect.md
-  - name: "5 - Change Azure AD tenant: connect to target directory"
-    href: change-azure-ad-vsts-account-connect.md
-  - name: "6 - Change Azure AD tenant: reassign ownership to directory member"
-    href: change-azure-ad-vsts-account-reassign-owner.md
+  - name: Connect VSTS account to AAD
+    href: connect-account-to-aad.md
   - name: Change individual permissions 
     href: ../security/change-individual-permissions.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
-  - name: Grant or restrict permissions to select tasks
+  - name: Grant or restrict permissions
     href: ../security/restrict-access.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
 - name: Concepts
   items:
@@ -108,6 +98,12 @@
       href: ../marketplace/approve-vsts-extensions.md
     - name: Uninstall or disable extensions
       href: ../marketplace/uninstall-disable-vsts-extensions.md
+  - name: Manage group-based licensing 
+    items:
+    - name: Assign access levels and extensions by group membership
+      href: assign-access-levels-and-extensions-by-group-membership.md
+    - name: Migrate to group-based resource management
+      href: migrate-to-group-based-resource-management-in-VSTS.md
 - name: Troubleshooting
   items:
   - name: Create account
@@ -134,11 +130,11 @@
     href: faq-set-up-vs.md
 - name: Reference
   items:
-  - name: Permissions and access
+  - name: "Permissions and access (Security)"
     href: ../security/permissions-access.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
-  - name: Permission lookup guide 
+  - name: "Permission lookup guide (Security)"
     href: ../security/permissions-lookup-guide.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
-  - name: Permissions and groups reference
+  - name: "Permissions and groups reference (Security)"
     href: ../security/permissions.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
   - name: VSTS data protection overview
     href: ../articles/team-services-security-whitepaper.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json 

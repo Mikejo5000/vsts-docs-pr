@@ -8,10 +8,11 @@ ms.manager: douge
 ms.author: kaelli
 ms.date: 08/11/2017
 ---
+[//]: # (monikerRange: '>= tfs-2013')
 
 # Navigating in the web portal
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 The web portal provides support for teams to collaborate through the planning, development, and release cycles. You use the web portal to perform both software development and administrative tasks.  
 
@@ -43,12 +44,15 @@ To get started, from a [supported web browser](../tfs-server/requirements.md#bro
 The web portal is one of several clients that can connect to a team project. Different clients support different features and functions. For a list of all clients that connect to VSTS or TFS, see [Tools and clients that connect to VSTS and TFS](tools.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json). 
 
 <a id="nav-concepts">  </a>
-## Navigational concepts  
+
+## Navigational concepts
 
 There are three main navigational concepts to understand. The first is the collection-project-team structure, the second is the user/administrative context, and the third corresponds to user-focused and team-scoped features that provide quick access to tasks targeted for the logged-in user or for the selected team.
 
 <a id="collection-project-team-structure">  </a>
+
 ### Collection-project-team structure
+
 When you connect to VSTS or an on-premises TFS, you connect to an account or team project collection. Within that collection, one or more team projects may be defined. At a minimum, at least one team project must be created in order to use the system.
 
 When you create your team project, a team of the same name is automatically created. For small teams, this is sufficient.  
@@ -79,7 +83,9 @@ To learn more about adding teams and the features that support team autonomy, se
 <!--- configure get started for a team -->
 
 <a id="user-admin-context">  </a>
+
 ### User/administrative context
+
 The user context is used to get work done&mdash;manage code, plan and track work,  define and manage builds, create and run tests, and so on. Administrators use the admin context to configure shared resources and permissions. Tasks performed in this context can impact the team project and team functions.  
 
 **User context**   
@@ -87,13 +93,17 @@ You and other team members use the user context to collaborate, plan, and build 
  
 <a id="user-context-id" />
 
-<a id="team-services-user-context" /> 
-**VSTS, TFS 2017.2**  
+<a id="team-services-user-context" />
+
+[//]: # (::: moniker range=">= tfs-2017 <= vsts")
+
+**VSTS, TFS 2017.2**
+
 Click any hub to open that hub. Hover your mouse over a hub to access a drop-down menu of pages and other options for that hub. To access administrative options, click the ![gear icon](_img/work-tfs-web-portal/IC623347.png) gear Settings icon or choose the admin level you want from the drop-down menu.  
 
 <img src="_img/wwp-user-context-team-services.png" alt="VSTS, User context hubs" style="border: 1px solid #CCCCCC;" /> 
- 
-**TFS 2017, TFS 2017.1**  
+
+**TFS 2017, TFS 2017.1**
 <a id="tfs-2017-user-context" /> 
 
 Click any hub to open that hub. Hover your mouse over a hub to access a drop-down menu of pages and other options for that hub. To access administrative options, click the ![gear icon](_img/work-tfs-web-portal/IC623347.png) gear Settings icon or choose the admin level you want from the drop-down menu.  
@@ -111,24 +121,29 @@ Click any hub to open that hub. Hover your mouse over a hub to access a drop-dow
 <img src="_img/wwp-user-context-tfs-2017-1.png" alt="VSTS-Account Landing Off, User context hubs" style="border: 1px solid #CCCCCC;" /> 
 
 -->
+[//]: # (::: moniker-end)
+
+[//]: # (::: moniker range=">= tfs-2013 <= tfs-2015")
+
 <a id="tfs-2015-user-context" />
-**TFS 2015, TFS 2013**  
+
+**TFS 2015, TFS 2013**
 
 Click any hub to open that hub. Then, click a page within the hub to open that page. 
 
 <img src="_img/web-portal-user-context.png" alt="TFS 2015 or TFS 2013, User context hubs" style="border: 1px solid #CCCCCC;" /> 
 
- 
+[//]: # (::: moniker-end)
 
 <a id="admin-context">  </a>
+
 **Administrative context**  
 You use the administrative context to set team, team project, and account or collection settings. The hubs and pages available change based on what level of administrative context you're in. 
 
 To learn more about each administrative context level, see the [Administrative context and team, team project, and account/collection settings](#administrative-context) later in this topic.
- 
-
 
 <a id="user-focused-features">  </a>
+
 ### User-focused features
 
 Several features display information based on the logged-in user account or the selected team context. First off, users can [set their preferences](../accounts/account-preferences.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json) through their profile or account menu:
@@ -141,10 +156,11 @@ In addition, they have access to special queries&mdash;Assigned to me query, Fol
 
 
 >[!NOTE]  
->If you work in VSTS, you can also use your account hub to view and quickly navigate to teams, team projects, branches, work items, pull requests and other objects that are relevant to you. For details, see [Work effectively from your account hub](account-home-pages.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json).     
+>If you work in VSTS, you can also use your account hub to view and quickly navigate to teams, team projects, branches, work items, pull requests and other objects that are relevant to you. For details, see [Work effectively from your account hub](account-home-pages.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json).     
 
 
 <a id="team-scoped-features">  </a>
+
 ### Team-scoped features
 
 Teams access their set of team-scoped features by choosing their team context. Each team gets access to a suite of Agile tools and team assets. These tools provide teams the ability to work autonomously and collaborate with other teams across the enterprise.
@@ -155,7 +171,8 @@ Also, teams can set their query and build favorites within **Team favorites** fo
 
 
 <a id="user-context">  </a>
-## User context: hubs and tabs  
+
+## User context: hubs and tabs
 
 You perform the bulk of your tasks by accessing a page within one of the these hubs&mdash;**Home**, **Code**, **Work**,  **Build** and **Test** &mdash;and their corresponding  tabs&mdash;such as **Overview**, **Backlogs**, **Queries**. For an overview of each hub, see [Essential services](services.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json).
 
@@ -169,8 +186,8 @@ The next sections liste what you can do, based on the hub and page you select.
 The **Home** hub supports a configurable Welcome page and dashboards. From the **Work** hub, you gain access to a highly configurable suite of Agile tools to plan and track your work.   
 
 
-> [!div class="mx-tdBreakAll"]  
-> |[Home](../report/dashboards/overview.md) |[Work](../work/work-items/index.md)|
+> [!div class="mx-tdBreakAll"]
+> |[Home](../report/dashboards/overview.md) |[Work](../work/work-items/index.md)|
 > |-------------|----------|
 > |- [Account hub](account-home-pages.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)<br/>- [Project vision and status page](../collaborate/project-vision-status.md)<br/>- [Project welcome page](../collaborate/markdown-guidance.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)<br/>- [Overview (view/edit default dashboard)](../report/dashboards/dashboards.md)<br/>- >[Add/modify dashboards](../report/dashboards/dashboards.md) |- Backlogs: [Create your backlog](../work/backlogs/create-your-backlog.md)  &#124; [Organize backlogs](../work/backlogs/organize-backlog.md) &#124; [Plan sprints](../work/scrum/sprint-planning.md)<br/>- Boards: [Kanban board](../work/kanban/kanban-basics.md) &#124; [Features and epics](../work/kanban/kanban-epics-features-stories.md) &#124;  [Cumulative flow chart](../report/dashboards/cumulative-flow.md)<br/>- Boards: [Add task checklists](../work/kanban/add-task-checklists.md) &#124; [Task board](../work/scrum/task-board.md)<br/>- Queries: [Run/define queries](../report/dashboards/cumulative-flow.md) &#124; [Add work items](../work/backlogs/add-work-items.md)  &#124; [Manage bugs](../work/backlogs/manage-bugs.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json) |
 
@@ -180,19 +197,19 @@ The **Home** hub supports a configurable Welcome page and dashboards. From the *
 The **Code** hub supports management of your source control repositories. You can choose between two types of repos: Git (distributed) or Team Foundation version control (centralized). For a comparison of the two repos, see [Choosing the right version control for your project](../tfvc/comparison-git-tfvc.md).
 
 
-> [!div class="mx-tdBreakAll"]  
-> |[Code: Git](../git/index.md) |[Code: TFVC](../tfvc/index.md)|
+> [!div class="mx-tdBreakAll"]
+> |[Code: Git](../git/index.md) |[Code: TFVC](../tfvc/index.md)|
 > |-------------|----------|
 > |- [Add/manage repositories](../git/create-new-repo.md) &#124; [Rename a repo](../git/repo-rename.md) &#124; [Delete a repo](../git/delete-existing-repo.md)<br/>- Explorer<br/>- [History: review](../git/manage-your-branches.md#review-updates)<br/>- [Branches: Manage branches](../git/manage-your-branches.md)<br/>- [Pull Requests: View and create pull requests](../git/pull-requests.md) |- [Add/manage repositories](../git/create-new-repo.md) &#124; [Rename a repo](../git/repo-rename.md) &#124; [Delete a repo](../git/delete-existing-repo.md)<br/>- [Explorer: View, download, and compare version-controlled files](../tfvc/download-get-files-from-server.md)<br/>- [Changesets: find/view](../tfvc/find-view-changesets.md)<br/>- [Shelvesets](../tfvc/suspend-your-work-manage-your-shelvesets.md) |
 
-###Build, test, and release  
+### Build, test, and release
 
 The **Build & Release** hub supports defining and managing builds and releases to deploy your software to different staging and production environments. From the **Test** hub, you can create test plans, test cases, and run tests. 
 
-> [!div class="mx-tdBreakAll"]  
+> [!div class="mx-tdBreakAll"]
 > |[Build](../build-release/index.md)|[Release](../build-release/concepts/definitions/release/index.md)| [Test](../manual-test/index.md) |
 > |-------------|----------|----------|
-> |- [Definitions: Define a build](../build-release/tasks/index.md)<br/>- [Options: Define multiple configurations](../build-release/concepts/definitions/build/options.md)<br/>- [Repository: Specify repository for build](../build-release/concepts/definitions/build/repository.md)<br/>- [Variables: Use build variables](../build-release/concepts/definitions/build/variables.md)<br/>- [Triggers: Set build triggers](../build-release/concepts/definitions/build/triggers.md)<br/>- [Retention: Set  retention policies](../build-release/concepts/policies/retention.md)<br/>- [History: View change history](../build-release/concepts/definitions/build/history.md) |- [Release definition](../build-release/concepts/definitions/release/index.md)<br/>- [Triggers: continuous integration](../build-release/concepts/definitions/release/triggers.md#release-triggers)<br/>- [Deploy release](../build-release/actions/create-deploy-releases.md#deploy-command)<br/>- [Approve a release](../build-release/concepts/definitions/release/approvals/index.md)<br/>- [Tests: view test results ](../build-release/actions/view-manage-releases.md#test-results)<br/>- [Logs: view release logs](../build-release/actions/debug-deployment-issues.md)<br/>- [Run unit tests with a build](../build-release/test/getting-started-with-continuous-testing.md) |- [Test plans](../manual-test/getting-started/create-a-test-plan.md)<br/>- [Parameters](../manual-test/repeat-test-with-different-data.md)<br/>- [Configurations](../manual-test/test-different-configurations.md)<br/>- [Runs](../manual-test/getting-started/run-manual-tests.md)<br/>- [Machines](../build-release/test/set-up-continuous-test-environments-builds.md)<br/>- [Load test](../load-test/getting-started-with-performance-testing.md) |
+> |- [Definitions: Define a build](../build-release/tasks/index.md)<br/>- [Options: Define multiple configurations](../build-release/concepts/definitions/build/options.md)<br/>- [Repository: Specify repository for build](../build-release/concepts/definitions/build/repository.md)<br/>- [Variables: Use build variables](../build-release/concepts/definitions/build/variables.md)<br/>- [Triggers: Set build triggers](../build-release/concepts/definitions/build/triggers.md)<br/>- [Retention: Set  retention policies](../build-release/concepts/policies/retention.md)<br/>- [History: View change history](../build-release/concepts/definitions/build/history.md) |- [Release definition](../build-release/concepts/definitions/release/index.md)<br/>- [Triggers: continuous integration](../build-release/concepts/definitions/release/triggers.md#release-triggers)<br/>- [Approve a release](../build-release/concepts/definitions/release/approvals/index.md)<br/>- [Tests: view test results ](../build-release/test/review-continuous-test-results-after-build.md)<br/>- [Logs: view release logs](../build-release/actions/define-multistage-release-process.md#monitor-and-track-deployments)<br/>- [Run unit tests with a build](../build-release/test/getting-started-with-continuous-testing.md) |- [Test plans](../manual-test/getting-started/create-a-test-plan.md)<br/>- [Parameters](../manual-test/repeat-test-with-different-data.md)<br/>- [Configurations](../manual-test/test-different-configurations.md)<br/>- [Runs](../manual-test/getting-started/run-manual-tests.md)<br/>- [Machines](../build-release/test/set-up-continuous-test-environments-builds.md)<br/>- [Load test](../load-test/getting-started-with-performance-testing.md) |
 
 <a id="administrative-context">  </a>
 ## Administrative context and team, team project, and account/collection settings
@@ -201,10 +218,13 @@ From a user context, open the admin context by clicking the ![gear icon](_img/wo
 
 Below we show the admin context for the team project level. 
 
+[//]: # (::: moniker range="tfs-2017 || vsts")
+
 <a id="admin-intro" />
 
-<a id="admin-intro-team-services" />  
-**VSTS, TFS 2017.2** 
+<a id="admin-intro-team-services" /> 
+ 
+**VSTS, TFS 2017.2**
 
 Open any admin page by clicking it's name. Click or hover over the gear icon to access other administrative options. Note that you can click any of the user-context hubs of **Home**, **Code**, **Work**, and so on to return to the user context. 
 
@@ -213,7 +233,8 @@ Open any admin page by clicking it's name. Click or hover over the gear icon to 
 
 
 <a id="admin-intro-tfs-2017-1" />
-**TFS 2017.1**  
+
+**TFS 2017.1**
 
 Open any admin page by clicking it's name. Hover your mouse over a hub to access a drop-down menu of pages and other options for that hub. Click or hover over the gear icon to access other administrative options. Note that you can click any of the user-context hubs of **Home**, **Code**, **Work**, and so on to return to the user context.   
 
@@ -221,7 +242,8 @@ Open any admin page by clicking it's name. Hover your mouse over a hub to access
  
 
 <a id="admin-intro-tfs-2017" /> 
-**TFS 2017**  
+
+**TFS 2017**
 
 Open any admin page by clicking it's corresponding hub. Hover your mouse over a hub to access a drop-down menu of pages and other options for that hub. Click or hover over the gear icon to access other administrative options. Note that you can click any of the user-context hubs of **Home**, **Code**, **Work**, and so on to return to the user context. 
 
@@ -230,6 +252,10 @@ Open any admin page by clicking it's corresponding hub. Hover your mouse over a 
 
 
 <a id="admin-intro-tfs-2015" />
+
+[//]: # (::: moniker-end)
+
+[//]: # (::: moniker range=">= tfs-2013 <= tfs-2015")
 
 **TFS 2015, TFS 2013**  
 Open any admin page by clicking it's corresponding hub.  
@@ -244,12 +270,12 @@ From within the admin context,  click one of the breadcrumb links to access the 
 You must be a member of the listed administrator group or role to perform the tasks listed.  
 
 
-> [!div class="mx-tdBreakAll"]  
+> [!div class="mx-tdBreakAll"]
 > |Team settings|Team project settings|  
 > |-------------|----------| 
 > |Required membership: [Team administrator role](../work/scale/add-team-administrator.md)<br/><br/>- [Overview: Add team members](../work/scale/multiple-teams.md)  &#124; [Add team admins](../work/scale/add-team-administrator.md)<br/>- [Select backlog levels](../work/customize/select-backlog-navigation-levels.md) &#124; [Set working days](../work/scale/capacity-planning.md)  &#124; [Working with bugs](../work/customize/show-bugs-on-backlog.md)<br/>- [Work/Iterations & Areas (team defaults)](../work/scale/set-team-defaults.md)<br/>- [Work/Templates](../work/backlogs/work-item-template.md)<br/>- [Security (manage team-level permissions)](../work/scale/team-administrator-permissions.md)<br/>- [Notifications](../collaborate/manage-team-notifications.md)<br/><br/>For a complete overview of all team assets that you<br/>can configure, see  [Manage team assets](../work/scale/manage-team-assets.md) |Required membership:  [Project Administrators](../accounts/add-administrator-team-project.md)<br/><br/>-  [Overview: Add teams](../work/scale/multiple-teams.md)<br/>- [Work/Iterations & Areas (project-wide)](../work/customize/set-area-paths.md)<br/>- [Security (manage project-level permissions)](../security/permissions.md#team-project-level-permissions)<br/>- [Notifications](../collaborate/manage-team-notifications.md)<br/>- [Version Control (manage repository permissions)](../security/permissions.md#git-repository)<br/>- [Agent queues](../build-release/concepts/agents/pools-queues.md)<br/>- [Service hooks](../service-hooks/services/webhooks.md)<br/>- [Services](../build-release/concepts/library/service-endpoints.md)<br/>- [Test (manage test retention policies](../manual-test/getting-started/how-long-to-keep-test-results.md) 
 
-> [!div class="mx-tdBreakAll"]  
+> [!div class="mx-tdBreakAll"]
 > |Account settings (VSTS)|Collection settings (TFS)|  
 > |-------------|----------| 
 > |Required membership: [Project Collection Administrators](../security/set-project-collection-level-permissions.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json)<br/><br/>- [Overview: Create team projects](../accounts/create-team-project.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json)  &#124; [Rename team project](../accounts/rename-team-project.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json)<br/>[Delete team project](../accounts/delete-team-project.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json) &#124; [Change process](../work/customize/process/manage-process.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json)<br/>- [Settings: Set account preferences](../accounts/account-preferences.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json) &#124; [Change application access policies](../accounts/change-application-access-policies-vs.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json)<br/>[Change account owner](../accounts/change-account-ownership-vs.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json) &#124; [Delete your account](../accounts/delete-your-vsts-account.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json) &#124; [Recover your account](../accounts/recover-your-vsts-account.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json)<br/>- [Security (manage collection-level permissions)](../security/set-project-collection-level-permissions.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json)<br/>- [Process (customize work tracking)](../work/customize/process/manage-process.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json)<br/>- [Build (manage build policies)](../build-release/concepts/policies/retention.md)<br/>- [Agent pools (manage build agents)](../build-release/concepts/agents/pools-queues.md) (VSTS)<br/>- [Extensions (install/manage extensions)](../marketplace/install-vsts-extension.md) | Required membership: [Project Collection Administrators](../security/set-project-collection-level-permissions.md)<br/><br/>- [Overview: Create team projects](../accounts/create-team-project.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json)  &#124; [Rename team project](../accounts/rename-team-project.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json) &#124; [Delete team project](../accounts/delete-team-project.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json)<br/>- [Security (manage collection-level permissions)](..//security/set-project-collection-level-permissions.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json)<br/>- [Build (manage build policies)](../build-release/concepts/policies/retention.md)<br/>- >[Agent queues](../build-release/concepts/agents/pools-queues.md)<br/>- [Extensions (install/manage extensions)](../marketplace/install-vsts-extension.md?toc=/vsts/marketplace/toc.json&bc=/vsts/marketplace/breadcrumb/toc.json) |
@@ -267,10 +293,11 @@ Required membership: [Team Foundation Administrators](../tfs-server/add-administ
  
 <!--- End of Admin context -->
 
+[//]: # (::: moniker-end)
 
 ## Related notes  
 
-Now that you have an understanding of how the user interface is structure, it's time to get started using it.  As you can see, there are a lot of features and functionality.  
+Now that you have an understanding of how the user interface is structured, it's time to get started using it.  As you can see, there are a lot of features and functionality.  
 
 If all you need is a code repository and bug tracking solution, then start with the [Git get started guide](../git/gitquickstart.md) and [Manage bugs](../work/backlogs/manage-bugs.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json).  
 
@@ -345,7 +372,7 @@ In addition to connecting through a web browser, you can connect to a team proje
 - [Visual Studio (Professional, Enterprise, Test Professional)](https://www.visualstudio.com/products/compare-visual-studio-2015-products-vs)
 - [Visual Studio Code](https://code.visualstudio.com/Docs)
 - [Visual Studio Community](https://www.visualstudio.com/products/visual-studio-community-vs.aspx)
-- [Eclipse: Team Explorer Everywhere](http://java.visualstudio.com/Docs/tools/eclipse)
+- [Eclipse: Team Explorer Everywhere](/vsts/java/download-eclipse-plug-in)
 - [Office Excel](../work/backlogs/office/bulk-add-modify-work-items-excel.md)
 - [Office Project](../work/backlogs/office/create-your-backlog-tasks-using-project.md)
 - [PowerPoint Storyboarding](../work/backlogs/office/storyboard-your-ideas-using-powerpoint.md)
@@ -394,7 +421,7 @@ Although you can access source code, work items, and builds from both clients, s
 To open Excel from the web portal, install the [VSTS Open in Excel](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel) Marketplace extension. Otherwise, you can open [Excel](../work/backlogs/office/bulk-add-modify-work-items-excel.md) or [Project](../work/backlogs/office/create-your-backlog-tasks-using-project.md) and then open a query that you've created in the web portal. 
 
 
-[!INCLUDE [temp](../_shared/help-support-shared.md)] 
+[!INCLUDE [temp](../_shared/help-support-shared.md)] 
 
 <!---
 Overview

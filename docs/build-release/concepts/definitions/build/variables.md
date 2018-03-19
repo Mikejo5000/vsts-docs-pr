@@ -6,8 +6,9 @@ ms.technology: vs-devops-build
 ms.assetid: 3A1C529F-DF6B-470A-9047-2758644C3D95
 ms.manager: douge
 ms.author: alewis
-ms.date: 12/13/2017
+ms.date: 03/15/2018
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
 # Build variables
 
@@ -758,6 +759,23 @@ You can pass environment variables of the build machine into build steps. For ex
         <tr>
             <td>
                 <p style="font-size:80%">
+                    System.PullRequest.IsFork
+                </p>
+                <p style="font-size:80%">
+                    SYSTEM_PULLREQUEST_ISFORK
+                </p>
+            </td>
+            <td style="font-size:80%">All</td>
+            <td>
+                <p style="font-size:80%">
+                    If the pull request is from a fork of the repository, this variable is set to `True`.
+                    Otherwise, it is set to `False`.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p style="font-size:80%">
                     System.PullRequest.PullRequestId
                 </p>
                 <p style="font-size:80%">
@@ -774,6 +792,22 @@ You can pass environment variables of the build machine into build steps. For ex
         <tr>
             <td>
                 <p style="font-size:80%">
+                    System.PullRequest.PullRequestNumber
+                </p>
+                <p style="font-size:80%">
+                    SYSTEM_PULLREQUEST_PULLREQUESTNUMBER
+                </p>
+            </td>
+            <td style="font-size:80%">All</td>
+            <td>
+                <p style="font-size:80%">
+                    The number of the pull request that caused this build. This variable is populated for pull requests from GitHub which have a different pull request ID and pull request number.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p style="font-size:80%">
                     System.PullRequest.SourceBranch
                 </p>
                 <p style="font-size:80%">
@@ -783,7 +817,7 @@ You can pass environment variables of the build machine into build steps. For ex
             <td style="font-size:80%">All</td>
             <td>
                 <p style="font-size:80%">
-                    The branch that is being revewiewed in a pull request. For example: `refs/heads/users/raisa/new-feature`. (This variable is initialized only if the build ran because of a [Git PR affected by a branch policy](../../../../git/branch-policies.md#require-the-pull-request-to-build).)
+                    The branch that is being reviewed in a pull request. For example: `refs/heads/users/raisa/new-feature`. (This variable is initialized only if the build ran because of a [Git PR affected by a branch policy](../../../../git/branch-policies.md#require-the-pull-request-to-build).)
                 </p>
             </td>
         </tr>        <tr>

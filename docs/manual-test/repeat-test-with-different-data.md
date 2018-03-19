@@ -6,8 +6,9 @@ ms.technology: vs-devops-test-manual
 ms.assetid: C9953A56-9BD6-408B-899B-FAD816B9FC0C
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+ms.date: 01/18/2018
 ---
+[//]: # (monikerRange: ">= tfs-2015")
 
 # Repeat a test with different data
  
@@ -25,6 +26,8 @@ also share parameters and their data between test cases when you
 use the web portal with TFS 2015 and later or 
 VSTS. That way you can run multiple test cases with the 
 same data.
+
+[!INCLUDE [feature-availability](_shared/feature-availability.md)] 
 
 ## Add parameters to a test case
 
@@ -71,6 +74,10 @@ same data.
 1. Each shared parameter set is a work item. Open the **Properties**
    tab to view or make changes to this work item. For example, 
    you can assign owners and track changes.
+
+>You can't add more than one shared parameter set to a single test case. If two test cases share similar data, for example, one test case needs
+customer ID, name, email, and phone, and the second needs customer ID, name and address, you might consider creating a single shared parameter set
+containing all of the parameters - even though a few of the columns in the set will remain unused in each test case. 
 
 ## Run a test case with parameters
 

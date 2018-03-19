@@ -7,12 +7,12 @@ ms.assetid: C46ED4AA-4B8F-4D5D-BC51-52F6D67BF8C6
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article
-ms.date: 10/24/2017
+ms.date: 01/05/2018
 ---
 
 # Forecast your product backlog
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 Teams use the forecast tool to help in their sprint planning efforts. By plugging in a value for the [team velocity](../../report/dashboards/velocity-chart-data-store.md), the forecast tool will show which items in the backlog can be completed within future sprints.  Both tools are team-specific tools that rely on the team's ability to estimate backlog items. Once your team has completed a sprint or two, they can use the team velocity  to forecast how much of the backlog they can finish within the upcoming sprints. 
 
@@ -22,7 +22,7 @@ Use this topic to learn:
 > * How to forecast upcoming sprints     
 > * Required and recommended team activities to support forecasting       
 
-[!INCLUDE [temp](../_shared/image-differences.md)]
+[!INCLUDE [temp](../_shared/image-differences.md)]
  
 
 <a id="forecasting">   </a> 
@@ -47,7 +47,7 @@ The tool draws lines for each future sprint selected by the team. The Forecast l
 
 
 
-### VSTS and TFS 2017.3 and later versions
+### VSTS and TFS 2018 and later versions
 
 In this example, a Velocity of 20 is used. The forecast tool limits the number of items shown between the forecast lines to those that can be completed within the sprint or using unused velocity points from the previous sprint. 
 
@@ -61,7 +61,7 @@ The forecast tool shows between two and four items can be worked on during Itera
 
 <img src="_img/forecast-s125.png" alt="Web portal, Backlog, Forecast On" style="border: 1px solid #C3C3C3;" />
  
-### TFS 2017.2 
+### TFS 2017.2 and TFS 2017.3 
 
 >[!NOTE]  
 >The forecast logic changed for TFS 2017.2. Previously, the forecast tool limited the number of items shown between the forecast lines to those that could be completed within the sprint or using unused velocity points from the previous sprint. 

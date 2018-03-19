@@ -6,8 +6,9 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
-ms.date: 11/14/2017
+ms.date: 01/19/2018
 ---
+[//]: # (monikerRange: ">= tfs-2015")
 
 # Triggers in Release Management
 
@@ -35,8 +36,10 @@ of any of those artifacts is produced.
 
 You add build branch filters if you want to create the release only
 when the build is produced by compiling code from certain branches
-(only applicable when the code is in a VSTS or a TFS Git repository)
-or when the build has certain tags.
+(only applicable when the code is in a TFVC, Git, or GitHub repository)
+or when the build has certain tags. These can be both include and exclude filters.
+For example, use **features/\*** to include all builds under the **features** branch.
+You can also include [custom variables](variables.md) in a filter value.
 
 Alternatively, you can specify a filter to use the default branch specified
 in the build definition. This is useful when, for example, the default build branch
@@ -91,10 +94,16 @@ You can combine the automated settings to have releases created
 automatically either when a new build is available or according to
 a schedule.
 
+[//]: # (::: moniker range="tfs-2015")
+
 > **TFS 2015**: The following features are not available in TFS 2015 -
 continuous deployment triggers for multiple artifact sources,
 multiple scheduled triggers, combining scheduled and continuous deployment triggers in the same definition,
 continuous deployment based on the branch or tag of a build.
+
+[//]: # (::: moniker-end)
+
+[//]: # (::: moniker range=">= tfs-2017")
 
 ### Parallel forked and joined deployments
 
@@ -120,6 +129,8 @@ this capability enables the configuration of complex
 and fully managed deployment pipelines to suit
 almost any release scenario.  
 
+[//]: # (::: moniker-end)
+
 Note that you can always deploy a release directly to any of the
 environments in your release definition by selecting the
 **Deploy** action when you create a new release. In this case, the
@@ -131,6 +142,10 @@ process. Performing such direct deployments requires
 the **Manage deployments** permission, which should
 only be given to selected and approved users.
 
+[//]: # (::: moniker range="tfs-2015")
+
 > **TFS 2015**: Parallel fork and joined deployments are not available in TFS 2015
+
+[//]: # (::: moniker-end)
 
 [!INCLUDE [rm-help-support-shared](../../../_shared/rm-help-support-shared.md)]

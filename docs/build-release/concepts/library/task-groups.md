@@ -6,8 +6,9 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
-ms.date: 12/20/2017
+ms.date: 01/19/2018
 ---
+[//]: # (monikerRange: ">= tfs-2017")
 
 # Task Groups
 
@@ -28,7 +29,7 @@ When you include a task group in your definitions, and then make a change centra
 the change is automatically reflected in all the definitions that use the task group. There is no need
 to change each one individually.
 
-To create a task group, selecting a sequence of tasks in a build or release definition 
+To create a task group, select a sequence of tasks in a build or release definition 
 (when using a mouse, click on the checkmarks of each one). Then open the shortcut menu
 and choose **Create task group**. Specify a name and description, and the category (tab)
 you want to add it to in the Add tasks dialog.
@@ -51,6 +52,9 @@ pointers to help you achieve the desired behavior:
   you specified a value (instead of a variable), or you didn't provide
   a value for, are not configurable in the task group when added to a build
   or release definition.
+
+* Task conditions (such as "Run this task only when a previous task has failed" for a
+  **PowerShell Script** task) can be configured in a task group and these settings are persisted with the task group.
 
 * When you save the task group, you can provide a name and a description for the
   new task group, and select a category where you want it to appear in the

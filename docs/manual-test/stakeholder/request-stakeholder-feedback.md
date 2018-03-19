@@ -6,8 +6,9 @@ ms.technology: vs-devops-test-manual
 ms.assetid: 6AE1D62D-43EE-4C0B-92CD-F11BC10A9CA8
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+ms.date: 01/18/2018
 ---
+[//]: # (monikerRange: ">= tfs-2015")
 
 # Request stakeholder feedback using the Test &amp; Feedback extension
  

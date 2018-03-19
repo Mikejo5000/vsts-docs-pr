@@ -5,14 +5,14 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
 ms.assetid: 985fcb48-0d9e-44ef-811d-7178df1cb09b
 ms.manager: douge
-ms.author: billchi
+ms.author: chcomley
 ms.date: 10/09/2017
 ---
+[//]: # (monikerRange: 'vsts')
 
 #	Troubleshoot setting up Visual Studio with VSTS
 
 **VSTS**
-
 
 ## Visual Studio 
 
@@ -31,7 +31,7 @@ trial period for these benefits:
 
 *	Visual Studio Enterprise: Extend your trial for 90 days. When your trial expires, 
 learn [how to unlock Visual Studio](https://msdn.microsoft.com/library/dn950037.aspx).
-*	Visual Studio Express or Community: Continue to use this edition for free
+*	Visual Studio Express or Community: Continue to use this edition for free.
 
 When you create your profile, 
 you can also create a VSTS account. 

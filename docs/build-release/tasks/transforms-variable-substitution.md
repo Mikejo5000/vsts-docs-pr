@@ -6,8 +6,9 @@ ms.technology: vs-devops-build
 ms.assetid: C287712A-8979-444C-8B1F-A7B3016801D6
 ms.manager: douge
 ms.author: ahomer
-ms.date: 06/07/2017
+ms.date: 01/19/2018
 ---
+[//]: # (monikerRange: '>= tfs-2017')
 
 # File transforms and variable substitution reference
 

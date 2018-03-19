@@ -1,5 +1,6 @@
 ---
-title: Use the search box for quick queries | VSTS & TFS
+title: Use the search box for quick queries
+titleSuffix: VSTS & TFS
 description: Use the search box to create a query and filter for assigned to, created by, state, or work item type  
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-wit
@@ -7,13 +8,13 @@ ms.topic: get-started-article
 ms.assetid: D5A98F10-AAD2-46DD-91DE-41497CF5ECEF 
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/28/2017
+ms.date: 03/06/2018  
 ---
 
 
 # Perform an adhoc search
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 <a id="search-box"/>
 
@@ -33,25 +34,25 @@ If you've added the [Code Search extension](https://marketplace.visualstudio.com
 
 The search box retains the last used search context for each hub. To learn more about code search, see [Get started with Code Search](../../search/code/code-search.md).
 
-[!INCLUDE [temp](../_shared/search-box.md)]
+[!INCLUDE [temp](../_shared/search-box.md)]
 
 Type the ID in the Search work items box and then choose the search icon. The Search work items box is available from a team project context.  
 
 
 
-### VSTS and TFS 2017 
-![Search Work Items Text Box](_img/using-queries-search-box-ts.png)
+### VSTS, TFS 2018, and TFS 2017
+ 
+> [!div class="mx-imgBorder"]
+![Search Work Items Text Box](_img/search-box/search-box-vsts.png)
 
 Click within the box to view the set of filters for [assignment,  workflow state](query-by-workflow-changes.md), [keyword, or work item type](titles-ids-descriptions.md). 
 
-### TFS 2015
+### TFS 2015 and TFS 2013 
 ![Search Work Items Text Box](_img/using-queries-search-box.png)  
 
 Use the ![context menu icon](../_img/icons/context_menu.png) context menu to add a filter based on [assignment or workflow status](query-by-workflow-changes.md), [a keyword or work item type](titles-ids-descriptions.md). 
 
 For example, enter ```A=@Me T=Task``` to list all tasks assigned to you.  
-
-
 
 ## Use shortcut filters
 
@@ -61,12 +62,9 @@ Open the ![Context Menu Icon](_img/example-search-box-queries/IC533396.png) cont
 
 You can enter or select one or more of the following shortcut identifiers:
 
--   `A` =for **A**ssigned To, (for example, `A:Annie` or `A=@me`).
-
--   `C` for = **C**reated By, (for example, `C:Peter` or `C=@me`).
-
--   `S` for = **S**tate, (for example, `S=New`).
-
+-   `A` =for **A**ssigned To, (for example, `A:Annie` or `A=@me`)
+-   `C` for = **C**reated By, (for example, `C:Peter` or `C=@me`)
+-   `S` for = **S**tate, (for example, `S=New`)
 -   `T` for = Work Item **T**ype, (for example, `T=Task`).
 
 Use the `@Me` and `@Today` macros to specify your user name or today's date.
@@ -121,7 +119,7 @@ To find work items based on a keyword or phrase contained within other text stri
 
 ## Use @Me or @Today macros
 
-The **@Me** macro expands to the full name of the current user in any work item search. The **@Me** macro is especially useful for creating a search that you can share with other users, and it can simplify your work by reducing the number of characters you must type to specify your own user name. For a description of all macros, see [Query fields, operators, and macros, Query macros or variables](query-operators-variables.md#macros). 
+The **@Me** macro expands to the full name of the current user in any work item search. The **@Me** macro is especially useful for creating a search that you can share with other users, and it can simplify your work by reducing the number of characters you must type to specify your own user name. For a description of all macros, see [Query fields, operators, and macros, Query macros or variables](query-operators-variables.md#macros). 
 
 <table width="100%">
 <tbody valign="top">
@@ -199,11 +197,11 @@ The following examples show how to use operators when you create a search string
 ## Related notes
 
 - [Adhoc versus managed queries](adhoc-vs-managed-queries.md)  
-- [Use the query editor to list and manage queries](using-queries.md)   
+- [Create managed queries with the query editor](using-queries.md)   
 - [Query fields, operators, and macros](query-operators-variables.md)   
 - [Work item field index](../work-items/guidance/work-item-field.md)     
 
-[!INCLUDE [temp](../_shared/image-differences.md)]
+[!INCLUDE [temp](../_shared/image-differences.md)]
 
 ### Does the search box support less than/greater than operators?
 

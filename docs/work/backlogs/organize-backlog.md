@@ -12,7 +12,7 @@ ms.date: 08/29/2017
 
 # Organize your backlog, map child work items to parents 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 
 After you've added [features or epics](define-features-epics.md) to your portfolio backlog, you can quickly organize your backlog by mapping backlog items to them. With features and epics, you can quickly add and group items into a hierarchy, drill up or down within the hierarchy, reorder and reparent items, and filter hierarchical views.   
@@ -29,7 +29,7 @@ In this topic you'll learn:
 
 
 ## Show parents and expand the tree hierarchy  
-From the product backlog page, set Parents to Show when you want to drill up or down within the hierarchy, set Parents to Show. You can also drag and drop items to reparent items from this view. 
+From the product backlog page, set **Parents** to **Show** when you want to drill up or down within the hierarchy. You can also drag and drop items to reparent items from this view. 
 
 <img src="_img/org-backlog-intro-show-parents-ts-new-nav.png" alt="Hierarchical view of backlogs" style="border: 1px solid #C3C3C3;" />  
 
@@ -50,7 +50,7 @@ Drag items that are currently unparented to the feature under which they belong.
 <img src="_img/org-backlog-map-pbi-to-feature-ts-new-nav.png" alt="Map a backlog item to a portfolio backlog work item" style="border: 1px solid #C3C3C3;" />  
 
 >[!NOTE]  
-><b>Feature availability: </b> Multi-select of work items on the backlog and sprint backlogs is supported from VSTS and TFS 2015.1 or later versions. This feature works in the same way as [multi-select works within query results](../backlogs/bulk-modify-work-items.md).   
+><b>Feature availability: </b> Multi-select of work items on the backlog and sprint backlogs is supported from VSTS and TFS 2015.1 or later versions. This feature works in the same way as [multi-select works within query results](../backlogs/bulk-modify-work-items.md).   
 
 It's the same process to map features to epics. From the Features backlog, drag features to an epic listed under the mapping pane.  
 
@@ -88,6 +88,6 @@ From the product backlog you can multi-select several work items and choose **Ch
 - [Select backlog navigation levels for your team](../customize/select-backlog-navigation-levels.md)
 - [Product backlog controls](product-backlog-controls.md)
 - [Filter product and portfolio backlogs ](filter-backlogs.md)
-
+- [Backlog keyboard shortcuts](backlogs-keyboard-shortcuts.md)
 
 [!INCLUDE [temp](../_shared/image-differences.md)]

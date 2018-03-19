@@ -9,6 +9,7 @@ ms.manager: douge
 ms.author: alewis
 ms.date: 12/20/2017
 ---
+[//]: # (monikerRange: 'vsts')
 
 # CI/CD Hello world
 
@@ -340,7 +341,7 @@ When you're ready to get going with CI/CD for your app, you can use the version 
 
  * [Xcode](../../git/share-your-code-in-git-xcode.md)
 
- * [IntelliJ](http://java.visualstudio.com/docs/tools/intellij)
+ * [IntelliJ](/vsts/java/download-intellij-plug-in)
 
  * [Command line](../../git/share-your-code-in-git-cmdline.md)
 

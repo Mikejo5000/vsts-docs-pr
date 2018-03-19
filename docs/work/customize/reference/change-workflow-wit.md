@@ -13,7 +13,7 @@ ms.date: 03/31/2017
 
 [!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)] 
 
-You can change the workflow for a work item type (WIT) to support your business and team processes. WITs support tracking all types of work─requirements, tasks, code defects─to support software development.  
+You can change the workflow for a work item type (WIT) to support your business and team processes. WITs support tracking all types of workâ”€requirements, tasks, code defectsâ”€to support software development.  
   
 The workflow determines the logical progression and regression of work that team members will perform. It also specifies the values that appear in the drop-down menus for the State and Reason fields. For an overview of the default workflow states supported in the default process templates, see [Choose a process](../../work-items/guidance/choose-process.md). 
 
@@ -28,7 +28,7 @@ The workflow determines the logical progression and regression of work that team
 > For information about build definition workflows, see [Get started with CI/CD](../../../build-release/actions/ci-cd-part-1.md).
 
 
-[!INCLUDE [temp](../../_shared/update-xml-wit.md)] 
+[!INCLUDE [temp](../../_shared/update-xml-wit.md)] 
 
 
 To customize the workflow, follow these two steps:   
@@ -78,7 +78,7 @@ The following code example shows the `WORKFLOW` for the Bug WIT definition for t
   
 This example doesn't list all the elements for `DEFAULTREASON`, `REASON`, `ACTION`, and `FIELD`.  
   
-**Example Workflow State Diagram – Agile Bug WIT**
+**Example Workflow State Diagram â€“ Agile Bug WIT**
 
 ![Bug workflow states, Agile process template](_img/procguide_bugworkflow.png "ProcGuide_BugWorkflow") 
   
@@ -164,9 +164,9 @@ You control the states to and from which team members can change a work item if 
   
 ```  
 <TRANSITION from="Closed" to="Active"  
-     for="[Project]\Testers"  
-      not="[Project]\Developers">  
-    . . .  
+   for="[Project]\Testers"  
+   not="[Project]\Developers">  
+   . . .  
 </TRANSITION>  
 ```  
 
@@ -183,16 +183,16 @@ You control the states to and from which team members can change a work item if 
   
 ```  
 <TRANSITION from="Active" to="Resolved">  
-   . . .  
-   <REASONS>  
-      <DEFAULTREASON value="Fixed"/>  
-      <REASON value="Deferred"/>  
-      <REASON value="Duplicate"/>  
-      <REASON value="As Designed"/>  
-      <REASON value="Unable to Reproduce"/>  
-      <REASON value="Obsolete"/>  
-   </REASONS>  
-   . . .  
+      . . .  
+      <REASONS>  
+      <DEFAULTREASON value="Fixed"/>  
+      <REASON value="Deferred"/>  
+      <REASON value="Duplicate"/>  
+      <REASON value="As Designed"/>  
+      <REASON value="Unable to Reproduce"/>  
+      <REASON value="Obsolete"/>  
+      </REASONS>  
+      . . .  
 </TRANSITION>  
   
 ```  
@@ -203,9 +203,9 @@ You control the states to and from which team members can change a work item if 
   
 ```  
 <TRANSITION from="Active" to="Resolved">  
-   <ACTIONS>  
-   <ACTION value="Microsoft.VSTS.Actions.Checkin"/>  
-   </ACTIONS>  
+      <ACTIONS>  
+      <ACTION value="Microsoft.VSTS.Actions.Checkin"/>  
+      </ACTIONS>  
 . . .  
 </TRANSITION>  
 ```  
@@ -235,16 +235,16 @@ You control the states to and from which team members can change a work item if 
 ```  
 <STATE value="Active">  
 <FIELDS>  
-   <FIELD refname="Microsoft.VSTS.Common.ActivatedBy">  
-      <COPY from="currentuser"/>  
-      <VALIDUSER/>  
-      <REQUIRED/>  
-   </FIELD>  
-   <FIELD refname="Microsoft.VSTS.Common.ActivatedDate">  
-      <SERVERDEFAULT from="clock"/></FIELD>  
-   <FIELD refname="System.AssignedTo">  
-      <DEFAULT from="currentuser"/>  
-   </FIELD>  
+      <FIELD refname="Microsoft.VSTS.Common.ActivatedBy">  
+      <COPY from="currentuser"/>  
+      <VALIDUSER/>  
+      <REQUIRED/>  
+      </FIELD>  
+      <FIELD refname="Microsoft.VSTS.Common.ActivatedDate">  
+      <SERVERDEFAULT from="clock"/></FIELD>  
+      <FIELD refname="System.AssignedTo">  
+      <DEFAULT from="currentuser"/>  
+      </FIELD>  
 . . .  
 </FIELDS>  
 </STATE>  
@@ -256,11 +256,11 @@ You control the states to and from which team members can change a work item if 
   
 ```  
 <STATE value="Active">  
-   <FIELDS>  
+      <FIELDS>  
 . . .  
-      <FIELD refname="Microsoft.VSTS.Common.ClosedDate"><EMPTY/></FIELD>  
-      <FIELD refname="Microsoft.VSTS.Common.ClosedBy"><EMPTY/></FIELD>  
-   </FIELDS>  
+      <FIELD refname="Microsoft.VSTS.Common.ClosedDate"><EMPTY/></FIELD>  
+      <FIELD refname="Microsoft.VSTS.Common.ClosedBy"><EMPTY/></FIELD>  
+      </FIELDS>  
 </STATE>  
 ```  
  
@@ -270,12 +270,12 @@ You control the states to and from which team members can change a work item if 
   
 ```  
 <STATE value="Resolved">  
-   <FIELDS>  
+      <FIELDS>  
 . . .  
-      <FIELD refname="Microsoft.VSTS.Common.ResolvedReason">  
-         <COPY from="field" field="System.Reason"/>  
-      </FIELD>  
-   </FIELDS>  
+      <FIELD refname="Microsoft.VSTS.Common.ResolvedReason">  
+         <COPY from="field" field="System.Reason"/>  
+      </FIELD>  
+      </FIELDS>  
 </STATE>  
 ```  
   

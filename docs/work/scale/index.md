@@ -11,7 +11,7 @@ ms.date: 10/04/2017
 
 # Agile at Scale  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 Manage portfolios and gain visibility across teams. For guidance on adding teams, see [Scale & Configure teams](../../teams/index.md).
 
@@ -38,6 +38,12 @@ Manage portfolios and gain visibility across teams. For guidance on adding teams
 - [Configure team settings](manage-team-assets.md) 
 - [Set team defaults](set-team-defaults.md) 
 - [Scaled Agile Framework](scaled-agile-framework.md)   
+
+
+## Reference
+- [Permissions & access for work tracking](../../security/permissions-access-work-tracking.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json)
+- [Delivery plan keyboard shortcuts](delivery-plan-keyboard-shortcuts.md)  
+
 
 ## Resources  
 - [Scale & Configure Teams](../../teams/index.md)

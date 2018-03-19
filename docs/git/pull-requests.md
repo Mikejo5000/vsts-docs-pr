@@ -6,8 +6,9 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-git 
 ms.manager: douge
 ms.author: sdanie
-ms.date: 12/14/2017
+ms.date: 03/14/2018
 ---
+[//]: # (monikerRange: '>= tfs-2013')
 
 #  Review code with pull requests
 
@@ -23,7 +24,7 @@ Reviewers can step through the proposed changes, leave comments, and vote to app
 New to pull requests? [Learn more](https://www.visualstudio.com/learn/git-pull-requests/) about how to get feedback with Git pull requests.
 
 > [!NOTE]
-> You can manage pull requests and other resources in VSTS and Team Foundation Server 2017 Update 2 or later from the command line with the **[VSTS CLI (Preview)](https://docs.microsoft.com/en-us/cli/vsts/overview?view=vsts-cli-latest)**.
+> You can manage pull requests and other resources in VSTS and Team Foundation Server 2017 Update 2 or later from the command line with the **[VSTS CLI (Preview)](https://docs.microsoft.com/cli/vsts/overview?view=vsts-cli-latest)**.
 
 ## Create a new pull request
 
@@ -96,6 +97,18 @@ Change the pull request title, add a detailed description, add reviewers, link w
 
 Don't worry if you don't have all of the work items, reviewers, or details ready when you create your pull request - you can add them now when you create the pull request, and you can also add or update all of these items later after you create the pull request.
 
+### Help reviewers using pull request labels
+
+Sometimes it's important to communicate extra information about a pull request to the reviewers. Maybe the pull request is still a work in progress, or it's a hotfix for an upcoming release - so you append some extra text in the title, perhaps a "[WIP]" prefix or "DO NOT MERGE". Labels now provide a way to tag pull requests with extra information that can be used to communicate important details and help organize pull requests.
+
+![PR request labels](_img/pull-requests/pull-request-labels.png)
+
+To add a label when creating a pull request, choose **Add label**. After a pull request is created you can manage labels in the **Labels** section.
+
+![Add pull request label](_img/pull-requests/add-pull-request-label.png)
+
+In a future release, we'll make labels even more useful by making it easier to filter pull requests using labels.
+
 ### Add and remove reviewers
 
 Add reviewers to your pull request. 
@@ -114,6 +127,8 @@ Add reviewers to your pull request.
 
 <a name="prlinkeditems"></a>
 <a name="addworkitemstopr"></a>
+
+
 
 ### Link work items
 
@@ -147,9 +162,20 @@ Keep these fields up to date so reviewers know what the changes in the pull requ
 ## Manage your pull requests
 
 Manage pull requests you own or are assigned to with the **Pull Requests** tab in the Code view on the web.
-Select **Active** to show all active pull requests for the current repo. Select **Completed** or **Abandoned** to bring up a history of closed pull requests. 
+
+[//]: # (::: moniker range=">= tfs-2017") 
+
+Select **Active** to show all active pull requests for the current repo. 
+
+[//]: # (::: moniker-end) 
+
+[//]: # (::: moniker range=">= tfs-2017") 
+
+Select **Completed** or **Abandoned** to bring up a history of closed pull requests. 
 
 ![Viewing completed and abandoned pull requests in VSTS](_img/pull-requests/pr_status_widget.png) 
+
+[//]: # (::: moniker-end) 
 
 ## Review a pull request 
 
@@ -158,9 +184,16 @@ Review the title, description, and discussion to get an understanding of the pro
 
 ![Pull request overview](_img/pull-requests/pull-request-overview.png)
 
+If you need to make a change to the code as part of your review, starting with Visual Studio 2017 Update 6 you can checkout the source branch from a pull request directly from the **Pull Requests** view in **Team Explorer**. Right-click the desired pull request and choose **Checkout Source Branch**.
+
+![Checkout source branch](./_img/pull-requests/checkout-pr-source-branch.png)
+
 ### Browse code changes
 
-Select the **Files** tab to view the changes made to the source branch relative to the target branch of the pull request.    
+Select the **Files** tab to view the changes made to the source branch relative to the target branch of the pull request.
+
+>[!NOTE]
+>The size limit for files in the files view and the diff view is 5 MB. To view and diff files larger than 5 MB, you can download the file and view it using a local diff tool on your machine.
 
 ![Pull request files](_img/pull-requests/pull-request-files.png)
 
@@ -216,8 +249,7 @@ Vote on the changes in a pull request by choosing an option from the button on t
 - **Reject**: The changes aren't acceptable. If you are voting this way, you should leave a comment in the pull request detailing why the changes were rejected.    
 - **Reset feedback**: Choose **Reset feedback** to remove your vote.
 
-The number of required approvals in a pull request can be set from the [branch policy](branch-policies.md) for the branch. Pull requests can be completed if the number of required approvals is met, even if other reviewers have rejected the changes.
-Votes in a pull request do not reset when new code is pushed to the branch - make sure you have [notifications](#notifications) enabled if you want to review your vote as the code changes.
+The number of required approvals in a pull request can be set from the [branch policy](branch-policies.md) for the branch. Pull requests can be completed if the number of required approvals is met, even if other reviewers have rejected the changes. Votes in a pull request can optionally be reset when new code is pushed to the branch by checking **Reset code reviewer votes when there are new changes** when configuring the [Require a minimum number of reviewers](branch-policies.md#require-a-minimum-number-of-reviewers) branch policy.
 
 ![List of Pull Request voters in VSTS ](./_img/pull-requests/Approval.png)
 
@@ -253,6 +285,8 @@ Linked work items are also updated showing the pull request completion.
 
 ![Linked Work Items showing completed pull requests](./_img/pull-requests/pr_workitem_complete.png)
 
+[//]: # (::: moniker range=">= tfs-2017") 
+
 ### Complete automatically
 
 Select **Auto-complete** from the **Complete** button drop-down to complete the pull request and merge the changes as soon as all [branch policies](branch-policies.md) are met.
@@ -267,12 +301,16 @@ Select **Cancel auto-complete** to turn off auto-complete and return the pull re
 >[!NOTE]
 >The **Auto-complete** option is available in VSTS and TFS 2017 and higher, and is only present when you have branch policies that must be satisfied before the pull request can be completed. If you don't see **Auto-complete**, it is because you don't have any branch policies. For more information, see [Branch policies](branch-policies.md).
 
+[//]: # (::: moniker-end) 
+
 ### Abandon your changes
 
 Abandon pull requests when you decide the work in the feature branch should not be merged by selecting **Abandon** from the drop-down on the **Complete** button.
 The abandoned pull request will still be viewable on the web and stays linked to work items.
 
 Reactivate an abandoned pull request at any time by selecting the pull request from the **Abandoned** tab in the **Pull Request** view and selecting  **Reactivate**.
+
+[//]: # (::: moniker range=">= tfs-2017") 
 
 <a name="notifications"></a>
 ## Receiving notification of pull request updates
@@ -295,6 +333,7 @@ Subscribe to email alerts to get notified when changes are made to your pull req
   ![Notifications](./_img/pull-requests/view-pr-notifications.png)
 
 
+
 ## Revert a pull request
 
 Undo the changes made in a pull request by opening the completed pull request and selecting **Revert**. When you revert a pull request in this way, you create a new branch with changes that will
@@ -313,6 +352,8 @@ Cherry-picking a pull request in this way creates a new branch with the copied c
 
 In the dialog that appears, enter the branch you want to merge the copied changes into in the **Target branch** field and a new branch that will contain the copied changes in the **Topic branch name** field, then select **Cherry-pick**.
 If there are no conflicts between the target branch and the newly created topic branch, you can then select **Create pull request** to merge the topic branch into the target branch to complete the cherry-pick.
+
+[//]: # (::: moniker-end) 
 
 ## Set a new default branch    
 

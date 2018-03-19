@@ -12,7 +12,7 @@ ms.date: 11/28/2017
 
 # Filter backlogs or queries
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
 
 <!--- NEEDS UPDATING BASED ON FEATURES UNDER RELEASE  --> 
 <a id="filter"></a>
@@ -52,7 +52,7 @@ To learn more about filtering using tags, see [Add tags to work items to categor
 ## Related notes  
 - [Tags](../track/add-tags-to-work-items.md) 
 - [Set column options](set-column-options.md)  
-
+- [Backlog keyboard shortcuts](backlogs-keyboard-shortcuts.md)
 
 ### Characters ignored by filter criteria
 
