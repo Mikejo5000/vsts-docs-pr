@@ -118,6 +118,7 @@ charges cannot be split across multiple Azure subscriptions.
 
 A:  Yes, you can use the same Azure subscription for billing across multiple VSTS accounts. But you can't link a single VSTS account to multiple Azure subscriptions.
 
+<a name="find-owner"></a>
 ###Q:	How do I find a project collection administrator?
 
 A: You can find your [project collection administrator](../security/set-project-collection-level-permissions.md) in your VSTS account's security settings.
@@ -154,7 +155,13 @@ A:  Yes you can, if your reseller participates in the Cloud Solution Provider (C
 * [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
 * [Package Management](https://marketplace.visualstudio.com/items?itemName=ms.feed)
 
+## Related information
 
+* [Set up billing](set-up-billing-for-your-account-vs.md)
+* [Add backup billing managers](add-backup-billing-managers.md)
+* [Change the Azure subscription for billing](change-azure-subscription.md)
+* [VSTS pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
+* [VSTS billing support](https://www.visualstudio.com/team-services/support/)
 
 
 

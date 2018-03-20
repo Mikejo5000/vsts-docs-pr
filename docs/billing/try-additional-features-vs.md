@@ -7,7 +7,7 @@ ms.technology: vs-devops-setup
 ms.assetid: 435fb3a4-1766-4172-928d-80c09cfb1410
 ms.manager: douge
 ms.author: chcomley
-ms.date: 3/13/2018
+ms.date: 3/19/2018
 ---
 [//]: # (monikerRange: 'vsts')
 
@@ -33,7 +33,7 @@ This same process applies to paid extensions offered by other publishers within 
 
 ## Who can start these trials?
 
-As the VSTS [account owner or project collection administrator](faq-billing-setup.md#find-owner), you can start trials for your VSTS account. 
+As the VSTS [account owner or project collection administrator](faq-azure-billing.md#find-owner), you can start trials for your VSTS account. 
 All other users can [request extensions](../marketplace/install-vsts-extension.md).
 
 ##  Start a trial for your VSTS account
@@ -74,6 +74,8 @@ If you lose access because the trial expired before you could purchase, just buy
 
 ## Related information
 
+- [VSTS billing overview](overview.md)
+- [VSTS billing FAQ](faq-azure-billing.md)
 - [Set up billing](set-up-billing-for-your-account-vs.md)
 - [Add backup billing managers](add-backup-billing-managers.md)
 - [Change the Azure subscription for billing](change-azure-subscription.md)

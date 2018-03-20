@@ -47,7 +47,7 @@ You will also need these same permissions/roles to make subsequent changes, such
 
 * [Set up billing](set-up-billing-for-your-account-vs.md)
 * [Add backup billing managers](add-backup-billing-managers.md)
-* [Troubleshoot VSTS billing] (faq-billing-setup.md)
+* [VSTS billing FAQ] (faq-azure-billing.md)
 * [Change the Azure subscription for billing](change-azure-subscription.md)
 * [VSTS pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
 * [VSTS billing support](https://www.visualstudio.com/team-services/support/)

@@ -6,7 +6,7 @@ ms.technology: vs-devops-setup
 ms.assetid: 4a6f0af1-aee7-404a-a566-da7922127c69
 ms.manager: douge
 ms.author: chcomley
-ms.date: 3/13/2018
+ms.date: 3/19/2018
 ---
 [//]: # (monikerRange: 'vsts')
 
@@ -43,7 +43,7 @@ When the trial is over and you've chosen to purchase, you will then be able to
 
 ### Q: Who can start a trial?
 
-A: You must be the VSTS [account owner or project collection administrator](faq-billing-setup.md#find-owner)
+A: You must be the VSTS [account owner or project collection administrator](faq-azure-billing.md#find-owner)
 to start a trial. If you don't have permissions, you can [request the extension](../marketplace/request-vsts-extension.md) instead.
 
 ### Q: How do I cancel my trial?
@@ -65,12 +65,13 @@ only be able to assign up to the number of free plus paid users included in your
 free users, you can assign Package Management to 5 users at any time. If you buy 6 additional Package Management users, then you would be able to 
 assign Package Management to 11 total users in your account.
 
-## Resources
+## Related information
+
 - [assign features or extensions to users](../marketplace/assign-paid-extensions.md)
 - [buy or change the number of paid users for a feature or extension](../billing/change-number-paid-extension-users.md) 
 - [Set up billing](set-up-billing-for-your-account-vs.md)
 - [Add backup billing managers](add-backup-billing-managers.md)
-- [Troubleshoot VSTS billing] (faq-billing-setup.md)
+- [VSTS billing FAQ] (faq-azure-billing.md)
 - [Change the Azure subscription for billing](change-azure-subscription.md)
 - [VSTS pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
 - [VSTS billing support](https://www.visualstudio.com/team-services/support/)

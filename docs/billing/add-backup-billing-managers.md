@@ -37,5 +37,11 @@ If needed, you can [pay for more users](buy-basic-access-add-users.md).
 
 Learn more about [adding roles in the Azure portal](https://docs.microsoft.com/en-us/azure/active-directory/role-based-access-control-configure#add-access).
 
+## Related information
 
-[Troubleshooting](faq-billing-setup.md)
+* [VSTS billing overview](overview.md)
+* [Set up billing](set-up-billing-for-your-account-vs.md)
+* [VSTS billing FAQ] (faq-azure-billing.md)
+* [Change the Azure subscription for billing](change-azure-subscription.md)
+* [VSTS pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
+* [VSTS billing support](https://www.visualstudio.com/team-services/support/)

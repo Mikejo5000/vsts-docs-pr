@@ -61,9 +61,9 @@ Select your VSTS account.
 
 ## Related information
 
-- [Billing overview](overview.md)
+- [VSTS billing overview](overview.md)
+- [VSTS billing FAQ](faq-azure-billing.md)
 - [Add backup billing managers](add-backup-billing-managers.md)
 - [Change the Azure subscription for billing](change-azure-subscription.md)
 - [VSTS pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
 - [VSTS billing support](https://www.visualstudio.com/team-services/support/)
-- [Troubleshooting](faq-billing-setup.md)
