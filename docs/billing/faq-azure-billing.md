@@ -124,11 +124,11 @@ A: You can find your [project collection administrator](../security/set-project-
 
 0.	Go to your VSTS account's security settings. 
 
-	<img alt="Click gear button, Security" src="./_shared/_img/account-settings-new-ui.png" style="border: 1px solid #CCCCCC" />
+	<img alt="Click gear button, Security" src="../_shared/_img/account-settings-new-ui.png" style="border: 1px solid #CCCCCC" />
 
 0.	Under **Security**, view your project collection administrators.
 
-	<img alt="Go to Project Collection Administrators, Members" src="./_shared/_img/collection-manage-security-groups-new-ui.png" style="border: 1px solid #CCCCCC" />
+	<img alt="Go to Project Collection Administrators, Members" src="../_shared/_img/collection-manage-security-groups-new-ui.png" style="border: 1px solid #CCCCCC" />
 
 ###Q:	How do I find the account owner?
 
@@ -136,11 +136,11 @@ A: You can find the current owner in your VSTS account settings.
 
 0.	Go to your VSTS account settings.
 
-	<img alt="Go to account settings" src="./_shared/_img/account-settings-new-ui.png" style="border: 1px solid #CCCCCC" />
+	<img alt="Go to account settings" src="../_shared/_img/account-settings-new-ui.png" style="border: 1px solid #CCCCCC" />
 
 0.	Under **Settings**, find the current owner.
 
-	<img alt="Find current owner" src="./_shared/_img/account-owner-new-ui.png" style="border: 1px solid #CCCCCC" />
+	<img alt="Find current owner" src="../_shared/_img/account-owner-new-ui.png" style="border: 1px solid #CCCCCC" />
 
 ### Q: Can I buy VSTS from my software reseller?
 
