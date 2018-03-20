@@ -33,10 +33,11 @@ In VSTS accounts backed by [Azure Active Directory](/azure/active-directory/), i
 Project members have access to resources beyond the specific project.
 Those resources are:
 
-* All the [features that are unavailable for non-member access](feature-differences.md), such as TFVC, Agile boards & backlogs, and WIT queries
+* All [VSTS features](feature-differences.md), such as TFVC, Agile boards & backlogs, and WIT queries
 * Information about other members, including their email address and other contact details, that is hidden from non-members
 * All installed extensions, including paid extensions (if you assign a license)
 * [Process model](../work/customize/process/manage-process.md) metadata, such as the valid values of all picklists in the account
+* The settings area, including the list of users
 * Higher [rate limits](../collaborate/rate-limits.md) than an anonymous user
 
 ## Making a trust decision
