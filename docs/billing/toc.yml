@@ -60,8 +60,6 @@
       href: csp/buy-vs-app-center.md
 - name: Troubleshooting
   items:
-  - name: Pay for more Basic users
-    href: faq-pay-for-basic-users.md
   - name: VSTS trials FAQ
     href: faq-extension-trials.md
 - name: Reference

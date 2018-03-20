@@ -38,57 +38,24 @@ A:  To access the Users hub and manage users, you must have
 
 <a name="MSDNSubscriber"></a>
 
-#### Q: When do I select "Visual Studio/MSDN Subscriber"?
+#### Q: When do I select "Visual Studio subscriber"?
 
-A: Assign this access level to users who have active and valid 
+A: Choose this access level for users who have active  
 [Visual Studio subscriptions](#EligibleMSDNSubscriptions). 
 You'll need the email address that's associated with this subscription.
 VSTS automatically recognizes and validates Visual Studio 
 subscribers who have VSTS as a benefit.
 
-For example, if you select "Visual Studio/MSDN Subscriber", 
+For example, if you select "Visual Studio subscriber", 
 but you don't have a valid and active Visual Studio subscription, you can only 
 [work as a stakeholder](../security/get-started-stakeholder.md).
 
 <a name="EligibleMSDNSubscriptions"></a>
 #### Q: Which Visual Studio subscriptions can I use with VSTS?
 
-A:  These subscriptions include VSTS at no extra charge 
-([check here for the current list](https://azure.microsoft.com/en-us/pricing/details/visual-studio-team-services/)):
-
-*	Visual Studio Enterprise - monthly
-*	Visual Studio Enterprise - annual
-*	Visual Studio Enterprise with MSDN, 
-including subscriptions offered through BizSpark and Microsoft Partner Network (MPN)
-*	Visual Studio Professional - monthly
-*	Visual Studio Professional - annual
-*	Visual Studio Professional with MSDN
-*	Visual Studio Test Professional with MSDN
-*	MSDN Platforms
-
-Not eligible:
-
-*	MSDN Operating Systems
-*	MSDN Essentials
-*	Visual Studio Professional -- from the Microsoft Partner Network (MPN) "Action Pack" program
-
-Learn more about [Visual Studio subscriptions](https://www.visualstudio.com/vs/pricing/).
+A:  Review [Visual Studio subscription benefits](https://www.visualstudio.com/vs/pricing/).
 
 <a name="enterprise-professional"></a>
-
-#### Q: Which specific subscriptions do "Visual Studio Enterprise subscription" and "Visual Studio Professional subscription" include? 
-
-A: "Visual Studio Enterprise subscription" can describe:
-
-*	Visual Studio Enterprise - monthly
-*	Visual Studio Enterprise - annual
-*   Visual Studio Enterprise with MSDN
-
-"Visual Studio Professional subscription" can describe:
-
-*	Visual Studio Professional - monthly
-*	Visual Studio Professional - annual
-*   Visual Studio Professional with MSDN
 
 <a name="ValidateMSDNSubscription"></a>
 
@@ -96,8 +63,8 @@ A: "Visual Studio Enterprise subscription" can describe:
 
 A: This might happen for different reasons: 
 
-*	Make sure that you have an active, valid, and 
-[eligible Visual Studio subscription](#EligibleMSDNSubscriptions) 
+*	Make sure that you have an active 
+[Visual Studio subscription](#EligibleMSDNSubscriptions) 
 that you can use with VSTS. 
 
 *	You might experience a delay if your subscription is new.
@@ -126,42 +93,6 @@ A: If no other access levels are available, they'll
 To restore access, they must renew their subscription.
 
 <a name="extension-transition"></a>
-
-#### Q: What happened to Visual Studio Online Professional?
-
-A: On December 1, 2015, we replaced Visual Studio Online Professional with the 
-[Visual Studio Professional monthly subscription](https://marketplace.visualstudio.com/items/ms.vs-professional-monthly) 
-and will transition users automatically. While Visual Studio Online Professional 
-purchases now appear as Visual Studio Professional monthly subscriptions on your monthly invoice, 
-we haven't determined when users will be transitioned systematically. 
-This transition provides an upgrade by offering access to unlimited 
-VSTS accounts, not just one account, like Visual Studio Online Professional. 
-The rest stays the same - monthly access to the Visual Studio Professional IDE, 
-and pricing remains at $45 per user, per month.
-Learn more about [Visual Studio subscriptions](https://www.visualstudio.com/products/how-to-buy-vs).
-
-If you're buying Professional users for a specific VSTS account,
-which is possible only if you bought before November 2015,
-and want to upgrade, do this:
-	
-0. Before the last day of the calendar month, 
-sign in to the [Azure portal](https://portal.azure.com), 
-and reduce the number of paid Visual Studio Online Professional 
-users to 0. 
-
-	This change will take effect on the 1st day of next month. 
-	This means that in the next calendar month, 
-	you won't be billed for Visual Studio Online Professional users at all.
-
-0. On the 1st day of the next calendar month, 
-[go to the Marketplace](https://marketplace.visualstudio.com/items/ms.vs-professional-monthly) 
-and buy Visual Studio Professional monthly subscriptions for the same users. 
-Learn [how to buy Visual Studio subscriptions](../billing/vs-subscriptions/buy-vs-subscriptions.md).
-
-	**Note** If you want to use your monthly Azure credits as a Visual Studio subscriber to pay for users, 
-	make sure to remove your subscription's default spending limit indefinitely. 
-	[Learn more](../billing/faq-billing-setup.md#EligibleAzureSubscriptions).
-
 
 ## User access
 
