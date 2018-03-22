@@ -36,7 +36,6 @@ Create a public project, make an existing project public, or work in a public pr
  
 ## Concepts
 * [Default roles and permissions](default-roles-access-public.md) 
-* [Inviting outside users](inviting-outside-users.md)
 * [Recommendations when moving a private project to public](migration-checklist.md)
 
 ## How-to Guides
