@@ -51,9 +51,9 @@ Start a line with a hash character `#` to set a heading. Organize your remarks w
 
 Make your text easier to read by breaking it up with paragraphs or line breaks.  
 
-In pull request comments and the wiki, press Enter to insert a line break and begin text on a new line. 
+In pull request comment, press Enter to insert a line break and begin text on a new line. 
 
-In a Markdown file or widget, enter two spaces prior to the line break to begin a new paragraph, or enter two line breaks consecutively to begin a new paragraph.   
+While in a Markdown file, wiki, or widget, enter two spaces prior to the line break to begin a new paragraph, or enter two line breaks consecutively to begin a new paragraph.   
 
 **Example - pull request comment:**
 
@@ -67,7 +67,7 @@ Add lines between your text with the Enter key.
 This spaces your text better and makes it easier to read.
 
 
-**Example - markdown file or widget:**
+**Example - markdown file, widget, or wiki:**
 
 <pre>
 Add two spaces prior to the end of the line.(space, space)     
