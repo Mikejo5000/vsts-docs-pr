@@ -14,8 +14,6 @@ ms.date: 02/20/2018
 
 # Inviting outside users
 
-**Azure CodeX Public Project**
-
 The team project is a container and security boundary for your software development assets: work items, code, builds, etc.
 A non-member can access only the contents of a public project and nothing else in your account.
 A project member, on the other hand, has access to account-level resources and additional groups (or scopes) beyond the project.

@@ -19,11 +19,11 @@ ms.date: 02/20/2018
 
 ## Anonymous User	
 
-An unauthenticated user of a project. The user is visiting a project and has not signed in to an Azure CodeX account. 
+An unauthenticated user of a project. The user is visiting a project and has not signed in to an account. 
 
 ## Basic or premium user	
 
-An authenticated user of a project who was granted membership to an Azure CodeX account as a Basic User (or Premium user in Premium accounts).
+An authenticated user of a project who was granted membership to an account as a Basic User (or Premium user in Premium accounts).
 
 ## Non-member User
 
@@ -48,23 +48,23 @@ Org Project	Projects that are visible to everyone in the Organization (AAD tenan
 -->
 
 ## Private Project	
-A team project created within an Azure CodeX account that are visible only to members of the account hosting the project. Only account members can discover them.
+A team project created within an account that is visible only to members of the account hosting the project. Only account members can discover them.
 
 Administrators can control who gets to fully contribute.
 
 ## Public project	
 
-A team project created within an Azure CodeX account that are visible to the whole world. Everyone in the world can discover them and perform limited operations.
+A team project created within an account that is visible to the whole world. Everyone in the world can discover them and perform limited operations.
 
 Administrators can control who gets to fully contribute.
 
 ## Public user	
-An authenticated user of a project who is not a member of an Azure CodeX account. 
+An authenticated user of a project who is not a member of an account. 
 <!---Signed in. Neither member nor guest of the AAD tenant. Not a member of the account.-->
 
 
 ## Stakeholder	
 
-An authenticated user of a project who was granted membership an Azure CodeX account as a Stakeholder.
+An authenticated user of a project who was granted membership an account as a Stakeholder.
 
 

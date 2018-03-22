@@ -15,15 +15,15 @@ ms.date: 02/20/2018
 
 # Differences and limitations for non-members of a public project
 
-**Azure CodeX Public Project**
+[!INCLUDE [temp](_shared/version-public-projects.md)]
 
-In a public project, most CodeX features work the same for members and non-members.
+In a public project, most features work the same for members and non-members.
 Non-members get read-only access to the project, and members have the access their permissions specify.
 There are some features which work differently or are completely unavailable for non-members.
 Over time, we intend to reduce the number of differences and increase the availability of other features.
 
 ## Read-only access and permissions-based UI
-CodeX has a permissions-driven user interface.
+VSTS has a permissions-driven user interface.
 If a user doesn't have the permissions needed to complete an action, gestures for attempting that action will be disabled or hidden.
 By default, inaccessible commands are disabled, minimizing the layout changes that would be needed if elements could appear and disappear.
 For example, for a user lacking permission to create pull requests, the "Create pull request" button will be disabled.
