@@ -6,10 +6,9 @@ ms.technology: vs-devops-setup
 ms.assetid: A93C7909-4F5B-4758-B6CE-8DE127A91FB9
 ms.manager: douge
 ms.author: chcomley
-ms.date: 3/13/2018
-monikerRange: 'vsts'
+ms.date: 3/22/2018
 ---
-
+[//]: # (monikerRange: 'vsts')
 
 #  How to buy cloud-based load testing in VSTS
 
