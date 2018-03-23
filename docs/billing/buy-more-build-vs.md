@@ -67,7 +67,7 @@ sign in to either:
   select the Azure subscription that you want to use.
   Or if you don't have an Azure subscription,
   create a new subscription now to use for billing.
-  [More about Azure subscriptions for billing](faq-pay-for-basic-users.md#billing)
+  [VSTS billing FAQ](vsts-billing-faq.md)
 
   ![Confirm or select your Azure subscription](_img/get-more-build-load-testing/select-azure-subscription.png)
 

@@ -43,8 +43,6 @@ make sure that you use a [supported browser](https://azure.microsoft.com/documen
 
 ![Browse, VSTS accounts, select your account](_img/_shared/ap_vso_selectlinkedaccount.png)
 
-[Why don't I see my VSTS account?](faq-pay-for-basic-users.md#WhyNoVSOAccount)
-
 0. Select **cloud-based load testing**.
 
 ![Click Settings, select cloud-based load testing](_img/get-more-build-load-testing/ap_vso_manageservices.png)
