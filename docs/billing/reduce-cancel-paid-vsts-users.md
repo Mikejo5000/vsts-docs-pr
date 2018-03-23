@@ -26,7 +26,7 @@ you can reduce the number of paid VSTS users in your account and the changes tak
 
 The first time that you set up billing for your VSTS account--whether you do this via the Azure portal or as part of making a purchase in the Visual Studio Marketplace, you will need:
 
-0. [VSTS project collection administrator or account owner permissions](../accounts/faq-add-delete-users.md#find-owner)
+0. [VSTS project collection administrator or account owner permissions](vsts-billing-faq.md#find-owner)
 0. [The **owner** or **contributor** role on your Azure subscription](add-backup-billing-managers.md)
 
 To make subsequent edits to paid quantities in your VSTS account, you only need the owner or contributor role on your Azure subscription.
@@ -44,7 +44,7 @@ To make subsequent edits to paid quantities in your VSTS account, you only need 
 	<p><a data-toggle="collapse" href="#expando-why-no-ts-account">Don't see your VSTS accounts? &#x25BC;</a></p>
 	<div class="collapse" id="expando-why-no-ts-account">
 	<p>To select your VSTS account here, you must have have VSTS
-	[project collection administrator or account owner permissions](faq-pay-for-basic-users.md#FindOwnerPCA).
+	[project collection administrator or account owner permissions](vsts-billing-faq.md#find-owner).
 	</div>
 
 3. Update the number of paid users. To cancel all your paid users, reduce this number to zero (0).

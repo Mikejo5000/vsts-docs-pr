@@ -42,7 +42,7 @@ When the trial is over and you've chosen to purchase, you will then be able to
 
 ### Q: Who can start a trial?
 
-A: You must be the VSTS [account owner or project collection administrator](faq-azure-billing.md#find-owner)
+A: You must be the VSTS [account owner or project collection administrator](vsts-billing-faq.md#find-owner)
 to start a trial. If you don't have permissions, you can [request the extension](../marketplace/request-vsts-extension.md) instead.
 
 ### Q: How do I cancel my trial?
