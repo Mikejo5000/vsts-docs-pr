@@ -85,10 +85,10 @@ To assign extensions, you'll need VSTS [project collection administrator or acco
 
 ## Related information
 
-- [Troubleshoot installing extensions](./billing/faq-extensions.md)
-- [Set up billing](./billing/set-up-billing-for-your-account-vs.md)
-- [Add backup billing managers](./billing/add-backup-billing-managers.md)
-- [Change the Azure subscription for billing](./billing/change-azure-subscription.md)
-- [VSTS billing FAQ](./billing/vsts-billing-faq.md)
+- [Troubleshoot installing extensions](../billing/faq-extensions.md)
+- [Set up billing](../billing/set-up-billing-for-your-account-vs.md)
+- [Add backup billing managers](../billing/add-backup-billing-managers.md)
+- [Change the Azure subscription for billing](../billing/change-azure-subscription.md)
+- [VSTS billing FAQ](../billing/vsts-billing-faq.md)
 - [VSTS pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
 - [VSTS billing support](https://www.visualstudio.com/team-services/support/)
