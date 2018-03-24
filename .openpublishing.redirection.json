@@ -4950,6 +4950,11 @@
         "source_path": "docs/marketplace/how-to/change-paid-extension-users.md",
         "redirect_url": "/vsts/billing/change-number-paid-extension-users",
         "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/marketplace/billing-overview.md",
+        "redirect_url": "/vsts/billing/overview",
+        "redirect_document_id": false
        } 
     ]
 }
