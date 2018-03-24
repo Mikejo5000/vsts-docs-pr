@@ -7,11 +7,9 @@ ms.technology: vs-devops-marketplace
 ms.assetid: b30a4604-d34d-43d4-9de9-02f1fea108ea
 ms.manager: douge
 ms.author: elbatk
-ms.date: 9/27/2017
+ms.date: 03/24/2018
 monikerRange: '>= tfs-2013 < vsts'
 ---
-
- 
 
 # Team Foundation Server extension FAQs
 
@@ -111,14 +109,14 @@ for the Team Foundation Server where you want to upload extensions.
 
 <!-- ENDSECTION --> 
 
+<a name="get-support"></a>
+
+[!INCLUDE [marketplace-support](_shared/qa-marketplace-support.md)]
+
 <a name="billing"></a>
 
 ## Purchases & billing
 
 - [VSTS billing overview](../billing/overview.md)
 - [VSTS billing FAQ](../billing/vsts-billing-faq.md)
-- [How to pay for TFS users(../billing/buy-access-tfs-test-hub.md)
-
-<a name="get-support"></a>
-
-[!INCLUDE [marketplace-support](_shared/qa-marketplace-support.md)]
+- [How to pay for TFS users](../billing/buy-access-tfs-test-hub.md)
