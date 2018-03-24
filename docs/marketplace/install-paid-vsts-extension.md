@@ -31,8 +31,9 @@ to bill your purchase. If you don't have an Azure subscription, you can create a
 > [add you as Co-administrator](https://docs.microsoft.com/en-us/azure/billing-add-change-azure-subscription-administrator) 
 > to the Azure subscription that you want to use for billing. Co-administrator permissions are available only in the classic Azure portal.
 
-Your VSTS account will reuse your Azure subscription for future Visual Studio Marketplace purchases or for VSTS purchased through Azure, 
-like Cloud-based Load Testing. [Where can I find more info about Azure billing?](./faq-extensions.md#billing)
+[VSTS billing overview](../billing/overview.md)
+
+[VSTS billing FAQ](../billing/vsts-billing-faq.md)
 
 
 ## Find and buy the extension

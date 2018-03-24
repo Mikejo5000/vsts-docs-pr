@@ -6,7 +6,7 @@ ms.technology: vs-devops-setup
 ms.assetid: efbb3c0f-3128-4b34-bd3b-82f31677293f 
 ms.manager: douge
 ms.author: chcomley
-ms.date: 3/22/2018
+ms.date: 3/24/2018
 ---
 [//]: # (monikerRange: '>= tfs-2015')
 
@@ -20,7 +20,7 @@ You'll need VSTS
 
 > [!IMPORTANT]
 > To stop paying for an extension, reduce the number of paid users to zero (0). 
-> [How do you bill changes in users?](../marketplace/faq-extensions.md#bill-period)
+> [VSTS billing FAQ](vsts-billing-faq.md)
 
 0.	Sign in to your VSTS account 
 (```https://{youraccount}.visualstudio.com```).
