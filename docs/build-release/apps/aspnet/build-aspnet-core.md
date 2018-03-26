@@ -121,9 +121,20 @@ Begin by creating your build definition.
 
  You are taken to the **Build and Release** hub and asked to **Select a template** for the new build definition.
 
+::: moniker range="tfs-2017"
+
+1. In the right panel, select **ASP.NET Core (PREVIEW)**, and then choose **Apply**.
+
+::: moniker-end
+
+::: moniker range=">= tfs-2018"
+
 1. In the right panel, select **ASP.NET Core**, and then choose **Apply**.
 
  ![Screenshot showing dotnet core template](_shared/_img/apply-aspnet-core-build-template.png)
+
+::: moniker-end
+
 
 # [VSTS or TFS repo](#tab/gitvsts/yaml)
 
