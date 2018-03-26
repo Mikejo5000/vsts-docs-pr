@@ -31,7 +31,7 @@ Here's what you need to know about permission settings:
 
 -   **Not set** implicitly denies users the ability to perform tasks that require that permission, but allows membership in a group that does have that permission set to take precedence, also known as **Allow (inherited)** or **Inherited allow** and **Deny (inherited)** or **Inherited deny**.  
 
--   **Allow(policy)** explicitly grants users permission to perform specific tasks. This permissions has been set by us based on your project visibility and it is non-editable. 
+-   **Allow(policy)** explicitly grants users permission to perform specific tasks. This is a non-editable permission set by us. 
 
 -   For most groups and almost all permissions, **Deny** trumps **Allow**. If a user belongs to two groups, and one of them has a specific permission set to **Deny**, that user will not be able to perform tasks that require that permission even if they belong to a group that has that permission set to **Allow**.  
 
