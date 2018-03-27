@@ -103,7 +103,7 @@ Using service hooks, you can integrate with the following services:
 > [!div class="mx-tdCol2BreakAll"]  
 > | Build and release |  Collaborate | Customer support	 | Plan and track  | Integrate |
 > |-------------------| -------------| ------------------| ----------------| ------------|
-> |[AppVeyor](./services/appveyor.md)<br/>[Bamboo](./services/bamboo.md)<br/>[Jenkins](./services/jenkins.md)<br/>[MyGet](./services/myget.md)<br/>[Slack](./services/slack.md)|[Campfire](./services/campfire.md)<br/>[Flowdock](./services/flowdock.md)<br/>[HipChat](./services/hipchat.md)<br/>[Hubot](./services/hubot.md) |[UserVoice](./services/uservoice.md)<br/>[Zendesk](./services/zendesk.md) |[Trello](./services/trello.md) |[Azure Service Bus](./services/azure-service-bus.md)<br/>[Azure Storage](./services/azure-storage.md)<br/>[Web Hooks](./services/webhooks.md)<br/>[Zapier](./services/zapier.md) | 
+> |[AppVeyor](../settings/service-hooks/services/appveyor.md)<br/>[Bamboo](../settings/service-hooks/services/bamboo.md)<br/>[Jenkins](../settings/service-hooks/services/jenkins.md)<br/>[MyGet](../settings/service-hooks/services/myget.md)<br/>[Slack](../settings/service-hooks/services/slack.md)|[Campfire](../settings/service-hooks/services/campfire.md)<br/>[Flowdock](../settings/service-hooks/services/flowdock.md)<br/>[HipChat](../settings/service-hooks/services/hipchat.md)<br/>[Hubot](../settings/service-hooks/services/hubot.md) |[UserVoice](../settings/service-hooks/services/uservoice.md)<br/>[Zendesk](../settings/service-hooks/services/zendesk.md) |[Trello](../settings/service-hooks/services/trello.md) |[Azure Service Bus](../settings/service-hooks/services/azure-service-bus.md)<br/>[Azure Storage](../settings/service-hooks/services/azure-storage.md)<br/>[Web Hooks](../settings/service-hooks/services/webhooks.md)<br/>[Zapier](../settings/service-hooks/services/zapier.md) | 
 
 
 ### Team projects  
@@ -117,8 +117,9 @@ From the account-level admin context, you can perform the following tasks:
 - [Delete a team project](../accounts/delete-team-project.md) 
 
 
-### Additional account-level settings
+## Additional account-level settings
 
+In addition to the app-specific resources that you can configure, you can also manage your account, users, extensions, and account-level permissions. 
 
 ### Settings
 
@@ -132,13 +133,6 @@ From the account-level **Settings** page, you can change the time zone for your 
 - [Set up Azure billin](../billing/set-up-billing-for-your-account-vs.md)
 
 
-## Security  
-
-From a Security page or dialog, you can set permissions for a user or group. Permissions are managed at the object, project, and account level. To learn more, see [About permissions and groups](../security/about-permissions.md).
-
-To manage collection-level permissions, see [Add administrators, set permissions at the project-level or project collection-level](../security/set-project-collection-level-permissions.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json). 
-
-
 ### Users 
 From the account-level **Users** page, you can export the set of users and their access levels. You can also perform the following tasks: 
 - [Add users to your account or team project](../accounts/add-account-users-from-user-hub.md)
@@ -147,6 +141,8 @@ From the account-level **Users** page, you can export the set of users and their
 
 ### Extensions 
 
+From the account-level admin context **Extensions** page, you can [install and manage Marketplace extensions](../marketplace/install-vsts-extension.md). 
+
 An extension is an installable unit that contributes new capabilities to your account. You can find extensions from within the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vsts?utm_source=vstsproduct&utm_medium=L1BrowseMarketplace&targetId=1a7c88fb-3672-441e-9686-0f72b02ae6a4).  The Visual Studio Marketplace is home to hundreds of extensions that can be installed to help with:
 
 - Planning and tracking of work items, sprints, scrums, etc.
@@ -154,9 +150,13 @@ An extension is an installable unit that contributes new capabilities to your ac
 - Code testing and tracking
 - Collaboration among team members
 
-From the account-level admin context, you can [install and manage extensions](../marketplace/install-vsts-extension.md). 
 
- 
+### Account-level permissions or Security  
+
+From a Security page or dialog, you can set permissions for a user or group. Permissions are managed at the object, project, and account level. To learn more, see [About permissions and groups](../security/about-permissions.md).
+
+To manage collection-level permissions, see [Add administrators, set permissions at the project-level or project collection-level](../security/set-project-collection-level-permissions.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json). 
+
 
 <!---
 
