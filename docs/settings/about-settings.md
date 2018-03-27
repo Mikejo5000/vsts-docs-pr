@@ -14,11 +14,153 @@ ms.date: 05/01/2018
 
 # About project and account settings 
 
-Overview of what you can manage under the **Settings** context.   
+From the administrative or **Settings** context, you configure resources that support your teams. 
 
-From the administrative or Settings context, you configure resources that support your teams. The three levels which you can configure are the team level, project level, and account or collection level. 
+You'll find a quick guide of those resources you can configure based on the corresponding application.  
+  
+## Work 
 
-You must be a member of the listed administrator group or role to configure resources at the levels indicated. To learn more about security groups and roles, see XXX. 
+Many work tracking/Agile tools provide teams the autonomy they need to configure and manage their work independent of other teams. When you add a team, you also configure a product backlog, Kanban board, and dashboard for the teams. To learn more, see [About teams and Agile tools](about-teams-and-settings.md). 
+
+Work items and work tracking rely heavily on the following settings which you define at the project-level. 
+
+- [Area paths](../work/customize/set-area-paths.md)
+- [Iteration paths aka sprints](../work/customize/set-iteration-paths-sprints.md)
+
+To configure additional product backlogs, Kanban boards, and dashboards, you [configure a team](#configure-team).   
+
+To customize the workflow, work item form, add fields or rules, or make other changes to the work tracking experience, you customize a process. For an overview of what you can customize, see [Customize a process](../work/customize/process/customize-process.md). 
+ 
+To change permissions at the project-level, many of which are work tracking related, see [Set permissions at the project-level or project collection-level](../security/set-project-collection-level-permissions.md)
+ 
+
+## Code 
+
+You can configure the following resources to support your code development. 
+
+- [Create a new Git repo](../git/tutorial/creatingrepo.md) 
+- [Manage repository permissions](../security/set-git-tfvc-repository-permissions.md) 
+
+
+## Continuous Integration/Continuous Development (CI/CD) (Build & Release) 
+
+You can configure the following resources to support your CI/CD work. 
+
+**Project-level:**
+- [Agent queues](../build-release/concepts/agents/pools-queues.md)
+- [Services](../build-release/concepts/library/service-endpoints.md)
+- Release, Retention Policy Settings - TBD
+
+**Account-level:**
+-  [Build and Release, Retention policies](../build-release/concepts/policies/retention.md)
+-  [Build and Release, Resource limits for pipelines](../build-release/concepts/licensing/concurrent-pipelines-ts.md)
+-  [Agent pools, add and manage agent pools](../build-release/concepts/agents/pools-queues.md)
+-  [Deployment pools, add and manage deployment pools](../build-release/concepts/definitions/release/deployment-groups.md)
+
+## Test
+
+At the project-level, you can configure the following test resources: 
+
+- [Test retention policies](../manual-test/getting-started/how-long-to-keep-test-results.md)  
+- [Permissions](../security/set-project-collection-level-permissions.md)
+ 
+> [!NOTE]  
+> Manual testing relies on work item types to create and manage test plans, test suites, test cases, shared steps, and shared parameters. Of these, you can customize the test plans, test suites, and test cases using an inherited process. See [Customize a process](../work/customize/process/customize-process.md).   
+
+## Cross-application resources 
+
+Teams, notifications, dashboards, team projects, and other resources are used by several applications. You can add or configure these resources through the admin context.
+
+<a id="configure-teams" /> 
+### Teams 
+
+You add a team when you want to provide a group of users in your organization a set of Agile tools which they have full ownership to configure and manage.  Teams have access to a product backlog, porfolio backlogs, sprint backlogs, dashboards, team-scoped widgets, and more. For an overview of all tools that support a team, see [About teams and Agile tools](about-teams-and-settings.md).
+
+To add a team, see [Add teams and team members](../work/scale/multiple-teams.md).
+
+### Notifications  
+
+As changes are made to the code, a build, work items or other development object, you or your team members can receive an email. These notifications are based on subscriptions which are defined at the following levels: 
+
+- [Personal notifications](../notifications/manage-personal-notifications.md) 
+- [Team notifications](../collaborate/manage-team-notifications.md) 
+- Project-level notifications
+- Account or collection-level notifications
+
+To learn more, see [About notifications](../notifications/about-notifications.md).
+
+### Dashboards 
+
+New dashboards are added to a team project through a team context. To learn more, see [Add and manage dashboards](../report/dashboards/dashboards.md).
+
+### Service hooks 
+
+Service hooks enable you to perform tasks on other services when events happen within your team project. You can use service hooks in custom apps and services to drive activities when events happen in your projects. 
+
+Using service hooks, you can integrate with the following services: 
+
+
+> [!div class="mx-tdCol2BreakAll"]  
+> | Build and release |  Collaborate | Customer support	 | Plan and track  | Integrate |
+> |-------------------| -------------| ------------------| ----------------| ------------|
+> |[AppVeyor](./services/appveyor.md)<br/>[Bamboo](./services/bamboo.md)<br/>[Jenkins](./services/jenkins.md)<br/>[MyGet](./services/myget.md)<br/>[Slack](./services/slack.md)|[Campfire](./services/campfire.md)<br/>[Flowdock](./services/flowdock.md)<br/>[HipChat](./services/hipchat.md)<br/>[Hubot](./services/hubot.md) |[UserVoice](./services/uservoice.md)<br/>[Zendesk](./services/zendesk.md) |[Trello](./services/trello.md) |[Azure Service Bus](./services/azure-service-bus.md)<br/>[Azure Storage](./services/azure-storage.md)<br/>[Web Hooks](./services/webhooks.md)<br/>[Zapier](./services/zapier.md) | 
+
+
+### Team projects  
+
+A team project provides the fundamental resource for storing your code, managing your CI/CD operations, and planning and tracking work for your project. In general, you'll want to minimize the number of team projects you create, to keep things simple. However, if you need to, you can add additional team projects to your account. 
+
+From the account-level admin context, you can perform the following tasks: 
+ 
+- [Create a team project](../accounts/create-team-project.md) 
+- [Rename a team project](../accounts/rename-team-project.md)
+- [Delete a team project](../accounts/delete-team-project.md) 
+
+
+### Additional account-level settings
+
+
+### Settings
+
+From the account-level **Settings** page, you can change the time zone for your account and perform the following tasks: 
+- [Change account owner](../accounts/change-account-ownership-vs.md) 
+- [Rename your account](../accounts/rename-vsts-account.md) 
+- [Delete your account](../accounts/delete-your-vsts-account.md) 
+- [Restore (a deleted) account](../accounts/recover-your-vsts-account.md)
+- [Find your account region](../accounts/change-account-location.md) 
+- [Connect your account to Azure Active Directory](../accounts/connect-account-to-aad.md) 
+- [Set up Azure billin](../billing/set-up-billing-for-your-account-vs.md)
+
+
+## Security  
+
+From a Security page or dialog, you can set permissions for a user or group. Permissions are managed at the object, project, and account level. To learn more, see [About permissions and groups](../security/about-permissions.md).
+
+To manage collection-level permissions, see [Add administrators, set permissions at the project-level or project collection-level](../security/set-project-collection-level-permissions.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json). 
+
+
+### Users 
+From the account-level **Users** page, you can export the set of users and their access levels. You can also perform the following tasks: 
+- [Add users to your account or team project](../accounts/add-account-users-from-user-hub.md)
+- [Remove users from your account](../accounts/delete-account-users.md)
+- [Assign access levels and extensions to users by group membership](../accounts/assign-access-levels-and-extensions-by-group-membership.md)
+
+### Extensions 
+
+An extension is an installable unit that contributes new capabilities to your account. You can find extensions from within the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vsts?utm_source=vstsproduct&utm_medium=L1BrowseMarketplace&targetId=1a7c88fb-3672-441e-9686-0f72b02ae6a4).  The Visual Studio Marketplace is home to hundreds of extensions that can be installed to help with:
+
+- Planning and tracking of work items, sprints, scrums, etc.
+- Build and release flows
+- Code testing and tracking
+- Collaboration among team members
+
+From the account-level admin context, you can [install and manage extensions](../marketplace/install-vsts-extension.md). 
+
+ 
+
+<!---
+
+You must be a member of the listed administrator group or role to configure resources at the levels indicated. To learn more about security groups and roles, see [About permissions and groups](../security/about-permissions.md) and [About security roles](../security/about-security-role.md). 
 
 
 ## Team level  
@@ -35,39 +177,6 @@ To configure team resources, you must be a member of the [team administrator rol
 - [Notifications](../collaborate/manage-team-notifications.md)
 
 For a complete overview of all team assets that you can configure, see  [Manage team assets](../work/scale/manage-team-assets.md) 
-- 
-## Project level
-
-You must be a member of the [Project Administrators](../accounts/add-administrator-team-project.md) group or Project Collection Administrators group to perform the tasks listed.    
 
 
-- [Overview: Add teams](../work/scale/multiple-teams.md)
-- [Work/Iterations & Areas (project-wide)](../work/customize/set-area-paths.md)
-- [Security (manage project-level permissions)](../security/permissions.md#team-project-level-permissions)
-- [Notifications](../collaborate/manage-team-notifications.md)
-- [Version Control (manage repository permissions)](../security/permissions.md#git-repository)
-- [Agent queues](../build-release/concepts/agents/pools-queues.md)
-- [Service hooks](../service-hooks/services/webhooks.md)
-- [Services](../build-release/concepts/library/service-endpoints.md)
-- [Test (manage test retention policies](../manual-test/getting-started/how-long-to-keep-test-results.md) 
- 
-
-
-## Account level 
- 
-You must be the account owner or a member of the [Project Collection Administrators](../security/set-project-collection-level-permissions.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json) group to perform the tasks listed.   
- 
-- [Overview: Create team projects](../accounts/create-team-project.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json)  
-- [Rename team project](../accounts/rename-team-project.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json)
-- [Delete team project](../accounts/delete-team-project.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json) 
-- [Change process](../work/customize/process/manage-process.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json)
-- [Settings: Set account preferences](../accounts/account-preferences.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json) 
-- [Change application access policies](../accounts/change-application-access-policies-vs.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json)
-- [Change account owner](../accounts/change-account-ownership-vs.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json) 
-- [Delete your account](../accounts/delete-your-vsts-account.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json) 
--  [Recover your account](../accounts/recover-your-vsts-account.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json)
--  [Security (manage collection-level permissions)](../security/set-project-collection-level-permissions.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json)
--  [Process (customize work tracking)](../work/customize/process/manage-process.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json)
--  [Build (manage build policies)](../build-release/concepts/policies/retention.md)
--  [Agent pools (manage build agents)](../build-release/concepts/agents/pools-queues.md)
--  [Extensions (install/manage extensions)](../marketplace/install-vsts-extension.md) | 
+-->
