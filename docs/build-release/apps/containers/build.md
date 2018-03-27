@@ -79,8 +79,9 @@ First create a temporary web build process that includes the two Docker tasks yo
 
 ---
 
-A new build is started. You'll see a link to the new build on the top of the page. Click the link to watch the new build as it happens.
-Verify that the Docker container image is built and pushed to your container registry.
+In VSTS or TFS, a new build is started. You'll see a link to the new build on the top of the page. Click the link to watch the new build as it happens.
+
+On the Azure portal, navigate to your container registry, and then select the **Repositories** service to verify that the Docker container image was pushed to your container registry.
 
 Now your CI process is set up to push a new Docker image to a container registry every time a change is pushed to your application code.
 

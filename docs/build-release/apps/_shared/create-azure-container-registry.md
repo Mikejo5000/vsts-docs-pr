@@ -15,3 +15,5 @@ You can use [Azure Container Registry](https://docs.microsoft.com/en-us/azure/co
 [//]: # (todo: should we advise Standard - the default - instead?)
 
 1. Wait for the Azure Container Registry deployment to finish.
+
+[//]: # (todo: tag is build id)
