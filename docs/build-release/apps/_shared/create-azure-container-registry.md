@@ -4,12 +4,14 @@ You can use [Azure Container Registry](https://docs.microsoft.com/en-us/azure/co
 
 1. Sign into your Azure Account at [https://portal.azure.com](https://portal.azure.com).
 
-1. In the Azure Portal, choose **New**, **Containers**, then choose **Azure Container Registry**.    
+1. In the Azure Portal, choose **Create a resource**, **Containers**, then choose **Azure Container Registry**.    
 
 1. Enter a **Registry name**, **Resource Group**, and select a **Location**.    
 
-   ![Container Registry settings](_img/createacr.png)
-
 1. For **Admin user**, choose **Enable** and then choose **Create**.
+
+1. For **SKU** select **Basic**.
+
+[//]: # (todo: should we advise Standard - the default - instead?)
 
 1. Wait for the Azure Container Registry deployment to finish.
