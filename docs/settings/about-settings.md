@@ -9,7 +9,7 @@ ms.manager: douge
 ms.author: kaelli
 ms.topic: overview 
 robots: NOINDEX, NOFOLLOW
-ms.date: 05/01/2018
+ms.date: 04/01/2018
 ---
 
 # About project and account settings 
@@ -103,7 +103,7 @@ Using service hooks, you can integrate with the following services:
 > [!div class="mx-tdCol2BreakAll"]  
 > | Build and release |  Collaborate | Customer support	 | Plan and track  | Integrate |
 > |-------------------| -------------| ------------------| ----------------| ------------|
-> |[AppVeyor](../settings/service-hooks/services/appveyor.md)<br/>[Bamboo](../settings/service-hooks/services/bamboo.md)<br/>[Jenkins](../settings/service-hooks/services/jenkins.md)<br/>[MyGet](../settings/service-hooks/services/myget.md)<br/>[Slack](../settings/service-hooks/services/slack.md)|[Campfire](../settings/service-hooks/services/campfire.md)<br/>[Flowdock](../settings/service-hooks/services/flowdock.md)<br/>[HipChat](../settings/service-hooks/services/hipchat.md)<br/>[Hubot](../settings/service-hooks/services/hubot.md) |[UserVoice](../settings/service-hooks/services/uservoice.md)<br/>[Zendesk](../settings/service-hooks/services/zendesk.md) |[Trello](../settings/service-hooks/services/trello.md) |[Azure Service Bus](../settings/service-hooks/services/azure-service-bus.md)<br/>[Azure Storage](../settings/service-hooks/services/azure-storage.md)<br/>[Web Hooks](../settings/service-hooks/services/webhooks.md)<br/>[Zapier](../settings/service-hooks/services/zapier.md) | 
+> |[AppVeyor](../service-hooks/services/appveyor.md)<br/>[Bamboo](../service-hooks/services/bamboo.md)<br/>[Jenkins](../service-hooks/services/jenkins.md)<br/>[MyGet](../service-hooks/services/myget.md)<br/>[Slack](../service-hooks/services/slack.md)|[Campfire](../service-hooks/services/campfire.md)<br/>[Flowdock](../service-hooks/services/flowdock.md)<br/>[HipChat](../service-hooks/services/hipchat.md)<br/>[Hubot](../service-hooks/services/hubot.md) |[UserVoice](../service-hooks/services/uservoice.md)<br/>[Zendesk](../service-hooks/services/zendesk.md) |[Trello](../service-hooks/services/trello.md) |[Azure Service Bus](../service-hooks/services/azure-service-bus.md)<br/>[Azure Storage](../service-hooks/services/azure-storage.md)<br/>[Web Hooks](../service-hooks/services/webhooks.md)<br/>[Zapier](../service-hooks/services/zapier.md) | 
 
 
 ### Team projects  
