@@ -18,3 +18,7 @@ ms.date: 01/05/2018
 >[!TIP]  
 > Look through our [migration checklist](migration-checklist.md) before you make an existing project public.
 > It has tips and ideas for exposing a limited set of data, in case you don't want your entire history available.
+
+## Important notes about putting public and private projects in a single account
+
+[!INCLUDE [warning](_shared/warning-cross-link.md)]

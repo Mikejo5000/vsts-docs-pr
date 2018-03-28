@@ -22,6 +22,10 @@ Also, it has ideas for migrating the latest state to a new project so that you c
 
 ## Checklist by area
 
+### Entire account
+
+[!INCLUDE [warning](_shared/warning-cross-link.md)]
+
 ### Agile
 
 * Confirm that your work items, even closed ones, don't contain sensitive details: undisclosed security flaws, credentials, and customer data.

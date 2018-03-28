@@ -15,7 +15,7 @@ ms.date: 01/05/2018
 
 [!INCLUDE [temp](_shared/version-public-projects.md)] 
 
-You can create a public project for one of the Azure CodeX apps, or add a public project to an existing account. 
+You can create a public project or add a public project to an existing account. 
 
 
 
