@@ -263,9 +263,9 @@
     "template": [],
     "dest": "team-services",
     "groups": {
-      "admin":{
+      "admin": {
         "dest": "admin",
-        "moniker_range": ">= tfs-2013 || <= tfs-2018"
+        "moniker_range": ">= tfs-2013 <= tfs-2018"
       },
       "analytics": {
         "dest": "analytics",
@@ -273,7 +273,7 @@
       },
       "excel": {
         "dest": "excel",
-        "moniker_range": ">= tfs-2013 || <= tfs-2018"
+        "moniker_range": ">= tfs-2013 <= tfs-2018"
       },
       "extend-analytics": {
         "dest": "extend-analytics",
@@ -285,15 +285,15 @@
       },
       "sharepoint-dashboards": {
         "dest": "sharepoint-dashboards",
-        "moniker_range": ">= tfs-2013 || <= tfs-2017"
+        "moniker_range": ">= tfs-2013 <= tfs-2017"
       },
       "sql-reports": {
         "dest": "sql-reports",
-        "moniker_range": ">= tfs-2013 || <= tfs-2018"
+        "moniker_range": ">= tfs-2013 <= tfs-2018"
       },
       "tfs-ps-sync": {
         "dest": "tfs-ps-sync",
-        "moniker_range": ">= tfs-2013 || <= tfs-2015"
+        "moniker_range": ">= tfs-2013 <= tfs-2015"
       },
       "all": {
         "dest": "all",
