@@ -267,14 +267,38 @@
         "dest": "all",
         "moniker_range": "vsts || >= tfs-2013 <= tfs-2018"
       },
-      "admin":{	"moniker_range": ">= tfs-2013 <= tfs-2018"},
-      "analytics": { "moniker_range": "vsts"},
-      "excel": { "moniker_range": ">= tfs-2013 <= tfs-2018"},
-      "extend-analytics": { "moniker_range": "vsts"},
-      "powerbi": { "moniker_range": "vsts"},
-      "sharepoint-dashboards": { "moniker_range": ">= tfs-2013 <= tfs-2017"},
-      "sql-reports": { "moniker_range": ">= tfs-2013 <= tfs-2018"},
-      "tfs-ps-sync": { "moniker_range": ">= tfs-2013 <= tfs-2015"}
+      "admin":{
+        "dest": "admin",
+        "moniker_range": ">= tfs-2013 <= tfs-2018"
+      },
+      "analytics": {
+        "dest": "analytics",
+        "moniker_range": "vsts"
+      },
+      "excel": {
+        "dest": "excel",
+        "moniker_range": ">= tfs-2013 <= tfs-2018"
+      },
+      "extend-analytics": {
+        "dest": "extend-analytics",
+        "moniker_range": "vsts"
+      },
+      "powerbi": {
+        "dest": "powerbi",
+        "moniker_range": "vsts"
+      },
+      "sharepoint-dashboards": {
+        "dest": "sharepoint-dashboards",
+        "moniker_range": ">= tfs-2013 <= tfs-2017"
+      },
+      "sql-reports": {
+        "dest": "sql-reports",
+        "moniker_range": ">= tfs-2013 <= tfs-2018"
+      },
+      "tfs-ps-sync": {
+        "dest": "tfs-ps-sync",
+        "moniker_range": ">= tfs-2013 <= tfs-2015"
+      }
     }
   }
 }
