@@ -5,6 +5,94 @@
         "files": [
           "**/*.md", "**/*.yml"
         ],
+        "group": "admin",
+        "src": "report/admin",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ]
+      },
+      {
+        "files": [
+          "**/*.md", "**/*.yml"
+        ],
+        "group": "analytics",
+        "src": "report/analytics",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ]
+      },
+      {
+        "files": [
+          "**/*.md", "**/*.yml"
+        ],
+        "group": "excel",
+        "src": "report/excel",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ]
+      },
+      {
+        "files": [
+          "**/*.md", "**/*.yml"
+        ],
+        "group": "extend-analytics",
+        "src": "report/extend-analytics",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ]
+      },
+      {
+        "files": [
+          "**/*.md", "**/*.yml"
+        ],
+        "group": "powerbi",
+        "src": "report/powerbi",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ]
+      },
+      {
+        "files": [
+          "**/*.md", "**/*.yml"
+        ],
+        "group": "sharepoint-dashboards",
+        "src": "report/sharepoint-dashboards",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ]
+      },
+      {
+        "files": [
+          "**/*.md", "**/*.yml"
+        ],
+        "group": "sql-reports",
+        "src": "report/sql-reports",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ]
+      },
+      {
+        "files": [
+          "**/*.md", "**/*.yml"
+        ],
+        "group": "tfs-ps-sync",
+        "src": "work/tfs-ps-sync",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ]
+      },
+      {
+        "files": [
+          "**/*.md", "**/*.yml"
+        ],
         "group": "all",
         "exclude": [
           "**/obj/**",
@@ -12,7 +100,15 @@
           "README.md",
           "LICENSE",
           "LICENSE-CODE",
-          "ThirdPartyNotices"
+          "ThirdPartyNotices",
+          "report/admin",
+          "report/analytics",
+          "report/excel",
+          "report/extend-analytics",
+          "report/powerbi",
+          "report/sharepoint-dashboards",
+          "report/sql-reports",
+          "work/tfs-ps-sync"
         ]
       }
     ],
@@ -58,7 +154,15 @@
       "all": {
         "dest": "all",
         "moniker_range": "vsts || >= tfs-2013 <= tfs-2018"
-      }
+      },
+      "admin":{	"moniker_range": ">= tfs-2013 <= tfs-2018"},
+      "analytics": { "moniker_range": "vsts"},
+      "excel": { "moniker_range": ">= tfs-2013 <= tfs-2018"},
+      "extend-analytics": { "moniker_range": "vsts"},
+      "powerbi": { "moniker_range": "vsts"},
+      "sharepoint-dashboards": { "moniker_range": ">= tfs-2013 <= tfs-2017"},
+      "sql-reports": { "moniker_range": ">= tfs-2013 <= tfs-2018"},
+      "tfs-ps-sync": { "moniker_range": ">= tfs-2013 <= tfs-2015"}
     }
   }
 }
