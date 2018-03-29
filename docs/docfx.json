@@ -121,6 +121,118 @@
           "**/*.mp4",
           "**/*.svg"
         ],
+        "group": "admin",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ]
+      },
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.gif",
+          "**/*.mp4",
+          "**/*.svg"
+        ],
+        "group": "analytics",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ]
+      },
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.gif",
+          "**/*.mp4",
+          "**/*.svg"
+        ],
+        "group": "excel",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ]
+      },
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.gif",
+          "**/*.mp4",
+          "**/*.svg"
+        ],
+        "group": "extend-analytics",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ]
+      },
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.gif",
+          "**/*.mp4",
+          "**/*.svg"
+        ],
+        "group": "powerbi",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ]
+      },
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.gif",
+          "**/*.mp4",
+          "**/*.svg"
+        ],
+        "group": "sharepoint-dashboards",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ]
+      },
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.gif",
+          "**/*.mp4",
+          "**/*.svg"
+        ],
+        "group": "sql-reports",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ]
+      },
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.gif",
+          "**/*.mp4",
+          "**/*.svg"
+        ],
+        "group": "tfs-ps-sync",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ]
+      },
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.gif",
+          "**/*.mp4",
+          "**/*.svg"
+        ],
         "group": "all",
         "exclude": [
           "**/obj/**",
