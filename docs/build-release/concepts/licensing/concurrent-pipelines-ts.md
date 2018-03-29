@@ -56,7 +56,7 @@ A release consumes a concurrent job only when it is being actively deploying to 
 
 ## How a concurrent job is consumed by a phase
 
-A single build or release can comprise of multiple jobs through [phases](../process/phases.md) and [environments](../definitions/release/enviornments.md).
+A single build or release can comprise of multiple jobs through [phases](../process/phases.md) and [environments](../definitions/release/environments.md).
 
 * An agent phase can create multiple jobs through multi-configuration or multi-agent options. Each of these consumes a concurrent job. If there are not enough concurrent jobs, then the jobs are queued up and run one after the other.
 
