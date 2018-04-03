@@ -7,7 +7,9 @@ ms.assetid: 9f142821-1772-413f-a0e0-9b47b11a410f
 ms.manager: douge
 ms.author: chcomley
 ms.date: 02/23/2018
+monikerRange: 'vsts'
 ---
+
 
 # Manage users for VSTS
 
@@ -26,7 +28,7 @@ who also get Basic features, and in some cases, additional features with specifi
 
 [Need more users with Basic features or Visual Studio subscriptions?](../billing/buy-basic-access-add-users.md)
 
-> [!NOTE]   
+> [!NOTE]
 > You can add people to team projects, 
 > rather than to your account. VSTS automatically assigns them 
 > [Basic features](https://www.visualstudio.com/team-services/compare-features/), 

@@ -7,8 +7,9 @@ ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/19/2018
+monikerRange: ">= tfs-2015"
 ---
-[//]: # (monikerRange: ">= tfs-2015")
+
 
 # Artifacts in Release Management
 
@@ -36,7 +37,7 @@ As you deploy the release to various environments, you will be deploying
 and validating the same artifacts in all environments.
 
 A single release definition can be linked to
-**multiple artifact sources**.
+**multiple artifact sources**, of which one is the [primary source](#art-primary).
 In this case, when you create a release, you specify individual versions for each of
 these sources.
 
@@ -57,8 +58,8 @@ on the linking of artifacts to a release definition are:
 <!-- For example, you can configure releases to be automatically created only when a new build is produced from a certain branch.-->
 
 * **Artifact variables**. Every artifact that is part
-  of a release has metadata associated with it. This
-  metadata includes the version number of the artifact,
+  of a release has metadata associated with it, exposed to [tasks](../../../tasks/index.md) through [variables](#art-vars).
+  This metadata includes the version number of the artifact,
   the branch of code from which the artifact was produced
   (in the case of build or source code artifacts), the
   definition that produced the artifact (in the case of
@@ -79,7 +80,7 @@ on the linking of artifacts to a release definition are:
   certain artifact sources.
 
 * **Artifact download**. Whenever a release is
-  deployed to an environment, Release Management
+  deployed to an environment, by default Release Management
   automatically downloads all the artifacts in that
   release to the [agent](../../agents/agents.md) where the deployment job runs.
   The procedure to download artifacts depends on the
@@ -386,11 +387,25 @@ deployed again. In addition, because the previously downloaded contents are
 always deleted when you initiate a new release, Release Management cannot
 perform incremental downloads to the agent.
 
-You can, however, instruct Release Management to [skip the automatic download](../../process/phases.md#agent-phase)
+::: moniker range="< vsts"
+
+You can, however, instruct Release Management to [skip the automatic download](../../process/phases.md#agent-props)
 of artifacts to the agent for a specific phase and environment of the deployment if you
 wish. Typically, you will do this when the tasks in that phase do not
 require any artifacts, or if you implement custom code in a task to
 download the artifacts you require.
+
+::: moniker-end
+
+::: moniker range="vsts"
+
+In VSTS, you can, however, [select which artifacts you want to download](../../process/phases.md#agent-props)
+to the agent for a specific phase and environment of the deployment.
+Typically, you will do this when the tasks in that phase do not
+require all or any of the artifacts, or if you implement custom code
+in a task to download the artifacts you require.
+
+::: moniker-end
 
 <a name="source-alias"></a>
 <h2 id="source-alias">Artifact source alias</h2>
@@ -420,12 +435,16 @@ source alias that reflects the name of the build definition.
 > The source alias can contain only alphanumeric characters
 and underscores, and must start with a letter or an underscore
 
+<a name="art-primary"></a>
+
 <h2 id="primary-source">Primary source</h2>
 
 When you link multiple artifact sources to a release definition, one of them
 is designated as the primary artifact source. The primary artifact source is used
 to set a number of pre-defined [variables](variables.md#artifact-variables). It can also
 be used in [naming releases](index.md#numbering).
+
+<a name="art-vars"></a>
 
 ## Artifact variables
 

@@ -6,8 +6,10 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-git 
 ms.manager: douge
 ms.author: sdanie
-ms.date: 03/01/2018
+ms.date: 03/14/2018
+monikerRange: '>= tfs-2013'
 ---
+
 
 #  Review code with pull requests
 
@@ -98,7 +100,7 @@ Don't worry if you don't have all of the work items, reviewers, or details ready
 
 ### Help reviewers using pull request labels
 
-Sometimes it’s important to communicate extra information about a pull request to the reviewers. Maybe the pull request is still a work in progress, or it’s a hotfix for an upcoming release - so you append some extra text in the title, perhaps a “[WIP]” prefix or “DO NOT MERGE”. Labels now provide a way to tag pull requests with extra information that can be used to communicate important details and help organize pull requests.
+Sometimes it's important to communicate extra information about a pull request to the reviewers. Maybe the pull request is still a work in progress, or it's a hotfix for an upcoming release - so you append some extra text in the title, perhaps a "[WIP]" prefix or "DO NOT MERGE". Labels now provide a way to tag pull requests with extra information that can be used to communicate important details and help organize pull requests.
 
 ![PR request labels](_img/pull-requests/pull-request-labels.png)
 
@@ -106,7 +108,7 @@ To add a label when creating a pull request, choose **Add label**. After a pull 
 
 ![Add pull request label](_img/pull-requests/add-pull-request-label.png)
 
-In a future release, we’ll make labels even more useful by making it easier to filter pull requests using labels.
+In a future release, we'll make labels even more useful by making it easier to filter pull requests using labels.
 
 ### Add and remove reviewers
 
@@ -126,6 +128,8 @@ Add reviewers to your pull request.
 
 <a name="prlinkeditems"></a>
 <a name="addworkitemstopr"></a>
+
+
 
 ### Link work items
 
@@ -159,9 +163,20 @@ Keep these fields up to date so reviewers know what the changes in the pull requ
 ## Manage your pull requests
 
 Manage pull requests you own or are assigned to with the **Pull Requests** tab in the Code view on the web.
-Select **Active** to show all active pull requests for the current repo. Select **Completed** or **Abandoned** to bring up a history of closed pull requests. 
+
+::: moniker range=">= tfs-2017" 
+
+Select **Active** to show all active pull requests for the current repo. 
+
+::: moniker-end 
+
+::: moniker range=">= tfs-2017" 
+
+Select **Completed** or **Abandoned** to bring up a history of closed pull requests. 
 
 ![Viewing completed and abandoned pull requests in VSTS](_img/pull-requests/pr_status_widget.png) 
+
+::: moniker-end 
 
 ## Review a pull request 
 
@@ -271,6 +286,8 @@ Linked work items are also updated showing the pull request completion.
 
 ![Linked Work Items showing completed pull requests](./_img/pull-requests/pr_workitem_complete.png)
 
+::: moniker range=">= tfs-2017" 
+
 ### Complete automatically
 
 Select **Auto-complete** from the **Complete** button drop-down to complete the pull request and merge the changes as soon as all [branch policies](branch-policies.md) are met.
@@ -285,12 +302,16 @@ Select **Cancel auto-complete** to turn off auto-complete and return the pull re
 >[!NOTE]
 >The **Auto-complete** option is available in VSTS and TFS 2017 and higher, and is only present when you have branch policies that must be satisfied before the pull request can be completed. If you don't see **Auto-complete**, it is because you don't have any branch policies. For more information, see [Branch policies](branch-policies.md).
 
+::: moniker-end 
+
 ### Abandon your changes
 
 Abandon pull requests when you decide the work in the feature branch should not be merged by selecting **Abandon** from the drop-down on the **Complete** button.
 The abandoned pull request will still be viewable on the web and stays linked to work items.
 
 Reactivate an abandoned pull request at any time by selecting the pull request from the **Abandoned** tab in the **Pull Request** view and selecting  **Reactivate**.
+
+::: moniker range=">= tfs-2017" 
 
 <a name="notifications"></a>
 ## Receiving notification of pull request updates
@@ -313,6 +334,7 @@ Subscribe to email alerts to get notified when changes are made to your pull req
   ![Notifications](./_img/pull-requests/view-pr-notifications.png)
 
 
+
 ## Revert a pull request
 
 Undo the changes made in a pull request by opening the completed pull request and selecting **Revert**. When you revert a pull request in this way, you create a new branch with changes that will
@@ -331,6 +353,8 @@ Cherry-picking a pull request in this way creates a new branch with the copied c
 
 In the dialog that appears, enter the branch you want to merge the copied changes into in the **Target branch** field and a new branch that will contain the copied changes in the **Topic branch name** field, then select **Cherry-pick**.
 If there are no conflicts between the target branch and the newly created topic branch, you can then select **Create pull request** to merge the topic branch into the target branch to complete the cherry-pick.
+
+::: moniker-end 
 
 ## Set a new default branch    
 

@@ -5,16 +5,18 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: 00f4ed452-fbb8-45f9-8f0a-343702aac5b8  
 ms.manager: douge
-ms.author: kaelli
-ms.reviewer: dastahel
+ms.author: alewis
+ms.reviewer: vijayma
 ms.date: 02/19/2018
+ms.topic: landing-page
 layout: LandingPage
+monikerRange: '>= tfs-2013'
 ---
-[//]: # (monikerRange: '>= tfs-2013')
+
 
 # Build and release
 
-[//]: # (::: moniker range=">= tfs-2015")
+::: moniker range=">= tfs-2015"
 
 VSTS and Team Foundation Server help you implement a continuous integration (CI) and deployment (CD) pipeline for any app. Tutorials, references, and other documentation show you how to configure and manage CI/CD for the app and platform of your choice.
 
@@ -53,7 +55,11 @@ VSTS and Team Foundation Server help you implement a continuous integration (CI)
 ### Learn how to test your app
 
 <!-- Converting to icon48 format, this gets cleaner in YAML -->
-<div class="ico48Case halfStack"><div class="ico48Link"><a href="test/getting-started-with-continuous-testing.md?toc=/vsts/build-release/toc.json"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_visual-studio.svg"><span>VS Test</span></a></div></div>
+<div class="ico48Case halfStack">
+<div class="ico48Link"><a href="test/getting-started-with-continuous-testing.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_visual-studio.svg"><span>Visual Studio Test</span></a></div>
+<div class="ico48Link"><a href="test/continuous-test-selenium.md"><img width="48" height="48" alt="" src="tasks/test/_img/visual-studio-test-icon.png"><span>Selenium Test</span></a></div>
+<div class="ico48Link"><a href="test/review-continuous-test-results-after-build.md"><img width="48" height="48" alt="" src="tasks/test/_img/run-functional-tests-icon.png"><span>Review results</span></a></div>
+</div>
 
 ## Step-by-step tutorials
 
@@ -83,10 +89,10 @@ VSTS and Team Foundation Server help you implement a continuous integration (CI)
 - [What is DevOps?](https://www.visualstudio.com/learn/what-is-devops/)   
 - [Build and release marketplace extensions](https://marketplace.visualstudio.com/search?target=VSTS&category=Build%20and%20release&sortBy=Downloads)
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range="tfs-2013")
+::: moniker range="tfs-2013"
 
 **TFS 2013:** We recommend that you [Migrate from XAML builds to new builds](actions/migrate-from-xaml-builds.md). If you're not yet ready to do that, then see [XAML builds](http://msdn.microsoft.com/library/ms181709%28v=vs.120%29.aspx).
 
-[//]: # (::: moniker-end)
+::: moniker-end

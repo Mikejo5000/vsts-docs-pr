@@ -11,7 +11,8 @@ ms.date: 06/22/2017
 ms.topic: get-started-article
 ---
 
-# What is VSTS? 
+
+# What is VSTS?
 
 **VSTS**
 

@@ -1,9 +1,11 @@
 ---
-title: Change request  field reference (CMMI) | VSTS & TFS
-description: Track change requests for CMMI work items, provide description and reference name - Team Foundation Server (TFS)
+title: Change request  field reference (CMMI)
+titleSuffix: VSTS & TFS
+description: Track change requests for CMMI work items, provide description and reference name  
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
 ms.assetid: 1b95abfa-a1cb-4ebd-aff2-843cf6eec333
+ms.topic: reference
 ms.author: kaelli
 ms.manager: douge
 ms.date: 01/20/2017
@@ -28,5 +30,5 @@ You can track change requests for CMMI work items by using these six fields: Jus
 |**Impact on Development**|The impact that the change would have on development and product designs. You can use this field to describe in detail which development areas and designs would be affected and how much the change would cost to implement.|Microsoft.VSTS.CMMI.ImpactOnDevelopment|  
 |**Impact on Technical Publications**|The impact that the change would have on product documentation. You can use this field to describe in detail which sections of documentation would be affected and how much the change would cost to implement.|Microsoft.VSTS.CMMI.ImpactOnTechnicalPublications|  
   
-## Related notes 
+## Related articles 
  [Index of work item fields](../work-item-field.md)

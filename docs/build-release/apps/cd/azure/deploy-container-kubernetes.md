@@ -7,9 +7,11 @@ ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/19/2018
+monikerRange: ">= tfs-2015"
 ---
 
-# Implement continuous deployment of your app using Kubernetes to Azure Container Service
+
+# Deploy using Kubernetes to Azure Container Service
 
 Continuous deployment (CD) means starting an automated deployment process whenever a new successful build is available.
 Here. we'll show you how to set up continuous delivery of a Docker based app by using VSTS
@@ -27,53 +29,18 @@ ACR is used as a private registry to store Docker images for enterprise applicat
 
 ### Begin with a CI build
 
-Before you begin, you'll need a CI build that publishes your app. To set up CI for your specific type of app, see:
+Before you begin, you'll need a CI build that pushes your app to a container service:
 
-* [Build and deploy your app](../../index.md)
+* [Build and push a Docker image](../../containers/build.md)
 
-### Modify your build to create a Docker container
+### Modify your build to deploy a configuration file
 
-Next, you'll need to modify your build definition to create a Docker container
-for deployment using ACS.
-
-1. Add two instances of the **Docker** task to the end of your build definition. 
+Next, you'll need to modify your build definition.
 
 1. Add one instance of the **Publish Build Artifacts** task to the end of your build definition.
 
-1. Configure the tasks as follows:
+1. Configure the task as follows:
 
-   ![Build: Docker](../../../tasks/deploy/_img/docker-icon.png)<br/>[Build: Docker](../../../tasks/deploy/deploy-to-kubernetes.md) Build the container image from the Docker file.
-   
-   - **Container Registry type**: `Azure Container Registry`
-   
-   - **Azure Subscription:** Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions connection to your Azure subscription. For more details, see [Azure Resource Manager service endpoint](../../../concepts/library/service-endpoints.md#sep-azure-rm).
-   
-   - **Azure Container Registry**: Select the target Azure container registry.
-   
-   - **Action**: `Build an image`
-   
-   - **Image name**: Enter the name for your Docker image.
-   
-   - **Qualify Image Name**: Checked
-   
-   - **Additional Image Tags**: `$(Build.BuildId)`<p />
-   
-   ![Build: Docker](../../../tasks/deploy/_img/docker-icon.png)<br/>[Build: Docker](../../../tasks/deploy/deploy-to-kubernetes.md) Push the container image to a container registry.
-   
-   - **Container Registry type**: `Azure Container Registry`
-   
-   - **Azure Subscription:** Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions connection to your Azure subscription. For more details, see [Azure Resource Manager service endpoint](../../../concepts/library/service-endpoints.md#sep-azure-rm).
-   
-   - **Azure Container Registry**: Select the target Azure container registry.
-   
-   - **Action**: `Push an image`
-   
-   - **Image name**: Enter the name of your Docker image.
-   
-   - **Qualify Image Name**: Checked
-   
-   - **Additional Image Tags**: `$(Build.BuildId)`<p />
-   
    ![Build: Publish Build Artifacts](../../../tasks/build/_img/publish-build-artifacts.png) [Build: Publish Build Artifacts](../../../tasks/deploy/deploy-to-kubernetes.md) - Publish the Kubernetes configuration files used for creating the [deployment](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/) and [service](https://kubernetes.io/docs/concepts/services-networking/service/) in the cluster. These files are added to the [repository](https://github.com/azooinmyluggage/k8s-docker-core/tree/master/k8config).
    
    - **Path to Publish**: Path to the artifacts you want to publish. For example, `k8config`
@@ -92,11 +59,18 @@ Your CD release process picks up the artifacts published by your CI build and th
 1. Open the **Releases** tab of the **Build &amp; Release** hub, open the **+** drop-down
    in the list of release definitions, and choose **Create release definition** 
 
-1. Select the **Deploy to Kubernetes cluster** template and choose **Next**.
+1. Select the **Deploy to Kubernetes cluster** template and choose **Apply**.
 
-1. In the **Artifacts** section, make sure your CI build definition for the Docker package is selected as the artifact source.
+1. In the **Artifacts** section on the **Pipeline** tab, choose the **+ Add** link and select your build artifact.
 
-1. Select the **Continuous deployment** check box, and then choose **Create**.
+   ![Checking or selecting the build definition and artifact](../../_shared/_img/confirm-or-add-artifact.png)
+
+1. Choose the **Continuous deployment** icon in the **Artifacts** section, check that the
+   continuous deployment trigger is enabled, and add a filter that includes the **master** branch.
+
+   ![Checking or setting the Continuous deployment trigger](../../_shared/_img/confirm-or-set-cd-trigger.png)
+
+   > Continuous deployment is not enabled by default when you create a new release definition from the **Releases** tab.
 
 1. Add two more instances of the **Deploy to Kubernetes** task to your release definition.
    This task uses the `kubectl` command to execute operations on a Kubernetes cluster.
@@ -113,7 +87,7 @@ Your CD release process picks up the artifacts published by your CI build and th
    
    - **Secret name**: Name of the Docker registry secret. You can use this secret name in the Kubernetes YAML configuration file.
    
-   - **Command**: `apply` (you can run any kubectl command)
+   - **Command**: `apply` (you can run any kubectl command). See the [command reference](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands) for a full description of the task and arguments. 
    
    - **Use Configuration file**: Checked
    
@@ -129,7 +103,7 @@ Your CD release process picks up the artifacts published by your CI build and th
    
    - **Secret name**: Name of the Docker registry secret. You can use this secret name in the Kubernetes YAML configuration file.
    
-   - **Command**: `apply`
+   - **Command**: `apply`. See the [command reference](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands) for a full description of the task and arguments. 
    
    - **Use Configuration file**: Checked
    
@@ -145,22 +119,16 @@ Your CD release process picks up the artifacts published by your CI build and th
    
    - **Secret name**: Name of the Docker registry secret. You can use this secret name in the Kubernetes YAML configuration file.
    
-   - **Command**: `set`
+   - **Command**: `set`. See the [command reference](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands) for a full description of the task and arguments. 
    
-   - **Arguments**: Arguments to pass to teh command. For example, `image deployment/coreserverdeployment core-server=image:tag` where you are using a private registry (so the image name must be prefixed with the container registry name). We also use the Build Id to tag our images here, so the `image:tag` value will be `{your-acr-name}.azurecr.io/docker-dotnetcore:$(Build.BuildId)`. `docker-dotnetcore` is the image name used in the build.<p />
+   - **Arguments**: Arguments to pass to the command. For example, `image deployment/coreserverdeployment core-server=image:tag` where you are using a private registry (so the image name must be prefixed with the container registry name). We also use the Build Id to tag our images here, so the `image:tag` value will be `{your-acr-name}.azurecr.io/docker-dotnetcore:$(Build.BuildId)`. `docker-dotnetcore` is the image name used in the build.<p />
 
 1. Edit the name of the release definition, choose **Save**, and choose **OK**.
    Note that the default environment is named Environment1, which you can edit by clicking directly on the name.
 
 You're now ready to create a release, which means to start the process of running the release definition with the artifacts produced by a specific build. This will result in deploying the build to Azure:
 
-1. Choose **+ Release** and select **Create Release**.
-
-1. Select the build you just completed in the highlighted drop-down list and choose **Create**.
-
-1. Choose the release link in the popup message. For example: "Release **Release-1** has been created".
-
-1. Open the **Logs** tab to watch the release console output.
+[!INCLUDE [simple-create-release](../../_shared/simple-create-release.md)]
 
 ## Q&A
 
@@ -179,7 +147,9 @@ The [Kubernetes namespace](https://kubernetes.io/docs/concepts/overview/working-
 allows complete separation of resources and management within the same cluster. So namespace can be used
 to create multiple environments such as *Dev*, *QA*, and *Production* in the same ACS Kubernetes cluster.
 
+::: moniker range="< vsts"
 [!INCLUDE [temp](../../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->
 

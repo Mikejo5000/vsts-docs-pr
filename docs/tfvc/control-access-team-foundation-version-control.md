@@ -7,7 +7,9 @@ ms.technology: vs-devops-tfvc
 ms.manager: douge
 ms.author: sdanie
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
+
 
 # Control Access to Team Foundation Version Control
 
@@ -23,7 +25,7 @@ To complete this task, you must have the **Manipulate security settings** permis
 
 ### To set permissions for users or groups
 
-1.  On the Visual Studio **View** menu, click **Other Windows**, and then click **Source Control Explorer**.
+1.  On the Visual Studio **View** menu, click **Other Windows**, and then click **Source Control Explorer**.
 
 2.  Right-click the folder or file for which you want to set permissions, and then click **Properties**.
 

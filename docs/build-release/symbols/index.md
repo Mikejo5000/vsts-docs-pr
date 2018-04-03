@@ -27,7 +27,11 @@ For example, ```**\bin\**\*.pdb``` searches for all *.pdb* files in all subdirec
 ![Publish Symbols Task](_img/symboltaskv2.png)
 
 ### Publish symbols for NuGet packages
-To publish symbols for NuGet packages, include the above task in the build definition that produces the NuGet packages. Then the symbols will be available to all users in the VSTS account. 
+To publish symbols for NuGet packages, include the above task in the build definition that produces the NuGet packages. Then the symbols will be available to all users in the VSTS account.
+
+## Portable PDBs
+
+If you're using [Portable PDBs](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md), you don't need to use the **Index Sources and Publish Symbols** task. For Portable PDBs, indexing is done by the build. This is a design feature of Portable PDBs and .NET.
 
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->
@@ -38,7 +42,7 @@ A: Symbols will have the same retention as the build. When you delete a build, y
 
 #### Q: Can I use source indexing on a portable PDB created from a .NET Core assembly?
 
-A: No, source indexing is currently not enabled for Portable PDBs as SourceLink doesn’t support authenticated source repositories. The workaround at the moment is to configure the build to generate full PDBs.
+A: No, source indexing is currently not enabled for Portable PDBs as SourceLink doesn't support authenticated source repositories. The workaround at the moment is to configure the build to generate full PDBs.
 
 #### Q: Is this available in TFS?
 

@@ -1,9 +1,11 @@
 ---
-title: Agile process workflow | VSTS & TFS  
-description: How to guide for using the Agile process to track work using its work item types working in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)   
+title: Agile process workflow
+titleSuffix: VSTS & TFS
+description: How to guide for using the Agile process to track work using its work item types working in Visual Studio Team Services & Team Foundation Server 
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: d16d04fd-c073-45c0-b1b9-3724f0a7519b  
+ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelli
 ms.date: 04/05/2017
@@ -204,12 +206,15 @@ You can [create bugs from the web portal web portal, Visual Studio, or when test
 
 [!INCLUDE [temp](../../_shared/common-work-item-fields.md)]   
 
+## Customize work item types
+[!INCLUDE [temp](../../_shared/customize-work-tracking.md)] 
 
-## Related notes
+
+## Related articles
 
 [!INCLUDE [temp](../../_shared/create-team-project-links.md)]  
   
-[!INCLUDE [temp](../../_shared/customize-work-tracking.md)]  
+ 
 
 
 ### Track issues 
@@ -218,7 +223,7 @@ Issues are used to track events that may block progress or shipping a user story
 
 ![Add work item from a New work item widget](../../../user-guide/_img/features/alm-feature-new-work-item-widget.png)  
 
-Work items you add from the widget are automatically scoped to your [team's default area and iteration paths](../../scale/set-team-defaults.md). To change the team context, see [Switch team context](../../../teams/switch-team-context.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json).  
+Work items you add from the widget are automatically scoped to your [team's default area and iteration paths](../../scale/set-team-defaults.md). To change the team context, see [Switch team context](../../../settings/switch-team-context.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json).  
  
 ### Track business value  
 You can use the Priority field to differentiate the value of various stories. Or, you can add a custom field to the User Story WIT that tracks the relative value of stories. To learn how, see [Customize a field for a process](../../customize/process/customize-process-field.md).

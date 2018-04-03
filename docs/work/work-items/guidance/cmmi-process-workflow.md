@@ -1,9 +1,11 @@
 ---
-title: CMMI process work item and workflow | VSTS & TFS 
-description: How to guide for using the CMMI process  work item types and workflow to track work in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)   
+title: CMMI process work item and workflow
+titleSuffix: VSTS & TFS
+description: How to guide for using the CMMI process  work item types and workflow to track work in Visual Studio Team Services & Team Foundation Server   
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: b5b7b488-3248-485c-b896-a2c6f824a219
+ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelli
 ms.date: 12/19/2017
@@ -429,17 +431,17 @@ You can add an issue from the  [New work item widget](../../../report/dashboards
 
 ![Add work item from a New work item widget](_img/cmmi-new-work-item-widget.png)  
 
-Work items you add from the widget are automatically scoped to your [team's default area and iteration paths](../../scale/set-team-defaults.md). To change the team context, see [Switch team context](../../../teams/switch-team-context.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json).  
+Work items you add from the widget are automatically scoped to your [team's default area and iteration paths](../../scale/set-team-defaults.md). To change the team context, see [Switch team context](../../../settings/switch-team-context.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json).  
 
 
 [!INCLUDE [temp](../../_shared/common-work-item-fields.md)]   
 
+## Customize work item types
+[!INCLUDE [temp](../../_shared/customize-work-tracking.md)] 
 
-## Related notes 
+## Related articles 
 
 [!INCLUDE [temp](../../_shared/create-team-project-links.md)]  
-
-[!INCLUDE [temp](../../_shared/customize-work-tracking.md)]   
 
 
 ### Backlog list order

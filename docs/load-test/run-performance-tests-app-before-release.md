@@ -8,14 +8,15 @@ ms.assetid: 2C83E7E1-93BE-44F9-A041-AC23963404D3
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/18/2018
+monikerRange: "vsts"
 ---
-[//]: # (monikerRange: "vsts")
+
 
 # Tutorial: Load test your app before release
 
 [!INCLUDE [version-header-vs-ts](_shared/version-header-vs-ts.md)] 
 
-Find performance issues before you release your app by running load tests with with Visual Studio 
+Find performance issues before you release your app by running load tests with Visual Studio 
 Enterprise using [Cloud-based Load Testing](http://go.microsoft.com/fwlink/?LinkID=317257)
 to provide virtual machines in the cloud that generate the load of many users accessing your web site at the same time.
 All you need is a [Visual Studio Team Services (VSTS) account](http://go.microsoft.com/fwlink/?LinkId=307137).
@@ -156,8 +157,9 @@ Follow these steps to run your load test on your local machine.
 
 You can improve your test to better simulate 
 real-world loads by specifying various load test 
-[scenario properties](https://msdn.microsoft.com/library/ff406966%28v=vs.140%29.aspx)
-and [run settings properties](https://msdn.microsoft.com/library/ff406976%28v=vs.140%29.aspx). For example, you can specify the number of new users that will use web cache data in your load test.
+[scenario properties](https://docs.microsoft.com/visualstudio/test/edit-load-test-scenarios)
+and [run settings properties](https://docs.microsoft.com/visualstudio/test/load-test-run-settings-properties).
+For example, you can specify the number of new users that will use web cache data in your load test.
 
 ![Percentage of new users property](_img/run-performance-tests-app-before-release/percentage-new-users.png)
 

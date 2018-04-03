@@ -7,7 +7,9 @@ ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
 ms.date: 08/04/2016
+monikerRange: ">= tfs-2013"
 ---
+
 
 # Deploy continuously to Azure
 

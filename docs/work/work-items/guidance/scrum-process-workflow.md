@@ -1,9 +1,11 @@
 ---
-title: Scrum process work items and workflow | VSTS & TFS 
-description: How to guide for using the Scrum process  work item types and workflow to track work in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)   
+title: Scrum process work items and workflow
+titleSuffix: VSTS & TFS
+description: How to guide for using the Scrum process  work item types and workflow to track work in Visual Studio Team Services & Team Foundation Server 
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 34c866ea-a130-4371-bfc4-a3d9f87dccca
+ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelli
 ms.date: 04/05/2017
@@ -91,7 +93,7 @@ PBIs and bugs follow this typical workflow progression:
 
 -   The product owner creates a PBI or a tester creates a bug in the **New** state with the default reason, **New backlog item**  
 -   The product owner moves the item to **Approved** after it is sufficiently described and ready for the team to estimate the level of effort. Most of the time, items near the top of the Product Backlog are in the Approved state, while items toward the middle and bottom are in a New state  
--   The team updates the status to **Committed** when they decide to complete the work during the sprint  
+-   The team updates the status to **Committed** when they decide to commit to working on it during the sprint  
 -   The item is moved to the **Done** state when the team has completed all its associated tasks and the product owner agrees that it has been implemented according to the Acceptance Criteria.  
 
 
@@ -162,12 +164,13 @@ You can [create bugs from the web portal web portal, Visual Studio, or when test
 
 [!INCLUDE [temp](../../_shared/common-work-item-fields.md)]   
 
+## Customize work item types
+[!INCLUDE [temp](../../_shared/customize-work-tracking.md)] 
 
-## Related notes
+## Related articles
 
 [!INCLUDE [temp](../../_shared/create-team-project-links.md)]  
   
-[!INCLUDE [temp](../../_shared/customize-work-tracking.md)]  
 
 
 ### Track impediments
@@ -178,7 +181,7 @@ You can add an impediment from the [New work item widget](../../../report/dashbo
 
 ![Add work item from a New work item widget](_img/scrum-new-work-item-widget.png)  
 
-Work items you add from the widget are automatically scoped to your [team's default area and iteration paths](../../scale/set-team-defaults.md). To change the team context, see [Switch team context](../../../teams/switch-team-context.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json).  
+Work items you add from the widget are automatically scoped to your [team's default area and iteration paths](../../scale/set-team-defaults.md). To change the team context, see [Switch team context](../../../settings/switch-team-context.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json).  
 
 
 ### Backlog list order

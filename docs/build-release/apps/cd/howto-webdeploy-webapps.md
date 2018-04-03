@@ -7,7 +7,9 @@ ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/19/2018
+monikerRange: ">= tfs-2015"
 ---
+
 
 # How To: Extend your deployments to Azure App Services
 
@@ -74,6 +76,8 @@ If you want to deploy to a staging slot in an Azure App Services website, and th
    
 You might also consider [Configuring Auto Swap](https://docs.microsoft.com/en-us/azure/app-service-web/web-sites-staged-publishing#Auto-Swap)
 for your Azure App Services web app to automatically swap the app into production after successful deployment.
+
+[!INCLUDE [edit-template-vars-in-environment](../_shared/edit-template-vars-in-environment.md)]
 
 <a name="multipleapps"></a>
 ## Deploy multiple apps in the same release

@@ -7,9 +7,11 @@ ms.assetid: 25b0a617-6d77-44d7-80a5-bf38a541817e
 ms.manager: douge
 ms.author: chcomley
 ms.date: 10/6/2017
+monikerRange: 'vsts'
 ---
 
-#   Troubleshootig changing app access policies for your account
+
+#   Troubleshoot changing app access policies for your account
 
 **VSTS**
 

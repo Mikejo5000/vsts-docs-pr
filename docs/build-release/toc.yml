@@ -6,6 +6,8 @@
     href: overview.md
   - name: About Deploying to Azure
     href: overview-azure.md
+  - name: About Continuous Testing
+    href: test/index.md
 - name: Quickstarts
   items:
     - name: Azure DevOps projects
@@ -62,8 +64,12 @@
         href: apps/cd/deploy-docker-webapp.md
     - name: Test your app
       items:
-      - name: VS Test
+      - name: Unit test with builds
         href: test/getting-started-with-continuous-testing.md
+      - name: UI test with Selenium
+        href: test/continuous-test-selenium.md
+      - name: Review test results
+        href: test/review-continuous-test-results-after-build.md
 - name: Tutorials
   items:
   - name: CI builds for Git in VSTS
@@ -76,8 +82,12 @@
     href: actions/deploy-using-approvals.md
   - name: Azure DevOps Project for GitHub
     href: actions/azure-devops-project-github.md
-  - name: Use Jenkins and VSTS DevOps
+  - name: Azure DevOps Project for VMs
+    href: actions/azure-devops-project-vms.md
+  - name: Jenkins CI for VSTS Azure CD
     href: actions/integrate-jenkins-vsts-cicd.md  
+  - name: Test your app
+    href: test/example-continuous-testing.md
 - name: Concepts
   items:
   - name: Agents
@@ -168,6 +178,8 @@
       href: actions/agents/v2-osx.md
     - name: Linux
       href: actions/agents/v2-linux.md
+    - name: To a deployment group
+      href: concepts/definitions/release/deployment-groups/howto-provision-deployment-group-agents.md
     - name: Run an agent behind a web proxy
       href: actions/agents/proxy.md
     - name: Run an agent with self-signed certificate
@@ -198,8 +210,6 @@
       href: apps/cd/howto-webdeploy-iis-deploygroups.md
     - name: Azure cloud service
       href: apps/cd/deploy-cloudservice-cloudservice.md
-    - name: Azure Government Cloud
-      href: concepts/library/government-cloud.md
     - name: Azure Container Service (Kubernetes)
       href: apps/cd/azure/deploy-container-kubernetes.md
     - name: IIS servers (WinRM)
@@ -208,6 +218,10 @@
       href: apps/cd/deploy-dacpac-sqlpackage.md
     - name: Azure SQL database (SQL scripts)
       href: apps/cd/deploy-database-sqlscripts.md
+    - name: Azure Government Cloud
+      href: concepts/library/government-cloud.md
+    - name: Azure Stack
+      href: concepts/library/azure-stack.md
     - name: SCVMM
       href: apps/cd/scvmm/configure-scvmm.md
     - name: SCVMM actions for managing VMs
@@ -216,8 +230,14 @@
       href: apps/cd/provision-vm-in-vmware.md
   - name: Test your apps
     items:
-    - name: Test as you build
-      href: test/index.md
+    - name: Set up continuous testing
+      href: test/set-up-continuous-testing-builds.md
+    - name: Run tests from the Test hub
+      href: test/run-automated-tests-from-test-hub.md
+    - name: Use Test Impact Analysis
+      href: test/test-impact-analysis.md
+    - name: Run tests in parallel
+      href: test/run-tests-in-parallel.md
   - name: Publish symbols for debugging
     items:
     - name: Publish symbols
@@ -275,6 +295,8 @@
       href: tasks/build/ant.md
     - name: CMake
       href: tasks/build/cmake.md
+    - name: Go
+      href: tasks/build/go-build.md
     - name: Gradle
       href: tasks/build/gradle.md
     - name: Grunt
@@ -363,8 +385,12 @@
       href: tasks/test/publish-code-coverage-results.md
     - name: Publish Test Results
       href: tasks/test/publish-test-results.md
+    - name: Run Functional Tests
+      href: tasks/test/run-functional-tests.md
     - name: Visual Studio Test
       href: tasks/test/visual-studio-test.md
+    - name: Visual Studio Test Agent Deployment
+      href: tasks/test/visual-studio-test-agent-deployment.md
   - name: Package tasks
     items:
     - name: CocoaPods
@@ -411,6 +437,8 @@
       href: tasks/deploy/azure-sql-database-deployment.md
     - name: Copy Files Over SSH
       href: tasks/deploy/copy-files-over-ssh.md
+    - name: Docker
+      href: tasks/deploy/docker.md
     - name: PowerShell on Target Machines
       href: tasks/deploy/powershell-on-target-machines.md
     - name: Service Fabric App Deployment
@@ -425,6 +453,8 @@
     items:
     - name: .NET Core Tool Installer
       href: tasks/tool/net-core-installer.md
+    - name: Go Tool Installer
+      href: tasks/tool/go-install.md
     - name: Node Tool Installer
       href: tasks/tool/node-js.md
     - name: Java Tool Installer

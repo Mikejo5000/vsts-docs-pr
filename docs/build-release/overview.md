@@ -8,8 +8,9 @@ ms.manager: douge
 ms.author: alewis
 ms.date: 08/04/2016
 ms.topic: get-started-article
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: '>= tfs-2015')
+
 
 # Build and Release in VSTS and TFS
 
@@ -18,6 +19,8 @@ Visual Studio Team Services (VSTS) is a collection of hosted DevOps services for
 Continuous Integration (CI) is the practice used by development teams to automate the merging and testing of code.  Implementing CI helps to catch bugs early in the development cycle, which makes them less expensive to fix.  Automated tests execute as part of the CI process to ensure quality.  Artifacts are produced from CI systems and fed to release pipelines to drive frequent deployments. The Build service in VSTS and TFS helps you set up and manage CI for your applications.
 
 Continuous Delivery (CD) is a process by which code is built, tested, and deployed to one or more test and production environments.  Deploying and testing in multiple environments drives quality.  CI systems produce the deployable artifacts including infrastructure and apps.  Automated release pipelines consume these artifacts to release new versions and fixes to existing systems.  Monitoring and alerting systems run continually to drive visibility into the entire CD process. The Release service in VSTS and TFS helps you set up and manage CD for your applications.
+
+Continuous Testing (CT) on-premises or in the cloud is the use of automated build-deploy-test workflows, with a choice of technologies and frameworks, that test your changes continuously in a fast, scalable, and efficient manner.
 
 ## Version control systems
 

@@ -8,7 +8,9 @@ ms.assetid: F0829366-2AC1-4344-9494-98CACEC38806
 ms.manager: douge
 ms.author: alewis
 ms.date: 12/20/2017
+monikerRange: '>= tfs-2017'
 ---
+
 
 # Build your Node.js app with Gulp
 
@@ -146,7 +148,7 @@ To get ready for continuous deployment, choose which kind of deployment target y
 
 # [Azure web app or IIS server](#tab/deploy-windows/web)
 
-All the tasks you need were automatically added to the build definition by the template. These are the steps that will automatically run every time you check in code. 
+All the tasks you need were automatically added to the build definition by the template. These are the steps that will automatically run every time you push code changes.
 
 Select **Tasks**. Select the **Run gulp** task from the tasks. On the right side, you see the parameters for the task. Under the section JUnit Test Results, make sure the option to **Publish to TFS/VSTS** is selected.
 

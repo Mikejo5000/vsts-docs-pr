@@ -13,8 +13,9 @@ ms.tgt_pltfrm: ''
 ms.workload: ''
 ms.date: 01/19/2018
 ms.custom: mvc
+monikerRange: ">= tfs-2015"
 ---
-[//]: # (monikerRange: ">= tfs-2015")
+
 
 # Define your multi-stage continuous deployment (CD) process
 
@@ -141,6 +142,8 @@ a groups of servers, or any other legitimate physical or virtual deployment targ
    If you are using a different type of task to deploy your app, the way you change the target for the deployment
    may differ. For example, if you are using deployment groups, you may be able to select a different deployment group,
    or a different set of tags within the same deployment group.
+
+[!INCLUDE [edit-template-vars-in-environment](../apps/_shared/edit-template-vars-in-environment.md)]
 
 ## Add approvals within a release definition
 

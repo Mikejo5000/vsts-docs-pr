@@ -1,9 +1,11 @@
 ---
-title: Bugs, issues, and risks  field reference (CMMI) | VSTS & TFS
-description: Tracks the information with regards to bugs, issues, and risks - Team Foundation Server (TFS)
+title: Bugs, issues, and risks  field reference (CMMI)
+titleSuffix: VSTS & TFS
+description: Tracks the information with regards to bugs, issues, and risks - Team Foundation Server  
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
 ms.assetid: 66d150ac-736f-4dde-8a2b-382c50d9e4f4
+ms.topic: reference
 ms.author: kaelli
 ms.manager: douge
 ms.date: 01/20/2017
@@ -46,5 +48,5 @@ The following fields track information about bugs, issues, and risks. These work
 |**Mitigation Triggers**|The conditions or events that determine how the team might mitigate a risk. For example, the triage team might authorize and obtain a reserve generator if the weather forecast is predicting an ice storm or hurricane to hit within 50 miles of the office within the next four days.<br/>Reference name=Microsoft.VSTS.CMMI.MitigationTriggers|HTML|  
 |**Probability**|A number that indicates the chance that the risk will occur. A valid probability number is between 1 and 99, where 99 indicates that the risk is almost certain to occur.<br/>Reference name=Microsoft.VSTS.CMMI.Probability|Integer|  
   
-## Related notes
+## Related articles
  [Index of work item fields](../work-item-field.md)

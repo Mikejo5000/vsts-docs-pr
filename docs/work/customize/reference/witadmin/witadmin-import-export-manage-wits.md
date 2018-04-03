@@ -5,9 +5,11 @@ description: Manage work item types for a team project in Team Foundation Server
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
 ms.assetid: 97d7ea1c-df1f-4999-adc9-b38dd2a6cca6
+ms.topic: reference
 ms.manager: douge
 ms.author: kaelli
-ms.date: 02/26/2018
+monikerRange: '>= tfs-2013 <= tfs-2018'
+ms.date: 03/20/2018
 ---
 
 # Import, export, and manage work item types
@@ -178,5 +180,5 @@ When you delete a WIT that belongs to a category, you must update the categories
   
 For more information, see [Import and export categories](witadmin-import-export-categories.md).  
   
-## Related notes  
+## Related articles  
 -  [Customize your work tracking experience](../../customize-work.md)   

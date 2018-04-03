@@ -15,8 +15,9 @@ ms.topic: get-started-article
 ms.date: 01/19/2018
 ms.author: alewis
 ms.custom: mvc
+monikerRange: "vsts"
 ---
-[//]: # (monikerRange: "vsts")
+
 
 # Build and deploy to an Azure Web App
 
@@ -33,6 +34,8 @@ After you commit and push a code change, it is automatically built and then depl
 <!--
 ![Screenshot showing ASP.NET Core web app](_img/aspnet-core-to-windows-vm/cicd-get-started-dotnetcore-sample.png)
 -->
+
+[How do I deploy an Azure Function project?](https://blogs.msdn.microsoft.com/appserviceteam/2017/06/01/deploying-visual-studio-2017-function-projects-with-vsts/)
 
 ## Prerequisites
 

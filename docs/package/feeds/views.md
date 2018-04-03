@@ -7,7 +7,9 @@ ms.technology: vs-devops-package
 ms.manager: douge
 ms.author: amullans
 ms.date: 10/27/2016
+monikerRange: '>= tfs-2017'
 ---
+ 
 
 # Communicate package quality with release views
 

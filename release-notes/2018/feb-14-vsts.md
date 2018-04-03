@@ -22,8 +22,9 @@ Other highlights include:
 * Leverage what you may have in Jenkins with [finer control](#specify-a-default-version-for-jenkins-artifacts) and [efficiency using Azure Storage](#propagate-jenkins-artifacts-to-azure-storage)
 * [Manage access and extensions for large numbers of users using groups](#manage-access-and-extensions-for-large-numbers-of-users-using-groups)
 
-> [!NOTE]
-> The features discussed in this post will be rolling out over the next two to three weeks.
+## What’s new in VSTS
+
+> [!VIDEO https://www.youtube.com/embed/jttSjT460PI?rel=0]
 
 ## Code
 
@@ -98,12 +99,6 @@ Now, you can specify a default version for Jenkins artifacts, with the options y
 > [!div class="mx-imgBorder"]
 ![Default version for Jenkins artifacts](_img/130_10.png)
 
-### Deploy ASP.NET apps to VMs using an Azure DevOps Project
-
-You can now use an **Azure DevOps Project** to setup a fully-configured CI/CD pipeline to **Azure Virtual Machine** (VM) resources for ASP.NET or ASP.NET Core applications. The **DevOps Project** sets up everything you need for developing, deploying, and monitoring your app on the VM.
-
-By creating a **DevOps Project**, an Azure VM is provisioned and comes with a Git code repository, **Application Insights** integration, and a continuous delivery pipeline. The dashboard then lets you monitor code commits, builds, and deployments from a single view in the Azure portal.
-
 ### Scope a variable group to specific environments
 
 Previously, when a variable group was added to a release definition, the variables it contained were available to all the environments in the release. Now, you have the flexibility to scope the variable groups to specific environment(s) instead, which makes them available to one environment but not other environments of the same release. This is great when you have an external service, such as an SMTP email service, which is different between environments.
@@ -131,7 +126,7 @@ For now, these benefits apply only to feeds created after this announcement, unl
 
 ### View quality of a package version in the package list
 
-On the package list, you can now see the view(s) of each package version to quickly determine their quality. See the [release views](/vsts/package/concepts/feeds/views) documentation for more information.
+On the package list, you can now see the view(s) of each package version to quickly determine their quality. See the [release views](/vsts/package/concepts/views) documentation for more information.
 
 > [!div class="mx-imgBorder"]
 ![Views in package list](_img/130_02.png)

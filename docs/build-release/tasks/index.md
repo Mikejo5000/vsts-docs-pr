@@ -7,8 +7,9 @@ ms.assetid: D2DE8A26-AF89-4B08-9FCD-30CD58635B0A
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/18/2016
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: '>= tfs-2015')
+
 
 # Build and release tasks
 
@@ -22,6 +23,7 @@ ms.date: 08/18/2016
 | ![icon](build/_img/android-signing.png) [Android Signing](build/android-signing.md). Sign and align Android APK files | VSTS, TFS 2015 RTM and newer |
 | ![icon](build/_img/ant.png) [Ant](build/ant.md). Build with Apache Ant | VSTS, TFS 2015 RTM and newer |
 | ![icon](build/_img/cmake.png) [CMake](build/cmake.md). Build with the CMake cross-platform build system | VSTS, TFS 2015 RTM and newer |
+| ![icon](build/_img/go.png) [Go](build/go-build.md). Get, build, or test a Go application, or run a custom command | VSTS |
 | ![icon](build/_img/gradle.png) [Gradle](build/gradle.md). Build using a Gradle wrapper script | VSTS, TFS 2015 RTM and newer |
 | ![icon](build/_img/grunt.png) [Grunt](build/grunt.md). The JavaScript Task Runner | VSTS, TFS 2015.3 and newer |
 | ![icon](build/_img/gulp.png) [Gulp](build/gulp.md). Node.js streaming task based build system | VSTS, TFS 2015 RTM and newer |
@@ -78,7 +80,9 @@ ms.date: 08/18/2016
 | ![icon](test/_img/web-based-perf-icon.png) [Cloud-based Web Performance Test](test/cloud-based-web-performance-test.md). Runs the quick web performance test in cloud, with VSTS | VSTS, TFS 2015 RTM and newer |
 | ![icon](test/_img/publish-code-coverage-results-icon.png) [Publish Code Coverage Results](test/publish-code-coverage-results.md). Publish code coverage results to VSTS/TFS | VSTS, TFS 2015.3 and newer |
 | ![icon](test/_img/publish-test-results-icon.png) [Publish Test Results](test/publish-test-results.md). Publish Test Results to VSTS/TFS | VSTS, TFS 2015 RTM and newer |
+| ![icon](test/_img/run-functional-tests-icon.png) [Run Functional Tests](test/run-functional-tests.md). Run Coded UI/Selenium/Functional tests on a set of machines (using Test Agent) | VSTS, TFS 2015.3 and newer |
 | ![icon](test/_img/visual-studio-test-icon.png) [Visual Studio Test version 2](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTest/README.md). [Visual Studio Test version 1](https://github.com/Microsoft/vsts-tasks/blob/releases/m109/Tasks/VsTest/README.md)<br/>Run tests with Visual Studio test runner | VSTS, TFS 2015 RTM and newer |
+| ![icon](test/_img/visual-studio-test-agent-deployment-icon.png) [Visual Studio Test Agent Deployment](test/visual-studio-test-agent-deployment.md). Deploy and configure Test Agent to run tests on a lab machine group | VSTS, TFS 2015 RTM and newer |
 
 ## Package
 
@@ -106,6 +110,7 @@ ms.date: 08/18/2016
 | ![icon](deploy/_img/azure-resource-group-deployment-icon.png) [Azure Resource Group Deployment](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureResourceGroupDeployment). Deploy, start, stop, delete Azure Resource Groups | VSTS, TFS 2015.3 and newer |
 | ![icon](deploy/_img/azure-sql-database-deployment-icon.png) [Azure SQL Database Deployment](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/SqlAzureDacpacDeployment). Deploy Azure SQL DB using DACPAC | VSTS, TFS 2015.3 and newer |
 | ![icon](deploy/_img/ssh.png) [Copy Files Over SSH](deploy/copy-files-over-ssh.md). Copy files from source folder to target folder on a remote machine over SSH | VSTS, TFS 2017 and newer |
+| ![icon](deploy/_img/docker-icon.png) [Docker](deploy/docker.md). Build, tag, push, or run Docker images, or run a Docker command. Task can be used with Docker or Azure Container registry | VSTS, TFS 2017 and newer |
 | ![icon](deploy/_img/powershell-on-target-machines-icon.png) [PowerShell on Target Machines](deploy/powershell-on-target-machines.md). Execute PowerShell scripts on remote machine(s) | VSTS, TFS 2015 RTM and newer |
 | ![icon](deploy/_img/azure-service-fabric.png) [Service Fabric Application Deployment](deploy/service-fabric-deploy.md). Deploy a Service Fabric application to a cluster | VSTS, TFS 2017 and newer |
 | ![icon](deploy/_img/azure-service-fabric.png) [Service Fabric Compose Deploy](deploy/service-fabric-compose-deploy.md). Deploy a Service Fabric application to a cluster using a compose file | VSTS |
@@ -117,6 +122,7 @@ ms.date: 08/18/2016
 | Task | Versions |
 |------|----------|
 | ![icon](tool/_img/net-core-tool-installer.png) [.NET Core Tool Installer](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/DotNetCoreInstaller). Acquires a specific version of .NET Core and adds it to the PATH. Use the task to change the Core version for subsequent tasks. | VSTS, TFS 2018 |
+| ![icon](tool/_img/go.png) [Go Tool Installer](tool/go-install.md). Finds or downloads a specific version of the Go tool into the tools cache and adds it to the PATH | VSTS |
 | ![icon](tool/_img/node.png) [Node Tool Installer](tool/node-js.md). Finds or downloads and caches the specified version of [Node.js](https://nodejs.org/) and adds it to the PATH | VSTS |
 | ![icon](tool/_img/java.png) [Java Tool Installer](tool/java-tool-installer.md). Acquires a specific version of Java from a user supplied Azure blob, a location in the souce or on the agent, or the tools cache and sets JAVA_HOME. Use this task to change the version of Java used in Java tasks. | VSTS |
 | ![icon](tool/_img/visual-studio-installer.png) [Visual Studio Test Platform Installer](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/VsTestPlatformToolInstaller). Acquires the Visual Studio Test Platform from nuget.org or the tools cache. | VSTS |
@@ -137,6 +143,8 @@ Yes: [Add a build task](../../extend/develop/add-build-task.md)
 
 [!INCLUDE [temp](../_shared/qa-agents.md)]
 
+::: moniker range="< vsts"
 [!INCLUDE [temp](../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->

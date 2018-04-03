@@ -18,7 +18,7 @@
     href: ../work/scale/add-team-administrator.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
 - name: Tutorials
   items:
-  - name: Content VSTS account to AAD
+  - name: Connect VSTS account to AAD
     href: connect-account-to-aad.md
   - name: Change individual permissions 
     href: ../security/change-individual-permissions.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
@@ -76,6 +76,8 @@
       href: change-application-access-policies-vs.md
     - name: Delete users from your account
       href: delete-account-users.md
+    - name: Add external user
+      href: add-external-user.md
     - name: Access with Azure AD
       items:
       - name: Add Azure AD group to VSTS group
@@ -128,6 +130,8 @@
     href: faq-delete-restore-vsts-account.md
   - name: Set up Visual Studio
     href: faq-set-up-vs.md
+  - name: Manage group-based licensing
+    href: faq-manage-group-based-licensing.md
 - name: Reference
   items:
   - name: "Permissions and access (Security)"

@@ -8,11 +8,15 @@ ms.assetid:
 ms.manager: douge
 ms.author: kaelli
 ms.date: 02/12/18
+monikerRange: '>= tfs-2013'
 ---
+
 
 # Permissions lookup guide for VSTS & TFS
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+
+
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 Use this index to locate the topic on how to manage a specific permission. Most permissions are managed for an object, project, or collection. Other permissions are managed by adding users and groups to a role.   To learn more, see [About permissions and groups](about-permissions.md) and [About security roles](about-security-roles.md). 
   
@@ -64,6 +68,7 @@ for all team projects defined in the account or collection:
 
 
 ## Related notes
+
 - [Grant or restrict permissions to select tasks](restrict-access.md)
 - [About permissions and groups](about-permissions.md)
 - [About security roles](about-security-roles.md). 

@@ -111,7 +111,7 @@ During a sprint, your team can use the task board and sprint burndown chart to t
 </p>
 <p>Each team is associated with one and only one velocity chart. The green bar within the chart indicates the total estimated effort (story points or size) of backlog items (user stories or requirements) completed within the sprint. (Blue corresponds to the estimated effort of items not yet completed.)  </p>
 <p>Velocity will vary depending on team capacity, sprint over sprint. However, over time, the velocity should indicate a reliable average that can be used to forecast the full backlog. </p>
-<p>By minimizing the variability of backlog item size─effort or story points─you gain more reliable velocity metrics.</p>
+<p>By minimizing the variability of backlog item size&mdash;effort or story points&mdash;you gain more reliable velocity metrics.</p>
 </td>
 <td width="500px">
 ![Velocity chart](_img/velocity-chart.png)
@@ -148,7 +148,7 @@ For example, by selecting Sprints 1 thru 4, the Fabrikam Fiber team gets access 
 
 <img src="_img/selected-iterations-generate-sprint-backlogs.png" alt="TFS 2015 and TFS 2013, Selected iterations generate sprint backlogs" style="border: 2px solid #C3C3C3;" />
 
-## Related notes 
+## Related articles 
 If you work with several teams, and each team wants their own backlog view, you can [create additional teams](../scale/multiple-teams.md). Each team then gets access to their own set of Agile tools. Each Agile tool filters work items to only include those assigned values under the team's default area path and iteration path, which you configure via the [Set team defaults](../scale/set-team-defaults.md) .  
 
 - [What is Scrum?](https://www.visualstudio.com/learn/what-is-scrum/)

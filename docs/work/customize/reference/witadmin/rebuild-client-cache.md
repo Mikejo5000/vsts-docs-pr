@@ -5,9 +5,11 @@ description: Update the data cache on client computers after certain maintenance
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
 ms.assetid: e110852a-ab93-4259-957e-47c2076c20bb
+ms.topic: reference
 ms.manager: douge
 ms.author: kaelli
-ms.date: 02/26/2018
+monikerRange: '>= tfs-2013 <= tfs-2018'
+ms.date: 03/20/2018
 ---
 
 # Rebuild the client cache
@@ -15,7 +17,7 @@ ms.date: 02/26/2018
 [!INCLUDE [temp](../../../_shared/version-header-tfs-only.md)]
 
 
->[!NOTE]  
+> [!NOTE]    
 >This topic applies to team project customization for the On-premises XML process model. For an overview of what features are supported for all three process models, see [Customize your work tracking experience](../../customize-work.md).  
 
 You can force a rebuild of the cache on each client computer the next time it connects to a team project collection by using the **witadmin rebuildcache** command.  
@@ -58,5 +60,5 @@ witadmin rebuildcache /collection:CollectionURL [/noprompt]
 witadmin rebuildcache /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection  
 ```  
   
-## Related notes
+## Related articles
 - [witAdmin: Customize and manage objects for tracking work](witadmin-customize-and-manage-objects-for-tracking-work.md)

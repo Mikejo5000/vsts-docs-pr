@@ -5,6 +5,7 @@ description: Use keyboard shortcuts to interact with work item forms and the Wor
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 
+ms.topic: reference
 ms.manager: douge
 ms.author: kaelli
 ms.topic: reference
@@ -26,7 +27,7 @@ With keyboard shortcuts, you can quickly navigate within a web page or the web w
 [!INCLUDE [temp](../../_shared/keyboard-shortcuts/wi-form-shortcuts.md)] 
 
 
-## Related notes
+## Related articles
 
 - [Keyboard shortcuts for VSTS, TFS, and Team Explorer](../../collaborate/keyboard-shortcuts.md)
 
