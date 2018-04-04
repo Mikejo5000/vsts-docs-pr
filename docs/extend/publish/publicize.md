@@ -44,7 +44,7 @@ The process to have a public VSTS listing for an integration or extension is the
 
 Once you are ready to publish a public VSTS listing to the Marketplace, follow these steps:
 
-1. Visit http://marketplace.visualstudio.com/manage/publishers and login with the account using which you will publish and manage VSTS listings in Marketplace.
+1. Login into http://marketplace.visualstudio.com/manage/publishers with the account with which you publish and manage VSTS listings in Marketplace
 2. Select the publisher and through the **Details tab** apply for publisher verification. You will find the appropriate section towards the bottom of the tab.
 3. Expect Microsoft to approve or respond within 3 business days to your verification request.
 
@@ -58,25 +58,24 @@ Once your publisher is verified, you need to set the [public flag](../develop/ma
 Through Marketplace Certified, we want to showcase publishers who have met the benchmarks of being a good publisher in Marketplace. Once certified, all your VSTS/TFS extensions and integrations will display the Marketplace Certified badge. This badge helps customers feel confident in acquiring and evaluating your offering.
 
 Certification criteria:
-
 1. For each public VSTS/TFS extension under this publisher:
-   * Ensure presence of a valid privacy policy. Refer to [extension manifest](../develop/manifest.md) on how to add one.
-   * Ensure presence of a valid license i.e. end user license agreement. Refer to [extension manifest](../develop/manifest.md) on how to add one.
-   * Ensure presence of a valid support link. Refer to [extension manifest](../develop/manifest.md) on how to add one.
-   * Ensure that all valid questions under the Q&A section are answered satisfactorily. We expect our certified publishers to respond to questions in a timely manner (within a week).
-2. Publisher profile:
-Through publisher profile, you have a way to showcase all your extensions in one place along with some publisher related information. To fill in the informatiom which shows up there:
-   * Visit http://marketplace.visualstudio.com/manage/publishers and login with the account using which you publish and manage VSTS listings in Marketplace.
-   * Select the publisher and fill in the **About you** section under the **Details tab**. For Microsoft publisher, this looks as follows: 
-     <img alt="MicrosoftDetails" src="_img/microsoft-about-you-section.jpg" />
-   * Save your changes and use 'View profile' action on the top to see how your profile page will appear to the consumers
+   * Ensure presence of a valid privacy policy (refer to [extension manifest](../develop/manifest.md) on how to add one).
+   * Ensure presence of a valid license i.e. end user license agreement (refer to [extension manifest](../develop/manifest.md) on how to add one).
+   * Ensure presence of a valid support link (refer to [extension manifest](../develop/manifest.md) on how to add one).
+   * Ensure that all valid questions under the Q&A section are answered satisfactorily. We expect our publishers to respond to questions in a timely manner, at least within a week.
+2. Publisher profile
+Through publisher profile, you have a way to showcase all your extensions in one place along with key publisher related information. To provide the informatiom which shows up in the profile:
+   * Login into http://marketplace.visualstudio.com/manage/publishers with the account with which you publish and manage VSTS listings in Marketplace
+   * Select the publisher and fill in the **About you section under the Details tab**. For Microsoft publisher, this looks as follows: 
+     <img alt="MicrosoftDetails" src="./../_img/microsoft-about-you-section.jpg" />
+   * Save your changes and use 'View profile' action on the top to see how your profile page will appear to the consumers. You may use this profile page to spread word on your extensions.
 
 Applying to be Marketplace Certified
 You can apply to be a Marketplace Certified publisher from the manage page in Marketplace.
 * Login into http://marketplace.visualstudio.com/manage/publishers with the account with which you publish and manage VSTS listings in Marketplace
-* Select the publisher and visit the Certification tab. if you meet the criteria, if will present you with an option to apply for certification.
+* Select the publisher and visit its Certification tab. Note: you needs to have at least 1 public VSTS/TFS extension for the tab to even show up. If you meet the criteria, if will present you with an option to apply for certification
 * Once applied, our Marketplace team will respond in 5-10 business days.
-> Marketplace team will look at additional parameters such as install/get started counts and ratings for your extensions before granting certification. Microsoft reserves the right to reject and revoke the certification without any notice and reason.
+> Marketplace team will look at additional parameters such as install/get started counts and ratings for across your extensions before granting certification. Microsoft reserves the right to reject and revoke the certification without any notice and reason.
 
 # Contact
 
