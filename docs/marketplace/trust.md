@@ -11,9 +11,9 @@ monikerRange: '>= tfs-2015'
 
 ## Protective Scans
 As a consumer of Marketplace, you expect that you do not receive malware when you acquire an extension from VS Marketplace. In order to achieve the same we run a comprehensive virus scan on each extension package we receive. This is performed for each new extension and for each extension update. Until the scan is all clear, we do **not** publish the extension in Marketplace for public usage.
-Note: the extension can at runtime potentially acquire malware and the above stated scan will not be able to cover that. 
+> During execution an extension can potentially acquire malware and above stated scan will not be able to catch that. 
 
-We also perform content scan for each extension in Marketplace. We avoid adult, offensive, CSAM (child sexual abuse material) and terrorist content in extensions through the content scan.
+We also perform content scan for each extension in Marketplace. This too is performed for each new extension and for each extension update. We avoid adult, offensive, CSAM (child sexual abuse material) and terrorist content in extensions through the content scan.
 
 Share with us on which additional protective measures will help you through our [UserVoice](https://visualstudio.uservoice.com/forums/331878-visual-studio-marketplace).
 
