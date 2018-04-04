@@ -30,7 +30,7 @@ Marketplace Certified program is designed to help you acquire extensions with co
 
 You can expect timely support and great customer experineces when acquiring an extension from a certified publisher. Check out the [offerings from our certified publishers](https://marketplace.visualstudio.com/search?target=VSTS&category=All%20categories&sortBy=Downloads).
 
-> Publisher certfication is only applicable to publishers with one or more public VSTS/TFS extensions or integrations.
+> Publisher certfication is only applicable for publishers with one or more public VSTS/TFS extensions or integrations.
 
 If you acquired an extension from a certified publisher and aren't satisfied with your experience, then [bring it to the notice of the Marketplace team](https://docs.microsoft.com/en-us/vsts/marketplace/marketplace-billing-qa).
 
