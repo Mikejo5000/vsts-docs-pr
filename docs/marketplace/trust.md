@@ -20,13 +20,13 @@ Share with us on which additional protective measures will help you through our 
 
 ## Marketplace Certified
 Marketplace Certified program is designed to help you acquire extensions with confidence. Publishers with the Marketplace Certified badge imply that the pubisher has met the benchmarks of being a good publisher in Marketplace. Marketplace assigns the badge to a publisher after carefully reviewing the publisher across various parameters:
-* their Marketplace presence
-* install count for their extensions
-* privacy policy
-* licensing policy
-* support policy
+* Install count for their extensions
+* Privacy policy
+* Licensing policy
+* Support policy
 * Q&A responsiveness
-* ratings for their extensions
+* Ratings & Review for their extensions
+* Marketplace presence
 
 You can expect timely support and great customer experineces when acquiring an extension from a certified publisher. Check out the [offerings from our certified publishers](https://marketplace.visualstudio.com/search?target=VSTS&category=All%20categories&sortBy=Downloads).
 
