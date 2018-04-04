@@ -19,13 +19,19 @@ Share with us on which additional protective measures will help you through our 
 
 
 ## Marketplace Certified
-Marketplace Certified program is designed to help you acquire extensions with confidence. Publishers with the Marketplace Certified badge imply that the pubisher has met the benchmarks of being a good publisher in Marketplace. Marketplace assigns the badge to a publisher after carefully reviewing across various parameters: their Marketplace presence, install counts, privacy policy, licensing policy, support policy, Q&A responsiveness, and ratings for their extensions.
+Marketplace Certified program is designed to help you acquire extensions with confidence. Publishers with the Marketplace Certified badge imply that the pubisher has met the benchmarks of being a good publisher in Marketplace. Marketplace assigns the badge to a publisher after carefully reviewing the publisher across various parameters:
+* their Marketplace presence
+* install count for their extensions
+* privacy policy
+* licensing policy
+* support policy
+* Q&A responsiveness
+* ratings for their extensions
 
 You can expect timely support and great customer experineces when acquiring an extension from a certified publisher. Check out the [offerings from our certified publishers](https://marketplace.visualstudio.com/search?target=VSTS&category=All%20categories&sortBy=Downloads).
 
-Note: Publisher certfication is only applicable to publishers with one or more VSTS/TFS extensions or integrations.
+> Publisher certfication is only applicable to publishers with one or more VSTS/TFS extensions or integrations.
 
-If you acquired an extension from a certified publisher and aren't satisfied with your experience, then [bring it to the notice of the Marketplace team]().
+If you acquired an extension from a certified publisher and aren't satisfied with your experience, then [bring it to the notice of the Marketplace team](https://docs.microsoft.com/en-us/vsts/marketplace/marketplace-billing-qa).
 
-Irrespective, we highly recommend installing an extension on an isolated account first to rest your concerns. Once you are satisfied then only take it forward to other accounts. 
-Note: the update to an extension can possibly break that trust. However, we hope that our publishers and ecosystem will help us keep the system clean. If a concern is found, Marketplace team will disable an extension immediately and notify its existing customers appropriately.
+Irrespective of above scans and certification, we highly recommend installing and evalutaing an extension on an isolated account first to rest your concerns. Once you are satisfied then only take it forward to other accounts. The update to an extension can possibly break that trust. However, we expect that our publishers and ecosystem will help us keep the system clean. If a concern is found, Marketplace team will disable the extension in question immediately and notify its existing customers appropriately.
