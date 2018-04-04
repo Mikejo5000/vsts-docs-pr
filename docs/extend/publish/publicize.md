@@ -68,7 +68,7 @@ Certification criteria:
 Through publisher profile, you have a way to showcase all your extensions in one place along with some publisher related information. To fill in the informatiom which shows up there:
    * Visit http://marketplace.visualstudio.com/manage/publishers and login with the account using which you publish and manage VSTS listings in Marketplace.
    * Select the publisher and fill in the **About you** section under the **Details tab**. For Microsoft publisher, this looks as follows: 
-     <img alt="MicrosoftDeatils" src="_img/MicrosoftAboutYouSection.jpg" />
+     <img alt="MicrosoftDetails" src="_img/microsoft-about-you-section.jpg" />
    * Save your changes and use 'View profile' action on the top to see how your profile page will appear to the consumers
 
 Applying to be Marketplace Certified
