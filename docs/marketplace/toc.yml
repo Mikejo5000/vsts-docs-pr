@@ -20,6 +20,8 @@
   items:
   - name: Extension reporting
     href: extension-report.md
+  - name: Trust
+    href: trust.md
 - name: How-to Guides
   items:
   - name: Manage extension permissions (Security)
