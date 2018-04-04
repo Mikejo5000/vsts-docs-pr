@@ -29,5 +29,3 @@ If you acquired an extension from a certified publisher and aren't satisfied wit
 
 Irrespective, we highly recommend installing an extension on an isolated account first to rest your concerns. Once you are satisfied then only take it forward to other accounts. 
 Note: the update to an extension can possibly break that trust. However, we hope that our publishers and ecosystem will help us keep the system clean. If a concern is found, Marketplace team will disable an extension immediately and notify its existing customers appropriately.
-
-
