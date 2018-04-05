@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2017'
 **VSTS** | **TFS 2018** | **TFS 2017**
 
 ## Before you start
-This guide assumes you've already set up Package Management. You can check out how license the extension in the 
+This guide assumes you've already set up Package Management. You can check out how to license the extension in the 
 [License Package Management guide](install.md).
 
 <a name="create-a-feed"></a>
