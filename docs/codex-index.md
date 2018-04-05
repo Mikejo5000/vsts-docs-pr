@@ -129,24 +129,10 @@ featureFlags:
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardText">
-                                                <h3>Navigation & Settings</h3>
-                                                <ul class="noBullet">
-                                                    <li><a class="barLink" href="/en-us/vsts/git/">Navigation Basics</a></li>
-                                                    <li><a class="barLink" href="/en-us/vsts/git/">Project & Account Settings</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="cardSize">
-                                    <div class="cardPadding">
-                                        <div class="card">
-                                            <div class="cardText">
                                                 <h3>Add your code</h3>
                                                 <ul class="noBullet">
-                                                    <li><a class="barLink" href="/en-us/vsts/git/">Git Repositories</a></li>
+                                                    <li><a class="barLink" href="/vsts/git/">Git Repositories</a></li>
+                                                    <li><a class="barLink" href="/vsts/java/">Get started with Java</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -161,7 +147,7 @@ featureFlags:
                                                 <h3>Continuous integration &amp; delivery</h3>
                                                 <ul class="noBullet">
                                                     <li><a class="barLink" href="/vsts/deploy-azure/">Deploy to Azure</a></li>
-                                                    <li><a class="barLink" href="/vsts/build-release/">Build and Release</a></li>
+                                                    <li><a class="barLink" href="/vsts/build-release/">Build &amp; Release</a></li>
                                                     <li><a class="barLink" href="/vsts/package/">Package Management</a></li>
                                                 </ul>
                                             </div>
@@ -176,8 +162,9 @@ featureFlags:
                                             <div class="cardText">
                                                 <h3>Codex Agile</h3>
                                                 <ul class="noBullet">
+                                                    <li><a class="barLink" href="/vsts/work/scrum/index">Backlogs</a></li>
+                                                    <li><a class="barLink" href="/vsts/work/kanban/index">Boards  &amp; Kanban</a></li>
                                                     <li><a class="barLink" href="/vsts/work/scrum/index">Scrum</a></li>
-                                                    <li><a class="barLink" href="/vsts/work/kanban/index">Boards</a></li>
                                                     <li><a class="barLink" href="/vsts/report/dashboards/index">Dashboards</a></li>
                                                 </ul>
                                             </div>
@@ -195,6 +182,21 @@ featureFlags:
                                                     <li><a class="barLink" href="/vsts/build-release/test/index">Continuous Testing</a></li>
                                                     <li><a class="barLink" href="/vsts/manual-test/index">Exploratory &amp; Manual Testing</a></li>
                                                     <li><a class="barLink" href="/vsts/load-test/index">Load Testing</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardText">
+                                                <h3>Navigation &amp; Settings</h3>
+                                                <ul class="noBullet">
+                                                    <li><a class="barLink" href="/vsts/navigation/">Navigation Basics</a></li>
+                                                    <li><a class="barLink" href="/vsts/settings/">Project &amp; Account Settings</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -311,7 +313,7 @@ featureFlags:
                                 <div class="group">
                                     <h3>Settings</h3>
                                     <ul>
-                                        <li><a class="barLink" href="/vsts/settings/index">Project & Account Settings</a></li>
+                                        <li><a class="barLink" href="/vsts/settings/index">Project &amp; Account Settings</a></li>
                                         <li><a class="barLink" href="/vsts/settings/index">Scale and Configure Teams</a></li>
                                         <li><a class="barLink" href="/vsts/settings/customize/index">Codex Agile Customization</a></li>
                                         <li><a class="barLink" href="/vsts/accounts/index">Account Management</a></li>
@@ -978,7 +980,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Project & Account Settings</h3>
+                                                    <h3>Project &amp; Account Settings</h3>
                                                     <p>Configure resources for Codex apps.</p>
                                                 </div>
                                             </div>
@@ -1235,11 +1237,11 @@ featureFlags:
                 <a href="#tfs-server">Team Foundation Server</a>
                 <ul id="tfs-server">
                     <li>
-                        <a data-default="true" href="#all">All</a>
-                        <ul id="all" class="cardText">
+                        <a data-default="true" href="#tfs-all">All</a>
+                        <ul id="tfs-all" class="cardText">
                             <li>
                                 <div class="group">
-                                    <h3>Codex Repos</h3>
+                                    <h3>Code</h3>
                                     <ul>
                                         <li><a class="barLink" href="/vsts/git/index">Git Repositories</a></li>
                                         <li><a class="barLink" href="/vsts/git/tutorial/pullrequest">Pull Requests</a></li>
@@ -1247,7 +1249,7 @@ featureFlags:
                                         <li><a class="barLink" href="/vsts/git/branch-policies">Branch Policies</a></li>
                                         <li><a class="barLink" href="/vsts/tfvc/index">TFVC</a></li>
                                     </ul>
-                                    <h3>Codex Pipelines</h3>
+                                    <h3>Continuous Integration &amp; Delivery</h3>
                                     <ul>
                                         <li><a class="barLink" href="/vsts/build-release/index">Build &amp; Release</a></li>
                                         <li><a class="barLink" href="/vsts/build-release/test/index">Continuous Testing</a></li>
@@ -1257,7 +1259,7 @@ featureFlags:
                                         <li><a class="barLink" href="/vsts/build-release/concepts/agents/agents">Hosted and Private Agents</a></li>
                                         <li><a class="barLink" href="/vsts/build-release/tasks">Task Reference</a></li>
                                     </ul>
-                                    <h3>Codex Test</h3>
+                                    <h3>Test</h3>
                                     <ul>
                                         <li><a class="barLink" href="/visualstudio/test/unit-test-your-code">Unit and Functional Testing</a></li>
                                         <li><a class="barLink" href="/vsts/manual-test/index">Exploratory &amp; Manual Testing</a></li>
@@ -1268,7 +1270,7 @@ featureFlags:
                             </li>
                             <li>
                                 <div class="group">
-                                    <h3>Codex Agile</h3>
+                                    <h3>Agile</h3>
                                     <ul>
                                       <li><a class="barLink" href="/vsts/work/work-items/index">Work Items</a></li>
                                         <li><a class="barLink" href="/vsts/work/backlogs/index">Backlogs</a></li>
@@ -1278,7 +1280,7 @@ featureFlags:
                                         <li><a class="barLink" href="/vsts/work/customize/index">Customization</a></li>
                                         <li><a class="barLink" href="/vsts/work/scale/index">Agile at Scale</a></li>
                                     </ul>
-                                    <h3>Dashboards</h3>
+                                    <h3>Reporting</h3>
                                     <ul>
                                         <li><a class="barLink" href="/vsts/report/dashboards/index">Dashboards</a></li>
                                         <li><a class="barLink" href="/vsts/report/sql-reports/index">SQL Server Reporting</a></li>
@@ -1322,8 +1324,8 @@ featureFlags:
                         </ul>
                     </li>
                     <li>
-                        <a href="#code">Codex Repos</a>
-                        <ul id="code" class="cardsA">
+                        <a href="#tfs-code">Code</a>
+                        <ul id="tfs-code" class="cardsA">
                             <li>
                                 <a href="/vsts/git">
                                     <div class="cardSize">
@@ -1403,8 +1405,8 @@ featureFlags:
                         </ul>
                     </li>
                     <li>
-                        <a href="#delivery">Codex Pipelines</a>
-                        <ul id="delivery" class="cardsA">
+                        <a href="#tfs-delivery">Continuous Integration &amp; Delivery</a>
+                        <ul id="tfs-delivery" class="cardsA">
                             <li>
                                 <a href="/vsts/build-release/index">
                                     <div class="cardSize">
@@ -1543,8 +1545,8 @@ featureFlags:
                         </ul>
                     </li>
                     <li>
-                        <a href="#testing">Codex Test</a>
-                        <ul id="testing" class="cardsA">
+                        <a href="#tfs-testing">Test</a>
+                        <ul id="tfs-testing" class="cardsA">
                             <li>
                                 <a href="/visualstudio/test/unit-test-your-code">
                                     <div class="cardSize">
@@ -1626,8 +1628,8 @@ featureFlags:
                         </ul>
                     </li>
                     <li>
-                        <a href="#codex-agile">Codex Agile</a>
-                        <ul id="codex-agile" class="cardsA">
+                        <a href="#tfs-agile">Agile</a>
+                        <ul id="tfs-agile" class="cardsA">
                             <li>
                                 <a href="/vsts/work/work-items/index">
                                     <div class="cardSize">
@@ -1726,6 +1728,25 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
+                                <a href="/vsts/work/customize/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/i_config-tools.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Customize</h3>
+                                                    <p>Customize your Agile tools and the work tracking experience.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
                                 <a href="/vsts/work/scale/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
@@ -1748,8 +1769,8 @@ featureFlags:
                         </ul>
                     </li>
                     <li>
-                        <a href="#reporting">Dashboards</a>
-                        <ul id="reporting" class="cardsA">
+                        <a href="#tfs-reporting">Dashboards &amp; Reports</a>
+                        <ul id="tfs-reporting" class="cardsA">
                             <li>
                                 <a href="/vsts/report/dashboards/index">
                                     <div class="cardSize">
@@ -1791,8 +1812,8 @@ featureFlags:
                         </ul>
                     </li>
                     <li>
-                        <a href="#collaboration">Collaboration</a>
-                        <ul id="collaboration" class="cardsA">
+                        <a href="#tfs-collaboration">Collaboration</a>
+                        <ul id="tfs-collaboration" class="cardsA">
                             <li>
                                 <a href="/vsts/navigation/index">
                                     <div class="cardSize">
@@ -1893,10 +1914,10 @@ featureFlags:
                         </ul>
                     </li>
                     <li>
-                        <a href="#codex-settings">Settings</a>
-                        <ul id="codex-settings" class="cardsA">
+                        <a href="#tfs-admin">Admin</a>
+                        <ul id="tfs-admin" class="cardsA">
                             <li>
-                                <a href="/vsts/settings/index">
+                                <a href="/vsts/tfs-server/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -1906,8 +1927,8 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Project & Account Settings</h3>
-                                                    <p>Configure resources for Codex apps.</p>
+                                                    <h3>Server Administration</h3>
+                                                    <p>Install, upgrade, and manage resources for your on-premises deployment.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -1994,8 +2015,8 @@ featureFlags:
                         </ul>
                     </li>
                     <li>
-                        <a href="#integration">Extend</a>
-                        <ul id="integration" class="cardsA">
+                        <a href="#tfs-integration">Extend</a>
+                        <ul id="tfs-integration" class="cardsA">
                             <li>
                                 <a href="/vsts/extend/index">
                                     <div class="cardSize">
@@ -2095,8 +2116,8 @@ featureFlags:
                         </ul>
                     </li>
                     <li>
-                        <a href="#marketplace">Marketplace</a>
-                        <ul id="marketplace" class="cardsA">
+                        <a href="#tfs-marketplace">Marketplace</a>
+                        <ul id="tfs-marketplace" class="cardsA">
                             <li>
                                 <a href="/vsts/marketplace/overview">
                                     <div class="cardSize">
