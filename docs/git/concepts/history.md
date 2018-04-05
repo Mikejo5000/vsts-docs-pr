@@ -6,8 +6,9 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-git 
 ms.manager: douge
 ms.author: sdanie
-ms.date: 06/16/2017
+ms.date: 03/14/2018
 ---
+[//]: # (monikerRange: '>= tfs-2013')
 
 ## Understand Git history
 
@@ -77,4 +78,4 @@ There are three people who merge commits from their own branches into the master
 
 ![console log of git graph](_img/history/gitlogconsole.png)
 
-Now that you understand how branches and merges create the shape of the graph, this shouldn’t be too scary!
+Now that you understand how branches and merges create the shape of the graph, this shouldn't be too scary!

@@ -12,7 +12,7 @@ ms.date: 06/02/2017
 
 # Service limits 
 
-**Azure CodeX Public Project** 
+[!INCLUDE [temp](_shared/version-public-projects.md)] 
 
 Public projects are subject to the limits documented in this topic. 
 

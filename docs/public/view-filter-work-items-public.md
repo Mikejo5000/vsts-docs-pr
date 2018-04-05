@@ -14,7 +14,7 @@ ms.date: 02/20/2018
 
 # View and filter work items  
 
-**Azure CodePlan Public Project**  
+[!INCLUDE [temp](_shared/version-public-projects.md)]  
 
 When you connect to a public project and the Azure CodePlan app, you're able to view work items defined for that project. If you're a contributor or stakeholder, you can also [add and edit work items](../work/work-items/view-add-work-items.md).  
 

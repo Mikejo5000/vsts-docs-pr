@@ -9,6 +9,7 @@ ms.manager: douge
 ms.author: alewis
 ms.date: 02/12/18
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
 # Build and release permissions and roles (Security)
 
@@ -20,12 +21,11 @@ This topic provides a description of the permissions and roles used to secure op
 
 For permissions, you grant or restrict permissions by setting the permission state to Allow or Deny, either for a security group or an individual user. For a role, you add a user or group to the role. To learn more about how permissions are set, including inheritance, see [About permissions and groups](../../../security/about-permissions.md). To learn how inheritance is supported for role-based membership, see [About security roles](../../../security/about-security-roles.md).
 
-
 ## Default permissions assigned to built-in security groups
 
 Once you have been added as a team member, you are a member of the Contributors group. This allows you to define and manage builds and releases.  The most common built-in groups include Readers, Contributors, and Project Administrators. These groups are assigned the default permissions as listed below.
 
-[!INCLUDE [temp](../../../security/_shared/build-release.md)]
+[!INCLUDE [temp](../../../security/_shared/build-release.md)]
 
 ## Security of agents and library entities
 
@@ -51,7 +51,7 @@ To set or override the permissions for a specific build definition, choose **Sec
 The following permissions are defined in Build. All of these can be set at both the levels.
 
 
-> [!div class="mx-tdCol2BreakAll"]  
+> [!div class="mx-tdCol2BreakAll"]
 > | Permission | Description |
 > |------------|-------------|
 > | **Administer build permissions** | Can change any of the other permissions listed here. |
@@ -116,7 +116,7 @@ from the ellipses (**...**) on an environment in the release definition editor.
 
 The following permissions are defined in Release Management. The scope column explains whether the permission can be set at the team project, release definition, or environment level.
 
-> [!div class="mx-tdCol2BreakAll"]   
+> [!div class="mx-tdCol2BreakAll"]
 > | Permission | Description | Scopes |
 > |------------|-------------|--------|
 > | **Administer release permissions** | Can change any of the other permissions listed here. | Project, Release definition, Environment |
@@ -150,7 +150,7 @@ level and can be overridden on an individual task group definition.
 
 You use task groups to encapsulate a sequence of tasks already defined in a build or a release definition into a single reusable task. You [define and manage task groups](../library/task-groups.md) in the **Task groups** tab of the **Build and Release** hub.
 
-> [!div class="mx-tdCol2BreakAll"]  
+> [!div class="mx-tdCol2BreakAll"]
 > | Permission | Description | 
 > |------------|-------------| 
 > | **Administer task group permissions** | Can add and remove users or groups to task group security. |
@@ -162,19 +162,19 @@ You use task groups to encapsulate a sequence of tasks already defined in a buil
 
 Permissions for library artifacts, such as variable groups and secure files, are managed by roles. You use a variable group to store values that you want to make available across multiple build and release definitions. You [define and manage variable groups](../library/variable-groups.md) and [secure files](../library/secure-files.md) in the **Library** tab of the **Build and Release** hub.
 
-[!INCLUDE [temp](../../../security/_shared/library-roles.md)]
+[!INCLUDE [temp](../../../security/_shared/library-roles.md)]
 
 ## Service endpoint security roles
 
 You [add users to the following roles](../../set-permissions.md) from the project-level admin context, **Services** page. To create and manage these resources, see [Service endpoints for build and release](../library/service-endpoints.md).   
 
-[!INCLUDE [temp](../../../security/_shared/service-endpoint-roles.md)]
+[!INCLUDE [temp](../../../security/_shared/service-endpoint-roles.md)]
 
 ## Deployment pool security roles
 
 You [add users to the following roles](../../set-permissions.md) from the collection-level admin context, **Deployment Pools** page. To create and manage deployment pools, see [Deployment groups](/vsts/build-release/concepts/definitions/release/deployment-groups).   
 
-[!INCLUDE [temp](../../../security/_shared/deployment-pool-roles.md)]
+[!INCLUDE [temp](../../../security/_shared/deployment-pool-roles.md)]
 
 
 ## Related notes 

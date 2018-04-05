@@ -10,11 +10,11 @@ ms.manager: douge
 ms.author: kaelli
 ms.date: 02/12/18
 ---
-
+[//]: # (monikerRange: '>= tfs-2013')
 
 # Permissions and groups in VSTS and TFS
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 This topic provides descriptions for each built-in group and permission. To learn how to add users to a group or set a specific permission that you can manage through the web portal, see the following resources:  
 
@@ -52,7 +52,11 @@ Project Server Integration Service Accounts
 SharePoint Web Application Services
 -->
 
+
+
 <a name="server"></a>
+
+[//]: # (::: moniker range=">= tfs-2013 <= tfs-2018")
 
 ##&nbsp;&nbsp;&nbsp;Server-level groups (TFS only)
 
@@ -140,7 +144,7 @@ You can't remove or delete the default server level groups.
 		</td>
 	</tr>
 	<tr>
-		<td>Project Server Integration Service Accounts   </td>
+		<td>Project Server Integration Service Accounts   </td>
 		<td>
 			Has service level permissions for the Project Server deployments
 			that are configured for interoperation with TFS
@@ -176,7 +180,10 @@ You can't remove or delete the default server level groups.
 > So the full name of the server level administrators group is
 > **[Team Foundation]/Team Foundation Administrators**.
 
+[//]: # (::: moniker-end)
+
 <a name="collection"></a>
+
 ##&nbsp;&nbsp;&nbsp;Collection-level groups
 
 When you create a VSTS account or TFS collection, the system creates collection-level groups that have [permissions in that collection](#collection-level). You can neither remove nor delete the built-in collection-level groups.
@@ -278,7 +285,7 @@ Project Collection Valid Users
 </table>
 
 > The full name of each of these groups is **[{collection name}]/{group name}**.
-> So the full name of the adminstrators group for the default collection is
+> So the full name of the administrator group for the default collection is
 > **[Default Collection]/Project Collection Administrators**.
 
 
@@ -295,6 +302,7 @@ Release Administrators (TFS 2017, VSTS)
 -->
 
 <a id="project-level-groups" />
+
 ##&nbsp;&nbsp;&nbsp;Project-level groups
 
 For each team project that you create, the system creates the followings team project-level groups. These groups are assigned [project-level permissions](#team-project-level-permissions).
@@ -771,8 +779,8 @@ You manage project-level permissions from the [web portal admin context](../user
 <p>Delete and restore work items</p><p>or Delete work items in this project</p></td>
 		<td>Can [mark work items in this project as deleted](../work/backlogs/remove-delete-work-items.md).
 <ul>
-<li>For VSTS and TFS 2015.1 and later versions, the Contributors group has **Delete and restore work items** at the project-level set to "Allow" by default.</li> 
-<li>For TFS 2015 and earlier versions, the Contributors group has **Delete work items in this project** at the project-level set to "Not set" by default. This setting causes the Contributors group to inherit the value from the closest parent that has it explicitly set. </li>    
+<li>For VSTS and TFS 2015.1 and later versions, the Contributors group has **Delete and restore work items** at the project-level set to "Allow" by default.</li> 
+<li>For TFS 2015 and earlier versions, the Contributors group has **Delete work items in this project** at the project-level set to "Not set" by default. This setting causes the Contributors group to inherit the value from the closest parent that has it explicitly set. </li>    
 </ul>
 </td>
 	</tr>
@@ -949,7 +957,7 @@ Commenting this section out as it duplicates that defined in the following table
 	<tr>
 		<td id="override-check-in-validation-by-build-permission">Override check-in validation by build</td>
 		<td>
-			Can commit a TFVC changeset that affects a gated build definition
+			Can commit a TFVC change set that affects a gated build definition
 			without triggering the system to shelve and build their changes first.
 			<blockquote>
 				Assign the Override check-in validation by build permission
@@ -1177,14 +1185,14 @@ In version control permissions, explicit deny takes precedence over administrato
 			Check in
 		</td>
 		<td data-th="Description">
-			Can check in items and revise any committed changeset comments.
+			Can check in items and revise any committed change set comments.
 			Pending changes are committed at check-in.
 			<blockquote>
 				Consider adding these permissions to any manually added users or groups
 				that contributes to the development of the team project;
 				any users who should be able to check in and check out changes,
 				make a pending change to items in a folder,
-				or revise any committed changeset comments.
+				or revise any committed change set comments.
 			</blockquote>
 		</td>
 	</tr>
@@ -1213,7 +1221,7 @@ In version control permissions, explicit deny takes precedence over administrato
 				that contributes to the development of the team project;
 				any users who should be able to check in and check out changes,
 				make a pending change to items in a folder,
-				or revise any committed changeset comments.
+				or revise any committed change set comments.
 			</blockquote>
 		</td>
 	</tr>
@@ -1702,6 +1710,8 @@ View releases
 
 <a id="release_management">  </a>
 
+[//]: # (::: moniker range=">= tfs-2017")
+
 ##&nbsp;&nbsp;&nbsp;Release (object-level) (VSTS, TFS 2017)
 
 You manage permissions [for each release defined in the web portal](../build-release/set-permissions.md). Project Administrators and Release Administrators are granted all release management permissions. These permissions can be granted or denied in a hierarchical model at the team project level, for a specific release definition, or for a specific environment in a release definition. Within this hierarchy, permissions can be inherited from the parent or overridden.
@@ -1738,9 +1748,10 @@ default. **Contributors** are given all permissions except
 are denied all permissions except **View release definition** and
 **View releases**.
 
-
+[//]: # (::: moniker-end)
 
 <a id="task-group">  </a>
+
 ##&nbsp;&nbsp;&nbsp;Task group (Build and Release) permissions
 
 You manage permissions [for task groups from the **Build and Release** hub](../build-release/set-permissions.md#task-group) of the web portal. Project, Build, and Release Administrators are granted all permissions. Task group permissions follow a hierarchical model. Defaults for all the permissions can be set at the team project
@@ -1754,7 +1765,7 @@ You use task groups to encapsulate a sequence of tasks already defined in a buil
 | **Delete task group** | Can delete a task group. | 
 | **Edit task group** | Can create, modify, or delete a task group. | 
 
-
+[//]: # (::: moniker range=">= tfs-2013 <= tfs-2013")
 
 <a id="lab">  </a>
 
@@ -1789,7 +1800,7 @@ By default, the team project level and collection-level Readers groups have only
 
 	<tr>
 		<td>Delete Lab Locations</td>
-		<td>Can delete the locations for Lab Management resources, which include collection host groups, collection library shares, project host groups, and project library shares. To delete a location, you must have the **Delete Lab Location** permission for that location.
+		<td>Can delete the locations for Lab Management resources, which include collection host groups, collection library shares, project host groups, and project library shares. To delete a location, you must have the **Delete Lab Location** permission for that location.
 		</td>
 	</tr>
 
@@ -1805,21 +1816,21 @@ By default, the team project level and collection-level Readers groups have only
 	</tr>
 	<tr>
 		<td>Import Virtual Machine</td>
-		<td>Can import a virtual machine from a VMM library share.This permission differs from Write because it only creates an object in Lab Management and does not write anything to the Virtual Machine Manager host group or library share. 
+		<td>Can import a virtual machine from a VMM library share.This permission differs from Write because it only creates an object in Lab Management and does not write anything to the Virtual Machine Manager host group or library share. 
 		</td>
 	</tr>
 
 	<tr>
 		<td>Manage Child Permissions</td>
 		<td>
-			Can change the permissions of all the child Lab Management objects. For example, if a user has **Manage Child Permission** for a team project host group, the user can change permissions for all the environments under that team project host group. 
+			Can change the permissions of all the child Lab Management objects. For example, if a user has **Manage Child Permission** for a team project host group, the user can change permissions for all the environments under that team project host group. 
 		</td>
 	</tr>
 
 	<tr>
 		<td>Manage Lab Locations</td>
 		<td>
-			 Can edit the locations of Lab Management resources, which include collection host groups, collection library shares, project host groups, and project library shares. To edit a specific location, you must have the **Manage Lab Location** permission for that location. This permission for collection level locations (collection host groups and collection library shares) also allows you to create team project level locations (project host group and project library share).
+			 Can edit the locations of Lab Management resources, which include collection host groups, collection library shares, project host groups, and project library shares. To edit a specific location, you must have the **Manage Lab Location** permission for that location. This permission for collection level locations (collection host groups and collection library shares) also allows you to create team project level locations (project host group and project library share).
 		</td>
 	</tr>
 
@@ -1849,7 +1860,7 @@ By default, the team project level and collection-level Readers groups have only
 	</tr>
 	<tr>
 		<td>View Lab Resources</td>
-		<td>Can view information for the various Lab Management resources, which include collection host groups, project host groups, and environment. To view information about a specific lab resource, you must have the **View Lab Resources** permission for that resource.	
+		<td>Can view information for the various Lab Management resources, which include collection host groups, project host groups, and environment. To view information about a specific lab resource, you must have the **View Lab Resources** permission for that resource.	
 	<tr>
 		<td>Write Environment and Virtual Machines</td>
 		<td>Can create environments for a project host group. Users who have this permission for a project library share can store environments and templates.
@@ -1860,7 +1871,7 @@ By default, the team project level and collection-level Readers groups have only
 </tbody>
 </table>
 
-
+[//]: # (::: moniker-end)
 
 
 <a id="alerts">  </a>

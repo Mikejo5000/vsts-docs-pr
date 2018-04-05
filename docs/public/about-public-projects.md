@@ -13,7 +13,7 @@ ms.date: 01/05/2018
 
 # What is a public project
 
-**Azure CodeX Public Project**  
+[!INCLUDE [temp](_shared/version-public-projects.md)] 
 
 Understand what a public project is, uses, benefits; what users are able to do (not do); types of access/users / user roles 
  

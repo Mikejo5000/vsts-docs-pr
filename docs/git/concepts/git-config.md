@@ -6,8 +6,9 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-git
 ms.manager: kangan
 ms.author: jepling
-ms.date: 10/11/2017
+ms.date: 03/14/2018
 ---
+[//]: # (monikerRange: '>= tfs-2018')
 
 # Git preferences and settings
 #### VSTS | TFS 2018
@@ -25,7 +26,7 @@ There are four files which are used to set configuration options. These files ar
 The files are read in the following order:
 
 0. `$(prefix)/etc/gitconfig`: System-wide configuration file.
-0. `$XDG_CONFIG_HOME/git/config`: Second user-specific configuration file. If `$XDG_CONFIG_HOME` is not set or is empty, `$HOME/.config/git/config` is used. Support for this file is not included in all versions, so for compatibility reasons, its use is not recommended.
+0. `$XDG_CONFIG_HOME/git/config`: Second user-specific configuration file. If `$XDG_CONFIG_HOME` is not set or is empty, `$HOME/.config/git/config` is used. Support for this file is not included in all versions, so for compatibility reasons, its use is not recommended.
 0. `~/.gitconfig`: User-specific configuration file, also known as the "global" configuration file.
 0. `$GIT_DIR/config`: Repository-specific configuration file.
 

@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: alewis
 ms.date: 08/18/2016
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
 # Build and release tasks
 
@@ -25,7 +26,7 @@ ms.date: 08/18/2016
 | ![icon](build/_img/grunt.png) [Grunt](build/grunt.md). The JavaScript Task Runner | VSTS, TFS 2015.3 and newer |
 | ![icon](build/_img/gulp.png) [Gulp](build/gulp.md). Node.js streaming task based build system | VSTS, TFS 2015 RTM and newer |
 | ![icon](build/_img/index-sources-publish-symbols.png) [Index Sources & Publish Symbols](build/index-sources-publish-symbols.md). Index your source code and publish symbols to a file share | VSTS, TFS 2015 RTM and newer |
-| ![icon](build/_img/jenkins-queue-job.png) [Jenkins Queue Job](build/jenkins-queue-job.md). Queue a job on a Jenkins server | VSTS, TFS 2015 RTM and newer |
+| ![icon](build/_img/jenkins-queue-job.png) [Jenkins Queue Job](build/jenkins-queue-job.md). Queue a job on a Jenkins server | VSTS, TFS 2017 RTM and newer |
 | ![icon](build/_img/maven.png) [Maven](build/maven.md). Build with Apache Maven | VSTS, TFS 2015 RTM and newer |
 | ![icon](build/_img/msbuild.png) [MSBuild](build/msbuild.md). Build with MSBuild | VSTS, TFS 2015 RTM and newer |
 | ![icon](build/_img/net-core-cli.png) [.NET Core CLI](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/DotNetCoreCLI). Build, test, and publish using the .NET Core command line  | VSTS, TFS 2018 |
@@ -77,7 +78,9 @@ ms.date: 08/18/2016
 | ![icon](test/_img/web-based-perf-icon.png) [Cloud-based Web Performance Test](test/cloud-based-web-performance-test.md). Runs the quick web performance test in cloud, with VSTS | VSTS, TFS 2015 RTM and newer |
 | ![icon](test/_img/publish-code-coverage-results-icon.png) [Publish Code Coverage Results](test/publish-code-coverage-results.md). Publish code coverage results to VSTS/TFS | VSTS, TFS 2015.3 and newer |
 | ![icon](test/_img/publish-test-results-icon.png) [Publish Test Results](test/publish-test-results.md). Publish Test Results to VSTS/TFS | VSTS, TFS 2015 RTM and newer |
+| ![icon](test/_img/run-functional-tests-icon.png) [Run Functional Tests](test/run-functional-tests.md). Run Coded UI/Selenium/Functional tests on a set of machines (using Test Agent) | VSTS, TFS 2015.3 and newer |
 | ![icon](test/_img/visual-studio-test-icon.png) [Visual Studio Test version 2](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTest/README.md). [Visual Studio Test version 1](https://github.com/Microsoft/vsts-tasks/blob/releases/m109/Tasks/VsTest/README.md)<br/>Run tests with Visual Studio test runner | VSTS, TFS 2015 RTM and newer |
+| ![icon](test/_img/visual-studio-test-agent-deployment-icon.png) [Visual Studio Test Agent Deployment](test/visual-studio-test-agent-deployment.md). Deploy and configure Test Agent to run tests on a lab machine group | VSTS, TFS 2015 RTM and newer |
 
 ## Package
 

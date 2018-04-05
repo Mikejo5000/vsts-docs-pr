@@ -13,7 +13,7 @@ ms.date: 01/05/2018
 
 # Create a public project
 
-**Azure CodeX Public Project**  
+[!INCLUDE [temp](_shared/version-public-projects.md)] 
 
 You can create a public project for one of the Azure CodeX apps, or add a public project to an existing account. 
 

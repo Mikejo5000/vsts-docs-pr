@@ -1,5 +1,6 @@
 ---
-title: Understand how permissions and groups are defined in VSTS & TFS
+title: Understand how permissions and groups are defined 
+titleSuffix: VSTS & TFS
 description: Understand how permissions are managed in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-admin
@@ -9,10 +10,11 @@ ms.manager: douge
 ms.author: kaelli
 ms.date: 02/07/2018
 ---
+[//]: # (monikerRange: '>= tfs-2013')
 
-# About permissions and groups 
+# About permissions and groups
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 To access the resources you manage in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)&mdash;like your code, builds, and work tracking&mdash;you need to have permissions to those specific resources. Most permissions are granted through built-in security groups as described in [Permissions and access](permissions-access.md). You can grant or deny permissions to specific users, built-in security groups, or groups defined in Azure Active Directory (AAD) if integrated with VSTS, or Active Directory if integrated with TFS. 
 
@@ -60,13 +62,15 @@ are inherited down the hierarchy.
 That is, a user's permissions that are set at `area-1` are inherited by `area-1/sub-area-1`,
 if the same permission is not explicitly allowed or denied for `area-1/sub-area-1`.
 If a permission is set explicitly for an object, like `area-1/sub-area-1`,
-then the parent node is not inheritied, regardless of whether it is denied or allowed.
-If it's not set, then the permissions for that node are inheritied from the closest ancestor
+then the parent node is not inherited, regardless of whether it is denied or allowed.
+If it's not set, then the permissions for that node are inherited from the closest ancestor
 that has the permission explicitly set.
 
 To understand why a permission is inherited, you can pause over the permission setting, and then choose **Why?**.
 
-###VSTS, TFS 2017 
+[//]: # (::: moniker range=">= tfs-2017")
+
+### VSTS, TFS 2017 
 
 <img src="_img/about-permissions-why.png" style="border: 1px solid #C3C3C3;" />
 
@@ -74,7 +78,12 @@ A new window opens that shows the inheritance information for that permission.
 
 <img src="_img/about-permissions-trace.png" style="border: 1px solid #C3C3C3;" />
 
-### TFS 2015, TFS 2013 
+[//]: # (::: moniker-end)
+
+[//]: # (::: moniker range=">= tfs-2013 <= tfs-2015")
+
+### TFS 2015, TFS 2013
+
 <img src="_img/permissions/inherited-permissions.png" style="border: 1px solid #C3C3C3;" />
 
 Some object level Security dialog boxes provide an Inheritance on/off option.
@@ -92,12 +101,14 @@ Use this option to disable inheritance for folders, shared queries, and other ob
 
 
 **Don't:**  
-- Don’t add accounts to the team project **Readers** group that you’ve added to the **Project Administrators** group. Because the Readers group denies several permissions that the Project Administrators group allows, and deny takes precedence.  
-- Don’t change the default assignments made to the valid users groups. If you remove or set the **View instance-level information** permission to Deny for one of the Valid Users groups, no users in the group will be able to access the team project, collection, or deployment, depending on the group you set.  
-- Don’t assign permissions that are noted as ‘Assign only to service accounts’ to user accounts.
+- Don't add accounts to the team project **Readers** group that you've added to the **Project Administrators** group. Because the Readers group denies several permissions that the Project Administrators group allows, and deny takes precedence.  
+- Don't change the default assignments made to the valid users groups. If you remove or set the **View instance-level information** permission to Deny for one of the Valid Users groups, no users in the group will be able to access the team project, collection, or deployment, depending on the group you set.  
+- Don't assign permissions that are noted as 'Assign only to service accounts' to user accounts.
 
+[//]: # (::: moniker-end)
 
 <a id="grant-permissions"  >  </a>  
+
 ## Permissions versus access levels 
 
 Permissions are different than access levels. Access levels control what features are 

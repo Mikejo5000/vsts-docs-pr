@@ -10,6 +10,7 @@ ms.author: kaelli
 ms.topic: get-started-article 
 ms.date: 10/09/2017
 ---
+[//]: # (monikerRange: '>= tfs-2013')
 
 # Features
 
@@ -22,9 +23,7 @@ If you're new to VSTS or TFS, see the [Key concepts](concepts.md) and other over
 >[!NOTE]  
 ><b>Feature availability: </b>Some features are platform dependent and are noted as follows:  
 >- **VSTS** - Available from VSTS (cloud service)  
->- **TFS** - Available from Team Foundation Server (on-premises)  
-
-
+>- **TFS** - Available from Team Foundation Server (on-premises)
 
 ##Access and supported clients
 
@@ -47,11 +46,11 @@ If you're new to VSTS or TFS, see the [Key concepts](concepts.md) and other over
 <p><b>Integrated Development Environments (IDE)
 </b></p>
 Track work and integrate with your code, build, and test environments from the following clients:   
-- [Eclipse (Team Explorer Everywhere)](http://java.visualstudio.com/Docs/tools/eclipse)       
+- [Eclipse (Team Explorer Everywhere)](/vsts/java/download-eclipse-plug-in)       
 - [Visual Studio](https://www.visualstudio.com/downloads/download-visual-studio-vs.aspx)      
-- [Android Studio](http://java.visualstudio.com/Docs/tools/androidstudio)     
-- [IntelliJ](http://java.visualstudio.com/Docs/tools/intellij)   
-- [Visual Studio Code](hhttp://java.visualstudio.com/Docs/tools/vscode)   
+- [Android Studio](/vsts/java/download-android-studio-plug-in)     
+- [IntelliJ](/vsts/java/download-intellij-plug-in)   
+- [Visual Studio Code](/vsts/java/vscode-extension)   
  
 To learn how to connect, see [Connect to a team project](connect-team-projects.md).  
 <br/>
@@ -107,9 +106,11 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <a id="agile-tools"></a>
+
 ##Agile tools to plan and track work  
 
 <a id="backlogs"></a>
+
 ###Backlogs
 
 <table>
@@ -188,7 +189,8 @@ Use features supported by these familiar clients to manage your project and illu
 </table>
 
 <a id="bugs-tasks-issue-tracking"></a>
-###Bug, task, and issue tracking
+
+### Bug, task, and issue tracking
 
 
 <table>
@@ -312,10 +314,11 @@ Use features supported by these familiar clients to manage your project and illu
 </tbody>
 </table>
 
+[//]: # (::: moniker range="vsts")
 
 <a id="customize-vsts">  </a>
 
-###Customize (VSTS)   
+### Customize (VSTS)
 
 
 <table>
@@ -354,7 +357,7 @@ Use features supported by these familiar clients to manage your project and illu
 <td width="33%">
 
 <p><b>Add or modify a field</b></p>
-<p>[Add a custom field](../work/customize/process/customize-process-field.md) to support tracking additional data requirements or modify an existing field to apply optional rules. </p>
+<p>[Add a custom field](../work/customize/process/customize-process-field.md) to support tracking additional data requirements or modify an existing field to apply optional rules. </p>
 ![Add field](_img/features/index-add-field.png)   
 <br/>
 
@@ -411,10 +414,13 @@ Use features supported by these familiar clients to manage your project and illu
 </tbody>
 </table>
 
+[//]: # (::: moniker-end)
 
+[//]: # (::: moniker range=">= tfs-2013 <= tfs-2018")
 
 <a id="customize-tfs"></a>
-###Customize (TFS)  
+
+### Customize (TFS)
 
 <table>
 <tbody>
@@ -468,10 +474,11 @@ Use features supported by these familiar clients to manage your project and illu
 </tbody>
 </table>
 
-
+[//]: # (::: moniker-end)
 
 <a id="kanban"></a>
-###Kanban
+
+### Kanban
 
 <table>
 <tbody>
@@ -569,6 +576,7 @@ Use features supported by these familiar clients to manage your project and illu
 </table>
 
 <a id="scale"></a>
+
 ###Scale
 
 <table>
@@ -586,7 +594,7 @@ Use features supported by these familiar clients to manage your project and illu
 <td width="33%">
 
 
-<p><b>Setup a team hierarchy</b></p>
+<p><b>Set up a team hierarchy</b></p>
 <p>By [configuring your teams and backlogs into an hierarchical structure](../work/scale/portfolio-management.md), program owners can more easily track progress across teams, manage portfolios, and generate rollup data. </p>
 
 
@@ -619,7 +627,8 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <a id="scrum"></a>
-###Scrum  
+
+###Scrum
 
 
 
@@ -677,7 +686,8 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <a id="workflow"></a>
-###Workflow  
+
+### Workflow
 
 
 
@@ -752,7 +762,8 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <a id="alerts"></a>
-##Alerts and notifications
+
+## Alerts and notifications
 
 
 <table>
@@ -817,6 +828,7 @@ Use features supported by these familiar clients to manage your project and illu
 ## Code
 
 <a id="code-git"></a>
+
 ### Code: Git
 
 <table>
@@ -920,7 +932,8 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <a id="code-tfvc"></a>
-###Code: TFVC
+
+### Code: TFVC
 
 <table>
 <tbody>
@@ -1002,8 +1015,11 @@ Use features supported by these familiar clients to manage your project and illu
 </tbody>
 </table>
 
+[//]: # (::: moniker range="vsts")
+
 <a id="package-management"></a>
-###Package management (VSTS)  
+
+### Package management (VSTS)
 
 <table>
 <tbody>
@@ -1052,12 +1068,13 @@ Use features supported by these familiar clients to manage your project and illu
 </tbody>
 </table>
 
+[//]: # (::: moniker-end)
 
-
-## Continuous delivery   
+## Continuous delivery
 
 
 <a id="build"></a>
+
 ### Build
 
 <table>
@@ -1067,7 +1084,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Define builds</b></p>
-<p>Start from a build template and customize your build from there. Build for [Windows](../build-release/get-started/dot-net.md), [iOS](../build-release/apps/mobile/xcode-ios.md), Android, Java (Ant, Maven, or Gradle), or Linux using the same domain-specific languages you use every day on your dev machine. [Build Xamarin apps](../build-release/apps/mobile/xamarin.md) for both iOS and Android and run tests on Xamarin's Test Cloud as part of the build.</p>
+<p>Start from a build template and customize your build from there. Build for [Windows](../build-release/get-started/dot-net.md), [iOS](../build-release/apps/mobile/xcode-ios.md), Android, Java (Ant, Maven, or Gradle), or Linux using the same domain-specific languages you use every day on your dev machine. [Build Xamarin apps](../build-release/apps/mobile/xamarin.md) for both iOS and Android and run tests on the Xamarin Test Cloud as part of the build.</p>
 
 <p><b>Customize build process using scripts</b></p>
 <p>[Use a script](../build-release/actions/scripts/powershell.md) to add your team's business logic to your build process.</p>
@@ -1145,6 +1162,7 @@ build-release\tasks\build\_img
 </table>
 
 <a id="release"></a>
+
 ### Release
 
 <table>
@@ -1235,7 +1253,8 @@ build-release\tasks\build\_img
 
 
 <a id="test"></a>
-###Test  
+
+### Test
 
 <table>
 <tbody>
@@ -1322,7 +1341,8 @@ build-release\tasks\build\_img
 ##Dashboards and reports  
 
 <a id="charts"></a>
-###Charts and dashboards
+
+### Charts and dashboards
 
 <table>
 <tbody>
@@ -1418,9 +1438,11 @@ build-release\tasks\build\_img
 </tbody>
 </table>
 
+[//]: # (::: moniker range="vsts")
 
 <a id="power-bi">  </a>
-###Power BI dashboards and reports (VSTS)  
+
+### Power BI dashboards and reports (VSTS)
 
 <table>
 <tbody>
@@ -1436,7 +1458,7 @@ build-release\tasks\build\_img
 <p>You can [create dashboards, individual reports, or explore data](../report/powerbi/report-on-vso-with-power-bi-vs.md) collected for your VSTS account once you connect to Power BI. </p>
 
 
- 
+ 
 
 </td>
 <td width="50%">
@@ -1454,8 +1476,13 @@ build-release\tasks\build\_img
 </tbody>
 </table>
 
+[//]: # (::: moniker-end)
+
+[//]: # (::: moniker range=">= tfs-2013")
+
 <a id="sql-server-reports">  </a>
-###SQL Server Reports (TFS)
+
+### SQL Server Reports (TFS)
 
 <table>
 <tbody>
@@ -1539,9 +1566,11 @@ build-release\tasks\build\_img
 </tbody>
 </table>
 
+[//]: # (::: moniker-end)
 
 <a id="widgets"></a>
-###Widgets
+
+### Widgets
 
 <table>
 <tbody>
@@ -1694,13 +1723,14 @@ build-release\tasks\build\_img
 
 <a id="extensibility"></a>
 
-##Extensibility
-
+## Extensibility
 
 <a id="marketplace"></a>
-###Marketplace   
+
+### Marketplace
+
 <blockquote style="font-size: 13px"><b>Feature availability: </b>You can add Marketplace extensions from the web portal for VSTS or TFS 2015.2 or later version or for Visual Studio or Visual Studio Code.
-</blockquote> 
+</blockquote> 
 
 <table>
 <tbody>
@@ -1746,7 +1776,8 @@ build-release\tasks\build\_img
 
 
 <a id="rest-apis"></a>
-###REST APIs
+
+### REST APIs
 
 
 <table>
@@ -1790,7 +1821,8 @@ the libraries needed by your app or service.</p>
 </table>
 
 <a id="service-hooks"></a>
-###Service hooks
+
+### Service hooks
 
 <table>
 <tbody>
@@ -1828,7 +1860,8 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 </table>
 
 <a id="global"></a>
-##Global
+
+## Global
 
 
 <table>
@@ -1908,11 +1941,12 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <a id="monitor"></a>
-##Monitor  
+
+## Monitor
 
 <a id="app-insights"></a>
 
-###Application Insights (Preview)
+### Application Insights (Preview)
 
 <table>
 <tbody>
@@ -1975,7 +2009,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 <a id="hockeyapp"></a>
 
-###HockeyApp
+### HockeyApp
 
 
 <table>
@@ -2035,12 +2069,14 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <a id="navigation"></a>
-##Navigation  
+
+## Navigation
 
 
 <a id="web-portal"></a>
 
-###Web portal  
+### Web portal
+
 <table>
 <tbody>
 <tr valign="top">
@@ -2150,7 +2186,8 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <a id="search"></a>
-##Search, queries, and filters  
+
+## Search, queries, and filters
 
 <table>
 <tbody>
@@ -2236,7 +2273,8 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <a id="security"></a>
-##Security
+
+## Security
 
 <table>
 <tbody>
@@ -2354,7 +2392,8 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <a id="setup"></a>
-##Setup and installation
+
+## Set up and installation
 
 
 <table>
@@ -2403,10 +2442,12 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <a id="teams-team-projects-processes"></a>
-##Teams, team projects, and processes
+
+## Teams, team projects, and processes
 
 <a id="processes"></a>
-###Processes and process guidance  
+
+### Processes and process guidance
 
 
 <table>
@@ -2491,7 +2532,10 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 </table>
 
 <a id="process-templates"></a>
-###Process templates (TFS)
+
+[//]: # (::: moniker range=">= tfs-2013 <= tfs-2018")
+
+### Process templates (TFS)
 
 <table>
 <tbody>
@@ -2535,10 +2579,11 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 </tbody>
 </table>
 
-
+[//]: # (::: moniker-end)
 
 <a id="team-projects"></a>
-###Team projects  
+
+### Team projects
 
 
 <table>
@@ -2597,7 +2642,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 <a id="teams"></a>
 
-###Teams
+### Teams
 
 
 <table>
@@ -2679,8 +2724,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <a id="traceability"></a>
 
 
-##Traceability  
-
+##Traceability
 
 
 <table>
@@ -2741,7 +2785,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 
-##Related notes
+## Related notes
 
 We add new features frequently. We'll work to keep this list up-to-date. Other resources you might want to bookmark:
 - [VSTS - Features update](https://docs.microsoft.com/vsts/release-notes/index)  
@@ -2752,14 +2796,14 @@ We add new features frequently. We'll work to keep this list up-to-date. Other r
 Get started today using our cloud offering, [VSTS](https://www.visualstudio.com/team-services/), or our [on-premises TFS server](https://www.visualstudio.com/downloads/).  
 
 
-###We welcome your feedback
+### We welcome your feedback
 
 Send suggestions on **[UserVoice](https://visualstudio.uservoice.com/forums/330519-team-services)**, and follow us on **[Twitter](https://twitter.com/vsts) @vsts**. 
 
 See also our [comprehensive feedback and support page](provide-feedback.md).
 
 
-<!---   
+<!---   
 S98 updates
 
 TFS 2015 Update 2 updates
@@ -2786,4 +2830,4 @@ You now have the ability to click a work item and perform specific actions using
 
 
 Support for Extensions
---> 
+--> 

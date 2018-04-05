@@ -8,8 +8,11 @@ ms.manager: douge
 ms.author: elbatk
 ms.date: 02/16/2018
 ---
+[//]: # (monikerRange: '>= tfs-2017')
 
 # Share your NuGet, npm, and Maven packages from VSTS with badges
+
+**VSTS** | **TFS 2018** | **TFS 2017**
 
 You can share your packages anywhere you can share an image with badges. You can put a badge directly into your project's home page in Visual Studio Team Service (VSTS) or in any Markdown/README file so readers can easily discover and consume your package.
 
@@ -38,7 +41,7 @@ You can create a badge for any package that is in a feed with package sharing en
 
 1. Go to your package in Visual Studio Team Services and click the **Create badge** option. 
 
-2. Select a *Feed view* for your package badge. If you’re using release views, select the view that contains the packages you want to share; otherwise, just use `No view`.
+2. Select a *Feed view* for your package badge. If you're using release views, select the view that contains the packages you want to share; otherwise, just use `No view`.
 
 3. You'll see a preview of your badge. You can copy the Markdown version of your badge that includes alt text, or a direct image link. 
 

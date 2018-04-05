@@ -15,7 +15,7 @@ ms.date: 02/20/2018
 
 # Public projects glossary
 
-**Azure CodeX Public Project** 
+[!INCLUDE [temp](_shared/version-public-projects.md)] 
 
 ## Anonymous User	
 

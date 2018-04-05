@@ -14,7 +14,7 @@ ms.date: 02/20/2018
 
 # View and filter wiki pages 
 
-**Azure CodeX Public Project**  
+[!INCLUDE [temp](_shared/version-public-projects.md)] 
 
 When you connect to a public project, you're able to view pages added to the Wiki for that project. If you're a contributor, you can also [add and edit pages](../collaborate/add-edit-wiki.md).  
 

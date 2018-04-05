@@ -15,7 +15,7 @@ ms.date: 02/20/2018
 
 # Default roles & access for public projects
 
-**Azure CodeX Public Project** 
+[!INCLUDE [temp](_shared/version-public-projects.md)] 
 
 Public projects enable users to view the contents of a project without being added to it as a member. These users are referred to as anonymous users, ones who aren't signed in. In addition, there are public users, ones who are signed in but not a member of a project. Both of these types of users are granted read-only access as indicated in the following chart.  
 

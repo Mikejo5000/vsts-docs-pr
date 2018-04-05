@@ -10,7 +10,11 @@ ms.author: amullans
 ms.date: 01/31/2018
 ---
 
+[//]: # (monikerRange: '>= tfs-2017 < vsts') 
+
 # Package Management in VSTS and TFS
+
+**VSTS** | **TFS 2018** | **TFS 2017**
 
 > [!NOTE]
 > Package Management is an **[extension](http://go.microsoft.com/fwlink/?LinkId=723595)** that hosts NuGet, npm, and Maven packages alongside all your other VSTS assets: source code, builds, releases, etc.

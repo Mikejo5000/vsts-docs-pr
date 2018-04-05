@@ -12,7 +12,7 @@ ms.date: 01/05/2018
 
 # Public Projects 
 
-**Azure CodeX Public Project**
+[!INCLUDE [temp](_shared/version-public-projects.md)] 
 
 Create a public project, make an existing project public, or work in a public project to collaborate with others to develop software applications.  
 

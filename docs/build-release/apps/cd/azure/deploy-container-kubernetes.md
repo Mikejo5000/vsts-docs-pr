@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: ahomer
 ms.date: 01/19/2018
 ---
+[//]: # (monikerRange: ">= tfs-2015")
 
 # Implement continuous deployment of your app using Kubernetes to Azure Container Service
 
@@ -113,7 +114,7 @@ Your CD release process picks up the artifacts published by your CI build and th
    
    - **Secret name**: Name of the Docker registry secret. You can use this secret name in the Kubernetes YAML configuration file.
    
-   - **Command**: `apply` (you can run any kubectl command)
+   - **Command**: `apply` (you can run any kubectl command). See the [command reference](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands) for a full description of the task and arguments. 
    
    - **Use Configuration file**: Checked
    
@@ -129,7 +130,7 @@ Your CD release process picks up the artifacts published by your CI build and th
    
    - **Secret name**: Name of the Docker registry secret. You can use this secret name in the Kubernetes YAML configuration file.
    
-   - **Command**: `apply`
+   - **Command**: `apply`. See the [command reference](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands) for a full description of the task and arguments. 
    
    - **Use Configuration file**: Checked
    
@@ -145,9 +146,9 @@ Your CD release process picks up the artifacts published by your CI build and th
    
    - **Secret name**: Name of the Docker registry secret. You can use this secret name in the Kubernetes YAML configuration file.
    
-   - **Command**: `set`
+   - **Command**: `set`. See the [command reference](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands) for a full description of the task and arguments. 
    
-   - **Arguments**: Arguments to pass to teh command. For example, `image deployment/coreserverdeployment core-server=image:tag` where you are using a private registry (so the image name must be prefixed with the container registry name). We also use the Build Id to tag our images here, so the `image:tag` value will be `{your-acr-name}.azurecr.io/docker-dotnetcore:$(Build.BuildId)`. `docker-dotnetcore` is the image name used in the build.<p />
+   - **Arguments**: Arguments to pass to the command. For example, `image deployment/coreserverdeployment core-server=image:tag` where you are using a private registry (so the image name must be prefixed with the container registry name). We also use the Build Id to tag our images here, so the `image:tag` value will be `{your-acr-name}.azurecr.io/docker-dotnetcore:$(Build.BuildId)`. `docker-dotnetcore` is the image name used in the build.<p />
 
 1. Edit the name of the release definition, choose **Save**, and choose **OK**.
    Note that the default environment is named Environment1, which you can edit by clicking directly on the name.

@@ -82,14 +82,14 @@
       href: nuget/move-from-fileshares.md
   - name: Use npm
     items:
-    - name: Set up your client's npmrc
+    - name: Set up your project's npmrc
       href: npm/npmrc.md
     - name: Use packages from npmjs.com
       href: npm/upstream-sources.md
-    - name: Publish an npm package
-      href: npm/publish.md
     - name: Install an npm package
       href: npm/install.md
+    - name: Publish an npm package
+      href: npm/publish.md
     - name: Deprecate or unpublish an npm package
       href: npm/deprecate-unpublish.md
     - name: Use npm scopes
@@ -116,6 +116,8 @@
       href: symbols/debug-with-symbols-windbg.md
     - name: Publish symbols
       href: /vsts/build-release/symbols/index?toc=/vsts/package/toc.json
+    - name: Setting up GitHub SourceLinking
+      href: symbols/setting-up-github-sourcelinking.md
   - name: Recover a deleted package
     href: how-to/recover-deleted-package.md
   - name: Use badges to share your packages

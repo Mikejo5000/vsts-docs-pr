@@ -9,6 +9,8 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-admin
 ---
 
+[//]: # (monikerRange: '>= tfs-2013 < tfs-2018')
+
 # Managing File Types for Team Foundation Server
 
 **TFS 2017** | **TFS 2015** | **TFS 2013**
@@ -49,9 +51,9 @@ To edit a file type association, you must have the Edit server-level information
 
 To change a file type association in version control:
 
-  1. On the **Team** menu, click **Team Foundation Server Settings**, and then **Source Control File Types�**. The **File Types** dialog box displays a listing of the file extensions currently associated with version control.
+  1. On the **Team** menu, click **Team Foundation Server Settings**, and then **Source Control File Types**. The **File Types** dialog box displays a listing of the file extensions currently associated with version control.
 
-  2. Click **Edit�**.
+  2. Click **Edit**.
 
   3. On the **Edit File Type** dialog box, in the **Name** box, type a description for the file type; for example, Word Documents to add Microsoft Word document file association to version control.
 

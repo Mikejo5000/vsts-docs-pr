@@ -10,10 +10,11 @@ ms.reviewer: jrice
 ms.author: kaelli
 ms.date: 11/28/2017
 ---
+[//]: # (monikerRange: '>= tfs-2013')
 
 # Change access levels
 
-**TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013**  
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 > [!IMPORTANT]  
 > This topic applies to managing access levels for team projects defined on an on-premises Team Foundation Server (TFS). To manage access levels for VSTS, see [Manage users and access in VSTS](../accounts/add-account-users-assign-access-levels.md). For VSTS feature availability, see the [VSTS Feature Matrix](https://www.visualstudio.com/pricing/visual-studio-online-feature-matrix-vs).
@@ -38,6 +39,7 @@ You manage access levels for all collections defined on the application tier for
 
 From a user context, open the admin context by clicking the ![gear icon](../work/_img/icons/gear_icon.png) gear Settings icon. The tabs and pages available differ depending on which admin context you access.
  
+[//]: # (::: moniker range=">= tfs-2017 <= tfs-2018")
 
 ### TFS 2018, TFS 2017 
 
@@ -51,7 +53,11 @@ From a user context, open the admin context by clicking the ![gear icon](../work
 
 	If you don't see the Access levels tab, you aren't a TFS administrator and don't have permission. [Here's how to get permissions](../tfs-server/add-administrator-tfs.md). 
 
-### TFS 2015, TFS 2013 
+[//]: # (::: moniker-end)
+
+[//]: # (::: moniker range=">= tfs-2013 <= tfs-2015")
+
+### TFS 2015, TFS 2013
 
 1. From the web portal home page for a team project (for example, ```http://MyServer:8080/tfs/DefaultCollection/MyProject/```), open the administration context. 
 
@@ -63,14 +69,16 @@ From a user context, open the admin context by clicking the ![gear icon](../work
 
 	If you don't see the Access levels tab, you aren't a TFS administrator and don't have permission. [Here's how to get permissions](../tfs-server/add-administrator-tfs.md). 
 
+[//]: # (::: moniker-end)
 
 <a id="set-default" >  </a>
+
 ## Change the default access level
 
 Change the default access level to match the access you have licenses for. If you change the default access level to Stakeholder, all users not explicitly added to the Basic or Advanced level will be limited to the features provided through Stakeholder access.
 
 >[!IMPORTANT]  
->Service accounts are added to the default access level. If you set Stakeholder as the default access level, you must add the TFS service accounts to the Basic or Advanced group.    
+>Service accounts are added to the default access level. If you set Stakeholder as the default access level, you must add the TFS service accounts to the Basic or Advanced group.    
 
 You set an access level from its page. Click Set as default access level as shown.
 
