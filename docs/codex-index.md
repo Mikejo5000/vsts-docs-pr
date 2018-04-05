@@ -160,10 +160,10 @@ featureFlags:
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardText">
-                                                <h3>Codex Agile</h3>
+                                                <h3>Plan  &amp; track your work</h3>
                                                 <ul class="noBullet">
                                                     <li><a class="barLink" href="/vsts/work/scrum/index">Backlogs</a></li>
-                                                    <li><a class="barLink" href="/vsts/work/kanban/index">Boards  &amp; Kanban</a></li>
+                                                    <li><a class="barLink" href="/vsts/work/kanban/index">Boards &amp; Kanban</a></li>
                                                     <li><a class="barLink" href="/vsts/work/scrum/index">Scrum</a></li>
                                                     <li><a class="barLink" href="/vsts/report/dashboards/index">Dashboards</a></li>
                                                 </ul>
