@@ -18,6 +18,9 @@
     - name: Git
       tocHref: /vsts/git/
       topicHref: /vsts/git/index
+    - name: TFVC
+      tocHref: /vsts/tfvc/
+      topicHref: /vsts/tfvc/index
   - name: "Continuous Integration & Delivery"
     tocHref: /vsts/build-release/
     topicHref: /vsts/index#pivot=services&panel=delivery
