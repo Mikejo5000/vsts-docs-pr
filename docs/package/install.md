@@ -1,6 +1,6 @@
 ---
-title: Assign Package Management licenses for VSTS and TFS
-description: Quickly start hosting NuGet packages in VSTS or Team Foundation Server
+title: Purchase and assign Package Management licenses for VSTS and TFS
+description: Buy and assign package management licenses to quickly start hosting NuGet packages in VSTS or Team Foundation Server 
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-package
 ms.topic: get-started-article
@@ -11,7 +11,7 @@ ms.date: 01/24/2018
 monikerRange: '>= tfs-2017'
 ---
 
-# Assign Package Management licenses
+# Purchase and assign Package Management licenses
 
 **VSTS** | **TFS 2018** | **TFS 2017**
 
@@ -61,6 +61,11 @@ Each VSTS account gets five (5) free licenses, you will need to assign your lice
    * Users using an instance of TFS disconnected from the internet (and thus unable to purchase licenses from the marketplace) can still assign licenses purchased through an enterprise agreement.
 
 ::: moniker-end
+
+## Purchase additional licenses
+
+Additional Package Management licenses can be purchased through the Marketplace.
+
 
 <!-- BEGINSECTION class="md-qanda" -->
 
