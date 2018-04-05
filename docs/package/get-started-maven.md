@@ -18,9 +18,8 @@ monikerRange: '>= tfs-2018'
 
 ## Before you start
 
-This guide assumes you've already set up Package Management. You can check out how to install and license the extension in the 
-[Install and license Package Management guide](install.md), or go directly to the [Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.feed) 
-listing to install it.
+This guide assumes you've already set up Package Management. You can check out how license the extension in the 
+[License Package Management guide](install.md).
 
 ### Prerequisites
 

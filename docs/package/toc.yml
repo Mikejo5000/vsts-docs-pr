@@ -6,7 +6,7 @@
     href: overview.md
 - name: Quickstarts
   items:
-  - name: Install and license Package Management
+  - name: License Package Management
     href: install.md
   - name: Get started with NuGet
     href: get-started-nuget.md

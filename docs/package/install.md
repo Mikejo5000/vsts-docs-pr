@@ -1,5 +1,5 @@
 ---
-title: Install and license Package Management for VSTS and TFS
+title: Assign Package Management licenses for VSTS and TFS
 description: Quickly start hosting NuGet packages in VSTS or Team Foundation Server
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-package
@@ -11,9 +11,7 @@ ms.date: 01/24/2018
 monikerRange: '>= tfs-2017'
 ---
 
- 
-
-# Install and license Package Management
+# Assign Package Management licenses
 
 **VSTS** | **TFS 2018** | **TFS 2017**
 
@@ -23,20 +21,7 @@ Package Management is an *extension* to VSTS and TFS.  This means you'll need th
 
 ## Install Package Management in VSTS
 
-Package Management is an extension that must be installed from the Marketplace. 
-
-### Install Package Management extension
-1. Go to the [Marketplace page for Package Management](https://marketplace.visualstudio.com/items?itemName=ms.feed)
-
-1. Select **Get**
-
-    ![Package Management extension for VSTS in Visual Studio Marketplace](_img/marketplace.png)
-
-1. Select your account into which the Package Management extension should be installed
-
-1. Each account gets five (5) free licenses. If you need more than 5 licenses, click **Buy** and purchase the additional licenses you need.  If you aren't sure you can click **Start 30 day free trial** and every user in your account will be granted access to Package Management for 30 days.  After the 30-day trial period your account will revert back to five (5) entitled users and you must assign licenses to individual users.  If you need additional licenses at this point, you may purchase them from this same dialog in the Marketplace.
-
-1. After the install is completed, select **Proceed to the account**. Then, go to any project and select the **Packages** hub in the **Build & Release** hub group
+Package Management is now installed by default for Visual Studio Team Services (VSTS) accounts.
 
 ::: moniker-end
 
@@ -44,7 +29,7 @@ Package Management is an extension that must be installed from the Marketplace.
 
 ## Install Package Management in TFS
 
-Package Management is installed by default for TFS 2017 customers.  You must upgrade to TFS 2017 in order to use Package Management.
+Package Management is installed by default for TFS 2017 and newer.  You must upgrade to TFS 2017 in order to use Package Management.
 
 ::: moniker-end
 
@@ -52,9 +37,7 @@ Package Management is installed by default for TFS 2017 customers.  You must upg
 
 ## Assign Package Management in VSTS
 
-If you selected **Start 30 day free trial** and are still in the trial period, every user is granted access and licenses do not need to be assigned until the trial period has ended. 
-
-If you selected **Buy** or **Get it free**, you will need to assign your licenses by following the instructions below:
+Each VSTS account gets five (5) free licenses, you will need to assign your licenses by following the instructions below:
 
 1. Go to your account, select the **Users** hub, and select **Package Management**.
 1. Select **Assign**, type the users you want to assign licenses to, then select **Ok.**
@@ -81,15 +64,11 @@ If you selected **Buy** or **Get it free**, you will need to assign your license
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-#### Q: How do I know if I'll still be able to use Package Management after my trial expires?
-
-A:  All users who show up under the Package Management section of the Users hub will have access to Package Management after the trial expires. 
-You'll need either a Package Management license or Visual Studio Enterprise subscription to show up in this list.  
 
 #### Q:  I am one of my account's 5 free Basic users. Does that mean I can use Package Management as well?
 
 A:  Your account's 5 free Basic users are separate from your 5 free Package Management users. 
-The free Package Management licenses must be bought from the Marketplace and assigned in the Package Management section of the Users hub.
+The free Package Management licenses must be assigned in the Package Management section of the Users hub.
 
 #### Q: I have a Visual Studio Professional subscription. Can I use Package Management for free?
 
