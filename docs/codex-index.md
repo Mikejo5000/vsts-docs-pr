@@ -177,7 +177,7 @@ featureFlags:
                                                 <h3>Codex Agile</h3>
                                                 <ul class="noBullet">
                                                     <li><a class="barLink" href="/vsts/work/scrum/index">Scrum</a></li>
-                                                    <li><a class="barLink" href="/vsts/work/boards/index">Boards</a></li>
+                                                    <li><a class="barLink" href="/vsts/work/kanban/index">Boards</a></li>
                                                     <li><a class="barLink" href="/vsts/report/dashboards/index">Dashboards</a></li>
                                                 </ul>
                                             </div>
@@ -684,7 +684,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/work/boards/index">
+                                <a href="/vsts/work/kanban/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -722,7 +722,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/work/queries/index">
+                                <a href="/vsts/work/track/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -1669,7 +1669,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/work/boards/index">
+                                <a href="/vsts/work/kanban/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -1707,7 +1707,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/work/queries/index">
+                                <a href="/vsts/work/track/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">

@@ -1,7 +1,7 @@
 ---
-title: Project & Account Settings
-titleSuffix: VSTS & TFS
-description: Configure account and project settings
+title: Codex Agile Customization 
+titleSuffix: Codex Agile
+description: Add a custom field and customize work item types and backlogs  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
 ms.assetid: 
@@ -10,45 +10,40 @@ ms.author: kaelli
 ms.date: 04/01/2018
 ---
 
-# Project & Account Settings 
+# Codex Agile Customization 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-Manage permissions, add teams, and configure project and collection level resources. 
+Customize an inherited process and apply to a team project to customize your work tracking experience. 
 
 ## 5-Minute Quickstarts    
-- [Define area paths](../work/customize/set-area-paths.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json )
-- [Define iteration paths or sprints](../work/customize/set-iteration-paths-sprints.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json ) 
-- [Add a team & team members](../work/scale/multiple-teams.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)  
-- [Add a team administrator](../work/scale/add-team-administrator.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json) 
-
+- [Add a custom field](../../work/customize/process/customize-process-field.md?toc=/vsts/settings/customize/toc.json&bc=/vsts/settings/customize/breadcrumb/toc.json)
 
 ## Tutorials
 
-- [Add and manage users](../accounts/add-account-users-from-user-hub.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)  
-- [Customize a process](../work/customize/process/customize-process.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json) 
+
+- [Customize a process](../../customize/process/customize-process.md?toc=/vsts/settings/customize/toc.json&bc=/vsts/settings/customize/breadcrumb/toc.json)
 
 
 ## Concepts 
 
-- [About areas and iterations](../work/customize/about-areas-iterations.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)  
-- [About process customization](../work/customize/inheritance-process-model.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)        
-- [Team administrator role and permissions](../work/scale/team-administrator-permissions.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)
+- [About process customization](../../work/customize/inheritance-process-model.md?toc=/vsts/settings/customize/toc.json&bc=/vsts/settings/customize/breadcrumb/toc.json)
 
-## How-to Guides
-- [Set team defaults](../work/scale/set-team-defaults.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)    
-- [Configure team settings](../work/scale/manage-team-assets.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json) 
-- [Manage processes](../work/customize/process/manage-process.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)   
-- [Switch team context](switch-team-context.md)
+## How-to Guides 
+- [Manage processes](../../work/customize/process/manage-process.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)   
+- [Add a custom field](../../work/customize/process/customize-process-field.md?toc=/vsts/settings/customize/toc.json&bc=/vsts/settings/customize/breadcrumb/toc.json)
+- [Customize a web form](../../work/customize/process/customize-process-form.md?toc=/vsts/settings/customize/toc.json&bc=/vsts/settings/customize/breadcrumb/toc.json)
+- [Customize a workflow](../../work/customize/process/customize-process-workflow.md?toc=/vsts/settings/customize/toc.json&bc=/vsts/settings/customize/breadcrumb/toc.json)
+- [Customize a work item type](../../work/customize/process/customize-process-wit.md?toc=/vsts/settings/customize/toc.json&bc=/vsts/settings/customize/breadcrumb/toc.json)
+- [Add a custom rule](../../work/customize/process/custom-rules.md?toc=/vsts/settings/customize/toc.json&bc=/vsts/settings/customize/breadcrumb/toc.json)
 
 
 ## Reference
-- [Default permissions and access](../security/permissions-access.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)    
+- [Default permissions and access](../security/permissions-access.md?toc=/vsts/settings/customize/toc.json&bc=/vsts/settings/customize/breadcrumb/toc.json)    
 
 
 ## Resources 
 - [Navigation Basics](../user-guide/work-web-portal.md) 
-- [Account Management](../accounts/index.md) 
 - [Security & Identity](../security/index.md) 
 - [Manage Extensions (Marketplace)](../marketplace/index.md) 
 - [Service hooks](../service-hooks/index.md) 

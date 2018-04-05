@@ -1,7 +1,7 @@
 ---
-title: Kanban board 
-titleSuffix: VSTS & TFS
-description: Index to topics for working with Kanban in VSTS and Team Foundation Server 
+title: Index to topics for Codex Agile Boards
+titleSuffix: Codex Agile
+description: Work with Kanban boards to plan and track work
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid:  
@@ -10,7 +10,7 @@ ms.author: kaelli
 ms.date: 03/20/2018
 ---
 
-# Kanban
+# Codex Agile Boards
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]  
 

@@ -73,7 +73,7 @@ Using the drop-down menu, you can focus on relevant items using one of the three
 You can filter each work item pivot view by typing a keyword or using one or more of the fields provided, such as work item type (Types), State, Area Path, and Tags. The page remembers the filters you set for each pivot, supporting personalized views across all pivots.  
 
 > [!div class="mx-imgBorder"]
-![Work hub, Work Items page, Filter to show Bugs ](../work/work-items/_img/work-items-filter-bug.png)
+![Work hub, Work Items page, Filter to show Bugs ](../work/work-items/_img/view-add/work-items-filter-bug.png)
 
 <a id="sort" />
 ## Sort your view and other View options 

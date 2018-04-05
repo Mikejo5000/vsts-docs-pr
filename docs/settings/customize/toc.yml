@@ -1,4 +1,4 @@
-- name: "Codex Agile Customization" 
+- name: Codex Agile Customization 
   href: index.md?toc=/vsts/settings/customize/toc.json&bc=/vsts/settings/customize/breadcrumb/toc.json 
 - name: Overview
   items:

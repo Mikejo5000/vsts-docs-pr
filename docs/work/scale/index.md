@@ -1,6 +1,7 @@
 ---
-title: Agile at Scale index to content for VSTS & TFS
-description: Index to topics for how to scale Agile tools in VSTS and Team Foundation Server (TFS)  
+title: Index to articles for working with multiple teams
+titleSuffix: Codex 
+description: Index to articles for how to scale Agile tools to support multiple teams and enterprise organizations
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 
@@ -9,7 +10,7 @@ ms.author: kaelli
 ms.date: 10/04/2017
 ---
 
-# Agile at Scale  
+# Codex Agile at Scale  
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -53,7 +54,7 @@ Manage portfolios and gain visibility across teams. For guidance on adding teams
 
 
 ## Resources  
-- [Scale & Configure Teams](../../settings/index.md)
+- [Scale & Configure Teams](../scale/multiple-teams.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)
 - [Customization](../customize/index.md)
 - [Agile culture](https://www.visualstudio.com/learn/agile-culture/)  
 - [Scale Agile to large teams](https://www.visualstudio.com/learn/scale-agile-large-teams/)  

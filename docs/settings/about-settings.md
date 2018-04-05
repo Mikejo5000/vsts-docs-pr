@@ -55,7 +55,7 @@ You can configure the following resources to support your CI/CD work.
 -  [Build and Release, Retention policies](../build-release/concepts/policies/retention.md)
 -  [Build and Release, Resource limits for pipelines](../build-release/concepts/licensing/concurrent-pipelines-ts.md)
 -  [Agent pools, add and manage agent pools](../build-release/concepts/agents/pools-queues.md)
--  [Deployment pools, add and manage deployment pools](../build-release/concepts/definitions/release/deployment-groups.md)
+-  [Deployment pools, add and manage deployment pools](../build-release/concepts/definitions/release/deployment-groups/index.md)
 
 ## Test
 

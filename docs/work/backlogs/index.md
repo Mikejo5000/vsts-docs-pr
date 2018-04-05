@@ -1,7 +1,7 @@
 ---
-title: Backlogs index to content
-titleSuffix: VSTS & TFS
-description: Index to topics for planning and tracking work in VSTS and Team Foundation Server 
+title: Index to articles for working with backlogs
+titleSuffix: Codex Agile
+description: Index to articles for planning and tracking work using product and portfolio backlogs 
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: D51EAF72-F73D-4012-97F9-6208232B91B7

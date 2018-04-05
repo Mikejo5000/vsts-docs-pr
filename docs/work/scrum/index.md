@@ -1,7 +1,7 @@
 ---
-title: Index of Scrum topics
-titleSuffix: VSTS & TFS 
-description: Index to topics for working in Scrum using VSTS or Team Foundation Server  
+title: Index of scrum and sprint planning articles  
+titleSuffix: Codex Agile
+description: Index to articles for implementing Scrum using Agile tools
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid:  
@@ -10,7 +10,7 @@ ms.author: kaelli
 ms.date: 03/20/2018
 ---
 
-# Scrum
+# Codex Agile Scrum and Sprints
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
