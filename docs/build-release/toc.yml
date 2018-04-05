@@ -84,7 +84,7 @@
     href: actions/azure-devops-project-github.md
   - name: Azure DevOps Project for VMs
     href: actions/azure-devops-project-vms.md
-  - name: Use Jenkins and VSTS DevOps
+  - name: Jenkins CI for VSTS Azure CD
     href: actions/integrate-jenkins-vsts-cicd.md  
   - name: Test your app
     href: test/example-continuous-testing.md
@@ -295,6 +295,8 @@
       href: tasks/build/ant.md
     - name: CMake
       href: tasks/build/cmake.md
+    - name: Go
+      href: tasks/build/go-build.md
     - name: Gradle
       href: tasks/build/gradle.md
     - name: Grunt
@@ -451,6 +453,8 @@
     items:
     - name: .NET Core Tool Installer
       href: tasks/tool/net-core-installer.md
+    - name: Go Tool Installer
+      href: tasks/tool/go-install.md
     - name: Node Tool Installer
       href: tasks/tool/node-js.md
     - name: Java Tool Installer

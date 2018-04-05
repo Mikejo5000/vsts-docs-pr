@@ -30,7 +30,7 @@ being run. For example, your script may need access to the location
 of the build to download it, or to the working directory on the
 agent to create temporary files. These are **default variables**.
 
->You can also use a default variable to [run a release in debug mode](#debug-mode).
+> You can also use a default variable to [run a release in debug mode](#debug-mode).
 
 ## Custom variables
 
@@ -69,10 +69,14 @@ Using custom variables at project, release definition, and environment scope hel
   decrypts these values when referenced by the tasks and passes them
   to the agent over a secure HTTPS channel.
 
+### Using custom variables
+
 To use custom variables in your build and release tasks, simply enclose the 
 variable name in parentheses and precede it with a **$** character. For example,
 if you have a variable named **adminUserName**, you can insert the current
 value of that variable into a parameter of a task as `$(adminUserName)`.
+
+[!INCLUDE [variable-collision](../_shared/variable-collision.md)]
 
 You can use custom variables to prompt for values during the execution of a release.
 For more details, see [Approvals](approvals/index.md#scenarios).

@@ -8,6 +8,7 @@ f1_keywords:
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: EBDE0739-FAE6-4BEA-8F59-E9D20AFE5FE8
+ms.topic: quickstart
 monikerRange: 'vsts'
 ms.manager: douge
 ms.author: kaelli
@@ -166,6 +167,9 @@ Use the following three controls to manage your views.
 - [Use work item form controls](work-item-form-controls.md)
 - [Keyboard shortcuts for work item forms and the Work Items page](work-item-form-keyboard-shortcuts.md)
 - [Work from the account home page](../../user-guide/account-home-pages.md)
+
+> [!NOTE]
+> You can create and manage work items from the command line or scripts using the [VSTS CLI](https://docs.microsoft.com/en-us/cli/vsts/overview?view=vsts-cli-latest).
 
 
 [!INCLUDE [temp](../../_shared/help-support-shared.md)] 

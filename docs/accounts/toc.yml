@@ -28,6 +28,8 @@
   items:
   - name: Adding Basic or VS subscription users to your account
     href: add-basic-or-vs-subscription-users.md
+  - name: Invite outside users
+    href: invite-outside-users.md
 - name: How-to Guides
   items:
   - name: Manage your account
@@ -76,6 +78,8 @@
       href: change-application-access-policies-vs.md
     - name: Delete users from your account
       href: delete-account-users.md
+    - name: Add external user
+      href: add-external-user.md
     - name: Access with Azure AD
       items:
       - name: Add Azure AD group to VSTS group
