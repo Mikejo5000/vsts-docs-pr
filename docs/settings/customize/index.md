@@ -22,7 +22,7 @@ Customize an inherited process and apply to a team project to customize your wor
 ## Tutorials
 
 
-- [Customize a process](../../customize/process/customize-process.md?toc=/vsts/settings/customize/toc.json&bc=/vsts/settings/customize/breadcrumb/toc.json)
+- [Customize a process](../../work/customize/process/customize-process.md?toc=/vsts/settings/customize/toc.json&bc=/vsts/settings/customize/breadcrumb/toc.json)
 
 
 ## Concepts 
@@ -39,12 +39,12 @@ Customize an inherited process and apply to a team project to customize your wor
 
 
 ## Reference
-- [Default permissions and access](../security/permissions-access.md?toc=/vsts/settings/customize/toc.json&bc=/vsts/settings/customize/breadcrumb/toc.json)    
+- [Default permissions and access](../../security/permissions-access.md?toc=/vsts/settings/customize/toc.json&bc=/vsts/settings/customize/breadcrumb/toc.json)    
 
 
 ## Resources 
-- [Navigation Basics](../user-guide/work-web-portal.md) 
-- [Security & Identity](../security/index.md) 
-- [Manage Extensions (Marketplace)](../marketplace/index.md) 
-- [Service hooks](../service-hooks/index.md) 
+- [Navigation Basics](../../user-guide/work-web-portal.md) 
+- [Security & Identity](../../security/index.md) 
+- [Manage Extensions (Marketplace)](../../marketplace/index.md) 
+- [Service hooks](../../service-hooks/index.md) 
  
