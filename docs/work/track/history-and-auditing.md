@@ -277,7 +277,7 @@ Test Suite
 	</FIELD>  
 	```
 
-## Related notes
+## Related articles
 To learn more about creating and saving queries, see also: 
 
 - [Query editor](using-queries.md)

@@ -35,8 +35,6 @@ You navigate to your team context from the top navigation bar.
 
 You set team defaults from the team admin context. 
 
-[!INCLUDE [temp](../_shared/learn-about-new-nav-experience.md)] 
-
 From a web browser, open the web portal administrative context for your team.  
 
 <img src="_img/wit-templates-open-team-admin-context.png" alt="Open team admin context" style="border: 1px solid #C3C3C3;" />  
@@ -162,7 +160,7 @@ You activate sprints for each team from the admin pages for each team context. T
 
 4.	To see the newly activated sprint backlogs, refresh your team's [product backlog page](../backlogs/create-your-backlog.md).  
 
-##Related notes  
+## Related articles  
 
 - [Schedule sprints](../scrum/define-sprints.md)  
 - [Customize area and iteration paths](../customize/set-area-paths.md)  

@@ -7,21 +7,15 @@ ms.assetid: 6DFCFEB4-05EC-4A73-9382-A20D161A53D4
 ms.manager: douge
 ms.author: alewis
 ms.date: 11/05/2017
-monikerRange: '>= tfs-2013'
+monikerRange: '>= tfs-2015'
 ---
 
 
 # Build definition source repositories
 
-[!INCLUDE [temp](../../../../_shared/banner-vsts-tfs.md)]
-
 **VSTS | TFS 2018 | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/hh190721%28v=vs.120%29.aspx)**
 
-::: moniker range=">= tfs-2017"
-
 At the beginning of the build process, the agent downloads files from your remote repository into a local sources directory.
-
-::: moniker-end
 
 [//]: # (TODO: confirm 2018 was version of multiple phases)
 
@@ -37,7 +31,7 @@ If your build consists of multiple jobs (for example, because of multiple phases
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < tfs-2018"
+::: moniker range="tfs-2017"
 
 **TFS 2017:** To specify the source repository:
 
@@ -266,7 +260,7 @@ In some cases you can't use the Checkout submodules option. You might have a sce
 If you can't use the Checkout submodules option, then you can instead use a custom script with the following git command to get the sources for submodules onto your agent.
 
 ```
-git -c http.https://<url of submodule repository>.extraheader="AUTHORIZATION: basic ********" submodule update --init â€“recursive
+git -c http.https://<url of submodule repository>.extraheader="AUTHORIZATION: basic ********" submodule update --init -recursive
 ```
 
 Use a secret variable in your project or build definition to store the personal access token (PAT) that you generate in VSTS or GitHub with access to your submodules. Use that variable to populate the secret in the above git command.
@@ -451,15 +445,9 @@ Scorch is a TFVC power tool. See [Microsoft Visual Studio Team Foundation Server
 
 [!INCLUDE [temp](../../../_shared/qa-agents.md)]
 
+::: moniker range="< vsts"
 [!INCLUDE [temp](../../../_shared/qa-versions.md)]
-
 ::: moniker-end
-
-::: moniker range="tfs-2013"
-
-### Where is the guidance for TFS 2013?
-
-[Work with build workspaces (XAML builds)](https://msdn.microsoft.com/library/hh190721%28v=vs.120%29.aspx)
 
 ::: moniker-end
 

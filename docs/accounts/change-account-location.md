@@ -7,8 +7,9 @@ ms.assetid: cc4fd0d6-b24f-48ec-8b90-8e5f18e18d65
 ms.manager: douge
 ms.author: chcomley
 ms.date: 10/17/2017
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
+
 
 # Find or change your VSTS account location (region)
 
@@ -19,6 +20,16 @@ account.  You may choose your account's region due to locality and network laten
 requirements for data centers.  Your account's default location is based on the closest 
 [Microsoft Azure region](https://azure.microsoft.com/en-us/regions) 
 where VSTS is available.
+
+**Available VSTS Regions**
+
+* Central US
+* Brazil South
+* Australia East
+* India South
+* West Europe
+* East Asia 
+* Canada Central
 
 To find the region where your account is located:
 
@@ -31,4 +42,7 @@ To find the region where your account is located:
 
 To change your account region, you need to call [VSTS Support](https://www.visualstudio.com/team-services/support), and 
 they will coordinate changing the region with the account owner.
+
+
+
 

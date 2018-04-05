@@ -7,7 +7,7 @@
 - name: Quickstarts
   items:
   - name: Add and manage dashboards
-    href: ../../report/dashboards/dashboards.md 
+    href: ../../report/dashboards/dashboards.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json  
 - name: Tutorials
   items:
   - name: Manage portfolios

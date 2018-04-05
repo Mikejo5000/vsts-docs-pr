@@ -9,7 +9,7 @@ ms.assetid: 5B126205-599D-40EB-BC95-23CF1444EF2A
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article
-ms.date: 03/01/2018
+ms.date: 03/20/2018
 ---
 
 # Manage issues or impediments 
@@ -27,9 +27,11 @@ In this topic you'll learn:
 > [!div class="checklist"]   
 > * How to capture issues or impediments as a work item   
  
+[!INCLUDE [temp](../_shared/prerequisites-work-items.md)] 
+
 ## Add an issue or impediment 
 
-[!INCLUDE [temp](../_shared/image-differences-with-wits.md)] 
+[!INCLUDE [temp](../_shared/image-differences-with-wits.md)] 
 
 ::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
 <!---#### VSTS, TFS 2018, TFS 2017 (new form enabled) --> 
@@ -37,9 +39,10 @@ From the **Work** hub, choose Impediment from the New Work Item list of options.
 
 <img src="_img/cyb-new-work-item-impediment.png" alt="VSTS, TFS 2017 - Add an impediment" style="border: 1px solid #C3C3C3;" />  
   
-Or, from the Queries page, you can add a new work item.  
+<!--- Or, from the Queries page, you can add a new work item.  
 
 <img src="_img/cyb-new-work-item-impediment-form.png" alt="Create a new impediment" style="border: 1px solid #C3C3C3;" />  
+-->
 
 ::: moniker-end
 
@@ -64,7 +67,7 @@ Impediments and issues don't appear on your backlog. Instead, you track them usi
 Impediments and issues don't appear on your backlog. Instead, you track them using [queries](../track/using-queries.md). If you want them to appear on your backlog, or you want to track other work item types on your backlog, see [Add a work item type to a backlog and board](../customize/add-wits-to-backlogs-and-boards.md).
 ::: moniker-end
 
-## Related notes 
+## Related articles 
 - [Add work items](add-work-items.md)
 - [Work item form controls](../work-items/work-item-form-controls.md)
 - [Manage bugs or code defects](manage-bugs.md)

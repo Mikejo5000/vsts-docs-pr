@@ -1,20 +1,20 @@
 ---
 title: Project & Account Settings
-titleSuffix: VSTS & Vertical Apps
-description: Index to topics for configuring account and project settings for VSTS and Vertical Apps 
+titleSuffix: VSTS & TFS
+description: Configure account and project settings
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
 ms.assetid: 
 ms.manager: douge
 ms.author: kaelli
-ms.date: 05/01/2018
+ms.date: 04/01/2018
 ---
 
 # Project & Account Settings 
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-Intro paragraph here. 
+Manage permissions, add teams, and configure project and collection level resources. 
 
 ## 5-Minute Quickstarts    
 - [Define area paths](../work/customize/set-area-paths.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json )

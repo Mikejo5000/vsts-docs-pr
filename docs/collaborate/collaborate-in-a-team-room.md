@@ -8,6 +8,7 @@ ms.assetid: 5f3d7c83-15bd-4176-b594-3e2ddc1afd6b
 ms.manager: douge
 ms.author: kaelli
 ms.date: 02/20/2018
+monikerRange: '>= tfs-2013 <=tfs-2017'
 ---
 
 # Collaborate in a team room  
@@ -112,7 +113,7 @@ Adding other rooms provides areas for ad hoc discussions, cross-team interaction
 
 2. Add members to the room as described earlier in this topic.
 
-##Related notes
+##Related articles
 A team room is automatically created when you [add a team](../work/scale/multiple-teams.md) and is populated with your team members. To learn more about other Agile tools available to teams, see [Manage team assets](../work/scale/manage-team-assets.md).  
 
 - To completely exit a team room, close all browser instances where you've logged into the team room  

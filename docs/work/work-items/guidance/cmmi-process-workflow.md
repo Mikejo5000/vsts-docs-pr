@@ -437,7 +437,7 @@ Work items you add from the widget are automatically scoped to your [team's defa
 ## Customize work item types
 [!INCLUDE [temp](../../_shared/customize-work-tracking.md)] 
 
-## Related notes 
+## Related articles 
 
 [!INCLUDE [temp](../../_shared/create-team-project-links.md)]  
 

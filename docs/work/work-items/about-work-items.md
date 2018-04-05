@@ -8,7 +8,7 @@ ms.assetid:
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article
-ms.date: 03/01/2018
+ms.date: 03/20/2018
 ---
 
 # About work items 
@@ -72,27 +72,34 @@ You can only assign a work item to one person at a time. The Assigned To field i
 
 Anyone who has write access to a team project can assign work items to a team member. This includes team members and [stakeholders](../../security/get-started-stakeholder.md).  
 
-**Note the following: **
+**Note the following:**
 - You can assign a work item only to team members recognized by the system, ones that you have added as team members 
 - You can assign a work item to one and only one team member at a time. If work is split across two or more team members, then you should consider creating additional work items that you'll assign to each member responsible for the work to be completed  
 - Over time, the drop-down menu of person-name fields will display most recently selected names
 - Some drop-down menus that support assignment from the backlog or board pages in the web portal are automatically limited to team members   
 - The system shows the display name and adds the account name when required to disambiguate identical display names  
 - You can assign several work items at once from the backlog or query results, see [Bulk modify work items](../backlogs/bulk-modify-work-items.md) for details. 
- 
-###Integration with Azure Active Directory or Active Directory
 
-When your system is configured with Azure Active Directory or Active Directory, then the system will synchronize person-name fields with these directories. Person-name fields include Activated By, Assigned To, Closed By, Created By, and Resolved By. 
+::: moniker range="vsts" 
+###Integration with Azure Active Directory 
 
-You can grant access to a team project by adding security groups that you created in AD or AAD or by adding accounts to existing or custom groups defined from the collection setting Security hub. See these topics for more information: 
+When your system is configured with Azure Active Directory (AAD), then the system will synchronize person-name fields with these directories. Person-name fields include Activated By, Assigned To, Closed By, Created By, and Resolved By. 
 
-- [Access with Azure Active Directory (Azure AD)](../../accounts/add-users-to-aad.md) 
-- [Set up groups for use in TFS deployments](../../tfs-server/admin/setup-ad-groups.md).
+You can grant access to a team project by adding security groups that you created in AAD or by adding accounts to existing or custom groups defined from the collection setting Security hub. To learn more, see [Access with Azure Active Directory (Azure AD)](../../accounts/add-users-to-aad.md).
+::: moniker-end
+
+::: moniker range=">= tfs-2013 <= tfs-2018" 
+###Integration with Active Directory
+
+When TFS is configured with Active Directory (AD), then TFS will synchronize person-name fields with these directories. Person-name fields include Activated By, Assigned To, Closed By, Created By, and Resolved By. 
+
+You can grant access to a team project by adding security groups that you created in AD or by adding accounts to existing or custom groups defined from the collection setting Security hub. To learn more, see [Set up groups for use in TFS deployments](../../tfs-server/admin/setup-ad-groups.md). 
+::: moniker-end
 
  
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 
->[!NOTE]  
+> [!NOTE]    
 >To minimize the list of names that appear in the drop-down menus of person-name fields, you can scope the field to only those groups that you want to appear in the menu. You do this by adding one or more of the following child elements to the **FIELD** definition in the work item type definition: **ALLOWEDVALUES**, **PROHIBITEDVALUES**, and **VALIDUSER**. For details, see [Apply a field rule](../customize/reference/apply-rule-work-item-field.md).
 
 ::: moniker-end

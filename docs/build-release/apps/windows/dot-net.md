@@ -9,8 +9,9 @@ ms.assetid: 2BFC43A2-4F6C-4A5C-86EE-6DDA8733829D
 ms.manager: douge
 ms.author: alewis
 ms.date: 12/20/2017
+monikerRange: '>= tfs-2017'
 ---
-[//]: # (monikerRange: '>= tfs-2017')
+
 
 # Build your .NET desktop app for Windows
 
@@ -38,17 +39,17 @@ https://github.com/adventworks/net-sample
 
 # [GitHub repo](#tab/github)
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 [!INCLUDE [include](../_shared/get-sample-code-github.md)]
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range="< vsts")
+::: moniker range="< vsts"
 
 **TFS**: Does not apply.
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ---
 
@@ -78,7 +79,7 @@ This quickstart works for apps targeting the .NET Framework 4 or newer. The samp
 
 1. In the right panel, select **.NET Desktop**, and then click **Apply**.
 
- You now see all the tasks that were automatically added to the build definition by the template. These are the steps that will automatically run every time you check in code.
+ You now see all the tasks that were automatically added to the build definition by the template. These are the steps that will automatically run every time you push code changes.
 
 1. For the **Agent queue**:
 

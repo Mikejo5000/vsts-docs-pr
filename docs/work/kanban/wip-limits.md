@@ -1,14 +1,14 @@
 ---
 title: Configure WIP limits for Kanban board
 titleSuffix: VSTS & TFS
-ms.custom: Swt WIP limits
-description: Set Work In Progress Limits on the Kanban board and use to improve your Kanban process - Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
+ms.custom: Set WIP limits
+description: Set Work In Progress Limits on the Kanban board in Visual Studio Team Services and Team Foundation Server 
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: d18351c1-e9e1-4c16-869d-e15ca478c748
 ms.manager: douge
 ms.author: kaelli
-ms.date: 03/01/2018
+ms.date: 03/20/2018
 ---
 
 
@@ -83,7 +83,7 @@ Such snapshots can show your team:
 
 <a id="Eliminate waste" />
 
-##Eliminate waste
+## Eliminate waste
 
 Because bottlenecks signal waste in your workflow process, you'll want to identify the source of the waste. Kanban defines waste as anything not strictly needed to produce desired outcomes.
 
@@ -108,33 +108,31 @@ With an understanding of how you'll use WIT limits, here's how you set them.
 > [!TIP]    
 > If you haven't yet [mapped your team's work flow to Kanban columns](add-columns.md), do that first. For information about accessing your Kanban board, see [Kanban basics](kanban-basics.md). 
 
-1. From your Kanban board, click ![settings icon](../_img/icons/team-settings-gear-icon.png) and as needed, click Columns.     
-
-	<img src="../customize/_img/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 2px solid #C3C3C3;" />
-	
-	If you're not a team admin, [get added as one](../scale/add-team-administrator.md). Only team and project admins can customize columns.
-
+1. From your Kanban board, click ![settings icon](../_img/icons/team-settings-gear-icon.png) and as needed, click Columns. Go to [Kanban basics](kanban-basics.md) for information about accessing your Kanban board. If you're not a team admin, [get added as one](../scale/add-team-administrator.md). Only team and project admins can customize columns.    
+	::: moniker range="vsts || >= tfs-2017 <= tfs-2018" 
+	![Kanban board, open common configuration settings](../customize/_img/customize-cards/open-config-dialog.png)
+    ::: moniker-end
+    ::: moniker range="tfs-2013"          
+	![Open configuration settings](../customize/_img/kanban-card-customize-open-settings.png)    
+    ::: moniker-end 
 	You'll see different column titles and choices based on the [process](../work-items/guidance/choose-process.md) used to create your team project  and whether your team has chosen to [treat bugs like requirements or like tasks](../customize/show-bugs-on-backlog.md).  
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"    
-2. Click a column tab to set the WIP limit for that column.   
+ 
+2. Click a column tab to set the WIP limit for that column. 
+	::: moniker range="vsts || >= tfs-2017 <= tfs-2018"   
 	<img src="_img/wip-columns-settings.png" alt="Kanban board, Customize columns, default columns, Agile process, set WIP limits" style="border: 1px solid #C3C3C3;" /> 
-
-	Go to [Kanban basics](kanban-basics.md) for information about accessing your Kanban board. And, if you're not a team admin, [get added as one](../scale/add-team-administrator.md). Only team and project admins can customize columns.  
-::: moniker-end  
-::: moniker range="tfs-2015"  
-2. Click a column tab to set the WIP limit for that column.    
+    ::: moniker-end   
+    ::: moniker range="tfs-2015"      
 	**TFS 2015.1 and later versions**   
 	<img src="_img/wip-columns-settings.png" alt="Kanban board, Customize columns, default columns, Agile process, set WIP limits" style="border: 1px solid #C3C3C3;" /> 	
-
 	**TFS 2015**     
-	Set the WIP limits for each intermediate column.   
-
+	Set the WIP limits for each intermediate column.     
 	![Customize WIP limits](_img/WIP_5.png)    
-::: moniker-end
+    ::: moniker-end
+    ::: moniker range="tfs-2013"          
+	![Customize WIP limits](_img/WIP_5.png)    
+    ::: moniker-end
 
-<a id="Related notes" />
-
-## Related notes
+## Related articles
 
 Here are some additional ways your team can implement Kanban practices and customize the board:
 

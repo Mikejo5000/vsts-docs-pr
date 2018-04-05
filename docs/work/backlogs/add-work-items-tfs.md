@@ -13,7 +13,7 @@ ms.date: 03/16/2017
 
 **TFS 2015 | TFS 2013**  
 
->[!IMPORTANT]   
+> [!IMPORTANT]   
 ><b>Feature availability: </b>The new web form provides many additional features. If you connect to VSTS or the web portal for TFS 2017 or later versions, see [Add work items to plan and track your project](add-work-items.md). 
 
 You add work items to plan and manage your project. You use different types of  work items to track different types of work - such as tasks, features or user stories, test cases and bugs, risks or issues, and more. You can describe the work to be done, assign work, track status, and coordinate efforts within your team.  
@@ -22,7 +22,7 @@ Different types of work items are used to track features, user experiences, code
 
 ![Work item form to track features or user stories](_img/work-item-form-to-track-user-stories.png)
 
->[!NOTE]  
+> [!NOTE]  
 >Depending on the process you chose when creating your team project--[Scrum](../work-items/guidance/scrum-process.md), 
 [Agile](../work-items/guidance/agile-process.md), or [CMMI](../work-items/guidance/cmmi-process.md)--the types of work items you can create will differ. For example, backlog items may be called product backlog items (PBIs), user stories, or requirements. All three are similar: they describe the customer value to deliver and the work to be performed.<br/>  
 For an overview of all three processes, see [Choose a process](../work-items/guidance/choose-process.md). 
@@ -105,7 +105,7 @@ In Visual Studio, right-click the work item tab to copy the URL. The URL opens t
 
 ![Email a hyperlink for a work item](_img/add-work-items-copy-url-for-a-work-item.png)
 
-## Related notes
+## Related articles
 
 Once you've added several work items, you can use additional features to get notified of changes, create queries, define status and trend charts, plus more. To customize a work item type, see [Customize your work tracking experience](../customize/customize-work.md). 
 

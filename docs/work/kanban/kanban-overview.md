@@ -8,7 +8,7 @@ ms.assetid:
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article
-ms.date: 03/01/2018
+ms.date: 03/20/2018
 ---
 
 # About Kanban and Agile project management 
@@ -19,9 +19,19 @@ Your Kanban board provides you with a visual interactive space for you and your 
 
 Each card on the board corresponds to a user story or work item the team is tracking.
 
-<img src="_img/kanban-basics-intro.png" alt="Kanban board, Agile template" style="border: 1px solid #C3C3C3;" />  
+::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+![Kanban board, Agile template](_img/kanban-basics-intro.png) 
 
-Your Kanban board is fully customizable to support your team's workflow. 
+Your Kanban board is highly customizable to support your team's workflow. 
+::: moniker-end
+
+::: moniker range=">= tfs-2013 <= tfs-2015"
+> [!div class="mx-imgBorder"]  
+> ![TFS 2015, Kanban board, Agile template](_img/overview/kanban-basics-intro-tfs.png) 
+
+Each team can customize their Kanban board to meet their workflow needs. 
+::: moniker-end
+
 
 The main steps you'll typically want to follow are outlined below. 
 

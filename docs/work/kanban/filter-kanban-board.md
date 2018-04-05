@@ -8,47 +8,43 @@ ms.prod: vs-devops-alm
 ms.assetid:  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 03/01/2018
+monikerRange: 'vsts || >= tfs-2015 <= tfs-2018'
+ms.date: 03/20/2018
 ---
-  
-
 
 # Filter your Kanban board
 
 <b>VSTS | TFS 2018 | TFS 2017 | TFS 2015</b>  
 
-::: moniker range="tfs-2013"
+<!---
 > [!NOTE]   
-> Filtering of the Kanban board is not a supported feature in TFS 2013. Consider upgrading to TFS 2015 or later version. 
-::: moniker-end
+> Filtering of the Kanban board is not a supported feature in TFS 2013. Consider upgrading to a later TFS version.
+-->
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+
 <a id="filter"></a>
 
 Depending on the size of your team and the number of stories in progress, your Kanban board can get a bit crowded. With filtering, you can selectively choose what cards display to focus on what's of interest in the moment. With parent work item filters, you can focus on one or more select features or epics.  
-::: moniker-end
 
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 <a id="text-filter"></a>
 ## Filter using keywords and tags 
 
 To filter the Kanban board, first customize the board settings so that the cards display the fields or tags that contain keywords that you want to filter on. Otherwise, the keywords you enter will filter work items based on title.    
 
 For example, to filter by Assign To, Iteration Path, or Work Item Type&mdash;or the contents of any other field&mdash;you add those fields to show on the cards. For details, see [Customize cards](../customize/customize-cards.md).  
-::: moniker-end
+
 ::: moniker range="vsts || >= tfs-2018"
 ![Kanban board, customize card fields](_img/filter/filter-kb-card-field-settings-ts.png)
 ::: moniker-end
 ::: moniker range=">= tfs-2015 <= tfs-2017"
 ![Kanban board, customize card fields](_img/filter-kb-card-field-settings.png)
 ::: moniker-end
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+
 The filter function displays work items based on any visible/displayed column or field, including tags, based on the keyword that you enter. 
 
 For example, here we filter the backlog to only show items that include 'Web' in any one of the displayed column fields.  
 
-::: moniker-end
 ::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
 ![Kanban board, Filter using keyword search](../kanban/_img/filter/filter-options-web.png)
 ::: moniker-end
@@ -58,7 +54,7 @@ For example, here we filter the backlog to only show items that include 'Web' in
 
 
 ::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
->[!TIP]  
+> [!TIP]  
 >Type **f** to move your cursor to the filter box. To move the focus up or down within a column, enter the ![Up/Down arrow](../_img/icons/Arrow_Up.png)![ ](../_img/icons/Arrow_Down.png) up/down arrows.    
 >For more tips, see [Kanban board keyboard shortcuts](kanban-board-keyboard-shortcuts.md).
  
@@ -74,7 +70,7 @@ The filter criteria ignores the following characters when the field value starts
 ## Filter using select field values  
 
 <!---
->[!NOTE]  
+> [!NOTE]    
 ><b>Feature availability: </b>Filter by select fields is available from VSTS and TFS 2017 and later versions.  
 -->
 
@@ -82,7 +78,7 @@ You can filter by select field values using the Kanban board for your product ba
 
 To start filtering, click the ![Kanban filter icon](../_img/icons/kanban-filter-icon.png) Kanban board filter icon. 
 
-<img src="_img/filter-kb-choose-filter.png" alt="Enable kanban field-based filtering" style="border: 1px solid #C3C3C3;" />  
+![Enable kanban field-based filtering](_img/filter/filter-kb-choose-filter.png)
 
 Choose one or more values from the multi-select drop-down menu for each field. The values for these fields are populated  as follows: 
 - **Assigned To**: All users who are currently assigned to work items on the board plus Unassigned  
@@ -106,7 +102,7 @@ Once the board is filtered, you can click the filter icon to hide the drop downs
 ## Filter by specifying parent work items
 
 <!---
->[!NOTE]  
+> [!NOTE]    
 ><b>Feature availability: </b>The **Filter by parent** feature is available from VSTS and TFS 2017 and later versions.  
 -->
 
@@ -114,7 +110,7 @@ You can use the **Filter by parent** feature to filter by select parent work ite
 
 You can use this feature only when you've created features or epics and linked them to user stories or features, respectively. A quick and easy way to create the links is to [map them using drag-and-drop](../backlogs/organize-backlog.md). Mapping creates parent-child links between the work items. 
  
->[!NOTE]  
+> [!NOTE]    
 >The **Filter by parent**  feature doesn't support filtering of parent work items of the same work item type. For example, you can't filter the Stories backlog by specifying user stories that are parents of nested user stories.     
 
 To start filtering, click the ![Kanban filter icon](../_img/icons/kanban-filter-icon.png) Kanban board filter icon. Choose one or more values from the multi-select drop-down menu for the Parent Work Item. These values are derived from the [Features](kanban-epics-features-stories.md) you've defined.  
@@ -142,13 +138,13 @@ Cards are filtered based on the assignments made in the following order and logi
 
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 
-## Related notes  
+
+## Related articles  
 - [Tags](../track/add-tags-to-work-items.md) 
 - [Customize cards](../customize/customize-cards.md)
 
-::: moniker-end
+
 
 <!---
 <table>

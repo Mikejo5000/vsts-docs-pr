@@ -8,7 +8,7 @@ ms.prod: vs-devops-alm
 ms.assetid: 8afd3481-6fab-401d-90ff-0dd443da0f0e
 ms.manager: douge
 ms.author: kaelli
-ms.date: 03/01/2018
+ms.date: 03/20/2018
 ---
 
 # Add columns to your Kanban board
@@ -26,14 +26,14 @@ For example, the main workflow stages performed by our example dev team are capt
 If you're just getting started, review [Kanban basics](kanban-basics.md) to get an overview of how to access your board and implement Kanban.
 
 ::: moniker range="vsts"
->[!NOTE]  
+> [!NOTE]    
 >If you're looking at how to add columns to a task board, you need to customize the workflow. For details, see [Customize your work flow](../customize/customize-work.md). To add columns to a backlog or query results, see [Change column options](../backlogs/set-column-options.md).   
 >
 >For an overview of the features supported on each backlog and board, see [Backlog, board, and plan views](../backlogs/backlogs-boards-plans.md).
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
->[!NOTE]  
+> [!NOTE]    
 >If you're looking at how to add columns to a task board, you need to customize the workflow. For details, see [Add or modify a work item type](../customize/add-modify-wit.md). To add columns to a backlog or query results, see [Change column options](../backlogs/set-column-options.md).   
 >
 >For an overview of the features supported on each backlog and board, see [Backlog, board, and plan views](../backlogs/backlogs-boards-plans.md).
@@ -90,7 +90,7 @@ To keep teams working on the highest priority items, you'll want to react quickl
 
 <a id="add-or-rename-columns"> </a>
 
-##Add or rename columns
+## Add or rename columns
 
 Now that you've got the essentials of how to work with your Kanban board, here's how you get it to look like what you need it to.
 
@@ -142,7 +142,7 @@ First, open the Kanban portal for your team project. Click the **Board** link fr
 
 1. To open, click ![gear icon](../_img/icons/team-settings-gear-icon.png), the gear icon, to open the team settings dialog and then click Columns. 
 
-	<img src="../customize/_img/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 2px solid #C3C3C3;" />
+	![Kanban board, open common configuration settings](../customize/_img/customize-cards/open-config-dialog.png)
 
 	If you're not a team admin, [get added as one](../scale/add-team-administrator.md). Only team and project admins can customize columns. 
 
@@ -349,7 +349,7 @@ In this example, bugs have been added to show on the Kanban board. You need to m
 ::: moniker-end
 
 
-## Related notes
+## Related articles
 
 That's about all you need to know about working with Kanban columns. Here are a few more options you have for customizing the look and feel of the board. 
 

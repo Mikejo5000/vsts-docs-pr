@@ -1,14 +1,14 @@
 ---
 title: Bulk modify work items
 titleSuffix: VSTS & TFS
-description: Bulk edit/modify several/multiple work items (mass update), backlog items, tasks, or bugs or linked parent-child items for Visual Studio Team Services and Team Foundation Server    
+description: Bulk edit/modify/update several/multiple work items, backlog items, tasks, or bugs or linked parent-child items for Visual Studio Team Services or Team Foundation Server    
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 152CAFE0-2360-470A-98AC-F613A67C24D2  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 07/14/2017
 ms.topic: get-started-article
+ms.date: 03/20/2018
 ---
 
 # Bulk modify work items  
@@ -28,14 +28,25 @@ With bulk modify, you can edit fields, add or remove tags, reassign work, or mov
 
 In this topic you'll learn:  
 
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 > [!div class="checklist"] 
 > * How to multi-select work items from a list and open the context menu  
 > * Edit one or more fields of several work items    
-> * Add or remove tags from several work items  
 > * Assign work from a backlog to a sprint using drag-and-drop 
+> * Add or remove tags from several work items  
+::: moniker-end
 
->[!NOTE]  
+::: moniker range="tfs-2013"
+> [!div class="checklist"] 
+> * How to multi-select work items from a list and open the context menu  
+> * Edit one or more fields of several work items    
+> * Assign work from a backlog to a sprint using drag-and-drop 
+::: moniker-end
+
+<!---
+> [!NOTE]  
 >**Feature availability:**&#160;&#160;The following features are available from VSTS (cloud service) or from the web portal of the listed on-premises TFS version or a later version. Those not annotated are available from all platforms and versions. Visit the [Visual Studio Downloads page](https://www.visualstudio.com/downloads/download-visual-studio-vs) to get the latest TFS update. Additional resources may be required as annotated. To determine your platform or TFS version, see [Provide product and content feedback](../../user-guide/provide-feedback.md#platform-version).  
+-->
 
 All of the following actions can be performed by team members that belong to the Contributors group. Members provided with Stakeholder access can perform multi-select, bulk edit, change type, email, and copy as HTML/copy to clipboard actions. For details, see [Work as a stakeholder](../../security/get-started-stakeholder.md).  
 
@@ -75,7 +86,7 @@ All of the following actions can be performed by team members that belong to the
 > [!div class="mx-tdBreakAll"]  
 > |Multi-select work items|Bulk edit/update/delete|Copy, clone, change type,<br/>move, or email work items|  
 > |-------------|----------|---------|  
-> |- [Multi-select-query results](#multi-select)<br/>- [Multi-select-backlog](#multi-select) (TFS 2015.1)<br/><br/>**Link work items**<hr/>- [Link to a new item](add-link.md#link)<br/>- [Link to an existing item](add-link.md#link)|- [Edit field(s)](#edit)<br/>- [Assign to](#assign-to)<br/>- [Move to iteration](#move-iteration)<br/>- [Change position](create-your-backlog.md#move-items-priority-order)<br/>- [Change parent](organize-backlog.md#reparent)<br/>- [Delete](remove-delete-work-items.md#delete) <sup>1</sup>|- [Clone or copy a single item](copy-clone-work-items.md#copy-clone) <sup>2</sup><br/>- [Copy as HTML/Copy to clipboard](copy-clone-work-items.md#html)<br/>- [Email selected item(s)](../track/share-plans.md) <sup>3</sup>|       
+> |- [Multi-select-query results](#multi-select)<br/>- [Multi-select-backlog](#multi-select) <br/><br/>**Link work items**<hr/>- [Link to a new item](add-link.md#link)<br/>- [Link to an existing item](add-link.md#link)|- [Edit field(s)](#edit)<br/>- [Assign to](#assign-to)<br/>- [Move to iteration](#move-iteration)<br/>- [Change position](create-your-backlog.md#move-items-priority-order)<br/>- [Change parent](organize-backlog.md#reparent)<br/>- [Delete](remove-delete-work-items.md#delete) <sup>1</sup>|- [Clone or copy a single item](copy-clone-work-items.md#copy-clone) <sup>2</sup><br/>- [Copy as HTML/Copy to clipboard](copy-clone-work-items.md#html)<br/>- [Email selected item(s)](../track/share-plans.md) <sup>3</sup>|       
 
 
 **Notes:**  
@@ -86,12 +97,14 @@ All of the following actions can be performed by team members that belong to the
 
 ::: moniker-end
 
-[!INCLUDE [temp](../_shared/image-differences.md)]  
-
+[!INCLUDE [temp](../_shared/prerequisites-work-items.md)] 
 
 <a id="multi-select"> </a>  
+<a id="edit"> </a>  
 
-## Multi-select work items   
+## Bulk edit multi-selected work items   
+
+To start a bulk edit, begin by multi-selecting the work items you want to modify, either from the query results or the backlog. You can craft your query using the [query editor or search box](../track/using-queries.md). 
 
 ::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 Multi-select of work items on the backlog and sprint backlogs works in the same way as multi-select works within query results. 
@@ -178,14 +191,9 @@ Here, we use the context menu to move several non-sequential items to the curren
 <img src="_img/backlog-multi-select-non-sequential-items.png" alt="TFS 2015, web portal, Backlog page, multi-select items, Open context menu, Move to iteration,  " style="border: 2px solid #C3C3C3;" />
 
 ::: moniker-end
->[!TIP]  
+> [!TIP]  
 >Use the backlog <b>Create Query</b> feature to create a query with the backlog items. You can then open the query within the web portal or [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to perform bulk updates.  
 
-
-<a id="edit"> </a>  
-## Bulk edit work items   
-
-To start a bulk edit, begin by [multi-selecting](#multi-select) the work items you want to modify, either from the query results or the backlog. You can craft your query using the [query editor or search box](../track/using-queries.md).  
 
 <!---
 Select the work items you want to modify. 
@@ -195,15 +203,15 @@ Select the work items you want to modify.
 
 <a id="move-iteration"> </a> 
 <a id="assign-to"> </a>  
-### Reassign work items or edit a field  
+## Reassign work items 
 With work items selected, open the context menu for any selected item, and reassign all of them. By doing this, you can quickly assign them to a member of your team or to another sprint or iteration. 
 
 ![Assign to link from work item context menu](_img/IC700157.png)  
 
-To learn more about the Assign To and Iteration Path fields, see [Query by assignment, workflow or Kanban board changes](../track/query-by-workflow-changes.md#workflow-fields) and [Schedule sprints](../scrum/define-sprints.md).
+To learn more about the Assign To and Iteration Path fields, see [Query by assignment, workflow or Kanban board changes](../track/query-by-workflow-changes.md#workflow-fields) and [Query by area or iteration path](../track/query-by-area-iteration-path.md).
 
 <a id="edit-fields"> </a>  
-### Edit fields  
+## Edit one or more fields  
 
 To assign or modify several fields, choose Edit from the context menu of one of the selected work items. Enter a value for each field that you want to update.  
 
@@ -233,23 +241,25 @@ To assign or modify several fields, choose Edit from the context menu of one of 
 
 ::: moniker-end
 
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 [!INCLUDE [temp](../_shared/assign-to-sprint.md)]
-
+::: moniker-end
 
 ::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 <a id="tags"></a>
 ## Bulk modify tags 
- 
-Bulk update of work items to add or remove tags from the web portal requires TFS 2015.2 or later version. To bulk edit work items when connecting to TFS 2015.1 or earlier versions, [use Excel](../backlogs/office/bulk-add-modify-work-items-excel.md). 
 
-From the Edit work items dialog, select Tags (Add) or Tags (Remove).  
+From the Edit work items dialog, select **Tags (Add)** or **Tags (Remove)**.  
 
 Here we choose to add the Beta tag to the selected work items. 
 
-![Edit work items - Add tags](../track/_img/tags-bulk-add.png)  
-::: moniker-end
+![Edit work items - Add tags](../track/_img/tags-bulk-add.png) 
+::: moniker-end 
+::: moniker range="tfs-2015" 
+Bulk update of work items to add or remove tags from the web portal requires TFS 2015.2 or later version. To bulk edit work items when connecting to TFS 2015.1 or earlier versions, [use Excel](../backlogs/office/bulk-add-modify-work-items-excel.md). 
+::: moniker-end 
 
-## Related notes
+## Related articles
 
 To add fields or customize a work item form, see [Customize your work tracking experience](../customize/customize-work.md). The method you use depends on the process model that supports your team project.  
 

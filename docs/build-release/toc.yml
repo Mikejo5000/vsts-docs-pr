@@ -178,6 +178,8 @@
       href: actions/agents/v2-osx.md
     - name: Linux
       href: actions/agents/v2-linux.md
+    - name: To a deployment group
+      href: concepts/definitions/release/deployment-groups/howto-provision-deployment-group-agents.md
     - name: Run an agent behind a web proxy
       href: actions/agents/proxy.md
     - name: Run an agent with self-signed certificate
@@ -433,6 +435,8 @@
       href: tasks/deploy/azure-sql-database-deployment.md
     - name: Copy Files Over SSH
       href: tasks/deploy/copy-files-over-ssh.md
+    - name: Docker
+      href: tasks/deploy/docker.md
     - name: PowerShell on Target Machines
       href: tasks/deploy/powershell-on-target-machines.md
     - name: Service Fabric App Deployment

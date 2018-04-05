@@ -12,14 +12,12 @@
     href: set-iteration-paths-sprints.md
 - name: Concepts
   items:
-  - name: About areas and iterations
+  - name: "About areas & iterations"
     href: about-areas-iterations.md
-  - name: Inheritance process model
-    href: inheritance-process-model.md
-  - name: Hosted XML process model
-    href: hosted-xml-process-model.md
-  - name: Differences between cloud and on-premises process customizations
+  - name: Differences between process models
     href: import-process/differences.md 
+  - name: On-premises XML process model
+    href: on-premises-xml-process-model.md
   - name: "Workflow states & state categories"
     href: workflow-and-state-categories.md
   - name: Rollup of work and other fields
@@ -46,6 +44,7 @@
     - name: Set working days
       href: set-working-days.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json 
   - name: Inheritance process model
+    href: inheritance-process-model.md
     items:
     - name: Manage processes
       href: process/manage-process.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json 
@@ -65,7 +64,8 @@
       href: process/custom-controls-process.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: Customize backlogs and boards
       href: process/customize-process-backlogs-boards.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
-  - name: Hosted XML
+  - name: Hosted XML process model
+    href: hosted-xml-process-model.md
     items:
     - name: Customize a Hosted XML process
       href: import-process/customize-process.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json

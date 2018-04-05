@@ -7,8 +7,9 @@ ms.assetid: be45c6df-5da8-4b1c-b5b8-3e579ab39096
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/04/2016
+monikerRange: '>= tfs-2015 <= tfs-2018 || vsts'
 ---
-[//]: # (monikerRange: '>= tfs-2015 <= tfs-2018 || vsts')
+
 
 # The Cordova/Ionic/PhoneGap Command Tasks
 
@@ -80,6 +81,8 @@ Available Settings:
 
 <!-- BEGINSECTION class="md-qanda" -->
 
+::: moniker range="< vsts"
 [!INCLUDE [temp](../../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->

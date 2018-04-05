@@ -81,7 +81,7 @@ Process configuration defines the layout and fields used in the display of the p
   
 -   For all WITs that you assign to a category that is referenced in the ProcessConfiguration file, you must assign the workflow states to a valid metastate as described in [Process Configuration XML element reference](process-configuration-xml-element.md).  
   
-##Related notes 
+## Related articles 
 - [Categories XML element reference](categories-xml-element-reference.md)  
 - [Import and export categories](witadmin/witadmin-import-export-categories.md)
 - [Visual Studio TFS forum for Project Management and Work item tracking](http://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=tfsworkitemtracking).

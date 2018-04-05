@@ -7,12 +7,12 @@ ms.assetid: 743A3914-CD86-403D-AA4F-42CDBBB69F95
 ms.manager: douge
 ms.author: kaelli 
 ms.topic: get-started-article
-ms.date: 09/29/2017  
+ms.date: 03/20/2018
 ---
 
 # Copy or clone work items  
 
-**VSTS | TFS 2018 | TFS 2017 | TFS 2015**    
+[!INCLUDE [temp](../_shared/dev15-version-header.md)]    
 
 There are two types of copy functions you can use. The first is to duplicate a single work item, referred to as copy or clone. In addition, you can choose to change the team project or work item type when copying/cloning a work item. 
 
@@ -27,6 +27,8 @@ Use this topic to learn how to:
 > * Copy the URL of a work item  
 
 [!INCLUDE [temp](../_shared/image-differences.md)] 
+
+[!INCLUDE [temp](../_shared/prerequisites-work-items.md)] 
 
 <a id="copy-clone"></a>
 ## Copy or clone a work item   
@@ -95,7 +97,7 @@ If you have a large number of work items whose type you want to change, use [Cha
 With this option, you can copy an HTML formatted table of selected items from either a backlog page or query results list. You can then email this list using your choice of email client, or paste into a Word document, Excel spreadsheet, or other application. 
  
 ::: moniker range=">= tfs-2013 <= tfs-2018"
->[!NOTE]  
+> [!NOTE]  
 >The data copied with **Copy as HTML** is the same as that copied when you select **Email selected work items**. If you don't have an SMTP server configured, you can work around this by using **Copy as HTML**. For on-premises TFS, all email actions require an [SMTP server to be configured](../../tfs-server/admin/setup-customize-alerts.md). 
 ::: moniker-end
 
@@ -150,21 +152,28 @@ The formatted table contains a link to each work item included in your selected 
 ## Copy the URL
 
 # [Browser](#tab/browser)
+
 ::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
 Copy the URL from the web browser address or hover over the title and then click the ![Copy to clipboard icon](_img/icon-copy-to-clipboard.png) copy-to-clipboard icon.  
 
 <img src="_img/add-work-item-copy-URL.png" alt="Copy hyperlink for a work item from web portal" style="border: 1px solid #CCCCCC;" />
 ::: moniker-end
+
 ::: moniker range=">= tfs-2013 <= tfs-2015" 
 Right click the link ID to open the browser copy link option.
   
 <img src="_img/copy-wi-url-2015.png" alt="Copy hyperlink for a work item from web portal" style="border: 1px solid #CCCCCC;" /> 
-::: moniker-end 
+::: moniker-end
+
+ 
 # [Visual Studio](#tab/visual-studio)
+
 In Visual Studio, right-click the work item tab to copy the URL. The URL opens the work item in the web portal.  
 
-![Copy full path hyperlink for a work item from Visual Studio](_img/add-work-items-copy-url-for-a-work-item.png) 
+![Copy full path hyperlink for a work item from Visual Studio](_img/add-work-items-copy-url-for-a-work-item.png)
+
 ---
+
 ## Related topics
 
 - [Bulk modify work items](bulk-modify-work-items.md)   

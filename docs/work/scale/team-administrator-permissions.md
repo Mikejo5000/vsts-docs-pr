@@ -81,7 +81,7 @@ Team administrators can add and modify alerts so that the team can receive email
 
 Team administrators can add users and events to team rooms, and add team rooms. Team rooms are chat rooms limited to team members. For details, see [Collaborate in a team room](../../collaborate/collaborate-in-a-team-room.md).  
 
-## Related notes
+## Related articles
 
 - [Permissions and access for work tracking](../../security/permissions-access-work-tracking.md) 
 - [Add teams and team members](multiple-teams.md) 

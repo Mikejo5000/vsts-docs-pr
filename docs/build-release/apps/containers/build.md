@@ -8,8 +8,9 @@ ms.manager: douge
 ms.author: alewis
 ms.reviewer: dastahel
 ms.date: 02/20/2018
+monikerRange: '>= tfs-2017'
 ---
-[//]: # (monikerRange: '>= tfs-2017')
+
 
 # Build and push a Docker image
 
@@ -83,7 +84,10 @@ Verify that the Docker container image is built and pushed to your container reg
 
 Now your CI process is set up to push a new Docker image to a container registry every time a change is pushed to your application code.
 
-## Next step
+## Next steps
 
 > [!div class="nextstepaction"]
 > [Deploy to Azure Web App for Containers](../cd/deploy-docker-webapp.md)
+
+> [!div class="nextstepaction"]
+> [Deploy using Kubernetes](../cd/azure/deploy-container-kubernetes.md)

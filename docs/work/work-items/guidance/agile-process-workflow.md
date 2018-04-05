@@ -208,7 +208,7 @@ You can [create bugs from the web portal web portal, Visual Studio, or when test
 [!INCLUDE [temp](../../_shared/customize-work-tracking.md)] 
 
 
-## Related notes
+## Related articles
 
 [!INCLUDE [temp](../../_shared/create-team-project-links.md)]  
   

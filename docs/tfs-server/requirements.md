@@ -1,4 +1,4 @@
-﻿---
+---
 title: Requirements and compatibility | Team Foundation Server Setup, Upgrade and Administration
 description: Describes many kinds of requirements and compatibility for VSTS and TFS -- hardware, operating systems, SQL Server, client versions, server versions, browsers
 ms.prod: vs-devops-alm
@@ -8,9 +8,10 @@ toc: show
 ms.manager: douge
 ms.author: elbatk
 ms.date: 10/02/2017
+monikerRange: '>=tfs-2013'
 ---
 
-[//]: # (monikerRange: '>=tfs-2013')
+
 
 # Requirements and compatibility
 
@@ -502,7 +503,7 @@ The following components do not have additional language requirements that are s
 
 -   Visual Studio Lab Management
 
-Test controllers and agents have their own language requirements. For more information, see the following page on the Microsoft website: [Test Controller and Test Agent Requirements](https://msdn.microsoft.com/library/ff937706.aspx)
+Test controllers and agents have their own language requirements. For more information, see the following page on the Microsoft website: [Test Controller and Test Agent Requirements](https://docs.microsoft.com/visualstudio/test/lab-management/install-configure-test-agents)
 
 
 <a name="client-compatibility"></a>

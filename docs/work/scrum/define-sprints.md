@@ -44,7 +44,7 @@ That's it! You can now start [planning your first sprint](sprint-planning.md).
 
 Of course, if you have several teams, more complex release and sprint cadences to schedule, or want to create child , or creating child iterations, then you'll need to read further. You define these through the admin context for the team project.  
 
->[!NOTE]  
+> [!NOTE]    
 >**Terminology note:** Your set of Agile tools uses the Iteration Path field to track sprints and releases. When you define sprints, you define the pick list of values available for the [Iteration Path](../customize/set-area-paths.md) field. You use iterations to group work into sprints, milestones, or releases in which they'll be worked on or shipped. 
 
 <a id="drag-drop-to-sprint">   </a>
@@ -57,7 +57,7 @@ You can quickly assign work items to a sprint by dragging and dropping them from
 <a id="schedule">   </a>
 ## Add and schedule new sprints for several teams and release cadences 
  
->[!NOTE]  
+> [!NOTE]    
 >Your sprint backlog and task board are designed to support your Scrum processes. In addition, you have access to product and portfolio backlogs and Kanban boards. For an overview of the features supported on each backlog and board, see [Backlogs, boards, and plans](../backlogs/backlogs-boards-plans.md).  
 
 Your team project comes with several sprints predefined. However, they aren't associated with any dates. For Scrum and sprint planning, you'll want to assign start and end dates for the sprints your team will use.   
@@ -77,5 +77,5 @@ For example, by selecting Sprints 1 thru 6, the Fabrikam Fiber team gets access 
 > [!div class="nextstepaction"]
 > [Plan a sprint](sprint-planning.md) or [Define iterations for the team project](../customize/set-iteration-paths-sprints.md) 
 
-## Related notes 
+## Related articles 
 If you work with several teams, and each team wants their own backlog view, you can [create additional teams](../scale/multiple-teams.md). Each team then gets access to their own set of Agile tools. Each Agile tool filters work items to only include those assigned values under the team's [default area path and iteration path](../scale/set-team-defaults.md).  

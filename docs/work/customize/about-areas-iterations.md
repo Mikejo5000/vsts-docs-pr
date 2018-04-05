@@ -7,13 +7,13 @@ ms.prod: vs-devops-alm
 ms.assetid: 
 ms.manager: douge
 ms.author: kaelli
-ms.date: 02/27/2018
+ms.date: 03/20/2018
 ---
 
 
 # About area and iteration paths (aka sprints) 
 
-<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 Area paths allow you to group work items by team, product, or feature area. Whereas, iteration paths allow you to group work into sprints, milestones, or other event-specific or time-related period. Both these fields allow you to define a hierarchy of paths. 
 
@@ -22,7 +22,7 @@ You define area and iteration paths for a team project. Teams can then choose wh
 The areas and iterations you see depend on the process you used to create your team project. Here we show the defaults defined for the Scrum process. No dates are set. You set dates to correspond to your sprint or release schedules.
 
 > [!div class="mx-tdBreakAll"] 
-> |Areas|Iterations| 
+> |Iterations| Areas |
 > |-------------|----------| 
 > |<img src="_img/areas-iterations-iterations-intro-ts-2016.png" alt="Default iterations, Scrum process" style="border: 1px solid #C3C3C3;" /> | <img src="_img/areas-iterations-areas-intro-ts-2016.png" alt="A set of sample area paths" style="border: 1px solid #C3C3C3;" /> | 
   
@@ -77,20 +77,14 @@ The **Area Path** and **Iteration Path** fields, [data type=TreePath](reference/
 > | Path length | Must contain fewer than 4,000 Unicode characters | 
 > | Path hierarchy depth | Must be fewer than 14 levels deep | 
 
-## Related notes 
+## Related articles 
 As you can see, areas and iterations play a major role in supporting Agile tools and managing work items. You can learn more about working with these fields from these topics: 
  
 *	[Set project-level area paths](set-area-paths.md)  
 *	[Set project-level iteration paths](set-iteration-paths-sprints.md)  
 *	[Set team defaults](../scale/set-team-defaults.md)  
-*	[Agile tools and sprint definitions ](../scrum/define-sprints.md)  
+*	[Agile tools and sprint definitions](../scrum/define-sprints.md)  
 *	[Query by date or current iteration](../track/query-by-date-or-current-iteration.md)  
-
-
-<a name="permissions"></a>
-### Required permissions  
-
-To create or modify areas or iterations, you must either be a member of the **Project Administrators** group, or your **Create and order child nodes**, **Delete this node**, and **Edit this node** permissions must be set to **Allow** for the area or iteration node that you want to modify.
 
 
 <a name="export"></a>
@@ -103,7 +97,6 @@ You can't export the structure of tree paths for one team project to use with an
 ### Supported field rules  
 
 You can [specify only a small subset of rules](reference/apply-rule-work-item-field.md#system), such as ```HELPTEXT``` and ```READONLY``` to System.XXX fields. 
-
 
 <a name="team-field"></a>
 ### Team field versus team area path  

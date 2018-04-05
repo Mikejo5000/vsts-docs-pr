@@ -9,6 +9,7 @@ ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article
 ms.date: 02/20/2018
+monikerRange: '>= tfs-2018'
 ---
 
 
@@ -50,7 +51,7 @@ You can contact your administrator to provision the Wiki git repository or reque
 > [Add and edit wiki pages](add-edit-wiki.md) 
 
 
-## Related notes
+## Related articles
 
 - [Migrate your existing pages to the new team project wiki](migrate-extension-wiki-pages.md)
 - [Update wiki pages offline](wiki-update-offline.md)

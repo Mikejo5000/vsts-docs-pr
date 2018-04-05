@@ -7,8 +7,9 @@ ms.assetid: d51de748-c53e-4468-ad9b-275d6bf1a4dd
 ms.manager: douge
 ms.author: chcomley
 ms.date: 02/27/2018
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
+
 
 # Troubleshoot access with Azure Active Directory (Azure AD)
 
@@ -334,19 +335,12 @@ A: This might happen because:
 
 ### Q: What if my VSTS account is already linked to an Azure subscription?
 
-A:  You can [change the Azure subscription](../billing/change-azure-subscription.md)
-that's linked to your VSTS account.
-However, unlinking will cause your account
-to go back to the
-[free account limits](../billing/faq-billing-setup.md#unlinking),
-and some users might lose access until you re-link.
+A:  You can [change the Azure subscription](../billing/change-azure-subscription.md) that's linked to your VSTS account.
+However, unlinking will cause your account to revert to the free tier. See the [VSTS billing FAQ](../billing/vsts-billing-faq.md) for details.
 
 ### Q:  What happens if I unlink my Azure subscription while my VSTS account is connected to a directory?
 
-A:  This doesn't affect your account's connection to the directory,
-but unlinking will cause your account to go back to the
-[free account limits](../billing/faq-billing-setup.md#unlinking),
-and some users might lose access until you re-link.
+A:  See the [VSTS billing FAQ](../billing/vsts-billing-faq.md) for details.
 
 <a name="AlreadyConnected"></a>
 
