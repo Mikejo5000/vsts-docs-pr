@@ -9,6 +9,8 @@ ms.author: elbatk
 monikerRange: '>= tfs-2015'
 ---
 
+# Protective scans & Marketplace Certified
+
 ## Protective Scans
 As a consumer of Marketplace, you expect that you do not receive malware when you acquire an extension from VS Marketplace. To achieve the same, we run a comprehensive virus scan on each extension package we receive. This is performed for each new extension and for each extension update. Until the scan is all clear, we do **not** publish the extension in Marketplace for public usage.
 > During execution, an extension can potentially acquire malware and above stated scan will not be able to catch that. 
