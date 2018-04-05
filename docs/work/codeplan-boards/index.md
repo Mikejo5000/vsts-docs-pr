@@ -1,6 +1,6 @@
 ---
-title: Index to topics for CodePlan Boards
-titleSuffix: CodeX, CodePlan
+title: Index to topics for Codex Agile Boards
+titleSuffix: Codex Agile
 description: Work with Kanban boards  
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
@@ -10,7 +10,7 @@ ms.author: kaelli
 ms.date: 02/24/2018
 ---
 
-# CodePlan Boards
+# Codex Agile Boards
 
 Get collaboration going by adding to, updating, and then reviewing your Kanban board with others. 
 

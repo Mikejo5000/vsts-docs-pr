@@ -1,6 +1,6 @@
 ---
 title: CodeX Documentation 
-titleSuffix: CodeX, CodePlan, CodeBox, CodeLaunch
+titleSuffix: CodeX, Codex Agile, Codex Repos, Codex Pipelines
 description: Share code, track work, continuous build and deploy using CodeX cloud service apps 
 layout: HubPage
 hide_bc: true 
@@ -28,7 +28,43 @@ featureFlags:
                                     </div>
                                 </div>
                                 <div class="cardText">
-                                    <span class="likeAnH3">New User Guide for VSTS and TFS</span>
+                                    <span class="likeAnH3">Codex Repos New User Guide</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="/vsts/user-guide">
+                    <div class="cardSize">
+                        <div class="cardPadding">
+                            <div class="card">
+                                <div class="cardImageOuter">
+                                    <div class="cardImage">
+                                        <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="" />
+                                    </div>
+                                </div>
+                                <div class="cardText">
+                                    <span class="likeAnH3">Codex Agile New User Guide</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="/vsts/user-guide">
+                    <div class="cardSize">
+                        <div class="cardPadding">
+                            <div class="card">
+                                <div class="cardImageOuter">
+                                    <div class="cardImage">
+                                        <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="" />
+                                    </div>
+                                </div>
+                                <div class="cardText">
+                                    <span class="likeAnH3">Codex Pipelines New User Guide</span>
                                 </div>
                             </div>
                         </div>
@@ -64,7 +100,7 @@ featureFlags:
                                     </div>
                                 </div>
                                 <div class="cardText">
-                                    <span class="likeAnH3">VSTS Release Notes</span>
+                                    <span class="likeAnH3">Codex Release Notes</span>
                                 </div>
                             </div>
                         </div>
@@ -74,7 +110,7 @@ featureFlags:
         </ul>
     </div>
     <div class="container">
-        <h1>CodeX Documentation</h1>
+        <h1>Azure CodeX Documentation</h1>
         <ul class="pivots">
             <li>
                 <a href="#start">Get Started</a>
@@ -138,10 +174,10 @@ featureFlags:
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardText">
-                                                <h3>CodePlan</h3>
+                                                <h3>Codex Agile</h3>
                                                 <ul class="noBullet">
                                                     <li><a class="barLink" href="/vsts/work/scrum/index">Scrum</a></li>
-                                                    <li><a class="barLink" href="/vsts/work/codeplan-boards/index">Boards</a></li>
+                                                    <li><a class="barLink" href="/vsts/work/boards/index">Boards</a></li>
                                                     <li><a class="barLink" href="/vsts/report/dashboards/index">Dashboards</a></li>
                                                 </ul>
                                             </div>
@@ -209,14 +245,14 @@ featureFlags:
                 </ul>
             </li>
             <li>
-                <a href="#services">Services</a>
+                <a href="#services">Cloud Services</a>
                 <ul id="services">
                     <li>
                         <a data-default="true" href="#all">All</a>
                         <ul id="all" class="cardText">
                             <li>
                                 <div class="group">
-                                    <h3>CodeBox</h3>
+                                    <h3>Codex Repos</h3>
                                     <ul>
                                         <li><a class="barLink" href="/vsts/git/index">Git Repositories</a></li>
                                         <li><a class="barLink" href="/vsts/git/tutorial/pullrequest">Pull Requests</a></li>
@@ -224,7 +260,7 @@ featureFlags:
                                         <li><a class="barLink" href="/vsts/git/branch-policies">Branch Policies</a></li>
                                         <li><a class="barLink" href="/vsts/tfvc/index">TFVC</a></li>
                                     </ul>
-                                    <h3>CodeLaunch</h3>
+                                    <h3>Codex Pipelines</h3>
                                     <ul>
                                         <li><a class="barLink" href="/vsts/build-release/index">Build &amp; Release</a></li>
                                         <li><a class="barLink" href="/vsts/build-release/test/index">Continuous Testing</a></li>
@@ -234,7 +270,7 @@ featureFlags:
                                         <li><a class="barLink" href="/vsts/build-release/concepts/agents/agents">Hosted and Private Agents</a></li>
                                         <li><a class="barLink" href="/vsts/build-release/tasks">Task Reference</a></li>
                                     </ul>
-                                    <h3>CodeTest</h3>
+                                    <h3>Codex Test</h3>
                                     <ul>
                                         <li><a class="barLink" href="/visualstudio/test/unit-test-your-code">Unit and Functional Testing</a></li>
                                         <li><a class="barLink" href="/vsts/manual-test/index">Exploratory &amp; Manual Testing</a></li>
@@ -245,15 +281,15 @@ featureFlags:
                             </li>
                             <li>
                                 <div class="group">
-                                    <h3>CodePlan</h3>
+                                    <h3>Codex Agile</h3>
                                     <ul>
-                                        <li><a class="barLink" href="/vsts/work/codeplan-items/index?toc=/vsts/work/codeplan-items/toc.json&bc=/vsts/work/codeplan-items/breadcrumb/toc.json">Work Items</a></li>
-                                        <li><a class="barLink" href="/vsts/work/codeplan-backlogs?toc=/vsts/work/codeplan-backlogs/toc.json&bc=/vsts/work/codeplan-backlogs/breadcrumb/toc.json/index">Backlogs</a></li>
-                                        <li><a class="barLink" href="/vsts/work/codeplan-boards/index?toc=/vsts/work/codeplan-boards/toc.json&bc=/vsts/work/codeplan-boards/breadcrumb/toc.json">Kanban</a></li>
-                                        <li><a class="barLink" href="/vsts/work/codeplan-scrum/index?toc=/vsts/work/codeplan-scrum/toc.json&bc=/vsts/work/codeplan-scrum/breadcrumb/toc.json">Scrum</a></li>
-                                        <li><a class="barLink" href="/vsts/work/codeplan-queries/index?toc=/vsts/work/codeplan-queries/toc.json&bc=/vsts/work/codeplan-queries/breadcrumb/toc.json">Queries</a></li>
-                                        <li><a class="barLink" href="/vsts/work/customize/process/customize-process?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json">Process Customization</a></li>
-                                        <li><a class="barLink" href="/vsts/work/codeplan-scale/index?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json">Agile at Scale</a></li>
+                                      <li><a class="barLink" href="/vsts/work/work-items/index">Work Items</a></li>
+                                        <li><a class="barLink" href="/vsts/work/backlogs/index">Backlogs</a></li>
+                                        <li><a class="barLink" href="/vsts/work/kanban/index">Kanban</a></li>
+                                        <li><a class="barLink" href="/vsts/work/scrum/index">Scrum</a></li>
+                                        <li><a class="barLink" href="/vsts/work/track/index">Queries</a></li>
+                                        <li><a class="barLink" href="/vsts/settings/customize/index">Customization</a></li>
+                                        <li><a class="barLink" href="/vsts/work/scale/index">Agile at Scale</a></li>
                                     </ul>
                                     <h3>Dashboards</h3>
                                     <ul>
@@ -276,10 +312,11 @@ featureFlags:
                                     <h3>Settings</h3>
                                     <ul>
                                         <li><a class="barLink" href="/vsts/settings/index">Project & Account Settings</a></li>
+                                        <li><a class="barLink" href="/vsts/settings/index">Scale and Configure Teams</a></li>
+                                        <li><a class="barLink" href="/vsts/settings/customize/index">Codex Agile Customization</a></li>
                                         <li><a class="barLink" href="/vsts/accounts/index">Account Management</a></li>
                                         <li><a class="barLink" href="/vsts/security/index">Security and Identity</a></li>
                                         <li><a class="barLink" href="/vsts/billing/index">Billing</a></li>
-                                        <li><a class="barLink" href="/vsts/settings/index">Scale and Configure Teams</a></li>
                                         <li><a class="barLink" href="/vsts/marketplace/index">Manage Extensions</a></li>
                                     </ul>
                                     <h3>Extend</h3>
@@ -300,7 +337,7 @@ featureFlags:
                         </ul>
                     </li>
                     <li>
-                        <a href="#code">CodeBox</a>
+                        <a href="#code">Codex Repos</a>
                         <ul id="code" class="cardsA">
                             <li>
                                 <a href="/vsts/git">
@@ -381,7 +418,7 @@ featureFlags:
                         </ul>
                     </li>
                     <li>
-                        <a href="#delivery">CodeLaunch</a>
+                        <a href="#delivery">Codex Pipelines</a>
                         <ul id="delivery" class="cardsA">
                             <li>
                                 <a href="/vsts/build-release/index">
@@ -521,7 +558,7 @@ featureFlags:
                         </ul>
                     </li>
                     <li>
-                        <a href="#testing">CodeTest</a>
+                        <a href="#testing">Codex Test</a>
                         <ul id="testing" class="cardsA">
                             <li>
                                 <a href="/visualstudio/test/unit-test-your-code">
@@ -604,10 +641,10 @@ featureFlags:
                         </ul>
                     </li>
                     <li>
-                        <a href="#codeplan">CodePlan</a>
-                        <ul id="codeplan" class="cardsA">
+                        <a href="#codex-agile">Codex Agile</a>
+                        <ul id="codex-agile" class="cardsA">
                             <li>
-                                <a href="/vsts/work/codeplan-items/index">
+                                <a href="/vsts/work/work-items/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -627,7 +664,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/work/codeplan-backlogs/index">
+                                <a href="/vsts/work/backlogs/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -647,7 +684,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/work/codeplan-boards/index">
+                                <a href="/vsts/work/boards/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -666,7 +703,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/work/codeplan-scrum/index">
+                                <a href="/vsts/work/scrum/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -685,7 +722,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/work/codeplan-queries/index">
+                                <a href="/vsts/work/queries/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -704,7 +741,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/work/customize/inheritance-process-model?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json">
+                                <a href="/vsts/settings/customize/index?toc=/vsts/settings/customize/toc.json&bc=/vsts/settings/customize/breadcrumb/toc.json">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -715,7 +752,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Customization</h3>
-                                                    <p>Configure CodePlan tools and processes to meet your team's needs.</p>
+                                                    <p>Configure Codex Agile tools and processes to meet your team's needs.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -723,7 +760,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/work/codeplan-scale/index">
+                                <a href="/vsts/work/scale/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -777,7 +814,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Analytics (VSTS)</h3>
+                                                    <h3>Analytics</h3>
                                                     <p>Gain insights. Make data-driven decisions. Evaluate progress.</p>
                                                 </div>
                                             </div>
@@ -796,7 +833,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Power BI (VSTS)</h3>
+                                                    <h3>Power BI</h3>
                                                     <p>Use Power BI to drive ad hoc analysis, produce beautiful reports, and publish them for enterprise consumption.</p>
                                                 </div>
                                             </div>
@@ -807,7 +844,7 @@ featureFlags:
                         </ul>
                     </li>
                     <li>
-                        <a href="#collaboration">Wiki, Search, Navigation</a>
+                        <a href="#collaboration">Collaboration</a>
                         <ul id="collaboration" class="cardsA">
                             <li>
                                 <a href="/vsts/navigation/index">
@@ -841,6 +878,25 @@ featureFlags:
                                                 <div class="cardText">
                                                     <h3>READMEs &amp; Wikis</h3>
                                                     <p>Share information with your team and stakeholders.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/vsts/public/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com/media/common/i_reference.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Public Projects</h3>
+                                                    <p>Open your projects for wider collaboration.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -909,10 +965,10 @@ featureFlags:
                         </ul>
                     </li>
                     <li>
-                        <a href="#codex-settings">CodeX Settings</a>
+                        <a href="#codex-settings">Settings</a>
                         <ul id="codex-settings" class="cardsA">
                             <li>
-                                <a href="/vsts/tfs-server/index">
+                                <a href="/vsts/settings/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -923,7 +979,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Project & Account Settings</h3>
-                                                    <p>Configure resources for CodeBox, CodeLaunch, CodePlan, and other CodeX apps.</p>
+                                                    <p>Configure resources for Codex apps.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -1176,6 +1232,894 @@ featureFlags:
                 </ul>
             </li>
             <li>
+                <a href="#tfs-server">Team Foundation Server</a>
+                <ul id="tfs-server">
+                    <li>
+                        <a data-default="true" href="#all">All</a>
+                        <ul id="all" class="cardText">
+                            <li>
+                                <div class="group">
+                                    <h3>Codex Repos</h3>
+                                    <ul>
+                                        <li><a class="barLink" href="/vsts/git/index">Git Repositories</a></li>
+                                        <li><a class="barLink" href="/vsts/git/tutorial/pullrequest">Pull Requests</a></li>
+                                        <li><a class="barLink" href="/vsts/git/concepts/forks">Forks</a></li>
+                                        <li><a class="barLink" href="/vsts/git/branch-policies">Branch Policies</a></li>
+                                        <li><a class="barLink" href="/vsts/tfvc/index">TFVC</a></li>
+                                    </ul>
+                                    <h3>Codex Pipelines</h3>
+                                    <ul>
+                                        <li><a class="barLink" href="/vsts/build-release/index">Build &amp; Release</a></li>
+                                        <li><a class="barLink" href="/vsts/build-release/test/index">Continuous Testing</a></li>
+                                        <li><a class="barLink" href="/vsts/deploy-azure/index">Deploy to Azure</a></li>
+                                        <li><a class="barLink" href="/vsts/package/index">Package Management</a></li>
+                                        <li><a class="barLink" href="/vsts/build-release/concepts/library/index">Library Assets</a></li>
+                                        <li><a class="barLink" href="/vsts/build-release/concepts/agents/agents">Hosted and Private Agents</a></li>
+                                        <li><a class="barLink" href="/vsts/build-release/tasks">Task Reference</a></li>
+                                    </ul>
+                                    <h3>Codex Test</h3>
+                                    <ul>
+                                        <li><a class="barLink" href="/visualstudio/test/unit-test-your-code">Unit and Functional Testing</a></li>
+                                        <li><a class="barLink" href="/vsts/manual-test/index">Exploratory &amp; Manual Testing</a></li>
+                                        <li><a class="barLink" href="/vsts/load-test/index">Load Testing</a></li>
+                                        <li><a class="barLink" href="/vsts/build-release/test/index">Continuous Testing</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="group">
+                                    <h3>Codex Agile</h3>
+                                    <ul>
+                                      <li><a class="barLink" href="/vsts/work/work-items/index">Work Items</a></li>
+                                        <li><a class="barLink" href="/vsts/work/backlogs/index">Backlogs</a></li>
+                                        <li><a class="barLink" href="/vsts/work/kanban/index">Kanban</a></li>
+                                        <li><a class="barLink" href="/vsts/work/scrum/index">Scrum</a></li>
+                                        <li><a class="barLink" href="/vsts/work/track/index">Queries</a></li>
+                                        <li><a class="barLink" href="/vsts/work/customize/index">Customization</a></li>
+                                        <li><a class="barLink" href="/vsts/work/scale/index">Agile at Scale</a></li>
+                                    </ul>
+                                    <h3>Dashboards</h3>
+                                    <ul>
+                                        <li><a class="barLink" href="/vsts/report/dashboards/index">Dashboards</a></li>
+                                        <li><a class="barLink" href="/vsts/report/sql-reports/index">SQL Server Reporting</a></li>
+                                    </ul>
+                                    <h3>Collaboration</h3>
+                                    <ul>
+                                        <li><a class="barLink" href="/vsts/notifications/index">Notifications</a></li>
+                                        <li><a class="barLink" href="/vsts/collaborate/index">READMEs &amp; Wikis</a></li>
+                                        <li><a class="barLink" href="/vsts/search/index">Search</a></li>
+                                        <li><a class="barLink" href="/vsts/feedback/index">Feedback</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="group">
+                                    <h3>Admin</h3>
+                                    <ul>
+                                        <li><a class="barLink" href="/vsts/tfs-server/index">Server Administration</a></li>
+                                        <li><a class="barLink" href="/vsts/security/index">Security and Identity</a></li>
+                                        <li><a class="barLink" href="/vsts/billing/index">Billing</a></li>
+                                        <li><a class="barLink" href="/vsts/settings/index">Scale and Configure Teams</a></li>
+                                        <li><a class="barLink" href="/vsts/marketplace/index">Manage Extensions</a></li>
+                                        <li><a class="barLink" href="/vsts/report/sharepoint-dashboards/">SharePoint Integration</a></li>
+                                        <li><a class="barLink" href="/vsts/work/tfs-ps-sync/">Project Server Integration</a></li>
+                                    </ul>
+                                    <h3>Extend</h3>
+                                    <ul>
+                                        <li><a class="barLink" href="/vsts/extend/index">Develop Extensions</a></li>
+                                        <li><a class="barLink" href="/vsts/integrate/index">Build Apps</a></li>
+                                        <li><a class="barLink" href="/vsts/service-hooks/index">Service Hooks</a></li>
+                                        <li><a class="barLink" href="/vsts/report/extend-analytics/index">Extend Analytics with OData</a></li>
+                                        <li><a class="barLink" href="https://docs.microsoft.com/en-us/rest/api/vsts/">REST APIs</a></li>
+                                        <li><a class="barLink" href="https://www.visualstudio.com/docs/integrate/extensions/reference/client/core-sdk">TypeScript APIs</a></li>
+                                    </ul>
+                                    <h3>Marketplace</h3>
+                                    <ul>
+                                        <li><a class="barLink" href="/vsts/marketplace/overview">Discover Extensions</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#code">Codex Repos</a>
+                        <ul id="code" class="cardsA">
+                            <li>
+                                <a href="/vsts/git">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/logo-git-mark.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Git Repositories</h3>
+                                                    <p>Develop code with distributed, flexible version control.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/vsts/git/pull-requests">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/i_pull-request.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Pull Requests</h3>
+                                                    <p>Create pull requests to review and merge code in a Git team project</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/vsts/git/concepts/forks">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/i_forks.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Forks</h3>
+                                                    <p>Work in your own repo without affecting the original project.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/vsts/git/branch-policies">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/i_branch-policies.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Branch Policies</h3>
+                                                    <p>Enforce code quality and change management standards.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#delivery">Codex Pipelines</a>
+                        <ul id="delivery" class="cardsA">
+                            <li>
+                                <a href="/vsts/build-release/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com/media/common/i_download-install.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Build and Release</h3>
+                                                    <p>Implement continuous integration and continuous deployment.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/vsts/build-release/test/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/i_continuous-testing.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Continuous Testing</h3>
+                                                    <p>Automate build-deploy-test workflows to test your changes in a fast,
+                                                        scalable, and efficient manner.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/vsts/deploy-azure/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com/media/common/i_deploy.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Deploy to Azure</h3>
+                                                    <p>Release apps to Azure services and Azure virtual machines.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/vsts/package/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com/media/common/i_management.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Codex Artifacts</h3>
+                                                    <p>Create, host, and share NuGet and npm packages with your teams.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/vsts/build-release/concepts/library/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/i_library.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Library Assets</h3>
+                                                    <p>Define and use shared build and release assets for a team project.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/vsts/build-release/concepts/agents/agents">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/i_agent.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Hosted &amp; Private Agents</h3>
+                                                    <p>Add agents as needed to support your cloud build processes.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/vsts/build-release/tasks">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/i_tasks.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Task Reference</h3>
+                                                    <p>Include build, utility, test, and deploy tasks in your build and release
+                                                        definitions.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#testing">Codex Test</a>
+                        <ul id="testing" class="cardsA">
+                            <li>
+                                <a href="/visualstudio/test/unit-test-your-code">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/i_unit-testing.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Unit and Functional Testing</h3>
+                                                    <p>Maintain code health, avoid regressions, and achieve code coverage using Visual Studio.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/vsts/manual-test/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/i_exploratory-testing.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Exploratory &amp; Manual Testing</h3>
+                                                    <p>Drive quality and collaboration throughout the development process using
+                                                        a rich set of tools.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/vsts/load-test/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/i_load-testing.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Load Testing</h3>
+                                                    <p>Performance test your code with hundreds of thousands of users.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/vsts/build-release/test/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/i_continuous-testing.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Continuous Testing</h3>
+                                                    <p>Automate build-deploy-test workflows to test your changes in a fast,
+                                                        scalable, and efficient manner.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#codex-agile">Codex Agile</a>
+                        <ul id="codex-agile" class="cardsA">
+                            <li>
+                                <a href="/vsts/work/work-items/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com/media/common/i_tasks.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Work Items</h3>
+                                                    <p>Track the features and requirements you're developing, code defects,
+                                                        and issues.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/vsts/work/backlogs/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/i_backlog.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Backlogs</h3>
+                                                    <p>Create and organize your backlog, track features, users stories, and
+                                                        bugs.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/vsts/work/boards/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/i_kanban.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Boards</h3>
+                                                    <p>Manage the continuous flow of work from concept to completion.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/vsts/work/scrum/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/i_scrum.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Scrum</h3>
+                                                    <p>Plan a sprint, use a task board in daily scrums, monitor sprint burndown.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/vsts/work/queries/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/i_queries.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Queries</h3>
+                                                    <p>Find work items to bulk update and to chart progress and trends.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/vsts/work/scale/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/i_agile.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Agile at Scale</h3>
+                                                    <p>Grow your organization, support autonomous teams, and gain visibility
+                                                        across teams.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#reporting">Dashboards</a>
+                        <ul id="reporting" class="cardsA">
+                            <li>
+                                <a href="/vsts/report/dashboards/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/i_dashboard.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Dashboards</h3>
+                                                    <p>Monitor progress and trends to support improvement of team processes.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/vsts/report/sql-reports/">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/sql-server-reporting.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>SQL Server Reporting (TFS)</h3>
+                                                    <p>Work with Reporting Services reports, add reports, and manage the data warehouse and cube.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#collaboration">Collaboration</a>
+                        <ul id="collaboration" class="cardsA">
+                            <li>
+                                <a href="/vsts/navigation/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com/media/common/i_feedback.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Navigation</h3>
+                                                    <p>Switch apps, team projects, teams, and manage settings.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/vsts/collaborate/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com/media/common/i_reference.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>READMEs &amp; Wikis</h3>
+                                                    <p>Share information with your team and stakeholders.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li> 
+                            <li>
+                                <a href="/vsts/notifications/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com/media/common/i_alert.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Notifications</h3>
+                                                    <p>Define which events generate alerts or post messages in third party tools.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/vsts/search/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/i_search.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Search</h3>
+                                                    <p>Quickly find the code or work items you need to access across your account
+                                                        or collection.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/vsts/feedback/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com/media/common/i_feedback.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Feedback</h3>
+                                                    <p>Request feedback on your working apps and quickly capture it within a
+                                                        work item form.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#codex-settings">Settings</a>
+                        <ul id="codex-settings" class="cardsA">
+                            <li>
+                                <a href="/vsts/settings/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com/media/common/i_tools.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Project & Account Settings</h3>
+                                                    <p>Configure resources for Codex apps.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>                 
+                            <li>
+                                <a href="/vsts/security/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com/media/common/i_protect.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Security &amp; Identity</h3>
+                                                    <p>Manage permissions and access to your team projects and repositories.
+                                                        </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/vsts/billing/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/i_billing.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Billing</h3>
+                                                    <p>Manage subscriptions, extension purchases, and Azure Active Directory.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/vsts/settings/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/i_configure-teams.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Scale and Configure Teams</h3>
+                                                    <p>Add teams and team administrators; configure team settings.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/vsts/marketplace/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/i_extensions.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Manage Extensions</h3>
+                                                    <p>Install or remove Marketplace extensions.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#integration">Extend</a>
+                        <ul id="integration" class="cardsA">
+                            <li>
+                                <a href="/vsts/extend/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/i_extensions.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Develop Extensions</h3>
+                                                    <p>Extend VSTS and TFS with custom web experiences, CI/CD tasks, and more.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/vsts/integrate/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/i_build.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Build Apps</h3>
+                                                    <p>Programmatically integrate with VSTS and TFS from custom apps and services.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/vsts/service-hooks/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/i_service-hooks.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Service Hooks</h3>
+                                                    <p>Create subscriptions and configure the integration of VSTS or TFS with
+                                                        third-party apps.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.visualstudio.com/en-us/docs/integrate/api/overview">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/logo_REST.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>REST APIs</h3>
+                                                    <p>Interact with VSTS through standard REST APIs.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.visualstudio.com/en-us/docs/integrate/extensions/reference/client/core-sdk">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com/media/logos/logo_TS.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>TypeScript APIs</h3>
+                                                    <p>Interact with VSTS through TypeScript APIs.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#marketplace">Marketplace</a>
+                        <ul id="marketplace" class="cardsA">
+                            <li>
+                                <a href="/vsts/marketplace/overview">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/i_extensions.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Discover Extensions</h3>
+                                                    <p>Browse the Visual Studio Marketplace and discover extensions for VSTS and TFS.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
                 <a href="#ecosystem">Ecosystem</a>
                 <ul id="ecosystem">
                     <li>
@@ -1189,7 +2133,7 @@ featureFlags:
                                 </div>
                                 <div class="intro">
                                     <h2 style="padding-left:0;font-size:1.8rem;">Get Extensions</h2>
-                                    <p>Extend VSTS with popular extensions like Slack or Jenkins.</p>
+                                    <p>Extend Codex with popular extensions like Slack or Jenkins.</p>
                                 </div>
                             </li>
                             <li class="fullSpan" style="margin-top:12px;">
@@ -1252,7 +2196,7 @@ featureFlags:
                             <li class="fullSpan">
                                 <div>
                                     <h2 style="padding-left:0;margin-bottom:0;margin-top:24px;font-size:1.8rem;">Build your own extensions</h2>
-                                    <p>Create custom extensions to transform your VSTS look and experience.</p>
+                                    <p>Create custom extensions to transform your Codex look and experience.</p>
                                 </div>
                             </li>
                             <li>

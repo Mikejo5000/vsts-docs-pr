@@ -1,6 +1,6 @@
 ---
 title: Index to work item query topics 
-titleSuffix: CodeX, CodePlan
+titleSuffix: Codex Agile
 description: Create, edit, and use queries to bulk update and triage work items 
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
@@ -10,7 +10,7 @@ ms.author: kaelli
 ms.date: 02/24/2018
 ---
 
-# CodePlan Queries 
+# Codex Agile Queries 
 
 List bugs, user stories, or other work items based on field criteria you specify. Then you can review with your team, triage, or perform bulk updates.  
 

@@ -16,7 +16,7 @@ ms.date: 02/20/2018
 
 [!INCLUDE [temp](_shared/version-public-projects.md)]  
 
-When you connect to a public project and the Azure CodePlan app, you're able to view work items defined for that project. If you're a contributor or stakeholder, you can also [add and edit work items](../work/work-items/view-add-work-items.md).  
+When you connect to a public project and the Azure Codex Agile app, you're able to view work items defined for that project. If you're a contributor or stakeholder, you can also [add and edit work items](../work/work-items/view-add-work-items.md).  
 
 
 ## View work items 
@@ -33,7 +33,7 @@ Click the **Wiki** link located in the top navigation bar.  If you don't see the
 
 # [Vertical navigation](#tab/vertical) 
 
-In CodePlan, click the **Work Items** link located in the left navigation pane.
+In Codex Agile, click the **Work Items** link located in the left navigation pane.
 
 > [!div class="mx-imgBorder"]
 ![Work items link, vertical navigation](_img/view-work-items-vertical.png) 
@@ -41,7 +41,7 @@ In CodePlan, click the **Work Items** link located in the left navigation pane.
 
 ---
 
-For help navigating to a team project or the CodePlan app, see [Navigation basics]. 
+For help navigating to a team project or the Codex Agile app, see [Navigation basics]. 
 
 
 

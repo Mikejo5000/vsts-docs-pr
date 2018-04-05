@@ -17,11 +17,11 @@ ms.date: 06/02/2017
 Public projects are subject to the limits documented in this topic. 
 
  
-## CodeLaunch: Pipelines
+## Codex Pipelines: Pipelines
 
 TBD
 
-## CodePlan: Work items
+## Codex Agile: Work items
 - A long text field can contain 1M characters.
 - You can't assign more than 100 tags to a work item.
 - You can't add more than 1,000 links to a work item.
@@ -29,7 +29,7 @@ TBD
 - You can't add an attachment size larger than 60MB to a work item.
 
 
-## CodePlan: Custom work tracking 
+## Codex Agile: Custom work tracking 
 
 Limits placed on the maximum number of custom work tracking objects that you can define for a public project are summarized below. You define these objects through an inheritance process. To learn more, see [Customize your work tracking process](../work/customize/process/customize-process.md).
 

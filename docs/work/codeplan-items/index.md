@@ -1,6 +1,6 @@
 ---
 title: Index to topics for work item tracking
-titleSuffix: CodeX, CodePlan
+titleSuffix: Codex Agile
 description: Index to topics for planning and tracking work 
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
@@ -10,7 +10,7 @@ ms.author: kaelli
 ms.date: 02/24/2018
 ---
 
-# CodePlan Work Items
+# Codex Agile Work Items
 
 Track the features and requirements you're developing, code defects or bugs, and other particulars using work items. 
 

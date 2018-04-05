@@ -33,7 +33,7 @@ Stakeholders and regular contributors must be added to a team project and are ma
 </tr>
 <tbody valign="top" align="center">
 <tr>
-<td align="left">CodePlan</td>
+<td align="left">Codex Agile</td>
 <td>Read-only</td>
 <td>Read, Create, Limited edit</td>
 <td>Full access</td>
@@ -50,7 +50,7 @@ Stakeholders and regular contributors must be added to a team project and are ma
 </tr>
 
 <tr>
-<td align="left">CodeLaunch</td>
+<td align="left">Codex Pipelines</td>
 <td>Read-only</td>
 <td>Read, Approve releases</td>
 <td>Full access</td>
@@ -58,7 +58,7 @@ Stakeholders and regular contributors must be added to a team project and are ma
 </tr>
 
 <tr>
-<td align="left">CodeTest</td>
+<td align="left">Codex Test</td>
 <td>Read-only</td>
 <td>No access</td>
 <td>Full access</td>

@@ -1,4 +1,4 @@
-- name: Codex
+- name: Codex Agile Customization
   tocHref: /vsts/
   topicHref: /vsts/index
   items: 
@@ -6,6 +6,6 @@
     tocHref: /vsts/
     topicHref: /vsts/index#pivot=services&panel=admin
     items:
-    - name: "Project & Account Settings"
+    - name: Codex Agile Customization
       tocHref: /vsts/
-      topicHref: /vsts/settings/index
+      topicHref: /vsts/settings/customize/index

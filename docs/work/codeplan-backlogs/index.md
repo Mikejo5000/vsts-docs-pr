@@ -1,6 +1,6 @@
 ---
 title: Index to topics for work item tracking
-titleSuffix: CodeX, CodePlan
+titleSuffix: Codex Agile
 description: Index to topics for planning and tracking work 
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
@@ -10,7 +10,7 @@ ms.author: kaelli
 ms.date: 02/24/2018
 ---
 
-# CodePlan Backlogs
+# Codex Agile Backlogs
   
 Start planning your project by quickly adding user stories or requirements to your product backlog.  
 

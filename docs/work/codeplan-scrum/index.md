@@ -1,7 +1,7 @@
 ---
 title: Index to topics for work item tracking
-titleSuffix: CodeX, CodePlan
-description: Index to topics for scale CodePlan and work with teams 
+titleSuffix: Codex Agile
+description: Index to topics for scale Codex Agile and work with teams 
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid:  
@@ -10,7 +10,7 @@ ms.author: kaelli
 ms.date: 02/24/2018
 ---
 
-# CodePlan Scrum
+# Codex Agile Scrum
 
 With Scrum, you can schedule and plan sprints, update your task board, and monitor your sprint burndown. 
 

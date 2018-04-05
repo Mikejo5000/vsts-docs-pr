@@ -1,7 +1,7 @@
 ---
 title: Switch team project or repository 
 titleSuffix: Azure CodeX 
-description: Open another team project or repository for Azure CodeX, CodeVault, CodePlan, or CodeLaunch  
+description: Open another team project or repository for Azure CodeX, CodeVault, Codex Agile, or Codex Pipelines  
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid:  

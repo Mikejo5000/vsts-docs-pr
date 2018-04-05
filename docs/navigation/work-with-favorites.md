@@ -1,7 +1,7 @@
 ---
 title: Work with favorites 
 titleSuffix: Azure CodeX 
-description: Use favorites to quickly open a view or page within the web portal for Azure CodeX, CodeVault, CodePlan, or CodeLaunch  
+description: Use favorites to quickly open a view or page within the web portal for Azure CodeX, CodeVault, Codex Agile, or Codex Pipelines  
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 
@@ -23,9 +23,9 @@ You can favorite the following artifacts:
 > |---------------|---------| 
 > | CodeX | Team projects |
 > | CodeVault |Repositories | 
-> | CodePlan | Queries, Delivery plans |
-> | CodeLaunch |Build definitions, Release definitions | 
-> | CodeTest |Test plans | 
+> | Codex Agile | Queries, Delivery plans |
+> | Codex Pipelines |Build definitions, Release definitions | 
+> | Codex Test |Test plans | 
  
 
 <a id="favorites">  </a>

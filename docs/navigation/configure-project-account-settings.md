@@ -1,7 +1,7 @@
 ---
 title: Configure project and account settings  
 titleSuffix: Azure CodeX   
-description: Configure an administrative level setting for Azure CodeX, CodeVault, CodePlan, or CodeLaunch  
+description: Configure an administrative level setting for Azure CodeX, CodeVault, Codex Agile, or Codex Pipelines  
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid:  

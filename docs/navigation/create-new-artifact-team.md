@@ -1,7 +1,7 @@
 ---
 title: Create a new artifact or team
 titleSuffix: Azure CodeX 
-description: How to add a new artifact, view, or team within the web portal for Azure CodeX, CodeVault, CodePlan, or CodeLaunch  
+description: How to add a new artifact, view, or team within the web portal for Azure CodeX, CodeVault, Codex Agile, or Codex Pipelines  
 ms.technology: vs-devops-overview 
 ms.prod: vs-devops-alm
 ms.assetid:  
@@ -14,7 +14,7 @@ ms.date: 02-24-2018
 
 **Azure CodeX**  
 
-Select the application or hub to get started adding new artifacts. When you add a team, you automatially create several CodePlan artifacts, such as a product backlog, Kanban board, portfolio backlogs and more. 
+Select the application or hub to get started adding new artifacts. When you add a team, you automatially create several Codex Agile artifacts, such as a product backlog, Kanban board, portfolio backlogs and more. 
 
 Prior to adding an artifact, make sure that you've [selected the team project and repository](go-to-team-project-repo.md) that you want to work in.  
 
@@ -26,7 +26,7 @@ Prior to adding an artifact, make sure that you've [selected the team project an
 You can quickly add a pull request, repository, branch, or new work item using the **Add** menu. 
 
 > [!div class="mx-imgBorder"]
-![CodePlan, add artifact](_img/create-artifact/codevault-add.png)
+![Codex Agile, add artifact](_img/create-artifact/codevault-add.png)
 
 # [Horizontal navigation](#tab/horizontal)
 
@@ -49,7 +49,7 @@ To learn more about Git artifacts, see one of the following topics:
 TBD 
 -->
 
-## Add a CodePlan artifact
+## Add a Codex Agile artifact
 
 
 # [Vertical navigation](#tab/vertical) 
@@ -57,7 +57,7 @@ TBD
 You can quickly add a query, backlog, board, plan, or work item using the **Add** menu. 
 
 > [!div class="mx-imgBorder"]
-![CodePlan, add artifact](_img/create-artifact/codeplan-add.png)
+![Codex Agile, add artifact](_img/create-artifact/codeplan-add.png)
 
 # [Horizontal navigation](#tab/horizontal)
 
@@ -80,14 +80,14 @@ To learn more, see one of the following topics:
 ---
 
 
-## Add CodeLaunch artifacts
+## Add Codex Pipelines artifacts
 
 # [Vertical navigation](#tab/vertical) 
 
 You can quickly add a pipeline using the **Add** menu. 
 
 > [!div class="mx-imgBorder"]
-![CodeLaunch, add pipeline](_img/create-artifact/codelaunch-add-pipeline.png)
+![Codex Pipelines, add pipeline](_img/create-artifact/codelaunch-add-pipeline.png)
 
 # [Horizontal navigation](#tab/horizontal)
 

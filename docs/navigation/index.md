@@ -28,7 +28,7 @@ You can choose between vertical and horizontal navigation by selecting the optio
 
 # [Vertical navigation](#tab/vertical)
 
-In vertical navigation mode, you select applications&mdash;such as **CodeBox**, **CodeLaunch**, and **CodePlan**&mdash;and pages within those apps. 
+In vertical navigation mode, you select applications&mdash;such as **Codex Repos**, **Codex Pipelines**, and **Codex Agile**&mdash;and pages within those apps. 
 
 <img src="_img/vertical-app-715-navigation.gif" alt="Vertical apps navigation experience" style="border: 1px solid #C3C3C3;" /> 
 
@@ -43,7 +43,7 @@ In horizontal navigation mode, you select an application hub&mdash;such as **Cod
 
 Now that you have an understanding of how the user interface is structure, it's time to get started using it.  As you can see, there are a lot of features and functionality.  
 
-If all you need is a code repository and bug tracking solution, then start with the [Get started with Git and CodeVault](../git/gitquickstart.md) and [Manage bugs with CodePlan](../work/backlogs/manage-bugs.md).  
+If all you need is a code repository and bug tracking solution, then start with the [Get started with Git and CodeVault](../git/gitquickstart.md) and [Manage bugs with Codex Agile](../work/backlogs/manage-bugs.md).  
 
 To start planning and tracking work, see [Get started with Agile tools to plan and track work](../work/backlogs/overview.md?context=vsts/default).
 

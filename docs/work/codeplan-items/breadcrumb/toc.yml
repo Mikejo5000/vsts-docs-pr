@@ -2,10 +2,10 @@
   tocHref: /vsts/
   topicHref: /vsts/codex-index
   items: 
-  - name: CodePlan
+  - name: Codex Agile
     tocHref: /vsts/work/
     topicHref: /vsts/codex-index#pivot=services&panel=codeplan
     items:
-    - name: CodePlan Work Items
+    - name: Codex Agile Work Items
       tocHref: /vsts/work/
       topicHref: /vsts/work/codeplan-items/index

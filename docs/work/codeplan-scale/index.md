@@ -1,6 +1,6 @@
 ---
 title: Index to topics for working with multiple teams
-titleSuffix: CodeX, CodePlan
+titleSuffix: Codex Agile
 description: Index to topics for planning and tracking work across an enterprise using multiple teams
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
@@ -10,7 +10,7 @@ ms.author: kaelli
 ms.date: 02/24/2018
 ---
 
-# CodePlan Scale 
+# Codex Agile Scale 
 
 Manage portfolios and gain visibility across teams. For guidance on adding teams, see [Scale & Configure teams](../scale/multiple-teams.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json).
 

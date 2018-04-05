@@ -1,10 +1,10 @@
-- name: CodePlan Backlogs
+- name: Codex Agile Backlogs
   href: index.md?toc=/vsts/work/codeplan-backlogs/toc.json&bc=/vsts/work/codeplan-backlogs/breadcrumb/toc.json
 - name: Overview
   items:
   - name: "Backlogs, boards, & plans"
     href: ../backlogs/backlogs-boards-plans.md?toc=/vsts/work/codeplan-backlogs/toc.json&bc=/vsts/work/codeplan-backlogs/breadcrumb/toc.json 
-  - name: About teams and CodePlan tools
+  - name: About teams and Codex Agile tools
     href: ../../settings/about-teams-and-settings.md?toc=/vsts/work/codeplan-backlogs/toc.json&bc=/vsts/work/codeplan-backlogs/breadcrumb/toc.json 
 - name: Quickstarts
   items:

@@ -1,8 +1,8 @@
-- name: CodePlan Scale
+- name: Codex Agile Scale
   href: index.md?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json
 - name: Overview
   items:
-  - name: "About teams & CodePlan tools"
+  - name: "About teams & Codex Agile tools"
     href: ../../settings/about-teams-and-settings.md?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json 
 - name: Quickstarts
   items:
