@@ -1,7 +1,7 @@
 ---
 title: Query fields, operators, and macros/variables 
 titleSuffix: VSTS & TFS
-description: Field data types, operators, and macros/variables used by the Query Editor in Visual Studio Team Services and Team Foundation Server 
+description: Field data types, operators, and macros/variables used by the Query Editor in Visual Studio Team Services & Team Foundation Server 
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 814c2dca-cf8f-44bf-bba1-a5d8e293fc05
@@ -217,23 +217,24 @@ You can use query operators in the following table to specify how each value in 
 <tr>
 	<td><p><strong>Not In</strong></p></td>
 	<td><p>Does not match any value in a delimited set. For example, you can exclude work items whose States are not Resolved, Completed, or Closed from query results if you specify those values for the State field.</p>
+
 <blockquote><strong>Important:</strong> Separate values with the list separator that corresponds to the regional settings that are defined for your client computer. For example, you might use a comma(,).
 </blockquote>
-<blockquote><strong>Feature availability:</strong>  The <strong>Not In</strong> operator is currently only available from VSTS. Support for TFS 2018 is planned for a future update.</blockquote>
+<blockquote><strong>Feature availability:</strong>  The <strong>Not In</strong> operator is currently only available from VSTS. Support is planned for a future release of TFS.</blockquote>
 </td>
 	<td><p>Number, <strong>String</strong>, <strong>DateTime</strong>, <strong>TreePath</strong></p></td></tr>
 <tr>
 	<td><p><strong>In Group</strong></p></td>
 	<td><p>Matches a value that is a member of the group in the clause. Groups correspond to the name of a team, security group, or work tracking category. For example, you can create a query to find all work items that are assigned to members of the Contributors group or to a team. Team groups are created when you create a team. The name of team groups follows the pattern [<em>Team Project Name</em>]&#92;<em>Team Name</em>.</p><p>For example queries, see [Query by assignment or workflow changes](query-by-workflow-changes.md).</p></td>
 	<td><p> <strong>String</strong> that matches the name of a team, security group, or category defined in the system.</p>
-<blockquote><strong>Note:</strong>  You can use the <strong>In Group</strong> operator only with fields that use the <strong>String</strong> data type or the <strong>Work Item Type</strong> field. The operator cannot be used to query Azure Active Directory groups.
+<blockquote><strong>Note:</strong>  You can use the <strong>In Group</strong> operator only with fields that use the <strong>String</strong> data type or the <strong>Work Item Type</strong> field.  You can use this operator to filter a query based on several values that are members of a group, or that are not members of a group. Examples of groups are teams, built-in security groups, custom security groups, Azure Active Directory (AAD) groups, Active Directory groups, and work item categories.
 </blockquote>
 <p>For information about category groups, see [Use categories to group work item types](../customize/reference/use-categories-to-group-work-item-types.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json).</p></td></tr>
 <tr>
 	<td><p><strong>Not in Group</strong></p></td>
 	<td><p>Does not match a value that is a member of the group in the clause.</p></td>
-	<td><p> <strong>String</strong>  that matches the name of a user group in Team Foundation Server or a category group defined for a team project.</p>
-<blockquote><strong>Note:</strong> You can use the <strong>Not In Group</strong> operator only with fields that use the <strong>String</strong> data type or the <strong>Work Item Type</strong> field.
+	<td><p> <strong>String</strong> that matches the name of a security group or a category group defined for a team project.</p>
+<blockquote><strong>Note:</strong> You can use the <strong>Not In Group</strong> operator only with fields that use the <strong>String</strong> data type or the <strong>Work Item Type</strong> field. You can also use groups defined in AAD when your VSTS account is backed by AAD, or AD when your server instance is backed by AD. 
 </blockquote>
 </td>
 </tr>
