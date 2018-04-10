@@ -53,7 +53,8 @@ From time to time, a new feature is introduced in Preview mode, which allows you
 
 0. To enable or disable a feature, click the slider. 
 
-	<img src="_img/preview-features-user-level-s126.png" alt="Preview features options for yourself, sprint 126" style="border: 2px solid #C3C3C3;" />
+	> [!div class="mx-imgBorder"]  
+	> ![Preview features options for yourself](_img/preview-features-user-level-s133.png) 
 
 
 <a id="account-level">  </a>
@@ -61,14 +62,11 @@ From time to time, a new feature is introduced in Preview mode, which allows you
 
 When you enable a feature at the account level, you essentially turn it on for all users of your account. Each user can then disable the feature if they so choose.
 
->[!TIP]  
->If you don't see the user/account menu option, then you aren't an account administrator. To get added as one, see [Add administrators, set permissions at the team project or collection level](../security/set-project-collection-level-permissions.md).  
+> [!TIP]  
+> If you don't see the user/account menu option, then you aren't an account administrator. To get added as one, see [Add administrators, set permissions at the team project or collection level](../security/set-project-collection-level-permissions.md).  
 
-<img src="_img/preview-features-account-s126a.png" alt="Preview features options for the account, Sprint 126" style="border: 2px solid #C3C3C3;" /> <img src="_img/preview-features-account-s126b.png" alt="Preview features options for the account, Sprint 126" style="border: 2px solid #C3C3C3;" />
-
-<!---
-<img align="top" src="_img/preview-features-admin-s117.png" alt="Preview features options for the account" style="border: 1px solid #C3C3C3;" />      <img align="top" src="_img/preview-features-admin-s117-2.png" alt="Preview features options for the account" style="border: 1px solid #CCCCCC">  
--->
+	> [!div class="mx-imgBorder"]  
+	> ![Preview features options for the account](_img/preview-features-account-s133.png)
 
 
 <a id="wiki">  </a>
