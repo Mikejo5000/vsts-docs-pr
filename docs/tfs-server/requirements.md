@@ -1,4 +1,4 @@
-﻿---
+---
 title: Requirements and compatibility | Team Foundation Server Setup, Upgrade and Administration
 description: Describes many kinds of requirements and compatibility for VSTS and TFS -- hardware, operating systems, SQL Server, client versions, server versions, browsers
 ms.prod: vs-devops-alm
@@ -8,7 +8,10 @@ toc: show
 ms.manager: douge
 ms.author: elbatk
 ms.date: 10/02/2017
+monikerRange: '>=tfs-2013'
 ---
+
+
 
 # Requirements and compatibility
 
@@ -34,12 +37,14 @@ TFS 2012    | Windows Server 2012 R2 (Essentials, Standard, Datacenter)<br/>Wind
 TFS 2010    | Windows Server 2008 R2 (Standard, Enterprise, Datacenter)<br/>Windows Server 2008 (minimum SP2)<br/>Windows Server 2003 R2<br/>Windows Server 2003 (minimum SP2)
 
 The [server core](https://msdn.microsoft.com/library/dd184075.aspx) installation option is supported for TFS 2017 and TFS 2018, but not for earlier versions.
+[Windows Server, version 1709](https://docs.microsoft.com/windows-server/get-started/get-started-with-1709) is not supported. Eventually we do plan to support
+Windows Server releases from the Semi-Annual Channel. 
 
 ### Client operating systems
 
 TFS Version | Supported client operating systems
 ------------|--------------------------------
-TFS 2018    | Windows 10 (Professional, Enterprise)
+TFS 2018    | Windows 10 (Professional, Enterprise) Version 1607 or greater
 TFS 2017    | Windows 10 (Home, Professional, Enterprise)<br/>Windows 8.1 (Basic, Professional, Enterprise)<br/>Windows 7 (minimum SP1) (Home Premium, Professional, Enterprise, Ultimate)
 TFS 2015    | Windows 10 (Home, Professional, Enterprise)<br/>Windows 8.1 (Basic, Professional, Enterprise)<br/>Windows 7 (minimum SP1) (Home Premium, Professional, Enterprise, Ultimate)
 TFS 2013    | Windows 8.1 (Basic, Professional, Enterprise)<br/>Windows 7 (minimum SP1) (Home Premium, Professional, Enterprise, Ultimate)
@@ -60,7 +65,7 @@ Review these hardware recommendations to determine the optimal hardware to use f
 
 These recommendations are guidelines for Team Foundation Server Proxy. Recommended hardware is based on the size of the team that will use the proxy server. Usually this is the team in your remote office. The larger the team, the more robust your hardware must be.
 
-| **Remote team size** | **Hardware recommendations (CPU/RAM) for Team Foundation Server Proxy ** |
+| **Remote team size** | **Hardware recommendations (CPU/RAM) for Team Foundation Server Proxy** |
 |---|---|
 | 450 or fewer users | 1 processor, 2.2 GHz CPU, 2 GB RAM |
 | Between 450 and 2,200 users | 2 processors, 2.0 GHz CPU, 2 GB RAM |
@@ -94,6 +99,8 @@ TFS 2013           | SQL Server 2012 (minimum SP1)
 TFS 2012           | SQL Server 2012<br/>SQL Server 2008 R2
 TFS 2010           | SQL Server 2008 R2<br/>SQL Server 2008
 
+SQL Server on Linux is not supported.
+
 If you're using SQL Server 2016, we require a Visual C++ runtime [update](http://support.microsoft.com/kb/3138367) to be installed. 
 
 SQL Server 2014 has increased hardware requirements compared with previous versions.
@@ -113,7 +120,7 @@ to addresses another (different) issue where SQL Server 2012 with SP1 might requ
 | Category | Requirements |
 | --- | --- |
 | Required for TFS | Database Engine Services </br></br> Full-Text and Semantic Extractions for Search |
-Required for reporting | Reporting Services – Native </br> Analysis Services |
+Required for reporting | Reporting Services - Native </br> Analysis Services |
 | Collation settings | Must be accent sensitive </br> Must not be case sensitive </br> Must not be Binary </br> Must not be Binary - code point </br> For more information, see [SQL Server Collation Requirements for Team Foundation Server](../tfs-server/install/sql-server/collation-requirements.md) |
 | Authentication | Windows authentication |
 | Service account | You can use a domain account or a built-in account. |
@@ -145,7 +152,7 @@ We recommend Standard or Enterprise for all other scenarios.
 
 > [!IMPORTANT]  
 > TFS 2018 discontinues support for the TFS Extension for SharePoint. 
-> For more information, see [Discontinue SharePoint integration: TFS 2017 and earlier versions](https://go.microsoft.com/fwlink/?linkid=852977).**
+> For more information, see **[Discontinue SharePoint integration: TFS 2017 and earlier versions](https://go.microsoft.com/fwlink/?linkid=852977).**
 
 SharePoint is a collaboration product is not a TFS requirement, but some teams find SharePoint integration useful. If you want to use SharePoint Products, you must use a supported version that has the TFS extension for SharePoint installed.
 
@@ -163,7 +170,7 @@ TFS 2010    | Office SharePoint Server 2007 (Standard, Enterprise)<br/>Windows S
 You can configure the TFS extension for SharePoint Products on your SharePoint server from the [TFS administration console](../tfs-server/command-line/open-admin-console.md).
 
 >**Tip:**
-If you plan to install SharePoint, make sure that the version of SharePoint you want to use is compatible with the server operating system you’re using. Support for server operating systems in TFS is more amenable than in SharePoint.
+If you plan to install SharePoint, make sure that the version of SharePoint you want to use is compatible with the server operating system you're using. Support for server operating systems in TFS is more amenable than in SharePoint.
 
 Here are your main options:
 
@@ -416,7 +423,7 @@ recommend using higher spec application and data tiers to avoid performance
 issues. For example, a team of 250 might use a multiple server deployment 
 that is more in line with the recommendations for a team of 500-2,000 users. We also 
 recommend that you keep an eye on your automated processes to ensure that 
-they are efficient – for example, retrieve data from source control 
+they are efficient - for example, retrieve data from source control 
 incrementally during builds whenever possible, rather than fully refreshing 
 on each build. NOTE: except for very small teams with extremely limited usage 
 of these features we do not recommend installing build, test, or release 
@@ -484,7 +491,7 @@ The following rules clarify the language requirements for installations of Team 
 
 -   If you want to use SharePoint Products, it must match the language of the installation of Team Foundation Server, or you must install the language pack that matches the language of your installation of Team Foundation Server.
 
-For example, you can install a Japanese version of Team Foundation Server on an English or Japanese operating system but not on a German operating system. If you install a Japanese version of Team Foundation Server, you must also have either a Japanese version of SharePoint Products or the Japanese language pack for SharePoint Products on the server that is running SharePoint Products.
+For example, you can install a Japanese version of Team Foundation Server on an English or Japanese operating system but not on a German operating system. If you install a Japanese version of Team Foundation Server, you must also have either a Japanese version of SharePoint Products or the Japanese language pack for SharePoint Products on the server that is running SharePoint Products.
 
 The following components do not have additional language requirements that are specific to working with Team Foundation Server:
 
@@ -496,7 +503,7 @@ The following components do not have additional language requirements that are s
 
 -   Visual Studio Lab Management
 
-Test controllers and agents have their own language requirements. For more information, see the following page on the Microsoft website: [Test Controller and Test Agent Requirements](https://msdn.microsoft.com/library/ff937706.aspx)
+Test controllers and agents have their own language requirements. For more information, see the following page on the Microsoft website: [Test Controller and Test Agent Requirements](https://docs.microsoft.com/visualstudio/test/lab-management/install-configure-test-agents)
 
 
 <a name="client-compatibility"></a>
@@ -571,19 +578,18 @@ The goal is simply to allow developers to continue working with legacy applicati
 New versions of Team Explorer Everywhere are released through [GitHub](https://github.com/Microsoft/team-explorer-everywhere)
 and the [Eclipse Marketplace](https://marketplace.eclipse.org/content/team-explorer-everywhere).
 To maximize compatibility with the latest version of Team Foundation Server, you should use the latest version of Team Explorer Everywhere.
-If you need support for an older version of Eclipse, Java, or an Operating System,
+If you need support for an older version of Eclipse, Java, or an operating system,
 you may choose to use an older version of Team Explorer Everywhere that encompasses the range you need.
 Multiple versions of Team Explorer Everywhere can also be installed side-by-side if you are running multiple versions of Eclipse.
 
-The following table includes all versions of Team Explorer Everywhere that are compatible with TFS 2013, and lists other TFS and Eclipse compatibility.
-
-Team Explorer Everywhere          | Eclipse version | TFS 2017                    | TFS 2015                    | TFS 2013                    | TFS 2012                    | TFS 2010                    | TFS 2008                    | TFS 2005
-----------------------------------|-----------------|-----------------------------|-----------------------------|-----------------------------|-----------------------------|-----------------------------|-----------------------------|-----------------
-Team Explorer Everywhere 2015     | Eclipse 3.5-4.3 | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![x](../_img/x.png)         | ![x](../_img/x.png)
-Team Explorer Everywhere 2013     | Eclipse 3.5-4.3 | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![x](../_img/x.png)         | ![x](../_img/x.png)
-Team Explorer Everywhere 2012     | Eclipse 3.4-4.3 | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png)
-Team Explorer Everywhere 2010 SP1 | Eclipse 3.2-3.6 | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png)
-Team Explorer Everywhere 2010     | Eclipse 3.0-3.5 | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png)
+Team Explorer Everywhere           | Eclipse version | VSTS, TFS 2012 - TFS 2018   | TFS 2010                    | TFS 2008                    | TFS 2005
+-----------------------------------|-----------------|-----------------------------|-----------------------------|-----------------------------|-----------------------------
+Team Explorer Everywhere 14.114.0+ | Eclipse 4.2-4.7 | ![Check](../_img/check.png) | ![x](../_img/x.png)         | ![x](../_img/x.png)         | ![x](../_img/x.png)
+Team Explorer Everywhere 2015      | Eclipse 3.5-4.3 | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![x](../_img/x.png)         | ![x](../_img/x.png)
+Team Explorer Everywhere 2013      | Eclipse 3.5-4.3 | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![x](../_img/x.png)         | ![x](../_img/x.png)
+Team Explorer Everywhere 2012      | Eclipse 3.4-4.3 | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png)
+Team Explorer Everywhere 2010 SP1  | Eclipse 3.2-3.6 | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png)
+Team Explorer Everywhere 2010      | Eclipse 3.0-3.5 | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png)
 
 <a name="supported-browsers"></a>
 ### Browsers
@@ -591,12 +597,11 @@ Team Explorer Everywhere 2010     | Eclipse 3.0-3.5 | ![Check](../_img/check.png
 You can use these browsers with VSTS 
 and to access TFS with the web client.
 
-Version        | Edge        | Internet Explorer | Safari (Mac)   | Firefox     | Chrome
----------------|-------------|-------------------|----------------|-------------|-------------
-VSTS  | most recent | 11 and later      | 9.1 and later  | most recent | most recent
-TFS 2017       | most recent | 11 and later      | 9.1 and later  | most recent | most recent
-TFS 2015       | most recent | 9 and later       | 5 and later    | most recent | most recent
-TFS 2013       |             | 9 and later       | 5 and later    | most recent | most recent
+Version                   | Edge        | Internet Explorer | Safari (Mac)   | Firefox     | Chrome
+--------------------------|-------------|-------------------|----------------|-------------|-------------
+VSTS, TFS 2018, TFS 2017  | most recent | 11 and later      | 9.1 and later  | most recent | most recent
+TFS 2015                  | most recent | 9 and later       | 5 and later    | most recent | most recent
+TFS 2013                  |             | 9 and later       | 5 and later    | most recent | most recent
 
 Edge, Firefox, and Chrome automatically update themselves, 
 so VSTS and TFS support the most recent version.
@@ -605,9 +610,9 @@ so VSTS and TFS support the most recent version.
 
 Office integration supports the following clients: [Excel](../work/backlogs/office/bulk-add-modify-work-items-excel.md), [Project](../work/backlogs/office/create-your-backlog-tasks-using-project.md), and [PowerPoint with Storyboarding](../work/backlogs/office/storyboard-your-ideas-using-powerpoint.md). 
 
-
 TFS version | Supported Office versions
 ------------|--------------------------
+TFS 2018    | Office 2016<br/>Office 2013<br/>Office 2010
 TFS 2017    | Office 2016<br/>Office 2013<br/>Office 2010
 TFS 2015    | Office 2013<br/>Office 2010<br/>Office 2007
 TFS 2013    | Office 2013<br/>Office 2010<br/>Office 2007

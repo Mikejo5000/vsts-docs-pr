@@ -7,7 +7,9 @@ ms.assetid: fe025768-2cb4-4939-b22f-8f69155bf310
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/15/2016
+monikerRange: '>= tfs-2017'
 ---
+
 
 # Utility: Extract Files
 
@@ -56,6 +58,22 @@ None
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
+::: moniker range="vsts"
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: ExtractFiles@1
+  inputs:
+#   archiveFilePatterns: *.zip
+    destinationFolder:
+#   cleanDestinationFolder: true
+```
+
+::: moniker-end
+
 ## Q & A
 
 <!-- BEGINSECTION class="md-qanda" -->
@@ -66,6 +84,8 @@ None
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
+::: moniker range="< vsts"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->

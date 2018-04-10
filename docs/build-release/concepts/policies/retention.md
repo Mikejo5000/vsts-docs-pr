@@ -7,11 +7,13 @@ ms.assetid: A9AC68EB-E013-4F86-8604-E69BB330817B
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/26/2016
+monikerRange: ">= tfs-2015"
 ---
+
 
 # Build and release retention policies
 
-**VSTS | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/ms181716%28v=vs.120%29.aspx)**
+**VSTS | TFS 2018 | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/ms181716%28v=vs.120%29.aspx)**
 
 Retention policies are used to configure how long builds and
 releases are to be retained by the system. The primary reasons to
@@ -40,13 +42,25 @@ If you are using VSTS, you can view but not change these settings for your accou
 
 Global build retention policy settings can be managed from the **Build and Release** settings of your account or team project collection:
 
+::: moniker range="vsts"
+
 * VSTS: `https://{your_account}.visualstudio.com/_admin/_buildQueue`
 
-* TFS 2017: `https://{your_server}/tfs/DefaultCollection/_admin/_buildQueue`
+::: moniker-end
 
-* TFS 2015 Update 3: `http://{your_server}:8080/tfs/DefaultCollection/_admin/_buildQueue`
+::: moniker range=">= tfs-2017"
+
+* TFS 2017 and newer: `https://{your_server}/tfs/DefaultCollection/_admin/_buildQueue`
+
+::: moniker-end
+
+::: moniker range="tfs-2015"
+
+* TFS 2015.3: `http://{your_server}:8080/tfs/DefaultCollection/_admin/_buildQueue`
 
 * TFS 2015 RTM: `http://{your_server}:8080/tfs/DefaultCollection/_admin/_buildQueue#_a=settings`
+
+::: moniker-end
 
 The **maximum retention policy** sets the upper limit for how longs
 builds can be retained for all build definitions.
@@ -153,7 +167,7 @@ The **default retention policy** sets the default retention values for all the r
 
 The **destruction policy** helps you keep the releases for a certain period of time after they are deleted. This policy cannot be overridden in individual release definitions.
 
-> In TFS, release retention management is restricted to specifying the number of days, and this is available only in Update 3 and later.
+> In TFS, release retention management is restricted to specifying the number of days, and this is available only in TFS 2015.3 and newer.
 
 ### Environment-specific retention
 
@@ -177,6 +191,8 @@ and it is retained in the system for another 30 days.
 
 When specifying custom policies per definition, you cannot exceed the maximum limits set by administrator.
 
+::: moniker range=">= tfs-2017"
+
 ### Interaction between build and release retention
 
 The build linked to a release has its own retention policy,
@@ -190,7 +206,9 @@ When you delete a release definition, delete a release, or when the
 retention policy deletes a release automatically, the retention policy
 for the associated build will determine when that build is deleted.
 
-> In TFS, interaction between build and release retention is available starting from TFS 2017.
+> In TFS, interaction between build and release retention is available in TFS 2017 and newer.
+
+::: moniker-end
 
 ## Q&A
 

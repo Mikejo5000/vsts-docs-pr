@@ -4,9 +4,12 @@ description: Manual and exploratory testing - Run manual tests with Microsoft Te
 ms.assetid: e7b48fb1-6511-4a2b-9eb1-f9e4488593c4
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-manual
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: ">= tfs-2015"
 ---
 
 # Run manual tests with Microsoft Test Manager
@@ -14,6 +17,8 @@ ms.date: 09/26/2017
 [!INCLUDE [version-header-vs-ts-tfs](../_shared/version-header-vs-ts-tfs.md)] 
 
 Microsoft Test Runner sits at the side of the screen while you test your application. It displays the steps you planned and the results you expected, and you check them off as you work. It can record your actions along with comments, screenshots, and other data, so that if you find a bug, it's easy to reproduce.  
+
+[!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
   
 >**The web portal or Microsoft Test Runner?** Use the web-based test runner
 in the **Test** hub when you want to test web applications, and Microsoft 

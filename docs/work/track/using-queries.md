@@ -1,5 +1,6 @@
 ---
 title: Create managed queries with the Query Editor
+titleSuffix: VSTS & TFS
 description: Create flat-list, tree, or direct-links queries to list, triage, update, and chart work items  
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
@@ -7,15 +8,14 @@ ms.assetid: 364000d3-200a-495a-bfb9-83915240af67
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article
-ms.date: 09/29/2017  
+ms.date: 03/20/2018
 ---
 
 # Create managed queries with the query editor
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-
-You can create queries in VSTS, the  web portal for Team Foundation Server (TFS), and Team Explorer. Also, you can open a query in [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) or [Project](../backlogs/office/create-your-backlog-tasks-using-project.md) to perform bulk additions and modifications.  
+Managed queries generate a list of work items based on the filter criteria you provide. You can create queries from the web portal or from a supported client, such as Visual Studio Team Explorer and Team Explorer Everywhere.  Also, you can open a query in [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) or [Project](../backlogs/office/create-your-backlog-tasks-using-project.md) to perform bulk additions and modifications.  
 
 For details on constructing query clauses and information on each query operator&mdash;such as, `Contains`, `In`, `In Group`, and `<>`(not operator) &mdash;and macros, see [Query fields, operators, and macros](query-operators-variables.md). For an index of example queries, see [Create managed queries](example-queries.md#examples). 
 
@@ -29,7 +29,7 @@ In this topic you'll learn:
 > * How to query across team projects    
 
 
-[!INCLUDE [temp](../_shared/image-differences.md)]
+[!INCLUDE [temp](../_shared/image-differences.md)]
 
 <a id="flat-list-query"/>
 ## Open and edit a query  
@@ -42,23 +42,29 @@ Active Bugs shared query provided with the Agile process template. Examples are 
   
 	<img src="_img/using-queries-active-bugs-ts.png" alt="Web portal, Work>Queries, Open Shared queries, Active Bugs" style="border: 2px solid #C3C3C3;" />
 
-	>[!TIP]  
+	> [!TIP]  
 	>If you're working in Visual Studio Team Explorer, open the **Work** page to access your queries and shared queries. If Team Explorer isn't visible, click **View>Team Explorer** from the top level menu.   
 
 2.	Edit the query to find closed bugs and then run the query. 
 	Use ![Insert new filter line](_img/3.png) to insert a clause above the current clause. Use ![Remove this filter line](_img/4.png) to delete a clause.  Queries are automatically scoped to the current team project. To find work items defined in several team projects, see [Query across team projects](using-queries.md#across-projects).   	
 
-	**VSTS, TFS 2018 - New queries experience:**  	
-
+	# [New Queries Experience](#tab/new-query-exp)
+	::: moniker range="vsts || >= tfs-2018"	
 	<img src="_img/using-queries-new-vsts-exp.png" alt="Web portal, Queries page, new queries experience, Editor view of a Flat List Query" style="border: 2px solid #C3C3C3;" />
+	::: moniker-end
+	::: moniker range=">= tfs-2013 <= tfs-2017"
+	The new queries experience requires TFS 2018 or later version. 
+	::: moniker-end
 
-	**VSTS, TFS 2017, TFS 2015:**  
-	
+	# [Old Queries Experience](#tab/old-query-exp)
+	::: moniker range="vsts || >= tfs-2015 <= tfs-2018"	 	
 	<img src="_img/query-active-bugs-editor-vso.png" alt="Web portal, Queries page, Editor view of a Flat List Query" style="border: 1px solid #C3C3C3;" /> 
-
-	**TFS 2013:**  
+	::: moniker-end
+	::: moniker range="tfs-2013"	 
 	![Editor View of a Flat List Query - On-premises TFS](_img/5.png)  
+	::: moniker-end
 
+	---
 3.	Save the query to your My Queries folder.  
 	  
 	  ![Save Query As](_img/6.png)    
@@ -78,8 +84,8 @@ Grouped clauses operate as a single unit separate from the rest of the query, si
 
 In the next example, the first expression returns all work items that are priority 1 and all active bugs of any priority. The second expression returns all active priority 1 work items and all priority 1 bugs, whether they are active or not.
 
-| Grouped clauses                                   | Logical expression                                    |
-| ------------------------------------------------- | ----------------------------------------------------- |
+| Grouped clauses  | Logical expression         |
+| ----------------- | --------------------|
 | ![Filter Using an OR/AND Operator](_img/8.png) | Priority = 1 OR (Work Item Type=Bug AND State=Active) |
 | ![Filter Using an AND/OR OR Operator](_img/9.png) | Priority = 1 AND (Work Item Type=Bug OR State=Active) |
 
@@ -110,7 +116,7 @@ Define the filter criteria for both parent and child work items.
 
 To find linked children, select Match top-level work items first. To find linked parents, select Match linked work items first.
 
->[!NOTE]  
+> [!NOTE]    
 >You can't construct a query that shows a hierarchical view of Test Plans, Test Suites, and Test Cases. These items aren't linked together using parent-child link types. You can [view the hierarchy through the Test Plans page of the Test hub](../../manual-test/getting-started/create-a-test-plan.md). 
 
 <a id="directs-link-query" />
@@ -139,24 +145,33 @@ To learn more about each link type, see [Link work items to support traceability
 ## Query across team projects  
 By default, shared queries and new queries are scoped to the current team project. However, you can create queries to find work items defined within the team project collection. You save cross-project queries under a specific team project.     
 
-> [!NOTE]  
-> <b>Feature availability: </b>The **Query across projects** feature is supported from VSTS and the web portal for TFS 2015.1 or later version.  
+::: moniker range="vsts || >= tfs-2015 <= tfs-2017"
 
-### VSTS and TFS 2015.1  
 To list work items defined in two or more team projects, checkmark **Query across projects**. For example, the following query finds all features created in all team projects within the last 30 days.
  
 <img src="_img/using-queries-query-across-projects.png" alt="Web portal, Queries page, Query Editor, Checkbox, Query across team projects" style="border: 1px solid #C3C3C3;" /> 
 
-With the Query across projects checked, you can add the Team Project field to filter to a select number of team projects.   
+::: moniker-end
+
+::: moniker range="tfs-2015"
+> [!NOTE]  
+> The **Query across projects** feature is supported from TFS 2015.1 and later versions.  
+::: moniker-end
+
+::: moniker range="vsts || >= tfs-2015 <= tfs-2017"
+With the **Query across projects** checked, you can add the Team Project field to filter to a select number of team projects.   
 
 <img src="_img/using-queries-query-across-select-projects.png" alt="VSTS and TFS 2015.1, Web portal, Query across select team projects using the In operator" style="border: 2px solid #C3C3C3;" />
 
->[!NOTE]  
->Separate multiple project names with the list separator that corresponds to the regional settings defined for your client computer, for example, a comma (,). 
+> [!NOTE]    
+> Separate multiple project names with the list separator that corresponds to the regional settings defined for your client computer, for example, a comma (,). 
 
-The Team Project field becomes available only after you check  **Query across projects**.  Moreover, when Query across projects is unchecked, only those fields from those WITs defined in the current team project appear in the Field drop-down menu. When Query across projects is checked, all fields from all WITs defined in all team projects in the collection appear in the Field drop-down menu.  
+The Team Project field becomes available only after you check  **Query across projects**.  Moreover, when Query across projects is unchecked, only those fields from those WITs defined in the current team project appear in the Field drop-down menu. When Query across projects is checked, all fields from all WITs defined in all team projects in the collection appear in the Field drop-down menu.  
 
-### TFS 2015, TFS 2013 
+::: moniker-end
+
+::: moniker range=">= tfs-2013"
+
 To find all features created in all team projects within the last 30 days, remove the **Team Project=@Project** clause from the query.  
 
 <img src="_img/using-queries-query-across-all-projects-tfs.png" alt="TFS 2013-2015, Web portal, Query across select team projects using the In operator" style="border: 2px solid #C3C3C3;" />
@@ -165,39 +180,40 @@ All fields from all WITs defined in all team projects in the collection always a
 
 Use **Team Project=@Project** to scope the query to find only those work items defined for the current team project. 
 
+::: moniker-end
 
-## Related notes
-
-That's the basics about using queries. For an index of query examples, see [Create managed queries](example-queries.md#examples). To add a custom field to track additional data, see [Customize your work tracking experience](../customize/customize-work.md). 
-
-If you want to export a query to Excel, you can do that from [Excel or Visual Studio/Team Explorer](../backlogs/office/bulk-add-modify-work-items-excel.md). Or, to export a query directly from the web portal Queries page, install the [VSTS Open in Excel Marketplace extension](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel). This extension will add in **Open in Excel** link to the toolbar of the query results page. 
-
-See also: 
-- [Adhoc versus managed queries](adhoc-vs-managed-queries.md)  
-- [Add work items](../backlogs/add-work-items.md)  
-- [Chart a flat-list query](../../report/dashboards/charts.md)  
-- [Change column options](https://docs.microsoft.com/en-us/vsts/work/backlogs/set-column-options?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json)
-- [Define a query as a hyperlink](define-query-hyperlink.md) 
-- [Work item field index](../work-items/guidance/work-item-field.md) 
-
-### Task board versus query list items
+## Task board versus query list items
 
 You may notice and wonder why the contents of the task board differ from those listed with its created query? To learn more, see [Task board items versus query list items](../backlogs/backlogs-boards-plans.md#task-board-items).
- 
-### Export a query  
+
+## Export a query  
 From the query editor in Team Explorer, use the File menu to save a query as a .wiq file. When you create a team project, the shared queries are created based on [.wiq files defined in a process](../customize/reference/process-templates/define-work-item-query-process-template.md). 
-
-
-### Programmatically query for work items 
-You can create dynamic queries using one of the following resources:  
-
-- **REST APIs:**&#160;&#160;[Work item queries and query folders](https://visualstudio.com/integrate/api/wit/queries.md) and [Work item query language](https://visualstudio.com/integrate/api/wit/wiql.md)
-- **SDK:**&#160;&#160;[Query for Bugs, Tasks, and Other Work Items](https://msdn.microsoft.com/library/bb130306.aspx).
-
 
 See also:
 - [Syntax for the Work Item Query Language (WIQL)](../../reference/wiql-syntax.md)  
 - [Wiql Editor, a Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor)  
  
+
+::: moniker range="vsts"
 > [!NOTE]  
 > For queries made against VSTS, the WIQL length must not exceed 32K characters. The system won't allow you to create or run queries that exceed that length.  
+::: moniker-end
+
+## Related articles
+
+That's the basics about using queries. For an index of query examples, see [Create managed queries](example-queries.md#examples). To add a custom field to track additional data, see [Customize your work tracking experience](../customize/customize-work.md). 
+
+- [Adhoc versus managed queries](adhoc-vs-managed-queries.md)  
+- [Add work items](../backlogs/add-work-items.md)  
+- [Chart a flat-list query](../../report/dashboards/charts.md)  
+- [Change column options](../backlogs/set-column-options.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json)
+- [Define a query as a hyperlink](define-query-hyperlink.md) 
+- [Work item field index](../work-items/guidance/work-item-field.md) 
+- [Query keyboard shortcuts](queries-keyboard-shortcuts.md)
+
+If you want to export a query to Excel, you can do that from [Excel or Visual Studio/Team Explorer](../backlogs/office/bulk-add-modify-work-items-excel.md). Or, to export a query directly from the web portal Queries page, install the [VSTS Open in Excel Marketplace extension](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel). This extension will add in **Open in Excel** link to the toolbar of the query results page. 
+
+
+[!INCLUDE [temp](../_shared/rest-apis-queries.md)]
+ 
+ 

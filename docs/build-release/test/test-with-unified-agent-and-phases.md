@@ -1,12 +1,15 @@
 ---
 title: Test with unified agents and phases
 description: Manual and exploratory testing. Test with unified agents and phases in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+ms.assetid: CAA3900B-1939-41B8-871B-FF0E99DC3E5A
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
-ms.assetid: CAA3900B-1939-41B8-871B-FF0E99DC3E5A
+ms.topic: reference
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: ">= tfs-2015"
 ---
 
 # Testing with unified agents and phases
@@ -155,13 +158,8 @@ multiple executions and multiple agents modes, it is replicated on the agents, i
 <a name="run-ui-tests"></a>
 ### Q: What is required to run UI tests?
 
-**A**: To run UI tests, you must run the agent in [interactive mode](../../build-release/concepts/agents/agents.md#account).
-Agents set to run as a service cannot run UI tests.
-However, at present, interactive agents will be stopped if the machine reboots for any reason.
-Enhancements to the agent to survive reboots in interactive mode will be implemented in the future.
-
-Also disable any screensaver and unlock the machine so that UI actions in the test are not blocked.
-Automatic configuration of agents to do this will be implemented in the future.
+**A**: To run UI tests, you must run the agent in [interactive mode](../../build-release/concepts/agents/agents.md#account) with auto-logon enabled.
+Agents set to run as a service cannot run UI tests. Also disable any screensaver and unlock the machine so that UI actions in the test are not blocked.
 
 <a name="hosted-ui-tests"></a>
 ### Q: Can I run UI tests on the hosted agents?
@@ -233,6 +231,8 @@ phase, the tests will be replicated to each of the machines.
 * [Associate automated tests with test cases](associate-automated-test-with-test-case.md)
 * [Associate automated test results with requirements](associate-automated-results-with-requirements.md)
 * [Run automated tests from test plans in the Test hub](run-automated-tests-from-test-hub.md)
+* [Speed up testing with Test Impact Analysis](test-impact-analysis.md)
+* [Run tests in parallel](run-tests-in-parallel.md)
 * [Continuous testing scenarios and capabilities](index.md)
 
 [!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 

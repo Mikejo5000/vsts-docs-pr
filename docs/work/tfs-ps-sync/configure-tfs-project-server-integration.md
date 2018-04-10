@@ -165,7 +165,7 @@ Configuring the Integration of Team Foundation Server and Project Server
     TfsAdmin ProjectServer /MapPlanToTeamProject /collection:tpcUrl /enterpriseProject:EnterpriseProjectName /teamproject:TeamProjectName /workItemTypes:ListOfWorkItemTypes /projectFieldForWorkItemType:ProjectFieldName  
     ```  
   
-     Replace *tpcUrl* with the URL of the team project collection, *EnterpriseProjectName* with the name of the enterprise project plan, *TeamProjectName* with the name of the team project, and *ListOfWorkItemTypes* with the names of the types of work items. For example, you can specify the following types of work items to support an agile process as “*User Story,Task* or *“User Story,Task*. Do not include a space after the comma.  
+     Replace *tpcUrl* with the URL of the team project collection, *EnterpriseProjectName* with the name of the enterprise project plan, *TeamProjectName* with the name of the team project, and *ListOfWorkItemTypes* with the names of the types of work items. For example, you can specify the following types of work items to support an agile process as "*User Story,Task* or *"User Story,Task*. Do not include a space after the comma.  
   
      Specify **/nofixedWork** if you want to prohibit fixed task type assignments. You can also specify the **/projectFieldForWorkItemType** argument and the name of a field in Project to store the type of work item.  
   
@@ -203,6 +203,6 @@ Configuring the Integration of Team Foundation Server and Project Server
   
     -   [Add resources to the enterprise resource pool](http://go.microsoft.com/fwlink/?LinkId=203356) (Project Server 2010)  
   
-## Related notes  
+## Related articles  
  [Map integration components](map-integration-components.md)   
  [Administer TFS-Project Server integration](administrate-integration-tfs-project-server.md)

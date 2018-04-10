@@ -5,11 +5,13 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
 ms.assetid: 2fdfbfe2-b9b2-4d61-ad3e-45f11953ef3e
 ms.manager: douge
-ms.author: billchi
+ms.author: chcomley
 ms.date: 10/6/2017
+monikerRange: 'vsts'
 ---
 
-#   Change application access policies for your account
+
+# Change application access policies for your account
 
 **VSTS**
 
@@ -67,7 +69,7 @@ To continue, you'll need at least Basic access and VSTS account owner permission
 
 0.	From your account toolbar, go to **Settings**.
 
-    ![Click the gear icon, go to Settings](../_shared/_img/account-settings-new-ui.png)
+    ![Choose the gear icon, go to Settings](../_shared/_img/account-settings-new-ui.png)
 
 0.  Review your application connection settings. 
 Change these settings, based on your security policies.

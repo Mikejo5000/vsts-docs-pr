@@ -1,13 +1,16 @@
 ---
-title: Project activities | VSTS & TFS
-description: Helps you reduce the risks to your project that stem from shifting requirements and implementation costs.
+title: Project activities
+titleSuffix: VSTS & TFS
+description: Reduce the risks to your project that stem from shifting requirements and implementation costs 
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
 ms.assetid: 078d2b8e-e0a7-4c17-8f00-e830c78d338c
+ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelli
 ms.date: 01/20/2017
 ---
+
 # Project activities
 [!INCLUDE [temp](../../../_shared/dev15-version-header.md)]
 
@@ -97,6 +100,6 @@ To make the most effective use of MSF for [CMMI Process Improvement](guidance-ba
   
 -   Devote resources to increasing test coverage and to performing manual tests.  
   
-## Related notes
+## Related articles
 - [Background to CMMI](guidance-background-to-cmmi.md)
 - [CMMI process](../cmmi-process.md)

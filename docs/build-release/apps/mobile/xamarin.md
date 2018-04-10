@@ -8,11 +8,13 @@ ms.manager: douge
 ms.author: alewis
 ms.date: 08/04/2016
 ms.topic: get-started-article
+monikerRange: '>= tfs-2017'
 ---
+
 
 # Build your Xamarin app
 
-**VSTS | TFS 2017 Update 2**
+**VSTS | TFS 2018 | TFS 2017.2**
 
 Xamarin enables you to develop a single solution and deploy it to Android, iOS, and Windows devices. Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide a highly customizable continuous integration (CI) process to automatically build and package your Xamarin app whenever your team pushes or checks in code. In this quickstart you learn how to define your CI process.
 
@@ -76,7 +78,7 @@ You need to create two build definitions - one for Xamarin.Android and one for X
 
 1. In the right panel, click **Xamarin.Android**, and then click **Apply**.
 
- You now see all the tasks that were automatically added to the build definition by the template. These are the steps that will automatically run every time you check in code.
+ You now see all the tasks that were automatically added to the build definition by the template. These are the steps that will automatically run every time you push code changes.
 
 1. For the **Agent queue**:
 

@@ -1,5 +1,6 @@
 ---
-title: Manage your personal notification settings | VSTS & TFS
+title: Manage personal notification settings
+titleSuffix: VSTS & TFS
 description: Get notified when changes occur to source code, git, work items, and builds when using Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.technology: collaborate
 ms.prod: vs-devops-alm
@@ -8,6 +9,7 @@ ms.manager: douge
 ms.author: wismythe
 ms.topic: get-started-article
 ms.date: 09/01/2017
+monikerRange: '>= tfs-2017'
 ---
 
 
@@ -22,10 +24,10 @@ As changes occur to your code base, builds, work items, and other operations, yo
 
 Use this topic to learn how to:
 
-> [!div class="checklist"]   
-> * View your notifications    
-> * Add a custom subscription      
-> * Unsubscribe or opt out of a team or project subscription   
+> [!div class="checklist"]   
+> * View your notifications    
+> * Add a custom subscription      
+> * Unsubscribe or opt out of a team or project subscription   
 
 
 ## View your personal notifications 

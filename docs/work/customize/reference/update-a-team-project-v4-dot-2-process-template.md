@@ -1,12 +1,13 @@
 ---
-title: Update a team project | TFS
+title: Update a team project
+titleSuffix: TFS
 description: Update a team project based on a Microsoft Solutions Framework (MSF) version 4.2 process template.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
 ms.assetid: d2a264e1-7dd3-4cbd-ab50-735290a1ea74
 ms.manager: douge
 ms.author: kaelli
-ms.date: 04/04/2017
+ms.date: 12/15/2017
 ---
 
 # Update a team project based on a MSF v4.2 process template 
@@ -44,22 +45,16 @@ These procedures will only support access to new features available with TFS 201
   
 -   To grant permissions, you must be a member of the administrative group at the level of the group that you want to change. For example, if you want to change permissions for a group or user at the team project collection level, you must be a member of the **Project Collection Administrators** group for that collection, or your **Edit Collection-Level Information** permission must be set to **Allow**.  
   
-For more information, see [Permission reference](../../../security/permissions.md).  
+For more information, see [Add administrators, set permissions at the project-level or project collection-level](../../../security/set-project-collection-level-permissions.md).  
   
 ## 1. Rename system fields  
  Because the friendly names of several system fields were renamed in Visual Studio Team Foundation Server 2010, you need to manually rename these fields in your team project collection. System fields that were renamed include System.AreaID, System.IterationID, System.HyperLinkCount, System.ExternalLinkCount, and System.AttachedFileCount.  
   
  Perform this task for each team project collection defined on the application-tier server you've upgraded.  
   
-1.  Open a Command Prompt window where either Visual Studio 2012 or Team Explorer 2012 is installed and type:  
+[!INCLUDE [temp](../../_shared/witadmin-run-tool-example.md)]
   
-    ```  
-    cd %programfiles%\Microsoft Visual Studio 12.0\Common7\IDE  
-    ```  
-  
-     On a 64-bit edition of Windows, replace **%programfiles%** with **%programfiles(x86)%**.  
-  
-2.  Type each of the following commands, substituting your data for the arguments that are shown, and then choose the **ENTER** key.  
+0.  Type each of the following commands, substituting your data for the arguments that are shown, and then choose the **ENTER** key.  
   
     ```  
     witadmin changefield /collection:CollectionURL /n:System.AreaId /name:"Area Id"  
@@ -174,6 +169,7 @@ For more information, see [Permission reference](../../../security/permissions.m
   
      For *DirectoryPath*, specify the path to the WorkItem Tracking folder for the process template that you downloaded. The directory path should follow this structure: *Drive*:\\*MSFTemplateFolder*\WorkItem Tracking.  
   
+<a id="8-import-configure" /> 
   
 ## 8. Import the process configuration file  
  The process configuration file determines the layout and features available through the backlog and board pages of the web portal. To use these pages, you must import the process configuration file.  
@@ -196,6 +192,10 @@ Open a web portal and [determine if all features are available to you](../new-fe
 ## Additional tasks to interface with Microsoft Test Manager  
  Perform the following tasks to complete the updates required to interface with Test Manager.  
   
+
+
+<a id="map_bug_type" /> 
+
 ### 1. Specify the bug type to be created in Microsoft Test Manager  
  To support the automatic creation of a work item to track code defects or bugs that are found when a test team member uses Test Manager, you must specify the bug type to be used for your existing team project. The **tcm bugfieldmapping** command supports the import and export of a mapping file to the team project. The mapping file defines the type of work item to create and the three data fields to be filled by Test Manager. The three fields are reproducible steps, system information, and the build in which the defect was found. When a tester runs a test and finds a defect, they can create a bug in which the three fields are automatically filled.  
   
@@ -204,9 +204,9 @@ Open a web portal and [determine if all features are available to you](../new-fe
     ```  
     <?xml version="1.0" encoding="utf-16"?  
     <BugFilerMappings workitemtypetocreate="Bug">  
-       <ReproSteps>Microsoft.VSTS.TCM.ReproSteps</ReproSteps>  
-       <SystemInformation>Microsoft.VSTS.TCM.SystemInfo</SystemInformation>  
-       <BuildFoundIn>Microsoft.VSTS.Build.FoundIn</BuildFoundIn>  
+          <ReproSteps>Microsoft.VSTS.TCM.ReproSteps</ReproSteps>  
+          <SystemInformation>Microsoft.VSTS.TCM.SystemInfo</SystemInformation>  
+          <BuildFoundIn>Microsoft.VSTS.Build.FoundIn</BuildFoundIn>  
     </BugFilerMappings>  
     ```  
   
@@ -226,6 +226,8 @@ Open a web portal and [determine if all features are available to you](../new-fe
      For more information, see [tcm: Customize and manage the test experience](witadmin/tcm-customize-manage-test-experience.md).  
   
  
+
+<a id="grant_permissions" /> 
   
 ###  2. Grant permissions to test team members  
  You must grant permissions to team members who will manage test environments and test configurations, create and view test runs, and perform other tasks.  
@@ -250,12 +252,18 @@ Open a web portal and [determine if all features are available to you](../new-fe
   
 -   You can set project collection permissions from Team Explorer by choosing **Team, Team Project Collection Settings, Security**, by opening and using the administration console for Team Foundation, or by using the **TFSSecurity** and **tf** command-line tools. For more information, see [Add an administrator](../../../security/set-project-collection-level-permissions.md).  
   
+
+<a id="launch_mtm" /> 
+
 ## 3. Launch Microsoft Test Manager  
 After you have completed the upgrade tasks that are described earlier in this topic, you can start Microsoft Test Manager, connect to your project, and start to plan your test efforts. 
 
->[!NOTE]  
+> [!NOTE]    
 >Microsoft Test Manager is in the process of being deprecated. The web portal Test hub for TFS 2017 and later versions is a fully featured Test management solution which works across all platforms and with all browsers, we recommend you use the Test hub over Microsoft Test Manager for all your test management requirements. You can use Microsoft Test Manager to test your desktop applications by launching the Microsoft Test Runner (client) from the Test hub. To learn more, see [Guidance on Microsoft Test Manager usage](../../../manual-test/mtm/guidance-mtm-usage.md). 
  
+
+
+<a id="additional_info" /> 
 ##  Additional information about changes made when upgrading TFS  
 
  When you upgrade from Visual Studio Team System 2008 Team Foundation Server to TFS 2012, you receive updates made to both TFS 2010 and TFS 2012. There were a number of architectural changes made with the release of TFS 2010. To learn more about the changes made by upgrading to the latest version of TFS from Visual Studio Team System 2008 Team Foundation Server, see the following resources:  
@@ -266,6 +274,6 @@ After you have completed the upgrade tasks that are described earlier in this to
 -   [Changes and Additions to the Schema for the Analysis Services Cube](http://msdn.microsoft.com/library/ff472574%28v=vs.100%29.aspx)     
 -   [Changes made to process templates](../../work-items/guidance/changes-to-process-templates.md)   
   
-## Related notes
+## Related articles
 -  [witAdmin: Customize and manage objects for tracking work](witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md)   
 -  [Configure features after an upgrade](../configure-features-after-upgrade.md) 

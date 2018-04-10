@@ -12,7 +12,7 @@ ms.date: 10/11/2017
 
 # Define the initial configuration of Team Foundation Build
 
-[!INCLUDE [temp](../../../_shared/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [temp](../../../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
 You can customize a team project's initial build permissions that are used by Team Foundation Build. The build.xml plug-in file specifies the security permissions for build activities of all team projects that are created with the same process template. The following template files are uploaded to the team project database:  
   
@@ -60,5 +60,5 @@ The names of the file, the folder, and the plug-in for the default process templ
 </tasks>  
 ```  
   
-## Related notes  
+## Related articles  
 - [Control access to functional areas](control-access-to-functional-areas.md)

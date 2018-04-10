@@ -4,9 +4,12 @@ description: Understand variables in Microsoft Release Management for Visual Stu
 ms.assetid: 864FEB87-FE29-446D-804E-AD6ABDEA82C3
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 11/14/2017
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: ">= tfs-2015"
 ---
 
 # Variables in Release Management
@@ -27,6 +30,8 @@ to another. These are **custom variables**.
 being run. For example, your script may need access to the location
 of the build to download it, or to the working directory on the
 agent to create temporary files. These are **default variables**.
+
+> You can also use a default variable to [run a release in debug mode](#debug-mode).
 
 ## Custom variables
 
@@ -65,10 +70,17 @@ Using custom variables at project, release definition, and environment scope hel
   decrypts these values when referenced by the tasks and passes them
   to the agent over a secure HTTPS channel.
 
+### Using custom variables
+
 To use custom variables in your build and release tasks, simply enclose the 
 variable name in parentheses and precede it with a **$** character. For example,
 if you have a variable named **adminUserName**, you can insert the current
 value of that variable into a parameter of a task as `$(adminUserName)`.
+
+[!INCLUDE [variable-collision](../_shared/variable-collision.md)]
+
+You can use custom variables to prompt for values during the execution of a release.
+For more details, see [Approvals](approvals/index.md#scenarios).
  
 [!INCLUDE [set-variables-in-scripts](../_shared/set-variables-in-scripts.md)]
 
@@ -90,7 +102,7 @@ With the exception of **System.Debug**, these variables are read-only and their 
 > | System.ArtifactsDirectory | The directory to which artifacts are downloaded during deployment of a release. The directory is cleared before every deployment if it requires artifacts to be downloaded to the agent. Same as Agent.ReleaseDirectory and System.DefaultWorkingDirectory. | C:\agent\_work\r1\a |  |
 > | System.DefaultWorkingDirectory | The directory to which artifacts are downloaded during deployment of a release. The directory is cleared before every deployment if it requires artifacts to be downloaded to the agent. Same as Agent.ReleaseDirectory and System.ArtifactsDirectory. | C:\agent\_work\r1\a | |
 > | System.WorkFolder | The working directory for this agent, where subfolders are created for every build or release. Same as Agent.RootDirectory and Agent.WorkFolder. | C:\agent\_work |  |
-> | System.Debug | This is the only system variable that can be _set_ by the users. Set this to true to run the deployment in debug mode to assist in fault-finding. | true | &nbsp; |
+> | System.Debug | This is the only system variable that can be _set_ by the users. Set this to true to [run the release in debug mode](#debug-mode) to assist in fault-finding. | true | &nbsp; |
 
 <!-- Other hidden system variables
 [SYSTEM] -> [release]
@@ -163,7 +175,8 @@ With the exception of **System.Debug**, these variables are read-only and their 
 > | Agent.HomeDirectory | The folder where the agent is installed. This folder contains the code and resources for the agent. | C:\agent | |
 > | Agent.ReleaseDirectory | The directory to which artifacts are downloaded during deployment of a release. The directory is cleared before every deployment if it requires artifacts to be downloaded to the agent. Same as System.ArtifactsDirectory and System.DefaultWorkingDirectory. | C:\agent\_work\r1\a | |
 > | Agent.RootDirectory | The working directory for this agent, where subfolders are created for every build or release. Same as Agent.WorkFolder and System.WorkFolder. | C:\agent\_work | |
-> | Agent.WorkFolder | The working directory for this agent, where subfolders are created for every build or release. Same as Agent.RootDirectory and System.WorkFolder. | C:\agent\_work | &nbsp; |
+> | Agent.WorkFolder | The working directory for this agent, where subfolders are created for every build or release. Same as Agent.RootDirectory and System.WorkFolder. | C:\agent\_work | |
+> | Agent.DeploymentGroupId | The ID of the deployment group the agent is registered with. This is available only in deployment group phases. | 1 | TFS 2018 U1 |
 
 <!--
 [AGENT_SERVEROMDIRECTORY] -> [C:\agent\externals\vstsom]
@@ -173,23 +186,26 @@ With the exception of **System.Debug**, these variables are read-only and their 
 
 <h3 id="artifact-variables">Artifact variables</h3>
 
-For each artifact that is referenced in a release, you can use the following artifact variables. Not all variables are meaningful for each artifact type. The table below lists the default artifact variables and provides examples of the values that they have depending on the artifact type. If an example is empty, it implies that the variable is not populated for that artifact type.
+For each artifact that is referenced in a release, you can use the following artifact variables.
+Not all variables are meaningful for each artifact type. The table below lists the default artifact
+variables and provides examples of the values that they have depending on the artifact type. If an example is empty,
+it implies that the variable is not populated for that artifact type. 
 
 > [!div class="mx-tdBreakAll"]
 > | Variable name | Description | Team Build example | Jenkins/ TeamCity example  | TFVC/Git example | GitHub example|
 > |---------------|-------------|--------------------|---------------------------|------------------|---------------|
-> | Release.Artifacts.{Artifact alias}.DefinitionId | The identifier of the build definition or repository. | 1 |  |  | fabrikam/asp |
-> | Release.Artifacts.{Artifact alias}.DefinitionName | The name of the build definition or repository. | fabrikam-ci |  | TFVC: $/fabrikam, Git: fabrikam | fabrikam/asp (master) |
-> | Release.Artifacts.{Artifact alias}.BuildNumber | The build number or the commit identifier. | 20170112.1 | 20170112.1 | TFVC: Changeset 3, Git: 38629c964 | 38629c964 |
-> | Release.Artifacts.{Artifact alias}.BuildId | The build identifier. | 130 | 130 |  | 38629c964d21fe405ef830b7d0220966b82c9e11 |
-> | Release.Artifacts.{Artifact alias}.BuildURI | The URL for the build. | vstfs:///build-release /Build/130 |  |  |  | https://github.com/fabrikam/asp |
-> | Release.Artifacts.{Artifact alias}.SourceBranch | The path of the branch from which the source was built. | refs/heads/master |  |  | |
-> | Release.Artifacts.{Artifact alias}.SourceBranchName | The name of the branch from which the source was built. | master |  |  |  |
-> | Release.Artifacts.{Artifact alias}.SourceVersion | The commit that was built. | bc0044458ba1d9298 cdc649cb5dcf013180706f7 |  |  |  |
-> | Release.Artifacts.{Artifact alias}.Repository.Provider | The type of repository from which the source was built | Git |  |  |  |
-> | Release.Artifacts.{Artifact alias}.RequestedForID | The identifier of the account that triggered the build. | 2f435d07-769f-4e46 -849d-10d1ab9ba6ab | | | |
-> | Release.Artifacts.{Artifact alias}.RequestedFor | The name of the account that requested the build. | Mateo Escobedo | | | |
-> | Release.Artifacts.{Artifact alias}.Type | The type of artifact source, such as Build. | Build | Jenkins: Jenkins, TeamCity:TeamCity | TFVC: TFVC, Git: Git | GitHub |
+> | Release.Artifacts.{[alias](artifacts.md#source-alias)}.DefinitionId | The identifier of the build definition or repository. | 1 |  |  | fabrikam/asp |
+> | Release.Artifacts.{[alias](artifacts.md#source-alias)}.DefinitionName | The name of the build definition or repository. | fabrikam-ci |  | TFVC: $/fabrikam, Git: fabrikam | fabrikam/asp (master) |
+> | Release.Artifacts.{[alias](artifacts.md#source-alias)}.BuildNumber | The build number or the commit identifier. | 20170112.1 | 20170112.1 | TFVC: Changeset 3, Git: 38629c964 | 38629c964 |
+> | Release.Artifacts.{[alias](artifacts.md#source-alias)}.BuildId | The build identifier. | 130 | 130 |  | 38629c964d21fe405ef830b7d0220966b82c9e11 |
+> | Release.Artifacts.{[alias](artifacts.md#source-alias)}.BuildURI | The URL for the build. | vstfs:///build-release /Build/130 |  |  |  | https://github.com/fabrikam/asp |
+> | Release.Artifacts.{[alias](artifacts.md#source-alias)}.SourceBranch | The path of the branch from which the source was built. | refs/heads/master |  |  | |
+> | Release.Artifacts.{[alias](artifacts.md#source-alias)}.SourceBranchName | The name of the branch from which the source was built. | master |  |  |  |
+> | Release.Artifacts.{[alias](artifacts.md#source-alias)}.SourceVersion | The commit that was built. | bc0044458ba1d9298 cdc649cb5dcf013180706f7 |  |  |  |
+> | Release.Artifacts.{[alias](artifacts.md#source-alias)}.Repository.Provider | The type of repository from which the source was built | Git |  |  |  |
+> | Release.Artifacts.{[alias](artifacts.md#source-alias)}.RequestedForID | The identifier of the account that triggered the build. | 2f435d07-769f-4e46 -849d-10d1ab9ba6ab | | | |
+> | Release.Artifacts.{[alias](artifacts.md#source-alias)}.RequestedFor | The name of the account that requested the build. | Mateo Escobedo | | | |
+> | Release.Artifacts.{[alias](artifacts.md#source-alias)}.Type | The type of artifact source, such as Build. | Build | Jenkins: Jenkins, TeamCity:TeamCity | TFVC: TFVC, Git: Git | GitHub |
 
 See also [Artifact source alias](artifacts.md#source-alias)
 
@@ -213,7 +229,6 @@ You designate one of the artifacts as a primary artifact in a release definition
 > | Build.RequestedFor | Release.Artifacts.{Primary artifact alias}.RequestedFor |
 > | Build.Type | Release.Artifacts.{Primary artifact alias}.Type |
 
-
 ### Using default variables
 
 You can use the default variables in two ways - as parameters to tasks in a release definition or in your scripts.
@@ -231,5 +246,29 @@ you would use `$env:RELEASE_ARTIFACTS_ASPNET4_CI_DEFINITIONNAME`.
 ![Using artifact variables in an inline PowerShell script](_img/variables-02.png)
 
 Note that the original name of the artifact source alias, `ASPNET4.CI`, is replaced by `ASPNET4_CI`.
+
+<a name="debug-mode"></a>
+
+### Run a release in debug mode
+
+Show additional information as a release executes and in the log files
+by running the entire release, or just the tasks in an individual
+release environment, in debug mode. This can help you resolve issues and failures.
+
+* To initiate debug mode for an entire release, add a variable
+  named `System.Debug` with the value `true` to the **Variables**
+  tab of a release definition.
+
+* To initiate debug mode for a single environment, open the
+  **Configure environment** dialog from the shortcut menu
+  of the environment and add a variable named `System.Debug`
+  with the value `true` to the **Variables** tab.
+
+* Alternatively, create a [variable group](../../library/variable-groups.md)
+  containing a variable named `System.Debug` with the value `true`
+  and link this variable group to a release definition.
+
+>If you get an error related to an Azure RM service endpoint,
+see [How to: Troubleshoot Azure Resource Manager service endpoints](../../../actions/azure-rm-endpoint.md).
 
 [!INCLUDE [rm-help-support-shared](../../../_shared/rm-help-support-shared.md)]

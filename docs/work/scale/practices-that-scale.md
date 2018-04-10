@@ -11,7 +11,7 @@ ms.date: 08/02/2017
 
 #Scaling Agile - Practices that scale  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 Enterprise organizations adopt Agile practices for a number of reasons. Prime among these include:  
 
@@ -55,8 +55,8 @@ The more insight you and your teams have into the goal, vision, and progress of 
 
 - **Team structure**: No matter how large your organization gets, structuring your organization around small teams of 6 to 9 scales. Create [vertical, autonomous feature teams](agile-culture.md#horizontal-vs-vertical) grouped under portfolio management areas. 
 - **Work breakdown structure**: Breaking down large goals, features, or requirements into smaller ones remains a stable of project management. By breaking down work into similar-sized tasks, teams can make better estimates and identify risks and dependencies.    
-- **Consolidated views**: Use your online tracking tools to aggregate work to gain knowledge across teams. Build dashboards to show progress and trends. 
--**Experience reviews**: These meetings, held before development begins on a feature, are used to educate leadership on scenarios and priorities, collect feedback, set expectations, and surface any cross-team issues about the feature. 
+- **Consolidated views**: Use your online tracking tools to aggregate work to gain knowledge across teams. Build dashboards to show progress and trends.  
+- **Experience reviews**: These meetings, held before development begins on a feature, are used to educate leadership on scenarios and priorities, collect feedback, set expectations, and surface any cross-team issues about the feature. 
 
 ## Productive workforce 
 
@@ -72,7 +72,7 @@ Some specific Agile practices that scale well and lead to happier, engaged, and 
 
 You improve organizational effectiveness by attending to the culture you want to build. Culture changes occur when individuals, teams, and organizations adopt one or more continuous improvement practices. Several scalable Agile practices include: 
 
-- **Retrospectives**: By asking questions such as: “What went well?”, “What should we do differently?”, and “What should we stop doing?” help teams reflect on how they can improve on their processes and practices. Retrospectives help teams surface what is working well and what needs improvement. Retrospectives can be conducted anytime and anywhere. However, institutionalizing certain retrospectives at a regular cadence help institutionalize continuous improvement practices. For example:  
+- **Retrospectives**: By asking questions such as: "What went well?"�, "What should we do differently?"�, and "What should we stop doing?"� help teams reflect on how they can improve on their processes and practices. Retrospectives help teams surface what is working well and what needs improvement. Retrospectives can be conducted anytime and anywhere. However, institutionalizing certain retrospectives at a regular cadence help institutionalize continuous improvement practices. For example:  
 	- **[Sprint retrospectives](../scrum/best-practices-scrum.md#sprint-retrospective-meeting)** can help teams identify areas to improve at a regular cadence.   
 	- **Release retrospectives** can help organizations identify areas to improve communications and internal practices and fuel improvement for the next release.
 	- **Operational reviews**: are typically held monthly and include representatives from a whole value stream. Spanning a portfolio of projects and other initiatives and using objective, quantitative data, design these retrospectives to provoke discussions about the dynamics affecting performance between teams. 
@@ -97,7 +97,7 @@ You improve organizational effectiveness by attending to the culture you want to
 
 ><p align="center" style="font-size: 13px">"Deliver working software frequently, from a couple of weeks to a couple of months, <br/>with a preference to the shorter timescale." <br/>  
 "Working software is the primary measure of progress."</p>
-<p align="right" style="font-size: 13px"> - [Agile manifesto](http://www.agilemanifesto.org/principles.html)</p>    
+<p align="right" style="font-size: 13px"> - [Agile manifesto](http://www.agilemanifesto.org/principles.html)</p>    
 
 As the amount of software, features, and complexity increase, you'll need to adopt practices that help you produce consumable solutions.  
  
@@ -108,7 +108,7 @@ As the amount of software, features, and complexity increase, you'll need to ado
 - **Internal Open Source**: Bring the value and ethos that's developed in the Open Source Software community to your internal development teams.  
 
 
-##Related notes
+## Related articles
 
 In addition to the above practices, you'll find additional guidance around scaling your Agile tools in the following topics: 
 
@@ -126,5 +126,5 @@ In addition to the above practices, you'll find additional guidance around scali
 
 ###Practices that don't scale
 - **Estimating large initiatives**: Part of waterfall project methods involved estimating resources and schedules. The larger the initiatives, the less likely these estimates were of any value. As projects grow, risks and unforeseen issues and impediments can arise, invalidating many estimates.   
-- **Velocity**: While [team velocity](../../report/dashboards/team-velocity.md) can provide a useful metric for gaining insight into how much work each team can complete during a sprint cycle, you can't add team velocities to gain meaningful or useful metrics. Also, using velocity gained from a number of teams to reliably perform long range forecasts is problematic. Teams vary in the way they estimate their work, and those variations increase over time.  
-- **Top-down prescriptive solutions**: One size does not fit all, and one solution typically does not fit all teams. Supporting team autonomy means letting teams find their own solutions. 
+- **Velocity**: While [team velocity](../../report/dashboards/velocity-chart-data-store.md) can provide a useful metric for gaining insight into how much work each team can complete during a sprint cycle, you can't add team velocities to gain meaningful or useful metrics. Also, using velocity gained from a number of teams to reliably perform long range forecasts is problematic. Teams vary in the way they estimate their work, and those variations increase over time.  
+- **Top-down prescriptive solutions**: One size does not fit all, and one solution typically does not fit all teams. Supporting team autonomy means letting teams find their own solutions. 

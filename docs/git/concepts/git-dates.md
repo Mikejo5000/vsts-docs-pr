@@ -6,8 +6,10 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-git 
 ms.manager: douge
 ms.author: robrodbe
-ms.date: 06/16/2017
+ms.date: 03/14/2018
+monikerRange: '>= tfs-2013'
 ---
+
 
 # How dates work in Git
 
@@ -57,7 +59,7 @@ Now let's view the same commit with the author date:
         An amended commit
 
 Note the (slight) difference between the author date and commit date above.
-The commit date is my original, unedited, commit time. The author date is the time at which I ran the `--amend` command.
+The author date is my original, unedited, commit time. The commit date is the time at which I ran the `--amend` command.
 
 In fact, there are a lot of `git log` options to help you understand dates better.
 For example, passing the `--date` flag will allow you to determine how dates are displayed. 

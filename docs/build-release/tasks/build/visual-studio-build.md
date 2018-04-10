@@ -7,7 +7,9 @@ ms.assetid: 11E76804-BA67-4086-9CF1-8CB2887169BA
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
+
 
 # Build: Visual Studio Build
 
@@ -74,6 +76,30 @@ If you use TFVC, make sure that the solution is a child of one of the mappings o
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
+::: moniker range="vsts"
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: VSBuild@1
+  inputs:
+#   solution: **\*.sln
+#   vsVersion: latest # latest (default), 15.0, 14.0, 12.0, 11.0
+    msbuildArgs:
+    platform:
+    configuration:
+#   clean: false
+#   maximumCpuCount: false
+#   restoreNugetPackages: false
+#   msbuildArchitecture: x86 # x86 (default), x64
+#   logProjectEvents: true
+#   createLogFile: false
+```
+
+::: moniker-end
+
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->
 
@@ -81,6 +107,8 @@ If you use TFVC, make sure that the solution is a child of one of the mappings o
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
+::: moniker range="< vsts"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->

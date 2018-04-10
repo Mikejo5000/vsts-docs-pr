@@ -7,11 +7,13 @@ ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: amullans
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2017'
 ---
+ 
 
 # Use Jenkins to restore and publish packages
 
-**VSTS | TFS 2017**
+**VSTS | TFS 2018 | TFS 2017**
 
 VSTS's package management works with the continuous integration tools your team already uses.
 In this [Jenkins](http://jenkins-ci.org/) walkthrough, you'll create a NuGet package and publish it to a VSTS feed.

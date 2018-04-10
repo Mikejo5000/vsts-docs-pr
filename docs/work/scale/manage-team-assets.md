@@ -11,7 +11,7 @@ ms.date: 10/17/2017
 
 # Configure team settings 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 <!--- Still needs work, versioning, and other team settings from the admin context, add something about something, team-specific widgets--> 
 
@@ -44,10 +44,10 @@ You can configure most of your team settings from the common configuration dialo
 > [!div class="mx-tdBreakAll"]  
 > |Cards  | Board  | Charts & widgets |  General  | 
 > |-------------|----------|---------|---------|   
-> |- [Fields](../customize/customize-cards.md)<br/>- [Styles](../customize/customize-cards.md#style-rule)<br/>- [Tag colors](../customize/customize-cards.md#color-tags)<br/>- [Annotations](../customize/customize-cards.md#annotations)<br/>- [Tests](../customize/customize-cards.md#tests) |- [Columns](../kanban/add-columns.md)<br/>- [Swimlanes](../kanban/expedite-work.md)<br/>- [Card reordering](../customize/reorder-cards.md) |- [Cumulative flow chart & widget](../../report/dashboards/cumulative-flow.md#configure)<br/> -[Lead & Cycle time widgets](../../report/dashboards/cycle-time-and-lead-time.md)<br/> -[Velocity chart and widget](../../report/dashboards/team-velocity.md) |-[Backlogs](../customize/select-backlog-navigation-levels.md)<br/>- [Working days](../kanban/expedite-work.md)<br/>- [Working with bugs](../customize/show-bugs-on-backlog.md) |
+> |- [Fields](../customize/customize-cards.md)<br/>- [Styles](../customize/customize-cards.md#style-rule)<br/>- [Tag colors](../customize/customize-cards.md#color-tags)<br/>- [Annotations](../customize/customize-cards.md#annotations)<br/>- [Tests](../customize/customize-cards.md#tests) |- [Columns](../kanban/add-columns.md)<br/>- [Swimlanes](../kanban/expedite-work.md)<br/>- [Card reordering](../customize/reorder-cards.md) |- [Cumulative flow chart & widget](../../report/dashboards/cumulative-flow.md#configure)<br/> -[Lead & Cycle time widgets](../../report/dashboards/cycle-time-and-lead-time.md)<br/> -[Velocity chart and widget](../../report/dashboards/velocity-chart-data-store.md) |-[Backlogs](../customize/select-backlog-navigation-levels.md)<br/>- [Working days](../kanban/expedite-work.md)<br/>- [Working with bugs](../customize/show-bugs-on-backlog.md) |
 
 
-## Related notes 
+## Related articles 
 
 To create additional teams, see [Add teams and team members](multiple-teams.md).  
 

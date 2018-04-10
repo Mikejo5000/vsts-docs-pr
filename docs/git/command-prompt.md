@@ -7,8 +7,10 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-git 
 ms.manager: douge
 ms.author: sdanie
-ms.date: 12/02/2016
+ms.date: 03/14/2018
+monikerRange: '>= tfs-2013'
 ---
+
 
 #  Git command reference 
 #### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 Update 2
@@ -28,7 +30,7 @@ Team Explorer and the Git command line work great together. When you make update
 > [!TIP]
 > Windows users: If you aren't using Visual Studio, installing [Git for Windows](https://git-scm.com/download/win) will set up the [Git credential manager for Windows](set-up-credential-managers.md). The credential manager makes it easy to authenticate with your VSTS repos.
 
-While in Visual Studio, open a command prompt in your repo from Team Explorer’s **Connect** view. Right-click on your local repo and select **Open Command Prompt**
+While in Visual Studio, open a command prompt in your repo from Team Explorer's **Connect** view. Right-click on your local repo and select **Open Command Prompt**
    
 ![Open a command prompt to a repo from inside Visaul Studio](_img/command-prompt/open_cmd_prompt_repo_vs.png)
 

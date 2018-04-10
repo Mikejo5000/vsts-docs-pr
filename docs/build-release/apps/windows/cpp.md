@@ -1,20 +1,22 @@
 ---
-title: Build your C++ app
-description: Build your C++ app in Team Foundation Server and Visual VSTS
+title: Build your Visual C++ app
+description: Build your Visual C++ app with Team Foundation Server and VSTS
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: 49886DF3-3689-48B3-8F1C-CA99DAFD1E49
 ms.manager: douge
 ms.author: alewis
-ms.date: 12/15/2016
+ms.date: 02/16/2018
 ms.topic: get-started-article
+monikerRange: '>= tfs-2017'
 ---
 
-# Build your C++ app for Windows
 
-**VSTS | TFS 2017 Update 2**
+# Build your Visual C++ app
 
-Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide a highly customizable continuous integration (CI) process to automatically build your C++ application whenever your team pushes or checks in code. In this quickstart you learn how to define your CI process for a C++ application developed using Visual Studio IDE.
+**VSTS | TFS 2018 | TFS 2017.2**
+
+Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide a highly customizable continuous integration (CI) process to automatically build your C/C++ application whenever your team pushes or checks in code. In this quickstart you learn how to define your CI process for a C++ application compiled with Visual C++.
 
 ## Prerequisites
 
@@ -54,7 +56,7 @@ https://github.com/adventworks/cpp-sample
 
  ![Screenshot showing button to set up build for a repository](../_shared/_img/set-up-first-build-from-code-hub.png)
 
- You are taken to the **Build & Release** hub and asked to **Select a template** for the new build definition.
+ You are taken to the **Build and Release** hub and asked to **Select a template** for the new build definition.
 
  # [GitHub repo](#tab/github)
 
@@ -64,11 +66,11 @@ https://github.com/adventworks/cpp-sample
 
 1. In the right panel, select **.NET Desktop**, and then click **Apply**. This template is useful in building most of the Visual Studio solutions including those that contain classic C++ projects.
 
- You now see all the tasks that were automatically added to the build definition by the template. These are the steps that will automatically run every time you check in code.
+ You now see all the tasks that were automatically added to the build definition by the template. These are the steps that will automatically run every time you push code changes.
 
-1. For the **Default agent queue**:
+1. For the **Agent queue**:
 
- * **VSTS:** Select _Hosted VS2017_. This is how you can use our pool of agents that have the software you need to build your app.
+ * **VSTS:** Select _Hosted VS2017_. This uses a VSTS pool of agents that have the software needed to build your app.
 
  * **TFS:** Select a queue that includes a [Windows build agent](../../actions/agents/v2-windows.md).
 
@@ -104,7 +106,7 @@ https://github.com/adventworks/cpp-sample
 
 1. Select **Parallel** if you have multiple build agents and want to build your configuration/platform pairings in parallel.
 
-1. Click **Save and queue** to kick off your first build. On the **Queue build** dialog box, click **Queue**.
+1. Click **Save & queue** to kick off your first build. On the **Save build definition and queue** dialog box, click **Save & queue**.
 
 1. A new build is started. You'll see a link to the new build on the top of the page. Click the link to watch the new build as it happens.
 

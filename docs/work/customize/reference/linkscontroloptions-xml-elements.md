@@ -1,12 +1,13 @@
 ---
-title: LinksControlOptions XML elements reference | VSTS & TFS 
+title: LinksControlOptions XML elements reference 
+titleSuffix: VSTS & TFS  
 description: XML syntax to scope the allowed links within a links control element used in the new web form layout 
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: FA2BB293-5AC9-4861-B9B1-1033E4E078D4
 ms.manager: douge
 ms.author: kaelli
-ms.date: 04/14/2017
+ms.date: 02/02/2018
 ---
 
 # LinksControlOptions XML elements (Web form) 
@@ -14,7 +15,7 @@ ms.date: 04/14/2017
 <b>VSTS (Hosted XML) | TFS 2018 | TFS 2017 | [Previous versions](linkscontroloptions-elements.md)</b>
 
 
->[!IMPORTANT]  
+> [!IMPORTANT]  
 >This topic applies to team project customization for Hosted XML and On-premises XML (TFS 2017 and later versions) process models. For TFS 2015, see [LinksControlOptions elements (Client and web, TFS 2015) ](linkscontroloptions-elements.md). <br/><br/>
 >Customizing the links control is not a supported feature For the Inheritance process model. For an overview of process models, see [Customize your work tracking experience](../customize-work.md).  
  
@@ -29,7 +30,7 @@ The  **LinksControlOptions** element is a child element of the **Control** eleme
 - **Column**: Use to specify the work item fields and link type attributes listed within the links control
  
 <blockquote style="font-size: 13px"><b>Note: </b>The standard ![Links page icon](../../_img/icons/icon-links-tab-wi.png) [Links page](../../work-items/work-item-form-controls.md#link-wi) provides a non-customizable control that displays all link types. From this control, you may view all links associated with the work item, and link the work item to other work items or external objects.  
-</blockquote>  
+</blockquote>      
 
 ## Summary of what's changed
 
@@ -141,7 +142,7 @@ The Development links control displays all of your development links, whether ba
 
 The following code sample specifies the syntax used to code the Development link control. This control supports adding external links of the specified types&mdash; pull requests, builds, branches, commits, and other development-related links&mdash;  and grouping them according to the Development experience.  
 
->[!NOTE]  
+> [!NOTE]    
 >The link types, `Found in build` and `Integrated in build` are valid for VSTS.  
 
 > [!div class="tabbedCodeSnippets"]
@@ -151,14 +152,14 @@ The following code sample specifies the syntax used to code the Development link
 	  <ListViewOptions GroupLinks="false">
 		</ListViewOptions>
 		<LinkFilters>
-            <ExternalLinkFilter Type="Build" />
-            <ExternalLinkFilter Type="Integrated in build" />
-            <ExternalLinkFilter Type="Pull Request" />
-            <ExternalLinkFilter Type="Branch" />
-            <ExternalLinkFilter Type="Fixed in Commit" />
-            <ExternalLinkFilter Type="Fixed in Changeset" />
-            <ExternalLinkFilter Type="Source Code File" />
-            <ExternalLinkFilter Type="Found in build" />
+               <ExternalLinkFilter Type="Build" />
+               <ExternalLinkFilter Type="Integrated in build" />
+               <ExternalLinkFilter Type="Pull Request" />
+               <ExternalLinkFilter Type="Branch" />
+                <ExternalLinkFilter Type="Fixed in Commit" />
+               <ExternalLinkFilter Type="Fixed in Changeset" />
+               <ExternalLinkFilter Type="Source Code File" />
+               <ExternalLinkFilter Type="Found in build" />
 		  </LinkFilters>
 	</LinksControlOptions>
 </Control>
@@ -274,7 +275,7 @@ The following table describes the **LinksControlOptions** element and its child 
 <tr>
 <td><p> <strong>Columns</strong> </p></td>
 <td><p>Optional child element of the <strong>LinksControlOptions</strong> element.</p>
-<p>Container element for one or more <strong>Column</strong> elements you use to specify the fields that dispaly in the control's grid. </p>
+<p>Container element for one or more <strong>Column</strong> elements you use to specify the fields that display in the control's grid. </p>
 <pre><code>&lt;Columns &gt;
    &lt;Column Name=&quot;FieldName&quot; /&gt; 
 &lt;/Columns &gt;</code></pre>
@@ -285,6 +286,8 @@ The following table describes the **LinksControlOptions** element and its child 
 <td><p>Optional <strong>LinkFilters</strong> element used to specify an external link type. With an external link type, users can create a link relationship to objects that are not work items, such as changesets, hyperlinks, and files under version control. </p>
 <pre><code>&lt;ExternalLinkFilter Type=&quot;ExternalLinkName&quot; /&gt;</code></pre>
 <p>Examples of external link types you can specify include: ```Fixed in Changeset```, ```Fixed in Commit```, ```Source Code File```, ```Pull Request```, and ```Hyperlink```. See [External link types](link-type-element-reference.md#external-link-types) for a complete list. </p>
+<blockquote><b>Important: </b>For import purposes, use the name `Workitem Hyperlink` in place of `Hyperlink` and `Source Code File` in place of `Versioned item`. 
+</blockquote>
 
 <p>Specify ```System.IncludeAllExternalLinks``` to include all external link types.</p>
 <blockquote><b>Note: </b>When you specify  ```System.IncludeAllExternalLinks```, the system displays all links in alphabetical order by external link type. 
@@ -420,7 +423,7 @@ WorkItemFiltersScope="Project" &gt;
 
 
 
-## Related notes 
+## Related articles 
 
 You use scoped links controls to support your team and business needs. You [link work items to support traceability and manage dependencies](../../track/link-work-items-support-traceability.md). To learn more about customizing the web form, see these topics: 
 

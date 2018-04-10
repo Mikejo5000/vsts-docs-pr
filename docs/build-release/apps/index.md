@@ -7,7 +7,9 @@ ms.assetid: 955133FD-76B4-4D63-AB46-9043D96F8A9D
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/22/2016
+monikerRange: '>= tfs-2015'
 ---
+
 
 # Build and deploy your app
 
@@ -24,6 +26,7 @@ continuous integration (CI) and continuous deployment (CD) process.
 <ul style="padding-left:30px">
  <li style="margin-bottom:5px">[ASP.NET 4 apps](aspnet/build-aspnet-4.md)</li>
  <li style="margin-bottom:5px">[ASP.NET Core apps](aspnet/build-aspnet-core.md)</li>
+ <li style="margin-bottom:5px">[Java apps with Gradle](../apps/java/build-gradle.md)</li>
  <li style="margin-bottom:5px">[Java apps with Maven](../apps/java/build-maven.md)</li>
  <li style="margin-bottom:5px">[Node apps](nodejs/build-gulp.md)</li>
  <li style="margin-bottom:5px">[Cloud Services apps](aspnet/build-aspnet-cloudservice.md)</li>
@@ -38,7 +41,7 @@ continuous integration (CI) and continuous deployment (CD) process.
 <ul style="padding-left:30px">
  <li style="margin-bottom:5px">[Xamarin mobile apps](mobile/xamarin.md)</li>
  <li style="margin-bottom:5px">[Xcode mobile projects](mobile/xcode-ios.md)</li>
- <li style="margin-bottom:5px">[Simple, secure CI app signing](mobile/secure-certs.md)</li>
+ <li style="margin-bottom:5px">[Sign your mobile app](mobile/app-signing.md)</li>
 </ul>
 </div>
 
@@ -113,6 +116,8 @@ continuous integration (CI) and continuous deployment (CD) process.
 
 [!INCLUDE [temp](../_shared/qa-agents.md)]
 
+::: moniker range="< vsts"
 [!INCLUDE [temp](../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->

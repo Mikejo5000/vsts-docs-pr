@@ -4,9 +4,12 @@ description: Understand triggers in Microsoft Release Management for Visual Stud
 ms.assetid: FDB5DA41-1ADA-485E-86BD-8BF147788568
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 11/14/2017
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: ">= tfs-2015"
 ---
 
 # Triggers in Release Management
@@ -31,12 +34,22 @@ and Git-based sources such as Team Foundation Git, GitHub, and other Git reposit
 If you have linked multiple Team Foundation Build artifacts to a release definition,
 you can configure continuous deployment for each of them.
 In other words, you can choose to have a release created automatically when a new build
-of any of those artifacts is produced. You can further choose to create the release only
-when the build is produced by compiling code from certain branches
-(only applicable when the code is in a VSTS or a TFS Git repository)
-or when the build has certain tags.
+of any of those artifacts is produced.
 
-Note that, even though a release is automatically created, it
+You add build branch filters if you want to create the release only
+when the build is produced by compiling code from certain branches
+(only applicable when the code is in a TFVC, Git, or GitHub repository)
+or when the build has certain tags. These can be both include and exclude filters.
+For example, use **features/\*** to include all builds under the **features** branch.
+You can also include [custom variables](variables.md) in a filter value.
+
+Alternatively, you can specify a filter to use the default branch specified
+in the build definition. This is useful when, for example, the default build branch
+changes in every development sprint. It means you don't need to update the trigger
+filter across all release definitions for every change - instead you just change the
+default branch in the build definition.
+
+>Note that, even though a release is automatically created, it
 might not be deployed automatically to any environments. The
 [environment triggers](#env-triggers) govern when and if a release should be deployed to an environment.
 
@@ -83,10 +96,16 @@ You can combine the automated settings to have releases created
 automatically either when a new build is available or according to
 a schedule.
 
+::: moniker range="tfs-2015"
+
 > **TFS 2015**: The following features are not available in TFS 2015 -
 continuous deployment triggers for multiple artifact sources,
 multiple scheduled triggers, combining scheduled and continuous deployment triggers in the same definition,
 continuous deployment based on the branch or tag of a build.
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017"
 
 ### Parallel forked and joined deployments
 
@@ -112,6 +131,8 @@ this capability enables the configuration of complex
 and fully managed deployment pipelines to suit
 almost any release scenario.  
 
+::: moniker-end
+
 Note that you can always deploy a release directly to any of the
 environments in your release definition by selecting the
 **Deploy** action when you create a new release. In this case, the
@@ -123,6 +144,10 @@ process. Performing such direct deployments requires
 the **Manage deployments** permission, which should
 only be given to selected and approved users.
 
+::: moniker range="tfs-2015"
+
 > **TFS 2015**: Parallel fork and joined deployments are not available in TFS 2015
+
+::: moniker-end
 
 [!INCLUDE [rm-help-support-shared](../../../_shared/rm-help-support-shared.md)]

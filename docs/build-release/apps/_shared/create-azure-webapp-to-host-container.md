@@ -1,8 +1,12 @@
+---
+ms.topic: include
+---
+
 ## Create an Azure web app to host a container
 
 1. Sign into your Azure Account at [https://portal.azure.com](https://portal.azure.com).
 
-1. In the Azure Portal, choose **New**, **Web + Mobile**, then choose **Web App for Containers**.    
+1. In the Azure Portal, choose **Create a resource**, **New**, **Web + Mobile**, then choose **Web App for Containers**.    
 
 1. Enter a name for your new web app, and select or create a new Resource Group.
    Then choose **Configure container** and select **Azure Container Registry**.

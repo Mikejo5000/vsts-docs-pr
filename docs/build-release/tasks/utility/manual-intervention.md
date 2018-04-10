@@ -1,17 +1,20 @@
 ---
 title: Manual intervention task 
 description: Build and release task to pause an active deployment within an environment in VSTS and TFS
+ms.assetid: 2717783B-7754-4888-9A79-8DB5EC74626A
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
-ms.assetid: 2717783B-7754-4888-9A79-8DB5EC74626A
+ms.topic: reference
 ms.manager: douge
 ms.author: ahomer
-ms.date: 11/14/2017
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: 'vsts'
 ---
 
 # Utility: Manual intervention
 
-[!INCLUDE [temp](../../_shared/version-tfs-2015-update.md)]
+**VSTS**
 
 ![icon](_img/manual-intervention.png) &nbsp; Pause an active deployment within an environment, typically to perform some manual steps or actions, and then continue the automated deployment steps.
 
@@ -31,7 +34,9 @@ Can be used in only an [agentless phase](../../concepts/process/phases.md#agentl
 
 The **Manual Intervention** task does not perform deployment actions directly.
 Instead, it allows you to pause an active deployment within an environment, typically to perform some
-manual steps or actions, and then continue the automated deployment steps.
+manual steps or actions, and then continue the automated deployment steps. For example, the user may
+need to edit the details of the current release before continuing; perhaps by entering the values for
+custom variables used by the tasks in the release.
 
 The **Manual Intervention** task configuration includes an **Instructions** parameter that
 can be used to provide related information, or to specify the manual steps
@@ -54,11 +59,18 @@ For more information about using this task, see [Approvals and gates overview](.
 
 Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/ManualIntervention).
 
-## Q & A
+::: moniker range="vsts"
 
-<!-- BEGINSECTION class="md-qanda" -->
+## YAML snippet
 
-[!INCLUDE [temp](../../_shared/qa-versions.md)]
+(VSTS-only)
 
-<!-- ENDSECTION -->
+```YAML
+- task: ManualIntervention@8
+  inputs:
+    instructions:
+    emailRecipients:
+#   onTimeout: reject # reject (default), resume
+```
 
+::: moniker-end

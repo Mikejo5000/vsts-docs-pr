@@ -7,7 +7,9 @@ ms.assetid: A0C6CAF5-E953-4705-80C5-896267A910AF
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
+
 
 # Build: CMake
 
@@ -46,6 +48,20 @@ Arguments that you want to pass to CMake.
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
+::: moniker range="vsts"
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: CMake@1
+  inputs:
+#   workingDirectory: build
+    cmakeArgs:
+```
+
+::: moniker-end
 
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->
@@ -97,6 +113,8 @@ The [hosted agents](../../concepts/agents/hosted.md) have CMake installed, but y
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
+::: moniker range="< vsts"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->

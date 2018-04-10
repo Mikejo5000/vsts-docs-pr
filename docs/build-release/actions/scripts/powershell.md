@@ -7,11 +7,13 @@ ms.assetid: 7D184F55-18BC-40E5-8BE7-283A0DB8E823
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/04/2016
+monikerRange: '>= tfs-2015'
 ---
+
 
 # Use a PowerShell script to customize your build process
 
-**VSTS | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/dn376353%28v=vs.120%29.aspx)**
+**VSTS | TFS 2018 | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/dn376353%28v=vs.120%29.aspx)**
 
 When you are ready to move beyond the basics of compiling and testing your code, use a PowerShell script to add your team's business logic to your build process.
 
@@ -174,6 +176,8 @@ The build runs the script same branch of the code you are building.
 
 You can use named parameters. Other kinds of parameters, such as switch parameters, are not yet supported and will cause errors.
 
+::: moniker range="< vsts"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->

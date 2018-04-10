@@ -1,12 +1,15 @@
 ---
 title: VSTS and TFS Build and Test - Publish Code Coverage Results step
-ms.assetid: 18F19A70-E9FF-4697-A3E9-CA3B34FCB15D
 description: Publish Code Coverage Results with the Visual Studio to integrate cloud-based load tests into your build and release pipelines 
+ms.assetid: 18F19A70-E9FF-4697-A3E9-CA3B34FCB15D
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
+ms.topic: reference
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/17/2017
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2015'
 ---
 
 # Test: Publish Code Coverage Results
@@ -33,21 +36,39 @@ The build agent must have the following capabilities:
 | **Additional Files** | The file path pattern specifying any additional code coverage files to be published as artifacts of the build. The value may contain [minimatch patterns](../file-matching-patterns.md). Example: `$(System.DefaultWorkingDirectory)/**/*.exec` |
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
 
+::: moniker range="vsts"
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: PublishCodeCoverageResults@1
+  inputs:
+#   codeCoverageTool: JaCoCo # Cobertura, JaCoCo (default)
+    summaryFileLocation:
+    reportDirectory:
+    additionalCodeCoverageFiles:
+#   failIfCoverageEmpty: false
+```
+
+::: moniker-end
+
 ## More Information
 
 * [Continuous testing scenarios and capabilities](../../test/index.md)
 
 ## Related tasks
 
-* [Visual Studio Test](visual-studio-test.md)  
-* [Visual Studio Test Agent Deployment](visual-studio-test-agent-deployment.md)  
+* [Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTest/README.md)  
 * [Publish Test Results](publish-test-results.md)
-* [Run Functional Tests](run-functional-tests.md)
 
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->
 
+::: moniker range="< vsts"
 [!INCLUDE [qa-versions](../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->
 

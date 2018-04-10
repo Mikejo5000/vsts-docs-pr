@@ -7,15 +7,18 @@ ms.assetid: 9FD46361-985B-4886-A042-9C322CE3CD92
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/26/2016
+monikerRange: 'tfs-2015'
 ---
+
+
 # Deploy an agent on Windows for TFS 2015
 
-**[VSTS](v2-windows.md) | [TFS 2017](v2-windows.md) | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/en-us/library/ms252495%28v=vs.120%29.aspx)**
+**[VSTS](v2-windows.md) | [TFS 2018](v2-windows.md) | [TFS 2017](v2-windows.md) | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/en-us/library/ms252495%28v=vs.120%29.aspx)**
 
 To build and deploy Windows, Azure, and other Visual Studio solutions you may need a Windows agent. Windows agents can also build and deploy Java and Android apps.
 
 > Before you begin:
- * If you use [VSTS](https://www.visualstudio.com/products/visual-studio-team-services-vs) or a TFS 2017 server, then you need to use a newer agent. See [Deploy an agent on Windows](v2-windows.md).
+ * If you use [VSTS](https://www.visualstudio.com/products/visual-studio-team-services-vs) or TFS 2017 and newer, then you need to use a newer agent. See [Deploy an agent on Windows](v2-windows.md).
  * If you use TFS, you might already have a build and release agent running. An agent is automatically or optionally deployed in some cases when you [set up Team Foundation Server](../../../tfs-server/install/single-server.md).
  *  Otherwise, you've come to the right place to set up an agent on Windows for TFS 2015. Continue to the next section.
 
@@ -164,9 +167,9 @@ Prints usage information.
 | TFS version | Agent version
 |-|-
 | 2015 RTM | 1.83.2
-| 2015 Update 1 | 1.89.0
-| 2015 Update 2 | 1.95.1
-| 2015 Update 3 | 1.95.3
+| 2015.1 | 1.89.0
+| 2015.2 | 1.95.1
+| 2015.3 | 1.95.3
 
 #### Can I still configure and use XAML build controllers and agents?
 
@@ -174,6 +177,8 @@ Yes. If you are an existing customer with custom build processes you are not yet
 
 ![Configure XAML build controllers and agents](_img/v1-windows/tfs-on-premises-xaml-build-system-configure-start.png)
 
+::: moniker range="< vsts"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->

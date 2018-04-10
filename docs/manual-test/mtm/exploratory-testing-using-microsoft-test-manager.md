@@ -4,9 +4,12 @@ description: Manual and exploratory testing - Exploratory testing using Microsof
 ms.assetid: bf3fc3b0-7e43-407c-b2bc-dcf773ae889f
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-manual
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: ">= tfs-2015"
 ---
 
 # Exploratory testing using Microsoft Test Manager
@@ -14,6 +17,8 @@ ms.date: 09/26/2017
 [!INCLUDE [version-header-vs-ts-tfs](../_shared/version-header-vs-ts-tfs.md)] 
 
 While you work with your application, Microsoft Test Manager (MTM) can record your actions, comments, screenshots and other data. The recording makes it easy to reproduce bugs. And you can quickly play back your tests whenever the application is updated.  
+
+[!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
   
 ## Explore your app  
   

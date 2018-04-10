@@ -4,14 +4,17 @@ description: Understand variable groups in Visual Studio Team Services (VSTS) an
 ms.assetid: A8AA9882-D3FD-4A8A-B22A-3A137CEDB3D7
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 11/01/2017
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: ">= tfs-2017"
 ---
 
 # Variable groups
 
-**TFS 2017 | VSTS**
+**VSTS | TFS 2018 | TFS 2017**
 
 Use a variable group to store values that you want to make available across
 multiple build and release definitions. Variable groups are defined and managed in the **Library** tab of the
@@ -80,16 +83,20 @@ tab, select **Variable groups**, and then choose **Link variable group**.
 
 ![Linking a variable group](_img/link-variable-group.png)
 
-When a variable group is linked to a definition, you can access the value of the variables in exactly
+You can link a variable group to a release definition, or to a specific environment in a release definition.
+When you link to a release definition, all the variables in the group are available for use in all environments
+of that definition. When you link to an environment, the variables from the variable group scoped to that
+environment and are not accessible in the other environments of the same release. 
+
+You access the value of the variables in a linked variable group in exactly
 the same way as [variables you define within the definition itself](../definitions/release/variables.md#custom-variables).
 For example, to access the value of a variable named **customer** in a variable group linked to the definition,
 use `$(customer)` in a task parameter or a script. However, secret variables (encrypted variables and key vault variables) 
 cannot be accessed directly in scripts - instead they must be passed as arguments to a task. 
 
-> You cannot link a variable group to a specific environment in a release definition at present.
-All the variables in the group are available for use in all environments of that definition.
+[!INCLUDE [variable-collision](../definitions/_shared/variable-collision.md)]
 
 Any changes made centrally to a variable group, such as a change in the value of a variable or the addition of new variables,
-will automatically be made available to all the definitions in which the variable group is used.
+will automatically be made available to all the definitions or environments to which the variable group is linked.
 
 [!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]

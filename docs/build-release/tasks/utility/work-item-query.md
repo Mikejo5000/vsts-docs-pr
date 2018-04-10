@@ -1,19 +1,22 @@
 ---
 title: Work item query task 
 description: Build and release task to ensure the number of matching items returned by a work item query in within the configured threshold in VSTS and TFS
+ms.assetid: F24517BD-FEA2-4EFF-8030-EF441B9C7F67
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
-ms.assetid: F24517BD-FEA2-4EFF-8030-EF441B9C7F67
+ms.topic: reference
 ms.manager: douge
 ms.author: ahomer
-ms.date: 11/14/2017
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: 'vsts'
 ---
 
 # Utility: Query Work Items
 
-[!INCLUDE [temp](../../_shared/version-tfs-2015-update.md)]
+**VSTS**
 
-![](_img/query-work-items.png) &nbsp; Ensure the number of matching items returned by a work item query in within the configured thresholds.
+![icon](_img/query-work-items.png) &nbsp; Ensure the number of matching items returned by a work item query in within the configured thresholds.
 
 Can be used in only an [agentless phase](../../concepts/process/phases.md#agentless-phase) of a release definition.
 
@@ -36,10 +39,18 @@ For more information about using this task, see [Approvals and gates overview](.
 
 Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/QueryWorkItems).
 
-## Q & A
+::: moniker range="vsts"
 
-<!-- BEGINSECTION class="md-qanda" -->
+## YAML snippet
 
-[!INCLUDE [temp](../../_shared/qa-versions.md)]
+(VSTS-only)
 
-<!-- ENDSECTION -->
+```YAML
+- task: queryWorkItems@0
+  inputs:
+    queryId:
+#   maxThreshold: 0
+#   minThreshold: 0
+```
+
+::: moniker-end

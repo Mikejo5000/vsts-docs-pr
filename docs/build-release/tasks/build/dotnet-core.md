@@ -7,7 +7,9 @@ ms.assetid: 1CFB5762-5ABB-4107-BDF0-5079555101DC
 ms.manager: douge
 ms.author: amullans
 ms.date: 09/01/2017
+monikerRange: '>= tfs-2017'
 ---
+
 
 # Build: .NET Core
 
@@ -234,12 +236,20 @@ None
 
 <!-- BEGINSECTION class="md-qanda" -->
 
+### Why is my build or publish step failing to restore packages?
+
+Most `dotnet` commands, including `build` and `publish`, include an implicit `restore` step. This will fail against authenticated feeds, even if you ran a successful `dotnet restore` in an earlier step, because the earlier step will have cleaned up the credentials it used. 
+
+To fix this issue, add the `--no-restore` flag to the Arguments textbox.
+
 [!INCLUDE [temp](../_shared/nuget-step-qa.md)]
 
 [!INCLUDE [temp](../../_shared/qa-definition-common-all-platforms.md)]
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
+::: moniker range="< vsts"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->

@@ -11,7 +11,7 @@ ms.date: 09/08/2017
 
 # Control access to functional areas
 
-[!INCLUDE [temp](../../../_shared/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [temp](../../../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
 You can configure the initial security settings for the following functional areas for a team project: 
 - Work item queries
@@ -101,9 +101,9 @@ You can control access to activities in Lab Management by changing the Lab plug-
 
  
   
-## Related notes
+## Related articles
 - [Configure initial groups, teams, members, and permissions](configure-initial-groups-teams-members-permissions.md)   
-- [Permission reference](../../../../security/permissions.md)
+- [Add administrators, set permissions at the project-level or project collection-level](../../../../security/set-project-collection-level-permissions.md)
 - [Configure Lab Management with TFSLabConfig, Permissions](../../../../tfs-server/command-line/tfslabconfig-cmd.md#permissions)
 
  

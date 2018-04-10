@@ -2,12 +2,13 @@
 title: VSTS and TFS Documentation | VSTS & TFS 
 description: Docs for DevOps and Agile tools provided by Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) 
 layout: HubPage 
+hide_bc: true
 ms.prod: vs-devops-alm 
 ms.technology: vs-devops-overview 
 ms.assetid: B13C10AF-4FBC-493A-869F-79BABD6D453A 
 ms.manager: douge 
 ms.author: kaelli 
-ms.date: 07/26/2017
+ms.date: 02/24/2018
 featureFlags:
 - clicktale 
 ---
@@ -52,7 +53,7 @@ featureFlags:
                 </a>
             </li>
             <li>
-                <a href="https://www.visualstudio.com/team-services/updates/">
+                <a href="https://aka.ms/vsts/releasenotes/latest">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
@@ -94,6 +95,7 @@ featureFlags:
                                                 <h3>Add your code</h3>
                                                 <ul class="noBullet">
                                                     <li><a class="barLink" href="/en-us/vsts/git/">Git Repositories</a></li>
+                                                    <li><a class="barLink" href="/en-us/vsts/java/">Get started with Java</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -202,9 +204,9 @@ featureFlags:
                                     <h3>Code</h3>
                                     <ul>
                                         <li><a class="barLink" href="/vsts/git/index">Git Repositories</a></li>
-                                        <li><a class="barLink" href="/vsts/git/tutorial/pullrequest">Pull Requests</a></li>
-                                        <li><a class="barLink" href="/vsts/git/concepts/forks">Forks</a></li>
-                                        <li><a class="barLink" href="/vsts/git/branch-policies">Branch Policies</a></li>
+                                        <li><a class="barLink" href="/vsts/git/pull-requests-overview">Pull Requests</a></li>
+                                        <li><a class="barLink" href="/vsts/git/forks-overview">Forks</a></li>
+                                        <li><a class="barLink" href="/vsts/git/branch-policies-overview">Branch Policies</a></li>
                                         <li><a class="barLink" href="/vsts/tfvc/index">TFVC</a></li>
                                     </ul>
                                     <h3>Continuous Integration &amp; Delivery</h3>
@@ -219,9 +221,10 @@ featureFlags:
                                     </ul>
                                     <h3>Testing</h3>
                                     <ul>
-                                        <li><a class="barLink" href="/visualstudio/test/unit-test-your-code">Unit Testing</a></li>
+                                        <li><a class="barLink" href="/visualstudio/test/unit-test-your-code">Unit and Functional Testing</a></li>
                                         <li><a class="barLink" href="/vsts/manual-test/index">Exploratory &amp; Manual Testing</a></li>
                                         <li><a class="barLink" href="/vsts/load-test/index">Load Testing</a></li>
+                                        <li><a class="barLink" href="/vsts/build-release/test/index">Continuous Testing</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -261,7 +264,7 @@ featureFlags:
                                         <li><a class="barLink" href="/vsts/tfs-server/index">Server Administration (TFS)</a></li>
                                         <li><a class="barLink" href="/vsts/security/index">Security and Identity</a></li>
                                         <li><a class="barLink" href="/vsts/billing/index">Billing</a></li>
-                                        <li><a class="barLink" href="/vsts/teams/index">Scale and Configure Teams</a></li>
+                                        <li><a class="barLink" href="/vsts/settings/index">Scale and Configure Teams</a></li>
                                         <li><a class="barLink" href="/vsts/marketplace/index">Manage Extensions</a></li>
                                         <li><a class="barLink" href="/vsts/report/sharepoint-dashboards/">SharePoint Integration</a></li>
                                         <li><a class="barLink" href="/vsts/work/tfs-ps-sync/">Project Server Integration</a></li>
@@ -306,7 +309,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/git/pull-requests">
+                                <a href="/vsts/git/pull-requests-overview">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -325,7 +328,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/git/concepts/forks">
+                                <a href="/vsts/git/forks-overview">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -344,7 +347,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/git/branch-policies">
+                                <a href="/vsts/git/branch-policies-overview">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -374,7 +377,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>TFVC</h3>
-                                                    <p>Manage code with centralized, conventional version control.</p>
+                                                    <p>Manage code with centralized version control.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -537,8 +540,8 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Unit Testing</h3>
-                                                    <p>Maintain code health, avoid regressions, and achieve code coverage.</p>
+                                                    <h3>Unit and Functional Testing</h3>
+                                                    <p>Maintain code health, avoid regressions, and achieve code coverage using Visual Studio.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -578,6 +581,26 @@ featureFlags:
                                                 <div class="cardText">
                                                     <h3>Load Testing</h3>
                                                     <p>Performance test your code with hundreds of thousands of users.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/vsts/build-release/test/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/i_continuous-testing.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Continuous Testing</h3>
+                                                    <p>Automate build-deploy-test workflows to test your changes in a fast,
+                                                        scalable, and efficient manner.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -973,7 +996,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/teams/index">
+                                <a href="/vsts/settings/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">

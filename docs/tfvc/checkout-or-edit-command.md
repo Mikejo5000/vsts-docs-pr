@@ -7,7 +7,9 @@ ms.technology: vs-devops-tfvc
 ms.manager: douge
 ms.author: sdanie
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
+
 
 # Checkout (or Edit) command
 
@@ -24,8 +26,8 @@ Checks out a file and changes its pending change status to Edit. You can call th
 |**Parameter**|**Description**|
 |---|---|
 |**/encoding**|Ignore this parameter.|
-|*itemspec*|Specifies the scope of the items to check in. For syntax, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).|
-|**/lock**|Applies or removes a lock. See [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).|
+|*itemspec*|Specifies the scope of the items to check out. For syntax, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).|
+|**/lock**|Applies or removes a lock. See [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md#itemspec).|
 |**/login**:*username*,[*password*]|Specifies the user account to run the command. See [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).|
 |**/recursive**|Recursively checks out items in the specified directory and any subdirectories.|
 
@@ -49,7 +51,7 @@ Checks out the files program1.cs and program2.c.
 
 ## Tips
 
--   ![Tip](_img/checkout-or-edit-command/IC572374.png) If you are beginning a new task, it’s probably a good idea for you to download the latest files from the server before you check out files and begin your work. See [Get command](get-command.md).
+-   ![Tip](_img/checkout-or-edit-command/IC572374.png) If you are beginning a new task, it's probably a good idea for you to download the latest files from the server before you check out files and begin your work. See [Get command](get-command.md).
 
 -   ![Tip](_img/checkout-or-edit-command/IC572374.png) When you begin editing a file in a [local workspace](decide-between-using-local-server-workspace.md), it is automatically checked out for you.
 
@@ -59,7 +61,7 @@ Checks out the files program1.cs and program2.c.
 
     -   At the command prompt by using the [Status command](status-command.md).
 
--   ![Tip](_img/checkout-or-edit-command/IC572374.png) When you are ready to check in your changes to the team’s codebase on the server, use the [Checkin command](checkin-command.md).
+-   ![Tip](_img/checkout-or-edit-command/IC572374.png) When you are ready to check in your changes to the team's codebase on the server, use the [Checkin command](checkin-command.md).
 
 -   ![Tip](_img/checkout-or-edit-command/IC572374.png) If you need to set aside changes (and perhaps also want to clean your workspace for another task), use the [Shelve Command](shelve-command.md).
 

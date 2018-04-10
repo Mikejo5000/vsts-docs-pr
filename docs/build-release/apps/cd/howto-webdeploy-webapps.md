@@ -1,18 +1,21 @@
 ---
-ms.assetid: CB3939AB-87D4-4BDB-8531-06096FF230C6
 title: How To Next Steps to Azure App Services
 description: Next steps for deploying an app to a Azure App Services from Release Management in VSTS or TFS
+ms.assetid: CB3939AB-87D4-4BDB-8531-06096FF230C6
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: ">= tfs-2015"
 ---
 
 # How To: Extend your deployments to Azure App Services
 
 You can quickly and easily deploy your ASP.NET or Node app to an Azure App Services website using
-Visual Studio Team Services (VSTS) or Microsoft Team Foundation Server (TFS) 2017 Update 2,
+Visual Studio Team Services (VSTS) or Microsoft Team Foundation Server (TFS) 2017.2,
 as demonstrated in [this example](deploy-webdeploy-webapps.md). In addition, you can extend your deployment in a range of ways
 depending on your scenario and requirements. This topic shows you how to:
 
@@ -75,6 +78,8 @@ If you want to deploy to a staging slot in an Azure App Services website, and th
 You might also consider [Configuring Auto Swap](https://docs.microsoft.com/en-us/azure/app-service-web/web-sites-staged-publishing#Auto-Swap)
 for your Azure App Services web app to automatically swap the app into production after successful deployment.
 
+[!INCLUDE [edit-template-vars-in-environment](../_shared/edit-template-vars-in-environment.md)]
+
 <a name="multipleapps"></a>
 ## Deploy multiple apps in the same release
 
@@ -94,7 +99,7 @@ If you deploy releases to multiple environments, you can substitute configuratio
    `connectionString = <value>`.
 
 1. In the **Azure App Service Deploy** task, select the check box for **XML variable substitution** under **File Transforms and Variable Substitution Options**.
-   This option is present only in version **3.\*** and above of the task. It is not yet available in TFS.
+   This option is present only in version **3.\*** and above of the task.
    
 > If you prefer to manage environment configuration settings in your own database or Azure keyvault, add a task to the environment to read and emit those values using `##vso[task.setvariable variable=connectionString;issecret=true]<value>`
    

@@ -7,8 +7,10 @@ ms.topic: get-started-article
 ms.assetid: F0829366-2AC1-4344-9494-98CACEC38806
 ms.manager: douge
 ms.author: alewis
-ms.date: 12/11/2017
+ms.date: 12/20/2017
+monikerRange: '>= tfs-2017'
 ---
+
 
 # Build your Node.js app with Gulp
 
@@ -101,7 +103,7 @@ Begin by creating your build definition.
 
  ![Screenshot showing button to set up build for a repository](../_shared/_img/set-up-first-build-from-code-hub.png)
 
- You are taken to the **Build & Release** hub and asked to **Select a template** for the new build definition.
+ You are taken to the **Build and Release** hub and asked to **Select a template** for the new build definition.
 
 1. In the right panel, search for `node`, select **NodeJS with Gulp**, and then click **Apply**.
 
@@ -146,7 +148,7 @@ To get ready for continuous deployment, choose which kind of deployment target y
 
 # [Azure web app or IIS server](#tab/deploy-windows/web)
 
-All the tasks you need were automatically added to the build definition by the template. These are the steps that will automatically run every time you check in code. 
+All the tasks you need were automatically added to the build definition by the template. These are the steps that will automatically run every time you push code changes.
 
 Select **Tasks**. Select the **Run gulp** task from the tasks. On the right side, you see the parameters for the task. Under the section JUnit Test Results, make sure the option to **Publish to TFS/VSTS** is selected.
 
@@ -263,7 +265,7 @@ You're nearly ready to go. Just a few more steps to complete your CI build proce
 
 # [VSTS or TFS repo](#tab/gitvsts/web)
 
-1. For the **Default agent queue**:
+1. For the **Agent queue**:
 
  * **VSTS:** Select _Hosted Linux Preview_. This is how you can use our pool of agents that have the software you need to build your app.
 
@@ -275,7 +277,7 @@ You're nearly ready to go. Just a few more steps to complete your CI build proce
 
 1. Select the **Triggers** tab in the build definition. Enable the **Continuous Integration** trigger. This will ensure that the build process is automatically triggered every time you commit a change to your repository.
 
-1. Choose **Save and queue** to kick off your first build. On the **Queue build** dialog box, choose **Queue**.
+1. Choose **Save & queue** to kick off your first build. On the **Save build definition and queue** dialog box, choose **Save & queue**.
 
 1. A new build is started. You'll see a link to the new build on the top of the page. Choose the link to watch the new build as it happens.
 
@@ -289,7 +291,7 @@ You're nearly ready to go. Just a few more steps to complete your CI build proce
 
 # [GitHub repo](#tab/github/web)
 
-1. For the **Default agent queue**:
+1. For the **Agent queue**:
 
  * **VSTS:** Select _Hosted Linux Preview_. This is how you can use our pool of agents that have the software you need to build your app.
 
@@ -301,7 +303,7 @@ You're nearly ready to go. Just a few more steps to complete your CI build proce
 
 1. Select the **Triggers** tab in the build definition. Enable the **Continuous Integration** trigger. This will ensure that the build process is automatically triggered every time you commit a change to your repository.
 
-1. Choose **Save and queue** to kick off your first build. On the **Queue build** dialog box, choose **Queue**.
+1. Choose **Save & queue** to kick off your first build. On the **Save build definition and queue** dialog box, choose **Save & queue**.
 
 1. A new build is started. You'll see a link to the new build on the top of the page. Choose the link to watch the new build as it happens.
 
@@ -364,7 +366,7 @@ See [Deploy to a Linux Virtual Machine](../cd/deploy-linuxvm-deploygroups.md).
 > [!IMPORTANT]
 > Make sure you followed the **[deployment instructions above](#deploy)** with the **Container** tab selected.
 
-See [Build and push a container for your app](../containers/build.md).
+See [Build and push a Docker image](../containers/build.md).
 
 ---
 

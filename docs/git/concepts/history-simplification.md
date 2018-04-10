@@ -5,9 +5,11 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-git
 ms.assetid: 962a1ba7-6fa3-44ae-a9c9-d61804b76ebc
 ms.manager: douge
-ms.date: 06/01/2016
 ms.author: robrodbe
+ms.date: 03/14/2018
+monikerRange: '>= tfs-2013'
 ---
+
 
 # How Git log history simplification works
 
@@ -23,7 +25,7 @@ Let's start with a common scenario:
  4. Looking for the culprit, you go look at the file history and notice... your changes aren't even listed!?
 
 What is happening here is that Git commit history is a tree, and sometimes the chronological history is not the same as the actual file tree history.
-This is particularly true in cases where a merge commit reverts a file back to its original state.
+This is particularly true in cases where a merge commit reverts a file to its original state.
 In that case, the default history view *won't actually show you all changes*, because technically the file didn't change.
 
 In the above scenario, Git realizes it can simplify the history and the "changes" you are most likely looking for are removed from the log.
@@ -33,7 +35,7 @@ Unless you have run into it before, the result is often a lot of hair pulling an
 ## History Simplification: On by Default
 
 By default, running the log command on a file: `git log file.txt` will automatically simplify history, possibly hiding some commits from its output.
-You can read more details over at the [git log man page](http://git-scm.com/docs/git-log#_history_simplification).
+You can read more details over at the [git log main page](http://git-scm.com/docs/git-log#_history_simplification).
 
 What makes this a tad more confusing is that history simplification does *not* occur if you just run `git log` (because you are looking at all changes there is nothing to simplify).
 
@@ -184,8 +186,12 @@ Now, instead of panicking, you know that:
 * History simplification for files is turned on by default
 * The `--full-history` flag will give you a more comprehensive file history
 
+::: moniker range=">= tfs-2017" 
+
 **Bonus**: [VSTS has introduced a number of awesome history viewing options on the web](https://blogs.msdn.microsoft.com/visualstudioalm/2017/05/10/announcing-git-graph-and-advanced-filters-to-visualize-commit-history/). 
 If you don't want to go slogging through the command line, you can pull up the file you wish to view history for in our explorer.
 You'll see a history filter where you can specify simple or non-simple history views:
 
 ![Git Filters](./_img/git-log-history-simplification/filters.png)
+
+::: moniker-end 

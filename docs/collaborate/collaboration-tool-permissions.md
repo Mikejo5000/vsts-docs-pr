@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article
 ms.date: 10/26/2017  
+monikerRange: '>= tfs-2017'
 ---
 
 
@@ -22,7 +23,7 @@ Most of these tools are available to you if you are added as a team member or a 
 Stakeholders have limited access to view charts and dashboards. To learn more, see [About access levels](../security/access-levels.md).
 
 
-[!INCLUDE [temp](../security/_shared/collaborate.md)]
+[!INCLUDE [temp](../security/_shared/collaborate.md)]
 
 ## Manage permissions
 
@@ -37,7 +38,7 @@ To manage notifications, see:
 >[!NOTE]  
 >There are no UI permissions associated with managing notifications. Instead, you can manage them using the [TFSSecurity command line tool](../tfs-server/command-line/tfssecurity-cmd.md#collection-level-permissions).
 
-## Related notes
+## Related articles
 
 - [Work effectively from your account hub](../user-guide/account-home-pages.md)
 - [Add a team administrator](../work/scale/add-team-administrator.md) 

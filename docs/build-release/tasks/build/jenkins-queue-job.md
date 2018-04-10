@@ -7,7 +7,9 @@ ms.assetid: B0C3028E-B5DF-436D-B888-A4A8FA2627A0
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/30/2016
+monikerRange: '>= tfs-2017'
 ---
+
 
 # Build: Jenkins Queue Job
 
@@ -80,6 +82,27 @@ None
 
 </table>
 
+::: moniker range="vsts"
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: JenkinsQueueJob@2
+  inputs:
+    serverEndpoint:
+    jobName:
+#   isMultibranchJob: False
+    multibranchPipelineBranch:
+#   captureConsole: True
+#   capturePipeline: True
+#   isParameterizedJob: False
+    jobParameters:
+```
+
+::: moniker-end
+
 ## Team Foundation Server Plug-in
 
 You can use Team Foundation Server Plug-in (version 5.2.0 or newer) to automatically collect files from the Jenkins workspace and download them into the build. 
@@ -104,6 +127,8 @@ Results will be downloaded to the <b>$(Build.StagingDirectory)/jenkinsResults/&l
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
+::: moniker range="< vsts"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->

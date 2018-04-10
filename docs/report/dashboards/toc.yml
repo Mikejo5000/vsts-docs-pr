@@ -15,44 +15,46 @@
 - name: Tutorials
   items:
   - name: "Configure burndown/burnup"
-    href: ../guidance/configure-burndown-burnup-widgets.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json
+    href: configure-burndown-burnup-widgets.md
   - name: Configure cumulative flow
-    href: ../guidance/cumulative-flow.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json
+    href: cumulative-flow.md
   - name: "Configure lead/cycle time" 
-    href: ../guidance/cycle-time-and-lead-time.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json
-  - name: Configure velocity 
-    href: ../guidance/team-velocity.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json
+    href: cycle-time-and-lead-time.md
+  - name: Configure velocity widget
+    href: team-velocity.md
+  - name: View the built-in velocity chart  
+    href: velocity-chart-data-store.md
   - name: Work with sprint burndown
     href: ../../work/scrum/sprint-burndown.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json
 - name: Concepts
   items:
   - name: Burndown guidance
-    href: ../guidance/burndown-guidance.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json
+    href: burndown-guidance.md
   - name: "Cumulative flow & lead/cycle time guidance"
-    href: ../guidance/cumulative-flow-cycle-lead-time-guidance.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json
+    href: cumulative-flow-cycle-lead-time-guidance.md 
   - name: Velocity guidance
-    href: ../guidance/velocity-guidance.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json
+    href: velocity-guidance.md
   - name: "Analytics widgets (VSTS)"
-    href: ../guidance/analytics-widgets-vsts.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json
+    href: ../analytics/analytics-widgets-vsts.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json
 - name: How-to Guides
   items:
   - name: Add charts to a dashboard
     href: add-charts-to-dashboard.md
   - name: "Add an Analytics widget to a dashboard (VSTS)"  
-    href: ../guidance/enable-analytics-velocity.md
+    href: ../analytics/enable-analytics-velocity.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json
   - name: Create work tracking charts
     href: charts.md
   - name: "Create test progress & result charts"
     href: ../../manual-test/getting-started/track-test-status.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json
-  - name: Set dashboard permissions
+  - name: Set dashboard permissions (Security)
     href: dashboard-permissions.md
-- name: Samples
+- name: "Samples (REST API)"
   items:
-  - name: "Add a dashboard widget"  
+  - name: Add a dashboard widget
     href: ../../extend/develop/add-dashboard-widget.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json
-  - name: "Add a chart widget"  
+  - name: Add a chart widget 
     href: ../../extend/develop/add-chart.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json
-  - name: "Add an Analytics widget"  
+  - name: Add an Analytics widget  
     href: ../extend-analytics/example-analytics-widget.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json    
 - name: Reference
   items:
@@ -60,8 +62,10 @@
     href: widget-catalog.md
   - name: Markdown guidance
     href: ../../collaborate/markdown-guidance.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json
-  - name: "Default permissions & access"
+  - name: "Default permissions & access (Security)"
     href: charts-dashboard-permissions-access.md
+  - name: REST API, Dashboards
+    href: https://docs.microsoft.com/en-us/rest/api/vsts/dashboard/
 - name: Resources
   items:
   - name: Agile

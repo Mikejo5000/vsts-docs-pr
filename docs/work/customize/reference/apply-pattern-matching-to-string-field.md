@@ -10,7 +10,7 @@ ms.date: 02/10/2017
 ---
 # Apply pattern matching to a string field
 
-[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)] 
+[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)] 
 
 You can use the **MATCH** element to force values in a field of String type to follow a pattern that you specify. If you define multiple **MATCH** elements, the value will be valid if it matches any of the patterns that you specify for the field. If at least one element succeeds, the field has a valid value.  
   
@@ -67,5 +67,5 @@ You can use the **MATCH** element to force values in a field of String type to f
   
  
   
-## Related notes 
+## Related articles 
  [Apply a field rule](apply-rule-work-item-field.md)

@@ -42,7 +42,7 @@ A data conflict occurs when you try to publish a work item from [Excel](bulk-add
     > [!NOTE]  
     >  This step publishes only the work items that you corrected. If you do not resolve all data validation errors related to a work item, that work item is not published.  
   
-## Related notes
+## Related articles
 -  [Resolve invalid links](resolve-excel-invalid-links-tree-list.md)   
 -  [Resolve data validation errors](resolve-excel-data-validation-errors.md)   
 -  [Work in Excel and Project](track-work-vsts-tfs.md)  
@@ -50,4 +50,4 @@ A data conflict occurs when you try to publish a work item from [Excel](bulk-add
 
 ###Required permissions  
   
-To update work items, you must be a member of the **Contributors** group or have your **View work items in this node** and your **Edit work items in this node** permissions set to **Allow**. For more information, see [Permission reference](../../../security/permissions.md). 
+To update work items, you must be a member of the **Contributors** group or have your **View work items in this node** and your **Edit work items in this node** permissions set to **Allow**. For more information, see [Add administrators, set permissions at the project-level or project collection-level](../../../security/set-project-collection-level-permissions.md). 

@@ -26,6 +26,12 @@ To get started, read [What is Analytics?](what-is-analytics.md)
 ## 5-Minute Quickstarts
  - [Add an Analytics widget to a dashboard](enable-analytics-velocity.md)
 
+## Videos
+
+| | |
+| --- | --- |
+| <iframe src="https://channel9.msdn.com/Events/Connect/2017/T251/player" width="340" height="190" allowFullScreen frameBorder="0"></iframe> | |
+| | |
 
 ## Step-by-Step Tutorials
 
@@ -56,7 +62,8 @@ Understanding Analytics Service data Acquisition
 
 ## Resources
 - [Dashboards](../dashboards/index.md)
-- [PowerBI (VSTS)](../powerbi/index.md)
+- [Connect to VSTS using Power BI](../powerbi/index.md)
+- [Connect to VSTS using Excel](access-analytics-excel.md)
 - [Extend Analytics with OData](../extend-analytics/index.md)
 - [Developer Community: Analytics support forum](https://developercommunity.visualstudio.com/search.html?f=&type=question+OR+problem&type=question+OR+problem&c=&redirect=search%2Fsearch&sort=relevance&q=VSTS+Analytics)
 - [User Voice: Reporting feature requests](https://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/category/145257-dashboards-and-reporting)

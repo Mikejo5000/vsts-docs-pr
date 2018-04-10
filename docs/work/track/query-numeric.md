@@ -1,18 +1,18 @@
 ---
-title: Query by numeric field | VSTS & TFS
+title: Query by numeric field
+titleSuffix: VSTS & TFS
 description: Track work by creating queries based on effort, story points, schedules, or time tracking fields in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 78fe418f-fbd8-4ae2-97d7-c754c14dd3cd
 ms.manager: douge
 ms.author: kaelli
-ms.date: 10/02/2017
+ms.date: 02/05/2018  
 ---
-
 
 # Query by numeric fields    
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 How do I determine how much work each developer has completed on my team? Is there a way to sum up the effort or story points for an iteration? 
 
@@ -109,7 +109,7 @@ You can assign Story Points to user stories or bugs when you work in an Agile pr
 
 ### Sum of story points and their status   
 
->[!NOTE]  
+> [!NOTE]    
 >**Feature availability**: The **Sum** feature is supported on VSTS and TFS 2013.4 and later versions.
 
 Create a query that filters for User Story as the work item type and modify the column options to show Story Points and State. 
@@ -120,7 +120,7 @@ Then, add a stacked bar chart that sums the Story Points.
 
 <img src="_img/query-effort-config-chart-sum-story-points-iteration.png" alt="Configure chart, sum of story points per iteration, stacked bar chart" style="border: 2px solid #C3C3C3;" />
 
->[!NOTE]  
+> [!NOTE]    
 >For information on system-defined cumulative flow diagrams, see [Cumulative flow](../../report/dashboards/cumulative-flow.md).
 
 ###Show a burnup chart of user stories for an iteration 
@@ -150,7 +150,7 @@ Based on the process your team project references, you can assign the following 
 
 ### Sum of remaining work per developer 
 
->[!NOTE]  
+> [!NOTE]    
 >**Feature availability**: The **Sum** feature is supported on VSTS and TFS 2013.4 and later versions.
 
 If you follow Scrum practices and estimate Remaining Work for your tasks and bugs, you can get a roll up of the amount of work remaining for each developer with the following query and chart. By using the In operator and including both Task and Bug, you include any bugs that are being tracked as tasks. 
@@ -162,7 +162,7 @@ Add Remaining Work as a column option to the query and save. To view a sum of th
 <img src="_img/example-query-config-chart-sum-remaining-work-pivot-chart.png" alt="Configure chart, sum of remaining work by developer, area, pivot chart" style="border: 1px solid #C3C3C3;" />  
 
 
->[!NOTE]  
+> [!NOTE]    
 >For information on system-defined sprint burndown charts, see [Sprint burndown](../scrum/sprint-burndown.md).
 
 
@@ -295,7 +295,7 @@ The following table describes the activity-based and numeric fields that you can
 
 4. Each team can configure their Agile tools to determine if [bugs are treated similar to requirements or tasks](#show-bugs). Since bugs can appear either with requirements or tasks, fields used to estimate effort at the requirement-level and the task-level are included in the work item form. 
 
-## Related notes 
+## Related articles 
 For information on adding custom fields, see [Customize your work tracking experience](../customize/customize-work.md).  
 
 The main tools you use to plan and track work are described here: 
@@ -338,11 +338,7 @@ However, each team can determine if the Bug work item type appears in either the
 Also, you can add custom work item types to a backlog. For details, see [Add or modify a work item type, Add a custom WIT to a backlog or board ](../customize/add-modify-wit.md). 
  
 
-<!---
-For more information about how to track work, see [Sprint planning](../scrum/sprint-planning.md).
 
- By tracking work, you gain more insight into which user stories, requirements, or backlog items are almost finished and what the team burn rate is. Several reports and dashboards provide charts that display the data that these fields contain.
-
-You specify the level of effort for the tasks that you are assigned. 
-
---> 
+[!INCLUDE [temp](../_shared/rest-apis-queries.md)]
+ 
+ 

@@ -2,109 +2,77 @@
   href: index.md
 - name: Overview
   items:
-  - name: How billing works
+  - name: Billing overview 
     href: overview.md
 - name: Quickstarts
   items:
-  - name: Pay for VSTS users
+  - name: Set up billing
+    href: set-up-billing-for-your-account-vs.md
+  - name: Pay for users
     href: buy-basic-access-add-users.md
-  - name: Try extensions for free
+  - name: Buy CI/CD
+    href: buy-more-build-vs.md
+  - name: Start free trials
     href: try-additional-features-vs.md
+  - name: Buy cloud-based load testing
+    href: buy-load-testing-vs.md
 - name: Tutorials
   items:
-  - name: "1 - Change Azure AD tenant: setup"
-    href: ../accounts/change-azure-active-directory-vsts-account.md
-  - name: "2 - Change Azure AD tenant: prepare source directory"
-    href: ../accounts/change-azure-ad-vsts-account-prep-src.md
-  - name: "3 - Change Azure AD tenant: prepare target directory"
-    href: ../accounts/change-azure-ad-vsts-account-prep-target.md
-  - name: "4 - Change Azure AD tenant: disconnect from source directory"
-    href: ../accounts/change-azure-ad-vsts-account-disconnect.md
-  - name: "5 - Change Azure AD tenant: connect to target directory"
-    href: ../accounts/change-azure-ad-vsts-account-connect.md
-  - name: "6 - Change Azure AD tenant: reassign ownership to directory member"
-    href: ../accounts/change-azure-ad-vsts-account-reassign-owner.md
-- name: Concepts
+  - name: Connect VSTS to Azure AD
+    href: ../accounts/change-azure-active-directory-vsts-account.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
+- name: How-to guides
   items:
-  - name: Billing with Azure Subscriptions
-    href: billing-concepts.md
-  - name: Use MSDN subscription with organizational account
-    href: link-msdn-subscription-concept.md
-- name: How-to Guides
-  items:
-  - name: Set up billing
+  - name: Manage billing 
     items:
-    - name: Link Azure subscription to VSTS Account
-      href: set-up-billing-for-your-account-vs.md
-    - name: Add backup billing managers
+    - name: Add backup billing manager
       href: add-backup-billing-managers.md
-    - name: Change Azure subscription for billing
+    - name: Change Azure subscription
       href: change-azure-subscription.md
-  - name: Link work accounts to Visual Studio with MSDN subscriptions
-    href: link-msdn-subscription-to-organizational-account-vs.md
-  - name: Buy build pipelines
-    href: buy-more-build-vs.md
-  - name: Buy load testing services
-    href: buy-load-testing-vs.md
-  - name: Buy basic access to TFS Test hub
-    href: buy-access-tfs-test-hub.md
-  - name: Buy HockeyApp
-    href: get-hockeyapp.md
-  - name: Buy Xamarin University
-    href: xamarin-univ.md
-  - name: Manage extensions
+    - name: Change number of paid users
+      href: reduce-cancel-paid-vsts-users.md
+    - name: Buy TFS CALs or Test hub
+      href: buy-access-tfs-test-hub.md
+    - name: Billing FAQ
+      href: vsts-billing-faq.md
+  - name: Manage Marketplace extensions
     items:
-    - name: Change number of paid extension users
+    - name: Change number of paid users
       href: change-number-paid-extension-users.md
-    - name: Approve requests for VSTS extensions
-      href: ../marketplace/approve-vsts-extensions.md
-    - name: Assign paid extensions access
-      href: ../marketplace/assign-paid-extensions.md
+    - name: Approve requests
+      href: ../marketplace/approve-vsts-extensions.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
+    - name: Assign paid extensions to users
+      href: ../marketplace/assign-paid-extensions.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
     - name: Uninstall or disable extensions
-      href: ../marketplace/uninstall-disable-vsts-extensions.md
-  - name: Manage Visual Studio subscriptions
+      href: ../marketplace/uninstall-disable-vsts-extensions.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
+    - name: Buy TFS CALs or Test hub  
+      href: buy-access-tfs-test-hub.md 
+  - name: Guidance for Cloud Solution Providers
     items:
-    - name: Buy Visual Studio subscriptions
-      href: vs-subscriptions/buy-vs-subscriptions.md
-    - name: Manage Visual Studio subscriptions
-      href: vs-subscriptions/manage-vs-subscriptions.md
-    - name: View Visual Studio subscriptions
-      href: vs-subscriptions/view-vs-subscriptions.md
-  - name: Cloud Solution Provider
-    items:
-    - name: Set up customer and billing
+    - name: "CSPs: Set up your customer"
       href: csp/set-up-csp-customer.md
-    - name: Buy VSTS resources
+    - name: "CSPs: Buy VSTS for your customers"
       href: csp/buy-csp-vsts.md
-    - name: Buy and manage VS subscriptions
-      href: csp/buy-manage-vs-subs.md
-    - name: Buy VS App Center
+    - name: "CSPs: Buy and manage Visual Studio subscriptions"
+      href: https://docs.microsoft.com/visualstudio/subscriptions/vscloud-csp
+    - name: "CSPs: Buy App Center resources"
       href: csp/buy-vs-app-center.md
 - name: Troubleshooting
   items:
-  - name: Billing signup
-    href: faq-billing-setup.md
-  - name: Pay for more Basic users
-    href: faq-pay-for-basic-users.md
-  - name: Try extensions
+  - name: Trials FAQ
     href: faq-extension-trials.md
-  - name: Visual Studio subscriptions
-    href: faq-vs-subscriptions.md
-  - name: Azure billing
-    href: faq-azure-billing.md
-  - name: Link work or school account to MSDN subscription
-    href: faq-link-msdn-subscription-org-account.md
 - name: Reference
   items:
-  - name: VSTS Permissions 
-    href: ../security/permissions.md
+  - name: Permissions 
+    href: ../security/permissions.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
+  - name: About access levels
+    href: ../security/access-levels.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
+  - name: Default permissions & access
+    href: ../security/permissions-access.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
 - name: Resources
   items:
   - name: Account Management
     href: ../accounts/index.md
   - name: "Security & Identity"
     href: ../security/index.md
-  - name: Manage Extensions
+  - name: Marketplace extensions
     href: ../marketplace/index.md
-  - name: Service hooks
-    href: ../service-hooks/index.md

@@ -7,8 +7,10 @@ ms.technology: vs-devops-git
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: sdanie
-ms.date: 11/14/2017
+ms.date: 03/14/2018
+monikerRange: '>= tfs-2013'
 ---
+
 
 #   Update code with fetch and pull
 
@@ -54,7 +56,7 @@ Changes downloaded by `fetch` are not applied until you **Pull** or **Sync** the
 
   ![Fetch](_img/pulling/fetch.png)
 
-0. You can review the results of the fetch operation in the incomming commits section.
+0. You can review the results of the fetch operation in the incoming commits section.
 
   ![Incoming commits](_img/pulling/incoming-commits.png)
 

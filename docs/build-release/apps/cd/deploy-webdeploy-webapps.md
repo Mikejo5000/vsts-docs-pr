@@ -1,18 +1,20 @@
 ---
-ms.assetid: 449254BF-EAC1-466E-B10C-85C2DE086F30
 title: Deploy to Azure web app
 description: Set up CD of an ASP.NET or Node.js web deploy package to Azure App Services from Release Management
+ms.assetid: 449254BF-EAC1-466E-B10C-85C2DE086F30
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
-ms.topic: get-started-article
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: ">= tfs-2015"
 ---
 
 # Deploy to Azure web app
 
-**VSTS | TFS 2018 | TFS 2017 Update 2**
+**VSTS | TFS 2018 | TFS 2017.2**
 
 We'll show you how to set up continuous deployment of your ASP.NET or Node app to an Azure web app using
 Visual Studio Team Services (VSTS) or Microsoft Team Foundation Server (TFS). You can use the steps in this quickstart

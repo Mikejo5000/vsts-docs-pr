@@ -1,5 +1,6 @@
 ---
-title: Understand the components of security and identity in VSTS & TFS
+title: Understand the components of security and identity
+titleSuffix: VSTS & TFS
 description: Understand how VSTS and TFS manage security and accounts 
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-admin
@@ -8,12 +9,14 @@ toc: show
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article
-ms.date: 10/02/2017
+ms.date: 02/12/18
+monikerRange: '>= tfs-2013'
 ---
 
-# About security and identity  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+# About security and identity
+
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 Visual Studio Team Services (VSTS), our cloud-hosted application, is based on the capabilities of Team Foundation Server, with additional cloud services. Both support development projects, from planning through deployment. 
 VSTS uses Microsoft Azure's Platform as a Service infrastructure and many of Azure's services, including Azure SQL databases, to deliver a reliable, globally available service for your development projects. 
@@ -25,6 +28,7 @@ The main security concepts to understand are
 - Authentication
 - Authorization 
 - Security groups
+- Security roles
 - Permission levels and permissions 
 - Access levels  
 
@@ -82,7 +86,7 @@ authentication error and can't access your account.
 
 
 ## Authorization
-Authorization verifies that the identity whcih is attempting to connect has the neccesary permissions to access a service, feature, function, object, or method. 
+Authorization verifies that the identity which is attempting to connect has the necessary permissions to access a service, feature, function, object, or method. 
 
 Authorization always occurs after successful authentication. If a connection is not authenticated, it fails before any authorization checking is performed. If authentication of a connection succeeds, a specific action might still be disallowed because the user or group did not have authorization to perform that action.  
 
@@ -94,7 +98,7 @@ Also, for select features, users and groups may need to belong to an access leve
 
 VSTS and TFS are preconfigured with default security groups. Default permissions are assigned to the default security groups.   
 
-> [!div class="mx-tdBreakAll"]  
+> [!div class="mx-tdBreakAll"]
 > | Security groups | Permission levels | Permission States  | 
 > |-------------|----------| ----------| 
 > |- Team project level<br/>- Collection or Account level<br/>- Server level (TFS only) |- Object-level<br/>- Project-level<br/>- Collection-level<br/>- Server-level (TFS only) |User or group has permissions to perform a task:<br/>- **Allow**<br/>- **Inherited allow**<br/>User or group doesn't have permission to perform a task:<br/>- **Deny**<br/>- **Inherited deny**<br/>- **Not set** |
@@ -126,6 +130,18 @@ The following image shows the default permission assignments made to the Contrib
 
 To learn more about other groups and their permission assignments,
 see [Permissions and groups reference](permissions.md).
+
+<a id="security-roles" />
+## Security roles 
+
+There are a number of artifacts whose permissions are managed by role. These include the following artifacts and features.  
+
+> [!div class="mx-tdCol2BreakAll"]
+> |**Object-level** |**Project-level settings**  |**Collection-level settings**  | 
+> |-------------|----------|----------|
+> |- Deployment groups<br/>- Secure files<br/>- Variable groups<br/>|- Agent queues<br/>- Service endpoints<br/>-Team administration|- Agent pools<br/>- Deployment pools<br/>- Marketplace extensions |
+
+To learn more, see [About security roles](about-security-roles.md). 
 
 <a id="access-levels" />
 ## Access levels 

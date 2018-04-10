@@ -1,13 +1,15 @@
 ---
 title: Exploratory testing with the Test &amp; Feedback extension in Standalone mode
 description: Manual and exploratory testing - exploratory testing with the Test &amp; Feedback extension  in Standalone mode
+ms.assetid: 762A75FB-0B6D-47C3-9232-371348D8D529
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-manual
-ms.assetid: 762A75FB-0B6D-47C3-9232-371348D8D529
+ms.topic: quickstart
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
-ms.topic: get-started-article
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: ">= tfs-2015"
 ---
 
 # Exploratory testing with the Test &amp; Feedback extension in Standalone mode

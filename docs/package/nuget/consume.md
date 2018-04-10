@@ -7,10 +7,11 @@ ms.technology: vs-devops-package
 ms.manager: douge
 ms.author: amullans
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2017'
 ---
 
 # Consume NuGet packages in Visual Studio
 
-[!INCLUDE [](../_shared/availability-nuget.md)]
+**VSTS** | **TFS 2018** | **TFS 2017**
 
 [!INCLUDE [](../_shared/nuget/consume.md)]

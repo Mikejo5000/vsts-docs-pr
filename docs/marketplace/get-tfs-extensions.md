@@ -8,7 +8,10 @@ ms.assetid: 0ff7d264-68b7-4f4a-a666-b57175b5fdb8
 ms.manager: douge
 ms.author: elbatk
 ms.date: 9/27/2017
+monikerRange: '>= tfs-2015 < vsts'
 ---
+
+ 
 
 # Install extensions for Team Foundation Server (TFS)
 
@@ -31,6 +34,7 @@ so you can install [free, preview, and paid extensions](#difference).
 > and [publishing](http://aka.ms/vsmarketplace-publish) extensions.
 
 <a name="connected-tfs"></a>
+
 ## Install extensions while connected to TFS
 
 ### What do I need to install extensions?
@@ -139,7 +143,7 @@ can install extensions. If you don't have permissions, you can [request extensio
 
 	<img alt="Download and save your extension" src="./_img/get-tfs-extensions/standalone/download-extension.png" style="border: 1px solid #CCCCCC" />
 
-	[Why doesn't the extension have a download button?](#no-download)
+
 
 ### Upload to Team Foundation Server
 
@@ -147,14 +151,19 @@ can install extensions. If you don't have permissions, you can [request extensio
 
 0.	Browse for your downloaded TFS extensions (```https://{server}:8080/tfs/_gallery```).
 
+	::: moniker range="tfs-2015"
+
 	**TFS 2015 Update 3**
 
 	<img alt="Browse TFS extensions" src="./_img/get-tfs-extensions/standalone/browse-for-extensions.png" style="border: 1px solid #CCCCCC" />
 
-	**TFS 2017**
+	::: moniker-end
+
+	::: moniker range="tfs-2017"
 
 	<img alt="Browse TFS extensions" src="./_img/get-tfs-extensions/standalone/browse-tfs-extensions-new.png" style="border: 1px solid #CCCCCC" />
 
+	::: moniker-end
 
 0.	Manage your extensions.
 
@@ -181,3 +190,25 @@ can install extensions. If you don't have permissions, you can [request extensio
 	<img alt="Review the permissions granted to this extension" src="./_img/get-tfs-extensions/standalone/confirm.png" style="border: 1px solid #CCCCCC" />
 
    You can now go to your team project collection to use your extension. Also, remember to tell your team about this extension, so they can start using its capabilities too. 
+
+## Pre-installed extensions (first-party) for disconnected TFS
+
+>[!NOTE] 
+> This section is only for adding pre-installed extensions (first-party), if you're installing extensions that
+> aren't pre-installed with TFS, head to the [Disconnected TFS section](#install-extensions-for-disconnected-tfs).
+
+With first-party extensions that come pre-installed with TFS, there is an alternate method of installation that prevents compatability issues.
+
+In this case, you can manage extensions in disconnected TFS by following the steps below:
+0. Hover over the shopping bag icon and select **Manage extensions**
+
+	![Manage extensions](./_img/get-tfs-extensions/standalone/manage-extensions.png)
+0. Once on the Extensions page, select **Browse local extensions**
+
+	![Browse local extensions](./_img/get-tfs-extensions/standalone/browse-local-extensions.png)
+0.	Scroll down until you see the Plan and track category which will include **Delivery Plans**. Select **Delivery Plans**
+
+	![Delivery plans extension](./_img/get-tfs-extensions/standalone/delivery-plans.png)
+0. This will redirect you to a local extension page for Delivery Plans where you will find the button to **Install**. This works when you are both online and offline
+
+	![Delivery plans extension gallery](./_img/get-tfs-extensions/standalone/delivery-plans-gallery.png)

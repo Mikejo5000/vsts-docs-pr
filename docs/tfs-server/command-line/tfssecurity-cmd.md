@@ -1,17 +1,20 @@
 ---
 title: Change groups and permissions with TFSSecurity
-description: Change groups and permissions from the command-line using TFSSecurity
+description: Change groups and permissions in VSTS and TFS from the command-line using TFSSecurity
 ms.assetid: 58b780cb-9678-4d45-96dd-64447a6d5b17
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-admin
 ms.manager: douge
 ms.author: elbatk
-ms.date: 08/04/2016
+ms.date: 02/12/2018
+monikerRange: '>=tfs-2013'
 ---
+
+
 
 # Change groups and permissions with TFSSecurity
 
-**TFS 2017** | **TFS 2015** | **TFS 2013**
+**VSTS** | **TFS 2017** | **TFS 2015** | **TFS 2013**
 
 You can use the **TFSSecurity** command-line tool to create, modify, and delete groups and users in Visual Studio Team Foundation Server (TFS), in addition to modifying permissions for groups and users. For information about how to perform these tasks in the user interface, see <span sdata="link"> Manage users or groups </span>.
 
@@ -19,6 +22,16 @@ This server-level tool is located in Drive:\\%programfiles%\\TFS 12.0\\Tools on 
 
 > Even if you are logged on with administrative credentials,
 > you must open an elevated Command Prompt to perform this function.
+
+## Use with VSTS
+The **TFSSecurity** command-line tool can be used with Visual Studio Team Services (VSTS) as well. To use it for VSTS, use the same commands as TFS but replace the *CollectionURL* with your *AccountURL* (ServerURL is not applicable with VSTS). 
+
+### Example:
+```
+tfssecurity /a+ Namespace Token Action Identity (ALLOW | DENY)[/collection:AccountURL]
+```
+
+> While this tool is supported, we recommend using our [Security REST API](https://docs.microsoft.com/en-us/rest/api/vsts/security/) when working with security groups and permissions in VSTS as our APIs are updated faster and more often.
 
 ## Permissions
 
@@ -565,7 +578,7 @@ The following example creates a group that is specific to the project that the U
 
 You must replace the placeholder GUID with the URI of the team project for which you want to create this group. To obtain the URI for a team project, open Team Explorer, right-click the team project, click Properties, and copy the entire value of the URL property.
 
-After you run the command, you can verify the group in Team Explorer. Right-click the team project that you used in the command, click Team Project Settings, and then click Group Memberships. In the Project Groups on  TeamProjectName dialog box, the Groups list includes Test Group .
+After you run the command, you can verify the group in Team Explorer. Right-click the team project that you used in the command, click Team Project Settings, and then click Group Memberships. In the Project Groups on  TeamProjectName dialog box, the Groups list includes Test Group .
 
 > [!NOTE]
 > You can use the **/gc** command to create groups but not to add any users to the groups or assign any permissions. To change the membership of the group, see [/g+: Add a user or another group to an existing group](#gplus) and [/g-: Remove a user or group](#gminus). To change the permissions for the group, see [/a+: Add permissions](#aplus) and [/a-: Remove a user or a group from membership in a group](#aminus).
@@ -1251,6 +1264,7 @@ TFS 2017 Update 1 and later
 |Permission|Namespace|Action|
 |---|---|---|
 |[Contribute](../../security/permissions.md#git-contribute-permission)|GitRepositories|GenericContribute|
+|[Contribute to Pull Requests](../../security/permissions.md#git-contribute-to-pull-requests-permission)|GitRepositories|PullRequestContribute|
 |[Create Branch](../../security/permissions.md#git-create-branch-permission)|GitRepositories|CreateBranch|
 |[Create Repository](../../security/permissions.md#git-create-repository-permission)|GitRepositories|CreateRepository|
 |[Create Tag](../../security/permissions.md#git-create-tag-permission)|GitRepositories|CreateTag|

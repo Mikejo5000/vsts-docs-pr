@@ -4,9 +4,12 @@ description: Manual and exploratory testing - Collect more diagnostic data in ma
 ms.assetid: bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-manual
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: ">= tfs-2015"
 ---
 
 # Collect more diagnostic data in manual tests
@@ -18,6 +21,8 @@ While you are testing your application, Microsoft Test Manager can collect data 
 ![Test settings machine roles and adapters](_img/collect-more-diagnostic-data-in-manual-tests/testsettingsmachineroleconceptual.png)  
   
 You can decide what kinds of data you want to collect.  
+
+[!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
   
 ## What diagnostic data can I collect in a test?
 

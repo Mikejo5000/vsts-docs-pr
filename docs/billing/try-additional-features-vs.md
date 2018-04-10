@@ -1,100 +1,88 @@
 ---
-title: Try paid VSTS extensions free | VSTS
-description: Trial the paid feature extensions in VSTS (VSTS, Visual Studio Online, VSO)
-ms.topic: get-started-article
+title: Free trials for paid VSTS features and extensions | VSTS
+description: How to get free trials for Test Manager, Package Management, and for VSTS extensions offered by other publishers (VSTS, Visual Studio Online, VSO)
+ms.topic: quickstart
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
 ms.assetid: 435fb3a4-1766-4172-928d-80c09cfb1410
 ms.manager: douge
-ms.author: billchi
-ms.date: 10/17/2017
+ms.author: chcomley
+ms.date: 4/06/2018
 ---
+[//]: # (monikerRange: 'vsts')
 
-#   Try paid extensions for free in VSTS
+#  Quickstart: Start free trials for paid VSTS features and extensions
 
 **VSTS**
 
-Extensions offer features and capabilities that you 
-can install in your VSTS account. 
-Some paid extensions offer a trial so that you can try 
-their features free for a limited time. 
-For example, the [Test Manager](https://marketplace.visualstudio.com/items/ms.vss-testmanager-web) 
-extension offers a free 30-day trial so that all 
-users with access to Basic features can try the integrated, 
-comprehensive manual and exploratory testing features. 
+There are two paid features in VSTS offered by Microsoft that you can use free for a 30-day trial:
+- [Test Manager](https://marketplace.visualstudio.com/items/ms.vss-testmanager-web) (which is included on an ongoing basis for Visual Studio Enterprise, 
+Visual Studio Test Professional, and MSDN Platforms subscribers)
+- [Package Management](https://marketplace.visualstudio.com/items?itemName=ms.feed) (which is included on an ongoing basis for Visual Studio Enterprise subscribers, 
+plus another 5 users in your account)
 
-## Who can start extension trials?
+During the trial, any user in your VSTS account whose access level is Basic (including Visual Studio subscribers) can use these features. 
+You'll assign these features explicitly to users within the User hub once the trial ends and you choose to pay for a certain number of users on an ongoing basis.
 
-As the VSTS [account owner or project collection administrator](faq-billing-setup.md#find-owner), 
-you can start extension trials for your VSTS account. 
-Otherwise, you can 
-[request extensions](../marketplace/request-vsts-extension.md) 
-instead. Learn about other 
-[VSTS extensions](https://marketplace.visualstudio.com/vsts).
+This same process applies to paid extensions offered by other publishers within the Visual Studio Marketplace, including:
 
-[Can't access existing features?](faq-extension-trials.md#feature-access)
+- [Timetracker](https://marketplace.visualstudio.com/items?itemName=Berichthaus.TfsTimetracker)
+- [Agile Cards](https://marketplace.visualstudio.com/items?itemName=spartez.agile-cards)
+- [Enhanced Export PRO](https://marketplace.visualstudio.com/items?itemName=mskold.mskold-PRO-EnhancedExport)
+- [Code Quality NDepend](https://marketplace.visualstudio.com/items?itemName=ndepend.ndependextension)
+- [Backlog Essentials](https://marketplace.visualstudio.com/items?itemName=agile-extensions.backlog-essentials)
 
-##  Start an extension trial
+If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/en-us/free/?WT.mc_id=A261C142F) before you begin.
 
-0.  Sign in to [Visual Studio Marketplace > VSTS](https://marketplace.visualstudio.com/vsts).
+## Prerequisites
 
-	![Find extension trial](_img/get-vsts-extensions/marketplace.png)
+As the VSTS [account owner or project collection administrator](vsts-billing-faq.md#find-owner), you can start trials for your VSTS account. 
+All other users can [request extensions](../marketplace/install-vsts-extension.md).
 
-	[Why am I asked to choose between my work or school account and my personal account?](faq-extension-trials.md#ChooseOrgAcctMSAcct)
+## Start a trial for your VSTS account
 
-0.	Find and select a paid extension that you want to try.
+1. Sign in to the [Visual Studio Marketplace > VSTS](https://marketplace.visualstudio.com/vsts).
 
-	![Start the extension trial](_img/try-additional-features/mp-start-test-manager-trial.png)
+    ![Find extension trial](_img/get-vsts-extensions/marketplace.png)
 
-0.  Select your VSTS account to install this extension.
+2. Find and select a paid extension that you want to try.
 
-	![Select VSTS account for extension trial](_img/try-additional-features/select-account.png)
+    ![Start the extension trial](_img/try-additional-features/mp-start-test-manager-trial.png)
 
-	*	[Why don't I see any VSTS accounts?](faq-extension-trials.md#no-accounts) 
-	*	[Why can't I start an extension trial for the selected account?](faq-extension-trials.md#no-permissions) 
+3. Select your VSTS account to install this extension.
 
-0.	After your extension finishes installing, 
-	go to your VSTS account to use your extension. 
-	Let your team know that they have access too.
+    ![Select VSTS account for extension trial](_img/try-additional-features/select-account.png)
 
-	![Marketplace installs your extension](_img/try-additional-features/extension-installed.png)
+4. After your extension finishes installing, go to your VSTS account to use your extension.
 
-	[Need help?](faq-extension-trials.md#get-support)
+    Let your team know that they have access too.
+
+   ![Marketplace installs your extension](_img/try-additional-features/extension-installed.png)
 
 <a name="after-trial"></a>
-##		Keep using your extension after the trial ends
 
-Follow these steps *before* the trial ends if you want 
-to keep using your extension without disruption. 
-Otherwise, you'll lose access when the trial expires. 
-Charges won't start until the trial ends. 
+## Keep using your extension after the trial ends
 
-> [!TIP]
-> You only have to buy and assign extensions for users who need access. 
-> Some extensions include free users. To keep access to such extensions, 
-> [assign the extension up to the number of free users that you get](../marketplace/assign-paid-extensions.md). 
-> For additional users who need access, 
-> [buy the extension from the Visual Studio Marketplace](../marketplace/install-vsts-extension.md) 
-> and [assign the extension to these users](../marketplace/assign-paid-extensions.md). 
-> If you have [Visual Studio subscribers](https://marketplace.visualstudio.com/subscriptions), 
-> check their subscription benefits. These users get additional features, 
-> like Test Manager, included with their subscriptions as benefits. 
-> So if you installed these extensions, Visual Studio subscribers 
-> can continue using them without paid access and assignment.
-> 
-> To change the number of users that already have paid extension access, 
-> learn [how to change that quantity here](change-number-paid-extension-users.md).
+Make sure to buy and assign the extension *before* the trial ends so that your users can continue using it without disruption. Otherwise, your users will lose access when the trial expires.
+There's no penalty for buying early; charges don't start until the trial ends.
 
-If you lose access because the trial expires, 
-just follow these steps to buy and assign the 
-extension for users who need access.
+If you lose access because the trial expired before you could purchase, just buy and assign like you would if you weren't doing a trial:
 
-0.	[Buy the extension](../marketplace/install-vsts-extension.md#install-extension) 
-only for users who need access.
+1. [Buy the extension](../marketplace/install-vsts-extension.md#install-extension) for your users.
 
-	To buy the extension, you can also go to the extension pane in your account.	
+    To buy the extension, you can also go to the extension pane in your account.
 
-	![Users hub, extension pane](_img/try-additional-features/extension-trial-in-account-updated-ui.png)
+    ![Users hub, extension pane](_img/try-additional-features/extension-trial-in-account-updated-ui.png)
 
-0.	[Assign the extension](../marketplace/assign-paid-extensions.md) 
-only to users who need access.
+2. [Assign the extension](../marketplace/assign-paid-extensions.md) to the users who need it.
+
+## Next steps
+
+* [Buy cloud-based load testing](buy-load-testing-vs.md)
+* [Start free trials](try-additional-features-vs.md)
+
+## Related articles
+
+- [Change the Azure subscription for billing](change-azure-subscription.md)
+- [VSTS pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
+- [VSTS billing support](https://www.visualstudio.com/team-services/support/)

@@ -7,7 +7,9 @@ ms.assetid: 8D152C13-0934-4665-8D08-30E2A7841351
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
+
 
 # Utility: Shell script
 
@@ -57,6 +59,24 @@ Select if you want this step to fail if any errors are written to the StandardEr
 </tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
+
+::: moniker range="vsts"
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: ShellScript@2
+  inputs:
+    scriptPath:
+    args:
+#   disableAutoCwd: false
+    cwd:
+#   failOnStandardError: false
+```
+
+::: moniker-end
 
 ## Example
 
@@ -108,6 +128,8 @@ On the [Build tab](../../index.md) of a build definition, add this step:
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
+::: moniker range="< vsts"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->

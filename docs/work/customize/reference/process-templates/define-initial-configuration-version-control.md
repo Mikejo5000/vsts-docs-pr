@@ -12,7 +12,7 @@ ms.date: 10/11/2017
 
 # Define the initial configuration of Git and TFVC
 
-[!INCLUDE [temp](../../../_shared/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [temp](../../../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
 By using the plug-in for version control, you can configure a team project's initial security permissions, check-out policies, and check-in notes.  
   
@@ -133,6 +133,6 @@ The default assignments for TFVC and GIt permissions made to all default process
 ```  
 
 
-## Related notes  
+## Related articles  
 -  [Configure initial groups, teams, members, and permissions](configure-initial-groups-teams-members-permissions.md)   
 -  [Code](../../../../git/overview.md)

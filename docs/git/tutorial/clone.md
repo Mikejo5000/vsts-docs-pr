@@ -7,14 +7,16 @@ ms.technology: vs-devops-git
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: sdanie
-ms.date: 08/29/2017
+ms.date: 03/14/2018
+monikerRange: '>= tfs-2013'
 ---
+
 
 # Clone an existing Git repo
 
 #### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
 
-Create a complete local copy of an existing Git repo using by cloning it. 
+Create a complete local copy of an existing Git repo by cloning it. 
 Cloning a repo downloads all [commits](commits.md) and [branches](branches.md) in the repo and sets up a named relationship with the existing repo you cloned.
 Use this relationship to interact with the existing repo, [pushing](pushing.md) and [pulling](pulling.md) changes to share code with your team.
 

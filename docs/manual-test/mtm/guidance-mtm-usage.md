@@ -4,9 +4,12 @@ description: Manual and exploratory testing - Guidance on Microsoft Test Manager
 ms.assetid: 3ED737AC-6310-472D-8C54-4FF4FEFE66C9
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-manual
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: ">= tfs-2015"
 ---
 
 # Guidance on Microsoft Test Manager usage
@@ -15,7 +18,7 @@ ms.date: 09/26/2017
 
 Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) offer both web-based and client-based solutions for manual testing:
 
-* The **Test Center** in Microsoft Test Manager (MTM) client is a desktop-based manual testing solution, which has traditionally been used by testers for their Manual testing needs.
+* The **Test Center** in Microsoft Test Manager (MTM) client is a desktop-based manual testing solution, which has traditionally been used by testers for their Manual testing needs (see [Run manual tests with Microsoft Test Manager](run-manual-tests-with-microsoft-test-manager.md)).
 * The **Test hub** in VSTS and TFS is a web-based manual testing solution, which works across all platforms and with all browsers. We have invested in Test hub over past two years to provide you better experiences across Plan, Author, Execute and Track phases of Manual testing.
 
 >Because the **Test hub** is a fully featured Test management solution which works across all platforms and with all browsers, 
@@ -37,6 +40,8 @@ and others). You can easily get started with using manual testing
 features right from your Kanban board, and use the **Test hub**
 for more advanced manual testing capabilities. 
 This topic shows new capabilities introduced in the **Test hub**. 
+
+[!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
 
 ### Test planning
 

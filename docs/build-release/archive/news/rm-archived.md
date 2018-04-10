@@ -4,19 +4,22 @@ description: Archived release for VSTS and TFS
 ms.assetid: 1872D1B0-0514-4FD2-9BFB-DF9538BF93DF
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
+ms.topic: overview
 ms.manager: douge
 ms.author: ahomer
-ms.date: 10/20/2016
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: ">= tfs-2013"
 ---
 
 # Archived release notes for Microsoft Release Management
 
-[!INCLUDE [version-rm-dev14](../../_shared/version-rm-dev14.md)]
+**VSTS | TFS 2018 | TFS 2017 | TFS 2015**
 
 **NOTE**: Release Management has now been combined with the Build features
 of VSTS and Team Foundation Server (TFS) in the new 
 **Build &amp; Release** hub. For details of new features and changes, see
-[Team Foundation Build & Release release notes](2017.md).
+[Team Foundation Build and Release release notes](2017.md).
 
 <a name="whatsnew"></a>
 ## What's new?
@@ -311,8 +314,6 @@ perform manual steps, and then resume further automated steps.
 You can also reject the deployment and prevent further steps from
 executing after a manual intervention.
 
-For more details, see [Manual intervention](../../concepts/process/phases.md#the-manual-intervention-task).
-
 <a name="sep2-servendpoint"></a>
 **Service endpoint improvements**
 
@@ -501,8 +502,6 @@ an environment allows scripts run as tasks in the environment to access the
 current OAuth token.
 
 ![Setting the option to allow access to the OAuth token](_img/rm-archived/release-notes-18.png)
-
-For more details, see [Agent phase properties](../../concepts/process/phases.md)
 
 This is a simple example showing how to get a build definition:
 

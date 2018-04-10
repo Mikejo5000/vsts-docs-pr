@@ -7,10 +7,13 @@ ms.technology: vs-devops-package
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: amullans
-ms.date: 09/01/2017
+ms.date: 01/31/2018
+monikerRange: '>= tfs-2017'
 ---
 
 # Package Management in VSTS and TFS
+
+**VSTS** | **TFS 2018** | **TFS 2017**
 
 > [!NOTE]
 > Package Management is an **[extension](http://go.microsoft.com/fwlink/?LinkId=723595)** that hosts NuGet, npm, and Maven packages alongside all your other VSTS assets: source code, builds, releases, etc.
@@ -20,7 +23,7 @@ ms.date: 09/01/2017
 
 Package Management introduces the concept of multiple *feeds* that can be used to organize and control access to your packages. If you're familiar with using packages from [NuGet.org](https://www.nuget.org) or [npmjs](https://www.npmjs.com), you can think of those places each as a single feed. 
 
-A note on terminology: you may also have heard feeds called package *repositories* or package *sources*, esp. if you're an npm or Maven user.
+A note on terminology: you may also have heard feeds called package *repositories* or package *sources*, especially if you're an npm or Maven user.
 
 ## Get started using Package Management
 Get up and running with NuGet, npm, and Maven in VSTS and TFS in just a few minutes with the [NuGet quick start](get-started-nuget.md), [npm quick start](get-started-npm.md), and [Maven quick start](get-started-maven.md).
@@ -35,10 +38,10 @@ Some package management services are only compatible with specific versions of T
 | Product                        | VSTS          | TFS                         |
 |------------------------------- |---------------|-----------------------------|
 | **NuGet**                      | Yes           | TFS 2017                    |
-| **NuGet.org upstream source**  | Yes           | To be announced             |
+| **NuGet.org upstream source**  | Yes           | TFS 2018 Update 2 and newer |
 | **npm**                        | Yes           | TFS 2017 Update 1 and newer |
 | **npmjs.com upstream source**  | Yes           | TFS 2017 Update 1 and newer |
 | **Maven**                      | Yes           | TFS 2018                    |
 
 ## Other package types
-Need to host other package types (Docker, Cocoapods, etc.)? Tell us on the [Package Management UserVoice](https://visualstudio.uservoice.com/forums/330519-team-services/category/145266-package-management).
+Need to host other package types (Docker, CocoaPods, etc.)? Tell us on the [Package Management UserVoice](https://visualstudio.uservoice.com/forums/330519-team-services/category/145266-package-management).

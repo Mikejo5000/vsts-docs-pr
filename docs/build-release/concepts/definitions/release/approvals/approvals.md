@@ -4,9 +4,12 @@ description: Understand release approvals in Release Management for Visual Studi
 ms.assetid: 3725541F-FC36-42E2-8153-21D2F9CA755B
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 11/14/2017
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: ">= tfs-2015"
 ---
 
 # Approvals
@@ -59,6 +62,7 @@ You can enable manual deployment approvals for each environment in a release def
 
    * You can specify that the user who requested (initiated or created) the release cannot approve it.
      If you are experimenting with approvals, uncheck this option so that you can approve or reject your own deployments. 
+   * You can force a revalidation of the user identity to take into account recently changed permissions. 
    * You can reduce user workload by automatically approving subsequent prompts if the specified
      user has already approved the deployment to a previous environment in the pipeline
      (applies to pre-deployment approvals only). Take care when using this option; for example, you may
@@ -70,7 +74,8 @@ You can enable manual deployment approvals for each environment in a release def
 ### Approval notifications
 
 Release Management can send notifications such as an email message to the approver(s) defined for
-each approval step. 
+each approval step. Configure recipients and settings in the **Notifications** page of the 
+**Settings** hub.
 
 ![configuring notifications for manual approvals](_img/notifications.png)
   
@@ -141,12 +146,5 @@ the deployment can be approved or rejected.
 * [Manual intervention](../../../../tasks/utility/manual-intervention.md)
 * [Environments](../environments.md)
 * [Triggers](../triggers.md)
-
-## See also
-
-* [Work with release definitions](../../../../actions/work-with-release-definitions.md)
-* [View and manage releases](../../../../actions/view-manage-releases.md)
-* [Monitor releases and debug deployment issues](../../../../actions/debug-deployment-issues.md)
-* [Configure your release pipelines for safe deployments](https://blogs.msdn.microsoft.com/visualstudioalm/2017/04/24/configuring-your-release-pipelines-for-safe-deployments/)
 
 [!INCLUDE [rm-help-support-shared](../../../../_shared/rm-help-support-shared.md)]

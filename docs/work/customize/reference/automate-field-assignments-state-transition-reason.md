@@ -64,9 +64,9 @@ You may want to automatically transition work items from one state to another st
    <REASONS>
       ...
    </REASONS>
-   <ACTIONS>  
-      <ACTION value="microsoft.vsts.actions.checkin"/>  
-   </ACTIONS>  
+      <ACTIONS>  
+      <ACTION value="microsoft.vsts.actions.checkin"/>  
+      </ACTIONS>  
 </TRANSITION>  
 ```  
   
@@ -91,10 +91,10 @@ You may want to automatically transition work items from one state to another st
        <REASONS>
           <DEFAULTREASON value="Fixed" />
        </REASONS>
-       <ACTIONS>  
-          <ACTION value="Microsoft.VSTS.Actions.Checkin"/>  
-          <ACTION value="ADatum.Actions.Complete"/>  
-       </ACTIONS>  
+          <ACTIONS>  
+          <ACTION value="Microsoft.VSTS.Actions.Checkin"/>  
+          <ACTION value="ADatum.Actions.Complete"/>  
+          </ACTIONS>  
     </TRANSITION>  
     ```  
   
@@ -120,7 +120,7 @@ You may want to automatically transition work items from one state to another st
   
  For example, you have created the transition action Check-In, which transitions the state of a work item from "Working" to "Ready to Build". The work item's rules for "Ready to Build" require that the "Resolved By" field be set. You would then define a **DEFAULT** or **COPY** rule element for "ResolvedBy" in the **TRANSITION** section. Additionally, you would define a **DEFAULTREASON** to make sure that the required field can be set without user intervention.  
   
-## Related notes
+## Related articles
 - [Customize your work tracking experience](../customize-work.md)
 - [Control](control-xml-element-reference.md)    
 - [Apply a field rule](apply-rule-work-item-field.md)  

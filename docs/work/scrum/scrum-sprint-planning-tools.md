@@ -12,7 +12,7 @@ ms.date: 08/19/2017
 
 # Scrum and sprint planning tools
  
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]  
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]  
 
 <!--- ADD WIDGET INFO AS WELL --> 
 
@@ -101,7 +101,7 @@ During a sprint, your team can use the task board and sprint burndown chart to t
 ##  Velocity and forecast 
 <p>While you use sprint planning and tracking tools for each sprint, you use the velocity and forecast tools to estimate work that can be completed in future sprints. </p>
 <p>Velocity provides a useful metric for gaining insight into how much work your team can complete during a sprint cycle. And, the forecast tool provides a means for determining how much work your team can complete within a sprint based on a specified team velocity. </p>
-<p>After your team has worked several sprints, they can use the [velocity chart](../../report/dashboards/team-velocity.md) and [forecast](forecast.md) tool to estimate work that can be accomplished in future sprints.  </p>
+<p>After your team has worked several sprints, they can use the [velocity chart](../../report/dashboards/velocity-chart-data-store.md) and [forecast](forecast.md) tool to estimate work that can be accomplished in future sprints.  </p>
 
 <table valign="top" > 
 <tr valign="top" > 
@@ -111,7 +111,7 @@ During a sprint, your team can use the task board and sprint burndown chart to t
 </p>
 <p>Each team is associated with one and only one velocity chart. The green bar within the chart indicates the total estimated effort (story points or size) of backlog items (user stories or requirements) completed within the sprint. (Blue corresponds to the estimated effort of items not yet completed.)  </p>
 <p>Velocity will vary depending on team capacity, sprint over sprint. However, over time, the velocity should indicate a reliable average that can be used to forecast the full backlog. </p>
-<p>By minimizing the variability of backlog item size─effort or story points─you gain more reliable velocity metrics.</p>
+<p>By minimizing the variability of backlog item size&mdash;effort or story points&mdash;you gain more reliable velocity metrics.</p>
 </td>
 <td width="500px">
 ![Velocity chart](_img/velocity-chart.png)
@@ -148,7 +148,7 @@ For example, by selecting Sprints 1 thru 4, the Fabrikam Fiber team gets access 
 
 <img src="_img/selected-iterations-generate-sprint-backlogs.png" alt="TFS 2015 and TFS 2013, Selected iterations generate sprint backlogs" style="border: 2px solid #C3C3C3;" />
 
-## Related notes 
+## Related articles 
 If you work with several teams, and each team wants their own backlog view, you can [create additional teams](../scale/multiple-teams.md). Each team then gets access to their own set of Agile tools. Each Agile tool filters work items to only include those assigned values under the team's default area path and iteration path, which you configure via the [Set team defaults](../scale/set-team-defaults.md) .  
 
 - [What is Scrum?](https://www.visualstudio.com/learn/what-is-scrum/)

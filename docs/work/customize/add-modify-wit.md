@@ -6,12 +6,12 @@ ms.prod: vs-devops-alm
 ms.assetid: 62c0168a-23b8-4a92-9ecf-b67926f7756f
 ms.manager: douge
 ms.author: kaelli
-ms.date: 06/12/2017
+ms.date: 02/02/2017
 ---
 
 # Add or modify a work item type 
 
-[!INCLUDE [temp](../_shared/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [temp](../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
 Your team project contains 14 or more work item types (WITs), based on the process&mdash;[Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md)&mdash;used to create the team project. A WIT is the object you use to [track different types of work](../backlogs/add-work-items.md).  
 
@@ -21,13 +21,13 @@ See [Add or modify a field](add-modify-field.md) if you want to add a custom fie
 
 Most WIT customizations are made to the WIT definition, however, other customization are made through the Process Configuration definition or via the **witadmin** command line tool.  
 
->[!NOTE]  
+> [!NOTE]    
 ><b>Feature availability: </b>You can exercise some features only from an on-premises TFS and are noted as such. 
 
 > [!div class="mx-tdBreakAll"]  
 > |WIT definition  |ProcessConfiguration definition  |Command line change| 
 > |-------------|----------|----------|    
-> |- [Add or modify a field to an existing WIT](#modify-field)<br/>- [Add a custom WIT, modify a WIT](#add-wit)<br/>- [Change the workflow (states, reasons, transitions)](#modify-workflow)<br/>- [Modify the work item form](reference/change-work-item-form-layout.md) |- [Specify the WIT color](#change-wit-color) <br/>- [Specify the WIT icon](#change-wit-color) (TFS 2017.2)<br/>- [Specify the workflow state color](#change-wit-color)<br/>- [Add or remove a WIT from the backlog or task board](#change-wit-backlog-board)<br/>- [Add a custom WIT to a backlog or board](add-wits-to-backlogs-and-boards.md)  <br/>- [Add a portfolio backlog ](add-portfolio-backlogs.md)|- [List WITs](reference/witadmin/witadmin-import-export-manage-wits.md)<br/>- [Deactivate or disable a WIT](#deactivate-wit)<br/>- [Rename a WIT](#Rename a WIT (On-premises XML)) (TFS only)<br/>- [Delete a WIT](#delete-wit) (TFS only) |
+> |- [Add or modify a field to an existing WIT](#modify-field)<br/>- [Add a custom WIT, modify a WIT](#add-wit)<br/>- [Change the workflow (states, reasons, transitions)](#modify-workflow)<br/>- [Modify the work item form](reference/change-work-item-form-layout.md) |- [Specify the WIT color](#change-wit-color) <br/>- [Specify the WIT icon](#change-wit-color) (TFS 2017.2)<br/>- [Specify the workflow state color](#change-wit-color)<br/>- [Add or remove a WIT from the backlog or task board](#change-wit-backlog-board)<br/>- [Add a custom WIT to a backlog or board](add-wits-to-backlogs-and-boards.md)  <br/>- [Add a portfolio backlog ](add-portfolio-backlogs.md)|- [List WITs](reference/witadmin/witadmin-import-export-manage-wits.md)<br/>- [Deactivate or disable a WIT](#deactivate-wit)<br/>- [Rename a WIT](#rename-wit) (TFS only)<br/>- [Delete a WIT](#delete-wit) (TFS only) |
  
 
 <a id="add-wit">  </a>
@@ -132,7 +132,7 @@ The Agile planning tools&mdash;product backlog, sprint backlog, and task board p
 
 For example, you can add bugs from the product backlog page.
 
-[!INCLUDE [temp](../_shared/image-differences.md)]
+[!INCLUDE [temp](../_shared/image-differences.md)]
 
 ![](_img/add-modify-wit-quick-add-panel.png)
 
@@ -145,12 +145,12 @@ To learn how to add or remove WITs from the backlog or task board, see [Add a wo
 
 In the web portal, work items appear in query results and on the backlog and board pages of the Agile tools. To change the color or icon associated with an existing WIT or add the color to use for a new WIT, [edit the process configuration](reference/process-configuration-xml-element.md#wit-colors). To change the color for a workflow state, you also [edit the process configuration](reference/process-configuration-xml-element.md#state-colors). 
 
->[!NOTE]  
+> [!NOTE]    
 >**Feature availability:** <!---For Hosted XML process model, you can customize the WIT color, icon, and workflow state color. -->For On-premises XML, you can customize the workflow state color for TFS 2015.2 or later versions, and you can customize the WIT icon for TFS 2017.2 and later versions.  
  
 <img src="_img/add-modiy-wit-color-icon-state-color.png" alt="Query results showing wit color, icon, and state color" style="border: 1px solid #C3C3C3;" />  
 
-## Related notes
+## Related articles
 
 This topic addressed how to add and customize WITs and process configuration for Hosted XML and On-premises XML process models. For information on adding and customizing fields for Hosted XML and On-premises XML process models, see [Add or modify a work item type](add-modify-wit.md). For the Inheritance process model , see [Customize a process](process/customize-process.md).  
 
@@ -176,37 +176,31 @@ To get added as an administrator, see [Add administrators](../../security/set-pr
 <a id="witadmin">  </a>  
 ### Import and export WIT definition files (On-premises XML)
 
->[!NOTE]  
+> [!NOTE]    
 >If you use the Hosted XML process model, you need to import and export the process template used by your team project. For details, see [Customize the work item tracking web form](customize-wit-form.md).
 
-1.  If you don't have administration permissions for your team project, [get them](../../security/set-project-collection-level-permissions.md).  
+0. If you don't have administration permissions for your team project, [get them](../../security/set-project-collection-level-permissions.md).   
+[!INCLUDE [temp](../_shared/witadmin-run-tool-example.md)] 
 
-2.  Open a Command Prompt window where either Visual Studio or Team Explorer is installed and enter:  
+0. Export the WIT definition file where you want to modify or add a field. Specify the name of the WIT and a name for the file.  
 
-        cd %programfiles%\Microsoft Visual Studio 12.0\Common7\IDE  
-
-    On a 64-bit edition of Windows, replace %programfiles% with %programfiles(x86)%. Go [here to download Visual Studio Community](https://go.microsoft.com/fwlink/?LinkId=691978&clcid=0x409) for free.  
-
-3.  Export the WIT definition file where you want to modify or add a field. Specify the name of the WIT and a name for the file.  
-
-        witadmin exportwitd /collection:CollectionURL /p:ProjectName /n:TypeName /f:"DirectoryPath/FileName.xml"  
+    `witadmin exportwitd /collection:CollectionURL /p:ProjectName /n:TypeName /f:"DirectoryPath/FileName.xml"`  
 
     An example of a *CollectionURL* is `http://MyServer:8080/tfs/TeamProjectCollectionName`.  
 
-4.  Edit the file. For details, see [Index to XML element definitions](reference/xml-element-reference.md).  
+0.  Edit the file. For details, see [Index to XML element definitions](reference/xml-element-reference.md).  
 
-5.  Import the WIT definition file.  
+0.  Import the WIT definition file.  
 
-        witadmin importwitd /collection:CollectionURL /p:ProjectName /f:"DirectoryPath/FileName.xml"  
+	`witadmin importwitd /collection:CollectionURL /p:ProjectName /f:"DirectoryPath/FileName.xml"`  
 
-6.  Open the web portal or refresh the page to view the changes.  
+0.  Open the web portal or refresh the page to view the changes.  
 
     For more information about using **witadmin**, see [Import, export, and manage work item types](reference/witadmin/witadmin-import-export-manage-wits.md).
 
-
 ### Enable features after upgrade (On-premises XML) 
 
->[!NOTE]  
+> [!NOTE]    
 ><b>Feature availability: </b>You can exercise the Configure Features Wizard only from an on-premises TFS. 
 
 What customizations can you make and still use the Configure Features Wizard to update my team project after a TFS upgrade?  
@@ -215,9 +209,12 @@ You can add custom WITs and change the form layout. The [Configure Features Wiza
 
 Changing the workflow or renaming a WIT might require you to perform some manual operations when updating your team project. To learn about other customizations that you can safely make and which you should avoid, see [Customize the work tracking experience: Before you customize, understand the maintenance and upgrade implications](on-premises-xml-process-model.md#before-you-customize).  
 
+
+<a name="rename-wit" />
+
 ### Rename a WIT (On-premises XML) 
 
->[!NOTE]  
+> [!NOTE]    
 ><b>Feature availability: </b>You can exercise **witadmin renamewitd** only from an on-premises TFS. 
 
 To rename an existing WIT use **witadmin renamewitd**. For example, you can rename a WIT labeled "QoS Item" to "Service Agreement."

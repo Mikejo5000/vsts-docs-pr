@@ -7,7 +7,9 @@ ms.assetid: 9D2AE683-E116-4CEA-B673-CD7BEFB8F415
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/30/2016
+monikerRange: '>= tfs-2017'
 ---
+
 
 # Utility: Archive Files
 
@@ -94,6 +96,25 @@ None
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
+::: moniker range="vsts"
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: ArchiveFiles@2
+  inputs:
+#   rootFolderOrFile: $(Build.BinariesDirectory)
+#   includeRootFolder: True
+#   archiveType: zip # zip (default), 7z, tar, wim
+#   tarCompression: gz # gz (default), bz2, xz, none
+#   archiveFile: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
+#   replaceExistingArchive: true
+```
+
+::: moniker-end
+
 ## Q & A
 
 <!-- BEGINSECTION class="md-qanda" -->
@@ -102,6 +123,8 @@ None
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
+::: moniker range="< vsts"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->

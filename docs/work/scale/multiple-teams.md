@@ -12,11 +12,11 @@ ms.date: 10/17/2017
 
 # Add teams and team members  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 As your organization grows, you'll want to make sure that you configure your Agile tools to support that growth. To enable each feature team the autonomy it needs to manage their backlog and plan their sprints, they need their own set of team tools. 
 
->[!NOTE]  
+> [!NOTE]    
 >This topic describes how to add a team or team members to VSTS and TFS. To learn about Microsoft Teams, see the Marketplace extension, [Microsoft Teams Integration](https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-teams). 
 >
 >For a good understanding on how to remain Agile as you add teams, review the [Scale Agile to Large Teams](https://www.visualstudio.com/learn/scale-agile-large-teams/) article.
@@ -191,9 +191,9 @@ One last step in moving from one team to two teams requires configuring the defa
 
 	<img src="_img/multiple-teams-delete-team.png" alt="Web portal, admin context-team project level, Delete team" style="border: 1px solid #C3C3C3;" />  
 
-	You must be a member of the Project Administrators group or be [granted explicit permissions to edit project information](../../security/permissions.md#edit-team-project-level-information-permission) to delete a team project. 
+	You must be a member of the Project Administrators group or be [granted explicit permissions to edit project information](../../security/set-project-collection-level-permissions.md)to delete a team project. 
  
-	>[!IMPORTANT]   
+	> [!IMPORTANT]   
 	>Deleting a team deletes all team configuration settings, including team dashboards, backlogs, and boards. Data defined for work items assigned to the team are left unchanged. Once deleted, you can't recover the team configurations. 
 
 2. To complete the delete operation, you must type the name of the WIT as shown. 

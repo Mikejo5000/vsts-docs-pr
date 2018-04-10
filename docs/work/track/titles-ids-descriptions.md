@@ -1,20 +1,21 @@
 ---
-title: Query by title, ID, or rich-text fields | VSTS & TFS
-description: Example work queries based on titles, IDs, rich-text fields in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+title: Query by title, ID, or rich-text fields 
+titleSuffix: VSTS & TFS
+description: Example work queries based on titles, IDs, rich-text fields in Visual Studio Team Services and Team Foundation Server 
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: c0b1fcb1-c4f4-4651-a401-171fa4372518
 ms.manager: douge
 ms.author: kaelli
-ms.date: 04/14/2017  
+ms.date: 03/20/2018  
 ---
 
 # Query by titles, IDs, and rich-text fields
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 When you want to find work items based on a keyword or phrase, you can do so by entering the [keyword or phrase within the search box](search-box-queries.md#keywords). This initiates a new query which you can modify as needed to further refine your filter criteria, as described in this topic. 
 
-[!INCLUDE [temp](../_shared/search-box.md)]
+[!INCLUDE [temp](../_shared/search-box.md)]
 
 <a id="keyword"/>
 ## List items based on keywords or phrases
@@ -37,16 +38,30 @@ You can find work items that have an undefined field value by using the equals o
 To list work items based on a field that isn't blank, use the not operator (<>) and leave the Value blank.
 
 <a id="category"/>
-### List items based on categories
+## List items based on categories
 
 To filter work items based on the category they belong to, use the **In Group** operator. For example, the following filter criteria will return all work items that are in the current team project, assigned to the team member, and defined as belonging to the Bug Category.
 
 ![Query clause to find work items by category](_img/example-work-item-queries/IC720125.png)
 
+<a id="category"/>
+## What items appear in the Requirement or Task categories? 
+
+The default assignments of work item types to each category are listed below for each process.  
+
+| Process | Requirement category | Task category |
+|---------|---------|---------|
+| Agile | User Story | Task |
+| Scrum | Product Backlog Item | Task |
+| CMMI | Requirement | Task |
+
+However, each team can determine if the Bug work item type appears in either the Requirement or Task category. See [Show bugs on backlogs and boards](../customize/show-bugs-on-backlog.md). 
+
+Also, you can add custom work item types to a backlog. For details, see [Add or modify a work item type, Add a custom WIT to a backlog or board ](../customize/add-modify-wit.md). 
 
 ## Common fields for most work item types 
 
-The following table describes common fields used to filter queries. The **ID** fields uniquely identify work items in a list. Use the **Title** field to distinguish the work item from all others of the same type.  The **Description** and other rich-text (data type=HTML) fields provide additional information that is needed to implement work and track changes. After a work item is created, you can modify all fields except for the **ID**. When you add and save a work item, the ID is assigned by the system and cannot be changed. 
+The following table describes common fields used to filter queries. The **ID** fields uniquely identify work items in a list. Use the **Title** field to distinguish the work item from all others of the same type.  The **Description** and other rich-text (data type=HTML) fields provide additional information that is needed to implement work and track changes. After a work item is created, you can modify all fields except for the **ID**. When you add and save a work item, the ID is assigned by the system and cannot be changed. 
 
 >**Note:**&#160;&#160;The system automatically indexes all long-text fields with a data type of **PlainText** and **HTML** fields for full-text search. This includes the **Title**, **Description**, and **Steps to Repro** fields. For more information and  server and collation requirements applicable to on-premises TFS, see [Query fields, operators, values, and variables - Full-text and partial word searches](query-operators-variables.md#full-text).
 
@@ -164,24 +179,14 @@ Work Item Type
 0. To learn more about working with rich-text fields, see [Share plans](share-plans.md#rich-text).   
 0. Upon upgrade to Team Foundation Server 2012, the Description field was changed from a field type of PlainText to **HTML**. Using the **witadmin changefield** command you can revert the data type for this field. See [Manage work item fields (witadmin)](../customize/reference/witadmin/manage-work-item-fields.md).
 
-## Related notes
+## Related articles
 - [Query editor](using-queries.md)   
 - [Add work items](../backlogs/add-work-items.md)  
 - [Work item field index](../work-items/guidance/work-item-field.md)  
 - [Create managed queries](example-queries.md)   
 
-<a id="category"/>
-###What items appear in the Requirement or Task categories? 
 
-The default assignments of work item types to each category are listed below for each process.  
-
-| Process | Requirement category | Task category |
-|---------|---------|---------|
-| Agile | User Story | Task |
-| Scrum | Product Backlog Item | Task |
-| CMMI | Requirement | Task |
-
-However, each team can determine if the Bug work item type appears in either the Requirement or Task category. See [Show bugs on backlogs and boards](../customize/show-bugs-on-backlog.md). 
-
-Also, you can add custom work item types to a backlog. For details, see [Add or modify a work item type, Add a custom WIT to a backlog or board ](../customize/add-modify-wit.md). 
+[!INCLUDE [temp](../_shared/rest-apis-queries.md)]
+ 
+ 
  

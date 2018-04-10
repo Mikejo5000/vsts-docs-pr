@@ -1,6 +1,7 @@
 ---
 title: View subscribed notifications, unsubscribe or opt-out  
-description: View your notifications and unsubscribe from a default or built-in notfication in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)
+titleSuffix: VSTS & TFS
+description: View your notifications and unsubscribe from a default or built-in notfication in Visual Studio Team Services or Team Foundation Server
 ms.prod: vs-devops-alm
 ms.technology: collaborate
 ms.assetid: 
@@ -8,6 +9,7 @@ ms.topic: get-started-article
 ms.manager: douge
 ms.author: elbatk
 ms.date: 09/29/2017
+monikerRange: '>= tfs-2017'
 ---
 
 

@@ -8,9 +8,14 @@ ms.assetid: 6D0F0D86-2ADC-4902-AFA7-98F7EF78EE07
 ms.manager: douge
 ms.author: amullans
 ms.date: 10/19/2017
+monikerRange: '>= tfs-2017'
 ---
 
+ 
+
 # Symbol files (PDBs)
+
+**VSTS** | **TFS 2018** | **TFS 2017**
 
 [!INCLUDE [](../_shared/availability-symbols.md)]
 

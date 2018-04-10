@@ -22,14 +22,14 @@
       href: effective-tfvc-branching-strategies-for-devops.md
     - name: Git lost my changes?
       href: git-log-history-simplification.md
-    - name: How dates work in Git
-      href: git-dates.md
     - name: Move Git repos between team projects
       href: move-git-repos-between-team-projects.md
     - name: Remove large binaries from Git
       href: remove-binaries.md
     - name: Migrate from SVN to Git
       href: perform-migration-from-svn-to-git.md
+    - name: Test Impact for partially mapped TFVC repositories
+      href: test-impact-for-partially-mapped-tfvc-repositories.md
 - name: DevOps
   items:
     - name: Phase the features of your app with feature flags

@@ -7,11 +7,12 @@ ms.technology: vs-devops-package
 ms.manager: douge
 ms.author: amullans
 ms.date: 09/01/2017
+monikerRange: '>= tfs-2017'
 ---
 
 # Use npm scopes
 
-[!INCLUDE [](../_shared/availability-npm.md)]
+**VSTS** | **TFS 2018** | **TFS 2017**
 
 [Scopes](https://docs.npmjs.com/misc/scope) are built into npm and are a way of grouping packages together.
 In VSTS and in npmjs.com, you can publish and use both scoped and unscoped packages. 

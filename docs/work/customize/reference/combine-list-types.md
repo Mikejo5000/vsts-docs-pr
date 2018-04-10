@@ -14,7 +14,7 @@ ms.date: 04/05/2017
 <b>VSTS (Hosted XML) | TFS 2017 | TFS 2015 | TFS 2013</b>
 
 
->[!IMPORTANT]  
+> [!IMPORTANT]  
 >This topic applies to team project customization for Hosted XML and On-premises XML process models. For an overview of process models and supported customizations, see [Customize your work tracking experience](../customize-work.md).  
 
 You can specify multiple types of lists for a single field. This topic defines how the resulting list of items is determined.  
@@ -35,15 +35,15 @@ You can specify multiple types of lists for a single field. This topic defines h
   
 ```  
 If {set S} AND {set A} have no entries  
-        Result: Empty list  
+        �Result: Empty list  
 If {set S} has entries and {set A} has no entries  
-        Result: The values are obtained by subtracting {set P} from {set S}  
+        �Result: The values are obtained by subtracting {set P} from {set S}  
 If {set S} AND {set A} have entries  
-        Result: The list of values are obtained by:  
-                a. Intersecting {set A} with {set S} to get {intermediate set I}  
-                b. Subtracting {set P} from {intermediate set I}  
+        �Result: The list of values are obtained by:  
+                a. Intersecting {set A} with {set S} to get {intermediate set I}  
+                b. Subtracting {set P} from {intermediate set I}  
 If {set S} has no entries and {set A} has entries  
-        Result: The list of values are obtained by subtracting {set P} from {set A}  
+        �Result: The list of values are obtained by subtracting {set P} from {set A}  
 ```  
   
 ## Specify multiple lists  
@@ -51,7 +51,7 @@ If {set S} has no entries and {set A} has entries
   
  If you specify multiple `<SUGGESTEDVALUES>` sets or `<PROHIBITEDVALUES>` sets, the union of each of these multiple sets is taken as the final set, {set S} or {set P}, respectively.  
   
-## Related notes
+## Related articles
 - [Define pick lists](define-pick-lists.md)  
 - [Expand list items and exclude groups from lists](expand-list-items-and-exclude-groups-from-lists.md) 
 

@@ -1,33 +1,31 @@
 ---
-title: Customize a process to import using Hosted XML | VSTS
+title: Customize a process to import using Hosted XML
+titleSuffix: VSTS
 description: Customize a Hosted XML process to support custom fields, work item types, global lists, and process configuration  
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: AA5B592D-8F76-4974-9918-B8B523A6F23F
 ms.manager: douge
 ms.author: kaelli
-ms.date: 05/23/2017
+monikerRange: 'vsts'
+ms.date: 03/20/2018
 ---
 
 # Customize a process when using Hosted XML
 
 <b>VSTS (Hosted XML)</b>   
  
->[!IMPORTANT]  
->**Feature availability:**&#160;&#160;Import process supports the Hosted XML process model which allows you to manage customizations through updating select XML definition files of a process template. This feature is only available for accounts that have been migrated to VSTSusing the [TFS Database Import Service](https://aka.ms/TFSDataImport).  
+> [!IMPORTANT]  
+> **Feature availability:**&#160;&#160; With the Hosted XML process model, you customize work tracking by updating select XML definition files of a process template. This feature is only available for accounts that have been migrated to VSTS using the [TFS Database Import Service](https://aka.ms/TFSDataImport).  
 > 
->If you use the Inheritance process model, you can customize your work tracking through the user interface by [creating an inherited process](../process/manage-process.md). If you use the On-premises XML process model, you can customize a process template, see [Upload or download a process template](../../work-items/guidance/manage-process-templates.md) and [Customize a process template](../reference/process-templates/customize-process.md).
->
->To learn more about process models, see [Customize work tracking](../customize-work.md). 
+>To learn more about customization and process models, see [Customize work tracking](../customize-work.md). 
 
 VSTS supports adding and updating processes through a web based [import process](import-process.md) administrative experience. 
 Once you add a process, you can create one or more team projects from it. 
-You can update the process at any time by importing the process again and confirming that you want to update it.
+You can update the process at any time by importing the process again. 
 The changes made to the process template are then applied to all team projects using that process.  
 
-A process is a zip file containing a set of interdependent files used to define the building blocks of the work item tracking system as well as other sub-systems in VSTS.
-
-While your custom process may contain the entire set of template files-plug-ins and object definition files-only a subset are validated upon import and then used to inform the process and update existing team projects. Specifically, the system performs the following actions on each of the plug-ins and objects defined within the process you choose for import. 
+A process is a zip file containing a set of interdependent files used to define the building blocks of the work item tracking system as well as other sub-systems in VSTS. Some building blocks will update existing team projects, while others only apply to new team projects. See the table below for the full list.
 
 <table>
 <tbody>
@@ -84,7 +82,7 @@ to make sure it conforms to the [constraints placed on templates for import](#ru
 
 1.  From the Process tab, click the  open the &hellip; context menu for the process that you want to export.      
     
-	<img src="_img/customize-process-export-template.png" alt="Account settings admin context, Export a process" style="border: 2px solid #C3C3C3;" /> 
+	<img src="_img/customize-process-export-template.png" alt="Account settings admin context, Export a process" style="border: 2px solid #C3C3C3;" /> 
   
     Save the zip file and extract all files.
 
@@ -119,6 +117,8 @@ You can apply the following customizations to your process
 Refer to the [restrictions](#restrictions) below for a list of limitations imposed by the system. 
 
 <a id="restrictions"></a>
+<a id="rule-summary"></a>
+
 ## Restrictions
 You can import up to 32 processes to VSTS. Your custom process must conform to all rules summarized below, otherwise a validation error message may occur upon import.
 * [Process](#process)
@@ -137,7 +137,7 @@ You can import up to 32 processes to VSTS. Your custom process must conform to a
     * [Form layout](#work-item-form-layout)
  
 <a id="process"></a>
-### Process
+### Process template
 Your ProcessTemplate.xml file must conform to the syntax and rules described in [ProcessTemplate XML element reference](../reference/process-templates/process-template-xml-elements-reference.md). In addition, it must meet the following conditions:  
 * Limit the number of WITs defined to 64
 * Contain only one Categories.xml definition file  
@@ -172,7 +172,7 @@ The Categories.xml definition file must conform to the syntax and rules describe
 <a id="work-item-types"></a>
 ### Work item types
 The  ```WITD``` element and its child elements must conform to the syntax and rules described in [WITD XML element reference](../reference/all-witd-xml-elements-reference.md). In addition, it must meet the following conditions:       
-*   Limit definition of 256 fields within a single WIT, and 512 fields across all WITs 
+*   Limit definition of 512 fields within a single WIT, and 512 fields across all WITs 
 *   The friendly name and required refname assigned to a WIT must be unique within the set of WIT definition files 
 *   The required refname attribute value can't contain disallowed characters nor use a disallowed namespace: System.*Name* and Microsoft.*Name*    
     Reference names must contain only letters, no spaces, and at least one period (.). 
@@ -192,7 +192,7 @@ The ```FIELDS``` section and its child elements must conform to the syntax and r
 #### Limit restrictions  
 *   Limit definition to 512 fields 
 *   Limit definition of person-name fields, ones with an attribute of ```syncnamechange=true```, to 64 per work item type
-*   Limit definition of ```LISTITEM```elements within an ```ALLOWEDVALUES``` or ```SUGGESTEDVALUES``` element for a field to 128 
+*   Limit definition of ```LISTITEM```elements within an ```ALLOWEDVALUES``` or ```SUGGESTEDVALUES``` element for a field to 512 
 *   Limit definition of allowed rules to 1024 for a field. 
 
 <a id="required-fields"></a>
@@ -205,6 +205,8 @@ The ```FIELDS``` section and its child elements must conform to the syntax and r
 *   For all WITs that belong to the category used to define the ```TaskBacklog```, specify the ```ALLOWEDVALUES``` rule for the field used for ```type=Activity``` in the ProcessConfiguration.xml file 
 
 <a id="rule-restrictions"></a>
+
+
 #### Rule restrictions
 In addition to the standard [field rule restrictions](../reference/apply-rule-work-item-field.md), the following restrictions are enforced:
 *   Field rule elements can't specify the *for* and *not* attributes   

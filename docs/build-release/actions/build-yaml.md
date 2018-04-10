@@ -7,7 +7,9 @@ ms.assetid: 5A3A363E-C21F-4593-A145-B57492E9FEDC
 ms.manager: douge
 ms.author: alewis
 ms.date: 12/07/2017
+monikerRange: 'vsts'
 ---
+
 
 # How to use YAML builds
 
@@ -26,7 +28,7 @@ In a YAML build definition, your CI build process configured as code, which mean
 
 ## Get started
 
-If you're new to YAML builds, or to VSTS, we suggest you [begin with a tutorial](../apps/aspnet/build-aspnet-core.md) and then come back here.
+If you're new to YAML builds, or to VSTS, we suggest you begin learning with either our [ASP.NET Core](../apps/aspnet/build-aspnet-core.md) or [Node.js](../apps/nodejs/build-gulp.md) tutorial.
 
 ## How do YAML builds compare to web-interface builds?
 
@@ -53,7 +55,7 @@ If you're new to YAML builds, or to VSTS, we suggest you [begin with a tutorial]
 
 ## Automatically create a YAML build definition
 
-To make it more convenient to create YAML build definitions, VSTS automatically creates a definition when you add a file named .vsts-ci.yml to the root of your resository. It creates the build definition in a folder that has the same name as your repository.
+To make it more convenient to create YAML build definitions, VSTS automatically creates a definition when you add a file named .vsts-ci.yml to the root of your repository. It creates the build definition in a folder that has the same name as your repository.
 
 1. Navigate to the **Code** hub, choose the **Files** tab, and then choose the repository you created in the above steps.
 
@@ -85,7 +87,7 @@ If your code is in GitHub, or if you want to create multiple YAML build definiti
 
 1. Click **Process**.
 
-1. For the **Default agent queue** select any of the hosted options.
+1. For the **Agent queue** select any of the hosted options.
 
 1. For YAML path, click the **...** button, and then choose your .YML file.
 

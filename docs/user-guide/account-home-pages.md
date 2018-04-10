@@ -6,8 +6,10 @@ ms.prod: vs-devops-alm
 ms.assetid: B4406575-4D4D-42E3-88FD-93830546B67F
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/11/2017
+ms.date: 01/24/2018
+monikerRange: '>= tfs-2017'
 ---
+
 
 # Work effectively from your account hub 
 
@@ -46,11 +48,13 @@ As you hover over the project, you can click one of the links to go to the Home 
 <img src="_img/account-home-projects-hover-links.png" alt="Account home, Projects page, hover over a team project" style="border: 1px solid #CCCCCC;" />    
 
 ### Filter projects and teams
+
 If a project isn't listed, you can find it by searching for it using the *Filter projects and teams* search box. Simply type a keyword contained within the name of a team project or team. Here we type **Design** to find the Contoso project Design team. 
 
 <img src="_img/account-home-search-projects-design.png" alt="Account home, Projects page, filter on Design" style="border: 1px solid #CCCCCC;" />    
 
 ### Add a team project
+
 If you're an account administrator or are a member of the Project Collection Administrators group, the New Project button is shown. Click New Project to [add a team project](../accounts/create-team-project.md). 
 
 <img src="_img/account-home-projects-new-project.png" alt="Account home, Projects page, New team project" style="border: 1px solid #CCCCCC;" />
@@ -80,12 +84,13 @@ Favorited objects include:
 - To mark a build definition as a favorite, open the **Build&Release>All Definitions** page and click the ![favorites](_img/icon-favorite-star.png) star icon next to the build definition.    
 - To mark a test plan as a favorite, open the **Test>Test Plans** page and click the ![favorites](_img/icon-favorite-star.png) star icon next to a test plan from the menu that shows All test plans. 
 
-### Remove an item from your favorites list 
+### Remove an item from your favorites list
+
 To remove an item from your favorites list, click the ![favorited icon](_img/icon-favorited.png) favorited icon. 
 
 <img src="_img/account-home-remove-from-favorites.png" alt="Account home, Favorites page" style="border: 1px solid #CCCCCC;" />   
 
-### Filter the list of favorites  
+### Filter the list of favorites
 
 To filter the list, type a keyword in the *Filter favorites* box. The list will filter based on keyword matches to the title or team project name associated with the favorited item. 
  
@@ -94,9 +99,10 @@ To filter the list, type a keyword in the *Filter favorites* box. The list will 
 Open the **Work items** hub to access the set of work items assigned to you or followed by you. The lists available from each page span all team projects that you work in. 
 
 > [!NOTE]  
-> <b>Feature availability: </b>For VSTS, you can access the Work items hub [from a mobile device](../collaborate/mobile-work.md). 
+> **Feature availability**: For VSTS, you can access the Work items hub [from a mobile device](../collaborate/mobile-work.md). 
 
-###Your assigned work items 
+### View your assigned work items
+
 The **Assigned to me** page lists all work items assigned to you in the order they were last updated. To open or update a work item, click its title. 
 
 <img src="_img/account-home-work-assigned-to-me.png" alt="Account home, Work, Assigned to me page" style="border: 1px solid #CCCCCC;" />  
@@ -117,7 +123,7 @@ Click **My activity** to open the page that lists all work items that you have r
 
 <img src="_img/account-work-my-activity.png" alt="Account home, Work items, My Activity page" style="border: 1px solid #CCCCCC;" /> 
 
-### Filter the list of work items 
+### Filter the list of work items
 
 Similar to the Favorites page, you can filter the work pages by typing a keyword in the *Filter your work items...* box. The list will filter based on keyword matches to the work item ID, title, state, or team project name. 
 
@@ -131,24 +137,32 @@ Open the **Pull requests** page to access any pull request that's relevant to yo
 
 From each page, you're one click away from navigating to the branch or repository for a pull request. This mirrors capabilities on the team-project level **Code>Pull Requests** page.
 
-### Filter the list of pull requests 
+### Filter the list of pull requests
 
 Similar to the Favorites page, you can filter the list by typing a keyword in the *Filter pull requests* box. 
 
+
+<!--- Not implemented yet 
+## Load testing 
+-->
+ 
+
+
 <a id="team-rooms">  </a>
-##Rooms: Navigate to a team room 
+## Rooms: Navigate to a team room 
 
-To open a team room, click **Rooms**. You'll see all the team rooms defined for the account. Click the name of a team room which you have access. 
+> [!NOTE]  
+> **Feature availability:** Team Rooms have been deprecated for VSTS and TFS 2018 and later versions as described in this blog post,  [Deprecation of the Team Rooms in VSTS and TFS](https://blogs.msdn.microsoft.com/devops/2017/01/04/deprecation-of-the-team-rooms-in-team-services-and-tfs/). Several good solutions are available that integrate well with TFS that support notifications and chat, such as [Microsoft Teams](../service-hooks/services/teams.md) and [Slack](../service-hooks/services/slack.md). As a result, the Team Room feature will be deprecated from both Visual Studio Team Services (VSTS) and Team Foundation Server (TFS).  
 
-> [!NOTE]
-> You only have access to those team rooms of which you are a team member.  
+
+To open a team room, click **Rooms**. You'll see all the team rooms defined for the account. Click the name of a team room which you have access. You only have access to those team rooms of which you are a team member.  
 
 <img src="_img/account-home-rooms.png" alt="Account home, Rooms, selected team room" style="border: 1px solid #CCCCCC;" />   
 
 To learn more about team rooms, see [Collaborate in a team room](../collaborate/collaborate-in-a-team-room.md). 
 
 <!--- Not implemented yet 
-##Load testing 
+## Load testing 
 
 --> 
 
@@ -158,3 +172,4 @@ To learn more about team rooms, see [Collaborate in a team room](../collaborate/
 - [Work in the web portal](work-web-portal.md) 
 - [Connect to team projects](connect-team-projects.md)  
 
+[!INCLUDE [temp](../_shared/help-support-shared.md)] 

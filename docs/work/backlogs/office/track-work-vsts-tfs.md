@@ -10,10 +10,10 @@ ms.date: 03/31/2017
 ---
 # Work in Excel or Project 
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 
-You can communicate with Team Foundation Server by using Office Excel and Office  Project. You can decide to either work in an online mode where you are connected to the server that hosts the team project that you have accessed, or in an offline mode where you are accessing the local computer and document.  
+To support your work tracking efforts, you can use Office Excel and Office Project. You can decide to either work in an online mode where you are connected to either Visual Studio Team Services (VSTS) or Team Foundation Server (TFS), or in an offline mode where you access the local computer and document.  
   
 > [!IMPORTANT]  
 > You may receive the following error if you install Office 2010 on the same computer as a previous version of Office.  
@@ -86,7 +86,7 @@ To reconnect an Excel or Project document file:
   
 4.  Resolve any data validation errors or conflicts that occur.  
 
-## Related notes
+## Related articles
 
 - [Connect to team projects, Connect to Excel or Project](../../../user-guide/connect-team-projects.md#excel-project)  
 - [Bulk add or modify work items with Excel](bulk-add-modify-work-items-excel.md)  

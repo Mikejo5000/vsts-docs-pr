@@ -7,7 +7,9 @@ ms.assetid: 67C942BB-6DC7-4016-9364-50E3A3FEACDD
 ms.manager: douge
 ms.author: alewis
 ms.date: 10/12/2017
+monikerRange: '>= tfs-2015'
 ---
+
 
 # Utility: Copy and Publish Build Artifacts
 
@@ -17,7 +19,7 @@ ms.date: 10/12/2017
 
 > [!IMPORTANT]
 > 
-> Are you using Visual Studio Team Services (VSTS), Team Foundation Server (TFS) 2015 Update 3, or newer? If so, then we recommend that you do not use this task; it's deprecated. Instead, you should use the **Copy Files** and **Publish Build Artifacts** tasks. See [Artifacts in Team Build](../../concepts/definitions/build/artifacts.md).
+> Are you using Visual Studio Team Services (VSTS), Team Foundation Server (TFS) 2015.3 or newer? If so, then we recommend that you do not use this task; it's deprecated. Instead, you should use the **Copy Files** and **Publish Build Artifacts** tasks. See [Artifacts in Team Build](../../concepts/definitions/build/artifacts.md).
 >
 > You should use this task only if you're using Team Foundation Server (TFS) 2015 RTM. In that version of TFS this task is listed under the **Build** category and it's called **Publish Build Artifacts**.
 > 
@@ -85,7 +87,9 @@ You can avoid these issues by instead using the [Copy Files step](copy-files.md)
 
 [!INCLUDE [temp](../_shared/build-step-common-qa.md)]
 
+::: moniker range="< vsts"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
+::: moniker-end
 
 
 <!-- ENDSECTION -->

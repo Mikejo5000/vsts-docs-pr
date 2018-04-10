@@ -1,9 +1,11 @@
 ---
-title: Scrum process work items and workflow | VSTS & TFS 
-description: How to guide for using the Scrum process  work item types and workflow to track work in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)   
+title: Scrum process work items and workflow
+titleSuffix: VSTS & TFS
+description: How to guide for using the Scrum process  work item types and workflow to track work in Visual Studio Team Services & Team Foundation Server 
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 34c866ea-a130-4371-bfc4-a3d9f87dccca
+ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelli
 ms.date: 04/05/2017
@@ -11,7 +13,7 @@ ms.date: 04/05/2017
 
 # Scrum process work item types and workflow  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 To plan a software project and track software defects using Scrum, teams use the product backlog item (PBI) and bug work item types (WITs). To gain insight into a portfolio of features, scenarios, or user experiences, product owners and program managers can map PBIs and bugs to features. When teams work in sprints, they define tasks which automatically link to PBIs and bugs.
 
@@ -19,10 +21,7 @@ To plan a software project and track software defects using Scrum, teams use the
 
 Using the web portal or Microsoft Test Manager, testers can create and run test cases and create bugs to track code defects. Impediments track blocking issues.
 
->[!NOTE]  
-><b>Feature availability: </b> Work item tracking forms and features available to you differ depending on whether you connect to the cloud or an on-premises Team Foundation Server (TFS), and whether you open the form from the web portal or Visual Studio Team Explorer. Forms and guidance provided in this topic reflect those available with the [new form experience](../../customize/process/new-work-item-experience.md) (VSTS and the web portal for TFS 2017 and later versions). 
->
->If you connect to TFS 2015 or earlier versions, or open the form from Visual Studio Team Explorer, see [Add work items (TFS)](../../backlogs/add-work-items-tfs.md).  
+[!INCLUDE [temp](../../_shared/note-work-item-form-differences.md)]   
 
 ## Define PBIs and bugs  
 
@@ -48,7 +47,7 @@ Use the following guidance and that provided for [fields used in common across w
 <tbody valign="top">
 <tr>
 	<td width="20%"><p>[Effort](../../track/query-numeric.md)</p></td>
-	<td><p>Estimate the amount of work required to complete a PBI using any unit of measurement your team prefers, such as story points or time. A numeric value is required. </p><p>Agile [velocity charts](../../../report/guidance/team-velocity.md) and [forecast](../../scrum/forecast.md) tools reference the values in this field. For additional guidance, see the [Estimating](https://msdn.microsoft.com/library/hh765979) white paper.</p></td></tr>
+	<td><p>Estimate the amount of work required to complete a PBI using any unit of measurement your team prefers, such as story points or time. A numeric value is required. </p><p>Agile [velocity charts](../../../report/dashboards/velocity-chart-data-store.md) and [forecast](../../scrum/forecast.md) tools reference the values in this field. For additional guidance, see the [Estimating](https://msdn.microsoft.com/library/hh765979) white paper.</p></td></tr>
 <tr>
 	<td><p>[Business Value](../../track/query-numeric.md)</p></td>
 	<td><p>Specify a number that captures the relative value of a PBI compared to other PBIs. The higher the number, the greater the business value.</p></td>
@@ -71,7 +70,7 @@ Use the following guidance and that provided for [fields used in common across w
 
 
 > [!TIP]    
-> Use the [Discussion section](../../work-items/work-item-form-controls.md#discussion) to add and review comments made about the work being performed. This feature is only available from VSTS.  
+> Use the [Discussion section](../../work-items/work-item-form-controls.md#discussion) to add and review comments made about the work being performed.  
 
 ## Track progress
 
@@ -94,7 +93,7 @@ PBIs and bugs follow this typical workflow progression:
 
 -   The product owner creates a PBI or a tester creates a bug in the **New** state with the default reason, **New backlog item**  
 -   The product owner moves the item to **Approved** after it is sufficiently described and ready for the team to estimate the level of effort. Most of the time, items near the top of the Product Backlog are in the Approved state, while items toward the middle and bottom are in a New state  
--   The team updates the status to **Committed** when they decide to complete the work during the sprint  
+-   The team updates the status to **Committed** when they decide to commit to working on it during the sprint  
 -   The item is moved to the **Done** state when the team has completed all its associated tasks and the product owner agrees that it has been implemented according to the Acceptance Criteria.  
 
 
@@ -163,14 +162,15 @@ The ![Links tab icon](../../backlogs/_img/icon-links-tab-wi.png) (links tab) cap
 
 You can [create bugs from the web portal web portal, Visual Studio, or when testing with Test Manager](../../backlogs/manage-bugs.md). 
 
-[!INCLUDE [temp](../../_shared/common-work-item-fields.md)]   
+[!INCLUDE [temp](../../_shared/common-work-item-fields.md)]   
 
+## Customize work item types
+[!INCLUDE [temp](../../_shared/customize-work-tracking.md)] 
 
-## Related notes
+## Related articles
 
 [!INCLUDE [temp](../../_shared/create-team-project-links.md)]  
   
-[!INCLUDE [temp](../../_shared/customize-work-tracking.md)]  
 
 
 ### Track impediments
@@ -181,7 +181,7 @@ You can add an impediment from the [New work item widget](../../../report/dashbo
 
 ![Add work item from a New work item widget](_img/scrum-new-work-item-widget.png)  
 
-Work items you add from the widget are automatically scoped to your [team's default area and iteration paths](../../scale/set-team-defaults.md). To change the team context, see [Switch team context](../../../teams/switch-team-context.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json).  
+Work items you add from the widget are automatically scoped to your [team's default area and iteration paths](../../scale/set-team-defaults.md). To change the team context, see [Switch team context](../../../settings/switch-team-context.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json).  
 
 
 ### Backlog list order

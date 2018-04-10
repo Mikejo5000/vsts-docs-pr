@@ -7,7 +7,9 @@ ms.assetid: 72C7D4F4-E626-42FF-BCA8-24D58D9A960F
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
+
 
 # Utility: Command line
 
@@ -56,6 +58,22 @@ None
 </tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
+
+::: moniker range="vsts"
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: CmdLine@2
+  inputs:
+#   script: echo Write your commands here
+    workingDirectory:
+#   failOnStderr: false
+```
+
+::: moniker-end
 
 ## Example
 
@@ -124,6 +142,8 @@ On the Build tab of a build definition, add these steps:
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
+::: moniker range="< vsts"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->

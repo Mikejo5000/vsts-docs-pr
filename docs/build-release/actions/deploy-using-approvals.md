@@ -1,20 +1,15 @@
 ---
 title: Use approvals and gates to control your deployment
 description: Use release approvals and release gates to control your deployment in VSTS and TFS
-services: vsts
-documentationcenter: ''
-author: ahomer
-manager: douge
-editor: ''
-
 ms.assetid: 3D22D4B3-DE1F-482C-BBD4-475C829452C1
-ms.workload: web
-ms.tgt_pltfrm: na
-ms.devlang: na
-ms.topic: get-started-article
-ms.date: 11/14/2017
+ms.prod: vs-devops-alm
+ms.technology: vs-devops-build
+ms.topic: tutorial
+ms.manager: douge
 ms.author: ahomer
-ms.custom: mvc
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: ">= tfs-2018"
 ---
 
 # Use approvals and gates to control your deployment

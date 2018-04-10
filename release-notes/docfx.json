@@ -30,7 +30,19 @@
     ],
     "overwrite": [],
     "externalReference": [],
-    "globalMetadata": {},
+    "globalMetadata": {
+      "uhfHeaderId": "MSDocsHeader-TeamServices",
+      "ms.topic": "article",
+      "ms.technology": "vs-devops-articles",
+      "author": "alexcnichols",
+      "ms.author": "alexn",
+      "ms.manager": "douge",
+      "ms.prod": "vs-devops-alm",
+      "ms.version": "ALM",
+      "MSHAttr.msprod": "ms.prod:ALM",
+      "ms.prodfamily": "ALM",
+      "hide_comments": "true"
+    },
     "fileMetadata": {},
     "template": [],
     "dest": "release-notes"

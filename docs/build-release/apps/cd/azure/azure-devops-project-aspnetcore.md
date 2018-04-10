@@ -2,7 +2,7 @@
 title: Create a CI/CD pipeline for .NET with the Azure DevOps Project  | Quickstart
 description: The DevOps Project makes it easy to get started on Azure. It helps you launch a .NET app on an Azure service of your choice in few quick steps.
 services: vsts
-documentationcenter: ''
+documentationcenter: vs-devops-build
 author: mlearned
 manager: douge
 editor: ''
@@ -12,10 +12,12 @@ ms.workload: web
 ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: get-started-article
-ms.date: 12/01/2017
+ms.date: 12/20/2017
 ms.author: mlearned
 ms.custom: mvc
+monikerRange: 'vsts'
 ---
+
 
 # Create a CI/CD pipeline for .NET with the Azure DevOps Project
 
@@ -75,7 +77,7 @@ The Azure DevOps project created a Git repository in your VSTS or GitHub account
 
 The Azure DevOps project automatically configured a full VSTS CI/CD pipeline in your VSTS account.  Explore and customize the pipeline as needed.  Follow the steps below to familiarize yourself with the VSTS build and release definitions.
 
-1. Select **Build Pipelines** from the Azure DevOps project dashboard.  This link opens a browser tab and opens the VSTS build definition for your new project.
+1. Select **Build Pipelines** from the **top** of the Azure DevOps project dashboard.  This link opens a browser tab and opens the VSTS build definition for your new project.
 
 1. Select the **ellipsis**.  This action opens a menu where you can perform several activities such as queue a new build, pause a build, and edit the build definition.
 
@@ -143,7 +145,7 @@ With Azure Application insights, you can easily monitor your application's perfo
 
 ## Clean up resources
 
-When no longer needed, you can delete the Azure App service and related resources created in this quickstart.
+When no longer needed, you can delete the Azure App service and related resources created in this quickstart by using the **Delete** function from the Azure DevOps project dashboard.
 
 ## Next steps
 

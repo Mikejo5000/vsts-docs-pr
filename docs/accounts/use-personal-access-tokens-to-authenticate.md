@@ -5,9 +5,11 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
 ms.assetid: d980d58e-4240-47c7-977c-baaa7028a1d8
 ms.manager: douge
-ms.author: billchi
+ms.author: chcomley
 ms.date: 10/6/2017
+monikerRange: '>= tfs-2017'
 ---
+
 
 # Authenticate access with personal access tokens for VSTS and TFS
 

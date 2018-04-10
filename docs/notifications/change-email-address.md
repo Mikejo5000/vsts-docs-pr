@@ -1,5 +1,6 @@
 ---
-title: Change your email address for notifications in VSTS or TFS
+title: Change your email address 
+titleSuffix: VSTS & TFS
 description: Change the email address used to receive alerts or email  notifications managed in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
 ms.technology: collaborate
@@ -8,8 +9,8 @@ ms.topic: get-started-article
 ms.manager: douge
 ms.author: elbatk
 ms.date: 09/01/2017
+monikerRange: '>= tfs-2015'
 ---
-
 
 
 

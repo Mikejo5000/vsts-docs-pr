@@ -12,7 +12,7 @@ ms.date: 11/07/2017
 
 # Set permissions on queries and query folders
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 
 As with most team project objects, you can control who has access by setting permissions. With queries, you can configure users and groups to create, delete, view, and manage permissions of shared queries and shared query folders. 
@@ -63,7 +63,7 @@ To keep anyone else from modifying a shared query that you create, you may want 
 
 	<img src="_img/set-permissions-deny-for-query.png" alt="Permissions dialog for a query, set to deny" style="border: 1px solid #C3C3C3;" />  
 
-## Related notes  
+## Related articles  
 
 With queries, you can not only list work items, you can create status and trend charts and add them to dashboards. You can learn more about permissions and working with queries from these resources: 
 

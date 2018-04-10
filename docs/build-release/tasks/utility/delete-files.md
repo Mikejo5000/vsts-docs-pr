@@ -7,7 +7,9 @@ ms.assetid: C71CD55E-3028-4526-A9C3-779ECE31CCD1
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
+
 
 # Utility: Delete files
 
@@ -53,6 +55,21 @@ None
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
+::: moniker range="vsts"
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: DeleteFiles@1
+  inputs:
+    SourceFolder:
+#   Contents: myFileShare
+```
+
+::: moniker-end
+
 ## Q & A
 
 <!-- BEGINSECTION class="md-qanda" -->
@@ -71,7 +88,9 @@ A: See:
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
+::: moniker range="< vsts"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
+::: moniker-end
 
 
 <!-- ENDSECTION -->

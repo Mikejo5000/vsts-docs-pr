@@ -1,61 +1,65 @@
 ---
-title: Delete users for Visual Studio Team Services
-description: Delete users for Visual Studio Team Services
+title: Delete users from Visual Studio Team Services
+description: Delete or remove account users from Visual Studio Team Services (VSTS)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
+ms.topic: conceptual
 ms.assetid: d3a31878-a869-45a9-9bca-f46cc2682596
 ms.manager: douge
-ms.author: billchi
-ms.date: 11/13/2017
+ms.author: chcomley
+ms.date: 03/27/2018
+monikerRange: 'vsts'
 ---
 
-#	Delete users for Visual Studio Team Services (VSTS)
+
+# Delete users from Visual Studio Team Services (VSTS)
 
 **VSTS**
 
-## How does *access* differ from *permissions*?
+If a user no longer requires access to a team project or your VSTS account, you can remove their access to a team project or your account.
 
-Access levels control which features are available to users, while permissions control their access to account resources. 
-[Can't access some features?](faq-add-delete-users.md#feature-access) 
-For TFS, learn [how to change access levels](../security/change-access-levels.md) 
-or [buy more access to TFS or the Test hub](../billing/buy-access-tfs-test-hub.md). 
+## Prerequisites
 
-To control access to account resources instead, learn [how to add permissions](../security/add-users-team-project.md) or 
-[restrict permissions](restrict-access-tfs.md).  To change how many users can access paid extensions in your 
-VSTS account, 
-learn [how to change paid extension users](../billing/change-number-paid-extension-users.md).
+- You'll need [VSTS project collection administrator or account owner permissions](../security/set-project-collection-level-permissions.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json).
 
+## Remove users from your VSTS account
 
-## Required permissions
+1. Sign in to your VSTS account (```https://{youraccount}.visualstudio.com```).
 
-You'll need [VSTS project collection administrator or account owner permissions](faq-add-delete-users.md#find-owner). 
+   [Why am I asked to choose between my "work or school account" and my "personal account"?](faq-add-delete-users.md#ChooseOrgAcctMSAcct)
 
+2. Go to the **Users** page.
 
-##  Delete users from your VSTS account
+3. Open the context menu**...** for the user to remove and select **Remove from account**.
 
-0. Sign in to your VSTS account (```https://{youraccount}.visualstudio.com```).
+   ![![Remove user from account](_img/delete-user/remove-user.png)
+](_img/_shared/remove-from-account-menu-selection.png)
 
- [Why am I asked to choose between my "work or school account" and my "personal account"?](faq-add-delete-users.md#ChooseOrgAcctMSAcct)
+4. Choose **Remove** in the confirmation dialog.
 
-0. Go to the users hub.  
+5. To make sure that you've removed the user completely, make sure they are not in any of your [security groups](../security/add-users-team-project.md). 
 
- ![go to the user hub](_img/_shared/users-hub-updated.png)
+   [Why don't users appear or disappear promptly in VSTS after I add or delete them in the Users hub?](faq-add-delete-users.md#users-delay)
 
-0. Choose the user, and then above the table of users, choose **Remove from account**.  Alternatively, 
-you can choose **...** for the chosen user, and then choose **Remove from account** in the pop-up menu.
+6. If you deleted paid users who had Basic features, and you don't want to pay for these users, you must also [reduce these users in the Visual Studio Marketplace](../billing/buy-basic-access-add-users.md),so you're not charged in your next Azure billing cycle.
 
- ![Account level table of users with key information per user](_img/user-hub/acct-level-users-718.png)
+   > To reduce or cancel these users for the next month, you must make updates before the last day of the current month.
+   > Your bill won't show these changes until the next month because paid users are monthly purchases.
 
-0. Choose **Remove** in the confirmation dialog.
+>[!Note]
+>Azure AD-backed accounts: Once you remove a user from Azure AD, you will not be able to assign artifacts (work items, pull requests, etc.) to this user anymore. However, we will preserve the history of artifacts that has already been assigned to this user.
+>MSA-backed accounts: Once you remove a user from your MSA-backed VSTS account, the user will remain within the tenant and can therefore be re-added at any time.
 
-0. To make sure that you've removed the user completely, make sure they are not in any of your [security groups](../security/add-users-team-project.md). 
+## Remove users from a team or team project
 
- [Why don't users appear or disappear promptly in VSTS after I add or delete them in the Users hub?](faq-add-delete-users.md#users-delay)
+To remove users from a team project, remove them from the Teams groups they belong to or the Contributors group for the team project. See [Add users to a team project or specific team](../security/add-users-team-project.md). From the Members page of a team group or security group, you can Remove a user.
 
-0. If you deleted paid users who had Basic features, and you don't want to pay for these users, you must also 
-[reduce these users in the Visual Studio Marketplace](../billing/buy-basic-access-add-users.md), 
-so you're not charged in your next Azure billing cycle.
+![Remove user from a security group](_img/delete-user/remove-user.png)
 
- > To reduce or cancel these users for the next month, you must make updates before the last day of the current month. 
- > Your bill won't show these change until the next month because paid users are monthly purchases. 
+## Related notes
 
+ [Add administrators, set permissions at the project-level or project collection-level](../security/set-project-collection-level-permissions.md). 
+- [Change individual permissions, grant select access to specific functions](../security/change-individual-permissions.md)
+- [Grant or restrict access to select features and functions](../security/restrict-access.md)
+- [Troubleshoot adding and deleting account users in the VSTS user hub](faq-add-delete-users.md)
+- [Troubleshoot adding members to team projects in Visual Studio Team Services (VSTS)](faq-add-team-members.md)

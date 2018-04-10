@@ -4,14 +4,17 @@ description: Understand the library in Microsoft Release Management for Visual S
 ms.assetid: 45C5042C-9E31-41F8-B63B-6D5C241EEC21
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 10/20/2016
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: ">= tfs-2017"
 ---
 
 # Library
 
-**TFS 2017 | VSTS**
+**VSTS | TFS 2018 | TFS 2017**
 
 *Library* is a collection of _shared_ build and release assets for a team project.
 Assets defined in a library can be used in multiple build and release definitions of the team project.
@@ -19,8 +22,8 @@ The **Library** tab can be accessed directly in the **Build &amp; Release** hub 
 
 At present, the library contains two types of assets: [variable groups](variable-groups.md) and [secure files](secure-files.md).
 
-> Variable groups are available to only release definitions in VSTS and TFS 2017 at present.
-Task groups and service endpoints are available to build and release definitions in TFS 2015, TFS 2017, and VSTS.
+> Variable groups are available to only release definitions in VSTS and TFS 2017 and newer at present.
+Task groups and service endpoints are available to build and release definitions in TFS 2015 and newer, and VSTS.
 
 <h2 id="security">Library Security</h2>
 

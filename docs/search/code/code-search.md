@@ -4,10 +4,12 @@ description: Get started with Code Search in VSTS and TFS
 ms.assetid: 95BAB38A-C7D3-414D-9FE3-BB72B549C21C
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-search
-ms.topic: get-started-article
+ms.topic: quickstart
 ms.manager: douge
-ms.author: douge
-ms.date: 09/26/2017
+ms.author: ahomer
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2017'
 ---
 
 # Search your code
@@ -43,7 +45,7 @@ For more details, see [Install an extension](../../marketplace/install-vsts-exte
    ![start search icon](../_img/_shared/start-search-icon.png) icon) to start your search.
 
 1. The search page shows a list of the matching code files. The selected file has all
-   instances of the search string highlighted. 
+   instances of the search string highlighted (only the first 100 hits are highlighted). 
 
    ![Search results](_img/get-started/search-results-01.png)
 

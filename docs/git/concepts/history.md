@@ -6,8 +6,10 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-git 
 ms.manager: douge
 ms.author: sdanie
-ms.date: 06/16/2017
+ms.date: 03/14/2018
+monikerRange: '>= tfs-2013'
 ---
+
 
 ## Understand Git history
 
@@ -34,7 +36,7 @@ To do this, I'll pull the master branch with the following command:
 
 `git pull origin master`
 
-This merges all changes from the master branch in the remote repository, which Git names `origin` by default. This pull brought one new commit, and `master` in my local repo moves to that commit.
+This copies ("pulls") all commits from the `master` branch of the remote repo (called `origin` by default) to the `master` branch of the local repo. The pull operation copied one new commit, and the `master` branch in the local repo is now pointing to this new commit.
 
 ![a fourth commit, D, is added to the line](_img/history/history-abcd.png)
 
@@ -77,4 +79,4 @@ There are three people who merge commits from their own branches into the master
 
 ![console log of git graph](_img/history/gitlogconsole.png)
 
-Now that you understand how branches and merges create the shape of the graph, this shouldn’t be too scary!
+Now that you understand how branches and merges create the shape of the graph, this shouldn't be too scary!

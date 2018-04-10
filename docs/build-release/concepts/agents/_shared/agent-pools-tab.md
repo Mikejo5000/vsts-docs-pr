@@ -1,5 +1,11 @@
+---
+ms.topic: include
+---
+
 <ul>
 <li>VSTS: <code>https:&#x2F;&#x2F;{your_account}.visualstudio.com/_admin/_AgentPool</code></li>
+
+<li>TFS 2018: <code>https:&#x2F;&#x2F;{your_server}/DefaultCollection/_admin/_AgentPool</code></li>
 
 <li>TFS 2017: <code>https:&#x2F;&#x2F;{your_server}/tfs/DefaultCollection/_admin/_AgentPool</code></li>
 

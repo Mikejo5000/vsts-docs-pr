@@ -10,7 +10,7 @@ ms.date: 02/22/2017
 ---
 # Add or change how Project fields map to TFS fields
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]  
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]  
 
 You can customize how data is published and refreshed by modifying the Microsoft Project mapping file. When publishing or refreshing tasks in Project, the mapping file determines how Project task fields map to Team Foundation Server (TFS) work item fields. Also, the mapping file controls the publishing behavior.  
   
@@ -35,7 +35,7 @@ You can customize how data is published and refreshed by modifying the Microsoft
   
      **Use the TFSFieldMapping command**. To modify the Microsoft Project field mapping file for a team project, you must first download the file.  
   
-## Related notes 
+## Related articles 
 -  [Address inaccuracies published for summary values](../../../report/sql-reports/address-inaccuracies-published-for-summary-values.md)   
 -  [Work in Excel and Project](../../backlogs/office/track-work-vsts-tfs.md)   
 -  [Create your backlog and tasks using Project](../../backlogs/office/create-your-backlog-tasks-using-project.md)

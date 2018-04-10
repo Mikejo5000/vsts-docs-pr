@@ -12,7 +12,7 @@ ms.date: 08/02/2017
 
 # Scrum and best practices 
  
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 <a id="sprint-planning-meeting">  </a>
 ## Sprint planning meetings 
@@ -147,7 +147,7 @@ This response conveys what was accomplished, what will be accomplished, and that
 
 Contrast with this next example:  
 
->*"Yesterday, I worked on the class, and it works. Today, I will work on the interface. No blocking issues."*  
+>*"Yesterday, I worked on the class, and it works. Today, I will work on the interface. No blocking issues."*  
 
 Here, the team member doesn't provide enough detail about what class they worked on nor which interface components they'll complete. In fact, the word accomplished never came up.
 
@@ -186,7 +186,7 @@ As a team, work to determine whether to adapt one or more processes to minimize 
 
 In some cases, your team may need to do some work to implement an improvement. For example, a team that found themselves negatively impacted by too many failed builds decided to implement continuous integration. Because they didn't want to disrupt process, they allocated a few hours to set up a trial build before turning it on in their production build. To represent this work, they created a spike and prioritized that work against the rest of the product backlog.
 
-## Related notes
+## Related articles
 
 For additional guidance, see:
 *	[What is Scrum?](https://www.visualstudio.com/learn/what-is-scrum/)

@@ -11,7 +11,7 @@ ms.date: 09/08/2017
 
 # Map Project fields to TFS fields
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]  
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]  
 
 You can customize the way in which work item fields that are stored in Team Foundation are mapped to fields that are defined for Office Project. You can change the way specific fields are published and designate the default link type to use when you create hierarchical or tree links and dependency links.  
   
@@ -108,7 +108,7 @@ For more information, see [Define initial areas, iterations, and Project mapping
 </MSProject>  
 ```  
   
-## Related notes   
+## Related articles   
 
 - [Customize the Microsoft Project field mapping file](customize-project-field-mapping-file.md)
 - [Add or change Project-to-TFS field mapping](add-or-change-how-project-fields-map-to-tfs-fields.md)   

@@ -5,9 +5,11 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
 ms.assetid: abf70640-8fb2-4def-9237-21276a39b5ad
 ms.manager: douge
-ms.author: billchi
+ms.author: chcomley
 ms.date: 10/17/2017
+monikerRange: 'vsts'
 ---
+
 
 #	Set up Visual Studio with VSTS
 
@@ -37,7 +39,7 @@ and for unlimited [Visual Studio subscribers](https://www.visualstudio.com/produ
 Learn [what else you get with VSTS](https://www.visualstudio.com/pricing/visual-studio-team-services-pricing-vs). 
 If you want, you can also use VSTS with any IDE or code editor, like:
 
-*	[Eclipse, Android Studio, or IntelliJ](http://java.visualstudio.com/Docs/tools/intro)
+*	[Eclipse, Android Studio, or IntelliJ](/vsts/java)
 *	Xcode (see [Git](../git/share-your-code-in-git-xcode.md) or [TFVC](../tfvc/share-your-code-in-tfvc-xcode.md))
 *	[Visual Studio Code](https://code.visualstudio.com/docs/editor/versioncontrol)
 

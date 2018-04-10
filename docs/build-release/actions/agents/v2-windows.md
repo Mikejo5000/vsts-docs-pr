@@ -6,12 +6,14 @@ ms.technology: vs-devops-build
 ms.assetid: 20409B8F-A3A9-49A0-A418-1840BD7ADA8E
 ms.manager: douge
 ms.author: alewis
-ms.date: 08/26/2016
+ms.date: 3/14/2018
+monikerRange: '>= tfs-2017'
 ---
+
 
 # Deploy an agent on Windows
 
-**VSTS | TFS 2017 | [TFS 2015](v1-windows.md) | [Previous versions (XAML builds)](https://msdn.microsoft.com/en-us/library/ms252495%28v=vs.120%29.aspx)**
+**VSTS | TFS 2018 | TFS 2017 | [TFS 2015](v1-windows.md) | [Previous versions (XAML builds)](https://msdn.microsoft.com/en-us/library/ms252495%28v=vs.120%29.aspx)**
 
 To build and deploy Windows, Azure, and other Visual Studio solutions you'll need at least one Windows agent. Windows agents can also build Java and Android apps.
 
@@ -50,21 +52,29 @@ If you're building from a Subversion repo, you must install the Subversion clien
 <li>Follow the instructions on the page.</li>
 </ol>
 
-### Server URL
+::: moniker range="vsts"
+### Server URL on VSTS
 
-* VSTS: `https://{your-account}.visualstudio.com`
+`https://{your-account}.visualstudio.com`
+::: moniker-end
 
-* TFS 2017: `https://{your_server}/tfs`
+::: moniker range=">= tfs-2017 < vsts"
+### Server URL on TFS 2017 and newer
 
-* TFS 2015: `http://{your-server}:8080/tfs`
+`https://{your_server}/tfs`
+::: moniker-end
 
 ### Authentication type
 
+::: moniker range="vsts"
 #### VSTS
 
 Choose **PAT**, and then paste the [PAT token you created](#permissions) into the command prompt window.
 
-#### TFS
+::: moniker-end
+
+::: moniker range=">= tfs-2017 < vsts"
+#### TFS 2017 and newer
 
 > [!IMPORTANT]
 > 
@@ -78,10 +88,12 @@ When you configure your agent to connect to TFS, you've got the following option
 
 * **Integrated** (Default) Connect a Windows agent to TFS using the credentials of the signed-in user via a Windows authentication scheme such as NTLM or Kerberos. You won't be prompted for credentials after you choose this method.
  
-* **PAT** Supported only on VSTS and TFS 2017 or newer. After you choose PAT, paste the [PAT token you created](#permissions) into the command prompt window.
+* **PAT** Supported only on VSTS and TFS 2017 and newer. After you choose PAT, paste the [PAT token you created](#permissions) into the command prompt window.
 
 > [!NOTE]
 > When using PAT as the authentication method, the PAT token is used only for the initial configuration of the agent. Learn more at [Communication with VSTS or TFS](../../concepts/agents/agents.md#communication).
+
+::: moniker-end
 
 ## Choose interactive or service mode
 
@@ -125,16 +137,39 @@ The help provides information on authentication alternatives and unattended conf
 
 <!-- BEGINSECTION class="md-qanda" -->
 
+::: moniker range="tfs-2017"
+
+### What version of the agent runs with TFS 2017?
+
+| TFS version | Agent version |
+|-|-|
+| 2017 RTM | 2.105.7 |
+| 2017.3 | 2.112.0 |
+
+::: moniker-end
+
+::: moniker range="vsts"
 [!INCLUDE [include](_shared/v2/qa-firewall.md)]
+::: moniker-end
+
+### How do I run the agent with self-signed certificate?
+
+[Run the agent with self-signed certificate](certificate.md)
 
 ### How do I run the agent behind a web proxy?
 
 [Run the agent behind a web proxy](proxy.md)
 
+::: moniker range="vsts"
 [!INCLUDE [include](_shared/v2/web-proxy-bypass.md)]
+::: moniker-end
 
+::: moniker range="vsts"
 [!INCLUDE [include](_shared/v2/qa-urls.md)]
+::: moniker-end
 
+::: moniker range="< vsts"
 [!INCLUDE [include](../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->

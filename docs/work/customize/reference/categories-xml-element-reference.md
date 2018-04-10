@@ -20,10 +20,10 @@ You use the `CATEGORIES` element to group work item types (WITs). [Use categorie
 > [!div class="tabbedCodeSnippets"]
 ```XML
 <CATEGORIES>  
-   <CATEGORY name="category display name" refname="category reference name">  
-      <DEFAULTWORKITEMTYPE name="work item type reference name" />  
-      <WORKITEMTYPE name="work item type reference name" />  
-   </CATEGORY>  
+      <CATEGORY name="category display name" refname="category reference name">  
+      <DEFAULTWORKITEMTYPE name="work item type reference name" />  
+      <WORKITEMTYPE name="work item type reference name" />  
+      </CATEGORY>  
 </CATEGORIES>  
 ```  
   
@@ -131,7 +131,7 @@ You use the `CATEGORIES` element to group work item types (WITs). [Use categorie
 </cat:CATEGORIES>  
 ```  
   
-## Related notes 
+## Related articles 
 - [Customize your work tracking experience](../customize-work.md)
 - [Change the workflow for a work item type](change-workflow-wit.md)  
 - [ProcessConfiguration XML element reference](process-configuration-xml-element.md)  

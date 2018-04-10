@@ -1,9 +1,11 @@
 ---
-title: Agile process workflow | VSTS & TFS  
-description: How to guide for using the Agile process to track work using its work item types working in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)   
+title: Agile process workflow
+titleSuffix: VSTS & TFS
+description: How to guide for using the Agile process to track work using its work item types working in Visual Studio Team Services & Team Foundation Server 
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: d16d04fd-c073-45c0-b1b9-3724f0a7519b  
+ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelli
 ms.date: 04/05/2017
@@ -11,7 +13,7 @@ ms.date: 04/05/2017
 
 # Agile process work item types and workflow  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 Teams use the work item types (WITs) provided with the Agile process to plan and track progress of software projects. Teams define user stories to manage the backlog of work and then, using the Kanban board, track progress by updating the status of those stories.
 
@@ -21,12 +23,7 @@ To gain insight into a portfolio of features, scenarios, or user experiences, pr
 
 Using the web portal or Microsoft Test Manager, testers can create and run test cases. Bugs and issues are used to track code defects and blocking issues.  
 
->[!NOTE]  
-><b>Feature availability: </b> Work item tracking forms and features available to you differ depending on whether you connect to the cloud or an on-premises Team Foundation Server (TFS), and whether you open the form from the web portal or Visual Studio Team Explorer. Forms and guidance provided in this topic reflect those available with the [new form experience](../../customize/process/new-work-item-experience.md) (VSTS and the web portal for TFS 2017 and later versions). 
->
->If you connect to TFS 2015 or earlier versions, or open the form from Visual Studio Team Explorer, see [Add work items (TFS)](../../backlogs/add-work-items-tfs.md).  
-
-
+[!INCLUDE [temp](../../_shared/note-work-item-form-differences.md)]  
 
 ## Define user stories
 
@@ -78,7 +75,7 @@ Use the following guidance and that provided for [fields used in common across w
 </td></tr>
 <tr>
 	<td width="20%"><p>[Story Points](../../track/query-numeric.md)</p></td>
-	<td><p>Estimate the amount of work required to complete a user story using any numeric unit of measurement your team prefers.</p><p>Agile [velocity charts](../../../report/guidance/team-velocity.md) and [forecast](../../scrum/forecast.md) tools reference the values in this field. For additional guidance, see the [Estimating](https://msdn.microsoft.com/library/hh765979) white paper.</p></td></tr>
+	<td><p>Estimate the amount of work required to complete a user story using any numeric unit of measurement your team prefers.</p><p>Agile [velocity charts](../../../report/dashboards/velocity-chart-data-store.md) and [forecast](../../scrum/forecast.md) tools reference the values in this field. For additional guidance, see the [Estimating](https://msdn.microsoft.com/library/hh765979) white paper.</p></td></tr>
 <tr>
 	<td><p>[Priority](../../track/planning-ranking-priorities.md)</p>
 </td>
@@ -96,8 +93,7 @@ Use the following guidance and that provided for [fields used in common across w
 </table>
 
 
->[!TIP]    
->Use the [Discussion section](../../work-items/work-item-form-controls.md#discussion) to add and review comments made about the work being performed. This feature is only available from VSTS.  Â 
+[!INCLUDE [temp](../../_shared/discussion-tip.md)] 
 
 ## Track progress
 
@@ -208,14 +204,17 @@ The ![Links tab icon](../../backlogs/_img/icon-links-tab-wi.png) (links tab) cap
 You can [create bugs from the web portal web portal, Visual Studio, or when testing with Test Manager](../../backlogs/manage-bugs.md). 
 
 
-[!INCLUDE [temp](../../_shared/common-work-item-fields.md)]   
+[!INCLUDE [temp](../../_shared/common-work-item-fields.md)]   
+
+## Customize work item types
+[!INCLUDE [temp](../../_shared/customize-work-tracking.md)] 
 
 
-## Related notes
+## Related articles
 
 [!INCLUDE [temp](../../_shared/create-team-project-links.md)]  
   
-[!INCLUDE [temp](../../_shared/customize-work-tracking.md)]  
+ 
 
 
 ### Track issues 
@@ -224,7 +223,7 @@ Issues are used to track events that may block progress or shipping a user story
 
 ![Add work item from a New work item widget](../../../user-guide/_img/features/alm-feature-new-work-item-widget.png)  
 
-Work items you add from the widget are automatically scoped to your [team's default area and iteration paths](../../scale/set-team-defaults.md). To change the team context, see [Switch team context](../../../teams/switch-team-context.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json).  
+Work items you add from the widget are automatically scoped to your [team's default area and iteration paths](../../scale/set-team-defaults.md). To change the team context, see [Switch team context](../../../settings/switch-team-context.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json).  
  
 ### Track business value  
 You can use the Priority field to differentiate the value of various stories. Or, you can add a custom field to the User Story WIT that tracks the relative value of stories. To learn how, see [Customize a field for a process](../../customize/process/customize-process-field.md).

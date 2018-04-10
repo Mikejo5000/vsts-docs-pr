@@ -8,12 +8,14 @@ ms.topic: get-started-article
 ms.assetid: 2BFC43A2-4F6C-4A5C-86EE-6DDA8733829D
 ms.manager: douge
 ms.author: alewis
-ms.date: 08/04/2016
+ms.date: 12/20/2017
+monikerRange: '>= tfs-2017'
 ---
+
 
 # Build your .NET desktop app for Windows
 
-**VSTS | TFS 2017 Update 2**
+**VSTS | TFS 2018 | TFS 2017.2**
 
 Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide a highly customizable continuous integration (CI) process to automatically build your .NET desktop app whenever your team pushes or checks in code. In this quickstart you learn how to define your CI process.
 
@@ -37,7 +39,17 @@ https://github.com/adventworks/net-sample
 
 # [GitHub repo](#tab/github)
 
+::: moniker range="vsts"
+
 [!INCLUDE [include](../_shared/get-sample-code-github.md)]
+
+::: moniker-end
+
+::: moniker range="< vsts"
+
+**TFS**: Does not apply.
+
+::: moniker-end
 
 ---
 
@@ -57,7 +69,7 @@ This quickstart works for apps targeting the .NET Framework 4 or newer. The samp
 
  ![Screenshot showing button to set up build for a repository](../_shared/_img/set-up-first-build-from-code-hub.png)
 
- You are taken to the **Build & Release** hub and asked to **Select a template** for the new build definition.
+ You are taken to the **Build and Release** hub and asked to **Select a template** for the new build definition.
 
  # [GitHub repo](#tab/github)
 
@@ -67,9 +79,9 @@ This quickstart works for apps targeting the .NET Framework 4 or newer. The samp
 
 1. In the right panel, select **.NET Desktop**, and then click **Apply**.
 
- You now see all the tasks that were automatically added to the build definition by the template. These are the steps that will automatically run every time you check in code.
+ You now see all the tasks that were automatically added to the build definition by the template. These are the steps that will automatically run every time you push code changes.
 
-1. For the **Default agent queue**:
+1. For the **Agent queue**:
 
  * **VSTS:** Select _Hosted VS2017_. This is how you can use our pool of agents that have the software you need to build your app.
 
@@ -89,7 +101,7 @@ This quickstart works for apps targeting the .NET Framework 4 or newer. The samp
 
 1. Click the **Triggers** tab in the build definition. Enable the **Continuous Integration** trigger. This will ensure that the build process is automatically triggered every time you commit a change to your repository.
 
-1. Click **Save and queue** to kick off your first build. On the **Queue build** dialog box, click **Queue**.
+1. Click **Save & queue** to kick off your first build. On the **Save build definition and queue** dialog box, click **Save & queue**.
 
 1. A new build is started. You'll see a link to the new build on the top of the page. Click the link to watch the new build as it happens.
 

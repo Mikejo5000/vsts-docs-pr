@@ -7,7 +7,9 @@ ms.assetid: FB181C61-BAC3-4568-B340-48ACE15C2519
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
+
 
 # Build: Grunt 
  
@@ -55,6 +57,31 @@ The build agent must have the following capability:
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
+::: moniker range="vsts"
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: Grunt@0
+  inputs:
+#   gruntFile: gruntfile.js
+    targets:
+    arguments:
+    workingDirectory:
+#   gruntCli: node_modules/grunt-cli/bin/grunt
+#   publishJUnitResults: false
+#   testResultsFiles: **/TEST-*.xml
+    testRunTitle:
+#   enableCodeCoverage: false
+#   testFramework: Mocha # Mocha (default), Jasmine
+    srcFiles:
+#   testFiles: test/*.js
+```
+
+::: moniker-end
+
 ## Example
 
 See [Sample Gruntfile](http://gruntjs.com/sample-gruntfile).
@@ -64,6 +91,8 @@ See [Sample Gruntfile](http://gruntjs.com/sample-gruntfile).
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
+::: moniker range="< vsts"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->

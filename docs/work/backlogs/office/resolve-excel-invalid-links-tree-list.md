@@ -10,7 +10,7 @@ ms.date: 02/22/2017
 ---
 # Resolve invalid links in an Excel tree list 
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 If you try to publish a tree list that contains an invalid link, the **Work Item Publishing Errors** dialog box appears and displays an error message that states why the tree is invalid. When you work with work items in a tree in Excel, the tree must be in a valid state before it can be published. In Excel, an invalid link occurs in a tree list of work items if the title of a work item title is missing or occurs in the wrong title column.  
   
@@ -133,11 +133,11 @@ This message indicates that you can publish the changes that you made to the fie
   
 -   To modify hierarchical link relationships that are not locked in Excel, revise the query that you use to export the work items to exclude all work items whose links are locked. For example, you can add a clause to the filter criteria to omit items whose **Project Server Is Linked** field is set to **Yes**.  
   
-## Related notes
+## Related articles
 -  [Resolve data validation errors](resolve-excel-data-validation-errors.md)   
 -  [Resolve data conflicts](resolve-excel-data-conflicts-publish-refresh.md)   
 -  [Work in Excel or Project](track-work-vsts-tfs.md)
 
 ###Required permissions  
   
-To update work items, you must be a member of the **Contributors** group or have your **View work items in this node** and your **Edit work items in this node** permissions set to **Allow**. For more information, see [Permission reference](../../../security/permissions.md). 
+To update work items, you must be a member of the **Contributors** group or have your **View work items in this node** and your **Edit work items in this node** permissions set to **Allow**. For more information, see [Add administrators, set permissions at the project-level or project collection-level](../../../security/set-project-collection-level-permissions.md). 

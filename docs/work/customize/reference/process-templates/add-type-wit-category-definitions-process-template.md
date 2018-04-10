@@ -11,7 +11,7 @@ ms.date: 09/08/2017
 
 # Add type definitions for work item categories to a process template
 
-[!INCLUDE [temp](../../../_shared/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [temp](../../../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
 You can add categories to your process template. A category associates a group label with one or more work item types (WITs). Categories are useful when your team projects contain similar WITs that are named differently. You specify the category definitions in one file, and then you specify that file to upload within the **taskxml** element of the WorkItemTracking plug-in.  
   
@@ -30,10 +30,10 @@ The following example shows the syntax structure that defines a category that is
 > [!div class="tabbedCodeSnippets"]
 ```XML 
 <CATEGORIES>  
-   <CATEGORY refname="Microsoft.RequirementCategory" name="Requirement Category">  
-      <DEFAULTWORKITEMTYPE name="User Story" />  
-   </CATEGORY>  
-   . . .   
+      <CATEGORY refname="Microsoft.RequirementCategory" name="Requirement Category">  
+      <DEFAULTWORKITEMTYPE name="User Story" />  
+      </CATEGORY>  
+      . . .   
 </CATEGORIES>  
 ```  
   
@@ -51,12 +51,12 @@ The following example shows the syntax structure that defines a category that is
 > [!div class="tabbedCodeSnippets"]
 ```XML 
 <task id="Categories" name="Categories definitions" plugin="Microsoft.ProjectCreationWizard.WorkItemTracking" completionMessage="Work item type categories created">  
-   <dependencies>  
-      <dependency taskId="WITs" />  
-   </dependencies>  
-   <taskXml>  
-      <CATEGORIES fileName="WorkItem Tracking\Categories.xml" />  
-   </taskXml>  
+      <dependencies>  
+      <dependency taskId="WITs" />  
+      </dependencies>  
+      <taskXml>  
+      <CATEGORIES fileName="WorkItem Tracking\Categories.xml" />  
+      </taskXml>  
 </task>  
 ```  
   
@@ -71,7 +71,7 @@ The following example shows the syntax structure that defines a category that is
 |-------------|-----------------|  
 |**CATEGORIES**|Optional child element of the WorkItemTracking plug-in. Specifies the path and name of the file that contains the category definitions to be uploaded when the WorkItemTracking plug-in task is processed. <br />`<CATEGORIES fileName="CategoriesFilePathName" />`|
   
-## Related notes 
+## Related articles 
 - [Use categories to group work item types](../use-categories-to-group-work-item-types.md)
 - [CATEGORIES XML reference](../categories-xml-element-reference.md)
 - [Import and export categories](../witadmin/witadmin-import-export-categories.md)   

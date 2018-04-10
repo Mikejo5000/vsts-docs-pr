@@ -13,7 +13,7 @@ ms.date: 08/02/2017
 
 # Sprint burndown 
  
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 Throughout your sprint, you can monitor the sprint burndown chart to determine if your team is on track to complete its [sprint plan](sprint-planning.md). 
 
@@ -26,7 +26,7 @@ Use this topic to learn
 For usage guidance, see [Burndown guidance](../../report/dashboards/burndown-guidance.md).
 
 
->[!NOTE]  
+> [!NOTE]    
 >The system automatically builds a sprint burndown chart based on the tasks and Remaining Work estimates you define and update throughout the sprint cycle. For details, see [Sprint planning](sprint-planning.md) and [Task board](task-board.md).  To open the sprint burndown chart, jump to the section [Open sprint burndown chart](#open-chart).   
 
 <table>
@@ -55,7 +55,7 @@ Click the chart to display it in a larger view.
 
 ![Open sprint burndown chart](_img/sprint-burndown-open-chart.png)
 
->[!NOTE]  
+> [!NOTE]    
 >You can't add the system-generated sprint burndown chart to a dashboard. However, you can add the [Sprint burndown widget](../../report/dashboards/widget-catalog.md#sprint-burndown-widget), which captures the same information for the current sprint, to a dashboard. 
 
 
@@ -95,10 +95,10 @@ As you complete each sprint, the system maintains a history of your activity. Yo
 ##Try this next
 In addition to the sprint burndown chart, teams can review the velocity at which they work sprint over sprint. The velocity chart tracks how many backlog items your team works on in a sprint.  
 
-You can use your team [velocity](../../report/dashboards/team-velocity.md) as input into the [forecast](forecast.md) tool to help plan your sprints.   
+You can use your team [velocity](../../report/dashboards/velocity-chart-data-store.md) as input into the [forecast](forecast.md) tool to help plan your sprints.   
 
 
-##Related notes
+## Related articles
 
 You can learn more about defining, planning, and executing your sprints from these topics:  
 *	[Schedule sprints](define-sprints.md)  

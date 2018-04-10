@@ -1,12 +1,15 @@
 ---
 title: Manage how long to keep test results in VSTS
 description: Manage how long VSTS keeps you test results
+ms.assetid: 7a9e6fbe-bdd0-4cb5-8e57-f4d8d2126218
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-manual
-ms.assetid: 7a9e6fbe-bdd0-4cb5-8e57-f4d8d2126218
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: "vsts"
 ---
 
 # Control how long to keep test results in VSTS
@@ -19,6 +22,8 @@ have a policy to clear test results that you don't need anymore.
 Delete automated test results when you delete your builds.
 You can keep manual test results while you're still reviewing them, 
 for example, up to a year. 
+
+[!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
 
 <a name="manual-test-results-limits"></a> 
 ## Manual test results 

@@ -11,7 +11,7 @@ ms.date: 08/04/2016
 
 # Agile culture  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 > [!NOTE] 
 > Are you new to Agile? Learn more about [Agile Culture] (https://www.visualstudio.com/learn/agile-culture/) and [Scaling Agile to Large Teams] (https://www.visualstudio.com/learn/scale-agile-large-teams/).
@@ -156,7 +156,7 @@ As your organization grows, you can scale your Agile tools in the following ways
 
 - **Add folders and use team favorites:**  As your teams grow, you'll see a growing list of work item queries, build definitions, and source code folders. By using folders, sub-folders, and team favorites, you can manage many of these lists more easily. You can add team favorites for shared queries, source code, and build definitions.
 
-## Related notes  
+## Related articles  
 
 Before you can create or work with any of the Agile tools, you need a team project. If you don't have one yet, you can [create one in VSTS](../../user-guide/connect-team-projects.md)  or on an [on-premises TFS](../../accounts/create-team-project.md). 
 
