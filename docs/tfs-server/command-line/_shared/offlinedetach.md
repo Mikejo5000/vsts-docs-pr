@@ -52,4 +52,4 @@ The following example illustrates detaching a collection database named TFS_Prim
 configuration database named TFS_Configuration, with both on a SQL instance running on a server named
 "ContosoTemp" on the named instance "Backups".
 
-        TFSConfig offlineDetach /configDB:ContosoTemp\Backups;TFS_Configuration /collectionDB:ContosoTemp\Backups;TFS_PrimaryCollection
+        TFSConfig offlineDetach /configurationDB:ContosoTemp\Backups;TFS_Configuration /collectionDB:ContosoTemp\Backups;TFS_PrimaryCollection
