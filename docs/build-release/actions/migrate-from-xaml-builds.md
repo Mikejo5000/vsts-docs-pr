@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: alewis
 ms.date: 05/19/2017
 ---
+[//]: # (monikerRange: '>= tfs-2013')
 
 # Migrate from XAML builds to new builds
 
@@ -256,7 +257,7 @@ The new Team Build is tightly integrated with Release Management. So it's easier
 
 * [Release definitions](../concepts/definitions/release/index.md)
 
-* [How to: Work with release definitions](../actions/work-with-release-definitions.md)
+* [Triggers](../concepts/definitions/release/triggers.md)
 
 A few examples include:
 

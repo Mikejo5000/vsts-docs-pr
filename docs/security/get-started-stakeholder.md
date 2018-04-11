@@ -1,25 +1,26 @@
 ---
-title: Get started with Stakeholder access in VSTS or TFS  
-description: Quickstart guide to working with Stakeholder access to Team Services (VSTS) or Team Foundation Server (TFS)  
+title: Get started with Stakeholder access
+titleSuffix: VSTS & TFS  
+description: Add & update work items, approve releases, view work tracking progress with Stakeholder access
 ms.technology: vs-devops-overview
 ms.prod: vs-devops-alm
 ms.assetid: D76507F1-3154-4EE5-A23A-9179C2F5A365
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article
-ms.date: 10/10/2017
+ms.date: 02/14/2018 
 ---
+[//]: # (monikerRange: '>= tfs-2013')
 
 # Get started as a Stakeholder  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
-
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 With Stakeholder access, you can add and modify work items, approve releases, and view dashboards. You can check project status and provide direction, feedback, feature ideas, and business alignment to a team. 
 
 Use this topic to learn:
 
-> [!div class="checklist"]   
+> [!div class="checklist"]
 > * How to sign-in to an account
 > * How to add a work item
 > * How to view the product backlog and add new work to it
@@ -45,11 +46,11 @@ Use this topic to learn:
 <a id="create-work-item">  </a> 
 ## Add a work item
 
+> [!TIP]    
+> If you connect to VSTS, you now have access to the [Work Items page](../work/work-items/view-add-work-items.md) which supports personalized views of work items assigned to you or ones you've recently viewed or updated. Also, you can add work items from this page.  
+
 You might see different work item types in your view based on the process selected for your team project: [Scrum](../work/work-items/guidance/scrum-process.md), [Agile](../work/work-items/guidance/agile-process.md), or [CMMI](../work/work-items/guidance/cmmi-process.md). 
-
-
->[!NOTE]  
->A caution icon on a tab indicates values that violate validation rules. You must correct information on that tab in order to save the work item.    
+ 
     
 #### VSTS, TFS 2017
 
@@ -57,9 +58,13 @@ From the Work hub, choose a work item, for example User Story, from the New Work
 
 <img src="../work/backlogs/_img/add-work-items-choose-user-story.png" alt="Web portal, project page, Work hub, Add a work item" style="border: 1px solid #CCCCCC;" />  
 
-Enter a title and then save the work item. Before you can change the State from its initial default, you must save it.  
+Enter a title and then save the work item. Before you can change the State from its initial default, you must save it. For descriptions of each field, see [Work item field index](../work/work-items/guidance/work-item-field.md). 
 
 <img src="../work/backlogs/_img/add-new-work-item-vsts-user-story.png" alt="Agile process, User story work item form" style="border: 1px solid #CCCCCC;" />
+
+>[!NOTE]  
+>A caution icon on a tab indicates values that violate validation rules. You must correct information on that tab in order to save the work item.   
+
 
 #### TFS 2015
 
@@ -133,10 +138,10 @@ If you want to provide a group of users access to provide feedback, then you don
 >[!NOTE]  
 >**Feature availability**: The following features are available from VSTS or from the web portal of the listed on-premises TFS version or a later version. Those not annotated are available from all platforms and versions. To determine your platform or TFS version, see [Platform and version support](../user-guide/provide-feedback.md#platform-version).   
 
-> [!div class="mx-tdBreakAll"]  
+> [!div class="mx-tdBreakAll"]
 > |Work  |Account, Dashboards, and Notifications|
 > |-------------|----------|  
-> |- [View, create, and modify work items](#create-work-item) <sup>4</sup><br/>- [View, add, and modify items on backlogs](#check-backlog) <sup>5</sup><br/>- [View, and modify items on sprint backlogs](../work/scrum/sprint-planning.md) <sup>5</sup><br/>- [View, and modify items on the task board](../work/scrum/task-board.md) <sup>5, 6</sup><br/>- [View, and modify items (Kanban)](../work/kanban/kanban-basics.md)  <sup>5, 6</sup><br/>- [Add tasks to the checklist (Kanban)](../work/kanban/add-task-checklists.md) <sup>5, 6</sup> (TFS 2015.1)<br/>- [Follow changes made to work items](../collaborate/follow-work-items.md) (TFS 2017)<br/>- [View the cumulative flow diagram](../report/dashboards/cumulative-flow.md)<br/>- [View, create, and save queries](#query) <sup>7</sup> <br/>- [Submit, view, and change feedback responses](../feedback/give-feedback.md)<br/>- [Change work item type](../work/backlogs/remove-delete-work-items.md) (VSTS<br/>**Build & Release**<br/>- [View releases](../build-release/actions/view-manage-releases.md) <sup>3</sup> (TFS 2015.2)<br/>- [Approve a release](../build-release/concepts/definitions/release/approvals/index.md) (TFS 2015.2) | [Navigate to teams, team projects, and more](../user-guide/account-home-pages.md) (VSTS)<br/>- [View project welcome pages](../collaborate/project-vision-status.md) (VSTS)<br/>- [View team dashboards](../report/dashboards.md) <sup>1</sup><br/>- [Manage personal notifications](../notifications/manage-personal-notifications.md) (VSTS, TFS 2017) <br/>- [Set personal alerts for changes to work items](../work/track/alerts-and-notifications.md) (TFS) <br/>- [Invite users and assign licenses](../accounts/add-account-users-assign-access-levels.md) <sup>2</sup>  (VSTS)  |
+> |- [View, create, and modify work items](#create-work-item) <sup>4</sup><br/>- [View, add, and modify items on backlogs](#check-backlog) <sup>5</sup><br/>- [View, and modify items on sprint backlogs](../work/scrum/sprint-planning.md) <sup>5</sup><br/>- [View, and modify items on the task board](../work/scrum/task-board.md) <sup>5, 6</sup><br/>- [View, and modify items (Kanban)](../work/kanban/kanban-basics.md)  <sup>5, 6</sup><br/>- [Add tasks to the checklist (Kanban)](../work/kanban/add-task-checklists.md) <sup>5, 6</sup> (TFS 2015.1)<br/>- [Follow changes made to work items](../collaborate/follow-work-items.md) (TFS 2017)<br/>- [View the cumulative flow diagram](../report/dashboards/cumulative-flow.md)<br/>- [View, create, and save queries](#query) <sup>7</sup> <br/>- [Submit, view, and change feedback responses](../feedback/give-feedback.md)<br/>- [Change work item type](../work/backlogs/remove-delete-work-items.md) (VSTS<br/>**Build & Release**<br/>- View releases <sup>3</sup> (TFS 2015.2)<br/>- [Approve a release](../build-release/concepts/definitions/release/approvals/index.md) (TFS 2015.2) | [Navigate to teams, team projects, and more](../user-guide/account-home-pages.md) (VSTS)<br/>- [View project welcome pages](../collaborate/project-vision-status.md) (VSTS)<br/>- [View team dashboards](../report/dashboards.md) <sup>1</sup><br/>- [Manage personal notifications](../notifications/manage-personal-notifications.md) (VSTS, TFS 2017) <br/>- [Set personal alerts for changes to work items](../work/track/alerts-and-notifications.md) (TFS) <br/>- [Invite users and assign licenses](../accounts/add-account-users-assign-access-levels.md) <sup>2</sup>  (VSTS)  |
 
 **Notes:**   
 1. Stakeholders cannot view markdown README files defined for repositories.  
@@ -164,3 +169,7 @@ If you need access to the following features&mdash;which support the daily work 
 
 > [!NOTE]   
 > Stakeholders can view administrative pages that support managing permissions, area and iteration paths, and more; however, for the most part, they can't modify any objects on these pages. The one exception is their ability to [manage users and access](../accounts/add-account-users-assign-access-levels.md).  
+
+
+
+[!INCLUDE [temp](../_shared/help-support-shared.md)] 

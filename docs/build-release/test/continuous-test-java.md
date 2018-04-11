@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: ahomer
 ms.date: 01/18/2018
 ---
+[//]: # (monikerRange: ">= tfs-2015")
 
 # Testing Java applications with VSTS
 
@@ -96,7 +97,7 @@ coverage in different areas.
 
 ## See also
 
-[VSTS Java website](http://java.visualstudio.com/)
+[VSTS Java website](/vsts/java)
 
 [!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
  

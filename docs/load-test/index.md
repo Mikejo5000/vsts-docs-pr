@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: ahomer
 ms.date: 01/18/2018
 ---
+[//]: # (monikerRange: "vsts")
 
 # Load Testing
 
@@ -46,6 +47,7 @@ Learn how to run performance and load tests against your app.
 * [Record and replay tests](record-and-replay-cloud-load-tests.md)
 * [Load test private and intranet apps](clt-behind-firewall.md)
 * [Load test using your own servers](clt-with-private-machines.md)
+* [Install certificates and software](install-certs-and-software.md)
 
 ## Troubleshooting
 

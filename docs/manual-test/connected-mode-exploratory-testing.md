@@ -9,6 +9,7 @@ ms.author: ahomer
 ms.date: 01/18/2018
 ms.topic: get-started-article
 ---
+[//]: # (monikerRange: ">= tfs-2015")
 
 # Exploratory testing with the Test &amp; Feedback extension in Connected mode
 
@@ -28,6 +29,8 @@ This automatically configures the extension based on your access level:
 * Users with **Basic** or **Stakeholder** access can use extension to respond to feedback requests sent 
   by the team by choosing the **Provide feedback** link in the email.
   [More details](stakeholder/provide-stakeholder-feedback.md#email).
+
+[!INCLUDE [feature-availability](_shared/feature-availability.md)] 
 
 <a name="connectvtfs"></a>
 ## Connect to VSTS or TFS

@@ -1,6 +1,7 @@
 ---
-title: Customize your work tracking experience | VSTS & TFS
-description: Guide to configuring and customizing work tracking features in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) 
+title: Customize your work tracking experience
+titleSuffix: VSTS & TFS
+description: Guide to configuring and customizing work tracking features in Visual Studio Team Services and Team Foundation Server 
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: D1B44480-F88B-4F35-927A-11ADFBCBAA23
@@ -12,7 +13,7 @@ ms.date: 11/07/2017
 
 # Customize your work tracking experience 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 As you plan and track your project, you'll find you may want to configure a feature or customize your experience to meet your team's tracking needs. You configure teams and team Agile tools through the web portal administration context. The method you use to customize team projects, which impacts all teams, depends on the process model you use.  
 
@@ -191,7 +192,7 @@ See the following resources for additional usage and customization information:
 
 <a id="person-name-field"></a>
 ## Change the pick list for a person-name field  
-To add values for fields associated with user accounts such as **Assigned To** add users to a TFS security group or by restricting access to a group or set of users. By default, the list for the Assigned To field contains the account names for all users and groups that have been added to TFS. These accounts are often synchronized with Active Directory. See [Set up groups for use in TFS deployments](../../tfs-server/admin/setup-ad-groups.md). To limit the names of accounts in a list, see [Limit the number of names that appear in the Assigned To field](add-modify-field.md#limit-account-names). 
+To add values for fields associated with user accounts such as **Assigned To** add users to a TFS security group or by restricting access to a group or set of users. By default, the list for the Assigned To field contains the account names for all users and groups that have been added to TFS. These accounts are often synchronized with Active Directory. See [Set up groups for use in TFS deployments](../../security/add-ad-aad-built-in-security-groups.md). 
 
 ## Less common customizations   
 You can only perform the following customizations when working with the Hosted XML or On-premises XML process models. The customizations made to process configuration apply to all teams added to the team project.  
@@ -233,7 +234,7 @@ Here are a few options available to you:
 
 - Check out [Marketplace extensions](https://marketplace.visualstudio.com/VSTS) to see if there's a tool available for your purposes  
 - Determine if a [Service hook](../../service-hooks/index.md) will satisfy your needs  
-- Create your own tool using [REST APIs](https://visualstudio.com/integrate/api/overview)  
+- Create your own tool using [REST APIs](../../integrate/index.md)  
 - Add your feature request to our [VSTS user voice page](https://visualstudio.uservoice.com/forums/330519-team-services) page.   
 
  
@@ -245,9 +246,4 @@ Here are a few options available to you:
  
 [!INCLUDE [temp](../../_shared/help-support-shared.md)]
 
-<!--- ADDRESS THESE VERBATIMS: 
-Configure bug reporting
-Add a column to a board 
-
---> 
 

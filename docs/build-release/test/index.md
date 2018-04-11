@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: ahomer
 ms.date: 01/18/2018
 ---
+[//]: # (monikerRange: ">= tfs-2015")
 
 # Continuous Testing
 
@@ -20,15 +21,16 @@ choose the technologies and frameworks, then test your changes continuously in a
 
 | | | |
 | --- | --- | --- |
-| ![icon](_img/continuoustest-icon.png)<br />[Test with builds](getting-started-with-continuous-testing.md) | ![icon](_img/selenium-icon.png)<br />[Selenium testing](continuous-test-selenium.md) | ![icon](_img/reviewresults-icon.png)<br />[Review test results](review-continuous-test-results-after-build.md) |
+| ![icon](_img/continuoustest-icon.png)<br />[Run unit tests with your builds](getting-started-with-continuous-testing.md) | ![icon](_img/selenium-icon.png)<br />[Selenium testing](continuous-test-selenium.md) | ![icon](_img/reviewresults-icon.png)<br />[Review your test results](review-continuous-test-results-after-build.md) |
 | | | |
 
 ## Videos
 
 | | |
 | --- | --- |
-| <iframe src="https://channel9.msdn.com/Events/Build/2016/P581/player" width="340" height="190" allowFullScreen="true" frameBorder="0"></iframe> | <iframe src="https://channel9.msdn.com/Events/Seth-on-the-Road/That-Conference-2016/Creating-a-Software-Immune-System-for-Testing-under-DevOps/player" width="340" height="190" allowFullScreen="true" frameBorder="0"></iframe> |
-| <iframe src="https://channel9.msdn.com/Series/Parts-Unlimited-Labs/Parts-Unlimited-Continuous-Integration/player" width="340" height="190" allowFullScreen frameBorder="0"></iframe> | <iframe src="https://channel9.msdn.com/Events/TechDaysOnline/UK-TechDays-Online-September-2016/Supporting-DevOps-through-testing--its-not-just-about-automating-tests/player" width="340" height="190" allowFullScreen frameBorder="0"></iframe> |
+| <iframe src="https://channel9.msdn.com/Events/Connect/2017/T182/player" width="340" height="190" allowFullScreen="true" frameBorder="0"></iframe> | <iframe src="https://channel9.msdn.com/Events/Build/2016/P581/player" width="340" height="190" allowFullScreen="true" frameBorder="0"></iframe> |
+| <iframe src="https://channel9.msdn.com/Events/Seth-on-the-Road/That-Conference-2016/Creating-a-Software-Immune-System-for-Testing-under-DevOps/player" width="340" height="190" allowFullScreen="true" frameBorder="0"></iframe> | <iframe src="https://channel9.msdn.com/Series/Parts-Unlimited-Labs/Parts-Unlimited-Continuous-Integration/player" width="340" height="190" allowFullScreen frameBorder="0"></iframe> |
+| <iframe src="https://channel9.msdn.com/Events/TechDaysOnline/UK-TechDays-Online-September-2016/Supporting-DevOps-through-testing--its-not-just-about-automating-tests/player" width="340" height="190" allowFullScreen frameBorder="0"></iframe> | |
 | | |
 
 ## Step-by-Step Tutorials
@@ -38,11 +40,14 @@ choose the technologies and frameworks, then test your changes continuously in a
 ## How-to Guides
 
 * [Set up continuous testing](set-up-continuous-testing-builds.md)
-* [Run tests from the Test hub](run-automated-tests-from-test-hub.md)
-* [Associate tests with test cases](associate-automated-test-with-test-case.md)
+* [Associate automated tests with test cases](associate-automated-test-with-test-case.md)
+* [Run automated tests from the Test hub](run-automated-tests-from-test-hub.md)
+* [Run automated tests with Microsoft Test Manager](run-automated-tests-with-microsoft-test-manager.md)
 * [Associate results with requirements](associate-automated-results-with-requirements.md)
 * [Speed up testing with Test Impact Analysis](test-impact-analysis.md)
 * [Run tests in parallel](run-tests-in-parallel.md)
+* [Collect screenshots and video in tests](collect-screenshots-and-video.md)
+* [Pass parameters to tests from a build or release pipeline](reference-qa.md#pass-params)
 
 ## Reference
 

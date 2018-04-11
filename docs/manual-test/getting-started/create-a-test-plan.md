@@ -9,6 +9,7 @@ ms.manager: douge
 ms.author: ahomer
 ms.date: 01/18/2018
 ---
+[//]: # (monikerRange: ">= tfs-2015")
 
 # Create a test plan and test suite
 
@@ -24,6 +25,8 @@ This includes static test suites, requirement-based suites, and
 [query-based suites](../reference-qa.md#query-based-suites). You can add individual test cases to a test plan without creating
 a test suite if you wish, but using a test suite provides a way to group
 test cases for separate testing scenarios within a single test plan.
+
+[!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
 
 > **Note**: Stakeholders cannot create or manage test plans. You must have at least Basic access.
 See [Default manual testing permissions and access](../manual-test-permissions.md).

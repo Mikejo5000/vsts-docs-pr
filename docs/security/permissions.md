@@ -1,19 +1,20 @@
 ---
 title: Permissions and groups reference
-description: Manage groups, security, and permissions in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)
+titleSuffix: VSTS & TFS
+description: Comprehensive reference of built-in (default) security groups, and permissions defined in Visual Studio Team Services and Team Foundation Server  
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-admin
 ms.assetid: 169E817F-B297-4461-B359-27C78D4A8A7D
 toc: show
 ms.manager: douge
 ms.author: kaelli
-ms.date: 12/07/2017
+ms.date: 02/12/18
 ---
-
+[//]: # (monikerRange: '>= tfs-2013')
 
 # Permissions and groups in VSTS and TFS
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 This topic provides descriptions for each built-in group and permission. To learn how to add users to a group or set a specific permission that you can manage through the web portal, see the following resources:  
 
@@ -21,7 +22,7 @@ This topic provides descriptions for each built-in group and permission. To lear
 > [!div class="mx-tdBreakAll"]  
 > |Users and groups  |DevOps permissions  |Agile/Work tracking permissions  |  
 > |-------------|----------|---------|   
-> |- [Add users to an administrator role](set-project-collection-level-permissions.md)<br/>- [Add users to an account](../accounts/add-team-members-vs.md) (VSTS)<br/>- [Add users to a team project or a team](add-users-team-project.md) <br/>- [Make a user a team admin](../work/scale/add-team-administrator.md)<br/><br/>**Miscellaneous**<hr/>- [README & Wiki](../collaborate/manage-readme-wiki-permissions.md)<br/>- [SharePoint (TFS)](set-sharepoint-permissions.md)<br/>- [SQL Server Reports (TFS)](../report/admin/grant-permissions-to-reports.md) |- [Git branch](../git/branch-permissions.md)<br/>- [Git repositories](set-git-tfvc-repository-permissions.md)<br/>- [TFVC](set-git-tfvc-repository-permissions.md)<br/>- [Builds](set-build-release-permissions.md)<br/>- [Release definition security](set-build-release-permissions.md)<br/>- [Approvals and approvers](../build-release/concepts/definitions/release/approvals/index.md) | - [Area and iteration paths](../security/set-permissions-access-work-tracking.md)<br/>- [Work item query and folder](../work/track/set-query-permissions.md)<br/>- [Plan permissions](set-permissions-access-work-tracking.md#plan-permissions) (VSTS)<br/> - [Dashboard permissions](../report/dashboards/dashboard-permissions.md#set-permissions)|    
+> |- [Add users to an administrator role](set-project-collection-level-permissions.md)<br/>- [Add users to an account](../accounts/add-team-members-vs.md) (VSTS)<br/>- [Add users to a team project or a team](add-users-team-project.md) <br/>- [Make a user a team admin](../work/scale/add-team-administrator.md)<br/><br/>**Miscellaneous**<hr/>- [README & Wiki](../collaborate/manage-readme-wiki-permissions.md)<br/>- [SharePoint (TFS)](set-sharepoint-permissions.md)<br/>- [SQL Server Reports (TFS)](../report/admin/grant-permissions-to-reports.md) |- [Git branch](../git/branch-permissions.md)<br/>- [Git repositories](set-git-tfvc-repository-permissions.md)<br/>- [TFVC](set-git-tfvc-repository-permissions.md)<br/>- [Builds](../build-release/set-permissions.md)<br/>- [Releases](../build-release/set-permissions.md)<br/>- [Approvals and approvers](../build-release/concepts/definitions/release/approvals/index.md)<br/>- [Task groups](../build-release/set-permissions.md#task-group)<br/>- [Variable groups](../build-release/set-permissions.md#variable-group)<br/>- [Role-based resources](../build-release/set-permissions.md) | - [Area and iteration paths](../security/set-permissions-access-work-tracking.md)<br/>- [Work item query and folder](../work/track/set-query-permissions.md)<br/>- [Plan permissions](set-permissions-access-work-tracking.md#plan-permissions) (VSTS)<br/> - [Dashboard permissions](../report/dashboards/dashboard-permissions.md#set-permissions)<br/> - [Analytics (VSTS)](../report/analytics/analytics-security.md)|    
 
 
 <a id="image-diff"></a>  
@@ -51,7 +52,11 @@ Project Server Integration Service Accounts
 SharePoint Web Application Services
 -->
 
+
+
 <a name="server"></a>
+
+[//]: # (::: moniker range=">= tfs-2013 <= tfs-2018")
 
 ##&nbsp;&nbsp;&nbsp;Server-level groups (TFS only)
 
@@ -175,7 +180,10 @@ You can't remove or delete the default server level groups.
 > So the full name of the server level administrators group is
 > **[Team Foundation]/Team Foundation Administrators**.
 
+[//]: # (::: moniker-end)
+
 <a name="collection"></a>
+
 ##&nbsp;&nbsp;&nbsp;Collection-level groups
 
 When you create a VSTS account or TFS collection, the system creates collection-level groups that have [permissions in that collection](#collection-level). You can neither remove nor delete the built-in collection-level groups.
@@ -277,7 +285,7 @@ Project Collection Valid Users
 </table>
 
 > The full name of each of these groups is **[{collection name}]/{group name}**.
-> So the full name of the adminstrators group for the default collection is
+> So the full name of the administrator group for the default collection is
 > **[Default Collection]/Project Collection Administrators**.
 
 
@@ -294,6 +302,7 @@ Release Administrators (TFS 2017, VSTS)
 -->
 
 <a id="project-level-groups" />
+
 ##&nbsp;&nbsp;&nbsp;Project-level groups
 
 For each team project that you create, the system creates the followings team project-level groups. These groups are assigned [project-level permissions](#team-project-level-permissions).
@@ -391,7 +400,7 @@ For each team that you add, you can assign one or more team members as administr
 > Project Administrators can manage all team admin areas for all teams. 
 
 - **Create and manage team alerts**  
-	Can add and modify alerts so that the team can receive email notifications as changes occur to work items, code reviews, source control files, and builds. For details, see [Manage team alerts](../work/track/alerts-and-notifications.md).
+	Can add and modify alerts so that the team can receive email notifications as changes occur to work items, code reviews, source control files, and builds. For details, see [Manage team alerts](../collaborate/manage-team-notifications.md).
 
 	> [!NOTE] 
 	> There is no UI associated with managing alert permissions. Instead, you can use **TFSSecurity** to manage alerts in TFS. 
@@ -406,18 +415,9 @@ For each team that you add, you can assign one or more team members as administr
 	Can choose which backlog levels are active for a team. For example, a feature team may choose to show only the product backlog and a management team may choose to show only the feature and epic backlogs. For details, see [Select backlog levels for your team](../work/customize/select-backlog-navigation-levels.md).  
 - **Customize the Kanban board**   
 	Can fully customize the team's Kanban boards associate with the product and portfolio backlogs. This includes the following elements:
-	* [Cards: Fields](../work/customize/customize-cards.md#kanban-board)  
-	* [Cards: Styles](../work/customize/customize-cards.md#style-rule)  
-	* [Cards: Tag colors](../work/customize/customize-cards.md#color-tags)  
-	* [Cards: Annotations](../work/customize/customize-cards.md#annotations)  
-	* [Cards: Tests](../work/customize/customize-cards.md#tests)  
-	* [Board: Columns](../work/kanban/add-columns.md)  
-	* [Board: WIP limits](../work/kanban/wip-limits.md)    
-	* [Board: Split columns](../work/kanban/split-columns.md)   
-	* [Board: Swimlanes](../work/kanban/expedite-work.md)  
-	* [Board: Card reordering](../work/customize/reorder-cards.md)  
-	* [Board: Definition of Done](../work/kanban/definition-of-done.md)  
-	* [Charts: Cumulative flow](../report/dashboards/cumulative-flow.md#configure) 
+	* **Cards**: [Fields](../work/customize/customize-cards.md#kanban-board), [Styles](../work/customize/customize-cards.md#style-rule), [Tag colors](../work/customize/customize-cards.md#color-tags), [Annotations](../work/customize/customize-cards.md#annotations), [Tests](../work/customize/customize-cards.md#tests)  
+	* **Board**: [Columns](../work/kanban/add-columns.md), [WIP limits](../work/kanban/wip-limits.md), [Split columns](../work/kanban/split-columns.md),    [Swimlanes](../work/kanban/expedite-work.md), [Card reordering](../work/customize/reorder-cards.md), [Definition of Done](../work/kanban/definition-of-done.md)  
+	* **Charts**: [Cumulative flow](../report/dashboards/cumulative-flow.md#configure) 
 - **Manage team dashboards**  
 	Can add, configure, and manage permissions (VSTS and TFS 2017) for team dashboards. For details, see [Add and manage dashboards](../report/dashboards/dashboard-permissions.md#set-permissions).  
 - **Set working days off**    	
@@ -860,10 +860,9 @@ You manage project-level permissions from the [web portal admin context](../user
 
 ##&nbsp;&nbsp;&nbsp;Build (object-level)
 
-You manage build permissions [for each build defined in the web portal](set-build-release-permissions.md) or using the [TFSSecurity command-line tool](../tfs-server/command-line/tfssecurity-cmd.md#build-permissions). Project Administrators are granted all build permissions and Build Administrators are assigned most of these permissions. You can set build permissions for each build definition.
+You manage build permissions [for each build defined in the web portal](../build-release/set-permissions.md) or using the [TFSSecurity command-line tool](../tfs-server/command-line/tfssecurity-cmd.md#build-permissions). Project Administrators are granted all build permissions and Build Administrators are assigned most of these permissions. You can set build permissions for all build definitions or for each build definition.
 
 <img src="_img/permissions/build-permissions-vsts.png" style="border: 1px solid #C3C3C3;" />
-
 
 
 Permissions in Build follow a hierarchical model. Defaults for all the permissions can be set at the team project level and can be overridden on an individual build definition.
@@ -874,6 +873,8 @@ To set or override the permissions for a specific build definition, choose **Sec
 
 The following permissions are defined in Build. All of these can be set at both the levels.
 
+<!---
+Commenting this section out as it duplicates that defined in the following table.
 | Permission | Description |
 |------------|-------------|
 | **Administer build permissions** | Can change any of the other permissions listed here. |
@@ -892,6 +893,8 @@ The following permissions are defined in Build. All of these can be set at both 
 | **Manage build qualities** | _Only applies to XAML builds_ |
 | **Manage build queue** | _Only applies to XAML builds_ |
 
+-->
+
 <table valign="top" width="100%">
 <tbody valign="top">
 	<tr>
@@ -908,7 +911,7 @@ The following permissions are defined in Build. All of these can be set at both 
 	</tr>
 	<tr>
 		<td id="delete-builds-permission">Delete builds</td>
-		<td>Can delete a completed build.</td>
+		<td>Can delete a completed build. Builds that are deleted are [retained](../build-release/concepts/policies/retention.md) in the **Deleted** tab for a period of time before they are destroyed.</td>
 	</tr>
 	<tr>
 		<td id="destroy-builds-permission">Destroy builds</td>
@@ -945,21 +948,21 @@ The following permissions are defined in Build. All of these can be set at both 
 	</tr>
 	<tr>
 		<td id="manage-build-qualities-permission">Manage build qualities</td>
-		<td>Can add or remove build qualities.</td>
+		<td>Can add or remove build qualities. <i>Only applies to XAML builds</i>.</td>
 	</tr>
 	<tr>
 		<td id="manage-build-queue-permission">Manage build queue</td>
-		<td>Can cancel, re-prioritize, or postpone queued builds.</td>
+		<td>Can cancel, re-prioritize, or postpone queued builds. <i>Only applies to XAML builds</i>./td>
 	</tr>
 	<tr>
 		<td id="override-check-in-validation-by-build-permission">Override check-in validation by build</td>
 		<td>
-			Can commit a TFVC changeset that affects a gated build definition
+			Can commit a TFVC change set that affects a gated build definition
 			without triggering the system to shelve and build their changes first.
 			<blockquote>
 				Assign the Override check-in validation by build permission
 				only to service accounts for build services
-				and to build administrators who are responsible for the quality of the code.
+				and to build administrators who are responsible for the quality of the code. Applies to [TFVC gated check-in builds](../build-release/concepts/definitions/build/triggers.md). This does not apply to PR builds.
 				For more information, see
 				[Check in to a folder that is controlled by a gated check-in build process](../tfvc/check-folder-controlled-by-gated-check-build-process.md).
 			</blockquote>
@@ -974,7 +977,7 @@ The following permissions are defined in Build. All of these can be set at both 
 	</tr>
 	<tr>
 		<td id="retain-indefinitely-permission">Retain indefinitely</td>
-		<td>Can mark a build so that it will not be automatically deleted by any applicable retention policy.</td>
+		<td>Can toggle the retain indefinitely flag on a build. This feature marks a build so that the system won't automatically delete it based on any applicable retention policy.</td>
 	</tr>
 	<tr>
 		<td id="stop-builds-permission">Stop builds</td>
@@ -1057,15 +1060,15 @@ By default, the team project level and collection level Readers groups have only
 -->
 	<tr>
 		<td id="git-contribute-permission">Contribute</td>
-		<td><p>At the repository level, can push their changes to existing branches in the repository and can complete pull requests. Users who lack this permission but who have [create branch](#git-create-branch-permission) may push changes to new branches. Does not override restrictions in place from [branch policies](../git/branch-policies.md).</p>
-		<p>At the branch level, can push their changes to the branch and lock the branch.</p>
+		<td>
+		At the repository level, can push their changes to existing branches in the repository and can complete pull requests. Users who lack this permission but who have [create branch](#git-create-branch-permission) may push changes to new branches. Does not override restrictions in place from [branch policies](../git/branch-policies.md).<br>
+		At the branch level, can push their changes to the branch and lock the branch.
 		</td>
 	</tr>
 
 	<tr>
 		<td id="git-contribute-to-pull-requests-permission">Contribute to Pull Requests</td>
-		<td><p>Can create, comment on, and vote on pull requests.</p>
-		</td>
+		<td>Can create, comment on, and vote on pull requests.</td>
 	</tr>
 
 	<tr>
@@ -1182,14 +1185,14 @@ In version control permissions, explicit deny takes precedence over administrato
 			Check in
 		</td>
 		<td data-th="Description">
-			Can check in items and revise any committed changeset comments.
+			Can check in items and revise any committed change set comments.
 			Pending changes are committed at check-in.
 			<blockquote>
 				Consider adding these permissions to any manually added users or groups
 				that contributes to the development of the team project;
 				any users who should be able to check in and check out changes,
 				make a pending change to items in a folder,
-				or revise any committed changeset comments.
+				or revise any committed change set comments.
 			</blockquote>
 		</td>
 	</tr>
@@ -1218,7 +1221,7 @@ In version control permissions, explicit deny takes precedence over administrato
 				that contributes to the development of the team project;
 				any users who should be able to check in and check out changes,
 				make a pending change to items in a folder,
-				or revise any committed changeset comments.
+				or revise any committed change set comments.
 			</blockquote>
 		</td>
 	</tr>
@@ -1707,9 +1710,11 @@ View releases
 
 <a id="release_management">  </a>
 
+[//]: # (::: moniker range=">= tfs-2017")
+
 ##&nbsp;&nbsp;&nbsp;Release (object-level) (VSTS, TFS 2017)
 
-Project Administrators and Release Administrators are granted all release management permissions. These permissions can be granted or denied in a hierarchical model at the team project level, for a specific release definition, or for a specific environment in a release definition. Within this hierarchy, permissions can be inherited from the parent or overridden.
+You manage permissions [for each release defined in the web portal](../build-release/set-permissions.md). Project Administrators and Release Administrators are granted all release management permissions. These permissions can be granted or denied in a hierarchical model at the team project level, for a specific release definition, or for a specific environment in a release definition. Within this hierarchy, permissions can be inherited from the parent or overridden.
 
 In addition, you can assign approvers to specific steps within a release definition to ensure that the applications being deployed meet quality standards.
 
@@ -1743,8 +1748,24 @@ default. **Contributors** are given all permissions except
 are denied all permissions except **View release definition** and
 **View releases**.
 
+[//]: # (::: moniker-end)
 
+<a id="task-group">  </a>
 
+##&nbsp;&nbsp;&nbsp;Task group (Build and Release) permissions
+
+You manage permissions [for task groups from the **Build and Release** hub](../build-release/set-permissions.md#task-group) of the web portal. Project, Build, and Release Administrators are granted all permissions. Task group permissions follow a hierarchical model. Defaults for all the permissions can be set at the team project
+level and can be overridden on an individual task group definition.
+
+You use task groups to encapsulate a sequence of tasks already defined in a build or a release definition into a single reusable task. You [define and manage task groups](../build-release/concepts/library/task-groups.md) in the **Task groups** tab of the **Build and Release** hub.
+
+| Permission | Description | 
+|------------|-------------| 
+| **Administer task group permissions** | Can add and remove users or groups to task group security. |
+| **Delete task group** | Can delete a task group. | 
+| **Edit task group** | Can create, modify, or delete a task group. | 
+
+[//]: # (::: moniker range=">= tfs-2013 <= tfs-2013")
 
 <a id="lab">  </a>
 
@@ -1850,7 +1871,7 @@ By default, the team project level and collection-level Readers groups have only
 </tbody>
 </table>
 
-
+[//]: # (::: moniker-end)
 
 
 <a id="alerts">  </a>

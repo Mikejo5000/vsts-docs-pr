@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: ahomer
 ms.date: 01/18/2018
 ---
+[//]: # (monikerRange: ">= tfs-2017")
 
 # Speed up testing by using Test Impact Analysis (TIA)
 
@@ -49,7 +50,7 @@ At present, TIA is supported for:
 * VS2015 Update 3 onwards on the build agent
 * Local and hosted build agents
 * CI and in PR workflows
-* Git, GitHub, External Git, TFVC repos
+* Git, GitHub, External Git, TFVC repos (including partially mapped TFVC repositories with a [workaround](../../articles/test-impact-for-partially-mapped-tfvc-repositories.md))
 * IIS interactions (over REST, SOAP APIs), using HTTP/HTTPS protocols
 * Automated Tests
 * Single machine topology. Tests and app (SUT) must be running on the same machine.

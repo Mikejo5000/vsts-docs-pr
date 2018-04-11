@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: ahomer
 ms.date: 01/19/2018
 ---
+[//]: # (monikerRange: ">= tfs-2015")
 
 # Deploy your database to Azure SQL database using SQL scripts
 
@@ -20,7 +21,7 @@ Here we'll show you how to run SQL scripts against an Azure SQL Database as part
 
 ### Azure SQL Database
 
-Carry out the following steps to set up an Azure SQL Database server against which the
+Carry out the following steps to set up an Azure SQL Database server against which
 the database script will be executed.
 
 1. Sign into the Azure management portal and choose

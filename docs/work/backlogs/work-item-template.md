@@ -1,5 +1,6 @@
 ---
-title: Work item templates  
+title: Work item templates
+titleSuffix: VSTS & TFS   
 description: Add and manage work item templates to pre-populate fields in VSTS and TFS work item forms  
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
@@ -79,7 +80,7 @@ Based on the platform or version you use, you can perform the following tasks.
 	- Use templates created in Visual Studio to create work items through the Visual Studio client.  
 	
 >[!NOTE]  
-><b>Feature availability: </b>Visual Studio 2015 is the last version in which you can install TFS power tools. You can use the Work Item Templates tool whenever you connect to VSTS or an on-premises TFS that is at TFS 2015 version or earlier. Templates you define through the power tool are separate from those defined through VSTS or the web portal for TFS.   
+><b>Feature availability: </b>Visual Studio 2015 is the last version in which you can install TFS power tools. You can use the Work Item Templates tool whenever you connect to VSTS or an on-premises TFS that is at TFS 2015 version or earlier. Templates you define through the power tool are separate from those defined through VSTS or the web portal for TFS.   
 
 
 
@@ -414,4 +415,4 @@ However, you can quickly copy tasks, test cases, bugs, and other items using [Ex
 
 Another option is to use [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to apply parent-child links in a tree list. 
 
-[!INCLUDE [temp](../../_shared/help-support-shared.md)] 
+[!INCLUDE [temp](../../_shared/help-support-shared.md)] 

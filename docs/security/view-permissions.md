@@ -9,11 +9,13 @@ ms.manager: douge
 ms.author: kaelli
 ms.date: 12/12/2017
 ---
+[//]: # (monikerRange: '>= tfs-2013')
+
+# View permissions for yourself or others
 
 
-# View permissions for yourself or others  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]  
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]  
 
 You can view your permissions or those defined for another which have been set in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS). That way, if you don't have the permission to access a feature or function, you can request it from the right resource. 
 
@@ -62,7 +64,7 @@ From the web portal, open the Security dialog for the object whose permissions y
 > [!div class="mx-tdBreakAll"]  
 > |Wiki & Dashboard permissions | DevOps permissions  |Agile/Work tracking permissions |  
 > |-------------|----------|---------|   
-> |- [README & Wiki](../collaborate/manage-readme-wiki-permissions.md)<br/>- [Dashboards](../report/dashboards/dashboard-permissions.md)<br/> |- [Git branch](../git/branch-permissions.md)<br/>- [Git repository](set-git-tfvc-repository-permissions.md)<br/>- [TFVC](set-git-tfvc-repository-permissions.md)<br/>- [Builds](set-build-release-permissions.md)<br/>- [Release definition security](set-build-release-permissions.md)<br/>- [Approvals and approvers](../build-release/concepts/definitions/release/approvals/index.md) |- [Area and iteration paths](../security/set-permissions-access-work-tracking.md)<br/>- [Work item query and folder](../work/track/set-query-permissions.md)<br/>- [Plan permissions](set-permissions-access-work-tracking.md#plan-permissions)|  
+> |- [README & Wiki](../collaborate/manage-readme-wiki-permissions.md)<br/>- [Dashboards](../report/dashboards/dashboard-permissions.md)<br/> |- [Git branch](../git/branch-permissions.md)<br/>- [Git repository](set-git-tfvc-repository-permissions.md)<br/>- [TFVC](set-git-tfvc-repository-permissions.md)<br/>- [Builds](../build-release/set-permissions.md)<br/>- [Release definition security](../build-release/set-permissions.md)<br/>- [Approvals and approvers](../build-release/concepts/definitions/release/approvals/index.md) |- [Area and iteration paths](../security/set-permissions-access-work-tracking.md)<br/>- [Work item query and folder](../work/track/set-query-permissions.md)<br/>- [Plan permissions](set-permissions-access-work-tracking.md#plan-permissions)|  
 
 
 ## Try this next

@@ -7,8 +7,10 @@ ms.assetid: 36A4986E-BFB8-422B-BFC9-8A0CB75D0603
 ms.manager: douge
 ms.author: sdanie
 ms.date: 09/07/2017
+ms.topic: landing-page
 layout: LandingPage
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
 # TFVC
 

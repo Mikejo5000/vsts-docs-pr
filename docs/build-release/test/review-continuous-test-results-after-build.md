@@ -9,6 +9,7 @@ ms.author: ahomer
 ms.date: 01/18/2018
 ms.topic: get-started-article
 ---
+[//]: # (monikerRange: ">= tfs-2015")
 
 # Review continuous test results after a build
 
@@ -31,6 +32,11 @@ review your test results to start analyzing any problems that you found.
    how long these tests took to run, how long these tests have been failing, and more.
 
    ![View test run results summary](_img/test-results-summary.png)
+
+1. If you collected code coverage information, the build **Summary** page displays an overview of the blocks and lines covered.
+   You can download the code coverage results for a drill-down analysis in Visual Studio.
+
+   ![View code coverage information](_img/review-continuous-test-results-after-build/code-coverage-results.png)
 
 <a name="organizetests"></a>  
 ## Organize your test results
@@ -56,7 +62,7 @@ review your test results to start analyzing any problems that you found.
 
    Group the list of results using the drop-down list.
    Mouse over a bar in the chart to see a pop-up summary, or select
-   a bar to view the detailed test results for that build. 
+   a bar to view the detailed test results for that build.
  
 <a name="viewrelease"></a>  
 ## View tests in the Release hub

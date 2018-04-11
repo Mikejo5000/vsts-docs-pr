@@ -9,6 +9,8 @@ ms.author: elbatk
 ms.date: 02/12/2018
 ---
 
+[//]: # (monikerRange: '>=tfs-2013')
+
 # Change groups and permissions with TFSSecurity
 
 **VSTS** | **TFS 2017** | **TFS 2015** | **TFS 2013**
@@ -1261,6 +1263,7 @@ TFS 2017 Update 1 and later
 |Permission|Namespace|Action|
 |---|---|---|
 |[Contribute](../../security/permissions.md#git-contribute-permission)|GitRepositories|GenericContribute|
+|[Contribute to Pull Requests](../../security/permissions.md#git-contribute-to-pull-requests-permission)|GitRepositories|PullRequestContribute|
 |[Create Branch](../../security/permissions.md#git-create-branch-permission)|GitRepositories|CreateBranch|
 |[Create Repository](../../security/permissions.md#git-create-repository-permission)|GitRepositories|CreateRepository|
 |[Create Tag](../../security/permissions.md#git-create-tag-permission)|GitRepositories|CreateTag|

@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: chcomley
 ms.date: 10/6/2017
 ---
+[//]: # (monikerRange: 'vsts')
 
 #	Manage conditional access to VSTS
 
@@ -24,7 +25,7 @@ from various locations/networks.
 You can require conditions such security group membership, location and network identity, specific OS, enabled device 
 in a management system, and so on.
 
-Depending on which conditions the user satsifies, you can require multi-factor authentication, require further checks, 
+Depending on which conditions the user satisfies, you can require multi-factor authentication, require further checks, 
 or block access.
 
 > [!IMPORTANT] 

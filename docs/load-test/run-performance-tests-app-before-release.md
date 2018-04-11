@@ -9,12 +9,13 @@ ms.manager: douge
 ms.author: ahomer
 ms.date: 01/18/2018
 ---
+[//]: # (monikerRange: "vsts")
 
 # Tutorial: Load test your app before release
 
 [!INCLUDE [version-header-vs-ts](_shared/version-header-vs-ts.md)] 
 
-Find performance issues before you release your app by running load tests with with Visual Studio 
+Find performance issues before you release your app by running load tests with Visual Studio 
 Enterprise using [Cloud-based Load Testing](http://go.microsoft.com/fwlink/?LinkID=317257)
 to provide virtual machines in the cloud that generate the load of many users accessing your web site at the same time.
 All you need is a [Visual Studio Team Services (VSTS) account](http://go.microsoft.com/fwlink/?LinkId=307137).

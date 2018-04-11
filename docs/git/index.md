@@ -6,9 +6,11 @@ ms.technology: vs-devops-git
 ms.assetid: 36A4986E-BFB8-422B-BFC9-8A0CB75D0603    
 ms.manager: douge
 ms.author: sdanie
-ms.date: 01/19/2018
+ms.date: 03/14//2018
+ms.topic: landing-page
 layout: LandingPage
 ---
+[//]: # (monikerRange: '>= tfs-2013'
 
 # Git Repositories
 
@@ -27,6 +29,13 @@ Get started by creating a repo, uploading your code, and inviting developers to 
 </div>
 
 Or, you can [import an existing repo](import-git-repository.md) from GitHub, Bitbucket, GitLab, or other location to a new, empty repo. 
+
+## Videos
+
+| | |
+| --- | --- |
+| <iframe src="https://channel9.msdn.com/Events/Connect/2017/T178/player" width="340" height="190" allowFullScreen="true" frameBorder="0"></iframe> | <iframe src="https://channel9.msdn.com/Events/Connect/2017/T184/player" width="340" height="190" allowFullScreen="true" frameBorder="0"></iframe> |
+| | |
 
 ## Step-by-Step Tutorials  
 

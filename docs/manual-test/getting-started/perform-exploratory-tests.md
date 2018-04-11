@@ -9,6 +9,7 @@ ms.author: ahomer
 ms.date: 01/18/2018
 ms.topic: get-started-article
 ---
+[//]: # (monikerRange: ">= tfs-2015")
 
 # Install the Test &amp; Feedback extension
 
@@ -19,6 +20,8 @@ Everyone in the team, such as developers, product owners, managers, UX or UI eng
 marketing teams, early adopters, and other stakeholders can use the 
 extension to submit bugs or provide feedback and contribute to the 
 quality of your product. 
+
+[!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
 
 <a name="installext"></a>
 ## Install the extension

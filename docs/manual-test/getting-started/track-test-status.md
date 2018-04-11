@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: ahomer
 ms.date: 01/18/2018
 ---
+[//]: # (monikerRange: ">= tfs-2015")
 
 # Track test status
 
@@ -20,6 +21,8 @@ You can pin these charts to your home page, then all the team
 can see the progress at a glance.
 
 ![On the Charts tab, view test plan status with charts that you created](_img/track-test-status/OverviewTrackResults.png) 
+
+[!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
 
 ## Track testing progress
 

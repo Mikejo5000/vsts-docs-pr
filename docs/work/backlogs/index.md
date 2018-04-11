@@ -11,7 +11,7 @@ ms.date: 08/03/2017
 
 # Backlogs
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 Start planning your project by quickly adding user stories or requirements to your product backlog.  
 
@@ -34,6 +34,7 @@ Build your backlog and then start driving your code development efforts.
 
 - [Define features & epics](define-features-epics.md)
 - [Organize backlogs](organize-backlog.md)
+- [Bulk modify work items](bulk-modify-work-items.md)
 
 ## Concepts 
   
@@ -46,6 +47,7 @@ Build your backlog and then start driving your code development efforts.
 
 
 * [Filter backlogs & queries](filter-backlogs.md)
+* 
 * [Change column options](set-column-options.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)
 * [Email/print work items](../work-items/email-work-items.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)
 * [Define area paths](../customize/set-area-paths.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)

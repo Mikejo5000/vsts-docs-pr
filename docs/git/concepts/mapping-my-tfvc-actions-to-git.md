@@ -5,10 +5,11 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-git 
 ms.assetid: 88493ec3-0687-44f6-b7e3-36d72be7aa60
 ms.manager: willys
-ms.date: 09/09/2017
 ms.author: willys
 author: willys
+ms.date: 03/14/2018
 ---
+[//]: # (monikerRange: '>= tfs-2013')
 
 # Map TFVC actions to Git 
 
@@ -311,7 +312,7 @@ With magic comes responsibility! Many users dislike the `sync` as it can sometim
 
 Authors: Jesse Houwing, Martin Hinshelwood, Mike Fourie, and Willy Schaub
 
-*(c) 2015 Microsoft Corporation. All rights reserved. This document is
+*(c) 2015 Microsoft Corporation. All rights reserved. This document is
 provided "as-is." Information and views expressed in this document,
 including URL and other Internet Web site references, may change without
 notice. You bear the risk of using it.*

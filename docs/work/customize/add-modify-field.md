@@ -1,7 +1,7 @@
 ---
 title: Add or modify a work tracking field
 titleSuffix: VSTS & TFS
-description: Modify or add a work item field to support queries, reports, and workflow for Visual Studio Team Services (VSTS) and TFS  
+description: Modify or add a work item field to support queries, reports, and workflow for Visual Studio Team Services and Team Foundation Server  
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 32775755-CCC1-4859-95ED-0FF9FF8DBCD2  
@@ -12,7 +12,7 @@ ms.date: 12/15/2017
 
 # Add or modify a field to track work 
 
-[!INCLUDE [temp](../_shared/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [temp](../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
 Your team project contains 100 or more data fields, based on the process&#151;[Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md)&#151;used to create the team project. You update data by [modifying the data field within a work item](../backlogs/add-work-items.md). Each work item is associated with a work item type (WIT), and the data you can track corresponds to the fields assigned to the WIT. 
 
@@ -27,7 +27,7 @@ Not all pick lists are defined in the same way. Some lists are defined through t
 > [!div class="mx-tdBreakAll"]  
 > |WIT definition  |Command line change  |
 > |-------------|----------|  
-> |- [Customize a pick list](add-modify-field.md#picklist)<br/>- [Add rules to a field](add-modify-field.md#add-rules)<br/>- [Add a custom field](add-modify-field.md#add-custom-field)<br/>- [Change the field label on the form](add-modify-field.md#change-label)<br/>- [Add a custom control](add-modify-field.md#custom-control)<br/>- [Limit the Assigned To field list](add-modify-field.md#limit-account-names) |- [List fields](add-modify-field.md#list-fields)<br/>- [Change a field attribute](add-modify-field.md#change-attribute) (On-premises XML)<br/>- [Delete a field](add-modify-field.md#delete-field) (On-premises XML)<br/>- [Index a field](add-modify-field.md#index-field) (On-premises XML) | 
+> |- [Customize a pick list](#picklist)<br/>- [Add rules to a field](#add-rules)<br/>- [Add a custom field](#add-custom-field)<br/>- [Change the field label on the form](#change-label)<br/>- [Add a custom control](#custom-control) |- [List fields](add-modify-field.md#list-fields)<br/>- [Change a field attribute](add-modify-field.md#change-attribute) (On-premises XML)<br/>- [Delete a field](add-modify-field.md#delete-field) (On-premises XML)<br/>- [Index a field](add-modify-field.md#index-field) (On-premises XML) | 
 
 
 
@@ -76,9 +76,9 @@ Use the following syntax to add a Boolean field within the **FIELDS** section of
 
 ```
 <FIELD name="Triage" refname="Fabrikam.Triage" type="Boolean" >
- <DEFAULT from="value" value="False" />
-        <HELPTEXT>Triage work item</HELPTEXT>
-      </FIELD>
+ <DEFAULT from="value" value="False" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <HELPTEXT>Triage work item</HELPTEXT>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  </FIELD>
 ```
 
 And then add the following syntax within the **FORM** section to have the field appear on the form. 
@@ -170,7 +170,7 @@ To add a custom field, edit the WIT definition to add a **FIELD** element within
     The following code specifies the custom field, Requestor, with a reference name of ```FabrikamFiber.MyTeam.Requestor``` and a pick list of allowed values, with the default value of Customer.
 
 	```
-	<FIELD name="Requestor" refname="FabrikamFiber.MyTeam.Requestor" type="String" reportable="Dimension">
+	<FIELD name="Requestor" refname="FabrikamFiber.MyTeam.Requestor" type="String" reportable="Dimension">
 	   <ALLOWEDVALUES>
 	      <LISTITEM value="Customer" />
 	      <LISTITEM value="Executive Management" />
@@ -191,14 +191,14 @@ To add a custom field, edit the WIT definition to add a **FIELD** element within
     For example, the following code snippet adds the Requestor field to appear below the Reason field on the work item form.
 	```
 	<Column PercentWidth="50">
-	   <Group Label="Status">
-	      <Column PercentWidth="100">
-	         <Control FieldName="System.AssignedTo" Type="FieldControl" Label="Assi&amp;gned To:" LabelPosition="Left" />
-	         <Control FieldName="System.State" Type="FieldControl" Label="&amp;State:" LabelPosition="Left" />
-	         <Control FieldName="System.Reason" Type="FieldControl" Label="Reason:" LabelPosition="Left" ReadOnly="True" />
-	         <Control FieldName="FabrikamFiber.MyTeam.Requestor" Type="FieldControl" Label="Requestor:" LabelPosition="Left" ReadOnly="True" />
-	      </Column>
-	   </Group>
+	&nbsp;&nbsp;&nbsp;<Group Label="Status">
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Column PercentWidth="100">
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Control FieldName="System.AssignedTo" Type="FieldControl" Label="Assi&amp;gned To:" LabelPosition="Left" />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Control FieldName="System.State" Type="FieldControl" Label="&amp;State:" LabelPosition="Left" />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Control FieldName="System.Reason" Type="FieldControl" Label="Reason:" LabelPosition="Left" ReadOnly="True" />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Control FieldName="FabrikamFiber.MyTeam.Requestor" Type="FieldControl" Label="Requestor:" LabelPosition="Left" ReadOnly="True" />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Column>
+	&nbsp;&nbsp;&nbsp;</Group>
 	</Column>
 	```
 
@@ -234,7 +234,7 @@ To modify the field label, change the value assigned to the ```Control``` elemen
 
 	```
 	<Column PercentWidth="70">  
-	   <Control Type="FieldControl" FieldName="System.Title" Label="Title (Título):" LabelPosition="Left" />  
+	   <Control Type="FieldControl" FieldName="System.Title" Label="Title (TÃ­tulo):" LabelPosition="Left" />  
 	</Column>
 	```
 
@@ -255,6 +255,8 @@ Or, you can add a custom control which is available through the [Visual Studio M
 
 To add a custom control to the new web form, see [WebLayout and Control elements](reference/weblayout-xml-elements.md). 
 
+
+<!--- NOT A SUPPORTED FEATURE 
 <a id="limit-account-names">  </a>
 ## Limit the Assigned To field list of names
 
@@ -269,13 +271,14 @@ The most efficient way to apply security restrictions is to create custom groups
     For example, the following code snippet can be added to the Task definition to limit the set of users for the Assigned To field to only those team members added to the TFS Team Task Group.
 
         <FIELD name="Assigned To" refname="System.AssignedTo" type="String" reportable="dimension" syncnamechanges="true">
-           <HELPTEXT>The person currently working on this task</HELPTEXT>
-           <ALLOWEXISTINGVALUE />
-           <VALIDUSER group="Team Contributors" />
+        &nbsp;&nbsp;&nbsp;<HELPTEXT>The person currently working on this task</HELPTEXT>
+        &nbsp;&nbsp;&nbsp;<ALLOWEXISTINGVALUE />
+        &nbsp;&nbsp;&nbsp;<VALIDUSER group="Team Contributors" />
         </FIELD>
 
     By specifying the **ALLOWEXISTINGVALUE** element, you avoid validation errors that would otherwise occur when members leave the team and are no longer registered as project contributors.
 
+-->
 
 <a id="change-attribute">  </a>
 ## Change an attribute of an existing field (On-premises XML) 
