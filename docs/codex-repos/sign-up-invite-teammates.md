@@ -62,7 +62,7 @@ Then enter your password, and finish signing in.
    - **Organize work using**: The default work tracking process is set to **Agile**. If you want to work with Scrum or CMMI processes, then select those now.  You can't change the process after the team project is created. (To learn more, see [Choose process](../work/work-items/guidance/choose-process.md). 
    - **Host your projects in**: You can choose between [several locations for where you want your data hosted](https://www.microsoft.com/en-us/trustcenter/privacy/vsts-location).
  
-	<img src="_img/sign-up/change-details.png" alt="Choose details for your VSTS account" style="border: 2px solid #C3C3C3;" />
+	<img src="../user-guide/_img/sign-up/change-details.png" alt="Choose details for your VSTS account" style="border: 2px solid #C3C3C3;" />
 
 0.	By default, VSTS creates your first team project as "MyFirstProject". After VSTS creates your account and team project, 
 you can invite others to join your project, add code, start planning and tracking using work items, or rename your team project. 
@@ -79,39 +79,17 @@ you can invite others to join your project, add code, start planning and trackin
 
 You provide others access to your account by adding their email address. 
 
-0. Turn on **Streamlined User Management** for your account. 
-
-	> [!NOTE] 
-	> **Streamlined User Management** is in preview. Turning it on now shows you how to enable preview features, and also provides you access to the enhanced user interface for managing users. 
-
-	a. From your user account menu (you'll see a letter or an image of your profile), click the **Preview features** option.   
-	<!--- <img src="_img/invite-users-open-preview-features.png" alt="Click on your user account menu, choose Preview Features" style="border: 2px solid #C3C3C3;" /> -->
-	<img src="../_shared/_img/preview-features-open.png" alt="Open Preview Features" style="border: 2px solid #C3C3C3;" /> 
-
-	b. In the first drop-down menu, choose the option for all accounts. 
-
-	<img src="../collaborate/_img/preview-features-admin-s117.png" alt="Preview features options for the account" style="border: 1px solid #CCCCCC;" /> 
-
-	>[!TIP]  
-	>If you don't see the user/account menu option, then you aren't an account administrator. 
-
-	c. Enable the **Streamlined User Management** option. 
-
-	<img src="_img/sign-up-invite-users-streamline-user-mngment.png" alt="Enable streamline user management" style="border: 1px solid #CCCCCC;" /> 
-
-	Click the close icon (![close-icon](../_img/icons/close-icon.png) to close the preview features dialog window. 
-
 0. Click ![gear icon](../_img/icons/gear-icon.png), the gear Settings icon, and choose the **Account Settings** option
  
-	![Open Account Settings](_img/sign-up/open-account-settings.png)
+	![Open Account Settings](../user-guide/_img/sign-up/open-account-settings.png)
 
 0. Then, click **Users** to open the Manage users page. Click **Add new users** to open the dialog. 
 
-	![Open Add new users dialog](_img/sign-up/add-new-users.png)
+	![Open Add new users dialog](../user-guide/_img/sign-up/add-new-users.png)
 
 0. Fill out the form. 
  
-	<img src="_img/invite-users-add-user-dialog.png" alt="Web portal, account admin context, Add new users dialog" style="border: 2px solid #C3C3C3;" />   
+	<img src="../user-guide/_img/invite-users-add-user-dialog.png" alt="Web portal, account admin context, Add new users dialog" style="border: 2px solid #C3C3C3;" />   
 
 	- **Users**: Enter the email address (Microsoft account address) for the user account. You can add several email addresses by separating them with a semicolon (;). Note that the email addresses display in red when they are accepted.  
 		> [!NOTE]   
@@ -130,9 +108,9 @@ You provide others access to your account by adding their email address.
 ## Next steps  
  
 > [!div class="nextstepaction"]
-> [Add code to your Git repository](code-with-git.md) 
+> [Add code to your Git repository](../user-guide/code-with-git.md) 
 > or 
-> [Plan and track work](plan-track-work.md) 
+> [Learn about TFVC](../tfvc/overview.md) 
 
 For more information on managing users and account access, see [Add account users for VSTS](../accounts/add-account-users-from-user-hub.md).
  

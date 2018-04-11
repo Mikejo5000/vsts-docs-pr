@@ -59,7 +59,7 @@ Then enter your password, and finish signing in.
    - **Organize work using**: The default work tracking process is set to **Agile**. If you want to work with Scrum or CMMI processes, then select those now.  You can't change the process after the team project is created. (To learn more, see [Choose process](../work/work-items/guidance/choose-process.md). 
    - **Host your projects in**: You can choose between [several locations for where you want your data hosted](https://www.microsoft.com/en-us/trustcenter/privacy/vsts-location).
  
-	<img src="_img/sign-up/change-details.png" alt="Choose details for your VSTS account" style="border: 2px solid #C3C3C3;" />
+	<img src="../user-guide/_img/sign-up/change-details.png" alt="Choose details for your VSTS account" style="border: 2px solid #C3C3C3;" />
 
 0.	By default, Codex creates your first team project as "MyFirstProject". After Codex creates your account and team project, 
 you can invite others to join your project, add code, start planning and tracking using work items, or rename your team project. 
@@ -105,7 +105,7 @@ You provide others access to your account by adding their email address.
 ## Next steps  
  
 > [!div class="nextstepaction"]
-> [Plan and track work](../../work/work-items/view-add-work-items.md?toc=/vsts/codex-agile/toc.json&bc=/vsts/codex-agile/breadcrumb/toc.json) 
+> [CI/CD](../build-release/overview.md) 
 
 For more information on managing users and account access, see [Add account users for VSTS](../accounts/add-account-users-from-user-hub.md).
  

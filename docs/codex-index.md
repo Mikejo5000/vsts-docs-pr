@@ -247,7 +247,7 @@ featureFlags:
                 </ul>
             </li>
             <li>
-                <a href="#services">Cloud Services</a>
+                <a href="#services">Services</a>
                 <ul id="services">
                     <li>
                         <a data-default="true" href="#all">All</a>
@@ -296,8 +296,8 @@ featureFlags:
                                     <h3>Dashboards</h3>
                                     <ul>
                                         <li><a class="barLink" href="/vsts/report/dashboards/index">Dashboards</a></li>
-                                        <li><a class="barLink" href="/vsts/report/analytics/index">Analytics (VSTS)</a></li>
-                                        <li><a class="barLink" href="/vsts/report/powerbi/index">Power BI (VSTS)</a></li>
+                                        <li><a class="barLink" href="/vsts/report/analytics/index">Analytics</a></li>
+                                        <li><a class="barLink" href="/vsts/report/powerbi/index">Power BI</a></li>
                                     </ul>
                                     <h3>Collaboration</h3>
                                     <ul>

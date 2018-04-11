@@ -36,13 +36,13 @@ We've made it easy for you to start for free and try out our service.
 
 Sign up for free by creating an account and then, either upload your code to share or source control, or begin tracking your work using Scrum, Kanban, or a combination of methods. 
 
-[![Sign up for Codex Repos](../user-guide/_img/what-is-vsts-sign-up-step-1.png)](sign-up-invite-teammates.md)[![Add code to repository](../user-guide/_img/what-is-vsts-add-code-ide-step-2.png)](code-with-git.md) 
+[![Sign up for Codex Repos](../user-guide/_img/what-is-vsts-sign-up-step-1.png)](sign-up-invite-teammates.md)[![Add code to repository](../user-guide/_img/what-is-vsts-add-code-ide-step-2.png)](../user-guide/code-with-git.md) 
 
 
 ## Try this next  
 
 > [!div class="nextstepaction"]
-> [Sign up and invite team mates](../user-guide/sign-up-invite-teammates.md?toc=/vsts/codex-agile/toc.json&bc=/vsts/codex-agile/breadcrumb/toc.json )
+> [Sign up and invite team mates](sign-up-invite-teammates.md)
 
 To learn more, see these topics: 
 - [A tour of services](../user-guide/services.md)

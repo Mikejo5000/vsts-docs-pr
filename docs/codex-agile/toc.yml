@@ -4,11 +4,11 @@
   - name: Sign up and invite some teammates 
     href: sign-up-invite-teammates.md
   - name: "View & add work items"
-    href: ../../work/work-items/view-add-work-items.md?toc=/vsts/codex-agile/toc.json&bc=/vsts/codex-agile/breadcrumb/toc.json 
+    href: ../work/work-items/view-add-work-items.md?toc=/vsts/codex-agile/toc.json&bc=/vsts/codex-agile/breadcrumb/toc.json 
   - name: Create your backlog
-    href: ../../work/backlogs/create-your-backlog.md?toc=/vsts/codex-agile/toc.json&bc=/vsts/codex-agile/breadcrumb/toc.json
+    href: ../work/backlogs/create-your-backlog.md?toc=/vsts/codex-agile/toc.json&bc=/vsts/codex-agile/breadcrumb/toc.json
   - name: Kanban quickstart
-    href: ../../work/kanban/kanban-quickstart.md?toc=/vsts/codex-agile/toc.json&bc=/vsts/codex-agile/breadcrumb/toc.json 
+    href: ../work/kanban/kanban-quickstart.md?toc=/vsts/codex-agile/toc.json&bc=/vsts/codex-agile/breadcrumb/toc.json 
   - name: Default permissions & roles
     href: ../security/permissions-access-work-tracking.md?toc=/vsts/codex-agile/toc.json&bc=/vsts/codex-agile/breadcrumb/toc.json 
 - name: Resources
