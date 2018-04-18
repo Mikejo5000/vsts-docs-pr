@@ -3,12 +3,13 @@ title: Catalog of widgets you can add to a dashboard
 titleSuffix: VSTS & TFS
 ms.custom: Widget catalog
 description: Determine which widgets you want to add to your dashboards when working in Visual Studio Team Services or Team Foundation Server
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-reporting
+ms.prod: devops
+ms.technology: devops-analytics
 ms.assetid: C9FD12C0-033E-4A4D-AF63-6EF67E7B4828
 ms.topic: reference
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
 ms.date: 03/20/2018
 ---
 
@@ -53,7 +54,7 @@ The following widgets are available to you. Team-scoped widgets display data bas
 > [!div class="mx-tdCol2BreakAll"]
 > |Team-scoped  |User-focused |  Build, test, release |Other |  
 > |----------|---------|---------|---------|
-> |- [New Work item](#new-work-item-widget)<br/>- [Other links](#other-links-widget)<br/>- [Pull request](#pull-request-widget)<br/>- [Sprint burndown](#sprint-burndown-widget)<br/>- [Sprint capacity](#sprint-capacity-widget)<br/>- [Sprint overview](#sprint-overview-widget)<br/>- [Team members](#team-members-widget)<br/>- [Team room](#team-room-widget)<br/>- [Work links](#work-links-widget) |- [Assigned to me](#assigned-to-me-widget)<br/>- [Pull request](#pull-request-widget) |- [Chart for build history](#build-history-widget)<br/>- [Chart for test plans](#chart-test-plan-widget)<br/>- [Chart for test plans](#chart-test-plan-widget)<br/>- [Deployment status](#deployment-status-widget)<br/>- [Requirements quality](#requirements-quality-widget)<br/>- [Test results trend](#test-results-widget) |- [Code tile](#code-tile-widget)<br/>- [Chart for work items](#chart-wit-widget)<br/>- [Embedded web page](#embedded-webpage-widget)<br/>- [Query results](#query-results-widget)<br/>- [Query tile](#query-tile-widget)<br/>- [Markdown](#markdown-widget)<br/>- [Visual Studio Shortcuts](#visual-studio-widget)<br/>- [Welcome](#how-to-widget) |  
+> |- [New Work item](#new-work-item-widget)<br/>- [Other links](#other-links-widget)<br/>- [Pull request](#pull-request-widget)<br/>- [Sprint burndown](#sprint-burndown-widget)<br/>- [Sprint capacity](#sprint-capacity-widget)<br/>- [Sprint overview](#sprint-overview-widget)<br/>- [Team members](#team-members-widget)<br/>- [Team room](#team-room-widget)<br/>- [Work links](#work-links-widget) |- [Assigned to me](#assigned-to-me-widget)<br/>- [Pull request](#pull-request-widget) |- [Chart for build history](#build-history-widget)<br/>- [Chart for test plans](#chart-test-plan-widget)<br/>- [Deployment status](#deployment-status-widget)<br/>- [Requirements quality](#requirements-quality-widget)<br/>- [Test results trend](#test-results-widget) |- [Code tile](#code-tile-widget)<br/>- [Chart for work items](#chart-wit-widget)<br/>- [Embedded web page](#embedded-webpage-widget)<br/>- [Query results](#query-results-widget)<br/>- [Query tile](#query-tile-widget)<br/>- [Markdown](#markdown-widget)<br/>- [Visual Studio Shortcuts](#visual-studio-widget)<br/>- [Welcome](#how-to-widget) |  
  
 ::: moniker-end
 
@@ -151,7 +152,7 @@ Requires TFS 2015.2 or later version. For TFS 2015.1 and earlier versions, see [
 
 ::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 <a id="new-work-item-widget"></a>
-##&nbsp;&nbsp;&nbsp;New Work item (team-scoped) 
+##&nbsp;&nbsp;&nbsp;New Work item
 	
 ![New work item widget](_img/widget-new-work-items.png)
 
@@ -170,7 +171,7 @@ Requires TFS 2015.1 or later version.    
 ::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 
 <a id="other-links-widget"></a> 
-##&nbsp;&nbsp;&nbsp;Other links (team-scoped) 
+##&nbsp;&nbsp;&nbsp;Other links 
 
 ![Other links widget](_img/widget-other-links.png)  
 
@@ -228,7 +229,7 @@ To create a shared query, see [Use the query editor to list and manage queries](
 
 <a id="sprint-burndown-widget"></a>
 <a id="burndown-widget"></a> 
-##&nbsp;&nbsp;&nbsp;Sprint burndown (team-scoped) 
+##&nbsp;&nbsp;&nbsp;Sprint burndown 
 
 ![Sprint burndown widget](_img/widget-sprint-burndown.png)
 
@@ -242,7 +243,7 @@ Teams [use the burndown chart to mitigate risk and check for scope creep](../../
 ::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 
 <a id="sprint-capacity-widget"></a> 
-##&nbsp;&nbsp;&nbsp;Sprint capacity (team-scoped) 
+##&nbsp;&nbsp;&nbsp;Sprint capacity 
 
 ![Sprint capacity widget](_img/widget-sprint-capacity.png)
 
@@ -257,7 +258,7 @@ Teams [specify their capacity to plan and monitor their sprint resources](../../
 ::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 
 <a id="sprint-overview-widget"></a> 
-##&nbsp;&nbsp;&nbsp;Sprint overview (team-scoped) 
+##&nbsp;&nbsp;&nbsp;Sprint overview 
 
 ![Sprint overview widget](_img/widget-sprint-overview.png)
 
@@ -278,7 +279,7 @@ Inserts a visual overview of sprint progress indicating the number of backlog it
 
 ::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 <a id="work-links-widget"></a> 
-##&nbsp;&nbsp;&nbsp;Work links (team-scoped) 
+##&nbsp;&nbsp;&nbsp;Work links 
 
 ![Work links widget](_img/widget-work-links.png)  
 Provides quick access to open the following Agile tools and team resources:
@@ -317,7 +318,7 @@ Adds a tile that displays a burnup chart which you can configure to span one or 
 
 <a id="cfd-widget"></a> 
 
-##&nbsp;&nbsp;&nbsp;Cumulative flow diagram (team-scoped)  
+##&nbsp;&nbsp;&nbsp;Cumulative flow diagram   
 
 ![Cumulative flow diagram widget](_img/widget-cfd-chart.png)  
 
@@ -330,7 +331,7 @@ Hover over each color within the chart to see the count of items for a particula
 ----
 
 <a id="cycle-time-widget"></a> 
-##&nbsp;&nbsp;&nbsp;Cycle time (team-scoped)  
+##&nbsp;&nbsp;&nbsp;Cycle time  
 
 ![Cumulative flow diagram widget](_img/widget-cycle-time.png)  
 
@@ -341,7 +342,7 @@ Each marker on the chart corresponds to one or more work items with a particular
 ----
 
 <a id="lead-time-widget"></a> 
-##&nbsp;&nbsp;&nbsp;Lead time (team-scoped)  
+##&nbsp;&nbsp;&nbsp;Lead time  
 
 ![Lead time widget](_img/widget-lead-time.png)   
  
@@ -352,7 +353,7 @@ Each marker on the chart corresponds to one or more work items with a particular
 ----
 
 <a id="velocity-widget"></a> 
-##&nbsp;&nbsp;&nbsp;Velocity (team-scoped)  
+##&nbsp;&nbsp;&nbsp;Velocity   
 
 ![Sprint velocity widget](_img/widget-velocity.png)
 
@@ -415,21 +416,6 @@ To learn more, see [Track your test results](../../manual-test/getting-started/t
 Requires TFS 2017.2 or later version.
 ::: moniker-end
 ::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
-----
-::: moniker-end
-
-
-
-
-::: moniker range="vsts || >= tfs-2018"
-
-<a id="chart-test-plan-widget"></a> 
-##&nbsp;&nbsp;&nbsp;Chart for test plans 
-
-![Chart for test plans widget](_img/widget-catalog/chart-test-plan-widget.png)
-
-With this widget, you can create charts for test plans, test suites, test authoring status, and test execution status. 
-
 ----
 ::: moniker-end
 
@@ -560,7 +546,7 @@ Requires TFS 2015.1 or later version. For TFS 2015.2 or later versions, you can 
 
 ::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 <a name="team-members-widget"></a> 
-##&nbsp;&nbsp;&nbsp;Team members (team-scoped) 
+##&nbsp;&nbsp;&nbsp;Team members 
 
 ![Team members widget](_img/widget-team-members.png)
 
@@ -581,7 +567,7 @@ Requires TFS 2015.1 or later version.    
 ::: moniker range=">= tfs-2015 <= tfs-2017"
 
 <a id="team-room-widget"></a> 
-##&nbsp;&nbsp;&nbsp;Team room (team-scoped) 
+##&nbsp;&nbsp;&nbsp;Team room  
 
 ![Team room widget](_img/widget-team-room.png)
 

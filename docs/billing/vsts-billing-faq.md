@@ -1,16 +1,19 @@
 ---
 title: VSTS billing FAQ 
 description: VSTS is billed via Microsoft Azure. Review frequently asked questions.
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-setup
+ms.prod: devops
+ms.technology: devops-billing
 ms.assetid: 62d94b8a-256a-4347-905a-3393f5d8a13f
+ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
-ms.date: 3/22/2018
+author: chcomley
+ms.date: 03/22/2018
 ---
 [//]: # (monikerRange: 'vsts')
 
 # Visual Studio Team Services (VSTS) billing FAQ
+
 Make sure to review [VSTS pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services//) and the [VSTS billing overview](overview.md) to start.
 
 You have to set up billing when you need more than the **Free Tier** of resources in your VSTS account--5 VSTS users (Basic), 5 Package Management users, 

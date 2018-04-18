@@ -1,11 +1,13 @@
 ---
-title: READMes and Wiki index to content for VSTS & TFS
-description: Index to topics for sharing information via a README or the Wiki in VSTS or TFS    
-ms.technology: collaborate
-ms.prod: vs-devops-alm
+title: READMes and Wiki index to content 
+titleSuffix: VSTS & TFS
+description: Index to topics for sharing information via a README or the Wiki in Visual Studio Team Services & Team Foundation Server  
+ms.technology: devops-collab
+ms.prod: devops
+ms.topic: overview
 ms.assetid:  
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 10/18/2017
 monikerRange: '>= tfs-2015'
 ---
@@ -16,7 +18,7 @@ monikerRange: '>= tfs-2015'
 
 Repository README files and team project Wikis are great ways to share information with your team and stakeholders. 
 
-::: moniker range=">=tfs-2015"
+::: moniker range=">=tfs-2015 <= tfs-2018"
 
 > [!NOTE]  
 > **Feature availability:** The built-in wiki is available for TFS 2018 and later versions. To download TFS 2018, see the [TFS 2018 Release Notes](https://www.visualstudio.com/en-us/news/releasenotes/tfs2018-relnotes). 
@@ -43,7 +45,7 @@ Repository README files and team project Wikis are great ways to share informati
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015"
+::: moniker range=">= tfs-2015 <= tfs-2017"
   
 ## How-to Guides
 - [Manage README & Wiki permissions (security)](manage-readme-wiki-permissions.md)

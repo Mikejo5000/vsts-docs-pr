@@ -1,15 +1,16 @@
 ---
 title: Find or change your VSTS account location (region)
 description: Find or change your VSTS account location (region)
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-setup
+ms.prod: devops
+ms.technology: devops-accounts
 ms.assetid: cc4fd0d6-b24f-48ec-8b90-8e5f18e18d65
+ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
+author: chcomley
 ms.date: 03/28/2018
 monikerRange: 'vsts'
 ---
-
 
 # Find or change your VSTS account location (region)
 

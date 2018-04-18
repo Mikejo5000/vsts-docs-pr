@@ -1,12 +1,13 @@
 ---
 title: Create your first build and release | VSTS
 description: CI/CD novice? Create an automated build and release pipeline in VSTS and TFS
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
-ms.topic: get-started-article
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: quickstart
 ms.assetid: 038A5329-1B8F-46D9-A0C3-DA3FCFA43996
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.date: 12/20/2017
 monikerRange: 'vsts'
 ---
@@ -431,6 +432,9 @@ To learn more about build definition settings, see:
 ### How do I programmatically create a build definition?
 
 [REST API Reference: Create a build definition](../../integrate/index.md)
+
+> [!NOTE]
+> You can also manage builds and build definitions from the command line or scripts using the [VSTS CLI](https://docs.microsoft.com/en-us/cli/vsts/overview?view=vsts-cli-latest).
 
 
 <!-- ENDSECTION -->

@@ -2,11 +2,12 @@
 title: Share your code with Git from the command line | VSTS & TFS
 description: Share code in Git using the command line
 ms.assetid: 4b299dbf-3ca9-47af-bd6d-8c40bafac447
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git 
-ms.topic: get-started-article
+ms.prod: devops
+ms.technology: devops-code-git 
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: quickstart
 ms.date: 03/08/2018
 monikerRange: '>= tfs-2015'
 ---
@@ -19,6 +20,9 @@ monikerRange: '>= tfs-2015'
 This guide show you how to share your code in a VSTS Git repo using the command line.
 
 The instructions below use the default bash shell used on Linux and macOS, but the Git commands will work in any shell, including Git Bash from Git for Windows.
+
+> [!NOTE]
+> You can also create and get repos from the command line or scripts using the [VSTS CLI](https://docs.microsoft.com/en-us/cli/vsts/overview?view=vsts-cli-latest).
 
 ## Prerequisites
 

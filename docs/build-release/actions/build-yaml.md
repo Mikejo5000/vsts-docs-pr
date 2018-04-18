@@ -1,12 +1,14 @@
 ---
 title: CI Build in code using YAML
 description: Define your CI build process in YAML in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.topic: conceptual
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: 5A3A363E-C21F-4593-A145-B57492E9FEDC
 ms.manager: douge
 ms.author: alewis
-ms.date: 12/07/2017
+author: andyjlewis
+ms.date: 04/18/2018
 monikerRange: 'vsts'
 ---
 
@@ -119,7 +121,7 @@ steps:
   displayName: Greeting from macOS or Linux machine
  ```
 
-Queue the build on any of our hosted agent pools, including **Hosted VS 2017**, **Hosted Linux Preview** or **Hosted macOS Preview**. You'll get different kinds of greetings from each of these typs of agent.
+Queue the build on any of our hosted agent pools, including **Hosted VS 2017**, **Hosted Linux** or **Hosted macOS**. You'll get different kinds of greetings from each of these typs of agent.
 
 ## Look up tasks
 

@@ -2,11 +2,13 @@
 title: Review and merge code with pull requests | VSTS & TFS
 description:  Conduct a code review in a Git with VSTS or TFS, create a pull request.
 ms.assetid: 4C9DFD24-E894-454A-A080-DA511C90CA74
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git 
+ms.prod: devops
+ms.technology: devops-code-git 
 ms.manager: douge
 ms.author: sdanie
-ms.date: 03/14/2018
+author: steved0x
+ms.topic: conceptual
+ms.date: 04/03/2018
 monikerRange: '>= tfs-2013'
 ---
 
@@ -24,17 +26,15 @@ Reviewers can step through the proposed changes, leave comments, and vote to app
 
 New to pull requests? [Learn more](https://www.visualstudio.com/learn/git-pull-requests/) about how to get feedback with Git pull requests.
 
-> [!NOTE]
-> You can manage pull requests and other resources in VSTS and Team Foundation Server 2017 Update 2 or later from the command line with the **[VSTS CLI (Preview)](https://docs.microsoft.com/cli/vsts/overview?view=vsts-cli-latest)**.
-
 ## Create a new pull request
 
 Create a new pull request from:
 
-- Pushed feature branches to your Git repo 
-- The **Development** section in a linked work item
-- The **Pull Requests** tab in the **Code** view on the web
-- Team Explorer in Visual Studio     
+- [Pushed feature branches to your Git repo](#after-pushing-a-branch)
+- [The **Development** section in a linked work item](#from-a-linked-work-item)
+- [The **Pull Requests** tab in the **Code** view on the web](#from-the-code-view-on-the-web)
+- [Team Explorer in Visual Studio](#from-visual-studio) 
+- [Using the VSTS CLI (Preview)](#from-the-vsts-cli-preview)   
 
 
 ### After pushing a branch
@@ -86,6 +86,16 @@ Initiate pull requests directly from Visual Studio.
   You can also initiate pull requests from Visual Studio from the **Branches** view in Team Explorer by right-clicking the branch name and selecting **Create pull request** while connected to your VSTS Project.
 
     ![Pull Requests](_img/pull-requests/new-pr-from-branch.png)
+
+### From the VSTS CLI (Preview)
+
+You can now manage pull requests and other resources in VSTS and Team Foundation Server 2017 Update 2 or later from the command line with the **[VSTS CLI](https://docs.microsoft.com/cli/vsts/overview)**.
+
+For a list of commands to create and manage pull requests, see [Manage pull requests](https://docs.microsoft.com/cli/vsts/code/pr).
+
+For more information about working with the VSTS CLI, see [Get started with the VSTS CLI](https://docs.microsoft.com/cli/vsts/get-started).
+
+
 
 <a name="finish"></a>
 

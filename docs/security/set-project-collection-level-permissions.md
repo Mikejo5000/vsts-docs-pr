@@ -1,20 +1,18 @@
 ---
 title: Set project-level or collection-level permissions for VSTS & TFS
 description: How-to guide to set project-level permissions in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-admin
+ms.prod: devops
+ms.technology: devops-security
 ms.assetid: 
 ms.manager: douge
-ms.author: kaelli
-ms.topic: get-started-article
+ms.author: chcomley
+author: chcomley
+ms.topic: quickstart
 ms.date: 12/12/2017
 monikerRange: '>= tfs-2013'
 ---
 
-
-# Add administrators, set permissions at the project-level or project collection-level
-
-
+# Quickstart: Add administrators, set permissions at the project-level or project collection-level
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -45,11 +43,17 @@ For a description of each group and each permission, see [Permissions and groups
 
 ## Prerequisites
 
-* You must have a team project. If you don't have a team project yet, create one in [VSTS](../user-guide/sign-up-invite-teammates.md) or set one up in an [on-premises TFS](../accounts/create-team-project.md).
+::: moniker range="vsts"
+* You must be a member of a team project. If you don't have a team project yet, create one in [VSTS](../accounts/set-up-vs.md). If you haven't been added as a team member, [get added now](../accounts/add-account-users-assign-access-levels.md). 
+::: moniker-end
+::: moniker range=">= tfs-2013 <= tfs-2018"
+* You must be a member of a team project. If you don't have a team project yet, create one in an [on-premises TFS](../accounts/create-team-project.md). If you haven't been added as a team member, [get added now](../security/add-users-team-project.md). 
+::: moniker-end
 * To manage permissions or groups at the project level, you must be a member of the Project Administrators Group or have your **Edit project-level information** set to Allow. If you created the team project, you are automatically added as a member of this group. 
 * To manage permissions or groups at the collection or instance level, you must be a member of the Project Collection Administrators Group or have your **Edit instance-level information** set to Allow. If you created the account or collection, you are automatically added as a member of this group. 
 
 <a id="project-level" />
+
 ## Add a user or group to a security group
 
 As roles and responsibilities change, you might need to change the permission levels for individual members of a team project. The easiest way to do that is to add the user or a group of users to a pre-defined security group. 

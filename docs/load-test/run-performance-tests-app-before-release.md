@@ -1,16 +1,16 @@
 ---
 title: Load test your app before release
 description: Run load tests on your app before release with Visual Studio Team Services (VSTS), Cloud-based Load Testing, and Visual Studio
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-performance
-ms.topic: get-started-article
 ms.assetid: 2C83E7E1-93BE-44F9-A041-AC23963404D3
+ms.prod: devops
+ms.technology: devops-test
+ms.topic: tutorial
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/18/2018
-monikerRange: "vsts"
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: 'vsts'
 ---
-
 
 # Tutorial: Load test your app before release
 
@@ -45,6 +45,7 @@ actions in your app at the same time.
 
    If you don't see the template for the web performance and load test project type,
    ensure you have installed the required packages during Visual Studio setup.
+   You can re-run the installer by choosing **Get tools and features** on the Visual Studio **Tools** menu.
 
    ![Installing packages required for web performance and load testing](_img/run-performance-tests-app-before-release/install-tools.png)
 

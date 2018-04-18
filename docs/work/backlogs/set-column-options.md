@@ -1,13 +1,14 @@
 ---
 title: Add or remove columns, change column width, placement, or sort order on backlogs and query results  
 titleSuffix: VSTS & TFS
-ms.custom: Change column options
+ms.global_help.title: Change column options
 description: Show and sort on fields in a column for a backlog or query in Visual Studio Team Services or Team Foundation Server 
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 823CC1FD-74A9-4123-92E1-506A505DEC8D
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
 ms.date: 03/20/2018
 ---
 
@@ -29,12 +30,17 @@ Start by opening the **Column Options** dialog. Each user can set their own colu
 > Unlike a query result, you can't sort a backlog by a column. However, you can use the **Create Query** link on each backlog to create a query that you can sort on any field column you choose.
 
 
-::: moniker range="vsts || >= tfs-2018"
+::: moniker range=">= tfs-2018"
 
 In the Column options dialog, click **Add a column** to add a field that isn't shown. To change the order of the fields, drag-and-drop the field where you want it within the set of selected fields. And, to remove a field, click the ![delete icon](../_img/icons/delete_icon.png).
 
+::: moniker-end
+::: moniker range="tfs-2018"
+> [!NOTE]    
+> The following dialog is available from TFS 2018.2 and later versions. 
+::: moniker-end
+::: moniker range=">= tfs-2018"
 <img src="_img/set-column-options-s125.png" alt="Column options dialog, VSTS" style="border: 1px solid #C3C3C3;" /> 
-
 
 ::: moniker-end
 

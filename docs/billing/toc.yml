@@ -2,7 +2,7 @@
   href: index.md
 - name: Overview
   items:
-  - name: Billing overview
+  - name: Billing overview 
     href: overview.md
 - name: Quickstarts
   items:
@@ -18,11 +18,11 @@
     href: buy-load-testing-vs.md
 - name: Tutorials
   items:
-  - name: Change the Azure AD for your VSTS account
+  - name: Connect VSTS to Azure AD
     href: ../accounts/change-azure-active-directory-vsts-account.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
 - name: How-to guides
   items:
-  - name: Manage billing
+  - name: Manage billing 
     items:
     - name: Add backup billing manager
       href: add-backup-billing-managers.md
@@ -31,7 +31,7 @@
     - name: Change number of paid users
       href: reduce-cancel-paid-vsts-users.md
     - name: Buy TFS CALs or Test hub
-      href: buy-access-tfs-test-hub
+      href: buy-access-tfs-test-hub.md
     - name: Billing FAQ
       href: vsts-billing-faq.md
   - name: Manage Marketplace extensions
@@ -44,6 +44,8 @@
       href: ../marketplace/assign-paid-extensions.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
     - name: Uninstall or disable extensions
       href: ../marketplace/uninstall-disable-vsts-extensions.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
+    - name: Buy TFS CALs or Test hub  
+      href: buy-access-tfs-test-hub.md 
   - name: Guidance for Cloud Solution Providers
     items:
     - name: "CSPs: Set up your customer"
@@ -61,7 +63,11 @@
 - name: Reference
   items:
   - name: Permissions 
-    href: ../security/permissions.md
+    href: ../security/permissions.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
+  - name: About access levels
+    href: ../security/access-levels.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
+  - name: Default permissions & access
+    href: ../security/permissions-access.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
 - name: Resources
   items:
   - name: Account Management

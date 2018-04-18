@@ -1,21 +1,26 @@
 ---
 title: Set up billing for VSTS 
 description: Use an Azure subscription to pay for users, CI/CD concurrency, extensions, and cloud-based load testing for VSTS
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-setup
-ms.topic: quickstart
+ms.prod: devops
+ms.technology: devops-billing
 ms.assetid: 87b994d6-2a92-46e5-b667-afe4eb198e25
+ms.topic: quickstart
 ms.manager: douge
 ms.author: chcomley
-ms.date: 3/30/2018
+author: chcomley
+ms.date: 04/06/2018
 ---
 [//]: # (monikerRange: 'vsts')
 
-#  Set up billing for your VSTS account
+# Quickstart: Set up billing for your VSTS account
 
 **VSTS**
 
+In this quickstart, you will learn how to set up billing via the Azure portal.
+
 During your first purchase for your VSTS account, we'll prompt you to select the Azure subscription to use for billing. All VSTS services are billed via Azure, and you are not required to use any other Azure services.
+
+If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/en-us/free/?WT.mc_id=A261C142F) before you begin.
 
 ## Prerequisites
 
@@ -49,7 +54,7 @@ If you'd like to set up billing for your VSTS account prior to making a purchase
     > [!div class="mx-imgBorder"]
 ![Choose Link button over middle panel](_img/set-up-billing/azure-portal-select-link.png)
 
-5. Select your Azure subscription and then choose **Link**. 
+5. Select your Azure subscription and then choose **Link**.
 
    > [!div class="mx-imgBorder"]
 ![Select an Azure subscription](_img/set-up-billing/azure-portal-select-subscription.png)
@@ -59,9 +64,13 @@ If you'd like to set up billing for your VSTS account prior to making a purchase
 > [!div class="mx-imgBorder"]
 ![Your VSTS account is now linked to your Azure subscription](_img/set-up-billing/azure-portal-linked-to-vsts-account.png)
 
-## Related articles
+## Next steps
 
+* [Pay for users](buy-basic-access-add-users.md)
 * [Add a backup billing manager](add-backup-billing-managers.md)
 * [Change the Azure subscription for billing](change-azure-subscription.md)
+
+## Related articles
+
 * [VSTS pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
 * [VSTS billing support](https://www.visualstudio.com/team-services/support/)

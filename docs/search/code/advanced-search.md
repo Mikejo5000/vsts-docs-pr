@@ -2,14 +2,15 @@
 title: Advanced search options in Microsoft Code Search in VS VSTS and TFS
 description: Advanced options for Code Search in VSTS and Team Foundation Server
 ms.assetid: 936AA33C-4AEF-461E-B49B-C98A59098282
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-search
+ms.prod: devops
+ms.technology: devops-collab
+ms.topic: conceptual
 ms.manager: douge
-ms.author: douge
-ms.date: 01/18/2018
+ms.author: ahomer
+author: alexhomer1
+ms.date: 04/09/2018
 monikerRange: '>= tfs-2017'
 ---
-
 
 # How To: Use Code Search
 

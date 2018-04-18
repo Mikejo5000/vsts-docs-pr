@@ -22,6 +22,8 @@
         href: apps/cd/azure/azure-devops-project-python.md
       - name: PHP
         href: apps/cd/azure/azure-devops-project-php.md
+      - name: Ruby
+        href: apps/cd/azure/azure-devops-project-ruby.md
     - name: Build your app
       items:
       - name: Android
@@ -84,8 +86,12 @@
     href: actions/azure-devops-project-github.md
   - name: Azure DevOps Project for VMs
     href: actions/azure-devops-project-vms.md
+  - name: Azure DevOps Project with SQL Database
+    href: actions/azure-devops-project-sqldb.md
   - name: Jenkins CI for VSTS Azure CD
-    href: actions/integrate-jenkins-vsts-cicd.md  
+    href: actions/integrate-jenkins-vsts-cicd.md
+  - name: Jenkins CI for VSTS Azure AKS
+    href: actions/integrate-jenkins-vsts-aks.md
   - name: Test your app
     href: test/example-continuous-testing.md
 - name: Concepts

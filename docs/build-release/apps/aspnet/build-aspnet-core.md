@@ -1,13 +1,14 @@
 ---
 title: CI build for an ASP.NET Core app
 description: Define a continuous integration (CI) build process for your an ASP.NET Core app in VSTS or Microsoft Team Foundation Server (TFS)
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: 95ACB249-0598-4E82-B155-26881A5AA0AA
 ms.manager: douge
 ms.author: alewis
-ms.date: 12/20/2017
-ms.topic: get-started-article
+author: andyjlewis
+ms.date: 04/18/2018
+ms.topic: quickstart
 monikerRange: '>= tfs-2017'
 ---
 
@@ -27,6 +28,8 @@ As you walk through this quickstart, we'll ask you to choose:
 * For continuous deployment, what is your target: Azure web app or IIS server in a Windows VM, a Linux VM, or a Docker container.
 
 As you choose from these options in the sections below, this topic will adapt to your choices.
+
+>[!VIDEO https://channel9.msdn.com/Shows/Docs/Build-your-ASPNET-Core-app/player]
 
 ## Prerequisites
 
@@ -201,8 +204,10 @@ All the tasks you need were automatically added to the build definition by the t
 ::: moniker range="vsts"
 
 ```yaml
-steps:
+queue: 
+  name: Hosted Linux Preview
 
+steps:
 - task: dotNetCoreCLI@1
   inputs:
     command: restore
@@ -266,8 +271,10 @@ This change causes the build to publish a set of uncompressed files and folders 
 ::: moniker range="vsts"
 
 ```yaml
-steps:
+queue: 
+  name: Hosted Linux Preview
 
+steps:
 - task: dotNetCoreCLI@1
   inputs:
     command: restore
@@ -315,8 +322,6 @@ YAML builds are not available in TFS.
 
 # [Container](#tab/deploy-container/web)
 
-To deploy to a container service (such as Azure web apps for containers, or a Kubernetes cluster):
-
 1. Select **Tasks**.
 
 1. Select the **.NET Core** publish task, and then 
@@ -331,16 +336,18 @@ To deploy to a container service (such as Azure web apps for containers, or a Ku
 
 1. Select the **Publish build artifacts** task, and then disable or remove it.
 
-> **Why do this?** 
-You don't need artifacts to deploy to a container.
+ > **Why do this?** 
+ You will package and publish the web application as a container. There is no need to publish the web application files separately as an artifact to VSTS or TFS.
 
 # [Container](#tab/deploy-container/yaml)
 
 ::: moniker range="vsts"
 
 ```yaml
-steps:
+queue: 
+  name: Hosted Linux Preview
 
+steps:
 - task: dotNetCoreCLI@1
   inputs:
     command: restore
@@ -389,9 +396,9 @@ You're nearly ready to go. Just a few more steps to complete your CI build proce
 
 1. For the **Agent queue**:
 
- * **VSTS:** Select _Hosted VS2017_. This is how you can use our pool of agents that have the software you need to build your app.
+ * **VSTS:** Select _Hosted Linux_. This is how you can use our pool of agents that have the software you need to build your app.
 
- * **TFS:** Select a queue that includes a [Windows build agent](../../actions/agents/v2-windows.md).
+ * **TFS:** Select a queue that includes a [Linux build agent](../../actions/agents/v2-linux.md) on a machine that has Docker and is configured to run containers.
 
 1. Select **Get sources** and then:
 
@@ -431,7 +438,7 @@ YAML builds are not available in TFS.
 
 1. For the **Agent queue**:
 
- * **VSTS:** Select _Hosted VS2017_. This is how you can use our pool of agents that have the software you need to build your app.
+ * **VSTS:** Select _Hosted Linux_. This is how you can use our pool of agents that have the software you need to build your app.
 
  * **TFS:** Select a queue that includes a [Windows build agent](../../actions/agents/v2-windows.md).
 
@@ -468,7 +475,7 @@ In VSTS:
 
 1. Select **Process**.
 
-1. For the **Agent queue** select _Hosted VS2017_. This is how you can use our pool of agents that have the software you need to build your app.
+1. For the **Agent queue** select _Hosted Linux_. This is how you can use our pool of agents that have the software you need to build your app.
 
 1. For the **Yaml path**, select the **.vsts-ci.yml** file in the root of your repo.
 

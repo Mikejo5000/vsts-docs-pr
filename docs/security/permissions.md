@@ -2,33 +2,33 @@
 title: Permissions and groups reference
 titleSuffix: VSTS & TFS
 description: Comprehensive reference of built-in (default) security groups, and permissions defined in Visual Studio Team Services and Team Foundation Server  
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-admin
+ms.prod: devops
+ms.technology: devops-security
 ms.assetid: 169E817F-B297-4461-B359-27C78D4A8A7D
 toc: show
+ms.topic: reference
 ms.manager: douge
-ms.author: kaelli
-ms.date: 02/12/18
-monikerRange: 'vsts || >= tfs-2013 <= tfs-2018'
+ms.author: chcomley
+author: chcomley
+ms.date: 02/12/2018
+monikerRange: '>= tfs-2013'
 ---
-
-
 # Permissions and groups in VSTS and TFS
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-This topic provides descriptions for each built-in group and permission. To learn how to add users to a group or set a specific permission that you can manage through the web portal, see the following resources:  
+This topic provides a comprehensive reference for each built-in group and permission. To learn how to add users to a group or set a specific permission that you can manage through the web portal, see the following resources:  
 
 ::: moniker range="vsts"
 
 > [!div class="mx-tdBreakAll"]  
 > |Users and groups  |DevOps permissions  |Agile/Work tracking permissions  |  
 > |-------------|----------|---------|   
-> |- [Add users to an administrator role](set-project-collection-level-permissions.md)<br/>- [Add users to an account](../accounts/add-team-members-vs.md)<br/>- [Add users to a team project or a team](add-users-team-project.md) <br/>- [Make a user a team admin](../work/scale/add-team-administrator.md)<br/><br/>**Miscellaneous**<hr/>- [README & Wiki](../collaborate/manage-readme-wiki-permissions.md) |- [Git branch](../git/branch-permissions.md)<br/>- [Git repositories](set-git-tfvc-repository-permissions.md)<br/>- [TFVC](set-git-tfvc-repository-permissions.md)<br/>- [Builds](../build-release/set-permissions.md)<br/>- [Releases](../build-release/set-permissions.md)<br/>- [Approvals and approvers](../build-release/concepts/definitions/release/approvals/index.md)<br/>- [Task groups](../build-release/set-permissions.md#task-group)<br/>- [Variable groups](../build-release/set-permissions.md#variable-group)<br/>- [Role-based resources](../build-release/set-permissions.md) | - [Area and iteration paths](../security/set-permissions-access-work-tracking.md)<br/>- [Work item query and folder](../work/track/set-query-permissions.md)<br/>- [Plan permissions](set-permissions-access-work-tracking.md#plan-permissions)<br/> - [Dashboard permissions](../report/dashboards/dashboard-permissions.md#set-permissions)<br/> - [Analytics)](../report/analytics/analytics-security.md)|    
+> |- [Add users to an administrator role](set-project-collection-level-permissions.md)<br/>- [Add users to an account](../accounts/add-team-members-vs.md)<br/>- [Add users to a team project or a team](add-users-team-project.md) <br/>- [Make a user a team admin](../work/scale/add-team-administrator.md)<br/><br/>**Miscellaneous**<hr/>- [README & Wiki](../collaborate/manage-readme-wiki-permissions.md) |- [Git branch](../git/branch-permissions.md)<br/>- [Git repositories](set-git-tfvc-repository-permissions.md)<br/>- [TFVC](set-git-tfvc-repository-permissions.md)<br/>- [Builds](../build-release/set-permissions.md)<br/>- [Releases](../build-release/set-permissions.md)<br/>- [Approvals and approvers](../build-release/concepts/definitions/release/approvals/index.md)<br/>- [Task groups](../build-release/set-permissions.md#task-group)<br/>- [Variable groups](../build-release/set-permissions.md#variable-group)<br/>- [Role-based resources](../build-release/set-permissions.md) | - [Area and iteration paths](../security/set-permissions-access-work-tracking.md)<br/>- [Work item query and folder](../work/track/set-query-permissions.md)<br/>- [Plan permissions](set-permissions-access-work-tracking.md#plan-permissions)<br/> - [Dashboard permissions](../report/dashboards/dashboard-permissions.md#set-permissions)<br/> - [Analytics service](../report/analytics/analytics-security.md)<br/> - [Customize process](set-permissions-access-work-tracking.md#process-permissions) |    
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013"
+::: moniker range=">= tfs-2013 <= tfs-2018"
 
 > [!div class="mx-tdBreakAll"]  
 > |Users and groups  |DevOps permissions  |Agile/Work tracking permissions  |  
@@ -70,7 +70,7 @@ SharePoint Web Application Services
 
 <a name="server"></a>
 
-::: moniker range=">= tfs-2013"
+::: moniker range=">= tfs-2013 <= tfs-2018"
 
 ##&nbsp;&nbsp;&nbsp;Server-level groups 
 
@@ -426,7 +426,7 @@ The system manages permissions at different levels&mdash;server, collection, pro
 <a id="server">  </a>
 <a id="server-permissions">  </a>
 
-::: moniker range=">= tfs-2013"
+::: moniker range=">= tfs-2013 <= tfs-2018"
 
 ##&nbsp;&nbsp;&nbsp;Server-level 
 
@@ -1001,7 +1001,7 @@ Rename Repository
 > These permissions have changed in TFS 2017 Update 1 and VSTS.
 > If you are using an earlier version of TFS, see the [previous list of permissions](git-permissions-before-2017.md).
 
-You manage the security of each [Git repository](set-git-tfvc-repository-permissions.md) or [branch](../git/branch-permissions.md) from the web portal or using the [TFSSecurity command-line tool](../tfs-server/command-line/tfssecurity-cmd.md#git-repo-permissions). Project Administrators are granted most of these permissions (which appear only for a team project that's been configured with a Git repository). You can manage these permissions for all Git repositories, or for a specific Git repo.
+You manage the security of each [Git repository](set-git-tfvc-repository-permissions.md) or [branch](../git/branch-permissions.md) from the web portal, the [TF command line tool](../tfvc/git-permission-command.md), or using the [TFSSecurity command-line tool](../tfs-server/command-line/tfssecurity-cmd.md#git-repo-permissions). Project Administrators are granted most of these permissions (which appear only for a team project that's been configured with a Git repository). You can manage these permissions for all Git repositories, or for a specific Git repo.
 
 <img src="_img/permissions/git-repo-permissions-vsts.png" style="border: 1px solid #C3C3C3;" />
 
@@ -1584,6 +1584,41 @@ You manage plan permissions through the [web portal](set-permissions-access-work
 </tbody>
 </table>
 
+::: moniker-end
+
+<a id="inherited-process">  </a>
+
+::: moniker range="vsts"
+
+
+##&nbsp;&nbsp;&nbsp;Inherited process (object-level)   
+You can manage the permissions for each inherited process that you create  through the [web portal](set-permissions-access-work-tracking.md#process-permissions). You manage permissions for each process through it's Security dialog. Project Collection Administors are granted all permissions to create, edit, and manage plans. Valid users are granted View (read-only) permissions. 
+
+
+<table valign="top" width="100%">
+<tbody valign="top">
+	<tr>
+		<th width="30%">Permission</th>
+		<th width="70%">Description</th>
+	</tr>
+	<tr>
+		<td id="admin-process-permission">Administer process permissions</td>
+		<td>Can set or change the permissions for an inherited process.  </td>
+	</tr>
+	<tr>
+		<td id="create-process-permission">Create process</td>
+		<td>Can create an inherited process from a system process, or copy an inherited process.   </td>
+	</tr>
+	<tr>
+		<td id="delete-process-permission">Delete process</td>
+		<td>Can delete the inherited process.  </td>
+	</tr>
+	<tr>
+		<td id="edit-process-permission">Edit process</td>
+		<td>Can modify the inherited process.  </td>
+	</tr>
+</tbody>
+</table>
 ::: moniker-end
 
 <a id="tags">  </a>

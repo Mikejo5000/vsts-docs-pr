@@ -1,11 +1,13 @@
 ---
-title: Keyboard shortcuts for VSTS, TFS, and Team Explorer
+title: Keyboard shortcuts
+titleSuffix: VSTS & TFS   
 description: Keyboard shortcuts for the VSTS and TFS web portal, and Team Explorer  
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-overview
+ms.prod: devops
+ms.technology: devops-collab
+ms.topic: reference
 ms.assetid:  
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 01/18/2017
 monikerRange: '>= tfs-2013'
 ---
@@ -18,16 +20,10 @@ monikerRange: '>= tfs-2013'
 
 You can use the keyboard shortcuts listed in this topic when you work within Visual Studio Team Services (VSTS), the web portal for Team Foundation Server (TFS), or Team Explorer. In addition to these shortcuts, you can [assign your own shortcuts in Visual Studio](https://msdn.microsoft.com/library/5zwses53.aspx) from the **Tools/Options/Environment/Keyboard** page.
 
->[!NOTE]  
-><b>Feature availability: </b>Some keyboard shortcuts are only available from the cloud service or from an on-premises deployment. These are annotated as follows:
-- **VSTS** - VSTS (cloud service)  
-- **TFS** - Team Foundation Server (on-premises)  
 
+## Web portal
 
-
-##Web portal
-
-You can use these keyboard shortcuts when working in the web portal of VSTS or TFS.  
+You can use these keyboard shortcuts when working in the web portal for VSTS or TFS.  
 
 <table width="70%">
 <tbody valign="top">
@@ -112,9 +108,9 @@ Hub-specific shortcuts only work when in a specific hub. For example, type **g c
 
 ::: moniker range=">= tfs-2017"
 
-# Work hub, plans page
+## Work hub, Plans page
 
-[!INCLUDE [temp](../_shared/keyboard-shortcuts/delivery-plan-shortcuts.md)]   
+[!INCLUDE [temp](../_shared/keyboard-shortcuts/delivery-plan-shortcuts.md)]  Â 
 
 ::: moniker-end
 
@@ -155,6 +151,7 @@ Use these shortcuts when working in Team Explorer.
 **Ctrl+0,r**&nbsp;&nbsp;&nbsp;Open [Reports](../report/sql-reports/reporting-services-reports.md)  
 **Ctrl+0,s**&nbsp;&nbsp;&nbsp;Open Settings  
 **Ctrl+0,w**&nbsp;&nbsp;&nbsp;Open Work items    
+**Ctrl+0,y**&nbsp;&nbsp;&nbsp;Open [Synchronization (Git)](../git/gitquickstart.md)  
 
 <br/>
 **Ctrl+'**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to search box  
@@ -190,7 +187,7 @@ Use these shortcuts when working in Team Explorer.
 
 You can use query results shortcuts whenever you have a list of work items, such as the query results view or a list of linked work items within a work item form.
 
-[!INCLUDE [temp](../_shared/keyboard-shortcuts/queries-te-shortcuts.md)]   
+[!INCLUDE [temp](../_shared/keyboard-shortcuts/queries-te-shortcuts.md)]  Â 
 
 
 <!---

@@ -1,13 +1,14 @@
 ---
-title: Feature overview for VSTS and TFS
-description: Comprehensive index to all features provided by Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) 
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-overview  
+title: Feature overview 
+titleSuffix: VSTS & TFS 
+description: Comprehensive index to all features in Visual Studio Team Services & Team Foundation Server 
+ms.prod: devops
+ms.technology: devops-new-user  
 ms.article: get-started-article
 ms.assetid: 330E6DA5-3DC9-432D-B3CA-BF999F151733
 ms.manager: douge
 ms.author: kaelli
-ms.topic: get-started-article 
+ms.topic: reference
 ms.date: 10/09/2017
 monikerRange: '>= tfs-2013'
 ---
@@ -1469,7 +1470,7 @@ build-release\tasks\build\_img
 
 
 <p><b>Available data</b></p>
-<p>The [Power BI data model](../report/powerbi/data-connector-available-data.md) currently supports building reports that track status and trends of work items.</p>
+<p>The [Power BI Data Connector](../report/powerbi/data-connector-connect.md) supports building reports to track status and trend work items.</p>
 
 </td>
 

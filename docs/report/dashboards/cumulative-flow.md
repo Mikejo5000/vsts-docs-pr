@@ -2,11 +2,11 @@
 title: Cumulative flow charts
 titleSuffix: VSTS & TFS 
 description: Configure and view cumulative flow diagrams to improve your Kanban processes 
-ms.prod: vs-devops-alm  
-ms.technology: vs-devops-reporting  
+ms.prod: devops  
+ms.technology: devops-analytics  
 ms.assetid: 9A16EDA7-6249-49E1-84A3-FE7550028E9F  
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.topic: tutorial
 ms.date: 03/23/2018  
 ---
@@ -15,7 +15,7 @@ ms.date: 03/23/2018
 
 [!INCLUDE [temp](../_shared/vsts-tfs-header-17-15.md)] 
 
-::: moniker range=">= tfs-2013" 
+::: moniker range=">= tfs-2013 <= tfs-2018" 
 
 You use cumulative flow diagrams (CFD) to monitor the flow of work through a system. Use this topic to learn how to: 
 

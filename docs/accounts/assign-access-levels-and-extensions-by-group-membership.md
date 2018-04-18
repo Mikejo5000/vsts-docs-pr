@@ -1,11 +1,12 @@
 ---
 title: Assign access levels and extensions to users by group membership
 description: Assign access levels and extensions to users by group membership
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-setup
-ms.assetid:
+ms.prod: devops
+ms.technology: devops-accounts
+ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
+author: chcomley
 ms.date: 03/20/2018
 monikerRange: 'vsts'
 ---
