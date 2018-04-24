@@ -44,7 +44,7 @@ The process to have a public VSTS listing for an integration or extension is the
 
 Once you are ready to publish a public VSTS listing to the Marketplace, follow these steps:
 
-1. Log in into http://marketplace.visualstudio.com/manage/publishers with the account with which you publish and manage VSTS listings in Marketplace
+1. Log in to http://marketplace.visualstudio.com/manage/publishers with the account with which you publish and manage VSTS listings in Marketplace
 2. Select the publisher and through the **Details tab** apply for publisher verification. You will find the appropriate section towards the bottom of the tab.
 3. Expect Microsoft to approve or respond within 3 business days to your verification request.
 
@@ -67,7 +67,7 @@ Through Marketplace Certified, we want to showcase publishers who have met the b
 2. Publisher profile
 
     Through publisher profile, you have a way to showcase all of your extensions in one place along with key publisher-related information. To provide the information which shows up in the profile:
-    * Log in into http://marketplace.visualstudio.com/manage/publishers with the account with which you publish and manage VSTS listings in Marketplace
+    * Log in to http://marketplace.visualstudio.com/manage/publishers with the account with which you publish and manage VSTS listings in Marketplace
     * Select the publisher and fill in the **About you** section under the **Details** tab. Below is an example of the About you section for Microsoft (the publisher):       
       <img src="_img/microsoft-about-you-section.png" alt="Microsoft Details" width="400" />
     * Save your changes and use the 'View profile' action on the top of the page to see how your profile page will appear to the consumers. You may use this profile page to announce or advertise your extensions.
@@ -77,7 +77,7 @@ Through Marketplace Certified, we want to showcase publishers who have met the b
 
 
 You can apply to be a Marketplace Certified publisher from the manage page in Marketplace.
-* Login into http://marketplace.visualstudio.com/manage/publishers with the account with which you publish and manage VSTS listings in Marketplace
+* Log in to http://marketplace.visualstudio.com/manage/publishers with the account with which you publish and manage VSTS listings in Marketplace
 * Select the publisher and visit its **Certification** tab. Note: you needs to have at least 1 public VSTS/TFS extension for the tab to appear. If you meet the criteria, if will present you with an option to apply for certification
 * After applying, our Marketplace team will respond within 5-10 business days
 
