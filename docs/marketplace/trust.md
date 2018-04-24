@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2015'
 
 ## Protective Scans
 As a Marketplace user, you can expect to avoid malicious software (malware) when you acquire an extension from Visual Studio Marketplace. To ensure this, we run a comprehensive virus scan on each extension package we receive. This is performed for each new extension and for each extension update. Until the scan is all clear, we do **not** publish the extension in Marketplace for public usage.
-> Stated virus scan is a publish time check and is not run during an extension's execution.
+> Stated virus scan is run at extension publish only and not during extension's execution.
 
 We also perform a content scan for each extension in Marketplace. This is performed for each new extension and for each extension update. We avoid publication of inapproprate or offensive content in extensions through the content scan.
 
