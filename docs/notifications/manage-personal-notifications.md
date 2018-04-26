@@ -30,18 +30,37 @@ Use this topic to learn how to:
 > * Add a custom subscription      
 > * Unsubscribe or opt out of a team or project subscription   
 
-
-## View your personal notifications 
+## View your subscriptions
 
 From the web portal, click the icon with your initials or picture icon, and select **Notification settings** from the drop-down menu. 
 
 <img src="_img/unsubscribe-open-notification-settings.png" alt="Open personal notification settings" style="border: 2px solid #C3C3C3;" />
 
-This view shows all subscriptions that you have created or that have been created by an administrator. Subscriptions let you control what you are notified about. Those notifications you're subscribed to are indicated with the the State as **On**. 
+This view shows all subscriptions that you have created for yourself, have been created by an administrator of a team or group you are a member of, or are built-in and provided with the product. The subscriptions you're subscribed to are indicated with the the State as **On**. 
 
 <img src="_img/unsubscribe-personal-notifications.png" alt="Personal notification subscriptions" style="border: 2px solid #C3C3C3;" />
 
-A subscription can be just for you, or if you are a team admin, can be shared by everyone in the team. 
+A subscription can be just for you (these are referred to as personal subscriptions), for a team, or built into the product and available to all users. Different options will be available for managing these subscriptions based on the type of subscription and your permissions.
+
+## Unsubscribe from a built-in subscription
+
+Built-in subscriptions are provided out of the box and are genearlly 
+
+
+You can choose to not receive notifications for built-in and certain team subscriptions by unsubscribing from those subscription. To unsubscribe, slide the State **On/Off** toggle to the Off position.
+ 
+For example, to unsubscribe from the built-in subscription that notifies you about completed builds: 
+
+<img src="_img/unsubscribe-from-build-completes.png" alt="Unsubscribe from Build completes subscription" style="border: 2px solid #C3C3C3;" />
+
+> [!NOTE]   
+> Unsubscribing from a built-in subscription doesn't guarantee that you will stop receiving notifications for this type of change. There may be custom subscriptions (personal or team) that still generate notifications.
+
+>[!NOTE]  
+> If you are a team admin 
+
+### Team subscriptions
+
 
 ## Add a custom subscription
 
@@ -69,18 +88,7 @@ With custom personal subscriptions, you can define precise criteria for the even
 	<img src="_img/manage-personal-notifications-subscription-added.png" alt="New subscription added" style="border: 2px solid #C3C3C3;" />
 
 
-## Unsubscribe or opt out of a team or OOB subscription
 
-You can choose to not receive notifications for certain team subscriptions by opt'ing out of the subscription.
-
-To unsubscribe from any notification, even one that you've defined, slide the State **On/Off** indicator to the Off position. 
- 
-For example, here we turn off the Build completes subscription.   
-
-<img src="_img/unsubscribe-from-build-completes.png" alt="Unsubscribe from Build completes subscription" style="border: 2px solid #C3C3C3;" />
-
->[!NOTE]  
->Whether you are an administrator or not, toggling a shared team subscription from your notification settings only impacts you and not other team members.
 
 
 

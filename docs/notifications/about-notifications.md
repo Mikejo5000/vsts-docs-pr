@@ -19,16 +19,20 @@ monikerRange: '>= tfs-2017'
 
 Notifications help you and your team stay informed about activity occuring within your Visual Studio Team Services (VSTS) or Team Foundation Server (TFS) team projects. With notifications, you are notified when changes occur to work items, code reviews, pull requests, source control files, and builds, you can be notified via email. For example, you can get notified whenever a bug that you opened is resolved or a work item is assigned to you. 
 
-You receive notifications based on rules or subscriptions. Subscriptions arise from these areas: 
-- Out of the box or default subscriptions
-- Ones that an administrator creates for a team or group that you belong to
-- Ones that you create for yourself
+You receive notifications because of subscriptions. A subscription defines what types of notifications should be sent and the recipients of those notifications. There are differnt types of subscriptions: 
+
+- **Built-in**: subscriptions provided by the product
+- **Team**: subscriptions created by an administrator of a team or group you are a member of
+- **Personal**: subscriptions created by you
+
+> [!NOTE]   
+> Built-in subscriptions are also referred to as default subscriptions or out-of-the-box (OOB) subscriptions. These subscriptions cannot be modified or deleted.
 
 You can manage your notifications, which you access from your account menu. Other notifications are managed by an administrator at these different levels: 
 
-- Team notifications, managed by a team administrator
-- Project notifications, manage by a member of the Project Administrators group
-- Account/collection-level notifications, managed by a member of the Project collection Administartors group
+- Team subscriptions are managed by a team administrator
+- Project subscriptions are managed by a member of the Project Administrators group, or delegate
+- Account/collection subscriptions are managed by a member of the Project collection Administrators group, or delegate
 
 ## Preferred email address
 
