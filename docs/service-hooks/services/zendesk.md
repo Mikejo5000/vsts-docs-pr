@@ -1,11 +1,13 @@
 ---
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-collab
+ms.topic: conceptual
 title: Zendesk with VSTS
 description: Use Zendesk with your VSTS account
 ms.assetid: 7dd649d2-152f-4894-955d-dd42ac56d81a
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 02/08/2017
 ---
 
@@ -115,6 +117,10 @@ and only those comments will be reflected back to Zendesk.
 7. Configure the action that Zendesk will take in response to that event. This is where you provide the Zendesk access token.
 
    <img alt="Configure action dialog box" src="./_img/zendesk/configure-action.png" style="border: 1px solid #CCCCCC" />
+
+
+> [!NOTE]    
+	The Zendesk documentation states to append the User name with "/token". Do NOT include this on the User name as the integration already accounts for this.
 
 Now when you comment on the work item, a private comment will be added to the Zendesk ticket.
 

@@ -2,10 +2,10 @@
 title: VSTS Features Timeline
 author: alexcnichols
 ms.author: alexn
-ms.date: 4/3/2018
+ms.date: 4/16/2018
 ms.topic: article
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-articles
+ms.prod: devops
+ms.technology: vsts-release-notes
 ms.manager: douge
 description: VSTS feature updates roadmap, release notes, release timeline, and TFS server build numbers
 hide_comments: true
@@ -36,12 +36,10 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 |Hosted build images – Ability to use latest or previous version of image|Build|N/A|
 |Release Management orchestration improvements – Tag based triggers|Release|2019|
 |[Agent-based deployment in Release Management](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/03/deployment-groups/) – Sharing of VMs|Release|2019|
-|[DevOps Projects](https://blogs.msdn.microsoft.com/devops/2017/11/15/azure-devops-project/) – Language support for Go and Ruby|Release|N/A|
 |Release traceability – Pull request integration|Release|2019|
 |Deployment Groups auto triggering a release for all new Azure VMs|Release|TBD|
 |Updated landing pages for Release|Release|2019|
 |Canvas-based Release Summary views to track progress of releases|Release|2019|
-|Package Management – Retention policies|Package|2018.2|
 |Package Management – Repo, Build provenance information for a package|Package|2019|
 |Package Management – Upstreams sources for VSTS feeds across accounts with the same Azure Active Directory|Package|2019|
 |Package Management – Package consumption metrics|Package|2019|
@@ -96,7 +94,25 @@ Versions in the “Server” column are linked to the appropriate download locat
     </thead>
     <tbody>
         <tr>
-            <td rowspan="13">[3 Apr 2018](2018/apr-03-vsts.md)</td>
+            <td rowspan="15">[16 Apr 2018](2018/apr-16-vsts.md)</td>
+            <td>Find phrases and code with special characters faster</td><td style="background:rgb(232, 232, 232);">*2019*</td>
+        </tr>
+        <tr><td>Query work in the Area Paths of a Team with the new @TeamAreas macro</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Trigger CI builds from YAML</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Continuously deploy to Azure Database for MySQL</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Streamline deployment to Kubernetes using Helm</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Deploy Ruby on Rails applications</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Configure Go and Ruby applications using Azure DevOps Projects</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
+        <tr><td>Continuously deploy builds tagged by post-build processing</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Filter branches for GitHub Enterprise or external Git artifacts</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Subscribe to package update notifications</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Use upstream NuGet packages from elsewhere in VSTS</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Enable nuget.org upstream sources in more feeds</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Quickly link to other wiki pages using suggestions</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Filter search results by Wiki name</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Move a VSTS account between Azure subscription or resource group</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
+        <tr>
+            <td rowspan="12">[3 Apr 2018](2018/apr-03-vsts.md)</td>
             <td>Quickly describe pull requests using commit messages</td><td style="background:rgb(232, 232, 232);">*2019*</td>
         </tr>
         <tr><td>Perform TFVC commands right from Windows Explorer</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
@@ -108,7 +124,6 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr><td>Maintain feed query speed with retention policies</td><td style="background:rgb(231, 179, 249);">*2018.2*</td></tr>
         <tr><td>Publish markdown files from a Git repository as a Wiki</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
         <tr><td>Retain special characters in Wiki page titles</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
-        <tr><td>Quickly link to other wiki pages using suggestions</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
         <tr><td>Extend Wiki using REST APIs</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
         <tr><td>Integrate Power BI with VSTS Analytics using views</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
         <tr>
@@ -117,8 +132,8 @@ Versions in the “Server” column are linked to the appropriate download locat
             <td style="background:rgb(231, 179, 249);">*2018.2*</td>
         </tr>
         <tr><td>Focus on important work using the Work Items hub</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
-        <tr><td>Query work across the iteration schedule with +/- @CurrentIteration</td><td style="background:rgb(231, 179, 249);">*2018.2*</td></tr>
-        <tr><td>Clarify query iteration schedules with the @CurrentIteration Team parameter</td><td style="background:rgb(231, 179, 249);">*2018.2*</td></tr>
+        <tr><td>Query work across the iteration schedule with +/- @CurrentIteration</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Clarify query iteration schedules with the @CurrentIteration Team parameter</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
         <tr><td>Improve release times by partially downloading artifacts</td><td style="background:rgb(231, 179, 249);">*2018.2*</td></tr>
         <tr><td>Retain more control of your app by deploying your Azure DevOps Project to a Virtual machine</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
         <tr><td>Improve code quality with the latest extensions from SonarSource</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>

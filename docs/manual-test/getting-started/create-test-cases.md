@@ -1,16 +1,16 @@
 ---
 title: Create manual tests - VSTS and Team Foundation Server
 description: Create manual tests in VSTS and TFS to make sure your deliverables meet users' needs
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-manual
 ms.assetid: C3C10A82-C7F2-4AB6-9CED-B43DAF722800
-ms.topic: get-started-article
+ms.prod: devops
+ms.technology: devops-test
+ms.topic: quickstart
 ms.manager: douge
 ms.author: ahomer
-ms.date: 08/14/2016
-monikerRange: ">= tfs-2015"
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2015'
 ---
-
 
 # Create manual test cases
 
@@ -24,7 +24,7 @@ the tests.
 
 [!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
 
-> **Note**: Stakeholders cannot create or manage test cases. You must have at least Basic access.
+**Note**: Stakeholders cannot create or manage test cases. You must have at least Basic access.
 See [Default manual testing permissions and access](../manual-test-permissions.md).
 
 <a name="createcase"></a>

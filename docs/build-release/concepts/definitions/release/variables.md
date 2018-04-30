@@ -2,14 +2,15 @@
 title: Variables in Release Management
 description: Understand variables in Microsoft Release Management for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.assetid: 864FEB87-FE29-446D-804E-AD6ABDEA82C3
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/19/2018
-monikerRange: ">= tfs-2015"
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2015'
 ---
-
 
 # Variables in Release Management
 
@@ -218,7 +219,7 @@ You designate one of the artifacts as a primary artifact in a release definition
 > | Build.DefinitionId | Release.Artifacts.{Primary artifact alias}.DefinitionId |
 > | Build.DefinitionName | Release.Artifacts.{Primary artifact alias}.DefinitionName |
 > | Build.BuildNumber | Release.Artifacts.{Primary artifact alias}.BuildNumber |
-> | Build.BuildID | Release.Artifacts.{Primary artifact alias}.BuildId |
+> | Build.BuildId | Release.Artifacts.{Primary artifact alias}.BuildId |
 > | Build.BuildURI | Release.Artifacts.{Primary artifact alias}.BuildURI |
 > | Build.SourceBranch | Release.Artifacts.{Primary artifact alias}.SourceBranch |
 > | Build.SourceBranchName | Release.Artifacts.{Primary artifact alias}.SourceBranchName |

@@ -1,9 +1,13 @@
 ---
 title: Migration overview from TFS to Visual Studio Team Services (VSTS) | VSTS & TFS 
 description: Overview of the high fidelity migration process from Team Foundation Server to Visual Studio Team Services (VSTS)
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-overview
+ms.prod: devops
+ms.topic: article
+ms.technology: devops-article
 ms.contentid: 3d6edd06-ceed-43b4-9e77-4a121864594c
+ms.manager: douge
+ms.author: elbatk
+author: elbatk
 ---
 
 # Migrate data from TFS to VSTS
@@ -14,12 +18,8 @@ The TFS Database Import Service, also known shorthand as the Import Service, pro
 
 ## Supported TFS Versions for Import
 
-> [!NOTE]
-> Migration support for TFS 2017 Update 3 will receive a one-time extension to Monday, April 23rd. After that date migrations from TFS 2017 Update 3 will no longer be supported. Please take this end of support date into consideration when forming your migration plans. All other versions of TFS currently under support will be retired as per normal when they are no longer one of the two most recent releases.
-
 The TFS Database Import Service supports the two latest releases of TFS at a given time. Releases include updates and major releases. Currently the following versions of TFS are supported for import:
 
-* TFS 2017 Update 3
 * TFS 2018 
 * TFS 2018 Update 1
 
@@ -42,7 +42,6 @@ Normal release cadence for new TFS versions is once every three-to-four months. 
 
 The following features can be included with your import, but are currently in a preview state. 
 
-* [Release Management](https://www.visualstudio.com/team-services/release-management/)
 * [Package Management](https://www.visualstudio.com/team-services/package-management/)
 
 When queueing an import you can elect to include preview features with your import. If you do, data related to these features will be copied into your new VSTS account along with all your other data. Should you choose to not include these features then their data will not be copied.
