@@ -28,7 +28,7 @@ ms.date: 03/20/2018
 > | ![full screen icon](../_img/icons/full-screen-icon.png) / ![exit full screen icon](../_img/icons/exit-full-screen-icon.png)<br/>![full screen icon](../_img/icons/fullscreen_icon.png) / ![exit full screen icon](../_img/icons/exitfullscreen_icon.png) | Enter or exit full screen mode      |   
 <br/>
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 
 Enter **?** to open the Kanban board keyboard shortcuts.  
 

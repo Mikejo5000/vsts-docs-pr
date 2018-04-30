@@ -102,7 +102,7 @@ Also, by adding custom states to support those workflow states that several team
 
 <a id="auto-complete-work-items-with-pr" />
 
-::: moniker range="vsts || >= tfs-2018"
+::: moniker range=">= tfs-2018"
 ## Auto completion of work items with pull requests 
 
 When you link a work item to a pull request (PR), you have the option to automatically complete those work items when you successfully complete the PR.  As shown in the following image, all you have to do is check the box to **Complete linked work items after merging**. The system defaults to your selection for future PRs. 

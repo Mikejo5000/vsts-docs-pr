@@ -17,7 +17,7 @@ ms.date: 03/20/2018
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 Start planning your project by quickly adding user stories or requirements to your product backlog. From your product backlog, you can then start driving your code development efforts. 
 ::: moniker-end
 
@@ -25,7 +25,7 @@ Start planning your project by quickly adding user stories or requirements to yo
 Start planning your project by quickly adding user stories or requirements to your product backlog.  
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 ## 5-Minute Quickstarts  
 
 - [Create your backlog](create-your-backlog.md)  

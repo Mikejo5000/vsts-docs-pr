@@ -49,7 +49,7 @@ Track the features and requirements you're developing, code defects or bugs, and
 ::: moniker-end
 
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 ## Step-by-Step Tutorials
 
 - [Follow work](../../collaborate/follow-work-items.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)
@@ -80,7 +80,7 @@ Track the features and requirements you're developing, code defects or bugs, and
 - [Scrum process guidance](guidance/scrum-process.md)         
 - [Agile glossary](agile-glossary.md) 
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 ## How-to Guides
 - [Use @mentions to further discussion](../../notifications/at-mentions.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)
 - [Use #ID to link to work items](../../notifications/add-links-to-work-items.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)
@@ -96,7 +96,7 @@ Track the features and requirements you're developing, code defects or bugs, and
 - [Use work item templates](../backlogs/work-item-template.md?toc=/vsts/work/work-items/toc.json)
 
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 ## Reference
 - [Permissions and access for work tracking](../../security/permissions-access-work-tracking.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)
 - [Work item form controls](work-item-form-controls.md) 

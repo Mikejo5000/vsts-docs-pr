@@ -113,7 +113,7 @@ What rules should you apply to highlight work items? Here are a few examples and
 As a first step, you'll see that you can change the card display for each work item type (WIT) that shows up on your Kanban board. 
 
 0. From your Kanban board, click the gear icon to open Settings.          
-	::: moniker range="vsts || >= tfs-2017 <= tfs-2018"  
+	::: moniker range=">= tfs-2017"  
 	![Kanban board, open card customization](_img/customize-cards/open-config-dialog.png)  
 	::: moniker-end  
 	::: moniker range="tfs-2015"  
@@ -125,7 +125,7 @@ As a first step, you'll see that you can change the card display for each work i
 
 	Here we choose User Story. Your choices will vary based on the [process](../work-items/guidance/choose-process.md) used to create your team project and whether your team has chosen to [treat bugs like requirements or like tasks](show-bugs-on-backlog.md).     
   
-    ::: moniker range="vsts || >= tfs-2017 <= tfs-2018"      
+    ::: moniker range=">= tfs-2017"      
     ![VSTS Kanban board, card customization dialog](_img/customize-cards/kanban-board-settings-card-fields-dialog-user-story.png)   
     ::: moniker-end    
 	::: moniker range="tfs-2015"      
@@ -164,7 +164,7 @@ You change the way cards display on the task board the same way you change the K
 	Remember, only [team or project administrators](../scale/add-team-administrator.md) can customize the task board.
 
 2.	Just as before, choose the WIT you want to customize, and then checkmark or select the options you want.     
-    ::: moniker range="vsts || >= tfs-2017 <= tfs-2018"    
+    ::: moniker range=">= tfs-2017"    
 	![VSTS Kanban board, card customization dialog](_img/customize-cards/kanban-board-settings-card-fields-dialog-task.png)   
     ::: moniker-end       
     ::: moniker range="tfs-2015"       
@@ -223,7 +223,7 @@ You change the way cards display on the task board the same way you change the K
 
 
  
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 <a id="annotations">  </a>
 ## Annotations  
 
@@ -245,7 +245,7 @@ To learn more about using these features, see [Add task checklists](../kanban/ad
 
 ::: moniker-end
  
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 ### Enable or disable an annotation 
 
 1. To open, click the ![gear icon](../_img/icons/team-settings-gear-icon.png) gear icon from your team's Kanban board.  
@@ -262,7 +262,7 @@ To learn more about using these features, see [Add task checklists](../kanban/ad
 
 ::: moniker-end
  
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 <a id="tests">  </a>
 ## Configure inline tests
 

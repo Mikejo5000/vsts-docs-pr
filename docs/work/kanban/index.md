@@ -25,7 +25,7 @@ Get collaboration going by adding to, updating, and then reviewing your Kanban b
 - [Kanban quickstart](kanban-quickstart.md)  
 
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 
 ## Step-by-Step Tutorials
 
@@ -60,7 +60,7 @@ Get collaboration going by adding to, updating, and then reviewing your Kanban b
 
 
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 
 ## How-to Guides
 
@@ -81,7 +81,7 @@ Get collaboration going by adding to, updating, and then reviewing your Kanban b
 - [Set WIP limits](wip-limits.md)  
 ::: moniker-end  
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 ## Reference   
 
 - [Kanban board controls](kanban-board-controls.md) 

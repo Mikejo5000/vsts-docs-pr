@@ -125,7 +125,7 @@ Here are a few things you can do. See at a glance the estimated size of work for
 
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 
 Also, you can quickly update a field or reassign ownership directly from the board.
 
@@ -176,7 +176,7 @@ Each team can manage their backlog and customize their Kanban board. [Add teams]
 
 If you're new to tracking work with Agile tools and want to understand what you can customize, see [Customize your work tracking experience](../customize/customize-work.md). 
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 [!INCLUDE [temp](../_shared/live-updates.md)]  
 
 ::: moniker-end

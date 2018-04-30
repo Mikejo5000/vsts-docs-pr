@@ -19,7 +19,7 @@ Your Kanban board provides you with a visual interactive space for you and your 
 
 Each card on the board corresponds to a user story or work item the team is tracking.
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 ![Kanban board, Agile template](_img/kanban-basics-intro.png) 
 
 Your Kanban board is highly customizable to support your team's workflow. 
@@ -37,7 +37,7 @@ The main steps you'll typically want to follow are outlined below.
 
 [![Configure Kanban board](../backlogs/_img/overview/gs-planning-configure-kanban.png)](kanban-basics.md)[![Update the Kanban board](../backlogs/_img/overview/gs-planning-track-kanban.png)](kanban-basics.md)[![Monitor progress](../backlogs/_img/overview/gs-planning-monitor-kanban.png)](../../report/dashboards/cumulative-flow.md)
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 Once you've configured your Kanban board, you can add work items directly to the board. You can then update the status of work by dragging a card to another column on the Kanban board. You can even change the order of items as you move a card to a new column.   
 
 ![Reorder cards while changing columns](https://i3-vso.sec.s-msft.com/dynimg/IC822185.gif)

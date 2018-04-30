@@ -67,19 +67,19 @@ To add rules or add a custom field, export, edit, and then import the WIT defini
 
 Any field that you want to use to track data must be added to the WIT definition file. This is true for all but system fields (fields whose reference name start with **System.**). All System fields are defined for all WITs, whether or not you include them in WIT definition. To learn more about each field, see [Work item field index](../work-items/guidance/work-item-field.md).
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 <a id="boolean-field">  </a>
 ## Add a checkbox or Boolean field 
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2018"
+::: moniker range=">= tfs-2018"
 Use the following syntax to add a Boolean field within the **FIELDS** section of the WIT definition. 
 ::: moniker-end
 ::: moniker range="tfs-2017"
 Use the following syntax to add a Boolean field within the **FIELDS** section of the WIT definition. Requires TFS 2017.2 or later version. 
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 > [!div class="tabbedCodeSnippets"]
 ```XML
 <FIELD name="Triage" refname="Fabrikam.Triage" type="Boolean" >
