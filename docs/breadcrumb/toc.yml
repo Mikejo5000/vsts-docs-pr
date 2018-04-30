@@ -14,7 +14,7 @@
       topicHref: /vsts/git/index
     - name: TFVC
       tocHref: /vsts/tfvc/
-      topicHref: /vsts/tfvc/overview
+      topicHref: /vsts/tfvc/index
   - name: "Continuous Integration & Delivery"
     tocHref: /vsts/build-release/
     topicHref: /vsts/index#pivot=services&panel=delivery
@@ -92,7 +92,7 @@
     tocHref: /vsts/
     topicHref: /vsts/index#pivot=services&panel=collaboration
     items:
-    - name: Public Project
+    - name: Public Projects
       tocHref: /vsts/public/
       topicHref: /vsts/public/index
     - name: Notifications
@@ -121,8 +121,8 @@
       tocHref: /vsts/security/
       topicHref: /vsts/security/index
     - name: "Scale & Configure Teams"
-      tocHref: /vsts/teams/
-      topicHref: /vsts/teams/index
+      tocHref: /vsts/settings/
+      topicHref: /vsts/settings/index
     - name: Billing
       tocHref: /vsts/billing/
       topicHref: /vsts/billing/index
