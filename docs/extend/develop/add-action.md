@@ -1,11 +1,14 @@
 ---
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-ecosystem
 title: Add an Action | Extensions for VSTS
 description: Add an action for your extension that extends VSTS.
 ms.assetid: 7b117bbf-f188-41ce-8ff6-3723ebccea81
+ms.topic: conceptual
 ms.manager: douge
+monikerRange: '>= tfs-2017'
 ms.author: elbatk
+author: elbatk
 ms.date: 08/22/2016
 ---
 

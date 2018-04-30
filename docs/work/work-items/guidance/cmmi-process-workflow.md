@@ -1,11 +1,14 @@
 ---
-title: CMMI process work item and workflow | VSTS & TFS 
-description: How to guide for using the CMMI process  work item types and workflow to track work in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)   
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+title: CMMI process work item types & workflow
+titleSuffix: VSTS & TFS
+description: How to guide for using the CMMI process  work item types and workflow to track work in Visual Studio Team Services & Team Foundation Server   
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: b5b7b488-3248-485c-b896-a2c6f824a219
+ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelli
+monikerRange: '>= tfs-2013'
 ms.date: 12/19/2017
 ---
 

@@ -1,12 +1,14 @@
 ---
 title: Work item templates
 titleSuffix: VSTS & TFS   
-description: Add and manage work item templates to pre-populate fields in VSTS and TFS work item forms  
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+description: Add and manage work item templates to pre-populate fields in work item forms in Visual Studio Team Services & Team Foundation Server 
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 9b575c05-16f3-4027-aa5a-67b017a0089d
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
+ms.topic: conceptual
 ms.date: 03/20/2018
 ---
 
@@ -341,7 +343,7 @@ You manage templates from the Team Explorer pane.
 
 ![Templates, Team Explorer with power tools installed](_img/wi-templates-section-te.png)  
 
-The root Templates node represents the parent of all of your templates. You may create a directory structure underneath it by adding folders – right-click on the **Templates** node or a folder and select **New Folder** from the context menu.  
+The root Templates node represents the parent of all of your templates. You may create a directory structure underneath it by adding folders &mdash;right-click on the **Templates** node or a folder and select **New Folder** from the context menu.  
 
 You can cut, copy, paste, rename, and delete templates and folders using the context menu. You may also drag and drop templates into folders. To edit multiple templates, use shift-click to select a range or ctrl-click to add individual templates to your selection, then right-click. 
 

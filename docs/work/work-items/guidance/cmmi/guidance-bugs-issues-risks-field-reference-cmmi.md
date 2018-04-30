@@ -1,15 +1,18 @@
 ---
-title: Bugs, issues, and risks  field reference (CMMI) | VSTS & TFS
-description: Tracks the information with regards to bugs, issues, and risks - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Bugs, issues, & risks field reference (CMMI)
+titleSuffix: VSTS & TFS
+description: Tracks the information with regards to bugs, issues, and risks - Team Foundation Server  
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 66d150ac-736f-4dde-8a2b-382c50d9e4f4
-ms.author: kaelli
+ms.topic: reference
+ms.author: kaelliauthor: KathrynEE
 ms.manager: douge
+monikerRange: '>= tfs-2013'
 ms.date: 01/20/2017
 ---
 
-# Bugs, issues, and risks  field reference (CMMI)
+# Bugs, issues, and risks field reference (CMMI)
 
 [!INCLUDE [temp](../../../_shared/dev15-version-header.md)]
 

@@ -3,13 +3,14 @@ title: Move, change, or delete work items
 titleSuffix: VSTS & TFS  
 description: Guide to removing or deleting working items and test artifacts in Visual Studio Team Services and Team Foundation Server
 keywords: backlogs
-ms.custom: Move, change, or delete work items
-ms.technology: vs-devops-wit
-ms.topic: get-started-article
-ms.prod: vs-devops-alm
+ms.global_help.title: Move, change, or delete work items
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 306929CA-DB58-45E3-AD45-B774901789D3  
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
+ms.topic: tutorial
 ms.date: 03/20/2018
 ---
 
@@ -254,6 +255,9 @@ Deleted work items won't appear in your backlogs, boards, or queries. Deleted it
 2. Confirm you want to actually delete the item(s).  
 
 	![Confirm delete dialog](_img/move-change-delete/delete-work-items-dialog.png)
+
+	> [!NOTE]    
+	> The Delete work items confirmation dialog indicates there are auto-delete settings (disabled). There are no settings you can enable or disable. There is only a background process which permanently deletes work items that have been set to delete.   
 
 3. Using multi-select from a backlog or query results list, you can delete several work items at once. 
 

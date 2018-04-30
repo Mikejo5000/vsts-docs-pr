@@ -1,15 +1,16 @@
 ---
-title: Advanced search options in Microsoft Work Item Search in VS VSTS
-description: Advanced options for Work Item Search in VSTS
+title: Advanced search options in Microsoft Work Item Search in VSTS
+description: How To Use Work Item Search - Advanced options for Work Item Search in Microsoft VSTS and TFS for all projects of your projects 
 ms.assetid: B64E70C5-E5B2-49E6-BD05-FF5932F9894C
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-search
+ms.prod: devops
+ms.technology: devops-collab
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/18/2018
+author: alexhomer1
+ms.date: 04/09/2018
 monikerRange: '>= tfs-2017'
 ---
-
 
 # How To: Use Work Item Search
 

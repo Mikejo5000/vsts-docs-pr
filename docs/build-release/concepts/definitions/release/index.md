@@ -2,16 +2,17 @@
 title: Release Definitions for Release Management in VSTS and TFS
 description: Understand release definitions in Release Management for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.assetid: 604AFC89-57CD-44F9-B440-5F07F88F0BD4
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/19/2018
-monikerRange: ">= tfs-2015"
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2015'
 ---
 
-
-# Release definitions in Release Management
+# Release definitions and release names
 
 [!INCLUDE [version-rm-dev14](../../../_shared/version-rm-dev14.md)]
 
@@ -30,7 +31,8 @@ An example of a release process that can be modeled through a release definition
 
 [What's the difference between a release definition and a release?](../../releases/index.md)
 
-In this example, a release of a website is created by collecting specific versions of two builds (artifacts), each from a different build definition. The release is first deployed to a Dev environment and then forked in parallel to two QA environments in parallel. If the deployment succeeds in both the QA environments, the release is deployed to Prod ring 1 and then to Prod ring 2. Each production ring represents multiple instances of the same website deployed at various locations around the globe.
+In this example, a release of a website is created by collecting specific versions of two builds (artifacts), each from a different build definition. The release is first deployed to a Dev environment
+and then forked to two QA environments in parallel. If the deployment succeeds in both the QA environments, the release is deployed to Prod ring 1 and then to Prod ring 2. Each production ring represents multiple instances of the same website deployed at various locations around the globe.
 
 ::: moniker range=">= tfs-2017"
 
@@ -38,7 +40,8 @@ An example of how deployment automation can be modeled within an environment is 
 
 ![Artifacts in a definition and release](_img/definition-02.png)
 
-In this example, a [phase](../../process/phases.md) is used to deploy the web and database tiers to websites across the globe in parallel within production ring 1. Once all of those deployments are successful, a second phase is used to switch traffic from the previous version to the newer version.
+In this example, a [phase](../../process/phases.md) is used to deploy the app to websites across the globe in parallel within production ring 1.
+After all those deployments are successful, a second phase is used to switch traffic from the previous version to the newer version.
 
 ::: moniker-end
 
@@ -65,7 +68,7 @@ When specifying the format mask, you can use the following pre-defined variables
 |----------|-------------|
 | **Rev:rr** | An auto-incremented number with at least the specified number of digits. |
 | **Date / Date:MMddyy** | The current date, with the default format **MMddyy**. Any combinations of M/MM/MMM/MMMM, d/dd/ddd/dddd, y/yy/yyyy/yyyy, h/hh/H/HH, m/mm, s/ss are supported. |
-| **System.TeamProject** | The name of the team project to which this build belongs. |
+| **System.TeamProject** | The name of the project to which this build belongs. |
 | **Release.ReleaseId** | The ID of the release, which is unique across all releases in the project. |
 | **Release.DefinitionName** | The name of the release definition to which the current release belongs. |
 | **Build.BuildNumber** | The number of the build contained in the release. If a release has multiple builds, this is the number of the [primary build](artifacts.md#primary-source). |

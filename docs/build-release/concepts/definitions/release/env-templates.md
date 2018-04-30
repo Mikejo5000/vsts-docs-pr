@@ -2,14 +2,15 @@
 title: Environment templates in Release Management
 description: Understand environment templates in Release Management for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.assetid: BE9E2883-5CEB-4A91-A038-CB45B728A0C4
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/19/2018
-monikerRange: ">= tfs-2015"
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2015'
 ---
-
 
 # Environment templates in Release Management
 
@@ -43,8 +44,8 @@ in one operation, use [task groups](../../library/task-groups.md) instead of env
 
 ### Can I export templates or share them with other accounts or projects?
 
-Custom templates that you create are scoped to the team project that you created them in.
-Templates cannot be exported or shared with another team project, collection, server, or account.
+Custom templates that you create are scoped to the project that you created them in.
+Templates cannot be exported or shared with another project, collection, server, or account.
 You can, however, export a release definition and import it into another project, collection, server, or account.
 Then you can re-create the template for use in that location.
 

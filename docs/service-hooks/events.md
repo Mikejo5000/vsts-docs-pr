@@ -2,16 +2,19 @@
 title: Service hooks event reference | VSTS
 description: Events supported by VSTS and Team Foundation Server
 ms.assetid: 1DC15791-5614-405E-8372-79A5ED6E66EE
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-collab
+ms.topic: conceptual
 ms.manager: douge
+monikerRange: '>= tfs-2017'
 ms.author: elbatk
+author: elbatk
 ms.date: 08/04/2016
 ---
 
 # VSTS service hooks events
 
-Available event types:
+## Available event types
 
 * Build and release
   * [Build completed](#build.complete)
@@ -39,6 +42,9 @@ Available event types:
 Deprecated event types:
 
 * [Team room message posted](#message.posted)
+
+> [!NOTE]
+> The [Nuget WebHooks Receivers package](https://www.nuget.org/packages/Microsoft.AspNet.WebHooks.Receivers.VSTS) provides support for receiving WebHooks from Visual Studio Team Services (VSTS).
 
 ## Build and release
 
@@ -1106,7 +1112,7 @@ A deployment was started
 <a name="tfvc.checkin"></a>
 ### Code checked in
 
-A changeset is checked into version control.
+A changeset is checked into TFVC.
 
 * Publisher ID: `tfs`
 * Event ID: `tfvc.checkin`

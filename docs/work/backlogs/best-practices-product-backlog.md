@@ -2,11 +2,13 @@
 title: Backlog best practices 
 titleSuffix: VSTS & TFS
 description: Best practices to manage your product backlog in Visual Studio Team Services (VSTS) and Team Foundation 
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: CCAE5254-A5F9-41CC-967E-7104BD36B932
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
+ms.topic: conceptual
 ms.date: 10/11/2017
 ---
 
@@ -46,7 +48,7 @@ Product owners are the ultimate deciders of the criteria that create customer va
 
 > **Tips from the trenches: Start to love and embrace acceptance criteria.**  
 > 
-> Ask 10 mature agile teams "How do you know when you're "done done"?](http://blogs.msdn.com/controlpanel/blogs/posteditor.aspx/done%20done%20agile)
+> Ask 10 mature agile teams ["How do you know when you're "done done"?](https://blogs.msdn.microsoft.com/aaronbjork/2010/05/04/agile-tip-5-learn-to-love-acceptance-criteria/)
 > and you'll get the same answer from each one. . . get serious about writing acceptance criteria.  
 > 
 > Acceptance criteria are the handshake between the product owner and the team on what "done done" really means.  
@@ -77,7 +79,7 @@ Product owners are the ultimate deciders of the criteria that create customer va
 > Start learning to love acceptance criteria and see if your team isn't more successful delivering software.  
 > 
 > &mdash;Aaron Bjork, Principal Product Manager, Visual Studio Cloud Services, first published in the 
-> blog post: [Agile Tip #5 – Learn to Love Acceptance Criteria](https://blogs.msdn.microsoft.com/aaronbjork/2010/05/04/agile-tip-5-learn-to-love-acceptance-criteria/)
+> blog post: [Agile Tip #5 &mdash;Learn to Love Acceptance Criteria](https://blogs.msdn.microsoft.com/aaronbjork/2010/05/04/agile-tip-5-learn-to-love-acceptance-criteria/)
 
 
 

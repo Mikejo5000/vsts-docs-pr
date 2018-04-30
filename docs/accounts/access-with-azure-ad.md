@@ -1,13 +1,14 @@
 ---
-title: VSTS - Access with Azure AD | VSTS
-description: Azure Active Directory (Azure AD) - Control access to Visual Studio Team Services (VSTS, Visual Studio Online, VSO)
-ms.topic: get-started-article
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-setup
+title: Access your VSTS account with Azure Active Directory
+description: Learn how to authenticate users and control access to your VSTS account the same way you can with Microsoft services like Office 365 and Azure AD
+ms.prod: devops
+ms.technology: devops-accounts
 ms.assetid: c9aecaaf-9dfb-4877-84b4-60da253e3dc2
+ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
-ms.date: 03/26/2018
+author: chcomley
+ms.date: 04/20/2018
 monikerRange: 'vsts'
 ---
 
@@ -102,6 +103,10 @@ except for their work history. Learn [how to manage VSTS account users](add-acco
 What happens to tools that use my credentials, like alternate credentials?  Alternate credentials won't work anymore for
 tools that run outside a web browser, like the Git command line tool.  You'll have
 to [set up your credentials](http://support.microsoft.com/kb/2991274/en-us) again for the VSTS account that you connected.
+
+## What if I accidentally delete a user in Azure AD?
+
+You should [restore the user](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-users-restore), rather than create a new one. If you create a new user, even with the same email address, this user would not be associated with the previous identity.
 
 ## Manage organization access with Azure AD
 

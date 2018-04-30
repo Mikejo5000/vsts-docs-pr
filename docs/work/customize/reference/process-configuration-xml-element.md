@@ -2,11 +2,11 @@
 title: ProcessConfiguration syntax 
 titleSuffix: VSTS & TFS  
 description: XML syntax and usage for all ProcessConfiguration elements to support customization of work item types and Agile tool backlogs and boards 
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 4314c6ad-d6ca-4cf2-a3c8-46e4e8ed759a
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 12/15/2017  
 ---
 
@@ -708,9 +708,9 @@ The `HiddenBacklogs` property determines which backlogs/portfolio backlogs appea
 <li><p><strong>BugsBehavior</strong> sets the default for the [Show bugs on backlogs and board](../show-bugs-on-backlog.md). Allowed values correspond to:</p>
 <p></p>
 <ul>
-<li><p><strong>AsRequirements</strong> â€“ Bugs appear on backlogs and boards similar to requirements (default for Scrum process)</p></li>
-<li><p><strong>AsTasks</strong> â€“ Bugs appear on backlogs and boards similar to tasks (default for Agile and CMMI processes)</p></li>
-<li><p><strong>Off</strong> â€“ Bugs don't appear on backlogs or boards</p></li>
+<li><p><strong>AsRequirements</strong> &mdash; Bugs appear on backlogs and boards similar to requirements (default for Scrum process)</p></li>
+<li><p><strong>AsTasks</strong> &mdash; Bugs appear on backlogs and boards similar to tasks (default for Agile and CMMI processes)</p></li>
+<li><p><strong>Off</strong> &mdash; Bugs don't appear on backlogs or boards</p></li>
 </ul>
 </li>
 <li><p><strong>HiddenBacklogs</strong> specifies the [backlog that's inactive by default](../select-backlog-navigation-levels.md).</p></li>

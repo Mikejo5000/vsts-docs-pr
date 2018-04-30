@@ -2,11 +2,11 @@
 title: Add a custom rule to a work item type
 titleSuffix: VSTS
 description: Add a custom rule to a process for a work item type for Visual Studio Team Services
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 17A6AF2C-81E9-4717-971E-2621613AEB31  
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 monikerRange: 'vsts'
 ms.date: 03/23/2018
 ---
@@ -29,6 +29,8 @@ With a custom rule, you can define a number of actions based on one or two condi
 ## Rule composition  
 
 Each rule consists of two parts: Conditions and Actions. Conditions define the circumstances which must be met in order for the rule to be applied. Actions define the operations to perform. You can specify a maximum of two conditions and 10 actions per rule. All custom rules require all conditions to be met in order to be run. 
+
+It's important to note that these are system-level rules, not just form-level rules. For example, setting a field as read-only will not only apply the rule on the work item form, but also through the API and Excel based Add-in. Also when applying a condition that sets or clears the value of another field, that is not written to the history of the work item. The rule is applied to the data that is being displayed (e.g. work item form, API results, Excel Add-in, etc.).
  
 As an example, you can make a field required based on value assignments made to two other fields. In this case, you would specify two conditions and one action. For example: 
 

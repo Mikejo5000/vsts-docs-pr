@@ -1,11 +1,14 @@
 ---
-title: Feedback index to content for VSTS & TFS
-description: Index to topics for requesting and providing feedback in VSTS or TFS    
-ms.technology: collaborate
-ms.prod: vs-devops-alm
+title: Feedback index to content
+titleSuffix: VSTS & TFS 
+description: Index to topics for requesting and providing feedback in Visual Studio Team Services & Team Foundation Server   
+ms.technology: devops-collab
+ms.prod: devops
+ms.topic: overview
 ms.assetid:  
 ms.manager: douge
 ms.author: kaelli
+monikerRange: '>= tfs-2013'
 ms.date: 09/19/2017
 ---
 

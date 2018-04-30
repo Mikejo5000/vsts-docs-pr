@@ -2,11 +2,13 @@
 title: Filter backlogs  
 titleSuffix: VSTS & TFS
 description: Filter your backlog based on keywords, tags, or other fields   
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
+ms.topic: conceptual
 ms.date: 03/20/2018
 ---
 
@@ -33,6 +35,7 @@ You can filter work items by typing a keyword or using one or more of the fields
 
 The filtered set is always a flat list, even if you've selected to show parents. 
 
+::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2017"
 
@@ -49,7 +52,7 @@ The filtered set is always a flat list, even if you've selected to show parents.
 ## Filter based on tags
 If you've [added tags to your work items](../track/add-tags-to-work-items.md), you can filter your backlogs, Kanban boards, and query results using the ![tag filter icon](../_img/icons/tag_filter_icon.png) tag filter. For backlogs and query results, add Tags as a column option prior to filtering on tags.  
 
-To learn more about filtering using tags, see [Add tags to work items to categorize and filter lists and boards, Filter lists using tags](../track/add-tags-to-work-items.md#filter)
+To learn more about filtering using tags, see [Add tags to work items to categorize and filter lists and boards, Filter lists using tags](../track/add-tags-to-work-items.md#filter).
  
 ::: moniker-end
 

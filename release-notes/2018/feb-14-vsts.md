@@ -4,8 +4,8 @@ author: alexcnichols
 ms.author: alexn
 ms.date: 2/14/2018
 ms.topic: article
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-articles
+ms.prod: devops
+ms.technology: vsts-release-notes
 ms.manager: douge
 description: In the Sprint 130 Update of Visual Studio Team Services (VSTS), we continue to improve our integration with tools and services that help you establish a full DevOps pipeline.
 hide_comments: true
@@ -98,12 +98,6 @@ Now, you can specify a default version for Jenkins artifacts, with the options y
 
 > [!div class="mx-imgBorder"]
 ![Default version for Jenkins artifacts](_img/130_10.png)
-
-### Deploy ASP.NET apps to VMs using an Azure DevOps Project
-
-You can now use an **Azure DevOps Project** to setup a fully-configured CI/CD pipeline to **Azure Virtual Machine** (VM) resources for ASP.NET or ASP.NET Core applications. The **DevOps Project** sets up everything you need for developing, deploying, and monitoring your app on the VM.
-
-By creating a **DevOps Project**, an Azure VM is provisioned and comes with a Git code repository, **Application Insights** integration, and a continuous delivery pipeline. The dashboard then lets you monitor code commits, builds, and deployments from a single view in the Azure portal.
 
 ### Scope a variable group to specific environments
 

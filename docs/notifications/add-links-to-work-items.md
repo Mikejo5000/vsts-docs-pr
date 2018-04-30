@@ -2,13 +2,14 @@
 title: Use #ID to link work items in discussions & pull requests 
 titleSuffix: VSTS & TFS
 description: Link to work items in discussions and pull requests 
-ms.prod: vs-devops-alm
-ms.technology: collaborate
+ms.prod: devops
+ms.technology: devops-collab
 ms.assetid: 
 toc: show
 ms.manager: douge
-ms.author: kaelli
-ms.topic: get-started-article
+ms.author: elbatk
+author: elbatk
+ms.topic: conceptual
 ms.date: 03/01/2018
 monikerRange: '>= tfs-2015'
 ---
@@ -19,7 +20,7 @@ monikerRange: '>= tfs-2015'
 
 **VSTS | TFS 2018 | TFS 2017 | TFS 2015.1**
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 Use the **#ID** control to quickly link objects to work items.     
 
 ::: moniker-end
@@ -32,7 +33,7 @@ Use the **#ID** control to quickly link objects to work items.
 
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 ## Link a pull request to a work item 
 
 When leaving a code comment in a pull request, you can type **#** to trigger the **#ID** work item picker. The picker displays a list of 50 work items that you have recently modified or that are assigned to you. 
@@ -46,7 +47,7 @@ To further filter the list, continue entering keywords until you've found a matc
 ::: moniker-end
 
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 
 ## Link to work items in pull requests, comments, and commits
  

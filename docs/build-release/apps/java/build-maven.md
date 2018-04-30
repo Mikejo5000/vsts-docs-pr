@@ -1,14 +1,15 @@
 ---
 title: CI build for a Java app with Maven
 description: Define a continuous integration (CI) build process for your Java app with Maven in VSTS or Team Foundation Server
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
-ms.topic: get-started-article
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: quickstart
 ms.assetid: C339FAF9-A960-4A3A-9A8A-ADCD39C2703D
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.reviewer: dastahel
-ms.date: 01/12/2017
+ms.date: 04/18/2018
 monikerRange: '>= tfs-2017'
 ---
 
@@ -73,7 +74,7 @@ The sample app in this repository is a Java servlet using JavaServer Pages (JSP)
 
 1. For the **Agent queue**:
 
- * **VSTS:** Select _Hosted Linux_, _Hosted macOS Preview_, or _Hosted VS2017_. This will use a hosted agent with the Java Development Kit (JDK) installed.
+ * **VSTS:** Select _Hosted Linux_, _Hosted macOS_, or _Hosted VS2017_. This will use a hosted agent with the Java Development Kit (JDK) installed.
 
  * **TFS:** Select a queue that includes an agent with the Java Development Kit (JDK) and Maven installed.
 

@@ -4,8 +4,8 @@ author: alexcnichols
 ms.author: alexn
 ms.date: 3/5/2018
 ms.topic: article
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-articles
+ms.prod: devops
+ms.technology: vsts-release-notes
 ms.manager: douge
 description: In the Sprint 131 Update of Visual Studio Team Services (VSTS), there are a few features that have received a large amount of feedback and activity on UserVoice, including Work Items hub.
 hide_comments: true
@@ -20,8 +20,9 @@ Other highlights include:
 - [Query work across the iteration schedule with +/- @CurrentIteration](#query-work-across-the-iteration-schedule-with---currentiteration)
 - [Improve release times by partially downloading artifacts](#improve-release-times-by-partially-downloading-artifacts)
 
-> [!NOTE]
-> The features discussed in this post will be rolling out over the next two to three weeks.
+## What’s new in VSTS
+
+> [!VIDEO https://www.youtube.com/embed/ph2yNok4-QY?rel=0]
 
 ## Code
 

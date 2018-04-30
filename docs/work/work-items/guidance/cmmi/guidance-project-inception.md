@@ -1,14 +1,19 @@
 ---
-title: Project inception | VSTS & TFS
+title: CMMI process guidance, Project inception
+titleSuffix: VSTS & TFS
 description: Arrange the basic resources of the project in an initial stage.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 193eee36-7d2a-4652-b905-7759cc60321e
+ms.topic: conceptual
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+monikerRange: '>= tfs-2013'
 ms.date: 01/20/2017
 ---
+
 # Project inception
+
 [!INCLUDE [temp](../../../_shared/dev15-version-header.md)]
 
 You arrange the basic resources of the project in an initial stage that is named Project Inception.  

@@ -2,10 +2,13 @@
 title: Get started with the REST APIs for VSTS and Team Foundation Server
 description: Learn the basic patterns for using the REST APIs for VSTS and Team Foundation Server.
 ms.assetid: bdddaf58-6849-4134-a295-2887dafeeea3
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-integrate
+ms.prod: devops
+ms.technology: devops-ecosystem
+ms.topic: conceptual
 ms.manager: douge
+monikerRange: '>= tfs-2013'
 ms.author: elbatk
+author: elbatk
 ms.date: 08/04/2016
 robots: NOINDEX, NOFOLLOW
 ---

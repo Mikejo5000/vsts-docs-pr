@@ -2,10 +2,13 @@
 title: AppVeyor with VSTS
 description: Use AppVeyor with your VSTS account
 ms.assetid: 49541e06-2f8c-40ca-a161-f6ddff6ec83a
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-collab
+ms.topic: conceptual
 ms.manager: douge
+monikerRange: '>= tfs-2017'
 ms.author: elbatk
+author: elbatk
 ms.date: 08/04/2016
 ---
 

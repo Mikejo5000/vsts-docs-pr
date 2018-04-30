@@ -1,15 +1,16 @@
 ---
 title: Test with unified agents and phases
 description: Manual and exploratory testing. Test with unified agents and phases in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
 ms.assetid: CAA3900B-1939-41B8-871B-FF0E99DC3E5A
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: reference
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/18/2018
-monikerRange: ">= tfs-2015"
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2015'
 ---
-
 
 # Testing with unified agents and phases
 
