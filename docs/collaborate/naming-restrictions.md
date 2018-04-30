@@ -2,11 +2,12 @@
 title: Naming restrictions and conventions 
 titleSuffix: VSTS & TFS
 description: Length, uniqueness, and special character requirements to meet when labeling objects such as an account, group, server 
-ms.technology: vs-devops-overview
-ms.prod: vs-devops-alm
+ms.technology: devops-collab
+ms.prod: devops
+ms.topic: reference
 ms.assetid: F4ED2B52-EDE9-4F2B-B3B5-A3FB504D84B9
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 03/26/2018
 monikerRange: '>= tfs-2013'
 ---
@@ -1297,7 +1298,7 @@ Workspace names must conform to the following restrictions.
 <a id="page-title-names"></a>
 ## Wiki page title naming conventions
 
-Each wiki page corresponds to a file within the wiki git repo.  
+Each wiki page corresponds to a file within the wiki Git repo.  
 Names you assign to a wiki page title must conform to the following restrictions.
 
 |Restriction type| Restriction|

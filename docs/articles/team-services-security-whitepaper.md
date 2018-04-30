@@ -1,11 +1,14 @@
 ---
 title: VSTS - Data Protection
 description: Learn how Microsoft protects your Visual Studio Team Services (VSTS) projects and data. Microsoft is committed to making sure that your VSTS projects stay safe and secure, without exception. 
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-articles
-ms.manager: douge
+ms.prod: devops
+ms.topic: article
+ms.technology: devops-whitepapers
 ms.author: mlearned
-ms.date: 2/26/2018
+author: mlearned
+ms.manager: douge
+ms.date: 04/26/2018
+monikerRange: 'vsts'
 ---
 
 
@@ -282,8 +285,11 @@ configurations errors or other security gaps in a controlled process.
 The team reviews the results to identify other areas of improvement and
 to increase the quality of the preventative systems and training.
 
+### Reporting Security Issues
+If during your penetration testing you believe you have discovered a potential security flaw related to the VSTS service, please report it to Microsoft within 24 hours by following the instructions on the [Report a Computer Security Vulnerability](https://technet.microsoft.com/en-us/security/ff852094) page.
+
 >[!IMPORTANT]
->While notifying Microsoft of penetration testing activities is no longer required customers must still comply with the [Microsoft Cloud Unified Penetration Testing Rules of Engagement](https://technet.microsoft.com/en-us/mt784683)
+>While notifying Microsoft of penetration testing activities is no longer required, customers must still comply with the [Microsoft Cloud Unified Penetration Testing Rules of Engagement](https://technet.microsoft.com/en-us/mt784683)
 
 ### Restricting access
 

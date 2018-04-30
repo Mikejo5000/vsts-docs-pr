@@ -1,15 +1,16 @@
 ---
 title: Advanced search options in Microsoft Code Search in VS VSTS and TFS
-description: Advanced options for Code Search in VSTS and Team Foundation Server
+description: How To Use Code Search - Advanced options for using Code Search across all your projects in VSTS and Team Foundation Server
 ms.assetid: 936AA33C-4AEF-461E-B49B-C98A59098282
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-search
+ms.prod: devops
+ms.technology: devops-collab
+ms.topic: conceptual
 ms.manager: douge
-ms.author: douge
-ms.date: 01/18/2018
+ms.author: ahomer
+author: alexhomer1
+ms.date: 04/09/2018
 monikerRange: '>= tfs-2017'
 ---
-
 
 # How To: Use Code Search
 
@@ -109,8 +110,8 @@ example:
 
 * `CodeSenseHttp*` finds files containing words that start with **CodeSenseHttp**, 
   such as **CodeSenseHttpClient** and **CodeSenseHttpClientTest**.
-* `CodeX23?R` finds files containing words that start with **CodeX23**, have any 
-  alphanumeric character next, and end with **R**. For example, **CodeX234R** and **CodeX23QR**. 
+* `CodeA23?R` finds files containing words that start with **CodeA23**, have any 
+  alphanumeric character next, and end with **R**. For example, **CodeA234R** and **CodeA23QR**. 
 
 You can use wildcard characters anywhere in your search string **except** as 
 a **prefix** in a simple search string or a query that uses a 
@@ -158,7 +159,7 @@ according to the following rules:
   find the literal string `flatten()`.
 
 * Search for a literal occurrence of the double-quote character `"` by preceding it with the
-  escape characacter `\` and enclosing the search string in double-quotes.
+  escape character `\` and enclosing the search string in double-quotes.
   For example, `"\"react-redux\""` will find the literal string `"react-redux"`. 
 
 -->

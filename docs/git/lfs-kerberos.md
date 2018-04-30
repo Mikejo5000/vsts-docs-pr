@@ -1,15 +1,17 @@
 ---
 title: Kerberos and Git LFS | TFS
 description: Using Git LFS versions older than 2.4.0 with TFS
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git 
+ms.prod: devops
+ms.technology: devops-code-git 
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: conceptual
 ms.date: 03/14/2018
 monikerRange: '>= tfs-2015'
 ---
 
-## Kerberos authentication
+# Kerberos authentication
 If you use TFS, Git may be using the Kerberos protocol to authenticate.
 (This doesn't apply to VSTS, which uses a different form of authentication.)
 LFS doesn't support Kerberos, so you can get errors which say "Your user name must be of the form DOMAIN\user".

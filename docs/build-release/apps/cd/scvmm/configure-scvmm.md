@@ -1,15 +1,16 @@
 ---
-ms.assetid: 1ACB0A12-84D5-4859-989C-723986F8FEF2
 title: Configure and deploy with System Center Virtual Machine Manager (SCVMM)
-description:  Configure and deploy with SCVMM using Microsoft Release Management in VSTS and TFS
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+description:  Configure and deploy with System Center Virtual Machine Manager (SCVMM) using Microsoft Release Management in VSTS and TFS
+ms.assetid: 1ACB0A12-84D5-4859-989C-723986F8FEF2
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
-monikerRange: ">= tfs-2015"
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2015'
 ---
-
 
 # Configure and manage VMs with System Center Virtual Machine Manager (SCVMM)
 
@@ -44,9 +45,9 @@ You need SCVMM. If you want to create an isolated virtual network using SCVMM, s
      in Visual Studio Marketplace, upload it to your
      Team Foundation Server, and install it.<p />
 
-1. Create an SCVMM service endpoint in your team project:
+1. Create an SCVMM service endpoint in your project:
 
-   * Open your VSTS or TFS team project in 
+   * Open your VSTS or TFS project in 
      your web browser. Choose the **Settings** icon in the menu bar and select **Services**.
 
    * In the **Services** tab, choose **New Service Endpoint**, and select **SCVMM**.

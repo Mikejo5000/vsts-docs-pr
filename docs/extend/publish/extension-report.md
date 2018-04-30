@@ -1,9 +1,13 @@
 ---
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-ecosystem
 title: Extension Report | VSTS
 description: An overview of reports available for an extension. 
-ms.author: douge
+monikerRange: '>= tfs-2017'
+ms.author: elbatk
+author: elbatk
+ms.topic: conceptual
+ms.date: 10/10/2017
 ---
 
 # Extension Report

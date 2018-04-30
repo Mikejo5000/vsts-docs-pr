@@ -1,15 +1,16 @@
 ---
-ms.assetid: 1A6903E4-B0B3-426E-9E07-67492ADB1F42
 title: Provision and manage virtual machines in VMware vCenter Server
-description: Provision and manage VMs in VMware vCenter Server from Release Management in VSTS or TFS
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+description: Provision and manage virtual machines (VMs) in VMware vCenter Server from Microsoft Release Management in VSTS or TFS
+ms.assetid: 1A6903E4-B0B3-426E-9E07-67492ADB1F42
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/19/2018
-monikerRange: ">= tfs-2015"
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2015'
 ---
-
 
 # Provision and manage virtual machines in VMware
 
@@ -77,9 +78,9 @@ the agent machine:
      Team Foundation Server, and install it.<p />
 
 1. Follow these steps to create a vCenter Server Service 
-   endpoint in your team project:
+   endpoint in your project:
 
-   * Open your VSTS or TFS team project in 
+   * Open your VSTS or TFS project in 
      your web browser. Choose the **Settings** icon in the menu bar and select **Services**.
 
    * In the **Services** tab, choose **New Service Endpoint**, and select **VMware vCenter Server**.

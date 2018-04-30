@@ -1,22 +1,22 @@
 ---
-title: Run unit tests with your builds
+title: Run unit tests with your builds in VSTS and TFS
 description: Get started with continuous testing. Run unit tests with your builds for continuous integration in VSTS and Team Foundation Server TFS 
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
 ms.assetid: a4a33a7d-fb75-46e0-b74d-91623ae5187e
-ms.topic: get-started-article
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: quickstart
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/18/2018
-monikerRange: ">= tfs-2015"
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2015'
 ---
-
 
 # Run unit tests with your builds
 
 [!INCLUDE [version-header-vs-vsts-tfs](_shared/version-header-vs-vsts-tfs.md)]
 
-Make sure that your app still works after every 
+Make sure that your app still works after every
 check-in and build using Visual Studio Team Services (VSTS) or Team Foundation Server (TFS). 
 Find problems earlier by running tests 
 automatically with each build. When your build is 

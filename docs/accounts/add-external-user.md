@@ -1,21 +1,21 @@
 ---
-title: Add an external user to your VSTS account 
-description: How to add an external user in VSTS (Visual Studio Online, VSO, VSTS) (outside user)
-ms.prod: vs-devops-alm
-ms.topic: conceptual
-ms.technology: vs-devops-setup
+title: Add external users to your account 
+description: Learn how to invite an external or outside user in your VSTS (Visual Studio Online, VSO, VSTS) account
+ms.prod: devops
+ms.technology: devops-accounts
 ms.assetid: ec935536-6a5e-4b62-adf2-4207a70440bd
+ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
-ms.date: 03/27/2018
+author: chcomley
+ms.date: 04/19/2018
 monikerRange: 'vsts'
 ---
-
-# Add an external user to your VSTS account
+# Add external users to your VSTS account
 
 **VSTS**
 
-If you’re an Azure Active Directory (Azure AD)-backed VSTS account user who wants to be able to collaborate with external users, you can invite an external user to your VSTS account. To do so, you must add the identities of your external users to your Azure AD and VSTS accounts.
+If you’re an Azure Active Directory (Azure AD)-backed VSTS account user who wants to be able to collaborate with external users, you can invite an external user to your VSTS account. To do so, you must add the identities of your external users to your Azure AD and VSTS accounts. Doing this will also grant the user some additional privileges. Learn more about the [additional account-level resources](external-users.md).
 
 ## Prerequisites
 

@@ -1,16 +1,16 @@
 ---
 title: Troubleshoot adding members to team projects in VSTS
-description: Troubleshoot adding members to team projects in Visual Studio Team Services (VSTS)
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-setup
+description: Learn the answers to frequently asked questions (FAQs), like how to add more members to your team project, help users sign in, remove users, and more
+ms.prod: devops
+ms.technology: devops-accounts
 ms.assetid: d3945cd4-d024-4d6f-b949-9feaa62e9948
+ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
+author: chcomley
 ms.date: 4/04/2018
 monikerRange: 'vsts'
 ---
-
-
 # Troubleshoot adding members to team projects in Visual Studio Team Services (VSTS)
 
 **VSTS**

@@ -1,13 +1,17 @@
 ---
-title: Top-down planning of business requirements within an enterprise project plan mapped to a team project | TFS
-description: Maintain scheduling data and resource usage for requirements in the mapped enterprise project plan and team project.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Top-down planning of business requirements  
+titleSuffix: TFS 
+description: Maintain scheduling data and resource usage for requirements in the mapped enterprise project plan and team project 
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 9760e3f2-2c1a-4c05-8d3d-c25abc79289a
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
+monikerRange: '>= tfs-2013 <= tfs-2015'
 ms.date: 01/12/2017
 ---
+
 # Top-down planning of business requirements within an enterprise project plan mapped to a team project
 [!INCLUDE [temp](../_shared/tfs-ps-sync-header.md)]
 

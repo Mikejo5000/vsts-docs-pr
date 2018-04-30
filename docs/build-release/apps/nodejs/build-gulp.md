@@ -1,13 +1,14 @@
 ---
 title: CI build for a Node.js app with Gulp
 description: Define a continuous integration (CI) build process for your Node.js app with Gulp in VSTS
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
-ms.topic: get-started-article
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: quickstart
 ms.assetid: F0829366-2AC1-4344-9494-98CACEC38806
 ms.manager: douge
 ms.author: alewis
-ms.date: 12/20/2017
+author: andyjlewis
+ms.date: 04/18/2018
 monikerRange: '>= tfs-2017'
 ---
 
@@ -267,7 +268,7 @@ You're nearly ready to go. Just a few more steps to complete your CI build proce
 
 1. For the **Agent queue**:
 
- * **VSTS:** Select _Hosted Linux Preview_. This is how you can use our pool of agents that have the software you need to build your app.
+ * **VSTS:** Select _Hosted Linux_. This is how you can use our pool of agents that have the software you need to build your app.
 
  * **TFS:** Select a queue that includes a [Windows build agent](../../actions/agents/v2-windows.md).
 
@@ -293,7 +294,7 @@ You're nearly ready to go. Just a few more steps to complete your CI build proce
 
 1. For the **Agent queue**:
 
- * **VSTS:** Select _Hosted Linux Preview_. This is how you can use our pool of agents that have the software you need to build your app.
+ * **VSTS:** Select _Hosted Linux_. This is how you can use our pool of agents that have the software you need to build your app.
 
  * **TFS:** Select a queue that includes a [Windows build agent](../../actions/agents/v2-windows.md).
 
@@ -319,7 +320,7 @@ In VSTS:
 
 1. Select **Process**.
 
-1. For the **Agent queue** select _Hosted Linux Preview_. This is how you can use our pool of agents that have the software you need to build your app.
+1. For the **Agent queue** select _Hosted Linux_. This is how you can use our pool of agents that have the software you need to build your app.
 
 1. For the **Yaml path**, select the **.vsts-ci.yml** file in the root of your repo.
 

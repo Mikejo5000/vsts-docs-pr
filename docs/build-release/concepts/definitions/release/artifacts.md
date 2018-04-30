@@ -2,16 +2,17 @@
 title: Artifacts in Release Management
 description: Understand build artifacts in Release Management for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.assetid: 6820FA1F-4B20-4845-89E0-E6AB4BD5888D
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/19/2018
-monikerRange: ">= tfs-2015"
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2015'
 ---
 
-
-# Artifacts in Release Management
+# Release artifacts and artifact sources
 
 [!INCLUDE [version-rm-dev14](../../../_shared/version-rm-dev14.md)]
 
@@ -54,8 +55,15 @@ on the linking of artifacts to a release definition are:
   Note that the ability to automatically create releases
   is available for only some artifact sources.
 
-<!-- * **Trigger conditions** You can configure a release to be created automatically, or the deployment of a release to an environment to be triggered automatically, when only specific conditions on the artifacts are met. -->
-<!-- For example, you can configure releases to be automatically created only when a new build is produced from a certain branch.-->
+* **Trigger conditions**. You can configure a release to be created
+  automatically, or the deployment of a release to an environment
+  to be triggered automatically, when only specific conditions on the
+  artifacts are met. For example, you can configure releases to be
+  automatically created only when a new build is produced from a certain branch.
+
+* **Artifact versions**. You can configure a release to automatically use a specific
+  version of the build artifacts, to always use the latest version, or to allow you 
+  to specify the version when the release is created.
 
 * **Artifact variables**. Every artifact that is part
   of a release has metadata associated with it, exposed to [tasks](../../../tasks/index.md) through [variables](#art-vars).
@@ -130,17 +138,17 @@ the build definitions in your Visual Studio Team Services (VSTS) account
 or Team Foundation Server project collection.
 
 > [!NOTE]
-> you must include a **Publish Artifacts** task step in your build
+> You must include a **Publish Artifacts** task step in your build
 definition. For XAML build definitions, an artifact with the name **drop**
 is published implicitly.
 
 Some of the differences in capabilities between different versions of TFS and VSTS are:
 
-* **TFS 2015**: You can link build definitions only from the same team project of your collection.
+* **TFS 2015**: You can link build definitions only from the same project of your collection.
   You can link multiple definitions, but you cannot specify default versions. You can set up a continuous deployment trigger on only one of the definitions.
   When multiple build definitions are linked, the latest builds of all the other definitions are used, along with the build that triggered the release creation.
 
-* **TFS 2017 and newer** and **VSTS**: You can link build definitions from any of the team projects in your collection or account.
+* **TFS 2017 and newer** and **VSTS**: You can link build definitions from any of the projects in your collection or account.
   You can link multiple build definitions and specify default values for each of them. You can set up continuous deployment triggers on
   multiple build sources. When any of the builds completes, it will trigger the creation of a release.
 
@@ -226,7 +234,7 @@ Release Management integrates with Team Foundation
 Version Control (TFVC) repositories, Git repositories, and GitHub repositories.
 
 You can link a release definition to any of the Git or TFVC
-repositories in any of the team projects in your
+repositories in any of the projects in your
 collection (you will need read access to these
 repositories). No additional setup is required when
 deploying version control artifacts within the same collection.

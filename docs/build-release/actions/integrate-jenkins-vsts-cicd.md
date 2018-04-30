@@ -5,9 +5,8 @@ author: mlearned
 manager: douge
 editor: 
 tags: 
-
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: 
 ms.service: 
 ms.devlang: na

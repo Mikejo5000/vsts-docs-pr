@@ -1,15 +1,16 @@
 ---
-ms.assetid: 9EBB0342-7FD2-473C-9809-9BCA2250CBC3
 title: Deploy a nginx web server on a Linux Virtual Machine
-description: Deploy a web application to an nginx web server on a Linux virtual machine using Deployment Groups
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+description: Deploy a web application to an nginx web server on a Linux virtual machine using Deployment Groups in Release Management
+ms.assetid: 9EBB0342-7FD2-473C-9809-9BCA2250CBC3
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: quickstart
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/19/2018
-monikerRange: ">= tfs-2017"
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2017'
 ---
-
 
 # Deploy to a Linux Virtual Machine
 
@@ -51,7 +52,7 @@ Your CD release process picks up the artifacts published by your CI build and th
    * If you've just completed a CI build then, in the build's **Summary** tab under **Deployments**,
      choose **Create release** followed by **Yes**. This starts a new release definition that's automatically linked to the build definition.
 
-    ![Creating a new release definition from the build summary](../_shared/_img/release-from-build-summary.png)
+     ![Creating a new release definition from the build summary](../_shared/_img/release-from-build-summary.png)
 
    * Open the **Releases** tab of the **Build &amp; Release** hub, open the **+** drop-down
      in the list of release definitions, and choose **Create release definition**.

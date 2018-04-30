@@ -1,13 +1,14 @@
 ---
-title: Background to CMMI 
+title: Background to Capability Maturity Model Integration (CMMI)
 titleSuffix: VSTS & TFS
 description: Guide to the Capability Maturity Model Integration (CMMI) for Development - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 77e18a8c-e101-4210-9755-33a7c99b2593
 ms.topic: conceptual
-ms.author: kaelli
+ms.author: kaelli  author: KathrynEE  
 ms.manager: douge
+monikerRange: '>= tfs-2013'
 ms.date: 01/20/2017
 ---
 

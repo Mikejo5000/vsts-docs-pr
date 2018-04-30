@@ -1,13 +1,13 @@
 ---
 title: Customize your work tracking experience
 titleSuffix: VSTS & TFS
-description: Guide to configuring and customizing work tracking features in Visual Studio Team Services and Team Foundation Server 
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+description: Guide to configuring and customizing work tracking features in Visual Studio Team Services & Team Foundation Server 
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: D1B44480-F88B-4F35-927A-11ADFBCBAA23
 ms.manager: douge
-ms.author: kaelli
-ms.topic: get-started-article
+ms.author: kaelliauthor: KathrynEE
+ms.topic: overview
 ms.date: 03/20/2018
 ---
 
@@ -36,7 +36,7 @@ Each team project provides a number of shared resources that support all teams a
 > [!div class="mx-tdCol2BreakAll"]  
 > | Area path pick lists | Sprint/iteration pick lists |
 > |-------------|----------| 
-> |Change the [pick list of area paths](set-area-paths.md) to support grouping work items by team, product, or feature area.<br/>![Hierarchical area paths](../../user-guide/_img/features/alm-feature-area-paths.png)|Change the [pick list of iteration paths](../scrum/define-sprints.md) to support grouping work into sprints, milestones, or other event-specific or time-related period. Activate sprints for each team.<br/![Iterations or sprints](../../user-guide/_img/features/alm-feature-define-sprints.png) |
+> |Change the [pick list of area paths](set-area-paths.md) to support grouping work items by team, product, or feature area.<br/>![Hierarchical area paths](../../user-guide/_img/features/alm-feature-area-paths.png)|Change the [pick list of iteration paths](../scrum/define-sprints.md) to support grouping work into sprints, milestones, or other event-specific or time-related period. Activate sprints for each team.<br/>![Iterations or sprints](../../user-guide/_img/features/alm-feature-define-sprints.png) |
  
 
 > [!div class="mx-tdCol2BreakAll"]  

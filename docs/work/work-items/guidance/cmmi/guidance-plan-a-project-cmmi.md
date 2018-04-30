@@ -1,13 +1,14 @@
 ---
-title: Plan a project (CMMI)
+title: CMMI process guidance, Plan a project  
 titleSuffix: VSTS & TFS
 description: Understand the desired outcome of planning a project  
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 26f38202-a173-4d10-9d56-03c9ff69546d
 ms.topic: conceptual
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+monikerRange: '>= tfs-2013'
 ms.date: 01/20/2017
 ---
 
