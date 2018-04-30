@@ -1,6 +1,6 @@
 ---
 title: Describes the services provided by Azure Codex 
-titleSuffix: VSTS 
+titleSuffix: 
 description: Understand the fundamental services provided by Azure Codex, like Agile, Repos, Pipelines, Test, and Artifacts  
 ms.prod: devops
 ms.technology: devops-new-user

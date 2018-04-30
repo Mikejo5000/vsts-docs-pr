@@ -3,15 +3,15 @@
 - name: Overview
   items:
   - name: "What is Azure Codex?"
-    href: what-is-vsts.md
+    href: what-is-azure-codex.md
   - name: "What do I get with Azure Codex?
     href: services.md?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json&bc=/vsts/breadcrumb/toc.json 
   - name: "How do I get Azure Codex?"
-    href: 
+    href:  how-to-get-azure-codex.md
   - name: "How can I start Azure Codex for free?
-    href: 
-  - name: "What are Codex Public Projects?""
-    href: 
+    href:  how-to-start-codex-for-free.md
+  - name: "What are Codex Public Projects?"
+    href:  what-are-codex-public-projects.md
 - name: Quickstarts
   items:
   - name: Sign up and invite users 
@@ -20,7 +20,7 @@
     href: code-with-git.md
   - name: Start work planning
     href: ../build-release/actions/ci-cd-part-1.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json
-  - name: Start CI/CD Pipline
+  - name: Start CI/CD pipline
     href: plan-track-work.md 
   - name: Start testing code
     href: add-run-manual-tests.md
@@ -28,20 +28,35 @@
     href: ../marketplace/install-vsts-extension.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
   - name: Start managing artifacts
     href: 
-    - name: View permissions...remove/redirect?
+  - name: View permissions...remove/redirect?
     href: ../security/view-permissions.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
 - name: Tutorials
   items:
+  - name: Set up billing
+    href:
+  - name: Add amins or set permissions
+    href:
   - name: Set favorites
     href: ../collaborate/set-favorites.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
   - name: Follow work & pull requests
     href: ../collaborate/follow-work-items.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
-  - name: Get started as a Stakeholder
+  - name: Collaborate with Codex
     href: ../security/get-started-stakeholder.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
-
-
-
-    - name: Concepts
+  - name: Set permissions
+    href:
+  - name: Get started as an admin
+    items:
+    - name: Start project
+      href: 
+    - name: Start backlog
+      href:  
+  - name: Get started as a developer
+    items:
+    - name: Start coding
+      href: 
+    - name: Deploy CI/CD
+      href:  
+- name: Concepts
   items:
   - name: Key concepts 
     href: concepts.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
@@ -49,12 +64,20 @@
     href: source-control.md
   - name: Kanban & Agile tools
     href: ../work/backlogs/overview.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
-  - name: Clients & Tools
+  - name: Clients & tools
     href: tools.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
-  - name: Software development roles
+  - name: Developer roles
     href: roles.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
-  - name: "How do VSTS & TFS differ"
-    href: about-vsts-tfs.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
+  - name: Manage artifacts and package
+    href: 
+  - name: VSTS vs. Azure Codex
+    href: about-vsts-tfs.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json
+  - name: What is a Codex project?
+    href:
+  - name: Azure Codex vs. Codex Server
+    href:
+  - name: Licensing and Billing
+    href:
 - name: How-to Guides
   items:
   - name: Home page navigation
