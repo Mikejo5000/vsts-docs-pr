@@ -2,12 +2,14 @@
 title: About project and account settings
 titleSuffix: VSTS & TFS
 description: Overview of configuring account and project settings
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
-ms.assetid:  
+ms.technology: devops-settings
+ms.prod: devops
+ms.topic: overview
+ms.assetid: 
 ms.manager: douge
 ms.author: kaelli
-ms.topic: overview 
+author: KathrynEE
+monikerRange: '>= tfs-2013'
 robots: NOINDEX, NOFOLLOW
 ms.date: 04/01/2018
 ---

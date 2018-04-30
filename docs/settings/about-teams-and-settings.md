@@ -7,7 +7,9 @@ ms.prod: devops
 ms.assetid: 24C97BED-88F4-4D91-98D1-4AC0B39AB7D7
 ms.manager: douge
 ms.author: kaelli
-ms.topic: overview
+author: KathrynEE
+ms.topic: conceptual
+monikerRange: '>= tfs-2013'
 ms.date: 02/14/2018 
 ---
 
