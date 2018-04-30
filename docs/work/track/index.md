@@ -1,12 +1,15 @@
 ---
 title: Index to work item query articles 
 titleSuffix: Codex Agile
-description: Use queries to find and list work items and create flat-based query charts
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+description: Use queries to find and list work items and create flat-based query charts in Visual Studio Team Services & Team Foundation Server   
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
+ms.topic: conceptual
+monikerRange: '>= tfs-2013'
 ms.date: 03/20/2018
 ---
 

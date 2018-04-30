@@ -1,12 +1,14 @@
 ---
 title: Index to articles for working with multiple teams
 titleSuffix: Codex 
-description: Index to articles for how to scale Agile tools to support multiple teams and enterprise organizations
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+description: Index to articles for how to scale Agile tools to support multiple teams and enterprise organizations in Visual Studio Team Services & Team Foundation Server   
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 
 ms.manager: douge
-ms.author: kaelli
+author: KathrynEE
+ms.topic: conceptual
+monikerRange: '>= tfs-2013'
 ms.date: 10/04/2017
 ---
 
@@ -23,7 +25,7 @@ Manage portfolios and gain visibility across teams. For guidance on adding teams
 
 ## Step-by-Step Tutorials
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018" 
+::: moniker range=">= tfs-2017" 
 - [Manage portfolios](portfolio-management.md)
 - [Review delivery plans](review-team-plans.md) 
 - [Set team favorites](../../collaborate/set-favorites.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json)  

@@ -8,7 +8,7 @@ ms.assetid: D4CE68D6-8056-4CB7-ACFA-1FCD05223040
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 ms.topic: reference
-monikerRange: 'vsts || >= tfs-2015 <= tfs-2018'
+monikerRange: '>= tfs-2015'
 ms.date: 03/20/2018
 ---
 

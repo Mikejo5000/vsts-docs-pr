@@ -1,12 +1,15 @@
 ---
 title: Index of scrum and sprint planning articles  
 titleSuffix: Codex Agile
-description: Index to articles for implementing Scrum using Agile tools
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+description: Index to articles for implementing Scrum using Agile tools in Visual Studio Team Services & Team Foundation Server   
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid:  
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
+ms.topic: conceptual
+monikerRange: '>= tfs-2013'
 ms.date: 03/20/2018
 ---
 
