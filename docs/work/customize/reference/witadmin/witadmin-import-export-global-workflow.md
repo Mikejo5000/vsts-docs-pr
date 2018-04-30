@@ -2,12 +2,14 @@
 title: Import and export global workflow using witadmin
 titleSuffix: TFS  
 description: Manage the global workflow to minimize the work required by defining and updating the work item fields and global lists that multiple team projects and types of work items share - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: ac1a2973-6c8f-439d-bb7d-e141aaadc124
+ms.topic: reference
 ms.manager: douge
-ms.author: kaelli
-ms.date: 02/26/2018
+ms.author: kaelliauthor: KathrynEE
+monikerRange: '>= tfs-2013 <= tfs-2018'
+ms.date: 03/20/2018
 ---
 
 # Import and export global workflow
@@ -30,7 +32,7 @@ By using global workflow, you can minimize the work required to define and updat
   
 See [Add administrators, set permissions at the project-level or project collection-level](../../../../security/set-project-collection-level-permissions.md).  
   
->[!NOTE]  
+> [!NOTE]    
 >Even if you log on with administrative permissions, you must open an elevated Command Prompt window to perform this function on a server that is running Windows Server 2008. To open an elevated Command Prompt window, choose **Start**, open the **Command Prompt** shortcut menu, and then choose **Run as Administrator**. For more information, see the following page on the Microsoft website: [User Access Control](http://go.microsoft.com/fwlink/?LinkId=111235).  
   
 ## Syntax  
@@ -84,5 +86,5 @@ witadmin importglobalworkflow /collection:http://AdventureWorksServer:8080/tfs/D
 witadmin importglobalworkflow /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /f:C:collectionGlobalWorkflow.xml   
 ```  
   
-## Related notes 
+## Related articles 
 - [witAdmin: Customize and manage objects for tracking work](witadmin-customize-and-manage-objects-for-tracking-work.md)

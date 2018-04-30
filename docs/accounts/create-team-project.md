@@ -2,15 +2,15 @@
 title: Create a team project in VSTS or Team Foundation Server (TFS)
 description: Add a team project in VSTS or on-premises Team Foundation Server (TFS)
 ms.assetid: 21F3C364-34F4-41B0-9EFC-6D4A141D81E0
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-setup
+ms.prod: devops
+ms.technology: devops-accounts
+ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
+author: chcomley
 ms.date: 10/17/2017
-ms.topic: get-started-article
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: '>= tfs-2015')
-
 # Create a team project
 
 **VSTS | TFS 2018 | TFS 2017 | TFS 2015 | [Previous versions](https://msdn.microsoft.com/library/ms181477%28v=vs.120%29.aspx)**  
@@ -31,7 +31,7 @@ If you have a team project already, and want to start coding an application proj
 
 ## From the web
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 ### VSTS
 
@@ -50,9 +50,9 @@ If you have a team project already, and want to start coding an application proj
 
     ![Create Team Project VSTS](_img/create-team-project/clickcreatevsts.png)
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range=">= tfs-2015")
+::: moniker range=">= tfs-2015"
 
 ### TFS
 
@@ -75,7 +75,7 @@ If you're using TFS 2015 Update 2 or later then you can create a team project fr
 
     ![Create team project dialog](_img/create-team-project/clickcreatetfs.png)
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ## From Team Explorer
 You can create a team project from Team Explorer after you have connected to an on-premises server. 
@@ -157,6 +157,10 @@ You can create a team project from Team Explorer after you have connected to an 
 	</tr>
 	</tbody>
 	</table>
+
+## From the command line or scripts
+
+You can create and get team projects and other VSTS items from the command line or scripts using the VSTS CLI. Check out the [VSTS CLI documentation](https://docs.microsoft.com/en-us/cli/vsts/overview?view=vsts-cli-latest) to learn more.
 
 ## Try this next
 

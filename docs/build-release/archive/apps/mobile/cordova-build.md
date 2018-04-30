@@ -1,14 +1,17 @@
 ---
 title: Build and Test Cordova Projects
 description: Build and Test Cordova Projects with VSTS or Team Foundation Server 2015
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.topic: conceptual
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: 22fc4e22-ef0a-4c55-8cce-20ad2fa14342
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.date: 08/04/2016
+monikerRange: '>= tfs-2015 <= tfs-2018 || vsts'
 ---
-[//]: # (monikerRange: '>= tfs-2015 <= tfs-2018 || vsts')
+
 
 # Build Apache Cordova apps
 
@@ -288,6 +291,8 @@ The following will also need to be in your path:
 
 [!INCLUDE [temp](../../../_shared/qa-agents.md)]
 
+::: moniker range="< vsts"
 [!INCLUDE [temp](../../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->

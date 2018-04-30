@@ -2,10 +2,13 @@
 title: Use the Pivot Filter Control | Extensions for VSTS
 description: Use the pivot filter control to apply filtering on your list in your app for VSTS.
 ms.assetid: 36F80097-4DB7-4C63-8E0E-8C031CF07FCE
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-ecosystem
+ms.topic: conceptual
 ms.manager: douge
+monikerRange: '>= tfs-2017'
 ms.author: elbatk
+author: elbatk
 ms.date: 08/04/2016
 ---
 

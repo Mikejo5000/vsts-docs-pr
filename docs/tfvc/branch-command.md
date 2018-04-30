@@ -2,13 +2,16 @@
 title: Branch Command
 description: Branch Command
 ms.assetid: 2e075024-9830-4373-a3d4-ac6a194d133f
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: reference
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: '>= tfs-2015')
+
 
 # Branch Command
 

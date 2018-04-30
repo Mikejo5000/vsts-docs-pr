@@ -1,11 +1,13 @@
 ---
-title: Define the initial configuration of Test Manager | VSTS & TFS
-description: Use the plug-in for Microsoft Test Manager to define the team project's initial test management setup - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Define the initial configuration of Test Manager 
+titleSuffix: VSTS & TFS
+description: Use the plug-in for Microsoft Test Manager to define the team project's initial test management setup for Team Foundation Server  
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: a72625e1-afa2-4707-9a20-bb7927a0aeaf
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: reference
 ms.date: 09/08/2017
 ---
 
@@ -210,6 +212,6 @@ You must encapsulate the **TestSetting** element within its corresponding contai
 </TestSettings>  
 ```  
   
-## Related notes  
+## Related articles  
 - [Testing overview](../../../../manual-test/index.md)  
 - [Customize and manage the test experience](../witadmin/tcm-customize-manage-test-experience.md)

@@ -2,13 +2,15 @@
 title: Deploy continuously to Azure with Release Management
 description: Release your app continuously to Microsoft Azure environments with Release Management server/client for Visual Studio 2015 and TFS 2015
 ms.assetid: 40DF8A8C-2D94-4127-BE79-C0B8386960C6
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 08/04/2016
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2013'
 ---
-[//]: # (monikerRange: ">= tfs-2013")
 
 # Deploy continuously to Azure
 
@@ -29,7 +31,7 @@ instead.
 Before you start, you'll need:
 
 * **A VSTS account**.
-* **A team project**. 
+* **A project**. 
 * **Azure VMs**. If you need to create them, 
   **[here's how](http://azure.microsoft.com/documentation/articles/virtual-machines-windows-tutorial/)**.
 * **An Azure storage account.** Create one 

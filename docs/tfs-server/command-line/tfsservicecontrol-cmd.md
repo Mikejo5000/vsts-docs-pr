@@ -2,14 +2,17 @@
 title: Use TFSServiceControl command to stop or start TFS services or application pools
 description: Start or stop TFS services from the command line using TFSServiceControl
 ms.assetid: 7a385e9d-b1b7-4a4a-8f7d-1ece14144432
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-admin
+ms.prod: devops-server
+ms.technology: tfs-admin
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/04/2016
+monikerRange: '>=tfs-2013 < vsts'
 ---
 
-[//]: # (monikerRange: '>=tfs-2013 < vsts')
+
 
 # TFSServiceControl Command
 

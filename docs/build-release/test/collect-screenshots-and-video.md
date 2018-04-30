@@ -1,14 +1,16 @@
 ---
 title: Collect screenshots, video, logs, and attachments in continuous tests
 description: Collect screenshots, video, logs, and attachments in a continuous integration pipeline with Visual Studio Team Services (VSTS) and TFS 
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
 ms.assetid: 234848A2-BDED-4DD5-8D15-AD56F6B49AD5
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: conceptual 
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/18/2018
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: ">= tfs-2015")
 
 # Collect screenshots, video, logs, and attachments in continuous tests
 
@@ -52,7 +54,7 @@ screenshots, video, logs, and attachments is often useful to help troubleshoot f
 
 ## Collect video using the Visual Studio Test task
 
-1. To collect video, specify the data collector you want to use in a [runsettings file](https://docs.microsoft.com/en-us/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file#video-data-collector).
+1. To collect video, specify the data collector you want to use in a [runsettings file](https://docs.microsoft.com/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file#video-data-collector).
    The video data collector captures a screen recording when tests are run.
 
 1. In the [Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTest/README.md) task,

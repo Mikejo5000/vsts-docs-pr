@@ -1,19 +1,19 @@
 ---
 title: Set work tracking permissions 
 titleSuffix: VSTS & TFS 
-description: How to grant or restrict access to work tracking tasks for Visual Studio Team Services and Team Foundation Server
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+description: How to grant or restrict access to work tracking tasks for Visual Studio Team Services & Team Foundation Server
+ms.technology: devops-security
+ms.prod: devops
 ms.assetid: 5AD0BF62-C91E-46DD-8C1A-C8D1F8F8D05F
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
+ms.topic: conceptual
+monikerRange: '>= tfs-2013'
 ms.date: 11/27/2017
 ---
-[//]: # (monikerRange: '>= tfs-2013')
 
 # Set permissions and access for work tracking
-
-
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -71,6 +71,8 @@ You can specify who can add or edit query folders or queries at the object-level
 
 To learn more about queries, see [Create managed queries to list, update, or chart work items](../work/track/example-queries.md).
 
+
+::: moniker range=">= tfs-2017"
 <a id="configure-plan-permissions">  </a>
 <a id="plan-permissions">  </a>
 ## Manage or edit Delivery Plans 
@@ -78,11 +80,13 @@ To learn more about queries, see [Create managed queries to list, update, or cha
 The creator of a Deliver Plan as well as all members of the Project Collection Administrators and Project Administrators groups have permissions to edit, manage, and delete plans. To learn more about Delivery Plans, see [Review team delivery plans](../work/scale/review-team-plans.md).
 
 Plans are an object within a team project. You manage plan permissions for each plan similar to the way you [manage permissions for shared queries or query folders](../work/track/set-query-permissions.md). 
-
-
+::: moniker-end
+::: moniker range="tfs-2017"
 > [!NOTE]  
-> **Feature availability**: Delivery plans are available for all VSTS accounts. For TFS 2017.2 and later versions, you can access plans by installing the [Delivery Plans Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans).
+> **Feature availability**: Delivery plans are available for TFS 2017.2 and later versions, you can access plans by installing the [Delivery Plans Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans).
  
+::: moniker-end
+::: moniker range=">= tfs-2017"
 0. To grant permissions to a group or user to manage or edit a specific plan, click the  ![actions icon](../_img/icons/actions-icon.png) actions icon to open the Security dialog for the plan.  
 
 	<img src="_img/review-tp-open-security-dialog.png" alt="Open the Permissions dialog for a plan" style="border: 1px solid #C3C3C3;" />    
@@ -95,6 +99,8 @@ Plans are an object within a team project. You manage plan permissions for each 
 
 	<img src="_img/review-tp-security-dialog.png" alt="Permissions dialog for a query" style="border: 1px solid #C3C3C3;" />  
 
+::: moniker-end
+
 <a id="move-delete-permissions"></a>
 
 ## Move or permanently delete work items 
@@ -106,7 +112,6 @@ For example, as a project admin you can grant a user, team group, or other group
 In this example, we grant members assigned to the team administrator role, who belong to the Team Admin groups, permissions to move work items to another team project and to permanently delete work items.     
 
 <img src="_img/set-permissions-project-level-dialog.png" alt="Set Team Admin permissions" style="border: 1px solid #C3C3C3;" />
-
 
 
 <a id="delete-test-permissions"></a>
@@ -125,11 +130,11 @@ Set the permissions for **Manage test plans** and **Manage test suites** to **Al
 
 To have full access to the Test feature set, your [access level must be set to Advanced](change-access-levels.md). Users with Basic access and with permissions to permanently delete work items and manage test artifacts can only delete orphaned test cases. 
  
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 <a id="process-permissions"></a>
 
-## Customize an inherited process (VSTS)
+## Customize an inherited process 
 
 By default, only Project Collection Administrators can create and edit processes. However, these admins can grant permissions to other team members by explicitly setting the **Create process**, **Delete process**, or **Edit process** permissions at the collection level for a specific user. 
 
@@ -148,7 +153,7 @@ To customize a process, you need to grant **Edit process**  permissions to a use
 >[!NOTE]  	  
 > Each process is a securable unit and has individual access control lists (ACLs) that govern creating, editing, and deleting inherited processes.  At the collection level, team project collection administrators can choose which processes can be inherited from and by whom. When you create a new inherited process, the process creator as well as team project collection administrators have full control of the process and can also set individual ACLs for other users and groups to edit and delete the process.
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ## Additional options for restricting access to work items   
 

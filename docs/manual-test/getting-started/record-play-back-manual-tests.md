@@ -1,14 +1,16 @@
 ---
 title: Record and play back manual tests
-description: Record and play back manual tests
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-manual
+description: Record and play back manual tests in Microsoft VSTS and TFS to make sure each of the deliverables meets your users needs
 ms.assetid: 6B6E991A-969F-4AB3-8031-9BFF260D9142
+ms.prod: devops
+ms.technology: devops-test
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/18/2018
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: ">= tfs-2015")
 
 # Record and play back manual tests
 
@@ -52,7 +54,7 @@ or [Visual Studio Enterprise](https://www.visualstudio.com/downloads/)
 ### Run a test case
 
 1. [Connect Microsoft Test Manager](../mtm/connect-microsoft-test-manager-to-your-team-project-and-test-plan.md) 
-   to your team project, and select your current test plan.
+   to your project, and select your current test plan.
 
 1. [Select a test case and run it](../mtm/run-manual-tests-with-microsoft-test-manager.md).
 

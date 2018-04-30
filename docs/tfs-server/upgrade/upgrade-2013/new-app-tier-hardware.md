@@ -4,12 +4,15 @@ description: TFS Application Tier will use different hardware than it's using ri
 ms.assetid: 88819042-702b-4a19-9c97-b16009ddad87
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 09/01/2016
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-admin
+ms.prod: devops-server
+ms.technology: tfs-admin
+ms.topic: conceptual
+monikerRange: 'tfs-2013'
 ---
 
-[//]: # (monikerRange: 'tfs-2013')
+
 
 # TFS Application Tier will use different hardware than it's using right now
 

@@ -2,11 +2,11 @@
 title: Resolve errors received when configuring features for TFS
 titleSuffix: TFS 
 description: Occurs when definitions in the team project conflict with definitions in the process templates uploaded to your team project collection.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: abab1c67-6aa8-494b-86ee-3bc97c650429
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 12/19/2017
 ---
 
@@ -18,7 +18,7 @@ ms.date: 12/19/2017
 
 You may be able to resolve errors and warnings that the [Configure Features](../configure-features-after-upgrade.md) wizard displays. These problems occur because definitions in the team project conflict with definitions in the process templates uploaded to your team project collection. You should change the process template to resolve the error and rerun the wizard. Or, you can change your team project and then rerun the wizard.    
 
->[!IMPORTANT]  
+> [!IMPORTANT]  
 >This topic applies only to team projects defined on an on-premises Team Foundation Server (TFS). 
 
   
@@ -154,6 +154,6 @@ You may be able to resolve errors and warnings that the [Configure Features](../
   
 0.  Verify that the tab shows up in the backlog item.  
   
-## Related notes
+## Related articles
 
 -  [Update a customized process template to access new features](../update-customized-process-template.md)

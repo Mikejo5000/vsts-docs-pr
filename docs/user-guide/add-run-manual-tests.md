@@ -1,15 +1,17 @@
 ---
-title: Add, run, and update inline tests | VSTS  
-description: Add, run, and update manual test cases when working in Visual Studio Team Services (VSTS)    
-ms.technology: vs-devops-overview
-ms.prod: vs-devops-alm
+title: Add, run, and update inline tests
+titleSuffix: VSTS 
+description: Add, run, and update manual test cases when working in Visual Studio Team Services  
+ms.technology: devops-new-user
+ms.prod: devops
 ms.assetid: 
 ms.manager: douge
 ms.author: kaelli
 ms.date: 08/24/2017
-ms.topic: get-started-article
+ms.topic: quickstart
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
+
 
 # Add, run, and update inline tests
 

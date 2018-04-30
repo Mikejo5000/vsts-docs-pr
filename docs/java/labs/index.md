@@ -1,14 +1,16 @@
 ---
 title: DevOps with VSTS for Java - Hands-on-Labs
 description: DevOps with Visual Studio Team Services for Java - Hands-on-Labs
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-java
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: conceptual
 ms.assetid:  
 ms.manager: douge
 ms.author:  
 ms.date: 01/25/2018
+monikerRange: '>= tfs-2017'
 ---
-[//]: # (monikerRange: '>= tfs-2017')
+
 
 [Visual Studio Team Services (VSTS)](https://www.visualstudio.com/products/visual-studio-team-services-vs) and [Team Foundation Server (TFS)](https://www.visualstudio.com/tfs/) provide an integrated set of services and tools to manage your software projects, from planning and development through testing and deployment to speed the development and delivery of your software applications across platforms, including iOS, Android, Java, Linux or Windows.
 

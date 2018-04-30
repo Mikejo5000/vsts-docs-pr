@@ -1,14 +1,15 @@
 ---
 title: Continuous Integration and Deployment | VSTS & TFS
 description: Understand the Agile tools supported in VSTS and TFS 
-ms.technology: vs-devops-overview 
-ms.prod: vs-devops-alm
+ms.technology: devops-new-user 
+ms.prod: devops
 ms.assetid: 51BD85DA-C07F-4BE5-A752-3E93DF238906
 ms.manager: douge
 ms.author: kaelli
 ms.date: 07/19/2017
+monikerRange: '>= tfs-2013'
 ---
-[//]: # (monikerRange: '>= tfs-2013')
+
 
 # Continuous integration and deployment  
 

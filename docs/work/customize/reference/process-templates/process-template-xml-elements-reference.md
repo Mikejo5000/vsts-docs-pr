@@ -1,11 +1,13 @@
 ---
-title: Process template XML elements reference | VSTS & TFS
+title: Process template XML elements reference
+titleSuffix: VSTS & TFS
 description: Processes the template for adding or removing plug-in files.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 68ae0569-a8b6-48c8-ba91-0c18372a2c64
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: reference
 ms.date: 02/24/2017
 ---
 
@@ -87,7 +89,7 @@ You can customize the root file for a process template to add or remove plug-in 
 |**groups**|Required child element of **ProcessTemplate**. Container element that defines the set of task groups that will run during project creation.<br />`<groups>`<br />      `<group> . . . </group>`<br />`</groups>`|  
 |**tasklist**|Specifies an XML file that contains the list of tasks to run. The list of tasks for a group must always be in a separate XML file. For more information about how to specify these files, see [Define the tasks to process a plug-in](define-tasks-to-process-a-plug-in.md).<br />`<taskList filename="filePath" />`| 
   
-## Related notes
+## Related articles
 -  [Overview of process template files](overview-process-template-files.md)   
 -  [Define the tasks to process a plug-in](define-tasks-to-process-a-plug-in.md)   
 -  [Define dependencies for task groups and tasks](define-dependencies-plug-ins-groups-tasks.md)   

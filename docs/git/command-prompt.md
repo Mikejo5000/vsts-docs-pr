@@ -3,13 +3,16 @@ title: Git command reference | VSTS & TFS
 description: Commands reference for common Git tasks in Visual Studio or the command line
 ms.assetid: FAED51BE-2CB0-46DE-8C72-E4EEF6CB8827
 toc: show
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git 
+ms.prod: devops
+ms.technology: devops-code-git 
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: reference
 ms.date: 03/14/2018
+monikerRange: '>= tfs-2013'
 ---
-[//]: # (monikerRange: '>= tfs-2013')
+
 
 #  Git command reference 
 #### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 Update 2

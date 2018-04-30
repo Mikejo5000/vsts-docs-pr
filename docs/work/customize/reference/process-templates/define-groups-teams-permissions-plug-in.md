@@ -1,11 +1,14 @@
 ---
-title: Define groups, teams, and permissions using the Groups and Permissions Plug-in | VSTS & TFS
-description: Customizes Groups and Permission plug-in to have access to groups, teams, add groups and users as members to groups, and grant permissions to the groups - Team Foundation Server (TFS) 
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Define groups, teams, and permissions for a process template
+titleSuffix: VSTS & TFS
+description: Customizes Groups and Permission plug-in to preconfigure  groups, teams, and user permissions
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 322a80cc-0396-43d7-8be3-63d5cce058d3
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: reference
+monikerRange: '>= tfs-2013 <= tfs-2018'
 ms.date: 09/08/2017
 ---
 
@@ -190,7 +193,7 @@ You must specify permissions for each group that you create. You use the **permi
 |**permissions**|Required child element of **group** and specifies the collection of permissions to apply to the group. The **permissions** container element must precede the **members** container element.<br />`<permissions>`<br />      `    <permission> . . . </permissions>`<br />`</permissions >`|  
 |**teamsettings**|Optional child element of **group**. Configures the team project as the default team, and optionally specifies team milestones with the **iterationPath** element. <br /> `<teamSettings areaPath="Area">`<br />      `. . .`<br />`</teamSettings>`|  
   
-## Related notes
+## Related articles
 -  [Configure initial groups, teams, members, and permissions](configure-initial-groups-teams-members-permissions.md)   
 -  [Control access to functional areas](control-access-to-functional-areas.md)   
 -  [Apply a field rule](../apply-rule-work-item-field.md)   

@@ -1,14 +1,16 @@
 ---
-title: Work item query task 
+title: Work item query task for Microsoft VSTS and TFS 
 description: Build and release task to ensure the number of matching items returned by a work item query in within the configured threshold in VSTS and TFS
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
 ms.assetid: F24517BD-FEA2-4EFF-8030-EF441B9C7F67
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: reference
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/19/2018
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
 
 # Utility: Query Work Items
 
@@ -37,7 +39,7 @@ For more information about using this task, see [Approvals and gates overview](.
 
 Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/QueryWorkItems).
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 ## YAML snippet
 
@@ -51,4 +53,4 @@ Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/mast
 #   minThreshold: 0
 ```
 
-[//]: # (::: moniker-end)
+::: moniker-end

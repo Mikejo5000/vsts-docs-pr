@@ -1,11 +1,14 @@
 ---
 title: SharePoint Integration 
-description: Index to topics for integrating or removing integration with SharePoint and Team Foundation Server (TFS)  
-ms.technology: vs-devops-reporting
-ms.prod: vs-devops-alm
+titleSuffix: TFS
+description: Index to topics for integrating or removing integration with SharePoint and Team Foundation Server   
+ms.technology: devops-analytics
+ms.prod: devops
+ms.topic: overview
 ms.assetid:  
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
 ms.date: 09/05/2017
 ---
 

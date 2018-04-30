@@ -1,11 +1,13 @@
 ---
-title: Add type definitions for work item categories to a process template | VSTS & TFS
-description: Add categories for your process template - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Add type definitions for work item categories to a process template
+titleSuffix: VSTS & TFS
+description: Add categories to your process template for Team Foundation Server 
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 93f146df-8424-4183-89f7-298943eb8c0f
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.manager: douge
+ms.topic: reference
 ms.date: 09/08/2017
 ---
 
@@ -71,7 +73,7 @@ The following example shows the syntax structure that defines a category that is
 |-------------|-----------------|  
 |**CATEGORIES**|Optional child element of the WorkItemTracking plug-in. Specifies the path and name of the file that contains the category definitions to be uploaded when the WorkItemTracking plug-in task is processed. <br />`<CATEGORIES fileName="CategoriesFilePathName" />`|
   
-## Related notes 
+## Related articles 
 - [Use categories to group work item types](../use-categories-to-group-work-item-types.md)
 - [CATEGORIES XML reference](../categories-xml-element-reference.md)
 - [Import and export categories](../witadmin/witadmin-import-export-categories.md)   

@@ -1,21 +1,24 @@
 ---
 title: CI/CD to Linux, Docker, and Azure Container Registry (ACR) 
 description: Set up a CI build for your ASP.NET Core app to Linux App Service using VSTS
+ms.prod: devops
+ms.technology: devops-cicd
 services: vsts
 documentationcenter: vs-devops-build
 ms.author: mlearned
+author: mlearned
 ms.manager: douge
 editor: ''
-
 ms.assetid: EF5F37B7-774B-410C-8A82-83F722EF9692
 ms.devlang: dotnetcore
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.tgt_pltfrm: acs
 ms.workload: ''
 ms.date: 02/07/2018
 ms.custom: mvc
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
+
 
 # Deploy your ASP.NET Core app as a container
 
@@ -68,7 +71,7 @@ Visual Studio 2017 can automate the creation of a CI/CD pipeline.  The CD toolin
 3.  Choose the **Container Registry** you created earlier.
 4.  Accept the default App Service name or Select **edit** to choose a new name.
 5.  Select **ok**, and monitor the output window for results.  
-6.  **Azure resources** including the App Service will be created.  **VSTS resources** such as a build definition, and a release definition will be created in the same team project that contains your source code.  You can monitor the configuration progress in the **Output** window in Visual Studio.    
+6.  **Azure resources** including the App Service will be created.  **VSTS resources** such as a build definition, and a release definition will be created in the same project that contains your source code.  You can monitor the configuration progress in the **Output** window in Visual Studio.    
 
     ![Visual Studio output window](_img/aspnet-core-to-acr/vsoutputs.png)
 7.  A **build** and **release** will then execute.  **Navigate** to the VSTS account and monitor the build and release processes until they complete.  This process may take several minutes.

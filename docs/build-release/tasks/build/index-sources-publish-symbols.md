@@ -1,14 +1,17 @@
 ---
 title: Index Sources & Publish Symbols build and release task
 description: Index Sources & Publish Symbols build and release task for Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.topic: reference
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: BD27A4F7-F870-4D90-AD3F-C74E2A94538B
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.date: 11/14/2017
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: '>= tfs-2015')
+
 
 # Build: Index Sources & Publish Symbols
 
@@ -135,7 +138,7 @@ None
     [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 ## YAML snippet
 
@@ -158,7 +161,7 @@ None
 #   SymbolsArtifactName: Symbols_$(BuildConfiguration)
 ```
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ## Use indexed symbols to debug your app
 

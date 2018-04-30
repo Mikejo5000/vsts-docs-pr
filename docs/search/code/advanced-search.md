@@ -1,14 +1,16 @@
 ---
 title: Advanced search options in Microsoft Code Search in VS VSTS and TFS
-description: Advanced options for Code Search in VSTS and Team Foundation Server
+description: How To Use Code Search - Advanced options for using Code Search across all your projects in VSTS and Team Foundation Server
 ms.assetid: 936AA33C-4AEF-461E-B49B-C98A59098282
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-search
+ms.prod: devops
+ms.technology: devops-collab
+ms.topic: conceptual
 ms.manager: douge
-ms.author: douge
-ms.date: 01/18/2018
+ms.author: ahomer
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2017'
 ---
-[//]: # (monikerRange: '>= tfs-2017')
 
 # How To: Use Code Search
 
@@ -78,7 +80,9 @@ Code Search remembers your last settings, such as the project and repository or 
 searched in. Clear all the checkboxes to search across all projects. Do this quickly and 
 easily with the **Clear all** links when you want to search in a different scope.
 
-### Narrow your search with Boolean operators
+In the results pane, Code Search highlights up to the first 100 hits or matches found in the target files.  
+
+### Narrow your search by using Boolean operators
  
 Narrow your search by using Boolean operators to combine search criteria.
 Combine multiple search criteria using `AND`, `OR`, or `NOT` (they must be 
@@ -99,24 +103,15 @@ For example:
 * `(validate NOT revisit) OR "release delayed"` finds files that contain the word **validate**
   but not the word **revisit** or files that contain the phrase **release delayed**.
 
-### Search for phrases with double-quotes
-
-To find an exact match to a set of words, enclose your search terms in double-quotes 
-to perform a _phrase search_. For example, `"Client not found"`. Within a phrase:
-
-* Boolean operators are treated as literal text.
-* You need to escape only the special characters `\` and `"`.
-
-
-### Broaden your search with wildcards
+### Broaden your search by using  wildcards
 
 Use the wildcard characters `*` and `?` to broaden your search criteria. For 
 example:
 
 * `CodeSenseHttp*` finds files containing words that start with **CodeSenseHttp**, 
   such as **CodeSenseHttpClient** and **CodeSenseHttpClientTest**.
-* `CodeX23?R` finds files containing words that start with **CodeX23**, have any 
-  alphanumeric character next, and end with **R**. For example, **CodeX234R** and **CodeX23QR**. 
+* `CodeA23?R` finds files containing words that start with **CodeA23**, have any 
+  alphanumeric character next, and end with **R**. For example, **CodeA234R** and **CodeA23QR**. 
 
 You can use wildcard characters anywhere in your search string **except** as 
 a **prefix** in a simple search string or a query that uses a 
@@ -138,6 +133,36 @@ of matches. For example, specify more characters of the word(s) you want to find
 or add a condition or filter to limit the number of possible matches.   
 
 ------------------
+
+<!--
+
+### Search for phrases
+
+To find an exact match to a set of words, enclose your search terms in double-quotes 
+to perform a _phrase search_. For example, `"Client not found"`. Within a phrase:
+
+* Boolean operators are treated as literal text.
+* The query language characters `:()[]*?` are treated as literal text.
+* You need to escape only the special characters `\` and `"`.
+
+### Search for special characters
+
+You can include special characters in a search string, or search specifically for special characters,
+according to the following rules:
+
+* Search for any special character that is not a part of the query language, 
+  (for example, excluding the characters `: ( )[ ]*?`) as either a simple search string
+  or a phrase search string. For example, `react-redux` or `"react-redux"` will produce the same results.
+
+* Search for a special character that is a part of the query language (`: ( )[ ]*?`)
+  by enclosing the search string within double-quotes. For example, `"flatten()"` will
+  find the literal string `flatten()`.
+
+* Search for a literal occurrence of the double-quote character `"` by preceding it with the
+  escape character `\` and enclosing the search string in double-quotes.
+  For example, `"\"react-redux\""` will find the literal string `"react-redux"`. 
+
+-->
 
 <a name="codefunctions"></a>
 ## Functions to find specific types of code

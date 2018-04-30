@@ -2,11 +2,12 @@
 title: History and auditing 
 titleSuffix: VSTS & TFS
 description: Track changes and use tools to support audit requirements when working in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) 
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: A5AC271A-8DF0-40AD-9867-1B1E9E5B1FE9
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: sample
 ms.date: 02/05/2018  
 ---
 
@@ -277,7 +278,7 @@ Test Suite
 	</FIELD>  
 	```
 
-## Related notes
+## Related articles
 To learn more about creating and saving queries, see also: 
 
 - [Query editor](using-queries.md)
@@ -290,5 +291,5 @@ See the [Work item tracking](https://docs.microsoft.com/rest/api/vsts/wit/)  for
 
 [!INCLUDE [temp](../_shared/rest-apis-queries.md)]
  
-[!INCLUDE [temp](../../_shared/help-support-shared.md)] 
+ 
  

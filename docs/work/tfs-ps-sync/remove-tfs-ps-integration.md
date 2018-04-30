@@ -1,12 +1,14 @@
 ---
-title: Remove PS-TFS integration | TFS    
+title: Remove PS-TFS integration
+titleSuffix: TFS   
 description: Remove the integration of TFS with Project Server from an on-premises Team Foundation Server upgraded to TFS 2017    
-ms.technology: vs-devops-wit   
-ms.prod: vs-devops-alm  
+ms.technology: devops-agile   
+ms.prod: devops  
 ms.assetid: B7FD5B66-CECC-48F6-B8A8-FF5D11B19D8B  
 toc: show
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
 ms.date: 09/19/2017  
 ---
 
@@ -100,7 +102,7 @@ To remove the Project Server tab and associated fields, run **witadmin** to expo
 
 Work item types that were mapped to Project Server will appear in the WIT category "Microsoft.Sync.ProjSrv.WorkitemCategory"? that indicates they are mapped to Project Server. You need to use the **witadmin** command to export the categories in the Team Project, remove this particular category and re-import using **witadmin**. 
 
->[!NOTE]  
+> [!NOTE]    
 >Remember the list of Work Item Types defined within the category as you'll need them later. 
 
 Example steps:
@@ -264,7 +266,7 @@ DELETE FROM <TFS Configuration Database>.dbo.tbl_CatalogResource
 	WHERE resourcetype = '289DD275-CECA-4698-8042-38D2E86FC682' and PartitionId>=0
 ```
  
-## Related notes
+## Related articles
 
 - [Synchronize TFS with Project Server, third party support](sync-ps-tfs.md)  
 - [Synchronize TFS with Project Server (TFS 2015 | TFS 2013)](synchronize-tfs-project-server.md)    

@@ -2,10 +2,13 @@
 title: Cross-origin resource sharing (CORS) with VSTS REST APIs
 description: Learn about using CORS with VSTS and TFS REST APIs
 ms.assetid: d7e3c119-5678-40e6-9c11-55a57c171278
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-integrate
+ms.prod: devops
+ms.technology: devops-ecosystem
+ms.topic: conceptual
 ms.manager: douge
+monikerRange: '>= tfs-2013'
 ms.author: elbatk
+author: elbatk
 ms.date: 08/04/2016
 ---
 

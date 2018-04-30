@@ -1,14 +1,16 @@
 ---
-title: Azure monitor task 
-description: Build and release task to observe the configured Azure monitor rules for active alerts in VSTS and TFS
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+title: Azure monitor task for Microsoft VSTS and TFS
+description: Build and release task to observe the configured Azure monitor rules for active alerts in VSTS and TFS with a build or release definition
 ms.assetid: FF2CCF1C-0237-451F-AA1F-654DB8C72089
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: reference
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/19/2018
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
 
 # Utility: Azure monitor
 
@@ -37,7 +39,7 @@ For more information about using this task, see [Approvals and gates overview](.
 
 Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureMonitor).
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 ## YAML snippet
 
@@ -53,4 +55,4 @@ Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/mast
     alertRules:
 ```
 
-[//]: # (::: moniker-end)
+::: moniker-end

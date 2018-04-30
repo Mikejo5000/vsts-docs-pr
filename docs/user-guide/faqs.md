@@ -1,14 +1,15 @@
 ---
 title: Questions and answers to support getting started VSTS & TFS
 description: Questions and answers to support getting started using the hosted cloud offering of Visual Studio Team Services (VSTS) or on-premises Team Foundation Server (TFS)  
-ms.technology: vs-devops-overview 
-ms.prod: vs-devops-alm
+ms.technology: devops-new-user 
+ms.prod: devops
 ms.assetid: 50CA182B-D305-41A9-8C8F-9EA80A89ED3C
 ms.manager: douge
 ms.author: kaelli
 ms.date: 03/02/2016
+monikerRange: '>= tfs-2013'
 ---
-[//]: # (monikerRange: '>= tfs-2013')
+
 
 # FAQs
 

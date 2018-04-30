@@ -1,13 +1,16 @@
 ---
 title: IntelliJ end-to-end workflow for your Java project with VSTS 
 description: Tutorial lab for an end-to-end IntelliJ workflow with Visual Studio Team Services (VSTS)
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build 
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: conceptual
+
 ms.manager: douge
 ms.author: douge
 ms.date: 01/22/2018
+monikerRange: '>= tfs-2017'
 ---
-[//]: # (monikerRange: '>= tfs-2017')
+
 
 # Build and deploy a Java project with IntelliJ and VSTS
 

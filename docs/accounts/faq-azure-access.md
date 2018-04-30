@@ -1,15 +1,16 @@
 ---
 title: Troubleshoot access with Azure Active Directory (Azure AD)
-description: Troubleshoot access with Azure Active Directory (Azure AD)
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-setup
+description: Need to understand Azure AD groups or how to add users or connect or disconnect to and from your directory? Read these frequently asked questions (FAQs)
+ms.prod: devops
+ms.technology: devops-accounts
 ms.assetid: d51de748-c53e-4468-ad9b-275d6bf1a4dd
+ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
+author: chcomley
 ms.date: 02/27/2018
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
-
 # Troubleshoot access with Azure Active Directory (Azure AD)
 
 **VSTS**
@@ -85,8 +86,7 @@ the VSTS group where you add them.
 A: No, because these groups are created and managed in Azure. 
 VSTS doesn't store or sync member status for Azure AD groups. 
 So, to manage Azure AD groups, use the 
-[Azure classic portal](https://manage.windowsazure.com)
-or [Azure portal](https://portal.azure.com), Microsoft Identity Manager (MIM), 
+[Azure portal](https://portal.azure.com), Microsoft Identity Manager (MIM), 
 or the group management tools that your organization supports.
 
 ### Q: How do I tell the difference between a VSTS group and an Azure AD group?
@@ -121,9 +121,7 @@ A: The Security tab shows Azure AD group members
 only after they sign in to your VSTS account
 and have an access level assigned to them.
 
-To see all Azure AD group members, use the
-[Azure classic portal](https://manage.windowsazure.com),
-[Azure portal](https://portal.azure.com), Microsoft Identity Manager (MIM),
+To see all Azure AD group members, use the [Azure portal](https://portal.azure.com), Microsoft Identity Manager (MIM),
 or the group management tools that your organization supports.
 
 ### Q: Why doesn't the team members widget show all Azure AD group members?
@@ -334,19 +332,12 @@ A: This might happen because:
 
 ### Q: What if my VSTS account is already linked to an Azure subscription?
 
-A:  You can [change the Azure subscription](../billing/change-azure-subscription.md)
-that's linked to your VSTS account.
-However, unlinking will cause your account
-to go back to the
-[free account limits](../billing/faq-billing-setup.md#unlinking),
-and some users might lose access until you re-link.
+A:  You can [change the Azure subscription](../billing/change-azure-subscription.md) that's linked to your VSTS account.
+However, unlinking will cause your account to revert to the free tier. See the [VSTS billing FAQ](../billing/vsts-billing-faq.md) for details.
 
 ### Q:  What happens if I unlink my Azure subscription while my VSTS account is connected to a directory?
 
-A:  This doesn't affect your account's connection to the directory,
-but unlinking will cause your account to go back to the
-[free account limits](../billing/faq-billing-setup.md#unlinking),
-and some users might lose access until you re-link.
+A:  See the [VSTS billing FAQ](../billing/vsts-billing-faq.md) for details.
 
 <a name="AlreadyConnected"></a>
 

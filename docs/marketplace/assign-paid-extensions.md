@@ -1,15 +1,18 @@
 ---
 title: Assign paid extension access to users for VSTS and TFS
 description: Assign paid extension access to users for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-marketplace
+ms.prod: devops
+ms.technology: devops-marketplace
 ms.assetid: 13c4b901-70d6-488f-9ee5-00eb3121b977 
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 10/17/2017
+ms.topic: conceptual
+monikerRange: '>= tfs-2013'
 ---
 
-[//]: # (monikerRange: '>= tfs-2013') 
+ 
 
 # Assign paid extension access to users
 
@@ -22,7 +25,7 @@ To assign extensions, you'll need VSTS or TFS [project collection administrator 
 > You only have to assign extensions to users who need access. If you have [Visual Studio subscribers](https://marketplace.visualstudio.com/subscriptions), 
 > they automatically get access to specific extensions that are included with their subscriptions as benefits, like Test Manager. If you installed these extensions, you don't have to assign them to Visual Studio subscribers in your account. 
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 
 ## VSTS 
@@ -51,9 +54,9 @@ To assign extensions, you'll need VSTS or TFS [project collection administrator 
 0.	Tell your team about this extension, so they can start using its capabilities.
 
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range=">= tfs-2013 < vsts")
+::: moniker range=">= tfs-2013 < vsts"
 
 
 ## TFS
@@ -71,4 +74,4 @@ To assign extensions, you'll need VSTS or TFS [project collection administrator 
 
 0.  Tell your team about this extension, so they can start using its capabilities.
 
-[//]: # (::: moniker-end)
+::: moniker-end

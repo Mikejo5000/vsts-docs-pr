@@ -1,11 +1,11 @@
 ---
 title: FIELD (Workflow) element reference | VSTS & TFS
 description: Syntax and usage of the FIELD element used to specify rules and conditions on fields within the workflow of a work item type 
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 62ee6ea1-bb55-4462-93ff-224ad799812a
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 02/10/2017
 ---
 
@@ -90,7 +90,7 @@ You use the **FIELD** (Workflow) element to specify the rules and conditions tha
  `FIELD` (Workflow) is a required child element of `FIELDS` (Workflow).  
 
   
-## Related notes   
+## Related articles   
 - [Change the workflow](change-workflow-wit.md)  
 - [Customize your work tracking experience](../customize-work.md)  
   

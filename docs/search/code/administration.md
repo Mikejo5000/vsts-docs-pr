@@ -2,13 +2,15 @@
 title: Code and Work Item Search set up
 description: Setup notes and administration links for Microsoft Code Search & Work Item Search in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.assetid: A78DC9CF-4ADD-46D7-9E25-D1A0764FCB06
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-search
+ms.prod: devops
+ms.technology: devops-collab
+ms.topic: conceptual
 ms.manager: douge
-ms.author: douge
-ms.date: 01/18/2018
+ms.author: ahomer
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2017'
 ---
-[//]: # (monikerRange: '>= tfs-2017')
 
 # Set up and administer Microsoft Code Search and Work Item Search
 
@@ -16,15 +18,15 @@ ms.date: 01/18/2018
 
 In this topic:
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 * **Configure Code Search in VSTS**
   - [Install the Code Search extension](#config-ts)
   - [Uninstall the Code Search extension](#uninstall-ts)<p />
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range=">= tfs-2017 < vsts")
+::: moniker range=">= tfs-2017 < vsts"
 
 * **Configure Search in Team Foundation Server**
   - [Configure Search](#config-tfs)
@@ -38,13 +40,13 @@ In this topic:
 Also see [Install and configure TFS](../../tfs-server/install/get-started.md)
 and [TFS requirements and compatibility](../../accounts/requirements.md).
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 >Users with at least a **Basic** access can use Code Search. 
 Stakeholders do not have access to code, and therefore no access to Code Search. 
 All users have access to Work Item Search.
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 <a name="config-ts"></a>
 ## Install Code Search in VSTS
@@ -60,9 +62,9 @@ For more details, see [Install an extension](../../marketplace/install-vsts-exte
 
 See [Uninstall or disable an extension](../../marketplace/uninstall-disable-vsts-extensions.md) in the Marketplace documentation. 
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range=">= tfs-2017 < vsts")
+::: moniker range=">= tfs-2017 < vsts"
 
 <a name="config-tfs"></a>
 ## Configure Code Search/Work Item Search in Team Foundation Server
@@ -187,7 +189,7 @@ Consider the following when configuring Search:
   When initially configuring Search, you can set a checkbox to **Automatically install Code Search extension 
   for existing and new Tem Project Collections** to automate this process.
 
-* If you do not set the checkbox to install the Code Search extension for all your Team Project Collection, while 
+* If you do not set the checkbox to install the Code Search extension for all your Project Collection, while 
   configuring Search, your Project Collection administrator can install it from Visual Studio Marketplace. Make 
   sure you navigate to the Marketplace from your TFS portal page. 
 
@@ -694,7 +696,7 @@ name of the server where Search is installed:
 1. If performance does recover, consider locating Code Search 
    on a separate server if you have not already done so.
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 <a name="support"></a>
 

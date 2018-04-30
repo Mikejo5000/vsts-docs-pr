@@ -4,12 +4,15 @@ description: Rebuild the client cache for Team Foundation Server
 ms.assetid: ac682990-f57e-49a8-8a26-caf3b2de7575
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/18/2016
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-admin
+ms.prod: devops-server
+ms.technology: tfs-admin
+ms.topic: conceptual
+monikerRange: '>= tfs-2013 < tfs-2018'
 ---
 
-[//]: # (monikerRange: '>= tfs-2013 < tfs-2018')
+
 
 # Rebuild the client cache for Team Foundation Server
 

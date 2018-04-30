@@ -1,13 +1,15 @@
 ---
 title: Syntax usage for Markdown files, widgets, wikis, and pull requests 
 titleSuffix: VSTS & TFS 
-description: Share information, add tables & mathematical notation using markdown within pull requests, project pages, readme files, dashboards, and widgets
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-overview
+description: Share information, add tables & mathematical notation using markdown within pull requests, project pages, readme files, dashboards, and widgets  
+ms.prod: devops
+ms.technology: devops-collab
 ms.assetid: 43D2156E-2E20-42B8-B816-43E95CB479C5  
 ms.manager: douge
-ms.author: kaelli
-ms.topic: get-started-article 
+ms.author: kaelliauthor: KathrynEE
+ms.reviewer: sancha
+ms.topic: reference
+monikerRange: '>= tfs-2015'
 ms.date: 03/06/2018
 ---
 
@@ -17,14 +19,34 @@ ms.date: 03/06/2018
 
 Having the right guidance at the right time is critical to success. To support your team or contributors to your project, use [markdown](https://en.wikipedia.org/wiki/Markdown) to add rich formatting, tables, and images to your project pages, readme files, dashboards, and pull request comments.   
 
-You can provide guidance to your team in these places using markdown:   
-  
-- [Project vision page or Welcome pages](project-vision-status.md)  
-- [Team project wiki](add-edit-wiki.md)    
-- [Readme files](../git/create-a-readme.md) 
-- [Pull request comments](../git/pull-requests.md) 
-- [Add Markdown to a dashboard](../report/dashboards/add-markdown-to-dashboard.md)    
+You can provide guidance to your team in these places using markdown: 
 
+
+::: moniker range="vsts"   
+- [Team project wiki (provisioned wiki)](add-edit-wiki.md)
+- [Pulbish code as wiki](publish-repo-to-wiki.md)
+- [Add Markdown to a dashboard](../report/dashboards/add-markdown-to-dashboard.md)  
+- [Project vision page or Welcome pages](project-vision-status.md)    
+- [Repository Readme files](../git/create-a-readme.md) 
+- [Pull request comments](../git/pull-requests.md)  
+::: moniker-end
+
+
+::: moniker range="tfs-2018"     
+- [Add and edit wiki pages](add-edit-wiki.md)    
+- [Add Markdown to a dashboard](../report/dashboards/add-markdown-to-dashboard.md)  
+- [Project vision page or Welcome pages](project-vision-status.md)  
+- [Repository Readme files](../git/create-a-readme.md) 
+- [Pull request comments](../git/pull-requests.md) 
+::: moniker-end
+
+::: moniker range=">= tfs-2015 <= tfs-2017"        
+- [Add Markdown to a dashboard](../report/dashboards/add-markdown-to-dashboard.md)  
+- [Project vision page or Welcome pages](project-vision-status.md)  
+- [Repository Readme files](../git/create-a-readme.md) 
+- [Pull request comments](../git/pull-requests.md) (Supported in TFS 2017  and later versions)
+::: moniker-end  
+    
 In this topic you'll find some basic Markdown syntax guidance. You can use both common [Markdown conventions](http://daringfireball.net/projects/markdown/syntax) and [GitHub-flavored extensions](https://help.github.com/articles/github-flavored-markdown/).
 
 ## Headers
@@ -44,15 +66,35 @@ Start a line with a hash character `#` to set a heading. Organize your remarks w
 
 **Result:**      
 
-<img src="_img/markdown-guidance/mrkdown-headers.png" alt="Web portal, Headers 1 through 5" style="border: 1px solid #C3C3C3;" />  � 
+<img src="_img/markdown-guidance/mrkdown-headers.png" alt="Web portal, Headers 1 through 5" style="border: 1px solid #C3C3C3;" />     
 
 ## Paragraphs and line breaks
 
 Make your text easier to read by breaking it up with paragraphs or line breaks.  
 
+::: moniker range="vsts"
+
+In pull request comments, press Enter to insert a line break and begin text on a new line. 
+
+While in a Markdown file, wiki, or widget, enter two spaces prior to the line break to begin a new paragraph, or enter two line breaks consecutively to begin a new paragraph.   
+
+::: moniker-end
+
+::: moniker range=">= tfs-2018"
 In pull request comments and the wiki, press Enter to insert a line break and begin text on a new line. 
 
-In a Markdown file or widget, enter two spaces prior to the line break to begin a new paragraph, or enter two line breaks consecutively to begin a new paragraph.   
+In a Markdown file or widget, enter two spaces prior to the line break to begin a new paragraph, or enter two line breaks consecutively to begin a new paragraph.
+
+::: moniker-end
+
+::: moniker range="tfs-2017"
+
+In pull request comments, press Enter to insert a line break and begin text on a new line. 
+
+In a Markdown file or widget, enter two spaces prior to the line break to begin a new paragraph, or enter two line breaks consecutively to begin a new paragraph.
+
+::: moniker-end
+   
 
 **Example - pull request comment:**
 
@@ -78,7 +120,7 @@ Add two spaces prior to the end of the line.
 
 This adds space in between paragraphs.
 
- 
+
 ## Quotes
 
 Quote previous comments or text to set context for your comment or text.
@@ -185,7 +227,9 @@ Ordered lists start with a number followed by a period for each list item. Unord
 
 ## Links
 
-In pull request comments and wiki, HTTP and HTTPS URLs are automatically formatted as links. Also, within pull requests, you can link to work items by typing the # key and a work item ID, and then choosing the work item from the list.
+In pull request comments and wikis, HTTP and HTTPS URLs are automatically formatted as links. Also, within pull requests, you can link to work items by typing the # key and a work item ID, and then choosing the work item from the list.
+
+You can escape auto suggestion of work items by prefixing # with a backslash (`\`). E.g. This can be useful if you want to use # for color hex codes.   
 
 In markdown files and widgets, you can set text hyperlinks for your URL using the standard markdown link syntax:
 
@@ -227,13 +271,23 @@ When linking to another Markdown page in the same Git or TFVC repository, the li
 
 [C# language reference](https://msdn.microsoft.com/en-us/library/618ayhy6.aspx)
 
+
+::: moniker range=">= tfs-2018"
+
 <a id="link-work-items">  </a>
 ### Link to work items from a Wiki page
- 
->[!NOTE]  
->**Feature availability**: You can use the **#ID** control to link to a work item from within a Wiki page from your VSTS account or TFS 2018.   
 
 Simply enter the pound sign (`#`) and enter a work item ID. 
+
+::: moniker-end
+
+::: moniker range="tfs-2018"
+> [!NOTE]  
+> This feature is available with TFS 2018.2 and later versions.  
+::: moniker-end
+
+
+
 
 <a id="relative-links">  </a>
 ### Source control relative links
@@ -275,7 +329,7 @@ The ID is all lower case, and the link is case sensitive, so be sure to use lowe
 You can also reference headings within another Markdown file:
 
 <pre>
-[text to display](./target.md#heading id)  
+[text to display](./target.md#heading-id)  
 </pre>
 
 
@@ -345,11 +399,24 @@ a clear name to description mapping.
 | Cell B1 | Cell B2 | Cell B3<br/>second line of text |  
 
 
+::: moniker range=">= tfs-2017"
+## Checklist or task list in pull requests or markdown 
 
-## Checklist or task list 
-Use `[ ]` or `[x]` to support checklists. You need to precede the checklist with either `-<space>` or `1.<space>` (any numeral).
+Lightweight task lists are a great way to track progress on a list of todos as either a pull request creator or reviewer in the description or a single, consolidated comment. Click the Markdown toolbar to get started or apply the format to selected text.
 
-**Example:**
+You can Use `[ ]` or `[x]` to support checklists. You need to precede the checklist with either `-<space>` or `1.<space>` (any numeral).
+
+**Example - Apply the task list markdown to a higlighted list**
+
+> [!div class="mx-imgBorder"]  
+> ![Apply markdown task list format to a highlighted list in a PR](_img/markdown-guidance/checklist-pr-apply.png) 
+
+Once you’ve added a task list, you can simply check the boxes to mark items as completed. These are expressed and stored within the comment as [ ] and [x] in Markdown. 
+
+> [!div class="mx-imgBorder"]  
+> ![Apply markdown task list format to a highlighted list in a PR](_img/markdown-guidance/checklist-pr-applied-check.png) 
+
+**Example - Format a list as a task list**
 
 <pre>
 - [ ] A  
@@ -364,11 +431,13 @@ Use `[ ]` or `[x]` to support checklists. You need to precede the checklist with
 <br/>
 **Result:**  
  
-<img src="_img/markdown-guidance/markdown-checklists.png" alt="Checklists" style="border: 1px solid #C3C3C3;" />  �
+<img src="_img/markdown-guidance/markdown-checklists.png" alt="Checklists" style="border: 1px solid #C3C3C3;" />    
 
 > [!NOTE]   
 > A checklist within a table cell isn't supported. 
  
+::: moniker-end
+
 ## Emphasis (bold, italics, strikethrough)  
 
 You can emphasize text by applying bold, italics, or strikethrough to characters: 
@@ -451,6 +520,7 @@ Console.WriteLine("Hello, World!");
 Console.WriteLine("Hello, World!");
 ```
 
+::: moniker range=">= tfs-2017"
 ## Emoji
 
 In pull request comments and wiki pages, you can use emojis to add character and react to comments in the request. Type in what you're feeling surrounded by `:` characters to get a matching emoji in your text. The [full set of emojis](http://www.webpagefx.com/tools/emoji-cheat-sheet/) are supported.
@@ -476,6 +546,7 @@ To escape emojis, enclose them using the \` character.
 
  `:smile:` `:)` `:angry:`
 
+::: moniker-end
 
 ## Special characters
 
@@ -520,33 +591,57 @@ To escape emojis, enclose them using the \` character.
 </table>
 
 
+::: moniker range=">= tfs-2017"
 
 <a name="attach"></a>
 ## Attachments
 
 In pull request comments and wiki pages, you can attach files to illustrate your point or to give more detailed reasoning behind your suggestions. To attach a file, drag and drop it into the comment field or wiki page edit experience. You can also select the paper-clip icon in the upper-right of the comment box or the format pane in wiki page. 
+::: moniker-end
 
-<img src="_img/markdown-guidance/attach_files.png" alt="Web portal, Pull Request, Attach files via drag and drop i" style="border: 1px solid #C3C3C3;" />  � 
+::: moniker range="tfs-2017"
+> [!NOTE]  
+> Attachments in pull requests is available with TFS 2017.1 and later versions. 
+::: moniker-end
+
+
+::: moniker range=">= tfs-2017"
+
+<img src="_img/markdown-guidance/attach_files.png" alt="Web portal, Pull Request, Attach files via drag and drop i" style="border: 1px solid #C3C3C3;" />     
 
 If you have an image in your clipboard, you can paste it from the clipboard into the comment box or wiki page and it will render directly into your comment or wiki page.
 
 Attachments support the following file formats:
 
-- Images: PNG (.png), GIF (.gif), JPEG (both .jpeg and .jpg)
-- Documents:  Word (.docx), Excel (.xlsx and .csv), and Powerpoint (.pptx), text files (.txt), and PDFs (.pdf)
-- Compressed files: ZIP (.zip) and GZIP (.gz)
-- Video files: MOV (.mov), MP4 (.mp4)
+> [!div class="mx-tdCol2BreakAll"]    
+> |    Type    | File formats |
+> |------|---------| 
+> | Code | CS (.cs), Extensible Markup Language (.xml), JavaScript Object Notation (.json), Layer (.lyr), Windows PowerShell script (.ps1), Roshal Archive (.rar), Remote Desktop Connection (.rdp), Structured Query Language (.sql)   | 
+> | Compressed files | ZIP (.zip) and GZIP (.gz) | 
+> | Documents | Markdown (.md), Microsoft Office Message (.msg), Microsoft Project (.mpp), Word (.doc and .docx), Excel (.xls, .xlsx and .csv), and Powerpoint (.ppt and .pptx), text files (.txt), and PDFs (.pdf) | 
+> | Images | PNG (.png), GIF (.gif), JPEG (both .jpeg and .jpg) | 
+> | Visio | VSD (.vsd and .vsdx)  | 
+> | Video | MOV (.mov), MP4 (.mp4) | 
 
 Attaching non-image files creates a link to the file in your comment. Update the description text between the brackets to change the text displayed in the link.
 Attached image files render directly into your comment or wiki pages. 
 
 Once you save or update a comment or wiki page with an attachment, you can see the attached image(s) and can select links to download attached files.
 
+::: moniker-end
+
+::: moniker range=">= tfs-2018"
 <a name="html"></a>
 ## HTML Tags
 
-In wiki pages, you can also create rich content using HTML tags. 
-
+In wiki pages, you can also create rich content using HTML tags.
+::: moniker-end
+::: moniker range="tfs-2018"
+> [!NOTE]  
+> Pasting rich content as HTML is supported in TFS 2018.2 and later versions. 
+::: moniker-end
+ 
+::: moniker range=">= tfs-2018"
 **Example - Embedded video**
 
 ```HTML
@@ -586,17 +681,25 @@ In wiki pages, you can also create rich content using HTML tags.
 <p><small>Disclaimer: Wiki also supports showing small text</small></p>
 <p><big>Bigger text</big></p> 
 
+::: moniker-end
+
+::: moniker range=">=tfs-2018"
 
 <a id="mathematical-notation">  </a>
 ## Mathematical notation and characters 
-
-> [!NOTE]   
-> **Feature availability**: This feature is currently supported within Wiki pages and pull requests for VSTS accounts.   
  
 Both inline and block [KaTeX](https://khan.github.io/KaTeX/function-support.html) notation is supported in wiki pages and pull requests.  This includes inserting symbols, Greek letters, mathematical operators, powers and indices, fractions and binomials, and other KaTeX supported elements.   
 
 To include mathematical notation, surround the mathematical notation with a `$` sign, for inline, and `$$` for block,  as shown in the following examples: 
 
+::: moniker-end
+
+::: moniker range="tfs-2018"
+> [!NOTE]  
+> This feature is supported within Wiki pages and pull requests for TFS 2018.2 or later versions.
+::: moniker-end
+
+::: moniker range=">=tfs-2018"
 ###Example: Greek characters
 ```KaTeX
 $
@@ -646,10 +749,10 @@ $$
 > [!div class="mx-imgBorder"]
 ![Greek letters](_img/markdown-guidance/mathematical-notation-sums-integrals.png)
 
+::: moniker-end
 
 
-
-## Related notes  
+## Related articles  
 
 - [Project vision page or Welcome pages](project-vision-status.md) 
 - [Readme files](../git/create-a-readme.md) 
@@ -659,4 +762,3 @@ $$
 - [Widget catalog](../report/dashboards/widget-catalog.md) 
 - [Wiki](add-edit-wiki.md)
   
-[!INCLUDE [temp](../_shared/help-support-shared.md)]  �

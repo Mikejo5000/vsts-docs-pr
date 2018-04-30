@@ -1,14 +1,16 @@
 ---
 title: Exploratory testing using Microsoft Test Manager
-description: Manual and exploratory testing - Exploratory testing using Microsoft Test Manager
+description: Manual and exploratory testing - Exploratory testing using Microsoft Test Manager when you want to test web applications
 ms.assetid: bf3fc3b0-7e43-407c-b2bc-dcf773ae889f
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-manual
+ms.prod: devops
+ms.technology: devops-test
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/18/2018
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: ">= tfs-2015")
 
 # Exploratory testing using Microsoft Test Manager
 

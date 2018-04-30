@@ -1,11 +1,11 @@
 ---
 title: Define link controls, restrict link relationships | VSTS & TFS
 description: Controls and restrict the link relationships that the team members can view and make from that control to include only links to other features - Team Foundation Server (TFS) 
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 994c90ad-e61c-41ca-ae78-96fdb59c7312
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 02/14/2017
 ---
 
@@ -13,7 +13,7 @@ ms.date: 02/14/2017
 
 <b>TFS 2017 (Hosted XML) | TFS 2015 | TFS 2013</b>
 
->[!IMPORTANT]  
+> [!IMPORTANT]  
 >This topic applies to team project customization for the On-premises XML process model. For the Hosted XML process model, see [LinksControlOptions XML elements](linkscontroloptions-xml-elements.md). (Customizing the link controls isn't a supported feature For the Inheritance process model.)  
 >
 >For an overview of process models, see [Customize your work tracking experience](../customize-work.md).  
@@ -203,6 +203,6 @@ When you add a link control to a work item form, you can specify filters that re
   
 ```    
   
-## Related notes 
+## Related articles 
 -  [Link controls, restrictions, and fields](../../track/linking-attachments.md)   
 -  [LinksControlOptions XML element reference](linkscontroloptions-xml-elements.md)    

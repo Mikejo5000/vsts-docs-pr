@@ -2,13 +2,16 @@
 title: Review and merge code with pull requests | VSTS & TFS
 description:  Conduct a code review in a Git with VSTS or TFS, create a pull request.
 ms.assetid: 4C9DFD24-E894-454A-A080-DA511C90CA74
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git 
+ms.prod: devops
+ms.technology: devops-code-git 
 ms.manager: douge
 ms.author: sdanie
-ms.date: 03/14/2018
+author: steved0x
+ms.topic: conceptual
+ms.date: 04/03/2018
+monikerRange: '>= tfs-2013'
 ---
-[//]: # (monikerRange: '>= tfs-2013')
+
 
 #  Review code with pull requests
 
@@ -23,17 +26,15 @@ Reviewers can step through the proposed changes, leave comments, and vote to app
 
 New to pull requests? [Learn more](https://www.visualstudio.com/learn/git-pull-requests/) about how to get feedback with Git pull requests.
 
-> [!NOTE]
-> You can manage pull requests and other resources in VSTS and Team Foundation Server 2017 Update 2 or later from the command line with the **[VSTS CLI (Preview)](https://docs.microsoft.com/cli/vsts/overview?view=vsts-cli-latest)**.
-
 ## Create a new pull request
 
 Create a new pull request from:
 
-- Pushed feature branches to your Git repo 
-- The **Development** section in a linked work item
-- The **Pull Requests** tab in the **Code** view on the web
-- Team Explorer in Visual Studio     
+- [Pushed feature branches to your Git repo](#after-pushing-a-branch)
+- [The **Development** section in a linked work item](#from-a-linked-work-item)
+- [The **Pull Requests** tab in the **Code** view on the web](#from-the-code-view-on-the-web)
+- [Team Explorer in Visual Studio](#from-visual-studio) 
+- [Using the VSTS CLI (Preview)](#from-the-vsts-cli-preview)   
 
 
 ### After pushing a branch
@@ -85,6 +86,16 @@ Initiate pull requests directly from Visual Studio.
   You can also initiate pull requests from Visual Studio from the **Branches** view in Team Explorer by right-clicking the branch name and selecting **Create pull request** while connected to your VSTS Project.
 
     ![Pull Requests](_img/pull-requests/new-pr-from-branch.png)
+
+### From the VSTS CLI (Preview)
+
+You can now manage pull requests and other resources in VSTS and Team Foundation Server 2017 Update 2 or later from the command line with the **[VSTS CLI](https://docs.microsoft.com/cli/vsts/overview)**.
+
+For a list of commands to create and manage pull requests, see [Manage pull requests](https://docs.microsoft.com/cli/vsts/code/pr).
+
+For more information about working with the VSTS CLI, see [Get started with the VSTS CLI](https://docs.microsoft.com/cli/vsts/get-started).
+
+
 
 <a name="finish"></a>
 
@@ -163,19 +174,19 @@ Keep these fields up to date so reviewers know what the changes in the pull requ
 
 Manage pull requests you own or are assigned to with the **Pull Requests** tab in the Code view on the web.
 
-[//]: # (::: moniker range=">= tfs-2017") 
+::: moniker range=">= tfs-2017" 
 
 Select **Active** to show all active pull requests for the current repo. 
 
-[//]: # (::: moniker-end) 
+::: moniker-end 
 
-[//]: # (::: moniker range=">= tfs-2017") 
+::: moniker range=">= tfs-2017" 
 
 Select **Completed** or **Abandoned** to bring up a history of closed pull requests. 
 
 ![Viewing completed and abandoned pull requests in VSTS](_img/pull-requests/pr_status_widget.png) 
 
-[//]: # (::: moniker-end) 
+::: moniker-end 
 
 ## Review a pull request 
 
@@ -285,7 +296,7 @@ Linked work items are also updated showing the pull request completion.
 
 ![Linked Work Items showing completed pull requests](./_img/pull-requests/pr_workitem_complete.png)
 
-[//]: # (::: moniker range=">= tfs-2017") 
+::: moniker range=">= tfs-2017" 
 
 ### Complete automatically
 
@@ -301,7 +312,7 @@ Select **Cancel auto-complete** to turn off auto-complete and return the pull re
 >[!NOTE]
 >The **Auto-complete** option is available in VSTS and TFS 2017 and higher, and is only present when you have branch policies that must be satisfied before the pull request can be completed. If you don't see **Auto-complete**, it is because you don't have any branch policies. For more information, see [Branch policies](branch-policies.md).
 
-[//]: # (::: moniker-end) 
+::: moniker-end 
 
 ### Abandon your changes
 
@@ -310,7 +321,7 @@ The abandoned pull request will still be viewable on the web and stays linked to
 
 Reactivate an abandoned pull request at any time by selecting the pull request from the **Abandoned** tab in the **Pull Request** view and selecting  **Reactivate**.
 
-[//]: # (::: moniker range=">= tfs-2017") 
+::: moniker range=">= tfs-2017" 
 
 <a name="notifications"></a>
 ## Receiving notification of pull request updates
@@ -353,7 +364,7 @@ Cherry-picking a pull request in this way creates a new branch with the copied c
 In the dialog that appears, enter the branch you want to merge the copied changes into in the **Target branch** field and a new branch that will contain the copied changes in the **Topic branch name** field, then select **Cherry-pick**.
 If there are no conflicts between the target branch and the newly created topic branch, you can then select **Create pull request** to merge the topic branch into the target branch to complete the cherry-pick.
 
-[//]: # (::: moniker-end) 
+::: moniker-end 
 
 ## Set a new default branch    
 

@@ -4,12 +4,15 @@ description: Set up SQL Server for TFS
 ms.assetid: 28a1ad64-07b6-44d2-aa24-acbb0d2d8004
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 09/01/2016
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-admin
+ms.prod: devops-server
+ms.technology: tfs-admin
+ms.topic: conceptual
+monikerRange: 'tfs-2013'
 ---
 
-[//]: # (monikerRange: 'tfs-2013')
+
 
 # Set up SQL Server for TFS
 

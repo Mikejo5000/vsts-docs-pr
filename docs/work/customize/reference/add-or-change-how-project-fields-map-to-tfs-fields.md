@@ -1,13 +1,16 @@
 ---
-title: Change how Project fields map to TFS fields | TFS
-description: Customize how data is published and refreshed by modifying the Microsoft Project mapping file for Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Change how Project fields map to fields
+titleSuffix: VSTS & TFS
+description: Customize how data is published and refreshed by modifying the Microsoft Project mapping file for Team Foundation Server  
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 0d7ae7ad-a329-4356-a0b2-57d31a96f16f
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.manager: douge
+ms.topic: reference
 ms.date: 02/22/2017 
 ---
+
 # Add or change how Project fields map to TFS fields
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]  
@@ -35,7 +38,7 @@ You can customize how data is published and refreshed by modifying the Microsoft
   
      **Use the TFSFieldMapping command**. To modify the Microsoft Project field mapping file for a team project, you must first download the file.  
   
-## Related notes 
+## Related articles 
 -  [Address inaccuracies published for summary values](../../../report/sql-reports/address-inaccuracies-published-for-summary-values.md)   
 -  [Work in Excel and Project](../../backlogs/office/track-work-vsts-tfs.md)   
 -  [Create your backlog and tasks using Project](../../backlogs/office/create-your-backlog-tasks-using-project.md)

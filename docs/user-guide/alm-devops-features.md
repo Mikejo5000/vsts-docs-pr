@@ -1,16 +1,18 @@
 ---
-title: Feature overview for VSTS and TFS
-description: Comprehensive index to all features provided by Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) 
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-overview  
+title: Feature overview 
+titleSuffix: VSTS & TFS 
+description: Comprehensive index to all features in Visual Studio Team Services & Team Foundation Server 
+ms.prod: devops
+ms.technology: devops-new-user  
 ms.article: get-started-article
 ms.assetid: 330E6DA5-3DC9-432D-B3CA-BF999F151733
 ms.manager: douge
 ms.author: kaelli
-ms.topic: get-started-article 
+ms.topic: reference
 ms.date: 10/09/2017
+monikerRange: '>= tfs-2013'
 ---
-[//]: # (monikerRange: '>= tfs-2013')
+
 
 # Features
 
@@ -314,7 +316,7 @@ Use features supported by these familiar clients to manage your project and illu
 </tbody>
 </table>
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 <a id="customize-vsts">  </a>
 
@@ -414,9 +416,9 @@ Use features supported by these familiar clients to manage your project and illu
 </tbody>
 </table>
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range=">= tfs-2013 <= tfs-2018")
+::: moniker range=">= tfs-2013 <= tfs-2018"
 
 <a id="customize-tfs"></a>
 
@@ -474,7 +476,7 @@ Use features supported by these familiar clients to manage your project and illu
 </tbody>
 </table>
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 <a id="kanban"></a>
 
@@ -1015,7 +1017,7 @@ Use features supported by these familiar clients to manage your project and illu
 </tbody>
 </table>
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 <a id="package-management"></a>
 
@@ -1068,7 +1070,7 @@ Use features supported by these familiar clients to manage your project and illu
 </tbody>
 </table>
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ## Continuous delivery
 
@@ -1438,7 +1440,7 @@ build-release\tasks\build\_img
 </tbody>
 </table>
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 <a id="power-bi">  </a>
 
@@ -1468,7 +1470,7 @@ build-release\tasks\build\_img
 
 
 <p><b>Available data</b></p>
-<p>The [Power BI data model](../report/powerbi/data-connector-available-data.md) currently supports building reports that track status and trends of work items.</p>
+<p>The [Power BI Data Connector](../report/powerbi/data-connector-connect.md) supports building reports to track status and trend work items.</p>
 
 </td>
 
@@ -1476,9 +1478,9 @@ build-release\tasks\build\_img
 </tbody>
 </table>
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range=">= tfs-2013")
+::: moniker range=">= tfs-2013"
 
 <a id="sql-server-reports">  </a>
 
@@ -1566,7 +1568,7 @@ build-release\tasks\build\_img
 </tbody>
 </table>
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 <a id="widgets"></a>
 
@@ -2533,7 +2535,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 <a id="process-templates"></a>
 
-[//]: # (::: moniker range=">= tfs-2013 <= tfs-2018")
+::: moniker range=">= tfs-2013 <= tfs-2018"
 
 ### Process templates (TFS)
 
@@ -2579,7 +2581,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 </tbody>
 </table>
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 <a id="team-projects"></a>
 
@@ -2712,7 +2714,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Team groups</b></p>
-<p>A [team group is created](../teams/about-teams-and-settings.md#team-group) when you create a team. Use this group in queries or to set permissions for your team.  </p>
+<p>A [team group is created](../settings/about-teams-and-settings.md#team-group) when you create a team. Use this group in queries or to set permissions for your team.  </p>
 </td>
 </tr>
 </tbody>

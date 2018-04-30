@@ -1,15 +1,18 @@
 ---
 title: Install Apple Certificate
 description: Install an Apple certificate required to build on a macOS agent on VSTS and Team Foundation Server TFS
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.topic: reference
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: d2eff759-736d-4b7b-8554-7ba0960d49d6
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.reviewer: dastahel
 ms.date: 11/14/2017
+monikerRange: '>= tfs-2018'
 ---
-[//]: # (monikerRange: '>= tfs-2018')
+
 
 # Utility: Install Apple Certificate
 
@@ -35,7 +38,7 @@ xcode
 | Advanced - Custom Keychain Path | Full path to a custom keychain file. The keychain will be created if it does not exist. This option is visible when a custom keychain is selected. |
 | Advanced - Delete Custom Keychain | Select to delete the custom keychain from the agent after the build or release is complete. This option is visible when a custom keychain is selected. |
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 ## YAML snippet
 
@@ -54,4 +57,4 @@ xcode
     signingIdentity:
 ```
 
-[//]: # (::: moniker-end)
+::: moniker-end

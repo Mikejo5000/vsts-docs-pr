@@ -1,14 +1,16 @@
 ---
-title: Invoke HTTP REST API task 
-description: Build and release task to invoke an HTTP API and parse the response in VSTS and TFS
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+title: Invoke HTTP REST API task for Microsoft VSTS and TFS 
+description: Build and release task to invoke an HTTP API and parse the response with a build or release definition in VSTS and TFS
 ms.assetid: 3F5394FC-37A9-4381-8F49-4F39369E1BDD
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: reference
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/19/2018
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
 
 # Utility: Invoke HTTP REST API
 
@@ -44,7 +46,7 @@ For more information about using this task, see [Approvals and gates overview](.
 
 Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/InvokeRestApi).
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 ## YAML snippet
 
@@ -62,4 +64,4 @@ Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/mast
     successCriteria:
 ```
 
-[//]: # (::: moniker-end)
+::: moniker-end

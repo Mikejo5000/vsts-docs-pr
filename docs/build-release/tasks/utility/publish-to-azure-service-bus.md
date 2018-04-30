@@ -1,14 +1,16 @@
 ---
 title: Publish To Azure Service Bus task 
-description: Build and release task to send a message to an Azure Service Bus in VSTS and TFS
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+description: Build and release task to send a message to an Azure Service Bus with a build or release definition in VSTS and TFS
 ms.assetid: 81D73795-0171-434F-AE37-5386F4E71915
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: reference
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/19/2018
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
 
 # Utility: Publish To Azure Service Bus
 
@@ -32,7 +34,7 @@ Can be used in only an [agentless phase](../../concepts/process/phases.md#agentl
 
 Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/PublishToAzureServiceBus).
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 ## YAML snippet
 
@@ -49,7 +51,7 @@ Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/mast
 #   waitForCompletion: false
 ```
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ## Q & A
 

@@ -1,15 +1,18 @@
 ---
 title: Build and push a Docker image
 description: Define a continuous integration (CI) pipeline for your Dockerfile in VSTS or Team Foundation Server (TFS)
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.topic: quickstart
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: E5BEDC1D-0209-40F3-A2AB-591CB7AE97E8
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.reviewer: dastahel
 ms.date: 02/20/2018
+monikerRange: '>= tfs-2017'
 ---
-[//]: # (monikerRange: '>= tfs-2017')
+
 
 # Build and push a Docker image
 
@@ -83,7 +86,10 @@ Verify that the Docker container image is built and pushed to your container reg
 
 Now your CI process is set up to push a new Docker image to a container registry every time a change is pushed to your application code.
 
-## Next step
+## Next steps
 
 > [!div class="nextstepaction"]
 > [Deploy to Azure Web App for Containers](../cd/deploy-docker-webapp.md)
+
+> [!div class="nextstepaction"]
+> [Deploy using Kubernetes](../cd/azure/deploy-container-kubernetes.md)

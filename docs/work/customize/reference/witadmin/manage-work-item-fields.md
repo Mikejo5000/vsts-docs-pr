@@ -1,13 +1,15 @@
 ---
 title: Manage work item fields using witadmin
 titleSuffix: TFS  
-description: 
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+description: Change an attribute for a work item field defined for a team project in Team Foundation Server
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 445d9c20-2e7d-420b-9bdc-2448e8883cd6
+ms.topic: reference
 ms.manager: douge
-ms.author: kaelli
-ms.date: 02/26/2018
+ms.author: kaelliauthor: KathrynEE
+monikerRange: '>= tfs-2013 <= tfs-2018'
+ms.date: 03/20/2018
 ---
 
 # Manage work item fields
@@ -328,7 +330,7 @@ Enter **y** at the confirmation prompt to complete this step.
   
  Changing field attributes is not recommended. To learn about which customizations you can safely make and which you should avoid, see [On-premises XML process model, Maintenance and upgrade implications](../../on-premises-xml-process-model.md#before-you-customize).  
   
-## Related notes 
+## Related articles 
  
 -  [Customizing your work tracking experience](../../customize-work.md)   
 -  [Work item field index](../../../work-items/guidance/work-item-field.md)   

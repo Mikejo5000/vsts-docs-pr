@@ -1,10 +1,10 @@
 ---
 title: Customize the Project field mapping file | TFS
 description: Change how specific fields are published from Project to Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: b10f8b41-b790-4793-bfe7-a64f935b20fc
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.manager: douge
 ms.date: 09/08/2017
 ---
@@ -162,6 +162,6 @@ The following table indicates whether a work item that is not a summary or paren
 |Yes|True|False|Yes|No|  
 |Yes|False|False|Yes|Yes|  
   
-## Related notes
+## Related articles
 -  [LinkTypes](link-type-element-reference.md)   
 -  [Add or change Project-to-TFS field mapping](add-or-change-how-project-fields-map-to-tfs-fields.md)

@@ -1,14 +1,16 @@
 ---
 title: VSTS and Team Foundation Server Build and Deploy - Azure CLI
 description: VSTS and Team Foundation Server build task step to run a shell or batch script containing Microsoft Azure CLI commands
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
 ms.assetid: C6F8437B-FF52-4EA1-BCB0-F34924303CA8
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: reference
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/19/2018
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
 
 # Deploy: Azure CLI
 
@@ -63,7 +65,7 @@ None
 | **Advanced - Fail on Standard Error** | Set this option if you want the build to fail if errors are written to the **StandardError** stream. |
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 ## YAML snippet
 
@@ -81,7 +83,7 @@ None
 #   failOnStandardError: false
 ```
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ## Related tasks
 

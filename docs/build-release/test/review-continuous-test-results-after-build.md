@@ -1,15 +1,16 @@
 ---
 title: Review continuous test results after a build VSTS and TFS 
-description: Review continuous test results after a build
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+description: Review continuous test results after a build with a build or release definition in Microsoft VSTS or TFS
 ms.assetid: 9A38578C-3310-4DE3-949F-C302AB545C10
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: quickstart
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/18/2018
-ms.topic: get-started-article
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: ">= tfs-2015")
 
 # Review continuous test results after a build
 
@@ -21,7 +22,7 @@ review your test results to start analyzing any problems that you found.
 <a name="reviewtests"></a>  
 ## Review your test results
 
-1. In VSTS or TFS, go to your team project.
+1. In VSTS or TFS, go to your project.
 
 1. Find your build and open the build summary.
 
@@ -41,9 +42,13 @@ review your test results to start analyzing any problems that you found.
 <a name="organizetests"></a>  
 ## Organize your test results
 
-* Organize your test results using the group and outcome lists.
+1. Choose the **Show filter bar** icon.
 
-  ![Organize your test results](_img/organize-test-results.png)
+   ![Show the filters bar](_img/review-continuous-test-results-after-build/show-filters.png)
+
+1. Organize your test results using the group and outcome lists.
+
+   ![Organize your test results](_img/organize-test-results.png)
 
 <a name="debugtests"></a>  
 ## Debug failed tests

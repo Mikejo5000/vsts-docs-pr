@@ -1,14 +1,16 @@
 ---
 title: Install certificates and custom software on agent machines
 description: Install certificates and custom software on agent machines with VSTS
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-performance
 ms.assetid: B733894B-D79F-4250-9BA9-662FAC40FBFD
+ms.prod: devops
+ms.technology: devops-test
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/18/2018
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: "vsts")
 
 # Install certificates and custom software on agent machines
 
@@ -87,7 +89,7 @@ in the cloud, assuming you have added `WebDeploy_x64_en-US.msi` to the deploymen
 
 ## See also
 
-* [Load test with Visual Studio](getting-started-with-performance-testing.md) 
+* [Load test with Visual Studio](getting-started-with-performance-testing.md)
 * [Load test with VSTS](get-started-simple-cloud-load-test.md) 
 * [Load test with Azure portal](app-service-web-app-performance-test.md) 
 

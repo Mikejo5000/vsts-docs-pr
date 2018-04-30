@@ -1,21 +1,23 @@
 ---
 title: Permissions and access for manual testing
-description: Default permissions and access levels in VSTS and TFS for manual and exploratory testing
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-manual
+description: Default permissions and access levels in Microsoft VSTS and TFS for manual and exploratory testing topics and problems
 ms.assetid: 91146CFD-A4CE-4CC5-973D-1633419CAFDE
+ms.prod: devops
+ms.technology: devops-test
+ms.topic: reference
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/18/2018
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: ">= tfs-2015")
 
 # Default manual testing permissions and access 
  
 **VSTS | TFS 2018 | TFS 2017 | TFS 2017 | TFS 2015**
 
 You can access most manual testing features when you are added as a team member or a member
-of the Contributors group for a team project. The most common built-in groups include Readers,
+of the Contributors group for a project. The most common built-in groups include Readers,
 Contributors, and Project Administrators. For a simplified view of all default permissions
 assigned to built-in groups, see [Default permissions and access](../security/permissions-access.md).  
 

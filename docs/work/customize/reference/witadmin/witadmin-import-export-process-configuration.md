@@ -1,13 +1,15 @@
 ---
-title: Import and export process configuration for Agile work tracking tools 
+title: Import or export process configuration  
 titleSuffix: TFS
 description: Modify the display of the Agile planning tool pages that you view through the web portal for Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 95fd448f-d702-4399-b9c2-d61cdce33c02
 ms.manager: douge
-ms.author: kaelli
-ms.date: 02/26/2018
+ms.author: kaelliauthor: KathrynEE
+ms.topic: reference
+monikerRange: '>= tfs-2013 <= tfs-2018'
+ms.date: 03/20/2018
 ---
 
 
@@ -189,7 +191,7 @@ The panel only displays fields that are included in the `FIELDS` section of the 
 
 If you modify the test suite workflow, then you have to make a similar update if you want to map new states. You would add it within a `TestSuiteWorkItems` section.  See [ProcessConfiguration](../process-configuration-xml-element.md).  
   
-## Related notes
+## Related articles
 -  [Control XML element reference](../control-xml-element-reference.md)   
 -  [Change the work item form layout](../change-work-item-form-layout.md)   
 -  [Edit a WIT definition to add web content to a work item form](../edit-wit-definition-add-web-content-form.md)

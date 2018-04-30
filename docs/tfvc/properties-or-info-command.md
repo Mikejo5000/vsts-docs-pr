@@ -2,13 +2,16 @@
 title: Properties Command
 description: Properties Command
 ms.assetid: f306bc7a-db55-47d8-aa22-e2399260e838
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: reference
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: '>= tfs-2015')
+
 
 # Properties Command
 

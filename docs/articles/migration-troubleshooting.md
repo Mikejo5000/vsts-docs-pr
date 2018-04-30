@@ -1,9 +1,15 @@
 ---
 title: Troubleshooting the migration import from TFS to Visual Studio Team Services (VSTS) | VSTS & TFS
 description: Guidance for fixing common TfsMigrator valdiation errors. 
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-overview
+ms.prod: devops
+ms.topic: article
+ms.technology: devops-learn
 ms.contentid: ee8c290d-0b48-4cbd-b7fd-7afb9591c169
+ms.manager: douge
+ms.author: elbatk
+author: elbatk
+monikerRange: '>= tfs-2013'
+ms.date: 04/13/2018
 ---
 
 # Troubleshooting
@@ -158,6 +164,11 @@ EXEC prc_UpdateGroupMembership @partitionId=1,@scopeId='7df650df-0f8b-4596-928d-
 
 Run the completed command against the TFS configuration database. This will need to be repeated for each ISVError:300005 instance that TfsMigrator found. Errors with the same scope ID can be batched into one command. Once the commands have been executed you will need to run TfsMigartor validate again to ensure that the errors have been corrected. If the errors still persist, please contact [VSTS customer support](https://aka.ms/vstscustomersupport). 
 
+> [!IMPORTANT]
+> The collection that you're trying to fix the error for must be attached. 
+>
+> If you receive a -1 result from running the command, ensure that your collection database that produced the error is attached to your TFS instance and that you're running the command on the configuration database. 
+
 ### AAD Timeout Exception
 On rare occasions some might receive an AAD timeout error when running the TfsMigrator prepare command. 
 
@@ -200,7 +211,26 @@ See the separate [Process Templates](migration-processtemplates.md) page for det
 
 ## Dealing with Field Validation Errors
 
-#### <a name= "VS1640137"> </a> **VS1640137**
+
+#### <a name= "VS403442" ></a> **VS403442**
+In order to migrate successfully, you must rename field *{TFSfieldReferenceName}*. Given name *{TFSfieldName}* is reserved for field *{VSTSfieldReferenceName}*.
+
+Sometimes your local collection may have a field whose name may conflict with VSTS system field. To resolve this error, you must change name of your collection field. use *changefield* command from [witadmin](https://docs.microsoft.com/en-us/vsts/work/customize/reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json)
+
+```cmdline
+witadmin changefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:TFSfieldReferenceName /name:newFieldName
+```
+
+#### <a name= "VS403443" ></a> **VS403443**
+In order to migrate successfully, you must rename field *{TFSfieldReferenceName}* to *{VSTSfieldName}*. Given name for *{TFSfieldReferenceName}* is *{TFSfieldName}*
+
+Sometimes your local collection may have different name for a particular field. To resolve this error, use *changefield* command from [witadmin](https://docs.microsoft.com/en-us/vsts/work/customize/reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json)
+
+```cmdline
+witadmin changefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:TFSfieldReferenceName /name:VSTSfieldName
+```
+
+#### <a name= "VS403444"> </a> **VS403444**
 In order to migrate successfully, you must set type of field *{TFSfieldReferenceName}* to *{Type}*. Given type for *{TFSfieldReferenceName}* is *{collectionType}*.
 
 Sometimes your local collection may have different type for a particular field. Presently [witadmin](https://docs.microsoft.com/en-us/vsts/work/customize/reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json) allows type change for only those fields which are either of HTML or PlainText type. If your field type is either HTML or PlainText, then you can change its type to required type using witadmin.
@@ -218,23 +248,6 @@ witadmin changefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCol
 witadmin deletefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:TFSfieldReferenceName
 ```
 
-#### <a name= "VS1640138" ></a> **VS1640138**
-In order to migrate successfully, you must rename field *{TFSfieldReferenceName}* to *{VSTSfieldName}*. Given name for *{TFSfieldReferenceName}* is *{TFSfieldName}*
-
-Sometimes your local collection may have different name for a particular field. To resolve this error, use *changefield* command from [witadmin](https://docs.microsoft.com/en-us/vsts/work/customize/reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json)
-
-```cmdline
-witadmin changefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:TFSfieldReferenceName /name:VSTSfieldName
-```
-
-#### <a name= "VS1640139" ></a> **VS1640139**
-In order to migrate successfully, you must rename field *{TFSfieldReferenceName}*. Given name *{TFSfieldName}* is reserved for field *{VSTSfieldReferenceName}*.
-
-Sometimes your local collection may have a field whose name may conflict with VSTS system field. To resolve this error, you must change name of your collection field. use *changefield* command from [witadmin](https://docs.microsoft.com/en-us/vsts/work/customize/reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json)
-
-```cmdline
-witadmin changefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:TFSfieldReferenceName /name:newFieldName
-```
 
 ## Dealing with Import Errors
 Hit a failure when running your import? Failures in the import space fall into one of two categories. Verification failures happen when the import fails to start. The indication that this has occurred is when TfsMigrator attempts to queue an import, but returns an error instead. Import failures happen when the import was queued successfully in TfsMigrator, but failed after that point. The individual that queued the import will recieve a failure email if this happens. 

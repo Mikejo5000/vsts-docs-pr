@@ -1,14 +1,16 @@
 ---
 title: Get the Eclipse Plug-in for VSTS & TFS support
 description: Information and download links for Team Explorer Everywhere for Eclipse
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build 
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: conceptual
 ms.manager: douge
 ms.author: douge
 ms.reviewer: dastahel
 ms.date: 01/31/2018
+monikerRange: '>= tfs-2013'
 ---
-[//]: # (monikerRange: '>= tfs-2013')
+
 
 # Visual Studio Team Explorer Everywhere for Eclipse (VSTS and TFS)
 

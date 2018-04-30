@@ -1,11 +1,11 @@
 ---
 title: Support bug update status using My Work | VSTS & TFS
 description: Update the ProcessConfiguration bug category states to support code review requests working from Visual Studio   
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 355d8fb4-d8fa-49ad-b1a2-7baaec3556cc
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 01/20/2017
 ---
 # Support bug update status using My Work  
@@ -110,7 +110,7 @@ You add WITs to a category by updating the [Categories definition file](categori
 
 
  
-## Related notes
+## Related articles
 -  [ProcessConfiguration](process-configuration-xml-element.md)   
 -  [Use categories to group work item types](use-categories-to-group-work-item-types.md)
 -  [Import and export process configuration](witadmin/witadmin-import-export-process-configuration.md)

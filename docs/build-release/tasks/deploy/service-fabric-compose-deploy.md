@@ -1,14 +1,16 @@
 ---
 description: Service Fabric Compose Deploy Deployment task
-title: Service Fabric Compose Deploy build and release task for VSTS and TFS
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+title: Service Fabric Compose Deploy task for use in the phases of all of your build and release definitions in Microsoft VSTS and TFS
 ms.assetid: 891A8845-6EC1-4A70-B187-BBF9416AB41F
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: reference
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/19/2018
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
 
 # Deploy: Service Fabric Compose Deploy
 
@@ -44,7 +46,7 @@ See [https://docs.microsoft.com/azure/service-fabric/service-fabric-docker-compo
 
 Also see: [Service Fabric PowerShell Utility ](../utility/service-fabric-powershell.md)
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 ## YAML snippet
 
@@ -67,7 +69,7 @@ Also see: [Service Fabric PowerShell Utility ](../utility/service-fabric-powersh
     getStatusTimeoutSec:
 ```
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->

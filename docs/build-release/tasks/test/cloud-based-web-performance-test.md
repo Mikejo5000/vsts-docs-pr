@@ -1,14 +1,16 @@
 ---
 title: VSTS and TFS Build and Test - Cloud-based Web Performance Test
+description: Runs the Quick Web Performance Test with a build or release definition to easily verify your web application exists and is responsive
 ms.assetid: 8030BD4C-F119-4A0F-9ED5-B021C4E760CD
-description: Runs the Quick Web Performance Test with VSTS to easily verify your web application exists and is responsive
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: reference
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/19/2018
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: '>= tfs-2015')
 
 # Test: Cloud-based Web Performance Test
 
@@ -46,7 +48,7 @@ The build agent must have the following capabilities:
 | **Fail test if Avg. Response Time (ms) exceeds** | Specify a threshold for the average response time in milliseconds. If the observed response time during the load test exceeds this threshold, the task will fail. |
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 ## YAML snippet
 
@@ -65,7 +67,7 @@ The build agent must have the following capabilities:
 #   avgResponseTimeThreshold: 0
 ```
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ## More Information
 
@@ -80,7 +82,9 @@ The build agent must have the following capabilities:
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->
 
+::: moniker range="< vsts"
 [!INCLUDE [qa-versions](../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->
 

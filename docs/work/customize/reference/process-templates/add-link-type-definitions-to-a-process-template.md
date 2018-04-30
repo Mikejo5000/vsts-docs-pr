@@ -1,11 +1,13 @@
 ---
-title: Add link type definitions to a process template | VSTS & TFS
-description: Define additional types of links that team members can create between work items for a team project - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Add link type definitions to a process template 
+titleSuffix: TFS
+description: Define additional types of links that team members can create between work items for a team project for Team Foundation Server  
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 803dbff8-fa50-4288-9bfb-dc807f4522bf
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.manager: douge
+ms.topic: reference
 ms.date: 09/08/2017
 ---
 
@@ -79,7 +81,7 @@ The following example shows how to specify a task that creates the two types of 
   
 
 
-## Related notes
+## Related articles
 -  [Manage link types](../witadmin/manage-link-types.md)   
 -  [Define a custom link type](../define-custom-link-type.md)   
 -  [Define objects for tracking work items](define-objects-track-work-items-plug-in.md)

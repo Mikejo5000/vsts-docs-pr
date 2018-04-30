@@ -2,13 +2,16 @@
 title: Protect your Git branches with policies | VSTS & TFS
 description: Branch policies provide teams with the means to protect their important branches.
 ms.assetid: 5D76697E-16A0-4048-91D1-806FE24C92A3
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git 
+ms.prod: devops
+ms.technology: devops-code-git 
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: conceptual
 ms.date: 03/14/2018
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: '>= tfs-2015')
+
 
 #  Improve code quality with branch policies
 
@@ -67,7 +70,7 @@ Linking work items provides additional context for your changes and ensures that
 
 ![Require linked work items in your pull requests](_img/branch-policies/work_item_linking.png)
 
-[//]: # (::: moniker range=">= tfs-2017") 
+::: moniker range=">= tfs-2017" 
 
 ## Check for comment resolution
 
@@ -92,9 +95,9 @@ Select **Enforce a merge strategy** and pick an option to require that pull requ
 <a name="build"></a>
 <a name="require-the-pull-request-to-build"></a>
   
-[//]: # (::: moniker-end) 
+::: moniker-end 
  
-[//]: # (::: moniker range=">= tfs-2015") 
+::: moniker range=">= tfs-2015" 
 
 ## Build validation
 
@@ -124,9 +127,9 @@ Choose **Add build policy** and configure the desired options in the **Add build
 
 When the owner pushes changes that build successfully, the policy status is updated. If you have an **Immediately when `branch name` is updated** or **After `n` hours if `branch name` has been updated** build policy chosen, the policy status updates when the protected branch is updated if the most recent build is no longer valid.
 
-[//]: # (::: moniker-end) 
+::: moniker-end 
 
-[//]: # (::: moniker range="vsts") 
+::: moniker range="vsts" 
 
 ## Require approval from external services
 
@@ -136,7 +139,7 @@ External services can use the PR [Status API](https://go.microsoft.com/fwlink/?l
 
 For instructions on configuring this policy, see [Configure a branch policy for an external service](./how-to/pr-status-policy.md).
 
-[//]: # (::: moniker-end) 
+::: moniker-end 
 
 ## Automatically include code reviewers
 
@@ -160,7 +163,7 @@ Select **Optional** if you want to add reviewers automatically, but not require 
 When the required reviewers approve the code, you can complete the pull request.
 
 ![Pull request status shows that reviewers have approved](_img/branch-policies/RequiredReviewerApproved.png)   
-[//]: # (::: moniker range=">= tfs-2015") 
+::: moniker range=">= tfs-2015" 
 
 ## Bypass branch policies
 
@@ -172,9 +175,9 @@ In some cases, you need to bypass policy requirements so you can push changes to
 > Users with **Exempt from policy enforcement permission** set to allow can complete pull requests even if the branch policy is not satisfied. Use caution when granting this permission, especially
 > at the repo and team project level.
 
-[//]: # (::: moniker-end) 
+::: moniker-end 
 
-[//]: # (::: moniker range=">= tfs-2015") 
+::: moniker range=">= tfs-2015" 
 
 ## Q & A
 
@@ -219,4 +222,4 @@ Check out the [REST API documentation](http://go.microsoft.com/fwlink/?LinkId=52
 
 <!-- ENDSECTION --> 
 
-[//]: # (::: moniker-end) 
+::: moniker-end 

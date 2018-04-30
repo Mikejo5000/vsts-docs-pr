@@ -1,15 +1,17 @@
 ---
-title: Sign up and invite teammates | VSTS  
-description: Quickstart guide to signing up and inviting others to join a team project in VSTS 
-ms.technology: vs-devops-overview 
-ms.prod: vs-devops-alm
-ms.topic: get-started-article
+title: Sign up and invite teammates
+titleSuffix: VSTS   
+description: Quickstart guide to signing up and inviting others to join a team project in Visual Studio Team Services 
+ms.technology: devops-new-user 
+ms.prod: devops
+ms.topic: quickstart
 ms.assetid: 
 ms.manager: douge
 ms.author: kaelli
 ms.date: 07/14/2017
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
+
 
 # Sign up for a free VSTS account and invite others to join your team
 

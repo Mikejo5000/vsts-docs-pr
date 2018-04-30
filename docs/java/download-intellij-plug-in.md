@@ -1,14 +1,16 @@
 ---
 title: Get the IntelliJ IDEA VSTS plug-in
 description: Information and download links for the IntelliJ IDEA VSTS plug-in
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build 
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: conceptual
 ms.manager: douge
 ms.author: douge
 ms.reviewer: dastahel
 ms.date: 01/31/2018
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: '>= tfs-2015')
+
 
 # Visual Studio Team Services Plugin for IntelliJ IDEA and Android Studio
 

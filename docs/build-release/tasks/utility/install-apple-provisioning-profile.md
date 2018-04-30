@@ -1,15 +1,18 @@
 ---
 title: Install Apple Provisioning Profile
 description: Install an Apple provisioning profile required to build on a macOS agent in VSTS and Team Foundation Server TFS
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.topic: reference
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: 0f9f66ca-250e-40fd-9678-309bcd439d5e
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.reviewer: dastahel
 ms.date: 11/14/2017
+monikerRange: '>= tfs-2018'
 ---
-[//]: # (monikerRange: '>= tfs-2018')
+
 
 # Utility: Install Apple Provisioning Profile
 
@@ -35,7 +38,7 @@ xcode
 | Provisioning Profile | Select the provisioning profile that was uploaded to **Secure Files** to install on the macOS agent (or) Select the provisioning profile from the source repository or specify the local path to a provisioning profile on the macOS agent.|
 | Remove Profile After Build | Select to specify that the provisioning profile should be removed from the agent after the build or release is complete. |
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 ## YAML snippet
 
@@ -50,4 +53,4 @@ xcode
 #   removeProfile: True
 ```
 
-[//]: # (::: moniker-end)
+::: moniker-end

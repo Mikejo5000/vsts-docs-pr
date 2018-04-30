@@ -1,14 +1,17 @@
 ---
 title: Xamarin.Android build and release task
 description: Xamarin.Android build and release task for Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.topic: reference
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: F9D118B6-BA56-406C-8223-6934F6BCBEA1
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: '>= tfs-2015')
+
 
 # Build: Xamarin.Android
 
@@ -94,7 +97,7 @@ Select x86 or x64.
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 ## YAML snippet
 
@@ -120,7 +123,7 @@ Select x86 or x64.
 #   jdkArchitectureOption: x64 # x86, x64 (default)
 ```
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ## Example 
 
@@ -132,6 +135,8 @@ Select x86 or x64.
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
+::: moniker range="< vsts"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->

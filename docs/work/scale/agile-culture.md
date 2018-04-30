@@ -1,11 +1,13 @@
 ---
-title: Agile culture | VSTS & TFS  
-description: Create an Agile culture of autonomous teams and an aligned enterprise using Agile tools when working in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)  
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+title: Agile culture
+titleSuffix: VSTS & TFS 
+description: Create an Agile culture of autonomous teams and an aligned enterprise using Agile tools when working in Visual Studio Team Services & Team Foundation Server  
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 3C43B829-3514-4493-8D5A-896375835FE7  
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
 ms.date: 08/04/2016
 ---
 
@@ -156,7 +158,7 @@ As your organization grows, you can scale your Agile tools in the following ways
 
 - **Add folders and use team favorites:**  As your teams grow, you'll see a growing list of work item queries, build definitions, and source code folders. By using folders, sub-folders, and team favorites, you can manage many of these lists more easily. You can add team favorites for shared queries, source code, and build definitions.
 
-## Related notes  
+## Related articles  
 
 Before you can create or work with any of the Agile tools, you need a team project. If you don't have one yet, you can [create one in VSTS](../../user-guide/connect-team-projects.md)  or on an [on-premises TFS](../../accounts/create-team-project.md). 
 

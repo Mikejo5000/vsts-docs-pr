@@ -2,12 +2,14 @@
 title: witAdmin:Customize and manage objects for tracking work 
 titleSuffix: TFS  
 description: Tracks your team's progress by creating and customizing objects that track work items.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 7853f6db-98c9-4012-b6a5-51618c41d58c
+ms.topic: reference
 ms.manager: douge
-ms.author: kaelli
-ms.date: 02/26/2018
+ms.author: kaelliauthor: KathrynEE
+monikerRange: '>= tfs-2013 <= tfs-2018'
+ms.date: 03/20/2018
 ---
 
 
@@ -110,6 +112,6 @@ All **witadmin** commands can be run against an on-premises TFS. If you are new 
 - **importcategories**:  Import the Categories file      
   
 
-## Related notes
+## Related articles
 -  [Customize your work tracking experience](../../customize-work.md)   
 -  [On-premises XML process model](../../on-premises-xml-process-model.md)  

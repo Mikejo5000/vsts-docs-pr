@@ -1,14 +1,19 @@
 ---
-title: Project activities | VSTS & TFS
-description: Helps you reduce the risks to your project that stem from shifting requirements and implementation costs.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: CMMI process guidance, Project activities
+titleSuffix: VSTS & TFS
+description: Reduce the risks to your project that stem from shifting requirements and implementation costs 
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 078d2b8e-e0a7-4c17-8f00-e830c78d338c
+ms.topic: conceptual
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+monikerRange: '>= tfs-2013'
 ms.date: 01/20/2017
 ---
+
 # Project activities
+
 [!INCLUDE [temp](../../../_shared/dev15-version-header.md)]
 
 To make the most effective use of MSF for [CMMI Process Improvement](guidance-background-to-cmmi.md), you should organize your project into a series of iterations, typically between four and eight weeks long. This helps you reduce the risks to your project that stem from shifting requirements and implementation costs. Iterative project structure is an important contribution to meeting the risk management requirements of CMMI.  
@@ -97,6 +102,6 @@ To make the most effective use of MSF for [CMMI Process Improvement](guidance-ba
   
 -   Devote resources to increasing test coverage and to performing manual tests.  
   
-## Related notes
+## Related articles
 - [Background to CMMI](guidance-background-to-cmmi.md)
 - [CMMI process](../cmmi-process.md)

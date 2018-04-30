@@ -1,15 +1,16 @@
 ---
 title: Build your GCC C/C++ app
 description: Build your GCC C/C++ app with Team Foundation Server and VSTS
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: 73a50551-0c2c-4d62-b582-6ba7ba51509e
 ms.manager: douge
 ms.author: dastahel
-ms.date: 03/13/2018
-ms.topic: get-started-article
+ms.date: 04/18/2018
+ms.topic: quickstart
+monikerRange: '>= tfs-2017'
 ---
-[//]: # (monikerRange: '>= tfs-2017')
+
 
 # Build your GCC C/C++ app
 
@@ -67,7 +68,7 @@ https://github.com/adventworks/cpp-gpp-sample
 
 1. For the **Agent queue**:
 
- * **VSTS:** Select _Hosted Linux_ or _Hosted macOS Preview_. This uses a VSTS pool of agents that have the software needed to build your app.
+ * **VSTS:** Select _Hosted Linux_ or _Hosted macOS_. This uses a VSTS pool of agents that have the software needed to build your app.
 
  * **TFS:** Select a queue that includes a [Linux or macOS build agent](../../concepts/agents/agents.md).
 
@@ -83,7 +84,7 @@ https://github.com/adventworks/cpp-gpp-sample
 
 1. Click the **+** icon on **Phase 1** of the build and then:
 
-[//]: # (::: moniker range=">= tfs-2018")
+::: moniker range=">= tfs-2018"
 
   ### VSTS and TFS 2018
 
@@ -97,9 +98,9 @@ https://github.com/adventworks/cpp-gpp-sample
       Type    | `Inline`
       Script  | `make`
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range="tfs-2017")
+::: moniker range="tfs-2017"
 
   ### TFS 2017.2
 
@@ -112,7 +113,7 @@ https://github.com/adventworks/cpp-gpp-sample
       Display name | `Build C++ application`
       Tool         | `make`
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
   ### Finish
 

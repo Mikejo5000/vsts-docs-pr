@@ -1,11 +1,14 @@
 ---
-title: Define objects for tracking work items using the work Item tracking plug-in | VSTS & TFS
-description: Use the plug-in for tracking work items and defining a team project's initial objects for tracking work - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Define work item types for a process template 
+titleSuffix: VSTS & TFS
+description: Use the plug-in for tracking work items and defining a team project's initial objects for tracking work for Team Foundation Server 
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 6d6103d6-2558-460c-b022-9eda2ffe4023
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: reference
+monikerRange: '>= tfs-2013 <= tfs-2018'
 ms.date: 09/08/2017
 ---
 
@@ -118,7 +121,7 @@ The names of the file, the folder, and the plug-in for the default process templ
 |**WORKITEMTYPE**|`<WORKITEMTYPE fileName="WITFilePathName" />`|Required child element of **WORKITEMTYPES**.<br /><br /> Specifies the path and name of the file that contains a type definition to upload.|  
 |**WORKITEMTYPES**|`<WORKITEMTYPES>      <WORKITEMTYPE />  . . . </WORKITEMTYPES>`|Required child element of the WorkItemTracking plug-in.<br /><br /> Contains a collection of **WORKITEMTYPE** elements that each specify a definition file to upload.|  
   
-## Related notes  
+## Related articles  
  [Customize a process](customize-process.md)   
  [Customize your work tracking experience](../../customize-work.md)   
  [Overview of process template files](overview-process-template-files.md)

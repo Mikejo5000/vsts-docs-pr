@@ -22,6 +22,8 @@
         href: apps/cd/azure/azure-devops-project-python.md
       - name: PHP
         href: apps/cd/azure/azure-devops-project-php.md
+      - name: Ruby
+        href: apps/cd/azure/azure-devops-project-ruby.md
     - name: Build your app
       items:
       - name: Android
@@ -84,8 +86,12 @@
     href: actions/azure-devops-project-github.md
   - name: Azure DevOps Project for VMs
     href: actions/azure-devops-project-vms.md
-  - name: Use Jenkins and VSTS DevOps
-    href: actions/integrate-jenkins-vsts-cicd.md  
+  - name: Azure DevOps Project with SQL Database
+    href: actions/azure-devops-project-sqldb.md
+  - name: Jenkins CI for VSTS Azure CD
+    href: actions/integrate-jenkins-vsts-cicd.md
+  - name: Jenkins CI for VSTS Azure AKS
+    href: actions/integrate-jenkins-vsts-aks.md
   - name: Test your app
     href: test/example-continuous-testing.md
 - name: Concepts
@@ -178,6 +184,8 @@
       href: actions/agents/v2-osx.md
     - name: Linux
       href: actions/agents/v2-linux.md
+    - name: To a deployment group
+      href: concepts/definitions/release/deployment-groups/howto-provision-deployment-group-agents.md
     - name: Run an agent behind a web proxy
       href: actions/agents/proxy.md
     - name: Run an agent with self-signed certificate
@@ -270,7 +278,7 @@
     href: set-permissions.md 
 - name: Troubleshooting
   items:
-  - name: Troubleshooting build
+  - name: Troubleshoot build and release
     href: actions/troubleshooting.md
   - name: Debug deployment issues
     href: concepts/definitions/release/variables.md#debug-mode
@@ -293,6 +301,8 @@
       href: tasks/build/ant.md
     - name: CMake
       href: tasks/build/cmake.md
+    - name: Go
+      href: tasks/build/go-build.md
     - name: Gradle
       href: tasks/build/gradle.md
     - name: Grunt
@@ -433,6 +443,8 @@
       href: tasks/deploy/azure-sql-database-deployment.md
     - name: Copy Files Over SSH
       href: tasks/deploy/copy-files-over-ssh.md
+    - name: Docker
+      href: tasks/deploy/docker.md
     - name: PowerShell on Target Machines
       href: tasks/deploy/powershell-on-target-machines.md
     - name: Service Fabric App Deployment
@@ -447,6 +459,8 @@
     items:
     - name: .NET Core Tool Installer
       href: tasks/tool/net-core-installer.md
+    - name: Go Tool Installer
+      href: tasks/tool/go-install.md
     - name: Node Tool Installer
       href: tasks/tool/node-js.md
     - name: Java Tool Installer

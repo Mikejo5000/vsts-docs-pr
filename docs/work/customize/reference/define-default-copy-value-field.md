@@ -1,10 +1,10 @@
 ---
 title: Define default value or copy a value | VSTS & TFS
 description: Syntax and usage for the COPY, DEFAULT, and SERVERDEFAULT elements  
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 35c3fcdb-8399-406d-bb8b-179bb543c9ba
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.manager: douge
 ms.date: 04/05/2017
 ---
@@ -68,9 +68,9 @@ You can specify a default value for a field, or you can copy the value from anot
 <FIELD refname="MyCorp.Priority" name="Priority" type="String">  
 <HELPTEXT>Specify the severity of the problem</HELPTEXT>  
        <ALLOWEDVALUES>  
-         <LISTITEM value="P1"/>  
-         <LISTITEM value="P2"/>  
-         <LISTITEM value="P3"/>  
+          <LISTITEM value="P1"/>  
+          <LISTITEM value="P2"/>  
+          <LISTITEM value="P3"/>  
        </ALLOWEDVALUES>  
 <DEFAULT from="value" value="P3"/>  
 </FIELD>  
@@ -114,7 +114,7 @@ You can specify a default value for a field, or you can copy the value from anot
 >   
 >  `<LISTITEM value="Won't Fix"/>`  
   
-## Related notes 
+## Related articles 
 -  [All FIELD elements](all-field-xml-elements-reference.md)   
 -  [Apply a field rule](apply-rule-work-item-field.md)   
 -  [Modify a field or add a custom field](../add-modify-field.md)

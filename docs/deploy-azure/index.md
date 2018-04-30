@@ -1,18 +1,20 @@
 ---
 title: Deploy to Azure index to content | Microsoft Docs    
 description: Learn how to deploy to Azure using VSTS. Tutorials, references, and other documentation.  
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: 125D4C50-1098-4A4D-81B8-97501BE47FC5  
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.date: 07/20/2017
-ms.topic: landing-page
+ms.topic: conceptual
 layout: LandingPage
+monikerRange: '>= tfs-2013'
 ---
-[//]: # (monikerRange: '>= tfs-2013')
 
-[//]: # (::: moniker range=">= tfs-2015")
+
+::: moniker range=">= tfs-2015"
 
 # Deploy to Azure
 
@@ -50,10 +52,10 @@ Learn how to build your app and deploy it to your choice of Azure service.
 - [What is DevOps?](https://www.visualstudio.com/learn/what-is-devops/)
 - [Build and release in VSTS](../build-release/index.md)
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range="tfs-2013")
+::: moniker range="tfs-2013"
 
 **TFS 2013:** We recommend that you [Migrate from XAML builds to new builds](../build-release/actions/migrate-from-xaml-builds.md).
 
-[//]: # (::: moniker-end)
+::: moniker-end

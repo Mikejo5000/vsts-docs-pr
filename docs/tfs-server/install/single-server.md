@@ -1,17 +1,19 @@
 ---
 title: Install and configure TFS on a single server
 description: Install and set up Team Foundation Server (or TFS Express) on a single server using the basic configuration wizard
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-admin
+ms.prod: devops-server
+ms.technology: tfs-admin
+ms.topic: conceptual
 ms.assetid: 36d82fcb-e849-41e1-a33f-68974c15fbd4
 toc: show
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 11/28/2017
-ms.topic: get-started-article
+monikerRange: '>= tfs-2015 < vsts'
 ---
 
-[//]: # (monikerRange: '>= tfs-2015 < vsts')
+
 
 # Install TFS on a single server
 

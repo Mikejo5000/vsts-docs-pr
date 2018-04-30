@@ -1,20 +1,16 @@
 ---
 title: Define a multi-stage CD release process | VSTS Tutorial
 description: Define a multi-stage continuous deployment (CD) process for your ASP.NET Core app using VSTS
-services: vsts
-documentationcenter: ''
-author: ahomer
-manager: douge
-editor: ''
 ms.assetid: 12F57ADB-49B9-4E21-A346-5EDB1D1EC2F7
-ms.devlang: dotnetcore
-ms.topic: get-started-article
-ms.tgt_pltfrm: ''
-ms.workload: ''
-ms.date: 01/19/2018
-ms.custom: mvc
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: tutorial
+ms.manager: douge
+ms.author: ahomer
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: ">= tfs-2015")
 
 # Define your multi-stage continuous deployment (CD) process
 
@@ -141,6 +137,8 @@ a groups of servers, or any other legitimate physical or virtual deployment targ
    If you are using a different type of task to deploy your app, the way you change the target for the deployment
    may differ. For example, if you are using deployment groups, you may be able to select a different deployment group,
    or a different set of tags within the same deployment group.
+
+[!INCLUDE [edit-template-vars-in-environment](../apps/_shared/edit-template-vars-in-environment.md)]
 
 ## Add approvals within a release definition
 

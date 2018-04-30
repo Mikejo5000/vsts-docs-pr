@@ -1,16 +1,19 @@
 ---
 title: How to set up TFS in a multiple server configuration
 description: How to set up Team Foundation Server in a multiple server configuration using the full configuration wizard
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-admin
+ms.prod: devops-server
+ms.technology: tfs-admin
+ms.topic: conceptual
 ms.assetid: F31E31CA-6E48-4726-B527-6E4F2C6BCB86
 toc: show
 ms.manager: douge
-ms.author: douge
+ms.author: elbatk
+author: elbatk
 ms.date: 08/04/2016
+monikerRange: '>= tfs-2015 < tfs-2018'
 ---
 
-[//]: # (monikerRange: '>= tfs-2015 < tfs-2018')
+
 
 # How to set up TFS in a multiple server configuration
 

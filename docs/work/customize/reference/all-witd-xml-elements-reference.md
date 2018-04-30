@@ -1,11 +1,13 @@
 ---
-title: All WITD XML elements reference | VSTS & TFS
-description: Customize an existing work item type (WIT) or create a WIT to meet your project tracking requirements - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: All WITD XML elements reference
+titleSuffix: VSTS & TFS
+description: Index to XML syntax elements and main attributes for work item tracking for Team Foundation Server 
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: d125917c-9e67-49e6-8274-8b169e76639a
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.manager: douge
+ms.topic: reference
 ms.date: 02/14/2017
 ---
 
@@ -160,7 +162,7 @@ WIT definition files are stored in the WorkItem Tracking\TypeDefinitions folder.
   
 To learn how to create or customize a WIT, see [Modify or add a custom work item type](../add-modify-wit.md).  
   
-## Related notes 
+## Related articles 
  
 -  [Customize the work tracking experience](../customize-work.md)  
 -  [witAdmin: Customize and manage objects for tracking work](witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md)  

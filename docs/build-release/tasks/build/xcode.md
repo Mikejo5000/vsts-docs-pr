@@ -1,14 +1,15 @@
 ---
 title: Xcode build and release task
 description: Xcode build and release task for Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: 130B3990-0B64-41AE-9330-75AD7228B5C4
 ms.manager: douge
 ms.author: dastahel
-ms.date: 11/13/2017
+ms.date: 04/18/2018
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
+
 
 # Build: Xcode
 
@@ -171,7 +172,7 @@ Choose the destination type to be used for UI testing. Devices must be connected
 <tr>
 <td>Simulators</td>
 <td>
-Enter an Xcode simulator name to be used for UI testing. For example, enter `iPhone X` (iOS and watchOS) or `Apple TV 4K` (tvOS). A target OS version is optional and can be specified in the format 'OS=<i>versionNumber</i>', such as `iPhone X,OS=11.1`. A list of simulators installed on the <strong>Hosted macOS Preview</strong> agent can be [found here](https://github.com/Microsoft/vsts-image-generation/blob/master/images/macos/macos-Readme.md#installed-sdks).
+Enter an Xcode simulator name to be used for UI testing. For example, enter `iPhone X` (iOS and watchOS) or `Apple TV 4K` (tvOS). A target OS version is optional and can be specified in the format 'OS=<i>versionNumber</i>', such as `iPhone X,OS=11.1`. A list of simulators installed on the <strong>Hosted macOS</strong> agent can be [found here](https://github.com/Microsoft/vsts-image-generation/blob/master/images/macos/macos-Readme.md#installed-sdks).
 </td>
 </tr>
 <tr>
@@ -219,7 +220,7 @@ If xcpretty is enabled above, specify whether to publish JUnit test results to V
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 ## YAML snippet
 
@@ -259,7 +260,7 @@ If xcpretty is enabled above, specify whether to publish JUnit test results to V
 #   publishJUnitResults: False
 ```
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ## Example
 

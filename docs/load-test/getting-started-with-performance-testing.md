@@ -1,15 +1,16 @@
 ---
 title: Load test in the cloud with VSTS
-description: Performance test your app with cloud-based load tests using Visual Studio and VSTS
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-performance
+description: Performance test your app with cloud-based load tests using the features of the Test hub in Visual Studio and Microsoft VSTS
 ms.assetid: 50d0dafd-ae7c-4028-9e4a-687f062e0179
-ms.topic: get-started-article
+ms.prod: devops
+ms.technology: devops-test
+ms.topic: quickstart
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/18/2018
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: "vsts")
 
 <a name="cloudloadtest"></a>
 # Load test your app in the cloud using Visual Studio and VSTS
@@ -21,9 +22,9 @@ Find problems before your customers do. Start running
 [cloud-based load tests](https://www.visualstudio.com/features/vso-cloud-load-testing-vs) 
 in almost no time with Visual Studio and Visual Studio Team Services (VSTS).
 
-> This example shows how to execute a load test using Visual 
-Studio. You can also run cloud-based load tests directly using the 
-[VSTS portal](get-started-simple-cloud-load-test.md).
+> This example shows how to execute a cloud load test using Visual Studio. You can also
+[run cloud-based load tests directly using the VSTS portal](get-started-simple-cloud-load-test.md),
+or [run load tests locally with Visual Studio](https://docs.microsoft.com/visualstudio/test/quickstart-create-a-load-test-project).
 
 <a name="LoadTestVSIDE"></a>
 ## Prepare your environment
@@ -67,9 +68,9 @@ connect Visual Studio to your VSTS account.
 
    ![Connect to your VSTS account](_img/getting-started-with-performance-testing/LoadTestConnect1.png)
 
-1. Connect to one of your team projects.
+1. Connect to one of your projects.
  
-   ![Select Team Projects](_img/getting-started-with-performance-testing/LoadTestConnect2.png)
+   ![Select Projects](_img/getting-started-with-performance-testing/LoadTestConnect2.png)
 
    - If you haven't connected to your VSTS 
      account before, add your account to the server list.
@@ -84,9 +85,9 @@ connect Visual Studio to your VSTS account.
    - If you're prompted to sign in to VSTS, do that now.
 
 1. Select your VSTS account from the list, 
-   then choose your team project. Now you can connect.
+   then choose your project. Now you can connect.
     
-   ![Choose your team project](_img/getting-started-with-performance-testing/LoadTestConnect6.png)
+   ![Choose your project](_img/getting-started-with-performance-testing/LoadTestConnect6.png)
 
 <a name="article14"></a>
 ## Run and analyze your load test
@@ -141,7 +142,8 @@ connect Visual Studio to your VSTS account.
 
 1. To [simulate real-world loads](https://msdn.microsoft.com/library/ff406975%28v=vs.140%29.aspx) 
    more closely, you can refine your test by specifying web performance 
-   test properties, load test scenario properties, and run settings properties.
+   test properties, load test scenario properties, and
+   [run settings properties](https://docs.microsoft.com/visualstudio/test/load-test-run-settings-properties).
 
 ## Next step
 

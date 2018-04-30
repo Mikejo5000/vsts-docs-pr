@@ -1,11 +1,11 @@
 ---
 title: Help text, hyperlinks, web content | VSTS & TFS
 description: Customize your work item form to provide information or links to content.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: b6409e94-7e59-47a9-8a62-afdeeac8ad86
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 01/20/2017
 ---
 
@@ -13,7 +13,7 @@ ms.date: 01/20/2017
 
 <b>VSTS (Hosted XML) | TFS 2017 | TFS 2015 </b>
 
->[!IMPORTANT]  
+> [!IMPORTANT]  
 ><b>Feature availability: </b>This topic applies to customizations you can make when you use the Hosted XML or On-premises process models. The customizations addressed in this topic aren't available for the [Inheritance process model](../process/customize-process.md). 
 >
 >For an overview of process models, see [Customize your work tracking experience](../customize-work.md). 
@@ -206,6 +206,6 @@ Combining Text and Hyperlinks in a Single Label
 </FORM>  
 ```  
   
-## Related notes
+## Related articles
  [Design the work item form](design-work-item-form.md)   
  [Customizing Project Tracking Data, Forms, Workflow, and Other Objects](../customize-work.md)

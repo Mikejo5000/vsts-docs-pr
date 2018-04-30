@@ -2,13 +2,16 @@
 title: Case sensitivity | Team Services, TFS, and Visual Studio
 description: How Git interacts with case-insensitive filesystems
 ms.assetid: 7e02f9e9-ebb1-4d7a-aeb2-37445a6cf8c7
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git
+ms.prod: devops
+ms.technology: devops-code-git
 ms.manager: douge
-ms.author: macoope
+ms.author: sdanie
+author: steved0x
+ms.topic: conceptual
 ms.date: 03/14/2018
+monikerRange: '>= tfs-2018'
 ---
-[//]: # (monikerRange: '>= tfs-2018')
+
 
 # Git case sensitivity
 #### VSTS | TFS 2018
@@ -23,7 +26,7 @@ While many of the issues with a case-insensitive OS have been addressed in [Git 
 
 On Linux, checking out a Git repo which contains both "File.txt" and "file.txt" is no problem.
 Those are distinct filenames.
-On Windows and macOS, checking out both files will result in the second one ovewriting the first one.
+On Windows and macOS, checking out both files will result in the second one overwriting the first one.
 If two folders differ only by case, their contents will end up mixed together on case-insensitive filesystems.
 
 ### Fixing case conflicts

@@ -2,12 +2,14 @@
 title: Manage link types
 titleSuffix: TFS  
 description: Customize the link types to track related work, dependencies, and changes made over time - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: bf160228-16db-45f2-9f4f-3cda82c62a88
+ms.topic: reference
 ms.manager: douge
-ms.author: kaelli
-ms.date: 02/26/2018
+ms.author: kaelliauthor: KathrynEE
+monikerRange: '>= tfs-2013 <= tfs-2018'
+ms.date: 03/20/2018
 ---
 
 # Manage link types
@@ -110,7 +112,7 @@ witadmin exportlinktype /collection:http://AdventureWorksServer:8080/tfs/Default
 witadmin importlinktype /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /f:mylinktype.xml  
 ```  
   
-## Related notes 
+## Related articles 
 - [Customize your work tracking experience](../../customize-work.md)    
 - [LinksControlOptions](../linkscontroloptions-xml-elements.md)
 - [Link controls, restrictions, and fields](../../../track/linking-attachments.md)   

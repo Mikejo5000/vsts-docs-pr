@@ -8,16 +8,17 @@ ms.manager: douge
 editor: ''
 ms.assetid:
 ms.workload: web
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
 ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: tutorial
 ms.date: 03/17/2018
-ms.author: mlearned
+author: mlearned
 ms.custom: mvc
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
+
 
 # Create a CI/CD pipeline for your existing code with the Azure DevOps Project
 

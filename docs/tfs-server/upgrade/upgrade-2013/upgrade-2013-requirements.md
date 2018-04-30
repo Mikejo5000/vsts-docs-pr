@@ -4,12 +4,15 @@ description: TFS upgrade requirements
 ms.assetid: b91d72fb-26ac-463e-ae8e-364922cd477f
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 09/01/2016
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-admin
+ms.prod: devops-server
+ms.technology: tfs-admin
+ms.topic: conceptual
+monikerRange: 'tfs-2013'
 ---
 
-[//]: # (monikerRange: 'tfs-2013')
+
 
 # TFS upgrade requirements
 

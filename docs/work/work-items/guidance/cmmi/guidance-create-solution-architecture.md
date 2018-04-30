@@ -1,11 +1,14 @@
 ---
-title: Create a solution architecture | VSTS & TFS
-description: Investigate alternative architectural strategies to creat good architecture - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: CMMI process guidance, Create a solution architecture
+titleSuffix: VSTS & TFS
+description: Investigate alternative architectural strategies to creat good architecture  
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 77707311-8835-4bc8-9b28-17534d7a7d9c
-ms.author: kaelli
+ms.topic: conceptual
+ms.author: kaelliauthor: KathrynEE
 ms.manager: douge
+monikerRange: '>= tfs-2013'
 ms.date: 01/20/2017
 ---
 

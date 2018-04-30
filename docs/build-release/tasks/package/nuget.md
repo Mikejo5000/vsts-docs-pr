@@ -1,12 +1,15 @@
 ---
 title: NuGet restore, pack, and publish
 description: How to use NuGet packages when building code in VSTS
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: conceptual
 ms.assetid: 7e2793cd-7ce1-4268-9f51-ecb41842f13e
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 07/05/2017
+monikerRange: '>= tfs-2018'
 ---
 
 # Package: NuGet
@@ -428,7 +431,7 @@ Make sure your AssemblyInfo.cs files contain the information you want shown in y
 |--------------|--------------------------|-----------------------------------------------|
 | [0.*](#custom-nuget-command)            | Deprecated but available | Available in TFS < 2017 Update 2, deprecated in TFS >= 2018 |
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 ## YAML snippet
 
@@ -470,7 +473,7 @@ Make sure your AssemblyInfo.cs files contain the information you want shown in y
     arguments:
 ```
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ## Q & A
 
@@ -482,6 +485,8 @@ Make sure your AssemblyInfo.cs files contain the information you want shown in y
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
+::: moniker range="< vsts"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->

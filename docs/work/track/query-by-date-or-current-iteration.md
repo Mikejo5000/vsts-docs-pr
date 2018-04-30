@@ -1,12 +1,13 @@
 ---
 title: Query by date or current iteration 
 titleSuffix: VSTS & TFS
-description: Query for work items based on a date, a team's current iteration, or a sliding window of sprints 
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+description: Query for work items based on a date, a team's current iteration, or a sliding window of sprints in Visual Studio Team Services & Team Foundation Server 
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 95D9F558-E3C4-4D5F-BB69-76A3BD7625D8
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: sample
 ms.date: 03/06/2018  
 ---
 
@@ -305,7 +306,7 @@ You can use the <b>@CurrentIteration +/- <i>n</i></b> macro in a query against V
 An error occurs if you open a query that contains the **@CurrentIteration** macro in earlier versions of Visual Studio, or from Excel or Project. Also, you can't use the macro when [copying or cloning test suites and test cases](../../manual-test/mtm/copying-and-cloning-test-suites-and-test-cases.md), [defining alerts](../../notifications/index.md), or with [REST APIs](../../integrate/get-started/rest/basics.md).
 
 
-## Related notes
+## Related articles
 To query for items based on text entered in the History field, see
 [History and auditing](history-and-auditing.md). 
  
@@ -318,4 +319,4 @@ To query for items based on text entered in the History field, see
 
 [!INCLUDE [temp](../_shared/rest-apis-queries.md)]
 
-[!INCLUDE [temp](../../_shared/help-support-shared.md)] 
+ 

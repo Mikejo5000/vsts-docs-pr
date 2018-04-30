@@ -1,15 +1,17 @@
 ---
 title: Build your Visual C++ app
 description: Build your Visual C++ app with Team Foundation Server and VSTS
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: 49886DF3-3689-48B3-8F1C-CA99DAFD1E49
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.date: 02/16/2018
-ms.topic: get-started-article
+ms.topic: quickstart
+monikerRange: '>= tfs-2017'
 ---
-[//]: # (monikerRange: '>= tfs-2017')
+
 
 # Build your Visual C++ app
 
@@ -65,7 +67,7 @@ https://github.com/adventworks/cpp-sample
 
 1. In the right panel, select **.NET Desktop**, and then click **Apply**. This template is useful in building most of the Visual Studio solutions including those that contain classic C++ projects.
 
- You now see all the tasks that were automatically added to the build definition by the template. These are the steps that will automatically run every time you check in code.
+ You now see all the tasks that were automatically added to the build definition by the template. These are the steps that will automatically run every time you push code changes.
 
 1. For the **Agent queue**:
 

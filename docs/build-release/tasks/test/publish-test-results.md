@@ -1,14 +1,16 @@
 ---
 title: VSTS and TFS Build and Test - Publish Test Results step
-ms.assetid: 6D7152C7-2CC7-4CB3-8002-2498650A2509
 description: Publish Test Results with the Visual Studio to integrate cloud-based load tests into your build and release pipelines 
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.assetid: 6D7152C7-2CC7-4CB3-8002-2498650A2509
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: reference
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/19/2018
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: '>= tfs-2015')
 
 # Test: Publish Test Results
 
@@ -48,7 +50,7 @@ The build agent must have the following capabilities:
 | **Advanced - Upload test results files** | When selected, the task will upload all the test result files as attachments to the test run. |
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 ## YAML snippet
 
@@ -67,7 +69,7 @@ The build agent must have the following capabilities:
 #   publishRunAttachments: true
 ```
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ## More Information
 
@@ -81,7 +83,9 @@ The build agent must have the following capabilities:
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->
 
+::: moniker range="< vsts"
 [!INCLUDE [qa-versions](../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->
 

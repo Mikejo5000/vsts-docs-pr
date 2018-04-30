@@ -4,12 +4,15 @@ description: Use the same SharePoint site for TFS that you have right now
 ms.assetid: 562798b8-7010-4855-96e0-9d60b926a052
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 09/01/2016
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-admin
+ms.prod: devops-server
+ms.technology: tfs-admin
+ms.topic: conceptual
+monikerRange: 'tfs-2013'
 ---
 
-[//]: # (monikerRange: 'tfs-2013')
+
 
 # Use the same SharePoint site for TFS that you have right now
 

@@ -1,15 +1,16 @@
 ---
-title: Selenium testing in VSTS
+title: Selenium testing with continuous integration in VSTS
 description: UI Testing with Selenium in a continuous deployment pipeline in Visual Studio Team Services (VSTS) and Team Foundation Server TFS
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
 ms.assetid: 1B90D2DF-4AB0-4B65-8039-2B14A25FB547
-ms.topic: get-started-article
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: quickstart
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/18/2018
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: ">= tfs-2015")
 
 # Get started with Selenium testing in a CD pipeline
 
@@ -182,7 +183,7 @@ You can deploy and test your app using either the Hosted agent in Azure, or a pr
 <a name="include-test"></a>
 ## Include the test in a CD release
 
-[//]: # (::: moniker range="<= tfs-2017")
+::: moniker range="<= tfs-2017"
 
 **NOTE:** This example uses the **Visual Studio Test Platform Installer** task and the latest
 version of the **Visual Studio Test** task. These tasks are not available in TFS 2015 or TFS 2017.
@@ -190,7 +191,7 @@ To run Selenium tests in these versions of TFS, you must use the
 [Visual Studio Test Agent Deployment](../tasks/test/visual-studio-test-agent-deployment.md)
 and [Run Functional Tests](../tasks/test/run-functional-tests.md) tasks instead. 
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 1. If you don't have an existing release definition that deploys your web app:
 

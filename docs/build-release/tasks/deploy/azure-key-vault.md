@@ -1,14 +1,16 @@
 ---
 title: Build and Deploy - Azure Key Vault task
-description: VSTS ands TFS build task step to download secrets from an Azure key vault
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+description: Azure Key Vault task for use in the phases of all of your build and release definitions in Microsoft VSTS and TFS
 ms.assetid: 591A3606-F693-4DDD-9E9D-9F11BDD48C51
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: reference
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/19/2018
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
 
 # Deploy: Azure Key Vault
 
@@ -95,7 +97,7 @@ $pfxPath = [Environment]::GetFolderPath("Desktop") + "\MyCert.pfx"
 
 For more details, see [Get started with Azure Key Vault certificates](https://blogs.technet.microsoft.com/kv/2016/09/26/get-started-with-azure-key-vault-certificates).
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 ## YAML snippet
 
@@ -109,7 +111,7 @@ For more details, see [Get started with Azure Key Vault certificates](https://bl
 #   SecretsFilter: * # EditableOptions
 ```
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ## Contact Information
 

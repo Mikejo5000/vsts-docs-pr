@@ -1,11 +1,12 @@
 ---
 title: All WORKFLOW XML elements reference
 titleSuffix: VSTS & TFS
-description: Quick reference to all WORKFLOW XLM elements and main attributes for Team Foundation Server 
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+description: Quick reference to all WORKFLOW XML elements and main attributes for Team Foundation Server 
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 59689226-f7f1-4046-866e-3030aad806ae
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: reference
 ms.manager: douge
 ms.date: 02/10/2017
 ---
@@ -175,7 +176,7 @@ For each transition, you specify a set of reasons for changing the state of the 
 </td><td data-th="Required?"><p>Required</p></td></tr></table>
 
  
-## Related notes 
+## Related articles 
 -  [FIELD (Workflow)](field-workflow-element-reference.md)   
 -  [Change the workflow](change-workflow-wit.md) 
 -  [Customize the work tracking experience](../customize-work.md) 

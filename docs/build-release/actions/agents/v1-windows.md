@@ -1,14 +1,17 @@
 ---
 title: Deploy an agent on Windows for TFS 2015
 description: Use Build and Release agents for TFS 2015 to build or deploy your Windows and Azure applications.
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.topic: conceptual
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: 9FD46361-985B-4886-A042-9C322CE3CD92
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.date: 08/26/2016
+monikerRange: 'tfs-2015'
 ---
-[//]: # (monikerRange: 'tfs-2015')
+
 
 # Deploy an agent on Windows for TFS 2015
 
@@ -176,6 +179,8 @@ Yes. If you are an existing customer with custom build processes you are not yet
 
 ![Configure XAML build controllers and agents](_img/v1-windows/tfs-on-premises-xaml-build-system-configure-start.png)
 
+::: moniker range="< vsts"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->

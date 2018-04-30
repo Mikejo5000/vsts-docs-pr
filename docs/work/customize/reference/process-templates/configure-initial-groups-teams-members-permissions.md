@@ -1,11 +1,13 @@
 ---
-title: Configure initial groups, teams, members, and permissions | VSTS & TFS
-description: Configure the initial security settings for a team project using the plug-in file for Groups and Permissions - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Configure initial groups, teams, members, and permissions
+titleSuffix: VSTS & TFS
+description: Configure the initial security settings for a team project using the plug-in file for Groups and Permissions in Team Foundation Server  
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 518b3c00-0587-45fe-8cbb-43f6a2760ea0
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.manager: douge
+ms.topic: reference
 ms.date: 09/08/2017
 ---
 
@@ -265,7 +267,7 @@ The following table describes the permissions that you can assign to control acc
 |**DELETE**|**Delete this node**. Can delete iteration nodes.<br /><br /> Users who have both this permission and the GENERIC_WRITE permission for another node can delete iteration nodes and reclassify existing work items from the deleted node. If the deleted node has child nodes, those nodes are also deleted.|  
 |**GENERIC_WRITE**|**Edit this node**. Can set permissions for iteration nodes and rename nodes.|  
   
-## Related notes 
+## Related articles 
 - [Define groups, teams, and permissions](define-groups-teams-permissions-plug-in.md)   
 - [Control access to functional areas](control-access-to-functional-areas.md)   
 - [Set up groups for use in TFS deployments](../../../../tfs-server/admin/setup-ad-groups.md)   

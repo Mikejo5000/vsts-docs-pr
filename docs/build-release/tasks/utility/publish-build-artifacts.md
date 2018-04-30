@@ -1,14 +1,17 @@
 ---
 title: Publish Build Artifacts
 description: How to publish build artifacts to VSTS, TFS or a file share when building code
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.topic: reference
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: 01533845-5D63-4DAC-97DF-D55F1E4DCF53
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.date: 10/12/2017
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: '>= tfs-2015')
+
 
 # Utility: Publish Build Artifacts
 
@@ -35,7 +38,7 @@ None
 | Parallel count (**VSTS**, **TFS 2018**, or newer) | Enter the degree of parallelism (the number of threads) used to perform the copy. The value must be at least 1 and not greater than 128. Choose a value based on CPU capabilities of the build agent. Typically, 8 is a good starting value. |
 | [!INCLUDE [control-options-arguments-md](../_shared/control-options-arguments-md.md)] | |
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 ## YAML snippet
 
@@ -52,7 +55,7 @@ None
 #   ParallelCount: 8
 ```
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ## Q & A
 

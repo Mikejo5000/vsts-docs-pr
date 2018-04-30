@@ -1,13 +1,14 @@
 ---
 title: Query fields, operators, and macros/variables 
 titleSuffix: VSTS & TFS
-description: Query reference for field data types, operators, and macros/variables used by the Query Editor in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+description: Field data types, operators, and macros/variables used by the Query Editor in Visual Studio Team Services & Team Foundation Server 
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 814c2dca-cf8f-44bf-bba1-a5d8e293fc05
 ms.manager: douge
-ms.author: kaelli
-ms.date: 03/06/2018  
+ms.author: kaelliauthor: KathrynEE
+ms.topic: reference
+ms.date: 03/20/2018  
 ---
 
 
@@ -90,7 +91,7 @@ The value you specify for a field must conform to the data type for that field. 
 <tr>
 	<td><p><strong>Boolean</strong> </p></td>
 	<td><p>Specifies a field that takes on a True/False value. </p>
-<blockquote style="font-size: 13px"><b>Feature availability:</b> The Boolean data type field is only supported for VSTS and TFS 2017 and later versions.    
+<blockquote style="font-size: 13px">**Feature availability:** The Boolean data type field is only supported for VSTS and TFS 2017 and later versions.    
 </blockquote>
 </td></tr>
 
@@ -137,9 +138,9 @@ You can use query operators in the following table to specify how each value in 
 <table width="100%">
 <thead valign="bottom">
 <tr>
-<th width="16%">Query operator</th>
+<th width="22%">Query operator</th>
 <th width="44%">Returns work items if the value in the work item matches the criteria listed</th>
-<th width="40%">Applicable data types</th>
+<th width="36%">Applicable data types</th>
 </tr>
 </thead>
 <tbody valign="top">
@@ -210,32 +211,32 @@ You can use query operators in the following table to specify how each value in 
 <tr>
 	<td><p><strong>In</strong></p></td>
 	<td><p>Matches any value in a delimited set. For example, you can find work items whose IDs are 100, 101, and 102 if you specify those values for the ID field.</p>
-<blockquote><strong>Important:</strong>  Separate values with the list separator that corresponds to the regional settings that are defined for your client computer. For example, you might use a comma(,).
+<blockquote><strong>Important:</strong> Separate values with the list separator that corresponds to the regional settings that are defined for your client computer. For example, you might use a comma(,).
 </blockquote>
 </td>
 	<td><p>Number, <strong>String</strong>, <strong>DateTime</strong>, <strong>TreePath</strong></p></td></tr>
 <tr>
 	<td><p><strong>Not In</strong></p></td>
 	<td><p>Does not match any value in a delimited set. For example, you can exclude work items whose States are not Resolved, Completed, or Closed from query results if you specify those values for the State field.</p>
-<blockquote><strong>Important:</strong>  Separate values with the list separator that corresponds to the regional settings that are defined for your client computer. For example, you might use a comma(,).
+<blockquote><strong>Important:</strong> Separate values with the list separator that corresponds to the regional settings that are defined for your client computer. For example, you might use a comma(,).
 </blockquote>
-<blockquote><strong>Feature availability:</strong>  The <strong>Not In</strong> operator is currently only available from VSTS. Support for TFS 2018 is planned for a future update.</blockquote>
+<blockquote><strong>Feature availability:</strong>  The <strong>Not In</strong> operator is available from VSTS. and TFS 2018.2 and later versions.</blockquote>
 </td>
 	<td><p>Number, <strong>String</strong>, <strong>DateTime</strong>, <strong>TreePath</strong></p></td></tr>
 <tr>
 	<td><p><strong>In Group</strong></p></td>
-	<td><p>Matches a value that is a member of the group in the clause. Groups correspond to the name of a category or a TFS group. For example, you can create a query to find all work items that are assigned to members of the Contributors group or to a team. Team groups are created when you create a team. The name of team groups follows the pattern [<em>Team Project Name</em>]\ <em>Team Name</em>.</p><p>You can't specify a security or email distribution group as a value.</p><p>For worked examples, see [Create managed queries](example-queries.md).</p></td>
-	<td><p> <strong>String</strong>  that matches the name of a user group or category group in Team Foundation Server.</p>
+	<td><p>Matches a value that is a member of the group in the clause. Groups correspond to the name of a team, security group, or work tracking category. For example, you can create a query to find all work items that are assigned to members of the Contributors group or to a team. Team groups are created when you create a team. The name of team groups follows the pattern [<em>Team Project Name</em>]&#92;<em>Team Name</em>.</p><p>For example queries, see [Query by assignment or workflow changes](query-by-workflow-changes.md).</p></td>
+	<td><p> <strong>String</strong> that matches the name of a team, security group, or category defined in the system.</p>
 <blockquote><strong>Note:</strong>  You can use the <strong>In Group</strong> operator only with fields that use the <strong>String</strong> data type or the <strong>Work Item Type</strong> field. The operator cannot be used to query Azure Active Directory groups.
 </blockquote>
-<p>For information about category groups, see [Use categories to group work item types](../customize/reference/use-categories-to-group-work-item-types.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json). For more information about Azure Active Directory and VSTS, see [Access with Azure Active Directory groups](../../accounts/manage-azure-active-directory-groups-vsts.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json).</p></td></tr>
+<p>For information about category groups, see [Use categories to group work item types](../customize/reference/use-categories-to-group-work-item-types.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json).</p></td></tr>
 <tr>
 	<td><p><strong>Not in Group</strong></p></td>
 	<td><p>Does not match a value that is a member of the group in the clause.</p></td>
 	<td><p> <strong>String</strong>  that matches the name of a user group in Team Foundation Server or a category group defined for a team project.</p>
-<blockquote><strong>Note:</strong>  You can use the <strong>Not In Group</strong> operator only with fields that use the <strong>String</strong> data type or the <strong>Work Item Type</strong> field. The operator cannot be used to query Azure Active Directory groups.
+<blockquote><strong>Note:</strong> You can use the <strong>Not In Group</strong> operator only with fields that use the <strong>String</strong> data type or the <strong>Work Item Type</strong> field.
 </blockquote>
-<p>For more information about Azure Active Directory and VSTS, see [Access with Azure Active Directory groups](../../accounts/manage-azure-active-directory-groups-vsts.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json).</p></td>
+</td>
 </tr>
 <tr>
 	<td><p><strong>Was Ever</strong></p></td>
@@ -261,8 +262,8 @@ You can use the macros described in the following table to filter your queries b
 <table>
 <thead valign="bottom">
 <tr>
-<th width="18%"><p>Macro</p></th>
-<th width="82%"><p>Description</p></th>
+<th width="25%"><p>Macro</p></th>
+<th width="75%"><p>Description</p></th>
 </tr>
 </thead>
 <tbody valign="top">
@@ -275,14 +276,14 @@ You can use the macros described in the following table to filter your queries b
 
 <tr>
 	<td>**@CurrentIteration** <sup>1</sup></td>
-	<td>Use in conjunction with the **Iteration Path** field to automatically filter for work items assigned to the current sprint based on the [current team focus or context](../../teams/switch-team-context.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json). For specific examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).
+	<td>Use in conjunction with the **Iteration Path** field to automatically filter for work items assigned to the current sprint based on the [current team focus or context](../../settings/switch-team-context.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json). For specific examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).
 	<p>This macro only works when run from the web portal. You can't use the macro when [copying or cloning test suites and test cases](../../manual-test/mtm/copying-and-cloning-test-suites-and-test-cases.md), [defining alerts](../../notifications/index.md), or with [REST APIs](../../integrate/get-started/rest/basics.md).</p>
 </td>
 </tr>
 
 <tr>
 	<td><b>@CurrentIteration +/- <i>n</i></b> <sup>2</sup></td>
-	<td>Use in conjunction with the **Iteration Path** field to filter the set of work items assigned to the current sprint +/- n sprints based on the [current team focus or context](../../teams/switch-team-context.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json). For specific examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).
+	<td>Use in conjunction with the **Iteration Path** field to filter the set of work items assigned to the current sprint +/- n sprints based on the [current team focus or context](../../settings/switch-team-context.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json). For specific examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).
 </td>
 </tr>
 
@@ -318,7 +319,7 @@ You can use the macros described in the following table to filter your queries b
 </tr>
 
 <tr>
-	<td><b>@RecentProjectActivity&nbsp;<sup>4</sup></b></td>
+	<td><b>@RecentProjectActivity <sup>6</sup></b></td>
 	<td>Use in conjunction with the **ID** field and **In** operator to list work items that have been updated in the team project within the last 30 days. You can view similar lists from the [Work Items page, **Recently created**, **Recently updated** and **Recently completed** pivot views](../work-items/view-add-work-items.md). 
 </td>
 </tr>
@@ -335,26 +336,35 @@ You can use the macros described in the following table to filter your queries b
 0. The **@CurrentIteration** macro is supported for VSTS and TFS 2015 and later versions. 
 0. The **@CurrentIteration +/- n** macro is supported for VSTS and only when run from the web portal. 
 0. The **@Follow** macro is supported for VSTS and TFS 2017 and later versions.
-0. The **@MyRecentActivity**, **@RecentMentions**, **@RecentProjectActivity** macros are supported for VSTS and TFS 2018 and later versions.
-0. The **@Project** macro is supported for VSTS and TFS 2015.1 and later versions.  The system automatically defaults to filtering based on the current team project. To learn more, see [Query across team projects](using-queries.md#across-projects).  
+0. The **@MyRecentActivity**, **@RecentMentions**, **@RecentProjectActivity** macros are supported for VSTS and TFS 2018.2 and later versions.
+0. The **@Project** macro is supported for VSTS and TFS 2015.1 and later versions.  The system automatically defaults to filtering based on the current team project. To learn more, see [Query across team projects](using-queries.md#across-projects). 
+0. The **@RecentProjectActivity** macros are supported for VSTS.
  
-
+ 
 
 <a id="full-text" /> 
 ## Full-text and partial word searches
 
-Specify **Contains** or **Does Not Contain** to search against exact or partial matches of a word or phrase. Specify **Contains Words** or **Does Not Contain Words** to search against an exact phrase or to use the wildcard character, **\***. These operators use the full-text search index. You can only use the wildcard character at the end of a partial word or phrase.
+Specify **Contains** or **Does Not Contain** to search against exact or partial matches of a word or phrase. Specify **Contains Words** or **Does Not Contain Words** to search against an exact phrase or to use the wildcard character, **&#42;**. These operators use the full-text search index. You can only use the wildcard character at the end of a partial word or phrase.
 
 For examples, see [Example work item queries](example-queries.md) and [Query for work items using the History field](history-and-auditing.md).
 
->[!NOTE]  
->Not all deployments support full-text searches. For example, SQL Express and SQL Azure, which support VSTS platform, do not support full-text search. In these instances, you will only see the **Contains** and **Does not Contain** operators.
+<!---
+> [!NOTE]    
+> Not all deployments support full-text searches. For example, SQL Express and SQL Azure, which support the cloud service, do not support full-text search. In these instances, you will only see the **Contains** and **Does not Contain** operators.
+> -->
 
-**Contains Words** and **Does Not Contain Words** filter items based on the full-text search index created for long-text fields. Team Foundation automatically indexes all long-text fields with a data type of **PlainText** and **HTML** and the **Title** field for full-text search. The index and operators are only available when the SQL Server that supports Team Foundation Server supports full-text search.
+**Contains Words** and **Does Not Contain Words** filter items based on the full-text search index created for long-text fields. 
+
+::: moniker range=">= tfs-2013 <= tfs-2018"
+Team Foundation automatically indexes all long-text fields with a data type of **PlainText** and **HTML** and the **Title** field for full-text search. The index and operators are only available when the SQL Server that supports Team Foundation Server supports full-text search.
 
 Full-text searches require a SQL collation that corresponds to a language which has a word breaker registered with SQL Server. If the collation settings for the team project collection database used for your Team Foundation Server instance do not correspond to a supported language, your search results may not match your expectations. In these cases, you might try using the **Contains** or **Does Not Contain** operators.
 
 For more information, see [Full-Text Search Queries and Collation Settings](../../tfs-server/install/sql-server/collation-requirements.md).
+
+::: moniker-end
+
 
 <!---
 ## Query indexed fields
@@ -367,6 +377,4 @@ You use the **witadmin indexfield** command to enable or disable indexing for a 
 
 --> 
 
-[!INCLUDE [temp](../_shared/rest-apis-queries.md)]
- 
-[!INCLUDE [temp](../../_shared/help-support-shared.md)] 
+[!INCLUDE [temp](../_shared/rest-apis-queries.md)] 

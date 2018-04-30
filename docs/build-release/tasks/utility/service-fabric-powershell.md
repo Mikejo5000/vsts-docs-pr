@@ -1,14 +1,16 @@
 ---
 description: Service Fabric PowerShell Utility task
-title: Service Fabric PowerShell build task VSTS and TFS 
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+title: Service Fabric PowerShell build task for use in all your build or release definitions in Microsoft VSTS and TFS 
 ms.assetid: EE9455CD-5E1A-42C8-AC6D-8CF44878F090
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: reference
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/19/2018
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
 
 # Utility: Service Fabric PowerShell 
 
@@ -40,7 +42,7 @@ deploy to a Service Fabric cluster.
 
 Also see: [Service Fabric Compose Deploy task](../deploy/service-fabric-compose-deploy.md)
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 ## YAML snippet
 
@@ -56,7 +58,7 @@ Also see: [Service Fabric Compose Deploy task](../deploy/service-fabric-compose-
     ScriptArguments:
 ```
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->
