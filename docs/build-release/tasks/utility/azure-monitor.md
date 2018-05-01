@@ -9,10 +9,10 @@ ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
 ms.date: 04/09/2018
-monikerRange: 'vsts'
+monikerRange: '>= tfs-2017'
 ---
 
-# Utility: Query Azure monitor alerts
+# Utility: Query Azure Monitor Alerts
 
 **VSTS**
 

@@ -9,7 +9,7 @@ ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
 ms.date: 04/09/2018
-monikerRange: 'vsts'
+monikerRange: '>= tfs-2017'
 ---
 
 # Release deployment control using gates 
@@ -26,7 +26,7 @@ change management, monitoring, and external approval systems.
 
 Some scenarios and use cases for gates are:
 
-  * **Incident and issues management**. Ensure the required status for workitems, incidents, and issues. For example, ensure deployment occurs only if no priority zero bugs exist, and validation that there are no active incidents takes place after deployment. 
+  * **Incident and issues management**. Ensure the required status for work items, incidents, and issues. For example, ensure deployment occurs only if no priority zero bugs exist, and validation that there are no active incidents takes place after deployment. 
   * **Seek approvals outside VSTS**. Notify non-VSTS users such as legal approval departments, auditors, or IT managers about a deployment by integrating with approval collaboration systems such as Microsoft Teams or Slack, and waiting for the approval to complete.
   * **Quality validation**. Query metrics from tests on the build artifacts such as pass rate or code coverage and deploy only if they are within required thresholds.
   * **Security scan on artifacts**. Ensure security scans such as anti-virus checking, code signing, and policy checking for build artifacts have completed. A gate might initiate the scan and wait for it to complete, or just check for completion.
@@ -58,7 +58,7 @@ The release execution and deployment does not proceed if all gates do not succee
      to reach a steady operational state, the time taken for execution of all the required tests on
      the deployed environment, and the time it takes for incidents to be logged after the deployment.<p />
 
-1. Choose **+ Add**, and select the type of release gate you require.
+1. Choose **+ Add** and select the type of release gate you require.
 
    ![Adding a gate function](_img/add-gates.png)
 
@@ -136,7 +136,7 @@ about the evaluation of all the gates you configured for the release.
 * [Configure your release pipelines for safe deployments](https://blogs.msdn.microsoft.com/visualstudioalm/2017/04/24/configuring-your-release-pipelines-for-safe-deployments/)
 * [Tutorial: Use approvals and gates to control your deployment](../../../../actions/deploy-using-approvals.md)
 * [Twitter sentiment as a release gate](https://blogs.msdn.microsoft.com/bharry/2017/12/15/twitter-sentiment-as-a-release-gate/)
-* [Github issues as a release gate](https://www.visualstudiogeeks.com/DevOps/github-issues-as-deployment-gate-in-vsts-rm)
+* [GitHub issues as a release gate](https://www.visualstudiogeeks.com/DevOps/github-issues-as-deployment-gate-in-vsts-rm)
 * [Author custom gates](https://github.com/Microsoft/vsts-tasks/blob/master/docs/authoring/gates.md). [Library with examples](https://github.com/Microsoft/vsts-rm-extensions/tree/master/ServerTaskHelper/DistributedTask.ServerTask.Remote.Common) 
 
 

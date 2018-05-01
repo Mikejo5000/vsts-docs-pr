@@ -367,7 +367,7 @@
       href: tasks/utility/publish-build-artifacts.md
     - name: Publish to Azure Service Bus
       href: tasks/utility/publish-to-azure-service-bus.md
-    - name: Query Azure monitor alerts
+    - name: Query Azure Monitor Alerts
       href: tasks/utility/azure-monitor.md
     - name: Query Work Items
       href: tasks/utility/work-item-query.md
