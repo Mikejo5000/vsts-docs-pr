@@ -54,7 +54,7 @@ The release does not proceed further if gates do not succeed in the timeout inte
 
 1. Choose **+ Add**, and select the type of release gate you require.
 
-   ![Adding a gate function](_img/AddGates.png)
+   ![Adding a gate function](_img/add-gates.png)
 
    The following gates are provided out of the box. [More gates can be added](https://github.com/Microsoft/vsts-tasks/blob/master/docs/authoring/gates.md) with marketplace extensions.
 
@@ -69,7 +69,7 @@ The release does not proceed further if gates do not succeed in the timeout inte
    
 1. Select and enter the required gate arguments, depending on the type of gate chosen.
 
-   ![Setting the arguments for a gate function](_img/Queryworkitems.png)
+   ![Setting the arguments for a gate function](_img/query-workitems.png)
 
 1.  Set the evaluation options that apply to all the gates added:
 
@@ -107,12 +107,12 @@ this case, after the timeout period expires, the deployment is rejected.
 1. Open the **Summary** page for your release. As the release executes, the pop-up message when you choose
    the ![info](_img/info-icon.png) icon for an environment indicates the current status of your deployment to each environment.
 
-   ![Gates evaluation during a release](_img/WaitingonDelaybeforeEvaluation.png)
+   ![Gates evaluation during a release](_img/waiting-on-delay-before-evaluation.png)
 
 1. Open the **Logs** page for your release. During and after a deployment, it shows comprehensive information
 about the evaluation of all the gates you configured for the release.
 
-   ![Gates log results ](_img/LogsPage.png)
+   ![Gates log results ](_img/logs-page.png)
 
 ## Related topics
 
