@@ -16,21 +16,27 @@ monikerRange: 'vsts'
 
 **VSTS**
 
-Gates allow automatic collection of health signals from external services and promote the release when all the signals are successful at the same time, or stop the deployment on timeout. 
-Typically gates work with incident management, problem management, change management, monitoring and external approval systems. 
-Following are some use cases for gates -
+Gates allow automatic collection of health signals from external services, and then
+promote the release when all the signals are successful at the same time or stop the
+deployment on timeout. 
+Typically, gates are used in connection with incident management, problem management,
+change management, monitoring, and external approval systems. 
 
-  * **Incident and issues management** Ensure the required status for workitems, incidents and issues, like no P0 bugs before deployment and no active incidents after the deployment. 
-  * **Seek approvals outside VSTS** Notify non-VSTS users like LCA, auditor or IT managers about a deployment approval collaboration systems like Microsoft Teams or Slack, and wait for the approval to complete.
-  * **Quality validation** Query test metrics (test pass %, code coverage etc.) for the build being deployed till they meet the requirement threshold(s).
-  * **Security scan on artifacts** Ensure the build artifacts have completed the security scans like anitu-virus, code sign, policy check etc. A gate might initiate the scan and wait for it to complete, or only check for completion.
-  * **User experience relative to baseline** Using product telemetry, ensure the user experience hasn't regressed from the baseline state. The experience level before the deployment could be considered a baseline.
-  * **Change management** Wait for change management procedure in a ITSM system like ServiceNow to complete before the deployment.
-  * **Infrastructure health** Execute monitoring and compliance rules against the infrastructure after the deployment. Wait for a healthy resource utilization and positive security report.  
+## Scenarios for gates
 
-Most of the health parameters vary over time, changing their status from healthy to unhealthy and vice versa. 
-In order to account for such variations, all the gates are periodically re-evaluated until all of them are successful at the same time. 
-The release does not proceed further if gates do not succeed in the timeout interval.
+Some scenarios and use cases for gates are:
+
+  * **Incident and issues management**. Ensure the required status for workitems, incidents, and issues. For example, ensure deployment occurs only if no priority zero bugs exist, and validation that there are no active incidents takes place after deployment. 
+  * **Seek approvals outside VSTS**. Notify non-VSTS users such as legal approval departments, auditors, or IT managers about a deployment by integrating with approval collaboration systems such as Microsoft Teams or Slack, and waiting for the approval to complete.
+  * **Quality validation**. Query metrics from tests on the build artifacts such as pass rate or code coverage and deploy only if they are within required thresholds.
+  * **Security scan on artifacts**. Ensure security scans such as anti-virus checking, code signing, and policy checking for build artifacts have completed. A gate might initiate the scan and wait for it to complete, or just check for completion.
+  * **User experience relative to baseline**. Using product telemetry, ensure the user experience hasn't regressed from the baseline state. The experience level before the deployment could be considered a baseline.
+  * **Change management**. Wait for change management procedures in a system such as ServiceNow complete before the deployment occurs.
+  * **Infrastructure health**. Execute monitoring and validate the infrastructure against compliance rules after deployment, or wait for healthy resource utilization and a positive security report.
+
+Most of the health parameters vary over time, regularly changing their status from healthy to unhealthy and back to healthy. 
+To account for such variations, all the gates are periodically re-evaluated until all of them are successful at the same time. 
+The release execution and deployment does not proceed if all gates do not succeed in the same interval and before the configured timeout.
 
 ## Define a gate for an environment
 
@@ -56,7 +62,7 @@ The release does not proceed further if gates do not succeed in the timeout inte
 
    ![Adding a gate function](_img/add-gates.png)
 
-   The following gates are provided out of the box. [More gates can be added](https://github.com/Microsoft/vsts-tasks/blob/master/docs/authoring/gates.md) with marketplace extensions.
+   The following gates are provided by default:
 
    * **Invoke Azure function**: Trigger execution of an Azure function and ensure a successful completion.
      For more details, see [Azure function task](../../../../tasks/utility/azure-function.md).
@@ -66,17 +72,19 @@ The release does not proceed further if gates do not succeed in the timeout inte
      For more details, see [HTTP REST API task](../../../../tasks/utility/http-rest-api.md).
    * **Query Work items**: Ensure the number of matching work items returned from a query is within a threshold.
      For more details, see [Work item query task](../../../../tasks/utility/work-item-query.md).
+
+   You can [create your own gates](https://github.com/Microsoft/vsts-tasks/blob/master/docs/authoring/gates.md) with Marketplace extensions.
    
-1. Select and enter the required gate arguments, depending on the type of gate chosen.
+1. Select and enter the required gate arguments, depending on the type of gate you chose.
 
    ![Setting the arguments for a gate function](_img/query-workitems.png)
 
-1.  Set the evaluation options that apply to all the gates added:
+1.  Set the evaluation options that apply to all the gates you've added:
 
-   * **Time between re-evaluation of gates**. The time interval between to successive evaluation of 
+   * **Time between re-evaluation of gates**. The time interval between successive evaluations of 
      the gates. At each sampling interval, new requests are sent concurrently to each gate
-     for fresh results. It is recommended that the sampling interval is greater than the longest
-     typical response time of the configured gates, to allow time for all responses to be received for evaluation.     
+     and the new results are evaluated. It is recommended that the sampling interval is greater than the longest
+     typical response time of the configured gates to allow time for all responses to be received for evaluation.     
 
    * **Timeout after which gates fail**. The maximum evaluation period for all gates. 
      The deployment will be rejected if the timeout is reached before all gates succeed during the same sampling interval. 
