@@ -28,11 +28,11 @@ Can be used in only an [agentless phase](../../concepts/process/phases.md#agentl
 | --- | --- |
 | **Azure function URL** | Required. The URL of the Azure function to be invoked. |
 | **Function key** | Required. The value of the available function or the host key for the function to be invoked. Should be secured by using a hidden variable. |
-| **Method** | Required. The http method with which the function would be invoked. |
+| **Method** | Required. The HTTP method with which the function will be invoked. |
 | **Headers** | Optional. The header in JSON format to be attached to the request sent to the function. |
-| **Query parameters** | Optional. Query parameters to append to the function URL. Should not start with "?"and "&". |
+| **Query parameters** | Optional. Query parameters to append to the function URL. Must not start with "**?**" or "**&**". |
 | **Body** | Optional. The request body for the Azure function call in JSON format. |
-| **Completion Event** | Required. On what basis does the task complete. **API response** (default) completion is when function returns success and success criteria evaluates to true , or **Callback** where the Azure function makes a callback to update the timeline record. |
+| **Completion Event** | Required. How the task reports completion. Can be **API response** (the default) - completion is when function returns success and success criteria evaluates to true, or **Callback** - the Azure function makes a callback to update the timeline record. |
 | **Success criteria** | Optional. How to parse the response body for success. |
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
 
