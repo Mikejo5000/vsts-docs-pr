@@ -1,6 +1,6 @@
 ---
-title: Project & Account Settings
-titleSuffix: VSTS & TFS
+title: Codex Settings
+titleSuffix: Codex
 description: Configure settings for teams, projects, and account-level objects
 ms.technology: devops-settings
 ms.prod: devops
@@ -9,19 +9,19 @@ ms.assetid:
 ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013'
+monikerRange: 'vsts'
 ms.date: 04/01/2018
 ---
 
-# Project & Account Settings 
+# Codex Settings 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
 
 Manage permissions, add teams, and configure team, project, and organizational-level resources. 
 
 ## 5-Minute Quickstarts    
-- [Define area paths](set-area-paths.md)
-- [Define iteration paths or sprints](set-iteration-paths-sprints.md) 
+- [Set area paths](set-area-paths.md)
+- [Set iteration paths or sprints](set-iteration-paths-sprints.md) 
 - [Add a team & team members](../work/scale/multiple-teams.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)  
 - [Add a team administrator](../work/scale/add-team-administrator.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json) 
 
@@ -35,7 +35,7 @@ Manage permissions, add teams, and configure team, project, and organizational-l
 ## Concepts 
 
 - [About areas and iterations](about-areas-iterations.md)  
-- [About process customization](../work/customize/inheritance-process-model.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)        
+- [About process customization](./work/inheritance-process-model.md)        
 - [Team administrator role and permissions](../work/scale/team-administrator-permissions.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)
 
 ## How-to Guides

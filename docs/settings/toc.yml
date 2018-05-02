@@ -1,4 +1,4 @@
-- name: "Project & Account Settings" 
+- name: Codex Settings
   href: index.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json 
 - name: Overview
   items:
@@ -8,14 +8,18 @@
     href: ../work/scale/scale-teams.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json 
 - name: Quickstarts
   items:
-  - name: Define area paths
+  - name: Set area paths
     href: set-area-paths.md
-  - name: Define iteration paths or sprints
+  - name: Set iteration paths or sprints
     href: set-iteration-paths-sprints.md
   - name: "Add a team & team members"
     href: ../work/scale/multiple-teams.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
   - name: Add a team administrator
     href: ../work/scale/add-team-administrator.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+  - name: Add a custom field
+    href: ./work/add-custom-field.md
+  - name: Add a custom work item type
+    href: ./work/add-custom-wit.md
 - name: Tutorials
   items:
   - name: Add and manage users
@@ -33,7 +37,7 @@
   - name: About notifications
     href: ../notifications/about-notifications.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
   - name: About process customization
-    href: ../work/customize/inheritance-process-model.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+    href: ./work/inheritance-process-model.md
 - name: How-to Guides
   items:
   - name: Set team defaults
@@ -49,21 +53,21 @@
   - name: Process configuration
     items:
     - name: Manage processes
-      href: ../work/customize/process/manage-process.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json 
+      href: ../work/manage-process.md
     - name: Add a custom field
-      href: ../work/customize/process/customize-process-field.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+      href: ../work/customize-process-field.md
     - name: Customize a web form
-      href: ../work/customize/process/customize-process-form.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+      href: ../work/customize-process-form.md
     - name: Customize a workflow
-      href: ../work/customize/process/customize-process-workflow.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+      href: ../work/process/customize-process-workflow.md
     - name: Customize a work item type
-      href: ../work/customize/process/customize-process-wit.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+      href: ../work/customize-process-wit.md
     - name: Add a custom rule
-      href: ../work/customize/process/custom-rules.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+      href: ../work/custom-rules.md
     - name: Add a custom control
-      href: ../work/customize/process/custom-controls-process.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+      href: ../work/custom-controls-process.md
     - name: Customize backlogs and boards
-      href: ../work/customize/process/customize-process-backlogs-boards.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+      href: ../work/customize-process-backlogs-boards.md
   - name: Manage notifications
     href: ../collaborate/manage-team-notifications.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
   - name: Set dashboard permissions
@@ -74,6 +78,8 @@
     href: ../work/scale/team-administrator-permissions.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
   - name: "Default permissions & access"
     href: ../security/permissions-access.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+  - name: Work tracking object limits
+    href: ./work/object-limits.md
 - name: Resources
   items:
   - name: Account Management
