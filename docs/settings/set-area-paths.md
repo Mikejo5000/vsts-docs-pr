@@ -41,9 +41,9 @@ For naming restrictions on area and iteration paths, see [About areas and iterat
 From the web portal, open the **Settings** context for the Codex project.
 
 # [Vertical navigation](#tab/vertical)
+
 ::: moniker range="vsts"  
 You define both areas and iterations from the **Work>Project configuration** hub of the project **Settings** hub. 
-
 
 0. To open **Settings**, choose the ![](../_img/icons/settings-icon-vert.png) Settings icon (located toward the bottom of the left-pane).  
 
@@ -58,7 +58,7 @@ You define both areas and iterations from the **Work>Project configuration** hub
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013"  
+::: moniker range=">= tfs-2013 <= tfs-2018"  
 Vertical navigation isn't a supported feature for TFS at this time. 
 ::: moniker-end
 
@@ -145,15 +145,32 @@ You define both areas and iterations from the **Work** hub of the team project a
 
 When you rename an area or an iteration, or move the node within the tree hierarchy, the system will automatically update the work items and queries that reference the existing path or paths. 
 
-When you delete an area or an iteration node, the system automatically updates the existing work items with the node that you enter at the deletion prompt. 
+0. To rename an area or iteration path, choose the ![](../_img/icons/actions-icon.png) actions icon for the node, and click **Edit**.  
+
+	> [!div class="mx-imgBorder"]  
+	> ![Open Work>Project Configuration](_img/areas/edit-area-rename.png)  
+
+0. In the dialog that opens, enter the new name. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Open Work>Project Configuration](_img/areas/edit-area-rename-dialog.png)
+
+0.  To move the node within the hierarchy, change the Location field. 
+
+0. To delete a node, choose the **Delete** option from the actions menu. 
+
+	> [!NOTE]   
+	> When you delete an area node or change the Location field, the system automatically updates the existing work items with the node that you enter at the deletion prompt. 
 
 ::: moniker-end
 
-## Chart progress by area or iteration
 
-You can quickly generate [queries](../work/track/using-queries.md) to view the progress for those areas and iterations. As an example, you can [visualize progress of work items assigned to sprints](../report/dashboards/charts.md) as shown in the following stacked bar chart.  
+## Chart progress by area 
 
-<img src="_img/areas/ALM_CW_StackedBarChart.png" alt="Stacked bar chart by area" style="border: 1px solid #C3C3C3;" /> 
+You can quickly generate [queries](../work/track/using-queries.md) to view the progress based on an area path. As an example, you can [visualize progress of work items assigned to each team's area path](../report/dashboards/charts.md) as shown in the following stacked bar chart.  
+
+![Stacked bar chart by area and state](_img/areas/stacked-bar-chart.png)
+
 
 
 ## Related articles 

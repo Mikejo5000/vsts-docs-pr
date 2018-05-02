@@ -60,7 +60,7 @@ You define both areas and iterations from the **Work>Project configuration** hub
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013"  
+::: moniker range=">= tfs-2013 <= tfs-2018"  
 Vertical navigation isn't a supported feature for TFS at this time. 
 ::: moniker-end
 
@@ -100,6 +100,9 @@ From the web portal, open the project settings hub.
 
 2. Open the **Iterations** tab.  
 ::: moniker-end  
+
+---
+
 
 <a id="iterations"></a>  
 ## Add iterations and set iteration dates
@@ -163,19 +166,33 @@ From the **Iterations** page, you can add and select the iterations that will be
 
 When you rename an iteration, or move the node within the tree hierarchy, the system will automatically update the work items and queries that reference the existing path or paths. 
 
-When you delete an iteration node, the system automatically updates the existing work items with the node that you enter at the deletion prompt.
- 
+0. To rename an iteration path, choose the ![](../_img/icons/actions-icon.png) actions icon for the node, and click **Edit**.  
+
+	> [!div class="mx-imgBorder"]  
+	> ![Open Work>Project Configuration](_img/iterations/edit-iteration-path.png)  
+
+0. In the dialog that opens, enter the new name. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Open Work>Project Configuration](_img/iterations/edit-iteration-pat-dialog.png)
+
+0.  To move the node within the hierarchy, change the Location field. 
+
+0. To delete a node, choose the **Delete** option from the actions menu. 
+
+	> [!NOTE]   
+	> When you delete an iteration node, the system automatically updates the existing work items with the node that you enter at the deletion prompt. 
+
 ::: moniker-end
 
-## Chart progress by area or iteration
+## Chart progress by iteration
 
-You can quickly generate [queries](../work/track/using-queries.md) to view the progress based on an iteration. As an example, you can [visualize progress of work items assigned to sprints](../report/dashboards/charts.md) as shown in the following stacked bar chart.  
+You can quickly generate [queries](../work/track/using-queries.md) to view the progress for those areas and iterations. As an example, you can [visualize progress of work items assigned to sprints](../report/dashboards/charts.md) as shown in the following stacked bar chart.  
 
 <img src="_img/areas/ALM_CW_StackedBarChart.png" alt="Stacked bar chart by area" style="border: 1px solid #C3C3C3;" /> 
 
-
 ## Related articles 
-As you can see, areas and iterations play a major role in supporting Agile tools and managing work items. You can learn more about working with these fields from these topics: 
+As you can see, iterations play a major role in supporting Agile tools and managing work items. You can learn more about working with these fields from these topics: 
  
 *	[Set team defaults](../work/scale/set-team-defaults.md)  
 *	[Agile tools and sprint definitions ](../work/scrum/define-sprints.md)  
