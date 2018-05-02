@@ -17,7 +17,7 @@ ms.date: 04/01/2018
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-Manage permissions, add teams, and configure project and collection level resources. 
+Manage permissions, add teams, and configure team, project, and organizational-level resources. 
 
 ## 5-Minute Quickstarts    
 - [Define area paths](../work/customize/set-area-paths.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json )
