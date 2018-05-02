@@ -12,8 +12,6 @@ monikerRange: '>= tfs-2013'
 ms.date: 03/20/2018
 ---
 
-
-
 # Define iteration paths (aka sprints) 
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
@@ -39,17 +37,42 @@ For naming restrictions on area and iteration paths, see [About areas and iterat
 
 
 <a id="open-admin-context">  </a>
-## Open the administration context for the team project
+
+
+## Open project settings   
+
+You define both areas and iterations from the **Work** hub of the project settings context.    
+
+# [Vertical navigation](#tab/vertical)
+::: moniker range="vsts"  
+You define both areas and iterations from the **Work>Project configuration** hub of the project **Settings** hub. 
+
+0. To open **Settings**, from the web portal, choose the ![](../_img/icons/settings-icon-vert.png) **Settings** icon (located toward the bottom of the left-pane).  
+
+0. Under **Work**, choose **Project Configuration**. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Settings hub, Open Work>Project Configuration](_img/areas/open-work-project-configuration.png)   
+
+	<img src="_img/areas/modify-areas-its-open-admin-context-ts.png" alt="Web portal, VSTS, Open Admin context, team project level" style="border: 1px solid #C3C3C3;" />
+
+0. Choose **Iterations**.
+
+::: moniker-end
+
+::: moniker range=">= tfs-2013"  
+Vertical navigation isn't a supported feature for TFS at this time. 
+::: moniker-end
+
+# [Horizontal navigation](#tab/horizontal)
 
 ::: moniker range=">= tfs-2017"  
-From the web portal, open the admin page for the team project.
-
-You define both areas and iterations from the Work hub of the team project admin context. From the user context, you open the admin context by clicking the ![](../_img/icons/gear-icon.png) gear icon. The tabs and pages available differ depending on which admin context you access.  
+From the web portal, open the project settings hub. 
 
 <a id="admin-intro-team-services" /> 
 
-1. From the web portal for the team project context, click the ![](../_img/icons/gear-icon.png) gear icon..  
-	::: moniker range="vsts || >= tfs-2018"
+1. From the web portal for the team project context, choose the ![](../_img/icons/gear-icon.png) gear icon..  
+	::: moniker range=">= tfs-2018"
 	<img src="_img/areas/modify-areas-its-open-admin-context-ts.png" alt="Web portal, VSTS, Open Admin context, team project level" style="border: 1px solid #C3C3C3;" /> 
 	If you're currently working from a team context, then hover over the ![gear icon](../_img/icons/gear_icon.png) and choose Project settings.  
 

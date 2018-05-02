@@ -35,17 +35,41 @@ For naming restrictions on area and iteration paths, see [About areas and iterat
 
 <a id="open-admin-context">  </a>
 <a id="admin-intro-team-services" /> 
-## Open the administration context for the team project  
 
-From the web portal, open the admin page for the team project.
+## Open project settings    
 
+From the web portal, open the **Settings** context for the Codex project.
+
+# [Vertical navigation](#tab/vertical)
+::: moniker range="vsts"  
+You define both areas and iterations from the **Work>Project configuration** hub of the project **Settings** hub. 
+
+
+0. To open **Settings**, choose the ![](../_img/icons/settings-icon-vert.png) Settings icon (located toward the bottom of the left-pane).  
+
+0. Under **Work**, choose **Project Configuration**. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Settings hub, Open Work>Project Configuration](_img/areas/open-work-project-configuration.png)   
+
+	<img src="_img/areas/modify-areas-its-open-admin-context-ts.png" alt="Web portal, VSTS, Open Admin context, team project level" style="border: 1px solid #C3C3C3;" />
+
+0. Choose **Areas**.
+
+::: moniker-end
+
+::: moniker range=">= tfs-2013"  
+Vertical navigation isn't a supported feature for TFS at this time. 
+::: moniker-end
+
+# [Horizontal navigation](#tab/horizontal)
 You define both areas and iterations from the **Work** hub of the team project admin context. From the user context, you open the admin context by clicking the ![](../_img/icons/gear-icon.png) gear icon. The tabs and pages available differ depending on which admin context you access.  
 
 <a id="admin-intro-team-services" /> 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"  
+::: moniker range=">= tfs-2017"  
 
 1. From the web portal for the team project context, click the ![](../_img/icons/gear_icon.png) gear icon.   
-	::: moniker range="vsts || >= tfs-2018"
+	::: moniker range=">= tfs-2018"
 	<img src="_img/areas/modify-areas-its-open-admin-context-ts.png" alt="Web portal, VSTS, Open Admin context, team project level" style="border: 1px solid #C3C3C3;" />
 
 	If you're currently working from a team context, then hover over the ![gear icon](../_img/icons/gear_icon.png) and choose **Project settings**.  
@@ -76,10 +100,11 @@ You define both areas and iterations from the **Work** hub of the team project a
 
 	<img src="../_img/icons/ALM_OpenAdminContext.png" alt="Open the project administration page" style="border: 1px solid #C3C3C3;" /> 
 
-2. Click the **Areas** tab.   
+2. Choose **Areas**.   
 
 ::: moniker-end
 
+---
 
 <a id="add-areas-team-services">   </a>
 <a id="tfs-15-area-paths" />
