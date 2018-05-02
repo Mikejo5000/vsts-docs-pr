@@ -9,9 +9,9 @@
 - name: Quickstarts
   items:
   - name: Define area paths
-    href: ../work/customize/set-area-paths.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json 
+    href: set-area-paths.md
   - name: Define iteration paths or sprints
-    href: ../work/customize/set-iteration-paths-sprints.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json 
+    href: set-iteration-paths-sprints.md
   - name: "Add a team & team members"
     href: ../work/scale/multiple-teams.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
   - name: Add a team administrator
@@ -27,7 +27,7 @@
 - name: Concepts
   items:
   - name: About areas and iterations
-    href: ../work/customize/about-areas-iterations.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+    href: about-areas-iterations.md
   - name: "About teams & Agile tools"
     href: about-teams-and-settings.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
   - name: About notifications

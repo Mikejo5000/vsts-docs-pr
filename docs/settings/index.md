@@ -20,8 +20,8 @@ ms.date: 04/01/2018
 Manage permissions, add teams, and configure team, project, and organizational-level resources. 
 
 ## 5-Minute Quickstarts    
-- [Define area paths](../work/customize/set-area-paths.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json )
-- [Define iteration paths or sprints](../work/customize/set-iteration-paths-sprints.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json ) 
+- [Define area paths](set-area-paths.md)
+- [Define iteration paths or sprints](set-iteration-paths-sprints.md) 
 - [Add a team & team members](../work/scale/multiple-teams.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)  
 - [Add a team administrator](../work/scale/add-team-administrator.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json) 
 
@@ -34,7 +34,7 @@ Manage permissions, add teams, and configure team, project, and organizational-l
 
 ## Concepts 
 
-- [About areas and iterations](../work/customize/about-areas-iterations.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)  
+- [About areas and iterations](about-areas-iterations.md)  
 - [About process customization](../work/customize/inheritance-process-model.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)        
 - [Team administrator role and permissions](../work/scale/team-administrator-permissions.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)
 

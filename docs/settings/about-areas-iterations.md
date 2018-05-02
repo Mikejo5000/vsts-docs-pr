@@ -68,7 +68,7 @@ Iterations do not enforce any rules. For example, you can assign a task to an it
 <a name="name-restrictions"></a>
 ## Naming restrictions 
 
-The **Area Path** and **Iteration Path** fields, [data type=TreePath](reference/define-modify-work-item-fields.md), consist of multiple node items which are separated by the backslash (&#92;) character. We recommend that you minimize the names of nodes, and make sure that you conform to the following restrictions when adding child nodes:
+The **Area Path** and **Iteration Path** fields, [data type=TreePath](../work/customize/reference/define-modify-work-item-fields.md), consist of multiple node items which are separated by the backslash (&#92;) character. We recommend that you minimize the names of nodes, and make sure that you conform to the following restrictions when adding child nodes:
 
 > [!div class="mx-tdCol2BreakAll"]  
 > | Restriction type                 | Restriction                                 | 
