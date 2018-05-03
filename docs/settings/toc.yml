@@ -53,21 +53,21 @@
   - name: Process configuration
     items:
     - name: Manage processes
-      href: ../work/manage-process.md
+      href: ./work/manage-process.md
     - name: Add a custom field
-      href: ../work/customize-process-field.md
+      href: ./work/customize-process-field.md
     - name: Customize a web form
-      href: ../work/customize-process-form.md
+      href: ./work/customize-process-form.md
     - name: Customize a workflow
-      href: ../work/process/customize-process-workflow.md
+      href: ./work/process/customize-process-workflow.md
     - name: Customize a work item type
-      href: ../work/customize-process-wit.md
+      href: ./work/customize-process-wit.md
     - name: Add a custom rule
-      href: ../work/custom-rules.md
+      href: ./work/custom-rules.md
     - name: Add a custom control
-      href: ../work/custom-controls-process.md
+      href: ./work/custom-controls-process.md
     - name: Customize backlogs and boards
-      href: ../work/customize-process-backlogs-boards.md
+      href: ./work/customize-process-backlogs-boards.md
   - name: Manage notifications
     href: ../collaborate/manage-team-notifications.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
   - name: Set dashboard permissions

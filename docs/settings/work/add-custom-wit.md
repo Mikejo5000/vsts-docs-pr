@@ -14,64 +14,55 @@ monikerRange: 'vsts'
 ms.date: 03/20/2018
 ---
 
-# Customize a work item type (Inheritance process model)    
+# Add a custom work item type     
 
-[!INCLUDE [temp](../_shared/codex-agile.md)]
+[!INCLUDE [temp](../../_shared/codex-agile.md)]
 
-You use different work item types (WITs) to plan and track different types of work. Your team project contains 9 or more WITs that you can customize, based on the process&mdash;[Agile](../../work-items/guidance/agile-process.md), [Scrum](../../work-items/guidance/scrum-process.md), or [CMMI](../../work-items/guidance/cmmi-process.md)&mdash;used to create your team project. Also, you can add a custom WIT to support additional tracking requirements. 
+You use different work item types (WITs) to plan and track different types of work. Your Codex project contains 9 or more WITs that you can customize, based on the process used to create your project.  
 
 For example, you may want to capture customer issues in a custom Ticket WIT.   
 
-<img src="_img/custom-wit-new-ticket-form.png" alt="Custom Ticket work item form" style="border: 1px solid #C3C3C3;" /> 
+<img src="_img/process/custom-wit-new-ticket-form.png" alt="Custom Ticket work item form" style="border: 1px solid #C3C3C3;" /> 
 
+## Prerequisites
+* You must have a Codex Agile project created. If you don't have a project yet, create one in [Codex](../accounts/set-up-vs.md).  
+* You must be a member of the **Project Collection Administrators** group, the organization owner, or be granted explicit permissions to edit or create a specific process. 
 
-##What you can customize   
-
-Each process you create inherits the WITs provided with the parent system process&mdash;[Agile](../../work-items/guidance/agile-process.md), [Scrum](../../work-items/guidance/scrum-process.md), or [CMMI](../../work-items/guidance/cmmi-process.md). For example, the Agile process provides bug, task, user story, feature, epic, issue and test-related WITs. 
-
-You can add fields and modify the workflow and form for all inherited WITs that display on the Work Item Types page. If you don't want users to use a WIT, you can disable it. In addition, you can add custom WITs. 
-
-> [!NOTE]    
->For a list of limits placed on the number of fields, work item types, backlog levels, and other objects you can customize, see [Work tracking object limits](../object-limits.md). 
-
-
-Here are your customization options for inherited and custom WITs. 
-
-> [!div class="mx-tdBreakAll"]  
-> |![Inherited field](_img/inherited-icon.png) Inherited WITs | Custom WITs |&nbsp;&nbsp;&nbsp;| 
-> |-------------|----------|---------| 
-> |- [Add/remove custom fields](customize-process-field.md)<br/>- [Add/remove custom groups](customize-process-form.md#groups)<br/>- [Add/delete custom pages](customize-process-form.md#pages)<br/>- [Add/remove a custom control](custom-controls-process.md) <br/>- [Enable/disable](#enable-disable) |- [Add custom WIT](#add-wit)<br/>- [Change color or description](#overview)<br/>- [Add/remove custom fields](customize-process-field.md)<br/>- [Add/remove custom groups](customize-process-form.md#groups)<br/>- [Add/delete custom pages](customize-process-form.md#pages)<br/>- [Add/remove a custom control](custom-controls-process.md) |- [Add, edit, or remove a workflow state](customize-process-workflow.md#states)<br/>- [Enable/disable](#enable-disable)<br/>- [Delete](#destroy) |  
-
-
-To perform any of these actions, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to edit a specific process](../../../security/set-permissions-access-work-tracking.md#process-permissions). 
-
-**What you can't customize**  
-- You can't add or remove an inherited WIT to or from a backlog  
-- You can't change the position of an inherited field within the form layout
-- You can't remove the inherited portfolio level from the product (but you can rename them)
-- You can't change the name of a custom WIT.
-
+	If you aren't a project administrator, [get added as one](../security/set-project-collection-level-permissions.md) or have someone provide you with explicit permissions to [**Edit or Create a specific process**](../../security/set-permissions-access-work-tracking.md#process-permissions).   
 
 <a id="open-process-wit">  </a>
-## Open Process>Work Item Types in the admin context
+## Open Settings>Process hub
 
-To customize the web form, you must work from the admin context Process hub. 
+[!INCLUDE [temp](../../_shared/open-process-admin-context-ts.md)]
 
-You can open the admin context Process hub from a work item form or by choosing the Account Settings option from the gear option. For details, see [Customize a process, Start customizing](customize-process.md#start-customizing).
+ 
+<a id="create-inherited-process"></a>
+## Create an inherited process
+You can create an inherited process from any one of the three system processes: [Agile](../../work/work-items/guidance/agile-process.md), [Scrum](../../work/work-items/guidance/scrum-process.md), or [CMMI](../../work/work-items/guidance/cmmi-process.md).   
 
-> [!IMPORTANT]  
->If you don't see the Account settings option, then you are working from an on-premises TFS. The Process page isn't supported. You must use the features supported for the On-premises XML process model as described in [Customize your work tracking experience](../customize-work.md).
+0. From the **Process** page, open the **&hellip;** context menu of the process you'll use to create an inherited process, and then choose **Create inherited process**. 
+
+	Here, we create an inherited process from the Agile system process.   
+
+	> [!div class="mx-imgBorder"]  
+	> ![Context menu, Choose Create inherited process](_img/process/create-inherited-process.png) 
+
+	If you don't have access to these options, ask your project collection admin to [grant you permissions](../../security/set-permissions-access-work-tracking.md#process-permissions). 
+
+0.	Enter a name for your process and optionally a description. (For naming restrictions, see [Process name restrictions](#process-naming) later in this topic.)
+
+	<img src="_img/process/mprocess-create-inherited-process-dialog.png" alt="Create inherited process dialog" style="border: 1px solid #C3C3C3;" />  
 
 <a id="add-wit">  </a>
-## Add a work item type
+## Add a custom work item type
 
 0. From the Work Item Types page, click ![green plus icon](../../_img/icons/green-plus-new-field-icon.png) New work item type.
 
-	<img src="_img/cpwit-add-new-wit.png" alt="Process hub, Inherited process, Work Item Types, Add new work item type" style="border: 2px solid #C3C3C3;" />
+	<img src="_img/process/cpwit-add-new-wit.png" alt="Process hub, Inherited process, Work Item Types, Add new work item type" style="border: 2px solid #C3C3C3;" />
  
 0. Name the WIT and optionally specify a description, icon and color. The icon and color you specify will appear throughout the web portal, including on the work item form and when associated work items appear on a backlog, boards, query results, and more. Click Create to save. 
 
-	<img src="_img/cwit-create-wit-ticket.png" alt="Create new work item type dialog" style="border: 1px solid #C3C3C3;" /> 
+	<img src="_img/process/cwit-create-wit-ticket.png" alt="Create new work item type dialog" style="border: 1px solid #C3C3C3;" /> 
 
 	Each new WIT comes predefined with a Details page with the Description field, and Discussion, Development, and Related Work groups. Also added, but not shown nor editable, are the standard elements included with the header of the form as shown in the following image, as well as the history, links, and attachment pages. 
  
@@ -79,7 +70,7 @@ You can open the admin context Process hub from a work item form or by choosing 
 
 0.   From the Layout page, you can add fields, groups, or pages to specify the form and fields you want to track. For details, see [Customize a field](customize-process-field.md) or [Customize a web form for a process](customize-process-form.md).    
 
-	<img src="_img/cpwit-new-ticket-define.png" alt="New WIT, customize layout" style="border: 1px solid #C3C3C3;" /> 	
+	<img src="_img/process/cpwit-new-ticket-define.png" alt="New WIT, customize layout" style="border: 1px solid #C3C3C3;" /> 	
 
 0. Open the States page to view the default workflow states. Optionally, [customize the workflow states](customize-process-workflow.md). 
 
@@ -87,9 +78,10 @@ You can open the admin context Process hub from a work item form or by choosing 
 
 0. Verify the custom work item type appears as expected. Either navigate to the backlog or board to which you added the custom WIT, or open the Work hub menu and open a new work item of the type you added.  
 
-	<img src="_img/cpwit-new-custom-work-item-ticket.png" alt="stories Kanban board, add new custom ticket work item" style="border: 1px solid #C3C3C3;" /> 
+	<img src="_img/process/cpwit-new-custom-work-item-ticket.png" alt="stories Kanban board, add new custom ticket work item" style="border: 1px solid #C3C3C3;" /> 
 
 	If you don't see the custom WIT, refresh your browser to make sure it registers all the custom changes you've made. 
+
 
 <a id="overview">  </a>
 ## Change description, icon or color of a custom WIT 
@@ -98,62 +90,69 @@ To change the description, icon or color of a custom WIT, choose Edit from the W
 
 Here we change the description, icon and color for the Ticket custom WIT.  
 
-<img src="_img/cpwit-edit-color-description.png" alt="Overview page, edit custom ticket description, icon and color" style="border: 1px solid #C3C3C3;" /> 
+<img src="_img/process/cpwit-edit-color-description.png" alt="Overview page, edit custom ticket description, icon and color" style="border: 1px solid #C3C3C3;" /> 
 
-<a id="enable-disable"></a>
-## Enable or disable a custom WIT  
+<a id="verify">  </a>
+## Verify the customization you made 
 
-You can disable a custom WIT which will prevent users from being able to add new work items using it. However, all existing work items defined using the custom WIT remain in the data store.  
+We recommend that you create a test project and apply your customized inheritance process to it to verify the changes you've made. 
 
-You may want to disable a custom WIT until you have defined all the fields, workflow, and form layout that you have planned.
+0. Open the &hellip; context menu for the process you want to use and choose **New team project**.  
 
-To disable a custom WIT, choose Disable from the WIT context menu. 
+	> [!div class="mx-imgBorder"]  
+	> ![Create a team project from the selected process](_img/process/add-new-team-project.png) 
 
-To re-enable the WIT, choose Enable from the WIT context menu. 
+0. The Create new project page opens. Fill out the form. 
 
-> [!NOTE]    
->Disabling a WIT will remove the work item type from the New drop down and add experiences. Creating a work item of that WIT will also be blocked via REST APIs.  
->
->No changes are made to existing work items of that type. You can update or delete them and they will continue to appear on backlogs and boards. Also, you can change the work item type of disabled WITs to an enabled type, but you can't change the type to a disabled WIT.
+	> [!div class="mx-imgBorder"]  
+	> ![Create new project form](_img/process/create-test-project.png) 
+
+0. Open the work items page and choose to create a new work item of the custom wit. 
 
 
-## Related articles  
+## Apply the customized process to your project 
 
+After you've verified your customizations, you can now apply the process to your existing project. 
+
+0. Open the &hellip; context menu for the process and choose the **Change team projects**&hellip; option. 
+
+	Here we open the menu for the Agile system process:
+
+	> [!div class="mx-imgBorder"]  
+	> ![Agile process context menu, Choose Change team projects to use Agile](_img/process/change-project-to-system-process.png) 
+
+	The system lists only those team projects that are valid for the current process.
+
+0. Check the checkbox of those projects you want to change to use the Agile process. 	
+
+	Here we choose to use the Agile process for the Fabrikam Fiber A and Fabrikam Fiber projects.  Only those projects created from the Agile process or one that inherits from Agile will appear under the Available projects column. 
+ 
+	<img src="_img/process/mprocess-change-process-dialog-to-agile.png" alt="Change process to a system process dialog" style="border: 1px solid #C3C3C3;" />  
+
+0. After  you've confirmed that the projects you want to change are correct, click Ok. 
+
+## Try this next
+> [!div class="nextstepaction"]
+> [Add a custom field](add-custom-field.md) 
+> Or
+> [Customize a work item type](customize-process-wit.md)
+
+ 
+## Additional notes 
+
+<!--- Look at moving this to a concepts topic ==> 
 As you customize a WIT, all team projects that reference the inherited process that you're customizing will automatically update to reflect the custom WITs you've added. To view your customizations, refresh your web browser.  
 
-To customize a single team project, always start by [creating an inherited process and migrating the team project to that process](manage-process.md). Then, all the customizations that you make to the inherited process automatically appear for the team project you migrated.  
+To customize a single project, always start by [creating an inherited process and migrating the team project to that process](manage-process.md). Then, all the customizations that you make to the inherited process automatically appear for the team project you migrated.  
 
-Additional topics of interest:  
-
-- [Customize a field](customize-process-field.md)  
-- [Customize a form](customize-process-field.md)
-- [Customize a workflow for a work item type](customize-process-field.md)
-- [Customize a process](customize-process-field.md) 
-- [Customize your backlogs or boards for a process](customize-process-backlogs-boards.md)  
-- [Backlogs, boards, and plans](../../backlogs/backlogs-boards-plans.md)  
-- [Work tracking object limits](../object-limits.md)
-
-<a id="destroy">  </a>
-### Delete or destroy a custom WIT 
 
 > [!IMPORTANT]  
->Destroying a WIT will delete all work items and data associated with that WIT, including historical values. Once destroyed, you can't recover the data. 
+> When you change a project to use an inherited process, you may find one or more Agile tools or work items appear in an invalid state. For example: 
+> 
+> - If you make a field required, work items with that field undefined will show an error message. You'll need to resolve the errors to make additional changes and save the work item. 
+> - If you add or remove/hide workflow states of a WIT that appears on the Kanban board, you'll need to update the Kanban board column configurations for all teams defined in the team project. 
 
-1. To completely remove a custom WIT and all work items based on that WIT, click the Destroy option from the WIT context menu.
 
-	To destroy a WIT, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to edit a specific process](../../../security/set-permissions-access-work-tracking.md#process-permissions). 
-
-2. To complete the delete operation, you must type the name of the WIT as shown. 
-
-	<img src="_img/cpit-destroy-wit-confirm.png" alt="Delete field, confirmation dialog" style="border: 1px solid #C3C3C3;" />  
- 
-
-<!---
-### WIT extensibility
-
-Using REST APIs you can add .... 
-
--->
 
 
 

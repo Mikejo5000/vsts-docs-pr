@@ -14,7 +14,7 @@ ms.date: 03/20/2018
 
 # Customize your backlogs or boards  
 
-[!INCLUDE [temp](../_shared/codex-agile.md)]  
+[!INCLUDE [temp](../../_shared/codex-agile.md)]  
 
 > [!IMPORTANT]  
 >This topic applies to process customization for the Inheritance process model, which supports customization of team project(s) through a shared process model.

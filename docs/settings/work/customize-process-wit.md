@@ -14,7 +14,7 @@ ms.date: 03/20/2018
 
 # Customize a work item type (Inheritance process model)    
 
-[!INCLUDE [temp](../_shared/codex-agile.md)]
+[!INCLUDE [temp](../../_shared/codex-agile.md)]
 
 
 You use different work item types (WITs) to plan and track different types of work. Your Codex project contains 9 or more WITs that you can customize, based on the process&mdash;[Agile](../../work/work-items/guidance/agile-process.md), [Scrum](../../work/work-items/guidance/scrum-process.md), or [CMMI](../../work/work-items/guidance/cmmi-process.md)&mdash;used to create your  project. Also, you can add a custom WIT to support additional tracking requirements. 

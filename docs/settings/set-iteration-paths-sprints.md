@@ -174,7 +174,7 @@ When you rename an iteration, or move the node within the tree hierarchy, the sy
 0. In the dialog that opens, enter the new name. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Work>Project Configuration](_img/iterations/edit-iteration-pat-dialog.png)
+	> ![Open Work>Project Configuration](_img/iterations/edit-iteration-path-dialog.png)
 
 0.  To move the node within the hierarchy, change the Location field. 
 

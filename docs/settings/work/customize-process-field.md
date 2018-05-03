@@ -14,7 +14,7 @@ ms.date: 03/20/2018
 
 # Add a custom field to a work item type (Inheritance process model)  
 
-[!INCLUDE [temp](../_shared/codex-agile.md)]
+[!INCLUDE [temp](../../_shared/codex-agile.md)]
 
 Each ![locked icon](_img/process/locked-icon.png) system process&mdash;[Agile](../../work/work-items/guidance/agile-process.md), [Scrum](../../work/work-items/guidance/scrum-process.md), or [CMMI](../../work/work-items/guidance/cmmi-process.md)&mdash;contains 100 or more work item fields. You can add a custom field to support tracking additional data requirements or modify select attributes of an ![inherited icon](_img/process/inherited-icon.png) inherited field. For example, you can add a custom field and pick list or change the label that appears in the work item form for an inherited field.  
 
@@ -126,7 +126,7 @@ Use the Identity field to add a field similar to the Assigned To field. Identity
 
 1. Start by clicking ![add new field icon](_img/process/new-field-icon.png) (New Field), then the field name, Identity type, and optionally a description. 
 
-	<img src="_img/cpfield-identity.png" alt="Add a custom pick list" style="border: 1px solid #C3C3C3;" />  
+	<img src="_img/process/cpfield-identity.png" alt="Add a custom pick list" style="border: 1px solid #C3C3C3;" />  
 
 3. (Optional) See previous [step 5](#layout) to specify where you want the field to appear on the form (Layout tab). 
  
@@ -222,7 +222,7 @@ Fields listed correspond to all those defined for the account. For descriptions 
 
 ## Related articles  
 
-Once you've added a custom field, you can create [queries](../../work/track/using-queries.md) or [charts](../../../Report/charts.md) to track data related to it. 
+Once you've added a custom field, you can create [queries](../../work/track/using-queries.md) or [charts](../../report/dashboards/charts.md) to track data related to it. 
 
 As you add custom fields, keep in mind that all projects that reference the inherited process that you're customizing will automatically update to contain the new fields. Remember to refresh your web browser to view your latest changes. 
 

@@ -21,7 +21,7 @@ ms.date: 03/20/2018
 
 # Inheritance process model  
 
-[!INCLUDE [temp](../_shared/codex-agile.md)]
+[!INCLUDE [temp](../../_shared/codex-agile.md)]
 
 <a id="inheritance"> </a> 
 
@@ -49,6 +49,6 @@ You can perform the following tasks with the Inheritance process model.
 
 Use this sequence to create and apply an inherited process to a Codex project. 
 
-[![Create an inherited process](_img/customize-work-phase2-step1.png)](manage-process.md#create-inherited-process)[![Customize the inherited process](_img/customize-work-phase2-step2.png)](customize-process.md)[![Apply inherited process to team project(s)](_img/customize-work-phase2-step3.png)](manage-process.md#migrate)![Refresh and verify changes](_img/customize-work-phase2-step4.png)  
+[![Create an inherited process](_img/process/customize-work-phase2-step1.png)](manage-process.md#create-inherited-process)[![Customize the inherited process](_img/process/customize-work-phase2-step2.png)](customize-process.md)[![Apply inherited process to team project(s)](_img/process/customize-work-phase2-step3.png)](manage-process.md#migrate)![Refresh and verify changes](_img/process/customize-work-phase2-step4.png)  
 
 

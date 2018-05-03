@@ -14,7 +14,7 @@ ms.date: 03/20/2018
 
 # Add a custom control to a work item type 
 
-[!INCLUDE [temp](../_shared/codex-agile.md)]
+[!INCLUDE [temp](../../_shared/codex-agile.md)]
 
 With custom controls, you can add rich functionality to your work item forms. A custom control comes in four flavors, or contribution types. The first three in the following list appear on the web form layout for all inherited and customizable work item types (WITs):    
 - Field-level contribution 
@@ -99,7 +99,7 @@ Action-level extensions are added to the context menu of inherited and customiza
 
 For example, the following image shows nine action-level contributions have been added and appear in the context menu for the user story.  
 
-<img src="_img/custom-control-web-form-user-story-action-level-menu-options.png" alt="User story web form, context menu, Action-level options" style="border: 2px solid #C3C3C3;" />
+<img src="_img/process/custom-control-web-form-user-story-action-level-menu-options.png" alt="User story web form, context menu, Action-level options" style="border: 2px solid #C3C3C3;" />
 
 
 ## Related articles 

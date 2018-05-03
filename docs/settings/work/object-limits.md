@@ -14,7 +14,7 @@ ms.date: 06/02/2017
 
 # Work tracking object limits 
 
-[!INCLUDE [temp](../_shared/codex-agile.md)]
+[!INCLUDE [temp](../../_shared/codex-agile.md)]
 
 When customizing the work item types (WITs) defined in the Inheritance or Hosted XML process models, be aware of the limits placed on objects defined in this topic. To learn about process models, see [Customize your work tracking experience](../../work/customize/customize-work.md).
 
