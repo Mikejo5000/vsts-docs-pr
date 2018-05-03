@@ -1,7 +1,7 @@
 ---
-title: Add a custom field to an inheritance process
+title: Add and manage fields to an inheritance process
 titleSuffix: Codex Agile
-description: Add a custom field to the web form of a work item type for an Inheritance process model for a Codex project
+description: Add and manage fields to the web form of a work item type for an Inheritance process model for a Codex project
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: D6616411-43D4-4A81-8951-772D98BD1569  
@@ -12,7 +12,7 @@ ms.topic: conceptual
 ms.date: 03/20/2018
 ---
 
-# Add a custom field to a work item type (Inheritance process model)  
+# Add and manage fields for an inheritance process   
 
 [!INCLUDE [temp](../../_shared/codex-agile.md)]
 

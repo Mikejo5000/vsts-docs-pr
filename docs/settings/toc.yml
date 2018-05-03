@@ -86,6 +86,8 @@
     href: ../accounts/index.md
   - name: Security & Identity
     href: ../security/index.md
+  - name: Work Items
+    href: ../work/work-items/index.md
   - name: "Manage Extensions (Marketplace)"
     href: ../marketplace/index.md
   - name: Service hooks

@@ -1,4 +1,15 @@
 
+
+# [Vertical navigation](#tab/vertical) 
+
+0. Choose the ![](/vsts/_img/icons/project-icon.png) to return to the **Codex** page.  
+
+0. Choose the ![](/vsts/_img/icons/actions-icon.png) actions icon and then choose the **Settings** option.  
+
+0. Under **Work**, choose **Process**.
+
+# [Horizontal navigation](#tab/horizontal)
+
 0. To open the admin context from the user context, click the ![](/vsts/_img/icons/gear_icon.png) Settings icon and choose **Account settings**.
  
 	> [!IMPORTANT]  
@@ -12,3 +23,4 @@
 	> [!div class="mx-imgBorder"]  
 	> ![Account Settings context, Process page](/vsts/settings/work/_img/process/open-process-page.png) 
 
+---
