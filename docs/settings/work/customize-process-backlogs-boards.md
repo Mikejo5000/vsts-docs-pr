@@ -21,7 +21,8 @@ ms.date: 03/20/2018
 
 You can customize your backlogs to add more levels or add custom work item types (WITs) to them. As shown below, we've added a third level portfolio backlog labeled *Initiatives* which tracks the custom *Initiative* WIT, and we've renamed the product backlog to *Stories and Tickets* to indicate that we not only track *User Stories*, but also *Customer Tickets* on the product backlog. 
  
-<img src="_img/process/process-backlog-boards-intro.png" alt="Changes made to the backlog levels" style="border: 1px solid #C3C3C3;" /> 
+> [!div class="mx-imgBorder"]  
+> ![Changes made to the backlog levels]_img/process/process-backlog-boards-intro.png) 
 
 Your team project comes equipped with two portfolio backlogs: Features and Epics. However, if you need one or more additional portfolio backlogs, you can add them.   
 

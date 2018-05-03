@@ -24,8 +24,8 @@
   items:
   - name: Add and manage users
     href: ../accounts/add-account-users-from-user-hub.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json 
-  - name: Customize a process
-    href: ../work/customize/process/customize-process.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+  - name: Customize a project
+    href: ./work/customize-process.md
   - name: Create a team project
     href: ../accounts/create-team-project.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
 - name: Concepts

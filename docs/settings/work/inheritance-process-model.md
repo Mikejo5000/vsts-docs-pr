@@ -1,17 +1,13 @@
 ---
-title: Inheritance process model
-titleSuffix: VSTS
-description: Guide to configuring and customizing work tracking features in Visual Studio Team Services
-
-title: What is an inherited process?  
+title: About process customization and inheritance processes 
 titleSuffix: Codex Agile
 description: Describes what an inherited process is and how you use it to customize the work tracking system and Agile tools for a Codex Agile project 
-
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual 
 monikerRange: 'vsts'
 ms.date: 03/20/2018
 ---
@@ -19,7 +15,7 @@ ms.date: 03/20/2018
 
 
 
-# Inheritance process model  
+# About process customization and inheritance processes  
 
 [!INCLUDE [temp](../../_shared/codex-agile.md)]
 
@@ -47,8 +43,83 @@ You can perform the following tasks with the Inheritance process model.
 > With the Inheritance process model, you can't modify the pick-lists of pre-defined fields&mdash;such as [Activity](../../work/track/query-numeric.md), [Automation Status](../../work/track/build-test-integration.md), [Discipline](../../work/track/query-numeric.md), [Priority](../../work/track/planning-ranking-priorities.md), plus others.  
 
 
-Use this sequence to create and apply an inherited process to a Codex project. 
+> [!div class="mx-tdBreakAll"]  
+> |![Inherited field](_img/process/inherited-icon.png) Inherited fields |Custom fields |&nbsp;&nbsp;&nbsp;| 
+> |-------------|----------|---------| 
+> |- [Change the field label](customize-process-field.md#rename-field)<br/>- [Show/Hide field on form](customize-process-field.md#show-hide-field) |- [Add a custom field](customize-process-field.md#add-field)<br/>- [Add pick list (drop-down menu)](customize-process-field.md#pick-list)<br/>- [Add person-name/Identity](customize-process-field.md#identity)<br/>- [Add a rich-text (HTML) field](customize-process-field.md#html) <br/>- [Add a checkbox (Boolean) field](customize-process-field.md#boolean-field)<br/>- [Add a custom control](custom-controls-process.md) |- [Add custom rules to a field](custom-rules.md)<br/>- [Change the field label](customize-process-field.md#rename-field)<br/>- [Set Required/Default options](customize-process-field.md#options)<br/>- [Move the field within the layout](customize-process-form.md#move-field)<br/>- [Remove field from form](customize-process-field.md#remove-field)<br/>- [Delete field](customize-process-field.md#delete-field) | 
 
-[![Create an inherited process](_img/process/customize-work-phase2-step1.png)](manage-process.md#create-inherited-process)[![Customize the inherited process](_img/process/customize-work-phase2-step2.png)](customize-process.md)[![Apply inherited process to team project(s)](_img/process/customize-work-phase2-step3.png)](manage-process.md#migrate)![Refresh and verify changes](_img/process/customize-work-phase2-step4.png)  
+
+<a id="what-you-can-customize">  </a>
+## What you can customize
+
+You can customize the elements listed below. Some options of inherited elements are locked and can't be customized. To perform any of these actions, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to edit a specific process](../../security/set-permissions-access-work-tracking.md#process-permissions).  
+
+> [!NOTE]    
+>For a list of limits placed on the number of fields, work item types, backlog levels, and other objects you can customize, see [Work tracking object limits](object-limits.md). 
 
 
+### Fields
+
+Choose your inherited process, the work item type and then add and edit fields from the **Layout** page. Customizations are subject to the guidelines and limitations outlined under [What is a field?](customize-process-field.md#field-reference).
+
+> [!div class="mx-tdBreakAll"]  
+> |![Inherited field](_img/process/inherited-icon.png) Inherited fields |Custom fields |&nbsp;&nbsp;&nbsp;| 
+> |-------------|----------|---------| 
+> |- [Change the field label](customize-process-field.md#rename-field)<br/>- [Show/Hide field on form](customize-process-field.md#show-hide-field) |- [Add a custom field](customize-process-field.md#add-field)<br/>- [Add pick list (drop-down menu)](customize-process-field.md#pick-list)<br/>- [Add person-name/Identity](customize-process-field.md#identity)<br/>- [Add a rich-text (HTML) field](customize-process-field.md#html) <br/>- [Add a checkbox (Boolean) field](customize-process-field.md#boolean-field)<br/>- [Add a custom control](custom-controls-process.md) |- [Add custom rules to a field](custom-rules.md)<br/>- [Change the field label](customize-process-field.md#rename-field)<br/>- [Set Required/Default options](customize-process-field.md#options)<br/>- [Move the field within the layout](customize-process-form.md#move-field)<br/>- [Remove field from form](customize-process-field.md#remove-field)<br/>- [Delete field](customize-process-field.md#delete-field) | 
+
+
+
+### Work item types
+
+Choose your inherited process, and then add or edit a work item type from the **Work item types** page.
+
+> [!div class="mx-tdBreakAll"]  
+> |![Inherited field](_img/process/inherited-icon.png) Inherited WITs | Custom WITs |&nbsp;&nbsp;&nbsp;| 
+> |-------------|----------|---------| 
+> |- [Add/remove custom fields](customize-process-field.md)<br/>- [Add/remove custom groups](customize-process-form.md#groups)<br/>- [Add/delete custom pages](customize-process-form.md#pages)<br/>- [Add/remove a custom control](custom-controls-process.md) <br/>- [Enable/disable](customize-process-wit.md#enable-disable) |- [Add custom WIT](customize-process-wit.md#add-wit)<br/>- [Change color or description](customize-process-wit.md#overview)<br/>- [Add/remove custom fields](customize-process-field.md)<br/>- [Add/remove custom groups](customize-process-form.md#groups)<br/>- [Add/delete custom pages](customize-process-form.md#pages)<br/>- [Add/remove a custom control](custom-controls-process.md) |- [Add, edit, or remove a workflow state](customize-process-workflow.md#states)<br/>- [Enable/disable](customize-process-wit.md#enable-disable)<br/>- [Delete](customize-process-wit.md#destroy) |  
+
+
+
+### Web form layout  
+
+Choose your inherited process and the work item type, and then modify the form from the **Layout** page.
+
+> [!div class="mx-tdBreakAll"]  
+> |![Inherited field](_img/process/inherited-icon.png) Inherited groups |Custom groups |&nbsp;&nbsp;&nbsp;| 
+> |-------------|----------|---------| 
+> |- [Relabel](customize-process-form.md#groups)<br/>- [Add/remove custom fields](customize-process-field.md)<br/>- [Show/hide fields](customize-process-field.md#remove-field)<br/>![Inherited field](_img/process/inherited-icon.png) **Inherited pages**<br/>- [Relabel](customize-process-form.md#pages)<br/>- [Add/remove custom fields](customize-process-field.md)<br/>- [Add/remove a custom group](customize-process-form.md#groups) |- [Add, modify, re-sequence, delete](customize-process-form.md#groups)<br/>- [Add/remove custom fields](customize-process-field.md)<br/>- [Add/Hide a group extension](custom-controls-process.md)<br/>**Custom pages**<br/> - [Add, modify, re-sequence, delete](customize-process-form.md#pages)<br/>- [Add/delete custom fields](customize-process-field.md)<br/>- [Add/Hide a page extension](custom-controls-process.md) |    
+
+
+### Workflow states
+
+Choose your inherited process, the work item type, and then modify the workflow from the **States** page.  
+
+> [!div class="mx-tdBreakAll"]  
+> |![Inherited field](_img/process/inherited-icon.png) Inherited states |Custom states |
+> |-------------|----------|
+> |- [View workflow states](customize-process-workflow.md#hide-state)<br/>- [Hide a state](customize-process-workflow.md#hide-state) |- [Add a state](customize-process-workflow.md#add-states)<br/>- [Edit a state (change color or category)](customize-process-workflow.md#edit-state)<br/>- [Remove a state](customize-process-workflow.md#remove-state) |   
+
+### Backlogs 
+Choose your inherited process, and then modify the backlogs configuration from the **Backlog levels** page. Inherited backlogs aren't locked. 
+
+
+> [!div class="mx-tdBreakAll"]  
+> |![Inherited field](_img/process/inherited-icon.png) Inherited backlogs |Custom backlogs |
+> |-------------|----------|
+> |- [Add a custom WIT](customize-process-backlogs-boards.md)<br/>- [Change the default WIT](customize-process-backlogs-boards.md)<br/>- [Rename the requirement backlog](customize-process-backlogs-boards.md#edit-product-backlog)<br/>- [Rename a portfolio backlog](customize-process-backlogs-boards.md#edit-portfolio-backlog) |- [Add a portfolio backlog which displays custom WITs](customize-process-backlogs-boards.md#portfolio-backlogs)<br/>- [Edit or rename a portfolio backlog](customize-process-backlogs-boards.md#edit-portfolio-backlog)<br/>- [Delete the top-level custom portfolio backlog](customize-process-backlogs-boards.md#edit-portfolio-backlog) |
+
+## Web versus Visual Studio form layouts 
+
+The customizations you make only impact the work item forms displayed in a web browser. The work item forms displayed in Visual Studio or other [supported clients](../../user-guide/tools.md) won't reflect any process customizations you make.    
+
+
+<a id="return-process-overview">  </a>
+## Return to the process list  
+To return to the Process page, simply click the Process hub or the **All processes** breadcrumb link.   
+
+<img src="_img/process/cprocess-open-all-processes.png" alt="Return to process overview page" style="border: 1px solid #C3C3C3;" />  
+
+To return to a specific process and choose another WIT to customize, click the process name from the breadcrumb link.  
+
+
+[!INCLUDE [temp](../../work/_shared/field-reference.md)] 
