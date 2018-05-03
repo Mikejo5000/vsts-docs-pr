@@ -17,9 +17,7 @@ ms.date: 03/20/2018
 [!INCLUDE [temp](../../_shared/codex-agile.md)]  
 
 > [!IMPORTANT]  
->This topic applies to process customization for the Inheritance process model, which supports customization of team project(s) through a shared process model.
->
->To customize your backlogs or boards for the Hosted XML or On-premises XML process models, see [Add a work item type to a backlog and board](../add-wits-to-backlogs-and-boards.md) or [Add a portfolio backlog level](../add-portfolio-backlogs.md). For an overview of process models, see [Customize your work tracking experience](../customize-work.md).    
+>This topic applies to process customization for the Inheritance process model, which supports customization of team project(s) through a shared process model. For an overview of process models, see [Customize your work tracking experience](../../work/customize/customize-work.md).    
 
 You can customize your backlogs to add more levels or add custom work item types (WITs) to them. As shown below, we've added a third level portfolio backlog labeled *Initiatives* which tracks the custom *Initiative* WIT, and we've renamed the product backlog to *Stories and Tickets* to indicate that we not only track *User Stories*, but also *Customer Tickets* on the product backlog. 
  
@@ -64,7 +62,7 @@ To get started, you'll want to open the Backlog levels page of your custom inher
 0. Open the admin context Process hub from a work item form or by choosing the Account Settings option from the gear option. For details, see [Customize a process, Start customizing](customize-process.md#start-customizing).
 
 	> [!IMPORTANT]  
-	>If you don't see the Account settings option, then you are working from an on-premises TFS. The Process page isn't supported. You must use the features supported for the On-premises XML process model as described in [Customize your work tracking experience](../customize-work.md).
+	>If you don't see the Account settings option, then you are working from an on-premises TFS. The Process page isn't supported. You must use the features supported for the On-premises XML process model as described in [Customize your work tracking experience](../work/customize/customize-work.md).
 
 	<!--- <img src="_img/process-open-account-settings-via-menu.png" alt="Web portal, open account settings" style="border: 1px solid #C3C3C3;" /> -->
 

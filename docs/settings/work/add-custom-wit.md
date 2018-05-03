@@ -16,7 +16,7 @@ ms.date: 03/20/2018
 
 # Add a custom work item type     
 
-[!INCLUDE [temp](../../_shared/codex-agile.md)]
+[!INCLUDE [temp](../_shared/codex-agile.md)]
 
 You use different work item types (WITs) to plan and track different types of work. Your Codex project contains 9 or more WITs that you can customize, based on the process used to create your project.  
 
@@ -25,10 +25,10 @@ For example, you may want to capture customer issues in a custom Ticket WIT.
 <img src="_img/process/custom-wit-new-ticket-form.png" alt="Custom Ticket work item form" style="border: 1px solid #C3C3C3;" /> 
 
 ## Prerequisites
-* You must have a Codex Agile project created. If you don't have a project yet, create one in [Codex](../accounts/set-up-vs.md).  
+* You must have a Codex Agile project created. If you don't have a project yet, create one in [Codex](../../accounts/set-up-vs.md).  
 * You must be a member of the **Project Collection Administrators** group, the organization owner, or be granted explicit permissions to edit or create a specific process. 
 
-	If you aren't a project administrator, [get added as one](../security/set-project-collection-level-permissions.md) or have someone provide you with explicit permissions to [**Edit or Create a specific process**](../../security/set-permissions-access-work-tracking.md#process-permissions).   
+	If you aren't a project administrator, [get added as one](../../security/set-project-collection-level-permissions.md) or have someone provide you with explicit permissions to [**Edit or Create a specific process**](../../security/set-permissions-access-work-tracking.md#process-permissions).   
 
 <a id="open-process-wit">  </a>
 ## Open Settings>Process hub
@@ -66,7 +66,7 @@ You can create an inherited process from any one of the three system processes: 
 
 	Each new WIT comes predefined with a Details page with the Description field, and Discussion, Development, and Related Work groups. Also added, but not shown nor editable, are the standard elements included with the header of the form as shown in the following image, as well as the history, links, and attachment pages. 
  
-	<img src="../reference/_img/weblayout-system-controls-details-page.png" alt="WIT header details" style="border: 1px solid #C3C3C3;" /> 
+	<img src="_img/process/weblayout-system-controls-details-page.png" alt="WIT header details" style="border: 1px solid #C3C3C3;" /> 
 
 0.   From the Layout page, you can add fields, groups, or pages to specify the form and fields you want to track. For details, see [Customize a field](customize-process-field.md) or [Customize a web form for a process](customize-process-form.md).    
 
@@ -74,7 +74,7 @@ You can create an inherited process from any one of the three system processes: 
 
 0. Open the States page to view the default workflow states. Optionally, [customize the workflow states](customize-process-workflow.md). 
 
-0. <a id="backlog">  </a> Optional. To add the WIT to a backlog, see [Customize your backlogs or boards for a process](customize-process-backlogs-boards.md). By default, custom WITs aren't added to any backlog. To learn more about different backlog levels, see [Backlogs, boards, and plans](../../backlogs/backlogs-boards-plans.md).   
+0. <a id="backlog">  </a> Optional. To add the WIT to a backlog, see [Customize your backlogs or boards for a process](customize-process-backlogs-boards.md). By default, custom WITs aren't added to any backlog. To learn more about different backlog levels, see [Backlogs, boards, and plans](../../work/backlogs/backlogs-boards-plans.md).   
 
 0. Verify the custom work item type appears as expected. Either navigate to the backlog or board to which you added the custom WIT, or open the Work hub menu and open a new work item of the type you added.  
 

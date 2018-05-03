@@ -59,7 +59,7 @@
     - name: Customize a web form
       href: ./work/customize-process-form.md
     - name: Customize a workflow
-      href: ./work/process/customize-process-workflow.md
+      href: ./work/customize-process-workflow.md
     - name: Customize a work item type
       href: ./work/customize-process-wit.md
     - name: Add a custom rule

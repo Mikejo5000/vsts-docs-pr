@@ -59,7 +59,7 @@ To customize the web form, you must work from the admin context Process hub.
 You can open the admin context Process hub from a work item form or by choosing the Account Settings option from the gear option. For details, see [Customize a process, Start customizing](customize-process.md#start-customizing).
 
 > [!IMPORTANT]  
->If you don't see the Account settings option, then you are working from an on-premises TFS. The Process page isn't supported. You must use the features supported for the On-premises XML process model as described in [Customize your work tracking experience](../customize-work.md).
+>If you don't see the Account settings option, then you are working from an on-premises TFS. The Process page isn't supported. You must use the features supported for the On-premises XML process model as described in [Customize your work tracking experience](../../work/customize/customize-work.md).
 
 <a id="add-wit">  </a>
 ## Add a work item type

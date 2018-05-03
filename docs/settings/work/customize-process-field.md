@@ -56,7 +56,7 @@ You can add fields and specify the group and page where they should appear. Also
 0. Open the admin context Process hub from a work item form or by choosing the Account Settings option from the gear option. For details, see [Customize a process, Start customizing](customize-process.md#start-customizing).
 
 	> [!IMPORTANT]  
-	>If you don't see the Account settings option, then you are working from an on-premises TFS. The **Process** page isn't supported. You must use the features supported for the [On-premises XML process model](../on-premises-xml-process-model.md).
+	>If you don't see the Account settings option, then you are working from an on-premises TFS. The **Process** page isn't supported. You must use the features supported for the [On-premises XML process model](../../work/customize/on-premises-xml-process-model.md).
 	
 0. With the WIT selected, click the ![add new field icon](_img/process/new-field-icon.png) (New Field icon).  
 
@@ -85,7 +85,7 @@ You can add fields and specify the group and page where they should appear. Also
 	<img src="_img/process/cpfield-customer-ticket-layout.png" alt="Add a field to Use story, specify layout" style="border: 1px solid #C3C3C3;" />  
 
 	> [!NOTE]    
-	> While you can change the form label, you must use the field name when adding fields to cards ([Kanban](../../work/customize-cards.md#fields), [task board](../../work/customize-cards.md#task-board)) or [creating queries](../../work/track/using-queries.md) based on the field.   
+	> While you can change the form label, you must use the field name when adding fields to cards ([Kanban](../../work/customize/customize-cards.md#fields), [task board](../../work/customize/customize-cards.md#task-board)) or [creating queries](../../work/track/using-queries.md) based on the field.   
 
 0.	Click **Add field** to complete adding the field. If you haven't specified it's layout location, it will be added to the first group of fields on the layout form.  
 

@@ -13,7 +13,6 @@ ms.date: 03/20/2018
 ---
 
 # Add a custom field to a work item type    
-
 [!INCLUDE [temp](../../_shared/codex-agile.md)]
 
 You can add a custom field to support tracking additional data requirements or modify select attributes of an ![inherited icon](_img/process/inherited-icon.png) inherited field. For example, you can add a custom field and pick list or change the label that appears in the work item form for an inherited field.  
@@ -21,15 +20,15 @@ You can add a custom field to support tracking additional data requirements or m
 For a list of all fields defined for your account&mdash;which includes all fields defined for system and inherited processes&mdash;see [Review fields](customize-process-field.md#review-fields).  
 
 ## Prerequisites
-* You must have a Codex Agile project created. If you don't have a project yet, create one in [Codex](../accounts/set-up-vs.md).  
+* You must have a Codex Agile project created. If you don't have a project yet, create one in [Codex](../../accounts/set-up-vs.md).  
 * You must be a member of the **Project Collection Administrators** group, the organization owner, or be granted explicit permissions to edit or create a specific process. 
 
-	If you aren't a project administrator, [get added as one](../security/set-project-collection-level-permissions.md) or have someone provide you with explicit permissions to [**Edit or Create a specific process**](../../security/set-permissions-access-work-tracking.md#process-permissions).  
+	If you aren't a project administrator, [get added as one](../../security/set-project-collection-level-permissions.md) or have someone provide you with explicit permissions to [**Edit or Create a specific process**](../../security/set-permissions-access-work-tracking.md#process-permissions).  
 
 <a id="open-process-wit">  </a>
 ## Open Settings>Process hub
 
-[!INCLUDE [temp](../../_shared/open-process-admin-context-ts.md)]
+[!INCLUDE [temp](../_shared/open-process-admin-context-ts.md)]
 
 <a id="create-inherited-process"></a>
 ## Create an inherited process
@@ -59,7 +58,7 @@ You can add fields and specify the group and page where they should appear. Also
 
 	Here we choose the Bug WIT. 
 	
-0. With the WIT selected, click the ![add new field icon](_img/new-field-icon.png) (New Field icon).  
+0. With the WIT selected, click the ![add new field icon](_img/process/new-field-icon.png) (New Field icon).  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Process Work Item Types page, Add a field to a WIT](_img/field/bug-new-field.png) 
@@ -113,5 +112,5 @@ You can add fields and specify the group and page where they should appear. Also
 - [Add a checkbox field](add-custom-field.md#boolean-field)
 - [Hide an inherited field or custom control](add-custom-field.md#show-hide-field) 
 - [Remove a custom field from a form](add-custom-field.md#remove-field) 
-- [Delete a field](add-custom-field.mddelete-field)   
+- [Delete a field](add-custom-field.md#delete-field)   
 

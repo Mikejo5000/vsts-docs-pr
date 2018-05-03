@@ -18,14 +18,14 @@ ms.date: 03/20/2018
 
 # Create and manage inherited processes 
 
-[!INCLUDE [temp](../_shared/codex-agile.md)]
+[!INCLUDE [temp](../../_shared/codex-agile.md)]
 
 You customize your Codex Agile project, Agile tools, and the work tracking system through an inherited process. The customizations you make are in effect for all teams. On the other hand, you configure your [Agile tools&mdash;Scrum and Kanban&mdash;through the web UI](../about-teams-and-settings.md). A process defines the building blocks of the work tracking system. Whenever you create a Codex project, you select the process you want your project to use. 
 
 You'll see two types of processes:
 
 - ![locked icon](_img/process/locked-icon.png) System processes &mdash;[Scrum, Agile, and CMMI](../../work/work-items/guidance/choose-process.md)&mdash;which are locked from being changed.   
-- ![inherited process icon](_img/inherited-process-icon.png) Inherited processes, which you can customize, are so named as they inherit from the system process from which they were created. Any updates VSTS makes to the parent system process will automatically update your custom inherited process.  
+- ![inherited process icon](_img/process/inherited-process-icon.png) Inherited processes, which you can customize, are so named as they inherit from the system process from which they were created. Any updates VSTS makes to the parent system process will automatically update your custom inherited process.  
 
 In addition, all processes are shared. That is, one or more team projects can use a single process. Instead of customizing a single team project, you customize a process. Changes made to the process automatically update all team projects that use that process. 
 
