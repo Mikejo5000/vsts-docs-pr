@@ -16,7 +16,7 @@ ms.date: 03/20/2018
 
 # Add a custom work item type     
 
-[!INCLUDE [temp](../_shared/codex-agile.md)]
+[!INCLUDE [temp](../../_shared/codex-agile.md)]
 
 You use different work item types (WITs) to plan and track different types of work. Your Codex project contains 9 or more WITs that you can customize, based on the process used to create your project.  
 
@@ -33,7 +33,7 @@ For example, you may want to capture customer issues in a custom Ticket WIT.
 <a id="open-process-wit">  </a>
 ## Open Settings>Process hub
 
-[!INCLUDE [temp](../../_shared/open-process-admin-context-ts.md)]
+[!INCLUDE [temp](../_shared/open-process-admin-context-ts.md)]
 
  
 <a id="create-inherited-process"></a>

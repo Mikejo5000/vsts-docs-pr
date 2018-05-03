@@ -62,7 +62,7 @@ To get started, you'll want to open the Backlog levels page of your custom inher
 0. Open the admin context Process hub from a work item form or by choosing the Account Settings option from the gear option. For details, see [Customize a process, Start customizing](customize-process.md#start-customizing).
 
 	> [!IMPORTANT]  
-	>If you don't see the Account settings option, then you are working from an on-premises TFS. The Process page isn't supported. You must use the features supported for the On-premises XML process model as described in [Customize your work tracking experience](../work/customize/customize-work.md).
+	>If you don't see the Account settings option, then you are working from an on-premises TFS. The Process page isn't supported. You must use the features supported for the On-premises XML process model as described in [Customize your work tracking experience](../../work/customize/customize-work.md).
 
 	<!--- <img src="_img/process-open-account-settings-via-menu.png" alt="Web portal, open account settings" style="border: 1px solid #C3C3C3;" /> -->
 
