@@ -4,7 +4,6 @@ titleSuffix: VSTS & TFS
 description: Use the Kanban board to plan and track work in Visual Studio Team Services and Team Foundation Server 
 ms.global_help.title: View or add a Kanban board
 ms.global_help.keywords: ms.vss-work-web.boards-hub, 1  
-ms.topic: get-started-article
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 4942A638-9888-461E-969D-0BB9B1FE1736

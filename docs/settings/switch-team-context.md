@@ -1,13 +1,13 @@
 ---
 title: Switch team project or team context
-titleSuffix: VSTS & TFS
+titleSuffix: Codex
 description: Change the focus of your view to another team project or team in Visual Studio Team Services & Team Foundation Server 
 ms.technology: devops-settings
 ms.prod: devops
-ms.topic: conceptual
 ms.assetid: 2C0977AB-91A4-477C-870E-FA5540E76F4B
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 ms.date: 09/29/2017  
 ---

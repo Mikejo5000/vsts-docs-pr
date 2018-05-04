@@ -1,6 +1,6 @@
 ---
 title: Define area paths
-titleSuffix: VSTS & TFS 
+titleSuffix: Codex
 description: Group work items based on team, product, or feature area by defining area paths for Visual Studio Team Services or Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
