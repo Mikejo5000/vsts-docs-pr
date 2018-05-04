@@ -10,7 +10,7 @@ After you've verified your customizations, you can now apply the process to your
 
 0. Open the &hellip; context menu for the process and choose the **Change team projects**&hellip; option. 
 
-	Here we open the menu for the MYAgile inherited process. 
+	Here we open the menu for the MyAgile inherited process. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Agile process context menu, Choose Change team projects to use MyAgile](/vsts/settings/work/_img/process/add-custom-change-process.png) 
