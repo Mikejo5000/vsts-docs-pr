@@ -60,7 +60,7 @@ When you change the default WIT for a backlog level, it causes that WIT to appea
 
 To get started, you'll want to open the Backlog levels page of your custom inherited process. If you haven't created an inherited process yet, [do that now](manage-process.md#create-inherited-process).   
  
-0. Open the admin context Process hub from a work item form or by choosing the Account Settings option from the gear option. For details, see [Customize a process, Start customizing](customize-process.md#start-customizing).
+0. Open the **Settings>Work>Process** hub.  For details, see [Open Settings>Process hub](add-custom-wit.md#open-process-wit).
 
 	> [!IMPORTANT]  
 	>If you don't see the Account settings option, then you are working from an on-premises TFS. The Process page isn't supported. You must use the features supported for the On-premises XML process model as described in [Customize your work tracking experience](../../work/customize/customize-work.md).
@@ -73,7 +73,8 @@ To get started, you'll want to open the Backlog levels page of your custom inher
 
 0. Open the **Backlog levels** page.
 
-	<img src="_img/process/process-backlog-levels-open.png" alt="Web portal, Admin context, Process page, open Backlog levels" style="border: 1px solid #C3C3C3;" />  
+	> [!div class="mx-imgBorder"]  
+	> ![Web portal, Admin context, Process page, open Backlog levels](_img/process/process-backlog-levels-open.png) 
 
 
 <a id="portfolio-backlogs">  </a>

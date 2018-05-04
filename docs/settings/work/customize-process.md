@@ -86,8 +86,8 @@ You add rules to support specific workflow and business use cases. Rules allow y
 
 To add a rule, choose your inherited process, the work item type, and then choose **Rules**, and then choose **New rule**.   
 
-	> [!div class="mx-imgBorder"]  
-	> ![Process, WIT, Bug, Layout, New custom control](_img/rules/custom-rule-create-rule.png) 
+> [!div class="mx-imgBorder"]  
+> ![Process, WIT, Bug, Layout, New custom control](_img/rules/custom-rule-create-rule.png) 
 
 To learn more, see [Add a rule to a work item type ](custom-rules.md).
 
@@ -118,28 +118,31 @@ You use different WITs to plan and track different types of work. The main reaso
 <a id="workflow" />
 ## Modify the workflow of a work item type 
 
-Choose your inherited process, the work item type, and then modify the workflow from the **States** page.  
- 
-- [Hide a workflow state](customize-process-workflow.md#hide-state) 
-- [Add a state](customize-process-workflow.md#add-states)  
-- [Edit a state (change color or category)](customize-process-workflow.md#edit-state)  
-- [Remove a state](customize-process-workflow.md#remove-state)     
+Workflow states allow you to track the status of a work item as it moves from new to completed. 
+
+0. To modify a workflow, choose your inherited process, the WIT, and then the **States** page.  
+
+	> [!div class="mx-imgBorder"]  
+	> ![Process page, Bug WIT, States tab, Add state](_img/process/cpworkflow-add-state.png") 
+
+0. You can modify the workflow in the following ways:   
+	- [Hide a workflow state](customize-process-workflow.md#hide-state) 
+	- [Add a state](customize-process-workflow.md#add-states)  
+	- [Edit a state (change color or category)](customize-process-workflow.md#edit-state)  
+	- [Remove a state](customize-process-workflow.md#remove-state)     
  
 <a id="custom-control" />
 ## Add a custom control    
 
-Choose your inherited process, the work item type, and then choose **Add custom control**.
+Custom controls provide additional functionality to a work item form. 
 
-> [!div class="mx-imgBorder"]  
-> ![Process, WIT, Bug, Layout, New custom control](_img/process/cpcontrols-add-custom-control.png) 
+- To add a custom control, choose your inherited process, the WIT, and then **Add custom control**.
 
-Custom controls provide additional functionality to a work item form. A custom control comes in four flavors, or contribution types. The first three in the following list appear on the web form layout for all inherited and customizable work item types (WITs):    
-- Field-level contribution 
-- Group-level contribution 
-- Page-level contribution
-- Action-level contribution (appears in the context menu of the web form) 
+	> [!div class="mx-imgBorder"]  
+	> ![Process, WIT, Bug, Layout, New custom control](_img/process/cpcontrols-add-custom-control.png) 
 
 To learn more, see [Add a custom control to a work item type](custom-controls-process.md).
+
 
 <a id="extension" /> 
 ## Add an extension to a work item type
@@ -173,22 +176,29 @@ An extension is an installable unit that contributes new capabilities to your Co
 You can add additional WITs to a backlog level or add another portfolio backlog. As shown below, we've added a third level portfolio backlog labeled *Initiatives* which tracks the custom *Initiative* WIT, and we've renamed the product backlog to *Stories and Tickets* to indicate that we not only track *User Stories*, but also *Customer Tickets* on the product backlog. 
  
 > [!div class="mx-imgBorder"]  
-> ![Changes made to the backlog levels]_img/process/process-backlog-boards-intro.png) 
+> ![Changes made to the backlog levels](_img/process/process-backlog-boards-intro.png) 
 
-Choose your inherited process, and then modify the backlogs configuration from the **Backlog levels** page. Inherited backlogs aren't locked. 
+0. To modify the backlogs  and boards configuration, begin by choosing your inherited process, and then choose the **Backlog levels** page. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Web portal, Admin context, Process page, open Backlog levels](_img/process/process-backlog-levels-open.png) 
+
+0. You can modify the backlog and board configuration in the following ways:  	
+	- [Add a custom WIT to a backlog or board](customize-process-backlogs-boards.md)  
+	- [Change the default WIT](customize-process-backlogs-boards.md)  
+	- [Rename the requirement backlog](customize-process-backlogs-boards.md#edit-product-backlog)  
+	- [Rename a portfolio backlog](customize-process-backlogs-boards.md#edit-portfolio-backlog)  
+	- [Add a portfolio backlog which displays custom WITs](customize-process-backlogs-boards.md#portfolio-backlogs)  
+	- [Edit or rename a portfolio backlog](customize-process-backlogs-boards.md#edit-portfolio-backlog)  
+	- [Delete the top-level custom portfolio backlog](customize-process-backlogs-boards.md#edit-portfolio-backlog) 
 
 
-> [!div class="mx-tdBreakAll"]  
-> |![Inherited field](_img/process/inherited-icon.png) Inherited backlogs |Custom backlogs |
-> |-------------|----------|
-> |- [Add a custom WIT](customize-process-backlogs-boards.md)<br/>- [Change the default WIT](customize-process-backlogs-boards.md)<br/>- [Rename the requirement backlog](customize-process-backlogs-boards.md#edit-product-backlog)<br/>- [Rename a portfolio backlog](customize-process-backlogs-boards.md#edit-portfolio-backlog) |- [Add a portfolio backlog which displays custom WITs](customize-process-backlogs-boards.md#portfolio-backlogs)<br/>- [Edit or rename a portfolio backlog](customize-process-backlogs-boards.md#edit-portfolio-backlog)<br/>- [Delete the top-level custom portfolio backlog](customize-process-backlogs-boards.md#edit-portfolio-backlog) |
-
-
+<a id="verify">  </a>
 ## Verify the customization you made 
 
 We recommend that you create a test project and apply your customized  inherited process to it to verify the changes you've made. 
 
-0. Open the &hellip; context menu for the process you want to use and choose **New team project**.  
+0. Open the **All processes** page, and choose the &hellip; context menu for the process you want to use, and then select **New team project**.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Create a team project from the selected process](_img/process/add-new-team-project.png) 
@@ -198,23 +208,17 @@ We recommend that you create a test project and apply your customized  inherited
 	> [!div class="mx-imgBorder"]  
 	> ![Create new project form](_img/process/create-test-project.png) 
 
-0. Open the **Work>Work Items** page (user context) and choose **New Work Item** and select the WIT you customized. Here we choose **Ticket**. 
+0. Open the **Work>Work Items** page (user context) and choose **New Work Item** and select a WIT you customized. Here we choose **Bug**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![All Processes-Process-WIT breadcrumb links](_img/process/add-custom-wit-verify-ticket.png) 
+	> ![Work, Work Items Page, Add New Work Item, Bug](_img/process/add-custom-field-verify-bug.png) 
 
-	If you don't see the custom WIT, refresh your browser to make sure it registers all the custom changes you've made. 
-
-0.  Verify that the field you added appears on the form. Note that the ![](../../_img/icons/required-icon.png) (exclamation mark) icon indicates the field is required.  
-
-	<img src="_img/process/add-custom-field-verify-ticket-form.png" alt="Ticket form, Customer Ticket field added to Customer Focus group" style="border: 2px solid #C3C3C3;" />	
-
+0.  Verify that the field(s) you added appear on the form. Note that the ![](../../_img/icons/required-icon.png) (exclamation mark) icon indicates the field is required.  
 
 
 [!INCLUDE [temp](../_shared/change-project-to-inherited-process.md)] 
 
-
-
+ 
 <a id="process-rest-api">  </a>
 ## Programmatically work with processes 
 
@@ -228,19 +232,18 @@ To customize a single project, always start by [creating an inherited process an
 
 See also: 
 - [Work tracking object limits](object-limits.md)
-- [What is an inherited process?]( inherited -process-model.md) 
+- [What is an inherited process?](inheritance-process-model.md) 
+
+
 
 
 
 <!---
-
-
 For example, the following image shows the work item form layout for the Bug WIT. From this page, you can add fields, groups, pages, and custom controls. To modify the workflow, you click **States**.
 
 <img src="_img/process/cprocess-intro.png" alt="Admin context, Process, Work item types, bug type, layout tab" style="border: 1px solid #C3C3C3;" /> 
-
-
 -->
+
 
 
 

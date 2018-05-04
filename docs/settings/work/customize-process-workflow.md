@@ -58,7 +58,7 @@ States you add will appear in the pick list for the States field shown in work i
 
 To customize the workflow for a WIT, you must work from the admin context Process hub. 
 
-You can open the admin context Process hub from a work item form or by choosing the Account Settings option from the gear option. For details, see [Customize a process, Start customizing](customize-process.md#start-customizing).
+Open the **Settings>Work>Process** hub. For details, see [Open Settings>Process hub](add-custom-wit.md#open-process-wit).
 
 > [!IMPORTANT]  
 >If you don't see the Account settings option, then you are working from an on-premises TFS. The Process page isn't supported. You must use the features supported for the On-premises XML process model as described in [Customize your work tracking experience](../../work/customize/customize-work.md).
@@ -71,9 +71,10 @@ You can open the admin context Process hub from a work item form or by choosing 
 >
 > If you add a state to a WIT which you is associated with a backlog level, each team will need to update their [Kanban board columm settings](../../work/kanban/add-columns.md) in order to view and use the affected Kanban board.  
 
-0. From the Work Item Types tab, choose the work item type you want to modify, choose States, and then choose New State.    
+0. From the Work Item Types tab, choose the work item type you want to modify, choose **States**, and then choose **New State**.    
 
-	<img src="_img/process/cpworkflow-add-state.png" alt="Process page, Bug WIT, States tab, Add state" style="border: 1px solid #C3C3C3;" />  
+	> [!div class="mx-imgBorder"]  
+	> ![Process page, Bug WIT, States tab, Add state](_img/process/cpworkflow-add-state.png") 
 
 0. Enter the name of the State, choose its category and color, and then click Save. The color you specify will appear throughout the product including on the work item form and when the State field appears on a backlog, boards, query results, and more.  
 

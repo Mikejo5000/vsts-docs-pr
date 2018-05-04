@@ -76,7 +76,7 @@ When the display width won't accommodate all columns, columns appear stacked wit
 
 To customize the web form, you must work from the admin context Process hub. 
 
-You can open the admin context Process hub from a work item form or by choosing the Account Settings option from the gear option. For details, see [Customize a process, Start customizing](customize-process.md#start-customizing).
+Open the **Settings>Work>Process** hub. For details, see [Open Settings>Process hub](add-custom-wit.md#open-process-wit).
 
 > [!IMPORTANT]  
 >If you don't see the Account settings option, then you are working from an on-premises TFS. The Process page isn't supported. You must use the features supported for the On-premises XML process model as described in [Customize your work tracking experience](../../work/customize/customize-work.md).

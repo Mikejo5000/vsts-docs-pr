@@ -46,7 +46,7 @@ You may need to click ![Refresh](_img/process/custom-controls-refresh_extensions
 
 1. Install the [field-level extension](#add-extension) as discussed in the previous section.  
   
-0. Open the admin context Process hub from a work item form or by choosing the Account Settings option from the gear option. For details, see [Customize a process, Start customizing](customize-process.md#start-customizing).
+0. Open the **Settings>Work>Process** hub from a work item form. For details, see [Open Settings>Process hub](add-custom-wit.md#open-process-wit).
 
 2. (Optional) [Add a field](customize-process-field.md#add-custom-field) to associate with the field-level contribution. Alternatively, you can specify an existing field, inherited or custom. 
 

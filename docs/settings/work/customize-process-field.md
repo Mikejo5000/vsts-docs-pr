@@ -53,7 +53,7 @@ To perform any of these actions, you must be a member of the Project Collection 
 
 You can add fields and specify the group and page where they should appear. Also, once you've added a field, you can drag-and-drop it within a page to relocated it on the form. If you have several fields you want to add to a custom page or group, then you may want to [add those elements first](customize-process-form.md) and then add your fields. 
 
-0. Open the admin context Process hub from a work item form or by choosing the Account Settings option from the gear option. For details, see [Customize a process, Start customizing](customize-process.md#start-customizing).
+0. Open the **Settings>Work>Process** hub.  For details, see [Open Settings>Process hub](add-custom-wit.md#open-process-wit).
 
 	> [!IMPORTANT]  
 	>If you don't see the Account settings option, then you are working from an on-premises TFS. The **Process** page isn't supported. You must use the features supported for the [On-premises XML process model](../../work/customize/on-premises-xml-process-model.md).

@@ -25,4 +25,4 @@ After you've verified your customizations, you can now apply the process to your
 0. After  you've confirmed that the projects you want to change are correct, choose **Ok**. 
 
 	> [!TIP]    
-	> To customize a single project, always start by [creating an inherited process and migrating the team project to that process](manage-process.md). Then, all the customizations that you make to the inherited process automatically appear for the team project you migrated.
+	> To customize a single project, always start by [creating an inherited process and migrating the team project to that process](/vsts/settings/work/manage-process.md). Then, all the customizations that you make to the inherited process automatically appear for the team project you migrated.
