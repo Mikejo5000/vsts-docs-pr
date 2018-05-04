@@ -39,11 +39,12 @@ Once you've added a custom page or group, you can add [custom fields to those pa
 ## Add a custom group  
 You can add your own custom groups to both inherited pages and custom pages.
 
-1. From the Layout page, choose New group.    
+1. From the Layout page, choose **New group**.    
 
 	<img src="_img/process/cpform-new-group.png" alt="Process>Work Item Types>Bug>Layout>Add new group" style="border: 1px solid #C3C3C3;" /> 
 
-2. Label the group and choose the column it should appear in.
+2. Name the group and choose the column it should appear in. For information about columns, see [About process customization and inherited processes, Layout and resizing](inheritance-process-model.md#resizing).   
+
 
 	<img src="_img/process/cpform-add-group-dialog.png" alt="Add custom group dialog" style="border: 2px solid #C3C3C3;" />
 
@@ -101,9 +102,10 @@ Removing an inherited field from a form simply hides the field from displaying o
 ## Add a custom page  
 Add a custom page when you have several custom fields that you want to group within that page. You can add and reorder custom pages. 
 
-0. From the Layout page of the WIT you've selected, click New page.    
+0. From the Layout page of the WIT you've selected, click **New page**.    
 
-	<img src="_img/process/cpform-add-page.png" alt="Process, Work Item Types, Bug: Layout, New page option" style="border: 2px solid #C3C3C3;" />
+	> [!div class="mx-imgBorder"]  
+	> ![Process, Work Item Types, Bug: Layout, New page option](_img/process/cpform-add-page.png)   
 
 0. Label the page.
 
@@ -114,15 +116,15 @@ Add a custom page when you have several custom fields that you want to group wit
 
 0. When you've finished adding groups and fields to the page, verify your layout is as expected. Refresh your browser and open a work item of the type you just customized. 
 
-	<img src="_img/process/cpform-custom-page-in-form.png" alt="Bug work item form, Custom page" style="border: 2px solid #C3C3C3;" />
-
+	> [!div class="mx-imgBorder"]  
+	> ![Bug work item form, Custom page](_img/process/cpform-custom-page-in-form.png) 
 
 <a id="reorder-page"></a>
 ## Reorder pages 
 
 You can reorder custom pages using drag and drop, or choose the move operation from the custom page &hellip; context menu. You can't move the inherited Details page.
 
-<img src="_img/process/cpform-re-sequence-page.png" alt="Re-order custom pages" style="border: 2px solid #C3C3C3;" />
+![Re-order custom pages](_img/process/cpform-re-sequence-page.png) 
 
 <a id="delete-page"></a>
 ## Delete a page  

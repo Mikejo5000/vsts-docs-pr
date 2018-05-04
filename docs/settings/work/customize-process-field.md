@@ -73,8 +73,8 @@ You can add fields and specify the group and page where they should appear. Also
 
 	Here, we show the Customer Ticket field has been added to the Status group. You may need to refresh your browser to see the changes. 
 
-	<img src="_img/process/cpfield-bug-form-customized-customer-ticket.png" alt="Bug form, Customer Ticket field added to Details group" style="border: 2px solid #C3C3C3;" />
- 
+ 	> [!div class="mx-imgBorder"]  
+	> ![Bug form, Customer Ticket field added to Customer focus group](_img/process/cpfield-bug-form-customized-customer-ticket.png) 
 
 
 <a id="pick-list">  </a>
@@ -106,7 +106,7 @@ Use the Identity field to add a field similar to the Assigned To field. Identity
 
 1. Start by clicking ![add new field icon](_img/process/new-field-icon.png) (New Field), then the field name, Identity type, and optionally a description. 
 
-	<img src="_img/process/cpfield-identity.png" alt="Add a custom pick list" style="border: 1px solid #C3C3C3;" />  
+	![Add a custom pick list](_img/process/cpfield-identity.png)  
 
 3. (Optional) See previous [step 5](#layout) to specify where you want the field to appear on the form (Layout tab). 
  
@@ -118,11 +118,12 @@ Use the Identity field to add a field similar to the Assigned To field. Identity
 
 2. Choose Text (multiple lines) as the type. Here we label the field as Customer request to capture customer verbatims.   
 
-    <img src="_img/process/cpfield-add-html-field-to-bug.png" alt="Process Work Item Types page, Add a rich-text field to the Bug form" style="border: 1px solid #C3C3C3;" />  
+    ![Process Work Item Types page, Add a rich-text field to the Bug form](_img/process/cpfield-add-html-field-to-bug.png)
 
 2. The field is added to the first column under all system-defined rich-text fields, but before the Discussion control.   
 
-	<img src="_img/process/customize-process-field-show-custom-html-field-up1.png" alt="Bug form, Customer request field added to first column in form" style="border: 1px solid #C3C3C3;" />   
+ 	> [!div class="mx-imgBorder"]  
+	> ![Bug form, Customer request field added to first column in form](_img/process/customize-process-field-show-custom-html-field-up1.png)
 
 <a id="boolean-field">  </a>
 ### Add a checkbox field  
@@ -135,7 +136,7 @@ Use the Identity field to add a field similar to the Assigned To field. Identity
 
 3. (Optional) Open the Options tab and specify if the field should be required. 
 
-	<img src="_img/process/cpfield-edit-boolean-field-options-up1.png" alt="Set options for boolean field" style="border: 1px solid #C3C3C3;" /> 
+	![Set options for boolean fiel](_img/process/cpfield-edit-boolean-field-options-up1.png)
 
 4. By default, the field is added to the last group defined in the second column. Open the Layout tab to drag and drop the field to another group on the form.  
 
@@ -151,7 +152,7 @@ For a list of all work item fields defined for all WITs and processes, see the [
 
 Here we add the Customer Ticket field to the User Story WIT.  
 
-<img src="_img/process/cpfield-add-existing-field.png" alt="Add existing field to bug" style="border: 1px solid #C3C3C3;" />  
+![Add existing field to a User Story](_img/process/cpfield-add-existing-field.png)
 
 
 

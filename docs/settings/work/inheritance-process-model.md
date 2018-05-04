@@ -46,7 +46,7 @@ For example, as shown in the picture below, you see a list of  projects defined 
 
 Each process you create inherits the WITs provided with the parent system process&mdash;Agile, Scrum, or CMMI. For example, the Agile process provides bug, task, user story, feature, epic, issue and test-related WITs. 
 
-You can add fields and modify the workflow and form for all inherited WITs that display on the Work Item Types page. If you don't want users to use a WIT, you can disable it. In addition, you can add custom WITs. 
+You can add fields and modify the workflow and form for all inherited WITs that display on the **Work Item Types** page. If you don't want users to use a WIT, you can disable it. In addition, you can add custom WITs. 
 
 ## Field customizations 
 
@@ -72,6 +72,15 @@ In addition, you can [add an existing inherited or custom field](customize-proce
 
 > [!NOTE]    
 > With the Inheritance process model, you can't modify the pick-lists of pre-defined fields&mdash;such as [Activity](../../work/track/query-numeric.md), [Automation Status](../../work/track/build-test-integration.md), [Discipline](../../work/track/query-numeric.md), [Priority](../../work/track/planning-ranking-priorities.md), plus others.  
+
+
+### Configurable pick lists 
+
+The following pick lists are configured through the user interface and not customizable through an inherited process.   
+- [Area paths](../set-area-paths.md)  
+- [Iteration paths](../set-iteration-paths-sprints.md)
+
+Pick lists associated with person-name fields are managed based on the users you add to a [team project or team](../../accounts/add-team-members-vs.md).   
 
 [!INCLUDE [temp](../_shared/field-reference.md)] 
 
@@ -146,6 +155,20 @@ You customize the workflow for a WIT by adding a custom state. Each customizable
 - You can't specify allowed transitions, all transitions are defined from any state to another state (except to the Removed state).  
 
 
+<a id="system-rules">  </a>
+### System rules
+
+Each WIT&mdash;bug, task, user story, etc.&mdash;has several system rules already defined. Some are simple, like making the Title field required or setting a default for the Value Area field. In addition, a number of system rules define actions to take when a workflow state changes. 
+
+For example, several rules exist to copy the current user identity under the following conditions: 
+- When a work item is modified, copy the user identity to the Changed By field  
+- When a work item is modified, copy the user identity to the Changed By field
+- When the workflow state changes to Closed or Done, copy the user identity to the Closed By field. 
+ 
+> [!IMPORTANT]  
+> Predefined system rules will take precedent over any custom rule that you define which would overwrite it.  
+
+
 ## Backlog and board customizations 
 
 Backlogs and boards are essential Agile tools for creating and managing work for a team. Inherited backlogs aren't locked.  
@@ -170,30 +193,38 @@ When you change the default WIT for a backlog level, it causes that WIT to appea
 - You can't insert a backlog level within the existing set of defined backlogs
 - You can't reorder the backlog levels  
 - You can't create a custom task level, although you can add custom WITs to the iteration backlog  
-- You can't add the *Bug* work item type to any backlog level. Instead, the system allows each team to decide how they want to manage bugs. To learn more, see [Show bugs on backlogs and boards](../../work/customize/show-bugs-on-backlog.md).
+- You can't add the *Bug* WIT to any backlog level. Instead, the system allows each team to decide how they want to manage bugs. To learn more, see [Show bugs on backlogs and boards](../../work/customize/show-bugs-on-backlog.md).
 
 
+### About Categories 
+The system defines 13 categories for use, and at least one WIT is assigned to each category. You can't add a WIT that already belongs to an existing category to a backlog.  
+
+The Bug category is a special category that is designed to allow teams to manage their bugs as requirements or tasks. To learn more, see [Show bugs on backlogs and boards](../../work/customize/show-bugs-on-backlog.md)
+
+
+### Fields added to WITs associated with a backlog level 
+
+When you add a WIT to a backlog level, the following fields are added to support select Agile tool features.  
+
+| Backlog level | Fields added | 
+|---------------|--------------|
+| Portfolio backlog | - Stack rank (Agile, CMMI)<br/>- Backlog Priority (Scrum) | 
+| Requirement backlog |  - Stack Rank, Story Points (Agile)<br/>- Stack Rank, Size (CMMI)<br/>- Backlog Priority, Effort (Scrum) |
+| Iteration backlog | - Activity, Remaining Work, Stack Rank (Agile)<br/>- Discipline, Remaining Work, Stack Rank (CMMI)<br/>- Activity, Remaining Work, Backlog Priority (Scrum) |
+
+The Stack Rank and Backlog Priority fields capture the relative priority of work items as they are reordered on a backlog or board.  
+
+The Story Points, Size, and Effort fields capture the relative work required to complete a WIT assigned to the Requirement backlog. This value is used to compute [velocity](../../report/dashboards/velocity-chart-data-store.md).  
+
+And, lastly, Remaining Work is used [Sprint burndown and capacity charts](../../work/scrum/define-sprints.md). 
 
 ## Object imits
 
-For a list of limits placed on the number of fields, work item types, backlog levels, and other objects you can customize, see [Work tracking object limits](object-limits.md). 
+For a list of limits placed on the number of fields, WITs, backlog levels, and other objects you can customize, see [Work tracking object limits](object-limits.md). 
 
 
 <!---
 
-
-
-
-<a id="return-process-overview">  </a>
-## Return to the process list  
-To return to the Process page, simply click the Process hub or the **All processes** breadcrumb link.   
-
-<img src="_img/process/cprocess-open-all-processes.png" alt="Return to process overview page" style="border: 1px solid #C3C3C3;" />  
-
-To return to a specific process and choose another WIT to customize, click the process name from the breadcrumb link.  
-
-
-You can perform the following tasks with the Inheritance process model. 
 
 > [!div class="mx-tdCol2BreakAll"]  
 > |Fields  |Pick lists   |   Work item types |

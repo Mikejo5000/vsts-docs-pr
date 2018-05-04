@@ -14,10 +14,7 @@ ms.date: 07/10/2018
 
 # Customize your backlogs or boards  
 
-[!INCLUDE [temp](../../_shared/codex-agile.md)]  
-
-> [!IMPORTANT]  
-> This topic applies to process customization for the Inheritance process model, which supports customization of team project(s) through a shared process model. For an overview of process models, see [Customize your work tracking experience](../../work/customize/customize-work.md).    
+[!INCLUDE [temp](../../_shared/codex-agile.md)]     
 
 You can customize your backlogs to add more levels or add custom work item types (WITs) to them. As shown below, we've added a third level portfolio backlog labeled *Initiatives* which tracks the custom *Initiative* WIT, and we've renamed the product backlog to *Stories and Tickets* to indicate that we not only track *User Stories*, but also *Customer Tickets* on the product backlog. 
  
@@ -27,6 +24,8 @@ You can customize your backlogs to add more levels or add custom work item types
 Your team project comes equipped with two portfolio backlogs: Features and Epics. However, if you need one or more additional portfolio backlogs, you can add them.   
 
 Portfolio backlogs are useful for organizing your backlog under various business initiatives and user scenarios. When you [organize your backlogs into portfolios](../../work/backlogs/organize-backlog.md), you can gain a hierarchical view of the work defined in lower-level backlogs, including work in progress across several teams. Program managers can track the status of those backlog items of interest and drill down to ensure that all work is represented.  
+
+To learn more about what you can customize, see [About process customization and inherited processes](inheritance-process-model.md). 
 
 [!INCLUDE [temp](../_shared/process-prerequisites.md)] 
 
@@ -46,19 +45,17 @@ You can add a custom work item type when adding or editing a portfolio backlog, 
 
 <a id="add-portfolio-backlog">  </a>
 ### Add a portfolio backlog 
-
-0. From the  **Backlog levels** page, choose ![ ](../../_img/icons/blue-add-icon.png) **New top level portfolio backlog**.
+	
+0. From the  **Backlog levels** page, choose ![ ](../../_img/icons/blue-add-icon.png) **New top level portfolio backlog**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Web portal, Admin context, Process page, open Backlog levels](_img/process/process-backlog-levels-open.png) 
-	
-0. From the **Backlog levels** page, open the Add portfolio backlog dialog. 
-  
-	<img src="_img/process/process-new-portfolio-backlog.png" alt="Web portal, Admin context, Process page, select Process" style="border: 1px solid #C3C3C3;" /> 
+	> ![Web portal, Admin context, Process page, select Process](_img/process/process-new-portfolio-backlog.png) 
 
 0. Name the backlog level, select the backlog level color, and add the work item type  to associate with this level. Click Add. 
 
-	<img src="_img/process/process-add-portfolio-backlog-dialog.png" alt="Web portal, Add a portfolio backlog dialog, Add new work item type" style="border: 1px solid #C3C3C3;" /> 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Web portal, Add a portfolio backlog dialog, Add new work item type](_img/process/process-add-portfolio-backlog-dialog.png") 
 
 0. If you are associating only one work item type with the backlog, then click Save to save your changes. Otherwise, you can add more work item types as needed. 
 
@@ -111,12 +108,6 @@ Here, we've added the *Ticket* WIT which will be tracked along with tasks.
 
 ## Related articles  
 
-As you customize the backlog levels, all team projects that reference the inherited process that you're customizing will automatically update to reflect the changes you made to your inherited process. To view your changes, open the backlog page for the team project and refresh your web browser.  
-
-To customize a single team project, always start by [creating an inherited process and migrating the team project to that process](manage-process.md). Then, all the customizations that you make to the inherited process automatically appear for the team project you migrated.  
-
-Additional topics of interest:  
-
 - [Add a custom work item type](add-custom-wit.md)
 - [Customize a process](customize-process-field.md) 
 - [Backlogs, boards, and plans](../../work/backlogs/backlogs-boards-plans.md)    
@@ -124,29 +115,6 @@ Additional topics of interest:
 - [Organize your backlog, work with portfolio backlogs](../../work/backlogs/organize-backlog.md)
 
 
-### Fields added to WITs associated with a backlog level 
-
-When you add a field to a backlog level, the following fields are added to support select Agile tool features.  
-
-| Backlog level | Fields added | 
-|---------------|--------------|
-| Portfolio backlog | - Stack rank (Agile, CMMI)<br/>- Backlog Priority (Scrum) | 
-| Requirement backlog |  - Stack Rank, Story Points (Agile)<br/>- Stack Rank, Size (CMMI)<br/>- Backlog Priority, Effort (Scrum) |
-| Iteration backlog | - Activity, Remaining Work, Stack Rank (Agile)<br/>- Discipline, Remaining Work, Stack Rank (CMMI)<br/>- Activity, Remaining Work, Backlog Priority (Scrum) |
-
-The Stack Rank and Backlog Priority fields capture the relative priority of work items as they are reordered on a backlog or board.  
-
-The Story Points, Size, and Effort fields capture the relative work required to complete a WIT assigned to the Requirement backlog. This value is used to compute [velocity](../../report/dashboards/velocity-chart-data-store.md).  
-
-And, lastly, Remaining Work is used [Sprint burndown and capacity charts](../../work/scrum/define-sprints.md). 
-
-<!---
-###About Categories 
-The system defines 13 categories for use, and at least one WIT is assigned to each category. You can't add a WIT that already belongs to an existing category to a backlog.  
-
-The Bug category is a special category that is designed to allow teams to manage their bugs as requirements or tasks. To learn more, see [Show bugs on backlogs and boards](../../work/customize/show-bugs-on-backlog.md)
-
---> 
 
 
 

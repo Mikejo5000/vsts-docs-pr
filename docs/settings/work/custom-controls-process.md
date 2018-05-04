@@ -16,11 +16,12 @@ ms.date: 07/10/2018
 
 [!INCLUDE [temp](../../_shared/codex-agile.md)]
 
-With custom controls, you can add rich functionality to your work item forms. A custom control comes in four flavors, or contribution types. The first three in the following list appear on the web form layout for all inherited and customizable work item types (WITs):    
+With custom controls, you can add rich functionality to your work item forms. A custom control comes in four flavors, or contribution types. The following controls appear on the web form layout for all inherited and customizable work item types (WITs):    
 - Field-level contribution 
 - Group-level contribution 
 - Page-level contribution
-- Action-level contribution (appears in the context menu of the web form) 
+
+Action-level contribution controls, on the other hand, appear in the context menu of the web form.  
 
 You add all custom controls by installing its extension from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vsts). Or, you can [create your own custom control](../../extend/get-started/node.md). 
 
@@ -36,20 +37,40 @@ To add extensions or edit a process, you must be a member of the Project Collect
 [!INCLUDE [temp](../_shared/open-process-admin-context-ts.md)]
 
 [!INCLUDE [temp](../_shared/automatic-update-project.md)] 
- 
-[!INCLUDE [temp](../_shared/create-inherited-process.md)] 
 
 
-<a id="add-extension">  </a>
-## Add a Marketplace extension   
-
-Browse the Marketplace to determine what extension(s) you want to add. To install an extension, see [Install free extensions](../../marketplace/install-vsts-extension.md).
+## Review installed Marketplace extensions   
 
 From the **Settings** context, **Extensions** hub, you can view the extensions that are already installed. You may need to click ![Refresh](_img/process/custom-controls-refresh_extensions.png) to refresh the page to show newly installed extensions.  
 
 <img src="_img/process/custom-controls-extensions-admin-page-ts.png" alt="Account settings, Extensions page, VSTS" style="border: 1px solid #C3C3C3;" />  
 
+To learn more about extensions, see [Install free extensions](../../marketplace/install-vsts-extension.md).
 
+<a id="add-extension">  </a>
+## Add a Marketplace extension   
+
+You can [browse the Marketplace](https://marketplace.visualstudio.com/search?term=control%20group%20tab%20page&target=vsts&category=Plan%20and%20track&hosting=cloud&sortBy=Relevance) to determine what extension(s) you want to add.
+
+0. To add an extension to a work item type, choose your inherited process, the WIT, and then choose **Get extensions**.
+ 
+	> [!div class="mx-imgBorder"]  
+	> ![Process, WIT, Bug, Layout, Get extensions](_img/process/cprocess-choose-extensions.png) 
+
+0. Select the extension you want to add. Here we choose the Work item checklist.
+
+0. Select the organization/account you want to add it to and choose **Install**.  
+
+	> [!div class="mx-imgBorder"]  
+	> ![Visual Studio Markeplace, install extension](_img/process/cprocess-install-extension.png) 
+
+	> [!IMPORTANT]  
+	> Extensions you add are added to all WITs, processes, and projects. 
+
+0. Return to the process and WIT and verify the location of the extension is where you want it. Look for it at the bottom of the middle column and drag it to where you want it on the form. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Group extension on Bug work item form](_img/process/cpfield-add-checklist-extension.png) 
 
 
 <a id="add-field-control"></a>
@@ -67,7 +88,7 @@ From the **Settings** context, **Extensions** hub, you can view the extensions t
 	> ![Process, WIT, Bug, Layout, New custom control](_img/process/cpcontrols-add-custom-control.png) 
 
 	> [!NOTE]    
-	>If you don't see the **Add custom control** option, then you haven't installed a field-level extension. Or, you may need to refresh your browser to cause your browser to register any new extensions that have been recently installed. 
+	> If you don't see the **Add custom control** option, then you haven't installed a field-level extension. Or, you may need to refresh your browser to cause your browser to register any new extensions that have been recently installed. 
 	
 0. Choose the field-level control you want from the menu of options. 
 
@@ -76,13 +97,13 @@ From the **Settings** context, **Extensions** hub, you can view the extensions t
 	> [!div class="mx-imgBorder"]  
 	> ![Add a  custom control dialog, Definition tab](_img/process/custom-control-add-field-level-control-to-bug.png) 
 
-0. Click the Options tab and fill out the dialog box. The options you need to specify will depend on the extension you've selected.   
+0. Click the **Options** tab and fill out the dialog box. The options you need to specify will depend on the extension you've selected.   
 
 	For example, here we specify the custom field, Triaged, and indicate the toggle labels to appear on the form.   
 
 	<img src="_img/process/custom-control-add-field-level-control-to-bug-options-tab.png" alt="Custom control dialog" style="border: 2px solid #C3C3C3;" />
 
-0. (Optional) Open the Layout tab and specify the label for the field. 
+0. (Optional) Open the **Layout** tab and specify the label for the field. 
  
 	Fill in any additional required fields. Review the extension description for guidance. 
 

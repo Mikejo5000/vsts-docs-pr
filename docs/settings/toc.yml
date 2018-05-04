@@ -89,7 +89,7 @@
     - name: Work Item Types
       href: https://docs.microsoft.com/en-us/rest/api/vsts/processdefinitions/work%20item%20types
     - name: Add a custom control to a form
-      href: ../../extend/develop/custom-control.md
+      href: ../extend/develop/custom-control.md
 - name: Resources
   items:
   - name: Account Management

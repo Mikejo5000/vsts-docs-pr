@@ -20,7 +20,8 @@ You use different work item types (WITs) to plan and track different types of wo
 
 For example, you may want to capture customer issues in a custom Ticket WIT.   
 
-<img src="_img/process/custom-wit-new-ticket-form.png" alt="Custom Ticket work item form" style="border: 1px solid #C3C3C3;" /> 
+> [!div class="mx-imgBorder"]  
+> ![Custom Ticket work item form](_img/process/custom-wit-new-ticket-form.png) 
 
 [!INCLUDE [temp](../_shared/process-prerequisites.md)] 
 
@@ -45,8 +46,8 @@ For example, you may want to capture customer issues in a custom Ticket WIT.
 
 0.   From the Layout page, you can add fields, groups, or pages to specify the form and fields you want to track. For details, see [Customize a field](customize-process-field.md) or [Customize a web form for a process](customize-process-form.md).    
 
-	<img src="_img/process/cpwit-new-ticket-define.png" alt="New WIT, customize layout" style="border: 1px solid #C3C3C3;" /> 	
-
+	> [!div class="mx-imgBorder"]  
+	> ![New WIT, customize layout](_img/process/cpwit-new-ticket-define.png)	
 0. Open the States page to view the default workflow states. Optionally, [customize the workflow states](customize-process-workflow.md).  
 <a id="backlog">  </a> 
 
@@ -74,9 +75,9 @@ You can disable a custom WIT which will prevent users from being able to add new
 
 You may want to disable a custom WIT until you have defined all the fields, workflow, and form layout that you have planned.
 
-To disable a custom WIT, choose Disable from the WIT context menu. 
+To disable a custom WIT, choose **Disable** from the WIT context menu. 
 
-To re-enable the WIT, choose Enable from the WIT context menu. 
+To re-enable the WIT, choose **Enable** from the WIT context menu. 
 
 > [!NOTE]    
 >Disabling a WIT will remove the work item type from the New drop down and add experiences. Creating a work item of that WIT will also be blocked via REST APIs.  
@@ -89,7 +90,7 @@ To re-enable the WIT, choose Enable from the WIT context menu.
 > [!IMPORTANT]  
 > Destroying a WIT will delete all work items and data associated with that WIT, including historical values. Once destroyed, you can't recover the data. 
 
-1. To completely remove a custom WIT and all work items based on that WIT, click the Destroy option from the WIT context menu.
+1. To completely remove a custom WIT and all work items based on that WIT, choose **Destroy** from the WIT context menu.
 
 	To destroy a WIT, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to edit a specific process](../../security/set-permissions-access-work-tracking.md#process-permissions). 
 

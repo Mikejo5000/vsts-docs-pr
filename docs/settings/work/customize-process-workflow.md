@@ -57,7 +57,8 @@ States you add will appear in the pick list for the States field shown in work i
 
 	Here we show the state drop down field with Triaged selected. 
 
-	<img src="_img/process/cpw-added-triage-state-in-form.png" alt="Bug form, Triaged state added" style="border: 1px solid #C3C3C3;" /> 
+	> [!div class="mx-imgBorder"]  
+	> ![Bug form, Triaged state added](_img/process/cpw-added-triage-state-in-form.png) 
 
 0. Remember, when you add a state to a WIT which is associated with a backlog level, each team that uses the Kanban board will need to [update their column settings](../../work/kanban/add-columns.md).
 
@@ -66,7 +67,7 @@ States you add will appear in the pick list for the States field shown in work i
 
 You can edit the category or the color of a custom state. However, you can't change the name of the custom state. 
 
-0. Choose Edit from the &hellip; context menu for the state you want to modify.  
+0. Choose **Edit** from the &hellip; context menu for the state you want to modify.  
   
 	<img src="_img/process/cpworkflow-edit-state.png" alt="Bug WIT, Edit custom state" style="border: 1px solid #C3C3C3;" /> 
 

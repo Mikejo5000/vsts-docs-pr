@@ -89,21 +89,6 @@ You delete or disable the rule from the actions menu of the rule.
 
 <img src="_img/process/custom-rule-delete-disable-rule.png" alt="Delete or disable a rule" style="border: 1px solid #C3C3C3;" />  
 
-<!---
-<a id="system-rules">  </a>
-## System rules
-
-Each work item type&mdash;bug, task, user story, etc.&mdash;has several system rules already defined. Some are simple, like making the Title field required or setting a default for the Value Area field. In addition, a number of system rules define actions to take when a workflow state changes. 
-
-For example, several rules exist to copy the current user identity under the following conditions: 
-- When a work item is modified, copy the user identity to the Changed By field  
-- When a work item is modified, copy the user identity to the Changed By field
-- When the workflow state changes to Closed or Done, copy the user identity to the Closed By field. 
- 
-> [!IMPORTANT]  
-> Predefined system rules will take precedent over any custom rule that you define which would overwrite it.  
-
--->
 
 ## Related articles   
 
