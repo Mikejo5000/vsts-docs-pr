@@ -8,6 +8,7 @@ ms.assetid: D1B44480-F88B-4F35-927A-11ADFBCBAA23
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 ms.topic: overview
+monikerRange: '>= tfs-2013'
 ms.date: 03/20/2018
 ---
 
@@ -42,7 +43,7 @@ Each team project provides a number of shared resources that support all teams a
 > [!div class="mx-tdCol2BreakAll"]  
 > |Shared queries | Tags | 
 > |-------------|----------| 
-> |Open shared queries or create your own<br/>query using the [query editor](../track/using-queries.md) to list work items<br/>or show hierarchical or dependent items.<br/![Shared queries](_img/customize-work-shared-queries-min.png) |[Add tags to work items](../track/add-tags-to-work-items.md) to filter backlogs and queries, or list items by tags<br/>![Add tags to filter backlogs, boards, and queries](_img/alm-feature-tags.png) |   
+> |Open shared queries or create your own<br/>query using the [query editor](../track/using-queries.md) to list work items<br/>or show hierarchical or dependent items.<br/>![Shared queries](_img/customize-work-shared-queries-min.png) |[Add tags to work items](../track/add-tags-to-work-items.md) to filter backlogs and queries, or list items by tags<br/>![Add tags to filter backlogs, boards, and queries](_img/alm-feature-tags.png) |   
  
 
 <a id="process-models"></a>
