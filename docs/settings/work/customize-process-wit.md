@@ -53,11 +53,18 @@ For example, you may want to capture customer issues in a custom Ticket WIT.
 
 0. Optional. To add the WIT to a backlog, see [Customize your backlogs or boards for a process](customize-process-backlogs-boards.md). By default, custom WITs aren't added to any backlog. To learn more about different backlog levels, see [Backlogs, boards, and plans](../../work/backlogs-boards-plans.md).   
 
-0. Verify the custom work item type appears as expected. Either navigate to the backlog or board to which you added the custom WIT, or open the Work hub menu and open a new work item of the type you added.  
+0. Verify the custom work item type appears as expected. Open the **Work>Work Items** page (user context) and choose **New Work Item** and select the WIT you customized. Here we choose **Ticket**. 
 
-	<img src="_img/process/cpwit-new-custom-work-item-ticket.png" alt="stories Kanban board, add new custom ticket work item" style="border: 1px solid #C3C3C3;" /> 
+	> [!div class="mx-imgBorder"]  
+	> ![Work>Work Items page, add new work item, Ticket](_img/process/add-custom-wit-verify-ticket.png) 
 
 	If you don't see the custom WIT, refresh your browser to make sure it registers all the custom changes you've made. 
+
+0.  Verify that the field you added appears on the form. Note that the ![](../../_img/icons/required-icon.png) (exclamation mark) icon indicates the field is required.  
+
+	> [!div class="mx-imgBorder"]  
+	> ![Ticket form, Customer Ticket field added to Customer Focus group](_img/process/add-custom-field-verify-ticket-form.png) 
+
 
 <a id="overview">  </a>
 ## Change description, icon or color
@@ -80,7 +87,7 @@ To disable a custom WIT, choose **Disable** from the WIT context menu.
 To re-enable the WIT, choose **Enable** from the WIT context menu. 
 
 > [!NOTE]    
->Disabling a WIT will remove the work item type from the New drop down and add experiences. Creating a work item of that WIT will also be blocked via REST APIs.  
+> Disabling a WIT will remove the work item type from the New drop down and add experiences. Creating a work item of that WIT will also be blocked via REST APIs.  
 >
 >No changes are made to existing work items of that type. You can update or delete them and they will continue to appear on backlogs and boards. Also, you can change the work item type of disabled WITs to an enabled type, but you can't change the type to a disabled WIT.
 

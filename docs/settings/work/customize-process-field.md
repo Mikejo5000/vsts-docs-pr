@@ -18,13 +18,28 @@ ms.date: 07/10/2018
 
 Each ![locked icon](_img/process/locked-icon.png) system process&mdash;[Agile](../../work/work-items/guidance/agile-process.md), [Scrum](../../work/work-items/guidance/scrum-process.md), or [CMMI](../../work/work-items/guidance/cmmi-process.md)&mdash;contains 100 or more work item fields. You can add a custom field to support tracking additional data requirements or modify select attributes of an ![inherited icon](_img/process/inherited-icon.png) inherited field. For example, you can add a custom field and pick list or change the label that appears in the work item form for an inherited field.  
 
-For a list of all fields defined for your account&mdash;which includes all fields defined for system and inherited processes&mdash;see [Review fields](#review-fields).  
+For a list of all fields defined for your account&mdash;which includes all fields defined for system and inherited processes&mdash;see [Review fields](#review-fields). 
+
+Once you've added a custom field, you can create [queries](../../work/track/using-queries.md) or [charts](../../report/dashboards/charts.md) to track data related to it.  
 
 [!INCLUDE [temp](../_shared/process-prerequisites.md)] 
 
 [!INCLUDE [temp](../_shared/open-process-admin-context-ts.md)]
  
 [!INCLUDE [temp](../_shared/automatic-update-project.md)] 
+
+
+
+<a id="review-fields"></a>
+## Review fields 
+
+To review the list of fields defined for all processes and the WITs which reference them, click the **Process** hub and then the **Fields** page.  
+
+Fields listed correspond to all those defined for the account. For descriptions and usage of each field, see [Work item field index](../../work/work-items/guidance/work-item-field.md).  
+
+> [!div class="mx-imgBorder"]  
+> ![Make a copy of a selected inherited process](_img/process/list-fields.png) 
+
 
 <a id="open-process-wit">  </a>
 <a id="add-field">  </a>
@@ -154,9 +169,16 @@ Here we add the Customer Ticket field to the User Story WIT.
 
 ![Add existing field to a User Story](_img/process/cpfield-add-existing-field.png)
 
-
-
 Optionally, specify the [Required/Default values](#options) and [placement within the form](#layout) for the field.  
+
+
+<a id="rename-field">  </a>
+## Relabel a field   
+Renaming a field or changing the field type aren't supported actions. However, you can change the label that appears for a field on the work item form from the Layout tab. When selecting the field in a query you need to select the field name and not the field label. 
+
+Here, we relabel the Customer Ticket field to Ticket Number.   
+ 
+![Layout tab, Relabel a field](_img/process/cpfield-relabel-customer-ticket.png) 
 
 <a id="show-hide-remove-field">  </a>
 ## Show, hide, or remove a field   
@@ -168,12 +190,13 @@ You can choose to show or hide an inherited field or a custom control from appea
 >
 >Data defined for a custom field is not deleted when you remove it from the form. To delete a custom field from a project collection, see [Delete a field](#delete-field).   
 
+
 <a id="show-hide-field">  </a>
 ### Hide an inherited field or custom control 
 
 0. Open the context menu for the inherited field and choose Hide from layout.
 
-	<img src="_img/process/cpfield-hide-inherited-field.png" alt="Bug layout, inherited field, open context menu, choose Hide from layout" style="border: 1px solid #C3C3C3;" />  
+	![Bug layout, inherited field, open context menu, choose Hide from layout](_img/process/cpfield-hide-inherited-field.png) 
 
 0. To add a hidden field to the form, choose **Show on layout**.  
 
@@ -181,7 +204,7 @@ You can choose to show or hide an inherited field or a custom control from appea
 ### Remove a custom field from a form
 1. Choose Remove from the context menu of the field you want to remove. 
 
-	<img src="_img/process/cpfield-remove-customer-ticket.png" alt="Remove field from bug work item type" style="border: 1px solid #C3C3C3;" />    
+	![Remove field from bug work item type](_img/process/cpfield-remove-customer-ticket.png)  
 
 2. Confirm that you want to remove the field.  
 
@@ -190,24 +213,31 @@ You can choose to show or hide an inherited field or a custom control from appea
 0. To add a custom field that's been removed, choose **New field** and select **Use an existing field**.  
 
 
-<a id="review-fields"></a>
-## Review fields 
 
-To review the list of fields defined for all processes and the WITs which reference them, click the **Process** hub and then the **Fields** page.  
-
-Fields listed correspond to all those defined for the account. For descriptions and usage of each field, see [Work item field index](../../work/work-items/guidance/work-item-field.md).  
+<a id="revert">  </a>
+## Revert field to preset defaults     
+If you've made changes to an inherited field, and now want to discard those changes, you can do that by choosing the **Revert** option for the field from the Layout page of the modified WIT.  
 
 > [!div class="mx-imgBorder"]  
-> ![Make a copy of a selected inherited process](_img/process/list-fields.png) 
+> ![Layout page, Field context menu, choose Revert option](_img/process/cpfield-revert.png)
 
+
+<a id="delete-field">  </a>
+## Delete a field     
+Deleting a field will delete all data associated with that field, including historical values. Once deleted, you can't recover the data. 
+
+1. You delete the field from the **All processes>Fields** page.  
+
+	![Delete field](_img/process/cpfield-delete-field.png) 
+
+	To delete fields, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to edit a specific process](../../security/set-permissions-access-work-tracking.md#process-permissions). 
+
+2. To complete the delete operation, you must type the name of the field as shown. 
+
+	![Delete field, confirmation dialog](_img/process/cpfield-delete-confirmation.png) 
+ 
 
 ## Related articles  
-
-Once you've added a custom field, you can create [queries](../../work/track/using-queries.md) or [charts](../../report/dashboards/charts.md) to track data related to it. 
-
-As you add custom fields, keep in mind that all projects that reference the inherited process that you're customizing will automatically update to contain the new fields. Remember to refresh your web browser to view your latest changes. 
-
-See also:  
 
 - [Add or modify a custom work item type](customize-process-wit.md)
 - [Customize the form](customize-process-form.md)
@@ -219,39 +249,7 @@ If you are working with test plans or test cases, see these topics:
 - [Create a test plan](../../manual-test/getting-started/create-a-test-plan.md)  
 - [Create manual test cases](../../manual-test/getting-started/create-test-cases.md)   
 
-
-<!---
-<a id="revert">  </a>
-### Revert field to preset defaults     
-If you've made changes to an inherited field, and now want to discard those changes, you can do that by choosing the revert option for the field from the Layout page of the modified WIT.  
--->
-
-<a id="delete-field">  </a>
-### Delete a field     
-Deleting a field will delete all data associated with that field, including historical values. Once deleted, you can't recover the data. 
-
-1. You delete the field from a collection from the **Fields** page for all processes.  
-
-	<img src="_img/process/cpfield-delete-field.png" alt="Delete field" style="border: 1px solid #C3C3C3;" />  
-
-	To delete fields, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to edit a specific process](../../security/set-permissions-access-work-tracking.md#process-permissions). 
-
-2. To complete the delete operation, you must type the name of the field as shown. 
-
-	<img src="_img/process/cpfield-delete-confirmation.png" alt="Delete field, confirmation dialog" style="border: 1px solid #C3C3C3;" />  
  
-<a id="rename-field">  </a>
-### Can a field be renamed or its field type changed?   
-Renaming a field or changing the field type aren't supported actions.  
-
-However, you can change the label that appears for a field on the work item form from the Layout tab. When selecting the field in a query you need to select the field name and not the field label. 
-
-Here, we relabel the Customer Ticket field to Ticket Number.   
- 
-<img src="_img/process/cpfield-relabel-customer-ticket.png" alt="Layout tab, Relabel a field" style="border: 2px solid #C3C3C3;" />
-
-
-[!INCLUDE [temp](../../work/_shared/field-reference.md)]  
 
 <!--- 
 Commenting this out as it is in the process of changing 

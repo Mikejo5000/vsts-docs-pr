@@ -55,7 +55,7 @@ To learn more about what you can customize, see [About process customization and
  
 	<img src="_img/process/weblayout-system-controls-details-page.png" alt="WIT header details" style="border: 1px solid #C3C3C3;" /> 
 
-0. Name the field and select the field type from one of the supported data types. Field names must be unique and no more than 128 characters. For additional restrictions, see [What is a field? How are field names used?](customize-process-field.md#field-reference). Optionally, add a description.  
+0. Name the field and select the field type from one of the supported data types. Field names must be unique and no more than 128 characters. For additional restrictions, see [What is a field? How are field names used?](inheritance-process-model.md#field-reference). Optionally, add a description.  
 	
 	Here we add an Integer field labeled Customer Ticket. 
 

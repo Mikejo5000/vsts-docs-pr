@@ -82,6 +82,13 @@ The following pick lists are configured through the user interface and not custo
 
 Pick lists associated with person-name fields are managed based on the users you add to a [team project or team](../../accounts/add-team-members-vs.md).   
 
+
+<a id="rename-field">  </a>
+### Can a field be renamed or its field type changed?   
+Renaming a field or changing the field type aren't supported actions.  
+
+However, you can change the label that appears for a field on the work item form from the Layout tab. When selecting the field in a query you need to select the field name and not the field label. 
+
 [!INCLUDE [temp](../_shared/field-reference.md)] 
 
 [!INCLUDE [temp](../_shared/fields-become-invalid-after-customization.md)] 
@@ -231,7 +238,7 @@ For a list of limits placed on the number of fields, WITs, backlog levels, and o
 > |-------------|----------|---------|
 > |- [Add a custom field](customize-process-field.md)<br/>- [Add a person-name or Identity field](customize-process-field.md#identity)<br/>- [Add a rich-text field](customize-process-field.md#html)<br/>- [Add a checkbox (Boolean) field](customize-process-field.md#boolean-field)<br/>- [Add rules to a field](custom-rules.md)<br/>- [Change a field label](customize-process-field.md)<br/>- [Remove a field from a form](customize-process-field.md)<br/>- [Add a custom control field](custom-controls-process.md)<br/>- [Delete a field](customize-process-field.md#delete-field)<br/>- [Review fields](customize-process-field.md#review-fields)|- [Area paths](../set-area-paths.md)<br/>- [iteration paths](../set-iteration-paths-sprints.md)<br/>- [Person-name field (add team members)](../../accounts/add-team-members-vs.md)<br/>- [State or Reason fields](customize-process-workflow.md)<br/>- [Add a custom pick list](customize-process-form.md)|- [Add a custom field](customize-process-field.md)<br/>- [Add a custom WIT](customize-process-wit.md)<br/>- [Specify the WIT color](customize-process-wit.md)<br/>- [Customize the workflow (States)](customize-process-workflow.md)<br/>- [Customize the WIT form](customize-process-form.md)<br/>- [Add a custom control](custom-controls-process.md)| 
 
-Choose your inherited process, the work item type and then add and edit fields from the **Layout** page. Customizations are subject to the guidelines and limitations outlined under [What is a field?](customize-process-field.md#field-reference).
+Choose your inherited process, the work item type and then add and edit fields from the **Layout** page. Customizations are subject to the guidelines and limitations outlined under [What is a field?](inheritance-process-model.md#field-reference).
 
 > [!div class="mx-tdBreakAll"]  
 > |![Inherited field](_img/process/inherited-icon.png) Inherited fields |Custom fields |&nbsp;&nbsp;&nbsp;| 

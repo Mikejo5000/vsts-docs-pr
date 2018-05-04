@@ -45,7 +45,7 @@ You always add a field to an existing work item type. If you want to add a field
 	> [!div class="mx-imgBorder"]  
 	> ![Process Work Item Types page, Add a field to a WIT](_img/field/bug-new-field.png) 
 
-0. Name the field and select the field type from one of the supported data types. Field names must be unique and no more than 128 characters. For additional restrictions, see [What is a field? How are field names used?](customize-process-field.md#field-reference). Optionally, add a description.  
+0. Name the field and select the field type from one of the supported data types. Field names must be unique and no more than 128 characters. For additional restrictions, see [What is a field? How are field names used?](inheritance-process-model.md#field-reference). Optionally, add a description.  
 	
 	Here we add an Integer field labeled Customer Ticket. 
 
