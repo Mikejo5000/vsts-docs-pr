@@ -34,7 +34,7 @@ For a list of all fields defined for your account&mdash;which includes all field
 
 You always add a field to an existing work item type. If you want to add a field to a custom work item type, then [add that first](add-custom-wit.md).
 
-0. From the **Process** page of the selected inheritance process, choose the work item type you want to add the custom field to. 
+0. From the **Process** page of the selected  inherited process, choose the work item type you want to add the custom field to. 
 
 	Here we choose the Bug WIT. Note the breadcrumb links that allow you to move back to the **All Processes** and **MyAgile** process page. 
 
@@ -52,9 +52,8 @@ You always add a field to an existing work item type. If you want to add a field
 
     <img src="_img/process/cpfield-add-field-to-bug-type-integer-up1.png" alt="Add a field to Bug, choose field type" style="border: 1px solid #C3C3C3;" /> 
 
-	Additional data types you can add include: [Pick list](add-custom-field.md#pick-list), [Identity](add-custom-field.md#identity), [Rich-text, HTML](add-custom-field.md#html),[Checkbox](add-custom-field.md#boolean-field). 
-- 
-	<a id="options">  </a>
+	Additional data types you can add include: [Pick list](add-custom-field.md#pick-list), [Identity](add-custom-field.md#identity), [Rich-text, HTML](add-custom-field.md#html),[Checkbox](add-custom-field.md#boolean-field).  
+	<a id="options">  </a>  
 0.	(Optional) On the **Options** tab, indicate if the field is required and specify a default value. Or leave these blank. 
 
 	<img src="_img/process/cpfield-bug-customer-ticket-options.png" alt="Add a field to Use story, specify options" style="border: 1px solid #C3C3C3;" />  
@@ -68,18 +67,17 @@ You always add a field to an existing work item type. If you want to add a field
 
 	<img src="_img/process/cpfield-customer-ticket-layout.png" alt="Add a field to Use story, specify layout" style="border: 1px solid #C3C3C3;" />  
 
-	> [!TIP]    
-	> Once you've added a field, you can drag-and-drop it within a page to relocate it on the form. If you have several fields you want to add to a custom page or group, then you may want to [add those elements first](customize-process-form.md) and then add your fields. 
-
 0.	Click **Add field** to complete adding the field. If you haven't specified it's layout location, it will be added to the first group of fields on the layout form.  
 
+	> [!TIP]    
+	> Once you've added a field, you can drag-and-drop it within a page to relocate it on the form. If you have several fields you want to add to a custom page or group, then you may want to [add those elements first](customize-process-form.md) and then add your fields. 
 
 <a id="verify">  </a>
 ## Verify the customization you made 
 
-We recommend that you create a test project and apply your customized inheritance process to it to verify the changes you've made. 
+We recommend that you create a test project and apply your customized  inherited process to it to verify the changes you've made. 
 
-0. Open the &hellip; context menu for the process you want to use and choose **New team project**.  
+0. Open the **All processes** page, and choose the &hellip; context menu for the process you want to use, and then select **New team project**.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Create a team project from the selected process](_img/process/add-new-team-project.png) 
@@ -107,10 +105,9 @@ We recommend that you create a test project and apply your customized inheritanc
 > Or
 > [Add or manage fields](customize-process-wit.md)
 
-
 ## Related articles  
 
-- [Hide an inherited field or custom control](add-custom-field.md#show-hide-field) 
-- [Remove a custom field from a form](add-custom-field.md#remove-field) 
-- [Delete a field](add-custom-field.md#delete-field)   
+- [Add and manage fields for an inherited process](customize-process-field.md#show-hide-field) 
+- [Customize a project using an inherited process](customize-process.md)
+- [Create and manage inherited processes](manage-process.md)
 

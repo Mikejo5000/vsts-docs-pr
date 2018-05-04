@@ -1,5 +1,5 @@
 ---
-title: About process customization and inheritance processes 
+title: About process customization and  inherited processes 
 titleSuffix: Codex Agile
 description: Describes what an inherited process is and how you use it to customize the work tracking system and Agile tools for a Codex Agile project 
 ms.technology: devops-agile
@@ -15,11 +15,11 @@ ms.date: 03/20/2018
 
 
 
-# About process customization and inheritance processes  
+# About process customization and  inherited processes  
 
 [!INCLUDE [temp](../../_shared/codex-agile.md)]
 
-<a id="inheritance"> </a> 
+<a id=" inherited "> </a> 
 
 The Inheritance process model provides support for customizing work tracking objects and Agile tools for a team project through the user interface. Team projects inherit the customizations made to a process.
 
@@ -66,6 +66,15 @@ Choose your inherited process, the work item type and then add and edit fields f
 > |![Inherited field](_img/process/inherited-icon.png) Inherited fields |Custom fields |&nbsp;&nbsp;&nbsp;| 
 > |-------------|----------|---------| 
 > |- [Change the field label](customize-process-field.md#rename-field)<br/>- [Show/Hide field on form](customize-process-field.md#show-hide-field) |- [Add a custom field](customize-process-field.md#add-field)<br/>- [Add pick list (drop-down menu)](customize-process-field.md#pick-list)<br/>- [Add person-name/Identity](customize-process-field.md#identity)<br/>- [Add a rich-text (HTML) field](customize-process-field.md#html) <br/>- [Add a checkbox (Boolean) field](customize-process-field.md#boolean-field)<br/>- [Add a custom control](custom-controls-process.md) |- [Add custom rules to a field](custom-rules.md)<br/>- [Change the field label](customize-process-field.md#rename-field)<br/>- [Set Required/Default options](customize-process-field.md#options)<br/>- [Move the field within the layout](customize-process-form.md#move-field)<br/>- [Remove field from form](customize-process-field.md#remove-field)<br/>- [Delete field](customize-process-field.md#delete-field) | 
+
+
+
+> [!NOTE]  
+> When you change a project to use an inherited process, you may find one or more Agile tools or work items appear in an invalid state. For example: 
+> 
+> - If you make a field required, work items with that field undefined will show an error message. You'll need to resolve the errors to make additional changes and save the work item. 
+> - If you add or remove/hide workflow states of a WIT that appears on the Kanban board, you'll need to update the Kanban board column configurations for all teams defined in the team project. 
+
 
 
 

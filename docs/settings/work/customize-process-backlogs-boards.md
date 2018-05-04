@@ -1,5 +1,5 @@
 ---
-title: Customize backlogs and boards for an inheritance process
+title: Customize backlogs and boards for an  inherited process
 titleSuffix: Codex Agile 
 description: Modify the work item types that appear on backlogs and boards, add portfolio backlogs for the Inheritance process model  for a Codex project
 ms.technology: devops-agile

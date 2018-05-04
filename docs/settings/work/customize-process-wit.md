@@ -1,5 +1,5 @@
 ---
-title: Customize a work item type for an inheritance process
+title: Customize a work item type for an inherited process
 titleSuffix: Codex Agile
 description: Customize a process by adding or modifying a work item type for a Codex project 
 ms.technology: devops-agile
@@ -12,7 +12,7 @@ ms.topic: conceptual
 ms.date: 03/20/2018
 ---
 
-# Customize a work item type (Inheritance process model)    
+# Add and manage work item types      
 
 [!INCLUDE [temp](../../_shared/codex-agile.md)]
 

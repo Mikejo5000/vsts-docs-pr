@@ -10,7 +10,7 @@ After you've verified your customizations, you can now apply the process to your
 
 0. Open the &hellip; context menu for the process and choose the **Change team projects**&hellip; option. 
 
-	Here we open the menu for the Agile system process. 
+	Here we open the menu for the MYAgile inherited process. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Agile process context menu, Choose Change team projects to use MyAgile](/vsts/settings/work/_img/process/add-custom-change-process.png) 
@@ -18,7 +18,11 @@ After you've verified your customizations, you can now apply the process to your
 0. Check the checkbox of those projects you want to change to use the Agile process. The system lists only those team projects that are valid for the current process.	
 
 	Here we choose to use the Agile process for the Fabrikam Fiber A and Fabrikam Fiber projects.  Only those projects created from the Agile process or one that inherits from Agile will appear under the Available projects column. 
- 
-	<img src="/vsts/settings/work/_img/process/customize-change-process-dialog.png" alt="Change process to a system process dialog" style="border: 1px solid #C3C3C3;" />  
+  
+	> [!div class="mx-imgBorder"]  
+	> ![Change process to an inherited process dialog](/vsts/settings/work/_img/process/customize-change-process-dialog.png) 
 
 0. After  you've confirmed that the projects you want to change are correct, choose **Ok**. 
+
+	> [!TIP]    
+	> To customize a single project, always start by [creating an inherited process and migrating the team project to that process](manage-process.md). Then, all the customizations that you make to the inherited process automatically appear for the team project you migrated.

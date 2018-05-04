@@ -1,7 +1,7 @@
 ---
 title: Customize a Codex project  
 titleSuffix: Codex Agile
-description: Your guide to configuring and customizing work tracking processes for a Codex project by customizing an inheritance process
+description: Your guide to configuring and customizing work tracking processes for a Codex project by customizing an  inherited process
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 31CA1DCB-8E3E-4B9E-A64A-D47DF23490A3   
@@ -12,73 +12,41 @@ ms.topic: tutorial
 ms.date: 03/20/2018
 ---
 
-# Customize a project using an inheritance process
+# Customize a project using an inherited process
 
 [!INCLUDE [temp](../../_shared/codex-agile.md)]
 
-Your process provides the building blocks for tracking work. You primarily customize a process by adding or modifying a work item type (WIT) defined for that process.  
+Each Codex project is based on a process that defines the building blocks for tracking work. The first project you create uses one of the default processes&mdash;[Agile](/vsts/work/work-items/guidance/agile-process), [Scrum](/vsts/work/work-items/guidance/scrum-process), or [CMMI](/vsts/work/work-items/guidance/cmmi-proces). 
 
 You can only customize inherited processes.  Any changes you make to the inherited process will automatically appear in the Codex projects that use that process. 
 
-For example, the following image shows the work item form layout for the Bug WIT. From this page, you can add fields, groups, pages, and custom controls. To modify the workflow, you click **States**.
-
-<img src="_img/process/cprocess-intro.png" alt="Admin context, Process, Work item types, bug type, layout tab" style="border: 1px solid #C3C3C3;" /> 
-
-The general sequence for customizing a project is to customize an inheritance process, verify your customizations, and then change the process of the project(s) to use that process. 
+The general sequence for customizing a project is to customize an inherited process, verify your customizations, and then change the process of the project(s) to use that process. 
 
 [![Create an inherited process](_img/process/customize-work-phase2-step1.png)](manage-process.md#create-inherited-process)[![Customize the inherited process](_img/process/customize-work-phase2-step2.png)](customize-process.md)[![Apply inherited process to team project(s)](_img/process/customize-work-phase2-step3.png)](manage-process.md#migrate)![Refresh and verify changes](_img/process/customize-work-phase2-step4.png)  
 
+You primarily customize a process by adding or modifying a work item type (WIT) defined for that process.  
 
-In this topic you'll learn:  
+Learn how to perform these tasks:  
 
 > [!div class="checklist"] 
-> * How to start customizing from the work item form
-> * How to open the **Settings>Process** hub
-> * Create an inheritance process to customize   
+> * Open the **Settings>Process** hub
+> * Create an  inherited process to customize   
 > * Add or modify a field 
 > * Add or modify a rule for a work item type 
 > * Add or modify work item types 
 > * Modify the workflow of a work item type 
 > * Add or modify a custom control   
 > * Add an extension to a work item type
-> * Verify the customization you made  
+> * Verify the customizations you made  
 > * Change the process used by a team project 
  
 
 [!INCLUDE [temp](../_shared/process-prerequisites.md)] 
-
-
-<a id="start-customizing">  </a>
-## Start customizing  
-The easiest way to start customizing a process is to start from the work item of the type you want to customize. 
-
-0. From the web portal, open the WIT you want to customize, open the context menu, and choose the Customize. 
-
-	<img src="_img/process/cprocess-web-form-user-story-choose-customize.png" alt="Web portal, web form, open context menu, choose Customizee" style="border: 1px solid #C3C3C3;" />  
-
-	- If the project already uses an inherited process, then the **Layout** page for the corresponding WIT will open. 
-
-		For example, the MyAgile process, User Story WIT, Layout page appears.   
-
-		<img src="_img/process/cprocess-myagile-user-story-layout.png" alt="Web portal, web form, open context menu, choose Customize" style="border: 1px solid #C3C3C3;" />  
-
-		> [!NOTE]    
-		>The **Add custom control** option only appears when [qualifying extensions have been added from the Marketplace](custom-controls-process.md). 
-
-	- If the project uses a system process, but a valid inherited process has been defined, then you have the option to select which inherited process you want the project to use. 
-
-	 	<img src="_img/process/cprocess-choose-inherited-process.png" alt="Web portal, Choose process dialoge" style="border: 1px solid #C3C3C3;" /> 
-
-		Upon choosing, the Layout page for the corresponding process and WIT opens.
-
-	- If the project uses a system process, and no valid inherited process have been defined, then the system will automatically create an inherited process, labeling it *AccountName_ParentProcessName*&mdash;for example, *fabrikam Agile*&mdash;and automatically update the project to use the process. You can later [rename the process](manage-process.md#process-naming).  
-
-		After which, the Layout page for the corresponding process and WIT opens.
-  
-0. From the Layout page, you can customize the WIT. Review the next section for a summary of all the customizations you can make. 
-1. 
+ 
 <a id="open-process-wit">  </a>
 ## Open Settings>Process hub
+
+You start customizing a process from the admin context. 
 
 [!INCLUDE [temp](../_shared/open-process-admin-context-ts.md)]
 
@@ -88,54 +56,82 @@ The easiest way to start customizing a process is to start from the work item of
 
 ## Add or modify a field 
 
-Choose your inherited process, the work item type and then add and edit fields from the **Layout** page. You can make a few customizations to inherited fields. 
- Customizations are subject to the guidelines and limitations outlined under [What is a field?](inheritance-process-model.md#field-reference).
+Locked ![](_img/process/locked-icon.png) fields and inherited ![](_img/process/inherited-icon.png) fields correspond to fields inherited from a system process. You can't customize locked fields. You can customize some options for inherited fields. You can fully customize fields that you add to a process. 
 
-> [!div class="mx-tdBreakAll"]  
-> |![Inherited field](_img/process/inherited-icon.png) Inherited fields |Custom fields |&nbsp;&nbsp;&nbsp;| 
-> |-------------|----------|---------| 
-> |- [Change the field label](customize-process-field.md#rename-field)<br/>- [Show/Hide field on form](customize-process-field.md#show-hide-field) |- [Add a custom field](customize-process-field.md#add-field)<br/>- [Add pick list (drop-down menu)](customize-process-field.md#pick-list)<br/>- [Add person-name/Identity](customize-process-field.md#identity)<br/>- [Add a rich-text (HTML) field](customize-process-field.md#html) <br/>- [Add a checkbox (Boolean) field](customize-process-field.md#boolean-field)<br/>- [Add a custom control](custom-controls-process.md) |- [Add custom rules to a field](custom-rules.md)<br/>- [Change the field label](customize-process-field.md#rename-field)<br/>- [Set Required/Default options](customize-process-field.md#options)<br/>- [Move the field within the layout](customize-process-form.md#move-field)<br/>- [Remove field from form](customize-process-field.md#remove-field)<br/>- [Delete field](customize-process-field.md#delete-field) | 
+0. To begin, choose your inherited process, and then choose the WIT you want to customize. 
 
+0. To add a field, choose the ![](_img/process/new-field-icon.png) (**New Field** icon).  
 
-## Add or modify a rule for a work item type 
-Choose your inherited process, the work item type, and then choose **Rules**.
+	> [!div class="mx-imgBorder"]  
+	> ![Process Work Item Types page, Add a field to a WIT](_img/field/bug-new-field.png)
+
+	In the dialog that opens, choose the type of field that you want to add. To learn more, see the following articles:   
+	- [Integer](customize-process-field.md#add-field)  
+	- [Pick list (drop-down menu)](customize-process-field.md#pick-list)  
+	- [Person-name/Identity](customize-process-field.md#identity)  
+	- [Rich-text or HTML](customize-process-field.md#html)  
+	- [Checkbox (Boolean)](customize-process-field.md#boolean-field)
+
+0. To modify an existing field, you can exercise these choices: 
+
+	- [Change the field label](customize-process-field.md#rename-field)  
+	- [Show/Hide field on form](customize-process-field.md#show-hide-field)  
+	- [Set Required/Default options](customize-process-field.md#options)  
+	- [Move the field within the layout](customize-process-form.md#move-field)
+	- [Remove field from the form](customize-process-field.md#remove-field) 
+
+## Add or modify a rule for a work item type
+ 
+You add rules to support specific workflow and business use cases. Rules allow you to clear the value of a field, copy a value into a field, and apply values based on dependencies between different fields' values. 
+
+To add a rule, choose your inherited process, the work item type, and then choose **Rules**, and then choose **New rule**.   
+
+	> [!div class="mx-imgBorder"]  
+	> ![Process, WIT, Bug, Layout, New custom control](_img/rules/custom-rule-create-rule.png) 
+
+To learn more, see [Add a rule to a work item type ](custom-rules.md).
 
 ## Add or modify work item types
 
-Choose your inherited process, and then add or edit a work item type from the **Work item types** page.
+You use different WITs to plan and track different types of work. The main reason you add a custom WIT is to customize the web form and workflow states to meet specific business use cases.
 
-> [!div class="mx-tdBreakAll"]  
-> |![Inherited field](_img/process/inherited-icon.png) Inherited WITs | Custom WITs |&nbsp;&nbsp;&nbsp;| 
-> |-------------|----------|---------| 
-> |- [Add/remove custom fields](customize-process-field.md)<br/>- [Add/remove custom groups](customize-process-form.md#groups)<br/>- [Add/delete custom pages](customize-process-form.md#pages)<br/>- [Add/remove a custom control](custom-controls-process.md) <br/>- [Enable/disable](customize-process-wit.md#enable-disable) |- [Add custom WIT](customize-process-wit.md#add-wit)<br/>- [Change color or description](customize-process-wit.md#overview)<br/>- [Add/remove custom fields](customize-process-field.md)<br/>- [Add/remove custom groups](customize-process-form.md#groups)<br/>- [Add/delete custom pages](customize-process-form.md#pages)<br/>- [Add/remove a custom control](custom-controls-process.md) |- [Add, edit, or remove a workflow state](customize-process-workflow.md#states)<br/>- [Enable/disable](customize-process-wit.md#enable-disable)<br/>- [Delete](customize-process-wit.md#destroy) |  
+0. To begin, choose your inherited process, and then choose the WIT you want to customize. 
+
+0. From the **Work Item Types** page, choose the ![green plus icon](../../_img/icons/green-plus-new-field-icon.png) **New work item type**.
+
+	<img src="_img/process/cpwit-add-new-wit.png" alt="Process hub, Inherited process, Work Item Types, Add new work item type" style="border: 2px solid #C3C3C3;" />
+
+0. Name the WIT and optionally specify a description, icon and color. The icon and color you specify will appear throughout the web portal, including on the work item form and when associated work items appear on a backlog, boards, query results, and more. 
+
+	<img src="_img/process/cwit-create-wit-ticket.png" alt="Create new work item type dialog" style="border: 1px solid #C3C3C3;" /> 
+
+	Click **Create** to save. 
+
+0. You can now add fields to the WIT, or customize it in the following ways:  
+	- [Modify the workflow](#workflow)  
+	- [Add or remove a custom control](#custom-control)  
+	- [Add an extension](#extension) 
+	- [Add/move/remove custom groups](customize-process-form.md#groups)  
+	- [Add/move/delete custom pages](customize-process-form.md#pages)  
 
 
-### Modify the web form layout  
-
-Choose your inherited process and the work item type, and then modify the form from the **Layout** page.
-
-> [!div class="mx-tdBreakAll"]  
-> |![Inherited field](_img/process/inherited-icon.png) Inherited groups |Custom groups |&nbsp;&nbsp;&nbsp;| 
-> |-------------|----------|---------| 
-> |- [Relabel](customize-process-form.md#groups)<br/>- [Add/remove custom fields](customize-process-field.md)<br/>- [Show/hide fields](customize-process-field.md#remove-field)<br/>![Inherited field](_img/process/inherited-icon.png) **Inherited pages**<br/>- [Relabel](customize-process-form.md#pages)<br/>- [Add/remove custom fields](customize-process-field.md)<br/>- [Add/remove a custom group](customize-process-form.md#groups) |- [Add, modify, re-sequence, delete](customize-process-form.md#groups)<br/>- [Add/remove custom fields](customize-process-field.md)<br/>- [Add/Hide a group extension](custom-controls-process.md)<br/>**Custom pages**<br/> - [Add, modify, re-sequence, delete](customize-process-form.md#pages)<br/>- [Add/delete custom fields](customize-process-field.md)<br/>- [Add/Hide a page extension](custom-controls-process.md) |    
-> 
->  
+<a id="workflow" />
 ## Modify the workflow of a work item type 
 
 Choose your inherited process, the work item type, and then modify the workflow from the **States** page.  
-
-> [!div class="mx-tdBreakAll"]  
-> |![Inherited field](_img/process/inherited-icon.png) Inherited states |Custom states |
-> |-------------|----------|
-> |- [View workflow states](customize-process-workflow.md#hide-state)<br/>- [Hide a state](customize-process-workflow.md#hide-state) |- [Add a state](customize-process-workflow.md#add-states)<br/>- [Edit a state (change color or category)](customize-process-workflow.md#edit-state)<br/>- [Remove a state](customize-process-workflow.md#remove-state) |   
  
-## Add or modify a custom control    
+- [Hide a workflow state](customize-process-workflow.md#hide-state) 
+- [Add a state](customize-process-workflow.md#add-states)  
+- [Edit a state (change color or category)](customize-process-workflow.md#edit-state)  
+- [Remove a state](customize-process-workflow.md#remove-state)     
+ 
+<a id="custom-control" />
+## Add a custom control    
 
 Choose your inherited process, the work item type, and then choose **Add custom control**.
 
 > [!div class="mx-imgBorder"]  
 > ![Process, WIT, Bug, Layout, New custom control](_img/process/cpcontrols-add-custom-control.png) 
- 
 
 Custom controls provide additional functionality to a work item form. A custom control comes in four flavors, or contribution types. The first three in the following list appear on the web form layout for all inherited and customizable work item types (WITs):    
 - Field-level contribution 
@@ -145,13 +141,13 @@ Custom controls provide additional functionality to a work item form. A custom c
 
 To learn more, see [Add a custom control to a work item type](custom-controls-process.md).
 
- 
+<a id="extension" /> 
 ## Add an extension to a work item type
 
 An extension is an installable unit that contributes new capabilities to your Codex project.
   
 > [!NOTE]   
-> Group and Page extensions are automatically added to all WITs for all processes, both system and inheritance. You can choose to hide an extension for selected WITs within an inheritance process. 
+> Group and Page extensions are automatically added to all WITs for all processes, both system and  inherited . You can choose to hide an extension for selected WITs within an  inherited process. 
 
 0. To add an extension to a work item type, choose your inherited process, the WIT, and then choose **Get extensions**.
  
@@ -190,7 +186,7 @@ Choose your inherited process, and then modify the backlogs configuration from t
 
 ## Verify the customization you made 
 
-We recommend that you create a test project and apply your customized inheritance process to it to verify the changes you've made. 
+We recommend that you create a test project and apply your customized  inherited process to it to verify the changes you've made. 
 
 0. Open the &hellip; context menu for the process you want to use and choose **New team project**.  
 
@@ -232,11 +228,19 @@ To customize a single project, always start by [creating an inherited process an
 
 See also: 
 - [Work tracking object limits](object-limits.md)
-- [What is an inherited process?](inheritance-process-model.md) 
+- [What is an inherited process?]( inherited -process-model.md) 
 
 
 
+<!---
 
+
+For example, the following image shows the work item form layout for the Bug WIT. From this page, you can add fields, groups, pages, and custom controls. To modify the workflow, you click **States**.
+
+<img src="_img/process/cprocess-intro.png" alt="Admin context, Process, Work item types, bug type, layout tab" style="border: 1px solid #C3C3C3;" /> 
+
+
+-->
 
 
 

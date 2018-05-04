@@ -6,6 +6,9 @@
 
 0. Choose the ![](/vsts/_img/icons/actions-icon.png) actions icon and then choose the **Settings** option.  
 
+	> [!div class="mx-imgBorder"]  
+	> ![Web portal, open Settings](/vsts/settings/_img/open-settings-org-level.png)  
+
 0. Under **Work**, choose **Process**.
 
 # [Horizontal navigation](#tab/horizontal)

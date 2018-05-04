@@ -1,5 +1,5 @@
 ---
-title: Customize the web form to an inheritance process
+title: Customize the web form to an  inherited process
 titleSuffix: Codex Agile  
 description: Customize the web form for a work item type and Inheritance process model for a Codex project     
 ms.technology: devops-agile

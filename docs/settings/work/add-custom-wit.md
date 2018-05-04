@@ -18,9 +18,9 @@ ms.date: 03/20/2018
 
 [!INCLUDE [temp](../../_shared/codex-agile.md)]
 
-You use different work item types (WITs) to plan and track different types of work. Your Codex project contains 9 or more WITs that you can customize, based on the process used to create your project.  
+You use different work item types (WITs) to plan and track different types of work. The main reason you add a custom WIT is to customize the web form and workflow states to meet specific business use cases. Or, you can customize an existing WIT. Your Codex project contains 9 or more WITs that you can customize, based on the process used to create your project.  
 
-For example, you may want to capture customer issues in a custom Ticket WIT.   
+For example, you may want to capture customer issues in a custom WIT labeled Ticket.   
 
 <img src="_img/process/custom-wit-new-ticket-form.png" alt="Custom Ticket work item form" style="border: 1px solid #C3C3C3;" /> 
 
@@ -57,9 +57,8 @@ For example, you may want to capture customer issues in a custom Ticket WIT.
 
     <img src="_img/process/cpfield-add-field-to-bug-type-integer-up1.png" alt="Add a field to Bug, choose field type" style="border: 1px solid #C3C3C3;" /> 
 
-	Additional data types you can add include: [Pick list](add-custom-field.md#pick-list), [Identity](add-custom-field.md#identity), [Rich-text, HTML](add-custom-field.md#html),[Checkbox](add-custom-field.md#boolean-field). 
-- 
-	<a id="options">  </a>
+	Additional data types you can add include: [Pick list](customize-process-field.md#pick-list), [Identity](customize-process-field.md#identity), [Rich-text, HTML](customize-process-field.md#html), and [Checkbox](customize-process-field.md#boolean-field).  
+	<a id="options">  </a>  
 0.	(Optional) On the **Options** tab, indicate if the field is required and specify a default value. Or leave these blank. 
 
 	<img src="_img/process/cpfield-bug-customer-ticket-options.png" alt="Add a field to Use story, specify options" style="border: 1px solid #C3C3C3;" />  
@@ -71,23 +70,23 @@ For example, you may want to capture customer issues in a custom Ticket WIT.
 
 	Here we choose to add a new field. Choose the ![](_img/process/new-field-icon.png) (**New Field** icon).  
 
-	<img src="_img/process/cpwit-new-ticket-define.png" alt="New WIT, customize layout" style="border: 1px solid #C3C3C3;" /> 	
+	> [!div class="mx-imgBorder"]  
+	> ![New WIT, customize layout](_img/process/cpwit-new-ticket-define.png) 	
 
 0.  Here, we add the Customer Ticket field to a new group labeled Customer focus. 
 
 	<img src="_img/process/cpfield-customer-ticket-layout.png" alt="Add a field to Use story, specify layout" style="border: 1px solid #C3C3C3;" />  
 
+0.	Click **Add field** to complete adding the field. If you haven't specified it's layout location, it will be added to the first group of fields on the layout form.  
+
 	> [!TIP]    
 	> Once you've added a field, you can drag-and-drop it within a page to relocate it on the form. If you have several fields you want to add to a custom page or group, then you may want to [add those elements first](customize-process-form.md) and then add your fields. 
 
-0.	Click **Add field** to complete adding the field. If you haven't specified it's layout location, it will be added to the first group of fields on the layout form.  
-
-
 ## Verify the customization you made 
 
-We recommend that you create a test project and apply your customized inheritance process to it to verify the changes you've made. 
+We recommend that you create a test project and apply your customized  inherited process to it to verify the changes you've made. 
 
-0. Open the &hellip; context menu for the process you want to use and choose **New team project**.  
+0. Open the **All processes** page, and choose the &hellip; context menu for the process you want to use, and then select **New team project**.   
 
 	> [!div class="mx-imgBorder"]  
 	> ![Create a team project from the selected process](_img/process/add-new-team-project.png) 
@@ -100,14 +99,14 @@ We recommend that you create a test project and apply your customized inheritanc
 0. Open the **Work>Work Items** page (user context) and choose **New Work Item** and select the WIT you customized. Here we choose **Ticket**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![All Processes-Process-WIT breadcrumb links](_img/process/add-custom-wit-verify-ticket.png) 
+	> ![Work>Work Items page, add new work item, Ticket](_img/process/add-custom-wit-verify-ticket.png) 
 
 	If you don't see the custom WIT, refresh your browser to make sure it registers all the custom changes you've made. 
 
 0.  Verify that the field you added appears on the form. Note that the ![](../../_img/icons/required-icon.png) (exclamation mark) icon indicates the field is required.  
 
-	<img src="_img/process/add-custom-field-verify-ticket-form.png" alt="Ticket form, Customer Ticket field added to Customer Focus group" style="border: 2px solid #C3C3C3;" />	
-
+	> [!div class="mx-imgBorder"]  
+	> ![Ticket form, Customer Ticket field added to Customer Focus group](_img/process/add-custom-field-verify-ticket-form.png) 
 
 
 [!INCLUDE [temp](../_shared/change-project-to-inherited-process.md)] 
@@ -115,31 +114,20 @@ We recommend that you create a test project and apply your customized inheritanc
 
 ## Try this next
 > [!div class="nextstepaction"]
-> [Add a custom field](add-custom-field.md) 
+> [Customize the web form](customize-process-form.md) 
 > Or
-> [Customize a work item type](customize-process-wit.md)
+> [Customize the workflow](customize-process-workflow.md)
 
 ## Related articles 
 
-- [Create and manage inheritance processes](manage-process.md)
+- [Customize a project using an inherited process](customize-process.md)
+- [Create and manage inherited processes](manage-process.md)
 - [Customize the workflow states](customize-process-workflow.md). 
 - [Customize your backlogs or boards for a process](customize-process-backlogs-boards.md).  
 
  
-## Additional notes 
 
-<!--- Look at moving this to a concepts topic ==> 
   
-
-To customize a single project, always start by [creating an inherited process and migrating the team project to that process](manage-process.md). Then, all the customizations that you make to the inherited process automatically appear for the team project you migrated.  
-
-
-> [!IMPORTANT]  
-> When you change a project to use an inherited process, you may find one or more Agile tools or work items appear in an invalid state. For example: 
-> 
-> - If you make a field required, work items with that field undefined will show an error message. You'll need to resolve the errors to make additional changes and save the work item. 
-> - If you add or remove/hide workflow states of a WIT that appears on the Kanban board, you'll need to update the Kanban board column configurations for all teams defined in the team project. 
-
 
 
 

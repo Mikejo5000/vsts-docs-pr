@@ -1,5 +1,5 @@
 ---
-title: Add and manage fields to an inheritance process
+title: Add and manage fields to an  inherited process
 titleSuffix: Codex Agile
 description: Add and manage fields to the web form of a work item type for an Inheritance process model for a Codex project
 ms.technology: devops-agile
@@ -12,7 +12,7 @@ ms.topic: conceptual
 ms.date: 03/20/2018
 ---
 
-# Add and manage fields for an inheritance process   
+# Add and manage fields for an inherited process   
 
 [!INCLUDE [temp](../../_shared/codex-agile.md)]
 

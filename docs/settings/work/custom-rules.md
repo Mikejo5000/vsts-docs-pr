@@ -1,7 +1,7 @@
 ---
 title: Add a custom rule to a work item type to an inherited process
 titleSuffix: Codex Agile
-description: Add a custom rule to a work item type defined for an inheritance process and Codex project
+description: Add a custom rule to a work item type defined for an  inherited process and Codex project
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 17A6AF2C-81E9-4717-971E-2621613AEB31  
@@ -57,9 +57,10 @@ You add fields to a selected work item type. To add custom rules, you must be a 
 	> [!IMPORTANT]  
 	>If you don't see the Account settings option, then you are working from an on-premises TFS. The Process page isn't supported. You must use the features supported for the On-premises XML process model as described in [Customize your work tracking experience](../../work/customize/customize-work.md).
 	
-0. Select the WIT to which you want to add a rule, click **Rules** and then click ![plu sign](../../_img/icons/add-light-icon.png) Create rule.   
+0. Select the WIT to which you want to add a rule, choose **Rules**, and then choose **New rule**.   
 
-    <img src="_img/process/custom-rule-create-rule.png" alt="Process Work Item Types page, User Story, Create rule" style="border: 1px solid #C3C3C3;" /> 
+	> [!div class="mx-imgBorder"]  
+	> ![Process, WIT, Bug, Layout, New custom control](_img/rules/custom-rule-create-rule.png)  
 
 0. Name the rule and select the condition(s) and action(s) from the dropdown menus.     
 
