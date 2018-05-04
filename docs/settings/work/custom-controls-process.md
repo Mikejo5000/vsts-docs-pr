@@ -9,7 +9,7 @@ ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 ms.topic: conceptual
 monikerRange: 'vsts'
-ms.date: 03/20/2018
+ms.date: 07/10/2018
 ---
 
 # Add a custom control to a work item type 
@@ -43,48 +43,50 @@ To add extensions or edit a process, you must be a member of the Project Collect
 <a id="add-extension">  </a>
 ## Add a Marketplace extension   
 
-Browse the Marketplace to determine what extension(s) you want to add. To install an extension, see [Install free extensions](../../marketplace/install-vsts-extension.md)
+Browse the Marketplace to determine what extension(s) you want to add. To install an extension, see [Install free extensions](../../marketplace/install-vsts-extension.md).
 
-From the admin context, Extensions hub, you can view the extensions that are already installed.    
+From the **Settings** context, **Extensions** hub, you can view the extensions that are already installed. You may need to click ![Refresh](_img/process/custom-controls-refresh_extensions.png) to refresh the page to show newly installed extensions.  
 
 <img src="_img/process/custom-controls-extensions-admin-page-ts.png" alt="Account settings, Extensions page, VSTS" style="border: 1px solid #C3C3C3;" />  
 
-You may need to click ![Refresh](_img/process/custom-controls-refresh_extensions.png) to refresh the page to show newly installed extensions. 
+
 
 
 <a id="add-field-control"></a>
 ## Add a field-level contribution 
 
-1. Install the [field-level extension](#add-extension) as discussed in the previous section.  
+0. Install the [field-level extension](#add-extension) as discussed in the previous section.  
   
 0. Open the **Settings>Work>Process** hub from a work item form. For details, see [Open Settings>Process hub](add-custom-wit.md#open-process-wit).
 
-2. (Optional) [Add a field](customize-process-field.md#add-custom-field) to associate with the field-level contribution. Alternatively, you can specify an existing field, inherited or custom. 
+0. (Optional) [Add a field](customize-process-field.md#add-custom-field) to associate with the field-level contribution. Alternatively, you can specify an existing field, inherited or custom. 
 
-3. With the WIT selected, click **Add custom control**. 
+0. With the WIT selected, click **Add custom control**. 
 
-	<img src="_img/process/cpcontrols-add-custom-control.png" alt="Process, WIT, Bug, Layout, New custom control" style="border: 1px solid #C3C3C3;" />  
+	> [!div class="mx-imgBorder"]  
+	> ![Process, WIT, Bug, Layout, New custom control](_img/process/cpcontrols-add-custom-control.png) 
 
 	> [!NOTE]    
-	>If you don't see the **Add custom control** option, then you haven't installed a field-level extension. Or, you may need to refresh your browser to cause your browser to register any new extensions that have been installed. 
+	>If you don't see the **Add custom control** option, then you haven't installed a field-level extension. Or, you may need to refresh your browser to cause your browser to register any new extensions that have been recently installed. 
 	
-4. Choose the field-level control you want from the menu of options. 
+0. Choose the field-level control you want from the menu of options. 
 
 	For example, here we choose the Toggle control that you can associate with a Boolean field.   
 
-	<img src="_img/process/custom-control-add-field-level-control-to-bug.png" alt="Add a  custom control dialog, Definition tab" style="border: 1px solid #C3C3C3;" />  
+	> [!div class="mx-imgBorder"]  
+	> ![Add a  custom control dialog, Definition tab](_img/process/custom-control-add-field-level-control-to-bug.png) 
 
-4. Click the Options tab and fill out the dialog box. The options you need to specify will depend on the extension you've selected.   
+0. Click the Options tab and fill out the dialog box. The options you need to specify will depend on the extension you've selected.   
 
 	For example, here we specify the custom field, Triaged, and indicate the toggle labels to appear on the form.   
 
 	<img src="_img/process/custom-control-add-field-level-control-to-bug-options-tab.png" alt="Custom control dialog" style="border: 2px solid #C3C3C3;" />
 
-5. (Optional) Open the Layout tab and specify the label for the field. 
+0. (Optional) Open the Layout tab and specify the label for the field. 
  
 	Fill in any additional required fields. Review the extension description for guidance. 
 
-5.	Verify the working of the custom control by opening a work item of the type you modified. You may need to refresh your browser to see your changes.  
+0.	Verify the working of the custom control by opening a work item of the type you modified. You may need to refresh your browser to see your changes.  
 
 	Here, we show how the control appears by default with the checkbox and then with the toggle control.  
 
@@ -110,7 +112,7 @@ Action-level extensions are added to the context menu of inherited and customiza
 
 For example, the following image shows nine action-level contributions have been added and appear in the context menu for the user story.  
 
-<img src="_img/process/custom-control-web-form-user-story-action-level-menu-options.png" alt="User story web form, context menu, Action-level options" style="border: 2px solid #C3C3C3;" />
+![User story web form, context menu, Action-level options](_img/process/custom-control-web-form-user-story-action-level-menu-options.png) 
 
 <a id="process-rest-api">  </a>
 ## Programmatically add custom controls 

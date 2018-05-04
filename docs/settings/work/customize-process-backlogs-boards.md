@@ -9,7 +9,7 @@ ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 monikerRange: 'vsts'
 ms.topic: conceptual
-ms.date: 03/20/2018
+ms.date: 07/10/2018
 ---
 
 # Customize your backlogs or boards  
@@ -17,12 +17,12 @@ ms.date: 03/20/2018
 [!INCLUDE [temp](../../_shared/codex-agile.md)]  
 
 > [!IMPORTANT]  
->This topic applies to process customization for the Inheritance process model, which supports customization of team project(s) through a shared process model. For an overview of process models, see [Customize your work tracking experience](../../work/customize/customize-work.md).    
+> This topic applies to process customization for the Inheritance process model, which supports customization of team project(s) through a shared process model. For an overview of process models, see [Customize your work tracking experience](../../work/customize/customize-work.md).    
 
 You can customize your backlogs to add more levels or add custom work item types (WITs) to them. As shown below, we've added a third level portfolio backlog labeled *Initiatives* which tracks the custom *Initiative* WIT, and we've renamed the product backlog to *Stories and Tickets* to indicate that we not only track *User Stories*, but also *Customer Tickets* on the product backlog. 
  
 > [!div class="mx-imgBorder"]  
-> ![Changes made to the backlog levels]_img/process/process-backlog-boards-intro.png) 
+> ![Changes made to the backlog levels](_img/process/process-backlog-boards-intro.png) 
 
 Your team project comes equipped with two portfolio backlogs: Features and Epics. However, if you need one or more additional portfolio backlogs, you can add them.   
 
@@ -47,7 +47,7 @@ You can add a custom work item type when adding or editing a portfolio backlog, 
 <a id="add-portfolio-backlog">  </a>
 ### Add a portfolio backlog 
 
-0. Open the **Backlog levels** page.
+0. From the  **Backlog levels** page, choose ![ ](../../_img/icons/blue-add-icon.png) **New top level portfolio backlog**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Web portal, Admin context, Process page, open Backlog levels](_img/process/process-backlog-levels-open.png) 
@@ -60,7 +60,7 @@ You can add a custom work item type when adding or editing a portfolio backlog, 
 
 	<img src="_img/process/process-add-portfolio-backlog-dialog.png" alt="Web portal, Add a portfolio backlog dialog, Add new work item type" style="border: 1px solid #C3C3C3;" /> 
 
-0. If you are associating only one work type with the backlog, then click Save to save your changes. Otherwise, you can add more work item types as needed. 
+0. If you are associating only one work item type with the backlog, then click Save to save your changes. Otherwise, you can add more work item types as needed. 
 
 	<img src="_img/process/process-add-portfolio-backlog-dialog-save.png" alt="Web portal, Add a portfolio backlog dialog, Save changes" style="border: 1px solid #C3C3C3;" /> 
 

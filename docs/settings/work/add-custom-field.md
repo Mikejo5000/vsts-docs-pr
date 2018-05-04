@@ -9,16 +9,18 @@ ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 ms.topic: quickstart
 monikerRange: 'vsts'
-ms.date: 03/20/2018
+ms.date: 07/10/2018
 ---
 
 # Add a custom field to a work item type    
 [!INCLUDE [temp](../../_shared/codex-agile.md)]
 
-You add a custom field to support tracking data requirements you have that aren't met with the existing set of fields. For example, you can add a custom field to track a customer ticket number.  
+You add a custom field to support tracking data requirements you have that aren't met with the existing set of fields. For example, you can add a custom field to track a customer ticket number. For a list of all fields defined for your account&mdash;which includes all fields defined for system and inherited processes&mdash;see [Review fields](customize-process-field.md#review-fields).  
 
-For a list of all fields defined for your account&mdash;which includes all fields defined for system and inherited processes&mdash;see [Review fields](customize-process-field.md#review-fields).  
+> [!TIP]    
+> To customize a single project, always start by [creating an inherited process and migrating the team project to that process](manage-process.md). Then, all the customizations that you make to the inherited process automatically appear for the team project you migrated.
 
+To learn more about what you can customize, see [About process customization and inherited processes](inheritance-process-model.md). 
 
 [!INCLUDE [temp](../_shared/process-prerequisites.md)] 
 
@@ -91,8 +93,9 @@ We recommend that you create a test project and apply your customized  inherited
 
 0.  Verify that the field you added appears on the form. Note that the ![](../../_img/icons/required-icon.png) (exclamation mark) icon indicates the field is required.  
 
-	<img src="_img/process/add-custom-field-verify-bug-form.png" alt="Bug form, Customer Ticket field added to Customer Focus group" style="border: 2px solid #C3C3C3;" />									 
-
+	> [!div class="mx-imgBorder"]  
+	> ![Bug form, Customer Ticket field added to Customer Focus group](_img/process/add-custom-field-verify-bug-form.png) 
+	
 [!INCLUDE [temp](../_shared/change-project-to-inherited-process.md)] 
 
 

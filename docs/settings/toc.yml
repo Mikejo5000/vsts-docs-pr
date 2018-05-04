@@ -26,6 +26,8 @@
     href: ../accounts/add-account-users-from-user-hub.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json 
   - name: Customize a project
     href: ./work/customize-process.md
+  - name: Create and manage a process
+    href: ./work/manage-process.md
   - name: Create a new project
     href: ../accounts/create-team-project.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
 - name: Concepts
@@ -52,16 +54,14 @@
     href: ../manual-test/getting-started/how-long-to-keep-test-results.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
   - name: Process configuration
     items:
-    - name: Manage processes
-      href: ./work/manage-process.md
-    - name: Add a custom field
+    - name: Add and manage fields
       href: ./work/customize-process-field.md
+    - name: Add and manage work item types
+      href: ./work/customize-process-wit.md
     - name: Customize a web form
       href: ./work/customize-process-form.md
     - name: Customize a workflow
       href: ./work/customize-process-workflow.md
-    - name: Customize a work item type
-      href: ./work/customize-process-wit.md
     - name: Add a custom rule
       href: ./work/custom-rules.md
     - name: Add a custom control
@@ -80,6 +80,16 @@
     href: ../security/permissions-access.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
   - name: Work tracking object limits
     href: ./work/object-limits.md
+  - name: REST APIs
+    items:
+    - name: Area and Iteration Paths
+      href: https://docs.microsoft.com/en-us/rest/api/vsts/wit/classification%20nodes
+    - name: Processes
+      href: https://docs.microsoft.com/en-us/rest/api/vsts/processes/processes
+    - name: Work Item Types
+      href: https://docs.microsoft.com/en-us/rest/api/vsts/processdefinitions/work%20item%20types
+    - name: Add a custom control to a form
+      href: ../../extend/develop/custom-control.md
 - name: Resources
   items:
   - name: Account Management

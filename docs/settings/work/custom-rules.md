@@ -1,7 +1,7 @@
 ---
 title: Add a custom rule to a work item type to an inherited process
 titleSuffix: Codex Agile
-description: Add a custom rule to a work item type defined for an  inherited process and Codex project
+description: Add a custom rule to a work item type defined for an inherited process and Codex project
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 17A6AF2C-81E9-4717-971E-2621613AEB31  
@@ -9,7 +9,7 @@ ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 monikerRange: 'vsts'
 ms.topic: conceptual
-ms.date: 03/23/2018
+ms.date: 07/10/2018
 ---
 
 

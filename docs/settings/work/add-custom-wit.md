@@ -11,7 +11,7 @@ ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 ms.topic: quickstart
 monikerRange: 'vsts'
-ms.date: 03/20/2018
+ms.date: 07/10/2018
 ---
 
 # Add a custom work item type     
@@ -22,7 +22,14 @@ You use different work item types (WITs) to plan and track different types of wo
 
 For example, you may want to capture customer issues in a custom WIT labeled Ticket.   
 
-<img src="_img/process/custom-wit-new-ticket-form.png" alt="Custom Ticket work item form" style="border: 1px solid #C3C3C3;" /> 
+> [!div class="mx-imgBorder"]  
+> ![Custom Ticket work item form](_img/process/custom-wit-new-ticket-form.png)
+
+> [!TIP]    
+> To customize a single project, always start by [creating an inherited process and migrating the team project to that process](manage-process.md). Then, all the customizations that you make to the inherited process automatically appear for the team project you migrated.
+
+To learn more about what you can customize, see [About process customization and inherited processes](inheritance-process-model.md). 
+
 
 [!INCLUDE [temp](../_shared/process-prerequisites.md)] 
 
@@ -32,9 +39,9 @@ For example, you may want to capture customer issues in a custom WIT labeled Tic
 [!INCLUDE [temp](../_shared/create-inherited-process.md)] 
 
 <a id="add-wit">  </a>
-## Add a custom work item type
+## Add a work item type
 
-0. From the **Work Item Types** page, choose the ![green plus icon](../../_img/icons/green-plus-new-field-icon.png) **New work item type**.
+0. From the **Work Item Types** page, choose the ![ ](../../_img/icons/blue-add-icon.png) **New work item type**.
 
 	<img src="_img/process/cpwit-add-new-wit.png" alt="Process hub, Inherited process, Work Item Types, Add new work item type" style="border: 2px solid #C3C3C3;" />
  

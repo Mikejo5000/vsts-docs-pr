@@ -9,11 +9,10 @@ ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 ms.topic: tutorial
 monikerRange: 'vsts'
-ms.date: 03/20/2018
+ms.date: 07/10/2018
 ---
 
 <!-- supports the FWLink: http://go.microsoft.com/fwlink/?LinkID=616878 --> 
-
 
 
 # Create and manage inherited processes 
@@ -21,6 +20,8 @@ ms.date: 03/20/2018
 [!INCLUDE [temp](../../_shared/codex-agile.md)]
 
 You customize your Codex project, Agile tools, and the work tracking system through an inherited process. The customizations you make are in effect for all projects that use the process. A process defines the building blocks of the work tracking system. Whenever you create a Codex project, you select the process you want your project to use. 
+
+To learn more about what you can customize, see [About process customization and inherited processes](inheritance-process-model.md). 
 
 In this article, learn how to perform these tasks:  
 

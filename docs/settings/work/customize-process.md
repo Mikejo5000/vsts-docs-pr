@@ -9,7 +9,7 @@ ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 monikerRange: 'vsts'
 ms.topic: tutorial
-ms.date: 03/20/2018
+ms.date: 07/10/2018
 ---
 
 # Customize a project using an inherited process
@@ -93,7 +93,7 @@ You use different WITs to plan and track different types of work. The main reaso
 
 0. To begin, choose your inherited process, and then choose the WIT you want to customize. 
 
-0. From the **Work Item Types** page, choose the ![green plus icon](../../_img/icons/green-plus-new-field-icon.png) **New work item type**.
+0. From the **Work Item Types** page, choose the ![ ](../../_img/icons/blue-add-icon.png) **New work item type**.
 
 	<img src="_img/process/cpwit-add-new-wit.png" alt="Process hub, Inherited process, Work Item Types, Add new work item type" style="border: 2px solid #C3C3C3;" />
 

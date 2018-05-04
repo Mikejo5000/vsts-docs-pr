@@ -9,7 +9,7 @@ ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 monikerRange: 'vsts'
 ms.topic: conceptual
-ms.date: 03/20/2018
+ms.date: 07/10/2018
 ---
 
 # Customize the workflow 

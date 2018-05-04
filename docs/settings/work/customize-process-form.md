@@ -9,13 +9,12 @@ ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 monikerRange: 'vsts'
 ms.topic: conceptual
-ms.date: 03/20/2018
+ms.date: 07/10/2018
 ---
 
 # Customize the web form for a work item type 
 
 [!INCLUDE [temp](../../_shared/codex-agile.md)]
-
 
 Work items are the backbone for planning and tracking work. As such, you'll want to make sure that each work item type (WIT) is tracking the data that your team needs. 
 
@@ -25,70 +24,20 @@ For example, the following form shows that two custom pages have been added, **I
 
 <img src="_img/process/cpform-customized-form-intro.png" alt="Customized user story form" style="border: 1px solid #C3C3C3;" /> 
 
-##What you can customize   
-
-You customize the web form for a WIT to which you want to add fields, groups, or pages. Each web form consists of a non-editable header, and a single inherited page labeled *Details*.  
-
-A custom page appears on the form as a tab to the right of the Details page. Groups are used to organize a set of fields within a page. You can specify the column within a page where a custom group or field should appear.  
-
-Here are your customization options for inherited groups and pages. For information on field customization options, see [Customize a field for a process](customize-process-field.md).
-
-> [!div class="mx-tdBreakAll"]  
-> |![Inherited field](_img/process/inherited-icon.png) Inherited groups |Custom groups |&nbsp;&nbsp;&nbsp;| 
-> |-------------|----------|---------| 
-> |- [Relabel](#groups)<br/>- [Add/remove custom fields](customize-process-field.md)<br/>- [Show/hide fields](customize-process-field.md#remove-field) |- [Add, modify, re-sequence, delete](#groups)<br/>- [Add/remove custom fields](customize-process-field.md)<br/>- [Add/Hide a group extension](custom-controls-process.md) |  
+Once you've added a custom page or group, you can add [custom fields to those pages or groups](customize-process-field.md). To learn more about what you can customize, see [About process customization and inherited processes](inheritance-process-model.md). 
 
 
-> [!div class="mx-tdBreakAll"]  
-> |![Inherited field](_img/process/inherited-icon.png) Inherited pages |Custom pages | 
-> |-------------|----------|
-> |- [Relabel](#pages)<br/>- [Add/remove custom fields](customize-process-field.md)<br/>- [Add/remove a custom group](#groups) |- [Add, modify, re-sequence, delete](#pages)<br/>- [Add/delete custom fields](customize-process-field.md)<br/>- [Add/Hide a page extension](custom-controls-process.md) |  
+[!INCLUDE [temp](../_shared/process-prerequisites.md)] 
+
+[!INCLUDE [temp](../_shared/open-process-admin-context-ts.md)]
  
-
-To perform any of these actions, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to edit a specific process](../../security/set-permissions-access-work-tracking.md#process-permissions).  
-
-
-**What you can't customize**  
-You can't modify the layout or field options assigned to these WITs: 
-- Shared Steps and Shared Parameters
-- Code Review Request and Code Review Response
-- Feedback Request and Feedback Response 
-
-<a id="resizing">  </a>  
-## Layout and resizing 
-
-The web form layout is organized into three columns as shown in the image below. 
-
-![3 column page layout](_img/process/cpform-3-column-layout.png)
-
-If you only add groups and fields to the first two columns, then the layout reflects a two column layout. Likewise, if you only add groups and fields to the first column, then the layout reflects a one column layout. 
-
-The web form resizes depending on the width available and the number of columns in the layout.  At maximum width, in most web browsers, each column within a page will display within its own column. As the display width decreases, each column resizes proportionally as follows: 
-
-- For three columns: 50%, 25%, and 25%  
-- For two columns: 66% and 33%  
-- For one column: 100%.  
-
-When the display width won't accommodate all columns, columns appear stacked within the column to the left. 
-
-<a id="open-process-wit">  </a>
-## Open Process>Work Item Types in the admin context
-
-To customize the web form, you must work from the admin context Process hub. 
-
-Open the **Settings>Work>Process** hub. For details, see [Open Settings>Process hub](add-custom-wit.md#open-process-wit).
-
-> [!IMPORTANT]  
->If you don't see the Account settings option, then you are working from an on-premises TFS. The Process page isn't supported. You must use the features supported for the On-premises XML process model as described in [Customize your work tracking experience](../../work/customize/customize-work.md).
+[!INCLUDE [temp](../_shared/automatic-update-project.md)] 
 
 
 <a id="groups"></a>
-## Groups 
-
-You can add your own custom groups to both inherited pages and custom pages. 
-
 <a id="add-group"></a>
-### Add a custom group  
+## Add a custom group  
+You can add your own custom groups to both inherited pages and custom pages.
 
 1. From the Layout page, choose New group.    
 
@@ -103,7 +52,7 @@ You can add your own custom groups to both inherited pages and custom pages.
 
 <a id="change-layout"></a>  
 <a id="remove-group"></a>
-### Delete or remove a custom group    
+## Delete or remove a custom group    
 
 Before you remove a group, first move all fields defined in that group to another group or remove them from the form.  
 
@@ -116,7 +65,7 @@ Choose the ![Delete icon](../../_img/icons/delete_icon.png) Remove option from t
 >When all fields in an inherited group are hidden, the inherited group itself will not appear on the form.   
 
 <a id="move-field"></a>
-### Move a field     
+## Move a field     
 
 Within a page, you can quickly drag-and-drop a field to a new group or section within the page. 
 
@@ -128,7 +77,7 @@ Here we move the Customer ticket field to the Details page and the Customer focu
  
 
 <a id="show-hide-remove-field"></a>
-### Remove a field from a form    
+## Remove a field from a form    
  
 You can only remove custom fields from a form. For inherited fields, you can hide them from showing on the form. To learn more, see [Customize a field for a process, Show, hide, or remove a field](customize-process-field.md#show-hide-remove-field).  
 
@@ -148,12 +97,9 @@ Removing an inherited field from a form simply hides the field from displaying o
 --> 
 
 <a id="pages"></a>
-##Pages  
-
-Add a custom page when you have several custom fields that you want to group within that page. You can add and reorder custom pages. 
-
 <a id="add-page"></a>
-### Add a custom page  
+## Add a custom page  
+Add a custom page when you have several custom fields that you want to group within that page. You can add and reorder custom pages. 
 
 0. From the Layout page of the WIT you've selected, click New page.    
 
@@ -172,14 +118,14 @@ Add a custom page when you have several custom fields that you want to group wit
 
 
 <a id="reorder-page"></a>
-### Reorder pages 
+## Reorder pages 
 
 You can reorder custom pages using drag and drop, or choose the move operation from the custom page &hellip; context menu. You can't move the inherited Details page.
 
 <img src="_img/process/cpform-re-sequence-page.png" alt="Re-order custom pages" style="border: 2px solid #C3C3C3;" />
 
 <a id="delete-page"></a>
-### Delete a page  
+## Delete a page  
 
 Before you delete a page, you'll want to move any fields that your team still uses to another page. 
 
@@ -191,12 +137,6 @@ Choose the ![Delete icon](../../_img/icons/delete_icon.png) Delete option from t
 
 
 ## Related articles  
-
-Once you've added a custom page or group, you can add [custom fields to those pages or groups](customize-process-field.md).   
-
-As you add custom pages or groups, all projects that reference the inherited process that you're customizing will automatically update to contain the new pages or groups.
-
-See also:  
 
 - [Add or modify a custom work item type](customize-process-wit.md)
 - [Customize a field](customize-process-field.md) 

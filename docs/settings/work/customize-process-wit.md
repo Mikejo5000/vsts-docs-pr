@@ -9,7 +9,7 @@ ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 monikerRange: 'vsts'
 ms.topic: conceptual
-ms.date: 03/20/2018
+ms.date: 07/10/2018
 ---
 
 # Add and manage work item types      
@@ -31,7 +31,7 @@ For example, you may want to capture customer issues in a custom Ticket WIT.
 <a id="add-wit">  </a>
 ## Add a work item type
 
-0. From the Work Item Types page, click ![green plus icon](../../_img/icons/green-plus-new-field-icon.png) New work item type.
+0. From the **Work Item Types** page, choose ![ ](../../_img/icons/blue-add-icon.png) **New work item type**.
 
 	<img src="_img/process/cpwit-add-new-wit.png" alt="Process hub, Inherited process, Work Item Types, Add new work item type" style="border: 2px solid #C3C3C3;" />
  
@@ -59,7 +59,7 @@ For example, you may want to capture customer issues in a custom Ticket WIT.
 	If you don't see the custom WIT, refresh your browser to make sure it registers all the custom changes you've made. 
 
 <a id="overview">  </a>
-## Change description, icon or color of a custom WIT 
+## Change description, icon or color
 
 To change the description, icon or color of a custom WIT, choose Edit from the WIT context menu. 
 
@@ -68,7 +68,7 @@ Here we change the description, icon and color for the Ticket custom WIT.
 <img src="_img/process/cpwit-edit-color-description.png" alt="Overview page, edit custom ticket description, icon and color" style="border: 1px solid #C3C3C3;" /> 
 
 <a id="enable-disable"></a>
-## Enable or disable a custom WIT  
+## Enable or disable a WIT  
 
 You can disable a custom WIT which will prevent users from being able to add new work items using it. However, all existing work items defined using the custom WIT remain in the data store.  
 
@@ -83,22 +83,8 @@ To re-enable the WIT, choose Enable from the WIT context menu.
 >
 >No changes are made to existing work items of that type. You can update or delete them and they will continue to appear on backlogs and boards. Also, you can change the work item type of disabled WITs to an enabled type, but you can't change the type to a disabled WIT.
 
-
-## Related articles  
-
-As you customize a WIT, all projects that reference the inherited process that you're customizing will automatically update to reflect the custom WITs you've added. To view your customizations, refresh your web browser.  
-
-To customize a single project, always start by [creating an inherited process and migrating the project to that process](manage-process.md). Then, all the customizations that you make to the inherited process automatically appear for the project you migrated.  
-
-See also:  
-
-- [Customize a field](customize-process-field.md)  
-- [Customize a form](customize-process-field.md)
-- [Customize a workflow for a work item type](customize-process-field.md)
-- [Customize a process](customize-process-field.md) 
-
 <a id="destroy">  </a>
-### Delete or destroy a custom WIT 
+## Delete or destroy a custom WIT 
 
 > [!IMPORTANT]  
 > Destroying a WIT will delete all work items and data associated with that WIT, including historical values. Once destroyed, you can't recover the data. 
@@ -111,14 +97,16 @@ See also:
 
 	<img src="_img/process/cpit-destroy-wit-confirm.png" alt="Delete field, confirmation dialog" style="border: 1px solid #C3C3C3;" />  
  
-
-<!---
 ### WIT extensibility
 
-Using REST APIs you can add .... 
-
--->
+To work with WITs programmatically, see [Work Item Types REST API](https://docs.microsoft.com/en-us/rest/api/vsts/processdefinitions/work%20item%20types). 
 
 
+## Related articles  
 
+- [Customize a field](customize-process-field.md)  
+- [Customize a form](customize-process-field.md)
+- [Customize a workflow for a work item type](customize-process-field.md)
+- [Customize a process](customize-process-field.md) 
 
+ 

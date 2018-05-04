@@ -1,6 +1,9 @@
 <a id="open-process-wit">  </a>
 ## Open Settings>Process hub
 
+You create, manage, and make customizations to processes from the **Settings>Process** hub. 
+
+
 # [Vertical navigation](#tab/vertical) 
 
 0. Choose the ![](/vsts/_img/icons/project-icon.png) to return to the **Codex** page.  
