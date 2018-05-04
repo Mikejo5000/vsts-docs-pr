@@ -123,7 +123,7 @@ Workflow states allow you to track the status of a work item as it moves from ne
 0. To modify a workflow, choose your inherited process, the WIT, and then the **States** page.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Process page, Bug WIT, States tab, Add state](_img/process/cpworkflow-add-state.png") 
+	> ![Process page, Bug WIT, States tab, Add state](_img/process/cpworkflow-add-state.png) 
 
 0. You can modify the workflow in the following ways:   
 	- [Hide a workflow state](customize-process-workflow.md#hide-state) 

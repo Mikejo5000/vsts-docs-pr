@@ -74,7 +74,7 @@ Open the **Settings>Work>Process** hub. For details, see [Open Settings>Process 
 0. From the Work Item Types tab, choose the work item type you want to modify, choose **States**, and then choose **New State**.    
 
 	> [!div class="mx-imgBorder"]  
-	> ![Process page, Bug WIT, States tab, Add state](_img/process/cpworkflow-add-state.png") 
+	> ![Process page, Bug WIT, States tab, Add state](_img/process/cpworkflow-add-state.png) 
 
 0. Enter the name of the State, choose its category and color, and then click Save. The color you specify will appear throughout the product including on the work item form and when the State field appears on a backlog, boards, query results, and more.  
 
