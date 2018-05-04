@@ -75,7 +75,7 @@ In addition, you can [add an existing inherited or custom field](customize-proce
 
 [!INCLUDE [temp](../_shared/field-reference.md)] 
 
-[!INCLUDE [temp](../_shared/fields-become-invalid-after-customizations.md)] 
+[!INCLUDE [temp](../_shared/fields-become-invalid-after-customization.md)] 
 
 ## WIT customizations 
 
