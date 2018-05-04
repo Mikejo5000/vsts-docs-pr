@@ -90,11 +90,10 @@ When you configure your agent to connect to TFS, you've got the following option
 
 * **Integrated** (Default) Connect a Windows agent to TFS using the credentials of the signed-in user via a Windows authentication scheme such as NTLM or Kerberos. You won't be prompted for credentials after you choose this method.
  
-* **PAT** Supported only on VSTS and TFS 2017 and newer. After you choose PAT, paste the [PAT token you created](#permissions) into the command prompt window.
+* **PAT** Supported only on VSTS and TFS 2017 and newer. After you choose PAT, paste the [PAT token you created](#permissions) into the command prompt window. Use PAT token is the solution when your TFS server and the agent machine are not in trusted domain, since PAT token authentication is done by TFS server instead of domain controller.
 
 > [!NOTE]
 > * When using PAT as the authentication method, the PAT token is used only for the initial configuration of the agent. Learn more at [Communication with VSTS or TFS](../../concepts/agents/agents.md#communication).
-> * Use PAT token is the solution when your TFS server and the agent machine are no in trusted domain, since PAT token authentication is done by TFS server instead of domain controller.
 
 ::: moniker-end
 
