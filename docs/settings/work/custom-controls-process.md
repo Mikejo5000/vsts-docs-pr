@@ -29,6 +29,17 @@ For example, you can add the [**Who recently viewed a work item?** extension](ht
 <img src="_img/process/custom-controls-group-extension-example-who-recently-viewed.png" alt="Work item form, group extension example, Who viewed this" style="border: 2px solid #C3C3C3;" />
 
 
+[!INCLUDE [temp](../_shared/process-prerequisites.md)] 
+
+To add extensions or edit a process, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to edit a specific process](../../security/set-permissions-access-work-tracking.md#process-permissions).
+
+[!INCLUDE [temp](../_shared/open-process-admin-context-ts.md)]
+
+[!INCLUDE [temp](../_shared/automatic-update-project.md)] 
+ 
+[!INCLUDE [temp](../_shared/create-inherited-process.md)] 
+
+
 <a id="add-extension">  </a>
 ## Add a Marketplace extension   
 
@@ -101,24 +112,18 @@ For example, the following image shows nine action-level contributions have been
 
 <img src="_img/process/custom-control-web-form-user-story-action-level-menu-options.png" alt="User story web form, context menu, Action-level options" style="border: 2px solid #C3C3C3;" />
 
+<a id="process-rest-api">  </a>
+## Programmatically add custom controls 
+You can use these REST APIs to work with custom controls:   
+- [Extend the work item form](../../extend/develop/add-workitem-extension.md)  
+- [Add a custom control to the work item form](../../extend/develop/custom-control.md)  
+
 
 ## Related articles 
-
-As you add custom controls, keep in mind that all team projects that reference the inherited process that you're customizing will automatically update to contain the new fields. To view your customizations, refresh your web browser. 
- 
-See also:  
 
 - [Add a custom field to a work item type](customize-process-field.md)  
 - [Customize a work item type](customize-process-wit.md)
 - [Customize the web form](customize-process-form.md)
 - [Customize a process](customize-process.md)  
 
-### Required permissions  
 
-To add extensions or edit a process, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to edit a specific process](../../security/set-permissions-access-work-tracking.md#process-permissions).
-
-<a id="process-rest-api">  </a>
-### Programmatically add custom controls 
-You can use these REST APIs to work with custom controls:   
-- [Extend the work item form](../../extend/develop/add-workitem-extension.md)  
-- [Add a custom control to the work item form](../../extend/develop/custom-control.md)  

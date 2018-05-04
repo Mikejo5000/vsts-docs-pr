@@ -27,6 +27,9 @@ With a custom rule, you can define a number of actions based on one or two condi
 - When the value of Approved is True, then make Approved By a required field 
 - When a user story is created, make make the following fields required: Priority, Risk, and  Effort
 
+> [!TIP]    
+> You can't calculate or set formulas using a rule. However, you may find a solution that fits your needs via the [TFS Aggregrator  (Web Service) Marketplace extension](https://marketplace.visualstudio.com/items?itemName=tfsaggregatorteam.tfs-aggregator-web-service). 
+
 ## Rule composition  
 
 Each rule consists of two parts: Conditions and Actions. Conditions define the circumstances which must be met in order for the rule to be applied. Actions define the operations to perform. You can specify a maximum of two conditions and 10 actions per rule. All custom rules require all conditions to be met in order to be run. 
@@ -47,15 +50,16 @@ As an example, you can make a field required based on value assignments made to 
 
 > [!NOTE]     
 >You make a field required and specify a field default through the [**Options** tab for the field](customize-process-field.md#options).  
+
+[!INCLUDE [temp](../_shared/process-prerequisites.md)] 
+
+[!INCLUDE [temp](../_shared/open-process-admin-context-ts.md)]
  
+[!INCLUDE [temp](../_shared/automatic-update-project.md)] 
+
 ## Add a custom rule 
 
-You add fields to a selected work item type. To add custom rules, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to edit a specific process](../../security/set-permissions-access-work-tracking.md#process-permissions).  
-
-0. Open the **Settings>Work>Process** hub.  For details, see [Open Settings>Process hub](add-custom-wit.md#open-process-wit).
-
-	> [!IMPORTANT]  
-	>If you don't see the Account settings option, then you are working from an on-premises TFS. The Process page isn't supported. You must use the features supported for the On-premises XML process model as described in [Customize your work tracking experience](../../work/customize/customize-work.md).
+You add fields to a selected work item type.  
 	
 0. Select the WIT to which you want to add a rule, choose **Rules**, and then choose **New rule**.   
 
@@ -74,6 +78,7 @@ You add fields to a selected work item type. To add custom rules, you must be a 
 	> [!NOTE]    
 	>The sequence of actions you specify doesn't impact the behavior of the rule itself or its behavior with respect to other rules defined for the same WIT. 
 
+0. Once you've added a custom rule, open a work item and verify that the rule works as you intended. 
 
 <a id="delete-disable">  </a>
 ## Delete or disable a rule     
@@ -96,18 +101,14 @@ For example, several rules exist to copy the current user identity under the fol
 - When the workflow state changes to Closed or Done, copy the user identity to the Closed By field. 
  
 > [!IMPORTANT]  
->Predefined system rules will take precedent over any custom rule that you define which would overwrite it.  
+> Predefined system rules will take precedent over any custom rule that you define which would overwrite it.  
 
 -->
 
-## Related articles  
-
-Once you've added a custom rule, open a work item and verify that the rule works as you intended. See also: 
+## Related articles   
 
 - [Customize the form](customize-process-form.md)
 - [Customize a process](customize-process.md)    
 
 
-> [!TIP]    
-> You can't calculate or set formulas using a rule. However, you may find a solution that fits your needs via the [TFS Aggregrator  (Web Service) Marketplace extension](https://marketplace.visualstudio.com/items?itemName=tfsaggregatorteam.tfs-aggregator-web-service). 
 

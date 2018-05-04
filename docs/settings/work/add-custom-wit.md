@@ -26,9 +26,6 @@ For example, you may want to capture customer issues in a custom WIT labeled Tic
 
 [!INCLUDE [temp](../_shared/process-prerequisites.md)] 
 
-<a id="open-process-wit">  </a>
-## Open Settings>Process hub
-
 [!INCLUDE [temp](../_shared/open-process-admin-context-ts.md)]
 
  

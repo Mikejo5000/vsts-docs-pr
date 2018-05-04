@@ -42,14 +42,10 @@ Learn how to perform these tasks:
  
 
 [!INCLUDE [temp](../_shared/process-prerequisites.md)] 
- 
-<a id="open-process-wit">  </a>
-## Open Settings>Process hub
-
-You start customizing a process from the admin context. 
 
 [!INCLUDE [temp](../_shared/open-process-admin-context-ts.md)]
 
+[!INCLUDE [temp](../_shared/automatic-update-project.md)] 
  
 [!INCLUDE [temp](../_shared/create-inherited-process.md)] 
 

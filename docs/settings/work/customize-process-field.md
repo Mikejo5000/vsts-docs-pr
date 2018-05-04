@@ -20,31 +20,11 @@ Each ![locked icon](_img/process/locked-icon.png) system process&mdash;[Agile](.
 
 For a list of all fields defined for your account&mdash;which includes all fields defined for system and inherited processes&mdash;see [Review fields](#review-fields).  
 
-## What you can customize  
+[!INCLUDE [temp](../_shared/process-prerequisites.md)] 
 
-Locked and inherited fields correspond to fields inherited from a system process. You can't customize locked fields. You can customize some options for inherited fields. 
-
-
-> [!div class="mx-tdBreakAll"]  
-> |![Inherited field](_img/process/inherited-icon.png) Inherited fields |Custom fields |&nbsp;&nbsp;&nbsp;| 
-> |-------------|----------|---------| 
-> |- [Change the field label](#rename-field)<br/>- [Show/Hide field on form](#show-hide-field) |- [Add a custom field](#add-field)<br/>- [Add pick list (drop-down menu)](#pick-list)<br/>- [Add person-name/Identity](#identity)<br/>- [Add a rich-text (HTML) field](#html) <br/>- [Add a checkbox (Boolean) field](#boolean-field)<br/>- [Add a custom control](custom-controls-process.md) | - [Add custom rules to a field](custom-rules.md)<br/>- [Change the field label](#rename-field)<br/>- [Set Required/Default options](#options)<br/>- [Move the field within the layout](customize-process-form.md#move-field)<br/>- [Remove field from form](#remove-field)<br/>- [Delete field](#delete-field) | 
-
-When adding custom fields, note the following limits:  
-*   A maximum of 64 fields can be defined for each WIT  
-*   A maximum of 512 fields can be defined per process   
-
-In addition, you can [add an existing inherited or custom field](#add-existing-field) to another WIT within the process. For example, you can add Due Date to the user story or bug WITs.    
-
-To perform any of these actions, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to edit a specific process](../../security/set-permissions-access-work-tracking.md#process-permissions).  
-
-**What you can't customize**
-- You can't change the field name or data type once you've defined it  
-- With regards to pick lists, you currently can't perform these operations:
-	- Change the pick list of an inherited field, such as the Activity or Discipline field  
-	- Change the pick list order, pick lists display in alphabetic order
-- Import or define a global list  
-
+[!INCLUDE [temp](../_shared/open-process-admin-context-ts.md)]
+ 
+[!INCLUDE [temp](../_shared/automatic-update-project.md)] 
 
 <a id="open-process-wit">  </a>
 <a id="add-field">  </a>

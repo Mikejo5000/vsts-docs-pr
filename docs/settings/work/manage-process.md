@@ -7,7 +7,7 @@ ms.prod: devops
 ms.assetid: 6EB45080-22E2-43AD-92F9-77D03D5C136F  
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
-ms.topic: conceptual
+ms.topic: tutorial
 monikerRange: 'vsts'
 ms.date: 03/20/2018
 ---
@@ -20,35 +20,27 @@ ms.date: 03/20/2018
 
 [!INCLUDE [temp](../../_shared/codex-agile.md)]
 
-You customize your Codex Agile project, Agile tools, and the work tracking system through an inherited process. The customizations you make are in effect for all teams. On the other hand, you configure your [Agile tools&mdash;Scrum and Kanban&mdash;through the web UI](../about-teams-and-settings.md). A process defines the building blocks of the work tracking system. Whenever you create a Codex project, you select the process you want your project to use. 
+You customize your Codex project, Agile tools, and the work tracking system through an inherited process. The customizations you make are in effect for all projects that use the process. A process defines the building blocks of the work tracking system. Whenever you create a Codex project, you select the process you want your project to use. 
 
-You'll see two types of processes:
+In this article, learn how to perform these tasks:  
 
-- ![locked icon](_img/process/locked-icon.png) System processes &mdash;[Scrum, Agile, and CMMI](../../work/work-items/guidance/choose-process.md)&mdash;which are locked from being changed.   
-- ![inherited process icon](_img/process/inherited-process-icon.png) Inherited processes, which you can customize, are so named as they inherit from the system process from which they were created. Any updates VSTS makes to the parent system process will automatically update your custom inherited process.  
+> [!div class="checklist"] 
+> * Open the **Settings>Process** hub
+> * Create an inherited process   
+> * Customize an inherited process  
+> * Copy an inherited process   
+> * Change team projects to use an inherited process or a system process    
+> * Add a project based on a process   
+> * Enable or disable a process
+> * Set a process as the default to use when adding Codex projects  
 
-In addition, all processes are shared. That is, one or more team projects can use a single process. Instead of customizing a single team project, you customize a process. Changes made to the process automatically update all team projects that use that process. 
-
-Once you've created an inherited process, you can customize it, create team projects based on it, make a copy of it, and change existing team projects to use it. 
-
-For example, as shown in the picture below, you see a list of team projects defined for the *fabrikam* account. The second column shows the process used by each team project. To update the *Fabrikam Fiber* team project, you need to update the *MyAgile* process (which inherits from the Agile system process). Any changes you make to the *MyAgile* process will also update the *Test Agile* team project. You can't customize the *Scrum project*, on the other hand, until you change it to a Scrum inherited process.
-
-<img src="_img/process/mprocess-overview-project-list.png" alt="Admin context, Account settings, Overview, Project list and the process they use" style="border: 1px solid #C3C3C3;" />  
-
-To perform any of the following actions, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to edit or create a specific process](../../security/set-permissions-access-work-tracking.md#process-permissions).  To get added to an admin group, see [Add administrators](../../security/set-project-collection-level-permissions.md). 
-
-- Create an inherited process   
-- Customize an inherited process  
-- Copy an inherited process   
-- Change team projects to use an inherited process or a system process    
-- Add a project based on a process   
-- Enable or disable a process
-- Set a process as the default to use when adding Codex projects  
+[!INCLUDE [temp](../_shared/process-prerequisites.md)] 
 
 <a id="open-process-wit">  </a>
-## Open Process in the admin context
+## Open Settings>Process hub
 
 [!INCLUDE [temp](../_shared/open-process-admin-context-ts.md)]
+
 
 <a id="create-inherited-process"></a>
 ## Create an inherited process

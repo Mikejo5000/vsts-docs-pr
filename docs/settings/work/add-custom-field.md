@@ -22,9 +22,6 @@ For a list of all fields defined for your account&mdash;which includes all field
 
 [!INCLUDE [temp](../_shared/process-prerequisites.md)] 
 
-<a id="open-process-wit">  </a>
-## Open Settings>Process hub
-
 [!INCLUDE [temp](../_shared/open-process-admin-context-ts.md)]
 
 [!INCLUDE [temp](../_shared/create-inherited-process.md)]

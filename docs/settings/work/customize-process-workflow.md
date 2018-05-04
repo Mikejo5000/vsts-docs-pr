@@ -23,55 +23,28 @@ Here, the Bug WIT has been customized to support a Triaged state. The state and 
 
 <img src="_img/process/cust-workflow-form-triage-header.png" alt="Bug work item form, header area" style="border: 1px solid #C3C3C3;" /> 
 
-##What you can customize   
+> [!NOTE]    
+> Before adding a workflow state, review [Workflow states and state categories](../../work/customize/workflow-and-state-categories.md) to learn how workflow states map to state categories. 
 
-You customize the workflow for a WIT by adding a custom state. Each customizable WIT consists of three or more inherited states. Inherited states differ based on the system process &mdash;[Agile](../../work/work-items/guidance/agile-process.md), [Scrum](../../work/work-items/guidance/scrum-process.md), or [CMMI](../../work/work-items/guidance/cmmi-process.md)&mdash;you chose from which to create your custom process. 
+[!INCLUDE [temp](../_shared/process-prerequisites.md)] 
 
-> [!div class="mx-tdBreakAll"]  
-> |![Inherited field](_img/process/inherited-icon.png) Inherited states |Custom states |
-> |-------------|----------|
-> |- [View workflow states](#hide-state)<br/>- [Hide a state](#hide-state) |- [Add a state](#add-states)<br/>- [Edit a state (change color or category)](#edit-state)<br/>- [Remove a state](customize-process-workflow.md#remove-state) |  
+[!INCLUDE [temp](../_shared/open-process-admin-context-ts.md)]
 
-To perform any of these actions, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to edit a specific process](../../security/set-permissions-access-work-tracking.md#process-permissions).  
-
-**What you can't customize**  
-- You can't modify an inherited state (you can't change its name, color, or category)
-- You can't hide an inherited state if it's the only one in its state category    
-- You can't change the name of a custom state 
-- You can't add a custom state to the Completed category
-- You can't change the order of states (states are listed in the order you add them within the States page, and they're listed  alphabetically within the drop down list of a work item form)  
-- You can't apply a field rule to a state (for example, make a field required)
-- You can't specify a Reason for a state, instead, default reasons are defined such as Moved to state Triaged, Moved out of state Triaged 
-- You can't specify allowed transitions, all transitions are defined from any state to another state (except to the Removed state).  
-
+[!INCLUDE [temp](../_shared/automatic-update-project.md)] 
 
 <a id="states">  </a>
+<a id="add-states"></a>
 ## Add a workflow state   
 
 States you add will appear in the pick list for the States field shown in work item forms and the query editor. A transition to and from the State you add is created to every other State, except not to a Removed state. Also, default reasons are defined, such as Moved to state Triaged, Moved out of state Triaged.
 
-> [!NOTE]    
->Before adding a workflow state, review [Workflow states and state categories](../../work/customize/workflow-and-state-categories.md) to learn how workflow states map to state categories. 
-
-<a id="open-process-wit">  </a>
-### Open Process>Work Item Types in the admin context
-
-To customize the workflow for a WIT, you must work from the admin context Process hub. 
-
-Open the **Settings>Work>Process** hub. For details, see [Open Settings>Process hub](add-custom-wit.md#open-process-wit).
-
-> [!IMPORTANT]  
->If you don't see the Account settings option, then you are working from an on-premises TFS. The Process page isn't supported. You must use the features supported for the On-premises XML process model as described in [Customize your work tracking experience](../../work/customize/customize-work.md).
-	
-<a id="add-states"></a>
-### Add a state 
 
 > [!NOTE]    
 > States that you add to the task WIT will add columns to the task board. If you [track bugs along with tasks](../../work/customize/show-bugs-on-backlog.md), then states you add to the bug WIT will also add columns to the task board. You don't have to add the same states to each of these WITs, however, you may want to do so in order to  update the status in the same way and to minimize the number of columns that get added.  
 >
 > If you add a state to a WIT which you is associated with a backlog level, each team will need to update their [Kanban board columm settings](../../work/kanban/add-columns.md) in order to view and use the affected Kanban board.  
 
-0. From the Work Item Types tab, choose the work item type you want to modify, choose **States**, and then choose **New State**.    
+0. From the **Work Item Types** page, choose the work item type you want to modify, choose **States**, and then choose **New State**.    
 
 	> [!div class="mx-imgBorder"]  
 	> ![Process page, Bug WIT, States tab, Add state](_img/process/cpworkflow-add-state.png) 
@@ -89,7 +62,7 @@ Open the **Settings>Work>Process** hub. For details, see [Open Settings>Process 
 0. Remember, when you add a state to a WIT which is associated with a backlog level, each team that uses the Kanban board will need to [update their column settings](../../work/kanban/add-columns.md).
 
 <a id="edit-state"></a>
-### Edit a state
+## Edit a state
 
 You can edit the category or the color of a custom state. However, you can't change the name of the custom state. 
 
@@ -111,7 +84,7 @@ When you hide or remove a state:
  
 
 <a id="hide-state"></a>
-### Hide or unhide an inherited state 
+## Hide or unhide an inherited state 
 
 You can hide an inherited state that your team doesn't use in its workflow process. However, you must have at least one state defined for each category. 
 
@@ -128,7 +101,7 @@ You can hide an inherited state that your team doesn't use in its workflow proce
  
 
 <a id="remove-state"></a>
-### Remove a custom state 
+## Remove a custom state 
 0. Open the &hellip; context menu for the state you want to remove, and choose **Remove**. You can only remove a custom state.     
 
 0. From the Remove State dialog, click **Remove**.   
@@ -138,11 +111,7 @@ You can hide an inherited state that your team doesn't use in its workflow proce
 0.  If teams use the Kanban board to update their status, each team will need to update their [column settings](../../work/kanban/add-columns.md).    
  
 
-## Related articles  
-
-As you customize a workflow, all Codex projects that reference the inherited process that you're customizing will automatically update to reflect the customized workflow states. To view your customizations, refresh your web browser.  
-
-Additional topics of interest:  
+## Related articles   
 
 - [Add or modify a work item type](customize-process-wit.md)
 - [Customize a field](customize-process-field.md)  

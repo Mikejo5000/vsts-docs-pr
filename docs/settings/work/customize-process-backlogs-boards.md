@@ -28,54 +28,13 @@ Your team project comes equipped with two portfolio backlogs: Features and Epics
 
 Portfolio backlogs are useful for organizing your backlog under various business initiatives and user scenarios. When you [organize your backlogs into portfolios](../../work/backlogs/organize-backlog.md), you can gain a hierarchical view of the work defined in lower-level backlogs, including work in progress across several teams. Program managers can track the status of those backlog items of interest and drill down to ensure that all work is represented.  
 
+[!INCLUDE [temp](../_shared/process-prerequisites.md)] 
 
-
-## What you can customize   
-
-You customize the backlogs and boards for an inherited process in the following ways: 
-
-- Add a custom WIT to appear on any backlog&mdash;product, portfolio, iteration and task board 
-- Add a portfolio backlog level which displays custom WITs 
-- Change the default WIT for any backlog level 
-- Rename or change the color of any portfolio or product backlog 
-- Delete the top-level portfolio backlog (but not Epics nor Features) 
-
-To perform any of these actions, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to edit a specific process](../../security/set-permissions-access-work-tracking.md#process-permissions). 
-
-When you change the default WIT for a backlog level, it causes that WIT to appear by default in the quick add panel. For example, *Customer Ticket* appears by default in the following quick add panel for the product backlog. 
-
-<img src="_img/process/process-backlog-boards-quick-add-panel.png" alt="Product backlog, Quick Add Panel, Displays Default WIT for a backlog level" style="border: 1px solid #C3C3C3;" /> 
-
-
-**What you can't customize**  
-- You can't add or remove an inherited WIT to or from a backlog   
-- You can't remove an inherited portfolio level from the product (but you can rename them)
-- You can't insert a backlog level within the existing set of defined backlogs
-- You can't reorder the backlog levels  
-- You can't create a custom task level, although you can add custom WITs to the iteration backlog  
-- You can't add the *Bug* work item type to any backlog level. Instead, the system allows each team to decide how they want to manage bugs. To learn more, see [Show bugs on backlogs and boards](../../work/customize/show-bugs-on-backlog.md).
+[!INCLUDE [temp](../_shared/open-process-admin-context-ts.md)]
  
-<a id="open-process-wit">  </a>
-## Open Process>Backlog levels in the admin context
+[!INCLUDE [temp](../_shared/automatic-update-project.md)] 
 
-To get started, you'll want to open the Backlog levels page of your custom inherited process. If you haven't created an inherited process yet, [do that now](manage-process.md#create-inherited-process).   
  
-0. Open the **Settings>Work>Process** hub.  For details, see [Open Settings>Process hub](add-custom-wit.md#open-process-wit).
-
-	> [!IMPORTANT]  
-	>If you don't see the Account settings option, then you are working from an on-premises TFS. The Process page isn't supported. You must use the features supported for the On-premises XML process model as described in [Customize your work tracking experience](../../work/customize/customize-work.md).
-
-	<!--- <img src="_img/process-open-account-settings-via-menu.png" alt="Web portal, open account settings" style="border: 1px solid #C3C3C3;" /> -->
-
-0. Choose **Process**, and then choose the inherited process that you've created previously. 
-
-	<!---  <img src="_img/process/admin-process-select-process.png" alt="Web portal, Admin context, Process page, select Process" style="border: 1px solid #C3C3C3;" />  -->
-
-0. Open the **Backlog levels** page.
-
-	> [!div class="mx-imgBorder"]  
-	> ![Web portal, Admin context, Process page, open Backlog levels](_img/process/process-backlog-levels-open.png) 
-
 
 <a id="portfolio-backlogs">  </a>
 ## Add or edit portfolio backlogs 
@@ -88,7 +47,12 @@ You can add a custom work item type when adding or editing a portfolio backlog, 
 <a id="add-portfolio-backlog">  </a>
 ### Add a portfolio backlog 
 
-0. From the Backlog levels page, open the Add portfolio backlog dialog. 
+0. Open the **Backlog levels** page.
+
+	> [!div class="mx-imgBorder"]  
+	> ![Web portal, Admin context, Process page, open Backlog levels](_img/process/process-backlog-levels-open.png) 
+	
+0. From the **Backlog levels** page, open the Add portfolio backlog dialog. 
   
 	<img src="_img/process/process-new-portfolio-backlog.png" alt="Web portal, Admin context, Process page, select Process" style="border: 1px solid #C3C3C3;" /> 
 

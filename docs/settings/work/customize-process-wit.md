@@ -16,50 +16,17 @@ ms.date: 03/20/2018
 
 [!INCLUDE [temp](../../_shared/codex-agile.md)]
 
-
 You use different work item types (WITs) to plan and track different types of work. Your Codex project contains 9 or more WITs that you can customize, based on the process&mdash;[Agile](../../work/work-items/guidance/agile-process.md), [Scrum](../../work/work-items/guidance/scrum-process.md), or [CMMI](../../work/work-items/guidance/cmmi-process.md)&mdash;used to create your  project. Also, you can add a custom WIT to support additional tracking requirements. 
 
 For example, you may want to capture customer issues in a custom Ticket WIT.   
 
 <img src="_img/process/custom-wit-new-ticket-form.png" alt="Custom Ticket work item form" style="border: 1px solid #C3C3C3;" /> 
 
+[!INCLUDE [temp](../_shared/process-prerequisites.md)] 
 
-##What you can customize   
-
-Each process you create inherits the WITs provided with the parent system process&mdash;[Agile](../../work/work-items/guidance/agile-process.md), [Scrum](../../work/work-items/guidance/scrum-process.md), or [CMMI](../../work/work-items/guidance/cmmi-process.md). For example, the Agile process provides bug, task, user story, feature, epic, issue and test-related WITs. 
-
-You can add fields and modify the workflow and form for all inherited WITs that display on the Work Item Types page. If you don't want users to use a WIT, you can disable it. In addition, you can add custom WITs. 
-
-> [!NOTE]    
->For a list of limits placed on the number of fields, work item types, backlog levels, and other objects you can customize, see [Work tracking object limits](object-limits.md). 
-
-
-Here are your customization options for inherited and custom WITs. 
-
-> [!div class="mx-tdBreakAll"]  
-> |![Inherited field](_img/process/inherited-icon.png) Inherited WITs | Custom WITs |&nbsp;&nbsp;&nbsp;| 
-> |-------------|----------|---------| 
-> |- [Add/remove custom fields](customize-process-field.md)<br/>- [Add/remove custom groups](customize-process-form.md#groups)<br/>- [Add/delete custom pages](customize-process-form.md#pages)<br/>- [Add/remove a custom control](custom-controls-process.md) <br/>- [Enable/disable](#enable-disable) |- [Add custom WIT](#add-wit)<br/>- [Change color or description](#overview)<br/>- [Add/remove custom fields](customize-process-field.md)<br/>- [Add/remove custom groups](customize-process-form.md#groups)<br/>- [Add/delete custom pages](customize-process-form.md#pages)<br/>- [Add/remove a custom control](custom-controls-process.md) |- [Add, edit, or remove a workflow state](customize-process-workflow.md#states)<br/>- [Enable/disable](#enable-disable)<br/>- [Delete](#destroy) |  
-
-
-To perform any of these actions, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to edit a specific process](../../security/set-permissions-access-work-tracking.md#process-permissions). 
-
-**What you can't customize**  
-- You can't add or remove an inherited WIT to or from a backlog  
-- You can't change the position of an inherited field within the form layout
-- You can't remove the inherited portfolio level from the product (but you can rename them)
-- You can't change the name of a custom WIT.
-
-
-<a id="open-process-wit">  </a>
-## Open Process>Work Item Types in the admin context
-
-To customize the web form, you must work from the admin context Process hub. 
-
-Open the **Settings>Work>Process** hub. For details, see [Open Settings>Process hub](add-custom-wit.md#open-process-wit).
-
-> [!IMPORTANT]  
->If you don't see the Account settings option, then you are working from an on-premises TFS. The Process page isn't supported. You must use the features supported for the On-premises XML process model as described in [Customize your work tracking experience](../../work/customize/customize-work.md).
+[!INCLUDE [temp](../_shared/open-process-admin-context-ts.md)]
+ 
+[!INCLUDE [temp](../_shared/automatic-update-project.md)] 
 
 <a id="add-wit">  </a>
 ## Add a work item type
