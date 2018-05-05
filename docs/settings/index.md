@@ -29,7 +29,7 @@ Manage permissions, add teams, and configure team, project, and organizational-l
 ## Tutorials
 
 - [Add and manage users](../accounts/add-account-users-from-user-hub.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)  
-- [Customize a project](./work/process/customize-process.md) 
+- [Customize a project](./work/customize-process.md) 
 - [Add and manage inherited processes](./work/manage-process.md) 
 
 ## Concepts 

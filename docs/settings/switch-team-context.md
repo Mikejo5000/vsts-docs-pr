@@ -30,7 +30,7 @@ You navigate to your team context from the top navigation bar. The method change
 To view a list of teams defined for a team project, open the admin context for the team project, and choose **Overview**.  
 
 >[!NOTE]  
->**Feature availability**: The **Change process** link is only supported for team projects that use the [Inheritance process model](../work/customize/inheritance-process-model.md).  
+>**Feature availability**: The **Change process** link is only supported for team projects that use the [Inheritance process model](../settings/work/inheritance-process-model.md).  
 
 <img src="../work/scale/_img/multiple-teams-view-teams.png" alt="Web portal, admin context, team project, Overview page" style="border: 2px solid #C3C3C3;" /> 
 

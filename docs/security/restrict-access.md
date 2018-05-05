@@ -118,7 +118,7 @@ Delete and restore work items, Move work items out of this project, Permanently 
 
 
 <tr>
-<td>Process template manager ([Inheritance process model](../work/customize/inheritance-process-model.md))</td>
+<td>Process template manager ([Inheritance process model](../settings/work/inheritance-process-model.md))</td>
 <td>Work tracking customization </td>
 <td>Administer process permissions, Create new projects, Create process, Delete field from account, Delete process, Delete team project, Edit process<br/>See [Add administrators, set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md).</td>
 </tr>
@@ -198,7 +198,7 @@ For the [Hosted XML process model](../work/customize/hosted-xml-process-model.md
 You achieve this by adding a rule to the work item type, usually within the **WORKFLOW** section. To learn more, see [Add a rule to a work item type, Apply or ignore rules based on user or group](../work/customize/reference/apply-rule-work-item-field.md#apply-or-ignore-rules-based-on-user-or-group). 
 
 > [!NOTE]   
-> These restriction types aren't available for VSTS accounts and the [Inheritance process model](../work/customize/inheritance-process-model.md). 
+> These restriction types aren't available for VSTS accounts and the [Inheritance process model](../settings/work/inheritance-process-model.md). 
 
 <!---STEPS TO CONSIDER
 What do you want to restrict access to? Look up the permission associated with that feature - you can use the Reverse Lookup to determine if it is at the object-level, project-level, or collection-level. 

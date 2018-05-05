@@ -42,7 +42,7 @@ If you've customized your team project and haven't upgraded TFS for a while, you
 <p>TFS 2017</p>
 </td>
 <td>
-<p>Added the **WebLayout** section within the **FORM** section of all work item type (WIT) definitions. This section supports the new work item tracking experience in the web portal. It includes the **SystemControls** section and the new **LinksControlOptions** for managing link relationships.  To learn more, see [New work item experience](../../../settings/work/new-work-item-experience.md), [WebLayout and Control elements](../../customize/reference/weblayout-xml-elements.md), and [LinksControlOptions XML elements (Web form)](../../customize/reference/linkscontroloptions-xml-elements.md).</p>
+<p>Added the **WebLayout** section within the **FORM** section of all work item type (WIT) definitions. This section supports the new work item tracking experience in the web portal. It includes the **SystemControls** section and the new **LinksControlOptions** for managing link relationships.  To learn more, see [New work item experience](../../customize/process/new-work-item-experience.md), [WebLayout and Control elements](../../customize/reference/weblayout-xml-elements.md), and [LinksControlOptions XML elements (Web form)](../../customize/reference/linkscontroloptions-xml-elements.md).</p>
 <p>**Note**: When you upgrade an on-premises TFS to TFS 2017, the new web form is automatically available when you add team projects to a collection. For existing team projects, an admin is required to [enable the new form](../../customize/manage-new-form-rollout.md). The reason the new form isn't automatically enabled for existing team projects is to prevent overwriting customizations made to existing WIT definitions.</p>
 </td>
 </tr>

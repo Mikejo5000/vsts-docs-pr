@@ -25,7 +25,7 @@ Add a custom field, a custom work item type (WIT) or modify an existing WIT. The
 ## Concepts
 
 - [About areas and iterations](about-areas-iterations.md)  
-- [Inheritance process model](inheritance-process-model.md)   
+- [Inheritance process model](../../settings/work/inheritance-process-model.md)   
 - [Hosted XML process model](hosted-xml-process-model.md)  
 - [On-premises XML process model](on-premises-xml-process-model.md)  
 
