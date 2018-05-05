@@ -36,8 +36,8 @@ Use the guidance provided in the following topics based on the process model or 
 
 
 - **Inheritance process model**
-	- [Manage processes](process/manage-process.md)  
-	- [Customize a process](process/customize-process.md)  
+	- [Manage processes](../../settings/work/manage-process.md)  
+	- [Customize a process](../../settings/work/customize-process.md)  
 
 - **Hosted XML process model**
 	- [Customize a Hosted XML process](import-process/customize-process.md)  

@@ -10,7 +10,7 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 monikerRange: 'vsts'
-ms.date: 04/01/2018
+ms.date: 07/10/2018
 ---
 
 # Azure Codex Settings 
@@ -29,8 +29,8 @@ Manage permissions, add teams, and configure team, project, and organizational-l
 ## Tutorials
 
 - [Add and manage users](../accounts/add-account-users-from-user-hub.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)  
-- [Customize a process](../work/customize/process/customize-process.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json) 
-
+- [Customize a project](./work/process/customize-process.md) 
+- [Add and manage inherited processes](./work/manage-process.md) 
 
 ## Concepts 
 
@@ -40,8 +40,7 @@ Manage permissions, add teams, and configure team, project, and organizational-l
 
 ## How-to Guides
 - [Set team defaults](../work/scale/set-team-defaults.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)    
-- [Configure team settings](../work/scale/manage-team-assets.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json) 
-- [Manage processes](../work/customize/process/manage-process.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)   
+- [Configure team settings](../work/scale/manage-team-assets.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)   
 - [Switch team context](switch-team-context.md)
 
 

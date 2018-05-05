@@ -18,7 +18,7 @@ ms.date: 05/26/2017
 Use this index to look up a description of each field used to track work items. This reference includes all fields defined within the core system processes/process templates: [Agile](agile-process.md), [Scrum](scrum-process.md), and [CMMI](cmmi-process.md). The fields and work item types (WITs) available to you depend on the process you chose when you [created your team project](../../../accounts/create-team-project.md).  
 
 To support additional tracking needs, you can define your own custom work item fields. For more information, see:  
-- **VSTS**:  [Customize process](../../customize/process/customize-process.md)  
+- **VSTS**:  [Customize process](../../../settings/work/customize-process.md)  
 - **TFS**: [Modify or add a custom field](../../customize/add-modify-field.md)  
 
 
@@ -79,7 +79,7 @@ There are several non-changeable and virtually hidden attributes for each field.
 For a description of each attribute, see this post: [Work Item Field Attributes - What You Can and Can't Change](http://blogs.msdn.com/b/visualstudioalm/archive/2012/08/17/work-item-field-attributes-what-you-can-and-can-t-change.aspx).
 
 To access the Work Item Field Explorer, you must install the Process Editor (requires that you have installed a version of Visual Studio):
- - For TFS 2017 and later versions, [install the TFS Process Template editor from the Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=KarthikBalasubramanianMSFT.TFSProcessTemplateEditor). You can use this version of the Process Editor to modify the old-style work item forms. You can't use it to edit forms associated with the [new web forms](../../customize/process/new-work-item-experience.md). 
+ - For TFS 2017 and later versions, [install the TFS Process Template editor from the Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=KarthikBalasubramanianMSFT.TFSProcessTemplateEditor). You can use this version of the Process Editor to modify the old-style work item forms. You can't use it to edit forms associated with the [new web forms](../../../settings/work/new-work-item-experience.md). 
  - For TFS 2015 and earlier versions, install [TFS Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power). 
 
 
@@ -94,9 +94,9 @@ To access the Work Item Field Explorer, you must install the Process Editor (req
 You can list the attributes of fields using the [**witadmin listfields** command](../../customize/reference/witadmin/manage-work-item-fields.md). 
 
 ### VSTS and the Inheritance process model  
-To add fields to a process, modify select field attributes, and review fields added to a process, see [Customize a process](../../customize/process/customize-process.md).  
+To add fields to a process, modify select field attributes, and review fields added to a process, see [Customize a process](../../../settings/work/customize-process.md).  
 
-Also, you can [view the list of fields defined for a process](../../customize/process/customize-process.md) and the WITs which reference them. 
+Also, you can [view the list of fields defined for a process](../../../settings/work/customize-process.md) and the WITs which reference them. 
 
 
 ### TFS   

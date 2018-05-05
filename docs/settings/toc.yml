@@ -1,4 +1,4 @@
-- name: Codex Settings
+- name: Azure Codex Settings
   href: index.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json 
 - name: Overview
   items:
