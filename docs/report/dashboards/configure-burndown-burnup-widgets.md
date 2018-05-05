@@ -108,7 +108,7 @@ The Configuration dialog for the Burndown and Burnup widgets is the same. You co
 	This option is presented for the PBI Backlog for Scrum projects, and the Requirements backlog for CMMI projects.   
 	![Burndown Widget - Configuration - Select work item types](./_img/burndown-widget/burndownup-config-select-backlog.png)  
 
-	You can also select **Work item type** to burndown on a specific work item type. In the list, you will find all the project's work item types including [custom work item types](../../settings/work/process/customize-process-wit.md).   
+	You can also select **Work item type** to burndown on a specific work item type. In the list, you will find all the project's work item types including [custom work item types](../../settings/work/customize-process-wit.md).   
 	![Burndown Widget - Configuration - Select work item types](./_img/burndown-widget/burndownup-config-select-work-item-type.png)  
 
 1. (Optional) Select field criteria to limit the work items that appear in the chart.  
@@ -260,7 +260,7 @@ Configuring the Burnup widget is exactly like configuring the Burnup widget, exc
 
 * [Define sprints for the team project](../../work/customize/set-iteration-paths-sprints.md)
 * [Select sprints for a team](../../work/scale/set-team-defaults.md)
-* [Add a custom field to a work item type](../../settings/work/process/customize-process-field.md)
+* [Add a custom field to a work item type](../../settings/work/customize-process-field.md)
 
 ####Industry resources 
 

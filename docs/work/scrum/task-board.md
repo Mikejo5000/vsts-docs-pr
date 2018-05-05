@@ -34,7 +34,7 @@ In this topic you'll learn how to:
 
 ::: moniker range="vsts"
 > [!NOTE]  
-> Your task board is one of two types of boards available to you. For an overview of the features supported on each backlog and board, see [Backlogs, boards, and plans](../backlogs/backlogs-boards-plans.md). To customize the task board to include more or different columns, you need to customize the workflow. For details, see [Customize an inheritance process](../customize/inheritance-process-model.md). 
+> Your task board is one of two types of boards available to you. For an overview of the features supported on each backlog and board, see [Backlogs, boards, and plans](../backlogs/backlogs-boards-plans.md). To customize the task board to include more or different columns, you need to customize the workflow. For details, see [Customize an inheritance process](../../settings/work/inheritance-process-model.md). 
 >
 >In addition, if you're wondering why the task board items don't match your query list of items for a sprint, see [Task board items versus query list items](../backlogs/backlogs-boards-plans.md#task-board-items).
 ::: moniker-end

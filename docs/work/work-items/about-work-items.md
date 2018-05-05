@@ -46,7 +46,7 @@ The new form and its corresponding features are available from the web portal. T
 
 # [New web form](#tab/new-web-form)
 
-The new web form provides a number of experiences not provided with the old web form. To learn more, see [New work item experience](../../settings/work/new-work-item-experience.md). 
+The new web form provides a number of experiences not provided with the old web form. To learn more, see [New work item experience](../customize/process/new-work-item-experience.md). 
 
 ![Work item form to track features or user stories](../backlogs/_img/add-work-item-vsts-user-story-form.png)
 
@@ -134,7 +134,7 @@ To learn more, see these topics:
 
 You can add or modify the fields contained within a WIT or add a custom WIT. The process you use depends on the process model in effect for your team project. 
 ::: moniker range="vsts"
-To learn more, see [Customize an inheritance process](../customize/inheritance-process-model.md). 
+To learn more, see [Customize an inheritance process](../../settings/work/inheritance-process-model.md). 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"

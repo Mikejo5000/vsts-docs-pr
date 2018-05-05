@@ -299,7 +299,7 @@ Use features supported by these familiar clients to manage your project and illu
 <br/>
 
 <p><b>Add or modify a field </b></p>
-<p>Add a custom field ([VSTS](../settings/work/process/customize-process.md) | [TFS](../work/customize/add-modify-field.md) to support tracking additional data requirements or modify an existing field to apply optional rules. </p>
+<p>Add a custom field ([VSTS](../settings/work/customize-process.md) | [TFS](../work/customize/add-modify-field.md) to support tracking additional data requirements or modify an existing field to apply optional rules. </p>
 
 
 <p><b>Restrict access</b></p>
@@ -329,7 +329,7 @@ Use features supported by these familiar clients to manage your project and illu
 <td width="33%">
 
 <p><b>Create an inherited process</b></p>
-<p>The first step in customizing a team project is to [create an inherited process](../settings/work/process/manage-process.md#create-inherited-process). You can only customize inherited processes.  </p>
+<p>The first step in customizing a team project is to [create an inherited process](../settings/work/manage-process.md#create-inherited-process). You can only customize inherited processes.  </p>
 ![Customize process](_img/features/customize-vsts-process.png)   
 <br/>
 
@@ -339,18 +339,18 @@ Use features supported by these familiar clients to manage your project and illu
 <p><b>Customize a process</b></p>
 <p>Customizations you make to an inherited process automatically update all team projects that reference that process. You can customize your team project as follows:</p>
 <ul>
-<li>[Add and modify fields](../settings/work/process/customize-process-field.md)</li>
-<li>[Modify the web form layout](../settings/work/process/customize-process-form.md)</li>
-<li>[Modify the workflow states](../settings/work/process/customize-process-workflow.md) </li>
-<li>[Add a custom work item type](../settings/work/process/customize-process-wit.md) </li>
-<li>[Add a custom control](../settings/work/process/custom-controls-process.md) </li>
+<li>[Add and modify fields](../settings/work/customize-process-field.md)</li>
+<li>[Modify the web form layout](../settings/work/customize-process-form.md)</li>
+<li>[Modify the workflow states](../settings/work/customize-process-workflow.md) </li>
+<li>[Add a custom work item type](../settings/work/customize-process-wit.md) </li>
+<li>[Add a custom control](../settings/work/custom-controls-process.md) </li>
 </ul>
 
 <p><b>Change the process used by a team project</b></p>
-<p>To apply customizations to one or more team projects, you [change the process they reference to a customized inherited process](../settings/work/process/manage-process.md#migrate).  </p>
+<p>To apply customizations to one or more team projects, you [change the process they reference to a customized inherited process](../settings/work/manage-process.md#migrate).  </p>
 
 <p><b>Enable/disable a process</b></p>
-<p>To make sure no one creates a team project from a process that you don't want used, [you can disable it](../settings/work/process/manage-process.md#enable-process).  </p>
+<p>To make sure no one creates a team project from a process that you don't want used, [you can disable it](../settings/work/manage-process.md#enable-process).  </p>
 
 
 
@@ -359,12 +359,12 @@ Use features supported by these familiar clients to manage your project and illu
 <td width="33%">
 
 <p><b>Add or modify a field</b></p>
-<p>[Add a custom field](../settings/work/process/customize-process-field.md) to support tracking additional data requirements or modify an existing field to apply optional rules. </p>
+<p>[Add a custom field](../settings/work/customize-process-field.md) to support tracking additional data requirements or modify an existing field to apply optional rules. </p>
 ![Add field](_img/features/index-add-field.png)   
 <br/>
 
 <p><b>Remove a field from a form</b></p>
-<p>You can [remove a custom field and select inherited fields from a work item form](../settings/work/process/customize-process-field.md#remove-field). You can also [relabel the fields](../settings/work/process/customize-process-field.md#rename-field) that appear on the form.   </p>
+<p>You can [remove a custom field and select inherited fields from a work item form](../settings/work/customize-process-field.md#remove-field). You can also [relabel the fields](../settings/work/customize-process-field.md#rename-field) that appear on the form.   </p>
 
 <p><b>Area path pick lists</b></p>
 <p>Change the [pick list of area paths](../work/customize/set-area-paths.md) to support grouping work items by team, product, or feature area. </p>
@@ -384,23 +384,23 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Review fields</b></p>
-<p>You can [review the list of fields](../settings/work/process/customize-process-field.md#review-fields) defined for a process, their data type, and the WITs which reference them. For descriptions and usage of each field, see [Work item field index](../work/work-items/guidance/work-item-field.md). </p>
+<p>You can [review the list of fields](../settings/work/customize-process-field.md#review-fields) defined for a process, their data type, and the WITs which reference them. For descriptions and usage of each field, see [Work item field index](../work/work-items/guidance/work-item-field.md). </p>
 
 <p><b>Delete a field from the collection</b></p>
-<p>You can [delete a custom field](../settings/work/process/customize-process-field.md#delete-field) if you find it's no longer required. </p>
+<p>You can [delete a custom field](../settings/work/customize-process-field.md#delete-field) if you find it's no longer required. </p>
 
 
 
 <p><b>Customize the web form</b></p>
-<p>For each work item type, you can [add custom pages to group additional custom fields](../settings/work/process/customize-process-form.md) and you can organize your forms by placing logically related groups and HTML fields on separate pages within a form.    </p>
+<p>For each work item type, you can [add custom pages to group additional custom fields](../settings/work/customize-process-form.md) and you can organize your forms by placing logically related groups and HTML fields on separate pages within a form.    </p>
 ![Add custom group](_img/features/index-add-group.png)   
 <br/>
 
 <p><b>Add a custom work item type</b></p>
-<p>You can [add and modify a custom work item type](../settings/work/process/customize-process-wit.md).    </p>
+<p>You can [add and modify a custom work item type](../settings/work/customize-process-wit.md).    </p>
 
 <p><b>Customize the workflow</b></p>
-<p>For each work item type, you can [add custom workflow states to support your business tracking needs](../settings/work/process/customize-process-workflow.md).    </p>
+<p>For each work item type, you can [add custom workflow states to support your business tracking needs](../settings/work/customize-process-workflow.md).    </p>
 
 
 <p><b>Delete a process</b></p>
@@ -723,7 +723,7 @@ Use features supported by these familiar clients to manage your project and illu
 <br/>
 
 <p><b>Customize the workflow</b></p>
-<p>For VSTS: [add custom workflow states to support your business tracking needs](../settings/work/process/customize-process-workflow.md).  For TFS: [Design your custom workflow](https://msdn.microsoft.com/library/ms194981.aspx) by adding states, transitions, reasons, and optional actions.</p>
+<p>For VSTS: [add custom workflow states to support your business tracking needs](../settings/work/customize-process-workflow.md).  For TFS: [Design your custom workflow](https://msdn.microsoft.com/library/ms194981.aspx) by adding states, transitions, reasons, and optional actions.</p>
 
  <p><b>States  </b></p>
 <p>States allow you to [track the status of work](https://msdn.microsoft.com/library/ms194981.aspx). For  example, a bug moves from **Active**, **Resolved**, and **Closed** to correspond to when it's defined, fixed, and verified as fixed.</p>
@@ -2474,14 +2474,14 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p><b>Customize a process (VSTS) </b></p>
 <p>Customizations you make to an inherited process automatically update all team projects that reference that process. You can customize your team project as follows:</p>
 <ul>
-<li>[Add and modify fields](../settings/work/process/customize-process-field.md)</li>
-<li>[Modify the web form layout](../settings/work/process/customize-process-form.md)</li>
-<li>[Modify the workflow states](../settings/work/process/customize-process-workflow.md) </li>
-<li>[Add a custom work item type](../settings/work/process/customize-process-wit.md) </li>
+<li>[Add and modify fields](../settings/work/customize-process-field.md)</li>
+<li>[Modify the web form layout](../settings/work/customize-process-form.md)</li>
+<li>[Modify the workflow states](../settings/work/customize-process-workflow.md) </li>
+<li>[Add a custom work item type](../settings/work/customize-process-wit.md) </li>
 </ul>
 
 <p><b>Manage processes (VSTS) </b></p>
-<p>[Create inherited processes and migrate team projects to use them](../settings/work/process/manage-process.md). Set the default process and enable, disable, or delete processes you no longer want to use.   </p>
+<p>[Create inherited processes and migrate team projects to use them](../settings/work/manage-process.md). Set the default process and enable, disable, or delete processes you no longer want to use.   </p>
 
 
 
@@ -2617,7 +2617,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <br/>
 
 <p><b>Change the process (VSTS) </b></p>
-<p>You [change the process of a team project](../settings/work/process/manage-process.md) to apply customizations you've made to an inherited process. You can [add and modify fields and modify the layout of each work item type](../settings/work/process/customize-process.md) defined for that process.  </p>
+<p>You [change the process of a team project](../settings/work/manage-process.md) to apply customizations you've made to an inherited process. You can [add and modify fields and modify the layout of each work item type](../settings/work/customize-process.md) defined for that process.  </p>
 
 
 </td>

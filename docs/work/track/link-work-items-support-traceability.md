@@ -186,7 +186,7 @@ To learn more about the links control or to customize the Development links cont
  
 ::: moniker-end
 
-You can add a link from the work item to the supported artifacts using the method [described earlier for linking work items](#link-work-items). However, an easier method is to add the work item ID to a commit, pull request, changeset, or other supported Git or TFVC operation at the time you create those items. Also, you can link work items from the Development section within the [new work item form](../../settings/work/new-work-item-experience.md). 
+You can add a link from the work item to the supported artifacts using the method [described earlier for linking work items](#link-work-items). However, an easier method is to add the work item ID to a commit, pull request, changeset, or other supported Git or TFVC operation at the time you create those items. Also, you can link work items from the Development section within the [new work item form](../customize/process/new-work-item-experience.md). 
 
 ::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
 
