@@ -1,7 +1,7 @@
 ---
 title: About process customization and inherited processes 
-titleSuffix: Codex Agile
-description: Describes what an inherited process is and how you use it to customize the work tracking system and Agile tools for a Codex Agile project 
+titleSuffix: Azure Codex Agile
+description: Describes what an inherited process is and how you use it to customize the work tracking system and Agile tools for a Azure Codex Agile project 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 
@@ -17,11 +17,11 @@ ms.date: 07/10/2018
 
 # About process customization and inherited processes  
 
-[!INCLUDE [temp](../../_shared/codex-agile.md)]
+[!INCLUDE [temp](../../_shared/Azure Codex-agile.md)]
 
 <a id=" inherited "> </a> 
 
-To customize the work tracking system for a Codex project, you *customize* an inherited process. All Codex projects that use the inherited process, inherit the customizations made to that process. On the other hand, you *configure* your [Agile tools&mdash;Scrum and Kanban&mdash;through the web UI](../about-teams-and-settings.md).
+To customize the work tracking system for a Azure Codex project, you *customize* an inherited process. All Azure Codex projects that use the inherited process, inherit the customizations made to that process. On the other hand, you *configure* your [Agile tools&mdash;Scrum and Kanban&mdash;through the web UI](../about-teams-and-settings.md).
 
 There are a number of customizations you can make. The primary ones are adding custom fields, adding custom work item types (WITs) or modifying an existing WIT. 
 <a id="what-you-can-customize">  </a>

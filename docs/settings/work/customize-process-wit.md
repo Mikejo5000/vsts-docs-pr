@@ -1,7 +1,7 @@
 ---
 title: Customize a work item type for an inherited process
-titleSuffix: Codex Agile
-description: Customize a process by adding or modifying a work item type for a Codex project 
+titleSuffix: Azure Codex Agile
+description: Customize a process by adding or modifying a work item type for a Azure Codex project 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: DBF41880-62A4-43A9-9A31-8DB701EB888E
@@ -14,9 +14,9 @@ ms.date: 07/10/2018
 
 # Add and manage work item types      
 
-[!INCLUDE [temp](../../_shared/codex-agile.md)]
+[!INCLUDE [temp](../../_shared/Azure Codex-agile.md)]
 
-You use different work item types (WITs) to plan and track different types of work. Your Codex project contains 9 or more WITs that you can customize, based on the process&mdash;[Agile](../../work/work-items/guidance/agile-process.md), [Scrum](../../work/work-items/guidance/scrum-process.md), or [CMMI](../../work/work-items/guidance/cmmi-process.md)&mdash;used to create your  project. Also, you can add a custom WIT to support additional tracking requirements. 
+You use different work item types (WITs) to plan and track different types of work. Your Azure Codex project contains 9 or more WITs that you can customize, based on the process&mdash;[Agile](../../work/work-items/guidance/agile-process.md), [Scrum](../../work/work-items/guidance/scrum-process.md), or [CMMI](../../work/work-items/guidance/cmmi-process.md)&mdash;used to create your  project. Also, you can add a custom WIT to support additional tracking requirements. 
 
 For example, you may want to capture customer issues in a custom Ticket WIT.   
 

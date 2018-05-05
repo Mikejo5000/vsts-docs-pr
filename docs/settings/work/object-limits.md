@@ -1,6 +1,6 @@
 ---
 title: Work tracking object limits 
-titleSuffix: Codex Agile 
+titleSuffix: Azure Codex Agile 
 description: Limits placed on the number of objects that can be specified for the Inheritance and Hosted XML process models for Visual Studio Team Services 
 ms.technology: devops-agile
 ms.prod: devops
@@ -14,7 +14,7 @@ ms.date: 06/02/2017
 
 # Work tracking object limits 
 
-[!INCLUDE [temp](../../_shared/codex-agile.md)]
+[!INCLUDE [temp](../../_shared/Azure Codex-agile.md)]
 
 When customizing the work item types (WITs) defined in the Inheritance or Hosted XML process models, be aware of the limits placed on objects defined in this topic. To learn about process models, see [Customize your work tracking experience](../../work/customize/customize-work.md).
 

@@ -1,6 +1,6 @@
 ---
 title: Define area paths
-titleSuffix: Codex
+titleSuffix: Azure Codex
 description: Group work items based on team, product, or feature area by defining area paths for Visual Studio Team Services or Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
@@ -38,7 +38,7 @@ For naming restrictions on area and iteration paths, see [About areas and iterat
 
 ## Open project settings    
 
-From the web portal, open the **Settings** context for the Codex project.
+From the web portal, open the **Settings** context for the Azure Codex project.
 
 # [Vertical navigation](#tab/vertical)
 

@@ -1,7 +1,7 @@
 ---
-title: Customize a Codex project  
-titleSuffix: Codex Agile
-description: Your guide to configuring and customizing work tracking processes for a Codex project by customizing an  inherited process
+title: Customize a Azure Codex project  
+titleSuffix: Azure Codex Agile
+description: Your guide to configuring and customizing work tracking processes for a Azure Codex project by customizing an  inherited process
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 31CA1DCB-8E3E-4B9E-A64A-D47DF23490A3   
@@ -14,11 +14,11 @@ ms.date: 07/10/2018
 
 # Customize a project using an inherited process
 
-[!INCLUDE [temp](../../_shared/codex-agile.md)]
+[!INCLUDE [temp](../../_shared/Azure Codex-agile.md)]
 
-Each Codex project is based on a process that defines the building blocks for tracking work. The first project you create uses one of the default processes&mdash;[Agile](/vsts/work/work-items/guidance/agile-process), [Scrum](/vsts/work/work-items/guidance/scrum-process), or [CMMI](/vsts/work/work-items/guidance/cmmi-proces). 
+Each Azure Codex project is based on a process that defines the building blocks for tracking work. The first project you create uses one of the default processes&mdash;[Agile](/vsts/work/work-items/guidance/agile-process), [Scrum](/vsts/work/work-items/guidance/scrum-process), or [CMMI](/vsts/work/work-items/guidance/cmmi-proces). 
 
-You can only customize inherited processes.  Any changes you make to the inherited process will automatically appear in the Codex projects that use that process. 
+You can only customize inherited processes.  Any changes you make to the inherited process will automatically appear in the Azure Codex projects that use that process. 
 
 The general sequence for customizing a project is to customize an inherited process, verify your customizations, and then change the process of the project(s) to use that process. 
 
@@ -143,7 +143,7 @@ To learn more, see [Add a custom control to a work item type](custom-controls-pr
 <a id="extension" /> 
 ## Add an extension to a work item type
 
-An extension is an installable unit that contributes new capabilities to your Codex project.
+An extension is an installable unit that contributes new capabilities to your Azure Codex project.
   
 > [!NOTE]   
 > Group and Page extensions are automatically added to all WITs for all processes, both system and  inherited . You can choose to hide an extension for selected WITs within an  inherited process. 

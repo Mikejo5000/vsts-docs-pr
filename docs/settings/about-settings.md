@@ -19,7 +19,7 @@ From the administrative or **Settings** context, you configure resources that su
 
 You'll find a quick guide of those resources you can configure based on the corresponding application.  
   
-## Codex Agile (Work tracking) settings
+## Azure Codex Agile (Work tracking) settings
 
 Many work tracking/Agile tools provide teams the autonomy they need to configure and manage their work independent of other teams. When you add a team, you also configure a product backlog, Kanban board, and dashboard for the teams. To learn more, see [About teams and Agile tools](about-teams-and-settings.md). 
 
@@ -35,7 +35,7 @@ To customize the workflow, work item form, add fields or rules, or make other ch
 To change permissions at the project-level, many of which are work tracking related, see [Set permissions at the project-level or project collection-level](../security/set-project-collection-level-permissions.md)
  
 
-## Codex Repo (Code management) settings 
+## Azure Codex Repo (Code management) settings 
 
 You can configure the following resources to support your code development. 
 
@@ -43,7 +43,7 @@ You can configure the following resources to support your code development.
 - [Manage repository permissions](../security/set-git-tfvc-repository-permissions.md) 
 
 
-## Codex Pipelines (Build & Release) settings
+## Azure Codex Pipelines (Build & Release) settings
 
 You can configure the following resources to support your CI/CD work. 
 
@@ -58,7 +58,7 @@ You can configure the following resources to support your CI/CD work.
 -  [Agent pools, add and manage agent pools](../build-release/concepts/agents/pools-queues.md)
 -  [Deployment pools, add and manage deployment pools](/vsts/build-release/concepts/definitions/release/deployment-groups)
 
-## Codex Test (Test) settings 
+## Azure Codex Test (Test) settings 
 
 At the project-level, you can configure the following test resources: 
 
@@ -107,9 +107,9 @@ Using service hooks, you can integrate with the following services:
 > |[AppVeyor](../service-hooks/services/appveyor.md)<br/>[Bamboo](../service-hooks/services/bamboo.md)<br/>[Jenkins](../service-hooks/services/jenkins.md)<br/>[MyGet](../service-hooks/services/myget.md)<br/>[Slack](../service-hooks/services/slack.md)|[Campfire](../service-hooks/services/campfire.md)<br/>[Flowdock](../service-hooks/services/flowdock.md)<br/>[HipChat](../service-hooks/services/hipchat.md)<br/>[Hubot](../service-hooks/services/hubot.md) |[UserVoice](../service-hooks/services/uservoice.md)<br/>[Zendesk](../service-hooks/services/zendesk.md) |[Trello](../service-hooks/services/trello.md) |[Azure Service Bus](../service-hooks/services/azure-service-bus.md)<br/>[Azure Storage](../service-hooks/services/azure-storage.md)<br/>[Web Hooks](../service-hooks/services/webhooks.md)<br/>[Zapier](../service-hooks/services/zapier.md) | 
 
 
-## Manage Codex projects   
+## Manage Azure Codex projects   
 
-A Codex project provides the fundamental resource for storing your code, managing your CI/CD operations, and planning and tracking work for your project. In general, you'll want to minimize the number of team projects you create, to keep things simple. However, if you need to, you can add additional projects to your account. 
+A Azure Codex project provides the fundamental resource for storing your code, managing your CI/CD operations, and planning and tracking work for your project. In general, you'll want to minimize the number of team projects you create, to keep things simple. However, if you need to, you can add additional projects to your account. 
 
 From the account-level admin context, you can perform the following tasks: 
  

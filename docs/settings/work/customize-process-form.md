@@ -1,7 +1,7 @@
 ---
 title: Customize the web form to an  inherited process
-titleSuffix: Codex Agile  
-description: Customize the web form for a work item type and Inheritance process model for a Codex project     
+titleSuffix: Azure Codex Agile  
+description: Customize the web form for a work item type and Inheritance process model for a Azure Codex project     
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: E0AACC40-9A9E-4A48-A1D7-1CE70D53EEA8  
@@ -14,7 +14,7 @@ ms.date: 07/10/2018
 
 # Customize the web form for a work item type 
 
-[!INCLUDE [temp](../../_shared/codex-agile.md)]
+[!INCLUDE [temp](../../_shared/Azure Codex-agile.md)]
 
 Work items are the backbone for planning and tracking work. As such, you'll want to make sure that each work item type (WIT) is tracking the data that your team needs. 
 

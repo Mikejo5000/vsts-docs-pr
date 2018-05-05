@@ -1,6 +1,6 @@
 ---
 title: Switch team project or team context
-titleSuffix: Codex
+titleSuffix: Azure Codex
 description: Change the focus of your view to another team project or team in Visual Studio Team Services & Team Foundation Server 
 ms.technology: devops-settings
 ms.prod: devops

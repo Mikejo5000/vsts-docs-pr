@@ -1,7 +1,7 @@
 ---
 title: Customize backlogs and boards for an  inherited process
-titleSuffix: Codex Agile 
-description: Modify the work item types that appear on backlogs and boards, add portfolio backlogs for the Inheritance process model  for a Codex project
+titleSuffix: Azure Codex Agile 
+description: Modify the work item types that appear on backlogs and boards, add portfolio backlogs for the Inheritance process model  for a Azure Codex project
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 4B6014AA-5CD8-47B9-A1E3-BFB0CCA721AF  
@@ -14,7 +14,7 @@ ms.date: 07/10/2018
 
 # Customize your backlogs or boards  
 
-[!INCLUDE [temp](../../_shared/codex-agile.md)]     
+[!INCLUDE [temp](../../_shared/Azure Codex-agile.md)]     
 
 You can customize your backlogs to add more levels or add custom work item types (WITs) to them. As shown below, we've added a third level portfolio backlog labeled *Initiatives* which tracks the custom *Initiative* WIT, and we've renamed the product backlog to *Stories and Tickets* to indicate that we not only track *User Stories*, but also *Customer Tickets* on the product backlog. 
  

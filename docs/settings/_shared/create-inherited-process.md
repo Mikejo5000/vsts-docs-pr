@@ -4,7 +4,7 @@
 
 The first step is to create an inherited process that you can customize. The default, system processes are locked from being customized. 
   
-0. From the **Process** page, open the **&hellip;** context menu of the process you'll use to create an inherited process, and then choose **Create inherited process**. Choose the same system process&mdash;[Agile](/vsts/work/work-items/guidance/agile-process), [Scrum](/vsts/work/work-items/guidance/scrum-process), or [CMMI](/vsts/work/work-items/guidance/cmmi-proces)&mdash;that was used to create the Codex project that you want to customize. 
+0. From the **Process** page, open the **&hellip;** context menu of the process you'll use to create an inherited process, and then choose **Create inherited process**. Choose the same system process&mdash;[Agile](/vsts/work/work-items/guidance/agile-process), [Scrum](/vsts/work/work-items/guidance/scrum-process), or [CMMI](/vsts/work/work-items/guidance/cmmi-proces)&mdash;that was used to create the Azure Codex project that you want to customize. 
 
 	Here, we create an inherited process from the Agile system process.   
 

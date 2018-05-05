@@ -1,6 +1,6 @@
 ---
-title: Codex Settings
-titleSuffix: Codex
+title: Azure Codex Settings
+titleSuffix: Azure Codex
 description: Configure settings for teams, projects, and account-level objects
 ms.technology: devops-settings
 ms.prod: devops
@@ -13,7 +13,7 @@ monikerRange: 'vsts'
 ms.date: 04/01/2018
 ---
 
-# Codex Settings 
+# Azure Codex Settings 
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
 

@@ -1,7 +1,7 @@
 ---
 title: Create and manage an inherited process 
-titleSuffix: Codex Agile
-description: Add custom fields, work item types, and more by creating and applying an inherited process to a Codex Agile project  
+titleSuffix: Azure Codex Agile
+description: Add custom fields, work item types, and more by creating and applying an inherited process to a Azure Codex Agile project  
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 6EB45080-22E2-43AD-92F9-77D03D5C136F  
@@ -17,9 +17,9 @@ ms.date: 07/10/2018
 
 # Create and manage inherited processes 
 
-[!INCLUDE [temp](../../_shared/codex-agile.md)]
+[!INCLUDE [temp](../../_shared/Azure Codex-agile.md)]
 
-You customize your Codex project, Agile tools, and the work tracking system through an inherited process. The customizations you make are in effect for all projects that use the process. A process defines the building blocks of the work tracking system. Whenever you create a Codex project, you select the process you want your project to use. 
+You customize your Azure Codex project, Agile tools, and the work tracking system through an inherited process. The customizations you make are in effect for all projects that use the process. A process defines the building blocks of the work tracking system. Whenever you create a Azure Codex project, you select the process you want your project to use. 
 
 To learn more about what you can customize, see [About process customization and inherited processes](inheritance-process-model.md). 
 
@@ -33,7 +33,7 @@ In this article, learn how to perform these tasks:
 > * Change team projects to use an inherited process or a system process    
 > * Add a project based on a process   
 > * Enable or disable a process
-> * Set a process as the default to use when adding Codex projects  
+> * Set a process as the default to use when adding Azure Codex projects  
 
 [!INCLUDE [temp](../_shared/process-prerequisites.md)] 
 
@@ -104,7 +104,7 @@ You can change the process a project uses from a system process or inherited pro
 	> [!div class="mx-imgBorder"]  
 	> ![Create a team project from the selected process](_img/process/add-new-team-project.png) 
 
-0. The Create new project page opens. For details, see [Create a Codex project](../../accounts/create-team-project.md).
+0. The Create new project page opens. For details, see [Create a Azure Codex project](../../accounts/create-team-project.md).
 
 <a id="copy-process">  </a>
 ## Copy a process

@@ -14,7 +14,7 @@ ms.date: 07/10/2018
 
 # Add a custom control to a work item type 
 
-[!INCLUDE [temp](../../_shared/codex-agile.md)]
+[!INCLUDE [temp](../../_shared/Azure Codex-agile.md)]
 
 With custom controls, you can add rich functionality to your work item forms. A custom control comes in four flavors, or contribution types. The following controls appear on the web form layout for all inherited and customizable work item types (WITs):    
 - Field-level contribution 

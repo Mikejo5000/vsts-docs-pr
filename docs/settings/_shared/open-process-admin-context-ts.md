@@ -6,7 +6,7 @@ You create, manage, and make customizations to processes from the **Settings>Pro
 
 # [Vertical navigation](#tab/vertical) 
 
-0. Choose the ![](/vsts/_img/icons/project-icon.png) to return to the **Codex** page.  
+0. Choose the ![](/vsts/_img/icons/project-icon.png) to return to the **Azure Codex** page.  
 
 0. Choose the ![](/vsts/_img/icons/actions-icon.png) actions icon and then choose the **Settings** option.  
 
