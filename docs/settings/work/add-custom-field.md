@@ -13,7 +13,7 @@ ms.date: 07/10/2018
 ---
 
 # Add a custom field to a work item type    
-[!INCLUDE [temp](../../_shared/Azure Codex-agile.md)]
+[!INCLUDE [temp](../../_shared/codex-agile.md)]
 
 You add a custom field to support tracking data requirements you have that aren't met with the existing set of fields. For example, you can add a custom field to track a customer ticket number. For a list of all fields defined for your account&mdash;which includes all fields defined for system and inherited processes&mdash;see [Review fields](customize-process-field.md#review-fields).  
 

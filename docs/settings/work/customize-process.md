@@ -14,7 +14,7 @@ ms.date: 07/10/2018
 
 # Customize a project using an inherited process
 
-[!INCLUDE [temp](../../_shared/Azure Codex-agile.md)]
+[!INCLUDE [temp](../../_shared/codex-agile.md)]
 
 Each Azure Codex project is based on a process that defines the building blocks for tracking work. The first project you create uses one of the default processes&mdash;[Agile](/vsts/work/work-items/guidance/agile-process), [Scrum](/vsts/work/work-items/guidance/scrum-process), or [CMMI](/vsts/work/work-items/guidance/cmmi-proces). 
 

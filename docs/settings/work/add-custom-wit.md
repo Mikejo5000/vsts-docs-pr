@@ -16,7 +16,7 @@ ms.date: 07/10/2018
 
 # Add a custom work item type     
 
-[!INCLUDE [temp](../../_shared/Azure Codex-agile.md)]
+[!INCLUDE [temp](../../_shared/codex-agile.md)]
 
 You use different work item types (WITs) to plan and track different types of work. The main reason you add a custom WIT is to customize the web form and workflow states to meet specific business use cases. Or, you can customize an existing WIT. Your Azure Codex project contains 9 or more WITs that you can customize, based on the process used to create your project.  
 

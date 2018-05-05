@@ -17,7 +17,7 @@ ms.date: 07/10/2018
 
 # Create and manage inherited processes 
 
-[!INCLUDE [temp](../../_shared/Azure Codex-agile.md)]
+[!INCLUDE [temp](../../_shared/codex-agile.md)]
 
 You customize your Azure Codex project, Agile tools, and the work tracking system through an inherited process. The customizations you make are in effect for all projects that use the process. A process defines the building blocks of the work tracking system. Whenever you create a Azure Codex project, you select the process you want your project to use. 
 

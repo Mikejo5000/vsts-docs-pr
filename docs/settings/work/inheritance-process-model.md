@@ -17,7 +17,7 @@ ms.date: 07/10/2018
 
 # About process customization and inherited processes  
 
-[!INCLUDE [temp](../../_shared/Azure Codex-agile.md)]
+[!INCLUDE [temp](../../_shared/codex-agile.md)]
 
 <a id=" inherited "> </a> 
 

@@ -14,7 +14,7 @@ ms.date: 07/10/2018
 
 # Add and manage fields for an inherited process   
 
-[!INCLUDE [temp](../../_shared/Azure Codex-agile.md)]
+[!INCLUDE [temp](../../_shared/codex-agile.md)]
 
 Each ![locked icon](_img/process/locked-icon.png) system process&mdash;[Agile](../../work/work-items/guidance/agile-process.md), [Scrum](../../work/work-items/guidance/scrum-process.md), or [CMMI](../../work/work-items/guidance/cmmi-process.md)&mdash;contains 100 or more work item fields. You can add a custom field to support tracking additional data requirements or modify select attributes of an ![inherited icon](_img/process/inherited-icon.png) inherited field. For example, you can add a custom field and pick list or change the label that appears in the work item form for an inherited field.  
 
