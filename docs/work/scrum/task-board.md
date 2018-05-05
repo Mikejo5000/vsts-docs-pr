@@ -163,8 +163,8 @@ Each team can customize their task board in the following ways:
 An administrator can customize the task board for all teams in the following ways:  
 
 ::: moniker range="vsts"
-- [Add a custom workflow state to the task WIT for a process](../customize/process/customize-process-workflow.md)
-- [Add a custom work item type to the task board for a process](../customize/process/customize-process-backlogs-boards.md)
+- [Add a custom workflow state to the task WIT for a process](../../settings/work/customize-process-workflow.md)
+- [Add a custom work item type to the task board for a process](../../settings/work/customize-process-backlogs-boards.md)
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"

@@ -190,7 +190,7 @@ The following table indicates those elements or tasks associated with each type 
 <td>Yes, see [Column options](set-column-options.md)</td>
 <td>Yes, see [Add columns](../kanban/add-columns.md)</td>
 <td>Yes, see [Column options](set-column-options.md)</td>
-<td>Yes, see [Customize workflow](../customize/process/customize-process-workflow.md)</td>
+<td>Yes, see [Customize workflow](../../settings/work/customize-process-workflow.md)</td>
 </tr>
 
 <tr>
@@ -269,7 +269,7 @@ When you configure a plan, you select the team or teams and backlog levels of in
 
 ::: moniker range="vsts"
 ## Customize backlog levels 
-If you need more than three backlog levels, you can add more. To learn how, see [Customize your backlogs or boards for a process](../customize/process/customize-process-backlogs-boards.md). 
+If you need more than three backlog levels, you can add more. To learn how, see [Customize your backlogs or boards for a process](../../settings/work/customize-process-backlogs-boards.md). 
 ::: moniker-end
  
 ::: moniker range=">= tfs-2013 <= tfs-2018" 

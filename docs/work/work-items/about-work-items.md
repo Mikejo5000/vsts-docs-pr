@@ -46,7 +46,7 @@ The new form and its corresponding features are available from the web portal. T
 
 # [New web form](#tab/new-web-form)
 
-The new web form provides a number of experiences not provided with the old web form. To learn more, see [New work item experience](../customize/process/new-work-item-experience.md). 
+The new web form provides a number of experiences not provided with the old web form. To learn more, see [New work item experience](../../settings/work/new-work-item-experience.md). 
 
 ![Work item form to track features or user stories](../backlogs/_img/add-work-item-vsts-user-story-form.png)
 

@@ -37,9 +37,6 @@ In this article, learn how to perform these tasks:
 
 [!INCLUDE [temp](../_shared/process-prerequisites.md)] 
 
-<a id="open-process-wit">  </a>
-## Open Settings>Process hub
-
 [!INCLUDE [temp](../_shared/open-process-admin-context-ts.md)]
 
 
@@ -56,7 +53,7 @@ You can create an inherited process from any one of the three system processes: 
 
 	If you don't have access to these options, ask your project collection admin to [grant you permissions](../../security/set-permissions-access-work-tracking.md#process-permissions). 
 
-0.	Enter a name for your process and optionally a description. (For naming restrictions, see [Process name restrictions](#process-naming) later in this topic.)
+0.	Enter a name for your process and optionally a description. (For naming restrictions, see [About process customization and inherited processes, Process name restrictions](inheritance-process-model.md#process-naming).
 
 	<img src="_img/process/mprocess-create-inherited-process-dialog.png" alt="Create inherited process dialog" style="border: 1px solid #C3C3C3;" />  
 
@@ -67,12 +64,6 @@ Once you've defined the inherited process, you can perform these actions:
 
 <a id="migrate"></a>
 ## Change the process used by a project    
-
-> [!IMPORTANT]  
->When you change a project to use an inherited process, you may find one or more Agile tools or work items appear in an invalid state. For example: 
-> 
-> - If you make a field required, work items with that field undefined will show an error message. You'll need to resolve the errors to make additional changes and save the work item. 
-> - If you add or remove/hide workflow states of a WIT that appears on the Kanban board, you'll need to update the Kanban board column configurations for all teams defined in the team project.  
 
 You can change the process a project uses from a system process or inherited process to an inherited process. You can only change projects to use another process that inherits from the same system process. That is, you can change an Agile-based project to any process you created from the Agile system process as well as to the Agile process. Whereas, you can't change a Scrum-based project to an Agile-derived inherited process.  
 
@@ -97,6 +88,12 @@ You can change the process a project uses from a system process or inherited pro
 	<img src="_img/process/mprocess-change-process-dialog-to-agile.png" alt="Change process to a system process dialog" style="border: 1px solid #C3C3C3;" />  
 
 0. After  you've confirmed that the projects you want to change are correct, click Ok. 
+
+> [!IMPORTANT]  
+>When you change a project to use an inherited process, you may find one or more Agile tools or work items appear in an invalid state. For example: 
+> 
+> - If you make a field required, work items with that field undefined will show an error message. You'll need to resolve the errors to make additional changes and save the work item. 
+> - If you add or remove/hide workflow states of a WIT that appears on the Kanban board, you'll need to update the Kanban board column configurations for all teams defined in the team project. 
 
 
 <a id="create-team-project">  </a>
@@ -143,9 +140,7 @@ To prevent team projects being created from a process, you disable it. You might
 
 All system processes and newly created inherited processes are enabled by default. 
 
-1. To disable a process, open the &hellip; context menu for the process and choose **Disable process**. 
-
-2. To enable a process, open the &hellip; context menu for the process and choose **Enable process**. 
+- To disable or enable a process, open the &hellip; context menu for the process and choose **Disable process** or **Enable process**. 
 
 
 <a id="default-process">  </a>
@@ -157,19 +152,17 @@ To set a process as the default, open the &hellip; context menu for the inherite
 
 Account owners and Project Collection Administrators can add team projects from the admin **Overview** page or the [account My Projects page](../../user-guide/account-home-pages.md). 
 
+## Try this next
+> [!div class="nextstepaction"]
+> [Add and manage fields for an inherited process](customize-process-field.md) 
+> Or
+> [Add and manage work item types](customize-process-wit.md)
+
 
 ## Related articles  
 
-For an overview of what you can customize, see [Customize a process](customize-process.md).  
-
-
-
-
-<a id="process-naming"></a>
-### Process name restrictions  
-Process names must be unique and 128 Unicode characters or less. Also, names can't contain the following characters: ```.,;'`:~\/\*|?"&%$!+=()[]{}<>```. 
-
-To rename a process, open the &hellip; context menu for the process and choose **Edit**. 
+- [About process customization and inherited processes](inheritance-process-model.md)
+- [Customize a project using an inherited process](customize-process.md). 
 
 
 <a id="process-rest-api">  </a>

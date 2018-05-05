@@ -186,7 +186,7 @@ Yes. When you add user accounts to a team project, you can add them as members o
 - To have work performed by several teams roll up in to a portfolio backlog, you'll want to [setup the team hierarchy](../work/scale/portfolio-management.md) 
 - To add fields or work item types, see [Customize your work tracking experience](../work/customize/customize-work.md).
 
-## Related notes 
+## Related articles 
 
 - [Add another team](../work/scale/multiple-teams.md)  
 - [Set team defaults](../work/scale/set-team-defaults.md)  

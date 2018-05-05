@@ -18,7 +18,7 @@ ms.date: 03/20/2018
 > [!IMPORTANT]  
 >**Feature availability:**&#160;&#160;Import process supports the Hosted XML process model which allows you to manage customizations through updating the WIT definition of a process template. This feature is only available for accounts that have been migrated to VSTS using the [TFS Database Import Service](https://aka.ms/TFSDataImport).  
 >
->If you use the Inheritance process model, you can customize your work tracking through the user interface by [creating an inherited process](../process/manage-process.md). If you use the On-premises XML process model, you can customize a process template, see [Upload or download a process template](../../work-items/guidance/manage-process-templates.md) and [Customize a process template](../reference/process-templates/customize-process.md).
+>If you use the Inheritance process model, you can customize your work tracking through the user interface by [creating an inherited process](../../../settings/work/manage-process.md). If you use the On-premises XML process model, you can customize a process template, see [Upload or download a process template](../../work-items/guidance/manage-process-templates.md) and [Customize a process template](../reference/process-templates/customize-process.md).
 >
 >To learn more about process models, see [Customize work tracking](../customize-work.md). 
 
@@ -84,7 +84,7 @@ Name your process something other than Scrum, Agile, or CMMI. These system proce
 2.  From the Process tab, choose import and then browse to the zip file of the process you've customized.  
   
     > [!NOTE]    
-    >If you don't see the **Import process** link, then your account isn't set up to support the Hosted XML process model. You should work with the [Inheritance process model](../process/manage-process.md) for your customization needs. The Hosted XML process model is only supported if your account was created through the [Data Import Service](https://aka.ms/TFSDataImport).
+    >If you don't see the **Import process** link, then your account isn't set up to support the Hosted XML process model. You should work with the [Inheritance process model](../../../settings/work/manage-process.md) for your customization needs. The Hosted XML process model is only supported if your account was created through the [Data Import Service](https://aka.ms/TFSDataImport).
 
     <img src="_img/import-process-import.png" alt="Import Process, choose process file to import" style="border: 2px solid #C3C3C3;" />
 

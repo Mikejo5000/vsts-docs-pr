@@ -10,33 +10,32 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-robots: NOINDEX, NOFOLLOW
 ms.date: 04/01/2018
 ---
 
-# About project and account settings 
+# About project and organizational-level settings 
 
 From the administrative or **Settings** context, you configure resources that support your teams. 
 
 You'll find a quick guide of those resources you can configure based on the corresponding application.  
   
-## Work 
+## Codex Agile (Work tracking) settings
 
 Many work tracking/Agile tools provide teams the autonomy they need to configure and manage their work independent of other teams. When you add a team, you also configure a product backlog, Kanban board, and dashboard for the teams. To learn more, see [About teams and Agile tools](about-teams-and-settings.md). 
 
-Work items and work tracking rely heavily on the following settings which you define at the project-level. 
+Work items and work tracking rely heavily on the following project-level settings: 
 
 - [Area paths](../work/customize/set-area-paths.md)
 - [Iteration paths aka sprints](../work/customize/set-iteration-paths-sprints.md)
 
 To configure additional product backlogs, Kanban boards, and dashboards, you [configure a team](#configure-team).   
 
-To customize the workflow, work item form, add fields or rules, or make other changes to the work tracking experience, you customize a process. For an overview of what you can customize, see [Customize a process](../work/customize/process/customize-process.md). 
+To customize the workflow, work item form, add fields or rules, or make other changes to the work tracking experience, you customize a process. For an overview of what you can customize, see [About process customization and inherited processes](work/inheritance-process-model.md). 
  
 To change permissions at the project-level, many of which are work tracking related, see [Set permissions at the project-level or project collection-level](../security/set-project-collection-level-permissions.md)
  
 
-## Code 
+## Codex Repo (Code management) settings 
 
 You can configure the following resources to support your code development. 
 
@@ -44,7 +43,7 @@ You can configure the following resources to support your code development.
 - [Manage repository permissions](../security/set-git-tfvc-repository-permissions.md) 
 
 
-## Continuous Integration/Continuous Development (CI/CD) (Build & Release) 
+## Codex Pipelines (Build & Release) settings
 
 You can configure the following resources to support your CI/CD work. 
 
@@ -53,13 +52,13 @@ You can configure the following resources to support your CI/CD work.
 - [Services](../build-release/concepts/library/service-endpoints.md)
 - Release, Retention Policy Settings - TBD
 
-**Account-level:**
+**Organizational-level:**
 -  [Build and Release, Retention policies](../build-release/concepts/policies/retention.md)
 -  [Build and Release, Resource limits for pipelines](../build-release/concepts/licensing/concurrent-pipelines-ts.md)
 -  [Agent pools, add and manage agent pools](../build-release/concepts/agents/pools-queues.md)
 -  [Deployment pools, add and manage deployment pools](/vsts/build-release/concepts/definitions/release/deployment-groups)
 
-## Test
+## Codex Test (Test) settings 
 
 At the project-level, you can configure the following test resources: 
 
@@ -67,20 +66,20 @@ At the project-level, you can configure the following test resources:
 - [Permissions](../security/set-project-collection-level-permissions.md)
  
 > [!NOTE]  
-> Manual testing relies on work item types to create and manage test plans, test suites, test cases, shared steps, and shared parameters. Of these, you can customize the test plans, test suites, and test cases using an inherited process. See [Customize a process](../work/customize/process/customize-process.md).   
+> Manual testing relies on work item types to create and manage test plans, test suites, test cases, shared steps, and shared parameters. Of these, you can customize the test plans, test suites, and test cases using an inherited process. See [Customize a process](work/customize-process.md).   
 
 ## Cross-application resources 
 
-Teams, notifications, dashboards, team projects, and other resources are used by several applications. You can add or configure these resources through the admin context.
+Teams, notifications, and other resources are used by several applications. You can add or configure these resources through the **Settings** context.
 
 <a id="configure-teams" /> 
-### Teams 
+## Teams 
 
 You add a team when you want to provide a group of users in your organization a set of Agile tools which they have full ownership to configure and manage.  Teams have access to a product backlog, porfolio backlogs, sprint backlogs, dashboards, team-scoped widgets, and more. For an overview of all tools that support a team, see [About teams and Agile tools](about-teams-and-settings.md).
 
 To add a team, see [Add teams and team members](../work/scale/multiple-teams.md).
 
-### Notifications  
+## Notifications  
 
 As changes are made to the code, a build, work items or other development object, you or your team members can receive an email. These notifications are based on subscriptions which are defined at the following levels: 
 
@@ -91,11 +90,11 @@ As changes are made to the code, a build, work items or other development object
 
 To learn more, see [About notifications](../notifications/about-notifications.md).
 
-### Dashboards 
+## Dashboards 
 
 New dashboards are added to a team project through a team context. To learn more, see [Add and manage dashboards](../report/dashboards/dashboards.md).
 
-### Service hooks 
+## Service hooks 
 
 Service hooks enable you to perform tasks on other services when events happen within your team project. You can use service hooks in custom apps and services to drive activities when events happen in your projects. 
 
@@ -108,9 +107,9 @@ Using service hooks, you can integrate with the following services:
 > |[AppVeyor](../service-hooks/services/appveyor.md)<br/>[Bamboo](../service-hooks/services/bamboo.md)<br/>[Jenkins](../service-hooks/services/jenkins.md)<br/>[MyGet](../service-hooks/services/myget.md)<br/>[Slack](../service-hooks/services/slack.md)|[Campfire](../service-hooks/services/campfire.md)<br/>[Flowdock](../service-hooks/services/flowdock.md)<br/>[HipChat](../service-hooks/services/hipchat.md)<br/>[Hubot](../service-hooks/services/hubot.md) |[UserVoice](../service-hooks/services/uservoice.md)<br/>[Zendesk](../service-hooks/services/zendesk.md) |[Trello](../service-hooks/services/trello.md) |[Azure Service Bus](../service-hooks/services/azure-service-bus.md)<br/>[Azure Storage](../service-hooks/services/azure-storage.md)<br/>[Web Hooks](../service-hooks/services/webhooks.md)<br/>[Zapier](../service-hooks/services/zapier.md) | 
 
 
-### Team projects  
+## Manage Codex projects   
 
-A team project provides the fundamental resource for storing your code, managing your CI/CD operations, and planning and tracking work for your project. In general, you'll want to minimize the number of team projects you create, to keep things simple. However, if you need to, you can add additional team projects to your account. 
+A Codex project provides the fundamental resource for storing your code, managing your CI/CD operations, and planning and tracking work for your project. In general, you'll want to minimize the number of team projects you create, to keep things simple. However, if you need to, you can add additional projects to your account. 
 
 From the account-level admin context, you can perform the following tasks: 
  
@@ -119,9 +118,9 @@ From the account-level admin context, you can perform the following tasks:
 - [Delete a team project](../accounts/delete-team-project.md) 
 
 
-## Additional account-level settings
+## Additional organizational-level settings
 
-In addition to the app-specific resources that you can configure, you can also manage your account, users, extensions, and account-level permissions. 
+In addition to the app-specific resources that you can configure, you can also manage your account, users, extensions, and organizational-level permissions. 
 
 ### Settings
 

@@ -53,7 +53,7 @@ The bug work item form tracks similar information to the one shown for the Scrum
 
 # [New web form](#tab/new-web-form)
 ::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
-The new web form provides a number of experiences not provided with the old web form. To learn more, see [New work item experience](../customize/process/new-work-item-experience.md). 
+The new web form provides a number of experiences not provided with the old web form. To learn more, see [New work item experience](../../settings/work/new-work-item-experience.md). 
 
 <img src="_img/manage-bugs-scrum-bug-from-ts.png" alt="Scrum bug work item form, VSTS" style="border: 2px solid #C3C3C3;" />
 
