@@ -262,7 +262,8 @@ Configuring the Burnup widget is exactly like configuring the Burnup widget, exc
 
 * [Define sprints for the team project](../../work/customize/set-iteration-paths-sprints.md)
 * [Select sprints for a team](../../work/scale/set-team-defaults.md)
-* [Add a custom field to a work item type](../../work/customize/process/customize-process-field.md)
+* [Add a custom field to a work item type](../../settings/work/customize-process-field.md)
+
 
 ####Industry resources 
 
