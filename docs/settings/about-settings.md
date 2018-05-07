@@ -1,7 +1,7 @@
 ---
-title: About project and account settings
-titleSuffix: VSTS & TFS
-description: Overview of configuring account and project settings
+title: About team, project and organizational-level settings
+titleSuffix: Azure Codex Agile & TFS
+description: Overview of configuring team, project, and organizational-level settings in Azure Codex Agile & Team Foundation Server
 ms.technology: devops-settings
 ms.prod: devops
 ms.topic: overview

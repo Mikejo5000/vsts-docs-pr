@@ -17,7 +17,7 @@ ms.date: 07/10/2018
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
 
-Manage permissions, add teams, and configure team, project, and organizational-level resources. 
+Define area and iteration paths, add teams, and configure additional team, project, and organizational-level resources. 
 
 ## 5-Minute Quickstarts    
 - [Set area paths](set-area-paths.md)
@@ -28,15 +28,16 @@ Manage permissions, add teams, and configure team, project, and organizational-l
 
 ## Tutorials
 
-- [Add and manage users](../accounts/add-account-users-from-user-hub.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)  
+- [Add & manage users](../accounts/add-account-users-from-user-hub.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)  
 - [Customize a project](./work/customize-process.md) 
-- [Add and manage inherited processes](./work/manage-process.md) 
+- [Add & manage inherited processes](./work/manage-process.md) 
 
 ## Concepts 
 
-- [About areas and iterations](about-areas-iterations.md)  
+- [About areas & iterations](about-areas-iterations.md) 
+- [About teams & Agile tools](about-teams-and-settings.md) 
 - [About process customization](./work/inheritance-process-model.md)        
-- [Team administrator role and permissions](../work/scale/team-administrator-permissions.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)
+
 
 ## How-to Guides
 - [Set team defaults](../work/scale/set-team-defaults.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)    
@@ -45,7 +46,8 @@ Manage permissions, add teams, and configure team, project, and organizational-l
 
 
 ## Reference
-- [Default permissions and access](../security/permissions-access.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)    
+- [Default permissions and access](../security/permissions-access.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)  
+- [Team administrator role & permissions](../work/scale/team-administrator-permissions.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)  
 
 
 ## Resources 
