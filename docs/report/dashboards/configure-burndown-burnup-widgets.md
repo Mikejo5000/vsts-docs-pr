@@ -4,7 +4,6 @@ titleSuffix: VSTS
 description: Configure a Burndown or Burnup widget that you add to a dashboard to track progress across one or more teams in Visual Studio Team Services
 ms.technology: devops-analytics
 ms.prod: devops
-ms.assetid: 
 ms.topic: tutorial
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
@@ -108,7 +107,10 @@ The Configuration dialog for the Burndown and Burnup widgets is the same. You co
 	This option is presented for the PBI Backlog for Scrum projects, and the Requirements backlog for CMMI projects.   
 	![Burndown Widget - Configuration - Select work item types](./_img/burndown-widget/burndownup-config-select-backlog.png)  
 
-	You can also select **Work item type** to burndown on a specific work item type. In the list, you will find all the project's work item types including [custom work item types](../../settings/work/customize-process-wit.md).   
+   > [!NOTE]   
+   > If your project has been customized using a [Hosted XML process](../../work/customize/hosted-xml-process-model.md) and has created a customized bug work item category name, then the Burndown and Burnup widgets won't be able to query for work items within that category. To query for bugs, the customized bug work item type must belong to the default **Bug Category**, reference name `Microsoft.BugCategory`.  
+   
+	You can also select **Work item type** to burndown on a specific work item type. In the list, you will find all the project's work item types including [custom work item types](../../work/customize/process/customize-process-wit.md).   
 	![Burndown Widget - Configuration - Select work item types](./_img/burndown-widget/burndownup-config-select-work-item-type.png)  
 
 1. (Optional) Select field criteria to limit the work items that appear in the chart.  
@@ -260,7 +262,7 @@ Configuring the Burnup widget is exactly like configuring the Burnup widget, exc
 
 * [Define sprints for the team project](../../work/customize/set-iteration-paths-sprints.md)
 * [Select sprints for a team](../../work/scale/set-team-defaults.md)
-* [Add a custom field to a work item type](../../settings/work/customize-process-field.md)
+* [Add a custom field to a work item type](../../work/customize/process/customize-process-field.md)
 
 ####Industry resources 
 
