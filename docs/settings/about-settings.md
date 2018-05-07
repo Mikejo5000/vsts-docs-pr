@@ -1,5 +1,5 @@
 ---
-title: About team, project and organizational-level settings
+title: About team, project & organizational-level settings
 titleSuffix: Azure Codex Agile & TFS
 description: Overview of configuring team, project, and organizational-level settings in Azure Codex Agile & Team Foundation Server
 ms.technology: devops-settings
@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2013'
 ms.date: 04/01/2018
 ---
 
-# About project and organizational-level settings 
+# About team, project, and organizational-level settings 
 
 From the administrative or **Settings** context, you configure resources that support your teams. 
 
@@ -23,10 +23,12 @@ You'll find a quick guide of those resources you can configure based on the corr
 
 Many work tracking/Agile tools provide teams the autonomy they need to configure and manage their work independent of other teams. When you add a team, you also configure a product backlog, Kanban board, and dashboard for the teams. To learn more, see [About teams and Agile tools](about-teams-and-settings.md). 
 
-Work items and work tracking rely heavily on the following project-level settings: 
+You configure work tracking settings at one of the following three levels. 
 
-- [Area paths](../work/customize/set-area-paths.md)
-- [Iteration paths aka sprints](../work/customize/set-iteration-paths-sprints.md)
+> [!div class="mx-tdCol2BreakAll"]  
+> |  Team  | Project | Organization | 
+> |------|---------|---------|
+|- [Backlog levels](../work/customize/select-backlog-navigation-levels.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)<br/>- [Show bugs on backlogs & boards](../work/customize/show-bugs-on-backlog.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json<br/>- [Set working days](../work/customize/set-working-days.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)<br/>- [Default areas & iterations](../work/scale/set-team-defaults.md)<br/>- [Work item templates](../work/backlogs/work-item-template.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json) |- [Area paths](../work/customize/set-area-paths.md)<br/>- [Iteration paths aka sprints](../work/customize/set-iteration-paths-sprints.md)| - [Customize a project](./work/customize-process.md)<br/>- [Create and manage a process](./work/manage-process.md)<br/>- [Add and manage fields](./work/customize-process-field.md)<br/>- [Add and manage work item types](./work/customize-process-wit.md)<br/>- [Customize a web form](./work/customize-process-form.md)<br/>- [Customize a workflow](./work/customize-process-workflow.md)<br/>- [Add a custom rule](./work/custom-rules.md)<br/>- [Add a custom control](./work/custom-controls-process.md)<br/>- [Customize backlogs and boards](./work/customize-process-backlogs-boards.md) |
 
 To configure additional product backlogs, Kanban boards, and dashboards, you [configure a team](#configure-team).   
 
@@ -37,7 +39,7 @@ To change permissions at the project-level, many of which are work tracking rela
 
 ## Azure Codex Repo (Code management) settings 
 
-You can configure the following resources to support your code development. 
+You can configure the following resources to support your code development at the project level. 
 
 - [Create a new Git repo](../git/tutorial/creatingrepo.md) 
 - [Manage repository permissions](../security/set-git-tfvc-repository-permissions.md) 
@@ -45,18 +47,12 @@ You can configure the following resources to support your code development.
 
 ## Azure Codex Pipelines (Build & Release) settings
 
-You can configure the following resources to support your CI/CD work. 
+To support CI/CD work, you configure the following resources at either the project or organizational level.  
 
-**Project-level:**
-- [Agent queues](../build-release/concepts/agents/pools-queues.md)
-- [Services](../build-release/concepts/library/service-endpoints.md)
-- Release, Retention Policy Settings - TBD
-
-**Organizational-level:**
--  [Build and Release, Retention policies](../build-release/concepts/policies/retention.md)
--  [Build and Release, Resource limits for pipelines](../build-release/concepts/licensing/concurrent-pipelines-ts.md)
--  [Agent pools, add and manage agent pools](../build-release/concepts/agents/pools-queues.md)
--  [Deployment pools, add and manage deployment pools](/vsts/build-release/concepts/definitions/release/deployment-groups)
+> [!div class="mx-tdCol2BreakAll"]  
+> | Project | Organization | 
+> |------|---------|
+> | - [Agent queues](../build-release/concepts/agents/pools-queues.md)<br/>- [Services](../build-release/concepts/library/service-endpoints.md)<br/>- Release, Retention Policy Settings | - [Build and Release, Retention policies](../build-release/concepts/policies/retention.md)<br/>- [Build and Release, Resource limits for pipelines](../build-release/concepts/licensing/concurrent-pipelines-ts.md)<br/>- [Agent pools, add and manage agent pools](../build-release/concepts/agents/pools-queues.md)<br/>- [Deployment pools, add and manage deployment pools](/vsts/build-release/concepts/definitions/release/deployment-groups) |
 
 ## Azure Codex Test (Test) settings 
 
@@ -100,7 +96,6 @@ Service hooks enable you to perform tasks on other services when events happen w
 
 Using service hooks, you can integrate with the following services: 
 
-
 > [!div class="mx-tdCol2BreakAll"]  
 > | Build and release |  Collaborate | Customer support	 | Plan and track  | Integrate |
 > |-------------------| -------------| ------------------| ----------------| ------------|
@@ -117,12 +112,23 @@ From the account-level admin context, you can perform the following tasks:
 - [Rename a team project](../accounts/rename-team-project.md)
 - [Delete a team project](../accounts/delete-team-project.md) 
 
+## Extensions 
+
+From the account-level admin context **Extensions** page, you can [install and manage Marketplace extensions](../marketplace/install-vsts-extension.md). 
+
+An extension is an installable unit that contributes new capabilities to your account. You can find extensions from within the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vsts?utm_source=vstsproduct&utm_medium=L1BrowseMarketplace&targetId=1a7c88fb-3672-441e-9686-0f72b02ae6a4).  The Visual Studio Marketplace is home to hundreds of extensions that can be installed to help with:
+
+- Planning and tracking of work items, sprints, scrums, etc.
+- Build and release flows
+- Code testing and tracking
+- Collaboration among team members
+
 
 ## Additional organizational-level settings
 
 In addition to the app-specific resources that you can configure, you can also manage your account, users, extensions, and organizational-level permissions. 
 
-### Settings
+### Organizational-level settings
 
 From the account-level **Settings** page, you can change the time zone for your account and perform the following tasks: 
 - [Change account owner](../accounts/change-account-ownership-vs.md) 
@@ -140,16 +146,6 @@ From the account-level **Users** page, you can export the set of users and their
 - [Remove users from your account](../accounts/delete-account-users.md)
 - [Assign access levels and extensions to users by group membership](../accounts/assign-access-levels-and-extensions-by-group-membership.md)
 
-### Extensions 
-
-From the account-level admin context **Extensions** page, you can [install and manage Marketplace extensions](../marketplace/install-vsts-extension.md). 
-
-An extension is an installable unit that contributes new capabilities to your account. You can find extensions from within the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vsts?utm_source=vstsproduct&utm_medium=L1BrowseMarketplace&targetId=1a7c88fb-3672-441e-9686-0f72b02ae6a4).  The Visual Studio Marketplace is home to hundreds of extensions that can be installed to help with:
-
-- Planning and tracking of work items, sprints, scrums, etc.
-- Build and release flows
-- Code testing and tracking
-- Collaboration among team members
 
 
 ### Account-level permissions or Security  

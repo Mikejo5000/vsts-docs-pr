@@ -43,7 +43,7 @@
 - name: How-to Guides
   items:    
   - name: Security
-    href: set-project-collection-level-permissions.md 
+    href: ../security/set-project-collection-level-permissions.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
   - name: Manage notifications
     href: ../collaborate/manage-team-notifications.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
   - name: Service hooks
@@ -59,6 +59,8 @@
         href: switch-team-context.md
       - name: Set team defaults
         href: ../work/scale/set-team-defaults.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+      - name: Use work item templates
+        href: ../work/backlogs/work-item-template.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
       - name: Customize cards on boards
         href: ../work/customize/customize-cards.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
       - name: Reorder cards
