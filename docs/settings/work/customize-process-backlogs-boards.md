@@ -1,5 +1,5 @@
 ---
-title: Customize backlogs and boards for an  inherited process
+title: Customize backlogs and boards for an inherited process
 titleSuffix: Azure Codex Agile 
 description: Modify the work item types that appear on backlogs and boards, add portfolio backlogs for the Inheritance process model  for a Azure Codex project
 ms.technology: devops-agile
@@ -21,7 +21,7 @@ You can customize your backlogs to add more levels or add custom work item types
 > [!div class="mx-imgBorder"]  
 > ![Changes made to the backlog levels](_img/process/process-backlog-boards-intro.png) 
 
-Your team project comes equipped with two portfolio backlogs: Features and Epics. However, if you need one or more additional portfolio backlogs, you can add them.   
+Your Codex project comes equipped with two portfolio backlogs: Features and Epics. However, if you need one or more additional portfolio backlogs, you can add them.   
 
 Portfolio backlogs are useful for organizing your backlog under various business initiatives and user scenarios. When you [organize your backlogs into portfolios](../../work/backlogs/organize-backlog.md), you can gain a hierarchical view of the work defined in lower-level backlogs, including work in progress across several teams. Program managers can track the status of those backlog items of interest and drill down to ensure that all work is represented.  
 

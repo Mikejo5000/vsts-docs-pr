@@ -88,7 +88,7 @@ The following pick lists are configured through the user interface and not custo
 - [Area paths](../set-area-paths.md)  
 - [Iteration paths](../set-iteration-paths-sprints.md)
 
-Pick lists associated with person-name fields are managed based on the users you add to a [team project or team](../../accounts/add-team-members-vs.md).   
+Pick lists associated with person-name fields are managed based on the users you add to a [project or team](../../accounts/add-team-members-vs.md).   
 
 
 <a id="rename-field">  </a>

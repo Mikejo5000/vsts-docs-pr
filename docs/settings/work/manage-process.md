@@ -30,7 +30,7 @@ In this article, learn how to perform these tasks:
 > * Create an inherited process   
 > * Customize an inherited process  
 > * Copy an inherited process   
-> * Change team projects to use an inherited process or a system process    
+> * Change projects to use an inherited process or a system process    
 > * Add a project based on a process   
 > * Enable or disable a process
 > * Set a process as the default to use when adding Azure Codex projects  
@@ -59,8 +59,8 @@ You can create an inherited process from any one of the three system processes: 
 
 Once you've defined the inherited process, you can perform these actions: 
 - [Customize a process](customize-process.md)   
-- [Create a team project](#create-team-project) that uses the inherited process  
-- [Change team projects to use the inherited process](#migrate)        
+- [Create a project](#create-team-project) that uses the inherited process  
+- [Change project(s) to use the inherited process](#migrate)        
 
 <a id="migrate"></a>
 ## Change the process used by a project    
@@ -79,7 +79,7 @@ You can change the process a project uses from a system process or inherited pro
 	> [!div class="mx-imgBorder"]  
 	> ![Agile process context menu, Choose Change team projects to use Agile](_img/process/change-project-to-system-process.png) 
 
-	The system lists only those team projects that are valid for the current process.
+	The system lists only those projects that are valid for the current process.
 
 0. Click the checkbox of those projects you want to change to use the Agile process. 	
 
@@ -93,16 +93,16 @@ You can change the process a project uses from a system process or inherited pro
 >When you change a project to use an inherited process, you may find one or more Agile tools or work items appear in an invalid state. For example: 
 > 
 > - If you make a field required, work items with that field undefined will show an error message. You'll need to resolve the errors to make additional changes and save the work item. 
-> - If you add or remove/hide workflow states of a WIT that appears on the Kanban board, you'll need to update the Kanban board column configurations for all teams defined in the team project. 
+> - If you add or remove/hide workflow states of a WIT that appears on the Kanban board, you'll need to update the Kanban board column configurations for all teams defined in the project. 
 
 
 <a id="create-team-project">  </a>
-## Create a team project from a process 
+## Create a project from a process 
 
 0. Open the &hellip; context menu for the process you want to use and choose **New team project**.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Create a team project from the selected process](_img/process/add-new-team-project.png) 
+	> ![Create a project from the selected process](_img/process/add-new-team-project.png) 
 
 0. The Create new project page opens. For details, see [Create a Azure Codex project](../../accounts/create-team-project.md).
 
@@ -112,7 +112,7 @@ You can change the process a project uses from a system process or inherited pro
 It's a good practice to test the customizations you make before rolling out the changes to your organization.  To do this, you create a copy of a process, make your updates, verify the updates appear as desired, and then move projects to the new process.  
  
 > [!TIP]    
-> If you make a change to a process that is used by one or more team projects, each team project that uses the process will update immediately to the incremental process change. To bundle your process changes before you roll them out to all team projects, following the  steps outlined next. 
+> If you make a change to a process that is used by one or more projects, each project that uses the process will update immediately to the incremental process change. To bundle your process changes before you roll them out to all projects, following the  steps outlined next. 
 
 0. Create a copy of the process that you want to change. From the **Process** page, open the &hellip; context menu for the process you want to copy and choose **Copy process**.  
 
@@ -126,9 +126,9 @@ It's a good practice to test the customizations you make before rolling out the 
 	
 0. Make your changes to the copied process. Since no project is using this process, these changes do not impact any project. 
 
-0. To verify your changes, create a test project based on the copied and updated process. If you have already created a test project, change the process of the test project using the [**Change team project to use <process name>**](#migrate) option from the context menu. 
+0. To verify your changes, create a test project based on the copied and updated process. If you have already created a test project, change the process of the test project using the [**Change project to use <process name>**](#migrate) option from the context menu. 
 
-0. Once you have fully tested your customizations, you're ready to roll out your changes to all team projects. To do this, change the process of the team projects which need the new changes. Select the [**Change team project to use <process name>**](#migrate) option from the context menu.  
+0. Once you have fully tested your customizations, you're ready to roll out your changes to all projects. To do this, change the process of the projects which need the new changes. Select the [**Change project to use <process name>**](#migrate) option from the context menu.  
 
 0.  Disable or delete the original process. 
  
@@ -136,7 +136,7 @@ It's a good practice to test the customizations you make before rolling out the 
 <a id="enable-process">  </a>
 ## Enable/disable a process
 
-To prevent team projects being created from a process, you disable it. You might choose this option when you want to apply several customizations and don't want the process used until they are complete. Or, you might want to retire use of a process in favor of moving team projects to a new process. 
+To prevent projects being created from a process, you disable it. You might choose this option when you want to apply several customizations and don't want the process used until they are complete. Or, you might want to retire use of a process in favor of moving  projects to a new process. 
 
 All system processes and newly created inherited processes are enabled by default. 
 
@@ -146,11 +146,11 @@ All system processes and newly created inherited processes are enabled by defaul
 <a id="default-process">  </a>
 ## Set the default process
 
-Set an inherited process as the default to have it pre-selected for any additional team projects you plan to create. 
+Set an inherited process as the default to have it pre-selected for any additional projects you plan to create. 
 
 To set a process as the default, open the &hellip; context menu for the inherited process and choose **Set as default process**. Note that this option is not available with any of the three system processes. 
 
-Account owners and Project Collection Administrators can add team projects from the admin **Overview** page or the [account My Projects page](../../user-guide/account-home-pages.md). 
+Account owners and Project Collection Administrators can add projects from the admin **Overview** page or the [account My Projects page](../../user-guide/account-home-pages.md). 
 
 ## Try this next
 > [!div class="nextstepaction"]

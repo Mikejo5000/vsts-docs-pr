@@ -22,7 +22,7 @@ You can only customize inherited processes.  Any changes you make to the inherit
 
 The general sequence for customizing a project is to customize an inherited process, verify your customizations, and then change the process of the project(s) to use that process. 
 
-[![Create an inherited process](_img/process/customize-work-phase2-step1.png)](manage-process.md#create-inherited-process)[![Customize the inherited process](_img/process/customize-work-phase2-step2.png)](customize-process.md)[![Apply inherited process to team project(s)](_img/process/customize-work-phase2-step3.png)](manage-process.md#migrate)![Refresh and verify changes](_img/process/customize-work-phase2-step4.png)  
+[![Create an inherited process](_img/process/customize-work-phase2-step1.png)](manage-process.md#create-inherited-process)[![Customize the inherited process](_img/process/customize-work-phase2-step2.png)](customize-process.md)[![Apply inherited process to  project(s)](_img/process/customize-work-phase2-step3.png)](manage-process.md#migrate)![Refresh and verify changes](_img/process/customize-work-phase2-step4.png)  
 
 You primarily customize a process by adding or modifying a work item type (WIT) defined for that process.  
 
@@ -38,7 +38,7 @@ Learn how to perform these tasks:
 > * Add or modify a custom control   
 > * Add an extension to a work item type
 > * Verify the customizations you made  
-> * Change the process used by a team project 
+> * Change the process used by a project 
  
 
 [!INCLUDE [temp](../_shared/process-prerequisites.md)] 
@@ -160,7 +160,7 @@ An extension is an installable unit that contributes new capabilities to your Az
 	> [!div class="mx-imgBorder"]  
 	> ![Visual Studio Markeplace, install extension](_img/process/cprocess-install-extension.png) 
 
-	Extensions are available to add to all team projects and processes. 
+	Extensions are available to add to all projects and processes. 
 
 0. Return to the process and WIT and verify the location of the extension is where you want it. Look for it at the bottom of the middle column and drag it to where you want it on the form. 
 
@@ -197,7 +197,7 @@ We recommend that you create a test project and apply your customized  inherited
 0. Open the **All processes** page, and choose the &hellip; context menu for the process you want to use, and then select **New team project**.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Create a team project from the selected process](_img/process/add-new-team-project.png) 
+	> ![Create a Codex project from the selected process](_img/process/add-new-team-project.png) 
 
 0. The Create new project page opens. Fill out the form. 
 

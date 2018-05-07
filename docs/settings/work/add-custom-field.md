@@ -18,7 +18,7 @@ ms.date: 07/10/2018
 You add a custom field to support tracking data requirements you have that aren't met with the existing set of fields. For example, you can add a custom field to track a customer ticket number. For a list of all fields defined for your account&mdash;which includes all fields defined for system and inherited processes&mdash;see [Review fields](customize-process-field.md#review-fields).  
 
 > [!TIP]    
-> To customize a single project, always start by [creating an inherited process and migrating the team project to that process](manage-process.md). Then, all the customizations that you make to the inherited process automatically appear for the team project you migrated.
+> To customize a single project, always start by [creating an inherited process and migrating project(s) to that process](manage-process.md). Then, all the customizations that you make to the inherited process automatically appear for the project you migrated.
 
 To learn more about what you can customize, see [About process customization and inherited processes](inheritance-process-model.md). 
 
@@ -79,7 +79,7 @@ We recommend that you create a test project and apply your customized  inherited
 0. Open the **All processes** page, and choose the &hellip; context menu for the process you want to use, and then select **New team project**.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Create a team project from the selected process](_img/process/add-new-team-project.png) 
+	> ![Create a Codex project from the selected process](_img/process/add-new-team-project.png) 
 
 0. The Create new project page opens. Fill out the form. 
 

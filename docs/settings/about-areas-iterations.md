@@ -1,7 +1,7 @@
 ---
 title: About area and iteration paths 
-titleSuffix: VSTS & TFS  
-description: Understand how areas and iterations are used in Visual Studio Team Services & Team Foundation Server
+titleSuffix:Azure Codex Agile & TFS
+description: Understand how areas and iterations are used in Azure Codex Agile & Team Foundation Server
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 
@@ -19,9 +19,9 @@ ms.date: 03/20/2018
 
 Area paths allow you to group work items by team, product, or feature area. Whereas, iteration paths allow you to group work into sprints, milestones, or other event-specific or time-related period. Both these fields allow you to define a hierarchy of paths. 
 
-You define area and iteration paths for a team project. Teams can then choose which paths are used to support their backlog and other Agile tools. To understand how Agile tools use area and iteration paths, see [Agile tools that rely on areas and iterations](about-teams-and-settings.md).
+You define area and iteration paths for a Codex Agile project. Teams can then choose which paths are used to support their backlog and other Agile tools. To understand how Agile tools use area and iteration paths, see [Agile tools that rely on areas and iterations](about-teams-and-settings.md).
 
-The areas and iterations you see depend on the process you used to create your team project. Here we show the defaults defined for the Scrum process. No dates are set. You set dates to correspond to your sprint or release schedules.
+The areas and iterations you see depend on the process you used to create your project. Here we show the defaults defined for the Scrum process. No dates are set. You set dates to correspond to your sprint or release schedules.
 
 > [!div class="mx-tdBreakAll"] 
 > |Iterations| Areas |
@@ -39,7 +39,7 @@ Add areas when you have these requirements:
 
 Each team can create a hierarchy of areas under which the team can organize their backlog items, user stories, requirements, tasks, and bugs.
 
-Avoid creating an area structure that is too complex. You can create areas to partition permissions on work items, but complex trees require significant overhead for permission management. You might find that it is too much work to duplicate the structure and permissions in other team projects.
+Avoid creating an area structure that is too complex. You can create areas to partition permissions on work items, but complex trees require significant overhead for permission management. You might find that it is too much work to duplicate the structure and permissions in other projects.
 
 ## How many iterations should a team define?
 
@@ -51,7 +51,7 @@ Add iterations to support these requirements:
 * Filter queries based on sprints, milestones, or cycle time for your project 
 * Support future work that you're not ready to assign to a target release cycle.  
 
-In the following example, Backlog, Beta 1, Beta 2, Release 1.0, and Release 2.0 are defined for the MyApplication team project.  
+In the following example, Backlog, Beta 1, Beta 2, Release 1.0, and Release 2.0 are defined for the MyApplication project.  
 
 <img src="_img/areas/ALM_CW_IterationHierarchy-Before.png" alt="Flat iteration hierarchy" style="border: 1px solid #C3C3C3;" />  
 
@@ -92,7 +92,7 @@ As you can see, areas and iterations play a major role in supporting Agile tools
 <a name="export"></a>
 ### Export tree structures  
 
-You can't export the structure of tree paths for one team project to use with another team project.  
+You can't export the structure of tree paths for one project to use with another  project.  
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 <a name="field-rules"></a>

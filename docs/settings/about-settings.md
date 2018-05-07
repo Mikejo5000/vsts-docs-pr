@@ -88,11 +88,11 @@ To learn more, see [About notifications](../notifications/about-notifications.md
 
 ## Dashboards 
 
-New dashboards are added to a team project through a team context. To learn more, see [Add and manage dashboards](../report/dashboards/dashboards.md).
+New dashboards are added to a project through a team context. To learn more, see [Add and manage dashboards](../report/dashboards/dashboards.md).
 
 ## Service hooks 
 
-Service hooks enable you to perform tasks on other services when events happen within your team project. You can use service hooks in custom apps and services to drive activities when events happen in your projects. 
+Service hooks enable you to perform tasks on other services when events happen within your project. You can use service hooks in custom apps and services to drive activities when events happen in your projects. 
 
 Using service hooks, you can integrate with the following services: 
 
@@ -104,13 +104,13 @@ Using service hooks, you can integrate with the following services:
 
 ## Manage Azure Codex projects   
 
-A Azure Codex project provides the fundamental resource for storing your code, managing your CI/CD operations, and planning and tracking work for your project. In general, you'll want to minimize the number of team projects you create, to keep things simple. However, if you need to, you can add additional projects to your account. 
+A Azure Codex project provides the fundamental resource for storing your code, managing your CI/CD operations, and planning and tracking work for your project. In general, you'll want to minimize the number of projects you create, to keep things simple. However, if you need to, you can add additional projects to your account. 
 
 From the account-level admin context, you can perform the following tasks: 
  
-- [Create a team project](../accounts/create-team-project.md) 
-- [Rename a team project](../accounts/rename-team-project.md)
-- [Delete a team project](../accounts/delete-team-project.md) 
+- [Create a project](../accounts/create-team-project.md) 
+- [Rename a project](../accounts/rename-team-project.md)
+- [Delete a project](../accounts/delete-team-project.md) 
 
 ## Extensions 
 
@@ -142,7 +142,7 @@ From the account-level **Settings** page, you can change the time zone for your 
 
 ### Users 
 From the account-level **Users** page, you can export the set of users and their access levels. You can also perform the following tasks: 
-- [Add users to your account or team project](../accounts/add-account-users-from-user-hub.md)
+- [Add users to your project](../accounts/add-account-users-from-user-hub.md)
 - [Remove users from your account](../accounts/delete-account-users.md)
 - [Assign access levels and extensions to users by group membership](../accounts/assign-access-levels-and-extensions-by-group-membership.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Add and manage fields to an  inherited process
+title: Add and manage fields to an inherited process
 titleSuffix: Azure Codex Agile
 description: Add and manage fields to the web form of a work item type for an Inheritance process model for a Azure Codex project
 ms.technology: devops-agile

@@ -1,7 +1,7 @@
 ---
 title: Define area paths
-titleSuffix: Azure Codex
-description: Group work items based on team, product, or feature area by defining area paths for Visual Studio Team Services or Team Foundation Server 
+titleSuffix: Azure Codex Agile
+description: Group work items based on team, product, or feature area by defining area paths for Azure Codex Agile or Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 97358022-AE19-4775-AE25-47BA24FF3C74
@@ -17,15 +17,15 @@ ms.date: 03/20/2018
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-Newly created team projects contain a single, root area that corresponds to the team project name. You add area paths under this root. You add area paths to support teams and queries based on work items that belong to different areas of the product. To understand how the system uses area paths, see [About area and iteration paths](about-areas-iterations.md). 
+Newly created Codex Agile projects contain a single, root area that corresponds to the project name. You add area paths under this root. You add area paths to support teams and queries based on work items that belong to different areas of the product. To understand how the system uses area paths, see [About area and iteration paths](about-areas-iterations.md). 
 
 ## Prerequisites
 <a name="permissions"></a>
 ::: moniker range="vsts"
-* You must be a member of a team project. If you don't have a team project yet, create one in [VSTS](../accounts/set-up-vs.md). If you haven't been added as a team member, [get added now](../accounts/add-account-users-assign-access-levels.md). 
+* You must be a member of a project. If you don't have a project yet, create one in [VSTS](../accounts/set-up-vs.md). If you haven't been added as a team member, [get added now](../accounts/add-account-users-assign-access-levels.md). 
 ::: moniker-end
 ::: moniker range=">= tfs-2013 <= tfs-2018"
-* You must be a member of a team project. If you don't have a team project yet, create one in an [on-premises TFS](../accounts/create-team-project.md). If you haven't been added as a team member, [get added now](../security/add-users-team-project.md). 
+* You must be a member of a project. If you don't have a project yet, create one in an [on-premises TFS](../accounts/create-team-project.md). If you haven't been added as a team member, [get added now](../security/add-users-team-project.md). 
 ::: moniker-end
 * To create or modify areas or iterations, you must either be a member of the **Project Administrators** group, or your **Create and order child nodes**, **Delete this node**, and **Edit this node** permissions must be set to **Allow** for the area or iteration node that you want to modify.
 
@@ -52,7 +52,7 @@ You define both areas and iterations from the **Work>Project configuration** hub
 	> [!div class="mx-imgBorder"]  
 	> ![Settings hub, Open Work>Project Configuration](_img/areas/open-work-project-configuration.png)   
 
-	<img src="_img/areas/modify-areas-its-open-admin-context-ts.png" alt="Web portal, VSTS, Open Admin context, team project level" style="border: 1px solid #C3C3C3;" />
+	<img src="_img/areas/modify-areas-its-open-admin-context-ts.png" alt="Web portal, VSTS, Open Admin context, project level" style="border: 1px solid #C3C3C3;" />
 
 0. Choose **Areas**.
 
@@ -63,14 +63,14 @@ Vertical navigation isn't a supported feature for TFS at this time.
 ::: moniker-end
 
 # [Horizontal navigation](#tab/horizontal)
-You define both areas and iterations from the **Work** hub of the team project admin context. From the user context, you open the admin context by clicking the ![](../_img/icons/gear-icon.png) gear icon. The tabs and pages available differ depending on which admin context you access.  
+You define both areas and iterations from the **Work** hub of the project admin context. From the user context, you open the admin context by clicking the ![](../_img/icons/gear-icon.png) gear icon. The tabs and pages available differ depending on which admin context you access.  
 
 <a id="admin-intro-team-services" /> 
 ::: moniker range=">= tfs-2017"  
 
-1. From the web portal for the team project context, click the ![](../_img/icons/gear_icon.png) gear icon.   
+1. From the web portal for the project context, click the ![](../_img/icons/gear_icon.png) gear icon.   
 	::: moniker range=">= tfs-2018"
-	<img src="_img/areas/modify-areas-its-open-admin-context-ts.png" alt="Web portal, VSTS, Open Admin context, team project level" style="border: 1px solid #C3C3C3;" />
+	<img src="_img/areas/modify-areas-its-open-admin-context-ts.png" alt="Web portal, VSTS, Open Admin context, project level" style="border: 1px solid #C3C3C3;" />
 
 	If you're currently working from a team context, then hover over the ![gear icon](../_img/icons/gear_icon.png) and choose **Project settings**.  
 
@@ -80,13 +80,13 @@ You define both areas and iterations from the **Work** hub of the team project a
 	<a id="admin-intro-tfs-2017-1" /> 
 	**TFS 2017.1**
 
-	<img src="_img/areas/modify-areas-its-choose-project-settings-admin-context-tfs-2017.png" alt="Web portal, TFS 2017, Open Admin context, team project level" style="border: 1px solid #C3C3C3;" />  
+	<img src="_img/areas/modify-areas-its-choose-project-settings-admin-context-tfs-2017.png" alt="Web portal, TFS 2017, Open Admin context, project level" style="border: 1px solid #C3C3C3;" />  
 
 	If you're currently working from a team context, then hover over the ![gear icon](../_img/icons/gear_icon.png) and choose Project settings. 
 
 	<img src="_img/areas/modify-areas-its-choose-project-settings-admin-context-tfs-2017_v0.png" alt="Web portal, TFS 2017, Choose the gear icon to Open Project settings" style="border: 1px solid #C3C3C3;" />    
 	**TFS 2017**   
-	<img src="_img/areas/modify-areas-its-choose-project-settings-admin-context-tfs-2017.png" alt="Web portal, TFS 2017, Open Admin context, team project level" style="border: 1px solid #C3C3C3;" />
+	<img src="_img/areas/modify-areas-its-choose-project-settings-admin-context-tfs-2017.png" alt="Web portal, TFS 2017, Open Admin context, project level" style="border: 1px solid #C3C3C3;" />
 	::: moniker-end
 2. Open the **Work** hub.  
 
@@ -112,11 +112,11 @@ You define both areas and iterations from the **Work** hub of the team project a
 
 ::: moniker range=">= tfs-2017"  
 
-1. Open the **Work, Areas** page for the team project admin context.  
+1. Open the **Work, Areas** page for the project admin context.  
 
 	If you haven't added any areas or teams, you'll see that only one area is defined.   
 
-	<img src="_img/areas/modify-areas-its-areas-ts.png" alt="Areas, defaults defined for team project" style="border: 1px solid #C3C3C3;" />  
+	<img src="_img/areas/modify-areas-its-areas-ts.png" alt="Areas, defaults defined for project" style="border: 1px solid #C3C3C3;" />  
 
 2.  Add a new child node to the area you have selected. 
 
@@ -128,7 +128,7 @@ You define both areas and iterations from the **Work** hub of the team project a
 
 1. Open the **Areas** tab.  
 
-	<img src="_img/areas/ALM_CW_OpenAreas.png" alt="Open the areas page defined for team project" style="border: 1px solid #C3C3C3;" />  
+	<img src="_img/areas/ALM_CW_OpenAreas.png" alt="Open the areas page defined for project" style="border: 1px solid #C3C3C3;" />  
 
 	From the areas page, you can set the default area path used to filter the backlog. The default area path is also used when new work items a user creates new work items. 
 

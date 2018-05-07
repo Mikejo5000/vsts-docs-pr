@@ -6,7 +6,7 @@
 After you've verified your customizations, you can now apply the process to your existing project. 
 
 > [!TIP]    
-> As you customize a WIT, all team projects that reference the inherited process that you're customizing will automatically update to reflect the custom WITs you've added. To view your customizations, refresh your web browser.
+> As you customize a WIT, all projects that reference the inherited process that you're customizing will automatically update to reflect the custom WITs you've added. To view your customizations, refresh your web browser.
 
 0. Open the &hellip; context menu for the process and choose the **Change team projects**&hellip; option. 
 
@@ -15,7 +15,7 @@ After you've verified your customizations, you can now apply the process to your
 	> [!div class="mx-imgBorder"]  
 	> ![Agile process context menu, Choose Change team projects to use MyAgile](/vsts/settings/work/_img/process/add-custom-change-process.png) 
 
-0. Check the checkbox of those projects you want to change to use the Agile process. The system lists only those team projects that are valid for the current process.	
+0. Check the checkbox of those projects you want to change to use the Agile process. The system lists only those projects that are valid for the current process.	
 
 	Here we choose to use the Agile process for the Fabrikam Fiber A and Fabrikam Fiber projects.  Only those projects created from the Agile process or one that inherits from Agile will appear under the Available projects column. 
   

@@ -1,6 +1,6 @@
 ---
 title: Add a custom control to a WIT 
-titleSuffix: VSTS  
+titleSuffix: Azure Codex Agile
 description: Customize a process by adding or modifying a custom control for work item type when working in Visual Studio Team Services
 ms.technology: devops-agile
 ms.prod: devops
