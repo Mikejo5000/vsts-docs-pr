@@ -1,6 +1,6 @@
 ---
 title: About area and iteration paths 
-titleSuffix:Azure Codex Agile & TFS
+titleSuffix: Azure Codex Agile & TFS
 description: Understand how areas and iterations are used in Azure Codex Agile & Team Foundation Server
 ms.technology: devops-agile
 ms.prod: devops
