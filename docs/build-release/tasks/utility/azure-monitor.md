@@ -9,10 +9,10 @@ ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
 ms.date: 04/09/2018
-monikerRange: 'vsts'
+monikerRange: '>= tfs-2017'
 ---
 
-# Utility: Azure monitor
+# Utility: Query Azure Monitor Alerts
 
 **VSTS**
 
@@ -27,10 +27,10 @@ None
 | Parameter | Comments |
 | --- | --- |
 | **Azure subscription** | Required. Select an Azure Resource Manager service endpoint. |
-| **Resource group name** | Required. The resource group in the subscription containing the monitor functions. |
-| **Resource type(s)** | Optional. Select the resource type in the selected group. Leave empty to use all the resource types in the resource group. |
-| **Resource(s)** | Optional. Select the resources of the chosen types in the selected group. Leave empty to use all matching resources. |
-| **Select alert rules** | Required. Select from the currently configured alert rules in the resource group. Filter the displayed list for selected resource types and resources. |
+| **Resource group** | Required. The resource group being monitored in the subscription. |
+| **Resource type** | Required. Select the resource type in the selected group. |
+| **Resource name** | Required. Select the resources of the chosen types in the selected group. |
+| **Alert rules** | Required. Select from the currently configured alert rules to query for status. |
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
 
 Succeeds if none of the alert rules are activated at the time of sampling.
@@ -43,16 +43,14 @@ Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/mast
 
 ## YAML snippet
 
-(VSTS-only)
-
 ```YAML
 - task: AzureMonitor@0
   inputs:
-    connectedServiceNameARM:
-    ResourceGroupName:
-#   ResourceType: Microsoft.Insights/components # Microsoft.Insights/components (default), Microsoft.Web/sites, Microsoft.Storage/storageAccounts, Microsoft.Compute/virtualMachines
-    resourceName:
-    alertRules:
+    connectedServiceNameARM: 
+    resourceGroupName: 
+    #resourceType: 'Microsoft.Insights/components' # Options: microsoft.Insights/Components, microsoft.Web/Sites, microsoft.Storage/StorageAccounts, microsoft.Compute/VirtualMachines
+    resourceName: 
+    alertRules: 
 ```
 
 ::: moniker-end

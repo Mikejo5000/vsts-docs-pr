@@ -16,7 +16,7 @@ ms.date: 03/20/2018
 
 # Definition of Done
 
-<b>VSTS | TFS 2018 | TFS 2017 | TFS 2015</b> 
+**VSTS | TFS 2018 | TFS 2017 | TFS 2015**
 
 ::: moniker range=">= tfs-2015"
 As your team updates the status of work as it progresses from one stage to the next, it helps that they agree on what "done" means. By specifying the Definition of Done criteria for each Kanban column, you help share the essential tasks to complete before moving an item into a downstream stage. 
@@ -70,9 +70,3 @@ See these choices for further options to customize the Kanban board:
 
 ::: moniker-end
 
-
-<!---
-> [!NOTE]   
-> The Definition of Done fis a supported feature in TFS 2015 and later versions. Consider upgrading to a later TFS version. 
-
-> -->

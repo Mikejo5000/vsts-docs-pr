@@ -10,6 +10,7 @@ ms.assetid: 8afd3481-6fab-401d-90ff-0dd443da0f0e
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 ms.topic: conceptual
+monikerRange: '>= tfs-2013'
 ms.date: 03/20/2018
 ---
 
@@ -334,7 +335,7 @@ What does this mean for Kanban board users? First, only work items whose WITs be
 * Your project admin [adds WITs to backlogs and boards](../customize/add-wits-to-backlogs-and-boards.md)
 * Your project collection or project admin customizes the workflow for a WIT in the Requirement Category: [VSTS](../customize/process/customize-process-workflow.md) or [TFS](../customize/reference/change-workflow-wit.md)  
 
-For example, if you change the team setting and add bugs to the Requirements Category, the bug WIT will now appear in the Columns dialog. You'll want to make sure that the Kanban column-to-State mappings match what you want. 
+For example, if you change the team setting and add bugs to the Requirements Category, the bug WIT will now appear in the Columns dialog. You'll want to make sure that the Kanban column-to-State mappings match what you want. For more information, see [Workflow states and state categories](../customize/workflow-and-state-categories.md). 
 
 ::: moniker range=">= tfs-2017"
 

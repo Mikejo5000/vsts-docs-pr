@@ -1,9 +1,9 @@
 ---
-title: Use npm to store JavaScript packages in Visual Studio Team Services | Microsoft Docs
+title: Use npm to store JavaScript packages in Visual Studio Team Services
 description: Tutorial for using npm to store your JavaScript packages in Visual Studio Team Services or Team Foundation Server
 ms.prod: devops
 ms.technology: devops-artifacts
-ms.topic: conceptual
+ms.topic: quickstart
 ms.assetid: 5BFBA0C3-85ED-40C9-AC5F-F686923160D6
 ms.manager: douge
 ms.author: elbatk
@@ -94,7 +94,7 @@ If you are developing on Windows, we recommend that you use `vsts-npm-auth` to f
 
 ```json
 "scripts": {
-    "refreshVSToken ": "vsts-npm-auth -config .npmrc"
+    "refreshVSToken": "vsts-npm-auth -config .npmrc"
 }
 ```
 
