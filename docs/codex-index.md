@@ -37,8 +37,7 @@ featureFlags:
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                         
+                                    </div>                       
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -53,9 +52,8 @@ featureFlags:
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                                                
-                                    <div class="cardSize">
+                                    </div>                                            
+                                   <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
@@ -69,8 +67,7 @@ featureFlags:
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                               
+                                    </div>      
                 <ul id="start">
                     <li>
                         <a href="#start-all"></a>
