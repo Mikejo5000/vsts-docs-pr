@@ -15,14 +15,13 @@ featureFlags:
 ---
 
 <div id="main" class="v2">
-
-
     <div class="container">
         <h1>Azure CodeX Documentation</h1>
         <ul class="pivots">
             <li>
                 <a href="#start">Get Started</a>
-                        <ul id="get-started-codex" class="cardsA">
+        <ul class="cardsY panelContent featuredContent">
+            <li id="get-started-codex" class="cardsA">             
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -37,7 +36,9 @@ featureFlags:
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>                       
+                                    </div>
+            </li>
+            <li id="get-started-codex" class="cardsA">                         
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -52,7 +53,9 @@ featureFlags:
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>                                            
+                                    </div>
+            </li>
+            <li id="get-started-codex" class="cardsA">                                                
                                    <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -67,8 +70,10 @@ featureFlags:
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>      
-                <ul id="start">
+                                    </div>
+            </li>      
+                 </ul> 
+                 <ul id="start">
                     <li>
                         <a href="#start-all"></a>
                         <ul id="start-all" class="cardsL">
