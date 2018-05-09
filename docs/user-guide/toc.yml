@@ -27,15 +27,12 @@
   - name: Get extensions
     href: ../marketplace/install-vsts-extension.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
   - name: Start managing artifacts
-    href: 
   - name: View permissions...remove/redirect?
     href: ../security/view-permissions.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
 - name: Tutorials
   items:
   - name: Set up billing
-    href:
-  - name: Add amins or set permissions
-    href:
+  - name: Add admins or set permissions
   - name: Set favorites
     href: ../collaborate/set-favorites.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
   - name: Follow work & pull requests
@@ -43,19 +40,14 @@
   - name: Collaborate with Codex
     href: ../security/get-started-stakeholder.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
   - name: Set permissions
-    href:
   - name: Get started as an admin
     items:
     - name: Start project
-      href: 
-    - name: Start backlog
-      href:  
+    - name: Start backlog 
   - name: Get started as a developer
     items:
     - name: Start coding
-      href: 
-    - name: Deploy CI/CD
-      href:  
+    - name: Deploy CI/CD 
 - name: Concepts
   items:
   - name: Key concepts 
@@ -69,15 +61,11 @@
   - name: Developer roles
     href: roles.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
   - name: Manage artifacts and package
-    href: 
   - name: VSTS vs. Azure Codex
     href: about-vsts-tfs.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json
   - name: What is a Codex project?
-    href:
   - name: Azure Codex vs. Codex Server
-    href:
   - name: Licensing and Billing
-    href:
 - name: How-to Guides
   items:
   - name: Home page navigation
@@ -117,6 +105,5 @@
   - name: Technical articles
     href: http://visualstudio.com/articles/overview
   - name: Learn DevOps
-    href: 
   - name: Codex billing
     href: index.md
