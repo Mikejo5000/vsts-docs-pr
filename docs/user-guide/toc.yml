@@ -8,7 +8,7 @@
     href: services.md?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json&bc=/vsts/breadcrumb/toc.json 
   - name: "How do I get Azure Codex?"
     href:  how-to-get-azure-codex.md
-  - name: "How can I start Azure Codex for free?
+  - name: "How can I start Azure Codex for free?"
     href:  how-to-start-codex-for-free.md
   - name: "What are Codex Public Projects?"
     href:  what-are-codex-public-projects.md
@@ -27,7 +27,7 @@
   - name: Get extensions
     href: ../marketplace/install-vsts-extension.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
   - name: Start managing artifacts
-  - name: View permissions...remove/redirect?
+  - name: "View permissions...remove/redirect?"
     href: ../security/view-permissions.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
 - name: Tutorials
   items:
@@ -63,7 +63,7 @@
   - name: Manage artifacts and package
   - name: VSTS vs. Azure Codex
     href: about-vsts-tfs.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json
-  - name: What is a Codex project?
+  - name: "What is a Codex project?"
   - name: Azure Codex vs. Codex Server
   - name: Licensing and Billing
 - name: How-to Guides
