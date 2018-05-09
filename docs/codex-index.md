@@ -23,8 +23,6 @@ featureFlags:
             <li>
                 <a href="#start">Get Started</a>
                         <ul id="get-started-codex" class="cardsA">
-                            <li>
-                                <a href="/vsts/codex-repos">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -34,16 +32,13 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Azure Codex Repos Onboarding Guide</h3>
+                                                    <h3><a href="/vsts/codex-repos">Azure Codex Repos Onboarding Guide</a></h3>
                                                     <p>Sign up and start developing code with distributed, flexible version control.</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/vsts/codex-agile">
+                         
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -53,16 +48,13 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Azure Codex Agile Onboarding Guide</h3>
+                                                    <h3><a href="/vsts/codex-agile">Azure Codex Agile Onboarding Guide</a></h3>
                                                     <p>Sign up and start using Agile tools to plan and track work.</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/vsts/codex-repos">
+                                                                
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -72,15 +64,13 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Azure Codex Pipelines Onboarding Guide</h3>
+                                                    <h3><a href="/vsts/codex-repos">Azure Codex Pipelines Onboarding Guide </a></h3>
                                                     <p>Sign up and start building and releasing apps with continuous integration and deployment.</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </a>
-                            </li>
-                        </ul>
+                               
                 <ul id="start">
                     <li>
                         <a href="#start-all"></a>
