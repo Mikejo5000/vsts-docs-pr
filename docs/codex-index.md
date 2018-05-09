@@ -1,7 +1,6 @@
 ---
-title: CodeX Documentation 
-titleSuffix: CodeX, Codex Agile, Codex Repos, Codex Pipelines
-description: Share code, track work, continuous build and deploy using CodeX cloud service apps 
+title: Azure CodeX Documentation 
+description: Share code, track work, continuous build and deploy using Azure CodeX cloud service apps 
 layout: HubPage
 hide_bc: true 
 ms.prod: vs-devops-alm 
@@ -9,7 +8,7 @@ ms.technology: vs-devops-overview
 ms.assetid: 
 ms.manager: douge 
 ms.author: kaelli 
-ms.date: 02/24/2018
+ms.date: 07/07/2018
 featureFlags:
 - clicktale 
 ---
@@ -20,8 +19,8 @@ featureFlags:
         <ul class="pivots">
             <li>
                 <a href="#start">Get Started</a>
-        <ul class="cardsY panelContent featuredContent">
-            <li id="get-started-codex" class="cardsA">             
+         <ul id="on-boarding" class="cardsA">
+            <li>             
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -38,7 +37,7 @@ featureFlags:
                                         </div>
                                     </div>
             </li>
-            <li id="get-started-codex" class="cardsA">                         
+            <li>                         
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -55,7 +54,7 @@ featureFlags:
                                         </div>
                                     </div>
             </li>
-            <li id="get-started-codex" class="cardsA">                                                
+            <li>                                                
                                    <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -79,7 +78,7 @@ featureFlags:
                         <ul id="start-all" class="cardsL">
                             <li class="fullSpan">
                                 <div class="intro">
-                                    <h1>Get Started with CodeX</h1>
+                                    <h1>Get Started with Azure CodeX</h1>
                                     <p>Explore our most popular services with quickstarts, samples, and tutorials.</p>
                                 </div> 
                             </li>
@@ -92,6 +91,22 @@ featureFlags:
                                                 <ul class="noBullet">
                                                     <li><a class="barLink" href="/vsts/git/">Git Repositories</a></li>
                                                     <li><a class="barLink" href="/vsts/java/">Get started with Java</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardText">
+                                                <h3>Test your code</h3>
+                                                <ul class="noBullet">
+                                                    <li><a class="barLink" href="/vsts/build-release/test/index">Continuous Testing</a></li>
+                                                    <li><a class="barLink" href="/vsts/manual-test/index">Exploratory &amp; Manual Testing</a></li>
+                                                    <li><a class="barLink" href="/vsts/load-test/index">Load Testing</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -119,7 +134,7 @@ featureFlags:
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardText">
-                                                <h3>Plan  &amp; track your work</h3>
+                                                <h3>Plan &amp; track your work</h3>
                                                 <ul class="noBullet">
                                                     <li><a class="barLink" href="/vsts/work/scrum/index">Backlogs</a></li>
                                                     <li><a class="barLink" href="/vsts/work/kanban/index">Boards &amp; Kanban</a></li>
@@ -136,11 +151,12 @@ featureFlags:
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardText">
-                                                <h3>Test your code</h3>
+                                                <h3>Collaborate</h3>
                                                 <ul class="noBullet">
-                                                    <li><a class="barLink" href="/vsts/build-release/test/index">Continuous Testing</a></li>
-                                                    <li><a class="barLink" href="/vsts/manual-test/index">Exploratory &amp; Manual Testing</a></li>
-                                                    <li><a class="barLink" href="/vsts/load-test/index">Load Testing</a></li>
+                                                    <li><a class="barLink" href="/vsts/public/index">Public Projects</a></li>
+                                                    <li><a class="barLink" href="/vsts/collaborate/index">Wiki</a></li>
+                                                    <li><a class="barLink" href="/vsts/notifications/index">Notifications</a></li>
+                                                    <li><a class="barLink" href="/vsts/search/index">Search</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -213,7 +229,7 @@ featureFlags:
                         <ul id="all" class="cardText">
                             <li>
                                 <div class="group">
-                                    <h3>Codex Repos</h3>
+                                    <h3>Azure Codex Repos</h3>
                                     <ul>
                                         <li><a class="barLink" href="/vsts/git/index">Git Repositories</a></li>
                                         <li><a class="barLink" href="/vsts/git/tutorial/pullrequest">Pull Requests</a></li>
@@ -221,7 +237,7 @@ featureFlags:
                                         <li><a class="barLink" href="/vsts/git/branch-policies">Branch Policies</a></li>
                                         <li><a class="barLink" href="/vsts/tfvc/index">TFVC</a></li>
                                     </ul>
-                                    <h3>Codex Pipelines</h3>
+                                    <h3>Azure Codex Pipelines</h3>
                                     <ul>
                                         <li><a class="barLink" href="/vsts/build-release/index">Build &amp; Release</a></li>
                                         <li><a class="barLink" href="/vsts/build-release/test/index">Continuous Testing</a></li>
@@ -231,7 +247,7 @@ featureFlags:
                                         <li><a class="barLink" href="/vsts/build-release/concepts/agents/agents">Hosted and Private Agents</a></li>
                                         <li><a class="barLink" href="/vsts/build-release/tasks">Task Reference</a></li>
                                     </ul>
-                                    <h3>Codex Test</h3>
+                                    <h3>Azure Codex Test</h3>
                                     <ul>
                                         <li><a class="barLink" href="/visualstudio/test/unit-test-your-code">Unit and Functional Testing</a></li>
                                         <li><a class="barLink" href="/vsts/manual-test/index">Exploratory &amp; Manual Testing</a></li>
@@ -242,7 +258,7 @@ featureFlags:
                             </li>
                             <li>
                                 <div class="group">
-                                    <h3>Codex Agile</h3>
+                                    <h3>Azure Codex Agile</h3>
                                     <ul>
                                       <li><a class="barLink" href="/vsts/work/work-items/index">Work Items</a></li>
                                         <li><a class="barLink" href="/vsts/work/backlogs/index">Backlogs</a></li>
@@ -274,7 +290,6 @@ featureFlags:
                                     <ul>
                                         <li><a class="barLink" href="/vsts/settings/index">Project &amp; Account Settings</a></li>
                                         <li><a class="barLink" href="/vsts/settings/index">Scale and Configure Teams</a></li>
-                                        <li><a class="barLink" href="/vsts/settings/customize/index">Codex Agile Customization</a></li>
                                         <li><a class="barLink" href="/vsts/accounts/index">Account Management</a></li>
                                         <li><a class="barLink" href="/vsts/security/index">Security and Identity</a></li>
                                         <li><a class="barLink" href="/vsts/billing/index">Billing</a></li>
@@ -298,8 +313,26 @@ featureFlags:
                         </ul>
                     </li>
                     <li>
-                        <a href="#code">Codex Repos</a>
+                        <a href="#code">Azure Codex Repos</a>
                         <ul id="code" class="cardsA">
+                            <li>
+                                <a href="/vsts/codex-repos">            
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/codex-repos.png" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Azure Codex Repos Onboarding Guide</h3>
+                                                    <p>Sign up and start developing code with distributed, flexible version control.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </li>
                             <li>
                                 <a href="/vsts/git">
                                     <div class="cardSize">
@@ -379,8 +412,26 @@ featureFlags:
                         </ul>
                     </li>
                     <li>
-                        <a href="#delivery">Codex Pipelines</a>
+                        <a href="#delivery">Azure Codex Pipelines</a>
                         <ul id="delivery" class="cardsA">
+                            <li>
+                                <a href="/vsts/codex-pipelines">            
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/codex-pipelines.png" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Azure Codex Pipelines Onboarding Guide</h3>
+                                                    <p>Sign up and start building and releasing apps.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </li>
                             <li>
                                 <a href="/vsts/build-release/index">
                                     <div class="cardSize">
@@ -519,7 +570,7 @@ featureFlags:
                         </ul>
                     </li>
                     <li>
-                        <a href="#testing">Codex Test</a>
+                        <a href="#testing">Azure Codex Test</a>
                         <ul id="testing" class="cardsA">
                             <li>
                                 <a href="/visualstudio/test/unit-test-your-code">
@@ -602,8 +653,26 @@ featureFlags:
                         </ul>
                     </li>
                     <li>
-                        <a href="#codex-agile">Codex Agile</a>
+                        <a href="#codex-agile">Azure Codex Agile</a>
                         <ul id="codex-agile" class="cardsA">
+                           <li>
+                                <a href="/vsts/codex-agile">            
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/codex-agile.png" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Azure Codex Agile Onboarding Guide</h3>
+                                                    <p>Sign up and start using Agile tools to plan and track work.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </li>
                             <li>
                                 <a href="/vsts/work/work-items/index">
                                     <div class="cardSize">
@@ -713,7 +782,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Customization</h3>
-                                                    <p>Configure Codex Agile tools and processes to meet your team's needs.</p>
+                                                    <p>Configure Azure Codex Agile tools and processes to meet your team's needs.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -940,7 +1009,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Project &amp; Account Settings</h3>
-                                                    <p>Configure resources for Codex apps.</p>
+                                                    <p>Configure resources for Azure Codex apps.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -988,25 +1057,6 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/billing/index">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="_img/index/i_billing.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Billing</h3>
-                                                    <p>Manage subscriptions, extension purchases, and Azure Active Directory.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
                                 <a href="/vsts/settings/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
@@ -1019,6 +1069,25 @@ featureFlags:
                                                 <div class="cardText">
                                                     <h3>Scale and Configure Teams</h3>
                                                     <p>Add teams and team administrators; configure team settings.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/vsts/billing/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/i_billing.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Billing</h3>
+                                                    <p>Manage subscriptions, extension purchases, and Azure Active Directory.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -1061,7 +1130,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Develop Extensions</h3>
-                                                    <p>Extend VSTS and TFS with custom web experiences, CI/CD tasks, and more.</p>
+                                                    <p>Extend Azure Codex with custom web experiences, CI/CD tasks, and more.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -1080,7 +1149,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Build Apps</h3>
-                                                    <p>Programmatically integrate with VSTS and TFS from custom apps and services.</p>
+                                                    <p>Programmatically integrate with Azure Codex from custom apps and services.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -1099,7 +1168,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Service Hooks</h3>
-                                                    <p>Create subscriptions and configure the integration of VSTS or TFS with
+                                                    <p>Create subscriptions and configure the integration of Azure Codex with
                                                         third-party apps.</p>
                                                 </div>
                                             </div>
@@ -1138,7 +1207,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>REST APIs</h3>
-                                                    <p>Interact with VSTS through standard REST APIs.</p>
+                                                    <p>Interact with Azure Codex through standard REST APIs.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -1157,7 +1226,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>TypeScript APIs</h3>
-                                                    <p>Interact with VSTS through TypeScript APIs.</p>
+                                                    <p>Interact with Azure Codex through TypeScript APIs.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -1181,7 +1250,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Discover Extensions</h3>
-                                                    <p>Browse the Visual Studio Marketplace and discover extensions for VSTS and TFS.</p>
+                                                    <p>Browse the Visual Studio Marketplace and discover extensions for Azure Codex.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -1206,7 +1275,7 @@ featureFlags:
                                 </div>
                                 <div class="intro">
                                     <h2 style="padding-left:0;font-size:1.8rem;">Get Extensions</h2>
-                                    <p>Extend Codex with popular extensions like Slack or Jenkins.</p>
+                                    <p>Extend Azure Codex with popular extensions like Slack or Jenkins.</p>
                                 </div>
                             </li>
                             <li class="fullSpan" style="margin-top:12px;">
@@ -1269,7 +1338,7 @@ featureFlags:
                             <li class="fullSpan">
                                 <div>
                                     <h2 style="padding-left:0;margin-bottom:0;margin-top:24px;font-size:1.8rem;">Build your own extensions</h2>
-                                    <p>Create custom extensions to transform your Codex look and experience.</p>
+                                    <p>Create custom extensions to transform your Azure Codex look and experience.</p>
                                 </div>
                             </li>
                             <li>
