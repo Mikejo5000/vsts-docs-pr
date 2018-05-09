@@ -19,7 +19,7 @@ featureFlags:
         <ul class="pivots">
             <li>
                 <a href="#start">Get Started</a>
-         <ul id="on-boarding" class="cardsA">
+         <ul id="on-boarding" class="cardsY panelContent featuredContent">
             <li>             
                                     <div class="cardSize">
                                         <div class="cardPadding">
