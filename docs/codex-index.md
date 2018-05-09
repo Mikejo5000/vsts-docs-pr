@@ -15,105 +15,74 @@ featureFlags:
 ---
 
 <div id="main" class="v2">
-    <div class="container">
-        <ul class="cardsY panelContent featuredContent">
-            <li>
-                <a href="/vsts/codex-repos/index">
-                    <div class="cardSize">
-                        <div class="cardPadding">
-                            <div class="card">
-                                <div class="cardImageOuter">
-                                    <div class="cardImage">
-                                        <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="" />
-                                    </div>
-                                </div>
-                                <div class="cardText">
-                                    <span class="likeAnH3">Codex Repos Onboarding Guide</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="/vsts/codex-agile/index">
-                    <div class="cardSize">
-                        <div class="cardPadding">
-                            <div class="card">
-                                <div class="cardImageOuter">
-                                    <div class="cardImage">
-                                        <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="" />
-                                    </div>
-                                </div>
-                                <div class="cardText">
-                                    <span class="likeAnH3">Codex Agile Onboarding Guide</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="/vsts/codex-pipelines/index">
-                    <div class="cardSize">
-                        <div class="cardPadding">
-                            <div class="card">
-                                <div class="cardImageOuter">
-                                    <div class="cardImage">
-                                        <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="" />
-                                    </div>
-                                </div>
-                                <div class="cardText">
-                                    <span class="likeAnH3">Codex Pipelines Onboarding Guide</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.visualstudio.com/learn/devopsmsft-overview/">
-                    <div class="cardSize">
-                        <div class="cardPadding">
-                            <div class="card">
-                                <div class="cardImageOuter">
-                                    <div class="cardImage">
-                                        <img src="https://docs.microsoft.com/media/common/i_deploy.svg" alt="" />
-                                    </div>
-                                </div>
-                                <div class="cardText">
-                                    <span class="likeAnH3">DevOps@Microsoft</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="https://aka.ms/vsts/releasenotes/latest">
-                    <div class="cardSize">
-                        <div class="cardPadding">
-                            <div class="card">
-                                <div class="cardImageOuter">
-                                    <div class="cardImage">
-                                        <img src="https://docs.microsoft.com/media/common/i_road-map.svg" alt="" />
-                                    </div>
-                                </div>
-                                <div class="cardText">
-                                    <span class="likeAnH3">Codex Release Notes</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </li>
-        </ul>
-    </div>
+
+
     <div class="container">
         <h1>Azure CodeX Documentation</h1>
         <ul class="pivots">
             <li>
                 <a href="#start">Get Started</a>
+<ul id="get-started-codex" class="cardsA">
+                    <li>
+                        <ul id="code" class="cardsA">
+                            <li>
+                                <a href="/vsts/codex-repos">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/codex-repos.png" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Azure Codex Repos Onboarding Guide</h3>
+                                                    <p>Sign up and start developing code with distributed, flexible version control.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+<li>
+                                <a href="/vsts/codex-agile">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/codex-agile.png" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Azure Codex Agile Onboarding Guide</h3>
+                                                    <p>Sign up and start using Agile tools to plan and track work.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+<li>
+                                <a href="/vsts/codex-repos">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/codex-pipelines.png" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Azure Codex Pipelines Onboarding Guide</h3>
+                                                    <p>Sign up and start building and releasing apps with continuous integration and deployment.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+</ul>
                 <ul id="start">
                     <li>
                         <a href="#start-all"></a>
@@ -122,7 +91,7 @@ featureFlags:
                                 <div class="intro">
                                     <h1>Get Started with CodeX</h1>
                                     <p>Explore our most popular services with quickstarts, samples, and tutorials.</p>
-                                </div>
+                                </div> 
                             </li>
                             <li>
                                 <div class="cardSize">
