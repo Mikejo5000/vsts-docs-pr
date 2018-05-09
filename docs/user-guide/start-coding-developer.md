@@ -12,3 +12,9 @@ ms.date: 12/07/2016
 ---
 
 # How can I get Azure Codex?
+
+::: moniker range=">= tfs-2013"
+
+some text here
+
+::: moniker-end

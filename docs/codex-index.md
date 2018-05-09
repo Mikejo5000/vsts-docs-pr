@@ -22,9 +22,7 @@ featureFlags:
         <ul class="pivots">
             <li>
                 <a href="#start">Get Started</a>
-<ul id="get-started-codex" class="cardsA">
-                    <li>
-                        <ul id="code" class="cardsA">
+                        <ul id="get-started-codex" class="cardsA">
                             <li>
                                 <a href="/vsts/codex-repos">
                                     <div class="cardSize">
@@ -44,7 +42,7 @@ featureFlags:
                                     </div>
                                 </a>
                             </li>
-<li>
+                            <li>
                                 <a href="/vsts/codex-agile">
                                     <div class="cardSize">
                                         <div class="cardPadding">
@@ -63,7 +61,7 @@ featureFlags:
                                     </div>
                                 </a>
                             </li>
-<li>
+                            <li>
                                 <a href="/vsts/codex-repos">
                                     <div class="cardSize">
                                         <div class="cardPadding">
@@ -82,7 +80,7 @@ featureFlags:
                                     </div>
                                 </a>
                             </li>
-</ul>
+                        </ul>
                 <ul id="start">
                     <li>
                         <a href="#start-all"></a>

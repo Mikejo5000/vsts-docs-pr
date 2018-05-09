@@ -3,7 +3,7 @@
 - name: Overview
   items:
   - name: "What is Azure Codex?"
-    href: what-is-azure-codex.md
+    href: what-is-codex-project.md
   - name: "What do I get with Azure Codex?"
     href: services.md?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json&bc=/vsts/breadcrumb/toc.json 
   - name: "How do I get Azure Codex?"

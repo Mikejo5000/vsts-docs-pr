@@ -14,3 +14,9 @@ ms.date: 12/07/2016
 
 
 # How to start Azure Codex for free
+
+::: moniker range=">= tfs-2013"
+
+some text here
+
+::: moniker-end
