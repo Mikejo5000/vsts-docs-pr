@@ -9,7 +9,8 @@ ms.assetid:
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-monikerRange: 
 ms.date: 12/07/2016
 ---
+
+
 # How to start Azure Codex for free

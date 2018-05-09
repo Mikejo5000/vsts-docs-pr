@@ -5,11 +5,11 @@ description: Understand
 ms.technology: devops-new-user 
 ms.prod: devops
 ms.topic: conceptual
-ms.assetid:  
 ms.manager: douge
 ms.author: chcomley
-author: chcomley
-monikerRange: 
+author: chcomley 
 ms.date: 12/07/2016
 ---
+
+
 # How can I get Azure Codex?
