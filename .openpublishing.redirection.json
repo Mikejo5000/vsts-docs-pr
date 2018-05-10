@@ -178,7 +178,7 @@
         },
         {
             "source_path": "docs/build/apps/aspnet/cd/deploy-cloudservice-cloudservice.md",
-            "redirect_url": "/vsts/build-release/apps/cd/deploy-cloudservice-cloudservice",
+            "redirect_url": "/vsts/build-release/release/getting-started-vsts-build",
             "redirect_document_id": false
         },
         {
