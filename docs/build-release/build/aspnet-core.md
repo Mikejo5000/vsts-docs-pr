@@ -81,7 +81,7 @@ Do you want to define your build process in your web browser or configure it as 
 
 Choose this option if you prefer a graphical interface in your web browser.
 
-![PowerShell script task says "Hello World"](../apps/aspnet/_shared/_img/powershell-script-hello-world.png)
+![PowerShell script task says "Hello World"](../../_shared/_img/powershell-script-hello-world.png)
 
 # [YAML](#tab/yaml)
 
@@ -120,13 +120,13 @@ Begin by creating your build definition.
 
 1. Navigate to the **Files** tab of the **Code** hub, and then choose **Set up build**.
 
- ![Screenshot showing button to set up build for a repository](../apps/aspnet/_shared/_img/set-up-first-build-from-code-hub.png)
+ ![Screenshot showing button to set up build for a repository](../_shared/_img/set-up-first-build-from-code-hub.png)
 
  You are taken to the **Build and Release** hub and asked to **Select a template** for the new build definition.
 
 1. In the right panel, select **ASP.NET Core**, and then choose **Apply**.
 
- ![Screenshot showing dotnet core template](../apps/aspnet/_shared/_img/apply-aspnet-core-build-template.png)
+ ![Screenshot showing dotnet core template](_shared/_img/apply-aspnet-core-build-template.png)
 
 # [VSTS or TFS repo](#tab/gitvsts/yaml)
 
@@ -158,7 +158,7 @@ In VSTS:
 
 1. In the right panel, select **ASP.NET Core**, and then choose **Apply**.
 
- ![Screenshot showing dotnet core template](../apps/aspnet/_shared/_img/apply-aspnet-core-build-template.png)
+ ![Screenshot showing dotnet core template](_shared/_img/apply-aspnet-core-build-template.png)
 
 ::: moniker-end
 
