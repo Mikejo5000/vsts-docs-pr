@@ -1,20 +1,20 @@
 ---
 title: Navigate using the account hub pages 
-titleSuffix: VSTS & TFS 
-description: Quickly link to work items, pull requests, team projects, and more using your account home page in Visual Studio Team Services & Team Foundation Server 
+titleSuffix: Azure Codex
+description:  
 ms.technology: devops-new-user
 ms.prod: devops
 ms.assetid: B4406575-4D4D-42E3-88FD-93830546B67F
 ms.topic: conceptual
 ms.manager: douge
-ms.author: kaelli
-author: KathrynEE
-ms.date: 01/24/2018
+ms.author: chcomley
+author: chcomley
+ms.date: 08/01/2018
 monikerRange: '>= tfs-2017'
 ---
-# Work effectively from your account hub 
+# Work effectively from your account hub
 
-**VSTS | TFS 2018 | TFS 2017.1**  
+**VSTS | TFS 2018 | TFS 2017.1**
 
 > [!NOTE]
 > **Feature availability**: The features described in this topic are available from Visual Studio Team Services (VSTS) and TFS 2017.1 and later versions. To upgrade to TFS 2017.1, go to the [Visual Studio downloads page](https://www.visualstudio.com/downloads/download-visual-studio-vs).  

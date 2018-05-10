@@ -1,6 +1,6 @@
 ---
 title: Navigate in the web portal 
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Codex
 description: Guide to using the web portal for Visual Studio Team Services & Team Foundation Server   
 ms.technology: devops-new-user
 ms.prod: devops

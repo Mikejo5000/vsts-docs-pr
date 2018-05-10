@@ -1,20 +1,21 @@
 ---
-title: Get support, provide feedback
-titleSuffix: VSTS & TFS
-description: Guide to providing product and content feedback as well as accessing support resources in Visual Studio Team Services & Team Foundation Server  
+title: Get support, provide feedback in Azure Codex
+titleSuffix: Azure Codex
+description: Guide to providing product and content feedback as well as accessing support resources in Azure Codex
 ms.technology: devops-new-user
 ms.prod: devops
 ms.assetid: 8A725F33-19F1-4964-BD5C-E1FB92F02B6E  
 ms.manager: douge
-ms.author: douge
+ms.author: chcomley
+author: chcomley
 ms.topic: troubleshooting
-ms.date: 10/19/2017
+ms.date: 08/01/2018
 monikerRange: '>= tfs-2013'
 ---
 
-# Get VSTS and TFS product support and provide feedback
+# Get Azure Codex product support and provide feedback
 
-[!INCLUDE [temp](../work/_shared/dev15-version-header.md)] 
+[!INCLUDE [temp](../work/_shared/dev15-version-header.md)]
 
 We're always working to improve VSTS, and we want you to be part of the process! Share your feedback and ideas with us, or join our communities.
 
@@ -67,13 +68,13 @@ The more details, the better!
 
 <a id="platform-version" />
 
-## What platform/version am I using? 
+## What platform/version am I using?
 
 You can tell what platform you use from the URL you use to connect to VSTS or TFS. 
 
 **VSTS**
 
-A VSTS URL consists of an account name and visual studio.com, for example: ```https://{youraccount}.visualstudio.com```.  
+A VSTS URL consists of an account name and visual studio.com, for example: ```https://{youraccount}.visualstudio.com```.
 
 To learn the version number, enter the following address in a web browser:
 ```
