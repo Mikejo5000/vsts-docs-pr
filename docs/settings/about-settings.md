@@ -21,6 +21,34 @@ From the administrative or **Settings** context, you configure resources that su
 ## Individual contributor settings
 Individual contributors can set their user preferences, enable select features that are in preview, and manage their favorites and notifications. 
 
+
+<table>
+<tbody valign="top">
+<tr>
+<th width="20%">Area</th>
+<th width="40%">Supported tasks</th>
+<th width="40%">Notes</th>
+</tr>
+<tr>
+<td>General</td>
+<td>- [Set user preferences](../accounts/account-preferences.md)<br/>- [View permissions](../security/view-permissions.md)<br/>- [Enable preview features](../collaborate/preview-features.md)</td>
+<td>For an overview of default permission assignments by role, see [Default permissions and access for Azure Codex](../security/permissions-access.md).</td>
+</tr>
+<tr>
+<td>Favorites</td>
+<td>- [Set favorites](../notifications/manage-personal-notifications.md)</td>
+<td> Any team member can set their own favorites and team favorites. .</td>
+</tr>
+<tr>
+<td>Notifications</td>
+<td>- [Manage personal notifications](../notifications/manage-personal-notifications.md)</td>
+<td>To learn more about how notifications are managed, see [About notifications](../notifications/about-notifications.md). </td>
+</tr>
+</tbody>
+</table>
+
+
+<!---
 > [!div class="mx-tdCol2BreakAll"]  
 > |  Area  | Supported tasks |Notes |
 > |---------|---------|---------|
@@ -28,11 +56,52 @@ Individual contributors can set their user preferences, enable select features t
 > |Favorites |- [Set favorites](../notifications/manage-personal-notifications.md)| Any team member can set their own favorites and team favorites. 
 > |Notifications |- [Manage personal notifications](../notifications/manage-personal-notifications.md)|  To learn more about how notifications are managed, see [About notifications](../notifications/about-notifications.md). |
 
+-->
  
 
 ## Team administrator role and managing teams
 
 Team administrators are tasked with configuring team resources which mostly correspond to Agile tools and dashboards.  
+
+
+<table>
+<tbody valign="top">
+<tr>
+<th width="20%">Area</th>
+<th width="40%">Supported tasks</th>
+<th width="40%">Notes</th>
+</tr>
+<tr>
+<td>General</td>
+<td>- [Add user accounts to a team](../accounts/account-preferences.md)</td>
+<td>Members of a team are included within the team group which can be used in queries and **@mentions** in pull requests and work item discussions.</td>
+</tr>
+<tr>
+<td>Azure Codex Agile<br/>(Work tracking)</td>
+<td>- [Configure team default area and iteration paths](../work/scale/set-team-defaults.md)<br/>- [Select iteration paths that they'll use](../work/scale/set-team-defaults.md)<br/>- Configure Kanban boards: [Columns](../work/kanban/add-columns.md), [Swimlanes](../work/kanban/expedite-work.md), [Cards](../work/customize/customize-cards.md), [WIP limits](../work/kanban/wip-limits.md)<br/>- [Configure additional team settings](../work/scale/manage-team-assets.md)<br/>- [Define work item templates](../work/backlogs/work-item-template.md) </td>
+<td>To configure team resources, you must be added as a [team administrator for the specific team](../work/scale/add-team-administrator.md).  </td>
+</tr>
+<tr>
+<td>Dashboards </td>
+<td>- [Create team dashboards](../report/dashboards/dashboards.md)<br/>- [Manage team dashboard permissions](../report/dashboards/dashboard-permissions.md)</td>
+<td>New dashboards added to a project are associated with a team. The default permissions allow team members to create and edit dashboards for their team.</td>
+</tr>
+<tr>
+<td> Notifications </td>
+<td>- [Manage team notifications](../collaborate/manage-team-notifications.md)</td>
+<td>TBD </td>
+</tr>
+<tr>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+</tbody>
+</table>
+
+
+<!---
+
 
 > [!div class="mx-tdCol2BreakAll"]  
 > |  Area  | Supported tasks | Notes |
@@ -42,7 +111,7 @@ Team administrators are tasked with configuring team resources which mostly corr
 > | Dashboards |- [Create team dashboards](../report/dashboards/dashboards.md)<br/>- [Manage team dashboard permissions](../report/dashboards/dashboard-permissions.md)<br/> | New dashboards added to a project are associated with a team. The default permissions allow team members to create and edit dashboards for their team. |
 > | Notifications |- [Manage team notifications](../collaborate/manage-team-notifications.md)|
 
-
+-->
 
 ## Project administrator role 
 
