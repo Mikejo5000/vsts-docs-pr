@@ -33,15 +33,15 @@ As you choose from these options in the sections below, this topic will adapt to
 
 ## Prerequisites
 
-[!INCLUDE [include](../_shared/ci-cd-prerequisites-vsts.md)]
+[!INCLUDE [include](../../_shared/ci-cd-prerequisites-vsts.md)]
 
-[!INCLUDE [include](../_shared/ci-cd-prerequisites-tfs.md)]
+[!INCLUDE [include](../../_shared/ci-cd-prerequisites-tfs.md)]
 
 ## Get the sample code
 
 The sample app we use here is a Visual Studio solution that has two projects: An ASP.NET Core Web Application project and a Unit Test project (both targeting .NET Core 2.0 framework). This quickstart works for any apps that target the .NET Core 1.1 or 2.0 frameworks.
 
-[!INCLUDE [include](../apps/aspnet/_shared/get-sample-code-intro.md)]
+[!INCLUDE [include](../_shared/get-sample-code-intro.md)]
 
 ```
 https://github.com/adventworks/dotnetcore-sample
@@ -51,13 +51,13 @@ Where do you want to keep your code? Whichever service you choose, our system ca
 
 # [VSTS or TFS repo](#tab/gitvsts)
 
-[!INCLUDE [include](../apps/aspnet/_shared/get-sample-code-vsts-tfs-2017-update-2.md)]
+[!INCLUDE [include](../_shared/get-sample-code-vsts-tfs-2017-update-2.md)]
 
 # [GitHub repo](#tab/github)
 
 ::: moniker range="vsts"
 
-[!INCLUDE [include](../apps/aspnet/_shared/get-sample-code-github.md)]
+[!INCLUDE [include](../_shared/get-sample-code-github.md)]
 
 ::: moniker-end
 
@@ -69,9 +69,9 @@ GitHub is not available in TFS.
 
 ---
 
-[!INCLUDE [include](../apps/aspnet/_shared/get-sample-code-other-repos-vsts.md)]
+[!INCLUDE [include](../_shared/get-sample-code-other-repos-vsts.md)]
 
-[//]: # (TODO: report and get fix for build warning "All tabs are hidden in the tab group." [!INCLUDE [include](../_shared/web-or-yaml.md)
+[//]: # (TODO: report and get fix for build warning "All tabs are hidden in the tab group." [!INCLUDE [include](../../_shared/web-or-yaml.md)
 
 ## Web or config as code
 
@@ -110,7 +110,7 @@ YAML builds are not available in TFS.
 
 ## Create the CI process definition
 
-[!INCLUDE [include](../_shared/ci-quickstart-intro.md)]
+[!INCLUDE [include](../../_shared/ci-quickstart-intro.md)]
 
 [//]: # (TODO: Restore use of includes when we get support for using them in a list.)
 
@@ -503,7 +503,7 @@ YAML builds are not available in TFS.
 
 ## View the build summary
 
-[!INCLUDE [include](../apps/aspnet/_shared/view-build-summary.md)]
+[!INCLUDE [include](../_shared/view-build-summary.md)]
 
 ## Next steps
 
