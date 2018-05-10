@@ -26,8 +26,8 @@ Individual contributors can set their user preferences, enable select features t
 <tbody valign="top">
 <tr>
 <th width="15%">Area</th>
-<th width="35%">Supported tasks</th>
-<th width="50%">Notes</th>
+<th width="40%">Supported tasks</th>
+<th width="45%">Notes</th>
 </tr>
 <tr>
 <td>**General**</td>
@@ -42,11 +42,17 @@ Individual contributors can set their user preferences, enable select features t
 <td><ul>
 <li>[View permissions](../security/view-permissions.md)</li>
 <li>[Add an alternate account to your Visual Studio subscription](https://docs.microsoft.com/en-us/visualstudio/subscriptions/vs-alternate-identity)</li>
+</ul></td>
+<td>For an overview of default permission assignments by role, see [Default permissions and access for Azure Codex](../security/permissions-access.md).</td>
+</tr>
+<tr>
+<td>**Authentication**</td>
+<td><ul>
 <li>[Authenticate access with personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md)</li>
 <li>[Authorize access to REST APIs with OAuth 2.0](../integrate/get-started/authentication/oauth.md)</li>
 <li>[Use SSH key authentication](../git/use-ssh-keys-to-authenticate.md)</li>
 </ul></td>
-<td>For an overview of default permission assignments by role and authentication, see [Default permissions and access for Azure Codex](../security/permissions-access.md) and [Authentication overview](../git/auth-overview.md#alternate-credentials).</td>
+<td>For an overview of supported authentication methods, see [Authentication overview](../git/auth-overview.md#alternate-credentials).</td>
 </tr>
 <tr>
 <td>**Favorites**</td>
@@ -80,8 +86,8 @@ For a complete overview of all team assets that you can configure, see [Manage t
 <tbody valign="top">
 <tr>
 <th width="15%">Area</th>
-<th width="35%">Supported tasks</th>
-<th width="50%">Notes</th>
+<th width="40%">Supported tasks</th>
+<th width="45%">Notes</th>
 </tr>
 <tr>
 <td>**Team profile**</td>
@@ -92,7 +98,7 @@ For a complete overview of all team assets that you can configure, see [Manage t
 <td>Members of a team are included within the team group which can be used in queries and **@mentions** in pull requests and work item discussions.</td>
 </tr>
 <tr>
-<td>**Work, Team configuration**<br/>(Azure Codex Agile)</td>
+<td>**Work, Team configuration**</td>
 <td><ul>
 <li>[Backlog levels](../work/customize/select-backlog-navigation-levels.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)</li>
 <li>[Show bugs on backlogs & boards](../work/customize/show-bugs-on-backlog.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)</li>
@@ -124,14 +130,14 @@ For a complete overview of all team assets that you can configure, see [Manage t
 
 ## Project administrator role and managing projects
 
-Members of the [Project Administrators group](../security/set-project-collection-level-permissions.md) are tasked with configuring resources for a project and managing permissions at the project-level.  
+Members of the [Project Administrators group](../security/set-project-collection-level-permissions.md) are tasked with configuring resources for a project and managing permissions at the project-level. Note that members of the [Project Collection Administrators group](../security/set-project-collection-level-permissions.md) can perform project-level  tasks as well.   
 
 <table>
 <tbody valign="top">
 <tr>
 <th width="15%">Area</th>
-<th width="35%">Supported tasks</th>
-<th width="50%">Notes</th>
+<th width="40%">Supported tasks</th>
+<th width="45%">Notes</th>
 </tr>
 <tr>
 <td>**Teams**</td>
@@ -139,7 +145,7 @@ Members of the [Project Administrators group](../security/set-project-collection
 <li>[Add another team and team members](../work/scale/multiple-teams.md)</li>
 <li>[Add a team administrator](../work/scale/add-team-administrator.md)</li>
 </ul></td>
-<td>A default team is created when the organizational account is created. You add a team when you want to provide a group of users in your organization a set of Agile tools which they have full ownership to configure and manage. Teams have access to a product backlog, porfolio backlogs, sprint backlogs, dashboards, team-scoped widgets, and more. For an overview of all tools that support a team, see [About teams and Agile tools](about-teams-and-settings.md).</td>
+<td>A default team is created when the organizational account is created. You add a team when you want to provide a group of users in your organization a set of Agile tools which they have full ownership to configure and manage. Teams have access to a product backlog, porfolio backlogs, sprint backlogs, dashboards, team-scoped widgets, and more.<p>For an overview of all tools that support a team, see [About teams and Agile tools](about-teams-and-settings.md).</p></td>
 </tr>
 <tr>
 <td>**Security**</td>
@@ -149,8 +155,9 @@ Members of the [Project Administrators group](../security/set-project-collection
 <li>[Grant or restrict access to select features and functions](../security/restrict-access.md)</li>
 <li>[Add administrators](../security/set-project-collection-level-permissions.md)</li>
 <li>[Manage project-level permissions](../security/permissions.md#project-level)</li>
+<li>[Set build and release permissions](../build-release/set-permissions.md)</li>
 </ul></td>
-<td>Project Administrators can add users to a team project or team. When you add a user to a team, you automatically add them to the team project. Users added to a team project can only view and contribute to that specific project. For an overview of security concepts, see [About permissions and groups](../security/about-permissions.md) and [About access levels](../security/access-levels.md). To change permissions at the project-level, many of which are work tracking related, see [Set permissions at the project-level or project collection-level](../security/set-project-collection-level-permissions.md). </td>
+<td>Project Administrators can add users to a team project or team. When you add a user to a team, you automatically add them to the team project. Users added to a team project can only view and contribute to that specific project. <p>For an overview of security concepts, see [About permissions and groups](../security/about-permissions.md) and [About access levels](../security/access-levels.md). For a list of project-level permissions, see [Permissions and groups reference, Project-level permissions](../security/permissions.md#project-level).</p> </td>
 </tr>
 <tr>
 <td> **Notifications** </td>
@@ -236,8 +243,8 @@ For an overview of managing your Azure Codex account, see [About account managem
 <tbody valign="top">
 <tr>
 <th width="15%">Area</th>
-<th width="35%">Supported tasks</th>
-<th width="50%">Notes</th>
+<th width="40%">Supported tasks</th>
+<th width="45%">Notes</th>
 </tr>
 <tr>
 <td>**Overview, Account settings**</td>
@@ -292,12 +299,11 @@ For an overview of managing your Azure Codex account, see [About account managem
 <li>[Change individual permissions, grant select access to specific functions](../security/change-individual-permissions.md)</li>
 <li>[Grant or restrict access to select features and functions](../security/restrict-access.md)</li>
 <li>[Add administrators](../security/set-project-collection-level-permissions.md)</li>
-<li>[Manage collection-level permissions](../security/permissions.md#collection-level)</li>
 <li>[Add Azure Active Directory groups](../accounts/manage-azure-active-directory-groups-vsts.md)</li>
 <li>[Connect VSTS account to Azure Active Directory](../accounts/connect-account-to-aad.md)</li>
 <li>[Manage conditional access](../accounts/manage-conditional-access.md)</li>
 </ul></td>
-<td>For an overview of security concepts, see [About permissions and groups](../security/about-permissions.md) and [About access levels](../security/access-levels.md).</td>
+<td>For an overview of security concepts, see [About permissions and groups](../security/about-permissions.md) and [About access levels](../security/access-levels.md). For a list of collection-level permissions, see [Permissions and groups reference, Collection-level permissions](../security/permissions.md#collection-level).</p></td>
 </tr>
 <tr>
 <td>**Notifications**</td>
@@ -352,4 +358,4 @@ For an overview of managing your Azure Codex account, see [About account managem
 ## Related articles 
 - [Resources granted to project members](../accounts/resources-granted-to-project-members.md) 
 - [Permissions and groups reference](../security/permissions.md) 
-
+- [Rate limits](../collaborate/rate-limits.md)

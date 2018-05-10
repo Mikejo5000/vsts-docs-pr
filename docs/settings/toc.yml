@@ -20,10 +20,22 @@
     href: ./work/add-custom-field.md
   - name: Add a custom work item type
     href: ./work/add-custom-wit.md
+  - name: View permissions 
+    href: ../security/view-permissions.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+  - name: Look up the account owner or a project administrator
+    href: ../security/lookup-account-owner-admin.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+  - name: Add users to a team project or team 
+    href: ../security/add-users-team-project.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
 - name: Tutorials
   items:
   - name: Add and manage users
-    href: ../accounts/add-account-users-from-user-hub.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json 
+    href: ../accounts/add-account-users-from-user-hub.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+  - name: Change individual permissions 
+    href: ../security/change-individual-permissions.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+  - name: Grant or restrict permissions to select tasks
+    href: ../security/restrict-access.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+  - name: Manage personal notifications
+    href: ../notifications/manage-personal-notifications.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json 
   - name: Customize a project
     href: ./work/customize-process.md
   - name: Create and manage a process
@@ -52,24 +64,30 @@
       href: ../collaborate/set-favorites.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
     - name: Add an alternate account to your Visual Studio subscription
       href: https://docs.microsoft.com/en-us/visualstudio/subscriptions/vs-alternate-identity?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
-  - name: "Security & authentication"
+    - name: Authentication
+      items:
+      - name: Authenticate access with personal access tokens
+        href: ../accounts/use-personal-access-tokens-to-authenticate.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+      - name: Authorize access to REST APIs with OAuth 2.0
+        href: ../integrate/get-started/authentication/oauth.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+      - name: Use SSH key authentication
+        href: ../git/use-ssh-keys-to-authenticate.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+  - name: Security
     items:
-    - name: View permissions
-      href: ../security/view-permissions.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
-    - name: Add administrators, set permissions at the project-level or project collection-level
+    - name: Add administrators, set permissions
       href: ../security/set-project-collection-level-permissions.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
-    - name: Authenticate access with personal access tokens
-      href: ../accounts/use-personal-access-tokens-to-authenticate.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
-    - name: Authorize access to REST APIs with OAuth 2.0
-      href: ../integrate/get-started/authentication/oauth.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
-    - name: Use SSH key authentication
-      href: ../git/use-ssh-keys-to-authenticate.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+    - name: Set Git or TFVC repository permissions
+      href: ../security/set-git-tfvc-repository-permissions.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+    - name: Set build and release permissions
+      href: ../build-release/set-permissions.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+    - name: Set work tracking permissions
+      href: ../security/set-permissions-access-work-tracking.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
   - name: Teams
     items:
     - name: Add a team and team members
       href: ../work/scale/multiple-teams.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
     - name: Add a team administrator
-      href: ../work/scale/multiple-teams.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+      href: ../work/scale/add-team-administrator.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
     - name: Team configuration
       href: ../work/scale/manage-team-assets.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
       items:
@@ -95,8 +113,6 @@
       href: ../notifications/unsubscribe-default-notification.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
     - name: Change your preferred email address
       href: ../notifications/notifications/change-email-address.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
-    - name: Manage personal notifications
-      href: ../notifications/manage-personal-notifications.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
     - name: Manage team notifications
       href: ../collaborate/manage-team-notifications.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
   - name: Service hooks
@@ -131,10 +147,14 @@
       href: ../build-release/concepts/definitions/release/deployment-groups/index.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
   - name: Code 
     items:
-    - name: Create & manage repositories
+    - name: Create & manage Git repositories
       href: ../git/create-new-repo.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
-    - name: Branch policies
+    - name: Manage Git branch policies
       href: ../git/branch-policies.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+    - name: Manage repository permissions
+      href: ../security/set-git-tfvc-repository-permissions.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+    - name: Add TFVC Check-In Policies
+      href: ../tfvc/add-check-policies.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
   - name: Test 
     items:
     - name: Set test retention policies 
@@ -172,6 +192,7 @@
   - name: Work tracking object limits
     href: ./work/object-limits.md
   - name: REST APIs
+    href: https://docs.microsoft.com/en-us/rest/api/vsts
     items:
     - name: Area and Iteration Paths
       href: https://docs.microsoft.com/en-us/rest/api/vsts/wit/classification%20nodes
@@ -185,10 +206,10 @@
   items:
   - name: Account Management
     href: ../accounts/index.md
+  - name: Billing
+    href: ../billing/index.md
   - name: Security & Identity
     href: ../security/index.md
-  - name: Work Items
-    href: ../work/work-items/index.md
   - name: "Manage Extensions (Marketplace)"
     href: ../marketplace/index.md
 
