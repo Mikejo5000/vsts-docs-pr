@@ -13,7 +13,7 @@ monikerRange: 'vsts'
 ms.date: 07/10/2018
 ---
 
-# Azure Codex Settings 
+# Settings 
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
 

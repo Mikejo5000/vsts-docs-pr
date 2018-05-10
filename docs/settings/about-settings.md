@@ -30,7 +30,7 @@ Individual contributors can set their user preferences, enable select features t
 <th width="50%">Notes</th>
 </tr>
 <tr>
-<td>General</td>
+<td>**General**</td>
 <td><ul>
 <li>[Set account preferences](../accounts/account-preferences.md)</li>
 <li>[Enable preview features](../collaborate/preview-features.md)</li>
@@ -38,28 +38,28 @@ Individual contributors can set their user preferences, enable select features t
 <td>For an overview of default permission assignments by role, see [Default permissions and access for Azure Codex](../security/permissions-access.md).</td>
 </tr>
 <tr>
-<td>Security</td>
+<td>**Security**</td>
 <td><ul>
 <li>[View permissions](../security/view-permissions.md)</li>
 <li>[Add an alternate account to your Visual Studio subscription](https://docs.microsoft.com/en-us/visualstudio/subscriptions/vs-alternate-identity)</li>
-<li>[Personal access tokens](use-personal-access-tokens-to-authenticate.md)</li>
-<li>[Alternate authentication credentials](../git/auth-overview.md#alternate-credentials)</li>
-<li>[OAuth authorizations](../integrate/get-started/authentication/oauth.md)</li>
-<li>[SSH public keys](../git/use-ssh-keys-to-authenticate.md)</li>
+<li>[Authenticate access with personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md)</li>
+<li>[Authorize access to REST APIs with OAuth 2.0](../integrate/get-started/authentication/oauth.md)</li>
+<li>[Use SSH key authentication](../git/use-ssh-keys-to-authenticate.md)</li>
 </ul></td>
-<td>For an overview of default permission assignments by role, see [Default permissions and access for Azure Codex](../security/permissions-access.md).</td>
+<td>For an overview of default permission assignments by role and authentication, see [Default permissions and access for Azure Codex](../security/permissions-access.md) and [Authentication overview](../git/auth-overview.md#alternate-credentials).</td>
 </tr>
 <tr>
-<td>Favorites</td>
+<td>**Favorites**</td>
 <td><ul>
-<li>[Set favorites](../notifications/manage-personal-notifications.md)</li>
+<li>[Set personal or team favorites](../collaborate/set-favorites.md)</li>
 </ul></td>
 <td>Favorites provide a quick way to navigate to backlogs, boards, dashboards, and more artifacts. Any member of the Contributors group or team member can set their own favorites. Team members can set team favorites. </td>
 </tr>
 <tr>
-<td>Notifications</td>
+<td>**Notifications**</td>
 <td><ul>
-<li>[View your subscriptions, opt-out as needed](../notifications/manage-personal-notifications.md)</li>
+<li>[View your subscriptions, opt-out as needed](../notifications/unsubscribe-default-notification.md)</li>
+<li>[Change your preferred email address](../notifications/notifications/change-email-address.md)</li>
 <li>[Manage personal notifications](../notifications/manage-personal-notifications.md)</li>
 </ul></td>
 <td>Notifications alert you through email messages when changes occur to work items, code reviews, pull requests, source control files, builds, and more. A number of notifications are preset when a team project is created. If you want to opt out of these, you can.  </li>
@@ -79,12 +79,12 @@ For a complete overview of all team assets that you can configure, see [Manage t
 <table>
 <tbody valign="top">
 <tr>
-<th width="22%">Area</th>
-<th width="44%">Supported tasks</th>
-<th width="34%">Notes</th>
+<th width="15%">Area</th>
+<th width="35%">Supported tasks</th>
+<th width="50%">Notes</th>
 </tr>
 <tr>
-<td>General</td>
+<td>**Team profile**</td>
 <td><ul>
 <li>[Add users to a team project or specific team](../security/add-users-team-project.md)</li>
 <li>[Add team admins](../work/scale/add-team-administrator.md)</li>
@@ -104,7 +104,7 @@ For a complete overview of all team assets that you can configure, see [Manage t
 <td>For an overview of team resources, see [About teams and Agile tools](about-teams-and-settings.md). You configure Kanban boards from the board view: [Columns](../work/kanban/add-columns.md), [Swimlanes](../work/kanban/expedite-work.md), [Cards](../work/customize/customize-cards.md), [WIP limits](../work/kanban/wip-limits.md). </td>
 </tr>
 <tr>
-<td>Dashboards </td>
+<td>**Dashboards** </td>
 <td><ul>
 <li>[Create team dashboards](../report/dashboards/dashboards.md)</li>
 <li>[Manage team dashboard permissions](../report/dashboards/dashboard-permissions.md)</li>
@@ -112,7 +112,7 @@ For a complete overview of all team assets that you can configure, see [Manage t
 <td>New dashboards added to a project are associated with a team. The default permissions allow team members to create and edit dashboards for their team.</td>
 </tr>
 <tr>
-<td> Notifications </td>
+<td> **Notifications** </td>
 <td><ul>
 <li>[Manage team notifications](../collaborate/manage-team-notifications.md)</li>
 </ul></td>
@@ -129,14 +129,15 @@ Members of the [Project Administrators group](../security/set-project-collection
 <table>
 <tbody valign="top">
 <tr>
-<th width="22%">Area</th>
-<th width="44%">Supported tasks</th>
-<th width="34%">Notes</th>
+<th width="15%">Area</th>
+<th width="35%">Supported tasks</th>
+<th width="50%">Notes</th>
 </tr>
 <tr>
 <td>**Teams**</td>
 <td><ul>
 <li>[Add another team and team members](../work/scale/multiple-teams.md)</li>
+<li>[Add a team administrator](../work/scale/add-team-administrator.md)</li>
 </ul></td>
 <td>A default team is created when the organizational account is created. You add a team when you want to provide a group of users in your organization a set of Agile tools which they have full ownership to configure and manage. Teams have access to a product backlog, porfolio backlogs, sprint backlogs, dashboards, team-scoped widgets, and more. For an overview of all tools that support a team, see [About teams and Agile tools](about-teams-and-settings.md).</td>
 </tr>
@@ -173,7 +174,7 @@ Members of the [Project Administrators group](../security/set-project-collection
 <td>New dashboards added to a project inherit the default dashboard permissions. The default permissions allow team members to create and edit dashboards for their team.</td>
 </tr>
 <tr>
-<td>**Work, Project configuration**<br/>(Azure Codex Agile)</td>
+<td>**Work, Project configuration**</td>
 <td><ul>
 <li>[Define area paths](set-area-paths.md)</li>
 <li>[Define iteration paths or sprints](set-iteration-paths-sprints.md)</li>
@@ -183,18 +184,17 @@ Members of the [Project Administrators group](../security/set-project-collection
 </td>
 </tr>
 <tr>
-<td>**CI/CD** (Azure Codex Pipelines)</td>
+<td>**CI/CD** </td>
 <td><ul>
-<li>[Add and manage Agent queues](../build-release/concepts/agents/pools-queues.md)</li>
+<li>[Add and manage Agent queues and agent pools](../build-release/concepts/agents/pools-queues.md)</li>
 <li>[Add and manage service endpoints](../build-release/concepts/library/service-endpoints.md)</li>
-<li>[Add and manage agent pools](../build-release/concepts/agents/pools-queues.md)</li>
-<li>[Add and manage deployment pools](../build-release/concepts/definitions/release/deployment-groups.md)</li>
+<li>[Add and manage deployment pools and groups](/vsts/build-release/concepts/definitions/release/deployment-groups)</li>
 <li>[Set retention policies](../build-release/concepts/policies/retention.md)</li>
 </ul></td>
-<td>To build your code or deploy your software you need at least one agent. Agent and deployment pools are build and release resources that you can manage across projects. </td>
+<td>To build your code or deploy your software you need at least one agent. Agent and deployment pools are build and release resources that you manage across projects. </td>
 </tr>
 <tr>
-<td>**Code** (Azure Codex Repos)</td>
+<td>**Code** </td>
 <td><ul>
 <li>[Create additional Git repos](../git/tutorial/creatingrepo.md)</li>
 <li>[Manage repository permissions](../security/set-git-tfvc-repository-permissions.md)</li>
@@ -204,7 +204,7 @@ Members of the [Project Administrators group](../security/set-project-collection
 <td>You can manage code using [Git repositories](../git/overview.md) or one [Team Foundation Version Control (TFVC) repository](../tfvc/overview.md). </td>
 </tr>
 <tr>
-<td>**Test** (Azure Codex Test)</td>
+<td>**Test** </td>
 <td><ul>
 <li>[Set test retention policies](../manual-test/getting-started/how-long-to-keep-test-results.md)</li>
 <li>[Manage test-related permissions at project level](../security/set-project-collection-level-permissions.md)</li>
@@ -229,15 +229,15 @@ Members of the [Project Administrators group](../security/set-project-collection
 
 Members of the [Project Collection Administrators group](../security/set-project-collection-level-permissions.md) are tasked with configuring resources for all Azure Codex projects defined for an account or organization. They also can perform all tasks to add projects, manage projects, and manage permissions for the collection, a project, or an object.   
 
-For an overview of managing you Azure Codex account, see [About account management](../accounts/account-management.md).
+For an overview of managing your Azure Codex account, see [About account management](../accounts/account-management.md).
 
 
 <table>
 <tbody valign="top">
 <tr>
-<th width="18%">Area</th>
-<th width="44%">Supported tasks</th>
-<th width="36%">Notes</th>
+<th width="15%">Area</th>
+<th width="35%">Supported tasks</th>
+<th width="50%">Notes</th>
 </tr>
 <tr>
 <td>**Overview, Account settings**</td>
@@ -251,13 +251,13 @@ For an overview of managing you Azure Codex account, see [About account manageme
 <td>**Billing**</td>
 <td><ul>
 <li>[Set up billing](../billing/set-up-billing-for-your-account-vs.md)</li>
-<li>[Start free trials for paid features and extensions](../billing/try-additional-features-vs)</li>
+<li>[Start free trials for paid features and extensions](../billing/try-additional-features-vs.md)</li>
 <li>[Pay for users (Basic)](../billing/buy-basic-access-add-users.md)</li>
 <li>[Buy CI/CD](../billing/buy-more-build-vs.md)</li>
 <li>[Buy cloud-based load testing](../billing/buy-load-testing-vs.md)</li>
 <li>[Add a user to make purchases](../billing/add-backup-billing-managers.md)</li>
 </ul></td>
-<td>All billing is managed through Azure. To learn more, see [Billing overview](../billing/overview.md) </td>
+<td>All billing is managed through Azure. To learn more, see [Billing overview](../billing/overview.md). </td>
 </tr>
 <tr>
 <td>**Projects**</td>
@@ -335,14 +335,14 @@ For an overview of managing you Azure Codex account, see [About account manageme
 <td>Process customization applies to Azure Codex Agile only. To customize the Agile tools and work tracking artifacts, you create and customize an inherited process and then update the project to use that process. To learn more, see [About process customization and inherited processes ](./work/inheritance-process-model.md). </td>
 </tr>
 <tr>
-<td>**CI/CD**(</td>
+<td>**CI/CD**</td>
 <td><ul>
 <li>[Set retention policies](../build-release/concepts/policies/retention.md)</li>
 <li>[Set resource limits for pipelines](../build-release/concepts/licensing/concurrent-pipelines-ts.md)</li>
 <li>[Add and manage agent pools](../build-release/concepts/agents/pools-queues.md)</li>
-<li>[Add and manage deployment pools](../build-release/concepts/definitions/release/deployment-groups.md)</li>
+<li>[Add and manage deployment pools](/vsts/build-release/concepts/definitions/release/deployment-groups)</li>
 </ul></td>
-<td>You manage resources that support CI/CD operations for all projects through the **Agent pools**<br/>**Deployment pools**, and **Retention and limits** pages.</td>
+<td>You manage resources that support CI/CD operations for all projects through the **Agent pools**, **Deployment pools**, and **Retention and limits** pages.</td>
 </tr>
 </tbody>
 </table>
@@ -350,5 +350,6 @@ For an overview of managing you Azure Codex account, see [About account manageme
 
 
 ## Related articles 
-- [Resources granted to project members](../accounts/resources-granted-to-project-members.md)  
-- 
+- [Resources granted to project members](../accounts/resources-granted-to-project-members.md) 
+- [Permissions and groups reference](../security/permissions.md) 
+
