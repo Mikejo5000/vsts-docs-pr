@@ -41,7 +41,7 @@ As you choose from these options in the sections below, this topic will adapt to
 
 The sample app we use here is a Visual Studio solution that has two projects: An ASP.NET Core Web Application project and a Unit Test project (both targeting .NET Core 2.0 framework). This quickstart works for any apps that target the .NET Core 1.1 or 2.0 frameworks.
 
-[!INCLUDE [include](../apps/aspnet/_shared/get-sample-code-intro.md)]
+[!INCLUDE [include](../apps/_shared/get-sample-code-intro.md)]
 
 ```
 https://github.com/adventworks/dotnetcore-sample
@@ -51,13 +51,13 @@ Where do you want to keep your code? Whichever service you choose, our system ca
 
 # [VSTS or TFS repo](#tab/gitvsts)
 
-[!INCLUDE [include](../apps/aspnet/_shared/get-sample-code-vsts-tfs-2017-update-2.md)]
+[!INCLUDE [include](../apps/_shared/get-sample-code-vsts-tfs-2017-update-2.md)]
 
 # [GitHub repo](#tab/github)
 
 ::: moniker range="vsts"
 
-[!INCLUDE [include](../apps/aspnet/_shared/get-sample-code-github.md)]
+[!INCLUDE [include](../apps/_shared/get-sample-code-github.md)]
 
 ::: moniker-end
 
@@ -69,7 +69,7 @@ GitHub is not available in TFS.
 
 ---
 
-[!INCLUDE [include](../apps/aspnet/_shared/get-sample-code-other-repos-vsts.md)]
+[!INCLUDE [include](../apps/_shared/get-sample-code-other-repos-vsts.md)]
 
 [//]: # (TODO: report and get fix for build warning "All tabs are hidden in the tab group." [!INCLUDE [include](../_shared/web-or-yaml.md)
 
@@ -81,7 +81,7 @@ Do you want to define your build process in your web browser or configure it as 
 
 Choose this option if you prefer a graphical interface in your web browser.
 
-![PowerShell script task says "Hello World"](../apps/aspnet/_shared/_img/powershell-script-hello-world.png)
+![PowerShell script task says "Hello World"](../_shared/_img/powershell-script-hello-world.png)
 
 # [YAML](#tab/yaml)
 
@@ -96,7 +96,7 @@ steps:
 
 This choice also offers parallel processing (fan out and fan in), and the ability to test and debug the process locally.
 
-[Learn more about YAML builds](../../actions/build-yaml.md).
+[Learn more about YAML builds](../actions/build-yaml.md).
 
 ::: moniker-end
 
@@ -120,7 +120,7 @@ Begin by creating your build definition.
 
 1. Navigate to the **Files** tab of the **Code** hub, and then choose **Set up build**.
 
- ![Screenshot showing button to set up build for a repository](../apps/aspnet/_shared/_img/set-up-first-build-from-code-hub.png)
+ ![Screenshot showing button to set up build for a repository](../apps/_shared/_img/set-up-first-build-from-code-hub.png)
 
  You are taken to the **Build and Release** hub and asked to **Select a template** for the new build definition.
 
@@ -398,7 +398,7 @@ You're nearly ready to go. Just a few more steps to complete your CI build proce
 
  * **VSTS:** Select _Hosted Linux_. This is how you can use our pool of agents that have the software you need to build your app.
 
- * **TFS:** Select a queue that includes a [Linux build agent](../../actions/agents/v2-linux.md) on a machine that has Docker and is configured to run containers.
+ * **TFS:** Select a queue that includes a [Linux build agent](../actions/agents/v2-linux.md) on a machine that has Docker and is configured to run containers.
 
 1. Select **Get sources** and then:
 
@@ -440,7 +440,7 @@ YAML builds are not available in TFS.
 
  * **VSTS:** Select _Hosted Linux_. This is how you can use our pool of agents that have the software you need to build your app.
 
- * **TFS:** Select a queue that includes a [Windows build agent](../../actions/agents/v2-windows.md).
+ * **TFS:** Select a queue that includes a [Windows build agent](../actions/agents/v2-windows.md).
 
 1. Select **Get sources** and then:
 
@@ -503,7 +503,7 @@ YAML builds are not available in TFS.
 
 ## View the build summary
 
-[!INCLUDE [include](../apps/aspnet/_shared/view-build-summary.md)]
+[!INCLUDE [include](../apps/_shared/view-build-summary.md)]
 
 ## Next steps
 
@@ -518,23 +518,23 @@ You've just put your own CI build process in place to automatically build and va
 
 See one of the following:
 
-* [Deploy to Azure Web App](../cd/deploy-webdeploy-webapps.md)
+* [Deploy to Azure Web App](../apps/cd/deploy-webdeploy-webapps.md)
 
-* [Deploy to a Windows VM](../cd/deploy-webdeploy-iis-deploygroups.md)
+* [Deploy to a Windows VM](../apps/cd/deploy-webdeploy-iis-deploygroups.md)
 
 # [Linux VM](#tab/deploy-linux)
 
 > [!IMPORTANT]
 > Make sure you followed the **[deployment instructions above](#deploy)** with the **Linux** tab selected.
 
-See [Deploy to a Linux Virtual Machine](../cd/deploy-linuxvm-deploygroups.md).
+See [Deploy to a Linux Virtual Machine](../apps/cd/deploy-linuxvm-deploygroups.md).
 
 # [Container](#tab/deploy-container)
 
 > [!IMPORTANT]
 > Make sure you followed the **[deployment instructions above](#deploy)** with the **Container** tab selected.
 
-See [Build and push a Docker image](../containers/build.md).
+See [Build and push a Docker image](../apps/containers/build.md).
 
 ---
 
@@ -542,6 +542,6 @@ See [Build and push a Docker image](../containers/build.md).
 
 Now that you have a CI build process for your master branch, you can extend the process to work with other branches in your repository, or to validate all pull requests. See:
 
-* [CI builds for Git in VSTS](../../actions/ci-build-git.md)
+* [CI builds for Git in VSTS](../actions/ci-build-git.md)
 
-* [CI builds for GitHub](../../actions/ci-build-github.md) 
+* [CI builds for GitHub](../actions/ci-build-github.md) 
