@@ -1,18 +1,20 @@
 ---
-title: Describes the services provided by Azure Codex 
-titleSuffix: 
+title: Overview of the product Azure Codex
+titleSuffix: Azure Codex
 description: Understand the fundamental services provided by Azure Codex, like Agile, Repos, Pipelines, Test, and Artifacts  
 ms.prod: devops
 ms.technology: devops-new-user
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 06/22/2017
+ms.date: 08/01/2018
 ms.topic: overview
 ---
 
 
 # What is Azure Codex?
+
+**Azure Codex**
 
 Azure Codex is a cloud service for collaborating on code development. It provides an integrated set of features that you access through your web browser or IDE client, including: 
 

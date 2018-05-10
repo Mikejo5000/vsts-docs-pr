@@ -1,21 +1,22 @@
 ---
 title: Code with Git
-titleSuffix: VSTS & TFS 
+titleSuffix: Azure Codex
 description: Share code in a Git repo and new team project 
 ms.assetid: 
 ms.prod: devops
 ms.technology: devops-new-user
 ms.manager: douge
-ms.author: kaelli
-ms.date: 08/24/2017
+ms.author: chcomley
+author: chcomley
+ms.date: 08/01/2018
 ms.topic: quickstart
 monikerRange: 'vsts'
 ---
 
 
-# Code with Git
+# Quickstart: Code with Git
 
-**VSTS**
+**Azure Codex**
 
 After you create a new account and team project in VSTS, you can begin sharing your code with others. 
 

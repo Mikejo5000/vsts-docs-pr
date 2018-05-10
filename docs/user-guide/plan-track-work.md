@@ -1,22 +1,22 @@
 ---
-title: Plan and track work 
-titleSuffix: VSTS
-description: Begin planning and tracking work in your new team project on Visual Studio Team Services  
+title: Plan and track work in Azure Codex
+titleSuffix: Azure Codex
+description: Begin planning and tracking work in your new team project on Azure Codex
 ms.technology: devops-new-user 
 ms.prod: devops
 ms.assetid: 
 ms.manager: douge
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: quickstart
 monikerRange: 'vsts'
-ms.date: 12/11/2017
+ms.date: 08/01/2018
 ---
 
 
-# Plan and track work 
+# Quickstart: Plan and track work 
 
-**VSTS**
+**Azure Codex**
  
 You add work items to plan and manage your project. You use different types of work items to track different types of work&mdash;such as user stories or product backlog items, tasks, bugs, or issues. You can describe the work to be done, assign work, track status, and coordinate efforts within your team.   
 

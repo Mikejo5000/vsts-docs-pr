@@ -1,5 +1,6 @@
 ---
 title: Overview of services in Azure Codex
+titleSuffix: Azure Codex
 description: Understand and start using the services provided in Azure Codex
 ms.technology: devops-new-user 
 ms.prod: devops
@@ -7,10 +8,12 @@ ms.topic: overview
 ms.assetid: D861983F-CC66-4314-A3C6-E2F30A37923D
 ms.manager: douge
 ms.author: chcomley
-ms.date: 09/19/2017
+ms.date: 08/01/2018
 monikerRange: '>= tfs-2013'
 ---
 # What do I get with Azure Codex?
+
+**Azure Codex**
  
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 

@@ -1,21 +1,22 @@
 ---
-title: Add, run, and update inline tests
-titleSuffix: VSTS 
-description: Add, run, and update manual test cases when working in Visual Studio Team Services  
+title: Start testing code in Azure Codex - Add, run, and update inline tests
+titleSuffix: Azure Codex 
+description: Add, run, and update manual test cases when working in Azure Codex  
 ms.technology: devops-new-user
 ms.prod: devops
 ms.assetid: 
 ms.manager: douge
-ms.author: kaelli
-ms.date: 08/24/2017
+ms.author: chcomley
+author: chcomley
+ms.date: 08/01/2018
 ms.topic: quickstart
 monikerRange: 'vsts'
 ---
 
 
-# Add, run, and update inline tests
+# Quickstart: Add, run, and update inline tests
 
-**VSTS**
+**Azure Codex**
 
 A quick and easy way to start manual testing is to add the test to the user story or bug you want to test. From the Kanban board, you can quickly define inline tests, or a set of manual tests, for a backlog item. Not only can you add tests, you can run them and update their status. If you're new to working with the Kanban board, see [Kanban quickstart](../work/kanban/kanban-quickstart.md). 
 

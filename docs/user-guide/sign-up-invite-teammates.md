@@ -1,21 +1,22 @@
 ---
-title: Sign up and invite teammates
-titleSuffix: VSTS   
+title: Sign up for Azure Codex and invite teammates
+titleSuffix: Azure Codex  
 description: Quickstart guide to signing up and inviting others to join a team project in Visual Studio Team Services 
 ms.technology: devops-new-user 
 ms.prod: devops
 ms.topic: quickstart
 ms.assetid: 
 ms.manager: douge
-ms.author: kaelli
-ms.date: 07/14/2017
+ms.author: chcomley
+author: chcomley
+ms.date: 08/01/2018
 monikerRange: 'vsts'
 ---
 
 
-# Sign up for a free VSTS account and invite others to join your team
+# Quickstart: Sign up for a free Azure Codex account and invite others to join your team
 
-**VSTS**
+**Azure Codex**
  
 Sign up for a VSTS 
 account to upload and share code in a free unlimited private 

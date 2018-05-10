@@ -1,18 +1,18 @@
 ---
-title: Describes how to obtain Azure Codex
-titleSuffix: TFS
+title: Start to manage artifacts in Azure Codex
+titleSuffix: Azure Codex
 description: Understand 
 ms.technology: devops-new-user 
 ms.prod: devops
-ms.topic: conceptual
+ms.topic: quickstart
 ms.manager: douge
 ms.author: chcomley
 author: chcomley 
-ms.date: 12/07/2016
+ms.date: 08/01/2018
 ---
 
 
-# How can I get Azure Codex?
+# Quickstart: Manage artifacts in Azure Codex
 
 ::: moniker range=">= tfs-2013"
 
