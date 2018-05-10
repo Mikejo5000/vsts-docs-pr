@@ -15,10 +15,71 @@ ms.date: 04/01/2018
 
 # About team, project, and organizational-level settings 
 
-From the administrative or **Settings** context, you configure resources that support your teams. 
-
-You'll find a quick guide of those resources you can configure based on the corresponding application.  
+From the administrative or **Settings** context, you configure resources that support your project and teams. This article provides a guide to the resources you can configure based on your role.  
   
+
+## Individual contributor settings
+Individual contributors can set their user preferences, enable select features that are in preview, and manage their favorites and notifications. 
+
+> [!div class="mx-tdCol2BreakAll"]  
+> |  Area  | Supported tasks |Notes |
+> |---------|---------|---------|
+> |General |- [Set user preferences](../accounts/account-preferences.md)<br/>- [View permissions](../security/view-permissions.md)<br/>- [Enable preview features](../collaborate/preview-features.md)| For an overview of default permission assignments by role, see [Default permissions and access for Azure Codex](../security/permissions-access.md).|
+> |Favorites |- [Set favorites](../notifications/manage-personal-notifications.md)| Any team member can set their own favorites and team favorites. 
+> |Notifications |- [Manage personal notifications](../notifications/manage-personal-notifications.md)|  To learn more about how notifications are managed, see [About notifications](../notifications/about-notifications.md). |
+
+ 
+
+## Team administrator role and managing teams
+
+Team administrators are tasked with configuring team resources which mostly correspond to Agile tools and dashboards.  
+
+> [!div class="mx-tdCol2BreakAll"]  
+> |  Area  | Supported tasks | Notes |
+> |---------|---------|---------|  
+> | General |- [Add user accounts to a team](../accounts/account-preferences.md)| Members of a team are included within the team group which can be used in queries and **@mentions** in pull requests and work item discussions. | 
+> | Azure Codex Agile<br/>(Work tracking) |- [Configure team default area and iteration paths](../work/scale/set-team-defaults.md)<br/>- [Select iteration paths that they'll use](../work/scale/set-team-defaults.md)<br/>- Configure Kanban boards: [Columns](../work/kanban/add-columns.md), [Swimlanes](../work/kanban/expedite-work.md), [Cards](../work/customize/customize-cards.md), [WIP limits](../work/kanban/wip-limits.md)<br/>- [Configure additional team settings](../work/scale/manage-team-assets.md)<br/>- [Define work item templates](../work/backlogs/work-item-template.md) | To configure team resources, you must be added as a [team administrator for the specific team](../work/scale/add-team-administrator.md).  |
+> | Dashboards |- [Create team dashboards](../report/dashboards/dashboards.md)<br/>- [Manage team dashboard permissions](../report/dashboards/dashboard-permissions.md)<br/> | New dashboards added to a project are associated with a team. The default permissions allow team members to create and edit dashboards for their team. |
+> | Notifications |- [Manage team notifications](../collaborate/manage-team-notifications.md)|
+
+
+
+## Project administrator role 
+
+Members of the [Project Administrators group](../security/set-project-collection-level-permissions.md) are tasked with configuring resources for a project and managing permissions at the project-level.  
+
+> [!div class="mx-tdCol2BreakAll"]  
+> |  Area  | Supported tasks | Notes |
+> |---------|---------|---------|  
+> | General |- [Add user accounts to a team project](../accounts/account-preferences.md)<br/>- [Add another team](../work/scale/multiple-teams.md)| TBD   | 
+> | Azure Codex Agile<br/>(Work tracking) |- [Define area paths](set-area-paths.md)<br/>- [Define iteration paths or sprints](set-iteration-paths-sprints.md) | Area and iteration paths set at the project level are then used to set team defaults.  |
+> | Azure Codex Repos<br/>(Code management  |- [Create additional Git repos](../git/tutorial/creatingrepo.md)<br/>- [Manage repository permissions](../security/set-git-tfvc-repository-permissions.md)  | TBD |
+> | Azure Codex Pipelines<br/>(Build & Release management)|- [Add and manage Agent queues](../build-release/concepts/agents/pools-queues.md)<br/>- [Add and manage service endpoints](../build-release/concepts/library/service-endpoints.md)<br/>- [Set retention policies](../build-release/concepts/policies/retention.md)  | TBD |
+> | Azure Codex Test<br/>(Test management)| - [Set test retention policies](../manual-test/getting-started/how-long-to-keep-test-results.md)<br/>- Manage test-related permissions | Permissions can be given at [project level](../security/set-project-collection-level-permissions.md) and at [area path level](../security/set-permissions-access-work-tracking.md#create-child-nodes-modify-work-items-under-an-area-path).  | 
+> | Notifications |- Manage project-level notifications |  Notifications at the project level are managed in much the same way as they are at the [team level](../collaborate/manage-team-notifications.md). |
+> | Ecosystem |- [Configure service hooks to integrate with other services](../service-hooks/index.md) | With service hooks, you can automate a task on other services, such as Campfire, Flowdock, HipChat, and more, when events happen in your Azure Codex project. |
+
+
+## Project collection administrator role 
+
+Members of the [Project Collection Administrators group](../security/set-project-collection-level-permissions.md) are tasked with configuring resources for all Azure Codex projects defined for an account or organization. They also can perform all tasks to manage projects and manage permissions at the collection-level.  
+
+
+> [!div class="mx-tdCol2BreakAll"]  
+> |  Area  | Supported tasks | Notes |
+> |---------|---------|---------|  
+> | General |- Add and manage projects: [Create a project](../accounts/create-team-project.md), [Rename](../accounts/rename-team-project.md), [Delete](../accounts/delete-team-project.md)<br/>- Manage account settings<br/>- Manage billing | TBD   | 
+> | Security | - Add administrators<br/>- Add users or remove users to an organization<br/>-  
+Assign access levels and extensions  | TBD |
+> | Azure Codex Agile<br/>(Work tracking) |- [Customize a project](./work/customize-process.md)<br/>- [Add and manage processes](./work/manage-process.md) | To customize the Agile tools and work tracking artifacts, you create and customize an inherited process and then update the project to use that process. To learn more, see [About process customization and inherited processes ](./work/inheritance-process-model.md).   |
+> | Azure Codex Repos<br/>(Code management  |- [Create additional Git repos](../git/tutorial/creatingrepo.md)<br/>- [Manage repository permissions](../security/set-git-tfvc-repository-permissions.md)  | TBD |
+> | Azure Codex Pipelines<br/>(Build & Release management)|- [Set retention policies](../build-release/concepts/policies/retention.md)<br/>- [Set resource limits for pipelines](../build-release/concepts/licensing/concurrent-pipelines-ts.md)<br/>- [Add and manage agent pools](../build-release/concepts/agents/pools-queues.md)<br/>- [Add and manage deployment pools](../build-release/concepts/definitions/release/deployment-groups.md)<br/> | TBD |
+> | Notifications |- Manage collection-level notifications |  Notifications at the project level are managed in much the same way as they are at the [team level](../collaborate/manage-team-notifications.md). |
+> | Extension |- [Install and manage Marketplace extensions](../marketplace/install-vsts-extension.md) | Extensions provide additional features and capabilities to your Azure Codex project. |
+
+
+<!---
+
 ## Azure Codex Agile (Work tracking) settings
 
 Many work tracking/Agile tools provide teams the autonomy they need to configure and manage their work independent of other teams. When you add a team, you also configure a product backlog, Kanban board, and dashboard for the teams. To learn more, see [About teams and Agile tools](about-teams-and-settings.md). 
@@ -86,9 +147,7 @@ As changes are made to the code, a build, work items or other development object
 
 To learn more, see [About notifications](../notifications/about-notifications.md).
 
-## Dashboards 
 
-New dashboards are added to a project through a team context. To learn more, see [Add and manage dashboards](../report/dashboards/dashboards.md).
 
 ## Service hooks 
 
@@ -147,7 +206,6 @@ From the account-level **Users** page, you can export the set of users and their
 - [Assign access levels and extensions to users by group membership](../accounts/assign-access-levels-and-extensions-by-group-membership.md)
 
 
-
 ### Account-level permissions or Security  
 
 From a Security page or dialog, you can set permissions for a user or group. Permissions are managed at the object, project, and account level. To learn more, see [About permissions and groups](../security/about-permissions.md).
@@ -155,7 +213,7 @@ From a Security page or dialog, you can set permissions for a user or group. Per
 To manage collection-level permissions, see [Add administrators, set permissions at the project-level or project collection-level](../security/set-project-collection-level-permissions.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json). 
 
 
-<!---
+
 
 You must be a member of the listed administrator group or role to configure resources at the levels indicated. To learn more about security groups and roles, see [About permissions and groups](../security/about-permissions.md) and [About security roles](../security/about-security-role.md). 
 
