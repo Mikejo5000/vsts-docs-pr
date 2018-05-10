@@ -25,38 +25,36 @@ Individual contributors can set their user preferences, enable select features t
 <table>
 <tbody valign="top">
 <tr>
-<th width="20%">Area</th>
-<th width="40%">Supported tasks</th>
-<th width="40%">Notes</th>
+<th width="18%">Area</th>
+<th width="44%">Supported tasks</th>
+<th width="36%">Notes</th>
 </tr>
 <tr>
 <td>General</td>
-<td>- [Set user preferences](../accounts/account-preferences.md)<br/>- [View permissions](../security/view-permissions.md)<br/>- [Enable preview features](../collaborate/preview-features.md)</td>
+<td><ul>
+<li>[Set user preferences](../accounts/account-preferences.md)</li>
+<li>[View permissions](../security/view-permissions.md)</li>
+<li>[Enable preview features](../collaborate/preview-features.md)</li>
+</ul></td>
 <td>For an overview of default permission assignments by role, see [Default permissions and access for Azure Codex](../security/permissions-access.md).</td>
 </tr>
 <tr>
 <td>Favorites</td>
-<td>- [Set favorites](../notifications/manage-personal-notifications.md)</td>
-<td> Any team member can set their own favorites and team favorites. .</td>
+<td><ul>
+<li>[Set favorites](../notifications/manage-personal-notifications.md)</li>
+</ul></td>
+<td>Favorites provide a quick way to navigate to backlogs, boards, dashboards, and more artifacts. Any member of the Contributors group or team member can set their own favorites. Team members can set team favorites. </td>
 </tr>
 <tr>
 <td>Notifications</td>
-<td>- [Manage personal notifications](../notifications/manage-personal-notifications.md)</td>
-<td>To learn more about how notifications are managed, see [About notifications](../notifications/about-notifications.md). </td>
+<td><ul>
+<li>[Manage personal notifications](../notifications/manage-personal-notifications.md)</li>
+</ul></td>
+<td>To learn more about how notifications are managed, see [About notifications](../notifications/about-notifications.md).</li>
+</ul></td>
 </tr>
 </tbody>
 </table>
-
-
-<!---
-> [!div class="mx-tdCol2BreakAll"]  
-> |  Area  | Supported tasks |Notes |
-> |---------|---------|---------|
-> |General |- [Set user preferences](../accounts/account-preferences.md)<br/>- [View permissions](../security/view-permissions.md)<br/>- [Enable preview features](../collaborate/preview-features.md)| For an overview of default permission assignments by role, see [Default permissions and access for Azure Codex](../security/permissions-access.md).|
-> |Favorites |- [Set favorites](../notifications/manage-personal-notifications.md)| Any team member can set their own favorites and team favorites. 
-> |Notifications |- [Manage personal notifications](../notifications/manage-personal-notifications.md)|  To learn more about how notifications are managed, see [About notifications](../notifications/about-notifications.md). |
-
--->
  
 
 ## Team administrator role and managing teams
@@ -67,34 +65,41 @@ Team administrators are tasked with configuring team resources which mostly corr
 <table>
 <tbody valign="top">
 <tr>
-<th width="20%">Area</th>
-<th width="40%">Supported tasks</th>
-<th width="40%">Notes</th>
+<th width="18%">Area</th>
+<th width="44%">Supported tasks</th>
+<th width="36%">Notes</th>
 </tr>
 <tr>
 <td>General</td>
-<td>- [Add user accounts to a team](../accounts/account-preferences.md)</td>
+<td><ul>
+<li>[Add user accounts to a team](../accounts/account-preferences.md)</td>
 <td>Members of a team are included within the team group which can be used in queries and **@mentions** in pull requests and work item discussions.</td>
 </tr>
 <tr>
 <td>Azure Codex Agile<br/>(Work tracking)</td>
-<td>- [Configure team default area and iteration paths](../work/scale/set-team-defaults.md)<br/>- [Select iteration paths that they'll use](../work/scale/set-team-defaults.md)<br/>- Configure Kanban boards: [Columns](../work/kanban/add-columns.md), [Swimlanes](../work/kanban/expedite-work.md), [Cards](../work/customize/customize-cards.md), [WIP limits](../work/kanban/wip-limits.md)<br/>- [Configure additional team settings](../work/scale/manage-team-assets.md)<br/>- [Define work item templates](../work/backlogs/work-item-template.md) </td>
+<td><ul>
+<li>[Configure team default area and iteration paths](../work/scale/set-team-defaults.md)</li>
+<li>[Select iteration paths that they'll use](../work/scale/set-team-defaults.md)</li>
+<li>Configure Kanban boards: [Columns](../work/kanban/add-columns.md), [Swimlanes](../work/kanban/expedite-work.md), [Cards](../work/customize/customize-cards.md), [WIP limits](../work/kanban/wip-limits.md)</li>
+<li>[Configure additional team settings](../work/scale/manage-team-assets.md)</li>
+<li>[Define work item templates](../work/backlogs/work-item-template.md)</li>
+</ul></td>
 <td>To configure team resources, you must be added as a [team administrator for the specific team](../work/scale/add-team-administrator.md).  </td>
 </tr>
 <tr>
 <td>Dashboards </td>
-<td>- [Create team dashboards](../report/dashboards/dashboards.md)<br/>- [Manage team dashboard permissions](../report/dashboards/dashboard-permissions.md)</td>
+<td><ul>
+<li>[Create team dashboards](../report/dashboards/dashboards.md)</li>
+<li>[Manage team dashboard permissions](../report/dashboards/dashboard-permissions.md)</li>
+</ul></td>
 <td>New dashboards added to a project are associated with a team. The default permissions allow team members to create and edit dashboards for their team.</td>
 </tr>
 <tr>
 <td> Notifications </td>
-<td>- [Manage team notifications](../collaborate/manage-team-notifications.md)</td>
+<td><ul>
+<li>[Manage team notifications](../collaborate/manage-team-notifications.md)</li>
+</ul></td>
 <td>TBD </td>
-</tr>
-<tr>
-<td> </td>
-<td> </td>
-<td> </td>
 </tr>
 </tbody>
 </table>
@@ -117,6 +122,81 @@ Team administrators are tasked with configuring team resources which mostly corr
 
 Members of the [Project Administrators group](../security/set-project-collection-level-permissions.md) are tasked with configuring resources for a project and managing permissions at the project-level.  
 
+<table>
+<tbody valign="top">
+<tr>
+<th width="18%">Area</th>
+<th width="44%">Supported tasks</th>
+<th width="36%">Notes</th>
+</tr>
+<tr>
+<td>General</td>
+<td><ul>
+<li>[Add user accounts to a team project](../accounts/account-preferences.md)</li>
+<li>[Add another team](../work/scale/multiple-teams.md)</li>
+</ul></td>
+<td>TBD</td>
+</tr>
+<tr>
+<td>Azure Codex Agile<br/>(Work tracking)</td>
+<td><ul>
+<li>[Define area paths](set-area-paths.md)</li>
+<li>[Define iteration paths or sprints](set-iteration-paths-sprints.md)</li>
+</ul></td>
+<td>Area and iteration paths set at the project level are then used to set team defaults. </td>
+</tr>
+<tr>
+<td>Azure Codex Repos<br/>(Code management)</td>
+<td><ul>
+<li>Create additional Git repos](../git/tutorial/creatingrepo.md)</li>
+<li>[Manage repository permissions](../security/set-git-tfvc-repository-permissions.md)</li>
+</ul></td>
+<td>TBD</td>
+</tr>
+<tr>
+<td>Azure Codex Pipelines<br/>(Build & Release management)</td>
+<td><ul>
+<li>[Add and manage Agent queues](../build-release/concepts/agents/pools-queues.md)</li>
+<li>[Add and manage service endpoints](../build-release/concepts/library/service-endpoints.md)</li>
+<li>[Set retention policies](../build-release/concepts/policies/retention.md)</li>
+</ul></td>
+<td>TBD</td>
+</tr>
+<tr>
+<td>Azure Codex Test<br/>(Test management)</td>
+<td><ul>
+<li>[Set test retention policies](../manual-test/getting-started/how-long-to-keep-test-results.md)</li>
+<li>Manage test-related permissions</li>
+</ul></td>
+<td>Permissions can be given at [project level](../security/set-project-collection-level-permissions.md) and at [area path level](../security/set-permissions-access-work-tracking.md#create-child-nodes-modify-work-items-under-an-area-path).</td>
+</tr>
+<tr>
+<td>Dashboards </td>
+<td><ul>
+<li>[Set default dashboard permissions](../report/dashboards/dashboard-permissions.md)</li>
+</ul></td>
+<td>New dashboards added to a project inherit the default dashboard permissions. The default permissions allow team members to create and edit dashboards for their team.</td>
+</tr>
+<tr>
+<td> Notifications </td>
+<td><ul>
+<li>Manage project-level notifications</li>
+</ul></td>
+<td>Notifications at the project level are managed in much the same way as they are at the [team level](../collaborate/manage-team-notifications.md).</td>
+</tr>
+<tr>
+<td>Ecosystem</td>
+<td><ul>
+<li>[Configure service hooks to integrate with other services](../service-hooks/index.md)</li>
+</ul></td>
+<td>With service hooks, you can automate a task on other services, such as Campfire, Flowdock, HipChat, and more, when events happen in your Azure Codex project.</td>
+</tr>
+</tbody>
+</table>
+
+
+<!---
+
 > [!div class="mx-tdCol2BreakAll"]  
 > |  Area  | Supported tasks | Notes |
 > |---------|---------|---------|  
@@ -128,12 +208,81 @@ Members of the [Project Administrators group](../security/set-project-collection
 > | Notifications |- Manage project-level notifications |  Notifications at the project level are managed in much the same way as they are at the [team level](../collaborate/manage-team-notifications.md). |
 > | Ecosystem |- [Configure service hooks to integrate with other services](../service-hooks/index.md) | With service hooks, you can automate a task on other services, such as Campfire, Flowdock, HipChat, and more, when events happen in your Azure Codex project. |
 
+--> 
 
 ## Project collection administrator role 
 
 Members of the [Project Collection Administrators group](../security/set-project-collection-level-permissions.md) are tasked with configuring resources for all Azure Codex projects defined for an account or organization. They also can perform all tasks to manage projects and manage permissions at the collection-level.  
 
+<td><ul>
+<li>[Add and manage Agent queues](../build-release/concepts/agents/pools-queues.md)</li>
+<li>[Add and manage service endpoints](../build-release/concepts/library/service-endpoints.md)</li>
+<li>[Set retention policies](../build-release/concepts/policies/retention.md)</li>
+</ul></td>
 
+
+<table>
+<tbody valign="top">
+<tr>
+<th width="18%">Area</th>
+<th width="44%">Supported tasks</th>
+<th width="36%">Notes</th>
+</tr>
+<tr>
+<td>General</td>
+<td><ul>
+<li>Add and manage projects: [Create a project](../accounts/create-team-project.md), [Rename](../accounts/rename-team-project.md), [Delete](../accounts/delete-team-project.md)</li>
+<li>Manage account settings</li>
+<li>Manage billing</li>
+</ul></td>
+<td>TBD</td>
+</tr>
+<tr>
+<td>Security</td>
+<td><ul>
+<li>Add administrators</li>
+<li>Add users or remove users to an organization</li>
+<li>Assign access levels and extensions </li>
+</ul></td>
+<td>TBD</td>
+</tr>
+<tr>
+<td>Azure Codex Agile<br/>(Work tracking)</td>
+<td><ul>
+<li>[Customize a project](./work/customize-process.md)</li>
+<li>[Add and manage processes](./work/manage-process.md </li>
+</ul></td>
+<td>To customize the Agile tools and work tracking artifacts, you create and customize an inherited process and then update the project to use that process. To learn more, see [About process customization and inherited processes ](./work/inheritance-process-model.md). </td>
+</tr>
+<tr>
+<td>Azure Codex Pipelines<br/>(Build & Release management)</td>
+<td><ul>
+<li>[Set retention policies](../build-release/concepts/policies/retention.md)</li>
+<li>[Set resource limits for pipelines](../build-release/concepts/licensing/concurrent-pipelines-ts.md)</li>
+<li>[Add and manage agent pools](../build-release/concepts/agents/pools-queues.md)</li>
+<li>[Add and manage deployment pools](../build-release/concepts/definitions/release/deployment-groups.md)</li>
+</ul></td>
+<td> TBD </td>
+</tr>
+<tr>
+<td> Notifications </td>
+<td><ul>
+<li>Manage collection-level notifications </li>
+</ul></td>
+<td>Notifications at the project level are managed in much the same way as they are at the [team level](../collaborate/manage-team-notifications.md).</td>
+</tr>
+<tr>
+<td>Extensions</td>
+<td><ul>
+<li>[Install and manage Marketplace extensions](../marketplace/install-vsts-extension.md)</li>
+</ul></td>
+<td>[Marketplace extensions](https://marketplace.visualstudio.com/vsts) provide additional features and capabilities to your Azure Codex project.</td>
+</tr>
+</tbody>
+</table>
+
+
+<!---
 > [!div class="mx-tdCol2BreakAll"]  
 > |  Area  | Supported tasks | Notes |
 > |---------|---------|---------|  
@@ -146,6 +295,8 @@ Assign access levels and extensions  | TBD |
 > | Notifications |- Manage collection-level notifications |  Notifications at the project level are managed in much the same way as they are at the [team level](../collaborate/manage-team-notifications.md). |
 > | Extension |- [Install and manage Marketplace extensions](../marketplace/install-vsts-extension.md) | Extensions provide additional features and capabilities to your Azure Codex project. |
 
+
+-->
 
 <!---
 
@@ -182,7 +333,7 @@ To support CI/CD work, you configure the following resources at either the proje
 > [!div class="mx-tdCol2BreakAll"]  
 > | Project | Organization | 
 > |------|---------|
-> | - [Agent queues](../build-release/concepts/agents/pools-queues.md)<br/>- [Services](../build-release/concepts/library/service-endpoints.md)<br/>- Release, Retention Policy Settings | - [Build and Release, Retention policies](../build-release/concepts/policies/retention.md)<br/>- [Build and Release, Resource limits for pipelines](../build-release/concepts/licensing/concurrent-pipelines-ts.md)<br/>- [Agent pools, add and manage agent pools](../build-release/concepts/agents/pools-queues.md)<br/>- [Deployment pools, add and manage deployment pools](/vsts/build-release/concepts/definitions/release/deployment-groups) |
+> | - [Agent queues](../build-release/concepts/agents/pools-queues.md)<br/>- [Services](../build-release/concepts/library/service-endpoints.md)<br/>- Release, Retention Policy Settings | - [Build and Release, Retention policies](../build-release/concepts/policies/retention.md)<br/>- [Build and Release, Resource limits for pipelines](../build-release/concepts/licensing/concurrent-pipelines-ts.md)<br/>- [Agent pools, add and manage agent pools](../build-release/concepts/agents/pools-queues.md)<br/>- [Deployment pools, add and manage deployment pools](../build-release/concepts/definitions/release/deployment-groups.md) |
 
 ## Azure Codex Test (Test) settings 
 
