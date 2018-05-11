@@ -29,13 +29,17 @@ Define area and iteration paths, add teams, and configure additional team, proje
 ## Tutorials
 
 - [Add & manage users](../accounts/add-account-users-from-user-hub.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)  
+- [Change individual permissions](../security/change-individual-permissions.md) 
+- [Grant or restrict permissions to select tasks](../security/restrict-access.md) 
+- [Manage personal notifications](../notifications/manage-personal-notifications.md) 
 - [Customize a project](./work/customize-process.md) 
-- [Add & manage inherited processes](./work/manage-process.md) 
+
 
 ## Concepts 
 
 - [About areas & iterations](about-areas-iterations.md) 
 - [About teams & Agile tools](about-teams-and-settings.md) 
+- [About notifications](../notifications/about-notifications.md)   
 - [About process customization](./work/inheritance-process-model.md)        
 
 

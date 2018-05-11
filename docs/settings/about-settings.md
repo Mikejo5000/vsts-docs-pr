@@ -65,7 +65,7 @@ Individual contributors can set their user preferences, enable select features t
 <td>**Notifications**</td>
 <td><ul>
 <li>[View your subscriptions, opt-out as needed](../notifications/unsubscribe-default-notification.md)</li>
-<li>[Change your preferred email address](../notifications/notifications/change-email-address.md)</li>
+<li>[Change your preferred email address](../notifications/change-email-address.md)</li>
 <li>[Manage personal notifications](../notifications/manage-personal-notifications.md)</li>
 </ul></td>
 <td>Notifications alert you through email messages when changes occur to work items, code reviews, pull requests, source control files, builds, and more. A number of notifications are preset when a team project is created. If you want to opt out of these, you can.  </li>
@@ -152,7 +152,7 @@ Members of the [Project Administrators group](../security/set-project-collection
 <td><ul>
 <li>[Add user accounts to a team project](../accounts/account-preferences.md)</li>
 <li>[Change individual permissions, grant select access to specific functions](../security/change-individual-permissions.md)</li>
-<li>[Grant or restrict access to select features and functions](../security/restrict-access.md)</li>
+<li>[Grant or restrict access to select features](../security/restrict-access.md)</li>
 <li>[Add administrators](../security/set-project-collection-level-permissions.md)</li>
 <li>[Manage project-level permissions](../security/permissions.md#project-level)</li>
 <li>[Set build and release permissions](../build-release/set-permissions.md)</li>
@@ -169,7 +169,7 @@ Members of the [Project Administrators group](../security/set-project-collection
 <tr>
 <td>**Service Hooks**</td>
 <td><ul>
-<li>[Configure service hooks to integrate with other services](../service-hooks/index.md)</li>
+<li>[Configure service hooks](../service-hooks/index.md)</li>
 </ul></td>
 <td>With service hooks, you can automate a task on other services, such as [Campfire](../service-hooks/services/campfire.md), [Flowdock](../service-hooks/services/flowdock.md), [HipChat](../service-hooks/services/hipchat.md), and more. You can use service hooks in custom apps and services to drive activities as events happen. </td>
 </tr>
@@ -193,9 +193,9 @@ Members of the [Project Administrators group](../security/set-project-collection
 <tr>
 <td>**CI/CD** </td>
 <td><ul>
-<li>[Add and manage Agent queues and agent pools](../build-release/concepts/agents/pools-queues.md)</li>
-<li>[Add and manage service endpoints](../build-release/concepts/library/service-endpoints.md)</li>
-<li>[Add and manage deployment pools and groups](/vsts/build-release/concepts/definitions/release/deployment-groups)</li>
+<li>[Manage Agent queues and agent pools](../build-release/concepts/agents/pools-queues.md)</li>
+<li>[Manage service endpoints](../build-release/concepts/library/service-endpoints.md)</li>
+<li>[Manage deployment pools and groups](/vsts/build-release/concepts/definitions/release/deployment-groups)</li>
 <li>[Set retention policies](../build-release/concepts/policies/retention.md)</li>
 </ul></td>
 <td>To build your code or deploy your software you need at least one agent. Agent and deployment pools are build and release resources that you manage across projects. </td>
@@ -215,12 +215,20 @@ Members of the [Project Administrators group](../security/set-project-collection
 <td><ul>
 <li>[Set test retention policies](../manual-test/getting-started/how-long-to-keep-test-results.md)</li>
 <li>[Manage test-related permissions at project level](../security/set-project-collection-level-permissions.md)</li>
-<li>[Set area path-level permissions](../security/set-permissions-access-work-tracking.md#create-child-nodes-modify-work-items-under-an-area-path)</li>
+<li>[Set area path-level test permissions](../security/set-permissions-access-work-tracking.md#create-child-nodes-modify-work-items-under-an-area-path)</li>
 </ul></td>
 <td>Manual testing relies on work item types to create and manage test plans, test suites, test cases, shared steps, and shared parameters. Of these, you can customize the test plans, test suites, and test cases using an inherited process. See [Customize a process](work/customize-process.md).  
 </td>
 </tr>
-
+<tr>
+<td>**Wiki**</td>
+<td><ul>
+<li>[Create a wiki for your team project](../collaborate/wiki-create-repo.md)</li>
+<li>[Publish a Git repository to a wiki](../collaborate/publish-repo-to-wiki.md)</li>
+<li>[Manage README and Wiki permissions](../collaborate/manage-readme-wiki-permissions.md)</li>
+</ul></td>
+<td>To share information with your team, you can use Markdown format within a project Wiki, within your project README file, or other repository README file. To learn more, see [About READMes and Wikis](../collaborate/about-readme-wiki.md).</td>
+</tr>
 <tr>
 <td>**Extensions**</td>
 <td><ul>
@@ -245,6 +253,13 @@ For an overview of managing your Azure Codex account, see [About account managem
 <th width="15%">Area</th>
 <th width="40%">Supported tasks</th>
 <th width="45%">Notes</th>
+</tr>
+<tr>
+<td>**Preview features**</td>
+<td><ul>
+<li>[Enable preview features](../collaborate/preview-features.md)</li>
+</ul></td>
+<td>Account owners can enable or disable account-level features that are in preview.  </td>
 </tr>
 <tr>
 <td>**Overview, Account settings**</td>
@@ -296,11 +311,11 @@ For an overview of managing your Azure Codex account, see [About account managem
 <tr>
 <td>**Security**</td>
 <td><ul>
-<li>[Change individual permissions, grant select access to specific functions](../security/change-individual-permissions.md)</li>
-<li>[Grant or restrict access to select features and functions](../security/restrict-access.md)</li>
+<li>[Change individual permissions](../security/change-individual-permissions.md)</li>
+<li>[Grant or restrict access to select features ](../security/restrict-access.md)</li>
 <li>[Add administrators](../security/set-project-collection-level-permissions.md)</li>
 <li>[Add Azure Active Directory groups](../accounts/manage-azure-active-directory-groups-vsts.md)</li>
-<li>[Connect VSTS account to Azure Active Directory](../accounts/connect-account-to-aad.md)</li>
+<li>[Connect to Azure Active Directory](../accounts/connect-account-to-aad.md)</li>
 <li>[Manage conditional access](../accounts/manage-conditional-access.md)</li>
 </ul></td>
 <td>For an overview of security concepts, see [About permissions and groups](../security/about-permissions.md) and [About access levels](../security/access-levels.md). For a list of collection-level permissions, see [Permissions and groups reference, Collection-level permissions](../security/permissions.md#collection-level).</p></td>
@@ -318,7 +333,7 @@ For an overview of managing your Azure Codex account, see [About account managem
 <li>[Install and manage Marketplace extensions](../marketplace/install-vsts-extension.md)</li>
 <li>[Approve extensions](../marketplace/approve-extensions.md)</li>
 <li>[Assign paid extension access to users](../marketplace/assign-paid-extensions.md)</li>
-<li>[Change the number of paid users for a VSTS extension](../billing/change-number-paid-extension-users.md) </li>
+<li>[Change the number of paid users](../billing/change-number-paid-extension-users.md) </li>
 <li>[Grant permissions to manage extensions](../marketplace/how-to/grant-permissions.md)</li>
 <li>[Uninstall or disable extensions](../marketplace/uninstall-disable-extensions.md)</li>
 </ul></td>

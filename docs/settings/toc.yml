@@ -24,7 +24,7 @@
     href: ../security/view-permissions.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
   - name: Look up the account owner or a project administrator
     href: ../security/lookup-account-owner-admin.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
-  - name: Add users to a team project or team 
+  - name: Add users to a project or team 
     href: ../security/add-users-team-project.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
 - name: Tutorials
   items:
@@ -57,7 +57,7 @@
   - name: Manage individual preferences
     items:
     - name: Change account preferences
-      href: ../account-preferences.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json 
+      href: ../accounts/account-preferences.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json 
     - name: Enable preview features
       href: ../collaborate/preview-features.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
     - name: Set personal or team favorites
@@ -84,11 +84,7 @@
       href: ../security/set-permissions-access-work-tracking.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
   - name: Teams
     items:
-    - name: Add a team and team members
-      href: ../work/scale/multiple-teams.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
-    - name: Add a team administrator
-      href: ../work/scale/add-team-administrator.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
-    - name: Team configuration
+    - name: Configure team settings
       href: ../work/scale/manage-team-assets.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
       items:
     - name: Set team defaults
@@ -111,14 +107,24 @@
     items:
     - name: View your subscriptions, opt-out as needed
       href: ../notifications/unsubscribe-default-notification.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
-    - name: Change your preferred email address
-      href: ../notifications/notifications/change-email-address.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+    - name: Change your email address
+      href: ../notifications/change-email-address.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
     - name: Manage team notifications
       href: ../collaborate/manage-team-notifications.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
   - name: Service hooks
     href: ../service-hooks/index.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
   - name: Set dashboard permissions
     href: ../report/dashboards/dashboard-permissions.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+  - name: Extensions
+    items:
+    - name: Install extension 
+      href: ../marketplace/install-vsts-extension.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+    - name: Assign paid extensions access
+      href: ../marketplace/assign-paid-extensions.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+    - name: Approve requests for extensions
+      href: ../marketplace/approve-vsts-extensions.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+    - name: Uninstall or disable extensions
+      href: ../marketplace/uninstall-disable-vsts-extensions.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
   - name: Process configuration
     items:
     - name: Add and manage fields
@@ -161,16 +167,6 @@
       href: ../manual-test/getting-started/how-long-to-keep-test-results.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
     - name: Test retention 
       href: ../manual-test/getting-started/how-long-to-keep-test-results.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
-  - name: Extensions
-    items:
-    - name: Install extension 
-      href: ../marketplace/install-vsts-extension.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
-    - name: Assign paid extensions access
-      href: ../marketplace/assign-paid-extensions.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
-    - name: Approve requests for extensions
-      href: ../marketplace/approve-vsts-extensions.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
-    - name: Uninstall or disable extensions
-      href: ../marketplace/uninstall-disable-vsts-extensions.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
   - name: Manage your account
     items:
     - name: Change account owner
@@ -185,10 +181,10 @@
       href: ../accounts/change-account-location.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
 - name: Reference
   items:
-  - name: Team administrator role and permissions
-    href: ../work/scale/team-administrator-permissions.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
   - name: "Default permissions & access"
     href: ../security/permissions-access.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+  - name: Team administrator role and permissions
+    href: ../work/scale/team-administrator-permissions.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
   - name: Work tracking object limits
     href: ./work/object-limits.md
   - name: REST APIs
@@ -210,6 +206,8 @@
     href: ../billing/index.md
   - name: Security & Identity
     href: ../security/index.md
+  - name: READMEs & Wikis
+    href: ../collaborate/index.md
   - name: "Manage Extensions (Marketplace)"
     href: ../marketplace/index.md
 
