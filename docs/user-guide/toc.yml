@@ -3,19 +3,21 @@
 - name: Overview
   items:
   - name: "What is Azure Codex?"
-    href: what-is-codex-project.md
+    href: what-is-azure-codex.md
   - name: "What do I get with Azure Codex?"
     href: services.md?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json&bc=/vsts/breadcrumb/toc.json 
   - name: "How do I get Azure Codex?"
-    href:  how-to-get-azure-codex.md
+    href: how-to-get-azure-codex.md
   - name: "How can I start Azure Codex for free?"
-    href:  how-to-start-codex-for-free.md
+    href: how-to-start-codex-for-free.md
   - name: "What are Codex Public Projects?"
-    href:  what-are-codex-public-projects.md
+    href: what-are-codex-public-projects.md
 - name: Quickstarts
   items:
   - name: Sign up and invite users 
     href: sign-up-invite-teammates.md
+  - name: Set up billing
+    href: ../billing/set-up-billing-for-your-account-vs.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json
   - name: Get a repo
     href: code-with-git.md
   - name: Start work planning
@@ -24,38 +26,46 @@
     href: plan-track-work.md 
   - name: Start testing code
     href: add-run-manual-tests.md
+  - name: Create an open source project
+    href: create-public-project.md
+  - name: Get started from GitHub
+    href: get-started-from-github.md
   - name: Get extensions
     href: ../marketplace/install-vsts-extension.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
   - name: Start managing artifacts
     href: start-managing-artifacts.md
-  - name: "View permissions...remove/redirect?"
+  - name: View permissions
     href: ../security/view-permissions.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
 - name: Tutorials
   items:
-  - name: Set up billing
-    href: ../billing/set-up-billing-for-your-account-vs.md??toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json
   - name: Add admins or set permissions
+    href: ../security/set-project-collection-level-permissions.md?toc=/vsts/userguide/toc.json&bc=/vsts/userguide/breadcrumb/toc.json&view=vsts
+  - name: Set up billing
+    href: ../billing/set-up-billing-for-your-account-vs.md?toc=/vsts/userguide/toc.json&bc=/vsts/userguide/breadcrumb/toc.json&view=vsts
   - name: Set favorites
     href: ../collaborate/set-favorites.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
   - name: Follow work & pull requests
     href: ../collaborate/follow-work-items.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
   - name: Collaborate with Codex
     href: ../security/get-started-stakeholder.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
-  - name: Set permissions
   - name: Get started as an admin
     items:
     - name: Start project
-    - name: Start backlog 
+      href: start-project-admin.md
+    - name: Start backlog
+      href: start-backlog-admin.md
   - name: Get started as a developer
-    items:
+    items: 
     - name: Start coding
-    - name: Deploy CI/CD 
+      href: start-coding-developer.md
+    - name: Deploy CI/CD
+      href: deploy-cicd-developer.md
 - name: Concepts
   items:
   - name: Key concepts 
     href: concepts.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
   - name: Source control 
-    href: source-control.md
+    href: ../user-guide/source-control.md
   - name: Kanban & Agile tools
     href: ../work/backlogs/overview.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
   - name: Clients & tools
@@ -63,24 +73,28 @@
   - name: Developer roles
     href: roles.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
   - name: Manage artifacts and package
+    href: manage-artifacts-and-package.md
   - name: VSTS vs. Azure Codex
     href: about-vsts-tfs.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json
-  - name: "What is a Codex project?"
+  - name: What is a Codex project?
+    href: what-is-codex-project.md
   - name: Azure Codex vs. Codex Server
+    href: azure-codex-vs-codex-server.md
   - name: Licensing and Billing
-- name: How-to Guides
+    href: licensing-and-billing.md
+- name: How-to guides
   items:
   - name: Home page navigation
     href: account-home-pages.md
   - name: Set preferences
     href: ../accounts/account-preferences.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
   - name: Sign in
-    href: connect-team-projects.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
-- name: Troubleshooting 
+    href: connect-team-projects.md 
+- name: Troubleshooting
   items:
   - name: Troubleshoot connection
     href: troubleshoot-connection.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json
-  - name: "TF31002: Unable to connect"
+  - name: "TF31002:Unable to connect"
     href: ../work/customize/reference/error/tf31002-unable-connect-tfs.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json
   - name: Troubleshoot network connections and whitelist addresses
     href: ../security/faq-network-connections.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json
@@ -98,14 +112,27 @@
     href: ../collaborate/markdown-guidance.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json    
   - name: FAQs
     href: faqs.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
+- name: Azure Codex Suite Onboarding Mini-guides
+  items:
+  - name: Azure Codex Agile
+    href: https://review.docs.microsoft.com/en-us/vsts/codex-agile/index?branch=features%2Fcontent-arch-vertical&view=vsts
+  - name: Azure Codex Repos
+    href: https://review.docs.microsoft.com/en-us/vsts/codex-repos/index?branch=features%2Fcontent-arch-vertical&view=vsts
+  - name: Azure Codex Pipelines
+    href: https://review.docs.microsoft.com/en-us/vsts/codex-pipelines/index?branch=features%2Fcontent-arch-vertical&view=vsts
+  - name: Azure Codex Artifacts
+    href: https://review.docs.microsoft.com/en-us/vsts/codex-artifacts/index?branch=features%2Fcontent-arch-vertical&view=vsts
+  - name: Azure Codex Test
+    href: https://review.docs.microsoft.com/en-us/vsts/codex-test/index?branch=features%2Fcontent-arch-vertical&view=vsts
 - name: Resources
   items:
-  - name: Organization Management (Azure Codex)
+  - name: Organization management in Azure Codex
     href: ../accounts/index.md
   - name: "Security & Identity"
     href: ../security/index.md
   - name: Technical articles
     href: http://visualstudio.com/articles/overview
   - name: Learn DevOps
-  - name: Codex billing
-    href: index.md
+    href: learn-devops.md
+  - name: Azure Codex billing
+    href: https://docs.microsoft.com/en-us/vsts/billing/?view=vsts

@@ -1,0 +1,15 @@
+---
+title: How to start to manage artifacts in Azure Codex
+description: Understand 
+ms.technology: devops-new-user 
+ms.prod: devops
+ms.topic: conceptual
+ms.assetid:  
+ms.manager: douge
+ms.author: chcomley
+author: chcomley
+ms.date: 08/01/2018
+---
+# Start managing artifacts
+
+Some text here
