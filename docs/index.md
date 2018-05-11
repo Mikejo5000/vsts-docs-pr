@@ -1,5 +1,6 @@
 ---
-title: VSTS and TFS Documentation | VSTS & TFS 
+title: VSTS and TFS Documentation 
+titleSuffix: VSTS & TFS 
 description: Docs for DevOps and Agile tools provided by Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) 
 layout: HubPage 
 hide_bc: true
