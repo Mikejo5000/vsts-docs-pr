@@ -1,19 +1,21 @@
 ---
-title: Describes how to obtain Azure Codex
-titleSuffix: TFS
+title: Overview of Azure Codex Public Projects
+titleSuffix: Azure Codex
 description: Understand 
 ms.technology: devops-new-user 
 ms.prod: devops
-ms.topic: conceptual
+ms.topic: overview
 ms.assetid:  
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 12/07/2016
+ms.date: 08/01/2018
 ---
 
 
-# How can I get Azure Codex?
+# Azure Codex Public Projects?
+
+**Azure Codex**
 
 ::: moniker range=">= tfs-2013"
 
