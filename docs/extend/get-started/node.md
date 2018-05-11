@@ -1,7 +1,7 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-title: Create a web extension for VSTS
+title: Develop a web extension for VSTS
 description: Tutorial for creating your first web extension for VSTS
 ms.assetid: ae82118c-82fa-40ec-9f29-989ce981f566
 ms.topic: conceptual
@@ -12,9 +12,9 @@ author: wismythe
 ms.date: 05/11/2018
 ---
 
-# Create a web extension for VSTS
+# Develop a web extension for VSTS
 
-Extensions are add-ins that extend and enhance Visual Studio Team Services (VSTS) and Team Foundation Server (TFS). You can develop an extension using standard web technologies like HTML, JavaScript, and CSS and make them available to all VSTS accounts or just the accounts you choose.
+Extensions enhance Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) by contributing enhancements like new web experiences, dashboard widgets, build tasks, and more. Extensions are developed using standard technologies like HTML, JavaScript, and CSS, are packaged and published to the Visual Studio Marketplace, and can then be installed into a VSTS account.
 
 This tutorial will guide you through creating your first web extension.
 
@@ -30,36 +30,38 @@ You will:
 
 ## Prerequisites
 
-To develop extensions you need:
+To develop and test your extension you will need:
 
-1. A VSTS account where you have permission to install extensions to (i.e. you are the owner). [Create a personal VSTS account](https://app.vsaex.visualstudio.com/profile/account) if you don't already have one.
+1. A VSTS account where you have permission to install extensions to (i.e. you are the owner). 
+
+   > If you don't have a personal VSTS account, you can [create an account for free](https://app.vsaex.visualstudio.com/profile/account).
 
 2. Install [Node.js](https://nodejs.org)
 
-3. Install TFX by running `npm install -g tfx-cli` from a command prompt
+3. Install the extension packaging tool (TFX) by running `npm install -g tfx-cli` from a command prompt
 
-> TFX is a command line tool that is used to package and publish extensions to the Marketplace.
-
-## Create the extension
+## Create a directory and manifest
 
 An extension is composed of a set of files, including a required manifest file, that you package into a .vsix file and publish to the Visual Studio Marketplace.
 
-1. Start by creating a new directory for your extension:
-   ```bash
+1. Create a directory to hold the files needed for your extension:
+   ```
    md my-first-extension
    ```
 
 2. From this directory initialize a new NPM package manifest:
-   ```bash
+   ```
    npm init -y
    ```
-   This file describes the libraries required by your extension.
+   
+   > This file describes the libraries required by your extension.
 
 3. Install the Microsoft VSS Web Extension SDK package and save it to your NPM package manifest:
-   ```bash
+   ```
    npm install vss-web-extension-sdk --save
-   ```  
-   This SDK includes a JavaScript library that provides APIs required for communicating with the page your extension will be embedded in.
+   ```
+
+   > This SDK includes a JavaScript library that provides APIs required for communicating with the page your extension will be embedded in.
 
 4. Create an extension manifest file named `vss-extension.json` at the root of your extension directory with the following content:
 
@@ -128,7 +130,7 @@ An extension is composed of a set of files, including a required manifest file, 
 
 6. At this point your extension directory should look like this:
 
-	```no-highlight
+	```
 	|-- my-hub.html
 	|-- node_modules
 		|-- @types
@@ -141,21 +143,22 @@ You're now ready to package, publish, and test your extension.
 
 ## Package and publish your extension
 
-#### Create your publisher
+#### Create a publisher
 
-All extensions, including extensions from Microsoft, live under a publisher. Anyone can create a publisher and publish extensions under it. Other people can also be given access to your publisher if you are developing extensions as a team.
+All extensions, including extensions from Microsoft, live under a publisher. Anyone can create a publisher and publish extensions under it. You can also give other people access to your publisher if a team is developing the extension.
 
-1. Sign in to the [Visual Studio Marketplace Management Portal](https://aka.ms/vsmarketplace-manage)
+1. Sign in to the Visual Studio [Marketplace management portal](https://aka.ms/vsmarketplace-manage)
 
 2. If you don't already have a publisher, you'll be prompted to create one.
 
 3. In the Create Publisher form, enter your name in the publisher name field. The ID field should get set automatically based on your name:
+
    	![Create publisher](_img/create-publisher.png)
 
->[!NOTE]
->Remember this ID. You will need to reference it later from your extension manifest file.
+    >[!NOTE]
+    >Remember this ID. You will need to set it in the manifest file of your extension.
 
-You're now ready to package your extension and upload (publish) it to the Marketplace. Keep this browser window open as you'll need to return here to upload your extension.
+You're now ready to package your extension and publish (upload) it to the Marketplace. Keep this browser window open as you'll need to return here after you have packaged your extension.
 
 #### Package your extension
 
@@ -169,8 +172,8 @@ You're now ready to package your extension and upload (publish) it to the Market
 	}
 	```		
 
-2. From a command prompt, run the TFX package command from your extension directory to create an extension package (.vsix) file:
-   ```bash
+2. From a command prompt, run the TFX tool's packaging command from your extension directory:
+   ```
    tfx extension create
    ```
 
@@ -183,26 +186,29 @@ You're now ready to package your extension and upload (publish) it to the Market
    - Publisher: AnnetteNielsen
    ```
 
-You will be uploading this file to the Marketplace in the next step.
-
 #### Upload your extension
 
-1. Return to the [Visual Studio Marketplace Management Portal](https://aka.ms/vsmarketplace-manage) and select your publisher from the drop-down at the top of the page if your publisher isn't already selected.
+1. From the [management portal](https://aka.ms/vsmarketplace-manage) select your publisher from the drop-down at the top of the page.
 
-2. Tap the **New Extension** button and select **Visual Studio Team Services**:
-   	![Upload new extension for VSTS or TFS](_img/upload-new-extension.png)
+2. Tap **New Extension** and select **Visual Studio Team Services**:
+   	
+	![Upload new extension for VSTS or TFS](_img/upload-new-extension.png)
 
-3. Tap the link in the center of the Upload dialog to open a browse dialog. Locate the .vsix file you created in the previous section and click **Upload**:
+3. Click the link in the center of the Upload dialog to open a browse dialog. 
+
+4. Locate the .vsix file (created in the packaging step above) and choose **Upload**:
+
    ![Upload new extension for VSTS or TFS](_img/upload-new-extension2.png)
 
-4. After a few seconds, your extension should appear in the list as a published extension. Don't worry, the extension is not publicly visible:
+4. After a few seconds your extension will appear in the list of published extensions. Don't worry, the extension is only visible to you.
+
    ![Upload new extension for VSTS or TFS](_img/published-extension.png)
 
 ## Install your extension
 
-To test your extension, you need to install it to a VSTS account. You must be the owner or have been given the necessary permissions to install an extension into a VSTS account. Because your extension is private, it must be shared with this account before it can be installed. 
+To test an extension, it must be installed to a VSTS account. Installing requires being the owner of the account (or having the necessary permissions). Because your extension is private, it must first be shared with the account you want to install it to.
 
-1. From the Marketplace management portal, select your extension from the list, right-click, and choose **Share/Unshare** .
+1. From the management portal, select your extension from the list, right-click, and choose **Share/Unshare** .
 
    ![Upload new extension for VSTS or TFS](_img/share-menu.png)
 
@@ -214,24 +220,24 @@ To test your extension, you need to install it to a VSTS account. You must be th
 
 Your extension can now be installed into this account.
 
-4. With your extension selected, tap *...*, and choose  **View Extension** to open the details page for your extension on the Marketplace.
+4. Right-click your extension and choose  **View Extension** to open its details page
 
    ![Details page](_img/details-page.png)
 
    >[!NOTE]
-   >Because your extension is private, only you (as the publisher of the extension) and members of the account your extension is shared with can see this page.
+   >Because your extension is private, only you (as the publisher of the extension) and any member of the account it is shared with can see this page.
 
-5. Click **Get it free** to start the installation process. The account you shared the extension with should already be selected, but if not, choose it.
+5. Click **Get it free** to start the installation process. The account you shared the extension with should be selected:
 
    ![Install extension panel](_img/install-dialog.png)
 
-6. Tap **Install**
+6. Click **Install**.
 
-Congratulations! Your extension is now installed into your account and is ready for use.
+Congratulations! Your extension is now installed into an account and is ready to be tested.
 
 ## Try your extension
 
-Your extension contributed a view named "My Hub" to the project-level Code area.
+Your extension contributed a view named "My Hub" to the project-level Code area. Let's navigate to it.
 
 1. Tap the **Proceed to account** button at the end of the installation wizard to navigate to the home page of the account the extension was installed to (`https://{youraccountname}.visualstudio.com`).
 
@@ -239,20 +245,16 @@ Your extension contributed a view named "My Hub" to the project-level Code area.
 
    ![Install extension panel](_img/account-home2.png)
 
-> If there are no projects in your account, you will be prompted to create one.
+   > If there are no projects in your account, you will be prompted to create one.
 
-2. Navigate to the Code area and then to the hub contributed by your extension (**My Hub**):
+3. Navigate to the Code area and then to the hub contributed by your extension (**My Hub**):
 
    ![My hub](_img/my-hub.png)
-
 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Explore other tutorials](tutorials.md)
+> [See more tutorials](tutorials.md)
 
 > [!div class="nextstepaction"]
-> [Dive into sample extensions](https://github.com/Microsoft/vsts-extension-samples/)
-
-> [!div class="nextstepaction"]
-> [Learn about possible extensibility options](reference/targets/overview.md)
+> [Explore the samples](https://github.com/Microsoft/vsts-extension-samples/)
