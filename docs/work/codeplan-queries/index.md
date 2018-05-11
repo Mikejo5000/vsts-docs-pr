@@ -71,7 +71,7 @@ List bugs, user stories, or other work items based on field criteria you specify
 - [Kanban](../codeplan-boards/index.md)
 - [Scrum](../codeplan-scrum/index.md)
 - [Backlogs](../codeplan-backlogs/index.md)
-- [Customization](../customize/process/customize-process.md)
+- [Customization](../../settings/work/customize-process.md)
 
 
 

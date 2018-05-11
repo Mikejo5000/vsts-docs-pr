@@ -4,7 +4,7 @@ titleSuffix: Azure Codex
 description: Configure settings for teams, projects, and account-level objects
 ms.technology: devops-settings
 ms.prod: devops
-ms.topic: overview
+ms.topic: conceptual
 ms.assetid: 
 ms.manager: douge
 ms.author: kaelli

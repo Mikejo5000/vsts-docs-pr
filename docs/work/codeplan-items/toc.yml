@@ -163,4 +163,4 @@
   - name: Queries
     href: ../codeplan-queries/index.md?toc=/vsts/work/codeplan-queries/toc.json&bc=/vsts/work/codeplan-queries/breadcrumb/toc.json 
   - name: Process Customization
-    href: ../customize/process/customize-process.md
+    href: ../../settings/work/customize-process.md

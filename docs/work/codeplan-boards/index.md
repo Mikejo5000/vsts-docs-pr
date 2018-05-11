@@ -58,7 +58,7 @@ Get collaboration going by adding to, updating, and then reviewing your Kanban b
 - [Backlogs](../codeplan-backlogs/index.md)
 - [Scrum](../codeplan-scrum/index.md)
 - [Queries](../codeplan-queries/index.md)
-- [Process Customization](../customize/process/customize-process.md?toc=/vsts/settings/toc.json&bc=/vsts/work/settings/breadcrumb/toc.json)
+- [Process Customization](../../settings/work/customize-process.md?toc=/vsts/settings/toc.json&bc=/vsts/work/settings/breadcrumb/toc.json)
 - [What is Agile?](https://www.visualstudio.com/learn/what-is-agile/)   
 - [What is Agile development?](https://www.visualstudio.com/learn/what-is-agile-development/)  
 

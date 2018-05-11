@@ -49,7 +49,7 @@ Manage portfolios and gain visibility across teams. For guidance on adding teams
 - [Kanban](../codeplan-boards/index.md)
 - [Backlogs](../codeplan-backlogs/index.md)
 - [Queries](../codeplan-queries/index.md)
-- [Process Customization](../customize/process/customize-process.md)
+- [Process Customization](../../settings/work/customize-process.md)
 - [Agile culture](https://www.visualstudio.com/learn/agile-culture/)  
 - [Scale Agile to large teams](https://www.visualstudio.com/learn/scale-agile-large-teams/)  
 - [Creating productive teams](https://www.visualstudio.com/learn/productive-teams/)      

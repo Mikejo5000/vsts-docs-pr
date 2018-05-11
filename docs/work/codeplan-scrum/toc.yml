@@ -69,7 +69,7 @@
   - name: Queries
     href: ../codeplan-queries/index.md?toc=/vsts/work/codeplan-queries/toc.json&bc=/vsts/work/codeplan-queries/breadcrumb/toc.json 
   - name: Process Customization
-    href: ../customize/process/customize-process.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+    href: ../../settings/work/customize-process.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
   - name: What is Scrum?
     href: https://www.visualstudio.com/learn/what-is-scrum/
   - name: What is Agile development?

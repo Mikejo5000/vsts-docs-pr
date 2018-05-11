@@ -17,12 +17,12 @@ ms.date: 04/01/2018
 Customize an inherited process and apply to a team project to customize your work tracking experience. 
 
 ## 5-Minute Quickstarts    
-- [Add a custom field](../../work/customize/process/customize-process-field.md?toc=/vsts/settings/customize/toc.json&bc=/vsts/settings/customize/breadcrumb/toc.json)
+- [Add a custom field](../work/customize-process-field.md?toc=/vsts/settings/customize/toc.json&bc=/vsts/settings/customize/breadcrumb/toc.json)
 
 ## Tutorials
 
 
-- [Customize a process](../../work/customize/process/customize-process.md?toc=/vsts/settings/customize/toc.json&bc=/vsts/settings/customize/breadcrumb/toc.json)
+- [Customize a process](../work/customize-process.md?toc=/vsts/settings/customize/toc.json&bc=/vsts/settings/customize/breadcrumb/toc.json)
 
 
 ## Concepts 
@@ -30,12 +30,12 @@ Customize an inherited process and apply to a team project to customize your wor
 - [About process customization](../../work/customize/inheritance-process-model.md?toc=/vsts/settings/customize/toc.json&bc=/vsts/settings/customize/breadcrumb/toc.json)
 
 ## How-to Guides 
-- [Manage processes](../../work/customize/process/manage-process.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)   
-- [Add a custom field](../../work/customize/process/customize-process-field.md?toc=/vsts/settings/customize/toc.json&bc=/vsts/settings/customize/breadcrumb/toc.json)
-- [Customize a web form](../../work/customize/process/customize-process-form.md?toc=/vsts/settings/customize/toc.json&bc=/vsts/settings/customize/breadcrumb/toc.json)
-- [Customize a workflow](../../work/customize/process/customize-process-workflow.md?toc=/vsts/settings/customize/toc.json&bc=/vsts/settings/customize/breadcrumb/toc.json)
-- [Customize a work item type](../../work/customize/process/customize-process-wit.md?toc=/vsts/settings/customize/toc.json&bc=/vsts/settings/customize/breadcrumb/toc.json)
-- [Add a custom rule](../../work/customize/process/custom-rules.md?toc=/vsts/settings/customize/toc.json&bc=/vsts/settings/customize/breadcrumb/toc.json)
+- [Manage processes](../work/manage-process.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)   
+- [Add a custom field](../work/customize-process-field.md?toc=/vsts/settings/customize/toc.json&bc=/vsts/settings/customize/breadcrumb/toc.json)
+- [Customize a web form](../work/customize-process-form.md?toc=/vsts/settings/customize/toc.json&bc=/vsts/settings/customize/breadcrumb/toc.json)
+- [Customize a workflow](../work/customize-process-workflow.md?toc=/vsts/settings/customize/toc.json&bc=/vsts/settings/customize/breadcrumb/toc.json)
+- [Customize a work item type](../work/customize-process-wit.md?toc=/vsts/settings/customize/toc.json&bc=/vsts/settings/customize/breadcrumb/toc.json)
+- [Add a custom rule](../work/custom-rules.md?toc=/vsts/settings/customize/toc.json&bc=/vsts/settings/customize/breadcrumb/toc.json)
 
 
 ## Reference

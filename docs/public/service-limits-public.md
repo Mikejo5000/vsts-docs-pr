@@ -2,11 +2,12 @@
 title: Rate and service limits on public projects
 titleSuffix: Azure CodeX Public Project
 description: Terms of service  
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
-ms.assetid:   
+ms.technology: devops-agile
+ms.prod: devops-alm
+ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
 ms.date: 06/02/2017
 ---
 
@@ -31,7 +32,7 @@ TBD
 
 ## Codex Agile: Custom work tracking 
 
-Limits placed on the maximum number of custom work tracking objects that you can define for a public project are summarized below. You define these objects through an inheritance process. To learn more, see [Customize your work tracking process](../work/customize/process/customize-process.md).
+Limits placed on the maximum number of custom work tracking objects that you can define for a public project are summarized below. You define these objects through an inheritance process. To learn more, see [Customize your work tracking process](../settings/work/customize-process.md).
 
 |Object | Inheritance | 
 |-------|------------:|

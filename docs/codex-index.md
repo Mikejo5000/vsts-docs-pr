@@ -288,7 +288,7 @@ featureFlags:
                                 <div class="group">
                                     <h3>Settings</h3>
                                     <ul>
-                                        <li><a class="barLink" href="/vsts/settings/index">Project &amp; Account Settings</a></li>
+                                        <li><a class="barLink" href="/vsts/settings/index">Settings</a></li>
                                         <li><a class="barLink" href="/vsts/settings/index">Scale and Configure Teams</a></li>
                                         <li><a class="barLink" href="/vsts/accounts/index">Account Management</a></li>
                                         <li><a class="barLink" href="/vsts/security/index">Security and Identity</a></li>

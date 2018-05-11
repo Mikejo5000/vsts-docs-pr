@@ -60,7 +60,7 @@
   - name: "Scale & Configure Teams"
     href: ../../settings/index.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
   - name: Process Customization
-    href: ../customize/process/customize-process.md?toc=/vsts/work/settings/toc.json&bc=/vsts/work/settings/breadcrumb/toc.json
+    href: ../../settings/work/customize-process.md?toc=/vsts/work/settings/toc.json&bc=/vsts/work/settings/breadcrumb/toc.json
   - name: Agile culture
     href: https://www.visualstudio.com/learn/agile-culture/
   - name: Scale Agile to large teams

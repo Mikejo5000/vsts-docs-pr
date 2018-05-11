@@ -54,7 +54,7 @@ Build your backlog and then start driving your code development efforts.
 - [Boards](../codeplan-boards/index.md)
 - [Scrum](../codeplan-scrum/index.md)
 - [Queries](../codeplan-queries/index.md)
-- [Customization](../customize/process/customize-process.md?toc=/vsts/settings/toc.json&bc=/vsts/work/settings/breadcrumb/toc.json)
+- [Customization](../../settings/work/customize-process.md?toc=/vsts/settings/toc.json&bc=/vsts/work/settings/breadcrumb/toc.json)
 
 
 

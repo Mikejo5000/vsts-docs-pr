@@ -58,7 +58,7 @@ Whether you use scrum, Kanban, or a combination of Agile methods, you can get st
 - [Backlogs](../codeplan-backlogs/index.md)
 - [Boards](../codeplan-boards/index.md)
 - [Queries](../codeplan-queries/index.md)
-- [Process Customization](../customize/process/customize-process.md)
+- [Process Customization](../../settings/work/customize-process.md)
 - [What is Scrum?](https://www.visualstudio.com/learn/what-is-scrum/)  
 - [What is Agile development?](https://www.visualstudio.com/learn/what-is-agile-development/)  
 
