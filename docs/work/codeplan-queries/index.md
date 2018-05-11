@@ -1,6 +1,6 @@
 ---
 title: Index to work item query topics 
-titleSuffix: Codex Agile
+titleSuffix: Azure Codex Agile
 description: Create, edit, and use queries to bulk update and triage work items 
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm

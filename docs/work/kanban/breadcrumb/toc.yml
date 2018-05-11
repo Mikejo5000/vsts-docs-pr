@@ -1,8 +1,8 @@
-- name: CodeX
+- name: Azure Codex
   tocHref: /vsts/
   topicHref: /vsts/index
   items: 
-  - name: Codex Agile
+  - name: Azure Codex Agile
     tocHref: /vsts/
     topicHref: /vsts/index#pivot=services&panel=agile
     items:

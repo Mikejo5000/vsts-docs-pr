@@ -1,6 +1,6 @@
 ---
-title: Codex Agile Customization 
-titleSuffix: Codex Agile
+title: Azure Codex Agile Customization 
+titleSuffix: Azure Codex Agile
 description: Add a custom field and customize work item types and backlogs  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -27,7 +27,7 @@ Customize an inherited process and apply to a team project to customize your wor
 
 ## Concepts 
 
-- [About process customization](../../work/customize/inheritance-process-model.md?toc=/vsts/settings/customize/toc.json&bc=/vsts/settings/customize/breadcrumb/toc.json)
+- [About process customization](../work/inheritance-process-model.md?toc=/vsts/settings/customize/toc.json&bc=/vsts/settings/customize/breadcrumb/toc.json)
 
 ## How-to Guides 
 - [Manage processes](../work/manage-process.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)   
@@ -45,6 +45,7 @@ Customize an inherited process and apply to a team project to customize your wor
 ## Resources 
 - [Navigation Basics](../../user-guide/work-web-portal.md) 
 - [Security & Identity](../../security/index.md) 
+- [Azure Codex Agile](/vsts/codex-index#pivot=services&panel=agile)
 - [Manage Extensions (Marketplace)](../../marketplace/index.md) 
-- [Service hooks](../../service-hooks/index.md) 
+
  

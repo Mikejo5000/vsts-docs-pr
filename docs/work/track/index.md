@@ -1,6 +1,6 @@
 ---
 title: Index to work item query articles 
-titleSuffix: Codex Agile
+titleSuffix: Azure Codex Agile
 description: Use queries to find and list work items and create flat-based query charts in Visual Studio Team Services & Team Foundation Server   
 ms.technology: devops-agile
 ms.prod: devops

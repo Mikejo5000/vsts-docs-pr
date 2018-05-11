@@ -1,6 +1,6 @@
 ---
 title: Index to topics for Codex Agile Boards
-titleSuffix: Codex Agile
+titleSuffix: Azure Codex Agile
 description: Work with Kanban boards  
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm

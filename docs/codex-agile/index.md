@@ -1,6 +1,6 @@
 ---
 title: Describes the services provided by Codex Agile
-titleSuffix: Codex
+titleSuffix: Azure Codex
 description: Understand the fundamental services provided by Codex Agile 
 ms.prod: vs-devops-alm  
 ms.technology: vs-devops-overview

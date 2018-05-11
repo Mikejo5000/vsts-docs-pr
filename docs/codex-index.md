@@ -1,6 +1,6 @@
 ---
 title: Azure CodeX Documentation 
-description: Share code, track work, continuous build and deploy using Azure CodeX cloud service apps 
+description: Share code, track work, continuous build & deploy using Azure CodeX cloud service apps 
 layout: HubPage
 hide_bc: true 
 ms.prod: vs-devops-alm 
@@ -171,7 +171,7 @@ featureFlags:
                                                 <h3>Navigation &amp; Settings</h3>
                                                 <ul class="noBullet">
                                                     <li><a class="barLink" href="/vsts/navigation/">Navigation Basics</a></li>
-                                                    <li><a class="barLink" href="/vsts/settings/">Project &amp; Account Settings</a></li>
+                                                    <li><a class="barLink" href="/vsts/settings/">Settings</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -244,12 +244,12 @@ featureFlags:
                                         <li><a class="barLink" href="/vsts/deploy-azure/index">Deploy to Azure</a></li>
                                         <li><a class="barLink" href="/vsts/package/index">Package Management</a></li>
                                         <li><a class="barLink" href="/vsts/build-release/concepts/library/index">Library Assets</a></li>
-                                        <li><a class="barLink" href="/vsts/build-release/concepts/agents/agents">Hosted and Private Agents</a></li>
+                                        <li><a class="barLink" href="/vsts/build-release/concepts/agents/agents">Hosted &amp; Private Agents</a></li>
                                         <li><a class="barLink" href="/vsts/build-release/tasks">Task Reference</a></li>
                                     </ul>
                                     <h3>Azure Codex Test</h3>
                                     <ul>
-                                        <li><a class="barLink" href="/visualstudio/test/unit-test-your-code">Unit and Functional Testing</a></li>
+                                        <li><a class="barLink" href="/visualstudio/test/unit-test-your-code">Unit &amp; Functional Testing</a></li>
                                         <li><a class="barLink" href="/vsts/manual-test/index">Exploratory &amp; Manual Testing</a></li>
                                         <li><a class="barLink" href="/vsts/load-test/index">Load Testing</a></li>
                                         <li><a class="barLink" href="/vsts/build-release/test/index">Continuous Testing</a></li>
@@ -288,10 +288,10 @@ featureFlags:
                                 <div class="group">
                                     <h3>Settings</h3>
                                     <ul>
-                                        <li><a class="barLink" href="/vsts/settings/index">Settings</a></li>
-                                        <li><a class="barLink" href="/vsts/settings/index">Scale and Configure Teams</a></li>
                                         <li><a class="barLink" href="/vsts/accounts/index">Account Management</a></li>
-                                        <li><a class="barLink" href="/vsts/security/index">Security and Identity</a></li>
+                                        <li><a class="barLink" href="/vsts/settings/about-teams-and-settings">Scale &amp;  Configure Teams</a></li>
+                                        <li><a class="barLink" href="/vsts/settings/index">Settings</a></li>
+                                        <li><a class="barLink" href="/vsts/security/index">Security &amp; Identity</a></li>
                                         <li><a class="barLink" href="/vsts/billing/index">Billing</a></li>
                                         <li><a class="barLink" href="/vsts/marketplace/index">Manage Extensions</a></li>
                                     </ul>
@@ -485,7 +485,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Build and Release</h3>
+                                                    <h3>Build &amp; Release</h3>
                                                     <p>Implement continuous integration and continuous deployment.</p>
                                                 </div>
                                             </div>
@@ -625,7 +625,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Unit and Functional Testing</h3>
+                                                    <h3>Unit &amp; Functional Testing</h3>
                                                     <p>Maintain code health, avoid regressions, and achieve code coverage using Visual Studio.</p>
                                                 </div>
                                             </div>
@@ -1081,7 +1081,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/settings/index">
+                                <a href="/vsts/settings/about-teams-and-settings">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -1091,7 +1091,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Scale and Configure Teams</h3>
+                                                    <h3>Scale &amp; Configure Teams</h3>
                                                     <p>Add teams and team administrators; configure team settings.</p>
                                                 </div>
                                             </div>

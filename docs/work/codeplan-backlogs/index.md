@@ -1,6 +1,6 @@
 ---
 title: Index to topics for work item tracking
-titleSuffix: Codex Agile
+titleSuffix: Azure Codex Agile
 description: Index to topics for planning and tracking work 
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm

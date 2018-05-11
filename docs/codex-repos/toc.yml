@@ -1,4 +1,4 @@
-- name: Codex Repos Onboarding Guide
+- name: Azure Codex Repos Onboarding Guide
   href: index.md
   items:
   - name: Sign up and invite some teammates 
@@ -11,9 +11,9 @@
     href: ../security/permissions-access.md?toc=/vsts/codex-repos/toc.json&bc=/vsts/codex-repos/breadcrumb/toc.json 
 - name: Resources
   items:
-  - name: Codex Agile
+  - name: Azure Codex Agile
     href: ../codex-agile/index.md
-  - name: Codex Pipelines
+  - name: Azure Codex Pipelines
     href: ../codex-pipelines/index.md
   - name: Navigation Basics
     href: ../navigation/index.md

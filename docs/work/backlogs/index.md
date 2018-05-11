@@ -1,6 +1,6 @@
 ---
 title: Index to articles for working with backlogs
-titleSuffix: Codex Agile
+titleSuffix: Azure Codex Agile
 description: Index to topics for planning and tracking work in Visual Studio Team Services & Team Foundation Server   
 ms.technology: devops-agile
 ms.prod: devops

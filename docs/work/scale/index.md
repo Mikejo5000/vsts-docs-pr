@@ -1,6 +1,6 @@
 ---
 title: Index to articles for working with multiple teams
-titleSuffix: Codex 
+titleSuffix: Azure Codex 
 description: Index to articles for how to scale Agile tools to support multiple teams and enterprise organizations in Visual Studio Team Services & Team Foundation Server   
 ms.technology: devops-agile
 ms.prod: devops

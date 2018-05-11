@@ -1,6 +1,6 @@
 ---
 title: Describes the services provided by Codex Repos
-titleSuffix: Codex
+titleSuffix: Azure Codex
 description: Understand the fundamental services provided by Codex Repos
 ms.prod: vs-devops-alm  
 ms.technology: vs-devops-overview

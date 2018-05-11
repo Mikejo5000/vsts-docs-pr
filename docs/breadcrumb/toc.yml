@@ -1,4 +1,4 @@
-- name: Codex
+- name: Azure Codex
   tocHref: /vsts/
   topicHref: /vsts/index#pivot=services
   items:
@@ -11,7 +11,7 @@
   - name: Public Projects
     tocHref: /vsts/
     topicHref: /vsts/public/index
-  - name: Codex Repos
+  - name: Azure Codex Repos
     tocHref: /vsts/git/
     topicHref: /vsts/index#pivot=services&panel=code
     items:
@@ -21,7 +21,7 @@
     - name: TFVC
       tocHref: /vsts/tfvc/
       topicHref: /vsts/tfvc/index
-  - name: Codex Pipelines
+  - name: Azure Codex Pipelines
     tocHref: /vsts/build-release/
     topicHref: /vsts/index#pivot=services&panel=delivery
     items:
@@ -37,7 +37,7 @@
     - name: Continuous Testing
       tocHref: /vsts/build-release/
       topicHref: /vsts/build-release/test/index
-  - name: Codex Test
+  - name: Azure Codex Test
     tocHref: /vsts/manual-test/
     topicHref: /vsts/index#pivot=services&panel=testing
     items:
@@ -50,7 +50,7 @@
     - name: Unit Testing
       tocHref: https://docs.microsoft.com/visualstudio/test/improve-code-quality/
       topicHref: https://docs.microsoft.com/visualstudio/test/unit-test-your-code
-  - name: Codex Agile
+  - name: Azure Codex Agile
     tocHref: /vsts/work/
     topicHref: /vsts/index#pivot=services&panel=agile
     items:
@@ -75,7 +75,7 @@
   - name: Java 
     tocHref: /vsts/java/
     topicHref: /vsts/java/index   
-  - name: Codex Dashboards
+  - name: Dashboards
     tocHref: /vsts/
     topicHref: /vsts/index#pivot=services&panel=reporting
     items:
@@ -117,7 +117,7 @@
     - name: "Security & Identity"
       tocHref: /vsts/security/
       topicHref: /vsts/security/index
-    - name: "Project & Account Settings"
+    - name: Settings
       tocHref: /vsts/settings/
       topicHref: /vsts/settings/index
     - name: Billing

@@ -1,38 +1,38 @@
-- name: Codex Agile Customization 
+- name: Azure Codex Agile Customization 
   href: index.md?toc=/vsts/settings/customize/toc.json&bc=/vsts/settings/customize/breadcrumb/toc.json 
 - name: Overview
   items:
   - name: About process customization
-    href: ../../work/customize/inheritance-process-model.md?toc=/vsts/settings/customize/toc.json&bc=/vsts/settings/customize/breadcrumb/toc.json
+    href: ../work/inheritance-process-model.md?toc=/vsts/settings/customize/toc.json&bc=/vsts/settings/customize/breadcrumb/toc.json
 - name: Quickstarts
   items:
   - name: Add a custom field
-    href: ../work/customize-process-field.md?toc=/vsts/settings/customize/toc.json&bc=/vsts/settings/customize/breadcrumb/toc.json
+    href: ../work/add-custom-field.md?toc=/vsts/settings/customize/toc.json&bc=/vsts/settings/customize/breadcrumb/toc.json
+  - name: Add a custom work item type
+    href: ../work/add-custom-wit.md?toc=/vsts/settings/customize/toc.json&bc=/vsts/settings/customize/breadcrumb/toc.json
 - name: Tutorials
   items: 
-  - name: Customize a process
+  - name: Customize a project
     href: ../work/customize-process.md?toc=/vsts/settings/customize/toc.json&bc=/vsts/settings/customize/breadcrumb/toc.json
-- name: Concepts
-  items:
-  - name: About process customization
-    href: ../../work/customize/inheritance-process-model.md?toc=/vsts/settings/customize/toc.json&bc=/vsts/settings/customize/breadcrumb/toc.json
+  - name: Create and manage a process
+    href: ../work/manage-process.md?toc=/vsts/settings/customize/toc.json&bc=/vsts/settings/customize/breadcrumb/toc.json
+  - name: Add a project
+    href: ../../accounts/create-team-project.md?toc=/vsts/settings/customize/toc.json&bc=/vsts/settings/customize/breadcrumb/toc.json
 - name: How-to Guides
   items:
-  - name: Manage processes
-    href: ../work/manage-process.md?toc=/vsts/settings/customize/toc.json&bc=/vsts/settings/customize/breadcrumb/toc.json 
-  - name: Add a custom field
+  - name: Add and manage fields
     href: ../work/customize-process-field.md?toc=/vsts/settings/customize/toc.json&bc=/vsts/settings/customize/breadcrumb/toc.json
+  - name: Add and manage work item types
+    href: ../work/customize-process-wit.md?toc=/vsts/settings/customize/toc.json&bc=/vsts/settings/customize/breadcrumb/toc.json
   - name: Customize a web form
     href: ../work/customize-process-form.md?toc=/vsts/settings/customize/toc.json&bc=/vsts/settings/customize/breadcrumb/toc.json
   - name: Customize a workflow
     href: ../work/customize-process-workflow.md?toc=/vsts/settings/customize/toc.json&bc=/vsts/settings/customize/breadcrumb/toc.json
-  - name: Customize a work item type
-    href: ../work/customize-process-wit.md?toc=/vsts/settings/customize/toc.json&bc=/vsts/settings/customize/breadcrumb/toc.json
   - name: Add a custom rule
     href: ../work/custom-rules.md?toc=/vsts/settings/customize/toc.json&bc=/vsts/settings/customize/breadcrumb/toc.json
   - name: Add a custom control
     href: ../work/custom-controls-process.md?toc=/vsts/settings/customize/toc.json&bc=/vsts/settings/customize/breadcrumb/toc.json
-  - name: Customize backlogs and boards
+  - name: Customize backlogs & boards
     href: ../work/customize-process-backlogs-boards.md?toc=/vsts/settings/customize/toc.json&bc=/vsts/settings/customize/breadcrumb/toc.json
 - name: Reference
   items:
@@ -40,7 +40,11 @@
     href: ../../security/permissions-access.md?toc=/vsts/settings/customize/toc.json&bc=/vsts/settings/customize/breadcrumb/toc.json
 - name: Resources
   items:
-  - name: Codex Agile
+  - name: Navigation Basics
+    href: ../../navigation/index.md
+  - name: Security & Identity
+    href: ../../security/index.md
+  - name: Azure Codex Agile
     href: /vsts/index#pivot=services&panel=agile
   - name: "Manage Extensions (Marketplace)"
     href: ../../marketplace/index.md

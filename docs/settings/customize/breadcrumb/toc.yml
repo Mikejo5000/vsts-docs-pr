@@ -1,4 +1,4 @@
-- name: Codex Agile Customization
+- name: Azure Codex Agile Customization
   tocHref: /vsts/
   topicHref: /vsts/index
   items: 
@@ -6,6 +6,6 @@
     tocHref: /vsts/
     topicHref: /vsts/index#pivot=services&panel=admin
     items:
-    - name: Codex Agile Customization
+    - name: Azure Codex Agile Customization
       tocHref: /vsts/
       topicHref: /vsts/settings/customize/index

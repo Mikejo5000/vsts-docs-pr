@@ -1,6 +1,6 @@
 ---
 title: Index of scrum and sprint planning articles  
-titleSuffix: Codex Agile
+titleSuffix: Azure Codex Agile
 description: Index to articles for implementing Scrum using Agile tools in Visual Studio Team Services & Team Foundation Server   
 ms.technology: devops-agile
 ms.prod: devops

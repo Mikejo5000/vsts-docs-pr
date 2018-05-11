@@ -1,6 +1,6 @@
 ---
 title: Index to topics for Codex Agile Boards
-titleSuffix: Codex Agile
+titleSuffix: Azure Codex Agile
 description: Work with Kanban boards to plan and track work in Visual Studio Team Services & Team Foundation Server
 ms.technology: devops-agile
 ms.prod: devops

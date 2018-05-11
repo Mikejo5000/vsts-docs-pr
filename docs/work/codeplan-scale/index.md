@@ -1,6 +1,6 @@
 ---
 title: Index to topics for working with multiple teams
-titleSuffix: Codex Agile
+titleSuffix: Azure Codex Agile
 description: Index to topics for planning and tracking work across an enterprise using multiple teams
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm

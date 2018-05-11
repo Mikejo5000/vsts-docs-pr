@@ -12,9 +12,9 @@ ms.date: 02-24-2018
 
 # Navigation basics 
 
-**Azure CodeX**  
+**Azure Codex**  
 
-Here's what you need to know to get up and running using Azure CodeX or one of its apps.  
+Here's what you need to know to get up and running using Azure Codex or one of its apps.  
 
 - **[Start page](go-to-app-hub-page.md)**: use to switch an app or a team project 
 - **[Search box](search-basics.md)**: use to find code, work items, or a wiki page 
