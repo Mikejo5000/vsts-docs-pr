@@ -1,6 +1,6 @@
 ---
-title: Describes how to obtain Azure Codex
-titleSuffix: TFS
+title: How to add an administrator in Azure Codex
+titleSuffix: Azure Codex
 description: Understand 
 ms.technology: devops-new-user 
 ms.prod: devops
@@ -12,7 +12,9 @@ ms.date: 12/07/2016
 ---
 
 
-# How can I get Azure Codex?
+# How can I add an admin?
+
+**Azure Codex**
 
 ::: moniker range=">= tfs-2013"
 
