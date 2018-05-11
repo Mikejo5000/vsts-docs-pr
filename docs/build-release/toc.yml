@@ -10,6 +10,10 @@
     href: test/index.md
 - name: Quickstarts
   items:
+    - name: Using the web
+      href: build/with-web.md
+    - name: Using YAML
+      href: build/with-yaml.md
     - name: Azure DevOps projects
       items:
       - name: ASP.NET Core

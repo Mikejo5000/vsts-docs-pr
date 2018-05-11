@@ -2,10 +2,26 @@
 ms.topic: include
 ---
 
-To import the sample app into a Git repo in VSTS or TFS:
+::: moniker range="vsts"
 
- 1. On the **Code** hub for your team project in VSTS/TFS, select the option to **Import repository**.
+To import the sample app into a Git repo in VSTS:
+
+ 1. On the **Code** hub for your team project in VSTS, select the option to **Import repository**.
 
  1. In the **Import a Git repository** dialog box, paste the above URL into the **Clone URL** text box.
 
  1. Click **Import** to copy the sample code into your Git repo.
+
+::: moniker-end
+
+::: moniker range="< vsts"
+
+To import the sample app into a Git repo in TFS:
+
+ 1. On the **Code** hub for your team project in TFS, select the option to **Import repository**.
+
+ 1. In the **Import a Git repository** dialog box, paste the above URL into the **Clone URL** text box.
+
+ 1. Click **Import** to copy the sample code into your Git repo.
+
+::: moniker-end

@@ -69,7 +69,7 @@ GitHub is not available in TFS.
 
 ---
 
-[!INCLUDE [include](../_shared/get-sample-code-other-repos-vsts.md)]
+[!INCLUDE [include](../_shared/get-sample-code-other-repos-vsts-tfs.md)]
 
 [//]: # (TODO: report and get fix for build warning "All tabs are hidden in the tab group." [!INCLUDE [include](../../_shared/web-or-yaml.md)
 

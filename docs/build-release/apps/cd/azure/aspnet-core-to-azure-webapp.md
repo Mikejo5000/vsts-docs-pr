@@ -57,7 +57,7 @@ https://github.com/adventworks/dotnetcore-sample
 
 # [VSTS or TFS repo](#tab/vsts)
 
-[!INCLUDE [include](../../_shared/get-sample-code-vsts-tfs-2017-update-2.md)]
+[!INCLUDE [include](../../_shared/get-sample-code-vsts.md)]
 
 # [GitHub repo](#tab/github)
 
