@@ -36,7 +36,7 @@ Get started with a free account, share your code using Git, and track your work 
 
 ## Step-by-Step Tutorials
 
-- Add admins or set permissions
+- [Add admins or set permissions](https://review.docs.microsoft.com/en-us/vsts/security/set-project-collection-level-permissions?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json&view=vsts&branch=features%2FCHCOMLEY_CODEX_4_30)
 - [Set up billing](https://docs.microsoft.com/en-us/vsts/billing/set-up-billing-for-your-account-vs?view=vsts)
 - [Set favorites](/vsts/collaborate/set-favorites?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
 - [Follow work and pull requests](../collaborate/follow-work-items.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
@@ -48,7 +48,7 @@ Get started with a free account, share your code using Git, and track your work 
 - [Kanban & Agile tools](../work/backlogs/overview.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
 - [Clients and tools](tools.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
 - [Developer roles](roles.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
-- - [What's the difference between VSTS and Azure Codex?](about-vsts-tfs.md?toc=/vsts/user-guide/toc.json& bc=/vsts/user-guide/breadcrumb/toc.json)
+- [What's the difference between VSTS and Azure Codex?](about-vsts-tfs.md?toc=/vsts/user-guide/toc.json& bc=/vsts/user-guide/breadcrumb/toc.json)
 - What is a Codex Project?
 - [What's the difference between Azure Codex and Codex Server?](about-vsts-tfs.md?toc=/vsts/user-guide/toc.json& bc=/vsts/user-guide/breadcrumb/toc.json)
 - Azure Codex Licensing and Billing
