@@ -12,16 +12,15 @@ ms.topic: quickstart
 monikerRange: 'vsts'
 ---
 
-
 # Code with Git
 
 **VSTS**
 
-After you create a new account and team project in VSTS, you can begin sharing your code with others. 
+After you create a new account and team project in VSTS, you can begin sharing your code with others.
 
-To work with a Git repo, you clone it to your computer. Cloning a repo creates a complete local copy of the repo for you to work with, and downloads all [commits](../git/tutorial/commits.md) and [branches](../git/tutorial/branches.md) in the repo and sets up a named relationship with the repo on the server. Use this relationship to interact with the existing repo, pushing and pulling changes to share code with your team. 
+To work with a Git repo, you clone it to your computer. Cloning a repo creates a complete local copy of the repo for you to work with, and downloads all [commits](../git/tutorial/commits.md) and [branches](../git/tutorial/branches.md) in the repo and sets up a named relationship with the repo on the server. Use this relationship to interact with the existing repo, pushing and pulling changes to share code with your team.
 
-## Install Git command line tools 
+## Install Git command line tools
 
 0. Install one of the following Git command line tools:
 

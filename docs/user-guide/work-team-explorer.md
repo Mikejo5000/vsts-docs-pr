@@ -1,26 +1,24 @@
 ---
-title: Navigate within the Visual Studio Team Explorer pane
-titleSuffix: VSTS & TFS 
+title: Navigate within Azure Codex
+titleSuffix: Azure Codex 
 description: Download TFS clients, navigate in Team Explorer for Visual Studio Team Services & Team Foundation Server 
 keywords: Download TFS clients 
 ms.technology: devops-new-user
 ms.prod: devops
 ms.assetid: fd7a5cf7-7916-4fa0-b5e6-5a83cf377a02
 ms.manager: douge
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: reference
-ms.date: 09/07/2017
+ms.date: 08/01/2018
 monikerRange: '>= tfs-2013'
 ---
-
 
 # Navigate in Team Explorer
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-You use Team Explorer to manage work that is assigned to you, your team, or your team projects, and to coordinate your efforts with other team members to develop a project. Team Explorer is a plug-in that installs with Visual Studio or Eclipse. Working from different platforms, developers and stakeholders can effectively collaborate using Team Explorer connected to team projects hosted on Visual Studio Online or on-premises Team Foundation Server (TFS). 
-
+You use Team Explorer to manage work that is assigned to you, your team, or your team projects, and to coordinate your efforts with other team members to develop a project. Team Explorer is a plug-in that installs with Visual Studio or Eclipse. Working from different platforms, developers and stakeholders can effectively collaborate using Team Explorer connected to team projects hosted on Visual Studio Online or on-premises Team Foundation Server (TFS).
 
 >[!TIP]  
 >You can access the latest version of Visual Studio clients from the [Visual Studio Downloads page](https://www.visualstudio.com/downloads/). Additional options for connecting to VSTS or TFS include:

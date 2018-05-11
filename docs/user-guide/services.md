@@ -7,18 +7,19 @@ ms.topic: overview
 ms.assetid: D861983F-CC66-4314-A3C6-E2F30A37923D
 ms.manager: douge
 ms.author: chcomley
-ms.date: 09/19/2017
+author: chcomley
+ms.date: 08/01/2018
 monikerRange: '>= tfs-2013'
 ---
 # What do I get with Azure Codex?
- 
+
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 With Azure Codex, you gain an integrated set of services and tools to manage your software projects, from planning and development through testing and deployment. Services are delivered through a client-server model, many of which are delivered through an easy-to-use web interface that you can access from all major browsers. Some services, such as source control, build definitions, and work tracking can also be managed through a client.
 
 Web services are access through the following main hubs as shown in the following image.
 
-![VSTS, main hubs](../_img/services-hubs.png)  
+![VSTS, main hubs](../_img/services-hubs.png)
 
 Many of our services are either free for small teams or available through a subscription model or per use model. Where needed, you can exercise a hybrid approach where you use an on-premises TFS to manage your code and work, and purchase cloud build or testing services on an as needed basis.
 
