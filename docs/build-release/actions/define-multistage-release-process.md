@@ -35,8 +35,7 @@ You'll need:
 * A release definition that contains at least one environment. If you don't already have one,
   you can create it by working through any of the following quickstarts and tutorials:
 
-  - [Deploy to an Azure Web App](../apps/cd/deploy-webdeploy-webapps.md)
-  - [Build and Deploy to an Azure Web App](../apps/cd/azure/aspnet-core-to-azure-webapp.md)
+  - [Deploy VSTS build](../release/getting-started-vsts-build.md)
   - [Deploy to IIS web server on Windows](../apps/cd/deploy-webdeploy-iis-deploygroups.md)
 
 * Two separate targets where you will deploy the app. These could be virtual machines,

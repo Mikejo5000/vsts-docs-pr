@@ -33,7 +33,7 @@ You can then use the service endpoint in your [build and release definition task
 
 ### Next
 
-* [Deploy an Azure web app](../../apps/cd/deploy-webdeploy-webapps.md)
+* [Deploy an Azure web app](../../targets/azure-webapp.md)
 * [Troubleshoot Azure Resource Manager service endpoints](../../actions/azure-rm-endpoint.md)
 
 [!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]

@@ -52,7 +52,7 @@ continuous integration (CI) and continuous deployment (CD) process.
 <div style="float:left;width:325px;margin:3px">
 <p style="font-weight:bold;padding-top:10px">Deploy your app</p>
 <ul style="padding-left:30px">
- <li style="margin-bottom:5px">[Azure web apps](cd/deploy-webdeploy-webapps.md)</li>
+ <li style="margin-bottom:5px">[Azure web apps](../targets/azure-webapp.md)</li>
  <li style="margin-bottom:5px">[Azure SQL database](../targets/azure-sqldb.md)</li>
  <li style="margin-bottom:5px">[Azure SQL database scripted](../targets/azure-sqldb.md)</li>
  <li style="margin-bottom:5px">[Azure Container Service (Kubernetes)](cd/azure/deploy-container-kubernetes.md)</li>

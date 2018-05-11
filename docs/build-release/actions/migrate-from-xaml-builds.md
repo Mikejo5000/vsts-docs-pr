@@ -264,7 +264,7 @@ The new Team Build is tightly integrated with Release Management. So it's easier
 
 A few examples include:
 
-* [Continuous deployment of your app to an Azure web site](../apps/cd/deploy-webdeploy-webapps.md)
+* [Deploy VSTS build](../release/getting-started-vsts-build.md)
 
 * [IIS using deployment groups](../apps/cd/deploy-webdeploy-iis-deploygroups.md)
 

@@ -351,7 +351,7 @@ You've just put your own CI build process in place to automatically build and va
 
 See one of the following:
 
-* [Deploy to Azure Web App](../cd/deploy-webdeploy-webapps.md)
+* [Deploy to Azure Web App](../../targets/azure-webapp.md)
 
 * [Deploy to a Windows VM](../cd/deploy-webdeploy-iis-deploygroups.md)
 

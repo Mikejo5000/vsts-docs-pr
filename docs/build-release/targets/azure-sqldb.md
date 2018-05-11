@@ -1,120 +1,66 @@
 ---
-title: Deploy to Azure SQL Database
-description: Deploy to an Azure SQL Database from VSTS
-ms.assetid: BB1FC018-77A7-42E7-A270-4BC7CB3AD1C4
+title: Azure SQL database deployment
+description: Deploy to an Azure SQL database from VSTS or TFS
+ms.assetid: B4255EC0-1A25-48FB-B57D-EC7FDB7124D9
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 04/09/2018
+ms.date: 05/10/2018
 monikerRange: '>= tfs-2017'
 ---
 
-# Azure SQL Database
-
-VSTS can automatically deploy your database updates to Azure SQL Database whenever a new build is produced. If you are new to creating a VSTS pipeline, see the following topics first to understand how to create one.
-
-* Build a repo with YAML file
-* Build a repo without YAML
-* [Deploy a VSTS build](../release/getting-started-vsts-build.md)
-
-## Azure SQL Database
-
-You need an Azure SQL Database server prior to setting up the VSTS pipeline. The steps below can help you create one:
-
-1. Sign into the Azure management portal and choose
-   the **+New** icon in the left panel, then choose
-   **Data + Storage**. Select **SQL Database** from the
-   list.
-
-1. In the **SQL Database** blade, enter a name for
-   Azure SQL Database and then
-   choose **Server** to configure the required settings
-   for the server.
-
-1. In the **Server** blade, choose **Create a new server**.
-
-1. In the **New server** blade, enter a name for the
-   server and enter the admin
-   login and password for the new server.
-   Leave all other settings as they are and choose **OK**.  
-
-1. Back in the **SQL Database** blade, leave all the
-   other settings at their default values and choose
-   **Create**.
-
-1. After the Azure SQL Database server and database
-   have been created, open its blade and make a note
-   of the **Server name**.
-
-## DACPAC
-
-Data-tier application packages or DACPACs are a convenient way to package and deploy schema objects and data. The easiest way for a developer to create a DACPAC is to use a **SQL database project** in Visual Studio.
-
-# [Web](#tab/web)
-
-When you set up a build pipeline for your Visual Studio project, use the **.NET desktop** template. This templates automatically adds the tasks to build the project and publish artifacts including the DACPAC.
-
-When you set up a release pipeline, choose **Start with an Empty process**, link the artifacts from build, and then add [SQL Database](../tasks/deploy/azure-sql-database-deployment.md) task.
-
-# [YAML](#tab/yaml)
+# Azure SQL database deployment
 
 ::: moniker range="vsts"
 
-Here is an example of building a deploying a Visual Studio database project.
-
-```yaml
-queue:
-  name: Hosted VS2017
-
-variables:
-  Solution: '<vs solution name>'
-  BuildPlatform: 'any cpu'
-  BuildConfiguration: 'release'
-  AzureSubscription: '<Name of Azure service endpoint>'
-  ServerName: '<Database server name>'
-  DatabaseName: '<Database name>'
-  AdminUser: '<SQL user name>'
-  AdminPassword: '<SQL user password>'
-  DacpacFile: '<Location of Dacpac file in $(Build.SourcesDirectory) after compilation>'
-
-steps:
-- task: NuGetToolInstaller@0
-  displayName: Use NuGet 4.4.1
-  inputs:
-    versionSpec: 4.4.1
-
-- task: NuGetCommand@2
-  displayName: NuGet restore
-  inputs:
-    restoreSolution: '$(Parameters.solution)'
-
-- task: VSBuild@1
-  displayName: Build solution **\*.sln
-  inputs:
-    solution: '$(Parameters.solution)'
-    platform: '$(BuildPlatform)'
-    configuration: '$(BuildConfiguration)'
-
-- task: SqlAzureDacpacDeployment@1
-  displayName: Execute Azure SQL : DacpacTask
-  inputs:
-    azureSubscription: '$(AzureSubscription)'
-    ServerName: '$(ServerName)'
-    DatabaseName: '$(DatabaseName)'
-    SqlUsername: '$(AdminUser)'
-    SqlPassword: '$(AdminPassword)'
-    DacpacFile: '$(DacpacFile)'
-```
+VSTS can automatically deploy your database updates to Azure SQL database after every successful build.
 
 ::: moniker-end
 
 ::: moniker range="< vsts"
-YAML is not yet supported in TFS.
+
+TFS can automatically deploy your database updates to Azure SQL database after every successful build.
+
 ::: moniker-end
 
+## DACPAC
+
+The simplest way to deploy a database is to create [data-tier package or DACPAC](https://docs.microsoft.com/sql/relational-databases/data-tier-applications/data-tier-applications). DACPACs can be used to package and deploy both schema changes as well as data. You can create a DACPAC using the **SQL database project** in Visual Studio.
+
+# [Web](#tab/web)
+
+When setting up a build pipeline for your Visual Studio database project, use the **.NET desktop** template. This templates automatically adds the tasks to build the project and publish artifacts including the DACPAC.
+
+When setting up a release pipeline, choose **Start with an Empty process**, link the artifacts from build, and then add [Azure SQL Database Deployment](../tasks/deploy/azure-sql-database-deployment.md) task.
+
+# [YAML](#tab/yaml)
+
+::: moniker range="< vsts"
+
+YAML is not supported in TFS.
+
+::: moniker-end
+
+::: moniker range="vsts"
+
+To deploy a DACPAC to an Azure SQL database, add the following snippet to your .vsts-ci.yml file.
+
+```yaml
+- task: SqlAzureDacpacDeployment@1
+  displayName: Execute Azure SQL : DacpacTask
+  inputs:
+    azureSubscription: '<Azure service endpoint>'
+    ServerName: '<Database server name>'
+    DatabaseName: '<Database name>'
+    SqlUsername: '<SQL user name>'
+    SqlPassword: '<SQL user password>'
+    DacpacFile: '<Location of Dacpac file in $(Build.SourcesDirectory) after compilation>'
+```
+
+::: moniker-end
 ---
 
 ## SQL scripts
@@ -131,54 +77,54 @@ Instead of using a DACPAC, you can also use SQL scripts to deploy your database.
 
 In order to run SQL scripts as part of VSTS pipeline, you will need Azure Powershell scripts to create and remove firewall rules in Azure. Without the firewall rules, the VSTS agent cannot communicate with Azure SQL Database.
 
-* Check the following PowerShell script into the same location that has your SQL script as `SetAzureFirewallRule.ps1`.
+The following Powershell script creates firewall rules. You can check-in this script as `SetAzureFirewallRule.ps1` into your repository.
 
-  ```powershell
-  [CmdletBinding(DefaultParameterSetName = 'None')]
-  param
-  (
-    [String] [Parameter(Mandatory = $true)] $ServerName,
-  	[String] $AzureFirewallName = "AzureWebAppFirewall"
-  )
+```powershell
+[CmdletBinding(DefaultParameterSetName = 'None')]
+param
+(
+  [String] [Parameter(Mandatory = $true)] $ServerName,
+  [String] $AzureFirewallName = "AzureWebAppFirewall"
+)
 
-  $ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 
-  function New-AzureSQLServerFirewallRule {
-    $agentIP = (New-Object net.webclient).downloadstring("http://checkip.dyndns.com") -replace "[^\d\.]"
-    New-AzureSqlDatabaseServerFirewallRule -StartIPAddress $agentIp -EndIPAddress $agentIp -RuleName $AzureFirewallName -ServerName $ServerName
-  }
-  function Update-AzureSQLServerFirewallRule{
-    $agentIP= (New-Object net.webclient).downloadstring("http://checkip.dyndns.com") -replace "[^\d\.]"
-    Set-AzureSqlDatabaseServerFirewallRule -StartIPAddress $agentIp -EndIPAddress $agentIp -RuleName $AzureFirewallName -ServerName $ServerName
-  }
+function New-AzureSQLServerFirewallRule {
+  $agentIP = (New-Object net.webclient).downloadstring("http://checkip.dyndns.com") -replace "[^\d\.]"
+  New-AzureSqlDatabaseServerFirewallRule -StartIPAddress $agentIp -EndIPAddress $agentIp -RuleName $AzureFirewallName -ServerName $ServerName
+}
+function Update-AzureSQLServerFirewallRule{
+  $agentIP= (New-Object net.webclient).downloadstring("http://checkip.dyndns.com") -replace "[^\d\.]"
+  Set-AzureSqlDatabaseServerFirewallRule -StartIPAddress $agentIp -EndIPAddress $agentIp -RuleName $AzureFirewallName -ServerName $ServerName
+}
 
-  If ((Get-AzureSqlDatabaseServerFirewallRule -ServerName $ServerName -RuleName $AzureFirewallName -ErrorAction SilentlyContinue) -eq $null)
-  {
-    New-AzureSQLServerFirewallRule
-  }
-  else
-  {
-    Update-AzureSQLServerFirewallRule
-  }
-  ```
+If ((Get-AzureSqlDatabaseServerFirewallRule -ServerName $ServerName -RuleName $AzureFirewallName -ErrorAction SilentlyContinue) -eq $null)
+{
+  New-AzureSQLServerFirewallRule
+}
+else
+{
+  Update-AzureSQLServerFirewallRule
+}
+```
 
-* Check the following PowerShell script into the same location that has your SQL script as `RemoveAzureFirewallRule.ps1`.
+The following Powershell script removes firewall rules. You can check-in this script as `RemoveAzureFirewall.ps1` into your repository.
 
-  ```powershell
-  [CmdletBinding(DefaultParameterSetName = 'None')]
-  param
-  (
-    [String] [Parameter(Mandatory = $true)] $ServerName,
-  	[String] $AzureFirewallName = "AzureWebAppFirewall"
-  )
+```powershell
+[CmdletBinding(DefaultParameterSetName = 'None')]
+param
+(
+  [String] [Parameter(Mandatory = $true)] $ServerName,
+  [String] $AzureFirewallName = "AzureWebAppFirewall"
+)
 
-  $ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 
-  If ((Get-AzureSqlDatabaseServerFirewallRule -ServerName $ServerName -RuleName $AzureFirewallName -ErrorAction SilentlyContinue))
-  {
-    Remove-AzureSqlDatabaseServerFirewallRule -RuleName $AzureFirewallName -ServerName $ServerName
-  }
-  ```
+If ((Get-AzureSqlDatabaseServerFirewallRule -ServerName $ServerName -RuleName $AzureFirewallName -ErrorAction SilentlyContinue))
+{
+  Remove-AzureSqlDatabaseServerFirewallRule -RuleName $AzureFirewallName -ServerName $ServerName
+}
+```
 
 # [Web](#tab/web)
 
@@ -192,16 +138,19 @@ When you set up a release pipeline, choose **Start with an Empty process**, link
 
 # [YAML](#tab/yaml)
 
+::: moniker range="< vsts"
+
+YAML is not supported in TFS.
+
+::: moniker-end
+
 ::: moniker range="vsts"
 
-Here is an example of running a SQL script.
+Add the following to your .vsts-ci.yml file to run a SQL script.
 
 ```yaml
-queue:
-  name: Hosted VS2017
-
 variables:
-  AzureSubscription: '<Name of Azure service endpoint>'
+  AzureSubscription: '<Azure service endpoint>'
   ServerName: '<Database server name>'
   DatabaseName: '<Database name>'
   AdminUser: '<SQL user name>'
@@ -231,11 +180,51 @@ steps:
     ScriptArguments: '$(ServerName)'
     azurePowerShellVersion: LatestVersion
 ```
-
 ::: moniker-end
+---
+
+## Azure service endpoint
+
+The **Azure SQL Database Deployment** task is the primary mechanism to deploy a database to Azure. This task, similar to other built-in Azure tasks, requires an Azure service endpoint as an input. The Azure service endpoint stores the credentials to connect from VSTS to Azure. For more information about creating an Azure service endpoint in VSTS, see the topic _Create an Azure service endpoint_.
+
+## Deploying conditionally
+
+# [Web](#tab/web)
+
+You may choose to deploy only certain builds to the Azure SQL database. Release pipelines support various checks and conditions to control the deployment.
+
+* Set _Branch filters_ when configuring the continuous deployment trigger on the artifact of the release pipeline.
+* Set _Pre-deployment approvals_ as a pre-condition for deployment to an environment.
+* Configure _Gates_ as a pre-condition for deployment to an environment.
+* Set [conditions](../concepts/process/conditions.md) on the task.
+
+# [YAML](#tab/yaml)
 
 ::: moniker range="< vsts"
-YAML is not yet supported in TFS.
+
+YAML is not supported in TFS.
+
 ::: moniker-end
 
+::: moniker range="vsts"
+
+You may choose to deploy only certain builds to the Azure database. To do this, you can use one of these techniques:
+
+* Isolate the deployment steps into a separate phase, and add a [condition](../concepts/process/conditions.md) to that phase.
+* Add a condition to the step.
+
+ The following example shows how to use step conditions to deploy only those builds that originate from master branch.
+
+```yaml
+- task: SqlAzureDacpacDeployment@1
+  condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
+  inputs:
+    azureSubscription: '<Azure service endpoint>'
+    ServerName: '<Database server name>'
+    DatabaseName: '<Database name>'
+    SqlUsername: '<SQL user name>'
+    SqlPassword: '<SQL user password>'
+    DacpacFile: '<Location of Dacpac file in $(Build.SourcesDirectory) after compilation>'
+```
+::: moniker-end
 ---

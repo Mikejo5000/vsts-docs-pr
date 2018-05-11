@@ -4960,7 +4960,17 @@
         "source_path": "docs/billing/extensions.md",
         "redirect_url": "/vsts/marketplace/overview",
         "redirect_document_id": false
-       }
+       },
+       {
+        "source_path": "vsts/build-release/apps/cd/deploy-webdeploy-webapps.md",
+        "redirect_url": "/vsts/build-release/release/getting-started-vsts-build",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "vsts/build-release/apps/cd/howto-webdeploy-webapps.md",
+        "redirect_url": "/vsts/build-release/targets/azure-webapp",
+        "redirect_document_id": false
+       }       
     ]
 }
 

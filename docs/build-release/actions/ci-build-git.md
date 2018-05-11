@@ -36,7 +36,7 @@ In this tutorial, you learn how to:
 ## Prerequisites
 * Git repository in VSTS or TFS
 * A working build definition for a Git repository in VSTS
-	* If needed, complete one of the following:  [Build and deploy to an Azure Web App](../../build-release/apps/cd/azure/aspnet-core-to-azure-webapp.md), [Build your Java app with Maven](../../build-release/apps/java/build-maven.md), or [Build your Node.js with Gulp](../../build-release/apps/nodejs/build-gulp.md).
+	* If needed, the following:  [Build with YAML](../../build-release/build/with-yaml.md), [Build without YAML](../../build-release/build/with-web.md).
 
 ## Set up a CI trigger for a topic branch
 
@@ -131,4 +131,4 @@ You learned how to:
 > * Use retention policies to clean up your completed build
 
 > [!div class="nextstepaction"]
-> [Deploy to Azure web app](../apps/cd/deploy-webdeploy-webapps.md)
+> [Deploy VSTS build](../release/getting-started-vsts-build.md)

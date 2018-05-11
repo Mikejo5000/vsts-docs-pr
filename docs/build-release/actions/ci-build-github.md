@@ -135,4 +135,4 @@ You learned how to:
 > * Create a pull request trigger for GitHub
 
 > [!div class="nextstepaction"]
-> [Deploy to Azure Web App](../../build-release/apps/cd/deploy-webdeploy-webapps.md)
+> [Deploy VSTS build](../../build-release/release/getting-started-vsts-build.md)
