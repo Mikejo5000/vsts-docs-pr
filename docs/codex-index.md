@@ -333,24 +333,6 @@ featureFlags:
                                         </div>
                                     </div>
                             </li>
-                            <li>
-                                <a href="/vsts/codex-pipelines">            
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="_img/index/codex-pipelines-50.png" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Azure Codex Pipelines Onboarding Guide</h3>
-                                                    <p>Sign up and start building and releasing apps.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                            </li>
                            <li>
                                 <a href="/vsts/codex-agile">            
                                     <div class="cardSize">
@@ -364,6 +346,24 @@ featureFlags:
                                                 <div class="cardText">
                                                     <h3>Azure Codex Agile Onboarding Guide</h3>
                                                     <p>Sign up and start using Agile tools to plan and track work.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </li>
+                            <li>
+                                <a href="/vsts/codex-pipelines">            
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/codex-pipelines-50.png" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Azure Codex Pipelines Onboarding Guide</h3>
+                                                    <p>Sign up and start building and releasing apps.</p>
                                                 </div>
                                             </div>
                                         </div>
