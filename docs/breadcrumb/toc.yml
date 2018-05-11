@@ -1,6 +1,6 @@
 - name: Azure Codex
   tocHref: /vsts/
-  topicHref: /vsts/index#pivot=services
+  topicHref: /vsts/index#pivot=apps
   items:
   - name: New User Guide
     tocHref: /vsts/user-guide/
@@ -13,7 +13,7 @@
     topicHref: /vsts/public/index
   - name: Azure Codex Repos
     tocHref: /vsts/git/
-    topicHref: /vsts/index#pivot=services&panel=code
+    topicHref: /vsts/index#pivot=apps&panel=code
     items:
     - name: Git
       tocHref: /vsts/git/
@@ -23,7 +23,7 @@
       topicHref: /vsts/tfvc/index
   - name: Azure Codex Pipelines
     tocHref: /vsts/build-release/
-    topicHref: /vsts/index#pivot=services&panel=delivery
+    topicHref: /vsts/index#pivot=apps&panel=delivery
     items:
     - name: Deploy to Azure
       tocHref: /vsts/deploy-azure/
@@ -39,7 +39,7 @@
       topicHref: /vsts/build-release/test/index
   - name: Azure Codex Test
     tocHref: /vsts/manual-test/
-    topicHref: /vsts/index#pivot=services&panel=testing
+    topicHref: /vsts/index#pivot=apps&panel=testing
     items:
     - name: Exploratory & Manual Testing
       tocHref: /vsts/manual-test/
@@ -52,7 +52,7 @@
       topicHref: https://docs.microsoft.com/visualstudio/test/unit-test-your-code
   - name: Azure Codex Agile
     tocHref: /vsts/work/
-    topicHref: /vsts/index#pivot=services&panel=agile
+    topicHref: /vsts/index#pivot=apps&panel=agile
     items:
     - name: Boards
       tocHref: /vsts/work/kanban/
@@ -77,7 +77,7 @@
     topicHref: /vsts/java/index   
   - name: Dashboards
     tocHref: /vsts/
-    topicHref: /vsts/index#pivot=services&panel=reporting
+    topicHref: /vsts/index#pivot=apps&panel=reporting
     items:
     - name: Dashboards
       tocHref: /vsts/report/dashboards
@@ -90,7 +90,7 @@
       topicHref: /vsts/report/powerbi/index
   - name: Collaboration
     tocHref: /vsts/
-    topicHref: /vsts/index#pivot=services&panel=collaboration
+    topicHref: /vsts/index#pivot=apps&panel=collaboration
     items:
     - name: Public Projects
       tocHref: /vsts/public/
@@ -109,7 +109,7 @@
       topicHref: /vsts/feedback/index
   - name: Admin
     tocHref: /vsts/
-    topicHref: /vsts/index#pivot=services&panel=admin
+    topicHref: /vsts/index#pivot=apps&panel=admin
     items:
     - name: Account Management
       tocHref: /vsts/accounts/
@@ -131,7 +131,7 @@
       topicHref: /vsts/articles/index
   - name: Extend
     tocHref: /vsts/
-    topicHref: /vsts/index#pivot=services&panel=integration
+    topicHref: /vsts/index#pivot=apps&panel=integration
     items:
     - name: Build extensions
       tocHref: /vsts/extend/
@@ -147,7 +147,7 @@
       topicHref: /vsts/report/extend-analytics/index
   - name: Marketplace
     tocHref: /vsts/extend/
-    topicHref: /vsts/index#pivot=services&panel=integration
+    topicHref: /vsts/index#pivot=apps&panel=integration
     items:
     - name: Discover Extensions
       tocHref: /vsts/marketplace/

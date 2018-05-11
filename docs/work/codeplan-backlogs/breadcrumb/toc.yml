@@ -4,7 +4,7 @@
   items: 
   - name: Azure Codex Agile
     tocHref: /vsts/work/
-    topicHref: /vsts/codex-index#pivot=services&panel=codeplan
+    topicHref: /vsts/codex-index#pivot=apps&panel=codeplan
     items:
     - name: Azure Codex Agile Backlogs
       tocHref: /vsts/work/

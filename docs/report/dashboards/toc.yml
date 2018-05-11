@@ -69,9 +69,9 @@
 - name: Resources
   items:
   - name: Agile
-    href: /vsts/#pivot=services&panel=agile
+    href: /vsts/#pivot=apps&panel=agile
   - name: Testing
-    href: /vsts/#pivot=services&panel=testing 
+    href: /vsts/#pivot=apps&panel=testing 
   - name: Marketplace widgets
     href: https://marketplace.visualstudio.com/search?term=widget&target=VSTS&category=All%20categories&sortBy=Relevance
   - name: VSTS/TFS Reporting Roadmap

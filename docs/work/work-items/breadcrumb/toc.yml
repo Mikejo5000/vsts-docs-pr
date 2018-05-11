@@ -4,7 +4,7 @@
   items: 
   - name: Azure Codex Agile
     tocHref: /vsts/work/
-    topicHref: /vsts/index#pivot=services&panel=agile
+    topicHref: /vsts/index#pivot=apps&panel=agile
     items:
     - name: Work Items
       tocHref: /vsts/work/

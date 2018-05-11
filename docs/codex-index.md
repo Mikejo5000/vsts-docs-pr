@@ -210,7 +210,7 @@ featureFlags:
                                             <div class="cardText">
                                                 <h3>Command-line tool</h3>
                                                 <ul class="noBullet">
-                                                    <li><a class="barLink" href="https://docs.microsoft.com/en-us/cli/vsts/overview"><img src="_img/index/command-line-window.svg" alt="" />VSTS CLI</a></li>
+                                                    <li><a class="barLink" href="https://docs.microsoft.com/en-us/cli/vsts/overview"><img src="_img/index/command-line-window.svg" alt="" />Azure Codex CLI</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -222,8 +222,8 @@ featureFlags:
                 </ul>
             </li>
             <li>
-                <a href="#services">Services</a>
-                <ul id="services">
+                <a href="#apps">Applications</a>
+                <ul id="apps">
                     <li>
                         <a data-default="true" href="#all">All</a>
                         <ul id="all" class="cardText">
@@ -364,6 +364,42 @@ featureFlags:
                                                 <div class="cardText">
                                                     <h3>Azure Codex Pipelines Onboarding Guide</h3>
                                                     <p>Sign up and start building and releasing apps.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </li>
+                            <li>
+                                <a href="/vsts/codex-test">            
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/codex-test-50.png" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Azure Codex Test Onboarding Guide</h3>
+                                                    <p>Sign up and start testing your apps.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </li>
+                            <li>
+                                <a href="/vsts/codex-artifacts">            
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/codex-feed-50.png" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Azure Codex Artifacts Onboarding Guide</h3>
+                                                    <p>Sign up and start using artifacts.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -1403,6 +1439,127 @@ featureFlags:
                     </li>
                 </ul>
             </li>
+           <li>
+                <a href="#azure-devops">Azure Devops Resources</a>
+                <ul id="azure-devops">
+This center combines our resources on learning DevOps practices, Git version control, Agile methods, how we work with DevOps at Microsoft, and how you can assess your own DevOps progression. Alternatively, you can jump to documentation on [getting started with DevOps on Azure](/vsts/build-release/), or to dive in, [start your own Azure DevOps project](https://portal.azure.com/#create/Microsoft.AzureProject). If you’re interested in practices, read on. 
+<ul class="panelContent cardsC" style="display: flex;">
+    <li>
+        <a href="https://docs.microsoft.com/en-us/azure/devops/what-is-devops">
+            <div class="cardSize">
+                <div class="cardPadding">
+                    <div class="card">
+                        <div class="cardImageOuter">
+                            <div class="cardImage bgdAccent1">
+                                <img class="x-hidden-focus" alt="" src="https://docs.microsoft.com/en-us/azure/devops/_img/Learn-DevOps.svg" data-linktype="external">
+                            </div>
+                        </div>
+                        <div class="cardText">
+                            <h3>Learn DevOps</h3>
+                            <p>DevOps is the union of people, process, and products to enable continuous delivery of value to our end users.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="https://docs.microsoft.com/en-us/azure/devops/git/what-is-git">
+            <div class="cardSize">
+                <div class="cardPadding">
+                    <div class="card">
+                        <div class="cardImageOuter">
+                            <div class="cardImage bgdAccent1">
+                                <img class="x-hidden-focus" alt="" src="https://docs.microsoft.com/en-us/azure/devops/_img/Learn-Git.svg" data-linktype="external">
+                            </div>
+                        </div>
+                        <div class="cardText">
+                            <h3>Learn Git</h3>
+                            <p>Git is a distributed version control system to track changes you make in your code over time.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="https://docs.microsoft.com/en-us/azure/devops/agile/what-is-agile">
+            <div class="cardSize">
+                <div class="cardPadding">
+                    <div class="card">
+                        <div class="cardImageOuter">
+                            <div class="cardImage bgdAccent1">
+                                <img class="x-hidden-focus" alt="" src="https://docs.microsoft.com/en-us/azure/devops/_img/Learn-Agile.svg" data-linktype="external">
+                            </div>
+                        </div>
+                        <div class="cardText">
+                            <h3>Learn Agile</h3>
+                            <p>Agile approaches to software development emphasize incremental delivery, team collaboration, continual planning, and continual learning.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="https://docs.microsoft.com/en-us/azure/devops/devops-at-microsoft/index">
+            <div class="cardSize">
+                <div class="cardPadding">
+                    <div class="card">
+                        <div class="cardImageOuter">
+                            <div class="cardImage bgdAccent1">
+                                <img class="x-hidden-focus" alt="" src="https://docs.microsoft.com/en-us/azure/devops/_img/DevOps-at-Microsoft.svg" data-linktype="external">
+                            </div>
+                        </div>
+                        <div class="cardText">
+                            <h3>DevOps at Microsoft</h3>
+                            <p>This center will keep you current on how we adopt DevOps at Microsoft. We’ve selected the best videos and articles from both public conferences and internal training sessions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="https://www.youtube.com/channel/UC-ikyViYMM69joIAv7dlMsA">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage bgdAccent1">
+                            <img class="x-hidden-focus" alt="" src="https://docs.microsoft.com/en-us/azure/devops/_img/DevOps-Talks.svg" data-linktype="external">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>DevOps Events and Talks</h3>
+                        <p>Take a look at some of our recent conference talks on youtube at the channel DevOps at Microsoft.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="https://devopsassessment.net">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage bgdAccent1">
+                            <img class="x-hidden-focus" alt="" src="https://docs.microsoft.com/en-us/azure/devops/_img/devops-self-assessment.svg" data-linktype="external">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>DevOps Self-Assessment</h3>
+                        <p>Get tailored recommendations on how to improve your organization’s ability to develop and deliver value to customers, pivot when necessary, and beat competitors to market. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+</ul>
+</li>
         </ul>
     </div>
 </div>

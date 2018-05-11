@@ -1,7 +1,7 @@
 ---
 title: Default permissions and access quick reference
-titleSuffix: VSTS & TFS 
-description: At-a-glance view of permissions and access levels for common user tasks for Visual Studio Team Services and Team Foundation Server 
+titleSuffix: Azure Codex & TFS
+description: At-a-glance view of permissions and access levels for common user tasks for Azure Codex applications & Team Foundation Server 
 ms.prod: devops
 ms.technology: devops-security
 ms.assetid: B656A277-BA3D-472D-824D-CDD4E067053E
@@ -14,11 +14,11 @@ ms.date: 02/12/2018
 monikerRange: '>= tfs-2013'
 ---
 
-# Default permissions and access for VSTS and TFS 
+# Default permissions and access  
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-To connect and use the functions and features that VSTS and TFS provides, users must be added to a group with the appropriate permissions. The most common built-in groups include Readers, Contributors, and Project Administrators. These groups are assigned the default permissions as listed below. 
+To connect and use the functions and features that Azure Codex and Team Foundation Server (TFS) provides, users must be added to a group with the appropriate permissions. The most common built-in groups include Readers, Contributors, and Project Administrators. These groups are assigned the default permissions as listed below. 
 
 In addition to permissions, access to select features are controlled by the access level assigned to a user. Contributors and administrators should be added to Basic (paid) access. Stakeholder access is available to support free access to a limited set of features by an unlimited set of stakeholders. 
 
@@ -29,7 +29,7 @@ For a complete reference of all built-in groups and permissions, see [Permission
 
 You can connect to your code from the Code hub or the web portal, and using Xcode, Eclipse, IntelliJ, Android Studio, Visual Studio, Visual Studio Code. For an overview of code features and functions, see [Git](../git/overview.md) and [Use Team Foundation Version Control (TFVC)](../tfvc/overview.md). Stakeholders have no access to the Code hub or its features.
 
-From the team project admin content for Version Control, you can [set permissions on a repository](set-git-tfvc-repository-permissions.md). From the **Code>Branches** page, you can [set permissions for a specific branch and set branch policies](../git/branch-permissions.md). 
+From the project admin content for Version Control, you can [set permissions on a repository](set-git-tfvc-repository-permissions.md). From the **Code>Branches** page, you can [set permissions for a specific branch and set branch policies](../git/branch-permissions.md). 
 
 ### Git
 [!INCLUDE [temp](_shared/code-git.md)]
@@ -57,7 +57,7 @@ Feeds have three levels of access: Owners, Contributors, and Readers. Owners can
 
 You can define and manage manual tests from the web portal, **Test** hub. For an overview of manual test features and functions, see [Testing overview](../manual-test/index.md).  
 
-You set [test permissions at the team project level](set-project-collection-level-permissions.md) from the admin context Security page.  
+You set [test permissions at the project level](set-project-collection-level-permissions.md) from the admin context **Security** page.  
 
 [!INCLUDE [temp](_shared/test.md)]
 
@@ -86,7 +86,7 @@ You set [dashboard permissions at the team level](../report/dashboard-permission
 
 [!INCLUDE [temp](_shared/report.md)]
 
-## Notifications, alerts, and team collaboration tools 
+## Notifications, alerts, and collaboration tools 
 
 To manage notifications, see [Manage personal notifications](../notifications/manage-personal-notifications.md) and [Manage team notifications](../collaborate/manage-team-notifications.md).
 
@@ -97,189 +97,12 @@ To manage notifications, see [Manage personal notifications](../notifications/ma
 
  
 
+## Related articles
 
-
-
-## Related notes
-
-- [Add users to a team project](../security/add-users-team-project.md)  
+- [Add users to a project](../security/add-users-team-project.md)  
 - [Permissions and groups reference](permissions.md)  
 - [Manage users and access](../accounts/add-account-users-assign-access-levels.md) (VSTS) 
 - [About access levels](access-levels.md)
 - [Work in the web portal](../user-guide/work-web-portal.md) 
 
  
-<!---
-
-## Git repository  
-
-<table>
-<tbody valign="top">
-
-<tr>
-<th>Task</th>
-<th>Readers</th>
-<th>Contributors</th>
-<th>Project Admins</th>
-<th>Build Admins</th>
-<th>Account Owner/Collection Admins</th>
-</tr>
-
-<tr>
-<td>**Administer**: Rename and delete a repository. At top-level Git repository, can add repositories. At the branch level, can lock, unlock, and set permissions for the branch.</td>
-<td>  </td>
-<td>  </td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>   </td>
-<td>![checkmark](_img/checkmark.png)</td>
-</tr>
-
-
-
-<tr>
-<td>**Branch creation**: Create and publish branches in a repo. Users are automatically granted Administer, Contribute, and Force permissions for any branch they create.  </td>
-<td> </td>
-<td>![check mark](_img/checkmark.png)</td>
-<td>![check mark](_img/checkmark.png)</td>
-<td> </td>
-<td>![check mark](_img/checkmark.png)</td>
-</tr>
-
-<tr>
-<td>**Contribute**: Repo level: can push their changes to branches in the repository. Branch level: can push their changes to the branch and lock the branch.</td>
-<td> </td>
-<td> </td>
-<td>![check mark](_img/checkmark.png)</td>
-<td> </td>
-<td>![check mark](_img/checkmark.png)</td>
-</tr>
-
-<tr>
-<td>**Note management**: Can push and edit Git notes to a repository. Can remove notes from items if they have the Force permission.</td>
-<td> </td>
-<td>![check mark](_img/checkmark.png)</td>
-<td>![check mark](_img/checkmark.png)</td>
-<td> </td>
-<td>![check mark](_img/checkmark.png)</td>
-</tr>
-
-<tr>
-<td>**Read**: Can clone, fetch, pull, and explore the contents of a repository.</td>
-<td>![check mark](_img/checkmark.png)</td>
-<td>![check mark](_img/checkmark.png)</td>
-<td>![check mark](_img/checkmark.png)</td>
-<td>![check mark](_img/checkmark.png)</td>
-<td>![check mark](_img/checkmark.png)</td>
-</tr>
-
-<tr>
-<td>**Rewrite and destroy history (force push)**: Can force an update to a branch, delete a branch, and modify the commit history of a branch. A force update can overwrite commits added from any user.   </td>
-<td> </td>
-<td> </td>
-<td> </td>
-<td> </td>
-<td> </td>
-</tr>
-
-<tr>
-<td>**Tag creation**: Can push tags to a repository. Can edit or remove tags if they have the Force permission.</td>
-<td> </td>
-<td>![check mark](_img/checkmark.png)</td>
-<td>![check mark](_img/checkmark.png)</td>
-<td> </td>
-<td>![check mark](_img/checkmark.png)</td>
-
-</tr>
-
-
-</tbody>
-</table>
-
-##Work tracking    
-
-
-
-<table>
-<tbody valign="top">
-
-<tr>
-<th>Task</th>
-<th>Readers</th>
-<th>Contributors</th>
-<th>Project Admins</th>
-<th>Build Admins</th>
-<th>Account Owner/Collection Admins</th>
-</tr>
-
-<tr>
-<td>**Create tag definition**: Can add tags through a work item form.</td>
-<td>  </td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>   </td>
-<td>![checkmark](_img/checkmark.png)</td>
-</tr>
-
-
-
-<tr>
-<td>**Delete work items in this project**: Can mark work items in this project as deleted. </td>
-<td> </td>
-<td>  </td>
-<td>![check mark](_img/checkmark.png)</td>
-<td>![check mark](_img/checkmark.png)</td>
-<td>![check mark](_img/checkmark.png)</td>
-</tr>
-
-<tr>
-<td>**Edit work items under a node**: Can edit work items under a specific area node.</td>
-<td> </td>
-<td>![check mark](_img/checkmark.png)</td>
-<td>![check mark](_img/checkmark.png)</td>
-<td> </td>
-<td>![check mark](_img/checkmark.png)</td>
-</tr>
-
-<tr>
-<td>**Create and modify areas and iterations**: Define the area and iteration paths available for all teams within a project.</td>
-<td> </td>
-<td> </td>
-<td>![check mark](_img/checkmark.png)</td>
-<td> </td>
-<td>![check mark](_img/checkmark.png)</td>
-</tr>
-
-<tr>
-<td>**Move work items out of this project**: Can move a work item from one team project to another team project within the collection.</td>
-<td> </td>
-<td>![check mark](_img/checkmark.png)</td>
-<td>![check mark](_img/checkmark.png)</td>
-<td> </td>
-<td>![check mark](_img/checkmark.png)</td>
-</tr>
-
-<tr>
-<td>**Permanently delete work items in this project**: Can permanently delete work items and test artifacts from the team project.</td>
-<td>![check mark](_img/checkmark.png)</td>
-<td>![check mark](_img/checkmark.png)</td>
-<td>![check mark](_img/checkmark.png)</td>
-<td>![check mark](_img/checkmark.png)</td>
-<td>![check mark](_img/checkmark.png)</td>
-</tr>
-
-
-<tr>
-<td>**View work items in this node**: Can view, but not change, work items in this area node.</td>
-<td> </td>
-<td>![check mark](_img/checkmark.png)</td>
-<td>![check mark](_img/checkmark.png)</td>
-<td> </td>
-<td>![check mark](_img/checkmark.png)</td>
-</tr>
-
-
-
-</tbody>
-</table>
-
--->

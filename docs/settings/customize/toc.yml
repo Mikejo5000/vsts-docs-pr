@@ -45,7 +45,7 @@
   - name: Security & Identity
     href: ../../security/index.md
   - name: Azure Codex Agile
-    href: /vsts/index#pivot=services&panel=agile
+    href: /vsts/index#pivot=apps&panel=agile
   - name: "Manage Extensions (Marketplace)"
     href: ../../marketplace/index.md
 
