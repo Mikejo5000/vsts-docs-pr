@@ -53,5 +53,5 @@ For additional restrictions and conformance requirements of the Hosted XML proce
 ## Related articles
 
 - [Customize a process when using Hosted XML](import-process/customize-process.md)
-- [Create an Inheritance process](process/manage-process.md)
+- [Create an Inheritance process](../../settings/work/manage-process.md)
 - [Customize your work tracking experience](customize-work.md)

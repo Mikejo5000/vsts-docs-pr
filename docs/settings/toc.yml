@@ -1,96 +1,213 @@
-- name: "Project & Account Settings" 
+- name: Settings
   href: index.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json 
 - name: Overview
   items:
-  - name: About project & account settings
+  - name: About settings
     href: about-settings.md
   - name: When and why to add a team or team project
     href: ../work/scale/scale-teams.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json 
 - name: Quickstarts
   items:
-  - name: Define area paths
-    href: ../work/customize/set-area-paths.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json 
-  - name: Define iteration paths or sprints
-    href: ../work/customize/set-iteration-paths-sprints.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json 
-  - name: "Add a team & team members"
+  - name: Set area paths
+    href: set-area-paths.md
+  - name: Set iteration paths or sprints
+    href: set-iteration-paths-sprints.md
+  - name: Add a team & team members
     href: ../work/scale/multiple-teams.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
   - name: Add a team administrator
     href: ../work/scale/add-team-administrator.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+  - name: Add a custom field
+    href: ./work/add-custom-field.md
+  - name: Add a custom work item type
+    href: ./work/add-custom-wit.md
+  - name: View permissions 
+    href: ../security/view-permissions.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+  - name: Look up the account owner or a project administrator
+    href: ../security/lookup-account-owner-admin.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+  - name: Add users to a project or team 
+    href: ../security/add-users-team-project.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
 - name: Tutorials
   items:
   - name: Add and manage users
-    href: ../accounts/add-account-users-from-user-hub.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json 
-  - name: Customize a process
-    href: ../work/customize/process/customize-process.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
-  - name: Create a team project
+    href: ../accounts/add-account-users-from-user-hub.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+  - name: Change individual permissions 
+    href: ../security/change-individual-permissions.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+  - name: Grant or restrict permissions to select tasks
+    href: ../security/restrict-access.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+  - name: Manage personal notifications
+    href: ../notifications/manage-personal-notifications.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json 
+  - name: Customize a project
+    href: ./work/customize-process.md
+  - name: Create and manage a process
+    href: ./work/manage-process.md
+  - name: Add a project
     href: ../accounts/create-team-project.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
 - name: Concepts
   items:
   - name: About areas and iterations
-    href: ../work/customize/about-areas-iterations.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+    href: about-areas-iterations.md
   - name: "About teams & Agile tools"
     href: about-teams-and-settings.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
   - name: About notifications
     href: ../notifications/about-notifications.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
   - name: About process customization
-    href: ../work/customize/inheritance-process-model.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
-  - name: Build and release
-    items:
-    - name: Agent pools and queues
-    - name: Hosted agents
-    - name: Service endpoints
-    - name: Retention policies
+    href: ./work/inheritance-process-model.md
 - name: How-to Guides
-  items:
-  - name: Set team defaults
-    href: ../work/scale/set-team-defaults.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json    
-  - name: Configure team settings
-    href: ../work/scale/manage-team-assets.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json  
-  - name: Switch team context
-    href: switch-team-context.md
-  - name: Manage team projects
-    href: ../accounts/rename-team-project.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
-  - name: Change account settings
-    href: ../accounts/change-account-ownership-vs.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
-  - name: Set test retention policies
-    href: ../manual-test/getting-started/how-long-to-keep-test-results.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
-  - name: Process configuration
+  items:    
+  - name: Manage individual preferences
     items:
-    - name: Manage processes
-      href: ../work/customize/process/manage-process.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json 
-    - name: Add a custom field
-      href: ../work/customize/process/customize-process-field.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
-    - name: Customize a web form
-      href: ../work/customize/process/customize-process-form.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
-    - name: Customize a workflow
-      href: ../work/customize/process/customize-process-workflow.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
-    - name: Customize a work item type
-      href: ../work/customize/process/customize-process-wit.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
-    - name: Add a custom rule
-      href: ../work/customize/process/custom-rules.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
-    - name: Add a custom control
-      href: ../work/customize/process/custom-controls-process.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
-    - name: Customize backlogs and boards
-      href: ../work/customize/process/customize-process-backlogs-boards.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
-  - name: Manage notifications
-    href: ../collaborate/manage-team-notifications.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+    - name: Change account preferences
+      href: ../accounts/account-preferences.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json 
+    - name: Enable preview features
+      href: ../collaborate/preview-features.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+    - name: Set personal or team favorites
+      href: ../collaborate/set-favorites.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+    - name: Add an alternate account to your Visual Studio subscription
+      href: https://docs.microsoft.com/en-us/visualstudio/subscriptions/vs-alternate-identity?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+    - name: Authentication
+      items:
+      - name: Authenticate access with personal access tokens
+        href: ../accounts/use-personal-access-tokens-to-authenticate.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+      - name: Authorize access to REST APIs with OAuth 2.0
+        href: ../integrate/get-started/authentication/oauth.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+      - name: Use SSH key authentication
+        href: ../git/use-ssh-keys-to-authenticate.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+  - name: Security
+    items:
+    - name: Add administrators, set permissions
+      href: ../security/set-project-collection-level-permissions.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+    - name: Set Git or TFVC repository permissions
+      href: ../security/set-git-tfvc-repository-permissions.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+    - name: Set build and release permissions
+      href: ../build-release/set-permissions.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+    - name: Set work tracking permissions
+      href: ../security/set-permissions-access-work-tracking.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+  - name: Teams
+    items:
+    - name: Configure team settings
+      href: ../work/scale/manage-team-assets.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+      items:
+    - name: Set team defaults
+      href: ../work/scale/set-team-defaults.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+    - name: Use work item templates
+      href: ../work/backlogs/work-item-template.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+    - name: Customize cards on boards
+      href: ../work/customize/customize-cards.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+    - name: Reorder cards
+      href: ../work/customize/reorder-cards.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+    - name: Select backlog levels
+      href: ../work/customize/select-backlog-navigation-levels.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+    - name: Show bugs on backlogs & boards
+      href: ../work/customize/show-bugs-on-backlog.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+    - name: Set working days
+      href: ../work/customize/set-working-days.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+    - name: Switch team context
+      href: switch-team-context.md
+  - name: Notifications
+    items:
+    - name: View your subscriptions, opt-out as needed
+      href: ../notifications/unsubscribe-default-notification.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+    - name: Change your email address
+      href: ../notifications/change-email-address.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+    - name: Manage team notifications
+      href: ../collaborate/manage-team-notifications.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+  - name: Service hooks
+    href: ../service-hooks/index.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
   - name: Set dashboard permissions
     href: ../report/dashboards/dashboard-permissions.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+  - name: Extensions
+    items:
+    - name: Install extension 
+      href: ../marketplace/install-vsts-extension.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+    - name: Assign paid extensions access
+      href: ../marketplace/assign-paid-extensions.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+    - name: Approve requests for extensions
+      href: ../marketplace/approve-vsts-extensions.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+    - name: Uninstall or disable extensions
+      href: ../marketplace/uninstall-disable-vsts-extensions.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+  - name: Process configuration
+    items:
+    - name: Add and manage fields
+      href: ./work/customize-process-field.md
+    - name: Add and manage work item types
+      href: ./work/customize-process-wit.md
+    - name: Customize a web form
+      href: ./work/customize-process-form.md
+    - name: Customize a workflow
+      href: ./work/customize-process-workflow.md
+    - name: Add a custom rule
+      href: ./work/custom-rules.md
+    - name: Add a custom control
+      href: ./work/custom-controls-process.md
+    - name: Customize backlogs & boards
+      href: ./work/customize-process-backlogs-boards.md
+  - name: "CI/CD" 
+    items:
+    - name: Agent pools & queues
+      href: ../build-release/concepts/agents/pools-queues.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+    - name: Service endpoints
+      href: ../build-release/concepts/library/service-endpoints.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+    - name: Retention & limits
+      href: ../build-release/concepts/policies/retention.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+    - name: Deployment pools & groups
+      href: ../build-release/concepts/definitions/release/deployment-groups/index.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+  - name: Code 
+    items:
+    - name: Create & manage Git repositories
+      href: ../git/create-new-repo.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+    - name: Manage Git branch policies
+      href: ../git/branch-policies.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+    - name: Manage repository permissions
+      href: ../security/set-git-tfvc-repository-permissions.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+    - name: Add TFVC Check-In Policies
+      href: ../tfvc/add-check-policies.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+  - name: Test 
+    items:
+    - name: Set test retention policies 
+      href: ../manual-test/getting-started/how-long-to-keep-test-results.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+    - name: Test retention 
+      href: ../manual-test/getting-started/how-long-to-keep-test-results.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+  - name: Manage your account
+    items:
+    - name: Change account owner
+      href: ../accounts/change-account-ownership-vs.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+    - name: Rename account
+      href: ../accounts/rename-vsts-account.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+    - name: Delete account
+      href: ../accounts/delete-your-vsts-account.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+    - name: Recover account
+      href: ../accounts/recover-your-vsts-account.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+    - name: Change account location (region)
+      href: ../accounts/change-account-location.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
 - name: Reference
   items:
-  - name: Team administrator role and permissions
-    href: ../work/scale/team-administrator-permissions.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
   - name: "Default permissions & access"
     href: ../security/permissions-access.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+  - name: Team administrator role and permissions
+    href: ../work/scale/team-administrator-permissions.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+  - name: Work tracking object limits
+    href: ./work/object-limits.md
+  - name: REST APIs
+    href: https://docs.microsoft.com/en-us/rest/api/vsts
+    items:
+    - name: Area and Iteration Paths
+      href: https://docs.microsoft.com/en-us/rest/api/vsts/wit/classification%20nodes
+    - name: Processes
+      href: https://docs.microsoft.com/en-us/rest/api/vsts/processes/processes
+    - name: Work Item Types
+      href: https://docs.microsoft.com/en-us/rest/api/vsts/processdefinitions/work%20item%20types
+    - name: Add a custom control to a form
+      href: ../extend/develop/custom-control.md
 - name: Resources
   items:
-  - name: Navigation Basics
-    href: ../navigation/index.md
   - name: Account Management
     href: ../accounts/index.md
+  - name: Billing
+    href: ../billing/index.md
   - name: Security & Identity
     href: ../security/index.md
+  - name: READMEs & Wikis
+    href: ../collaborate/index.md
   - name: "Manage Extensions (Marketplace)"
     href: ../marketplace/index.md
-  - name: Service hooks
-    href: ../service-hooks/index.md
+

@@ -44,7 +44,7 @@ In the card shown below, the following customizations have been set for the bug 
 ::: moniker range="vsts"
 
 > [!NOTE]  
-> You can customize a work item type which is different then customizing the card displayed on the Kanban board or taskboard. You customize a WIT by adding fields, changing the workflow, adding custom rules and more. You can also add custom work item types and custom backlog levels. For details, see [Customize an inheritance process](inheritance-process-model.md). 
+> You can customize a work item type which is different then customizing the card displayed on the Kanban board or taskboard. You customize a WIT by adding fields, changing the workflow, adding custom rules and more. You can also add custom work item types and custom backlog levels. For details, see [Customize an inheritance process](../../settings/work/inheritance-process-model.md). 
 
 ::: moniker-end
 

@@ -1,49 +1,57 @@
 ---
-title: Project & Account Settings
-titleSuffix: VSTS & TFS
-description: Configure account and project settings
-ms.technology: vs-devops-agile-wit
-ms.prod: vs-devops-alm
+title: Azure Codex Settings
+titleSuffix: Azure Codex
+description: Configure settings for teams, projects, and account-level objects
+ms.technology: devops-settings
+ms.prod: devops
+ms.topic: overview
 ms.assetid: 
 ms.manager: douge
 ms.author: kaelli
-ms.date: 04/01/2018
+author: KathrynEE
+monikerRange: 'vsts'
+ms.date: 07/10/2018
 ---
 
-# Project & Account Settings 
+# Settings 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
 
-Manage permissions, add teams, and configure project and collection level resources. 
+Define area and iteration paths, add teams, and configure additional team, project, and organizational-level resources. 
 
 ## 5-Minute Quickstarts    
-- [Define area paths](../work/customize/set-area-paths.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json )
-- [Define iteration paths or sprints](../work/customize/set-iteration-paths-sprints.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json ) 
+- [Set area paths](set-area-paths.md)
+- [Set iteration paths or sprints](set-iteration-paths-sprints.md) 
 - [Add a team & team members](../work/scale/multiple-teams.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)  
 - [Add a team administrator](../work/scale/add-team-administrator.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json) 
 
 
 ## Tutorials
 
-- [Add and manage users](../accounts/add-account-users-from-user-hub.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)  
-- [Customize a process](../work/customize/process/customize-process.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json) 
+- [Add & manage users](../accounts/add-account-users-from-user-hub.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)  
+- [Change individual permissions](../security/change-individual-permissions.md) 
+- [Grant or restrict permissions to select tasks](../security/restrict-access.md) 
+- [Manage personal notifications](../notifications/manage-personal-notifications.md) 
+- [Customize a project](./work/customize-process.md) 
 
 
 ## Concepts 
 
-- [About areas and iterations](../work/customize/about-areas-iterations.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)  
-- [About process customization](../work/customize/inheritance-process-model.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)        
-- [Team administrator role and permissions](../work/scale/team-administrator-permissions.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)
+- [About areas & iterations](about-areas-iterations.md) 
+- [About teams & Agile tools](about-teams-and-settings.md) 
+- [About notifications](../notifications/about-notifications.md)   
+- [About process customization](./work/inheritance-process-model.md)        
+
 
 ## How-to Guides
 - [Set team defaults](../work/scale/set-team-defaults.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)    
-- [Configure team settings](../work/scale/manage-team-assets.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json) 
-- [Manage processes](../work/customize/process/manage-process.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)   
+- [Configure team settings](../work/scale/manage-team-assets.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)   
 - [Switch team context](switch-team-context.md)
 
 
 ## Reference
-- [Default permissions and access](../security/permissions-access.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)    
+- [Default permissions and access](../security/permissions-access.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)  
+- [Team administrator role & permissions](../work/scale/team-administrator-permissions.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)  
 
 
 ## Resources 

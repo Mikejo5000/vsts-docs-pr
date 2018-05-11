@@ -1,13 +1,15 @@
 ---
 title: About teams & Agile tools
-titleSuffix: VSTS & TFS 
-description: Guide to adding and configuring teams in Visual Studio Team Services & Team Foundation Server
+titleSuffix: Azure Codex Agile & TFS
+description: Guide to adding and configuring teams in Azure Codex Agile & Team Foundation Server
 ms.technology: devops-settings
 ms.prod: devops
 ms.assetid: 24C97BED-88F4-4D91-98D1-4AC0B39AB7D7
 ms.manager: douge
 ms.author: kaelli
-ms.topic: overview
+author: KathrynEE
+ms.topic: conceptual
+monikerRange: '>= tfs-2013'
 ms.date: 02/14/2018 
 ---
 
@@ -160,7 +162,7 @@ Also, these topics can walk you through the steps for configuring teams, area pa
 <a id="team-group"> </a>
 ## Team groups 
 
-When you add a team, a security group is automatically created with the team name. You can use this group to filter queries. The name of team groups follows the pattern **[Team Project Name]\Team Name**. For example, the following query finds work assigned to members of the **[Fabrikam Fiber]\Email** team group.
+When you add a team, a security group is automatically created with the team name. You can use this group to filter queries. The name of team groups follows the pattern **[Project Name]\Team Name**. For example, the following query finds work assigned to members of the **[Fabrikam Fiber]\Email** team group.
 
 <img src="../work/scale/_img/query-in-group-email-team-work-in-progress.png" alt="Web portal, Queries page, Query that uses In Group operator and team group name" style="border: 2px solid #C3C3C3;" /> 
 
@@ -172,7 +174,7 @@ You can also use the **@mention** control within discussions and pull requests t
 
 Can a user account belong to more than one team?  
 
-Yes. When you add user accounts to a team project, you can add them as members of the team project, or you can add them to one or more teams added to the team project. If you work on two or more Scrum teams, you'll want to make sure you, [specify your sprint capacity for each team you work on](../work/scale/capacity-planning.md). 
+Yes. When you add user accounts to a project, you can add them as members of the project, or you can add them to one or more teams added to the project. If you work on two or more Scrum teams, you'll want to make sure you, [specify your sprint capacity for each team you work on](../work/scale/capacity-planning.md). 
 
 
 ## Summary 
@@ -184,7 +186,7 @@ Yes. When you add user accounts to a team project, you can add them as members o
 - To have work performed by several teams roll up in to a portfolio backlog, you'll want to [setup the team hierarchy](../work/scale/portfolio-management.md) 
 - To add fields or work item types, see [Customize your work tracking experience](../work/customize/customize-work.md).
 
-## Related notes 
+## Related articles 
 
 - [Add another team](../work/scale/multiple-teams.md)  
 - [Set team defaults](../work/scale/set-team-defaults.md)  

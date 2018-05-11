@@ -4,7 +4,6 @@ titleSuffix: VSTS & TFS
 description: Use the Kanban board to plan and track work in Visual Studio Team Services and Team Foundation Server 
 ms.global_help.title: View or add a Kanban board
 ms.global_help.keywords: ms.vss-work-web.boards-hub, 1  
-ms.topic: get-started-article
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 4942A638-9888-461E-969D-0BB9B1FE1736
@@ -32,7 +31,7 @@ Each Kanban board is associated with a team and a work item type. For the Agile 
 When you add a team, you add a number of team assets which a team admin can  configure to support the way the team works. To add a set of Kanban boards to support a new team, [add a team](../scale/multiple-teams.md). 
 
 ::: moniker range="vsts" 
-To add a board to support an additional portfolio backlog, see [Customize your backlogs or boards](../customize/process/customize-process-backlogs-boards.md).
+To add a board to support an additional portfolio backlog, see [Customize your backlogs or boards](../../settings/work/customize-process-backlogs-boards.md).
 ::: moniker-end 
 ::: moniker range=">= tfs-2013 <= tfs-2018"   
 To add a board to support an additional portfolio backlog, see [Add a portfolio backlog level](../customize/add-portfolio-backlogs.md).
