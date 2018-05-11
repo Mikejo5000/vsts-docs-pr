@@ -15,7 +15,7 @@ featureFlags:
 
 <div id="main" class="v2">
     <div class="container">
-        <h1>Azure CodeX Documentation</h1>
+        <h1>Azure Codex Documentation</h1>
         <ul class="pivots">
             <li>
                 <a href="#start">Get Started</a>
@@ -387,6 +387,8 @@ featureFlags:
                                         </div>
                                     </div>
                             </li>
+                        </ul>
+                    </li>
                     <li>
                         <a href="#code">Azure Codex Repos</a>
                         <ul id="code" class="cardsA">
