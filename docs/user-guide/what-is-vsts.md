@@ -1,4 +1,5 @@
 ---
+title: Plan, code, collaborate, and ship your applications faster with Azure Codex 
 title: Overview of the product Azure Codex
 titleSuffix: Azure Codex
 description: Understand the fundamental services provided by Azure Codex, like Agile, Repos, Pipelines, Test, and Artifacts  
