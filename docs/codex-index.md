@@ -26,7 +26,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/CodexIconRepos96.svg" alt="" />
+                                                        <img src="_img/index/CodexIconRepos40.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -43,7 +43,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/CodexIconPlan96.svg" alt="" />
+                                                        <img src="_img/index/CodexIconPlan40.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -60,7 +60,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/CodexIconPipelines96.svg" alt="" />
+                                                        <img src="_img/index/CodexIconPipelines40.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -136,9 +136,9 @@ featureFlags:
                                             <div class="cardText">
                                                 <h3>Plan &amp; track your work</h3>
                                                 <ul class="noBullet">
-                                                    <li><a class="barLink" href="/vsts/work/scrum/index">Backlogs</a></li>
                                                     <li><a class="barLink" href="/vsts/work/kanban/index">Boards &amp; Kanban</a></li>
-                                                    <li><a class="barLink" href="/vsts/work/scrum/index">Scrum</a></li>
+                                                    <li><a class="barLink" href="/vsts/work/backlogs/index">Backlogs</a></li>
+                                                    <li><a class="barLink" href="/vsts/work/scrum/index">Sprints (Scrum)</a></li>
                                                     <li><a class="barLink" href="/vsts/report/dashboards/index">Dashboards</a></li>
                                                 </ul>
                                             </div>
@@ -261,26 +261,27 @@ featureFlags:
                                     <h3>Azure Codex Agile</h3>
                                     <ul>
                                       <li><a class="barLink" href="/vsts/work/work-items/index">Work Items</a></li>
+                                        <li><a class="barLink" href="/vsts/work/kanban/index">Boards (Kanban)</a></li>
                                         <li><a class="barLink" href="/vsts/work/backlogs/index">Backlogs</a></li>
-                                        <li><a class="barLink" href="/vsts/work/kanban/index">Kanban</a></li>
-                                        <li><a class="barLink" href="/vsts/work/scrum/index">Scrum</a></li>
+                                        <li><a class="barLink" href="/vsts/work/scrum/index">Sprints (Scrum)</a></li>
                                         <li><a class="barLink" href="/vsts/work/track/index">Queries</a></li>
                                         <li><a class="barLink" href="/vsts/settings/customize/index">Customization</a></li>
                                         <li><a class="barLink" href="/vsts/work/scale/index">Agile at Scale</a></li>
                                     </ul>
-                                    <h3>Dashboards</h3>
+                                    <h3>Overview (Collaboration)</h3>
                                     <ul>
                                         <li><a class="barLink" href="/vsts/report/dashboards/index">Dashboards</a></li>
-                                        <li><a class="barLink" href="/vsts/report/analytics/index">Analytics</a></li>
-                                        <li><a class="barLink" href="/vsts/report/powerbi/index">Power BI</a></li>
-                                    </ul>
-                                    <h3>Collaboration</h3>
-                                    <ul>
-                                        <li><a class="barLink" href="/vsts/public/index">Public Projects</a></li>
-                                        <li><a class="barLink" href="/vsts/notifications/index">Notifications</a></li>
                                         <li><a class="barLink" href="/vsts/collaborate/index">READMEs &amp; Wikis</a></li>
+                                        <li><a class="barLink" href="/vsts/public/index">Public Projects</a></li>
+                                        <li><a class="barLink" href="/vsts/navigation/index">Navigation</a></li>
+                                        <li><a class="barLink" href="/vsts/notifications/index">Notifications</a></li>
                                         <li><a class="barLink" href="/vsts/search/index">Search</a></li>
                                         <li><a class="barLink" href="/vsts/feedback/index">Feedback</a></li>
+                                    </ul>
+                                    <h3>Analytics</h3>
+                                    <ul>
+                                        <li><a class="barLink" href="/vsts/report/analytics/index">Analytics</a></li>
+                                        <li><a class="barLink" href="/vsts/report/powerbi/index">Power BI</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -288,10 +289,10 @@ featureFlags:
                                 <div class="group">
                                     <h3>Settings</h3>
                                     <ul>
-                                        <li><a class="barLink" href="/vsts/accounts/index">Account Management</a></li>
+                                        <li><a class="barLink" href="/vsts/settings/index">Project &amp; Organization Settings</a></li>
                                         <li><a class="barLink" href="/vsts/settings/about-teams-and-settings">Scale &amp;  Configure Teams</a></li>
-                                        <li><a class="barLink" href="/vsts/settings/index">Settings</a></li>
                                         <li><a class="barLink" href="/vsts/security/index">Security &amp; Identity</a></li>
+                                        <li><a class="barLink" href="/vsts/accounts/index">Account Management</a></li>
                                         <li><a class="barLink" href="/vsts/billing/index">Billing</a></li>
                                         <li><a class="barLink" href="/vsts/marketplace/index">Manage Extensions</a></li>
                                     </ul>
@@ -322,7 +323,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/CodexIconRepos96.svg" alt="" />
+                                                        <img src="_img/index/CodexIconRepos40.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -340,7 +341,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/CodexIconPlans96.svg" alt="" />
+                                                        <img src="_img/index/CodexIconPlan40.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -358,7 +359,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/CodexIconPipelines96.svg" alt="" />
+                                                        <img src="_img/index/CodexIconPipelines40.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -376,7 +377,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/CodexIconTest96.svg" alt="" />
+                                                        <img src="_img/index/CodexIconTest40.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -394,7 +395,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/CodexIconArtifacts96.svg" alt="" />
+                                                        <img src="_img/index/CodexIconArtifacts40.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -416,8 +417,8 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Azure Codex User Guide</h3>
-                                                    <p>Onboard and acquire all Azure Codex applications. </p>
+                                                    <h3>Azure Codex Enterprise Onboarding Guide</h3>
+                                                    <p>Plan and track work, collaborate on code, and continuously deploy your apps by acquiring all Azure Codex applications. </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -454,7 +455,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/CodexIconWiki96.svg" alt="" />
+                                                        <img src="_img/index/CodexIconWiki40.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -492,12 +493,12 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/media/common/i_feedback.svg" alt="" />
+                                                        <img src="_img/index/navigation.png" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Navigation</h3>
-                                                    <p>Switch apps, team projects, teams, and manage settings.</p>
+                                                    <p>Choose an app, team, project or setting. Add work items, dashboards, and other artifacts.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -589,6 +590,25 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
+                                <a href="/vsts/work/kanban/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/i_kanban.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Boards (Kanban)</h3>
+                                                    <p>Manage the continuous flow of work from concept to completion.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
                                 <a href="/vsts/work/backlogs/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
@@ -609,25 +629,6 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/work/kanban/index">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="_img/index/i_kanban.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Boards</h3>
-                                                    <p>Manage the continuous flow of work from concept to completion.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
                                 <a href="/vsts/work/scrum/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
@@ -638,7 +639,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Scrum</h3>
+                                                    <h3>Sprints (Scrum)</h3>
                                                     <p>Plan a sprint, use a task board in daily scrums, monitor sprint burndown.</p>
                                                 </div>
                                             </div>
@@ -1021,7 +1022,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/CodexIconArtifacts96.svg" alt="" />
+                                                        <img src="_img/index/CodexIconArtifacts40.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
