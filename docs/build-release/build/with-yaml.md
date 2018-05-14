@@ -1,6 +1,6 @@
 ---
-title: CI build defined using YAML
-description: Define a continuous integration (CI) build process for your Node.js app with Gulp in VSTS
+title: Build a repo with YAML file
+description: Set up CI for a repo containing a YAML file
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: quickstart
@@ -12,10 +12,9 @@ ms.date: 5/10/2018
 monikerRange: 'vsts'
 ---
 
-# Use YAML to create a CI pipeline
+# Build a repo with YAML file
 
-Visual Studio Team Services (VSTS) provides a highly customizable continuous integration (CI) process to automatically build your app whenever your team pushes or checks in code. 
-In this quickstart you learn how to define a CI process using YAML for a JavaScript app, in this case an Node.js Gulp app.
+If you manage your code in GitHub or in Visual Studio Team Services (VSTS) Git, then you can easily set up continuous integration (CI) by adding a YAML file to your repository. The CI process will be automated using VSTS pipelines. VSTS pipelines can be used for any application written in any programming language.
 
 ## Prerequisites
 
@@ -23,16 +22,19 @@ In this quickstart you learn how to define a CI process using YAML for a JavaScr
 
 ## Get the sample code
 
-The sample app we use here is a Node server that echoes "Hello world". Tests for the app are written using mocha framework. 
-A gulp file is used to run the tests and to convert the results into junit format so that they can be published to VSTS.
+Choose the sample application for the language of your choice from one of the following repositories.
 
-[!INCLUDE [include](../apps/_shared/get-sample-code-intro.md)]
+| Programming language | Repository with sample application |
+|----------------------|----------------------------|
+| C# | `https://github.com/adventworks/dotnetcore-sample` |
+| Go | `https://github.com/adventworks/go-sample` |
+| Java | `https://github.com/adventworks/java-sample` |
+| JavaScript | `https://github.com/adventworks/nodejs-sample` |
+| PHP | `https://github.com/adventworks/php-sample` |
+| Python | `https://github.com/adventworks/python-sample` |
+| Swift | `https://github.com/adventworks/xcode-sample` |
 
-```
-https://github.com/adventworks/nodejs-sample
-```
-
-Where do you want to keep your code? Whichever service you choose, our system can automatically clone and pull code from it every time you push a change.
+Get the code for the sample application into your own GitHub or VSTS repository.
 
 # [VSTS Git repo](#tab/gitvsts)
 
@@ -44,66 +46,36 @@ Where do you want to keep your code? Whichever service you choose, our system ca
 
 ---
 
-[!INCLUDE [include](../apps/_shared/get-sample-code-other-repos-vsts.md)]
-
-## Create the CI pipeline
-
-[!INCLUDE [include](../_shared/ci-quickstart-intro.md)]
-
-Begin by creating your build definition.
+## Get your first build
 
 # [VSTS Git repo](#tab/gitvsts)
 
-To create a definition that is configured as code, you'll modify a YAML file in the repo root that has a well-known name: **.vsts-ci.yml**. The first time you change this file, VSTS automatically uses it to create your build definition.
+1. In VSTS, navigate to the **Code** hub, choose the **Files** tab, and then choose the repository you created in the above steps.
 
-1. Navigate to the **Code** hub, choose the **Files** tab, and then choose the repository you created in the above steps.
+1. Inspect the `.vsts-ci.yml` file at the root of your imported repository. The YAML file contains the instructions for the build process. Here is a snippet from the file. The contents in your file may be different depending on the sample application you chose.
 
-1. Choose the **.vsts-ci.yml** file, and then choose **Edit**.
+  ```yaml
+  queue: 'Hosted VS2017'
+  steps:
+  
+  - task: Gradle@2
+    inputs:
+      gradleWrapperFile: 'gradlew'
+      testResultsFiles: '**/TEST-*.xml'
+      tasks: 'build'
+  ```
+    
+  The next time you change any file in this repository, VSTS automatically builds your code.
 
-1. Replace the contents of the file with code below.
+1. Go back to the list of files and select the **Readme.md** file, and then choose **Edit**.
 
-# [GitHub repo](#tab/github)
+1. Add the following comment to the Readme markdown.
 
-To create a definition that is configured as code, you'll modify a YAML file in the repo root that has a well-known name: **.vsts-ci.yml**. You'll then create a build definition that points to the YAML file.
-
-In GitHub:
-
-1. Edit the **.vsts-ci.yml** file in the root of your repo, and replace the contents of the file with code below.
-
----
-
-```yaml
-steps:
-
-- task: Npm@1
-  displayName: npm install
-
-- task: Gulp@0
-  inputs:
-    publishJUnitResults: "true"
-  displayName: Gulp
-
-- task: ArchiveFiles@1
-  inputs:
-    rootFolder: "$(System.DefaultWorkingDirectory)"
-    includeRootFolder: "false"
-  displayName: Zip up the files
-
-- task: PublishBuildArtifacts@1
-  inputs:
-    PathtoPublish: $(Build.ArtifactStagingDirectory)
-    ArtifactName: "drop"
-    ArtifactType: "Container"
-  displayName: Publish the artifacts
-```
-
-Commit the above change to the master branch.
-
-## Finish the CI process definition
-
-You're nearly ready to go. Just a few more steps to complete your CI build process.
-
-# [VSTS or TFS repo](#tab/gitvsts)
+  ```
+  # This repository is built using VSTS.
+  ```
+  
+1. Commit the above change to the master branch.
 
 1. Navigate to the **Build and Release** hub.
 
@@ -115,21 +87,48 @@ You're nearly ready to go. Just a few more steps to complete your CI build proce
 
 In VSTS:
 
-1. Navigate to the **Builds** tab of the **Build and Release** hub, and then choose **+ New**. You're asked to **Select a template** for the new build definition.
+1. Navigate to the **Builds** tab of the **Build and Release** hub, and then choose **+ New Build Pipeline**.
 
-1. Select **YAML**, and then select **Apply**.
+1. You're asked to **Select a repository** for the new build pipeline. Select **GitHub**, and then select your version control repository. You'll need to authorize access to your repo.
 
-1. Select **Get sources**, select **GitHub**, and then select your version control repository. You'll need to authorize access to your repo.
+1. You are then asked to select a template for the pipeline. Select **YAML**, and then select **Apply**.
 
 1. Select **Process**.
 
-1. For the **Agent queue** select _Hosted Linux_. This is how you can use our pool of agents that have the software you need to build your app.
+1. For the **Agent queue** select _Hosted Linux_. This is how you can use our pool of agents that have the software you need to build your application.
 
 1. For the **Yaml path**, select the **.vsts-ci.yml** file in the root of your repo.
 
-1. Select the **Triggers** tab, and then enable continuous integration (CI).
+In GitHub:
 
-1. Save and queue the build, and then choose the number of the build: _{year}{month}{day}.1_ that has been queued.
+1. Inspect the `.vsts-ci.yml` file at the root of your forked repository. The YAML file contains the instructions for the build process. Here is a snippet from the file. The contents in your file may be different depending on the sample application you chose.
+
+  ```yaml
+  queue: 'Hosted VS2017'
+  steps:
+  
+  - task: Gradle@2
+    inputs:
+      gradleWrapperFile: 'gradlew'
+      testResultsFiles: '**/TEST-*.xml'
+      tasks: 'build'
+  ```
+
+  The next time you change any file in this repository, VSTS automatically builds your code.
+
+1. Go back to the list of files and select the **Readme.md** file, and then choose **Edit**.
+
+1. Add the following comment to the Readme markdown.
+
+  ```
+  # This repository is built using VSTS.
+  ```
+  
+1. Commit the above change to the master branch.
+
+Back in VSTS:
+
+1. Observe that a new build build is queued; its status could be either not started or running. Choose the number of the build: _{year}{month}{day}.1_.
 
 1. In the left column of the running build, select **Job**. After an agent is assigned to your job and the agent is initialized, then you'll see information about the build in the console.
 
@@ -143,8 +142,19 @@ In VSTS:
 
 ## Next steps
 
-You've just learned the basics to create and run a CI build pipeline in YAML.
+You've just learned the basics to create and run a build pipeline using YAML in VSTS.
 This pipeline automatically builds and validates whatever code is checked in by your team. 
-Now you're ready to learn how to configure your pipeline for the programming language you're using.
+Now you're ready to dive deep into configuring your pipeline for the programming language you're using.
 
-[//]: # (TODO: Add links to language topics)
+| Language | Repository with sample application | Customize the pipeline |
+|----------------------|----------------------------|------------------------|
+| C | `https://github.com/adventworks/cpp-gpp-sample` | Doc link |
+| C++ | `https://github.com/adventworks/cpp-sample` | Doc link |
+| C# | `https://github.com/adventworks/dotnetcore-sample` | Doc link |
+| Go | `https://github.com/adventworks/go-sample` | Doc link |
+| Java | `https://github.com/adventworks/java-sample` | Doc link |
+| JavaScript | `https://github.com/adventworks/nodejs-sample` | Doc link |
+| PHP | `https://github.com/adventworks/php-sample` | Doc link |
+| Python | `https://github.com/adventworks/python-sample` | Doc link |
+| Ruby | `https://github.com/adventworks/ruby-sample` | Doc link |
+| Swift | `https://github.com/adventworks/xcode-sample` | Doc link |

@@ -1,6 +1,6 @@
 ---
-title: CI build defined using the web
-description: Define a continuous integration (CI) build using the web for a Visual Studio app in VSTS or Microsoft Team Foundation Server (TFS)
+title: Use the web to create a build pipeline
+description: Define a continuous integration (CI) build using the web in VSTS or Microsoft Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: quickstart
@@ -12,7 +12,7 @@ ms.date: 5/10/2018
 monikerRange: '>= tfs-2017'
 ---
 
-# Use the web to create a CI pipeline
+# Use the web to create a build pipeline
 
 ::: moniker range="vsts"
 Visual Studio Team Services (VSTS) provides a highly customizable continuous integration (CI) process to automatically build your app whenever your team pushes or checks in code. 
@@ -70,7 +70,7 @@ Where do you want to keep your code? Whichever service you choose, our system ca
 
 [!INCLUDE [include](../apps/_shared/get-sample-code-other-repos-vsts-tfs.md)]
 
-## Create the CI pipeline
+## Create the build pipeline
 
 [!INCLUDE [include](../_shared/ci-quickstart-intro.md)]
 
@@ -160,8 +160,18 @@ Where do you want to keep your code? Whichever service you choose, our system ca
 
 ## Next steps
 
-You've just learned the basics to create and run a CI build pipeline in your web browser.
+You've just learned the basics to create and run a build pipeline in your web browser.
 This pipeline automatically builds and validates whatever code is checked in by your team. 
-Now you're ready to learn how to configure your pipeline for the programming language you're using.
+Now you're ready to learn how to configure your pipeline for the programming language you're using. Try this quick start for the language of your choice by changing the template.
+
+| Language | Repository with sample application | Template to use | More documentation |
+|----------|------------------------------------|-----------------|--------------------|
+| C++ | `https://github.com/adventworks/cpp-sample` | .NET Desktop | Doc link |
+| C# | `https://github.com/adventworks/dotnetcore-sample` | ASP.NET Core | Doc link |
+| Go | `https://github.com/adventworks/go-sample` | Go | Doc link |
+| Java | `https://github.com/adventworks/java-sample` | Gradle | Doc link |
+| JavaScript | `https://github.com/adventworks/nodejs-sample` | NodeJS with Gulp | Doc link |
+| Swift | `https://github.com/adventworks/xcode-sample` | Xcode | Doc link |
+
 
 [//]: # (TODO: Add links to language topics)

@@ -12,7 +12,7 @@
   items:
     - name: Build with YAML file
       href: build/with-yaml.md
-    - name: Build without YAML file
+    - name: Use web to set up CI
       href: build/with-web.md
     - name: Deploy VSTS build
       href: release/getting-started-vsts-build.md
@@ -28,10 +28,10 @@
     - name: Go
     - name: Java
     - name: JavaScript
-    - name: Objective-C
     - name: PHP
     - name: Python
     - name: Ruby
+    - name: Swift
     - name: Visual Basic
 - name: Deployment Targets
   items:
