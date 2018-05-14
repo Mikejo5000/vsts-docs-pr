@@ -635,6 +635,25 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
+                                <a href="/vsts/work/kanban/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/i_kanban.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Kanban</h3>
+                                                    <p>Manage the continuous flow of work from concept to completion.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
                                 <a href="/vsts/work/backlogs/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
@@ -655,25 +674,6 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/work/kanban/index">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="_img/index/i_kanban.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Kanban</h3>
-                                                    <p>Manage the continuous flow of work from concept to completion.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
                                 <a href="/vsts/work/scrum/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
@@ -684,7 +684,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Scrum</h3>
+                                                    <h3>Sprints (Scrum)</h3>
                                                     <p>Plan a sprint, use a task board in daily scrums, monitor sprint burndown.</p>
                                                 </div>
                                             </div>
@@ -705,6 +705,25 @@ featureFlags:
                                                 <div class="cardText">
                                                     <h3>Queries</h3>
                                                     <p>Find work items to bulk update and to chart progress and trends.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/vsts/work/scale/review-team-plans">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/codex-agile-plans-50.png" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Plans</h3>
+                                                    <p>Review planned deliverables from several teams against a calendar view.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -742,8 +761,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Agile at Scale</h3>
-                                                    <p>Grow your organization, support autonomous teams, and gain visibility
-                                                        across teams.</p>
+                                                    <p>Grow your organization, support autonomous teams, and gain visibility across teams.</p>
                                                 </div>
                                             </div>
                                         </div>

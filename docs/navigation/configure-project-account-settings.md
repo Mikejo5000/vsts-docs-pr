@@ -1,7 +1,7 @@
 ---
 title: Configure project and account settings  
-titleSuffix: Azure CodeX   
-description: Configure an administrative level setting for Azure CodeX, CodeVault, Codex Agile, or Codex Pipelines  
+titleSuffix: Azure Codex   
+description: Configure an administrative level setting for Azure Codex, CodeVault, Codex Agile, or Codex Pipelines  
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid:  
@@ -12,7 +12,7 @@ ms.date: 08/11/2017
 
 # Configure project and account settings
 
-**Azure CodeX**  
+**Azure Codex**  
 
  You use the administrative context to set team, team project, and account or collection settings. The hubs and pages available change based on what level of administrative context you're in. 
 

@@ -1,6 +1,6 @@
 ---
 title: Make your team project a public project 
-titleSuffix: Azure CodeX Public Project 
+titleSuffix: Azure Codex Public Project 
 description: Switch your team project from private to public
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm

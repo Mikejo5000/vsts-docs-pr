@@ -1,6 +1,6 @@
 ---
 title: Clone an existing Git repo
-titleSuffix: Azure CodeX Public Project
+titleSuffix: Azure Codex Public Project
 description: Create a local copy of an existing repo using Visual Studio or command line clone 
 ms.assetid:  
 ms.prod: vs-devops-alm

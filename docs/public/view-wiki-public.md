@@ -1,6 +1,6 @@
 ---
 title: View wiki pages
-titleSuffix: Azure CodeX Public Project
+titleSuffix: Azure Codex Public Project
 description: view pages in the team project wiki 
 ms.technology: collaborate
 ms.prod: vs-devops-alm

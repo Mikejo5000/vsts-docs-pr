@@ -1,6 +1,6 @@
 ---
 title: Browse repos, files, branches, pushes, commits, & pull requests 
-titleSuffix: Azure CodeX Public Project
+titleSuffix: Azure Codex Public Project
 description: Review the code base and current work by browsing repos, files, branches, pushes, commits, & pull requests 
 ms.technology: 
 ms.prod: vs-devops-alm

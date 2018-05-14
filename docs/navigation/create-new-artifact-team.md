@@ -1,7 +1,7 @@
 ---
 title: Create a new artifact or team
-titleSuffix: Azure CodeX 
-description: How to add a new artifact, view, or team within the web portal for Azure CodeX, CodeVault, Codex Agile, or Codex Pipelines  
+titleSuffix: Azure Codex 
+description: How to add a new artifact, view, or team within the web portal for Azure Codex, CodeVault, Codex Agile, or Codex Pipelines  
 ms.technology: vs-devops-overview 
 ms.prod: vs-devops-alm
 ms.assetid:  
@@ -12,7 +12,7 @@ ms.date: 02-24-2018
 
 # Add a new artifact or team
 
-**Azure CodeX**  
+**Azure Codex**  
 
 Select the application or hub to get started adding new artifacts. When you add a team, you automatially create several Codex Agile artifacts, such as a product backlog, Kanban board, portfolio backlogs and more. 
 

@@ -1,6 +1,6 @@
 ---
 title: Recommendations when making a project public 
-titleSuffix: Azure CodeX Public Project 
+titleSuffix: Azure Codex Public Project 
 description: Best practices when changing a private project to a public project 
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm

@@ -1,7 +1,7 @@
 ---
 title: Switch team project or repository 
-titleSuffix: Azure CodeX 
-description: Open another team project or repository for Azure CodeX, CodeVault, Codex Agile, or Codex Pipelines  
+titleSuffix: Azure Codex 
+description: Open another team project or repository for Azure Codex, CodeVault, Codex Agile, or Codex Pipelines  
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid:  
@@ -13,7 +13,7 @@ ms.date: 02-24-2018
 
 # Switch team project or repository
 
-**Azure CodeX**  
+**Azure Codex**  
 
 <a id="switch-team-context">  </a>
 

@@ -1,6 +1,6 @@
 ---
 title: Download code 
-titleSuffix: Azure CodeX Public Project
+titleSuffix: Azure Codex Public Project
 description: Download code from a public project
 ms.technology: 
 ms.prod: vs-devops-alm

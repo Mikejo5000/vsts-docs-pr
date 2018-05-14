@@ -1,7 +1,7 @@
 ---
 title: Key concepts
-titleSuffix: Azure CodeX 
-description: Understand the key concepts that support the Azure CodeX applications
+titleSuffix: Azure Codex 
+description: Understand the key concepts that support the Azure Codex applications
 ms.technology: vs-devops-overview 
 ms.prod: vs-devops-alm
 ms.assetid:  
@@ -12,7 +12,7 @@ ms.date: 08/04/2017
 
 # Key concepts & terms  
 
-**CodeX** 
+**Azure Codex** 
 
 ## Notification
 ## Process

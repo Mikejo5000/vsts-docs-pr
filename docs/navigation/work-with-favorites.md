@@ -1,7 +1,7 @@
 ---
 title: Work with favorites 
-titleSuffix: Azure CodeX 
-description: Use favorites to quickly open a view or page within the web portal for Azure CodeX, CodeVault, Codex Agile, or Codex Pipelines  
+titleSuffix: Azure Codex 
+description: Use favorites to quickly open a view or page within the web portal for Azure Codex, CodeVault, Codex Agile, or Codex Pipelines  
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 
@@ -12,7 +12,7 @@ ms.date: 02-24-2018
 
 # Work with Favorites  
 
-**Azure CodeX**  
+**Azure Codex**  
 
 By favoriting an artifact or view, you can quickly access it. You favorite an item by clicking the ![favorites](../_img/icons/icon-favorite-star.png) star icon. The favorited item will then show up easily from one or more directory lists.  
 
@@ -21,7 +21,7 @@ You can favorite the following artifacts:
 > [!div class="mx-tdCol2BreakAll"]  
 > | Application | Artifacts  |   
 > |---------------|---------| 
-> | CodeX | Team projects |
+> | Codex | Team projects |
 > | CodeVault |Repositories | 
 > | Codex Agile | Queries, Delivery plans |
 > | Codex Pipelines |Build definitions, Release definitions | 

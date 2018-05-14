@@ -1,6 +1,6 @@
 ---
-title: Azure CodeX Documentation 
-description: Share code, track work, continuous build & deploy using Azure CodeX cloud service apps 
+title: Azure Codex Documentation 
+description: Share code, track work, continuous build & deploy using Azure Codex cloud service apps 
 layout: HubPage
 hide_bc: true 
 ms.prod: vs-devops-alm 
@@ -26,7 +26,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/codex-repos.png" alt="" />
+                                                        <img src="_img/index/CodexIconRepos96.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -43,7 +43,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/codex-agile.png" alt="" />
+                                                        <img src="_img/index/CodexIconPlan96.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -60,7 +60,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/codex-pipelines.png" alt="" />
+                                                        <img src="_img/index/CodexIconPipelines96.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -78,7 +78,7 @@ featureFlags:
                         <ul id="start-all" class="cardsL">
                             <li class="fullSpan">
                                 <div class="intro">
-                                    <h1>Get Started with Azure CodeX</h1>
+                                    <h1>Get Started with Azure Codex</h1>
                                     <p>Explore our most popular services with quickstarts, samples, and tutorials.</p>
                                 </div> 
                             </li>
@@ -322,7 +322,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/codex-repos-50.png" alt="" />
+                                                        <img src="_img/index/CodexIconRepos96.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -340,7 +340,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/codex-agile-50.png" alt="" />
+                                                        <img src="_img/index/CodexIconPlans96.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -358,7 +358,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/codex-pipelines-50.png" alt="" />
+                                                        <img src="_img/index/CodexIconPipelines96.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -376,7 +376,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/codex-test-50.png" alt="" />
+                                                        <img src="_img/index/CodexIconTest96.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -394,12 +394,12 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/codex-feed-50.png" alt="" />
+                                                        <img src="_img/index/CodexIconArtifacts96.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Azure Codex Artifacts Onboarding Guide</h3>
-                                                    <p>Sign up and start using artifacts.</p>
+                                                    <p>Sign up and start using artifacts to support continuous integration and deployment of your apps.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -422,6 +422,287 @@ featureFlags:
                                             </div>
                                         </div>
                                     </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#reporting">Overview</a>
+                        <ul id="reporting" class="cardsA">
+                            <li>
+                                <a href="/vsts/report/dashboards/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/i_dashboard.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Dashboards</h3>
+                                                    <p>Monitor progress and trends to support improvement of team processes.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/vsts/collaborate/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/CodexIconWiki96.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>READMEs &amp; Wikis</h3>
+                                                    <p>Share information with your team and stakeholders.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/vsts/public/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com/media/common/i_reference.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Public Projects</h3>
+                                                    <p>Open your projects for wider collaboration.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/vsts/navigation/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com/media/common/i_feedback.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Navigation</h3>
+                                                    <p>Switch apps, team projects, teams, and manage settings.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/vsts/notifications/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com/media/common/i_alert.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Notifications</h3>
+                                                    <p>Define which events generate alerts or post messages in third party tools.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/vsts/search/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/i_search.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Search</h3>
+                                                    <p>Quickly find the code or work items you need to access across your account
+                                                        or collection.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/vsts/feedback/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com/media/common/i_feedback.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Feedback</h3>
+                                                    <p>Request feedback on your working apps and quickly capture it within a
+                                                        work item form.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#codex-agile">Azure Codex Agile</a>
+                        <ul id="codex-agile" class="cardsA">
+                            <li>
+                                <a href="/vsts/work/work-items/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com/media/common/i_tasks.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Work Items</h3>
+                                                    <p>Track the features and requirements you're developing, code defects,
+                                                        and issues.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/vsts/work/backlogs/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/i_backlog.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Backlogs</h3>
+                                                    <p>Create and organize your backlog, track features, users stories, and
+                                                        bugs.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/vsts/work/kanban/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/i_kanban.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Boards</h3>
+                                                    <p>Manage the continuous flow of work from concept to completion.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/vsts/work/scrum/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/i_scrum.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Scrum</h3>
+                                                    <p>Plan a sprint, use a task board in daily scrums, monitor sprint burndown.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/vsts/work/track/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/i_queries.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Queries</h3>
+                                                    <p>Find work items to bulk update and to chart progress and trends.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/vsts/settings/customize/index?toc=/vsts/settings/customize/toc.json&bc=/vsts/settings/customize/breadcrumb/toc.json">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/i_config-tools.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Customization</h3>
+                                                    <p>Configure Azure Codex Agile tools and processes to meet your team's needs.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/vsts/work/scale/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/i_agile.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Agile at Scale</h3>
+                                                    <p>Grow your organization, support autonomous teams, and gain visibility
+                                                        across teams.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
                             </li>
                         </ul>
                     </li>
@@ -730,139 +1011,41 @@ featureFlags:
                             </li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="#codex-agile">Azure Codex Agile</a>
-                        <ul id="codex-agile" class="cardsA">
+                 <li>
+                        <a href="#codex-artifacts">Azure Codex Artifacts</a>
+                        <ul id="codex-artifacts" class="cardsA">
                             <li>
-                                <a href="/vsts/work/work-items/index">
+                                <a href="/vsts/codex-artifacts/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/media/common/i_tasks.svg" alt="" />
+                                                        <img src="_img/index/CodexIconArtifacts96.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Work Items</h3>
-                                                    <p>Track the features and requirements you're developing, code defects,
-                                                        and issues.</p>
+                                                    <h3>Sign up for Azure Codex Artifacts</h3>
+                                                    <p>Sign up and start using artifacts to support continuous integration and deployment of your apps.</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </a>
                             </li>
-                            <li>
-                                <a href="/vsts/work/backlogs/index">
+                             <li>
+                                <a href="/vsts/package/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/i_backlog.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/common/i_management.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Backlogs</h3>
-                                                    <p>Create and organize your backlog, track features, users stories, and
-                                                        bugs.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/vsts/work/kanban/index">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="_img/index/i_kanban.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Boards</h3>
-                                                    <p>Manage the continuous flow of work from concept to completion.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/vsts/work/scrum/index">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="_img/index/i_scrum.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Scrum</h3>
-                                                    <p>Plan a sprint, use a task board in daily scrums, monitor sprint burndown.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/vsts/work/track/index">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="_img/index/i_queries.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Queries</h3>
-                                                    <p>Find work items to bulk update and to chart progress and trends.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/vsts/settings/customize/index?toc=/vsts/settings/customize/toc.json&bc=/vsts/settings/customize/breadcrumb/toc.json">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="_img/index/i_config-tools.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Customization</h3>
-                                                    <p>Configure Azure Codex Agile tools and processes to meet your team's needs.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/vsts/work/scale/index">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="_img/index/i_agile.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Agile at Scale</h3>
-                                                    <p>Grow your organization, support autonomous teams, and gain visibility
-                                                        across teams.</p>
+                                                    <h3>CodeFeed</h3>
+                                                    <p>Create, host, and share NuGet and npm packages with your teams.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -871,28 +1054,10 @@ featureFlags:
                             </li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="#reporting">Dashboards</a>
-                        <ul id="reporting" class="cardsA">
-                            <li>
-                                <a href="/vsts/report/dashboards/index">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="_img/index/i_dashboard.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Dashboards</h3>
-                                                    <p>Monitor progress and trends to support improvement of team processes.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
+
+                 <li>
+                        <a href="#codex-artifacts">Analytics</a>
+                        <ul id="codex-artifacts" class="cardsA">
                             <li>
                                 <a href="/vsts/report/analytics/index">
                                     <div class="cardSize">
@@ -900,12 +1065,12 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/i_analytics.svg" alt="" />
+                                                        <img src="_img/index/analytics.png" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Analytics</h3>
-                                                    <p>Gain insights. Make data-driven decisions. Evaluate progress.</p>
+                                                    <p>Add Analytics widgets or create enterprise-level reports using the Analytics service.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -931,121 +1096,19 @@ featureFlags:
                                     </div>
                                 </a>
                             </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#collaboration">Collaboration</a>
-                        <ul id="collaboration" class="cardsA">
                             <li>
-                                <a href="/vsts/navigation/index">
+                                <a href="/vsts/report/extend-analytics/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/media/common/i_feedback.svg" alt="" />
+                                                        <img src="_img/index/i_analytics.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Navigation</h3>
-                                                    <p>Switch apps, team projects, teams, and manage settings.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/vsts/collaborate/index">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/media/common/i_reference.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>READMEs &amp; Wikis</h3>
-                                                    <p>Share information with your team and stakeholders.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/vsts/public/index">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/media/common/i_reference.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Public Projects</h3>
-                                                    <p>Open your projects for wider collaboration.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/vsts/notifications/index">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/media/common/i_alert.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Notifications</h3>
-                                                    <p>Define which events generate alerts or post messages in third party tools.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/vsts/search/index">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="_img/index/i_search.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Search</h3>
-                                                    <p>Quickly find the code or work items you need to access across your account
-                                                        or collection.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/vsts/feedback/index">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/media/common/i_feedback.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Feedback</h3>
-                                                    <p>Request feedback on your working apps and quickly capture it within a
-                                                        work item form.</p>
+                                                    <h3>Extend Analytics with OData</h3>
+                                                    <p>Use the Analytics Service OData API's to create custom visualizations and reports.</p>
                                                 </div>
                                             </div>
                                         </div>

@@ -1,6 +1,6 @@
 ---
 title: View and filter work items 
-titleSuffix: Azure CodeX Public Project
+titleSuffix: Azure Codex Public Project
 description: View and filter work items using the work items page       
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm

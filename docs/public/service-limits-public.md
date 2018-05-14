@@ -1,6 +1,6 @@
 ---
 title: Rate and service limits on public projects
-titleSuffix: Azure CodeX Public Project
+titleSuffix: Azure Codex Public Project
 description: Terms of service  
 ms.technology: devops-agile
 ms.prod: devops-alm

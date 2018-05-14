@@ -1,6 +1,6 @@
 ---
 title: View a project page or dashboard
-titleSuffix: Azure CodeX Public Project
+titleSuffix: Azure Codex Public Project
 description: View a project home page or dashboard 
 ms.topic: get-started-article
 ms.technology: collaborate
@@ -15,7 +15,7 @@ ms.date: 02/20/2018
 
 [!INCLUDE [temp](_shared/version-public-projects.md)] 
 
-You can view the homepage or dashboards defined for an Azure CodeX public project. From the project page, you can XXX. From a dashboard, you can XXX. 
+You can view the homepage or dashboards defined for an Azure Codex public project. From the project page, you can XXX. From a dashboard, you can XXX. 
 
 If you're a contributor, you can also [edit README files for a project](../collaborate/project-vision-status.md#create-a-repository-readme-or-welcome-page) and [add and edit dashboards](../report/dashboards/dashboards.md).  
 

@@ -1,6 +1,6 @@
 ---
 title: Enable a preview feature 
-titleSuffix: Azure CodeX   
+titleSuffix: Azure Codex   
 description: Turn on/off or enable/disable a feature in preview at the user or account level   
 ms.technology: collaborate
 ms.prod: vs-devops-alm
@@ -13,7 +13,7 @@ ms.date: 02-24-2018
 
 # Enable preview features 
 
-**Azure CodeX**  
+**Azure Codex**  
 
 As new features are introduced, you can turn them on or off. That way, you can try them out, provide feedback, and work with those features that meet your requirements.  
 

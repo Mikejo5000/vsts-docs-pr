@@ -1,6 +1,6 @@
 ---
 title: What is a public project? 
-titleSuffix: Azure CodeX Public Project
+titleSuffix: Azure Codex Public Project
 description: Understand the benefits of creating a public project, provide anonymous users ability to view your projects
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
