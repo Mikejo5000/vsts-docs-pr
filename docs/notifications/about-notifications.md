@@ -21,9 +21,9 @@ Notifications help you and your team stay informed about activity occuring withi
 
 You receive notifications because of subscriptions. A subscription defines what types of notifications should be sent and the recipients of those notifications. There are differnt types of subscriptions: 
 
-- **Built-in**: subscriptions provided by the product
-- **Team**: subscriptions created by an administrator of a team or group you are a member of
-- **Personal**: subscriptions created by you
+- **Built-in subscriptions**: useful "out of the box" subscriptions responsible for notifying about specific, common events like when a work item is assigned or a user is mentioned in pull request
+- **Team subscriptions**: created by an admin to notify the team about events relevant to the team, like when a high priority bug is opened
+- **Personal subscriptions**: created by a user to notify about activity the user cares about that is not cover d 
 
 > [!NOTE]   
 > Built-in subscriptions are also referred to as default subscriptions or out-of-the-box (OOB) subscriptions. These subscriptions cannot be modified or deleted.
