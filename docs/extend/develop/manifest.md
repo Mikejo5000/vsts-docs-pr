@@ -22,13 +22,13 @@ Here is an example of what a typical manifest will look like:
 
 [!code-json[](../_data/extension-typical.json)]
 
-## Required attributes
+## Core attributes
 
 <a id="core-properties" />
 
 [!INCLUDE [](../_shared/manifest-core.md)]
 
-### Examples of required attributes
+### Examples of core attributes
 
 [!code-json[](../_data/extension-core.json)]
 
@@ -41,13 +41,13 @@ Here is an example of what a typical manifest will look like:
 
 <a name="discoveryprops"></a>
 
-### Discovery attributes
+## Marketplace discovery attributes
 
 [!INCLUDE [](../_shared/manifest-discovery.md)]
 
-#### Public flag
+#### Public visibility
 
-By default, all extensions on the Visual Studio Marketplace are private (only visible to the publisher and accounts the publisher has shared the extension with). If your publisher has been verified, you can make your extension public by setting the `Public` flag in your extension manifest:
+By default all extensions on the Visual Studio Marketplace are only visible to the publisher and accounts the publisher has shared the extension with. If your publisher has been verified, you can make your extension public by setting the `public` flag in your extension manifest:
 
 ```json
 {
@@ -57,7 +57,7 @@ By default, all extensions on the Visual Studio Marketplace are private (only vi
 }            
 ```
 
-Or simply:
+Or alternatively:
 
 ```json
 {
@@ -67,9 +67,9 @@ Or simply:
 
 See [Package/Publish/Install](../publish/overview.md) for additional details.
 
-#### Preview flag
+#### Preview status
 
-If your extension is ready for users on the Marketplace to try, but you are still working out a few bugs or adding function, you can mark it as `preview`:
+If you want to make your extension available to users on the Marketplace, but is still under development or you anticipate making it a paid (non-free) extension, you can apply the `Preview` flag:
 
 ```json
 {
@@ -78,7 +78,7 @@ If your extension is ready for users on the Marketplace to try, but you are stil
     ]
 }            
 ```
-####Paid flag
+#### Paid flag
 
 If you want to sell your extension on the Marketplace, you can mark it as `paid`:
 
@@ -89,7 +89,9 @@ If you want to sell your extension on the Marketplace, you can mark it as `paid`
     ]
 }            
 ```
-Currently, this is in limited Beta. All paid extensions are mandated to define privacy and end user licence agreement. Additional configuration steps are required to sell extension in Marketplace. 
+
+> [!NOTE]
+> Paid extension support is in limited preview. Additional configuration steps are required to sell extensions in Marketplace. Contact the [Visual Studio Marketplace](mailto:vsmarketplace@microsoft.com) for more details.
 
 #### Paid Preview flag
 
@@ -105,7 +107,7 @@ If you intend to sell your extension on the Marketplace in the future, you have 
 ```
 Only extensions marked as `paid preview` can be converted to `paid`.
 
-Note: If you do want to target TFS but do not wish to surface a Download option for your extension then add __DoNotDownload tag (starts with two underscores) to the extension manifest.
+Note: If you do want to target TFS but do not wish to surface a Download option for your extension then add `__DoNotDownload` tag (starts with two underscores) to the extension manifest.
 
 ### Example of additional properties
 
@@ -454,7 +456,7 @@ In this example, the extension demands version 3.0 of the APIs, which means it c
 
 ## Files
 
-The `files` section is where you reference any files you wish to include in your extension. You can add both folders and individual files:
+The `files` section describes files, also called assets, that should be packaged with your exension. You can add both folders and individual files:
 
 ```json
 {
@@ -476,19 +478,19 @@ The `files` section is where you reference any files you wish to include in your
 
 Properties for the Files section:
 
-- **path** - Path of resource, root directory is where your manifest file is located
-- **addressable** - Set to **true** if you want your file to be URL-addressable
-- **packagePath** - Places your resource from disk to the specified value when packaged
+- `path` - path of resource relative to the extension manifest file
+- `addressable` - boolean that indicates whether the file is URL addressable. This should always be `true`.
+- `packagePath` - alternate path to place the specified file or folder within the extension. This attribute is useful for simplifying the layout of files in the package and how they are referenced from contributions or other files (like HTML files) in your extension.
 
 ## Contributions
 
 Each contribution entry has the following properties:
 
-* **id** - A reference ID (string) for the contribution. Each contribution's ID must be unique within an extension. See [referencing contributions and types](#contributionIds) below. 
-* **type** - The ID of the contributionType of this contribution. 
-* **description** - (Optional) A string describing what the contribution is providing.
-* **targets** - An array of contribution IDs that the contribution is targeting (contributing to). See [Targeting contributions](#contributionTargets).
-* **properties** - (Optional) An object that includes properties for the contribution as defined in the contribution type.
+* `id` - unique identifier for this contribution. Each contribution ID must be unique within the extension. See [referencing contributions and types](#contributionIds) below. 
+* `type` - the ID of the contributionType of this contribution. This is usually a fully-qualified identifier, like `ms.vss-web.hub`.
+* `description` - optional string describing the contribution
+* `targets` - contributions this contribution targets. See [Targeting contributions](#contributionTargets).
+* `properties` - properties for the contribution as defined in the contribution type
 
 See the [contribution model overview](contributions-overview.md) topic for an overview about contributions.
 
@@ -497,16 +499,16 @@ See the [contribution model overview](contributions-overview.md) topic for an ov
 
 Each contribution entry has the following properties:
 
-* **id** - A reference ID (string) for the contribution type. Each contribution type's ID must be unique within an extension. See [referencing contributions and types](#contributionIds) below. 
-* **name** - The friendly name of the contribution type. 
-* **description** - (Optional) A string describing in more detail what the contribution type is for.
-* **properties** - (Optional) A dictionary that maps property names to property descriptions. These properties describe the required and optional properties that can be used by contributions of this type.
+* `id` - unique identifier for this contribution type. Each contribution type ID must be unique within the extension. See [referencing contributions and types](#contributionIds) below. 
+* `name` - friendly name of the contribution type 
+* `description` - optional string describing the contribution type
+* `properties` - optional dictionary that describes the optional and required properties for contributions of this type
 
 Property descriptions have the following properties:
 
-* **description** - (Optional) A string describing what the property is used for. 
-* **required** - (Optional) A boolean value which if true indicates that the property is required for all contributions of this type.
-* **type** - The type of value that the property can have. This may be: string, uri, guid, boolean, integer, double, dateTime, array, or object.
+* `description` - opptional string describing what the property is used for
+* `required` - optional boolean value indicating whether this property is required on all contributions of this type
+* `type` - the type of the property's value. Valid options are: string, uri, guid, boolean, integer, double, dateTime, array, or object.
 
 See the [contribution model overview](contributions-overview.md) topic for an overview about contributions.
 
@@ -527,13 +529,9 @@ by the contribution identifier. For example, ".hub" may be used within the "vss-
 <a name="contributionTargets"></a>
 ### Targeting contributions
 
-Some contributions act as containers that can be targeted by other contributions. A Hub Group and a Menu are examples of this. Hub contributions
-can target Hub Groups. When a page is rendered, the web UI will show all Hub contributions that target the selected hub group. Hub groups themselves target a hub group collection which defines a set of hub groups that show up in a given navigational area (e.g. project-level admin pages).
+Some contributions act as containers that can be targeted by other contributions. A Hub Group and a Menu are examples of this. Hub contributions can target Hub Groups. When a page is rendered, the web UI will show all Hub contributions that target the selected hub group. Hub groups themselves target a hub group collection which defines a set of hub groups that show up in a given navigational area (e.g. project-level admin pages).
 
-Menus can be targeted by contributions of different types: action, hyperlink-action, and action-provider. Actions and hyperlink-actions provide single menu
-item entries. An action-provider can provide multiple dynamic menu items. For a given menu, items are aggregated across all contributions (of any of these
-types) that target that specific menu contribution.  
-
+Menus can be targeted by contributions of different types: action, hyperlink-action, and action-provider. Actions and hyperlink-actions provide single menu item entries. An action-provider can provide multiple dynamic menu items. For a given menu, items are aggregated across all contributions (of any of these types) that target that specific menu contribution.  
 
 <a name="approvedbadges"></a>
 
@@ -541,30 +539,30 @@ types) that target that specific menu contribution.
 
 The Marketplace only supports badges from the following trusted services:
 
-* api.travis-ci.org/
-* badge.fury.io/
-* badges.frapsoft.com/
-* badges.gitter.im/
-* badges.greenkeeper.io/
-* cdn.travis-ci.org/
-* ci.appveyor.com/
-* codeclimate.com/
-* codecov.io/  
-* coveralls.io/
-* david-dm.org/
-* gemnasium.com/
-* img.shields.io/ 
-* isitmaintained.com/
-* marketplace.visualstudio.com/
-* snyk.io/
-* travis-ci.com/
-* travis-ci.org/
-* vsmarketplacebadge.apphb.com/
-* bithound.io/
-* deepscan.io/
-* githost.io/
-* gitlab.com/
-* opencollective.co/
+* api.travis-ci.org
+* badge.fury.io
+* badges.frapsoft.com
+* badges.gitter.im
+* badges.greenkeeper.io
+* cdn.travis-ci.org
+* ci.appveyor.com
+* codeclimate.com
+* codecov.io  
+* coveralls.io
+* david-dm.org
+* gemnasium.com
+* img.shields.io 
+* isitmaintained.com
+* marketplace.visualstudio.com
+* snyk.io
+* travis-ci.com
+* travis-ci.org
+* vsmarketplacebadge.apphb.com
+* bithound.io
+* deepscan.io
+* githost.io
+* gitlab.com
+* opencollective.com
 
 If you want to show a badge from another service, please contact vsmarketplace@microsoft.com.
 

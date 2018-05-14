@@ -22,38 +22,37 @@ then follow these steps to create the hub group.
 
 Here's the complete extension manifest with Hello in the samples hub group.
 
-	```
+	```json
 	{
-		"namespace": "Fabrikam.myextension",
+		"id": "MyExtension",
+		"publisher": "Fabrikam",
 		"name": "My Extension",
 		"description": "This is my first extension",
 		"version": "1.0",
-		"provider": {
-			"name": "Fabrikam Fiber Inc"
-		},
-		"baseUri": "https://localhost:port",
-		"icon": "images/logo.png",
-		"links": {
-			"info": "info.html",
-			"support": "support.html",
-			"termsOfService": "terms-of-service.html"
-		},
-		"contributions": {
-			"vss.web#hubGroups.project": [
-				{
-					"id": "samples",
-					"name": "Samples",
-					"order":  30
-				}
-			],
-			"vss.web#hubs": [
-				{
-					"id": "myhub",
-					"name": "Hello",
-					"groupId": "samples",
-					"uri": "hello-world.html"
-				}
-			]
-		}
+		"contributions": [
+            {
+                "id": "sample-hub-group",
+                "type": "ms.vss-web.hub-group",
+                "targets": [
+                    "ms.vss-web.project-hub-groups-collection"
+                ],
+                "properties": {
+                    "name": "Samples",
+                    "order": 100
+                }
+            },
+			{
+                "id": "sample-hub",
+                "type": "ms.vss-web.hub",
+                "targets": [
+                    ".sample-hub-group"
+                ],
+                "properties": {
+                    "name": "Hello",
+                    "order": 99,
+                    "uri": "hello-world.html"
+                }
+            }
+		]
 	}
 	```

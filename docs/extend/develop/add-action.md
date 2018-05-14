@@ -24,7 +24,7 @@ In this example, we'll add an action to the query context menu in the work item 
 
 Below is the code snippet that adds your action to the contributions section of your [extension manifest](../develop/manifest.md).
 ```json
-...
+{
     "contributions": [
         {
             "id": "myAction",
@@ -42,7 +42,7 @@ Below is the code snippet that adds your action to the contributions section of 
             }
         }
     ]
-...
+}
 ```
 
 ### Properties
@@ -63,19 +63,19 @@ Your menu action will be represented by a JavaScript script embedded in an HTML 
 in your extension's manifest file.
 
 ```html
-	<!DOCTYPE html>
-	<html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>Action Sample</title>
-	</head>
-	<body>
-		<div>
-			The end user doesn't see the content on this page.
-			It is only in the background to handle the contributed menu item being clicked.
-		</div>
-	</body>
-	</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Action Sample</title>
+</head>
+<body>
+    <div>
+        The end user doesn't see the content on this page.
+        It is only in the background to handle the contributed menu item being clicked.
+    </div>
+</body>
+</html>
 ```
 
 ## Your JavaScript
@@ -103,7 +103,7 @@ The script below registers the handler object to handle the action, place it in 
 </script>
 ```
 
-## Next Steps
+## Next steps
 
 Now that you've written your extension, the next steps are to Package, Publish, and Install your extension. You can also check out the 
 documentation for Testing and Debugging your extension. 

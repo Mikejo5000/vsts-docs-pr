@@ -1,40 +1,44 @@
-1. Add a hub group to your app's manifest file in contributions, like this.
+1. Add a hub group contribution to your extension manifest:
 
     ```
-    "contributions": [
-        {
-            "id": "sample-hub-group",
-            "type": "ms.vss-web.hub-group",
-            "description": "Adds a 'Samples' hub group at the project/team-level",
-            "targets": [
-                "ms.vss-web.project-hub-groups-collection"
-            ],
-            "properties": {
-                "name": "Samples",
-                "order": 100
+    {
+        "contributions": [
+            {
+                "id": "sample-hub-group",
+                "type": "ms.vss-web.hub-group",
+                "targets": [
+                    "ms.vss-web.project-hub-groups-collection"
+                ],
+                "properties": {
+                    "name": "Samples",
+                    "order": 100
+                }
             }
-        },
-     ]
+        ]
+    }
     ```
 
 	Look at the contribution targets reference to see the [available hub groups that can be contributed to](../../reference/targets/overview.md#targets).
 
-2. Change the hub contribution so that it's in the samples hub group that you just created. Just update the targets to the relative contribution ID of the hub group you just added.
+2. Change your existing hub contribution to target the new hub group contribution:
 
     ```
-        {
-            "id": "Fabrikam.HelloWorld",
-            "type": "ms.vss-web.hub",
-            "description": "Adds a 'Hello' hub to the Work hub group.",
-            "targets": [
-                ".sample-hub-group"
-            ],
-            "properties": {
-                "name": "Hello",
-                "order": 99,
-                "uri": "hello-world.html"
+    {
+        "contributions": [
+            {
+                "id": "sample-hub",
+                "type": "ms.vss-web.hub",
+                "targets": [
+                    ".sample-hub-group"
+                ],
+                "properties": {
+                    "name": "Hello",
+                    "order": 99,
+                    "uri": "hello-world.html"
+                }
             }
-        }
+        ]
+    }
     ```
 
 4. [Install](../../develop/install.md) your extension.

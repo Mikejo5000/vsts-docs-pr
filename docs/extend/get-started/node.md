@@ -27,7 +27,7 @@ You will:
 > * Package and publish your extension to the Marketplace
 > * Test your extension in a VSTS account
 
-[!INCLUDE [preview](../_data/get-help.md)]
+[!INCLUDE [get-help](../_data/get-help.md)]
 
 ## Prerequisites
 
