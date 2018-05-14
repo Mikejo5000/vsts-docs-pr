@@ -16,9 +16,9 @@ monikerRange: '>=vsts'
 **VSTS | [TFS 2018](concurrent-pipelines-tfs.md) | [TFS 2017](concurrent-pipelines-tfs.md)**
 
 > [!NOTE]
-> May 2018: For the last few months, we did not enforce throttling of concurrent builds or releases on self-hosted agents because of an issue with our design. As a result, your ability to run multiple builds or releases concurrently on these agents was only limited by the number of agents in your account.
-
-> We have now fixed the issue. Beginning in June 2018, you will only be able to run as many build or release jobs concurrently as the amount of self-hosted CI/CD concurrency that you have in your account. To check the self-hosted concurrency you have in your account, navigate to the following page in your VSTS web UI: Account Settings -> Build and Release -> Resource limits.
+> May 2018: For the past few months we have not enforced throttling of concurrent builds or releases on self-hosted agents because of an issue with our design. As a result, your ability to run multiple builds or releases concurrently on these agents was limited only by the number of agents in your account.
+>
+> We've fixed the issue, and beginning in June 2018 we'll resume throttling and you'll be able to run only as many concurrent build or release jobs as explained below.
 
 A CI/CD _concurrent job_ gives you the ability to run a single build job or a single release job at a time in your account. In VSTS you can run concurrent jobs on Microsoft-hosted infrastructure or on your own (self-hosted) infrastructure.
 
