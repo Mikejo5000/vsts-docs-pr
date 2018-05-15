@@ -32,7 +32,6 @@ Choose the sample application for the language of your choice from one of the fo
 | JavaScript | `https://github.com/adventworks/nodejs-sample` |
 | PHP | `https://github.com/adventworks/php-sample` |
 | Python | `https://github.com/adventworks/python-sample` |
-| Swift | `https://github.com/adventworks/xcode-sample` |
 
 Get the code for the sample application into your own GitHub or VSTS repository.
 
@@ -146,15 +145,15 @@ You've just learned the basics to create and run a build pipeline using YAML in 
 This pipeline automatically builds and validates whatever code is checked in by your team. 
 Now you're ready to dive deep into configuring your pipeline for the programming language you're using.
 
-| Language | Repository with sample application | Customize the pipeline |
-|----------------------|----------------------------|------------------------|
-| C | `https://github.com/adventworks/cpp-gpp-sample` | Doc link |
-| C++ | `https://github.com/adventworks/cpp-sample` | Doc link |
-| C# | `https://github.com/adventworks/dotnetcore-sample` | Doc link |
-| Go | `https://github.com/adventworks/go-sample` | Doc link |
-| Java | `https://github.com/adventworks/java-sample` | Doc link |
-| JavaScript | `https://github.com/adventworks/nodejs-sample` | Doc link |
-| PHP | `https://github.com/adventworks/php-sample` | Doc link |
-| Python | `https://github.com/adventworks/python-sample` | Doc link |
-| Ruby | `https://github.com/adventworks/ruby-sample` | Doc link |
-| Swift | `https://github.com/adventworks/xcode-sample` | Doc link |
+| Language | Customize the pipeline |
+|-|-|
+| C | Doc link |
+| C++ | Doc link |
+| C# |  Doc link |
+| Go | Doc link |
+| Java | Doc link |
+| JavaScript | Doc link |
+| PHP | Doc link |
+| Python | Doc link |
+| Ruby | Doc link |
+| Swift | Doc link |

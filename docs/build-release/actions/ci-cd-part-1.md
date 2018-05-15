@@ -316,9 +316,13 @@ Write-Host Trigger: $trigger
 
 > We just introduced the concept of build variables in these steps. We printed the value of a variable that is automatically predefined and initialized by the system. You can also define custom variables and use them either in arguments to your tasks, or as environment variables within your scripts. To learn more about variables, see [Build variables](../concepts/definitions/build/variables.md).
 
+## You've got a build pipeline. What's next
+
+You've just created a build pipeline that automatically builds and validates whatever code is checked in by your team. At this point you can continue to the next section to learn about release pipelines. Or, if you prefer, you can [skip ahead](#next-steps) to create a build pipeline for your app.
+
 ## Create a release definition
 
-Define the process for running the script in two environments.
+Now you're ready to define a release pipeline that runs a script in two environments. This will give you a basic idea of how to create a release pipeline, how it it is triggered, and how it gets files from your build pipeline.
 
 ::: moniker range="vsts"
 
@@ -489,139 +493,19 @@ Write-Host "Now that you've got CI/CD, you can automatically deploy your app eve
 > In many cases, you probably would want to edit the release process so that the production deployment happens
   only after some testing and approvals are in place. See [Approvals and gates overview](../concepts/definitions/release/approvals/index.md).
 
-## Put CI/CD to work for you
-
-We hope this tutorial gave you an understanding of the basic concepts of Team Build and Release Management. To get started building and deploying an app, we suggest you proceed next to one of these topics:
-
-* [ASP.NET](../apps/aspnet/build-aspnet-4.md)
-
-* [ASP.NET core](../apps/aspnet/build-aspnet-core.md)
-
-* [Node.js](../apps/nodejs/build-gulp.md)
-
-* [Build and deploy your app](../apps/index.md)
-
-## Q&A
-
-### Where can I read articles about DevOps and CI/CD?
-<!-- BEGINSECTION class="md-qanda" -->
-
-[What is Continuous Integration?](/azure/devops/what-is-continuous-integration)
-
-[What is Continuous Delivery?](/azure/devops/what-is-continuous-delivery)
-
-[What is DevOps?](/azure/devops/what-is-devops)
-
-<h3 id="version-control">What kinds of version control can I use</h3>
-
-We've used a Git repository in VSTS to keep things focused on CI/CD for this tutorial.
-
-When you're ready to get going with CI/CD for your app, you can use the version control system of your choice:
-
-* Clients
-
- * [Visual Studio Code for Windows, macOS, and Linux](https://code.visualstudio.com)
-
- * [Visual Studio with Git for Windows](../../git/share-your-code-in-git-vs.md) or [Visual Studio for Mac](https://www.visualstudio.com/vs/visual-studio-mac/)
-
- * [Visual Studio with TFVC](../../tfvc/share-your-code-in-tfvc-vs.md)
-
- * [Eclipse](../../git/share-your-code-in-git-eclipse.md)
-
- * [Xcode](../../git/share-your-code-in-git-xcode.md)
-
- * [IntelliJ](/vsts/java/download-intellij-plug-in)
-
- * [Command line](../../git/share-your-code-in-git-cmdline.md)
-
-* Services
-
- * [VSTS](https://www.visualstudio.com/team-services/)
-
- * Git service providers such as GitHub and Bitbucket
-
- * Subversion
-
-### How do I replicate a definition?
-
-If your definition has a pattern that you want to replicate in other definitions, clone it, export it, or save it as a template.
-
-![all-definitions-build-action-menu-replicate-actions](_img/ci-cd/part-1/all-definitions-build-action-menu-replicate-actions.png)
-
-After you clone a definition, you can make changes and then save it.
-
-After you export a definition, you can import it from the **All Definitions** tab.
-
-After you create a template, your team members can use it to follow the pattern in new definitions.
-
-> [!TIP]
->
-> If you're using the **New Build Editor**, then your custom templates are shown at the bottom of the list.
-
-### How do I work with drafts?
-
-If you're editing a build definition and you want to test some changes that are not yet ready for production, you can save it as a draft.
-
-![save-as-draft](_img/ci-cd/part-1/save-as-draft.png)
-
-You can edit and test your draft as needed.
-
-![edit draft](_img/ci-cd/part-1/edit-draft.png)
-
-When you're ready you can publish the draft to merge the changes into your build definition.
-
-![publish draft](_img/ci-cd/part-1/publish-draft.png)
-
-Or, if you decide to discard the draft, you can delete it from the **All Definition** tab shown above.
-
-<h3 id="queueabuild">What else can I do when I queue a build?</h3>
-
-You can queue builds [automatically](../concepts/definitions/build/triggers.md) or manually.
-
-When you manually queue a build, you can, for a single run of the build:
-
-* Specify the [queue](../concepts/agents/pools-queues.md) into which the build goes.
-
-* Add and modify some [variables](../concepts/definitions/build/variables.md).
-
-* Add [demands](../concepts/definitions/build/options.md#demands).
-
-* In a Git repository
-
- - Build a [branch](../../git/tutorial/branches.md) or a [tag](http://git-scm.com/book/en/v2/Git-Basics-Tagging).
-
- - Build a [commit](../../git/tutorial/commits.md).
-
-* In a TFVC repository
-
- - Specify the source version as a [label](https://msdn.microsoft.com/en-us/library/ms181439.aspx) or [changeset](https://msdn.microsoft.com/en-us/library/ms181408.aspx).
-
- - Run a private build of a [shelveset](https://msdn.microsoft.com/en-us/library/ms181403.aspx). (You can use this option on either a [hosted agent](../concepts/agents/hosted.md) or a [private agent](../concepts/agents/agents.md).)
-
-### Where can I learn more about build definition settings?
-
-To learn more about build definition settings, see:
-
-* [Getting sources](../concepts/definitions/build/repository.md)
-
-* [Tasks](../tasks/index.md)
-
-* [Variables](../concepts/definitions/build/variables.md)
-
-* [Triggers](../concepts/definitions/build/triggers.md)
-
-* [Options](../concepts/definitions/build/options.md)
-
-* [Retention](../concepts/policies/retention.md)
-
-* [History](../concepts/definitions/build/history.md)
-
-### How do I programmatically create a build definition?
-
-[REST API Reference: Create a build definition](../../integrate/index.md)
-
-> [!NOTE]
-> You can also manage builds and build definitions from the command line or scripts using the [VSTS CLI](https://docs.microsoft.com/en-us/cli/vsts/overview?view=vsts-cli-latest).
-
-
-<!-- ENDSECTION -->
+<a name="next-steps"></a>
+## Next steps
+
+You've just learned the basics to create and run a build pipeline and a release pipeline in your web browser.
+
+Now you're ready to learn how to configure your build pipeline for the programming language you're using.
+Go ahead and create a new build pipeline, and this time, use one of the following templates.
+
+| Language | Repository with sample application | Template to use | More documentation |
+|----------|------------------------------------|-----------------|--------------------|
+| C++ | `https://github.com/adventworks/cpp-sample` | .NET Desktop | Doc link |
+| C# | `https://github.com/adventworks/dotnetcore-sample` | ASP.NET Core | Doc link |
+| Go | `https://github.com/adventworks/go-sample` | Go | Doc link |
+| Java | `https://github.com/adventworks/java-sample` | Gradle | Doc link |
+| JavaScript | `https://github.com/adventworks/nodejs-sample` | NodeJS with Gulp | Doc link |
+| Swift | `https://github.com/adventworks/xcode-sample` | Xcode | Doc link |

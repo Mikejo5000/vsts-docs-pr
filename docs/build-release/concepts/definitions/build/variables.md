@@ -584,7 +584,7 @@ Scope: All (see Notes)
 
 Defined if your [repository](repository.md) is Team Foundation Version Control.
                 
-If you are running a [gated build](triggers.md#gated) or a [shelveset build](../../../actions/ci-cd-part-1.md#queueabuild), this is set to the name of the [shelveset](../../../../tfvc/suspend-your-work-manage-your-shelvesets.md) you are building.
+If you are running a [gated build](triggers.md#gated) or a shelveset build, this is set to the name of the [shelveset](../../../../tfvc/suspend-your-work-manage-your-shelvesets.md) you are building.
 
 Note: This variable yields a value that is invalid for build use in a build number format
 

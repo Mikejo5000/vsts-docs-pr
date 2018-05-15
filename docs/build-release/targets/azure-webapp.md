@@ -113,7 +113,7 @@ The **Azure App Service Deploy** task is the primary mechanism used in the above
 
 ## Deploying to a virtual application
 
-By default, you deployment happens to the root application in the Azure web app. You can deploy to a specific virtual application using the following:
+By default, your deployment happens to the root application in the Azure web app. You can deploy to a specific virtual application using the following:
 
 ```yaml
 - task: AzureRmWebAppDeployment@3
