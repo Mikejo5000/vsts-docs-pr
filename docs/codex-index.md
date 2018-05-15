@@ -1055,7 +1055,6 @@ featureFlags:
                             </li>
                         </ul>
                     </li>
-
                  <li>
                         <a href="#codex-artifacts">Analytics</a>
                         <ul id="codex-artifacts" class="cardsA">
@@ -1139,27 +1138,7 @@ featureFlags:
                                         </div>
                                     </div>
                                 </a>
-                            </li>
-                            <li>
-                                <a href="/vsts/accounts/index">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="_img/index/i_account-management.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Account Management</h3>
-                                                    <p>Setup and manage your account and configure key settings to support your
-                                                        teams.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>                            
+                            </li>   
                             <li>
                                 <a href="/vsts/security/index">
                                     <div class="cardSize">
@@ -1199,6 +1178,26 @@ featureFlags:
                                     </div>
                                 </a>
                             </li>
+                           <li>
+                                <a href="/vsts/accounts/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/i_account-management.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Account Management</h3>
+                                                    <p>Setup and manage your account and configure key settings to support your
+                                                        teams.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>                         
                             <li>
                                 <a href="/vsts/billing/index">
                                     <div class="cardSize">
