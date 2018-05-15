@@ -1,6 +1,6 @@
 ---
 title: Glossary for public projects
-titleSuffix: Azure CodeX Public Project
+titleSuffix: Azure Codex Public Project
 description: Description of key concepts and terms 
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-admin
