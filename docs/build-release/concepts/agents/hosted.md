@@ -28,6 +28,8 @@ We provide hosted agents to you in our hosted pools. To use a hosted agent, whil
 
 * **Hosted Linux** if your team uses development tools on Ubuntu.
 
+* **Hosted VS2017** or **Hosted Linux** if you're building Docker containers or .NET Core apps. Hosted Linux may provide better performance in some cases, but either will work.
+
 * **Hosted macOS** if your team uses development tools on macOS.
 
   This option affects where your data is stored. [Learn more](https://www.microsoft.com/en-us/trustcenter/privacy/vsts-location)
@@ -49,11 +51,9 @@ We update the software on the hosted agents once every month.
 
 Hosted agents:
 
-* Run as a service.
-
 * Have [the above software](#software). You can also add software using [tool installers](../process/tasks.md#tool-installers).
 
-* Provide 10 GB of storage.
+* Provide at least 10 GB of storage.
 
 * Can run jobs for up to 6 hours (30 minutes on the free tier).
 
