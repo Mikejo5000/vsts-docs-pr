@@ -28,8 +28,8 @@ We provide hosted agents to you in our hosted pools. To use a hosted agent, firs
 |----------------------------------|---------------------------|
 | Visual Studio 2017 | Hosted VS2017 |
 | Development tools on Ubuntu | Hosted Linux |
-| Docker containers | Hosted Linux or Hosted 2017 |
-| .NET Core | Hosted Linux (optimal) or Hosted 2017 |
+| Docker containers | Hosted Linux or Hosted VS2017 |
+| .NET Core | Hosted Linux (optimal) or Hosted VS2017 |
 | Development tools on macOS | Hosted macOS (see notes below) |
 | Visual Studio 2013 or Visual Studio 2015 | Hosted |
 
