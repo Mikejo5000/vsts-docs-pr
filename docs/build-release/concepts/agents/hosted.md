@@ -22,21 +22,22 @@ monikerRange: 'vsts'
 
 ## Use a hosted agent
 
-We provide hosted agents to you in our hosted pools. To use a hosted agent, while [editing your build definition](../../actions/ci-cd-part-1.md), on the **Options** or **General** tab or **Process** step, for the **Agent queue**, select either:
+We provide hosted agents to you in our hosted pools. To use a hosted agent, first decide which queue to use:
 
-* **Hosted VS2017** if your team uses Visual Studio 2017.
+| If your development team uses... | ...then choose this queue |
+|----------------------------------|---------------------------|
+| Visual Studio 2017 | Hosted VS2017 |
+| Development tools on Ubuntu | Hosted Linux |
+| Docker containers | Hosted Linux or Hosted 2017 |
+| .NET Core | Hosted Linux (optimal) or Hosted 2017 |
+| Development tools on macOS | Hosted macOS (see notes below) |
+| Visual Studio 2013 or Visual Studio 2015 | Hosted |
 
-* **Hosted Linux** if your team uses development tools on Ubuntu.
+Then, while [editing your build definition](../../actions/ci-cd-part-1.md), on the **Options** or **General** tab or **Process** step, for the **Agent queue**, select the queue you decided on.
 
-* **Hosted VS2017** or **Hosted Linux** if you're building Docker containers or .NET Core apps. Hosted Linux may provide better performance in some cases, but either will work.
-
-* **Hosted macOS** if your team uses development tools on macOS.
-
-  This option affects where your data is stored. [Learn more](https://www.microsoft.com/en-us/trustcenter/privacy/vsts-location)
-
-  For manual selection of tool versions on this hosted agent, see **Q & A** below.
-
-* **Hosted** if your team uses Visual Studio 2013 or Visual Studio 2015.
+Notes on choosing **Hosted macOS**:
+* This option affects where your data is stored. [Learn more](https://www.microsoft.com/en-us/trustcenter/privacy/vsts-location)
+* For manual selection of tool versions on this hosted agent, see **Q & A** below.
 
 <h2 id="software">Software</h2>
 
