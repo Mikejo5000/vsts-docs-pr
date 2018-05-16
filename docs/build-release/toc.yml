@@ -38,7 +38,7 @@
   - name: Azure Web App
     href: targets/azure-webapp.md
   - name: Azure Web App for Containers
-  - name: Azure SQL database
+  - name: Azure SQL Database
     href: targets/azure-sqldb.md
   - name: Linux VM
   - name: SCVMM
@@ -85,40 +85,38 @@
       href: concepts/definitions/release/env-templates.md
     - name: Releases and deployments
       href: concepts/releases/index.md
-  - name: Agents
+  - name: Common
     items:
-    - name: Build and release agents
+    - name: Agents
       href: concepts/agents/agents.md
     - name: Agent pools and queues
       href: concepts/agents/pools-queues.md
-    - name: Hosted agents
-      href: concepts/agents/hosted.md
-    - name: Deployment groups
-      href: concepts/definitions/release/deployment-groups/index.md
-  - name: Common
-    items:
-    - name: Tasks
-      href: concepts/process/tasks.md
-    - name: Phases
-      href: concepts/process/phases.md
     - name: Conditions
       href: concepts/process/conditions.md
+    - name: Deployment groups
+      href: concepts/definitions/release/deployment-groups/index.md
+    - name: Hosted agents
+      href: concepts/agents/hosted.md
+    - name: Phases
+      href: concepts/process/phases.md
     - name: Retention policies
       href: concepts/policies/retention.md
-    - name: Variable groups
-      href: concepts/library/variable-groups.md
-    - name: Task groups
-      href: concepts/library/task-groups.md
-    - name: Service endpoints
-      href: concepts/library/service-endpoints.md
     - name: Secure files
       href: concepts/library/secure-files.md
+    - name: Service endpoints
+      href: concepts/library/service-endpoints.md
+    - name: Tasks
+      href: concepts/process/tasks.md
+    - name: Task groups
+      href: concepts/library/task-groups.md
+    - name: Variable groups
+      href: concepts/library/variable-groups.md
   - name: Licensing
     items:
-    - name: Pipelines in TFS
-      href: concepts/licensing/concurrent-pipelines-tfs.md
     - name: Pipelines in VSTS
       href: concepts/licensing/concurrent-pipelines-ts.md
+    - name: Pipelines in TFS
+      href: concepts/licensing/concurrent-pipelines-tfs.md
 - name: How-to Guides
   items:
   - name: Continuous integration

@@ -14,7 +14,6 @@ layout: LandingPage
 monikerRange: '>= tfs-2013'
 ---
 
-
 # Build and release
 
 ::: moniker range=">= tfs-2015"
@@ -49,7 +48,7 @@ VSTS and Team Foundation Server help you implement a continuous integration (CI)
 <div class="ico48Link"><a href=""><img width="48" height="48" alt="" src="_img/index/app-service-web.png"><span>Azure Container Registry</span></a></div>
 <div class="ico48Link"><a href=""><img width="48" height="48" alt="" src="_img/index/app-service-web.png"><span>Azure Kubernetes Service</span></a></div>
 <div class="ico48Link"><a href=""><img width="48" height="48" alt="" src="_img/index/app-service-web.png"><span>Azure Stack</span></a></div>
-<div class="ico48Link"><a href="targets/web-app.md"><img width="48" height="48" alt="" src="_img/index/app-service-web.png"><span>Azure Web App</span></a></div>
+<div class="ico48Link"><a href="targets/azure-webapp.md"><img width="48" height="48" alt="" src="_img/index/app-service-web.png"><span>Azure Web App</span></a></div>
 <div class="ico48Link"><a href=""><img width="48" height="48" alt="" src="_img/index/app-service-web.png"><span>Azure Web App for Containers</span></a></div>
 <div class="ico48Link"><a href=""><img width="48" height="48" alt="" src="_img/index/app-service-web.png"><span>Azure SQL Database</span></a></div>
 <div class="ico48Link"><a href=""><img width="48" height="48" alt="" src="_img/index/virtualmachine.png"><span>Linux VM</span></a></div>
