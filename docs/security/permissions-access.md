@@ -1,7 +1,7 @@
 ---
 title: Default permissions and access quick reference
-titleSuffix: VSTS & TFS 
-description: At-a-glance view of permissions and access levels for common user tasks for Visual Studio Team Services and Team Foundation Server 
+titleSuffix: Azure Codex & TFS
+description: At-a-glance view of permissions and access levels for common user tasks for Azure Codex & Team Foundation Server 
 ms.prod: devops
 ms.technology: devops-security
 ms.assetid: B656A277-BA3D-472D-824D-CDD4E067053E
@@ -14,11 +14,11 @@ ms.date: 02/12/2018
 monikerRange: '>= tfs-2013'
 ---
 
-# Default permissions and access for VSTS and TFS 
+# Default permissions and access 
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-To connect and use the functions and features that VSTS and TFS provides, users must be added to a group with the appropriate permissions. The most common built-in groups include Readers, Contributors, and Project Administrators. These groups are assigned the default permissions as listed below. 
+To connect and use the functions and features that Azure Codex and Team Foundation Server (TFS) provides, users must be added to a group with the appropriate permissions. The most common built-in groups include Readers, Contributors, and Project Administrators. These groups are assigned the default permissions as listed below. 
 
 In addition to permissions, access to select features are controlled by the access level assigned to a user. Contributors and administrators should be added to Basic (paid) access. Stakeholder access is available to support free access to a limited set of features by an unlimited set of stakeholders. 
 
@@ -29,7 +29,7 @@ For a complete reference of all built-in groups and permissions, see [Permission
 
 You can connect to your code from the Code hub or the web portal, and using Xcode, Eclipse, IntelliJ, Android Studio, Visual Studio, Visual Studio Code. For an overview of code features and functions, see [Git](../git/overview.md) and [Use Team Foundation Version Control (TFVC)](../tfvc/overview.md). Stakeholders have no access to the Code hub or its features.
 
-From the team project admin content for Version Control, you can [set permissions on a repository](set-git-tfvc-repository-permissions.md). From the **Code>Branches** page, you can [set permissions for a specific branch and set branch policies](../git/branch-permissions.md). 
+From the project admin content for Version Control, you can [set permissions on a repository](set-git-tfvc-repository-permissions.md). From the **Code>Branches** page, you can [set permissions for a specific branch and set branch policies](../git/branch-permissions.md). 
 
 ### Git
 [!INCLUDE [temp](_shared/code-git.md)]
@@ -57,7 +57,7 @@ Feeds have three levels of access: Owners, Contributors, and Readers. Owners can
 
 You can define and manage manual tests from the web portal, **Test** hub. For an overview of manual test features and functions, see [Testing overview](../manual-test/index.md).  
 
-You set [test permissions at the team project level](set-project-collection-level-permissions.md) from the admin context Security page.  
+You set [test permissions at the project level](set-project-collection-level-permissions.md) from the admin context Security page.  
 
 [!INCLUDE [temp](_shared/test.md)]
 
@@ -115,9 +115,9 @@ To manage notifications, see [Manage personal notifications](../notifications/ma
 
 
 
-## Related notes
+## Related articles
 
-- [Add users to a project or team](../security/add-users-team-project.md)  
+- [Add users to a project or team](add-users-team-project.md)  
 - [Permissions and groups reference](permissions.md)  
 - [About access levels](access-levels.md)
 - [Work in the web portal](../user-guide/work-web-portal.md) 
