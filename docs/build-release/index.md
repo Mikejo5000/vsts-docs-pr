@@ -37,7 +37,8 @@ VSTS and Team Foundation Server help you implement a continuous integration (CI)
 <div class="ico48Link"><a href=""><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_xcode.svg"><span>iOS</span></a></div>
 <div class="ico48Link"><a href=""><img width="48" height="48" alt="" src="https://docs.microsoft.com/vsts/build-release/_img/index/logo_go.svg"><span>JavaScript</span></a></div>
 <div class="ico48Link"><a href=""><img width="48" height="48" alt="" src="https://docs.microsoft.com/vsts/build-release/_img/index/logo_go.svg"><span>PHP</span></a></div>
-<div class="ico48Link"><a href=""><img width="48" height="48" alt="" src="https://docs.microsoft.com/vsts/build-release/_img/index/logo_go.svg"><span>Python</sVisual Basic</span></a></div>
+<div class="ico48Link"><a href=""><img width="48" height="48" alt="" src="https://docs.microsoft.com/vsts/build-release/_img/index/logo_go.svg"><span>Python</span></a></div>
+<div class="ico48Link"><a href=""><img width="48" height="48" alt="" src="https://docs.microsoft.com/vsts/build-release/_img/index/logo_go.svg"><span>Visual Basic</span></a></div>
 <div class="ico48Link"><a href=""><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_xamarin.svg"><span>Xamarin</span></a></div>
 </div>
 
