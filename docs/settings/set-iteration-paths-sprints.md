@@ -54,9 +54,10 @@ You define both areas and iterations from the **Work>Project configuration** hub
 	> [!div class="mx-imgBorder"]  
 	> ![Settings hub, Open Work>Project Configuration](_img/areas/open-work-project-configuration.png)   
 
-	<img src="_img/areas/modify-areas-its-open-admin-context-ts.png" alt="Web portal, VSTS, Open Admin context, project level" style="border: 1px solid #C3C3C3;" />
+0. Choose **Iterations**. 
 
-0. Choose **Iterations**.
+	> [!div class="mx-imgBorder"]  
+	> ![Settings hub, Open Work>Project Configuration>Iterations page](_img/areas/choose-iterationss.png)   
 
 ::: moniker-end
 
@@ -106,26 +107,28 @@ From the web portal, open the project settings hub.
 
 <a id="iterations"></a>  
 ## Add iterations and set iteration dates
-From the **Iterations** page, you can add and select the iterations that will be active for your team. You add iterations in the same way you add areas. For more information about working within a sprint cadence, see [Schedule sprints](../work/scrum/define-sprints.md).  
+From the **Iterations** page, you can add iterations that teams can then select for their use. You add iterations in the same way you add areas. For more information about working within a sprint cadence, see [Schedule sprints](../work/scrum/define-sprints.md).  
 
 ::: moniker range=">= tfs-2017"
 <a id="define-sprints-team-services">   </a>
 
-1. Open the Work, Iterations page for the project context. 
+You add and modify area paths from the **Work, Iterations** page from the project admin or settings context.   
 
-	For Scrum-based projects, you'll see these set of sprints. 
+For Scrum-based projects, you'll see the following set of sprints. 
 
-	<img src="_img/areas/modify-areas-its-iterations-ts.png" alt="Work, Iterations page, VSTS platform" style="border: 2px solid #C3C3C3;" />
+<img src="_img/areas/modify-areas-its-iterations-ts.png" alt="Work, Iterations page, VSTS platform" style="border: 2px solid #C3C3C3;" />
 
-	If you need to select another project, go to the Overview page for the collection (click the DefaultCollection link). 
+* To schedule the start and end dates for each sprint your teams will use,  Highlight the sprint and choose **Set dates**. Or, you can open the ![](../_img/icons/actions-icon.png) context menu for the iteration path and choose **Edit**.  
 
-2. Schedule the start and end dates for each sprint your teams will use. Click Set dates or choose to edit the iteration from the ![Actions icon](../_img/icons/actions-icon.png) actions menu for the sprint. 
+	Click the calendar icon to choose new dates. 
 
-	<img src="../work/scrum/_img/dsprints-edit-sprint-1-set-start-date.png" alt="Edit iteration, schedule start date, VSTS platform" style="border: 1px solid #C3C3C3;" />  
+	> [!div class="mx-imgBorder"]  
+	> ![Work, Iterations page, scheduled set of sprints](_img/iterations/schedule-sprints-calendar.png) 	
 
 3. When you're finished, you'll have a set of sprints scheduled - like this: 
 
-	<img src="_img/areas/modify-areas-its-iterations-scheduled-ts.png" alt="Work, Iterations page, scheduled set of sprints, VSTS platform" style="border: 2px solid #C3C3C3;" />
+	> [!div class="mx-imgBorder"]  
+	> ![Work, Iterations page, scheduled set of sprints](_img/areas/modify-areas-its-iterations-scheduled-ts.png)
 
 	Your next step is to [choose the sprints each team will use](../work/scale/set-team-defaults.md#activate-team-services). 
 ::: moniker-end
@@ -162,7 +165,7 @@ From the **Iterations** page, you can add and select the iterations that will be
 ::: moniker range=">= tfs-2017"
 
 <a name="rename-delete"></a>
-## Rename or delete an iteration 
+## Rename, move, or delete an iteration 
 
 When you rename an iteration, or move the node within the tree hierarchy, the system will automatically update the work items and queries that reference the existing path or paths. 
 
@@ -194,9 +197,9 @@ You can quickly generate [queries](../work/track/using-queries.md) to view the p
 ## Related articles 
 As you can see, iterations play a major role in supporting Agile tools and managing work items. You can learn more about working with these fields from these topics: 
  
-*	[Set team defaults](../work/scale/set-team-defaults.md)  
+*	[Set team defaults](set-team-defaults.md)  
 *	[Agile tools and sprint definitions ](../work/scrum/define-sprints.md)  
 *	[Query by date or current iteration](../work/track/query-by-date-or-current-iteration.md)  
-
+*	 [Set permissions and access for work tracking](../security/set-permissions-access-work-tracking.md)
  
  

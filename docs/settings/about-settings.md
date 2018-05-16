@@ -68,7 +68,7 @@ Individual contributors can set their user preferences, enable select features t
 <li>[Change your preferred email address](../notifications/change-email-address.md)</li>
 <li>[Manage personal notifications](../notifications/manage-personal-notifications.md)</li>
 </ul></td>
-<td>Notifications alert you through email messages when changes occur to work items, code reviews, pull requests, source control files, builds, and more. A number of notifications are preset when a team project is created. If you want to opt out of these, you can.  </li>
+<td>Notifications alert you through email messages when changes occur to work items, code reviews, pull requests, source control files, builds, and more. When an Azure Codex project is created, a number of notifications are defined. If you want to opt out of these, you can.  </li>
 </ul></td>
 </tr>
 </tbody>
@@ -92,7 +92,7 @@ For a complete overview of all team assets that you can configure, see [Manage t
 <tr>
 <td>**Team profile**</td>
 <td><ul>
-<li>[Add users to a team project or specific team](../security/add-users-team-project.md)</li>
+<li>[Add users to a project or specific team](../security/add-users-team-project.md)</li>
 <li>[Add team admins](../work/scale/add-team-administrator.md)</li>
 </ul></td>
 <td>Members of a team are included within the team group which can be used in queries and **@mentions** in pull requests and work item discussions.</td>
@@ -103,8 +103,8 @@ For a complete overview of all team assets that you can configure, see [Manage t
 <li>[Backlog levels](../work/customize/select-backlog-navigation-levels.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)</li>
 <li>[Show bugs on backlogs & boards](../work/customize/show-bugs-on-backlog.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)</li>
 <li>[Set working days](../work/customize/set-working-days.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)</li>
-<li>[Configure default area and iteration paths](../work/scale/set-team-defaults.md)</li>
-<li>[Select active iteration paths (sprints)](../work/scale/set-team-defaults.md)</li>
+<li>[Configure default area and iteration paths](set-team-defaults.md)</li>
+<li>[Select active iteration paths (sprints)](set-team-defaults.md)</li>
 <li>[Define work item templates](../work/backlogs/work-item-template.md)</li>
 </ul></td>
 <td>For an overview of team resources, see [About teams and Agile tools](about-teams-and-settings.md). You configure Kanban boards from the board view: [Columns](../work/kanban/add-columns.md), [Swimlanes](../work/kanban/expedite-work.md), [Cards](../work/customize/customize-cards.md), [WIP limits](../work/kanban/wip-limits.md). </td>
@@ -150,14 +150,14 @@ Members of the [Project Administrators group](../security/set-project-collection
 <tr>
 <td>**Security**</td>
 <td><ul>
-<li>[Add user accounts to a team project](../accounts/account-preferences.md)</li>
+<li>[Add user accounts to a project](../accounts/account-preferences.md)</li>
 <li>[Change individual permissions, grant select access to specific functions](../security/change-individual-permissions.md)</li>
 <li>[Grant or restrict access to select features](../security/restrict-access.md)</li>
 <li>[Add administrators](../security/set-project-collection-level-permissions.md)</li>
 <li>[Manage project-level permissions](../security/permissions.md#project-level)</li>
 <li>[Set build and release permissions](../build-release/set-permissions.md)</li>
 </ul></td>
-<td>Project Administrators can add users to a team project or team. When you add a user to a team, you automatically add them to the team project. Users added to a team project can only view and contribute to that specific project. <p>For an overview of security concepts, see [About permissions and groups](../security/about-permissions.md) and [About access levels](../security/access-levels.md). For a list of project-level permissions, see [Permissions and groups reference, Project-level permissions](../security/permissions.md#project-level).</p> </td>
+<td>Project Administrators can add users to a project or a team. When you add a user to a team, you automatically add them to the project. Users added to a project can only view and contribute to that specific project. <p>For an overview of security concepts, see [About permissions and groups](../security/about-permissions.md) and [About access levels](../security/access-levels.md). For a list of project-level permissions, see [Permissions and groups reference, Project-level permissions](../security/permissions.md#project-level).</p> </td>
 </tr>
 <tr>
 <td> **Notifications** </td>
@@ -223,7 +223,7 @@ Members of the [Project Administrators group](../security/set-project-collection
 <tr>
 <td>**Wiki**</td>
 <td><ul>
-<li>[Create a wiki for your team project](../collaborate/wiki-create-repo.md)</li>
+<li>[Create a wiki for your project](../collaborate/wiki-create-repo.md)</li>
 <li>[Publish a Git repository to a wiki](../collaborate/publish-repo-to-wiki.md)</li>
 <li>[Manage README and Wiki permissions](../collaborate/manage-readme-wiki-permissions.md)</li>
 </ul></td>
@@ -286,7 +286,7 @@ For an overview of managing your Azure Codex account, see [About account managem
 <td><ul>
 <li>Add and manage projects: [Create](../accounts/create-team-project.md), [Rename](../accounts/rename-team-project.md), [Delete](../accounts/delete-team-project.md)</li>
 <li>[Add users to projects](../accounts/add-team-members-vs.md)</li>
-<li>[Save team project data](../accounts/save-team-project-data.md)</li>
+<li>[Save project data](../accounts/save-team-project-data.md)</li>
 </ul></td>
 <td>An Azure Codex project provides the fundamental resource for storing your code, managing your CI/CD operations, and planning and tracking work for your project. In general, you'll want to minimize the number of projects you create, to keep things simple. However, if you need to, you can add additional projects to your account. Users added to a project can contribute to that project. </td>
 </tr>

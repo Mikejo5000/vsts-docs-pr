@@ -88,7 +88,7 @@
       href: ../work/scale/manage-team-assets.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
       items:
     - name: Set team defaults
-      href: ../work/scale/set-team-defaults.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+      href: set-team-defaults.md
     - name: Use work item templates
       href: ../work/backlogs/work-item-template.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
     - name: Customize cards on boards

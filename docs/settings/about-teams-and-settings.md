@@ -180,7 +180,7 @@ Yes. When you add user accounts to a project, you can add them as members of the
 ## Summary 
 - Every team owns their own backlog, to create a new backlog you [create a new team](../work/scale/multiple-teams.md) 
 - Every backlog has a corresponding [Kanban board](../work/kanban/kanban-basics.md) you can use to track progress and update status  
-- The [team's specified area and iteration paths](../work/scale/set-team-defaults.md) determine which work items appear on the backlog and Kanban board&mdash;you can easily decide to include or exclude work items under a specific area path   
+- The [team's specified area and iteration paths](set-team-defaults.md) determine which work items appear on the backlog and Kanban board&mdash;you can easily decide to include or exclude work items under a specific area path   
 -  Each team can control how [bugs show up on their backlogs and boards](../work/customize/show-bugs-on-backlog.md)   
 - For an overview of all team assets and how to configure them, see [Configure team settings](../work/scale/manage-team-assets.md)   
 - To have work performed by several teams roll up in to a portfolio backlog, you'll want to [setup the team hierarchy](../work/scale/portfolio-management.md) 
@@ -189,7 +189,7 @@ Yes. When you add user accounts to a project, you can add them as members of the
 ## Related articles 
 
 - [Add another team](../work/scale/multiple-teams.md)  
-- [Set team defaults](../work/scale/set-team-defaults.md)  
+- [Set team defaults](set-team-defaults.md)  
 - [Configure team settings ](../work/scale/manage-team-assets.md)      
 - [Work effectively from your account hub ](../user-guide/account-home-pages.md)  
 

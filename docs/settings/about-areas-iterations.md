@@ -84,7 +84,7 @@ As you can see, areas and iterations play a major role in supporting Agile tools
  
 *	[Set project-level area paths](set-area-paths.md)  
 *	[Set project-level iteration paths](set-iteration-paths-sprints.md)  
-*	[Set team defaults](../work/scale/set-team-defaults.md)  
+*	[Set team defaults](set-team-defaults.md)  
 *	[Agile tools and sprint definitions](../work/scrum/define-sprints.md)  
 *	[Query by date or current iteration](../work/track/query-by-date-or-current-iteration.md)  
 

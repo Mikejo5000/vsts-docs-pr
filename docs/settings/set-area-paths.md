@@ -52,9 +52,11 @@ You define both areas and iterations from the **Work>Project configuration** hub
 	> [!div class="mx-imgBorder"]  
 	> ![Settings hub, Open Work>Project Configuration](_img/areas/open-work-project-configuration.png)   
 
-	<img src="_img/areas/modify-areas-its-open-admin-context-ts.png" alt="Web portal, VSTS, Open Admin context, project level" style="border: 1px solid #C3C3C3;" />
+0. Choose **Areas**.  
 
-0. Choose **Areas**.
+	> [!div class="mx-imgBorder"]  
+	> ![Settings hub, Open Work>Project Configuration>Areas page](_img/areas/choose-areas.png)   
+
 
 ::: moniker-end
 
@@ -68,7 +70,7 @@ You define both areas and iterations from the **Work** hub of the project admin 
 <a id="admin-intro-team-services" /> 
 ::: moniker range=">= tfs-2017"  
 
-1. From the web portal for the project context, click the ![](../_img/icons/gear_icon.png) gear icon.   
+1. From the web portal for the project context, choose the ![](../_img/icons/gear_icon.png) gear icon.   
 	::: moniker range=">= tfs-2018"
 	<img src="_img/areas/modify-areas-its-open-admin-context-ts.png" alt="Web portal, VSTS, Open Admin context, project level" style="border: 1px solid #C3C3C3;" />
 
@@ -98,9 +100,7 @@ You define both areas and iterations from the **Work** hub of the project admin 
 
 1. From the web portal user context, click the ![gear icon](../_img/icons/gear_icon.png) gear Settings.   
 
-	<img src="../_img/icons/ALM_OpenAdminContext.png" alt="Open the project administration page" style="border: 1px solid #C3C3C3;" /> 
-
-2. Choose **Areas**.   
+	<img src="../_img/icons/ALM_OpenAdminContext.png" alt="Open the project administration page" style="border: 1px solid #C3C3C3;" />  
 
 ::: moniker-end
 
@@ -112,15 +112,18 @@ You define both areas and iterations from the **Work** hub of the project admin 
 
 ::: moniker range=">= tfs-2017"  
 
-1. Open the **Work, Areas** page for the project admin context.  
+You add and modify area paths from the **Work, Areas** page from the project admin or settings context.  
 
-	If you haven't added any areas or teams, you'll see that only one area is defined.   
+If you haven't added any areas or teams, you'll see that only one area is defined.   
 
-	<img src="_img/areas/modify-areas-its-areas-ts.png" alt="Areas, defaults defined for project" style="border: 1px solid #C3C3C3;" />  
+<img src="_img/areas/modify-areas-its-areas-ts.png" alt="Areas, defaults defined for project" style="border: 1px solid #C3C3C3;" />  
 
-2.  Add a new child node to the area you have selected. 
+* To add a child node, highlight the area path and then choose **New child**. Optionally, you can open the ![](../_img/icons/actions-icon.png) context menu for the area path and choose **New child**.   
 
-	<img src="_img/areas/m-areas-add-area-path.png" alt="TFS 15, Areas, Create a new area node" style="border: 1px solid #C3C3C3;" /> 
+	Enter a name (255 characters or less) for the node. For additional name restrictions, see [About areas and iterations, Naming restrictions](about-areas-iterations.md#naming-restrictions). 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Add a new area path](_img/areas/m-areas-add-area-path.png) 
 
 ::: moniker-end
 
@@ -141,9 +144,9 @@ You define both areas and iterations from the **Work** hub of the project admin 
 ::: moniker range=">= tfs-2017"
 
 <a name="rename-delete"></a>
-## Rename or delete an area or iteration node 
+## Rename, move, or delete an area or iteration node 
 
-When you rename an area or an iteration, or move the node within the tree hierarchy, the system will automatically update the work items and queries that reference the existing path or paths. 
+When you rename an area or an iteration, or move the node within the tree hierarchy, the system will automatically update the work items and queries that reference the existing path or paths.  
 
 0. To rename an area or iteration path, choose the ![](../_img/icons/actions-icon.png) actions icon for the node, and click **Edit**.  
 
@@ -178,9 +181,11 @@ As you can see, areas play a major role in supporting Agile tools and managing w
 
 *	[About areas and iterations](about-areas-iterations.md)  
 *	[Add another team](../work/scale/multiple-teams.md)  
-*	[Set team defaults](../work/scale/set-team-defaults.md)  
+*	[Set team defaults](set-team-defaults.md)  
 *	[Configure team settings and add team administrators](../work/scale/manage-team-assets.md)   
 *	[Agile tools that rely on areas or iterations](about-teams-and-settings.md)
+*	[Query by area or iteration path](..//work/track/query-by-area-iteration-path.md)  
+*	 [Set permissions and access for work tracking](../security/set-permissions-access-work-tracking.md)
 
 
 
