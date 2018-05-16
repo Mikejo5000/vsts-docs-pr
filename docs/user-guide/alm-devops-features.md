@@ -1183,7 +1183,7 @@ build-release\tasks\build\_img
 
 
 <p><b>Release definitions</b></p>
-<p>Add a release definition by [choosing the build version, target release environments, and tasks](../build-release/build/hello-world.md).</p>
+<p>Add a release definition by [choosing the build version, target release environments, and tasks](../build-release/qs-first-pipeline.md).</p>
 
 
 <p><b>Release environments</b></p>

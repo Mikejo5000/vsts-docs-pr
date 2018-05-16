@@ -35,7 +35,7 @@ You'll need:
 * A release definition that contains at least one environment. If you don't already have one,
   you can create it by working through any of the following quickstarts and tutorials:
 
-  - [Hello world](../build/hello-world.md)
+  - [Hello world](../qs-first-pipeline.md)
   - [Deploy to IIS web server on Windows](../apps/cd/deploy-webdeploy-iis-deploygroups.md)
 
 * Two separate targets where you will deploy the app. These could be virtual machines,

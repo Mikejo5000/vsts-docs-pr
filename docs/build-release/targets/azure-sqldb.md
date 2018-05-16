@@ -18,14 +18,14 @@ monikerRange: '>= tfs-2017'
 
 VSTS can automatically deploy your database updates to Azure SQL database after every successful build. Make sure that you have completed one of the following two quickstarts before trying the steps in this article.
 
-* [Your first build and release](../build/hello-world.md), if you plan to use web UI to create you pipeline
-* [Build a repo with YAML](../build/with-yaml.md), if you plan to use YAML to create your pipeline
+* [Your first build and release](../qs-first-pipeline.md), if you plan to use web UI to create you pipeline
+* [Build a repo with YAML](../qs-yaml-pipeline.md), if you plan to use YAML to create your pipeline
 
 ::: moniker-end
 
 ::: moniker range="< vsts"
 
-TFS can automatically deploy your database updates to Azure SQL database after every successful build. Make sure that you have completed the [Your first build and release](../build/hello-world.md) quickstart before trying the steps in this article.
+TFS can automatically deploy your database updates to Azure SQL database after every successful build. Make sure that you have completed the [Your first build and release](../qs-first-pipeline.md) quickstart before trying the steps in this article.
 
 ::: moniker-end
 

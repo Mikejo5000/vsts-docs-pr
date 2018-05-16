@@ -11,11 +11,11 @@
 - name: Quickstarts
   items:
     - name: Your first build and release
-      href: build/hello-world.md
+      href: qs-first-pipeline.md
     - name: Build a repo with YAML
-      href: build/with-yaml.md
+      href: qs-yaml-pipeline.md
     - name: Azure DevOps project
-      href: release/getting-started-devops-project.md
+      href: qs-devops-project.md
 - name: Programming Languages
   items:
     - name: Android

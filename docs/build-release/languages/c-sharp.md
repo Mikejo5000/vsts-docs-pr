@@ -16,13 +16,13 @@ monikerRange: '>= tfs-2015'
 
 ::: moniker range="vsts"
 
-VSTS can automatically build your repositories containing C#, F#, or Visual Basic projects. Before reading the guidance on these languages, make sure to read the [web quickstart](../build/hello-world.md) or [YAML quickstart](../build/with-yaml.md) first.
+VSTS can automatically build your repositories containing C#, F#, or Visual Basic projects. Before reading the guidance on these languages, make sure to read the [web quickstart](../qs-first-pipeline.md) or [YAML quickstart](../qs-yaml-pipeline.md) first.
 
 ::: moniker-end
 
 ::: moniker range="< vsts"
 
-TFS can automatically build your repositories containing C#, F#, or Visual Basic projects. Before reading the guidance on these languages, make sure to read the [quickstart](../build/hello-world.md) first.
+TFS can automatically build your repositories containing C#, F#, or Visual Basic projects. Before reading the guidance on these languages, make sure to read the [quickstart](../qs-first-pipeline.md) first.
 
 ::: moniker-end
 

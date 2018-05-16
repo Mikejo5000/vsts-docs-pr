@@ -11,7 +11,7 @@ ms.reviewer: vijayma
 ms.date: 02/19/2018
 ms.topic: conceptual
 layout: LandingPage
-monikerRange: '>= tfs-2013'
+monikerRange: '>= tfs-2015'
 ---
 
 
@@ -19,9 +19,13 @@ monikerRange: '>= tfs-2013'
 
 ::: moniker range=">= tfs-2015"
 
-VSTS and Team Foundation Server help you implement a continuous integration (CI) and deployment (CD) pipeline for any app. Tutorials, references, and other documentation show you how to configure and manage CI/CD for the app and platform of your choice.
+VSTS and Team Foundation Server help you implement a continuous integration (CI) and deployment (CD) for any app. Tutorials, references, and other documentation show you how to configure and manage CI/CD for the app and platform of your choice.
 
 ## 5-Minute quickstarts
+
+* [Your first build and release](qs-first-pipeline.md)
+* [Build a repo with YAML](qs-yaml-pipeline.md)
+* [Azure DevOps project](qs-devops-project.md)
 
 ### Learn how to build your app
 
@@ -33,7 +37,6 @@ VSTS and Team Foundation Server help you implement a continuous integration (CI)
 <div class="ico48Link"><a href="apps/c-cpp/gcc.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg"><span>C/C++ with GCC</span></a></div>
 <div class="ico48Link"><a href="apps/windows/cpp.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_visual-studio.svg"><span>C/C++ with VC++</span></a></div>
 <div class="ico48Link"><a href="apps/containers/build.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_docker.svg"><span>Docker image</span></a></div>
-<div class="ico48Link"><a href="apps/go/go.md"><img width="48" height="48" alt="" src="_img/index/logo_go.svg"><span>Go</span></a></div>
 <div class="ico48Link"><a href="apps/java/build-gradle.md"><img width="48" height="48" alt="" src="_img/index/logo_gradle.png"><span>Gradle</span></a></div>
 <div class="ico48Link"><a href="apps/java/build-maven.md"><img width="48" height="48" alt="" src="_img/index/logo_maven.svg"><span>Maven</span></a></div>
 <div class="ico48Link"><a href="apps/windows/dot-net.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_NET.svg"><span>.NET Desktop</span></a></div>
@@ -52,20 +55,6 @@ VSTS and Team Foundation Server help you implement a continuous integration (CI)
 <div class="ico48Link"><a href="apps/cd/deploy-docker-webapp.md"><img width="48" height="48" alt="" src="_img/index/app-service-web.png"><span>Web App for Containers</span></a></div>
 <div class="ico48Link"><a href="apps/cd/deploy-webdeploy-iis-deploygroups.md"><img width="48" height="48" alt="" src="_img/index/virtualmachine.png"><span>Windows VM</span></a></div>
 </div>
-
-### Learn how to test your app
-
-<!-- Converting to icon48 format, this gets cleaner in YAML -->
-<div class="ico48Case halfStack">
-<div class="ico48Link"><a href="test/getting-started-with-continuous-testing.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_visual-studio.svg"><span>Visual Studio Test</span></a></div>
-<div class="ico48Link"><a href="test/continuous-test-selenium.md"><img width="48" height="48" alt="" src="tasks/test/_img/visual-studio-test-icon.png"><span>Selenium Test</span></a></div>
-<div class="ico48Link"><a href="test/review-continuous-test-results-after-build.md"><img width="48" height="48" alt="" src="tasks/test/_img/run-functional-tests-icon.png"><span>Review results</span></a></div>
-</div>
-
-## Step-by-step tutorials
-
-* [CI builds for Git in VSTS](actions/ci-build-git.md)
-* [Set up multi-stage release](actions/define-multistage-release-process.md)
 
 ## Videos
 

@@ -60,13 +60,13 @@ Create a PowerShell script that prints `Hello world`.
 
  ::: moniker range="vsts"
 
- ![On the Files tab, from the repo node, select the 'New -> File' option](_img/ci-cd/part-1/add-a-file-tfs-2018-2.png) 
+ ![On the Files tab, from the repo node, select the 'New -> File' option](_img/first-pipeline/add-a-file-tfs-2018-2.png) 
 
  ::: moniker-end
 
  ::: moniker range=">= tfs-2017 < vsts"
 
- ![On the Files tab, from the repo node, select the 'Add file' option](_img/ci-cd/part-1/add-a-file.png)
+ ![On the Files tab, from the repo node, select the 'Add file' option](_img/first-pipeline/add-a-file.png)
 
  ::: moniker-end
 
@@ -94,11 +94,11 @@ Create a build pipeline that prints "Hello world."
 
 1. Select the **Build and Release** hub in your VSTS project, and then choose **Builds**.
 
-   ![navigate to builds tab](_img/ci-cd/part-1/navigate-to-builds-tab-tfs-2018-2.png)
+   ![navigate to builds tab](_img/first-pipeline/navigate-to-builds-tab-tfs-2018-2.png)
 
 1. Create a new build pipeline.
 
-   ![builds-tab-mine-new-button](_img/ci-cd/part-1/builds-tab-mine-new-button-tab-tfs-2018-2.png)
+   ![builds-tab-mine-new-button](_img/first-pipeline/builds-tab-mine-new-button-tab-tfs-2018-2.png)
 
 1. Make sure that the **source**, **team project**, **repository**, and default **branch** match the location in which you created the script.
 
@@ -108,13 +108,13 @@ Create a build pipeline that prints "Hello world."
 
 1. On the left side, select the plus sign **( + )** for Phase 1 to add a task to the phase, and then on the right side select the **Utility** category, select the **PowerShell** task, and then choose **Add**.
 
-   ![builds-tab-add-task-to-phase](_img/ci-cd/part-1/builds-tab-add-task-tfs-2018-2.png)
+   ![builds-tab-add-task-to-phase](_img/first-pipeline/builds-tab-add-task-tfs-2018-2.png)
 
 1. On the left side click your new **PowerShell** script task.
 
 1. For the **Script Path** argument, click the <span style="background-color: rgb(244,244,244);font-weight:bold;padding:5px">...</span> button to browse your repository and select the script you created.
 
-   ![PowerShell task](_img/ci-cd/part-1/powershell-task-1-tfs-2018-2.png)
+   ![PowerShell task](_img/first-pipeline/powershell-task-1-tfs-2018-2.png)
 
 1. Click **Save & queue**, and then click **Save**.
 
@@ -124,11 +124,11 @@ Create a build pipeline that prints "Hello world."
 
 1. Select the **Build and Release** hub in your VSTS project, and then the **Builds** tab.
 
- ![navigate to builds tab](_img/ci-cd/part-1/navigate-to-builds-tab.png)
+ ![navigate to builds tab](_img/first-pipeline/navigate-to-builds-tab.png)
 
 1. Create a new definition.
 
- ![builds-tab-mine-new-button](_img/ci-cd/part-1/builds-tab-mine-new-button.png)
+ ![builds-tab-mine-new-button](_img/first-pipeline/builds-tab-mine-new-button.png)
 
 1. Start with an **empty process**.
 
@@ -142,7 +142,7 @@ Create a build pipeline that prints "Hello world."
 
 1. For the **Script Path** argument, click the <span style="background-color: rgb(244,244,244);font-weight:bold;padding:5px">...</span> button to browse your repository and select the script you created.
 
-   ![PowerShell task](_img/ci-cd/part-1/powershell-task-1.png)
+   ![PowerShell task](_img/first-pipeline/powershell-task-1.png)
 
 1. Click **Save & queue**, and then click **Save**.
 
@@ -160,7 +160,7 @@ A typical build produces an artifact that can then be deployed to various enviro
 
 1. Click the **Utility** category, click the **Publish Build Artifacts** task, and then click **Add**.
 
-   ![publish artifact task](_img/ci-cd/part-1/publish-artifact-task-tfs-2018-2.png)
+   ![publish artifact task](_img/first-pipeline/publish-artifact-task-tfs-2018-2.png)
 
    **Path to publish**: Click the <span style="background-color: rgb(244,244,244);font-weight:bold;padding:5px">...</span> button to browse and select the script you created.
 
@@ -180,7 +180,7 @@ A typical build produces an artifact that can then be deployed to various enviro
 
 1. Click the **Utility** category, click the **Publish Build Artifacts** task, and then click **Add**.
 
- ![publish artifact task](_img/ci-cd/part-1/publish-artifact-task.png)
+ ![publish artifact task](_img/first-pipeline/publish-artifact-task.png)
 
  **Path to Publish**: Click the <span style="background-color: rgb(244,244,244);font-weight:bold;padding:5px">...</span> button to browse and select the script you created.
 
@@ -220,19 +220,19 @@ Save and queue a build manually and test your build pipeline.
    
 1. You see a link to the new build on the top of the page. 
 
-   ![build console](_img/ci-cd/part-1/build-console-link-to-new-build-tfs-2018-2.png)
+   ![build console](_img/first-pipeline/build-console-link-to-new-build-tfs-2018-2.png)
 
    Choose the link to watch the new build as it happens. Once the agent is allocated, you'll start seeing the live logs of the build. Notice that the PowerShell script is run as part of the build, and that "Hello world" is printed to the console.
 
-   ![build console](_img/ci-cd/part-1/build-console.png)
+   ![build console](_img/first-pipeline/build-console.png)
 
 1. Go to the build summary.
 
-   ![build console link to build summary](_img/ci-cd/part-1/build-console-link-to-build-summary.png)
+   ![build console link to build summary](_img/first-pipeline/build-console-link-to-build-summary.png)
 
 1. On the **Artifacts** tab of the build notice that the script is published as an artifact.
 
-   ![artifacts explorer](_img/ci-cd/part-1/artifacts-explorer.png)
+   ![artifacts explorer](_img/first-pipeline/artifacts-explorer.png)
 
 ::: moniker-end
 
@@ -244,15 +244,15 @@ Save and queue a build manually and test your build pipeline.
 
    This queues a new build on the agent. Once the agent is allocated, you'll start seeing the live logs of the build. Notice that the PowerShell script is run as part of the build, and that "Hello world" is printed to the console.
 
-   ![build console](_img/ci-cd/part-1/build-console.png)
+   ![build console](_img/first-pipeline/build-console.png)
 
 1. Go to the build summary.
 
-   ![build console link to build summary](_img/ci-cd/part-1/build-console-link-to-build-summary.png)
+   ![build console link to build summary](_img/first-pipeline/build-console-link-to-build-summary.png)
 
 1. On the **Artifacts** tab of the build notice that the script is published as an artifact.
 
-   ![artifacts explorer](_img/ci-cd/part-1/artifacts-explorer.png)
+   ![artifacts explorer](_img/first-pipeline/artifacts-explorer.png)
 
 ::: moniker-end
 
@@ -269,10 +269,10 @@ We'll pass some build variables to the script to make our process a bit more int
 1. Add these arguments.
 
  ::: moniker range="vsts"
- ![PowerShell task](_img/ci-cd/part-1/powershell-task-2-tfs-2018-2.png)
+ ![PowerShell task](_img/first-pipeline/powershell-task-2-tfs-2018-2.png)
  ::: moniker-end
  ::: moniker range=">= tfs-2017 < vsts"
- ![PowerShell task](_img/ci-cd/part-1/powershell-task-2.png)
+ ![PowerShell task](_img/first-pipeline/powershell-task-2.png)
  ::: moniker-end
 
  **Arguments**
@@ -306,7 +306,7 @@ Write-Host Trigger: $trigger
 
 1. Notice that the person who changed the code has their name printed in the greeting message. You also see printed that this was a CI build.
 
- ![build summary powershell script log](_img/ci-cd/part-1/build-summary-powershell-script-log.png)
+ ![build summary powershell script log](_img/first-pipeline/build-summary-powershell-script-log.png)
 
 > We just introduced the concept of build variables in these steps. We printed the value of a variable that is automatically predefined and initialized by the system. You can also define custom variables and use them either in arguments to your tasks, or as environment variables within your scripts. To learn more about variables, see [Build variables](../concepts/definitions/build/variables.md).
 
@@ -332,7 +332,7 @@ Now you're ready to define a release pipeline that runs a script in two environm
 
 1. Select the **Lightning bolt** to trigger continuous deployment and then enable the **Continuous deployment trigger** on the right.
 
-   ![trigger continuous deployment](_img/ci-cd/part-1/trigger-continuous-deployment-release-environment-tfs-2018-2.png)
+   ![trigger continuous deployment](_img/first-pipeline/trigger-continuous-deployment-release-environment-tfs-2018-2.png)
 
 1. Select the **Tasks** tab and select your **QA** environment.
 
@@ -350,13 +350,13 @@ Now you're ready to define a release pipeline that runs a script in two environm
 
 1. On the **Pipeline** tab, select the **QA** environment and select **Clone**.
 
-   ![clone-release-environment](_img/ci-cd/part-1/clone-release-environment-tfs-2018-2.png)
+   ![clone-release-environment](_img/first-pipeline/clone-release-environment-tfs-2018-2.png)
 
 1. Rename the cloned environment **Production**.
 
 1. Rename the release pipeline **Hello world**.
 
-   ![rename release pipeline](_img/ci-cd/part-1/rename-release-definition-tfs-2018-2.png)
+   ![rename release pipeline](_img/first-pipeline/rename-release-definition-tfs-2018-2.png)
 
 1. Save the release pipeline.
 
@@ -386,11 +386,11 @@ Now you're ready to define a release pipeline that runs a script in two environm
 
 1. Rename the environment **QA**.
 
- ![rename release environment](_img/ci-cd/part-1/rename-release-environment.png)
+ ![rename release environment](_img/first-pipeline/rename-release-environment.png)
 
 1. **Clone** the **QA** environment.
 
- ![clone-release-environment](_img/ci-cd/part-1/clone-release-environment.png)
+ ![clone-release-environment](_img/first-pipeline/clone-release-environment.png)
 
  Leave **Automatically approve** and **Deploy automatically...** selected, and click **Create**.
 
@@ -398,7 +398,7 @@ Now you're ready to define a release pipeline that runs a script in two environm
 
 1. Rename the release definition **Hello world**.
 
- ![rename release definition](_img/ci-cd/part-1/rename-release-definition.png)
+ ![rename release definition](_img/first-pipeline/rename-release-definition.png)
 
 1. Save the release definition.
 
@@ -416,17 +416,17 @@ Run the script in each environment.
 
 1. Create a new release.
 
- ![create release](_img/ci-cd/part-1/create-release-tfs-2018-2.png)
+ ![create release](_img/first-pipeline/create-release-tfs-2018-2.png)
 
 1. Define the trigger settings and artifact source for the release and then select **Create**.
 
 1. Open the release that you just created.
 
- ![release created](_img/ci-cd/part-1/release-created-tfs-2018-2.png)
+ ![release created](_img/first-pipeline/release-created-tfs-2018-2.png)
 
 1. View the logs to get real-time data about the release.
 
- ![release logs](_img/ci-cd/part-1/release-logs-tfs-2018-2.png)
+ ![release logs](_img/first-pipeline/release-logs-tfs-2018-2.png)
 
  ::: moniker-end
 
@@ -434,15 +434,15 @@ Run the script in each environment.
 
 1. Create a new release.
 
- ![create release](_img/ci-cd/part-1/create-release.png)
+ ![create release](_img/first-pipeline/create-release.png)
 
 1. Open the release that you just created.
 
- ![release created](_img/ci-cd/part-1/release-created.png)
+ ![release created](_img/first-pipeline/release-created.png)
 
 1. View the logs to get real-time data about the release.
 
- ![release logs](_img/ci-cd/part-1/release-logs.png)
+ ![release logs](_img/first-pipeline/release-logs.png)
 
  ::: moniker-end
 
@@ -474,13 +474,13 @@ Write-Host "Now that you've got CI/CD, you can automatically deploy your app eve
 
  ::: moniker range="vsts"
 
- ![release script step final log](_img/ci-cd/part-1/release-script-step-final-log-tfs-2018-2.png)
+ ![release script step final log](_img/first-pipeline/release-script-step-final-log-tfs-2018-2.png)
 
  ::: moniker-end
 
  ::: moniker range=">= tfs-2017 < vsts"
 
- ![release script step final log](_img/ci-cd/part-1/release-script-step-final-log.png)
+ ![release script step final log](_img/first-pipeline/release-script-step-final-log.png)
 
  ::: moniker-end
 

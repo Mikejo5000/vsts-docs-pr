@@ -36,7 +36,7 @@ In this tutorial, you learn how to:
 ## Prerequisites
 * Git repository in VSTS or TFS
 * A working build definition for a Git repository in VSTS
-	* If needed, the following:  [Build with YAML](../../build-release/build/with-yaml.md), [Build without YAML](../../build-release/build/hello-world.md).
+	* If needed, the following:  [Build with YAML](../../build-release/qs-yaml-pipeline.md), [Build without YAML](../../build-release/qs-first-pipeline.md).
 
 ## Set up a CI trigger for a topic branch
 
