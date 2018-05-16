@@ -14,7 +14,7 @@ monikerRange: 'vsts'
 
 # Build a repo with YAML file
 
-If you manage your code in GitHub or in Visual Studio Team Services (VSTS) Git, then you can easily set up continuous integration (CI) by adding a YAML file to your repository. The CI process will be automated using VSTS pipelines. VSTS pipelines can be used for any application written in any programming language.
+If you manage your code in GitHub or in Visual Studio Team Services (VSTS) Git, then you can use VSTS pipelines to easily build the repo by adding a YAML file to it. VSTS pipelines can be used to automate continuous integration (CI) for an application written in any programming language.
 
 ## Prerequisites
 
@@ -55,8 +55,8 @@ Get the code for the sample application into your own GitHub or VSTS repository.
 
   ```yaml
   queue: 'Hosted VS2017'
-  steps:
-  
+
+  steps:  
   - task: Gradle@2
     inputs:
       gradleWrapperFile: 'gradlew'
@@ -78,9 +78,9 @@ Get the code for the sample application into your own GitHub or VSTS repository.
 
 1. Navigate to the **Build and Release** hub.
 
-1. Observe that there's a new build definition named _{name-of-your-repo} YAML CI_. A build is queued; its status could be either not started or running. Choose the number of the build: _{year}{month}{day}.1_.
+1. Observe that there's a new build pipeline named _{name-of-your-repo} YAML CI_. A build is queued; its status could be either not started or running. Choose the number of the build: _{year}{month}{day}.1_.
 
-1. In the left column of the running build, select **Job**. After an agent is assigned to your job and the agent is initialized, then you'll see information about the build in the console.
+1. After an agent is assigned to your job and the agent is initialized, then you'll see information about the build in the console.
 
 # [GitHub repo](#tab/github)
 
@@ -88,7 +88,7 @@ In VSTS:
 
 1. Navigate to the **Builds** tab of the **Build and Release** hub, and then choose **+ New Build Pipeline**.
 
-1. You're asked to **Select a repository** for the new build pipeline. Select **GitHub**, and then select your version control repository. You'll need to authorize access to your repo.
+1. You're asked to **Select a repository** for the new build pipeline. Select **GitHub**, and then select your  repository. You'll need to authorize access to your repo via a GitHub service endpoint.
 
 1. You are then asked to select a template for the pipeline. Select **YAML**, and then select **Apply**.
 
@@ -104,8 +104,8 @@ In GitHub:
 
   ```yaml
   queue: 'Hosted VS2017'
-  steps:
-  
+
+  steps:  
   - task: Gradle@2
     inputs:
       gradleWrapperFile: 'gradlew'
@@ -113,7 +113,7 @@ In GitHub:
       tasks: 'build'
   ```
 
-  The next time you change any file in this repository, VSTS automatically builds your code.
+  The next time you change any file in this repository, VSTS Pipelines will automatically build your code.
 
 1. Go back to the list of files and select the **Readme.md** file, and then choose **Edit**.
 

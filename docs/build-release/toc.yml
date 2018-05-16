@@ -10,13 +10,12 @@
     href: test/index.md
 - name: Quickstarts
   items:
+    - name: Your first build and release
+      href: build/hello-world.md
+    - name: Build a repo with YAML
+      href: build/with-yaml.md
     - name: Azure DevOps project
       href: https://docs.microsoft.com/en-us/azure/devops-project/
-    - name: Build in YAML
-      href: build/with-yaml.md
-    - name: Build and release with web
-      href: actions/ci-cd-part-1.md
-    - name: Jenkins build
 - name: Programming Languages
   items:
     - name: C
