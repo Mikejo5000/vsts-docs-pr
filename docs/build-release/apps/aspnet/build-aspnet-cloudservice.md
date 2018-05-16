@@ -49,12 +49,6 @@ On the Triggers tab, enable **continuous integration** (CI). This tells the syst
 
 Save the build definition and queue a new build by selecting the **Queue new build** command. Once the build is done, click **Artifacts** and then **Explore** to see the cloud service package (.cspkg file) produced by the build. This is the package that your release definition will consume to deploy your app.
 
-## Deploy your app
-
-After you've run the build, you're ready to create a release definition to deploy your app to:
-
-* <a href="../../release/getting-started-vsts-build.md"><img src="../../tasks/deploy/_img/azure-cloud-service-deployment-icon.png"/> An Azure cloud service</a>
-
 ## Q&A
 
 <!-- BEGINSECTION class="md-qanda" -->

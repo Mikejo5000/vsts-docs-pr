@@ -129,6 +129,3 @@ You learned how to:
 > * Exclude or include tasks for builds based on the branch being built
 > * Keep code quality high by building your pull requests
 > * Use retention policies to clean up your completed build
-
-> [!div class="nextstepaction"]
-> [Deploy VSTS build](../release/getting-started-vsts-build.md)

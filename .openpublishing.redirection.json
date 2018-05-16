@@ -178,7 +178,7 @@
         },
         {
             "source_path": "docs/build/apps/aspnet/cd/deploy-cloudservice-cloudservice.md",
-            "redirect_url": "/vsts/build-release/release/getting-started-vsts-build",
+            "redirect_url": "/vsts/build-release/targets/azure-webapp",
             "redirect_document_id": false
         },
         {
@@ -4963,7 +4963,7 @@
        },
        {
         "source_path": "vsts/build-release/apps/cd/deploy-webdeploy-webapps.md",
-        "redirect_url": "/vsts/build-release/release/getting-started-vsts-build",
+        "redirect_url": "/vsts/build-release/targets/azure-webapp",
         "redirect_document_id": false
        },
        {

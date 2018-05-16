@@ -35,7 +35,7 @@ You'll need:
 * A release definition that contains at least one environment. If you don't already have one,
   you can create it by working through any of the following quickstarts and tutorials:
 
-  - [Deploy VSTS build](../release/getting-started-vsts-build.md)
+  - [Hello world](../build/hello-world.md)
   - [Deploy to IIS web server on Windows](../apps/cd/deploy-webdeploy-iis-deploygroups.md)
 
 * Two separate targets where you will deploy the app. These could be virtual machines,

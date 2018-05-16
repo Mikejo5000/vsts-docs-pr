@@ -264,7 +264,7 @@ The new Team Build is tightly integrated with Release Management. So it's easier
 
 A few examples include:
 
-* [Deploy VSTS build](../release/getting-started-vsts-build.md)
+* [Hello world](../build/hello-world.md)
 
 * [IIS using deployment groups](../apps/cd/deploy-webdeploy-iis-deploygroups.md)
 

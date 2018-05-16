@@ -15,7 +15,7 @@
     - name: Build a repo with YAML
       href: build/with-yaml.md
     - name: Azure DevOps project
-      href: https://docs.microsoft.com/en-us/azure/devops-project/
+      href: release/getting-started-devops-project.md
 - name: Programming Languages
   items:
     - name: C

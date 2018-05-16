@@ -133,6 +133,3 @@ You learned how to:
 > * Set up CI builds for your GitHub repository
 > * Display a VSTS build status within a GitHub README file
 > * Create a pull request trigger for GitHub
-
-> [!div class="nextstepaction"]
-> [Deploy VSTS build](../../build-release/release/getting-started-vsts-build.md)
