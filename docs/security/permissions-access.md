@@ -1,7 +1,7 @@
 ---
 title: Default permissions and access quick reference
-titleSuffix: Azure Codex & TFS
-description: At-a-glance view of permissions and access levels for common user tasks for Azure Codex applications & Team Foundation Server 
+titleSuffix: VSTS & TFS 
+description: At-a-glance view of permissions and access levels for common user tasks for Visual Studio Team Services and Team Foundation Server 
 ms.prod: devops
 ms.technology: devops-security
 ms.assetid: B656A277-BA3D-472D-824D-CDD4E067053E
@@ -14,11 +14,11 @@ ms.date: 02/12/2018
 monikerRange: '>= tfs-2013'
 ---
 
-# Default permissions and access  
+# Default permissions and access for VSTS and TFS 
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-To connect and use the functions and features that Azure Codex and Team Foundation Server (TFS) provides, users must be added to a group with the appropriate permissions. The most common built-in groups include Readers, Contributors, and Project Administrators. These groups are assigned the default permissions as listed below. 
+To connect and use the functions and features that VSTS and TFS provides, users must be added to a group with the appropriate permissions. The most common built-in groups include Readers, Contributors, and Project Administrators. These groups are assigned the default permissions as listed below. 
 
 In addition to permissions, access to select features are controlled by the access level assigned to a user. Contributors and administrators should be added to Basic (paid) access. Stakeholder access is available to support free access to a limited set of features by an unlimited set of stakeholders. 
 
@@ -29,7 +29,7 @@ For a complete reference of all built-in groups and permissions, see [Permission
 
 You can connect to your code from the Code hub or the web portal, and using Xcode, Eclipse, IntelliJ, Android Studio, Visual Studio, Visual Studio Code. For an overview of code features and functions, see [Git](../git/overview.md) and [Use Team Foundation Version Control (TFVC)](../tfvc/overview.md). Stakeholders have no access to the Code hub or its features.
 
-From the project admin content for Version Control, you can [set permissions on a repository](set-git-tfvc-repository-permissions.md). From the **Code>Branches** page, you can [set permissions for a specific branch and set branch policies](../git/branch-permissions.md). 
+From the team project admin content for Version Control, you can [set permissions on a repository](set-git-tfvc-repository-permissions.md). From the **Code>Branches** page, you can [set permissions for a specific branch and set branch policies](../git/branch-permissions.md). 
 
 ### Git
 [!INCLUDE [temp](_shared/code-git.md)]
@@ -57,7 +57,7 @@ Feeds have three levels of access: Owners, Contributors, and Readers. Owners can
 
 You can define and manage manual tests from the web portal, **Test** hub. For an overview of manual test features and functions, see [Testing overview](../manual-test/index.md).  
 
-You set [test permissions at the project level](set-project-collection-level-permissions.md) from the admin context **Security** page.  
+You set [test permissions at the team project level](set-project-collection-level-permissions.md) from the admin context Security page.  
 
 [!INCLUDE [temp](_shared/test.md)]
 
@@ -79,14 +79,29 @@ The team administrator role supports configuration of team settings. To be added
 
 ## Charts, dashboards, and other web portal features 
 
-You can define and manage dashboards from the web portal, **Dashboard** hub. For an overview of dashboard and chart features, see [Dashboards](../report/overview.md). 
+You can define and manage dashboards from the web portal, **Dashboard** hub. For an overview of dashboard and chart features, see [Dashboards](../report/dashboards/overview.md). 
 
-You set [dashboard permissions at the team level](../report/dashboard-permissions.md) from the team dashboard page. 
+You set [dashboard permissions at the team level](../report/dashboards/dashboard-permissions.md) from the team dashboard page. 
 
 
 [!INCLUDE [temp](_shared/report.md)]
 
-## Notifications, alerts, and collaboration tools 
+
+
+::: moniker range="vsts"
+
+## Analytics
+
+From the **Analytics** hub, you can create and manage Analytics views. An Analytics view provides a simplified way to specify the filter criteria for a Power BI report based on the Analytics Service data store. The Analytics Service is the reporting platform for VSTS. To learn more, see [What is the Analytics Service?](../report/analytics/what-is-analytics.md). 
+
+You set [permissions](../report/analytics/analytics-security.md) for the service at the project level, and for shared Analytics views at the object level. 
+
+[!INCLUDE [temp](_shared/analytics.md)]
+
+
+::: moniker-end
+
+## Notifications, alerts, and team collaboration tools 
 
 To manage notifications, see [Manage personal notifications](../notifications/manage-personal-notifications.md) and [Manage team notifications](../collaborate/manage-team-notifications.md).
 
@@ -97,11 +112,13 @@ To manage notifications, see [Manage personal notifications](../notifications/ma
 
  
 
-## Related articles
 
-- [Add users to a project](../security/add-users-team-project.md)  
+
+
+## Related notes
+
+- [Add users to a project or team](../security/add-users-team-project.md)  
 - [Permissions and groups reference](permissions.md)  
-- [Manage users and access](../accounts/add-account-users-assign-access-levels.md) (VSTS) 
 - [About access levels](access-levels.md)
 - [Work in the web portal](../user-guide/work-web-portal.md) 
 
