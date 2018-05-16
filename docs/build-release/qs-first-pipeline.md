@@ -30,13 +30,13 @@ We'll show you how to use TFS to create a build that prints "Hello world" and th
 
 ::: moniker range="vsts"
 
-[!INCLUDE [include](../_shared/ci-cd-prerequisites-vsts.md)]
+[!INCLUDE [include](_shared/ci-cd-prerequisites-vsts.md)]
 
 ::: moniker-end
 
 ::: moniker range="< vsts"
 
-* An [agent](../actions/agents/v2-windows.md) that can run build and release jobs. You must have Powershell installed on the agent machine.
+* An [agent](actions/agents/v2-windows.md) that can run build and release jobs. You must have Powershell installed on the agent machine.
 
 ::: moniker-end
 
@@ -196,7 +196,7 @@ drop
 
 > Artifacts are the files that you want your build to produce. Artifacts can be nearly anything your team needs to test or deploy your app. For example, you've got a .DLL and .EXE executable files and .PDB symbols file of a C# or C++ .NET Windows app.
 >
-> To enable you to produce artifacts, we provide tools such as copying with pattern matching, and a staging directory in which you can gather your artifacts before publishing them. See [Artifacts in Team Build](../concepts/definitions/build/artifacts.md).
+> To enable you to produce artifacts, we provide tools such as copying with pattern matching, and a staging directory in which you can gather your artifacts before publishing them. See [Artifacts in Team Build](concepts/definitions/build/artifacts.md).
 
 ## Enable continuous integration (CI)
 
@@ -204,7 +204,7 @@ drop
 
 1. Enable **Continuous integration**.
 
->  A continuous integration trigger on a build pipeline indicates that the system should automatically queue a new build whenever a code change is committed. You can make the trigger more general or more specific, and also schedule your build (for example, on a nightly basis). See [Build triggers](../concepts/definitions/build/triggers.md).
+>  A continuous integration trigger on a build pipeline indicates that the system should automatically queue a new build whenever a code change is committed. You can make the trigger more general or more specific, and also schedule your build (for example, on a nightly basis). See [Build triggers](concepts/definitions/build/triggers.md).
 
 ## Save and queue the build
 
@@ -406,7 +406,7 @@ Now you're ready to define a release pipeline that runs a script in two environm
 
 > A release pipeline is a collection of environments to which the application build artifacts are deployed. It also defines the actual deployment process for each environment, as well as how the artifacts are promoted from one environment to another.
 >
-> Also, notice that we used some variables in our script arguments. In this case, we used [release variables](../concepts/definitions/release/variables.md) instead of the build variables we used for the build pipeline.
+> Also, notice that we used some variables in our script arguments. In this case, we used [release variables](concepts/definitions/release/variables.md) instead of the build variables we used for the build pipeline.
 
 ## Deploy a release
 
@@ -485,7 +485,7 @@ Write-Host "Now that you've got CI/CD, you can automatically deploy your app eve
  ::: moniker-end
 
 > In many cases, you probably would want to edit the release process so that the production deployment happens
-  only after some testing and approvals are in place. See [Approvals and gates overview](../concepts/definitions/release/approvals/index.md).
+  only after some testing and approvals are in place. See [Approvals and gates overview](concepts/definitions/release/approvals/index.md).
 
 <a name="next-steps"></a>
 ## Next steps

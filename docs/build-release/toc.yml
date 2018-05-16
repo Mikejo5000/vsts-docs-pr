@@ -4,10 +4,6 @@
   items:
   - name: About Build and Release
     href: overview.md
-  - name: About Deploying to Azure
-    href: overview-azure.md
-  - name: About Continuous Testing
-    href: test/index.md
 - name: Quickstarts
   items:
     - name: Your first build and release
@@ -16,24 +12,24 @@
       href: qs-yaml-pipeline.md
     - name: Azure DevOps project
       href: qs-devops-project.md
-- name: Programming Languages
+- name: Languages
   items:
     - name: Android
-    - name: C
+    - name: C/C++
     - name: C#
       href: languages/c-sharp.md
-    - name: C++
     - name: F#
       href: languages/c-sharp.md
     - name: Go
+    - name: iOS
     - name: Java
     - name: JavaScript
     - name: PHP
     - name: Python
     - name: Ruby
-    - name: Swift
     - name: Visual Basic
       href: languages/c-sharp.md
+    - name: Xamarin
 - name: Deployment Targets
   items:
   - name: Azure Container Registry
@@ -51,16 +47,6 @@
   - name: Windows VM
 - name: Concepts
   items:
-  - name: Agents
-    items:
-    - name: Build and release agents
-      href: concepts/agents/agents.md
-    - name: Agent pools and queues
-      href: concepts/agents/pools-queues.md
-    - name: Hosted agents
-      href: concepts/agents/hosted.md
-    - name: Deployment groups
-      href: concepts/definitions/release/deployment-groups/index.md
   - name: Builds
     items:
     - name: Artifacts
@@ -100,7 +86,17 @@
       href: concepts/definitions/release/env-templates.md
     - name: Releases and deployments
       href: concepts/releases/index.md
-  - name: Process
+  - name: Agents
+    items:
+    - name: Build and release agents
+      href: concepts/agents/agents.md
+    - name: Agent pools and queues
+      href: concepts/agents/pools-queues.md
+    - name: Hosted agents
+      href: concepts/agents/hosted.md
+    - name: Deployment groups
+      href: concepts/definitions/release/deployment-groups/index.md
+  - name: Common
     items:
     - name: Tasks
       href: concepts/process/tasks.md
@@ -108,15 +104,8 @@
       href: concepts/process/phases.md
     - name: Conditions
       href: concepts/process/conditions.md
-  - name: Licensing
-    items:
-    - name: Pipelines in TFS
-      href: concepts/licensing/concurrent-pipelines-tfs.md
-    - name: Pipelines in VSTS
-      href: concepts/licensing/concurrent-pipelines-ts.md
-  - name: Library
-    href: concepts/library/index.md
-    items:
+    - name: Retention policies
+      href: concepts/policies/retention.md
     - name: Variable groups
       href: concepts/library/variable-groups.md
     - name: Task groups
@@ -125,8 +114,12 @@
       href: concepts/library/service-endpoints.md
     - name: Secure files
       href: concepts/library/secure-files.md
-  - name: Retention policies
-    href: concepts/policies/retention.md
+  - name: Licensing
+    items:
+    - name: Pipelines in TFS
+      href: concepts/licensing/concurrent-pipelines-tfs.md
+    - name: Pipelines in VSTS
+      href: concepts/licensing/concurrent-pipelines-ts.md
 - name: How-to Guides
   items:
   - name: Continuous integration

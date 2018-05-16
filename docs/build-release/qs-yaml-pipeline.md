@@ -18,7 +18,7 @@ If you manage your code in GitHub or in Visual Studio Team Services (VSTS) Git, 
 
 ## Prerequisites
 
-[!INCLUDE [include](../_shared/ci-cd-prerequisites-vsts.md)]
+[!INCLUDE [include](_shared/ci-cd-prerequisites-vsts.md)]
 
 ## Get the sample code
 
@@ -37,11 +37,11 @@ Get the code for the sample application into your own GitHub or VSTS repository.
 
 # [VSTS Git repo](#tab/gitvsts)
 
-[!INCLUDE [include](../apps/_shared/get-sample-code-vsts.md)]
+[!INCLUDE [include](apps/_shared/get-sample-code-vsts.md)]
 
 # [GitHub repo](#tab/github)
 
-[!INCLUDE [include](../apps/_shared/get-sample-code-github.md)]
+[!INCLUDE [include](apps/_shared/get-sample-code-github.md)]
 
 ---
 
@@ -137,7 +137,7 @@ Back in VSTS:
 
 ## View the build summary
 
-[!INCLUDE [include](../apps/_shared/view-build-summary.md)]
+[!INCLUDE [include](apps/_shared/view-build-summary.md)]
 
 ## Next steps
 

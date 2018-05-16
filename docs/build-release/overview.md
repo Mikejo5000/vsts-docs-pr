@@ -27,13 +27,13 @@ Continuous Testing (CT) on-premises or in the cloud is the use of automated buil
 
 The starting point for configuring CI and CD for your applications is to have your source code in a version control system. VSTS and TFS support two forms of version control - Git and Team Foundation Version Control. The Build service integrates with both of these version control systems. Once you have configured CI, any changes you push to your version control repository will be automatically built and validated. You can also manage your source code in Subversion, Bitbucket, GitHub, or any other Git repository. The Build service integrates with all of these version control systems.
 
-## Application types
+## Languages
 
-To configure CI, you create a build definition. A build definition is a representation of the automation process that you want to run to build and test your application. The automation process is defined as a collection of tasks. VSTS and TFS have a number of tasks to build and test your application. For example, tasks exist to build .Net, Java, Node, Android, Xcode, and C++ applications. Similarly, there are tasks to run tests using a number of testing frameworks and services. You can also run command line, PowerShell, or Shell scripts in your automation.
+To configure CI, you set up a build pipeline. A build pipeline is a representation of the automation process that you want to run to build and test your application. You can set up the build pipeline using either the web designer or a YAML file (VSTS only). VSTS and TFS have a number of tasks to build and test your application. For example, tasks exist to build .NET, Java, C++, Go, JavaScript, PHP, Pythin, Ruby, and iOS applications. Similarly, there are tasks to run tests using a number of testing frameworks and services. You can also run command line, PowerShell, or Shell scripts in your automation.
 
 ## Deployment targets
 
-Once you have continuous integration in place, the next step is to create a release definition to automate the deployment of your application to one or more environments. This automation process is again defined as a collection of tasks. VSTS and TFS support deploying your application to virtual machines, containers, on-premises and cloud platforms, or PaaS services. You can also publish your mobile application to a store.
+Once you have continuous integration in place, the next step is to create a release pipeline to automate the deployment of your application to one or more environments. This automation process is again defined as a collection of tasks. VSTS and TFS support deploying your application to virtual machines, containers, on-premises and cloud platforms, or PaaS services. You can also publish your mobile application to a store.
 
 ## Package formats
 
