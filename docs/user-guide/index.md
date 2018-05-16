@@ -8,7 +8,7 @@ ms.assetid: 00f4ed452-fbb8-45f9-8f0a-343702aac5b8
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 08/01/2018
+ms.date: 07/15/2018
 monikerRange: '>= tfs-2013'
 ---
 # New User Guide

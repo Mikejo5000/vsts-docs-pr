@@ -10,7 +10,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: quickstart
 monikerRange: 'vsts'
-ms.date: 08/01/2018
+ms.date: 07/15/2018
 ---
 
 # Plan and track work 

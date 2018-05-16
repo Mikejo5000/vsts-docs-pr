@@ -9,7 +9,7 @@ ms.assetid:
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 08/01/2018
+ms.date: 07/15/2018
 ---
 # Licensing and billing for Azure Codex
 

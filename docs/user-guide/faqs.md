@@ -7,7 +7,7 @@ ms.assetid: 50CA182B-D305-41A9-8C8F-9EA80A89ED3C
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 08/01/2018
+ms.date: 07/15/2018
 monikerRange: '>= tfs-2013'
 ---
 

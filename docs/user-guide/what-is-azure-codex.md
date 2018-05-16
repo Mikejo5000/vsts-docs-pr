@@ -9,7 +9,7 @@ monikerRange: '>= tfs-2013'
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 08/01/2018
+ms.date: 07/15/2018
 ms.topic: overview
 ---
 # What is Azure Codex?
