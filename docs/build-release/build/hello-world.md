@@ -36,7 +36,7 @@ We'll show you how to use TFS to create a build that prints "Hello world" and th
 
 ::: moniker range="< vsts"
 
-* An [agent](../concepts/agents/v2-windows.md) that can run build and release jobs. You must have Powershell installed on the agent machine.
+* An [agent](../actions/agents/v2-windows.md) that can run build and release jobs. You must have Powershell installed on the agent machine.
 
 ::: moniker-end
 
