@@ -57,7 +57,7 @@ You define both areas and iterations from the **Work>Project configuration** hub
 0. Choose **Iterations**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Settings hub, Open Work>Project Configuration>Iterations page](_img/areas/choose-iterations.png)   
+	> ![Settings hub, Open Work>Project Configuration>Iterations page](_img/iterations/choose-iterations.png)   
 
 ::: moniker-end
 
