@@ -18,10 +18,13 @@
       href: release/getting-started-devops-project.md
 - name: Programming Languages
   items:
+    - name: Android
     - name: C
     - name: C#
+      href: languages/c-sharp.md
     - name: C++
     - name: F#
+      href: languages/c-sharp.md
     - name: Go
     - name: Java
     - name: JavaScript
@@ -30,6 +33,7 @@
     - name: Ruby
     - name: Swift
     - name: Visual Basic
+      href: languages/c-sharp.md
 - name: Deployment Targets
   items:
   - name: Azure Container Registry

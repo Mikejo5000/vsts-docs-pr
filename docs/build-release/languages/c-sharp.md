@@ -42,14 +42,16 @@ TFS provides first class integration with a number of build environments includi
 
 ::: moniker-end
 
-### .NET
-
 # [Web](#tab/web)
 
 Use one of the following templates as you set up CI for your project.
 
 * .NET Desktop - This template can be used for any Visual Studio solution.
 * ASP.NET - This template is similar to .NET Desktop, but it also packages the output into a web deploy package.
+* ASP.NET Core - This template builds ASP.NET Core applications targeting .NET Core.
+* ASP.NET Core (.NET Framework) - Use this to build ASP.NET Core applications targeting full .NET framework.
+
+Each of these templates has tasks to restore the dependent packages from a package feed, build the project, run unit tests and publish test results, package the output in the case of web applications, and publish the output as an artifact.
 
 # [YAML](#tab/yaml)
 
@@ -83,5 +85,52 @@ steps:
     configuration: '<build configuration>'
 ```
 
+Add the following to .vsts-ci.yml to build a .NET Core project.
+
+```yaml
+queue: Hosted VS2017
+
+variables:
+  BuildProjects: '**/*.csproj'
+  BuildConfiguration: release
+
+steps:
+- task: DotNetCoreCLI@2
+  inputs:
+    command: restore
+    projects: '$(BuildProjects)'
+
+- task: DotNetCoreCLI@2
+  inputs:
+    projects: '$(BuildProjects)'
+    arguments: '--configuration $(BuildConfiguration)'
+```
+
 ::: moniker-end
 ---
+
+## Restoring dependencies
+
+Use the NuGet tool to restore dependencies for your .NET projects. Since there are several changes from one version of NuGet to another, it is recommended that you control the specific version of NuGet tool you use in your build pipeline through the use of [NuGet tool installer task](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/NuGetToolInstallerV0). This task allows you to specify the version of NuGet tool that must be installed on the agent, if it is not already present.
+
+The [NuGet task](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/NuGetV0) restores all the dependencies in your project. This task supports reading the dependency information from the projects in your solution, packages.config, or project.json. The packages can be restored from NuGet.org, from VSTS package management service, or from another feed that you specify. You can specific a custom configuration by checking in a NuGet.config file into your repository.
+
+For more information about restoring NuGet packages, see [Restore Package Management NuGet Packages in Build](../packages/nuget-restore.md).
+
+Use the [Dotnet task](../tasks/build/dotnet-core.md) with `restore` option to restore dependencies for your .NET Core projects. The packages can be restored from NuGet.org, from VSTS package management service, or from another feed that you specify. You can specific a custom configuration by checking in a NuGet.config file into your repository.
+
+## Unit testing
+
+## Publishing symbols
+
+## Packaging outputs
+
+## Publishing artifacts
+
+## Project type specific considerations
+
+### WPF projects
+
+### Database projects
+
+### SSRS/SSIS projects
