@@ -33,7 +33,6 @@
 - name: Deployment Targets
   items:
   - name: Azure Container Registry
-  - name: Azure Government Cloud
   - name: Azure Kubernetes Service
   - name: Azure Stack
   - name: Azure Web App

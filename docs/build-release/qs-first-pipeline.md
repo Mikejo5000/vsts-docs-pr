@@ -308,7 +308,7 @@ Write-Host Trigger: $trigger
 
  ![build summary powershell script log](_img/first-pipeline/build-summary-powershell-script-log.png)
 
-> We just introduced the concept of build variables in these steps. We printed the value of a variable that is automatically predefined and initialized by the system. You can also define custom variables and use them either in arguments to your tasks, or as environment variables within your scripts. To learn more about variables, see [Build variables](../concepts/definitions/build/variables.md).
+> We just introduced the concept of build variables in these steps. We printed the value of a variable that is automatically predefined and initialized by the system. You can also define custom variables and use them either in arguments to your tasks, or as environment variables within your scripts. To learn more about variables, see [Build variables](concepts/definitions/build/variables.md).
 
 ## You've got a build pipeline. What's next
 

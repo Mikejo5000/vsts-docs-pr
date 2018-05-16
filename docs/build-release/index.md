@@ -27,33 +27,35 @@ VSTS and Team Foundation Server help you implement a continuous integration (CI)
 * [Build a repo with YAML](qs-yaml-pipeline.md)
 * [Azure DevOps project](qs-devops-project.md)
 
-### Learn how to build your app
+## Languages
 
 <!-- Converting to icon48 format, this gets cleaner in YAML -->
 <div class="ico48Case halfStack">
-<div class="ico48Link"><a href="apps/mobile/android.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/en-us/media/logos/logo_android.svg"><span>Android</span></a></div>
-<div class="ico48Link"><a href="apps/aspnet/build-aspnet-4.md"><img width="48" height="48" alt="" src="_img/index/logo_net.svg"><span>ASP.NET</span></a></div>
-<div class="ico48Link"><a href="apps/aspnet/build-aspnet-core.md"><img width="48" height="48" alt="" src="_img/index/logo_net.svg"><span>ASP.NET Core</span></a></div>
-<div class="ico48Link"><a href="apps/c-cpp/gcc.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg"><span>C/C++ with GCC</span></a></div>
-<div class="ico48Link"><a href="apps/windows/cpp.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_visual-studio.svg"><span>C/C++ with VC++</span></a></div>
-<div class="ico48Link"><a href="apps/containers/build.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_docker.svg"><span>Docker image</span></a></div>
-<div class="ico48Link"><a href="apps/java/build-gradle.md"><img width="48" height="48" alt="" src="_img/index/logo_gradle.png"><span>Gradle</span></a></div>
-<div class="ico48Link"><a href="apps/java/build-maven.md"><img width="48" height="48" alt="" src="_img/index/logo_maven.svg"><span>Maven</span></a></div>
-<div class="ico48Link"><a href="apps/windows/dot-net.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_NET.svg"><span>.NET Desktop</span></a></div>
-<div class="ico48Link"><a href="apps/nodejs/build-gulp.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_nodejs.svg"><span>Node.js</span></a></div>
-<div class="ico48Link"><a href="apps/windows/universal.md"><img width="48" height="48" alt="" src="_img/index/logo_uwp.svg"><span>UWP</span></a></div>
-<div class="ico48Link"><a href="apps/mobile/xamarin.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_xamarin.svg"><span>Xamarin</span></a></div>
-<div class="ico48Link"><a href="apps/mobile/xcode-ios.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_xcode.svg"><span>Xcode</span></a></div>
+<div class="ico48Link"><a href=""><img width="48" height="48" alt="" src="https://docs.microsoft.com/en-us/media/logos/logo_android.svg"><span>Android</span></a></div>
+<div class="ico48Link"><a href=""><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg"><span>C/C++</span></a></div>
+<div class="ico48Link"><a href="languages/c-sharp.md"><img width="48" height="48" alt="" src="_img/index/logo_net.svg"><span>C#</span></a></div>
+<div class="ico48Link"><a href=""><img width="48" height="48" alt="" src="https://docs.microsoft.com/vsts/build-release/_img/index/logo_go.svg"><span>Go</span></a></div>
+<div class="ico48Link"><a href=""><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_xcode.svg"><span>iOS</span></a></div>
+<div class="ico48Link"><a href=""><img width="48" height="48" alt="" src="https://docs.microsoft.com/vsts/build-release/_img/index/logo_go.svg"><span>JavaScript</span></a></div>
+<div class="ico48Link"><a href=""><img width="48" height="48" alt="" src="https://docs.microsoft.com/vsts/build-release/_img/index/logo_go.svg"><span>PHP</span></a></div>
+<div class="ico48Link"><a href=""><img width="48" height="48" alt="" src="https://docs.microsoft.com/vsts/build-release/_img/index/logo_go.svg"><span>Python</sVisual Basic</span></a></div>
+<div class="ico48Link"><a href=""><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_xamarin.svg"><span>Xamarin</span></a></div>
 </div>
 
-### Learn how to deploy your app
+## Deployment targets
 
 <!-- Converting to icon48 format, this gets cleaner in YAML -->
 <div class="ico48Case halfStack">
-<div class="ico48Link"><a href="apps/cd/azure/aspnet-core-to-azure-webapp.md"><img width="48" height="48" alt="" src="_img/index/app-service-web.png"><span>Azure Web App</span></a></div>
-<div class="ico48Link"><a href="apps/cd/deploy-linuxvm-deploygroups.md"><img width="48" height="48" alt="" src="_img/index/virtualmachine.png"><span>Linux VM</span></a></div>
-<div class="ico48Link"><a href="apps/cd/deploy-docker-webapp.md"><img width="48" height="48" alt="" src="_img/index/app-service-web.png"><span>Web App for Containers</span></a></div>
-<div class="ico48Link"><a href="apps/cd/deploy-webdeploy-iis-deploygroups.md"><img width="48" height="48" alt="" src="_img/index/virtualmachine.png"><span>Windows VM</span></a></div>
+<div class="ico48Link"><a href=""><img width="48" height="48" alt="" src="_img/index/app-service-web.png"><span>Azure Container Registry</span></a></div>
+<div class="ico48Link"><a href=""><img width="48" height="48" alt="" src="_img/index/app-service-web.png"><span>Azure Kubernetes Service</span></a></div>
+<div class="ico48Link"><a href=""><img width="48" height="48" alt="" src="_img/index/app-service-web.png"><span>Azure Stack</span></a></div>
+<div class="ico48Link"><a href="targets/web-app.md"><img width="48" height="48" alt="" src="_img/index/app-service-web.png"><span>Azure Web App</span></a></div>
+<div class="ico48Link"><a href=""><img width="48" height="48" alt="" src="_img/index/app-service-web.png"><span>Azure Web App for Containers</span></a></div>
+<div class="ico48Link"><a href=""><img width="48" height="48" alt="" src="_img/index/app-service-web.png"><span>Azure SQL Database</span></a></div>
+<div class="ico48Link"><a href=""><img width="48" height="48" alt="" src="_img/index/virtualmachine.png"><span>Linux VM</span></a></div>
+<div class="ico48Link"><a href=""><img width="48" height="48" alt="" src="_img/index/app-service-web.png"><span>SCVMM</span></a></div>
+<div class="ico48Link"><a href=""><img width="48" height="48" alt="" src="_img/index/app-service-web.png"><span>VMware</span></a></div>
+<div class="ico48Link"><a href=""><img width="48" height="48" alt="" src="_img/index/virtualmachine.png"><span>Windows VM</span></a></div>
 </div>
 
 ## Videos
