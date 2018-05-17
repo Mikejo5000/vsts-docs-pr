@@ -1,5 +1,5 @@
 ---
-title: Describes the services provided by Team Foundation Server
+title: Describes learning devops
 titleSuffix: Azure Codex
 description: Understand how you can get Azure Codex and start using it for free 
 ms.technology: devops-new-user 
@@ -13,7 +13,7 @@ ms.date: 12/07/2016
 ---
 
 
-# How to start Azure Codex for free
+# Learn devops
 
 ::: moniker range=">= tfs-2013"
 

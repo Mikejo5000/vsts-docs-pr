@@ -1,5 +1,5 @@
 ---
-title: How to start to manage artifacts in Azure Codex
+title: How to create public projects in Azure Codex
 description: Understand 
 ms.technology: devops-new-user 
 ms.prod: devops
@@ -10,6 +10,6 @@ ms.author: chcomley
 author: chcomley
 ms.date: 07/15/2018
 ---
-# Start managing artifacts
+# Create a public project
 
 Some text here

@@ -12,7 +12,7 @@ ms.topic: overview
 ---
 
 
-# What is Azure Codex?
+# What is Azure Codex Project?
 
 Azure Codex is a cloud service for collaborating on code development. It provides an integrated set of features that you access through your web browser or IDE client, including: 
 

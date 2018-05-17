@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2013'
 ---
 
 
-# Navigating in the web portal 
+# Navigate in the web portal 
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 

@@ -13,9 +13,9 @@ ms.date: 07/15/2018
 monikerRange: 'vsts'
 ---
 
-# Sign up for a free VSTS account and invite others to join your team
+# Sign up for a free Azure Codex organization and invite others to join your team
 
-**VSTS**
+**Azure Codex**
 
 Sign up for a VSTS
 account to upload and share code in a free unlimited private

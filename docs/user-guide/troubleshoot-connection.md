@@ -13,13 +13,13 @@ ms.date: 02/26/2018
 monikerRange: '>= tfs-2013'
 ---
 
-# Troubleshoot connecting to a team project in VSTS or TFS
+# Troubleshoot connecting to a team project in Azure Codex or TFS
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 ::: moniker range="vsts"
 
-## Troubleshoot VSTS connectivity
+## Troubleshoot Azure Codex connectivity
 
 As a first step in resolving connectivity issues with VSTS, do the following:
 
