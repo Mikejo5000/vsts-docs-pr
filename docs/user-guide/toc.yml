@@ -1,4 +1,4 @@
-- name: New User Guide
+- name: User Guide
   href: index.md
 - name: Overview
   items:
@@ -27,7 +27,7 @@
   - name: Start testing code
     href: add-run-manual-tests.md
   - name: Create an open source project
-    href: create-public-project.md
+    href: ../public/create-public-project.md
   - name: Get started from GitHub
     href: get-started-from-github.md
   - name: Get extensions
@@ -40,13 +40,11 @@
   items:
   - name: Add admins or set permissions
     href: ../security/set-project-collection-level-permissions.md?toc=/vsts/userguide/toc.json&bc=/vsts/userguide/breadcrumb/toc.json&view=vsts
-  - name: Set up billing
-    href: ../billing/set-up-billing-for-your-account-vs.md?toc=/vsts/userguide/toc.json&bc=/vsts/userguide/breadcrumb/toc.json&view=vsts
   - name: Set favorites
     href: ../collaborate/set-favorites.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
   - name: Follow work & pull requests
     href: ../collaborate/follow-work-items.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
-  - name: Collaborate with Codex
+  - name: Collaborate with Azure Codex
     href: ../security/get-started-stakeholder.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
   - name: Get started as an admin
     items:
