@@ -19,7 +19,7 @@ ms.date: 05/14/2018
 
 Prior to public project support, all VSTS projects were private, meaning that only authenticated users with access to the project could see or interact with it. A public project allows non-member users to view the contents of that project in a read-only state. 
 
-> A non-member user is either **anonymous** (not authenticated to VSTS) or **public** (are authenticated to VSTS, but do not belong to the account).
+> A non-member user is either **anonymous** (not authenticated to VSTS) or **public** (are authenticated to VSTS, but does not belong to the account).
 
 Non-member users generally see the same views as authenticated users, with non-public functionality such as settings and actions (such as queue build) either hidden or disabled.
 
