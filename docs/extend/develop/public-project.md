@@ -33,7 +33,7 @@ Use this checklist to help decide if you should make your extension available to
 * Data presented by your extension is relevant to non-member users
 * Your extension contributes capabilities at the project level
 * Your extension contributes to areas of the product that are accessible by non-member users
-* Your extension does not extend or rely on features that are unavailable to non-member users, for example the Data Service or certain VSTS REST APIs. See the [Limitations](#limitations) section below for more details.
+* Your extension does not extend or rely on features that are unavailable to non-member users, for example the extension data service or certain VSTS REST APIs. See the [Limitations](#limitations) section below for more details.
 
 ## Contribution visibility
 
@@ -124,18 +124,18 @@ If you want to make some or all aspects of your contribution available to public
 
 ### VSS SDK methods
 
-The core SDK script, VSS.SDK.js, allows web extensions to communicate with the parent frame to perform operations like initializing communication and getting context information about the current user. The following VSS SDK methods are not supported for non-member users:
+The core SDK script (VSS.SDK.js) allows web extensions to communicate with the parent frame to perform operations like initializing communication and getting context information about the current user. The following VSS SDK methods are not supported for non-member users:
 
 * `VSS.getAccessToken()`
 * `VSS.getAppToken()`
 
 ### Extension data service
 
-Because data managed by the [extension data service](./data-storage.md) is not scoped or secured to a project, non-member users are prevented from reading or writing any type of extension data. 
+Because data managed by the [extension data service](data-storage.md) is not scoped or secured to a project, non-member users are prevented from reading or writing any type of extension data. 
 
 #### Example: handling data access errors
 
-If the data service is unable to access the data service due to permission limitations by the calling user, the promise returned from the call to `getValue` will be rejected. The error passed to the reject function will have a name that can be checked to understand why the call to read or write data failed.
+If the current user does not have permission to read or write extension data, the promise returned from the call to `getValue` will be rejected. The error passed to the reject function will have a name (`AccessCheckException`) that can be checked to understand if the call failed due to a permission error.
 
 ```javascript
 VSS.getService(VSS.ServiceIds.ExtensionData).then(function(dataService) {
@@ -216,9 +216,7 @@ Just like other types of contributions, the visibility of dashboard widget contr
 
 ### Widget settings
 
-In addition to controlling visibility of the widget to non-member users, the dashboard framework provides an optional, open-form storage mechanism for widget settings. Two mechanisms are available for indicate whether a widget's settings are available for use by non-member users in public projects. 
-
-A widget with configurable settings that is visible to non-member users **must** follow one of the following patterns. Not doing so will block the widget from surfacing to these users.
+The dashboard framework provides support for widgets to store configuration settings. To ensure these settings are properly protected from non-member users and not surfacing settings that may refer to other (non-public) projects in the account, the widget developer must indicate whether its settings are project-scoped (meaning the settings can be seen by non-member users in the context of a public project). Not properly marking a widget settings will prevent the widget from being available to a non-member user viewing a dashboard in a public project.
 
 ### Pattern 1: widget declares its instances only store project-specific settings
 
