@@ -1,6 +1,5 @@
 ---
-title: What access levels does VSTS & TFS support?
-titleSuffix: VSTS & TFS
+title: What access levels does Azure Codex support?
 description: Understand how access levels are used to support stakeholder, basic, advanced, or VS Enterprise access  
 ms.technology: devops-security
 ms.prod: devops
@@ -24,14 +23,14 @@ Make sure to set each user's access level based on what you've purchased for tha
 
 To add user accounts or groups to specific access levels, see the following topics: 
 
-- For VSTS: [Manage users and access in VSTS](../accounts/add-account-users-assign-access-levels.md)
+- For Azure Codex: [Manage users and access in Azure Codex](../accounts/add-account-users-assign-access-levels.md)
 - For on-premises TFS: [Change access levels](change-access-levels.md). 
 
 When you add a user or group to a team or team project, they're automatically granted access to those features supported by the default access level, which is Basic. This provides most users all the features they need. For a simplified overview of the permissions assigned to the most common groups&#151;Readers, Contributors, and Project Administrators&#151;as well as the Stakeholder access group, see [Permissions and access](permissions-access.md).  
 
 The systems employ these access levels:
 
-- Stakeholders: provides limited access, unlimited assignments  
+- Stakeholders: provides partial access, can be assigned to unlimited users  
 - Basic: provides access to most features  
 - VS Enterprise (TFS 2017.1 and later versions): provides access to premium features
 - Advanced (TFS 2017 and earlier versions): provides access to premium features 
@@ -44,7 +43,7 @@ Assign **Basic** access to all users with a Visual Studio subscriptions and paid
 
 ## Stakeholder
 
-Assign **Stakeholder** access to those users who need to enter bugs, view backlogs, boards, charts, and dashboards, but who don't have a TFS CAL. Stakeholders can also view releases and manage release approvals. Stakeholder access is free. 
+Assign **Stakeholder** access to those users who need to enter bugs, view backlogs, boards, charts, and dashboards, but who don't have a TFS CAL. Stakeholders also have full access Codex Pipelines if the Preview feature is on, otherwise they can view releases and manage release approvals. In public projects, Stakeholders have partial access to Codex Agile and full access to the rest of Codex. Stakeholder access is free. 
 
 <img src="_img/access-levels-2017-stakeholder.png" alt="Stakeholder access features" style="border: 1px solid #CCCCCC;" />  
 
