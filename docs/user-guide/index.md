@@ -43,10 +43,10 @@ Get started with a free account, share your code using Git, and track your work 
 
 ## Step-by-Step Tutorials
 
-- [Add admins or set permissions](..security/set-project-collection-level-permissions?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json&view=vsts&branch=features%2FCHCOMLEY_CODEX_4_30)
+- [Add admins or set permissions](../security/set-project-collection-level-permissions.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
 - [Set favorites](/vsts/collaborate/set-favorites?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
 - [Follow work and pull requests](../collaborate/follow-work-items.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
-- [Collaborate with Azure Codex](..security/get-started-stakeholder.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
+- [Collaborate with Azure Codex](../security/get-started-stakeholder.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
 - Get started as an admin
   - [Start project](start-project-admin.md)
   - [Start backlog](start-backlog-admin.md)
