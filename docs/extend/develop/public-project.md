@@ -153,7 +153,7 @@ VSS.getService(VSS.ServiceIds.ExtensionData).then(function(dataService) {
 
 A limited set of VSTS REST APIs are available to non-member users. This includes most account-level APIs and project-level APIs for features unavailable to non-member users in general. You should take this into consideration when deciding whether or not to make your extension available to non-member users.
 
-It is also recommended that you use version 5.0 and later APIs, as certain APIs are only available to non-member users starting with version 5.0.
+It is also recommended that you use version 5.0 and later APIs, as some APIs are only callable by non-member users starting with version 5.0.
 
 #### Identity references
 
@@ -263,12 +263,12 @@ In VSTS REST API version 5.0 and later, identities are returned as `IdentityRef`
 
 ### APIs
 
-Only project-scoped REST APIs can be invoked by an extension when the current user is not an account member. Any REST API call this is not scoped to a project will be rejected.
+Only project-scoped REST APIs can be invoked by an extension when the current user is not an account member. Any REST API call that is not scoped to a project will be rejected.
 
 ### Queries
 
 There are limitations for non-member users related to work item queries:
 
-* non-member users can only execute know queries (by ID or path)
-* Queries must be scoped to the current project. Any work items not belonging to the current project will be excluded.
-* non-member user cannot create new queries or execute WIQL queries
+* Non-member users can only execute known queries (by ID or path)
+* Queries must be scoped to the current project. Any work items not belonging to the current project will be excluded
+* Non-member user cannot create new queries or execute WIQL queries
