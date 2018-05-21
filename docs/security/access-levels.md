@@ -51,7 +51,7 @@ Assign **Stakeholder** access to an unlimited number of users for free. Stakehol
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
-Assign Stakeholder access to those users who need to enter bugs, view backlogs, boards, charts, and dashboards, but who don't have a TFS CAL. Stakeholders can also view releases and manage release approvals. Stakeholder access is free.
+Assign **Stakeholder** access to those users who need to enter bugs, view backlogs, boards, charts, and dashboards, but who don't have a TFS CAL. Stakeholders can also view releases and manage release approvals. Stakeholder access is free.
 
 <img src="_img/access-levels-2017-stakeholder.png" alt="Stakeholder access features" style="border: 1px solid #CCCCCC;" />  
 ::: moniker-end
