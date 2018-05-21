@@ -1,15 +1,16 @@
 ---
 title: Account and project scope queries
 titleSuffix: VSTS 
-description: How to query the OData Analytics service for an account or at the project-level  
+description: How to guide to query the OData Analytics service for an account or at the project-level in Visual Studio Team Services
 ms.prod: devops
 ms.technology: devops-analytics
-ms.assetid: 
 ms.date: 11/13/2017
 ms.reviewer: kokosins
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
 ms.topic: quickstart
+monikerRange: 'vsts'
 ms.date: 11/13/2017
 ---
 

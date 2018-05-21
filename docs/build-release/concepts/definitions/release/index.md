@@ -12,7 +12,7 @@ ms.date: 04/09/2018
 monikerRange: '>= tfs-2015'
 ---
 
-# Release definitions in Release Management
+# Release definitions and release names
 
 [!INCLUDE [version-rm-dev14](../../../_shared/version-rm-dev14.md)]
 
@@ -68,7 +68,7 @@ When specifying the format mask, you can use the following pre-defined variables
 |----------|-------------|
 | **Rev:rr** | An auto-incremented number with at least the specified number of digits. |
 | **Date / Date:MMddyy** | The current date, with the default format **MMddyy**. Any combinations of M/MM/MMM/MMMM, d/dd/ddd/dddd, y/yy/yyyy/yyyy, h/hh/H/HH, m/mm, s/ss are supported. |
-| **System.TeamProject** | The name of the team project to which this build belongs. |
+| **System.TeamProject** | The name of the project to which this build belongs. |
 | **Release.ReleaseId** | The ID of the release, which is unique across all releases in the project. |
 | **Release.DefinitionName** | The name of the release definition to which the current release belongs. |
 | **Build.BuildNumber** | The number of the build contained in the release. If a release has multiple builds, this is the number of the [primary build](artifacts.md#primary-source). |

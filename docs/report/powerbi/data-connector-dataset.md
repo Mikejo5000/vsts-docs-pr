@@ -1,13 +1,14 @@
 ---
 title: Dataset design for the Power BI VSTS Connector
 titleSuffix: VSTS
-description: Describes dataset that is created in Power BI for an Analytics View (VSTS)  
+description: Describes dataset that is created in Power BI for an Analytics View for Visual Studio Team Services 
 ms.technology: devops-analytics
 ms.prod: devops
 ms.assetid: 8E92B372-B312-4BAD-960A-B3CB0202E2A1  
 ms.manager: douge
 ms.reviewer: jozimm
 ms.author: kaelli
+author: KathrynEE
 ms.topic: reference
 monikerRange: 'vsts'
 ms.date: 04/04/2018

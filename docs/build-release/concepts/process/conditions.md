@@ -1,6 +1,6 @@
 ---
-title: Conditional task expressions
-description: Write custom conditions for running your task in VSTS or Microsoft Team Foundation Server (TFS)
+title: Conditional task expressions | VSTS or Team Foundation Server
+description: Learn about how you can write custom conditions for running your task in VSTS or Microsoft Team Foundation Server (TFS).
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
@@ -186,7 +186,7 @@ Alias to reference a build variable. For example:
 
 Some of the more useful predefined variables include:
 
-* `Build.Reason` which you an use to check whether the build was the result of a [build trigger](../../concepts/definitions/build/triggers.md), a [Git PR affected by a branch policy](../../../git/branch-policies.md), or a [TFVC gated check-in](../../../tfvc/check-folder-controlled-by-gated-check-build-process.md).
+* `Build.Reason` which you can use to check whether the build was the result of a [build trigger](../../concepts/definitions/build/triggers.md), a [Git PR affected by a branch policy](../../../git/branch-policies.md), or a [TFVC gated check-in](../../../tfvc/check-folder-controlled-by-gated-check-build-process.md).
 
 * `Build.SourceBranch`
 

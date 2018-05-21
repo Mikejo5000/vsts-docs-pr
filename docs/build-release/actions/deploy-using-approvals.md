@@ -1,6 +1,6 @@
 ---
 title: Use approvals and gates to control your deployment
-description: Use release approvals and release gates to control your deployment in VSTS and TFS
+description: Use a combination of manual deployment approvals, gates, and manual intervention to control your deployment in VSTS and TFS
 ms.assetid: 3D22D4B3-DE1F-482C-BBD4-475C829452C1
 ms.prod: devops
 ms.technology: devops-cicd
@@ -122,7 +122,7 @@ Intervention** task in your pipeline.
    ![Adding an Agentless phase to the task list](_img/deploy-using-approvals/add-agentless-phase.png)
 
    Several tasks, including the **Manual Intervention** task, can be used only in an
-   [agentless phase](../concepts/process/phases.md#agentless-phase). 
+   [agentless phase](../concepts/process/server-phases.md). 
 
 1. Choose **+** in the **Agentless phase** bar and add a **Manual Intervention** task to the phase. 
 

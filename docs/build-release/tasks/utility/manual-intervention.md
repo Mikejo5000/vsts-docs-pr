@@ -1,6 +1,6 @@
 ---
-title: Manual intervention task 
-description: Build and release task to pause an active deployment within an environment in VSTS and TFS
+title: Manual intervention task for Microsoft VSTS and TFS 
+description: Build and release task to pause an active deployment within an environment with a build or release definition in VSTS and TFS
 ms.assetid: 2717783B-7754-4888-9A79-8DB5EC74626A
 ms.prod: devops
 ms.technology: devops-cicd
@@ -20,7 +20,13 @@ monikerRange: 'vsts'
 
 ## Demands
 
-Can be used in only an [agentless phase](../../concepts/process/phases.md#agentless-phase) of a release definition.
+Can be used in only an [agentless phase](../../concepts/process/server-phases.md) of a release definition.
+
+::: moniker range="vsts"
+
+[!INCLUDE [temp](../_shared/yaml/ManualInterventionV8.8.md)]
+
+::: moniker-end
 
 ## Arguments
 
@@ -58,19 +64,3 @@ Users with **Manage deployment** permission on the environment can resume or rej
 For more information about using this task, see [Approvals and gates overview](../../concepts/definitions/release/approvals/index.md).
 
 Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/ManualIntervention).
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-(VSTS-only)
-
-```YAML
-- task: ManualIntervention@8
-  inputs:
-    instructions:
-    emailRecipients:
-#   onTimeout: reject # reject (default), resume
-```
-
-::: moniker-end

@@ -1,11 +1,15 @@
 ---
-title: Access data from Power BI desktop  
-description: How to access Analytics Service OData for Visual Studio Team Services (VSTS) from Power BI Desktop OData feed  
+title: Access Analytics Service data from the Power BI desktop
+titleSuffix: VSTS  
+description: How to access Analytics Service OData from a Power BI Desktop OData feed for Visual Studio Team Services  
 ms.prod: devops
 ms.technology: devops-analytics
+ms.topic: conceptual
 ms.assetid: b26f1d04-95ca-43d5-8333-176780f3980a  
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
+monikerRange: 'vsts'
 ms.date: 11/13/2017
 ---
 
@@ -15,7 +19,7 @@ ms.date: 11/13/2017
 
 You can access the Analytics Service data through the Power BI Desktop OData feed. This method works for any account that has alternate credentials enabled. OAuth (Organizational Accounts) is currently not supported. 
 
-##Accessing the VSTS OData feed
+## Accessing the VSTS OData feed
 1. Make sure you have installed the [VSTS Analytics extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics)
 
 2. Make sure you have configured the [permissions required to access the Analytics service](../analytics/analytics-security.md)

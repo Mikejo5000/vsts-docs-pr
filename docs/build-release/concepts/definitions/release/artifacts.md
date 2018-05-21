@@ -12,7 +12,7 @@ ms.date: 04/09/2018
 monikerRange: '>= tfs-2015'
 ---
 
-# Artifacts in Release Management
+# Release artifacts and artifact sources
 
 [!INCLUDE [version-rm-dev14](../../../_shared/version-rm-dev14.md)]
 
@@ -55,8 +55,15 @@ on the linking of artifacts to a release definition are:
   Note that the ability to automatically create releases
   is available for only some artifact sources.
 
-<!-- * **Trigger conditions** You can configure a release to be created automatically, or the deployment of a release to an environment to be triggered automatically, when only specific conditions on the artifacts are met. -->
-<!-- For example, you can configure releases to be automatically created only when a new build is produced from a certain branch.-->
+* **Trigger conditions**. You can configure a release to be created
+  automatically, or the deployment of a release to an environment
+  to be triggered automatically, when only specific conditions on the
+  artifacts are met. For example, you can configure releases to be
+  automatically created only when a new build is produced from a certain branch.
+
+* **Artifact versions**. You can configure a release to automatically use a specific
+  version of the build artifacts, to always use the latest version, or to allow you 
+  to specify the version when the release is created.
 
 * **Artifact variables**. Every artifact that is part
   of a release has metadata associated with it, exposed to [tasks](../../../tasks/index.md) through [variables](#art-vars).
@@ -98,15 +105,11 @@ application lifecycle process to produce or store
 artifacts. For example, you might use continuous
 integration systems such as Team Build, Jenkins, or
 TeamCity to produce artifacts. You might also use version control systems such as Git or
-TFVC to store your artifacts. <!-- You can also use
+TFVC to store your artifacts. Or you can use
 repositories such as Package Management in Visual Studio Team
-Services or a NuGet repository to store your artifacts. -->
+Services or a NuGet repository to store your artifacts.
 You can configure Release Management to deploy
 artifacts from all these sources.
-
-<!-- > [!NOTE]
-> Integration with Package Management and NuGet
-repositories is not yet available. -->
 
 By default, a release created from the release definition will use the
 latest version of the artifacts. At the time of linking an artifact source to a release definition,
@@ -124,6 +127,19 @@ If you link more than one set of artifacts, you can specify which is the primary
 The following sections describe how to work with the different types of artifact
 sources.
 
+* [Team Build](#teambuild)
+* [TFVC, Git, and GitHub](#tfvc)
+* [Jenkins](#jenkins)
+* [Azure Container Registry, Docker, and Kubernetes](#container)
+* [NuGet, npm, and Maven with Package Management](#nuget)
+* [External or on-premises TFS](#externaltfs)
+* [TeamCity](#teamcity)
+* [Other sources](#others)
+
+----
+
+<a name="teambuild"></a>
+
 ### Team Build
 
 You can link a release definition to any of
@@ -131,17 +147,17 @@ the build definitions in your Visual Studio Team Services (VSTS) account
 or Team Foundation Server project collection.
 
 > [!NOTE]
-> you must include a **Publish Artifacts** task step in your build
+> You must include a **Publish Artifacts** task step in your build
 definition. For XAML build definitions, an artifact with the name **drop**
 is published implicitly.
 
 Some of the differences in capabilities between different versions of TFS and VSTS are:
 
-* **TFS 2015**: You can link build definitions only from the same team project of your collection.
+* **TFS 2015**: You can link build definitions only from the same project of your collection.
   You can link multiple definitions, but you cannot specify default versions. You can set up a continuous deployment trigger on only one of the definitions.
   When multiple build definitions are linked, the latest builds of all the other definitions are used, along with the build that triggered the release creation.
 
-* **TFS 2017 and newer** and **VSTS**: You can link build definitions from any of the team projects in your collection or account.
+* **TFS 2017 and newer** and **VSTS**: You can link build definitions from any of the projects in your collection or account.
   You can link multiple build definitions and specify default values for each of them. You can set up continuous deployment triggers on
   multiple build sources. When any of the builds completes, it will trigger the creation of a release.
 
@@ -154,6 +170,70 @@ The following features are available when using Team Build sources:
 | Work items and commits | Team Build integrates with work items in TFS and VSTS. These work items are also shown in the details of releases. Team Build integrates with a number of version control systems such as TFVC and Git, GitHub, Subversion, and external Git repositories. Release Management shows the commits only when the build is produced from source code in TFVC or Git.|
 | Artifact download | By default, build artifacts are downloaded to the agent. You can configure an option in the environment to [skip the download](../../process/phases.md#agent-phase) of artifacts. |
 | Deployment section in build | The build summary includes a **Deployment** section, which lists all the environments to which the build was deployed. |
+
+----
+
+<a name="tfvc"></a>
+
+<h3 id="tfvcsource">TFVC, Git, and GitHub</h3>
+
+There are scenarios in which you may want to
+consume artifacts stored in a version control system
+directly, without passing them through a build process.
+For example:
+
+* You are developing a PHP or a JavaScript application
+  that does not require an explicit build process.
+
+* You manage configurations for various environments
+  in different version control repositories, and you want
+  to consume these configuration files directly from version control as part of the deployment process.
+
+* You manage your infrastructure and configuration as
+  code (such as Azure Resource Manager templates) and
+  you want to manage these files in a version control
+  repository.
+
+Because you can configure multiple artifact sources
+in a single release definition, you can link both a build
+definition that produces the binaries of the
+application as well as a version control repository
+that stores the configuration files into the same
+definition, and use the two sets of artifacts together
+while deploying.
+
+Release Management integrates with Team Foundation
+Version Control (TFVC) repositories, Git repositories, and GitHub repositories.
+
+You can link a release definition to any of the Git or TFVC
+repositories in any of the projects in your
+collection (you will need read access to these
+repositories). No additional setup is required when
+deploying version control artifacts within the same collection.
+
+When you link a **Git** or **GitHub** repository and select a branch,
+you can edit the default properties of the artifact types after the artifact has been saved.
+This is particularly useful in scenarios where the branch for the stable
+version of the artifact changes, and continuous delivery releases should use
+this branch to obtain newer versions of the artifact. You can also specify details
+of the checkout, such as whether check out submodules and LFS-tracked files, and the
+shallow fetch depth.
+
+When you link a **TFVC branch**, you can specify the changeset to be deployed
+when creating a release.
+
+The following features are available when using TFVC, Git, and GitHub sources:
+
+| Feature | Behavior with TFVC, Git, and GitHub sources |
+|---------|----------------------------------------|
+| Auto-trigger releases | You can configure a continuous deployment trigger for pushes into the repository in a release definition. This can automatically trigger a release when a new commit is made to a repository. See [Triggers](triggers.md). |
+| Artifact variables | A number of [artifact variables](variables.md) are supported for version control sources. |
+| Work items and commits | Release Management cannot show work items or commits associated with releases when using version control artifacts.|
+| Artifact download | By default, version control artifacts are downloaded to the agent. You can configure an option in the environment to [skip the download](../../process/phases.md#agent-phase) of artifacts. |
+
+----
+
+<a name="jenkins"></a>
 
 <h3 id="jenkinssource">Jenkins</h3>
 
@@ -196,61 +276,9 @@ this into the link dialog field.
 For more information about Jenkins integration capabilities, see
 [VSTS Integration with Jenkins Jobs, Pipelines, and Artifacts](https://blogs.msdn.microsoft.com/visualstudioalm/2016/08/18/tfs-integration-jenkins-jobs-pipelines-artifacts/).
 
-<h3 id="tfvcsource">TFVC, Git, and GitHub</h3>
+----
 
-There are scenarios in which you may want to
-consume artifacts stored in a version control system
-directly, without passing them through a build process.
-For example:
-
-* You are developing a PHP or a JavaScript application
-  that does not require an explicit build process.
-
-* You manage configurations for various environments
-  in different version control repositories, and you want
-  to consume these configuration files directly from version control as part of the deployment process.
-
-* You manage your infrastructure and configuration as
-  code (such as Azure Resource Manager templates) and
-  you want to manage these files in a version control
-  repository.
-
-Because you can configure multiple artifact sources
-in a single release definition, you can link both a build
-definition that produces the binaries of the
-application as well as a version control repository
-that stores the configuration files into the same
-definition, and use the two sets of artifacts together
-while deploying.
-
-Release Management integrates with Team Foundation
-Version Control (TFVC) repositories, Git repositories, and GitHub repositories.
-
-You can link a release definition to any of the Git or TFVC
-repositories in any of the team projects in your
-collection (you will need read access to these
-repositories). No additional setup is required when
-deploying version control artifacts within the same collection.
-
-When you link a **Git** or **GitHub** repository and select a branch,
-you can edit the default properties of the artifact types after the artifact has been saved.
-This is particularly useful in scenarios where the branch for the stable
-version of the artifact changes, and continuous delivery releases should use
-this branch to obtain newer versions of the artifact. You can also specify details
-of the checkout, such as whether check out submodules and LFS-tracked files, and the
-shallow fetch depth.
-
-When you link a **TFVC branch**, you can specify the changeset to be deployed
-when creating a release.
-
-The following features are available when using TFVC, Git, and GitHub sources:
-
-| Feature | Behavior with TFVC, Git, and GitHub sources |
-|---------|----------------------------------------|
-| Auto-trigger releases | You can configure a continuous deployment trigger for pushes into the repository in a release definition. This can automatically trigger a release when a new commit is made to a repository. See [Triggers](triggers.md). |
-| Artifact variables | A number of [artifact variables](variables.md) are supported for version control sources. |
-| Work items and commits | Release Management cannot show work items or commits associated with releases when using version control artifacts.|
-| Artifact download | By default, version control artifacts are downloaded to the agent. You can configure an option in the environment to [skip the download](../../process/phases.md#agent-phase) of artifacts. |
+<a name="container"></a>
 
 <h3 id="dockersource">Azure Container Registry, Docker, Kubernetes</h3>
 
@@ -270,43 +298,41 @@ The following features are available when using Azure Container Registry, Docker
 | Artifact download | By default, builds are downloaded to the agent. You can configure an option in the environment to [skip the download](../../process/phases.md#agent-phase) of artifacts. |
 <p />
 
-<h3 id="teamcitysource">TeamCity</h3>
+----
 
-To integrate with TeamCity, you must first install the
-[TeamCity artifacts for Release Management](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vss-services-teamcity)
-extension from Visual Studio Marketplace.
+<a name="nuget"></a>
 
-To consume TeamCity artifacts, start by creating a
-service endpoint with credentials to connect to your
-TeamCity server (see [service endpoints](../../library/service-endpoints.md)
-for details).
+<h3 id="nugetsource">NuGet, npm, and Maven with Package Management</h3>
 
-You can then link a TeamCity build configuration to a
-release definition. The TeamCity build configuration
-must be configured with an action to publish the artifacts.
+To integrate with NuGet, npm, or Maven, you must first install the
+[Package Management](https://docs.microsoft.com/en-us/vsts/package/install)
+extension from Marketplace. For more information, see
+[Package Management Overview](https://docs.microsoft.com/en-us/vsts/package/overview).
 
-The following features are available when using TeamCity sources:
+Scenarios where you may want to consume Package Management artifacts are:
 
-| Feature | Behavior with TeamCity sources |
-|---------|--------------------------------|
-| Auto-trigger releases | You cannot configure a continuous deployment trigger for TeamCity sources in a release definition. To create a new release automatically when a build is complete, add a script to your TeamCity project that invokes the Release Management REST APIs to create a new release. |
-| Artifact variables | A number of [artifact variables](variables.md) are supported for builds from TeamCity. |
-| Work items and commits | Release Management cannot show work items or commits for TeamCity builds. |
-| Artifact download | By default, TeamCity builds are downloaded to the agent. You can configure an option in the environment to [skip the download](../../process/phases.md#agent-phase) of artifacts. |
+1.	You have your application build (such as TFS, VSTS, TeamCity, Jenkins) published as a package (NuGet, npm, or Maven) to Package Management and you want to consume the artifact in a release.
+2.	As part of your application deployment, you need additional packages stored in Package Management.
+
+When you link a Package Management artifact to your release pipeline, you must select the Feed, Package, and the Default version for the package.
+You can choose to pick up the latest version of the package, use a specific version, or select the version at the time of release creation.
+During deployment, the package is downloaded to the agent folder and the contents are extracted as part of the phase execution. 
+
+The following features are available when using Package Management sources:
+
+| Feature | Behavior with Package Management sources |
+|---------|-------------------------------|
+| Auto-trigger releases | You can configure a continuous deployment trigger for packages. This can automatically trigger a release when a package is updated. See [Triggers](triggers.md). |
+| Artifact variables | A number of [artifact variables](variables.md#artifact-variables) are supported for packages. |
+| Work items and commits | Release Management cannot show work items or commits. |
+| Artifact download | By default, packages are downloaded to the agent. You can configure an option in the environment to [skip the download](../../process/phases.md#agent-phase) of artifacts. |
 <p />
 
-> [!NOTE]
->  Release Management in VSTS may
-> not be able to contact your TeamCity server if,
-> for example, it is within your
-> enterprise network. In this case you can integrate
-> Release Management with TeamCity by setting up an
-> on-premises agent that can access the TeamCity server.
-> You will not be able to see the name of your TeamCity
-> projects when linking to a build, but you can type
-> this into the link dialog field.
+----
 
-<h3 id="onpremtfssource">External TFS</h3>
+<a name="externaltfs"></a>
+
+<h3 id="onpremtfssource">External or on-premises TFS</h3>
 
 You can use the Release Management service in VSTS to deploy artifacts
 published by an on-premises TFS server. You don't need to make the TFS
@@ -357,6 +383,51 @@ The following features are available when using external TFS sources:
 > desired build into the appropriate field, or select
 > the **Latest** build.
 
+----
+
+<a name="teamcity"></a>
+
+<h3 id="teamcitysource">TeamCity</h3>
+
+To integrate with TeamCity, you must first install the
+[TeamCity artifacts for Release Management](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vss-services-teamcity)
+extension from Marketplace.
+
+To consume TeamCity artifacts, start by creating a
+service endpoint with credentials to connect to your
+TeamCity server (see [service endpoints](../../library/service-endpoints.md)
+for details).
+
+You can then link a TeamCity build configuration to a
+release definition. The TeamCity build configuration
+must be configured with an action to publish the artifacts.
+
+The following features are available when using TeamCity sources:
+
+| Feature | Behavior with TeamCity sources |
+|---------|--------------------------------|
+| Auto-trigger releases | You cannot configure a continuous deployment trigger for TeamCity sources in a release definition. To create a new release automatically when a build is complete, add a script to your TeamCity project that invokes the Release Management REST APIs to create a new release. |
+| Artifact variables | A number of [artifact variables](variables.md) are supported for builds from TeamCity. |
+| Work items and commits | Release Management cannot show work items or commits for TeamCity builds. |
+| Artifact download | By default, TeamCity builds are downloaded to the agent. You can configure an option in the environment to [skip the download](../../process/phases.md#agent-phase) of artifacts. |
+<p />
+
+> [!NOTE]
+>  Release Management in VSTS may
+> not be able to contact your TeamCity server if,
+> for example, it is within your
+> enterprise network. In this case you can integrate
+> Release Management with TeamCity by setting up an
+> on-premises agent that can access the TeamCity server.
+> You will not be able to see the name of your TeamCity
+> projects when linking to a build, but you can type
+> this into the link dialog field.
+
+----
+
+
+<a name="others"></a>
+
 ### Other sources
 
 Your artifacts may be created and exposed by other
@@ -368,6 +439,8 @@ type. Simply skip the linking of artifact sources in
 a release definition, and add custom tasks to your
 environments that download the artifacts directly
 from your source.
+
+----
 
 <h2 id="download">Artifact download</h2>
 
@@ -390,7 +463,7 @@ perform incremental downloads to the agent.
 
 ::: moniker range="< vsts"
 
-You can, however, instruct Release Management to [skip the automatic download](../../process/phases.md#agent-props)
+You can, however, instruct Release Management to [skip the automatic download](../../process/phases.md#artifact-download)
 of artifacts to the agent for a specific phase and environment of the deployment if you
 wish. Typically, you will do this when the tasks in that phase do not
 require any artifacts, or if you implement custom code in a task to
@@ -400,7 +473,7 @@ download the artifacts you require.
 
 ::: moniker range="vsts"
 
-In VSTS, you can, however, [select which artifacts you want to download](../../process/phases.md#agent-props)
+In VSTS, you can, however, [select which artifacts you want to download](../../process/phases.md#artifact-download)
 to the agent for a specific phase and environment of the deployment.
 Typically, you will do this when the tasks in that phase do not
 require all or any of the artifacts, or if you implement custom code

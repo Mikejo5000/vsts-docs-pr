@@ -1,5 +1,5 @@
 ---
-title: Azure function task 
+title: Azure function task for Microsoft VSTS and TFS 
 description: Build and release task to invoke a HTTP triggered function in an Azure function app and parse the response in VSTS and TFS
 ms.assetid: 8D3F3DAA-92C8-4631-96C6-938D43C60008
 ms.prod: devops
@@ -9,10 +9,10 @@ ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
 ms.date: 04/09/2018
-monikerRange: 'vsts'
+monikerRange: '>= tfs-2017'
 ---
 
-# Utility: Azure function
+# Utility: Invoke Azure function
 
 **VSTS**
 
@@ -20,7 +20,13 @@ monikerRange: 'vsts'
 
 ## Demands
 
-Can be used in only an [agentless phase](../../concepts/process/phases.md#agentless-phase) of a release definition.
+Can be used in only an [agentless phase](../../concepts/process/server-phases.md) of a release definition.
+
+::: moniker range="vsts"
+
+[!INCLUDE [temp](../_shared/yaml/AzureFunctionV1.1.md)]
+
+::: moniker-end
 
 ## Arguments
 
@@ -28,35 +34,16 @@ Can be used in only an [agentless phase](../../concepts/process/phases.md#agentl
 | --- | --- |
 | **Azure function URL** | Required. The URL of the Azure function to be invoked. |
 | **Function key** | Required. The value of the available function or the host key for the function to be invoked. Should be secured by using a hidden variable. |
+| **Method** | Required. The HTTP method with which the function will be invoked. |
 | **Headers** | Optional. The header in JSON format to be attached to the request sent to the function. |
-| **Request body** | Optional. The request body for the Azure function call. |
-| **Execution mode** | Required. **Synchronous mode** (the default), or **Asynchronous call** where the Azure function calls back to update the timeline record. |
-| **Response parse expression** | Optional. How to parse the response body for success. |
+| **Query parameters** | Optional. Query parameters to append to the function URL. Must not start with "**?**" or "**&**". |
+| **Body** | Optional. The request body for the Azure function call in JSON format. |
+| **Completion Event** | Required. How the task reports completion. Can be **API response** (the default) - completion is when function returns success and success criteria evaluates to true, or **Callback** - the Azure function makes a callback to update the timeline record. |
+| **Success criteria** | Optional. How to parse the response body for success. |
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
 
-Succeeds if the function returns success and the response body parsing is successful.
+Succeeds if the function returns success and the response body parsing is successful, or when the function updates the timeline record with success.
 
 For more information about using this task, see [Approvals and gates overview](../../concepts/definitions/release/approvals/index.md).
 
 Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureFunction).
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-(VSTS-only)
-
-```YAML
-- task: AzureFunction@1
-  inputs:
-    function:
-    key:
-#   method: POST # OPTIONS, GET, HEAD, POST (default), PUT, DELETE, TRACE, PATCH
-#   headers: {Content-Type:application/json, PlanUrl: $(system.CollectionUri), ProjectId: $(system.TeamProjectId), HubName: $(system.HostType), PlanId: $(system.PlanId), JobId: $(system.JobId), TimelineId: $(system.TimelineId), TaskInstanceId: $(system.TaskInstanceId), AuthToken: $(system.AccessToken)}
-    queryParameters:
-    body:
-#   waitForCompletion: false # true, false (default)
-    successCriteria:
-```
-
-::: moniker-end

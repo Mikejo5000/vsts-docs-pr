@@ -12,7 +12,7 @@ ms.date: 04/09/2018
 monikerRange: '>= tfs-2015'
 ---
 
-# Variables in Release Management
+# Default and custom release variables and debugging
 
 [!INCLUDE [version-rm-dev14](../../../_shared/version-rm-dev14.md)]
 
@@ -31,7 +31,8 @@ being run. For example, your script may need access to the location
 of the build to download it, or to the working directory on the
 agent to create temporary files. These are **default variables**.
 
-> You can also use a default variable to [run a release in debug mode](#debug-mode).
+> You can view the [current values of all variables](#view-vars) for a release,
+and use a default variable to [run a release in debug mode](#debug-mode).
 
 ## Custom variables
 
@@ -88,6 +89,7 @@ For more details, see [Approvals](approvals/index.md#scenarios).
 
 Information about the execution context is made available to running tasks through default variables. Your tasks and scripts can use these variables to find information about the system, release, environment, or agent they are running in.
 With the exception of **System.Debug**, these variables are read-only and their values are automatically set by the system.
+Some of the most significant variables are described in the following tables.
 
 ### System variables
 
@@ -97,8 +99,8 @@ With the exception of **System.Debug**, these variables are read-only and their 
 > | System.TeamFoundationServerUri | The URL of the Release Management service endpoint in the TFS or VSTS account. Use this from your scripts or tasks to call REST APIs on the Release Management service. | https:&#47;/fabrikam.vsrm.visualstudio.com/ | |
 > | System.TeamFoundationCollectionUri | The URL of the Team Foundation collection or VSTS account. Use this from your scripts or tasks to call REST APIs on other services such as Build and Version control. | https:&#47;/fabrikam.visualstudio.com/ | |
 > | System.CollectionId | The ID of the collection to which this build or release belongs. | 6c6f3423-1c84-4625-995a-f7f143a1e43d | TFS 2015 |
-> | System.TeamProject | The name of the team project to which this build or release belongs. | Fabrikam | |
-> | System.TeamProjectId | The ID of the team project to which this build or release belongs. | 79f5c12e-3337-4151-be41-a268d2c73344 | TFS 2015 |
+> | System.TeamProject | The name of the project to which this build or release belongs. | Fabrikam | |
+> | System.TeamProjectId | The ID of the project to which this build or release belongs. | 79f5c12e-3337-4151-be41-a268d2c73344 | TFS 2015 |
 > | System.ArtifactsDirectory | The directory to which artifacts are downloaded during deployment of a release. The directory is cleared before every deployment if it requires artifacts to be downloaded to the agent. Same as Agent.ReleaseDirectory and System.DefaultWorkingDirectory. | C:\agent\_work\r1\a |  |
 > | System.DefaultWorkingDirectory | The directory to which artifacts are downloaded during deployment of a release. The directory is cleared before every deployment if it requires artifacts to be downloaded to the agent. Same as Agent.ReleaseDirectory and System.ArtifactsDirectory. | C:\agent\_work\r1\a | |
 > | System.WorkFolder | The working directory for this agent, where subfolders are created for every build or release. Same as Agent.RootDirectory and Agent.WorkFolder. | C:\agent\_work |  |
@@ -184,7 +186,7 @@ With the exception of **System.Debug**, these variables are read-only and their 
 [AGENT_ID] -> [2]
 -->
 
-<h3 id="artifact-variables">Artifact variables</h3>
+<h3 id="artifact-variables">General artifact variables</h3>
 
 For each artifact that is referenced in a release, you can use the following artifact variables.
 Not all variables are meaningful for each artifact type. The table below lists the default artifact
@@ -246,6 +248,15 @@ you would use `$env:RELEASE_ARTIFACTS_ASPNET4_CI_DEFINITIONNAME`.
 ![Using artifact variables in an inline PowerShell script](_img/variables-02.png)
 
 Note that the original name of the artifact source alias, `ASPNET4.CI`, is replaced by `ASPNET4_CI`.
+
+<a name="view-vars"></a>
+
+### View the current values of all release variables
+
+In the **Logs** page of a release summary, choose the **Initialize Job** step.
+The log pane includes a list of all the variables and their values for this release.
+
+![Viewing the values of the variables in a release](_img/view-variable-values.png)
 
 <a name="debug-mode"></a>
 

@@ -24,6 +24,12 @@ monikerRange: '>= tfs-2015'
 ### Demands
 [npm](https://nodejs.org/en/download/)
 
+::: moniker range="vsts"
+
+[!INCLUDE [temp](../_shared/yaml/NpmV1.1.md)]
+
+::: moniker-end
+
 ### Arguments
 <table>
     <thead>
@@ -74,29 +80,6 @@ monikerRange: '>= tfs-2015'
     </tr>
     [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-(VSTS-only)
-
-```YAML
-- task: Npm@1
-  inputs:
-#   command: install # install (default), publish, custom
-    workingDir:
-    verbose:
-    customCommand:
-#   customRegistry: useNpmrc # useNpmrc (default), useFeed
-    customFeed:
-    customEndpoint:
-#   publishRegistry: useExternalRegistry # useExternalRegistry (default), useFeed
-    publishFeed:
-    publishEndpoint:
-```
-
-::: moniker-end
 
 ## Publish npm packages
 

@@ -6,6 +6,7 @@ ms.prod: devops
 ms.technology: devops-ecosystem
 ms.topic: conceptual
 ms.manager: douge
+monikerRange: '>= tfs-2013'
 ms.author: elbatk
 author: elbatk
 ms.date: 08/04/2016
@@ -250,7 +251,7 @@ Follow this link to learn how to obtain and refresh an OAuth accessToken: http:/
 public static void OAuthSample()
 {
     // Create instance of VssConnection using OAuth Access token
-    VssConnection connection = new VssConnection(new Uri(collectionUri), new VssOAuthCredential(accessToken));
+    VssConnection connection = new VssConnection(new Uri(collectionUri), new VssOAuthAccessTokenCredential(accessToken));
 
     WorkItemTrackingHttpClient witClient = connection.GetClient<WorkItemTrackingHttpClient>();
     List<QueryHierarchyItem> items = witClient.GetQueriesAsync(teamProjectName).Result;

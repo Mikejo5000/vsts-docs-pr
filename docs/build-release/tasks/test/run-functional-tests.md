@@ -25,8 +25,6 @@ For more details, see [Testing with unified agents and phases](../../test/test-w
 
 ::: moniker-end
 
-
-
 ## TFS 2017 and earlier
 
 ![icon](_img/run-functional-tests-icon.png)
@@ -37,6 +35,12 @@ tests on the build machine.
 ### Demands and prerequisites
 
 This task must be preceded by a **Visual Studio Test Agent Deployment** task.
+
+::: moniker range="vsts"
+
+[!INCLUDE [temp](../_shared/yaml/RunDistributedTestsV1.1.md)]
+
+::: moniker-end
 
 ### Arguments
 
@@ -133,7 +137,7 @@ These scenarios are supported for:
 
 ### Related tasks
 
-* [Deploy Azure Resource Group](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureResourceGroupDeployment)
+* [Deploy Azure Resource Group](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureResourceGroupDeploymentV2)
 * [Azure File Copy](https://github.com/Microsoft/vso-agent-tasks/tree/master/Tasks/AzureFileCopy)
 * [Windows Machine File Copy](../deploy/windows-machine-file-copy.md)
 * [PowerShell on Target Machines](../deploy/powershell-on-target-machines.md)

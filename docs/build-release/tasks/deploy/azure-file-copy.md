@@ -42,9 +42,13 @@ in the firewall, and install the test certificate.
 
 ## Demands
 
-<ul>
-<li>none</li>
-</ul>
+None
+
+::: moniker range="vsts"
+
+[!INCLUDE [temp](../_shared/yaml/AzureFileCopyV2.2.md)]
+
+::: moniker-end
 
 ## Arguments
 
@@ -74,42 +78,6 @@ in the firewall, and install the test certificate.
 | **Output - Storage Container URI** | Optional. The name of a variable that will be updated with the URI of the storage container into which the files were copied. Use this variable as an input to subsequent task steps. |
 | **Output - Storage Container SAS Token** | Optional. The name of a variable that will be updated with the Storage Access Security (SAS) token of the storage container into which the files were copied. Use this variable as an input to subsequent task steps. By default, the SAS token expires after 4 hours. |
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-(VSTS-only)
-
-```YAML
-- task: AzureFileCopy@1
-  inputs:
-    SourcePath:
-#   azureConnectionType: ConnectedServiceNameARM # ConnectedServiceName, ConnectedServiceNameARM (default)
-    azureClassicSubscription:
-    azureSubscription:
-    Destination:  # AzureBlob, AzureVMs
-    classicStorage:
-    storage:
-    ContainerName:
-    BlobPrefix:
-    cloudService:
-    resourceGroup:
-#   ResourceFilteringMethod: machineNames # machineNames (default), tags
-    MachineNames:
-    vmsAdminUserName:
-    vmsAdminPassword:
-    TargetPath:
-    AdditionalArguments:
-#   enableCopyPrerequisites: false
-#   CopyFilesInParallel: true
-#   CleanTargetBeforeCopy: false
-#   skipCACheck: true
-    outputStorageUri:
-    outputStorageContainerSasToken:
-```
-
-::: moniker-end
 
 ## Related tasks
 

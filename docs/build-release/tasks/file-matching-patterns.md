@@ -1,6 +1,6 @@
 ---
-title: File matching patterns
-description: File matching patterns for VSTS and TFS 
+title: File matching patterns reference for VSTS and TFS
+description: A reference guide that can help you to understand the file matching patterns for VSTS and Team Foundation Server (TFS).
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -11,7 +11,6 @@ author: andyjlewis
 ms.date: 08/04/2016
 monikerRange: '>= tfs-2015'
 ---
-
 
 # File matching patterns reference
 

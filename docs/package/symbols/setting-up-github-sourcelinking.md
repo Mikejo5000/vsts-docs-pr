@@ -9,7 +9,7 @@ ms.date: 03/02/2018
 ms.author: elbatk
 author: elbatk
 ms.topic: conceptual
-author: midenn
+monikerRange: '>= tfs-2017'
 ---
 
 # Setting up GitHub Source Linking with VSTS Build & VSTS Symbol Server

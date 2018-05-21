@@ -3,9 +3,11 @@ title: Connect to team projects in VSTS or TFS
 description: Connect a client to the cloud service VSTS or on-premises Team Foundation Server (TFS) 
 ms.technology: devops-new-user
 ms.prod: devops
+ms.topic: quickstart
 ms.assetid: 1372e56c-b34f-42c2-b72c-94b57620c75c
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
 ms.date: 09/07/2017 
 monikerRange: '>= tfs-2013'
 ---
@@ -289,7 +291,7 @@ An advantage to using Excel or Project is that you can work offline to add or mo
 Additional resources you may find of interest: 
 
 - [Work in web portal](work-web-portal.md)  
-- [Work in Team Explorer](work-web-portal.md)  
+- [Work in Team Explorer](work-team-explorer.md)  
 - [Troubleshoot connection](troubleshoot-connection.md)  
 
 If all you need is a code repository and bug tracking solution, then start with the [Git get started guide](../git/gitquickstart.md) and [Manage bugs](../work/backlogs/manage-bugs.md).  

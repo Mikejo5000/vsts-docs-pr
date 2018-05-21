@@ -1,6 +1,6 @@
 ---
 title: Advanced search options in Microsoft Code Search in VS VSTS and TFS
-description: Advanced options for Code Search in VSTS and Team Foundation Server
+description: How To Use Code Search - Advanced options for using Code Search across all your projects in VSTS and Team Foundation Server
 ms.assetid: 936AA33C-4AEF-461E-B49B-C98A59098282
 ms.prod: devops
 ms.technology: devops-collab
@@ -50,10 +50,8 @@ Words separated by spaces, and not wrapped in double-quotes, are treated as
 separate search terms and the search will expect to find an occurrence of 
 all the words (in other words, it assumes the `AND` operator between words).
 
-<!--
 You must escape the special characters `(`,  `)`, `[`, `]`, `:`, `*`, and `?`
 by enclosing them in a phrase delimited with double-quotes `"` and `"`.
--->
 
 When you search from inside a project, the default is to search only within that 
 project. You can navigate up to the account level to broaden your search.
@@ -110,8 +108,8 @@ example:
 
 * `CodeSenseHttp*` finds files containing words that start with **CodeSenseHttp**, 
   such as **CodeSenseHttpClient** and **CodeSenseHttpClientTest**.
-* `CodeX23?R` finds files containing words that start with **CodeX23**, have any 
-  alphanumeric character next, and end with **R**. For example, **CodeX234R** and **CodeX23QR**. 
+* `CodeA23?R` finds files containing words that start with **CodeA23**, have any 
+  alphanumeric character next, and end with **R**. For example, **CodeA234R** and **CodeA23QR**. 
 
 You can use wildcard characters anywhere in your search string **except** as 
 a **prefix** in a simple search string or a query that uses a 
@@ -134,12 +132,12 @@ or add a condition or filter to limit the number of possible matches.
 
 ------------------
 
-<!--
-
 ### Search for phrases
 
 To find an exact match to a set of words, enclose your search terms in double-quotes 
-to perform a _phrase search_. For example, `"Client not found"`. Within a phrase:
+to perform a _phrase search_. For example, `"Client not found"`.
+
+Within a phrase:
 
 * Boolean operators are treated as literal text.
 * The query language characters `:()[]*?` are treated as literal text.
@@ -159,10 +157,8 @@ according to the following rules:
   find the literal string `flatten()`.
 
 * Search for a literal occurrence of the double-quote character `"` by preceding it with the
-  escape characacter `\` and enclosing the search string in double-quotes.
+  escape character `\` and enclosing the search string in double-quotes.
   For example, `"\"react-redux\""` will find the literal string `"react-redux"`. 
-
--->
 
 <a name="codefunctions"></a>
 ## Functions to find specific types of code

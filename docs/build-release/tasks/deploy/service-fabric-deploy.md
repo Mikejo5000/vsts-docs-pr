@@ -1,6 +1,6 @@
 ---
 description: Service Fabric Application Deployment task
-title: Service Fabric Application Deployment build and release task for VSTS TFS
+title: Service Fabric Application Deployment task for use in the phases of all of your build and release definitions in Microsoft VSTS and TFS 
 ms.assetid: 82493BC9-241C-491F-9B42-075FD0E33b52
 ms.prod: devops
 ms.technology: devops-cicd
@@ -28,6 +28,12 @@ This task uses a Service Fabric installation to connect and
 deploy to a Service Fabric cluster.  
 [Download and install Service Fabric](https://aka.ms/servicefabric) on the build agent.
 
+::: moniker range="vsts"
+
+[!INCLUDE [temp](../_shared/yaml/ServiceFabricDeploy.1.md)]
+
+::: moniker-end
+
 ## Arguments
 
 | Argument | Description |
@@ -38,55 +44,6 @@ deploy to a Service Fabric cluster.
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
 
 Also see: [Update Service Fabric App Versions task](../utility/service-fabric-versioning.md)
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-(VSTS-only)
-
-```YAML
-- task: ServiceFabricDeploy@1
-  inputs:
-    applicationPackagePath:
-    serviceConnectionName:
-    publishProfilePath:
-    applicationParameterPath:
-#   compressPackage: false
-#   useDiffPackage: false
-    copyPackageTimeoutSec:
-    registerPackageTimeoutSec:
-#   overwriteBehavior: SameAppTypeAndVersion # Always, Never, SameAppTypeAndVersion (default)
-#   skipUpgradeSameTypeAndVersion: false
-#   skipPackageValidation: false
-#   overridePublishProfileSettings: false
-#   isUpgrade: true
-#   unregisterUnusedVersions: true
-#   upgradeMode: Monitored # Monitored (default), UnmonitoredAuto, UnmonitoredManual
-#   FailureAction: Rollback # Rollback (default), Manual
-    UpgradeReplicaSetCheckTimeoutSec:
-    ReplicaQuorumTimeoutSec:
-    TimeoutSec:
-#   ForceRestart: false
-    HealthCheckRetryTimeoutSec:
-    HealthCheckWaitDurationSec:
-    HealthCheckStableDurationSec:
-    UpgradeDomainTimeoutSec:
-#   ConsiderWarningAsError: false
-    DefaultServiceTypeHealthPolicy:
-    MaxPercentUnhealthyDeployedApplications:
-    UpgradeTimeoutSec:
-    ServiceTypeHealthPolicyMap:
-#   configureDockerSettings: false
-#   registryCredentials: AzureResourceManagerEndpoint # AzureResourceManagerEndpoint (default), ContainerRegistryEndpoint, UsernamePassword
-    dockerRegistryConnection:
-    azureSubscription:
-    registryUserName:
-    registryPassword:
-#   passwordEncrypted: True
-```
-
-::: moniker-end
 
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->

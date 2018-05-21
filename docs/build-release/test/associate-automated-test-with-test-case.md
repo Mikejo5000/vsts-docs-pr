@@ -1,6 +1,6 @@
 ---
 title: Associate an automated test with a test case
-description: Continuous testing. Associate an automated test with a test case using Microsoft Test Manager (MTM) and VSTS
+description: Continuous testing. Associate an automated test with a test case using Microsoft Test Manager (MTM) and VSTS with a build or release definition
 ms.assetid: 606679F2-1604-40EA-A720-63CDDA93DD76
 ms.prod: devops
 ms.technology: devops-cicd
@@ -29,6 +29,9 @@ Consider using Visual Studio to associate automated tests with a test case when:
 * You want to enable end-to-end traceability of requirements.
   If your test cases are linked to requirements or user stories,
   the results of the test execution can be used to establish the quality of those requirements. 
+
+> **NOTE**: At present you cannot use this procedure to associate MSTest V2 tests or tests written in NUnit and XUnit.
+> Adding this capability is planned for a future release. 
 
 The process to associate an automated test with a test case is:
 

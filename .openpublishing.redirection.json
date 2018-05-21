@@ -2,6 +2,11 @@
     "redirections":
 	[
         {
+            "source_path": "docs/package/feeds/common-identities.md",
+            "redirect_url": "/vsts/package/feeds/feed-permissions",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/package/nuget/remove.md",
             "redirect_url": "/vsts/package/unlist-delete",
             "redirect_document_id": false
@@ -143,7 +148,7 @@
         },
         {
             "source_path": "docs/articles/devopsmsft/overview.md",
-            "redirect_url": "https://www.visualstudio.com/learn/devopsmsft-overview/",
+            "redirect_url": "/azure/devops/",
             "redirect_document_id": false
         },
         {
@@ -2928,12 +2933,12 @@
         },
         {
             "source_path": "docs/build-release/tasks/deploy/azure-powershell.md",
-            "redirect_url": "https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzurePowerShell",
+            "redirect_url": "https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzurePowerShellV3",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/tasks/deploy/azure-resource-group-deployment.md",
-            "redirect_url": "https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureResourceGroupDeployment",
+            "redirect_url": "https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureResourceGroupDeploymentV2",
             "redirect_document_id": false
         },
         {
@@ -4955,7 +4960,12 @@
         "source_path": "docs/marketplace/billing-overview.md",
         "redirect_url": "/vsts/billing/overview",
         "redirect_document_id": false
-       } 
+       },
+       {
+        "source_path": "docs/billing/extensions.md",
+        "redirect_url": "/vsts/marketplace/overview",
+        "redirect_document_id": false
+       }
     ]
 }
 

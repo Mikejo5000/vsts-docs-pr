@@ -1,12 +1,14 @@
 ---
 title: Requirements and compatibility | Team Foundation Server Setup, Upgrade and Administration
 description: Describes many kinds of requirements and compatibility for VSTS and TFS -- hardware, operating systems, SQL Server, client versions, server versions, browsers
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-setup
+ms.prod: devops-server
+ms.technology: tfs-admin
+ms.topic: conceptual
 ms.assetid: 12652666-b74e-4fd8-aab1-d87cbba6b820
 toc: show
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 10/02/2017
 monikerRange: '>=tfs-2013'
 ---
@@ -71,6 +73,21 @@ These recommendations are guidelines for Team Foundation Server Proxy. Recommend
 | Between 450 and 2,200 users | 2 processors, 2.0 GHz CPU, 2 GB RAM |
 | Between 2,200 and 3,600 users | 4 processors, 2.0 GHz CPU, 2 GB RAM |
 
+<a name="gvfs-proxy-server"></a>
+### Additional requirements for GVFS proxy
+
+The Git Virtual File System (GVFS) proxy feature is I/O-heavy.
+In addition to the basic requirements for the Team Foundation Server Proxy, GVFS proxying requires a fast, large disk to operate efficiently on the repository.
+Recommended hardware is based on the size of the repository that the GVFS proxy will serve.
+
+| **Hardware** | **Recommended value** |
+|---|---|
+| RAM | As large as the tip of a typical branch |
+| Disk space | Four times as large as the repository's entire size |
+| Disk hardware | SSD (Solid State Drive) |
+
+For example, assume a repository has 50GB at the tip of `master` and 200GB of history.
+We recommend 50GB of RAM and 800GB of SSD-based storage.
 
 ## Virtualization
 

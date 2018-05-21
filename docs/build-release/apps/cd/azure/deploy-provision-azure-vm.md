@@ -1,6 +1,6 @@
 ---
 title: CD of an Azure VM using a Resource Manager template
-description: Provision a VM using ARM templates in Microsoft Release Management in VSTS and TFS
+description: Provision Azure virtual machines (VMs) using ARM templates by using Microsoft Release Management in VSTS and Team Foundation Server (TFS) 
 ms.assetid: E6CF9C79-4A2A-45EF-8278-EA6AFA81CBAD
 ms.prod: devops
 ms.technology: devops-cicd
@@ -44,7 +44,7 @@ Carry out the following steps to deploy the Azure Resource Group.
 
 1. Configure the **Azure Resource Group Deployment** task as follows:
 
-   ![Azure Resource Group Deployment](../../../tasks/deploy/_img/azure-resource-group-deployment-icon.png) [Deploy: Azure Resource Group Deployment](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureResourceGroupDeployment) - Deploy files to an Azure Resource Group.
+   ![Azure Resource Group Deployment](../../../tasks/deploy/_img/azure-resource-group-deployment-icon.png) [Deploy: Azure Resource Group Deployment](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureResourceGroupDeploymentV2) - Deploy files to an Azure Resource Group.
    
    - **Azure Subscription**: Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions
      connection to your Azure subscription. For more details, see [Azure Resource Manager service endpoint](../../../concepts/library/service-endpoints.md#sep-azure-rm).

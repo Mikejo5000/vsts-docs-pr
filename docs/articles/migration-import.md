@@ -3,12 +3,13 @@ title: Migration import from TFS to Visual Studio Team Services (VSTS) | VSTS & 
 description: Walks through the steps from preparing a collection to getting it uploaded for import
 ms.prod: devops
 ms.topic: article
-ms.technology: devops-article
+ms.technology: devops-learn
 ms.contentid: 829179bc-1f98-49e5-af9f-c224269f7910
 ms.date: 04/13/2018
 ms.manager: douge
 ms.author: elbatk
 author: elbatk
+monikerRange: '>= tfs-2013'
 ---
 
 # Import
@@ -391,7 +392,7 @@ Next you will need to grant VSTS access. Again, you only need to grant an except
 |    VSTS - Canada Central                        |    52.237.19.6                                  |
 |    VSTS - East Asia (Hong Kong)                 |    52.175.28.40                                 |
 
-If you're planning on using the [preview](https://aka.ms/vstsimportpreview) feature to include Release Management and Package Management data with your import, then you will need to grant both features access as well. 
+Next you will need to grant Release Management access. You only need to grant an exception for the VSTS instance in the region that you're importing into.
 
 **Release Management IPs**
 
@@ -404,6 +405,8 @@ If you're planning on using the [preview](https://aka.ms/vstsimportpreview) feat
 |    Release Management - India South             |    52.172.15.233    |
 |    Release Management - Canada Central          |    52.237.28.171    |
 |    Release Management - East Asia (Hong Kong)   |    13.107.6.175     |
+
+If you're planning on using the [preview](https://aka.ms/vstsimportpreview) feature to include Package Management data with your import, then you will need to grant access for that feature as well. 
 
 **Package Management IPs**
 
@@ -599,7 +602,9 @@ Imports can either be queued as a dry or production run. Dry runs are for testin
 ![Completed import specification file with import type](_img/migration-import/importSpecCompleted.png)
 
 ### Dry Run Accounts
-Dry run imports help teams to test the migration of their collections. It's not expected that these accounts will remain around forever, but rather to exist for a small time frame. In fact, before a production migration can be run a complementing dry run account will need to be deleted. All dry run accounts have a **limited existence and will be automatically deleted after a set period of time**. When the account will be deleted is included in the success email received after the import completes. Be sure to take note of this date and plan accordingly. Once that time period passes the dry run account will be deleted. If your team is ready to perform a production migration before then you will need to manually delete the account. 
+Dry run imports help teams to test the migration of their collections. It's not expected that these accounts will remain around forever, but rather to exist for a small time frame. In fact, before a production migration can be run, any completed dry run accounts will need to be deleted. All dry run accounts have a **limited existence and will be automatically deleted after a set period of time**. When the account will be deleted is included in the success email received after the import completes. Be sure to take note of this date and plan accordingly. 
+
+Most dry run accounts will have 15 days before they're deleted. Dry run accounts can also have a 21 day expiration if more than 100 users are licenses basic or higher at **import time**. Once that time period passes the dry run account will be deleted. Dry run imports can be repeated as many times as you need to feel comfortable before doing a production migration. A previous dry run attempt still needs to be deleted before attempting a new dry run migration. If your team is ready to perform a production migration before then you will need to manually delete the dry run account. 
 
 Be sure to check out the [post import](.\migration-post-import.md) documentation for additional details on post import activities. Should your import encounter any problems, be sure to review the [import troubleshooting](.\migration-troubleshooting.md#dealing-with-import-errors) steps. 
 

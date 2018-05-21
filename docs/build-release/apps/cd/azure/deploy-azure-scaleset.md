@@ -1,6 +1,6 @@
 ---
 title: Implement deployment of your app to Azure Virtual Machine Scale Set
-description: Implement deployment of your app to an Azure Virtual Machine Scale Set
+description: Implement deployment of your app to an Azure Virtual Machine Scale Set without learning concepts such as provisioners and builders
 ms.assetid: C08EC3FB-6787-4956-86D3-B4085B69FCBA
 ms.prod: devops
 ms.technology: devops-cicd
@@ -81,7 +81,7 @@ Before you begin, you need a CI build that creates your app. To set up CI, see:
    
    - **Output - Image URL**: Provide a name for the output variable that will hold the URL of the generated machine image. For example, `bakedImageUrl`<p />
    
-   ![Azure PowerShell](../../../tasks/deploy/_img/azure-powershell-icon.png) [Deploy: Azure PowerShell](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzurePowerShell) - Run a PowerShell script to update the Virtual Machine Scale Set with the new VHD.
+   ![Azure PowerShell](../../../tasks/deploy/_img/azure-powershell-icon.png) [Deploy: Azure PowerShell](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzurePowerShellV3) - Run a PowerShell script to update the Virtual Machine Scale Set with the new VHD.
    
    - **Azure Connection Type**: Select `Azure Resource Manager`
    

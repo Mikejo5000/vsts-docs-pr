@@ -1,6 +1,6 @@
 ---
-title: PowerShell
-description: How to execute powershell scripts when building code in VSTS and Team Foundation Server TFS
+title: PowerShell | VSTS or Team Foundation Server
+description: Learn about how you can execute powershell scripts when you are building your code in VSTS and Team Foundation Server TFS
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -23,6 +23,12 @@ monikerRange: '>= tfs-2015'
 
 DotNetFramework
 
+::: moniker range="vsts"
+
+[!INCLUDE [temp](../_shared/yaml/PowerShellV2.2.md)]
+
+::: moniker-end
+
 ## Arguments
 
 | Argument | Description |
@@ -31,27 +37,6 @@ DotNetFramework
 | Arguments | Specify arguments to pass to the script. You can use ordinal or named parameters. |
 | Advanced - Working folder | Specify the working directory in which you want to run the script. If you leave it empty, the working directory is the folder where the script is located. |
 | [!INCLUDE [control-options-arguments-md](../_shared/control-options-arguments-md.md)] | |
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-(VSTS-only)
-
-```YAML
-- task: PowerShell@2
-  inputs:
-#   targetType: filePath # filePath (default), inline
-    filePath:
-    arguments:
-#   script: # Write your powershell commands here.Write-Host Hello World
-#   errorActionPreference: stop # stop (default), continue, silentlyContinue
-#   failOnStderr: false
-#   ignoreLASTEXITCODE: false
-    workingDirectory:
-```
-
-::: moniker-end
 
 ## Examples
 

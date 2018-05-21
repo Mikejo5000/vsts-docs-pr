@@ -1,6 +1,6 @@
 ---
 title: Publish To Azure Service Bus task 
-description: Build and release task to send a message to an Azure Service Bus in VSTS and TFS
+description: Build and release task to send a message to an Azure Service Bus with a build or release definition in VSTS and TFS.
 ms.assetid: 81D73795-0171-434F-AE37-5386F4E71915
 ms.prod: devops
 ms.technology: devops-cicd
@@ -20,7 +20,13 @@ monikerRange: 'vsts'
 
 ## Demands
 
-Can be used in only an [agentless phase](../../concepts/process/phases.md#agentless-phase) of a release definition.
+Can be used in only an [agentless phase](../../concepts/process/server-phases.md) of a release definition.
+
+::: moniker range="vsts"
+
+[!INCLUDE [temp](../_shared/yaml/PublishToAzureServiceBusV1.1.md)]
+
+::: moniker-end
 
 ## Arguments
 
@@ -32,26 +38,7 @@ Can be used in only an [agentless phase](../../concepts/process/phases.md#agentl
 | **Wait for Task Completion** | Optional. Set this option to force the task to halt until a response is received. |
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
 
-Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/PublishToAzureServiceBus).
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-(VSTS-only)
-
-```YAML
-- task: PublishToAzureServiceBus@1
-  inputs:
-    azureSubscription:
-    messageBody:
-#   signPayload: false
-    certificateString:
-    signatureKey:
-#   waitForCompletion: false
-```
-
-::: moniker-end
+Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/PublishToAzureServiceBusV1).
 
 ## Q & A
 

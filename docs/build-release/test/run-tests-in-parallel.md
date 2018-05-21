@@ -1,6 +1,6 @@
 ---
-title: Run tests in parallel
-description: Continuous testing. Run tests in parallel
+title: Run your continuous tests in parallel in VSTS or TFS
+description: Continuous testing. Run tests in parallel with a build or release definition in Microsoft VSTS or Team Foundation Server (TFS)
 ms.assetid: 15058765-2654-4E36-B2C7-DE3F2DE68C8D
 ms.prod: devops
 ms.technology: devops-cicd

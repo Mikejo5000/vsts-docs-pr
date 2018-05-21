@@ -1,6 +1,6 @@
 ---
 title: Manage a virtual machine in Azure DevTest Labs
-description: Create, manage, and delete VMs in Azure DevTest Labs using Microsoft Release Management in VSTS and TFS
+description: Create, manage, and delete Azure virtual machines (VMs) in Azure DevTest Labs using Microsoft Release Management in VSTS and TFS
 ms.assetid: 4FC75F92-EC04-4458-8069-53EEBF855D2F
 ms.prod: devops
 ms.technology: devops-cicd
@@ -161,7 +161,7 @@ release definition in Release Management.
    and add an **Azure PowerShell** task from the **Deploy** tab.
    Configure the task as follows:
 
-   ![Azure PowerShell](../../../tasks/deploy/_img/azure-powershell-icon.png) [Deploy: Azure PowerShell](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzurePowerShell) - Execute the script to collect the details of the DevTest Labs VM.
+   ![Azure PowerShell](../../../tasks/deploy/_img/azure-powershell-icon.png) [Deploy: Azure PowerShell](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzurePowerShellV3) - Execute the script to collect the details of the DevTest Labs VM.
    
    - **Azure Connection Type**: `Azure Resource Manager`.
    

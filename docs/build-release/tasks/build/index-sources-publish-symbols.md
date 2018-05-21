@@ -36,6 +36,12 @@ Symbol servers enables your debugger to automatically retrieve the correct symbo
 
 None
 
+::: moniker range="vsts"
+
+[!INCLUDE [temp](../_shared/yaml/PublishSymbols.2.md)]
+
+::: moniker-end
+
 ## Arguments
 
 <table>
@@ -137,31 +143,6 @@ None
     </tr>
     [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-(VSTS-only)
-
-```YAML
-- task: PublishSymbols@2
-  inputs:
-#   SymbolsFolder: $(Build.SourcesDirectory)
-#   SearchPattern: **/bin/**/*.pdb
-#   IndexSources: true
-#   PublishSymbols: true
-    SymbolServerType:   #   (default), TeamServices, FileShare
-    SymbolsPath:
-#   DetailedLog: true
-#   TreatNotIndexedAsWarning: false
-    SymbolsMaximumWaitTime:
-    SymbolsProduct:
-    SymbolsVersion:
-#   SymbolsArtifactName: Symbols_$(BuildConfiguration)
-```
-
-::: moniker-end
 
 ## Use indexed symbols to debug your app
 

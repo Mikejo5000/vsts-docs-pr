@@ -1,6 +1,6 @@
 ---
-title: Publish Build Artifacts
-description: How to publish build artifacts to VSTS, TFS or a file share when building code
+title: Publish Build Artifacts | VSTS or Team Foundation Server
+description: Lear about how you can publish build artifacts to VSTS, Team Foundation Server (TFS), or to a file share when building code
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -26,6 +26,12 @@ monikerRange: '>= tfs-2015'
 
 None
 
+::: moniker range="vsts"
+
+[!INCLUDE [temp](../_shared/yaml/PublishBuildArtifacts.1.md)]
+
+::: moniker-end
+
 ## Arguments
 
 | Argument | Description |
@@ -37,25 +43,6 @@ None
 | Parallel copy (**VSTS**, **TFS 2018**, or newer) | Select whether to copy files in parallel using multiple threads for greater potential throughput. If this setting is not enabled, a single thread will be used. |
 | Parallel count (**VSTS**, **TFS 2018**, or newer) | Enter the degree of parallelism (the number of threads) used to perform the copy. The value must be at least 1 and not greater than 128. Choose a value based on CPU capabilities of the build agent. Typically, 8 is a good starting value. |
 | [!INCLUDE [control-options-arguments-md](../_shared/control-options-arguments-md.md)] | |
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-(VSTS-only)
-
-```YAML
-- task: PublishBuildArtifacts@1
-  inputs:
-    PathtoPublish:
-    ArtifactName:
-    publishLocation:  # Container, FilePath
-#   TargetPath: \\my\share\$(Build.DefinitionName)\$(Build.BuildNumber)
-#   Parallel: false
-#   ParallelCount: 8
-```
-
-::: moniker-end
 
 ## Q & A
 

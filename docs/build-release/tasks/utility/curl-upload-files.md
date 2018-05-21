@@ -1,6 +1,6 @@
 ---
-title: cURL Upload Files
-description: cURL Upload Files in VSTS and TFS 
+title: cURL Upload Files | VSTS or Team Foundation Server
+description: Learn all about how you can use cURL to upload files with supported protocols in VSTS and Team Foundation Server (TFS). 
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -22,6 +22,12 @@ monikerRange: '>= tfs-2015'
 ## Demands
 
 curl
+
+::: moniker range="vsts"
+
+[!INCLUDE [temp](../_shared/yaml/CUrlUploaderV2.2.md)]
+
+::: moniker-end
 
 ## Arguments
 
@@ -77,28 +83,6 @@ Arguments to pass to cURL.
 </tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-(VSTS-only)
-
-```YAML
-- task: cURLUploader@2
-  inputs:
-    files:
-#   authType: ServiceEndpoint # ServiceEndpoint (default), UserAndPass
-    serviceEndpoint:
-    username:
-    password:
-    url:
-#   remotePath: /upload/$(Build.BuildId)/
-    options:
-#   redirectStderr: true
-```
-
-::: moniker-end
 
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->

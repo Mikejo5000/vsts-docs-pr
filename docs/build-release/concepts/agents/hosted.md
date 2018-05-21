@@ -1,6 +1,6 @@
 ---
-title: Hosted agents for VSTS
-description: Use the hosted agents in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+title: Hosted agents for VSTS | VSTS or Team Foundation Server
+description: Learn about uing the hosted agents that we provide in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
@@ -109,7 +109,7 @@ The hosted XAML build controller is no longer supported. If you have an account 
 
 * **Mono**
 
-  To manually select a Mono version to use on the **Hosted macOS** agent, before your Mono build step, execute this script as part of your build, replacing the Mono version number 5.4.1 as needed:
+  To manually select a Mono version to use on the **Hosted macOS** agent, before your Mono build step, execute this script in each phase of your build, replacing the Mono version number 5.4.1 as needed:
 
   ```
   SYMLINK=5_4_1

@@ -24,7 +24,13 @@ monikerRange: '>= tfs-2015'
 The build agent must have the following capability:
 
  * Grunt
- 
+
+::: moniker range="vsts"
+
+[!INCLUDE [temp](../_shared/yaml/GruntV0.0.md)]
+
+::: moniker-end
+
 ## Arguments
 
 <table>
@@ -58,31 +64,6 @@ The build agent must have the following capability:
 </tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-(VSTS-only)
-
-```YAML
-- task: Grunt@0
-  inputs:
-#   gruntFile: gruntfile.js
-    targets:
-    arguments:
-    workingDirectory:
-#   gruntCli: node_modules/grunt-cli/bin/grunt
-#   publishJUnitResults: false
-#   testResultsFiles: **/TEST-*.xml
-    testRunTitle:
-#   enableCodeCoverage: false
-#   testFramework: Mocha # Mocha (default), Jasmine
-    srcFiles:
-#   testFiles: test/*.js
-```
-
-::: moniker-end
 
 ## Example
 

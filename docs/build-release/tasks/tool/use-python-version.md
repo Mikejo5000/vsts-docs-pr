@@ -11,7 +11,6 @@ ms.date: 4/2/2018
 monikerRange: 'vsts'
 ---
 
-
 # Tool: Use Python Version
 
 **VSTS**
@@ -27,31 +26,23 @@ None
 
 This task will fail if no Python versions are found in the tool cache.
 
+::: moniker range="vsts"
+
+[!INCLUDE [temp](../_shared/yaml/UsePythonVersionV0.0.md)]
+
+::: moniker-end
+
 ## Arguments
 
 | Argument | Description |
 |----------|-------------|
 | Version spec | Version range or exact version of a Python version to use. |
 | Add to PATH | Whether to prepend the retrieved Python version to the PATH environment variable to make it available in subsequent tasks or scripts without using the output variable. |
+| Advanced - Architecture | The target architecture (x86, x64) of the Python interpreter. |
 
 If the task completes successfully, the task's output variable will contain the directory of the Python installation:
 
 ![output variable](_img/use_python_version_output_variable.png)
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-(VSTS-only)
-
-```YAML
-- task: UsePythonVersion@0
-  inputs:
-    versionSpec: '>= 3.5'
-#   addToPath: false
-```
-
-::: moniker-end
 
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->

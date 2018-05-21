@@ -1,10 +1,13 @@
 ---
 title: Use standalone static analysis with VSTS and TFS
 description: Learn how to use PMD, Checkstyle, and FindBugs with VSTS and TFS for Java development
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build 
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: conceptual
+ms.custom: java
 ms.manager: douge
 ms.author: douge
+author: erickson-doug
 ms.date: 01/22/2018
 monikerRange: '>= tfs-2017'
 ---

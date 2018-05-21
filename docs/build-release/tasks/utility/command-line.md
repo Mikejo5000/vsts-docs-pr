@@ -1,6 +1,6 @@
 ---
-title: Command line
-description: How to execute tools from a command prompt when building code in VSTS and Team Foundation Server TFS
+title: Command line | VSTS or Team Foundation Server
+description: Learn all about how you can execute tools from a command prompt when building code in VSTS and Team Foundation Server (TFS).
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -24,6 +24,12 @@ monikerRange: '>= tfs-2015'
 ## Demands
 
 None
+
+::: moniker range="vsts"
+
+[!INCLUDE [temp](../_shared/yaml/CmdLineV2.2.md)]
+
+::: moniker-end
 
 ## Arguments
 
@@ -60,22 +66,6 @@ None
 </tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-(VSTS-only)
-
-```YAML
-- task: CmdLine@2
-  inputs:
-#   script: echo Write your commands here
-    workingDirectory:
-#   failOnStderr: false
-```
-
-::: moniker-end
 
 ## Example
 

@@ -1,6 +1,6 @@
 ---
-title: Migrate from XAML builds
-description: Migrate from XAML builds to new builds in your Team Foundation Server (TFS) or Visual Studio Team Services (VSTS)
+title: Migrate from XAML builds | VSTS or Team Foundation Server
+description: How to migrate from XAML builds to new builds in your Team Foundation Server (TFS) or Visual Studio Team Services (VSTS)
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
@@ -343,7 +343,7 @@ If you're not yet ready to migrate, then to enable XAML builds:
 
 1. Install [TFS 2018.2](https://www.visualstudio.com/downloads/?q=tfs).
 
-1. Connect your XAML build servers to your TFS server. See [Configure and manage your build system](https://msdn.microsoft.com/en-us/library/ms252495%28v=vs.120%29.aspx).
+1. Connect your XAML build servers to your TFS instance. See [Configure and manage your build system](https://msdn.microsoft.com/en-us/library/ms252495%28v=vs.120%29.aspx).
 
 ::: moniker-end
 

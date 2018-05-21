@@ -1,12 +1,15 @@
 ---
 title: NuGet restore, pack, and publish
-description: How to use NuGet packages when building code in VSTS
+description: Learn all about how you can make use of NuGet packages when you are building code in VSTS and Team Foundation Server (TFS).
 ms.prod: devops
 ms.technology: devops-cicd
+ms.topic: conceptual
 ms.assetid: 7e2793cd-7ce1-4268-9f51-ecb41842f13e
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 07/05/2017
+monikerRange: '>= tfs-2018'
 ---
 
 # Package: NuGet
@@ -27,6 +30,12 @@ If your code depends on NuGet packages, make sure to add this step before your [
 
 > [!NOTE]
 > Using or creating .NET Core or .NET Standard packages? Use the [.NET Core](../build/dotnet-core.md) task, which has full support for all package scenarios currently supported by dotnet, including restore, pack, and nuget push.
+
+::: moniker range="vsts"
+
+[!INCLUDE [temp](../_shared/yaml/NuGetCommandV2.2.md)]
+
+::: moniker-end
 
 ## Restore NuGet packages
 
@@ -106,7 +115,6 @@ You're building a Visual Studio solution that depends on a NuGet feed.
         |-- ConsoleApplication1.csproj
 ```
 
-
 ##### [Build](../../index.md) steps
 
 <table>
@@ -134,6 +142,7 @@ You're building a Visual Studio solution that depends on a NuGet feed.
 </table>
 
 ## Pack NuGet packages
+
 ### Demands
 
 None
@@ -271,6 +280,12 @@ When you push packages to a Package Management feed, you can also publish symbol
 This task is unable to publish NuGet packages to a TFS Package Management feed that is running on a TFS server with IIS Basic authentication enabled. [See here](/vsts/integrate/get-started/auth/tfs-basic-auth) for more details.
 
 ## Custom NuGet command
+
+::: moniker range="vsts"
+
+[!INCLUDE [temp](../_shared/yaml/NuGetV0.0.md)]
+
+::: moniker-end
 
 ### Arguments
 <table>
@@ -427,50 +442,6 @@ Make sure your AssemblyInfo.cs files contain the information you want shown in y
 | Task version | VSTS                     | TFS                                           |
 |--------------|--------------------------|-----------------------------------------------|
 | [0.*](#custom-nuget-command)            | Deprecated but available | Available in TFS < 2017 Update 2, deprecated in TFS >= 2018 |
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-(VSTS-only)
-
-```YAML
-- task: NuGetCommand@2
-  inputs:
-#   command: restore # restore (default), pack, push, custom
-#   restoreSolution: **/*.sln
-#   feedsToUse: select # select (default), config
-    vstsFeed:
-#   includeNuGetOrg: true
-    nugetConfigPath:
-    externalFeedCredentials:
-#   noCache: false
-    restoreDirectory:
-#   verbosityRestore: Detailed # Quiet, Normal, Detailed (default)
-#   packagesToPush: $(Build.ArtifactStagingDirectory)/**/*.nupkg;!$(Build.ArtifactStagingDirectory)/**/*.symbols.nupkg
-#   nuGetFeedType: internal # internal (default), external
-    publishVstsFeed:
-#   allowPackageConflicts: False
-    publishFeedCredentials:
-#   verbosityPush: Detailed # Quiet, Normal, Detailed (default)
-#   packagesToPack: **/*.csproj
-#   configuration: $(BuildConfiguration)
-#   packDestination: $(Build.ArtifactStagingDirectory)
-#   versioningScheme: off # off (default), byPrereleaseNumber, byEnvVar, byBuildNumber
-#   includeReferencedProjects: false
-    versionEnvVar:
-#   majorVersion: 1
-#   minorVersion: 0
-#   patchVersion: 0
-#   packTimezone: utc # utc (default), local
-#   includeSymbols: false
-#   toolPackage: False
-    buildProperties:
-#   verbosityPack: Detailed # Quiet, Normal, Detailed (default)
-    arguments:
-```
-
-::: moniker-end
 
 ## Q & A
 

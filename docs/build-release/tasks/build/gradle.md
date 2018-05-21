@@ -12,13 +12,17 @@ ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
 
-
 # Build: Gradle 
  
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
 ![](_img/gradle.png) Build using a Gradle wrapper script
 
+::: moniker range="vsts"
+
+[!INCLUDE [temp](../_shared/yaml/Gradle.2.md)]
+
+::: moniker-end
 
 ## Arguments
 
@@ -110,40 +114,9 @@ If the Checkstyle analysis is customized, the task only attempts to find the rep
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
-::: moniker range="vsts"
+## Example
 
-## YAML snippet
-
-(VSTS-only)
-
-```YAML
-- task: Gradle@2
-  inputs:
-#   gradleWrapperFile: gradlew
-    options:
-#   tasks: build
-    workingDirectory:
-#   publishJUnitResults: true
-#   testResultsFiles: **/build/test-results/TEST-*.xml
-    testRunTitle:
-#   codeCoverageToolOption: None # None (default), Cobertura, JaCoCo
-#   codeCoverageClassFilesDirectories: build/classes/main/
-    codeCoverageClassFilter:
-#   codeCoverageFailIfEmpty: false
-#   javaHomeOption: JDKVersion # JDKVersion (default), Path
-#   jdkVersionOption: default # default (default), 1.9, 1.8, 1.7, 1.6
-    jdkDirectory:
-#   jdkArchitectureOption: x64 # x86, x64 (default)
-#   gradleOptions: -Xmx1024m
-#   sonarQubeRunAnalysis: false
-#   sqGradlePluginVersionChoice: specify # specify (default), build
-#   sonarQubeGradlePluginVersion: 2.6.1
-#   checkStyleRunAnalysis: false
-#   findBugsRunAnalysis: false
-#   pmdRunAnalysis: false
-```
-
-::: moniker-end
+[Build your Java app with Gradle](../../apps/java/build-gradle.md)
 
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->
@@ -178,9 +151,11 @@ build.gradle resides:
 |-- gradlew
 |-- gradlew.bat
 ```
-### How do I build an Android project?
+### How do I fix timeouts when downloading dependencies?
 
-[Android Build](android-build.md)
+To fix errors such as `Read timed out` when downloading dependencies, users of Gradle 4.3+ can change the timeout 
+   by adding to `Options` `-Dhttp.socketTimeout=60000 -Dhttp.connectionTimeout=60000`.  This increases  the timeout 
+   from 10 seconds to 1 minute.
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 

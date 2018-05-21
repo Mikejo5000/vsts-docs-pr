@@ -23,9 +23,14 @@ monikerRange: '>= tfs-2015'
 
 The build agent must have the following capabilities:
 
- * Java JDK 
- 
- 
+ * Java JDK
+
+::: moniker range="vsts"
+
+[!INCLUDE [temp](../_shared/yaml/AndroidSigning.2.md)]
+
+::: moniker-end
+
  ## Arguments
 
 <table>
@@ -106,28 +111,6 @@ Enter the key password for the alias and keystore file.
 </tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-(VSTS-only)
-
-```YAML
-- task: AndroidSigning@2
-  inputs:
-#   apkFiles: **/*.apk
-#   jarsign: true
-    jarsignerKeystoreFile:
-    jarsignerKeystorePassword:
-    jarsignerKeystoreAlias:
-    jarsignerKeyPassword:
-#   jarsignerArguments: -verbose -sigalg MD5withRSA -digestalg SHA1
-#   zipalign: true
-    zipalignFile:
-```
-
-::: moniker-end
 
 ## Related steps
 
