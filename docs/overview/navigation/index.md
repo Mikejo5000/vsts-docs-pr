@@ -18,7 +18,7 @@ Here's what you need to know to get up and running using Azure Codex or one of i
 
 - **[Start page](go-to-app-hub-page.md)**: use to switch an app or a team project 
 - **[Search box](search-basics.md)**: use to find code, work items, or a wiki page 
-- **[Your profile menu](enable-preview-feature.md?toc=/vsts/navigation/toc.json&bc=/vsts/navigation/breadcrumb/toc.json)**: use to set personal preferences, notifications, and preview features  
+- **[Your profile menu](enable-preview-feature.md?toc=/vsts/overview/navigation/toc.json&bc=/vsts/overview/navigation/breadcrumb/toc.json)**: use to set personal preferences, notifications, and preview features  
 - **[Settings](../settings/index.md)**: use to add teams, manage security, and configure other project and account-level elements 
 - **Help**: use to quickly access the most relevant topics for the page you're on.  
 

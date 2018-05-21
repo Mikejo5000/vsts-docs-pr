@@ -1,5 +1,5 @@
 - name: Navigation Basics 
-  href: index.md?toc=/vsts/navigation/toc.json&bc=/vsts/navigation/breadcrumb/toc.json 
+  href: index.md?toc=/vsts/overview/navigation/toc.json&bc=/vsts/overview/navigation/breadcrumb/toc.json 
   items:
   - name: Add an artifact or team 
     href: create-new-artifact-team.md

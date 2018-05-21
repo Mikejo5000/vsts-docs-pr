@@ -170,7 +170,7 @@ featureFlags:
                                             <div class="cardText">
                                                 <h3>Navigation &amp; Settings</h3>
                                                 <ul class="noBullet">
-                                                    <li><a class="barLink" href="/vsts/navigation/">Navigation Basics</a></li>
+                                                    <li><a class="barLink" href="/vsts/overview/navigation/">Navigation Basics</a></li>
                                                     <li><a class="barLink" href="/vsts/settings/">Settings</a></li>
                                                 </ul>
                                             </div>
@@ -273,7 +273,7 @@ featureFlags:
                                         <li><a class="barLink" href="/vsts/report/dashboards/index">Dashboards</a></li>
                                         <li><a class="barLink" href="/vsts/collaborate/index">READMEs &amp; Wikis</a></li>
                                         <li><a class="barLink" href="/vsts/organizations/public/index">Public Projects</a></li>
-                                        <li><a class="barLink" href="/vsts/navigation/index">Navigation</a></li>
+                                        <li><a class="barLink" href="/vsts/overview/navigation/index">Navigation</a></li>
                                         <li><a class="barLink" href="/vsts/notifications/index">Notifications</a></li>
                                         <li><a class="barLink" href="/vsts/search/index">Search</a></li>
                                         <li><a class="barLink" href="/vsts/feedback/index">Feedback</a></li>
@@ -487,7 +487,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/navigation/index">
+                                <a href="/vsts/overview/navigation/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
