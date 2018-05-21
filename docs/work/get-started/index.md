@@ -18,7 +18,7 @@ Codex Agile is one of several cloud service applications provided in the Azure C
 
 From the **Work** hub you gain access to Agile tools to support planning and tracking work. 
 
-<img src="../user-guide/_img/services/work-hub-backlogs.png" alt="Work hub, Backlogs page" style="border: 2px solid #C3C3C3;" />
+<img src="../../user-guide/_img/services/work-hub-backlogs.png" alt="Work hub, Backlogs page" style="border: 2px solid #C3C3C3;" />
 
 Specifically, Codex Agile enables you to perform these tasks:
 
@@ -30,7 +30,7 @@ Specifically, Codex Agile enables you to perform these tasks:
 - Visualize the work flow and update status using Kanban boards	 				
 - Manage portfolios by grouping stories under features and features under epics   
 
-See [Backlogs, boards, and plans](../work/backlogs/backlogs-boards-plans.md) for an overview of each.   
+See [Backlogs, boards, and plans](../backlogs/backlogs-boards-plans.md) for an overview of each.   
  
 
 ## Where do I start?
@@ -39,7 +39,7 @@ We've made it easy for you to start for free and try out our service.
 
 Sign up for free by creating an account and then, either upload your code to share or source control, or begin tracking your work using Scrum, Kanban, or a combination of methods. 
 
-[![Sign up for Codex Agile](../user-guide/_img/what-is-vsts-sign-up-step-1.png)](sign-up-invite-teammates.md)[![Add code to repository](../user-guide/_img/what-is-vsts-add-code-ide-step-2.png)]((../user-guide/code-with-git.md) 
+[![Sign up for Codex Agile](../../user-guide/_img/what-is-vsts-sign-up-step-1.png)](sign-up-invite-teammates.md)[![Add code to repository](../../user-guide/_img/what-is-vsts-add-code-ide-step-2.png)]((../../user-guide/code-with-git.md) 
 
 
 ## Try this next  
@@ -48,10 +48,10 @@ Sign up for free by creating an account and then, either upload your code to sha
 > [Sign up and invite team mates](sign-up-invite-teammates.md)
 
 To learn more, see these topics: 
-- [A tour of services](../user-guide/services.md)
-- [Key concepts](../user-guide/concepts.md)  
-- [Client-server tools](../user-guide/tools.md)
-- [Software development roles](../user-guide/roles.md)
+- [A tour of services](../../user-guide/services.md)
+- [Key concepts](../../user-guide/concepts.md)  
+- [Client-server tools](../../user-guide/tools.md)
+- [Software development roles](../../user-guide/roles.md)
 - [Pricing](https://www.visualstudio.com/team-services/pricing/)
 
 
