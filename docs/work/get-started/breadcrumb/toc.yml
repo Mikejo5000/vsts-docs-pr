@@ -2,7 +2,7 @@
   tocHref: /vsts/
   topicHref: /vsts/index#pivot=apps
   items: 
-  - name: Codex Agile Onboarding Guide
+  - name: Azure Codex Agile Onboarding Guide
     tocHref: /vsts/
-    topicHref: /vsts/codex-agile/index
+    topicHref: /vsts/get-started/index
 

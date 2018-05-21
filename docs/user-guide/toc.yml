@@ -115,15 +115,9 @@
 - name: Azure Codex Suite Onboarding Mini-guides
   items:
   - name: Azure Codex Agile
-    href: https://review.docs.microsoft.com/en-us/vsts/codex-agile/index?branch=features%2Fcontent-arch-vertical&view=vsts
+    href: ../work/get-started/index.md
   - name: Azure Codex Repos
-    href: https://review.docs.microsoft.com/en-us/vsts/codex-repos/index?branch=features%2Fcontent-arch-vertical&view=vsts
   - name: Azure Codex Pipelines
-    href: https://review.docs.microsoft.com/en-us/vsts/codex-pipelines/index?branch=features%2Fcontent-arch-vertical&view=vsts
-  - name: Azure Codex Artifacts
-    href: https://review.docs.microsoft.com/en-us/vsts/codex-artifacts/index?branch=features%2Fcontent-arch-vertical&view=vsts
-  - name: Azure Codex Test
-    href: https://review.docs.microsoft.com/en-us/vsts/codex-test/index?branch=features%2Fcontent-arch-vertical&view=vsts
 - name: Resources
   items:
   - name: Organization management in Azure Codex

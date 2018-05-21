@@ -1,6 +1,6 @@
 ---
-title: Sign up and invite teammates to Codex Artifacts
-titleSuffix: Azure Codex
+title: Sign up and invite teammates 
+titleSuffix: VSTS
 description: Quickstart guide to signing up and inviting others to join a team project in VSTS 
 ms.technology: vs-devops-overview 
 ms.prod: vs-devops-alm
@@ -13,7 +13,7 @@ monikerRange: 'vsts'
 ---
 
 
-# Start using Codex Artifacts today
+# Start using Codex Agile today
  
 Sign up for a Azure Codex account to upload and share code in a free unlimited private 
 Git repository. You can then connect to your favorite development tool like Eclipse, Xcode, 
@@ -106,7 +106,7 @@ You provide others access to your account by adding their email address.
 ## Next steps  
  
 > [!div class="nextstepaction"]
-> [Plan and track work](../work/work-items/view-add-work-items.md?toc=/vsts/codex-agile/toc.json&bc=/vsts/codex-agile/breadcrumb/toc.json) 
+> [Plan and track work](../work/work-items/view-add-work-items.md?toc=/vsts/get-started/toc.json&bc=/vsts/get-started/breadcrumb/toc.json) 
 
 For more information on managing users and account access, see [Add account users for VSTS](../accounts/add-account-users-from-user-hub.md).
  
