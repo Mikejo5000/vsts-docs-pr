@@ -68,7 +68,10 @@
       topicHref: /vsts/work/scale/index
   - name: Java 
     tocHref: /vsts/java/
-    topicHref: /vsts/java/index   
+    topicHref: /vsts/java/index 
+  - name: Demo Generator
+    tocHref: /vsts/demo-gen/
+    topicHref: /vsts/demo-gen/index  
   - name: Reporting
     tocHref: /vsts/
     topicHref: /vsts/index#pivot=services&panel=reporting
@@ -152,6 +155,3 @@
     - name: Visual Studio subscriptions
       tocHref: /vsts/marketplace/vs-subscriptions/
       topicHref: /vsts/marketplace/vs-subscriptions/buy-vs-subscriptions
-  - name: Demo Generator
-      tocHref: /vsts/demo-gen/
-      topicHref: /vsts/demo-gen/index
