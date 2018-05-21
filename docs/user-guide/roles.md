@@ -12,7 +12,7 @@ ms.date: 07/15/2018
 monikerRange: '>= tfs-2013'
 ---
 
-# Software development roles supported by VSTS and TFS
+# Software development roles supported by Azure Codex and TFS
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: Describes how to obtain Azure Codex
+title: Describes how to start coding in Azure Codex for developers
 titleSuffix: TFS
 description: Understand 
 ms.technology: devops-new-user 
@@ -11,7 +11,7 @@ author: chcomley
 ms.date: 12/07/2016
 ---
 
-# How can I get Azure Codex?
+# How can a developer start coding in Azure Codex?
 
 ::: moniker range=">= tfs-2013"
 

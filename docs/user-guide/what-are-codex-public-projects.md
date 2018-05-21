@@ -13,7 +13,7 @@ ms.date: 07/15/2018
 ---
 
 
-# Azure Codex Public Projects?
+# What are Azure Codex Public Projects?
 
 **Azure Codex**
 

@@ -14,7 +14,7 @@ ms.date: 07/15/2018
 monikerRange: '>= tfs-2013'
 ---
 
-# Navigate in Team Explorer
+# Navigate in Azure codex
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: Describes how to obtain Azure Codex
+title: Describes how to deploy CI/CD in Azure Codex
 titleSuffix: TFS
 description: Understand 
 ms.technology: devops-new-user 
@@ -13,7 +13,7 @@ ms.date: 12/07/2016
 ---
 
 
-# How can I get Azure Codex?
+# How can I deploy pipelines in Azure Codex?
 
 ::: moniker range=">= tfs-2013"
 

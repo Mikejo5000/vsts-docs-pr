@@ -1,6 +1,6 @@
 ---
-title: Connect to team projects in VSTS or TFS
-description: Connect a client to the cloud service VSTS or on-premises Team Foundation Server (TFS) 
+title: Connect to team projects in Azure Codex or TFS
+description: Connect a client to the cloud service Azure Codex or on-premises Team Foundation Server (TFS) 
 ms.technology: devops-new-user
 ms.prod: devops
 ms.topic: quickstart
