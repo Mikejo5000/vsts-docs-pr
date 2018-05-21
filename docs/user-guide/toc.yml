@@ -3,9 +3,9 @@
 - name: Overview
   items:
   - name: "What is Azure Codex?"
-    href: what-is-vsts.md
+    href: what-is-azure-codex.md
   - name: "What do I get with Azure Codex?"
-    href: services.md?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json&bc=/vsts/breadcrumb/toc.json 
+    href: services.md
   - name: "How do I get Azure Codex?"
     href: how-to-get-azure-codex.md
   - name: "How can I start Azure Codex for free?"
@@ -27,7 +27,7 @@
   - name: Start testing code
     href: add-run-manual-tests.md
   - name: Create an open source project
-    href: ../public/create-public-project.md
+    href: ../organizations/public/create-public-project.md
   - name: Get started from GitHub
     href: get-started-from-github.md
   - name: Get extensions
@@ -113,11 +113,9 @@
 - name: Azure Codex Suite Onboarding Mini-guides
   items:
   - name: Azure Codex Agile
-    href: https://review.docs.microsoft.com/en-us/vsts/codex-agile/index?branch=features%2Fcontent-arch-vertical&view=vsts
+    href: ../work/get-started/index.md
   - name: Azure Codex Repos
-    href: https://review.docs.microsoft.com/en-us/vsts/codex-repos/index?branch=features%2Fcontent-arch-vertical&view=vsts
   - name: Azure Codex Pipelines
-    href: https://review.docs.microsoft.com/en-us/vsts/codex-pipelines/?view=vsts&branch=features%2Fcontent-arch-vertical
 - name: Resources
   items:
   - name: Organization management in Azure Codex
