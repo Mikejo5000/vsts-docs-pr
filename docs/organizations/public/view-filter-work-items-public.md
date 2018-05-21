@@ -16,7 +16,7 @@ ms.date: 02/20/2018
 
 [!INCLUDE [temp](_shared/version-public-projects.md)]  
 
-When you connect to a public project and the Azure Codex Agile app, you're able to view work items defined for that project. If you're a contributor or stakeholder, you can also [add and edit work items](../work/work-items/view-add-work-items.md).  
+When you connect to a public project and the Azure Codex Agile app, you're able to view work items defined for that project. If you're a contributor or stakeholder, you can also [add and edit work items](../../work/work-items/view-add-work-items.md).  
 
 
 ## View work items 
@@ -26,7 +26,7 @@ From the **Work Items** page, you can view recently created, updated, and comple
 
 # [Horizontal navigation](#tab/horizontal) 
 
-Click the **Wiki** link located in the top navigation bar.  If you don't see the **Wiki** option, click the ![actions icon](../_img/icons/actions-icon.png).
+Click the **Wiki** link located in the top navigation bar.  If you don't see the **Wiki** option, click the ![actions icon](../../_img/icons/actions-icon.png).
 
 > [!div class="mx-imgBorder"]
 ![Work hub, Work Items page ](_img/view-work-items/view-recently-updated-work-items.png)
@@ -73,7 +73,7 @@ Using the drop-down menu, you can focus on relevant items using one of the three
 You can filter each work item pivot view by typing a keyword or using one or more of the fields provided, such as work item type (Types), State, Area Path, and Tags. The page remembers the filters you set for each pivot, supporting personalized views across all pivots.  
 
 > [!div class="mx-imgBorder"]
-![Work hub, Work Items page, Filter to show Bugs ](../work/work-items/_img/view-add/work-items-filter-bug.png)
+![Work hub, Work Items page, Filter to show Bugs ](../../work/work-items/_img/view-add/work-items-filter-bug.png)
 
 <a id="sort" />
 ## Sort your view and other View options 
@@ -88,7 +88,7 @@ You can sort your view by one of the column fields that you select from the **Vi
 <tbody valign="top">
 <tr>
 <td>
-![Work hub, Work Items page ](../work/work-items/_img/view-add/work-items-filter-bug.png)
+![Work hub, Work Items page ](../../work/work-items/_img/view-add/work-items-filter-bug.png)
 </td>
 <td>
 <ul>
@@ -104,7 +104,7 @@ You can sort your view by one of the column fields that you select from the **Vi
 <!---
 ## Copy selected items to the clipboard or email them
 
-To select several items in a sequence, hold down the shift key. To select several non-sequential items, use the Ctrl key. Then, you can use **Ctrl+c** to copy the selected items to a clipboard. Or, you can open the context menu for the selected work items, click (![actions icon](../_img/icons/actions-icon.png)), and then choose the option you want from the menu. 
+To select several items in a sequence, hold down the shift key. To select several non-sequential items, use the Ctrl key. Then, you can use **Ctrl+c** to copy the selected items to a clipboard. Or, you can open the context menu for the selected work items, click (![actions icon](../../_img/icons/actions-icon.png)), and then choose the option you want from the menu. 
 
 > [!div class="mx-imgBorder"]
 ![Work hub, Work Items page, Following view, Select work items, context menu](_img/view-add/following-context-menu.png)
@@ -113,8 +113,8 @@ To select several items in a sequence, hold down the shift key. To select severa
 
 
 >[!NOTE]  
->Depending on the process chosen when the team project was created&mdash;[Agile](../work/work-items/guidance/agile-process-workflow.md), [Scrum](../work/work-items/guidance/scrum-process-workflow.md), or [CMMI](../work/work-items/guidance/cmmi-process-workflow.md)&mdash;the types of work items you view will differ. For example, backlog items may be called product backlog items (Scrum), user stories (Agile), or requirements (CMMI). All three are similar: they describe the customer value to deliver and the work to be performed.
+>Depending on the process chosen when the team project was created&mdash;[Agile](../../work/work-items/guidance/agile-process-workflow.md), [Scrum](../../work/work-items/guidance/scrum-process-workflow.md), or [CMMI](../../work/work-items/guidance/cmmi-process-workflow.md)&mdash;the types of work items you view will differ. For example, backlog items may be called product backlog items (Scrum), user stories (Agile), or requirements (CMMI). All three are similar: they describe the customer value to deliver and the work to be performed.
 >
-> For an overview of all three processes, see [Choose a process](../work/work-items/guidance/choose-process.md). 
+> For an overview of all three processes, see [Choose a process](../../work/work-items/guidance/choose-process.md). 
 
 

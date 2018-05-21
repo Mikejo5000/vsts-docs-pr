@@ -16,7 +16,7 @@ ms.date: 02/20/2018
 
 [!INCLUDE [temp](_shared/version-public-projects.md)] 
 
-When you connect to a public project, you're able to view pages added to the Wiki for that project. If you're a contributor, you can also [add and edit pages](../collaborate/add-edit-wiki.md).  
+When you connect to a public project, you're able to view pages added to the Wiki for that project. If you're a contributor, you can also [add and edit pages](../../collaborate/add-edit-wiki.md).  
 
 For help navigating to a team project, see [Navigation basics]. 
 
@@ -29,7 +29,7 @@ Click the **Wiki** link located in the left navigation pane.
 
 # [Horizontal navigation](#tab/horizontal) 
 
-Click the **Wiki** link located in the top navigation bar.  If you don't see the **Wiki** option, click the ![actions icon](../_img/icons/actions-icon.png).
+Click the **Wiki** link located in the top navigation bar.  If you don't see the **Wiki** option, click the ![actions icon](../../_img/icons/actions-icon.png).
 
 > [!div class="mx-imgBorder"]
 ![Wiki link, horizontal navigation](_img/view-wiki-horizontal.png)
@@ -43,6 +43,6 @@ The filter feature allows you to quickly find a wiki page as the number of pages
 To find a page, enter a title or keyword into the **Filter pages** box.   
  
 > [!div class="mx-imgBorder"]
-![Filter Wiki pages](../collaborate/_img/wiki/filter-box.png)
+![Filter Wiki pages](../../collaborate/_img/wiki/filter-box.png)
 
 

@@ -17,7 +17,7 @@ ms.date: 02/20/2018
 
 You can view the homepage or dashboards defined for an Azure Codex public project. From the project page, you can XXX. From a dashboard, you can XXX. 
 
-If you're a contributor, you can also [edit README files for a project](../collaborate/project-vision-status.md#create-a-repository-readme-or-welcome-page) and [add and edit dashboards](../report/dashboards/dashboards.md).  
+If you're a contributor, you can also [edit README files for a project](../../collaborate/project-vision-status.md#create-a-repository-readme-or-welcome-page) and [add and edit dashboards](../../report/dashboards/dashboards.md).  
 
 
 ## Open the project home page
@@ -45,7 +45,7 @@ In addition to sharing information, the project home page pulls data from the va
 
 To view a dashboard, open a browser window and click the **Dashboards** link. 
 
-![Open the Dashboards hub](../report/dashboards/_img/dashboards-go-to.png) 
+![Open the Dashboards hub](../../report/dashboards/_img/dashboards-go-to.png) 
 
 
 ## Unavailable dashboard widgets

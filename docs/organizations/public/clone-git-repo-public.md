@@ -43,7 +43,7 @@ Before you can clone an existing repo, you'll need a URL that points to the exis
 If you're using VSTS or Team Foundation Server 2017, you can find this clone URL in the web portal. 
 When viewing your repo from the **Code** tab in the interface, select **Clone** in the upper right.
 
-![Get a clone a URL from VSTS](../git/tutorial/_img/get_clone_url.gif)
+![Get a clone a URL from VSTS](../../git/tutorial/_img/get_clone_url.gif)
 
 If you need to clone a GitHub repo, you'll need to get the clone URL from the **Clone or download** button while viewing the repo on the web in GitHub. 
 
@@ -58,7 +58,7 @@ Copy this URL into the clipboard or store it in a place where you can find it ea
 0. Open Team Explorer (go to **View** and select **Team Explorer** or use the Ctrl+\, Ctrl+M hotkey sequence) and open the **Connect** view. Go to **Projects**, then **Manage Connections** if you don't see the Connect view.
 0. Select **Connect...** under **Hosted Service Providers**.
 
-  ![Connecting to VSTS](../git/tutorial/_img/connect_to_vsts_from_vs2015.png)
+  ![Connecting to VSTS](../../git/tutorial/_img/connect_to_vsts_from_vs2015.png)
 
 0. Choose your team's account from the drop-down in the dialog that appears and select which Team Projects to connect to Team Explorer. Select **Connect**. 
 
@@ -66,7 +66,7 @@ Copy this URL into the clipboard or store it in a place where you can find it ea
 0. Enter the folder where Git will store the local repository in the **Local Git Repositories** section.
 0. Select **Clone** to clone your repo. 
 
-  ![Cloning a VSTS Repository in Visual Studio](../git/_shared/_img/cloneVsRepo.png)
+  ![Cloning a VSTS Repository in Visual Studio](../../git/_shared/_img/cloneVsRepo.png)
 
 
 # [Command Line](#tab/command-line)
@@ -74,7 +74,7 @@ Copy this URL into the clipboard or store it in a place where you can find it ea
 ### Prerequisites
 
 * Ensure you have installed the [Git command line package](http://git-scm.com/download) for your platform as well as the 
-right [Git Credential Manager](../git/set-up-credential-managers.md) before continuing.
+right [Git Credential Manager](../../git/set-up-credential-managers.md) before continuing.
 
 You'll need a clone URL to tell Git what repository you want to clone to your computer. Use the URL you copied earlier during the [previous step](#clone_url) in this article.
 
