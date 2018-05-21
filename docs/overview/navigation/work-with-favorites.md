@@ -33,7 +33,7 @@ You can favorite the following artifacts:
 
 Open the **Favorites** page to quickly access any object or item that you've marked as a favorite. 
 
-<img src="../user-guide/_img/account-home-favorites.png" alt="Account home, Favorites page" style="border: 1px solid #CCCCCC;" />   
+<img src="../../user-guide/_img/account-home-favorites.png" alt="Account home, Favorites page" style="border: 1px solid #CCCCCC;" />   
 
 Favorited objects include:
 
@@ -51,7 +51,7 @@ Favorited objects include:
 ### Remove an item from your favorites list 
 To remove an item from your favorites list, click the ![favorited icon](../../_img/icons/icon-favorited.png) favorited icon. 
 
-<img src="../user-guide/_img/account-home-remove-from-favorites.png" alt="Account home, Favorites page" style="border: 1px solid #CCCCCC;" />   
+<img src="../../user-guide/_img/account-home-remove-from-favorites.png" alt="Account home, Favorites page" style="border: 1px solid #CCCCCC;" />   
 
 ### Filter the list of favorites  
 
@@ -65,7 +65,7 @@ To access these pages, open your web browser and click the
 
 You'll see something similar to the following welcome page.
 
-<img src="../user-guide/_img/account-home-welcome.png" alt="Account home, Projects page" style="border: 1px solid #CCCCCC;" />   
+<img src="../../user-guide/_img/account-home-welcome.png" alt="Account home, Projects page" style="border: 1px solid #CCCCCC;" />   
 
  
  

@@ -16,7 +16,7 @@ ms.date: 08/11/2017
 
  You use the administrative context to set team, team project, and account or collection settings. The hubs and pages available change based on what level of administrative context you're in. 
 
-<img src="../user-guide/_img/web-portal-intro.png" alt="Code, Pull Request, Active example" style="border: 1px solid #CCCCCC;" />
+<img src="../../user-guide/_img/web-portal-intro.png" alt="Code, Pull Request, Active example" style="border: 1px solid #CCCCCC;" />
 
 To get started, from a [supported web browser](../../tfs-server/requirements.md#browsers) enter the following URL:
 
@@ -41,7 +41,7 @@ Below we show the admin context for the team project level.
 
 Open any admin page by clicking it's name. Click or hover over the gear icon to access other administrative options. Note that you can click any of the user-context hubs of **Home**, **Code**, **Work**, and so on to return to the user context. 
 
-<img src="../user-guide/_img/work-web-portal_admin-context-project-level-team-services.png" alt="VSTS, Admin context, team project level" style="border: 1px solid #CCCCCC;" />  
+<img src="../../user-guide/_img/work-web-portal_admin-context-project-level-team-services.png" alt="VSTS, Admin context, team project level" style="border: 1px solid #CCCCCC;" />  
 
 
 

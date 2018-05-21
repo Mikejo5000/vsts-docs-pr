@@ -114,7 +114,7 @@ TBD
 
 To view a list of teams already defined, open the admin context for the team project, and choose **Overview**.  
 
-<img src="../work/scale/_img/multiple-teams-view-teams.png" alt="Web portal, admin context, team project, Overview page" style="border: 2px solid #C3C3C3;" /> 
+<img src="../../work/scale/_img/multiple-teams-view-teams.png" alt="Web portal, admin context, team project, Overview page" style="border: 2px solid #C3C3C3;" /> 
 
 ---
 

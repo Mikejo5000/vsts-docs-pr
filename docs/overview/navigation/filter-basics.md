@@ -48,7 +48,7 @@ If you have many items listed in your product or portfolio backlog&mdash;and you
 
 You can filter work items by typing a keyword or using one or more of the fields provided, such as work item type, assigned to, state, and tags. Based on the keyword that you enter, the filter function will list work items based on any visible/displayed column or field, including tags. Also, you can enter a value for an ID, whether or not the ID field is visible.  
 
-<img src="../work/backlogs/_img/filter-backlogs-options.png" alt="Backlogs, turn filtering on" style="border: 2px solid #C3C3C3;" />
+<img src="../../work/backlogs/_img/filter-backlogs-options.png" alt="Backlogs, turn filtering on" style="border: 2px solid #C3C3C3;" />
 
 The filtered set is always a flat list, even if you've selected to show parents. 
 
@@ -59,7 +59,7 @@ You can use keywords to filter your backlogs or queries. The filter function lis
 
 Here, we filter the backlog to only show items that include 'Web' in any one of the displayed column fields. 
 
-<img src="../work/backlogs/_img/cyb-filter-backlog.png" alt="Apply text filter" style="border: 1px solid #C3C3C3;" />  
+<img src="../../work/backlogs/_img/cyb-filter-backlog.png" alt="Apply text filter" style="border: 1px solid #C3C3C3;" />  
 
 The filtered set is always a flat list, even if you've selected to show parents.  
 
