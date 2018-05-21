@@ -153,7 +153,7 @@ featureFlags:
                                             <div class="cardText">
                                                 <h3>Collaborate</h3>
                                                 <ul class="noBullet">
-                                                    <li><a class="barLink" href="/vsts/public/index">Public Projects</a></li>
+                                                    <li><a class="barLink" href="/vsts/organizations/public/index">Public Projects</a></li>
                                                     <li><a class="barLink" href="/vsts/collaborate/index">Wiki</a></li>
                                                     <li><a class="barLink" href="/vsts/notifications/index">Notifications</a></li>
                                                     <li><a class="barLink" href="/vsts/search/index">Search</a></li>
@@ -272,7 +272,7 @@ featureFlags:
                                     <ul>
                                         <li><a class="barLink" href="/vsts/report/dashboards/index">Dashboards</a></li>
                                         <li><a class="barLink" href="/vsts/collaborate/index">READMEs &amp; Wikis</a></li>
-                                        <li><a class="barLink" href="/vsts/public/index">Public Projects</a></li>
+                                        <li><a class="barLink" href="/vsts/organizations/public/index">Public Projects</a></li>
                                         <li><a class="barLink" href="/vsts/navigation/index">Navigation</a></li>
                                         <li><a class="barLink" href="/vsts/notifications/index">Notifications</a></li>
                                         <li><a class="barLink" href="/vsts/search/index">Search</a></li>
@@ -468,7 +468,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/public/index">
+                                <a href="/vsts/organizations/public/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">

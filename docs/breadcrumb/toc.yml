@@ -10,7 +10,7 @@
     topicHref: /vsts/navigation/index
   - name: Public Projects
     tocHref: /vsts/
-    topicHref: /vsts/public/index
+    topicHref: /vsts/organizations/public/index
   - name: Azure Codex Repos
     tocHref: /vsts/git/
     topicHref: /vsts/index#pivot=apps&panel=code
@@ -93,8 +93,8 @@
     topicHref: /vsts/index#pivot=apps&panel=collaboration
     items:
     - name: Public Projects
-      tocHref: /vsts/public/
-      topicHref: /vsts/public/index
+      tocHref: /vsts/organizations/public/
+      topicHref: /vsts/organizations/public/index
     - name: Notifications
       tocHref: /vsts/notifications/
       topicHref: /vsts/notifications/index

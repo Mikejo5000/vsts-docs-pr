@@ -35,7 +35,7 @@ Get started with a free account, share your code using Git, and track your work 
 - [Start work planning](../build-release/actions/ci-cd-part-1.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
 - [Start CI/CD pipeline](plan-track-work.md)
 - [Start testing code](add-run-manual-tests.md)
-- [Create an open source project](../public/create-public-project.md)
+- [Create an open source project](../organizations/public/create-public-project.md)
 - [Get started from GitHub](get-started-from-github.md)
 - [Get extensions]
 - [Start managing artifacts](manage-artifacts-and-package.md)

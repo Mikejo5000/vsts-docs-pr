@@ -39,7 +39,7 @@ Create a public project, make an existing project public, or work in a public pr
 * [Recommendations when moving a private project to public](migration-checklist.md)
 
 ## How-to Guides
-* [Filter basics](../work/backlogs/filter-backlogs.md?toc=/vsts/public/toc.json&bc=/vsts/public/breadcrumb/toc.json)  
-* [Search the code base](../search/code/code-search.md?toc=/vsts/public/toc.json&bc=/vsts/public/breadcrumb/toc.json)  
-* [Search work items](../search/workitem/work-item-search.md?toc=/vsts/public/toc.json&bc=/vsts/public/breadcrumb/toc.json)   
+* [Filter basics](../work/backlogs/filter-backlogs.md?toc=/vsts/organizations/public/toc.json&bc=/vsts/organizations/public/breadcrumb/toc.json)  
+* [Search the code base](../search/code/code-search.md?toc=/vsts/organizations/public/toc.json&bc=/vsts/organizations/public/breadcrumb/toc.json)  
+* [Search work items](../search/workitem/work-item-search.md?toc=/vsts/organizations/public/toc.json&bc=/vsts/organizations/public/breadcrumb/toc.json)   
 

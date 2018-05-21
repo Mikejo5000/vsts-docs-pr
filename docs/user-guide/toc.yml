@@ -27,7 +27,7 @@
   - name: Start testing code
     href: add-run-manual-tests.md
   - name: Create an open source project
-    href: ../public/create-public-project.md
+    href: ../organizations/public/create-public-project.md
   - name: Get started from GitHub
     href: get-started-from-github.md
   - name: Get extensions
@@ -113,7 +113,7 @@
 - name: Azure Codex Suite Onboarding Mini-guides
   items:
   - name: Azure Codex Agile
-    href: ../work/get-started/index 
+    href: ../work/get-started/index.md
   - name: Azure Codex Repos
   - name: Azure Codex Pipelines
 - name: Resources

@@ -84,4 +84,4 @@ and easily drill down or widen your search
 ## Next step
 
 > [!div class="nextstepaction"]
-> [Learn more about Code Search](../search/code/advanced-search.md?toc=/vsts/public/toc.json&bc=/vsts/public/breadcrumb/toc.json)
+> [Learn more about Code Search](../search/code/advanced-search.md?toc=/vsts/organizations/public/toc.json&bc=/vsts/organizations/public/breadcrumb/toc.json)

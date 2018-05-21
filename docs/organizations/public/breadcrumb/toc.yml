@@ -8,4 +8,4 @@
     items:
     - name: Public Projects
       tocHref: /vsts/
-      topicHref: /vsts/public/index
+      topicHref: /vsts/organizations/public/index

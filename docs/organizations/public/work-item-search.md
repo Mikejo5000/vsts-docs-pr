@@ -84,4 +84,4 @@ Work Item Search provides fast and flexible search across all your work items ov
 ## Next step
 
 > [!div class="nextstepaction"]
-> [Learn more about Work Item Search](../search/workitem/advanced-search-syntax.md?toc=/vsts/public/toc.json&bc=/vsts/public/breadcrumb/toc.json)
+> [Learn more about Work Item Search](../search/workitem/advanced-search-syntax.md?toc=/vsts/organizations/public/toc.json&bc=/vsts/organizations/public/breadcrumb/toc.json)
