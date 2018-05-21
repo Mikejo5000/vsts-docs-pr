@@ -30,7 +30,7 @@ When you add a user or group to a team or team project, they're automatically gr
 
 The systems employ these access levels:
 
-- Stakeholders: provides partial access, can be assigned to unlimited users  
+- Stakeholders: provides partial access, can be assigned to unlimited users for free
 - Basic: provides access to most features  
 - VS Enterprise (TFS 2017.1 and later versions): provides access to premium features
 - Advanced (TFS 2017 and earlier versions): provides access to premium features 
@@ -43,11 +43,20 @@ Assign **Basic** access to all users with a Visual Studio subscriptions and paid
 
 ## Stakeholder
 
-Assign **Stakeholder** access to those users who need to enter bugs, view backlogs, boards, charts, and dashboards, but who don't have a TFS CAL. Stakeholders also have full access Codex Pipelines if the Preview feature is on, otherwise they can view releases and manage release approvals. In public projects, Stakeholders have partial access to Codex Agile and full access to the rest of Codex. Stakeholder access is free. 
+::: moniker range="vsts"
+Assign **Stakeholder** access to an unlimited number of users for free. Stakeholder provides access to: 
+- A limited set of features in Codex Agile: Enter bugs, view backlogs, boards, charts, and dashboards. 
+- Full access to Codex Pipelines. 
+- Full access to Azure Codex in public projects, barring some features in Codex Agile and administrative features. 
+::: moniker-end
+
+::: moniker range=">= tfs-2013 <= tfs-2018"
+Assign Stakeholder access to those users who need to enter bugs, view backlogs, boards, charts, and dashboards, but who don't have a TFS CAL. Stakeholders can also view releases and manage release approvals. Stakeholder access is free.
 
 <img src="_img/access-levels-2017-stakeholder.png" alt="Stakeholder access features" style="border: 1px solid #CCCCCC;" />  
+::: moniker-end
 
-See [Stakeholder access](../security/get-started-stakeholder.md) for details of features available to stakeholders.
+See [Stakeholder access](../security/get-started-stakeholder.md#stakeholder-feature-access) for details of features available to stakeholders.
 
 ## VS Enterprise
 
