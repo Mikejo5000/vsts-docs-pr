@@ -1,7 +1,11 @@
-- name: VSTS and TFS
+- name: Azure Codex
   tocHref: /vsts/
   topicHref: /vsts/index
   items: 
-  - name: Navigation
+  - name: Overview
     tocHref: /vsts/
-    topicHref: /vsts/overview/navigation/index
+    topicHref: /vsts/index#pivot=apps&panel=overview
+    items:
+    - name: Navigation
+      tocHref: /vsts/
+      topicHref: /vsts/overview/navigation/index

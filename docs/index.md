@@ -427,8 +427,8 @@ featureFlags:
                         </ul>
                     </li>
                     <li>
-                        <a href="#reporting">Overview</a>
-                        <ul id="reporting" class="cardsA">
+                        <a href="#overview">Overview</a>
+                        <ul id="overview" class="cardsA">
                             <li>
                                 <a href="/vsts/report/dashboards/index">
                                     <div class="cardSize">
@@ -1056,8 +1056,8 @@ featureFlags:
                         </ul>
                     </li>
                  <li>
-                        <a href="#codex-artifacts">Analytics</a>
-                        <ul id="codex-artifacts" class="cardsA">
+                        <a href="#analytics">Analytics</a>
+                        <ul id="analytics" class="cardsA">
                             <li>
                                 <a href="/vsts/report/analytics/index">
                                     <div class="cardSize">

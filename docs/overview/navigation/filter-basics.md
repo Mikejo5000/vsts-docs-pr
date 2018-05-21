@@ -14,7 +14,7 @@ ms.date: 02-24-2018
 
 # Filter lists and boards 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)] 
 
 <!--- NEEDS UPDATING BASED ON FEATURES UNDER RELEASE  
 
@@ -44,7 +44,7 @@ If you have many items listed in your product or portfolio backlog&mdash;and you
 ## Filter based on keywords or fields (VSTS, TFS 2018)    
 
 > [!NOTE]   
-> **Feature availability**: The ability to filter your backlog or a query based on the Work Item Type, Assigned To, or State fields is available from VSTS. For queries, you must enable the [New Queries Experience](../work/track/queries-preview.md). 
+> **Feature availability**: The ability to filter your backlog or a query based on the Work Item Type, Assigned To, or State fields is available from VSTS. For queries, you must enable the [New Queries Experience](../../work/track/queries-preview.md). 
 
 You can filter work items by typing a keyword or using one or more of the fields provided, such as work item type, assigned to, state, and tags. Based on the keyword that you enter, the filter function will list work items based on any visible/displayed column or field, including tags. Also, you can enter a value for an ID, whether or not the ID field is visible.  
 
@@ -65,14 +65,14 @@ The filtered set is always a flat list, even if you've selected to show parents.
 
 
 ## Filter based on tags (TFS) 
-If you've [added tags to your work items](../work/track/add-tags-to-work-items.md), you can filter your backlogs, Kanban boards, and query results using the ![tag filter icon](../work/_img/icons/tag_filter_icon.png) tag filter. For backlogs and query results, add Tags as a column option prior to filtering on tags.  
+If you've [added tags to your work items](../../work/track/add-tags-to-work-items.md), you can filter your backlogs, Kanban boards, and query results using the ![tag filter icon](../../work/_img/icons/tag_filter_icon.png) tag filter. For backlogs and query results, add Tags as a column option prior to filtering on tags.  
 
-To learn more about filtering using tags, see [Add tags to work items to categorize and filter lists and boards, Filter lists using tags](../work/track/add-tags-to-work-items.md#filter)
+To learn more about filtering using tags, see [Add tags to work items to categorize and filter lists and boards, Filter lists using tags](../../work/track/add-tags-to-work-items.md#filter)
  
 
 ## Related notes  
-- [Tags](../work/track/add-tags-to-work-items.md) 
-- [Set column options](../work/backlogs/set-column-options.md)  
+- [Tags](../../work/track/add-tags-to-work-items.md) 
+- [Set column options](../../work/backlogs/set-column-options.md)  
 
 
 ### Characters ignored by filter criteria

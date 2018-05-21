@@ -39,9 +39,9 @@ From the **Code** hub and a git repository selected, open one of the functional 
 ---
 
 To learn more about Git artifacts, see one of the following topics:
-- [Git repository](../git/tutorial/creatingrepo.md)
-- [Git branch](../git/create-branch.md)
-- [Git pull request](../git/tutorial/pullrequest.md) 
+- [Git repository](../../git/tutorial/creatingrepo.md)
+- [Git branch](../../git/create-branch.md)
+- [Git pull request](../../git/tutorial/pullrequest.md) 
 
 <!---
 ## Create TFVC artifacts
@@ -64,7 +64,7 @@ You can quickly add a query, backlog, board, plan, or work item using the **Add*
 From the **Work** hub, you can add a work item from the menu of options as shown in the following image.
  
 > [!div class="mx-imgBorder"]
-![Work hub, add a work item](../work/backlogs/_img/add-work-items-choose-user-story.png)
+![Work hub, add a work item](../../work/backlogs/_img/add-work-items-choose-user-story.png)
 
  Or, you can open one of the pages&mdash;**Boards**, **Backlogs**, **Queries**, or **Plans**&mdash;to add an artifact specific to each of these functional pages.
  
@@ -74,8 +74,8 @@ To learn more, see one of the following topics:
 
 - [Add a board]
 - [Add a backlog]
-- [Add a delivery plan](../work/scale/review-team-plans.md)
-- [Add a managed work item query](../work/track/using-queries.md) 
+- [Add a delivery plan](../../work/scale/review-team-plans.md)
+- [Add a managed work item query](../../work/track/using-queries.md) 
 
 ---
 
@@ -102,7 +102,7 @@ From the **Build and Release** hub, open one of the functional pages to add a ar
 
 ## Add a team 
 
-Agile tools and dashboards are typically associated with teams. You add teams to a team project. To learn more about teams, see [About teams and Agile tools](../settings/about-teams-and-settings.md). To add a team, see [Add a team and team members](../work/scale/multiple-teams.md). 
+Agile tools and dashboards are typically associated with teams. You add teams to a team project. To learn more about teams, see [About teams and Agile tools](../../settings/about-teams-and-settings.md). To add a team, see [Add a team and team members](../../work/scale/multiple-teams.md). 
 
 ### View teams already defined 
 
@@ -123,14 +123,14 @@ To view a list of teams already defined, open the admin context for the team pro
 
 Dashboards are typically associated with teams, however you can create a dashboard not affiliated with a team. How??? Each team can create and configure a number of dashboards. 
 
-- [Add a dashboard](../report/dashboards/dashboards.md)
-- [Add and edit a wiki page](../collaborate/add-edit-wiki.md)
+- [Add a dashboard](../../report/dashboards/dashboards.md)
+- [Add and edit a wiki page](../../collaborate/add-edit-wiki.md)
 
 
 ## Add a wiki 
 
 If you don't have a wiki yet, you can add one and only one. Once added, you can add and update pages to that wiki. 
 
-- [Create a wiki](../collaborate/wiki-create-repo.md)
-- [Add and edit wiki pages](../collaborate/add-edit-wiki.md)
+- [Create a wiki](../../collaborate/wiki-create-repo.md)
+- [Add and edit wiki pages](../../collaborate/add-edit-wiki.md)
 

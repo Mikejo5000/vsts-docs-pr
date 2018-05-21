@@ -14,7 +14,7 @@ ms.date: 02-24-2018
 
 **Azure Codex**  
 
-By favoriting an artifact or view, you can quickly access it. You favorite an item by clicking the ![favorites](../_img/icons/icon-favorite-star.png) star icon. The favorited item will then show up easily from one or more directory lists.  
+By favoriting an artifact or view, you can quickly access it. You favorite an item by clicking the ![favorites](../../_img/icons/icon-favorite-star.png) star icon. The favorited item will then show up easily from one or more directory lists.  
 
 You can favorite the following artifacts:
 
@@ -41,15 +41,15 @@ Favorited objects include:
 
 ## Mark an object as a favorite 
 
-- To mark a team project or team as a favorite, go to the **Projects** page and click the ![favorites](../_img/icons/icon-favorite-star.png) star icon next to the team or team project.   
-<!--- Not supported at account level: To mark a git branch as a favorite, open the **Code>Branches** page and click the ![favorites](../_img/icons/icon-favorite-star.png) star icon next to the branch you want to add.  -->  
+- To mark a team project or team as a favorite, go to the **Projects** page and click the ![favorites](../../_img/icons/icon-favorite-star.png) star icon next to the team or team project.   
+<!--- Not supported at account level: To mark a git branch as a favorite, open the **Code>Branches** page and click the ![favorites](../../_img/icons/icon-favorite-star.png) star icon next to the branch you want to add.  -->  
 - To mark a query as a favorite, open the **Work>Queries** page and drag the query into the My Favorites area. 
-- To mark a plan as a favorite, open the **Work>Plans** page and click the ![favorites](../_img/icons/icon-favorite-star.png) star icon next to a plan.  
-- To mark a build definition as a favorite, open the **Build&Release>All Definitions** page and click the ![favorites](../_img/icons/icon-favorite-star.png) star icon next to the build definition.    
-- To mark a test plan as a favorite, open the **Test>Test Plans** page and click the ![favorites](../_img/icons/icon-favorite-star.png) star icon next to a test plan from the menu that shows All test plans. 
+- To mark a plan as a favorite, open the **Work>Plans** page and click the ![favorites](../../_img/icons/icon-favorite-star.png) star icon next to a plan.  
+- To mark a build definition as a favorite, open the **Build&Release>All Definitions** page and click the ![favorites](../../_img/icons/icon-favorite-star.png) star icon next to the build definition.    
+- To mark a test plan as a favorite, open the **Test>Test Plans** page and click the ![favorites](../../_img/icons/icon-favorite-star.png) star icon next to a test plan from the menu that shows All test plans. 
 
 ### Remove an item from your favorites list 
-To remove an item from your favorites list, click the ![favorited icon](../_img/icons/icon-favorited.png) favorited icon. 
+To remove an item from your favorites list, click the ![favorited icon](../../_img/icons/icon-favorited.png) favorited icon. 
 
 <img src="../user-guide/_img/account-home-remove-from-favorites.png" alt="Account home, Favorites page" style="border: 1px solid #CCCCCC;" />   
 

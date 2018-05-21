@@ -22,12 +22,12 @@
 - name: Resources
   items:
   - name: Settings 
-    href: ../settings/index.md
+    href: ../../settings/index.md
   - name: Dashboards   
-    href: ../report/dashboards/index.md  
+    href: ../../report/dashboards/index.md  
   - name: Wiki 
-    href: ../collaborate/index.md    
+    href: ../../collaborate/index.md    
   - name: Search   
-    href: ../search/index.md  
+    href: ../../search/index.md  
   - name: Notifications 
-    href: ../notifications/index.md  
+    href: ../../notifications/index.md  
