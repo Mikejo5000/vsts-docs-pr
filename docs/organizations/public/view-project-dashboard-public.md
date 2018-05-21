@@ -23,7 +23,7 @@ If you're a contributor, you can also [edit README files for a project](../../co
 ## Open the project home page
 From your web browser, open the team project drop down menu and select the home page. If you don't have a public project yet, [create one](create-public-project.md).   
 
-<img src="../collaborate/_img/project-vision-status-project-home-page.png" alt="Open the Project Home Page" style="border: 2px solid #C3C3C3;" />
+<img src="../../collaborate/_img/project-vision-status-project-home-page.png" alt="Open the Project Home Page" style="border: 2px solid #C3C3C3;" />
 
 <!--- 
 
