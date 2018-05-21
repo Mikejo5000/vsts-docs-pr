@@ -152,3 +152,6 @@
     - name: Visual Studio subscriptions
       tocHref: /vsts/marketplace/vs-subscriptions/
       topicHref: /vsts/marketplace/vs-subscriptions/buy-vs-subscriptions
+- name: Demo Generator
+    tocHref: /vsts/demogen/
+    topicHref: /vsts/demogen/index
