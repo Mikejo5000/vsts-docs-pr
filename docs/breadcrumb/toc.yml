@@ -69,7 +69,7 @@
   - name: Java 
     tocHref: /vsts/java/
     topicHref: /vsts/java/index 
-  - name: Demo Generator
+  - name: "VSTS Demo Generator"
     tocHref: /vsts/demo-gen/
     topicHref: /vsts/demo-gen/index  
   - name: Reporting
