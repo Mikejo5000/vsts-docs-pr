@@ -35,6 +35,9 @@ If you haven't set up sprints yet for your team, go [here to do that now](define
 
 ## Set capacity for team members 
 
+If you haven't yet [added tasks for your sprint backlog items](add-tasks.md), do that now. 
+
+
 From the **Capacity** page, enter the capacity and days off for each member of your team. If your team tracks capacity by activity, then also select the Activity for each team member.  
  
 If you don't see a team member listed, you need to [add them to the team](../scale/multiple-teams.md#add-team-members). Also, you only have to indicate planned days off for the team. You [set weekend days or other recurring days off](#team_settings) under team settings.  
@@ -104,7 +107,6 @@ For example, here we choose Sprint 2 and copy the capacity set for Sprint 1.
 
 ![Copy capacity from the previous iteration](_img/capacity/copy-capacity-from-previous-sprint.png)
 
-
 ---
 
 
@@ -129,7 +131,7 @@ Click ![Add user icon](_img/capacity/capacity-planning-add-user-icon.png) to add
 
 ![Capacity planning, Add missing team members](_img/capacity/capacity-planning-add-missing-team-members.png) 
 
-To remove a user, click the option from the users Action menu. 
+To remove a user, click the option from the users ![](../../_img/icons/actions-icon.png) action menu. 
 
 ![Capacity planning, Remove a user](_img/capacity/capacity-planning-remove-user.png) 
 

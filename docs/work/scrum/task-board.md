@@ -1,17 +1,18 @@
 ---
-title: Scrum with the task board 
+title: Update and monitor your scrum taskboard 
 titleSuffix: Azure Codex & TFS  
-description: Implement Scrum using the sprint task board in Visual Studio Team Services & Team Foundation Server
+description: Implement scrum using the sprint task board in Visual Studio Team Services & Team Foundation Server
 ms.technology: devops-agile
 ms.prod: devops 
 ms.assetid: 278BF8D9-E34F-4D14-BACC-D3BA704C2C47  
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 ms.topic: tutorial
-ms.date: 03/20/2018
+monikerRange: '>= tfs-2013'
+ms.date: 07/07/2018
 ---
 
-# Task board  
+# Update and monitor your Taskboard  
 
 [!INCLUDE [temp](../_shared/dev15-version-header.md)] 
 
@@ -19,18 +20,10 @@ Once you have your [sprint plan](sprint-planning.md) in place, you'll execute th
 
 Your task board provides a visualization of flow and status of each sprint task. With it, you can focus on the status of backlog items as well as work assigned to each team member. It also summarizes the total amount of remaining work to complete for a task or within a column.  
 
-In this topic you'll learn how to:  
 
-> [!div class="checklist"]   
-> * Use your task board to review progress during daily scrum meetings   
-> * Filter and group work items on your task board         
-> * Update the status of tasks through drag-and-drop   
-> * Update remaining work   
-> * Close out a sprint    
-> * Customize your task board
-
-
-<img src="_img/ALM_TB_Intro.png" alt="Task board, collapsed backlog items" style="border: 2px solid #C3C3C3;" />
+::: moniker range="vsts"
+> [!div class="mx-imgBorder"]  
+> ![Taskboard, collapsed backlog items, cloud service](_img/taskboard/taskboard-intro-s136.png)
 
 ::: moniker range="vsts"
 > [!NOTE]  
@@ -40,12 +33,45 @@ In this topic you'll learn how to:
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
+
+![Task board, collapsed backlog items, TFS](_img/ALM_TB_Intro.png)
+
 > [!NOTE]  
 > Your task board is one of two types of boards available to you. For an overview of the features supported on each backlog and board, see [Backlogs, boards, and plans](../backlogs/backlogs-boards-plans.md). To customize the task board to include more or different columns, you need to customize the workflow. For details, see [Customize the On-premises XML process model](../customize/on-premises-xml-process-model.md).
 >
 > In addition, if you're wondering why the task board items don't match your query list of items for a sprint, see [Task board items versus query list items](../backlogs/backlogs-boards-plans.md#task-board-items).
 ::: moniker-end
 
+
+In this topic you'll learn how to:  
+
+> [!div class="checklist"]  
+> * Customize your task board 
+> * Use your task board to review progress during daily scrum meetings   
+> * Filter and group work items on your task board         
+> * Update the status of tasks through drag-and-drop   
+> * Update remaining work   
+> * Close out a sprint    
+
+If you haven't yet [adjusted work assigned to a sprint](adjust-work.md), do that now. 
+
+
+## Customize the task board 
+Each team can customize their task board in the following ways:
+- [Customize cards](../customize/customize-cards.md) that appear on the task board to show additional fields.
+- [Show bugs on the task board](../customize/show-bugs-on-backlog.md), your team can choose to manage bugs similar to product backlog items, as shown in this topic, or manage them similar to tasks. When you track bugs similar to tasks, they'll show up on your sprint backlogs and task boards at the same level as tasks.
+   
+An administrator can customize the task board for all teams in the following ways:  
+
+::: moniker range="vsts"
+- [Add a custom workflow state to the task WIT for a process](../../settings/work/customize-process-workflow.md)
+- [Add a custom work item type to the task board for a process](../../settings/work/customize-process-backlogs-boards.md)
+::: moniker-end
+
+::: moniker range=">= tfs-2013 <= tfs-2018"
+- [Modify the workflow for the task WIT definition](../customize/reference/change-workflow-wit.md).
+- [Add a work item type to a backlog or board](../customize/add-wits-to-backlogs-and-boards.md).
+::: moniker-end
 
 <a id="review-progress">  </a>
 ## Review progress in daily scrum meetings 
@@ -58,13 +84,33 @@ Use the Person filter when you want to focus on work assigned to individual team
 > [!TIP]    
 >If you're seeing tasks that don't belong to your team, check that you've [selected the correct team](../../settings/switch-team-context.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json). 
 
-
-
 <a id="show-item-progress">  </a>
 ## Show progress on items
-With this view, you can quickly see which items are nearing completion and which have yet to be started. You can expand ![expand icon](../_img/icons/expand_row_icon.png) and collapse ![collapse icon](../_img/icons/collapse_row_icon.png) a row to focus on a particular item and its tasks. 
-  
+With this view, you can quickly see which items are nearing completion and which have yet to be started. 
+
+# [Vertical navigation](#tab/vertical)
+
+::: moniker range="vsts"
+
+> [!div class="mx-imgBorder"]  
+> ![Set view options, vertical nav](_img/taskboard/set-work-details.png)
+
+::: moniker-end
+
+::: moniker range=">= tfs-2013 <= tfs-2018"
+Vertical navigation isn't supported on the TFS platform at this time.
+::: moniker-end
+
+# [Horizontal navigation](#tab/horizontal)
+You can expand ![expand icon](../_img/icons/expand_row_icon.png) and collapse ![collapse icon](../_img/icons/collapse_row_icon.png) a row to focus on a particular item and its tasks.
+
+::: moniker range=">= tfs-2013"
+
 ![Group by backlog items, show All team members](_img/ALM_TB_GRP_ItemsAll.png)
+
+::: moniker-end
+
+---
 
 
 <a id="show-individual-progress">  </a>
@@ -154,23 +200,6 @@ As you can see, the task board provides a lot of support for your Scrum activiti
 
 See also [Backlog keyboard shortcuts](../backlogs/backlogs-keyboard-shortcuts.md).     
 
-
-### Customize the task board 
-Each team can customize their task board in the following ways:
-- [Customize cards](../customize/customize-cards.md) that appear on the task board to show additional fields.
-- [Show bugs on the task board](../customize/show-bugs-on-backlog.md), your team can choose to manage bugs similar to product backlog items, as shown in this topic, or manage them similar to tasks. When you track bugs similar to tasks, they'll show up on your sprint backlogs and task boards at the same level as tasks.
-   
-An administrator can customize the task board for all teams in the following ways:  
-
-::: moniker range="vsts"
-- [Add a custom workflow state to the task WIT for a process](../../settings/work/customize-process-workflow.md)
-- [Add a custom work item type to the task board for a process](../../settings/work/customize-process-backlogs-boards.md)
-::: moniker-end
-
-::: moniker range=">= tfs-2013 <= tfs-2018"
-- [Modify the workflow for the task WIT definition](../customize/reference/change-workflow-wit.md).
-- [Add a work item type to a backlog or board](../customize/add-wits-to-backlogs-and-boards.md).
-::: moniker-end
 
  
 <a id="reduce-task-board-items">  </a> 

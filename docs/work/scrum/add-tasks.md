@@ -18,24 +18,37 @@ ms.date: 07/07/2018
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)] 
 
-The capacity tool tells you how much work your team can commit to. However, to compare capacity with actually planned work, you need to define and estimate tasks for each backlog item.
+You add tasks to backlog items when you want to track the work required to implement them and to estimate the work assigned to individual team members and the team. The capacity tool tells you how much work your team can commit to. However, to compare capacity with actually planned work, you need to define and estimate tasks for each backlog item.
 
-Add as many tasks as needed to capture the work required to complete each item. Tasks can represent different work to be performed - such as design, code, test, content, sign off. Usually, each team member adds their own tasks and sets estimates for the work. However, a development lead could define the initial tasks for a requirement.
+Add as many tasks as needed to capture the work required to complete each item. Tasks can represent different work to be performed - such as design, code, test, content, sign off. Usually, each team member adds their own tasks and sets estimates for the work. However, a development lead could define the initial tasks for a story or requirement.
 
-1. In the sprint backlog, add a task.  
+
+In this topic you'll learn how to:  
+
+> [!div class="checklist"]   
+> * Add tasks to backlog items 
+> * Estimate work, set *Remaining Work*  
+> * Order, re-parent, and reassign items to different sprints
+   
+## Add tasks to backlog items
+
+If you haven't yet [assigned backlog items to your sprint](assign-work-sprint.md), do that now. 
+
+1. For each sprint backlog item, add a task.  
 
 	<img src="_img/sp-add-tasks.png" alt="Sprint backlog page, add task" style="border: 1px solid #C3C3C3;" />     
 
 	Creating tasks from the sprint backlog automatically links the task to its parent backlog item.  
 
-2. Name the task and enter an estimate for Remaining Work. Also, if you know who'll perform the work, go ahead and assign the task to that team member.  
+2. Name the task and enter an estimate for *Remaining Work*. Also, if you know who'll perform the work, go ahead and assign the task to that team member.  
 
-	<!--- **Feature availability:** From the web portal you'll have access to the [new form with the new work tracking experience](../backlogs/add-work-items.md). For TFS 2015 and ealier versions, the old form is supported.   --> 
-	
-	::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+	::: moniker range="vsts"
+	> [!div class="mx-imgBorder"]  
+	> ![Add task](_img/add-tasks/add-task-form.png)
+	::: moniker-end	
+	::: moniker range=">= tfs-2017 <= tfs-2018"
     <a id="task-form-team-services" /> 
 	<!--- Task form, new form -->
-
 	<img src="_img/sp-scrum-task-form.png" alt="New task form" style="border: 2px solid #C3C3C3;" />	
 	::: moniker-end
     ::: moniker range=">= tfs-2013 <= tfs-2015"
@@ -45,11 +58,11 @@ Add as many tasks as needed to capture the work required to complete each item. 
 	<img src="_img/IC797606.png" alt="Web portal, Task form, oldform"  style="border: 1px solid #C3C3C3;" />  	
 	::: moniker-end
 
-	At the planning stage, Remaining Work corresponds to an estimate of how long it will take to complete the task.  
+	At the planning stage, *Remaining Work* corresponds to an estimate of how long it will take to complete the task.  
 	
 	A good rule of thumb is to size tasks to take no more than a day to complete. If a task is too large, the team should break it down. In some cases, you may not be able to estimate some tasks effectively until other tasks have been completed. Create the task now, but estimate it when you have enough information.  
 	
-	During the sprint, team members update remaining work to continually reflect the time required to complete the task. This value can actually increase after work begins. For example, after working 4 hours on a task that was estimated to take 8 hours, the team member realizes he needs 16 hours over what he estimated. He would update the Remaining Work field with 20 (8-4+16).  As you perform a task, you might find that more time is required. Always update the task with your best estimate of remaining work. That way, you help accurately reflect the total amount of work remaining in the sprint.  
+	During the sprint, team members update remaining work to continually reflect the time required to complete the task. This value can actually increase after work begins. For example, after working 4 hours on a task that was estimated to take 8 hours, the team member realizes he needs 16 hours over what he estimated. He would update the *Remaining Work* field with 20 (8-4+16).  As you perform a task, you might find that more time is required. Always update the task with your best estimate of remaining work. That way, you help accurately reflect the total amount of work remaining in the sprint.  
 
 3. As you define tasks and estimate the work, you'll see capacity charts start to fill in for each team member. Capacity bars track the remaining work against the capacity for each team member as well as the entire team.  
 

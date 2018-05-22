@@ -20,7 +20,29 @@ ms.date: 07/07/2018
 With Scrum, teams plan and track work at regular time intervals, referred to as a sprint cadence. 
 You define sprints to correspond to the cadence your team uses. 
 
-Many teams choose a two or three week cadence. However, you can specify shorter or longer sprint cycles. Also, you can create a release schedule which encompasses several sprints.     
+Many teams choose a two or three week cadence. However, you can specify shorter or longer sprint cycles. Also, you can create a release schedule which encompasses several sprints.    
+
+
+
+
+## (Optional) Add a sprint 
+
+You'll want to have [set the start and end dates for your sprint](define-sprints.md#quick-start-schedule). 
+
+*More Info*
+
+
+## Select a sprint for use by your team 
+
+*More Info*
+
+
+> [!div class="mx-imgBorder"]
+> ![Select a sprint for use by team](_img/assign-items-sprint/select-sprint.png)
+
+ 
+
+ 
 
 <a id="quick-start-schedule">   </a>
 ## Quick start guide to scheduling sprints
