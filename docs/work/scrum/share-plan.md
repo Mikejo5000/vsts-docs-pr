@@ -21,6 +21,14 @@ ms.date: 07/07/2018
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)] 
  
+If you haven't yet [adjusted the work to fit your team's capacity](adjust-work.md), do that now. 
+
+This article shows you how to: 
+> [!div class="checklist"]   
+> * Email your sprint plan   
+
+
+
 Any stakeholder on your team (someone with permissions to connect to your project) can view your sprint plan. 
 Simply send them the URL of your sprint backlog page. But also, you can share it with them through email or print a version. 
 

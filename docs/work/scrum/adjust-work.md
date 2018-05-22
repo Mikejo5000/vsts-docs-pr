@@ -20,13 +20,25 @@ ms.date: 07/07/2018
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)] 
 
+
+
+> [!div class="checklist"]   
+> * Adjust your sprint plan if your team is over or under capacity    
+> * Load balance work across your team 
+> * Quickly reassign tasks to another team member    
+
+If you haven't yet [set capacity for your team](set-capacity.md), do that now. 
+
+
+## Check your team capacity 
+
 After you've defined all the tasks for all the items, check whether your team is at or over capacity. If under capacity, you can consider adding more items onto the sprint. If over capacity, you'll want to remove items out of the backlog.  
 
 Next, check whether any team member is under, at, or over capacity. Or, if someone hasn't even been assigned any work. Use the capacity bars to make these determinations.  
 
 ![Over capacity](_img/IC795969.png)  
 
-###Team over capacity: move items out of the sprint
+## Team over capacity: move items out of the sprint
 
 If your team's over capacity, drag items from the bottom of the list onto Backlog items. This will reset the Iteration Path to the default set for your team. Or, you can move the item into the next sprint your team will work in. All the tasks that you've defined for that item will move with it.   
 
@@ -36,7 +48,7 @@ If your team's over capacity, drag items from the bottom of the list onto Backlo
 > Dragging a backlog item to the backlog or another sprint reassigns all child tasks to the same iteration path. 
 > Also, you can multi-select several items and drag them to the backlog or another sprint. 
 
-### Load balance work across the team
+## Load balance work across the team
 
 To quickly reassign tasks, drag the task onto the new assignee's capacity bar. As you reassign tasks, capacity bars automatically update.  
 

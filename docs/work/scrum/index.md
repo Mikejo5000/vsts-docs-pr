@@ -30,14 +30,15 @@ Start tracking work by adding work items, creating your backlog, or scheduling s
 
 Whether you use scrum, Kanban, or a combination of Agile methods, you can get started tracking bugs, driving your Git development, and more using the Agile tools available to you. 
 
-- [Plan a sprint](sprint-planning.md)  
-- [Add and update tasks](task-board.md)  
-- [Plan capacity](../scale/capacity-planning.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json)  
-- [Sprint burndown](sprint-burndown.md)  
-- [Forecast](forecast.md) 
-- [Velocity](../../report/dashboards/team-velocity.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json) 
- 
+- [1. Assign backlog items to a sprint](assign-work-sprint.md)
+- [2. Add tasks to backlog items](add-tasks.md)
+- [3. Set your team's capacity](set-capacity.md)
+- [4. Adjust work to fit team capacity](adjust-work.md)
+- [5. Share your sprint plan](share-plan.md)
+- [6. Update the Taskboard](task-board.md)
+- [7. Monitor sprint burndown](sprint-burndown.md)
 
+ 
 ## Concepts          
 - [Scrum best practices](best-practices-scrum.md) 
 - [Scrum and sprint planning tools](scrum-sprint-planning-tools.md)      

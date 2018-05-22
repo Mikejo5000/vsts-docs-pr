@@ -1,4 +1,4 @@
-- name: Azure Codex Agile Scrum and Sprints
+- name: Sprints (Scrum) 
   href: index.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
 - name: Overview
   items:
@@ -16,28 +16,28 @@
   items:
   - name: 1. Assign backlog items to a sprint
     href: assign-work-sprint.md
-  - name: 2. Set your team's capacity 
-    href: set-capacity.md
-  - name: 3. Add tasks to backlog items 
+  - name: 2. Add tasks to backlog items 
     href: add-tasks.md
+  - name: 3. Set your team's capacity 
+    href: set-capacity.md
   - name: 4. Adjust work to fit team capacity 
     href: adjust-work.md
   - name: 5. Share your sprint plan
     href: share-plan.md
-- name: Tutorials (Old) 
-  items:
-  - name: Plan a sprint
-    href: sprint-planning.md
-  - name: "Add & update tasks (Task board)"
+  - name: 6. Update the Taskboard 
     href: task-board.md
-  - name: Plan capacity
-    href: ../scale/capacity-planning.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
-  - name: Sprint burndown
+  - name: 7. Monitor sprint burndown
     href: sprint-burndown.md
   - name: Forecast
     href: forecast.md
   - name: Velocity
     href: ../../report/guidance/team-velocity.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
+- name: Tutorials (Old) 
+  items:
+  - name: Plan a sprint
+    href: sprint-planning.md
+  - name: Plan capacity
+    href: ../scale/capacity-planning.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
 - name: Concepts
   items:
   - name: Scrum best practices
