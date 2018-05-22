@@ -1,6 +1,6 @@
 ---
 title: Sprint and scrum best practices
-titleSuffix: VSTS & TFS 
+titleSuffix: Azure Codex & TFS 
 description: Best practice guidance to implement scrum and use sprint tools in Visual Studio Team Services & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
@@ -9,13 +9,14 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-ms.date: 08/02/2017
+monikerRange: '>= tfs-2013'
+ms.date: 07/07/2018
 ---
 
 
 # Scrum and best practices 
  
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)] 
 
 <a id="sprint-planning-meeting">  </a>
 ## Sprint planning meetings 

@@ -1,6 +1,6 @@
 ---
 title: Configure WIP limits for Kanban board
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Codex & TFS
 description: Set Work In Progress Limits on the Kanban board in Visual Studio Team Services and Team Foundation Server 
 ms.global_help.title: Set WIP limits
 ms.global_help.keywords: ms.vss-work-web.boards-hub, 5    
@@ -16,7 +16,7 @@ ms.date: 03/20/2018
 
 # Work in Progress limits
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 An essential Kanban practice&mdash;Work in Progress limits, aka "WIP limits"&mdash;constrains the amount of work your team undertakes at each work stage. It's designed to focus your team on completing items before starting new work. While counter-intuitive at first, many teams find WIP limits helps them increase their productivity and improve their software quality.  
 
@@ -117,7 +117,7 @@ With an understanding of how you'll use WIT limits, here's how you set them.
     ::: moniker range="tfs-2013"          
 	![Open configuration settings](../customize/_img/kanban-card-customize-open-settings.png)    
     ::: moniker-end 
-	You'll see different column titles and choices based on the [process](../work-items/guidance/choose-process.md) used to create your team project  and whether your team has chosen to [treat bugs like requirements or like tasks](../customize/show-bugs-on-backlog.md).  
+	You'll see different column titles and choices based on the [process](../work-items/guidance/choose-process.md) used to create your project  and whether your team has chosen to [treat bugs like requirements or like tasks](../customize/show-bugs-on-backlog.md).  
  
 2. Click a column tab to set the WIP limit for that column. 
 	::: moniker range=">= tfs-2017"   

@@ -1,6 +1,6 @@
 ---
 title: Practices that scale
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Codex & TFS
 description: Scaling Agile recommended practices for working in Visual Studio Team Services & Team Foundation Server    
 ms.technology: devops-agile
 ms.prod: devops
@@ -14,7 +14,7 @@ ms.date: 08/02/2017
 
 #Scaling Agile - Practices that scale  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 Enterprise organizations adopt Agile practices for a number of reasons. Prime among these include:  
 

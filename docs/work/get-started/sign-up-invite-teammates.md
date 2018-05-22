@@ -1,19 +1,21 @@
 ---
 title: Sign up and invite teammates 
-titleSuffix: VSTS
-description: Quickstart guide to signing up and inviting others to join a team project in VSTS 
+titleSuffix: Azure Codex
+description: Quickstart guide to signing up and inviting others to join a project in Azure Codex 
 ms.technology: vs-devops-overview 
 ms.prod: vs-devops-alm
 ms.topic: get-started-article
 ms.assetid: 
 ms.manager: douge
 ms.author: kaelli
-ms.date: 07/14/2017
 monikerRange: 'vsts'
+ms.date: 07/07/2017
 ---
 
 
 # Start using Codex Agile today
+
+**Azure Codex**
  
 Sign up for a Azure Codex account to upload and share code in a free unlimited private 
 Git repository. You can then connect to your favorite development tool like Eclipse, Xcode, 
@@ -23,11 +25,11 @@ Visual Studio, IntelliJ, or Android Studio to work on apps anytime, anywhere.
 
 ## Sign up with a personal Microsoft account
 
-0.	Right-click the sign-up link, [VSTS](https://go.microsoft.com/fwlink/?LinkId=307137&clcid=0x409), and enter 
+0.	Right-click the sign-up link, [Azure Codex](https://go.microsoft.com/fwlink/?LinkId=307137&clcid=0x409), and enter 
 your email address for your Microsoft account. 
 
 	If you're a Visual Studio subscriber 
-	and get VSTS as a benefit, 
+	and get Azure Codex as a benefit, 
 	use the Microsoft account associated with your subscription. 
 
 	<img src="../../accounts/_img/_shared/sign-in.png" alt="Enter your email address" style="border: 2px solid #C3C3C3;" />
@@ -41,29 +43,29 @@ Then enter your password, and finish signing in.
 	If you don't have a Microsoft account, 
 	you can create a Microsoft account at this time. 
 
-0.	Enter a name for your account. The name you enter cannot contain spaces or special characters (such as / \ [ ] : | < > + = ; ? or &#42;), cannot end in a period or comma, must be less than 256 characters, and must be unique within the VSTS namespace. 
+0.	Enter a name for your account. The name you enter cannot contain spaces or special characters (such as / \ [ ] : | < > + = ; ? or &#42;), cannot end in a period or comma, must be less than 256 characters, and must be unique within the Azure Codex namespace. 
 
 	To manage your code, choose Git or Team Foundation Version Control.
 
-	<img src="../../accounts/_img/sign-up-visual-studio-team-services/create-team-services-account.png" alt="Name your VSTS account, choose your version control" style="border: 1px solid #C3C3C3;" />
+	<img src="../../accounts/_img/sign-up-visual-studio-team-services/create-team-services-account.png" alt="Name your Azure Codex account, choose your version control" style="border: 1px solid #C3C3C3;" />
 
 	Choose Git for distributed source control and TFVC for centralized source control. To learn more, review [Git](../../git/overview.md) 
 	or [Team Foundation Version Control](../../tfvc/overview.md).
 
 0.	(Optional) Click **Change details** to change default assignments. Otherwise, click **Continue** to confirm to initiate your account creation.
 
-	<img src="../../accounts/_img/sign-up-visual-studio-team-services/check-account-location-standard.png" alt="Rename team project, change account location, or select another process" style="border: 2px solid #C3C3C3;" />
+	<img src="../../accounts/_img/sign-up-visual-studio-team-services/check-account-location-standard.png" alt="Rename project, change account location, or select another process" style="border: 2px solid #C3C3C3;" />
 
 	To change default assignments, use this guidance:
 
-	- **Project name**: You can specify your team project name. The name you enter cannot contain spaces or special characters (such as / : \ ~ & % ; @ ' " ? < > | # $ &#42; } { , + = [ ], cannot begin with an underscore or begin or end with a period, and must be 64 characters or less.
-   - **Organize work using**: The default work tracking process is set to **Agile**. If you want to work with Scrum or CMMI processes, then select those now.  You can't change the process after the team project is created. (To learn more, see [Choose process](../work-items/guidance/choose-process.md). 
+	- **Project name**: You can specify your project name. The name you enter cannot contain spaces or special characters (such as / : \ ~ & % ; @ ' " ? < > | # $ &#42; } { , + = [ ], cannot begin with an underscore or begin or end with a period, and must be 64 characters or less.
+   - **Organize work using**: The default work tracking process is set to **Agile**. If you want to work with Scrum or CMMI processes, then select those now.  You can't change the process after the project is created. (To learn more, see [Choose process](../work-items/guidance/choose-process.md). 
    - **Host your projects in**: You can choose between [several locations for where you want your data hosted](https://www.microsoft.com/en-us/trustcenter/privacy/vsts-location).
  
-	<img src="../../user-guide/_img/sign-up/change-details.png" alt="Choose details for your VSTS account" style="border: 2px solid #C3C3C3;" />
+	<img src="../../user-guide/_img/sign-up/change-details.png" alt="Choose details for your Azure Codex account" style="border: 2px solid #C3C3C3;" />
 
-0.	By default, Codex creates your first team project as "MyFirstProject". After Codex creates your account and team project, 
-you can invite others to join your project, add code, start planning and tracking using work items, or rename your team project. 
+0.	By default, Codex creates your first project as "MyFirstProject". After Codex creates your account and project, 
+you can invite others to join your project, add code, start planning and tracking using work items, or rename your project. 
 
 	<img src="../../accounts/_img/_shared/team-project-created.png" alt="Add code or work items" style="border: 2px solid #C3C3C3;" />
 

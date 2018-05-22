@@ -1,6 +1,6 @@
 ---
 title: Copy a list of work items
-titleSuffix: VSTS & TFS   
+titleSuffix: Azure Codex & TFS   
 description: Copy a list of work items from a backlog or query in Visual Studio Team Services or Team Foundation Server
 ms.technology: devops-agile
 ms.prod: devops
@@ -14,7 +14,7 @@ ms.date: 03/20/2018
 
 # Copy a list of work items  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 <a id="html"></a>
 
@@ -38,7 +38,7 @@ You can copy an HTML formatted table of selected items from either a backlog pag
 
 	Here we multi-select from the product backlog and choose <b>Copy to clipboard</b>.
 
-	<img src="_img/copy-wi-copy-to-clipboard-ts-1.png" alt="VSTS, backlog page, multi-select items, open context menu, Copy to clipboard" style="border: 1px solid #CCCCCC;" /> 
+	<img src="_img/copy-wi-copy-to-clipboard-ts-1.png" alt="Azure Codex, backlog page, multi-select items, open context menu, Copy to clipboard" style="border: 1px solid #CCCCCC;" /> 
 ::: moniker-end 
 
 ::: moniker range="tfs-2017"
@@ -68,7 +68,7 @@ You can copy an HTML formatted table of selected items from either a backlog pag
 
 ## Paste the contents into your email client
 
-Once you've copied your list, you can optionally paste the contents of the clipboard into your email client or other application. To open a linked work item, requires users to have read access to the team project or area node for those work items. 
+Once you've copied your list, you can optionally paste the contents of the clipboard into your email client or other application. To open a linked work item, requires users to have read access to the project or area node for those work items. 
 
 The formatted table contains a link to each work item included in your selected results list. A link to a query that will open only those work items selected is also provided.</p>
 

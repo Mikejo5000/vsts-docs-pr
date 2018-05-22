@@ -1,6 +1,6 @@
 ---
 title: Add a custom field
-titleSuffix: VSTS & TFS 
+titleSuffix: Azure Codex & TFS 
 description: Add a custom work item field to support queries, reports, and workflow in Visual Studio Team Services & Team Foundation Server  
 ms.technology: devops-agile
 ms.prod: devops
@@ -14,6 +14,6 @@ ms.date: 04/05/2017
 
 # Add or modify a field  
 
-<b>VSTS (Hosted XML) | TFS 2017 | TFS 2015 | TFS 2013</b> 
+<b>Azure Codex (Hosted XML) | TFS 2017 | TFS 2015 | TFS 2013</b> 
 
 To be written

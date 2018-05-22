@@ -1,6 +1,6 @@
 ---
 title: Delivery plan keyboard shortcuts 
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Codex & TFS
 description: Use keyboard shortcuts to interact with delivery plans in Visual Studio Team Services & Team Foundation Server     
 ms.technology: devops-agile
 ms.prod: devops
@@ -14,7 +14,7 @@ ms.date: 03/20/2018
 
 # Keyboard shortcuts to interact with delivery plans 
 
-**VSTS | TFS 2018 | TFS 2017.2**
+**Azure Codex | TFS 2018 | TFS 2017.2**
  
 ::: moniker range="tfs-2017" 
 Installation of Delivery Plans requires TFS 2017.2 or later version.
@@ -24,6 +24,6 @@ Installation of Delivery Plans requires TFS 2017.2 or later version.
 
 ## Related articles
 
-- [Keyboard shortcuts for VSTS, TFS, and Team Explorer](../../collaborate/keyboard-shortcuts.md)
+- [Keyboard shortcuts for Azure Codex, TFS, and Team Explorer](../../collaborate/keyboard-shortcuts.md)
 
 

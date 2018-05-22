@@ -1,6 +1,6 @@
 ---
-title: Field data types and field attributes | VSTS & TFS  
-description: Data types supported by work item fields to support queries, reports, and workflow for Visual Studio Team Services (VSTS) and TFS  
+title: Field data types and field attributes | Azure Codex & TFS  
+description: Data types supported by work item fields to support queries, reports, and workflow for Visual Studio Team Services (Azure Codex) and TFS  
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: c735a582-954a-418e-8b12-1b5c0b9857b9  
@@ -15,7 +15,7 @@ ms.date: 09/08/2017
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-The field data type determines the kind and size of data that you can store in the field. A field can have only one type defined within a team project collection. This restriction encourages organizations to use common fields across projects and work item types.
+The field data type determines the kind and size of data that you can store in the field. A field can have only one type defined within a project collection. This restriction encourages organizations to use common fields across projects and work item types.
 
 Reportable attributes determine which fields show up in the data warehouse. Reportable attributes are only valid for on-premises TFS.  
 
@@ -36,7 +36,7 @@ The following list shows the supported data types:
 	<td><p><strong>Boolean</strong> </p></td>
 	<td><p>Specifies a field that takes on a True/False value. Add a **Boolean** field to a work item form by using the **FieldControl** attribute. </p>
 
-<blockquote><b>Feature availability:</b> The Boolean data type field is only supported for VSTS and TFS 2017.2 and later versions.</blockquote>
+<blockquote><b>Feature availability:</b> The Boolean data type field is only supported for Azure Codex and TFS 2017.2 and later versions.</blockquote>
 
 </td></tr>
 <tr>
@@ -151,7 +151,7 @@ You can enable or disable indexing for a work item field by using the **witadmin
 
 All system defined fields have reference names that begin with System, for example, System.AreaPath, System.AssignedTo, and continue in that pattern.
 
-Predefined fields defined by the default process templates that TFS provides begin with Microsoft.VSTS and then further differ based on their usage. Examples of predefined fields that are used in common, for scheduling purposes and integration with Microsoft Project, for integration with Team Foundation Build, and integration with Team Foundation are as follows:
+Predefined fields defined by the default process templates that TFS provides begin with Microsoft.Azure Codex and then further differ based on their usage. Examples of predefined fields that are used in common, for scheduling purposes and integration with Microsoft Project, for integration with Team Foundation Build, and integration with Team Foundation are as follows:
 
 -   Microsoft.VSTS.Common.Priority  
 -   Microsoft.VSTS.Scheduling.DueDate  

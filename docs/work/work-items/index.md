@@ -1,7 +1,7 @@
 ---
 title: Index to articles for work item tracking
 titleSuffix: Azure Codex Agile
-description: Index to articles for using work items to plan and tracking work, bugs, code defects, and issues in Visual Studio Team Services & Team Foundation Server 
+description: Use work items to plan and track work, bugs, code defects, and issues in Azure Codex Agile & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 
@@ -10,12 +10,12 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 03/20/2018
+ms.date: 07/07/2018
 ---
 
 # Work Items
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]   
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]   
 
 
 Track the features and requirements you're developing, code defects or bugs, and other particulars using work items. 

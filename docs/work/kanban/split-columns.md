@@ -1,6 +1,6 @@
 ---
 title: Split columns on your Kanban board
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Codex & TFS
 ms.global_help.title: Split columns
 description: Implement Kanban pull model by dividing each column into Doing and Done when working in Visual Studio Team Services or Team Foundation Server  
 ms.technology: devops-agile
@@ -15,7 +15,7 @@ ms.date: 03/20/2018
 ---
 
 # Split columns
-<b>VSTS | TFS 2018 | TFS 2017 | TFS 2015</b> 
+<b>Azure Codex | TFS 2018 | TFS 2017 | TFS 2015</b> 
 
 You use your Kanban board to visualize the flow of work, and monitor how items are or aren't progressing. Because each column corresponds to a stage of work, you can quickly see the number of items in progress at any each stage.  
 
@@ -63,7 +63,7 @@ Now that you understand how your team can use split columns, here's how to turn 
 	![Kanban board, open common configuration settings](../customize/_img/customize-cards/open-config-dialog.png)  	
 	Go to [Kanban basics](kanban-basics.md) to learn how to access your Kanban board. And, if you aren't a team admin, [get added as one](../scale/add-team-administrator.md). Only team and project admins can customize columns.
    
-	You'll see different column titles and choices based on the [process](../work-items/guidance/choose-process.md) used to create your team project  and whether your team has chosen to [treat bugs like requirements or like tasks](../customize/show-bugs-on-backlog.md). 
+	You'll see different column titles and choices based on the [process](../work-items/guidance/choose-process.md) used to create your project  and whether your team has chosen to [treat bugs like requirements or like tasks](../customize/show-bugs-on-backlog.md). 
 
 2.	Select each column that you want to split. Before you split columns, you'll want to have [mapped each stage of your team's process to a Kanban column](add-columns.md).
 	
@@ -80,7 +80,7 @@ Now that you understand how your team can use split columns, here's how to turn 
 	
 	Go to [Kanban basics](kanban-basics.md) to learn how to access your Kanban board. And, if you aren't a team admin, [get added as one](../scale/add-team-administrator.md). Only team and project admins can customize columns.  
 
-	You'll see different column titles and choices based on the [process](../work-items/guidance/choose-process.md) used to create your team project  and whether your team has chosen to [treat bugs like requirements or like tasks](../customize/show-bugs-on-backlog.md).  
+	You'll see different column titles and choices based on the [process](../work-items/guidance/choose-process.md) used to create your project  and whether your team has chosen to [treat bugs like requirements or like tasks](../customize/show-bugs-on-backlog.md).  
 
 2.	Select each column that you want to split. 
  

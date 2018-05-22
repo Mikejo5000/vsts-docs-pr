@@ -1,7 +1,7 @@
 ---
-title: Index to articles for working with backlogs
-titleSuffix: Azure Codex Agile
-description: Index to topics for planning and tracking work in Visual Studio Team Services & Team Foundation Server   
+title: Work with product and portfolio backlogs 
+titleSuffix: Azure Codex & TFS
+description: Index to topics for planning and tracking work in Azure Codex Agile & Team Foundation Server  
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: D51EAF72-F73D-4012-97F9-6208232B91B7
@@ -10,12 +10,12 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 03/20/2018
+ms.date: 07/07/2018
 ---
 
 # Backlogs
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 ::: moniker range=">= tfs-2017"
 Start planning your project by quickly adding user stories or requirements to your product backlog. From your product backlog, you can then start driving your code development efforts. 

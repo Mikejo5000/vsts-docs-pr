@@ -1,6 +1,6 @@
 ---
 title: Sprint burndown
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Codex & TFS
 description: Review Scrum progress during and at the end of a sprint when working in Visual Studio Team Services & Team Foundation Server
 ms.technology: devops-agile
 ms.prod: devops
@@ -8,13 +8,14 @@ ms.assetid: 706331A0-3758-4575-9B51-AC828F57161B
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 ms.topic: tutorial
-ms.date: 08/02/2017
+monikerRange: '>= tfs-2013'
+ms.date: 07/07/2018
 ---
 
 
 # Sprint burndown 
  
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)] 
 
 Throughout your sprint, you can monitor the sprint burndown chart to determine if your team is on track to complete its [sprint plan](sprint-planning.md). 
 

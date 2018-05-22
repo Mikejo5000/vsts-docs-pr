@@ -1,6 +1,6 @@
 ---
 title: Individual versus shared queries
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Codex & TFS
 description: Work with queries to support your and team usage   
 ms.prod: devops
 ms.technology: devops-agile
@@ -15,7 +15,7 @@ ms.date: 08/11/2017
 
 # Individual versus shared queries    
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 !!! WORK IN PROGRESS !!! 
 
@@ -30,7 +30,7 @@ Otherwise, you can use the Query Editor to craft simple or more complex queries 
 *	[List showing dependencies using a direct links query](using-queries.md#directs-link-query) 
 
 
-Managed queries are useful for monitoring progress. All team projects created with a default process come with a defined set of managed queries. Here are a few of the ways that you can use managed queries...
+Managed queries are useful for monitoring progress. All projects created with a default process come with a defined set of managed queries. Here are a few of the ways that you can use managed queries...
 
 **Teams**
 
@@ -57,13 +57,13 @@ Here are some of the tools you can use to manage queries:
 
 
 ### General guidance 
-- Create a new folder under the Shared Queries folder for each new team added to a team project 
+- Create a new folder under the Shared Queries folder for each new team added to a project 
 
 
 
  
 Quick tips on shared queries
-If you are new to VSTS and TFS and shared queries, review these tips to learn how you can manage work more effectively:
+If you are new to Azure Codex and TFS and shared queries, review these tips to learn how you can manage work more effectively:
 
 To find work items that are assigned to you, add @Me as the value for the Assigned To field in one of the query clauses.
 All valid users with standard access can create queries and folders under the My Queries area. To create queries and query folders under Shared Queries, you must have the Contribute permission set. For more information, see Set permissions on queries.

@@ -12,7 +12,19 @@
     href: define-sprints.md 
   - name: Define iteration paths or sprints
     href: ../customize/set-iteration-paths-sprints.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json    
-- name: Tutorials
+- name: Tutorials (New) 
+  items:
+  - name: 1. Assign backlog items to a sprint
+    href: assign-work-sprint.md
+  - name: 2. Set your team's capacity 
+    href: set-capacity.md
+  - name: 3. Add tasks to backlog items 
+    href: add-tasks.md
+  - name: 4. Adjust work to fit team capacity 
+    href: adjust-work.md
+  - name: 5. Share your sprint plan
+    href: share-plan.md
+- name: Tutorials (Old) 
   items:
   - name: Plan a sprint
     href: sprint-planning.md

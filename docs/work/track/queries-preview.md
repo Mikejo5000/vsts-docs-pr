@@ -1,6 +1,6 @@
 ---
 title: Understand the new queries experience
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Codex & TFS
 description: Available features provided with the new Queries hub layout in Visual Studio Team Services & Team Foundation Server 
 ms.prod: devops
 ms.technology: vs-azure-devops-agile 
@@ -14,10 +14,10 @@ ms.date: 03/20/2018
 
 # New Queries experience
 
-**VSTS | TFS 2018**   
+**Azure Codex | TFS 2018**   
 
 > [!NOTE]      
-><b>Feature availability: </b>The **New Queries Experience** is in preview for VSTS and TFS 2018. To access it, you [enable it from the web portal](../../collaborate/preview-features.md) from your account profile.
+><b>Feature availability: </b>The **New Queries Experience** is in preview for Azure Codex and TFS 2018. To access it, you [enable it from the web portal](../../collaborate/preview-features.md) from your account profile.
 
 The **New Queries Experience** streamlines many of the query features you have access to. It now provides a directory page, separate from the queries results page,  from which to select, manage, and favorite queries. 
 

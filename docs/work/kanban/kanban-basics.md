@@ -1,6 +1,6 @@
 ---
 title: Understand and configure your Kanban board 
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Codex & TFS
 description: Use the Kanban board, process, and tools to plan and track work in Visual Studio Team Services or Team Foundation Server
 ms.global_help.title: Kanban basics
 ms.global_help.keywords: ms.vss-work-web.boards-hub, 2  
@@ -16,7 +16,7 @@ ms.date: 03/20/2018
 
 # Kanban basics
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 To maximize a team's ability to consistently deliver high quality software, Kanban emphasize two main practices. The first, visualize the flow of work, requires you to map your team's workflow stages and configure your Kanban board to match. The second, constrain the amount of work in progress, requires you to set work-in-progress (WIP) limits. You're then ready to track progress on your Kanban board and monitor key metrics to reduce lead or cycle time.  
 
@@ -46,17 +46,17 @@ User stories and bugs correspond to types of work items. You use  [work items](.
 
 ##Prerequisites
 ::: moniker range="vsts"
-* You must be a member of a team project. If you don't have a team project yet, create one in [VSTS](../../accounts/set-up-vs.md). If you haven't been added as a team member, [get added now](../../accounts/add-account-users-assign-access-levels.md). 
+* You must be a member of a project. If you don't have a project yet, create one in [Azure Codex](../../accounts/set-up-vs.md). If you haven't been added as a team member, [get added now](../../accounts/add-account-users-assign-access-levels.md). 
 ::: moniker-end
 ::: moniker range=">= tfs-2013 <= tfs-2018"
-* You must be a member of a team project. If you don't have a team project yet, create one in an [on-premises TFS](../../accounts/create-team-project.md). If you haven't been added as a team member, [get added now](../../security/add-users-team-project.md). 
+* You must be a member of a project. If you don't have a project yet, create one in an [on-premises TFS](../../accounts/create-team-project.md). If you haven't been added as a team member, [get added now](../../security/add-users-team-project.md). 
 ::: moniker-end
 
 ## Open your Kanban board 
-You open your Kanban board using one of these URLs that connects you to your team project:   
+You open your Kanban board using one of these URLs that connects you to your project:   
 
 ::: moniker range="vsts"
-**VSTS**:  ```http://AccountName/DefaultCollection/TeamProjectName/_backlogs/board/ ``` 
+**Azure Codex**:  ```http://AccountName/DefaultCollection/TeamProjectName/_backlogs/board/ ``` 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
@@ -68,7 +68,7 @@ You open your Kanban board using one of these URLs that connects you to your tea
 <meta name="description" content="Kanban workflow" />
 Kanban literally means signboard or billboard. As a first step, you customize your board to map to how your team works.
 
-When you first open your Kanban board, you'll see one column for each [workflow state](../work-items/guidance/choose-process.md#workflow-states). Your actual columns vary based on the [process](../work-items/guidance/choose-process.md) used to create your team project.
+When you first open your Kanban board, you'll see one column for each [workflow state](../work-items/guidance/choose-process.md#workflow-states). Your actual columns vary based on the [process](../work-items/guidance/choose-process.md) used to create your project.
 
 For user stories, the New, Active, Resolved, and Closed states track progress from idea to completion.
 <table>

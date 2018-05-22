@@ -1,6 +1,6 @@
 ---
 title: Backlogs, boards, & plans
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Codex & TFS
 description: Understand the tasks supported among backlogs, Kanban boards, and task boards in Visual Studio Team Services & Team Foundation Server  
 ms.technology: devops-agile
 ms.prod: devops
@@ -9,19 +9,20 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
+monikerRange: '>= tfs-2013'
 ms.date: 03/20/2018
 ---
 
 ::: moniker range=">= tfs-2017"
 # Backlogs, boards, and plans 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 What can you do from a backlog view versus a board view? How do these differ from plans? How do changes you make in one show up on the other? What customizations can you make for each?
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"
 # Backlogs and boards
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 What can you do from a backlog view versus a board view? How do changes you make in one show up on the other? What customizations can you make for each? 
 ::: moniker-end 
@@ -50,7 +51,7 @@ Which view should you use to work with Agile methods?
 ::: moniker-end
 
 <!---
-Delivery Plans are available for VSTS and TFS 2017.2 and later versions. You access them by [installing the Marketplace Plans extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans)
+Delivery Plans are available for Azure Codex and TFS 2017.2 and later versions. You access them by [installing the Marketplace Plans extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans)
 -->
 
 With list backlogs you can quickly develop your project plan; group and prioritize work; and perform bulk updates on selected work items. With boards, you can quickly update status and fields displayed for each work item. 
@@ -304,7 +305,7 @@ Additional topics of interest:
 ::: moniker range=">= tfs-2017"  
 ### Additional tools from the Marketplace 
 
-You may find additional tools to help plan and track your work from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?target=VSTS&category=Plan%20and%20track&sortBy=Downloads).
+You may find additional tools to help plan and track your work from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?target=Azure Codex&category=Plan%20and%20track&sortBy=Downloads).
 ::: moniker-end
 
 <a id="task-board-items"/> 
@@ -323,11 +324,11 @@ These reasons can cause work items that belong to the Task Category to not appea
 
  <!---
 > [!NOTE]  
->Appearance of task and child items on the task board may differ depending on whether you work in VSTS and TFS.
+>Appearance of task and child items on the task board may differ depending on whether you work in Azure Codex and TFS.
 
 > [!NOTE]  
->In VSTS and TFS 2015.2 and later versions, Tasks not linked to a parent appear under an *Unparented* section.
+>In Azure Codex and TFS 2015.2 and later versions, Tasks not linked to a parent appear under an *Unparented* section.
 
 > [!NOTE]  
->In VSTS and TFS 2015.2 and later versions, tasks linked to a parent work item assigned to another team's area path will appear under the *Unparented* section.  
+>In Azure Codex and TFS 2015.2 and later versions, tasks linked to a parent work item assigned to another team's area path will appear under the *Unparented* section.  
 -->

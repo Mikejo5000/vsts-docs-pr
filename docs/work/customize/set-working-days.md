@@ -1,6 +1,6 @@
 ---
 title: Set working days off
-titleSuffix: VSTS & TFS 
+titleSuffix: Azure Codex & TFS 
 description: Choose the days your team works for capacity planning purposes and when using sprint/scrum methods in Visual Studio Team Services & Team Foundation Server   
 ms.technology: devops-agile
 ms.prod: devops
@@ -24,7 +24,7 @@ If you're not a team administrator, [get added as one](../scale/add-team-adminis
 
 Open the Settings dialog from the Capacity page to set Working days.
 
-<img src="../scale/_img/capacity-planning-open-team-settings-tfs-15.png" alt="VSTS, Capacity page, Settings, Working days" style="border: 2px solid #C3C3C3;" />
+<img src="../scale/_img/capacity-planning-open-team-settings-tfs-15.png" alt="Azure Codex, Capacity page, Settings, Working days" style="border: 2px solid #C3C3C3;" />
 
 ::: moniker-end
 

@@ -1,7 +1,7 @@
 ---
 title: Product backlog controls
-titleSuffix: VSTS & TFS 
-description: Switch views and turn controls on or off from your product or portfolio backlogs for Visual Studio Team Services (VSTS) and Team Foundation Server 
+titleSuffix: Azure Codex & TFS 
+description: Switch views and turn controls on or off from your product or portfolio backlogs for Azure Code and Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid:  
@@ -16,7 +16,7 @@ ms.date: 08/28/2017
 <a id="backlog-controls">  </a>
 # Product backlog controls  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 Once you've defined your product backlog, you can use the following controls to change or filter the view. 
 

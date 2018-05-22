@@ -1,6 +1,6 @@
 ---
 title: View or run a query 
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Codex & TFS
 description: View, run, or favorite a query in Visual Studio Team Services & Team Foundation Server
 ms.prod: devops
 ms.technology: devops-agile
@@ -15,13 +15,13 @@ ms.date: 03/20/2018
 
 # View, run, or email a work item query  
 
-<b>VSTS | TFS 2018</b> 
+<b>Azure Codex | TFS 2018</b> 
 
 To find work items assigned to you or your team, run a query. A number of work item queries are predefined with your process. Also, members of your team may have created shared queries that you can view and run. Oftentimes, it's easier to define a new query by building on the query definition that's already available to you. 
 
 <!---
 > [!NOTE]    
->**Feature availability**: The New Queries experience is supported on VSTS and TFS 2018 and later versions. To learn more, see [New Queries experience](queries-preview.md).  
+>**Feature availability**: The New Queries experience is supported on Azure Codex and TFS 2018 and later versions. To learn more, see [New Queries experience](queries-preview.md).  
 -->
 
 By default, all contributors and stakeholders can view and run all shared queries. You can change the permissions set for a shared query folder or shared query. For details, see [Set query permissions](set-query-permissions.md).  
@@ -49,14 +49,14 @@ Use this topic to learn:
 
 	Otherwise, you can enable it from the [Preview features menu](../../collaborate/preview-features.md). 
  
-	If it is your first time opening the hub, the page opens to **Favorites** which lists all queries you have favorited. Otherwise, you can click **All** to view all queries you've defined and shared queries defined for the team project.  
+	If it is your first time opening the hub, the page opens to **Favorites** which lists all queries you have favorited. Otherwise, you can click **All** to view all queries you've defined and shared queries defined for the project.  
 
 	> [!TIP]    
-	> Queries you or your team have favorited show up on the **Favorites** page. Queries you have favorited along with other objects also appear on your Account hub page. To learn more, see [Set personal or team favorites](../../collaborate/set-favorites.md). 
+	> Queries you or your team have favorited show up on the **Favorites** page. Queries you have favorited along with other objects also appear on your organizational hub page. To learn more, see [Set personal or team favorites](../../collaborate/set-favorites.md). 
 
 ## Run a query 
 
-0. Click **All** to open the page where you can view all queries you've defined or that are shared within your team project. Expand **My Queries** as needed.
+0. Click **All** to open the page where you can view all queries you've defined or that are shared within your project. Expand **My Queries** as needed.
 
 	<img src="_img/view-run-queries/queries-all.png" alt="Web portal, choose Work hub, Queries, All page" style="border: 1px solid #C3C3C3;" />  
 	 
@@ -89,7 +89,7 @@ You can perform most tasks for viewing and running queries from each of the quer
 > |Task  |Favorites  |All  |  
 > |-------------|----------|---------|  
 > |View all favorited queries, yours or a team you belong to | ![Checkmark](../_img/icons/checkmark.png) |  | 
-> |View all your queries or shared queries for the current team project |  | ![Checkmark](../_img/icons/checkmark.png) | 
+> |View all your queries or shared queries for the current project |  | ![Checkmark](../_img/icons/checkmark.png) | 
 > |Run a query, open the context menu for a query  |![Checkmark](../_img/icons/checkmark.png) |![Checkmark](../_img/icons/checkmark.png) |
 > |Expand or collapse container folders or query folders |![Checkmark](../_img/icons/checkmark.png) |![Checkmark](../_img/icons/checkmark.png) |
 > |Filter the list of queries |![Checkmark](../_img/icons/checkmark.png) |![Checkmark](../_img/icons/checkmark.png) |
@@ -113,13 +113,13 @@ Enter a keyword into the filter box to filter the set of queries displayed on ei
 From the Query Editor or Results page, you can select to email a formatted list of query items or copy the query URL. 
 
 <!---
-**VSTS: New queries experience** -->
+**Azure Codex: New queries experience** -->
 
 Click the ![Actions icon](../_img/icons/actions-icon.png) Actions icon to open the menu and choose from the options listed: **Email query** or **Copy query URL**. 
  
 <img src="_img/view-run-queries/email-copy-url.png" alt="Web portal, Query Editor/Results, Open Actions menu, Choose Email query or Copy query URL" style="border: 1px solid #C3C3C3;" /> 
 
-<!---**VSTS: Old queries experience, TFS 2017**  
+<!---**Azure Codex: Old queries experience, TFS 2017**  
 	
 Choose **Copy query URL**. To email query items, see [Copy a list of work items](../backlogs/copy-clone-work-items.md#html).  
 
@@ -128,12 +128,12 @@ Choose **Copy query URL**. To email query items, see [Copy a list of work items]
 -->
 ::: moniker range="vsts"
 > [!NOTE]  
-> With **Email query**, the system will email the formatted list to those team mates you select. To email a formatted list to people not part of the team project, you'll need to use the **Copy as HTML** option described in [Copy a list of work items](../backlogs/copy-clone-work-items.md#html). 
+> With **Email query**, the system will email the formatted list to those team mates you select. To email a formatted list to people not part of the project, you'll need to use the **Copy as HTML** option described in [Copy a list of work items](../backlogs/copy-clone-work-items.md#html). 
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
 > [!NOTE]  
-> With **Email query**, the system will email the formatted list to those team mates you select. To email a formatted list to people not part of the team project, you'll need to use the **Copy as HTML** option described in [Copy a list of work items](../backlogs/copy-clone-work-items.md#html). For on-premises TFS, all email actions require an [SMTP server to be configured](../../tfs-server/admin/setup-customize-alerts.md). If you don't have an SMTP server configured, you can work around this by using **Copy as HTML**. 
+> With **Email query**, the system will email the formatted list to those team mates you select. To email a formatted list to people not part of the project, you'll need to use the **Copy as HTML** option described in [Copy a list of work items](../backlogs/copy-clone-work-items.md#html). For on-premises TFS, all email actions require an [SMTP server to be configured](../../tfs-server/admin/setup-customize-alerts.md). If you don't have an SMTP server configured, you can work around this by using **Copy as HTML**. 
 ::: moniker-end
 
 ## Try this next

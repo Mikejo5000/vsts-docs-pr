@@ -1,6 +1,6 @@
 ---
 title: Customize cards on a board
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Codex & TFS
 description: Customize cards on the Kanban or Sprint/Scrum/Task boards in Visual Studio Team Services & Team Foundation Server 
 ms.global_help.title: Customize cards
 ms.global_help.keywords: ms.vss-work-web.boards-hub, 6    
@@ -17,7 +17,7 @@ ms.date: 03/20/2018
 
 # Customize cards  
 
-<b>VSTS | TFS 2018 | TFS 2017 | TFS 2015</b>  
+<b>Azure Codex | TFS 2018 | TFS 2017 | TFS 2015</b>  
 
 ::: moniker range=">= tfs-2013"
 > [!NOTE]   
@@ -123,10 +123,10 @@ As a first step, you'll see that you can change the card display for each work i
 
 0. Select the WIT you want to customize. Different WITs may present different options for customization.   
 
-	Here we choose User Story. Your choices will vary based on the [process](../work-items/guidance/choose-process.md) used to create your team project and whether your team has chosen to [treat bugs like requirements or like tasks](show-bugs-on-backlog.md).     
+	Here we choose User Story. Your choices will vary based on the [process](../work-items/guidance/choose-process.md) used to create your project and whether your team has chosen to [treat bugs like requirements or like tasks](show-bugs-on-backlog.md).     
   
     ::: moniker range=">= tfs-2017"      
-    ![VSTS Kanban board, card customization dialog](_img/customize-cards/kanban-board-settings-card-fields-dialog-user-story.png)   
+    ![Azure Codex Kanban board, card customization dialog](_img/customize-cards/kanban-board-settings-card-fields-dialog-user-story.png)   
     ::: moniker-end    
 	::: moniker range="tfs-2015"      
 	**TFS 2015.1 options:**      
@@ -165,7 +165,7 @@ You change the way cards display on the task board the same way you change the K
 
 2.	Just as before, choose the WIT you want to customize, and then checkmark or select the options you want.     
     ::: moniker range=">= tfs-2017"    
-	![VSTS Kanban board, card customization dialog](_img/customize-cards/kanban-board-settings-card-fields-dialog-task.png)   
+	![Azure Codex Kanban board, card customization dialog](_img/customize-cards/kanban-board-settings-card-fields-dialog-task.png)   
     ::: moniker-end       
     ::: moniker range="tfs-2015"       
 	**TFS 2015.1 options:**       
@@ -181,7 +181,7 @@ You change the way cards display on the task board the same way you change the K
 ## Add style rules to highlight work items with color 
 <!---
 > [!NOTE]    
-><b>Feature availability: </b>This feature is supported from VSTS or the web portal for TFS 2015.1 or later version.
+><b>Feature availability: </b>This feature is supported from Azure Codex or the web portal for TFS 2015.1 or later version.
 -->
 
 1.	To cause a card on the Kanban board to change color based on criteria you specify, open Styles. Add a styling rule and set the criteria for the rule. 
@@ -208,7 +208,7 @@ You change the way cards display on the task board the same way you change the K
 
 <!---
 > [!NOTE]    
-><b>Feature availability: </b>This feature is supported from VSTS or the web portal for TFS 2015.1 or later version. 
+><b>Feature availability: </b>This feature is supported from Azure Codex or the web portal for TFS 2015.1 or later version. 
 -->
 
 1.	Prior to setting tag colors, first [add tags to backlog items](../track/add-tags-to-work-items.md) that you want to highlight with color.  
@@ -229,7 +229,7 @@ You change the way cards display on the task board the same way you change the K
 
 <!---
 > [!NOTE]    
-><b>Feature availability: </b>This feature is supported from VSTS and TFS 2017.  
+><b>Feature availability: </b>This feature is supported from Azure Codex and TFS 2017.  
 -->
 
 With the Kanban board, you gain a rich set of tools and a rich set of customization options. Annotations provide visual cues about work items, indicating the number of tasks or tests that have been defined for that work item. Click an annotation to expand the set or gain more information. 
@@ -268,7 +268,7 @@ To learn more about using these features, see [Add task checklists](../kanban/ad
 
 <!---
 > [!NOTE]    
-><b>Feature availability: </b>This feature is available from VSTS and TFS 2017. 
+><b>Feature availability: </b>This feature is available from Azure Codex and TFS 2017. 
 -->
 
 You can control the test plan under which inline tests you add through the Kanban board are created. You can choose to create a new test plan for each new test that you add, or add all new tests to a selected test plan going forward. 
@@ -306,7 +306,7 @@ That's all there is to card customization. See these choices for further options
 <table width="80%">
 <tr>
 <th width="20%">Option </th>
-<th width="20%">VSTS</th>
+<th width="20%">Azure Codex</th>
 <th width="20%">TFS 2015 </th>
 <th width="20%">TFS 2015.1,2 </th>
 <th width="20%">TFS 2017 </th>

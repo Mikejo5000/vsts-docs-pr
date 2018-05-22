@@ -1,6 +1,6 @@
 ---
 title: Link and attachment queries 
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Codex & TFS
 description: Query work items based on link type, link count, link restrictions, and attachment file count in Visual Studio Team Services & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
@@ -13,7 +13,7 @@ ms.date: 05/10/2017
 
 # Link and attachment queries  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 You can [link work items to track related work and dependencies](link-work-items-support-traceability.md) and [attach files to share information with your team](share-plans.md#attachments). You can then list work items based on their link type, link count, or attachment file count.
 
@@ -142,13 +142,13 @@ Add to Filters for linked work items:
 
 ## List items based on linked dependents  
 
-The following example shows a dependent linked query that returns items with dependencies on work managed by other teams and other team projects. Use this query to see all dependent work items that link to active Product Backlog Items or Bugs that have not been removed, closed, or completed. Only those dependent work items that are under a product area other than the **Phone Save\\Phone Customers** are returned.
+The following example shows a dependent linked query that returns items with dependencies on work managed by other teams and other projects. Use this query to see all dependent work items that link to active Product Backlog Items or Bugs that have not been removed, closed, or completed. Only those dependent work items that are under a product area other than the **Phone Save\\Phone Customers** are returned.
 
 ![Work Items and Dependent Links Query](_img/example-work-item-queries/IC588290.png)   
 
 **Why this works:**
 
--   Removing the **Team Project = @Project** clause enables all dependent linked work items that match the filter criteria to be listed, no matter which team project they belong to in the collection.
+-   Removing the **Team Project = @Project** clause enables all dependent linked work items that match the filter criteria to be listed, no matter which project they belong to in the collection.
 
 -   Grouping each of two clauses returns all **Product Backlog Item**s on the backlog or in progress, and the second grouped clause returns all **Bug**s on the backlog or in progress.
 
@@ -182,7 +182,7 @@ The following table describes fields associated with links and attachments. Most
 
 <blockquote>
 ![note icon](../_img/icons/note-icon.png)<br/>
-For VSTS, you can add up to 100 attachments to a work item. Attempts to add more result in an error message upon saving the work item.    
+For Azure Codex, you can add up to 100 attachments to a work item. Attempts to add more result in an error message upon saving the work item.    
 </blockquote> 
 </td>
 <td><p>All</p></td>
@@ -242,7 +242,7 @@ You can view related work items and object within a work item form by installing
 
 To add link types (TFS only), see [Manage link types [witadmin]](../customize/reference/witadmin/manage-link-types.md). 
 
-All tabs that support creating links between work items are implemented by using the **LinksControl** element on the work item form. This element controls filtering and restricting the types of work items to which you can link, the types of links that you can create, and whether you can link to work items in another team project. To customize the link controls and restrictions, you modify the definition of the `LinksControlOptions` for a work item type, see [LinksControlOptions XML elements](../customize/reference/linkscontroloptions-xml-elements.md).  
+All tabs that support creating links between work items are implemented by using the **LinksControl** element on the work item form. This element controls filtering and restricting the types of work items to which you can link, the types of links that you can create, and whether you can link to work items in another project. To customize the link controls and restrictions, you modify the definition of the `LinksControlOptions` for a work item type, see [LinksControlOptions XML elements](../customize/reference/linkscontroloptions-xml-elements.md).  
 
 
 

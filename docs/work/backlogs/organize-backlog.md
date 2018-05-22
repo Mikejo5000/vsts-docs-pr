@@ -1,6 +1,6 @@
 ---
 title: Use Agile tools to organize your backlog
-titleSuffix: VSTS & TFS  
+titleSuffix: Azure Codex & TFS  
 description:  Map backlog items to features, and features to epics in Visual Studio Team Services or Team Foundation Server
 ms.technology: devops-agile
 ms.prod: devops
@@ -15,7 +15,7 @@ ms.date: 03/20/2018
 
 # Organize your backlog, map child work items to parents 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 After you've added [features or epics](define-features-epics.md) to your portfolio backlog, you can quickly organize your backlog by mapping backlog items to them. With features and epics, you can quickly add and group items into a hierarchy, drill up or down within the hierarchy, reorder and reparent items, and filter hierarchical views.   
 
@@ -103,10 +103,6 @@ This works the same as when you [moved items into priority order on your product
 
 ## Change parent of multiple backlog items 
 
-<!---
-> [!NOTE]  
-><b>Feature availability: </b> The **Change parent&hellip;** menu option from the backlog page is supported from VSTS. 
->--> 
 
 From the product backlog you can multi-select several work items and choose **Change parent&hellip;** to link the items to a parent work item item. 
 

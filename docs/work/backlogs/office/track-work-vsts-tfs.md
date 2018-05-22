@@ -1,6 +1,6 @@
 ---
 title: Work in Excel or Project
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Codex & TFS
 description: Use Office Excel or Project to track work in Visual Studio Team Services & Team Foundation Server 
 ms.prod: devops
 ms.technology: devops-agile
@@ -13,10 +13,10 @@ ms.date: 03/31/2017
 ---
 # Work in Excel or Project 
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../../_shared/version-vsts-tfs-all-versions.md)]
 
 
-To support your work tracking efforts, you can use Office Excel and Office Project. You can decide to either work in an online mode where you are connected to either Visual Studio Team Services (VSTS) or Team Foundation Server (TFS), or in an offline mode where you access the local computer and document.  
+To support your work tracking efforts, you can use Office Excel and Office Project. You can decide to either work in an online mode where you are connected to either Visual Studio Team Services (Azure Codex) or Team Foundation Server (TFS), or in an offline mode where you access the local computer and document.  
   
 > [!IMPORTANT]  
 > You may receive the following error if you install Office 2010 on the same computer as a previous version of Office.  
@@ -41,11 +41,11 @@ To work in Project, see [Create your backlog and tasks using Project](create-you
 
  When you import work items into Excel or Project, local copies of your work items are created. The data in the local document at first matches the data in the database, but you or other team members can change the data about work items and cause the two to differ. To view the most recent changes from the database, refresh the document. This downloads the latest values in the data store to your local document. To write changes from the document to the database, publish the changes. Publishing uploads the changes you made to the work item tracking data store.   
 
-## Work offline and reconnect to VSTS and TFS
-One advantage of working in Excel or Project is that you can work offline and add or modify work items. The following procedures show you how to disconnect an Excel work item list or a Project plan from VSTS and TFS and later reconnect to synchronize the document with the work item database.  
+## Work offline and reconnect to Azure Codex and TFS
+One advantage of working in Excel or Project is that you can work offline and add or modify work items. The following procedures show you how to disconnect an Excel work item list or a Project plan from Azure Codex and TFS and later reconnect to synchronize the document with the work item database.  
   
 > [!NOTE]
->  If the team project that contains work items for your Excel or Project document is moved to a different account, project collection or TFS instance, you must reconfigure the server to which the document connects. For more information, see [Connect to team projects, Connect to Excel or Project](../../../user-guide/connect-team-projects.md#excel-project).  
+>  If the project that contains work items for your Excel or Project document is moved to a different account, project collection or TFS instance, you must reconfigure the server to which the document connects. For more information, see [Connect to projects, Connect to Excel or Project](../../../user-guide/connect-team-projects.md#excel-project).  
   
 
 <a name="WorkingOffline"></a> 
@@ -73,11 +73,11 @@ To disconnect a an Excel or Project document file from the network:
     >  You can't create most types of links between work items when the work item document is disconnected from the system. The exceptions are parent-child links in an Excel tree list, and both parent-child and predecessor-successor links in a Project plan.  
   
 <a name="ReconnectingToTFS"></a> 
-###  Reconnect a file to VSTS and TFS 
+###  Reconnect a file to Azure Codex and TFS 
   
 To reconnect an Excel or Project document file:  
   
-1.  Reconnect your computer to the network, or copy the file to a computer that is connected to VSTS and TFS.  
+1.  Reconnect your computer to the network, or copy the file to a computer that is connected to Azure Codex and TFS.  
   
 2.  If you changed the document while you were offline, follow one of these steps:    
     -   If you are using Excel, on the **Team** ribbon, in the **Work Items** group, choose **Publish**.    
@@ -91,7 +91,7 @@ To reconnect an Excel or Project document file:
 
 ## Related articles
 
-- [Connect to team projects, Connect to Excel or Project](../../../user-guide/connect-team-projects.md#excel-project)  
+- [Connect to projects, Connect to Excel or Project](../../../user-guide/connect-team-projects.md#excel-project)  
 - [Bulk add or modify work items with Excel](bulk-add-modify-work-items-excel.md)  
 - [Create your backlog and tasks using Project](create-your-backlog-tasks-using-project.md)  
 - [Create your backlog](../../backlogs/create-your-backlog.md)
@@ -100,7 +100,7 @@ To reconnect an Excel or Project document file:
 
 ### Can I open a query in Excel or Project from the web portal?  
 
-To open Excel from the web portal, install the [VSTS Open in Excel](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel) Marketplace extension. Otherwise, you can open [Excel](bulk-add-modify-work-items-excel.md) or [Project](create-your-backlog-tasks-using-project.md) and then open a query that you've created in the web portal. 
+To open Excel from the web portal, install the [Azure Codex Open in Excel](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel) Marketplace extension. Otherwise, you can open [Excel](bulk-add-modify-work-items-excel.md) or [Project](create-your-backlog-tasks-using-project.md) and then open a query that you've created in the web portal. 
 
 <a name="CT_ResolvingPublishErrors"></a> 
 ## Resolve publishing errors  

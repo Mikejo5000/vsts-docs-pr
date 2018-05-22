@@ -1,14 +1,16 @@
 ---
-title: TFS-Project Server Integration index 
+title: TFS-Project Server Integration  
 titleSuffix: TFS 
-description: Index to topics for working with TFS-Project Server synchronization   
+description: Configure and use TFS-Project Server to synchronize data between Team Foundation Server and Project Server  
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: D51EAF72-F73D-4012-97F9-6208232B91B7
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
-ms.date: 07/14/2017
+monikerRange: '>= tfs-2013 <= tfs-2015'
+ms.date: 07/07/2018
 ---
 
 # TFS-Project Server Integration

@@ -1,6 +1,6 @@
 ---
 title: Use work item form controls to track your work
-titleSuffix: VSTS & TFS 
+titleSuffix: Azure Codex & TFS 
 description: Use work item form controls to update status, link work items, and more in Visual Studio Team Services & Team Foundation Server  
 ms.technology: devops-agile
 ms.prod: devops
@@ -13,7 +13,7 @@ ms.date: 02/14/2018
 
 # Use work item form controls
 
-<b>VSTS | TFS 2018 | TFS 2017</b> 
+<b>Azure Codex | TFS 2018 | TFS 2017</b> 
 
 Different types of work items track different data. Each work item form contains some standard fields&mdash;such as title, assigned to, and area and iteration path&mdash;as well as fields specific to the type. You can link work items to one another, as well as to changesets and source code files. 
 
@@ -22,7 +22,7 @@ As the following image shows, each work item form comes with a number of control
 ![Work item form to track features or user stories](../backlogs/_img/add-work-item-vsts-user-story-form.png)
 
 > [!NOTE]    
->Depending on the process chosen when the team project was created&mdash;[Scrum](./guidance/scrum-process.md), 
+>Depending on the process chosen when the project was created&mdash;[Scrum](./guidance/scrum-process.md), 
 [Agile](./guidance/agile-process.md), or [CMMI](./guidance/cmmi-process.md)&mdash;the types of work items you can create will differ. For example, backlog items may be called product backlog items (Scrum), user stories (Agile), or requirements (CMMI). All three are similar: they describe the customer value to deliver and the work to be performed.
 >
 > For an overview of all three processes, see [Choose a process](./guidance/choose-process.md). 
@@ -45,7 +45,7 @@ As the following image shows, each work item form comes with a number of control
 |![Collapse section icon](../_img/icons/collapse-wi-section.png)/![Expand section icon](../_img/icons/expand-wi-section.png) | Collapse or expand a section within the form   |  
 | ![New linked work icon icon](../_img/icons/new-linked-work-item.png) | Add new work item and link to existing work item (May appear under ![Actions icon](../_img/icons/actions-icon.png) Actions menu)  |  
 | ![Change work item type icon](../_img/icons/change-type-icon.png) | [Change work item type](../backlogs/remove-delete-work-items.md) (Appears under ![Actions icon](../_img/icons/actions-icon.png) Actions menu)  | 
-| ![Change team project icon](../_img/icons/change-team-project-icon.png) | [Move work item to a different team project](../backlogs/remove-delete-work-items.md) (Appears under ![Actions icon](../_img/icons/actions-icon.png) Actions menu)  | 
+| ![Change project icon](../_img/icons/change-team-project-icon.png) | [Move work item to a different project](../backlogs/remove-delete-work-items.md) (Appears under ![Actions icon](../_img/icons/actions-icon.png) Actions menu)  | 
 | ![Clone icon](../_img/icons/clone-icon.png) | [Copy work item and optionally change work item type](../backlogs/copy-clone-work-items.md#copy-clone) (Appears  under ![Actions icon](../_img/icons/actions-icon.png) Actions menu)  |  
 | ![Email icon](../_img/icons/email-icon.png) | [Email work item](email-work-items.md)  (Appears  under ![Actions icon](../_img/icons/actions-icon.png) Actions menu)  |  
 | ![Delete icon](../_img/icons/delete_icon.png) | [Recycle work item](../backlogs/remove-delete-work-items.md)  (Appears  under ![Actions icon](../_img/icons/actions-icon.png) Actions menu)  | 
@@ -147,7 +147,7 @@ Click the ![Discussions icon](../_img/icons/icon-discussions-wi.png) discussion 
 Within the discussion section, you can use the [**@mention** control](../../notifications/at-mentions.md) to notify another team member about the discussion. Simply type **@** and their name. 
 
 > [!NOTE]   
-> **Feature availability**: From VSTS, you can also use group mentions. Simply start type the name of a team or a security group, click the search icon and then select from the options listed.    
+> **Feature availability**: From Azure Codex, you can also use group mentions. Simply start type the name of a team or a security group, click the search icon and then select from the options listed.    
 
 To reference a work item, use the [**#ID** control](../../notifications/add-links-to-work-items.md). Type **#** and a list of work items that you've recently referenced will appear from which you can select.  
 

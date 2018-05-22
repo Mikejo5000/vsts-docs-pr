@@ -1,6 +1,6 @@
 ---
 title: Visibility across teams 
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Codex & TFS
 description: Determine which methods best support your ability to monitor status and progress across several teams in Visual Studio Team Services & Team Foundation Server  
 ms.technology: devops-agile
 ms.prod: devops
@@ -32,7 +32,7 @@ For an overview of all team tools, see [Configure team settings](manage-team-ass
 With a Delivery Plan, you gain a tailor-made view across several teams and their development backlogs&mdash;stories, features, or epics. You can use these views to drive alignment across teams by overlaying several backlogs onto your delivery schedule.
 
 > [!NOTE]
-> **Feature availability**: Delivery Plans, a [Visual Studio Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans), is available for VSTS and TFS 2017.2 and later versions. All users with [basic access](../../security/change-access-levels.md) can view, add, and configure Delivery Plans. Stakeholders, however, don't have access to Delivery Plans.
+> **Feature availability**: Delivery Plans, a [Visual Studio Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans), is available for Azure Codex and TFS 2017.2 and later versions. All users with [basic access](../../security/change-access-levels.md) can view, add, and configure Delivery Plans. Stakeholders, however, don't have access to Delivery Plans.
 
 When you configure a Delivery Plan, you select the teams and backlog levels of interest. You can then interact with the plan to update it and drill into more details. To learn more about Delivery Plans, see [Review team plans](review-team-plans.md).
 
@@ -82,7 +82,7 @@ To learn more about this configuration, see [Portfolio management](portfolio-man
 
 A second method for gaining visibility across teams is to define multi-team focused dashboards that let you view progress, status, and trends. You do this primarily by defining queries that either capture the progress of a single team or several teams. You can then create charts and view trends for each team or for several teams.
 
-The two areas of most interest to management teams are project health and bug debt. The widget catalog provides 10+ widgets you can add to a dashboard to track the status, progress, and health of your project and teams. Also, you can find additional widgets in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?term=widgets&target=VSTS&sortBy=Relevance).  
+The two areas of most interest to management teams are project health and bug debt. The widget catalog provides 10+ widgets you can add to a dashboard to track the status, progress, and health of your project and teams. Also, you can find additional widgets in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?term=widgets&target=Azure Codex&sortBy=Relevance).  
 
 For example, here we've added three query-based charts, one for each team, to a dashboard that shows the active and resolved bugs over the previous 4 weeks.
 
@@ -133,7 +133,7 @@ For tips on creating queries based on counts or numeric fields, see [Query by nu
 ::: moniker range="vsts"
 ## Use Analytics to gain visibility across teams   
 
-VSTS accounts can add [Widgets based on the Analytics Service](../../report/analytics/analytics-widgets-vsts.md) a dashboard that show progress for a team. From one dashboard, you can add widgets for any team within the team project. 
+Azure Codex accounts can add [Widgets based on the Analytics Service](../../report/analytics/analytics-widgets-vsts.md) a dashboard that show progress for a team. From one dashboard, you can add widgets for any team within the project. 
 
 ::: moniker-end
 
@@ -180,7 +180,7 @@ With the multi-team Kanban board view, you can:
 
 Many project managers are interested in getting numeric rollup of estimates&mdash;Story Points or Effort&mdash; or the Remaining Work field. Rollup provides summed values of select fields for all child work items of a parent.
 
-Natively, VSTS and TFS provide rollup of Remaining Work for tasks on the task board.
+Natively, Azure Codex and TFS provide rollup of Remaining Work for tasks on the task board.
 
 ![Rollup of remaining work](_img/visibility-rollup-remaining-work.png)
 

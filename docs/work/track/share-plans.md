@@ -1,6 +1,6 @@
 ---
 title: Share work plans 
-titleSuffix: VSTS & TFS 
+titleSuffix: Azure Codex & TFS 
 description: Email links, Copy URL, and share information about work items, queries, and more in Visual Studio Team Services or Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
@@ -15,7 +15,7 @@ ms.date: 03/20/2018
 
 # Share work plans and progress 
 
-<b>VSTS | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013 | Visual Studio | Team Explorer Everywhere </b>  
+<b>Azure Codex | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013 | Visual Studio | Team Explorer Everywhere </b>  
 
 Using work items to track your work provides a host of benefits, including the ability to easily share information. You can capture most information within the work item Description or other rich-text formatted field. If you need to maintain the information in a different format, you can easily link to or attach a file.  
 
@@ -43,7 +43,7 @@ The specific set of formatting features differs depending on the client you use.
 # [Browser](#tab/browser) 
 
 ::: moniker range=">= tfs-2017"
-<img src="_img/rich-text-ui-team-services.png" alt="Rich text tool bar - VSTS" style="border: 2px solid #C3C3C3;" />
+<img src="_img/rich-text-ui-team-services.png" alt="Rich text tool bar - Azure Codex" style="border: 2px solid #C3C3C3;" />
 
 You can use the ![Remove format](../_img/icons/remove-formatting-icon.png) icon or CTRL+Spacebar to remove formatting from highlighted text.
 
@@ -109,14 +109,14 @@ For example, you can attach a screen image that illustrates a problem, a line of
 #### Attachment control toolbar 
 ::: moniker range=">= tfs-2017"
 
-<img src="_img/share-plans-attachment-tab-vsts.png" alt="Attachment controls, web portal VSTS" style="border: 1px solid #C3C3C3;" />  
+<img src="_img/share-plans-attachment-tab-vsts.png" alt="Attachment controls, web portal Azure Codex" style="border: 1px solid #C3C3C3;" />  
 
 > [!TIP]    
 > You can drag and drop files into the attachment area. From the browse menu, you can multi-select several files and attach within a single action. Also, you can add attachments to your pull request comments. You can also add attachments in pull request comments by drag-and-drop or by browsing. For details, see [Syntax support for Markdown files, widgets, and pull request comments, Attachments](../../collaborate/markdown-guidance.md#attach).  
 
 You can edit, open, save, or delete an attachment by clicking an attachment and opening it's ![actions icon](../_img/icons/actions-icon.png) actions menu. 
 
-<img src="_img/share-plans-attachment-menu-options.png" alt="Attachment menu options,  VSTS" style="border: 2px solid #C3C3C3;" />   
+<img src="_img/share-plans-attachment-menu-options.png" alt="Attachment menu options,  Azure Codex" style="border: 2px solid #C3C3C3;" />   
 
 ::: moniker-end 
 
@@ -193,7 +193,7 @@ By linking your storyboard to a work item, you provide your team access to the s
 ::: moniker range=">= tfs-2017"
 You can open Storyboarding with PowerPoint from the ![actions icon](../_img/icons/actions-icon.png) actions menu within a work item form. 
 
-<img src="_img/share-plans-storyboard-vsts-menu.png" alt="Start storyboarding within work item web form, web portal VSTS" style="border: 1px solid #C3C3C3;" />  
+<img src="_img/share-plans-storyboard-vsts-menu.png" alt="Start storyboarding within work item web form, web portal Azure Codex" style="border: 1px solid #C3C3C3;" />  
 
 To link to an existing storyboard, click the ![Links page icon](../_img/icons/icon-links-tab-wi.png) Links tab and add a storyboard link.  
 ::: moniker-end 
@@ -241,11 +241,11 @@ For details, see [Dashboards, charts, & widgets](../../report/dashboards/overvie
 
 ::: moniker range=">= tfs-2018"
 
-## Team project wiki 
+## Project wiki 
 
-You can use your team project wiki to share information with other team members. Each wiki corresponds to its own git repository and supports collaborative editing of its content and structure.  
+You can use your project wiki to share information with other team members. Each wiki corresponds to its own git repository and supports collaborative editing of its content and structure.  
 
-To learn more, see [Create a wiki for your team project](../../collaborate/wiki-create-repo.md). 
+To learn more, see [Create a wiki for your project](../../collaborate/wiki-create-repo.md). 
 
 ::: moniker-end
 
@@ -254,7 +254,7 @@ To learn more, see [Create a wiki for your team project](../../collaborate/wiki-
 
 ## SharePoint project portal
 
-You can use a SharePoint site to share and access documents from your team project. Your team can use the SharePoint site, also referred to as the project portal, to share information in the following ways:  
+You can use a SharePoint site to share and access documents from your project. Your team can use the SharePoint site, also referred to as the project portal, to share information in the following ways:  
 - Share data contained in reports or dashboards  
 - Share team progress using predefined or customized SharePoint dashboards  
 - Share documents, files, images  
@@ -277,7 +277,7 @@ As you can see, there are many ways to share information using work items alone.
 ::: moniker range=">= tfs-2017"
 ### Marketplace extensions  
 
-You may find additional ways to share information and collaborate as a team by adding a [Marketplace extension](https://marketplace.visualstudio.com/?targetId=754f8691-19ce-47a2-a1e8-ebeab1e67955#VSTS). 
+You may find additional ways to share information and collaborate as a team by adding a [Marketplace extension](https://marketplace.visualstudio.com/?targetId=754f8691-19ce-47a2-a1e8-ebeab1e67955#Azure Codex). 
 
 ::: moniker-end
 

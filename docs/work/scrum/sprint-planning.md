@@ -1,13 +1,15 @@
 ---
 title: Sprint planning 
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Codex & TFS
 description: Plan a sprint or iteration working with Scrum methods in Visual Studio Team Services & Team Foundation Server
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: AD107B7C-D0AA-44B1-8288-2AB046194439
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: tutorial
+monikerRange: '>= tfs-2013'
 ms.date: 03/20/2018
 ---
 
@@ -47,17 +49,17 @@ By setting team capacity and estimating tasks, the team can see when the team or
 <img src="_img/sp-intro.png" alt="Sprint planning" style="border: 1px solid #C3C3C3;" /> 
 
 
-> [!NOTE]    
+> [!NOTE]
 >Sprint planning doesn't need to be challenging. It can be fun and a time for the entire Scrum team to build camaraderie by working together to answer the question of "What can we commit to?" For examples and strategies to keep your sprint planning focused and effective, check out the [What is Scrum?](/azure/devops/agile/what-is-scrum).
 >  
 >When you've completed your sprint plan, your sprint backlog should contain all the information your team needs to successfully complete work within the time allotted without having to rush at the end. 
 
 
-##First pass: identify an initial set of work to complete
+## First pass: identify an initial set of work to complete
    
 [!INCLUDE [temp](../_shared/image-differences.md)]  
 
-To plan sprints, you should be a member of the team and belong to the Contributors group. If you don't have access to the team project, [get invited to the team](../scale/multiple-teams.md#add-team-members).  
+To plan sprints, you should be a member of the team and belong to the Contributors group. If you don't have access to the project, [get invited to the team](../scale/multiple-teams.md#add-team-members).  
 
 1. Before you start planning your sprint, you'll want to have [created, prioritized, and estimated your backlog](../backlogs/create-your-backlog.md). 
 
@@ -107,9 +109,9 @@ Add as many tasks as needed to capture the work required to complete each item. 
 
 2. Name the task and enter an estimate for Remaining Work. Also, if you know who'll perform the work, go ahead and assign the task to that team member.  
 
-	<!--- **Feature availability:** From the web portal for VSTS and TFS 2017, you'll have access to the [new form with the new work tracking experience](../backlogs/add-work-items.md). For TFS 2015 and ealier versions, the old form is supported.   --> 
+	<!--- **Feature availability:** From the web portal for Azure Codex and TFS 2017, you'll have access to the [new form with the new work tracking experience](../backlogs/add-work-items.md). For TFS 2015 and ealier versions, the old form is supported.   --> 
 	
-	::: moniker range=">= tfs-2017"
+	::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
     <a id="task-form-team-services" /> 
 	<!--- Task form, new form -->
 
@@ -167,7 +169,7 @@ To quickly reassign tasks, drag the task onto the new assignee's capacity bar. A
 
 ![Reassign tasks](_img/IC797838.png)  
 
-::: moniker range=">= tfs-2015"
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 <a id="bulk-modify">  </a>
 ### Use multi-select to bulk modify items
 
@@ -175,7 +177,7 @@ Multi-select of work items on the product and sprint backlogs works in the same 
 
 <!---
 > [!NOTE]     
-><b>Feature availability: </b> Multi-select of work items on the backlog and sprint backlogs is currently supported from VSTS and TFS 2015.1 and later versions. This feature works in the same way as multi-select works within query results. 
+><b>Feature availability: </b> Multi-select of work items on the backlog and sprint backlogs is currently supported from Azure Codex and TFS 2015.1 and later versions. This feature works in the same way as multi-select works within query results. 
 -->
 
 With multi-select, you can perform several actions on several work items at once, such as: 
@@ -190,7 +192,7 @@ With multi-select, you can perform several actions on several work items at once
 ::: moniker range="tfs-2015"
 Multi-select of backlog work items requires TFS 2015.1 or later version.
 ::: moniker-end
-::: moniker range=">= tfs-2015"
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 To select several items in a sequence, hold down the shift key. To select several non-sequential items, use the Ctrl key. Then, you can either drag the selected items to a new position within the backlog, to a different sprint, or select an option from the context (![context icon](../_img/icons/context_menu.png)) or action (![actions icon](../_img/icons/actions-icon.png)) menu of one of the items. 
 
 To learn more, see [Bulk modify work items](../backlogs/bulk-modify-work-items.md). 
@@ -216,7 +218,7 @@ If you need to add or rename the sprints your team uses, you must first [define 
 <a id="share" >  </a>
 ### Share your sprint plan
  
-Any stakeholder on your team (someone with permissions to connect to your team project) can view your sprint plan. 
+Any stakeholder on your team (someone with permissions to connect to your project) can view your sprint plan. 
 Simply send them the URL of your sprint backlog page. But also, you can share it with them through email or print a version. 
 
 To email it, create and save the query for the sprint backlog. 
@@ -228,7 +230,7 @@ Then, open the query and click the email icon.
 <img src="_img/IC795975.png" alt="Email query" style="border: 1px solid #C3C3C3;" />  
 
 
-In the form that appears, enter the name(s) of valid users (ones who have access to the team project). 
+In the form that appears, enter the name(s) of valid users (ones who have access to the project). 
 
 Or, you can select all the items in the list, choose **Copy as HTML**, and paste the formatted list into an email form or Word document. See [Copy a list of work items](../backlogs/copy-list.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json). 
 

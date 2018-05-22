@@ -1,6 +1,6 @@
 ---
 title: Show bugs on backlogs and boards
-titleSuffix: VSTS & TFS 
+titleSuffix: Azure Codex & TFS 
 description: Choose how bugs appear on Agile tools in Visual Studio Team Services & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
@@ -24,7 +24,7 @@ When you track bugs as requirements, they'll show up on the product backlog and 
 ## Set your team's preferences for tracking bugs  
 <!---
 > [!NOTE]    
->**Feature availability**: You can manage all your team settings from a common configuration dialog from VSTS and TFS 2015.1 and later versions.
+>**Feature availability**: You can manage all your team settings from a common configuration dialog from Azure Codex and TFS 2015.1 and later versions.
 -->  
 
 1. From your team's backlog page, click the ![gear icon](../_img/icons/team-settings-gear-icon.png) (gear icon) to open the common configuration team settings.  
@@ -61,7 +61,7 @@ When you track bugs as requirements, they'll show up on the product backlog and 
 	> Because this setting affects all team members' view of the team backlogs and boards, you must be a team administrator to change the setting. Changing the setting is disabled if you're not a team administrator. Go [here to get added as a team administrator](../scale/add-team-administrator.md).
 	
 	::: moniker range=">= tfs-2018"  	
-	<img src="_img/show-bugs-settings-ts.png" alt="VSTS, web portal, team settings dialog, Working with bugs tab" style="border: 2px solid #C3C3C3;" />
+	<img src="_img/show-bugs-settings-ts.png" alt="Azure Codex, web portal, team settings dialog, Working with bugs tab" style="border: 2px solid #C3C3C3;" />
 	::: moniker-end
 	::: moniker range="tfs-2017"     
 	<img src="_img/show-bugs-settings-2017.png" alt="TFS, web portal, team settings dialog, Working with bugs tab" style="border: 2px solid #C3C3C3;" />
@@ -84,13 +84,13 @@ Bugs are a common item that teams want to track, and choose how they track it. S
 However, what if you want to track other work item types (WITs) on your backlogs and boards?  
 
 ::: moniker range="vsts"  
-You can add other WITs&#8212;such as change requests, issues, or impediments&#8212; by customizing your process or team project, based on the process model you use. For details,  
+You can add other WITs&#8212;such as change requests, issues, or impediments&#8212; by customizing your process or project, based on the process model you use. For details,  
 - For the Inheritance process model, see [Customize your backlogs or boards for a process](../../settings/work/customize-process-backlogs-boards.md).   
 - For Hosted XML and On-premises XML process models, see [Add a work item type to a backlog and board](add-wits-to-backlogs-and-boards.md).
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"    
-You can add other WITs&#8212;such as change requests, issues, or impediments&#8212; by customizing your process or team project, based on the process model you use. For details, see [Add a work item type to a backlog and board](add-wits-to-backlogs-and-boards.md).
+You can add other WITs&#8212;such as change requests, issues, or impediments&#8212; by customizing your process or project, based on the process model you use. For details, see [Add a work item type to a backlog and board](add-wits-to-backlogs-and-boards.md).
 ::: moniker-end
 For an overview of process models, see [Customize your work tracking experience](../customize/customize-work.md).  
 

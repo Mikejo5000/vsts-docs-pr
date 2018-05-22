@@ -1,6 +1,6 @@
 ---
 title: All FIELD XML elements reference 
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Codex & TFS
 description: Index to XML syntax elements for the FIELD element for Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-agile
@@ -25,7 +25,7 @@ Use this topic to look up the syntax of the `FIELD` element or one of its child 
  You use the following syntax to define the data fields for a type of work item. This example shows the format of the **FIELD** (Definition) element and all optional child elements. For more information, see [FIELD (Definition) element reference](field-definition-element-reference.md).  
 
 > [!NOTE]    
->**Feature availability:**The Boolean data type is supported for Hosted XML (VSTS) and for On-Premises XML, for TFS 2017.2 and later versions. 
+>**Feature availability:**The Boolean data type is supported for Hosted XML (Azure Codex) and for On-Premises XML, for TFS 2017.2 and later versions. 
   
 > [!div class="tabbedCodeSnippets"]
 ```XML
@@ -227,7 +227,7 @@ expanditems="true | false" filteritems="excludegroups"&gt;
 <table Responsive="true" summary="table">
 <tr Responsive="true"><th scope="col"><p>Element</p></th><th scope="col"><p>Description</p></th></tr>
 <tbody valign="top">
-<tr><td data-th="Element"><p><strong>GLOBALIST</strong></p></td><td data-th="Description"><p>Defines a set of <strong>LISTITEM</strong> elements that is stored for a team project collection and that all team projects in a collection can use.</p>
+<tr><td data-th="Element"><p><strong>GLOBALIST</strong></p></td><td data-th="Description"><p>Defines a set of <strong>LISTITEM</strong> elements that is stored for a project collection and that all projects in a collection can use.</p>
 <pre><code>&lt;GLOBALLIST name="globalListName"&gt;
     &lt;LISTITEM&gt; . . . &lt;/LISTITEM&gt;
 &lt;/GLOBALLIST&gt; </code></pre>

@@ -1,20 +1,21 @@
 ---
 title: Index to articles for working with multiple teams
 titleSuffix: Azure Codex 
-description: Index to articles for how to scale Agile tools to support multiple teams and enterprise organizations in Visual Studio Team Services & Team Foundation Server   
+description: Index to articles for how to scale Agile tools to support multiple teams and enterprise organizations inAzure Codex Agile & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 
 ms.manager: douge
+ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 10/04/2017
+ms.date: 07/07/2018
 ---
 
 # Codex Agile at Scale  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 Manage portfolios and gain visibility across teams. For guidance on adding teams, see [Scale & Configure teams](../../settings/index.md).
 

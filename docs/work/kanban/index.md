@@ -1,7 +1,7 @@
 ---
 title: Index to topics for Codex Agile Boards
 titleSuffix: Azure Codex Agile
-description: Work with Kanban boards to plan and track work in Visual Studio Team Services & Team Foundation Server
+description: Work with Kanban boards to plan and track work in Azure Codex Agile & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid:  
@@ -10,12 +10,12 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 03/20/2018
+ms.date: 07/07/2018
 ---
 
 # Codex Agile Boards
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]  
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]  
 
 Get collaboration going by adding to, updating, and then reviewing your Kanban board with others. 
 

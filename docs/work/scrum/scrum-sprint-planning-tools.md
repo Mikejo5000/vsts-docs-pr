@@ -1,6 +1,6 @@
 ---
 title: Scrum and sprint planning tools
-titleSuffix: VSTS & TFS 
+titleSuffix: Azure Codex & TFS 
 description: Understand the tools available to you to support Scrum and working in sprints in Visual Studio Team Services & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
@@ -15,7 +15,7 @@ ms.date: 08/19/2017
 
 # Scrum and sprint planning tools
  
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]  
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)] 
 
 <!--- ADD WIDGET INFO AS WELL --> 
 
@@ -138,11 +138,11 @@ During a sprint, your team can use the task board and sprint burndown chart to t
 Each sprint that you select for your team provides access to a sprint backlog, task board, and other Agile tools for planning and tracking work. 
 
 <a id="ts-sprints" /> 
-**VSTS, TFS 2017**
+**Azure Codex, TFS 2017**
 
 For example, by selecting Sprints 1 thru 6, the Fabrikam Fiber team gets access to six sprint backlogs. They also get access to capacity planning tools and a task board for each sprint.  
 
-<img src="_img/define-sprints-selected-team-iterations-vsts.png" alt="VSTS and TFS 2017, Selected iterations generate sprint backlogs" style="border: 2px solid #C3C3C3;" />
+<img src="_img/define-sprints-selected-team-iterations-vsts.png" alt="Azure Codex Agile and TFS 2017, Selected iterations generate sprint backlogs" style="border: 2px solid #C3C3C3;" />
 
 **TFS 2015**
 <a id="tfs2015-sprints" />

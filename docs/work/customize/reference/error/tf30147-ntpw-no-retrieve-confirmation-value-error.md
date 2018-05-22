@@ -1,7 +1,7 @@
 ---
 title: TF30147-The New Team Project Wizard could not retrieve the confirmation values 
 description: Occurs when the New Team Project Wizard is building the  wizard page that summarizes all the selections you made and text you typed up to that point.
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Codex & TFS
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 6347fdd8-cac5-4614-91b4-ef4d5f4dc06d
@@ -22,7 +22,7 @@ This error occurs when the New Team Project Wizard is building the **Confirm Tea
   
 1.  Close the New Team Project Wizard and try running the wizard again.  
   
-2.  If you get this error message again, review the team project creation error log to identify the name of the plug-in.  
+2.  If you get this error message again, review the project creation error log to identify the name of the plug-in.  
   
     1.  Open Notepad.  
   
@@ -41,4 +41,4 @@ This error occurs when the New Team Project Wizard is building the **Confirm Tea
 3.  Contact the vendor who created or supplied the plug-in.  
   
 ## Related articles
-- [Create a team project](../../../../accounts/create-team-project.md)
+- [Create a project](../../../../accounts/create-team-project.md)

@@ -1,6 +1,6 @@
 ---
 title: Define the hyperlink for a work item
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Codex & TFS
 description: Construct a URL for a work item for Visual Studio Team Services & Team Foundation Server 
 ms.prod: devops
 ms.technology: vs-azure-devops-agile    
@@ -15,23 +15,23 @@ ms.date: 11/27/2017
 
 # Define the hyperlink for a work item 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 You can define the URL for a work item using the syntax provided based on the version or platform you work from. 
 
 Examples in this topic use the following conventions:
 
--   *AccountName* specifies the name of the VSTS account  
+-   *AccountName* specifies the name of the Azure Codex account  
 -   *ServerName* specifies the name of the TFS application tier server   
 -   *Port* specifies the port, default=8080
--   *CollectionName* specifies the name of the team project collection.
--   *TeamProjectName* specifies the team project name
+-   *CollectionName* specifies the name of the project collection.
+-   *TeamProjectName* specifies the project name
 -   *WorkItemNumber* specifies the ID of the bug, task, or other work item.
  
 
 ::: moniker range="vsts"  
 
-## VSTS
+## Azure Codex
 
 <b>https://</b>*AccountName.visualstudio.com/ProjectName/*<b>_workitems?id=</b>*WorkItemNumber*<b>&_a=edit</b>
 

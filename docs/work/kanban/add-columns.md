@@ -1,6 +1,6 @@
 ---
 title: Add columns to your Kanban board
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Codex & TFS
 description: Map your Kanban board, support your team's work flow in Visual Studio Team Services & Team Foundation Server
 ms.global_help.title: Add columns
 ms.global_help.keywords: ms.vss-work-web.boards-hub, 3  
@@ -16,7 +16,7 @@ ms.date: 03/20/2018
 
 # Add columns to your Kanban board
 
-[!INCLUDE [temp](../_shared/dev15-version-header.md)]  
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 Kanban's number one practice is to visualize the flow of work. Accordingly, your number one task is to visualize your team's workflow. You do this by identifying the types of work and handoffs that occur regularly as your team moves items off the backlog and into a shippable state.
 
@@ -97,9 +97,9 @@ To keep teams working on the highest priority items, you'll want to react quickl
 
 Now that you've got the essentials of how to work with your Kanban board, here's how you get it to look like what you need it to.
 
-You'll see different column titles and choices based on the [Process](../work-items/guidance/choose-process.md) you used to create your team project and whether your team has chosen to [treat bugs like requirements or like tasks](../customize/show-bugs-on-backlog.md).
+You'll see different column titles and choices based on the [Process](../work-items/guidance/choose-process.md) you used to create your project and whether your team has chosen to [treat bugs like requirements or like tasks](../customize/show-bugs-on-backlog.md).
   
-First, open the Kanban portal for your team project. Click the **Board** link from the **Work>Backlogs** page. 
+First, open the Kanban portal for your project. Click the **Board** link from the **Work>Backlogs** page. 
 
 <img src="_img/kanban-basics-intro.png" alt="Kanban board, Agile template" style="border: 1px solid #C3C3C3;" />  
 
@@ -107,13 +107,13 @@ First, open the Kanban portal for your team project. Click the **Board** link fr
         
 1. To open, click ![gear icon](../_img/icons/team-settings-gear-icon.png), the gear icon, to open the team settings dialog and then click Columns.   
 
-	<img src="_img/add-columns-open-settings-ts.png" alt="VSTS, Kanban board, open common configuration settings" style="border: 1px solid #C3C3C3;" />  
+	<img src="_img/add-columns-open-settings-ts.png" alt="Azure Codex, Kanban board, open common configuration settings" style="border: 1px solid #C3C3C3;" />  
 
 	If you're not a team admin, [get added as one](../scale/add-team-administrator.md). Only team and project admins can customize columns. 
 
 2. Click a column tab to see all the settings you can modify. Your initial column settings will look something like this. 
 
-	<img src="_img/add-columns-settings-dialog-ts.png" alt="VSTS, Kanban board, Customize columns, default columns, Agile process" style="border: 1px solid #C3C3C3;" />  
+	<img src="_img/add-columns-settings-dialog-ts.png" alt="Azure Codex, Kanban board, Customize columns, default columns, Agile process" style="border: 1px solid #C3C3C3;" />  
 
 3. Change your column titles to map to your workflow stages. You can add, rename, and move columns to support more stages. 
 
@@ -125,7 +125,7 @@ First, open the Kanban portal for your team project. Click the **Board** link fr
 
 	Or, you can open the dialog and change one or more settings for a Kanban column. 
 
-	<img src="_img/add-columns-settings-dialog-add-test-ts.png" alt="VSTS, Kanban board, Settings, Columns, Add and rename  columns, Agile process" style="border: 1px solid #C3C3C3;" /> 
+	<img src="_img/add-columns-settings-dialog-add-test-ts.png" alt="Azure Codex, Kanban board, Settings, Columns, Add and rename  columns, Agile process" style="border: 1px solid #C3C3C3;" /> 
 
 4. To change the column order, simply drag the column tab to the position you want.  
 
@@ -242,11 +242,11 @@ First, open the Kanban portal for your team project. Click the **Board** link fr
 
 	You'll see different column titles and choices based on the following:  
 	
-	- You connect to VSTS, TFS 2015 Update 1, or TFS 2015  
-	- The [Process](../work-items/guidance/choose-process.md) you used to create your team project  
+	- You connect to Azure Codex, TFS 2015 Update 1, or TFS 2015  
+	- The [Process](../work-items/guidance/choose-process.md) you used to create your project  
 	- Whether your team has chosen to [treat bugs like requirements or like tasks](../customize/show-bugs-on-backlog.md)  
 
-	**VSTS and TFS 2015 Update 1 options:**  
+	**Azure Codex and TFS 2015 Update 1 options:**  
 
 	Click a column tab to see all the settings you can modify. Your initial column settings will look something like this.  
 
@@ -259,7 +259,7 @@ First, open the Kanban portal for your team project. Click the **Board** link fr
 
 	Here, we rename the first, second, and third columns to Backlog, Analyze, and Develop. We then add a column and label it Test. 
 	
-	**VSTS and TFS 2015 Update 1 :**  
+	**Azure Codex and TFS 2015 Update 1 :**  
 	You can rename a column directly form the Kanban board. 
 
 	![Kanban board, rename a column directly](_img/rename-kanban-columns-direct.png)
@@ -274,12 +274,12 @@ First, open the Kanban portal for your team project. Click the **Board** link fr
 	Rename column titles to best reflect each stage of work. Keep the column titles as simple as possible.
 	
 4.	To change the column order:  
-	- **VSTS and TFS 2015 Update 1 :** Simply drag the column tab to the position you want.  
+	- **Azure Codex and TFS 2015 Update 1 :** Simply drag the column tab to the position you want.  
 	- **TFS 2015:** use the left ![left arrow](_img/ALM_AC_LeftIcon.png) or right ![right arrow](_img/ALM_AC_RightIcon.png) arrow icons.   
 
 5.	To delete a column, first make sure that the column doesn't contain any work items. If it does, move the items to another column.  
 
-	**VSTS and TFS 2015 Update 1 :**  Click Delete on the column tab menu.  
+	**Azure Codex and TFS 2015 Update 1 :**  Click Delete on the column tab menu.  
 	![Kanban board, delete a column](_img/kanban-delete-column.png)  
 
 	**TFS 2015:**   Click X at the top of the column.  
@@ -296,7 +296,7 @@ First, open the Kanban portal for your team project. Click the **Board** link fr
 
 Your Kanban board is one of several tools you have for tracking work. The [query tool](../track/using-queries.md) allows you to list a subset of work items for the purposes of review, triage, update, or chart generation. For example, you can create a query to list all active user stories (specify two clauses: Work Item Type=User Story; State=Active). 
 
-But what if you want to list items based on their Kanban column assignment? Can you do that? Yes, from VSTS or from TFS 2015 Update 1 or later version. No, if you work from TFS 2015 or earlier versions. 
+But what if you want to list items based on their Kanban column assignment? Can you do that? Yes, from Azure Codex or from TFS 2015 Update 1 or later version. No, if you work from TFS 2015 or earlier versions. 
 
 ::: moniker range=">= tfs-2017"
 
@@ -333,7 +333,7 @@ What does this mean for Kanban board users? First, only work items whose WITs be
 
 * Your team admin chooses to [show bugs on backlogs and boards](../customize/show-bugs-on-backlog.md)  
 * Your project admin [adds WITs to backlogs and boards](../customize/add-wits-to-backlogs-and-boards.md)
-* Your project collection or project admin customizes the workflow for a WIT in the Requirement Category: [VSTS](../../settings/work/customize-process-workflow.md) or [TFS](../customize/reference/change-workflow-wit.md)  
+* Your project collection or project admin customizes the workflow for a WIT in the Requirement Category: [Azure Codex](../../settings/work/customize-process-workflow.md) or [TFS](../customize/reference/change-workflow-wit.md)  
 
 For example, if you change the team setting and add bugs to the Requirements Category, the bug WIT will now appear in the Columns dialog. You'll want to make sure that the Kanban column-to-State mappings match what you want. For more information, see [Workflow states and state categories](../customize/workflow-and-state-categories.md). 
 

@@ -1,6 +1,6 @@
 ---
 title: Workflow states and state categories
-titleSuffix: VSTS & TFS   
+titleSuffix: Azure Codex & TFS   
 description: Understand how workflow states map to state categories in Visual Studio Team Services and Team Foundation Server   
 ms.prod: devops
 ms.technology: devops-agile
@@ -93,9 +93,9 @@ Here's how the default, inherited states map to the state categories for all thr
 <a id="add-state-vs-kanban-column" />
 ## When to add a State versus a Kanban column
 
-Both States and Kanban columns are used to track the status of work. Workflow states are shared across a team project while Kanban columns are shared within a team. Only project collection admins can add custom states, while team admins can add Kanban columns.  
+Both States and Kanban columns are used to track the status of work. Workflow states are shared across a project while Kanban columns are shared within a team. Only project collection admins can add custom states, while team admins can add Kanban columns.  
 
-Add custom states when you want all teams to track the status according to the business workflow adopted by the organization. By customizing the process, you automatically customize the team projects and WITs that reference that process. 
+Add custom states when you want all teams to track the status according to the business workflow adopted by the organization. By customizing the process, you automatically customize the projects and WITs that reference that process. 
 
 Also, by adding custom states to support those workflow states that several teams want to track, you avoid the confusion that can arise when team's create a query based on a Kanban column. Because each team can customize the Kanban board columns and swimlanes, the values assigned to work items which appear on different boards may not be the same. The primary work around for this issue is to maintain single ownership of work items by team area path. Another work around is to formalize the columns by adding custom states which can be shared across teams. 
 
@@ -113,7 +113,7 @@ In the following circumstances the system won't automatically update the work it
 - The work item, whose WIT is managed with the Inheritance process model, is already in a State that belongs to the Resolved category. In this instance the system won't update the State. For example, if a bug derived from the Agile process is in a Resolved state, the system won't transition it to Closed.   
 - The work item is already in a State that belongs to the Completed category. No further transition is required. 
 - The WIT associated with the work item contains one or more workflow field rules that prevent the work item being saved to a next state. For example, a rule requires that another field must be defined as part of closing the work item.  
-- For TFS and VSTS Hosted process model, you must modify the workflow to specify actions (**ACTION** element) to take place when transitioning the workflow. See [Change the workflow for a work item type, Specify Actions](reference/change-workflow-wit.md#Actions).
+- For TFS and Azure Codex Hosted process model, you must modify the workflow to specify actions (**ACTION** element) to take place when transitioning the workflow. See [Change the workflow for a work item type, Specify Actions](reference/change-workflow-wit.md#Actions).
 
 To learn more about process models, see [Customize your work tracking experience](customize-work.md).  
 

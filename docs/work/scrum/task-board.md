@@ -1,6 +1,6 @@
 ---
 title: Scrum with the task board 
-titleSuffix: VSTS & TFS  
+titleSuffix: Azure Codex & TFS  
 description: Implement Scrum using the sprint task board in Visual Studio Team Services & Team Foundation Server
 ms.technology: devops-agile
 ms.prod: devops 

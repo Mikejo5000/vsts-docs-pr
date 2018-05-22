@@ -1,6 +1,6 @@
 ---
 title: Define query as a hyperlink
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Codex & TFS
 description: Construct a URL for a query in Visual Studio Team Services & Team Foundation Server
 ms.prod: devops
 ms.technology: vs-azure-devops-agile 
@@ -17,13 +17,13 @@ ms.date: 09/29/2017
 
 # Define a query as a hyperlink  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 <a id="define-query-hyperlink" />  
 
 The easiest way to define a hyperlink is to create a query that matches what you want and then copy the URL for the query. The hyperlink uses the work item query language (WIQL), which resembles Transact-SQL. For details about constructing WIQLs, see [Syntax for the Work Item Query Language (WIQL)](../../reference/wiql-syntax.md).
 
-VSTS and TFS 2015 require that you encode the WIQL portion of the URL syntax. You can use any URL encoder tool to encode your URL. 
+Azure Codex and TFS 2015 require that you encode the WIQL portion of the URL syntax. You can use any URL encoder tool to encode your URL. 
 
 TFS 2013 and previous versions didn't require encoding.  
 
@@ -31,7 +31,7 @@ TFS 2013 and previous versions didn't require encoding.
 >Most browsers enforce a limit of between 2000 and 2083 characters for a URL string.    
 
 
-## Syntax for VSTS, TFS 2018, TFS 2017 
+## Syntax for Azure Codex, TFS 2018, TFS 2017 
 
 ```  
 https://{youraccount}.visualstudio.com/DefaultCollection/{TeamProjectName}/{TeamName}/_workitems?_a=query&wiql={Encoded WorkItemQueryLanguage]
@@ -83,7 +83,7 @@ SELECT [System.ID], [System.Title], [System.State]
 ```  
 https://{ServerName}/{CollectionName}/q.aspx?pname={TeamProjectName}&wiql={WorkItemQueryLanguage]
 ```
-For example, the following hyperlink lists the ID, title, and state of all bugs that have build number 9.0.30304 for the FabrikamFiber team project hosted on the fabrikam server. 
+For example, the following hyperlink lists the ID, title, and state of all bugs that have build number 9.0.30304 for the FabrikamFiber project hosted on the fabrikam server. 
 
 ```
 http://fabrikam:8080/tfs/DefaultCollection/q.aspx?pname=FabrikamFiber&wiql=
@@ -101,4 +101,4 @@ SELECT [System.ID], [System.Title], [System.State]
 - [REST API, Wiql](https://docs.microsoft.com/en-us/rest/api/vsts/wit/wiql)
  
 > [!NOTE]  
-> For queries made against VSTS, the WIQL length must not exceed 32K characters. The system won't allow you to create or run queries that exceed that length.  
+> For queries made against Azure Codex, the WIQL length must not exceed 32K characters. The system won't allow you to create or run queries that exceed that length.  

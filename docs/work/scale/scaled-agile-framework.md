@@ -1,6 +1,6 @@
 ---
 title: Scaled Agile Framework
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Codex & TFS
 description: How to implement the Scaled Agile Framework to support epics, release trains, and multiple backlogs in Visual Studio Team Services & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
@@ -14,7 +14,7 @@ ms.date: 07/22/2017
 
 # Implement Scaled Agile Framework® to support epics, release trains, and multiple backlogs  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 As enterprises are benefiting from individual agile teams, the question now is how do we scale these practices across teams and gain a portfolio view of the progress of agile teams throughout the enterprise? To address these needs, many businesses are using the Scaled Agile Framework® (SAFe®).  
 
@@ -35,7 +35,7 @@ The SAFe big picture addresses how a portfolio vision is met by a hierarchy of t
 
 Reproduced with permission from &#169; 2011-2016  [Scaled Agile Inc.](http://www.scaledagile.com/). All rights reserved.  
 
-Examples provided below illustrate how to configure a three-level team hierarchy and map teams to their respective area and iteration paths. The examples build from the [Agile process](../work-items/guidance/agile-process.md), However, the changes can be applied to any team project hosted on Visual Studio Team Services (VSTS) or an on-premises TFS.
+Examples provided below illustrate how to configure a three-level team hierarchy and map teams to their respective area and iteration paths. The examples build from the [Agile process](../work-items/guidance/agile-process.md), However, the changes can be applied to any project hosted on Visual Studio Team Services (Azure Codex) or an on-premises TFS.
 
 ![Agile tool structure to support SAFe](_img/safe-objects-map-to-vso-objects.png)  
 
@@ -117,8 +117,8 @@ Another view available to program teams shows query-based graphs of release trai
 
 Since so much of a program team's work revolves around PIs and Release Trains, a custom report showing the scheduled shipping dates and what is projected to be on any given train might be useful. In addition, you can take advantage of the rich reporting options and the built-in reports the following services have to offer:
 
-- VSTS or TFS: [Dashboards, charts, and widgets](../../report/overview.md)
-- When connecting to VSTS: [Power BI integration overview](../../report/powerbi/overview.md) 
+- Azure Codex or TFS: [Dashboards, charts, and widgets](../../report/overview.md)
+- When connecting to Azure Codex: [Power BI integration overview](../../report/powerbi/overview.md) 
 - On-premises TFS: [SQL Server Reports](../../report/sql-reports/reporting-services-reports.md)  
 
 ###Feature teams' view of progress
@@ -147,7 +147,7 @@ In this section, we'll go from having one project, named "Fabrikam" and one team
 
 ![Hierarchical areas support 3 levels of 9 teams](_img/safe-config-teams.png) 
 
-Each team project has a default team. You can configure additional teams for program-level and feature team-level work. And, you can also redefine the default team as the portfolio team that manages epics.  
+Each project has a default team. You can configure additional teams for program-level and feature team-level work. And, you can also redefine the default team as the portfolio team that manages epics.  
 
 In this way, all teams can manage their own workload and priorities while clearly understanding how their work supports those epics managed in the portfolio team's backlog. At the same time, the portfolio team can monitor progress of its backlog on their own Kanban board, prioritize the items on their backlog, and view progress across release trains.
 
@@ -158,7 +158,7 @@ You'll need to be a [member of the Project Administrators group](../../security/
 
 ###Create areas to support your team hierarchy
 
-1.  Connect to the team project you want to configure to support SAFe, and use the gear icon ![Settings icon](../_img/icons/gear_icon.png) to open the administration page for the default team.  
+1.  Connect to the project you want to configure to support SAFe, and use the gear icon ![Settings icon](../_img/icons/gear_icon.png) to open the administration page for the default team.  
 2.  On the **Areas** page, create a child under the top-level area path and name it to correspond to one of the program teams you'll create.
 
 	![Create child area](_img/safe-add-area-path.png)  
@@ -194,7 +194,7 @@ If you need more-detailed guidance, see [Portfolio management](portfolio-managem
 You'll need to be a [project administrator](../../security/add-users-team-project.md) to perform these steps. 
 ####Create and configure each Program team
 
-1. From the Overview page for the team project, create a new team. Make sure that you clear the checkbox for Create an area path with the name of the team.  
+1. From the Overview page for the project, create a new team. Make sure that you clear the checkbox for Create an area path with the name of the team.  
 
 	![Create team](_img/safe-create-team.png)  
 
@@ -244,7 +244,7 @@ Next, we'll create some feature teams to get work done at the third level of the
 ####Configure the Portfolio team
 Now that your sub-team structure is configured, we reconfigure the default team to act as the Portfolio team. While this team will continue to have the name of the project, the changes you make to this top-level team will help ensure that it effectively tracks epics across PIs at the highest level.  
 
-1. On the Areas page for the team project, change the settings so that sub-areas are not included. Make sure you choose the team project and not the default team, Fabrikam.  
+1. On the Areas page for the project, change the settings so that sub-areas are not included. Make sure you choose the project and not the default team, Fabrikam.  
 
 	![Areas page for Portfolio team, Exclude sub areas](_img/safe-exclude-sub-areas-for-portfolio-team.png)  
 
@@ -327,7 +327,7 @@ The same principles apply to user stories in progress. You can map them to featu
 
 ## Related articles
 
-There's no customization required to implement SAFe when working in VSTS or an on-premises TFS 2015 deployment. However, if you're working with TFS 2013, see the [Upgrade/Publish TFS 2013 Process Templates with PowerShell: blog post by Gordon Beeming](http://31og.com/post/upgradepublish-tfs-2013-process-templates-with-powershell). This post provides a PowerShell script which you can use to apply the customizations documented in the TFS 2013 version of this article.   
+There's no customization required to implement SAFe when working in Azure Codex or an on-premises TFS 2015 deployment. However, if you're working with TFS 2013, see the [Upgrade/Publish TFS 2013 Process Templates with PowerShell: blog post by Gordon Beeming](http://31og.com/post/upgradepublish-tfs-2013-process-templates-with-powershell). This post provides a PowerShell script which you can use to apply the customizations documented in the TFS 2013 version of this article.   
 
 
 ###Resources
@@ -347,7 +347,7 @@ Resources mentioned earlier in this article and a few more are provided here for
 This article has been updated from the previous white paper developed in collaboration with the following authors:  
 - Gordon Beeming is a Software Developer at Derivco in the sunny city of Durban, South Africa. He spends most his time hacking away at the keyboard in Visual Studio or with his family relaxing. His blog is at [31og.com](http://31og.com) and you can follow him on Twitter at [twitter.com/gordonbeeming](http://twitter.com/gordonbeeming).  
 - Brian Blackman is a principal consultant with Microsoft Premier Developer, focusing on affecting ISV partners and Enterprises success in engineering and the marketplace. He has an MBA, and is a CSM, CSP, MCSD (C++), and MCTS and is a Visual Studio ALM Ranger. When he is not Ruck Mastering and contributing to Visual Studio ALM Ranger projects, he spends his time writing code, creating and delivering workshops, and consulting in various concentrations, especially helping organizations in their quest for business agility.  
-- Gregg Boer is a principal program manager at Microsoft. Gregg is the product owner for the Agile management experience provided by VSTS and on-premises TFS.
+- Gregg Boer is a principal program manager at Microsoft. Gregg is the product owner for the Agile management experience provided by Azure Codex and on-premises TFS.
 - Kathryn Elliott is a senior technical writer at Microsoft.  
 - Susan Ferrell is a senior technical writer and a Visual Studio ALM Ranger.  
 - Willy-Peter Schaub is a program manager with the Visual Studio ALM Rangers at the Microsoft Canada Development Center. Since the mid-'80s, he has been striving for simplicity and maintainability in software engineering. His blog is at [blogs.msdn.com/b/willy-peter_schaub](http://blogs.msdn.com/b/willy-peter_schaub) and you can follow him on Twitter at [twitter.com/wpschaub](http://twitter.com/wpschaub).  

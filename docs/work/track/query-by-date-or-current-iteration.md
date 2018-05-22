@@ -1,6 +1,6 @@
 ---
 title: Query by date or current iteration 
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Codex & TFS
 description: Query for work items based on a date, a team's current iteration, or a sliding window of sprints in Visual Studio Team Services & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
@@ -28,7 +28,7 @@ In addition, you can use  the <b>@CurrentIteration +/- <i>n</i></b> macro to cre
 
 
 > [!NOTE]   
-> **Feature availability**: The **@CurrentIteration** macro is supported for VSTS and TFS 2015 and later versions. The **@CurrentIteration +/- n** macro is supported for VSTS. These two macros only work when run them from the web portal. 
+> **Feature availability**: The **@CurrentIteration** macro is supported for Azure Codex and TFS 2015 and later versions. The **@CurrentIteration +/- n** macro is supported for Azure Codex. These two macros only work when run them from the web portal. 
 
 ## Query for items based on when changes occurred
 
@@ -105,7 +105,7 @@ Any item assigned to a sprint which corresponds to the current iteration path fo
 
 ::: moniker range="vsts"
 
-VSTS now adds a team parameter when you select the **@CurrentIteration** or <b>@CurrentIteration +/- <i>n</i></b> macros. The team parameter is derived from your current [team context](#team_view). 
+Azure Codex now adds a team parameter when you select the **@CurrentIteration** or <b>@CurrentIteration +/- <i>n</i></b> macros. The team parameter is derived from your current [team context](#team_view). 
 
 > [!div class="mx-imgBorder"]
 > ![Query filter using the @CurrentIteration macro with team parameter](_img/query-date-iteration/at-current-with-team-parameter.png)  
@@ -136,7 +136,7 @@ Prior to creating or updating a query to use the **@CurrentIteration** macro, ma
 Use the <b>@CurrentIteration +/- <i>n</i></b> macro when you want to track the work a team has planned for upcoming sprints and for understanding work that wasn't completed in previous sprints. 
 
 > [!NOTE] 
-> **Feature availability**: The <b>@CurrentIteration +/- <i>n</i></b> macro is supported for VSTS only, and only when run from the web portal. 
+> **Feature availability**: The <b>@CurrentIteration +/- <i>n</i></b> macro is supported for Azure Codex only, and only when run from the web portal. 
 
 Here we show how to list all User Stories and Bugs assigned to the  sliding window that spans the last two, the current, and the next two prints selected for the selected team, Cloud Admin and Tools. 
 
@@ -234,7 +234,7 @@ To use this macro, the specified team must have [selected a set of sprints](../s
 </tr>
 <tr>
   <td>Iteration Path</td>
-  <td>Groups work items by named sprints or time periods. The iteration must be a valid node in the project hierarchy. You [define iteration paths for a team project](../customize/set-iteration-paths-sprints.md), and you [select iteration paths](../scale/set-team-defaults.md) for a team. 
+  <td>Groups work items by named sprints or time periods. The iteration must be a valid node in the project hierarchy. You [define iteration paths for a project](../customize/set-iteration-paths-sprints.md), and you [select iteration paths](../scale/set-team-defaults.md) for a team. 
 <p>Reference name=System.IterationPath, Data type=TreePath</p>
   </td>
   <td>All</td>
@@ -299,7 +299,7 @@ To use this macro, the specified team must have [selected a set of sprints](../s
 	</FIELD >  
 	```
 
-2. Start and Finish Date fields are calculated if you create a project plan in Microsoft Project and then synchronize that plan with tasks that are stored in TFS or VSTS. These fields do not appear on the work item form, but they are calculated for those backlog items and tasks that are linked to backlog items. You can view their read-only values in results from a query or from Microsoft Excel or Project. For more information, see [Create your backlog and tasks using Project](../backlogs/office/create-your-backlog-tasks-using-project.md).
+2. Start and Finish Date fields are calculated if you create a project plan in Microsoft Project and then synchronize that plan with tasks that are stored in TFS or Azure Codex. These fields do not appear on the work item form, but they are calculated for those backlog items and tasks that are linked to backlog items. You can view their read-only values in results from a query or from Microsoft Excel or Project. For more information, see [Create your backlog and tasks using Project](../backlogs/office/create-your-backlog-tasks-using-project.md).
 
 <a id="team_view">  </a>
 <a id="current_sprint_restrict"> </a> 
@@ -307,12 +307,12 @@ To use this macro, the specified team must have [selected a set of sprints](../s
 ## Client restrictions on the use of the @CurrentIteration macros 
 You can use the **@CurrentIteration** in a query from the following clients:  
 
-- Web portal that connects to VSTS 
+- Web portal that connects to Azure Codex 
 - Web portal that connects to an on-premises TFS 2015 or later version 
-- Visual Studio 2015 or Team Explorer 2015 or later versions connected to VSTS or TFS 2015 or later versions. 
+- Visual Studio 2015 or Team Explorer 2015 or later versions connected to Azure Codex or TFS 2015 or later versions. 
 - Using the REST API
 
-You can use the <b>@CurrentIteration +/- <i>n</i></b> macro in a query against VSTS and with a REST API which includes the team as a parameter, for example, `@CurrentIteration('[Project]/Team')`.
+You can use the <b>@CurrentIteration +/- <i>n</i></b> macro in a query against Azure Codex and with a REST API which includes the team as a parameter, for example, `@CurrentIteration('[Project]/Team')`.
   
 
 An error occurs if you open a query that contains the **@CurrentIteration** macro in earlier versions of Visual Studio, or from Excel or Project. Also, you can't use the macro when [copying or cloning test suites and test cases](../../manual-test/mtm/copying-and-cloning-test-suites-and-test-cases.md), [defining alerts](../../notifications/index.md), or with [REST APIs](../../integrate/get-started/rest/basics.md).

@@ -1,6 +1,6 @@
 ---
 title: Set Kanban board card reordering
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Codex & TFS
 description: Use the Kanban board, process, and tools to plan and track work in Visual Studio Team Services and Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
@@ -14,7 +14,7 @@ ms.date: 03/20/2018
 
 
 # Reorder cards  
-<b>VSTS | TFS 2018 | TFS 2017 | TFS 2015</b> 
+<b>Azure Codex | TFS 2018 | TFS 2017 | TFS 2015</b> 
 
 ::: moniker range="tfs-2013"
 > [!NOTE]   

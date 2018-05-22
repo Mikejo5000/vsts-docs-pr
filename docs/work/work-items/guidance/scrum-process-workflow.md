@@ -1,6 +1,6 @@
 ---
 title: Scrum process work items types & workflow
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Codex & TFS
 description: How to guide for using the Scrum process  work item types and workflow to track work in Visual Studio Team Services & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
@@ -14,7 +14,7 @@ ms.date: 04/05/2017
 
 # Scrum process work item types and workflow  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../../_shared/version-vsts-tfs-all-versions.md)]
 
 To plan a software project and track software defects using Scrum, teams use the product backlog item (PBI) and bug work item types (WITs). To gain insight into a portfolio of features, scenarios, or user experiences, product owners and program managers can map PBIs and bugs to features. When teams work in sprints, they define tasks which automatically link to PBIs and bugs.
 
@@ -233,7 +233,7 @@ Work item forms displayed in a client and the web portal for TFS 2015 and earlie
 <td><p>Code Review Request</p></td>
 <td><ul>
 <li><p>Allows only <strong>Parent</strong> and <strong>Child</strong> links to Code Review Response work items.</p></li>
-<li><p>Excludes links to work items in other team projects.</p></li>
+<li><p>Excludes links to work items in other projects.</p></li>
 </ul>
 <p></p></td>
 </tr>
@@ -243,7 +243,7 @@ Work item forms displayed in a client and the web portal for TFS 2015 and earlie
 <td><ul>
 <li><p>Allows only <strong>Related</strong> links.</p></li>
 <li><p>Allows links to Bug and Product Backlog Items.</p></li>
-<li><p>Excludes links to work items in other team projects.</p></li>
+<li><p>Excludes links to work items in other projects.</p></li>
 </ul>
 <p></p></td>
 </tr>
@@ -259,7 +259,7 @@ Work item forms displayed in a client and the web portal for TFS 2015 and earlie
 <td><p>Product Backlog Item</p></td>
 <td><ul>
 <li><p>Allows only <strong>Child</strong> links to Tasks.</p></li>
-<li><p>Excludes links to work items in other team projects.</p></li>
+<li><p>Excludes links to work items in other projects.</p></li>
 </ul></td>
 </tr>
 <tr>
@@ -269,7 +269,7 @@ Work item forms displayed in a client and the web portal for TFS 2015 and earlie
 <td><ul>
 <li><p>Allows only <strong>Tested By</strong> links.</p></li>
 <li><p>Allows links only to test cases.</p></li>
-<li><p>Excludes links to work items in other team projects.</p></li>
+<li><p>Excludes links to work items in other projects.</p></li>
 </ul></td>
 </tr>
 <tr>
@@ -278,7 +278,7 @@ Work item forms displayed in a client and the web portal for TFS 2015 and earlie
 <td><ul>
 <li><p>Allows only <strong>Tests</strong> links.</p></li>
 <li><p>Allows links to Bug and Product Backlog Items.</p></li>
-<li><p>Excludes links to work items in other team projects.</p></li>
+<li><p>Excludes links to work items in other projects.</p></li>
 </ul></td>
 </tr>
 </tbody>

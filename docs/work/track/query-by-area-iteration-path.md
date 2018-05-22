@@ -1,6 +1,6 @@
 ---
 title: Query by area or iteration path
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Codex & TFS
 description: Query for work items based on their area or iteration path in Visual Studio Team Services & Team Foundation Server
 ms.technology: devops-agile
 ms.prod: devops
@@ -15,9 +15,9 @@ ms.date: 04/27/2018
 
 # Query by area or iteration path 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-The Area Path and Iteration Path are two fields that appear on the work tracking form for all work item types. You define them for a team project&mdash;[area paths](../customize/set-area-paths.md) and [iteration paths](../customize/set-iteration-paths-sprints.md) &mdash;and then select the ones you want to [associate with a team](../scale/set-team-defaults.md). 
+The Area Path and Iteration Path are two fields that appear on the work tracking form for all work item types. You define them for a project&mdash;[area paths](../customize/set-area-paths.md) and [iteration paths](../customize/set-iteration-paths-sprints.md) &mdash;and then select the ones you want to [associate with a team](../scale/set-team-defaults.md). 
 
 To better understand how to work with area and iteration paths, see [About area and iteration paths (aka sprints)](../customize/about-areas-iterations.md).
 
@@ -45,7 +45,7 @@ In addition to these operators, you can use the following macros when you select
 > | **@TeamAreas**  | Filter items based on area path(s) assigned to a specific team.  |
 
 > [!NOTE]   
-> **Feature availability**: The **@CurrentIteration** macro is supported for VSTS and TFS 2015 and later versions. The **@CurrentIteration +/- n** and **@TeamAreas** macros are supported for VSTS. 
+> **Feature availability**: The **@CurrentIteration** macro is supported for Azure Codex and TFS 2015 and later versions. The **@CurrentIteration +/- n** and **@TeamAreas** macros are supported for Azure Codex. 
 
 ## Query for items assigned under several areas 
 
@@ -102,7 +102,7 @@ If you define a path name that is longer than 256 characters, you will not be ab
 
 You can't apply most field rules to the System.AreaPath and System.IterationPath fields. To learn more, see [Apply a field rule](../customize/reference/apply-rule-work-item-field.md).
 
-The following fields do not appear on work item forms but are tracked for each work item type. These fields provide a numeric value for each classification value that is defined for a team project. You can use these fields to filter queries and create reports.
+The following fields do not appear on work item forms but are tracked for each work item type. These fields provide a numeric value for each classification value that is defined for a project. You can use these fields to filter queries and create reports.
 
 |**Field name**|**Description**|**Reference name**|**Data type**|
 |---|---|---|---|

@@ -1,5 +1,5 @@
 ---
-title: Help text, hyperlinks, web content | VSTS & TFS
+title: Help text, hyperlinks, web content | Azure Codex & TFS
 description: Customize your work item form to provide information or links to content.
 ms.prod: devops
 ms.technology: devops-agile
@@ -11,7 +11,7 @@ ms.date: 01/20/2017
 
 # Provide help text, hyperlinks, or web content on a work item form
 
-<b>VSTS (Hosted XML) | TFS 2017 | TFS 2015 </b>
+<b>Azure Codex (Hosted XML) | TFS 2017 | TFS 2015 </b>
 
 > [!IMPORTANT]  
 ><b>Feature availability: </b>This topic applies to customizations you can make when you use the Hosted XML or On-premises process models. The customizations addressed in this topic aren't available for the [Inheritance process model](../../../settings/work/customize-process.md). 
@@ -22,7 +22,7 @@ When you customize your work item form, you may want to provide information or l
   
 By using the form controls that are described in this topic, you can add tooltip text for individual fields, stand-alone text, or hyperlinks to Web pages, or embed HTML content or Web content in the form.  
   
-To modify an existing WIT, you modify the XML definition file for the WIT and then import it to your team project [based on the process model you use](../customize-work.md). 
+To modify an existing WIT, you modify the XML definition file for the WIT and then import it to your project [based on the process model you use](../customize-work.md). 
  
   
 [!INCLUDE [temp](../../_shared/process-editor.md)]

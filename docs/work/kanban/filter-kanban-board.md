@@ -1,6 +1,6 @@
 ---
 title: Filter your Kanban board 
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Codex & TFS
 description: Filter your Kanban board based on work item type, assigned to, iteration or sprint, tags, or parent work items
 ms.global_help.title: Filter your board
 ms.global_help.keywords: ms.vss-work-web.boards-hub, 4    
@@ -16,7 +16,7 @@ ms.date: 03/20/2018
 
 # Filter your Kanban board
 
-<b>VSTS | TFS 2018 | TFS 2017 | TFS 2015</b>  
+<b>Azure Codex | TFS 2018 | TFS 2017 | TFS 2015</b>  
 
 <!---
 > [!NOTE]   
@@ -73,7 +73,7 @@ The filter criteria ignores the following characters when the field value starts
 
 <!---
 > [!NOTE]    
-><b>Feature availability: </b>Filter by select fields is available from VSTS and TFS 2017 and later versions.  
+><b>Feature availability: </b>Filter by select fields is available from Azure Codex and TFS 2017 and later versions.  
 -->
 
 You can filter by select field values using the Kanban board for your product backlog (Stories, Product Backlog Items, or Requirements) or a portfolio backlog (Features or Epics). 
@@ -105,7 +105,7 @@ Once the board is filtered, you can click the filter icon to hide the drop downs
 
 <!---
 > [!NOTE]    
-><b>Feature availability: </b>The **Filter by parent** feature is available from VSTS and TFS 2017 and later versions.  
+><b>Feature availability: </b>The **Filter by parent** feature is available from Azure Codex and TFS 2017 and later versions.  
 -->
 
 You can use the **Filter by parent** feature to filter by select parent work items using the Kanban board for your product backlog (Stories, Product Backlog Items, or Requirements) or a portfolio backlog (Features).
@@ -153,7 +153,7 @@ Cards are filtered based on the assignments made in the following order and logi
 <tr>
 <th>Filter options </th>
 <th>TFS 2015 </th>
-<th>VSTS, TFS 2018, TFS 2017 </th>
+<th>Azure Codex, TFS 2018, TFS 2017 </th>
 </tr>
 
 

@@ -1,6 +1,6 @@
 ---
 title: Add or remove columns, change column width, or sort order 
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Codex & TFS
 ms.global_help.title: Change column options
 description: Set column fields to show and sort fields for a backlog or query in Visual Studio Team Services or Team Foundation Server 
 ms.technology: devops-agile
@@ -17,7 +17,7 @@ ms.date: 03/20/2018
 
 # Change column options 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 <a id="column-options">  </a>
 
@@ -41,7 +41,7 @@ In the Column options dialog, click **Add a column** to add a field that isn't s
 > The following dialog is available from TFS 2018.2 and later versions. 
 ::: moniker-end
 ::: moniker range=">= tfs-2018"
-<img src="_img/set-column-options-s125.png" alt="Column options dialog, VSTS" style="border: 1px solid #C3C3C3;" /> 
+<img src="_img/set-column-options-s125.png" alt="Column options dialog, Azure Codex" style="border: 1px solid #C3C3C3;" /> 
 
 ::: moniker-end
 

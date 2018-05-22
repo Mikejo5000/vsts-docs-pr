@@ -1,6 +1,6 @@
 ---
 title: Kanban board controls  
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Codex & TFS
 description: Use board controls available with your Kanban board in Visual Studio Team Services & Team Foundation Server    
 ms.technology: devops-agile
 ms.prod: devops
@@ -14,7 +14,7 @@ ms.date: 03/20/2018
 
 # Kanban board controls
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 You can quickly switch from the backlog view to the board view using the **Backlog** and **Board** links. Use the following icons to enable other user interface features. 
 

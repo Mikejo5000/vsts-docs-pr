@@ -73,7 +73,7 @@ Are there custom hubs which expose important details?
 
 ### Work item migration
 
-If one or a handful of work items are sensitive, you can [move them](../../work/backlogs/remove-delete-work-items.md#move-a-work-item-to-another-team-project) out into a separate, private project.
+If one or a handful of work items are sensitive, you can [move them](../../work/backlogs/remove-delete-work-items.md#move) out into a separate, private project.
 Cross-project linkages will continue to work for members.
 Non-members will not have access to the content since it resides in a private project.
 

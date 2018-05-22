@@ -35,9 +35,9 @@ If you are on TFS 2017 and want to integrate with Microsoft Project Server, you 
 
 ## [Project Connect from Tivitie](http://www.tivitie.com/projectconnect)
 
-Keep your agile teams working in VSTS and TFS, the tool they are accustomed to, while providing portfolio and program leaders a broad view of the project portfolio with Project Connect. A unified PPM solution bridges gaps that are impacting productivity and the bottom line. Connecting Project Online with VSTS drives enhanced visibility & alignment - making sure the projects that the teams are working so hard on - are the right projects and deliver value to the organization.
+Keep your agile teams working in Azure Codex and TFS, the tool they are accustomed to, while providing portfolio and program leaders a broad view of the project portfolio with Project Connect. A unified PPM solution bridges gaps that are impacting productivity and the bottom line. Connecting Project Online with Azure Codex drives enhanced visibility & alignment - making sure the projects that the teams are working so hard on - are the right projects and deliver value to the organization.
 
-[Project Connect](http://www.tivitie.com/projectconnect) for VSTS offers a seamless approach to exchange critical information between development teams and project teams using Project Online and VSTS. 
+[Project Connect](http://www.tivitie.com/projectconnect) for Azure Codex offers a seamless approach to exchange critical information between development teams and project teams using Project Online and Azure Codex. 
 
 **Marketplace extension**: [Project Connect](https://marketplace.visualstudio.com/items?itemName=TVT.TVT-PjO). 
 
@@ -63,7 +63,7 @@ ConnectALL is from Go2Group, a global provider of IT delivery solutions that hel
 
 ## [Tasktop](http://www.tasktop.com/product-overview)
  
-Tasktop provides enterprise-grade integration between Microsoft Project Server and TFS/VSTS, as well as to most other popular Agile, DevOps and Systems Development Lifecycle (SDLC) tools. This integration automates the flow of artifacts (such as work items and tasks) across these tools, eliminating wasted time and bottlenecks while increasing velocity, collaboration and even employee satisfaction! In addition, Tasktop can automatically collect the activity data into a central database, enabling the creation of consolidated dashboards and reports, allowing for greater project visibility and artifact traceability. 
+Tasktop provides enterprise-grade integration between Microsoft Project Server and TFS/Azure Codex, as well as to most other popular Agile, DevOps and Systems Development Lifecycle (SDLC) tools. This integration automates the flow of artifacts (such as work items and tasks) across these tools, eliminating wasted time and bottlenecks while increasing velocity, collaboration and even employee satisfaction! In addition, Tasktop can automatically collect the activity data into a central database, enabling the creation of consolidated dashboards and reports, allowing for greater project visibility and artifact traceability. 
  
 [Tasktop's unique model-based integration approach](https://www.tasktop.com/product-overview) dramatically reduces the time and effort it takes to integrate tools; this is particularly important for larger organizations with many tools (and tool instances), hundreds of projects within those tools, thousands of users, and millions of work items and tasks.
 

@@ -1,5 +1,5 @@
 ---
-title: Define default value or copy a value | VSTS & TFS
+title: Define default value or copy a value | Azure Codex & TFS
 description: Syntax and usage for the COPY, DEFAULT, and SERVERDEFAULT elements  
 ms.prod: devops
 ms.technology: devops-agile

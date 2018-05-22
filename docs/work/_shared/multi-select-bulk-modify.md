@@ -7,7 +7,7 @@ Multi-select of work items on the product and sprint backlogs works in the same 
 
 <!---
 > [!NOTE]     
-><b>Feature availability: </b> Multi-select of work items on the backlog and sprint backlogs is currently supported from VSTS and TFS 2015.1 and later versions. This feature works in the same way as multi-select works within query results. 
+><b>Feature availability: </b> Multi-select of work items on the backlog and sprint backlogs is currently supported from Azure Codex and TFS 2015.1 and later versions. This feature works in the same way as multi-select works within query results. 
 -->
 
 With multi-select, you can perform several actions on several work items at once, such as: 

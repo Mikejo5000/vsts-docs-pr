@@ -1,6 +1,6 @@
 ---
 title: Troubleshoot process configuration issues
-titleSuffix: VSTS & TFS 
+titleSuffix: Azure Codex & TFS 
 description: Resolve process configuration issues in Visual Studio Team Services & Team Foundation Server
 ms.technology: devops-agile
 ms.prod: devops

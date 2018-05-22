@@ -1,6 +1,6 @@
 ---
 title: CMMI process work item types & workflow
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Codex & TFS
 description: How to guide for using the CMMI process  work item types and workflow to track work in Visual Studio Team Services & Team Foundation Server   
 ms.technology: devops-agile
 ms.prod: devops
@@ -15,7 +15,7 @@ ms.date: 12/19/2017
 # CMMI process work item types and workflow
 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../../_shared/version-vsts-tfs-all-versions.md)]
 
 Teams use the work item types (WITs) provided with the MSF for CMMI Process Improvement 2015 (CMMI) process to plan and track progress of software projects. Teams define requirements to manage the backlog of work and then, using the Kanban board, track progress by updating the status of requirements.
  
@@ -488,7 +488,7 @@ Work item forms displayed in a client and the web portal for TFS 2015 and earlie
 <td><p>Task</p></td>
 <td><ul>
 <li><p>Allows only <strong>Parent</strong> and <strong>Child</strong> links between requirements and tasks.</p></li>
-<li><p>Excludes links to work items in other team projects.</p></li>
+<li><p>Excludes links to work items in other projects.</p></li>
 </ul></td>
 </tr>
 <tr>
@@ -496,7 +496,7 @@ Work item forms displayed in a client and the web portal for TFS 2015 and earlie
 <td><p>Code Review Request</p></td>
 <td><ul>
 <li><p>Allows only <strong>Parent</strong> and <strong>Child</strong> links to Code Review Response work items.</p></li>
-<li><p>Excludes links to work items in other team projects.</p></li>
+<li><p>Excludes links to work items in other projects.</p></li>
 </ul></td>
 </tr>
 <tr>
@@ -504,7 +504,7 @@ Work item forms displayed in a client and the web portal for TFS 2015 and earlie
 <td><p>Change Request</p></td>
 <td><ul>
 <li><p>Allows only <strong>Affects</strong> link type to link change requests to requirements.</p></li>
-<li><p>Excludes links to work items in other team projects.</p></li>
+<li><p>Excludes links to work items in other projects.</p></li>
 </ul></td>
 </tr>
 <tr>
@@ -512,7 +512,7 @@ Work item forms displayed in a client and the web portal for TFS 2015 and earlie
 <td><p>Feedback Response</p></td>
 <td><ul>
 <li><p>Allows only <strong>Related</strong> links to requirements.</p></li>
-<li><p>Excludes links to work items in other team projects.</p></li>
+<li><p>Excludes links to work items in other projects.</p></li>
 </ul></td>
 </tr>
 <tr>
@@ -529,7 +529,7 @@ Work item forms displayed in a client and the web portal for TFS 2015 and earlie
 <td><ul>
 <li><p>Allows only <strong>Tested By</strong> links.</p></li>
 <li><p>Allows links only to test cases.</p></li>
-<li><p>Excludes links to work items in other team projects.</p></li>
+<li><p>Excludes links to work items in other projects.</p></li>
 </ul></td>
 </tr>
 <tr>
@@ -538,7 +538,7 @@ Work item forms displayed in a client and the web portal for TFS 2015 and earlie
 <td><ul>
 <li><p>Allows only <strong>Tests</strong> links.</p></li>
 <li><p>Allows links only to requirements.</p></li>
-<li><p>Excludes links to work items in other team projects.</p></li>
+<li><p>Excludes links to work items in other projects.</p></li>
 </ul></td>
 </tr>
 </tbody>

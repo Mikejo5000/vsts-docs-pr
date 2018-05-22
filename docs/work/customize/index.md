@@ -1,6 +1,6 @@
 ---
 title: Index to work item tracking customization topics
-titleSuffix: VSTS & TFS   
+titleSuffix: Azure Codex & TFS   
 description: Index to topics for customizing your work tracking experience in Visual Studio Team Services & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
@@ -65,6 +65,6 @@ Use the guidance provided in the following topics based on the process model or 
 
 - [Work items](../work-items/index.md)
 - [Scale & configure teams](../../settings/index.md)
-- [Account Management (VSTS)](../../accounts/index.md)
+- [Account Management (Azure Codex)](../../accounts/index.md)
 - [Marketplace extensions](../../marketplace/install-vsts-extension.md)
 - [Extensibility and REST APIs](../../extend/overview.md) 

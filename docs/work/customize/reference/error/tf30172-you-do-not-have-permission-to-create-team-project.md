@@ -1,5 +1,5 @@
 ---
-title: TF30172-You do not have permission to create a new team project. titleSuffix: VSTS & TFS
+title: TF30172-You do not have permission to create a new project. titleSuffix: Azure Codex & TFS
 description: Display the error when you run the New Team Project Wizard.
 ms.prod: devops
 ms.technology: devops-agile
@@ -9,22 +9,22 @@ ms.author: kaelliauthor: KathrynEE
 ms.topic: troubleshooting
 ms.date: 01/20/2017
 ---
-# TF30172: You do not have permission to create a new team project
+# TF30172: You do not have permission to create a new project
 
 [!INCLUDE [temp](../../../_shared/dev15-version-header.md)]
 
 You receive this error when your run the New Team Project Wizard under the following conditions:  
   
--   Your **Create team project** permission isn't set to Allow.  
+-   Your **Create project** permission isn't set to Allow.  
   
      Correct this error by contacting your administrator and ask that the permission **Create new projects** be added to your user account.  
   
      If your on-premises TFS supports SharePoint Products or SQL Server Reporting Services, you might need to have permissions set for those products as well. See [Add accounts to administer project collections](../../../../security/set-project-collection-level-permissions.md).  
   
--   You're client version isn't compatible with the TFS version where you're trying to create a team project.  
+-   You're client version isn't compatible with the TFS version where you're trying to create a project.  
   
-     To create a team project or manage process templates on an on-premises TFS, you must connect using the same version level of Visual Studio or Team Explorer. That is, to create a team project for an on-premises TFS 2015, you must connect from Team Explorer 2015. You can [download and install released versions of Visual Studio Community](http://www.visualstudio.com/downloads/download-visual-studio-vs) in a side by side configuration for free.  
+     To create a project or manage process templates on an on-premises TFS, you must connect using the same version level of Visual Studio or Team Explorer. That is, to create a project for an on-premises TFS 2015, you must connect from Team Explorer 2015. You can [download and install released versions of Visual Studio Community](http://www.visualstudio.com/downloads/download-visual-studio-vs) in a side by side configuration for free.  
   
 ## Related articles  
-- [Create a team project](../../../../accounts/create-team-project.md)   
+- [Create a project](../../../../accounts/create-team-project.md)   
 - [Add administrators, set permissions at the project-level or project collection-level](../../../../security/set-project-collection-level-permissions.md)

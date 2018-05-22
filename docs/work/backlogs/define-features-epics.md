@@ -1,6 +1,6 @@
 ---
 title: Define features and epics
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Codex & TFS
 description:  Define features and epics to group backlog items and track high level items 
 ms.technology: devops-agile
 ms.prod: devops
@@ -15,7 +15,7 @@ ms.date: 03/20/2018
 
 # Define features and epics  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 
 While many teams can work with a flat list of items, sometimes it helps to group related items into a hierarchical structure. 
@@ -134,15 +134,15 @@ Here we add a product backlog item as a child to the Customer Web - Phase 1 feat
 <img src="_img/org-backlog-features-add-child-ts.png" alt="Add a child item to a backlog work item" style="border: 1px solid #C3C3C3;" />  
 
 Whenever you see the plus ![plus icon](../_img/icons/green_plus_icon.png), you can add a child item. 
-The work item always corresponds to the hierarchy of work item types that are defined for your team project.   
+The work item always corresponds to the hierarchy of work item types that are defined for your project.   
 
-For Scrum team projects, your hierarchy is as shown: 
+For Scrum projects, your hierarchy is as shown: 
 
 ![Hierarchical view of backlogs](_img/ALM_OB_Scrum_WIT_Hier_C.png) 
 
 Because [teams can also set bugs as tasks](../customize/show-bugs-on-backlog.md), bugs can be added as children of PBIs. 
 
-The work item types you'll see depends on the [process you selected to create your team project](../work-items/guidance/choose-process.md). 
+The work item types you'll see depends on the [process you selected to create your project](../work-items/guidance/choose-process.md). 
 
 If you want bugs to show up on your backlog and you're not seeing them, [enable them for your team](../customize/show-bugs-on-backlog.md). 
 

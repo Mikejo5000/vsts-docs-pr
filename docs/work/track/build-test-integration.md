@@ -1,7 +1,7 @@
 ---
 title: Build and test integration queries
-titleSuffix: VSTS & TFS 
-description: Track work by creating queries based on build and test integration fields in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+titleSuffix: Azure Codex & TFS 
+description: Track work by creating queries based on build and test integration fields in Azure Code and Team Foundation Server (TFS)
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 6e162a82-c98b-4c94-862c-addcdcbc182d
@@ -14,7 +14,7 @@ ms.date: 04/14/2017
 
 # Query based on build and test integration fields
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 Build and test integration work item fields support the following actions:  
 -   Associate bugs with the builds where they were found or fixed  
@@ -108,7 +108,7 @@ To customize a field or pick list, see [Add or modify a field to support queries
 <td><p>Product build number, also known as a revision, in which a bug was found.</p>
 <p>Reference name=Microsoft.VSTS.Build.FoundIn, Data type=String</p>
 <blockquote>
-**Note:** You can also use the **Found in build** link type to link a work item to a build. This link type is available from VSTS and only work with the current build processes (not XAML builds).   
+**Note:** You can also use the **Found in build** link type to link a work item to a build. This link type is available from Azure Codex and only work with the current build processes (not XAML builds).   
 </blockquote>
 </td>
 <td>Bug</td>
@@ -119,7 +119,7 @@ To customize a field or pick list, see [Add or modify a field to support queries
 <td><p>Product build number that incorporates the code or fixes a bug.</p>
 <p>Reference name=Microsoft.VSTS.Build.IntegrationBuild, Data type=String</p>
 <blockquote>
-**Note:** You can also use the **Integrated in build** link type to link a work item to a build. This link type is available from VSTS and only work with the current build processes (not XAML builds).  
+**Note:** You can also use the **Integrated in build** link type to link a work item to a build. This link type is available from Azure Codex and only work with the current build processes (not XAML builds).  
 </blockquote>
 </td>
 <td>All</td>
@@ -181,8 +181,8 @@ Repro Steps (or Steps to reproduce)
 **Notes**  
 1.  Do not customize the pick list for these fields. The system accepts only those values listed.  
 2.  By adding a `GLOBALLIST` element to the `FIELD` definition, you can provide a drop-down menu of builds that users can choose from. To learn how, see [Fields that support integration with test, build, and version control](https://msdn.microsoft.com/en-us/library/ms194965.aspx).  
-3.  Requires TFS 2013.2 or TFS 2013.3 to be installed on the application-tier server and existing team projects to be updated to support Shared Parameters. To learn more, see Configure features after a TFS upgrade.  
-4.  Requires TFS 2013.3 to be installed on the application-tier server and existing team projects to be updated to support Test Plan and Test Suite.
+3.  Requires TFS 2013.2 or TFS 2013.3 to be installed on the application-tier server and existing projects to be updated to support Shared Parameters. To learn more, see Configure features after a TFS upgrade.  
+4.  Requires TFS 2013.3 to be installed on the application-tier server and existing projects to be updated to support Test Plan and Test Suite.
 
 ## Additional fields
 
@@ -262,7 +262,7 @@ The following fields do not appear on work item forms, but these fields are trac
 </table>
 
 **Notes**  
-1.  Requires TFS 2013.3 to be installed on the application-tier server and existing team projects to be updated to support Test Plan and Test Suite.  
+1.  Requires TFS 2013.3 to be installed on the application-tier server and existing projects to be updated to support Test Plan and Test Suite.  
 2.  Do not customize the pick list for these fields. The system accepts only those values listed.
 
 ## Related articles
@@ -280,5 +280,5 @@ Test Manager and the test work item types (WITs) use the following fields to tra
 |---|---|---|
 |<ul><li>Bug</li><li>Shared Steps</li><li>Test Case</li></ul>|<ul><li>Bug</li><li>Shared Parameters</li><li>Shared Steps</li><li>Test Case</li></ul>|<ul><li>Bug</li><li>Shared Parameters</li><li>Shared Steps</li><li>Test Case</li><li>Test Plan</li><li>Test Suite</li></ul>|
 
-To learn more about upgrading an existing team project to get WITs that your team project currently doesn't have, see [Configure features after an upgrade](../customize/configure-features-after-upgrade.md).
+To learn more about upgrading an existing project to get WITs that your project currently doesn't have, see [Configure features after an upgrade](../customize/configure-features-after-upgrade.md).
 

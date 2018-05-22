@@ -1,5 +1,5 @@
 ---
-title: TRANSITION XML element | VSTS & TFS
+title: TRANSITION XML element | Azure Codex & TFS
 description: Syntax and usage of the TRANSITION element used to specify a valid progression or regression from one state to another for a work item type
 ms.prod: devops
 ms.technology: devops-agile
@@ -46,7 +46,7 @@ To modify the workflow, you modify the definition for a work item type. See [Mod
 |`not`|`Transition` attribute.<br /><br /> Optional. The name of a user or group who is restricted from performing the transition.|  
   
 > [!NOTE]   
-> for and not rules are not natively supported in VSTS at this time.
+> for and not rules are not natively supported in Azure Codex at this time.
 
 ### Child elements  
   
@@ -106,7 +106,7 @@ To modify the workflow, you modify the definition for a work item type. See [Mod
 When you link a work item to a pull request (PR), you have the option to automatically complete those work items when you successfully complete the PR. 
 
 > [!NOTE]   
-> **Feature availability**: The **Complete linked work items after merging** option is available from VSTS only at this time. It will become available with the release of TFS 2018 RTW.
+> **Feature availability**: The **Complete linked work items after merging** option is available from Azure Codex only at this time. It will become available with the release of TFS 2018 RTW.
 
 To learn more, see [Workflow states & state categories](../workflow-and-state-categories.md).
 

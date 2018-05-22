@@ -1,6 +1,6 @@
 ---
 title: Drive Git or TFVC development from a work item
-titleSuffix: VSTS & TFS 
+titleSuffix: Azure Codex & TFS 
 description: Create a branch or pull request & automatically link work items with source control branches, builds, commits, or other code development actions  
 ms.technology: devops-agile
 ms.prod: devops
@@ -16,7 +16,7 @@ ms.date: 03/20/2018
 # Drive Git development from a work item   
 
 
-**VSTS | TFS 2018 | TFS 2017**
+**Azure Codex | TFS 2018 | TFS 2017**
 
 One of the ways your team can drive their development and stay in sync is to link your work items to the objects created during development, such as branches, commits, pull requests, and builds. You can begin that linking by creating a branch from one or more work items. Later, you can create pull requests, quickly open commits, and maintain a record of development operations performed to complete specific work.  
 
@@ -61,7 +61,7 @@ Consider creating a new branch when there are no linked code artifacts. If there
 	Branches you create are automatically linked to the work item.  
 
 	> [!NOTE]  
-	>You can only create a branch once you've added files to the main branch, which is always named ```master```. The system automatically adds a README file to the initial repo created with each new team project.   
+	>You can only create a branch once you've added files to the main branch, which is always named ```master```. The system automatically adds a README file to the initial repo created with each new project.   
 
 2. The system will open to the repository and branch that you just created. 
 

@@ -1,18 +1,22 @@
 ---
-title: Describes the services provided by Codex Agile
+title: What is Azure Codex Agile?
 titleSuffix: Azure Codex
-description: Understand the fundamental services provided by Codex Agile 
-ms.prod: vs-devops-alm  
-ms.technology: vs-devops-overview
-ms.assetid: 4 
+description: Understand the tools and services provided by Azure Codex Agile 
+ms.technology: devops-agile
+ms.prod: devops
+ms.assetid:   
 ms.manager: douge
 ms.author: kaelli
-ms.date: 06/22/2017
-ms.topic: get-started-article
+author: KathrynEE
+ms.topic: conceptual
+monikerRange: '>= tfs-2013'
+ms.date: 07/07/2018
 ---
 
 
-# What is Codex Agile?
+# What is Azure Codex Agile?
+
+**Azure Codex**
 
 Codex Agile is one of several cloud service applications provided in the Azure Codex suite of applications.
 

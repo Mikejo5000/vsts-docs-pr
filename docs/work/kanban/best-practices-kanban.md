@@ -1,7 +1,7 @@
 ---
 title: Kanban best practices
-titleSuffix: VSTS & TFS
-description: Best practices when implementing Kanban in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
+titleSuffix: Azure Codex & TFS
+description: Best practices when implementing Kanban in Azure Code and Team Foundation Server (TFS)  
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: F7E22503-8E8F-4AD0-9E0E-AFE9F24D72B5
@@ -14,7 +14,7 @@ ms.date: 10/20/2017
 
 # Kanban best practices
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 
 Having worked through the four configuration steps provided in [Kanban basics](../kanban/kanban-basics.md), you're well on your way to implementing most of Kanban's six core practices.

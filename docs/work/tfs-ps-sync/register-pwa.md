@@ -14,7 +14,7 @@ ms.date: 01/12/2017
 # Register an instance of PWA  to TFS
 [!INCLUDE [temp](../_shared/tfs-ps-sync-header.md)]
 
-<a name="Top"></a> Before you can synchronize data between Visual Studio Team Foundation Server 2013 and Microsoft Project Server, you must configure several points of integration between them. First, you must register the instance of Project Web Access or Project Web App (PWA) that supports an enterprise project plan with the application-tier server that hosts the team project collection that contains a team project. You can manage the registration of these instances of PWA by using the following options of the **TfsAdmin ProjectServer** command-line tool:  
+<a name="Top"></a> Before you can synchronize data between Visual Studio Team Foundation Server 2013 and Microsoft Project Server, you must configure several points of integration between them. First, you must register the instance of Project Web Access or Project Web App (PWA) that supports an enterprise project plan with the application-tier server that hosts the project collection that contains a project. You can manage the registration of these instances of PWA by using the following options of the **TfsAdmin ProjectServer** command-line tool:  
   
 -   **/RegisterPWA**: Registers an instance of PWA to Team Foundation Server.  
   
@@ -23,7 +23,7 @@ ms.date: 01/12/2017
   
 -   **/GetRegisteredPWA**: Lists the registered instances of PWA and the names of servers that are running Team Foundation Server to which the instances are registered.  
   
--   **/UnregisterPWA**: Removes the registered association between an instance of PWA and Team Foundation Server. When you move a team project collection or a deployment of Team Foundation Server, you can remove the registered instances of PWA and then re-register them after the move.  
+-   **/UnregisterPWA**: Removes the registered association between an instance of PWA and Team Foundation Server. When you move a project collection or a deployment of Team Foundation Server, you can remove the registered instances of PWA and then re-register them after the move.  
   
  For more information about the configuration and integration of Project Server and Team Foundation Server, see [Configure TFS-Project Server integration](configure-tfs-project-server-integration.md).  
   
@@ -81,7 +81,7 @@ Registering PWA http:// PWAServerName/PWAInstance/
 You have successfully registered PWA http://PWAServerName/PWAInstance/  
 ```  
   
- You can register an instance of PWA with only one application-tier server for Team Foundation. You must register an instance before you can associate it with a team project collection. When you register an instance, the location service for Team Foundation Server is updated with that information. In addition, the instance of PWA is updated with the custom fields and lookup tables that integration requires.  
+ You can register an instance of PWA with only one application-tier server for Team Foundation. You must register an instance before you can associate it with a project collection. When you register an instance, the location service for Team Foundation Server is updated with that information. In addition, the instance of PWA is updated with the custom fields and lookup tables that integration requires.  
   
  When you run a registration command, the following operations occur:  
   

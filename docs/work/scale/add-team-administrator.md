@@ -1,6 +1,6 @@
 ---
 title: Add a team administrator 
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Codex & TFS
 description: Add a user account to the team administrator role in Visual Studio Team Services & Team Foundation Server   
 ms.technology: devops-agile
 ms.prod: devops
@@ -13,7 +13,7 @@ ms.date: 10/17/2017
 
 # Add a team administrator 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 
 <a id="add-team-admin">  </a>  
@@ -27,10 +27,10 @@ As a team administrator, you can configure, customize, and manage all team-relat
 ## Prerequisites
 
 ::: moniker range="vsts"
-* You must be a member of a team project. If you don't have a team project yet, create one in [VSTS](../../accounts/set-up-vs.md). If you haven't been added as a team member, [get added now](../../accounts/add-account-users-assign-access-levels.md). 
+* You must be a member of a project. If you don't have a project yet, create one in [Azure Codex](../../accounts/set-up-vs.md). If you haven't been added as a team member, [get added now](../../accounts/add-account-users-assign-access-levels.md). 
 ::: moniker-end
 ::: moniker range=">= tfs-2013 <= tfs-2018"
-* You must be a member of a team project. If you don't have a team project yet, create one in an [on-premises TFS](../../accounts/create-team-project.md). If you haven't been added as a team member, [get added now](../../security/add-users-team-project.md). 
+* You must be a member of a project. If you don't have a project yet, create one in an [on-premises TFS](../../accounts/create-team-project.md). If you haven't been added as a team member, [get added now](../../security/add-users-team-project.md). 
 ::: moniker-end
 * To get added as a team administrator, ask another team admin, the account owner, or a member of the [Project Administrators group](../../security/set-project-collection-level-permissions.md) to add you.  
 
@@ -46,17 +46,17 @@ From the web portal, open the admin page for the team.
 0. From the web portal and team context, click the ![](../_img/icons/gear_icon.png) gear icon to open the administration page.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Web portal, VSTS, Open Admin context, team project level](_img/open-admin-context-ts.png)
+	> ![Web portal, Azure Codex, Open Admin context, project level](_img/open-admin-context-ts.png)
 
-	If you click the ![](../_img/icons/gear_icon.png) gear icon from the team project context, then click **Overview**, and select the team you want to add an administrator to.   
+	If you click the ![](../_img/icons/gear_icon.png) gear icon from the project context, then click **Overview**, and select the team you want to add an administrator to.   
 
 0. Choose the **Add** link to open the dialog for adding user identities.    
      
-	<img src="_img/add-team-admin-link.png" alt="Web portal, VSTS & TFS 2017, Open  team administrator context" style="border: 2px solid #C3C3C3;" />    
+	<img src="_img/add-team-admin-link.png" alt="Web portal, Azure Codex & TFS 2017, Open  team administrator context" style="border: 2px solid #C3C3C3;" />    
    
 0. Enter the identities you want to add to the team administrator role.     
 	    
-	<img src="_img/add-admin-dialog.png" alt="VSTS, TFS 2017, Add team administrator dialog" style="border: 1px solid #C3C3C3;" />        
+	<img src="_img/add-admin-dialog.png" alt="Azure Codex, TFS 2017, Add team administrator dialog" style="border: 1px solid #C3C3C3;" />        
    
 ::: moniker-end     
 
@@ -66,9 +66,9 @@ From the web portal, open the admin page for the team.
 0. From the web portal and team context, click the ![](../_img/icons/gear_icon.png) gear icon to open the administration page.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Web portal, TFS, Open Admin context, team project level](_img/open-admin-context-tfs.png)
+	> ![Web portal, TFS, Open Admin context, project level](_img/open-admin-context-tfs.png)
 
-	If you click the ![](../_img/icons/gear_icon.png) gear icon from the team project context, then click **Overview**, and select the team you want to add an administrator to.   
+	If you click the ![](../_img/icons/gear_icon.png) gear icon from the project context, then click **Overview**, and select the team you want to add an administrator to.   
 
 0. Choose the **Add** link to open the dialog for adding user identities.    
   

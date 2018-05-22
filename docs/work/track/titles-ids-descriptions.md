@@ -1,6 +1,6 @@
 ---
 title: Query by title, ID, or rich-text fields 
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Codex & TFS
 description: Example work queries based on titles, IDs, rich-text fields in Visual Studio Team Services & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
@@ -12,7 +12,7 @@ ms.date: 03/20/2018
 ---
 
 # Query by titles, IDs, and rich-text fields
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 When you want to find work items based on a keyword or phrase, you can do so by entering the [keyword or phrase within the search box](search-box-queries.md#keywords). This initiates a new query which you can modify as needed to further refine your filter criteria, as described in this topic. 
 
@@ -41,7 +41,7 @@ To list work items based on a field that isn't blank, use the not operator (<>) 
 <a id="category"/>
 ## List items based on categories
 
-To filter work items based on the category they belong to, use the **In Group** operator. For example, the following filter criteria will return all work items that are in the current team project, assigned to the team member, and defined as belonging to the Bug Category.
+To filter work items based on the category they belong to, use the **In Group** operator. For example, the following filter criteria will return all work items that are in the current project, assigned to the team member, and defined as belonging to the Bug Category.
 
 ![Query clause to find work items by category](_img/example-work-item-queries/IC720125.png)
 
@@ -96,7 +96,7 @@ Description <sup>1, 2</sup>
 ID
 </td>
 <td>
-The unique identifier that is assigned to a work item. Work item IDs are unique across all team projects and within a team project collection.  
+The unique identifier that is assigned to a work item. Work item IDs are unique across all projects and within a project collection.  
 	<p>Reference name=System.Id, Data type=Integer</p>
 </td>
 <td>All</td>
@@ -141,8 +141,8 @@ System Info<sup>1</sup>
 Team Project
 </td>
 <td>
-<p>The team project to which a work item belongs. Add this field to a query when you want to filter your list to items in one or more team projects. </p>
-<blockquote>**Note:**&#160;&#160;For VSTS or for TFS 2015.1 and later versions, you must check the Query across projects option in the query editor for this field to appear in the drop down field list. To learn more, see [Example queries, query across team projects](using-queries.md#across-projects). </blockquote>
+<p>The project to which a work item belongs. Add this field to a query when you want to filter your list to items in one or more projects. </p>
+<blockquote>**Note:**&#160;&#160;For Azure Codex or for TFS 2015.1 and later versions, you must check the Query across projects option in the query editor for this field to appear in the drop down field list. To learn more, see [Example queries, query across projects](using-queries.md#across-projects). </blockquote>
  
 	<p>Reference name=System.TeamProject, Data type=String</p>
 </td>
@@ -165,7 +165,7 @@ Title
 Work Item Type
   </td>
   <td>
-    <p>The name of the work item type. Work item types are defined based on the process used when you created your team project. For an overview, see [Choose process](../work-items/guidance/choose-process.md). To learn how to add a custom work item type, see [Add or modify a work item type](../customize/add-modify-wit.md). </p>
+    <p>The name of the work item type. Work item types are defined based on the process used when you created your project. For an overview, see [Choose process](../work-items/guidance/choose-process.md). To learn how to add a custom work item type, see [Add or modify a work item type](../customize/add-modify-wit.md). </p>
 <p>To filter work items based on their [category assignment](#category), you can use the **In Group** and **Not In Group** operators and select a category from the drop-down list.   
 	<p>Reference name=System.WorkItemType, Data type=String</p>
   </td>

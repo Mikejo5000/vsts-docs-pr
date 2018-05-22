@@ -1,3 +1,3 @@
 
 [!NOTE]  
-<b>Feature availability: </b>This feature is currently available only from VSTS.  
+<b>Feature availability: </b>This feature is currently available only from Azure Codex.  

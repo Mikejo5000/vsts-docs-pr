@@ -1,7 +1,7 @@
 ---
 title: Resolve validation errors
-titleSuffix: VSTS  
-description: Fix errors reported upon importing a process to support customization of tracking work in VSTS.  
+titleSuffix: Azure Codex  
+description: Fix errors reported upon importing a process to support customization of tracking work in Azure Codex.  
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 2407FB2B-FAE6-4BBB-99CB-B88904293A43  
@@ -13,10 +13,10 @@ ms.date: 03/20/2018
 
 # Resolve validation errors for process import
 
-<b>VSTS (Hosted XML)</b>  
+<b>Azure Codex (Hosted XML)</b>  
 
 > [!IMPORTANT]  
->**Feature availability:**&#160;&#160;Import process supports the Hosted XML process model which allows you to manage customizations through updating the WIT definition of a process template. This feature is only available for accounts that have been migrated to VSTSusing the [TFS Data Import Service](https://aka.ms/TFSDataImport). [Contact us](mailto:vsocustpt@microsoft.com) if you have any questions about VSTS process customization. 
+>**Feature availability:**&#160;&#160;Import process supports the Hosted XML process model which allows you to manage customizations through updating the WIT definition of a process template. This feature is only available for accounts that have been migrated to Azure Codexusing the [TFS Data Import Service](https://aka.ms/TFSDataImport). [Contact us](mailto:vsocustpt@microsoft.com) if you have any questions about Azure Codex process customization. 
 >
 >If you use the Inheritance process model, you can customize your work tracking through the user interface by [creating an inherited process](../../../settings/work/manage-process.md). If you use the On-premises XML process model, you can customize a process template, see [Upload or download a process template](../../work-items/guidance/manage-process-templates.md) and [Customize a process template](../reference/process-templates/customize-process.md).
 >
@@ -81,7 +81,7 @@ The system displays an information message about the deletion.
 ### TF402601: Work item type *[witName]* will be renamed to *[name1]* from *[name2]*.
 The process contains a renamed WIT. The WIT will be renamed in the existing process.  
 The process that you're updating contains a WIT that's been renamed from the name in the current process.  
-As part of updating the existing process, the system will rename the WIT in the current process. All work items in existing team projects that reference the process are also renamed.
+As part of updating the existing process, the system will rename the WIT in the current process. All work items in existing projects that reference the process are also renamed.
 
 #### Scenario example
 1. [Create](../customize-wit-form.md) new work item type called "LSI"  
@@ -136,7 +136,7 @@ Correct the schema error in the named file.
 ## Process template plug-in errors
 The ProcessTemplate.xml is the root file that defines the entire process and all XML definition files that 
 will be imported to add or update a process. This file contains all of the plug-ins and task groups that are referenced 
-when creating a team project. Each task group references a subordinate XML file (often in a subfolder) where 
+when creating a project. Each task group references a subordinate XML file (often in a subfolder) where 
 the specific tasks are defined. In general, you specify one task group for each plug-in.
 
 The ProcessTemplate.xml definition file must conform to the syntax and rules described in [ProcessTemplate XML element reference](../reference/process-templates/process-template-xml-elements-reference.md).   
@@ -300,7 +300,7 @@ The WorkItems.xml file has been updated to contain the correct configuration ```
 
 <a id="TF402577"></a>  
 ### TF402577: Field *[refName]* specifies friendly name *[friendlyName]*  which is already in use by  fields *[refName]* in processes *[processNames]*.  
-Friendly names must be unique across all field definitions for all WIT definitions specified for all processes imported to VSTS.
+Friendly names must be unique across all field definitions for all WIT definitions specified for all processes imported to Azure Codex.
 
 The named processes contain WITs that define a field that uses the friendly name. 
 
@@ -1030,7 +1030,7 @@ You've defined more WITs that are allowed in the process. Review your WorkItems.
 ### TF402573: Work item type WIT doesn't specify required ```refname``` attribute.  
 
 Work item types (Bug, User Story, Task, etc.) require the ```refname``` attribute. The refname value must be unique and cannot contain any reserved namespaces.
-The namespaces-System.*XXX* and Microsoft.VSTS.*XXX*-are reserved by VSTS. 
+The namespaces-System.*XXX* and Microsoft.VSTS.*XXX*-are reserved by Azure Codex. 
 
 See [All WITD XML elements reference](../reference/all-witd-xml-elements-reference.md) for more information.
 
@@ -1081,7 +1081,7 @@ Edit the ```refname``` attribute of the named WIT to meet naming requirements..
 ### TF402538: Field rule *[ruleName]* isn't supported.  
 
 Edit your WIT definitions to remove the named rule. 
-The following rules are **not** supported for import to VSTS: 
+The following rules are **not** supported for import to Azure Codex: 
 ```MATCH```, ```CANNOTLOSEVALUE```, ```PROHIBITED VALUES```, and ```NOTSAMEAS```.
 
 <a id="TF402539"></a>
@@ -1102,7 +1102,7 @@ Most system fields do not allow specifying rules.
 <a id="TF402540"></a>
 ### TF402540: Work item type *[witName]* isn't valid because it specifies global list *[GLOBALLIST]*. Global lists aren't supported.
 
-Global lists are not supported in VSTS. 
+Global lists are not supported in Azure Codex. 
 Replace all instances of ```GLOBALLIST``` elements with 
 ```ALLOWEDVALUES``` and ```LISTITEM``` elements in all WIT definition files.
 Reference:  [Define pick lists](../reference/define-pick-lists.md).
@@ -1132,7 +1132,7 @@ Reference:  [Define pick lists](../reference/define-pick-lists.md).
 <a id="TF402541"></a>
 ### TF402541: Work item type *[witName]* isn't valid because it references global list *[globalListName]*. Global lists aren't supported.
 
-Global lists are not supported in VSTS. Replace all instances of ```GLOBALLIST``` elements with 
+Global lists are not supported in Azure Codex. Replace all instances of ```GLOBALLIST``` elements with 
 ```ALLOWEDVALUES``` and ```LISTITEM``` elements in all WIT definition files.
 Reference: [Define pick lists](../reference/define-pick-lists.md).
 
@@ -1160,7 +1160,7 @@ Reference: [Define pick lists](../reference/define-pick-lists.md).
 <a id="TF402542"></a>
 ### TF402542: The custom field refname *[refName]* isn't valid as it uses disallowed namespace *[namespace]*.
 
-The namespaces-System.*XXX* and Microsoft.VSTS.*XXX*-are reserved in VSTS. 
+The namespaces-System.*XXX* and Microsoft.VSTS.*XXX*-are reserved in Azure Codex. 
 Reference names of custom fields and types can't use these namespaces.   
 
 To fix this error, simply rename the ```refname``` attribute for the named field in the WIT definition files where it appears. 
@@ -1333,7 +1333,7 @@ UserStory.xml
 
 <a id="TF402558"></a>
 ### TF402558: The definition of field *[refName]* is inconsistent with the existing definition of the field in the following templates: *[templateNames]*.
-Fields must be defined consistently across processes that have been or that you plan to import to VSTS. 
+Fields must be defined consistently across processes that have been or that you plan to import to Azure Codex. 
 The system will not allow you to import a process that contains a ```FIELD``` element which is defined 
 one way in Process A and another way in Process B.  All ```FIELD``` element attributes must match.
 
@@ -1360,7 +1360,7 @@ Notice how different values are specified for ```name``` and ```type``` attribut
 
 ### Resolution
 Ensure that fields of the same ```refname``` are defined the same across all processes that  
-have been imported or that you plan to import to VSTS.
+have been imported or that you plan to import to Azure Codex.
 
 <a id="TF402559"></a>
 ### TF402559: The definition for field *[refName]* is inconsistent with an existing field. The ```type``` is *[typeName]* but should be *[typeName]*.
@@ -1421,7 +1421,7 @@ notice the bug and user story ```refname``` values are different
 
 <a id="TF402584"></a>
 ### TF402584: Field rule attributes "for" or "not" aren't supported.
-The ```"for"``` and ```"not"``` attributes are not supported at all for any field rule for import to VSTS.  
+The ```"for"``` and ```"not"``` attributes are not supported at all for any field rule for import to Azure Codex.  
 Review the ```FIELDS``` and ```WORKFLOW``` sections for the presence of ```"for"``` and ```"not"``` attributes and remove them. 
 #### Error example
 ```
@@ -1440,7 +1440,7 @@ Review the ```FIELDS``` and ```WORKFLOW``` sections for the presence of ```"for"
 <a id="TF402593"></a>
 ### TF402593: Field rules aren't supported for field *[fieldName]*.
 
-Most System and Microsoft.VSTS fields do not support rules. 
+Most System and Microsoft.Azure Codex fields do not support rules. 
 See [Customize a process](customize-process.md#required-fields) 
 for complete list of supported field rules.
 
@@ -1449,7 +1449,7 @@ Edit the WIT definition files that contain the named field and remove the field 
 <a id="TF402602"></a>
 ### TF402602: The field *[refName]* must have exactly these values *[values]*.
 
-All fields defined by VSTS in the reserved namespaces-System.*XXX* and Microsoft.VSTS.*XXX*-must not be altered.  If you wish to have a different list of values in these pick list fields, define your own custom field.
+All fields defined by Azure Codex in the reserved namespaces-System.*XXX* and Microsoft.VSTS.*XXX*-must not be altered.  If you wish to have a different list of values in these pick list fields, define your own custom field.
 
 #### Error example
 Bug.xml has the priority field defined, but has a different list of values than expected.
@@ -1624,7 +1624,7 @@ Process B, Bug.xml
 ```
 Because both fields share the same reference name, ```refname="MyCompany.CustomFields.Foo" ```, 
 they must also specify the same friendly name ``` <FIELD name="Foo"  ``` across all processes 
-that have been imported or will be imported to VSTS. 
+that have been imported or will be imported to Azure Codex. 
 
 <a id="TF402580"></a>
 ### TF402580: You can only use the name *[witName]* for a single work item type.
@@ -1681,7 +1681,7 @@ UserStory.xml
 
 <a id="TF402582"></a>
 ### TF402582: Work item type *[witName]* contains custom control *[controlName]* which is not supported.  
-Custom controls are not supported in VSTS. Review the ```FORM``` section for the named WIT and remove any custom controls that are defined. 
+Custom controls are not supported in Azure Codex. Review the ```FORM``` section for the named WIT and remove any custom controls that are defined. 
 
 #### Error example 
 ```Type="OneViewMultiValueControl"``` specifies a custom control. This must be removed or replaced to a supported control.    
