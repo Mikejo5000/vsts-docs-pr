@@ -46,7 +46,7 @@ See [Default manual testing permissions and access](../manual-test-permissions.m
 
    ![In test plan explorer, open the New (+) list, then click Test plan](_img/create-a-test-plan/CreateATestPlan1a.png)
 
-1. Name the test plan. Check the area path and iteration. Then choose **Create*.
+1. Name the test plan. Check the area path and iteration. Then choose **Create**.
 
    ![Add test plan details, then click Create](_img/create-a-test-plan/CreateATestPlan2.png) 
 
