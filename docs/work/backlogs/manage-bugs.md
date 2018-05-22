@@ -1,6 +1,6 @@
 ---
 title: Create & manage bugs using Agile tools
-titleSuffix: VSTS & TFS 
+titleSuffix: Azure Codex & TFS 
 ms.global_help.title: Manage bugs
 ms.global_help.keywords: ms.vss-work-web.work-items-hub, 5
 description: Manage technical debt and triage bugs using Agile tools in Visual Studio Team Services & Team Foundation Server
@@ -17,7 +17,7 @@ ms.date: 03/20/2018
 # Manage bugs
 
 
-**VSTS | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013**
+**Azure Codex | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013**
 
 How do you track and manage defects in your code? How do you make sure software problems and customer feedback get addressed in a timely manner to support high-quality software deployments? And, how do you do this while making good progress on new features? 
 
@@ -33,7 +33,7 @@ In a nutshell, you manage bugs through the following tasks:
 
 
 > [!NOTE]  
->Depending on the process chosen to create your team project&mdash;[Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md)&mdash;
+>Depending on the process chosen to create your project&mdash;[Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md)&mdash;
 the items in your backlog may be called product backlog items (PBIs), user stories, or requirements. All three are similar: they describe the customer value to be delivered and the work to be performed.   
 >
 >By default, product backlog items (PBIs) and bugs appear on Scrum backlogs, user stories on Agile backlogs, and requirements on CMMI backlogs. Each team can choose how [bugs show up on their backlogs and boards](../customize/show-bugs-on-backlog.md). 
@@ -52,10 +52,10 @@ The bug work item form tracks similar information to the one shown for the Scrum
 [!INCLUDE [temp](../_shared/image-differences-with-wits.md)] 
 
 # [New web form](#tab/new-web-form)
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 The new web form provides a number of experiences not provided with the old web form. To learn more, see [New work item experience](../customize/process/new-work-item-experience.md). 
 
-<img src="_img/manage-bugs-scrum-bug-from-ts.png" alt="Scrum bug work item form, VSTS" style="border: 2px solid #C3C3C3;" />
+<img src="_img/manage-bugs-scrum-bug-from-ts.png" alt="Scrum bug work item form, Azure Codex" style="border: 2px solid #C3C3C3;" />
 
 > [!TIP]
 > Use the [Discussion section](../work-items/work-item-form-controls.md#discussion) to add and review comments made about the work being performed to resolve the bug. 
@@ -66,7 +66,7 @@ The new web form is only available from TFS 2017 and later versions.
 ::: moniker-end
 # [Old web form](#tab/old-web-form)
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 The old web form is only availble for TFS 2017 and earlier versions. 
 ::: moniker-end
 ::: moniker range=">= tfs-2013 <= tfs-2017"
@@ -124,7 +124,7 @@ When defining a bug, use these fields to capture both the initial issue and ongo
 <td>
 <p>When Test Manager creates bugs, it automatically populates **System Info** and **Found in Build** with information about the software environment and build where the bug occurred. To learn more about defining the software environments, see [Test different configurations](../../manual-test/test-different-configurations.md).</p>
 <p>When you resolve the bug, use **Integrated in Build** to indicate the name of the build that incorporates the code that fixes the bug. </p>
-<p>For information about how to define build names, see [build number format options](../../build-release/concepts/definitions/build/options.md). </p>
+<p>For information about how to define build names, see [build number format options](../../pipelines/concepts/definitions/build/options.md). </p>
 </td>
 </tr>
 ::: moniker-end 
@@ -138,7 +138,7 @@ When defining a bug, use these fields to capture both the initial issue and ongo
 <p>When Test Manager creates bugs, it automatically populates **System Info** and **Found in Build** with information about the software environment and build where the bug occurred. To learn more about defining the software environments, see [Test different configurations](../../manual-test/test-different-configurations.md).</p>
 <p>When you resolve the bug, use **Integrated in Build** to indicate the name of the build that incorporates the code that fixes the bug. </p>
 <p>To access a drop-down menu of all builds that have been run, you can update the ```FIELD``` definitions for Found in Build and Integrated in Build to reference a global list. The global list is automatically updated with each build that is run. To learn more, see [Query based on build and test integration fields](../track/build-test-integration.md).</p>
-<p>For information about how to define build names, see [build number format options](../../build-release/concepts/definitions/build/options.md). </p>
+<p>For information about how to define build names, see [build number format options](../../pipelines/concepts/definitions/build/options.md). </p>
 </td>
 </tr>
 ::: moniker-end 
@@ -188,7 +188,7 @@ A subjective rating of the impact of a bug on the project or software system. Fo
 </tbody>
 </table>  
  
-<sup>1</sup> To change the menu selection or pick list, see [Customize the work tracking experience](../customize/customize-work.md). The customization method depends on the process model used by your team project. 
+<sup>1</sup> To change the menu selection or pick list, see [Customize the work tracking experience](../customize/customize-work.md). The customization method depends on the process model used by your project. 
 
 For information about fields specific to the CMMI process, see [Bugs, issues, and risks field reference](../work-items/guidance/cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md). For information about all other fields, see [Work item field index](../work-items/guidance/work-item-field.md). 
 
@@ -240,7 +240,7 @@ Your team should consider fixing all bugs found during a sprint when testing a f
 
 
 > [!TIP]
->From VSTS and TFS 2015.1 and later versions, you can 
+>From Azure Codex and TFS 2015.1 and later versions, you can 
 >[drag-and-drop work items onto a sprint from any backlog or board](../scrum/define-sprints.md#drag-drop-to-sprint).   
 
 
@@ -270,7 +270,7 @@ To verify a fix, a developer or tester should attempt to reproduce the bug and l
 
 When verifying a bug resolution, you may find that the bug was not completely fixed or you may disagree with the resolution. In this case, discuss the bug with the person who resolved it, come to an agreement, and possibly reactivate the bug. If you reactivate a bug, include the reasons for reactivating the bug in the bug description.
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 
 <a id="verify-bug">  </a>
 ###Verify a bug, re-run tests defined for web apps 
@@ -281,7 +281,7 @@ Choose the **Verify** option to re-run tests which identified the bug. (Requires
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 Choose the **Verify** option to re-run tests which identified the bug. (Requires TFS 2017.1 or later version.) You can invoke the Verify option from the bug work item form context menu to launch the relevant test case in the web runner. Perform your validation using the web runner and update the bug work item directly within the web runner.
 ::: moniker-end
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 <img src="../_shared/_img/verify-bug-menu-option.png" alt="Bug work item form, Actions menu, Verify option" style="border: 1px solid #C3C3C3;" />  
  
 To learn more about running test from the web portal, see [Run tests for web apps](../../manual-test/getting-started/run-manual-tests.md).
@@ -342,7 +342,7 @@ To track your bugs and integrate with other resources available to you, see thes
 ::: moniker range="vsts"
 
 ### Use the Analytics service to create bug reports
-You can use Power BI to create more complex reports than what you can get from a query. To learn more, see [Connect to VSTS with Power BI Data Connector](../../report/powerbi/data-connector-connect.md). 
+You can use Power BI to create more complex reports than what you can get from a query. To learn more, see [Connect to Azure Codex with Power BI Data Connector](../../report/powerbi/data-connector-connect.md). 
 
 ::: moniker-end
 
@@ -353,13 +353,13 @@ You can use Power BI to create more complex reports than what you can get from a
 
 ### Pre-defined SQL Server bug reports
 
-If you work from an on-premises TFS and you have SQL Server Analysis Services and SQL Server Reporting Services configured for your team project, you have access to the following reports (Agile and CMMI processes only).  
+If you work from an on-premises TFS and you have SQL Server Analysis Services and SQL Server Reporting Services configured for your project, you have access to the following reports (Agile and CMMI processes only).  
 
 - [Bug Status](../../report/sql-reports/bug-status-report.md)  
 - [Bug Trends](../../report/sql-reports/bug-trends-report.md)  
 - [Reactivations](../../report/sql-reports/reactivations-report.md)  
 
-To learn how to add SQL Server reports for a team project, see [Add reports to a team project](../../report/admin/add-reports-to-a-team-project.md).  
+To learn how to add SQL Server reports for a project, see [Add reports to a project](../../report/admin/add-reports-to-a-team-project.md).  
 
 ::: moniker-end
 

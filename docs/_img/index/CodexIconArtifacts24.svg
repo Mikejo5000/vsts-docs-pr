@@ -1,0 +1,89 @@
+<svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Canvas" fill="none">
+<g id="CodexIconArtifacts24" clip-path="url(#clip0)">
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+<g id="Union">
+<path d="M 4 1C 4 0.447266 4.44771 0 5 0L 19 0C 19.5523 0 20 0.447266 20 1L 20 12L 23 12C 23.5523 12 24 12.4473 24 13L 24 23C 24 23.5527 23.5523 24 23 24L 1 24C 0.447708 24 0 23.5527 0 23L 0 13C 0 12.4473 0.447708 12 1 12L 4 12L 4 1Z" fill="white"/>
+</g>
+</mask>
+<g mask="url(#mask0)">
+<g id="Group">
+<g id="Rectangle 2.1">
+<path d="M 0 1C 0 0.447715 0.447715 0 1 0L 11 0C 11.5523 0 12 0.447715 12 1L 12 11C 12 11.5523 11.5523 12 11 12L 1 12C 0.447715 12 0 11.5523 0 11L 0 1Z" transform="translate(0 12)" fill="#B21756"/>
+</g>
+<g id="Rectangle 2.4">
+<path d="M 0 0L 2.2 0C 2.75228 0 3.2 0.447715 3.2 1L 3.2 10.5C 3.2 11.0523 2.75228 11.5 2.2 11.5L 0 11.5L 0 0Z" transform="translate(8.8 12)" fill="#A61550"/>
+</g>
+<g id="Rectangle">
+<rect width="4" height="2" rx="1" transform="translate(4 14)" fill="#8D0A3F"/>
+</g>
+</g>
+<g id="Rectangle 2.3" filter="url(#filter0_f)">
+<path d="M 0 1C 0 0.447715 0.447715 0 1 0L 15 0C 15.5523 0 16 0.447715 16 1L 16 12L 0 12L 0 1Z" transform="translate(4 0)" fill="#880037"/>
+</g>
+<g id="Group 3">
+<g id="Rectangle 2.4_2">
+<path d="M 0 1C 0 0.447715 0.447715 0 1 0L 15 0C 15.5523 0 16 0.447715 16 1L 16 12L 0 12L 0 1Z" transform="translate(4 0)" fill="#CB2E6D"/>
+</g>
+<g id="Rectangle_2">
+<rect width="4" height="2" rx="1" transform="translate(8 2)" fill="#B01C57"/>
+</g>
+<g id="Rectangle 2">
+<path d="M 0 0L 3 0C 3.55228 0 4 0.447715 4 1L 4 12L 0 12L 0 0Z" transform="translate(16 0)" fill="#BD2461"/>
+</g>
+</g>
+<g id="Rectangle 2_2" opacity="0.5" filter="url(#filter1_f)">
+<path d="M 0 0L 15 0C 15.5523 0 16 0.447715 16 1L 16 11C 16 11.5523 15.5523 12 15 12L 1 12C 0.447715 12 0 11.5523 0 11L 0 0Z" transform="translate(8 12)" fill="#6E002D"/>
+</g>
+<g id="Group 2">
+<g id="Rectangle 2.4_3">
+<path d="M 0 0L 15 0C 15.5523 0 16 0.447715 16 1L 16 11C 16 11.5523 15.5523 12 15 12L 1 12C 0.447715 12 0 11.5523 0 11L 0 0Z" transform="translate(8 12)" fill="#EF74A6"/>
+</g>
+<g id="Intersect" opacity="0.25">
+<path d="M 1.14286 12L 8 12L 8 0L 0 0L 0 10.9565C 0 11.5328 0.511675 12 1.14286 12Z" transform="translate(8 12)" fill="url(#paint0_linear)"/>
+</g>
+<g id="Rectangle_3">
+<rect width="4" height="2" rx="1" transform="translate(12 14)" fill="#C82F6D"/>
+</g>
+<g id="Rectangle 2.3_2">
+<path d="M 0 0L 3 0C 3.55228 0 4 0.447715 4 1L 4 11C 4 11.5523 3.55228 12 3 12L 0 12L 0 0Z" transform="translate(20 12)" fill="#E66398"/>
+</g>
+</g>
+<g id="Union_2">
+<path d="M 6 0L 0 0L 0 1L 6 1L 6 0Z" transform="translate(10 19)" fill="#FC92BE"/>
+<path d="M 3.5 2L 0 2L 0 3L 3.5 3L 3.5 2Z" transform="translate(10 19)" fill="#FC92BE"/>
+</g>
+<g id="Union_3" opacity="0.2">
+<path d="M 4 1C 4 0.447266 4.44771 0 5 0L 19 0C 19.5523 0 20 0.447266 20 1L 20 12L 23 12C 23.5523 12 24 12.4473 24 13L 24 23C 24 23.5527 23.5523 24 23 24L 1 24C 0.447708 24 0 23.5527 0 23L 0 13C 0 12.4473 0.447708 12 1 12L 4 12L 4 1Z" fill="url(#paint1_linear)"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_f" x="2" y="-2" width="20" height="16" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="1" result="effect1_foregroundBlur"/>
+</filter>
+<filter id="filter1_f" x="6" y="10" width="20" height="16" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="1" result="effect1_foregroundBlur"/>
+</filter>
+
+<linearGradient id="paint0_linear" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0 12 -8 0 8 0)">
+<stop stop-color="#CB2E6D"/>
+<stop offset="1" stop-color="#CB2E6D" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="paint1_linear" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0 24 -24 0 24 0)">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</linearGradient>
+
+<clipPath id="clip0">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+
+</defs>
+</svg>
+

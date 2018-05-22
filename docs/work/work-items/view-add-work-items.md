@@ -1,6 +1,6 @@
 ---
 title: View & add work items from the Work Items page
-titleSuffix: VSTS  
+titleSuffix: Azure Codex  
 description: Use the Work Items page to view and add work items that support 7 personalized pivot views       
 ms.global_help.title: View & add work items
 ms.global_help.keywords: ms.vss-work-web.work-items-hub, 1 
@@ -19,21 +19,21 @@ ms.date: 03/20/2018
 
 # View and add work items using the Work Items page  
 
-**VSTS | TFS 2018.2**  
+**Azure Codex | TFS 2018.2**  
 
-View work items that you created or are assigned to you.  The **Work>Work Items** page provides several personalized pivots and filter functions to streamline listing work items. Use this page to quickly find work items defined across teams within a team project. You can enable it from the [Preview features menu](../../collaborate/preview-features.md) that you access from your account profile.
+View work items that you created or are assigned to you.  The **Work>Work Items** page provides several personalized pivots and filter functions to streamline listing work items. Use this page to quickly find work items defined across teams within a project. You can enable it from the [Preview features menu](../../collaborate/preview-features.md) that you access from your account profile.
 
 > [!NOTE]     
-> **Feature availability:** The **Work Items** page is in preview and currently available from VSTS only.
+> **Feature availability:** The **Work Items** page is in preview and currently available from Azure Codex only.
 
 ## Prerequisites 
 
-- You must connect to a team project. If you don't have an account or team project yet, create one in [VSTS](../../user-guide/sign-up-invite-teammates.md). You can then [connect to a team project from your web portal or Visual Studio](../../user-guide/connect-team-projects.md).
-- To view or add work items, you must be a member of the Contributors group or be granted [Stakeholder access](../../security/get-started-stakeholder.md). If you don't have access to the team project, ask the [account owner or project administrator](../../security/lookup-account-owner-admin.md) to add you.
+- You must connect to a project. If you don't have an account or project yet, create one in [Azure Codex](../../user-guide/sign-up-invite-teammates.md). You can then [connect to a project from your web portal or Visual Studio](../../user-guide/connect-team-projects.md).
+- To view or add work items, you must be a member of the Contributors group or be granted [Stakeholder access](../../security/get-started-stakeholder.md). If you don't have access to the project, ask the [account owner or project administrator](../../security/lookup-account-owner-admin.md) to add you.
  
 
 ## Open the Work Items page
-You can start viewing and adding work items once you connect to a team project. 
+You can start viewing and adding work items once you connect to a project. 
 
 <a id="browser" /> 
 
@@ -43,13 +43,13 @@ Open a browser window, click the **Work** hub, and then the **Work Items** page.
 ![Work hub, Work Items page ](_img/view-add/work-items-hub.png)
 
 > [!NOTE]    
->Depending on the process chosen when the team project was created&mdash;[Agile](guidance/agile-process-workflow.md), [Scrum](guidance/scrum-process-workflow.md), or [CMMI](guidance/cmmi-process-workflow.md)&mdash;the types of work items you can create will differ. For example, backlog items may be called product backlog items (Scrum), user stories (Agile), or requirements (CMMI). All three are similar: they describe the customer value to deliver and the work to be performed.
+>Depending on the process chosen when the project was created&mdash;[Agile](guidance/agile-process-workflow.md), [Scrum](guidance/scrum-process-workflow.md), or [CMMI](guidance/cmmi-process-workflow.md)&mdash;the types of work items you can create will differ. For example, backlog items may be called product backlog items (Scrum), user stories (Agile), or requirements (CMMI). All three are similar: they describe the customer value to deliver and the work to be performed.
 >
 > For an overview of all three processes, see [Choose a process](../work-items/guidance/choose-process.md). 
 
 ## View work items
 
-Using the drop-down menu, you can focus on relevant items inside a team project using one of the seven pivots as described next. Additionally, you can [filter](#filter) and [sort](#sort) each pivot view.  
+Using the drop-down menu, you can focus on relevant items inside a project using one of the seven pivots as described next. Additionally, you can [filter](#filter) and [sort](#sort) each pivot view.  
 
 
 <table>
@@ -66,7 +66,7 @@ Using the drop-down menu, you can focus on relevant items inside a team project 
 <li>**My activity**: lists work items that you have recently viewed or updated.</li>
 <li>**Recently updated**: lists work items recently updated in the project. </li>
 <li>**Recently completed**: lists work items completed or closed in the project.</li>
-<li>**Recently created**: lists work items created within the last 30 days in the team project.</li>
+<li>**Recently created**: lists work items created within the last 30 days in the project.</li>
 </ul>
 </td>
 </tr>
@@ -84,7 +84,7 @@ For example, here we choose User Story.
 ![Work hub, Work Items page, Add a work item ](_img/view-add/work-items-hub-new.png)
 
 > [!TIP]    
-> Work items you add are automatically scoped to the [Currently selected team's area and iteration paths](../scale/set-team-defaults.md). To change the team context, see [Switch team project or team focus](../../settings/switch-team-context.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json).
+> Work items you add are automatically scoped to the [Currently selected team's area and iteration paths](../scale/set-team-defaults.md). To change the team context, see [Switch project or team focus](../../settings/switch-team-context.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json).
 
 Enter a title and then save the work item. Before you can change the State from its initial default, you must save it.  
 
@@ -170,7 +170,7 @@ Use the following three controls to manage your views.
 - [Work from the account home page](../../user-guide/account-home-pages.md)
 
 > [!NOTE]
-> You can create and manage work items from the command line or scripts using the [VSTS CLI](https://docs.microsoft.com/en-us/cli/vsts/overview?view=vsts-cli-latest).
+> You can create and manage work items from the command line or scripts using the [Azure Codex CLI](https://docs.microsoft.com/en-us/cli/vsts/overview?view=vsts-cli-latest).
 
 
 [!INCLUDE [temp](../../_shared/help-support-shared.md)] 

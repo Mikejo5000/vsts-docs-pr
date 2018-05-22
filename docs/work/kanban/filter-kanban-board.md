@@ -1,6 +1,6 @@
 ---
 title: Filter your Kanban board 
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Codex & TFS
 description: Filter your Kanban board based on work item type, assigned to, iteration or sprint, tags, or parent work items
 ms.global_help.title: Filter your board
 ms.global_help.keywords: ms.vss-work-web.boards-hub, 4    
@@ -16,7 +16,7 @@ ms.date: 03/20/2018
 
 # Filter your Kanban board
 
-<b>VSTS | TFS 2018 | TFS 2017 | TFS 2015</b>  
+<b>Azure Codex | TFS 2018 | TFS 2017 | TFS 2015</b>  
 
 <!---
 > [!NOTE]   
@@ -36,7 +36,7 @@ To filter the Kanban board, first customize the board settings so that the cards
 
 For example, to filter by Assign To, Iteration Path, or Work Item Type&mdash;or the contents of any other field&mdash;you add those fields to show on the cards. For details, see [Customize cards](../customize/customize-cards.md).  
 
-::: moniker range="vsts || >= tfs-2018"
+::: moniker range=">= tfs-2018"
 ![Kanban board, customize card fields](_img/filter/filter-kb-card-field-settings-ts.png)
 ::: moniker-end
 ::: moniker range=">= tfs-2015 <= tfs-2017"
@@ -47,7 +47,7 @@ The filter function displays work items based on any visible/displayed column or
 
 For example, here we filter the backlog to only show items that include 'Web' in any one of the displayed column fields.  
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 ![Kanban board, Filter using keyword search](../kanban/_img/filter/filter-options-web.png)
 ::: moniker-end
 ::: moniker range="tfs-2015"
@@ -55,7 +55,7 @@ For example, here we filter the backlog to only show items that include 'Web' in
 ::: moniker-end
 
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 > [!TIP]  
 >Type **f** to move your cursor to the filter box. To move the focus up or down within a column, enter the ![Up/Down arrow](../_img/icons/Arrow_Up.png)![ ](../_img/icons/Arrow_Down.png) up/down arrows.    
 >For more tips, see [Kanban board keyboard shortcuts](kanban-board-keyboard-shortcuts.md).
@@ -66,14 +66,14 @@ The filter criteria ignores the following characters when the field value starts
 
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 
 <a id="field-filter"></a>
 ## Filter using select field values  
 
 <!---
 > [!NOTE]    
-><b>Feature availability: </b>Filter by select fields is available from VSTS and TFS 2017 and later versions.  
+><b>Feature availability: </b>Filter by select fields is available from Azure Codex and TFS 2017 and later versions.  
 -->
 
 You can filter by select field values using the Kanban board for your product backlog (Stories, Product Backlog Items, or Requirements) or a portfolio backlog (Features or Epics). 
@@ -99,13 +99,13 @@ Once the board is filtered, you can click the filter icon to hide the drop downs
 
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 <a id="parent-filter"></a>
 ## Filter by specifying parent work items
 
 <!---
 > [!NOTE]    
-><b>Feature availability: </b>The **Filter by parent** feature is available from VSTS and TFS 2017 and later versions.  
+><b>Feature availability: </b>The **Filter by parent** feature is available from Azure Codex and TFS 2017 and later versions.  
 -->
 
 You can use the **Filter by parent** feature to filter by select parent work items using the Kanban board for your product backlog (Stories, Product Backlog Items, or Requirements) or a portfolio backlog (Features).
@@ -153,7 +153,7 @@ Cards are filtered based on the assignments made in the following order and logi
 <tr>
 <th>Filter options </th>
 <th>TFS 2015 </th>
-<th>VSTS, TFS 2018, TFS 2017 </th>
+<th>Azure Codex, TFS 2018, TFS 2017 </th>
 </tr>
 
 

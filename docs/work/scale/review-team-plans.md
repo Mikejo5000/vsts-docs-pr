@@ -1,6 +1,6 @@
 ---
 title: Review team delivery plans 
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Codex & TFS
 description: Add & use plans to review scheduled multi-team deliverables in Visual Studio Team Services & Team Foundation Server   
 ms.technology: devops-agile
 ms.prod: devops
@@ -15,7 +15,7 @@ ms.date: 03/20/2018
 
 # Review team Delivery Plans 
 
-<b>VSTS | TFS 2018 | TFS 2017.2</b> 
+<b>Azure Codex | TFS 2018 | TFS 2017.2</b> 
 
 
 Use the visualization options provided by Delivery Plans to review the schedule of stories or features your teams plan to deliver. Delivery Plans show the scheduled work items by sprint (iteration path) of selected teams against a calendar view.
@@ -39,7 +39,7 @@ In this topic you'll learn:
 In order to add and configure a plan, you must have the following in place:  
 - [Installed the Plans extension](#install-plans)  
 - Be granted [Basic access or greater](../../security/access-levels.md) (Users with Stakeholder access can't add or view plans)  
-- [Defined iteration paths](../customize/set-area-paths.md) for the team project  
+- [Defined iteration paths](../customize/set-area-paths.md) for the project  
 - [Configured teams](multiple-teams.md) and [set team defaults and team sprints](set-team-defaults.md)   
 - Teams have defined [user stories](../backlogs/create-your-backlog.md), features, or other product or portfolio backlogs and assigned them to iterations  
 
@@ -66,9 +66,9 @@ Some questions you might address during the review:
 - *Are dependencies across teams adequately addressed via the planned deliverables?* 
 - *Are their gaps in the schedule, where no deliverables are scheduled? What's the cause? Can this be mitigated?*  
 
-For example, we use Delivery Plans internally to share the schedule of Features that we add to VSTS. By seeing the work many teams have planned for the next 3 sprints, we can easily discuss whether these are the right priorities and if dependencies exist. 
+For example, we use Delivery Plans internally to share the schedule of Features that we add to Azure Codex. By seeing the work many teams have planned for the next 3 sprints, we can easily discuss whether these are the right priorities and if dependencies exist. 
 
-In this way, a Delivery Plan is a driver of alignment while allowing each team to retain a strong sense of autonomy. Individual teams can work to different sprint cadences, if needed, and manage different work item types&mdash;stories, features, or epics. Their work is all visible with the same plan view. Teams can even be part of different team projects if they use different processes. You can also customize the card fields so that you only see the data fields of interest and applicable per work item type.  
+In this way, a Delivery Plan is a driver of alignment while allowing each team to retain a strong sense of autonomy. Individual teams can work to different sprint cadences, if needed, and manage different work item types&mdash;stories, features, or epics. Their work is all visible with the same plan view. Teams can even be part of different projects if they use different processes. You can also customize the card fields so that you only see the data fields of interest and applicable per work item type.  
 
     
 ## Add a plan  
@@ -89,7 +89,7 @@ Once you have [installed Delivery Plans](#install-plans), the Plans page appears
 
 	When defining a plan, note the following:  
 	- Use the name and description field to clearly identify your plan within the project 
-	- You can choose one or more teams from any team project defined in the account or collection  
+	- You can choose one or more teams from any project defined in the organization or collection  
 	- You can choose one or more [active backlogs for a team](../customize/select-backlog-navigation-levels.md)
 	- The order in which you enter the teams and team backlogs defines the order in which they'll appear in the plan 
 	-  To limit the number or types of work items, specify the field criteria.

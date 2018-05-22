@@ -1,6 +1,6 @@
 ---
 title: Create managed queries to generate a list of work items
-titleSuffix: VSTS & TFS 
+titleSuffix: Azure Codex & TFS 
 description: Track work by creating queries to list work items in Visual Studio Team Services & Team Foundation Server 
 ms.prod: devops
 ms.technology: devops-agile
@@ -15,7 +15,7 @@ ms.date: 04/27/2018
 
 # About managed queries  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 A query lists a filtered set of work items. You can initiate a query using the [query editor](using-queries.md). Optionally, you can perform an adhoc search using the [search box](search-box-queries.md). 
 
@@ -106,8 +106,8 @@ To learn about query charts and widgets, see these topics:
 - [Query tile widget](../../report/dashboards/widget-catalog.md#query-tile-widget) 
  
 
-### Query within or across team projects
-By default, you query within a single team project. However, using the query editor, you can [query across team projects](using-queries.md#across-projects). 
+### Query within or across projects
+By default, you query within a single project. However, using the query editor, you can [query across projects](using-queries.md#across-projects). 
 
 ### Visualize related work and other objects 
 

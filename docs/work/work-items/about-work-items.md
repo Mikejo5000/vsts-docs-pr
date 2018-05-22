@@ -1,6 +1,6 @@
 ---
 title: Plan and track work with work items
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Codex & TFS
 description: Use work items to plan, track, & collaborate with others when developing software apps in Visual Studio Team Services & Team Foundation Server
 ms.technology: devops-agile
 ms.prod: devops
@@ -13,7 +13,7 @@ ms.date: 03/20/2018
 
 # About work items 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 You can use work items to track anything you need to track. 
 
@@ -21,9 +21,9 @@ Each work item represents an object stored in the work item data store. Each wor
 
 ## Work item types
 
-To track different types of work, different work item types (WITs) are defined. The WITs available to you differ depending on the process or process template used to create your team project.  
+To track different types of work, different work item types (WITs) are defined. The WITs available to you differ depending on the process or process template used to create your project.  
 
-For example, the following WITs are available to you when you choose the Agile team project. 
+For example, the following WITs are available to you when you choose the Agile project. 
 
 <img src="guidance/_img/agile-process-plan-wits.png" alt="Agile process, WITs used to plan and track" style="border: 2px solid #C3C3C3;" />
 
@@ -36,13 +36,13 @@ Each work item supports tracking data contained in work item fields. Also, it ca
 
 Each form contains a number of controls as shown below and described in [Work item form controls](work-item-form-controls.md). 
 
-::: moniker range="vsts || >= tfs-2018"
+::: moniker range=">= tfs-2018"
 ![Work item form to track features or user stories](../backlogs/_img/add-work-item-vsts-user-story-form.png)
 ::: moniker-end
 
 ::: moniker range="tfs-2017"
 
-The new form and its corresponding features are available from the web portal. The new form is automatically available when you add team projects to a new collection. For existing team projects, an admin is required to [enable the new form](../customize/manage-new-form-rollout.md).
+The new form and its corresponding features are available from the web portal. The new form is automatically available when you add projects to a new collection. For existing projects, an admin is required to [enable the new form](../customize/manage-new-form-rollout.md).
 
 # [New web form](#tab/new-web-form)
 
@@ -70,7 +70,7 @@ You can only assign a work item to one person at a time. The Assigned To field i
 
 ![Web work item form, Assign to field](../_shared/_img/assign-work-items.png)  
 
-Anyone who has write access to a team project can assign work items to a team member. This includes team members and [stakeholders](../../security/get-started-stakeholder.md).  
+Anyone who has write access to a project can assign work items to a team member. This includes team members and [stakeholders](../../security/get-started-stakeholder.md).  
 
 **Note the following:**
 - You can assign a work item only to team members recognized by the system, ones that you have added as team members 
@@ -85,7 +85,7 @@ Anyone who has write access to a team project can assign work items to a team me
 
 When your system is configured with Azure Active Directory (AAD), then the system will synchronize person-name fields with these directories. Person-name fields include Activated By, Assigned To, Closed By, Created By, and Resolved By. 
 
-You can grant access to a team project by adding security groups that you created in AAD or by adding accounts to existing or custom groups defined from the collection setting Security hub. To learn more, see [Access with Azure Active Directory (Azure AD)](../../accounts/add-users-to-aad.md).
+You can grant access to a project by adding security groups that you created in AAD or by adding accounts to existing or custom groups defined from the collection setting Security hub. To learn more, see [Access with Azure Active Directory (Azure AD)](../../accounts/add-users-to-aad.md).
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018" 
@@ -93,7 +93,7 @@ You can grant access to a team project by adding security groups that you create
 
 When TFS is configured with Active Directory (AD), then TFS will synchronize person-name fields with these directories. Person-name fields include Activated By, Assigned To, Closed By, Created By, and Resolved By. 
 
-You can grant access to a team project by adding security groups that you created in AD or by adding accounts to existing or custom groups defined from the collection setting Security hub. To learn more, see [Set up groups for use in TFS deployments](../../tfs-server/admin/setup-ad-groups.md). 
+You can grant access to a project by adding security groups that you created in AD or by adding accounts to existing or custom groups defined from the collection setting Security hub. To learn more, see [Set up groups for use in TFS deployments](../../tfs-server/admin/setup-ad-groups.md). 
 ::: moniker-end
 
  
@@ -132,7 +132,7 @@ To learn more, see these topics:
 <a id="customize"> </a>
 ## Customize a work item type (WIT) 
 
-You can add or modify the fields contained within a WIT or add a custom WIT. The process you use depends on the process model in effect for your team project. 
+You can add or modify the fields contained within a WIT or add a custom WIT. The process you use depends on the process model in effect for your project. 
 ::: moniker range="vsts"
 To learn more, see [Customize an inheritance process](../../settings/work/inheritance-process-model.md). 
 ::: moniker-end
@@ -165,19 +165,19 @@ Once you have a template defined, you can share it via email or a dashboard. Cop
 
 ## Required permissions
 
-As a member added to the Contributors group of a team project, you can use most features provided under the **Work** hub. If you've been added with stakeholder access, you are limited to certain features. For details, see [Work as a Stakeholder](../../security/get-started-stakeholder.md). 
+As a member added to the Contributors group of a project, you can use most features provided under the **Work** hub. If you've been added with stakeholder access, you are limited to certain features. For details, see [Work as a Stakeholder](../../security/get-started-stakeholder.md). 
 
 To learn more about permissions and access, see [Permissions and access for work tracking](../../security/permissions-access-work-tracking.md). 
 
 ::: moniker range="vsts" 
-To add team members to a team project, see [Add users to your VSTS account](../../accounts/add-team-members-vs.md).
+To add team members to a project, see [Add users to your Azure Codex account](../../accounts/add-team-members-vs.md).
 ::: moniker-end
 ::: moniker range=">= tfs-2013 <= tfs-2018"
-To add team members to a team project, see [TFS team project](../../security/add-users-team-project.md). 
+To add team members to a project, see [TFS project](../../security/add-users-team-project.md). 
 ::: moniker-end
 
 To learn more about user accounts, permissions, and access, see [Security & Identity](../../security/index.md).
-<!--- User names you add are all members of the Project Collection Valid Users group.  Also, these names are automatically synchronized with Azure Active Direct or Active Directory when AAD or AD is configured as part of the account (VSTS) or deployment (TFS).-->   
+<!--- User names you add are all members of the Project Collection Valid Users group.  Also, these names are automatically synchronized with Azure Active Direct or Active Directory when AAD or AD is configured as part of the account (Azure Codex) or deployment (TFS).-->   
 
 
 <a id="clients"></a>  
@@ -189,7 +189,7 @@ You can add work items from various clients, such as:
 - From Test Manager or the web portal, you can can [create test cases that automatically link to a user story or product backlog item](../../manual-test/getting-started/create-test-cases.md).
 - You can create bugs from the web portal, Visual Studio, or when [testing with Microsoft Test Manager](https://msdn.microsoft.com/library/dd286731.aspx).  
 
-For an overview of all clients that connect to your team project, see [Tools and clients that connect to VSTS and TFS](../../user-guide/tools.md). 
+For an overview of all clients that connect to your project, see [Tools and clients that connect to Azure Codex and TFS](../../user-guide/tools.md). 
 
 
 ## Try this next 

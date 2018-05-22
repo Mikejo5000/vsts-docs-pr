@@ -1,6 +1,6 @@
 ---
 title: Adhoc vs managed queries
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Codex & TFS
 description: Use adhoc or built-in search/managed queries to find work items in Visual Studio Team Services & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
@@ -13,11 +13,11 @@ ms.date: 06/02/2017
 
 # Adhoc vs managed work item queries
 
-<b>VSTS | TFS 2018 | TFS 2017</b> 
+<b>Azure Codex | TFS 2018 | TFS 2017</b> 
 
 
 > [!NOTE]    
->**Feature availability:**&#160;&#160;The Work item search feature is available from VSTS and TFS 2017 and later versions.     
+>**Feature availability:**&#160;&#160;The Work item search feature is available from Azure Codex and TFS 2017 and later versions.     
 
 You have two ways to perform work item searches: adhoc and managed. You perform adhoc queries using the work item search box (shown below), whereas you perform managed queries using the built-in search function available from the Work hub, Queries page.  
 
@@ -26,7 +26,7 @@ You have two ways to perform work item searches: adhoc and managed. You perform 
 > [!div class="mx-tdCol2BreakAll"]  
 > |Use adhoc queries when you want to: | Use managed queries when you want to: |
 > |------|---------|
-> |- Find a specific work item using its ID or a keyword <br/>- Find one or more work items across all team projects in a fast, flexible manner<br/>- Perform full text search across all work item fields<br/>- Review work items assigned to a specific team member<br/>- Search against specific work item fields to quickly narrow down a list of work items<br/>- Determine what key words will support a managed search |- Review or triage a group of work items<br/>- Perform bulk updates on several work items such as change Assign To, Iteration Path, or more<br/>- Review parent-child or dependent links among work items<br/>- Create a status or trend chart from a flat list query<br/>- Create a list of work items that you'll export to [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) or [Project](../backlogs/office/create-your-backlog-tasks-using-project.md) |
+> |- Find a specific work item using its ID or a keyword <br/>- Find one or more work items across all projects in a fast, flexible manner<br/>- Perform full text search across all work item fields<br/>- Review work items assigned to a specific team member<br/>- Search against specific work item fields to quickly narrow down a list of work items<br/>- Determine what key words will support a managed search |- Review or triage a group of work items<br/>- Perform bulk updates on several work items such as change Assign To, Iteration Path, or more<br/>- Review parent-child or dependent links among work items<br/>- Create a status or trend chart from a flat list query<br/>- Create a list of work items that you'll export to [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) or [Project](../backlogs/office/create-your-backlog-tasks-using-project.md) |
 
 > [!NOTE]    
 >With Work item or adhoc search, searches are performed against a full-text search engine that has indexed all work item fields.  

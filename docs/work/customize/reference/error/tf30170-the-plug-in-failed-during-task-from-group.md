@@ -1,5 +1,5 @@
 ---
-title: TF30170-The plug-in {0} failed titleSuffix: VSTS & TFS
+title: TF30170-The plug-in {0} failed titleSuffix: Azure Codex & TFS
 description: Occurs an error when a third-party plug-in does not operate in the manner the New Team Project Wizard expected it to operate.
 ms.prod: devops
 ms.technology: devops-agile
@@ -25,4 +25,4 @@ This error occurs when a third-party plug-in does not operate in the manner the 
 2.  If the problem persists, reinstall the third-party plug-in.  
   
 ## Related articles 
-- [Create a team project](../../../../accounts/create-team-project.md)
+- [Create a project](../../../../accounts/create-team-project.md)

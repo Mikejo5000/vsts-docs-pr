@@ -1,6 +1,6 @@
 ---
 title: Forecasting 
-titleSuffix: VSTS & TFS   
+titleSuffix: Azure Codex & TFS   
 description: Determine how much work your team can deliver across several sprints by forecasting in Visual Studio Team Services & Team Foundation Server     
 ms.technology: devops-agile
 ms.prod: devops
@@ -8,12 +8,13 @@ ms.assetid: C46ED4AA-4B8F-4D5D-BC51-52F6D67BF8C6
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 ms.topic: tutorial
-ms.date: 03/20/2018
+monikerRange: '>= tfs-2013'
+ms.date: 07/07/2018
 ---
 
 # Forecast your product backlog
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)] 
 
 Teams use the forecast tool to help in their sprint planning efforts. By plugging in a value for the [team velocity](../../report/dashboards/velocity-chart-data-store.md), the forecast tool will show which items in the backlog can be completed within future sprints.  Both tools are team-specific tools that rely on the team's ability to estimate backlog items. Once your team has completed a sprint or two, they can use the team velocity  to forecast how much of the backlog they can finish within the upcoming sprints. 
 
@@ -47,8 +48,7 @@ To forecast your product backlog, perform the following actions:
 The tool draws lines for each future sprint selected by the team. The Forecast lines show how much work your team should be able to complete in future sprints. Typically, items above the first line are already in progress for the current sprint. Items that fall between the first and second forecast lines indicate what can be completed in the named sprint.   
 
 
-::: moniker range="vsts || >= tfs-2018"
-<!---### VSTS and TFS 2018 and later versions  -->
+::: moniker range=">= tfs-2018"
 
 In this example, a Velocity of 20 is used. The forecast tool limits the number of items shown between the forecast lines to those that can be completed within the sprint or using unused velocity points from the previous sprint. 
 
@@ -109,7 +109,7 @@ You can then assess the delta between the current team's velocity and the requir
 Here's what needs to happen for you and your team to gain the greatest utility from the velocity chart and forecast tool.  
 
 **Required:** 
-*	[Define sprints for the team project](../customize/set-iteration-paths-sprints.md) - Sprints should be of the same duration. 
+*	[Define sprints for the project](../customize/set-iteration-paths-sprints.md) - Sprints should be of the same duration. 
 *	[Select sprints for each team](../scale/set-team-defaults.md#activate)
 *	[Define and estimate backlog items](../backlogs/create-your-backlog.md#estimates). If you work from your team's backlog, the items you create will automatically be assigned to the current sprint (Iteration) and to your team's default Area Path.  
 *	Update the status of backlog items once work starts and when completed. Only backlog items whose State maps to a metastate of In Progress or Done show up on the velocity chart. 
@@ -127,7 +127,7 @@ Now that you understand how to work with forecasting, you can use this tool to s
 ## Related articles
 
 *	[Team velocity](../../report/dashboards/velocity-chart-data-store.md)  
-*	[Define sprints for the team project](../customize/set-iteration-paths-sprints.md)  
+*	[Define sprints for the project](../customize/set-iteration-paths-sprints.md)  
 *	[Select sprints for a team](../scale/set-team-defaults.md)  
 *	Use the [task board](task-board.md) to track work during your sprint
 *	Monitor the [sprint burndown chart](task-board.md) to determine if your team is on track to complete the sprint plan

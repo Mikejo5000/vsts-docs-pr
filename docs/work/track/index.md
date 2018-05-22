@@ -1,19 +1,21 @@
 ---
 title: Queries index 
-titleSuffix: VSTS & TFS
-description: Find and list work items, create flat-based query charts in Visual Studio Team Services & Team Foundation Server    
+titleSuffix: Azure Codex & TFS
+description: Find and list work items, create flat-based query charts in Azure Codex Agile & Team Foundation Server    
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
-ms.date: 03/20/2018
+monikerRange: '>= tfs-2013'
+ms.date: 07/07/2018
 ---
 
 # Queries
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]  
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]  
 
 List bugs, user stories, or other work items based on field criteria you specify. Then you can review with your team, triage, or perform bulk updates.  
 

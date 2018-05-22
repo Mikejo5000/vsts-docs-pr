@@ -1,11 +1,11 @@
-- name: VSTS and TFS
+- name: Azure Codex
   tocHref: /vsts/
   topicHref: /vsts/index
   items: 
-  - name: Reporting
-    tocHref: /vsts/
-    topicHref: /vsts/index#pivot=services&panel=reporting
+  - name: Analytics
+    tocHref: /vsts/report/analytics
+    topicHref: /vsts/index#pivot=apps&panel=analytics
     items:
-    - name: Power BI (VSTS)
+    - name: Power BI 
       tocHref: /vsts/report/powerbi/
       topicHref: /vsts/report/powerbi/index

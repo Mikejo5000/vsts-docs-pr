@@ -1,6 +1,6 @@
 ---
 title: Link type element reference
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Codex & TFS
 description: LinkType element syntax and usage to define custom link types to form relationships between different work item types 
 ms.prod: devops
 ms.technology: devops-agile
@@ -16,13 +16,13 @@ ms.date: 02/14/2018
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 > [!IMPORTANT]  
->This topic provides a reference of link types defined for VSTS and TFS. For the On-premises XML process model, you can add custom link types. Custom link types are not supported for Hosted XML or Inheritance process models. For an overview of process models and supported cusomizations, see [Customize your work tracking experience](../customize-work.md).  
+>This topic provides a reference of link types defined for Azure Codex and TFS. For the On-premises XML process model, you can add custom link types. Custom link types are not supported for Hosted XML or Inheritance process models. For an overview of process models and supported cusomizations, see [Customize your work tracking experience](../customize-work.md).  
 
 You use different link types to form link relationships between different work item types (WITs). There are three categories of link types: system-defined, process-defined, and user-defined or custom. The link types defined in the default processes support link relationships among the test management WITs.  
   
 Each link type defines the link labels, topology type, and restrictions that are used when links between work items are constructed. For example, the parent-child link type defines two labels (Parent and Child), supports a hierarchical or tree topology, and prevents circular references from being created between work items.  
   
-You can customize an existing link type or create a link type to meet your project tracking requirements. Before you start to add or modify a link type, you should assess the link types available and how they are used in your team project. See [Manage dependencies, link work items](../../track/link-work-items-support-traceability.md). Links are added through the work item form, which contains the links control. See [Link controls, restrictions, and fields](../../track/linking-attachments.md).  
+You can customize an existing link type or create a link type to meet your project tracking requirements. Before you start to add or modify a link type, you should assess the link types available and how they are used in your project. See [Manage dependencies, link work items](../../track/link-work-items-support-traceability.md). Links are added through the work item form, which contains the links control. See [Link controls, restrictions, and fields](../../track/linking-attachments.md).  
 
 > [!NOTE]  
 >  You cannot customize the system-defined link types that correspond to the Related, Parent-Child, and Successor-Predecessor links.  
@@ -33,11 +33,11 @@ You may want to modify or create a link type for one of the following reasons:
 -   Add a link type to track a particular relationship that is unique to your team's process.  
 
 
-The link type is specified in a type definition XML file that you import to a team project collection. To customize or create a link type, use **witadmin importlinktype** to import the link type definition file to the project collection that hosts your team project. With the **witadmin** command-line tool, you can deactivate, delete, export, import, list, and reactivate link types. See [Manage link types](witadmin/manage-link-types.md).   
+The link type is specified in a type definition XML file that you import to a project collection. To customize or create a link type, use **witadmin importlinktype** to import the link type definition file to the project collection that hosts your project. With the **witadmin** command-line tool, you can deactivate, delete, export, import, list, and reactivate link types. See [Manage link types](witadmin/manage-link-types.md).   
 
 <a name="SyntaxStructure"></a>   
 ##  Syntax structure  
-You can define additional link types by adding them to the link types that are defined for a team project collection. 
+You can define additional link types by adding them to the link types that are defined for a project collection. 
 
 You can define valid link types for use in your process based on the structure that the link type definition schema provides. A link type is defined by the following XML syntax in the link types XML file.  
   
@@ -177,7 +177,7 @@ Link category: Process-defined</p></td>
 </table>
 
 Notes:
-1. Available only from VSTS and TFS 2017 and later versions. 
+1. Available only from Azure Codex and TFS 2017 and later versions. 
 
 <a id="test-plan-links">  </a>
 ### Test plan and test suite links 
@@ -329,7 +329,7 @@ For example, the following syntax defines the Microsoft.VSTS.Common.TestedBy lin
 </LinkTypes>
 ```
 
-When you create or update a team project, the link type definitions defined for the reference process are imported into the project collection.
+When you create or update a project, the link type definitions defined for the reference process are imported into the project collection.
 
 
 ##Customize the links control 

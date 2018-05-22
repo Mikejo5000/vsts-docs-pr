@@ -1,6 +1,6 @@
 ---
 title: Pick list queries
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Codex & TFS
 description: Create queries based on planning, ranking, and priority, integer and pick list fields in Visual Studio Team Services & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
@@ -13,7 +13,7 @@ ms.date: 04/14/2017
 
 # Query by pick list value
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 You use planning, ranking, and priority fields to specify which work the team should complete first. By ranking and prioritizing work items, all team members gain an understanding of the relative importance of the work that they must accomplish.  
 
@@ -182,7 +182,7 @@ The Backlog Priority and Stack Rank fields don't appear on the work item forms. 
 
 To add the field to the form: 
 
-- **VSTS**: Add the Stack Rank field to a work item type ([for the custom process that your team project references](../../settings/work/customize-process-form.md)).
+- **Azure Codex**: Add the Stack Rank field to a work item type ([for the custom process that your project references](../../settings/work/customize-process-form.md)).
 - **TFS**: [Modify the WIT XML definition to add the following control element](../customize/add-modify-wit.md):
 
 	`<Control FieldName="Microsoft.VSTS.Common.StackRank" Type="FieldControl" Label="Stack Rank" LabelPosition="Left" />`

@@ -1,5 +1,5 @@
 ---
-title: Configure a network adapter to automatically adjust speed | VSTS & TFS
+title: Configure a network adapter to automatically adjust speed | Azure Codex & TFS
 description: Configure to automatically adjust the link speed of its network adapter - Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-agile
@@ -14,7 +14,7 @@ ms.date: 02/22/2017
 
 **TFS 2013**
 
-When a client computer is not configured to automatically adjust the link speed of its network adapter, some functions might take a long time to finish. Such functions include creating team projects, saving work items, or merging code changes. In some cases, these functions might never finish, and an error message might appear that contains the phrase "The underlying connection was closed."  
+When a client computer is not configured to automatically adjust the link speed of its network adapter, some functions might take a long time to finish. Such functions include creating projects, saving work items, or merging code changes. In some cases, these functions might never finish, and an error message might appear that contains the phrase "The underlying connection was closed."  
   
 The speed with which a function finishes depends, in part, on the speed of the computer network. The configuration of network switches and your computers' network adapters can affect the network throughput. For example, "autosense mode" or "auto-negotiation" might be turned on, and information might be transmitted in either full-duplex mode or half-duplex mode.  
   

@@ -1,6 +1,6 @@
 ---
 title: Create your backlog 
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Codex & TFS
 description: Add items, plan your project, order/prioritize, and estimate your backlog of deliverables in Visual Studio Team Services & Team Foundation Server   
 ms.technology: devops-agile
 ms.prod: devops
@@ -9,12 +9,13 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
+monikerRange: '>= tfs-2013'
 ms.date: 03/20/2018
 ---
 
 # Create your backlog
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)] 
 
 Your product backlog corresponds to your project plan, the roadmap for what your team plans to deliver. 
 Once defined, you have a prioritized list of features and requirements to build. Your backlog also provides a 
@@ -30,21 +31,21 @@ and more. Because the most important work appears at the top of the list, your t
 
 From your web browser, open your product backlog from the **Work** hub, **Backlogs** page.  
  
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 !["Web portal, choose Work hub, Backlogs](_img/cyb-open-backlog-tfs-2017.png)
 ::: moniker-end
 ::: moniker range=">= tfs-2013 <= tfs-2015"
 ![Work hub, backlogs, TFS 2015, 2013 web portal](_img/backlogs-boards-plans/open-backlog-tfs-2015.png)
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 > [!TIP]    
-> If you don't see the team or team project you want, click the ![VSTS icon](../_img/icons/project-icon.png) icon to [browse all team projects and teams](../../user-guide/account-home-pages.md). 
+> If you don't see the team or project you want, click the ![Azure Codex icon](../_img/icons/project-icon.png) icon to [browse all projects and teams](../../user-guide/account-home-pages.md). 
 ::: moniker-end
 
 <!---
 
-The URL follows this pattern: ```https://<account name>.visualstudio.com/DefaultCollection/<project name>/_backlogs```  
+The URL follows this pattern: ```https://<organization name>.visualstudio.com/DefaultCollection/<project name>/_backlogs```  
  
 ### TFS
 <img src="_img/cyb-open-backlog-tfs-2015.png" alt="Open the backlog" style="border: 1px solid #C3C3C3;" />  
@@ -52,11 +53,11 @@ The URL follows this pattern: ```https://<account name>.visualstudio.com/Default
 The URL follows this pattern:
 ```http://{server}:8080/tfs/DefaultCollection/{project name}/_backlogs```
 
-If you don't see the team or team project you want, open the team project/team drop-down menu and select the team project/team that you've recently visited, or choose **Browse all** to browse all team projects and teams. 
+If you don't see the team or project you want, open the project/team drop-down menu and select the project/team that you've recently visited, or choose **Browse all** to browse all projects and teams. 
 
-<img src="../_shared/_img/switch-team-project-2.png" alt="Choose another team from the team project menu" style="border: 1px solid #C3C3C3;" /> 
+<img src="../_shared/_img/switch-team-project-2.png" alt="Choose another team from the project menu" style="border: 1px solid #C3C3C3;" /> 
 
-Building your backlog starts by quickly capturing the requirements you want for your product. If you don't have a team project yet, create one in [VSTS](../../accounts/set-up-vs.md) or set one up in an [on-premises TFS](../../accounts/create-team-project.md).    
+Building your backlog starts by quickly capturing the requirements you want for your product. If you don't have a project yet, create one in [Azure Codex](../../accounts/set-up-vs.md) or set one up in an [on-premises TFS](../../accounts/create-team-project.md).    
 
 -->
 
@@ -70,7 +71,7 @@ Begin building your backlog by entering a title and click **Add**. If you don't 
 
 
 > [!NOTE]  
->Depending on the process chosen to create your team project&mdash;[Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md)&mdash;
+>Depending on the process chosen to create your project&mdash;[Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md)&mdash;
 the items in your backlog may be called product backlog items (PBIs), user stories, or requirements. All three are similar: they describe the customer value to be delivered and the work to be performed.   
 >
 >By default, PBIs and bugs appear on Scrum backlogs, user stories on Agile backlogs, and requirements on CMMI backlogs. Each team can choose how [bugs show up on their backlogs and boards](../customize/show-bugs-on-backlog.md). 
@@ -102,12 +103,12 @@ Open each item (double-click, or press Enter to open the selected item) and add 
 <!---
 
 > [!NOTE]  
-><b>Feature availability: </b>From the web portal for VSTS and TFS 2017, you'll have access to the [new form with the new work tracking experience](../backlogs/add-work-items.md). For TFS 2015 and earlier versions, the old form is supported.   
+><b>Feature availability: </b>From the web portal for Azure Codex and TFS 2017, you'll have access to the [new form with the new work tracking experience](../backlogs/add-work-items.md). For TFS 2015 and earlier versions, the old form is supported.   
 	
 
 <p>For details on adding work items using the new form, see [add work items](add-work-items.md).</p>  
 
-<img src="_img/cyb-product-backlog-form-ts.png" alt="Product backlog item- VSTS - Add details to a work item" style="border: 1px solid #C3C3C3;" />  
+<img src="_img/cyb-product-backlog-form-ts.png" alt="Product backlog item- Azure Codex - Add details to a work item" style="border: 1px solid #C3C3C3;" />  
  
 <p>For details on adding work items using the old form, see [add work items (TFS)](add-work-items.md).</p>  
 
@@ -167,7 +168,7 @@ With [Sprint planning](../scrum/sprint-planning.md), teams define a sprint sched
 -->
 
 > [!NOTE]  
->Depending on the process chosen to create your team project&mdash;[Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md)&mdash;
+>Depending on the process chosen to create your project&mdash;[Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md)&mdash;
 the items in your backlog may be called product backlog items (PBIs), user stories, or requirements. All three are similar: they describe the customer value to be delivered and the work to be performed.   
 >
 >By default, PBIs and bugs appear on Scrum backlogs, user stories on Agile backlogs, and requirements on CMMI backlogs. Each team can [choose how they want to treat bugs: either as requirements or tasks](../customize/show-bugs-on-backlog.md). 
@@ -195,7 +196,7 @@ If you've already defined a long list of items, you don't have to reenter them o
 ### Treat bugs like requirements or tasks
 You have a choice as to how you want to manage bugs. Some teams like to track bugs along with requirements on the backlog. Other teams like to track bugs as tasks performed in support of a requirement, and have them appear on their [task board](../scrum/task-board.md).
 
-If you're using the Scrum process, your default setup is to track bugs along with PBIs. However, if you're working in a team project based on the [Agile or CMMI processes](../work-items/guidance/choose-process.md), bugs don't automatically appear on your backlog.
+If you're using the Scrum process, your default setup is to track bugs along with PBIs. However, if you're working in a project based on the [Agile or CMMI processes](../work-items/guidance/choose-process.md), bugs don't automatically appear on your backlog.
 
 Talk with your team to determine how they want to manage bugs and then [change your team settings](../customize/show-bugs-on-backlog.md) accordingly.
 

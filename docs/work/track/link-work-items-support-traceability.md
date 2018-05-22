@@ -1,6 +1,6 @@
 ---
 title: Link work items to support traceability 
-titleSuffix: VSTS & TFS 
+titleSuffix: Azure Codex & TFS 
 description: Manage dependencies, link work items to other work items, code and build objects, add hyperlinks, and more
 ms.prod: devops
 ms.technology: devops-agile
@@ -14,7 +14,7 @@ ms.date: 03/20/2018
 
 # Link work items to support traceability and manage dependencies  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 By linking work items and other objects, you can track related work, dependencies, and changes made over time. All links are defined with a specific link type. For example, you can use Parent/Child links to link work items to support a hierarchical tree structure. Whereas, the Commit and Branch link types support links between work items and commits and branches, respectively.    
 
@@ -30,7 +30,7 @@ In a nutshell, you can:
 Below, you can learn how to link objects and which link types to use. You can link objects from the web portal or Visual Studio Team Explorer.  
 
 > [!NOTE]    
-><b>Feature availability: </b> Work item forms and features available to you can differ depending on whether you connect to VSTS or an on-premises Team Foundation Server (TFS), and whether you open the form from the web portal or Visual Studio Team Explorer. 
+><b>Feature availability: </b> Work item forms and features available to you can differ depending on whether you connect to Azure Codex or an on-premises Team Foundation Server (TFS), and whether you open the form from the web portal or Visual Studio Team Explorer. 
 
 This topic describes the link types available for your use. For details on linking work items, see [Add link to work items](../backlogs/add-link.md).  
 
@@ -48,7 +48,7 @@ As a quick reference guide, use the following link types as indicated:
 - Use the **Duplicate** link type when two work items have been created that essentially capture the same information; close one of the work items and keep the other one active  
 - Use the **Parent/Child** link types when you want to break down work items into smaller items&mdash;for example, break down features into stories, or stories into tasks
 - Use  **Predecessor-Successor** link types when you want to track tasks that must be completed before others can be started; this link type is most often used when you plan work using Project 
-- Use the **Related** link type when the work items being linked are at the same level&mdash;such as two user stories that define features that overlap one another&mdash;or to link work items that are defined in different team projects or managed by different teams.
+- Use the **Related** link type when the work items being linked are at the same level&mdash;such as two user stories that define features that overlap one another&mdash;or to link work items that are defined in different projects or managed by different teams.
 
 For additional guidance on choosing link types, review the [Link type descriptions and guidance](#link-type-guidance) in the related notes section. 
 
@@ -69,7 +69,7 @@ You can create links between work items by using one of the links control tabs w
 
 # [New web form](#tab/new-web-form)
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 <a id="team-services-link" /> 
 
 From the new work item form, you can add a link using the **Related Work** section or from the **Links** tab.
@@ -101,7 +101,7 @@ The new web form is only available from TFS 2017 and later versions.
 
 # [Old web form](#tab/old-web-form)
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 The old web form is only available for TFS 2017 and earlier versions. 
 ::: moniker-end
 
@@ -188,7 +188,7 @@ To learn more about the links control or to customize the Development links cont
 
 You can add a link from the work item to the supported artifacts using the method [described earlier for linking work items](#link-work-items). However, an easier method is to add the work item ID to a commit, pull request, changeset, or other supported Git or TFVC operation at the time you create those items. Also, you can link work items from the Development section within the [new work item form](../customize/process/new-work-item-experience.md). 
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 
 ## Link work items and Git code development  
 
@@ -199,7 +199,7 @@ Git lets you link work items to commits by using the **Commit** link type. You c
 - In Visual Studio Team Explorer, add work item IDs before you commit your changes  
 	![Add work item ID or drag items before you commit your changes](_img/link-git-commit-items.png)  
 - You can use the [git-commit](http://git-scm.com/docs/git-commit) command and include the work item ID in your comment. For example, you apply this comment #35 Catch null exception to your commit. When you push the commit, the system creates a Commit link between the commit and work item #35. 
-- And, with the new work item form (available from VSTS and TFS 2017), you can [drive your git development from the work item](../backlogs/connect-work-items-to-git-dev-ops.md) as shown in the following image.  
+- And, with the new work item form (available from Azure Codex and TFS 2017), you can [drive your git development from the work item](../backlogs/connect-work-items-to-git-dev-ops.md) as shown in the following image.  
 
 	<img src="../backlogs/_img/drive-git-development-dev-section.png" alt="Work item form, Development section" style="border: 1px solid #C3C3C3;" />   
 
@@ -285,7 +285,7 @@ Restrictions and recommendations:
 <ul>
 <li><p>You can link a change request to only one requirement using Affects. You can link requirements to as many child change requests as needed using Affected by.</p>
 </li>
-<li><p>Only use Affects-Affected by links to link work items in the same team project. This action is recommended if you plan to use Excel or Project to modify or update work item data.</p></li>
+<li><p>Only use Affects-Affected by links to link work items in the same project. This action is recommended if you plan to use Excel or Project to modify or update work item data.</p></li>
 </ul> </td>
 </tr>
 
@@ -298,7 +298,7 @@ Restrictions and recommendations:
 
 Use this directional link to create one-to-many relationships between a single parent to one or more child items. Typical uses include:  
 <ul>
-<li><p>Create a work breakdown structure (WBS). See [Schedule tasks and assign resources using Microsoft Project](../backlogs/office/create-your-backlog-tasks-using-project.md).</p></li><li><p>Map backlog items to portfolio backlog items. Mapping items automatically creates parent-child links between the items. To learn about mapping, see [Organize your backlog](../backlogs/organize-backlog.md).</p></li><li><p>Maintain task summary relationships. Parent-child links are created for summary tasks and their subordinate tasks.</p></li><li><p>Link tasks to PBIs, user stories, or requirements. Supports Backlog Overview, Stories Overview, and Requirements Overview reports.</p></li></ul>Restrictions and recommendations:<ul><li><p>Use Excel to bulk edit both work items and parent-child links. See [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).</p></li><li><p>A work item can have only one Parent. A parent work item can have many children.</p></li><li><p>Only use parent-child links to link work items in the same team project. This action is recommended if you plan to use Excel or Project to modify or update work item data.</p></li></ul> </td>
+<li><p>Create a work breakdown structure (WBS). See [Schedule tasks and assign resources using Microsoft Project](../backlogs/office/create-your-backlog-tasks-using-project.md).</p></li><li><p>Map backlog items to portfolio backlog items. Mapping items automatically creates parent-child links between the items. To learn about mapping, see [Organize your backlog](../backlogs/organize-backlog.md).</p></li><li><p>Maintain task summary relationships. Parent-child links are created for summary tasks and their subordinate tasks.</p></li><li><p>Link tasks to PBIs, user stories, or requirements. Supports Backlog Overview, Stories Overview, and Requirements Overview reports.</p></li></ul>Restrictions and recommendations:<ul><li><p>Use Excel to bulk edit both work items and parent-child links. See [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).</p></li><li><p>A work item can have only one Parent. A parent work item can have many children.</p></li><li><p>Only use parent-child links to link work items in the same project. This action is recommended if you plan to use Excel or Project to modify or update work item data.</p></li></ul> </td>
 </tr>
 
 <tr>
@@ -309,7 +309,7 @@ Use this directional link to create one-to-many relationships between a single p
 <td>
 <p>Use this directional link to create one-to-many relationships between a single parent to one or more child items. Use to track tasks, bugs, or other work items which are duplicates of one another.  </p>
 <p>Restrictions and recommendations:</p>
-<ul><li><p>A work item can have only one Duplicate. </p></li><li><p>Only use Duplicate/Duplicate Of links to link work items in the same team project. This action is recommended if you plan to use Excel or Project to modify or update work item data.</p></li></ul> </td>
+<ul><li><p>A work item can have only one Duplicate. </p></li><li><p>Only use Duplicate/Duplicate Of links to link work items in the same project. This action is recommended if you plan to use Excel or Project to modify or update work item data.</p></li></ul> </td>
 </tr>
 
 <tr>
@@ -319,8 +319,8 @@ Use this directional link to create one-to-many relationships between a single p
 
 </td>
 <td><p>Use this directional link to create links between any set of work items, but not ones that would create closed loops. Typically used to track work that must be completed prior to beginning work on predecessor items.</p>
-<ul><li><p>Track tasks that must be completed before others can be started. When you plan work using Project, linked tasks are represented as predecessor-successor links in TFS.</p></li><li><p>Supports one-to-many relationships.</p></li><li><p>Find and view predecessor work items and their successor work items in a two-tiered, direct links query view.</p></li></ul>Restrictions and recommendations:<ul><li><p>An error appears when you attempt to create links that define circular relationships.</p></li><li><p>Create predecessor-successor links only to work items that are within the same team project.<br />
-You can create predecessor-successor links between work items that are defined in different projects. However, if you export a query to Excel or Project, only those work items that are defined for the team project for which the query is defined are imported into the Team Foundation client.</p></li></ul> </td>
+<ul><li><p>Track tasks that must be completed before others can be started. When you plan work using Project, linked tasks are represented as predecessor-successor links in TFS.</p></li><li><p>Supports one-to-many relationships.</p></li><li><p>Find and view predecessor work items and their successor work items in a two-tiered, direct links query view.</p></li></ul>Restrictions and recommendations:<ul><li><p>An error appears when you attempt to create links that define circular relationships.</p></li><li><p>Create predecessor-successor links only to work items that are within the same project.<br />
+You can create predecessor-successor links between work items that are defined in different projects. However, if you export a query to Excel or Project, only those work items that are defined for the project for which the query is defined are imported into the Team Foundation client.</p></li></ul> </td>
 </tr>
 
 </tr>
@@ -331,7 +331,7 @@ You can create predecessor-successor links between work items that are defined i
 </td>
 <td>Use this non-directional link to create links between any set of work items.  
 
-<ul><li><p>Relate work items that are at the same level, such as two user stories that define features that overlap one another.</p></li><li><p>Link work items that are defined in different team projects and managed by different teams.</p></li><li><p>Find and view work items and their related work items in a two-tiered view.</p></li><li><p>Create simple relationships with few restrictions.</p></li></ul></td>
+<ul><li><p>Relate work items that are at the same level, such as two user stories that define features that overlap one another.</p></li><li><p>Link work items that are defined in different projects and managed by different teams.</p></li><li><p>Find and view work items and their related work items in a two-tiered view.</p></li><li><p>Create simple relationships with few restrictions.</p></li></ul></td>
 </tr>
 
 
@@ -385,7 +385,7 @@ For additional information, see these topics:
 - [Use mapping to link backlog items to features and epics](../backlogs/organize-backlog.md)
 - [Bulk modify links using Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)  
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 
 ### Visualize related work and other objects 
 

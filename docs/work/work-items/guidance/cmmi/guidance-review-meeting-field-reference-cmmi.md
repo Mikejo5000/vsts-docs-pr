@@ -1,6 +1,6 @@
 ---
 title: CMMI Review meeting field reference 
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Codex & TFS
 description: Definition of fields used to track review meetings in the CMMI process for Visual Studio Team Services & Team Foundation Server
 ms.prod: devops
 ms.technology: devops-agile
@@ -14,7 +14,7 @@ ms.date: 01/20/2017
 
 # Review meeting field reference (CMMI)
 
-[!INCLUDE [temp](../../../_shared/dev15-version-header.md)]
+[!INCLUDE [temp](../../../../_shared/version-vsts-tfs-all-versions.md)]
 
 The following fields track information and changes for review meetings. Your team can specify this kind of information by using the Review type of work item that is provided with the [CMMI process](../cmmi-process.md).  
   

@@ -1,6 +1,6 @@
 ---
 title: Email or print work items
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Codex & TFS
 description: Email or print work items to share work tracking information in Visual Studio Team Services & Team Foundation Server
 ms.technology: devops-agile
 ms.prod: devops
@@ -15,7 +15,7 @@ ms.date: 11/27/2017
 
 # Email or print work items 
 
-**VSTS | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013 | Visual Studio 2015 | Team Explorer Everywhere** 
+**Azure Codex | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013 | Visual Studio 2015 | Team Explorer Everywhere** 
 
 
 Using work items to track your work provides a host of benefits, including the ability to easily share information. You can capture most information within the work item Description or other rich-text formatted field. If you need to maintain the information in a different format, you can easily link to or attach a file.  
@@ -72,7 +72,7 @@ Here's a list of the most common ways in which teams share information and plans
 
 
 <tr>
-<td align="left">[Release summary (VSTS)](#release-summary) </td>
+<td align="left">[Release summary (Azure Codex)](#release-summary) </td>
 <td>![checkmark](../_img/icons/checkmark.png)</td>
 <td>  </td>
 <td>  </td>
@@ -99,11 +99,11 @@ You can quickly email a summary of one or more work items. Summaries include the
 
 # [Browser](#tab/browser)
 
-### VSTS
+### Azure Codex
 <a id="team-services-email" />  
 **From the web portal**, open the ![Actions icon](../_img/icons/actions-icon.png) Actions menu and choose the email option. 
    
-![Email work item from VSTS](../track/_img/share-plans-email-work-item-ts.png)    
+![Email work item from Azure Codex](../track/_img/share-plans-email-work-item-ts.png)    
 
 ### TFS, Web Portal
 <a id="tfs-portal-email" />
@@ -144,7 +144,7 @@ Depending on the option and client you choose, summary lists may or may not incl
  
 # [Browser](#tab/browser)
 
-### VSTS, TFS 2017 
+### Azure Codex, TFS 2017 
 
 <a id="team-services-email-list" /> 
 <a id="email-list-web-portal" >  </a> 
@@ -203,7 +203,7 @@ With this option, you can copy an HTML formatted table of selected items. You ca
 
     The formatted table contains a link to each work item included in your selected results list.  
 
-3.  Paste the contents of the clipboard into your email client or other application. To open a linked work item, requires users to have read access to the team project or area node for those work items.   
+3.  Paste the contents of the clipboard into your email client or other application. To open a linked work item, requires users to have read access to the project or area node for those work items.   
 
 <a id="print-items"></a>
 ## Print items  
@@ -220,7 +220,7 @@ To print the details of a work item, open a query in Visual Studio that contains
 > All URLs you copy, regardless of the client you use to copy them, opens the work item in the web portal. 
 
 # [Browser](#tab/browser)
-### VSTS, TFS 2017 
+### Azure Codex, TFS 2017 
 <a id="team-services-copy-url" />
 
 **From the web portal**, simply copy the URL from the web browser address or hover over the title and then click the ![Copy to clipboard icon](../backlogs/_img/icon-copy-to-clipboard.png) copy-to-clipboard icon.
@@ -260,7 +260,7 @@ From the Release hub, choose a specific release and click the ![email](../_img/i
 
 
 > [!NOTE]    
-><b>Feature availability: </b>This feature is available from VSTS and TFS 2018 and later versions.
+><b>Feature availability: </b>This feature is available from Azure Codex and TFS 2018 and later versions.
  
 
 ![Release summary, send email](../track/_img/share-plans-email-release-definition.png)

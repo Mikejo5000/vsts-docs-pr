@@ -1,6 +1,6 @@
 ---
 title: Work item templates
-titleSuffix: VSTS & TFS   
+titleSuffix: Azure Codex & TFS   
 description: Add and manage work item templates to pre-populate fields in work item forms in Visual Studio Team Services & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
@@ -16,7 +16,7 @@ ms.date: 03/20/2018
 
 # Use templates to add and update work items 
 
-**VSTS | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013 | Visual Studio** 
+**Azure Codex | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013 | Visual Studio** 
 
 <!--- Supports FWLINK http://go.microsoft.com/fwlink/?LinkId=824070 -->
 
@@ -26,7 +26,7 @@ With work item templates you can quickly create work items which have pre-popula
 > Work item templates are distinct from process templates. For information on process templates, see [Choose a process template](../work-items/guidance/choose-process.md) or these specific topics for the default process templates: [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md).  
 
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 Note that within the browser context or web portal, work item templates are associated with a team. Only those templates defined for a team are accessible when working in a team context, either through a work item form or bulk update context menu.
 
 ::: moniker-end
@@ -40,7 +40,7 @@ The steps to capture a work item differ based on the platform, version, and clie
 
 <a id="team-services-capture" /> 
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 
 1. Open a work item with the fields defined that you want to capture, and click the ![Actions icon](../_img/icons/actions-icon.png) actions icon to open the menu. Choose Templates and then Capture.   
    
@@ -133,7 +133,7 @@ The main method for adding a work item using a template is to open the template 
 
 <a id="team-services-copy-link" /> 
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 
 1. Click the ![Actions icon](../_img/icons/actions-icon.png) actions icon and choose Copy link.  
    
@@ -175,7 +175,7 @@ See [Capture a work item as a template for TFS web portal](#capture).
 ---
  
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 
 <a id="markdown-widget"> </a>
 ### Add a template link to the dashboard   
@@ -186,11 +186,11 @@ You can add links to a markdown widget that appear on your team dashboard in the
 
 ::: moniker range="tfs-2015"
 > [!NOTE]   
-> Multiple team dashboards and the Markdown widget are available for VSTS and TFS 2015.2 and later versions. 
+> Multiple team dashboards and the Markdown widget are available for Azure Codex and TFS 2015.2 and later versions. 
 
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 
 For example, the following widget contains links to three templates.  
 
@@ -208,7 +208,7 @@ You can apply a template to a single work item or perform a bulk update of sever
 <a id="team-services-apply" /> 
 # [Browser](#tab/browser)
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 #### Apply a template within a work item form 
 
 1. Open the work item that you want to update using the fields defined within a template, and click the ![actions icon](../_img/icons/actions-icon.png) actions icon to access your menu. Click Templates and then click the name of a pre-defined template.      
@@ -222,7 +222,7 @@ You can apply a template to a single work item or perform a bulk update of sever
 
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2013 <= tfs-2018"
+::: moniker range=">= tfs-2013"
 
 #### Apply a template to several work items (bulk update) 
 
@@ -263,7 +263,7 @@ You can apply a template to a single work item or perform a bulk update of sever
 # [Browser](#tab/browser)  
 
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 
 You can view the list of templates defined for each work item type, and also add, edit, copy, delete, and copy the link of a template. All templates are defined and managed for a team. 
  
@@ -372,13 +372,13 @@ To change the directory where templates are stored, click the Configure link, or
 
 --- 
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 
 ## Add or remove tags from templates 
 
 <!---
 > [!NOTE]  
->**Feature availability**: The ability to add and remove tags from a template is supported from VSTS and TFS 2017 and later versions. 
+>**Feature availability**: The ability to add and remove tags from a template is supported from Azure Codex and TFS 2017 and later versions. 
 -->
 
 You can add tags to a template and they'll be applied to the work item when you use the template. 
@@ -425,7 +425,7 @@ Based on the platform or version you use, you can perform the following tasks.
 <table width="85%">
 <tr>
 <th width="30%">Task </th>
-<th width="15%" align="center" valign="bottom">VSTS</th>
+<th width="15%" align="center" valign="bottom">Azure Codex</th>
 <th width="15%" align="center" valign="bottom">TFS 2013, TFS 2015<br/>(web portal)</th>
 <th width="15%" align="center" valign="bottom">TFS 2017<br/>(web portal)</th>
 <th width="20%" align="center" valign="bottom">VS 2013, VS 2015 <br/>(with power tools <sup>1</sup>) </th>

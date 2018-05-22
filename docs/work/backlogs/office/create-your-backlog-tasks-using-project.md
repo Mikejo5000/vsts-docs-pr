@@ -1,6 +1,6 @@
 ---
 title: Create your backlog and tasks using Project
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Codex & TFS
 description: Add items, plan, order, and estimate your backlog of deliverables in Visual Studio Team Services or Team Foundation Server  
 ms.technology: devops-agile
 ms.prod: devops
@@ -14,17 +14,17 @@ ms.date: 07/21/2017
 
 # Create your backlog and tasks using Project 
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../../_shared/version-vsts-tfs-all-versions.md)]
 
-If Office Project is your preferred tool for tacking projects, you can use it to create your backlog, schedule tasks, assign resources, and track work that is also tracked in VSTS or Team Foundation Server (TFS). You can use Project while your development team uses the tools they prefer, all while sharing information transparently.
+If Office Project is your preferred tool for tacking projects, you can use it to create your backlog, schedule tasks, assign resources, and track work that is also tracked in Azure Codex or Team Foundation Server (TFS). You can use Project while your development team uses the tools they prefer, all while sharing information transparently.
 
 Working in Project is similar to publishing and refreshing work items using [Office Excel](bulk-add-modify-work-items-excel.md), with a few differences as described [later in this topic](#differences).
 
 Use this topic to learn how to:  
 
 > [!div class="checklist"]   
-> * Connect a Project plan to a team project  
-> * Add tasks to Project and publish them as work items to VSTS or TFS       
+> * Connect a Project plan to a project  
+> * Add tasks to Project and publish them as work items to Azure Codex or TFS       
 > * Indent tasks to create parent-child links 
 > * Link tasks to create predecessor-successor links  
 > * View how Project columns map to work item fields    
@@ -35,28 +35,28 @@ Use this topic to learn how to:
 
 ## Add tasks and publish work items
 
-1.  If you don't have Office Project 2007 or a more recent version, [install it](https://products.office.com/project). For VSTS and TFS 2017 and later versions, you'll need Project 2010 or later version.  
+1.  If you don't have Office Project 2007 or a more recent version, [install it](https://products.office.com/project). For Azure Codex and TFS 2017 and later versions, you'll need Project 2010 or later version.  
  
 	> [!NOTE]  
-	>You can't use Office Project 365 to connect to VSTS and TFS. 
+	>You can't use Office Project 365 to connect to Azure Codex and TFS. 
 
-2.  If you haven't installed a version of [Visual Studio (2010 or later)](https://www.visualstudio.com/downloads/download-visual-studio-vs) or the [Team Foundation Server Standalone Office Integration 2015 (free)](https://www.visualstudio.com/downloads/#team-foundation-server-office-integration-2015-update-3-1), you'll need to install one of these versions to connect to a team project hosted on VSTS or an on-premises TFS. 
+2.  If you haven't installed a version of [Visual Studio (2010 or later)](https://www.visualstudio.com/downloads/download-visual-studio-vs) or the [Team Foundation Server Standalone Office Integration 2015 (free)](https://www.visualstudio.com/downloads/#team-foundation-server-office-integration-2015-update-3-1), you'll need to install one of these versions to connect to a project hosted on Azure Codex or an on-premises TFS. 
 
 	> [!NOTE]    
-	>The only way to get the Team Foundation plug-in is by installing one of the latest editions of Visual Studio or the TFS Standalone Office Integration installer. TFS Office Integration 2015 supports connection to VSTS and TFS from Excel, Project, and the PowerPoint-based storyboarding tool. 
+	>The only way to get the Team Foundation plug-in is by installing one of the latest editions of Visual Studio or the TFS Standalone Office Integration installer. TFS Office Integration 2015 supports connection to Azure Codex and TFS from Excel, Project, and the PowerPoint-based storyboarding tool. 
 
 3.  In Project, start with a blank worksheet. If you don't see the **Team** ribbon (or the **Team** menu if you use Project 2007) see step 2 or [TFS-Office integration issues](tfs-office-integration-issues.md). 
 
 	> [!TIP]  
 	>If you want to first import a list or tree of work items you've already defined, follow steps 3 and 4 under [Bulk add or modify work items with Excel, Add work items](bulk-add-modify-work-items-excel.md#add-work-items). In the New list dialog, select the **Query** that contains the work items you want to import. 
 
-    ![Connect to a team project from Microsoft Project](_img/create-your-backlog-tasks-using-project/IC658311.png)
+    ![Connect to a project from Microsoft Project](_img/create-your-backlog-tasks-using-project/IC658311.png)
 
     Another way to start is to open a backlog query in Team Explorer and from the context menu, choose **Open Query in Microsoft Project**.
 
     >**Tip:**  If the **Team** ribbon no longer appears, you might need to [re-enable it](https://msdn.microsoft.com/library/vstudio/ms268871.aspx).
 
-4.  Connect to TFS and the team project that you want to plan. If you can't connect, [get added as a team member](../../scale/multiple-teams.md).
+4.  Connect to TFS and the project that you want to plan. If you can't connect, [get added as a team member](../../scale/multiple-teams.md).
 
     ![ALM\_EXL\_Connect](_img/create-your-backlog-tasks-using-project/IC680074.png)
 
@@ -64,9 +64,9 @@ Use this topic to learn how to:
 
     ![ALM\_EXL\_AddServer](_img/create-your-backlog-tasks-using-project/IC658167.png)
 
-    Project is now bound to your team project. The Team Foundation Gantt view supports entry and display of several TFS fields.
+    Project is now bound to your project. The Team Foundation Gantt view supports entry and display of several TFS fields.
 
-    ![Project plan bound to a team project in TFS](_img/create-your-backlog-tasks-using-project/IC658312.png)
+    ![Project plan bound to a project in TFS](_img/create-your-backlog-tasks-using-project/IC658312.png)
 
 5.  Add task information and then publish the project. To add a work item, specify the **Title**, **Work Item Type**, **Publish and Refresh**, and any other required fields. Resize and move columns using standard [Project methods](http://office.microsoft.com/client/helppreview14.aspx?AssetId=HP010351693&lcid=1033&NS=WINPROJ&Version=14&tl=2&pid=CH010359308&CTT=4).
 
@@ -108,21 +108,21 @@ When you link two tasks and publish your plan, TFS creates predecessor-successor
 
 Although the work tracking system tracks predecessor-successor dependencies as work item links, it does not track dependency types, lead and lag time, or other constraints that Project does.
 
-## Specify data for other VSTS/TFS fields 
+## Specify data for other Azure Codex/TFS fields 
 
-To enter data into other VSTS/TFS fields, switch to the Team Foundation Task Sheet.
+To enter data into other Azure Codex/TFS fields, switch to the Team Foundation Task Sheet.
 
 ![Open Team Foundation Task View in Project](_img/create-your-backlog-tasks-using-project/IC660422.png)  
 
-This view displays all the VSTS/TFS fields that have been mapped to Project.
+This view displays all the Azure Codex/TFS fields that have been mapped to Project.
 
 ![Team Foundation Task Sheet view](_img/create-your-backlog-tasks-using-project/IC697756.png)  
   
 Optionally, you can add a mapped TFS field as a column to the Team Foundation Gantt view. To see which TFS fields are mapped, open **Column Mappings**.
 
-![View which VSTS/TFS  fields are mapped to project fields](_img/create-your-backlog-tasks-using-project/IC658915.png)  
+![View which Azure Codex/TFS  fields are mapped to project fields](_img/create-your-backlog-tasks-using-project/IC658915.png)  
 
-To add more TFS  fields or change the way fields are mapped, see [Customize the Microsoft Project field mapping file](https://msdn.microsoft.com/en-us/library/ms404686.aspx). This feature is available for both on-premises TFS and cloud-hosted VSTS. 
+To add more TFS  fields or change the way fields are mapped, see [Customize the Microsoft Project field mapping file](https://msdn.microsoft.com/en-us/library/ms404686.aspx). This feature is available for both on-premises TFS and cloud-hosted Azure Codex. 
 
 ## Tips for working in Project and other Team Foundation clients
 

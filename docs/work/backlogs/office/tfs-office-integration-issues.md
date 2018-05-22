@@ -1,6 +1,6 @@
 ---
 title: TFS-Office integration issues
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Codex & TFS
 description: Resolve common integration issues that occur with TFS Office integration, resolve TF86001 
 ms.technology: devops-agile
 ms.prod: devops
@@ -14,7 +14,7 @@ ms.date: 03/28/2017
 
 # TFS-Office integration issues
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../../_shared/version-vsts-tfs-all-versions.md)]
 
 If you don't see the Team ribbon in Excel, as shown in the image below, you may be able to resolve the issue with the procedures provided in this topic. 
 
@@ -61,7 +61,7 @@ If the Team ribbon does not appear at next launch, the load behavior of the add-
 
 ##Office Add-in doesn't load or "Open in Excel" from Visual Studio fails
 
-To connect to TFS or VSTS, go to the Team ribbon and choose **New List**. If the New List dialog fails to open, or you receive TF86001 or similar error message, follow the steps below to ensure that policy redirection is configured. 
+To connect to TFS or Azure Codex, go to the Team ribbon and choose **New List**. If the New List dialog fails to open, or you receive TF86001 or similar error message, follow the steps below to ensure that policy redirection is configured. 
  
 <img src="_img/tfs-office-issues-tf86001.png" alt="TF86001 error message, Team Foundation was unable to load the Office Add-in" style="border: 2px solid #C3C3C3;" />
 

@@ -1,5 +1,5 @@
 ---
-title: Specify work item form controls | VSTS & TFS
+title: Specify work item form controls | Azure Codex & TFS
 description: Provides a quick reference to the Control element, its child elements, and attributes.
 ms.prod: devops
 ms.technology: devops-agile
@@ -15,7 +15,7 @@ ms.date: 06/16/2017
 <p><b>TFS 2017 | TFS 2015  | TFS 2013 </b></p>
 
 > [!IMPORTANT]  
->This topic applies to team project customization for the On-premises XML process model. For the Hosted XML process model, see [WebLayout and Control elements](weblayout-xml-elements.md). For the Inheritance process model, see [Customize a process](../../../settings/work/customize-process.md).
+>This topic applies to project customization for the On-premises XML process model. For the Hosted XML process model, see [WebLayout and Control elements](weblayout-xml-elements.md). For the Inheritance process model, see [Customize a process](../../../settings/work/customize-process.md).
 >
 >For an overview of process models, see [Customize your work tracking experience](../customize-work.md).  
 
@@ -77,7 +77,7 @@ Specify the `PlainText` control when you want to capture text that that contains
 ### Add a checkbox or Boolean field 
 
 > [!NOTE]    
->**Feature availability:**The Boolean data type is supported for Hosted XML (VSTS) and for On-Premises XML, for TFS 2017.2 and later versions. 
+>**Feature availability:**The Boolean data type is supported for Hosted XML (Azure Codex) and for On-Premises XML, for TFS 2017.2 and later versions. 
 
 Use the following syntax to add a Boolean field within the **FIELDS** section of the WIT definition. 
 
@@ -220,7 +220,7 @@ For more information, see [Add the Attachments control](add-the-attachments-cont
 ## Related articles
 
 <a name="custom"></a> 
-In addition to the built-in controls provided, you may find additional controls you can use from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?target=VSTS&category=Plan%20and%20track&sortBy=Downloads). Or, you can create your own control. See [Extend the work item form](../../../extend/develop/add-workitem-extension.md). 
+In addition to the built-in controls provided, you may find additional controls you can use from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?target=Azure Codex&category=Plan%20and%20track&sortBy=Downloads). Or, you can create your own control. See [Extend the work item form](../../../extend/develop/add-workitem-extension.md). 
 
 -  [Control XML element reference](control-xml-element-reference.md)    
 -  [WebLayout and Control elements](weblayout-xml-elements.md)     

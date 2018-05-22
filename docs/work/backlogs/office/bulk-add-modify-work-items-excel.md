@@ -1,6 +1,6 @@
 ---
 title: Bulk modify using Excel
-titleSuffix: VSTS & TFS  
+titleSuffix: Azure Codex & TFS  
 description: Use Excel to bulk add or modify work items--such as backlog items, tasks, bugs, or issues--in Visual Studio Team Services or Team Foundation Server   
 ms.technology: devops-agile
 ms.prod: devops
@@ -14,7 +14,7 @@ ms.date: 10/10/2017
 
 # Bulk add or modify work items with Excel 
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../../_shared/version-vsts-tfs-all-versions.md)]
 
 When you have a lot of work items to add or modify, using Excel can save you time. [Use a flat list](../../track/using-queries.md#flat-list-query) to bulk add or modify several types of work items at once, such as backlog items, tasks, bugs, or issues. [Use a tree list](../../track/using-queries.md#tree-query) to bulk add or modify work items and their parent-child links.
 
@@ -23,8 +23,8 @@ You can also bulk add and modify work items using [Microsoft Project](create-you
 In this topic you'll learn:  
 
 > [!div class="checklist"] 
-> * Connect to a team project from Excel 
-> * Add or edit work items and publish your changes to TFS or VSTS
+> * Connect to a project from Excel 
+> * Add or edit work items and publish your changes to TFS or Azure Codex
 > * Refresh your Excel worksheet with the latest changes made to the work tracking data store   
 > * Select user accounts  
 > * Add hierachically linked backlog items and tasks   
@@ -32,17 +32,17 @@ In this topic you'll learn:
   
 
 > [!NOTE]  
->You can't use Office Project 365 to connect to VSTS and TFS. Also, you can't use Excel to export and import test case steps or other test artifacts. Instead, use the [bulk edit features supported via the web portal](../../../manual-test/getting-started/create-test-cases.md).  
+>You can't use Office Project 365 to connect to Azure Codex and TFS. Also, you can't use Excel to export and import test case steps or other test artifacts. Instead, use the [bulk edit features supported via the web portal](../../../manual-test/getting-started/create-test-cases.md).  
 
 <a id="add-work-items"> </a>  
 ## Add work items
 
-1.  If you don't have Office Excel 2007 or a more recent version, [install it](https://products.office.com/excel). For VSTS and TFS 2017 and later versions, you'll need Excel 2010 or a later version. 
+1.  If you don't have Office Excel 2007 or a more recent version, [install it](https://products.office.com/excel). For Azure Codex and TFS 2017 and later versions, you'll need Excel 2010 or a later version. 
 
-2.  If you haven't installed a version of [Visual Studio (2010 or later)](https://www.visualstudio.com/downloads/download-visual-studio-vs) or the [Team Foundation Server Standalone Office Integration (free)](https://www.visualstudio.com/downloads), you'll need to install one of these versions to connect to a team project hosted on VSTS or an on-premises TFS. 
+2.  If you haven't installed a version of [Visual Studio (2010 or later)](https://www.visualstudio.com/downloads/download-visual-studio-vs) or the [Team Foundation Server Standalone Office Integration (free)](https://www.visualstudio.com/downloads), you'll need to install one of these versions to connect to a project hosted on Azure Codex or an on-premises TFS. 
 	
 	> [!NOTE]   
-	>The only way to get the Team Foundation plug-in is by installing one of the latest editions of Visual Studio or the TFS Standalone Office Integration installer. The TFS Office Integration supports connection to VSTS and TFS from Excel, Project, and the PowerPoint-based storyboarding tool.
+	>The only way to get the Team Foundation plug-in is by installing one of the latest editions of Visual Studio or the TFS Standalone Office Integration installer. The TFS Office Integration supports connection to Azure Codex and TFS from Excel, Project, and the PowerPoint-based storyboarding tool.
 
 3.  In Excel, start with a blank worksheet. If you don't see the **Team** ribbon (or the **Team** menu if you use Excel 2007), see step 2 or [TFS-Office integration issues](tfs-office-integration-issues.md). 
 
@@ -51,19 +51,19 @@ In this topic you'll learn:
     > [!TIP]  
     >If the **Team** ribbon no longer appears, you might need to [re-enable it](https://msdn.microsoft.com/library/ms268871.aspx). 
 
-4.  Connect to your team project hosted in VSTS or an on-premises TFS where you want to add work items. If you can't connect, [get added as a team member](../../../security/add-users-team-project.md#add-team-members).  
+4.  Connect to your project hosted in Azure Codex or an on-premises TFS where you want to add work items. If you can't connect, [get added as a team member](../../../security/add-users-team-project.md#add-team-members).  
 
     ![ALM\_EXL\_Connect](_img/IC680074.png)
 
-    If it is your first time connecting from Excel, you might have to add your VSTS account or on-premises TFS to the list of recognized servers.
+    If it is your first time connecting from Excel, you might have to add your Azure Codex account or on-premises TFS to the list of recognized servers.
 
     ![ALM\_EXL\_AddServer](_img/IC658167.png)
 
     ![Select input list](_img/bulk-modify-excel-new-input-list.png)
 
-5.  Your worksheet is now bound to your team project as a flat list. What this means is that you can add work items to the team project from the worksheet or add work items to the worksheet from the team project.
+5.  Your worksheet is now bound to your project as a flat list. What this means is that you can add work items to the project from the worksheet or add work items to the worksheet from the project.
 
-    ![Empty flat list connected to a team project](_img/bulk-modify-excel-connected-list.png)
+    ![Empty flat list connected to a project](_img/bulk-modify-excel-connected-list.png)
 
 6.  Specify the titles of the work items you want to add and their work item type.
 
@@ -244,7 +244,7 @@ If you're working with a non-query input list, you can add work items by choosin
 
 ## Related articles
 
-While the examples shown here represent connecting to an on-premises TFS, you can connect to VSTS and bulk add and modify work items. Once you've connected to the cloud server, you use the same procedures to work in Excel. 
+While the examples shown here represent connecting to an on-premises TFS, you can connect to Azure Codex and bulk add and modify work items. Once you've connected to the cloud server, you use the same procedures to work in Excel. 
 
 If you're just getting started, review these topics for more information about work item tracking and using Excel: 
 
@@ -275,9 +275,9 @@ When you open a direct links query in Excel, the Team Foundation add-in converts
 
 ### Multiple worksheets
 
-Each worksheet in Excel can contain a different input list or query. However, all worksheets within the workbook must connect to the same team project within a project collection.  
+Each worksheet in Excel can contain a different input list or query. However, all worksheets within the workbook must connect to the same project within a project collection.  
 
-To bulk add or modify work items in a different team project, open a new Excel workbook. 
+To bulk add or modify work items in a different project, open a new Excel workbook. 
 
 ### Use Excel cut and paste functions
 

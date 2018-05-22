@@ -1,6 +1,6 @@
 ---
 title: Use the search box for quick queries
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Codex & TFS
 description: Use the search box to create a query and filter for assigned to, created by, state, or work item type in Visual Studio Team Services & Team Foundation Server  
 ms.prod: devops
 ms.technology: devops-agile
@@ -14,15 +14,15 @@ ms.date: 03/20/2018
 
 # Perform an adhoc search
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 <a id="search-box"/>
 
 You can find items using shortcut filters or by specifying keywords or phrases, specific fields/field values, assignment or date modifications, or using Equals, Contains, and Not operators.
 
-Search box queries automatically scope to the items defined to the team project you're currently connected to. To search across team projects, use the [query editor](using-queries.md). Also, searching is not case-sensitive.
+Search box queries automatically scope to the items defined to the project you're currently connected to. To search across projects, use the [query editor](using-queries.md). Also, searching is not case-sensitive.
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 <a id="search-selector" /> 
 <a id="search-box" /> 
 ## Code search vs work item search
@@ -33,10 +33,10 @@ Search box queries automatically scope to the items defined to the team project 
 
 If you've added the [Code Search extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search), you'll notice that the search box moves to the top row, and you can quickly switch between work item and code searches. 
 ::: moniker-end
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 The search box retains the last used search context for each hub. To learn more about code search, see [Get started with Code Search](../../search/code/code-search.md).
 
-Type the ID in the Search work items box and then choose the search icon. The Search work items box is available from a team project context.  
+Type the ID in the Search work items box and then choose the search icon. The Search work items box is available from a project context.  
 
 ::: moniker-end
 
@@ -46,7 +46,7 @@ Type the ID in the Search work items box and then choose the search icon. The Se
 
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
  
 > [!div class="mx-imgBorder"]
 ![Search Work Items Text Box](_img/search-box/search-box-vsts.png)

@@ -1,6 +1,6 @@
 ---
 title: Work tracking object limits 
-titleSuffix: VSTS 
+titleSuffix: Azure Codex 
 description: Limits placed on the number of objects that can be specified for the Inheritance and Hosted XML process models for Visual Studio Team Services 
 ms.technology: devops-agile
 ms.prod: devops
@@ -14,7 +14,7 @@ ms.date: 06/02/2017
 
 # Work tracking object limits 
 
-**VSTS**
+**Azure Codex**
 
 When customizing the work item types (WITs) defined in the Inheritance or Hosted XML process models, be aware of the limits placed on objects defined in this topic. To learn about process models, see [Customize your work tracking experience](customize-work.md).
 
@@ -28,7 +28,7 @@ Below you find maximum number of object in the Inheritance and Hosted XML proces
 | Fields defined for an account | 4096  | 4096 |
 | Fields defined for a process | 512  | 512 |
 | Fields defined for a work item type | 512  | 512 |
-| Pick lists defined for an account or collection | 512  | - |
+| Pick lists defined for an organization or collection | 512  | - |
 | Pick list items defined for a list | 512  | 512 |
 | Pick list item character length | 256  | - |
 | Workflow states defined for a work item type | 32  | 16 |

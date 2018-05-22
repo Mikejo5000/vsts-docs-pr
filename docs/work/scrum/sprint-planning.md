@@ -1,6 +1,6 @@
 ---
 title: Sprint planning 
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Codex & TFS
 description: Plan a sprint or iteration working with Scrum methods in Visual Studio Team Services & Team Foundation Server
 ms.technology: devops-agile
 ms.prod: devops
@@ -9,6 +9,7 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
+monikerRange: '>= tfs-2013'
 ms.date: 03/20/2018
 ---
 
@@ -54,11 +55,11 @@ By setting team capacity and estimating tasks, the team can see when the team or
 >When you've completed your sprint plan, your sprint backlog should contain all the information your team needs to successfully complete work within the time allotted without having to rush at the end. 
 
 
-##First pass: identify an initial set of work to complete
+## First pass: identify an initial set of work to complete
    
 [!INCLUDE [temp](../_shared/image-differences.md)]  
 
-To plan sprints, you should be a member of the team and belong to the Contributors group. If you don't have access to the team project, [get invited to the team](../scale/multiple-teams.md#add-team-members).  
+To plan sprints, you should be a member of the team and belong to the Contributors group. If you don't have access to the project, [get invited to the team](../scale/multiple-teams.md#add-team-members).  
 
 1. Before you start planning your sprint, you'll want to have [created, prioritized, and estimated your backlog](../backlogs/create-your-backlog.md). 
 
@@ -108,7 +109,7 @@ Add as many tasks as needed to capture the work required to complete each item. 
 
 2. Name the task and enter an estimate for Remaining Work. Also, if you know who'll perform the work, go ahead and assign the task to that team member.  
 
-	<!--- **Feature availability:** From the web portal for VSTS and TFS 2017, you'll have access to the [new form with the new work tracking experience](../backlogs/add-work-items.md). For TFS 2015 and ealier versions, the old form is supported.   --> 
+	<!--- **Feature availability:** From the web portal for Azure Codex and TFS 2017, you'll have access to the [new form with the new work tracking experience](../backlogs/add-work-items.md). For TFS 2015 and ealier versions, the old form is supported.   --> 
 	
 	::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
     <a id="task-form-team-services" /> 
@@ -176,7 +177,7 @@ Multi-select of work items on the product and sprint backlogs works in the same 
 
 <!---
 > [!NOTE]     
-><b>Feature availability: </b> Multi-select of work items on the backlog and sprint backlogs is currently supported from VSTS and TFS 2015.1 and later versions. This feature works in the same way as multi-select works within query results. 
+><b>Feature availability: </b> Multi-select of work items on the backlog and sprint backlogs is currently supported from Azure Codex and TFS 2015.1 and later versions. This feature works in the same way as multi-select works within query results. 
 -->
 
 With multi-select, you can perform several actions on several work items at once, such as: 
@@ -217,7 +218,7 @@ If you need to add or rename the sprints your team uses, you must first [define 
 <a id="share" >  </a>
 ### Share your sprint plan
  
-Any stakeholder on your team (someone with permissions to connect to your team project) can view your sprint plan. 
+Any stakeholder on your team (someone with permissions to connect to your project) can view your sprint plan. 
 Simply send them the URL of your sprint backlog page. But also, you can share it with them through email or print a version. 
 
 To email it, create and save the query for the sprint backlog. 
@@ -229,7 +230,7 @@ Then, open the query and click the email icon.
 <img src="_img/IC795975.png" alt="Email query" style="border: 1px solid #C3C3C3;" />  
 
 
-In the form that appears, enter the name(s) of valid users (ones who have access to the team project). 
+In the form that appears, enter the name(s) of valid users (ones who have access to the project). 
 
 Or, you can select all the items in the list, choose **Copy as HTML**, and paste the formatted list into an email form or Word document. See [Copy a list of work items](../backlogs/copy-list.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json). 
 

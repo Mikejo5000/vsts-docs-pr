@@ -1,6 +1,6 @@
 ---
 title: Customize your work tracking experience
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Codex & TFS
 description: Guide to configuring and customizing work tracking features in Visual Studio Team Services & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
@@ -15,13 +15,13 @@ ms.date: 03/20/2018
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-As you plan and track your project, you'll find you may want to configure a feature or customize your experience to meet your team's tracking needs. You configure teams and team Agile tools through the web portal administration context. The method you use to customize team projects, which impacts all teams, depends on the process model you use.  
+As you plan and track your project, you'll find you may want to configure a feature or customize your experience to meet your team's tracking needs. You configure teams and team Agile tools through the web portal administration context. The method you use to customize projects, which impacts all teams, depends on the process model you use.  
 
 Customizations you make occur at one of three levels:   
 
 - **Team assets or tools**: Each team can customize or configure their specific tools, for details,see [About teams and Agile tools](../../settings/about-teams-and-settings.md)
-- **Team project level**: Add or modify work item types, data fields, backlog levels, and other objects shared across teams  
-- **Object level**: Grant or restrict access to work tracking tools, which includes setting permissions for objects and the team project and assigning users or groups to specific access levels.  
+- **Project level**: Add or modify work item types, data fields, backlog levels, and other objects shared across teams  
+- **Object level**: Grant or restrict access to work tracking tools, which includes setting permissions for objects and the project and assigning users or groups to specific access levels.  
 
 > [!NOTE]    
 >If you're new to the work tracking system, see [Get started with Agile tools to plan and track work](../backlogs/overview.md). 
@@ -31,7 +31,7 @@ Customizations you make occur at one of three levels:
 <a id="shared-resources"></a>
 ## Shared resources  
 
-Each team project provides a number of shared resources that support all teams added to the project. You configure these features through the user interface or the admin context of the web portal. To understand how the system uses area and iteration paths, see [About area and iteration paths](about-areas-iterations.md). 
+Each project provides a number of shared resources that support all teams added to the project. You configure these features through the user interface or the admin context of the web portal. To understand how the system uses area and iteration paths, see [About area and iteration paths](about-areas-iterations.md). 
 
 > [!div class="mx-tdCol2BreakAll"]  
 > | Area path pick lists | Sprint/iteration pick lists |
@@ -47,14 +47,14 @@ Each team project provides a number of shared resources that support all teams a
 
 <a id="process-models"></a>
 
-## Team projects and process customizations  
+## Projects and process customizations  
 
-Your team project determines the objects available to tracking work and the configuration of Agile tools. Specifically, the team project determines the work item types (WITs)&mdash;user stories, tasks, bugs&mdash; and the data fields used to capture information. Customized objects are shared across teams added to the team project.  
+Your project determines the objects available to tracking work and the configuration of Agile tools. Specifically, the project determines the work item types (WITs)&mdash;user stories, tasks, bugs&mdash; and the data fields used to capture information. Customized objects are shared across teams added to the project.  
 
 > [!NOTE]    
 >The method you use to customize work tracking depends on the process model you subscribe to: 
->- **Inheritance**: Supports WSIWIG customization, available for VSTS only  
->- **Hosted XML**: Supports customization through import/export of process templates, available for VSTS only    
+>- **Inheritance**: Supports WSIWIG customization, available for Azure Codex only  
+>- **Hosted XML**: Supports customization through import/export of process templates, available for Azure Codex only    
 >- **On-premises XML**: Supports customization through import/export of XML definition files for work tracking objects      
  
 The following table summarizes the differences between the three supported process models. For definitions of the main work tracking objects, see [Agile glossary](../work-items/agile-glossary.md).  
@@ -99,7 +99,7 @@ The following table summarizes the differences between the three supported proce
 
 
 <tr>
-<td align="left">Updated process changes automatically apply to team projects</td>
+<td align="left">Updated process changes automatically apply to projects</td>
 <td>![checkmark](../_img/icons/checkmark.png)</td>
 <td>![checkmark](../_img/icons/checkmark.png)</td>
 <td> </td>
@@ -127,14 +127,14 @@ The following table summarizes the differences between the three supported proce
 </tr>
 
 <tr>
-<td align="left">Use the [**witadmin** command-line tools](reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md) to edit team projects</td>
+<td align="left">Use the [**witadmin** command-line tools](reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md) to edit projects</td>
 <td> </td>
 <td> </td>
 <td>![checkmark](../_img/icons/checkmark.png)</td>
 </tr>
 
 <tr>
-<td align="left">Use the **witadmin** command-line tools to list information about team projects</td>
+<td align="left">Use the **witadmin** command-line tools to list information about projects</td>
 <td>![checkmark](../_img/icons/checkmark.png)</td>
 <td>![checkmark](../_img/icons/checkmark.png)</td>
 <td>![checkmark](../_img/icons/checkmark.png)</td>
@@ -174,7 +174,7 @@ Otherwise, to grant or restrict access to select features or functions, review o
 > [!div class="mx-tdBreakAll"]  
 > |Manage access   |Permissions  |Shared resources  |
 > |-------------|----------|---------|
-> |- [Add team members (VSTS)](../../accounts/add-team-members-vs.md)<br/>- [Add team members (TFS)](../scale/multiple-teams.md#add-team-members)<br/>- [Stakeholder access](../../security/change-access-levels.md)<br/>- [VS Enterprise & Advanced access level](../../security/change-access-levels.md) |- [Area path permissions](../../security/set-permissions-access-work-tracking.md#set-permissions-area-path)<br/>- [Process permissions](../../security/set-permissions-access-work-tracking.md#process-permissions)<br/>- [Work item query and folder permissions](../track/set-query-permissions.md)<br/>- [Dashboard permissions](../../report/dashboards/dashboard-permissions.md#set-permissions)<br/>- [Plan permissions](../../security/set-permissions-access-work-tracking.md#plan-permissions)<br/>- [Tagging permissions](../../security/permissions.md#tags)<br/>- [Test permissions](../../security/permissions.md#project_test)| - [Alerts](../track/alerts-and-notifications.md)<br/>- [Area paths](set-area-paths.md)<br/>- [Iteration paths](set-iteration-paths-sprints.md)<br/>- [Queries](../track/using-queries.md)<br/>- [Tags](../track/add-tags-to-work-items.md) | 
+> |- [Add team members (Azure Codex)](../../accounts/add-team-members-vs.md)<br/>- [Add team members (TFS)](../scale/multiple-teams.md#add-team-members)<br/>- [Stakeholder access](../../security/change-access-levels.md)<br/>- [VS Enterprise & Advanced access level](../../security/change-access-levels.md) |- [Area path permissions](../../security/set-permissions-access-work-tracking.md#set-permissions-area-path)<br/>- [Process permissions](../../security/set-permissions-access-work-tracking.md#process-permissions)<br/>- [Work item query and folder permissions](../track/set-query-permissions.md)<br/>- [Dashboard permissions](../../report/dashboards/dashboard-permissions.md#set-permissions)<br/>- [Plan permissions](../../security/set-permissions-access-work-tracking.md#plan-permissions)<br/>- [Tagging permissions](../../security/permissions.md#tags)<br/>- [Test permissions](../../security/permissions.md#project_test)| - [Alerts](../track/alerts-and-notifications.md)<br/>- [Area paths](set-area-paths.md)<br/>- [Iteration paths](set-iteration-paths-sprints.md)<br/>- [Queries](../track/using-queries.md)<br/>- [Tags](../track/add-tags-to-work-items.md) | 
   
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 <a id="test-experience"></a>
@@ -199,7 +199,7 @@ See the following resources for additional usage and customization information:
 To add values for fields associated with user accounts such as **Assigned To** add users to a security group or by restricting access to a group or set of users. By default, the list for the Assigned To field contains the account names for all users and groups that have been added to the server. These accounts are often synchronized with Active Directory or Azure Active Directory. See [Add AD/Azure AD users or groups to a built-in security group](../../security/add-ad-aad-built-in-security-groups.md). 
 
 ## Less common customizations   
-You can only perform the following customizations when working with the Hosted XML or On-premises XML process models. The customizations made to process configuration apply to all teams added to the team project.  
+You can only perform the following customizations when working with the Hosted XML or On-premises XML process models. The customizations made to process configuration apply to all teams added to the project.  
 
 <a id="limits">  </a>
 ### Backlog and board limits (Hosted XML, On-premises XML) 
@@ -238,10 +238,10 @@ Do you want to customize your tools in a way that's not supported?
 
 Here are a few options available to you:  
 
-- Check out [Marketplace extensions](https://marketplace.visualstudio.com/VSTS) to see if there's a tool available for your purposes  
+- Check out [Marketplace extensions](https://marketplace.visualstudio.com/Azure Codex) to see if there's a tool available for your purposes  
 - Determine if a [Service hook](../../service-hooks/index.md) will satisfy your needs  
 - Create your own tool using [REST APIs](../../integrate/index.md)  
-- Add your feature request to our [VSTS user voice page](https://visualstudio.uservoice.com/forums/330519-team-services) page.   
+- Add your feature request to our [Azure Codex user voice page](https://visualstudio.uservoice.com/forums/330519-team-services) page.   
 
  
 

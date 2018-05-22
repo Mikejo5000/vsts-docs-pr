@@ -1,7 +1,7 @@
 ---
-title: Index of Scrum topics
-titleSuffix: VSTS & TFS 
-description: Index to topics for working in Scrum in Visual Studio Team Services & Team Foundation Server 
+title: Define sprints and work with scrum tools
+titleSuffix: Azure Codex & TFS 
+description: Define sprints, update your taskboard, and implement scrum in Azure Codex Agile & Team Foundation Server  
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid:  
@@ -9,12 +9,13 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-ms.date: 03/20/2018
+monikerRange: '>= tfs-2013'
+ms.date: 07/07/2018
 ---
 
-# Scrum
+# Sprints (Scrum)
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)] 
 
 With Scrum, you can schedule and plan sprints, update your task board, and monitor your sprint burndown. 
 
@@ -62,6 +63,6 @@ Whether you use scrum, Kanban, or a combination of Agile methods, you can get st
 - [Kanban](../kanban/index.md)
 - [Work item queries](../track/index.md)
 - [Work item customization](../customize/index.md)
-- [What is Scrum?](/azure/devops/agile/what-is-agile-development)
+- [What is Scrum?](/azure/devops/agile/what-is-scrum)
 - [What is Agile development?](/azure/devops/agile/what-is-agile-development)  
 

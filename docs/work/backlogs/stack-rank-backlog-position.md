@@ -1,6 +1,6 @@
 ---
 title: Stack rank or backlog priority
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Codex & TFS
 description: Understand how the stack rank or backlog priority fields determines the backlog position Visual Studio Team Services & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
@@ -17,7 +17,7 @@ ms.date: 08/28/2017
  
 # Backlog priority or stack rank order
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 <a id="change-position"> </a> 
 

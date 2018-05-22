@@ -1,11 +1,12 @@
 ---
 title: Change the workflow for a work item type
-titleSuffix: VSTS & TFS 
+titleSuffix: Azure Codex & TFS 
 description: Add States, Transitions, Reasons, or Actions to customize the workflow for a WIT in Team Foundation Server 
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: ca8dff64-7ece-46cf-b985-2751480dff32
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.manager: douge
 ms.topic: conceptual
 ms.date: 03/31/2017
@@ -27,7 +28,7 @@ The workflow determines the logical progression and regression of work that team
 > [!NOTE]  
 > This topic describes how to customize a workflow state. If instead, you want to change the State assigned to a specific work item, see one of the following topics: [Add work items, Update work status](../../work-items/work-item-form-controls.md#update-work-status), [Kanban board, Track work in progress](../../kanban/kanban-basics.md#track-work), or [Task board, Update task status](../../scrum/task-board.md#update-task-status). You can also perform a [bulk update of the State for many work items](../../backlogs/bulk-modify-work-items.md).
 > 
-> For information about build definition workflows, see [Get started with CI/CD](../../../build-release/actions/ci-cd-part-1.md).
+> For information about build definition workflows, see [Get started with CI/CD](../../../pipelines/actions/ci-cd-part-1.md).
 
 
 [!INCLUDE [temp](../../_shared/update-xml-wit.md)] 
@@ -296,4 +297,4 @@ You control the states to and from which team members can change a work item if 
 
 You can change the workflow or view the workflow state diagram that you are defining by using the Process Editor, available for TFS 2015 and earlier versions. You install it from [Microsoft Visual Studio Team Foundation Server 2015 Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power).
   
-You can support your users to visualize the workflow by installing the [State Model Visualization extension](https://marketplace.visualstudio.com/items?itemName=taavi-koosaar.StateModelVisualization) from the Visual Studio Marketplace. This tool supports both TFS and VSTS. 
+You can support your users to visualize the workflow by installing the [State Model Visualization extension](https://marketplace.visualstudio.com/items?itemName=taavi-koosaar.StateModelVisualization) from the Visual Studio Marketplace. This tool supports both TFS and Azure Codex. 

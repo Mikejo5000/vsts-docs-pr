@@ -1,9 +1,9 @@
 ---
 title: Manage issues or impediments 
-titleSuffix: VSTS & TFS 
+titleSuffix: Azure Codex & TFS 
 ms.global_help.title: Manage issues or impediments 
 ms.global_help.keywords: ms.vss-work-web.work-items-hub, 6
-description: Add work items to track problems, risks, or other issues that may impeded your plans or schedule - Visual Studio Team Services (VSTS) and Team Foundation 
+description: Add work items to track problems, risks, or other issues that may impeded your plans or schedule - Azure Code and Team Foundation 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 5B126205-599D-40EB-BC95-23CF1444EF2A
@@ -16,7 +16,7 @@ ms.date: 03/20/2018
 
 # Manage issues or impediments 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 <a name="manage-impediments"></a>
 
@@ -35,11 +35,11 @@ In this topic you'll learn:
 
 [!INCLUDE [temp](../_shared/image-differences-with-wits.md)] 
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
-<!---#### VSTS, TFS 2018, TFS 2017 (new form enabled) --> 
+::: moniker range=">= tfs-2017"
+<!---#### Azure Codex, TFS 2018, TFS 2017 (new form enabled) --> 
 From the **Work** hub, choose Impediment from the New Work Item list of options. Click the ![pin icon](../_img/icons/pin-icon.png) pin icon to have it show up within the Work hub drop down menu. 
 
-<img src="_img/cyb-new-work-item-impediment.png" alt="VSTS, TFS 2017 - Add an impediment" style="border: 1px solid #C3C3C3;" />  
+<img src="_img/cyb-new-work-item-impediment.png" alt="Azure Codex, TFS 2017 - Add an impediment" style="border: 1px solid #C3C3C3;" />  
   
 <!--- Or, from the Queries page, you can add a new work item.  
 

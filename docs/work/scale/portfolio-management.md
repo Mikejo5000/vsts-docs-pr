@@ -1,6 +1,6 @@
 ---
 title: Portfolio management
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Codex & TFS
 description: Configure teams to support portfolio backlogs to track progress across teams in Visual Studio Team Services & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
@@ -13,7 +13,7 @@ ms.topic: quickstart
 
 # Portfolio management 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 Portfolio backlogs provide product owners insight into the work performed by several agile feature teams. Product owners can define the high-level goals as Epics or Features, and feature teams can break these down into the user stories they'll prioritize and develop.  
 
@@ -80,7 +80,7 @@ Here, all backlog items have been assigned to feature teams. While all features 
 <img src="_img/pm-items-assigned-from-common-backlog.png" alt="Backlog view-Items assigned from a common backlog" style="border: 2px solid #C3C3C3;" />
 
 > [!TIP]    
->You can multi-select work items and perform a bulk edit of the area path. In VSTS you can do this from any backlog. From on-premises TFS, you can create a backlog query and [perform bulk updates from the query results](../backlogs/bulk-modify-work-items.md).    
+>You can multi-select work items and perform a bulk edit of the area path. In Azure Codex you can do this from any backlog. From on-premises TFS, you can create a backlog query and [perform bulk updates from the query results](../backlogs/bulk-modify-work-items.md).    
 
 
 <a id="set_up"></a>
@@ -145,7 +145,7 @@ You'll need to be a [project administrator](../../security/set-project-collectio
 
 If your feature teams use Scrum and work in sprints, you'll want to set up a series of sprints that all teams can use. By default, you'll see a set of predefined sprints. Add more sprints and set their sprint dates as described in [Add iterations and set iteration dates](../customize/set-iteration-paths-sprints.md). 
 
-You do this from the team project admin context. 
+You do this from the project admin context. 
 
 <img src="_img/setup-sprint-schedule.png" alt="Setup sprint schedule" style="border: 1px solid #C3C3C3;" /> 
 

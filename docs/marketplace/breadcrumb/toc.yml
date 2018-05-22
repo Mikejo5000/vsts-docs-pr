@@ -4,7 +4,7 @@
   items: 
   - name: Admin
     tocHref: /vsts/
-    topicHref: /vsts/index#pivot=services&panel=admin
+    topicHref: /vsts/index#pivot=apps&panel=admin
     items:
     - name: Manage Extensions
       tocHref: /vsts/

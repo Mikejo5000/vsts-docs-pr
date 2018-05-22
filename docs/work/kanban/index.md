@@ -1,7 +1,7 @@
 ---
-title: Kanban board 
-titleSuffix: VSTS & TFS
-description: Index to topics for working with Kanban in in Visual Studio Team Services & Team Foundation Server   
+title: Index to topics for Codex Agile Boards
+titleSuffix: Azure Codex Agile
+description: Work with Kanban boards to plan and track work in Azure Codex Agile & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid:  
@@ -9,12 +9,13 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-ms.date: 03/20/2018
+monikerRange: '>= tfs-2013'
+ms.date: 07/07/2018
 ---
 
-# Kanban
+# Codex Agile Boards
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]  
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]  
 
 Get collaboration going by adding to, updating, and then reviewing your Kanban board with others. 
 
@@ -24,7 +25,7 @@ Get collaboration going by adding to, updating, and then reviewing your Kanban b
 - [Kanban quickstart](kanban-quickstart.md)  
 
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 
 ## Step-by-Step Tutorials
 
@@ -59,7 +60,7 @@ Get collaboration going by adding to, updating, and then reviewing your Kanban b
 
 
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 
 ## How-to Guides
 
@@ -80,7 +81,7 @@ Get collaboration going by adding to, updating, and then reviewing your Kanban b
 - [Set WIP limits](wip-limits.md)  
 ::: moniker-end  
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 ## Reference   
 
 - [Kanban board controls](kanban-board-controls.md) 
@@ -101,9 +102,9 @@ Get collaboration going by adding to, updating, and then reviewing your Kanban b
 - [Backlogs](../backlogs/index.md)
 - [Scrum](../scrum/index.md)
 - [Work item queries](../track/index.md)
-- [Work item custom/azure/devops/agile/what-is-agile
-- [What is Agile?](/azure/devops/agile/what-is-agile)   
-- [What is Agile development?](/azure/devops/agile/what-is-agile-development)  
+- [Work item customization](../customize/index.md)
+- [What is Agile?](https://www.visualstudio.com/learn/what-is-agile/)   
+- [What is Agile development?](https://www.visualstudio.com/learn/what-is-agile-development/)  
 
 
 <!--- 

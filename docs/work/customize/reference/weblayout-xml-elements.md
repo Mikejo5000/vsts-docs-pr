@@ -1,6 +1,6 @@
 ---
 title: WebLayout XML elements reference 
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Codex & TFS
 description: Syntax and usage of all elements used in the new web form layout for Team Foundation Server
 ms.technology: devops-agile
 ms.prod: devops
@@ -19,7 +19,7 @@ ms.date: 11/28/2017
 You use the **WebLayout** element to define the layout and controls that appear on work item forms displayed through the web portal. It supports the [new work item experience](../process/new-work-item-experience.md). It is in addition to the [**Layout** element](all-form-xml-elements-reference.md) which defines the form elements that appear when viewed through Visual Studio and other non-web clients.
 
 > [!IMPORTANT]  
-> This topic applies to team project customization for Hosted XML and On-premises XML (TFS 2017 and later versions) process models. For TFS 2015 and earlier versions, see [Layout XML element reference](layout-xml-element-reference.md). 
+> This topic applies to project customization for Hosted XML and On-premises XML (TFS 2017 and later versions) process models. For TFS 2015 and earlier versions, see [Layout XML element reference](layout-xml-element-reference.md). 
 >
 > For the Inheritance process model, see [Customize a process](../../../settings/work/customize-process.md). For an overview of process models, see [Customize your work tracking experience](../customize-work.md).  
 
@@ -37,7 +37,7 @@ When the new form roll out is enabled, the XML definitions for all work item typ
 The new form makes available several new features as described in [New work item experience](../process/new-work-item-experience.md). Your account or project collection administrator manages the [switch to the new form](../manage-new-form-rollout.md).  
 - For the [Inheritance process model](../../../settings/work/manage-process.md), the switch to the new form is automatic for all user accounts.  
 - For the [Hosted XML process model](../import-process/import-process.md), an admin must [enable the new form](../manage-new-form-rollout.md). <br/>
-- For TFS 2017, the new form is automatically available when you add team projects to a new collection. For existing team projects, an admin must [enable the new form](../manage-new-form-rollout.md). <br/>
+- For TFS 2017, the new form is automatically available when you add projects to a new collection. For existing projects, an admin must [enable the new form](../manage-new-form-rollout.md). <br/>
 - For TFS 2015 the new form isn't available. You must [upgrade to TFS 2017 or a later version](https://www.visualstudio.com/downloads/) to access the new form.
  
 
@@ -258,7 +258,7 @@ ReadOnly=&quot;True | False&quot; Name=&quot;InstanceName&quot; /&gt;
    &lt;/Inputs&gt;
 &lt;/ControlContribution&gt;
 </code></pre>
-<p>The *ContributionId* you specify must be installed on the account or team project collection. The WIT definition files that you export contain a [list of installed contributions](#extensions).</p>
+<p>The *ContributionId* you specify must be installed on the account or project collection. The WIT definition files that you export contain a [list of installed contributions](#extensions).</p>
 </td>
 </tr>
 
@@ -268,7 +268,7 @@ ReadOnly=&quot;True | False&quot; Name=&quot;InstanceName&quot; /&gt;
 <pre><code>&lt;Extension Id="ExtensionId" /&gt;
 </code></pre>
 
-<p>The *ExtensionId* you specify must be installed on the account or team project collection. The WIT definition files that you export contain a [list of installed extensions](#extensions).</p>
+<p>The *ExtensionId* you specify must be installed on the account or project collection. The WIT definition files that you export contain a [list of installed extensions](#extensions).</p>
 <p> </p>
 
 </td>
@@ -312,7 +312,7 @@ ReadOnly=&quot;True | False&quot; Name=&quot;InstanceName&quot; /&gt;
 	<td><p>Optional child element of **Section** within  **WebLayout** used to specify a group-level work item extension to appear on the form. The extension will appear as a group within the form.   </p>
 <pre><code>&lt;GroupContribution Id="ContributionId" Label="Name" /&gt;
 </code></pre>
-<p>The *ContributionId* you specify must be installed on the account or team project collection. The WIT definition files that you export contain a [list of installed contributions](#extensions).</p>
+<p>The *ContributionId* you specify must be installed on the account or project collection. The WIT definition files that you export contain a [list of installed contributions](#extensions).</p>
 </td>
 </tr>
 
@@ -355,7 +355,7 @@ ReadOnly=&quot;True | False&quot; Name=&quot;InstanceName&quot; /&gt;
 	<td><p>Optional child element of **WebLayout** used to specify a page-level work item extension to appear on the form. The extension will appear as a page within the form. </p>
 <pre><code>&lt;PageContribution Id="ContributionId" Label="Name"  /&gt;
 </code></pre>
-<p>The *ContributionId* you specify must be installed on the account or team project collection. The WIT definition files that you export contain a [list of installed contributions](#extensions).</p>
+<p>The *ContributionId* you specify must be installed on the account or project collection. The WIT definition files that you export contain a [list of installed contributions](#extensions).</p>
 </td>
 </tr>
 
@@ -451,7 +451,7 @@ FieldName="ReplacementFieldRefName" Replaces="FieldRefName"] />
 <ul>
 <li><strong>DateTimeControl</strong>: Use to display formatted date fields with a field type of <strong>DateTime</strong>.</li>
 <li><strong>FieldControl</strong>: Use to display Boolean, plain text, numeric fields, person-name fields, and pick lists. Supports fields with a data type of <strong>Boolean</strong>, <strong>Double</strong>, <strong>Identity</strong>, <strong>Integer</strong>,<strong>PlainText</strong>m and <strong>String</strong>.
-<blockquote>**Feature availability:** The Boolean data type field is only supported for VSTS and TFS 2017 and later versions.    
+<blockquote>**Feature availability:** The Boolean data type field is only supported for Azure Codex and TFS 2017 and later versions.    
 </blockquote></li>
 <li><strong>HtmlFieldControl</strong>: Use to display multi-line, rich-text format of fields with a field type of <strong>HTML</strong>.</li>
 <li><strong>LabelControl</strong>: Use to display text that is not associated with a field. The text can be plain or hyperlinked. You can specify additional controls using the <strong>LabelText</strong>, <strong>Link</strong> and <strong>Text</strong> elements.</li>
@@ -528,7 +528,7 @@ Label=&quot;Start Date&quot; LabelPosition=&quot;Left&quot; /&gt;
 ![Date-Time control, Calendar field](_img/weblayout-date-time-control.png)   
 <pre><code>&lt;Control Type=&quot;DateTimeControl&quot; FieldName=&quot;FabrikamFiber.Schedule.SubmittedDate&quot; 
 Label=&quot;Submitted Date:&quot; LabelPosition=&quot;Left&quot;  Format=&quot;Short&quot; /&gt;</code></pre>
-<blockquote>**Note:**The date-time format displayed matches the [user profile account preferences](/vsts/accounts/account-preferences). The WebLayout section doesn't not accept the **Layout** element `CustomFormat` property.  
+<blockquote>**Note:**The date-time format displayed matches the [user profile Profile preferences](/vsts/accounts/account-preferences). The WebLayout section doesn't not accept the **Layout** element `CustomFormat` property.  
 </blockquote>
 </td>
 </tr>
@@ -540,7 +540,7 @@ Label=&quot;Submitted Date:&quot; LabelPosition=&quot;Left&quot;  Format=&quot;S
 Label=&quot;Milestone&quot; Name=&quot;Milestone&quot; LabelPosition=&quot;Left&quot; /&gt;
 </code></pre>
 <blockquote>
-**Feature availability:** The Boolean data type field is only supported for VSTS and TFS 2017 and later versions. Within a client work item form, such as Visual Studio or Eclipse, a value of True or False will display.</blockquote>
+**Feature availability:** The Boolean data type field is only supported for Azure Codex and TFS 2017 and later versions. Within a client work item form, such as Visual Studio or Eclipse, a value of True or False will display.</blockquote>
 <p>A Boolean field displays as a checkbox within the web work item form.</p>
 ![Boolean field display in web work item form](_img/weblayout-ref-checkbox-control-boolean-field.png)
  
@@ -600,7 +600,7 @@ To learn more about process models and what's supported with each, see [Customiz
 <a id="marketplace-extensions">  </a>
 ## Marketplace extensions  
 
-Visit the [VSTS Marketplace](https://marketplace.visualstudio.com/search?target=VSTS&category=Plan%20and%20track&sortBy=Downloads) to find extensions you can start using.  
+Visit the [Azure Codex Marketplace](https://marketplace.visualstudio.com/search?target=Azure Codex&category=Plan%20and%20track&sortBy=Downloads) to find extensions you can start using.  
 
 <a id="extensions">  </a>
 ## Form extensions 

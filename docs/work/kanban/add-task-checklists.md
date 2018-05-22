@@ -1,6 +1,6 @@
 ---
 title: Add task checklists
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Codex & TFS
 description: Add task checklists to your Kanban board for lightweight tracking when working in Visual Studio Team Services & Team Foundation Server
 ms.global_help.title: Add checklists
 ms.global_help.keywords: ms.vss-work-web.boards-hub, 7       
@@ -17,7 +17,7 @@ ms.date: 03/20/2018
 
 # Add task checklists
 
-**VSTS | TFS 2018 | TFS 2017 | TFS 2015.1**
+**Azure Codex | TFS 2018 | TFS 2017 | TFS 2015.1**
 
 Many teams find Kanban ideal for tracking work as it supports visualizing the flow of work in progress. And, you can quickly add new items and update status. If you're new to working with the Kanban board, see [Kanban basics](kanban-basics.md).  
 
@@ -47,7 +47,7 @@ In this topic, you'll learn:
 ## Add a task or set of tasks 
 
 1. To start adding tasks, open the menu for the work item.  
-	::: moniker range="vsts || >= tfs-2017 <= tfs-2018"  
+	::: moniker range=">= tfs-2017"  
 	<img src="_img/add-tasks-menu-options-vs-ts.png" alt="Open the context menu of a backlog item to add a task" style="border: 1px solid #C3C3C3;" />  
 	::: moniker-end
 	::: moniker range="tfs-2015"

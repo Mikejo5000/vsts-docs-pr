@@ -1,26 +1,24 @@
 ---
-title: Navigate within the Visual Studio Team Explorer pane
-titleSuffix: VSTS & TFS 
+title: Navigate within Azure Codex
+titleSuffix: Azure Codex 
 description: Download TFS clients, navigate in Team Explorer for Visual Studio Team Services & Team Foundation Server 
 keywords: Download TFS clients 
 ms.technology: devops-new-user
 ms.prod: devops
 ms.assetid: fd7a5cf7-7916-4fa0-b5e6-5a83cf377a02
 ms.manager: douge
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: reference
-ms.date: 09/07/2017
+ms.date: 07/15/2018
 monikerRange: '>= tfs-2013'
 ---
 
-
-# Navigate in Team Explorer
+# Navigate in Azure codex
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-You use Team Explorer to manage work that is assigned to you, your team, or your team projects, and to coordinate your efforts with other team members to develop a project. Team Explorer is a plug-in that installs with Visual Studio or Eclipse. Working from different platforms, developers and stakeholders can effectively collaborate using Team Explorer connected to team projects hosted on Visual Studio Online or on-premises Team Foundation Server (TFS). 
-
+You use Team Explorer to manage work that is assigned to you, your team, or your team projects, and to coordinate your efforts with other team members to develop a project. Team Explorer is a plug-in that installs with Visual Studio or Eclipse. Working from different platforms, developers and stakeholders can effectively collaborate using Team Explorer connected to team projects hosted on Visual Studio Online or on-premises Team Foundation Server (TFS).
 
 >[!TIP]  
 >You can access the latest version of Visual Studio clients from the [Visual Studio Downloads page](https://www.visualstudio.com/downloads/). Additional options for connecting to VSTS or TFS include:
@@ -81,7 +79,7 @@ From the **Connect** page, you can select the team projects you want to connect 
 > [!div class="mx-tdBreakAll"]  
 > |Git: Local Git repo |TFVC: Map workspace |
 > |-------------|----------|
-> |If you connect to a Git repo, you also can [create, add, or clone repositories](../git/tutorial/creatingrepo.md).<br/>![Team Explorer, Connect, local Git repo options](_img/te-connect-local-git-repos.png) |If you connect to a TFVC repo, you'll be prompted to [Configure your workspace (TFVC)](../build-release/concepts/definitions/build/options.md) on first connect.<br/>![Team Explorer, Connect, configure TFVC workspace](_img/te-tfvc-configure-workspace.png)|
+> |If you connect to a Git repo, you also can [create, add, or clone repositories](../git/tutorial/creatingrepo.md).<br/>![Team Explorer, Connect, local Git repo options](_img/te-connect-local-git-repos.png) |If you connect to a TFVC repo, you'll be prompted to [Configure your workspace (TFVC)](../pipelines/concepts/definitions/build/options.md) on first connect.<br/>![Team Explorer, Connect, configure TFVC workspace](_img/te-tfvc-configure-workspace.png)|
 
 
 
@@ -96,7 +94,7 @@ From the **Connect** page, you can select the team projects you want to connect 
 > [!div class="mx-tdBreakAll"]  
 > |Home|Work Items  |Build |
 > |-------------|----------|----------|
-> |-[Configure workspace](../tfvc/share-your-code-in-tfvc-vs.md#configure-your-workspace)<br/>- Open [Web portal](work-web-portal.md#user-context)<br/>- Open [Task Board](../work/scrum/task-board.md)<br/>- Open [Team Room](../collaborate/collaborate-in-a-team-room.md) |- [Add work items](../work/backlogs/add-work-items.md)<br/>- [Use the query editor to list and manage queries](../work/track/using-queries.md)<br/>- [Organize query folders and set query permissions](../work/track/set-query-permissions.md)<br/>- [Open query in Excel](../work/backlogs/office/bulk-add-modify-work-items-excel.md)<br/>- [Open query in Project](../work/backlogs/office/create-your-backlog-tasks-using-project.md)<br/>- [Email query results list using Outlook](../work/track/share-plans.md)<br/>- [Create reports from query in Excel](../report/excel/create-status-and-trend-excel-reports.md) (TFS only) |- [Create build definitions](../build-release/tasks/index.md)<br/>- [View and manage builds](../build-release/overview.md)<br/>- [Manage the build queue](../build-release/concepts/agents/pools-queues.md) |
+> |-[Configure workspace](../tfvc/share-your-code-in-tfvc-vs.md#configure-your-workspace)<br/>- Open [Web portal](work-web-portal.md#user-context)<br/>- Open [Task Board](../work/scrum/task-board.md)<br/>- Open [Team Room](../collaborate/collaborate-in-a-team-room.md) |- [Add work items](../work/backlogs/add-work-items.md)<br/>- [Use the query editor to list and manage queries](../work/track/using-queries.md)<br/>- [Organize query folders and set query permissions](../work/track/set-query-permissions.md)<br/>- [Open query in Excel](../work/backlogs/office/bulk-add-modify-work-items-excel.md)<br/>- [Open query in Project](../work/backlogs/office/create-your-backlog-tasks-using-project.md)<br/>- [Email query results list using Outlook](../work/track/share-plans.md)<br/>- [Create reports from query in Excel](../report/excel/create-status-and-trend-excel-reports.md) (TFS only) |- [Create build definitions](../pipelines/tasks/index.md)<br/>- [View and manage builds](../pipelines/overview.md)<br/>- [Manage the build queue](../pipelines/concepts/agents/pools-queues.md) |
 
 > [!NOTE]  
 > If inline images aren't displaying correctly, see [Resolve images that don't display in Team Explorer](#images-missing-te). 
@@ -187,6 +185,6 @@ By installing [TFS Power Tools](https://marketplace.visualstudio.com/items?itemN
 Additional requirements may apply.
 
 > [!NOTE]  
-> For TFS 2017 and later versions, you can [install the TFS Process Template editor from the Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=KarthikBalasubramanianMSFT.TFSProcessTemplateEditor). You can use this version of the Process Editor to modify the old-style work item forms. You can't use it to edit forms associated with the [new web forms](../work/customize/process/new-work-item-experience.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json ).  
+> For TFS 2017 and later versions, you can [install the TFS Process Template editor from the Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=KarthikBalasubramanianMSFT.TFSProcessTemplateEditor). You can use this version of the Process Editor to modify the old-style work item forms. You can't use it to edit forms associated with the [new web forms](../work/customize/process/new-work-item-experience.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json).  
 
 

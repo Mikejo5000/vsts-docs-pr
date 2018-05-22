@@ -1,6 +1,6 @@
 ---
 title: Create managed queries with the Query Editor
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Codex & TFS
 description: Create flat-list, tree, or direct-links queries to list, triage, update, and chart work items in Visual Studio Team Services & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
@@ -13,7 +13,7 @@ ms.date: 03/20/2018
 
 # Create managed queries with the query editor
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 Managed queries generate a list of work items based on the filter criteria you provide. You can create queries from the web portal or from a supported client, such as Visual Studio Team Explorer and Team Explorer Everywhere.  Also, you can open a query in [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) or [Project](../backlogs/office/create-your-backlog-tasks-using-project.md) to perform bulk additions and modifications.  
 
@@ -26,7 +26,7 @@ In this topic you'll learn:
 > * How to add or create a query 
 > * How to group query clauses 
 > * Understand when to use a flat-list, tree, or direct-links query 
-> * How to query across team projects    
+> * How to query across projects    
 
 
 [!INCLUDE [temp](../_shared/image-differences.md)]
@@ -46,10 +46,10 @@ Active Bugs shared query provided with the Agile process template. Examples are 
 	>If you're working in Visual Studio Team Explorer, open the **Work** page to access your queries and shared queries. If Team Explorer isn't visible, click **View>Team Explorer** from the top level menu.   
 
 2.	Edit the query to find closed bugs and then run the query. 
-	Use ![Insert new filter line](_img/3.png) to insert a clause above the current clause. Use ![Remove this filter line](_img/4.png) to delete a clause.  Queries are automatically scoped to the current team project. To find work items defined in several team projects, see [Query across team projects](using-queries.md#across-projects).   	
+	Use ![Insert new filter line](_img/3.png) to insert a clause above the current clause. Use ![Remove this filter line](_img/4.png) to delete a clause.  Queries are automatically scoped to the current project. To find work items defined in several projects, see [Query across projects](using-queries.md#across-projects).   	
 
 	# [New Queries Experience](#tab/new-query-exp)
-	::: moniker range="vsts || >= tfs-2018"	
+	::: moniker range=">= tfs-2018"	
 	<img src="_img/using-queries-new-vsts-exp.png" alt="Web portal, Queries page, new queries experience, Editor view of a Flat List Query" style="border: 2px solid #C3C3C3;" />
 	::: moniker-end
 	::: moniker range=">= tfs-2013 <= tfs-2017"
@@ -57,7 +57,7 @@ Active Bugs shared query provided with the Agile process template. Examples are 
 	::: moniker-end
 
 	# [Old Queries Experience](#tab/old-query-exp)
-	::: moniker range="vsts || >= tfs-2015 <= tfs-2018"	 	
+	::: moniker range=">= tfs-2015"	 	
 	<img src="_img/query-active-bugs-editor-vso.png" alt="Web portal, Queries page, Editor view of a Flat List Query" style="border: 1px solid #C3C3C3;" /> 
 	::: moniker-end
 	::: moniker range="tfs-2013"	 
@@ -142,14 +142,14 @@ To learn more about each link type, see [Link work items to support traceability
 
 
 <a id="across-projects" />  
-## Query across team projects  
-By default, shared queries and new queries are scoped to the current team project. However, you can create queries to find work items defined within the team project collection. You save cross-project queries under a specific team project.     
+## Query across projects  
+By default, shared queries and new queries are scoped to the current project. However, you can create queries to find work items defined within the project collection. You save cross-project queries under a specific project.     
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2017"
+::: moniker range=">= tfs-2015"
 
-To list work items defined in two or more team projects, checkmark **Query across projects**. For example, the following query finds all features created in all team projects within the last 30 days.
+To list work items defined in two or more projects, checkmark **Query across projects**. For example, the following query finds all features created in all projects within the last 30 days.
  
-<img src="_img/using-queries-query-across-projects.png" alt="Web portal, Queries page, Query Editor, Checkbox, Query across team projects" style="border: 1px solid #C3C3C3;" /> 
+<img src="_img/using-queries-query-across-projects.png" alt="Web portal, Queries page, Query Editor, Checkbox, Query across projects" style="border: 1px solid #C3C3C3;" /> 
 
 ::: moniker-end
 
@@ -158,27 +158,27 @@ To list work items defined in two or more team projects, checkmark **Query acros
 > The **Query across projects** feature is supported from TFS 2015.1 and later versions.  
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2017"
-With the **Query across projects** checked, you can add the Team Project field to filter to a select number of team projects.   
+::: moniker range=">= tfs-2015"
+With the **Query across projects** checked, you can add the Team Project field to filter to a select number of projects.   
 
-<img src="_img/using-queries-query-across-select-projects.png" alt="VSTS and TFS 2015.1, Web portal, Query across select team projects using the In operator" style="border: 2px solid #C3C3C3;" />
+<img src="_img/using-queries-query-across-select-projects.png" alt="Azure Codex and TFS 2015.1, Web portal, Query across select projects using the In operator" style="border: 2px solid #C3C3C3;" />
 
 > [!NOTE]    
 > Separate multiple project names with the list separator that corresponds to the regional settings defined for your client computer, for example, a comma (,). 
 
-The Team Project field becomes available only after you check  **Query across projects**.  Moreover, when Query across projects is unchecked, only those fields from those WITs defined in the current team project appear in the Field drop-down menu. When Query across projects is checked, all fields from all WITs defined in all team projects in the collection appear in the Field drop-down menu.  
+The Team Project field becomes available only after you check  **Query across projects**.  Moreover, when Query across projects is unchecked, only those fields from those WITs defined in the current project appear in the Field drop-down menu. When Query across projects is checked, all fields from all WITs defined in all projects in the collection appear in the Field drop-down menu.  
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013"
 
-To find all features created in all team projects within the last 30 days, remove the **Team Project=@Project** clause from the query.  
+To find all features created in all projects within the last 30 days, remove the **Team Project=@Project** clause from the query.  
 
-<img src="_img/using-queries-query-across-all-projects-tfs.png" alt="TFS 2013-2015, Web portal, Query across select team projects using the In operator" style="border: 2px solid #C3C3C3;" />
+<img src="_img/using-queries-query-across-all-projects-tfs.png" alt="TFS 2013-2015, Web portal, Query across select projects using the In operator" style="border: 2px solid #C3C3C3;" />
 
-All fields from all WITs defined in all team projects in the collection always appear in the Field drop-down menu.  
+All fields from all WITs defined in all projects in the collection always appear in the Field drop-down menu.  
 
-Use **Team Project=@Project** to scope the query to find only those work items defined for the current team project. 
+Use **Team Project=@Project** to scope the query to find only those work items defined for the current project. 
 
 ::: moniker-end
 
@@ -187,7 +187,7 @@ Use **Team Project=@Project** to scope the query to find only those work items d
 You may notice and wonder why the contents of the task board differ from those listed with its created query? To learn more, see [Task board items versus query list items](../backlogs/backlogs-boards-plans.md#task-board-items).
 
 ## Export a query  
-From the query editor in Team Explorer, use the File menu to save a query as a .wiq file. When you create a team project, the shared queries are created based on [.wiq files defined in a process](../customize/reference/process-templates/define-work-item-query-process-template.md). 
+From the query editor in Team Explorer, use the File menu to save a query as a .wiq file. When you create a project, the shared queries are created based on [.wiq files defined in a process](../customize/reference/process-templates/define-work-item-query-process-template.md). 
 
 See also:
 - [Syntax for the Work Item Query Language (WIQL)](../../reference/wiql-syntax.md)  
@@ -196,7 +196,7 @@ See also:
 
 ::: moniker range="vsts"
 > [!NOTE]  
-> For queries made against VSTS, the WIQL length must not exceed 32K characters. The system won't allow you to create or run queries that exceed that length.  
+> For queries made against Azure Codex, the WIQL length must not exceed 32K characters. The system won't allow you to create or run queries that exceed that length.  
 ::: moniker-end
 
 ## Related articles
@@ -211,7 +211,7 @@ That's the basics about using queries. For an index of query examples, see [Crea
 - [Work item field index](../work-items/guidance/work-item-field.md) 
 - [Query keyboard shortcuts](queries-keyboard-shortcuts.md)
 
-If you want to export a query to Excel, you can do that from [Excel or Visual Studio/Team Explorer](../backlogs/office/bulk-add-modify-work-items-excel.md). Or, to export a query directly from the web portal Queries page, install the [VSTS Open in Excel Marketplace extension](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel). This extension will add in **Open in Excel** link to the toolbar of the query results page. 
+If you want to export a query to Excel, you can do that from [Excel or Visual Studio/Team Explorer](../backlogs/office/bulk-add-modify-work-items-excel.md). Or, to export a query directly from the web portal Queries page, install the [Azure Codex Open in Excel Marketplace extension](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel). This extension will add in **Open in Excel** link to the toolbar of the query results page. 
 
 
 [!INCLUDE [temp](../_shared/rest-apis-queries.md)]

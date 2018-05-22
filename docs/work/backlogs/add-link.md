@@ -1,6 +1,6 @@
 ---
 title: Add links to several work items 
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Codex & TFS
 description: Link several work items to other work items or to a new git branch in Visual Studio Team Services or Team Foundation Server 
 ms.global_help.title: Link work items 
 ms.global_help.keywords: ms.vss-work-web.work-items-hub, 3 
@@ -17,7 +17,7 @@ ms.date: 03/20/2018
 
 # Add link to work items  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 You can add a link to a work item from within the work item form or from a backlog or query results list. From a backlog or query results list, you can [select multiple work items](bulk-modify-work-items.md#multi-select) and then link them to a new or existing work item. In general, use the bulk edit to update several work items to link to the same work item, either new or existing. 
 
@@ -37,7 +37,7 @@ For a list of all link types and supported link relationships, see [Link work it
 
 <a id="link"> </a>  
 ## Link several items to an existing or new work item 
-::: moniker range="vsts || >= tfs-2018"
+::: moniker range=">= tfs-2018"
 
 1. From the web portal, open a backlog or query results page, and [multi-select the work items](bulk-modify-work-items.md#multi-select) you want to add a link to.
 
@@ -78,7 +78,7 @@ When you link work items, you select a link type. In general, use the following 
 - Use the **Duplicate** link type when two work items have been created that essentially capture the same information; close one of the work items and keep the other one active  
 - Use the **Parent/Child** link types when you want to break down work items into smaller items&mdash;for example, break down features into stories, or stories into tasks
 - Use  **Predecessor-Successor** link types when you want to track tasks that must be completed before others can be started; this link type is most often used when you plan work using Project 
-- Use the **Related** link type when the work items being linked are at the same level&mdash;such as two user stories that define features that overlap one another&mdash;or to link work items that are defined in different team projects or managed by different teams.
+- Use the **Related** link type when the work items being linked are at the same level&mdash;such as two user stories that define features that overlap one another&mdash;or to link work items that are defined in different projects or managed by different teams.
 
 
 # [Browser](#tab/browser) 
@@ -90,9 +90,9 @@ For example, here we use the Related link type to link three items to the bug wi
 > [!div class="mx-imgBorder"]  
 > ![Add link to an existing work item](_img/add-link/link-multi-to-existing.png)   
 	
-To link to multiple work items, enter their IDs separated by commas or spaces. If you don't know the IDs or you want to link to an item in a different team project, you can click the &hellip; context menu to open a dialogue that will support you in [choosing work items based on IDs, a query, or title keyword](#find-items). 
+To link to multiple work items, enter their IDs separated by commas or spaces. If you don't know the IDs or you want to link to an item in a different project, you can click the &hellip; context menu to open a dialogue that will support you in [choosing work items based on IDs, a query, or title keyword](#find-items). 
 
-::: moniker range="vsts || >= tfs-2018"
+::: moniker range=">= tfs-2018"
 To view the work items selected for linking, you can click the ![info icon](../_img/icons/info-icon.png). 	 
 > [!div class="mx-imgBorder"]  
 > ![Add link to an existing work item](_img/add-link/info-linked-items.png)   
@@ -110,7 +110,7 @@ For example, here we use the Related link type to link several items to the user
 
 <img src="_img/add-link-related-existing-item-vs.png" alt="Visual Studio, Add link dialog" style="border: 1px solid #C3C3C3;" />  		
 
-To link to multiple work items, enter their IDs separated by commas or spaces. If you don't know the IDs or you want to link to an item in a different team project, you can click the Browse button to open a dialogue that will support you in [choosing work items based on IDs, a query, or title keyword](#find-items). 
+To link to multiple work items, enter their IDs separated by commas or spaces. If you don't know the IDs or you want to link to an item in a different project, you can click the Browse button to open a dialogue that will support you in [choosing work items based on IDs, a query, or title keyword](#find-items). 
 
 You'll need to bulk save the work items you've modified. 
  	
@@ -121,7 +121,7 @@ You'll need to bulk save the work items you've modified.
 Here, we have selected to add a link to the selected work items.  
 
 0. Specify the link type, work item type, and title of the new work item. Click OK.
-	::: moniker range="vsts || >= tfs-2018"
+	::: moniker range=">= tfs-2018"
 	<img src="_img/add-link-related-new-item-issue.png" alt="Link to a new work item" style="border: 1px solid #C3C3C3;" /> 
 	::: moniker-end
 	::: moniker range=">= tfs-2013 <=tfs-2017"
@@ -129,27 +129,22 @@ Here, we have selected to add a link to the selected work items.
 	::: moniker-end
 
 0. A work item of the type selected opens. Enter additional information and save the work item.
-	::: moniker range="vsts || >= tfs-2017 <=tfs-2018"
+	::: moniker range=">= tfs-2017"
 	> [!div class="mx-imgBorder"]  
 	> ![Issue - work item](_img/add-link/new-issue-linked-item.png)   
 	::: moniker-end
 0. If you are working from the Query Results page, you'll need to bulk save the work items you've modified as shown in the previous procedure.  
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 
 ## Link several work items to a new git branch 
-
-<!---
-> [!NOTE]  
->**Feature availability**: The **New branch&hellip;** option is available from VSTS and the web portal for TFS 2017 and later versions. 
--->
 
 You can add a new git branch and link them to existing work items at the same time. 
 
 From a backlog or query results page, [multi-select the work items](bulk-modify-work-items.md#multi-select) you want to link to a new git branch. To learn more, see [Link work items to Git development objects](connect-work-items-to-git-dev-ops.md).  
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2018"
+::: moniker range=">= tfs-2018"
 > [!div class="mx-imgBorder"]  
 > ![Link multiple backlog items to a git branch](_img/add-link/link-git-branch.png)   
 
@@ -171,7 +166,7 @@ From the Add link dialog you can open a secondary dialog to help you choose one 
 
 	<img src="_img/add-link-choose-linked-work-item-by-title.png" alt="Choose Linked work items" style="border: 1px solid #C3C3C3;" /> 
 
-	If the work items are defined in another team project, then first select the Project. Then, make your selections: 
+	If the work items are defined in another project, then first select the Project. Then, make your selections: 
 
 	-   **Query**. Use this method when you have defined a query that you know contains the set or superset of the work items that you want.   
 	-   **IDs**. Use this method when you know the IDs of the work items that you want to link to. 
@@ -183,7 +178,7 @@ From the Add link dialog you can open a secondary dialog to help you choose one 
   
 6.  Click the **Find** button.
   
-     Only those work items defined for the selected team project and specified work item type are listed. To sort on a column field, choose the column title. 
+     Only those work items defined for the selected project and specified work item type are listed. To sort on a column field, choose the column title. 
 
 	<!--- You can change the display of the work items that are listed by using one of the following user interface controls:  
   

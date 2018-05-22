@@ -1,6 +1,6 @@
 ---
 title: Process template plug-ins index
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Codex & TFS
 description: Uses to look up the syntax structure and find examples of how to use each element.
 ms.prod: devops
 ms.technology: devops-agile 

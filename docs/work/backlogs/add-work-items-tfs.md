@@ -1,7 +1,7 @@
 ---
 title: Add work items
 titleSuffix: TFS 
-description: Add work items to plan and manage a software project when connected to a team project in Team Foundation Server  
+description: Add work items to plan and manage a software project when connected to a project in Team Foundation Server  
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 982891A4-A875-478D-AD37-5A0915D11E00  
@@ -17,7 +17,7 @@ ms.date: 03/16/2017
 **TFS 2015 | TFS 2013**  
 
 > [!IMPORTANT]   
-><b>Feature availability: </b>The new web form provides many additional features. If you connect to VSTS or the web portal for TFS 2017 or later versions, see [Add work items to plan and track your project](add-work-items.md). 
+><b>Feature availability: </b>The new web form provides many additional features. If you connect to Azure Codex or the web portal for TFS 2017 or later versions, see [Add work items to plan and track your project](add-work-items.md). 
 
 You add work items to plan and manage your project. You use different types of  work items to track different types of work - such as tasks, features or user stories, test cases and bugs, risks or issues, and more. You can describe the work to be done, assign work, track status, and coordinate efforts within your team.  
 
@@ -26,23 +26,23 @@ Different types of work items are used to track features, user experiences, code
 ![Work item form to track features or user stories](_img/work-item-form-to-track-user-stories.png)
 
 > [!NOTE]  
->Depending on the process you chose when creating your team project--[Scrum](../work-items/guidance/scrum-process.md), 
+>Depending on the process you chose when creating your project--[Scrum](../work-items/guidance/scrum-process.md), 
 [Agile](../work-items/guidance/agile-process.md), or [CMMI](../work-items/guidance/cmmi-process.md)--the types of work items you can create will differ. For example, backlog items may be called product backlog items (PBIs), user stories, or requirements. All three are similar: they describe the customer value to deliver and the work to be performed.<br/>  
 For an overview of all three processes, see [Choose a process](../work-items/guidance/choose-process.md). 
  
 
 
 ## Add work items to define new work
-You can start adding work items once you connect to a team project. Here we show how to add work items from the web portal. For additional clients that you can use, see [Clients that support tracking work items](../work-items/about-work-items.md#clients).
+You can start adding work items once you connect to a project. Here we show how to add work items from the web portal. For additional clients that you can use, see [Clients that support tracking work items](../work-items/about-work-items.md#clients).
 
-1. From a web browser, connect to the team project that you want to work in. For example, the Fabrikam, Inc. team navigates to ```http://fabrikamprime:8080/tfs/DefaultCollection/Fabrikam%20Fiber%20Website/```.  
+1. From a web browser, connect to the project that you want to work in. For example, the Fabrikam, Inc. team navigates to ```http://fabrikamprime:8080/tfs/DefaultCollection/Fabrikam%20Fiber%20Website/```.  
 	If you haven't been added as a team member, [get added now](../scale/multiple-teams.md#add-team-members).
 
 2. From a team home page, you can choose the type of work item you want to create.  
 
 	![Home page -  create work items](_img/work-items-tfs-team-home-page.png)  
 
-	Work items you add are automatically scoped to your [team's area and iteration paths](../scale/multiple-teams.md). To change the team context, see [Switch team project or team focus](../../settings/switch-team-context.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json)
+	Work items you add are automatically scoped to your [team's area and iteration paths](../scale/multiple-teams.md). To change the team context, see [Switch project or team focus](../../settings/switch-team-context.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json)
 
 3. Enter a title and then save the work item. Before you change the default State, you must save it.  
 
@@ -50,7 +50,7 @@ You can start adding work items once you connect to a team project. Here we show
 
 	You can [add tags to any work item to filter backlogs and queries](../track/add-tags-to-work-items.md).
 
-##Update work items as work progresses
+## Update work items as work progresses
 As work progresses, team members can update the state and reassign it as needed. While the workflow states differ for different work item types, they usually follow a progression from New or Active to Completed or Done. The following image shows the work flow states for a product backlog item. If you want to discard a work item, change the state to Removed.  
 
 <table>

@@ -1,6 +1,6 @@
 ---
 title: Triage work items using a work item query 
-titleSuffix: VSTS & TFS  
+titleSuffix: Azure Codex & TFS  
 ms.global_help.title: Triage work items
 description: Review and update work items use the triage mode from the query results view in Visual Studio Team Services & Team Foundation Server
 ms.prod: devops
@@ -15,7 +15,7 @@ ms.date: 03/20/2018
 
 # Triage work items  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 Using a work item query you can quickly review and update work items. Oftentimes team use the triage mode for a query to perform the following tasks: 
 - Set the priority of a bug or work item 
@@ -33,7 +33,7 @@ In this topic you'll learn how to:
 
 # [New Queries Experience](#tab/new-query-exp)
 
-::: moniker range="vsts || >= tfs-2018"
+::: moniker range=">= tfs-2018"
 
 To enable the New Queries Experience, see [Preview features](../../collaborate/preview-features.md). To learn more about the new experience, see [New Queries experience](queries-preview.md).  
 
@@ -65,7 +65,7 @@ You can update several work items through the triage process, and then do a bulk
 
 # [New Queries Experience](#tab/new-query-exp)
 
-::: moniker range="vsts || >= tfs-2018"
+::: moniker range=">= tfs-2018"
 Click **Save items** to save all work items you've modified. 
 
 <img src="_img/triage-queries/save-work-items-new-exp.png" alt="Choose Save work items to save all modified work items" style="border: 1px solid #C3C3C3;" /> 
@@ -80,7 +80,7 @@ The new queries experience requires TFS 2018 or later version.
 
 Click the ![double-save-icon](../_img/icons/icon-double-save.png) double-save icon to save all work items you've modified.
 
-<img src="../backlogs/_img/bulk-modify-save-ts.png" alt="VSTS and TFS 2017, Query results page, save bulk modified items" style="border: 2px solid #C3C3C3;" />
+<img src="../backlogs/_img/bulk-modify-save-ts.png" alt="Azure Codex and TFS 2017, Query results page, save bulk modified items" style="border: 2px solid #C3C3C3;" />
 
 ---
 

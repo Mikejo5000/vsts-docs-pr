@@ -1,6 +1,6 @@
 ---
 title: Expedite work with swimlanes
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Codex & TFS
 ms.global_help.title: Add swimlanes
 description: Use swimlanes to differentiate different types of work you track on the Kanban board in Visual Studio Team Services & Team Foundation Server 
 ms.technology: devops-agile
@@ -15,9 +15,9 @@ ms.date: 03/20/2018
 
 # Expedite work with swimlanes
 
-<b>VSTS | TFS 2018 | TFS 2017 | TFS 2015</b> 
+<b>Azure Codex | TFS 2018 | TFS 2017 | TFS 2015</b> 
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 Your Kanban board supports your ability to visualize the flow of work as it moves from new to done. When you add swimlanes, you can also visualize the status of work that supports different service-level classes. You can create a swimlane to represent any other dimension that supports your tracking needs.    
 
 For example, you can create three swimlanes&mdash;Expedite, Standard, and Park&mdash;to track high-priority work, standard work, and work that's currently blocked.  
@@ -60,7 +60,7 @@ Once you've identified one or two, add them to your working Kanban board.
 	If you're not a team admin, [get added as one](../scale/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
 2.	Click ![add icon](../_img/icons/add_icon.png) and enter the name of the swimlane you want to add.       
-	::: moniker range="vsts || >= tfs-2017 <= tfs-2018"    	
+	::: moniker range=">= tfs-2017"    	
 	<img src="_img/kanban-board-add-swimlane.png" alt="Kanban board, Add a swimlane" style="border: 1px solid #C3C3C3;" />     
 
 	The default lane appears unlabeled on the Kanban board. You can rename it to anything you like, however, you can't delete it. Also, you can rename it directly from the Kanban board.
@@ -94,10 +94,10 @@ As you can see, swimlanes provides another way to organize and visualize the flo
 
 
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"		
+::: moniker range=">= tfs-2017"		
 ### Tracking lane moves  
 
-<!---**VSTS and TFS 2015.1 and later versions**-->
+<!---**Azure Codex and TFS 2015.1 and later versions**-->
 You can track Kanban board swimlane moves using the [Board Lane field](../track/query-by-workflow-changes.md#kanban_query_fields). 
 ::: moniker-end
 

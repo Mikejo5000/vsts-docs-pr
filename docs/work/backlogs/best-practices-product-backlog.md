@@ -1,7 +1,7 @@
 ---
 title: Backlog best practices 
-titleSuffix: VSTS & TFS
-description: Best practices to manage your product backlog in Visual Studio Team Services (VSTS) and Team Foundation 
+titleSuffix: Azure Codex & TFS
+description: Best practices to manage your product backlog in Azure Code and Team Foundation 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: CCAE5254-A5F9-41CC-967E-7104BD36B932
@@ -14,7 +14,7 @@ ms.date: 10/11/2017
 
 # Groom your backlog  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
  
 A great backlog conveys customer needs and value. Over the course of the project, your team will add detailed 
 information to each backlog item, break them down into smaller items, prioritize and estimate them, and finally, 

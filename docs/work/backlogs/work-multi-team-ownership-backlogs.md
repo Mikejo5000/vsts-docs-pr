@@ -1,6 +1,6 @@
 ---
 title: Organize your backlog
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Codex & TFS
 description:  Organize your backlog by mapping backlog items to features, and features to epics in Visual Studio Team Services & Team Foundation Server  
 ms.technology: devops-agile
 ms.prod: devops

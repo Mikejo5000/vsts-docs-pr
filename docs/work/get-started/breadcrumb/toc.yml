@@ -1,0 +1,8 @@
+- name: Azure Codex
+  tocHref: /vsts/
+  topicHref: /vsts/index#pivot=apps
+  items: 
+  - name: Azure Codex Agile Onboarding Guide
+    tocHref: /vsts/
+    topicHref: /vsts/get-started/index
+

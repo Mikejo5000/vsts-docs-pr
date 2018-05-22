@@ -1,6 +1,6 @@
 ---
 title: Add, run, and update inline tests
-titleSuffix: VSTS & TFS  
+titleSuffix: Azure Codex & TFS  
 description: Add, run, and update manual test cases on your Kanban board for lightweight tracking in Visual Studio Team Services & Team Foundation Server   
 ms.technology: devops-agile
 ms.prod: devops
@@ -122,6 +122,6 @@ Test integration with the Kanban board makes it easy for teams to get started wi
 
 
 > [!NOTE]    
-><b>Feature availability: </b>The Kanban board inline tests feature is supported from VSTS and TFS 2017 and later versions.  
+><b>Feature availability: </b>The Kanban board inline tests feature is supported from Azure Codex and TFS 2017 and later versions.  
 
 -->

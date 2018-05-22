@@ -1,6 +1,6 @@
 ---
 title: Configure team settings
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Codex & TFS
 description: Manage team-specific tools such as sprint settings, backlogs, Kanban boards, and more as well as add team administrators 
 ms.technology: devops-agile
 ms.prod: devops
@@ -13,13 +13,13 @@ ms.date: 10/17/2017
 
 # Configure team settings 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 <!--- Still needs work, versioning, and other team settings from the admin context, add something about something, team-specific widgets--> 
 
 <a id="team-settings"></a>
 
-Within a team project, you [add teams](multiple-teams.md) to support the needs of several feature teams, or an enterprise organized to deliver different products. Each team is then able to configure the Agile tools the way that works for their team, supporting each team to collaborate most effectively in planning and managing their work.  
+Within a project, you [add teams](multiple-teams.md) to support the needs of several feature teams, or an enterprise organized to deliver different products. Each team is then able to configure the Agile tools the way that works for their team, supporting each team to collaborate most effectively in planning and managing their work.  
 
 As a team administrator, you can configure, customize, and manage all team-related activities for your team. These include being able to add team members, add team admins, and configure Agile tools and team assets. Members of the Project Administrators group can manage all team-related activities for all teams. 
 
@@ -28,7 +28,7 @@ Team admin permissions are role-based, unlike project admin permissions which ar
 You can configure most of your team settings from the common configuration dialog. 
 
 > [!NOTE]
-> **Feature availability:** The common configuration dialog is available from VSTS and the web portal for TFS 2015.1 and later versions.  
+> **Feature availability:** The common configuration dialog is available from Azure Codex and the web portal for TFS 2015.1 and later versions.  
 
 1. To open, click ![gear icon](../_img/icons/team-settings-gear-icon.png), the gear icon, from any team backlog or board to set one or more team settings.  
 

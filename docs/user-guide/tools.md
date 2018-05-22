@@ -1,31 +1,31 @@
 ---
-title: Tools and clients that connect to VSTS and TFS
-description: Understand the tools that support connecting to Visual Studio Team Services & Team Foundation Server  
+title: Tools and clients that connect to Azure Codex
+description: Understand the tools that support connecting to Azure Codex
 ms.technology: devops-new-user 
 ms.prod: devops
 ms.assetid: 3836C81D-6E0A-46B5-8D1D-20E973E4F373
 ms.manager: douge
-ms.author: kaelli
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
-ms.date: 03/02/2017
+ms.date: 07/15/2018
 monikerRange: '>= tfs-2013'
 ---
 
-
-#Tools and clients that connect to VSTS and TFS
+# Tools and clients that connect to Azure Codex
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-Our platform of software development tools began over 20 years ago with the releases of Visual Basic and Visual Studio as an integrated development environment (IDE). Visual Studio supports a number of plug-ins which extend its functionality. In particular, the Team Explorer plug-in allows the Visual Studio client to connect to VSTS and TFS to support source control, work tracking, build, and test operations.  
+Our platform of software development tools began over 20 years ago with the releases of Visual Basic and Visual Studio as an integrated development environment (IDE). Visual Studio supports a number of plug-ins which extend its functionality. In particular, the Team Explorer plug-in allows the Visual Studio client to connect to VSTS and TFS to support source control, work tracking, build, and test operations.
 
 The set of tools available to you that interface with VSTS and TFS include:
 
-- Desktop client developer tools 
-- Office integration tools 
+- Desktop client developer tools
+- Office integration tools
 - Web based tools
-- Command-line tools 
+- Command-line tools
 - Marketplace extensions
-- REST APIs  
+- REST APIs
 
 <!---
 ###Video overview
@@ -45,11 +45,11 @@ Developers have access to a variety of tools through these versions of Visual St
 - **Visual Studio Professional**: Development tools and services to support individual developers or small teams 
 - **Visual Studio Enterprise**: Integrated, end-to-end development tools and solutions for teams of any size and those with a need to scale Supports designing, building and managing complex enterprise applications 
 - **Visual Studio Test Professional**: Provides access to Microsoft Test in addition to development tools to support quality and collaboration throughout the development process
-- **Visual Studio Team Explorer**: A free solution for non-developers to interact with Team Foundation Server and Visual Studio Team Services.  
-- **[Eclipse/Team Explorer Everywhere](/vsts/java/download-eclipse-plug-in)**: Free plug-in to support teams running Eclipse on Linux, macOS, or Windows that connect to VSTS or TFS  
+- **Visual Studio Team Explorer**: A free solution for non-developers to interact with Team Foundation Server and Visual Studio Team Services.
+- **[Eclipse/Team Explorer Everywhere](/vsts/java/download-eclipse-plug-in)**: Free plug-in to support teams running Eclipse on Linux, macOS, or Windows that connect to VSTS or TFS
 - **[Android Studio with the VSTS Plugin for Android Studio](/vsts/java/download-android-studio-plug-in)**: Free plug-in to support Android developers and connect to Git repositories on VSTS or TFS
 - **[IntelliJ with the VSTS Plugin for IntelliJ](/vsts/java/download-intellij-plug-in)**: Free plug-in to support developers who use IntelliJ IDEA or Android Studio to connect to Git repositories on VSTS or TFS 
-- **[Visual Studio Code](/vsts/java/vscode-extension)**: Free, open-source code editor with a free extension to support connecting to Git repositories on VSTS or TFS.  
+- **[Visual Studio Code](/vsts/java/vscode-extension)**: Free, open-source code editor with a free extension to support connecting to Git repositories on VSTS or TFS.
 
 
 
@@ -63,8 +63,7 @@ Team Explorer, a plug-in to all Visual Studio versions, provides connects Visual
 > |-------------|----------|
 > |<img src="../user-guide/_img/te-home-page-git-repo.png" title="Team Explorer Home page with Git as source control" alt="Team Explorer Home page with Git as source control" /> | <img src="../user-guide/_img/te-home-page-tfvc-repo.png" title="Team Explorer Home page w/ TFVC as source control" alt="Team Explorer Home page w/ TFVC as source control" /> |
 
-
-## Office integration tools 
+## Office integration tools
 
 When you install any edition of Visual Studio or [Team Foundation Server Standalone Office Integration 2015 (free)](https://go.microsoft.com/fwlink/?LinkId=691127), the Team Foundation plug-in installed to integrate work item tracking with select Office clients. The Team Foundation plug-in installs to your existing Office client. The plug-in supports Office 2007, Office 2010, or Office 2013 versions.
 
@@ -80,19 +79,19 @@ When you install any edition of Visual Studio or [Team Foundation Server Standal
 
 The following clients support specific tasks, such as managing testing efforts, providing feedback, or modifying work items.
 
-- **[Microsoft Test Manager](https://msdn.microsoft.com/library/jj635157.aspx)**: Allows you to manage your test efforts, create and run manual tests, and create and track bugs that are found during test efforts. Test Manager installs with Visual Studio Test Professional and Visual Studio Enterprise. 
-- **[Test & Feedback extension (previously called the Exploratory Testing extension)](../manual-test/stakeholder/provide-stakeholder-feedback.md)**: Provides a lightweight, plug-in to a web browser. Stakeholders can respond to feedback requests for user stories and features generated in VSTS or TFS. This extension is free to stakeholders. 
-- **[Microsoft Feedback Client](../feedback/give-feedback.md)**: Your stakeholders can use **Microsoft Feedback Client** to record feedback for your application as video, audio, or type-written comments. This client installs with all versions of Visual Studio, or can be [installed from the free download](https://www.microsoft.com/download/details.aspx?id=30660). All feedback is stored in the work item data store and requires [stakeholders to have required permissions](../feedback/give-permissions-feedback.md).  
- 
+- **[Microsoft Test Manager](https://msdn.microsoft.com/library/jj635157.aspx)**: Allows you to manage your test efforts, create and run manual tests, and create and track bugs that are found during test efforts. Test Manager installs with Visual Studio Test Professional and Visual Studio Enterprise.
+- **[Test & Feedback extension (previously called the Exploratory Testing extension)](../manual-test/stakeholder/provide-stakeholder-feedback.md)**: Provides a lightweight, plug-in to a web browser. Stakeholders can respond to feedback requests for user stories and features generated in VSTS or TFS. This extension is free to stakeholders.
+- **[Microsoft Feedback Client](../feedback/give-feedback.md)**: Your stakeholders can use **Microsoft Feedback Client** to record feedback for your application as video, audio, or type-written comments. This client installs with all versions of Visual Studio, or can be [installed from the free download](https://www.microsoft.com/download/details.aspx?id=30660). All feedback is stored in the work item data store and requires [stakeholders to have required permissions](../feedback/give-permissions-feedback.md).
+
 >[!IMPORTANT]
->Test Manager is deprecated for TFS 2017.  
+>Test Manager is deprecated for TFS 2017.
 
 ## Browser-based web tools
 
 ### Web portal
 
 The collaboration tools supported through the web portal are summarized under [Essential services](services.md). On VSTS, new features are deployed usually every three weeks, and for TFS, usually quarterly. For release notes, see [VSTS Features Timeline](/vsts/release-notes/index).
- 
+
 You can use these browsers to access the web portal (VSTS and TFS).
 
 Version        | Edge        | Internet Explorer | Safari (Mac)   | Firefox     | Chrome
@@ -176,11 +175,9 @@ The VSTS and TFS APIs are based on REST, OAuth, Json and service hooks&mdash;all
 
 REST APIs are provided to support building extensions to VSTS and TFS. To learn more, see [REST API overview](https://visualstudio.com/integrate/api/overview.md).
 
+## Related articles
 
-
-## Related notes 
 - [Key concepts](concepts.md)
 - [Essential services](services.md)
 - [Software development roles](roles.md)
 - [Pricing](https://www.visualstudio.com/team-services/pricing/)
- 

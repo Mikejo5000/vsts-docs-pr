@@ -1,6 +1,6 @@
 ---
 title: Filter backlogs  
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Codex & TFS
 description: Filter your backlog based on keywords, tags, or other fields   
 ms.technology: devops-agile
 ms.prod: devops
@@ -16,18 +16,18 @@ ms.date: 03/20/2018
 
 # Filter backlogs or queries
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)] 
 
 <!--- NEEDS UPDATING BASED ON FEATURES UNDER RELEASE  --> 
 <a id="filter"></a>
  
 If you have many items listed in your product or portfolio backlog&mdash;and you want to focus on a subset of them&mdash;you can filter the set. 
 
-::: moniker range="vsts || >= tfs-2018"
+::: moniker range=">= tfs-2018"
 ## Filter based on keywords or fields   
 
 > [!NOTE]   
-> **Feature availability**: The ability to filter your backlog or a query based on the Work Item Type, Assigned To, or State fields is available from VSTS. For queries, you must enable the [New Queries Experience](../track/queries-preview.md). 
+> **Feature availability**: The ability to filter your backlog or a query based on the Work Item Type, Assigned To, or State fields is available from Azure Codex. For queries, you must enable the [New Queries Experience](../track/queries-preview.md). 
 
 You can filter work items by typing a keyword or using one or more of the fields provided, such as work item type, assigned to, state, and tags. Based on the keyword that you enter, the filter function will list work items based on any visible/displayed column or field, including tags. Also, you can enter a value for an ID, whether or not the ID field is visible.  
 
