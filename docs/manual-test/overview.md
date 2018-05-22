@@ -19,11 +19,11 @@ monikerRange: '>= tfs-2015'
 Quality is a vital aspect of software systems, and manual testing 
 and exploratory testing continue to be important techniques for maximizing this.
 In today's software development processes,
-everybody in the team owns quality - including developers, managers, 
+every team member owns quality - including developers, managers, 
 product owners, user experience advocates, and more.
 
 VSTS and TFS provide rich and powerful
-tools everyone in the team can use to drive quality and collaboration
+tools that everyone in the team can use to drive quality and collaboration
 throughout the development process. The easy-to-use, browser-based 
 test management solution provides all the capabilities required for 
 planned manual testing, user acceptance testing, exploratory testing,
@@ -39,9 +39,6 @@ and gathering feedback from stakeholders.
 
 ![Holistic approach to manual testing, types of manual testing and personas involved](_img/manual-testing/schematic-01.png)  
 &nbsp; &nbsp; **Holistic approach to manual testing, types of manual testing, and personas involved**
-
->You must install the [Test Manager extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
-to use the advanced features of the Test hub.
 
 
 <a name="manual-testing"></a>
@@ -71,16 +68,16 @@ The Test hub in VSTS and TFS provides
 a rich test management solution for teams that need advanced manual
 testing capabilities. The Test hub includes all the capabilities
 required for the testing lifecycle - including test planning, authoring,
-execution, and tracking. Get started using the advanced manual 
-testing features with the
-[Test Manager extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web).
+execution, and tracking. 
+
+>Install the [Test Manager extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) to use advanced manual testing features of the Test hub.
 
 #### Test planning
 
 Create and manage test plans and test suites for your teams with ease.
 Create static suites, requirement-based suites, or query-based suites.
 Export and share the test plans and test suites with your team.
-See more at [Create test plans](getting-started/create-a-test-plan.md)
+See more at [Create test plans](getting-started/create-a-test-plan.md).
 
 ![Creating manual test plans](_img/manual-testing/create-test-plans-01.png)
 
