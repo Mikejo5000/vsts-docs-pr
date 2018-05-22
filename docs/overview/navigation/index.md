@@ -18,8 +18,8 @@ Here's what you need to know to get up and running using Azure Codex or one of i
 
 - **[Start page](go-to-app-hub-page.md)**: use to switch an app or a team project 
 - **[Search box](search-basics.md)**: use to find code, work items, or a wiki page 
-- **[Your profile menu](enable-preview-feature.md?toc=/vsts/navigation/toc.json&bc=/vsts/navigation/breadcrumb/toc.json)**: use to set personal preferences, notifications, and preview features  
-- **[Settings](../settings/index.md)**: use to add teams, manage security, and configure other project and account-level elements 
+- **[Your profile menu](enable-preview-feature.md?toc=/vsts/overview/navigation/toc.json&bc=/vsts/overview/navigation/breadcrumb/toc.json)**: use to set personal preferences, notifications, and preview features  
+- **[Settings](../../settings/index.md)**: use to add teams, manage security, and configure other project and account-level elements 
 - **Help**: use to quickly access the most relevant topics for the page you're on.  
 
 Each app provides you with one or more pages which support a number of features and functional operations. Within a functional view, you may then have a choice of options to select a specific object or artifact or create an artifact.  
@@ -43,9 +43,9 @@ In horizontal navigation mode, you select an application hub&mdash;such as **Cod
 
 Now that you have an understanding of how the user interface is structure, it's time to get started using it.  As you can see, there are a lot of features and functionality.  
 
-If all you need is a code repository and bug tracking solution, then start with the [Get started with Git and CodeVault](../git/gitquickstart.md) and [Manage bugs with Codex Agile](../work/backlogs/manage-bugs.md).  
+If all you need is a code repository and bug tracking solution, then start with the [Get started with Git and CodeVault](../../git/gitquickstart.md) and [Manage bugs with Codex Agile](../../work/backlogs/manage-bugs.md).  
 
-To start planning and tracking work, see [Get started with Agile tools to plan and track work](../work/backlogs/overview.md?context=vsts/default).
+To start planning and tracking work, see [Get started with Agile tools to plan and track work](../../work/backlogs/overview.md?context=vsts/default).
 
 
 <!---
@@ -104,4 +104,4 @@ To start planning and tracking work, see [Get started with Agile tools to plan a
 
 ## Resources 
 
-- [Project & Account Settings](../settings/index.md) 
+- [Project & Account Settings](../../settings/index.md) 

@@ -22,21 +22,21 @@ and easily drill down or widen your search
 1. In the search textbox at the top right of the window, check that the text says
    _Search code_. The search text box may say _Search work items_. In this case, use the drop-down selector to change it.
 
-   ![Switching between searching for code and work items](../search/code/_img/get-started/title-bar-search-box-empty-outlined.png)
+   ![Switching between searching for code and work items](../../search/code/_img/get-started/title-bar-search-box-empty-outlined.png)
 
-   If you don't see the ![select search type](../search/_img/_shared/search-select-type-icon.png)
+   If you don't see the ![select search type](../../search/_img/_shared/search-select-type-icon.png)
    selector in the Search box, open the **Manage extensions** page 
    and check that Code Search is installed.
 
-   ![Checking that the extension is installed](../search/_img/_shared/goto-marketplace.png)
+   ![Checking that the extension is installed](../../search/_img/_shared/goto-marketplace.png)
 
 1. Enter a search string in the textbox, and press _Enter_ (or choose the 
-   ![start search icon](../search/_img/_shared/start-search-icon.png) icon) to start your search.
+   ![start search icon](../../search/_img/_shared/start-search-icon.png) icon) to start your search.
 
 1. The search page shows a list of the matching code files. The selected file has all
    instances of the search string highlighted. 
 
-   ![Search results](../search/code/_img/get-started/search-results-01.png)
+   ![Search results](../../search/code/_img/get-started/search-results-01.png)
 
    If you see a list of work items, ensure that **Code** is selected in the top left.
 
@@ -44,7 +44,7 @@ and easily drill down or widen your search
    drop-down list. Select the filter function or code type you want to include in your search string from the
    list, and type the criteria value.
 
-   ![Search from VSTS title bar](../search/code/_img/get-started/title-bar-search-functionlist.png)    
+   ![Search from VSTS title bar](../../search/code/_img/get-started/title-bar-search-functionlist.png)    
 
    * You can find all instances of "ToDo" comments in your code simply by selecting `comment:` and typing `todo`. 
 
@@ -65,23 +65,23 @@ and easily drill down or widen your search
 1. Widen your search to all projects, or narrow it to specific areas and types of code,
    by selecting from the drop-down lists at the top of the page.
 
-   ![Use drop-down lists to widen or narrow your search](../search/code/_img/get-started/select-projects.png)
+   ![Use drop-down lists to widen or narrow your search](../../search/code/_img/get-started/select-projects.png)
 
 1. Use the tabs in the results page to view the history of the file and to compare versions of the file.
 
-   ![Use tabs to view history and compare files](../search/code/_img/get-started/compare-tab.png)
+   ![Use tabs to view history and compare files](../../search/code/_img/get-started/compare-tab.png)
 
    >Open the search results in a new browser tab from either search box by
    pressing _Ctrl_ + _Enter_ or by holding _Ctrl_ and clicking  the
-   ![start search icon](../search/_img/_shared/start-search-icon.png) icon.
+   ![start search icon](../../search/_img/_shared/start-search-icon.png) icon.
    In Google Chrome, press _Ctrl_ + _Shift_ + _Enter_ to switch the focus
    to the new browser tab.
 
 1. Choose the filename link at the top of this column to open the file in a new Code Explorer window.
 
-   ![Open the file in Code Explorer](../search/code/_img/get-started/open-in-code-explorer.png)
+   ![Open the file in Code Explorer](../../search/code/_img/get-started/open-in-code-explorer.png)
  
 ## Next step
 
 > [!div class="nextstepaction"]
-> [Learn more about Code Search](../search/code/advanced-search.md?toc=/vsts/organizations/public/toc.json&bc=/vsts/organizations/public/breadcrumb/toc.json)
+> [Learn more about Code Search](../../search/code/advanced-search.md?toc=/vsts/organizations/public/toc.json&bc=/vsts/organizations/public/breadcrumb/toc.json)

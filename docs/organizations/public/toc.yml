@@ -38,15 +38,15 @@
 - name: How-to Guides
   items:
   - name: Filter basics
-    href: ../work/backlogs/filter-backlogs.md?toc=/vsts/organizations/public/toc.json&bc=/vsts/organizations/public/breadcrumb/toc.json 
+    href: ../../work/backlogs/filter-backlogs.md?toc=/vsts/organizations/public/toc.json&bc=/vsts/organizations/public/breadcrumb/toc.json 
   - name: Search the code base
-    href: ../search/code/code-search.md?toc=/vsts/organizations/public/toc.json&bc=/vsts/organizations/public/breadcrumb/toc.json
+    href: ../../search/code/code-search.md?toc=/vsts/organizations/public/toc.json&bc=/vsts/organizations/public/breadcrumb/toc.json
   - name: Search work items
-    href: ../search/workitem/work-item-search.md?toc=/vsts/organizations/public/toc.json&bc=/vsts/organizations/public/breadcrumb/toc.json
+    href: ../../search/workitem/work-item-search.md?toc=/vsts/organizations/public/toc.json&bc=/vsts/organizations/public/breadcrumb/toc.json
 - name: Reference
   items:
   - name: Work item form controls
-    href: ../work/work-items/work-item-form-controls.md?toc=/vsts/organizations/public/toc.json&bc=/vsts/organizations/public/breadcrumb/toc.json 
+    href: ../../work/work-items/work-item-form-controls.md?toc=/vsts/organizations/public/toc.json&bc=/vsts/organizations/public/breadcrumb/toc.json 
   - name: Terms of service
     href: service-limits-public.md 
   - name: Feature differences for non-members
@@ -54,9 +54,9 @@
 - name: Resources
   items:
   - name: Git
-    href: ../git/index.md
+    href: ../../git/index.md
   - name: Work items
-    href: ../work/work-items/index.md 
+    href: ../../work/work-items/index.md 
   - name: VSTS data protection overview
-    href: ../articles/team-services-security-whitepaper.md 
+    href: ../../articles/team-services-security-whitepaper.md 
 

@@ -13,7 +13,7 @@ ms.date: 02-24-2018
 
 # Navigate to an application or functional area  
 
-If you don't have a team project yet, create one in [VSTS](../accounts/create-account-msa-or-work-student.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json) or set one up in an [on-premises TFS](../accounts/create-team-project.md). If you don't have access to the team project, [get invited to the team](../work/scale/multiple-teams.md#add-team-members).
+If you don't have a team project yet, create one in [VSTS](../../accounts/create-account-msa-or-work-student.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json) or set one up in an [on-premises TFS](../../accounts/create-team-project.md). If you don't have access to the team project, [get invited to the team](../../work/scale/multiple-teams.md#add-team-members).
 
 ## Open a team project or repository 
 

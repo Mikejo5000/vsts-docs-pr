@@ -32,7 +32,7 @@ TBD
 
 ## Codex Agile: Custom work tracking 
 
-Limits placed on the maximum number of custom work tracking objects that you can define for a public project are summarized below. You define these objects through an inheritance process. To learn more, see [Customize your work tracking process](../settings/work/customize-process.md).
+Limits placed on the maximum number of custom work tracking objects that you can define for a public project are summarized below. You define these objects through an inheritance process. To learn more, see [Customize your work tracking process](../../settings/work/customize-process.md).
 
 |Object | Inheritance | 
 |-------|------------:|

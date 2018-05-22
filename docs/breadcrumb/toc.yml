@@ -7,7 +7,7 @@
     topicHref: /vsts/user-guide/index
   - name: Navigation
     tocHref: /vsts/
-    topicHref: /vsts/navigation/index
+    topicHref: /vsts/overview/navigation/index
   - name: Public Projects
     tocHref: /vsts/
     topicHref: /vsts/organizations/public/index
