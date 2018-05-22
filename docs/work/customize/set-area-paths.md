@@ -41,10 +41,10 @@ From the web portal, open the admin page for the team project.
 You define both areas and iterations from the **Work** hub of the team project admin context. From the user context, you open the admin context by clicking the ![](../../_img/icons/gear-icon.png) gear icon. The tabs and pages available differ depending on which admin context you access.  
 
 <a id="admin-intro-team-services" /> 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"  
+::: moniker range=">= tfs-2017"  
 
 1. From the web portal for the team project context, click the ![](../_img/icons/gear_icon.png) gear icon.   
-	::: moniker range="vsts || >= tfs-2018"
+	::: moniker range=">= tfs-2018"
 	<img src="_img/modify-areas-its-open-admin-context-ts.png" alt="Web portal, VSTS, Open Admin context, team project level" style="border: 1px solid #C3C3C3;" />
 
 	If you're currently working from a team context, then hover over the ![gear icon](../_img/icons/gear_icon.png) and choose **Project settings**.  
@@ -84,7 +84,7 @@ You define both areas and iterations from the **Work** hub of the team project a
 <a id="tfs-15-area-paths" />
 ## Add an area path 
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"  
+::: moniker range=">= tfs-2017"  
 
 1. Open the **Work, Areas** page for the team project admin context.  
 
@@ -112,7 +112,7 @@ You define both areas and iterations from the **Work** hub of the team project a
  
 ::: moniker-end
  
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 
 <a name="rename-delete"></a>
 ## Rename or delete an area or iteration node 

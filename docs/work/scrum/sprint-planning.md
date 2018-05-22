@@ -6,8 +6,7 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: AD107B7C-D0AA-44B1-8288-2AB046194439
 ms.manager: douge
-ms.author: kaelli
-author: KathrynEE
+ms.author: kaelliauthor: KathrynEE
 ms.topic: tutorial
 ms.date: 03/20/2018
 ---
@@ -48,7 +47,7 @@ By setting team capacity and estimating tasks, the team can see when the team or
 <img src="_img/sp-intro.png" alt="Sprint planning" style="border: 1px solid #C3C3C3;" /> 
 
 
-> [!NOTE]
+> [!NOTE]    
 >Sprint planning doesn't need to be challenging. It can be fun and a time for the entire Scrum team to build camaraderie by working together to answer the question of "What can we commit to?" For examples and strategies to keep your sprint planning focused and effective, check out the [What is Scrum?](/azure/devops/agile/what-is-scrum).
 >  
 >When you've completed your sprint plan, your sprint backlog should contain all the information your team needs to successfully complete work within the time allotted without having to rush at the end. 
@@ -110,7 +109,7 @@ Add as many tasks as needed to capture the work required to complete each item. 
 
 	<!--- **Feature availability:** From the web portal for VSTS and TFS 2017, you'll have access to the [new form with the new work tracking experience](../backlogs/add-work-items.md). For TFS 2015 and ealier versions, the old form is supported.   --> 
 	
-	::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+	::: moniker range=">= tfs-2017"
     <a id="task-form-team-services" /> 
 	<!--- Task form, new form -->
 
@@ -168,7 +167,7 @@ To quickly reassign tasks, drag the task onto the new assignee's capacity bar. A
 
 ![Reassign tasks](_img/IC797838.png)  
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 <a id="bulk-modify">  </a>
 ### Use multi-select to bulk modify items
 
@@ -191,7 +190,7 @@ With multi-select, you can perform several actions on several work items at once
 ::: moniker range="tfs-2015"
 Multi-select of backlog work items requires TFS 2015.1 or later version.
 ::: moniker-end
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 To select several items in a sequence, hold down the shift key. To select several non-sequential items, use the Ctrl key. Then, you can either drag the selected items to a new position within the backlog, to a different sprint, or select an option from the context (![context icon](../_img/icons/context_menu.png)) or action (![actions icon](../_img/icons/actions-icon.png)) menu of one of the items. 
 
 To learn more, see [Bulk modify work items](../backlogs/bulk-modify-work-items.md). 

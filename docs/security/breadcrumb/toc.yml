@@ -1,10 +1,10 @@
 - name: VSTS and TFS
   tocHref: /vsts/
-  topicHref: /vsts/index#pivot=services
+  topicHref: /vsts/index#pivot=apps
   items: 
   - name: Admin
     tocHref: /vsts/
-    topicHref: /vsts/index#pivot=services&panel=admin
+    topicHref: /vsts/index#pivot=apps&panel=admin
     items:
     - name: "Security & Identity"
       tocHref: /vsts/

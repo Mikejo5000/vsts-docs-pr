@@ -40,7 +40,7 @@ For naming restrictions on area and iteration paths, see [About areas and iterat
 <a id="open-admin-context">  </a>
 ## Open the administration context for the team project
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"  
+::: moniker range=">= tfs-2017"  
 From the web portal, open the admin page for the team project.
 
 You define both areas and iterations from the Work hub of the team project admin context. From the user context, you open the admin context by clicking the ![](../../_img/icons/gear-icon.png) gear icon. The tabs and pages available differ depending on which admin context you access.  
@@ -48,7 +48,7 @@ You define both areas and iterations from the Work hub of the team project admin
 <a id="admin-intro-team-services" /> 
 
 1. From the web portal for the team project context, click the ![](../../_img/icons/gear-icon.png) gear icon..  
-	::: moniker range="vsts || >= tfs-2018"
+	::: moniker range=">= tfs-2018"
 	<img src="_img/modify-areas-its-open-admin-context-ts.png" alt="Web portal, VSTS, Open Admin context, team project level" style="border: 1px solid #C3C3C3;" /> 
 	If you're currently working from a team context, then hover over the ![gear icon](../_img/icons/gear_icon.png) and choose Project settings.  
 
@@ -81,7 +81,7 @@ You define both areas and iterations from the Work hub of the team project admin
 ## Add iterations and set iteration dates
 From the **Iterations** page, you can add and select the iterations that will be active for your team. You add iterations in the same way you add areas. For more information about working within a sprint cadence, see [Schedule sprints](../scrum/define-sprints.md).  
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 <a id="define-sprints-team-services">   </a>
 
 1. Open the Work, Iterations page for the team project context. 
@@ -132,7 +132,7 @@ From the **Iterations** page, you can add and select the iterations that will be
 ::: moniker-end
 
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 
 <a name="rename-delete"></a>
 ## Rename or delete an iteration 

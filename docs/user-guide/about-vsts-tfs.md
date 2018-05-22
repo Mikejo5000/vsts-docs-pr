@@ -5,7 +5,8 @@ ms.prod: devops
 ms.technology: devops-new-user
 ms.assetid: 458FAFD1-98B0-4B74-B8E7-F2C73D4EED6B
 ms.manager: douge
-ms.author: kaelli
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
 ms.date: 06/22/2017
@@ -71,18 +72,14 @@ To be ready to use the organization entity, we recommend that you create account
 have created collections in TFS. In the short term, having your work split across multiple accounts can cause some 
 problems, but we plan to address these when the organization entity is introduced. In particular:
 
-* You purchase VSTS users per account, meaning that paid users only have access to the VSTS account 
-in which the payment is made. If you have users who need access to multiple accounts, Visual Studio subscriptions can
-be an attractive option, since subscribers can be added to any number of VSTS accounts at no charge. We are
-also considering other ways we might make access to multiple accounts grouped into an organization available.
+- You purchase VSTS users per account, meaning that paid users only have access to the VSTS account in which the payment is made. If you have users who need access to multiple accounts, Visual Studio subscriptions can be an attractive option, since subscribers can be added to any number of VSTS accounts at no charge. We are also considering other ways we might make access to multiple accounts grouped into an organization available.
 
-* You currently have to administer accounts one at a time, which can be cumbersome when you have many accounts. We're
-working to support organization-wide policies.
+- You currently have to administer accounts one at a time, which can be cumbersome when you have many accounts. We're working to support organization-wide policies.
 
 ### Authentication
 
-With TFS, you typically connect to an intranet server (for example, ```https://tfs.corp.contoso.com:8080/tfs```). 
-You authenticate with Windows Authentication and your Active Directory (AD) domain credentials. Usually this 
+With TFS, you typically connect to an intranet server (for example, ```https://tfs.corp.contoso.com:8080/tfs```).
+You authenticate with Windows Authentication and your Active Directory (AD) domain credentials. Usually this
 process is transparent, and you'll never see any kind of sign-in experience.
 
 With VSTS, you connect over the public internet (for example, ```https://contoso.visualstudio.com```). You'll either 

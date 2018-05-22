@@ -62,7 +62,7 @@ The following table summarizes the differences between the three supported proce
 <table width="90%">
 <tr valign="bottom">
 <th width="50%">Feature </th>
-<th >[Inheritance](inheritance-process-model.md)</th>
+<th >[Inheritance](../../settings/work/inheritance-process-model.md)</th>
 <th >[Hosted XML](hosted-xml-process-model.md)</th>
 <th >[On-premises XML](on-premises-xml-process-model.md)</th>
 </tr>

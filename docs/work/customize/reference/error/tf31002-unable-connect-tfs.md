@@ -6,7 +6,7 @@ ms.technology: devops-agile
 ms.assetid: b5566a0b-55f8-4c76-aea2-6d1581a2c90d
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
-ms.topic: Troubleshooting
+ms.topic: troubleshooting
 ms.date: 01/20/2017
 ---
 # TF31002: Unable to connect to this Team Foundation Server {0}. Team Foundation Server URL: {1}

@@ -35,14 +35,14 @@ Using work items, you can share information in the following ways:
 
 To convey detailed information, you can format text and insert images inline within the description field or any HTML field type.   
 
-The rich text formatting toolbar appears above each text box that can be formatted. It only becomes active when you click within the text box. You can format text in HTML data fields, such as the Description, Accepted Criteria, and History. Available fields depend on the work item type, if you've [customized the process](../customize/process/customize-process.md), and the platform you work on.   
+The rich text formatting toolbar appears above each text box that can be formatted. It only becomes active when you click within the text box. You can format text in HTML data fields, such as the Description, Accepted Criteria, and History. Available fields depend on the work item type, if you've [customized the process](../../settings/work/customize-process.md), and the platform you work on.   
 
 The specific set of formatting features differs depending on the client you use. In all clients, you can bold, italicize, and underline text. You can also add and remove hyperlinks, format text as ordered or unordered lists, and add images. 
 
 
 # [Browser](#tab/browser) 
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 <img src="_img/rich-text-ui-team-services.png" alt="Rich text tool bar - VSTS" style="border: 2px solid #C3C3C3;" />
 
 You can use the ![Remove format](../_img/icons/remove-formatting-icon.png) icon or CTRL+Spacebar to remove formatting from highlighted text.
@@ -107,7 +107,7 @@ For example, you can attach a screen image that illustrates a problem, a line of
 # [Browser](#tab/browser)
 
 #### Attachment control toolbar 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 
 <img src="_img/share-plans-attachment-tab-vsts.png" alt="Attachment controls, web portal VSTS" style="border: 1px solid #C3C3C3;" />  
 
@@ -190,7 +190,7 @@ By linking your storyboard to a work item, you provide your team access to the s
 <a id="team-services-storyboard" />
 # [Browser](#tab/browser)
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 You can open Storyboarding with PowerPoint from the ![actions icon](../_img/icons/actions-icon.png) actions menu within a work item form. 
 
 <img src="_img/share-plans-storyboard-vsts-menu.png" alt="Start storyboarding within work item web form, web portal VSTS" style="border: 1px solid #C3C3C3;" />  
@@ -229,7 +229,7 @@ To open PowerPoint with storyboarding, see [Storyboard your ideas using PowerPoi
 
 A common way teams share information is through a list of work items. You can quickly generate a formatted list using the **Copy as HTML** or **Copy to clipboard** options. See [Copy list](../backlogs/copy-list.md).
 
-::: moniker range="vsts || >= tfs-2015"
+::: moniker range=">= tfs-2015"
 
 ## Team dashboards 
 
@@ -239,7 +239,7 @@ For details, see [Dashboards, charts, & widgets](../../report/dashboards/overvie
 
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2018"
+::: moniker range=">= tfs-2018"
 
 ## Team project wiki 
 
@@ -274,7 +274,7 @@ As you can see, there are many ways to share information using work items alone.
 
 
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 ### Marketplace extensions  
 
 You may find additional ways to share information and collaborate as a team by adding a [Marketplace extension](https://marketplace.visualstudio.com/?targetId=754f8691-19ce-47a2-a1e8-ebeab1e67955#VSTS). 

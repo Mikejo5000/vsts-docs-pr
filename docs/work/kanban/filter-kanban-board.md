@@ -36,7 +36,7 @@ To filter the Kanban board, first customize the board settings so that the cards
 
 For example, to filter by Assign To, Iteration Path, or Work Item Type&mdash;or the contents of any other field&mdash;you add those fields to show on the cards. For details, see [Customize cards](../customize/customize-cards.md).  
 
-::: moniker range="vsts || >= tfs-2018"
+::: moniker range=">= tfs-2018"
 ![Kanban board, customize card fields](_img/filter/filter-kb-card-field-settings-ts.png)
 ::: moniker-end
 ::: moniker range=">= tfs-2015 <= tfs-2017"
@@ -47,7 +47,7 @@ The filter function displays work items based on any visible/displayed column or
 
 For example, here we filter the backlog to only show items that include 'Web' in any one of the displayed column fields.  
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 ![Kanban board, Filter using keyword search](../kanban/_img/filter/filter-options-web.png)
 ::: moniker-end
 ::: moniker range="tfs-2015"
@@ -55,7 +55,7 @@ For example, here we filter the backlog to only show items that include 'Web' in
 ::: moniker-end
 
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 > [!TIP]  
 >Type **f** to move your cursor to the filter box. To move the focus up or down within a column, enter the ![Up/Down arrow](../_img/icons/Arrow_Up.png)![ ](../_img/icons/Arrow_Down.png) up/down arrows.    
 >For more tips, see [Kanban board keyboard shortcuts](kanban-board-keyboard-shortcuts.md).
@@ -66,7 +66,7 @@ The filter criteria ignores the following characters when the field value starts
 
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 
 <a id="field-filter"></a>
 ## Filter using select field values  
@@ -99,7 +99,7 @@ Once the board is filtered, you can click the filter icon to hide the drop downs
 
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 <a id="parent-filter"></a>
 ## Filter by specifying parent work items
 

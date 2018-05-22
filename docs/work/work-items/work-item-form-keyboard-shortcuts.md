@@ -5,7 +5,6 @@ description: Use keyboard shortcuts to interact with work item forms and the Wor
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 
-ms.topic: reference
 ms.manager: douge
 ms.author: kaelli
 ms.topic: reference

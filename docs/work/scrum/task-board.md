@@ -34,7 +34,7 @@ In this topic you'll learn how to:
 
 ::: moniker range="vsts"
 > [!NOTE]  
-> Your task board is one of two types of boards available to you. For an overview of the features supported on each backlog and board, see [Backlogs, boards, and plans](../backlogs/backlogs-boards-plans.md). To customize the task board to include more or different columns, you need to customize the workflow. For details, see [Customize an inheritance process](../customize/inheritance-process-model.md). 
+> Your task board is one of two types of boards available to you. For an overview of the features supported on each backlog and board, see [Backlogs, boards, and plans](../backlogs/backlogs-boards-plans.md). To customize the task board to include more or different columns, you need to customize the workflow. For details, see [Customize an inheritance process](../../settings/work/inheritance-process-model.md). 
 >
 >In addition, if you're wondering why the task board items don't match your query list of items for a sprint, see [Task board items versus query list items](../backlogs/backlogs-boards-plans.md#task-board-items).
 ::: moniker-end
@@ -117,7 +117,7 @@ At the end of the sprint, you'll want to perform these final tasks:
 
 Dragging an incomplete item to the product backlog or to a future sprint updates the Iteration Path of all uncompleted child tasks to correspond to the product backlog iteration path or future sprint.   
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 You can [drag-and-drop work items onto a sprint from any backlog or board](define-sprints.md#drag-drop-to-sprint). 
 ::: moniker-end
 ::: moniker range="tfs-2015"
@@ -163,8 +163,8 @@ Each team can customize their task board in the following ways:
 An administrator can customize the task board for all teams in the following ways:  
 
 ::: moniker range="vsts"
-- [Add a custom workflow state to the task WIT for a process](../customize/process/customize-process-workflow.md)
-- [Add a custom work item type to the task board for a process](../customize/process/customize-process-backlogs-boards.md)
+- [Add a custom workflow state to the task WIT for a process](../../settings/work/customize-process-workflow.md)
+- [Add a custom work item type to the task board for a process](../../settings/work/customize-process-backlogs-boards.md)
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
@@ -180,7 +180,7 @@ If you exceed the number of items allowed on your task board, you'll receive a m
 
 You can reduce the number of items on the task board by moving them to the backlog or another sprint. When you move a parent PBI or user story, all active child tasks (State not equal to Done or Closed) automatically move with the parent item. 
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 
 - From the task board, drag the PBI or user story from the first column onto the backlog or future sprint. All child tasks automatically move with the parent item.  
 - From the sprint backlog, multi-select the items to move and then click the context menu for an item and select the iteration to move them to.  

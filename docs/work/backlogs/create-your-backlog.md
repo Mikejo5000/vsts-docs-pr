@@ -30,14 +30,14 @@ and more. Because the most important work appears at the top of the list, your t
 
 From your web browser, open your product backlog from the **Work** hub, **Backlogs** page.  
  
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 !["Web portal, choose Work hub, Backlogs](_img/cyb-open-backlog-tfs-2017.png)
 ::: moniker-end
 ::: moniker range=">= tfs-2013 <= tfs-2015"
 ![Work hub, backlogs, TFS 2015, 2013 web portal](_img/backlogs-boards-plans/open-backlog-tfs-2015.png)
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 > [!TIP]    
 > If you don't see the team or team project you want, click the ![VSTS icon](../_img/icons/project-icon.png) icon to [browse all team projects and teams](../../user-guide/account-home-pages.md). 
 ::: moniker-end

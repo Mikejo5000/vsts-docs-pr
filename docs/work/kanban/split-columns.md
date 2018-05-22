@@ -10,7 +10,7 @@ ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 ms.author: kaelliauthor: KathrynEE
 ms.topic: conceptual
-monikerRange: 'vsts || >= tfs-2015 <= tfs-2018'
+monikerRange: '>= tfs-2015'
 ms.date: 03/20/2018
 ---
 
@@ -50,7 +50,7 @@ Split columns provides you even greater insight into how many items sit idle in 
 
 By reviewing the frequency of pile ups and where they occur, your team can adjust their processes to eliminate the bottlenecks. Workflow processes that incur no or very few bottlenecks correspond to perfect flows. No item sits in a queue for any 
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 ##Choose which columns you want to split  
 Now that you understand how your team can use split columns, here's how to turn them on.
 
@@ -58,7 +58,7 @@ Now that you understand how your team can use split columns, here's how to turn 
 > Before you split columns, you'll want to have [mapped each stage of your team's process to a Kanban column](add-columns.md).
 
 ::: moniker-end   
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"  
+::: moniker range=">= tfs-2017"  
 1. From your Kanban board, click ![settings icon](../_img/icons/team-settings-gear-icon.png) and as needed, click Columns.   
 	![Kanban board, open common configuration settings](../customize/_img/customize-cards/open-config-dialog.png)  	
 	Go to [Kanban basics](kanban-basics.md) to learn how to access your Kanban board. And, if you aren't a team admin, [get added as one](../scale/add-team-administrator.md). Only team and project admins can customize columns.

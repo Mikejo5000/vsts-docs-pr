@@ -1,0 +1,22 @@
+---
+title: Describes learning devops
+titleSuffix: Azure Codex
+description: Understand how you can get Azure Codex and start using it for free 
+ms.technology: devops-new-user 
+ms.prod: devops
+ms.topic: conceptual
+ms.assetid:  
+ms.manager: douge
+ms.author: chcomley
+author: chcomley
+ms.date: 12/07/2016
+---
+
+
+# Learn devops
+
+::: moniker range=">= tfs-2013"
+
+some text here
+
+::: moniker-end

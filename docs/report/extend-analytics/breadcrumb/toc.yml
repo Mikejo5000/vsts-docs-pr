@@ -1,10 +1,10 @@
-- name: VSTS and TFS
+- name: Azure Codex
   tocHref: /vsts/
   topicHref: /vsts/index
   items: 
   - name: Extend
     tocHref: /vsts/
-    topicHref: /vsts/index#pivot=services&panel=extend
+    topicHref: /vsts/index#pivot=apps&panel=extend
     items:
     - name:  Extend Analytics with OData
       tocHref: /vsts/report/extend-analytics/

@@ -19,7 +19,7 @@ Your sprint planning and tracking tools automatically consider days off when cal
 
 If you're not a team administrator, [get added as one](../scale/add-team-administrator.md). Only team and project admins can change team settings. 
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018" 
+::: moniker range=">= tfs-2017" 
 <a id="team-services-work-days" />
 
 Open the Settings dialog from the Capacity page to set Working days.

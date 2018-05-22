@@ -20,7 +20,7 @@ Each team can determine the backlog levels that they use. For example, feature t
 
 ::: moniker range="vsts" 
 If you want additional portfolio backlogs, see the following topics based on the process model you use: 
-- **Inheritance**: [Customize your backlogs or boards for a process](process/customize-process-backlogs-boards.md)  
+- **Inheritance**: [Customize your backlogs or boards for a process](../../settings/work/customize-process-backlogs-boards.md)  
 - **Hosted XML**: [Add portfolio backlogs](add-portfolio-backlogs.md).  
 
 For an overview of process models, see [Customize your work tracking experience](customize-work.md).
@@ -42,7 +42,7 @@ If you want additional portfolio backlogs, see [Add portfolio backlogs](add-port
 Because this setting affects all team members' view of the team backlogs and boards, you must be a team administrator to change the setting. Changing the setting is disabled if you're not a team administrator. Go [here to get added as a team administrator](../scale/add-team-administrator.md).
  	
 
-::: moniker range="vsts || >= tfs-2018" 
+::: moniker range=">= tfs-2018" 
 1. From your team's backlog page, click the ![gear icon](../_img/icons/team-settings-gear-icon.png) (gear icon) to open the common configuration team settings.
 
 	![Backlog board, open team settings](../backlogs/_img/organize-backlog-open-ccdialog.png) 

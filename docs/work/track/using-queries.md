@@ -49,7 +49,7 @@ Active Bugs shared query provided with the Agile process template. Examples are 
 	Use ![Insert new filter line](_img/3.png) to insert a clause above the current clause. Use ![Remove this filter line](_img/4.png) to delete a clause.  Queries are automatically scoped to the current team project. To find work items defined in several team projects, see [Query across team projects](using-queries.md#across-projects).   	
 
 	# [New Queries Experience](#tab/new-query-exp)
-	::: moniker range="vsts || >= tfs-2018"	
+	::: moniker range=">= tfs-2018"	
 	<img src="_img/using-queries-new-vsts-exp.png" alt="Web portal, Queries page, new queries experience, Editor view of a Flat List Query" style="border: 2px solid #C3C3C3;" />
 	::: moniker-end
 	::: moniker range=">= tfs-2013 <= tfs-2017"
@@ -57,7 +57,7 @@ Active Bugs shared query provided with the Agile process template. Examples are 
 	::: moniker-end
 
 	# [Old Queries Experience](#tab/old-query-exp)
-	::: moniker range="vsts || >= tfs-2015 <= tfs-2018"	 	
+	::: moniker range=">= tfs-2015"	 	
 	<img src="_img/query-active-bugs-editor-vso.png" alt="Web portal, Queries page, Editor view of a Flat List Query" style="border: 1px solid #C3C3C3;" /> 
 	::: moniker-end
 	::: moniker range="tfs-2013"	 
@@ -145,7 +145,7 @@ To learn more about each link type, see [Link work items to support traceability
 ## Query across team projects  
 By default, shared queries and new queries are scoped to the current team project. However, you can create queries to find work items defined within the team project collection. You save cross-project queries under a specific team project.     
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2017"
+::: moniker range=">= tfs-2015"
 
 To list work items defined in two or more team projects, checkmark **Query across projects**. For example, the following query finds all features created in all team projects within the last 30 days.
  
@@ -158,7 +158,7 @@ To list work items defined in two or more team projects, checkmark **Query acros
 > The **Query across projects** feature is supported from TFS 2015.1 and later versions.  
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2017"
+::: moniker range=">= tfs-2015"
 With the **Query across projects** checked, you can add the Team Project field to filter to a select number of team projects.   
 
 <img src="_img/using-queries-query-across-select-projects.png" alt="VSTS and TFS 2015.1, Web portal, Query across select team projects using the In operator" style="border: 2px solid #C3C3C3;" />

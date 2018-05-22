@@ -35,7 +35,7 @@ In this topic you'll learn:
 
 [!INCLUDE [temp](../_shared/image-differences-with-wits.md)] 
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 <!---#### VSTS, TFS 2018, TFS 2017 (new form enabled) --> 
 From the **Work** hub, choose Impediment from the New Work Item list of options. Click the ![pin icon](../_img/icons/pin-icon.png) pin icon to have it show up within the Work hub drop down menu. 
 
@@ -63,7 +63,7 @@ From the Queries page, choose Impediment from the **New** drop down menu.
 
 [!INCLUDE [temp](../_shared/customize-work-tracking.md)] 
 ::: moniker range="vsts"
-Impediments and issues don't appear on your backlog. Instead, you track them using [queries](../track/using-queries.md). If you want them to appear on your backlog, or you want to track other work item types on your backlog, see [Customize your backlogs or boards](../customize/process/customize-process-backlogs-boards.md).
+Impediments and issues don't appear on your backlog. Instead, you track them using [queries](../track/using-queries.md). If you want them to appear on your backlog, or you want to track other work item types on your backlog, see [Customize your backlogs or boards](../../settings/work/customize-process-backlogs-boards.md).
 ::: moniker-end
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 Impediments and issues don't appear on your backlog. Instead, you track them using [queries](../track/using-queries.md). If you want them to appear on your backlog, or you want to track other work item types on your backlog, see [Add a work item type to a backlog and board](../customize/add-wits-to-backlogs-and-boards.md).

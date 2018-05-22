@@ -1,26 +1,24 @@
 ---
-title: Navigate within the Visual Studio Team Explorer pane
-titleSuffix: VSTS & TFS 
+title: Navigate within Azure Codex
+titleSuffix: Azure Codex 
 description: Download TFS clients, navigate in Team Explorer for Visual Studio Team Services & Team Foundation Server 
 keywords: Download TFS clients 
 ms.technology: devops-new-user
 ms.prod: devops
 ms.assetid: fd7a5cf7-7916-4fa0-b5e6-5a83cf377a02
 ms.manager: douge
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: reference
-ms.date: 09/07/2017
+ms.date: 07/15/2018
 monikerRange: '>= tfs-2013'
 ---
 
-
-# Navigate in Team Explorer
+# Navigate in Azure codex
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-You use Team Explorer to manage work that is assigned to you, your team, or your team projects, and to coordinate your efforts with other team members to develop a project. Team Explorer is a plug-in that installs with Visual Studio or Eclipse. Working from different platforms, developers and stakeholders can effectively collaborate using Team Explorer connected to team projects hosted on Visual Studio Online or on-premises Team Foundation Server (TFS). 
-
+You use Team Explorer to manage work that is assigned to you, your team, or your team projects, and to coordinate your efforts with other team members to develop a project. Team Explorer is a plug-in that installs with Visual Studio or Eclipse. Working from different platforms, developers and stakeholders can effectively collaborate using Team Explorer connected to team projects hosted on Visual Studio Online or on-premises Team Foundation Server (TFS).
 
 >[!TIP]  
 >You can access the latest version of Visual Studio clients from the [Visual Studio Downloads page](https://www.visualstudio.com/downloads/). Additional options for connecting to VSTS or TFS include:
@@ -187,6 +185,6 @@ By installing [TFS Power Tools](https://marketplace.visualstudio.com/items?itemN
 Additional requirements may apply.
 
 > [!NOTE]  
-> For TFS 2017 and later versions, you can [install the TFS Process Template editor from the Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=KarthikBalasubramanianMSFT.TFSProcessTemplateEditor). You can use this version of the Process Editor to modify the old-style work item forms. You can't use it to edit forms associated with the [new web forms](../work/customize/process/new-work-item-experience.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json ).  
+> For TFS 2017 and later versions, you can [install the TFS Process Template editor from the Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=KarthikBalasubramanianMSFT.TFSProcessTemplateEditor). You can use this version of the Process Editor to modify the old-style work item forms. You can't use it to edit forms associated with the [new web forms](../work/customize/process/new-work-item-experience.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json).  
 
 

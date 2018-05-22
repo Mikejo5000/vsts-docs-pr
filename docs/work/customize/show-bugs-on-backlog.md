@@ -28,7 +28,7 @@ When you track bugs as requirements, they'll show up on the product backlog and 
 -->  
 
 1. From your team's backlog page, click the ![gear icon](../_img/icons/team-settings-gear-icon.png) (gear icon) to open the common configuration team settings.  
-	::: moniker range="vsts || >= tfs-2017 <= tfs-2018"  
+	::: moniker range=">= tfs-2017"  
 	![Backlog board, open team settings](../backlogs/_img/organize-backlog-open-ccdialog.png) 
 	::: moniker-end
 	::: moniker range="tfs-2015" 
@@ -60,7 +60,7 @@ When you track bugs as requirements, they'll show up on the product backlog and 
 	> [!NOTE]    
 	> Because this setting affects all team members' view of the team backlogs and boards, you must be a team administrator to change the setting. Changing the setting is disabled if you're not a team administrator. Go [here to get added as a team administrator](../scale/add-team-administrator.md).
 	
-	::: moniker range="vsts || >= tfs-2018"  	
+	::: moniker range=">= tfs-2018"  	
 	<img src="_img/show-bugs-settings-ts.png" alt="VSTS, web portal, team settings dialog, Working with bugs tab" style="border: 2px solid #C3C3C3;" />
 	::: moniker-end
 	::: moniker range="tfs-2017"     
@@ -85,7 +85,7 @@ However, what if you want to track other work item types (WITs) on your backlogs
 
 ::: moniker range="vsts"  
 You can add other WITs&#8212;such as change requests, issues, or impediments&#8212; by customizing your process or team project, based on the process model you use. For details,  
-- For the Inheritance process model, see [Customize your backlogs or boards for a process](../customize/process/customize-process-backlogs-boards.md).   
+- For the Inheritance process model, see [Customize your backlogs or boards for a process](../../settings/work/customize-process-backlogs-boards.md).   
 - For Hosted XML and On-premises XML process models, see [Add a work item type to a backlog and board](add-wits-to-backlogs-and-boards.md).
 ::: moniker-end
 

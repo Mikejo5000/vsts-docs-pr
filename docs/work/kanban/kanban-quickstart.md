@@ -4,7 +4,6 @@ titleSuffix: VSTS & TFS
 description: Use the Kanban board to plan and track work in Visual Studio Team Services and Team Foundation Server 
 ms.global_help.title: View or add a Kanban board
 ms.global_help.keywords: ms.vss-work-web.boards-hub, 1  
-ms.topic: get-started-article
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 4942A638-9888-461E-969D-0BB9B1FE1736
@@ -32,7 +31,7 @@ Each Kanban board is associated with a team and a work item type. For the Agile 
 When you add a team, you add a number of team assets which a team admin can  configure to support the way the team works. To add a set of Kanban boards to support a new team, [add a team](../scale/multiple-teams.md). 
 
 ::: moniker range="vsts" 
-To add a board to support an additional portfolio backlog, see [Customize your backlogs or boards](../customize/process/customize-process-backlogs-boards.md).
+To add a board to support an additional portfolio backlog, see [Customize your backlogs or boards](../../settings/work/customize-process-backlogs-boards.md).
 ::: moniker-end 
 ::: moniker range=">= tfs-2013 <= tfs-2018"   
 To add a board to support an additional portfolio backlog, see [Add a portfolio backlog level](../customize/add-portfolio-backlogs.md).
@@ -41,14 +40,14 @@ To add a board to support an additional portfolio backlog, see [Add a portfolio 
 ## Open your Kanban board from the web portal
 
 To view your Kanban board, open your team project from a web browser and click **Work>Backlogs**, and then click **Board**.   
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"   
+::: moniker range=">= tfs-2017"   
 ![Kanban board, Agile template](_img/kanban-basics-intro.png)     
 ::: moniker-end   
 ::: moniker range=">= tfs-2013 <= tfs-2015"    
 > [!div class="mx-imgBorder"]  
 > ![TFS 2015, Kanban board, Agile template](_img/overview/kanban-basics-intro-tfs.png)       
 ::: moniker-end   
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"   
+::: moniker range=">= tfs-2017"   
 If you don't see the **Work** hub, your screen size may be reduced. Click the three dots (![](../../_shared/_img/ellipses-reduced-screen-size.png)), then click **Work**, **Backlogs**, and then **Board**.   
 
 ![Open Work hub when screen size is reduced](_img/kanban-quickstart-reduced-screensize.png)   
@@ -77,7 +76,7 @@ As work completes in one stage, update the status of an item by dragging and dro
 
 <img src="_img/ALM_CC_MoveCard.png" alt="Kanban board, Agile template, update status of work item" style="border: 1px solid #C3C3C3;" />  
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 ## Update fields from the card 
 
 You can quickly update a field or reassign ownership directly from the board. 

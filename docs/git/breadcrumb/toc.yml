@@ -4,7 +4,7 @@
   items:
   - name: Code
     tocHref: /vsts/git/
-    topicHref: /vsts/index#pivot=services&panel=code
+    topicHref: /vsts/index#pivot=apps&panel=code
     items:
     - name: Git
       tocHref: /vsts/

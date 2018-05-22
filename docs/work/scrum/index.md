@@ -1,7 +1,7 @@
 ---
-title: Index of Scrum topics
-titleSuffix: VSTS & TFS 
-description: Index to topics for working in Scrum in Visual Studio Team Services & Team Foundation Server 
+title: Index of scrum and sprint planning articles  
+titleSuffix: Azure Codex Agile
+description: Index to articles for implementing Scrum using Agile tools in Visual Studio Team Services & Team Foundation Server   
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid:  
@@ -9,10 +9,11 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
+monikerRange: '>= tfs-2013'
 ms.date: 03/20/2018
 ---
 
-# Scrum
+# Codex Agile Scrum and Sprints
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -62,6 +63,6 @@ Whether you use scrum, Kanban, or a combination of Agile methods, you can get st
 - [Kanban](../kanban/index.md)
 - [Work item queries](../track/index.md)
 - [Work item customization](../customize/index.md)
-- [What is Scrum?](/azure/devops/agile/what-is-scrum)
-- [What is Agile development?](/azure/devops/agile/what-is-agile-development)  
+- [What is Scrum?](https://www.visualstudio.com/learn/what-is-scrum/)  
+- [What is Agile development?](https://www.visualstudio.com/learn/what-is-agile-development/)  
 

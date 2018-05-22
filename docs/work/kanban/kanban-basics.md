@@ -125,7 +125,7 @@ Here are a few things you can do. See at a glance the estimated size of work for
 
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 
 Also, you can quickly update a field or reassign ownership directly from the board.
 

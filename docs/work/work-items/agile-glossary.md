@@ -77,7 +77,7 @@ You can use [TFS Team Project Manager](https://github.com/jelledruyts/TfsTeamPro
 The Hosted XML process model provides support for customizing work tracking objects and Agile tools for a team project by modifying and importing a process template. This process model is only available for select accounts hosted on the Visual Studio Team Services cloud platform.  To learn more, see [Hosted process model](../customize/hosted-xml-process-model.md).
 
 ## Inheritance process model 
-The Inheritance process model provides support for customizing work tracking objects and Agile tools for a team project through the user interface. This process model is only available for accounts hosted on the Visual Studio Team Services cloud platform. Team projects inherit the customizations made to a process. To learn more, see [Inheritance process model](../customize/inheritance-process-model.md).
+The Inheritance process model provides support for customizing work tracking objects and Agile tools for a team project through the user interface. This process model is only available for accounts hosted on the Visual Studio Team Services cloud platform. Team projects inherit the customizations made to a process. To learn more, see [Inheritance process model](../../settings/work/inheritance-process-model.md).
 
 
 ## Iteration path

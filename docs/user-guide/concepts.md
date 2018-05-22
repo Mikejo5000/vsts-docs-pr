@@ -1,5 +1,5 @@
 ---
-title: Key concepts for working with both VSTS & TFS
+title: Key concepts for working with Azure Codex
 description: Understand the key concepts for Visual Studio Team Services & Team Foundation Server  
 ms.technology: devops-new-user 
 ms.prod: devops
@@ -12,8 +12,7 @@ ms.date: 08/04/2017
 monikerRange: '>= tfs-2015'
 ---
 
-
-# Key concepts for working with VSTS and TFS
+# Key concepts for working with Azure Codex
 
 **VSTS | TFS 2018 | TFS 2017 | TFS 2015**
 

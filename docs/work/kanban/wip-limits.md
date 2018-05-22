@@ -111,7 +111,7 @@ With an understanding of how you'll use WIT limits, here's how you set them.
 > If you haven't yet [mapped your team's work flow to Kanban columns](add-columns.md), do that first. For information about accessing your Kanban board, see [Kanban basics](kanban-basics.md). 
 
 1. From your Kanban board, click ![settings icon](../_img/icons/team-settings-gear-icon.png) and as needed, click Columns. Go to [Kanban basics](kanban-basics.md) for information about accessing your Kanban board. If you're not a team admin, [get added as one](../scale/add-team-administrator.md). Only team and project admins can customize columns.    
-	::: moniker range="vsts || >= tfs-2017 <= tfs-2018" 
+	::: moniker range=">= tfs-2017" 
 	![Kanban board, open common configuration settings](../customize/_img/customize-cards/open-config-dialog.png)
     ::: moniker-end
     ::: moniker range="tfs-2013"          
@@ -120,7 +120,7 @@ With an understanding of how you'll use WIT limits, here's how you set them.
 	You'll see different column titles and choices based on the [process](../work-items/guidance/choose-process.md) used to create your team project  and whether your team has chosen to [treat bugs like requirements or like tasks](../customize/show-bugs-on-backlog.md).  
  
 2. Click a column tab to set the WIP limit for that column. 
-	::: moniker range="vsts || >= tfs-2017 <= tfs-2018"   
+	::: moniker range=">= tfs-2017"   
 	<img src="_img/wip-columns-settings.png" alt="Kanban board, Customize columns, default columns, Agile process, set WIP limits" style="border: 1px solid #C3C3C3;" /> 
     ::: moniker-end   
     ::: moniker range="tfs-2015"      

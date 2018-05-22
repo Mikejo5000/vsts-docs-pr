@@ -1,42 +1,63 @@
 ---
-title: Scale & Configure Teams
-titleSuffix: VSTS & TFS
-description: Index to topics for adding teams in Visual Studio Team Services & Team Foundation Server  
+title: Azure Codex Settings
+titleSuffix: Azure Codex
+description: Configure settings for teams, projects, and account-level objects
 ms.technology: devops-settings
 ms.prod: devops
-ms.topic: overview
+ms.topic: conceptual
 ms.assetid: 
 ms.manager: douge
 ms.author: kaelli
-ms.date: 03/26/2018
+author: KathrynEE
+monikerRange: 'vsts'
+ms.date: 07/10/2018
 ---
 
-# Scale & Configure Teams 
+# Settings 
 
-Give your teams the autonomy they need as your organization grows. Add teams to give each team their set of Agile tools which they can configure their way.   
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
+
+Define area and iteration paths, add teams, and configure additional team, project, and organizational-level resources. 
 
 ## 5-Minute Quickstarts    
-
+- [Set area paths](set-area-paths.md)
+- [Set iteration paths or sprints](set-iteration-paths-sprints.md) 
 - [Add a team & team members](../work/scale/multiple-teams.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)  
-- [Add a team administrator](../work/scale/add-team-administrator.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)  
+- [Add a team administrator](../work/scale/add-team-administrator.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json) 
+
+
+## Tutorials
+
+- [Add & manage users](../accounts/add-account-users-from-user-hub.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)  
+- [Change individual permissions](../security/change-individual-permissions.md) 
+- [Grant or restrict permissions to select tasks](../security/restrict-access.md) 
+- [Manage personal notifications](../notifications/manage-personal-notifications.md) 
+- [Customize a project](./work/customize-process.md) 
+
 
 ## Concepts 
-      
-- [Team administrator role and permissions](../work/scale/team-administrator-permissions.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)
+
+- [About areas & iterations](about-areas-iterations.md) 
+- [About teams & Agile tools](about-teams-and-settings.md) 
+- [About notifications](../notifications/about-notifications.md)   
+- [About process customization](./work/inheritance-process-model.md)        
+
 
 ## How-to Guides
 - [Set team defaults](../work/scale/set-team-defaults.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)    
-- [Configure team settings](../work/scale/manage-team-assets.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json) 
+- [Configure team settings](../work/scale/manage-team-assets.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)   
+- [Switch team context](switch-team-context.md)
 
 
+## Reference
+- [Default permissions and access](../security/permissions-access.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)  
+- [Team administrator role & permissions](../work/scale/team-administrator-permissions.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)  
 
-## Reference   
-- [Permissions and access for work tracking](../security/permissions-access-work-tracking.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json) 
 
-
-## Resources  
-- [Customization](../work/customize/index.md)
-- [Agile culture](/azure/devops/agile/agile-culture)  
-- [Scale Agile to large teams](/azure/devops/agile/scale-agile-large-teams)  
-- [Microsoft Teams Integration](https://marketplace.visualstudio.com/items?itemname=ms-vsts.vss-services-teams)  
-- [Integrate with service hooks](../service-hooks/index.md)  
+## Resources 
+- [Navigation Basics](../user-guide/work-web-portal.md) 
+- [Account Management](../accounts/index.md) 
+- [Security & Identity](../security/index.md) 
+- [Manage Extensions (Marketplace)](../marketplace/index.md) 
+- [Service hooks](../service-hooks/index.md) 
+ 

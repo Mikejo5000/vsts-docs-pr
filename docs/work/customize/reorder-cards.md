@@ -21,7 +21,7 @@ ms.date: 03/20/2018
 > Reordering cards requires TFS 2015.1 or later version.  
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 <a id="reorder-cards"></a>
 
 You can drag any work item to any column or swimlane on the Kanban board. You can even change the order of items as you move a card to a new column. 
@@ -35,7 +35,7 @@ You can drag any work item to any column or swimlane on the Kanban board. You ca
 > Reordering cards is supported on TFS 2015.1 and later versions.  
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 > [!TIP]
 > You can drag-and-drop work items onto a sprint from any backlog or board. To add sprints to a team backlog, see [Set team defaults](../scale/set-team-defaults.md). 
 

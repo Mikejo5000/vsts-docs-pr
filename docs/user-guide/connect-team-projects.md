@@ -1,6 +1,6 @@
 ---
-title: Connect to team projects in VSTS or TFS
-description: Connect a client to the cloud service VSTS or on-premises Team Foundation Server (TFS) 
+title: Connect to team projects in Azure Codex or TFS
+description: Connect a client to the cloud service Azure Codex or on-premises Team Foundation Server (TFS) 
 ms.technology: devops-new-user
 ms.prod: devops
 ms.topic: quickstart
@@ -12,24 +12,23 @@ ms.date: 09/07/2017
 monikerRange: '>= tfs-2013'
 ---
 
-
 # Connect to team projects
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 To share code, build apps, track work, and collaborate with team members, you connect to a team project from one of the following clients:
-  
-- [Web portal](#web-portal)  
-- [Visual Studio or Team Explorer](#visual-studio)  
+
+- [Web portal](#web-portal)
+- [Visual Studio or Team Explorer](#visual-studio)
 - [Eclipse/Team Explorer Everywhere](../git/share-your-code-in-git-eclipse.md)
-- [Android Studio with the VSTS Plugin for Android Studio](/vsts/java/download-android-studio-plug-in)  
-- [IntelliJ with the VSTS Plugin for IntelliJ](/vsts/java/download-intellij-plug-in) 
-- [Visual Studio Code](/vsts/java/vscode-extension)    
+- [Android Studio with the VSTS Plugin for Android Studio](/vsts/java/download-android-studio-plug-in)
+- [IntelliJ with the VSTS Plugin for IntelliJ](/vsts/java/download-intellij-plug-in)
+- [Visual Studio Code](/vsts/java/vscode-extension)
 
 >[!NOTE]
->A team project defines a process and data storage in which you manage your software projects from planning to deployment. You or a team member create a team project either on VSTS or an on-premises TFS. When you connect to a team project, you connect to an account or team project collection. Within that collection, one or more team projects may be defined. At a minimum, at least one team project must be created in order to use the system. 
+>A team project defines a process and data storage in which you manage your software projects from planning to deployment. You or a team member create a team project either on VSTS or an on-premises TFS. When you connect to a team project, you connect to an account or team project collection. Within that collection, one or more team projects may be defined. At a minimum, at least one team project must be created in order to use the system.
 
-If you don't have a team project yet, create one in [VSTS](../accounts/set-up-vs.md) or set one up in an [on-premises TFS](../accounts/create-team-project.md). If you need to add a team, see [Multiple teams](../work/scale/multiple-teams.md). If you don't have access to the team project, [get invited to the team](../work/scale/multiple-teams.md#add-team-members). 
+If you don't have a team project yet, create one in [VSTS](../accounts/set-up-vs.md) or set one up in an [on-premises TFS](../accounts/create-team-project.md). If you need to add a team, see [Multiple teams](../work/scale/multiple-teams.md). If you don't have access to the team project, [get invited to the team](../work/scale/multiple-teams.md#add-team-members).
 
 From each of these clients, you can quickly switch context to a different team project and connect under a different account name. If you work remotely, you can configure your client to [connect to a TFS Proxy server](#proxy).
 
@@ -39,11 +38,11 @@ To get started with a code base, [set up Git](../git/gitquickstart.md) or [set u
 
 ## Connect from the web portal
 
-1.  If you're not a member of a VSTS or TFS security group, ask your account or project admin to add you.  
+1.  If you're not a member of a VSTS or TFS security group, ask your account or project admin to add you.
 
 2.  Open a browser window and type a URL that uses the following form:
 
-	**VSTS:** 
+	**VSTS:**
 	<pre><code>https://<i>AccountName</i>.visualstudio.com/<i>ProjectName</i> </code></pre>
 
 	**TFS (on-premises):**   
@@ -188,7 +187,6 @@ Your client remembers the set of connections you've configured. You can quickly 
 
 ::: moniker-end
 
-
 ### Change accounts
 
 To run Visual Studio under an account that is different from your logged on Windows account, open the context menu for **devenv.exe** to access your run as options.
@@ -196,7 +194,6 @@ To run Visual Studio under an account that is different from your logged on Wind
 ![Context menu for Visual Studio devenv.exe](_img/connect-team-projects-tfs/IC719959.png)
 
 You can locate the executable in the following folder: *Drive*:\\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\.
-
 
 <a id="excel-project">  </a>
 
