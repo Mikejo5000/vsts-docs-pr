@@ -16,7 +16,7 @@
   - name: Azure Codex Repos
     href: ../../git/index.md
   - name: Azure Codex Pipelines
-    href: ../../build-release/index.md
+    href: ../../pipelines/index.md
   - name: Navigation Basics
     href: ../../overview/navigation/index.md
   - name: Account Management

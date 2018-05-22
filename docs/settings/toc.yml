@@ -79,7 +79,7 @@
     - name: Set Git or TFVC repository permissions
       href: ../security/set-git-tfvc-repository-permissions.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
     - name: Set build and release permissions
-      href: ../build-release/set-permissions.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+      href: ../pipelines/set-permissions.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
     - name: Set work tracking permissions
       href: ../security/set-permissions-access-work-tracking.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
   - name: Teams
@@ -144,13 +144,13 @@
   - name: "CI/CD" 
     items:
     - name: Agent pools & queues
-      href: ../build-release/concepts/agents/pools-queues.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+      href: ../pipelines/concepts/agents/pools-queues.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
     - name: Service endpoints
-      href: ../build-release/concepts/library/service-endpoints.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+      href: ../pipelines/concepts/library/service-endpoints.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
     - name: Retention & limits
-      href: ../build-release/concepts/policies/retention.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+      href: ../pipelines/concepts/policies/retention.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
     - name: Deployment pools & groups
-      href: ../build-release/concepts/definitions/release/deployment-groups/index.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+      href: ../pipelines/concepts/definitions/release/deployment-groups/index.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
   - name: Code 
     items:
     - name: Create & manage Git repositories

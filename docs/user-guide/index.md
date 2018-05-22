@@ -32,7 +32,7 @@ Get started with a free account, share your code using Git, and track your work 
 - [Sign up and invite users](sign-up-invite-teammates.md)
 - [Set up billing](../billing/set-up-billing-for-your-account-vs.md)
 - [Get a repo](code-with-git.md)
-- [Start work planning](../build-release/actions/ci-cd-part-1.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
+- [Start work planning](../pipelines/actions/ci-cd-part-1.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
 - [Start CI/CD pipeline](plan-track-work.md)
 - [Start testing code](add-run-manual-tests.md)
 - [Create an open source project](../organizations/public/create-public-project.md)

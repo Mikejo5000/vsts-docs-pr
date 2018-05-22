@@ -50,7 +50,7 @@ Also, it has ideas for migrating the latest state to a new project so that you c
 * Confirm that none of your definitions exposes sensitive data: credentials/secrets, obscure URLs, and private environment names.
 * Confirm that non-members don't require access to your private packaging feeds. Builds can still access feeds, but non-members cannot.
 
-If you need to migrate build definitions to a new project (perhaps because you're moving code or work items), you can import & export using [YAML](../../build-release/actions/build-yaml.md).
+If you need to migrate build definitions to a new project (perhaps because you're moving code or work items), you can import & export using [YAML](../../pipelines/actions/build-yaml.md).
 
 ### Testing
 

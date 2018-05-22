@@ -104,7 +104,7 @@ featureFlags:
                                             <div class="cardText">
                                                 <h3>Test your code</h3>
                                                 <ul class="noBullet">
-                                                    <li><a class="barLink" href="/vsts/build-release/test/index">Continuous Testing</a></li>
+                                                    <li><a class="barLink" href="/vsts/pipelines/test/index">Continuous Testing</a></li>
                                                     <li><a class="barLink" href="/vsts/manual-test/index">Exploratory &amp; Manual Testing</a></li>
                                                     <li><a class="barLink" href="/vsts/load-test/index">Load Testing</a></li>
                                                 </ul>
@@ -121,7 +121,7 @@ featureFlags:
                                                 <h3>Continuous integration &amp; delivery</h3>
                                                 <ul class="noBullet">
                                                     <li><a class="barLink" href="/vsts/deploy-azure/">Deploy to Azure</a></li>
-                                                    <li><a class="barLink" href="/vsts/build-release/">Build &amp; Release</a></li>
+                                                    <li><a class="barLink" href="/vsts/pipelines/">Build &amp; Release</a></li>
                                                     <li><a class="barLink" href="/vsts/package/">Package Management</a></li>
                                                 </ul>
                                             </div>
@@ -239,20 +239,20 @@ featureFlags:
                                     </ul>
                                     <h3>Azure Codex Pipelines</h3>
                                     <ul>
-                                        <li><a class="barLink" href="/vsts/build-release/index">Build &amp; Release</a></li>
-                                        <li><a class="barLink" href="/vsts/build-release/test/index">Continuous Testing</a></li>
+                                        <li><a class="barLink" href="/vsts/pipelines/index">Build &amp; Release</a></li>
+                                        <li><a class="barLink" href="/vsts/pipelines/test/index">Continuous Testing</a></li>
                                         <li><a class="barLink" href="/vsts/deploy-azure/index">Deploy to Azure</a></li>
                                         <li><a class="barLink" href="/vsts/package/index">Package Management</a></li>
-                                        <li><a class="barLink" href="/vsts/build-release/concepts/library/index">Library Assets</a></li>
-                                        <li><a class="barLink" href="/vsts/build-release/concepts/agents/agents">Hosted &amp; Private Agents</a></li>
-                                        <li><a class="barLink" href="/vsts/build-release/tasks">Task Reference</a></li>
+                                        <li><a class="barLink" href="/vsts/pipelines/concepts/library/index">Library Assets</a></li>
+                                        <li><a class="barLink" href="/vsts/pipelines/concepts/agents/agents">Hosted &amp; Private Agents</a></li>
+                                        <li><a class="barLink" href="/vsts/pipelines/tasks">Task Reference</a></li>
                                     </ul>
                                     <h3>Azure Codex Test</h3>
                                     <ul>
                                         <li><a class="barLink" href="/visualstudio/test/unit-test-your-code">Unit &amp; Functional Testing</a></li>
                                         <li><a class="barLink" href="/vsts/manual-test/index">Exploratory &amp; Manual Testing</a></li>
                                         <li><a class="barLink" href="/vsts/load-test/index">Load Testing</a></li>
-                                        <li><a class="barLink" href="/vsts/build-release/test/index">Continuous Testing</a></li>
+                                        <li><a class="barLink" href="/vsts/pipelines/test/index">Continuous Testing</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -793,7 +793,7 @@ featureFlags:
                         <a href="#delivery">Azure Codex Pipelines</a>
                         <ul id="delivery" class="cardsA">
                             <li>
-                                <a href="/vsts/build-release/index">
+                                <a href="/vsts/pipelines/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -812,7 +812,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/build-release/test/index">
+                                <a href="/vsts/pipelines/test/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -870,7 +870,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/build-release/concepts/library/index">
+                                <a href="/vsts/pipelines/concepts/library/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -889,7 +889,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/build-release/concepts/agents/agents">
+                                <a href="/vsts/pipelines/concepts/agents/agents">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -908,7 +908,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/build-release/tasks">
+                                <a href="/vsts/pipelines/tasks">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -991,7 +991,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/build-release/test/index">
+                                <a href="/vsts/pipelines/test/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -1505,7 +1505,7 @@ featureFlags:
            <li>
                 <a href="#azure-devops">Azure Devops Resources</a>
                 <ul id="azure-devops">
-This center combines our resources on learning DevOps practices, Git version control, Agile methods, how we work with DevOps at Microsoft, and how you can assess your own DevOps progression. Alternatively, you can jump to documentation on [getting started with DevOps on Azure](/vsts/build-release/), or to dive in, [start your own Azure DevOps project](https://portal.azure.com/#create/Microsoft.AzureProject). If you’re interested in practices, read on. <br/><br/>
+This center combines our resources on learning DevOps practices, Git version control, Agile methods, how we work with DevOps at Microsoft, and how you can assess your own DevOps progression. Alternatively, you can jump to documentation on [getting started with DevOps on Azure](/vsts/pipelines/), or to dive in, [start your own Azure DevOps project](https://portal.azure.com/#create/Microsoft.AzureProject). If you’re interested in practices, read on. <br/><br/>
 <ul class="panelContent cardsC" style="display: flex;">
     <li>
         <a href="https://docs.microsoft.com/en-us/azure/devops/what-is-devops">

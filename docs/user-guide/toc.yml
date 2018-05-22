@@ -21,7 +21,7 @@
   - name: Get a repo
     href: code-with-git.md
   - name: Start work planning
-    href: ../build-release/actions/ci-cd-part-1.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json
+    href: ../pipelines/actions/ci-cd-part-1.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json
   - name: Start CI/CD pipline
     href: plan-track-work.md 
   - name: Start testing code
