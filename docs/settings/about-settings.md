@@ -155,7 +155,7 @@ Members of the [Project Administrators group](../security/set-project-collection
 <li>[Grant or restrict access to select features](../security/restrict-access.md)</li>
 <li>[Add administrators](../security/set-project-collection-level-permissions.md)</li>
 <li>[Manage project-level permissions](../security/permissions.md#project-level)</li>
-<li>[Set build and release permissions](../build-release/set-permissions.md)</li>
+<li>[Set build and release permissions](../pipelines/set-permissions.md)</li>
 </ul></td>
 <td>Project Administrators can add users to a project or a team. When you add a user to a team, you automatically add them to the project. Users added to a project can only view and contribute to that specific project. <p>For an overview of security concepts, see [About permissions and groups](../security/about-permissions.md) and [About access levels](../security/access-levels.md). For a list of project-level permissions, see [Permissions and groups reference, Project-level permissions](../security/permissions.md#project-level).</p> </td>
 </tr>
@@ -193,10 +193,10 @@ Members of the [Project Administrators group](../security/set-project-collection
 <tr>
 <td>**CI/CD** </td>
 <td><ul>
-<li>[Manage Agent queues and agent pools](../build-release/concepts/agents/pools-queues.md)</li>
-<li>[Manage service endpoints](../build-release/concepts/library/service-endpoints.md)</li>
-<li>[Manage deployment pools and groups](/vsts/build-release/concepts/definitions/release/deployment-groups)</li>
-<li>[Set retention policies](../build-release/concepts/policies/retention.md)</li>
+<li>[Manage Agent queues and agent pools](../pipelines/concepts/agents/pools-queues.md)</li>
+<li>[Manage service endpoints](../pipelines/concepts/library/service-endpoints.md)</li>
+<li>[Manage deployment pools and groups](/vsts/pipelines/concepts/definitions/release/deployment-groups)</li>
+<li>[Set retention policies](../pipelines/concepts/policies/retention.md)</li>
 </ul></td>
 <td>To build your code or deploy your software you need at least one agent. Agent and deployment pools are build and release resources that you manage across projects. </td>
 </tr>
@@ -358,10 +358,10 @@ For an overview of managing your Azure Codex account, see [About account managem
 <tr>
 <td>**CI/CD**</td>
 <td><ul>
-<li>[Set retention policies](../build-release/concepts/policies/retention.md)</li>
-<li>[Set resource limits for pipelines](../build-release/concepts/licensing/concurrent-pipelines-ts.md)</li>
-<li>[Add and manage agent pools](../build-release/concepts/agents/pools-queues.md)</li>
-<li>[Add and manage deployment pools](/vsts/build-release/concepts/definitions/release/deployment-groups)</li>
+<li>[Set retention policies](../pipelines/concepts/policies/retention.md)</li>
+<li>[Set resource limits for pipelines](../pipelines/concepts/licensing/concurrent-pipelines-ts.md)</li>
+<li>[Add and manage agent pools](../pipelines/concepts/agents/pools-queues.md)</li>
+<li>[Add and manage deployment pools](/vsts/pipelines/concepts/definitions/release/deployment-groups)</li>
 </ul></td>
 <td>You manage resources that support CI/CD operations for all projects through the **Agent pools**, **Deployment pools**, and **Retention and limits** pages.</td>
 </tr>
