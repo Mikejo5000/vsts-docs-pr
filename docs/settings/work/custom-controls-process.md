@@ -9,7 +9,7 @@ ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 ms.topic: conceptual
 monikerRange: 'vsts'
-ms.date: 07/10/2018
+ms.date: 05/31/2018
 ---
 
 # Add a custom control to a work item type 

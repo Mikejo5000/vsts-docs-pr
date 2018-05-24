@@ -9,7 +9,7 @@ ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 monikerRange: 'vsts'
 ms.topic: tutorial
-ms.date: 07/10/2018
+ms.date: 05/31/2018
 ---
 
 # Customize a project using an inherited process
