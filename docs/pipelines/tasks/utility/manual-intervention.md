@@ -20,7 +20,7 @@ monikerRange: 'vsts'
 
 ## Demands
 
-Can be used in only an [agentless phase](../../concepts/process/server-phases.md) of a release definition.
+Can be used in only an [agentless phase](../../process/server-phases.md) of a release definition.
 
 ::: moniker range="vsts"
 
@@ -36,7 +36,7 @@ Can be used in only an [agentless phase](../../concepts/process/server-phases.md
 | **Instructions** | Optional. The instruction text to display to the user when the task is activated. |
 | **Notify users** | Optional. The list of users that will be notified that the task has been activated. |
 | **On timeout** | Required. The action to take (reject or resume) if the task times out with no manual intervention. The default is to reject the deployment. |
-| **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
+| **Control options** | See [Control options](../../process/tasks.md#controloptions) |
 
 The **Manual Intervention** task does not perform deployment actions directly.
 Instead, it allows you to pause an active deployment within an environment, typically to perform some
@@ -61,6 +61,6 @@ a message bar containing  a link that opens the Manual Intervention dialog conta
 After carrying out the manual steps, the administrator or user can choose to resume the deployment, or reject it.
 Users with **Manage deployment** permission on the environment can resume or reject the manual intervention.
 
-For more information about using this task, see [Approvals and gates overview](../../concepts/definitions/release/approvals/index.md).
+For more information about using this task, see [Approvals and gates overview](../../release/approvals/index.md).
 
 Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/ManualIntervention).

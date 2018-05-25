@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2015'
 
 This task is deprecated in VSTS and TFS 2018 and later. Use version 2.x or higher of the
 [Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTest/README.md)
-task together with [phases](../../concepts/process/phases.md)
+task together with [phases](../../process/phases.md)
 to run unit and functional tests on the universal agent.
 
 For more details, see [Testing with unified agents and phases](../../test/test-with-unified-agent-and-phases.md).
@@ -61,13 +61,13 @@ This task requires the target computer to have:
 | **Password** | The password for the administrative account specified above. This parameter is required when used with a list of machines. It is optional when specifying a machine group and, if specified, overrides the credential settings defined for the machine group. Consider using a secret variable global to the build or release definition to hide the password. Example: `$(passwordVariable)` |
 | **Protocol** | The protocol that will be used to connect to the target host, either **HTTP** or **HTTPS**. |
 | **Agent Configuration - Username** | Required. The username that the test agent will use. Must be an account on the test machines that has administrative permissions.<br />- Formats such as **username**, **domain\username**, **machine-name\username**, and **.\username** are supported.<br />- UPN formats such as **username@domain.com** and built-in system accounts such as **NT Authority\System** are not supported. |
-| **Agent Configuration - Password** | Required. The password for the **Username** for the test agent. To protect the password, create a [variable](../../concepts/definitions/build/variables.md) and use the "padlock" icon to hide it. |
+| **Agent Configuration - Password** | Required. The password for the **Username** for the test agent. To protect the password, create a [variable](../../build/variables.md) and use the "padlock" icon to hide it. |
 | **Agent Configuration - Run UI tests** | When set, the test agent will run as an interactive process. This is required when interacting with UI elements or starting applications during the tests. For example, Coded UI or Selenium tests that are running on full fidelity browsers will require this option to be set. |
 | **Agent Configuration - Enable data collection only** | When set, the test agent will return previously collected data and not re-run the tests. At present this is only available for Code Coverage. Also see Q&A section below. |
 | **Advanced - Test agent version** | The version of the test agent to use. |
 | **Advanced - Test agent location** | Optional. The path to the test agent (<a href="http://go.microsoft.com/fwlink/?LinkId=536423">vstf_testagent.exe</a>) if different from the default path.<br />- If you use a copy of the test agent located on your local computer or network, specify the path to that instance.<br />- The location must be accessible by either the build agent (using the identity it is running under) or the test agent (using the identity configured above).<br />- For Azure test machines, the web location can be used. |
 | **Advanced - Update test agent** | If set, and the test agent is already installed on the test machines, the task will check if a new version of the test agent is available. |
-| **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
+| **Control options** | See [Control options](../../process/tasks.md#controloptions) |
 
 > The task supports a maximum of 32 machines/agents.
 

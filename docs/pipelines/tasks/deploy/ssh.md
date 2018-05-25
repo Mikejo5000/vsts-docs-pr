@@ -41,7 +41,7 @@ This task enables you to connect to a remote machine using SSH and run commands 
 | **Shell script path** | Path to the shell script file to run on the remote machine. This parameter is available only when **Shell script** is selected for the **Run** option. |
 | **Arguments** | The arguments to pass to the shell script. This parameter is available only when **Shell script** is selected for the **Run** option. |
 | **Advanced - Fail on STDERR** | If this option is selected (the default), the build will fail if the remote commands or script write to **STDERR**. |
-| **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
+| **Control options** | See [Control options](../../process/tasks.md#controloptions) |
 
 ## See also
 

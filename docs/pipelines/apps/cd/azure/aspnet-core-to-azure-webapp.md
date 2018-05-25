@@ -83,7 +83,7 @@ https://github.com/adventworks/dotnetcore-sample
    provide credentials or obtain authorization. For GitHub, choose the **Authorize** button that appears. A new window opens where you
    can log into GitHub and/or authorize access. For an external repository, you are prompted for a username and password.
    
-   > For information about connecting VSTS or TFS to a Git repository, see [Service endpoints for Build and Release](../../../concepts/library/service-endpoints.md).
+   > For information about connecting VSTS or TFS to a Git repository, see [Service endpoints for Build and Release](../../../library/service-endpoints.md).
 
 1. Select **Configure Continuous Delivery** and choose **ASP.NET Core**. When you're done, choose **OK**.
 

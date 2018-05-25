@@ -213,27 +213,27 @@
         },
         {
             "source_path": "docs/build/define/history.md",
-            "redirect_url": "/vsts/pipelines/concepts/definitions/build/history",
+            "redirect_url": "/vsts/pipelines/build/history",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build/define/options.md",
-            "redirect_url": "/vsts/pipelines/concepts/definitions/build/options",
+            "redirect_url": "/vsts/pipelines/build/options",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build/define/repository.md",
-            "redirect_url": "/vsts/pipelines/concepts/definitions/build/repository",
+            "redirect_url": "/vsts/pipelines/build/repository",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build/define/triggers.md",
-            "redirect_url": "/vsts/pipelines/concepts/definitions/build/triggers",
+            "redirect_url": "/vsts/pipelines/build/triggers",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build/define/variables.md",
-            "redirect_url": "/vsts/pipelines/concepts/definitions/build/variables",
+            "redirect_url": "/vsts/pipelines/build/variables",
             "redirect_document_id": false
         },
         {
@@ -563,67 +563,67 @@
         },
         {
             "source_path": "docs/build-release/admin/2015.md",
-            "redirect_url": "/vsts/pipelines/concepts/agents/agents",
+            "redirect_url": "/vsts/pipelines/agents/agents",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/admin/agents/index.md",
-            "redirect_url": "/vsts/pipelines/concepts/agents/agents",
+            "redirect_url": "/vsts/pipelines/agents/agents",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/admin/index.md",
-            "redirect_url": "/vsts/pipelines/concepts/agents/agents",
+            "redirect_url": "/vsts/pipelines/agents/agents",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/agents/admin.md",
-            "redirect_url": "/vsts/pipelines/concepts/agents/agents",
+            "redirect_url": "/vsts/pipelines/agents/agents",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/agents/xplat.md",
-            "redirect_url": "/vsts/pipelines/concepts/agents/agents",
+            "redirect_url": "/vsts/pipelines/agents/agents",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/admin/agents/hosted-pool.md",
-            "redirect_url": "/vsts/pipelines/concepts/agents/hosted",
+            "redirect_url": "/vsts/pipelines/agents/hosted",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/admin/hosted-pool.md",
-            "redirect_url": "/vsts/pipelines/concepts/agents/hosted",
+            "redirect_url": "/vsts/pipelines/agents/hosted",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/agents/hosted-pool.md",
-            "redirect_url": "/vsts/pipelines/concepts/agents/hosted",
+            "redirect_url": "/vsts/pipelines/agents/hosted",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/hosted-agent-pool.md",
-            "redirect_url": "/vsts/pipelines/concepts/agents/hosted",
+            "redirect_url": "/vsts/pipelines/agents/hosted",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/define/general.md",
-            "redirect_url": "/vsts/pipelines/concepts/definitions/build/options",
+            "redirect_url": "/vsts/pipelines/build/options",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/github/index.md",
-            "redirect_url": "/vsts/pipelines/concepts/definitions/build/repository",
+            "redirect_url": "/vsts/pipelines/build/repository",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/actions/scripts/variables.md",
-            "redirect_url": "/vsts/pipelines/concepts/definitions/build/variables",
+            "redirect_url": "/vsts/pipelines/build/variables",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/define/retention.md",
-            "redirect_url": "/vsts/pipelines/concepts/policies/retention",
+            "redirect_url": "/vsts/pipelines/policies/retention",
             "redirect_document_id": false
         },
         {
@@ -908,27 +908,27 @@
         },
         {
             "source_path": "docs/build-release/define/history.md",
-            "redirect_url": "/vsts/pipelines/concepts/definitions/build/history",
+            "redirect_url": "/vsts/pipelines/build/history",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/define/options.md",
-            "redirect_url": "/vsts/pipelines/concepts/definitions/build/options",
+            "redirect_url": "/vsts/pipelines/build/options",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/define/repository.md",
-            "redirect_url": "/vsts/pipelines/concepts/definitions/build/repository",
+            "redirect_url": "/vsts/pipelines/build/repository",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/define/triggers.md",
-            "redirect_url": "/vsts/pipelines/concepts/definitions/build/triggers",
+            "redirect_url": "/vsts/pipelines/build/triggers",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/define/variables.md",
-            "redirect_url": "/vsts/pipelines/concepts/definitions/build/variables",
+            "redirect_url": "/vsts/pipelines/build/variables",
             "redirect_document_id": false
         },
         {
@@ -983,12 +983,12 @@
         },
         {
             "source_path": "docs/build-release/services/hosted-agent-pool.md",
-            "redirect_url": "/vsts/pipelines/concepts/agents/hosted",
+            "redirect_url": "/vsts/pipelines/agents/hosted",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/services/hosted-build-controller.md",
-            "redirect_url": "/vsts/pipelines/concepts/agents/hosted",
+            "redirect_url": "/vsts/pipelines/agents/hosted",
             "redirect_document_id": false
         },
         {
@@ -2388,12 +2388,12 @@
         },
         {
             "source_path": "docs/release/author-release-definition/understanding-artifacts.md",
-            "redirect_url": "/vsts/pipelines/concepts/definitions/release/artifacts",
+            "redirect_url": "/vsts/pipelines/release/artifacts",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/release/author-release-definition/understanding-environments.md",
-            "redirect_url": "/vsts/pipelines/concepts/definitions/release/environments",
+            "redirect_url": "/vsts/pipelines/release/environments",
             "redirect_document_id": false
         },
         {
@@ -2568,22 +2568,22 @@
         },
         {
             "source_path": "docs/release/getting-started/concurrent-pipelines-tfs.md",
-            "redirect_url": "/vsts/pipelines/concepts/licensing/concurrent-pipelines-tfs",
+            "redirect_url": "/vsts/pipelines/licensing/concurrent-pipelines-tfs",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/release/getting-started/concurrent-pipelines-ts.md",
-            "redirect_url": "/vsts/pipelines/concepts/licensing/concurrent-pipelines-ts",
+            "redirect_url": "/vsts/pipelines/licensing/concurrent-pipelines-ts",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/release/getting-started/concurrent-pipelines-vsts.md",
-            "redirect_url": "/vsts/pipelines/concepts/licensing/concurrent-pipelines-ts",
+            "redirect_url": "/vsts/pipelines/licensing/concurrent-pipelines-ts",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/release/getting-started/configure-agents.md",
-            "redirect_url": "/vsts/pipelines/concepts/agents/agents",
+            "redirect_url": "/vsts/pipelines/agents/agents",
             "redirect_document_id": false
         },
         {
@@ -2593,7 +2593,7 @@
         },
         {
             "source_path": "docs/release/getting-started/machine-group-agents.md",
-            "redirect_url": "/vsts/pipelines/concepts/definitions/release/deployment-groups/index",
+            "redirect_url": "/vsts/pipelines/release/deployment-groups/index",
             "redirect_document_id": false
         },
         {
@@ -2603,7 +2603,7 @@
         },
         {
             "source_path": "docs/release/getting-started/understand-rm.md",
-            "redirect_url": "/vsts/pipelines/concepts/definitions/release/what-is-release-management",
+            "redirect_url": "/vsts/pipelines/release/what-is-release-management",
             "redirect_document_id": false
         },
         {
@@ -4688,7 +4688,7 @@
        },
        {
         "source_path": "docs/build-release/concepts/definitions/release/approvals/release-gates.md",
-        "redirect_url": "/vsts/pipelines/concepts/definitions/release/approvals/index",
+        "redirect_url": "/vsts/pipelines/release/approvals/index",
         "redirect_document_id": false
        },
        {
@@ -4788,7 +4788,7 @@
        },
        {
         "source_path": "docs/build-release/actions/debug-deployment-issues.md",
-        "redirect_url": "/vsts/pipelines/concepts/definitions/release/variables#debug-mode",
+        "redirect_url": "/vsts/pipelines/release/variables#debug-mode",
         "redirect_document_id": false
        },
        {

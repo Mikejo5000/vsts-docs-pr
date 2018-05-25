@@ -88,11 +88,11 @@ At the time of execution, the **Release** starts to sample all the gates and col
 
 Initial samples from the monitoring systems may not be accurate, as not enough information may be available for the new deployment. The “Delay before evaluation” option ensures the **Release** does not progress during this period, even if all samples are successful.
 
-No agents or pipelines are consumed during sampling of gates. See the [documentation for release gates](/vsts/pipelines/concepts/definitions/release/approvals/gates) for more information.
+No agents or pipelines are consumed during sampling of gates. See the [documentation for release gates](/vsts/pipelines/release/approvals/gates) for more information.
 
 ### Hosted Mac agents for CI/CD pipelines in Public Preview ![Build tag](_img/release-notes-tag_build.png)
 
-VSTS now has cloud-hosted CI/CD agents running on macOS. This allows building and releasing Apple apps in the cloud (including iOS, macOS, tvOS, and watchOS), eliminating the need for providing and maintaining your own dedicated Mac hardware. VSTS now offers hosted CI/CD agents running on three operating systems – Linux, macOS, and Windows. For more information, see [Hosted agents](/vsts/pipelines/concepts/agents/hosted).
+VSTS now has cloud-hosted CI/CD agents running on macOS. This allows building and releasing Apple apps in the cloud (including iOS, macOS, tvOS, and watchOS), eliminating the need for providing and maintaining your own dedicated Mac hardware. VSTS now offers hosted CI/CD agents running on three operating systems – Linux, macOS, and Windows. For more information, see [Hosted agents](/vsts/pipelines/agents/hosted).
 
 To use the hosted macOS agents, select **Hosted macOS Preview** for your build or release pipeline:
 
@@ -300,7 +300,7 @@ The **Install Apple Provisioning Profile** task already supports installing (on 
 
 ### Secure files can be downloaded to agents during build or release
 
-The new **Download Secure File** task supports downloading (to agent machines) encrypted files from the **VSTS Secure Files** library. As the file is downloaded, it is decrypted and stored on the agent’s disk. When the build or release completes, the file is deleted from the agent. This allows your build or release to use sensitive files, such as certificates or private keys, that are otherwise securely encrypted and stored in VSTS. For more information, see [Secure files documentation](/vsts/pipelines/concepts/library/secure-files).
+The new **Download Secure File** task supports downloading (to agent machines) encrypted files from the **VSTS Secure Files** library. As the file is downloaded, it is decrypted and stored on the agent’s disk. When the build or release completes, the file is deleted from the agent. This allows your build or release to use sensitive files, such as certificates or private keys, that are otherwise securely encrypted and stored in VSTS. For more information, see [Secure files documentation](/vsts/pipelines/library/secure-files).
 
 ### Specific Java Development Kits (JDKs) can be installed during builds and releases
 

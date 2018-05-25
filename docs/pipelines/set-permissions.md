@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2013'
 
 Permissions for build and release functions are primarily set at the object-level for a specific build or release, or for select tasks, at the collection level. For a simplified view of permissions assigned to built-in groups, see [Permissions and access](../security/permissions-access.md). 
 
-In addition to permission assignments, you manage security for several resources&mdash;such as variable groups, secure files, and deployment groups&mdash;by adding users or groups to a role. You grant or restrict permissions by setting the [permission state to Allow or Deny](../security/about-permissions.md), either for a security group or an individual user. For definitions of each build and release permission and role, see [Build and release permissions](concepts/policies/permissions.md).  
+In addition to permission assignments, you manage security for several resources&mdash;such as variable groups, secure files, and deployment groups&mdash;by adding users or groups to a role. You grant or restrict permissions by setting the [permission state to Allow or Deny](../security/about-permissions.md), either for a security group or an individual user. For definitions of each build and release permission and role, see [Build and release permissions](policies/permissions.md).  
 
 ## Set permissions for build definitions
 
@@ -63,7 +63,7 @@ In addition to permission assignments, you manage security for several resources
 
 ## Manage Library roles for variable groups, secure files, and deployment groups
 
-Permissions for [variable groups](concepts/library/variable-groups.md), [secure files](concepts/library/secure-files.md), and [deployment groups](/vsts/pipelines/concepts/definitions/release/deployment-groups) are managed by roles. For a description of the roles, see [About security roles](../security/about-security-roles.md). 
+Permissions for [variable groups](library/variable-groups.md), [secure files](library/secure-files.md), and [deployment groups](/vsts/pipelines/release/deployment-groups) are managed by roles. For a description of the roles, see [About security roles](../security/about-security-roles.md). 
 
 > [!NOTE]
 > **Feature availability**: These features are available on VSTS and TFS 2017 and later versions. 
@@ -96,7 +96,7 @@ For example, here we show how to set the security for variable groups.
 
 ## Manage task group permissions
 
-Permissions for task groups are subject to a hierarchical model. You use task groups to encapsulate a sequence of tasks already defined in a build or a release definition into a single reusable task. You [define and manage task groups](concepts/library/task-groups.md) in the **Task groups** tab of the **Build and Release** hub.
+Permissions for task groups are subject to a hierarchical model. You use task groups to encapsulate a sequence of tasks already defined in a build or a release definition into a single reusable task. You [define and manage task groups](library/task-groups.md) in the **Task groups** tab of the **Build and Release** hub.
 
 > [!NOTE]
 > **Feature availability**: These features are available on VSTS and TFS 2017 and later versions. 
@@ -135,7 +135,7 @@ Permissions for task groups are subject to a hierarchical model. You use task gr
 
 ## Manage permissions for agent queues and service endpoints 
 
-You manage the security for [agent pools](concepts/agents/pools-queues.md) and [service endpoints](concepts/library/service-endpoints.md) by adding users or groups to a role. The method is similar for both agent queues and service endpoints. You will need to be a member of the Project  Administrator group to manage the security for these resources. 
+You manage the security for [agent pools](agents/pools-queues.md) and [service endpoints](library/service-endpoints.md) by adding users or groups to a role. The method is similar for both agent queues and service endpoints. You will need to be a member of the Project  Administrator group to manage the security for these resources. 
  
 > [!NOTE]
 > **Feature availability**: These features are available on VSTS and TFS 2015 and later versions. 
@@ -162,7 +162,7 @@ For example, here we show how to add a user to the Administrator role for a serv
 
 ## Manage permissions for agent pools and deployment pools  
 
-You manage the security for [agent pools](concepts/agents/pools-queues.md) and [deployment pools](concepts/definitions/release/deployment-groups/index.md) by adding users or groups to a role. The method is similar for both types of pools. 
+You manage the security for [agent pools](agents/pools-queues.md) and [deployment pools](release/deployment-groups/index.md) by adding users or groups to a role. The method is similar for both types of pools. 
  
 > [!NOTE]
 > **Feature availability**: These features are available on VSTS and TFS 2018 and later versions. 
@@ -189,6 +189,6 @@ You will need to be a member of the Project Collection Administrator group to ma
 
 ## Related notes 
 
-[Default build and release permissions](concepts/policies/permissions.md)
+[Default build and release permissions](policies/permissions.md)
 - [Default permissions and access](../security/permissions-access.md) 
 - [Permissions and groups reference](../security/permissions.md) 

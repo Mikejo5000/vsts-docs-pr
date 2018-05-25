@@ -46,7 +46,7 @@ If the task completes successfully, the task's output variable will contain the 
 
 ### Where can I learn more about tool installers?
 
-For an explanation of tool installers and examples, see [Tool installers](../../concepts/process/tasks.md#tool-installers).
+For an explanation of tool installers and examples, see [Tool installers](../../process/tasks.md#tool-installers).
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 

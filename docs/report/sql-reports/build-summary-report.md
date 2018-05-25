@@ -68,7 +68,7 @@ The Build Summary lists builds and provides information about test results, test
   
 -   **Configure a build system**. To use Team Foundation Build, you must set up a build system.  
   
-     For more information, see [Build and Release agents](../../pipelines/concepts/agents/agents.md).
+     For more information, see [Build and Release agents](../../pipelines/agents/agents.md).
   
 -   **Create build definitions**. You can create several build definitions, each of which can be run to produce code for a different platform. Also, you can run each build for a different configuration.  
   
@@ -82,7 +82,7 @@ The Build Summary lists builds and provides information about test results, test
   
 -   **Run builds regularly**. Builds can be run at set intervals or after every check-in. You can schedule regular builds when you use the schedule trigger.  
   
-     For more information, see [Build triggers](../../pipelines/concepts/definitions/build/triggers.md).
+     For more information, see [Build triggers](../../pipelines/build/triggers.md).
   
 -   (Optional) **Rate completed builds**. A team member can manually rate a build by using Build Explorer.  
   

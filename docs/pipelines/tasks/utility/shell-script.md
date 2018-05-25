@@ -121,7 +121,7 @@ On the [Build tab](../../index.md) of a build definition, add this step:
 
 [Awesome Bash](https://github.com/alebcay/awesome-shell#awesome-bash) to go deeper.
 
-[!INCLUDE [include](../../concepts/definitions/_shared/variable-set-in-script-qa.md)]
+[!INCLUDE [include](../../_shared/variable-set-in-script-qa.md)]
 
 [!INCLUDE [temp](../_shared/build-step-common-qa.md)]
 

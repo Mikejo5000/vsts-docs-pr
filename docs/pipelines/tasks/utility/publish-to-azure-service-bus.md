@@ -20,7 +20,7 @@ monikerRange: 'vsts'
 
 ## Demands
 
-Can be used in only an [agentless phase](../../concepts/process/server-phases.md) of a release definition.
+Can be used in only an [agentless phase](../../process/server-phases.md) of a release definition.
 
 ::: moniker range="vsts"
 
@@ -36,7 +36,7 @@ Can be used in only an [agentless phase](../../concepts/process/server-phases.md
 | **Azure Service Bus Connection** | Required. An existing service connection to an Azure Service Bus. |
 | **Message body** | Required. The text of the message body to send to the Service Bus. |
 | **Wait for Task Completion** | Optional. Set this option to force the task to halt until a response is received. |
-| **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
+| **Control options** | See [Control options](../../process/tasks.md#controloptions) |
 
 Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/PublishToAzureServiceBusV1).
 

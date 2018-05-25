@@ -94,7 +94,7 @@ To set up **npm** authentication in a build task _without_ a task runner, follow
 
         ![Add task to build definition](../_shared/_img/build-definition/registries-in-my-npmrc.png)
 
-        > You can choose credentials to authenticate to outside of your current account/collection by setting up [service endpoints.](../../pipelines/concepts/library/service-endpoints.md#sep-npm)
+        > You can choose credentials to authenticate to outside of your current account/collection by setting up [service endpoints.](../../pipelines/library/service-endpoints.md#sep-npm)
 
     * Registry I select here
 
@@ -131,7 +131,7 @@ When using a task runner, you'll need to add the **npm Authenticate** build task
 
     ![Add task to build definition](../_shared/_img/build-definition/build-definition-npm-auth-task-file.png)
 
-    > You can choose credentials to authenticate to outside of your current account/collection by setting up [service endpoints.](../../pipelines/concepts/library/service-endpoints.md#sep-npm)
+    > You can choose credentials to authenticate to outside of your current account/collection by setting up [service endpoints.](../../pipelines/library/service-endpoints.md#sep-npm)
 
 1. After setting up your **npm Authenticate** task, you can add other build task(s) for your task runner like **Gulp**.
 

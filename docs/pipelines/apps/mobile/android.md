@@ -27,7 +27,7 @@ Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide a hi
 First, you will need a build agent on which the Android SDK is installed. You may use one of the following:
 
   1. The **Hosted VS2017** agent provided by VSTS, or
-  1. See [Build and release agents](../../concepts/agents/agents.md) for instructions on creating your own Linux, macOS, or Windows build agent. The Android SDK must be installed on your agent.
+  1. See [Build and release agents](../../agents/agents.md) for instructions on creating your own Linux, macOS, or Windows build agent. The Android SDK must be installed on your agent.
 
 ## Get the Android sample code
 

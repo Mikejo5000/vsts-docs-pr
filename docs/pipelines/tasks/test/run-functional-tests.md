@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2015'
 
 This task is deprecated in VSTS and TFS 2018 and later. Use version 2.x or higher of the
 [Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTest/README.md)
-task together with [phases](../../concepts/process/phases.md)
+task together with [phases](../../process/phases.md)
 to run unit and functional tests on the universal agent.
 
 For more details, see [Testing with unified agents and phases](../../test/test-with-unified-agent-and-phases.md).
@@ -63,7 +63,7 @@ This task must be preceded by a **Visual Studio Test Agent Deployment** task.
 | **Configuration** | Optional. The build configuration against which the test run should be reported. Used only for reporting.<br />- If you are using the **Build - Visual Studio** template, this is automatically defined, such as `Debug` or `Release`<br />- If you have defined a variable for configuration in your build task, use that here. |
 | **Test Configurations** | Optional. A string that contains the filter(s) to report the configuration on which the test case was run. Used only for reporting with Microsoft Test Manager (MTM). <br />- Syntax: {expression for test method name(s)} **:** {configuration ID from MTM}<br />- Example: `FullyQualifiedName~Chrome:12` to report all test methods that have **Chrome** in the **Fully Qualified Name** and map them to configuration ID **12** defined in MTM.<br />- Use ```DefaultTestConfiguration:{Id}``` as a catch-all. |
 | **Application Under Test Machines** | A list of the machines on which the Application Under Test (AUT) is deployed, or on which a specific process such as W3WP.exe is running. Used to collect code coverage data from these machines. Use this in conjunction with the **Code Coverage Enabled** setting. The list can be a comma-delimited list of machine names or an output variable from an earlier task. |
-| **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
+| **Control options** | See [Control options](../../process/tasks.md#controloptions) |
 
 > The task supports a maximum of 32 machines/agents.
 
@@ -96,7 +96,7 @@ These scenarios are supported for:
 * **TFS on-premises and VSTS**
 
 * **Build agents**
-  - [Hosted](../../concepts/agents/hosted.md) and [on-premises](../../concepts/agents/agents.md) agents.
+  - [Hosted](../../agents/hosted.md) and [on-premises](../../agents/agents.md) agents.
   - The build agent must be able to communicate with all test machines. If the test machines
     are on-premises behind a firewall, the hosted build agents cannot be used.
   - The build agent must have access to the Internet to download test agents. If this

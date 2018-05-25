@@ -1093,11 +1093,11 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Build agents and agent pools </b></p>
-<p>At least one [agent](../pipelines/concepts/agents/agents.md) is require to build your code. As you scale your system with more code, people, and builds, you'll need more build agents organized within [agent pools](../pipelines/concepts/agents/pools-queues.md). You can use both on-premises or hosted agent pools.</p>
+<p>At least one [agent](../pipelines/agents/agents.md) is require to build your code. As you scale your system with more code, people, and builds, you'll need more build agents organized within [agent pools](../pipelines/agents/pools-queues.md). You can use both on-premises or hosted agent pools.</p>
 
 
 <p><b>Gated check-in (TFVC, VSTS) </b></p>
-<p>Use [gated check-in](../pipelines/concepts/definitions/build/triggers.md#gated) to protect against breaking changes when checking code into TFVC.  </p>
+<p>Use [gated check-in](../pipelines/build/triggers.md#gated) to protect against breaking changes when checking code into TFVC.  </p>
 
 
 <p><b>Branch policies (Git)</b></p>
@@ -1126,7 +1126,7 @@ pipelines\tasks\build\_img
 
 
 <p><b>Build variables</b></p>
-<p>Use [predefined variables](../pipelines/concepts/definitions/build/variables.md) or add your custom variables when configuring your build definition or your build scripts.</p>
+<p>Use [predefined variables](../pipelines/build/variables.md) or add your custom variables when configuring your build definition or your build scripts.</p>
 
 
 </td>
@@ -1134,7 +1134,7 @@ pipelines\tasks\build\_img
 
 
 <p><b>Continuous integration builds</b></p>
-<p>[Define a CI build](../pipelines/concepts/definitions/build/triggers.md#ci) that compiles and tests your solutions whenever your team checks in code.</p>
+<p>[Define a CI build](../pipelines/build/triggers.md#ci) that compiles and tests your solutions whenever your team checks in code.</p>
 
 
 <p><b>Build summary charts</b></p>
@@ -1148,11 +1148,11 @@ pipelines\tasks\build\_img
 
 
 <p><b>Audit changes </b></p>
-<p>Determine who [changed what in the build definition and when they did it](../pipelines/concepts/definitions/build/history.md). </p>
+<p>Determine who [changed what in the build definition and when they did it](../pipelines/build/history.md). </p>
 
 
 <p><b>Build retention policies</b></p>
-<p>[Define policies to automatically delete old completed builds ](../pipelines/concepts/policies/retention.md) to minimize clutter.</p>
+<p>[Define policies to automatically delete old completed builds ](../pipelines/policies/retention.md) to minimize clutter.</p>
 
 <p><b>Build permissions</b></p>
 <p>Determine who can [define, delete, and manage builds](../security/permissions.md#build).</p>
@@ -1187,18 +1187,18 @@ pipelines\tasks\build\_img
 
 
 <p><b>Release environments</b></p>
-<p>[Define and clone release environments](../pipelines/concepts/definitions/release/environments.md), logical entities that represent where you want to deploy a release, such as a collection of servers, a cloud, multiple clouds, or an app store.</p>
+<p>[Define and clone release environments](../pipelines/release/environments.md), logical entities that represent where you want to deploy a release, such as a collection of servers, a cloud, multiple clouds, or an app store.</p>
 
 
 <p><b>Artifacts</b></p>
-<p>A release is fundamentally defined by [versioned artifacts that make up the release](../pipelines/concepts/definitions/release/artifacts.md). As you deploy the release to various environments, you deploy and validate the same artifacts on all environments. </p>
+<p>A release is fundamentally defined by [versioned artifacts that make up the release](../pipelines/release/artifacts.md). As you deploy the release to various environments, you deploy and validate the same artifacts on all environments. </p>
 
 
 <p><b>Tasks</b></p>
-<p>Automate release deployment by [defining the events that will trigger a release](../pipelines/concepts/definitions/release/triggers.md#release-triggers).</p>
+<p>Automate release deployment by [defining the events that will trigger a release](../pipelines/release/triggers.md#release-triggers).</p>
 
 <p><b>Agents and agent pools</b></p>
-<p>Agent pools are the execution containers that specify the security context and runtime environment for the [agents that run when you deploy a release](../pipelines/concepts/agents/agents.md).</p>
+<p>Agent pools are the execution containers that specify the security context and runtime environment for the [agents that run when you deploy a release](../pipelines/agents/agents.md).</p>
 
 </td>
 <td width="33%">
@@ -1206,7 +1206,7 @@ pipelines\tasks\build\_img
 <p>Deploy [any type of application across multiple platforms](../pipelines/overview.md) including Windows and Linux, whether on-premises or in the cloud.</p>
 
 <p><b>Approval workflows</b></p>
-<p>Streamline your application release workflow by [routing pre- and post-deployment approvals](../pipelines/concepts/definitions/release/approvals/index.md) to multiple approvers or teams.</p>
+<p>Streamline your application release workflow by [routing pre- and post-deployment approvals](../pipelines/release/approvals/index.md) to multiple approvers or teams.</p>
 
 <p><b>Release notifications</b></p>
 <p>Receive email messages as releases occur. Approvers receive notifications automatically when a release is waiting for approval. </p>
@@ -1218,19 +1218,19 @@ pipelines\tasks\build\_img
 <p>View or download log files as zip files. Log files contain the status for each step or task of a release, for each of the environments in the release definition. Each completed release--succeeded, failed, or abandoned--[includes a live log file, details, and history for each step or task](../pipelines/actions/define-multistage-release-process.md#monitor-and-track-deployments).</p>
 
 <p><b>Triggers</b></p>
-<p>Automate release deployment by [defining the events that will trigger a release](../pipelines/concepts/definitions/release/triggers.md#release-triggers).</p>
+<p>Automate release deployment by [defining the events that will trigger a release](../pipelines/release/triggers.md#release-triggers).</p>
 
 <p><b>Variables</b></p>
-<p>Lookup the description for all [release system, global, and agent variables](../pipelines/concepts/process/tasks.md).</p>
+<p>Lookup the description for all [release system, global, and agent variables](../pipelines/process/tasks.md).</p>
 
 </td>
 <td width="33%">
 
 <p><b>Release names </b></p>
-<p>Specify the [naming and numbering scheme you want used when adding releases](../pipelines/concepts/definitions/release/index.md#numbering).</p>
+<p>Specify the [naming and numbering scheme you want used when adding releases](../pipelines/release/index.md#numbering).</p>
 
 <p><b>Global configuration properties</b></p>
-<p>Simplify management of custom values that you use to configure multiple releases by [specifying custom values for any of the tasks in any of the environments of a release definition](../pipelines/concepts/definitions/release/variables.md).</p>
+<p>Simplify management of custom values that you use to configure multiple releases by [specifying custom values for any of the tasks in any of the environments of a release definition](../pipelines/release/variables.md).</p>
 
 <p><b>View test results</b></p>
 <p>Open the **Tests** tab to view a summary of the test results, including pass/fail percentages and run duration. Sort the test results into groups or filter the results to show just passed, failed, or other results.</p>
@@ -1241,12 +1241,12 @@ pipelines\tasks\build\_img
 <p>[Add a release summary chart](../report/dashboards/widget-catalog.md#release-definition-widget) to a team dashboard. </p>
 
 <p><b>Extend and customize</b></p>
-<p>[Create workflows tailored to your process](../pipelines/concepts/definitions/release/index.md) by customizing our tasks, or extend with your own custom tasks.</p>
+<p>[Create workflows tailored to your process](../pipelines/release/index.md) by customizing our tasks, or extend with your own custom tasks.</p>
 ![Customize release definition process](_img/features/alm-feature-release-3.png)  
 <br />
 
 <p><b>Manage permissions</b></p>
-<p>Grant or deny permissions to [manage release definitions, environments approvers, or release permissions](../pipelines/concepts/policies/permissions.md#release-permissions). Set permissions for users, groups, or per release definition. </p>
+<p>Grant or deny permissions to [manage release definitions, environments approvers, or release permissions](../pipelines/policies/permissions.md#release-permissions). Set permissions for users, groups, or per release definition. </p>
 
 </td>
 </tr>
@@ -2772,7 +2772,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>[Get detailed information about what changes have been made to your files](https://msdn.microsoft.com/library/ms245475.aspx), compare files and folders, view where and when changesets have been merged, and view file changes using annotate.</p>
 
 <p><b>Build changes</b></p>
-<p>Determine who [changed what in the build definition and when they did it](../pipelines/concepts/definitions/build/history.md).</p>
+<p>Determine who [changed what in the build definition and when they did it](../pipelines/build/history.md).</p>
 
 <p><b>Release audit history</b></p>
 <p>Retain full audit history of all activities performed on a release with detailed release logs and approval tracking.</p>

@@ -19,7 +19,7 @@ monikerRange: '>= tfs-2015'
 Here we'll show you how to set up continuous deployment of your ASP.NET app to an Azure cloud service using Release Management.
 Continuous deployment means starting an automated deployment process whenever a new successful build is available.
 
-You can also use these steps to deploy your app to an [Azure Government Cloud](../../concepts/library/government-cloud.md)
+You can also use these steps to deploy your app to an [Azure Government Cloud](../../library/government-cloud.md)
 or to (Azure Stack)[../../concepts/library/azure-stack.md].
 
 ## Get set up
@@ -91,7 +91,7 @@ Continuous deployment (CD) means starting an automated release process whenever 
    
    * **Service name**: Select the name of an existing cloud service, or enter the name of a new cloud service.<p />
 
-   > If your Azure subscription is defined in an Azure Government Cloud, ensure your deployment process meets the relevant compliance requirements. For more details, see [Azure Government Cloud deployments](../../concepts/library/government-cloud.md).
+   > If your Azure subscription is defined in an Azure Government Cloud, ensure your deployment process meets the relevant compliance requirements. For more details, see [Azure Government Cloud deployments](../../library/government-cloud.md).
 
    [!INCLUDE [edit-template-vars-in-environment](../_shared/edit-template-vars-in-environment.md)]
    

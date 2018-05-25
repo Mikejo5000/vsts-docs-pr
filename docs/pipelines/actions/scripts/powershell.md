@@ -166,9 +166,9 @@ Write-Host "Definition = $($definition | ConvertTo-Json -Depth 1000)"
 
 ### What variables are available for me to use in my scripts?
 
-[Use variables](../../concepts/definitions/build/variables.md)
+[Use variables](../../build/variables.md)
 
-[!INCLUDE [include](../../concepts/definitions/_shared/variable-set-in-script-qa.md)]
+[!INCLUDE [include](../../_shared/variable-set-in-script-qa.md)]
 
 ### Which branch of the script does the build run?
 

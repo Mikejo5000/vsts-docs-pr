@@ -59,7 +59,7 @@ None
 </tr>
 <tr>
 <td>Target Folder</td>
-<td>Folder where the files will be copied. In most cases you specify this folder using a variable. For example, specify ```$(Build.ArtifactStagingDirectory)``` if you intend to [publish the files as build artifacts](../../concepts/definitions/build/artifacts.md).</td>
+<td>Folder where the files will be copied. In most cases you specify this folder using a variable. For example, specify ```$(Build.ArtifactStagingDirectory)``` if you intend to [publish the files as build artifacts](../../build/artifacts.md).</td>
 </tr>
 <tr><th style="text-align: center" colspan="2">Advanced</th></tr>
 <tr>
@@ -147,7 +147,7 @@ These files are copied to the staging directory:
 
 ### How do I use this task to publish artifacts?
 
-See [Artifacts in Team Build](../../concepts/definitions/build/artifacts.md).
+See [Artifacts in Team Build](../../build/artifacts.md).
 
 [!INCLUDE [temp](../_shared/build-step-common-qa.md)]
 

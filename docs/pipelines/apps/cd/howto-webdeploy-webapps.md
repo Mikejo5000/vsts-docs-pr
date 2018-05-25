@@ -54,7 +54,7 @@ If you want to deploy to a staging slot in an Azure App Services website, and th
    ![Azure App Service Deploy](../../tasks/deploy/_img/azure-web-app-deployment-icon.png) [Deploy: Azure App Service Deploy](../../tasks/deploy/azure-app-service-deploy.md) - Deploy the app to Azure App Services.
    
    - **Azure Subscription**: Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions
-     connection to your Azure subscription. For more details, see [Azure Resource Manager service endpoint](../../concepts/library/service-endpoints.md#sep-azure-rm).
+     connection to your Azure subscription. For more details, see [Azure Resource Manager service endpoint](../../library/service-endpoints.md#sep-azure-rm).
    
    - **App Service name**: Select your App Service.
    
@@ -65,7 +65,7 @@ If you want to deploy to a staging slot in an Azure App Services website, and th
    ![Azure App Service Manage](../../tasks/deploy/_img/azure-app-service-manage.png) [Deploy: Azure App Service Manage](../../tasks/deploy/azure-app-service-manage.md) - Swap slots.
    
    - **Azure Subscription**: Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions
-     connection to your Azure subscription. For more details, see [Azure Resource Manager service endpoint](../../concepts/library/service-endpoints.md#sep-azure-rm).
+     connection to your Azure subscription. For more details, see [Azure Resource Manager service endpoint](../../library/service-endpoints.md#sep-azure-rm).
    
    - **Action**: `Swap slots`
    
@@ -110,5 +110,5 @@ For more details, see [Managing Configuration & App Settings for Multiple Enviro
 
 Do this by creating a suitable service endpoint in VSTS ot TFS:
 
-* [Azure Government Cloud deployment](../../concepts/library/government-cloud.md)
-* [Azure Stack deployment](../../concepts/library/azure-stack.md)
+* [Azure Government Cloud deployment](../../library/government-cloud.md)
+* [Azure Stack deployment](../../library/azure-stack.md)

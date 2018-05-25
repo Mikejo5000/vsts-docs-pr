@@ -19,7 +19,7 @@ monikerRange: 'vsts'
 
 ![](../utility/_img/secure-file.png) Download a secure file to a temporary location on the build or release agent
 
-Use this task to download a [secure file](../../concepts/library/secure-files.md) from the server during a build or release.
+Use this task to download a [secure file](../../library/secure-files.md) from the server during a build or release.
 
 Once downloaded, the secure file is located in the `$env:TEMP` directory of the VSTS Agent.
 

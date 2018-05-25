@@ -29,7 +29,7 @@ You want to package and publish some projects in a C# class library to your VSTS
 Make sure your AssemblyInfo.cs files contain the information you want shown in your packages. For example, ```AssemblyCompanyAttribute``` will be shown as the author, and ```AssemblyDescriptionAttribute``` will be shown as the description.
 
 
-#### [Variables](../../concepts/definitions/build/variables.md) tab
+#### [Variables](../../build/variables.md) tab
 
 | Name | Value | 
 |---|---|
@@ -37,7 +37,7 @@ Make sure your AssemblyInfo.cs files contain the information you want shown in y
 |```$(BuildPlatform)``` | ```any cpu```|
 
 
-#### [Options](../../concepts/definitions/build/options.md)
+#### [Options](../../build/options.md)
 
 | Setting | Value | 
 |---|---|

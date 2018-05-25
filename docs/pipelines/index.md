@@ -78,10 +78,10 @@ VSTS and Team Foundation Server help you implement a continuous integration (CI)
 
 ## Concepts
 
-- [Release definitions](concepts/definitions/release/index.md)
-- [Build and release agents](concepts/agents/agents.md)
-- [Build and release tasks](concepts/process/tasks.md)  
-- [Licensing and build and release pipelines](concepts/licensing/concurrent-pipelines-ts.md)
+- [Release definitions](release/index.md)
+- [Build and release agents](agents/agents.md)
+- [Build and release tasks](process/tasks.md)  
+- [Licensing and build and release pipelines](licensing/concurrent-pipelines-ts.md)
 
 ## Resources
 

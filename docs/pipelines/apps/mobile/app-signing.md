@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2018'
 
 When developing an app for Android or Apple operating systems, you will eventually need to manage signing certificates, and in the case of Apple apps, [provisioning profiles](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/Introduction/Introduction.html#//apple_ref/doc/uid/TP40013839). This article describes how to securely manage them for signing and provisioning your app.
 
-> **Tip**: Use a Microsoft-hosted Linux, macOS, or Windows build agent, or set up your own agent. See [Build and Release Agents](../../concepts/agents/agents.md).
+> **Tip**: Use a Microsoft-hosted Linux, macOS, or Windows build agent, or set up your own agent. See [Build and Release Agents](../../agents/agents.md).
 
 This article covers:
 - [Sign your Android app](#android)
@@ -38,7 +38,7 @@ Follow these steps to sign your Android app while keeping your signing certifica
 
 1. Find the Android Signing task's **Sign the APK** checkbox and enable it.
 
-1. Next to the **Keystore file** field, click the settings icon and upload your keystore file to the [Secure Files library](../../concepts/library/secure-files.md). During upload, your keystore will be encrypted and securely stored.
+1. Next to the **Keystore file** field, click the settings icon and upload your keystore file to the [Secure Files library](../../library/secure-files.md). During upload, your keystore will be encrypted and securely stored.
 
 1. Once your keystore has been uploaded to the Secure Files library, select it in the **Keystore file** dropdown.
 
@@ -94,12 +94,12 @@ Choose either of the tabs below for details.
 
 # [Install them during the build](#tab/apple-install-during-build)
 
-Use this method when you do not have enduring access to the build agent, such as the [hosted macOS agents](../../concepts/agents/hosted.md). The P12 certificate and provisioning profile are installed at the beginning of the build and removed when the build completes.
+Use this method when you do not have enduring access to the build agent, such as the [hosted macOS agents](../../agents/hosted.md). The P12 certificate and provisioning profile are installed at the beginning of the build and removed when the build completes.
 
 #### Install the P12 certificate during your build
 
 1. Add the [Install Apple Certificate](../../tasks/utility/install-apple-certificate.md) task to your build before the Xcode or Xamarin.iOS task.
-1. Next to the **Certificate (P12)** field, click the settings icon and upload your P12 file to the [Secure Files library](../../concepts/library/secure-files.md). During upload, your certificate will be encrypted and securely stored.
+1. Next to the **Certificate (P12)** field, click the settings icon and upload your P12 file to the [Secure Files library](../../library/secure-files.md). During upload, your certificate will be encrypted and securely stored.
 1. Once your certificate has been uploaded to the Secure Files library, select it in the **Certificate (P12)** dropdown.
 1. Go to the **Variables** tab and add a variable named `P12password`. Set its value to the password of your certificate. _Be sure to click the **lock** icon._ This will secure your password and obscure it in logs.
 1. Go back to the **Tasks** tab. In the **Install Apple Certificate** task's settings, reference your newly-created variable in the **Certificate (P12) password** field as: `$(P12password)`
@@ -108,7 +108,7 @@ Use this method when you do not have enduring access to the build agent, such as
 
 1. Add the [Install Apple Provisioning Profile](../../tasks/utility/install-apple-provisioning-profile.md) task to your build before the Xcode or Xamarin.iOS task.
 1. For the **Provisioning profile location** option, choose **Secure Files**.
-1. Next to the **Provisioning profile** field, click the settings icon and upload your provisioning profile file to the [Secure Files library](../../concepts/library/secure-files.md). During upload, your certificate will be encrypted and securely stored.
+1. Next to the **Provisioning profile** field, click the settings icon and upload your provisioning profile file to the [Secure Files library](../../library/secure-files.md). During upload, your certificate will be encrypted and securely stored.
 1. Once your certificate has been uploaded to the Secure Files library, select it in the **Provisioning profile** dropdown.
 1. Enable the checkbox labeled **Remove profile after build**. This will ensure that the provisioning profile is not left on the agent machine.
 

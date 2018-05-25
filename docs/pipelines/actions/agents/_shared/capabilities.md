@@ -4,7 +4,7 @@ ms.topic: include
 
 ## Capabilities
 
-Your agent's capabilities are cataloged and advertised in the pool so that only the builds and releases it can handle are assigned to it. See [Build and release agent capabilities](../../../concepts/agents/agents.md#capabilities).
+Your agent's capabilities are cataloged and advertised in the pool so that only the builds and releases it can handle are assigned to it. See [Build and release agent capabilities](../../../agents/agents.md#capabilities).
 
 In many cases after you deploy an agent you'll need to install software or utilities. Generally you should install on your agents whatever software and tools you use on your dev machine. 
 

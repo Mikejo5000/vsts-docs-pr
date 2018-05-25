@@ -160,7 +160,7 @@ The unified agents approach also allows admins to manage all machines being used
 
 Over the course of the last several sprints, we delivered several crucial pieces to enable this capability, including:
 
-* Agents can be [configured for UI testing](/vsts/pipelines/concepts/agents/agents#account)
+* Agents can be [configured for UI testing](/vsts/pipelines/agents/agents#account)
 * [Visual Studio Test Platform Installer](/vsts/release-notes/2017/nov-28-vsts#test) allows VSTest task to run without needing Visual Studio pre-installed
 * Both Build and Release definitions can be created with [multiple phases and have the ability to use different agent queues](/vsts/release-notes/2017/dec-11-vsts#enhancements-to-multi-phase-builds) for each phase
 * Automated test cases can be [run from the Test hub](/vsts/pipelines/test/run-automated-tests-from-test-hub) using the VSTest task

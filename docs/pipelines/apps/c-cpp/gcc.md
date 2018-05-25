@@ -22,7 +22,7 @@ Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide a hi
 
 [!INCLUDE [include](../../_shared/ci-cd-prerequisites-vsts.md)]
 
-* While the simplest way to try this quickstart is to use a VSTS account, you can also use a TFS server instead of a VSTS account. Make sure that you have [configured a build agent](../../concepts/agents/agents.md) for your team project, and that you have GCC installed on the agent machine.
+* While the simplest way to try this quickstart is to use a VSTS account, you can also use a TFS server instead of a VSTS account. Make sure that you have [configured a build agent](../../agents/agents.md) for your team project, and that you have GCC installed on the agent machine.
 
 ## Get sample app code
 
@@ -70,7 +70,7 @@ https://github.com/adventworks/cpp-gpp-sample
 
  * **VSTS:** Select _Hosted Linux_ or _Hosted macOS_. This uses a VSTS pool of agents that have the software needed to build your app.
 
- * **TFS:** Select a queue that includes a [Linux or macOS build agent](../../concepts/agents/agents.md).
+ * **TFS:** Select a queue that includes a [Linux or macOS build agent](../../agents/agents.md).
 
 1. Click **Get sources** and then:
 

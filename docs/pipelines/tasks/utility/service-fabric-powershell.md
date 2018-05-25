@@ -44,7 +44,7 @@ deploy to a Service Fabric cluster.
 | **Script Path** | Path to the PowerShell script to run. Can include wildcards and variables. Example: `$(system.defaultworkingdirectory)/**/drop/projectartifacts/**/docker-compose.yml`. **Note**: combining compose files is not supported as part of this task. |
 | **Script Arguments** | Additional parameters to pass to the PowerShell script. Can be either ordinal or named parameters. |
 | **Inline Script** | The PowerShell commands to run on the build agent. [More information](../utility/powershell.md) |
-| **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
+| **Control options** | See [Control options](../../process/tasks.md#controloptions) |
 
 Also see: [Service Fabric Compose Deploy task](../deploy/service-fabric-compose-deploy.md)
 

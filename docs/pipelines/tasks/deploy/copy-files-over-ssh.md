@@ -38,13 +38,13 @@ In addition to Linux, macOS is partially supported (see [Q&A](#is-this-task-supp
 | Argument | Description |
 | -------- | ----------- |
 | **SSH endpoint** | The name of an SSH service endpoint containing connection details for the remote machine.<br />- The hostname or IP address of the remote machine, the port number, and the user name are required to create an SSH endpoint.<br />- The private key and the passphrase must be specified for authentication. |
-| **Source folder** | The source folder for the files to copy to the remote machine. If omitted, the root of the repository is used. Names containing wildcards such as `*.zip` are not supported. Use [variables](../../concepts/definitions/build/variables.md) if files are not in the repository. Example: `$(Agent.BuildDirectory)` |
+| **Source folder** | The source folder for the files to copy to the remote machine. If omitted, the root of the repository is used. Names containing wildcards such as `*.zip` are not supported. Use [variables](../../build/variables.md) if files are not in the repository. Example: `$(Agent.BuildDirectory)` |
 | **Contents** | File paths to include as part of the copy. Supports multiple lines of [minimatch patterns](../file-matching-patterns.md). Default is `**` which includes all files (including sub folders) under the source folder.<br />- Example: `**/*.jar \n **/*.war` includes all jar and war files (including sub folders) under the source folder.<br />- Example: `** \n !**/*.xml` includes all files (including sub folders) under the source folder but excludes xml files. |
 | **Target folder** | Target folder on the remote machine to where files will be copied. Example: `/home/user/MySite`. Preface with a tilde (**~**) to specify the user's home directory. |
 | **Advanced - Clean target folder** | If this option is selected, all existing files in the target folder will be deleted before copying. |
 | **Advanced - Overwrite** | If this option is selected (the default), existing files in the target folder will be replaced. |
 | **Advanced - Flatten folders** | If this option is selected, the folder structure is not preserved and all the files will be copied into the specified target folder on the remote machine. |
-| **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
+| **Control options** | See [Control options](../../process/tasks.md#controloptions) |
 
 ## See also
 

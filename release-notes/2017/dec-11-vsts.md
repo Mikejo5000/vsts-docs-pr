@@ -74,7 +74,7 @@ A few weeks ago, we added phases to build definitions. You’ve been able to use
 
 * Run a phase only under specific conditions. For example, you can configure a phase to run only when previous phases succeed, or only when you are building code in the master branch.
 
-To learn more, see [Phases in Build and Release Management](/vsts/pipelines/concepts/process/phases).
+To learn more, see [Phases in Build and Release Management](/vsts/pipelines/process/phases).
 
 ### Hide empty contributed sections in build results page
 
@@ -96,7 +96,7 @@ Agents of version 125 or newer are based on ASP.NET Core 2.0. Previously you cou
 
 ### Release trigger for a Package Management artifact
 
-Now you can set a trigger on a **Package Management** artifact in a Release definition so that a new release is automatically created when a new version of the package has been published. See the [documentation for triggers in Release Management](/vsts/pipelines/concepts/definitions/release/triggers#release-triggers) for more information.
+Now you can set a trigger on a **Package Management** artifact in a Release definition so that a new release is automatically created when a new version of the package has been published. See the [documentation for triggers in Release Management](/vsts/pipelines/release/triggers#release-triggers) for more information.
 
 ### Default artifact versions
 

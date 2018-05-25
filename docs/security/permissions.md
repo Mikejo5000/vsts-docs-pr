@@ -24,7 +24,7 @@ This topic provides a comprehensive reference for each built-in group and permis
 > [!div class="mx-tdBreakAll"]  
 > |Users and groups  |DevOps permissions  |Agile/Work tracking permissions  |  
 > |-------------|----------|---------|   
-> |- [Add users to an administrator role](set-project-collection-level-permissions.md)<br/>- [Add users to an account](../accounts/add-team-members-vs.md)<br/>- [Add users to a team project or a team](add-users-team-project.md) <br/>- [Make a user a team admin](../work/scale/add-team-administrator.md)<br/><br/>**Miscellaneous**<hr/>- [README & Wiki](../collaborate/manage-readme-wiki-permissions.md) |- [Git branch](../git/branch-permissions.md)<br/>- [Git repositories](set-git-tfvc-repository-permissions.md)<br/>- [TFVC](set-git-tfvc-repository-permissions.md)<br/>- [Builds](../pipelines/set-permissions.md)<br/>- [Releases](../pipelines/set-permissions.md)<br/>- [Approvals and approvers](../pipelines/concepts/definitions/release/approvals/index.md)<br/>- [Task groups](../pipelines/set-permissions.md#task-group)<br/>- [Variable groups](../pipelines/set-permissions.md#variable-group)<br/>- [Role-based resources](../pipelines/set-permissions.md) | - [Area and iteration paths](../security/set-permissions-access-work-tracking.md)<br/>- [Work item query and folder](../work/track/set-query-permissions.md)<br/>- [Plan permissions](set-permissions-access-work-tracking.md#plan-permissions)<br/> - [Dashboard permissions](../report/dashboards/dashboard-permissions.md#set-permissions)<br/>- [Analytics service](../report/analytics/analytics-security.md)<br/>- [Analytics views](../report/analytics/analytics-security.md)<br/>- [Customize process](set-permissions-access-work-tracking.md#process-permissions) |    
+> |- [Add users to an administrator role](set-project-collection-level-permissions.md)<br/>- [Add users to an account](../accounts/add-team-members-vs.md)<br/>- [Add users to a team project or a team](add-users-team-project.md) <br/>- [Make a user a team admin](../work/scale/add-team-administrator.md)<br/><br/>**Miscellaneous**<hr/>- [README & Wiki](../collaborate/manage-readme-wiki-permissions.md) |- [Git branch](../git/branch-permissions.md)<br/>- [Git repositories](set-git-tfvc-repository-permissions.md)<br/>- [TFVC](set-git-tfvc-repository-permissions.md)<br/>- [Builds](../pipelines/set-permissions.md)<br/>- [Releases](../pipelines/set-permissions.md)<br/>- [Approvals and approvers](../pipelines/release/approvals/index.md)<br/>- [Task groups](../pipelines/set-permissions.md#task-group)<br/>- [Variable groups](../pipelines/set-permissions.md#variable-group)<br/>- [Role-based resources](../pipelines/set-permissions.md) | - [Area and iteration paths](../security/set-permissions-access-work-tracking.md)<br/>- [Work item query and folder](../work/track/set-query-permissions.md)<br/>- [Plan permissions](set-permissions-access-work-tracking.md#plan-permissions)<br/> - [Dashboard permissions](../report/dashboards/dashboard-permissions.md#set-permissions)<br/>- [Analytics service](../report/analytics/analytics-security.md)<br/>- [Analytics views](../report/analytics/analytics-security.md)<br/>- [Customize process](set-permissions-access-work-tracking.md#process-permissions) |    
 
 ::: moniker-end
 
@@ -33,7 +33,7 @@ This topic provides a comprehensive reference for each built-in group and permis
 > [!div class="mx-tdBreakAll"]  
 > |Users and groups  |DevOps permissions  |Agile/Work tracking permissions  |  
 > |-------------|----------|---------|   
-> |- [Add users to an administrator role](set-project-collection-level-permissions.md)<br/>- [Add users to a team project or a team](add-users-team-project.md) <br/>- [Make a user a team admin](../work/scale/add-team-administrator.md)<br/><br/>**Miscellaneous**<hr/>- [README & Wiki](../collaborate/manage-readme-wiki-permissions.md)<br/>- [SharePoint (TFS)](set-sharepoint-permissions.md)<br/>- [SQL Server Reports (TFS)](../report/admin/grant-permissions-to-reports.md) |- [Git branch](../git/branch-permissions.md)<br/>- [Git repositories](set-git-tfvc-repository-permissions.md)<br/>- [TFVC](set-git-tfvc-repository-permissions.md)<br/>- [Builds](../pipelines/set-permissions.md)<br/>- [Releases](../pipelines/set-permissions.md)<br/>- [Approvals and approvers](../pipelines/concepts/definitions/release/approvals/index.md)<br/>- [Task groups](../pipelines/set-permissions.md#task-group)<br/>- [Variable groups](../pipelines/set-permissions.md#variable-group)<br/>- [Role-based resources](../pipelines/set-permissions.md) | - [Area and iteration paths](../security/set-permissions-access-work-tracking.md)<br/>- [Work item query and folder](../work/track/set-query-permissions.md)<br/>- [Plan permissions](set-permissions-access-work-tracking.md#plan-permissions)<br/> - [Dashboard permissions](../report/dashboards/dashboard-permissions.md#set-permissions) |    
+> |- [Add users to an administrator role](set-project-collection-level-permissions.md)<br/>- [Add users to a team project or a team](add-users-team-project.md) <br/>- [Make a user a team admin](../work/scale/add-team-administrator.md)<br/><br/>**Miscellaneous**<hr/>- [README & Wiki](../collaborate/manage-readme-wiki-permissions.md)<br/>- [SharePoint (TFS)](set-sharepoint-permissions.md)<br/>- [SQL Server Reports (TFS)](../report/admin/grant-permissions-to-reports.md) |- [Git branch](../git/branch-permissions.md)<br/>- [Git repositories](set-git-tfvc-repository-permissions.md)<br/>- [TFVC](set-git-tfvc-repository-permissions.md)<br/>- [Builds](../pipelines/set-permissions.md)<br/>- [Releases](../pipelines/set-permissions.md)<br/>- [Approvals and approvers](../pipelines/release/approvals/index.md)<br/>- [Task groups](../pipelines/set-permissions.md#task-group)<br/>- [Variable groups](../pipelines/set-permissions.md#variable-group)<br/>- [Role-based resources](../pipelines/set-permissions.md) | - [Area and iteration paths](../security/set-permissions-access-work-tracking.md)<br/>- [Work item query and folder](../work/track/set-query-permissions.md)<br/>- [Plan permissions](set-permissions-access-work-tracking.md#plan-permissions)<br/> - [Dashboard permissions](../report/dashboards/dashboard-permissions.md#set-permissions) |    
 
 
 ::: moniker-end
@@ -895,11 +895,11 @@ Commenting this section out as it duplicates that defined in the following table
 | **Administer build permissions** | Can change any of the other permissions listed here. |
 | **Queue builds** | Can queue new builds. |
 | **Delete build definition** | Can delete build definition(s). |
-| **Delete builds** | Can delete builds for a definition. Builds that are deleted are [retained](../pipelines/concepts/policies/retention.md) in the **Deleted** tab for a period of time before they are destroyed. |
+| **Delete builds** | Can delete builds for a definition. Builds that are deleted are [retained](../pipelines/policies/retention.md) in the **Deleted** tab for a period of time before they are destroyed. |
 | **Destroy builds** | Can delete builds from the **Deleted** tab. |
 | **Edit build definition** | Can save any changes to a build definition, including configuration variables, triggers, repositories, and retention policy. |
 | **Edit build quality** | Can add tags to a build. |
-| **Override check-in validation by build** | Applies to [TFVC gated check-in builds](../pipelines/concepts/definitions/build/triggers.md). This does not apply to PR builds. |
+| **Override check-in validation by build** | Applies to [TFVC gated check-in builds](../pipelines/build/triggers.md). This does not apply to PR builds. |
 | **Retain indefinitely** | Can toggle the retain indefinitely flag on a build. |
 | **Stop builds** | Can stop builds queued by other team members or by the system.  |
 | **View build definition** | Can view build definition(s). |
@@ -926,7 +926,7 @@ Commenting this section out as it duplicates that defined in the following table
 	</tr>
 	<tr>
 		<td id="delete-builds-permission">Delete builds</td>
-		<td>Can delete a completed build. Builds that are deleted are [retained](../pipelines/concepts/policies/retention.md) in the **Deleted** tab for a period of time before they are destroyed.</td>
+		<td>Can delete a completed build. Builds that are deleted are [retained](../pipelines/policies/retention.md) in the **Deleted** tab for a period of time before they are destroyed.</td>
 	</tr>
 	<tr>
 		<td id="destroy-builds-permission">Destroy builds</td>
@@ -977,7 +977,7 @@ Commenting this section out as it duplicates that defined in the following table
 			<blockquote>
 				Assign the Override check-in validation by build permission
 				only to service accounts for build services
-				and to build administrators who are responsible for the quality of the code. Applies to [TFVC gated check-in builds](../pipelines/concepts/definitions/build/triggers.md). This does not apply to PR builds.
+				and to build administrators who are responsible for the quality of the code. Applies to [TFVC gated check-in builds](../pipelines/build/triggers.md). This does not apply to PR builds.
 				For more information, see
 				[Check in to a folder that is controlled by a gated check-in build process](../tfvc/check-folder-controlled-by-gated-check-build-process.md).
 			</blockquote>
@@ -1817,7 +1817,7 @@ are denied all permissions except **View release definition** and
 You manage permissions [for task groups from the **Build and Release** hub](../pipelines/set-permissions.md#task-group) of the web portal. Project, Build, and Release Administrators are granted all permissions. Task group permissions follow a hierarchical model. Defaults for all the permissions can be set at the team project
 level and can be overridden on an individual task group definition.
 
-You use task groups to encapsulate a sequence of tasks already defined in a build or a release definition into a single reusable task. You [define and manage task groups](../pipelines/concepts/library/task-groups.md) in the **Task groups** tab of the **Build and Release** hub.
+You use task groups to encapsulate a sequence of tasks already defined in a build or a release definition into a single reusable task. You [define and manage task groups](../pipelines/library/task-groups.md) in the **Task groups** tab of the **Build and Release** hub.
 
 | Permission | Description | 
 |------------|-------------| 

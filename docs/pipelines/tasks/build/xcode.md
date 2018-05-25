@@ -46,13 +46,13 @@ Enter a space-delimited list of actions. Valid options are `build`, `clean`, `te
 <tr>
 <td>Configuration</td>
 <td>
-Enter the Xcode project or workspace configuration to be built. The default value of this field is the variable `$(Configuration)`. When using a variable, make sure to specify a value (for example, `Release`) on the [Variables](../../concepts/definitions/build/variables.md) tab.
+Enter the Xcode project or workspace configuration to be built. The default value of this field is the variable `$(Configuration)`. When using a variable, make sure to specify a value (for example, `Release`) on the [Variables](../../build/variables.md) tab.
 </td>
 </tr>
 <tr>
 <td>SDK</td>
 <td>
-Specify an SDK to use when building the Xcode project or workspace. From the macOS Terminal application, run `xcodebuild -showsdks` to display the valid list of SDKs. The default value of this field is the variable `$(SDK)`. When using a variable, make sure to specify a value (for example, `iphonesimulator`) on the [Variables](../../concepts/definitions/build/variables.md) tab.
+Specify an SDK to use when building the Xcode project or workspace. From the macOS Terminal application, run `xcodebuild -showsdks` to display the valid list of SDKs. The default value of this field is the variable `$(SDK)`. When using a variable, make sure to specify a value (for example, `iphonesimulator`) on the [Variables](../../build/variables.md) tab.
 </td>
 </tr>
 <tr>
@@ -207,7 +207,7 @@ Enter the name of the device to be used for UI testing, such as `Raisa's iPad`. 
 <td>Output directory</td>
 <td>
 Enter a path relative to the working directory where build output (binaries) will be placed.
-The default value includes variables. When these are used, make sure to specify values on the [Variables](../../concepts/definitions/build/variables.md) tab.
+The default value includes variables. When these are used, make sure to specify values on the [Variables](../../build/variables.md) tab.
 </td>
 </tr>
 <tr>

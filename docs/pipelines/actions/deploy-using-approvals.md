@@ -43,7 +43,7 @@ to confirm that a release is ready to deploy to the production environment. In t
 tutorial, you'll see some additional and more powerful ways to configure approvals 
 for releases and deployments by using manual intervention and gates. 
 For more information about the ways you can configure approvals for a release,
-see [Approvals and gates overview](../concepts/definitions/release/approvals/index.md).
+see [Approvals and gates overview](../release/approvals/index.md).
 
 ## Configure a gate
 
@@ -95,13 +95,13 @@ meets a wide range or criteria, without requiring user intervention.
    >The sampling interval and timeout work together so that the gates will call their functions
    at suitable intervals, and reject the deployment if they don't all succeed during the same sampling
    interval and within the timeout period.
-   For more details, see [Gates](../concepts/definitions/release/approvals/gates.md).
+   For more details, see [Gates](../release/approvals/gates.md).
 
 1. Save you release definition.
 
    ![Saving the release definition](_img/deploy-using-approvals/gates-06.png)
 
-For more information about using other types of approval gates, see [Approvals and gates](../concepts/definitions/release/approvals/index.md).
+For more information about using other types of approval gates, see [Approvals and gates](../release/approvals/index.md).
 
 <!-- TBD - ADD GATE TASK TO TASKS LIST -->
    
@@ -122,7 +122,7 @@ Intervention** task in your pipeline.
    ![Adding an Agentless phase to the task list](_img/deploy-using-approvals/add-agentless-phase.png)
 
    Several tasks, including the **Manual Intervention** task, can be used only in an
-   [agentless phase](../concepts/process/server-phases.md). 
+   [agentless phase](../process/server-phases.md). 
 
 1. Choose **+** in the **Agentless phase** bar and add a **Manual Intervention** task to the phase. 
 

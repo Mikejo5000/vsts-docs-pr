@@ -28,7 +28,7 @@ Some features provide a new user interface and functionality, which can be manag
 > [!div class="mx-tdBreakAll"] 
 > |[Preview features per user](#user-level)  |[Preview features per account](#account-level)  |
 > |-------------|----------|
-> |- [Approval gates in releases](../pipelines/concepts/definitions/release/approvals/index.md)<br/>- [New Dashboards Experience](../report/dashboards/dashboards.md)<br/>- [New Queries Experience](../work/track/view-run-query.md)<br/>- [New release progress views](../pipelines/archive/preview/new-release-summary.md) |- [Build with multiple queues](https://github.com/Microsoft/vsts-agent/blob/master/docs/preview/yamlgettingstarted.md)<br/>- [Build YAML Definitions](../pipelines/actions/build-yaml.md)<br/>- [Git Forks](../git/concepts/forks.md)<br/>- [New Dashboards Experience](../report/dashboards/dashboards.md)<br/>- [New release progress views](../pipelines/archive/preview/new-release-summary.md) |
+> |- [Approval gates in releases](../pipelines/release/approvals/index.md)<br/>- [New Dashboards Experience](../report/dashboards/dashboards.md)<br/>- [New Queries Experience](../work/track/view-run-query.md)<br/>- [New release progress views](../pipelines/archive/preview/new-release-summary.md) |- [Build with multiple queues](https://github.com/Microsoft/vsts-agent/blob/master/docs/preview/yamlgettingstarted.md)<br/>- [Build YAML Definitions](../pipelines/actions/build-yaml.md)<br/>- [Git Forks](../git/concepts/forks.md)<br/>- [New Dashboards Experience](../report/dashboards/dashboards.md)<br/>- [New release progress views](../pipelines/archive/preview/new-release-summary.md) |
 
 <a id="user-level">  </a>
 ## Enable features for your use  
@@ -68,7 +68,7 @@ When you enable a feature at the account level, you essentially turn it on for a
 - [Pull Request Status Policy](../git/how-to/pr-status-policy.md) 
 - [Symbol server](../pipelines/symbols/index.md)  
 - [Streamlined User Management](../accounts/add-account-users-assign-access-levels.md)   
-- [Task tool installers](../pipelines/concepts/process/tasks.md#tool-installers) 
+- [Task tool installers](../pipelines/process/tasks.md#tool-installers) 
 - [Team expansion for notifications](manage-team-notifications.md)
 - [Updated package experience](../package/index.md) 
 - [Wiki](add-edit-wiki.md)  

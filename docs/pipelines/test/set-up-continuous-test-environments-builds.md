@@ -55,7 +55,7 @@ As an alternative, consider:
   task you can deploy and run unit and functional tests without requiring the **Deploy Test Agent** and **Run Functional Tests** tasks,
   and run tests on platforms that don't have Visual Studio installed by using the 
   [Visual Studio Test Platform](https://blogs.msdn.microsoft.com/devops/2016/07/25/evolving-the-visual-studio-test-platform-part-1/). 
-  In this case, you can use [deployment groups](../concepts/definitions/release/deployment-groups/index.md)
+  In this case, you can use [deployment groups](../release/deployment-groups/index.md)
   to define your target machines. For more details, see
   [Testing with unified agents and phases](test-with-unified-agent-and-phases.md).
 
@@ -66,9 +66,9 @@ As an alternative, consider:
   `dbserver.fabrikam.com,dbserver_int.fabrikam.com:5986,192.168.12.34:5986`
  
 * A variable that contains the list of machines. For example, a
-  [build or release definition variable](../../pipelines/concepts/definitions/release/variables.md)
+  [build or release definition variable](../../pipelines/release/variables.md)
   or a variable defined within a project-wide 
-  [variable group](../../pipelines/concepts/library/variable-groups.md). For example, you could define the variable
+  [variable group](../../pipelines/library/variable-groups.md). For example, you could define the variable
   named **MyMachines** with the value shown above, then include it in
   your tasks using:
 

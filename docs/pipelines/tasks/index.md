@@ -155,7 +155,7 @@ monikerRange: '>= tfs-2015'
 | ![icon](tool/_img/ruby.png) [Use Ruby Version](tool/use-ruby-version.md). Selects a version of Ruby to run on an agent.  Optionally adds it to PATH. | VSTS |
 | ![icon](tool/_img/visualstudiotestplatforminstaller.png) [Visual Studio Test Platform Installer](tool/VsTestPlatformToolInstaller.1.md). Acquires the Visual Studio Test Platform from nuget.org or the tools cache. | VSTS |
 
-To learn more about tool installer tasks, see [Tool installers](../concepts/process/tasks.md#tool-installers).
+To learn more about tool installer tasks, see [Tool installers](../process/tasks.md#tool-installers).
 
 ## Q&A  
 

@@ -96,7 +96,7 @@ None
             <p>To prepare your SymStore symbol store:</p>
             <ol>
                 <li>Set up a folder on a file-sharing server to store the symbols. For example, set up \\fabrikam-share\symbols.</li>
-                <li>Grant full control permission to the [build agent service account](../../concepts/agents/agents.md#account).</li>
+                <li>Grant full control permission to the [build agent service account](../../agents/agents.md#account).</li>
             </ol>
             <p>If you leave this argument blank, your symbols will be source indexed but not published. (You can also store your symbols with your drops. See [Publish Build Artifacts](../utility/publish-build-artifacts.md)).
             </p>
@@ -128,12 +128,12 @@ None
     <tr>
         <td>Product</td>
         <td>If you are publishing your symbols, you can specify the product parameter that is passed to symstore.exe. If blank,
-            [$(Build.DefinitionName)](../../concepts/definitions/build/variables.md) is passed.</td>
+            [$(Build.DefinitionName)](../../build/variables.md) is passed.</td>
     </tr>
     <tr>
         <td>Version</td>
         <td>If you are publishing your symbols, you can specify the version parameter that is passed to symstore.exe. If blank,
-            [$(Build.BuildNumber)](../../concepts/definitions/build/variables.md) is passed.</td>
+            [$(Build.BuildNumber)](../../build/variables.md) is passed.</td>
     </tr>
     <tr>
         <td>Artifact name</td>

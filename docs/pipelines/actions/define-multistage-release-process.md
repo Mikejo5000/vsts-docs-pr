@@ -61,7 +61,7 @@ In this section, you will check that the triggers you need for continuous deploy
 
    ![Viewing the continuous integration trigger setting](_img/define-multistage-release-process/ci-trigger.png)
 
-   For more information, see [Release triggers](../concepts/definitions/release/triggers.md?toc=/vsts/deploy-azure/toc.json)
+   For more information, see [Release triggers](../release/triggers.md?toc=/vsts/deploy-azure/toc.json)
    in the Release Management documentation.
 
 1. Choose the **Pre-deployment conditions** icon in the **Environments** section to open the conditions panel.
@@ -73,14 +73,14 @@ In this section, you will check that the triggers you need for continuous deploy
    Notice that you can also define artifact filters that determine a condition for the release to proceed,
    and set up a schedule for deployments. You can use features to, for example, specify a branch from
    which the build artifacts must have been created, or a specific time of day when you know the app will not be heavily used.
-   For more information, see [Environment triggers](../concepts/definitions/release/triggers.md?toc=/vsts/deploy-azure/toc.json)
+   For more information, see [Environment triggers](../release/triggers.md?toc=/vsts/deploy-azure/toc.json)
    in the Release Management documentation.
 
 ## Extend a release definition by adding environments
 
 In this section, you will add a new environment to the release definition. The two environments will deploy your app to the
 "QA" and the "Production" targets (in our example, two Azure App Services websites). This is a typical scenario where you deploy initially to a test or staging server, and then to a
-live or production server. Each [environment](../concepts/definitions/release/environments.md?toc=/vsts/deploy-azure/toc.json)
+live or production server. Each [environment](../release/environments.md?toc=/vsts/deploy-azure/toc.json)
 represents one deployment target, though that target could be a physical or virtual server,
 a groups of servers, or any other legitimate physical or virtual deployment target.
 
@@ -119,7 +119,7 @@ a groups of servers, or any other legitimate physical or virtual deployment targ
    Notice that you can specify deployment to start when a deployment to the previous environment is _partially_ successful.
    Usually, this means the deployment tasks were set to continue the deployment even if a specific non-critical task failed
    (the default is that all tasks must succeed). You're most likely to set this option if you create a pipeline containing
-   [fork and join deployments](../../pipelines/concepts/definitions/release/triggers.md?toc=/vsts/deploy-azure/toc.json)
+   [fork and join deployments](../../pipelines/release/triggers.md?toc=/vsts/deploy-azure/toc.json)
    that deploy to different environments in parallel.  
 
 1. Open the **Tasks** drop-down list and choose the **QA** environment.
@@ -160,7 +160,7 @@ you deploy to production. In this section, you will add an approval step to the 
 
    You can add as many approvers as you need, both individual accounts and account groups.
    It's also possible to set up post-deployment approvals by choosing the icon at the right side of the environment item in the pipeline diagram.
-   For more information, see [Approvals and gates overview](../../pipelines/concepts/definitions/release/approvals/index.md?toc=/vsts/deploy-azure/toc.json).
+   For more information, see [Approvals and gates overview](../../pipelines/release/approvals/index.md?toc=/vsts/deploy-azure/toc.json).
 
 1. Save the modified release definition.
 
@@ -247,7 +247,7 @@ from the release you created in the previous section.
    ![Viewing the deployed app in the production environment](_img/define-multistage-release-process/finished-app.png)
 
 If you are having problems with a deployment, you can get more information from the log files by
-[running the release in debug mode](../../pipelines/concepts/definitions/release/variables.md#debug-mode).
+[running the release in debug mode](../../pipelines/release/variables.md#debug-mode).
 
 ## Next step
 

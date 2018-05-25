@@ -91,8 +91,8 @@ Your VSTS account includes these free amounts:
   that you can use. You can also buy more private pipelines.
 
 For more information, see
-[Concurrent build and release pipelines in VSTS](../../concepts/licensing/concurrent-pipelines-ts.md)
-and [Concurrent release pipelines in TFS](../../concepts/licensing/concurrent-pipelines-tfs.md).
+[Concurrent build and release pipelines in VSTS](../../licensing/concurrent-pipelines-ts.md)
+and [Concurrent release pipelines in TFS](../../licensing/concurrent-pipelines-tfs.md).
 
 If you previously bought private agents in the Azure portal, they'll
 automatically roll into private pipelines. Similarly, any hosted agents
@@ -185,13 +185,13 @@ We're also announcing general availability of Release Management in VSTS. Also, 
 
 **Release Management users are free:** Your team members no longer need subscriptions to author definitions. VSTS users (with [basic access](https://www.visualstudio.com/products/visual-studio-team-services-feature-matrix-vs)) and users with a TFS Client Access License (CAL) can author releases for no additional charge. All types of users (including stakeholders) can approve releases for free.
 
-**No charge for private agents:** [Private agents](../../concepts/agents/agents.md) are now free. In VSTS, you used to have to license each private agent after the first. Now you can run deployments concurrently for no additional charge.
+**No charge for private agents:** [Private agents](../../agents/agents.md) are now free. In VSTS, you used to have to license each private agent after the first. Now you can run deployments concurrently for no additional charge.
 
 **Concurrent pipelines:** For each release process that you want to run concurrently, you need a concurrent pipeline. Some concurrent pipelines are included. If you need more, you can add more in a few ways.
 
-[Concurrent pipelines for your releases in Team Foundation Server](../../concepts/licensing/concurrent-pipelines-tfs.md)
+[Concurrent pipelines for your releases in Team Foundation Server](../../licensing/concurrent-pipelines-tfs.md)
 
-[Concurrent pipelines for your builds and releases in VSTS](../../concepts/licensing/concurrent-pipelines-ts.md)
+[Concurrent pipelines for your builds and releases in VSTS](../../licensing/concurrent-pipelines-ts.md)
 
 <a name="update-oct12-16"></a>
 ### October 12, 2016 Update (VSTS)
@@ -263,7 +263,7 @@ from VSTS, you can create an Azure Resource Manager
 endpoint without needing to run tedious PowerShell scripts
 or follow the steps in a blog.
 
-See [Azure Resource Manager service endpoint](../../concepts/library/service-endpoints.md#sep-azure-rm).
+See [Azure Resource Manager service endpoint](../../library/service-endpoints.md#sep-azure-rm).
 
 <a name="update-sep21-16"></a>
 ### September 21, 2016 Update (VSTS)
@@ -363,7 +363,7 @@ and build definitions.
 
 ![Task groups to encapsulate multiple tasks](_img/rm-archived/release-notes-23.png)
 
-For more details, see [Task groups](../../concepts/library/task-groups.md).
+For more details, see [Task groups](../../library/task-groups.md).
 
 <a name="jul28-createqueue"></a>
 **Create agent queues**
@@ -372,7 +372,7 @@ You can now create agent queues from within a project by selecting a
 pool that is not referenced by any other queue in the project,
 or create a queue with a new pool.
 
-For more details, see [Configure agent pools and queues](../../concepts/agents/pools-queues.md).
+For more details, see [Configure agent pools and queues](../../agents/pools-queues.md).
 
 <a name="jul28-azuredeploy"></a>
 **Easier Azure deployment**
@@ -385,7 +385,7 @@ Two new features make it easier to deploy applications to Azure:
   allows you to select an existing Azure subscription. This automatically
   creates a new Azure service principal that is assigned the **Contributor** role
   and so has access to all resources within the subscription. For more details, see
-  [Azure Resource Manager service endpoint](../../concepts/library/service-endpoints.md#sep-azure-rm).
+  [Azure Resource Manager service endpoint](../../library/service-endpoints.md#sep-azure-rm).
 
  ![Configuring a Service Principal Authentication based Azure service endpoint](_img/rm-archived/rel103-01.png)
 
@@ -393,7 +393,7 @@ Two new features make it easier to deploy applications to Azure:
   Azure Classic service endpoint to target a specific Azure cloud, including pre-defined
   national clouds such as Azure China cloud, Azure US Government cloud, and Azure German cloud.
   For more details, see
-  [Azure Classic service endpoint](../../concepts/library/service-endpoints.md#sep-azure-classic).
+  [Azure Classic service endpoint](../../library/service-endpoints.md#sep-azure-classic).
 
  ![Configuring an Azure Classic service endpoint to target a specific Azure cloud](_img/rm-archived/rel103-02.png)
 
@@ -438,13 +438,13 @@ Two new features make it easier to work with artifacts and artifact sources:
   name of the build definition, you can edit the source alias to reflect the name of the
   build definition.
 
- For more details, see [Artifact source alias](../../concepts/definitions/release/artifacts.md#source-alias).
+ For more details, see [Artifact source alias](../../release/artifacts.md#source-alias).
 
 * A number of variables of the format Build.\* (such as Build.BuildId and Build.BuildNumber)
   are exposed for use in task parameters. When multiple sources are associated with a release,
   these variables are now populated with values from the artifact source you specify as the
   primary source. For more details, see
-  [Artifact variables](../../concepts/definitions/release/variables.md#artifact-variables).
+  [Artifact variables](../../release/variables.md#artifact-variables).
 
 <a name="jul28-rollback"></a>
 **Rollback and redeploy earlier releases**
@@ -526,7 +526,7 @@ task as a number of minutes. The default is zero (infinite timeout).
 
 ![Setting the timeout for a task in a release definition](_img/rm-archived/release-notes-19.png)
 
-For more details, see [Out-of-the-box tasks](../../concepts/process/tasks.md#task-control-options)
+For more details, see [Out-of-the-box tasks](../../process/tasks.md#task-control-options)
 
 <a name="jun24-partsuccess"></a>
 **Trigger on partially successful deployments**
@@ -549,19 +549,19 @@ successful.
 
 ![Setting the option to trigger from a partially successful release](_img/rm-archived/release-notes-20b.png)
 
-For more details, see [Environment deployment triggers](../../concepts/definitions/release/triggers.md#env-triggers)
+For more details, see [Environment deployment triggers](../../release/triggers.md#env-triggers)
 
 <a name="jun24-github"></a>
 **Consume artifacts stored in GitHub directly**
 
 Sometimes you may want to consume artifacts stored in a version control system
 directly, without passing them through a build process, as described in
-**[this topic](../../concepts/definitions/release/artifacts.md#tfvcsource)**.
+**[this topic](../../release/artifacts.md#tfvcsource)**.
 You can now do the same if your code in stored in a GitHub repository.
 
 ![Linking code in a GutHub repository to a release definition](_img/rm-archived/release-notes-21.png)
 
-For more details, see [TFVC, Git, and GitHub sources](../../concepts/definitions/release/artifacts.md#tfvcsource)
+For more details, see [TFVC, Git, and GitHub sources](../../release/artifacts.md#tfvcsource)
 
 <a name="jun24-jenkins"></a>
 **Jenkins plug-in for Release Management**
@@ -574,7 +574,7 @@ add post-build steps right into Jenkins CI projects to create a new release.
 This, along with the ability for Release Management to understand and download
 Jenkins artifacts, provides great end-to-end integration between these two tools.
 
-For more details, see [Jenkins sources](../../concepts/definitions/release/artifacts.md#jenkinssource)
+For more details, see [Jenkins sources](../../release/artifacts.md#jenkinssource)
 
 <a name="jun24-attachments"></a>
 **Add attachments to release summaries**
@@ -639,7 +639,7 @@ builds as artifacts in Release Management. Install the
 extension from VisualStudio Marketplace to setup a TeamCity
 service endpoint. Then configure your release definitions
 to deploy artifacts produced by TeamCity builds.
-See [TeamCity artifact sources](../../concepts/definitions/release/artifacts.md#teamcitysource).
+See [TeamCity artifact sources](../../release/artifacts.md#teamcitysource).
 
 <a name="may23-hooks"></a>
 **Service hooks integration**
@@ -812,7 +812,7 @@ to an environment based on the status of multiple
 environments (_join deployments_). Now you can, as
 this video demonstrates.
 
-For more details, see [Parallel forked and joined deployments](../../concepts/definitions/release/triggers.md#parallel-forked-and-joined-deployments)
+For more details, see [Parallel forked and joined deployments](../../release/triggers.md#parallel-forked-and-joined-deployments)
 
 <a name="update-mar15-16"></a>
 ### Mar 15, 2016 Update (VSTS)
@@ -1040,7 +1040,7 @@ always be triggered manually.
 
 ![Configuring environment conditions](_img/rm-archived/release-notes-03.png)
 
-For more details, see [Environment deployment triggers](../../concepts/definitions/release/triggers.md#env-triggers)
+For more details, see [Environment deployment triggers](../../release/triggers.md#env-triggers)
 
 <a name="feb11-2"></a>
 **More control over queuing of deployments into the same environment**
@@ -1054,7 +1054,7 @@ process, or multiple releases may be queued up on a
 production environment awaiting approval after they
 have passed QA. Queuing policies allow you to deploy in
 parallel, deploy in sequence, or just deploy the latest one.
-See [Queuing policies](../../concepts/definitions/release/environments.md#queuing-policies)
+See [Queuing policies](../../release/environments.md#queuing-policies)
 
 ![Configuring queuing policies](_img/rm-archived/release-notes-04.png)
 
@@ -1085,7 +1085,7 @@ We added approval options that enable you to configure
 multiple approvers for an environment, and control
 whether these approvers can approve in parallel or in
 a specified order.
-See [Approvals and approvers](../../concepts/definitions/release/approvals/approvals.md).
+See [Approvals and approvers](../../release/approvals/approvals.md).
 
 ![Configuring approval policies](_img/rm-archived/release-notes-06.png)
 
@@ -1164,7 +1164,7 @@ Tie the output of the first task to the input list of machines in the second tas
 * **Integration with TFS on-premises builds**. Now you can start using
   Release Management service in VSTS, even when you have been using
   an on-premises TFS server for your builds. See
-  [On-premises TFS sources](../../concepts/definitions/release/artifacts.md#onpremtfssource)
+  [On-premises TFS sources](../../release/artifacts.md#onpremtfssource)
   for more details.
 
 * **IIS and SQL Database deployment tasks**. Deploy IIS web applications

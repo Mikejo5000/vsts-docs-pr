@@ -150,7 +150,7 @@
   - name: Map TFVC actions to Git
     href: concepts/mapping-my-tfvc-actions-to-git.md
   - name: Set up continuous integration
-    href: ../pipelines/concepts/definitions/build/triggers.md
+    href: ../pipelines/build/triggers.md
   - name: Work with tags
     href: how-to/git-tags.md
 - name: Reference

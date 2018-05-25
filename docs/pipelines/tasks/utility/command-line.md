@@ -58,7 +58,7 @@ None
 </tr>
 <tr>
 <td>Working folder</td>
-<td>Specify the working directory in which you want to run the command. If you leave it empty, the working directory is [$(Build.SourcesDirectory)](../../concepts/definitions/build/variables.md).</td>
+<td>Specify the working directory in which you want to run the command. If you leave it empty, the working directory is [$(Build.SourcesDirectory)](../../build/variables.md).</td>
 </tr>
 <tr>
 <td>Fail on standard error</td>

@@ -56,8 +56,8 @@ None
 | -------- | ----------- |
 | **Source** | Required. The source of the files to copy. Pre-defined system variables such as ``` $(Build.Repository.LocalPath)``` can be used. Names containing wildcards such as ```*.zip``` are not supported. |
 | **Azure Connection Type** | Required. Select the type of service endpoint used to define the connection to Azure. Choose **Azure Classic** or **Azure Resource Manager**. |
-| **Azure Classic Subscription** | Required if you select **Azure Classic** for the **Azure Connection Type** parameter. The name of an [Azure Classic service endpoint](../../concepts/library/service-endpoints.md#sep-azure-classic) configured for the subscription where the target Azure service, virtual machine, or storage account is located. |
-| **Azure RM Subscription** | Required if you select **Azure Resource Manager** for the **Azure Connection Type** parameter. The name of an [Azure Resource Manager service endpoint](../../concepts/library/service-endpoints.md#sep-azure-rm) configured for the subscription where the target Azure service, virtual machine, or storage account is located. See [Azure Resource Manager overview](https://azure.microsoft.com/en-in/documentation/articles/resource-group-overview/) for more details. |
+| **Azure Classic Subscription** | Required if you select **Azure Classic** for the **Azure Connection Type** parameter. The name of an [Azure Classic service endpoint](../../library/service-endpoints.md#sep-azure-classic) configured for the subscription where the target Azure service, virtual machine, or storage account is located. |
+| **Azure RM Subscription** | Required if you select **Azure Resource Manager** for the **Azure Connection Type** parameter. The name of an [Azure Resource Manager service endpoint](../../library/service-endpoints.md#sep-azure-rm) configured for the subscription where the target Azure service, virtual machine, or storage account is located. See [Azure Resource Manager overview](https://azure.microsoft.com/en-in/documentation/articles/resource-group-overview/) for more details. |
 | **Destination Type** | Required. The type of target destination for the files. Choose **Azure Blob** or **Azure VMs**. |
 | **Classic Storage Account** | Required if you select **Azure Classic** for the **Azure Connection Type** parameter. The name of an existing storage account within the Azure subscription. |
 | **RM Storage Account** | Required if you select **Azure Resource Manager** for the **Azure Connection Type** parameter. The name of an existing storage account within the Azure subscription. |
@@ -77,7 +77,7 @@ None
 | **Test Certificate** | Available if you select **Azure VMs** for the **Destination Type** parameter. WinRM requires a certificate for the HTTPS transfer when copying files from the intermediate storage blob into the Azure VMs. If you set use a self-signed certificate, set this option to prevent the process from validating the certificate with a trusted certificate authority (CA). |
 | **Output - Storage Container URI** | Optional. The name of a variable that will be updated with the URI of the storage container into which the files were copied. Use this variable as an input to subsequent task steps. |
 | **Output - Storage Container SAS Token** | Optional. The name of a variable that will be updated with the Storage Access Security (SAS) token of the storage container into which the files were copied. Use this variable as an input to subsequent task steps. By default, the SAS token expires after 4 hours. |
-| **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
+| **Control options** | See [Control options](../../process/tasks.md#controloptions) |
 
 ## Related tasks
 

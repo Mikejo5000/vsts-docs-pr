@@ -90,7 +90,7 @@ In each of the following sections we show the XAML user interface, and then prov
 |-|-|-|
 | Source Settings tab | On the **Repository** tab specify your mappings with Active paths as **Map** and Cloaked paths as **Cloak**. | On the **Tasks** tab, in left pane click **Get sources**. Specify your workspace mappings with Active paths as **Map** and Cloaked paths as **Cloak**. |
 
-The new build definition offers you some new options. The specific extra options you'll see depend on the version you're using of TFS or VSTS.  If you're using VSTS, first make sure to display **Advanced settings**. See [Build definition source repositories](../concepts/definitions/build/repository.md).
+The new build definition offers you some new options. The specific extra options you'll see depend on the version you're using of TFS or VSTS.  If you're using VSTS, first make sure to display **Advanced settings**. See [Build definition source repositories](../build/repository.md).
 
 #### Git
 
@@ -100,7 +100,7 @@ The new build definition offers you some new options. The specific extra options
 |-|-|-|
 | Source Settings tab | On the **Repository** tab specify the repository and default branch. | On the **Tasks** tab, in left pane click **Get sources**. Specify the repository and default branch. |
 
-The new build definition offers you some new options. The specific extra options you'll see depend on the version you're using of TFS or VSTS.  If you're using VSTS, first make sure to display **Advanced settings**. See [Build definition source repositories](../concepts/definitions/build/repository.md).
+The new build definition offers you some new options. The specific extra options you'll see depend on the version you're using of TFS or VSTS.  If you're using VSTS, first make sure to display **Advanced settings**. See [Build definition source repositories](../build/repository.md).
 
 ### Trigger tab
 
@@ -122,7 +122,7 @@ The new build definition offers you some new options. For example:
 
 * If your code is in Git, then you specify the branch filters directly on the **Triggers** tab. And you can add folder path filters to include or exclude certain sets of files from triggering a CI build.
 
-The specific extra options you'll see depend on the version you're using of TFS or VSTS. See [Build definition triggers](../concepts/definitions/build/triggers.md)
+The specific extra options you'll see depend on the version you're using of TFS or VSTS. See [Build definition triggers](../build/triggers.md)
 
 We don't yet support the **Build even if nothing has changed since the previous build** option.
 
@@ -133,13 +133,13 @@ We don't yet support the **Build even if nothing has changed since the previous 
 | XAML process parameter | TFS 2017 and newer equivalent | VSTS equivalent |
 |-|-|-|
 | Build controller | On the **General** tab, select the default agent queue. | On the **Options** tab, select the default agent queue. |
-| Staging location | On the **Tasks** tab, specify arguments to the Copy Files and Publish Build Artifacts tasks. See [Build artifacts](../concepts/definitions/build/artifacts.md). | On the **Tasks** tab, specify arguments to the Copy Files and Publish Build Artifacts tasks. See [Build artifacts](../concepts/definitions/build/artifacts.md). |
+| Staging location | On the **Tasks** tab, specify arguments to the Copy Files and Publish Build Artifacts tasks. See [Build artifacts](../build/artifacts.md). | On the **Tasks** tab, specify arguments to the Copy Files and Publish Build Artifacts tasks. See [Build artifacts](../build/artifacts.md). |
 
 The new build definition offers you some new options. For example:
 
-* You don't need a controller, and the new agents are easier to set up and maintain. See [Build and release agents](../concepts/agents/agents.md).
+* You don't need a controller, and the new agents are easier to set up and maintain. See [Build and release agents](../agents/agents.md).
 
-* You can exactly specify which sets of files you want to publish as build artifacts. See [Build artifacts](../concepts/definitions/build/artifacts.md).
+* You can exactly specify which sets of files you want to publish as build artifacts. See [Build artifacts](../build/artifacts.md).
 
 ### Process tab
 
@@ -153,7 +153,7 @@ The new build definition offers you some new options. For example:
 | Get version | You can't specify a changeset in the build definition, but you can specify one when you manually queue a build. | You can't specify a changeset in the build definition, but you can specify one when you manually queue a build. |
 | Label Sources | On the **Repository** tab, select an option from the **Label sources** menu. | **Tasks** tab, in left pane click **Get sources**. Select one of the **Tag sources** options. (We plan to change the name of this to **Label sources**.) |
 
-The new build definition offers you some new options. See [Build definition source repositories](../concepts/definitions/build/repository.md).
+The new build definition offers you some new options. See [Build definition source repositories](../build/repository.md).
 
 #### Git
 
@@ -164,7 +164,7 @@ The new build definition offers you some new options. See [Build definition sour
 | Clean repository | **Repository** tab, open **Clean** menu, select **true**. | On the **Tasks** tab, in left pane click **Get sources**. Show **Advanced settings**, and then select **Clean**. (We plan to change move this option out of advanced settings.) |
 | Checkout override | You can't specify a commit in the build definition, but you can specify one when you manually queue a build. | You can't specify a commit in the build definition, but you can specify one when you manually queue a build. |
 
-The new build definition offers you some new options. See [Build definition source repositories](../concepts/definitions/build/repository.md).
+The new build definition offers you some new options. See [Build definition source repositories](../build/repository.md).
 
 #### Build
 
@@ -177,7 +177,7 @@ On the **Build** tab (TFS 2017 and newer) or the **Tasks** tab (VSTS), after you
 | Projects | Solution |
 | Configurations | Platform, Configuration. See [Visual Studio Build: How do I build multiple configurations for multiple platforms?](../tasks/build/visual-studio-build.md#how-do-i-build-multiple-configurations-for-multiple-platforms) | 
 | Clean build | Clean | 
-| Output location | The Visual Studio Build task builds and outputs files in the same way you do it on your dev machine, in the local workspace. We give you full control of publishing artifacts out of the local workspace on the agent. See [Artifacts in Team Build](../concepts/definitions/build/artifacts.md). |
+| Output location | The Visual Studio Build task builds and outputs files in the same way you do it on your dev machine, in the local workspace. We give you full control of publishing artifacts out of the local workspace on the agent. See [Artifacts in Team Build](../build/artifacts.md). |
 | Advanced, MSBuild arguments | MSBuild Arguments | 
 | Advanced, MSBuild platform | Advanced, MSBuild Architecture |
 | Advanced, Perform code analysis | Use an MSBuild argument such as`/p:RunCodeAnalysis=true` |
@@ -213,16 +213,16 @@ See [Get started with continuous testing](../test/getting-started-with-continuou
 |-|-|-|
 | Maximum agent execution time | None | On the **Options** tab you can specify **Build job timeout in minutes**. |
 | Maximum agent reservation wait time | None | None |
-| Name filter, Tag comparison operator, Tags filter | A build process asserts demands that are matched with agent capabilities. See [Agent capabilities](../concepts/agents/agents.md#capabilities). | A build process asserts demands that are matched with agent capabilities. See [Agent capabilities](../concepts/agents/agents.md#capabilities). |
+| Name filter, Tag comparison operator, Tags filter | A build process asserts demands that are matched with agent capabilities. See [Agent capabilities](../agents/agents.md#capabilities). | A build process asserts demands that are matched with agent capabilities. See [Agent capabilities](../agents/agents.md#capabilities). |
 | Build number format | On the **General** tab, copy your build number format into the **Build number format** field. | On the **General** tab, copy your build number format into the **Build number format** field. |
 | Create work item on failure | On the **Options** tab, select this check box. | On the **Options** tab, enable this option. |
 | Update work items with build number | None | On the **Options** tab you can enable **Automatically link new work in this build**. | 
 
 The new build definition offers you some new options. See:
 
-* [Agent capabilities](../concepts/agents/agents.md#capabilities)
+* [Agent capabilities](../agents/agents.md#capabilities)
 
-* [Build number format](../concepts/definitions/build/options.md#build-number-format)
+* [Build number format](../build/options.md#build-number-format)
 
 ### Retention Policy tab
 
@@ -232,7 +232,7 @@ The new build definition offers you some new options. See:
 |-|-|
 | Retention Policy tab | On the **Retention** tab specify the policies you want to implement. | 
 
-The new build definition offers you some new options. See [Build and release retention policies](../concepts/policies/retention.md).
+The new build definition offers you some new options. See [Build and release retention policies](../policies/retention.md).
 
 ## Build and release different kinds of apps
 
@@ -258,9 +258,9 @@ The new Team Build is tightly integrated with Release Management. So it's easier
 
 * [CI/CD Hello world](ci-cd-part-1.md)
 
-* [Release definitions](../concepts/definitions/release/index.md)
+* [Release definitions](../release/index.md)
 
-* [Triggers](../concepts/definitions/release/triggers.md)
+* [Triggers](../release/triggers.md)
 
 A few examples include:
 
@@ -299,7 +299,7 @@ A major feature of the new build system is its emphasis on using scripts to cust
 ![inline powershell script](_img/migrate-from-xaml-builds/inline-powershell-script.png)
 _TFS 2017 or newer inline PowerShell script_
 
-For all these tasks we offer a set of built-in variables, and if necessary, you can define your own variables. See [Build variables](../concepts/definitions/build/variables.md).
+For all these tasks we offer a set of built-in variables, and if necessary, you can define your own variables. See [Build variables](../build/variables.md).
 
 ### Write a custom task
 
@@ -317,7 +317,7 @@ If you don't see a template for the kind of app you can start from an empty defi
 
 In XAML builds, if you change the template, then you also change the behavior of all definitions based on it. In the new build system, templates don't work this way. Instead, a template behaves as a traditional template. After you create the build definition, subsequent changes to the template have no effect on build definitions.
 
-If you want to create a reusable and automatically updated piece of logic, then [create a task group](../concepts/library/task-groups.md). You can then later modify the task group in one place and cause all the definitions that use it to automatically be changed.
+If you want to create a reusable and automatically updated piece of logic, then [create a task group](../library/task-groups.md). You can then later modify the task group in one place and cause all the definitions that use it to automatically be changed.
 
 ## Q&A
 
@@ -359,6 +359,6 @@ On VSTS you can specify one of four built-in choices to control when a task is r
 and(failed(), in(variables['Build.Reason'], 'IndividualCI', 'BatchedCI'), startsWith(variables['Build.SourceBranch'], 'refs/heads/features/'))
 ```
 
-See [Specify conditions for running a task](../concepts/process/conditions.md).
+See [Specify conditions for running a task](../process/conditions.md).
 
 <!-- ENDSECTION -->

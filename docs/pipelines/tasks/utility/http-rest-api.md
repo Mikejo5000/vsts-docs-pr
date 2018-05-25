@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2017'
 
 ## Demands
 
-Can be used in only an [agentless phase](../../concepts/process/server-phases.md) of a release definition.
+Can be used in only an [agentless phase](../../process/server-phases.md) of a release definition.
 
 ::: moniker range="vsts"
 
@@ -39,7 +39,7 @@ Can be used in only an [agentless phase](../../concepts/process/server-phases.md
 | **Url Suffix and parameters** | The string to append to the baseUrl from endpoint while making the HTTP call | 
 | **Completion Event** | Required. How the task reports completion. Can be **API response** (the default) - completion is when function returns success and success criteria evaluates to true, or **Callback** - the Azure function makes a callback to update the timeline record. |
 | **Success criteria** | Optional. How to parse the response body for success. |
-| **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
+| **Control options** | See [Control options](../../process/tasks.md#controloptions) |
 
 Succeeds if the API returns success and the response body parsing is successful, or when the API updates the timeline record with success.
 
@@ -49,6 +49,6 @@ pipeline and, optionally, wait for it to be completed.
 
 ![Configuring an Invoke REST API task](_img/invoke-rest-api-task.png)
 
-For more information about using this task, see [Approvals and gates overview](../../concepts/definitions/release/approvals/index.md).
+For more information about using this task, see [Approvals and gates overview](../../release/approvals/index.md).
 
 Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/InvokeRestApiV1).

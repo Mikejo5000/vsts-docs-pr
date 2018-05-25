@@ -220,7 +220,7 @@ a simple load test to validate the deployment.
    ![Viewing details of the load test run](_img/example-continuous-testing/example-continuous-testing-54.png)
 
    >For more details about release definitions, see
-   [Release Management in VSTS](../../pipelines/concepts/definitions/release/index.md).
+   [Release Management in VSTS](../../pipelines/release/index.md).
    For more details about load tests and the results, see 
    [Run URL-based load tests with VSTS](../../load-test/get-started-simple-cloud-load-test.md).
 

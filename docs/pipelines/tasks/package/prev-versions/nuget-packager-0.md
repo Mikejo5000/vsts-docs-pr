@@ -57,7 +57,7 @@ Specify .csproj files (for example, ```**\*.csproj```) for simple projects. In t
 <tr>
 <td>Use build number to version package</td>
 <td>
-Select if you want to use the build number to version your package. If you select this option, for the [definition options](../../../concepts/definitions/build/options.md), set the **build number format** to something like ```$(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)```
+Select if you want to use the build number to version your package. If you select this option, for the [definition options](../../../build/options.md), set the **build number format** to something like ```$(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)```
 <p>The build number format must be ```{some_characters}_0.0.0.0```. The characters and the underscore character are omitted from the output. The version number at the end must be a unique number in a format such as ```0.0.0.0``` that is higher than the last published number.</p>
 <p>The version number is passed to [nuget pack](https://docs.nuget.org/consume/command-line-reference#pack) with the ```-Version``` option.</p>
 <p>Versions are shown prominently on NuGet servers. For example they are listed on the Visual Studio Team Services feeds page and on the NuGet.org package page.</p>
@@ -66,7 +66,7 @@ Select if you want to use the build number to version your package. If you selec
 <tr>
 <td>Package Folder</td>
 <td>
-(Optional) Specify the folder where you want to put the packages. You can use a [variable](../../../concepts/definitions/build/variables.md) such as ```$(Build.StagingDirectory)\packages```
+(Optional) Specify the folder where you want to put the packages. You can use a [variable](../../../build/variables.md) such as ```$(Build.StagingDirectory)\packages```
 <p>If you leave it empty, the package will be created in the same directory that contains the .csproj or .nuspec file.</p>
 </td>
 </tr>

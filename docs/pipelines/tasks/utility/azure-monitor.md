@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2017'
 
 ![icon](_img/azure-monitor.png) &nbsp; Observe the configured Azure monitor rules for active alerts.
 
-Can be used in only an [agentless phase](../../concepts/process/server-phases.md) of a release definition.
+Can be used in only an [agentless phase](../../process/server-phases.md) of a release definition.
 
 ## Demands
 
@@ -39,10 +39,10 @@ None
 | **Resource type** | Required. Select the resource type in the selected group. |
 | **Resource name** | Required. Select the resources of the chosen types in the selected group. |
 | **Alert rules** | Required. Select from the currently configured alert rules to query for status. |
-| **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
+| **Control options** | See [Control options](../../process/tasks.md#controloptions) |
 
 Succeeds if none of the alert rules are activated at the time of sampling.
 
-For more information about using this task, see [Approvals and gates overview](../../concepts/definitions/release/approvals/index.md).
+For more information about using this task, see [Approvals and gates overview](../../release/approvals/index.md).
 
 Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureMonitor).

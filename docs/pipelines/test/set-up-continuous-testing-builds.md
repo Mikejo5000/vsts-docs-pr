@@ -58,9 +58,9 @@ For more details, see [Testing with unified agents and phases](test-with-unified
 
    > If you use the list of machines in more than one task, consider defining
    a variable that contains the list of machines. For example, a
-   [build or release definition variable](../../pipelines/concepts/definitions/release/variables.md)
+   [build or release definition variable](../../pipelines/release/variables.md)
    or a variable defined within a project-wide 
-   [variable group](../../pipelines/concepts/library/variable-groups.md).
+   [variable group](../../pipelines/library/variable-groups.md).
    Using a variable means that you can change the list of machines in one place
    and have the change apply to all the tasks that use the variable.
 

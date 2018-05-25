@@ -93,7 +93,7 @@ the default **Production** slot is used. After you deploy, you can swap an
 app to a different slot using the **Azure App Service Manage** task. See
 [Swap deployment slots](../../pipelines/apps/cd/howto-webdeploy-webapps.md#swapslots).
 
-You can use [task phases](../../pipelines/concepts/process/phases.md)
+You can use [task phases](../../pipelines/process/phases.md)
 and the [**Manual Intervention**](../../pipelines/tasks/utility/manual-intervention.md) task
 in your release definition to pause a deployment; for example, to examine test results
 after the load tests have run and before the app is swapped from staging to production.
@@ -228,9 +228,9 @@ the agent on the test machines must be running in interactive mode with auto-log
 not as a service, to allow the agent to launch a web browser. 
 If you are using a headless browser such as [PhantomJS](http://phantomjs.org/),
 the agent can be run as a service or in interactive mode. See 
-[Build and Release Agents](../../pipelines/concepts/agents/agents.md),
+[Build and Release Agents](../../pipelines/agents/agents.md),
 [Deploy an agent on Windows](../../pipelines/actions/agents/v2-windows.md),
-and [Agent pools and queues](../../pipelines/concepts/agents/pools-queues.md). 
+and [Agent pools and queues](../../pipelines/agents/pools-queues.md). 
 
 ### Q: Where can I find detailed documentation on how to run Selenium tests?
 
@@ -285,15 +285,15 @@ runs can still be triggered but releases will be queued for processing
 until agents are available.
 
 * You have sufficient concurrent pipelines to enable concurrent releases.
-See [Concurrent pipelines in VSTS](../../pipelines/concepts/licensing/concurrent-pipelines-ts.md) 
-or [Concurrent pipelines in TFS](../../pipelines/concepts/licensing/concurrent-pipelines-tfs.md) for more information. 
+See [Concurrent pipelines in VSTS](../../pipelines/licensing/concurrent-pipelines-ts.md) 
+or [Concurrent pipelines in TFS](../../pipelines/licensing/concurrent-pipelines-tfs.md) for more information. 
 
 * Testers do not run the same tests in parallel. Doing so may cause
 results to be overwritten depending on the order of execution.
 
 To enable multiple different test runs to execute in parallel, set the Release Management
 environment trigger option for
-[behavior when multiple releases are waiting to be deployed](../../pipelines/concepts/definitions/release/triggers.md#env-triggers)
+[behavior when multiple releases are waiting to be deployed](../../pipelines/release/triggers.md#env-triggers)
 as follows:
 
 * If your application supports tests running in parallel from different
@@ -317,7 +317,7 @@ from different sources, set this option to
 * I get an error that I don't have sufficient permission to trigger a release.
    - Configure **Create releases** and **Manage deployments** permissions for
      the user in the **Security** menu of the release definition. 
-     See [Release permissions](../../pipelines/concepts/policies/permissions.md#release-permissions).<p />
+     See [Release permissions](../../pipelines/policies/permissions.md#release-permissions).<p />
    
 * I get an error that no automated tests were found. 
    - Check the automation status of the selected tests. Do this in the work item

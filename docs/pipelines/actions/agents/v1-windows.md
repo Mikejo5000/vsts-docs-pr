@@ -38,7 +38,7 @@ Before you begin, make sure your agent machine is prepared with these prerequisi
 
 ## Download and configure the agent
 
-1. Make sure you're logged on the machine as an agent pool administrator. See [Agent pools](../../concepts/agents/pools-queues.md#security-tfs2015).
+1. Make sure you're logged on the machine as an agent pool administrator. See [Agent pools](../../agents/pools-queues.md#security-tfs2015).
 
 2. Navigate to the **Agent pools** tab: `http://{your_server}:8080/tfs/_admin/_AgentPool`
 
@@ -55,7 +55,7 @@ ConfigureAgent.cmd
 
 ### Choose interactive or service mode
 
-For guidance on whether to run the agent in interactive mode or as a service, see [Agents: Interactive vs. service](../../concepts/agents/agents.md#account).
+For guidance on whether to run the agent in interactive mode or as a service, see [Agents: Interactive vs. service](../../agents/agents.md#account).
 
 #### Run as a service
 

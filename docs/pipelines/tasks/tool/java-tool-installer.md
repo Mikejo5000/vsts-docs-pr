@@ -44,14 +44,14 @@ None
 | Common Virtual Path | Applicable when the JDK is located in Azure Blob storage. Specify the path to the JDK inside the Azure storage container. |
 | Destination directory | Specify the destination directory into which the JDK should be extracted. |
 | Clean destination directory | Select this option to clean the destination directory before the JDK is extracted into it. |
-| Control options | See [Control options](../../concepts/process/tasks.md#controloptions). |
+| Control options | See [Control options](../../process/tasks.md#controloptions). |
 
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->
 
 ### Where can I learn more about tool installers?
 
-For an explanation of tool installers and examples, see [Tool installers](../../concepts/process/tasks.md#tool-installers).
+For an explanation of tool installers and examples, see [Tool installers](../../process/tasks.md#tool-installers).
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 

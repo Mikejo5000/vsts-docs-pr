@@ -38,7 +38,7 @@ monikerRange: '>= tfs-2015'
 <td>Path</td>
 <td><p>Specify the path to the .bat or .cmd script you want to run. The path must be a fully qualified path or a valid path relative to the default working directory.</p>
 <p>
-In Team Foundation Build, this directory is [$(Build.SourcesDirectory)](../../concepts/definitions/build/variables.md).</p>
+In Team Foundation Build, this directory is [$(Build.SourcesDirectory)](../../build/variables.md).</p>
 </td>
 </tr>
 <tr>
@@ -108,7 +108,7 @@ On the Build tab of a build definition, add this step:
 
 [An A-Z Index of the Windows CMD  command line](http://ss64.com/nt/)
 
-[!INCLUDE [include](../../concepts/definitions/_shared/variable-set-in-script-qa.md)]
+[!INCLUDE [include](../../_shared/variable-set-in-script-qa.md)]
 
 [!INCLUDE [temp](../_shared/build-step-common-qa.md)]
 

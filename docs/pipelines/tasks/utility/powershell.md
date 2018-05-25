@@ -33,7 +33,7 @@ DotNetFramework
 
 | Argument | Description |
 | -------- | ----------- |
-| Script filename | Specify the path to the script to you want to run. The path must be a fully qualified path or a valid path relative to the default working directory. In Team Foundation Build, this directory is [$(Build.SourcesDirectory)](../../concepts/definitions/build/variables.md). |
+| Script filename | Specify the path to the script to you want to run. The path must be a fully qualified path or a valid path relative to the default working directory. In Team Foundation Build, this directory is [$(Build.SourcesDirectory)](../../build/variables.md). |
 | Arguments | Specify arguments to pass to the script. You can use ordinal or named parameters. |
 | Advanced - Working folder | Specify the working directory in which you want to run the script. If you leave it empty, the working directory is the folder where the script is located. |
 | [!INCLUDE [control-options-arguments-md](../_shared/control-options-arguments-md.md)] | |
@@ -160,7 +160,7 @@ Write-Error "$("the Write-Error PowerShell command reported that") $($env:ErrorM
 
 [PowerShell.org](http://powershell.org/)
 
-[!INCLUDE [include](../../concepts/definitions/_shared/variable-set-in-script-qa.md)]
+[!INCLUDE [include](../../_shared/variable-set-in-script-qa.md)]
 
 [!INCLUDE [temp](../_shared/build-step-common-qa.md)]
 

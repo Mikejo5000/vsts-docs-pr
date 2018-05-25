@@ -103,17 +103,17 @@ By default, secrets associated with your build definition are not made available
 
   * A security token with access to your GitHub repository
   * These items, if used by your build:
-    * [Service endpoint](../concepts/library/service-endpoints.md) credentials
-    * Files from the [Secure Files library](../concepts/library/secure-files.md)
-    * Build [variables](../concepts/definitions/build/variables.md#user-defined-variables) marked **secret**
+    * [Service endpoint](../library/service-endpoints.md) credentials
+    * Files from the [Secure Files library](../library/secure-files.md)
+    * Build [variables](../build/variables.md#user-defined-variables) marked **secret**
 
 If your build definition is configured with secrets, these builds will immediately fail. To bypass this precaution, enable the checkbox labeled **Make secrets available to builds of forks**. Be aware of this setting's impact on security as described below.
 
 A GitHub user can fork your repository, change it, and create a pull request to propose changes to your repository. Such a pull request could contain malicious code to run as part of your triggered build. For example, an ill-intentioned script or unit test change could leak secrets or compromise the agent machine performing the build. The following steps are recommended to mitigate this risk:
 
-1. Use a VSTS [hosted agent](../concepts/agents/hosted.md) to build pull requests from forks. Hosted agents are immediately deleted after they complete a build, so there is no lasting impact if they are compromised.
+1. Use a VSTS [hosted agent](../agents/hosted.md) to build pull requests from forks. Hosted agents are immediately deleted after they complete a build, so there is no lasting impact if they are compromised.
 
-1. If you must use a [private agent](../concepts/agents/agents.md#install), do not store secrets or perform other builds or releases on the same agent, unless your repository is private and you trust pull request creators. Otherwise, secrets could leak and the repository contents or secrets of other builds and releases could be revealed.
+1. If you must use a [private agent](../agents/agents.md#install), do not store secrets or perform other builds or releases on the same agent, unless your repository is private and you trust pull request creators. Otherwise, secrets could leak and the repository contents or secrets of other builds and releases could be revealed.
 
 1. If your repository is public, do not enable the checkbox labeled **Make secrets available to builds of forks**. Otherwise, secrets could leak during a build.
 
@@ -121,7 +121,7 @@ A GitHub user can fork your repository, change it, and create a pull request to 
 
 ### How do I use a personal access token to authorize the VSTS to GitHub connection?
 
-See this [article](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) for creating a GitHub personal access token. You can use the token in the VSTS **Get sources** task of your build or release definitions by creating a GitHub [service endpoint](../concepts/library/service-endpoints.md) and entering the token.
+See this [article](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) for creating a GitHub personal access token. You can use the token in the VSTS **Get sources** task of your build or release definitions by creating a GitHub [service endpoint](../library/service-endpoints.md) and entering the token.
 
 ## Next steps
 

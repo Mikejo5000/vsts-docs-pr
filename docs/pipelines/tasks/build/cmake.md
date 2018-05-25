@@ -43,7 +43,7 @@ cmake
 <td>
 <p>Working directory when CMake is run. The default value is `build`.</p>
 <p>If you specify a relative path, then it is relative to your repo. For example, if you specify `build`, the result is the same as if you specified `$(Build.SourcesDirectory)\build`.</p>
-<p>You can also specify a full path outside the repo, and you can use [variables](../../concepts/definitions/build/variables.md). For example: `$(Build.ArtifactStagingDirectory)\build`</p>
+<p>You can also specify a full path outside the repo, and you can use [variables](../../build/variables.md). For example: `$(Build.ArtifactStagingDirectory)\build`</p>
  <p>If the path you specify does not exist, CMAke creates it.</p>
 </td>
 </tr>
@@ -61,11 +61,11 @@ Arguments that you want to pass to CMake.
 
 ### How do I enable CMake for hosted agents?
 
-The [hosted agents](../../concepts/agents/hosted.md) have CMake installed, but you must manually add the [capability](../../concepts/agents/agents.md#capabilities) to use the CMake build step.
+The [hosted agents](../../agents/hosted.md) have CMake installed, but you must manually add the [capability](../../agents/agents.md#capabilities) to use the CMake build step.
 
 <ol>
 <li><p>Open the Agent Pools control panel tab:
-[!INCLUDE [agent-pools-tab](../../concepts/agents/_shared/agent-pools-tab.md)]
+[!INCLUDE [agent-pools-tab](../../agents/_shared/agent-pools-tab.md)]
 </li>
 
 <li>In the left column, click the name of the hosted pool that you are using. In the right column click **Capabilities**.</li>
@@ -78,14 +78,14 @@ The [hosted agents](../../concepts/agents/hosted.md) have CMake installed, but y
 ### How do I enable CMake for my on-premises agent?
 
 <ol>
-<li>[Deploy an agent](../../concepts/agents/agents.md#install).</li>
+<li>[Deploy an agent](../../agents/agents.md#install).</li>
 
 <li>[Install CMake](https://cmake.org/install/) and make sure to add it to the path of the user that the agent is running as on your agent machine.</li>
 
 
 <li><p>In your web browser, navigate to the **Agent pools** control panel tab:</p>
 
-[!INCLUDE [agent-pools](../../concepts/agents/_shared/agent-pools-tab.md)]
+[!INCLUDE [agent-pools](../../agents/_shared/agent-pools-tab.md)]
 
 </li>
 

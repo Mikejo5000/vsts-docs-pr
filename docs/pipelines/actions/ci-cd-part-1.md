@@ -46,7 +46,7 @@ Wanna try it?
 
 ## Get set up with VSTS
 
-> Do you already have access to a VSTS account and to a team project that has a Git repo? And do you already have [permissions to create builds](../concepts/policies/permissions.md)? If so, then you can [skip to the next section](#add-script). If you're not sure, it takes just a moment to create a new account and there's no charge.
+> Do you already have access to a VSTS account and to a team project that has a Git repo? And do you already have [permissions to create builds](../policies/permissions.md)? If so, then you can [skip to the next section](#add-script). If you're not sure, it takes just a moment to create a new account and there's no charge.
 
 1. [Create a new account in VSTS](http://go.microsoft.com/fwlink/?LinkId=307137).
 
@@ -66,7 +66,7 @@ Wanna try it?
 
 ## Get set up with TFS
 
-> Do you already have access to TFS and to a team project? And do you already have [permissions to create builds](../concepts/policies/permissions.md)? If so, then you can [skip to the next section](#add-script). If you're not sure, it takes just a moment to set up TFS and create a project.
+> Do you already have access to TFS and to a team project? And do you already have [permissions to create builds](../policies/permissions.md)? If so, then you can [skip to the next section](#add-script). If you're not sure, it takes just a moment to set up TFS and create a project.
 
 1. [Get started with TFS](https://docs.microsoft.com/vsts/tfs-server/install/single-server).
 
@@ -263,7 +263,7 @@ drop
 
 > Artifacts are the files that you want your build to produce. Artifacts can be nearly anything your team needs to test or deploy your app. For example, you've got a .DLL and .EXE executable files and .PDB symbols file of a C# or C++ .NET Windows app.
 >
-> To enable you to produce artifacts, we provide tools such as copying with pattern matching, and a staging directory in which you can gather your artifacts before publishing them. See [Artifacts in Team Build](../concepts/definitions/build/artifacts.md).
+> To enable you to produce artifacts, we provide tools such as copying with pattern matching, and a staging directory in which you can gather your artifacts before publishing them. See [Artifacts in Team Build](../build/artifacts.md).
 
 ## Enable continuous integration (CI)
 
@@ -271,7 +271,7 @@ drop
 
 1. Enable **Continuous integration**.
 
->  A continuous integration trigger on a build definition indicates that the system should automatically queue a new build whenever a code change is committed. You can make the trigger more general or more specific, and also schedule your build (for example, on a nightly basis). See [Build triggers](../concepts/definitions/build/triggers.md).
+>  A continuous integration trigger on a build definition indicates that the system should automatically queue a new build whenever a code change is committed. You can make the trigger more general or more specific, and also schedule your build (for example, on a nightly basis). See [Build triggers](../build/triggers.md).
 
 ## Save and queue the build
 
@@ -375,7 +375,7 @@ Write-Host Trigger: $trigger
 
  ![build summary powershell script log](_img/ci-cd/part-1/build-summary-powershell-script-log.png)
 
-> We just introduced the concept of build variables in these steps. We printed the value of a variable that is automatically predefined and initialized by the system. You can also define custom variables and use them either in arguments to your tasks, or as environment variables within your scripts. To learn more about variables, see [Build variables](../concepts/definitions/build/variables.md).
+> We just introduced the concept of build variables in these steps. We printed the value of a variable that is automatically predefined and initialized by the system. You can also define custom variables and use them either in arguments to your tasks, or as environment variables within your scripts. To learn more about variables, see [Build variables](../build/variables.md).
 
 ## Create a release definition
 
@@ -471,7 +471,7 @@ Define the process for running the script in two environments.
 
 > A release definition is a collection of environments to which the application build artifacts are deployed. It also defines the actual deployment process for each environment, as well as how the artifacts are promoted from one environment to another.
 >
-> Also, notice that we used some variables in our script arguments. In this case, we used [release variables](../concepts/definitions/release/variables.md) instead of the build variables we used for the build definition.
+> Also, notice that we used some variables in our script arguments. In this case, we used [release variables](../release/variables.md) instead of the build variables we used for the build definition.
 
 ## Deploy a release
 
@@ -568,7 +568,7 @@ Write-Host "Now that you've got CI/CD, you can automatically deploy your app eve
  ::: moniker-end
 
 > In many cases, you probably would want to edit the release process so that the production deployment happens
-  only after some testing and approvals are in place. See [Approvals and gates overview](../concepts/definitions/release/approvals/index.md).
+  only after some testing and approvals are in place. See [Approvals and gates overview](../release/approvals/index.md).
 
 ## Put CI/CD to work for you
 
@@ -657,15 +657,15 @@ Or, if you decide to discard the draft, you can delete it from the **All Definit
 
 <h3 id="queueabuild">What else can I do when I queue a build?</h3>
 
-You can queue builds [automatically](../concepts/definitions/build/triggers.md) or manually.
+You can queue builds [automatically](../build/triggers.md) or manually.
 
 When you manually queue a build, you can, for a single run of the build:
 
-* Specify the [queue](../concepts/agents/pools-queues.md) into which the build goes.
+* Specify the [queue](../agents/pools-queues.md) into which the build goes.
 
-* Add and modify some [variables](../concepts/definitions/build/variables.md).
+* Add and modify some [variables](../build/variables.md).
 
-* Add [demands](../concepts/definitions/build/options.md#demands).
+* Add [demands](../build/options.md#demands).
 
 * In a Git repository
 
@@ -677,25 +677,25 @@ When you manually queue a build, you can, for a single run of the build:
 
  - Specify the source version as a [label](https://msdn.microsoft.com/en-us/library/ms181439.aspx) or [changeset](https://msdn.microsoft.com/en-us/library/ms181408.aspx).
 
- - Run a private build of a [shelveset](https://msdn.microsoft.com/en-us/library/ms181403.aspx). (You can use this option on either a [hosted agent](../concepts/agents/hosted.md) or a [private agent](../concepts/agents/agents.md).)
+ - Run a private build of a [shelveset](https://msdn.microsoft.com/en-us/library/ms181403.aspx). (You can use this option on either a [hosted agent](../agents/hosted.md) or a [private agent](../agents/agents.md).)
 
 ### Where can I learn more about build definition settings?
 
 To learn more about build definition settings, see:
 
-* [Getting sources](../concepts/definitions/build/repository.md)
+* [Getting sources](../build/repository.md)
 
 * [Tasks](../tasks/index.md)
 
-* [Variables](../concepts/definitions/build/variables.md)
+* [Variables](../build/variables.md)
 
-* [Triggers](../concepts/definitions/build/triggers.md)
+* [Triggers](../build/triggers.md)
 
-* [Options](../concepts/definitions/build/options.md)
+* [Options](../build/options.md)
 
-* [Retention](../concepts/policies/retention.md)
+* [Retention](../policies/retention.md)
 
-* [History](../concepts/definitions/build/history.md)
+* [History](../build/history.md)
 
 ### How do I programmatically create a build definition?
 

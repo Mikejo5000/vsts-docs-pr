@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2018'
 
 ![](../build/_img/xcode.png) Install an Apple certificate required to build on a macOS agent
 
-You can use this task to install an Apple certificate that is stored as a [secure file](../../concepts/library/secure-files.md) on the server. 
+You can use this task to install an Apple certificate that is stored as a [secure file](../../library/secure-files.md) on the server. 
 
 ## Demands
 

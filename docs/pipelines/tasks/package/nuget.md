@@ -73,7 +73,7 @@ None
             <ul>
                 <li>Select this option to use feeds specified in a [NuGet.config](http://docs.nuget.org/Consume/NuGet-Config-File)
                     file you've checked into source control.</li>
-                <li>Credentials for feeds outside this account/collection can be used to inject credentials you've provided as a [NuGet service endpoint](../../concepts/library/service-endpoints.md#sep-nuget) into your NuGet.config as the build runs.</li>
+                <li>Credentials for feeds outside this account/collection can be used to inject credentials you've provided as a [NuGet service endpoint](../../library/service-endpoints.md#sep-nuget) into your NuGet.config as the build runs.</li>
             </ul>
         </td>
     </tr>
@@ -188,7 +188,7 @@ None
     <tr>
         <td>Package folder</td>
         <td>
-            (Optional) Specify the folder where you want to put the packages. You can use a [variable](../../concepts/definitions/build/variables.md) such as ```$(Build.ArtifactStagingDirectory)``` If you leave it empty, the package will be created in the root of your source tree.
+            (Optional) Specify the folder where you want to put the packages. You can use a [variable](../../build/variables.md) such as ```$(Build.ArtifactStagingDirectory)``` If you leave it empty, the package will be created in the root of your source tree.
         </td>
     </tr>
     <tr>
@@ -244,7 +244,7 @@ None
                 <li>Default value: ```$(Build.ArtifactStagingDirectory)/*.nupkg```</li>
                 <li>To publish a single package, click the <strong>...</strong> button and select the file.</li>
                 <li>Use [file matching patterns](../file-matching-patterns.md) to publish multiple packages. Note that these patterns were updated in version 2 of the NuGet task; if you have a pattern that contains `-:`, use `!` instead.</li>
-                <li>Use [variables](../../concepts/definitions/build/variables.md) to specify directories. For example, if you specified ```$(Build.ArtifactStagingDirectory)\``` as the **package folder** in the pack step above, you could specify ```$(Build.ArtifactStagingDirectory)\**\*.nupkg``` here.</li>
+                <li>Use [variables](../../build/variables.md) to specify directories. For example, if you specified ```$(Build.ArtifactStagingDirectory)\``` as the **package folder** in the pack step above, you could specify ```$(Build.ArtifactStagingDirectory)\**\*.nupkg``` here.</li>
             </ul>
         </td>
     </tr>
@@ -256,7 +256,7 @@ None
                     <ul><li>"Allow duplicates to be skipped" allows you to continually publish a set of packages and only change the version number of the subset of packages that changed. It allows the task to report success even if some of your packages are rejected with 409 Conflict errors. <br />This option is currently only available on VSTS.
                     </li></ul>
                 </li>
-                <li>**External NuGet server (including other accounts/collections)** publishes to an external server such as [NuGet](https://www.nuget.org/), [MyGet](http://www.myget.org/), or a Package Management feed in another VSTS account or TFS collection. After you select this option, you create and select a [NuGet service endpoint](../../concepts/library/service-endpoints.md#sep-nuget).
+                <li>**External NuGet server (including other accounts/collections)** publishes to an external server such as [NuGet](https://www.nuget.org/), [MyGet](http://www.myget.org/), or a Package Management feed in another VSTS account or TFS collection. After you select this option, you create and select a [NuGet service endpoint](../../library/service-endpoints.md#sep-nuget).
                 </li>
             </ul>
         </td>
@@ -329,13 +329,13 @@ You want to package and publish some projects in a C# class library to your VSTS
 Make sure your AssemblyInfo.cs files contain the information you want shown in your packages. For example, ```AssemblyCompanyAttribute``` will be shown as the author, and ```AssemblyDescriptionAttribute``` will be shown as the description.
 
 
-#### [Variables](../../concepts/definitions/build/variables.md) tab
+#### [Variables](../../build/variables.md) tab
 | Name | Value | 
 |---|---|
 |```$(BuildConfiguration)``` | ```release```|
 |```$(BuildPlatform)``` | ```any cpu```|
 
-#### [Options](../../concepts/definitions/build/options.md)
+#### [Options](../../build/options.md)
 | Setting | Value | 
 |---|---|
 | Build number format | ```$(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)```|
@@ -410,7 +410,7 @@ Make sure your AssemblyInfo.cs files contain the information you want shown in y
                 <li>Command: push</li>
                 <li>Path to NuGet package(s) to publish: ```$(Build.ArtifactStagingDirectory)```</li>
                 <li>Target feed location: External NuGet server</li>
-                <li>NuGet server: Create a new [NuGet service endpoint](../../concepts/library/service-endpoints.md#sep-nuget) with your
+                <li>NuGet server: Create a new [NuGet service endpoint](../../library/service-endpoints.md#sep-nuget) with your
                     NuGet.org ApiKey and select it here</li>
             </ul>
         </td>

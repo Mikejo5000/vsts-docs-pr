@@ -85,7 +85,7 @@ Relative path to a PKCS12-formatted .p12 certificate file that contains a signin
 <td>P12 Password</td>
 <td>
 Password to the .p12 file.
-<blockquote><strong>Important: </strong> Use a [secret variable](../../concepts/definitions/build/variables.md) to avoid exposing this value.</blockquote>
+<blockquote><strong>Important: </strong> Use a [secret variable](../../build/variables.md) to avoid exposing this value.</blockquote>
 </td>
 </tr>
 <tr>

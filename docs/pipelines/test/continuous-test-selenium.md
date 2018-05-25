@@ -178,7 +178,7 @@ You can deploy and test your app using either the Hosted agent in Azure, or a pr
   <p />
   
 * When using a **private agent** that you deploy on your target servers, agents must be configured to run interactively with auto-logon enabled.
-  See [Build and Release Agents](../concepts/agents/agents.md#account). 
+  See [Build and Release Agents](../agents/agents.md#account). 
 
 <a name="include-test"></a>
 ## Include the test in a CD release

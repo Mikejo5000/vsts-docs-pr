@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2017'
 To build and deploy Windows, Azure, and other Visual Studio solutions you'll need at least one Windows agent. Windows agents can also build Java and Android apps.
 
 > Before you begin:
-> * If your code is in [VSTS](https://www.visualstudio.com/products/visual-studio-team-services-vs) and a [hosted agent](../../concepts/agents/hosted.md) meets your needs, you can skip setting up a private Windows agent.
+> * If your code is in [VSTS](https://www.visualstudio.com/products/visual-studio-team-services-vs) and a [hosted agent](../../agents/hosted.md) meets your needs, you can skip setting up a private Windows agent.
 > * If your code is in an on-premises Team Foundation Server (TFS) 2015 server, see [Deploy an agent on Windows for on-premises TFS 2015](v1-windows.md).
 > *  Otherwise, you've come to the right place to set up an agent on Windows. Continue to the next section.
 
@@ -42,7 +42,7 @@ If you're building from a Subversion repo, you must install the Subversion clien
 <ol>
 <li>Log on to the machine using the account for which you've prepared permissions as explained above.</li>
 <li>In your web browser, sign on to VSTS or TFS, and navigate to the **Agent pools** tab:
-[!INCLUDE [include](../../concepts/agents/_shared/agent-pools-tab.md)]
+[!INCLUDE [include](../../agents/_shared/agent-pools-tab.md)]
 </li>
 
 <li>Click **Download agent**.</li>
@@ -93,13 +93,13 @@ When you configure your agent to connect to TFS, you've got the following option
 * **PAT** Supported only on VSTS and TFS 2017 and newer. After you choose PAT, paste the [PAT token you created](#permissions) into the command prompt window. Use a personal access token (PAT) if your TFS instance and the agent machine are not in a trusted domain. PAT authentication is handled by your TFS instance instead of the domain controller.
 
 > [!NOTE]
-> When using PAT as the authentication method, the PAT token is used only for the initial configuration of the agent. Learn more at [Communication with VSTS or TFS](../../concepts/agents/agents.md#communication).
+> When using PAT as the authentication method, the PAT token is used only for the initial configuration of the agent. Learn more at [Communication with VSTS or TFS](../../agents/agents.md#communication).
 
 ::: moniker-end
 
 ## Choose interactive or service mode
 
-For guidance on whether to run the agent in interactive mode or as a service, see [Agents: Interactive vs. service](../../concepts/agents/agents.md#account).
+For guidance on whether to run the agent in interactive mode or as a service, see [Agents: Interactive vs. service](../../agents/agents.md#account).
 
  If you configured the agent to run interactively, to run it:
 

@@ -20,7 +20,7 @@ monikerRange: 'vsts'
 
 ## Demands
 
-Can be used in only an [agentless phase](../../concepts/process/server-phases.md) of a release definition.
+Can be used in only an [agentless phase](../../process/server-phases.md) of a release definition.
 
 ::: moniker range="vsts"
 
@@ -34,7 +34,7 @@ Can be used in only an [agentless phase](../../concepts/process/server-phases.md
 | --- | --- |
 | **Display name** | Required. The name to display for this task. |
 | **Delay Time (minutes)** | Required. The number of minutes to delay execution. |
-| **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
+| **Control options** | See [Control options](../../process/tasks.md#controloptions) |
 
 Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/Delay). 
 

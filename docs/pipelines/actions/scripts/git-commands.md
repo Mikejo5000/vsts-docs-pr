@@ -19,7 +19,7 @@ monikerRange: '>= tfs-2015'
 
 For some workflows you need your build process to run Git commands. For example, after a CI build on a feature branch is done, the team might want to merge the branch to master.  
 
-Git.exe is available on [hosted agents](../../concepts/agents/hosted.md) and on [on-premises agents](../../concepts/agents/agents.md).
+Git.exe is available on [hosted agents](../../agents/hosted.md) and on [on-premises agents](../../agents/agents.md).
 
 
 <a name="enable"></a>
@@ -63,13 +63,13 @@ When you're done granting the permissions, make sure to click **Save changes**.
 
 ### Enable your build definition to run Git.exe
 
-On the [variables tab](../../concepts/definitions/build/variables.md) set this variable:
+On the [variables tab](../../build/variables.md) set this variable:
 
 | Name | Value |
 |---|---|
 | ```system.prefergit``` | ```true``` |
 
-On the [options tab](../../concepts/definitions/build/options.md) select **Allow scripts to access OAuth token**.
+On the [options tab](../../build/options.md) select **Allow scripts to access OAuth token**.
 
 ## Make sure to clean up the local repo
 
@@ -80,9 +80,9 @@ Certain kinds of changes to the local repository are not automatically cleaned u
 
 If you run into problems using an on-premises agent, to make sure the repo is clean:
 
-* On the [repository tab](../../concepts/definitions/build/repository.md) set **Clean** to true.
+* On the [repository tab](../../build/repository.md) set **Clean** to true.
 
-* On the [variables tab](../../concepts/definitions/build/variables.md) create or modify the ```Build.Clean``` variable and set it to ```source```
+* On the [variables tab](../../build/variables.md) create or modify the ```Build.Clean``` variable and set it to ```source```
 
 ## Examples
 
@@ -103,7 +103,7 @@ You want a CI build to merge to master if the build succeeds.
 
 Make sure to follow the above steps to [enable Git.exe](#enable).
 
-On the [Triggers tab](../../concepts/definitions/build/triggers.md) select **Continuous integration (CI)** and include the branches you want to build.
+On the [Triggers tab](../../build/triggers.md) select **Continuous integration (CI)** and include the branches you want to build.
 
 Create ```merge.bat``` at the root of your repo:
 

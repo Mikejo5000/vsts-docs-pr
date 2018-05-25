@@ -36,7 +36,7 @@ This ensures that you have the release definition, build artifacts, and websites
 You can create and remove deployment groups dynamically if you prefer by using
 the [Azure Resource Group Deployment task](https://aka.ms/argtaskreadme)
 to install the agent on the machines in a deployment group using ARM templates.
-See [Provision deployment group agents](../../concepts/definitions/release/deployment-groups/howto-provision-deployment-group-agents.md).  
+See [Provision deployment group agents](../../release/deployment-groups/howto-provision-deployment-group-agents.md).  
 
 <a name="envirconfig"></a>
 ## Apply environment-specific configurations
@@ -73,7 +73,7 @@ To deploy a database with your app:
 
 1. Add two machine group phases to environments in the release definition, and a task in each phase as follows:
 
-   **First [Run on deployment group phase](../../concepts/process/phases.md)** for configuration of web servers.
+   **First [Run on deployment group phase](../../process/phases.md)** for configuration of web servers.
    
    - **Deployment group**: Select the deployment group you created in the [previous example](deploy-webdeploy-iis-deploygroups.md).
    
@@ -81,7 +81,7 @@ To deploy a database with your app:
    
    Then add an **IIS Web App Deploy** task to this phase.
    
-   **Second [Run on deployment group phase](../../concepts/process/phases.md)** for configuration of database servers.
+   **Second [Run on deployment group phase](../../process/phases.md)** for configuration of database servers.
    
    - **Deployment group**: Select the deployment group you created in the [previous example](deploy-webdeploy-iis-deploygroups.md).
    

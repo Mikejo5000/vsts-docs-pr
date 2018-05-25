@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2015'
 To build or deploy you'll need at least one agent. A Linux agent can build and deploy different kinds of apps, including Java and Android apps. We support Ubuntu, Red Hat, and CentOS.
 
 > Before you begin:
-> * If your build and release definitions are in [VSTS](https://www.visualstudio.com/products/visual-studio-team-services-vs) and a [hosted agent](../../concepts/agents/hosted.md) meets your needs, you can skip setting up a private Linux agent.
+> * If your build and release definitions are in [VSTS](https://www.visualstudio.com/products/visual-studio-team-services-vs) and a [hosted agent](../../agents/hosted.md) meets your needs, you can skip setting up a private Linux agent.
 > *  Otherwise, you've come to the right place to set up an agent on Linux. Continue to the next section.
 
 [!INCLUDE [include](_shared/concepts.md)]
@@ -63,7 +63,7 @@ If you're building from a Subversion repo, you must install the Subversion clien
 <ol>
 <li>Log on to the machine using the account for which you've prepared permissions as explained above.</li>
 <li>In your web browser, sign on to VSTS or TFS, and navigate to the **Agent pools** tab:
-[!INCLUDE [include](../../concepts/agents/_shared/agent-pools-tab.md)]
+[!INCLUDE [include](../../agents/_shared/agent-pools-tab.md)]
 </li>
 
 <li>Click **Download agent**.</li>
@@ -118,7 +118,7 @@ TFS 2015: `http://{your_server}:8080/tfs`
 
 ## Run interactively
 
-For guidance on whether to run the agent in interactive mode or as a service, see [Agents: Interactive vs. service](../../concepts/agents/agents.md#account).
+For guidance on whether to run the agent in interactive mode or as a service, see [Agents: Interactive vs. service](../../agents/agents.md#account).
 
 To run the agent interactively:
 
