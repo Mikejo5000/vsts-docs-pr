@@ -1089,7 +1089,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p>Start from a build template and customize your build from there. Build for [Windows](../pipelines/apps/windows/dot-net.md), [iOS](../pipelines/apps/mobile/xcode-ios.md), Android, Java (Ant, Maven, or Gradle), or Linux using the same domain-specific languages you use every day on your dev machine. [Build Xamarin apps](../pipelines/apps/mobile/xamarin.md) for both iOS and Android and run tests on the Xamarin Test Cloud as part of the build.</p>
 
 <p><b>Customize build process using scripts</b></p>
-<p>[Use a script](../pipelines/actions/scripts/powershell.md) to add your team's business logic to your build process.</p>
+<p>[Use a script](../pipelines/scripts/powershell.md) to add your team's business logic to your build process.</p>
 
 
 <p><b>Build agents and agent pools </b></p>

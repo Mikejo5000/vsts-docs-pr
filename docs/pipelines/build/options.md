@@ -136,7 +136,7 @@ You can also select if you want to assign the work item to the requestor. For ex
 
 Select this check box if you want to enable your script to use the build process OAuth token.
 
-For an example, see [Use a script to customize your build process](../actions/scripts/powershell.md).
+For an example, see [Use a script to customize your build process](../scripts/powershell.md).
 
 
 ## Default agent queue

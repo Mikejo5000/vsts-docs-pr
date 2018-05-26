@@ -978,7 +978,7 @@
         },
         {
             "source_path": "docs/build-release/actions/scripts/index.md",
-            "redirect_url": "/vsts/pipelines/actions/scripts/powershell",
+            "redirect_url": "/vsts/pipelines/scripts/powershell",
             "redirect_document_id": false
         },
         {

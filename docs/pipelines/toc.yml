@@ -214,9 +214,9 @@
     - name: SQL Server Database
       href: apps/aspnet/build-aspnet-dacpac.md
     - name: Run a PowerShell script
-      href: actions/scripts/powershell.md
+      href: scripts/powershell.md
     - name: Run Git commands
-      href: actions/scripts/git-commands.md
+      href: scripts/git-commands.md
     - name: Sign your mobile app
       href: apps/mobile/app-signing.md
   - name: Deploy to more targets

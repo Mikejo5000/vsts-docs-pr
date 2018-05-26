@@ -31,7 +31,7 @@ Variables give you a convenient way to get key bits of data into various parts o
 | Apply a version control label during the build process | Yes | Yes | No | `$(Build.DefinitionName)` | [Repository tab](repository.md) (Git and Team Foundation version control **Label format**) |
 | Customize the build number | Yes | Yes | No  | `$(Build.DefinitionName)` | [Build number format options](options.md) |
 | Environment variable in Windows batch scripts| Yes | Yes | Yes | `%BUILD_DEFINITIONNAME%` | [Batch script ](../tasks/utility/batch-script.md#example) |
-| Environment variable in PowerShell scripts | Yes | Yes | Yes | `$env:BUILD_DEFINITIONNAME` | [PowerShell script](../actions/scripts/powershell.md) |
+| Environment variable in PowerShell scripts | Yes | Yes | Yes | `$env:BUILD_DEFINITIONNAME` | [PowerShell script](../scripts/powershell.md) |
 | Environment variable in Shell scripts | Yes | Yes | Yes | `$BUILD_DEFINITIONNAME` | [Shell script](../tasks/utility/shell-script.md#example) |
 
 
@@ -638,7 +638,7 @@ Environment variable: SYSTEM_ACCESSTOKEN
 
 Scope: Agent
 
-[Use the OAuth token to access the REST API](../actions/scripts/powershell.md#oauth).
+[Use the OAuth token to access the REST API](../scripts/powershell.md#oauth).
 
 ### System.CollectionId
 
