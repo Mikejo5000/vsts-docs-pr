@@ -112,9 +112,9 @@ will see the deployment group you added and you can assign project-specific mach
 ## Related topics
 
 * [Run on machine group phase](../../process/deployment-group-phases.md)
-* [Deploy an agent on Windows](../../actions/agents/v2-windows.md)
-* [Deploy an agent on macOS](../../actions/agents/v2-osx.md)
-* [Deploy an agent on Linux](../../actions/agents/v2-linux.md)
+* [Deploy an agent on Windows](../../agents/v2-windows.md)
+* [Deploy an agent on macOS](../../agents/v2-osx.md)
+* [Deploy an agent on Linux](../../agents/v2-linux.md)
 
 [!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]
 

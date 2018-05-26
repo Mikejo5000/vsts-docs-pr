@@ -27,7 +27,7 @@ Xamarin enables you to develop a single solution and deploy it to Android, iOS, 
 
 * You will build the sample app for Android and iOS using two build definitions in this quickstart. If you use VSTS, you can use a hosted agent for both. If you use TFS, you will need a private agent to build Xamarin.Android and Xamarin.iOS. Xamarin.iOS requires an agent running on macOS. Set up a private agent and [install Xamarin](https://www.xamarin.com/download) on the agent machine. The Xamarin version on your development machine and build agent machine must be at least 4.0.3 for Windows and 5.10.3 for macOS.
 
- |Build | [Hosted agents](../../agents/hosted.md) | [On-premises Windows agent](../../actions/agents/v2-windows.md) | On-premises [macOS](../../actions/agents/v2-osx.md) or [Linux](../../actions/agents/v2-linux.md) agent |
+ |Build | [Hosted agents](../../agents/hosted.md) | [On-premises Windows agent](../../agents/v2-windows.md) | On-premises [macOS](../../agents/v2-osx.md) or [Linux](../../agents/v2-linux.md) agent |
  |:---:|:---:|:---:|:---:|
  | Xamarin.Android | Yes | Yes (with Xamarin installed) | Yes (with Xamarin installed) |
  | Xamarin.iOS | Yes | No | Yes (with Xamarin installed) |
@@ -85,7 +85,7 @@ You need to create two build definitions - one for Xamarin.Android and one for X
 
  * **VSTS:** Select _Hosted VS2017_. This hosted pool of agents has the software needed to build your app.
 
- * **TFS:** Select a queue that includes a [macOS](../../actions/agents/v2-osx.md) or [Windows](../../actions/agents/v2-windows.md) build agent.
+ * **TFS:** Select a queue that includes a [macOS](../../agents/v2-osx.md) or [Windows](../../agents/v2-windows.md) build agent.
 
 1. Click **Get sources** and then:
 

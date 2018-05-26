@@ -46,7 +46,7 @@ For information about agents and pipelines, see:
 
 1. Choose **Copy the script to clipboard**.
 
-1. Log onto each target machine in turn using the account with the [appropriate permissions](../../actions/agents/v2-windows.md#permissions) and:
+1. Log onto each target machine in turn using the account with the [appropriate permissions](../../agents/v2-windows.md#permissions) and:
 
    - Open an Administrator PowerShell command prompt, paste in the script you copied, then execute it to register the machine with this group.
  
@@ -208,8 +208,8 @@ To use the template:
 ## Related topics
 
 * [Run on machine group phase](../../process/deployment-group-phases.md)
-* [Deploy an agent on Windows](../../actions/agents/v2-windows.md)
-* [Deploy an agent on macOS](../../actions/agents/v2-osx.md)
-* [Deploy an agent on Linux](../../actions/agents/v2-linux.md)
+* [Deploy an agent on Windows](../../agents/v2-windows.md)
+* [Deploy an agent on macOS](../../agents/v2-osx.md)
+* [Deploy an agent on Linux](../../agents/v2-linux.md)
 
 [!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]

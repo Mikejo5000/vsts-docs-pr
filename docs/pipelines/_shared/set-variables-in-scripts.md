@@ -10,8 +10,8 @@ To define or modify a variable from a script, use the `task.setvariable` logging
 > 
 > You can run a script on a:
 > 
-> * [Windows agent](../actions/agents/v2-windows.md) using either a [Batch script task](../tasks/utility/batch-script.md) or [PowerShell script task](../tasks/utility/powershell.md).
-> * [macOS](../actions/agents/v2-osx.md) or [Linux](../actions/agents/v2-linux.md) agent using a [Shell script task](../tasks/utility/shell-script.md).
+> * [Windows agent](../agents/v2-windows.md) using either a [Batch script task](../tasks/utility/batch-script.md) or [PowerShell script task](../tasks/utility/powershell.md).
+> * [macOS](../agents/v2-osx.md) or [Linux](../agents/v2-linux.md) agent using a [Shell script task](../tasks/utility/shell-script.md).
 
 
 

@@ -46,11 +46,11 @@ After you've installed the agent on a machine, you can install any other softwar
 > [!TIP]
 > Is your code in VSTS? If so, before you install an agent you might want to see if the hosted pool will work for you. In many cases this is the simplest way to get going. [Give it a try](hosted.md).
 
-* [Windows agent v2](../actions/agents/v2-windows.md)
-* [macOS agent](../actions/agents/v2-osx.md)
-* [Ubuntu 14.04 agent](../actions/agents/v2-linux.md)
-* [Ubuntu 16.04 agent](../actions/agents/v2-linux.md)
-* [RedHat agent](../actions/agents/v2-linux.md)
+* [Windows agent v2](v2-windows.md)
+* [macOS agent](v2-osx.md)
+* [Ubuntu 14.04 agent](v2-linux.md)
+* [Ubuntu 16.04 agent](v2-linux.md)
+* [RedHat agent](v2-linux.md)
 
 ::: moniker-end
 
@@ -58,11 +58,11 @@ After you've installed the agent on a machine, you can install any other softwar
 
 ### Install and connect to TFS 2015
 
-* [Windows agent v1](../actions/agents/v1-windows.md)
-* [macOS agent](../actions/agents/v2-osx.md)
-* [Ubuntu 14.04 agent](../actions/agents/v2-linux.md)
-* [Ubuntu 16.04 agent](../actions/agents/v2-linux.md)
-* [RedHat agent](../actions/agents/v2-linux.md)
+* [Windows agent v1](v1-windows.md)
+* [macOS agent](v2-osx.md)
+* [Ubuntu 14.04 agent](v2-linux.md)
+* [Ubuntu 16.04 agent](v2-linux.md)
+* [RedHat agent](v2-linux.md)
 
 ::: moniker-end
 

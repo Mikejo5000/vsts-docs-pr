@@ -23,7 +23,7 @@ Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide a hi
 
 [!INCLUDE [include](../../_shared/ci-cd-prerequisites-vsts.md)]
 
-* While the simplest way to try this quickstart is to use a VSTS account, you can also use a TFS server instead of a VSTS account. Make sure that you have [configured a build agent](../../actions/agents/v2-windows.md) for your team project, and that you have a version of Visual Studio matching your development machine installed on the agent machine.
+* While the simplest way to try this quickstart is to use a VSTS account, you can also use a TFS server instead of a VSTS account. Make sure that you have [configured a build agent](../../agents/v2-windows.md) for your team project, and that you have a version of Visual Studio matching your development machine installed on the agent machine.
 
 ## Get sample app code
 
@@ -73,7 +73,7 @@ https://github.com/adventworks/cpp-sample
 
  * **VSTS:** Select _Hosted VS2017_. This uses a VSTS pool of agents that have the software needed to build your app.
 
- * **TFS:** Select a queue that includes a [Windows build agent](../../actions/agents/v2-windows.md).
+ * **TFS:** Select a queue that includes a [Windows build agent](../../agents/v2-windows.md).
 
 1. Click **Get sources** and then:
 

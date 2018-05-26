@@ -24,7 +24,7 @@ Each machine interacts with VSTS to coordinate deployment of your app.
    `sudo apt-get install -y libunwind8 libcurl3`
 
    The libraries this command installs are pre-requisites for installing the build and release agent
-   onto a Ubuntu 16.04 VM. Pre-requisites for other versions of Linux can be found [here](../../actions/agents/v2-linux.md).
+   onto a Ubuntu 16.04 VM. Pre-requisites for other versions of Linux can be found [here](../../agents/v2-linux.md).
 
 1. Open the VSTS web portal `https://{your-account}.visualstudio.com`, navigate to the **Build &amp; Release** hub,
    and choose **Deployment groups**.

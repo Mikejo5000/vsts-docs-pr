@@ -31,7 +31,7 @@ If you have customized your XAML templates or added custom tasks, then you'll ne
 
 Here are the steps to migrate from XAML builds to newer builds:
 
-1. If you're using a private TFS server, [set up agents](agents/v2-windows.md) to run your builds.
+1. If you're using a private TFS server, [set up agents](../agents/v2-windows.md) to run your builds.
 
 1. To get familiar with the new build system, create a ["Hello world" build definition](ci-cd-part-1.md).
 

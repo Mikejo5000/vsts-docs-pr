@@ -19,7 +19,7 @@ monikerRange: '>= tfs-2015'
 
 When you are ready to move beyond the basics of compiling and testing your code, use a PowerShell script to add your team's business logic to your build process.
 
-You can run a PowerShell Script on a [Windows build agent](../agents/v2-windows.md).
+You can run a PowerShell Script on a [Windows build agent](../../agents/v2-windows.md).
 
 0. Push your script into your repo.
 

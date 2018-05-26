@@ -62,9 +62,9 @@ the agent machine:
 
 1. Install an agent on the **agent machine**:
 
-   * [Deploy an agent on Windows](../../actions/agents/v2-windows.md)
-   * [Deploy an agent on macOS](../../actions/agents/v2-osx.md)
-   * [Deploy an agent on Linux](../../actions/agents/v2-linux.md)<p />
+   * [Deploy an agent on Windows](../../agents/v2-windows.md)
+   * [Deploy an agent on macOS](../../agents/v2-osx.md)
+   * [Deploy an agent on Linux](../../agents/v2-linux.md)<p />
 
 1. Install the VMware extension 
    from Visual Studio Marketplace into your server or account.

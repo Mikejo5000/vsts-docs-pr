@@ -39,7 +39,7 @@ If you want to use a PowerShell script to deploy your app, make sure to:
 * Enable PowerShell Remote on all your machines.
 
 You'll need to install the agent that runs your tests on the machines. For more details, see
-[Deploy a Windows build agent](../../pipelines/actions/agents/v2-windows.md).
+[Deploy a Windows build agent](../../pipelines/agents/v2-windows.md).
 You might decide to [create Azure VMs](https://docs.microsoft.com/azure/virtual-machines/windows/quick-create-portal)
 to install your agents.
 

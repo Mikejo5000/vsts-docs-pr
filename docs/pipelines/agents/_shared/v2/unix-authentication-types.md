@@ -7,7 +7,7 @@ ms.topic: include
 Choose **PAT**, and then paste the [PAT token you created](#permissions) into the command prompt window.
 
 > [!NOTE]
-> When using PAT as the authentication method, the PAT token is used only for the initial configuration of the agent. Learn more at [Communication with VSTS or TFS](../../../../agents/agents.md).
+> When using PAT as the authentication method, the PAT token is used only for the initial configuration of the agent. Learn more at [Communication with VSTS or TFS](../../agents.md).
 
 #### TFS
 
@@ -26,4 +26,4 @@ When you configure your agent to connect to TFS, you've got the following option
 * **PAT** Supported only on VSTS and TFS 2017 and newer. After you choose PAT, paste the [PAT token you created](#permissions) into the command prompt window. Use a personal access token (PAT) if your TFS instance and the agent machine are not in a trusted domain. PAT authentication is handled by your TFS instance instead of the domain controller.
 
 > [!NOTE]
-> When using PAT as the authentication method, the PAT token is used only for the initial configuration of the agent on newer versions of TFS. Learn more at [Communication with VSTS or TFS](../../../../agents/agents.md).
+> When using PAT as the authentication method, the PAT token is used only for the initial configuration of the agent on newer versions of TFS. Learn more at [Communication with VSTS or TFS](../../agents.md).

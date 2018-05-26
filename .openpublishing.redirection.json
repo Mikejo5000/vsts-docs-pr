@@ -493,27 +493,27 @@
         },
         {
             "source_path": "docs/build-release/admin/agents/v1-windows.md",
-            "redirect_url": "/vsts/pipelines/actions/agents/v1-windows",
+            "redirect_url": "/vsts/pipelines/agents/v1-windows",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/admin/agents/v2-linux.md",
-            "redirect_url": "/vsts/pipelines/actions/agents/v2-linux",
+            "redirect_url": "/vsts/pipelines/agents/v2-linux",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/admin/agents/v2-osx.md",
-            "redirect_url": "/vsts/pipelines/actions/agents/v2-osx",
+            "redirect_url": "/vsts/pipelines/agents/v2-osx",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/admin/agents/v2-windows.md",
-            "redirect_url": "/vsts/pipelines/actions/agents/v2-windows",
+            "redirect_url": "/vsts/pipelines/agents/v2-windows",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/agents/windows.md",
-            "redirect_url": "/vsts/pipelines/actions/agents/v2-windows",
+            "redirect_url": "/vsts/pipelines/agents/v2-windows",
             "redirect_document_id": false
         },
         {

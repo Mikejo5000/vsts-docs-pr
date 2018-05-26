@@ -396,7 +396,7 @@ You're nearly ready to go. Just a few more steps to complete your CI build proce
 
  * **VSTS:** Select _Hosted Linux_. This is how you can use our pool of agents that have the software you need to build your app.
 
- * **TFS:** Select a queue that includes a [Linux build agent](../../actions/agents/v2-linux.md) on a machine that has Docker and is configured to run containers.
+ * **TFS:** Select a queue that includes a [Linux build agent](../../agents/v2-linux.md) on a machine that has Docker and is configured to run containers.
 
 1. Select **Get sources** and then:
 
@@ -438,7 +438,7 @@ YAML builds are not available in TFS.
 
  * **VSTS:** Select _Hosted Linux_. This is how you can use our pool of agents that have the software you need to build your app.
 
- * **TFS:** Select a queue that includes a [Windows build agent](../../actions/agents/v2-windows.md).
+ * **TFS:** Select a queue that includes a [Windows build agent](../../agents/v2-windows.md).
 
 1. Select **Get sources** and then:
 
