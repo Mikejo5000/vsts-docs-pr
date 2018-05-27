@@ -22,7 +22,7 @@ VSTS or Team Foundation Server.
 
 ## Prepare
 
-You need SCVMM. If you want to create an isolated virtual network using SCVMM, see [this topic](../../../actions/virtual-networks/create-virtual-network.md).
+You need SCVMM. If you want to create an isolated virtual network using SCVMM, see [this topic](../../../targets/create-virtual-network.md.
 
 1. Install the **Virtual Machine Manager** (VMM) console by
    following [these instructions](https://docs.microsoft.com/system-center/vmm/install-console).
@@ -81,7 +81,7 @@ You need SCVMM. If you want to create an isolated virtual network using SCVMM, s
    ![Adding an SCVMM task](../_img/add-scvmm-task.png)
 
 1. You can select the action from the list of actions available in the task.
-   See [SCVMM task actions](../../../actions/virtual-networks/manage-vms-using-scvmm.md) for details.
+   See [SCVMM task actions](../../../targets/manage-vms-using-scvmm.md for details.
   
 1. You can now add other tasks to the environment, 
    such as **PowerShell on Target Machines** and then 
@@ -102,8 +102,8 @@ You need SCVMM. If you want to create an isolated virtual network using SCVMM, s
 
 ## See also
 
-* [Create a virtual network isolated environment for build-deploy-test scenarios](../../../actions/virtual-networks/create-virtual-network.md)
-* [Task actions for managing VMs using SCVMM](../../../actions/virtual-networks/manage-vms-using-scvmm.md)
+* [Create a virtual network isolated environment for build-deploy-test scenarios](../../../targets/create-virtual-network.md
+* [Task actions for managing VMs using SCVMM](../../../targets/manage-vms-using-scvmm.md
 
 ## Q&A
 

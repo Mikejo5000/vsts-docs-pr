@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2018'
 
 # Create a virtual network isolated environment for build-deploy-test scenarios
 
-[!INCLUDE [version-rm-dev14](../../_shared/version-rm-dev14.md)]
+[!INCLUDE [version-rm-dev14](../_shared/version-rm-dev14.md)]
 
 Network Virtualization provides ability to create multiple virtual
 networks on a shared physical network. Isolated virtual networks can
@@ -46,7 +46,7 @@ See also: [Hyper-V Network Virtualization Overview](https://docs.microsoft.com/e
 
 * You can perform a range of operations using SCVMM, see [this topic](manage-vms-using-scvmm.md).
 
-* For another example of using SCVMM to manage VMs, see [this topic](../../apps/cd/scvmm/configure-scvmm.md).
+* For another example of using SCVMM to manage VMs, see [this topic](../apps/cd/scvmm/configure-scvmm.md).
   
 <a name="prereqs"></a>
 
@@ -244,7 +244,7 @@ Isolated virtual networks can be broadly classified into three topologies.
 You can create any of the above topologies using the SCVMM extension, as shown in the following steps.
 
 1. Open your TFS or VSTS instance and install the **SCVMM extension** if not already installed.
-   For more information, see [Configure and deploy with SCVMM](../../apps/cd/scvmm/configure-scvmm.md).
+   For more information, see [Configure and deploy with SCVMM](../apps/cd/scvmm/configure-scvmm.md).
 
    >The **SCVMM task** provides a more efficient way capability to perform lab management operations using build and release
    definitions. You can manage SCVMM environments, provision isolated virtual networks, and implement build-deploy-test scenarios.
@@ -341,7 +341,7 @@ environments. You can create as many environments as you need with just a click 
 
 ## See also
 
-* [Configure and deploy with SCVMM](../../apps/cd/scvmm/configure-scvmm.md)
+* [Configure and deploy with SCVMM](../apps/cd/scvmm/configure-scvmm.md)
 * [Task actions for managing VMs using SCVMM](manage-vms-using-scvmm.md)
 * [Hyper-V Network Virtualization Overview](https://docs.microsoft.com/en-us/windows-server/networking/sdn/technologies/hyper-v-network-virtualization/hyperv-network-virtualization-overview-windows-server)
 
@@ -350,9 +350,9 @@ environments. You can create as many environments as you need with just a click 
 <!-- BEGINSECTION class="md-qanda" -->
 
 ::: moniker range="< vsts"
-[!INCLUDE [temp](../../_shared/qa-versions.md)]
+[!INCLUDE [temp](../_shared/qa-versions.md)]
 ::: moniker-end
 
 <!-- ENDSECTION -->
 
-[!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]
+[!INCLUDE [rm-help-support-shared](../_shared/rm-help-support-shared.md)]

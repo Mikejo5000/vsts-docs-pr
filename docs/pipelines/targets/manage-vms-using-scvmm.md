@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2018'
 
 # Task actions for managing VMs using System Center Virtual Machine Manager (SCVMM)
 
-[!INCLUDE [version-rm-dev14](../../_shared/version-rm-dev14.md)]
+[!INCLUDE [version-rm-dev14](../_shared/version-rm-dev14.md)]
 
 You can manage your virtual machines using the System Center Virtual
 Machine Manager (**SCVMM**) task by performing a range of actions such as:
@@ -26,7 +26,7 @@ Machine Manager (**SCVMM**) task by performing a range of actions such as:
 * [Run custom PowerShell scripts for SCVMM](#runscript)
 
 You must install the **System Center Virtual Machine Manager (SCVMM)** extension from Visual Studio Marketplace into your server or account.
-For more information, see [Configure and deploy with SCVMM](../../apps/cd/scvmm/configure-scvmm.md).
+For more information, see [Configure and deploy with SCVMM](../apps/cd/scvmm/configure-scvmm.md).
 
 <a name="newvm"></a>
 
@@ -117,7 +117,7 @@ For more information, see [Configure and deploy with SCVMM](../../apps/cd/scvmm/
 
 ## See also
 
-* [Configure and deploy with SCVMM](../../apps/cd/scvmm/configure-scvmm.md)
+* [Configure and deploy with SCVMM](../apps/cd/scvmm/configure-scvmm.md)
 * [Create a virtual network isolated environment for build-deploy-test scenarios](create-virtual-network.md)
 
 ## Q&A
@@ -125,9 +125,9 @@ For more information, see [Configure and deploy with SCVMM](../../apps/cd/scvmm/
 <!-- BEGINSECTION class="md-qanda" -->
 
 ::: moniker range="< vsts"
-[!INCLUDE [temp](../../_shared/qa-versions.md)]
+[!INCLUDE [temp](../_shared/qa-versions.md)]
 ::: moniker-end
 
 <!-- ENDSECTION -->
 
-[!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]
+[!INCLUDE [rm-help-support-shared](../_shared/rm-help-support-shared.md)]
