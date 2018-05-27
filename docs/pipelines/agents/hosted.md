@@ -33,7 +33,7 @@ We provide hosted agents to you in our hosted pools. To use a hosted agent, firs
 | Development tools on macOS | Hosted macOS (see notes below) |
 | Visual Studio 2013 or Visual Studio 2015 | Hosted |
 
-Then, while [editing your build definition](../actions/ci-cd-part-1.md), on the **Options** or **General** tab or **Process** step, for the **Agent queue**, select the queue you decided on.
+Then, while [editing your build definition](../get-started-designer.md), on the **Options** or **General** tab or **Process** step, for the **Agent queue**, select the queue you decided on.
 
 Notes on choosing **Hosted macOS**:
 * This option affects where your data is stored. [Learn more](https://www.microsoft.com/en-us/trustcenter/privacy/vsts-location)

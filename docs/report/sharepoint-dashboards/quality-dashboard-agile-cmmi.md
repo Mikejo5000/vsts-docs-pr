@@ -92,7 +92,7 @@ You can use the Quality dashboard to obtain an overview of progress occurring in
   
 -   **Create build definitions**. You can create several build definitions and then run each of them to produce code for a different platform. Also, you can run each build for a different configuration.  
   
-     For more information, see [Get started with CI/CD](../../pipelines/actions/ci-cd-part-1.md).
+     For more information, see [Get started with CI/CD](../../pipelines/get-started-designer.md).
   
 -   **Define tests to run automatically as part of the build**. As part of the build definition, you can define tests to run as part of the build or to fail if the tests fail.  
   

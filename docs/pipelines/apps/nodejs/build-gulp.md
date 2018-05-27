@@ -84,7 +84,7 @@ steps:
 - script: echo hello world 
 ```
 
-[Learn more about YAML builds](../../actions/build-yaml.md).
+[Learn more about YAML builds](../../get-started-yaml.md).
 
 ---
 

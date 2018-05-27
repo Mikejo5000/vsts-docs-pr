@@ -71,7 +71,7 @@ The Build Success Over Time report provides a pictorial version of the Build Sum
   
 -   **Create build definitions**. You can create several build definitions, each of which can be run to produce code for a different platform. Also, you can run each build for a different configuration.  
   
-     For more information, see [Get started with CI/CD](../../pipelines/actions/ci-cd-part-1.md).
+     For more information, see [Get started with CI/CD](../../pipelines/get-started-designer.md).
   
 -   **Run builds regularly**. You can run builds can be run at set intervals or after every check-in. You can schedule regular builds when you use the schedule trigger. For more information, see [Build triggers](../../pipelines/build/triggers.md).
   

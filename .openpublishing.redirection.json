@@ -518,7 +518,7 @@
         },
         {
             "source_path": "docs/build-release/define/create.md",
-            "redirect_url": "/vsts/pipelines/actions/ci-cd-part-1",
+            "redirect_url": "/vsts/pipelines/get-started-designer",
             "redirect_document_id": false
         },
         {
@@ -943,7 +943,7 @@
         },
         {
             "source_path": "docs/build-release/get-started/ci-cd-part-1.md",
-            "redirect_url": "/vsts/pipelines/actions/ci-cd-part-1",
+            "redirect_url": "/vsts/pipelines/get-started-designer",
             "redirect_document_id": false
         },
         {

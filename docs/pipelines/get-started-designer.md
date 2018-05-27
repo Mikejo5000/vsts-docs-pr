@@ -32,7 +32,7 @@ Are any of these questions on your mind? If so, then you've come to the right pl
 
 ## A quick introduction to CI/CD
 
-![A typical release pipeline for web applications](./_img/ci-cd/part-1/ReleasePipeline.png)
+![A typical release pipeline for web applications](./_img/get-started-designer/ReleasePipeline.png)
 
 CI means starting an automated build (and possibly running tests) whenever new code is committed to or checked into the team project's source control repository. This gives you immediate feedback that the code builds and can potentially be deployed.
 
@@ -46,15 +46,15 @@ Wanna try it?
 
 ## Get set up with VSTS
 
-> Do you already have access to a VSTS account and to a team project that has a Git repo? And do you already have [permissions to create builds](../policies/permissions.md)? If so, then you can [skip to the next section](#add-script). If you're not sure, it takes just a moment to create a new account and there's no charge.
+> Do you already have access to a VSTS account and to a team project that has a Git repo? And do you already have [permissions to create builds](policies/permissions.md)? If so, then you can [skip to the next section](#add-script). If you're not sure, it takes just a moment to create a new account and there's no charge.
 
 1. [Create a new account in VSTS](http://go.microsoft.com/fwlink/?LinkId=307137).
 
-1. If you're prompted, then sign in using your personal Microsoft account or your work or school account. (Need help signing up? See [Sign up for VSTS](../../accounts/create-account-msa-or-work-student.md).)
+1. If you're prompted, then sign in using your personal Microsoft account or your work or school account. (Need help signing up? See [Sign up for VSTS](../accounts/create-account-msa-or-work-student.md).)
 
 1. Create a Visual Studio Team Service account. Keep the option to use **Git** selected.
 
- <img style="border: 1px solid #CCCCCC;" src="_img/ci-cd/part-1/create-team-services-account.png" />
+ <img style="border: 1px solid #CCCCCC;" src="_img/get-started-designer/create-team-services-account.png" />
 
 1. Select the option to **initialize with a README or gitignore** and choose **Initialize**.
 
@@ -66,7 +66,7 @@ Wanna try it?
 
 ## Get set up with TFS
 
-> Do you already have access to TFS and to a team project? And do you already have [permissions to create builds](../policies/permissions.md)? If so, then you can [skip to the next section](#add-script). If you're not sure, it takes just a moment to set up TFS and create a project.
+> Do you already have access to TFS and to a team project? And do you already have [permissions to create builds](policies/permissions.md)? If so, then you can [skip to the next section](#add-script). If you're not sure, it takes just a moment to set up TFS and create a project.
 
 1. [Get started with TFS](https://docs.microsoft.com/vsts/tfs-server/install/single-server).
 
@@ -84,25 +84,25 @@ Create a PowerShell script that prints `Hello world`.
 
 1. Go to the **Code** hub.
 
- ![Project home page with code hub highlighted](_img/ci-cd/part-1/project-home-page-click-code-hub.png)
+ ![Project home page with code hub highlighted](_img/get-started-designer/project-home-page-click-code-hub.png)
 
 1. Add a file.
 
  ::: moniker range="vsts"
 
- ![On the Files tab, from the repo node, select the 'New -> File' option](_img/ci-cd/part-1/add-a-file-tfs-2018-2.png) 
+ ![On the Files tab, from the repo node, select the 'New -> File' option](_img/get-started-designer/add-a-file-tfs-2018-2.png) 
 
  ::: moniker-end
 
  ::: moniker range="tfs-2018"
 
- ![On the Files tab, from the repo node, select the 'New -> File' option](_img/ci-cd/part-1/add-a-file-tfs-2018.png) 
+ ![On the Files tab, from the repo node, select the 'New -> File' option](_img/get-started-designer/add-a-file-tfs-2018.png) 
 
  ::: moniker-end
 
  ::: moniker range="tfs-2017"
 
- ![On the Files tab, from the repo node, select the 'Add file' option](_img/ci-cd/part-1/add-a-file.png)
+ ![On the Files tab, from the repo node, select the 'Add file' option](_img/get-started-designer/add-a-file.png)
 
  ::: moniker-end
 
@@ -130,11 +130,11 @@ Create a build definition that prints "Hello world."
 
 1. Select the **Build and Release** hub in your VSTS project, and then choose **Builds**.
 
-   ![navigate to builds tab](_img/ci-cd/part-1/navigate-to-builds-tab-tfs-2018-2.png)
+   ![navigate to builds tab](_img/get-started-designer/navigate-to-builds-tab-tfs-2018-2.png)
 
 1. Create a new definition.
 
-   ![builds-tab-mine-new-button](_img/ci-cd/part-1/builds-tab-mine-new-button-tab-tfs-2018-2.png)
+   ![builds-tab-mine-new-button](_img/get-started-designer/builds-tab-mine-new-button-tab-tfs-2018-2.png)
 
 1. Make sure that the **source**, **team project**, **repository**, and default **branch** match the location in which you created the script.
 
@@ -144,13 +144,13 @@ Create a build definition that prints "Hello world."
 
 1. On the left side, select the plus sign **( + )** for Phase 1 to add a task to the phase, and then on the right side select the **Utility** category, select the **PowerShell** task, and then choose **Add**.
 
-   ![builds-tab-add-task-to-phase](_img/ci-cd/part-1/builds-tab-add-task-tfs-2018-2.png)
+   ![builds-tab-add-task-to-phase](_img/get-started-designer/builds-tab-add-task-tfs-2018-2.png)
 
 1. On the left side select your new **PowerShell** script task.
 
 1. For the **Script Path** argument, select the <span style="background-color: rgb(244,244,244);font-weight:bold;padding:5px">...</span> button to browse your repository and select the script you created.
 
-   ![PowerShell task](_img/ci-cd/part-1/powershell-task-1-tfs-2018-2.png)
+   ![PowerShell task](_img/get-started-designer/powershell-task-1-tfs-2018-2.png)
 
 1. Select **Save & queue**, and then select **Save**.
 
@@ -160,11 +160,11 @@ Create a build definition that prints "Hello world."
 
 1. Select the **Build and Release** hub in your VSTS project, and then choose **Builds**.
 
-   ![navigate to builds tab](_img/ci-cd/part-1/navigate-to-builds-tab-tfs-2018-2.png)
+   ![navigate to builds tab](_img/get-started-designer/navigate-to-builds-tab-tfs-2018-2.png)
 
 1. Create a new definition.
 
-   ![builds-tab-mine-new-button](_img/ci-cd/part-1/builds-tab-mine-new-button-tab-tfs-2018-2.png)
+   ![builds-tab-mine-new-button](_img/get-started-designer/builds-tab-mine-new-button-tab-tfs-2018-2.png)
 
 1. Start with an **empty process**
 
@@ -172,13 +172,13 @@ Create a build definition that prints "Hello world."
 
 1. On the left side, select **+ Add Task** to add a task to the phase, and then on the right side select the **Utility** category, select the **PowerShell** task, and then choose **Add**.
 
-   ![builds-tab-add-task-to-phase](_img/ci-cd/part-1/builds-tab-add-task-tfs-2018.png)
+   ![builds-tab-add-task-to-phase](_img/get-started-designer/builds-tab-add-task-tfs-2018.png)
 
 1. On the left side select your new **PowerShell** script task.
 
 1. For the **Script Path** argument, select the <span style="background-color: rgb(244,244,244);font-weight:bold;padding:5px">...</span> button to browse your repository and select the script you created.
 
-   ![PowerShell task](_img/ci-cd/part-1/powershell-task-1-tfs-2018.png)
+   ![PowerShell task](_img/get-started-designer/powershell-task-1-tfs-2018.png)
 
 1. Select **Save & queue**, and then select **Save**.
 
@@ -188,11 +188,11 @@ Create a build definition that prints "Hello world."
 
 1. Select the **Build and Release** hub in your VSTS project, and then the **Builds** tab.
 
- ![navigate to builds tab](_img/ci-cd/part-1/navigate-to-builds-tab.png)
+ ![navigate to builds tab](_img/get-started-designer/navigate-to-builds-tab.png)
 
 1. Create a new definition.
 
- ![builds-tab-mine-new-button](_img/ci-cd/part-1/builds-tab-mine-new-button.png)
+ ![builds-tab-mine-new-button](_img/get-started-designer/builds-tab-mine-new-button.png)
 
 1. Start with an **empty process**.
 
@@ -208,7 +208,7 @@ Create a build definition that prints "Hello world."
 
 1. For the **Script Path** argument, select the <span style="background-color: rgb(244,244,244);font-weight:bold;padding:5px">...</span> button to browse your repository and select the script you created.
 
-   ![PowerShell task](_img/ci-cd/part-1/powershell-task-1.png)
+   ![PowerShell task](_img/get-started-designer/powershell-task-1.png)
 
 1. Select **Save & queue**, and then select **Save**.
 
@@ -226,7 +226,7 @@ A typical build produces an artifact that can then be deployed to various enviro
 
 1. Select the **Utility** category, select the **Publish Build Artifacts** task, and then select **Add**.
 
-   ![publish artifact task](_img/ci-cd/part-1/publish-artifact-task-tfs-2018-2.png)
+   ![publish artifact task](_img/get-started-designer/publish-artifact-task-tfs-2018-2.png)
 
    **Path to publish**: Select the <span style="background-color: rgb(244,244,244);font-weight:bold;padding:5px">...</span> button to browse and select the script you created.
 
@@ -247,7 +247,7 @@ A typical build produces an artifact that can then be deployed to various enviro
 
 1. Select the **Utility** category, select the **Publish Build Artifacts** task, and then select **Add**.
 
- ![publish artifact task](_img/ci-cd/part-1/publish-artifact-task.png)
+ ![publish artifact task](_img/get-started-designer/publish-artifact-task.png)
 
  **Path to Publish**: Select the <span style="background-color: rgb(244,244,244);font-weight:bold;padding:5px">...</span> button to browse and select the script you created.
 
@@ -263,7 +263,7 @@ drop
 
 > Artifacts are the files that you want your build to produce. Artifacts can be nearly anything your team needs to test or deploy your app. For example, you've got a .DLL and .EXE executable files and .PDB symbols file of a C# or C++ .NET Windows app.
 >
-> To enable you to produce artifacts, we provide tools such as copying with pattern matching, and a staging directory in which you can gather your artifacts before publishing them. See [Artifacts in Team Build](../build/artifacts.md).
+> To enable you to produce artifacts, we provide tools such as copying with pattern matching, and a staging directory in which you can gather your artifacts before publishing them. See [Artifacts in Team Build](build/artifacts.md).
 
 ## Enable continuous integration (CI)
 
@@ -271,7 +271,7 @@ drop
 
 1. Enable **Continuous integration**.
 
->  A continuous integration trigger on a build definition indicates that the system should automatically queue a new build whenever a code change is committed. You can make the trigger more general or more specific, and also schedule your build (for example, on a nightly basis). See [Build triggers](../build/triggers.md).
+>  A continuous integration trigger on a build definition indicates that the system should automatically queue a new build whenever a code change is committed. You can make the trigger more general or more specific, and also schedule your build (for example, on a nightly basis). See [Build triggers](build/triggers.md).
 
 ## Save and queue the build
 
@@ -287,19 +287,19 @@ Save and queue a build manually and test your build definition.
    
 1. You see a link to the new build on the top of the page. 
 
-   ![build console](_img/ci-cd/part-1/build-console-link-to-new-build-tfs-2018-2.png)
+   ![build console](_img/get-started-designer/build-console-link-to-new-build-tfs-2018-2.png)
 
    Choose the link to watch the new build as it happens. Once the agent is allocated, you'll start seeing the live logs of the build. Notice that the PowerShell script is run as part of the build, and that "Hello world" is printed to the console.
 
-   ![build console](_img/ci-cd/part-1/build-console.png)
+   ![build console](_img/get-started-designer/build-console.png)
 
 1. Go to the build summary.
 
-   ![build console link to build summary](_img/ci-cd/part-1/build-console-link-to-build-summary.png)
+   ![build console link to build summary](_img/get-started-designer/build-console-link-to-build-summary.png)
 
 1. On the **Artifacts** tab of the build notice that the script is published as an artifact.
 
-   ![artifacts explorer](_img/ci-cd/part-1/artifacts-explorer.png)
+   ![artifacts explorer](_img/get-started-designer/artifacts-explorer.png)
 
 ::: moniker-end
 
@@ -311,15 +311,15 @@ Save and queue a build manually and test your build definition.
 
    This queues a new build on the agent. Once the agent is allocated, you'll start seeing the live logs of the build. Notice that the PowerShell script is run as part of the build, and that "Hello world" is printed to the console.
 
-   ![build console](_img/ci-cd/part-1/build-console.png)
+   ![build console](_img/get-started-designer/build-console.png)
 
 1. Go to the build summary.
 
-   ![build console link to build summary](_img/ci-cd/part-1/build-console-link-to-build-summary.png)
+   ![build console link to build summary](_img/get-started-designer/build-console-link-to-build-summary.png)
 
 1. On the **Artifacts** tab of the build notice that the script is published as an artifact.
 
-   ![artifacts explorer](_img/ci-cd/part-1/artifacts-explorer.png)
+   ![artifacts explorer](_img/get-started-designer/artifacts-explorer.png)
 
 ::: moniker-end
 
@@ -336,10 +336,10 @@ We'll pass some build variables to the script to make our process a bit more int
 1. Add these arguments.
 
  ::: moniker range="vsts"
- ![PowerShell task](_img/ci-cd/part-1/powershell-task-2-tfs-2018-2.png)
+ ![PowerShell task](_img/get-started-designer/powershell-task-2-tfs-2018-2.png)
  ::: moniker-end
  ::: moniker range=">= tfs-2017 < vsts"
- ![PowerShell task](_img/ci-cd/part-1/powershell-task-2.png)
+ ![PowerShell task](_img/get-started-designer/powershell-task-2.png)
  ::: moniker-end
 
  **Arguments**
@@ -373,9 +373,9 @@ Write-Host Trigger: $trigger
 
 1. Notice that the person who changed the code has their name printed in the greeting message. You also see printed that this was a CI build.
 
- ![build summary powershell script log](_img/ci-cd/part-1/build-summary-powershell-script-log.png)
+ ![build summary powershell script log](_img/get-started-designer/build-summary-powershell-script-log.png)
 
-> We just introduced the concept of build variables in these steps. We printed the value of a variable that is automatically predefined and initialized by the system. You can also define custom variables and use them either in arguments to your tasks, or as environment variables within your scripts. To learn more about variables, see [Build variables](../build/variables.md).
+> We just introduced the concept of build variables in these steps. We printed the value of a variable that is automatically predefined and initialized by the system. You can also define custom variables and use them either in arguments to your tasks, or as environment variables within your scripts. To learn more about variables, see [Build variables](build/variables.md).
 
 ## Create a release definition
 
@@ -395,7 +395,7 @@ Define the process for running the script in two environments.
 
 1. Select the **Lightning bolt** to trigger continuous deployment and then enable the **Continuous deployment trigger** on the right.
 
-   ![trigger continuous deployment](_img/ci-cd/part-1/trigger-continuous-deployment-release-environment-tfs-2018-2.png)
+   ![trigger continuous deployment](_img/get-started-designer/trigger-continuous-deployment-release-environment-tfs-2018-2.png)
 
 1. Select the **Tasks** tab and select your **QA** environment.
 
@@ -415,13 +415,13 @@ Define the process for running the script in two environments.
 
 1. On the **Pipeline** tab, select the **QA** environment and select **Clone**.
 
-   ![clone-release-environment](_img/ci-cd/part-1/clone-release-environment-tfs-2018-2.png)
+   ![clone-release-environment](_img/get-started-designer/clone-release-environment-tfs-2018-2.png)
 
 1. Rename the cloned environment **Production**.
 
 1. Rename the release definition **Hello world**.
 
-   ![rename release definition](_img/ci-cd/part-1/rename-release-definition-tfs-2018-2.png)
+   ![rename release definition](_img/get-started-designer/rename-release-definition-tfs-2018-2.png)
 
 1. Save the release definition.
 
@@ -451,11 +451,11 @@ Define the process for running the script in two environments.
 
 1. Rename the environment **QA**.
 
- ![rename release environment](_img/ci-cd/part-1/rename-release-environment.png)
+ ![rename release environment](_img/get-started-designer/rename-release-environment.png)
 
 1. **Clone** the **QA** environment.
 
- ![clone-release-environment](_img/ci-cd/part-1/clone-release-environment.png)
+ ![clone-release-environment](_img/get-started-designer/clone-release-environment.png)
 
  Leave **Automatically approve** and **Deploy automatically...** selected, and select **Create**.
 
@@ -463,7 +463,7 @@ Define the process for running the script in two environments.
 
 1. Rename the release definition **Hello world**.
 
- ![rename release definition](_img/ci-cd/part-1/rename-release-definition.png)
+ ![rename release definition](_img/get-started-designer/rename-release-definition.png)
 
 1. Save the release definition.
 
@@ -471,7 +471,7 @@ Define the process for running the script in two environments.
 
 > A release definition is a collection of environments to which the application build artifacts are deployed. It also defines the actual deployment process for each environment, as well as how the artifacts are promoted from one environment to another.
 >
-> Also, notice that we used some variables in our script arguments. In this case, we used [release variables](../release/variables.md) instead of the build variables we used for the build definition.
+> Also, notice that we used some variables in our script arguments. In this case, we used [release variables](release/variables.md) instead of the build variables we used for the build definition.
 
 ## Deploy a release
 
@@ -481,17 +481,17 @@ Run the script in each environment.
 
 1. Create a new release.
 
- ![create release](_img/ci-cd/part-1/create-release-tfs-2018-2.png)
+ ![create release](_img/get-started-designer/create-release-tfs-2018-2.png)
 
 1. Define the trigger settings and artifact source for the release and then select **Create**.
 
 1. Open the release that you just created.
 
- ![release created](_img/ci-cd/part-1/release-created-tfs-2018-2.png)
+ ![release created](_img/get-started-designer/release-created-tfs-2018-2.png)
 
 1. View the logs to get real-time data about the release.
 
- ![release logs](_img/ci-cd/part-1/release-logs-tfs-2018-2.png)
+ ![release logs](_img/get-started-designer/release-logs-tfs-2018-2.png)
 
  ::: moniker-end
 
@@ -499,17 +499,17 @@ Run the script in each environment.
 
 1. Create a new release.
 
- ![create release](_img/ci-cd/part-1/create-release-tfs-2018-2.png)
+ ![create release](_img/get-started-designer/create-release-tfs-2018-2.png)
 
 1. Define the trigger settings and artifact source for the release and then select **Queue**.
 
 1. Open the release that you just created.
 
- ![release created](_img/ci-cd/part-1/release-created-tfs-2018-2.png)
+ ![release created](_img/get-started-designer/release-created-tfs-2018-2.png)
 
 1. View the logs to get real-time data about the release.
 
- ![release logs](_img/ci-cd/part-1/release-logs-tfs-2018-2.png)
+ ![release logs](_img/get-started-designer/release-logs-tfs-2018-2.png)
 
  ::: moniker-end
 
@@ -517,15 +517,15 @@ Run the script in each environment.
 
 1. Create a new release.
 
- ![create release](_img/ci-cd/part-1/create-release.png)
+ ![create release](_img/get-started-designer/create-release.png)
 
 1. Open the release that you just created.
 
- ![release created](_img/ci-cd/part-1/release-created.png)
+ ![release created](_img/get-started-designer/release-created.png)
 
 1. View the logs to get real-time data about the release.
 
- ![release logs](_img/ci-cd/part-1/release-logs.png)
+ ![release logs](_img/get-started-designer/release-logs.png)
 
  ::: moniker-end
 
@@ -557,30 +557,30 @@ Write-Host "Now that you've got CI/CD, you can automatically deploy your app eve
 
 ::: moniker range=">= tfs-2018 <= vsts"
 
- ![release script step final log](_img/ci-cd/part-1/release-script-step-final-log-tfs-2018-2.png)
+ ![release script step final log](_img/get-started-designer/release-script-step-final-log-tfs-2018-2.png)
 
  ::: moniker-end
 
  ::: moniker range="tfs-2017"
 
- ![release script step final log](_img/ci-cd/part-1/release-script-step-final-log.png)
+ ![release script step final log](_img/get-started-designer/release-script-step-final-log.png)
 
  ::: moniker-end
 
 > In many cases, you probably would want to edit the release process so that the production deployment happens
-  only after some testing and approvals are in place. See [Approvals and gates overview](../release/approvals/index.md).
+  only after some testing and approvals are in place. See [Approvals and gates overview](release/approvals/index.md).
 
 ## Put CI/CD to work for you
 
 We hope this tutorial gave you an understanding of the basic concepts of Team Build and Release Management. To get started building and deploying an app, we suggest you proceed next to one of these topics:
 
-* [ASP.NET](../apps/aspnet/build-aspnet-4.md)
+* [ASP.NET](apps/aspnet/build-aspnet-4.md)
 
-* [ASP.NET core](../apps/aspnet/build-aspnet-core.md)
+* [ASP.NET core](apps/aspnet/build-aspnet-core.md)
 
-* [Node.js](../apps/nodejs/build-gulp.md)
+* [Node.js](apps/nodejs/build-gulp.md)
 
-* [Build and deploy your app](../apps/index.md)
+* [Build and deploy your app](apps/index.md)
 
 ## Q&A
 
@@ -603,17 +603,17 @@ When you're ready to get going with CI/CD for your app, you can use the version 
 
  * [Visual Studio Code for Windows, macOS, and Linux](https://code.visualstudio.com)
 
- * [Visual Studio with Git for Windows](../../git/share-your-code-in-git-vs.md) or [Visual Studio for Mac](https://www.visualstudio.com/vs/visual-studio-mac/)
+ * [Visual Studio with Git for Windows](../git/share-your-code-in-git-vs.md) or [Visual Studio for Mac](https://www.visualstudio.com/vs/visual-studio-mac/)
 
- * [Visual Studio with TFVC](../../tfvc/share-your-code-in-tfvc-vs.md)
+ * [Visual Studio with TFVC](../tfvc/share-your-code-in-tfvc-vs.md)
 
- * [Eclipse](../../git/share-your-code-in-git-eclipse.md)
+ * [Eclipse](../git/share-your-code-in-git-eclipse.md)
 
- * [Xcode](../../git/share-your-code-in-git-xcode.md)
+ * [Xcode](../git/share-your-code-in-git-xcode.md)
 
  * [IntelliJ](/vsts/java/download-intellij-plug-in)
 
- * [Command line](../../git/share-your-code-in-git-cmdline.md)
+ * [Command line](../git/share-your-code-in-git-cmdline.md)
 
 * Services
 
@@ -627,7 +627,7 @@ When you're ready to get going with CI/CD for your app, you can use the version 
 
 If your definition has a pattern that you want to replicate in other definitions, clone it, export it, or save it as a template.
 
-![all-definitions-build-action-menu-replicate-actions](_img/ci-cd/part-1/all-definitions-build-action-menu-replicate-actions.png)
+![all-definitions-build-action-menu-replicate-actions](_img/get-started-designer/all-definitions-build-action-menu-replicate-actions.png)
 
 After you clone a definition, you can make changes and then save it.
 
@@ -643,63 +643,63 @@ After you create a template, your team members can use it to follow the pattern 
 
 If you're editing a build definition and you want to test some changes that are not yet ready for production, you can save it as a draft.
 
-![save-as-draft](_img/ci-cd/part-1/save-as-draft.png)
+![save-as-draft](_img/get-started-designer/save-as-draft.png)
 
 You can edit and test your draft as needed.
 
-![edit draft](_img/ci-cd/part-1/edit-draft.png)
+![edit draft](_img/get-started-designer/edit-draft.png)
 
 When you're ready you can publish the draft to merge the changes into your build definition.
 
-![publish draft](_img/ci-cd/part-1/publish-draft.png)
+![publish draft](_img/get-started-designer/publish-draft.png)
 
 Or, if you decide to discard the draft, you can delete it from the **All Definition** tab shown above.
 
 <h3 id="queueabuild">What else can I do when I queue a build?</h3>
 
-You can queue builds [automatically](../build/triggers.md) or manually.
+You can queue builds [automatically](build/triggers.md) or manually.
 
 When you manually queue a build, you can, for a single run of the build:
 
-* Specify the [queue](../agents/pools-queues.md) into which the build goes.
+* Specify the [queue](agents/pools-queues.md) into which the build goes.
 
-* Add and modify some [variables](../build/variables.md).
+* Add and modify some [variables](build/variables.md).
 
-* Add [demands](../build/options.md#demands).
+* Add [demands](build/options.md#demands).
 
 * In a Git repository
 
- - Build a [branch](../../git/tutorial/branches.md) or a [tag](http://git-scm.com/book/en/v2/Git-Basics-Tagging).
+ - Build a [branch](../git/tutorial/branches.md) or a [tag](http://git-scm.com/book/en/v2/Git-Basics-Tagging).
 
- - Build a [commit](../../git/tutorial/commits.md).
+ - Build a [commit](../git/tutorial/commits.md).
 
 * In a TFVC repository
 
  - Specify the source version as a [label](https://msdn.microsoft.com/en-us/library/ms181439.aspx) or [changeset](https://msdn.microsoft.com/en-us/library/ms181408.aspx).
 
- - Run a private build of a [shelveset](https://msdn.microsoft.com/en-us/library/ms181403.aspx). (You can use this option on either a [hosted agent](../agents/hosted.md) or a [private agent](../agents/agents.md).)
+ - Run a private build of a [shelveset](https://msdn.microsoft.com/en-us/library/ms181403.aspx). (You can use this option on either a [hosted agent](agents/hosted.md) or a [private agent](agents/agents.md).)
 
 ### Where can I learn more about build definition settings?
 
 To learn more about build definition settings, see:
 
-* [Getting sources](../build/repository.md)
+* [Getting sources](build/repository.md)
 
-* [Tasks](../tasks/index.md)
+* [Tasks](tasks/index.md)
 
-* [Variables](../build/variables.md)
+* [Variables](build/variables.md)
 
-* [Triggers](../build/triggers.md)
+* [Triggers](build/triggers.md)
 
-* [Options](../build/options.md)
+* [Options](build/options.md)
 
-* [Retention](../policies/retention.md)
+* [Retention](policies/retention.md)
 
-* [History](../build/history.md)
+* [History](build/history.md)
 
 ### How do I programmatically create a build definition?
 
-[REST API Reference: Create a build definition](../../integrate/index.md)
+[REST API Reference: Create a build definition](../integrate/index.md)
 
 > [!NOTE]
 > You can also manage builds and build definitions from the command line or scripts using the [VSTS CLI](https://docs.microsoft.com/en-us/cli/vsts/overview?view=vsts-cli-latest).

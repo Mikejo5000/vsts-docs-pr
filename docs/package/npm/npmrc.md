@@ -66,7 +66,7 @@ To set up **npm** authentication in a build task _without_ a task runner, follow
 
 1. Add a build definition in VSTS under the **Build and Release** --> **Builds** hub.
 
-    ![Connect to feed from VSTS Package Management](../../pipelines/actions/_img/ci-cd/part-1/builds-tab-mine-new-button.png)
+    ![Connect to feed from VSTS Package Management](../../pipelines/_img/get-started-designer/builds-tab-mine-new-button.png)
 
 1. Choose your source **Team project**, **Repository**, and **Default branch** and select _Continue_
 
@@ -109,7 +109,7 @@ When using a task runner, you'll need to add the **npm Authenticate** build task
 
 1. Add a build definition in VSTS under the **Build and Release** --> **Builds** hub.
 
-    ![Connect to feed from VSTS Package Management](../../pipelines/actions/_img/ci-cd/part-1/builds-tab-mine-new-button.png)
+    ![Connect to feed from VSTS Package Management](../../pipelines/_img/get-started-designer/builds-tab-mine-new-button.png)
 
 1. Choose your source **Team project**, **Repository**, and **Default branch** and select _Continue_
 

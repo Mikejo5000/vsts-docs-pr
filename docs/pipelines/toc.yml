@@ -206,7 +206,7 @@
     - name: Configure TFS authentication
       href: agents/configure-tfs-authentication.md
   - name: Use YAML CI (config as code)
-    href: actions/build-yaml.md
+    href: get-started-yaml.md
   - name: Build more app types
     items:
     - name: Azure Cloud Service
