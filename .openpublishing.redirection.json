@@ -5417,11 +5417,6 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "docs/build-release/breadcrumb/toc.yml",
-      "redirect_url": "/vsts/pipelines/breadcrumb/toc",
-      "redirect_document_id": true
-    },
-    {
       "source_path": "docs/build-release/concepts/agents/agents.md",
       "redirect_url": "/vsts/pipelines/agents/agents",
       "redirect_document_id": true
@@ -6999,16 +6994,6 @@
     {
       "source_path": "docs/build-release/test/test-with-unified-agent-and-phases.md",
       "redirect_url": "/vsts/pipelines/test/test-with-unified-agent-and-phases",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/test/toc.yml",
-      "redirect_url": "/vsts/pipelines/test/toc",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/test/breadcrumb/toc.yml",
-      "redirect_url": "/vsts/pipelines/test/breadcrumb/toc",
       "redirect_document_id": true
     },
     {
