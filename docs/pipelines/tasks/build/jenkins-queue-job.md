@@ -25,6 +25,8 @@ None
 
 ::: moniker range="vsts"
 
+## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/JenkinsQueueJobV2.2.md)]
 
 ::: moniker-end

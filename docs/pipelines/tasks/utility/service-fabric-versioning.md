@@ -28,6 +28,8 @@ None
 
 ::: moniker range="vsts"
 
+## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/ServiceFabricUpdateManifestsV2.2.md)]
 
 ::: moniker-end

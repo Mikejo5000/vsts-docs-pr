@@ -30,6 +30,8 @@ deploy to a Service Fabric cluster.
 
 ::: moniker range="vsts"
 
+## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/ServiceFabricDeploy.1.md)]
 
 ::: moniker-end

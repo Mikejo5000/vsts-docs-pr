@@ -1,4 +1,4 @@
-## YAML snippet
+
 
 ```YAML
 # Publish Code Coverage Results

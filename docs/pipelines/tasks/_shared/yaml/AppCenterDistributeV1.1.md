@@ -1,5 +1,3 @@
-## YAML snippet
-
 ```YAML
 # App Center Distribute
 # Distribute app builds to testers and users via App Center

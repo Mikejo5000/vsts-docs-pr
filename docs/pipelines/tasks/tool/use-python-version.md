@@ -28,6 +28,8 @@ This task will fail if no Python versions are found in the tool cache.
 
 ::: moniker range="vsts"
 
+## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/UsePythonVersionV0.0.md)]
 
 ::: moniker-end

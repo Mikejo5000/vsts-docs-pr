@@ -27,6 +27,8 @@ None
 
 ::: moniker range="vsts"
 
+## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/NodeToolV0.0.md)]
 
 ::: moniker-end

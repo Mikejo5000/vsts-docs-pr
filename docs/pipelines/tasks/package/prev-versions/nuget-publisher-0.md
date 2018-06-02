@@ -19,6 +19,8 @@ ms.date: 08/10/2016
 
 None
 
+## YAML snippet
+
 [!INCLUDE [temp](../../_shared/yaml/NuGetPublisherV0.0.md)]
 
 ## Arguments

@@ -33,6 +33,8 @@ See [https://docs.microsoft.com/azure/service-fabric/service-fabric-docker-compo
 
 ::: moniker range="vsts"
 
+## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/ServiceFabricComposeDeploy.0.md)]
 
 ::: moniker-end

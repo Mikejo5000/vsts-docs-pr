@@ -1,5 +1,3 @@
-## YAML snippet
-
 ```YAML
 # Chef Knife
 # Run Scripts with knife commands on your chef workstation

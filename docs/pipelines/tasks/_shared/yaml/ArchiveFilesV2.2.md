@@ -1,5 +1,3 @@
-## YAML snippet
-
 ```YAML
 # Archive Files
 # Archive files using compression formats such as .7z, .rar, .tar.gz, and .zip.

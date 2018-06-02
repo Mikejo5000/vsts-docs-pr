@@ -26,6 +26,8 @@ None
 
 ::: moniker range="vsts"
 
+## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/AzureMonitorV0.0.md)]
 
 ::: moniker-end

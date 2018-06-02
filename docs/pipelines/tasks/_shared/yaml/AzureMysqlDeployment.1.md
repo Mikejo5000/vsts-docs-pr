@@ -1,5 +1,3 @@
-## YAML snippet
-
 ```YAML
 # Azure Database for Mysql Deployment
 # This is an early preview. Run your scripts and make changes to your Azure DB for Mysql​.

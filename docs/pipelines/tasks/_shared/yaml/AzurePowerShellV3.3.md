@@ -1,5 +1,3 @@
-## YAML snippet
-
 ```YAML
 # Azure PowerShell
 # Run a PowerShell script within an Azure environment

@@ -1,4 +1,4 @@
-## YAML snippet
+
 
 ```YAML
 # Publish To Azure Service Bus

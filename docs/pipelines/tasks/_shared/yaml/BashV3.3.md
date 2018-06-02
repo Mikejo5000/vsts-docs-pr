@@ -1,5 +1,3 @@
-## YAML snippet
-
 ```YAML
 # Bash
 # This is an early preview. Run a Bash script on macOS, Linux, or Windows

@@ -1,4 +1,4 @@
-## YAML snippet
+
 
 ```YAML
 # Decrypt File (OpenSSL)

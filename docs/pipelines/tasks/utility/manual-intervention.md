@@ -24,6 +24,8 @@ Can be used in only an [agentless phase](../../process/server-phases.md) of a re
 
 ::: moniker range="vsts"
 
+## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/ManualInterventionV8.8.md)]
 
 ::: moniker-end

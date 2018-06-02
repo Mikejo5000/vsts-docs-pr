@@ -23,6 +23,8 @@ xcode
 
 ::: moniker range="vsts"
 
+## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/Xcode.5.md)]
 
 ::: moniker-end

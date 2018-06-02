@@ -1,4 +1,4 @@
-## YAML snippet
+
 
 ```YAML
 # Run Functional Tests

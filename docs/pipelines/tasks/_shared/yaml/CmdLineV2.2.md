@@ -1,5 +1,3 @@
-## YAML snippet
-
 ```YAML
 # Command Line
 # This is an early preview. Run a command line script using cmd.exe on Windows and bash on macOS and Linux.

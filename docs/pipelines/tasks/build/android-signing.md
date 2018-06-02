@@ -27,6 +27,8 @@ The build agent must have the following capabilities:
 
 ::: moniker range="vsts"
 
+## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/AndroidSigning.2.md)]
 
 ::: moniker-end

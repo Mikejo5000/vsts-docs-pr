@@ -17,6 +17,8 @@ monikerRange: 'vsts'
 
 ::: moniker range="vsts"
 
+## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/AzureNLBManagementV1.1.md)]
 
 ::: moniker-end

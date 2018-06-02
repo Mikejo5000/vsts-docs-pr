@@ -26,6 +26,8 @@ Xamarin.iOS
 
 ::: moniker range="vsts"
 
+## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/XamariniOSV2.2.md)]
 
 ::: moniker-end

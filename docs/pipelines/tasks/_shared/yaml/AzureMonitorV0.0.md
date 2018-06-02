@@ -1,5 +1,3 @@
-## YAML snippet
-
 ```YAML
 # Query Azure Monitor Alerts
 # Observe the configured Azure monitor rules for active alerts.

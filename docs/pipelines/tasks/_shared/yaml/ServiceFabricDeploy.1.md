@@ -1,4 +1,4 @@
-## YAML snippet
+
 
 ```YAML
 # Service Fabric Application Deployment

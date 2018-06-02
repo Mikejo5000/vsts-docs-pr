@@ -29,6 +29,8 @@ In addition to Linux, macOS is partially supported (see [Q&A](#is-this-task-supp
 
 ::: moniker range="vsts"
 
+## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/CopyFilesOverSSHV0.0.md)]
 
 ::: moniker-end

@@ -1,5 +1,3 @@
-## YAML snippet
-
 ```YAML
 # Azure Monitor Alerts
 # Configure alerts on available metrics for an Azure resource

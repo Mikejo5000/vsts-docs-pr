@@ -1,5 +1,3 @@
-## YAML snippet
-
 ```YAML
 # Azure Cloud Service Deployment
 # Deploy an Azure Cloud Service

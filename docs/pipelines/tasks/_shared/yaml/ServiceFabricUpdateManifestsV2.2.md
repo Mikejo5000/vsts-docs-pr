@@ -1,4 +1,4 @@
-## YAML snippet
+
 
 ```YAML
 # Update Service Fabric Manifests

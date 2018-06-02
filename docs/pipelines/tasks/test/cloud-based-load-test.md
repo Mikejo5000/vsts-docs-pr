@@ -36,6 +36,8 @@ The build agent must have the following capabilities:
 
 ::: moniker range="vsts"
 
+## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/RunLoadTestV1.1.md)]
 
 ::: moniker-end

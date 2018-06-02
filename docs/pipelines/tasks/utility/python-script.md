@@ -17,6 +17,8 @@ monikerRange: 'vsts'
 
 ::: moniker range="vsts"
 
+## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/PythonScriptV0.0.md)]
 
 ::: moniker-end

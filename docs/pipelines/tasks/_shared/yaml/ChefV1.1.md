@@ -1,5 +1,3 @@
-## YAML snippet
-
 ```YAML
 # Chef
 # Deploy to Chef environments by editing environment attributes

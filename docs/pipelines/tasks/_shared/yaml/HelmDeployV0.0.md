@@ -1,4 +1,4 @@
-## YAML snippet
+
 
 ```YAML
 # Package and deploy Helm charts

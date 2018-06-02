@@ -33,6 +33,8 @@ If your code depends on NuGet packages, make sure to add this step before your [
 
 ::: moniker range="vsts"
 
+## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/NuGetCommandV2.2.md)]
 
 ::: moniker-end
@@ -282,6 +284,8 @@ This task is unable to publish NuGet packages to a TFS Package Management feed t
 ## Custom NuGet command
 
 ::: moniker range="vsts"
+
+## YAML snippet
 
 [!INCLUDE [temp](../_shared/yaml/NuGetV0.0.md)]
 

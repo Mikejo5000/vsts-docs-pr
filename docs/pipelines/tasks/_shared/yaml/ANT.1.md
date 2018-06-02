@@ -1,5 +1,3 @@
-## YAML snippet
-
 ```YAML
 # Ant
 # Build with Apache Ant

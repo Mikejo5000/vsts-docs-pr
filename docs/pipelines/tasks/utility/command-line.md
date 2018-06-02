@@ -27,6 +27,8 @@ None
 
 ::: moniker range="vsts"
 
+## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/CmdLineV2.2.md)]
 
 ::: moniker-end

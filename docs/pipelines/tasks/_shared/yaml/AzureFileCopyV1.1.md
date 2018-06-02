@@ -1,5 +1,3 @@
-## YAML snippet
-
 ```YAML
 # Azure File Copy
 # Copy files to Azure blob or VM(s)

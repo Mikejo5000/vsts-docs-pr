@@ -1,5 +1,3 @@
-## YAML snippet
-
 ```YAML
 # Azure VM scale set Deployment
 # Deploy Virtual Machine scale set image

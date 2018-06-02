@@ -1,5 +1,3 @@
-## YAML snippet
-
 ```YAML
 # CMake
 # Build with the CMake cross-platform build system

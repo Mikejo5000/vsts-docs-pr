@@ -1,4 +1,4 @@
-## YAML snippet
+
 
 ```YAML
 # Cloud-based Apache JMeter Load Test

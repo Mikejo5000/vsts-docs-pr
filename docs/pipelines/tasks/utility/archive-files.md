@@ -24,6 +24,8 @@ None
 
 ::: moniker range="vsts"
 
+## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/ArchiveFilesV2.2.md)]
 
 ::: moniker-end

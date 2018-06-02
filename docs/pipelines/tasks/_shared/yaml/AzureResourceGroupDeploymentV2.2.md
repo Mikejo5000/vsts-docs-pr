@@ -1,5 +1,3 @@
-## YAML snippet
-
 ```YAML
 # Azure Resource Group Deployment
 # Deploy an Azure resource manager (ARM) template to a resource group. You can also start, stop, delete, deallocate all Virtual Machines (VM) in a resource group

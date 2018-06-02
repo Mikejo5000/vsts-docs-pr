@@ -1,5 +1,3 @@
-## YAML snippet
-
 ```YAML
 # App Center Test
 # Test app packages with Visual Studio App Center.

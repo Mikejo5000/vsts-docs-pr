@@ -1,5 +1,3 @@
-## YAML snippet
-
 ```YAML
 # Invoke Azure Function
 # Invoke Azure function as a part of your process.

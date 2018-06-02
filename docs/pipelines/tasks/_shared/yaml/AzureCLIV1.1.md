@@ -1,5 +1,3 @@
-## YAML snippet
-
 ```YAML
 # Azure CLI
 # Run a Shell or Batch script with Azure CLI commands against an azure subscription

@@ -1,4 +1,4 @@
-## YAML snippet
+
 
 ```YAML
 # SQL Server Database Deploy

@@ -21,6 +21,8 @@ monikerRange: '>= tfs-2015'
 
 ::: moniker range="vsts"
 
+## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/BatchScriptV1.1.md)]
 
 ::: moniker-end

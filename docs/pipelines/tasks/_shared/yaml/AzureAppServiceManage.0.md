@@ -1,5 +1,3 @@
-## YAML snippet
-
 ```YAML
 # Azure App Service Manage
 # Start, Stop, Restart, Slot swap, Install site extensions or Enable Continuous Monitoring for an Azure App Service

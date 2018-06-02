@@ -1,4 +1,4 @@
-## YAML snippet
+
 
 ```YAML
 # Install SSH Key

@@ -1,4 +1,4 @@
-## YAML snippet
+
 
 ```YAML
 # Azure SQL Database Deployment

@@ -1,5 +1,3 @@
-## YAML snippet
-
 ```YAML
 # Azure Key Vault
 # Download Azure Key Vault Secrets

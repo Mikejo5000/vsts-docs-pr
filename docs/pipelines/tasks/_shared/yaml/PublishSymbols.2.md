@@ -1,4 +1,4 @@
-## YAML snippet
+
 
 ```YAML
 # Index Sources & Publish Symbols

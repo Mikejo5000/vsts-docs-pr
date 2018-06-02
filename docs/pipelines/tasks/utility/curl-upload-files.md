@@ -25,6 +25,8 @@ curl
 
 ::: moniker range="vsts"
 
+## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/CUrlUploaderV2.2.md)]
 
 ::: moniker-end

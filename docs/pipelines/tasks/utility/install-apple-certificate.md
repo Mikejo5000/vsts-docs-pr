@@ -28,6 +28,8 @@ xcode
 
 ::: moniker range="vsts"
 
+## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/InstallAppleCertificateV2.2.md)]
 
 ::: moniker-end

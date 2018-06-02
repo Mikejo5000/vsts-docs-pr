@@ -1,4 +1,4 @@
-## YAML snippet
+
 
 ```YAML
 # Java Tool Installer

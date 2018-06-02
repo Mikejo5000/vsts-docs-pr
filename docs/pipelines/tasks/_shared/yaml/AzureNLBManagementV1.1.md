@@ -1,5 +1,3 @@
-## YAML snippet
-
 ```YAML
 # Azure Network Load Balancer
 # Connect/Disconnect an Azure virtual machine's network interface to a Load Balancer's backend address pool

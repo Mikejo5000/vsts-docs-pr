@@ -1,5 +1,3 @@
-## YAML snippet
-
 ```YAML
 # Android Signing
 # Sign and align Android APK files
