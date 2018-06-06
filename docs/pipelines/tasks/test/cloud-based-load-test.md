@@ -1,5 +1,5 @@
 ---
-title: VSTS and TFS Build and Test - Cloud-based Load Test step
+title: VSTS and TFS Build and Test - Cloud-based Load Test task
 description: Runs the load test in cloud with a build or release definition with VSTS to integrate cloud-based load tests into your build and release pipelines
 ms.assetid: 4D10E9D5-2269-4A95-8670-2901DFE4CBB1
 ms.prod: devops
@@ -53,7 +53,7 @@ The build agent must have the following capabilities:
 
 ## Examples
 
-* [Load test your app in the cloud](../../../load-test/index.md)
+* [Load test your app in the cloud](../../../test/load-test/index.md)
 * [Scheduling Load Test Execution](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/23/scheduling-load-test-execution.aspx)
 
 ## More Information

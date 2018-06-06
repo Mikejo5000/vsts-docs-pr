@@ -9,13 +9,12 @@ ms.manager: douge
 ms.author: alewis
 author: andyjlewis
 ms.date: 10/20/2016
-monikerRange: '>= tfs-2015'
+monikerRange: '>= tfs-2015 < vsts'
 ---
-
 
 # Concurrent release pipelines in Team Foundation Server
 
-**[VSTS](concurrent-pipelines-ts.md) | TFS 2018 | TFS 2017**
+**[VSTS](concurrent-jobs-vsts.md) | TFS 2018 | TFS 2017**
 
 This article describes the licensing model for Release Management in Team Foundation Server 2017 (TFS 2017) or newer. We don't charge you for Team Foundation Build (TFBuild) so long as you have a TFS Client Access License (CAL).
 
@@ -122,4 +121,4 @@ In TFS 2015, so long as your users have a TFS CAL, they can use release manageme
 
 ### How is release management licensed in VSTS?
 
-See [concurrent pipelines in VSTS](concurrent-pipelines-ts.md).
+See [concurrent pipelines in VSTS](concurrent-jobs-vsts.md).

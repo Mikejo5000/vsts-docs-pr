@@ -30,7 +30,7 @@ test early, and ship faster.
 > To set up Visual Studio without VSTS, 
 > learn how to [get started here](https://msdn.microsoft.com/library/e2h7fzkw.aspx). 
 > To host your own server, 
-> learn how to [install and set up Team Foundation Server](../tfs-server/install/get-started.md).
+> learn how to [install and set up Team Foundation Server](/tfs/server/install/get-started).
 
 VSTS is free for 
 [up to 5 users with access to Basic features](https://www.visualstudio.com/products/visual-studio-team-services-feature-matrix-vs) 
@@ -114,6 +114,6 @@ or change them later in Visual Studio options.
 or [Team Foundation](../tfvc/share-your-code-in-tfvc-vs.md) version control
 
 *	[Create your backlog](../work/backlogs/create-your-backlog.md) to organize your work, 
-	[manage your process](../work/customize/process/manage-process.md), 
-	or [customize your process](../work/customize/process/customize-process.md)
+	[manage your process](../organizations/settings/work/manage-process.md), 
+	or [customize your process](../organizations/settings/work/customize-process.md)
 

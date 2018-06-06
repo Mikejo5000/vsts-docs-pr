@@ -13,11 +13,11 @@ monikerRange: '>= tfs-2015'
 ---
 
 
-# Run a private agent behind a web proxy
+# Run a self-hosted agent behind a web proxy
 
 **VSTS | TFS 2018 | TFS 2017 | TFS 2015**
 
-This topic explains how to run a v2 private agent behind a web proxy. 
+This topic explains how to run a v2 self-hosted agent behind a web proxy. 
 
 ::: moniker range=">= tfs-2018"
 
@@ -25,7 +25,7 @@ This topic explains how to run a v2 private agent behind a web proxy.
 
 (Applies to agent version 2.122 and newer.)
 
-When your private agent is behind a web proxy, you can:
+When your self-hosted agent is behind a web proxy, you can:
 
 * Allow your agent to connect to VSTS or TFS behind a web proxy.
 
@@ -86,7 +86,7 @@ To enable the agent to run behind a web proxy
 
 After configuring proxy for agent, agent infrastructure will start talk to VSTS/TFS service through the web proxy specified in the `.proxy` file.  
 
-Since the code for `Get Source` step in build job and `Download Artifact` step in release job are also bake into agent, those steps will also follow the agent proxy configuration from `.proxy` file.  
+Since the code for the `Get Source` task in builds and `Download Artifact` task in releases are also baked into the agent, those tasks will follow the agent proxy configuration from the `.proxy` file.  
 
 Agent will expose proxy configuration via environment variables for every task execution, task author need to use `vsts-task-lib` methods to retrieve back proxy configuration and handle proxy with their task.
 

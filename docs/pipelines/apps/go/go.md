@@ -63,11 +63,11 @@ You are taken to the **Build and Release** hub and asked to **Select a template*
 
 1. In the right panel, search for `Go`, select **Go (Preview)**, and then click **Apply**.
 
- You now see all the tasks that were automatically added to the build definition by the template. These are the steps that will automatically run every time you push code changes.
+ You now see all the tasks that were automatically added to the build definition by the template. These are the tasks that will automatically run every time you push code changes.
 
 1. For the **Agent queue**:
 
- * **VSTS:** Select _Hosted Linux_, _Hosted macOS_, or _Hosted VS2017_. This will use a hosted agent with Go installed.
+ * **VSTS:** Select _Hosted Linux_, _Hosted macOS_, or _Hosted VS2017_. This will use a Microsoft-hosted agent with Go installed.
 
  * **TFS:** Select a queue that includes an agent with Go installed.
 
@@ -79,13 +79,9 @@ You are taken to the **Build and Release** hub and asked to **Select a template*
 
   ### TFS 2018 and 2017.2
 
-1. In the right panel, select **Empty**, and then click **Apply**. This template allows starting from scratch and adding your own build steps.
+1. In the right panel, select **Empty**, and then click **Apply**. This template allows starting from scratch and adding your own build tasks.
 
-1. For the **Agent queue**:
-
- * **VSTS:** Select _Hosted Linux_, _Hosted macOS_, or _Hosted VS2017_. This will use a hosted agent with Go installed.
-
- * **TFS:** Select a queue that includes an agent with Go installed.
+1. For the **Agent queue**, select a queue that includes an agent with Go installed.
 
 1. Click **Get sources** and observe that the new build definition is automatically linked to your repository.
 
@@ -113,11 +109,11 @@ Navigate to the **Builds** tab of the **Build and Release** hub in VSTS or TFS, 
 
 1. In the right panel, search for `Go`, select **Go (Preview)**, and then click **Apply**.
 
- You now see all the tasks that were automatically added to the build definition by the template. These are the steps that will automatically run every time you push code changes.
+ You now see all the tasks that were automatically added to the build definition by the template. These are the tasks that will automatically run every time you push code changes.
 
 1. For the **Agent queue**:
 
- * **VSTS:** Select _Hosted Linux_, _Hosted macOS_, or _Hosted VS2017_. This will use a hosted agent with Go installed.
+ * **VSTS:** Select _Hosted Linux_, _Hosted macOS_, or _Hosted VS2017_. This will use a Microsoft-hosted agent with Go installed.
 
  * **TFS:** Select a queue that includes an agent with Go installed.
 
@@ -129,13 +125,9 @@ Navigate to the **Builds** tab of the **Build and Release** hub in VSTS or TFS, 
 
   ### TFS 2018 and 2017.2
 
-1. In the right panel, select **Empty**, and then click **Apply**. This template allows starting from scratch and adding your own build steps.
+1. In the right panel, select **Empty**, and then click **Apply**. This template allows starting from scratch and adding your own build tasks.
 
-1. For the **Agent queue**:
-
- * **VSTS:** Select _Hosted Linux_, _Hosted macOS_, or _Hosted VS2017_. This will use a hosted agent with Go installed.
-
- * **TFS:** Select a queue that includes an agent with Go installed.
+1. For the **Agent queue**, select a queue that includes an agent with Go installed.
 
 1. Click **Get sources** and select your version control repository. You'll need to authorize access to it.
 

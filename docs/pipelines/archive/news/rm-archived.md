@@ -91,7 +91,7 @@ Your VSTS account includes these free amounts:
   that you can use. You can also buy more private pipelines.
 
 For more information, see
-[Concurrent build and release pipelines in VSTS](../../licensing/concurrent-pipelines-ts.md)
+[Concurrent build and release pipelines in VSTS](../../licensing/concurrent-jobs-vsts.md)
 and [Concurrent release pipelines in TFS](../../licensing/concurrent-pipelines-tfs.md).
 
 If you previously bought private agents in the Azure portal, they'll
@@ -191,7 +191,7 @@ We're also announcing general availability of Release Management in VSTS. Also, 
 
 [Concurrent pipelines for your releases in Team Foundation Server](../../licensing/concurrent-pipelines-tfs.md)
 
-[Concurrent pipelines for your builds and releases in VSTS](../../licensing/concurrent-pipelines-ts.md)
+[Concurrent pipelines for your builds and releases in VSTS](../../licensing/concurrent-jobs-vsts.md)
 
 <a name="update-oct12-16"></a>
 ### October 12, 2016 Update (VSTS)
@@ -310,8 +310,8 @@ capabilities, see
 
 You can now pause execution during deployment to an environment.
 Including a **Manual Intervention** task in an environment enables you to temporarily halt a deployment,
-perform manual steps, and then resume further automated steps.
-You can also reject the deployment and prevent further steps from
+perform manual tasks, and then resume further automated tasks.
+You can also reject the deployment and prevent further tasks from
 executing after a manual intervention.
 
 <a name="sep2-servendpoint"></a>
@@ -570,7 +570,7 @@ Users of Jenkins CI can now create releases more easily by using the
 **[VS VSTS Continuous Deployment Plugin](https://wiki.jenkins-ci.org/display/JENKINS/VS+Team+Services+Continuous+Deployment+Plugin)**,
 available from the Jenkins website. This plugin triggers a release in
 TFS or VSTS when a build completes successfully. Use it to
-add post-build steps right into Jenkins CI projects to create a new release.
+add post-build tasks right into Jenkins CI projects to create a new release.
 This, along with the ability for Release Management to understand and download
 Jenkins artifacts, provides great end-to-end integration between these two tools.
 

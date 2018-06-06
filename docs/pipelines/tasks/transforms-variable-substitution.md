@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 # File transforms and variable substitution reference
 
 Some tasks, such as the [Azure App Service Deploy](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureRmWebAppDeployment) task
-version 3 and later and the [IIS Web App Deploy](deploy/iis-deploy.md) task, allow users to configure the package based on the environment specified.
+version 3 and later and the [IIS Web App Deploy](deploy/iis-web-app-deployment-on-machine-group.md) task, allow users to configure the package based on the environment specified.
 These tasks use **msdeploy.exe**, which supports the overriding of values in the **web.config** file with values from the **parameters.xml** file.
 
 Configuration substitution is specified in the **File Transform and Variable Substitution Options**
@@ -171,7 +171,7 @@ for `Web.config` with `Web.Release.config` followed by `Web.Production.config`.
 <a name="xmlvarsubs"></a> 
 ## XML variable substitution
 
-This feature enables you to modify configuration settings in configuration files This feature enables you to modify configuration settings in configuration files (`*.config` files)
+This feature enables you to modify configuration settings in configuration files (`*.config` files)
 inside web packages and XML parameters files (`parameters.xml`).
 In this way, the same package can be configured based on the environment to which it will be deployed.
  

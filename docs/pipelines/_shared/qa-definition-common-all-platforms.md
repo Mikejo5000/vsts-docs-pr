@@ -6,9 +6,9 @@ ms.topic: include
 
 [Build your app](../apps/index.md)
 
-### What other kinds of build steps are available?
+### What other kinds of build tasks are available?
 
-[Specify your build steps](../tasks/index.md)
+[Specify your build tasks](../tasks/index.md)
 
 
 ### How do we protect our codebase from build breaks?
@@ -20,7 +20,7 @@ ms.topic: include
 
 ### How do I modify other parts of my build definition?
 
-* [Specify your build steps](../tasks/index.md) to run tests, scripts, and a wide range of other processes.
+* [Specify your build tasks](../tasks/index.md) to run tests, scripts, and a wide range of other processes.
 
 * [Specify build options](../build/options.md) such as specifying how completed builds are named, building multiple configurations, creating work items on failure.
 
@@ -33,7 +33,7 @@ ms.topic: include
 
 ### I selected parallel multi-configuration, but only one build is running at a time.
 
-If you're using VSTS, you might need more concurrent pipelines. See [Concurrent build and release pipelines in VSTS](../licensing/concurrent-pipelines-ts.md).
+If you're using VSTS, you might need more concurrent jobs. See [Concurrent build and release pipelines in VSTS](../licensing/concurrent-jobs-vsts.md).
 
 
 ### How do I see what has changed in my build definition?

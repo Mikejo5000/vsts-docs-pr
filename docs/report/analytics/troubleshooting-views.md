@@ -15,12 +15,12 @@ ms.date: 04/04/2018
 
 # Resolve errors associated with an Analytics view
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)] 
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
 An Analytics view provides a simplified way to specify the filter criteria for a Power BI report based on the Analytics Service data store. The Analytics Service provides the reporting platform for Visual Studio Team Services (VSTS). You manage Analytics views in the web portal for VSTS and then access them with the [Power BI Connector](../powerbi/data-connector-connect.md). 
 
 
-[!INCLUDE [temp](../_shared/analytics-view-availability.md)]
+[!INCLUDE [temp](../_shared/analytics-view-availability.md)]
 
 ## Resolve size warnings
 
@@ -36,13 +36,13 @@ Views that pull a large amount of data, might take a long time to refresh and lo
 
 ### **Error: The field 'FieldName' already exists**
 
-This error indicates that one of your project's [custom fields](../../work/customize/process/customize-process-field.md) is a duplicate of one of the [Analytics Service fields](../extend-analytics/data-model-analytics-service.md). 
+This error indicates that one of your project's [custom fields](../../organizations/settings/work/customize-process-field.md) is a duplicate of one of the [Analytics Service fields](../extend-analytics/data-model-analytics-service.md). 
 
 To resolve this error, rename your custom field.
 
 ### **Error: Field doesn't exists anymore**
 
-This error means that one of your [work items filters](analytics-views-create.md#2-specify-work-items-filters) or [view fields](analytics-views-create.md#3-select-the-fields-to-appear-in-the-report) references a field that was removed from your [team project process](../../work/customize/process/customize-process-field.md). 
+This error means that one of your [work items filters](analytics-views-create.md#2-specify-work-items-filters) or [view fields](analytics-views-create.md#3-select-the-fields-to-appear-in-the-report) references a field that was removed from your [team project process](../../organizations/settings/work/customize-process-field.md). 
 
 To resolve this error, [edit your view](analytics-views-manage.md#edit-an-existing-view) and remove the filter or field from the view's definition. 
 

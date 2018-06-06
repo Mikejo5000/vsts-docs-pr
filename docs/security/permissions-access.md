@@ -55,7 +55,7 @@ Feeds have three levels of access: Owners, Contributors, and Readers. Owners can
 
 ## Test
 
-You can define and manage manual tests from the web portal, **Test** hub. For an overview of manual test features and functions, see [Testing overview](../manual-test/index.md).  
+You can define and manage manual tests from the web portal, **Test** hub. For an overview of manual test features and functions, see [Testing overview](../test/index.md).  
 
 You set [test permissions at the team project level](set-project-collection-level-permissions.md) from the admin context Security page.  
 
@@ -70,7 +70,7 @@ In addition to the permissions set at the [project level via the built-in groups
 The team administrator role supports configuration of team settings. To be added as a team administrator, see [Configure team settings and add team administrators](../work/scale/add-team-administrator.md). 
 
 >[!NOTE]  
->There are no UI permissions associated with [managing tags](../work/track/add-tags-to-work-items.md). Instead, you can manage them using the [TFSSecurity command line tool](../tfs-server/command-line/tfssecurity-cmd.md#collection-level-permissions).   
+>There are no UI permissions associated with [managing tags](../work/track/add-tags-to-work-items.md). Instead, you can manage them using the [TFSSecurity command line tool](/tfs/server/ref/command-line/tfssecurity-cmd#collection-level-permissions).   
 
 
 [!INCLUDE [temp](_shared/work.md)]
@@ -106,7 +106,7 @@ You set [permissions](../report/analytics/analytics-security.md) for the service
 To manage notifications, see [Manage personal notifications](../notifications/manage-personal-notifications.md) and [Manage team notifications](../collaborate/manage-team-notifications.md).
 
 >[!NOTE]  
->There are no UI permissions associated with managing notifications. Instead, you can manage them using the [TFSSecurity command line tool](../tfs-server/command-line/tfssecurity-cmd.md#collection-level-permissions).
+>There are no UI permissions associated with managing notifications. Instead, you can manage them using the [TFSSecurity command line tool](/tfs/server/ref/command-line/tfssecurity-cmd#collection-level-permissions).
 
 [!INCLUDE [temp](_shared/collaborate.md)]
 

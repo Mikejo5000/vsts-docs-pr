@@ -19,7 +19,7 @@ monikerRange: '>= tfs-2013'
 
 ::: moniker range=">= tfs-2015"
 
-VSTS and Team Foundation Server help you implement a continuous integration (CI) and deployment (CD) pipeline for any app. Tutorials, references, and other documentation show you how to configure and manage CI/CD for the app and platform of your choice.
+VSTS and Team Foundation Server help you implement a continuous integration (CI), test, and deployment (CD) pipeline for any app. Tutorials, references, and other documentation show you how to configure and manage CI/CD for the app and platform of your choice.
 
 ## 5-Minute quickstarts
 
@@ -27,7 +27,7 @@ VSTS and Team Foundation Server help you implement a continuous integration (CI)
 
 <!-- Converting to icon48 format, this gets cleaner in YAML -->
 <div class="ico48Case halfStack">
-<div class="ico48Link"><a href="apps/mobile/android.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/en-us/media/logos/logo_android.svg"><span>Android</span></a></div>
+<div class="ico48Link"><a href="languages/android.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/en-us/media/logos/logo_android.svg"><span>Android</span></a></div>
 <div class="ico48Link"><a href="apps/aspnet/build-aspnet-4.md"><img width="48" height="48" alt="" src="_img/index/logo_net.svg"><span>ASP.NET</span></a></div>
 <div class="ico48Link"><a href="apps/aspnet/build-aspnet-core.md"><img width="48" height="48" alt="" src="_img/index/logo_net.svg"><span>ASP.NET Core</span></a></div>
 <div class="ico48Link"><a href="apps/c-cpp/gcc.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg"><span>C/C++ with GCC</span></a></div>
@@ -81,7 +81,7 @@ VSTS and Team Foundation Server help you implement a continuous integration (CI)
 - [Release definitions](release/index.md)
 - [Build and release agents](agents/agents.md)
 - [Build and release tasks](process/tasks.md)  
-- [Licensing and build and release pipelines](licensing/concurrent-pipelines-ts.md)
+- [Licensing and build and release pipelines](licensing/concurrent-jobs-vsts.md)
 
 ## Resources
 
@@ -89,6 +89,9 @@ VSTS and Team Foundation Server help you implement a continuous integration (CI)
 - [What is continuous delivery?](/azure/devops/what-is-continuous-delivery)  
 - [What is DevOps?](/azure/devops/what-is-devops)   
 - [Build and release marketplace extensions](https://marketplace.visualstudio.com/search?target=VSTS&category=Build%20and%20release&sortBy=Downloads)
+- [Manual and exploratory testing](../test/index.md)
+- [Load and performance testing](../test/load-test/index.md)
+- [Unit testing](https://docs.microsoft.com/en-gb/visualstudio/test/unit-test-your-code)
 
 ::: moniker-end
 

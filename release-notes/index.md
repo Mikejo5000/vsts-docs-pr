@@ -2,7 +2,7 @@
 title: VSTS Features Timeline
 author: alexcnichols
 ms.author: alexn
-ms.date: 5/18/2018
+ms.date: 6/4/2018
 ms.topic: article
 ms.prod: devops
 ms.technology: vsts-release-notes
@@ -53,7 +53,6 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 |Dashboards – Create dashboard separate from a team|Reporting|2019|
 |Analytics – Automated Test data|Reporting|2019|
 |[Encryption at rest for disks used by code and work item search](https://blogs.msdn.microsoft.com/devops/2017/09/05/visual-studio-team-services-encryption-at-rest/)|Admin|N/A|
-|[Multiple accounts per “organization”](https://blogs.msdn.microsoft.com/devops/2016/01/11/how-we-plan-to-enable-creating-multiple-collections-per-account/)|Admin|N/A|
 |[Conditional Access Policy when using Alternate Authentication (e.g. Personal Access Tokens)](https://blogs.msdn.microsoft.com/devops/2018/01/30/supporting-azuread-conditional-access-policy-across-vsts/)|Admin|N/A|
 |Publisher certification process|Marketplace|N/A|
 |CC/BCC (carbon copy) recipient support for email notifications|Notifications|2019|
@@ -73,7 +72,9 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 |Release traceability – Work Item integration|Release|TBD|
 |Configuration as code (YAML) releases - Public Preview|Release|TBD|
 |Package Management – Maven Upstream support|Package|TBD|
-|[Administration – Improved Alternate Authentication experience](https://blogs.msdn.microsoft.com/devops/2017/07/14/improved-alternate-authentication-experience/)|Admin|TBD|
+|[Improved Alternate Authentication experience](https://blogs.msdn.microsoft.com/devops/2017/07/14/improved-alternate-authentication-experience/)|Admin|TBD|
+|[Azure Active Directory users in Microsoft Account-backed account](https://blogs.msdn.microsoft.com/devops/2018/03/28/deadline-extended-for-connecting-vsts-accounts-to-azuread/)|Admin|N/A|
+|Connect your VSTS account to Azure Active Directory from within VSTS|Admin|N/A|
 |Release views – support for multiple versions of extensions|Marketplace|N/A|
 
 ### 2018 Q4
@@ -81,6 +82,7 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 |Feature  |Area  |Server  |
 |---------|---------|---------|
 |Extensible Pool Providers|Build|TBD|
+|[Bring multiple accounts under and “organization”](https://blogs.msdn.microsoft.com/devops/2016/01/11/how-we-plan-to-enable-creating-multiple-collections-per-account/)|Admin|N/A|
 
 ## Current features
 
@@ -96,6 +98,21 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
     </thead>
     <tbody>
+
+        <tr>
+            <td rowspan="11">[30 May 2018](2018/may-30-vsts.md)</td>
+            <td>Import and export Inherited Processes</td><td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr><td>Customize column options in the Work Items hub</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Receive notifications when pull request policies are bypassed</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Favorite a branch from within a pull request</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Visualize release progress</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Run inline or file-based Python scripts in your pipeline</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Use Anaconda tools for data science in your pipeline</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Simplify definitions with multiple agentless tasks per phase</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Manage limits on self-hosted, concurrent CI/CD jobs</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
+        <tr><td>Streamline authentication from agent VMs to Azure Resource Manager</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Guard your user account using alternate authentication notifications</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
         <tr>
             <td rowspan="15">[7 May 2018](2018/may-07-vsts.md)</td>
             <td>Query for empty rich text fields</td><td style="background:rgb(232, 232, 232);">*2019*</td>
@@ -138,7 +155,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr><td>Perform TFVC commands right from Windows Explorer</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
         <tr><td>Chain related builds together using build completion triggers</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
-        <tr><td>Scale deployments to VMs using Deployment Groups</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Scale deployments to VMs using Deployment Groups</td><td style="background:rgb(231, 179, 249);">*2018.2*</td></tr>
         <tr><td>Build applications written in Go</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
         <tr><td>Extend release gates with task extensions</td><td style="background:rgb(231, 179, 249);">*2018.2*</td></tr>
         <tr><td>Use upstream npm packages from elsewhere in VSTS</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
@@ -155,7 +172,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr><td>Focus on important work using the Work Items hub</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
         <tr><td>Query work across the iteration schedule with +/- @CurrentIteration</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
         <tr><td>Clarify query iteration schedules with the @CurrentIteration Team parameter</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
-        <tr><td>Improve release times by partially downloading artifacts</td><td style="background:rgb(231, 179, 249);">*2018.2*</td></tr>
+        <tr><td>Improve release times by partially downloading artifacts</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
         <tr><td>Retain more control of your app by deploying your Azure DevOps Project to a Virtual machine</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
         <tr><td>Improve code quality with the latest extensions from SonarSource</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
         <tr><td>Trace GitHub sources to builds using build tags</td><td style="background:rgb(231, 179, 249);">*2018.2*</td></tr>
@@ -3630,8 +3647,8 @@ Versions in the “Server” column are linked to the appropriate download locat
 <tbody>
         <tr>
           <td style="background:rgb(231, 179, 249);">2018.2</td>
-          <td>TBD</td>
-          <td>TBD</td>
+          <td>May 7, 2018</td>
+          <td>16.131.27701.1</td>
         </tr>
          <tr>
           <td style="background:rgb(216, 194, 239);">[2018.1](https://aka.ms/tfs2018-update1)</td>

@@ -16,7 +16,7 @@ ms.date: 04/04/2017
 
 By using categories, you can generate flexible reports, and support increased integration across team projects. You can more easily manage multiple work item types (WITs) as a group as well as WITs that are named differently. Also, you can use the **In Group** query operator to filter a list of work items based on the category to which they belong.  
   
-Categories associate one or more WITs as belonging to the same category. The [Agile tools](../../../settings/about-teams-and-settings.md) rely on the default category definitions, many of which specify a single WIT per category.  
+Categories associate one or more WITs as belonging to the same category. The [Agile tools](../../../organizations/settings/about-teams-and-settings.md) rely on the default category definitions, many of which specify a single WIT per category.  
   
 Here's an example of the feature and bug category entries within the Categories XML definition file:  
   
@@ -69,8 +69,8 @@ If you have created WITs that act in similar ways and you want to treat them in 
   
 -   [Code Review Request and Code Review Response](../../../tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md )    
 -   [Feedback Request and Feedback Response](../../../feedback/get-feedback.md)    
--   [Shared Steps and Shared Parameter](../../../manual-test/getting-started/create-test-cases.md)    
--   [Test Plan and Test Suite](../../../manual-test/getting-started/create-a-test-plan.md)  
+-   [Shared Steps and Shared Parameter](../../../test/create-test-cases.md)    
+-   [Test Plan and Test Suite](../../../test/create-a-test-plan.md)  
   
 ### Process configuration  
 Process configuration defines the layout and fields used in the display of the product backlog,  sprint backlogs, and portfolio backlogs. You view these pages through the web portal. Process configuration uses categories to [configure and customize these functions](process-configuration-xml-element.md). Also, note the following restrictions:  

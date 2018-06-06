@@ -1,6 +1,6 @@
 ---
 title: VSTS and Team Foundation Server Build and Deploy - Azure CLI
-description: VSTS and Team Foundation Server build task step to run a shell or batch script containing Microsoft Azure CLI commands
+description: VSTS and Team Foundation Server build task to run a shell or batch script containing Microsoft Azure CLI commands
 ms.assetid: C6F8437B-FF52-4EA1-BCB0-F34924303CA8
 ms.prod: devops
 ms.technology: devops-cicd
@@ -34,7 +34,7 @@ please [contact us](mailto:RM_Customer_Queries@microsoft.com).
 - Both versions of Azure-CLI can coexist in the same system, but task V1.0 logs into the Python based AZ CLI using the user's subscription, whereas task V0.0 logs into the node based Azure CLI. Therefore, scripts should include only the appropriate corresponding commands.
 - Limitations:
 	- No support for Classic subscriptions. AZ CLI 2.0 supports only Azure Resource Manager (ARM) subscriptions
-	- Currently, Hosted agents do not have AZ CLI installed. You can either install using `npm install -g azure-cli` or use private agents with AZ CLI pre-installed
+	- Currently, Microsoft-hosted agents do not have AZ CLI installed. You can either install using `npm install -g azure-cli` or use self-hosted agents with AZ CLI pre-installed
 
 ## Demands
 
@@ -74,8 +74,8 @@ None
 ## Related tasks
 
 * [Azure Resource Group Deployment](azure-resource-group-deployment.md)
-* [Azure Cloud Service Deployment](azure-cloud-service-deployment.md)
-* [Azure Web App Deployment](azure-web-app-deployment.md)
+* [Azure Cloud Service Deployment](azure-cloud-powershell-deployment.md)
+* [Azure Web App Deployment](azure-rm-web-app-deployment.md)
 
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->

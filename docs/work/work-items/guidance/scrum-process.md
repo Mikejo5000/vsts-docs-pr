@@ -26,7 +26,7 @@ In addition to the WITs, teams have access to a set of shared work item queries 
 
 ::: moniker range="vsts"
 > [!NOTE]  
-> You can customize the work tracking system for your team project based on the Scrum process by creating and customizing an inherited process and applying that process to your team project. To learn more, see [Inheritance process model](../../customize/inheritance-process-model.md). 
+> You can customize the work tracking system for your team project based on the Scrum process by creating and customizing an inherited process and applying that process to your team project. To learn more, see [Inheritance process model](../../../organizations/settings/work/inheritance-process-model.md). 
 ::: moniker-end
 
 
@@ -115,8 +115,8 @@ To access this dashboard, your team project must have a [project portal configur
 
 As updates are made to the Scrum process template, the version number is updated. The following table provides a mapping of the versioning applied as updates are made to the TFS server. For VSTS, the latest version is always used. Starting with TFS 2012, the `version` element was added to the process template to support versioning of the templates. This element specifies a major and minor version. Prior to this change, the version was specified within the process template name.      
 
-> [!div class="mx-tdCol2BreakAll"]  
-> | TFS version | Scrum process name | Major version |
+> [!div class="mx-tdCol2BreakAll"]
+> |TFS version | Scrum process name | Major version |
 > |-------------|-------------------|--------------|
 > | TFS 2018 | Scrum | 16 |
 > | TFS 2017 | Scrum | 15 |

@@ -23,7 +23,7 @@ monikerRange: '>= tfs-2015'
 
 msbuild
 
-> **VSTS:** If your team uses Visual Studio 2017 and you want to use our hosted agents, make sure you select as your default queue the **Hosted VS2017**. See [Hosted agents](../../agents/hosted.md).
+> **VSTS:** If your team uses Visual Studio 2017 and you want to use our Microsoft-hosted agents, make sure you select as your default queue the **Hosted VS2017**. See [Microsoft-hosted agents](../../agents/hosted.md).
 
 ::: moniker range="vsts"
 
@@ -53,7 +53,7 @@ If you use TFVC, make sure that the  project is a child of one of the mappings o
 </li>
 <li>If you use Git, make sure that the project or project is in your Git repo, in a branch that you're building.</li>
 </ul>
-<p>Tip: If you are building a solution, we recommend you use the [Visual Studio build step](visual-studio-build.md) instead of the MSBuild step.</p>
+<p>Tip: If you are building a solution, we recommend you use the [Visual Studio build task](visual-studio-build.md) instead of the MSBuild task.</p>
 </td>
 </tr>
 

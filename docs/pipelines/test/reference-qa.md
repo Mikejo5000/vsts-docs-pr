@@ -163,7 +163,7 @@ You can also run tests using Microsoft Test Manager (MTM) and a
 instead of the default VSTS or TFS UI in your web browser,
 change the **Work Items | General** setting from the **Tools | Options** menu in Visual Studio. 
 
-![Change work item display mode](_img/associate-automated-test-with-test-case/work-item-compatibility.png)
+![Change work item display mode](_img/work-item-compatibility.png)
 
 ----------------------------
 
@@ -178,7 +178,7 @@ change the **Work Items | General** setting from the **Tools | Options** menu in
 Open the shortcut menu for the test suite in the left column and choose
 **Run with options**.
 
-![Configuring the Run with options dialog](_img/run-automated-tests-from-test-hub/run-auto-tests-from-hub-08.png)
+![Configuring the Run with options dialog](_img/run-auto-tests-from-hub-08.png)
 
 Enter the following values in the Run with options dialog and then choose **OK**:
 
@@ -190,7 +190,7 @@ Enter the following values in the Run with options dialog and then choose **OK**
  
 * **Release Environment**: Select the name of the environment configured in your release definition.<p />
 
-![Configuring the Run with options dialog](_img/run-automated-tests-from-test-hub/run-auto-tests-from-hub-09a.png)
+![Configuring the Run with options dialog](_img/run-auto-tests-from-hub-09a.png)
 
 ### Q: Why use release environments to run tests? 
 
@@ -272,7 +272,7 @@ See [How does selecting "Test run (for on-demand runs)" in the Visual Studio Tes
 builds. It only works in the web-based interface for VSTS and TFS.
 All new manual and automated testing product development investments will be
 in the web-based interface. No further development is planned for MTM. See
-[Guidance on Microsoft Test Manager usage](../../manual-test/mtm/guidance-mtm-usage.md).
+[Guidance on Microsoft Test Manager usage](../../test/mtm/guidance-mtm-usage.md).
 
 ### Q: I have multiple testers in my team. Can they run tests from different test suites or test plans in parallel using the same release definition?
 
@@ -284,9 +284,9 @@ to cater for parallel requests. If sufficient agents are not available,
 runs can still be triggered but releases will be queued for processing
 until agents are available.
 
-* You have sufficient concurrent pipelines to enable concurrent releases.
-See [Concurrent pipelines in VSTS](../../pipelines/licensing/concurrent-pipelines-ts.md) 
-or [Concurrent pipelines in TFS](../../pipelines/licensing/concurrent-pipelines-tfs.md) for more information. 
+* You have sufficient concurrent jobs to enable concurrent releases.
+See [Concurrent jobs in VSTS](../../pipelines/licensing/concurrent-jobs-vsts.md) 
+or [Concurrent jobs in TFS](../../pipelines/licensing/concurrent-pipelines-tfs.md) for more information. 
 
 * Testers do not run the same tests in parallel. Doing so may cause
 results to be overwritten depending on the order of execution.
@@ -323,7 +323,7 @@ from different sources, set this option to
    - Check the automation status of the selected tests. Do this in the work item
      for the test case, or use the **Column options** link in the **Test Plans**
      page of the **Test** hub to add the **Automation status** column to the list
-     of tests. See the [pre-requisites section](run-automated-tests-from-test-hub.md#prerequisites) for information
+     of tests. See the [pre-requisites section](../../test/run-automated-tests-from-test-hub.md#prerequisites) for information
      about automating manual tests.<p />
 
 * My tests didn't execute, and I suspect the release definition is incorrect. 

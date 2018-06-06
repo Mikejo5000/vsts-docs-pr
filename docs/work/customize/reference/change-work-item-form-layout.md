@@ -26,7 +26,7 @@ You can change the work item form layout by exporting the XML file and modifying
 > [!IMPORTANT]  
 > This topic applies to team project customization for On-premises XML (TFS 2017 and earlier versions) process models using the old form layout. For TFS 2017 and later versions, see [WebLayout and Control elements](weblayout-xml-elements.md). 
 >
-> For the Inheritance process model, see [Customize a process](../process/customize-process.md). For an overview of process models, see [Customize your work tracking experience](../customize-work.md).
+> For the Inheritance process model, see [Customize a process](../../../organizations/settings/work/customize-process.md). For an overview of process models, see [Customize your work tracking experience](../customize-work.md).
   
 For an overview of the controls you can place in a work item form, see [Specify work item form controls](specify-work-item-form-controls.md). For an overview of the top-level structural elements for the `FORM` section, see. [Design the work item form](design-work-item-form.md).  
   
@@ -116,22 +116,22 @@ Perform one of the following steps based on the scope of the customization you a
           <Group>  
            <Column PercentWidth="50">  
           <Group Label="General">  
-             <Column PercentWidth="100">  
+           <Column PercentWidth="100">  
               <Control Type="FieldControl" FieldName="Microsoft.VSTS.Common.Issue" Label="Iss&ue:" LabelPosition="Left" />  
               <Control Type="FieldControl" FieldName="Microsoft.VSTS.Common.ExitCriteria" Label="E&xit criteria:" LabelPosition="Left" />  
               <Control Type="FieldControl" FieldName="Microsoft.VSTS.Build.IntegrationBuild" Label="Integration &build:" LabelPosition="Left" />  
               <Control Type="FieldControl" FieldName="Microsoft.VSTS.Scheduling.TaskHierarchy" Label="Task C&ontext:" LabelPosition="Left" ReadOnly="True" />  
-             </Column>  
+           </Column>  
           </Group>  
            </Column>  
            <Column PercentWidth="50">  
           <Group Label="Schedule">  
-             <Column PercentWidth="100">  
+           <Column PercentWidth="100">  
               <Control Type="FieldControl" FieldName="Microsoft.VSTS.Scheduling.RemainingWork" Label="Remaining &work (hours):" LabelPosition="Left" />  
               <Control Type="FieldControl" FieldName="Microsoft.VSTS.Scheduling.CompletedWork" Label="Com&pleted work (hours):" LabelPosition="Left" />  
               <Control Type="FieldControl" FieldName="Microsoft.VSTS.Scheduling.StartDate" Label="Start Dat&e:" LabelPosition="Left" ReadOnly="True" />  
               <Control Type="FieldControl" FieldName="Microsoft.VSTS.Scheduling.FinishDate" Label="&Finish Date:" LabelPosition="Left" ReadOnly="True" />  
-             </Column>  
+           </Column>  
           </Group>  
            </Column>  
           </Group>  
@@ -146,7 +146,7 @@ Perform one of the following steps based on the scope of the customization you a
           <Group>  
            <Column PercentWidth="50">  
           <Group Label="General">  
-             <Column PercentWidth="100">  
+           <Column PercentWidth="100">  
               <Control Type="FieldControl" FieldName="Microsoft.VSTS.Common.Issue" Label="Iss&ue:" LabelPosition="Left" />  
     ...  
     ```  
@@ -158,7 +158,7 @@ Perform one of the following steps based on the scope of the customization you a
        <Group Label="Classification">
           <Column PercentWidth="50">
              <Group>
-                <Column PercentWidth="100">
+         <Column PercentWidth="100">
                    <Control Type="WorkItemClassificationControl" FieldName="System.AreaPath" Label="Area" LabelPosition="Left" />  
                    <Control Type="WorkItemClassificationControl" FieldName="System.IterationPath" Label="Iteration" LabelPosition="Left" />  
                 </Column>

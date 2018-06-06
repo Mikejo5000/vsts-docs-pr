@@ -84,7 +84,7 @@ Enter a title and then save the work item. Before you can change the State from 
 
 You can [add existing tags to any work item to support filter backlogs and queries](../work/track/add-tags-to-work-items.md).
 
-Work items you add are automatically scoped to your [team's area and iteration paths](../work/scale/set-team-defaults.md). To change the team context, see [Switch team project or team focus](../settings/switch-team-context.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json).
+Work items you add are automatically scoped to your [team's area and iteration paths](../work/scale/set-team-defaults.md). To change the team context, see [Switch team project or team focus](../organizations/settings/switch-team-context.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json).
 	
 > [!NOTE]  
 > Depending on the process chosen when the team project was created&mdash;[Scrum](../work/work-items/guidance/scrum-process.md), 
@@ -178,7 +178,7 @@ The following features are available to Stakeholders from the web portal.
 4. Stakeholders can save queries under My Queries but cannot save under Shared Queries.
 5. Stakeholders can only view and approve releases.
 6. Stakeholders cannot view markdown README files defined for repositories.
-7. In order to add users and assign licenses, stakeholders must be added to the [Project Collection Administrators](../tfs-server/add-administrator-tfs.md) group. To learn more, see [Manage users and access](../accounts/add-account-users-assign-access-levels.md).
+7. In order to add users and assign licenses, stakeholders must be added to the [Project Collection Administrators](/tfs/server/admin/add-administrator-tfs) group. To learn more, see [Manage users and access](../accounts/add-account-users-assign-access-levels.md).
 8. Stakeholders have read-only permissions to wiki pages. These permissions can't be changed.
 
 ::: moniker-end

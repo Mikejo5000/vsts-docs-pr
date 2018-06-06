@@ -1,5 +1,5 @@
 ---
-title: VSTS and TFS Build and Test - Run Functional Tests step
+title: VSTS and TFS Build and Test - Run Functional Tests task
 description: Run Coded UI/Selenium/Functional tests on a set of machines using the Test Agent to integrate cloud-based load tests into your build and release pipelines
 ms.assetid: DAA55EF5-A6A2-4962-80A0-7D25E64D1DE2
 ms.prod: devops
@@ -106,7 +106,7 @@ These scenarios are supported for:
     Automatic checking for new test agent versions is not supported in this topology.
 
 * **CI/CD workflow**
-  - The BDT tasks are supported in both build and release management definitions.
+  - The Build-Deploy-Test (BDT) tasks are supported in both build and release management definitions.
 
 * **Machine group configuration**
   - Only Windows machines are supported when using BDT tasks inside a Machine Group. Using

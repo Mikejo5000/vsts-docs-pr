@@ -28,7 +28,7 @@ Some features provide a new user interface and functionality, which can be manag
 > [!div class="mx-tdBreakAll"] 
 > |[Preview features per user](#user-level)  |[Preview features per account](#account-level)  |
 > |-------------|----------|
-> |- [Approval gates in releases](../pipelines/release/approvals/index.md)<br/>- [New Dashboards Experience](../report/dashboards/dashboards.md)<br/>- [New Queries Experience](../work/track/view-run-query.md)<br/>- [New release progress views](../pipelines/preview/new-release-summary.md) |- [Build with multiple queues](https://github.com/Microsoft/vsts-agent/blob/master/docs/preview/yamlgettingstarted.md)<br/>- [Build YAML Definitions](../pipelines/get-started-yaml.md)<br/>- [Git Forks](../git/concepts/forks.md)<br/>- [New Dashboards Experience](../report/dashboards/dashboards.md)<br/>- [New release progress views](../pipelines/preview/new-release-summary.md) |
+> |- [Approval gates in releases](../pipelines/release/approvals/index.md)<br/>- [New Dashboards Experience](../report/dashboards/dashboards.md)<br/>- [New Queries Experience](../work/track/view-run-query.md)<br/>- [New release progress views](../pipelines/preview/new-release-summary.md) |- [Build with multiple queues](https://github.com/Microsoft/vsts-agent/blob/master/docs/preview/yamlgettingstarted.md)<br/>- [Build YAML Definitions](../pipelines/build/yaml.md)<br/>- [Git Forks](../git/concepts/forks.md)<br/>- [New Dashboards Experience](../report/dashboards/dashboards.md)<br/>- [New release progress views](../pipelines/preview/new-release-summary.md) |
 
 <a id="user-level">  </a>
 ## Enable features for your use  
@@ -103,7 +103,7 @@ Enable this feature for your account when you want notifications to be sent by d
 <a id="task-tool-installers">  </a>
 ### Task tool installers
 
-You can use tool installer tasks to enable your build or release process to lazily install tool sets. So now you can install dependencies on hosted agents and test and validate your app on multiple versions of a tool set. 
+You can use tool installer tasks to enable your build or release process to lazily install tool sets. So now you can install dependencies on Microsoft-hosted agents and test and validate your app on multiple versions of a tool set. 
 
 -->
 

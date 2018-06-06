@@ -49,7 +49,7 @@ If you're new to VSTS or TFS, see the [Key concepts](concepts.md) and other over
 </b></p>
 Track work and integrate with your code, build, and test environments from the following clients:   
 - [Eclipse (Team Explorer Everywhere)](/vsts/java/download-eclipse-plug-in)       
-- [Visual Studio](https://www.visualstudio.com/downloads/download-visual-studio-vs.aspx)      
+- [Visual Studio](https://www.visualstudio.com/downloads/)      
 - [Android Studio](/vsts/java/download-android-studio-plug-in)     
 - [IntelliJ](/vsts/java/download-intellij-plug-in)   
 - [Visual Studio Code](/vsts/java/vscode-extension)   
@@ -290,7 +290,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Verify a bug, re-run test case</b></p>
-<p>Choose the **Verify** option from the bug work item form context menu to launch the relevant test case in the web runner. For more information, see [Run tests for web apps](../manual-test/getting-started/run-manual-tests.md). </p>
+<p>Choose the **Verify** option from the bug work item form context menu to launch the relevant test case in the web runner. For more information, see [Run tests for web apps](../test/run-manual-tests.md). </p>
 
 
 <p><b>Link work items  </b></p>
@@ -299,7 +299,7 @@ Use features supported by these familiar clients to manage your project and illu
 <br/>
 
 <p><b>Add or modify a field </b></p>
-<p>Add a custom field ([VSTS](../work/customize/process/customize-process.md) | [TFS](../work/customize/add-modify-field.md) to support tracking additional data requirements or modify an existing field to apply optional rules. </p>
+<p>Add a custom field ([VSTS](../organizations/settings/work/customize-process.md) | [TFS](../work/customize/add-modify-field.md) to support tracking additional data requirements or modify an existing field to apply optional rules. </p>
 
 
 <p><b>Restrict access</b></p>
@@ -329,7 +329,7 @@ Use features supported by these familiar clients to manage your project and illu
 <td width="33%">
 
 <p><b>Create an inherited process</b></p>
-<p>The first step in customizing a team project is to [create an inherited process](../work/customize/process/manage-process.md#create-inherited-process). You can only customize inherited processes.  </p>
+<p>The first step in customizing a team project is to [create an inherited process](../organizations/settings/work/manage-process.md#create-inherited-process). You can only customize inherited processes.  </p>
 ![Customize process](_img/features/customize-vsts-process.png)   
 <br/>
 
@@ -339,18 +339,18 @@ Use features supported by these familiar clients to manage your project and illu
 <p><b>Customize a process</b></p>
 <p>Customizations you make to an inherited process automatically update all team projects that reference that process. You can customize your team project as follows:</p>
 <ul>
-<li>[Add and modify fields](../work/customize/process/customize-process-field.md)</li>
-<li>[Modify the web form layout](../work/customize/process/customize-process-form.md)</li>
-<li>[Modify the workflow states](../work/customize/process/customize-process-workflow.md) </li>
-<li>[Add a custom work item type](../work/customize/process/customize-process-wit.md) </li>
-<li>[Add a custom control](../work/customize/process/custom-controls-process.md) </li>
+<li>[Add and modify fields](../organizations/settings/work/customize-process-field.md)</li>
+<li>[Modify the web form layout](../organizations/settings/work/customize-process-form.md)</li>
+<li>[Modify the workflow states](../organizations/settings/work/customize-process-workflow.md) </li>
+<li>[Add a custom work item type](../organizations/settings/work/customize-process-wit.md) </li>
+<li>[Add a custom control](../organizations/settings/work/custom-controls-process.md) </li>
 </ul>
 
 <p><b>Change the process used by a team project</b></p>
-<p>To apply customizations to one or more team projects, you [change the process they reference to a customized inherited process](../work/customize/process/manage-process.md#migrate).  </p>
+<p>To apply customizations to one or more team projects, you [change the process they reference to a customized inherited process](../organizations/settings/work/manage-process.md#migrate).  </p>
 
 <p><b>Enable/disable a process</b></p>
-<p>To make sure no one creates a team project from a process that you don't want used, [you can disable it](../work/customize/process/manage-process.md#enable-process).  </p>
+<p>To make sure no one creates a team project from a process that you don't want used, [you can disable it](../organizations/settings/work/manage-process.md#enable-process).  </p>
 
 
 
@@ -359,12 +359,12 @@ Use features supported by these familiar clients to manage your project and illu
 <td width="33%">
 
 <p><b>Add or modify a field</b></p>
-<p>[Add a custom field](../work/customize/process/customize-process-field.md) to support tracking additional data requirements or modify an existing field to apply optional rules. </p>
+<p>[Add a custom field](../organizations/settings/work/customize-process-field.md) to support tracking additional data requirements or modify an existing field to apply optional rules. </p>
 ![Add field](_img/features/index-add-field.png)   
 <br/>
 
 <p><b>Remove a field from a form</b></p>
-<p>You can [remove a custom field and select inherited fields from a work item form](../work/customize/process/customize-process-field.md#remove-field). You can also [relabel the fields](../work/customize/process/customize-process-field.md#rename-field) that appear on the form.   </p>
+<p>You can [remove a custom field and select inherited fields from a work item form](../organizations/settings/work/customize-process-field.md#remove-field). You can also [relabel the fields](../organizations/settings/work/customize-process-field.md#rename-field) that appear on the form.   </p>
 
 <p><b>Area path pick lists</b></p>
 <p>Change the [pick list of area paths](../work/customize/set-area-paths.md) to support grouping work items by team, product, or feature area. </p>
@@ -384,23 +384,23 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Review fields</b></p>
-<p>You can [review the list of fields](../work/customize/process/customize-process-field.md#review-fields) defined for a process, their data type, and the WITs which reference them. For descriptions and usage of each field, see [Work item field index](../work/work-items/guidance/work-item-field.md). </p>
+<p>You can [review the list of fields](../organizations/settings/work/customize-process-field.md#review-fields) defined for a process, their data type, and the WITs which reference them. For descriptions and usage of each field, see [Work item field index](../work/work-items/guidance/work-item-field.md). </p>
 
 <p><b>Delete a field from the collection</b></p>
-<p>You can [delete a custom field](../work/customize/process/customize-process-field.md#delete-field) if you find it's no longer required. </p>
+<p>You can [delete a custom field](../organizations/settings/work/customize-process-field.md#delete-field) if you find it's no longer required. </p>
 
 
 
 <p><b>Customize the web form</b></p>
-<p>For each work item type, you can [add custom pages to group additional custom fields](../work/customize/process/customize-process-form.md) and you can organize your forms by placing logically related groups and HTML fields on separate pages within a form.    </p>
+<p>For each work item type, you can [add custom pages to group additional custom fields](../organizations/settings/work/customize-process-form.md) and you can organize your forms by placing logically related groups and HTML fields on separate pages within a form.    </p>
 ![Add custom group](_img/features/index-add-group.png)   
 <br/>
 
 <p><b>Add a custom work item type</b></p>
-<p>You can [add and modify a custom work item type](../work/customize/process/customize-process-wit.md).    </p>
+<p>You can [add and modify a custom work item type](../organizations/settings/work/customize-process-wit.md).    </p>
 
 <p><b>Customize the workflow</b></p>
-<p>For each work item type, you can [add custom workflow states to support your business tracking needs](../work/customize/process/customize-process-workflow.md).    </p>
+<p>For each work item type, you can [add custom workflow states to support your business tracking needs](../organizations/settings/work/customize-process-workflow.md).    </p>
 
 
 <p><b>Delete a process</b></p>
@@ -723,7 +723,7 @@ Use features supported by these familiar clients to manage your project and illu
 <br/>
 
 <p><b>Customize the workflow</b></p>
-<p>For VSTS: [add custom workflow states to support your business tracking needs](../work/customize/process/customize-process-workflow.md).  For TFS: [Design your custom workflow](https://msdn.microsoft.com/library/ms194981.aspx) by adding states, transitions, reasons, and optional actions.</p>
+<p>For VSTS: [add custom workflow states to support your business tracking needs](../organizations/settings/work/customize-process-workflow.md).  For TFS: [Design your custom workflow](https://msdn.microsoft.com/library/ms194981.aspx) by adding states, transitions, reasons, and optional actions.</p>
 
  <p><b>States  </b></p>
 <p>States allow you to [track the status of work](https://msdn.microsoft.com/library/ms194981.aspx). For  example, a bug moves from **Active**, **Resolved**, and **Closed** to correspond to when it's defined, fixed, and verified as fixed.</p>
@@ -874,7 +874,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p>Merge conflicts occur when commits have changes to the same files as other newer commits in the branch history. Learn how to [prevent and resolve merge conflicts](../git/tutorial/merging.md).   </p>
 
 <p><b>Code search</b></p>
-<p>Maximize cross-team collaboration and code sharing by finding code across all the projects to which you have access. Narrow down your results and focus in on code by using [filters, preview code, view history, compare versions, and more](../search/overview.md) </p>
+<p>Maximize cross-team collaboration and code sharing by finding code across all the projects to which you have access. Narrow down your results and focus in on code by using [filters, preview code, view history, compare versions, and more](../project/search/overview.md) </p>
 ![Search code box](_img/features/features-index-code-search-vsts.png)  
 
 
@@ -991,7 +991,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Code search</b></p>
-<p>Find code across all the projects to which you have access. Narrow down your results and focus in on code by using [filters, preview code, view history, compare versions, and more](../search/overview.md) </p>
+<p>Find code across all the projects to which you have access. Narrow down your results and focus in on code by using [filters, preview code, view history, compare versions, and more](../project/search/overview.md) </p>
 ![Search code box](_img/features/features-index-code-search-vsts.png)  
 <br/>
 
@@ -1093,7 +1093,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Build agents and agent pools </b></p>
-<p>At least one [agent](../pipelines/agents/agents.md) is require to build your code. As you scale your system with more code, people, and builds, you'll need more build agents organized within [agent pools](../pipelines/agents/pools-queues.md). You can use both on-premises or hosted agent pools.</p>
+<p>At least one [agent](../pipelines/agents/agents.md) is require to build your code. As you scale your system with more code, people, and builds, you'll need more build agents organized within [agent pools](../pipelines/agents/pools-queues.md). You can use both on-premises or Microsoft-hosted agent pools.</p>
 
 
 <p><b>Gated check-in (TFVC, VSTS) </b></p>
@@ -1264,7 +1264,7 @@ pipelines\tasks\build\_img
 <td width="33%">
 
 <p><b>Comprehensive testing</b></p>
-<p>[Perform exploratory, manual, system, user acceptance, and performance tests for any app, in any language](../manual-test/index.md). Using Visual Studio or 3rd-party test frameworks, you can include automated tests with builds and releases for continuous integration and deployment. </p>
+<p>[Perform exploratory, manual, system, user acceptance, and performance tests for any app, in any language](../test/index.md). Using Visual Studio or 3rd-party test frameworks, you can include automated tests with builds and releases for continuous integration and deployment. </p>
 
 <p><b>Unit testing with Git</b></p>
 <p>Create [unit tests](https://docs.microsoft.com/visualstudio/test/create-unit-tests-menu) and run them frequently to make sure your code is working properly.</p>
@@ -1273,18 +1273,18 @@ pipelines\tasks\build\_img
 
 
 <p><b>Manual test plans and test cases</b></p>
-<p>Get started by [creating test plans and test cases](../manual-test/getting-started/create-test-cases.md) to track manual testing for sprints or milestones.</p>
+<p>Get started by [creating test plans and test cases](../test/create-test-cases.md) to track manual testing for sprints or milestones.</p>
 
 <p><b>Shared steps and shared parameters</b></p>
-<p>[Create shared steps](https://msdn.microsoft.com/library/dd286655.aspx) to include often repeated sequence of steps in your manual test cases, such as logging in. Repeat manual tests with different data using [shared parameters](../manual-test/repeat-test-with-different-data.md). </p>
+<p>[Create shared steps](https://msdn.microsoft.com/library/dd286655.aspx) to include often repeated sequence of steps in your manual test cases, such as logging in. Repeat manual tests with different data using [shared parameters](../test/repeat-test-with-different-data.md). </p>
 
 
 <p><b>Performance and load testing  </b></p>
-<p>Understand and fix performance issues before they impact your business by [running performance tests on your apps](../load-test/getting-started-with-performance-testing.md).</p>
+<p>Understand and fix performance issues before they impact your business by [running performance tests on your apps](../test/load-test/getting-started-with-performance-testing.md).</p>
 
 
 <p><b>Cloud-based load tests</b></p>
-<p>Find performance problems in your app before customers do with [cloud-based load tests](../load-test/get-started-simple-cloud-load-test.md).</p>
+<p>Find performance problems in your app before customers do with [cloud-based load tests](../test/load-test/get-started-simple-cloud-load-test.md).</p>
 
 
 </td>
@@ -1310,24 +1310,24 @@ pipelines\tasks\build\_img
 <td width="33%">
 
 <p><b>Exploratory testing</b></p>
-<p>Explore user stories without test cases or test steps using [Test Manager and exploratory testing](../manual-test/index.md).</p>
+<p>Explore user stories without test cases or test steps using [Test Manager and exploratory testing](../test/index.md).</p>
 ![Exploratory testing](_img/features/features-exploratory-testing.png)  
 <br/>
-<p>Or, [download and install the Test &amp; Feedback extension](../manual-test/getting-started/perform-exploratory-tests.md). Capture screenshots, annotate them, and submit bugs while you explore your web app - all directly from your Chrome browser. </p>
+<p>Or, [download and install the Test &amp; Feedback extension](../test/perform-exploratory-tests.md). Capture screenshots, annotate them, and submit bugs while you explore your web app - all directly from your Chrome browser. </p>
 
 <p><b>Record and play back manual tests</b></p>
-<p>With Microsoft Test Manager, you can [record your keystrokes and gestures while you test an application](../manual-test/getting-started/record-play-back-manual-tests.md). The next time you run the test, you can play back your actions quickly and accurately.</p>
+<p>With Microsoft Test Manager, you can [record your keystrokes and gestures while you test an application](../test/mtm/record-play-back-manual-tests.md). The next time you run the test, you can play back your actions quickly and accurately.</p>
 
 
 
 <p><b>Track test status and test results</b></p>
-<p>Quickly [view the status](../manual-test/getting-started/track-test-status.md) of your testing using lightweight charts.</p>
+<p>Quickly [view the status](../test/track-test-status.md) of your testing using lightweight charts.</p>
 ![Test charts](_img/features/features-test-results.png)  
 <br />
 
 
 <p><b>Test environments</b></p>
-<p>[Specify a combination of hardware and software](../manual-test/test-different-configurations.md) that represents a user or machine environment in which your app will run.</p>
+<p>[Specify a combination of hardware and software](../test/test-different-configurations.md) that represents a user or machine environment in which your app will run.</p>
 
 <p><b>Test permissions</b></p>
 <p>Set permissions on who can [manage test configurations, test environments, and publish and delete test results](../security/set-project-collection-level-permissions.md).</p>
@@ -1365,7 +1365,7 @@ pipelines\tasks\build\_img
 
 
 <p><b>Test charts</b></p>
-<p>Track the status of your [test progress and test runs](../manual-test/getting-started/track-test-status.md). Optionally add these charts to a dashboard.  </p>
+<p>Track the status of your [test progress and test runs](../test/track-test-status.md). Optionally add these charts to a dashboard.  </p>
 ![Test run chart](_img/features/alm-feature-test-chart.png)  
  <br/>
 
@@ -2131,7 +2131,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Test</b></p>
-<p>[Create and run manual tests](../manual-test/getting-started/create-a-test-plan.md) and [load tests for your app](../load-test/getting-started-with-performance-testing.md).</p>
+<p>[Create and run manual tests](../test/create-a-test-plan.md) and [load tests for your app](../test/load-test/getting-started-with-performance-testing.md).</p>
 
 <p><b>Package (VSTS, Preview)</b></p>
 <p>Share code as binary assets and control dependencies by [subscribing to and working with package management feeds](../package/what-is-packaging.md).</p>
@@ -2141,7 +2141,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Code search</b></p>
-<p>[Search within your code branches (TFVC) and repositories (Git)](../search/overview.md) to find files, commits, and more using powerful filters to obtain rich results. </p>
+<p>[Search within your code branches (TFVC) and repositories (Git)](../project/search/overview.md) to find files, commits, and more using powerful filters to obtain rich results. </p>
 ![Search code box](_img/features/features-index-code-search-vsts.png)  
 <br/>
 <p><b>Find work items</b></p>
@@ -2204,7 +2204,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Code search</b></p>
-<p>[Find code based on keywords and semantic search filters](../search/overview.md) across your Git repositories.</p>
+<p>[Find code based on keywords and semantic search filters](../project/search/overview.md) across your Git repositories.</p>
 ![Search code box](_img/features/features-index-code-search-vsts.png)  
 
 <p><b>CodeLens search</b></p>
@@ -2299,7 +2299,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>Easily control access to your team's critical resources and key business assets with [Azure Active Directory groups](../accounts/manage-azure-active-directory-groups-vsts.md).</p>
 
 <p><b>Set up groups (TFS)</b></p>
-<p>[Create Windows or Active Directory groups](../tfs-server/admin/setup-ad-groups.md) to manage access to your team projects and collections.  </p>
+<p>[Create Windows or Active Directory groups](/tfs/server/admin/setup-ad-groups) to manage access to your team projects and collections.  </p>
 
 <p><b>Built-in groups</b></p>
 <p>Understand the [permissions granted to built-in groups](../security/permissions.md#groups) and use them to manage access to your team projects and collections.</p>
@@ -2344,7 +2344,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <ul>
 <li>[Project Administrators](../security/set-project-collection-level-permissions.md), who manage shared features for a team project </li>
 <li>[Project Collection Administrators](../security/set-project-collection-level-permissions.md), who manage collection-level features </li>
-<li>[Team Foundation Server Administrators](../tfs-server/add-administrator-tfs.md), who manage on-premises application servers </li>
+<li>[Team Foundation Server Administrators](/tfs/server/admin/add-administrator-tfs), who manage on-premises application servers </li>
 </ul>
 <br/>
 
@@ -2427,13 +2427,13 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 </td>
 <td width="33%">
 <p><b>Email configuration (TFS)</b></p>
-<p>For feedback requests, alerts, and other special controls to work, you must [configure an SMTP server](../tfs-server/admin/setup-customize-alerts.md) for your on-premises TFS. </p>
+<p>For feedback requests, alerts, and other special controls to work, you must [configure an SMTP server](/tfs/server/admin/setup-customize-alerts) for your on-premises TFS. </p>
 
 <p><b>Automated, scheduled backups (TFS)</b></p>
-<p>Reduce the risk of lost data by [scheduling automated backups of the data store](../tfs-server/admin/backup/config-backup-sched-plan.md).</p>
+<p>Reduce the risk of lost data by [scheduling automated backups of the data store](/tfs/server/admin/backup/config-backup-sched-plan).</p>
 
 <p><b>Built-in SQL Server database (TFS)</b></p>
-<p>For small teams, you can install [TFS using SQL Server Express which installs with TFS](../tfs-server/install/single-server.md).  </p>
+<p>For small teams, you can install [TFS using SQL Server Express which installs with TFS](/tfs/server/install/single-server).  </p>
 
 
 </td>
@@ -2474,14 +2474,14 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p><b>Customize a process (VSTS) </b></p>
 <p>Customizations you make to an inherited process automatically update all team projects that reference that process. You can customize your team project as follows:</p>
 <ul>
-<li>[Add and modify fields](../work/customize/process/customize-process-field.md)</li>
-<li>[Modify the web form layout](../work/customize/process/customize-process-form.md)</li>
-<li>[Modify the workflow states](../work/customize/process/customize-process-workflow.md) </li>
-<li>[Add a custom work item type](../work/customize/process/customize-process-wit.md) </li>
+<li>[Add and modify fields](../organizations/settings/work/customize-process-field.md)</li>
+<li>[Modify the web form layout](../organizations/settings/work/customize-process-form.md)</li>
+<li>[Modify the workflow states](../organizations/settings/work/customize-process-workflow.md) </li>
+<li>[Add a custom work item type](../organizations/settings/work/customize-process-wit.md) </li>
 </ul>
 
 <p><b>Manage processes (VSTS) </b></p>
-<p>[Create inherited processes and migrate team projects to use them](../work/customize/process/manage-process.md). Set the default process and enable, disable, or delete processes you no longer want to use.   </p>
+<p>[Create inherited processes and migrate team projects to use them](../organizations/settings/work/manage-process.md). Set the default process and enable, disable, or delete processes you no longer want to use.   </p>
 
 
 
@@ -2617,7 +2617,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <br/>
 
 <p><b>Change the process (VSTS) </b></p>
-<p>You [change the process of a team project](../work/customize/process/manage-process.md) to apply customizations you've made to an inherited process. You can [add and modify fields and modify the layout of each work item type](../work/customize/process/customize-process.md) defined for that process.  </p>
+<p>You [change the process of a team project](../organizations/settings/work/manage-process.md) to apply customizations you've made to an inherited process. You can [add and modify fields and modify the layout of each work item type](../organizations/settings/work/customize-process.md) defined for that process.  </p>
 
 
 </td>
@@ -2714,7 +2714,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Team groups</b></p>
-<p>A [team group is created](../settings/about-teams-and-settings.md#team-group) when you create a team. Use this group in queries or to set permissions for your team.  </p>
+<p>A [team group is created](../organizations/settings/about-teams-and-settings.md#team-group) when you create a team. Use this group in queries or to set permissions for your team.  </p>
 </td>
 </tr>
 </tbody>

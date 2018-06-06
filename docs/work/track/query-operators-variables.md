@@ -6,7 +6,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 814c2dca-cf8f-44bf-bba1-a5d8e293fc05
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: reference
 monikerRange: '>= tfs-2013'
 ms.date: 03/20/2018  
@@ -277,14 +278,14 @@ You can use the macros described in the following table to filter your queries b
 
 <tr>
 	<td>**@CurrentIteration** <sup>1</sup></td>
-	<td>Use in conjunction with the **Iteration Path** field to automatically filter for work items assigned to the current sprint based on the [current team focus or context](../../settings/switch-team-context.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json). For specific examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).
-	<p>This macro only works when run from the web portal. You can't use the macro when [copying or cloning test suites and test cases](../../manual-test/mtm/copying-and-cloning-test-suites-and-test-cases.md), [defining alerts](../../notifications/index.md), or with [REST APIs](../../integrate/get-started/rest/basics.md).</p>
+	<td>Use in conjunction with the **Iteration Path** field to automatically filter for work items assigned to the current sprint based on the [current team focus or context](../../organizations/settings/switch-team-context.md). For specific examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).
+	<p>This macro only works when run from the web portal. You can't use the macro when [copying or cloning test suites and test cases](../../test/mtm/copying-and-cloning-test-suites-and-test-cases.md), [defining alerts](../../notifications/index.md), or with [REST APIs](../../integrate/get-started/rest/basics.md).</p>
 </td>
 </tr>
 
 <tr>
 	<td><b>@CurrentIteration +/- <i>n</i></b> <sup>2</sup></td>
-	<td>Use in conjunction with the **Iteration Path** field to filter the set of work items assigned to the current sprint +/- n sprints based on the [current team focus or context](../../settings/switch-team-context.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json). For specific examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).
+	<td>Use in conjunction with the **Iteration Path** field to filter the set of work items assigned to the current sprint +/- n sprints based on the [current team focus or context](../../organizations/settings/switch-team-context.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json). For specific examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).
 </td>
 </tr>
 
@@ -367,7 +368,7 @@ Team Foundation automatically indexes all long-text fields with a data type of *
 
 Full-text searches require a SQL collation that corresponds to a language which has a word breaker registered with SQL Server. If the collation settings for the team project collection database used for your Team Foundation Server instance do not correspond to a supported language, your search results may not match your expectations. In these cases, you might try using the **Contains** or **Does Not Contain** operators.
 
-For more information, see [Full-Text Search Queries and Collation Settings](../../tfs-server/install/sql-server/collation-requirements.md).
+For more information, see [Full-Text Search Queries and Collation Settings](/tfs/server/install/sql-server/collation-requirements).
 
 ::: moniker-end
 
