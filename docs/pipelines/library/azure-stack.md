@@ -26,7 +26,7 @@ a [service principal with certificate](https://docs.microsoft.com/en-us/azure/az
 which is not currently supported in VSTS/TFS.
 
 To enable connection to an Azure Stack, you specify it as the **Environment** parameter when you create an
-[Azure Resource Manager service endpoint](service-endpoints.md#sep-azure-rm).
+[Azure Resource Manager service endpoint](connect-to-azure.md).
 You must use the full version of the endpoint dialog to manually define the connection.
 Before you configure a service endpoint, you should also ensure you meet all relevant compliance requirements for your application.
 
@@ -49,7 +49,7 @@ The following Azure tasks are validated with Azure Stack:
 * [Azure Resource Group Deployment](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureResourceGroupDeploymentV2)
 * [Azure App Service Deploy](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureRmWebAppDeployment)
 * [Azure App Service Manage](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureAppServiceManage) 
-* [Azure SQL Database Deployment](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/SqlAzureDacpacDeployment)
+* [Azure SQL Database Deployment](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/SqlAzureDacpacDeploymentV1)
 
 ### How do I resolve SSL errors during deployment?
 
