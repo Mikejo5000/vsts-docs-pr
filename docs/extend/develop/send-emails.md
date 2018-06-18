@@ -211,7 +211,7 @@ import Locations = require("VSS/Locations");
 
 
 var eventData =  {
-    action: "created"
+    action: "created",
     note: note,
     user: VSS.getWebContext().user,
     team: VSS.getWebContext().user,
