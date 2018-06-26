@@ -108,7 +108,7 @@ Perform the following steps for each WIT that you add to your process template. 
 	
 	* Add custom WITs to the work tracking folder, and update the **WorkItems** definition file as needed. See [Add type definitions for work items to a process template](reference/process-templates/add-wit-definitions-process-template.md).
 	
-		If you want to use a customized WIT that contains the same name as those in the default process template, then make sure that you swap out the WIT definition files. If you want to use a customized WIT with a different name that provided in the default process template, then you'll need to modify the categories and process configuration definition files prior to import to reflect the different naming.
+		If you want to use a customized WIT that contains the same name as those in the default process template, then make sure that you swap out the WIT definition files. If you want to use a customized WIT with a different name that that provided in the default process template, then you'll need to modify the categories and process configuration definition files prior to import to reflect the different naming.
 		
 	* Apply customizations to the **Categories** definition file. 
 
@@ -376,7 +376,7 @@ Perform the following steps for each WIT that you add to your process template. 
 	If the ```version``` statement isn't present, the Configure Features wizard can't select the process template for updating a team project. Also, if more than one process template has been uploaded that specifies the same highest version number, then none of these process templates can be selected for updating a team project.
 1. [Upload the process template](../work-items/guidance/manage-process-templates.md).
 
-	To verify your changes, create a test project. See [create a team project](../../accounts/create-team-project.md).
+	To verify your changes, create a test project. See [create a team project](../../organizations/accounts/create-team-project.md).
 
 ## 5. Run the Configure Features wizard
 
