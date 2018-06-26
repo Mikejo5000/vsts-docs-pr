@@ -57,7 +57,7 @@ In the card shown below, the following customizations have been set for the bug 
 
 You can either increase or simplify the information that displays on your cards. It all depends on what's of interest to your team. Does your team like to refer to work items by their ID? Do they want to see estimates? Do they want to highlight work items according to set criteria? Or, will just the bare bones of title and assignment suffice? 
 
-Your best bet is to show fields on cards based on what your team frequently refers to or updates when using the Kanban and task boards. Also, add fields with information that you can use to filter the board. If you're new to working with these tools, see [Kanban basics](../../Work/kanban/kanban-basics.md) and [Sprint planning](../scrum/sprint-planning.md). 
+Your best bet is to show fields on cards based on what your team frequently refers to or updates when using the Kanban and task boards. Also, add fields with information that you can use to filter the board. If you're new to working with these tools, see [Kanban basics](../../Work/kanban/kanban-basics.md) and [Sprint planning](../scrum/assign-work-sprint.md). 
 
 
 <a id="fields"></a>
@@ -76,7 +76,7 @@ Another handy feature is to simply update a field without having to open the wor
 
 This quick update feature is particularly useful when you need to update a number of work items at once. For example, you can add estimates for backlog items on the Kanban board or update remaining work on the task board. 
 
-To change the title, click the pencil icon in the upper-right corner. To add tags, double-click the work item to open it. And, just a reminder, you can't change the IDs for a work item, not from the card and not from within the form. 
+To change the title, click the pencil icon in the upper-right corner. To add tags, double-click the work item to open it. And, just a reminder, you can't change the IDs for a work work item, not from the card and not from within the form. 
 
 To customize cards on the Kanban board, see [Change how cards display on the Kanban board](#kanban-board). To customize task board cards, see [Change how cards display on the task board](#task-board).  
 

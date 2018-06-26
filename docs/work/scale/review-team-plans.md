@@ -40,7 +40,7 @@ In this topic you'll learn:
 In order to add and configure a plan, you must have the following in place:  
 - [Installed the Plans extension](#install-plans)  
 - Be granted [Basic access or greater](../../organizations/security/access-levels.md) (Users with Stakeholder access can't add or view plans)  
-- [Defined iteration paths](../customize/set-area-paths.md) for the team project  
+- [Defined iteration paths](../../organizations/settings/set-area-paths.md) for the team project  
 - [Configured teams](multiple-teams.md) and [set team defaults and team sprints](set-team-defaults.md)   
 - Teams have defined [user stories](../backlogs/create-your-backlog.md), features, or other product or portfolio backlogs and assigned them to iterations  
 
@@ -180,7 +180,7 @@ To quickly change the cards to only show their Title, enter the keyboard shortcu
 
 ### Update the iteration for a backlog item 
 
-As changes occur to the schedule, you can update the iteration for a backlog item by moving a card to a different iteration. This will help to drive alignment across your organization.
+As changes occur to the schedule, you you can update the iteration for a backlog item by moving a card to a different iteration. This will help to drive alignment across your organization.
 
 ![Move a card to a different iteration](_img/plans_move1.png)
 
