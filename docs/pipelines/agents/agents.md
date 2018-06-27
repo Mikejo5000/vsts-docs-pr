@@ -32,7 +32,7 @@ When your build or deployment runs, the system begins one or more jobs. An agent
 
 An agent that you set up and manage on your own to run build and deployment jobs is a **self-hosted agent**. You can use self-hosted agents in VSTS or Team Foundation Server (TFS). Self-hosted agents give you more control to install dependent software needed for your builds and deployments.
 
-:::moniker-range="vsts"
+:::moniker range="vsts"
 
 > [!TIP]
 > Before you install a self-hosted agent you might want to see if a Microsoft-hosted agent pool will work for you. In many cases this is the simplest way to get going. [Give it a try](hosted.md).
@@ -155,6 +155,7 @@ as shown in the following schematic.
 
 ![Agent connectivity for on-premises environments](_img/agent-connections.png)
 
+<a name="configure-tfs-authentication"></a>
 ## Authentication
 
 To register an agent, you need to be a member of the [administrator role](pools-queues.md#security) in the agent pool. The identity of agent pool administrator is needed only at the time of registration and is not persisted on the agent, nor is used in any further communication between the agent and VSTS or TFS. Also, one needs to be a local administrator on the server in order to configure the agent. Your agent can authenticate to VSTS or TFS using one of the following methods:
