@@ -20,7 +20,7 @@ ms.date: 03/20/2018
 
 Workflow states support tracking the status of work as it moves from a new state to a closed or a done state. Kanban query fields support tracking the status of work as it moves from one column or swimlane to another on the Kanban board.  
 
-Each workflow consists of a set of states,  valid transitions between  states, and reasons for transitioning the work item to the selected state. [Workflow states and reasons](../work-items/guidance/choose-process.md#workflow-states) differ among the work item types (WITs) and default processes used to create your team project. 
+Each workflow consists of a set of states,  valid transitions between  states, and reasons for transitioning the work item to the selected state. [Workflow states and reasons](../work-items/guidance/choose-process.md#workflow-states) differ among the work item types (WITs) and default processes used to create your project. 
 
 Most work items move from a New, Active, or Proposed state to a Done or Closed state. As each work item moves from one state to another, the item might also be reassigned to various members of the team. For example, a tester might create a bug that is assigned to another team member during triage. When the other team member resolves the bug, it is reassigned to the tester who created it.  
 
@@ -124,11 +124,7 @@ To filter on items assigned to someone who belongs to a team or security group, 
 
 ![Filter based on assignment to a TFS security group](_img/example-work-item-queries/IC675038.png)  
 
-You can use the **In Group** or **Not In Group** operators to filter a query based on several values that are members of a group, or that are not members of a group. Examples of groups are teams, built-in security groups, custom security groups, Active Directory groups, and work item categories.
-
-
-> [!NOTE]    
->**In Group** clauses don't support references to Azure Active Directory (AAD) groups. 
+You can use the **In Group** or **Not In Group** operators to filter a query based on several values that are members of a group, or that are not members of a group. Examples of groups are teams, built-in security groups, custom security groups, Azure Active Directory (AAD) groups, Active Directory groups, and work item categories.
 
 <a id="workflow-change"/> 
 
@@ -239,8 +235,14 @@ For example, you can list items based on the team area path, and if they are in 
 
 <img src="_img/query-kanban-fields.png" alt="Query filter on Kanban board fields" style="border: 1px solid #C3C3C3;" />  
 
+::: moniker-end
+
+::: moniker range=">= tfs-2017"
 > [!NOTE]    
-> Queries are now scoped to the current team project by default. Check the **Query across projects** to find work items defined in other team projects within the collection.  
+> Queries are scoped to the current project by default. Check the **Query across projects** to find work items defined in other projects within the collection.  
+::: moniker-end
+
+::: moniker range=">= tfs-2015"
 
 
 <table valign="top">
@@ -281,17 +283,27 @@ Items in any swimlane that contains "Test"
 </tbody>
 </table>
 
+::: moniker-end
 
 <a id="kanban-query-results">  </a>
 
+
+::: moniker range="vsts"
 > [!IMPORTANT] 
-> Work items that appear on more then one team's Kanban board can yield query results that don't meet your expectations. Because each team can customize the Kanban board columns and swimlanes, the values assigned to work items which appear on different boards may not be the same. The primary work around for this issue is to maintain single ownership of work items by [team area path](../../organizations/settings/set-team-defaults.md). Another option is to [add custom workflow states](../customize/customize-work.md) which all teams can use.  
+> Work items that appear on more then one team's Kanban board can yield query results that don't meet your expectations. Because each team can customize the Kanban board columns and swimlanes, the values assigned to work items which appear on different boards may not be the same. The primary work around for this issue is to maintain single ownership of work items by [team area path](../../organizations/settings/set-team-defaults.md). Another option is to [add custom workflow states](../../organizations/settings/work/customize-process-workflow.md) which all teams can use. 
+::: moniker-end
+
+::: moniker range=">= tfs-2015 <= tfs-2018"
+> [!IMPORTANT] 
+> Work items that appear on more then one team's Kanban board can yield query results that don't meet your expectations. Because each team can customize the Kanban board columns and swimlanes, the values assigned to work items which appear on different boards may not be the same. The primary work around for this issue is to maintain single ownership of work items by [team area path](../../organizations/settings/set-team-defaults.md). Another option is to [add custom workflow states](../customize/reference/change-workflow-wit.md) which all teams can use.  
 
 ::: moniker-end
 
 <a id="workflow-fields">  </a>
 
-## Workflow and Kanban board fields
+::: moniker range=">= tfs-2015"
+
+## Workflow, assignment, and Kanban board fields
 You can use the following fields to filter your queries or build reports. Some of these fields are populated with information as a work item progresses from one state to another, or you move an item in the [Kanban board](../kanban/kanban-basics.md) to a different column or swimlane. Several of these fields do not appear on the work item form, but they are tracked for those WITs listed in the following table.
 
 For information about data types and default field attributes, see [Work item data type reference](../customize/reference/define-modify-work-item-fields.md).
@@ -454,7 +466,7 @@ For information about data types and default field attributes, see [Work item da
 #### Notes
   
 <a id="sync">  </a>
-1.  By default, the server synchronizes system-defined person-name fields with Active Directory or Azure Active Directory, if these are configured. These fields include: Activated By, Assigned To, Closed By, Created By, and Resolved By. You can grant access to a team project by adding security groups that you created in AD or AAD or by adding accounts to existing or custom groups defined from the collection setting Security hub. See [Set up Active Directory or Azure Active Directory](../../organizations/security/setup-ad-aad.md).
+1.  By default, the server synchronizes system-defined person-name fields with Active Directory or Azure Active Directory, if these are configured. These fields include: Activated By, Assigned To, Closed By, Created By, and Resolved By. You can grant access to a project by adding security groups that you created in AD or AAD or by adding accounts to existing or custom groups defined from the collection setting Security hub. See [Set up Active Directory or Azure Active Directory](../../organizations/security/setup-ad-aad.md).
     
 	::: moniker range=">= tfs-2013 <= tfs-2018"  
 	You can enable or disable synchronization for a person-name field by using the **witadmin changefields** command-line tool. You can also synchronize custom person-name fields by specifying the **syncnamechanges** attribute. See [Manage work item fields](../customize/reference/witadmin/manage-work-item-fields.md) and [FIELD (Definition) element reference](../customize/reference/field-definition-element-reference.md).    
@@ -466,6 +478,163 @@ For information about data types and default field attributes, see [Work item da
 
 4. This field applies to all work item types that appear on the Kanban board. This includes all WITs added to the Requirement Category and may include those added to the Bug Category based on the team setting for [Show bugs on boards and backlogs](../customize/show-bugs-on-backlog.md). 
 	If you want to modify a board-related field, such as Board Column or Board Lane, from the work item form, you must add it to the form. For more information, see [Add or modify a work item field](../customize/add-modify-field.md).
+
+
+::: moniker-end
+
+
+
+::: moniker range="tfs-2013"
+
+## Workflow and assignment fields
+
+You can use the following fields to filter your queries or build reports. Some of these fields are populated with information as a work item progresses from one state to another. Several of these fields do not appear on the work item form, but they are tracked for those WITs listed in the following table.
+
+For information about data types and default field attributes, see [Work item data type reference](../customize/reference/define-modify-work-item-fields.md).
+
+<table width="100%">
+<thead>
+<tr>
+  <th width="17%">Field name</th>
+  <th width="56%">Description</th>
+  <th width="12%">Data type </th>
+  <th width="15%">Work item type</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr>
+  <td>Activated By <sup>1,&nbsp;2</sup> </td>
+  <td>The name of the team member who created the work item or changed its status from closed, completed, or done state to a new or active state. 
+<p>Reference name=Microsoft.VSTS.Common.ActivatedBy</p></td>
+  <td>String</td>
+  <td>All</td>
+</tr>
+
+<tr>
+  <td>Activated Date <sup>2</sup></td>
+  <td>The date and time when the work item was created or when its status was changed from closed, completed, or done to a new or active state. 
+<p>Reference name=Microsoft.VSTS.Common.ActivatedDate</p></td>
+  <td>DateTime</td>
+  <td>All</td>
+</tr>
+
+<tr>
+  <td>Assigned To <sup>1,&nbsp;2,&nbsp;3</sup> </td>
+  <td>The name of the team member who currently owns the work item. For additional information, see [Note 1 on synchronization and person-name fields](#sync) and [Assign work items to a team member](#assigned_to-field). 
+<p>Reference name=System.AssignedTo</p></td>
+  <td>String</td>
+  <td>All</td>
+</tr>
+<tr>
+  <td>Closed By <sup>1,&nbsp;2</sup>  </td>
+  <td>The name of the team member who set the state to closed, completed, or done. 
+<p>Reference name=System.ClosedBy</p></td>
+  <td>String</td>
+  <td>All</td>
+</tr>
+
+<tr>
+  <td>Closed Date</td>
+  <td>The date and time when a work item was closed.
+<p>Reference name=Microsoft.VSTS.Common.ClosedDate</p></td>
+  <td>DateTime</td>
+  <td>All</td>
+</tr>
+
+<tr>
+  <td>Created By  <sup>1,&nbsp;2</sup>   </td>
+  <td>The name of the team member who created the work item. 
+<p>Reference name=Microsoft.VSTS.Common.CreatedBy</p></td>
+  <td>String</td>
+  <td>All</td>
+</tr>
+
+<tr>
+  <td>Created Date</td>
+  <td>The date and time when a work item was created.
+<p>Reference name=Microsoft.VSTS.Common.CreatedDate</p></td>
+  <td>DateTime</td>
+  <td>All</td>
+</tr>
+
+<tr>
+  <td>Reason <sup>2,&nbsp;3</sup> </td>
+  <td>The reason why the work item is in the current state.
+<p>Values are defined within the ```WORKFLOW``` section of the WIT definition using the ```REASON``` element. To modify the defined reasons, see Change the workflow for a work item type.</p>
+<p>Reference name=System.Reason</p></td>
+  <td>String</td>
+  <td>All (except Test Case and Shared Steps)</td>
+</tr>
+
+<tr>
+  <td>Resolved By <sup>1,&nbsp;2</sup>  </td>
+  <td>The date and time when the work item was moved into a resolved or done state.
+<p>Reference name=Microsoft.VSTS.Common.ResolvedBy</p></td>
+  <td>String</td>
+  <td>All</td>
+</tr>
+
+<tr>
+  <td>Resolved Date <sup>2</sup>  </td>
+  <td>The date and time when the work item was moved into a resolved or done state.
+<p>Reference name=Microsoft.VSTS.Common.ResolvedDate</p></td>
+  <td>DateTime</td>
+  <td>All</td>
+</tr>
+
+<tr>
+  <td>Resolved Reason  <sup>2</sup>  </td>
+  <td>The reason why a work item was resolved. For example, the user story is code complete or the bug is fixed.
+<p>This field is read-only and only valid for Agile and CMMI work item types.</p>
+<p>Reference name=Microsoft.VSTS.Common.ResolvedReason</p></td>
+  <td>String</td>
+  <td>All (Agile, CMMI)</td>
+</tr>
+
+
+<tr>
+  <td>Reviewed By </td>
+  <td>The name of the team member who responded to a code review request and is cataloged in the code review response. </p>
+	<p>Reference name=Microsoft.VSTS.Common.ReviewedBy</p>
+  </td>
+  <td>String</td>
+  <td>Code Review Response
+  </td>
+</tr>
+
+<tr>
+  <td>State <sup>2, 3</sup>  </td>
+  <td>The current state of the work item. This field allows you to update the status of a work item as it progresses from new or active to a done or closed state.  
+   <p>Values are defined within the ```WORKFLOW``` section of the WIT definition using the ```STATE``` element. To add a custom state to VSTS, see [Customize the workflow for a process](../customize/process/customize-process-workflow.md). To add or modify States or the workflow for TFS, see [Change the workflow for a work item type](../customize/reference/change-workflow-wit.md).</p>
+<p>Reference name=System.State</p></td>
+  <td>String</td>
+  <td>All</td>
+</tr>
+
+<tr>
+  <td>State Changed Date</td>
+  <td>The date and time when the value of the State field changed.
+<p>Reference name=Microsoft.VSTS.Common.StateChangeDate</p></td>
+  <td>DateTime</td>
+  <td>All</td>
+</tr>
+
+</tbody>
+</table>
+
+#### Notes
+  
+<a id="sync">  </a>
+1.  By default, the server synchronizes system-defined person-name fields with Active Directory or Azure Active Directory, if these are configured. These fields include: Activated By, Assigned To, Closed By, Created By, and Resolved By. You can grant access to a project by adding security groups that you created in AD or AAD or by adding accounts to existing or custom groups defined from the collection setting Security hub. See [Set up Active Directory or Azure Active Directory](../../security/setup-ad-aad.md).
+    
+	You can enable or disable synchronization for a person-name field by using the **witadmin changefields** command-line tool. You can also synchronize custom person-name fields by specifying the **syncnamechanges** attribute. See [Manage work item fields](../customize/reference/witadmin/manage-work-item-fields.md) and [FIELD (Definition) element reference](../customize/reference/field-definition-element-reference.md).   
+
+2.  Reportable field with attribute set to Dimension. Reportable data is exported to the data warehouse and can be included in Excel or SQL Server reports. Use the [**witadmin changefield**](../customize/reference/witadmin/manage-work-item-fields.md) command to change the reportable attribute for a field.  
+
+3.  Indexed field. Enabling indexing for a field may increase the performance of finding work items whose queries specify that field. Use the [**witadmin indexfield** command](../customize/reference/witadmin/manage-work-item-fields.md) to change the index attribute for a field.  
+
+
+::: moniker-end
 
 
 ## Related articles
