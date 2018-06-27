@@ -8826,17 +8826,17 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "/vsts/pipelines/agents/configure-tfs-authentication.md",
+      "source_path": "vsts/pipelines/agents/configure-tfs-authentication.md",
       "redirect_url": "/vsts/pipelines/agents/agents",
       "redirect_document_id": false
     },
     {
-      "source_path": "/vsts/pipelines/apps/cd/deploy-database-sqlscripts.md",
+      "source_path": "vsts/pipelines/apps/cd/deploy-database-sqlscripts.md",
       "redirect_url": "/vsts/pipelines/targets/azure-sqldb",
       "redirect_document_id": false
     },
     {
-      "source_path": "/vsts/pipelines/apps/cd/deploy-dacpac-sqlpackage.md",
+      "source_path": "vsts/pipelines/apps/cd/deploy-dacpac-sqlpackage.md",
       "redirect_url": "/vsts/pipelines/targets/azure-sqldb",
       "redirect_document_id": false
     }    
