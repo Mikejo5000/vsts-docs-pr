@@ -5802,7 +5802,7 @@
     },
     {
       "source_path": "docs/build-release/actions/agents/configure-tfs-authentication.md",
-      "redirect_url": "/vsts/pipelines/agents/configure-tfs-authentication",
+      "redirect_url": "/vsts/pipelines/agents/agents#configure-tfs-authentication",
       "redirect_document_id": true
     },
     {
