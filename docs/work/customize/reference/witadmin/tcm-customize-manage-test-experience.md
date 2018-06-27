@@ -2,11 +2,12 @@
 title: Customize and manage the test experience
 titleSuffix: TFS  
 description: Customize three of the features that are supported - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: a4820ed4-9213-4cfc-99e6-f974382036f8
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.manager: douge
+ms.topic: reference
 monikerRange: '>= tfs-2013 <= tfs-2018'
 ms.date: 03/20/2018
 ---
@@ -25,11 +26,11 @@ You can customize three of the features that are supported in Microsoft Test Man
 The **tcm** command-line tool only works when run against an on-premises Team Foundation Server. 
 
 
-Also, you can use `tcm` command options to [copy and clone test suites and test cases](../../../../manual-test/mtm/copying-and-cloning-test-suites-and-test-cases.md).  
+Also, you can use `tcm` command options to [copy and clone test suites and test cases](../../../../test/mtm/copying-and-cloning-test-suites-and-test-cases.md).  
   
  **Requirements**  
   
- For the team project where the work item types are defined, you must be a member of the **Team Foundation Administrators** security group or the **Project Administrators** security group. See [Add accounts to administer project collections](../../../../security/set-project-collection-level-permissions.md).  
+ For the team project where the work item types are defined, you must be a member of the **Team Foundation Administrators** security group or the **Project Administrators** security group. See [Add accounts to administer project collections](../../../../organizations/security/set-project-collection-level-permissions.md).  
 
 To run the **tcm** command-line tool, open a Command Prompt window where Visual Studio is installed. To do this, enter **Developer Command Prompt** in the **Type here to search** box and choose the version that applies to you. The **tcm** command is located in the following folder: 
 

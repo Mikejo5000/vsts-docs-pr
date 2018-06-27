@@ -1,9 +1,9 @@
 ---
 title: Email or print work items
 titleSuffix: VSTS & TFS
-description: Email or print work items to share work tracking information in VSTS or TFS 
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+description: Email or print work items to share work tracking information in Visual Studio Team Services & Team Foundation Server
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: B2E9B082-15BE-448C-96D8-3EF048A15560
 ms.topic: conceptual
 ms.manager: douge
@@ -82,7 +82,7 @@ Here's a list of the most common ways in which teams share information and plans
 </tbody>
 </table>
 
-In addition, if you have stakeholders who don't contribute code but want to contribute to the discussion and review progress, make sure you provide them [stakeholder access](../../security/get-started-stakeholder.md) so that they can view work items and dashboards.  
+In addition, if you have stakeholders who don't contribute code but want to contribute to the discussion and review progress, make sure you provide them [stakeholder access](../../organizations/security/get-started-stakeholder.md) so that they can view work items and dashboards.  
 
 
 <a id="email-print-send-links"></a>
@@ -113,7 +113,7 @@ You can quickly email a summary of one or more work items. Summaries include the
 ![Email work item from on-prem TFS](../track/_img/share-plans-email-work-item-tfs.png)  
 
 > [!NOTE]  
-> If you connect to an on-premises TFS, your TFS admin must have [configured an SMTP server](../../tfs-server/admin/setup-customize-alerts.md) for the email feature to work.   
+> If you connect to an on-premises TFS, your TFS admin must have [configured an SMTP server](/tfs/server/admin/setup-customize-alerts) for the email feature to work.   
 
 
 # [Visual Studio](#tab/visual-studio) 
@@ -161,7 +161,7 @@ If you want to mail a list of all items in the backlog or query, simply click th
 <a id="tfs-portal-email-list" />
 
 > [!NOTE]   
-> Your TFS admin must have [configured an SMTP server](../../tfs-server/admin/setup-customize-alerts.md) for the email feature to work.  
+> Your TFS admin must have [configured an SMTP server](/tfs/server/admin/setup-customize-alerts) for the email feature to work.  
 
 **To email items from the web portal for TFS 2015**: Open a backlog or query and highlight the items from the list. Open the context menu for one of the selected items and select to email them.
     

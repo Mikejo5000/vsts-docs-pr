@@ -1,15 +1,16 @@
 ---
 title: Add task checklists
 titleSuffix: VSTS & TFS
-ms.custom: Add checklists
-description: Add task checklists to your Kanban board for lightweight tracking of to do lists when working in Visual Studio Team Services  and Team Foundation Server   
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+description: Add task checklists to your Kanban board for lightweight tracking when working in Visual Studio Team Services & Team Foundation Server
+ms.global_help.title: Add checklists
+ms.global_help.keywords: ms.vss-work-web.boards-hub, 7       
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: D4CE68D6-8056-4CB7-ACFA-1FCD05223040 
 ms.manager: douge
-ms.author: kaelli
-ms.topic: get-started-article
-monikerRange: 'vsts || >= tfs-2015 <= tfs-2018'
+ms.author: kaelliauthor: KathrynEE
+ms.topic: tutorial
+monikerRange: '>= tfs-2015'
 ms.date: 03/20/2018
 ---
 
@@ -30,7 +31,7 @@ With task checklists, you continue to enjoy lightweight tracking, while gaining 
 ::: moniker-end
 
 In this topic, you'll learn: 
-> [!div class="checklist"] 
+>[!div class="checklist"]    
 > * How to add a task or set of tasks to a backlog item from your Kanban board  
 > * How to mark a task as done 
 > * How to expand or collapse the task checklist  
@@ -42,6 +43,9 @@ In this topic, you'll learn:
 
 [!INCLUDE [temp](../_shared/image-differences.md)]  
 
+[!INCLUDE [temp](../_shared/prerequisites.md)]
+
+[!INCLUDE [temp](../_shared/open-kanban-board.md)] 
 
 ## Add a task or set of tasks 
 
@@ -65,7 +69,7 @@ In this topic, you'll learn:
 
 	<img src="_img/kanban-board-open-task-form.png" alt="Open task work item form from task checklist" style="border: 1px solid #C3C3C3;" />  
 
-	Tasks that you create from the Kanban board will show up on your sprint task board. Also, tasks that you create from the [sprint backlog](../scrum/sprint-planning.md) or [taskboard](../scrum/task-board.md) will show up within tasks checklists on the Kanban board.  
+	Tasks that you create from the Kanban board will show up on your sprint task board. Also, tasks that you create from the [sprint backlog](../scrum/assign-work-sprint.md) or [taskboard](../scrum/task-board.md) will show up within tasks checklists on the Kanban board.  
 
 
 ## Mark a task as done 

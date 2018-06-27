@@ -1,11 +1,14 @@
 ---
-title: Link and attachment queries | VSTS & TFS
-description: QUery work items based on link type, link count, link restrictions, and attachment file count in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+title: Link and attachment queries 
+titleSuffix: VSTS & TFS
+description: Query work items based on link type, link count, link restrictions, and attachment file count in Visual Studio Team Services & Team Foundation Server 
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 219717a0-de6e-4f70-8558-54f813f82507
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
+ms.topic: sample
 ms.date: 05/10/2017  
 ---
 
@@ -87,7 +90,7 @@ Add a query and select **Tree of work items** to begin your query. You should se
 <img src="_img/query-link-attach-all-items-tree-query.png" alt="Query editor, new tree of work items query" style="border: 2px solid #C3C3C3;" />
 
 > [!NOTE]    
->You can't construct a query that shows a hierarchical view of Test Plans, Test Suites, and Test Cases. These items aren't linked together using parent-child link types. You can [view the hierarchy through the Test Plans page of the Test hub](../../manual-test/getting-started/create-a-test-plan.md). 
+>You can't construct a query that shows a hierarchical view of Test Plans, Test Suites, and Test Cases. These items aren't linked together using parent-child link types. You can [view the hierarchy through the Test Plans page of the Test hub](../../test/create-a-test-plan.md). 
 
 From there, you can add additional query clauses or change the Filter options for linked work items. 
 
@@ -313,7 +316,7 @@ These buttons become available only after you perform a specific action:
 
 -   The buttons to open a work item (![](_img/link-controls-restrictions-field-reference/IC588293.png)), edit a link (![](_img/link-controls-restrictions-field-reference/IC588336.png)), and delete a link (![](_img/link-controls-restrictions-field-reference/IC588333.png)) become available only after you click one or more work items listed in the links control tab.
 
-The **Storyboards** links control restricts users to add links only to storyboards or network shared files. With this control, you can add a new link, open a linked item, and delete a link. Also, only the the web portal version displays the **Start Storyboarding** link within the toolbar.
+The **Storyboards** links control restricts users to add links only to storyboards or network shared files. With this control, you can add a new link, open a linked item, and delete a link. Also, only the web portal version displays the **Start Storyboarding** link within the toolbar.
 
 Storyboards links control (the web portal)
 ![](_img/link-controls-restrictions-field-reference/IC589934.png)

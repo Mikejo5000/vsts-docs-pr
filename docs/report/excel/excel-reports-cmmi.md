@@ -1,11 +1,13 @@
 ---
-title: Excel reports provided with the CMMI process template for TFS
-description: Summary of Excel reports made available with the CMMI process template for Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
+title: Excel reports provided with the CMMI process template 
+description: Summary of Excel reports made available with the CMMI process template for Team Foundation Server  
+titleSuffix: TFS
+ms.prod: devops
+ms.technology: devops-analytics
+ms.topic: reference
 ms.assetid: e1263634-8bb5-4aa9-904f-bf3ccdefa77a
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 04/05/2017
 ---
 
@@ -56,7 +58,7 @@ If you want to export work items to Excel, see [Bulk add or modify work items wi
   
     -   You must add users to the **TfsWarehouseDataReaders** security role in SQL Server Analysis Services.  
   
- The following table summarizes the required permissions based on activity. For information about how to grant these permissions to team members, see [Add users to team projects](../../security/add-users-team-project.md). For information about permissions that are required to work with Excel reports in general, see [Grant permissions to view and manage reports](../admin/grant-permissions-to-reports.md).  
+ The following table summarizes the required permissions based on activity. For information about how to grant these permissions to team members, see [Add users to team projects](../../organizations/security/add-users-team-project.md). For information about permissions that are required to work with Excel reports in general, see [Grant permissions to view and manage reports](../admin/grant-permissions-to-reports.md).  
   
 |Activity|Team Foundation Server|Team project portal|SQL Server Analysis Services cube (Tfs_Analysis)|Notes|  
 |--------------|------------------------------------------------------------------|-------------------------|----------------------------------------------------------------------------------------------------------|-----------|  

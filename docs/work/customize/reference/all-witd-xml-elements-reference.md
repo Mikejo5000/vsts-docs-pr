@@ -1,11 +1,14 @@
 ---
-title: All WITD XML elements reference | VSTS & TFS
-description: Customize an existing work item type (WIT) or create a WIT to meet your project tracking requirements - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: All WITD XML elements reference
+titleSuffix: VSTS & TFS
+description: Index to XML syntax elements and main attributes for work item tracking for Team Foundation Server 
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: d125917c-9e67-49e6-8274-8b169e76639a
 ms.author: kaelli
+author: KathrynEE
 ms.manager: douge
+ms.topic: reference
 ms.date: 02/14/2017
 ---
 
@@ -13,7 +16,7 @@ ms.date: 02/14/2017
 
 [!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)] 
 
-You can customize an existing work item type (WIT) or create a WIT to meet your project tracking requirements. A WIT defines the fields, rules, and workflow states and transitions for an item of work that will be tracked for a team project, such as a bug, requirement, or risk. You create a team project either in [VSTS](../../../accounts/create-account-msa-or-work-student.md) or on an [on-premises Team Foundation Server (TFS)](../../../accounts/create-team-project.md).  
+You can customize an existing work item type (WIT) or create a WIT to meet your project tracking requirements. A WIT defines the fields, rules, and workflow states and transitions for an item of work that will be tracked for a team project, such as a bug, requirement, or risk. You create a team project either in [VSTS](../../../organizations/accounts/create-account-msa-or-work-student.md) or on an [on-premises Team Foundation Server (TFS)](../../../organizations/accounts/create-team-project.md).  
   
  The root element in each definition of a WIT is the `WITD` element, which must have only one `WORKITEMTYPE` element defined. The name of each WIT must be unique in a team project, and each type name must be no more than 128 Unicode characters long.  
   
@@ -164,4 +167,4 @@ To learn how to create or customize a WIT, see [Modify or add a custom work item
  
 -  [Customize the work tracking experience](../customize-work.md)  
 -  [witAdmin: Customize and manage objects for tracking work](witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md)  
--  [Naming restrictions, Work item tracking objects](../../../collaborate/naming-restrictions.md)
+-  [Naming restrictions, Work item tracking objects](../../../organizations/settings/naming-restrictions.md)

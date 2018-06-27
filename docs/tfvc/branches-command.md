@@ -2,10 +2,12 @@
 title: Branches Command
 description: Branches Command
 ms.assetid: dae78c90-c65a-444d-96cb-84027b91ad4a
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
@@ -19,7 +21,7 @@ Displays the history of a branch for a specified file or folder.
 
 **Required Permissions**
 
-To use the **branches** command, your **Read** permission must be set to **Allow** for the item and any branches to view their history. For more information, see [Permissions and groups reference](../security/permissions.md).
+To use the **branches** command, your **Read** permission must be set to **Allow** for the item and any branches to view their history. For more information, see [Permissions and groups reference](../organizations/security/permissions.md).
 
     tf branches itemspec [/version:versionspec] [/collection:TeamProjectCollectionUrl] [/login:username,[password]]
 

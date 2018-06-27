@@ -2,8 +2,8 @@
 title: Upload, download, or delete a process template 
 titleSuffix: TFS
 description: Upload, download, delete, or make default a process template for a team project collection 
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 5D5AF176-B3C6-47AD-87FF-5FAFE1BA4AAE
 ms.topic: conceptual
 ms.manager: douge
@@ -35,9 +35,9 @@ You can upload, download, and delete process templates for a team project collec
 
 1.	Open the same version of Visual Studio, Visual Studio Community, or Team Explorer as the on-premises TFS that you connect to. For example, if you connect to a TFS 2017 instance, you must connect from Visual Studio 2017 or Visual Studio Community 2017. If you connect to VSTS, choose the latest version supported.  
 
-	You can always download a free version of Visual Studio Community from the [Visual Studio download site](https://www.visualstudio.com/downloads/#visual-studio-community-2015-with-update-3-free).  
+	You can always download a free version of Visual Studio Community from the [Visual Studio download site](https://visualstudio.microsoft.com/downloads/#visual-studio-community-2015-with-update-3-free).  
 
-	If you aren't a member of the Project Collection Administrators group, [get added as one](../../../security/set-project-collection-level-permissions.md).  
+	If you aren't a member of the Project Collection Administrators group, [get added as one](../../../organizations/security/set-project-collection-level-permissions.md).  
 
 2.	From, Visual Studio, open the Process Template Manager from the **Team, Team Project Collection Settings** menu.
 
@@ -71,7 +71,7 @@ You can upload, download, and delete process templates for a team project collec
 	</td>
 	<td>To download the process template to a local computer.<br/>
 	<p>In the **Download Process Template** dialog box, select a folder where the process template will be downloaded.</p>
-	<p>If you're downloading a process template to use to [configure new features](../../customize/configure-features-after-upgrade.md), [manually add new features](../../customize/add-features-manually.md) or [update a custom process template to enable new features](../../customize/update-customized-process-template.md)--choose the process that corresponds to the one you used previously to create your team project. For example, if you're updating a team project based on the Scrum process template, then select **Scrum**. Note that all version numbers have been removed from the process templates. If you don't see Agile, CMMI, or Scrum, then you need to [update TFS](https://www.visualstudio.com/downloads/download-visual-studio-vs). </p>
+	<p>If you're downloading a process template to use to [configure new features](../../customize/configure-features-after-upgrade.md), [manually add new features](../../customize/add-features-manually.md) or [update a custom process template to enable new features](../../customize/update-customized-process-template.md)--choose the process that corresponds to the one you used previously to create your team project. For example, if you're updating a team project based on the Scrum process template, then select **Scrum**. Note that all version numbers have been removed from the process templates. If you don't see Agile, CMMI, or Scrum, then you need to [update TFS](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs). </p>
 	<p>You can determine which process template to select based on the [work item types defined for your existing team project](#wit_correlation).</p>
 	</td>
 	</tr>
@@ -131,7 +131,7 @@ Uploading a process template requires that it pass the following validation chec
 
 - Process template names must be unique and 256 Unicode characters or less. Same-named templates will overwrite existing templates.<br/>
 Also, names cannot contain the following characters: . , ; ' ` : / \ * | ? " &amp; % $ ! + = ( ) [ ] { } &lt; &gt;<br/>
-For additional restrictions, see [Naming restrictions](../../../collaborate/naming-restrictions.md). 
+For additional restrictions, see [Naming restrictions](../../../organizations/settings/naming-restrictions.md). 
 - Process template folders can't contain any .exe files. If they do, the process template may upload successfully, however project creation will fail.
 - Process template total size should be 2 GB or less, or project creation will fail.
 - The upload process performs a partial verification check to make sure that the XML of each process template XML file is valid. If you receive any errors when you try to upload the process template, review the XML to determine the cause of the error. Note that duplicate tags in an XML file can cause errors. If there is no error in the XML, check to make sure all the appropriate files are included in your process template in the correct folder locations.
@@ -145,7 +145,7 @@ For additional restrictions, see [Naming restrictions](../../../collaborate/nami
 
 Periodically, updates are made to the process templates to support new features. For details, see [Changes made to process templates](changes-to-process-templates.md).  
 
-- [Create a team project](../../../accounts/create-team-project.md)   
+- [Create a team project](../../../organizations/accounts/create-team-project.md)   
 - [Customize a process template](../../customize/reference/process-templates/customize-process.md)   
 - [Process template and plug-in files](../../customize/reference/process-templates/overview-process-template-files.md)  
 - [Import and update a process (Hosted XML)](../../customize/import-process/import-process.md)     

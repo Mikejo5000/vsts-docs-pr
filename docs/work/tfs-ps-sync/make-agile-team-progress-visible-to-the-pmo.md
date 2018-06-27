@@ -1,11 +1,13 @@
 ---
-title: Make Agile team progress visible to the Program Management Office | TFS
-description: Use the Project Server in order to view the work progress and resource usage -  Team Foundation Server (TFS)  
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit 
+title: Make Agile team progress visible to the Program Management Office 
+titleSuffix: TFS
+description: View work progress and resource usage using Team Foundation Server & Project Server
+ms.prod: devops
+ms.technology: devops-agile 
 ms.assetid: 865f7e20-cc67-4279-b625-a27ac3f1e88f
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
 ms.date: 01/12/2017
 ---
 # Make Agile team progress visible to the Program Management Office
@@ -76,7 +78,7 @@ You can also export a shared query to Excel to perform bulk updates of user stor
   
 <a name="DefineStories"></a> 
 ### Define user stories and tasks  
- You can use the sprint backlog page to [plan a sprint or iteration](../scrum/sprint-planning.md). This page calculates individual and team capacity based on the estimated and remaining effort that is defined for tasks.  
+ You can use the sprint backlog page to [plan a sprint or iteration](../scrum/assign-work-sprint.md). This page calculates individual and team capacity based on the estimated and remaining effort that is defined for tasks.  
   
  As the following illustration shows, you can use the backlog page to define user stories and the tasks that are required to implement them. Tasks are automatically linked to user stories. This association supports the rollup of work hours from all tasks to the user story.  
   

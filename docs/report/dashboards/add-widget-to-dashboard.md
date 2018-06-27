@@ -1,14 +1,15 @@
 ---
 title: Add a widget to a team dashboard 
 titleSuffix: VSTS & TFS
-description: Choose and configure widgets that you add to a team dashboard  
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-reporting
+description: Choose and configure widgets that you add to a team dashboard in Visual Studio Team Services & Team Foundation Server  
+ms.prod: devops
+ms.technology: devops-analytics
 ms.assetid: 0869DB42-6983-49A2-855C-2678CFFF4967
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
 ms.topic: quickstart
-monikerRange: 'vsts || >= tfs-2015'
+monikerRange: '>= tfs-2015'
 ms.date: 03/27/2018
 ---
 
@@ -30,15 +31,15 @@ You can add one or more charts or widgets to your dashboard. You add several wid
 
 
 ::: moniker range="vsts"
-[!INCLUDE [temp](../_shared/dashboard-prerequisites-vsts.md)] 
+[!INCLUDE [temp](../_shared/dashboard-prerequisites-vsts.md)]
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
-[!INCLUDE [temp](../_shared/dashboard-prerequisites-tfs-2017-18.md)] 
+[!INCLUDE [temp](../_shared/dashboard-prerequisites-tfs-2017-18.md)]
 ::: moniker-end
 
 ::: moniker range="tfs-2015"
-[!INCLUDE [temp](../_shared/dashboard-prerequisites-tfs-2015.md)] 
+[!INCLUDE [temp](../_shared/dashboard-prerequisites-tfs-2015.md)]
 ::: moniker-end
 
 
@@ -46,7 +47,7 @@ You can add one or more charts or widgets to your dashboard. You add several wid
 
 ## Connect to the web portal for your team project 
 
-To add a widget to a dashboard, you connect to your team project using a [supported web browser](../../tfs-server/requirements.md#supported-browsers).  If you don't have a team project yet, create one in [VSTS](../../accounts/create-account-msa-or-work-student.md)<!--- or set one up in an [on-premises TFS](../../accounts/create-team-project.md)-->.
+To add a widget to a dashboard, you connect to your team project using a [supported web browser](/tfs/server/compatibility#supported-browsers).  If you don't have a team project yet, create one in [VSTS](../../organizations/accounts/create-account-msa-or-work-student.md)<!--- or set one up in an [on-premises TFS](../../organizations/accounts/create-team-project.md)-->.
 
 Open a browser window and click the **Dashboards** hub. If you haven't been added as a team member, [get added now](../../work/scale/multiple-teams.md#add-team-members).
 
@@ -69,7 +70,7 @@ All dashboards are associated with a team. You need to be a team administrator, 
 
 ::: moniker range="vsts"
 
-To enable the New Dashboard experience, see [Enable preview features](../../collaborate/preview-features.md).  
+To enable the New Dashboard experience, see [Enable preview features](../../project/navigation/preview-features.md).  
 
 1. From the **Dashboards** hub, open the selector and choose  the **Browse all dashboards** option. 
  
@@ -93,7 +94,7 @@ The New Dashboard experience is only available from VSTS at this time.
 
 ::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 
-1. Select the team whose dashboards you want to view. To switch your team focus, see [Switch team project or team focus](../../settings/switch-team-context.md).
+1. Select the team whose dashboards you want to view. To switch your team focus, see [Switch team project or team focus](../../organizations/settings/switch-team-context.md).
 
 2. Click the **Dashboards** hub.
 
@@ -121,7 +122,7 @@ Widget images may vary depending on which platform you access. This topic shows 
 
 ::: moniker range="vsts"
 
-To enable the New Dashboard experience, see [Enable preview features](../../collaborate/preview-features.md).  
+To enable the New Dashboard experience, see [Enable preview features](../../project/navigation/preview-features.md).  
 
 To add widgets to the dashboard, click ![Edit dashboard icon](_img/icons/edit-icon.png). 
 
@@ -157,7 +158,7 @@ The [widget catalog](widget-catalog.md) describes all the available widgets, man
 ::: moniker-end
 
 ::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
-Or, you can drag and drop a widget from the catalog onto the dashboard.    
+Or, you can drag and drop a widget from the catalog onto the dashboard.
 
 ::: moniker-end
 

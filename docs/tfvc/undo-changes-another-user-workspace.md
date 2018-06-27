@@ -2,10 +2,12 @@
 title: Undo Changes in Another User's Workspace
 description: Undo Changes in Another User's Workspace
 ms.assetid: 038a4364-0a70-436e-95cc-24735d0ad9e7
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
@@ -25,7 +27,7 @@ If you must also delete another user's workspace, you can use the **tf workspace
 
 **Required Permissions**
 
-To undo pending changes in another user's workspace, you must have the **Administer workspaces** permission set to **Allow**. For more information, see [Permissions and groups reference](../security/permissions.md).
+To undo pending changes in another user's workspace, you must have the **Administer workspaces** permission set to **Allow**. For more information, see [Permissions and groups reference](../organizations/security/permissions.md).
 
 ### To Undo the Changes in Another User's Workspace
 

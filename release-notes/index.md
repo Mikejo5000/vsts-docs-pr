@@ -2,10 +2,10 @@
 title: VSTS Features Timeline
 author: alexcnichols
 ms.author: alexn
-ms.date: 4/3/2018
+ms.date: 6/22/2018
 ms.topic: article
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-articles
+ms.prod: devops
+ms.technology: vsts-release-notes
 ms.manager: douge
 description: VSTS feature updates roadmap, release notes, release timeline, and TFS server build numbers
 hide_comments: true
@@ -24,24 +24,20 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 |Visual Studio Git – Worktree support, submodules behavior like normal repos|Code|N/A|
 |Visual Studio Git – Settings for ‘fetch –prune’ and ‘pull –rebase’, as well as performance improvements|Code|N/A|
 |Git - Pull request contributors can add required reviewers to their pull request|Code|2019|
-|Git - Filter the pull request list by target branch and labels|Code|2019|
 |GVFS - Performance improvements for status|Code|2019|
 |GVFS for Mac - Public Preview|Code|N/A|
-|Filtering on the Taskboard|Work|2018.2|
-|New Agile Hubs – Refreshed UI on the core Agile hubs supporting Queries, Backlogs, Boards, Sprints, and Dashboards|Work|2019|
-|Work Items – Markdown support, editing comments|Work|2019|
-|Work Items – Discussion-centric work item form|Work|TBD|
+|Filtering on the Taskboard|Work|2019|
+|Work Item support for Markdown editing|Work|2019|
+|Migration from a Hosted XML processes to an Inherited process|Work|N/A|
 |Configuration as code (YAML) for builds – Generally Available|Build|2019|
 |Updated build summary and log views|Build|2019|
 |Hosted build images – Ability to use latest or previous version of image|Build|N/A|
 |Release Management orchestration improvements – Tag based triggers|Release|2019|
 |[Agent-based deployment in Release Management](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/03/deployment-groups/) – Sharing of VMs|Release|2019|
-|[DevOps Projects](https://blogs.msdn.microsoft.com/devops/2017/11/15/azure-devops-project/) – Language support for Go and Ruby|Release|N/A|
 |Release traceability – Pull request integration|Release|2019|
 |Deployment Groups auto triggering a release for all new Azure VMs|Release|TBD|
 |Updated landing pages for Release|Release|2019|
 |Canvas-based Release Summary views to track progress of releases|Release|2019|
-|Package Management – Retention policies|Package|2018.2|
 |Package Management – Repo, Build provenance information for a package|Package|2019|
 |Package Management – Upstreams sources for VSTS feeds across accounts with the same Azure Active Directory|Package|2019|
 |Package Management – Package consumption metrics|Package|2019|
@@ -56,7 +52,6 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 |Dashboards – Create dashboard separate from a team|Reporting|2019|
 |Analytics – Automated Test data|Reporting|2019|
 |[Encryption at rest for disks used by code and work item search](https://blogs.msdn.microsoft.com/devops/2017/09/05/visual-studio-team-services-encryption-at-rest/)|Admin|N/A|
-|[Multiple accounts per “organization”](https://blogs.msdn.microsoft.com/devops/2016/01/11/how-we-plan-to-enable-creating-multiple-collections-per-account/)|Admin|N/A|
 |[Conditional Access Policy when using Alternate Authentication (e.g. Personal Access Tokens)](https://blogs.msdn.microsoft.com/devops/2018/01/30/supporting-azuread-conditional-access-policy-across-vsts/)|Admin|N/A|
 |Publisher certification process|Marketplace|N/A|
 |CC/BCC (carbon copy) recipient support for email notifications|Notifications|2019|
@@ -66,13 +61,19 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 
 |Feature  |Area  |Server  |
 |---------|---------|---------|
-|Work Items – Cross account linking|Work|TBD|
+|Git Pull Requests – Teams aren’t added by default when creating new pull requests|Code|TBD|
+|Git Pull Requests – Change target branch for an active pull request|Code|TBD|
+|Git Pull Requests – Improved search/filter options for pull requests|Code|TBD|
+|A discussion-centric Work Item form|Work|TBD|
+|Cross account linking for Work Items|Work|TBD|
 |Deployment Groups easy configuration of Azure VMs|Release|TBD|
 |Extend release gates – Test|Release|TBD|
 |Release traceability – Work Item integration|Release|TBD|
 |Configuration as code (YAML) releases - Public Preview|Release|TBD|
 |Package Management – Maven Upstream support|Package|TBD|
-|[Administration – Improved Alternate Authentication experience](https://blogs.msdn.microsoft.com/devops/2017/07/14/improved-alternate-authentication-experience/)|Admin|TBD|
+|[Improved Alternate Authentication experience](https://blogs.msdn.microsoft.com/devops/2017/07/14/improved-alternate-authentication-experience/)|Admin|TBD|
+|[Azure Active Directory users in Microsoft Account-backed account](https://blogs.msdn.microsoft.com/devops/2018/03/28/deadline-extended-for-connecting-vsts-accounts-to-azuread/)|Admin|N/A|
+|Connect your VSTS account to Azure Active Directory from within VSTS|Admin|N/A|
 |Release views – support for multiple versions of extensions|Marketplace|N/A|
 
 ### 2018 Q4
@@ -80,6 +81,7 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 |Feature  |Area  |Server  |
 |---------|---------|---------|
 |Extensible Pool Providers|Build|TBD|
+|[Bring multiple accounts under and “organization”](https://blogs.msdn.microsoft.com/devops/2016/01/11/how-we-plan-to-enable-creating-multiple-collections-per-account/)|Admin|N/A|
 
 ## Current features
 
@@ -95,20 +97,90 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
     </thead>
     <tbody>
+
         <tr>
-            <td rowspan="13">[3 Apr 2018](2018/apr-03-vsts.md)</td>
+            <td rowspan="17">[19 June 2018](2018/jun-19-vsts.md)</td>
+            <td>Preview our new navigation hub</td><td style="background:rgb(232, 232, 232);">*2019*</td>
+        </tr>
+        <tr><td>New Work hubs</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Queries hub generally available</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Easily find existing work items in linking and mention experiences</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Modernized experience in the Builds hub</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Pass environment variables to tasks</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Ignore a release gate for a deployment</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Set a variable at release time</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Organize your release definitions in folders</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Use improved Windows remote PowerShell based tasks</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>GitHub artifacts show associated commits deployed in a release</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Use upstream sources in legacy feeds</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Use arbitrary public npm feeds as upstream sources</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Improved experiences in the Test tab</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr> 
+        <tr><td>Exclude items completed before a certain date in analytics views</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr> 
+        <tr><td>Easily navigate to dashboards</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Get notified for PAT expirations</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr>
+            <td rowspan="11">[30 May 2018](2018/may-30-vsts.md)</td>
+            <td>Import and export Inherited Processes</td><td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr><td>Customize column options in the Work Items hub</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Receive notifications when pull request policies are bypassed</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Favorite a branch from within a pull request</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Visualize release progress</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Run inline or file-based Python scripts in your pipeline</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Use Anaconda tools for data science in your pipeline</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Simplify definitions with multiple agentless tasks per phase</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Manage limits on self-hosted, concurrent CI/CD jobs</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
+        <tr><td>Streamline authentication from agent VMs to Azure Resource Manager</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Guard your user account using alternate authentication notifications</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
+        <tr>
+            <td rowspan="15">[7 May 2018](2018/may-07-vsts.md)</td>
+            <td>Query for empty rich text fields</td><td style="background:rgb(232, 232, 232);">*2019*</td>
+        </tr>
+        <tr><td>Build Ruby apps based on a variety of Ruby versions</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Build, test, and publish Python apps based on a variety of Python versions</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Build Java apps on hosted agents with Java 10</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Leverage improved Xcode build and test output from xcpretty</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Progressively expose and phase deployments using release gates</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Deploy to Azure Kubernetes Service (AKS) and Azure Service Fabric using Azure DevOps Projects</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
+        <tr><td>Deploy to Azure SQL Database using Azure DevOps Projects</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
+        <tr><td>Release hybrid applications to Azure Stack</td><td style="background:rgb(231, 179, 249);">*2018.2*</td></tr>
+        <tr><td>Control Helm version used in Release</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Follow packages</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Control who can pull packages from upstream sources</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Change feed settings without having to manually save</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Manage test plans using the new Test Plans hub</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Fix broken links when moving pages</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr>
+            <td rowspan="15">[16 Apr 2018](2018/apr-16-vsts.md)</td>
+            <td>Find phrases and code with special characters faster</td><td style="background:rgb(232, 232, 232);">*2019*</td>
+        </tr>
+        <tr><td>Query work in the Area Paths of a Team with the new @TeamAreas macro</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Trigger CI builds from YAML</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Continuously deploy to Azure Database for MySQL</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Streamline deployment to Kubernetes using Helm</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Deploy Ruby on Rails applications</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Configure Go and Ruby applications using Azure DevOps Projects</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
+        <tr><td>Continuously deploy builds tagged by post-build processing</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Filter branches for GitHub Enterprise or external Git artifacts</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Subscribe to package update notifications</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Use upstream NuGet packages from elsewhere in VSTS</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Enable nuget.org upstream sources in more feeds</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Quickly link to other wiki pages using suggestions</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Filter search results by Wiki name</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Move a VSTS account between Azure subscription or resource group</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
+        <tr>
+            <td rowspan="12">[3 Apr 2018](2018/apr-03-vsts.md)</td>
             <td>Quickly describe pull requests using commit messages</td><td style="background:rgb(232, 232, 232);">*2019*</td>
         </tr>
         <tr><td>Perform TFVC commands right from Windows Explorer</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
         <tr><td>Chain related builds together using build completion triggers</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
-        <tr><td>Scale deployments to VMs using Deployment Groups</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Scale deployments to VMs using Deployment Groups</td><td style="background:rgb(231, 179, 249);">*2018.2*</td></tr>
         <tr><td>Build applications written in Go</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
         <tr><td>Extend release gates with task extensions</td><td style="background:rgb(231, 179, 249);">*2018.2*</td></tr>
         <tr><td>Use upstream npm packages from elsewhere in VSTS</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
         <tr><td>Maintain feed query speed with retention policies</td><td style="background:rgb(231, 179, 249);">*2018.2*</td></tr>
         <tr><td>Publish markdown files from a Git repository as a Wiki</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
         <tr><td>Retain special characters in Wiki page titles</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
-        <tr><td>Quickly link to other wiki pages using suggestions</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
         <tr><td>Extend Wiki using REST APIs</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
         <tr><td>Integrate Power BI with VSTS Analytics using views</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
         <tr>
@@ -119,7 +191,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr><td>Focus on important work using the Work Items hub</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
         <tr><td>Query work across the iteration schedule with +/- @CurrentIteration</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
         <tr><td>Clarify query iteration schedules with the @CurrentIteration Team parameter</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
-        <tr><td>Improve release times by partially downloading artifacts</td><td style="background:rgb(231, 179, 249);">*2018.2*</td></tr>
+        <tr><td>Improve release times by partially downloading artifacts</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
         <tr><td>Retain more control of your app by deploying your Azure DevOps Project to a Virtual machine</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
         <tr><td>Improve code quality with the latest extensions from SonarSource</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
         <tr><td>Trace GitHub sources to builds using build tags</td><td style="background:rgb(231, 179, 249);">*2018.2*</td></tr>
@@ -2802,7 +2874,7 @@ Versions in the “Server” column are linked to the appropriate download locat
             <td>N/A</td>
         </tr>
         <tr>
-            <td>[29 April 2015](https://www.visualstudio.com/integrate/extensions/overview)</td>
+            <td>[29 April 2015](https://visualstudio.microsoft.com/integrate/extensions/overview)</td>
             <td>Extensions</td>
             <td style="background:rgb(198, 239, 200);">2015.2</td>
         </tr>
@@ -3594,8 +3666,8 @@ Versions in the “Server” column are linked to the appropriate download locat
 <tbody>
         <tr>
           <td style="background:rgb(231, 179, 249);">2018.2</td>
-          <td>TBD</td>
-          <td>TBD</td>
+          <td>May 7, 2018</td>
+          <td>16.131.27701.1</td>
         </tr>
          <tr>
           <td style="background:rgb(216, 194, 239);">[2018.1](https://aka.ms/tfs2018-update1)</td>
@@ -3626,7 +3698,7 @@ Versions in the “Server” column are linked to the appropriate download locat
           <td style="background:rgb(189, 214, 238);">2017.1</td>
           <td>Mar. 9, 2017 (Mar. 7, 2017)</td>
           <td>15.112.26307.00
-          (15.112.26301.0)[*](https://www.visualstudio.com/en-us/news/releasenotes/tfs2017-update1#build-doesnt-work-when-upgrading-to-tfs-2017-update-1-build-15112263010-from-tfs-2013-or-earlier)</td>
+          (15.112.26301.0)[*](https://visualstudio.microsoft.com/en-us/news/releasenotes/tfs2017-update1#build-doesnt-work-when-upgrading-to-tfs-2017-update-1-build-15112263010-from-tfs-2013-or-earlier)</td>
         </tr>
         <tr>
           <td style="background:rgb(240, 245, 251);">[2017.0.1](https://aka.ms/tfs2017-relnotes)</td>

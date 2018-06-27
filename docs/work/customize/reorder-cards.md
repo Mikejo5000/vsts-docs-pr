@@ -2,12 +2,13 @@
 title: Set Kanban board card reordering
 titleSuffix: VSTS & TFS
 description: Use the Kanban board, process, and tools to plan and track work in Visual Studio Team Services and Team Foundation Server 
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: BDB9CF5A-D83C-4823-BD53-29D49F797FB4
-monikerRange: 'vsts || >= tfs-2013 <= tfs-2018'
+monikerRange: '>= tfs-2013'
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
 ms.date: 03/20/2018
 ---
 
@@ -36,7 +37,7 @@ You can drag any work item to any column or swimlane on the Kanban board. You ca
 
 ::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 > [!TIP]
-> You can drag-and-drop work items onto a sprint from any backlog or board. To add sprints to a team backlog, see [Set team defaults](../scale/set-team-defaults.md). 
+> You can drag-and-drop work items onto a sprint from any backlog or board. To add sprints to a team backlog, see [Set team defaults](../../organizations/settings/set-team-defaults.md). 
 
 
 

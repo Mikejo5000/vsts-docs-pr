@@ -2,8 +2,8 @@
 title: Changes made to process templates
 titleSuffix: VSTS & TFS  
 description: Summary of changes made to Agile, Scrum, and CMMI process templates to support updating existing team projects after a TFS upgrade  
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 1541C32C-FD7A-4415-A282-06DF14D1F688 
 ms.topic: reference 
 ms.manager: douge
@@ -158,7 +158,7 @@ If you've customized your team project and haven't upgraded TFS for a while, you
 <p>TFS 2013.2</p>
 </td>
 <td>
-<p>Added support for the Shared Parameters feature which allows you to [run tests with different data](../../../manual-test/repeat-test-with-different-data.md). </p>
+<p>Added support for the Shared Parameters feature which allows you to [run tests with different data](../../../test/repeat-test-with-different-data.md). </p>
 <h4>The following changes were made to the default process templates:  </h4>
 <ul>
 <li>WITs added: Shared Parameter</li>

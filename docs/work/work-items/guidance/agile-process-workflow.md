@@ -1,14 +1,16 @@
 ---
-title: Agile process workflow
+title: Agile process work item types & workflow
 titleSuffix: VSTS & TFS
 description: How to guide for using the Agile process to track work using its work item types working in Visual Studio Team Services & Team Foundation Server 
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: d16d04fd-c073-45c0-b1b9-3724f0a7519b  
 ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
 ms.date: 04/05/2017
+monikerRange: '>= tfs-2013'
 ---
 
 # Agile process work item types and workflow  
@@ -140,7 +142,7 @@ Using portfolio backlogs, you can [drill down from one backlog to another](../..
 
 ## Define tasks 
 
-When your team manages their work in sprints, they can use the [sprint backlog page](../../scrum/sprint-planning.md) to break down the work to be accomplished into distinct tasks.  
+When your team manages their work in sprints, they can use the [sprint backlog page](../../scrum/assign-work-sprint.md) to break down the work to be accomplished into distinct tasks.  
 
 ![Sprint backlog, add task](_img/IC697761.png)
 
@@ -164,7 +166,7 @@ When teams estimate work using hours or days, they define tasks and the **Remain
 
 <tr>
 	<td width="18%"><p>[Remaining Work](../../track/query-numeric.md)</p></td>
-	<td><p>The amount of work remaining to complete a task. As work progresses, update this field. It's used to calculate [capacity charts](../../scale/capacity-planning.md), the [sprint burndown chart](../../scrum/sprint-burndown.md), and the following (TFS only) reports: [Burndown and Burn Rate](https://msdn.microsoft.com/library/dd380678.aspx), [Remaining Work](https://msdn.microsoft.com/library/dd380673.aspx), and [Status on All Iterations](https://msdn.microsoft.com/library/dd380706.aspx).</p><p>If you divide a task into subtasks, specify hours for the subtasks only. You can specify work in any unit of measurement your team chooses.</p></td></tr>
+	<td><p>The amount of work remaining to complete a task. As work progresses, update this field. It's used to calculate [capacity charts](../../scrum/set-capacity.md), the [sprint burndown chart](../../scrum/sprint-burndown.md), and the following (TFS only) reports: [Burndown and Burn Rate](https://msdn.microsoft.com/library/dd380678.aspx), [Remaining Work](https://msdn.microsoft.com/library/dd380673.aspx), and [Status on All Iterations](https://msdn.microsoft.com/library/dd380706.aspx).</p><p>If you divide a task into subtasks, specify hours for the subtasks only. You can specify work in any unit of measurement your team chooses.</p></td></tr>
 
 
 
@@ -189,7 +191,7 @@ If you use [Microsoft Project](../../backlogs/office/create-your-backlog-tasks-u
  
 ### Test user stories
 
-From the web portal or Test Manager, you can [create test cases that automatically link to a user story or bug](../../../manual-test/getting-started/create-test-cases.md). Or, you can link a user story to a test case from the ![Links tab icon](../../backlogs/_img/icon-links-tab-wi.png) (links tab). 
+From the web portal or Test Manager, you can [create test cases that automatically link to a user story or bug](../../../test/create-test-cases.md). Or, you can link a user story to a test case from the ![Links tab icon](../../backlogs/_img/icon-links-tab-wi.png) (links tab). 
 
 ![Test plan web portal](_img/IC793453.png)
 
@@ -223,10 +225,10 @@ Issues are used to track events that may block progress or shipping a user story
 
 ![Add work item from a New work item widget](../../../user-guide/_img/features/alm-feature-new-work-item-widget.png)  
 
-Work items you add from the widget are automatically scoped to your [team's default area and iteration paths](../../scale/set-team-defaults.md). To change the team context, see [Switch team context](../../../settings/switch-team-context.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json).  
+Work items you add from the widget are automatically scoped to your [team's default area and iteration paths](../../../organizations/settings/set-team-defaults.md). To change the team context, see [Switch team context](../../../organizations/settings/switch-team-context.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json).  
  
 ### Track business value  
-You can use the Priority field to differentiate the value of various stories. Or, you can add a custom field to the User Story WIT that tracks the relative value of stories. To learn how, see [Customize a field for a process](../../customize/process/customize-process-field.md).
+You can use the Priority field to differentiate the value of various stories. Or, you can add a custom field to the User Story WIT that tracks the relative value of stories. To learn how, see [Customize a field for a process](../../../organizations/settings/work/customize-process-field.md).
 
 
 ### Backlog list order

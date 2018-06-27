@@ -3,16 +3,19 @@ title: Subscribe to VSTS events from another service | VSTS REST APIs
 description: Use service hooks to set up actions to take when specific events occur in VSTS.
 toc: Hide
 ms.assetid: 0614F217-4F4E-45DC-A50C-B9FF81F8A5BD
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-collab
+ms.topic: conceptual
 ms.manager: douge
+monikerRange: '>= tfs-2017'
 ms.author: elbatk
+author: elbatk
 ms.date: 08/04/2016
 ---
 
 # Create a service hooks subscription programmatically
 
-Using the [Subscriptions](https://www.visualstudio.com/en-us/docs/integrate/api/hooks/subscriptions) REST APIs, you can programmatically create a subscription that performs an action on an external (consumer) service when a specific event occurs in a team project. For example, you can create a subscription to notify your service when a build fails.
+Using the [Subscriptions](https://visualstudio.microsoft.com/en-us/docs/integrate/api/hooks/subscriptions) REST APIs, you can programmatically create a subscription that performs an action on an external (consumer) service when a specific event occurs in a team project. For example, you can create a subscription to notify your service when a build fails.
 
 Supported events:
 
@@ -38,7 +41,7 @@ take for the subscription.
 
 To create a subscription, the following data will be required:
 
-- team project ID (use the [Team Project REST API](https://www.visualstudio.com/en-us/docs/integrate/api/tfs/overview) to get the project ID)
+- team project ID (use the [Team Project REST API](https://visualstudio.microsoft.com/en-us/docs/integrate/api/tfs/overview) to get the project ID)
 - event ID and settings (see the [event reference](./events.md))
 - consumer and action IDs and settings (see the [consumer reference](./consumers.md))
 

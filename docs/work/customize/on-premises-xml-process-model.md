@@ -2,11 +2,12 @@
 title: On-premises XML process model
 titleSuffix: TFS 
 description: Guide to configuring and customizing work tracking features for TFS and the on-premises process model  
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
 monikerRange: '>= tfs-2013 <= tfs-2018'
 ms.date: 03/20/2018
 ---
@@ -34,7 +35,7 @@ You can perform the following tasks when you work with the On-premises XML proce
 > [!div class="mx-tdBreakAll"]  
 > |Fields  |Pick lists   |   Work item types |
 > |-------------|----------|---------|
-> |- [Add or modify a field](add-modify-field.md)<br/>- [Add a checkbox (Boolean) field](add-modify-field.md#boolean-field) (TFS 2017.2)<br/>- [Add rules to a field](add-modify-field.md#add-rules)<br/>- [Change a field label](add-modify-field.md#change-label)<br/>- [Add a custom control field](add-modify-field.md#custom-control)<br/>- [Remove a field from a form](add-modify-field.md#change-label)<br/>- [Change a field attribute](add-modify-field.md#change-attribute)<br/>- [Add fields that integrate with test, build, and version control](add-modify-field.md#integration-fields)<br/>- [Delete a field](add-modify-field.md#delete-field) |- [Area paths](set-area-paths.md)<br/>- [Iteration paths](set-iteration-paths-sprints.md)<br/>- [Add a custom pick list](add-modify-field.md#picklist)<br/>- [Modify a pre-defined pick list](add-modify-field.md#picklist)<br/>- [State or Reason fields (customize workflow)](reference/change-workflow-wit.md)<br/>- [Person-name field (add users)](../../security/add-users-team-project.md) <br/>- [Resolution State & Failure Type](customize-work.md#test-experience)<br/>- [Define global lists](reference/define-global-lists.md) |- [Add or modify a work item type](add-modify-wit.md)<br/>- [Change the workflow (States, Reasons, Transitions)](reference/change-workflow-wit.md)<br/>- [Customize the form](reference/change-work-item-form-layout.md)<br/>- [Specify the WIT color](reference/process-configuration-xml-element.md#wit-colors)<br/>- [Specify the WIT icon](reference/process-configuration-xml-element.md)<br/>- [Specify the workflow state color](reference/process-configuration-xml-element.md#state-colors) |
+> |- [Add or modify a field](add-modify-field.md)<br/>- [Add a checkbox (Boolean) field](add-modify-field.md#boolean-field) (TFS 2017.2)<br/>- [Add rules to a field](add-modify-field.md#add-rules)<br/>- [Change a field label](add-modify-field.md#change-label)<br/>- [Add a custom control field](add-modify-field.md#custom-control)<br/>- [Remove a field from a form](add-modify-field.md#change-label)<br/>- [Change a field attribute](add-modify-field.md#change-attribute)<br/>- [Add fields that integrate with test, build, and version control](add-modify-field.md#integration-fields)<br/>- [Delete a field](add-modify-field.md#delete-field) |- [Area paths](set-area-paths.md)<br/>- [Iteration paths](set-iteration-paths-sprints.md)<br/>- [Add a custom pick list](add-modify-field.md#picklist)<br/>- [Modify a pre-defined pick list](add-modify-field.md#picklist)<br/>- [State or Reason fields (customize workflow)](reference/change-workflow-wit.md)<br/>- [Person-name field (add users)](../../organizations/security/add-users-team-project.md) <br/>- [Resolution State & Failure Type](customize-work.md#test-experience)<br/>- [Define global lists](reference/define-global-lists.md) |- [Add or modify a work item type](add-modify-wit.md)<br/>- [Change the workflow (States, Reasons, Transitions)](reference/change-workflow-wit.md)<br/>- [Customize the form](reference/change-work-item-form-layout.md)<br/>- [Specify the WIT color](reference/process-configuration-xml-element.md#wit-colors)<br/>- [Specify the WIT icon](reference/process-configuration-xml-element.md)<br/>- [Specify the workflow state color](reference/process-configuration-xml-element.md#state-colors) |
 
 
 > [!div class="mx-tdBreakAll"]  

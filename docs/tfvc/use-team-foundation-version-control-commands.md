@@ -2,10 +2,12 @@
 title: Use Team Foundation version control commands
 description: Use Team Foundation version control commands
 ms.assetid: efeff6e0-c4ab-4686-bc63-20a6136be39a
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
@@ -19,7 +21,7 @@ You can use version control commands to do nearly all tasks you can do in Visual
 
 ## Run a command
 
-To launch the Visual Studio command prompt, from Windows **Start**, choose **Visual Studio 2015**,   then choose the the **Developer Command Prompt for V2015** shortcut.
+To launch the Visual Studio command prompt, from Windows **Start**, choose **Visual Studio 2015**,   then choose the **Developer Command Prompt for V2015** shortcut.
 
 > Visual Studio 2017 users: The tf.exe binary is no longer in a fixed location in the Visual Studio install path as in previous releases (for example, C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE). Scripts using tf.exe should not hardcode a path to the file based on the Visual Studio 2017 install path.
 
@@ -335,7 +337,7 @@ Use the following syntax to specify a *versionspec*.
 </div>
 </div>
 
-<p>Retrieves the version of all labeled items (and deletes those items not labeled) in the workspace as they existed when the changeset labeled as <strong>LastKnownGood</strong> was created, for example, perhaps as part of an <a href="../build-release/concepts/definitions/build/triggers.md">automated build process<a/>.</p></td>
+<p>Retrieves the version of all labeled items (and deletes those items not labeled) in the workspace as they existed when the changeset labeled as <strong>LastKnownGood</strong> was created, for example, perhaps as part of an <a href="../pipelines/build/triggers.md">automated build process<a/>.</p></td>
 </tr>
 <tr>
 <td><p>Date and time</p></td>

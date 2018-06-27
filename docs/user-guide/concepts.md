@@ -1,11 +1,13 @@
 ---
 title: Key concepts for working with both VSTS & TFS
-description: Understand the key concepts that support the hosted cloud offering of Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
-ms.technology: vs-devops-overview 
-ms.prod: vs-devops-alm
+description: Understand the key concepts for Visual Studio Team Services & Team Foundation Server  
+ms.technology: devops-new-user 
+ms.prod: devops
 ms.assetid: 76ED7BD4-BD95-450F-BA33-649B80C23BE5
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
+ms.topic: conceptual
 ms.date: 08/04/2017
 monikerRange: '>= tfs-2015'
 ---
@@ -137,5 +139,5 @@ In addition to all the pre-built functionality available to you, you can add to 
 
 ## Resources
 
-- [Pricing](https://www.visualstudio.com/team-services/pricing/)
+- [Pricing](https://visualstudio.microsoft.com/team-services/pricing/)
 

@@ -1,13 +1,15 @@
 ---
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-ecosystem
 title: Developing extensions for Visual Studio Team Services (VSTS) and Team Foundation Server
 description: Overview of creating extensions for Visual Studio Team Services (VSTS)
 ms.assetid: bd7bd829-e80e-4234-849f-d4b273605a22
+ms.topic: conceptual
 ms.manager: douge
+monikerRange: '>= tfs-2017'
 ms.author: elbatk
+author: elbatk
 ms.date: 10/26/2017
-ms.topic: get-started-article
 ---
 
 # What are extensions?
@@ -47,7 +49,7 @@ There are dozens of places where you can add to the VSTS user interface, and we'
 ## Extension building checklist
 
 1. Familiarize yourself with an overview of our platform and what's possible with it
-    1. [Team Services extensions overview](https://www.visualstudio.com/team-services/extend/)
+    1. [Team Services extensions overview](https://visualstudio.microsoft.com/team-services/extend/)
 2. Learn to build your first extension or check out our full set samples
     1. [Build your first extension](./get-started/node.md)
     2. [Samples](./develop/samples-overview.md)

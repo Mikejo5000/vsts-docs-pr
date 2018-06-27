@@ -2,10 +2,12 @@
 title: Develop code and manage pending changes
 description: Develop code and manage pending changes
 ms.assetid: dded21d3-4869-4e19-bca4-62e27179539c
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
@@ -65,7 +67,7 @@ Almost every change that you make to the files on your dev machine is stored in 
 -   [rename](rename-move-files-folders.md) (includes moving items)  
 -   property  
 -   [rollback](roll-back-changesets.md)  
--   [type](../tfs-server/admin/manage-file-types.md#config-file-encodings) (file encoding)  
+-   [type](/tfs/server/admin/manage-file-types#config-file-encodings) (file encoding)  
 -   [undelete](delete-restore-files-folders.md)
 
 ### Work with automatically detected changes

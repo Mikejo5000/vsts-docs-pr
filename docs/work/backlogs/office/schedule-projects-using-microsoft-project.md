@@ -1,11 +1,14 @@
 ---
-title: Schedule projects using Microsoft Project | VSTS & TFS
-description: Uses Microsoft Project 2010 to plan team projects, schedule tasks, assign resources, and track changes to data.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Schedule projects using Microsoft Project
+titleSuffix: VSTS & TFS
+description: Use Microsoft Project 2010 to plan work, schedule tasks, assign resources, and track changes in Visual Studio Team Services & Team Foundation Server   
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: c8d9ea81-ebde-47e5-b813-473018177aa9
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
+ms.topic: conceptual
 ms.date: 02/22/2017  
 ---  
 
@@ -20,7 +23,7 @@ ms.date: 02/22/2017
 You can use Project 2010 or later versions to plan team projects, schedule tasks, assign resources, and track changes to data that is stored in VSTS and TFS. By using Project, you can access many tools and functions through the simplified graphical menus and Office Ribbon. The Team tab menu, as shown in the following illustration, displays the same functions that are available from the Team tab in Excel.
 
 > [!NOTE]  
->For version compatibility between VSTS/TFS and Office clients, see [Requirements and compatibility, Office](../../../tfs-server/requirements.md#office).  
+>For version compatibility between VSTS/TFS and Office clients, see [Requirements and compatibility, Office](/tfs/server/compatibility#office).  
  
 **Project team tab ribbon** 
 

@@ -2,10 +2,14 @@
 title: Extension Report | VSTS
 description: An overview of reports available for an extension. 
 ms.assetid: baf829df-0975-46d8-8dea-7a5c9f6968ef
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-ecosystem
+ms.topic: conceptual
 ms.manager: douge
+monikerRange: '>= tfs-2017'
 ms.author: elbatk
+author: elbatk
+ms.date: 04/13/2018
 ---
 
 # Extension reporting hub

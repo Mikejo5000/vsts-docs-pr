@@ -2,11 +2,12 @@
 title: Update a team project manually to support test management 
 titleSuffix: TFS
 description: Update a team project manually to support test management.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: edbe689d-7863-4273-916f-b7e93b7f00b3
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
 ms.date: 12/15/2017
 ---
 
@@ -40,7 +41,7 @@ The following steps provide support for the test experience available with TFS 2
   
 1.  **Import the test plan and test suite WIT definitions**.  
   
-    0.  If you don't have administrative permissions, [get them](../../../security/set-project-collection-level-permissions.md). To perform all the update steps, you need to be a member of the **Team Foundation Administrators** security group, and an administrator on the application-tier server.  
+    0.  If you don't have administrative permissions, [get them](../../../organizations/security/set-project-collection-level-permissions.md). To perform all the update steps, you need to be a member of the **Team Foundation Administrators** security group, and an administrator on the application-tier server.  
   
     0.  [Download the latest process template](../../work-items/guidance/manage-process-templates.md).  
   
@@ -145,10 +146,10 @@ The following steps provide support for the test experience available with TFS 2
         ```  
         TFSConfig TCM /upgradeStatus /collectionName:CollectionName /TeamProject:TeamProjectName  
         ```  
+
+ After a successful data migration, all test management data should be available for use. For more information about this utility, see [TFSConfig command, TCM](/tfs/server/ref/command-line/tfsconfig-cmd#tcm).  
   
- After a successful data migration, all test management data should be available for use. For more information about this utility, see [TFSConfig command, TCM](../../../tfs-server/command-line/tfsconfig-cmd.md#tcm).  
-  
- For information about how to access the new WIT-based test plans and test suites in the web portal, see [Create a test plan](../../../manual-test/getting-started/create-a-test-plan.md).
+ For information about how to access the new WIT-based test plans and test suites in the web portal, see [Create a test plan](../../../test/create-a-test-plan.md).
 
 ## Related articles
-- [Manage TFS server configuration with TFSConfig](../../../tfs-server/command-line/tfsconfig-cmd.md)
+- [Manage TFS server configuration with TFSConfig](/tfs/server/ref/command-line/tfsconfig-cmd)

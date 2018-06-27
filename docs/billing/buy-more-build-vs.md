@@ -1,13 +1,14 @@
 ---
-title: Buy VSTS CI/CD | VSTS
-description: How to pay for more continuous integration and continuous delivery (CI/CD) concurrency using VSTS (Visual Studio Online, VSO, VSTS)
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-setup
-ms.topic: quickstart
+title: Buy Continuous Integration/Continuous Delivery (CI/CD)
+description: Learn how to pay for more continuous integration and continuous delivery (CI/CD) concurrency using VSTS (Visual Studio Online, VSO, VSTS)
+ms.prod: devops
+ms.technology: devops-billing
 ms.assetid: 3f42a1b2-1a32-440a-bf43-61006c59c5bf
+ms.topic: quickstart
 ms.manager: douge
 ms.author: chcomley
-ms.date: 4/06/2018
+author: chcomley
+ms.date: 04/18//2018
 ---
 [//]: # (monikerRange: 'vsts')
 
@@ -15,7 +16,9 @@ ms.date: 4/06/2018
 
 **VSTS**
 
-With VSTS you can run builds and deploy releases using the Microsoft-hosted CI/CD service, your own machines, or both. 
+In this quickstart, you'll learn how to buy private or hosted pipelines and change your paid CI/CD capacity.
+
+With VSTS you can run builds and deploy releases using the Microsoft-hosted CI/CD service, your own machines, or both.
 We offer a **Free Tier** for each.
 
 If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/en-us/free/?WT.mc_id=A261C142F) before you begin.
@@ -92,9 +95,19 @@ To make subsequent edits to paid quantities in your VSTS account, you only need 
   then go to **Build and Release**
   (```https://{youraccount}.visualstudio.com/_admin/_buildQueue?_a=resourceLimits```).
 
+## XAML Build
+
+The hosted XAML build controller is no longer supported.
+  Accounts created on or after April 2016 do not have access to it.
+  We plan to remove the hosted XAML build controller from all accounts in the near future.
+
+  > **Important:** If you have an account where you still need to run [XAML builds](https://msdn.microsoft.com/en-us/library/ms181709%28v=vs.120%29.aspx),
+  > you should set up an [on-premises build server](https://msdn.microsoft.com/en-us/library/ms252495%28v=vs.120%29.aspx)
+  > and switch to an [on-premises build controller](https://msdn.microsoft.com/en-us/library/ee330987%28v=vs.120%29.aspx) now.
+
 <a name="change-paid-pipelines"></a>
 
-## Process to change your paid CI/CD capacity
+## Clean up resources
 
 When your team's needs for build or release capacity change, you can change the number of paid concurrent jobs.
 
@@ -106,22 +119,13 @@ When your team's needs for build or release capacity change, you can change the 
 
 3. In the Visual Studio Marketplace, choose **Get**, select your VSTS account, then update your number of paid concurrent jobs and confirm.
 
-## XAML Build
-The hosted XAML build controller is no longer supported.
-  Accounts created on or after April 2016 do not have access to it.
-  We plan to remove the hosted XAML build controller from all accounts in the near future.
+## Next steps
 
-  > **Important:** If you have an account where you still need to run [XAML builds](https://msdn.microsoft.com/en-us/library/ms181709%28v=vs.120%29.aspx),
-  > you should set up an [on-premises build server](https://msdn.microsoft.com/en-us/library/ms252495%28v=vs.120%29.aspx)
-  > and switch to an [on-premises build controller](https://msdn.microsoft.com/en-us/library/ee330987%28v=vs.120%29.aspx) now.
-
-## Support
-
-* [VSTS forum](https://social.msdn.microsoft.com/Forums/en-us/home?forum=TFService)
-* [VSTS Support](https://www.visualstudio.com/team-services/support)
+> [!div class="nextstepaction"]
+> [Start free trials](https://docs.microsoft.com/en-us/vsts/billing/try-additional-features-vs?view=vsts)
 
 ## Related articles
 
-* [VSTS: CI/CD concepts](../build-release/concepts/licensing/concurrent-pipelines-ts.md)
-* [TFS: CI/CD concepts](../build-release/concepts/licensing/concurrent-pipelines-tfs.md)
-* [Pricing for VSTS CI/CD](https://www.visualstudio.com/team-services/pricing)
+* [VSTS: CI/CD concepts](../pipelines/licensing/concurrent-jobs-vsts.md)
+* [TFS: CI/CD concepts](../pipelines/licensing/concurrent-pipelines-tfs.md)
+* [Pricing for VSTS CI/CD](https://visualstudio.microsoft.com/team-services/pricing)

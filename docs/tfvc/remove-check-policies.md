@@ -2,10 +2,12 @@
 title: Remove Check-In Policies
 description: Remove Check-In Policies
 ms.assetid: fb4b62ef-e413-4f03-81fe-ae560c9f60ff
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
@@ -19,7 +21,7 @@ Administrators of Team Foundation version control can add check-in policy requir
 
 **Required Permissions**
 
-To complete this procedure, you must have the **Edit project-level information** permission set to **Allow**. For more information, see [Permissions and groups reference](../security/permissions.md).
+To complete this procedure, you must have the **Edit project-level information** permission set to **Allow**. For more information, see [Permissions and groups reference](../organizations/security/permissions.md).
 ## Procedure
 ### To remove a check-in policy
 

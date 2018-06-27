@@ -2,10 +2,12 @@
 title: Clean Up Files When Users Leave
 description: Clean Up Files When Users Leave
 ms.assetid: 7e8249cc-2933-4caa-8bee-ea93a3aff01a
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
@@ -19,7 +21,7 @@ When a member leaves a team, version control administrators must correctly dispo
 
 **Required Permissions**
 
-To perform these procedures, you must be a member of the **Team Foundation Administrators** security group. For more information, see [Permissions and groups reference](../security/permissions.md).
+To perform these procedures, you must be a member of the **Team Foundation Administrators** security group. For more information, see [Permissions and groups reference](../organizations/security/permissions.md).
 
 ### To clean up version-controlled files after a team member leaves
 

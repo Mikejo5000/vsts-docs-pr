@@ -2,8 +2,8 @@
 title: PR usability improvements & richer GitHub build integration – Feb 15
 description: VSTS release notes for Feb 15 2017
 ms.ContentId: 9b76c2f3-39ce-4c98-9cef-237853ee0349
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-articles
+ms.prod: devops
+ms.technology: vsts-release-notes
 ms.author: egeaney
 author: egeaney
 ---
@@ -97,7 +97,7 @@ For more information, refer to the [this post](https://aka.ms/testingwithphases)
 ##Multiple versions of Extension tasks
 Extension authors can now create extensions with multiple versions of a given task, which enables them to ship patches for each major version they have in production.
 
-See [Reference for creating custom build tasks within extensions](https://www.visualstudio.com/en-us/docs/integrate/extensions/develop/build-task-schema).
+See [Reference for creating custom build tasks within extensions](https://visualstudio.microsoft.com/en-us/docs/integrate/extensions/develop/build-task-schema).
 
 ##Extension management permissions and new email notifications
 Any user or group can be given permission to manage extensions for the account. Previously, only account administrators could review extension requests or install, disable, or uninstall extensions. To grant this permission, an administrator can navigate to the __Extensions__ admin hub by opening the __Marketplace__ menu, selecting __Manage extensions__, and then click the __Security button__.
@@ -107,7 +107,7 @@ Any user or group can be given permission to manage extensions for the account. 
 Also new this sprint, a user who requests an extension is now notified via email when that request is approved or rejected.
 
 ##Updated Package Management experience
-We’ve updated the Package Management user experience to make it faster, address common user-reported issues, and make room for upcoming package lifecycle features. [Learn more about the update here](https://www.visualstudio.com/en-us/docs/package/preview/updated-experience), or turn it on using the toggle in the __Packages__ hub.
+We’ve updated the Package Management user experience to make it faster, address common user-reported issues, and make room for upcoming package lifecycle features. [Learn more about the update here](https://visualstudio.microsoft.com/en-us/docs/package/preview/updated-experience), or turn it on using the toggle in the __Packages__ hub.
 
 ![package management](_img/02_15_19.png)
 
@@ -119,7 +119,7 @@ NOTE: CAP is enforced when a user signs into VSTS with their AAD credentials. Th
 ![aad conditional access](_img/02_15_05.png)
 
 ##Pipelines queue
-We have now moved all the Team Services accounts from the agent-based pricing model to [pipeline-based pricing model](https://www.visualstudio.com/docs/build/concepts/licensing/concurrent-pipelines-ts). In this new model, users can run as many builds or releases concurrently as the number of pipelines configured in their account. Additional builds and releases beyond this limit are queued and wait for earlier builds and releases to complete. The __Pipelines queue__ feature provides users with more visibility into where their builds or releases are.
+We have now moved all the Team Services accounts from the agent-based pricing model to [pipeline-based pricing model](/vsts/pipelines/licensing/concurrent-jobs-vsts). In this new model, users can run as many builds or releases concurrently as the number of pipelines configured in their account. Additional builds and releases beyond this limit are queued and wait for earlier builds and releases to complete. The __Pipelines queue__ feature provides users with more visibility into where their builds or releases are.
 
 ![resource limits](_img/02_15_06.png)
 
@@ -131,7 +131,7 @@ On launching the __Pipelines queue__, you can see the following information:
 
 While your build/release is waiting for a pipeline, you can also directly launch this view from inside the build/release logs page and find its current position in the pipeline queue and other details.
 
-We think these features will help improve your workflows while addressing feedback, but we would love to hear what you think. Please don’t hesitate to send a smile or frown through the web portal, or send other comments through the [Team Services Developer Community] (https://developercommunity.visualstudio.com/spaces/21/index.html). As always, if you have ideas on things you’d like to see us prioritize, head over to [UserVoice](https://visualstudio.uservoice.com/forums/330519-vso) to add your idea or vote for an existing one.
+We think these features will help improve your workflows while addressing feedback, but we would love to hear what you think. Please don’t hesitate to send a smile or frown through the web portal, or send other comments through the [Team Services Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html). As always, if you have ideas on things you’d like to see us prioritize, head over to [UserVoice](https://visualstudio.uservoice.com/forums/330519-vso) to add your idea or vote for an existing one.
 
 Thanks,
 

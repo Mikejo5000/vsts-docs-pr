@@ -1,17 +1,20 @@
 ---
 title: Features removed when disabling SharePoint integration
+titleSuffix: TFS
 description: TFS SharePoint integration - Features removed when disabling SharePoint integration
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-integrate
-ms.manager: abjork
-ms.author: greggboe
+ms.prod: devops
+ms.technology: devops-analytics
+ms.topic: conceptual
+ms.manager: douge
+ms.reviewer: greggboe
+ms.author: kaelliauthor: KathrynEE
 ms.date: 09/28/2017
 ms.topic: 
 ---
 
 # Features removed when disabling SharePoint integration
 
-[!INCLUDE [temp](../_shared/about-sharepoint-deprecation.md)]
+[!INCLUDE [temp](../_shared/about-sharepoint-deprecation.md)]
 
 
 With TFS 2018, we  no longer offer the TFS Extension for SharePoint. For more information, read the [Discontinuing the pre-TFS 2018 SharePoint integration model](./discontinue-pre-tfs-2017-sharepoint-integration.md)

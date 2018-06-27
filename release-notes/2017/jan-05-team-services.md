@@ -2,8 +2,8 @@
 title: Getting personal – Jan 5
 description: VSTS release notes for Jan 5 2017
 ms.ContentId: 9b76c2f3-39ce-4c98-9cef-237853ee0349
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-articles
+ms.prod: devops
+ms.technology: vsts-release-notes
 ms.author: egeaney
 author: egeaney
 ---
@@ -223,7 +223,7 @@ Users can define the default artifact version to deploy in a release when linkin
 ##Variable groups support in RM
 Variable groups are used to group your variables and their values that you want to make available across multiple release definitions. You can also manage security for variable groups and chose who can view, edit and consume the variables from the variable groups in your release definitions.
 
-Open __Library__ tab in __Build &amp; Release__ hub and choose __+ Variable group__ in the toolbar. Find more information about variable groups under [Release definitions in Microsoft Release Management](https://www.visualstudio.com/en-us/docs/release/author-release-definition/more-release-definition#var-groups) in the Visual Studio documentation.
+Open __Library__ tab in __Build &amp; Release__ hub and choose __+ Variable group__ in the toolbar. Find more information about variable groups under [Release definitions in Microsoft Release Management](https://visualstudio.microsoft.com/en-us/docs/release/author-release-definition/more-release-definition#var-groups) in the Visual Studio documentation.
 
 ![default artifact](_img/01_05_18.png)
 

@@ -1,25 +1,28 @@
 ---
 title: Manage new form roll out
-titleSuffix: VSTS & TFS    
-description: Enable the new work item form for customizing the work tracking experience on the web portal when connecting  
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+titleSuffix: TFS    
+description: Enable the new work item form for customizing the work tracking experience in Visual Studio Team Services & Team Foundation Server  
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 51A6F894-9B45-4A07-9DDB-C359C8BB4DE1
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
+ms.topic: conceptual
+monikerRange: '>= tfs-2017 <= tfs-2018'
 ms.date: 03/16/2017
 ---
 
 # Manage roll out of the new web form
 
 
-**VSTS | TFS 2018 | TFS 2017**  
+**TFS 2018 | TFS 2017**  
 
 > [!IMPORTANT]  
 > **Feature availability:** The new form and its corresponding features are available from VSTS and the web portal for TFS 2017 and later versions.<br/> 
-> - For users of VSTS that use the [Inheritance process model](process/manage-process.md), the switch to the new form is automatic.<br/>
+> - For users of VSTS that use the [Inheritance process model](../../organizations/settings/work/manage-process.md), the switch to the new form is automatic.<br/>
 > - For users of VSTS that use [Hosted XML process model](import-process/import-process.md), an admin must [enable the new form](../customize/manage-new-form-rollout.md).<br/>
-> - For on-premises TFS 2017 users, the new form is automatically available when you add team projects to a collection. For existing team projects, an admin is required to enable the new form as described in this topic. (The reason the new form isn't automatically enabled for existing team projects is to prevent overwriting customizations made to existing work item types.) <br/>
+> - For on-premises TFS 2017 users, the new form is automatically available when you add teamvisualstudio.microsoft.comction. For existing team projects, an admin is required to enable the new form as described in this topic. (The reason the new form isn't automatically enabled for existing team projects is to prevent overwriting customizations made to existing work item types.) <br/>
 > - For TFS 2015 users, the new form isn't available. You must [upgrade to TFS 2017](https://www.visualstudio.com/downloads/#team-foundation-server-2017) to access the new form.
 
 Enabling the new form initiates a transformation of the form definitions for all work item types (WITs) defined in your project collection. 
@@ -45,7 +48,7 @@ You enable the new form from the project collection admin page.
 
 	<img src="_img/manage-new-form-enable-new-form.png" alt="TFS 2017, Web portal, Project collection admin context, Enable new form" style="border: 2px solid #C3C3C3;" />
 
-	If you don't see the option to enable, you aren't a member of the Project Collection Administrators group. To get added as one, see [Add an administrator](../../security/set-project-collection-level-permissions.md).  
+	If you don't see the option to enable, you aren't a member of the Project Collection Administrators group. To get added as one, see [Add an administrator](../../organizations/security/set-project-collection-level-permissions.md).  
 
 4. Click **Create new layout** to initiate the process of transforming the WIT definitions.  
 
@@ -58,13 +61,13 @@ You enable the new form from the project collection admin page.
 
 1. To start, open the admin context for the team project.  
 
-	![Open admin context](process/_img/team-services-open-admin-context.png)  
+	![Open admin context](../../organizations/settings/work/_img/team-services-open-admin-context.png)  
 
 2. From the collection admin page, click **Enable the new work item form**. 
 
 	![Process tab](_img/m-new-form-admin-enable.png)
 
-	If you don't see the option to enable, you aren't a member of the Project Collection Administrators group. To get added as one, see [Add an administrator](../../security/set-project-collection-level-permissions.md).  
+	If you don't see the option to enable, you aren't a member of the Project Collection Administrators group. To get added as one, see [Add an administrator](../../organizations/security/set-project-collection-level-permissions.md).  
 
 4. Click Create new layout to initiate the process of transforming the WIT definitions.  
 

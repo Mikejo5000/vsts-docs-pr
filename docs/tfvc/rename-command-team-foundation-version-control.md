@@ -2,10 +2,12 @@
 title: Rename Command (Team Foundation Version Control)
 description: Rename Command (Team Foundation Version Control)
 ms.assetid: 5d754d91-41b0-40bd-a57a-aa22518deb23
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
@@ -22,7 +24,7 @@ The **rename** command changes the name or the path of a file or folder. You can
 
 **Required Permissions**
 
-To use the **rename** command, you have the **Check out** permission set to **Allow**. For more information, see [Permissions and groups reference](../security/permissions.md).
+To use the **rename** command, you have the **Check out** permission set to **Allow**. For more information, see [Permissions and groups reference](../organizations/security/permissions.md).
 
     tf rename [/lock:(none|checkout|checkin)] [/login:username,[password]] olditem newitem
 

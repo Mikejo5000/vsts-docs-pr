@@ -1,15 +1,15 @@
 ---
 title: Understand differences between VSTS and TFS  
-description: Understand the fundamental differences between Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) 
-ms.prod: vs-devops-alm  
-ms.technology: vs-devops-overview
+description: Understand the fundamental differences between Visual Studio Team Services & Team Foundation Server 
+ms.prod: devops  
+ms.technology: devops-new-user
 ms.assetid: 458FAFD1-98B0-4B74-B8E7-F2C73D4EED6B
 ms.manager: douge
 ms.author: kaelli
-ms.date: 06/22/2017
+ms.topic: conceptual
 monikerRange: '>= tfs-2013'
+ms.date: 06/22/2017
 ---
-
 
 # Understand differences between VSTS and TFS
 
@@ -54,7 +54,7 @@ Team project collections serve as containers for security and administration in 
 physical database boundaries. They are also used to group related team projects. Finally, team projects 
 are used to encapsulate the assets of individual software projects, including source code, work items, 
 and so on. Learn more about these concepts at 
-[Manage team project collections](../tfs-server/admin/manage-team-project-collections.md). 
+[Manage team project collections](/tfs/server/admin/manage-team-project-collections). 
 
 VSTS is slightly different. It currently only has two options for scoping and scaling 
 data&mdash;accounts and team projects. Accounts in VSTS get their own URLs (for example, ```https://contoso.visualstudio.com```) 
@@ -102,9 +102,9 @@ In TFS, you provide users access to deployments by adding Active Directory (AD) 
 As users are added and removed in AD they also gain and lose access to TFS. 
 
 In VSTS, you can use a similar mechanism to 
-[provide access to groups of users](../accounts/manage-azure-active-directory-groups-vsts.md) 
+[provide access to groups of users](../organizations/accounts/manage-azure-active-directory-groups-vsts.md) 
 by adding Azure AD groups to TFS groups. If you use Microsoft Accounts instead of Azure AD, you will have to
-[add users](../accounts/add-account-users-assign-access-levels.md) one at a time. 
+[add users](../organizations/accounts/add-account-users-from-user-hub.md) one at a time. 
 
 ### Manage user access
 
@@ -113,14 +113,14 @@ Stakeholders. Also, unlimited Visual Studio subscribers can have access to all B
 no additional charge. You only need to pay for other users who need access.
 
 In TFS, all use is on the honor system. To set access levels for users based on their licenses, use specify their
-[access levels](../security/change-access-levels.md)
+[access levels](../organizations/security/change-access-levels.md)
 administration page. For example, assign unlicensed users Stakeholder access only.
 Users with a TFS Client Access License (CAL) can have Basic access. 
 Visual Studio subscribers can have either Basic or Advanced access, based on their subscriptions.
 Note that TFS does not attempt to verify these licenses or enforce compliance. 
 
 In VSTS, you must 
-[assign an access level](../accounts/add-account-users-assign-access-levels.md)
+[assign an access level](../organizations/accounts/add-account-users-from-user-hub.md)
 to each user in your account's Users hub. VSTS validates Visual Studio subscribers as 
 they sign in. You can assign Basic access for free to five users without Visual Studio subscriptions. 
 To give Basic access to more users, you'll need to set up billing for your account and
@@ -221,8 +221,8 @@ And, available today only in VSTS:
 - [Essential services](services.md)
 - [Client-server tools](tools.md)
 - [Software development roles](roles.md)
-- [Pricing - VSTS](https://www.visualstudio.com/team-services/pricing/)
-- [Pricing - TFS](https://www.visualstudio.com/team-services/tfs-pricing/)
+- [Pricing - VSTS](https://visualstudio.microsoft.com/team-services/pricing/)
+- [Pricing - TFS](https://visualstudio.microsoft.com/team-services/tfs-pricing/)
 
 <!---
 *(c) 2016 Microsoft Corporation. All rights reserved. This document is

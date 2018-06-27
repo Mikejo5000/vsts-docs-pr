@@ -2,10 +2,12 @@
 title: Import repositories from TFVC to Git | VSTS & TFS
 description: Search your Git repo in VSTS or TFS for a specific file or folderImport your repositories from TFVC to Git repositories within the same account.
 ms.assetid: cf1a4dc8-7143-4b0e-8a43-1680533fb3cb
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git 
+ms.prod: devops
+ms.technology: devops-code-git 
 ms.manager: douge
 ms.author: atinb
+author: steved0x
+ms.topic: conceptual
 ms.date: 03/14/2018
 monikerRange: '>= tfs-2017'
 ---
@@ -20,7 +22,7 @@ that requires careful planning. You need to think about:
 * Removing binaries and executables
 * Training your team
 
-We strongly recommend reading our whitepapers - [Centralized version control to Git](https://www.visualstudio.com/learn/centralized-to-git/) and [TFVC to Git](https://www.visualstudio.com/learn/migrate-from-tfvc-to-git/) before starting the migration.
+We strongly recommend reading our whitepapers - [Centralized version control to Git](/azure/devops/git/centralized-to-git) and [TFVC to Git](/azure/devops/git/migrate-from-tfvc-to-git) before starting the migration.
 
 The import experience is great for small simple TFVC repositories. It's also good for repositories that have already been "cleaned up" as outlined in the previous whitepapers. Those whitepapers also recommend other tools for more advanced TFVC repository configurations.
 
@@ -41,7 +43,7 @@ A link to the TFVC repository is added in the commit message of the 1st changese
 ![Import Repository Dialog](_img/Import-Repo/ImportRepoDialog-TFVC.png)
 
 > [!IMPORTANT] 
-> Due to the differences in how TFVC and Git store version control history, we [recommend](https://www.visualstudio.com/learn/migrate-from-tfvc-to-git/) that you don't migrate your history. This is the approach that Microsoft took when it migrated Windows and other products from centralized version control to Git.
+> Due to the differences in how TFVC and Git store version control history, we [recommend](/azure/devops/git/migrate-from-tfvc-to-git) that you don't migrate your history. This is the approach that Microsoft took when it migrated Windows and other products from centralized version control to Git.
 
 ### Troubleshooting
 
@@ -52,4 +54,4 @@ while `$/Fabrikam/<branch>` would only import the branch.
 2. The imported repository and associated history (if imported) cannot exceed 1GB in size.
 3. You can import up to 180 days of history.
 
-If any of the above is a blocker for your import, we recommend you try external tools like [Git-TFS](https://github.com/git-tfs/git-tfs) for importing and reading our whitepapers - [Centralized version control to Git](https://www.visualstudio.com/learn/centralized-to-git/) and [TFVC to Git](https://www.visualstudio.com/learn/migrate-from-tfvc-to-git/)
+If any of the above is a blocker for your import, we recommend you try external tools like [Git-TFS](https://github.com/git-tfs/git-tfs) for importing and reading our whitepapers - [Centralized version control to Git](/azure/devops/git/centralized-to-git) and [TFVC to Git](/azure/devops/git/migrate-from-tfvc-to-git)

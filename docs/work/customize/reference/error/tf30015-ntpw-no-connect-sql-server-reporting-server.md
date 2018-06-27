@@ -1,18 +1,20 @@
 ---
-title: TF30015-The New Team Project Wizard could not connect to the specified SQL Server Reporting Services server | TFS
+title: TF30015-The New Team Project Wizard could not connect to the specified SQL Server Reporting Services server
+titleSuffix: VSTS & TFS
 description: The New Team Project Wizard was unable to connect to {name}.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 97f7dbf0-20f4-4e8d-94d2-403ca581d0a2
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
+ms.topic: Troubleshooting
 ms.date: 02/22/2017
 ---
 
 # TF30015: The New Team Project Wizard could not connect to the specified SQL Server Reporting Services server {0}.
 
-
-**TFS 2017 | TFS 2015 | TFS 2013**
+[!INCLUDE [temp](../../../_shared/dev15-version-header.md)]
 
 
 The New Team Project Wizard was unable to connect to {*name*}, the server that hosts SQL Server Reporting Services. The reason for the failed connection cannot be determined at this time.  
@@ -27,9 +29,9 @@ The New Team Project Wizard was unable to connect to {*name*}, the server that h
   
  Because the wizard could not connect to the server that hosts SQL Server Reporting Services, the wizard was unable to create the SQL Server Reporting Services site on that server.  
   
-### To correct this error  
+### To correct this error    
   
-1.  Confirm that you have the required permissions to create a team project. This includes the required permissions on each server that hosts Team Foundation Server, SharePoint Products, and SQL Server Reporting Services. For more information, see [Create a team project](../../../../accounts/create-team-project.md).  
+1.  Confirm that you have the required permissions to create a team project. This includes the required permissions on each server that hosts Team Foundation Server, SharePoint Products, and SQL Server Reporting Services. For more information, see [Create a team project](../../../../organizations/accounts/create-team-project.md).  
   
 2.  Contact your Team Foundation Server administrator to verify that the server configuration is correct.  
   
@@ -54,6 +56,6 @@ The New Team Project Wizard was unable to connect to {*name*}, the server that h
     7.  Review the log entries to find network or file related issues.  
   
 5.  If the problem persists, contact your Team Foundation Server administrator.  
-  
+    
 ## Related articles
-- [Create a team project](../../../../accounts/create-team-project.md)
+- [Create a team project](../../../../organizations/accounts/create-team-project.md)

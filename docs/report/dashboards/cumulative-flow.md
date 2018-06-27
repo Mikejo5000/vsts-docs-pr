@@ -2,18 +2,18 @@
 title: Cumulative flow charts
 titleSuffix: VSTS & TFS 
 description: Configure and view cumulative flow diagrams to improve your Kanban processes 
-ms.prod: vs-devops-alm  
-ms.technology: vs-devops-reporting  
+ms.prod: devops  
+ms.technology: devops-analytics  
 ms.assetid: 9A16EDA7-6249-49E1-84A3-FE7550028E9F  
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.topic: tutorial
 ms.date: 03/23/2018  
 ---
 
 # Configure a cumulative flow chart
 
-[!INCLUDE [temp](../_shared/vsts-tfs-header-17-15.md)] 
+[!INCLUDE [temp](../_shared/vsts-tfs-header-17-15.md)] 
 
 ::: moniker range=">= tfs-2013 <= tfs-2018" 
 
@@ -51,7 +51,7 @@ A few options are available for you to [configure your chart](#configure) or [co
 ## Configure the CFD widget    
 
 >[!NOTE]   
-><b>Feature availability:</b> For VSTS, you can add the [CFD widget](../dashboards/widget-catalog.md#cycle-time-widget) to your dashboard. You need to first install the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You can then [add the widget(s) to your dashboard](../add-widget-to-dashboard.md). You must be an account owner or a member of the [Project Collection Administrator group](../../security/set-project-collection-level-permissions.md) to add extensions.  
+><b>Feature availability:</b> For VSTS, you can add the [CFD widget](../dashboards/widget-catalog.md#cycle-time-widget) to your dashboard. You need to first install the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You can then [add the widget(s) to your dashboard](../add-widget-to-dashboard.md). You must be an account owner or a member of the [Project Collection Administrator group](../../organizations/security/set-project-collection-level-permissions.md) to add extensions.  
 
 You will need to be a team administrator or a member of the Project Administrators group to perform these tasks. See 
 [Manage team assets](../../work/scale/add-team-administrator.md)to get added as a team admin. 

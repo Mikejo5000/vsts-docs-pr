@@ -1,12 +1,14 @@
 ---
 title: Change the number of paid users for a VSTS extension
-description: Change the number of paid users for a VSTS extension
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-setup
-ms.assetid: efbb3c0f-3128-4b34-bd3b-82f31677293f 
+description: Increase or decrease the number of paid users for a VSTS (Visual Studio Team Services) feature or extension as your team grows or gets smaller
+ms.prod: devops
+ms.technology: devops-billing
+ms.assetid: efbb3c0f-3128-4b34-bd3b-82f31677293f
+ms.topic: conceptual 
 ms.manager: douge
 ms.author: chcomley
-ms.date: 4/06/2018
+author: chcomley
+ms.date: 04/06/2018
 ---
 [//]: # (monikerRange: '>= tfs-2015')
 
@@ -20,8 +22,8 @@ If you don't have an Azure subscription, create a [free account](https://azure.m
 
 ## Prerequisites
 
-You'll need VSTS 
-[project collection administrator or account owner permissions](../accounts/faq-add-delete-users.md#find-owner). 
+You'll need VSTS
+[project collection administrator or account owner permissions](../organizations/accounts/faq-add-delete-users.md#find-owner).
 
 1. Sign in to your VSTS account. (```https://{youraccount}.visualstudio.com```).
 
@@ -39,15 +41,14 @@ You'll need VSTS
 
 The number of paid extension users is updated.
 
-To stop paying for an extension, reduce the number of paid users to zero (0).
+> **To stop paying for an extension, [reduce the number of paid users to zero (0)](https://docs.microsoft.com/en-us/vsts/marketplace/how-to/change-paid-extension-users?view=vsts).**
 
 ## Next steps
 
 - [Assign features or extensions to users](../marketplace/assign-paid-extensions.md)
-- [Set up billing](set-up-billing-for-your-account-vs.md)
-- [Change the Azure subscription for billing](change-azure-subscription.md)
+- [Uninstall or disable extensions](https://docs.microsoft.com/en-us/vsts/marketplace/uninstall-disable-extensions?toc=%2Fvsts%2Fbilling%2Ftoc.json&bc=%2Fvsts%2Fbilling%2Fbreadcrumb%2Ftoc.json&view=vsts)
 
 ## Related articles
 
+- [Change the Azure subscription for billing](change-azure-subscription.md)
 - [VSTS pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
-- [VSTS billing support](https://www.visualstudio.com/team-services/support/)

@@ -2,10 +2,12 @@
 title: Set up Team Foundation Version Control on your dev machine
 description: Set up Team Foundation Version Control on your dev machine
 ms.assetid: 15428962-f5fc-4aa4-81dc-7d53a8e3a00c
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
@@ -19,9 +21,9 @@ To set up Team Foundation Version Control (TFVC) on your dev machine, you just n
 
 **Before you start**
 
--   If you don't have Visual Studio, [get it here](http://go.microsoft.com/fwlink/p/?LinkId=254509).
+-   If you don't have Visual Studio, [get it here](https://www.visualstudio.com/).
 
--   If you don't have a team project, [create](../accounts/create-team-project.md) or [get access](https://msdn.microsoft.com/library/jj920206) to one.
+-   If you don't have a team project, [create](../organizations/accounts/create-team-project.md) or [get access](https://msdn.microsoft.com/library/jj920206) to one.
 
 ## Create a workspace and get the code
 
@@ -108,7 +110,7 @@ You've already got an app in progress and you want to begin working on it under 
 
 ## Try this next
 
- [Set up a CI build](../build-release/concepts/definitions/build/triggers.md) 
+ [Set up a CI build](../pipelines/build/triggers.md) 
 
 ## Dig deeper
 

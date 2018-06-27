@@ -2,12 +2,12 @@
 title: Change your email address 
 titleSuffix: VSTS & TFS
 description: Change the email address used to receive alerts or email  notifications managed in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)
-ms.prod: vs-devops-alm
-ms.technology: collaborate
-ms.assetid: 
-ms.topic: get-started-article
+ms.prod: devops
+ms.technology: devops-collab
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 09/01/2017
 monikerRange: '>= tfs-2015'
 ---
@@ -38,10 +38,10 @@ Notifications are sent by default to the preferred email address for your accoun
 <!---
  Change profile settings (TFS)    
 
-![TFS, My Profile link on Account menu](../accounts/_img/account-prefs/open-profile.png)  
+![TFS, My Profile link on Account menu](../organizations/accounts/_img/account-prefs/open-profile.png)  
 
 Click edit to change a setting. Choose the Locale tab to change a locale preference.  
 
-![TFS, Set preferences](../accounts/_img/account-prefs/account-prefs-tfs-user-profile.png)
+![TFS, Set preferences](../organizations/accounts/_img/account-prefs/account-prefs-tfs-user-profile.png)
 
 -->

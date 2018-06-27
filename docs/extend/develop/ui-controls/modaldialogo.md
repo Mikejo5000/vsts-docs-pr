@@ -2,10 +2,13 @@
 title: Use the Dialog Control | Extensions for VSTS
 description: Use the modal dialog control to collect user input or display message in your app for VSTS.
 ms.assetid: 84F3452D-9EB6-4908-AB52-07903644EDA8
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-ecosystem
+ms.topic: conceptual
 ms.manager: douge
+monikerRange: '>= tfs-2017'
 ms.author: elbatk
+author: elbatk
 ms.date: 08/04/2016
 ---
 
@@ -16,7 +19,7 @@ This page shows different samples about the modal dialog control.
 **Go to [API Reference](../../reference/client/controls/modaldialog.md) for more details.**
 
 <div class="alert alert-warning">
-When using this modal dialog, dialog overlay will cover only the area dedicated to the extension due to iframe limitations. If you want the modal dialog cover whole window, see [Using host dialog](..\using-host-dialog.md).
+When using this modal dialog, dialog overlay will cover only the area dedicated to the extension due to iframe limitations. If you want the modal dialog cover whole window, see [Using host dialog](../using-host-dialog.md).
 </div> 
 
 <a name="basic"></a>

@@ -1,11 +1,13 @@
 ---
-title: Categories XML element reference | VSTS & TFS
-description: Shows a description of each of the default categories used by Visual Studio Team Services (VSTS) and Team Foundation Server (TFS).  
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Categories XML element reference 
+titleSuffix: VSTS & TFS
+description: Default work item type categories used by Team Foundation Server  
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: d4b02c7c-a7ac-4c7a-b4c5-cbf9af74d489
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.manager: douge
+ms.topic: reference
 ms.date: 02/14/2017
 --- 
 
@@ -34,7 +36,7 @@ You use the `CATEGORIES` element to group work item types (WITs). [Use categorie
 |`CATEGORIES`||Required element within the XML categories file.<br /><br /> Container element for specifying one or more `CATEGORY` elements that are defined for a team project.|  
 |`CATEGORY`||Required `CATEGORIES` child element.<br /><br /> Specifies a named category group that contains one default `DEFAULTWORKITEMTYPE` element and zero or more `WORKITEMTYPE` elements.|  
 ||`name`|Required `CATEGORY` attribute.<br /><br /> The attribute type is `typelib:FriendlyName`.<br /><br /> Specifies the display name of the category. Must be between 1 to 254 characters and unique within the team project.|  
-||`refname`|Required `CATEGORY` attribute.<br /><br /> The attribute type is `typelib:ReferenceName`.<br /><br /> Specify a name no longer than 70 Unicode characters that uses alphanumeric, underscore, and hyphen characters. The reference name must contain at least one period (.), but no period can appear at the start or end of a name. Also, the reference name cannot start with a number or an underscore, and it cannot have multiple consecutive hyphens, such as (--).<br /><br /> Do not specify a name that overlaps with the reserved System. *XXX* and Microsoft. *XXX* namespaces. See [Naming restrictions, Work item tracking objects](../../../collaborate/naming-restrictions.md).|  
+||`refname`|Required `CATEGORY` attribute.<br /><br /> The attribute type is `typelib:ReferenceName`.<br /><br /> Specify a name no longer than 70 Unicode characters that uses alphanumeric, underscore, and hyphen characters. The reference name must contain at least one period (.), but no period can appear at the start or end of a name. Also, the reference name cannot start with a number or an underscore, and it cannot have multiple consecutive hyphens, such as (--).<br /><br /> Do not specify a name that overlaps with the reserved System. *XXX* and Microsoft. *XXX* namespaces. See [Naming restrictions, Work item tracking objects](../../../organizations/settings/naming-restrictions.md).|  
 |`DEFAULTWORKITEMTYPE`||Required `CATEGORY` element.<br /><br /> Specifies a work item type to be tagged as belonging to the named category and to be used as the default type for the category.|  
 ||`name`|Required `DEFAULTWORKITEMTYPE` attribute.<br /><br /> The attribute type is `WorkItemTypeRef`.<br /><br /> Specifies the reference name of a valid work item type for the team project that will be used as the default type for the category.|  
 |`WORKITEMTYPE`||Optional `CATEGORY` element.<br /><br /> Specifies a work item type to be tagged as belonging to the named category.|  

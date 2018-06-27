@@ -1,10 +1,10 @@
 ---
-title: Describes the services provided by Team Foundation Server
+title: Plan, code, collaborate, and ship code with Team Foundation Server   
 titleSuffix: TFS
-description: Understand the services that support the hosted cloud offering of Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
-ms.technology: vs-devops-overview 
-ms.prod: vs-devops-alm
-ms.topic: get-started-article
+description: What do you get when you install and use the on-premises Team Foundation Server 
+ms.technology: devops-new-user 
+ms.prod: devops
+ms.topic: conceptual
 ms.assetid:  
 ms.manager: douge
 ms.author: kaelli
@@ -45,13 +45,13 @@ When you deploy TFS, you can also configure the following servers or integration
 Choose an on-premises TFS when you need your data to stay within your network or you want access to SQL Server reporting services that integrate with TFS data and tools. You can start for free by downloading TFS Express. 
 
 
-[![Install TFS](_img/what-is-tfs-install-tfs-step-1.png)](../tfs-server/install/single-server.md)[![Create a team project](_img/what-is-tfs-create-team-project-step-2.png)](../accounts/create-team-project.md)[![Add team members](_img/what-is-tfs-add-code-step-3.png)](/vsts/git/create-new-repo?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json ) 
+[![Install TFS](_img/what-is-tfs-install-tfs-step-1.png)](/tfs/server/install/single-server)[![Create a team project](_img/what-is-tfs-create-team-project-step-2.png)](../organizations/accounts/create-team-project.md)[![Add team members](_img/what-is-tfs-add-code-step-3.png)](/vsts/git/create-new-repo?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json ) 
  
 
 ## Try this next  
 
 > [!div class="nextstepaction"]
-> [Install TFS](../tfs-server/install/single-server.md)
+> [Install TFS](/tfs/server/install/single-server)
 
 To learn more, see these topics:
 
@@ -59,7 +59,7 @@ To learn more, see these topics:
 - [Key concepts](concepts.md)  
 - [Client-server tools](tools.md)
 - [Software development roles](roles.md)
-- [Pricing - TFS](https://www.visualstudio.com/team-services/tfs-pricing/)
+- [Pricing - TFS](https://visualstudio.microsoft.com/team-services/tfs-pricing/)
 
 
 

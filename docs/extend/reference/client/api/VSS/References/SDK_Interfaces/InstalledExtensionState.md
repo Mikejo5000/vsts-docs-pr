@@ -2,11 +2,14 @@
 title: VSS/References/SDK.Interfaces InstalledExtensionState API | Extensions for Visual Studio Team Services
 description: The state of an installed extension
 ms.assetid: 20898fcf-ef81-aef9-9e20-fae9dd5f7ff4
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-ecosystem
 generated: true
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
+ms.topic: article
+monikerRange: '>= tfs-2017'
 ms.date: 08/04/2016
 ---
 

@@ -1,12 +1,13 @@
 ---
 title: About area and iteration paths 
 titleSuffix: VSTS & TFS  
-description: Understand how areas and iterations are used in Visual Studio Team Services and Team Foundation Server
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+description: Understand how areas and iterations are used in Visual Studio Team Services & Team Foundation Server
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
 ms.date: 03/20/2018
 ---
 
@@ -17,7 +18,7 @@ ms.date: 03/20/2018
 
 Area paths allow you to group work items by team, product, or feature area. Whereas, iteration paths allow you to group work into sprints, milestones, or other event-specific or time-related period. Both these fields allow you to define a hierarchy of paths. 
 
-You define area and iteration paths for a team project. Teams can then choose which paths are used to support their backlog and other Agile tools. To understand how Agile tools use area and iteration paths, see [Agile tools that rely on areas and iterations](../../settings/about-teams-and-settings.md).
+You define area and iteration paths for a team project. Teams can then choose which paths are used to support their backlog and other Agile tools. To understand how Agile tools use area and iteration paths, see [Agile tools that rely on areas and iterations](../../organizations/settings/about-teams-and-settings.md).
 
 The areas and iterations you see depend on the process you used to create your team project. Here we show the defaults defined for the Scrum process. No dates are set. You set dates to correspond to your sprint or release schedules.
 
@@ -44,7 +45,7 @@ Avoid creating an area structure that is too complex. You can create areas to pa
 You define as many child iterations as you need to reflect your project lifecycle. These paths represent a series of events, such as sprints, pre-beta and beta deliverables, and other release milestones. Teams typically leave work items assigned to the team's default iteration if they are not yet scheduled for work or for a release.  
 
 Add iterations to support these requirements:  
-* Define sprints your Scrum teams use to [plan and execute their sprints](../scrum/sprint-planning.md)
+* Define sprints your Scrum teams use to [plan and execute their sprints](../scrum/assign-work-sprint.md)
 * Set up more complex multi-release and sprint cycles
 * Filter queries based on sprints, milestones, or cycle time for your project 
 * Support future work that you're not ready to assign to a target release cycle.  
@@ -68,7 +69,7 @@ Iterations do not enforce any rules. For example, you can assign a task to an it
 
 The **Area Path** and **Iteration Path** fields, [data type=TreePath](reference/define-modify-work-item-fields.md), consist of multiple node items which are separated by the backslash (&#92;) character. We recommend that you minimize the names of nodes, and make sure that you conform to the following restrictions when adding child nodes:
 
-> [!div class="mx-tdCol2BreakAll"]  
+> [!div class="mx-tdCol2BreakAll"]
 > | Restriction type                 | Restriction                                 | 
 > | -------------------------------- | ------------------------------------------- | 
 > | Node length | Must not contain more than 255 characters | 
@@ -82,7 +83,7 @@ As you can see, areas and iterations play a major role in supporting Agile tools
  
 *	[Set project-level area paths](set-area-paths.md)  
 *	[Set project-level iteration paths](set-iteration-paths-sprints.md)  
-*	[Set team defaults](../scale/set-team-defaults.md)  
+*	[Set team defaults](../../organizations/settings/set-team-defaults.md)  
 *	[Agile tools and sprint definitions](../scrum/define-sprints.md)  
 *	[Query by date or current iteration](../track/query-by-date-or-current-iteration.md)  
 

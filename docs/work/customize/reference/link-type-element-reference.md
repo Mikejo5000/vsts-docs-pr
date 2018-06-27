@@ -2,11 +2,12 @@
 title: Link type element reference
 titleSuffix: VSTS & TFS
 description: LinkType element syntax and usage to define custom link types to form relationships between different work item types 
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: db4e74f7-9c0f-4653-88d4-3805ae34f439
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
 ms.date: 02/14/2018  
 ---
 
@@ -121,7 +122,7 @@ Link category: System-defined</p>
 System.LinkTypes.Hierarchy-Reverse</p>
 <p>Topology type: Tree<br/>
 Link category: System-defined</p></td>
-<td>Use to organize work item within a hierarchy. You can quickly create this hierarchy among backlog items using the [mapping function](../../backlogs/organize-backlog.md) or among backlog items and tasks using the [sprint backlog](../../scrum/sprint-planning.md) or [task board](../../scrum/task-board.md).  
+<td>Use to organize work item within a hierarchy. You can quickly create this hierarchy among backlog items using the [mapping function](../../backlogs/organize-backlog.md) or among backlog items and tasks using the [sprint backlog](../../scrum/assign-work-sprint.md) or [task board](../../scrum/task-board.md).  
 </td>
 </tr>
 
@@ -132,7 +133,7 @@ Link category: System-defined</p></td>
 <td><p>Microsoft.VSTS.TestCase.SharedParameterReferencedBy</p>
 <p>Topology type: Dependency<br/>
 Link category: Process-defined</p></td>
-<td>Use to link Test Cases to Shared Parameters to support the ability to [repeat a test with different data](../../../manual-test/repeat-test-with-different-data.md). In general, you wouldn't add this link type to a scoped links control.   
+<td>Use to link Test Cases to Shared Parameters to support the ability to [repeat a test with different data](../../../test/repeat-test-with-different-data.md). In general, you wouldn't add this link type to a scoped links control.   
 </td>
 </tr>
 
@@ -169,7 +170,7 @@ Link category: Process-defined</p></td>
 <td><p>Microsoft.VSTS.TestCase.SharedStepReferencedBy</p>
 <p>Topology type: Dependency<br/>
 Link category: Process-defined</p></td>
-<td>Use to link test cases with shared steps. You [share steps between test cases](../../../manual-test/mtm/share-steps-between-test-cases.md) to avoid having to create multiple entries of the same sequence of steps. </td>
+<td>Use to link test cases with shared steps. You [share steps between test cases](../../../test/mtm/share-steps-between-test-cases.md) to avoid having to create multiple entries of the same sequence of steps. </td>
 </tr>
 
 </tbody>
@@ -210,12 +211,12 @@ The following table describes the external link types you can specify to scope a
 
 <tr>
 <td>Branch</td>
-<td>Used to link a work item to a build.</td>
+<td>Used to link a work item to a branch.</td>
 </tr>
 
 <tr>
 <td>Build</td>
-<td>Used to link a work item to a branch.</td>
+<td>Used to link a work item to a build.</td>
 </tr>
 
 <tr>
@@ -230,7 +231,7 @@ The following table describes the external link types you can specify to scope a
 
 <tr>
 <td>Hyperlink</td>
-<td>Used to link a work item to a URL. Note that **Workitem Hyperlink** is the name of this link type in the [Artifact Link Types API](https://docs.microsoft.com/rest/api/vsts/wit/artifact link types/list). </td>
+<td>Used to link a work item to a URL. Note that **Workitem Hyperlink** is the name of this link type in the [Artifact Link Types API](https://docs.microsoft.com/rest/api/vsts/wit/artifact%20link%20types/list). </td>
 </tr>
 
 <tr>
@@ -264,7 +265,7 @@ The following table describes the external link types you can specify to scope a
 
 <tr>
 <td>Versioned item</td>
-<td>Used to link a work item to a file or changeset defined within a TFVC repository. Note that **Source Code File** is the name of this link type in the [Artifact Link Types API](https://docs.microsoft.com/rest/api/vsts/wit/artifact link types/list).   </td>
+<td>Used to link a work item to a file or changeset defined within a TFVC repository. Note that **Source Code File** is the name of this link type in the [Artifact Link Types API](https://docs.microsoft.com/rest/api/vsts/wit/artifact%20link%20types/list).   </td>
 </tr>
 </tbody>
 </table>
@@ -339,7 +340,7 @@ In addition to defining link types, you can customize the work item type definit
 -  [Link work items to track dependencies](../../track/link-work-items-support-traceability.md)    
 -  [Customizing your work tracking experience](../customize-work.md)
 
-To programmatically interact with link types, see [Artifact Link Types API](https://docs.microsoft.com/rest/api/vsts/wit/artifact link types/list).
+To programmatically interact with link types, see [Artifact Link Types API](https://docs.microsoft.com/rest/api/vsts/wit/artifact%20link%20types/list).
 
 
 ### Test management links    

@@ -2,10 +2,12 @@
 title: Retrieve a file using the TFVC View Command
 description: Retrieve a file using the TFVC View Command for VSTS or TFS
 ms.assetid: d67fcb55-6f54-434f-ba05-4564f976b8d9
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
@@ -19,7 +21,7 @@ The **view** command retrieves a specific version of a file to a temporary folde
 
 **Required Permissions**
 
-To use the **view** command, you must have the **Read** permission set to **Allow**. For more information, see [Permissions and groups reference](../security/permissions.md).
+To use the **view** command, you must have the **Read** permission set to **Allow**. For more information, see [Permissions and groups reference](../organizations/security/permissions.md).
 
     tf view [/collection:TeamProjectCollectionUrl] [/console] [/recursive] [/output:localfile]
     [/shelveset:shelvesetname[;owner]] [/noprompt] itemspec 

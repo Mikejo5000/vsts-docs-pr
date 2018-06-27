@@ -1,17 +1,21 @@
 ---
-title: Access data through Excel   
-description: How to access Analytics Service OData for Visual Studio Team Services (VSTS) from Excel
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-reporting
+title: Access Analytics Service data through Excel
+titleSuffix: VSTS    
+description: How to guide for accessing the Analytics Service OData from Excel for Visual Studio Team Services 
+ms.prod: devops
+ms.technology: devops-analytics
 ms.assetid: E661D20C-073E-44F1-A91C-B1460A93E2B2 
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
+ms.topic: conceptual
+monikerRange: 'vsts'
 ms.date: 11/13/2017
 ---
 
 # Access data through Excel 
 
-**VSTS**  
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
 You can access data through Excel, generate reports and then publish the charts to PowerBI.com or use the Excel file
 as a basis for Power BI reports. At this time you will need to have alternate credentials enabled to access data

@@ -2,10 +2,12 @@
 title: Difference Command
 description: Difference Command
 ms.assetid: d7bf3b53-b0b8-4b57-a9ce-5a475b715e1d
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
@@ -19,7 +21,7 @@ Compares, and if it is possible, displays differences between two files, files i
 
 **Required Permissions**
 
-To use the **difference** command, you must have the **Read** permission for all specified items set to **Allow**. For more information, see [Permissions and groups reference](../security/permissions.md).
+To use the **difference** command, you must have the **Read** permission for all specified items set to **Allow**. For more information, see [Permissions and groups reference](../organizations/security/permissions.md).
 
     tf diff[erence] itemspec [/version:versionspec] [/type:filetype] 
     [/format:format [/ignorespace] [/ignoreeol] [/ignorecase] [/recursive] 
@@ -103,7 +105,7 @@ You can use the **difference** command to compare and if it is possible, display
 
 You can use the **difference** command to compare both versioned and non-versioned files.
 
-Team Foundation categorizes all files by type. Text files can be merged and compared, side by side and line by line, as long as both files have the same encoding. If you want to compare two files whose encodings are not the same, you can temporarily mask, or override the encoding property for a file by using the **/type** option. Binary files can be compared but cannot be merged. When you pass one or more binary files to the difference command, Team Foundation indicates whether differences exist between it and the item to which it is being compared. For more information about how Team Foundation differentiates between and treats files of disparate types, see [Managing File Types](../tfs-server/admin/manage-file-types.md).
+Team Foundation categorizes all files by type. Text files can be merged and compared, side by side and line by line, as long as both files have the same encoding. If you want to compare two files whose encodings are not the same, you can temporarily mask, or override the encoding property for a file by using the **/type** option. Binary files can be compared but cannot be merged. When you pass one or more binary files to the difference command, Team Foundation indicates whether differences exist between it and the item to which it is being compared. For more information about how Team Foundation differentiates between and treats files of disparate types, see [Managing File Types](/tfs/server/admin/manage-file-types).
 
 If you specify two file names, the two files are compared. Instead of using the **/version** flag, you can specify versions by appending a semicolon and version specifier to the end of each file name.
 
@@ -220,7 +222,7 @@ The following example displays the differences between all files in the PeerCode
 
 #### Concepts
 
-[Managing File Types](../tfs-server/admin/manage-file-types.md)
+[Managing File Types](/tfs/server/admin/manage-file-types)
 
 #### Other Resources
 

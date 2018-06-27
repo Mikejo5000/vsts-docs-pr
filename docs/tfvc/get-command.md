@@ -2,10 +2,12 @@
 title: Use the Get command to download TFVC files or folders
 description: Get files or folders under TFVC version control using the Get command
 ms.assetid: f374dfcb-9c1b-4cab-9a20-3c81d29593a3
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
@@ -17,7 +19,7 @@ monikerRange: '>= tfs-2015'
 
 Gets (downloads) either the latest version or a specified version of one or more files or folders from Team Foundation Server to the workspace. Although the **Get** command provides a different user interface than Visual Studio (see [Download (get) files from the Server](download-get-files-from-server.md)), the process is fundamentally the same.
 
-**Requirements:** See [Permissions and groups reference](../security/permissions.md).
+**Requirements:** See [Permissions and groups reference](../organizations/security/permissions.md).
 
     tf get [itemspec] [/version:versionspec] [/all] [/overwrite] [/force] [/remap]
     [/recursive] [/preview] [/noautoresolve] [/noprompt]

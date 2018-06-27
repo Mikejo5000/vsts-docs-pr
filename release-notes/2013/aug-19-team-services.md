@@ -1,8 +1,8 @@
 ---
 title: Team Foundation Service updates - Aug 19
 description: VSTS release notes for August 19 2013
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-articles
+ms.prod: devops
+ms.technology: vsts-release-notes
 ms.manager: douge
 ms.assetid: 220217d7-1206-4845-b11b-7a7b0573ac73
 ms.date: 06/01/2016
@@ -12,7 +12,7 @@ author: yukom
 
 #Team Foundation Service updates - Aug 19
 
-This sprint, we have a couple of areas of improvement. The first one I want to talk about is our new “Release archive”. A year or so ago, we adopted this faster cadence of 3 week service updates, multiple VS Updates and a 2013 release only 12 months after VS 2012. In the past several months, especially as the release of VS 2013 has become closer, we’ve had a lot of questions about which features are available and in what release – particularly “Which on premises release will a given cloud feature show up in?”. So today we’ve introduced a way for you to know – a [Release archive](https://www.visualstudio.com/news/release-archive-team-services.md). 
+This sprint, we have a couple of areas of improvement. The first one I want to talk about is our new “Release archive”. A year or so ago, we adopted this faster cadence of 3 week service updates, multiple VS Updates and a 2013 release only 12 months after VS 2012. In the past several months, especially as the release of VS 2013 has become closer, we’ve had a lot of questions about which features are available and in what release – particularly “Which on premises release will a given cloud feature show up in?”. So today we’ve introduced a way for you to know – a [Release archive](https://docs.microsoft.com/vsts/release-notes/). 
  
 ##Release archive
  
@@ -20,7 +20,7 @@ Here’s a snip from the middle of the page. The first column is the date that t
   
 ![Release archive](_img/8_19_01.png)
 
-For now you can access this page through the [Release archive](https://www.visualstudio.com/en-us/articles/news/features-timeline) link. On Wednesday, we’ll be adding a link to the [Team Foundation Service News](https://www.visualstudio.com/team-services/updates/) page so you can get to it from there.
+For now you can access this page through the [Release archive](https://visualstudio.microsoft.com/en-us/articles/news/features-timeline) link. On Wednesday, we’ll be adding a link to the [Team Foundation Service News](https://visualstudio.microsoft.com/team-services/updates/) page so you can get to it from there.
 
 ##Code commenting improvements
 

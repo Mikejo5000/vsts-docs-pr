@@ -2,11 +2,12 @@
 title: Add tags to work items 
 titleSuffix: VSTS & TFS
 description: Add work item tags to categorize and filter lists & boards when working in Visual Studio Team Services & Team Foundation Server 
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 79A08F31-BB8A-48BD-AD17-477EE0B76BC7
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
 ms.date: 03/20/2018
 ---
 
@@ -26,16 +27,21 @@ You can add and modify tags from the web portal, from Team Explorer plug-in for 
 <a id="assign"></a>
 ## Add tags to a work item
 
-From the web portal, open a work item and add a tag. Click Add and type your keyword. Or, select from the list of previously assigned tags.  
+Tags should be 400 characters or less and not contain separators such as a `,` (comma), `;` (semicolon), or other formatting character. 
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
+From the web portal, open a work item and add a tag. Choose **Add tag** and type your keyword. Or, select from the list of previously assigned tags.  
 
 > [!div class="mx-imgBorder"]
 > ![VSTS, TFS 2018-Add one or more tags to a work item](_img/add-tags/add-tag-vsts.png)
 ::: moniker-end
+
 ::: moniker range=">= tfs-2013 <= tfs-2015"
+From the web portal, open a work item and add a tag. Choose **Add** and type your keyword. Or, select from the list of previously assigned tags.  
+
 ![Add one or more tags to a work item](_img/add-tags-to-work-items-vso-tfs.png)  
 ::: moniker-end
+
 To add several tags at one time, type a comma between tags. Tags are case sensitive.  
 
 Tags that appear in the tag bar are already assigned to the work item. To unassign a tag, simply choose the x on the tag,![Delete a tag assigned to a work item](_img/add-tags/unassign-a-tag.png).   
@@ -47,13 +53,13 @@ Tags that appear in the tag bar are already assigned to the work item. To unassi
 > new tags. To grant or restrict permissions to create new tags, you set 
 > the permission **Create tag definition** at the project-level. To learn
 > more, see [Add administrators, set permissions at the project-level or  
-> project collection-level](../../security/set-project-collection-level-permissions.md).
+> project collection-level](../../organizations/security/set-project-collection-level-permissions.md).
 	
 
 
 <a id="bulk-modify"></a>
 ##Bulk add or remove tags 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 
 You can bulk update work items to add or remove tags from the web portal.
 You bulk modify tags in the same way as you [bulk modify other fields using the web portal](../backlogs/bulk-modify-work-items.md#tags). Or, you can use [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to bulk add or remove tags.   
@@ -107,7 +113,7 @@ For example, here we query for all work items that are tagged either ```Web``` o
 <a id="show-tags"></a>
 ## Show tags in your backlog or query results
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 Click **Column Options** to add the Tags field to the product backlog or a work item query. If the option doesn't appear, click the ![actions icon](../_img/icons/actions-icon.png) to select it from the menu of options.    
 
 > [!div class="mx-imgBorder"]
@@ -137,7 +143,7 @@ All tags that have been added to the listed work items appear.
 ## Filter lists using tags  
 From the web portal, you can filter backlogs, boards, and query results using tags. 
  
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 
 Begin by clicking the ![actions icon](../_img/icons/filter-icon.png) filter icon. 
 
@@ -171,7 +177,7 @@ You can't delete a tag itself. However, if you delete a tag from all work items 
 
 If you misspell a tag, don't assign the misspelled tag to any work item and the system will automatically delete it within 3 days.  
 
-::: moniker range="vsts || >= tfs-2018"  
+::: moniker range=">= tfs-2018" 
 
 Another option is to install the [Marketplace Tags Manager](https://marketplace.visualstudio.com/items?itemName=YodLabs.TagsManager2) which adds a page under the Work hub to manage tags. 
 

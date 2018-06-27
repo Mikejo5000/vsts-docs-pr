@@ -2,12 +2,14 @@
 title: Get work items programmatically from Visual Studio Team Services
 description: Use REST APIs to get work items from Visual Studio Team Services (VSTS) with queries in your own custom apps.
 ms.assetid: e48d9d34-24dd-4e3e-abe8-8f5498e08083
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-integrate
+ms.prod: devops
+ms.technology: devops-ecosystem
+ms.topic: conceptual
 ms.manager: douge
+monikerRange: '>= tfs-2013'
 ms.author: elbatk
+author: elbatk
 ms.date: 06/27/2017
-ms.topic: get-started-article
 ---
 
 # Fetch work items with queries programatically in VSTS
@@ -19,7 +21,7 @@ To work on this Quickstart, you'll need the following prerequisites:
 
 * A VSTS account. If you don't have one, you can [create one for free](https://go.microsoft.com/fwlink/?LinkId=307137)
 * A Personal Access Token, [find out how to create one](../get-started/authentication/PATs.md)
-* A C# development environment, you can use [Visual Studio](https://www.visualstudio.com/vs/)
+* A C# development environment, you can use [Visual Studio](https://visualstudio.microsoft.com/vs/)
 
 ## Create a C# project in Visual Studio
 

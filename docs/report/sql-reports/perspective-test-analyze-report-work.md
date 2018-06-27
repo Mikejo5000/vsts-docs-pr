@@ -1,11 +1,13 @@
 ---
-title: Analyze work items and test case data | TFS
+title: Analyze work items and test case data
+titleSuffix: TFS 
+ms.prod: devops
+ms.technology: devops-analytics
+ms.topic: reference
 description: Analyze current or historical data for work items and test cases by using Work Item perspective   
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting 
 ms.assetid: c6d0d2da-d63f-4e9c-b92e-50c4605a72ef
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 10/17/17
 ---
 
@@ -14,7 +16,7 @@ ms.date: 10/17/17
 
 [!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
-You can analyze current or historical data for work items and test cases by using the measures, dimensions, and attributes that are defined for the Work Item perspective in the SQL Server Analysis Services cube for Visual Studio Team Foundation Server. A test case is a type of work item that is associated within its own dimension and used specifically to support Microsoft Test Manager. For more information, see [Create your tests](../../manual-test/getting-started/create-test-cases.md).  
+You can analyze current or historical data for work items and test cases by using the measures, dimensions, and attributes that are defined for the Work Item perspective in the SQL Server Analysis Services cube for Visual Studio Team Foundation Server. A test case is a type of work item that is associated within its own dimension and used specifically to support Microsoft Test Manager. For more information, see [Create your tests](../../test/create-test-cases.md).  
   
  The Work Item perspective is based on the relational tables that enable reporting on work items as either a property of the work item or a linked work item. For more information, see [Work Item History tables](work-item-history-tables.md).  
   

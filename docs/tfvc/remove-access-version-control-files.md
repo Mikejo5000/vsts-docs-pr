@@ -2,10 +2,12 @@
 title: Remove Access to Version Control Files
 description: Remove Access to Version Control Files
 ms.assetid: 4264ddaf-ef39-430a-a388-770e2d06b319
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
@@ -29,7 +31,7 @@ The following procedure provides the details for removing the file by using the 
 
 **Required Permissions**
 
-To remove access to Team Foundation version control files, you must belong to the **Team Foundation Administrators** group. For more information, see [Permissions and groups reference](../security/permissions.md).
+To remove access to Team Foundation version control files, you must belong to the **Team Foundation Administrators** group. For more information, see [Permissions and groups reference](../organizations/security/permissions.md).
 
 ### To remove access to a file under version control
 

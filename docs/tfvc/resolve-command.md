@@ -2,10 +2,12 @@
 title: Resolve Command
 description: Resolve Command
 ms.assetid: de5698a0-4e04-45b9-9dbe-3f78706919b3
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
@@ -19,7 +21,7 @@ Lets you resolve conflicts between changed items in your workspace and the lates
 
 **Required Permissions**
 
-To use the **resolve** command, you must be either the workspace owner or have the global **Administer workspaces** permission set to **Allow**. You must also have the **Read** and **Check out** permissions for the items involved in a resolve operation set to **Allow**. For more information, see [Permissions and groups reference](../security/permissions.md).
+To use the **resolve** command, you must be either the workspace owner or have the global **Administer workspaces** permission set to **Allow**. You must also have the **Read** and **Check out** permissions for the items involved in a resolve operation set to **Allow**. For more information, see [Permissions and groups reference](../organizations/security/permissions.md).
 
     tf resolve [itemspec] 
     [/auto:(AutoMerge|TakeTheirs|KeepYours|OverwriteLocal|DeleteConflict|KeepYoursRenameTheirs)] 
@@ -94,7 +96,7 @@ You can specify more than one *Itemspec* argument.
 </tr>
 <tr>
 <td><p><strong>/overridetype</strong></p></td>
-<td><p>Specifies optional encoding for files involved in a three-way merge. The files are treated as the specified encoding. You must determine the correct encoding. Team Foundation Server saves the resulting merge output in the specified encoding in your workspace. For more information about file encodings, see <a href="../tfs-server/admin/manage-file-types.md">Managing File Types</a>.</p>
+<td><p>Specifies optional encoding for files involved in a three-way merge. The files are treated as the specified encoding. You must determine the correct encoding. Team Foundation Server saves the resulting merge output in the specified encoding in your workspace. For more information about file encodings, see <a href="/tfs/server/admin/manage-file-types">Managing File Types</a>.</p>
 <div class="alert">
 <div class="mtps-table" xmlns="http://www.w3.org/1999/xhtml">
 <div class="mtps-row">
@@ -108,7 +110,7 @@ You cannot specify both an **/overridetype** and a **/converttotype**.
 </tr>
 <tr>
 <td><p><strong>/converttotype</strong></p></td>
-<td><p>Specifies the encoding used for temporary conversion for the input in a three-way merge operation. The merge output is saved in the specified encoding in your workspace. This option is an advanced option and seldom used. For more information about file encodings, see <a href="../tfs-server/admin/manage-file-types.md">Managing File Types</a>.</p>
+<td><p>Specifies the encoding used for temporary conversion for the input in a three-way merge operation. The merge output is saved in the specified encoding in your workspace. This option is an advanced option and seldom used. For more information about file encodings, see <a href="/tfs/server/admin/manage-file-types">Managing File Types</a>.</p>
 <div class="alert">
 <div class="mtps-table" xmlns="http://www.w3.org/1999/xhtml">
 <div class="mtps-row">
@@ -169,7 +171,7 @@ The following example attempts to resolve all conflicts by automatically merging
 
 #### Concepts
 
-[Managing File Types](../tfs-server/admin/manage-file-types.md)
+[Managing File Types](/tfs/server/admin/manage-file-types)
 
 #### Other Resources
 

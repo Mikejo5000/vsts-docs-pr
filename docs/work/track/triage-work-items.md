@@ -1,14 +1,14 @@
 ---
 title: Triage work items using a work item query 
 titleSuffix: VSTS & TFS  
-ms.custom: Triage work items
-description: Review and update work items using the triage mode from the query results view in Visual Studio Team Services and Team Foundation Server
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-wit
+ms.global_help.title: Triage work items
+description: Review and update work items use the triage mode from the query results view in Visual Studio Team Services & Team Foundation Server
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 486A876F-A04F-4DC7-829C-94E88BB9B7E1 
-ms.topic: get-started-article
+ms.topic: tutorial
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 03/20/2018
 ---
 
@@ -26,16 +26,16 @@ Using a work item query you can quickly review and update work items. Oftentimes
 
 In this topic you'll learn how to:
 
-> [!div class="checklist"]   
+>[!div class="checklist"]      
 > * Use triage query mode to update a list of work items   
 > * Bulk save work items that you've updated  
 
 
 # [New Queries Experience](#tab/new-query-exp)
 
-::: moniker range="vsts || >= tfs-2018"
+::: moniker range=">= tfs-2018"
 
-To enable the New Queries Experience, see [Preview features](../../collaborate/preview-features.md). To learn more about the new experience, see [New Queries experience](queries-preview.md).  
+To enable the New Queries Experience, see [Preview features](../../project/navigation/preview-features.md). To learn more about the new experience, see [New Queries experience](queries-preview.md).  
 
 The buttons to move up or down within the query results list are outside the work item form. Click Bottom to cycle through the choices for where the work item form appears: Bottom, Right, or Off. 
 
@@ -65,7 +65,7 @@ You can update several work items through the triage process, and then do a bulk
 
 # [New Queries Experience](#tab/new-query-exp)
 
-::: moniker range="vsts || >= tfs-2018"
+::: moniker range=">= tfs-2018"
 Click **Save items** to save all work items you've modified. 
 
 <img src="_img/triage-queries/save-work-items-new-exp.png" alt="Choose Save work items to save all modified work items" style="border: 1px solid #C3C3C3;" /> 

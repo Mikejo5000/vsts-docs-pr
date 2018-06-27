@@ -2,11 +2,12 @@
 title: Resolve Git merge conflicts | VSTS & TFS
 description: Resolving Merge Conflicts in Git from Visual Studio or the command line.
 ms.assetid: 2a51a33a-134b-4357-bcfc-540b3195682f
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git 
-ms.topic: get-started-article
+ms.prod: devops
+ms.technology: devops-code-git 
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: tutorial
 ms.date: 03/14/2018
 monikerRange: '>= tfs-2013'
 ---
@@ -62,7 +63,7 @@ Rebased branches will merge into your main branch without conflicts.
    ![Prompt when there is a merge conflict when you pull a change](_img/merge_prompt_vs.png)   
 
 0. This will bring up a list of files with conflicts. Selecting a file lets you accept the changes in the source branch you are merging from with the **Take Source** button or accept the changes in the branch you are merging into using **Keep Target**. 
-You can manually merge changes by selecting **Merge**, then entering the changes directly into the 
+You can manually merge changes by selecting **Merge**, then entering the changes directly into the merge tool specified in your [Git settings](../concepts/git-config.md#diff--merge-tools).
 0. Use the checkboxes next to the lines modified to select between remote and local changes entirely, or edit the results directly in the **Result** editor under the **Source** and **Target** editor in the diff view.   
 0. When done making changes, click **Accept Merge** . Repeat this for all conflicting files.
 0. Open the **Changes** view in Team Explorer and commit the changes to create the merge commit and resolve the conflict.

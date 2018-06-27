@@ -2,11 +2,14 @@
 title: VSS/References/SDK.Interfaces ContributionPropertyDescription API | Extensions for Visual Studio Team Services
 description: Description about a property of a contribution type
 ms.assetid: bd340d00-0fe8-7461-8eaa-1092c96a6d07
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-ecosystem
 generated: true
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
+ms.topic: article
+monikerRange: '>= tfs-2017'
 ms.date: 08/04/2016
 ---
 

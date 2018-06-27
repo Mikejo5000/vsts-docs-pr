@@ -1,11 +1,14 @@
 ---
-title: Resolve data validation errors | VSTS & TFS
-description: Address rule errors that occur when publishing a list from Excel or Project to VSTSor Team Foundation Server (TFS)  
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Resolve data validation errors
+titleSuffix: VSTS & TFS
+description: Address rule errors that occur when publishing a list from Excel or Project to Visual Studio Team Services & Team Foundation Server 
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 4c72c12f-bd10-48a5-b71c-7c296feec71e
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
+ms.topic: troubleshooting
 ms.date: 02/22/2017  
 ---
 
@@ -77,4 +80,4 @@ A data validation error occurs when a change in the work item list or project pl
 
 ###Required permissions  
   
-To update work items, you must be a member of the **Contributors** group or have your **View work items in this node** and your **Edit work items in this node** permissions set to **Allow**. For more information, see [Add administrators, set permissions at the project-level or project collection-level](../../../security/set-project-collection-level-permissions.md). 
+To update work items, you must be a member of the **Contributors** group or have your **View work items in this node** and your **Edit work items in this node** permissions set to **Allow**. For more information, see [Add administrators, set permissions at the project-level or project collection-level](../../../organizations/security/set-project-collection-level-permissions.md). 

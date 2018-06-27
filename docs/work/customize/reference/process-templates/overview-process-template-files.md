@@ -1,11 +1,13 @@
 ---
 title: Process template and plug-in files 
+titleSuffix: VSTS & TFS
 description: Describes each process template and plug-in file and what is supported when you create a team project via Visual Studio or the web portal  
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit 
+ms.prod: devops
+ms.technology: devops-agile 
 ms.assetid: 5a0b9512-d663-4a5e-99d5-f5454fb986f7
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: reference
 ms.date: 10/19/2017
 ---
 
@@ -166,7 +168,7 @@ Test Management<br/>
 <td>![not supported](../../../_img/icons/delete_icon.png)</td>
 <td>Defines the initial security permissions for Git and Team Foundation version control (TFVC), and for TFVC, check-in notes and whether exclusive check-out is required. 
 <blockquote>
-For VSTS and TFS 2017.4 and later versions, this plug-in is ignored and only the default settings and permissions are defined. After you create a team project, you can manage [TFVC check-in policies](../../../../tfvc/add-check-policies.md) or [permissions](../../../../security/set-git-tfvc-repository-permissions.md) from the web portal.
+For VSTS and TFS 2017.4 and later versions, this plug-in is ignored and only the default settings and permissions are defined. After you create a team project, you can manage [TFVC check-in policies](../../../../tfvc/add-check-policies.md) or [permissions](../../../../organizations/security/set-git-tfvc-repository-permissions.md) from the web portal.
 </blockquote>
 </td>
 </tr>

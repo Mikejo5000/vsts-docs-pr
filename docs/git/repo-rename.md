@@ -2,11 +2,13 @@
 title: Rename a Git repo in your team project | VSTS & TFS
 description: You can rename a Git repository in a few steps, but be aware that your team will have to take a few more steps to adapt to the change.
 ms.assetid: 05971618-4ea9-4997-bb51-2d74211352ef
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git 
+ms.prod: devops
+ms.technology: devops-code-git 
 ms.manager: douge
 ms.author: sdanie
-ms.date: 03/14/2018
+author: steved0x
+ms.topic: conceptual
+ms.date: 05/08/2018
 monikerRange: '>= tfs-2017'
 ---
 
@@ -21,19 +23,23 @@ You can rename a Git repository in a team project from your web browser. After y
 
 ## Rename the repo in VSTS or TFS
 
-0. Open the team project administration page while working in your team project on the web.
+0. Open the project administration page while working in your team project on the web and select **Version Control**.
 
-   ![Use the gear icon to open your team project administration page](_img/repo-mgmt/settings-gear-icon.png)
+   ![Version control settings](_img/repo-mgmt/version-control-settings.png)
 
-0. Select **Version Control**.
 
-0. Hover over the repo you want to rename under **Git repositories** on the left and select **...**. Select **Rename repository...** from the menu.
+0. Select the repo you want to rename under **Git repositories** on the left and select **...**. Select **Rename repository...** from the menu.
 
    ![Rename a repository](_img/repo-mgmt/rename-repo-2107.png)
 
-0. Enter a new repo name in the **Repository name** field in the dialog, then select **Rename**
+   >[!NOTE]
+   >If the **Repositories** pane is not expanded, select **>** to expand it and display the list of repositories.
+   >
+   >![Repositories pane](_img/repo-mgmt/expand-repositories-pane.png)
 
-> This step requires [Rename Repository permissions](../security/set-git-tfvc-repository-permissions.md#git-repository) on your Git repo.
+0. Enter a new repo name in the **Repository name** field in the dialog, then select **Rename**.
+
+> This step requires [Rename Repository permissions](../organizations/security/set-git-tfvc-repository-permissions.md#git-repository) on your Git repo.
 
 ## Update the Git remotes on your dev machines
 
@@ -46,7 +52,7 @@ Each member of your team must update their local Git repos to continue connectin
 
 Copy the repository clone URL to your clipboard.
 
-![Remote URL for the repository from the Clone button in TFS and VSTS](/tutorial/_img/get_clone_url.gif)
+![Remote URL for the repository from the Clone button in TFS and VSTS](tutorial/_img/get_clone_url.gif)
 
 ### Update your remote in Visual Studio 2015 or 2017
 

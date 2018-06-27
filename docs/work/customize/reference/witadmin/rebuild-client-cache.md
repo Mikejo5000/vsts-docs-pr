@@ -2,12 +2,12 @@
 title: Rebuild the client cache
 titleSuffix: TFS  
 description: Update the data cache on client computers after certain maintenance operations.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: e110852a-ab93-4259-957e-47c2076c20bb
 ms.topic: reference
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 monikerRange: '>= tfs-2013 <= tfs-2018'
 ms.date: 03/20/2018
 ---
@@ -31,7 +31,7 @@ To prevent workspace errors from occurring during version control or build opera
   
  **Requirements**  
   
--   To use the **witadmin rebuildcache** command, you must be a member of the **Team Foundation Administrators** security group or the **Project Administrators** security group for the project collection that you want to manage. See [Add an administrator](../../../../security/set-project-collection-level-permissions.md).  
+-   To use the **witadmin rebuildcache** command, you must be a member of the **Team Foundation Administrators** security group or the **Project Administrators** security group for the project collection that you want to manage. See [Add an administrator](../../../../organizations/security/set-project-collection-level-permissions.md).  
   
 > [!NOTE]  
 >  Even if you log on with administrative permissions, you must open an elevated Command Prompt window to perform this function on a server that is running Windows Server 2008. To open an elevated Command Prompt window, choose **Start**, open the shortcut menu for **Command Prompt**, and choose **Run as Administrator**. For more information, see the [Microsoft Web site](http://go.microsoft.com/fwlink/?LinkId=111235).  

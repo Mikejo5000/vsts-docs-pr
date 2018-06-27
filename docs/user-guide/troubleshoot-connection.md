@@ -1,15 +1,17 @@
 ---
-title: Troubleshoot connecting to a team project in VSTS or TFS 
-description: Steps to resolve connection issues with Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
-ms.technology: vs-devops-wit 
-ms.prod: vs-devops-alm
+title: Troubleshoot connecting to a team project 
+titleSuffix: VSTS & TFS  
+description: Steps to resolve connection issues with Visual Studio Team Services & Team Foundation Server  
+ms.technology: devops-security
+ms.prod: devops
 ms.assetid: 
 ms.manager: douge
 ms.author: chcomley
+author: chcomley
+ms.topic: troubleshooting
 ms.date: 02/26/2018
 monikerRange: '>= tfs-2013'
 ---
-
 
 # Troubleshoot connecting to a team project in VSTS or TFS
 
@@ -106,7 +108,7 @@ When this problem occurs, a blank screen flashes several times followed by one o
 
 > TF31002: Unable to connect to this Team foundation Server
 
-To resolve this problem, apply Visual Studio 2013.2 or install a later version. Go to the [Visual Studio download website](http://www.visualstudio.com/downloads).
+To resolve this problem, apply Visual Studio 2013.2 or install a later version. Go to the [Visual Studio download website](http://visualstudio.microsoft.com/downloads).
 
 For a workaround in which you delete your browser cookies, see the following support article, [You can't switch between different organizational accounts in Visual Studio Online](https://support.microsoft.com/en-us/help/2958966/you-can-t-switch-between-different-organizational-accounts-in-visual-s).
 
@@ -116,7 +118,7 @@ For a workaround in which you delete your browser cookies, see the following sup
 
 ## Connect to a TFS with Secure Sockets Layer (SSL) configured
 
-If you connect to a TFS instance that has SSL configured, then you'll need to install a certificate and clear the client cache. For details, see [Set up HTTPS with Secure Sockets Layer (SSL) for TFS, Configuring Client Computers](../tfs-server/admin/setup-secure-sockets-layer.md#config-client-computers). 
+If you connect to a TFS instance that has SSL configured, then you'll need to install a certificate and clear the client cache. For details, see [Set up HTTPS with Secure Sockets Layer (SSL) for TFS, Configuring Client Computers](/tfs/server/admin/setup-secure-sockets-layer#config-client-computers). 
 
 ## Clear the cache on client computers
 

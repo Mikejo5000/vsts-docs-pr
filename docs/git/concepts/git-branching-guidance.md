@@ -2,10 +2,12 @@
 title: Git branching guidance | VSTS & TFS
 description: Git branching guidance
 ms.assetid: 9445be16-3bf4-46ff-bef8-52b72da03d0a
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git 
+ms.prod: devops
+ms.technology: devops-code-git 
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: conceptual
 ms.date: 03/14/2018
 monikerRange: '>= tfs-2013'
 ---
@@ -19,7 +21,7 @@ Your team should find a balance between this flexibility and the need to collabo
 Team members publish, share, review, and iterate on code changes through Git branches shared with others. 
 Adopt a branching strategy for your team so that you collaborate better and spend less time managing version control and more time developing code. 
 
-The following branching strategies are based on the way we use Git here at Microsoft. For more information, see [How we use Git at Microsoft](https://www.visualstudio.com/learn/use-git-microsoft/).
+The following branching strategies are based on the way we use Git here at Microsoft. For more information, see [How we use Git at Microsoft](/azure/devops/devops-at-microsoft/use-git-microsoft).
 
 ## Keep your branch strategy simple
 
@@ -160,4 +162,7 @@ Your team should agree on a process to update deployment branches with the code 
 Cherry-pick bugfixes in the deployment branch back to the master branch using the same steps as porting changes from a release branch.
 
 An exception to this recommendation is if you are using a form of continuous deployment. 
-Use [release management](../../build-release/index.md) tools when working with continuous deployment to promote builds from your master branch to your deployment targets.
+Use [release management](../../pipelines/index.md) tools when working with continuous deployment to promote builds from your master branch to your deployment targets.
+
+## Videos
+> [!VIDEO https://www.youtube.com/embed/ykZbBD-CmP8?start=0]

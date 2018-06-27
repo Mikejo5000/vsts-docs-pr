@@ -1,17 +1,20 @@
 ---
-title: TF30169-The New Team Project Wizard was unable to download the process template {0}. | TFS
+title: TF30169-The New Team Project Wizard was unable to download the process template {0}. 
+titleSuffix: VSTS & TFS
 description: Provides the list of errors when the New Team Project Wizard unable to download the process template.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 6fda9d67-bbdc-432d-949a-2814e499b2c3
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
+ms.topic: Troubleshooting
 ms.date: 01/20/2017
 ---
 # TF30169: The New Team Project Wizard was unable to download the process template {0}.
 
 
-**TFS 2015 | TFS 2013**
+[!INCLUDE [temp](../../../_shared/dev15-version-header.md)]
 
 The New Team Project Wizard encountered a problem downloading or extracting the process template {*name*} selected to create the team project. This error can occur due to one of the following conditions:  
   
@@ -36,6 +39,6 @@ The New Team Project Wizard encountered a problem downloading or extracting the 
 3.  If the server is available on the network and the process templates are available on the server, review the amount of available storage space for program downloads onto your local hard disk. For information about how to increase the available download space, see the online Help for your operating system.  
   
 4.  Contact the administrator for the local computer to confirm that your user account has sufficient permissions to write data to the storage area for local program downloads and that the local hard disk is functioning correctly.  
-  
+    
 ## Related articles 
-- [Create a team project](../../../../accounts/create-team-project.md)
+- [Create a team project](../../../../organizations/accounts/create-team-project.md)

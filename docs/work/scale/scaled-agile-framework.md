@@ -1,20 +1,22 @@
 ---
-title: Scaled Agile Framework | VSTS & TFS 
-description: How to implement the Scaled Agile Framework to support epics, release trains, and multiple backlogs when working in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+title: Scaled Agile Framework
+titleSuffix: VSTS & TFS
+description: How to implement the Scaled Agile Framework to support epics, release trains, and multiple backlogs in Visual Studio Team Services & Team Foundation Server 
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: C8E9CFD2-F08A-4FB8-AC53-B9B6B49A22A3
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
 ms.date: 07/22/2017
 ---
 
 
-# Implement Scaled Agile Framework® to support epics, release trains, and multiple backlogs  
+# Implement Scaled Agile Framework&reg; to support epics, release trains, and multiple backlogs  
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-As enterprises are benefiting from individual agile teams, the question now is how do we scale these practices across teams and gain a portfolio view of the progress of agile teams throughout the enterprise? To address these needs, many businesses are using the Scaled Agile Framework® (SAFe®).  
+As enterprises are benefiting from individual agile teams, the question now is how do we scale these practices across teams and gain a portfolio view of the progress of agile teams throughout the enterprise? To address these needs, many businesses are using the Scaled Agile Framework&reg; (SAFe&reg;).  
 
 If you're interested in using SAFe, you can configure projects created with the [Scrum](../work-items/guidance/scrum-process.md), [Agile](../work-items/guidance/agile-process.md),  or [CMMI](../work-items/guidance/cmmi-process.md) processes to track SAFe criteria. Moreover, just as your Agile tools support Scrum and Agile practices, it can support SAFe and large numbers of teams to work together on epics that span releases. 
 
@@ -24,11 +26,11 @@ If you're familiar with Scrum but not familiar with SAFe, [these videos at Scale
 
 SAFe and Scaled Agile Framework are registered trademarks of [Scaled Agile Inc.](http://www.scaledagile.com/) 
 
-##Map SAFe® concepts to Agile tool concepts
+##Map SAFe&reg; concepts to Agile tool concepts
 
 The SAFe big picture addresses how a portfolio vision is met by a hierarchy of teams, all concerned with specific objectives. This framework breaks down epics into features and stories, which teams work on in Sprints and deliver through Program Increments (PIs) and Release Trains. Also, the portfolio backlog can track how deliverables map to value streams and associated budgets.  
 
-![SAFe architectural overview © D. Leffing..](_img/safe-concepts-poster-v4.0.png)
+![SAFe architectural overview &copy; D. Leffing..](_img/safe-concepts-poster-v4.0.png)
 
 
 Reproduced with permission from &#169; 2011-2016  [Scaled Agile Inc.](http://www.scaledagile.com/). All rights reserved.  
@@ -37,7 +39,7 @@ Examples provided below illustrate how to configure a three-level team hierarchy
 
 ![Agile tool structure to support SAFe](_img/safe-objects-map-to-vso-objects.png)  
 
-##SAFe® portfolios, programs, and teams map to Agile tool teams and projects  
+##SAFe&reg; portfolios, programs, and teams map to Agile tool teams and projects  
 
 Because your Agile tools support a hierarchical team structure, each team has its own view of their work which rolls up to the next level within the team hierarchy.  
 
@@ -45,12 +47,12 @@ Because your Agile tools support a hierarchical team structure, each team has it
 
 To support SAFe teams, you reconfigure the default team as the Portfolio team to manage your epics. You then create sub-teams for program-level work and team-level work. Work can be tracked across teams and throughout each of the levels.
 
-###SAFe® backlogs map to your Agile tools backlogs
+###SAFe&reg; backlogs map to your Agile tools backlogs
 Out of the box, the Agile process supports user story, feature, and epic backlog levels. The hierarchical backlog structure shows work done to support features and user stories in the progress of an epic.  
 
 ![Hierarchical backlog: epics, features, and stories](_img/safe-epics-to-stories-value-area.png)
 
-###SAFe® releases, iterations, and sprints map to iterations
+###SAFe&reg; releases, iterations, and sprints map to iterations
 
 SAFe Release Trains, Releases, Iterations, Program Increments (PIs), and Sprints map easily to your iteration paths. By sharing iterations across the team hierarchy, you manage the releases in a cohesive manner. 
 
@@ -62,7 +64,7 @@ Because epics can span several release trains, the Portfolio team isn't associat
 
 ![Teams track deliverables using iterations](_img/safe-teams-track-deliverables.png)  
 
-###SAFe® value streams and budgets map to tags and the Value Area field  
+###SAFe&reg; value streams and budgets map to tags and the Value Area field  
 You can use tags for a quick and easy way to map epics to their Value Streams, strategic themes, and associated budgets.
 
 ![Tags can track value streams or associated budgets](_img/save-epics-value-stream-tags.png)  
@@ -77,7 +79,7 @@ For a more robust mapping of work to architecture or business features, you can 
 
 ![Value Area tracks Business or Architectural work](_img/safe-epic-to-stories-map-to-value-area.png)  
 
-##Plan and track SAFe® projects using your Agile tools 
+##Plan and track SAFe&reg; projects using your Agile tools 
 
 Once you've configured your Agile tools to support SAFe, trace relationships can be created from stories all the way up to epics. Additionally, you can view progress from the portfolio, program, and feature team levels.  
 
@@ -140,7 +142,7 @@ For everything else, it is very much business as usual for individual feature te
 
 However, now their progress on individual stories is visible to their program and portfolio management teams. The management view reflects what they do.  
 
-##Configure your Agile tools to support SAFe®  
+##Configure your Agile tools to support SAFe&reg;  
 In this section, we'll go from having one project, named "Fabrikam" and one team, which shares the name of the project, to the following structure of three levels and nine teams. The area path hierarchy and configuring each team's area path supports each team's backlog view and rollup of views within the hierarchy.  
 
 ![Hierarchical areas support 3 levels of 9 teams](_img/safe-config-teams.png) 
@@ -152,7 +154,7 @@ In this way, all teams can manage their own workload and priorities while clearl
 All this might sound complicated, but it actually takes very little configuration to set up the teams and get started.
 In order to go from one project with one default team, area, and set of iterations, we'll first configure an area path structure to support the hierarchy of teams we want. Then we'll make sure that the iteration paths support the release structure we want and the program and feature teams to use. Finally, we'll create, configure, and populate the membership of teams.  
 
-You'll need to be a [member of the Project Administrators group](../../security/add-users-team-project.md) to make these configurations.    
+You'll need to be a [member of the Project Administrators group](../../organizations/security/add-users-team-project.md) to make these configurations.    
 
 ###Create areas to support your team hierarchy
 
@@ -189,7 +191,7 @@ This structure maps the following SAFe teams to your Agile tools' teams:
 - 
 If you need more-detailed guidance, see [Portfolio management](portfolio-management.md).  
 
-You'll need to be a [project administrator](../../security/add-users-team-project.md) to perform these steps. 
+You'll need to be a [project administrator](../../organizations/security/add-users-team-project.md) to perform these steps. 
 ####Create and configure each Program team
 
 1. From the Overview page for the team project, create a new team. Make sure that you clear the checkbox for Create an area path with the name of the team.  
@@ -339,7 +341,7 @@ Resources mentioned earlier in this article and a few more are provided here for
 - [Support rollup of work and other fields](../customize/reference/support-rollup-of-work-and-other-fields.md): Describes how to configure TFS to support rollup, the summed values of select fields for all child work items of a parent. Because TFS supports multiple levels of nesting, when you perform rollup, you want to make sure you don't double-count values.  
 - [Out of the box Reports (SQL Server Reporting Services)](../../report/sql-reports/reporting-services-reports.md): Summarizes the reports TFS provides to monitor progress and code quality.  
 - [Synchronize Team Foundation Server with Project Server](../tfs-ps-sync/synchronize-tfs-project-server.md): Describes how project managers and development teams can use the tools that they prefer and share information transparently by enabling data to flow from work items in TFS to tasks in enterprise project plans in Project Server.  
-- [Track your work when assigned to two or more teams](capacity-planning.md): Shows how a developer or tester can track work when they support more than one feature team.  
+- [Track your work when assigned to two or more teams](../scrum/set-capacity.md#track-capacity-per-team): Shows how a developer or tester can track work when they support more than one feature team.  
 
 ###About the authors
 This article has been updated from the previous white paper developed in collaboration with the following authors:  

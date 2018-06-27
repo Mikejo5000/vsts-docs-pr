@@ -2,10 +2,13 @@
 title: .NET Client Library Samples for VSTS
 description: C# samples showing how to integrate with VSTS and Team Foundation Server from apps and services on Windows.
 ms.assetid: 9ff78e9c-63f7-45b1-a70d-42aa6a9dbc57
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-integrate
+ms.prod: devops
+ms.technology: devops-ecosystem
+ms.topic: conceptual
 ms.manager: douge
+monikerRange: '>= tfs-2013'
 ms.author: elbatk
+author: elbatk
 ms.date: 08/04/2016
 ---
 
@@ -243,12 +246,12 @@ public static void MicrosoftAccountRestSample()
 ```
 
 ##### OAuth Authentication for REST services
-Follow this link to learn how to obtain and refresh an OAuth accessToken: http://vsooauthclientsample.codeplex.com/
+Follow this link to learn how to obtain and refresh an OAuth accessToken: https://github.com/Microsoft/vsts-auth-samples
 ```cs
 public static void OAuthSample()
 {
     // Create instance of VssConnection using OAuth Access token
-    VssConnection connection = new VssConnection(new Uri(collectionUri), new VssOAuthCredential(accessToken));
+    VssConnection connection = new VssConnection(new Uri(collectionUri), new VssOAuthAccessTokenCredential(accessToken));
 
     WorkItemTrackingHttpClient witClient = connection.GetClient<WorkItemTrackingHttpClient>();
     List<QueryHierarchyItem> items = witClient.GetQueriesAsync(teamProjectName).Result;

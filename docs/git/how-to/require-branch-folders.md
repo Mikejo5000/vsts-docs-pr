@@ -2,11 +2,13 @@
 title: Require branches to be created in folders
 description: Keep your repository's branch layout clean and understandable by requiring the use of branch folders
 ms.assetid: dd0fa717-0150-4fd3-8677-29d80b979e65
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git
+ms.prod: devops
+ms.technology: devops-code-git
 ms.manager: douge
-ms.author: macoope
-ms.date: 03/14/2018
+ms.author: sdanie
+author: steved0x
+ms.topic: conceptual
+ms.date: 04/11/2018
 monikerRange: '>= tfs-2018'
 ---
 
@@ -37,7 +39,7 @@ As an example, we'll set our repository to enforce the following rules:
 ## Preparation
 
 * You will need the Team Foundation version control command (`tf.exe`) on your computer.
-Run a Visual Studio Developer Command Prompt (in Windows, choose **Start**, choose **Visual Studio**, then choose the the **Developer Command Prompt**).
+Run a Visual Studio Developer Command Prompt (in Windows, choose **Start**, choose **Visual Studio**, then choose the **Developer Command Prompt**).
 * You will need the URL of your account or collection, the name of the project, and the name of the repository. For this example, we'll use `https://fabrikam-fiber.visualstudio.com`, `FabrikamProject`, and `FabrikamRepo`.
 
 ## Enforce permissions
@@ -59,12 +61,12 @@ Allow administrators to create branches under `releases`.
 
     tf git permission /allow:CreateBranch /group:"[FabrikamProject]\Project Administrators" /collection:https://fabrikam-fiber.visualstudio.com/ /teamproject:FabrikamProject /repository:FabrikamRepo /branch:releases
 
-Finally, allow administrators to create a branch called `master` (in case it ever gets deleted accidentally).
+Finally, allow administrators to create a branch called `master` (in case it ever gets deleted accidentally.
 
     tf git permission /allow:CreateBranch /group:"[FabrikamProject]\Project Administrators" /collection:https://fabrikam-fiber.visualstudio.com/ /teamproject:FabrikamProject /repository:FabrikamRepo /branch:master
 
 >[!NOTE]
->You can access help for these commands from the command line by running `tf git /?` and `tf git permission /?`.
+>For more information, see [tf git permission](../../tfvc/git-permission-command.md). You can also access help for these commands from the command line by running `tf git /?` and `tf git permission /?`.
 
 ## Rename old branches
 

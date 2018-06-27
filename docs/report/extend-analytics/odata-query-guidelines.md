@@ -1,19 +1,22 @@
 ---
 title: Query guidelines for Analytics with OData
 titleSuffix: VSTS
-description: Guidelines for extension developers on how to write good OData queries that access the Analytics Service for VSTS
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-reporting
+description: Guidance to support extension developers on how to write good OData queries that access the Analytics Service for Visual Studio Team Services
+ms.prod: devops
+ms.technology: devops-analytics
 ms.assetid: 73E9A63D-B84A-4EA0-9B90-B9BD8BF9646D
 ms.reviewer: stansw
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
+ms.topic: conceptual
+monikerRange: 'vsts'
 ms.date: 11/13/2017
 ---
 
 # Query guidelines for Analytics with OData
 
-**VSTS**  
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
 Extension developers can benefit by following the guidelines provided in this topic for designing efficient OData queries against the Analytics Service for Visual Studio Team Services (VSTS). Following these guidelines will help ensure that the queries have good performance in terms of execution time and resource consumption. Queries that don't adhere to these guidelines might result in poor performance, with long report wait times, queries that exceed allowed resource consumption, or service blockages. 
 
@@ -174,7 +177,7 @@ If you execute a lot of queries, or the queries require a lot of resources to ru
 
 >*Request was blocked due to exceeding usage of resource '{resource}' in namespace '{namespace}'.*
 
-For more information on rate limiting, see [Rate limits](../../collaborate/rate-limits.md). 
+For more information on rate limiting, see [Rate limits](../../integrate/concepts/rate-limits.md). 
 To learn how to design efficient OData queries, refer to [Performance Guidelines](#performance-guidelines) later in this topic.
 
 <a name="question-41065"></a>
@@ -319,7 +322,7 @@ To resolve this problem, use the OData batch endpoint as explained in the specif
 
 We restrict use of the batch endpoint from handling a batch of multiple requests. A single request can still have only one query. If you try to send a batch of several queries, the operation will fail with the following error message. The only solution is to split queries into multiple requests.
 
-> *The Analytics Service doesn’t support processing of multiple operations which the current batch message contains. The Analytics Service uses OData batch in order to support POST requests, but requires you limit the operation to a single request.*
+> *The Analytics Service doesn't support processing of multiple operations which the current batch message contains. The Analytics Service uses OData batch in order to support POST requests, but requires you limit the operation to a single request.*
 
 <a name="question-41401"></a>
 ### ❌ AVOID creating very long queries
@@ -418,7 +421,7 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
 
 As with any performance recommendations, you shouldn't blindly implement them. Instead, always capture the baseline and **measure** the impact of changes you make. All of the guidelines were created based on the interactions with clients of the Analytics Service who had very specific requirements and challenges. These recommendations were consider general and potentially useful for anyone who designs similar queries. However, in rare cases, following the guidelines could have no effect or even a negative effect on the performance. You do need to measure the difference to notice it. Should this happen,  please provide a feedback in the [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html) portal.
 
-There are many options to measure performance. The simplest one is running two versions of the same query directly in the browser and observing time taken in the developer tools. For example, you can use [Network panel](https://docs.microsoft.com/microsoft-edge/f12-devtools-guide/network#network-request-list) in [Microsoft Edge F12 Developer Tools](https://docs.microsoft.com/microsoft-edge/f12-devtools-guide)). Another option is to capture this information using [Fiddler Web Debugger Tool](https://msdn.microsoft.com/library/windows/desktop/ff966510(v=vs.85).aspx). 
+There are many options to measure performance. The simplest one is running two versions of the same query directly in the browser and observing time taken in the developer tools. For example, you can use [Network panel](https://docs.microsoft.com/microsoft-edge/devtools-guide/network#network-request-list) in [Microsoft Edge F12 Developer Tools](https://docs.microsoft.com/microsoft-edge/devtools-guide)). Another option is to capture this information using [Fiddler Web Debugger Tool](https://msdn.microsoft.com/library/windows/desktop/ff966510(v=vs.85).aspx). 
 
 Regardless of your approach, you should run both queries multiple times (e.g. 30 runs each) to have a sufficiently large sample to reason about performance characteristics. Note that the Analytics Service follows multi-tenant architecture, thus, duration of your queries might be impacted by other operations that occur at the same time. 
 
@@ -577,7 +580,7 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
 ```
 
 > [!IMPORTANT]
-> Property `TagNames` has a length limit of 1024 characters. It contains contains a set of tags that fit within that limit. If a work item has many tags or the tags are very long, then `TagNames` will not contain the full set and `Tag` navigation property should be used instead.
+> Property `TagNames` has a length limit of 1024 characters. It contains a set of tags that fit within that limit. If a work item has many tags or the tags are very long, then `TagNames` will not contain the full set and `Tag` navigation property should be used instead.
 
 
 <a id="perf-case-sensitive"> </a>
@@ -596,7 +599,7 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
 <a id="perf-unbounded"> </a>
 ### ❌ DO NOT use unbounded expansion with `$levels=max`
 
-OData has an interesting capability of expanding all the levels of an hierarchical structure. In the Analytics Service there exists some entities where such unbounded expansion could be applied. This operation does work only for accounts with a small amount of data. It doesn't scale well for larger data sets. Don't use it at all if you are working with large data sets or you're developing a widget and you have no control over where the widget will be installed.
+OData has the capability to expand all the levels of an hierarchical structure. For example, work item tracking has some entities where an unbounded expansion could be applied. This operation does work only for accounts with a small amount of data. It doesn't scale well for larger datasets. Don't use it at all if you are working with large datasets or you're developing a widget and you have no control over where the widget will be installed.
 
 <a id="perf-paging"> </a>
 ### ✔️ DO use server-driven paging
@@ -816,7 +819,7 @@ Another useful annotation is `Org.OData.Capabilities.V1.ExpandRestrictions`, whi
 
 
 
-## Related notes
+## Related articles
 - [Query work item tracking data](wit-analytics.md)
 - [Aggregate data](aggregated-data-analytics.md)
 - [Query trend data](querying-for-trend-data.md)

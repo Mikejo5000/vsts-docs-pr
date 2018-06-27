@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 0.  Sign in to your VSTS account 
 (```http://{youraccount}.visualstudio.com```).
 
@@ -20,7 +24,7 @@
 that this token will authorize for **your specific tasks**.
 
 	For example, to build and release apps with a Windows, macOS, or Linux agent, 
-	[limit your token's scope to **Agent Pools (read, manage)**](/vsts/build-release/concepts/agents/agents).
+	[limit your token's scope to **Agent Pools (read, manage)**](/vsts/pipelines/agents/agents).
    
 0. When you're done, make sure to *copy the token*. You'll use this token as your password.
 

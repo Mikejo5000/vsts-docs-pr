@@ -1,11 +1,12 @@
 ---
 title: Configure features after an upgrade 
 description: Configure features after an upgrade to  the application-tier server of Team Foundation Server (TFS)
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: A71B6DD4-2780-4B61-B863-03BBE44AC953
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
 ms.date: 03/16/2017
 ---
 
@@ -20,7 +21,7 @@ After a TFS upgrade, you'll want to use the new features that were installed. So
 
 > [!NOTE]    
 >If you're upgrading from TFS 2010 or an earlier version, review the steps outlined in [When upgrading from TFS 2008 or TFS 2010](upgrade-tfs-2008-or-2010.md). <br/>
-If you need to upgrade TFS, [go to the downloads page](https://www.visualstudio.com/downloads/). <br/> 
+If you need to upgrade TFS, [go to the downloads page](https://visualstudio.microsoft.com/downloads/). <br/> 
 If you have several team projects to update, you can [apply updates programmatically](#program-updates).  
 
 <a id="RunConfigureFeaturesWizard"/>
@@ -28,9 +29,9 @@ If you have several team projects to update, you can [apply updates programmatic
 
 1. From the web portal home page, open the administration context.  
 
-	![Open the administration page](../../feedback/_img/ALM_CAL_OpenAdminPage.png)  
+	![Open the administration page](../../project/feedback/_img/ALM_CAL_OpenAdminPage.png)  
 
-	If you're not a team project administrator, [get added as one](../../security/add-users-team-project.md). Only project administrators or TFS administrators can run the wizard.
+	If you're not a team project administrator, [get added as one](../../organizations/security/add-users-team-project.md). Only project administrators or TFS administrators can run the wizard.
 
 3. If you see a **Configure Features link**, run the wizard. 
 
@@ -81,9 +82,9 @@ In particular:
 
 - To view and work with Epic and Feature portfolio backlogs, you may need to [select them for your team](select-backlog-navigation-levels.md) 
 - To add the Epic portfolio backlog to your team project or additional portfolio backlog levels, you can [add them manually](add-portfolio-backlogs.md).    
-- To use Code Review and Feedback Request, you need to [configure an SMTP server for TFS](../../tfs-server/admin/setup-customize-alerts.md).  
+- To use Code Review and Feedback Request, you need to [configure an SMTP server for TFS](/tfs/server/admin/setup-customize-alerts).  
 - To use Bugs Behavior, you must configure this option as described in [Show bugs on backlogs and boards feature](show-bugs-on-backlog.md). 
-- To fully manage Epic and Feature portfolio backlogs or web-based test plans, you need to have [Advanced access](../../security/change-access-levels.md).
+- To fully manage Epic and Feature portfolio backlogs or web-based test plans, you need to have [Advanced access](../../organizations/security/change-access-levels.md).
 
 <a id="related-notes"> </a>
 ##Related upgrade notes

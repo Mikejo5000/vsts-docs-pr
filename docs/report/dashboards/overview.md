@@ -3,10 +3,10 @@ title: Dashboards, charts, & widgets
 titleSuffix: VSTS & TFS  
 description: Review of the OOB charts, widgets, dashboards, & reports available to monitor status and trends in VSTS & Team Foundation Server (TFS)  
 ms.assetid: 7BAD53A1-080E-40E8-8866-24EC00395D39
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-reporting
+ms.prod: devops
+ms.technology: devops-analytics
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.topic: overview
 monikerRange: 'vsts || >= tfs-2013'
 ms.date: 03/23/2018
@@ -14,7 +14,7 @@ ms.date: 03/23/2018
 
 # Dashboards, charts, & widgets    
 
-[!INCLUDE [temp](../_shared/vsts-tfs-header-17-15.md)] 
+[!INCLUDE [temp](../_shared/vsts-tfs-header-17-15.md)] 
 
 Customizable, highly-configurable dashboards provide you and your teams with the flexibility to share information, monitor progress and trends, and improve your workflow processes. 
 
@@ -90,7 +90,7 @@ And, just like work item query-based charts, you can add these charts to a dashb
 
 **Sequence for adding test progress and result charts to a dashboard**  
 
-[![Edit query](_img/gs-chart-test-type.png)](../../manual-test/getting-started/track-test-status.md)[![Create chart](_img/gs-chart-create.png)](charts.md)[![Add chart to dashboard](_img/gs-chart-add-dashboard.png)](add-charts-to-dashboard.md#add-charts)
+[![Edit query](_img/gs-chart-test-type.png)](../../test/track-test-status.md)[![Create chart](_img/gs-chart-create.png)](charts.md)[![Add chart to dashboard](_img/gs-chart-add-dashboard.png)](add-charts-to-dashboard.md#add-charts)
 
 
 
@@ -145,7 +145,7 @@ The Analytics Service is in preview and available to all VSTS accounts. To learn
 ::: moniker range="vsts"
 ### Add custom fields
   
-You can add data to support reporting requirements by [adding a custom field](../../work/customize/process/customize-process-field.md).   
+You can add data to support reporting requirements by [adding a custom field](../../organizations/settings/work/customize-process-field.md).   
 
 ::: moniker-end
 

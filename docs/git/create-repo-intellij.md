@@ -2,11 +2,12 @@
 title: VSTS Plugin for IntelliJ IDEA and Android Studio | VSTS & TFS
 description: Intro to the IntelliJ plugin available for VSTS.
 ms.assetid:
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git 
-ms.topic: get-started-article
+ms.prod: devops
+ms.technology: devops-code-git 
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: conceptual
 ms.date: 09/08/2017
 monikerRange: '>= tfs-2015'
 ---
@@ -25,12 +26,12 @@ In this guide, we show you how to create a VSTS Git repo using the VSTS web port
 ## Prerequisites
 To complete the steps in this guide you need:
 
-* A VSTS account. If you don't have a VSTS account, you can [sign up](../accounts/create-account-msa-or-work-student.md) for one for free. Each account includes free, unlimited private Git repositories.
+* A VSTS account. If you don't have a VSTS account, you can [sign up](../organizations/accounts/create-account-msa-or-work-student.md) for one for free. Each account includes free, unlimited private Git repositories.
 * IntelliJ IDEA installed on your machine. If you don't have it, [get IntelliJ IDEA](https://www.jetbrains.com/idea).
 * The VSTS plugin for IntelliJ. See [IntelliJ Plugin download page](/vsts/java/download-intellij-plug-in) for installation instructions. This plugin is compatible with IntelliJ IDEA Ultimate and Community editions, Android Studio, RubyMine, WebStorm, PhpStorm, PyCharm, AppCode, MPS, 0xDBE, and CLion.
 * Git command line tools.
   * To install Git for Windows, including Git Credential Manager, see [Install the Git Credential Manager - Windows](set-up-credential-managers.md#windows).
-  * To install Git for macOS and Linux, see [Install the Git Credential Manager - macOS and Linix](set-up-credential-managers.md#macos-and-linux).
+  * To install Git for macOS and Linux, see [Install the Git Credential Manager - macOS and Linux](set-up-credential-managers.md#macos-and-linux).
 
 ## Create a repo
 0. Navigate to your VSTS project by browsing to `https://<your account name>.visualstudio.com` and selecting the name of your project. You can select it from the **All** projects list, or from the **Recent** projects list if you have accessed it recently.

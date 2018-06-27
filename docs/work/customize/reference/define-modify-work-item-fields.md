@@ -1,11 +1,11 @@
 ---
 title: Field data types and field attributes | VSTS & TFS  
 description: Data types supported by work item fields to support queries, reports, and workflow for Visual Studio Team Services (VSTS) and TFS  
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: c735a582-954a-418e-8b12-1b5c0b9857b9  
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 09/08/2017
 ---
 
@@ -120,7 +120,7 @@ As the following table describes, you can assign one of the following values to 
 > [!NOTE]     
 > You can make a field reportable after it has been used for a work item. After you set the reportable value, new revisions of the work item that are copied to the warehouse will contain the field value. However, the revisions that are already in the warehouse will not be backfilled with the existing values.
 
-> [!div class="mx-tdCol2BreakAll"]  
+> [!div class="mx-tdCol2BreakAll"]
 > |Attribute value|Description|
 > |---|---|
 > | **Detail** |Use the **Detail** type only for Integer, Double, String, or DateTime fields.<br/><br/>The data in this field is moved into the relational warehouse database in the Work Item and Current Work Item tables but not into the SQL Server Analysis Services cube. By using this type for unrestricted text fields, you can use them in reports without making the cube significantly larger.|
@@ -158,7 +158,7 @@ Predefined fields defined by the default process templates that TFS provides beg
 -   Microsoft.VSTS.Build.FoundIn   
 -   Microsoft.VSTS.TCM.Steps  
 
-For an overview of all system and predefined fields that are defined for the default processes/process templates, see [Work item field index](../../work-items/guidance/work-item-field.md). For more information about specifying field names, see [Naming restrictions](../../../collaborate/naming-restrictions.md).
+For an overview of all system and predefined fields that are defined for the default processes/process templates, see [Work item field index](../../work-items/guidance/work-item-field.md). For more information about specifying field names, see [Naming restrictions](../../../organizations/settings/naming-restrictions.md).
 
 
 ## Related articles

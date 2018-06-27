@@ -2,10 +2,12 @@
 title: Configure Command
 description: Configure Command
 ms.assetid: c61c2a48-20d4-4452-b6e1-6c1aa3b521ee
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
@@ -25,7 +27,7 @@ Enables an administrator to view and change the following configuration settings
 
 **Required Permissions**
 
-To use the **configure** command, you must have the **Edit server-level information** permission set to **Allow**. For more information, see [Permissions and groups reference](../security/permissions.md).
+To use the **configure** command, you must have the **Edit server-level information** permission set to **Allow**. For more information, see [Permissions and groups reference](../organizations/security/permissions.md).
 
     tf configure [PathOfTeamProject] [/collection:TeamProjectCollectionUrl][/login:username,[password]]
 
@@ -78,7 +80,7 @@ The following example displays the myproj team project settings in the team proj
 
 #### Concepts
 
-[Managing File Types](../tfs-server/admin/manage-file-types.md)
+[Managing File Types](/tfs/server/admin/manage-file-types)
 
 #### Other Resources
 

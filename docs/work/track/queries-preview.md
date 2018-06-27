@@ -1,32 +1,32 @@
 ---
-title: New queries experience
-description: Highlights the features made available with the changes to the new Queries hub layout
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-agile 
-ms.article: get-started-article 
+title: Understand the new queries experience
+titleSuffix: VSTS & TFS
+description: Available features provided with the new Queries hub layout in Visual Studio Team Services & Team Foundation Server 
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 9E69373B-8902-43C9-9F29-4BE0948077DC 
 ms.manager: douge
-ms.author: kaelli
-ms.topic: get-started-article 
-monikerRange: 'vsts || >= tfs-2018'
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
+monikerRange: '>= tfs-2018'
 ms.date: 03/20/2018
 ---
 
-# New Queries Experience
+# New Queries experience
 
 **VSTS | TFS 2018**   
 
 > [!NOTE]      
-><b>Feature availability: </b>The **New Queries Experience** is in preview for VSTS and TFS 2018. To access it, you [enable it from the web portal](../../collaborate/preview-features.md) from your account profile.
+><b>Feature availability: </b>The **New Queries Experience** is in preview for VSTS and TFS 2018. To access it, you [enable it from the web portal](../../project/navigation/preview-features.md) from your account profile.
 
 The **New Queries Experience** streamlines many of the query features you have access to. It now provides a directory page, separate from the queries results page,  from which to select, manage, and favorite queries. 
 
 ## Enable the New Queries Experience
 
-To try out the **New Queries Experience**, open your account provide and select Preview features. For details, see [Enable  preview features](../../collaborate/preview-features.md).
+To try out the **New Queries Experience**, open your account provide and select Preview features. For details, see [Enable  preview features](../../project/navigation/preview-features.md).
 
 ## User focused navigation
-After you enable the **New Queries Experience**, click the  **Work>Queries** hub. You"™ll notice that the left pane is gone. To navigate quickly between your favorite queries, click Queries and favorite those queries of most interest to you. Then, you can use the drop-down menu in the query title to select queries you've favorited.
+After you enable the **New Queries Experience**, click the  **Work>Queries** hub. You'll notice that the left pane is gone. To navigate quickly between your favorite queries, click Queries and favorite those queries of most interest to you. Then, you can use the drop-down menu in the query title to select queries you've favorited.
 
 <img src="_img/queries-favorite-picker.png" alt="List of favorite queries to run" style="border: 1px solid #cccccc;"/>
 

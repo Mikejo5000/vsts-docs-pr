@@ -1,11 +1,14 @@
 ---
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-integrate
+ms.prod: devops
+ms.technology: devops-ecosystem
+ms.topic: conceptual
 title: FAQ for Visual Studio extensions
 description: Frequently asked questions (FAQ) for building Visual Studio extensions.
 ms.assetid: 58B3A4FE-7188-450F-8402-EA9DFCD878E3
 ms.manager: douge
+monikerRange: '>= tfs-2013'
 ms.author: elbatk
+author: elbatk
 ms.date: 08/04/2016
 ---
 
@@ -17,7 +20,7 @@ If you don't find an answer to your question here, try the [ExtendVS Gitter foru
 
 ## General
 <a name="marketplace"></a>
-#### Q: How do I add my extension the the Visual Studio Marketplace?
+#### Q: How do I add my extension to the Visual Studio Marketplace?
 
 A: The Visual Studio Marketplace is currently in preview. Continue managing your Visual Studio extensions through the [Gallery](https://visualstudiogallery.msdn.microsoft.com/). Once the Marketplace is ready, your extension will be automatically migrated to the Marketplace.
 

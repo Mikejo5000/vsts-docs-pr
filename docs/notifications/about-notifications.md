@@ -1,13 +1,13 @@
 ---
 title: Understand the basics of how notifications work in VSTS and TFS
 description: Understand how notifications or alerts are managed in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)
-ms.prod: vs-devops-alm
-ms.technology: collaborate
-ms.assetid: 
+ms.prod: devops
+ms.technology: devops-collab
 toc: show
 ms.manager: douge
 ms.author: elbatk
-ms.topic: get-started-article
+author: elbatk
+ms.topic: conceptual
 ms.date: 09/01/2017
 monikerRange: '>= tfs-2017'
 ---
@@ -54,6 +54,6 @@ You can also use a third-party service like Zapier to send notifications to hund
 
 ## On-premises SMTP server (TFS)
  
-For on-premises TFS, [you must configure an SMTP sever](../tfs-server/admin/setup-customize-alerts.md) in order for team members to see the Notifications option from their account menu and to  receive notifications. 
+For on-premises TFS, [you must configure an SMTP sever](/tfs/server/admin/setup-customize-alerts) in order for team members to see the Notifications option from their account menu and to  receive notifications. 
 
 ::: moniker-end

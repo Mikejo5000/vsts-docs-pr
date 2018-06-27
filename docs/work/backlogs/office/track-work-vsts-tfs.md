@@ -1,11 +1,14 @@
 ---
-title: Work in Excel or Project | VSTS & TFS
-description: Use Office Excel or Project to track work and plan projects in conjuction with work item tracking in VSTS & TFS 
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Work in Excel or Project
+titleSuffix: VSTS & TFS
+description: Use Office Excel or Project to track work in Visual Studio Team Services & Team Foundation Server 
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: fbd7b5e1-e4c4-4976-9596-236e980fdb3b
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
+ms.topic: conceptual
 ms.date: 03/31/2017
 ---
 # Work in Excel or Project 
@@ -92,7 +95,7 @@ To reconnect an Excel or Project document file:
 - [Bulk add or modify work items with Excel](bulk-add-modify-work-items-excel.md)  
 - [Create your backlog and tasks using Project](create-your-backlog-tasks-using-project.md)  
 - [Create your backlog](../../backlogs/create-your-backlog.md)
-- [Requirements and compatibility](../../../accounts/requirements.md) 
+- [Requirements and compatibility](/tfs/server/requirements) 
 
 
 ### Can I open a query in Excel or Project from the web portal?  

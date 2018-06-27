@@ -1,12 +1,12 @@
 ---
 title: Locate Reporting Services reports after upgrade
 titleSuffix: TFS 2013
-description: Locate reports in SQL Server Reporting Services after upgrading to TFS 2010. 
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
-ms.assetid: 
+description: Locate reports in SQL Server Reporting Services after upgrading earlier versions of Team Foundation Server to TFS 2010. 
+ms.prod: devops
+ms.technology: devops-analytics
+ms.topic: conceptual
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 10/17/17
 ---
 

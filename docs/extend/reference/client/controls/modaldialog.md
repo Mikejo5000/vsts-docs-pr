@@ -2,10 +2,14 @@
 title: Modal Dialog Control | Extensions for VSTS
 description: Use the modal dialog control to collect user input or display message in your app for VSTS.
 ms.assetid: 1ABD1859-0BF4-4546-A750-1786B0227E0A
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-ecosystem
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
+ms.topic: article
+ms.manager: douge
+monikerRange: '>= tfs-2017'
 ms.date: 08/04/2016
 ---
 

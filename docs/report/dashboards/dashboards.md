@@ -1,21 +1,20 @@
 ---
 title: Add and manage team dashboards
 titlesuffix: VSTS & TFS  
-description: View progress and gain quick access to code, builds, and work items by creating multiple team dashboards in Visual Studio Team Services (VSTS)  and Team Foundation Server (TFS)  
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-reporting
+description: View progress and trends by defining dashboards in Visual Studio Team Services & Team Foundation Server 
+ms.prod: devops
+ms.technology: devops-analytics
 ms.assetid: B080CEFA-4D94-44B2-99E3-0E3E85616D04  
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.topic: quickstart
-monikerRange: 'vsts || >= tfs-2015'
+monikerRange: '>= tfs-2015'
 ms.date: 03/27/2018
 ---
 
 # Add and manage dashboards
 
 **VSTS | TFS 2018 | TFS 2017 | TFS 2015.1**
-
 
 Share progress and status with your team using configurable team dashboards. Dashboards provide easy-to-read, easy access, real-time information. At a glance, you can make informed decisions without having to drill down into other parts of your team project site. 
 
@@ -24,30 +23,29 @@ The Overview page provides access to a default team dashboard which you can cust
 
 ::: moniker range="tfs-2015"
 > [!NOTE]   
-> Multiple team dashboards and the [widget catalog](widget-catalog.md) are available from TFS 2015.1 or later versions. For TFS 2015 and earlier versions, you don't have access to multiple team dashboards. Instead, your home page serves as a [single team dashboard](team-dashboard.md). For information on SharePoint dashboards, see [Project portal dashboards](../sharepoint-dashboards/project-portal-dashboards.md).  
+> Multiple team dashboards and the [widget catalog](widget-catalog.md) are available from TFS 2015.1 or later versions. For TFS 2015 and earlier versions, you don't have access to multiple team dashboards. Instead, your home page serves as a [single team dashboard](team-dashboard.md). For information on SharePoint dashboards, see [Project portal dashboards](../sharepoint-dashboards/project-portal-dashboards.md).
 ::: moniker-end
 
 ::: moniker range="tfs-2017"
 > [!NOTE]   
-> For information on SharePoint dashboards, see [Project portal dashboards](../sharepoint-dashboards/project-portal-dashboards.md).  
+> For information on SharePoint dashboards, see [Project portal dashboards](../sharepoint-dashboards/project-portal-dashboards.md).
 ::: moniker-end
-
 
 
 ::: moniker range="vsts"
-[!INCLUDE [temp](../_shared/dashboard-prerequisites-vsts.md)] 
+[!INCLUDE [temp](../_shared/dashboard-prerequisites-vsts.md)]  
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
-[!INCLUDE [temp](../_shared/dashboard-prerequisites-tfs-2017-18.md)] 
+[!INCLUDE [temp](../_shared/dashboard-prerequisites-tfs-2017-18.md)] 
 ::: moniker-end
 
 ::: moniker range="tfs-2015"
-[!INCLUDE [temp](../_shared/dashboard-prerequisites-tfs-2015.md)] 
+[!INCLUDE [temp](../_shared/dashboard-prerequisites-tfs-2015.md)] 
 ::: moniker-end
- 
+ 
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 ## Connect to the web portal for your team project 
 
 Open a browser window and choose the **Dashboards** hub. 
@@ -62,7 +60,7 @@ If you don't see the team or team project you want, click the ![project icon](..
 ::: moniker-end
 
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 
 ## Select a dashboard to view 
 
@@ -75,7 +73,7 @@ All dashboards are associated with a team.
 
 ::: moniker range="vsts"
 
-To enable the New Dashboard experience, see [Enable preview features](../../collaborate/preview-features.md).  
+To enable the New Dashboard experience, see [Enable preview features](../../project/navigation/preview-features.md).  
 
 1. From the **Dashboards** hub, open the selector and choose  the **Browse all dashboards** option. 
  
@@ -107,9 +105,9 @@ The New Dashboard experience is only available from VSTS at this time.
 
 # [Old Dashboards Experience](#tab/old-query-exp)
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 
-1. Select the team whose dashboards you want to view. To switch your team focus, see [Switch team project or team focus](../../settings/switch-team-context.md).
+1. Select the team whose dashboards you want to view. To switch your team focus, see [Switch team project or team focus](../../organizations/settings/switch-team-context.md).
 
 2. Choose the **Dashboards** hub.
 
@@ -124,7 +122,7 @@ The New Dashboard experience is only available from VSTS at this time.
 
 ---
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 
 ## Add and name your dashboard 
 
@@ -136,14 +134,14 @@ Add a new dashboard as needed to support your team's needs. You can also edit an
 
 ::: moniker range="vsts"
 
-To enable the New Dashboard experience, see [Enable preview features](../../collaborate/preview-features.md).  
+To enable the New Dashboard experience, see [Enable preview features](../../project/navigation/preview-features.md).  
 
 1. From the **Dashboards** hub, open the selector and choose the ![plus icon](_img/icons/blue-plus-icon.png) **New Dashboard** option. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open the create a dashboard dialog](_img/dashboards/open-new-dashboard-dialog.png)  
 
-	If you don't see the ![plus icon](_img/icons/blue-plus-icon.png) **New Dashboard** option, then you're not a team admin for the currently selected team, or you don't have permissions to add and edit dashboards. Either [switch the context to your team](../../settings/switch-team-context.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json), or request you be added as a [team admin](../../work/scale/add-team-administrator.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json). 
+	If you don't see the ![plus icon](_img/icons/blue-plus-icon.png) **New Dashboard** option, then you're not a team admin for the currently selected team, or you don't have permissions to add and edit dashboards. Either [switch the context to your team](../../organizations/settings/switch-team-context.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json), or request you be added as a [team admin](../../work/scale/add-team-administrator.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json). 
 
 2. Enter the name of the dashboard and other information you want to capture. 
 
@@ -167,13 +165,13 @@ The New Dashboard experience is only available from VSTS at this time.
 
 # [Old Dashboards Experience](#tab/old-query-exp)
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 
 From the **Dashboards** hub, click the ![plus icon](../../Work/_img/icons/green_plus_icon.png) and enter a dashboard name. 
 
 ![Add and name a dashboard](_img/dashboards-new-ts.png) 
 
-If you don't see the ![plus icon](../../work/_img/icons/green_plus_icon.png), then you're not a team admin for the currently selected team, or you don't have permissions to add and edit dashboards. Either [switch the context to your team](../../settings/switch-team-context.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/breadcrumb/dashboards/toc.json), or request you be added as a [team admin](../../work/scale/add-team-administrator.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/breadcrumb/dashboards/toc.json). 
+If you don't see the ![plus icon](../../work/_img/icons/green_plus_icon.png), then you're not a team admin for the currently selected team, or you don't have permissions to add and edit dashboards. Either [switch the context to your team](../../organizations/settings/switch-team-context.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/breadcrumb/dashboards/toc.json), or request you be added as a [team admin](../../work/scale/add-team-administrator.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/breadcrumb/dashboards/toc.json). 
 
 With the dashboard selected, you can add [widgets and charts to the dashboard](add-widget-to-dashboard.md). Or, you can [add charts to a team dashboard from the Work, Build, or Test hubs](add-charts-to-dashboard.md).
 
@@ -181,7 +179,7 @@ With the dashboard selected, you can add [widgets and charts to the dashboard](a
 
 ---
 
-::: moniker range="vsts || >= tfs-2015"
+::: moniker range=">= tfs-2015"
 
 <a id="manage">  </a> 
 ## Manage dashboards, reorder and enable auto-refresh
@@ -221,7 +219,7 @@ The New Dashboard experience is only available from VSTS at this time.
 
 # [Old Dashboards Experience](#tab/old-query-exp)
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 
 1. To manage dashboards, click the ![configure icon](_img/icons/configure-icon.png) wrench icon.
 
@@ -262,7 +260,7 @@ You can also [manage dashboard permissions](dashboard-permissions.md).
 
 ---
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 ## Move or delete a widget from a dashboard  
 
 > [!NOTE]  
@@ -292,14 +290,14 @@ When you're finished with your changes, choose **Done Editing** to exit dashboar
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 The New Dashboard experience is only available from VSTS at this time. 
 ::: moniker-end
 
 
 # [Old Dashboards Experience](#tab/old-query-exp)
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 
 Click ![Edit dashboard icon](_img/edit-dashboard-icon.png) to modify your dashboard. You can then drag tiles to reorder their sequence on the dashboard. 
 
@@ -317,7 +315,7 @@ Note that you can drag and drop a widget from the catalog onto the dashboard.
 
 ---
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 
 ## Try this next 
 
@@ -393,7 +391,7 @@ And, you can add a chart to a team dashboard in a similar way.
 ## Add widgets to your dashboard
 
 >[!NOTE]  
-><b>Feature availability: </b>Dashboard edit mode controls shown appear from VSTS or TFS 2015.2 or later version. Some functionality differs when you connect to an application server running TFS 2015.1 or later version.   
+><b>Feature availability: </b>Dashboard edit mode controls shown appear from VSTS or TFS 2015.2 or later version. Some functionality differs when you connect to an application server running TFS 2015.1 or later version.   
 
 ### Add a widget  
 

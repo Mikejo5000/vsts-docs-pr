@@ -1,14 +1,15 @@
 ---
 title: Drive Git or TFVC development from a work item
 titleSuffix: VSTS & TFS 
-description: Create a branch, create a pull request, and automatically link work items with source control branches, builds, commits, changesets, pull requests or other Git or TFVC supported operations  
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+description: Create a branch or pull request & automatically link work items with source control branches, builds, commits, or other code development actions  
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: BD7CE3C1-9E15-4BD6-B9CD-F78569C74D0D  
 ms.manager: douge
 ms.author: kaelli
-ms.topic: get-started-article
-monikerRange: 'vsts || >= tfs-2017 <= tfs-2018'
+author: KathrynEE
+ms.topic: quickstart
+monikerRange: '>= tfs-2017'
 ms.date: 03/20/2018
 ---
 
@@ -22,7 +23,7 @@ One of the ways your team can drive their development and stay in sync is to lin
 <!---
 Review this topic to learn:  
 
-> [!div class="checklist"] 
+>[!div class="checklist"]    
 > * How to create a new branch or pull request from a work item   
 > * Complete the pull request  
 > * Perform a squash merge  
@@ -151,7 +152,7 @@ Learn more about tracking work with work items and developing with Git from thes
 Keep in mind that the Development section only appears within the web portal work item form. The work item tracking experience and forms that appear in Visual Studio or other supported clients will be missing several of the features that the web portal makes available. 
 
 > [!NOTE]   
-> The Development section within the work item form is not supported in TFS 2013 or TFS 2015. Consider [upgrading to a later TFS version](https://www.visualstudio.com/downloads/). 
+> The Development section within the work item form is not supported in TFS 2013 or TFS 2015. Consider [upgrading to a later TFS version](https://visualstudio.microsoft.com/downloads/). 
 
 ### Associated work items in build 
 
@@ -162,7 +163,7 @@ With Git commits, any work items that have been linked to a commit will be liste
 <!--- Add info about option to set build linking; link to release notes if needed --> 
 
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 ### Link types showing in the Development section
 Links shown in this section appear as a result of these actions:   
 - Creating a branch, commit, or pull request from the work item    

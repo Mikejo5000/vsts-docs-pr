@@ -1,11 +1,14 @@
 ---
-title: Update an existing installation and version compatibility requirements | TFS
-description: Update an existing installation and version compatibility requirements when using Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Update an existing installation and version compatibility requirements
+titleSuffix: TFS 
+description: Update an existing installation and version compatibility requirements when using Team Foundation Server & Project Server
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: aa45b668-d753-4837-a5cc-ffdc82f08c1c
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
+ms.topic: conceptual
 ms.date: 01/12/2017
 ---
 
@@ -28,8 +31,8 @@ ms.date: 01/12/2017
   
 > [!NOTE]
 >  You do not need to unmap or unregister any mapped or registered components prior to upgrading the software.  
-  
--   Upgrade TFS according to the instructions provided in the Installation Guide: [Upgrade Team Foundation Server](../../tfs-server/upgrade/get-started.md).  
+
+-   Upgrade TFS according to the instructions provided in the Installation Guide: [Upgrade Team Foundation Server](/tfs/server/upgrade/get-started).  
   
     > [!IMPORTANT]
     >  Upgrading to Visual Studio Team Foundation Server 2013 requires 64-bit machines. Also, to install Team Foundation Server Extensions for Project Server requires that Project Server is installed on 64-bit machines.  

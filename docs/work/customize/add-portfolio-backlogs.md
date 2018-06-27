@@ -1,12 +1,13 @@
 ---
 title: Add portfolio backlogs
 titleSuffix: VSTS & TFS 
-description: Add up to two additional work item types and portfolio backlogs to Visual Studio Team Services (VSTS) or Team Foundation Server 
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+description: Add up to two additional work item types and portfolio backlogs in Visual Studio Team Services & Team Foundation Server   
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 764D98C3-9DAD-4F40-8D5D-D0C95E023485
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
 ms.date: 12/15/2017  
 ---
 
@@ -15,7 +16,7 @@ ms.date: 12/15/2017
 [!INCLUDE [temp](../_shared/version-header-hosted-plus-tfs.md)]
 
 > [!IMPORTANT]  
->This topic applies to team project customization for Hosted XML and On-premises XML process models. For the Inheritance process model, see [Customize your backlogs or boards for a process](process/customize-process.md). 
+>This topic applies to team project customization for Hosted XML and On-premises XML process models. For the Inheritance process model, see [Customize your backlogs or boards for a process](../../organizations/settings/work/customize-process.md). 
 >
 >For an overview of process models, see [Customize your work tracking experience](../customize/customize-work.md).  
 
@@ -60,7 +61,7 @@ For an overview of the three system processes, see [Choose a process](../work-it
 ##1. Export the files you need
 <ol>
 
-<li>If you aren't the account owner or a member of the Project Collection Administrator's group, [get added as an administrator](../../security/set-project-collection-level-permissions.md). You need these permissions to customize the team project.</li>   
+<li>If you aren't the account owner or a member of the Project Collection Administrator's group, [get added as an administrator](../../organizations/security/set-project-collection-level-permissions.md). You need these permissions to customize the team project.</li>   
 <li>Get the files you need: 
 <ul>
 <li>For **Hosted XML**: [Export the process you want to update](import-process/import-process.md)<br/>
@@ -204,8 +205,8 @@ In this last step, you add the Initiative portfolio backlog to the process and m
 		c. ProcessConfiguration.xml   
 
 2.	Open or refresh the web portal and confirm that Initiative appears as a portfolio backlog as expected. See [Organize your backlog](../backlogs/organize-backlog.md).  
-3.	Grant [Advanced access](../../security/change-access-levels.md) to users who'll need to exercise all the features available with portfolio backlogs.  
-	For **Hosted XML:**  See [Assign licenses to users](../../accounts/add-account-users-assign-access-levels.md).
+3.	Grant [Advanced access](../../organizations/security/change-access-levels.md) to users who'll need to exercise all the features available with portfolio backlogs.  
+	For **Hosted XML:**  See [Assign licenses to users](../../organizations/accounts/add-account-users-from-user-hub.md).
 
 
 <a id="import-export">  </a>

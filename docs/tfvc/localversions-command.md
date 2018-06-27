@@ -2,10 +2,12 @@
 title: LocalVersions Command
 description: LocalVersions Command
 ms.assetid: 5531edc7-0333-43eb-bea0-59db9bc35c33
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
@@ -18,7 +20,7 @@ monikerRange: '>= tfs-2015'
 Displays the version of one or more items in a workspace.
 
 **Required Permissions**  
-To use the **localversions** command, you must have the **Use** permission to the workspace. For more information, see [Permissions and groups reference](../security/permissions.md).
+To use the **localversions** command, you must have the **Use** permission to the workspace. For more information, see [Permissions and groups reference](../organizations/security/permissions.md).
 
     tf localversions ItemSpec
     [/recursive] [/format:brief|detailed]

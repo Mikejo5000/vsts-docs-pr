@@ -1,11 +1,13 @@
 ---
-title: Test Case Readiness Report | TFS
+title: Test Case Readiness Report 
+titleSuffix: TFS 
+ms.prod: devops
+ms.technology: devops-analytics
+ms.topic: reference
 description: Determine how many test cases have been defined and are ready to run 
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
 ms.assetid: c4e804d5-1549-41c0-a365-28fdec77bffe
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 10/17/17
 ---
 
@@ -16,7 +18,7 @@ ms.date: 10/17/17
 After the team starts to define test cases, you can use the Test Case Readiness report to determine how many test cases have been defined and are ready to run.  
   
 > [!NOTE]
->  The Test Case Readiness report is useful only if your team is testing your application by using Test Runner and Microsoft Test Manager. For more information about how to define and use test cases, see [Plan your tests](../../manual-test/getting-started/create-test-cases.md).  
+>  The Test Case Readiness report is useful only if your team is testing your application by using Test Runner and Microsoft Test Manager. For more information about how to define and use test cases, see [Plan your tests](../../test/create-test-cases.md).  
   
  For information about how to access, refresh, or manage reports, see [Reporting Services Reports](reporting-services-reports.md).  
   

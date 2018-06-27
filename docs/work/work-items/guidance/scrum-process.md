@@ -1,13 +1,15 @@
 ---
-title: Scrum process template
+title: Scrum process template artifacts
 titleSuffix: VSTS & TFS
 description: Scrum process objects used to plan and track work, monitor progress, and trends when connecting to Visual Studio Team Services & Team Foundation Server 
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: f4e77db3-e54c-472a-ba60-92ceb8331882
 ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
+monikerRange: '>= tfs-2013'
 ms.date: 03/20/2018
 ---
 
@@ -24,7 +26,7 @@ In addition to the WITs, teams have access to a set of shared work item queries 
 
 ::: moniker range="vsts"
 > [!NOTE]  
-> You can customize the work tracking system for your team project based on the Scrum process by creating and customizing an inherited process and applying that process to your team project. To learn more, see [Inheritance process model](../../customize/inheritance-process-model.md). 
+> You can customize the work tracking system for your team project based on the Scrum process by creating and customizing an inherited process and applying that process to your team project. To learn more, see [Inheritance process model](../../../organizations/settings/work/inheritance-process-model.md). 
 ::: moniker-end
 
 
@@ -113,8 +115,8 @@ To access this dashboard, your team project must have a [project portal configur
 
 As updates are made to the Scrum process template, the version number is updated. The following table provides a mapping of the versioning applied as updates are made to the TFS server. For VSTS, the latest version is always used. Starting with TFS 2012, the `version` element was added to the process template to support versioning of the templates. This element specifies a major and minor version. Prior to this change, the version was specified within the process template name.      
 
-> [!div class="mx-tdCol2BreakAll"]  
-> | TFS version | Scrum process name | Major version |
+> [!div class="mx-tdCol2BreakAll"]
+> |TFS version | Scrum process name | Major version |
 > |-------------|-------------------|--------------|
 > | TFS 2018 | Scrum | 16 |
 > | TFS 2017 | Scrum | 15 |
@@ -131,7 +133,7 @@ For a summary of updates made to process templates, see [Changes made to process
 
 Your product owner can plan and track product backlog items and bugs in the product backlog by using the **Product Backlog** query. You can find work items that are assigned to the current sprint by using the shared queries that are listed under the **Current Sprint** folder. These queries find work items that are assigned to a specified iteration or sprint. As you plan additional sprints, you can modify these queries to specify the latest sprint and save them to additional folders that you create, such as **Sprint 2** or **Sprint 3**.
 
-The project administrator for each team project [defines area paths](../../customize/set-area-paths.md) and [iteration paths](../../customize/set-iteration-paths-sprints.md) for that project so that the team can track progress by those designations.  
+The project administrator for each team project [defines area paths](../../../organizations/settings/set-area-paths.md) and [iteration paths](../../../organizations/settings/set-iteration-paths-sprints.md) for that project so that the team can track progress by those designations.  
 
 |Shared queries|Description| 
 |---|---|  

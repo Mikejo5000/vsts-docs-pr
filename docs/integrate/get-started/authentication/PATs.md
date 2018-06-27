@@ -2,10 +2,13 @@
 title: Authenticating with personal access tokens | VSTS REST APIs
 description: Use personal access tokens to get started with the REST APIs for VSTS.
 ms.assetid: 255E1E2B-9CB2-4FC3-8495-12DB4149A449
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-integrate
+ms.prod: devops
+ms.technology: devops-ecosystem
+ms.topic: conceptual
 ms.manager: douge
+monikerRange: '>= tfs-2013'
 ms.author: elbatk
+author: elbatk
 ms.date: 08/04/2016
 ---
 
@@ -78,5 +81,5 @@ Learn more about [using IIS Basic Authentication with TFS on-premises](iis-basic
 
 #### Q: Can I use basic auth with all of the VSTS REST APIs?
 
-A: No. You can use basic auth with most of them, but [accounts and profiles](https://www.visualstudio.com/en-us/docs/integrate/api/shared/overview) only support [OAuth](./oauth.md).
+A: No. You can use basic auth with most of them, but [accounts and profiles](https://visualstudio.microsoft.com/en-us/docs/integrate/api/shared/overview) only support [OAuth](./oauth.md).
 

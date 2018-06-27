@@ -2,10 +2,12 @@
 title: Work with large files in your Git repo | VSTS & TFS
 description: Recommendations on how to manage large binary files in Git, Visual Studio, and Team Foundation Server.
 ms.assetid: 57ad13a3-9178-4f31-b776-79f32b1afa58
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git 
+ms.prod: devops
+ms.technology: devops-code-git 
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: conceptual
 ms.date: 03/14/2018
 monikerRange: '>= tfs-2015'
 ---
@@ -76,7 +78,7 @@ LFS files can be as big as you need them to be.
 Additionally, as of version 2.0, Git LFS supports [file locking](https://github.com/git-lfs/git-lfs/wiki/File-Locking) to help your team work on large, undiffable assets like videos, sounds, and game maps.
 
 Git LFS is [is fully supported and free in VSTS](https://blogs.msdn.microsoft.com/visualstudioalm/2015/10/01/announcing-git-lfs-on-all-vso-git-repos/).
-To use LFS with Visual Studio, you need at least [Visual Studio 2015 Update 2](https://www.visualstudio.com/en-us/news/vs2015-update2-vs.aspx).
+To use LFS with Visual Studio, you need at least [Visual Studio 2015 Update 2](https://visualstudio.microsoft.com/en-us/news/vs2015-update2-vs.aspx).
 Just follow the [instructions to install the client](https://git-lfs.github.com/), set up LFS tracking for files on your local repo, and then push your changes to VSTS.
 
 ### Limitations
@@ -92,6 +94,7 @@ If two people are working on the same file at the same time, they must work toge
 Git LFS provides [file locking](https://github.com/git-lfs/git-lfs/wiki/File-Locking) to help.
 Users must still take care to always pull the latest copy of a binary asset before beginning work.
 0. VSTS currently does not support using SSH in repos with Git LFS tracked files.   
+0. If a user drags and drops a binary file via the web interface into a repo which is configured for Git LFS, [the binary will be committed to the repo](https://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/suggestions/34265377-drag-and-drop-lfs-files-into-web-gui) and not the pointers that would be committed via the Git LFS client.
 
 ### File format
 

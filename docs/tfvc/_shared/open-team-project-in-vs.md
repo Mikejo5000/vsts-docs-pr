@@ -1,9 +1,13 @@
+---
+ms.topic: include
+---
+
 ##	Open your team project in Visual Studio
 
 0. Before you start, if you haven't already:
 
- * [Sign up and create your team project](../../accounts/create-account-msa-or-work-student.md).
- * Install [Visual Studio 2013 or later](https://www.visualstudio.com/downloads).
+ * [Sign up and create your team project](../../organizations/accounts/create-account-msa-or-work-student.md).
+ * Install [Visual Studio 2013 or later](https://visualstudio.microsoft.com/downloads).
 
 0. Go to your team project's page 
 (```http://{youraccount}.visualstudio.com/DefaultCollection/{yourteamproject}```)

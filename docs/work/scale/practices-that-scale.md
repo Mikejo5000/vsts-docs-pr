@@ -1,11 +1,14 @@
 ---
-title: Practices that scale  | VSTS & TFS
-description: Scaling Agile recommended practices for working in Visual Studio Team Services (VSTS) or Team Foundation Server     
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+title: Practices that scale
+titleSuffix: VSTS & TFS
+description: Scaling Agile recommended practices for working in Visual Studio Team Services & Team Foundation Server    
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 46F7A310-B6BD-46FA-88E2-91521BEE3BC4  
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
+ms.topic: conceptual
 ms.date: 08/02/2017
 ---
 
@@ -72,7 +75,7 @@ Some specific Agile practices that scale well and lead to happier, engaged, and 
 
 You improve organizational effectiveness by attending to the culture you want to build. Culture changes occur when individuals, teams, and organizations adopt one or more continuous improvement practices. Several scalable Agile practices include: 
 
-- **Retrospectives**: By asking questions such as: "What went well?"ù, "What should we do differently?"ù, and "What should we stop doing?"ù help teams reflect on how they can improve on their processes and practices. Retrospectives help teams surface what is working well and what needs improvement. Retrospectives can be conducted anytime and anywhere. However, institutionalizing certain retrospectives at a regular cadence help institutionalize continuous improvement practices. For example:  
+- **Retrospectives**: By asking questions such as: "What went well?", "What should we do differently?", and "What should we stop doing?" help teams reflect on how they can improve on their processes and practices. Retrospectives help teams surface what is working well and what needs improvement. Retrospectives can be conducted anytime and anywhere. However, institutionalizing certain retrospectives at a regular cadence help institutionalize continuous improvement practices. For example:  
 	- **[Sprint retrospectives](../scrum/best-practices-scrum.md#sprint-retrospective-meeting)** can help teams identify areas to improve at a regular cadence.   
 	- **Release retrospectives** can help organizations identify areas to improve communications and internal practices and fuel improvement for the next release.
 	- **Operational reviews**: are typically held monthly and include representatives from a whole value stream. Spanning a portfolio of projects and other initiatives and using objective, quantitative data, design these retrospectives to provoke discussions about the dynamics affecting performance between teams. 
@@ -116,8 +119,8 @@ In addition to the above practices, you'll find additional guidance around scali
 - [Multiple teams](multiple-teams.md) 
 - [Portfolio management](portfolio-management.md) 
 - [Visibility across teams](visibility-across-teams.md)  
-- [Scaled Agile Framework](scaled-agile-framework.md) 
-- [Scaling Agile to large teams] (https://www.visualstudio.com/learn/scale-agile-large-teams/)
+- [Scaled Agile Framework](scaled-/azure/devops/agile/scale-agile-large-teams
+- [Scaling Agile to large teams] (/azure/devops/agile/scale-agile-large-teams)
 
 ###Industry resources
 - [Agile manifesto](http://agilemanifesto.org)

@@ -1,28 +1,28 @@
 ---
 title: Change the Azure subscription your VSTS account uses for billing
-description: How to change the Azure subscription your VSTS account uses for billing
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-setup
+description: Steps for how to unlink the Azure subscription your Visual Studio Team Services account uses for billing via the Visual Studio Marketplace
+ms.prod: devops
+ms.technology: devops-billing
 ms.assetid: e447adb1-6208-49f6-a488-515aa4b2fdcf
+ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
-ms.date: 4/06/2018
+author: chcomley
+ms.date: 06/07/2018
 ---
 [//]: # (monikerRange: 'vsts')
 
-# Change the Azure subscription your VSTS account uses for billing
+# Change the Azure subscription that your VSTS account uses for billing
 
 **VSTS**
 
-If you want to use a different Azure subscription to bill purchases for your VSTS account, 
-you will need to unlink your VSTS account from your current Azure subscription 
-and relink your account to another Azure subscription. You must be the VSTS account owner. 
+If you want to use a different Azure subscription to bill purchases for your VSTS account, you will need to unlink your VSTS account from your current Azure subscription and relink your account to another Azure subscription. You must be the VSTS account owner.
 
 ## Prerequisites
 
 The first time that you set up billing for your VSTS account--whether you do this via the Azure portal or as part of making a purchase in the Visual Studio Marketplace, you will need:
 
-1. [VSTS project collection administrator or account owner permissions](../accounts/faq-add-delete-users.md#find-owner)
+1. [VSTS project collection administrator or account owner permissions](../organizations/accounts/faq-add-delete-users.md#find-owner)
 2. [The **owner** or **contributor** role on your Azure subscription](add-backup-billing-managers.md)
 
 To make subsequent edits to paid quantities in your VSTS account, you only need the owner or contributor role on your Azure subscription.
@@ -36,14 +36,11 @@ To make subsequent edits to paid quantities in your VSTS account, you only need 
 >
 > If you wait until the 1st of next month to relink and to make your purchases again, your VSTS account will revert back to the Free Tier and users in excess of the free limits will appear as expired in your account.
 
-<a name="AzurePortal2"></a>
-
 ## Change subscription
 
-1. [Sign in to the Azure portal](https://portal.azure.com/) 
-as VSTS account owner and as Azure subscription co-administrator or greater.
+1. [Sign in to the Azure portal](https://portal.azure.com/) as VSTS account owner and as Azure subscription co-administrator or greater.
 
-    If you experience browser problems with Azure, 
+    If you experience browser problems with Azure,
     make sure that you use a [supported browser](https://azure.microsoft.com/en-us/documentation/articles/azure-preview-portal-supported-browsers-devices/).
 
 2. Go to **More services** > **Developer tools** > **VSTS accounts**. Select your VSTS account.
@@ -61,8 +58,6 @@ as VSTS account owner and as Azure subscription co-administrator or greater.
 ## Related articles
 
 - [VSTS users](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser)
-- [Microsoft-hosted CI/CD](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines) (hosted pipelines)
-- [Self-hosted CI/CD](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines) (private pipelines)
 - [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
 - [Package Management](https://marketplace.visualstudio.com/items?itemName=ms.feed)
 - Any non-Microsoft services you're buying through the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vsts).

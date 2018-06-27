@@ -1,11 +1,14 @@
 ---
-title: Storyboard your ideas | VSTS & TFS  
-description: Turn your ideas and goals into something visual using the TFS Storypoint add-in to PowerPoint  
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+title: Storyboard your ideas with PowerPoint
+titleSuffix: VSTS & TFS 
+description: Turn your ideas and goals into something visual using the Storypoint add-in to PowerPoint for Visual Studio Team Services or Team Foundation Server  
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 432016A2-61E7-4863-99AB-61E4D74E28E7
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
+ms.topic: conceptual
 ms.date: 05/10/2017
 ---
 
@@ -17,9 +20,9 @@ With storyboarding, you turn your ideas and goals into something visual. Your id
 
 ## Use storyboard shapes and PowerPoint features
 
-1.  If you're interfacing with TFS 2017 or VSTS, you must have [Office PowerPoint 2010 or later version installed](https://www.microsoftstore.com/store/msusa/en_US/pdp/productID.323024400). For version compatibility, see [Requirements and compatibility, Office](../../../tfs-server/requirements.md#office). If you're interfacing with TFS 2013 or TFS 2015, you must have Office PowerPoint 2007 or later version installed.  
+1.  If you're interfacing with TFS 2017 or VSTS, you must have [Office PowerPoint 2010 or later version installed](https://www.microsoftstore.com/store/msusa/en_US/pdp/productID.323024400). For version compatibility, see [Requirements and compatibility, Office](/tfs/server/compatibility#office). If you're interfacing with TFS 2013 or TFS 2015, you must have Office PowerPoint 2007 or later version installed.  
 
-2.  If you haven't installed a version of [Visual Studio (2013 or later)](https://www.visualstudio.com/downloads/download-visual-studio-vs) or the [Team Foundation Server Standalone Office Integration 2015 (free)](https://www.visualstudio.com/downloads/#team-foundation-server-office-integration-2015-update-3-1), you'll need to install one of these versions to create and modify storyboards.
+2.  If you haven't installed a version of [Visual Studio (2013 or later)](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs) or the [Team Foundation Server Standalone Office Integration 2015 (free)](https://visualstudio.microsoft.com/downloads/#team-foundation-server-office-integration-2015-update-3-1), you'll need to install one of these versions to create and modify storyboards.
 
 	> [!NOTE]   
 	>The only way to get the Team Foundation plug-in is by installing one of the latest editions of Visual Studio or the TFS Standalone Office Integration installer. TFS Office Integration 2015 supports connection to VSTS and TFS from Excel, Project, and the PowerPoint-based storyboarding tool. 
@@ -50,8 +53,7 @@ With storyboarding, you turn your ideas and goals into something visual. Your id
 
 > [!TIP]  
 >- Use animation to bring your user interface flow to life.  
->- Take screenshots of your apps. For example, add a screenshot as the background of a master slide.  
->- Use [Office MIX](https://mix.office.com/gallery/category/how-to) to create a demo of your feature.  
+>- Take screenshots of your apps. For example, add a screenshot as the background of a master slide.   
 
 <a id="link-storyboard">  </a>
 ## Link your storyboard to a backlog item
@@ -98,7 +100,7 @@ With PowerPoint Storyboarding, you can illustrate a new or a modified interface.
 ## Related articles
 
 Start using Storyboarding with PowerPoint today by downloading the free plug-in to PowerPoint: 
-- [Team Foundation Server Office® Integration 2017](https://go.microsoft.com/fwlink/?LinkId=832491&clcid=0x409)
+- [Team Foundation Server Office&reg; Integration 2017](https://go.microsoft.com/fwlink/?LinkId=832491&clcid=0x409)
 
 
 ### Custom shapes 

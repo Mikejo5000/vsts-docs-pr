@@ -1,13 +1,14 @@
 ---
-title: Change request  field reference (CMMI)
+title: Change request field reference (CMMI)
 titleSuffix: VSTS & TFS
 description: Track change requests for CMMI work items, provide description and reference name  
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 1b95abfa-a1cb-4ebd-aff2-843cf6eec333
 ms.topic: reference
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.manager: douge
+monikerRange: '>= tfs-2013'
 ms.date: 01/20/2017
 ---
 

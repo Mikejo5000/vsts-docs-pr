@@ -1,20 +1,22 @@
 ---
-title:  Available Analytics Service widgets for VSTS
+title:  Analytics Service widgets 
 titleSuffix: VSTS
-description: Portfolio overview of the Analytics Service widgets and how they relate to each other
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-reporting
-ms.assetid: 
+description: Learn about the widgets generated from data from the Analytics Service that you can add to a dashboard in Visual Studio Team Services 
+ms.prod: devops
+ms.technology: devops-analytics
 ms.manager: douge
 ms.reviewer: romik
 ms.author: kaelli
+author: KathrynEE
+ms.topic: conceptual
+monikerRange: 'vsts'
 ms.date: 11/13/2017
 ---
 
 
 # Widgets based on the Analytics Service
 
-**VSTS** 
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
 The Analytics extension includes several dashboard widgets that take advantage of the power of the Analytics Service. Once you install the Analytics extension you can add Widgets to your dashboard. Using widgets, you and your team can gain valuable insights into the health and status of your work. 
 
@@ -22,7 +24,7 @@ The Analytics widgets are described below.
 
 > [!NOTE]   
 > **Feature availability:** All Analytics widgets are available only for VSTS at this time. You need to first install the [Analytics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics).
-You can then [add the widget(s) to your dashboard](../add-widget-to-dashboard.md). You must be an account owner or a member of the [Project Collection Administrator group](../../security/set-project-collection-level-permissions.md) to add extensions.
+You can then [add the widget(s) to your dashboard](../add-widget-to-dashboard.md). You must be an account owner or a member of the [Project Collection Administrator group](../../organizations/security/set-project-collection-level-permissions.md) to add extensions.
 
 ## Burndown
 The Burndown widget lets you display a trend of remaining work across multiple teams and multiple sprints. You can use it to create a release burndown, a bug burndown, or a burndown on any scope of work over time. It will help you answer questions like: 

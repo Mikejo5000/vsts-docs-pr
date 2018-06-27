@@ -2,10 +2,13 @@
 title: Add tabs on backlog pages | Extensions for VSTS
 description: Extend VSTS with your own hub.
 ms.assetid: 3D0B51DA-66AA-45C7-B9F1-08973CFF7E5E
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-ecosystem
+ms.topic: conceptual
 ms.manager: douge
+monikerRange: '>= tfs-2017'
 ms.author: elbatk
+author: elbatk
 ms.date: 08/22/2016
 ---
 
@@ -76,8 +79,8 @@ For each contribution in your extension, the manifest defines
 
 | Property           | Description                                                                                                                         
 |--------------------|----------------------------------------------------------------------------------------|                                
-| name               | Name of the hub.					                                                      |                   
-| uri                | Path (relative to the extenion's base URI) of the page to the surface as the tab       |                   
+| name               | Name of the hub					                                                      |                   
+| uri                | Path (relative to the extension's base URI) of the page to surface as the tab       |                   
 | registeredObjectId | Id of the object registered for the tab. Include code like the example below in the html file indicated in the "uri" property of the contribution shown above. | 
 
 ### Scopes
@@ -109,7 +112,7 @@ Learn about all of the places where you can add a hub in the [contributions refe
 
 ## Next Steps:
 
-Now that you've written your extension, the next steps are to Package, Publish, and Install your extension. You can also check out the 
+Now that you've written your extension, the next steps are to Package, Publish, and Install it. You can also check out the 
 documentation for Testing and Debugging your extension. 
 
 <div name="row" style="padding-top:15px">

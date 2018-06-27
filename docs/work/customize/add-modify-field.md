@@ -1,12 +1,14 @@
 ---
 title: Add or modify a work tracking field
 titleSuffix: VSTS & TFS
-description: Modify or add a work item field to support queries, reports, and workflow for Team Foundation Server 
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+description: Modify or add a work item field to support queries, reports, and workflow in Visual Studio Team Services & Team Foundation Server  
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 32775755-CCC1-4859-95ED-0FF9FF8DBCD2  
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
+ms.topic: conceptual
 ms.date: 03/20/2018
 ---
 
@@ -24,7 +26,7 @@ Not all pick lists are defined in the same way. Some lists are defined through t
 > **Feature availability:** You can exercise some features only from an on-premises TFS and are noted as such. 
 
 
-> [!div class="mx-tdCol2BreakAll"]  
+> [!div class="mx-tdCol2BreakAll"]  
 > |WIT definition  |Command line change (On-premises XML) |
 > |-------------|----------|  
 > |- [Customize a pick list](#picklist)<br/>- [Add rules to a field](#add-rules)<br/>- [Add a custom field](#add-custom-field)<br/>- [Change the field label on the form](#change-label)<br/>- [Add a custom control](#custom-control) |- [List fields](#list-fields)<br/>- [Change a field attribute](#change-attribute) <br/>- [Delete a field](#delete-field)<br/>- [Index a field](#index-field)  | 
@@ -150,8 +152,8 @@ For example, with the following code snippet, you can enforce the rule that only
 
 You apply rules to accomplish the following actions:  
 
-> [!div class="mx-tdCol2BreakAll"]  
-> | To accomplish this action: | Use this XML element: |  
+>[!div class="mx-tdCol2BreakAll"]  
+> |To accomplish this action: | Use this XML element: |  
 > |---|---|
 > | Specify a tool-tip. | **HELPTEXT** |
 > | Qualify the value a field can have. | **CANNOTLOSEVALUE**, **EMPTY**, **FROZEN**, **NOTSAMEAS**, **READONLY**, and **REQUIRED** |
@@ -192,7 +194,7 @@ To add a custom field, edit the WIT definition to add a **FIELD** element within
 	```
 
     > [!TIP]  
-    > Elements within the list always appear in alphanumeric order, regardless of how you enter them in the XML definition file. The Reference Name, or `refname`, is the programmatic name for the field. All other rules should refer to the `refname`. For more information, see [Naming restrictions and conventions](../../collaborate/naming-restrictions.md#WorkItemFields). 
+    > Elements within the list always appear in alphanumeric order, regardless of how you enter them in the XML definition file. The Reference Name, or `refname`, is the programmatic name for the field. All other rules should refer to the `refname`. For more information, see [Naming restrictions and conventions](../../organizations/settings/naming-restrictions.md#WorkItemFields). 
 
 0.  Add the `Control` element within the `FORM` section so that the custom field appears on the form within the group of elements where you want it to appear.
 
@@ -244,7 +246,7 @@ To modify the field label, change the value assigned to the ```Control``` elemen
 	> [!div class="tabbedCodeSnippets"]
 	```XML
 	<Column PercentWidth="70">  
-	   <Control Type="FieldControl" FieldName="System.Title" Label="Title (TÃ­tulo):" LabelPosition="Left" />  
+	   <Control Type="FieldControl" FieldName="System.Title" Label="Title (Titulo):" LabelPosition="Left" />  
 	</Column>
 	```
 
@@ -254,7 +256,7 @@ To modify the field label, change the value assigned to the ```Control``` elemen
 <a id="custom-control">  </a>
 ## Add a custom control  
 
-Using the [object model for tracking work items](../../tfs-server/architecture/extend-vs-for-alm.md), you can programmatically create, change, and find bugs, tasks, and other WITs. You can also create your own custom controls that add functionality to a work item form.
+Using the [object model for tracking work items](/tfs/server/architecture/extend-vs-for-alm), you can programmatically create, change, and find bugs, tasks, and other WITs. You can also create your own custom controls that add functionality to a work item form.
 
 Or, you can add a custom control which is available through the [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?term=custom%20controls&target=VSTS&sortBy=Relevance). For example:
 
@@ -273,7 +275,7 @@ By default, the drop-down menu for the Assigned To field displays all users who 
 
 The most efficient way to apply security restrictions is to create custom groups that you manage either in Windows or a collection or team project  group.
 
-1.  Create the security group that you want to use and add the accounts to the group. For example, create a new group called **Team Contributors**. See [Add users to team projects](../../security/add-users-team-project.md).
+1.  Create the security group that you want to use and add the accounts to the group. For example, create a new group called **Team Contributors**. See [Add users to team projects](../../organizations/security/add-users-team-project.md).
 
 2.  Modify the definition file for each work item type that you want to limit the user set. Add the **VALIDUSER** element to the **FIELD** element definition for the Assigned To field, and specify the TFS group.
 
@@ -324,15 +326,15 @@ To enable or disable indexing for a field, use the [**witadmin indexfield** comm
 
 ## Related articles
 
-This topic addressed how to add and customize fields for Hosted XML and On-premises XML process models. For information on adding and customizing WITs for Hosted XML and On-premises XML process models, see [Add or modify a work item type](add-modify-wit.md). For the Inheritance process model, see [Customize a process](process/customize-process.md). 
+This topic addressed how to add and customize fields for Hosted XML and On-premises XML process models. For information on adding and customizing WITs for Hosted XML and On-premises XML process models, see [Add or modify a work item type](add-modify-wit.md). For the Inheritance process model, see [Customize a process](../../organizations/settings/work/customize-process.md). 
 
 Other related topics or resources: 
 
-- [Work tracking object limits](../customize/object-limits.md) 
+- [Work tracking object limits](../../organizations/settings/work/object-limits.md) 
 - [Customize the work tracking experience](customize-work.md)  
 - [Field data type and field attributes](reference/define-modify-work-item-fields.md)    
 - [WebLayout and Control elements](reference/weblayout-xml-elements.md)
-- [Guide to administrative tasks](../../accounts/account-management.md)  
+- [Guide to administrative tasks](../../organizations/accounts/account-management.md)  
 - [Import, export, and manage work item fields (witadmin)](reference/witadmin/manage-work-item-fields.md).
 - [Team Foundation Server - Project Management & Work Item forum](http://social.msdn.microsoft.com/Forums/vstudio/home?forum=tfsworkitemtracking)  
 
@@ -343,7 +345,7 @@ Other related topics or resources:
 - (TFS) To add or customize a field, you must be a member of the Project Administrators group or have your **Edit project-level information** permission set to Allow.  
 - (TFS) To delete or rename fields or change an attribute of a field, you must be a member of the **Team Foundation Administrators** security group or the **Project Collection Administrators** security group.  
   
-To get added as an administrator, [Add administrators](../../security/set-project-collection-level-permissions.md).
+To get added as an administrator, [Add administrators](../../organizations/security/set-project-collection-level-permissions.md).
 
 <a id="field-reference"></a>  
 
@@ -365,7 +367,7 @@ To list or review fields, you can use one of the following tools, depending on t
 <tbody valign="top" align="center">
 
 <tr>
-<td align="left">[Web portal: List inherited and custom-defined fields](process/customize-process-field.md#review-fields)</td>
+<td align="left">[Web portal: List inherited and custom-defined fields](../../organizations/settings/work/customize-process-field.md#review-fields)</td>
 <td>![checkmark](../_img/icons/checkmark.png)</td>
 <td>![checkmark](../_img/icons/checkmark.png)<sup>1</sup></td>
 <td> </td>

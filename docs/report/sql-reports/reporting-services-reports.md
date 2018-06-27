@@ -1,12 +1,14 @@
 ---
-title: Reporting Services Reports | TFS
-description: Answer questions about the actual state of the project.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
+title: Reporting Services Reports
+titleSuffix: TFS
+description: Overview of the reports provided through SQL Server Reports for  Team Foundation Server
+ms.prod: devops
+ms.technology: devops-analytics
+ms.topic: overview
 ms.assetid: c784953f-5faf-43eb-a4a9-080afd9270de
 ms.manager: douge
 ms.author: kaelli
-ms.topic: get-started-article
+author: KathrynEE
 ms.date: 10/17/17
 ---
 
@@ -36,9 +38,9 @@ Build reports track the quality of software under development. By defining tests
 <td>
 <b>Build and test activities</b> 
 <ol>
-<li>[Configure a build system](../../build-release/concepts/agents/agents.md)</li>
-<li>[Get started with CI/CD](../../build-release/actions/ci-cd-part-1.md)</li>
-<li>[Run tests in your build process](../../build-release/test/getting-started-with-continuous-testing.md)</li>
+<li>[Configure a build system](../../pipelines/agents/agents.md)</li>
+<li>[Get started with CI/CD](../../pipelines/get-started-designer.md)</li>
+<li>[Run tests in your build process](../../pipelines/test/getting-started-with-continuous-testing.md)</li>
 <li>(Optional) [Rate completed builds](https://msdn.microsoft.com/library/ms181734.aspx) to populate the Build Quality dimension.</li>
 </ol>
 </td>
@@ -73,7 +75,7 @@ Project management reports provide insight into how much work the team is tackli
                 <li>Create requirements and specify the <b>Size</b> (CMMI).</li>
             </ul>
         </li>
-        <li>[Work in sprints](../../work/scrum/sprint-planning.md). Assign backlog items to sprints, create tasks and link them to parent backlog items, and assign to a team member.</li>
+        <li>[Work in sprints](../../work/scrum/assign-work-sprint.md). Assign backlog items to sprints, create tasks and link them to parent backlog items, and assign to a team member.</li>
         <li>
             [Update Remaining Work for tasks](../../work/scrum/task-board.md). For Agile and CMMI team projects, update <b>Completed Work</b> as well.
             <br />
@@ -120,7 +122,7 @@ Test planning reports support monitoring the test progress and coverage of backl
 <b>Test planning and bug tracking activities</b>
 <ol>
 <li>Define test plans and test cases, and update their <b>State</b> as work progresses.</li>
-<li>[Mark the results of each validation step in manual tests](../../manual-test/getting-started/run-manual-tests.md) as either passed or failed.</li>
+<li>[Mark the results of each validation step in manual tests](../../test/run-manual-tests.md) as either passed or failed.</li>
 <li><b>Create bugs</b>, specify the <b>Priority</b> and <b>Severity</b>, assign to a team member, and update the <b>State</b>.</li>
 <li>(Optional) Assign test cases and bugs to areas and iterations to filter reports.</li>
 </ol>

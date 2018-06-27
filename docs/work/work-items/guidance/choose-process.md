@@ -2,8 +2,8 @@
 title: Choose a process
 titleSuffix: VSTS & TFS
 description: Choose a process or process template, work with team project artifacts in Visual Studio Team Services & Team Foundation Server 
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 702EE9E5-7AEA-49B6-9DB0-B12A882979C8
 ms.topic: conceptual
 ms.manager: douge
@@ -17,7 +17,7 @@ ms.date: 03/02/2017
 
 Anytime you create a team project, you must choose a process or process template based on the process model you use. 
 - A **process** defines the building blocks of the work item tracking system and supports the Inheritance process model for VSTS. This model supports customization of team projects through a WYSIWYG user interface. 
-- A **process template** defines the building blocks of the work item tracking system as well as other sub-systems you access through VSTS or an on-premises Team Foundation Server (TFS). It supports Hosted XML and On-premises XMl process models which support customization of team projects through the modification and import of XML definition files. 
+- A **process template** defines the building blocks of the work item tracking system as well as other sub-systems you access through VSTS or an on-premises Team Foundation Server (TFS). It supports Hosted XML and On-premises XML process models which support customization of team projects through the modification and import of XML definition files. 
 
 To learn more about process models, see [Customize your work tracking experience](../../customize/customize-work.md). 
 
@@ -96,7 +96,7 @@ Choose the process that provides the best fit for your team.
 </table>
 
 If you need more than three backlog levels, you can add more based on the process model you use: 
-- **Inheritance**: [Customize your backlogs or boards for a process](../../customize/process/customize-process-backlogs-boards.md)  
+- **Inheritance**: [Customize your backlogs or boards for a process](../../../organizations/settings/work/customize-process-backlogs-boards.md)  
 - **Hosted XML or On-premises XML**: [Add portfolio backlogs](../../customize/add-portfolio-backlogs.md).  
 	
 <a id="main-distinctions"></a>
@@ -284,7 +284,7 @@ used by the three default processes.
 2.  With portfolio backlogs you can define a hierarchy of backlogs to understand the scope of work across several teams and see how that work rolls up into broader initiatives.
     Each team can configure which [portfolio backlogs appear for their use](../../customize/select-backlog-navigation-levels.md).
 
-3.  You can define tasks from the [sprint backlog and task board](../../scrum/sprint-planning.md). 
+3.  You can define tasks from the [sprint backlog and task board](../../scrum/assign-work-sprint.md). 
     With capacity planning, teams can quickly determine if they are over or under capacity for a sprint.  
  
 

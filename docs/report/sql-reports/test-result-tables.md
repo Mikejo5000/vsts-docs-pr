@@ -1,11 +1,13 @@
 ---
-title: Test Result tables | TFS
+title: Test Result tables
+titleSuffix: TFS 
+ms.prod: devops
+ms.technology: devops-analytics
+ms.topic: reference
 description: Query for data about test results 
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting 
 ms.assetid: 0fa44e3e-3033-49e7-a796-eb4fbd12d984
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 10/17/17
 ---
 
@@ -46,6 +48,6 @@ You can query for data about test results by using the FactTestResult table and 
 ## Related notes 
 -  [Test results](perspective-test-analyze-report-test-results.md)   
 -  [Test Management Reports](../excel/test-management-reports.md)   
--  [Testing overview](../../manual-test/index.md)   
+-  [Testing overview](../../test/index.md)   
 -  [Work Item Test Result tables](work-item-test-result-tables.md)   
 -  [Table reference for the relational warehouse database](table-reference-relational-warehouse-database.md)

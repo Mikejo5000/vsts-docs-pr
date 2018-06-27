@@ -2,10 +2,12 @@
 title: Dates in Git | VSTS & TFS
 description: How dates work in Git
 ms.assetid: c5e233e2-cc84-4ca6-8ca3-8eb6d686533a
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git 
+ms.prod: devops
+ms.technology: devops-code-git 
 ms.manager: douge
-ms.author: robrodbe
+ms.author: sdanie
+author: steved0x
+ms.topic: conceptual
 ms.date: 03/14/2018
 monikerRange: '>= tfs-2013'
 ---
@@ -30,11 +32,11 @@ Let's look at a brief example to see these concepts in practice. First we will c
     git add *
     git commit -m "A normal commit message"
 
-Now let's ammend our commit with a different message:
+Now let's amend our commit with a different message:
 
     echo again > file.txt
     git add *
-    git commit --amend -m "An ammended commit"
+    git commit --amend -m "An amended commit"
     
 If we look at our regular log history we would see something like the following:
 

@@ -1,11 +1,11 @@
 ---
 title: Support bug update status using My Work | VSTS & TFS
 description: Update the ProcessConfiguration bug category states to support code review requests working from Visual Studio   
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 355d8fb4-d8fa-49ad-b1a2-7baaec3556cc
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 01/20/2017
 ---
 # Support bug update status using My Work  
@@ -20,7 +20,7 @@ With My Work in Team Explorer you can conduct and respond to code reviews. If yo
   
 -   To access **My Work**, you must use Team Foundation Version Control (TFVC) for your source control.   
   
--   To run the **witadmin** command-line tool, you must be a member of the **Team Foundation Administrators** group or a member of the **Project Administrators** group for the team project. For more information, see [Add an administrator](../../../security/set-project-collection-level-permissions.md).  
+-   To run the **witadmin** command-line tool, you must be a member of the **Team Foundation Administrators** group or a member of the **Project Administrators** group for the team project. For more information, see [Add an administrator](../../../organizations/security/set-project-collection-level-permissions.md).  
   
 <a name="default"></a> 
 ##Default metastate assignments made to workflow states for bugs  

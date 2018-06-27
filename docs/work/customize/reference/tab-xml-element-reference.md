@@ -1,11 +1,11 @@
 ---
 title: Tab XML element reference | VSTS & TFS
 description: Uses to cluster a group of fields or to support one or more special controls.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: fe932d65-20d4-46ab-aca0-f4a8423929b4
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 02/14/2017
 ---
 
@@ -15,7 +15,7 @@ ms.date: 02/14/2017
 **TFS 2015 | TFS 2013**
 
 > [!IMPORTANT]  
->This topic applies to team project customization for the On-premises XML process model and the old work item form. For the Hosted XML process model and TFS 2017 and later versions that use the new work item form, see [WebLayout and Control elements](weblayout-xml-elements.md). For the Inheritance process model, see [Customize a process](../process/customize-process.md).
+>This topic applies to team project customization for the On-premises XML process model and the old work item form. For the Hosted XML process model and TFS 2017 and later versions that use the new work item form, see [WebLayout and Control elements](weblayout-xml-elements.md). For the Inheritance process model, see [Customize a process](../../../organizations/settings/work/customize-process.md).
 >
 >For an overview of process models, see [Customize your work tracking experience](../customize-work.md).    
 

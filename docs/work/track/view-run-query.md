@@ -1,14 +1,15 @@
 ---
 title: View or run a query 
 titleSuffix: VSTS & TFS
-description: View, run, or favorite a query using Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-wit
+description: View, run, or favorite a query in Visual Studio Team Services & Team Foundation Server
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid:  
-ms.topic: get-started-article
-monikerRange: 'vsts || >= tfs-2018'
+monikerRange: '>= tfs-2018'
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
+ms.topic: quickstart
 ms.date: 03/20/2018  
 ---
 
@@ -26,15 +27,6 @@ To find work items assigned to you or your team, run a query. A number of work i
 
 By default, all contributors and stakeholders can view and run all shared queries. You can change the permissions set for a shared query folder or shared query. For details, see [Set query permissions](set-query-permissions.md).  
 
-<!---
-Use this topic to learn: 
-> [!div class="checklist"]   
-> * About the differences between the old and new queries experience
-> * How to view all or favorited queries  
-> * How to filter a query list       
-> * How to run a query 
--->
-
 [!INCLUDE [temp](../_shared/prerequisites.md)]
 
 ## Open the Queries page from the web portal
@@ -47,12 +39,12 @@ Use this topic to learn:
  
 	<img src="_img/view-run-queries/try-new-queries-experience.png" alt="Web portal, choose Work hub, Queries" style="border: 1px solid #C3C3C3;" /> 
 
-	Otherwise, you can enable it from the [Preview features menu](../../collaborate/preview-features.md). 
+	Otherwise, you can enable it from the [Preview features menu](../../project/navigation/preview-features.md). 
  
 	If it is your first time opening the hub, the page opens to **Favorites** which lists all queries you have favorited. Otherwise, you can click **All** to view all queries you've defined and shared queries defined for the team project.  
 
 	> [!TIP]    
-	> Queries you or your team have favorited show up on the **Favorites** page. Queries you have favorited along with other objects also appear on your Account hub page. To learn more, see [Set personal or team favorites](../../collaborate/set-favorites.md). 
+	> Queries you or your team have favorited show up on the **Favorites** page. Queries you have favorited along with other objects also appear on your Account hub page. To learn more, see [Set personal or team favorites](../../project/navigation/set-favorites.md). 
 
 ## Run a query 
 
@@ -61,7 +53,7 @@ Use this topic to learn:
 	<img src="_img/view-run-queries/queries-all.png" alt="Web portal, choose Work hub, Queries, All page" style="border: 1px solid #C3C3C3;" />  
 	 
 	To view all work items assigned to you, click **Assigned to me**. This query uses the **@Me**  macro to list all work items assigned to you.  
-	To view all work items you are following, click **Followed work items**. This query uses the **@Follows**  macro (ID in @Follows) to list all work items you've elected to follow. To learn more, see [Follow a work item or pull request](../../collaborate/follow-work-items.md).   
+	To view all work items you are following, click **Followed work items**. This query uses the **@Follows**  macro (ID in @Follows) to list all work items you've elected to follow. To learn more, see [Follow a work item or pull request](../work-items/follow-work-items.md).   
 
 0. To run any query, simply click the title of the query.
 
@@ -85,9 +77,9 @@ For shared queries, you can also choose to perform one of these tasks:
 You can perform most tasks for viewing and running queries from each of the queries list pages as indicated in the following table. Only queries you save under **My Queries** and have favorited show up under **My Favorites**. Only queries saved under **Shared Queries** can be favorited by a team. 
   
 
-> [!div class="mx-tdBreakAll"]  
-> |Task  |Favorites  |All  |  
-> |-------------|----------|---------|  
+> [!div class="mx-tdBreakAll"]
+> |TaskÂ |Favorites |All | 
+> |-------------|----------|---------| 
 > |View all favorited queries, yours or a team you belong to | ![Checkmark](../_img/icons/checkmark.png) |  | 
 > |View all your queries or shared queries for the current team project |  | ![Checkmark](../_img/icons/checkmark.png) | 
 > |Run a query, open the context menu for a query  |![Checkmark](../_img/icons/checkmark.png) |![Checkmark](../_img/icons/checkmark.png) |
@@ -132,8 +124,8 @@ Choose **Copy query URL**. To email query items, see [Copy a list of work items]
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
-> [!NOTE]  
-> With **Email query**, the system will email the formatted list to those team mates you select. To email a formatted list to people not part of the team project, you'll need to use the **Copy as HTML** option described in [Copy a list of work items](../backlogs/copy-clone-work-items.md#html). For on-premises TFS, all email actions require an [SMTP server to be configured](../../tfs-server/admin/setup-customize-alerts.md). If you don't have an SMTP server configured, you can work around this by using **Copy as HTML**. 
+> [!NOTE]
+> With **Email query**, the system will email the formatted list to those team mates you select. To email a formatted list to people not part of the team project, you'll need to use the **Copy as HTML** option described in [Copy a list of work items](../backlogs/copy-clone-work-items.md#html). For on-premises TFS, all email actions require an [SMTP server to be configured](/tfs/server/admin/setup-customize-alerts). If you don't have an SMTP server configured, you can work around this by using **Copy as HTML**. 
 ::: moniker-end
 
 ## Try this next
@@ -145,5 +137,5 @@ Choose **Copy query URL**. To email query items, see [Copy a list of work items]
 
 - [Change column options](../backlogs/set-column-options.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json)
 - [New Queries Experience](queries-preview.md) 
-- [Set personal or team favorites](../../collaborate/set-favorites.md) 
+- [Set personal or team favorites](../../project/navigation/set-favorites.md) 
 - [Query keyboard shortcuts](queries-keyboard-shortcuts.md)

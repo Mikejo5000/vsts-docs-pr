@@ -2,10 +2,12 @@
 title: Authenticate with your Git repos | VSTS & TFS
 description: Choose between HTTPS, SSH, personal access tokens, and alternate credentials to securely login to your VSTS/TFS Git repos.
 ms.assetid: 138f12d0-e3fd-4fde-a727-1b39d45c05c4
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git
+ms.prod: devops
+ms.technology: devops-code-git
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: conceptual
 ms.date: 03/14/2018
 monikerRange: '>= tfs-2015'
 ---
@@ -37,7 +39,7 @@ Use personal access tokens to authenticate if you don't already have SSH keys se
 
 ![Animated GIF showing creation of PAT in VSTS](_img/pat_creation.gif)
 
-[Learn more about personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md)
+[Learn more about personal access tokens](../organizations/accounts/use-personal-access-tokens-to-authenticate.md)
 
 ### Use credential managers to generate tokens
 

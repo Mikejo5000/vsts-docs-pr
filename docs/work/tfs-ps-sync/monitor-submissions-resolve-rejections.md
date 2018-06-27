@@ -1,11 +1,13 @@
 ---
-title: Monitor work item submissions and resolve rejections | TFS
-description: Resolve blocks and rejections by monitoring the status of work items  submitted to Project Server for participation in data synchronization with Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Monitor work item submissions and resolve rejections
+titleSuffix: TFS
+description: Monitor the status of work items submitted to Project Server for participation in data synchronization with Team Foundation Server 
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 13d38542-a0e8-411b-80ac-e8bb2b5c5f61
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
 ms.date: 01/12/2017
 ---
 
@@ -19,7 +21,7 @@ ms.date: 01/12/2017
   
  **Required Permissions**  
   
- To perform these procedures, you must be a member of the **Readers** group or your **View work items in this node** permission must be set to **Allow**. For more information, see [Set permissions and access for work tracking](../../security/set-permissions-access-work-tracking.md#set-permissions-area-path).  
+ To perform these procedures, you must be a member of the **Readers** group or your **View work items in this node** permission must be set to **Allow**. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md#set-permissions-area-path).  
   
 ##  <a name="FindBlockedWIs"></a> Find and Resolve Work Items That Are Blocked from Being Submitted to Project Server  
  To find work items that were previously submitted to Project Server but are now blocked, you can create the following query. This query finds all work items for which the **Project Server Last Submit Status** field is set to **Failure**. You can filter the list by **Area** or **Iteration**.  

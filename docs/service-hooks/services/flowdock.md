@@ -1,11 +1,14 @@
 ---
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-collab
+ms.topic: conceptual
 title: Flowdock with VSTS
 description: Use Flowdock with your VSTS account
 ms.assetid: 191c21d1-17d7-4d33-9a5f-231bc70edd0f
 ms.manager: douge
+monikerRange: '>= tfs-2017'
 ms.author: elbatk
+author: elbatk
 ms.date: 08/04/2016
 ---
 
@@ -77,7 +80,7 @@ for pricing related to their services.
 
 ####Q: Can I programmatically create subscriptions?
 
-A: Yes, see details [here](http://www.visualstudio.com/integrate/get-started/service-hooks/create-subscription.md).
+A: Yes, see details [here](../create-subscription.md).
 
 ####Q: Where can I get more information about Flowdock?
 

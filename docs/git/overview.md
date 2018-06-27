@@ -2,11 +2,13 @@
 title: Git documentation home | VSTS & TFS 
 description: Overview of Git version control in VSTS and Team Foundation Server
 ms.assetid: 9e1079da-49a2-4035-addb-238a8023c9b1
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git 
+ms.prod: devops
+ms.technology: devops-code-git 
 ms.manager: douge
 ms.author: sdanie
-ms.date: 03/14/2018
+author: steved0x
+ms.topic: overview
+ms.date: 04/19/2018
 layout: LandingPage
 monikerRange: '>= tfs-2015'
 ---
@@ -17,7 +19,7 @@ monikerRange: '>= tfs-2015'
 
 Host and manage your code in Git version control with VSTS and Team Foundation Server. Use version control to save your work and coordinate code changes across your team. Even if you're just a single developer, version control helps you stay organized as you fix bugs and develop new features. Version control keeps a history of your development so that you can review and even rollback to any version of your code with ease.
 
-New to Git? [Learn more](https://www.visualstudio.com/learn-git) about how Git and VSTS can help your team ship great code, and learn [how we use Git at Microsoft](https://www.visualstudio.com/learn/use-git-microsoft/).
+New to Git? [Learn more](/azure/devops/git/learn-git-with-team-services) about how Git and VSTS can help your team ship great code, and learn [how we use Git at Microsoft](/azure/devops/devops-at-microsoft/use-git-microsoft).
 
 ## Get started
 
@@ -28,7 +30,7 @@ New to Git? [Learn more](https://www.visualstudio.com/learn-git) about how Git a
 <div class="col-sm-6 col-md-6">
 
 <p>Connect your favorite development environment to VSTS to access your repos and manage your work.
-VSTS IDE integrations are available for [Visual Studio](../accounts/set-up-vs.md), 
+VSTS IDE integrations are available for [Visual Studio](../organizations/accounts/set-up-vs.md), 
 [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vsts.team), [Eclipse](/vsts/java/download-eclipse-plug-in), 
 and [IntelliJ](/vsts/java/download-intellij-plug-in).</p>
 
@@ -93,9 +95,9 @@ Every task is presented step-by-step in Visual Studio or from the command line.<
 
 <ul>
 <li>[Create](create-new-repo.md), [delete](delete-existing-repo.md), and [rename](repo-rename.md) repos.</li>
-<li>Set [repo permissions](../security/permissions.md) and [branch permissions](branch-permissions.md)</li>
+<li>Set [repo permissions](../organizations/security/permissions.md) and [branch permissions](branch-permissions.md)</li>
 <li>[Set up branch policies](branch-policies.md) to protect key branches</li>
-<li>[Set up continuous integration](../build-release/concepts/definitions/build/triggers.md#continuous-integration-ci) to catch bugs sooner.</li>
+<li>[Set up continuous integration](../pipelines/build/triggers.md#continuous-integration-ci) to catch bugs sooner.</li>
 </ul>
 
 </div>

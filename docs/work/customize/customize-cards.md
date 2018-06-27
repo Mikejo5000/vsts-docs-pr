@@ -1,14 +1,17 @@
 ---
-title: Customize cards on the Kanban board
+title: Customize cards on a board
 titleSuffix: VSTS & TFS
-ms.custom: Customize cards
-description: Customize cards on the Kanban and Sprint/Scrum/Task boards for Agile planning tools in Visual Studio Team Services or Team Foundation Server 
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+description: Customize cards on the Kanban or Sprint/Scrum/Task boards in Visual Studio Team Services & Team Foundation Server 
+ms.global_help.title: Customize cards
+ms.global_help.keywords: ms.vss-work-web.boards-hub, 6    
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 951A73EA-7411-4A2A-B3F0-ACBBC7EFC68F
 ms.manager: douge
 ms.author: kaelli
-monikerRange: 'vsts || >= tfs-2013 <= tfs-2018'
+author: KathrynEE
+ms.topic: conceptual
+monikerRange: '>= tfs-2013'
 ms.date: 03/20/2018
 ---
 
@@ -22,7 +25,7 @@ ms.date: 03/20/2018
 > Reordering cards requires TFS 2015 or later version.  
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 While many work tracking views show up as lists&mdash;such as your backlogs and queries&mdash;board views display cards. Information rich cards not only provide at-a-glance info of interest to you and your team, they also provide a way for you to update a field without opening the work item. And, with style rules, you can highlight those work items with select colors based on the criteria you set.  
 
 Each card corresponds to a work item which you use to share information, track status, and assign work. 
@@ -54,7 +57,7 @@ In the card shown below, the following customizations have been set for the bug 
 
 You can either increase or simplify the information that displays on your cards. It all depends on what's of interest to your team. Does your team like to refer to work items by their ID? Do they want to see estimates? Do they want to highlight work items according to set criteria? Or, will just the bare bones of title and assignment suffice? 
 
-Your best bet is to show fields on cards based on what your team frequently refers to or updates when using the Kanban and task boards. Also, add fields with information that you can use to filter the board. If you're new to working with these tools, see [Kanban basics](../../Work/kanban/kanban-basics.md) and [Sprint planning](../scrum/sprint-planning.md). 
+Your best bet is to show fields on cards based on what your team frequently refers to or updates when using the Kanban and task boards. Also, add fields with information that you can use to filter the board. If you're new to working with these tools, see [Kanban basics](../../Work/kanban/kanban-basics.md) and [Sprint planning](../scrum/assign-work-sprint.md). 
 
 
 <a id="fields"></a>
@@ -90,7 +93,7 @@ This feature requires TFS 2015.1 or later versions.
 ### Example styling rules 
 What rules should you apply to highlight work items? Here are a few examples and their associated criteria . 
 
-> [!div class="mx-tdCol2BreakAll"]  
+> [!div class="mx-tdCol2BreakAll"]
 > | Work items | Criteria |
 > |------------|------------|
 > | High priority items | ```Priority = 1``` |

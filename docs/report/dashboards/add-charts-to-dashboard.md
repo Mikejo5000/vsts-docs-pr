@@ -1,13 +1,14 @@
 ---
 title: Add built-in charts to a team dashboard
 titleSuffix: VSTS & TFS
-description: Add system-generated charts or query-based charts to a team dashboard  
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-reporting
-ms.assetid: 
+description: Add system-generated charts or query-based charts to a team dashboard in Visual Studio Team Services & Team Foundation Server
+ms.prod: devops
+ms.technology: devops-analytics
+ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelli
-monikerRange: 'vsts || >= tfs-2013'
+author: KathrynEE
+monikerRange: '>= tfs-2013'
 ms.date: 03/20/2018
 ---
 
@@ -17,7 +18,7 @@ ms.date: 03/20/2018
 
 ::: moniker range="tfs-2013"
 > [!NOTE]   
-> Adding charts to a dashboard is not a supported feature in TFS 2013, instead, you can [pin items to a team homepage](team-dashboard.md).  Consider [upgrading to the latest TFS version](https://www.visualstudio.com/downloads/) to get access to the widget catalog and [multiple team dashboards](dashboards.md).  
+> Adding charts to a dashboard is not a supported feature in TFS 2013, instead, you can [pin items to a team homepage](team-dashboard.md).  Consider [upgrading to the latest TFS version](https://visualstudio.microsoft.com/downloads/) to get access to the widget catalog and [multiple team dashboards](dashboards.md).  
 ::: moniker-end
 
 
@@ -29,7 +30,7 @@ You can add the charts described in this topic to a dashboard from their corresp
 
 ::: moniker range="tfs-2015"
 > [!NOTE]   
-> Adding charts to a dashboard is requires TFS 2015.1 or later version. For TFS 2015, you can [pin items to a team homepage](team-dashboard.md).  Consider [upgrading to the latest TFS version](https://www.visualstudio.com/downloads/) to get access to the widget catalog and [multiple team dashboards](dashboards.md).
+> Adding charts to a dashboard is requires TFS 2015.1 or later version. For TFS 2015, you can [pin items to a team homepage](team-dashboard.md).  Consider [upgrading to the latest TFS version](https://visualstudio.microsoft.com/downloads/) to get access to the widget catalog and [multiple team dashboards](dashboards.md).
 ::: moniker-end
 
 ::: moniker range="vsts || >= tfs-2015"
@@ -50,7 +51,7 @@ Each time a build is run, it logs information about the build, including the run
 >[!NOTE]  
 >You can also add this chart to a team dashboard from the [widget catalog](widget-catalog.md#build-history-widget).  
 
-1. Select your [team context](../../settings/switch-team-context.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json) and then open the Build hub to add a build history chart to a team dashboard. (Requires TFS 2015.1 or later version).  
+1. Select your [team context](../../organizations/settings/switch-team-context.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json) and then open the Build hub to add a build history chart to a team dashboard. (Requires TFS 2015.1 or later version).  
 
 	![Add a build summary chart to a dashboard](_img/add-chart-build-summary.png)  
 
@@ -75,7 +76,7 @@ Each time a release is deployed, it logs information about the release to each o
 >[!NOTE]  
 >You can also add this chart to a team dashboard from the [widget catalog](widget-catalog.md#release-definition-widget).  
 
-1. Select your [team context](../../settings/switch-team-context.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json) and then open the Release hub to add a release definition chart to a team dashboard.   
+1. Select your [team context](../../organizations/settings/switch-team-context.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json) and then open the Release hub to add a release definition chart to a team dashboard.   
 
 	![Add a Release definition chart to a dashboard](_img/add-cd-release-definition.png)  
 
@@ -92,12 +93,12 @@ Each time a release is deployed, it logs information about the release to each o
 <a id="test-result">  </a>  
 ## Add a test status or result chart  
 
-As you create and run tests, you can track your status by defining [lightweight charts of test plans and test results](../../manual-test/getting-started/track-test-status.md).  
+As you create and run tests, you can track your status by defining [lightweight charts of test plans and test results](../../test/track-test-status.md).  
 
 >[!NOTE]  
 >You can also add a [Chart for test plans widget](widget-catalog.md#chart-test-plan-widget) to a dashboard. 
 
-1. Select your [team context](../../settings/switch-team-context.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json), make sure you're a [team admin](../../work/scale/add-team-administrator.md), and if you haven't yet created the dashboard, [do that now](dashboards.md).  
+1. Select your [team context](../../organizations/settings/switch-team-context.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json), make sure you're a [team admin](../../work/scale/add-team-administrator.md), and if you haven't yet created the dashboard, [do that now](dashboards.md).  
 
 2. Open the Test hub charts page and select the dashboard to add the test chart to.  
 
@@ -110,7 +111,7 @@ As you create and run tests, you can track your status by defining [lightweight 
 <a id="test-quality"></a>  
 ## Add a test quality trend chart   
 
-You can add trends to the dashboard of the failures and duration of those [tests that were run as part of a build](../../build-release/test/getting-started-with-continuous-testing.md).
+You can add trends to the dashboard of the failures and duration of those [tests that were run as part of a build](../../pipelines/test/getting-started-with-continuous-testing.md).
 ::: moniker-end
 ::: moniker range="vsts || >= tfs-2017"
 >[!NOTE]  
@@ -121,7 +122,7 @@ You can add trends to the dashboard of the failures and duration of those [tests
 Requires TFS 2017.2 or later version. 
 ::: moniker-end
 ::: moniker range="vsts || >= tfs-2017"
-1. Select your [team context](../../settings/switch-team-context.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json), make sure you're a [team admin](../../work/scale/add-team-administrator.md), and if you haven't yet created the dashboard, [do that now](dashboards.md).  
+1. Select your [team context](../../organizations/settings/switch-team-context.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json), make sure you're a [team admin](../../work/scale/add-team-administrator.md), and if you haven't yet created the dashboard, [do that now](dashboards.md).  
 
 2. Open a build summary for a build definition to which you've added tests, open the Tests page, and click the bar chart for either Test failures or Test duration.    
 
@@ -131,7 +132,7 @@ Requires TFS 2017.2 or later version.
 
 	![Open Actions menu and select dashboard](_img/add-chart-test-failures.png)  
 
-	Learn more about [reviewing automated test results after a build](../../build-release/test/review-continuous-test-results-after-build.md).  
+	Learn more about [reviewing automated test results after a build](../../pipelines/test/review-continuous-test-results-after-build.md).  
 
 ::: moniker-end
 
@@ -143,9 +144,9 @@ Requires TFS 2017.2 or later version.
 You add work item queries and charts to a dashboard from the Queries page. Queries and charts must be associated with queries under the Shared queries folder.  
 
 >[!NOTE]  
-><b>You can also add a [work item query chart widget](widget-catalog.md#build-history-widget) to a team dashboard.  
+><b>You can also add a [work item query chart widget](widget-catalog.md#build-history-widget) to a team dashboard.  
 
-1. First, make sure you have selected your team context. Only those dashboards created for a team appear in the context menu for each query or chart. [Switch team context](../../settings/switch-team-context.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json) as needed.  
+1. First, make sure you have selected your team context. Only those dashboards created for a team appear in the context menu for each query or chart. [Switch team context](../../organizations/settings/switch-team-context.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json) as needed.  
 
 2. If you aren't a team administrator, [get added as one](../../work/scale/add-team-administrator.md). Only team and project admins can add and customize team dashboards.  
 
@@ -174,7 +175,7 @@ Click **Add to dashboard**, and then choose the team dashboard to add the markdo
 Requires TFS 2015.2 or later version. 
 ::: moniker-end
 ::: moniker range="vsts || > tfs-2015"
-<img src="../../collaborate/_img/markdown-guidance/markdown-add-file-to-dashboard.png" alt="Web portal, Code hub, README file, Add Markdown page to a dashboard" style="border: 2px solid #C3C3C3;" />
+<img src="../../project/wiki/_img/markdown-guidance/markdown-add-file-to-dashboard.png" alt="Web portal, Code hub, README file, Add Markdown page to a dashboard" style="border: 2px solid #C3C3C3;" />
 
 ::: moniker-end
 

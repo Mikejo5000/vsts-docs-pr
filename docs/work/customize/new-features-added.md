@@ -1,11 +1,14 @@
 ---
-title: New features enabled with upgrade | TFS
-description: Features that you can enable through the Configure Features Wizard after you've upgraded the application tier server for Team Foundation Server (TFS) 
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+title: New features enabled with upgrade
+titleSuffix: TFS
+description: Features that you can enable through the Configure Features Wizard after you've upgraded the application tier server for Team Foundation Server  
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 1A7B7A18-457F-4AFF-9151-FCF13B850907  
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
+monikerRange: '>= tfs-2013 <= tfs-2018'
 ms.date: 04/05/2017
 ---
 
@@ -78,7 +81,7 @@ TFS 2012
 Feedback
 </td>
 <td>
-Adds the Feedback Request and Feedback Response WITs and categories to the team project. These items support [feedback requests and responses](../../feedback/get-feedback.md). <br/>
+Adds the Feedback Request and Feedback Response WITs and categories to the team project. These items support [feedback requests and responses](../../project/feedback/get-feedback.md). <br/>
 To manually add them to a team project, see [Add features manually](add-features-manually.md). 
 </td>
 <td>
@@ -91,7 +94,7 @@ TFS 2012
 Planning Tools
 </td>
 <td>
-Adds or updates process configuration that supports using the Agile tools: [product backlog](../backlogs/create-your-backlog.md), [plan sprints](../scrum/sprint-planning.md), [Kanban board](../kanban/kanban-basics.md), and [more](../scrum/define-sprints.md).<br/>
+Adds or updates process configuration that supports using the Agile tools: [product backlog](../backlogs/create-your-backlog.md), [plan sprints](../scrum/assign-work-sprint.md), [Kanban board](../kanban/kanban-basics.md), and [more](../scrum/define-sprints.md).<br/>
 
 Agile tools depend on the WITs, categories, and process configuration definitions that are made.  Definitions are interdependent. <br/>
 
@@ -139,7 +142,7 @@ TFS 2013, TFS 2015
 Shared Parameters
 </td>
 <td>
-Adds the Shared Parameter WIT and category to the team project. You use Shared Parameter work items to [run tests with different data](../../manual-test/repeat-test-with-different-data.md).<br/> 
+Adds the Shared Parameter WIT and category to the team project. You use Shared Parameter work items to [run tests with different data](../../test/repeat-test-with-different-data.md).<br/> 
 To manually add them to a team project, see [Add features manually](add-features-manually.md). 
 </td>
 <td>
@@ -153,7 +156,7 @@ TFS 2013.2
 Test Plan and Test Suite
 </td>
 <td>
-Adds the Test Plan and Test Suite WITs and categories to the team project. These items support managing and customizing test plans and test suites similar to other WITs. See also [Create a test plan](../../manual-test/getting-started/create-a-test-plan.md). <br/>
+Adds the Test Plan and Test Suite WITs and categories to the team project. These items support managing and customizing test plans and test suites similar to other WITs. See also [Create a test plan](../../test/create-a-test-plan.md). <br/>
 To learn more about how this feature gets enabled, see [Test Plan and Test Suite features](#test-management).   
 </td>
 <td>
@@ -200,5 +203,5 @@ The Test Plan and Test Suite WITs are added when you run the TFS Upgrade Wizard.
     </li>
   </ul>
   <p>The server upgrade automatically converts existing test plans and test suites to WITs and migrates test data and links. If it encounters a problem, a warning message appears in the server log. To learn more, see [Update a team project manually to support test management](reference/update-a-team-project-manually-to-support-test-management.md).</p>
-  <p>To learn about changes introduced to Test Manager and the web portal, see [Create a test plan](../../manual-test/getting-started/create-a-test-plan.md).</p>
+  <p>To learn about changes introduced to Test Manager and the web portal, see [Create a test plan](../../test/create-a-test-plan.md).</p>
 

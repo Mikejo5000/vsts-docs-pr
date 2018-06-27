@@ -1,13 +1,14 @@
 ---
-title: Manage documents and document libraries | TFS
-description: Create documents libraries and share to all team members by uploading them to the project portal for the team project - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
+title: Manage documents and document libraries 
+titleSuffix: TFS
+description: Create documents libraries and share to all team members by uploading them to the project portal for the team project - Team Foundation Server 
+ms.prod: devops
+ms.technology: devops-analytics
 ms.assetid: 405eea1b-d607-4cae-a98b-cca50c6ce41e
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 12/30/2016
-ms.topic: get-started-article
+ms.topic: conceptual
 ---
 
 # Manage documents and document libraries
@@ -32,7 +33,7 @@ You can share documents and files that you want to make available to all team me
   
 -   You must also have **Contribute** permissions set for the project portal in SharePoint Products.  
   
-     For more information, see [Add users to team projects](../../security/set-sharepoint-permissions.md).  
+     For more information, see [Add users to team projects](../../organizations/security/set-sharepoint-permissions.md).  
   
 ##  <a name="TE_Uploading"></a> Upload a document  
   

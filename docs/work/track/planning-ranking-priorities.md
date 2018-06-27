@@ -1,12 +1,13 @@
 ---
 title: Pick list queries
 titleSuffix: VSTS & TFS
-description: Creating queries based on planning, ranking, and priority, integer and pick list fields in Visual Studio Team Services & Team Foundation Server 
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+description: Create queries based on planning, ranking, and priority, integer and pick list fields in Visual Studio Team Services & Team Foundation Server 
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: ca05800c-905a-407f-bea8-a7ee32b65973
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: sample
 ms.date: 04/14/2017  
 ---
 
@@ -181,7 +182,7 @@ The Backlog Priority and Stack Rank fields don't appear on the work item forms. 
 
 To add the field to the form: 
 
-- **VSTS**: Add the Stack Rank field to a work item type ([for the custom process that your team project references](../customize/process/customize-process-form.md)).
+- **VSTS**: Add the Stack Rank field to a work item type ([for the custom process that your team project references](../../organizations/settings/work/customize-process-form.md)).
 - **TFS**: [Modify the WIT XML definition to add the following control element](../customize/add-modify-wit.md):
 
 	`<Control FieldName="Microsoft.VSTS.Common.StackRank" Type="FieldControl" Label="Stack Rank" LabelPosition="Left" />`

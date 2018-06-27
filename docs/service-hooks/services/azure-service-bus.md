@@ -1,11 +1,14 @@
 ---
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-collab
+ms.topic: conceptual
 title: Azure Service Bus with VSTS
 description: Use Azure Service Bus with your VSTS account
 ms.assetid: bffe0cee-2c1c-4e7a-adbe-f6dc6a94f735
 ms.manager: douge
+monikerRange: '>= tfs-2017'
 ms.author: elbatk
+author: elbatk
 ms.date: 08/16/2016
 ---
 
@@ -33,7 +36,7 @@ for mobile platforms including Android, iOS, Windows Phone 8, and Windows Store.
 2. In the Microsoft Azure portal, in the navigation pane select **SERVICE BUS**
 and then create a new namespace. 
 
-   <img alt="Select or create a service bus" src="./_img/azure-service-bus/create-service-bus.jpg")>
+   <img alt="Select or create a service bus" src="./_img/azure-service-bus/create-service-bus.jpg" style="border: 1px solid #CCCCCC" />
 
 3. Enter a name for the namespace and choose a region.
 

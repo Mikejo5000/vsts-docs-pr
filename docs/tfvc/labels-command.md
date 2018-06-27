@@ -2,10 +2,12 @@
 title: Labels Command
 description: Labels Command
 ms.assetid: 7772bc3d-7c43-47d8-ba5c-eee89aeed3ce
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
@@ -19,7 +21,7 @@ Displays the list of labels in the server for Team Foundation version control.
 
 **Required Permissions**
 
-To use the **labels** command, you must have the **Read** permission set to **Allow** for all files or folders to which the specified label is attached. If you have permission to some, but not all the files referenced in the label, partial results are displayed. For more information, see [Permissions and groups reference](../security/permissions.md).
+To use the **labels** command, you must have the **Read** permission set to **Allow** for all files or folders to which the specified label is attached. If you have permission to some, but not all the files referenced in the label, partial results are displayed. For more information, see [Permissions and groups reference](../organizations/security/permissions.md).
 
     tf labels [/owner:ownername] [/format:(brief|detailed)] 
     [/collection:TeamProjectCollectionUrl] [labelname] [/login:username,[password]]

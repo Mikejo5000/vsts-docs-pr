@@ -1,18 +1,21 @@
 ---
 title: Client authentication options
 titleSuffix: VSTS   
-description: Client authentication options to use when connecting to the Analytics Service for VSTS using Power BI or Excel
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-reporting
+description: Enter or change authentication credentials when you connect to the Analytics Service from Power BI or Excel
+ms.prod: devops
+ms.technology: devops-analytics
 ms.assetid: 91C6424B-3C3D-4773-B252-C627A5CE7C6D 
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
+ms.topic: conceptual
+monikerRange: 'vsts'
 ms.date: 11/13/2017
 ---
 
-# Client authentication options 
+# Enter client credentials in Power BI or Excel when connecting to the Analytics Service 
 
-**VSTS**  
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
 In general, the order of authentication options should be the following (in order from most secure to least secure): Azure Active Directory (**AAD**) then Personal Access Tokens (**PAT**s).
 
@@ -20,7 +23,7 @@ In general, the order of authentication options should be the following (in orde
 
 ## Azure Active Directory (AAD) 
 
-"Azure Active Directory" is also known as "Organizational Credential" in Power BI Desktop. You can use it in  [PowerBI.com](https://powerbi.microsoft.com) through ‚ÄúOAuth2‚Äù selection when configuring data refresh.
+"Azure Active Directory" is also known as "Organizational Credential" in Power BI Desktop. You can use it in  [PowerBI.com](https://powerbi.microsoft.com) through ÄúOAuth2Äù selection when configuring data refresh.
 
 When connecting with Power BI Desktop you will be prompted to enter your credentials for the data source. Click Organizational account as shown here:
 
@@ -129,9 +132,9 @@ If you receive an access denied message, you may need to change your authenticat
 
 6. Edit the credentials as noted above, click **Save**, then **Done**, then **Close**.
 
-## Related notes
+## Related articles
  
-- [Authenticate your identity with personal access tokens](../../accounts/use-personal-access-tokens-to-authenticate.md)  
+- [Authenticate your identity with personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md)  
 - [Access data through Excel](access-analytics-excel.md)  
 - [Access data through Power BI desktop](../powerbi/access-analytics-power-bi.md)  
 - [Publish a Power BI Desktop file to PowerBI.com](../powerbi/publish-power-bi-desktop-to-power-bi.md)  

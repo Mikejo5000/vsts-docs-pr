@@ -1,20 +1,24 @@
 ---
-title: Operational differences in managing projects using TFS and Project | TFS
+title: Operational differences in managing projects
+titleSuffix: TFS 
 description: Understand how using the Team Foundation plug-in to Project differs from Project Server-TFS integration  
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 786a9a22-0e34-4a70-b589-ae2def789e06
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
+ms.topic: conceptual
 ms.date: 01/12/2017
 ---
+
 # Operational differences in managing projects using TFS and Project
 
 [!INCLUDE [temp](../_shared/tfs-ps-sync-header.md)]
 
 <a name="Top"></a> You can schedule projects by using the features that are available in Microsoft Project or Microsoft Project Professional, while maintaining the data and tracking work in Visual Studio Team Foundation Server (TFS). If you have Project Server deployed, you can best manage your enterprise project plans by installing Team Foundation Server Extensions for Project Server.  
   
- In this topic, you can learn about the benefits and operational differences of using the Team Foundation plug-in to Microsoft Project compared to integrating the two server products. For more information about Project Server, see [Microsoft Project](http://go.microsoft.com/fwlink/?LinkId=211790).  
+ In this topic, you can learn about the benefits and operational differences of using the Team Foundation plug-in to Microsoft Project compared to integrating the two server products. For more information about Project Server, see [Project Server Documentation](https://docs.microsoft.com/en-us/project/project-server-2013-and-2016).  
 
 <a name="Integration"></a>
 ## Benefits of integrating TFS with Project Server  

@@ -1,11 +1,13 @@
 ---
 title: Install a Maven artifact using Gradle and VSTS
 description: Install a Maven artifact using Gradle in a VSTS build
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-package
+ms.prod: devops
+ms.technology: devops-artifacts
 ms.manager: douge
-ms.author: douge
+ms.author: elbatk
+author: elbatk
 ms.reviewer: dastahel
+ms.topic: conceptual
 ms.date: 01/31/2018
 monikerRange: '>= tfs-2018'
 ---
@@ -42,7 +44,7 @@ You're ready to start! This tutorial will guide you through the process of insta
 
 First, you need a **gradle.properties** file that contains a VSTS credential token.
 
-Navigate to `https://{yourAccount}.visualstudio.com/_details/security/tokens`, where `{yourAccount}` is the name of your VSTS account.
+Navigate to `https://{yourAccount}.visualstudio.com/_details/organizations/security/tokens`, where `{yourAccount}` is the name of your VSTS account.
 
 Click **Add**.
 

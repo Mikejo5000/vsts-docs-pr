@@ -2,13 +2,13 @@
 title: Add markdown content to a team dashboard 
 titleSuffix: VSTS & TFS
 description: Add and configure the Markdown widget you add to a team dashboard  
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-reporting
-ms.assetid: 
+ms.prod: devops
+ms.technology: devops-analytics
 ms.topic: quickstart
 ms.manager: douge
 ms.author: kaelli
-monikerRange: 'vsts || >= tfs-2015'
+author: KathrynEE
+monikerRange: '>= tfs-2015'
 ms.date: 03/27/2018
 ---
 
@@ -19,7 +19,7 @@ ms.date: 03/27/2018
 
 <a id="markdown-widget">  </a> 
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 
 Use the Markdown widget to support your team and stakeholders by adding information such as:  
 - Team goals  
@@ -28,22 +28,22 @@ Use the Markdown widget to support your team and stakeholders by adding informat
 
 Here's an example:  
 
-<img src="../../collaborate/_img/markdown-guidance/markdown-widget-configured.png" alt="Web portal, Sample Markdown widget" style="border: 2px solid #C3C3C3;" /> 
+<img src="../../project/wiki/_img/markdown-guidance/markdown-widget-configured.png" alt="Web portal, Sample Markdown widget" style="border: 2px solid #C3C3C3;" /> 
 
 ::: moniker-end
 
 
 
 ::: moniker range="vsts"
-[!INCLUDE [temp](../_shared/dashboard-prerequisites-vsts.md)] 
+[!INCLUDE [temp](../_shared/dashboard-prerequisites-vsts.md)]
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
-[!INCLUDE [temp](../_shared/dashboard-prerequisites-tfs-2017-18.md)] 
+[!INCLUDE [temp](../_shared/dashboard-prerequisites-tfs-2017-18.md)]
 ::: moniker-end
 
 ::: moniker range="tfs-2015"
-[!INCLUDE [temp](../_shared/dashboard-prerequisites-tfs-2015.md)] 
+[!INCLUDE [temp](../_shared/dashboard-prerequisites-tfs-2015.md)]
 ::: moniker-end
 
 
@@ -51,7 +51,7 @@ Here's an example:
 
 ## Connect to the web portal for your team project 
 
-To add the markdown widget to a dashboard, you connect to your team project using a [supported web browser](../../tfs-server/requirements.md#supported-browsers). If you don't have a team project yet, create one in [VSTS](../../accounts/create-account-msa-or-work-student.md)<!--- or set one up in an [on-premises TFS](../../accounts/create-team-project.md)-->.
+To add the markdown widget to a dashboard, you connect to your team project using a [supported web browser](/tfs/server/compatibility#supported-browsers). If you don't have a team project yet, create one in [VSTS](../../organizations/accounts/create-account-msa-or-work-student.md)<!--- or set one up in an [on-premises TFS](../../organizations/accounts/create-team-project)-->.
 
 Open a browser window and click the **Dashboards** hub. If you haven't been added as a team member, [get added now](../../work/scale/multiple-teams.md#add-team-members).
 
@@ -71,7 +71,7 @@ If you need to add a dashboard, see [Add and manage dashboards](dashboards.md).
 
 ::: moniker range="tfs-2015"
 > [!NOTE]   
-> Requires TFS 2015.1 or later version.    
+> Requires TFS 2015.1 or later version. �  
 ::: moniker-end
 
 
@@ -79,12 +79,12 @@ If you need to add a dashboard, see [Add and manage dashboards](dashboards.md).
 
 ::: moniker range="vsts"
 
-To enable the New Dashboard experience, see [Enable preview features](../../collaborate/preview-features.md).  
+To enable the New Dashboard experience, see [Enable preview features](../../project/navigation/preview-features.md).  
 
 To add the markdown widget to the dashboard, click ![Edit dashboard icon](_img/icons/edit-icon.png). The widget catalog will automatically open.  
 
 0. Drag the Markdown widget onto the dashboard where you want it located.  
-     
+    �
 	<img src="_img/widget-markdown-tile.png" alt="Markdown widget" style="border: 2px solid #C3C3C3;" />  
 
 0. Click  **Done Editing** to exit dashboard editing. This will dismiss the widget catalog. You can then configure the markdown widget as needed.
@@ -97,7 +97,7 @@ To add the markdown widget to the dashboard, click ![Edit dashboard icon](_img/i
 
 	<img src="_img/add-markdown-size.png" alt="Change markdown widget size" style="border: 1px solid #C3C3C3;" />  
 
-0. Enter the text and markdown syntax into the configuration the configuration dialog. For supported syntax, see [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](../../collaborate/markdown-guidance.md).
+0. Enter the text and markdown syntax into the configuration the configuration dialog. For supported syntax, see [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](../../project/wiki/markdown-guidance.md).
 
 	Here we show some simple text with a bulleted list of four links
 
@@ -111,7 +111,7 @@ To add the markdown widget to the dashboard, click ![Edit dashboard icon](_img/i
 
 	This renders the following widget: 
 
-	<img src="../../collaborate/_img/markdown-guidance/markdown-widget-configured.png" alt="Web portal, Sample Markdown widget" style="border: 2px solid #C3C3C3;" /> 
+	<img src="../../project/wiki/_img/markdown-guidance/markdown-widget-configured.png" alt="Web portal, Sample Markdown widget" style="border: 2px solid #C3C3C3;" /> 
 
 	>[!NOTE]  
 	>Links to documents on file shares using `file://` are not supported on VSTS or TFS 2017.1 and later versions. This restriction has been implemented for security purposes.
@@ -138,7 +138,7 @@ The New Dashboard experience is only available from VSTS at this time.
 0. Click ![add a widget icon](_img/add-widget-icon.png) to open the widget catalog.  
 
 0. Drag the Markdown widget onto the dashboard where you want it located.  
-     
+    �
 	<img src="_img/widget-markdown-tile.png" alt="Markdown widget" style="border: 2px solid #C3C3C3;" />  
 
 0. Click the ![gear icon](../../_img/icons/gear-icon.png) gear icon to open the configuration dialog for the widget. 
@@ -149,7 +149,7 @@ The New Dashboard experience is only available from VSTS at this time.
 
 	<img src="_img/add-markdown-size.png" alt="Change markdown widget size" style="border: 1px solid #C3C3C3;" />  
 
-0. Enter the text and markdown syntax into the configuration the configuration dialog. For supported syntax, see [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](../../collaborate/markdown-guidance.md).
+0. Enter the text and markdown syntax into the configuration the configuration dialog. For supported syntax, see [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](../../project/wiki/markdown-guidance.md).
 
 	Here we show some simple text with a bulleted list of four links
 
@@ -163,7 +163,7 @@ The New Dashboard experience is only available from VSTS at this time.
 
 	This renders the following widget: 
 
-	<img src="../../collaborate/_img/markdown-guidance/markdown-widget-configured.png" alt="Web portal, Sample Markdown widget" style="border: 2px solid #C3C3C3;" /> 
+	<img src="../../project/wiki/_img/markdown-guidance/markdown-widget-configured.png" alt="Web portal, Sample Markdown widget" style="border: 2px solid #C3C3C3;" /> 
 
 	>[!NOTE]  
 	>Links to documents on file shares using `file://` are not supported on VSTS or TFS 2017.1 and later versions. This restriction has been implemented for security purposes.
@@ -189,7 +189,7 @@ The New Dashboard experience is only available from VSTS at this time.
 
 - [Add and manage dashboards](dashboards.md)
 - [Add a widget to a dashboard](add-widget-to-dashboard.md)
-- [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](../../collaborate/markdown-guidance.md)
+- [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](../../project/wiki/markdown-guidance.md)
 - [Widget catalog](widget-catalog.md)
 - [Marketplace widgets](https://marketplace.visualstudio.com/search?term=widget&target=VSTS&category=All%20categories&sortBy=Relevance)
 

@@ -4,8 +4,8 @@ author: alexcnichols
 ms.author: alexn
 ms.date: 1/24/2018
 ms.topic: article
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-articles
+ms.prod: devops
+ms.technology: vsts-release-notes
 ms.manager: douge
 description: In the Sprint 129 Update of Visual Studio Team Services (VSTS) on January 24, 2018, as we return with the work from Sprint 128 and 129, you’ll notice several enhancements that should delight members from across your team.
 hide_comments: true
@@ -31,9 +31,9 @@ Other feature highlights include:
 
 ### View Analytics Widgets as a Stakeholder
 
-Installing the [Analytics extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics) adds 6 powerful widgets to your widget catalog: Cumulative Flow Diagram, Lead Time, Cycle Time, Velocity, Burndown, and Burnup. Now, those with the free [Stakeholder license](/vsts/security/get-started-stakeholder#related-notes) can view all the Analytics widgets too!
+Installing the [Analytics extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics) adds 6 powerful widgets to your widget catalog: Cumulative Flow Diagram, Lead Time, Cycle Time, Velocity, Burndown, and Burnup. Now, those with the free [Stakeholder license](/vsts/organizations/security/get-started-stakeholder#related-notes) can view all the Analytics widgets too!
 
-To use the [Analytics OData endpoint](/vsts/report/extend-analytics/index) or [Power BI to connect to Analytics](/vsts/report/powerbi/index), a [Basic license](https://www.visualstudio.com/team-services/compare-features/) is still required.
+To use the [Analytics OData endpoint](/vsts/report/extend-analytics/index) or [Power BI to connect to Analytics](/vsts/report/powerbi/index), a [Basic license](https://visualstudio.microsoft.com/team-services/compare-features/) is still required.
 
 ### Integrate Power BI with VSTS Analytics using new views
 
@@ -82,7 +82,7 @@ Need to include an equation or mathematical expression in your pull request comm
 
 Previously, anyone who could view a Git repository could work with its pull requests. We’ve added a new permission called **Contribute to pull requests** that controls access to creating and commenting on pull requests. All users and groups that previously held the **Read** permission will also be granted this new permission by default. The introduction of this new permission gives administrators additional flexibility and control. If you require your **Readers** group to be truly read-only, you can deny the **Contribute to pull requests** permission.
 
-See the [quickstart documentation for setting repository permissions](/vsts/security/set-git-tfvc-repository-permissions#set-git-repository-permissions) for more information.
+See the [quickstart documentation for setting repository permissions](/vsts/organizations/security/set-git-tfvc-repository-permissions#set-git-repository-permissions) for more information.
 
 ### Integrate using the pull request status API and branch policy
 
@@ -106,7 +106,7 @@ In addition, **Iteration** dates are included to the right of the name so that y
 
 ### Build GitHub pull requests from repository forks
 
-GitHub pull requests from repository forks can now be automatically built by VSTS. This ensures that changes successfully build and tests pass before they are merged. By default, secrets associated with your build definition are unavailable to builds of pull requests from forks. See the [security considerations](/vsts/build-release/actions/ci-build-github#building-pull-requests-from-repository-forks) documentation for more information.
+GitHub pull requests from repository forks can now be automatically built by VSTS. This ensures that changes successfully build and tests pass before they are merged. By default, secrets associated with your build definition are unavailable to builds of pull requests from forks. See the [security considerations](/vsts/pipelines/build/ci-build-github#building-pull-requests-from-repository-forks) documentation for more information.
 
 > [!div class="mx-imgBorder"]
 ![Configuration for pull request validation of public fork PR builds](_img/129_08.png)
@@ -160,10 +160,10 @@ The unified agents approach also allows admins to manage all machines being used
 
 Over the course of the last several sprints, we delivered several crucial pieces to enable this capability, including:
 
-* Agents can be [configured for UI testing](/vsts/build-release/concepts/agents/agents#account)
+* Agents can be [configured for UI testing](/vsts/pipelines/agents/agents#account)
 * [Visual Studio Test Platform Installer](/vsts/release-notes/2017/nov-28-vsts#test) allows VSTest task to run without needing Visual Studio pre-installed
 * Both Build and Release definitions can be created with [multiple phases and have the ability to use different agent queues](/vsts/release-notes/2017/dec-11-vsts#enhancements-to-multi-phase-builds) for each phase
-* Automated test cases can be [run from the Test hub](/vsts/build-release/test/run-automated-tests-from-test-hub) using the VSTest task
+* Automated test cases can be [run from the Test hub](/vsts/pipelines/test/run-automated-tests-from-test-hub) using the VSTest task
 
 With all the above now in place, we are ready to deprecate these two tasks. While existing definitions that use the deprecated tasks will continue to work, we encourage you to move to using VSTest to take advantage of continued enhancement over time.
 
@@ -202,7 +202,7 @@ While editing a page, you can quickly save, save and close, or just close.
 > [!div class="mx-imgBorder"]
 ![Wiki edit keyboard shortcuts popup](_img/129_06.png)
 
-These are in addition to standard editing shortcuts such as Ctrl+B for **bold**, Ctrl+I for *italics*, Ctrl+K for [linking](#) etc. See the [full list of keyboard shortcuts](/vsts/collaborate/keyboard-shortcuts) for more information.
+These are in addition to standard editing shortcuts such as Ctrl+B for **bold**, Ctrl+I for *italics*, Ctrl+K for [linking](#) etc. See the [full list of keyboard shortcuts](/vsts/project/navigation/keyboard-shortcuts) for more information.
 
 ## Marketplace
 
@@ -224,7 +224,7 @@ To avoid extra layers of groups in VSTS, you can now manage permissions directly
 > [!div class="mx-imgBorder"]
 ![Azure AD group permissions](_img/129_02.png)
 
-See the [about permissions and groups](/vsts/security/about-permissions) documentation for more information.
+See the [about permissions and groups](/vsts/organizations/security/about-permissions) documentation for more information.
 
 ### Connect or disconnect a VSTS account to Azure Active Directory via new Azure portal
 

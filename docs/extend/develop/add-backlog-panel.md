@@ -2,10 +2,13 @@
 title: Add panels on backlog pages | Extensions for VSTS
 description: Extend VSTS with panels on backlogs.
 ms.assetid: 34f01da42-5a98-4bc5-981e-3f8d1ffdf163
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-ecosystem
+ms.topic: conceptual
 ms.manager: douge
+monikerRange: '>= tfs-2017'
 ms.author: elbatk
+author: elbatk
 ms.date: 08/22/2016
 ---
 
@@ -73,10 +76,10 @@ For each contribution in your extension, the manifest defines
 
 | Property           | Description                                                                                                                         
 |--------------------|----------------------------------------------------------------------------------------|                
-| title              | Tooltip text that will appear on the menu item.                                        |                   
-| name               | What appears in the dropdown for panel selection.					                  |                   
-| uri                | Path (relative to the extenion's base URI) of the page to the surface as the panel     |                   
-| registeredObjectId | Id of the object registered for the panel.                                             |    
+| title              | Tooltip text that will appear on the menu item                                        |                   
+| name               | What appears in the dropdown for panel selection					                  |                   
+| uri                | Path (relative to the extension's base URI) of the page to surface as the panel     |                   
+| registeredObjectId | Id of the object registered for the panel                                             |    
 
 
 Learn about all of the places where you can add an extension in the [contributions reference](../reference/targets/overview.md).

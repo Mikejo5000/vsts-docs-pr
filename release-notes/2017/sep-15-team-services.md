@@ -4,8 +4,8 @@ author: alexcnichols
 ms.author: alexn
 ms.date: 09/15/2017
 ms.topic: article
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-articles
+ms.prod: devops
+ms.technology: vsts-release-notes
 ms.manager: douge
 description: Visual Studio Team Services (VSTS) release notes for Sprint 123 Update on September 15, 2017 with multi-phase builds and new Queries experience.
 ---
@@ -28,7 +28,7 @@ Some of the other key feature highlights include:
 ### New Queries experience
 
 > [!TIP]
-> To use this capability you must have the **New Queries Experience** [preview feature](https://www.visualstudio.com/docs/collaborate/preview-features) enabled on your profile.
+> To use this capability you must have the **New Queries Experience** [preview feature](/vsts/project/navigation/preview-features) enabled on your profile.
 
 The **Queries** hub has a new look and feel, changes in navigation, and some exciting new features such as the ability to search for queries.
 

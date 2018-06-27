@@ -1,11 +1,13 @@
 ---
-title: Add or modify a work item type (WIT) | VSTS & TFS 
-description: Modify or add a work item type (WIT) to support queries, reports, and workflow for Visual Studio Team Services (VSTS) and TFS  
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+title: Add or modify a work item type (WIT) 
+titleSuffix: VSTS & TFS 
+description: Modify or add a work item type to support queries, reports, and workflow in Visual Studio Team Services & Team Foundation Server 
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 62c0168a-23b8-4a92-9ecf-b67926f7756f
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
 ms.date: 02/02/2017
 ---
 
@@ -152,11 +154,11 @@ In the web portal, work items appear in query results and on the backlog and boa
 
 ## Related articles
 
-This topic addressed how to add and customize WITs and process configuration for Hosted XML and On-premises XML process models. For information on adding and customizing fields for Hosted XML and On-premises XML process models, see [Add or modify a work item type](add-modify-wit.md). For the Inheritance process model , see [Customize a process](process/customize-process.md).  
+This topic addressed how to add and customize WITs and process configuration for Hosted XML and On-premises XML process models. For information on adding and customizing fields for Hosted XML and On-premises XML process models, see [Add or modify a work item type](add-modify-wit.md). For the Inheritance process model , see [Customize a process](../../organizations/settings/work/customize-process.md).  
 
 Other related topics or resources: 
 
-- [Guide to administrative tasks](../../accounts/account-management.md)  
+- [Guide to administrative tasks](../../organizations/accounts/account-management.md)  
 - [ProcessConfiguration XML elements](reference/process-configuration-xml-element.md)
 - [**witadmin** command-line tools](reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md)
 - [Customize the work tracking experience](customize-work.md)  
@@ -170,7 +172,7 @@ Other related topics or resources:
 - (TFS) To add or customize a WIT, you must be a member of the Project Administrators group or have your **Edit project-level information** permission set to Allow.
 - (VSTS)  To add or customize a WIT by customizing a process template, you must be a member of the Project Collection Administrators group or have your **Edit process** permission set to Allow    
   
-To get added as an administrator, see [Add administrators](../../security/set-project-collection-level-permissions.md).
+To get added as an administrator, see [Add administrators](../../organizations/security/set-project-collection-level-permissions.md).
 
 
 <a id="witadmin">  </a>  
@@ -179,7 +181,7 @@ To get added as an administrator, see [Add administrators](../../security/set-pr
 > [!NOTE]    
 >If you use the Hosted XML process model, you need to import and export the process template used by your team project. For details, see [Customize the work item tracking web form](customize-wit-form.md).
 
-0. If you don't have administration permissions for your team project, [get them](../../security/set-project-collection-level-permissions.md).   
+0. If you don't have administration permissions for your team project, [get them](../../organizations/security/set-project-collection-level-permissions.md).   
 [!INCLUDE [temp](../_shared/witadmin-run-tool-example.md)] 
 
 0. Export the WIT definition file where you want to modify or add a field. Specify the name of the WIT and a name for the file.  

@@ -1,11 +1,14 @@
 ---
-title: TFS-Office integration issues | VSTS & TFS  
+title: TFS-Office integration issues
+titleSuffix: VSTS & TFS
 description: Resolve common integration issues that occur with TFS Office integration, resolve TF86001 
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 819EA180-2BAC-46DB-A17E-A5179E6BEADC
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
+ms.topic: troubleshooting
 ms.date: 03/28/2017   
 ---
 
@@ -66,7 +69,7 @@ This error is typically caused when you install Visual Studio before you install
 
 
 ### Prerequisites 
-Install Visual Studio to ensure that you have access to the Visual Studio Command Prompt and the  [Gacutil.exe (Global Assembly Cache Tool)](https://docs.microsoft.com/dotnet/framework/tools/gacutil-exe-gac-tool). If you do not have Visual Studio, you can install the [Visual Studio Community edition for free](https://www.visualstudio.com/downloads/).   
+Install Visual Studio to ensure that you have access to the Visual Studio Command Prompt and the  [Gacutil.exe (Global Assembly Cache Tool)](https://docs.microsoft.com/dotnet/framework/tools/gacutil-exe-gac-tool). If you do not have Visual Studio, you can install the [Visual Studio Community edition for free](https://visualstudio.microsoft.com/downloads/).   
 
 ### Run the Gacutil tool  
 

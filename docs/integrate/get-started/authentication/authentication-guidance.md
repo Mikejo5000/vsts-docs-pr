@@ -2,15 +2,17 @@
 title: Guidance for authentication | VSTS REST APIs
 description: Guidance for authentication with with VSTS.
 ms.assetid: 15CCEB1E-F42B-4439-8C35-B8A225F5546C
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-integrate
+ms.prod: devops
+ms.technology: devops-ecosystem
+ms.topic: conceptual
 ms.manager: douge
-ms.author: peakyy
+monikerRange: '>= tfs-2013'
+ms.author: elbatk
+author: elbatk
 ms.date: 06/30/2017
 ---
 
 # Choosing the right authentication mechanism
-
 
 
 When writing an application which interfaces with VSTS, you will have to authenticate to gain acess to resources like REST APIs. We understand that VSTS offers many different ways to authenticate your application. This topic provides guidance to help you choose the right authentication for your application. The following table outlines the recommended authentication mechanism for different application types. We have provided basic descriptions, examples, and code samples to get you started.
@@ -24,7 +26,7 @@ When writing an application which interfaces with VSTS, you will have to authent
 | Interactive client-side app targeting VSTS and TFS | Client application, that allows user interaction, authenticates VSTS and TFS users | Console application allowing VSTS and TFS users to see assigned bugs |  [Client Library (Interactive and Windows authentication)](/vsts/integrate/get-started/client-libraries/samples#authenticating-team-foundation-server) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/DualSupportClientSample) |
 | Interactive web | GUI based web application | Custom Web dashboard displaying build summaries |[OAuth](./oauth.md) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/OAuthWebSample) |
 | TFS application | TFS app using the Client OM library | TFS extension displaying team bug dashboards | [Client Libraries](../../concepts/dotnet-client-libraries.md) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/ClientLibraryConsoleAppSample) |
-| [VSTS Extension](../../../extend/get-started/node.md#files) | VSTS extension | [Agile Cards](https://marketplace.visualstudio.com/items?itemName=spartez.agile-cards) | [VSS Web Extension SDK](https://github.com/Microsoft/vss-web-extension-sdk) | [sample walkthrough](../../../extend/develop/add-dashboard-widget.md) |
+| [VSTS Extension](../../../extend/get-started/node.md) | VSTS extension | [Agile Cards](https://marketplace.visualstudio.com/items?itemName=spartez.agile-cards) | [VSS Web Extension SDK](https://github.com/Microsoft/vss-web-extension-sdk) | [sample walkthrough](../../../extend/develop/add-dashboard-widget.md) |
 
 
 
@@ -36,7 +38,7 @@ Learn more about [using IIS Basic Authentication with TFS on-premises](iis-basic
 
 ## Q&A
 
-#### Q: I am making an interactive client-side application. Should I use [VSTS Client Libraries](./../client-libraries/dotnet.md) or [VSTS REST API's](https://www.visualstudio.com/en-us/docs/integrate/api/overview)?
+#### Q: I am making an interactive client-side application. Should I use [VSTS Client Libraries](./../client-libraries/dotnet.md) or [VSTS REST API's](https://visualstudio.microsoft.com/en-us/docs/integrate/api/overview)?
 A: We recommend using VSTS Client Libraries over REST API's when accessing VSTS resources. They are simplier and more easily maintained when version changes to our REST endpoints occur. If there is missing functionality from the client libraries [ADAL](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries) is the best authentication mechanism to use with our REST API's.
 
 #### Q: Can I use ADAL if I log into my VSTS account with a Microsoft account (MSA)?

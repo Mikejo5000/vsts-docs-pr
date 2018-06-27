@@ -1,11 +1,13 @@
 ---
-title: Set query permissions | VSTS & TFS  
-description: How to guide for setting permissions on work item queries when working in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) item types  
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+title: Set query permissions
+titleSuffix: VSTS & TFS
+description: How to set permissions on work item queries and folders when working in Visual Studio Team Services & Team Foundation Server  
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 682f0eb0-462d-41e2-b6a2-41949d1b90fb  
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
 ms.date: 11/07/2017
 ---
 
@@ -27,7 +29,7 @@ You set permissions from the web portal. By default, only members of the Project
 
 ## Set permissions on a new query folder
 
-1. If you're not a member of the project administrators group, [get added](../../security/set-project-collection-level-permissions.md), or have your **Edit project-level information** permission set to **Allow**.
+1. If you're not a member of the project administrators group, [get added](../../organizations/security/set-project-collection-level-permissions.md), or have your **Edit project-level information** permission set to **Allow**.
 
 2. Create a folder.  
 
@@ -47,7 +49,7 @@ You set permissions from the web portal. By default, only members of the Project
 
     **Contribute** allows team members to create and edit queries and folders under the folder where the permissions were granted. And, **Manage Permissions** allows team members to manage the permission settings on queries and subfolders.
 
-5.  (Optional) Turn inheritance off. Default is On. By turning inheritance off for a folder, you disallow inheritance of permissions that exist up the chain of query folders. To learn more, see [Permissions, Inheritance](../../security/about-permissions.md#inheritance).  
+5.  (Optional) Turn inheritance off. Default is On. By turning inheritance off for a folder, you disallow inheritance of permissions that exist up the chain of query folders. To learn more, see [Permissions, Inheritance](../../organizations/security/about-permissions.md#inheritance).  
 
 ## Set permissions on shared query 
 
@@ -70,7 +72,7 @@ With queries, you can not only list work items, you can create status and trend 
 - [Run and edit queries](using-queries.md)  
 - [Dashboards](../../report/dashboards/dashboards.md)  
 - [Add a chart to a dashboard](../../report/add-charts-to-dashboard.md)   
-- [Permissions and access](../../security/permissions-access.md)  
+- [Permissions and access](../../organizations/security/permissions-access.md)  
 
 ### Q & A   
 <!-- BEGINSECTION class="md-qanda" -->

@@ -2,12 +2,12 @@
 title: Import and export categories
 titleSuffix: TFS  
 description: Import and export categories defined for a team project in Team Foundation Server 
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: da37f5a5-1a52-457c-b0fc-c91fee134788
 ms.topic: reference
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 monikerRange: '>= tfs-2013 <= tfs-2018'
 ms.date: 03/20/2018
 ---
@@ -33,7 +33,7 @@ For the team project for which the categories are defined, you must have the fol
 -   To export categories of work item types, you must have your **View project-level information** permission set to **Allow**.   
 -   To import categories of work item types, you must be a member of the **Project Administrators** security group or have the **Edit project-level information** permission set to **Allow**.  
   
-For more information, see [Add an administrator](../../../../security/set-project-collection-level-permissions.md). 
+For more information, see [Add an administrator](../../../../organizations/security/set-project-collection-level-permissions.md). 
 
 ## Syntax  
   

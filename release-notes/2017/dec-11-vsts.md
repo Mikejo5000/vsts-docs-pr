@@ -4,8 +4,8 @@ author: alexcnichols
 ms.author: alexn
 ms.date: 12/15/2017
 ms.topic: article
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-articles
+ms.prod: devops
+ms.technology: vsts-release-notes
 ms.manager: douge
 description: In the Sprint 127 Update of Visual Studio Team Services (VSTS) on December 11, 2017, you’ll find new features to help you manage your test results and execution, plus a set of new Marketplace experiences to help you get even more value out of the ecosystem.
 hide_comments: true
@@ -60,7 +60,7 @@ This can also be used as a good way to learn YAML quickly. You can create a new 
 ### Enhancements to multi-phase builds
 
 > [!IMPORTANT]
-> To use this capability, you must have the **Build with multiple queues** [preview feature](/vsts/collaborate/preview-features) enabled on your account.
+> To use this capability, you must have the **Build with multiple queues** [preview feature](/vsts/project/navigation/preview-features) enabled on your account.
 
 A few weeks ago, we added phases to build definitions. You’ve been able to use phases to organize your build steps and to target different agents using different demands for each phase. In this Update, we’ve added several capabilities to build phases so that you can now:
 
@@ -74,7 +74,7 @@ A few weeks ago, we added phases to build definitions. You’ve been able to use
 
 * Run a phase only under specific conditions. For example, you can configure a phase to run only when previous phases succeed, or only when you are building code in the master branch.
 
-To learn more, see [Phases in Build and Release Management](/vsts/build-release/concepts/process/phases).
+To learn more, see [Phases in Build and Release Management](/vsts/pipelines/process/phases).
 
 ### Hide empty contributed sections in build results page
 
@@ -96,7 +96,7 @@ Agents of version 125 or newer are based on ASP.NET Core 2.0. Previously you cou
 
 ### Release trigger for a Package Management artifact
 
-Now you can set a trigger on a **Package Management** artifact in a Release definition so that a new release is automatically created when a new version of the package has been published. See the [documentation for triggers in Release Management](/vsts/build-release/concepts/definitions/release/triggers#release-triggers) for more information.
+Now you can set a trigger on a **Package Management** artifact in a Release definition so that a new release is automatically created when a new version of the package has been published. See the [documentation for triggers in Release Management](/vsts/pipelines/release/triggers#release-triggers) for more information.
 
 ### Default artifact versions
 
@@ -170,7 +170,7 @@ This includes:
 The following pre-requisites are needed:
 
 1. Visual Studio 2017.6 or higher. If you are using the [Test Platform Installer](/vsts/release-notes/2017/nov-28-vsts#test) task to run tests using the VSTest task, make sure you pick the appropriate version of the package.
-2. Create a [PAT](/vsts/accounts/use-personal-access-tokens-to-authenticate?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json) that is authorized for the scope “Work Items (full)”.
+2. Create a [PAT](/vsts/accounts/use-personal-access-tokens-to-authenticate?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json) that is authorized for the scope “Work Items (full)”.
 3. Add a secure Build or Release variable called Test.TestCaseAccessToken with the value set to the PAT created in step 2.
 
 Note that tests that use TestCase as a data source cannot be used with the **Run Functional Tests** task.

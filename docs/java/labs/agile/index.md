@@ -1,10 +1,13 @@
 ---
 title: Manage your Java project backlog with VSTS 
 description: Tutorial lab for managing Java projects with Visual Studio Team Services (VSTS) Agile tools
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build 
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: conceptual
+ms.custom: java
 ms.manager: douge
 ms.author: douge
+author: erickson-doug
 ms.date: 01/22/2018
 monikerRange: '>= tfs-2017'
 ---
@@ -229,4 +232,4 @@ through the MyShuttle scenario.
 
 This is a quick introduction to the Agile Planning tools and Work Items. You'll work with them
 some more later. If you want to read more about the Agile Planning tools, Sprint Planning, and the Scrum
-template, read [Sprint planning with VSTS](https://docs.microsoft.com/en-us/vsts/work/scrum/sprint-planning).
+template, read [Sprint planning with VSTS](https://docs.microsoft.com/en-us/vsts/work/scrum/assign-work-sprint).

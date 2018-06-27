@@ -1,10 +1,13 @@
 ---
-ms.author: douge
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.author: elbatk
+author: elbatk
+ms.prod: devops
+ms.technology: devops-collab
+ms.topic: conceptual
 title: Microsoft Teams with VSTS and Team Foundation Server
 description: Use Microsoft Teams with your VSTS account
 monikerRange: '>= tfs-2017'
+ms.date: 10/10/2017
 ---
 
 
@@ -126,6 +129,6 @@ create two additional subscriptions.
 
 A: Only VSTS accounts in the same organization (Azure Active Directory tenant) as your Microsoft Teams account can be connected. This means even if the sign-in email address is the same for VSTS and Microsoft Teams, they may be backed by different tenants and therefore cannot be linked.
 
-To resolve this you can create a new Team in the same Azure Active Directory (AAD) as VSTS, or move your VSTS to the same AAD as Teams (see [Q: Why is my VSTS account already connected to a directory? Can I change that directory?](../../accounts/faq-azure-access.md#connect-to-directory)).
+To resolve this you can create a new Team in the same Azure Active Directory (AAD) as VSTS, or move your VSTS to the same AAD as Teams (see [Q: Why is my VSTS account already connected to a directory? Can I change that directory?](../../organizations/accounts/faq-azure-access.md#connect-to-directory)).
 
 <!-- ENDSECTION -->

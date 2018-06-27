@@ -1,11 +1,14 @@
 ---
 title: VSS/References/SDK.Interfaces TeamContext API | Extensions for Visual Studio Team Services
 ms.assetid: 514e2694-2028-7bc9-98fd-7e012bc0564a
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-ecosystem
 generated: true
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
+ms.topic: article
+monikerRange: '>= tfs-2017'
 ms.date: 08/04/2016
 ---
 

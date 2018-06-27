@@ -2,11 +2,12 @@
 title: Create a pull request | VSTS & TFS
 description: Reviewing and Publishing Code using Git Pull Requests
 ms.assetid: 731eeda5-133f-46d5-ab60-b27a5280210d
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git 
-ms.topic: get-started-article
+ms.prod: devops
+ms.technology: devops-code-git 
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: tutorial
 ms.date: 03/14/2018
 monikerRange: '>= tfs-2013'
 ---
@@ -80,7 +81,7 @@ Complete your pull request after the reviewers approve of the changes by selecti
 ![Complete button on the pull request view with its drop-down options](../_img/pull-requests/complete_pr_options.png)
 
 - **Complete**: Complete the pull request now and merge the changes to the target branch.
-- **Set auto-complete**: If you have branch policies, you can choose **Set auto-complete** to configure the pull request to close once all branch policies are met. Fore more information on auto-complete (and reasons why you might not see this option), see [Complete automatically](../pull-requests.md#complete-automatically).
+- **Set auto-complete**: If you have branch policies, you can choose **Set auto-complete** to configure the pull request to close once all branch policies are met. For more information on auto-complete (and reasons why you might not see this option), see [Complete automatically](../pull-requests.md#complete-automatically).
 - **Abandon**: Choose **Abandon** to close the pull request without merging the changes. 
 
 Enter the message used for the [merge commit](merging.md) and update the pull request description as needed in the dialog that follows. 

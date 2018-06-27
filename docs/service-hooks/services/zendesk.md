@@ -1,11 +1,14 @@
 ---
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-collab
+ms.topic: conceptual
 title: Zendesk with VSTS
 description: Use Zendesk with your VSTS account
 ms.assetid: 7dd649d2-152f-4894-955d-dd42ac56d81a
 ms.manager: douge
+monikerRange: '>= tfs-2017'
 ms.author: elbatk
+author: elbatk
 ms.date: 02/08/2017
 ---
 
@@ -136,7 +139,7 @@ A: If you supplied a Personal Access Token (recommended) in the login panel of t
 
 Also make sure the token has not expired and that it has the **Work items (read and write)** scope.
 
-For more details, see the Authenticating section above or the [Authenticate access with personal access tokens](../../accounts/use-personal-access-tokens-to-authenticate.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json) topic.
+For more details, see the Authenticating section above or the [Authenticate access with personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json) topic.
 
 #### Q: Can I programmatically create subscriptions?
 

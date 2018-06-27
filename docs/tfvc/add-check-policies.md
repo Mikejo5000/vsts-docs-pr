@@ -2,10 +2,12 @@
 title: Add Check-In Policies
 description: Add Check-In Policies
 ms.assetid: 1f3046e3-1ea2-4477-99ca-76d3fc70c47b
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: conceptual
 ms.date: 08/18/2016
 monikerRange: '>= tfs-2015'
 ---
@@ -25,7 +27,7 @@ Administrators of Team Foundation version control can add check-in policy requir
 
 **Required Permissions**
 
-To complete this procedure, you must have the **Edit project-level information** permission set to **Allow**. For more information, see [Permissions and groups reference](../security/permissions.md).
+To complete this procedure, you must have the **Edit project-level information** permission set to **Allow**. For more information, see [Permissions and groups reference](../organizations/security/permissions.md).
 
 > Visual Studio 2017 : Check-in policies in Visual Studio 2017 must be set through Team Explorer, tf.exe, or [through registry keys declared in the pkgdef of a Visual Studio extension](https://docs.microsoft.com/en-us/visualstudio/extensibility/internals/createpkgdef-utility). Policies only apply to a single installation of Visual Studio 2017 on your computer. If you have mulitple installations of Visual Studio 2017, you'll need to set the check-in policy on each installation. [Learn more](https://docs.microsoft.com/en-us/visualstudio/extensibility/what-s-new-in-the-visual-studio-2017-sdk)
 

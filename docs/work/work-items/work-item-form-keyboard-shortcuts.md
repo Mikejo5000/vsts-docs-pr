@@ -2,8 +2,8 @@
 title: Work item form and Work Items page keyboard shortcuts 
 titleSuffix: VSTS & TFS
 description: Use keyboard shortcuts to interact with work item forms and the Work Items page 
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 
 ms.topic: reference
 ms.manager: douge
@@ -29,6 +29,6 @@ With keyboard shortcuts, you can quickly navigate within a web page or the web w
 
 ## Related articles
 
-- [Keyboard shortcuts for VSTS, TFS, and Team Explorer](../../collaborate/keyboard-shortcuts.md)
+- [Keyboard shortcuts for VSTS, TFS, and Team Explorer](../../project/navigation/keyboard-shortcuts.md)
 
 

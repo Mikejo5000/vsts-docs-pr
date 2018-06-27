@@ -1,8 +1,8 @@
 ---
 title: Git & TFVC updates plus improved test traceability … – June 20
 description: VSTS release notes for June 17 2016
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-articles
+ms.prod: devops
+ms.technology: vsts-release-notes
 ms.manager: douge
 ms.assetid: fa3df506-57bb-4910-9dca-4bf1b567b97e
 ms.date: 06/01/2016
@@ -84,7 +84,7 @@ It’s a common scenario for an individual test to run on multiple branches, env
 
 ##Test – Automated testing for SCVMM and VMWare
 
-Users can dynamically set up test machines in the cloud with Azure, or on premises using SCVMM or VMWare, and use these machines to run their tests in a distributed manner. Users can use one of the machine provisioning tasks— [Azure, SCVMM or VMWare](https://marketplace.visualstudio.com/items?itemname=ms-vscs-rm.vmwareapp)—followed by the [Run Functional Tests task](https://www.visualstudio.com/en-us/docs/build/steps/test/run-functional-tests) to run tests. For more information, please see the [Visual Studio docs](http://go.microsoft.com/fwlink/?LinkId=799813).
+Users can dynamically set up test machines in the cloud with Azure, or on premises using SCVMM or VMWare, and use these machines to run their tests in a distributed manner. Users can use one of the machine provisioning tasks— [Azure, SCVMM or VMWare](https://marketplace.visualstudio.com/items?itemname=ms-vscs-rm.vmwareapp)—followed by the [Run Functional Tests task](https://visualstudio.microsoft.com/en-us/docs/build/steps/test/run-functional-tests) to run tests. For more information, please see the [Visual Studio docs](http://go.microsoft.com/fwlink/?LinkId=799813).
 
 ##Release – Test status visibility
 
@@ -94,7 +94,7 @@ It’s a recommended practice to use Release Environments to deploy applications
 
 ##Release – Support Java PMD analysis in Maven build task
 
-You can now request a PMD analysis in the Maven build task and see the number of issues in the build summary. The Artefact tab of the build summary contains the results of the PMD static analysis. Multiple pom files are supported. For the moment, this only works with the Linux agent. More information is available at this [blog post](http://https/blogs.msdn.microsoft.com/visualstudioalm/2016/06/15/the-maven-build-task-now-supports-pmd-analysis-out-of-the-box).
+You can now request a PMD analysis in the Maven build task and see the number of issues in the build summary. The Artefact tab of the build summary contains the results of the PMD static analysis. Multiple pom files are supported. For the moment, this only works with the Linux agent. More information is available at this [blog post](https://blogs.msdn.microsoft.com/visualstudioalm/2016/06/15/the-maven-build-task-now-supports-pmd-analysis-out-of-the-box).
 
 ![Running a PMD analysis in the Maven build task](_img/6_17_10.png)
 
@@ -132,7 +132,7 @@ We’ve updated the software available in our hosted build pool to include:
 -.NET Core RC2 Tooling
 -Service Fabric runtime, SDK, and tools for Visual Studio 2015
 
-For a full list of software, see [https://www.visualstudio.com/en-us/docs/build/agents/hosted-pool](https://www.visualstudio.com/en-us/docs/build/agents/hosted-pool).
+For a full list of software, see [https://visualstudio.microsoft.com/en-us/docs/build/agents/hosted-pool](https://visualstudio.microsoft.com/en-us/docs/build/agents/hosted-pool).
 
 ##Dashboards – Resizable query results widget
 

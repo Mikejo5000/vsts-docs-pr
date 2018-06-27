@@ -1,14 +1,17 @@
 ---
-title: TFS-Project Server synchronization process overview | TFS
-description: Understand how the synchronization engine manages the flow of data between the two server products.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: TFS-Project Server synchronization process overview 
+titleSuffix: TFS 
+description: Understand how the synchronization engine manages the flow of data between Team Foundation Server & Project Server 
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: a34c054a-1361-43ce-962e-bf29ce04ffb2
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
 ms.date: 04/05/2017
-ms.topic: get-started-article
+ms.topic: overview
 ---
+
 # Synchronization process overview for TFS-Project Server integration
 
 [!INCLUDE [temp](../_shared/tfs-ps-sync-header.md)]
@@ -175,8 +178,8 @@ Synchronization Process for Team Foundation Server and Project Server Integratio
 -   In the work item form for Team Foundation, the History field records synchronization status and error messages after each update of the work item. When you integrate with Project Server 2010, comments that project managers write when they approve or reject a status update are also recorded in the History field.  
   
 -   The event log for the application-tier server that participates in the data synchronization maintains a record of all synchronization events and errors.  
-  
- Administrators can retrieve the most recent event messages by using the `TfsAdmin ProjectServer /GetSyncMessages` command. For more information, see [View error messages](view-synch-error-messages.md). To gather even more detailed information, you can enable detailed tracing for the Team Foundation Background Job Agent that runs the services. For more information, see [Team Foundation Background Job Agent](../../tfs-server/architecture/background-job-agent.md).  
+
+ Administrators can retrieve the most recent event messages by using the `TfsAdmin ProjectServer /GetSyncMessages` command. For more information, see [View error messages](view-synch-error-messages.md). To gather even more detailed information, you can enable detailed tracing for the Team Foundation Background Job Agent that runs the services. For more information, see [Team Foundation Background Job Agent](/tfs/server/architecture/background-job-agent).  
   
   
 ## Related articles  

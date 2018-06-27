@@ -2,10 +2,12 @@
 title: Create and work with workspaces
 description: Create and work with workspaces
 ms.assetid: 1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: conceptual
 ms.date: 05/12/2017
 monikerRange: '>= tfs-2015'
 ---
@@ -55,7 +57,7 @@ When you switch from one workspace to another, to avoid confusing yourself, make
 
 ## Work from the command prompt
 
-You can create and manage your workspaces from the command prompt. You can also perform some tasks that are not possible in Visual Studio. For example, you can delete another user's workspace if you have [sufficient permissions](../security/permissions.md#tfvc). See [Workspace Command](workspace-command.md), [Workspaces Command](workspaces-command.md), and [Workfold Command](workfold-command.md).
+You can create and manage your workspaces from the command prompt. You can also perform some tasks that are not possible in Visual Studio. For example, you can delete another user's workspace if you have [sufficient permissions](../organizations/security/permissions.md#tfvc). See [Workspace Command](workspace-command.md), [Workspaces Command](workspaces-command.md), and [Workfold Command](workfold-command.md).
 
 ## Q & A
 
@@ -75,7 +77,7 @@ If your team has a large and complex codebase or if you want your workspace to c
 
 #### Q: Can I reuse and share folder mappings?
 
-**A:** Yes. If you want to reuse or share folder mappings with other team members, you can copy the folder mappings. Simply open the shortcut menu in the **Working folders** list and choose **Copy**. To reuse the folder mappings, paste them into another version control workspace or a [build definition workspace](../build-release/concepts/definitions/build/repository.md). To share the folder mappings with your teammates, paste them into a text file and then share the file.
+**A:** Yes. If you want to reuse or share folder mappings with other team members, you can copy the folder mappings. Simply open the shortcut menu in the **Working folders** list and choose **Copy**. To reuse the folder mappings, paste them into another version control workspace or a [build definition workspace](../pipelines/build/repository.md). To share the folder mappings with your teammates, paste them into a text file and then share the file.
 
 #### Q: What does "Cloaked" mean?
 
@@ -123,4 +125,4 @@ If your team has a large and complex codebase or if you want your workspace to c
 
 #### Q: I work at a remote site. Is there any way I can save bandwidth?
 
-**A:** [Install Team Foundation Proxy and set up a remote site](../tfs-server/install/install-proxy-setup-remote.md).
+**A:** [Install Team Foundation Proxy and set up a remote site](/tfs/server/install/install-proxy-setup-remote).

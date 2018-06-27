@@ -1,11 +1,14 @@
 ---
-title: Assign permissions to support TFS-Project Server integration | TFS
-description: Assign permissions to support configuration and working with TFS- Project Server data synchronization
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit 
+title: Assign permissions to support TFS-Project Server integration
+titleSuffix: TFS 
+description: Assign permissions to support configuration and working with Team Foundation Server & Project Server  data synchronization
+ms.prod: devops
+ms.technology: devops-agile 
 ms.assetid: d71eb502-00d0-4904-ac79-23195a707dc9
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
+ms.topic: conceptual
 ms.date: 03/16/2017
 ---
 
@@ -23,7 +26,7 @@ ms.date: 03/16/2017
 ###  <a name="assign_perm"></a> Do you have all the permissions you need to assign permissions?  
  Make sure you belong to the following groups:  
   
--   **Team Foundation Administrators** group, required to grant TFS permissions. You must also have access to the **Team Foundation Administration Console**. [Add accounts to administer TFS](../../security/set-project-collection-level-permissions.md).  
+-   **Team Foundation Administrators** group, required to grant TFS permissions. You must also have access to the **Team Foundation Administration Console**. [Add accounts to administer TFS](../../organizations/security/set-project-collection-level-permissions.md).  
   
 -   **Administrator for Project Web App**  for each instance of PWA, required to grant Project Server permissions. You must also have access to Project Server through PWA.  
   
@@ -67,8 +70,8 @@ ms.date: 03/16/2017
  Identify the following service accounts:  
   
 -   **Service account for TFS**  
-  
-     [Open the Team Foundation Administration console](../../tfs-server/command-line/open-admin-console.md). If a Network Service account is used, [change it to a domain account](../../tfs-server/admin/change-service-account-password.md).  
+
+     [Open the Team Foundation Administration console](/tfs/server/ref/command-line/open-admin-console). If a Network Service account is used, [change it to a domain account](/tfs/server/admin/change-service-account-password).  
   
 -   **Service account for the Project Server Event Handler**  
   
@@ -334,8 +337,8 @@ ms.date: 03/16/2017
   
 ##  <a name="add_tfadmingroup"></a> 5. Add user accounts to Team Foundation Administrators group  
  **Required for:** ![Project Server 2010 Classic Mode](_img/alm_tfs-ps_classicmode.png "ALM_TFS-PS_ClassicMode"), ![Project Server 2013 Permission Mode](_img/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode"), and ![Project Server 2013 SharePoint Mode](_img/alm_tfs-ps_spmode.png "ALM_TFS-PS_SPMode")  
-  
-1.  On the application-tier server, [Open the Team Foundation Administration Console](../../tfs-server/command-line/open-admin-console.md), and open **Group Membership**.  
+
+1.  On the application-tier server, [Open the Team Foundation Administration Console](/tfs/server/command-line/open-admin-console), and open **Group Membership**.  
   
      ![Application tier, choose Group Membership](_img/alm_tac_groupmembership.png "ALM_TAC_GroupMembership")  
   
@@ -373,7 +376,7 @@ ms.date: 03/16/2017
   
 -   **Reader** role: Users who modify enterprise project plans that are mapped to a team project.  
   
- For more info, see [Add users to team projects](../../security/add-users-team-project.md).
+ For more info, see [Add users to team projects](../../organizations/security/add-users-team-project.md).
   
 ## Permission checklist  
  Use the following checklist to review that all permissions have been set according to your version and authentication mode. Remember that permissions must be granted to accounts for all PWA instances, team projects, and project collections that will participate in data synchronization between TFS and Project Server. If you customize a role or security categories for a role, you might inadvertently remove required permissions.  

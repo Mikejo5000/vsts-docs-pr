@@ -1,1 +1,5 @@
-<p><b>VSTS</b></p>
+---
+ms.topic: include
+---
+
+**VSTS**

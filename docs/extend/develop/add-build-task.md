@@ -2,10 +2,13 @@
 title: Add a Build or Release Task | Extensions for VSTS
 description: Add a custom build or release task in an extension for Visual Studio Team Services
 ms.assetid: 98821825-da46-498e-9b01-64d3a8c78ea0
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-ecosystem
+ms.topic: conceptual
 ms.manager: douge
+monikerRange: '>= tfs-2017'
 ms.author: elbatk
+author: elbatk
 ms.date: 08/22/2016
 ---
 
@@ -16,13 +19,14 @@ These tasks will appear next to Microsoft-provided tasks in the Add Step wizard:
 
 ![Build task catalog for extensions in VSTS](_img/build-task-ext-choose-task.png)
 
+To learn more about the new cross-platform build/release system, see [Team Foundation Build & Release](../..//pipelines/overview.md). 
 
-To learn more about the new cross-platform build/release system, see [Team Foundation Build & Release](../..//build-release/overview.md). 
+> **Note:** This article covers agent tasks in agent-based extensions. For information on server tasks/server-based extensions, checkout the [Server Task GitHub Documentation](https://github.com/Microsoft/vsts-tasks/blob/master/docs/authoring/servertaskauthoring.md).
 
 ## Preparation and required setup for this tutorial
 In order to create extensions for VSTS, there are some prerequisite software and tools you'll need:
 
-- A **VSTS account**, more information can be found [here](https://www.visualstudio.com/en-us/products/visual-studio-team-services-vs.aspx)
+- A **VSTS account**, more information can be found [here](https://visualstudio.microsoft.com/en-us/products/visual-studio-team-services-vs.aspx)
 - **A text editor**. For many of the tutorials we used `Visual Studio Code`, which can be downloaded [here](https://code.visualstudio.com/)
 - The latest version of **node**, which can be downloaded [here](https://nodejs.org/en/download/)
 <a name="cli" />
@@ -143,7 +147,7 @@ Here is a description of some of the components of the `task.json` file.
 >[!NOTE]
 >For a more in-depth look into the task.json file, or to learn how to bundle multiple versions in your extension, check out the **[build/release task reference](./build-task-schema.md)**
 
-You can explore the **[vso-agent-tasks](https://github.com/Microsoft/vso-agent-tasks/tree/master/Tasks)** repository on GitHub for multiple examples ([Grunt](https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/Grunt) is a good one).        
+You can explore the **[vso-agent-tasks](https://github.com/Microsoft/vso-agent-tasks/tree/master/Tasks)** repository on GitHub for multiple examples ([Grunt](https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/GruntV0) is a good one).        
 
 <a name="extensionmanifest" />
 ## Step 2: Create the extension manifest file

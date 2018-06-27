@@ -1,11 +1,13 @@
 ---
-title: Stories Overview Report (Agile) | TFS
+title: Stories Overview Report (Agile)
+titleSuffix: TFS 
+ms.prod: devops
+ms.technology: devops-analytics
+ms.topic: reference
 description: Lists all user stories, filtered by area and iteration and in order of importance.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
 ms.assetid: 2b21601e-c737-4eda-b836-87517e19cf63
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 10/17/17
 ---
 
@@ -41,7 +43,7 @@ The Stories Overview report lists all user stories, filtered by area and iterati
   
  **Test Status**  
   
--   **Test Points**: A numeric value that represents the number of pairings of test cases with test configurations in a specific test suite. For more information about test points, see [Reporting on testing progress for test plans](../../manual-test/getting-started/track-test-status.md).  
+-   **Test Points**: A numeric value that represents the number of pairings of test cases with test configurations in a specific test suite. For more information about test points, see [Reporting on testing progress for test plans](../../test/track-test-status.md).  
   
 -   **Test Results**: A numeric value and visual representation that shows the percentage of test cases, grouped according to the status of their most recent test run, where the options are **Passed** (green), **Failed** (red), or **Not Run** (black).  
   

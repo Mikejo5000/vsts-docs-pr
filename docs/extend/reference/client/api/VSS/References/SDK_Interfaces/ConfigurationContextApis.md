@@ -2,11 +2,14 @@
 title: VSS/References/SDK.Interfaces ConfigurationContextApis API | Extensions for Visual Studio Team Services
 description: MVC api configuration
 ms.assetid: 1839096e-8cb0-cb2f-de48-f77d726f53ed
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-ecosystem
 generated: true
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
+ms.topic: article
+monikerRange: '>= tfs-2017'
 ms.date: 08/04/2016
 ---
 

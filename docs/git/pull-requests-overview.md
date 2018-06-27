@@ -1,12 +1,14 @@
 ---
 title: Pull requests | VSTS & TFS  
 description: Learn about pull requests in VSTS & TFS  
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git 
+ms.prod: devops
+ms.technology: devops-code-git 
 ms.assetid: 36A4986E-BFB8-422B-BFC9-8A0CB75D0603    
 ms.manager: douge
 ms.author: sdanie
-ms.date: 03/14/2018
+author: steved0x
+ms.topic: overview
+ms.date: 04/19/2018
 layout: LandingPage
 monikerRange: '>= tfs-2013'
 ---
@@ -89,7 +91,7 @@ You want reviewers that will know how your code works, but try to also include d
 Provide a clear description of your changes and provide a build of your code that has your fix or feature running in it.
 
 Reviewers should make an effort to provide feedback on changes they don't agree with.
-Identify the the issue and give a specific suggestions on what you would do differently.
+Identify the issue and give a specific suggestions on what you would do differently.
 This feedback has clear intent and is easy for the owner of the pull request to understand.
 The pull request owner should reply to the comments, accepting the suggestion or explaining why the suggested change isn't ideal.
 Sometimes a suggestion is good, but the changes are outside the scope of the pull request.
@@ -278,3 +280,6 @@ Pull requests and branch policies enable teams to enforce many best practices re
         </a>
     </li>
 </ul>
+
+## Videos 
+> [!VIDEO https://www.youtube.com/embed/J_DHkUKxI0E?start=0]

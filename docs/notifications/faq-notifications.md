@@ -2,12 +2,13 @@
 title: Notifications FAQs
 titleSuffix: VSTS & TFS
 description: General q and a about notifications set in Visual Studio Team Services or Team Foundation Server 
-ms.prod: vs-devops-alm
-ms.technology: collaborate
-ms.assetid: 
+ms.prod: devops
+ms.technology: devops-collab
 toc: show
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 09/01/2017
 monikerRange: '>= tfs-2015'
 ---
@@ -36,7 +37,7 @@ Previously each recipient would receive their own individually-addressed email, 
 ## Related notes
 
 - [About notifications](about-notifications.md)
-- [Manage personal notifications](/vsts/collaborate/manage-team-notifications?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json) 
+- [Manage personal notifications](manage-team-notifications.md) 
 - [Unsubscribe from a notification](unsubscribe-default-notification.md) 
 
 

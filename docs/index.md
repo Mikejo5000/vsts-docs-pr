@@ -1,9 +1,11 @@
 ---
-title: VSTS and TFS Documentation | VSTS & TFS 
+title: VSTS and TFS Documentation 
+titleSuffixe: VSTS & TFS 
 description: Docs for DevOps and Agile tools provided by Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) 
 layout: HubPage 
 hide_bc: true
-ms.prod: vs-devops-alm 
+ms.topic: hub-page
+ms.prod: devops 
 ms.technology: vs-devops-overview 
 ms.assetid: B13C10AF-4FBC-493A-869F-79BABD6D453A 
 ms.manager: douge 
@@ -35,7 +37,7 @@ featureFlags:
                 </a>
             </li>
             <li>
-                <a href="https://www.visualstudio.com/learn/devopsmsft-overview/">
+                <a href="https://docs.microsoft.com/azure/devops">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
@@ -110,7 +112,7 @@ featureFlags:
                                                 <h3>Continuous integration &amp; delivery</h3>
                                                 <ul class="noBullet">
                                                     <li><a class="barLink" href="/vsts/deploy-azure/">Deploy to Azure</a></li>
-                                                    <li><a class="barLink" href="/vsts/build-release/">Build and Release</a></li>
+                                                    <li><a class="barLink" href="/vsts/pipelines/">Build and Release</a></li>
                                                     <li><a class="barLink" href="/vsts/package/">Package Management</a></li>
                                                 </ul>
                                             </div>
@@ -125,8 +127,8 @@ featureFlags:
                                             <div class="cardText">
                                                 <h3>Agile</h3>
                                                 <ul class="noBullet">
-                                                    <li><a class="barLink" href="/vsts/work/scrum/index">Scrum</a></li>
-                                                    <li><a class="barLink" href="/vsts/work/kanban/index">Kanban</a></li>
+                                                    <li><a class="barLink" href="/vsts/work/scrum/index">Sprints (Scrum)</a></li>
+                                                    <li><a class="barLink" href="/vsts/work/kanban/index">Boards (Kanban)</a></li>
                                                     <li><a class="barLink" href="/vsts/report/dashboards/index">Dashboards</a></li>
                                                 </ul>
                                             </div>
@@ -141,9 +143,9 @@ featureFlags:
                                             <div class="cardText">
                                                 <h3>Test your code</h3>
                                                 <ul class="noBullet">
-                                                    <li><a class="barLink" href="/vsts/build-release/test/index">Continuous Testing</a></li>
-                                                    <li><a class="barLink" href="/vsts/manual-test/index">Exploratory &amp; Manual Testing</a></li>
-                                                    <li><a class="barLink" href="/vsts/load-test/index">Load Testing</a></li>
+                                                    <li><a class="barLink" href="/vsts/pipelines/index">Continuous Testing</a></li>
+                                                    <li><a class="barLink" href="/vsts/test/index">Exploratory &amp; Manual Testing</a></li>
+                                                    <li><a class="barLink" href="/vsts/test/load-test/index">Load Testing</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -161,13 +163,13 @@ featureFlags:
                                                         <a class="barLink" href="/vsts/marketplace/overview"><img src="_img/index/team-services-marketplace.svg" alt="" />Marketplace</a>
                                                     </li>
                                                     <li>
-                                                        <a class="barLink" href="https://www.visualstudio.com/learn/what-is-git/"><img src="_img/index/team-services-git.svg" alt="" />Learn about Git</a>
+                                                        <a class="barLink" href="/azure/devops/git/what-is-git"><img src="_img/index/team-services-git.svg" alt="" />Learn about Git</a>
                                                     </li>
                                                     <li>
-                                                        <a class="barLink" href="https://www.visualstudio.com/learn/what-is-devops/"><img src="_img/index/team-services-devops.svg" alt="" />Learn about DevOps</a>
+                                                        <a class="barLink" href="/azure/devops/what-is-devops"><img src="_img/index/team-services-devops.svg" alt="" />Learn about DevOps</a>
                                                     </li>
                                                     <li>
-                                                        <a class="barLink" href="https://www.visualstudio.com/learn/what-is-agile/"><img src="_img/index/team-services-agile.svg" alt="" />Learn about Agile</a>
+                                                        <a class="barLink" href="/azure/devops/agile/what-is-agile"><img src="_img/index/team-services-agile.svg" alt="" />Learn about Agile</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -180,9 +182,10 @@ featureFlags:
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardText">
-                                                <h3>Command-line tool</h3>
+                                                <h3>Tools</h3>
                                                 <ul class="noBullet">
                                                     <li><a class="barLink" href="https://docs.microsoft.com/en-us/cli/vsts/overview"><img src="_img/index/command-line-window.svg" alt="" />VSTS CLI</a></li>
+                                                    <li><a class="barLink" href="demo-gen/index.md"><img src="_img/index/logo_vs-team-services.svg" alt="" />VSTS Demo Generator</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -211,20 +214,20 @@ featureFlags:
                                     </ul>
                                     <h3>Continuous Integration &amp; Delivery</h3>
                                     <ul>
-                                        <li><a class="barLink" href="/vsts/build-release/index">Build &amp; Release</a></li>
-                                        <li><a class="barLink" href="/vsts/build-release/test/index">Continuous Testing</a></li>
+                                        <li><a class="barLink" href="/vsts/pipelines/index">Build &amp; Release</a></li>
+                                        <li><a class="barLink" href="/vsts/pipelines/index">Continuous Testing</a></li>
                                         <li><a class="barLink" href="/vsts/deploy-azure/index">Deploy to Azure</a></li>
                                         <li><a class="barLink" href="/vsts/package/index">Package Management</a></li>
-                                        <li><a class="barLink" href="/vsts/build-release/concepts/library/index">Library Assets</a></li>
-                                        <li><a class="barLink" href="/vsts/build-release/concepts/agents/agents">Hosted and Private Agents</a></li>
-                                        <li><a class="barLink" href="/vsts/build-release/tasks">Task Reference</a></li>
+                                        <li><a class="barLink" href="/vsts/pipelines/library/index">Library Assets</a></li>
+                                        <li><a class="barLink" href="/vsts/pipelines/agents/agents">Microsoft-hosted and Self-hosted Agents</a></li>
+                                        <li><a class="barLink" href="/vsts/pipelines/tasks">Task Reference</a></li>
                                     </ul>
                                     <h3>Testing</h3>
                                     <ul>
                                         <li><a class="barLink" href="/visualstudio/test/unit-test-your-code">Unit and Functional Testing</a></li>
-                                        <li><a class="barLink" href="/vsts/manual-test/index">Exploratory &amp; Manual Testing</a></li>
-                                        <li><a class="barLink" href="/vsts/load-test/index">Load Testing</a></li>
-                                        <li><a class="barLink" href="/vsts/build-release/test/index">Continuous Testing</a></li>
+                                        <li><a class="barLink" href="/vsts/test/index">Exploratory &amp; Manual Testing</a></li>
+                                        <li><a class="barLink" href="/vsts/test/load-test/index">Load Testing</a></li>
+                                        <li><a class="barLink" href="/vsts/pipelines/index">Continuous Testing</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -234,8 +237,8 @@ featureFlags:
                                     <ul>
                                         <li><a class="barLink" href="/vsts/work/work-items/index">Work Items</a></li>
                                         <li><a class="barLink" href="/vsts/work/backlogs/index">Backlogs</a></li>
-                                        <li><a class="barLink" href="/vsts/work/kanban/index">Kanban</a></li>
-                                        <li><a class="barLink" href="/vsts/work/scrum/index">Scrum</a></li>
+                                        <li><a class="barLink" href="/vsts/work/kanban/index">Boards (Kanban)</a></li>
+                                        <li><a class="barLink" href="/vsts/work/scrum/index">Sprints (Scrum)</a></li>
                                         <li><a class="barLink" href="/vsts/work/track/index">Queries</a></li>
                                         <li><a class="barLink" href="/vsts/work/customize/index">Customization</a></li>
                                         <li><a class="barLink" href="/vsts/work/scale/index">Agile at Scale</a></li>
@@ -250,9 +253,9 @@ featureFlags:
                                     <h3>Collaboration</h3>
                                     <ul>
                                         <li><a class="barLink" href="/vsts/notifications/index">Notifications</a></li>
-                                        <li><a class="barLink" href="/vsts/collaborate/index">READMEs &amp; Wikis</a></li>
-                                        <li><a class="barLink" href="/vsts/search/index">Search</a></li>
-                                        <li><a class="barLink" href="/vsts/feedback/index">Feedback</a></li>
+                                        <li><a class="barLink" href="/vsts/project/wiki/index">READMEs &amp; Wikis</a></li>
+                                        <li><a class="barLink" href="/vsts/project/search/index">Search</a></li>
+                                        <li><a class="barLink" href="/vsts/project/feedback/index">Feedback</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -260,11 +263,11 @@ featureFlags:
                                 <div class="group">
                                     <h3>Admin</h3>
                                     <ul>
-                                        <li><a class="barLink" href="/vsts/accounts/index">Account Management</a></li>
-                                        <li><a class="barLink" href="/vsts/tfs-server/index">Server Administration (TFS)</a></li>
-                                        <li><a class="barLink" href="/vsts/security/index">Security and Identity</a></li>
+                                        <li><a class="barLink" href="/vsts/organizations/accounts/index">Account Management</a></li>
+                                        <li><a class="barLink" href="/tfs/server/index">Server Administration (TFS)</a></li>
+                                        <li><a class="barLink" href="/vsts/organizations/security/index">Security and Identity</a></li>
                                         <li><a class="barLink" href="/vsts/billing/index">Billing</a></li>
-                                        <li><a class="barLink" href="/vsts/settings/index">Scale and Configure Teams</a></li>
+                                        <li><a class="barLink" href="/vsts/organizations/settings/index">Scale and Configure Teams</a></li>
                                         <li><a class="barLink" href="/vsts/marketplace/index">Manage Extensions</a></li>
                                         <li><a class="barLink" href="/vsts/report/sharepoint-dashboards/">SharePoint Integration</a></li>
                                         <li><a class="barLink" href="/vsts/work/tfs-ps-sync/">Project Server Integration</a></li>
@@ -276,7 +279,7 @@ featureFlags:
                                         <li><a class="barLink" href="/vsts/service-hooks/index">Service Hooks</a></li>
                                         <li><a class="barLink" href="/vsts/report/extend-analytics/index">Extend Analytics with OData</a></li>
                                         <li><a class="barLink" href="https://docs.microsoft.com/en-us/rest/api/vsts/">REST APIs</a></li>
-                                        <li><a class="barLink" href="https://www.visualstudio.com/docs/integrate/extensions/reference/client/core-sdk">TypeScript APIs</a></li>
+                                        <li><a class="barLink" href="https://visualstudio.microsoft.com/docs/integrate/extensions/reference/client/core-sdk">TypeScript APIs</a></li>
                                     </ul>
                                     <h3>Marketplace</h3>
                                     <ul>
@@ -390,7 +393,7 @@ featureFlags:
                         <a href="#delivery">Continuous Integration &amp; Delivery</a>
                         <ul id="delivery" class="cardsA">
                             <li>
-                                <a href="/vsts/build-release/index">
+                                <a href="/vsts/pipelines/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -409,7 +412,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/build-release/test/index">
+                                <a href="/vsts/pipelines/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -467,7 +470,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/build-release/concepts/library/index">
+                                <a href="/vsts/pipelines/library/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -486,7 +489,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/build-release/concepts/agents/agents">
+                                <a href="/vsts/pipelines/agents/agents">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -496,7 +499,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Hosted &amp; Private Agents</h3>
+                                                    <h3>Microsoft-hosted &amp; Self-hosted Agents</h3>
                                                     <p>Add agents as needed to support your cloud build processes.</p>
                                                 </div>
                                             </div>
@@ -505,7 +508,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/build-release/tasks">
+                                <a href="/vsts/pipelines/tasks">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -549,7 +552,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/manual-test/index">
+                                <a href="/vsts/test/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -569,7 +572,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/load-test/index">
+                                <a href="/vsts/test/load-test/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -588,7 +591,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/build-release/test/index">
+                                <a href="/vsts/pipelines/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -663,7 +666,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Kanban</h3>
+                                                    <h3>Boards (Kanban)</h3>
                                                     <p>Manage the continuous flow of work from concept to completion.</p>
                                                 </div>
                                             </div>
@@ -682,7 +685,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Scrum</h3>
+                                                    <h3>Sprints (Scrum)</h3>
                                                     <p>Plan a sprint, use a task board in daily scrums, monitor sprint burndown.</p>
                                                 </div>
                                             </div>
@@ -854,7 +857,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/collaborate/index">
+                                <a href="/vsts/project/wiki/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -873,7 +876,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/search/index">
+                                <a href="/vsts/project/search/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -893,7 +896,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/feedback/index">
+                                <a href="/vsts/project/feedback/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -918,7 +921,7 @@ featureFlags:
                         <a href="#admin">Admin</a>
                         <ul id="admin" class="cardsA">
                             <li>
-                                <a href="/vsts/accounts/index">
+                                <a href="/vsts/organizations/accounts/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -938,7 +941,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/tfs-server/index">
+                                <a href="/tfs/server/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -957,7 +960,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/security/index">
+                                <a href="/vsts/organizations/security/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -996,7 +999,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/settings/index">
+                                <a href="/vsts/organizations/settings/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -1154,7 +1157,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.visualstudio.com/en-us/docs/integrate/api/overview">
+                                <a href="https://visualstudio.microsoft.com/en-us/docs/integrate/api/overview">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -1173,7 +1176,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.visualstudio.com/en-us/docs/integrate/extensions/reference/client/core-sdk">
+                                <a href="https://visualstudio.microsoft.com/en-us/docs/integrate/extensions/reference/client/core-sdk">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -1328,7 +1331,7 @@ featureFlags:
                                         <a class="barLink" href="https://github.com/Microsoft/vss-web-extension-sdk">Get Started</a>
                                     </li>
                                     <li>
-                                        <a class="barLink" href="https://www.visualstudio.com/en-us/docs/integrate/extensions/reference/client/core-sdk">API reference</a>
+                                        <a class="barLink" href="https://visualstudio.microsoft.com/en-us/docs/integrate/extensions/reference/client/core-sdk">API reference</a>
                                     </li>
                                 </ul>
                             </li>

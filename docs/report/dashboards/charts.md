@@ -2,23 +2,23 @@
 title: Status and trend work item, query-based charts
 titleSuffix: VSTS & TFS  
 description: Create status, progress, and trend charts from flat-based queries   in VSTS and Team Foundation Server  
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-reporting
+ms.prod: devops
+ms.technology: devops-analytics
 ms.assetid: EFAD32DB-8B19-4ACC-8F72-87CC5A513798  
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.topic: conceptual
 ms.date: 03/20/2018
 ---
 
 # Track progress by creating status and trend query-based charts 
 
-[!INCLUDE [temp](../_shared/vsts-tfs-header-17-15.md)] 
+[!INCLUDE [temp](../_shared/vsts-tfs-header-17-15.md)] 
 
 You can quickly view the status of work in progress by charting the results of a [flat-list query](../../work/track/using-queries.md). You can create several types of charts&mdash;such as pie, column, or trend&mdash;for the same query.  Charts support viewing a count of work items or a sum of values for select numeric fields, such as Remaining Work or Original Estimate. 
 
 >[!NOTE]  
->For examples of queries based on numeric fields, see [Query by numeric fields](../../work/track/query-numeric.md). For information on creating charts that track test progress and results, see [Track test status](../../manual-test/getting-started/track-test-status.md).  
+>For examples of queries based on numeric fields, see [Query by numeric fields](../../work/track/query-numeric.md). For information on creating charts that track test progress and results, see [Track test status](../../test/track-test-status.md).  
 
 For example, the following image illustrates four different charts created from the same flat-list query. The pie chart groups the 146 active bugs by priority, and the bar chart groups the bugs by team and their triage status. The last two chart show two different trend views of the active bugs over the last two weeks.  
 
@@ -26,24 +26,24 @@ For example, the following image illustrates four different charts created from 
 
 ## Prerequisites
 ::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
-- All valid users, including [stakeholders](../../security/get-started-stakeholder.md), can view charts
+- All valid users, including [stakeholders](../../organizations/security/get-started-stakeholder.md), can view charts
 - All members who belong to the Contributors group can create charts
 - To add a chart to a team dashboard, you must be a team admin or have [dashboard permissions](dashboard-permissions.md)
 - You can add charts to [multiple team dashboards](dashboards.md) and get access to the [widget catalog](widget-catalog.md), which is another way to add charts to a dashboard.  
 ::: moniker-end
 
 ::: moniker range="tfs-2015"
-- All valid users, including [stakeholders](../../security/get-started-stakeholder.md), can view charts
+- All valid users, including [stakeholders](../../organizations/security/get-started-stakeholder.md), can view charts
 - All members who belong to the Contributors group can create charts
 - You can pin charts to a team homepage, and with TFS 2015.1 and later versions, you can add charts to [multiple team dashboards](dashboards.md) and get access to the [widget catalog](widget-catalog.md)  
 ::: moniker-end
 
 ::: moniker range="tfs-2013"
-- All valid users, including [stakeholders](../../security/get-started-stakeholder.md), can view charts
+- All valid users, including [stakeholders](../../organizations/security/get-started-stakeholder.md), can view charts
 - All members who belong to the Contributors group can create charts
 ::: moniker-end
 
-To learn more about default groups, see [About permissions and groups](../../security/about-permissions.md).
+To learn more about default groups, see [About permissions and groups](../../organizations/security/about-permissions.md).
 
 
 ## Create a query-based chart  
@@ -61,7 +61,7 @@ To learn more about default groups, see [About permissions and groups](../../sec
 	- To group by team, include the Area Path or Node Name in the query or column options  
 	- To group by a custom field, include it in a query clause or column options (See [Customize your work tracking experience](../../work/customize/customize-work.md) to learn about adding a custom field.).
 
-	If you receive an error message when you close the chart editor, you need to request [Basic access](../../security/change-access-levels.md).
+	If you receive an error message when you close the chart editor, you need to request [Basic access](../../organizations/security/change-access-levels.md).
 
 3.	To sort the results, choose value or label as the sort option and then ascending or descending.  
 	 
@@ -149,7 +149,7 @@ The widget requires TFS 2015.2 or a later version. You add it to a team dashboar
 
 Now you know how to create status and trend charts for work items. A few things to keep in mind...
 
-- To create similar charts for tests, see [Track your test results](../../manual-test/getting-started/track-test-status.md)    
+- To create similar charts for tests, see [Track your test results](../../test/track-test-status.md)    
 - Charts you create for queries that are saved under Shared Queries are viewable by all team members and can be added to team dashboards or pinned to a team homepage   
 - Charts that you create for queries under your My Queries folder are visible only to you   
 - You can copy and email the URL of any chart page to share it with a team member 
@@ -160,7 +160,7 @@ Also, from the web portal, you can view the following charts:
 - [Cumulative flow diagram](cumulative-flow.md)  
 - [Team velocity](team-velocity.md)  
 - [Sprint burndown charts](../../work/scrum/sprint-burndown.md)  
-- [Test progress and test results](../../manual-test/getting-started/track-test-status.md)  
+- [Test progress and test results](../../test/track-test-status.md)  
 - [Add widgets and chart to a dashboard](add-widget-to-dashboard.md)
 - [Widget catalog charts](widget-catalog.md)    
 

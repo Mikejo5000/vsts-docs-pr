@@ -2,11 +2,14 @@
 title: VSS/References/VSS.SDK.Interfaces IHostDialogService API | Extensions for Visual Studio Team Services
 description: Service which manages showing dialogs in the parent frame
 ms.assetid: 8f15dcd0-c8e1-ba70-5a9b-daa6f4c97f38
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-ecosystem
 generated: true
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
+ms.topic: article
+monikerRange: '>= tfs-2017'
 ms.date: 08/04/2016
 ---
 

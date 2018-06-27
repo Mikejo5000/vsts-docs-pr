@@ -2,10 +2,12 @@
 title: Reconcile differences between two folders
 description: Reconcile differences between two folders
 ms.assetid: 8776e3dd-fc70-422c-a191-81b22a989403
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
@@ -19,7 +21,7 @@ After you compare a server folder and a local folder, you can reconcile the diff
 
 **Required Permissions**
 
-To perform these procedures, you must have the **Read** and **Check out** permissions set to **Allow**. For more information, see [Permissions and groups reference](../security/permissions.md).
+To perform these procedures, you must have the **Read** and **Check out** permissions set to **Allow**. For more information, see [Permissions and groups reference](../organizations/security/permissions.md).
 
 >**Note:**
 >  To reconcile two local folders or files, you do not need Team Foundation Server permissions.

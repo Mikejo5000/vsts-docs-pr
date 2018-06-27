@@ -2,10 +2,12 @@
 title: Use NuGet with VSTS feeds
 description: Authenticating to feeds with NuGet in VSTS
 ms.assetid: 10665DBC-846E-4192-8CAB-D5A4C6E40C65
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-package
+ms.prod: devops
+ms.technology: devops-artifacts
 ms.manager: douge
-ms.author: amullans
+ms.author: elbatk
+author: elbatk
+ms.topic: conceptual
 ms.date: 09/01/2017
 monikerRange: 'vsts'
 ---
@@ -15,7 +17,7 @@ monikerRange: 'vsts'
 **VSTS**
 
 > [!NOTE]
-> This page covers interactive scenarios. In Team Build, use the NuGet step to [restore](/vsts/build-release/packages/nuget-restore) and [publish](/vsts/build-release/packages/nuget-pack-publish) packages. 
+> This page covers interactive scenarios. In Team Build, use the NuGet step to [restore](/vsts/pipelines/packages/nuget-restore) and [publish](/vsts/pipelines/targets/nuget) packages. 
 
 [!INCLUDE [nuget-3x](../_shared/nuget/nuget-3x.md)]
 

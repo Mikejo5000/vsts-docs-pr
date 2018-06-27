@@ -1,9 +1,9 @@
 ---
-title: Overview of VSTS & TFS services 
-description: Understand the services that support the hosted cloud offering of Visual Studio Team Services (VSTS) and on-premises Team Foundation Server (TFS)  
-ms.technology: vs-devops-overview 
-ms.prod: vs-devops-alm
-ms.topic: get-started-article
+title: What do I get with VSTS or TFS
+description: Understand the services provided by in Visual Studio Team Services & Team Foundation Server 
+ms.technology: devops-new-user 
+ms.prod: devops
+ms.topic: overview
 ms.assetid: D861983F-CC66-4314-A3C6-E2F30A37923D
 ms.manager: douge
 ms.author: kaelli
@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2013'
 ---
 
 
-# Overview of VSTS and TFS services
+# What do I get with VSTS or TFS?
  
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -94,7 +94,7 @@ Use this hub to implement continuous integration and continuous delivery.
 - **Release management**: Supports a rapid release cadence and management of simultaneous releases. You can configure release definitions that represent your environments from development to production. Run automations to deploy your app to each environment. Add approvers to sign off that the app has been successfully deployed in an environment. Create your release manually or automatically from a build. Then track your releases as they are deployed to various environments.
 
 
-To learn more, see [Continuous integration on any platform](../build-release/overview.md). 
+To learn more, see [Continuous integration on any platform](../pipelines/overview.md). 
 
 
 ## Test
@@ -114,7 +114,7 @@ Test **Test** hub provides support for the following:
 - Browser-based test execution on any platform  
 - Real-time charts for tracking test activity.  
 
-To learn more, see [Testing overview](../manual-test/index.md).
+To learn more, see [Testing overview](../test/index.md).
 
 ## Collaboration services
 
@@ -142,11 +142,11 @@ For the latest set of supported services, see [Integrate with service hooks](../
 
 The following services support your DevOps operations.
 
-- Cloud-based build and deployment hosted agents  
-- On-premises private agents to support build and deployment  
+- Cloud-based build and deployment Microsoft-hosted agents  
+- On-premises self-hosted agents to support build and deployment  
 - Cloud-based performance/load testing lets you load test your code by simulating high traffic  
 
-To learn more, see [Pricing](https://www.visualstudio.com/team-services/pricing/).
+To learn more, see [Pricing](https://visualstudio.microsoft.com/team-services/pricing/).
 
 
 ## Azure services
@@ -176,7 +176,7 @@ There are a number of features and tasks associated with administrating a collab
 - [Key concepts](concepts.md)  
 - [Client-server tools](tools.md) 
 - [Software development roles](roles.md)  
-- [Pricing](https://www.visualstudio.com/team-services/pricing/)
+- [Pricing](https://visualstudio.microsoft.com/team-services/pricing/)
 
 
 <!---

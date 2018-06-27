@@ -1,13 +1,14 @@
 ---
-title: Billing overview for VSTS 
-description: Manage billing overview VSTS (Visual Studio Team Services)
-ms.topic: get-started-article
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-setup
+title: Billing overview for Visual Studio Team Services
+description: Overview of billing management tasks in VSTS (Visual Studio Team Services), including how to set up billing, make purchases, and change Azure subscription for billing
+ms.prod: devops
+ms.technology: devops-billing
 ms.assetid: d5bd13e2-aa7c-4191-aefd-bd9f05663e7b
+ms.topic: overview
 ms.manager: douge
 ms.author: chcomley
-ms.date: 4/06/2018
+author: chcomley
+ms.date: 04/06/2018
 ---
 [//]: # (monikerRange: 'vsts')
 
@@ -44,7 +45,7 @@ The Free Tier includes:
 
 The first time that you set up billing for your VSTS account - whether you do this via the Azure portal or as part of making a purchase in the Visual Studio Marketplace, you will need:
 
-* [VSTS project collection administrator or account owner permissions](../accounts/faq-add-delete-users.md#find-owner)
+* [VSTS project collection administrator or account owner permissions](../organizations/accounts/faq-add-delete-users.md#find-owner)
 * [The **owner** or **contributor** role on your Azure subscription](add-backup-billing-managers.md)
 
 You will also need these same permissions/roles to make subsequent changes, such as changing paid quantities or adding additional paid services in your VSTS account.
@@ -58,4 +59,4 @@ You will also need these same permissions/roles to make subsequent changes, such
 ## Related articles
 
 * [VSTS pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
-* [VSTS billing support](https://www.visualstudio.com/team-services/support/)
+* [VSTS billing support](https://visualstudio.microsoft.com/team-services/support/)

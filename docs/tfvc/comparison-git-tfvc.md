@@ -2,10 +2,12 @@
 title: Git and TFVC version control 
 description: Choosing which version control to use in VSTS
 ms.assetid: A4D7295A-22AB-4990-BE68-EF81A1C31F01
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: conceptual
 ms.date: 05/12/2017
 monikerRange: '>= tfs-2015'
 ---
@@ -165,7 +167,7 @@ Need more help to make a choice? These charts might help.
 </tr>
 <tr>
 <td>Builds (automated by TFBuild)</td>
-<td>You can use all [TFBuild](../build-release/overview.md) capabilities to build any combination of content you want within the team project collection.</td>
+<td>You can use all [TFBuild](../pipelines/overview.md) capabilities to build any combination of content you want within the team project collection.</td>
 <td>You can use most TFBuild capabilities to build one team project at a time, and one or more repositories at a time.
 </td>
 </tr>
@@ -177,7 +179,7 @@ Need more help to make a choice? These charts might help.
 </td>
 </tr>
 <tr><td>Files</td>
-<td><p>Each team project contains all files under a single root path (for example: **$/FabrikamTFVC**). You can [apply permissions](../security/permissions.md) at the file level. You can [lock files](lock-unlock-folders-files.md).</p>
+<td><p>Each team project contains all files under a single root path (for example: **$/FabrikamTFVC**). You can [apply permissions](../organizations/security/permissions.md) at the file level. You can [lock files](lock-unlock-folders-files.md).</p>
 
 <p>You can browse your files on the web portal and using [Source Control Explorer](use-source-control-explorer-manage-files-under-version-control.md) in Visual Studio.</p>
 

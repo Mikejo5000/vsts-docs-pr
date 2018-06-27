@@ -1,9 +1,9 @@
 ---
 title: Use work item form controls to track your work
 titleSuffix: VSTS & TFS 
-description: Use the controls provided in the work item form to update status, link work items, and more in Visual Studio Team Services (VSTS) and Team Foundation Server  
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+description: Use work item form controls to update status, link work items, and more in Visual Studio Team Services & Team Foundation Server  
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: A9AB9B95-61B4-41E7-AE7A-B96CD4AF9B33  
 ms.topic: reference
 ms.manager: douge
@@ -43,7 +43,7 @@ As the following image shows, each work item form comes with a number of control
 | ![Attachment tab icon](../backlogs/_img/icon-attachments-tab-wi.png) | Open Attachments tab   |
 | ![full screen icon](../_img/icons/fullscreen_icon.png) / ![exit full screen icon](../_img/icons/exitfullscreen_icon.png)     | Enter or exit full display mode of a section within the form   |
 |![Collapse section icon](../_img/icons/collapse-wi-section.png)/![Expand section icon](../_img/icons/expand-wi-section.png) | Collapse or expand a section within the form   |  
-| ![New linked work icon icon](../_img/icons/new-linked-work-item.png) | Add new work item and link to existing work item (May appear under ![Actions icon](../_img/icons/actions-icon.png) Actions menu)  |  
+| ![New linked work item icon](../_img/icons/new-linked-work-item.png) | Add new work item and link to existing work item (May appear under ![Actions icon](../_img/icons/actions-icon.png) Actions menu)  |  
 | ![Change work item type icon](../_img/icons/change-type-icon.png) | [Change work item type](../backlogs/remove-delete-work-items.md) (Appears under ![Actions icon](../_img/icons/actions-icon.png) Actions menu)  | 
 | ![Change team project icon](../_img/icons/change-team-project-icon.png) | [Move work item to a different team project](../backlogs/remove-delete-work-items.md) (Appears under ![Actions icon](../_img/icons/actions-icon.png) Actions menu)  | 
 | ![Clone icon](../_img/icons/clone-icon.png) | [Copy work item and optionally change work item type](../backlogs/copy-clone-work-items.md#copy-clone) (Appears  under ![Actions icon](../_img/icons/actions-icon.png) Actions menu)  |  
@@ -152,7 +152,7 @@ Within the discussion section, you can use the [**@mention** control](../../noti
 To reference a work item, use the [**#ID** control](../../notifications/add-links-to-work-items.md). Type **#** and a list of work items that you've recently referenced will appear from which you can select.  
 
 > [!IMPORTANT]  
->For on-premises TFS, [you must configure an SMTP sever](../../tfs-server/admin/setup-customize-alerts.md) in order for team members to receive notifications. 
+>For on-premises TFS, [you must configure an SMTP sever](/tfs/server/admin/setup-customize-alerts) in order for team members to receive notifications. 
 
 
 <a id="copy-url">  </a>
@@ -181,7 +181,7 @@ Type an ID in the Search work items box and then choose the search icon.
 
 Use the ![context menu icon](../_img/icons/context_menu.png) context menu to add a filter based on [assignment, status, a keyword, or a work item type](../track/example-queries.md). 
 
-Or, using the ![context menu icon](../_img/icons/context_menu.png) context menu, add filters to find items based on assignment, status, a keyword, or a work item type. For example, enter **A=@Me T=Task** to list all tasks assigned to you. Use the **=**, **:**, and **"“** operators to specify the operations: Equals, Contains, and Not, respectively.  
+Or, using the ![context menu icon](../_img/icons/context_menu.png) context menu, add filters to find items based on assignment, status, a keyword, or a work item type. For example, enter **A=@Me T=Task** to list all tasks assigned to you. Use the **=**, **:**, and **-** operators to specify the operations: Equals, Contains, and Not, respectively.  
 
 Once you have a results list, you can [modify the filter criteria to refine your search results](../track/using-queries.md).
 

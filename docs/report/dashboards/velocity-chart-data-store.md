@@ -1,20 +1,21 @@
 ---
-title: View and work with the work tracking datastore velocity chart
+title: View built-in data store velocity chart
 titleSuffix: VSTS & TFS 
-description: Track team velocity across several sprints using the work tracking datastore velocity chart   
-ms.technology: vs-devops-reporting  
-ms.prod: vs-devops-alm
-ms.assetid: 
-ms.topic: get-started-article
+description: Track team velocity across several sprints using the work tracking datastore velocity chart in Visual Studio Team Services & Team Foundation Server  
+ms.technology: devops-analytics  
+ms.prod: devops
+ms.topic: tutorial
 ms.reviewer: greggboe
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
+monikerRange: '>= tfs-2013'
 ms.date: 12/14/2017
 ---
 
 # View and work with the built-in team velocity chart 
 
-[!INCLUDE [temp](../_shared/vsts-tfs-header-17-15.md)] 
+[!INCLUDE [temp](../_shared/vsts-tfs-header-17-15.md)] 
 
 Teams track their velocity to help them determine how much work they can perform sprint-over-sprint. The built-in team velocity chart provides an indication of how much work a team can complete during a sprint. The chart is only available for the product backlog and is based on the sum of estimates made to Effort (PBIs), Story Points (user stories), or Size (requirements). Velocity calculations rely on the team's ability to estimate backlog items. 
 
@@ -45,7 +46,7 @@ Velocity will vary depending on team capacity, sprint over sprint. However, over
 
 1.	From the backlog page, open the velocity chart.  
 
-	![Click the the velocity chart in the upper right area of the page](_img/velocity-forecast-open-chart.png)  
+	![Click the velocity chart in the upper right area of the page](_img/velocity-forecast-open-chart.png)  
 
 	For charts to appear, your team must perform these activities: 
 	- Select sprints for your team  
@@ -76,7 +77,7 @@ For your team to gain the greatest utility from the velocity chart, follow these
 *	Define and size backlog items to [minimize variability](velocity-guidance.md).  
 *	Determine how your team wants to [treat bugs](../../work/customize/show-bugs-on-backlog.md). If your team chooses to treat bugs like requirements, bugs will show up on the backlog and be counted within the Velocity chart and forecasting. 
 *	[Set your team's area path](../../work/customize/set-area-paths.md). The forecast tool will forecast those items based on your team's default settings. These settings can specify to include items in area paths under the team's default or exclude them.     
-*	Don't  create a hierarchy of backlog items and bugs. The Kanban board, sprint backlog, and task board only show the last node in a hierarchy, called the leaf node. For example, if you link items within a hierarchy that is four levels deep, only the items at the fourth level appear on the Kanban board, sprint backlog, and task board. <br/>Instead of nesting requirements, bugs, and tasks, we recommend that you maintain a flat list─only creating parent-child links one level deep between items. Use [Features to group requirements or user stories](../../work/backlogs/organize-backlog.md). You can quickly map stories to features, which creates parent-child links in the background.  
+*	Don't  create a hierarchy of backlog items and bugs. The Kanban board, sprint backlog, and task board only show the last node in a hierarchy, called the leaf node. For example, if you link items within a hierarchy that is four levels deep, only the items at the fourth level appear on the Kanban board, sprint backlog, and task board. <br/>Instead of nesting requirements, bugs, and tasks, we recommend that you maintain a flat list-only creating parent-child links one level deep between items. Use [Features to group requirements or user stories](../../work/backlogs/organize-backlog.md). You can quickly map stories to features, which creates parent-child links in the background.  
 *	At the end of the sprint, update the status of those backlog items that the team has fully completed. Incomplete items should be moved back to the product backlog and considered in a future sprint planning meeting.   
 
 ## Add other teams

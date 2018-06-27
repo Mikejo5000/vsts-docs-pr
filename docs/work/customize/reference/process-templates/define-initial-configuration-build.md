@@ -1,11 +1,13 @@
 ---
-title: Define the initial configuration of Team Foundation Build | VSTS & TFS
-description: Customize the security permissions for build activities of all team projects that are created with the same process template - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Define the initial configuration of Team Foundation Build 
+titleSuffix: VSTS & TFS
+description: Customize the security permissions for build activities of all team projects that are created with the same process template for Team Foundation Server  
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 93d86d59-dd49-43de-9bab-f4a9e17071a1
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: reference
 ms.date: 10/11/2017
 ---
 
@@ -21,7 +23,7 @@ You can customize a team project's initial build permissions that are used by Te
 >  build template files. Also, for VSTS and for TFS 2018 and later versions, 
 >  customization of build permissions using the build plug-in isn't supported. 
 >  Instead, default permissions are set for project-level and collection-level  
->  security groups for [build definitions (object-level)](../../../../security/permissions.md#build). 
+>  security groups for [build definitions (object-level)](../../../../organizations/security/permissions.md#build). 
    
   
 The names of the file, the folder, and the plug-in for the default process templates are as follows:  

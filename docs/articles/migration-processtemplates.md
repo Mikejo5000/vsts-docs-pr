@@ -1,9 +1,15 @@
 ---
 title: Validation of process templates for migration import from TFS to Visual Studio Team Services (VSTS) | VSTS & TFS
 description: Guidance for fixing common TfsMigrator process template issues.
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-overview
+ms.prod: devops
+ms.topic: article
+ms.technology: devops-learn
 ms.contentid: ee8c290d-0b48-4cbd-b7fd-7afb9591c169
+ms.manager: douge
+ms.author: elbatk
+author: elbatk
+monikerRange: '>= tfs-2013'
+ms.date: 04/13/2018
 ---
 
 # Process Templates

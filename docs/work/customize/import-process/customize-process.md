@@ -2,11 +2,11 @@
 title: Customize a process to import using Hosted XML
 titleSuffix: VSTS
 description: Customize a Hosted XML process to support custom fields, work item types, global lists, and process configuration  
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: AA5B592D-8F76-4974-9918-B8B523A6F23F
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 monikerRange: 'vsts'
 ms.date: 03/20/2018
 ---
@@ -16,7 +16,7 @@ ms.date: 03/20/2018
 <b>VSTS (Hosted XML)</b>   
  
 > [!IMPORTANT]  
-> **Feature availability:**&#160;&#160; With the Hosted XML process model, you customize work tracking by updating select XML definition files of a process template. This feature is only available for accounts that have been migrated to VSTS using the [TFS Database Import Service](https://aka.ms/TFSDataImport).  
+> **Feature availability:**&#160;&#160; With the Hosted XML process model, you customize work tracking by updating select XML definition files of a process template. This feature is only available for organizations that have been migrated to VSTS using the [TFS Database Import Service](https://aka.ms/TFSDataImport).  
 > 
 >To learn more about customization and process models, see [Customize work tracking](../customize-work.md). 
 
@@ -150,7 +150,7 @@ In addition, your process must pass the following validation checks:
   * Templates with the same name but a different version GUID will generate an error.  
   * Process names cannot contain the following special characters:  
      ```. , ; ' ` : / \ * | ? " & % $ ! + = ( ) [ ] { } < >  ```  
-    See [Naming restrictions](../../../collaborate/naming-restrictions.md) for additional constraints.
+    See [Naming restrictions](../../../organizations/settings/naming-restrictions.md) for additional constraints.
 * Process folders can't contain any .exe files. While you may be able to import the process that contains a .exe file, project creation will fail.
 * Process total size should be 2 GB or less, or project creation will fail.
  
@@ -290,7 +290,7 @@ For a description of state category and mappings, see [Workflow states and state
 <a id="wit-global-list-definitions"></a>
 ### Global lists
 
-For the Hosted XMl process model, the following limits are placed on global list import: 
+For the Hosted XML process model, the following limits are placed on global list import: 
 - Total of 64 global lists
 - Total of 512 items per list
 - Approximately 10K items can be defined total within all global lists specified across all WITs. 

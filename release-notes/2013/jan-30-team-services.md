@@ -1,8 +1,8 @@
 ---
 title: Team Foundation Service updates - Jan 30
 description: VSTS release notes for January 30 2013
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-articles
+ms.prod: devops
+ms.technology: vsts-release-notes
 ms.manager: douge
 ms.assetid: e856a07a-2d14-4846-8db7-0741898f2c85
 ms.date: 06/01/2016
@@ -62,7 +62,7 @@ And, we are working on an integrated Git experience in Visual Studio. Note, it�
 
 Our approach to Git will be to fully integrate it into our devops experience – you can link commits to work items, do automated builds of Git repos, get a fully integrated VS experience and access it from any platform. We think adding a Git option will help TFS be applicable to even more work styles.
 
-You can read more about how to get started with the new Git support in our learn content [here](https://www.visualstudio.com/get-started/share-your-code-in-GIT-vs).
+You can read more about how to get started with the new Git support in our learn content [here](https://docs.microsoft.com/vsts/git/share-your-code-in-git-vs-2017?view=vsts).
 
 What we released today is just the beginning. The Git support today is just scratching the surface of what we plan to provide. There’s enough there to get going and use it in real projects. Expect that in every sprint over the next several months it will continue to advance.
 

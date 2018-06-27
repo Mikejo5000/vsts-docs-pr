@@ -1,11 +1,11 @@
 ---
 title: Project field mappings | TFS
 description: Understand how data is mapped between Project and Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 0da29778-11c2-42e1-8876-e51abbc799f6
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 02/22/2017  
 ---
 
@@ -36,7 +36,7 @@ You can also prevent team members from changing calculated field values in Team 
 |**TFS work item field type**|**Microsoft Project field type**|  
 |----------------------------------|--------------------------------------|  
 |DateTime|Datetime.|  
-|Double|Work, units, percentages, fractions, and any field type with a range of ±5.0 × 10<sup>-324</sup> to ±1.7 × 10<sup>308</sup>.|  
+|Double|Work, units, percentages, fractions, and any field type with a range of &plusmn;5.0 × 10<sup>-324</sup> to &plusmn;1.7 × 10<sup>308</sup>.|  
 |History|Not Supported.|  
 |Html|Not Supported.|  
 |Integer|Work, units, numbers, and any field type with a range of -2,147,483,648 to 2,147,483,647.|  

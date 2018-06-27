@@ -1,13 +1,15 @@
 ---
 title: Setting up GitHub Source Linking with VSTS Build & VSTS Symbol Server
 description: Using build to index and publish symbols from a VSTS-hosted Git repository works out of the gate, but with a little bit of extra work you can make it work on GitHub-hosted repositories as well.
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-package
+ms.prod: devops
+ms.technology: devops-artifacts
 ms.assetid: 3cb56371-3ef2-4bd9-871b-ec6cfa93bedf
 ms.manager: douge
 ms.date: 03/02/2018
-ms.author: midenn
-author: midenn
+ms.author: elbatk
+author: elbatk
+ms.topic: conceptual
+monikerRange: '>= tfs-2017'
 ---
 
 # Setting up GitHub Source Linking with VSTS Build & VSTS Symbol Server
@@ -72,5 +74,5 @@ No, currently the Source Link implementation in Visual Studio is not designed to
 ## Reference Information
 
 - [VSTS is now a Symbol Server](https://blogs.msdn.microsoft.com/devops/2017/11/15/vsts-is-now-a-symbol-server/)
-- [Publish Symbols for Debugging](https://docs.microsoft.com/en-us/vsts/build-release/symbols/)
-- [Build: Index & Publish Symbols](https://docs.microsoft.com/en-us/vsts/build-release/tasks/build/index-sources-publish-symbols)
+- [Publish Symbols for Debugging](https://docs.microsoft.com/en-us/vsts/pipelines/symbols/)
+- [Build: Index & Publish Symbols](https://docs.microsoft.com/en-us/vsts/pipelines/tasks/build/index-sources-publish-symbols)

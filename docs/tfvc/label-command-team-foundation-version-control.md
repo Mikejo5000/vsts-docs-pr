@@ -2,10 +2,12 @@
 title: Label Command (Team Foundation Version Control)
 description: Label Command (Team Foundation Version Control)
 ms.assetid: 815fd18a-1511-4f72-8a4a-7b1b0d3b2144
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
@@ -21,11 +23,11 @@ Attaches a label to or removes a label from a version of a file or folder in the
 
 **Required Permissions**
 
-To use the **label** command, you must have the **Label** permission set to **Allow**. To modify or delete labels created by other users, you must have the **Administer labels** permission set to **Allow**. For more information, see [Permissions and groups reference](../security/permissions.md).
+To use the **label** command, you must have the **Label** permission set to **Allow**. To modify or delete labels created by other users, you must have the **Administer labels** permission set to **Allow**. For more information, see [Permissions and groups reference](../organizations/security/permissions.md).
 
     tf label labelname[@scope] [/owner:ownername] 
     itemspec [/version:versionspec] [/comment:("comment"|@commentfile)] 
-    [/child:(replace|merge)] [/recursive] [login:username,[password]] [/collection:TeamProjectCollectionUrl]	
+    [/child:(replace|merge)] [/recursive] [/login:username,[password]] [/collection:TeamProjectCollectionUrl]	
 
 	tf label /delete labelname[@scope] 
     itemspec [/login:username,[password]] [/collection:TeamProjectCollectionUrl]
@@ -80,7 +82,7 @@ You can specify more than one <i>Itemspec</i> argument.
 </tr>
 <tr>
 <td><p><i>username</i></p></td>
-<td><p>Provides a value to the <strong>/login</strong> option. You can specify a username value as either <i>DOMAIN</i>\<i>UserName</i> or <i>UserName</i>.</p></td>
+<td><p>Provides a value to the <strong>/login</strong> option. You can specify a username value as either <i>DOMAIN</i>\\<i>UserName</i> or <i>UserName</i>.</p></td>
 </tr>
 <tr>
 <td><p><i>TeamProjectCollectionUrl</i></p></td>

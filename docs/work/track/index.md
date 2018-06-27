@@ -1,12 +1,13 @@
 ---
 title: Queries index 
 titleSuffix: VSTS & TFS
-description: Use queries to find and list work items, create flat-based query charts in VSTS and Team Foundation Server   
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+description: Find and list work items, create flat-based query charts in Visual Studio Team Services & Team Foundation Server    
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
 ms.date: 03/20/2018
 ---
 
@@ -63,8 +64,8 @@ List bugs, user stories, or other work items based on field criteria you specify
 - [Query fields, operators & macros](query-operators-variables.md)      
 - [Query keyboard shortcuts](queries-keyboard-shortcuts.md)
 - [Work item field index](../work-items/guidance/work-item-field.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json) 
-- [WIQL syntax](../../collaborate/wiql-syntax.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json)
-- [Permissions and access for work tracking](../../security/permissions-access-work-tracking.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json)
+- [WIQL syntax](wiql-syntax.md)
+- [Permissions and access for work tracking](../../organizations/security/permissions-access-work-tracking.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json)
  
 
  

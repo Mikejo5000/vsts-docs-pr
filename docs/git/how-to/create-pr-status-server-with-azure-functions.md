@@ -2,10 +2,12 @@
 title: Use Azure Functions to create custom branch policies
 description: Create a serverless function to listen to pull request events and post status on the pull request status API.
 ms.assetid: 
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git
+ms.prod: devops
+ms.technology: devops-code-git
 ms.manager: douge
 ms.author: yohasna
+author: steved0x
+ms.topic: conceptual
 ms.date: 03/14/2018
 monikerRange: '>= tfs-2018'
 ---
@@ -20,7 +22,7 @@ The pull request (PR) workflow provides developers with an opportunity to get fe
 For more information about PR status, see [Customize and extend pull request workflows with pull request status](../concepts/pull-request-status.md).
 
 ## Prerequisites
-A VSTS account with a Git repo. If you don't have a VSTS account, [sign up](../../accounts/create-account-msa-or-work-student.md) to upload and share code in free unlimited private Git repositories.
+A VSTS account with a Git repo. If you don't have a VSTS account, [sign up](../../organizations/accounts/create-account-msa-or-work-student.md) to upload and share code in free unlimited private Git repositories.
 
 ## Create a basic Azure function to listen to VSTS events
 Follow the [create your first Azure function](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-first-azure-function) documentation to create a simple function. Modify the code in the sample to look like this:
@@ -132,7 +134,7 @@ Now that your server can receive service hook events when new PRs are created, u
 
 Update the code of your Azure function to look like the following example.
 
-Make sure to update the code with your account name, project name, repository name and [PAT token](../../integrate/get-started/authentication/pats.md). In order to have permission to change PR status, the PAT requires [vso.code_status](https://www.visualstudio.com/docs/integrate/api/git/pull-requests/pullrequeststatuses#authorization-scopes) scope, which you can grant by selecting the **Code (status)** scope on the **Create a personal access token** page.
+Make sure to update the code with your account name, project name, repository name and [PAT token](../../integrate/get-started/authentication/pats.md). In order to have permission to change PR status, the PAT requires [vso.code_status](https://visualstudio.microsoft.com/docs/integrate/api/git/pull-requests/pullrequeststatuses#authorization-scopes) scope, which you can grant by selecting the **Code (status)** scope on the **Create a personal access token** page.
 
 >[!Important]
 >This sample code stores the PAT in code to simplify the sample. It is recommended to store secrets in KeyVault and retrieve them from there.
@@ -242,7 +244,7 @@ private static string ComputeStatus(string pullRequestTitle)
         {
             State = state,
             Description = description,
-            TargetUrl = "http://www.visualstudio.com",
+            TargetUrl = "http://visualstudio.microsoft.com",
 
             Context = new
             {
@@ -276,7 +278,7 @@ Now that your server is running and listening for service hook notifications, cr
 
     ![Add WIP to the default PR title](../_img/create-pr-status-server/new-pr-wip.png)
 
-6. Once the PR has been created, you will see the status section, with the **Work in progress** entry which links to the URL specfied in the payload.
+6. Once the PR has been created, you will see the status section, with the **Work in progress** entry which links to the URL specified in the payload.
 
     ![Add WIP to the default PR title](../_img/create-pr-status-server/pr-with-status.png)
 

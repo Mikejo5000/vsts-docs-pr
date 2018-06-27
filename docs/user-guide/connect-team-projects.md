@@ -1,11 +1,13 @@
 ---
 title: Connect to team projects in VSTS or TFS
 description: Connect a client to the cloud service VSTS or on-premises Team Foundation Server (TFS) 
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-new-user
+ms.prod: devops
+ms.topic: quickstart
 ms.assetid: 1372e56c-b34f-42c2-b72c-94b57620c75c
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
 ms.date: 09/07/2017 
 monikerRange: '>= tfs-2013'
 ---
@@ -27,7 +29,7 @@ To share code, build apps, track work, and collaborate with team members, you co
 >[!NOTE]
 >A team project defines a process and data storage in which you manage your software projects from planning to deployment. You or a team member create a team project either on VSTS or an on-premises TFS. When you connect to a team project, you connect to an account or team project collection. Within that collection, one or more team projects may be defined. At a minimum, at least one team project must be created in order to use the system. 
 
-If you don't have a team project yet, create one in [VSTS](../accounts/set-up-vs.md) or set one up in an [on-premises TFS](../accounts/create-team-project.md). If you need to add a team, see [Multiple teams](../work/scale/multiple-teams.md). If you don't have access to the team project, [get invited to the team](../work/scale/multiple-teams.md#add-team-members). 
+If you don't have a team project yet, create one in [VSTS](../organizations/accounts/set-up-vs.md) or set one up in an [on-premises TFS](../organizations/accounts/create-team-project.md). If you need to add a team, see [Multiple teams](../work/scale/multiple-teams.md). If you don't have access to the team project, [get invited to the team](../work/scale/multiple-teams.md#add-team-members). 
 
 From each of these clients, you can quickly switch context to a different team project and connect under a different account name. If you work remotely, you can configure your client to [connect to a TFS Proxy server](#proxy).
 
@@ -85,9 +87,9 @@ To learn more about each hub and the tasks you can perform, see [Work in the web
 
 ## Connect from Visual Studio or Team Explorer
 
-1.  If you haven't already, [download and install a version of Visual Studio](https://www.visualstudio.com/downloads/download-visual-studio-vs).
+1.  If you haven't already, [download and install a version of Visual Studio](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs).
 
-2.  If you're not a member of a TFS security group, [get added as one](../security/add-users-team-project.md).
+2.  If you're not a member of a TFS security group, [get added as one](../organizations/security/add-users-team-project.md).
 
 3.  Check with a team member to determine the names of the server, team project collection, and team project that you will connect to.
 
@@ -208,11 +210,11 @@ To add or modify work items by using Excel or Project, you connect your workshee
  
 ### Connect from a worksheet or project plan
 
-To follow these procedures, you must be a member of the **Readers** group or have your **View work items in this node** permission set to **Allow**. See [Permission reference](../security/permissions.md) for details.
+To follow these procedures, you must be a member of the **Readers** group or have your **View work items in this node** permission set to **Allow**. See [Permission reference](../organizations/security/permissions.md) for details.
 
-1.  If you don't have Office Excel 2007 or a more recent version, [install it](https://products.office.com/excel). For VSTS or TFS 2017, you'll need Project 2010 or a more recent version. For client compatibility, see [Requirements](../accounts/requirements.md)
+1.  If you don't have Office Excel 2007 or a more recent version, [install it](https://products.office.com/excel). For VSTS or TFS 2017, you'll need Project 2010 or a more recent version. For client compatibility, see [Requirements](/tfs/server/requirements)
 
-2.  If you haven't installed a version of [Visual Studio (2010 or later)](https://www.visualstudio.com/downloads/download-visual-studio-vs) or [Team Foundation Server Standalone Office Integration 2015 (free)](https://www.visualstudio.com/downloads/#team-foundation-server-office-integration-2015-update-3-1), you'll need to install one of these versions to connect to a team project hosted on VSTS or an on-premises TFS. 
+2.  If you haven't installed a version of [Visual Studio (2010 or later)](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs) or [Team Foundation Server Standalone Office Integration 2015 (free)](https://visualstudio.microsoft.com/downloads/#team-foundation-server-office-integration-2015-update-3-1), you'll need to install one of these versions to connect to a team project hosted on VSTS or an on-premises TFS. 
 
 	> [!NOTE]  
 	> **Feature availability:** The only way to get the Team Foundation add-in to Excel is by installing one of the latest editions of Visual Studio or  TFS Standalone Office Integration.   
@@ -224,7 +226,7 @@ To follow these procedures, you must be a member of the **Readers** group or hav
     > [!TIP]    
     > If the **Team** ribbon no longer appears, you might need to [re-enable it](https://msdn.microsoft.com/library/vstudio/ms268871.aspx).
 
-4.  Connect to VSTS account or a TFS instance and the team project. If you can't connect, [get added as a team member](../security/add-users-team-project.md).
+4.  Connect to VSTS account or a TFS instance and the team project. If you can't connect, [get added as a team member](../organizations/security/add-users-team-project.md).
 
     ![Connect to server](../work/backlogs/office/_img/IC680074.png)
 
@@ -289,7 +291,7 @@ An advantage to using Excel or Project is that you can work offline to add or mo
 Additional resources you may find of interest: 
 
 - [Work in web portal](work-web-portal.md)  
-- [Work in Team Explorer](work-web-portal.md)  
+- [Work in Team Explorer](work-team-explorer.md)  
 - [Troubleshoot connection](troubleshoot-connection.md)  
 
 If all you need is a code repository and bug tracking solution, then start with the [Git get started guide](../git/gitquickstart.md) and [Manage bugs](../work/backlogs/manage-bugs.md).  
@@ -298,17 +300,17 @@ To start planning and tracking work, see [Get started with Agile tools to plan a
 
 ### User accounts and licensing
 
-To connect to a team project, you need your user account added to the team project. This is typically done by the [account owner (VSTS)](../accounts/add-account-users-assign-access-levels.md) or a [project administrator](../security/set-project-collection-level-permissions.md). 
+To connect to a team project, you need your user account added to the team project. This is typically done by the [account owner (VSTS)](../organizations/accounts/add-account-users-from-user-hub.md) or a [project administrator](../organizations/security/set-project-collection-level-permissions.md). 
 
-VSTS provides access to the first 5 account users free. After that, you need to [pay for more users (VSTS)](../billing/buy-basic-access-add-users.md). For on-premises TFS, each user account must have a TFS client access license (CAL). All Visual Studio subscriptions and paid VSTS users include a TFS CAL. Find out more about licensing from the [Team Foundation Server pricing page](https://www.visualstudio.com/team-services/tfs-pricing).
+VSTS provides access to the first 5 account users free. After that, you need to [pay for more users (VSTS)](../billing/buy-basic-access-add-users.md). For on-premises TFS, each user account must have a TFS client access license (CAL). All Visual Studio subscriptions and paid VSTS users include a TFS CAL. Find out more about licensing from the [Team Foundation Server pricing page](https://visualstudio.microsoft.com/team-services/tfs-pricing).
 
-In addition, you can provide access to stakeholders in your organization who will have limited access to select features as described in [Work as a Stakeholder](../security/get-started-stakeholder.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json).
+In addition, you can provide access to stakeholders in your organization who will have limited access to select features as described in [Work as a Stakeholder](../organizations/security/get-started-stakeholder.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json).
 
 <a name="proxy"></a>
 
 ## Configure Visual Studio to connect to TFS Proxy
 
-If your remote team uses a [TFS Proxy server](../tfs-server/install/install-proxy-setup-remote.md) to cache files, you can configure Visual Studio to connect through that proxy server and download files under Team Foundation version control.
+If your remote team uses a [TFS Proxy server](/tfs/server/install/install-proxy-setup-remote) to cache files, you can configure Visual Studio to connect through that proxy server and download files under Team Foundation version control.
 
 1.  First, make sure that you have connected to TFS as described [in the previous section](#visual-studio).
 
@@ -330,15 +332,15 @@ To **Configure User Tools** to associate a file type with a compare or merge too
 In addition to connecting through a web browser, Visual Studio, Eclipse, Excel, and Project you can connect to a team project from these clients: 
 
 - [Visual Studio Code](https://code.visualstudio.com/Docs)
-- [Visual Studio Community](https://www.visualstudio.com/products/visual-studio-community-vs.aspx) 
+- [Visual Studio Community](https://visualstudio.microsoft.com/products/visual-studio-community-vs.aspx) 
 - [Eclipse: Team Explorer Everywhere](/vsts/java/download-eclipse-plug-in) 
 - [PowerPoint Storyboarding](../work/backlogs/office/storyboard-your-ideas-using-powerpoint.md) 
 - [Microsoft Test Manager](https://msdn.microsoft.com/library/jj635157.aspx)
-- [Microsoft Feedback Client](../feedback/give-feedback.md) 
+- [Microsoft Feedback Client](../project/feedback/give-feedback.md) 
 
 ### Requirements and client compatibility
 
-Some tasks or features aren't available when you connect to a later version of TFS than which your client supports. For more information, see [Requirements and compatibility](../accounts/requirements.md).
+Some tasks or features aren't available when you connect to a later version of TFS than which your client supports. For more information, see [Requirements and compatibility](/tfs/server/requirements).
 
 ### Determine your platform or TFS version
 

@@ -1,12 +1,13 @@
 ---
 title: Show bugs on backlogs and boards
 titleSuffix: VSTS & TFS 
-description: For your team, choose how bugs appear on Agile tool product, sprint/scrum  backlogs, and Kanban and task boards 
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+description: Choose how bugs appear on Agile tools in Visual Studio Team Services & Team Foundation Server 
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 27DCB879-30F6-44F3-998A-755DF66D6E24
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
 ms.date: 03/20/2018
 ---
 
@@ -26,8 +27,8 @@ When you track bugs as requirements, they'll show up on the product backlog and 
 >**Feature availability**: You can manage all your team settings from a common configuration dialog from VSTS and TFS 2015.1 and later versions.
 -->  
 
-1. From your team's backlog page, click the ![gear icon](../_img/icons/team-settings-gear-icon.png) (gear icon) to open the common configuration team settings.  
-	::: moniker range="vsts || >= tfs-2017 <= tfs-2018"  
+1. From your team's backlog page, choose the ![](../_img/icons/team-settings-gear-icon.png) gear icon to open the common configuration team settings.  
+	::: moniker range=">= tfs-2017"  
 	![Backlog board, open team settings](../backlogs/_img/organize-backlog-open-ccdialog.png) 
 	::: moniker-end
 	::: moniker range="tfs-2015" 
@@ -48,7 +49,7 @@ When you track bugs as requirements, they'll show up on the product backlog and 
 	From the Overview tab, choose the team whose settings you want to configure, and then click **Settings**.
 	::: moniker-end
 
-2. Click the **Working with bugs** tab and choose from the three options available.
+2. Choose the **Working with bugs** tab and select from the three options available.
 
 	* Choose the first option when your team wants to manage bugs similar to requirements. Bugs can be estimated and tracked against team velocity and cumulative flow. Bugs will be associated with the Requirements category.  
 
@@ -69,7 +70,7 @@ When you track bugs as requirements, they'll show up on the product backlog and 
 	<img src="_img/team-settings.png" alt="TFS 2015, web portal, team settings admin page, Working with bugs" style="border: 2px solid #C3C3C3;" />
 	::: moniker-end 
 
-3. To see the changes, open or refresh the team's [backlog](../backlogs/create-your-backlog.md), [sprint backlog pages](../scrum/sprint-planning.md), or [Kanban board](../kanban/kanban-basics.md).
+3. To see the changes, open or refresh the team's [backlog](../backlogs/create-your-backlog.md), [sprint backlog pages](../scrum/assign-work-sprint.md), or [Kanban board](../kanban/kanban-basics.md).
 
 > [!TIP]  
 > If, after refreshing a backlog or board, and you don't see bugs where you expect them, review [How backlogs and boards display hierarchical (nested) items](../backlogs/resolve-backlog-reorder-issues.md). Only leaf nodes of nested items will appear on the Kanban or task boards.  
@@ -84,7 +85,7 @@ However, what if you want to track other work item types (WITs) on your backlogs
 
 ::: moniker range="vsts"  
 You can add other WITs&#8212;such as change requests, issues, or impediments&#8212; by customizing your process or team project, based on the process model you use. For details,  
-- For the Inheritance process model, see [Customize your backlogs or boards for a process](../customize/process/customize-process-backlogs-boards.md).   
+- For the Inheritance process model, see [Customize your backlogs or boards for a process](../../organizations/settings/work/customize-process-backlogs-boards.md).   
 - For Hosted XML and On-premises XML process models, see [Add a work item type to a backlog and board](add-wits-to-backlogs-and-boards.md).
 ::: moniker-end
 

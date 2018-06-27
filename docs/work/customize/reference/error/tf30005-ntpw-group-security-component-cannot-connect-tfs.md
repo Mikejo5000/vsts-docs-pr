@@ -1,17 +1,20 @@
 ---
-title: TF30005-The New Team Project Wizard group security component could not connect | TFS
+title: TF30005-The New Team Project Wizard group security component could not connect
+titleSuffix: VSTS & TFS
 description: Occurs when the New Team Project Wizard is unable to connect to the application-tier server {name} while creating a team project.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: eecc6e96-3c39-4cff-aad4-5ab57582ba2e
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
+ms.topic: Troubleshooting
 ms.date: 02/22/2017
 ---
 
 # TF30005: The New Team Project Wizard group security component could not connect to the Team Foundation Server {0}
 
-**TFS 2017 | TFS 2015 | TFS 2013**
+[!INCLUDE [temp](../../../_shared/dev15-version-header.md)]
 
 This error occurs when the New Team Project Wizard is unable to connect to the application-tier server {*name*} while creating a team project. An active connection cannot be made due to one of the following conditions:  
   
@@ -46,6 +49,6 @@ This error occurs when the New Team Project Wizard is unable to connect to the a
     7.  Review the log entries to find network or file related issues.  
   
 3.  If the problem persists, contact your Team Foundation Server administrator.  
-  
+    
 ## Related articles
-- [Create a team project](../../../../accounts/create-team-project.md)
+- [Create a team project](../../../../organizations/accounts/create-team-project.md)

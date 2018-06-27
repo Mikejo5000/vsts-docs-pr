@@ -1,11 +1,12 @@
 ---
 title: Address inaccuracies published for summary values 
-titleSuffix: TFS
-description: Corrects the reports with hours that are counted twice with this procedure - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
+titleSuffix: TFS 
+ms.prod: devops
+ms.technology: devops-analytics
+ms.topic: troubleshooting
+description: Corrects the reports with hours that are counted twice with this procedure - Team Foundation Server 
 ms.assetid: 09e8e02d-9ecb-4012-9ee0-cebb89372096
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.manager: douge
 ms.date: 10/31/2017
 ---
@@ -24,7 +25,7 @@ If you see that hours are counted twice in reports that contain task hours, you 
   
  **Required Permissions**  
   
- To perform this procedure, you must be a member of the **Contributors** group or your **View work items in this node** and **Edit work items in this node** permissions must be set to **Allow**. For more information, see [Permission reference](../../security/set-project-collection-level-permissions.md).  
+ To perform this procedure, you must be a member of the **Contributors** group or your **View work items in this node** and **Edit work items in this node** permissions must be set to **Allow**. For more information, see [Permission reference](../../organizations/security/set-project-collection-level-permissions.md).  
   
 ### To clear the hour fields of parent or summary tasks  
   

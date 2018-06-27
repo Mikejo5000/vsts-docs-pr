@@ -1,12 +1,13 @@
 ---
 title: Install extensions for Visual Studio Team Foundation Server (TFS)
 description: Find and install extensions for Team Foundation Server from the Visual Studio Marketplace
-ms.topic: get-started-article
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-marketplace
+ms.topic: conceptual
+ms.prod: devops
+ms.technology: devops-marketplace
 ms.assetid: 0ff7d264-68b7-4f4a-a666-b57175b5fdb8 
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 9/27/2017
 monikerRange: '>= tfs-2015 < vsts'
 ---
@@ -39,8 +40,8 @@ so you can install [free, preview, and paid extensions](#difference).
 
 ### What do I need to install extensions?
 
-[Project collection administrators](../security/set-project-collection-level-permissions.md) 
-with [**Edit collection-level information** permissions](../security/permissions.md#collection) 
+[Project collection administrators](../organizations/security/set-project-collection-level-permissions.md) 
+with [**Edit collection-level information** permissions](../organizations/security/permissions.md#collection) 
 can install extensions. If you don't have permissions, you can [request extensions](#request) instead.
 
 For paid extensions, you'll need an 
@@ -119,14 +120,14 @@ and then installing them in a team project collection.
 
 ### Who can upload extensions?
 
-[Team Foundation administrators](../tfs-server/add-administrator-tfs.md#server) 
-with [**Edit instance-level information** permissions](../security/permissions.md#server) 
+[Team Foundation administrators](/tfs/server/admin/add-administrator-tfs#server) 
+with [**Edit instance-level information** permissions](../organizations/security/permissions.md#server) 
 can upload extensions.
 
 ### Who can install extensions?
 
-[Project collection administrators](../security/set-project-collection-level-permissions.md) 
-with [**Edit collection-level information** permissions](../security/permissions.md#collection) 
+[Project collection administrators](../organizations/security/set-project-collection-level-permissions.md) 
+with [**Edit collection-level information** permissions](../organizations/security/permissions.md#collection) 
 can install extensions. If you don't have permissions, you can [request extensions](#request) instead.
 
 ### Download from Visual Studio Marketplace

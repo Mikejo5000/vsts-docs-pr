@@ -2,12 +2,12 @@
 title: Burndown guidance
 titleSuffix: VSTS & TFS  
 description: Review Scrum progress during and at the end of a sprint when working in Visual Studio Team Services (VSTS) and Team Foundation Server 
-ms.technology: vs-devops-reporting
-ms.prod: vs-devops-alm
-ms.assetid: 
+ms.technology: devops-analytics
+ms.prod: devops
+ms.topic: conceptual
 ms.reviewer: greggboe
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 11/16/2017
 ---
 
@@ -15,7 +15,7 @@ ms.date: 11/16/2017
 
 # Burndown guidance
  
-[!INCLUDE [temp](../_shared/vsts-tfs-header-17-15.md)] 
+[!INCLUDE [temp](../_shared/vsts-tfs-header-17-15.md)] 
 
 Review your sprint burndown chart throughout your sprint cycle to check for these indicators:  
 

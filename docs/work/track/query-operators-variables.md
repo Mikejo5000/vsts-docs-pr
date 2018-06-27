@@ -2,11 +2,14 @@
 title: Query fields, operators, and macros/variables 
 titleSuffix: VSTS & TFS
 description: Field data types, operators, and macros/variables used by the Query Editor in Visual Studio Team Services & Team Foundation Server 
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 814c2dca-cf8f-44bf-bba1-a5d8e293fc05
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
+ms.topic: reference
+monikerRange: '>= tfs-2013'
 ms.date: 03/20/2018  
 ---
 
@@ -122,7 +125,7 @@ The value you specify for a field must conform to the data type for that field. 
 	<td><p>Short text string that can contain up to 255 Unicode characters. String text fields are often used to support pick lists or drop-down menus.  </p></td></tr>
 <tr>
 	<td><p> <strong>TreePath</strong> </p></td>
-	<td><p>A branching tree structure, such as an Area Path or Iteration path. You can choose an item from a list of valid values. You can find work items that equal, not equal, under or not under a tree structure, or use the In or Not In operators to specify several values.  You define the tree structure for a team project&mdash;[area paths](../customize/set-area-paths.md) and [teration paths](../customize/set-iteration-paths-sprints.md)&mdash;and then select the ones you want to [associate with a team](../scale/set-team-defaults.md).</p> 
+	<td><p>A branching tree structure, such as an Area Path or Iteration path. You can choose an item from a list of valid values. You can find work items that equal, not equal, under or not under a tree structure, or use the In or Not In operators to specify several values.  You define the tree structure for a team project&mdash;[area paths](../../organizations/settings/set-area-paths.md) and [teration paths](../../organizations/settings/set-iteration-paths-sprints.md)&mdash;and then select the ones you want to [associate with a team](../../organizations/settings/set-team-defaults.md).</p> 
 	<p>For more information on constructing queries, see [Query by area or iteration path](query-by-area-iteration-path.md) or [Query by date or current iteration](query-by-area-iteration-path.md).</p></td>
 </tr>
 
@@ -137,9 +140,9 @@ You can use query operators in the following table to specify how each value in 
 <table width="100%">
 <thead valign="bottom">
 <tr>
-<th width="16%">Query operator</th>
+<th width="22%">Query operator</th>
 <th width="44%">Returns work items if the value in the work item matches the criteria listed</th>
-<th width="40%">Applicable data types</th>
+<th width="36%">Applicable data types</th>
 </tr>
 </thead>
 <tbody valign="top">
@@ -217,24 +220,23 @@ You can use query operators in the following table to specify how each value in 
 <tr>
 	<td><p><strong>Not In</strong></p></td>
 	<td><p>Does not match any value in a delimited set. For example, you can exclude work items whose States are not Resolved, Completed, or Closed from query results if you specify those values for the State field.</p>
-
 <blockquote><strong>Important:</strong> Separate values with the list separator that corresponds to the regional settings that are defined for your client computer. For example, you might use a comma(,).
 </blockquote>
-<blockquote><strong>Feature availability:</strong>  The <strong>Not In</strong> operator is currently only available from VSTS. Support is planned for a future release of TFS.</blockquote>
+<blockquote><strong>Feature availability:</strong>  The <strong>Not In</strong> operator is available from VSTS. and TFS 2018.2 and later versions.</blockquote>
 </td>
 	<td><p>Number, <strong>String</strong>, <strong>DateTime</strong>, <strong>TreePath</strong></p></td></tr>
 <tr>
 	<td><p><strong>In Group</strong></p></td>
 	<td><p>Matches a value that is a member of the group in the clause. Groups correspond to the name of a team, security group, or work tracking category. For example, you can create a query to find all work items that are assigned to members of the Contributors group or to a team. Team groups are created when you create a team. The name of team groups follows the pattern [<em>Team Project Name</em>]&#92;<em>Team Name</em>.</p><p>For example queries, see [Query by assignment or workflow changes](query-by-workflow-changes.md).</p></td>
 	<td><p> <strong>String</strong> that matches the name of a team, security group, or category defined in the system.</p>
-<blockquote><strong>Note:</strong>  You can use the <strong>In Group</strong> operator only with fields that use the <strong>String</strong> data type or the <strong>Work Item Type</strong> field.  You can use this operator to filter a query based on several values that are members of a group, or that are not members of a group. Examples of groups are teams, built-in security groups, custom security groups, Azure Active Directory (AAD) groups, Active Directory groups, and work item categories.
+<blockquote><strong>Note:</strong>  You can use the <strong>In Group</strong> operator only with fields that use the <strong>String</strong> data type or the <strong>Work Item Type</strong> field. The operator cannot be used to query Azure Active Directory groups.
 </blockquote>
 <p>For information about category groups, see [Use categories to group work item types](../customize/reference/use-categories-to-group-work-item-types.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json).</p></td></tr>
 <tr>
 	<td><p><strong>Not in Group</strong></p></td>
 	<td><p>Does not match a value that is a member of the group in the clause.</p></td>
-	<td><p> <strong>String</strong> that matches the name of a security group or a category group defined for a team project.</p>
-<blockquote><strong>Note:</strong> You can use the <strong>Not In Group</strong> operator only with fields that use the <strong>String</strong> data type or the <strong>Work Item Type</strong> field. You can also use groups defined in AAD when your VSTS account is backed by AAD, or AD when your server instance is backed by AD. 
+	<td><p> <strong>String</strong>  that matches the name of a user group in Team Foundation Server or a category group defined for a team project.</p>
+<blockquote><strong>Note:</strong> You can use the <strong>Not In Group</strong> operator only with fields that use the <strong>String</strong> data type or the <strong>Work Item Type</strong> field.
 </blockquote>
 </td>
 </tr>
@@ -262,8 +264,8 @@ You can use the macros described in the following table to filter your queries b
 <table>
 <thead valign="bottom">
 <tr>
-<th width="18%"><p>Macro</p></th>
-<th width="82%"><p>Description</p></th>
+<th width="25%"><p>Macro</p></th>
+<th width="75%"><p>Description</p></th>
 </tr>
 </thead>
 <tbody valign="top">
@@ -276,20 +278,20 @@ You can use the macros described in the following table to filter your queries b
 
 <tr>
 	<td>**@CurrentIteration** <sup>1</sup></td>
-	<td>Use in conjunction with the **Iteration Path** field to automatically filter for work items assigned to the current sprint based on the [current team focus or context](../../settings/switch-team-context.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json). For specific examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).
-	<p>This macro only works when run from the web portal. You can't use the macro when [copying or cloning test suites and test cases](../../manual-test/mtm/copying-and-cloning-test-suites-and-test-cases.md), [defining alerts](../../notifications/index.md), or with [REST APIs](../../integrate/get-started/rest/basics.md).</p>
+	<td>Use in conjunction with the **Iteration Path** field to automatically filter for work items assigned to the current sprint based on the [current team focus or context](../../organizations/settings/switch-team-context.md). For specific examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).
+	<p>This macro only works when run from the web portal. You can't use the macro when [copying or cloning test suites and test cases](../../test/mtm/copying-and-cloning-test-suites-and-test-cases.md), [defining alerts](../../notifications/index.md), or with [REST APIs](../../integrate/get-started/rest/basics.md).</p>
 </td>
 </tr>
 
 <tr>
 	<td><b>@CurrentIteration +/- <i>n</i></b> <sup>2</sup></td>
-	<td>Use in conjunction with the **Iteration Path** field to filter the set of work items assigned to the current sprint +/- n sprints based on the [current team focus or context](../../settings/switch-team-context.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json). For specific examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).
+	<td>Use in conjunction with the **Iteration Path** field to filter the set of work items assigned to the current sprint +/- n sprints based on the [current team focus or context](../../organizations/settings/switch-team-context.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json). For specific examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).
 </td>
 </tr>
 
 <tr>
 	<td>**@Follows** <sup>3</sup></td>
-	<td>Use in conjunction with the **ID** field and **In** operator to list all work items that you are following in the team project. To learn more about the Follow feature, see [Follow a work item or pull request](../../collaborate/follow-work-items.md). You can view this same list from the [Work Items page, **Following** pivot view](../work-items/view-add-work-items.md). 
+	<td>Use in conjunction with the **ID** field and **In** operator to list all work items that you are following in the team project. To learn more about the Follow feature, see [Follow a work item or pull request](../work-items/follow-work-items.md). You can view this same list from the [Work Items page, **Following** pivot view](../work-items/view-add-work-items.md). 
 </td>
 </tr>
 
@@ -300,7 +302,7 @@ You can use the macros described in the following table to filter your queries b
 </tr>
 
 <tr>
-	<td><b>@MyRecentActivity <sup>4</sup></b></td>
+	<td><b>@MyRecentActivity</b> <sup>4</sup></td>
 	<td>Use in conjunction with the **ID** field and **In** operator to list work items that you have viewed or updated in the team project within the last 30 days. You can view this same list from the [Work Items page, **My activity** pivot view](../work-items/view-add-work-items.md).
 </td>
 </tr>
@@ -313,15 +315,20 @@ You can use the macros described in the following table to filter your queries b
 </tr>
 
 <tr>
-	<td><b>@RecentMentions <sup>4</sup></b></td>
+	<td><b>@RecentMentions</b> <sup>4</sup></td>
 	<td>Use in conjunction with the **ID** field and **In** operator to list work items where you have been mentioned in the Discussion section. You can view this same list from the [Work Items page, **Mentioned** pivot view](../work-items/view-add-work-items.md). 
 </td>
 </tr>
 
 <tr>
-	<td><b>@RecentProjectActivity <sup>4</sup></b></td>
+	<td><b>@RecentProjectActivity</b> <sup>6</sup></td>
 	<td>Use in conjunction with the **ID** field and **In** operator to list work items that have been updated in the team project within the last 30 days. You can view similar lists from the [Work Items page, **Recently created**, **Recently updated** and **Recently completed** pivot views](../work-items/view-add-work-items.md). 
 </td>
+</tr>
+
+<tr>
+	<td>**@TeamAreas** <sup>7</sup> </td>
+	<td>Only use with the Area Path field to filter for work items whose area path corresponds to one assigned to a specific team. Requires you use the **=** operator. For example, you can find all items assigned to the area paths assigned to the Web team with the clause `Area Path=@TeamAreas [Fabrikam Fiber]\Web`. For additional examples, see [Query by area or iteration path](query-by-area-iteration-path.md).</td>
 </tr>
 
 <tr>
@@ -336,10 +343,11 @@ You can use the macros described in the following table to filter your queries b
 0. The **@CurrentIteration** macro is supported for VSTS and TFS 2015 and later versions. 
 0. The **@CurrentIteration +/- n** macro is supported for VSTS and only when run from the web portal. 
 0. The **@Follow** macro is supported for VSTS and TFS 2017 and later versions.
-0. The **@MyRecentActivity**, **@RecentMentions**, **@RecentProjectActivity** macros are supported for VSTS and TFS 2018 and later versions.
-0. The **@Project** macro is supported for VSTS and TFS 2015.1 and later versions.  The system automatically defaults to filtering based on the current team project. To learn more, see [Query across team projects](using-queries.md#across-projects).  
+0. The **@MyRecentActivity**, **@RecentMentions**, **@RecentProjectActivity** macros are supported for VSTS and TFS 2018.2 and later versions.
+0. The **@Project** macro is supported for VSTS and TFS 2015.1 and later versions.  The system automatically defaults to filtering based on the current team project. To learn more, see [Query across team projects](using-queries.md#across-projects). 
+0. The **@RecentProjectActivity** macro is supported for VSTS only at this time.
+0. The **@TeamAreas** macro is supported for VSTS only at this time.
  
-
 
 <a id="full-text" /> 
 ## Full-text and partial word searches
@@ -360,9 +368,18 @@ Team Foundation automatically indexes all long-text fields with a data type of *
 
 Full-text searches require a SQL collation that corresponds to a language which has a word breaker registered with SQL Server. If the collation settings for the team project collection database used for your Team Foundation Server instance do not correspond to a supported language, your search results may not match your expectations. In these cases, you might try using the **Contains** or **Does Not Contain** operators.
 
-For more information, see [Full-Text Search Queries and Collation Settings](../../tfs-server/install/sql-server/collation-requirements.md).
+For more information, see [Full-Text Search Queries and Collation Settings](/tfs/server/install/sql-server/collation-requirements).
 
 ::: moniker-end
+
+
+
+## Related articles 
+
+- [About managed queries](example-queries.md)
+- [Work item field index](../work-items/guidance/work-item-field.md)
+
+[!INCLUDE [temp](../_shared/rest-apis-queries.md)] 
 
 
 <!---
@@ -375,5 +392,3 @@ By default, the following fields are indexed: **Assigned To**, **Created Date**,
 You use the **witadmin indexfield** command to enable or disable indexing for a field. See [Manage work item fields](../customize/reference/witadmin/manage-work-item-fields.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json).
 
 --> 
-
-[!INCLUDE [temp](../_shared/rest-apis-queries.md)] 

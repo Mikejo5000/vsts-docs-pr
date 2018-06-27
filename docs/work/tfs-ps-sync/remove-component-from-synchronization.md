@@ -1,11 +1,14 @@
 ---
-title: Remove a component from participating in data synchronization | TFS
-description: Remove components that is configured to participate in data synchronization between Visual Studio Team Foundation Server (TFS) and Project Server.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Remove a component from participating in data synchronization
+titleSuffix: TFS 
+description: Remove components configured to participate in data synchronization between Visual Studio Team Foundation Server and Project Server
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 6e0dbfd4-e830-4b5a-a42f-536e744665fa
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
+ms.topic: conceptual
 ms.date: 01/12/2017
 ---
 # Remove a component from participating in data synchronization
@@ -134,6 +137,6 @@ When you delete a task from Project Server that has been synchronized with a wor
   
 ## Related articles  
  [Map integration components](map-integration-components.md)   
- [Configure and manage TFS resources](../../accounts/account-management.md)   
+ [Configure and manage TFS resources](../../organizations/accounts/account-management.md)   
  [Remove items that aren't synchronizing](remove-items-not-synching.md)   
  [Administer TFS-Project Server integration](administrate-integration-tfs-project-server.md)

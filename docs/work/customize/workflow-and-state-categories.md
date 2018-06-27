@@ -2,11 +2,12 @@
 title: Workflow states and state categories
 titleSuffix: VSTS & TFS   
 description: Understand how workflow states map to state categories in Visual Studio Team Services and Team Foundation Server   
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: C6FEEE5A-CD13-413E-8A3F-84A7D4F3A2C9
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.manager: douge
+ms.topic: conceptual
 ms.date: 03/20/2018
 ---
 
@@ -122,7 +123,7 @@ To learn more about process models, see [Customize your work tracking experience
 
 ::: moniker range="vsts"
 - [Lead Time and Cycle Time control charts (widgets)](../../report/dashboards/cycle-time-and-lead-time.md)
-- [Customize a workflow for a process](process/customize-process-workflow.md)
+- [Customize a workflow for a process](../../organizations/settings/work/customize-process-workflow.md)
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"

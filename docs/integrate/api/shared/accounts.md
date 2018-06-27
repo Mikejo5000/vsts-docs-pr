@@ -1,11 +1,14 @@
 ---
 title: Accounts REST API Reference for VSTS
 description: Work with accounts programmatically using the REST APIs for VSTS.
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-integrate
+ms.prod: devops
+ms.technology: devops-ecosystem
+ms.topic: conceptual
 ms.assetid: C9470271-C11E-4BD2-82C8-D5272AADF82C
-ms.manager: jivkok
-ms.author: gozhang
+ms.manager: douge
+monikerRange: '>= tfs-2013'
+ms.author: elbatk
+author: elbatk
 ms.date: 02/22/2017
 ---
 
@@ -24,8 +27,8 @@ GET https://app.vssps.visualstudio.com/_apis/Accounts?[memberId={GUID}][&ownerId
 |:----------|:-------|:--------------------------
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
-| memberId    | GUID | ID of the user (use [Profiles](https://www.visualstudio.com/en-us/docs/integrate/api/shared/profiles) for ID)
-| ownerId     | GUID | ID of the user (use [Profiles](https://www.visualstudio.com/en-us/docs/integrate/api/shared/profiles) for ID)
+| memberId    | GUID | ID of the user (use [Profiles](https://visualstudio.microsoft.com/en-us/docs/integrate/api/shared/profiles) for ID)
+| ownerId     | GUID | ID of the user (use [Profiles](https://visualstudio.microsoft.com/en-us/docs/integrate/api/shared/profiles) for ID)
 
 ### By member ID
 

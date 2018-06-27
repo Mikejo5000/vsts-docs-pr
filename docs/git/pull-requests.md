@@ -2,10 +2,12 @@
 title: Review and merge code with pull requests | VSTS & TFS
 description:  Conduct a code review in a Git with VSTS or TFS, create a pull request.
 ms.assetid: 4C9DFD24-E894-454A-A080-DA511C90CA74
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git 
+ms.prod: devops
+ms.technology: devops-code-git 
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: conceptual
 ms.date: 04/03/2018
 monikerRange: '>= tfs-2013'
 ---
@@ -15,14 +17,14 @@ monikerRange: '>= tfs-2013'
 
 #### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
 
-Create pull requests to review and merge code in a [Git team project](../accounts/create-team-project.md).
+Create pull requests to review and merge code in a [Git team project](../organizations/accounts/create-team-project.md).
 Pull requests let your team review code and give feedback on changes before
 merging it into the master branch. Pull requests can come from either
 topic branches within the same repository or from a branch in a
 [fork](concepts/forks.md) of the original repository.
 Reviewers can step through the proposed changes, leave comments, and vote to approve or reject the code.
 
-New to pull requests? [Learn more](https://www.visualstudio.com/learn/git-pull-requests/) about how to get feedback with Git pull requests.
+New to pull requests? [Learn more](/azure/devops/git/git-pull-requests) about how to get feedback with Git pull requests.
 
 ## Create a new pull request
 
@@ -128,7 +130,7 @@ Add reviewers to your pull request.
 
 0. Select the add icon ![Add icon in pull requests](_img/pull-requests/pr_add_icon.png) in the **Reviewers** area.
 
-0. Enter the name of the user or group to add to the reviewer list for the pull request. If the user isn't a member of your Team Project, you'll need to [add them](../accounts/add-team-members-vs.md).
+0. Enter the name of the user or group to add to the reviewer list for the pull request. If the user isn't a member of your Team Project, you'll need to [add them](../organizations/accounts/add-team-members-vs.md).
 
 0. As you enter a name or email address, a list of matching users or groups appears. Select the user or group from the list to add them as a reviewer.
 
@@ -367,7 +369,7 @@ If there are no conflicts between the target branch and the newly created topic 
 ## Set a new default branch    
 
 >[!NOTE]
->This step requires [Edit Policies permissions](../security/set-git-tfvc-repository-permissions.md#git-repository) on your Git repo. 
+>This step requires [Edit Policies permissions](../organizations/security/set-git-tfvc-repository-permissions.md#git-repository) on your Git repo. 
 
 Configure your Git repo to use a different default branch to merge code into when your team creates new pull requests.
 This is useful when you want to use a branch other than `master` for new changes or need to change your main line of development in your repo.

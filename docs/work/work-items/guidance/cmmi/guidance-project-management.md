@@ -1,13 +1,14 @@
 ---
-title: Project management 
+title: CMMI process guidance, Project management 
 titleSuffix: VSTS & TFS
 description: Use to understand how to manage, plan, and coordinate the development and maintenance of software products.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 9079e8f8-ce21-4b26-96a1-3f28f9cfa90c
 ms.topic: conceptual
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+monikerRange: '>= tfs-2013'
 ms.date: 03/16/2017
 ---
 
@@ -30,7 +31,7 @@ You can use the Project Management section of the MSF for CMMI process improveme
   
 -   The *project plan* states what feature requirements will be developed in each iteration. The project plan is developed in Iteration 0 and reviewed at the start of each iteration. To create and view the project plan, see [Create backlog](../../../backlogs/create-your-backlog.md).  
   
--   Each *iteration plan* states what tasks will be performed during that iteration. Most tasks are development and test work that is needed to fulfill the feature requirements that are scheduled for that iteration. The iteration plan can be viewed through the [sprint backlog page](../../../scrum/sprint-planning.md).  
+-   Each *iteration plan* states what tasks will be performed during that iteration. Most tasks are development and test work that is needed to fulfill the feature requirements that are scheduled for that iteration. The iteration plan can be viewed through the [sprint backlog page](../../../scrum/assign-work-sprint.md).  
   
  Iterative work does not automatically manage risks. To minimize risk, you must arrange the project plan in increments. Early iterations should provide an "end-to-end thin slice," that is, a minimal version of the most important behaviors of the product. Later iterations add more functionality.  
   
@@ -58,7 +59,7 @@ You can use the Project Management section of the MSF for CMMI process improveme
   
  Reserve the main branch for integration and tests. The build machine should perform a complete set of tests after an integration.  
   
- Assign an area to each team so that its work items can be easily separated from the others. For more information, see [Customize area and iteration paths](../../../customize/set-area-paths.md).  
+ Assign an area to each team so that its work items can be easily separated from the others. For more information, see [Customize area and iteration paths](../../../../organizations/settings/set-area-paths.md).  
   
  The teams can share a series of integrations, but this is not always necessary. If the teams do not synchronize integrations, each team must have its own prefix for its iteration names.  
   

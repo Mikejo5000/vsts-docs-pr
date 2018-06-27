@@ -1,13 +1,14 @@
 ---
-title: Code with Git | VSTS & TFS
+title: Code with Git
+titleSuffix: VSTS & TFS 
 description: Share code in a Git repo and new team project 
 ms.assetid: 
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-overview
+ms.prod: devops
+ms.technology: devops-new-user
 ms.manager: douge
 ms.author: kaelli
 ms.date: 08/24/2017
-ms.topic: get-started-article
+ms.topic: quickstart
 monikerRange: 'vsts'
 ---
 
@@ -81,7 +82,7 @@ In this step, we'll make a change to the files on your computer, commit the chan
 ## Try this next  
 
 > [!div class="nextstepaction"]
-> [Set up continuous integration & delivery](../build-release/actions/ci-cd-part-1.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
+> [Set up continuous integration & delivery](../pipelines/get-started-designer.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
 > or
 > [Plan & track work](plan-track-work.md)
 

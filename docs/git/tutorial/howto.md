@@ -2,10 +2,12 @@
 title: Git frequently asked questions | VSTS & TFS
 description: Tips, Tricks, and HOWTO to complete some less-common Git tasks.
 ms.assetid: b1262306-214c-4422-8eda-d03d05825241
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git 
+ms.prod: devops
+ms.technology: devops-code-git 
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: reference
 ms.date: 03/14/2018
 monikerRange: '>= tfs-2013'
 ---
@@ -88,7 +90,7 @@ Once you run `git stash apply` the most recently stashed changes will be applied
 
 Once you are done with the stash, delete it with `git stash drop`. This will remove the last set of stashed changes.
 
-A final note about stash is that you can have mulitple stashes, but doing so requires more manual manipulation as you have to explicitly apply and drop stashes. You can read more about
+A final note about stash is that you can have multiple stashes, but doing so requires more manual manipulation as you have to explicitly apply and drop stashes. You can read more about
 this from in the [Git Stash documentation](http://git-scm.com/book/en/v1/Git-Tools-Stashing).
 
 

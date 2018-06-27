@@ -1,13 +1,13 @@
 ---
 title: Create managed queries with the Query Editor
 titleSuffix: VSTS & TFS
-description: Create flat-list, tree, or direct-links queries to list, triage, update, and chart work items  
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+description: Create flat-list, tree, or direct-links queries to list, triage, update, and chart work items in Visual Studio Team Services & Team Foundation Server 
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 364000d3-200a-495a-bfb9-83915240af67
 ms.manager: douge
-ms.author: kaelli
-ms.topic: get-started-article
+ms.author: kaelliauthor: KathrynEE
+ms.topic: tutorial
 ms.date: 03/20/2018
 ---
 
@@ -21,7 +21,7 @@ For details on constructing query clauses and information on each query operator
 
 In this topic you'll learn:  
 
-> [!div class="checklist"] 
+>[!div class="checklist"]    
 > * How to open and edit a query   
 > * How to add or create a query 
 > * How to group query clauses 
@@ -49,7 +49,7 @@ Active Bugs shared query provided with the Agile process template. Examples are 
 	Use ![Insert new filter line](_img/3.png) to insert a clause above the current clause. Use ![Remove this filter line](_img/4.png) to delete a clause.  Queries are automatically scoped to the current team project. To find work items defined in several team projects, see [Query across team projects](using-queries.md#across-projects).   	
 
 	# [New Queries Experience](#tab/new-query-exp)
-	::: moniker range="vsts || >= tfs-2018"	
+	::: moniker range=">= tfs-2018"	
 	<img src="_img/using-queries-new-vsts-exp.png" alt="Web portal, Queries page, new queries experience, Editor view of a Flat List Query" style="border: 2px solid #C3C3C3;" />
 	::: moniker-end
 	::: moniker range=">= tfs-2013 <= tfs-2017"
@@ -57,7 +57,7 @@ Active Bugs shared query provided with the Agile process template. Examples are 
 	::: moniker-end
 
 	# [Old Queries Experience](#tab/old-query-exp)
-	::: moniker range="vsts || >= tfs-2015 <= tfs-2018"	 	
+	::: moniker range=">= tfs-2015"	 	
 	<img src="_img/query-active-bugs-editor-vso.png" alt="Web portal, Queries page, Editor view of a Flat List Query" style="border: 1px solid #C3C3C3;" /> 
 	::: moniker-end
 	::: moniker range="tfs-2013"	 
@@ -69,7 +69,7 @@ Active Bugs shared query provided with the Agile process template. Examples are 
 	  
 	  ![Save Query As](_img/6.png)    
 	  
-	  To save a query to the Shared Queries folder, you need to be a [team administrator](../scale/manage-team-assets.md), a member of the [Project Administrators group](../../security/add-users-team-project.md), or have your Contribute permissions on the folder set to Allow. To learn more, see [Set query permissions](set-query-permissions.md).
+	  To save a query to the Shared Queries folder, you need to be a [team administrator](../scale/manage-team-assets.md), a member of the [Project Administrators group](../../organizations/security/add-users-team-project.md), or have your Contribute permissions on the folder set to Allow. To learn more, see [Set query permissions](set-query-permissions.md).
 
 <a id="flat-list" />
 ## Create a query
@@ -117,7 +117,7 @@ Define the filter criteria for both parent and child work items.
 To find linked children, select Match top-level work items first. To find linked parents, select Match linked work items first.
 
 > [!NOTE]    
->You can't construct a query that shows a hierarchical view of Test Plans, Test Suites, and Test Cases. These items aren't linked together using parent-child link types. You can [view the hierarchy through the Test Plans page of the Test hub](../../manual-test/getting-started/create-a-test-plan.md). 
+>You can't construct a query that shows a hierarchical view of Test Plans, Test Suites, and Test Cases. These items aren't linked together using parent-child link types. You can [view the hierarchy through the Test Plans page of the Test hub](../../test/create-a-test-plan.md). 
 
 <a id="directs-link-query" />
 ## Use direct links to view dependencies
@@ -190,7 +190,7 @@ You may notice and wonder why the contents of the task board differ from those l
 From the query editor in Team Explorer, use the File menu to save a query as a .wiq file. When you create a team project, the shared queries are created based on [.wiq files defined in a process](../customize/reference/process-templates/define-work-item-query-process-template.md). 
 
 See also:
-- [Syntax for the Work Item Query Language (WIQL)](../../reference/wiql-syntax.md)  
+- [Syntax for the Work Item Query Language (WIQL)](wiql-syntax.md)  
 - [Wiql Editor, a Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor)  
  
 

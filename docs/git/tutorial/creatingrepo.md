@@ -2,11 +2,12 @@
 title: Create a new Git repo | VSTS & TFS
 description: Create new Git repos using Visual Studio or command line init 
 ms.assetid: 83c20dac-85c6-4fa0-93b5-912d5477246a
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git 
-ms.topic: get-started-article
+ms.prod: devops
+ms.technology: devops-code-git 
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: tutorial
 ms.date: 03/14/2018
 monikerRange: '>= tfs-2013'
 ---
@@ -55,7 +56,7 @@ Later you can connect this Git repo to a remote Git repo to share your work with
 
 Create a new Git repo for your new Visual Studio solution by selecting **Create new Git repository** when creating the solution:
    
-![Select Create new Git reposistory when creating a new solution](_img/vscreategitrepo.png) 
+![Select Create new Git repository when creating a new solution](_img/vscreategitrepo.png) 
 
 ### From an existing solution
 

@@ -1,12 +1,13 @@
 ---
 title: Get Started with Maven Package Management in VSTS and TFS
 description: Quickly start hosting Maven artifacts in VSTS or Team Foundation Server
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-package
-ms.topic: get-started-article
+ms.prod: devops
+ms.technology: devops-artifacts
+ms.topic: quickstart
 ms.assetid: C5112218-DA7E-4016-986D-2D0F70DAFA44
 ms.manager: jenp
-ms.author: rossav
+ms.author: elbatk
+author: elbatk
 ms.reviewer: dastahel
 ms.date: 01/31/2018
 monikerRange: '>= tfs-2018'
@@ -59,7 +60,7 @@ listing to install it.
 ## Automate the process with continuous integration
 
 You can use continuous integration systems such as Team Build to automate the installation and publishing of your Maven artifacts. 
-To get started with continuous integration, see the [Maven in Team Build guidance](/vsts/build-release/packages/maven).
+To get started with continuous integration, see the [Maven in Team Build guidance](/vsts/pipelines/packages/maven).
 
 ## What's next?
 

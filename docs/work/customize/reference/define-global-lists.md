@@ -1,11 +1,11 @@
 ---
 title: Define global lists | TFS
 description: Syntax and usage for the GLOBALLIST elements for defining pick lists used across several team projects and work item types  
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: b113865c-c68f-48fa-a467-4a94a8445078
 author: kaelli
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.manager: douge
 ms.date: 05/23/2017
 ---
@@ -146,12 +146,12 @@ To add a global list to a project collection, you can import the following synta
 ```XML 
 <gl:GLOBALLISTS xmlns:gl="http://schemas.microsoft.com/VisualStudio/2008/workitemtracking/globallists">  
        <GLOBALLIST name="NameOfGlobalList">  
-         <LISTITEM value="ListItem1" />  
-         <LISTITEM value="ListItem2" />  
-         <LISTITEM value="ListItem3" />  
-         <LISTITEM value="ListItem4" />  
-         . . .  
-         <LISTITEM value="ListItemN" />  
+       <LISTITEM value="ListItem1" />  
+       <LISTITEM value="ListItem2" />  
+       <LISTITEM value="ListItem3" />  
+       <LISTITEM value="ListItem4" />  
+  . . .  
+       <LISTITEM value="ListItemN" />  
        </GLOBALLIST>  
 </gl:GLOBALLISTS>  
 ```  

@@ -2,10 +2,12 @@
 title: Develop your app in Team Foundation version control
 description: Develop your app in Team Foundation version control
 ms.assetid: 8535caa8-584a-454b-8c71-ce0cd362d9b1
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
@@ -47,6 +49,6 @@ If so, we suggest you take a few minutes to walk step-by-step through a day in t
 
 -    [Improving Quality with Visual Studio Diagnostic Tools](https://msdn.microsoft.com/library/dd264943) 
 
--    [Testing the application](../manual-test/index.md) 
+-    [Testing the application](../test/index.md) 
 
 -    [Track work with Visual Studio devops and TFS](../work/backlogs/overview.md) 

@@ -1,12 +1,13 @@
 ---
 title: Customize the layout of the work item web form
 titleSuffix: VSTS & TFS
-description: Customize the web version of the work item form when connecting to a team project hosted on VSTS or TFS    
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+description: Customize the web version of the work item form in Visual Studio Team Services & Team Foundation Server    
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 4DE53686-3349-41B8-A361-814B2519E60F
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
 ms.date: 12/15/2017  
 ---
 
@@ -15,7 +16,7 @@ ms.date: 12/15/2017
 <b>VSTS | TFS 2018 | TFS 2017</b>  
 
 > [!IMPORTANT]  
-><b>Feature availability: </b>This topic applies to customizations you can make when you use the Hosted XML process model, or you've update your application-tier server to Team Foundation Server 2017 or later version (which uses the On-premises XML process model). For the Inheritance process model, see [Customize a process](process/customize-process.md). 
+><b>Feature availability: </b>This topic applies to customizations you can make when you use the Hosted XML process model, or you've update your application-tier server to Team Foundation Server 2017 or later version (which uses the On-premises XML process model). For the Inheritance process model, see [Customize a process](../../organizations/settings/work/customize-process.md). 
 >
 >For an overview of process models, see [Customize your work tracking experience](../customize/customize-work.md). 
 
@@ -63,7 +64,7 @@ See the following topics to make the indicated customizations:
 <a id="witadmin">  </a>  
 ## Import and export WIT definition files 
 
-0.  If you don't have administration permissions for your team project, [get them](../../security/set-project-collection-level-permissions.md).  
+0.  If you don't have administration permissions for your team project, [get them](../../organizations/security/set-project-collection-level-permissions.md).  
   
 [!INCLUDE [temp](../_shared/witadmin-run-tool-example.md)]
 

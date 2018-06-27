@@ -2,11 +2,12 @@
 title: Layout XML element reference
 titleSuffix: TFS 
 description: Use the Layout element to define how the elements on the work item form appear in Team Foundation Server
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 8898c116-62f8-416f-af33-90c389a038bb
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
 ms.topic: reference
 monikerRange: '>= tfs-2013 <= tfs-2015'
 ms.date: 02/14/2017
@@ -17,12 +18,12 @@ ms.date: 02/14/2017
 **TFS 2015 | TFS 2013**
 
 > [!IMPORTANT]  
->This topic applies to team project customization for the On-premises XML process model and the old work item form. For the Hosted XML process model and TFS 2017 and later versions that use the new work item form, see [WebLayout and Control elements](weblayout-xml-elements.md). For the Inheritance process model, see [Customize a process](../process/customize-process.md).
+>This topic applies to team project customization for the On-premises XML process model and the old work item form. For the Hosted XML process model and TFS 2017 and later versions that use the new work item form, see [WebLayout and Control elements](weblayout-xml-elements.md). For the Inheritance process model, see [Customize a process](../../../organizations/settings/work/customize-process.md).
 >
 >For an overview of process models, see [Customize your work tracking experience](../customize-work.md).   
 
 
-You can use the `Layout` element to define how the elements on the work item form appear. You can define more than one layout to support different clients, such as the Windows client for Visual Studio or the the web portal layout.  
+You can use the `Layout` element to define how the elements on the work item form appear. You can define more than one layout to support different clients, such as the Windows client for Visual Studio or the web portal layout.  
   
 To add elements to a form, you modify the definition for a work item type. See [Modify or add a custom work item type](../add-modify-wit.md).  
   

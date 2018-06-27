@@ -1,11 +1,14 @@
 ---
 title: VSS/References/VSS.SDK.Interfaces IHostDialogOptions API | Extensions for Visual Studio Team Services
 ms.assetid: 0d180b79-4ae6-9520-9cca-895f17e3e0f2
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-ecosystem
 generated: true
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
+ms.topic: article
+monikerRange: '>= tfs-2017'
 ms.date: 08/04/2016
 ---
 

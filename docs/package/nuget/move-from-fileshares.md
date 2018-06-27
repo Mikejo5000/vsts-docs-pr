@@ -2,10 +2,12 @@
 title: Move your packages to the cloud
 description: Leave your file shares behind and bring your packages to VSTS or Team Foundation Server
 ms.assetid: E45D2856-222F-444B-9E0C-A04B6FE93494
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-package
+ms.prod: devops
+ms.technology: devops-artifacts
 ms.manager: douge
-ms.author: amullans
+ms.author: elbatk
+author: elbatk
+ms.topic: conceptual
 ms.date: 09/01/2017
 monikerRange: '>= tfs-2017'
 ---
@@ -92,12 +94,12 @@ For this walkthrough, we'll assume a 1:1 mapping of feeds to SMB shares.
 <a name="create-your-feeds"></a>
 #### Create your feeds
 
-For each SMB share, create a feed using the [instructions here](..\feeds\create-feed.md). In the create dialog:
+For each SMB share, create a feed using the [instructions here](../feeds/create-feed.md). In the create dialog:
 - Use the name of the SMB share folder as the **Feed name**
 - Leave the defaults for **Who can read** and **Who can contribute**
 
-For each feed you've created, [edit the feed and set permissions](..\feeds\feed-permissions.md). There are a set of 
-[common identities](..\feeds\common-identities.md) that you should consider when setting up feed permissions.
+For each feed you've created, [edit the feed and set permissions](../feeds/feed-permissions.md). There are a set of 
+[common identities](../feeds/common-identities.md) that you should consider when setting up feed permissions.
 
 If you've chosen to set up your new feed permissions to match your existing file share permissions, use the following table to give 
 your principals the appropriate group membership:
@@ -142,4 +144,4 @@ This is especially helpful for users of Visual Studio 2013 (or earlier) or NuGet
 <a name="integrate-with-your-builds"></a>
 #### Integrate with your builds
 
-Update your builds to ensure they have the right credentials to consume and publish packages in feeds. See the how-to's for [restoring](/vsts/build-release/packages/nuget-restore) and [publishing](/vsts/build-release/packages/nuget-pack-publish) packages in Team Build.
+Update your builds to ensure they have the right credentials to consume and publish packages in feeds. See the how-to's for [restoring](/vsts/pipelines/packages/nuget-restore) and [publishing](/vsts/pipelines/targets/nuget) packages in Team Build.

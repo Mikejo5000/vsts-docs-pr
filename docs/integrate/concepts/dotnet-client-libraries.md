@@ -2,10 +2,13 @@
 title: .NET Client Libraries for VSTS (and TFS)
 description: Easily integrate with VSTS and Team Foundation Server from apps and services on Windows.
 ms.assetid: 474cdb4f-9a5e-49fb-84b2-9c540ebcf98b
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-integrate
+ms.prod: devops
+ms.technology: devops-ecosystem
+ms.topic: conceptual
 ms.manager: douge
+monikerRange: '>= tfs-2013'
 ms.author: elbatk
+author: elbatk
 ms.date: 08/04/2016
 ---
 
@@ -17,7 +20,7 @@ For .NET developers building Windows apps and services that integrate with Visua
 ### Features
 * Downloadable from nuget.org and easily importable into your Visual Studio projects
 * Libraries are licensed for redistribution in your apps and services ([view the license](http://go.microsoft.com/fwlink/?LinkId=329770))
-* Access both traditional client object model APIs and [new REST APIs](https://www.visualstudio.com/en-us/docs/integrate/api/overview)
+* Access both traditional client object model APIs and [new REST APIs](https://visualstudio.microsoft.com/en-us/docs/integrate/api/overview)
 
 
 >Note: REST-based clients only work with VSTS and TFS 2015 (not previous versions of TFS) 

@@ -1,13 +1,13 @@
 ---
 title: Configure Bundown/Burnup widgets
 titleSuffix: VSTS   
-description: Configure a Burndown or Burnup widget that you add to a dashboard to track progress across one or more teams 
-ms.technology: vs-devops-reporting
-ms.prod: vs-devops-alm
-ms.assetid: 
+description: Configure a Burndown or Burnup widget that you add to a dashboard to track progress across one or more teams in Visual Studio Team Services
+ms.technology: devops-analytics
+ms.prod: devops
 ms.topic: tutorial
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
 monikerRange: 'vsts'
 ms.date: 03/20/2018 
 ---
@@ -67,7 +67,7 @@ To help you answer the question: *Are we on track to complete this set of work b
 
 In order to configure the Burndown and Burndown widgets, you must have the following in place:
 
-* Installed the [Analytics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You must be an account owner or a member of the [Project Collection Administrator group](../../security/set-project-collection-level-permissions.md) to add extensions.
+* Installed the [Analytics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You must be an account owner or a member of the [Project Collection Administrator group](../../organizations/security/set-project-collection-level-permissions.md) to add extensions.
 * [Added the widget to a dashboard](../add-widget-to-dashboard.md). You must be a [team administrator](../../work/scale/add-team-administrator.md) or have [permissions to add and edit dashboards](../dashboard-permissions.md).
 -->
 
@@ -108,7 +108,10 @@ The Configuration dialog for the Burndown and Burnup widgets is the same. You co
 	This option is presented for the PBI Backlog for Scrum projects, and the Requirements backlog for CMMI projects.   
 	![Burndown Widget - Configuration - Select work item types](./_img/burndown-widget/burndownup-config-select-backlog.png)  
 
-	You can also select **Work item type** to burndown on a specific work item type. In the list, you will find all the project's work item types including [custom work item types](../../work/customize/process/customize-process-wit.md).   
+   > [!NOTE]   
+   > If your project has been customized using a [Hosted XML process](../../work/customize/hosted-xml-process-model.md) and has created a customized bug work item category name, then the Burndown and Burnup widgets won't be able to query for work items within that category. To query for bugs, the customized bug work item type must belong to the default **Bug Category**, reference name `Microsoft.BugCategory`.  
+   
+	You can also select **Work item type** to burndown on a specific work item type. In the list, you will find all the project's work item types including [custom work item types](../../organizations/settings/work/customize-process-wit.md).   
 	![Burndown Widget - Configuration - Select work item types](./_img/burndown-widget/burndownup-config-select-work-item-type.png)  
 
 1. (Optional) Select field criteria to limit the work items that appear in the chart.  
@@ -183,7 +186,7 @@ The Configuration dialog for the Burndown and Burnup widgets is the same. You co
 Check the boxes of the following options that you want to add to your chart.    
 * **Show burndown**: Displays both the historical and projected future burndown
 * **Show total scope**: Displays both the historical and projected scope increase
-* **Show completed work**: In addition to remaining work, it also displays completed work as as stack bar
+* **Show completed work**: In addition to remaining work, it also displays completed work as a stack bar
 * **Plot remaining using work item type color**: Displays remaining work based on the work item type color, rather than the default blue color. If multiple work items are included, then it stacks colors by work item type.
 
 ## Interpret a Burndown or Burnup widget chart
@@ -260,7 +263,7 @@ Configuring the Burnup widget is exactly like configuring the Burnup widget, exc
 
 * [Define sprints for the team project](../../work/customize/set-iteration-paths-sprints.md)
 * [Select sprints for a team](../../work/scale/set-team-defaults.md)
-* [Add a custom field to a work item type](../../work/customize/process/customize-process-field.md)
+* [Add a custom field to a work item type](../../organizations/settings/work/customize-process-field.md)
 
 ####Industry resources 
 

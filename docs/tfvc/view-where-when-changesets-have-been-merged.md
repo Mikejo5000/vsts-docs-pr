@@ -2,10 +2,12 @@
 title: View where and when changesets have been merged
 description: View where and when changesets have been merged
 ms.assetid: 457567ff-7da3-4098-b047-bd169bad5a38
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
@@ -27,7 +29,7 @@ Tracking Changeset window shows branches to which a changeset has merged
 
 **Required Permissions**
 
-To perform these procedures, your **Read** permission must be set to **Allow** for the branches with which you are working. For more information about permissions, see [Permissions and groups reference](../security/permissions.md).
+To perform these procedures, your **Read** permission must be set to **Allow** for the branches with which you are working. For more information about permissions, see [Permissions and groups reference](../organizations/security/permissions.md).
 
 ## View the Tracking Changeset Window
 
@@ -99,7 +101,7 @@ You can get information about when a changeset was merged to one or more branche
 
 **Required Permissions**
 
-To perform these procedures, your **Manage branch object** permission must be set to **Allow**. For more information about permissions, see [Permissions and groups reference](../security/permissions.md).
+To perform these procedures, your **Manage branch object** permission must be set to **Allow**. For more information about permissions, see [Permissions and groups reference](../organizations/security/permissions.md).
 
 ### To display the Timeline View of a changeset
 

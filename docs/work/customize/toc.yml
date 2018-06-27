@@ -7,17 +7,25 @@
 - name: Quickstarts
   items:
   - name: Define area paths
-    href: set-area-paths.md
+    href: ../../organizations/settings/set-area-paths.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
   - name: Define iteration paths or sprints
-    href: set-iteration-paths-sprints.md
+    href: ../../organizations/settings/set-iteration-paths-sprints.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+  - name: Add a custom field
+    href: ../../organizations/settings/work/add-custom-field.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+  - name: Add a custom work item type
+    href: ../../organizations/settings/work/add-custom-wit.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+- name: Tutorials
+  items:
+  - name: Customize a project
+    href: ../../organizations/settings/work/customize-process.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+  - name: Create and manage a process
+    href: ../../organizations/settings/work/manage-process.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
 - name: Concepts
   items:
   - name: "About areas & iterations"
-    href: about-areas-iterations.md
+    href: ../../organizations/settings/about-areas-iterations.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
   - name: Differences between process models
     href: import-process/differences.md 
-  - name: On-premises XML process model
-    href: on-premises-xml-process-model.md
   - name: "Workflow states & state categories"
     href: workflow-and-state-categories.md
   - name: Rollup of work and other fields
@@ -27,12 +35,12 @@
 - name: How-to Guides
   items:
   - name: "Manage permissions (Security)"
-    href: ../../security/set-permissions-access-work-tracking.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json 
+    href: ../../organizations/security/set-permissions-access-work-tracking.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json 
   - name: Configure team settings
     href: ../scale/manage-team-assets.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json   
     items:
     - name: Set team defaults
-      href: ../scale/set-team-defaults.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json  
+      href: ../../organizations/settings/set-team-defaults.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: Customize cards on boards
       href: customize-cards.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json  
     - name: Reorder cards
@@ -44,26 +52,22 @@
     - name: Set working days
       href: set-working-days.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json 
   - name: Inheritance process model
-    href: inheritance-process-model.md
+    href: ../../organizations/settings/work/inheritance-process-model.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     items:
-    - name: Manage processes
-      href: process/manage-process.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json 
-    - name: Customize a process
-      href: process/customize-process.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json 
-    - name: Add a custom field
-      href: process/customize-process-field.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json 
-    - name: Customize a web form
-      href: process/customize-process-form.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json 
+    - name: Add and manage fields
+      href: ../../organizations/settings/work/customize-process-field.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+    - name: Add and manage work item types
+      href: ../../organizations/settings/work/customize-process-wit.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+    - name: Customize the web layout
+      href: ../../organizations/settings/work/customize-process-form.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: Customize a workflow
-      href: process/customize-process-workflow.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json 
-    - name: Customize a work item type
-      href: process/customize-process-wit.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json 
+      href: ../../organizations/settings/work/customize-process-workflow.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: Add a custom rule
-      href: process/custom-rules.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json 
+      href: ../../organizations/settings/work/custom-rules.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: Add a custom control
-      href: process/custom-controls-process.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
-    - name: Customize backlogs and boards
-      href: process/customize-process-backlogs-boards.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      href: ../../organizations/settings/work/custom-controls-process.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+    - name: Customize backlogs & boards
+      href: ../../organizations/settings/work/customize-process-backlogs-boards.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
   - name: Hosted XML process model
     href: hosted-xml-process-model.md
     items:
@@ -73,6 +77,29 @@
       href: import-process/import-process.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: Customize form layout
       href: customize-wit-form.md
+  - name: On-premises XML process model
+    href: on-premises-xml-process-model.md
+    items:
+    - name: Manage roll out of the new web form
+      href: manage-new-form-rollout.md 
+    - name: Configure features after an upgrade
+      href: configure-features-after-upgrade.md
+    - name: Add features manually 
+      href: add-features-manually.md
+    - name: Additional configuration options
+      href: additional-configuration-options.md
+    - name: New features added through feature enablement 
+      href: new-features-added.md
+    - name: Update a customized process template to access new features
+      href: update-customized-process-template.md
+    - name: When upgrading from TFS 2008 or TFS 2010  
+      href: upgrade-tfs-2008-or-2010.md
+    - name: Define a custom link type
+      href: ./reference/define-custom-link-type.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+    - name: Change the maximum attachment size for work items
+      href: ./reference/change-maximum-attachment-size-work-items.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+    - name: Use team fields instead of area paths
+      href: use-team-fields-instead-area-paths.md
   - name: Fields
     items:
     - name: Add or modify a field
@@ -87,8 +114,6 @@
       href: ./reference/combine-list-types.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: Change reporting attributes (TFS)
       href: ./reference/add-or-modify-work-item-fields-to-support-reporting.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
-  - name: Manage roll out of the new web form
-    href: manage-new-form-rollout.md 
   - name: Change the workflow
     href: ./reference/change-workflow-wit.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
   - name: Work item type or form
@@ -109,6 +134,8 @@
       href: ./reference/specify-work-item-form-controls.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: Define link controls
       href: ./reference/define-link-controls.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+    - name: Change the maximum attachment size
+      href: ./reference/change-maximum-attachment-size-work-items.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
   - name: Backlogs and boards
     items:
     - name: Add work item types
@@ -127,18 +154,18 @@
   items:
     - name: Resolve validation errors
       href: ./import-process/resolve-errors.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
-    - name: Troubleshoot process configuration
+    - name: Resolve process configuration issues
       href: troubleshoot-process-configuration.md 
 - name: Reference
   items:
   - name: "Default permissions & access (Security)"
-    href: ../../security/permissions-access-work-tracking.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+    href: ../../organizations/security/permissions-access-work-tracking.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
   - name: Changes made to process templates
     href: ../work-items/guidance/changes-to-process-templates.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
   - name: Work tracking object limits
     href: object-limits.md
   - name: Naming restrictions
-    href: ../../collaborate/naming-restrictions.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+    href: ../../organizations/settings/naming-restrictions.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
   - name: Work tracking XML element reference
     items:
     - name: XML element reference
@@ -171,28 +198,33 @@
         href: ./reference/automate-field-assignments-state-transition-reason.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
       - name: TRANSITION
         href: ./reference/transition-xml-element.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
-    - name: New web form layout
+    - name: All FORM elements
+      href: ./reference/all-form-xml-elements-reference.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
       items:
-      - name: WebLayout and Control elements
-        href: ./reference/weblayout-xml-elements.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
-      - name: LinksControlOptions (web)
-        href: ./reference/linkscontroloptions-xml-elements.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
-    - name: Old web form layout
-      items:
-      - name: Layout
-        href: ./reference/layout-xml-element-reference.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
-      - name: Control
-        href: ./reference/control-xml-element-reference.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
-      - name: LinksControlOptions (client and web)
-        href: ./reference/linkscontroloptions-elements.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
-    - name: LabelText and Text
-      href: ./reference/labeltext-and-text-xml-elements-reference.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
-    - name: Link and Param
-      href: ./reference/link-param-xml-elements-reference.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
-    - name: WebpageControlOptions
-      href: ./reference/webpagecontroloptions-xml-elements-reference.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
-    - name: LinkTypes elements reference 
-      href: ./reference/link-type-element-reference.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      - name: New web form layout
+        items:
+        - name: WebLayout and Control elements
+          href: ./reference/weblayout-xml-elements.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+        - name: LinksControlOptions (web)
+          href: ./reference/linkscontroloptions-xml-elements.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      - name: Old (web and client) form layout
+        items:
+        - name: Layout
+          href: ./reference/layout-xml-element-reference.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+        - name: Control
+          href: ./reference/control-xml-element-reference.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+        - name: Tab
+          href: ./reference/tab-xml-element-reference.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+        - name: LinksControlOptions (web/client)
+          href: ./reference/linkscontroloptions-elements.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      - name: LabelText and Text
+        href: ./reference/labeltext-and-text-xml-elements-reference.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      - name: Link and Param
+        href: ./reference/link-param-xml-elements-reference.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      - name: WebpageControlOptions
+        href: ./reference/webpagecontroloptions-xml-elements-reference.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      - name: LinkTypes elements reference 
+        href: ./reference/link-type-element-reference.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: CATEGORIES XML reference
       href: ./reference/categories-xml-element-reference.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: ProcessConfiguration XML reference
@@ -312,9 +344,9 @@
   - name: Work items
     href: ../work-items/index.md
   - name: "Scale & Configure Teams"
-    href: ../../settings/index.md
+    href: ../../organizations/settings/index.md
   - name: Account Management (VSTS)
-    href: ../../accounts/index.md
+    href: ../../organizations/accounts/index.md
   - name: Marketplace extensions
     href: ../../marketplace/get-vsts-extensions.md
   - name: Extensibility and REST APIs

@@ -2,19 +2,18 @@
 title: Cumulative flow guidance
 titleSuffix: VSTS & TFS   
 description: Process guidance to work with cumulative flow diagrams to improve your     
-ms.prod: vs-devops-alm  
-ms.technology: vs-devops-reporting  
-ms.assetid:  
+ms.prod: devops  
+ms.technology: devops-analytics  
 ms.topic: conceptual
 ms.reviewer: greggboe
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 03/20/2018 
 ---
 
 # Cumulative flow, lead time, and cycle time guidance 
 
-[!INCLUDE [temp](../_shared/vsts-tfs-header-17-15.md)] 
+[!INCLUDE [temp](../_shared/vsts-tfs-header-17-15.md)] 
 
 ::: moniker range=">= tfs-2013" 
 You use cumulative flow diagrams (CFD) to monitor the flow of work through a system. The two primary metrics to track, cycle time and lead time, can be extracted from the chart.  

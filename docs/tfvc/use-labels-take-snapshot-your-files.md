@@ -2,10 +2,12 @@
 title: Use labels to take a snapshot of your files
 description: Use labels to take a snapshot of your files
 ms.assetid: 8945006e-3a03-4ae1-b5a1-79be57610321
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
@@ -280,7 +282,7 @@ When you open the shortcut menu for an item in the Label window, you can also ch
 
  [Create and work with workspaces](create-work-workspaces.md) 
 
- [Permissions and groups reference](../security/permissions.md) 
+ [Permissions and groups reference](../organizations/security/permissions.md) 
 
  [Use branches to isolate risk in Team Foundation Version Control](use-branches-isolate-risk-team-foundation-version-control.md) 
 

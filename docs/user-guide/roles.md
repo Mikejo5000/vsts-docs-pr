@@ -1,11 +1,12 @@
 ---
-title: Sofware development roles supported by VSTS & TFS
-description: Understand how our tools and services support the various roles supported in software development when using Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
-ms.technology: vs-devops-overview 
-ms.prod: vs-devops-alm
+title: Software development roles supported by VSTS & TFS
+description: Understand how Visual Studio Team Services & Team Foundation Server tools support various software development roles
+ms.technology: devops-new-user 
+ms.prod: devops
 ms.assetid: 4600B0D9-3799-4902-814B-F6EC9098C4CE
 ms.manager: douge
 ms.author: kaelli
+ms.topic: conceptual
 ms.date: 12/07/2016
 monikerRange: '>= tfs-2013'
 ---
@@ -23,7 +24,7 @@ This topic provides a roadmap to support you in quickly coming up to speed on th
 
 ## Contributor roles
 
-Team members are contributors who have access to the code base, work item tracking, Agile tools, build definitions, test tools, and more. If you need to lock down specific areas to a select set of contributors, you can do that through the [permission management](../security/permissions.md).   
+Team members are contributors who have access to the code base, work item tracking, Agile tools, build definitions, test tools, and more. If you need to lock down specific areas to a select set of contributors, you can do that through the [permission management](../organizations/security/permissions.md).   
 
 ### Software developers
 
@@ -66,13 +67,13 @@ One of the main advantages to working with VSTS or TFS is the suite of tools and
 - Define, manage, track, and approve releases 
 - Deploy applications to Azure, a virtual machine, Docker containers, and more  
 
-To get started, see the overviews provided here: [Build &amp; Release](../build-release/overview.md) and [Test](../manual-test/index.md). 
+To get started, see the overviews provided here: [Build &amp; Release](../pipelines/overview.md) and [Test](../test/index.md). 
 
 ### Stakeholders
 
 With stakeholder access, anyone within your organization can check project status and provide feedback. Stakeholders can track project priorities and provide direction, feature ideas, and business alignment to a team. They can contribute to plans by adding and modifying work items. They can't, however, contribute to the code base or exercise test tools. 
 
-Stakeholder access essentially provides free access to a limited set of feature to project sponsors and supporters. To learn more, see [Work as a Stakeholder](../security/get-started-stakeholder.md). 
+Stakeholder access essentially provides free access to a limited set of feature to project sponsors and supporters. To learn more, see [Work as a Stakeholder](../organizations/security/get-started-stakeholder.md). 
 
 <a id="admin-roles">  </a>
 
@@ -100,10 +101,10 @@ To get started, see [Manage team assets](../work/scale/manage-team-assets.md).
 Responsible for project level settings, including:
 
 - [Area paths](../work/customize/set-area-paths.md) and [Iteration paths](../work/customize/set-iteration-paths-sprints.md)
-- [Project permissions and repository security](../security/permissions.md)
+- [Project permissions and repository security](../organizations/security/permissions.md)
 - [Customize work tracking objects (TFS only)](../work/customize/customize-work.md) 
-- [Build agents, pools, and service endpoints](../build-release/overview.md) 
-- [Test](../manual-test/getting-started/how-long-to-keep-test-results.md) and [release](../build-release/concepts/policies/retention.md) retention policies 
+- [Build agents, pools, and service endpoints](../pipelines/overview.md) 
+- [Test](../test/how-long-to-keep-test-results.md) and [release](../pipelines/policies/retention.md) retention policies 
  
 
 ### Project collection administrators
@@ -116,7 +117,7 @@ Responsible for account or collection-level settings. These include:
 - Customize work tracking processes  
 - Install and manage extensions (install custom or [Marketplace extensions](https://marketplace.visualstudio.com/)) 
 
-To get started, see [Account Management](../accounts/account-management.md). 
+To get started, see [Account Management](../organizations/accounts/account-management.md). 
 
  
 ### TFS administrators
@@ -130,7 +131,7 @@ Responsible for installing, upgrading, and maintaining an on-premises TFS deploy
 - Build retention policies
 - Add and manage team project collections     
   
-To get started, see [Server Administration (TFS)](../tfs-server/index.md). 
+To get started, see [Server Administration (TFS)](/tfs/server/index). 
 
 
 ## Related notes

@@ -1,18 +1,20 @@
 ---
 title: Add work items
 titleSuffix: VSTS & TFS 
-ms.custom: Add and follow work items 
+ms.global_help.title: View & add work items
+ms.global_help.keywords: ms.vss-work-web.work-items-hub, 2 
 description: Add work items to plan and manage a software project using Agile tools, Scrum, or Kanban when connected to a team project in Visual Studio Team Services or Team Foundation Server  
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 9474A25E-A9D8-433D-8370-C94624B4ACD6  
 ms.manager: douge
 ms.author: kaelli
-ms.topic: get-started-article
+author: KathrynEE
+ms.topic: quickstart
 ms.date: 03/20/2018
 ---
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 # Add, update, and follow a work item 
 ::: moniker-end
 ::: moniker range=">= tfs-2013 <= tfs-2015"
@@ -31,7 +33,7 @@ You add work items to plan and manage your project. You use different types of w
 
 -->
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 
 <a id="define-new-work">  </a>
 ## Add a work item 
@@ -62,7 +64,7 @@ Here we show how to add work items from the web portal.
 
 	You can [add tags to any work item to filter backlogs and queries](../track/add-tags-to-work-items.md).
 
-	Work items you add are automatically scoped to your [team's area and iteration paths](../scale/set-team-defaults.md). To change the team context, see [Switch team project or team focus](../../settings/switch-team-context.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json).
+	Work items you add are automatically scoped to your [team's area and iteration paths](../../organizations/settings/set-team-defaults.md). To change the team context, see [Switch team project or team focus](../../organizations/settings/switch-team-context.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json).
 
 That's it! 
 
@@ -79,7 +81,7 @@ You can start adding work items once you connect to a team project. Here we show
 
 	![Home page -  create work items](_img/work-items-tfs-team-home-page.png)  
 
-	Work items you add are automatically scoped to your [team's area and iteration paths](../scale/multiple-teams.md). To change the team context, see [Switch team project or team focus](../../settings/switch-team-context.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json)
+	Work items you add are automatically scoped to your [team's area and iteration paths](../scale/multiple-teams.md). To change the team context, see [Switch team project or team focus](../../organizations/settings/switch-team-context.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json)
 
 3. Enter a title and then save the work item. Before you change the default State, you must save it.  
 
@@ -93,7 +95,7 @@ You can start adding work items once you connect to a team project. Here we show
 ## Update work items as work progresses
 As work progresses, team members can update the state and reassign it as needed. While the workflow states differ for different work item types, they usually follow a progression from New or Active to Completed or Done. 
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 > [!div class="mx-imgBorder"]  
 > ![Update the State of a User Story](_img/add-work/update-state.png)   
 ::: moniker-end
@@ -117,14 +119,14 @@ The following image shows the work flow states for a product backlog item. If yo
 <tbody valign="top">
 <tr>
 <td>
-<p><b>Typical workflow progression:</b> </p> 
+<p><b>Typical workflow progression:</b></p>
 <ul>
 <li>Create a product backlog item in the default state, New.</li>
 <li>Change the state from New to Approved.</li>
 <li>Change the state from Approved to Committed.</li>
 <li>Change the state from Committed to Done.</li>
 </ul>
-<p><b>Atypical transitions:</b> </p> 
+<p><b>Atypical transitions:</b></p>
 <ul>
 <li>Change the state from New to Removed.</li>
 <li>Change the state from Removed to New.</li>
@@ -144,7 +146,7 @@ Removed work items remain in the data store and can be reactivated by changing t
 
 With each update, changes are recorded in the History field which you can view through the **History** tab.  
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 ![View change history](_img/add-work-item-history.png)  
 ::: moniker-end
 ::: moniker range=">= tfs-2013 <= tfs-2015"
@@ -154,7 +156,7 @@ With each update, changes are recorded in the History field which you can view t
 To find work items based on their history, see [History & auditing](../track/history-and-auditing.md).  
 
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 ## Follow a work item
 
 When you want to track the progress of a single work item, click the ![Follow icon](../_img/icons/follow-icon.png) icon. This signals the system to notify you when changes are made to the work item.   
@@ -163,7 +165,7 @@ When you want to track the progress of a single work item, click the ![Follow ic
 
 You'll only receive notifications when other members of your team modifies the work item, such as adding to the discussion, changing a field value, or adding an attachment. 
 
-Notifications are sent to your preferred email address, which which [you can change from your account preferences](../../notifications/change-email-address.md).  
+Notifications are sent to your preferred email address, which [you can change from your account preferences](../../notifications/change-email-address.md).  
 
 To stop following changes, click the ![Following icon](../../work/_img/icons/following-icon.png)  icon.
  
@@ -172,7 +174,7 @@ To stop following changes, click the ![Following icon](../../work/_img/icons/fol
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
 > [!IMPORTANT]
->To support the Follow feature, [you must configure an SMTP sever](../../tfs-server/admin/setup-customize-alerts.md) in order for team members to receive notifications.  
+>To support the Follow feature, [you must configure an SMTP sever](/tfs/server/admin/setup-customize-alerts) in order for team members to receive notifications.  
 
 ::: moniker-end
 

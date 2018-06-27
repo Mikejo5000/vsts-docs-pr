@@ -1,11 +1,13 @@
 ---
-title: Automate field assignments | VSTS & TFS
-description: Transition work items from one state to another state based on an event that occurs elsewhere when working in VSTS or Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Automate field assignments 
+titleSuffix: VSTS & TFS
+description: Transition work items from one state to another state based on an event that occurs elsewhere for Team Foundation Server 
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: f4c6c550-ed55-4bff-a5a7-0e25e87249a5
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.manager: douge
+ms.topic: reference
 ms.date: 02/14/2017
 ---
 
@@ -28,7 +30,7 @@ You may want to automatically transition work items from one state to another st
   
  <a name="Syntax"></a> 
 ##  Syntax for the ACTION element  
- The following syntax is used for the **ACTION** element. The value attribute specifies the name of the action and is required. You should follow the same naming conventions for actions as for field reference names. For example, Team Foundation version control uses Microsoft.VSTS.Actions.CheckIn to identify the transition that is appropriate for work items that are associated with the check-in. For more information, see [Naming conventions for work item tracking objects](../../../collaborate/naming-restrictions.md).  
+ The following syntax is used for the **ACTION** element. The value attribute specifies the name of the action and is required. You should follow the same naming conventions for actions as for field reference names. For example, Team Foundation version control uses Microsoft.VSTS.Actions.CheckIn to identify the transition that is appropriate for work items that are associated with the check-in. For more information, see [Naming conventions for work item tracking objects](../../../organizations/settings/naming-restrictions.md).  
   
 > [!div class="tabbedCodeSnippets"]
 ```XML 

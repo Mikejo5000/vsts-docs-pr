@@ -1,17 +1,21 @@
 ---
-title: Enable and use Analytics with Velocity Widget
+title: Add an Analytics widget to a dashboard
 titleSuffix: VSTS
-description: Walkthrough on mechanics of spinning up and using AX from E2E.
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-reporting
-ms.assetid: 
+description: Quickstart guide that shows you how to add an Analytics widget to a dashboard for Visual Studio Team Services 
+ms.prod: devops
+ms.technology: devops-analytics
 ms.manager: douge
 ms.reviewer: romik
 ms.author: kaelli
+author: KathrynEE
+ms.topic: quickstart
+monikerRange: 'vsts'
 ms.date: 11/13/2017
 ---
 
 # Add an Analytics widget to a dashboard
+
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
  
 The [Analytics Service](what-is-analytics.md) is the reporting platform for Visual Studio Team Services (VSTS). 
 Using Analytics, you and your team can gain new insights into the health and status of your work.
@@ -35,7 +39,7 @@ In this topic we walk you through the steps for adding the Analytics-based Veloc
 
 ## Add the Velocity widget to your dashboard 
 
-To add a widget to a dashboard, you connect to your team project using a [supported web browser](../../tfs-server/requirements.md#supported-browsers). If you need to add a team project, see [Create a team project](../../accounts/create-team-project.md)
+To add a widget to a dashboard, you connect to your team project using a [supported web browser](/tfs/server/compatibility#supported-browsers). If you need to add a team project, see [Create a team project](../../organizations/accounts/create-team-project.md)
 
 1. Connect to the web portal for your team project and click the Dashboards hub.  
 	![Open the Dashboards hub](../dashboards/_img/dashboards-go-to.png)
@@ -53,11 +57,10 @@ To add a widget to a dashboard, you connect to your team project using a [suppor
 Congratulations! A new Velocity widget has been added to your dashboard. 
 
 > [!TIP]  
-> You'll gain the greatest utility from the Velocity widget by [assigning work to sprints and completing work defined in those sprints](../../work/scrum/sprint-planning.md). To quickly define sprints, see [Schedule sprints](../../work/scrum/define-sprints.md). 
+> You'll gain the greatest utility from the Velocity widget by [assigning work to sprints and completing work defined in those sprints](../../work/scrum/assign-work-sprint.md). To quickly define sprints, see [Schedule sprints](../../work/scrum/define-sprints.md). 
  
 
-
-##  Learn about your team’s velocity using the Velocity widget 
+##  Learn about your team��s velocity using the Velocity widget 
 
 The Velocity widget will help you learn how much work your team can complete during a sprint. The widget shows the team's velocity by Story Points, work item count, or any custom field. You can also compare the work delivered against your plan and track work completed late. Using the Velocity widget, you will be able to answer questions like:
 * On average, what is the velocity of my team?

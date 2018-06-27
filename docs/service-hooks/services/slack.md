@@ -1,19 +1,21 @@
 ---
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-collab
+ms.topic: conceptual
 title: Slack with VSTS
 description: Use Slack with your VSTS account
 ms.assetid: ea948249-1053-4971-99b9-ffa820c03803
 ms.manager: douge
+monikerRange: '>= tfs-2017'
 ms.author: elbatk
+author: elbatk
 ms.date: 08/04/2016
-ms.topic: get-started-article
 ---
 
 # Slack with VSTS
 
 Post messages to [Slack](https://slack.com/) in response to events in your VSTS account,
-like completed builds, code changes, and new and updated work items.
+like completed builds, code changes, pull requests, releases, work items changes, and more.
 
 ## Create the Slack integration
 

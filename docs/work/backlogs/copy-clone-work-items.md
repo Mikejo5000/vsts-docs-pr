@@ -1,12 +1,15 @@
 ---
 title: Copy work items 
-description: Copy or clone work items, copy the URL link, or copy a list of work items to the clipboard-Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)   
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+description: Copy or clone work items, copy the URL link, or copy a list of work items to the clipboard-Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)  
+ms.global_help.title: Copy or clone a work item 
+ms.global_help.keywords: ms.vss-work-web.work-items-hub, 4  
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 743A3914-CD86-403D-AA4F-42CDBBB69F95  
 ms.manager: douge
-ms.author: kaelli 
-ms.topic: get-started-article
+ms.author: kaelli
+author: KathrynEE 
+ms.topic: tutorial
 ms.date: 03/20/2018
 ---
 
@@ -20,7 +23,7 @@ The second copy function is to copy a multi-selected list of work items to the c
 
 Use this topic to learn how to:  
 
-> [!div class="checklist"]   
+>[!div class="checklist"]      
 > * Copy or clone a work item, essentially making a duplicate of a work item     
 > * Change the work item type, for example from a bug to a user story 
 > * Copy a list of work items to email or share with others  
@@ -28,7 +31,7 @@ Use this topic to learn how to:
 
 [!INCLUDE [temp](../_shared/image-differences.md)] 
 
-[!INCLUDE [temp](../_shared/prerequisites-work-items.md)] 
+[!INCLUDE [temp](../_shared/prerequisites-work-items.md)]
 
 <a id="copy-clone"></a>
 ## Copy or clone a work item   
@@ -37,7 +40,7 @@ Clone a work item when you want to create another instance of it. This action op
 Copy a work item when you want to create another instance of it and optionally change its work item type. This action opens a form with all fields filled out except for the Title. A related link to the original work item is created. Also any parent link is copied over. No  history or attachments are copied over from the original work item. 
 
 
-::: moniker range="vsts || >= tfs-2018"
+::: moniker range=">= tfs-2018"
 <!---#### VSTS and TFS 2018-->
 1. From the web portal, open the work item you want to copy or clone, open the &hellip; context menu, and click **Create copy of work item**.  
 
@@ -98,10 +101,10 @@ With this option, you can copy an HTML formatted table of selected items from ei
  
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 > [!NOTE]  
->The data copied with **Copy as HTML** is the same as that copied when you select **Email selected work items**. If you don't have an SMTP server configured, you can work around this by using **Copy as HTML**. For on-premises TFS, all email actions require an [SMTP server to be configured](../../tfs-server/admin/setup-customize-alerts.md). 
+>The data copied with **Copy as HTML** is the same as that copied when you select **Email selected work items**. If you don't have an SMTP server configured, you can work around this by using **Copy as HTML**. For on-premises TFS, all email actions require an [SMTP server to be configured](/tfs/server/admin/setup-customize-alerts). 
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2018"
+::: moniker range=">= tfs-2018"
 <!---#### VSTS and TFS 2018-->
 
 1. From the web portal, open a backlog or query results page, and [multi-select the work items](bulk-modify-work-items.md#multi-select) you want to copy to the clipboard. 
@@ -153,7 +156,7 @@ The formatted table contains a link to each work item included in your selected 
 
 # [Browser](#tab/browser)
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 Copy the URL from the web browser address or hover over the title and then click the ![Copy to clipboard icon](_img/icon-copy-to-clipboard.png) copy-to-clipboard icon.  
 
 <img src="_img/add-work-item-copy-URL.png" alt="Copy hyperlink for a work item from web portal" style="border: 1px solid #CCCCCC;" />

@@ -2,12 +2,13 @@
 title: Pull changes to your local Git repo | VSTS & TFS
 description: Using Git Pull, fetch, and merge to get code from others
 ms.assetid: b06b9f18-b76f-418c-93d0-f12d1f48f3c0
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git 
-ms.topic: get-started-article
+ms.prod: devops
+ms.technology: devops-code-git 
 ms.manager: douge
 ms.author: sdanie
-ms.date: 03/14/2018
+author: steved0x
+ms.topic: tutorial
+ms.date: 05/17/2018
 monikerRange: '>= tfs-2013'
 ---
 
@@ -42,6 +43,9 @@ You download changes to your local branch from the remote through `fetch`. `Fetc
 and new branches that others have pushed but you don't have and downloads them into your repo, creating local branches as needed. 
 
 `Fetch` does not merge any changes into your local branches, it only downloads the new commits for your review.
+
+>[!TIP]
+>To help keep your branches list clean and up to date, configure Git to prune remote branches during fetch. You can configure this setting from the [command line](../concepts/git-config.md?tabs=command-line#prune-remote-branches-during-fetch) or from within [Visual Studio](../concepts/git-config.md?tabs=visual-studio#prune-remote-branches-during-fetch).
 
 # [Visual Studio](#tab/visual-studio)
 

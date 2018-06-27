@@ -1,11 +1,12 @@
 ---
 title: Tools and clients that connect to VSTS and TFS
-description: Understand the tools that support connecting with the hosted cloud offering of Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
-ms.technology: vs-devops-overview 
-ms.prod: vs-devops-alm
+description: Understand the tools that support connecting to Visual Studio Team Services & Team Foundation Server  
+ms.technology: devops-new-user 
+ms.prod: devops
 ms.assetid: 3836C81D-6E0A-46B5-8D1D-20E973E4F373
 ms.manager: douge
 ms.author: kaelli
+ms.topic: conceptual
 ms.date: 03/02/2017
 monikerRange: '>= tfs-2013'
 ---
@@ -38,7 +39,7 @@ Be clear about what they pay for and what is free
 
 ## Desktop client developer tools
 
-Developers have access to a variety of tools through these versions of Visual Studio and plug-ins. to download any version of Visual Studio, visit the [Visual Studio Downloads page](https://www.visualstudio.com/downloads/). To understand what features you get with the Visual Studio versions, see [Compare Visual Studio Offerings](https://www.visualstudio.com/vs/compare/). 
+Developers have access to a variety of tools through these versions of Visual Studio and plug-ins. to download any version of Visual Studio, visit the [Visual Studio Downloads page](https://visualstudio.microsoft.com/downloads/). To understand what features you get with the Visual Studio versions, see [Compare Visual Studio Offerings](https://visualstudio.microsoft.com/vs/compare/). 
 
 - **Visual Studio Community**: A fully-featured and extensible IDE for creating modern applications for Android, iOS, and Windows, as well as web applications and cloud services. (Replaces Visual Studio Express) 
 - **Visual Studio Professional**: Development tools and services to support individual developers or small teams 
@@ -80,8 +81,8 @@ When you install any edition of Visual Studio or [Team Foundation Server Standal
 The following clients support specific tasks, such as managing testing efforts, providing feedback, or modifying work items.
 
 - **[Microsoft Test Manager](https://msdn.microsoft.com/library/jj635157.aspx)**: Allows you to manage your test efforts, create and run manual tests, and create and track bugs that are found during test efforts. Test Manager installs with Visual Studio Test Professional and Visual Studio Enterprise. 
-- **[Test & Feedback extension (previously called the Exploratory Testing extension)](../manual-test/stakeholder/provide-stakeholder-feedback.md)**: Provides a lightweight, plug-in to a web browser. Stakeholders can respond to feedback requests for user stories and features generated in VSTS or TFS. This extension is free to stakeholders. 
-- **[Microsoft Feedback Client](../feedback/give-feedback.md)**: Your stakeholders can use **Microsoft Feedback Client** to record feedback for your application as video, audio, or type-written comments. This client installs with all versions of Visual Studio, or can be [installed from the free download](https://www.microsoft.com/download/details.aspx?id=30660). All feedback is stored in the work item data store and requires [stakeholders to have required permissions](../feedback/give-permissions-feedback.md).  
+- **[Test & Feedback extension (previously called the Exploratory Testing extension)](../test/provide-stakeholder-feedback.md)**: Provides a lightweight, plug-in to a web browser. Stakeholders can respond to feedback requests for user stories and features generated in VSTS or TFS. This extension is free to stakeholders. 
+- **[Microsoft Feedback Client](../project/feedback/give-feedback.md)**: Your stakeholders can use **Microsoft Feedback Client** to record feedback for your application as video, audio, or type-written comments. This client installs with all versions of Visual Studio, or can be [installed from the free download](https://www.microsoft.com/download/details.aspx?id=48142). All feedback is stored in the work item data store and requires [stakeholders to have required permissions](../project/feedback/give-permissions-feedback.md).  
  
 >[!IMPORTANT]
 >Test Manager is deprecated for TFS 2017.  
@@ -152,10 +153,10 @@ You can perform many code development and administrative tasks using command lin
 
 - [Git commands](../git/command-prompt.md)
 - [TFVC commands](../tfvc/use-team-foundation-version-control-commands.md)
-- [TFSConfig](../tfs-server/command-line/tfsconfig-cmd.md)
-- [TFSDeleteProject](../tfs-server/command-line/tfsdeleteproject-cmd.md)
-- [TFSSecurity](../tfs-server/command-line/tfssecurity-cmd.md)
-- [TFSServiceControl](../tfs-server/command-line/tfsservicecontrol-cmd.md)
+- [TFSConfig](/tfs/server/ref/command-line/tfsconfig-cmd)
+- [TFSDeleteProject](/tfs/server/ref/command-line/tfsdeleteproject-cmd)
+- [TFSSecurity](/tfs/server/ref/command-line/tfssecurity-cmd)
+- [TFSServiceControl](/tfs/server/ref/command-line/tfsservicecontrol-cmd)
 - [witadmin (work item tracking)](../work/customize/reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md) 
 
 
@@ -181,5 +182,5 @@ REST APIs are provided to support building extensions to VSTS and TFS. To learn 
 - [Key concepts](concepts.md)
 - [Essential services](services.md)
 - [Software development roles](roles.md)
-- [Pricing](https://www.visualstudio.com/team-services/pricing/)
+- [Pricing](https://visualstudio.microsoft.com/team-services/pricing/)
  

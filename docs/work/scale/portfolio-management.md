@@ -1,13 +1,14 @@
 ---
-title: Portfolio management | VSTS & TFS 
-description: Configure teams to support portfolio backlogs to track progress across teams in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)  
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+title: Portfolio management
+titleSuffix: VSTS & TFS
+description: Configure teams to support portfolio backlogs to track progress across teams in Visual Studio Team Services & Team Foundation Server 
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: F6FF6E6B-C9AA-4681-9205-D48C8F29D94B  
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 05/26/2017
-ms.topic: get-started-article
+ms.topic: quickstart
 ---
 
 # Portfolio management 
@@ -18,7 +19,7 @@ Portfolio backlogs provide product owners insight into the work performed by sev
 
 In this topic you'll learn:  
 
-> [!div class="checklist"] 
+>[!div class="checklist"]    
 > * How to support a management view of multiple team progress
 > * How feature teams can focus on their team backlog progress  
 > * How to assign work from a common backlog
@@ -89,7 +90,7 @@ The first step is to add a team for each feature team and management area. When 
 
 <img src="_img/pm-add-teams.png" alt="Project admin context, Add teams" style="border: 2px solid #C3C3C3;" />
 
-You'll need to be a [project administrator](../../security/set-project-collection-level-permissions.md) to perform these steps.
+You'll need to be a [project administrator](../../organizations/security/set-project-collection-level-permissions.md) to perform these steps.
 
 1. To add a team, give the team a name, and make sure to select **Create an area path with the name of the team**.
 
@@ -142,7 +143,7 @@ You'll need to be a [project administrator](../../security/set-project-collectio
 
 ### Define a single sprint cadence for all teams 
 
-If your feature teams use Scrum and work in sprints, you'll want to set up a series of sprints that all teams can use. By default, you'll see a set of predefined sprints. Add more sprints and set their sprint dates as described in [Add iterations and set iteration dates](../customize/set-iteration-paths-sprints.md). 
+If your feature teams use Scrum and work in sprints, you'll want to set up a series of sprints that all teams can use. By default, you'll see a set of predefined sprints. Add more sprints and set their sprint dates as described in [Add iterations and set iteration dates](../../organizations/settings/set-iteration-paths-sprints.md). 
 
 You do this from the team project admin context. 
 
@@ -156,7 +157,7 @@ Here we've defined the start and end dates of the first 6 sprints corresponding 
 
 These next set of steps can be performed by a team administrator.  
 - [Add team members](multiple-teams.md#add-team-members)
-- [Select sprints for the team](../scale/set-team-defaults.md#activate)
+- [Select sprints for the team](../../organizations/settings/set-team-defaults.md#activate)
 - [Activate backlog levels](../customize/select-backlog-navigation-levels.md) 
 - [Show bugs on backlogs and boards](../customize/show-bugs-on-backlog.md) 
 
@@ -170,13 +171,13 @@ With the hierarchical set of teams in place, you're well positioned to start pla
 - [Add management dashboards with multi-team views](visibility-across-teams.md#add-management-dashboards-with-multi-team-views). 
 - [Work with multi-team ownership of backlog items](../backlogs/work-multi-team-ownership-backlogs.md)
 - [Select backlog navigation levels for your team](../customize/select-backlog-navigation-levels.md) 
-- [Track capacity when working on more than one team](capacity-planning.md#track-capacity-per-team) 
+- [Track capacity when working on more than one team](../scrum/set-capacity.md#track-capacity-per-team) 
 
 ## Related articles
  
 - [Create your backlog](../backlogs/create-your-backlog.md)  
 - [Kanban](../kanban/kanban-basics.md)
-- [Sprint-planning](../scrum/sprint-planning.md)
+- [assign-work-sprint](../scrum/assign-work-sprint.md)
 - [Organize your backlog](../backlogs/organize-backlog.md)
 - [Customize your work tracking experience](../customize/customize-work.md)
 

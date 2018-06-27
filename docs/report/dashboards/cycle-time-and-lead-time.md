@@ -2,12 +2,12 @@
 title: Cycle time and lead time control charts
 titleSuffix: VSTS  
 description: Configure and use the cycle time and lead time control charts/widgets to improve your team's ability to plan and improve processes  
-ms.prod: vs-devops-alm  
-ms.technology: vs-devops-reporting  
+ms.prod: devops  
+ms.technology: devops-analytics  
 ms.assetid: C444622C-A2CA-4FCF-9E68-90D8D4896E6B  
 ms.topic: tutorial
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 monikerRange: 'vsts' 
 ms.date: 03/20/2018 
 ---
@@ -38,7 +38,7 @@ The Configuration dialog for the Cycle Time and Lead Time widgets is the same. Y
 
 ### Pre-requisites
 In order to configure the Cycle Time and Lead Time widgets, you must have the following in place:  
-- Installed the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You must be an account owner or a member of the [Project Collection Administrator group](../../security/set-project-collection-level-permissions.md) to add extensions.  
+- Installed the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You must be an account owner or a member of the [Project Collection Administrator group](../../organizations/security/set-project-collection-level-permissions.md) to add extensions.  
 - [Added the widget to a dashboard](../add-widget-to-dashboard.md). You must be a [team administrator](../../work/scale/add-team-administrator.md)or have [permissions to add and edit dashboards](../dashboards/dashboard-permissions.md#set-permissions). 
 
 ### Configuration dialog 

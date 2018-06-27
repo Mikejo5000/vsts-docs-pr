@@ -2,10 +2,12 @@
 title: Connect to your Git repos with SSH | VSTS & TFS
 description: Authenticate to VSTS Git Repositories with SSH Keys
 ms.assetid: 2f89b7e9-3d10-4293-a277-30e26cae54c5
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git 
+ms.prod: devops
+ms.technology: devops-code-git 
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: conceptual
 ms.date: 03/14//2018
 monikerRange: '>= tfs-2015'
 ---
@@ -15,7 +17,7 @@ monikerRange: '>= tfs-2015'
 #### VSTS | TFS 2018 | TFS 2017 | TFS 2015 Update 3
 
 Connect to your Git repos through SSH when you can't use the recommended [Git Credential Managers](set-up-credential-managers.md) or
-[Personal Access Tokens](../accounts/use-personal-access-tokens-to-authenticate.md) to securely connect using HTTPS authentication.
+[Personal Access Tokens](../organizations/accounts/use-personal-access-tokens-to-authenticate.md) to securely connect using HTTPS authentication.
 
 >[!IMPORTANT]
 > SSH URLs have changed. Old SSH URLs will continue to work through December 1, 2017. If you have already set up SSH, you will need to update your remote URLs:
@@ -204,3 +206,15 @@ You can find `ssh-add` as part of the Git for Windows distribution and also run 
 
 On macOS and Linux you also must have `ssh-agent` running before running `ssh-add`, but the command environment on these platforms usually 
 takes care of starting `ssh-agent` for you.
+
+### What notifications may I receive regarding my SSH keys?
+
+Whenever you register a new SSH Key with VSTS, you will recevie an email notification informing you that a new SSH key has been added to your account.
+
+![SSH notification example](_img/use-ssh-authentication/ssh_notification.png)
+
+### Q: What do I do if I believe that someone other than me is adding SSH keys on my account?
+
+**A:** If you receive a notification of an SSH key being registered and you did not manually upload it to the service, your credentials may have been compromised. 
+
+The next step would be to investigate whether or not your password has been compromised; changing your password is always a good first step to defend against this attack vector. If you’re an Azure Active Directory user, talk with your administrator to check if your account was used from an unknown source/location.  

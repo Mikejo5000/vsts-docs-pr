@@ -1,14 +1,14 @@
 ---
 title: Add features & epics to a Kanban board
 titleSuffix: VSTS & TFS
-description: Quickly define and view the status of child features, user stories, or product backlog items when working in the Kanban features or epic boards in Visual Studio Team Services 
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+description: Quickly define and view the status of child features, user stories, or backlog items using Kanban features or epic boards in Visual Studio Team Services & Team Foundation Server
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 489C612D-983E-47D3-BD1A-F13C5DCD74E2  
-monikerRange: vsts || >= tfs-2013 <= tfs-2018
-ms.topic: get-started-article
+monikerRange: '>= tfs-2013'
+ms.topic: tutorial
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 03/20/2018
 ---
 
@@ -22,14 +22,14 @@ ms.date: 03/20/2018
 <!---
 > [!NOTE]    
 ><b>Feature availability: </b>Child checklists for feature and epic Kanban boards are supported from VSTS and TFS 2017 and later versions.
--->  
+--> 
 
 If you use Kanban to track progress on your backlog, you can also use Kanban boards to track epics and features.  
 
 And, just as with [child task checklists for backlog items](add-task-checklists.md), you can quickly define and track the progress of child items for your features or epics. Here we see several stories defined for features, both in progress and those completed.    
 
 In this topic, you'll learn: 
-> [!div class="checklist"] 
+>[!div class="checklist"]    
 > * How to add epics and features using your portfolio backlogs    
 > * Keyboard shortcuts for working with the Kanban board  
 
@@ -38,18 +38,84 @@ In this topic, you'll learn:
 > Epic portfolio backlogs are supported in TFS 2015 and later versions.  
 ::: moniker-end
 
-<img src="_img/features-with-stories.png" alt="Web portal, Features Kanban board with several user stories defined" style="border: 2px solid #C3C3C3;" />
+> [!div class="mx-imgBorder"]
+> ![Web portal, Features Kanban board with several user stories defined](_img/features-epics/features-with-stories-intro.png)
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"
 > [!NOTE]    
 >Child checklists for feature and epic Kanban boards are supported from TFS 2017 and later versions.
 ::: moniker-end
 
+[!INCLUDE [temp](../_shared/prerequisites.md)]
+
+
+## Open your Kanban board from the web portal
+
+Your Kanban board is one of two types of boards available to you. For an overview of the features supported on each backlog and board, see [Backlogs, boards, and plans](/vsts/work/backlogs/backlogs-boards-plans). To switch to the [product backlog](/vsts/work/backlogs/create-your-backlog), choose **Stories backlog**. And, to switch to the [Task board](/vsts/work/scrum/task-board), choose **Sprints** and then choose **Taskboard**.  
+ 
+[!INCLUDE [temp](../_shared/new-agile-hubs-feature.md)] 
+
+# [Vertical navigation](#tab/vertical)
+
+::: moniker range="vsts"
+
+0. (1) Check that you have selected the right project, (2) choose **Work>Boards**, and then (3) select the correct team from the team selector menu. 
+
+	![Open your Kanban board, agile  hubs](/vsts/work/kanban/_img/quickstart/open-kanban-board-agile.png)  
+
+	To choose another team's board, open the selector and select a different team or choose the ![home-icon](/vsts/_img/icons/home-icon.png) **Browse all team boards** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
+
+	> [!div class="mx-imgBorder"]  
+	> ![Choose another team's board](/vsts/work/kanban/_img/quickstart/select-kanban-team-board.png) 
+
+	> [!TIP]    
+	> Choose the ![](/vsts/_img/icons/icon-favorite-star.png) star icon to favorite a team board. Favorited artifacts (![](/vsts/_img/icons/icon-favorited.png) favorited icon) appear at the top of the team selector list.
+
+0. Select **Features** or **Epics** from the backlog selector menu . 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Choose portfolio backlog level, Features or Epics](_img/features-epics/select-portfolio-level.png) 
+
+::: moniker-end
+
+::: moniker range=">= tfs-2013 <= tfs-2018"
+
+[!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)] 
+
+::: moniker-end
+
+# [Horizontal navigation](#tab/horizontal)
+
+0. To view a portfolio backlog, open your (1) team project from a web browser and choose (2) **Work**, (3) **Backlogs**, (4) **Features** or **Epics**, and then (5) **Board**.  
+1. 
+	![Open Features Kanban board](_img/features-epics/open-features-board-standard.png)
+
+	If you don't see the **Work** hub, your screen size may be reduced. Click the three dots (![](/vsts/_shared/_img/ellipses-reduced-screen-size.png)), then choose **Work**, **Backlogs**, and then **Board**.   
+
+	![Open Work hub when screen size is reduced](/vsts/work/kanban/_img/kanban-quickstart-reduced-screensize.png)   
+
+0.	To choose another team, open the project/team selector and select a different team or choose the **Browse** option. 
+	::: moniker range=">= tfs-2017"
+	> [!div class="mx-imgBorder"]  
+	> ![Choose another team](/vsts/work/scrum/_img/assign-items-sprint/team-selector-backlogs-standard.png) 
+	::: moniker-end
+	::: moniker range=">= tfs-2013 <= tfs-2015"
+	![Choose another team from the project menu](/vsts/work/scrum/_img/capacity/vso-team-selector.png)
+	::: moniker-end
+
+0. Your Kanban board for the selected portfolio backlog displays.  
+
+	![Kanban board, Agile template](_img/features-epics/features-board-standard.png)   
+
+
+---
+
+
 ## Add epics or features    
 
 Add new items to a feature or epic through the item's ![actions icon](../_img/icons/actions-icon.png) Action menu. For descriptions of fields used to support features and epics, see [Define features and epics](../backlogs/define-features-epics.md). 
 
-<img src="_img/features-add-story.png" alt="Web portal, Feature Kanban board, Open the context menu of a feature to add a story" style="border: 1px solid #C3C3C3;" /> 
+![Web portal, Feature Kanban board, Open the context menu of a feature to add a story](_img/features-epics/add-user-story.png)
 
 If you have a number of items to add, simply keep typing your task titles and click Enter. If you have details you want to add about to a work item, hover over the item and press Enter.  
  
@@ -62,9 +128,8 @@ For additional guidance on working with a checklist on a Kanban board, see [Add 
 
 - Mark an item as done  
 - Reorder and reparent work items  
-- Assign work items to sprints   
 
-To customize the columns, swimlanes, or cards for each Kanban board, make sure you first select the board and then click the gear icon to open the Settings dialog. See these topics for details: 
+To customize the columns, swimlanes, or cards for each Kanban board, make sure you first select the board and then choose the ![](../../_img/icons/blue-gear.png) or ![](../../_img/icons/gear_icon.png) gear icon to open the Settings dialog. See these topics for details: 
 
 * [Add columns](add-columns.md)  
 * [Customize cards](../customize/customize-cards.md)  

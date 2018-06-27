@@ -1,17 +1,20 @@
 ---
 title: Update SSRS Report
+titleSuffix: TFS
 description: TFS SharePoint integration - Update an SSRS Report on a SharePoint site
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-integrate
-ms.manager: abjork
-ms.author: greggboe
+ms.prod: devops
+ms.technology: devops-analytics
+ms.topic: conceptual
+ms.manager: douge
+ms.reviewer: greggboe
+ms.author: kaelliauthor: KathrynEE
 ms.date: 09/28/2017
 ms.topic: 
 ---
 
 # Update SSRS Report after SharePoint is disabled
 
-[!INCLUDE [temp](../_shared/about-sharepoint-deprecation.md)]
+[!INCLUDE [temp](../_shared/about-sharepoint-deprecation.md)]
 
 Displaying SSRS Reports on a SharePoint will continue to work, even after disabling SharePoint integration. Displaying SSRS Reports in SharePoint is based on SharePoint and SQL Server Reporting Services technologies. It doesn't require the TFS Extension for SharePoint to operate. 
 
@@ -48,5 +51,5 @@ http://REPORTSERVER/ReportServer?%2fTfsReports%2fCOLLECTIONNAME%2fPROJECTNAME%2f
 
 1. Save your changes to the PageViewer web part.
 
-# Referenced topics
+## Related articles
 * [SSRS Report URL Access Parameter Reference](https://docs.microsoft.com/sql/reporting-services/url-access-parameter-reference)

@@ -1,13 +1,15 @@
 ---
-title: Agile process template
+title: Agile process template artifacts
 titleSuffix: VSTS & TFS  
 description: Agile process objects used to plan and track work, monitor progress, and trends when connecting to Visual Studio Team Services & Team Foundation Server 
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 28e9cb42-f049-45eb-a2d8-f7a3b93471b8
 ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
+monikerRange: '>= tfs-2013'
 ms.date: 03/20/2018
 ---
 
@@ -24,7 +26,7 @@ In addition to the WITs, teams have access to a set of shared work item queries 
 
 ::: moniker range="vsts"
 > [!NOTE]  
-> You can customize the work tracking system for your team project based on the Agile process by creating and customizing an inherited process and applying that process to your team project. To learn more, see [Inheritance process model](../../customize/inheritance-process-model.md). 
+> You can customize the work tracking system for your team project based on the Agile process by creating and customizing an inherited process and applying that process to your team project. To learn more, see [Inheritance process model](../../../organizations/settings/work/inheritance-process-model.md). 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
@@ -109,8 +111,8 @@ To use [SharePoint dashboards](../../../report/sharepoint-dashboards/project-por
 
 As updates are made to the Agile process template, the version number is updated. The following table provides a mapping of the versioning applied as updates are made to the TFS server. For VSTS, the latest version is always used. Starting with TFS 2012, the `version` element was added to the process template to support versioning of the templates. This element specifies a major and minor version. Prior to this change, the version was specified within the process template name.      
 
-> [!div class="mx-tdCol2BreakAll"]  
-> | TFS version | Agile process name | Major version |
+> [!div class="mx-tdCol2BreakAll"]
+> |TFS version | Agile process name | Major version |
 > |-------------|-------------------|--------------|
 > | TFS 2018 | Agile | 16 |
 > | TFS 2017 | Agile | 15 |
@@ -156,7 +158,7 @@ Product owners can use the shared queries that are defined in the following tabl
 
 The following table describes the shared queries that are listed under the **Current Iteration** folder. These queries find work items that are assigned to a specified iteration. As you plan additional iterations, you can modify these queries to specify a different iteration and then save them to additional folders that you create, such as **Iteration 2** or **Iteration 3**.
 
-The project administrator for each team project [defines area and iteration paths](../../customize/set-area-paths.md) for that project so that the team can track progress by those designations.
+The project administrator for each team project [defines area and iteration paths](../../../organizations/settings/set-area-paths.md) for that project so that the team can track progress by those designations.
 
 <table>
 <thead>

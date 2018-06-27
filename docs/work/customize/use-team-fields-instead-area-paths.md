@@ -2,11 +2,14 @@
 title: Use team fields instead of area paths to support teams 
 titleSuffix: TFS
 description: Steps to modify the XML syntax to support using a team field with Team Foundation Server
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: d61dcfa8-e9ec-4b50-b79b-89512cf1e3ea
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
+ms.topic: conceptual
+monikerRange: '>= tfs-2013 <= tfs-2018'
 ms.date: 04/14/2017
 ---
 
@@ -15,7 +18,7 @@ ms.date: 04/14/2017
 [!INCLUDE [temp](../_shared/version-header-tfs-only.md)]
 
 > [!IMPORTANT]  
-> **Feature availability:** Team fields are only supported for on-premises TFS. Team fields are not supported in VSTS. Also, you can use a Team field or Area Paths to configure Team-scoped tools, but not both. 
+> **Feature availability:** Team fields are only supported for on-premises TFS. Also, you can use a Team field or Area Paths to configure Team-scoped tools, but not both. 
 
 The default configuration for team projects configures each team as an area path. For information on adding a team, see [Multiple teams](../scale/multiple-teams.md).
 
@@ -38,7 +41,7 @@ When you customize your team project to support team fields, the Team field tab 
 <a id="globallist">  </a>  
 ### 1. Create a global list to manage teams 
 
-0. If you aren't a member of the **Project Administrators** group, [get those permissions](../../security/set-project-collection-level-permissions.md).
+0. If you aren't a member of the **Project Administrators** group, [get those permissions](../../organizations/security/set-project-collection-level-permissions.md).
 
 [!INCLUDE [temp](../_shared/witadmin-run-tool-example.md)]
 
@@ -217,7 +220,7 @@ For backlog items you create from a team's backlog page, TFS assigns the default
 ### Q: How do I configure features for an upgraded team project that has been customized to use team fields?
 
 **A:** Before you can [configure features for an upgraded team project](configure-features-after-upgrade.md) that you have customized to use team fields, you'll need to customize the latest process template with the same changes outlined in this topic. Here are the basic steps:
-
+visualstudio.microsoft.com
 1.  Upgrade TFS [to the latest version](https://www.visualstudio.com/downloads).
 
 2.  [Download the process template](../work-items/guidance/manage-process-templates.md) that corresponds to the template used to create your team project.

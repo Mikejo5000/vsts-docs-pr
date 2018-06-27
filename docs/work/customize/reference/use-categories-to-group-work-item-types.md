@@ -1,11 +1,12 @@
 ---
 title: Use categories to group work item types | VSTS & TFS
 description: Generate flexible reports, and support increased integration across team projects using categories 
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 2fc6c411-89a9-4af5-8dd3-b2d4c2ecf540
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
 ms.date: 04/04/2017
 ---
 
@@ -16,7 +17,7 @@ ms.date: 04/04/2017
 
 By using categories, you can generate flexible reports, and support increased integration across team projects. You can more easily manage multiple work item types (WITs) as a group as well as WITs that are named differently. Also, you can use the **In Group** query operator to filter a list of work items based on the category to which they belong.  
   
-Categories associate one or more WITs as belonging to the same category. The [Agile tools](../../../settings/about-teams-and-settings.md) rely on the default category definitions, many of which specify a single WIT per category.  
+Categories associate one or more WITs as belonging to the same category. The [Agile tools](../../../organizations/settings/about-teams-and-settings.md) rely on the default category definitions, many of which specify a single WIT per category.  
   
 Here's an example of the feature and bug category entries within the Categories XML definition file:  
   
@@ -59,7 +60,7 @@ You use categories to accomplish the following operations:
 -   Test Suite Category  
 -   Hidden Types Category  
   
-Most of these categories are self-explanatory, and most only contain one WIT within the category. The exception to this rule is the Hidden Types Category.  
+Most of these categories are self-explanatory, and mostly contain one WIT within the category. The exception to this rule is the Hidden Types Category.  
   
 If you have created WITs that act in similar ways and you want to treat them in similar ways as those defined by the above categories, then you will want to add them to the category. For example, if you have defined one or more types of bugs, then you might want to add those types to the Bug Category. In this way, the process configuration will automatically treat these bug types as they do the standard bug WIT. Or, you can customize the Requirement Category to include two or more WITs which will then appear on the product backlog.  
   
@@ -68,9 +69,9 @@ If you have created WITs that act in similar ways and you want to treat them in 
  The Hidden Types Category specifies the set of WITs that you do not want users to create manually. By default this set includes:  
   
 -   [Code Review Request and Code Review Response](../../../tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md )    
--   [Feedback Request and Feedback Response](../../../feedback/get-feedback.md)    
--   [Shared Steps and Shared Parameter](../../../manual-test/getting-started/create-test-cases.md)    
--   [Test Plan and Test Suite](../../../manual-test/getting-started/create-a-test-plan.md)  
+-   [Feedback Request and Feedback Response](../../../project/feedback/get-feedback.md)    
+-   [Shared Steps and Shared Parameter](../../../test/create-test-cases.md)    
+-   [Test Plan and Test Suite](../../../test/create-a-test-plan.md)  
   
 ### Process configuration  
 Process configuration defines the layout and fields used in the display of the product backlog,  sprint backlogs, and portfolio backlogs. You view these pages through the web portal. Process configuration uses categories to [configure and customize these functions](process-configuration-xml-element.md). Also, note the following restrictions:  

@@ -2,12 +2,13 @@
 title: Manage personal notification settings
 titleSuffix: VSTS & TFS
 description: Get notified when changes occur to source code, git, work items, and builds when using Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
-ms.technology: collaborate
-ms.prod: vs-devops-alm
+ms.technology: devops-collab
+ms.prod: devops
 ms.assetid: 644687b3-e30e-46b0-8d3e-3d4a4e34d13a
 ms.manager: douge
-ms.author: wismythe
-ms.topic: get-started-article
+ms.author: elbatk
+author: elbatk
+ms.topic: conceptual
 ms.date: 09/01/2017
 monikerRange: '>= tfs-2017'
 ---
@@ -18,7 +19,7 @@ monikerRange: '>= tfs-2017'
 <b>VSTS | TFS 2018 | TFS 2017.1 | [Previous versions](../work/track/alerts-and-notifications.md)</b> 
 
 >[!NOTE]  
->**Feature availability**: This topic applies to VSTS and to TFS 2017.1 and later versions. If you work from an on-premises TFS 2017 or ealier versions, see [Set alerts, get notified when changes occur](../work/track/alerts-and-notifications.md). For on-premises TFS, [you must configure an SMTP sever](../tfs-server/admin/setup-customize-alerts.md) in order for team members to see the Notifications option from their account menu and to  receive notifications. 
+>**Feature availability**: This topic applies to VSTS and to TFS 2017.1 and later versions. If you work from an on-premises TFS 2017 or ealier versions, see [Set alerts, get notified when changes occur](../work/track/alerts-and-notifications.md). For on-premises TFS, [you must configure an SMTP sever](/tfs/server/admin/setup-customize-alerts) in order for team members to see the Notifications option from their account menu and to  receive notifications. 
  
 As changes occur to your code base, builds, work items, and other operations, you can receive email notifications. For example, you can set an alert to be notified whenever a bug that you opened is resolved or a work item is assigned to you. 
 
@@ -36,7 +37,7 @@ From the web portal, click the icon with your initials or picture icon, and sele
 
 <img src="_img/unsubscribe-open-notification-settings.png" alt="Open personal notification settings" style="border: 2px solid #C3C3C3;" />
 
-This view shows all subscriptions that you have created or that have been created by an administrator. Subscriptions let you control what you are notified about. Those notifications you're subscribed to are indicated with the the State as **On**. 
+This view shows all subscriptions that you have created or that have been created by an administrator. Subscriptions let you control what you are notified about. Those notifications you're subscribed to are indicated with the State as **On**. 
 
 <img src="_img/unsubscribe-personal-notifications.png" alt="Personal notification subscriptions" style="border: 2px solid #C3C3C3;" />
 
@@ -86,11 +87,11 @@ For example, here we turn off the Build completes subscription.
 <!--- TFS 2017.1 settings 
 To manage your notification settings, select the Notifications option under the profile menu:
 	
-![Access personal notifications settings via the profile menu](../collaborate/_img/personal-profile-menu.png)
+![Access personal notifications settings via the profile menu](../project/wiki/_img/personal-profile-menu.png)
 
-Learn more about [team subscriptions](../collaborate/manage-team-notifications.md).
+Learn more about [team subscriptions](manage-team-notifications.md).
 
-![Personal notification settings](../collaborate/_img/personal-notifications.png)
+![Personal notification settings](../project/wiki/_img/personal-notifications.png)
 
 From this view, you can create, edit, disable, or delete custom subscriptions that you have created for yourself. You can also see shared team subscriptions.
 
@@ -100,19 +101,19 @@ From this view, you can create, edit, disable, or delete custom subscriptions th
 	
 3. Select the type of activity you want to be notified about.
 	
-	![Select event category and template](../collaborate/_img/new-sub-page1.png)
+	![Select event category and template](../project/wiki/_img/new-sub-page1.png)
 
 4. Provide a description to help you identify the subscription later. Also choose an email address for notifications to be delivered to. By default, your preferred email address is used.
 
-	![Select event category and template](../collaborate/_img/new-sub-description-and-delivery.png)
+	![Select event category and template](../project/wiki/_img/new-sub-description-and-delivery.png)
 
 5. Choose whether you want to receive notifications about activity in all projects or only a specific project.
 
-	![Select scope](../collaborate/_img/new-sub-scope.png)
+	![Select scope](../project/wiki/_img/new-sub-scope.png)
 
 6. Optionally configure additional filter criteria.
 
-	![Select scope](../collaborate/_img/new-sub-filter-conditions.png)
+	![Select scope](../project/wiki/_img/new-sub-filter-conditions.png)
 
 7. Click **Finish** to save the new subscription.
 
@@ -122,23 +123,23 @@ You can choose to not receive notifications for certain team subscriptions by op
 
 1. Open your notifications settings from the profile menu.
 	
-	![Access personal notifications settings via the profile menu](../collaborate/_img/personal-profile-menu.png)
+	![Access personal notifications settings via the profile menu](../project/wiki/_img/personal-profile-menu.png)
 
 2. Find the team subscription in the shared subscriptions section.
 
-	![Shared subscriptions list](../collaborate/_img/shared-sub.png)
+	![Shared subscriptions list](../project/wiki/_img/shared-sub.png)
 
 3. Click the toggle to opt out of receiving notifications for this subscription.
 
-    ![Opt'ed out of a shared sub](../collaborate/_img/shared-sub-opt-out.png)
+    ![Opt'ed out of a shared sub](../project/wiki/_img/shared-sub-opt-out.png)
 
 -->
 
 ## Related notes
 
 - [Default and supported notifications](oob-built-in-notifications.md)
-- [Follow a specific work item](../collaborate/follow-work-items.md)  
-- [Manage notifications for a team](../collaborate/manage-team-notifications.md)  
+- [Follow a specific work item](../work/work-items/follow-work-items.md)  
+- [Manage notifications for a team](manage-team-notifications.md)  
 - [Change your preferred email address](change-email-address.md)  
 
 ### Limitations

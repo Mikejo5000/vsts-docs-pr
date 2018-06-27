@@ -1,12 +1,13 @@
 ---
 title: Query by numeric field
 titleSuffix: VSTS & TFS
-description: Track work by creating queries based on effort, story points, schedules, or time tracking fields in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+description: Track work by creating queries based on effort, story points, schedules, or time tracking fields in Visual Studio Team Services & Team Foundation Server
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 78fe418f-fbd8-4ae2-97d7-c754c14dd3cd
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: sample
 ms.date: 02/05/2018  
 ---
 
@@ -182,7 +183,7 @@ The following table describes the activity-based and numeric fields that you can
 <tbody valign="top">
 <tr>
 	<td><p>Activity <sup>1, 2</sup></p></td>
-	<td><p>The type of activity that is required to perform a task.To learn more about how this field is used, see [Capacity planning](../scale/capacity-planning.md). Allowed values are:</p><ul><li><p>Deployment</p></li><li><p>Design</p></li><li><p>Development</p></li><li><p>Documentation</p></li><li><p>Requirements</p></li><li><p>Testing</p></li></ul>
+	<td><p>The type of activity that is required to perform a task.To learn more about how this field is used, see [Capacity planning](../scrum/set-capacity.md). Allowed values are:</p><ul><li><p>Deployment</p></li><li><p>Design</p></li><li><p>Development</p></li><li><p>Documentation</p></li><li><p>Requirements</p></li><li><p>Testing</p></li></ul>
 
 
   <blockquote><b>Note:</b> This field <sup>3</sup> is also used to calculate capacity by activity. It is assigned to <code>type=&quot;Activity&quot;</code> in the ProcessConfiguration file. 
@@ -207,7 +208,7 @@ The following table describes the activity-based and numeric fields that you can
 </tr>
 <tr>
 	<td><p>Discipline <sup>1, 2</sup></p></td>
-	<td><p>The type of activity or discipline that is assigned to a task. To learn more about how this field is used, see [Capacity planning](../scale/capacity-planning.md). Allowed values are:</p><ul><li><p>Analysis</p></li><li><p>Development</p></li><li><p>Test</p></li><li><p>User Education</p></li><li><p>User Experience</p></li></ul><blockquote>Note: This field <sup>3</sup> is also used to calculate capacity by activity. It is assigned to <code>type=&quot;Activity&quot;</code> in the ProcessConfiguration file.
+	<td><p>The type of activity or discipline that is assigned to a task. To learn more about how this field is used, see [Capacity planning](../scrum/set-capacity.md). Allowed values are:</p><ul><li><p>Analysis</p></li><li><p>Development</p></li><li><p>Test</p></li><li><p>User Education</p></li><li><p>User Experience</p></li></ul><blockquote>Note: This field <sup>3</sup> is also used to calculate capacity by activity. It is assigned to <code>type=&quot;Activity&quot;</code> in the ProcessConfiguration file.
 </blockquote>
 
 <p>Reference name=Microsoft.VSTS.Common.Discipline, Data type=String</p>
@@ -289,7 +290,7 @@ The following table describes the activity-based and numeric fields that you can
 **Notes:**
 
 1.  To change the menu selection (on-premises TFS only), see [Add or modify a field, customize a pick list](../customize/add-modify-field.md).   
-2.  The values displayed in the [Capacity page](../scale/capacity-planning.md) for Activity(Agile or Scrum) or Discipline (CMMI) reflect a union of all values defined for the field in all team projects within the project collection instance. Therefore, to restrict the values that appear for Capacity on the sprint backlog pages, you must make the values match in all the team projects for the field assigned to `type="Activity"`.</p>
+2.  The values displayed in the [Capacity page](../scrum/set-capacity.md) for Activity(Agile or Scrum) or Discipline (CMMI) reflect a union of all values defined for the field in all team projects within the project collection instance. Therefore, to restrict the values that appear for Capacity on the sprint backlog pages, you must make the values match in all the team projects for the field assigned to `type="Activity"`.</p>
 
 3.  To change the ProcessConfiguration field assignment (on-premises TFS only), see [Process configuration XML element reference](../customize/reference/process-configuration-xml-element.md).
 
@@ -300,8 +301,8 @@ For information on adding custom fields, see [Customize your work tracking exper
 
 The main tools you use to plan and track work are described here: 
 - [Create your backlog](../backlogs/create-your-backlog.md)
-- [Sprint planning](../scrum/sprint-planning.md)
-- [Capacity planning](../scale/capacity-planning.md)
+- [Sprint planning](../scrum/assign-work-sprint.md)
+- [Capacity planning](../scrum/set-capacity.md)
 - [Task board](../scrum/task-board.md)
 - [Kanban board](../kanban/kanban-basics.md)
 

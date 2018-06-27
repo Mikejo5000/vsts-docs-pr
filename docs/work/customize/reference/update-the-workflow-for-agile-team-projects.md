@@ -1,22 +1,23 @@
 ---
-title: Update the workflow for team projects based on the Agile process template
+title: Update the Agile process workflow 
 titleSuffix: TFS
 description: Update the workflow for agile team projects to manually update the user story and task workflow assignments.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 88e33e19-20f5-403d-b106-b0057ebe6a19
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+monikerRange: '>= tfs-2013 <=tfs-2015'
 ms.date: 12/15/2017
 ---
 
 # Update the workflow for agile team projects
 
-**TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013** 
+**TFS 2015 | TFS 2013** 
 
 
 > [!IMPORTANT]  
->This topic applies to team project that was created using a Microsoft Solutions Framework (MSF) version 5.0 process template and is defined on an on-premises Team Foundation Server (TFS).   
+> This topic applies to team project that was created using a Microsoft Solutions Framework (MSF) version 5.0 process template and is defined on an on-premises Team Foundation Server (TFS).   
 
 
 After you have configured features for your upgraded team project, which was created with a process template based on Microsoft Solutions Framework (MSF) for Agile Software Development v5.0, you should manually update the user story and task workflow assignments. If you don't update the workflow, then the task board provides only two states, **Active** and **Closed**, as shown in the following illustration. This prevents you and your team from distinguishing between tasks that are in progress from those that haven't been started.  
@@ -35,7 +36,7 @@ Task board for an Agile team project without the recommended manual updates
   
 **Requirements**  
   
-To run the **witadmin** command-line tool, you must be a member of one of the following groups: **Team Foundation Administrators**, **Project Collection Administrators**, or **Project Administrators** group for the team project. See [Add administrators, set permissions at the project-level or project collection-level](../../../security/set-project-collection-level-permissions.md).  
+To run the **witadmin** command-line tool, you must be a member of one of the following groups: **Team Foundation Administrators**, **Project Collection Administrators**, or **Project Administrators** group for the team project. See [Add administrators, set permissions at the project-level or project collection-level](../../../organizations/security/set-project-collection-level-permissions.md).  
   
 <a name="agile_updates"></a> 
 ##Update the workflow and metastates
@@ -367,4 +368,4 @@ To run the **witadmin** command-line tool, you must be a member of one of the fo
      ![Agile task board with updated workflow](_img/alm_vrf_taskboard_agile_v6.png "ALM_VRF_TaskBoard_Agile_V6")  
 Task board for an Agile team project with the updated workflow states  
   
-     To learn more about using the task board, see [Sprint planning](../../scrum/sprint-planning.md).
+     To learn more about using the task board, see [Sprint planning](../../scrum/assign-work-sprint.md).

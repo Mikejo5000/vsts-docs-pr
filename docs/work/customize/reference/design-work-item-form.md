@@ -1,11 +1,11 @@
 ---
 title: Design the work item form | VSTS & TFS
 description: Place and group fields on the form so that they can support the data entry and workflow processes that will be followed by team members - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 51acfaa1-3c2c-4371-b5da-e43d458bb1f7
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 06/16/2017
 ---
 
@@ -14,7 +14,7 @@ ms.date: 06/16/2017
 <p><b>TFS 2017 (Hosted XML) | TFS 2015  | TFS 2013 </b></p>
 
 > [!IMPORTANT]  
-> This topic applies to team project customization for the On-premises XML process model. For the Hosted XML process model, see [WebLayout and Control elements](weblayout-xml-elements.md). For the Inheritance process model, see [Customize a process](../process/customize-process.md).
+> This topic applies to team project customization for the On-premises XML process model. For the Hosted XML process model, see [WebLayout and Control elements](weblayout-xml-elements.md). For the Inheritance process model, see [Customize a process](../../../organizations/settings/work/customize-process.md).
 >
 > For an overview of process models, see [Customize your work tracking experience](../customize-work.md).  
 

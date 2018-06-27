@@ -2,11 +2,11 @@
 title: Differences between cloud and on-premises process customizations
 titleSuffix: VSTS  
 description: Summary of what you can and can't customize in a process template to support customized work tracking in Visual Studio Team Services (VSTS).
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 2B500AEA-165C-428D-B580-C9C0A8D01635
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 monikerRange: 'vsts'
 ms.date: 03/20/2018
 ---
@@ -16,7 +16,7 @@ ms.date: 03/20/2018
 <b>VSTS (Hosted XML)</b>   
  
 > [!IMPORTANT]  
->**Feature availability:**&#160;&#160;Import process supports the Hosted XML process model which allows you to manage customizations through updating select XML definition files of a process template. This feature is only available for accounts that have been migrated to VSTS using the [TFS Data Import Service](https://aka.ms/TFSDataImport). [Contact us](mailto:vsocustpt@microsoft.com) if you have any questions about VSTS process customization. 
+>**Feature availability:**&#160;&#160;Import process supports the Hosted XML process model which allows you to manage customizations through updating select XML definition files of a process template. This feature is only available for organizations that have been migrated to VSTS using the [TFS Data Import Service](https://aka.ms/TFSDataImport). [Contact us](mailto:vsocustpt@microsoft.com) if you have any questions about VSTS process customization. 
 >
 >If you use the Inheritance process model, you can customize your work tracking through the user interface by [creating an Inheritance process](../process/manage-process.md). If you use the On-premises XML process model, you can customize a process template, see [Upload or download a process template](../../work-items/guidance/manage-process-templates.md) and [Customize a process template](../reference/process-templates/customize-process.md).
 >
@@ -31,10 +31,11 @@ The structure and overall syntax used in defining process templates remains the 
 ## Unsupported customizations and unreferenced plug-in files
 
 Any reference to the following objects in any of the XML definition files will result in a validation error upon import.  
-*   Custom controls on work item forms  <!--- TBD --> 
+*   Custom controls on work item forms  
 *   Custom link types  
 *   Global workflow 
 *   Team field support
+*   for and not rules support
 
 The following plug-ins and their associated files aren't used in defining a process, nor used to update existing team projects. 
 However, they are used to create objects or artifacts when you create a new team project.  
@@ -60,7 +61,7 @@ The following plug-ins and their associated files are ignored.
 Custom plug-ins aren't supported. 
 
 ## Object limits 
-When customizing a process template for import, limit the number of the objects you define as specified in [Work tracking object limits](../object-limits.md).  
+When customizing a process template for import, limit the number of the objects you define as specified in [Work tracking object limits](../../../organizations/settings/work/object-limits.md).  
                                                                                                                             
 
 ## Tools with limited support 
@@ -73,5 +74,5 @@ When you connect to VSTS, you can use the following tools subject to limitations
 
 ## Related articles
 
-- [Work tracking object limits](../object-limits.md)   
+- [Work tracking object limits](../../../organizations/settings/work/object-limits.md)   
 - [Customize work tracking](../customize-work.md) 

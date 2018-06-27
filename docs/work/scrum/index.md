@@ -1,44 +1,48 @@
 ---
-title: Index of Scrum topics
+title: Define and plan sprints and work with scrum tools
 titleSuffix: VSTS & TFS 
-description: Index to topics for working in Scrum using VSTS or Team Foundation Server  
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+description: Define sprints, update your taskboard, and implement scrum in Visual Studio Team Services & Team Foundation Server  
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid:  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 03/20/2018
+author: KathrynEE
+ms.topic: conceptual
+monikerRange: '>= tfs-2013'
+ms.date: 07/07/2018
 ---
 
-# Scrum
+# Sprints (Scrum)
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)] 
 
-With Scrum, you can schedule and plan sprints, update your task board, and monitor your sprint burndown. 
+With Scrum, you can schedule and plan sprints, update your task board, and monitor your sprint burndown. For an overview of the Scrum lifecycle, see [What is Scrum?](/azure/devops/agile/what-is-scrum). 
 
 ## 5-Minute Quickstarts  
 
 Start tracking work by adding work items, creating your backlog, or scheduling sprints.  
   
 - [Schedule sprints](define-sprints.md)
-- [Define iteration paths](../customize/set-iteration-paths-sprints.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json)    
+- [Define iteration paths](../../organizations/settings/set-iteration-paths-sprints.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json)    
 
 ## Step-by-Step Tutorials
 
 Whether you use scrum, Kanban, or a combination of Agile methods, you can get started tracking bugs, driving your Git development, and more using the Agile tools available to you. 
 
-- [Plan a sprint](sprint-planning.md)  
-- [Add and update tasks](task-board.md)  
-- [Plan capacity](../scale/capacity-planning.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json)  
-- [Sprint burndown](sprint-burndown.md)  
-- [Forecast](forecast.md) 
-- [Velocity](../../report/dashboards/team-velocity.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json) 
- 
+[1. Assign backlog items to a sprint](assign-work-sprint.md)  
+[2. Add tasks to backlog items](add-tasks.md)  
+[3. Set your team's capacity](set-capacity.md)  
+[4. Adjust work to fit team capacity](adjust-work.md)  
+[5. Share your sprint plan](share-plan.md)  
+[6. Update the Taskboard](task-board.md)  
+[7. Monitor sprint burndown](sprint-burndown.md)  
 
-## Concepts          
+ 
+## Concepts 
 - [Scrum best practices](best-practices-scrum.md) 
 - [Scrum and sprint planning tools](scrum-sprint-planning-tools.md)      
-- [About permissions and access](../../security/permissions-access-work-tracking.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json)
+- [About permissions and access](../../organizations/security/permissions-access-work-tracking.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json)
 - [Share work plans](../track/share-plans.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json) 
 
 
@@ -50,7 +54,7 @@ Whether you use scrum, Kanban, or a combination of Agile methods, you can get st
 
 
 ## Reference   
-- [Permissions and access for work tracking](../../security/permissions-access-work-tracking.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json)
+- [Permissions and access for work tracking](../../organizations/security/permissions-access-work-tracking.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json)
 - [Work item field index](../work-items/guidance/work-item-field.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json)
 - [Backlog keyboard shortcuts](../backlogs/backlogs-keyboard-shortcuts.md)
 
@@ -60,6 +64,6 @@ Whether you use scrum, Kanban, or a combination of Agile methods, you can get st
 - [Kanban](../kanban/index.md)
 - [Work item queries](../track/index.md)
 - [Work item customization](../customize/index.md)
-- [What is Scrum?](https://www.visualstudio.com/learn/what-is-scrum/)  
-- [What is Agile development?](https://www.visualstudio.com/learn/what-is-agile-development/)  
+- [What is Scrum?](/azure/devops/agile/what-is-scrum)
+- [What is Agile development?](/azure/devops/agile/what-is-agile-development)  
 
