@@ -12,7 +12,6 @@ ms.date: 3/14/2018
 monikerRange: '>= tfs-2017'
 ---
 
-
 # Deploy an agent on Windows
 
 **VSTS | TFS 2018 | TFS 2017 | [TFS 2015](v1-windows.md) | [Previous versions (XAML builds)](https://msdn.microsoft.com/en-us/library/ms252495%28v=vs.120%29.aspx)**
