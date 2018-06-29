@@ -18,7 +18,6 @@ ms.date: 05/31/2018
 
 Add a custom field, a custom work item type (WIT) or modify an existing WIT. The method you use depends on whether you use the Inheritance or Hosted XML process models.  
 
-
 ::: moniker range="vsts"
 ## 5-Minute Quickstarts  
 
