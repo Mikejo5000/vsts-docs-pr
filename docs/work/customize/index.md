@@ -74,6 +74,14 @@ Use the guidance provided in the following topics based on the process model or 
     - [Upload or download a process template](../work-items/guidance/manage-process-templates.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json)
     - [Customize a process template](reference/process-templates/customize-process.md)  
 
+- **Migrate from Hosted XML to Inherited ** (Preview)
+    - [Upgrade a Hosted XML process to an Inheritance process](hosted-xml-to-inherited/upgrade-hosted-to-inherited.md)  
+	- [Supported upgrade operations when moving from Hosted XML to an inherited process](hosted-xml-to-inherited/upgrade-support-hosted-to-inherited.md)  
+	- [Change a project from Hosted XML to an inherited process](hosted-xml-to-inherited/change-process-from-hosted-to-inherited.md)
+    
+
+ 
+
 ## Reference  
   
 - [Index to XML element reference](reference/xml-element-reference.md) 
