@@ -40,14 +40,13 @@ Import process supports the following scenarios:
 *   [Import a new process created from an existing exported process](#import-process)  
 *   [Import an update to an existing process, and have all projects using that process be updated](#update-process)  
 
-
-
 <a id="import-from-TFS">  </a>
 ## Import a process from an on-premises TFS 
 
-Your first step in migrating team projects that contain custom work tracking objects is to import the process to VSTS.
+These steps can be followed if you want to test your process in TFS to see if it works in VSTS.
+
 In Team Foundation Server, each project has its own copy of process so careful consideration needs to be made as to which processes should exist for your organization.
-Migration to VSTSis a great time to think about process alignment across your organization and reducing the number of variants of that centralized process.  
+Migration to VSTS is a great time to think about process alignment across your organization and reducing the number of variants of that centralized process.  
  
 1.  Run the [process export script](customize-process.md#open-process-wit) to generate a process for a given team project.   
 
@@ -61,17 +60,10 @@ Migration to VSTSis a great time to think about process alignment across your or
 
 6.  Using the imported process(es), create team projects on VSTS for each you want to migrate. 
 
-    With the project created, you can now migrate the project data to VSTS using the [TFS Database Import Service](https://aka.ms/tfsimport).
-
-
-
-
 <a id="open-process-wit">  </a>
 ### Open Process in the admin context
 
 [!INCLUDE [temp](../../_shared/open-process-admin-context-ts.md)]
-
-
 
 <a id="import-process">  </a>
 ## Import a process
