@@ -23,7 +23,7 @@ ms.date: 05/30/2018
 
 <a id="hosted-xml-process-model">  </a>
 
-Upgrading a Hosted XML process model to an inherited process  provides the convenience of customizing your work tracking system through the user interface. For an overview of supported customizations available to you with the Inheritance process, see [About process customization and inherited processes](inheritance-process-model.md). 
+Upgrading a Hosted XML process model to an inherited process  provides the convenience of customizing your work tracking system through the user interface. For an overview of supported customizations available to you with the Inheritance process, see [About process customization and inherited processes](../../../organizations/settings/work/inheritance-process-model.md). 
 
 While the upgrade process attempts to model all your work tracking customizations, there are some limitations. This article outlines the set of customizations that are supported during the upgrade process and those which aren't.
 
@@ -40,9 +40,9 @@ When you upgrade a Hosted XML process to an inherited process, the customization
 > |Artifact&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| Description |
 > |------|---------|
 > | Work item types (WITs) | All system and custom WITs are preserved. Customizations made to WIT color and icon are preserved.   | 
-> | Work item fields  | All custom fields are preserved. Fields that reference global lists are updated with picklists. All default values are ignored. To learn more about supported field customizations, see [About process customization and inherited processes, Field customizations](inheritance-process-model.md#field-customizations). |  
+> | Work item fields  | All custom fields are preserved. Fields that reference global lists are updated with picklists. All default values are ignored. To learn more about supported field customizations, see [About process customization and inherited processes, Field customizations](../../../organizations/settings/work/inheritance-process-model.md#field-customizations). |  
 > | Workflow states | All system and custom workflow states are preserved. |
-> | Workflow state categories | All customizations made to the ProcessConfiguration XML file to map a workflow state to a state category (*Proposed, In Progress, Resolved, Completed*) are preserved. Only one workflow state can be assigned to the *Completed* state category. If you have assigned a custom workflow state to the *Completed* state category, it will be preserved upon upgrade.<br/><br/>Any workflow state for a work item type that isn't included in a backlog level will get assigned to the *In Progress* state category. Check all custom workflow states post upgrade. To learn more, see [Workflow states and state categories](../customize/workflow-and-state-categories.md). |
+> | Workflow state categories | All customizations made to the ProcessConfiguration XML file to map a workflow state to a state category (*Proposed, In Progress, Resolved, Completed*) are preserved. Only one workflow state can be assigned to the *Completed* state category. If you have assigned a custom workflow state to the *Completed* state category, it will be preserved upon upgrade.<br/><br/>Any workflow state for a work item type that isn't included in a backlog level will get assigned to the *In Progress* state category. Check all custom workflow states post upgrade. To learn more, see [Workflow states and state categories](../workflow-and-state-categories.md). |
 > | Work item form layout  | A best effort is made to preserve the customizations made to the web form layout. However, any customizations made to the header area are ignored. Specifically, the **Weblayout** `ShowEmptyReadOnlyFields` attribute assignment is ignored. | 
 > | Backlog levels | Additions and customizations made to the product backlog and  portfolio backlog levels are preserved.  |
 > | Global lists | Global lists are converted to picklists for individual fields. |  
@@ -70,7 +70,7 @@ When you upgrade a Hosted XML process to an inherited process, the customization
 
 ## Related articles
 
-- [About process customization and inherited processes](inheritance-process-model.md)  
+- [About process customization and inherited processes](../../../organizations/settings/work/inheritance-process-model.md)  
 - [Upgrade a Hosted XML process to Inheritance](upgrade-hosted-to-inherited.md) 
 - [Change a project from a Hosted XML process to Inheritance](change-process-from-hosted-to-inherited.md) 
  

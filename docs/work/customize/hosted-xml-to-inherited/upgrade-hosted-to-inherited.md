@@ -19,9 +19,9 @@ ms.date: 05/30/2018
 > [!NOTE]  
 > This feature is currently in private preview. If you are interested in changing your processes from Hosted XML to Inherited, please email us at [vstsprivatepreview@microsoft.com](mailto:vstsprivatepreview@microsoft.com) to get the feature turned on in your account(s).
 
-Upgrading your Hosted XML process to the Inheritance process model allows you to manage customizations through the user interface versus XML definition files. The inherited process supports the set of customizations described here [About process customization and inherited processes](../../organizations/settings/work/inheritance-process-model.md). 
+Upgrading your Hosted XML process to the Inheritance process model allows you to manage customizations through the user interface versus XML definition files. The inherited process supports the set of customizations described here [About process customization and inherited processes](../../../organizations/settings/work/inheritance-process-model.md). 
 
-Before you upgrade a Hosted XML process, we recommend that you review [Supported upgrade operations when moving from Hosted XML process to inherited process](../../organizations/settings/work/upgrade-support-hosted-to-inherited.md). 
+Before you upgrade a Hosted XML process, we recommend that you review [Supported upgrade operations when moving from Hosted XML process to inherited process](../../../organizations/settings/work/upgrade-support-hosted-to-inherited.md). 
  
 ## Prerequisites
 
@@ -38,7 +38,7 @@ The general sequence of steps to support upgrade are:
 0. Manually reapply customizations that were ignored during upgrade  
 0. Create a test project to verify customizations. 
 
-[!INCLUDE [temp](../../organizations/settings/_shared/open-process-admin-context-ts.md)]
+[!INCLUDE [temp](../../../organizations/settings/_shared/open-process-admin-context-ts.md)]
 
 
 ## Upgrade a Hosted XML process to an Inheritance process 
