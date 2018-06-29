@@ -150,14 +150,14 @@
       href: ../work-items/guidance/manage-process-templates.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: Customize a process template
       href: ./reference/process-templates/customize-process.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
-   name: Migrate from Hosted XML to Inherited (Preview)
+    name: Migrate from Hosted XML to Inherited (Preview)
     items:
       name: Upgrade a Hosted XML process to an Inheritance process
-      href: hosted-xml-to-inherited/upgrade-hosted-to-inherited.md- 
+      href: ./hosted-xml-to-inherited/upgrade-hosted-to-inherited.md
       name: Supported upgrade operations
-      href: hosted-xml-to-inherited/upgrade-support-hosted-to-inherited.md
+      href: ./hosted-xml-to-inherited/upgrade-support-hosted-to-inherited.md
       name: Change a project from Hosted XML to an inherited
-      href: hosted-xml-to-inherited/change-process-from-hosted-to-inherited.md      
+      href: ./hosted-xml-to-inherited/change-process-from-hosted-to-inherited.md      
 - name: Troubleshooting
   items:
     - name: Resolve validation errors
