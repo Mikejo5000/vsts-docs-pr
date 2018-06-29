@@ -14,14 +14,14 @@ ms.date: 05/30/2018
 
 # Upgrade a Hosted XML process to an Inheritance process   
 
-[!INCLUDE [temp](../../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
 > [!NOTE]  
 > This feature is currently in private preview. If you are interested in changing your processes from Hosted XML to Inherited, please email us at [vstsprivatepreview@microsoft.com](mailto:vstsprivatepreview@microsoft.com) to get the feature turned on in your account(s).
 
-Upgrading your Hosted XML process to the Inheritance process model allows you to manage customizations through the user interface versus XML definition files. The inherited process supports the set of customizations described here [About process customization and inherited processes](inheritance-process-model.md). 
+Upgrading your Hosted XML process to the Inheritance process model allows you to manage customizations through the user interface versus XML definition files. The inherited process supports the set of customizations described here [About process customization and inherited processes](../../organizations/settings/work/inheritance-process-model.md). 
 
-Before you upgrade a Hosted XML process, we recommend that you review [Supported upgrade operations when moving from Hosted XML process to inherited process](upgrade-support-hosted-to-inherited.md). 
+Before you upgrade a Hosted XML process, we recommend that you review [Supported upgrade operations when moving from Hosted XML process to inherited process](../../organizations/settings/work/upgrade-support-hosted-to-inherited.md). 
  
 ## Prerequisites
 
@@ -38,7 +38,7 @@ The general sequence of steps to support upgrade are:
 0. Manually reapply customizations that were ignored during upgrade  
 0. Create a test project to verify customizations. 
 
-[!INCLUDE [temp](../_shared/open-process-admin-context-ts.md)]
+[!INCLUDE [temp](../../organizations/settings/_shared/open-process-admin-context-ts.md)]
 
 
 ## Upgrade a Hosted XML process to an Inheritance process 
@@ -48,26 +48,26 @@ The general sequence of steps to support upgrade are:
 	Here we open the menu for the Design Agile Process. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Agile process context menu, Choose Upgrade to inheritance](_img/migration/upgrade-to-inherited-option-menu.png) 
+	> ![Agile process context menu, Choose Upgrade to inheritance](../../_img/migration/upgrade-to-inherited-option-menu.png) 
 
 0. Review the information provided in the dialog that opens and then choose **Continue**.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Upgrade from XML to inheritance dialog information](_img/migration/upgrade-from-xml-to-inheritance.png)   
+	> ![Upgrade from XML to inheritance dialog information](../../_img/migration/upgrade-from-xml-to-inheritance.png)   
 
 0. In the next dialog, you can change the name of the inherited process to be created and optionally change the parent process and provide a description. 
 
 	Here, we accept the defaults provided by the system.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Upgrade from XML to inheritance dialog information](_img/migration/upgrade-from-xml-to-inheritance-dialog.png)  
+	> ![Upgrade from XML to inheritance dialog information](../../_img/migration/upgrade-from-xml-to-inheritance-dialog.png)  
 
 	> [!IMPORTANT]  
 	> The system performs a best effort to detect the correct parent process. Verify that the process selected meets your expectations, or change it as needed. Once you've completed the upgrade, you can't upgrade it a second time based on a different system process. 
 
 0. After  you've confirmed that the information is correct, choose **Save**. 
 
-[!INCLUDE [temp](../_shared/post-upgrade-steps.md)]
+[!INCLUDE [temp](post-upgrade-steps.md)]
 
 <a id="verify">  </a>
 ## Verify the customization you made 
@@ -77,17 +77,17 @@ We recommend that you create a test project based on the inherited process creat
 0. Open the **All processes** page, and choose the &hellip; context menu for the process you want to use, and then select **New team project**.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Create a team project from the selected process](_img/migration/create-team-project-inherited-process.png)  
+	> ![Create a team project from the selected process](../../_img/migration/create-team-project-inherited-process.png)  
 
 0. The Create new project page opens. Fill out the form. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Create new project form](_img/process/create-test-project.png) 
+	> ![Create new project form](../../../organizations/settings/work/_img/process/create-test-project.png) 
 
 0. Open the **Work>Work Items** page (user context) and choose **New Work Item** and select a WIT that you have previously customized. Here we choose **Bug**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Work, Work Items Page, Add New Work Item, Bug](_img/process/add-custom-field-verify-bug.png) 
+	> ![Work, Work Items Page, Add New Work Item, Bug](../../../organizations/settings/work/_img/process/add-custom-field-verify-bug.png) 
 
 0.  Verify that the customizations you expect appear on the form.  
 

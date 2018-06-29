@@ -14,7 +14,7 @@ ms.date: 05/30/2018
 
 # Change a project from Hosted XML to an inherited process 
 
-[!INCLUDE [temp](../../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
 > [!NOTE]  
 > This feature is currently in private preview. If you are interested in changing your processes from Hosted XML to Inherited, please email us at [vstsprivatepreview@microsoft.com](mailto:vstsprivatepreview@microsoft.com) to get the feature turned on in your account(s).
@@ -37,12 +37,12 @@ You create, manage, and make customizations to processes from the **Settings>Pro
 0. To open the admin context from the user context, choose the ![](/vsts/_img/icons/gear_icon.png) settings icon and choose **Account settings**. 
 	
 	> [!div class="mx-imgBorder"]  
-	> ![VSTS web portal, open Account Settings](_img/process/open-account-settings.png)   
+	> ![VSTS web portal, open Account Settings](../../../organizations/settings/work/_img/process/open-account-settings.png)   
 
 0. Choose **Process**. 
    
 	> [!div class="mx-imgBorder"]  
-	> ![Account Settings context, Process page](_img/process/open-process-page.png) 
+	> ![Account Settings context, Process page](../../../organizations/settings/work/_img/process/open-process-page.png) 
 
 
 <a id="change-inherited-process"></a>
@@ -53,19 +53,19 @@ After you've verified your customizations, you can now apply the  inherited proc
 0. From the Process hub, choose the inherited process you created, and then choose the **Projects** page. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open inherited process, Projects page](_img/migration/open-processes-projects-page.png)
+	> ![Open inherited process, Projects page](../../_img/migration/open-processes-projects-page.png)
 
 0. Open the &hellip; context menu for the project and choose the **Change process**&hellip; option. 
 
 	Here we open the menu for the Fabrikam Test project. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Fabrikam Test project context menu, Choose Change process](_img/migration/change-project-process-to-inherited.png)
+	> ![Fabrikam Test project context menu, Choose Change process](../../_img/migration/change-project-process-to-inherited.png)
 	
 0. Choose the inherited process that you created. The system lists only those processes that are valid for the selected project.	
   
 	> [!div class="mx-imgBorder"]  
-	> ![Change process to an inherited process dialog](_img/migration/change-process-dialog.png) 
+	> ![Change process to an inherited process dialog](../../_img/migration/change-process-dialog.png) 
 
 0. Choose **Ok**. 
 
