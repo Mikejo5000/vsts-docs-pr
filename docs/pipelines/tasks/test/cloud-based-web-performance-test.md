@@ -34,9 +34,11 @@ The build agent must have the following capabilities:
 * MSBuild
 * Azure PowerShell
 
-::: moniker range="vsts"
+::: moniker range=">tfs-2018"
 
-[!INCLUDE [temp](../_shared/yaml/QuickPerfTestV1.1.md)]
+## YAML snippet
+
+[!INCLUDE [temp](../_shared/yaml/QuickPerfTestV1.md)]
 
 ::: moniker-end
 
@@ -56,7 +58,7 @@ The build agent must have the following capabilities:
 
 ## More Information
 
-* [Cloud-based Load Testing](https://www.visualstudio.com/features/vso-cloud-load-testing-vs)
+* [Cloud-based Load Testing](https://visualstudio.microsoft.com/features/vso-cloud-load-testing-vs)
 * [Performance testing video and Q&A](../../../test/load-test/reference-qa.md)
 
 ## Related tasks
@@ -64,7 +66,11 @@ The build agent must have the following capabilities:
 * [Cloud-based Load Test](cloud-based-load-test.md)  
 * [Cloud-based Apache JMeter Load Test](run-jmeter-load-test.md)  
 
-## Q&A
+## Open source
+
+This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+
+## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
 
 ::: moniker range="< vsts"

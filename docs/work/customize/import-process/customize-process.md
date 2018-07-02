@@ -16,7 +16,7 @@ ms.date: 03/20/2018
 <b>VSTS (Hosted XML)</b>   
  
 > [!IMPORTANT]  
-> **Feature availability:**&#160;&#160; With the Hosted XML process model, you customize work tracking by updating select XML definition files of a process template. This feature is only available for accounts that have been migrated to VSTS using the [TFS Database Import Service](https://aka.ms/TFSDataImport).  
+> **Feature availability:**&#160;&#160; With the Hosted XML process model, you customize work tracking by updating select XML definition files of a process template. This feature is only available for organizations that have been migrated to VSTS using the [TFS Database Import Service](https://aka.ms/TFSDataImport).  
 > 
 >To learn more about customization and process models, see [Customize work tracking](../customize-work.md). 
 
@@ -150,7 +150,7 @@ In addition, your process must pass the following validation checks:
   * Templates with the same name but a different version GUID will generate an error.  
   * Process names cannot contain the following special characters:  
      ```. , ; ' ` : / \ * | ? " & % $ ! + = ( ) [ ] { } < >  ```  
-    See [Naming restrictions](../../../collaborate/naming-restrictions.md) for additional constraints.
+    See [Naming restrictions](../../../organizations/settings/naming-restrictions.md) for additional constraints.
 * Process folders can't contain any .exe files. While you may be able to import the process that contains a .exe file, project creation will fail.
 * Process total size should be 2 GB or less, or project creation will fail.
  

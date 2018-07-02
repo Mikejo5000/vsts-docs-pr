@@ -157,27 +157,27 @@
     },
     {
       "source_path": "docs/tfs-server/command-line/tfsservicecontrol-cmd.md",
-      "redirect_url": "/tfs/server/command-line/tfsservicecontrol-cmd",
+      "redirect_url": "/tfs/server/ref/command-line/tfsservicecontrol-cmd",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/command-line/tfs-labconfig-cmd.md",
-      "redirect_url": "/tfs/server/command-line/tfs-labconfig-cmd",
+      "redirect_url": "/tfs/server/ref/command-line/tfs-labconfig-cmd",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/command-line/tfsdeleteproject-cmd.md",
-      "redirect_url": "/tfs/server/command-line/tfsdeleteproject-cmd",
+      "redirect_url": "/tfs/server/ref/command-line/tfsdeleteproject-cmd",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/command-line/tfssecurity-cmd.md",
-      "redirect_url": "/tfs/server/command-line/tfssecurity-cmd",
+      "redirect_url": "/tfs/server/ref/command-line/tfssecurity-cmd",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/command-line/tfsconfig-cmd.md",
-      "redirect_url": "/tfs/server/command-line/tfsconfig-cmd",
+      "redirect_url": "/tfs/server/ref/command-line/tfsconfig-cmd",
       "redirect_document_id": false
     },
     {
@@ -222,7 +222,7 @@
     },
     {
       "source_path": "docs/tfs-server/admin/add-administrator-tfs.md",
-      "redirect_url": "/tfs/server/add-administrator-tfs",
+      "redirect_url": "/tfs/server/admin/add-administrator-tfs",
       "redirect_document_id": false
     },
     {
@@ -602,12 +602,12 @@
     },
     {
       "source_path": "docs/accounts/delete-account-users-users-hub.md",
-      "redirect_url": "/vsts/accounts/delete-account-users",
+      "redirect_url": "/vsts/organizations/accounts/delete-account-users",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/accounts/add-account-users-assign-access-levels.md",
-      "redirect_url": "/vsts/accounts/add-account-users-from-user-hub",
+      "redirect_url": "/vsts/organizations/accounts/add-account-users-from-user-hub",
       "redirect_document_id": false
     },
     {
@@ -642,12 +642,12 @@
     },
     {
       "source_path": "docs/build-release/apps/nodejs/build-nodejs-docker.md",
-      "redirect_url": "/vsts/pipelines/apps/containers/build-container",
+      "redirect_url": "/vsts/pipelines/apps/containers/build",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/apps/nodejs/build-aspnet-core-docker.md",
-      "redirect_url": "/vsts/pipelines/apps/containers/build-container",
+      "redirect_url": "/vsts/pipelines/apps/containers/build",
       "redirect_document_id": false
     },
     {
@@ -667,7 +667,7 @@
     },
     {
       "source_path": "docs/build/apps/aspnet/ci/build-aspnet-core.md",
-      "redirect_url": "/vsts/pipelines/apps/aspnet/build-aspnet-core",
+      "redirect_url": "/vsts/pipelines/languages/dotnet-core",
       "redirect_document_id": false
     },
     {
@@ -677,7 +677,7 @@
     },
     {
       "source_path": "docs/build/apps/node/nodejs-to-azure.md",
-      "redirect_url": "/vsts/pipelines/apps/nodejs/nodejs-to-azure",
+      "redirect_url": "/vsts/pipelines/apps/",
       "redirect_document_id": false
     },
     {
@@ -707,12 +707,12 @@
     },
     {
       "source_path": "docs/build/get-started/aspnet-4-ci-cd-azure-automatic.md",
-      "redirect_url": "/vsts/pipelines/apps/aspnet/aspnet-4-ci-cd-azure-automatic",
+      "redirect_url": "/vsts/pipelines/apps/aspnet/build-aspnet-4",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/build/get-started/aspnet-4-ci-cd-vs-automatic.md",
-      "redirect_url": "/vsts/pipelines/apps/aspnet/aspnet-4-ci-cd-vs-automatic",
+      "redirect_url": "/vsts/pipelines/apps/aspnet/build-aspnet-4",
       "redirect_document_id": false
     },
     {
@@ -722,7 +722,7 @@
     },
     {
       "source_path": "docs/build/get-started/java-maven.md",
-      "redirect_url": "/vsts/pipelines/apps/java/java-maven",
+      "redirect_url": "/vsts/pipelines/apps/java/build-maven",
       "redirect_document_id": false
     },
     {
@@ -762,17 +762,17 @@
     },
     {
       "source_path": "docs/setup-admin/account-preferences.md",
-      "redirect_url": "/vsts/accounts/account-preferences",
+      "redirect_url": "/vsts/organizations/settings/set-user-preferences",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/setup-admin/add-administrator-tfs.md",
-      "redirect_url": "/vsts/accounts/add-administrator-project-collection",
+      "redirect_url": "/vsts/organizations/security/set-project-collection-level-permissions",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/setup-admin/add-users.md",
-      "redirect_url": "/vsts/accounts/add-users",
+      "redirect_url": "/vsts/organizations/security/add-users-team-project",
       "redirect_document_id": false
     },
     {
@@ -782,37 +782,37 @@
     },
     {
       "source_path": "docs/setup-admin/clean-up-data.md",
-      "redirect_url": "/vsts/accounts/clean-up-data",
+      "redirect_url": "/tfs/server/upgrade/clean-up-data",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/setup-admin/create-team-project.md",
-      "redirect_url": "/vsts/accounts/create-team-project",
+      "redirect_url": "/vsts/organizations/accounts/create-team-project",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/setup-admin/get-started.md",
-      "redirect_url": "/vsts/accounts/index",
+      "redirect_url": "/vsts/organizations/accounts/index",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/setup-admin/git-permissions-before-2017.md",
-      "redirect_url": "/vsts/security/git-permissions-before-2017",
+      "redirect_url": "/vsts/organizations/security/git-permissions-before-2017",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/setup-admin/permissions.md",
-      "redirect_url": "/vsts/security/permissions",
+      "redirect_url": "/vsts/organizations/security/permissions",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/setup-admin/permissions-access.md",
-      "redirect_url": "/vsts/security/permissions-access",
+      "redirect_url": "/vsts/organizations/security/permissions-access",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/setup-admin/rename-team-project.md",
-      "redirect_url": "/vsts/accounts/rename-team-project",
+      "redirect_url": "/vsts/organizations/accounts/rename-team-project",
       "redirect_document_id": false
     },
     {
@@ -822,17 +822,17 @@
     },
     {
       "source_path": "docs/setup-admin/restrict-access-tfs.md",
-      "redirect_url": "/vsts/accounts/restrict-access-tfs",
+      "redirect_url": "/vsts/organizations/security/restrict-access",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/setup-admin/team-services/add-account-users-assign-access-levels-team-services.md",
-      "redirect_url": "/vsts/accounts/add-account-users-assign-access-levels",
+      "redirect_url": "/vsts/organizations/accounts/add-account-users-from-user-hub",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/setup-admin/team-services/add-team-members-vs.md",
-      "redirect_url": "/vsts/accounts/add-team-members-vs",
+      "redirect_url": "/vsts/organizations/accounts/add-team-members-vs",
       "redirect_document_id": false
     },
     {
@@ -852,17 +852,17 @@
     },
     {
       "source_path": "docs/setup-admin/team-services/change-account-ownership-vs.md",
-      "redirect_url": "/vsts/accounts/change-account-ownership-vs",
+      "redirect_url": "/vsts/organizations/accounts/change-account-ownership-vs",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/setup-admin/team-services/change-application-access-policies-vs.md",
-      "redirect_url": "/vsts/accounts/change-application-access-policies-vs",
+      "redirect_url": "/vsts/organizations/accounts/change-application-access-policies-vs",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/setup-admin/team-services/change-azure-active-directory-team-services-account.md",
-      "redirect_url": "/vsts/accounts/change-azure-active-directory-vsts-account",
+      "redirect_url": "/vsts/organizations/accounts/change-azure-active-directory-vsts-account",
       "redirect_document_id": false
     },
     {
@@ -872,27 +872,27 @@
     },
     {
       "source_path": "docs/setup-admin/team-services/manage-azure-active-directory-groups-visual-studio-team-services.md",
-      "redirect_url": "/vsts/accounts/manage-azure-active-directory-groups-vsts",
+      "redirect_url": "/vsts/organizations/accounts/manage-azure-active-directory-groups-vsts",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/setup-admin/team-services/manage-conditional-access.md",
-      "redirect_url": "/vsts/accounts/manage-conditional-access",
+      "redirect_url": "/vsts/organizations/accounts/manage-conditional-access",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/setup-admin/team-services/manage-users-and-access-user-hub-team-services.md",
-      "redirect_url": "/vsts/accounts/add-account-users-from-user-hub",
+      "redirect_url": "/vsts/organizations/accounts/add-account-users-from-user-hub",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/setup-admin/team-services/rename-visual-studio-team-services-account.md",
-      "redirect_url": "/vsts/accounts/rename-vsts-account",
+      "redirect_url": "/vsts/organizations/accounts/rename-vsts-account",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/setup-admin/team-services/set-up-vs.md",
-      "redirect_url": "/vsts/accounts/set-up-vs",
+      "redirect_url": "/vsts/organizations/accounts/set-up-vs",
       "redirect_document_id": false
     },
     {
@@ -902,12 +902,12 @@
     },
     {
       "source_path": "docs/setup-admin/team-services/use-personal-access-tokens-to-authenticate.md",
-      "redirect_url": "/vsts/accounts/use-personal-access-tokens-to-authenticate",
+      "redirect_url": "/vsts/organizations/accounts/use-personal-access-tokens-to-authenticate",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/setup-admin/websitesettings.md",
-      "redirect_url": "/vsts/security/websitesettings",
+      "redirect_url": "/vsts/organizations/security/websitesettings",
       "redirect_document_id": false
     },
     {
@@ -917,12 +917,12 @@
     },
     {
       "source_path": "docs/work/connect/change-access-levels.md",
-      "redirect_url": "/vsts/security/change-access-levels",
+      "redirect_url": "/vsts/organizations/security/change-access-levels",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/connect/work-as-a-stakeholder.md",
-      "redirect_url": "/vsts/quickstart/get-started-stakeholder",
+      "redirect_url": "/vsts/organizations/security/get-started-stakeholder",
       "redirect_document_id": false
     },
     {
@@ -952,7 +952,7 @@
     },
     {
       "source_path": "docs/setup-admin/delete-team-project.md",
-      "redirect_url": "/vsts/accounts/delete-team-project",
+      "redirect_url": "/vsts/organizations/accounts/delete-team-project",
       "redirect_document_id": false
     },
     {
@@ -997,7 +997,7 @@
     },
     {
       "source_path": "docs/build-release/azure/deploy-aspnet5.md",
-      "redirect_url": "/vsts/pipelines/apps/aspnet/aspnet-core-to-azure-webapp",
+      "redirect_url": "/vsts/pipelines/targets/webapp",
       "redirect_document_id": false
     },
     {
@@ -1102,12 +1102,17 @@
     },
     {
       "source_path": "docs/work/productivity/collaborate-in-a-team-room.md",
-      "redirect_url": "/vsts/collaborate/collaborate-in-a-team-room",
+      "redirect_url": "/vsts/notifications/collaborate-in-a-team-room",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/collaborate/collaborate-in-a-team-room.md",
+      "redirect_url": "/vsts/notifications/collaborate-in-a-team-room",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/track/follow-work-items.md",
-      "redirect_url": "/vsts/collaborate/follow-work-items",
+      "redirect_url": "/vsts/work/work-items/follow-work-items",
       "redirect_document_id": false
     },
     {
@@ -1117,12 +1122,12 @@
     },
     {
       "source_path": "docs/git/markdown-reference.md",
-      "redirect_url": "/vsts/reference/markdown-guidance",
+      "redirect_url": "/vsts/project/wiki/markdown-guidance",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/connect/rate-limits.md",
-      "redirect_url": "/vsts/reference/rate-limits",
+      "redirect_url": "/vsts/integrate/concepts/rate-limits",
       "redirect_document_id": false
     },
     {
@@ -1212,7 +1217,12 @@
     },
     {
       "source_path": "docs/work/customize/naming-restrictions.md",
-      "redirect_url": "/vsts/collaborate/naming-restrictions",
+      "redirect_url": "/vsts/organizations/settings/naming-restrictions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/collaborate/naming-restrictions.md",
+      "redirect_url": "/vsts/organizations/settings/naming-restrictions",
       "redirect_document_id": false
     },
     {
@@ -1242,7 +1252,7 @@
     },
     {
       "source_path": "docs/work/work-in-sprints-vs.md",
-      "redirect_url": "/vsts/work/scrum/sprint-planning",
+      "redirect_url": "/vsts/work/scrum/assign-work-sprint",
       "redirect_document_id": false
     },
     {
@@ -1272,17 +1282,17 @@
     },
     {
       "source_path": "docs/build-release/apps/aspnet/aspnetcore-to-azure.md",
-      "redirect_url": "/vsts/pipelines/apps/aspnet/build-aspnet-core",
+      "redirect_url": "/vsts/pipelines/languages/dotnet-core",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/apps/aspnet/ci/build-aspnet-core.md",
-      "redirect_url": "/vsts/pipelines/apps/aspnet/build-aspnet-core",
+      "redirect_url": "/vsts/pipelines/languages/dotnet-core",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/apps/aspnet/aspnetcore-docker-to-azure.md",
-      "redirect_url": "/vsts/pipelines/apps/aspnet/build-aspnet-core-docker",
+      "redirect_url": "/vsts/pipelines/apps/",
       "redirect_document_id": false
     },
     {
@@ -1327,7 +1337,7 @@
     },
     {
       "source_path": "docs/build-release/concepts/definitions/release/release-definition-editor.md",
-      "redirect_url": "/vsts/pipelines/archive/preview/release-definition-editor",
+      "redirect_url": "/vsts/pipelines/",
       "redirect_document_id": false
     },
     {
@@ -1362,12 +1372,12 @@
     },
     {
       "source_path": "docs/build-release/aspnet/aspnet4/quick-to-azure.md",
-      "redirect_url": "/vsts/pipelines/apps/cd/azure/aspnet-core-to-azure-webapp",
+      "redirect_url": "/vsts/pipelines/get-started-azure-devops-project",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/aspnet/core/quick-to-azure.md",
-      "redirect_url": "/vsts/pipelines/apps/cd/azure/aspnet-core-to-azure-webapp",
+      "redirect_url": "/vsts/pipelines/get-started-azure-devops-project",
       "redirect_document_id": false
     },
     {
@@ -1442,7 +1452,7 @@
     },
     {
       "source_path": "docs/build-release/preview/release-definition-editor.md",
-      "redirect_url": "/vsts/pipelines/archive/preview/release-definition-editor",
+      "redirect_url": "/vsts/pipelines/",
       "redirect_document_id": false
     },
     {
@@ -1502,7 +1512,7 @@
     },
     {
       "source_path": "docs/connect/account-preferences.md",
-      "redirect_url": "/vsts/accounts/account-preferences",
+      "redirect_url": "/vsts/organizations/settings/set-user-preferences",
       "redirect_document_id": false
     },
     {
@@ -1517,27 +1527,27 @@
     },
     {
       "source_path": "docs/setup-admin/team-services/connect-to-visual-studio-team-services.md",
-      "redirect_url": "/vsts/accounts/set-up-vs",
+      "redirect_url": "/vsts/organizations/accounts/set-up-vs",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/setup-admin/team-services/delete-or-recover-your-account-vs.md",
-      "redirect_url": "/vsts/accounts/delete-your-vsts-account",
+      "redirect_url": "/vsts/organizations/accounts/delete-your-vsts-account",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/setup-admin/team-services/manage-organization-access-for-your-account-vs.md",
-      "redirect_url": "/vsts/accounts/manage-azure-active-directory-groups-vsts",
+      "redirect_url": "/vsts/organizations/accounts/manage-azure-active-directory-groups-vsts",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/setup-admin/team-services/manage-visual-studio-online-access-azure-active-directory-groups.md",
-      "redirect_url": "/vsts/accounts/manage-azure-active-directory-groups-vsts",
+      "redirect_url": "/vsts/organizations/accounts/manage-azure-active-directory-groups-vsts",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/setup-admin/team-services/sign-up-for-visual-studio-team-services.md",
-      "redirect_url": "/vsts/accounts/create-account-msa-or-work-student",
+      "redirect_url": "/vsts/organizations/accounts/create-account-msa-or-work-student",
       "redirect_document_id": false
     },
     {
@@ -1662,7 +1672,7 @@
     },
     {
       "source_path": "docs/package/build/team-build-npm.md",
-      "redirect_url": "/vsts/pipelines/packages/npm?toc=/vsts/package/toc.json",
+      "redirect_url": "/vsts/pipelines/targets/npm?toc=/vsts/package/toc.json",
       "redirect_document_id": false
     },
     {
@@ -1777,12 +1787,12 @@
     },
     {
       "source_path": "docs/tfs-server/account-preferences.md",
-      "redirect_url": "/vsts/accounts/account-management",
+      "redirect_url": "/vsts/organizations/accounts/account-management",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/add-users.md",
-      "redirect_url": "/vsts/accounts/add-account-users-assign-access-levels",
+      "redirect_url": "/vsts/organizations/security/add-users-team-project",
       "redirect_document_id": false
     },
     {
@@ -1792,27 +1802,27 @@
     },
     {
       "source_path": "docs/tfs-server/clean-up-data.md",
-      "redirect_url": "/vsts/accounts/clean-up-data",
+      "redirect_url": "/tfs/server/upgrade/clean-up-data",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/create-team-project.md",
-      "redirect_url": "/vsts/accounts/create-team-project",
+      "redirect_url": "/vsts/organizations/accounts/create-team-project",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/delete-team-project.md",
-      "redirect_url": "/vsts/accounts/delete-team-project",
+      "redirect_url": "/vsts/organizations/accounts/delete-team-project",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/get-started.md",
-      "redirect_url": "/vsts/index#pivot=services&panel=admin",
+      "redirect_url": "/tfs/server/index",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/git-permissions-before-2017.md",
-      "redirect_url": "/vsts/security/permissions-lookup-guide",
+      "redirect_url": "/vsts/organizations/security/permissions-lookup-guide",
       "redirect_document_id": false
     },
     {
@@ -1822,37 +1832,37 @@
     },
     {
       "source_path": "docs/tfs-server/permissions.md",
-      "redirect_url": "/vsts/security/permissions",
+      "redirect_url": "/vsts/organizations/security/permissions",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/permissions-access.md",
-      "redirect_url": "/vsts/security/permissions",
+      "redirect_url": "/vsts/organizations/security/permissions",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/rename-team-project.md",
-      "redirect_url": "/vsts/accounts/rename-team-project",
+      "redirect_url": "/vsts/organizations/accounts/rename-team-project",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/restrict-access-tfs.md",
-      "redirect_url": "/vsts/accounts/restrict-access-tfs",
+      "redirect_url": "/vsts/organizations/accounts/restrict-access",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/team-services/add-account-users-assign-access-levels-team-services.md",
-      "redirect_url": "/vsts/accounts/add-account-users-assign-access-levels",
+      "redirect_url": "/vsts/organizations/accounts/add-account-users-from-user-hub",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/team-services/add-team-members-vs.md",
-      "redirect_url": "/vsts/accounts/add-team-members-vs",
+      "redirect_url": "/vsts/organizations/accounts/add-team-members-vs",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/team-services/assign-licenses-to-users-vs.md",
-      "redirect_url": "/vsts/accounts/add-account-users-assign-access-levels",
+      "redirect_url": "/vsts/organizations/accounts/add-account-users-from-user-hub",
       "redirect_document_id": false
     },
     {
@@ -1872,17 +1882,17 @@
     },
     {
       "source_path": "docs/tfs-server/team-services/change-account-ownership-vs.md",
-      "redirect_url": "/vsts/accounts/change-account-ownership-vs",
+      "redirect_url": "/vsts/organizations/accounts/change-account-ownership-vs",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/team-services/change-application-access-policies-vs.md",
-      "redirect_url": "/vsts/accounts/change-application-access-policies-vs",
+      "redirect_url": "/vsts/organizations/accounts/change-application-access-policies-vs",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/team-services/change-azure-active-directory-team-services-account.md",
-      "redirect_url": "/vsts/accounts/disconnect-account-from-aad",
+      "redirect_url": "/vsts/organizations/accounts/disconnect-account-from-aad",
       "redirect_document_id": false
     },
     {
@@ -1902,7 +1912,7 @@
     },
     {
       "source_path": "docs/tfs-server/team-services/delete-or-recover-your-account-vs.md",
-      "redirect_url": "/vsts/accounts/delete-your-vsts-account",
+      "redirect_url": "/vsts/organizations/accounts/delete-your-vsts-account",
       "redirect_document_id": false
     },
     {
@@ -1917,62 +1927,67 @@
     },
     {
       "source_path": "docs/tfs-server/team-services/manage-azure-active-directory-groups-visual-studio-team-services.md",
-      "redirect_url": "/vsts/accounts/manage-azure-active-directory-groups-vsts",
+      "redirect_url": "/vsts/organizations/accounts/manage-azure-active-directory-groups-vsts",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/team-services/manage-conditional-access.md",
-      "redirect_url": "/vsts/accounts/manage-conditional-access",
+      "redirect_url": "/vsts/organizations/accounts/manage-conditional-access",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/team-services/manage-organization-access-for-your-account-vs.md",
-      "redirect_url": "/vsts/accounts/manage-azure-active-directory-groups-vsts",
+      "redirect_url": "/vsts/organizations/accounts/manage-azure-active-directory-groups-vsts",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/team-services/manage-users-and-access-user-hub-team-services.md",
-      "redirect_url": "/vsts/accounts/add-account-users-from-user-hub",
+      "redirect_url": "/vsts/organizations/accounts/add-account-users-from-user-hub",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/team-services/manage-visual-studio-online-access-azure-active-directory-groups.md",
-      "redirect_url": "/vsts/accounts/manage-azure-active-directory-groups-vsts",
+      "redirect_url": "/vsts/organizations/accounts/manage-azure-active-directory-groups-vsts",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/team-services/rename-visual-studio-team-services-account.md",
-      "redirect_url": "/vsts/accounts/rename-vsts-account",
+      "redirect_url": "/vsts/organizations/accounts/rename-vsts-account",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/team-services/rename-vso-account-vs.md",
-      "redirect_url": "/vsts/accounts/rename-vsts-account",
+      "redirect_url": "/vsts/organizations/accounts/rename-vsts-account",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/team-services/set-up-billing-for-your-account-vs.md",
-      "redirect_url": "/vsts/billing/set-up-billing-for-your-account-vs",
+      "redirect_url": "/vsts/billing/set-up-billing-for-your-organization-vs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/billing/set-up-billing-for-your-account-vs.md",
+      "redirect_url": "/vsts/billing/set-up-billing-for-your-organization-vs",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/team-services/set-up-vs.md",
-      "redirect_url": "/vsts/accounts/set-up-vs",
+      "redirect_url": "/vsts/organizations/accounts/set-up-vs",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/team-services/sign-up-for-visual-studio-online.md",
-      "redirect_url": "/vsts/accounts/create-account-msa-or-work-student",
+      "redirect_url": "/vsts/organizations/accounts/create-account-msa-or-work-student",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/team-services/sign-up-for-visual-studio-online-vs.md",
-      "redirect_url": "/vsts/accounts/create-account-msa-or-work-student",
+      "redirect_url": "/vsts/organizations/accounts/create-account-msa-or-work-student",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/team-services/sign-up-for-visual-studio-team-services.md",
-      "redirect_url": "/vsts/accounts/create-account-msa-or-work-student",
+      "redirect_url": "/vsts/organizations/accounts/create-account-msa-or-work-student",
       "redirect_document_id": false
     },
     {
@@ -1982,7 +1997,7 @@
     },
     {
       "source_path": "docs/tfs-server/team-services/use-personal-access-tokens-to-authenticate.md",
-      "redirect_url": "/vsts/accounts/use-personal-access-tokens-to-authenticate",
+      "redirect_url": "/vsts/organizations/accounts/use-personal-access-tokens-to-authenticate",
       "redirect_document_id": false
     },
     {
@@ -2412,7 +2427,7 @@
     },
     {
       "source_path": "docs/tfs-server/websitesettings.md",
-      "redirect_url": "/vsts/security/websitesettings",
+      "redirect_url": "/vsts/organizations/security/websitesettings",
       "redirect_document_id": false
     },
     {
@@ -2507,7 +2522,7 @@
     },
     {
       "source_path": "docs/work/work-as-a-stakeholder-vs.md",
-      "redirect_url": "/vsts/security/get-started-stakeholder",
+      "redirect_url": "/vsts/organizations/security/get-started-stakeholder",
       "redirect_document_id": false
     },
     {
@@ -2547,17 +2562,17 @@
     },
     {
       "source_path": "docs/insights/app-insights-java.md",
-      "redirect_url": "/azure/application-insights/app-insights-java/",
+      "redirect_url": "/azure/application-insights/app-insights-java-quick-start/",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/insights/application-insights.md",
-      "redirect_url": "/azure/application-insights/application-insights/",
+      "redirect_url": "/azure/application-insights/",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/insights/asp-insights-ios-android.md",
-      "redirect_url": "/azure/application-insights/asp-insights-ios-android",
+      "redirect_url": "/azure/application-insights/app-insights-mobile-center-quickstart/",
       "redirect_document_id": false
     },
     {
@@ -2647,7 +2662,7 @@
     },
     {
       "source_path": "docs/create-team-project.md",
-      "redirect_url": "/vsts/accounts/create-team-project",
+      "redirect_url": "/vsts/organizations/accounts/create-team-project",
       "redirect_document_id": false
     },
     {
@@ -2657,17 +2672,17 @@
     },
     {
       "source_path": "docs/delete-team-project.md",
-      "redirect_url": "/vsts/accounts/delete-team-project",
+      "redirect_url": "/vsts/organizations/accounts/delete-team-project",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/delete-your-account-vs.md",
-      "redirect_url": "/vsts/accounts/delete-your-vsts-account",
+      "redirect_url": "/vsts/organizations/accounts/delete-your-vsts-account",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/get-started/collaborate-in-the-team-room-vs.md",
-      "redirect_url": "/vsts/collaborate/collaborate-in-a-team-room",
+      "redirect_url": "/vsts/notifications/collaborate-in-a-team-room",
       "redirect_document_id": false
     },
     {
@@ -2682,22 +2697,22 @@
     },
     {
       "source_path": "docs/get-started/setup/manage-visual-studio-online-access-azure-active-directory-groups.md",
-      "redirect_url": "/vsts/accounts/manage-azure-active-directory-groups-vsts",
+      "redirect_url": "/vsts/organizations/accounts/manage-azure-active-directory-groups-vsts",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/get-started/setup/manage-visual-studio-online-access-azure-active-directory.md",
-      "redirect_url": "/vsts/accounts/manage-azure-active-directory-groups-vsts",
+      "redirect_url": "/vsts/organizations/accounts/manage-azure-active-directory-groups-vsts",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/get-started/setup/sign-up-for-visual-studio-team-services.md",
-      "redirect_url": "/vsts/accounts/create-account-msa-or-work-student",
+      "redirect_url": "/vsts/organizations/accounts/create-account-msa-or-work-student",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/get-started/setup/use-personal-access-tokens-to-authenticate.md",
-      "redirect_url": "/vsts/accounts/use-personal-access-tokens-to-authenticate",
+      "redirect_url": "/vsts/organizations/accounts/use-personal-access-tokens-to-authenticate",
       "redirect_document_id": false
     },
     {
@@ -2707,7 +2722,7 @@
     },
     {
       "source_path": "docs/manage-organization-access-for-your-account-vs.md",
-      "redirect_url": "/vsts/accounts/manage-azure-active-directory-groups-vsts",
+      "redirect_url": "/vsts/organizations/accounts/manage-azure-active-directory-groups-vsts",
       "redirect_document_id": false
     },
     {
@@ -2717,12 +2732,12 @@
     },
     {
       "source_path": "docs/service-hooks/services/manage-team-notifications.md",
-      "redirect_url": "/vsts/collaborate/manage-team-notifications",
+      "redirect_url": "/vsts/notifications/manage-team-notifications",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/rename-team-project.md",
-      "redirect_url": "/vsts/accounts/rename-team-project",
+      "redirect_url": "/vsts/organizations/accounts/rename-team-project",
       "redirect_document_id": false
     },
     {
@@ -2867,7 +2882,7 @@
     },
     {
       "source_path": "docs/release/author-release-definition/understanding-tasks.md",
-      "redirect_url": "/vsts/pipelines/concepts/process/tasks",
+      "redirect_url": "/vsts/pipelines/process/tasks",
       "redirect_document_id": false
     },
     {
@@ -3186,21 +3201,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "docs/release/_shared/previous-version-header.md",
-      "redirect_url": "/vsts/pipelines/archive/release/_shared/previous-version-header",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "docs/release/_shared/wpfver-back-to-index-shared.md",
-      "redirect_url": "/vsts/pipelines/archive/release/_shared/wpfver-back-to-index-shared",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "docs/release/_shared/wpfver-support-shared.md",
-      "redirect_url": "/vsts/pipelines/archive/release/_shared/wpfver-support-shared",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "docs/overview.md",
       "redirect_url": "/vsts/index",
       "redirect_document_id": false
@@ -3257,32 +3257,32 @@
     },
     {
       "source_path": "docs/work/connect/get-feedback.md",
-      "redirect_url": "/vsts/feedback/get-feedback",
+      "redirect_url": "/vsts/project/feedback/get-feedback",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/connect/give-feedback.md",
-      "redirect_url": "/vsts/feedback/give-feedback",
+      "redirect_url": "/vsts/project/feedback/give-feedback",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/connect/give-permissions-feedback.md",
-      "redirect_url": "/vsts/feedback/give-permissions-feedback",
+      "redirect_url": "/vsts/project/feedback/give-permissions-feedback",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/reference/change-audio-device-annotation-tool.md",
-      "redirect_url": "/vsts/feedback/change-audio-device-annotation-tool",
+      "redirect_url": "/vsts/project/feedback/change-audio-device-annotation-tool",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/reference/enable-remote-audio-capture.md",
-      "redirect_url": "/vsts/feedback/enable-remote-audio-capture",
+      "redirect_url": "/vsts/project/feedback/enable-remote-audio-capture",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/quickstart/get-started-stakeholder.md",
-      "redirect_url": "/vsts/security/get-started-stakeholder",
+      "redirect_url": "/vsts/organizations/security/get-started-stakeholder",
       "redirect_document_id": false
     },
     {
@@ -3382,22 +3382,22 @@
     },
     {
       "source_path": "docs/build-release/tasks/tool/net-core-installer.md",
-      "redirect_url": "https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/DotNetCoreInstaller",
+      "redirect_url": "/vsts/pipelines/tasks/tool/dotnet-core-tool-installer",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/build/net-core-cli.md",
-      "redirect_url": "https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/DotNetCoreCLI",
+      "redirect_url": "/vsts/pipelines/tasks/build/dotnet-core-cli",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/deploy/deploy-to-kubernetes.md",
-      "redirect_url": "https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/Kubernetes",
+      "redirect_url": "/vsts/pipelines/tasks/deploy/kubernetes",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/deploy/docker-deploy.md",
-      "redirect_url": "https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/Docker",
+      "redirect_url": "/vsts/pipelines/tasks/build/docker",
       "redirect_document_id": false
     },
     {
@@ -3437,17 +3437,17 @@
     },
     {
       "source_path": "docs/build-release/tasks/docs/test/mobile-center-test.md",
-      "redirect_url": "/vsts/pipelines/tasks/package/app-center-test",
+      "redirect_url": "/vsts/pipelines/tasks/test/app-center-test",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/design/overview.md",
-      "redirect_url": "https://docs.microsoft.com/visualstudio/modeling/analyze-and-model-your-upgrade",
+      "redirect_url": "https://docs.microsoft.com/visualstudio/modeling/analyze-and-model-your-architecture",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/design/index.md",
-      "redirect_url": "https://docs.microsoft.com/visualstudio/modeling/analyze-and-model-your-upgrade",
+      "redirect_url": "https://docs.microsoft.com/visualstudio/modeling/analyze-and-model-your-architecture",
       "redirect_document_id": false
     },
     {
@@ -4337,37 +4337,37 @@
     },
     {
       "source_path": "docs/work/how-to/set-permissions-access-work-tracking.md",
-      "redirect_url": "/vsts/security/set-permissions-access-work-tracking",
+      "redirect_url": "/vsts/organizations/security/set-permissions-access-work-tracking",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/reference/markdown-guidance.md",
-      "redirect_url": "/vsts/collaborate/markdown-guidance",
+      "redirect_url": "/vsts/project/wiki/markdown-guidance",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/reference/keyboard-shortcuts.md",
-      "redirect_url": "/vsts/collaborate/keyboard-shortcuts",
+      "redirect_url": "/vsts/project/navigation/keyboard-shortcuts",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/reference/integration-bestpractices.md",
-      "redirect_url": "/vsts/collaborate/integration-bestpractices",
+      "redirect_url": "/vsts/integrate/concepts/integration-bestpractices",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/reference/naming-restrictions.md",
-      "redirect_url": "/vsts/collaborate/naming-restrictions",
+      "redirect_url": "/vsts/organizations/settings/naming-restrictions",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/reference/rate-limits.md",
-      "redirect_url": "/vsts/collaborate/rate-limits",
+      "redirect_url": "/vsts/integrate/concepts/rate-limits",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/reference/wiql-syntax.md",
-      "redirect_url": "/vsts/collaborate/wiql-syntax",
+      "redirect_url": "/vsts/work/track/wiql-syntax",
       "redirect_document_id": false
     },
     {
@@ -4392,7 +4392,7 @@
     },
     {
       "source_path": "docs/build-release/tasks/test/mobile-center-test.md",
-      "redirect_url": "https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AppCenterTest",
+      "redirect_url": "/vsts/pipelines/tasks/test/app-center-test",
       "redirect_document_id": false
     },
     {
@@ -5302,7 +5302,7 @@
     },
     {
       "source_path": "docs/work/productivity/productivity-tips.md",
-      "redirect_url": "/vsts/collaborate/index",
+      "redirect_url": "/vsts/user-guide/account-home-pages",
       "redirect_document_id": false
     },
     {
@@ -5357,17 +5357,17 @@
     },
     {
       "source_path": "docs/accounts/add-administrator-project-collection.md",
-      "redirect_url": "/vsts/security/set-project-collection-level-permissions",
+      "redirect_url": "/vsts/organizations/security/set-project-collection-level-permissions",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/accounts/add-administrator-team-project.md",
-      "redirect_url": "/vsts/security/set-project-collection-level-permissions",
+      "redirect_url": "/vsts/organizations/security/set-project-collection-level-permissions",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/accounts/add-users.md",
-      "redirect_url": "/vsts/security/add-users-team-project",
+      "redirect_url": "/vsts/organizations/security/add-users-team-project",
       "redirect_document_id": false
     },
     {
@@ -5572,7 +5572,7 @@
     },
     {
       "source_path": "docs/accounts/restrict-access-tfs.md",
-      "redirect_url": "/vsts/security/restrict-access",
+      "redirect_url": "/vsts/organizations/security/restrict-access",
       "redirect_document_id": false
     },
     {
@@ -5612,7 +5612,7 @@
     },
     {
       "source_path": "docs/tfs-server/admin/change-permission-levels.md",
-      "redirect_url": "/vsts/security/change-individual-permissions",
+      "redirect_url": "/vsts/organizations/security/change-individual-permissions",
       "redirect_document_id": false
     },
     {
@@ -5622,32 +5622,32 @@
     },
     {
       "source_path": "docs/accounts/change-azure-active-directory-vsts-account.md",
-      "redirect_url": "/vsts/accounts/connect-account-to-aad",
+      "redirect_url": "/vsts/organizations/accounts/connect-account-to-aad",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/accounts/change-azure-ad-vsts-account-prep-src.md",
-      "redirect_url": "/vsts/accounts/connect-account-to-aad",
+      "redirect_url": "/vsts/organizations/accounts/connect-account-to-aad",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/accounts/change-azure-ad-vsts-account-prep-target.md",
-      "redirect_url": "/vsts/accounts/connect-account-to-aad",
+      "redirect_url": "/vsts/organizations/accounts/connect-account-to-aad",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/accounts/change-azure-ad-vsts-account-disconnect.md",
-      "redirect_url": "/vsts/accounts/connect-account-to-aad",
+      "redirect_url": "/vsts/organizations/accounts/connect-account-to-aad",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/accounts/change-azure-ad-vsts-account-connect.md",
-      "redirect_url": "/vsts/accounts/connect-account-to-aad",
+      "redirect_url": "/vsts/organizations/accounts/connect-account-to-aad",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/accounts/change-azure-ad-vsts-account-reassign-owner.md",
-      "redirect_url": "/vsts/accounts/connect-account-to-aad",
+      "redirect_url": "/vsts/organizations/accounts/connect-account-to-aad",
       "redirect_document_id": false
     },
     {
@@ -5706,86 +5706,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "docs/build-release/_shared/begin-create-build-definition.md",
-      "redirect_url": "/vsts/pipelines/_shared/begin-create-build-definition",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/_shared/ci-cd-prerequisites-tfs.md",
-      "redirect_url": "/vsts/pipelines/_shared/ci-cd-prerequisites-tfs",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/_shared/ci-cd-prerequisites-vsts.md",
-      "redirect_url": "/vsts/pipelines/_shared/ci-cd-prerequisites-vsts",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/_shared/ci-quickstart-intro.md",
-      "redirect_url": "/vsts/pipelines/_shared/ci-quickstart-intro",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/_shared/qa-agents.md",
-      "redirect_url": "/vsts/pipelines/_shared/qa-agents",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/_shared/qa-definition-common-all-platforms.md",
-      "redirect_url": "/vsts/pipelines/_shared/qa-definition-common-all-platforms",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/_shared/qa-versions.md",
-      "redirect_url": "/vsts/pipelines/_shared/qa-versions",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/_shared/rm-help-support-shared.md",
-      "redirect_url": "/vsts/pipelines/_shared/rm-help-support-shared",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/_shared/test-help-support-shared.md",
-      "redirect_url": "/vsts/pipelines/_shared/test-help-support-shared",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/_shared/version-rm-dev14.md",
-      "redirect_url": "/vsts/pipelines/_shared/version-rm-dev14",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/_shared/version-team-services.md",
-      "redirect_url": "/vsts/pipelines/_shared/version-team-services",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/_shared/version-tfs-2015-rtm.md",
-      "redirect_url": "/vsts/pipelines/_shared/version-tfs-2015-rtm",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/_shared/version-tfs-2015-update.md",
-      "redirect_url": "/vsts/pipelines/_shared/version-tfs-2015-update",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/_shared/version-tfs-2017-rtm.md",
-      "redirect_url": "/vsts/pipelines/_shared/version-tfs-2017-rtm",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/_shared/version.md",
-      "redirect_url": "/vsts/pipelines/_shared/version",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/_shared/web-or-yaml.md",
-      "redirect_url": "/vsts/pipelines/_shared/web-or-yaml",
-      "redirect_document_id": true
-    },
-    {
       "source_path": "docs/build-release/actions/agents/certificate.md",
       "redirect_url": "/vsts/pipelines/agents/certificate",
       "redirect_document_id": true
@@ -5823,66 +5743,6 @@
     {
       "source_path": "docs/build-release/actions/agents/v2-windows.md",
       "redirect_url": "/vsts/pipelines/agents/v2-windows",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/actions/agents/_shared/capabilities.md",
-      "redirect_url": "/vsts/pipelines/agents/_shared/capabilities",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/actions/agents/_shared/concepts.md",
-      "redirect_url": "/vsts/pipelines/agents/_shared/concepts",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/actions/agents/_shared/qa-no-agent-with-capabilities.md",
-      "redirect_url": "/vsts/pipelines/agents/_shared/qa-no-agent-with-capabilities",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/actions/agents/_shared/qa-windows-agent-powershell-version.md",
-      "redirect_url": "/vsts/pipelines/agents/_shared/qa-windows-agent-powershell-version",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/actions/agents/_shared/v2/configure-help-unix.md",
-      "redirect_url": "/vsts/pipelines/agents/_shared/v2/configure-help-unix",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/actions/agents/_shared/v2/prepare-permissions.md",
-      "redirect_url": "/vsts/pipelines/agents/_shared/v2/prepare-permissions",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/actions/agents/_shared/v2/qa-firewall.md",
-      "redirect_url": "/vsts/pipelines/agents/_shared/v2/qa-firewall",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/actions/agents/_shared/v2/qa-urls.md",
-      "redirect_url": "/vsts/pipelines/agents/_shared/v2/qa-urls",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/actions/agents/_shared/v2/remove-and-reconfigure-unix.md",
-      "redirect_url": "/vsts/pipelines/agents/_shared/v2/remove-and-reconfigure-unix",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/actions/agents/_shared/v2/replace-agent.md",
-      "redirect_url": "/vsts/pipelines/agents/_shared/v2/replace-agent",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/actions/agents/_shared/v2/unix-authentication-types.md",
-      "redirect_url": "/vsts/pipelines/agents/_shared/v2/unix-authentication-types",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/actions/agents/_shared/v2/web-proxy-bypass.md",
-      "redirect_url": "/vsts/pipelines/agents/_shared/v2/web-proxy-bypass",
       "redirect_document_id": true
     },
     {
@@ -5941,16 +5801,6 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "docs/build-release/archive/apps/java/_shared/java-web-app-sample-link.md",
-      "redirect_url": "/vsts/pipelines/archive/apps/java/_shared/java-web-app-sample-link",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/archive/apps/java/_shared/java-web-app-sample-qa.md",
-      "redirect_url": "/vsts/pipelines/archive/apps/java/_shared/java-web-app-sample-qa",
-      "redirect_document_id": true
-    },
-    {
       "source_path": "docs/build-release/archive/apps/mobile/cordova-build.md",
       "redirect_url": "/vsts/pipelines/archive/apps/mobile/cordova-build",
       "redirect_document_id": true
@@ -5968,81 +5818,6 @@
     {
       "source_path": "docs/build-release/archive/apps/nodejs/quick-to-azure.md",
       "redirect_url": "/vsts/pipelines/archive/apps/nodejs/quick-to-azure",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/archive/apps/_shared/browse-to-web-app.md",
-      "redirect_url": "/vsts/pipelines/archive/apps/_shared/browse-to-web-app",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/archive/apps/_shared/clean-up-resources.md",
-      "redirect_url": "/vsts/pipelines/archive/apps/_shared/clean-up-resources",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/archive/apps/_shared/create-azure-web-app.md",
-      "redirect_url": "/vsts/pipelines/archive/apps/_shared/create-azure-web-app",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/archive/apps/_shared/create-azure-windows-vm.md",
-      "redirect_url": "/vsts/pipelines/archive/apps/_shared/create-azure-windows-vm",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/archive/apps/_shared/create-deployment-group.md",
-      "redirect_url": "/vsts/pipelines/archive/apps/_shared/create-deployment-group",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/archive/apps/_shared/definition-finish-and-test.md",
-      "redirect_url": "/vsts/pipelines/archive/apps/_shared/definition-finish-and-test",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/archive/apps/_shared/import-code-1.md",
-      "redirect_url": "/vsts/pipelines/archive/apps/_shared/import-code-1",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/archive/apps/_shared/import-code-2.md",
-      "redirect_url": "/vsts/pipelines/archive/apps/_shared/import-code-2",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/archive/apps/_shared/set-up-cd-1.md",
-      "redirect_url": "/vsts/pipelines/archive/apps/_shared/set-up-cd-1",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/archive/apps/_shared/set-up-cd-2.md",
-      "redirect_url": "/vsts/pipelines/archive/apps/_shared/set-up-cd-2",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/archive/apps/_shared/set-up-cd-3.md",
-      "redirect_url": "/vsts/pipelines/archive/apps/_shared/set-up-cd-3",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/archive/apps/_shared/set-up-ci-1.md",
-      "redirect_url": "/vsts/pipelines/archive/apps/_shared/set-up-ci-1",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/archive/apps/_shared/set-up-ci-2.md",
-      "redirect_url": "/vsts/pipelines/archive/apps/_shared/set-up-ci-2",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/archive/apps/_shared/set-up-ci-3.md",
-      "redirect_url": "/vsts/pipelines/archive/apps/_shared/set-up-ci-3",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/archive/apps/_shared/vsts-and-azure-setup.md",
-      "redirect_url": "/vsts/pipelines/archive/apps/_shared/vsts-and-azure-setup",
       "redirect_document_id": true
     },
     {
@@ -6181,21 +5956,6 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "docs/build-release/archive/release/_shared/previous-version-header.md",
-      "redirect_url": "/vsts/pipelines/archive/release/_shared/previous-version-header",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/archive/release/_shared/wpfver-back-to-index-shared.md",
-      "redirect_url": "/vsts/pipelines/archive/release/_shared/wpfver-back-to-index-shared",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/archive/release/_shared/wpfver-support-shared.md",
-      "redirect_url": "/vsts/pipelines/archive/release/_shared/wpfver-support-shared",
-      "redirect_document_id": true
-    },
-    {
       "source_path": "docs/build-release/concepts/agents/agents.md",
       "redirect_url": "/vsts/pipelines/agents/agents",
       "redirect_document_id": true
@@ -6208,26 +5968,6 @@
     {
       "source_path": "docs/build-release/concepts/agents/pools-queues.md",
       "redirect_url": "/vsts/pipelines/agents/pools-queues",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/concepts/agents/_shared/agent-pools-tab.md",
-      "redirect_url": "/vsts/pipelines/agents/_shared/agent-pools-tab",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/concepts/agents/_shared/agent-queues-tab.md",
-      "redirect_url": "/vsts/pipelines/agents/_shared/agent-queues-tab",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/concepts/agents/_shared/hosted-agent-intro.md",
-      "redirect_url": "/vsts/pipelines/agents/_shared/hosted-agent-intro",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/concepts/agents/_shared/v2/qa-agent-version.md",
-      "redirect_url": "/vsts/pipelines/agents/_shared/v2/qa-agent-version",
       "redirect_document_id": true
     },
     {
@@ -6258,36 +5998,6 @@
     {
       "source_path": "docs/build-release/concepts/definitions/build/variables.md",
       "redirect_url": "/vsts/pipelines/build/variables",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/concepts/definitions/build/_shared/build-clean-intro.md",
-      "redirect_url": "/vsts/pipelines/build/_shared/build-clean-intro",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/concepts/definitions/build/_shared/build-clean-variable.md",
-      "redirect_url": "/vsts/pipelines/build/_shared/build-clean-variable",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/concepts/definitions/build/_shared/label-sources.md",
-      "redirect_url": "/vsts/pipelines/build/_shared/label-sources",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/concepts/definitions/build/_shared/variables-build-artifacts-directory.md",
-      "redirect_url": "/vsts/pipelines/build/_shared/variables-build-artifacts-directory",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/concepts/definitions/build/_shared/variables-build-sources-directory.md",
-      "redirect_url": "/vsts/pipelines/build/_shared/variables-build-sources-directory",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/concepts/definitions/build/_shared/variables-invalid-label-characters.md",
-      "redirect_url": "/vsts/pipelines/build/_shared/variables-invalid-label-characters",
       "redirect_document_id": true
     },
     {
@@ -6352,7 +6062,7 @@
     },
     {
       "source_path": "docs/build-release/concepts/library/azure-stack.md",
-      "redirect_url": "/vsts/pipelines/library/azure-stack",
+      "redirect_url": "/vsts/pipelines/targets/azure-stack",
       "redirect_document_id": true
     },
     {
@@ -6441,11 +6151,6 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "docs/build-release/concepts/process/_shared/task-run-built-in-conditions.md",
-      "redirect_url": "/vsts/pipelines/process/_shared/task-run-built-in-conditions",
-      "redirect_document_id": true
-    },
-    {
       "source_path": "docs/build-release/concepts/releases/index.md",
       "redirect_url": "/vsts/pipelines/release/releases",
       "redirect_document_id": true
@@ -6472,13 +6177,23 @@
     },
     {
       "source_path": "docs/build-release/packages/npm.md",
-      "redirect_url": "/vsts/pipelines/packages/npm",
+      "redirect_url": "/vsts/pipelines/packages/",
       "redirect_document_id": true
     },
     {
       "source_path": "docs/build-release/packages/nuget-pack-publish.md",
-      "redirect_url": "/vsts/pipelines/packages/nuget-pack-publish",
+      "redirect_url": "/vsts/pipelines/targets/nuget",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "vsts/pipelines/packages/nuget-pack-publish.md",
+      "redirect_url": "/vsts/pipelines/targets/nuget",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "vsts/pipelines/packages/npm.md",
+      "redirect_url": "/vsts/pipelines/targets/npm",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/packages/nuget-restore.md",
@@ -7061,626 +6776,6 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "docs/build-release/tasks/_shared/build-step-common-qa.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/build-step-common-qa",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/control-options-arguments-md.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/control-options-arguments-md",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/control-options-arguments.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/control-options-arguments",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/deploy-winrm-setup.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/deploy-winrm-setup",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/msbuild_upgrade_arg.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/msbuild_upgrade_arg",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/msbuild_args.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/msbuild_args",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/msbuild_qa.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/msbuild_qa",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/msbuild_record_project_details_arg.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/msbuild_record_project_details_arg",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/nuget-create-step-examples.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/nuget-create-step-examples",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/nuget-step-arguments.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/nuget-step-arguments",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/nuget-step-qa.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/nuget-step-qa",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/qa-minimatch.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/qa-minimatch",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/qa-test-azurerg-machine-group.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/qa-test-azurerg-machine-group",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/qa-test-customize-code-coverage.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/qa-test-customize-code-coverage",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/qa-test-run-settings-file.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/qa-test-run-settings-file",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/qa-test-submit-feedback.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/qa-test-submit-feedback",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/AndroidSigning.2.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/AndroidSigning.2",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/ANT.1.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/ANT.1",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/AppCenterDistributeV1.1.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/AppCenterDistributeV1.1",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/AppCenterTestV1.1.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/AppCenterTestV1.1",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/ArchiveFilesV2.2.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/ArchiveFilesV2.2",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/AzureAppServiceManage.0.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/AzureAppServiceManage.0",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/AzureCLIV1.1.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/AzureCLIV1.1",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/AzureCloudPowerShellDeployment.1.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/AzureCloudPowerShellDeployment.1",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/AzureFileCopyV1.1.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/AzureFileCopyV1.1",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/AzureFileCopyV2.2.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/AzureFileCopyV2.2",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/AzureFunctionV1.1.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/AzureFunctionV1.1",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/AzureKeyVault.1.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/AzureKeyVault.1",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/AzureMonitorAlertsV0.0.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/AzureMonitorAlertsV0.0",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/AzureMonitorV0.0.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/AzureMonitorV0.0",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/AzureMysqlDeployment.1.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/AzureMysqlDeployment.1",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/AzureNLBManagementV1.1.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/AzureNLBManagementV1.1",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/AzurePowerShellV3.3.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/AzurePowerShellV3.3",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/AzureResourceGroupDeploymentV2.2.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/AzureResourceGroupDeploymentV2.2",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/AzureRmWebAppDeployment.4.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/AzureRmWebAppDeployment.4",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/AzureVmssDeploymentV0.0.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/AzureVmssDeploymentV0.0",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/BashV3.3.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/BashV3.3",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/BatchScriptV1.1.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/BatchScriptV1.1",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/ChefKnifeV1.1.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/ChefKnifeV1.1",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/ChefV1.1.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/ChefV1.1",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/CMakeV1.1.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/CMakeV1.1",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/CmdLineV2.2.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/CmdLineV2.2",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/CocoaPodsV0.0.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/CocoaPodsV0.0",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/CondaEnvironmentV0.0.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/CondaEnvironmentV0.0",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/CopyFilesOverSSHV0.0.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/CopyFilesOverSSHV0.0",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/CopyFilesV2.2.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/CopyFilesV2.2",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/CUrlUploaderV2.2.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/CUrlUploaderV2.2",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/DecryptFileV1.1.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/DecryptFileV1.1",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/DelayV1.1.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/DelayV1.1",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/DeleteFilesV1.1.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/DeleteFilesV1.1",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/DeployVisualStudioTestAgentV2.2.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/DeployVisualStudioTestAgentV2.2",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/Docker.0.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/Docker.0",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/DockerCompose.0.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/DockerCompose.0",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/DotNetCoreCLIV2.2.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/DotNetCoreCLIV2.2",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/DotNetCoreInstallerV0.0.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/DotNetCoreInstallerV0.0",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/DownloadBuildArtifacts.0.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/DownloadBuildArtifacts.0",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/DownloadPackageV0.0.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/DownloadPackageV0.0",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/DownloadSecureFileV1.1.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/DownloadSecureFileV1.1",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/ExtractFilesV1.1.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/ExtractFilesV1.1",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/FtpUploadV1.1.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/FtpUploadV1.1",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/Go.0.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/Go.0",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/GoTool.0.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/GoTool.0",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/Gradle.2.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/Gradle.2",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/GruntV0.0.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/GruntV0.0",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/GulpV0.0.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/GulpV0.0",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/HelmDeployV0.0.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/HelmDeployV0.0",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/HelmInstallerV0.0.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/HelmInstallerV0.0",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/IISWebAppDeploymentOnMachineGroup.0.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/IISWebAppDeploymentOnMachineGroup.0",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/IISWebAppManagementOnMachineGroupV0.0.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/IISWebAppManagementOnMachineGroupV0.0",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/InstallAppleCertificateV2.2.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/InstallAppleCertificateV2.2",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/InstallAppleProvisioningProfileV1.1.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/InstallAppleProvisioningProfileV1.1",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/InstallSSHKeyV0.0.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/InstallSSHKeyV0.0",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/InvokeRestApiV1.1.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/InvokeRestApiV1.1",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/JavaToolInstallerV0.0.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/JavaToolInstallerV0.0",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/JenkinsDownloadArtifacts.1.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/JenkinsDownloadArtifacts.1",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/JenkinsQueueJobV2.2.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/JenkinsQueueJobV2.2",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/Kubernetes.0.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/Kubernetes.0",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/ManualInterventionV8.8.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/ManualInterventionV8.8",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/Maven.2.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/Maven.2",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/MSBuildV1.1.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/MSBuildV1.1",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/NodeToolV0.0.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/NodeToolV0.0",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/NpmAuthenticateV0.0.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/NpmAuthenticateV0.0",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/NpmV1.1.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/NpmV1.1",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/NuGetCommandV2.2.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/NuGetCommandV2.2",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/NuGetPackagerV0.0.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/NuGetPackagerV0.0",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/NuGetPublisherV0.0.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/NuGetPublisherV0.0",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/NuGetToolInstallerV0.0.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/NuGetToolInstallerV0.0",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/NuGetV0.0.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/NuGetV0.0",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/PackerBuildV0.0.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/PackerBuildV0.0",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/PowerShellOnTargetMachinesV2.2.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/PowerShellOnTargetMachinesV2.2",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/deploy/azure-sql-database-deployment.md",
-      "redirect_url": "https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/SqlAzureDacpacDeploymentV1",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/PowerShellOnTargetMachinesV3.3.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/PowerShellOnTargetMachinesV3.3",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/PowerShellV2.2.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/PowerShellV2.2",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/PublishBuildArtifacts.1.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/PublishBuildArtifacts.1",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/PublishCodeCoverageResultsV1.1.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/PublishCodeCoverageResultsV1.1",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/PublishSymbols.2.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/PublishSymbols.2",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/PublishTestResults.2.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/PublishTestResults.2",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/PublishToAzureServiceBusV1.1.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/PublishToAzureServiceBusV1.1",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/PyPIPublisherV0.0.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/PyPIPublisherV0.0",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/PythonScriptV0.0.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/PythonScriptV0.0",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/QueryWorkItemsV0.0.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/QueryWorkItemsV0.0",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/QuickPerfTestV1.1.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/QuickPerfTestV1.1",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/RunDistributedTestsV1.1.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/RunDistributedTestsV1.1",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/RunJMeterLoadTestV1.1.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/RunJMeterLoadTestV1.1",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/RunLoadTestV1.1.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/RunLoadTestV1.1",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/ServiceFabricComposeDeploy.0.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/ServiceFabricComposeDeploy.0",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/ServiceFabricDeploy.1.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/ServiceFabricDeploy.1",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/ServiceFabricPowerShell.1.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/ServiceFabricPowerShell.1",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/ServiceFabricUpdateManifestsV2.2.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/ServiceFabricUpdateManifestsV2.2",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/SqlAzureDacpacDeployment.1.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/SqlAzureDacpacDeployment.1",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/SqlDacpacDeploymentOnMachineGroupV0.0.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/SqlDacpacDeploymentOnMachineGroupV0.0",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/SshV0.0.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/SshV0.0",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/UsePythonVersionV0.0.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/UsePythonVersionV0.0",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/UseRubyVersionV0.0.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/UseRubyVersionV0.0",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/VSBuildV1.1.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/VSBuildV1.1",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/VsTest.2.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/VsTest.2",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/VsTestPlatformToolInstallerV1.1.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/VsTestPlatformToolInstallerV1.1",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/WindowsMachineFileCopyV2.2.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/WindowsMachineFileCopyV2.2",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/XamarinAndroid.1.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/XamarinAndroid.1",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/XamarinComponentRestoreV0.0.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/XamarinComponentRestoreV0.0",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/XamariniOSV2.2.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/XamariniOSV2.2",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/XamarinTestCloud.1.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/XamarinTestCloud.1",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/Xcode.5.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/Xcode.5",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/_shared/yaml/XcodePackageiOSV0.0.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/XcodePackageiOSV0.0",
-      "redirect_document_id": true
-    },
-    {
       "source_path": "docs/build-release/test/associate-automated-results-with-requirements.md",
       "redirect_url": "/vsts/test/associate-automated-results-with-requirements",
       "redirect_document_id": true
@@ -7776,38 +6871,13 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "docs/build-release/test/_shared/help-and-support-footer.md",
-      "redirect_url": "/vsts/pipelines/test/_shared/help-and-support-footer",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/test/_shared/paralleltest-maxcpucount.md",
-      "redirect_url": "/vsts/pipelines/test/_shared/paralleltest-maxcpucount",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/test/_shared/paralleltest-runsettingsmerge.md",
-      "redirect_url": "/vsts/pipelines/test/_shared/paralleltest-runsettingsmerge",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/test/_shared/version-header-ts-tfs.md",
-      "redirect_url": "/vsts/pipelines/test/_shared/version-header-ts-tfs",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/test/_shared/version-header-vs-vsts-tfs.md",
-      "redirect_url": "/vsts/pipelines/test/_shared/version-header-vs-vsts-tfs",
-      "redirect_document_id": true
-    },
-    {
       "source_path": "docs/build-release/actions/virtual-networks/create-virtual-network.md",
       "redirect_url": "/vsts/pipelines/targets/create-virtual-network",
       "redirect_document_id": true
     },
     {
       "source_path": "docs/build-release/actions/virtual-networks/manage-vms-using-scvmm.md",
-      "redirect_url": "/vsts/pipelines/targets/manage-vms-using-scvmm",
+      "redirect_url": "/vsts/pipelines/",
       "redirect_document_id": true
     },
     {
@@ -7907,7 +6977,7 @@
     },
     {
       "source_path": "docs/build-release/apps/aspnet/build-aspnet-core.md",
-      "redirect_url": "/vsts/pipelines/apps/aspnet/build-aspnet-core",
+      "redirect_url": "/vsts/pipelines/languages/dotnet-core",
       "redirect_document_id": true
     },
     {
@@ -7997,7 +7067,12 @@
     },
     {
       "source_path": "docs/build-release/apps/cd/azure/aspnet-core-to-azure-webapp.md",
-      "redirect_url": "/vsts/pipelines/apps/cd/azure/aspnet-core-to-azure-webapp",
+      "redirect_url": "/vsts/pipelines/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/pipelines/apps/cd/azure/aspnet-core-to-azure-webapp.md",
+      "redirect_url": "/vsts/pipelines/targets/webapp",
       "redirect_document_id": true
     },
     {
@@ -8032,12 +7107,12 @@
     },
     {
       "source_path": "docs/build-release/apps/cd/scvmm/configure-scvmm.md",
-      "redirect_url": "/vsts/pipelines/apps/cd/scvmm/configure-scvmm",
+      "redirect_url": "/vsts/pipelines/",
       "redirect_document_id": true
     },
     {
       "source_path": "docs/build-release/apps/cd/scvmm/manage-vms-using-scvmm.md",
-      "redirect_url": "/vsts/pipelines/apps/cd/scvmm/manage-vms-using-scvmm",
+      "redirect_url": "/vsts/pipelines/",
       "redirect_document_id": true
     },
     {
@@ -8087,12 +7162,22 @@
     },
     {
       "source_path": "docs/build-release/apps/cd/howto-webdeploy-webapps.md",
-      "redirect_url": "/vsts/pipelines/apps/cd/howto-webdeploy-webapps.md",
+      "redirect_url": "/vsts/pipelines",
       "redirect_document_id": true
+    },
+          {
+      "source_path": "vsts/build-release/apps/cd/aspnet-core-to-azure-webapp.md",
+      "redirect_url": "/vsts/pipelines/targets/webapp",
+      "redirect_document_id": false
+    },  
+    {
+      "source_path": "vsts/pipelines/apps/cd/aspnet-core-to-azure-webapp.md",
+      "redirect_url": "/vsts/pipelines/targets/webapp",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/apps/cd/provision-vm-in-vmware.md",
-      "redirect_url": "/vsts/pipelines/apps/cd/provision-vm-in-vmware",
+      "redirect_url": "/vsts/pipelines/targets/vmware",
       "redirect_document_id": true
     },
     {
@@ -8163,7 +7248,7 @@
     {
       "source_path": "docs/work/customize/object-limits.md",
       "redirect_url": "/vsts/organizations/settings/work/object-limits",
-      "redirect_document_id": false 
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/settings/index.md",
@@ -8173,12 +7258,627 @@
     {
       "source_path": "docs/settings/about-teams-and-settings.md",
       "redirect_url": "/vsts/organizations/settings/about-teams-and-settings",
-      "redirect_document_id": false 
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/settings/switch-team-context.md",
       "redirect_url": "/vsts/organizations/settings/switch-team-context",
-      "redirect_document_id": false 
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/collaborate/keyboard-shortcuts.md",
+      "redirect_url": "/vsts/project/navigation/keyboard-shortcuts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/collaborate/mobile-work.md",
+      "redirect_url": "/vsts/project/navigation/mobile-work",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/collaborate/preview-features.md",
+      "redirect_url": "/vsts/project/navigation/preview-features",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/collaborate/set-favorites.md",
+      "redirect_url": "/vsts/project/navigation/set-favorites",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/collaborate/manage-team-notifications.md",
+      "redirect_url": "/vsts/notifications/manage-team-notifications",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/collaborate/wiql-syntax.md",
+      "redirect_url": "/vsts/work/track/wiql-syntax",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/collaborate/follow-work-items.md",
+      "redirect_url": "/vsts/work/work-items/follow-work-items",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/collaborate/about-readme-wiki.md",
+      "redirect_url": "/vsts/project/wiki/about-readme-wiki",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/collaborate/add-edit-wiki.md",
+      "redirect_url": "/vsts/project/wiki/add-edit-wiki",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/collaborate/collaboration-tool-permissions.md",
+      "redirect_url": "/vsts/project/wiki/wiki-readme-permissions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/collaborate/filter-print-wiki.md",
+      "redirect_url": "/vsts/project/wiki/filter-print-wiki",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/collaborate/index.md",
+      "redirect_url": "/vsts/project/wiki/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/collaborate/manage-readme-wiki-permissions.md",
+      "redirect_url": "/vsts/project/wiki/manage-readme-wiki-permissions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/collaborate/markdown-guidance.md",
+      "redirect_url": "/vsts/project/wiki/markdown-guidance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/collaborate/migrate-extension-wiki-pages.md",
+      "redirect_url": "/vsts/project/wiki/migrate-extension-wiki-pages",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/collaborate/project-vision-status.md",
+      "redirect_url": "/vsts/project/wiki/project-vision-status",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/collaborate/provisioned-vs-published-wiki.md",
+      "redirect_url": "/vsts/project/wiki/provisioned-vs-published-wiki",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/collaborate/publish-repo-to-wiki.md",
+      "redirect_url": "/vsts/project/wiki/publish-repo-to-wiki",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/collaborate/search-wiki.md",
+      "redirect_url": "/vsts/project/wiki/search-wiki",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/collaborate/wiki-create-repo.md",
+      "redirect_url": "/vsts/project/wiki/wiki-create-repo",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/collaborate/wiki-file-structure.md",
+      "redirect_url": "/vsts/project/wiki/wiki-file-structure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/collaborate/wiki-keyboard-shortcuts.md",
+      "redirect_url": "/vsts/project/wiki/wiki-keyboard-shortcuts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/collaborate/wiki-select-unpublish-versions.md",
+      "redirect_url": "/vsts/project/wiki/wiki-select-unpublish-versions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/collaborate/wiki-update-offline.md",
+      "redirect_url": "/vsts/project/wiki/wiki-update-offline",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/collaborate/wiki-view-history.md",
+      "redirect_url": "/vsts/project/wiki/wiki-view-history",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "vsts/pipelines/apps/cd/scvmm/configure-scvmm.md",
+      "redirect_url": "/vsts/pipelines/targets/scvmm",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "vsts/pipelines/targets/manage-vms-using-scvmm.md",
+      "redirect_url": "/vsts/pipelines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "vsts/pipelines/apps/cd/provision-vm-in-vmware.md",
+      "redirect_url": "/vsts/pipelines/targets/vmware",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "vsts/pipelines/library/azure-stack.md",
+      "redirect_url": "/vsts/pipelines/targets/azure-stack",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/security/about-permissions.md",
+      "redirect_url": "/vsts/organizations/security/about-permissions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/security/about-security-identity.md",
+      "redirect_url": "/vsts/organizations/security/about-security-identity",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/security/about-security-roles.md",
+      "redirect_url": "/vsts/organizations/security/about-security-roles",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/security/access-levels.md",
+      "redirect_url": "/vsts/organizations/security/access-levels",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/security/add-ad-aad-built-in-security-groups.md",
+      "redirect_url": "/vsts/organizations/security/add-ad-aad-built-in-security-groups",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/security/add-users-team-project.md",
+      "redirect_url": "/vsts/organizations/security/add-users-team-project",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/security/change-access-levels.md",
+      "redirect_url": "/vsts/organizations/security/change-access-levels",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/security/change-individual-permissions.md",
+      "redirect_url": "/vsts/organizations/security/change-individual-permissions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/security/default-git-permissions.md",
+      "redirect_url": "/vsts/organizations/security/default-git-permissions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/security/default-tfvc-permissions.md",
+      "redirect_url": "/vsts/organizations/security/default-tfvc-permissions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/security/export-users-audit-log.md",
+      "redirect_url": "/vsts/organizations/security/export-users-audit-log",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/security/faq-network-connections.md",
+      "redirect_url": "/vsts/organizations/security/faq-network-connections",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/security/faq-trace-permissions.md",
+      "redirect_url": "/vsts/organizations/security/faq-trace-permissions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/security/get-started-stakeholder.md",
+      "redirect_url": "/vsts/organizations/security/get-started-stakeholder",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/security/git-permissions-before-2017.md",
+      "redirect_url": "/vsts/organizations/security/git-permissions-before-2017",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/security/index.md",
+      "redirect_url": "/vsts/organizations/security/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/security/lookup-account-owner-admin.md",
+      "redirect_url": "/vsts/organizations/security/lookup-account-owner-admin",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/security/permissions-access-work-tracking.md",
+      "redirect_url": "/vsts/organizations/security/permissions-access-work-tracking",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/security/permissions-access.md",
+      "redirect_url": "/vsts/organizations/security/permissions-access",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/security/permissions-lookup-guide.md",
+      "redirect_url": "/vsts/organizations/security/permissions-lookup-guide",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/security/permissions.md",
+      "redirect_url": "/vsts/organizations/security/permissions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/security/remove-users-prohibit-access.md",
+      "redirect_url": "/vsts/organizations/security/remove-users-prohibit-access",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/security/restrict-access.md",
+      "redirect_url": "/vsts/organizations/security/restrict-access",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/security/security-glossary.md",
+      "redirect_url": "/vsts/organizations/security/security-glossary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/security/set-git-tfvc-repository-permissions.md",
+      "redirect_url": "/vsts/organizations/security/set-git-tfvc-repository-permissions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/security/set-permissions-access-work-tracking.md",
+      "redirect_url": "/vsts/organizations/security/set-permissions-access-work-tracking",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/security/set-project-collection-level-permissions.md",
+      "redirect_url": "/vsts/organizations/security/set-project-collection-level-permissions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/security/set-sharepoint-permissions.md",
+      "redirect_url": "/vsts/organizations/security/set-sharepoint-permissions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/security/setup-ad-aad.md",
+      "redirect_url": "/vsts/organizations/security/setup-ad-aad",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/security/view-permissions.md",
+      "redirect_url": "/vsts/organizations/security/view-permissions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/security/websitesettings.md",
+      "redirect_url": "/vsts/organizations/security/websitesettings",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/feedback/about-feedback.md",
+      "redirect_url": "/vsts/project/feedback/about-feedback",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/feedback/change-audio-device-annotation-tool.md",
+      "redirect_url": "/vsts/project/feedback/change-audio-device-annotation-tool",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/feedback/enable-remote-audio-capture.md",
+      "redirect_url": "/vsts/project/feedback/enable-remote-audio-capture",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/feedback/get-feedback.md",
+      "redirect_url": "/vsts/project/feedback/get-feedback",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/feedback/give-feedback.md",
+      "redirect_url": "/vsts/project/feedback/give-feedback",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/feedback/give-permissions-feedback.md",
+      "redirect_url": "/vsts/project/feedback/give-permissions-feedback",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/feedback/index.md",
+      "redirect_url": "/vsts/project/feedback/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/collaborate/integration-bestpractices.md",
+      "redirect_url": "/vsts/integrate/concepts/integration-bestpractices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/collaborate/rate-limits.md",
+      "redirect_url": "/vsts/integrate/concepts/rate-limits",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/apps/aspnet/build-aspnet-core.md",
+      "redirect_url": "/vsts/pipelines/languages/dotnet-core",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/access-with-azure-ad.md",
+      "redirect_url": "/vsts/organizations/accounts/access-with-azure-ad",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/account-management.md",
+      "redirect_url": "/vsts/organizations/accounts/account-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/account-preferences.md",
+      "redirect_url": "/vsts/organizations/settings/set-user-preferences",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/accounts/account-preferences.md",
+      "redirect_url": "/vsts/organizations/settings/set-user-preferences",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/add-account-users-from-user-hub.md",
+      "redirect_url": "/vsts/organizations/accounts/add-account-users-from-user-hub",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/add-basic-or-vs-subscription-users.md",
+      "redirect_url": "/vsts/organizations/accounts/add-basic-or-vs-subscription-users",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/add-external-user.md",
+      "redirect_url": "/vsts/organizations/accounts/add-external-user",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/add-team-members-vs.md",
+      "redirect_url": "/vsts/organizations/accounts/add-team-members-vs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/add-users-to-aad.md",
+      "redirect_url": "/vsts/organizations/accounts/add-users-to-aad",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/assign-access-levels-and-extensions-by-group-membership.md",
+      "redirect_url": "/vsts/organizations/accounts/assign-access-levels-and-extensions-by-group-membership",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/change-account-location.md",
+      "redirect_url": "/vsts/organizations/accounts/change-account-location",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/change-account-ownership-vs.md",
+      "redirect_url": "/vsts/organizations/accounts/change-account-ownership-vs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/change-application-access-policies-vs.md",
+      "redirect_url": "/vsts/organizations/accounts/change-application-access-policies-vs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/connect-account-to-aad.md",
+      "redirect_url": "/vsts/organizations/accounts/connect-account-to-aad",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/create-account-msa-or-work-student.md",
+      "redirect_url": "/vsts/organizations/accounts/create-account-msa-or-work-student",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/create-team-project.md",
+      "redirect_url": "/vsts/organizations/accounts/create-team-project",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/delete-account-users.md",
+      "redirect_url": "/vsts/organizations/accounts/delete-account-users",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/delete-team-project.md",
+      "redirect_url": "/vsts/organizations/accounts/delete-team-project",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/delete-users-from-services-aad.md",
+      "redirect_url": "/vsts/organizations/accounts/delete-users-from-services-aad",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/delete-your-vsts-account.md",
+      "redirect_url": "/vsts/organizations/accounts/delete-your-vsts-account",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/disconnect-account-from-aad.md",
+      "redirect_url": "/vsts/organizations/accounts/disconnect-account-from-aad",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/faq-add-administrators.md",
+      "redirect_url": "/vsts/organizations/accounts/faq-add-administrators",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/faq-add-delete-users.md",
+      "redirect_url": "/vsts/organizations/accounts/faq-add-delete-users",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/faq-add-team-members.md",
+      "redirect_url": "/vsts/organizations/accounts/faq-add-team-members",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/faq-azure-access.md",
+      "redirect_url": "/vsts/organizations/accounts/faq-azure-access",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/faq-change-account-ownership.md",
+      "redirect_url": "/vsts/organizations/accounts/faq-change-account-ownership",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/faq-change-app-access.md",
+      "redirect_url": "/vsts/organizations/accounts/faq-change-app-access",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/faq-create-account.md",
+      "redirect_url": "/vsts/organizations/accounts/faq-create-account",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/faq-create-team-project.md",
+      "redirect_url": "/vsts/organizations/accounts/faq-create-team-project",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/faq-delete-restore-vsts-account.md",
+      "redirect_url": "/vsts/organizations/accounts/faq-delete-restore-vsts-account",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/faq-manage-group-based-licensing.md",
+      "redirect_url": "/vsts/organizations/accounts/faq-manage-group-based-licensing",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/faq-rename-team-project.md",
+      "redirect_url": "/vsts/organizations/accounts/faq-rename-team-project",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/faq-set-up-vs.md",
+      "redirect_url": "/vsts/organizations/accounts/faq-set-up-vs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/index.md",
+      "redirect_url": "/vsts/organizations/accounts/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/invite-outside-users.md",
+      "redirect_url": "/vsts/organizations/accounts/invite-outside-users",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/manage-azure-active-directory-groups-vsts.md",
+      "redirect_url": "/vsts/organizations/accounts/manage-azure-active-directory-groups-vsts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/manage-conditional-access.md",
+      "redirect_url": "/vsts/organizations/accounts/manage-conditional-access",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/manage-users-table-view.md",
+      "redirect_url": "/vsts/organizations/accounts/manage-users-table-view",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/migrate-to-group-based-resource-management-in-VSTS.md",
+      "redirect_url": "/vsts/organizations/accounts/migrate-to-group-based-resource-management-in-VSTS",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/recover-your-vsts-account.md",
+      "redirect_url": "/vsts/organizations/accounts/recover-your-vsts-account",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/remove-direct-assignments.md",
+      "redirect_url": "/vsts/organizations/accounts/remove-direct-assignments",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/rename-team-project.md",
+      "redirect_url": "/vsts/organizations/accounts/rename-team-project",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/rename-vsts-account.md",
+      "redirect_url": "/vsts/organizations/accounts/rename-vsts-account",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/resources-granted-to-project-members.md",
+      "redirect_url": "/vsts/organizations/accounts/resources-granted-to-project-members",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/save-team-project-data.md",
+      "redirect_url": "/vsts/organizations/accounts/save-team-project-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/set-up-vs.md",
+      "redirect_url": "/vsts/organizations/accounts/set-up-vs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/use-personal-access-tokens-to-authenticate.md",
+      "redirect_url": "/vsts/organizations/accounts/use-personal-access-tokens-to-authenticate",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/scrum/sprint-planning.md",
+      "redirect_url": "/vsts/work/scrum/assign-work-sprint",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/scale/capacity-planning.md",
+      "redirect_url": "/vsts/work/scrum/set-capacity",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/report/powerbi/connect-vso-pbi-vs.md",
+      "redirect_url": "/vsts/report/powerbi/data-connector-connect",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/report/powerbi/create-rollup-charts.md",
+      "redirect_url": "/vsts/report/powerbi/data-connector-connect",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/report/powerbi/create-trend-charts.md",
+      "redirect_url": "/vsts/report/powerbi/data-connector-connect",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/report/powerbi/report-on-vso-with-power-bi-vs.md",
+      "redirect_url": "/vsts/report/powerbi/data-connector-connect",
+      "redirect_document_id": false
     }
   ]
 }

@@ -34,9 +34,11 @@ The build agent must have the following capabilities:
 * MSBuild
 * Azure PowerShell
 
-::: moniker range="vsts"
+::: moniker range=">tfs-2018"
 
-[!INCLUDE [temp](../_shared/yaml/RunLoadTestV1.1.md)]
+## YAML snippet
+
+[!INCLUDE [temp](../_shared/yaml/RunLoadTestV1.md)]
 
 ::: moniker-end
 
@@ -58,7 +60,7 @@ The build agent must have the following capabilities:
 
 ## More Information
 
-* [Cloud-based Load Testing](https://www.visualstudio.com/features/vso-cloud-load-testing-vs)
+* [Cloud-based Load Testing](https://visualstudio.microsoft.com/features/vso-cloud-load-testing-vs)
 * [Source code for this task](https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/RunLoadTestV1)
 * [Build your Visual Studio solution](../../apps/windows/dot-net.md)
 * [Cloud-based Load Testing Knowledge Base](https://blogs.msdn.microsoft.com/devops/?s=clt)  
@@ -67,7 +69,11 @@ The build agent must have the following capabilities:
 
 * [Cloud-based Web Performance Test](cloud-based-web-performance-test.md)  
  
-## Q&A
+## Open source
+
+This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+
+## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
 
 #### How do I use a Test Settings file?

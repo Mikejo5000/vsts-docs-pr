@@ -128,7 +128,7 @@
     - name: Git and TFVC repos
       href: team-projects.md
     - name: "Set Git permissions (Security)"
-      href: ../security/set-git-tfvc-repository-permissions.md?toc=/vsts/git/toc.json&bc=/vsts/git/breadcrumb/toc.json
+      href: ../organizations/security/set-git-tfvc-repository-permissions.md?toc=/vsts/git/toc.json&bc=/vsts/git/breadcrumb/toc.json
   - name: Manage branches
     items:
     - name: Manage your branches
@@ -158,7 +158,7 @@
   - name: Command reference
     href: command-prompt.md
   - name: Format comments with markdown
-    href: ../collaborate/markdown-guidance.md?toc=/vsts/git/toc.json&bc=/vsts/git/breadcrumb/toc.json
+    href: ../project/wiki/markdown-guidance.md?toc=/vsts/git/toc.json&bc=/vsts/git/breadcrumb/toc.json
   - name: Frequently asked questions
     href: tutorial/howto.md
   - name: History
@@ -168,7 +168,7 @@
     - name: Commit details
       href: commit-details.md
   - name: "Default Git permissions (Security)"
-    href: ../security/default-git-permissions.md?toc=/vsts/git/toc.json&bc=/vsts/git/breadcrumb/toc.json
+    href: ../organizations/security/default-git-permissions.md?toc=/vsts/git/toc.json&bc=/vsts/git/breadcrumb/toc.json
   - name: Git limits
     href: limits.md
 - name: Resources
@@ -196,7 +196,7 @@
   - name: IDE integration and extension
     items:
     - name: Visual Studio
-      href: ../accounts/set-up-vs.md
+      href: ../organizations/accounts/set-up-vs.md
     - name: Visual Studio Code
       href: https://marketplace.visualstudio.com/items?itemName=ms-vsts.team
     - name: Eclipse

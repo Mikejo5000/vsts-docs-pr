@@ -143,7 +143,7 @@ In TFS 2015:
 
 * An agent pool administrator joins the agent to an agent pool, and the credentials of the service account (for Windows) or the saved user name and password (for Linux and macOS) are used to initiate communication with TFS. The agent uses these credentials to listening to the job queue.
 
-* The agent does not use asymmetric key encryption while communicating with the server. However, you can [use HTTPS to secure the communication](../../security/websitesettings.md) between the agent and TFS.
+* The agent does not use asymmetric key encryption while communicating with the server. However, you can [use HTTPS to secure the communication](../../organizations/security/websitesettings.md) between the agent and TFS.
 
 ::: moniker-end
 
@@ -167,7 +167,7 @@ To register an agent, you need to be a member of the [administrator role](pools-
 
 ::: moniker range=">= tfs-2017"
 
-**Personal Access Token (PAT):** [Generate](../../accounts/use-personal-access-tokens-to-authenticate.md) and use a PAT to connect an agent with VSTS or TFS 2017 and newer. PAT is the only scheme that works with VSTS.
+**Personal Access Token (PAT):** [Generate](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) and use a PAT to connect an agent with VSTS or TFS 2017 and newer. PAT is the only scheme that works with VSTS.
 
 ::: moniker-end
 
@@ -177,7 +177,7 @@ To register an agent, you need to be a member of the [administrator role](pools-
 
 **Negotiate:** Connect to TFS as a user other than the signed-in user via a Windows authentication scheme such as NTLM or Kerberos.
 
-**Alternate:** Connect to TFS using Basic authentication. To use this method you'll first need to [configure HTTPS on TFS](../../security/websitesettings.md).
+**Alternate:** Connect to TFS using Basic authentication. To use this method you'll first need to [configure HTTPS on TFS](../../organizations/security/websitesettings.md).
 
 ::: moniker-end
 
@@ -238,7 +238,7 @@ You can view the version of an agent by navigating to the **Agent pools** hub an
 
 [!INCLUDE [agent-pools-tab](_shared/agent-pools-tab.md)]
 
-## Q&A
+## Q & A
 
 <h3 id="private-agent-performance-advantages">Do self-hosted agents have any performance advantages over Microsoft-hosted agents?</h3>
 

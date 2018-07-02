@@ -23,9 +23,11 @@ monikerRange: '>= tfs-2017'
 
 None
 
-::: moniker range="vsts"
+::: moniker range=">tfs-2018"
 
-[!INCLUDE [temp](../_shared/yaml/ExtractFilesV1.1.md)]
+## YAML snippet
+
+[!INCLUDE [temp](../_shared/yaml/ExtractFilesV1.md)]
 
 ::: moniker-end
 
@@ -50,7 +52,7 @@ None
 <li>```**\*.tar``` extracts all .tar files in the root folder and sub-folders.</li>
 <li>```**\bin\*.7z``` extracts all ''.7z'' files in any sub-folder named bin.</li>
 </ul>
-<p>The pattern is used to match only archive file paths, not folder paths, and not archive contents to be extracted. So you should specify patterns such as ```**\bin\**``` instead of of ```**\bin```.</p>
+<p>The pattern is used to match only archive file paths, not folder paths, and not archive contents to be extracted. So you should specify patterns such as ```**\bin\**``` instead of ```**\bin```.</p>
 </td>
 </tr>
 <tr>
@@ -65,6 +67,10 @@ None
 </tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
+
+## Open source
+
+This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
 
 ## Q & A
 

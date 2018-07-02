@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 05/14/2018
+ms.date: 06/13/2018
 ---
 [//]: # (monikerRange: 'vsts')
 
@@ -32,7 +32,7 @@ The only notable exclusion is that you cannot use the [Azure Free Trial](https:/
 
 ### Q: Can I use the monthly Azure credits from my Visual Studio subscription to buy VSTS?
 
-A: No, you can't use the monthly Azure credits from [Visual Studio subscriptions](https://www.visualstudio.com/products/subscriber-benefits-vs)
+A: No, you can't use the monthly Azure credits from [Visual Studio subscriptions](https://visualstudio.microsoft.com/products/subscriber-benefits-vs)
 to pay for VSTS. Before you make purchases using this type of Azure subscription, you must [remove your spending limit](https://azure.microsoft.com/pricing/spending-limits/).
 
 <img alt="Spending limit" src="_shared/_img/spending-limit.png" style="border: 1px solid #CCCCCC" />
@@ -67,13 +67,9 @@ Another approach is to attempt to visit the [Azure Enterprise Portal](http://ea.
 
 ### Q: Can I use the Azure Monetary Commitment funds from my Enterprise Agreement to buy VSTS?
 
-A: Yes, you can use these prepaid funds for all VSTS services offered by Microsoft. Make sure to choose an Azure subscription that was created for your EA when you [set up billing for your VSTS account](set-up-billing-for-your-account-vs.md).
+A: Yes, you can use these prepaid funds for all VSTS services offered by Microsoft. Make sure to choose an Azure subscription that was created for your EA when you [set up billing for your VSTS account](set-up-billing-for-your-organization-vs.md).
 
 The only exclusion is for VSTS extensions offered by partners in the Visual Studio Marketplace; these charges will appear on your next "overage" invoice. Typically this happens monthly, but due to historical rules for some EA customers, an overage invoice might not be issued for several months. Please consult a licensing specialist for your EA if you need to know what amount of additional purchases (purchases which are not eligible for Azure Monetary Commitment funds) will trigger an overage invoice.
-
-### Can I buy Azure Marketplace solutions from an Azure Cloud Solution Provider (CSP)?
-
-A: Currently, only free and bring-your-own-license (BYOL) Marketplace offers are available to Azure CSP and Open customers.
 
 ## How charges are processed
 
@@ -115,7 +111,7 @@ A:  Yes, you can use the same Azure subscription for billing across multiple VST
 
 ### Q: How do I find a project collection administrator?
 
-A: You can find your [project collection administrator](../security/set-project-collection-level-permissions.md) in your VSTS account's security settings.
+A: You can find your [project collection administrator](../organizations/security/set-project-collection-level-permissions.md) in your VSTS account's security settings.
 
 1. Go to your VSTS account's security settings.
 
@@ -151,8 +147,8 @@ A:  Yes you can, if your reseller participates in the Cloud Solution Provider (C
 
 ## Related articles
 
-* [Set up billing](set-up-billing-for-your-account-vs.md)
+* [Set up billing](set-up-billing-for-your-organization-vs.md)
 * [Add backup billing managers](add-backup-billing-managers.md)
 * [Change the Azure subscription for billing](change-azure-subscription.md)
 * [VSTS pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
-* [VSTS billing support](https://www.visualstudio.com/team-services/support/)
+* [VSTS billing support](https://visualstudio.microsoft.com/team-services/support/)

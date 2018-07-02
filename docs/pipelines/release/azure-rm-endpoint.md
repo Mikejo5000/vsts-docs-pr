@@ -1,6 +1,6 @@
 ---
 title: Troubleshooting Azure Resource Manager service endpoints in VSTS and TFS
-description: Troubleshoot Azure Resource Manager service endpoints in VSTS and Team Foundation Server (TFS)
+description: DevOps CI CD - Troubleshoot Azure Resource Manager service endpoints in VSTS and Team Foundation Server (TFS)
 ms.assetid: B43E78DE-5D73-4303-981F-FB86D46F0CAE
 ms.prod: devops
 ms.technology: devops-cicd
@@ -17,7 +17,8 @@ monikerRange: '>= tfs-2015'
 **VSTS | TFS 2018 | TFS 2017 | TFS 2015**
 
 This topic will help you resolve issues you may encounter when creating
-a connection to Microsoft Azure using an **Azure Resource Manager** service endpoint.
+a connection to Microsoft Azure using an **Azure Resource Manager** service endpoint
+for your DevOps CI/CD processes.
 
 <a name="whathappens"></a>
 ## What happens when you create a Resource Manager service endpoint?
@@ -128,7 +129,7 @@ These errors typically occur when your session has expired.
 To resolve these issues:
 
 * Sign out of VSTS or TFS.
-* Open an InPrivate or incognito browser window and navigate to [https://www.visualstudio.com/team-services/](https://www.visualstudio.com/team-services/).
+* Open an InPrivate or incognito browser window and navigate to [https://visualstudio.microsoft.com/team-services/](https://visualstudio.microsoft.com/team-services/).
 * If you are prompted to sign out, do so.
 * Sign in using the appropriate credentials.
 * Choose the account you want to use from the list.

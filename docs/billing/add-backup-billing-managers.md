@@ -46,7 +46,7 @@ A backup billing manager is added to your VSTS account.
 
 ## Related articles
 
-* [Set up billing](set-up-billing-for-your-account-vs.md)
+* [Set up billing](set-up-billing-for-your-organization-vs.md)
 * [Change the Azure subscription for billing](change-azure-subscription.md)
 * [VSTS pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
-* [VSTS billing support](https://www.visualstudio.com/team-services/support/)
+* [VSTS billing support](https://visualstudio.microsoft.com/team-services/support/)

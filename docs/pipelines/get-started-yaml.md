@@ -1,6 +1,6 @@
 ---
-title: Build a repo with YAML file
-description: Set up CI for a repo containing a YAML file
+title: Build a repository with YAML
+description: Set up CI for a repository containing a YAML file
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: quickstart
@@ -12,9 +12,12 @@ ms.date: 5/10/2018
 monikerRange: 'vsts'
 ---
 
-# Build a repo with YAML file
+# Build a repository with YAML
 
 If you manage your code in GitHub or in Visual Studio Team Services (VSTS) Git, then you can use VSTS pipelines to easily build the repo by adding a YAML file to it. VSTS pipelines can be used to automate continuous integration (CI) for an application written in any programming language.
+
+> [!NOTE]
+> To use YAML you must have the **Build YAML definitions** [preview feature](/vsts/project/navigation/preview-features) enabled on your account.
 
 ## Prerequisites
 
@@ -65,9 +68,9 @@ Get the code for the sample application into your own GitHub or VSTS repository.
       tasks: 'build'
   ```
     
-  The next time you change any file in this repository, VSTS automatically builds your code.
+  The next time you push a change to this YAML file, VSTS automatically builds your code.
 
-1. Go back to the list of files and select the **Readme.md** file, and then choose **Edit**.
+1. Choose **Edit** to make a change to the YAML file.
 
 1. Add the following comment:
 
@@ -146,7 +149,7 @@ You've just learned the basics of using YAML to create and run a VSTS build proc
 This pipeline automatically builds and validates whatever code is checked in by your team. 
 Now you're ready to configure your CI definition for the programming language you're using.
 
-* [.NET Core](apps/aspnet/build-aspnet-core.md)
+* [.NET Core](languages/dotnet-core.md)
 * [Android](languages/android.md)
 * [Go](apps/go/go.md)
 * [Java](apps/java/build-gradle.md)

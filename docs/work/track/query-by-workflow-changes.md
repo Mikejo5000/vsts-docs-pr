@@ -223,7 +223,7 @@ You can quickly find items that you changed, resolved or closed. You can also fi
 
 
 <a id="kanban_query_fields">  </a>
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 ## Query by Kanban board changes  
 Using the Kanban query fields&mdash;Board Column, Board Column Done, and Board Lane&mdash;you can list work items according to their flow status on the Kanban board. And, you can create a [status or trend chart](../../report/dashboards/charts.md) based on these queries. 
 ::: moniker-end
@@ -233,7 +233,7 @@ Using the Kanban query fields&mdash;Board Column, Board Column Done, and Board L
 > Kanban query fields are available with TFS 2015.1 or later versions. 
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 
 For example, you can list items based on the team area path, and if they are in a specific custom Kanban column and swimlane. If you rename a column or swimlane, you'll need to update the query filters to reflect the new name. For more ideas, see this blog post: [New fields bring Kanban goodness to queries, and more](https://blogs.msdn.microsoft.com/visualstudioalm/2015/10/19/new-fields-bring-kanban-goodness-to-queries-and-more/)  
 
@@ -285,7 +285,7 @@ Items in any swimlane that contains "Test"
 <a id="kanban-query-results">  </a>
 
 > [!IMPORTANT] 
-> Work items that appear on more then one team's Kanban board can yield query results that don't meet your expectations. Because each team can customize the Kanban board columns and swimlanes, the values assigned to work items which appear on different boards may not be the same. The primary work around for this issue is to maintain single ownership of work items by [team area path](../scale/set-team-defaults.md). Another option is to [add custom workflow states](../customize/customize-work.md) which all teams can use.  
+> Work items that appear on more then one team's Kanban board can yield query results that don't meet your expectations. Because each team can customize the Kanban board columns and swimlanes, the values assigned to work items which appear on different boards may not be the same. The primary work around for this issue is to maintain single ownership of work items by [team area path](../../organizations/settings/set-team-defaults.md). Another option is to [add custom workflow states](../customize/customize-work.md) which all teams can use.  
 
 ::: moniker-end
 
@@ -454,7 +454,7 @@ For information about data types and default field attributes, see [Work item da
 #### Notes
   
 <a id="sync">  </a>
-1.  By default, the server synchronizes system-defined person-name fields with Active Directory or Azure Active Directory, if these are configured. These fields include: Activated By, Assigned To, Closed By, Created By, and Resolved By. You can grant access to a team project by adding security groups that you created in AD or AAD or by adding accounts to existing or custom groups defined from the collection setting Security hub. See [Set up Active Directory or Azure Active Directory](../../security/setup-ad-aad.md).
+1.  By default, the server synchronizes system-defined person-name fields with Active Directory or Azure Active Directory, if these are configured. These fields include: Activated By, Assigned To, Closed By, Created By, and Resolved By. You can grant access to a team project by adding security groups that you created in AD or AAD or by adding accounts to existing or custom groups defined from the collection setting Security hub. See [Set up Active Directory or Azure Active Directory](../../organizations/security/setup-ad-aad.md).
     
 	::: moniker range=">= tfs-2013 <= tfs-2018"  
 	You can enable or disable synchronization for a person-name field by using the **witadmin changefields** command-line tool. You can also synchronize custom person-name fields by specifying the **syncnamechanges** attribute. See [Manage work item fields](../customize/reference/witadmin/manage-work-item-fields.md) and [FIELD (Definition) element reference](../customize/reference/field-definition-element-reference.md).    

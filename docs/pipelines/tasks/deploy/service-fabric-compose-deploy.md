@@ -31,9 +31,11 @@ See [https://docs.microsoft.com/azure/service-fabric/service-fabric-docker-compo
 
 * [Azure Service Fabric Core SDK](http://www.microsoft.com/web/handlers/webpi.ashx?command=getinstallerredirect&appid=MicrosoftAzure-ServiceFabric-CoreSDK) on the build agent.
 
-::: moniker range="vsts"
+::: moniker range=">tfs-2018"
 
-[!INCLUDE [temp](../_shared/yaml/ServiceFabricComposeDeploy.0.md)]
+## YAML snippet
+
+[!INCLUDE [temp](../_shared/yaml/ServiceFabricComposeDeployV0.md)]
 
 ::: moniker-end
 
@@ -52,7 +54,11 @@ See [https://docs.microsoft.com/azure/service-fabric/service-fabric-docker-compo
 
 Also see: [Service Fabric PowerShell Utility ](../utility/service-fabric-powershell.md)
 
-## Q&A
+## Open source
+
+This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+
+## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [qa-agents](../../_shared/qa-agents.md)]

@@ -6,9 +6,10 @@ ms.technology: devops-analytics
 ms.prod: devops
 ms.topic: tutorial
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 monikerRange: 'vsts'
-ms.date: 03/20/2018 
+ms.date: 06/30/2018 
 ---
 
 
@@ -66,7 +67,7 @@ To help you answer the question: *Are we on track to complete this set of work b
 
 In order to configure the Burndown and Burndown widgets, you must have the following in place:
 
-* Installed the [Analytics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You must be an account owner or a member of the [Project Collection Administrator group](../../security/set-project-collection-level-permissions.md) to add extensions.
+* Installed the [Analytics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You must be an account owner or a member of the [Project Collection Administrator group](../../organizations/security/set-project-collection-level-permissions.md) to add extensions.
 * [Added the widget to a dashboard](../add-widget-to-dashboard.md). You must be a [team administrator](../../work/scale/add-team-administrator.md) or have [permissions to add and edit dashboards](../dashboard-permissions.md).
 -->
 
@@ -112,6 +113,9 @@ The Configuration dialog for the Burndown and Burnup widgets is the same. You co
    
 	You can also select **Work item type** to burndown on a specific work item type. In the list, you will find all the project's work item types including [custom work item types](../../organizations/settings/work/customize-process-wit.md).   
 	![Burndown Widget - Configuration - Select work item types](./_img/burndown-widget/burndownup-config-select-work-item-type.png)  
+
+   > [!NOTE]   
+   > When setting filters in this step or the following step, it is important to understand how filters are applied to historical data. Read [Filters applied to historical data](../analytics/analytics-historical-filtering.md) for more information.
 
 1. (Optional) Select field criteria to limit the work items that appear in the chart.  
 	You can filter by any field available in your team project, even a specific tag.   For example, you can narrow your burndown to top priority items by adding a filter **Priority <= 2**.      

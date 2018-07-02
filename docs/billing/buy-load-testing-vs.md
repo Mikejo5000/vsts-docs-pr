@@ -31,7 +31,7 @@ If you don't have an Azure subscription, create a [free account](https://azure.m
 Your VSTS account includes a **Free Tier** of 20,000 virtual user minutes per month for cloud-based load testing.
 If you need more than this amount, you must first do the following:
 
-1. [Set up billing for your VSTS account](set-up-billing-for-your-account-vs.md).
+1. [Set up billing for your VSTS account](set-up-billing-for-your-organization-vs.md).
 2. [Enable paid cloud-based load testing](#buy-load-testing) in the [Azure portal](https://portal.azure.com) for your VSTS account.
 
 The first time that you set up billing for your VSTS account - whether you do this via the Azure portal or as part of making a purchase in the Visual Studio Marketplace, you will need the following:
@@ -51,7 +51,7 @@ To make subsequent edits to paid quantities in your VSTS account, you only need 
 
 2. Enter *team services accounts* into the search box, choose **team services accounts** from the dropdown menu, and select your VSTS account.
 
-   ![Browse, VSTS accounts, select your account](_img/_shared/ap_vso_selectlinkedaccount.png)
+   ![Browse, VSTS accounts, select your account](_img/_shared/AP_VSO_SelectLinkedOrganization.png)
 
 3. Select **Cloud-based load testing**, to the right of your screen.
 
@@ -92,4 +92,4 @@ To turn off paid cloud-based load testing, go to your account in the Azure porta
 ## Related articles
 
 * [VSTS pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
-* [VSTS billing support](https://www.visualstudio.com/team-services/support/)
+* [VSTS billing support](https://visualstudio.microsoft.com/team-services/support/)

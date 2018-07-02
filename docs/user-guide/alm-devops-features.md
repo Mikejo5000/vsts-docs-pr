@@ -49,7 +49,7 @@ If you're new to VSTS or TFS, see the [Key concepts](concepts.md) and other over
 </b></p>
 Track work and integrate with your code, build, and test environments from the following clients:   
 - [Eclipse (Team Explorer Everywhere)](/vsts/java/download-eclipse-plug-in)       
-- [Visual Studio](https://www.visualstudio.com/downloads/)      
+- [Visual Studio](https://visualstudio.microsoft.com/downloads/)      
 - [Android Studio](/vsts/java/download-android-studio-plug-in)     
 - [IntelliJ](/vsts/java/download-intellij-plug-in)   
 - [Visual Studio Code](/vsts/java/vscode-extension)   
@@ -68,37 +68,37 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Manage users and groups</b></p>
-<p>Add members to your team project adds them to the Contributor group. When managing a large group of users, use [built-in groups to manage users and their permissions](../security/permissions.md).</p>
+<p>Add members to your team project adds them to the Contributor group. When managing a large group of users, use [built-in groups to manage users and their permissions](../organizations/security/permissions.md).</p>
 <br/>
 <p><b>Add team members </b></p>
-<p>To share and contribute to your project, add user accounts to [VSTS](../accounts/add-team-members-vs.md) or your [TFS](../work/scale/multiple-teams.md#add-team-members).</p>
+<p>To share and contribute to your project, add user accounts to [VSTS](../organizations/accounts/add-team-members-vs.md) or your [TFS](../work/scale/multiple-teams.md#add-team-members).</p>
 ![Manage users, add team members](_img/features/alm-feature-manage-members.png)  
 <br/>
 
 <p><b>Azure Active Directory (AAD) (VSTS)</b></p>
-<p>Control who can access your team's critical resources and key business assets by [managing access with Azure Active Directory groups](../accounts/manage-azure-active-directory-groups-vsts.md). </p>
+<p>Control who can access your team's critical resources and key business assets by [managing access with Azure Active Directory groups](../organizations/accounts/manage-azure-active-directory-groups-vsts.md). </p>
 
 </td>
 <td width="30%">
 
 
 <p><b>Access levels</b></p>
-<p>All users that you add to your VSTS account or to your TFS team project have access to Basic features by default, except [Stakeholders](../security/get-started-stakeholder.md) who have access to a limited set of features, or those added to the Advanced access level in TFS.</p>
-- [Manage users (VSTS)](../accounts/add-account-users-assign-access-levels.md)   
-- [Change access levels (TFS)](../security/change-access-levels.md)  
+<p>All users that you add to your VSTS account or to your TFS team project have access to Basic features by default, except [Stakeholders](../organizations/security/get-started-stakeholder.md) who have access to a limited set of features, or those added to the Advanced access level in TFS.</p>
+- [Manage users (VSTS)](../organizations/accounts/add-account-users-from-user-hub.md)   
+- [Change access levels (TFS)](../organizations/security/change-access-levels.md)  
 <br/>
 <p><b>Permissions</b></p>
 <p>Control access to specific features by setting permissions for a user or group.</p>
 
-- [Area and iteration paths](../security/set-permissions-access-work-tracking.md)  
+- [Area and iteration paths](../organizations/security/set-permissions-access-work-tracking.md)  
 - [Build & Release](../pipelines/policies/set-permissions.md)  
-- [Git](../security/set-git-tfvc-repository-permissions.md)  
-- [TFVC](../security/set-git-tfvc-repository-permissions.md)  
+- [Git](../organizations/security/set-git-tfvc-repository-permissions.md)  
+- [TFVC](../organizations/security/set-git-tfvc-repository-permissions.md)  
 - [Dashboards](../report/dashboard-permissions.md)   
 - [Queries](../work/track/set-query-permissions.md)   
 - [Team admin role](../work/scale/team-administrator-permissions.md)  
-- [Test](../security/set-project-collection-level-permissions.md)  
-- [Work item tags](../security/permissions.md#tags)  
+- [Test](../organizations/security/set-project-collection-level-permissions.md)  
+- [Work item tags](../organizations/security/permissions.md#tags)  
 
 
 </td>
@@ -178,12 +178,12 @@ Use features supported by these familiar clients to manage your project and illu
  <br/>
 
 <p><b>Request feedback</b></p>
-<p>[Request feedback on working software](../feedback/get-feedback.md) and easily track responses that capture interaction with video, verbal, or type-written comments.  </p>
+<p>[Request feedback on working software](../project/feedback/get-feedback.md) and easily track responses that capture interaction with video, verbal, or type-written comments.  </p>
 ![Request feedback](_img/features/feature-request-feedback.png)  
  <br/>
 
 <p><b>Feedback client</b></p>
-<p>Provide the free [Microsoft feedback client](../feedback/give-feedback.md) to capture their responses to your feedback requests. </p>
+<p>Provide the free [Microsoft feedback client](../project/feedback/give-feedback.md) to capture their responses to your feedback requests. </p>
 
 </td>
 </tr>
@@ -216,7 +216,7 @@ Use features supported by these familiar clients to manage your project and illu
  <br/>
 
 <p><b>Follow a work item </b></p>
-<p>Choose the ![Follow icon](../work/_img/icons/follow-icon.png)/![Following icon](../work/_img/icons/following-icon.png) Follow/Following icons to quickly [start or stop tracking changes made to a work item](../collaborate/follow-work-items.md).  </p>
+<p>Choose the ![Follow icon](../work/_img/icons/follow-icon.png)/![Following icon](../work/_img/icons/following-icon.png) Follow/Following icons to quickly [start or stop tracking changes made to a work item](../work/work-items/follow-work-items.md).  </p>
 ![Follow a work item control](_img/features/alm-feature-follows.png)  
 <br/>
 
@@ -407,7 +407,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p>Delete those inherited processes that you no longer want used. Simply choose the Delete option from its context menu.  </p>
 
 <p><b>Set process permissions</b></p>
-<p>To customize a process, add custom fields, or change the layout of a work item form, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to edit a specific process](../security/set-permissions-access-work-tracking.md#process-permissions).  </p>
+<p>To customize a process, add custom fields, or change the layout of a work item form, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to edit a specific process](../organizations/security/set-permissions-access-work-tracking.md#process-permissions).  </p>
 
 </td>
 
@@ -648,7 +648,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Plan sprints</b></p>
-<p>Build your sprint backlog, add tasks, and load balance work across your team as you [plan your sprint](../work/scrum/sprint-planning.md).</p>
+<p>Build your sprint backlog, add tasks, and load balance work across your team as you [plan your sprint](../work/scrum/assign-work-sprint.md).</p>
 
 
 <p><b>Track work on your task board</b></p>
@@ -676,7 +676,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Manage resources</b></p>
-<p>Use [capacity planning tools](../work/scale/capacity-planning.md) to track individual, team, and activity over and under capacity for a sprint.</p>
+<p>Use [capacity planning tools](../work/scrum/set-capacity.md) to track individual, team, and activity over and under capacity for a sprint.</p>
 ![Capacity bars](../work/scrum/_img/ALM_DS_CapacityBars_S.png)  
 
 
@@ -774,12 +774,12 @@ Use features supported by these familiar clients to manage your project and illu
 <td width="30%">
 
 <p><b>Personal and team notifications or alerts</b></p>
-<p>Get notified as changes occur to work items, code reviews, source control files, and builds by setting [personal notifications](../collaborate/manage-personal-notifications.md) or [team notifications](../collaborate/manage-team-notifications.md).</p>
+<p>Get notified as changes occur to work items, code reviews, source control files, and builds by setting [personal notifications](../notifications/manage-personal-notifications.md) or [team notifications](../notifications/manage-team-notifications.md).</p>
 ![Open Notifications from Account menu](_img/features/features-notifications-option.png)  
 <br/>
 
 <p><b>Share queries and sprint plans</b></p>
-<p>Email a query or [sprint plan](../work/scrum/sprint-planning.md).  </p>
+<p>Email a query or [sprint plan](../work/scrum/assign-work-sprint.md).  </p>
 ![Share queries, backlogs, and sprint plans with the email control](_img/features/alm-feature-email-control.png)  
 <br/>
 <p><b>Quick alerts to team members  </b></p>
@@ -797,13 +797,13 @@ Use features supported by these familiar clients to manage your project and illu
 <td width="30%">
 
 <p><b>Follow a work item </b></p>
-<p>Choose the ![Follow icon](../work/_img/icons/follow-icon.png)/![Following icon](../work/_img/icons/following-icon.png) icons to quickly [start or stop tracking changes made to a work item](../collaborate/follow-work-items.md).  </p>
+<p>Choose the ![Follow icon](../work/_img/icons/follow-icon.png)/![Following icon](../work/_img/icons/following-icon.png) icons to quickly [start or stop tracking changes made to a work item](../work/work-items/follow-work-items.md).  </p>
 ![Follow a work item control](_img/features/alm-feature-follows.png)  
 <br/>
 
 
 <p><b>Follow a pull request</b></p>
-<p>To [track the progress of a single pull request](../collaborate/follow-work-items.md), choose the ![Follow icon](../work/_img/icons/follow-icon.png) option from the context menu. </p>
+<p>To [track the progress of a single pull request](../work/work-items/follow-work-items.md), choose the ![Follow icon](../work/_img/icons/follow-icon.png) option from the context menu. </p>
 ![Follow a pull request](_img/features/features-follow-pull-request.png)  
 <br/>
 
@@ -814,7 +814,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Frequent on-line feature updates</b></p>
-<p>Check the [News](https://www.visualstudio.com/news-overview-vs) for product updates, or read about them by accessing the News link in your web portal.</p>
+<p>Check the [News](https://visualstudio.microsoft.com/news-overview-vs) for product updates, or read about them by accessing the News link in your web portal.</p>
 
  <br/>
 
@@ -923,7 +923,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Git permissions</b></p>
-<p>Set permissions on a [Git project, repository, or branch](../security/permissions.md#git-repo) from the context menu or from the web portal administration page.</p>
+<p>Set permissions on a [Git project, repository, or branch](../organizations/security/permissions.md#git-repo) from the context menu or from the web portal administration page.</p>
 
 
 </td>
@@ -1009,7 +1009,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>TFVC permissions</b></p>
-<p>Set permissions on [select code management tasks](../security/permissions.md#tfvc) from the context menu for TFVC files or folders or the admin context for the team project.</p>
+<p>Set permissions on [select code management tasks](../organizations/security/permissions.md#tfvc) from the context menu for TFVC files or folders or the admin context for the team project.</p>
 
 
 </td>
@@ -1155,7 +1155,7 @@ pipelines\tasks\build\_img
 <p>[Define policies to automatically delete old completed builds ](../pipelines/policies/retention.md) to minimize clutter.</p>
 
 <p><b>Build permissions</b></p>
-<p>Determine who can [define, delete, and manage builds](../security/permissions.md#build).</p>
+<p>Determine who can [define, delete, and manage builds](../organizations/security/permissions.md#build).</p>
 
 
 </td>
@@ -1330,7 +1330,7 @@ pipelines\tasks\build\_img
 <p>[Specify a combination of hardware and software](../test/test-different-configurations.md) that represents a user or machine environment in which your app will run.</p>
 
 <p><b>Test permissions</b></p>
-<p>Set permissions on who can [manage test configurations, test environments, and publish and delete test results](../security/set-project-collection-level-permissions.md).</p>
+<p>Set permissions on who can [manage test configurations, test environments, and publish and delete test results](../organizations/security/set-project-collection-level-permissions.md).</p>
 
 
 
@@ -1388,7 +1388,7 @@ pipelines\tasks\build\_img
 
 
 <p><b>Share dashboards with stakeholders</b></p>
-<p>Grant non-licensed users access as Stakeholders ([VSTS](../accounts/add-account-users-assign-access-levels.md) | [TFS](../security/change-access-levels.md)) so they can view progress, run queries, and contribute ideas.  </p>
+<p>Grant non-licensed users access as Stakeholders ([VSTS](../organizations/accounts/add-account-users-from-user-hub.md) | [TFS](../organizations/security/change-access-levels.md)) so they can view progress, run queries, and contribute ideas.  </p>
 
 <p><b>Velocity charts</b></p>
 <p>[Team velocity](../report/dashboards/team-velocity.md) tracks the total estimated effort (story points or size) of backlog items (user stories or requirements) completed or still in progress within each sprint. </p>
@@ -1750,7 +1750,7 @@ pipelines\tasks\build\_img
 
 
 <p><b>Subscriptions</b></p>
-<p>[Visual Studio subscriptions](https://www.visualstudio.com/products/how-to-buy-vs) are a way for you to get the Visual Studio IDE, team collaboration benefits like VSTS and TFS, and subscriber benefits like dev/test use of Windows, Windows Server, and SQL Server. </p>
+<p>[Visual Studio subscriptions](https://visualstudio.microsoft.com/products/how-to-buy-vs) are a way for you to get the Visual Studio IDE, team collaboration benefits like VSTS and TFS, and subscriber benefits like dev/test use of Windows, Windows Server, and SQL Server. </p>
 
 <p><b>Extensions</b></p>
 <p>You can [get and quickly install extensions](../marketplace/get-vsts-extensions.md) to add functionality to Visual Studio, Visual Studio Code, or VSTS.</p>
@@ -1872,7 +1872,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <td width="33%">
 
 <p><b>Web portal preferences </b></p>
-<p><p>Choose your name to access [your profile settings](../accounts/account-preferences.md) and set your web portal preferences which include language (currently only English is supported for VSTS), date and time pattern, and time zone.</p>
+<p><p>Choose your name to access [your profile settings](../organizations/settings/set-user-preferences.md) and set your web portal preferences which include language (currently only English is supported for VSTS), date and time pattern, and time zone.</p>
 ![Profile drop down menu](_img/features/features-global-profile.png)  
 <br/>
 
@@ -1931,7 +1931,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <br/>
 
 <p><b>Eclipse plug-in language support </b></p>
-<p>[Install Team Explorer Everywhere](https://www.visualstudio.com/downloads/download-visual-studio-vs#d-team-explorer-everywhere), which includes language support for English, French, German, Japanese, and Simplified Chinese.   </p>
+<p>[Install Team Explorer Everywhere](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs#d-team-explorer-everywhere), which includes language support for English, French, German, Japanese, and Simplified Chinese.   </p>
 
 </td>
 </tr>
@@ -2021,14 +2021,14 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Get HockeyApp for mobile app development</b></p>
-<p>Distribute mobile apps for testing, collect user metrics and feedback, and respond to crashes more easily by [adding HockeyApp to your Agile, continuous integration, and continuous delivery workflows](https://www.visualstudio.com/app-center/). </p>
+<p>Distribute mobile apps for testing, collect user metrics and feedback, and respond to crashes more easily by [adding HockeyApp to your Agile, continuous integration, and continuous delivery workflows](https://visualstudio.microsoft.com/app-center/). </p>
 
 <p><b>Simplified distribution </b></p>
 <p>[Manage distribution of development and production versions of your apps](http://support.hockeyapp.net/kb/app-management-2/how-to-organize-development-and-production-apps-for-distribution) and use independent bundle identifiers that can run in parallel on the same device.</p>
 
 
 <p><b>Integrate with VSTS and TFS</b></p>
-<p>[Integrate HockeyApp directly in VSTS or TFS](https://www.visualstudio.com/app-center/) to upload your Android, iOS, or Windows builds. </p>
+<p>[Integrate HockeyApp directly in VSTS or TFS](https://visualstudio.microsoft.com/app-center/) to upload your Android, iOS, or Windows builds. </p>
 
 
 
@@ -2094,7 +2094,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>To view and quickly navigate to teams, team projects, branches, work items, pull requests and other objects that are relevant to you, use your [account hub](account-home-pages.md). </p>
 
 <p><b>Your profile and preferences</b></p>
-<p>Choose your name to access [your profile settings](../accounts/account-preferences.md), set preferences, [create personal access tokens (VSTS)](../git/command-prompt.md#pat), [set alerts](../work/track/alerts-and-notifications.md), and log-in or out.</p>
+<p>Choose your name to access [your profile settings](../organizations/settings/set-user-preferences.md), set preferences, [create personal access tokens (VSTS)](../git/command-prompt.md#pat), [set alerts](../work/track/alerts-and-notifications.md), and log-in or out.</p>
 ![Profile drop down menu](_img/features/alm-index-my-profile-menu.png)  
 <br/>
 
@@ -2111,20 +2111,20 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Keyboard shortcuts</b></p>
-<p>Increase your productivity by working with [hot keys and shortcuts](../collaborate/keyboard-shortcuts.md).</p>
+<p>Increase your productivity by working with [hot keys and shortcuts](../project/navigation/keyboard-shortcuts.md).</p>
 
 </td>
 <td width="33%">
 
 
 <p><b>Home</b></p>
-<p>Provide team guidance through [Welcome](../collaborate/markdown-guidance.md) (Markdown format) pages and add team [dashboards](../report/dashboards/dashboards.md) to monitor progress and trends. </p>
+<p>Provide team guidance through [Welcome](../project/wiki/markdown-guidance.md) (Markdown format) pages and add team [dashboards](../report/dashboards/dashboards.md) to monitor progress and trends. </p>
 
 <p><b>Code</b></p>
 <p>Manage source code using distributed [Git repositories](../git/get-started.md) or [Team Foundation version control](https://msdn.microsoft.com/library/ms181384%28v=vs.140%29).  to </p>
 
 <p><b>Work</b></p>
-<p>Plan and track work by [creating a product backlog](../work/backlogs/create-your-backlog.md), and managing work using [Kanban](../work/kanban/kanban-basics.md) or [Scrum](../work/scrum/sprint-planning.md) processes. Find work items you want to review or update by [creating queries](../work/track/using-queries.md), or visualize progress by [creating query-based charts](../report/dashboards/charts.md)  </p>
+<p>Plan and track work by [creating a product backlog](../work/backlogs/create-your-backlog.md), and managing work using [Kanban](../work/kanban/kanban-basics.md) or [Scrum](../work/scrum/assign-work-sprint.md) processes. Find work items you want to review or update by [creating queries](../work/track/using-queries.md), or visualize progress by [creating query-based charts](../report/dashboards/charts.md)  </p>
 
 <p><b>Build</b></p>
 <p>[Define and monitor builds](../pipelines/overview.md) and set up continuous builds to improve the quality of your app. </p>
@@ -2172,13 +2172,13 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Team project admin context</b></p>
-<p>Open the admin context to [add teams](../work/scale/multiple-teams.md), [set team defaults](../work/scale/set-team-defaults.md), and [manage permissions](../security/change-individual-permissions.md). From any team project hub, choose the ![gear icon](../work/_img/icons/gear_icon.png) gear icon to open the admin context.</p>
+<p>Open the admin context to [add teams](../work/scale/multiple-teams.md), [set team defaults](../work/scale/set-team-defaults.md), and [manage permissions](../organizations/security/change-individual-permissions.md). From any team project hub, choose the ![gear icon](../work/_img/icons/gear_icon.png) gear icon to open the admin context.</p>
 ![Admin context](_img/features/alm-feature-admin-context.png)  
 <br/>
 
 
 <p><b>Project collection admin context</b></p>
-<p>From the collection admin context, you can [manage collection-level permissions](../security/set-project-collection-level-permissions.md), and set build policies, and [manage extensions](../extend/overview.md). Choose the ![gear icon](../work/_img/icons/gear_icon.png) gear icon to open the admin context and then choose DefaultCollection. </p>
+<p>From the collection admin context, you can [manage collection-level permissions](../organizations/security/set-project-collection-level-permissions.md), and set build policies, and [manage extensions](../extend/overview.md). Choose the ![gear icon](../work/_img/icons/gear_icon.png) gear icon to open the admin context and then choose DefaultCollection. </p>
 
 
 </td>
@@ -2285,24 +2285,24 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Manage users and groups</b></p>
-<p>[Add users to built-in groups](../security/permissions.md) to grant them access to your team project. Optionally, create groups to customize access based on your business requirements.</p>
+<p>[Add users to built-in groups](../organizations/security/permissions.md) to grant them access to your team project. Optionally, create groups to customize access based on your business requirements.</p>
 
 <p><b>Permission states</b></p>
-<p>Understand how [Allow, Deny, Not set and other permissions states](../security/about-permissions.md) control access to features and objects. </p>
+<p>Understand how [Allow, Deny, Not set and other permissions states](../organizations/security/about-permissions.md) control access to features and objects. </p>
 ![permission states](_img/features/alm-feature-permission-states.png)  
 <br/>
 
 <p><b>Manage work access (VSTS)</b></p>
-<p>[Control user access with a directory](../accounts/manage-azure-active-directory-groups-vsts.md) to enforce policies about accessing company resources.  </p>
+<p>[Control user access with a directory](../organizations/accounts/manage-azure-active-directory-groups-vsts.md) to enforce policies about accessing company resources.  </p>
 
 <p><b>Azure Active Directory (VSTS) </b></p>
-<p>Easily control access to your team's critical resources and key business assets with [Azure Active Directory groups](../accounts/manage-azure-active-directory-groups-vsts.md).</p>
+<p>Easily control access to your team's critical resources and key business assets with [Azure Active Directory groups](../organizations/accounts/manage-azure-active-directory-groups-vsts.md).</p>
 
 <p><b>Set up groups (TFS)</b></p>
 <p>[Create Windows or Active Directory groups](/tfs/server/admin/setup-ad-groups) to manage access to your team projects and collections.  </p>
 
 <p><b>Built-in groups</b></p>
-<p>Understand the [permissions granted to built-in groups](../security/permissions.md#groups) and use them to manage access to your team projects and collections.</p>
+<p>Understand the [permissions granted to built-in groups](../organizations/security/permissions.md#groups) and use them to manage access to your team projects and collections.</p>
 
 
 
@@ -2312,11 +2312,11 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p><b>DevOps permissions</b></p>
 <p>Grant or restrict access to: </p>
 <ul>
-<li>[Git repositories](../security/set-git-tfvc-repository-permissions.md)</li>
+<li>[Git repositories](../organizations/security/set-git-tfvc-repository-permissions.md)</li>
 <li>[Git branches](../git/branch-permissions.md)</li>
-<li>[TFVC source code and folders](../security/set-git-tfvc-repository-permissions.md)</li>
+<li>[TFVC source code and folders](../organizations/security/set-git-tfvc-repository-permissions.md)</li>
 <li>[Build](../pipelines/policies/set-permissions.md)</li>
-<li>[Test](../security/set-project-collection-level-permissions.md))</li>
+<li>[Test](../organizations/security/set-project-collection-level-permissions.md))</li>
 <li>[Release](../pipelines/policies/set-permissions.md)</li>
 </ul>
 <br/>
@@ -2325,12 +2325,12 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>Control access to specific features by setting permissions for a user or group.</p>
 
 <ul>
-<li>[Area and iteration paths](../security/set-permissions-access-work-tracking.md)</li>
+<li>[Area and iteration paths](../organizations/security/set-permissions-access-work-tracking.md)</li>
 <li>[Query permissions](../work/track/set-query-permissions.md)</li>
-<li>[Work item tags](../security/permissions.md#tags)</li>
-<li>[Move work items to another team project](../security/set-permissions-access-work-tracking.md#move-delete-permissions)</li>
-<li>[Permanently delete work items](../security/set-permissions-access-work-tracking.md#move-delete-permissions)</li>
-<li>[Provide feedback through the Microsoft Feedback client](../feedback/give-permissions-feedback.md)</li>
+<li>[Work item tags](../organizations/security/permissions.md#tags)</li>
+<li>[Move work items to another team project](../organizations/security/set-permissions-access-work-tracking.md#move-delete-permissions)</li>
+<li>[Permanently delete work items](../organizations/security/set-permissions-access-work-tracking.md#move-delete-permissions)</li>
+<li>[Provide feedback through the Microsoft Feedback client](../project/feedback/give-permissions-feedback.md)</li>
 </ul>
 <br/>
 
@@ -2342,8 +2342,8 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p><b>Manage administrative permissions </b></p>
 <p>[Add users to one of the following built-in groups] to provide them permissions assigned to that group: </p>
 <ul>
-<li>[Project Administrators](../security/set-project-collection-level-permissions.md), who manage shared features for a team project </li>
-<li>[Project Collection Administrators](../security/set-project-collection-level-permissions.md), who manage collection-level features </li>
+<li>[Project Administrators](../organizations/security/set-project-collection-level-permissions.md), who manage shared features for a team project </li>
+<li>[Project Collection Administrators](../organizations/security/set-project-collection-level-permissions.md), who manage collection-level features </li>
 <li>[Team Foundation Server Administrators](/tfs/server/admin/add-administrator-tfs), who manage on-premises application servers </li>
 </ul>
 <br/>
@@ -2357,7 +2357,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Stakeholder access</b></p>
-<p>[Grant stakeholders, non-licensed users, limited access](../security/change-access-levels.md) to contribute ideas and access team dashboards.</p>
+<p>[Grant stakeholders, non-licensed users, limited access](../organizations/security/change-access-levels.md) to contribute ideas and access team dashboards.</p>
 
 <p><b>Query permissions</b></p>
 <p>Grant permissions to [create shared queries and query folders](../work/track/set-query-permissions.md).</p>
@@ -2365,14 +2365,14 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <br/>
 
 <p><b>Process permissions</b></p>
-<p>To customize a process, add custom fields, or change the layout of a work item form, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to edit a specific process](../security/set-permissions-access-work-tracking.md#process-permissions).  </p>
+<p>To customize a process, add custom fields, or change the layout of a work item form, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to edit a specific process](../organizations/security/set-permissions-access-work-tracking.md#process-permissions).  </p>
 
 <p><b>Valid users</b></p>
-<p>Understand how [valid user groups are populated and the permissions they're granted](../security/about-permissions.md#validusers).</p>
+<p>Understand how [valid user groups are populated and the permissions they're granted](../organizations/security/about-permissions.md#validusers).</p>
 
 
 <p><b>Permission reference</b></p>
-<p>[Provide or restrict access](../security/permissions.md) for practically any feature, function, or object at the collection or team project level. </p>
+<p>[Provide or restrict access](../organizations/security/permissions.md) for practically any feature, function, or object at the collection or team project level. </p>
 
 <p><b>SharePoint permissions (TFS)</b></p>
 <p>Grant permissions to [view and contribute to SharePoint project portals](https://msdn.microsoft.com/library/bb558971.aspx).</p>
@@ -2404,22 +2404,22 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <td width="33%">
 
 <p><b>Free developer offers</b></p>
-<p>To get started, [download and install Visual Studio](https://www.visualstudio.com/products/free-developer-offers-vs.aspx) an integrated development environment (IDE) that works with VSTS and TFS. </p>
+<p>To get started, [download and install Visual Studio](https://visualstudio.microsoft.com/products/free-developer-offers-vs.aspx) an integrated development environment (IDE) that works with VSTS and TFS. </p>
 
 
 <p><b>Migrate from on-premises to hosted</b></p>
-<p>You can [migrate source code and work items](https://www.visualstudio.com/articles/adopting-vsts) from an on-premises TFS to the cloud. </p>
+<p>You can [migrate source code and work items](https://visualstudio.microsoft.com/articles/adopting-vsts) from an on-premises TFS to the cloud. </p>
 
 </td>
 <td width="33%">
 
 <p><b>Sign up for VSTS </b></p>
-<p>[Store your code, tests, and test results in the cloud with VSTS](https://www.visualstudio.com/docs/setup-admin/team-services/sign-up-for-visual-studio-team-services), as well as plan your project and track progress. </p>
+<p>[Store your code, tests, and test results in the cloud with VSTS](https://visualstudio.microsoft.com/docs/setup-admin/team-services/sign-up-for-visual-studio-team-services), as well as plan your project and track progress. </p>
 
 
 
 <p><b>Install TFS </b></p>
-<p>[Download and install the latest version of Team Foundation Server](https://www.visualstudio.com/downloads). TFS provides the collaboration hub to support your teams DevOps tasks. at the center of the Microsoft devops solution. </p>
+<p>[Download and install the latest version of Team Foundation Server](https://visualstudio.microsoft.com/downloads). TFS provides the collaboration hub to support your teams DevOps tasks. at the center of the Microsoft devops solution. </p>
 
 
 
@@ -2512,11 +2512,11 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 </td>
 <td width="33%">
 <p><b>Scrum process tools</b></p>
-<p>Scrum processes can be used with any process--Agile, Scrum, CMMI--or team project that you select or create. Agile Scrum tools support [sprint planning](../work/scrum/sprint-planning.md), [capacity planning](../work/scale/capacity-planning.md), [task boards](../work/scrum/task-board.md), and [burndown charts](../work/scrum/sprint-burndown.md).  </p>
+<p>Scrum processes can be used with any process--Agile, Scrum, CMMI--or team project that you select or create. Agile Scrum tools support [sprint planning](../work/scrum/assign-work-sprint.md), [capacity planning](../work/scrum/set-capacity.md), [task boards](../work/scrum/task-board.md), and [burndown charts](../work/scrum/sprint-burndown.md).  </p>
 
 
 <p><b>Manage processes (VSTS) </b></p>
-<p>[Add users to built-in groups](../security/permissions.md) to grant them access to your team project. Optionally, create groups to customize access based on your business requirements.</p>
+<p>[Add users to built-in groups](../organizations/security/permissions.md) to grant them access to your team project. Optionally, create groups to customize access based on your business requirements.</p>
 
 <p><b>CMMI process</b></p>
 <p>Choose [CMMI](../work/work-items/guidance/cmmi-process.md) when your team follows more formal project methods that require a framework for process improvement and an auditable record of decisions. CMMI supports tracking requirements, change requests, risks, and reviews.</p>
@@ -2596,17 +2596,17 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>What is a team project?</b></p>
-<p>A [team project](../accounts/create-team-project.md) provides a repository for source code and a place for a group of developers to plan, track progress, and collaborate on building software solutions. A team project lives within a team project collection. You can grant permissions to and customize a team project to support your business needs. </p>
+<p>A [team project](../organizations/accounts/create-team-project.md) provides a repository for source code and a place for a group of developers to plan, track progress, and collaborate on building software solutions. A team project lives within a team project collection. You can grant permissions to and customize a team project to support your business needs. </p>
 
 <p><b>Create a team project </b></p>
-<p>You can [create a team project hosted in the cloud (VSTS)](sign-up-invite-teammates.md), avoiding maintenance and administrative overhead, or [create a team project on an on-premises TFS](../accounts/create-team-project.md).</p>
+<p>You can [create a team project hosted in the cloud (VSTS)](sign-up-invite-teammates.md), avoiding maintenance and administrative overhead, or [create a team project on an on-premises TFS](../organizations/accounts/create-team-project.md).</p>
 
 
 <p><b>Rename a team project</b></p>
-<p>[Rename a team project](../accounts/rename-team-project.md) as needed to reflect changes that occur within your org.</p>
+<p>[Rename a team project](../organizations/accounts/rename-team-project.md) as needed to reflect changes that occur within your org.</p>
 
 <p><b>Delete a team project</b></p>
-<p>Simplify the navigation to team projects that are in use by [deleting team projects you no longer use](../accounts/delete-team-project.md). </p>
+<p>Simplify the navigation to team projects that are in use by [deleting team projects you no longer use](../organizations/accounts/delete-team-project.md). </p>
 
 </td>
 <td width="33%">
@@ -2657,7 +2657,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>A team is an organizing unit used to support a number of [team-configurable tools and assets](../work/scale/manage-team-assets.md) to plan and manage work and facilitate collaboration.  </p>
 
 <p><b>Add team members</b></p>
-<p>Add accounts--[VSTS](../accounts/add-team-members-vs.md) | [TFS](../work/scale/multiple-teams.md#add-team-members)--to a team to enable users to share code, plan and track work, and access other team assets and resources. </p>
+<p>Add accounts--[VSTS](../organizations/accounts/add-team-members-vs.md) | [TFS](../work/scale/multiple-teams.md#add-team-members)--to a team to enable users to share code, plan and track work, and access other team assets and resources. </p>
 ![Manage users, add team members](_img/features/alm-feature-manage-members.png)  
 <br/>
 
@@ -2671,7 +2671,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Support stakeholders</b></p>
-<p>Members within your org who don't have a license or contribute to developing the code base [can track project priorities and provide direction, feature ideas, and business alignment to a team](../security/get-started-stakeholder.md).  </p>
+<p>Members within your org who don't have a license or contribute to developing the code base [can track project priorities and provide direction, feature ideas, and business alignment to a team](../organizations/security/get-started-stakeholder.md).  </p>
 </td>
 <td width="33%">
 
@@ -2681,7 +2681,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <br/>
 
 <p><b>Team welcome page</b></p>
-<p>Provide in-project guidance through the [Welcome page and other pages you format using Markdown](../collaborate/markdown-guidance.md).  </p>
+<p>Provide in-project guidance through the [Welcome page and other pages you format using Markdown](../project/wiki/markdown-guidance.md).  </p>
 
 
 
@@ -2710,7 +2710,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Team rooms</b></p>
-<p>Team rooms, like chat rooms, provide teams with a [space to discuss work in progress, ask questions, share status, and clarify issues](../collaborate/collaborate-in-a-team-room.md) that arise. Use team rooms to foster and capture communication among team members, both near and far.</p>
+<p>Team rooms, like chat rooms, provide teams with a [space to discuss work in progress, ask questions, share status, and clarify issues](../notifications/collaborate-in-a-team-room.md) that arise. Use team rooms to foster and capture communication among team members, both near and far.</p>
 
 
 <p><b>Team groups</b></p>
@@ -2795,7 +2795,7 @@ We add new features frequently. We'll work to keep this list up-to-date. Other r
 - [Brian Harry's blog](https://blogs.msdn.microsoft.com/bharry/)
 
 <br/>
-Get started today using our cloud offering, [VSTS](https://www.visualstudio.com/team-services/), or our [on-premises TFS server](https://www.visualstudio.com/downloads/).  
+Get started today using our cloud offering, [VSTS](https://visualstudio.microsoft.com/team-services/), or our [on-premises TFS server](https://visualstudio.microsoft.com/downloads/).  
 
 
 ### We welcome your feedback

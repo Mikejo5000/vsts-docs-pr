@@ -31,9 +31,19 @@ If your code depends on NuGet packages, make sure to add this step before your [
 > [!NOTE]
 > Using or creating .NET Core or .NET Standard packages? Use the [.NET Core](../build/dotnet-core.md) task, which has full support for all package scenarios currently supported by dotnet, including restore, pack, and nuget push.
 
-::: moniker range="vsts"
+::: moniker range=">tfs-2018"
 
-[!INCLUDE [temp](../_shared/yaml/NuGetCommandV2.2.md)]
+## YAML snippet
+
+[!INCLUDE [temp](../_shared/yaml/NuGetCommandV2.md)]
+
+### Versioning schemes
+
+For **byPrereleaseNumber**, the version will be set to whatever you choose for major, minor, and patch, plus the date and time in the format `yyyymmdd-hhmmss`.
+
+For **byEnvVar**, the version will be set as whatever environment variable, e.g. $(MyVersion), you provide. Make sure the environment variable is set to a proper SemVer e.g. `1.2.3` or `1.2.3-beta1`.
+
+For **byBuildNumber**, the version will be set to the build number, ensure that your build number is a proper SemVer e.g. `1.0.$(Rev:r)`.
 
 ::: moniker-end
 
@@ -74,6 +84,7 @@ None
                 <li>Select this option to use feeds specified in a [NuGet.config](http://docs.nuget.org/Consume/NuGet-Config-File)
                     file you've checked into source control.</li>
                 <li>Credentials for feeds outside this account/collection can be used to inject credentials you've provided as a [NuGet service endpoint](../../library/service-endpoints.md#sep-nuget) into your NuGet.config as the build runs.</li>
+                <li>See the [walkthrough](../../packages/nuget-restore.md) for help using packages from feeds in multiple VSTS accounts.</li>
             </ul>
         </td>
     </tr>
@@ -281,9 +292,11 @@ This task is unable to publish NuGet packages to a TFS Package Management feed t
 
 ## Custom NuGet command
 
-::: moniker range="vsts"
+::: moniker range=">tfs-2018"
 
-[!INCLUDE [temp](../_shared/yaml/NuGetV0.0.md)]
+## YAML snippet
+
+[!INCLUDE [temp](../_shared/yaml/NuGetV0.md)]
 
 ::: moniker-end
 
@@ -442,6 +455,10 @@ Make sure your AssemblyInfo.cs files contain the information you want shown in y
 | Task version | VSTS                     | TFS                                           |
 |--------------|--------------------------|-----------------------------------------------|
 | [0.*](#custom-nuget-command)            | Deprecated but available | Available in TFS < 2017 Update 2, deprecated in TFS >= 2018 |
+
+## Open source
+
+These tasks are open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
 
 ## Q & A
 

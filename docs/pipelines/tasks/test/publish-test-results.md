@@ -36,9 +36,11 @@ The build agent must have the following capabilities:
 * MSBuild
 * Azure PowerShell
 
-::: moniker range="vsts"
+::: moniker range=">tfs-2018"
 
-[!INCLUDE [temp](../_shared/yaml/PublishTestResults.2.md)]
+## YAML snippet
+
+[!INCLUDE [temp](../_shared/yaml/PublishTestResultsV2.md)]
 
 ::: moniker-end
 
@@ -65,7 +67,11 @@ The build agent must have the following capabilities:
 * [Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTestV2/README.md)  
 * [Publish Code Coverage Results](publish-code-coverage-results.md)
 
-## Q&A
+## Open source
+
+This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+
+## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
 
 ::: moniker range="< vsts"

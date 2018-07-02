@@ -24,9 +24,11 @@ Can be used in only an [agentless phase](../../process/server-phases.md) of a re
 
 None
 
-::: moniker range="vsts"
+::: moniker range=">tfs-2018"
 
-[!INCLUDE [temp](../_shared/yaml/AzureMonitorV0.0.md)]
+## YAML snippet
+
+[!INCLUDE [temp](../_shared/yaml/AzureMonitorV0.md)]
 
 ::: moniker-end
 

@@ -15,9 +15,11 @@ monikerRange: 'vsts'
 
 ![](_img/azurenlbmanagement.png) Connect/Disconnect an Azure virtual machine's network interface to a Load Balancer's backend address pool
 
-::: moniker range="vsts"
+::: moniker range=">tfs-2018"
 
-[!INCLUDE [temp](../_shared/yaml/AzureNLBManagementV1.1.md)]
+## YAML snippet
+
+[!INCLUDE [temp](../_shared/yaml/AzureNLBManagementV1.md)]
 
 ::: moniker-end
 
@@ -33,7 +35,11 @@ Connect: Adds the virtual machine’s primary network interface to load balancer
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
-## Q&A
+## Open source
+
+This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+
+## Q & A
 
 <!-- BEGINSECTION class="md-qanda" -->
 

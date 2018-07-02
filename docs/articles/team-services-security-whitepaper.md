@@ -7,7 +7,7 @@ ms.technology: devops-whitepapers
 ms.author: mlearned
 author: mlearned
 ms.manager: douge
-ms.date: 05/3/2018
+ms.date: 06/29/2018
 monikerRange: 'vsts'
 ---
 
@@ -286,7 +286,7 @@ The team reviews the results to identify other areas of improvement and
 to increase the quality of the preventative systems and training.
 
 ### Reporting Security Issues
-If during your penetration testing you believe you have discovered a potential security flaw related to the VSTS service, please report it to Microsoft within 24 hours by following the instructions on the [Report a Computer Security Vulnerability](https://technet.microsoft.com/en-us/security/ff852094) page.
+If during your penetration testing you believe you have discovered a potential security flaw related to the VSTS service, please report it to Microsoft within 24 hours by following the instructions on the [Report a Computer Security Vulnerability](https://technet.microsoft.com/en-us/organizations/security/ff852094) page.
 
 >[!IMPORTANT]
 >While notifying Microsoft of penetration testing activities is no longer required, customers must still comply with the [Microsoft Cloud Unified Penetration Testing Rules of Engagement](https://technet.microsoft.com/en-us/mt784683)
@@ -379,16 +379,16 @@ The General Data Protection Regulation (GDPR) is the biggest change in data prot
 in Europe since the 1995 introduction of the European Union (EU) Data Protection Directive 95/46/EC. 
 The GDPR's main objective is to strengthen the protection and security of your personal data and 
 will replace the Directive and all local laws relating to it. VSTS is relied upon as system of record with strict 
-integrity, traceability and audit rules, we view all information within VSTS to be business critical and therefore cannot be modified from its original state. 
-These existing obligations supersede nominal delete and retention obligations from GDPR. As such, we do not support GDPR delete requests from within VSTS. 
-We have ensured that when an entire VSTS account is deleted that all associated data and telemetry about that account and its members are removed from our system (after the requisite 30-day soft-delete period).
-To learn more about this new regulation, please visit the following page in [Microsoft's Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx).
+integrity, traceability and audit rules, we view all information within VSTS to be business critical and therefore cannot be modified from its original state. 
+These existing obligations affect our delete and retention obligations for GDPR. As such, we do not support GDPR delete requests from within VSTS. 
+We have ensured that when an entire VSTS account is deleted that all associated data and telemetry about that account and its members are removed from our system (after the requisite 30-day soft-delete period). To learn more about how VSTS honors Data Subject Requests (DSR), please visit the following [page](https://docs.microsoft.com/en-us/microsoft-365/compliance/gdpr-dsr-vsts?toc=/microsoft-365/enterprise/toc.json).
+To learn more about the GDPR regulation, please visit the following page in [Microsoft's Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx).
 
 ### Data residency and sovereignty
 
 We know our customers care deeply about data security and privacy. 
-VSTS is available in the following 6 regions across the world: US Central, 
-Canada Central, West Europe, India South, Australia East, Brazil South. 
+VSTS is available in the following 7 regions across the world: US Central, 
+Canada Central, West Europe, India South, Australia East, East Asia, Brazil South. 
 While we default your account to your closest region, you have the option to choose 
 a different region. If you change your mind later, our CSS team can help you 
 migrate your account to a different region. VSTS will not move or replicate 
@@ -539,7 +539,7 @@ characteristics relative to VSTS access:
 | Device-based conditional access | No | Organization
 
 You can learn more about how to 
-[configure this support for your VSTS account](../accounts/access-with-azure-ad.md).
+[configure this support for your VSTS account](../organizations/accounts/access-with-azure-ad.md).
 
 ### Require two-factor authentication
 
@@ -570,7 +570,7 @@ authentication. However, we have taken steps to help people make secure
 choices. For example, all communication is sent over HTTPS and there
 are password complexity requirements. Nevertheless, your organization
 should evaluate if additional policies are required to meet your
-projects security requirements. You can [learn more](../accounts/change-application-access-policies-vs.md) about disabling alternate 
+projects security requirements. You can [learn more](../organizations/accounts/change-application-access-policies-vs.md) about disabling alternate 
 authentication credentials altogether for your account if it doesn't meet your
 security requirements.
 
@@ -594,10 +594,10 @@ OAuth and SSH keys are not constrained or checked by conditional access policy.
 In addition to this white paper, there are other resources available for
 your review and education. These include:
 
--   [VSTS home page](https://www.visualstudio.com/)
+-   [VSTS home page](https://visualstudio.microsoft.com/)
 -   [VSTS status](https://blogs.msdn.com/b/vsoservice/)
--   [Developer Services privacy statement](http://www.visualstudio.com/support/privacy-policy-vs)
--   [Developer Services Agreement](http://www.visualstudio.com/support/terms-of-service-vs)
+-   [Developer Services privacy statement](http://visualstudio.microsoft.com/support/privacy-policy-vs)
+-   [Developer Services Agreement](http://visualstudio.microsoft.com/support/terms-of-service-vs)
 -   [Brian Harry's blog](http://blogs.msdn.com/b/bharry/)
 -   [Azure trust center](http://azure.microsoft.com/support/trust-center/)
 -   [Microsoft Security Development Lifecycle](http://www.microsoft.com/sdl/)

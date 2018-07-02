@@ -664,6 +664,18 @@ Scope: All
 
 The ID of the build definition.
 
+::: moniker range=">= tfs-2015"
+
+### System.HostType
+
+Environment variable: SYSTEM_HOSTTYPE
+
+Scope: All
+
+Set to `build` if the process is a build or `release` if the process is a release.
+
+::: moniker-end
+
 ### System.PullRequest.IsFork
 
 Environment variable: SYSTEM_PULLREQUEST_ISFORK
@@ -745,7 +757,7 @@ Scope: Agent
 
 Set to `True` if the script is being run by a build task.
 
-## Q&A
+## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
 
 

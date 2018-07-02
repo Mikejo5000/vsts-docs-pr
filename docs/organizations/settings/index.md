@@ -8,7 +8,7 @@ ms.topic: overview
 ms.assetid: 
 ms.manager: douge
 ms.author: kaelli
-ms.date: 05/31/2018
+ms.date: 06/19/2018
 ---
 
 # Scale & Configure Teams 
@@ -31,7 +31,7 @@ Give your teams the autonomy they need as your organization grows. Add teams to 
 
 
 ## Reference   
-- [Permissions and access for work tracking](../../security/permissions-access-work-tracking.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json) 
+- [Permissions and access for work tracking](../../organizations/security/permissions-access-work-tracking.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json) 
 
 
 ## Resources  

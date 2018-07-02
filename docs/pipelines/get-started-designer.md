@@ -329,7 +329,7 @@ Write-Host Trigger: $trigger
 
 1. **Commit** (save) the script.
 
-1. Go to the **Build and Release** hub, and notice that a build is automatically triggered by the change that you committed.
+1. Go to the **Build and Release** hub and select **Queued**. Notice under the **Queued or running** section that a build is automatically triggered by the change that you committed.
 
 1. Select the new build that was created and view its log.
 
@@ -536,18 +536,6 @@ Write-Host "Now that you've got CI/CD, you can automatically deploy your app eve
 > In many cases, you probably would want to edit the release process so that the production deployment happens
   only after some testing and approvals are in place. See [Approvals and gates overview](release/approvals/index.md).
 
-## Put CI/CD to work for you
-
-We hope this tutorial gave you an understanding of the basic concepts of Team Build and Release Management. To get started building and deploying an app, we suggest you proceed next to one of these topics:
-
-* [ASP.NET](apps/aspnet/build-aspnet-4.md)
-
-* [ASP.NET core](apps/aspnet/build-aspnet-core.md)
-
-* [Node.js](apps/nodejs/build-gulp.md)
-
-* [Build and deploy your app](apps/index.md)
-
 <a name="next-steps"></a>
 ## Next steps
 
@@ -558,14 +546,14 @@ Go ahead and create a new build pipeline, and this time, use one of the followin
 | Language | Template to use | 
 |-|-|
 | [.NET](apps/aspnet/build-aspnet-4.md) | ASP.NET |
-| [.NET Core](apps/aspnet/build-aspnet-core.md) | ASP.NET Core |
+| [.NET Core](languages/dotnet-core.md) | ASP.NET Core |
 | [C++](apps/windows/cpp.md) | .NET Desktop | 
 | [Go](apps/go/go.md) | Go |
 | [Java](apps/java/build-gradle.md) | Gradle |
 | [JavaScript](apps/nodejs/build-gulp.md) | NodeJS with Gulp (Grunt is also an option)|
 | [Xcode](apps/mobile/xcode-ios.md) | Xcode |
 
-## Q&A
+## Q & A
 
 ### Where can I read articles about DevOps and CI/CD?
 <!-- BEGINSECTION class="md-qanda" -->
@@ -587,7 +575,7 @@ When you're ready to get going with CI/CD for your app, you can use the version 
 
  * [Visual Studio Code for Windows, macOS, and Linux](https://code.visualstudio.com)
 
- * [Visual Studio with Git for Windows](../git/share-your-code-in-git-vs.md) or [Visual Studio for Mac](https://www.visualstudio.com/vs/visual-studio-mac/)
+ * [Visual Studio with Git for Windows](../git/share-your-code-in-git-vs.md) or [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/visual-studio-mac/)
 
  * [Visual Studio with TFVC](../tfvc/share-your-code-in-tfvc-vs.md)
 
@@ -601,7 +589,7 @@ When you're ready to get going with CI/CD for your app, you can use the version 
 
 * Services
 
- * [VSTS](https://www.visualstudio.com/team-services/)
+ * [VSTS](https://visualstudio.microsoft.com/team-services/)
 
  * Git service providers such as GitHub and Bitbucket
 

@@ -29,7 +29,7 @@ You will:
 
 ## Prerequisites
 
-* An Azure subscription. You can get one free through [Visual Studio Dev Essentials](https://www.visualstudio.com/dev-essentials/).
+* An Azure subscription. You can get one free through [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/).
 
 ## Create an Azure DevOps project for an ASP.NET App and Azure SQL Database
 
@@ -182,3 +182,7 @@ To learn more about the VSTS pipeline see this tutorial:
 
 > [!div class="nextstepaction"]
 > [Customize CD process](../release/define-multistage-release-process.md)
+
+## Videos
+
+> [!VIDEO https://channel9.msdn.com/Events/Build/2018/BRK3308/player]

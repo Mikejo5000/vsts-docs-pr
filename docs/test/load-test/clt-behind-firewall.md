@@ -16,7 +16,7 @@ monikerRange: 'vsts'
 
 [!INCLUDE [version-header-ts](../_shared/version-header-ts.md)]
  
-The Cloud-based Load Testing (CLT) service can be used for performance and scale testing
+The Cloud-based Load Testing (CLT) service can be used for performance and scale load testing
 of an app by generating load from Azure. This type of load generation can only access and
 generate load on an Internet-located or publicly accessible app. However, you may want
 to load test an app which is not publicly accessible, perhaps to:
@@ -173,7 +173,7 @@ to manage self-provisioned agents. Download the script and unblock the file befo
 
 * **TeamServicesAccountName**. The name of your VSTS account you want to manage. Specify just the account name.
   For example, if your VSTS account is xyz.visualstudio.com, enter just **xyz**.
-* **PATToken**. Required for authentication. Obtain a PAT token for your VSTS account [as described here](https://www.visualstudio.com/en-us/docs/setup-admin/team-services/use-personal-access-tokens-to-authenticate).
+* **PATToken**. Required for authentication. Obtain a PAT token for your VSTS account [as described here](https://visualstudio.microsoft.com/en-us/docs/setup-admin/team-services/use-personal-access-tokens-to-authenticate).
   Ensure the selected scope is **Load Test (read and write)**.
 
 The available operations and the switches for the script are:
@@ -237,7 +237,7 @@ it later if required. See
 
 **A:** We support only default proxy scenario, when the proxy settings are controlled through your web browser and
 it uses the current user's credentials to connect to the proxy server. In other cases, please see our
-[help and support forum](https://www.visualstudio.com/team-services/support/).
+[help and support forum](https://visualstudio.microsoft.com/team-services/support/).
 
 ### Q: Where can I find the log files to debug issues?
 

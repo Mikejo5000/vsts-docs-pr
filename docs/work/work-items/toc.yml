@@ -4,6 +4,8 @@
   items:
   - name: About work items
     href: about-work-items.md
+  - name: About Agile tools
+    href: about-agile-tools.md
 - name: Quickstarts
   items:
   - name: "View & add work items"
@@ -13,13 +15,13 @@
   - name: Drive Git development
     href: ../backlogs/connect-work-items-to-git-dev-ops.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json
   - name: Define area paths
-    href: ../customize/set-area-paths.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json  
+    href: ../../organizations/settings/set-area-paths.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json  
   - name: Define iteration paths
-    href: ../customize/set-iteration-paths-sprints.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
+    href: ../../organizations/settings/set-iteration-paths-sprints.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
 - name: Tutorials
   items:
   - name: Follow work
-    href: ../../collaborate/follow-work-items.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
+    href: follow-work-items.md
   - name: Manage bugs
     href: ../backlogs/manage-bugs.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
   - name: Manage issues
@@ -33,7 +35,7 @@
   - name: Copy/clone 
     href: ../backlogs/copy-clone-work-items.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
   - name: Work as a Stakeholder
-    href: ../../security/get-started-stakeholder.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json
+    href: ../../organizations/security/get-started-stakeholder.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json
 - name: Concepts
   items:
   - name: Choose a process
@@ -120,19 +122,19 @@
   - name: Use work item templates
     href: ../backlogs/work-item-template.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json  
   - name: Go mobile
-    href: ../../collaborate/mobile-work.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json
+    href: ../../project/navigation/mobile-work.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json
   - name: Email/print work items
     href: email-work-items.md  
   - name: Switch project or team focus
     href: ../../organizations/settings/switch-team-context.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json
   - name: "Manage permissions (Security)"
-    href: ../../security/set-permissions-access-work-tracking.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
+    href: ../../organizations/security/set-permissions-access-work-tracking.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
 - name: Reference
   items:
   - name: Changes made to process templates
     href: ../work-items/guidance/changes-to-process-templates.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json
   - name: "Default permissions (Security)"
-    href: ../../security/permissions-access-work-tracking.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json
+    href: ../../organizations/security/permissions-access-work-tracking.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json
   - name: Work item form controls 
     href: work-item-form-controls.md 
   - name: Keyboard shortcuts 
@@ -158,13 +160,15 @@
     href: https://docs.microsoft.com/en-us/rest/api/vsts/wit/work%20items
 - name: Resources
   items:
-  - name: Kanban
+  - name: Boards (Kanban)
     href: ../kanban/index.md
-  - name: Scrum
-    href: ../scrum/index.md
   - name: Backlogs
     href: ../backlogs/index.md
+  - name: "Sprints (Scrum)"
+    href: ../scrum/index.md
   - name: Queries
     href: ../track/index.md
   - name: Customization
     href: ../customize/index.md
+  - name: What is Agile?
+    href: /azure/devops/agile/what-is-agile

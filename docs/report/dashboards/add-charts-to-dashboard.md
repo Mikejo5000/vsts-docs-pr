@@ -18,7 +18,7 @@ ms.date: 03/20/2018
 
 ::: moniker range="tfs-2013"
 > [!NOTE]   
-> Adding charts to a dashboard is not a supported feature in TFS 2013, instead, you can [pin items to a team homepage](team-dashboard.md).  Consider [upgrading to the latest TFS version](https://www.visualstudio.com/downloads/) to get access to the widget catalog and [multiple team dashboards](dashboards.md).  
+> Adding charts to a dashboard is not a supported feature in TFS 2013, instead, you can [pin items to a team homepage](team-dashboard.md).  Consider [upgrading to the latest TFS version](https://visualstudio.microsoft.com/downloads/) to get access to the widget catalog and [multiple team dashboards](dashboards.md).  
 ::: moniker-end
 
 
@@ -30,7 +30,7 @@ You can add the charts described in this topic to a dashboard from their corresp
 
 ::: moniker range="tfs-2015"
 > [!NOTE]   
-> Adding charts to a dashboard is requires TFS 2015.1 or later version. For TFS 2015, you can [pin items to a team homepage](team-dashboard.md).  Consider [upgrading to the latest TFS version](https://www.visualstudio.com/downloads/) to get access to the widget catalog and [multiple team dashboards](dashboards.md).
+> Adding charts to a dashboard is requires TFS 2015.1 or later version. For TFS 2015, you can [pin items to a team homepage](team-dashboard.md).  Consider [upgrading to the latest TFS version](https://visualstudio.microsoft.com/downloads/) to get access to the widget catalog and [multiple team dashboards](dashboards.md).
 ::: moniker-end
 
 ::: moniker range="vsts || >= tfs-2015"
@@ -144,7 +144,7 @@ Requires TFS 2017.2 or later version.
 You add work item queries and charts to a dashboard from the Queries page. Queries and charts must be associated with queries under the Shared queries folder.  
 
 >[!NOTE]  
-><b>You can also add a [work item query chart widget](widget-catalog.md#build-history-widget) to a team dashboard.  
+><b>You can also add a [work item query chart widget](widget-catalog.md#build-history-widget) to a team dashboard.  
 
 1. First, make sure you have selected your team context. Only those dashboards created for a team appear in the context menu for each query or chart. [Switch team context](../../organizations/settings/switch-team-context.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json) as needed.  
 
@@ -175,7 +175,7 @@ Click **Add to dashboard**, and then choose the team dashboard to add the markdo
 Requires TFS 2015.2 or later version. 
 ::: moniker-end
 ::: moniker range="vsts || > tfs-2015"
-<img src="../../collaborate/_img/markdown-guidance/markdown-add-file-to-dashboard.png" alt="Web portal, Code hub, README file, Add Markdown page to a dashboard" style="border: 2px solid #C3C3C3;" />
+<img src="../../project/wiki/_img/markdown-guidance/markdown-add-file-to-dashboard.png" alt="Web portal, Code hub, README file, Add Markdown page to a dashboard" style="border: 2px solid #C3C3C3;" />
 
 ::: moniker-end
 

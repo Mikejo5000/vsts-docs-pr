@@ -15,7 +15,7 @@ monikerRange: 'vsts'
 
 **VSTS**
 
-Partners in the CSP program can purchase [VSTS resources](https://www.visualstudio.com/team-services/pricing) for
+Partners in the CSP program can purchase [VSTS resources](https://visualstudio.microsoft.com/team-services/pricing) for
 their customers including VSTS users (who get Basic  features), Test Manager, Package Management, Private Pipelines, and
 Hosted Pipelines.
 
@@ -24,7 +24,7 @@ Hosted Pipelines.
 If you are setting up billing for a customer who has already created a VSTS account using a Microsoft account identity
 (i.e., not an identity in their Azure Active Directory), you will need the customer to take a few actions first:
 
-1. Your customer must [change their VSTS account to be backed by their Azure Active Directory](../../accounts/access-with-azure-ad.md)
+1. Your customer must [change their VSTS account to be backed by their Azure Active Directory](../../organizations/accounts/access-with-azure-ad.md)
 2. Your customer must [unlink the existing Azure subscription used for billing on their VSTS account](../change-azure-subscription.md), if they had set up billing previously.
 
 Make sure that your identity has not been added into the customer's Azure Active Directory. If it has, you will need to have it removed before you can go through the purchasing steps for your customer.

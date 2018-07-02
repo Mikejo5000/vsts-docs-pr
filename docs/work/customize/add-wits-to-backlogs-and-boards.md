@@ -6,7 +6,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: f3e42cd4-912b-4fff-a6f2-cf584edc782a
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 ms.date: 12/15/2017  
 ---
@@ -48,7 +49,7 @@ To add a WIT to track as requirements, tasks, or as bugs perform the correspondi
 
 You'll make your changes to your process definition files, and then import that process to either update existing team projects or use the process to create a team project. 
 
-- If you aren't the account owner or a member of the Project Collection Administrator's group, [get added](../../security/set-project-collection-level-permissions.md). 
+- If you aren't the account owner or a member of the Project Collection Administrator's group, [get added](../../organizations/security/set-project-collection-level-permissions.md). 
 - [Export the process you want to update](import-process/import-process.md) 
 -  If you're new to customizing a process, familiarize yourself with the following resources:
 	- [Customize a process for import to VSTS](import-process/customize-process.md)
@@ -57,7 +58,7 @@ You'll make your changes to your process definition files, and then import that 
 
 ###On-premises XML process model customization sequence 
 You'll first export your work tracking definition files, update them, and then import them to your team project.  
--  If you aren't a member of the Project Administrator or Project Collection Administrator's group, [get added](../../security/set-project-collection-level-permissions.md). 
+-  If you aren't a member of the Project Administrator or Project Collection Administrator's group, [get added](../../organizations/security/set-project-collection-level-permissions.md). 
 -  Update your team project to [enable the latest features](configure-features-after-upgrade.md)
 -  [Export the following objects from your team project](#import-export): 
 	- WIT you want to add to backlogs and boards (if you haven't created it, [do that now](https://msdn.microsoft.com/library/ms404855.aspx))
@@ -288,8 +289,7 @@ WITs that you add to the Task Category show up on the sprint backlogs and task b
 	&lt;FIELD name="Remaining Work" refname="Microsoft.VSTS.Scheduling.RemainingWork" type="Double" reportable="measure" formula="sum"&gt;    
 	   &lt;HELPTEXT&gt;    
 	   An estimate of the work remaining to complete the task (in person hours)  
-	   &lt;/HELPTEXT&gt;    
-	   &lt;HELPTEXT&gt;The discipline to which the task belongs&lt;/HELPTEXT&gt;    
+	   &lt;/HELPTEXT&gt;
 	&lt;/FIELD&gt;    
 	</code></pre> </td>
 	</tr>

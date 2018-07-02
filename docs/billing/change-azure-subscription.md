@@ -22,7 +22,7 @@ If you want to use a different Azure subscription to bill purchases for your VST
 
 The first time that you set up billing for your VSTS account--whether you do this via the Azure portal or as part of making a purchase in the Visual Studio Marketplace, you will need:
 
-1. [VSTS project collection administrator or account owner permissions](../accounts/faq-add-delete-users.md#find-owner)
+1. [VSTS project collection administrator or account owner permissions](../organizations/accounts/faq-add-delete-users.md#find-owner)
 2. [The **owner** or **contributor** role on your Azure subscription](add-backup-billing-managers.md)
 
 To make subsequent edits to paid quantities in your VSTS account, you only need the owner or contributor role on your Azure subscription.
@@ -45,7 +45,7 @@ To make subsequent edits to paid quantities in your VSTS account, you only need 
 
 2. Go to **More services** > **Developer tools** > **VSTS accounts**. Select your VSTS account.
 
- ![More services, Developer tools, VSTS, select your account](_img/_shared/ap_vso_selectlinkedaccount.png)
+ ![More services, Developer tools, VSTS, select your account](_img/_shared/AP_VSO_SelectLinkedOrganization.png)
 
 3. Unlink your VSTS account.
 

@@ -1,6 +1,6 @@
 ---
 title: Understand how Microsoft Release Management works
-description: What is Microsoft Release Management in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+description: DevOps CI CD - What is Microsoft Release Management in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.assetid: 126C3E1C-9DB3-4E46-918D-FF5600BF8FC9
 ms.prod: devops
 ms.technology: devops-cicd
@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2015'
 
 **Release Management** is a service in Visual Studio Team Services (VSTS)
 and Team Foundation Server (TFS 2015.2 and later) and an essential
-element of DevOps that helps your team **continuously deliver** software
+element of DevOps CI/CD that helps your team **continuously deliver** software
 to your customers at a faster pace and with lower risk.
 You can **fully automate** the testing and delivery of your software
 in multiple environments all the way to production, or set up
@@ -130,7 +130,7 @@ Release Management runs the following steps as part of every deployment:
 
 Simply follow these steps:
 
-1. **[Deploy your Azure Web App quickly and simply](../apps/cd/azure/aspnet-core-to-azure-webapp.md)**
+1. **[Create your first build and release](../get-started-designer.md)**
 
 1. **[Set up a multi-stage managed release pipeline](define-multistage-release-process.md)**
     
@@ -138,9 +138,9 @@ Simply follow these steps:
 
 ## Related topics
 
-* [Download Team Foundation Server](https://www.visualstudio.com/products/tfs-overview-vs)
+* [Download Team Foundation Server](https://visualstudio.microsoft.com/products/tfs-overview-vs)
 * [Install and configure Team Foundation Server](/tfs/server/install/get-started)
-* [Sign up for VSTS](https://www.visualstudio.com/products/visual-studio-team-services-vs)
+* [Sign up for VSTS](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs)
 
 [!INCLUDE [rm-help-support-shared](../_shared/rm-help-support-shared.md)]
 

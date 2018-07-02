@@ -170,7 +170,7 @@ When the required reviewers approve the code, you can complete the pull request.
 
 ## Bypass branch policies
 
-In some cases, you need to bypass policy requirements so you can push changes to the branch directly. For these situations, grant the **Exempt from policy enforcement** permission to a user or group. You can scope this permission to an entire project, a repo, or a single branch. Manage this permission along the with other [Git permissions](../security/permissions.md#git-repository-permissions-object-level).  
+In some cases, you need to bypass policy requirements so you can push changes to the branch directly. For these situations, grant the **Exempt from policy enforcement** permission to a user or group. You can scope this permission to an entire project, a repo, or a single branch. Manage this permission along the with other [Git permissions](../organizations/security/permissions.md#git-repository-permissions-object-level).  
 
 ![Exempt from policy enforcement permission](_img/branch-policies/PolicyExemptPermission.png)
 
@@ -232,7 +232,7 @@ No, branch policies are not case-sensitive at this time.
 
 
 #### How can I configure multiple users as required reviewers, but only require that one of them approve?
-You can [add the users to a group](../accounts/add-team-members-vs.md), and then add the group as a reviewer.  Any member of the group can then approve on behalf of the group to meet the policy requirement.
+You can [add the users to a group](../organizations/accounts/add-team-members-vs.md), and then add the group as a reviewer.  Any member of the group can then approve on behalf of the group to meet the policy requirement.
 
 #### I have the exempt from policy permission set, why am I still seeing policy failures in the pull request status?
 Even for users that are exempt from policy enforcement, the configured policies are still evaluated when changes are added to a pull request.  For exempt users, policy status is advisory only and will not block completion of the pull request.

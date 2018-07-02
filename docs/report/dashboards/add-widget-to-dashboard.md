@@ -47,7 +47,7 @@ You can add one or more charts or widgets to your dashboard. You add several wid
 
 ## Connect to the web portal for your team project 
 
-To add a widget to a dashboard, you connect to your team project using a [supported web browser](/tfs/server/compatibility#supported-browsers).  If you don't have a team project yet, create one in [VSTS](../../accounts/create-account-msa-or-work-student.md)<!--- or set one up in an [on-premises TFS](../../accounts/create-team-project.md)-->.
+To add a widget to a dashboard, you connect to your team project using a [supported web browser](/tfs/server/compatibility#supported-browsers).  If you don't have a team project yet, create one in [VSTS](../../organizations/accounts/create-account-msa-or-work-student.md)<!--- or set one up in an [on-premises TFS](../../organizations/accounts/create-team-project.md)-->.
 
 Open a browser window and click the **Dashboards** hub. If you haven't been added as a team member, [get added now](../../work/scale/multiple-teams.md#add-team-members).
 
@@ -70,7 +70,7 @@ All dashboards are associated with a team. You need to be a team administrator, 
 
 ::: moniker range="vsts"
 
-To enable the New Dashboard experience, see [Enable preview features](../../collaborate/preview-features.md).  
+To enable the New Dashboard experience, see [Enable preview features](../../project/navigation/preview-features.md).  
 
 1. From the **Dashboards** hub, open the selector and choose  the **Browse all dashboards** option. 
  
@@ -122,7 +122,7 @@ Widget images may vary depending on which platform you access. This topic shows 
 
 ::: moniker range="vsts"
 
-To enable the New Dashboard experience, see [Enable preview features](../../collaborate/preview-features.md).  
+To enable the New Dashboard experience, see [Enable preview features](../../project/navigation/preview-features.md).  
 
 To add widgets to the dashboard, click ![Edit dashboard icon](_img/icons/edit-icon.png). 
 

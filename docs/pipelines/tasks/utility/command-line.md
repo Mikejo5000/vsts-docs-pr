@@ -25,9 +25,11 @@ monikerRange: '>= tfs-2015'
 
 None
 
-::: moniker range="vsts"
+::: moniker range=">tfs-2018"
 
-[!INCLUDE [temp](../_shared/yaml/CmdLineV2.2.md)]
+## YAML snippet
+
+[!INCLUDE [temp](../_shared/yaml/CmdLineV2.md)]
 
 ::: moniker-end
 
@@ -123,7 +125,11 @@ On the Build tab of a build definition, add these tasks:
 
 </table>
 
-## Q&A
+## Open source
+
+This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+
+## Q & A
 
 <!-- BEGINSECTION class="md-qanda" -->
 

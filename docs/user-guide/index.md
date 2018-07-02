@@ -35,13 +35,13 @@ Get started with a free account, share your code using Git, and track your work 
 - [Plan & track work](plan-track-work.md)
 - [Add and run manual tests](add-run-manual-tests.md)
 - [Install a Marketplace extension](../marketplace/install-vsts-extension.md)
-- [View permissions](../security/view-permissions.md)
+- [View permissions](../organizations/security/view-permissions.md)
 
 ## Step-by-Step Tutorials
 
-- [Set favorites](/vsts/collaborate/set-favorites?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
-- [Follow work and pull requests](../collaborate/follow-work-items.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
-- [Get started as a Stakeholder](../security/get-started-stakeholder.md)
+- [Set favorites](/vsts/project/navigation/set-favorites?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
+- [Follow work and pull requests](../work/work-items/follow-work-items.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
+- [Get started as a Stakeholder](../organizations/security/get-started-stakeholder.md)
 
 ## Concepts
 
@@ -54,21 +54,21 @@ Get started with a free account, share your code using Git, and track your work 
 
 ## How-to Guides
 
-- [Enable preview features](../collaborate/preview-features.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
+- [Enable preview features](../project/navigation/preview-features.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
 - [Use @mentions to further discussion](../notifications/at-mentions.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
 - [Use #ID to link to work items](https://docs.microsoft.com/en-us/vsts/notifications/add-links-to-work-items?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json&view=vsts)
 - [Navigate using your account home page](account-home-pages.md)
-- [Go mobile](../collaborate/mobile-work.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
+- [Go mobile](../project/navigation/mobile-work.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
 - [Manage your notifications](https://docs.microsoft.com/en-us/vsts/notifications/manage-personal-notifications?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json&view=vsts)
-- [Set your preferences](../accounts/account-preferences.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
+- [Set your preferences](../organizations/settings/set-user-preferences.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
 - [Sign in to the web or a client](connect-team-projects.md)
 
 ## Reference
 
 - Features index
-- [Permissions and access](../security/permissions-access.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
-- [Keyboard shortcuts](../collaborate/keyboard-shortcuts.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
-- [Markdown guidance](../collaborate/markdown-guidance.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
+- [Permissions and access](../organizations/security/permissions-access.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
+- [Keyboard shortcuts](../project/navigation/keyboard-shortcuts.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
+- [Markdown guidance](../project/wiki/markdown-guidance.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
 - [Navigate in the web portal](work-web-portal.md)
 - [Navigate in Team Explorer](work-team-explorer.md)
 - [FAQs](faqs.md)
@@ -78,6 +78,6 @@ Get started with a free account, share your code using Git, and track your work 
 - [Visual Studio IDE](https://docs.microsoft.com/visualstudio/)
 - [Visual Studio Code](https://code.visualstudio.com/docs)
 - [Visual Studio for Mac](https://docs.microsoft.com/visualstudio/mac)
-- [Account Management](https://docs.microsoft.com/en-us/vsts/accounts/?view=vsts)
-- [Security & Identity](https://docs.microsoft.com/en-us/vsts/security/?view=vsts)
+- [Account Management](https://docs.microsoft.com/en-us/vsts/organizations/accounts/?view=vsts)
+- [Security & Identity](https://docs.microsoft.com/en-us/vsts/organizations/security/?view=vsts)
 - [Technical articles](https://docs.microsoft.com/en-us/vsts/articles/?view=vsts)

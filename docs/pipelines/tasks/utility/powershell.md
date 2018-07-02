@@ -23,9 +23,11 @@ monikerRange: '>= tfs-2015'
 
 DotNetFramework
 
-::: moniker range="vsts"
+::: moniker range=">tfs-2018"
 
-[!INCLUDE [temp](../_shared/yaml/PowerShellV2.2.md)]
+## YAML snippet
+
+[!INCLUDE [temp](../_shared/yaml/PowerShellV2.md)]
 
 ::: moniker-end
 
@@ -146,7 +148,11 @@ Write-Error "$("the Write-Error PowerShell command reported that") $($env:ErrorM
 
 [Use a script to customize your build process](../../scripts/powershell.md)
 
-## Q&A
+## Open source
+
+This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+
+## Q & A
 
 <!-- BEGINSECTION class="md-qanda" -->
 

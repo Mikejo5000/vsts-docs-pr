@@ -19,7 +19,7 @@ monikerRange: '>= tfs-2015'
 
 Artifacts are the files that you want your build to produce. Artifacts can be nearly anything your team needs to test or deploy your app. For example, you've got a .DLL and .EXE executable files and .PDB symbols file of a C# or C++ .NET Windows app.
 
-Release Management can pick up and use your build artifacts as part of of a continuous integration (CI)/ continuous deployment (CD) process. In this scenario, you're automatically building a web app with each commit using your CI build. Your CD release process picks up the .ZIP (ASP.NET or Node.js) or .WAR (Java) web deployment file. Your changes are automatically deployed to a test environment in Azure.
+Release Management can pick up and use your build artifacts as part of a continuous integration (CI)/ continuous deployment (CD) process. In this scenario, you're automatically building a web app with each commit using your CI build. Your CD release process picks up the .ZIP (ASP.NET or Node.js) or .WAR (Java) web deployment file. Your changes are automatically deployed to a test environment in Azure.
 
 ## Examples
 
@@ -172,7 +172,7 @@ From here you can explore or download the artifacts.
 
 You can also use Release Management to deploy your app using the artifacts that you've published. See [Artifacts in Release Management](../release/artifacts.md).
 
-## Q&A
+## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
 
 <h3 id="tfs-2015">How do I publish artifacts from TFS 2015 RTM?</h3>

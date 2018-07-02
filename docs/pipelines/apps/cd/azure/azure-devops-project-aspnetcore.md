@@ -24,7 +24,7 @@ monikerRange: 'vsts'
 
 Configure continuous integration (CI) and continuous delivery (CD) for your .NET core or ASP.NET application with The **Azure DevOps Project**.  The Azure DevOps project simplifies the initial configuration of a VSTS build and release pipeline.
 
-If you don't have an Azure subscription, you can get one free through [Visual Studio Dev Essentials](https://www.visualstudio.com/dev-essentials/).
+If you don't have an Azure subscription, you can get one free through [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/).
 
 ## Sign in to the Azure portal
 
@@ -126,3 +126,7 @@ To learn more about modifying the build and release definitions to meet the need
 
 > [!div class="nextstepaction"]
 > [Customize CD process](../../../release/define-multistage-release-process.md)
+
+## Videos
+
+> [!VIDEO https://www.youtube.com/embed/itwqMf9aR0w]

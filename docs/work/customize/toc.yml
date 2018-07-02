@@ -7,9 +7,9 @@
 - name: Quickstarts
   items:
   - name: Define area paths
-    href: set-area-paths.md
+    href: ../../organizations/settings/set-area-paths.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
   - name: Define iteration paths or sprints
-    href: set-iteration-paths-sprints.md
+    href: ../../organizations/settings/set-iteration-paths-sprints.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
   - name: Add a custom field
     href: ../../organizations/settings/work/add-custom-field.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
   - name: Add a custom work item type
@@ -23,7 +23,7 @@
 - name: Concepts
   items:
   - name: "About areas & iterations"
-    href: about-areas-iterations.md
+    href: ../../organizations/settings/about-areas-iterations.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
   - name: Differences between process models
     href: import-process/differences.md 
   - name: "Workflow states & state categories"
@@ -35,12 +35,12 @@
 - name: How-to Guides
   items:
   - name: "Manage permissions (Security)"
-    href: ../../security/set-permissions-access-work-tracking.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json 
+    href: ../../organizations/security/set-permissions-access-work-tracking.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json 
   - name: Configure team settings
     href: ../scale/manage-team-assets.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json   
     items:
     - name: Set team defaults
-      href: ../scale/set-team-defaults.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json  
+      href: ../../organizations/settings/set-team-defaults.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: Customize cards on boards
       href: customize-cards.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json  
     - name: Reorder cards
@@ -71,6 +71,12 @@
   - name: Hosted XML process model
     href: hosted-xml-process-model.md
     items:
+    - name: Supported upgrade operations
+      href: ../../organizations/settings/work/upgrade-support-hosted-to-inherited.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+    - name: Upgrade a Hosted XML process to Inheritance
+      href: ../../organizations/settings/work/upgrade-hosted-to-inherited.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+    - name: Change a project from Hosted XML to Inheritance
+      href: ../../organizations/settings/work/change-process-from-hosted-to-inherited.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: Customize a Hosted XML process
       href: import-process/customize-process.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: Import a process
@@ -159,13 +165,13 @@
 - name: Reference
   items:
   - name: "Default permissions & access (Security)"
-    href: ../../security/permissions-access-work-tracking.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+    href: ../../organizations/security/permissions-access-work-tracking.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
   - name: Changes made to process templates
     href: ../work-items/guidance/changes-to-process-templates.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
   - name: Work tracking object limits
     href: object-limits.md
   - name: Naming restrictions
-    href: ../../collaborate/naming-restrictions.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+    href: ../../organizations/settings/naming-restrictions.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
   - name: Work tracking XML element reference
     items:
     - name: XML element reference
@@ -346,7 +352,7 @@
   - name: "Scale & Configure Teams"
     href: ../../organizations/settings/index.md
   - name: Account Management (VSTS)
-    href: ../../accounts/index.md
+    href: ../../organizations/accounts/index.md
   - name: Marketplace extensions
     href: ../../marketplace/get-vsts-extensions.md
   - name: Extensibility and REST APIs

@@ -45,7 +45,7 @@ Normal release cadence for new TFS versions is once every three-to-four months. 
 
 The following features can be included with your import, but are currently in a preview state. 
 
-* [Package Management](https://www.visualstudio.com/team-services/package-management/)
+* [Package Management](https://visualstudio.microsoft.com/team-services/package-management/)
 
 When queueing an import you can elect to include preview features with your import. If you do, data related to these features will be copied into your new VSTS account along with all your other data. Should you choose to not include these features then their data will not be copied.
 
@@ -101,10 +101,12 @@ A: Yes. For data import accounts, VSTS supports team projects that use  Inherita
 * [Inheritance Process Model](../organizations/settings/work/manage-process.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json)
 * [Hosted XML](../work/customize/import-process/import-process.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json)
 
-
 #### Q: If I have feedback or additional questions is there somewhere I can reach out?
 
 A: Yes, you can contact [vstsdataimport@microsoft.com](mailto:vstsdataimport@microsoft.com). Please note that this alias is for general questions. If you need assistance with a failed import please contact VSTS\TFS [customer support](https://aka.ms/vstscustomersupport). 
+
+## Videos 
+> [!VIDEO https://channel9.msdn.com/Events/Ignite/Microsoft-Ignite-Orlando-2017/BRK3199/player]
 
 <!-- ENDSECTION --> 
 

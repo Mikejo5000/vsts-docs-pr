@@ -244,7 +244,7 @@ Here are a few examples of the kinds of apps you can build:
 
 * [Build your ASP.NET 4 app](../apps/aspnet/build-aspnet-4.md).
 
-* [Build your ASP.NET Core app](../apps/aspnet/build-aspnet-core.md)
+* Build your ASP.NET Core app
 
 * [Build your Universal Windows Platform app](../apps/windows/universal.md)
 
@@ -319,7 +319,7 @@ In XAML builds, if you change the template, then you also change the behavior of
 
 If you want to create a reusable and automatically updated piece of logic, then [create a task group](../library/task-groups.md). You can then later modify the task group in one place and cause all the definitions that use it to automatically be changed.
 
-## Q&A
+## Q & A
 
 <!-- BEGINSECTION class="md-qanda" -->
 
@@ -341,7 +341,7 @@ If you're not yet ready to migrate, then to enable XAML builds you must connect 
 
 If you're not yet ready to migrate, then to enable XAML builds:  
 
-1. Install [TFS 2018.2](https://www.visualstudio.com/downloads/?q=tfs).
+1. Install [TFS 2018.2](https://visualstudio.microsoft.com/downloads/?q=tfs).
 
 1. Connect your XAML build servers to your TFS instance. See [Configure and manage your build system](https://msdn.microsoft.com/en-us/library/ms252495%28v=vs.120%29.aspx).
 

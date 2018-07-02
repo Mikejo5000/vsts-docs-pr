@@ -1,5 +1,6 @@
 # [Features timeline](index.md)
 # 2018
+## [June 19](2018/jun-19-vsts.md)
 ## [May 30](2018/may-30-vsts.md)
 ## [May 7](2018/may-07-vsts.md)
 ## [April 16](2018/apr-16-vsts.md)
@@ -119,4 +120,4 @@
 ## [August 27](2012/aug-27-team-services.md)
 ## [August 13](2012/aug-13-team-services.md)
 ## [August 6](2012/aug-06-team-services.md)
-# [Subscribe to Updates](https://www.visualstudio.com/team-services/release-notes-feed/?feed=release-notes-feed)
+# [Subscribe to Updates](https://visualstudio.microsoft.com/team-services/release-notes-feed/?feed=release-notes-feed)

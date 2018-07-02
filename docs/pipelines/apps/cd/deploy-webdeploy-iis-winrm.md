@@ -31,7 +31,7 @@ Before you begin, you'll need a CI build that publishes your Web Deploy package.
 
 * [Build your ASP.NET 4 app](../aspnet/build-aspnet-4.md)
 
-* [Build your ASP.NET Core app](../aspnet/build-aspnet-core.md)
+* [Build your ASP.NET Core app](../../languages/dotnet-core.md)
 
 * [Build your Node app with Gulp](../nodejs/build-gulp.md)
 
@@ -190,7 +190,7 @@ You're now ready to create a release, which means to start the process of runnin
 
 [!INCLUDE [simple-create-release](../_shared/simple-create-release.md)]
 
-## Q&A
+## Q & A
 
 <!-- BEGINSECTION class="md-qanda" -->
 

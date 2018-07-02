@@ -35,11 +35,6 @@ List bugs, user stories, or other work items based on field criteria you specify
 - [Bulk modify work items](../backlogs/bulk-modify-work-items.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json)
 
 
-## Concepts
-
-- [New queries experience](queries-preview.md)
-
-
 ## Samples
 
 - [Query by title, ID, or description](titles-ids-descriptions.md)
@@ -64,8 +59,8 @@ List bugs, user stories, or other work items based on field criteria you specify
 - [Query fields, operators & macros](query-operators-variables.md)      
 - [Query keyboard shortcuts](queries-keyboard-shortcuts.md)
 - [Work item field index](../work-items/guidance/work-item-field.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json) 
-- [WIQL syntax](../../collaborate/wiql-syntax.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json)
-- [Permissions and access for work tracking](../../security/permissions-access-work-tracking.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json)
+- [WIQL syntax](wiql-syntax.md)
+- [Permissions and access for work tracking](../../organizations/security/permissions-access-work-tracking.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json)
  
 
  

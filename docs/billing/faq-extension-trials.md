@@ -70,7 +70,7 @@ assign Package Management to 11 total users in your account.
 
 - [Assign features or extensions to users](../marketplace/assign-paid-extensions.md)
 - [Buy or change the number of paid users for a feature or extension](../billing/change-number-paid-extension-users.md)
-- [Set up billing](set-up-billing-for-your-account-vs.md)
+- [Set up billing](set-up-billing-for-your-organization-vs.md)
 - [Change the Azure subscription for billing](change-azure-subscription.md)
 - [VSTS pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
-- [VSTS billing support](https://www.visualstudio.com/team-services/support/)
+- [VSTS billing support](https://visualstudio.microsoft.com/team-services/support/)

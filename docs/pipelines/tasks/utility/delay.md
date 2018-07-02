@@ -22,9 +22,11 @@ monikerRange: 'vsts'
 
 Can be used in only an [agentless phase](../../process/server-phases.md) of a release definition.
 
-::: moniker range="vsts"
+::: moniker range=">tfs-2018"
 
-[!INCLUDE [temp](../_shared/yaml/DelayV1.1.md)]
+## YAML snippet
+
+[!INCLUDE [temp](../_shared/yaml/DelayV1.md)]
 
 ::: moniker-end
 
@@ -37,6 +39,10 @@ Can be used in only an [agentless phase](../../process/server-phases.md) of a re
 | **Control options** | See [Control options](../../process/tasks.md#controloptions) |
 
 Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/Delay). 
+
+## Open source
+
+This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
 
 ## Q & A
 

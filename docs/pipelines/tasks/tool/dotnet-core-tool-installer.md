@@ -15,9 +15,11 @@ monikerRange: 'vsts'
 
 ![](_img/dotnetcoreinstaller.png) Acquires a specific version of .NET Core from internet or the tools cache and adds it to the PATH. Use this task to change the version of .NET Core used in subsequent tasks.
 
-::: moniker range="vsts"
+::: moniker range=">tfs-2018"
 
-[!INCLUDE [temp](../_shared/yaml/DotNetCoreInstallerV0.0.md)]
+## YAML snippet
+
+[!INCLUDE [temp](../_shared/yaml/DotNetCoreInstallerV0.md)]
 
 ::: moniker-end
 
@@ -29,7 +31,11 @@ monikerRange: 'vsts'
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
-## Q&A
+## Open source
+
+This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+
+## Q & A
 
 <!-- BEGINSECTION class="md-qanda" -->
 

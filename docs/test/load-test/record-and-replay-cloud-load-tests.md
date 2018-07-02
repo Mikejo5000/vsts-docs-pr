@@ -21,12 +21,12 @@ using an HTTP Archive file and Visual Studio Team Services (VSTS).
 
 Before you start:
 
-* [Create a VSTS account](https://www.visualstudio.com/products/visual-studio-team-services-vs), 
+* [Create a VSTS account](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs), 
   if you don't have one already. 
 
 * You can use your monthly free 20,000 virtual user minutes (VUM) allowance to try it. 
   If you want to use load testing beyond this, you can
-  [set up billing](../../billing/set-up-billing-for-your-account-vs.md) for your VSTS account.
+  [set up billing](../../billing/set-up-billing-for-your-organization-vs.md) for your VSTS account.
 
 ## About HTTP Archive testing
 

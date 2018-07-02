@@ -44,9 +44,11 @@ This task requires the target computer to have:
 
 [!INCLUDE[deploy-winrm-setup](../_shared/deploy-winrm-setup.md)]
 
-::: moniker range="vsts"
+::: moniker range=">tfs-2018"
 
-[!INCLUDE [temp](../_shared/yaml/DeployVisualStudioTestAgentV2.2.md)]
+## YAML snippet
+
+[!INCLUDE [temp](../_shared/yaml/DeployVisualStudioTestAgentV2.md)]
 
 ::: moniker-end
 
@@ -144,7 +146,11 @@ The supported options for these scenarios are:
 * [Windows Machine File Copy](../deploy/windows-machine-file-copy.md)
 * [PowerShell on Target Machines](../deploy/powershell-on-target-machines.md)
 
-### Q&A
+### Open source
+
+This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+
+## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
 
 #### When would I use the Enable Data Collection Only option?

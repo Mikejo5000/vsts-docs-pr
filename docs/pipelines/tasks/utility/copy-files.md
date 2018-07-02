@@ -22,9 +22,11 @@ monikerRange: '>= tfs-2015'
 
 None
 
-::: moniker range="vsts"
+::: moniker range=">tfs-2018"
 
-[!INCLUDE [temp](../_shared/yaml/CopyFilesV2.2.md)]
+## YAML snippet
+
+[!INCLUDE [temp](../_shared/yaml/CopyFilesV2.md)]
 
 ::: moniker-end
 
@@ -53,7 +55,7 @@ None
 <li>```**\*``` copies all files in the root folder and all files in all sub-folders.</li>
 <li>```**\bin\**``` copies all files recursively from any ```bin``` folder.</li>
 </ul>
-<p>The pattern is used to match only file paths, not folder paths. So you should specify patterns such as ```**\bin\**``` instead of of ```**\bin```.</p>
+<p>The pattern is used to match only file paths, not folder paths. So you should specify patterns such as ```**\bin\**``` instead of ```**\bin```.</p>
 <p>More examples are shown below.</p>
 </td>
 </tr>
@@ -138,6 +140,10 @@ These files are copied to the staging directory:
                 | -- ClassLibrary2.dll
                 | -- ConsoleApplication1.exe
 ```
+
+## Open source
+
+This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
 
 ## Q & A
 

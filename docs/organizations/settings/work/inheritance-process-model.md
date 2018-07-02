@@ -99,7 +99,7 @@ The following picklists are configured for each project and not customizable thr
 - [Area paths](../../../work/customize/set-area-paths.md)  
 - [Iteration paths](../../../work/customize/set-iteration-paths-sprints.md)
 
-Picklists associated with person-name fields, such as Assigned To and Changed By, are managed based on the users you add to a [project or team](../../../accounts/add-team-members-vs.md).   
+Picklists associated with person-name fields, such as Assigned To and Changed By, are managed based on the users you add to a [project or team](../../accounts/add-team-members-vs.md).   
 
 
 <a id="rename-field">  </a>
@@ -133,9 +133,9 @@ With a custom rule, you can define a number of actions based on specific conditi
 - When a change is made to the value of Release, then clear the value of "Milestone"     
 - When a change was made to the value of Remaining Work, then make Completed Work a required field
 - When the value of Approved is True, then make Approved By a required field 
-- When a user story is created, make make the following fields required: Priority, Risk, and  Effort
+- When a user story is created, make the following fields required: Priority, Risk, and  Effort
 
-[!INCLUDE [temp](../_shared/tip-formula-rule.md)]
+[!INCLUDE [temp](../_shared/tip-formula-rule.md)]
 
 For details on defining custom rules, see [Add a rule to a work item type](../../../organizations/settings/work/custom-rules.md). 
 

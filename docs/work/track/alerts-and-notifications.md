@@ -18,7 +18,7 @@ ms.date: 03/20/2018
 <b>TFS 2017 | TFS 2015 | TFS 2013</b> 
 
 > [!IMPORTANT]  
->This topic describes how to manage alerts or email notifications when working from the web portal for an on-premises TFS. If you work in VSTS and TFS 2017.1 or later version, see [Manage your notifications](../../notifications/manage-personal-notifications.md) and  [Manage notifications for a team](../../collaborate/manage-team-notifications.md). 
+>This topic describes how to manage alerts or email notifications when working from the web portal for an on-premises TFS. If you work in VSTS and TFS 2017.1 or later version, see [Manage your notifications](../../notifications/manage-personal-notifications.md) and  [Manage notifications for a team](../../notifications/manage-team-notifications.md). 
 
 As changes occur to work items, code reviews, source control files, and builds, you can receive email notifications for alerts that you define. For example, you can set an alert to be notified whenever a bug that you opened is resolved or a work item is assigned to you. You can set personal alerts or [team alerts](#team-alerts).
 
@@ -91,7 +91,7 @@ As changes occur to work items, code reviews, source control files, and builds, 
 You can set filters for as many as 20 different alert types, specify the email addresses for yourself and other team members, and select the delivery format. Also, you can set team alerts to keep all team members notified of important changes. 
 
 ##Administer alerts for a team project
-To administer alerts for a team project, you must be a member of the Project Collection Administrator or Team Foundation Administrator groups. To get added, see [Add an administrator](../../security/set-project-collection-level-permissions.md). If you're not a member of these groups, you won't see the options available for administering alerts.
+To administer alerts for a team project, you must be a member of the Project Collection Administrator or Team Foundation Administrator groups. To get added, see [Add an administrator](../../organizations/security/set-project-collection-level-permissions.md). If you're not a member of these groups, you won't see the options available for administering alerts.
 
 As an administrator, you can view, create, edit, and delete alerts for team members and teams. 
 
@@ -122,8 +122,8 @@ As an administrator, you can view, create, edit, and delete alerts for team memb
 
 ## Related articles
 
-- [Follow a work item or pull request](../../collaborate/follow-work-items.md)  
+- [Follow a work item or pull request](../work-items/follow-work-items.md)  
 - [Manage your notifications](../../notifications/manage-personal-notifications.md) (VSTS, TFS 2017.1)
-- [Manage notifications for a team](../../collaborate/manage-team-notifications.md) (VSTS, TFS 2017.1) 
-- [Account preferences](../../accounts/account-preferences.md)  
+- [Manage notifications for a team](../../notifications/manage-team-notifications.md) (VSTS, TFS 2017.1) 
+- [Account preferences](../../organizations/settings/set-user-preferences.md)  
 - [Work effectively from your account hub](../../user-guide/account-home-pages.md) (VSTS, TFS 2017.1)

@@ -16,6 +16,8 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [temp](_shared/version.md)]
 
+This topic provides general troubleshooting guidance. For specific troubleshooting about .NET Core, see [.NET Core troubleshooting](languages/dotnet-core.md#troubleshooting)
+
 ## Run commands locally at the command prompt
 It is helpful to narrow whether a build or release failure is the result of a TFS/VSTS product issue (agent or tasks). Build and release failures may also result from external commands.
 
@@ -247,7 +249,7 @@ macOS/Linux:
 
 ## I need more help. I found a bug. I've got a suggestion. Where do I go?
 
-[Get subscription, billing, and technical support](https://www.visualstudio.com/support-overview-vs)
+[Get subscription, billing, and technical support](https://visualstudio.microsoft.com/support-overview-vs)
 
 Report any problems on [Developer Community](https://developercommunity.visualstudio.com/).
 

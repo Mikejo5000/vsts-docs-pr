@@ -24,9 +24,11 @@ monikerRange: '>= tfs-2015'
 
 Xamarin.iOS
 
-::: moniker range="vsts"
+::: moniker range=">tfs-2018"
 
-[!INCLUDE [temp](../_shared/yaml/XamariniOSV2.2.md)]
+## YAML snippet
+
+[!INCLUDE [temp](../_shared/yaml/XamariniOSV2.md)]
 
 ::: moniker-end
 
@@ -129,7 +131,11 @@ Working directory for the build. If you leave it blank, it is the root of the re
 
 [Build your Xamarin app](../../apps/mobile/xamarin.md)
 
-## Q&A
+## Open source
+
+This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+
+## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]

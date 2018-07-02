@@ -25,9 +25,11 @@ The build agent must have the following capability:
 
  * Grunt
 
-::: moniker range="vsts"
+::: moniker range=">tfs-2018"
 
-[!INCLUDE [temp](../_shared/yaml/GruntV0.0.md)]
+## YAML snippet
+
+[!INCLUDE [temp](../_shared/yaml/GruntV0.md)]
 
 ::: moniker-end
 
@@ -69,7 +71,11 @@ The build agent must have the following capability:
 
 See [Sample Gruntfile](http://gruntjs.com/sample-gruntfile).
 
-## Q&A
+## Open source
+
+This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+
+## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]

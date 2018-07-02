@@ -29,9 +29,11 @@ This task can run both PowerShell scripts and PowerShell-DSC scripts.
 
 [!INCLUDE[deploy-winrm-setup](../_shared/deploy-winrm-setup.md)]
 
-::: moniker range="vsts"
+::: moniker range=">tfs-2018"
 
-[!INCLUDE [temp](../_shared/yaml/PowerShellOnTargetMachinesV3.3.md)]
+## YAML snippet
+
+[!INCLUDE [temp](../_shared/yaml/PowerShellOnTargetMachinesV3.md)]
 
 ::: moniker-end
 
@@ -55,7 +57,11 @@ This task can run both PowerShell scripts and PowerShell-DSC scripts.
 
 > Version 3.x of the task includes the **Inline script** setting where you can enter your PowerShell script code.
 
-## Q&A
+## Open source
+
+This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+
+## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [qa-agents](../../_shared/qa-agents.md)]

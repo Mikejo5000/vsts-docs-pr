@@ -30,7 +30,7 @@ New to Git? [Learn more](/azure/devops/git/learn-git-with-team-services) about h
 <div class="col-sm-6 col-md-6">
 
 <p>Connect your favorite development environment to VSTS to access your repos and manage your work.
-VSTS IDE integrations are available for [Visual Studio](../accounts/set-up-vs.md), 
+VSTS IDE integrations are available for [Visual Studio](../organizations/accounts/set-up-vs.md), 
 [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vsts.team), [Eclipse](/vsts/java/download-eclipse-plug-in), 
 and [IntelliJ](/vsts/java/download-intellij-plug-in).</p>
 
@@ -95,7 +95,7 @@ Every task is presented step-by-step in Visual Studio or from the command line.<
 
 <ul>
 <li>[Create](create-new-repo.md), [delete](delete-existing-repo.md), and [rename](repo-rename.md) repos.</li>
-<li>Set [repo permissions](../security/permissions.md) and [branch permissions](branch-permissions.md)</li>
+<li>Set [repo permissions](../organizations/security/permissions.md) and [branch permissions](branch-permissions.md)</li>
 <li>[Set up branch policies](branch-policies.md) to protect key branches</li>
 <li>[Set up continuous integration](../pipelines/build/triggers.md#continuous-integration-ci) to catch bugs sooner.</li>
 </ul>

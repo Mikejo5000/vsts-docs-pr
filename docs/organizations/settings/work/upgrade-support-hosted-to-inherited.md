@@ -16,7 +16,7 @@ ms.date: 05/30/2018
 
 # Supported upgrade operations when moving from Hosted XML to an inherited process   
 
-[!INCLUDE [temp](../../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../../_shared/version-vsts-only.md)]
 
 <a id="hosted-xml-process-model">  </a>
 
@@ -35,14 +35,14 @@ The Inheritance process model supports most customizations, however some of the 
 
 When you upgrade a Hosted XML process to an inherited process, the customizations listed in the following table are preserved.  
 
-> [!div class="mx-tdCol2BreakAll"]  
-> |  Artifact&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| Description |
+> [!div class="mx-tdCol2BreakAll"]
+> |Artifact&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| Description |
 > |------|---------|
 > | Work item types (WITs) | All system and custom WITs are preserved. Customizations made to WIT color and icon are preserved.   | 
 > | Work item fields  | All custom fields are preserved. Fields that reference global lists are updated with picklists. All default values are ignored. To learn more about supported field customizations, see [About process customization and inherited processes, Field customizations](inheritance-process-model.md#field-customizations). |  
 > | Workflow states | All system and custom workflow states are preserved. |
 > | Workflow state categories | All customizations made to the ProcessConfiguration XML file to map a workflow state to a state category (*Proposed, In Progress, Resolved, Completed*) are preserved. Only one workflow state can be assigned to the *Completed* state category. If you have assigned a custom workflow state to the *Completed* state category, it will be preserved upon upgrade.<br/><br/>Any workflow state for a work item type that isn't included in a backlog level will get assigned to the *In Progress* state category. Check all custom workflow states post upgrade. To learn more, see [Workflow states and state categories](../../../work/customize/workflow-and-state-categories.md). |
-> | Work item form layout  | A best effort is made to preserve the customizations made to the web form layout. However, any customizations made to the header area are ignored. | 
+> | Work item form layout  | A best effort is made to preserve the customizations made to the web form layout. However, any customizations made to the header area are ignored. Specifically, the **Weblayout** `ShowEmptyReadOnlyFields` attribute assignment is ignored. | 
 > | Backlog levels | Additions and customizations made to the product backlog and  portfolio backlog levels are preserved.  |
 > | Global lists | Global lists are converted to picklists for individual fields. |  
 > | Default properties | The default properties set for teams that you add to a project are preserved as documented in [Process configuration XML element reference, Specify properties and behaviors](../../../work/customize/reference/process-configuration-xml-element.md#specify-properties-and-behaviors). | 
@@ -50,8 +50,8 @@ When you upgrade a Hosted XML process to an inherited process, the customization
 
 ## Customizations ignored during upgrade  
 
-> [!div class="mx-tdCol2BreakAll"]  
-> |  Artifact&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| Description |
+> [!div class="mx-tdCol2BreakAll"]
+> |Artifact&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| Description |
 > |------|---------|
 > | Header area customization  | Any customizations made to the header area within the work item form are ignored. The header area, as shown in the following image, is managed by the system. Any customizations made within the **SystemControls** section of the **WebLayout** are ignored. <br/><br/>![Work item web form, Header area](_img/migration/header-area.png) |
 > | Four column layout  and size | The inherited process supports a [a fixed relative sizing of three columns](inheritance-process-model.md#resizing) to a WIT layout, while the Hosted XML process supports up to four columns and allows you to set the first column as equal sized with the rest of the columns.  |
@@ -64,7 +64,7 @@ When you upgrade a Hosted XML process to an inherited process, the customization
 > | Extensions | The inherited process supports an opt-out model for custom control extensions, while the Hosted XML process supports an opt-in model. This means that work item types defined within the upgraded inherited process will show all contributions from all installed and enabled extensions. You can selectively hide or remove them as needed. |
 > |Categories | Changes made to a [default category](../../../work/customize/reference/use-categories-to-group-work-item-types.md#default-categories-and-process-configuration) are preserved, but any custom categories are ignored. | 
 
-[!INCLUDE [temp](../_shared/post-upgrade-steps.md)]
+[!INCLUDE [temp](../_shared/post-upgrade-steps.md)]
 
 
 ## Related articles

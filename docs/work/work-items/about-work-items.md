@@ -36,7 +36,7 @@ Each work item supports tracking data contained in work item fields. Also, it ca
 
 Each form contains a number of controls as shown below and described in [Work item form controls](work-item-form-controls.md). 
 
-::: moniker range="vsts || >= tfs-2018"
+::: moniker range=">= tfs-2018"
 ![Work item form to track features or user stories](../backlogs/_img/add-work-item-vsts-user-story-form.png)
 ::: moniker-end
 
@@ -70,7 +70,7 @@ You can only assign a work item to one person at a time. The Assigned To field i
 
 ![Web work item form, Assign to field](../_shared/_img/assign-work-items.png)  
 
-Anyone who has write access to a team project can assign work items to a team member. This includes team members and [stakeholders](../../security/get-started-stakeholder.md).  
+Anyone who has write access to a team project can assign work items to a team member. This includes team members and [stakeholders](../../organizations/security/get-started-stakeholder.md).  
 
 **Note the following:**
 - You can assign a work item only to team members recognized by the system, ones that you have added as team members 
@@ -85,7 +85,7 @@ Anyone who has write access to a team project can assign work items to a team me
 
 When your system is configured with Azure Active Directory (AAD), then the system will synchronize person-name fields with these directories. Person-name fields include Activated By, Assigned To, Closed By, Created By, and Resolved By. 
 
-You can grant access to a team project by adding security groups that you created in AAD or by adding accounts to existing or custom groups defined from the collection setting Security hub. To learn more, see [Access with Azure Active Directory (Azure AD)](../../accounts/add-users-to-aad.md).
+You can grant access to a team project by adding security groups that you created in AAD or by adding accounts to existing or custom groups defined from the collection setting Security hub. To learn more, see [Access with Azure Active Directory (Azure AD)](../../organizations/accounts/add-users-to-aad.md).
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018" 
@@ -165,18 +165,18 @@ Once you have a template defined, you can share it via email or a dashboard. Cop
 
 ## Required permissions
 
-As a member added to the Contributors group of a team project, you can use most features provided under the **Work** hub. If you've been added with stakeholder access, you are limited to certain features. For details, see [Work as a Stakeholder](../../security/get-started-stakeholder.md). 
+As a member added to the Contributors group of a team project, you can use most features provided under the **Work** hub. If you've been added with stakeholder access, you are limited to certain features. For details, see [Work as a Stakeholder](../../organizations/security/get-started-stakeholder.md). 
 
-To learn more about permissions and access, see [Permissions and access for work tracking](../../security/permissions-access-work-tracking.md). 
+To learn more about permissions and access, see [Permissions and access for work tracking](../../organizations/security/permissions-access-work-tracking.md). 
 
 ::: moniker range="vsts" 
-To add team members to a team project, see [Add users to your VSTS account](../../accounts/add-team-members-vs.md).
+To add team members to a team project, see [Add users to your VSTS account](../../organizations/accounts/add-team-members-vs.md).
 ::: moniker-end
 ::: moniker range=">= tfs-2013 <= tfs-2018"
-To add team members to a team project, see [TFS team project](../../security/add-users-team-project.md). 
+To add team members to a team project, see [TFS team project](../../organizations/security/add-users-team-project.md). 
 ::: moniker-end
 
-To learn more about user accounts, permissions, and access, see [Security & Identity](../../security/index.md).
+To learn more about user accounts, permissions, and access, see [Security & Identity](../../organizations/security/index.md).
 <!--- User names you add are all members of the Project Collection Valid Users group.  Also, these names are automatically synchronized with Azure Active Direct or Active Directory when AAD or AD is configured as part of the account (VSTS) or deployment (TFS).-->   
 
 
@@ -186,7 +186,7 @@ You can add work items from various clients, such as:
 - From the web portal backlog pages, you can add user stories, backlog items, features, and epics from the [quick add panel](../backlogs/create-your-backlog.md). 
 - From the [Team Explorer add-in to Visual Studio](../../user-guide/work-team-explorer.md), you can add most types of work items from the Work page.  
 - If you work in [Eclipse](https://eclipse.org/home/newcomers.php), you can create work items using [Team Explorer Everywhere](/vsts/java/download-eclipse-plug-in). 
-- From Test Manager or the web portal, you can can [create test cases that automatically link to a user story or product backlog item](../../test/create-test-cases.md).
+- From Test Manager or the web portal, you can [create test cases that automatically link to a user story or product backlog item](../../test/create-test-cases.md).
 - You can create bugs from the web portal, Visual Studio, or when [testing with Microsoft Test Manager](https://msdn.microsoft.com/library/dd286731.aspx).  
 
 For an overview of all clients that connect to your team project, see [Tools and clients that connect to VSTS and TFS](../../user-guide/tools.md). 

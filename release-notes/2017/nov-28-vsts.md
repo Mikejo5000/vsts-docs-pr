@@ -45,7 +45,7 @@ See the [documentation for deploying to Azure](/vsts/deploy-azure/) for more inf
 ### Configuration as code (YAML) builds in Public Preview ![Build tag](_img/release-notes-tag_build.png)
 
 > [!IMPORTANT]
-> To use this capability, you must have the **Build Yaml definitions** [preview feature](/vsts/collaborate/preview-features) enabled on both your profile and account.
+> To use this capability, you must have the **Build Yaml definitions** [preview feature](/vsts/project/navigation/preview-features) enabled on both your profile and account.
 
 When you define a CI build on VSTS, you’ve now got a fundamental choice: use a web-based interface or configure your CI process as code in a YAML build. YAML build definitions give you the advantages of _configuration as code_.
 
@@ -65,13 +65,13 @@ steps:
 
 After you commit the changes, a build definition is automatically created and queued! Ready to go beyond “hello world”?
 
-- [Get started configuring your CI Build in code using YAML](/vsts/pipelines/actions/build-yaml-get-started)
-- [How to use YAML builds](/vsts/pipelines/actions/build-yaml)
+- [Get started configuring your CI Build in code using YAML](/vsts/build-release/actions/build-yaml-get-started)
+- [How to use YAML builds](/vsts/build-release/actions/build-yaml)
 
 ### Release gates in Public Preview ![Release tag](_img/release-notes-tag_release.png)
 
 > [!IMPORTANT]
-> To use this capability, you must have the **Approval gates in releases** [preview feature](/vsts/collaborate/preview-features) enabled on your profile.
+> To use this capability, you must have the **Approval gates in releases** [preview feature](/vsts/project/navigation/preview-features) enabled on your profile.
 
 Continuous monitoring is an integral part of DevOps pipelines. Ensuring the app in a release is healthy after deployment is as critical as the success of the deployment process. Enterprises adopt various tools for automatic detection of app health in production and for keeping track of customer reported incidents.
 Until now, approvers had to manually monitor the health of the apps from all the systems before promoting the release. However, Release Management now supports integrating continuous monitoring into release pipelines. Use this to ensure the system repeatedly queries all the health signals for the app until all of them are successful at the same time, before continuing the release.
@@ -124,12 +124,12 @@ To learn more, see the [VSTS CLI docs](https://aka.ms/vsts-cli). To view the sou
 
 ### Query last run by information
 
-As your project’s **Shared Queries** tree grows, it can be difficult to determine that a query is no longer being used and can be deleted. To help you manage your **Shared Queries**, we have added two new pieces of metadata to our [query REST APIs](https://www.visualstudio.com/docs/integrate/api/wit/queries#get-a-query-or-folder), last executed by and last executed date, so that you can write clean-up scripts to delete stale queries.
+As your project’s **Shared Queries** tree grows, it can be difficult to determine that a query is no longer being used and can be deleted. To help you manage your **Shared Queries**, we have added two new pieces of metadata to our [query REST APIs](https://visualstudio.microsoft.com/docs/integrate/api/wit/queries#get-a-query-or-folder), last executed by and last executed date, so that you can write clean-up scripts to delete stale queries.
 
 ### Create work items from the Queries hub
 
 > [!IMPORTANT]
-> To use this capability, you must have the **[New Queries Experience](/vsts/work/track/queries-preview)** [preview feature](/vsts/collaborate/preview-features) enabled on your profile.
+> To use this capability, you must have the **[New Queries Experience](/vsts/work/track/view-run-query)** [preview feature](/vsts/project/navigation/preview-features) enabled on your profile.
 
 Easily create work items from the **Queries** hub with the addition of a **+ New** command bar action.
 
@@ -149,7 +149,7 @@ You can now expand or collapse all the items on the sprint **Task board** with j
 
 Often, when migrating work items from another source, organizations want to retain all the original properties of the work item. For example, you may want to create a bug that retains the original created date and created by values from the system where it originated.
 
-The API to [update a work item](https://www.visualstudio.com/docs/integrate/api/wit/work-items#make-an-update-bypassing-rules) has a bypassrule flag to enable that scenario. Previously the identity who made that API request had to be member of the Project Collection Administrators group. With this deployment we have added a permission at the project level to execute the API with the bypassrule flag.
+The API to [update a work item](https://visualstudio.microsoft.com/docs/integrate/api/wit/work-items#make-an-update-bypassing-rules) has a bypassrule flag to enable that scenario. Previously the identity who made that API request had to be member of the Project Collection Administrators group. With this deployment we have added a permission at the project level to execute the API with the bypassrule flag.
 
 > [!div class="mx-imgBorder"]
 ![Grant bypassrule](_img/126_03.png)
@@ -263,7 +263,7 @@ Within **Version Control** administration, if you want to merely edit the reposi
 ### Use VSTS as a symbol server
 
 > [!IMPORTANT]
-> To use this capability, you must have the **Symbol server** [preview feature](/vsts/collaborate/preview-features) enabled on your account.
+> To use this capability, you must have the **Symbol server** [preview feature](/vsts/project/navigation/preview-features) enabled on your account.
 
 VSTS Symbol Server enables you to host and share symbols with your organization. Symbols provide additional information that makes it easier to debug executables, especially those written in native languages like C and C++. See the [documentation for publishing symbols for debugging](/vsts/pipelines/symbols/) for more information.
 
@@ -422,7 +422,7 @@ The Test Platform package on nuget is cross-platform, but VSTest task currently 
 ### Wiki Search
 
 > [!IMPORTANT]
-> To use this capability, you must have the **New experience in Code & Work Item search and new Wiki search** [preview feature](/vsts/collaborate/preview-features) enabled on your profile.
+> To use this capability, you must have the **New experience in Code & Work Item search and new Wiki search** [preview feature](/vsts/project/navigation/preview-features) enabled on your profile.
 
 Over time as teams document more content in wiki pages across multiple projects in VSTS, finding relevant content becomes increasingly difficult. To maximize collaboration, you need the ability to easily discover content across all your projects. Now you can use **Wiki Search** to quickly find relevant wiki pages by title or page content across all projects in your VSTS account.
 

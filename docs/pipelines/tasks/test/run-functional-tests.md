@@ -36,9 +36,11 @@ tests on the build machine.
 
 This task must be preceded by a **Visual Studio Test Agent Deployment** task.
 
-::: moniker range="vsts"
+::: moniker range=">tfs-2018"
 
-[!INCLUDE [temp](../_shared/yaml/RunDistributedTestsV1.1.md)]
+## YAML snippet
+
+[!INCLUDE [temp](../_shared/yaml/RunDistributedTestsV1.md)]
 
 ::: moniker-end
 
@@ -143,7 +145,11 @@ These scenarios are supported for:
 * [PowerShell on Target Machines](../deploy/powershell-on-target-machines.md)
 * [Visual Studio Test Agent Deployment](visual-studio-test-agent-deployment.md)
 
-### Q&A
+### Open source
+
+This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+
+## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [qa-test-azurerg-machine-group](../_shared/qa-test-azurerg-machine-group.md)]

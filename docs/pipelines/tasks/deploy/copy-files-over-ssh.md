@@ -27,9 +27,11 @@ In addition to Linux, macOS is partially supported (see [Q&A](#is-this-task-supp
 * The task supports use of an SSH key pair to connect to the remote machine(s). 
 * The public key must be pre-installed or copied to the remote machine(s).
 
-::: moniker range="vsts"
+::: moniker range=">tfs-2018"
 
-[!INCLUDE [temp](../_shared/yaml/CopyFilesOverSSHV0.0.md)]
+## YAML snippet
+
+[!INCLUDE [temp](../_shared/yaml/CopyFilesOverSSHV0.md)]
 
 ::: moniker-end
 
@@ -54,7 +56,11 @@ In addition to Linux, macOS is partially supported (see [Q&A](#is-this-task-supp
 
 * Blog post [SSH build task](https://blogs.msdn.microsoft.com/visualstudioalm/2016/07/30/ssh-build-task/)
 
-## Q&A
+## Open source
+
+This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+
+## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [qa-agents](../../_shared/qa-agents.md)]

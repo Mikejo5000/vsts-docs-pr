@@ -36,9 +36,11 @@ Symbol servers enables your debugger to automatically retrieve the correct symbo
 
 None
 
-::: moniker range="vsts"
+::: moniker range=">tfs-2018"
 
-[!INCLUDE [temp](../_shared/yaml/PublishSymbols.2.md)]
+## YAML snippet
+
+[!INCLUDE [temp](../_shared/yaml/PublishSymbolsV2.md)]
 
 ::: moniker-end
 
@@ -195,7 +197,11 @@ C:\BuildAgent\_work\1\src\MyApp\SomeHelper.cs*TFS_COLLECTION*TFS_TEAM_PROJECT*TF
 TFS_COLLECTION=http://DIFFERENT_SERVER:8080/tfs/DifferentCollection
 ```
 
-## Q&A
+## Open source
+
+This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+
+## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
 
 ### How does indexing work?

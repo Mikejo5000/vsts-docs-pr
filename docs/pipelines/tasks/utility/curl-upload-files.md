@@ -23,9 +23,11 @@ monikerRange: '>= tfs-2015'
 
 curl
 
-::: moniker range="vsts"
+::: moniker range=">tfs-2018"
 
-[!INCLUDE [temp](../_shared/yaml/CUrlUploaderV2.2.md)]
+## YAML snippet
+
+[!INCLUDE [temp](../_shared/yaml/CUrlUploaderV2.md)]
 
 ::: moniker-end
 
@@ -84,7 +86,11 @@ Arguments to pass to cURL.
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
-## Q&A
+## Open source
+
+This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+
+## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [include](../_shared/qa-minimatch.md)]

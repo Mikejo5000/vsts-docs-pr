@@ -73,8 +73,8 @@ At this point, the data will update on your scheduled basis using the credential
 
 - [Analytics Service](index.md)  
 - [Client Authentication Options](../analytics/client-authentication-options.md)
-- [Authenticate your identity with personal access tokens](../../accounts/use-personal-access-tokens-to-authenticate.md)  
+- [Authenticate your identity with personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md)  
 - [Access data through Excel](../analytics/access-analytics-excel.md)  
 - [Access data through Power BI desktop](access-analytics-power-bi.md)  
 
-[!INCLUDE [temp](../../_shared/help-support-shared.md)] 
+[!INCLUDE [temp](../../_shared/help-support-shared.md)] 

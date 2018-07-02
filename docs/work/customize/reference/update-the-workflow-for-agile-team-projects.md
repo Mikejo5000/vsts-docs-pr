@@ -36,7 +36,7 @@ Task board for an Agile team project without the recommended manual updates
   
 **Requirements**  
   
-To run the **witadmin** command-line tool, you must be a member of one of the following groups: **Team Foundation Administrators**, **Project Collection Administrators**, or **Project Administrators** group for the team project. See [Add administrators, set permissions at the project-level or project collection-level](../../../security/set-project-collection-level-permissions.md).  
+To run the **witadmin** command-line tool, you must be a member of one of the following groups: **Team Foundation Administrators**, **Project Collection Administrators**, or **Project Administrators** group for the team project. See [Add administrators, set permissions at the project-level or project collection-level](../../../organizations/security/set-project-collection-level-permissions.md).  
   
 <a name="agile_updates"></a> 
 ##Update the workflow and metastates
@@ -368,4 +368,4 @@ To run the **witadmin** command-line tool, you must be a member of one of the fo
      ![Agile task board with updated workflow](_img/alm_vrf_taskboard_agile_v6.png "ALM_VRF_TaskBoard_Agile_V6")  
 Task board for an Agile team project with the updated workflow states  
   
-     To learn more about using the task board, see [Sprint planning](../../scrum/sprint-planning.md).
+     To learn more about using the task board, see [Sprint planning](../../scrum/assign-work-sprint.md).

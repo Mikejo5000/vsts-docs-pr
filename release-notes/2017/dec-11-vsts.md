@@ -53,14 +53,14 @@ We are moving our SSH implementation to use Azure Traffic Manager for more effic
 
 ### Generate YAML templates from existing build definitions
 
-Last month at the [Connect(); 2017 event](https://www.microsoft.com/connectevent) we announced the public preview of [YAML builds](/vsts/pipelines/actions/build-yaml-get-started) that enable you to configure your build process as a YAML file checked in with your code rather than with the graphical build definition editor. We’ve now made it simpler for you to convert your build definitions in the web UI into a YAML file. In the build definition editor for your build, you can select the **Process** tab on the left and then click the **View YAML** link in the pane on the right. Copy the text to the clipboard and check in a file with the contents into your repo. Then configure a new build YAML based build definition that references the checked in file.
+Last month at the [Connect(); 2017 event](https://www.microsoft.com/connectevent) we announced the public preview of [YAML builds](/vsts/build-release/actions/build-yaml-get-started) that enable you to configure your build process as a YAML file checked in with your code rather than with the graphical build definition editor. We’ve now made it simpler for you to convert your build definitions in the web UI into a YAML file. In the build definition editor for your build, you can select the **Process** tab on the left and then click the **View YAML** link in the pane on the right. Copy the text to the clipboard and check in a file with the contents into your repo. Then configure a new build YAML based build definition that references the checked in file.
 
 This can also be used as a good way to learn YAML quickly. You can create a new build definition using the appropriate template for your app and examine the YAML to understand the mapping between what you’re used to and the new YAML constructs.
 
 ### Enhancements to multi-phase builds
 
 > [!IMPORTANT]
-> To use this capability, you must have the **Build with multiple queues** [preview feature](/vsts/collaborate/preview-features) enabled on your account.
+> To use this capability, you must have the **Build with multiple queues** [preview feature](/vsts/project/navigation/preview-features) enabled on your account.
 
 A few weeks ago, we added phases to build definitions. You’ve been able to use phases to organize your build steps and to target different agents using different demands for each phase. In this Update, we’ve added several capabilities to build phases so that you can now:
 
@@ -170,7 +170,7 @@ This includes:
 The following pre-requisites are needed:
 
 1. Visual Studio 2017.6 or higher. If you are using the [Test Platform Installer](/vsts/release-notes/2017/nov-28-vsts#test) task to run tests using the VSTest task, make sure you pick the appropriate version of the package.
-2. Create a [PAT](/vsts/accounts/use-personal-access-tokens-to-authenticate?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json) that is authorized for the scope “Work Items (full)”.
+2. Create a [PAT](/vsts/accounts/use-personal-access-tokens-to-authenticate?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json) that is authorized for the scope “Work Items (full)”.
 3. Add a secure Build or Release variable called Test.TestCaseAccessToken with the value set to the PAT created in step 2.
 
 Note that tests that use TestCase as a data source cannot be used with the **Run Functional Tests** task.

@@ -45,18 +45,18 @@ The Free Tier includes:
 
 The first time that you set up billing for your VSTS account - whether you do this via the Azure portal or as part of making a purchase in the Visual Studio Marketplace, you will need:
 
-* [VSTS project collection administrator or account owner permissions](../accounts/faq-add-delete-users.md#find-owner)
+* [VSTS project collection administrator or account owner permissions](../organizations/accounts/faq-add-delete-users.md#find-owner)
 * [The **owner** or **contributor** role on your Azure subscription](add-backup-billing-managers.md)
 
 You will also need these same permissions/roles to make subsequent changes, such as changing paid quantities or adding additional paid services in your VSTS account.
 
 ## Next steps
 
-* [Set up billing](set-up-billing-for-your-account-vs.md)
+* [Set up billing](set-up-billing-for-your-organization-vs.md)
 * [Add a backup billing manager](add-backup-billing-managers.md)
 * [Change the Azure subscription for billing](change-azure-subscription.md)
 
 ## Related articles
 
 * [VSTS pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
-* [VSTS billing support](https://www.visualstudio.com/team-services/support/)
+* [VSTS billing support](https://visualstudio.microsoft.com/team-services/support/)

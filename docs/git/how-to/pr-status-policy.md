@@ -8,20 +8,20 @@ ms.manager: douge
 ms.author: mmitrik
 author: mmitrik
 ms.topic: conceptual
-ms.date: 03/14/2018
-monikerRange: 'vsts'
+ms.date: 06/18/2018
+monikerRange: '>= tfs-2018'
 ---
 
 
 # Configure a branch policy for an external service 
 
-#### VSTS
+#### VSTS | TFS 2018 Update 2
 
 Branch policies are a powerful feature to ensure high quality code in your repo by establishing requirements for all pull requests. External services can use the PR [Status API](https://go.microsoft.com/fwlink/?linkid=854107) to post detailed status to your PRs. The branch policy for external services brings the ability for those 3rd party services to participate in the PR workflow and establish policy requirements. This article guides you through the process of configuring a branch policy for a service that is posting PR status. For more information about PR status, see [Customize and extend pull request workflows with pull request status](../concepts/pull-request-status.md).
 
 ## Prerequisites
 
-* A VSTS account with a Git repo. If you don't have a VSTS account, [sign up](../../accounts/create-account-msa-or-work-student.md) to upload and share code in free unlimited private Git repositories.
+* A VSTS account with a Git repo. If you don't have a VSTS account, [sign up](../../organizations/accounts/create-account-msa-or-work-student.md) to upload and share code in free unlimited private Git repositories.
 * A service that posts status to PRs. See [Create a pull request status server](https://go.microsoft.com/fwlink/?linkid=854108).
 
 ## Configure the branch policy 
@@ -46,7 +46,7 @@ Branch policies are a powerful feature to ensure high quality code in your repo 
 
 ## Create a new pull request
 
-1. Create a new pull request into the branch where the policy is defined. For more information, see [Create a pull request](https://review.docs.microsoft.com/en-us/vsts/git/tutorial/pullrequest).
+1. Create a new pull request into the branch where the policy is defined. For more information, see [Create a pull request](../tutorial/pullrequest.md).
 
 2. After creating the PR, the new policy will appear in the Policies section of the PR details view. Initially, the policy will appear as not set until the external service has posted status. 
 

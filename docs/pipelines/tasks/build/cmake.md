@@ -23,9 +23,11 @@ monikerRange: '>= tfs-2015'
 
 cmake
 
-::: moniker range="vsts"
+::: moniker range=">tfs-2018"
 
-[!INCLUDE [temp](../_shared/yaml/CMakeV1.1.md)]
+## YAML snippet
+
+[!INCLUDE [temp](../_shared/yaml/CMakeV1.md)]
 
 ::: moniker-end
 
@@ -56,7 +58,11 @@ Arguments that you want to pass to CMake.
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
-## Q&A
+## Open source
+
+This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+
+## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
 
 ### How do I enable CMake for Microsoft-hosted agents?

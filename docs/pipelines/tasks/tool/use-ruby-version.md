@@ -26,9 +26,11 @@ None
 
 This task will fail if no Ruby versions are found in the tool cache.
 
-::: moniker range="vsts"
+::: moniker range=">tfs-2018"
 
-[!INCLUDE [temp](../_shared/yaml/UseRubyVersionV0.0.md)]
+## YAML snippet
+
+[!INCLUDE [temp](../_shared/yaml/UseRubyVersionV0.md)]
 
 ::: moniker-end
 
@@ -41,7 +43,11 @@ This task will fail if no Ruby versions are found in the tool cache.
 
 If the task completes successfully, the task's output variable will contain the directory of the Ruby installation.
 
-## Q&A
+## Open source
+
+This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+
+## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
 
 ### Where can I learn more about tool installers?

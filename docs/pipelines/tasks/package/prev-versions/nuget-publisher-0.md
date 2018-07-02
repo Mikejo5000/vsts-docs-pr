@@ -19,7 +19,13 @@ ms.date: 08/10/2016
 
 None
 
-[!INCLUDE [temp](../../_shared/yaml/NuGetPublisherV0.0.md)]
+::: moniker range=">tfs-2018"
+
+## YAML snippet
+
+[!INCLUDE [temp](../../_shared/yaml/NuGetPublisherV0.md)]
+
+::: moniker-end
 
 ## Arguments
 

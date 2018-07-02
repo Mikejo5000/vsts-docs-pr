@@ -27,13 +27,13 @@ In our source based web views, we have rich syntax highlighting for code. Today 
 
 ##Color Picking in Charts
 
-In the [last deployment](https://www.visualstudio.com/en-us/articles/news/2013/sep-09-team-services), we added a new work item chart feature. By popular demand, we now allow you to edit the colors for each series on a chart. Simply click on a series in the chart and pick a color from the color picker.
+In the [last deployment](https://visualstudio.microsoft.com/en-us/articles/news/2013/sep-09-team-services), we added a new work item chart feature. By popular demand, we now allow you to edit the colors for each series on a chart. Simply click on a series in the chart and pick a color from the color picker.
 
 ![Color picker for charts](_img/9_30_01.png)
 
 ##Column Options for the Test Case Grid View
 
-Also in the [last deployment](/news/2013/sep-9-team-services.md), we enabled the grid view for easy authoring of test cases. In this deployment, we are enhancing the grid view to support more test case work item fields. The "Column Options" controls what fields you will see in both the list view and the grid view.
+Also in the [last deployment](../2013/sep-09-team-services.md), we enabled the grid view for easy authoring of test cases. In this deployment, we are enhancing the grid view to support more test case work item fields. The "Column Options" controls what fields you will see in both the list view and the grid view.
 
 ![More fields in the grid view](_img/9_30_02.png)
 

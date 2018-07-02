@@ -15,9 +15,11 @@ monikerRange: 'vsts'
 
 ![](_img/kubernetes.png) Deploy, configure, update your Kubernetes cluster in Azure Container Service by running kubectl commands.
 
-::: moniker range="vsts"
+::: moniker range=">tfs-2018"
 
-[!INCLUDE [temp](../_shared/yaml/Kubernetes.0.md)]
+## YAML snippet
+
+[!INCLUDE [temp](../_shared/yaml/KubernetesV1.md)]
 
 ::: moniker-end
 
@@ -51,7 +53,11 @@ monikerRange: 'vsts'
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
-## Q&A
+## Open source
+
+This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+
+## Q & A
 
 <!-- BEGINSECTION class="md-qanda" -->
 

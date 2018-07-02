@@ -63,12 +63,12 @@ Adds support for automatic update of bug status when using My Work. Use to autom
 Feedback
 </td>
 <td>
-You can [request feedback](../../feedback/get-feedback.md) from your stakeholders and capture their comments on your working software. Reviewer feedback--in the form of videos, screenshots, type-written comments, and ratings--is captured into work items that you can review and use to create a bug or suggest a new backlog item. 
+You can [request feedback](../../project/feedback/get-feedback.md) from your stakeholders and capture their comments on your working software. Reviewer feedback--in the form of videos, screenshots, type-written comments, and ratings--is captured into work items that you can review and use to create a bug or suggest a new backlog item. 
 </td>
 <td>
-**Required:** Provide [Advanced access](../../security/change-access-levels.md) to users who'll request feedback.<br/>
+**Required:** Provide [Advanced access](../../organizations/security/change-access-levels.md) to users who'll request feedback.<br/>
 **Required:** [Configure an SMTP server for TFS](/tfs/server/admin/setup-customize-alerts). <br/>
-**Required:** [Grant stakeholders permission](../../feedback/give-permissions-feedback.md).
+**Required:** [Grant stakeholders permission](../../project/feedback/give-permissions-feedback.md).
 
 </td>
 </tr>
@@ -81,7 +81,7 @@ These tools provide access to product and sprint backlogs, the Kanban board and 
 <ul>
 <li>[Create-your-backlog](../backlogs/create-your-backlog.md) </li>
 <li>[Kanban basics](../kanban/kanban-basics.md) </li>
-<li>[Plan a sprint](../scrum/sprint-planning.md)</li>
+<li>[Plan a sprint](../scrum/assign-work-sprint.md)</li>
 <li>[Work with the task board](../scrum/task-board.md).</li>
 </ul> </td>
 <td>
@@ -115,7 +115,7 @@ With this feature, you can [storyboard your ideas using the Storyboarding add-in
 </td>
 <td>
 **Required:** [Office PowerPoint 2007 or later](http://www.microsoftstore.com/store/msstore/pd/PowerPoint-2010/productID.216564300)<br/>
-**Required:** Visual Studio Community ([get your free download](https://www.visualstudio.com/free-developer-offers/)) or other Visual Studio version installed. 
+**Required:** Visual Studio Community ([get your free download](https://visualstudio.microsoft.com/free-developer-offers/)) or other Visual Studio version installed. 
 </td>
 </tr>
 <tr>
@@ -125,7 +125,7 @@ With this feature, you can [storyboard your ideas using the Storyboarding add-in
 <td>
 Most of your team will be able to view and create Epics and Features once you've enabled the Portfolio Backlogs feature. However, you may need to enable one or more of these backlogs for a team as described in [Organize your backlogs](../backlogs/organize-backlog.md). <br/>
 
-All stakeholders and contributors to your team project can view and add items to a portfolio backlog. However, to reorder, reparent, and exercise other portfolio backlog features, you need to have [Advanced access](../../security/change-access-levels.md).<br/>
+All stakeholders and contributors to your team project can view and add items to a portfolio backlog. However, to reorder, reparent, and exercise other portfolio backlog features, you need to have [Advanced access](../../organizations/security/change-access-levels.md).<br/>
 
 <p>Other resources you may find useful to manage your teams and backlogs:</p>
 <ul>
@@ -156,7 +156,7 @@ Test Plan and Test Suite
 This feature adds the Test Plan and Test Suite WITs, and converts existing test plans and test suites to work items. With this feature enabled, you can now customize these WITs like other work items, and create queries to find test plans and test suites.  
 </td>
 <td>
-To fully manage web-based test plans, you need to have [Advanced access](../../security/change-access-levels.md).<br/>
+To fully manage web-based test plans, you need to have [Advanced access](../../organizations/security/change-access-levels.md).<br/>
 You can customize the test plan and test suite WITs in the same way you can customize other WITs. See these topics to learn more: <br/> 
 <ul>
 <li>[Field customizations](add-modify-field.md): Add a custom field, modify a pick list, or add a field rule.</li>
@@ -186,7 +186,7 @@ To get started, each team must choose their preference as described in [Show bug
 
 ## Related articles 
 
-If you are the server administrator for TFS and don't actually contribute to a team, then you may want to [remove yourself as a member, and add a project lead as the team administrator](../../security/add-users-team-project.md). (When you ran the Configure Features wizard, the system automatically added your user account as a team administrator for the team project.)
+If you are the server administrator for TFS and don't actually contribute to a team, then you may want to [remove yourself as a member, and add a project lead as the team administrator](../../organizations/security/add-users-team-project.md). (When you ran the Configure Features wizard, the system automatically added your user account as a team administrator for the team project.)
 
 If you have updated a team project based on v5.0 of MSF for Agile, do the manual updates described in [Update the Workflow for Agile Team Projects](reference/update-the-workflow-for-agile-team-projects.md).
 

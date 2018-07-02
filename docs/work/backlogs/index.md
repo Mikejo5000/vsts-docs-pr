@@ -16,7 +16,7 @@ ms.date: 03/20/2018
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 Start planning your project by quickly adding user stories or requirements to your product backlog. From your product backlog, you can then start driving your code development efforts. 
 ::: moniker-end
 
@@ -24,13 +24,13 @@ Start planning your project by quickly adding user stories or requirements to yo
 Start planning your project by quickly adding user stories or requirements to your product backlog.  
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 ## 5-Minute Quickstarts  
 
 - [Create your backlog](create-your-backlog.md)  
 - [Drive Git development](connect-work-items-to-git-dev-ops.md)
-- [Define area paths](../customize/set-area-paths.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json) 
-- [Define iteration paths](../customize/set-iteration-paths-sprints.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)   
+- [Define area paths](../../organizations/settings/set-area-paths.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json) 
+- [Define iteration paths](../../organizations/settings/set-iteration-paths-sprints.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)   
 
 ::: moniker-end
 
@@ -38,8 +38,8 @@ Start planning your project by quickly adding user stories or requirements to yo
 ## 5-Minute Quickstarts  
 
 - [Create your backlog](create-your-backlog.md)  
-- [Define area paths](../customize/set-area-paths.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json) 
-- [Define iteration paths](../customize/set-iteration-paths-sprints.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)   
+- [Define area paths](../../organizations/settings/set-area-paths.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json) 
+- [Define iteration paths](../../organizations/settings/set-iteration-paths-sprints.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)   
 
 ::: moniker-end
 
@@ -54,7 +54,7 @@ Start planning your project by quickly adding user stories or requirements to yo
 ## Concepts 
   
 - [Groom your backlog](best-practices-product-backlog.md)           
-- [About permissions and access](../../security/permissions-access-work-tracking.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)
+- [About permissions and access](../../organizations/security/permissions-access-work-tracking.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)
 - [Backlog items & multi-team ownership](work-multi-team-ownership-backlogs.md) 
 - [Share work plans](../track/share-plans.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)
 
@@ -66,7 +66,7 @@ Start planning your project by quickly adding user stories or requirements to yo
 
 
 ## Reference   
-- [Permissions and access for work tracking](../../security/permissions-access-work-tracking.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)
+- [Permissions and access for work tracking](../../organizations/security/permissions-access-work-tracking.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)
 - [Work item field index](../work-items/guidance/work-item-field.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)
 - [Backlog keyboard shortcuts](backlogs-keyboard-shortcuts.md)
 

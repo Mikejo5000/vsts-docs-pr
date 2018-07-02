@@ -19,13 +19,14 @@ These tasks will appear next to Microsoft-provided tasks in the Add Step wizard:
 
 ![Build task catalog for extensions in VSTS](_img/build-task-ext-choose-task.png)
 
-
 To learn more about the new cross-platform build/release system, see [Team Foundation Build & Release](../..//pipelines/overview.md). 
+
+> **Note:** This article covers agent tasks in agent-based extensions. For information on server tasks/server-based extensions, checkout the [Server Task GitHub Documentation](https://github.com/Microsoft/vsts-tasks/blob/master/docs/authoring/servertaskauthoring.md).
 
 ## Preparation and required setup for this tutorial
 In order to create extensions for VSTS, there are some prerequisite software and tools you'll need:
 
-- A **VSTS account**, more information can be found [here](https://www.visualstudio.com/en-us/products/visual-studio-team-services-vs.aspx)
+- A **VSTS account**, more information can be found [here](https://visualstudio.microsoft.com/en-us/products/visual-studio-team-services-vs.aspx)
 - **A text editor**. For many of the tutorials we used `Visual Studio Code`, which can be downloaded [here](https://code.visualstudio.com/)
 - The latest version of **node**, which can be downloaded [here](https://nodejs.org/en/download/)
 <a name="cli" />

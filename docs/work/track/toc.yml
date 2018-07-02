@@ -20,10 +20,6 @@
     href: triage-work-items.md
   - name: Bulk modify work items
     href: ../backlogs/bulk-modify-work-items.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json
-- name: Concepts
-  items:
-  - name: New queries experience
-    href: queries-preview.md
 - name: Samples
   items:
   - name: Query by title, ID, or description
@@ -71,9 +67,9 @@
   - name: Work item field index
     href: ../work-items/guidance/work-item-field.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json 
   - name: WIQL syntax
-    href: ../../collaborate/wiql-syntax.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json 
+    href: wiql-syntax.md
   - name: "Default permissions (Security)"
-    href: ../../security/permissions-access-work-tracking.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json
+    href: ../../organizations/security/permissions-access-work-tracking.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json
   - name: REST API, Queries
     href: https://docs.microsoft.com/en-us/rest/api/vsts/wit/queries 
   - name: REST API, Wiql

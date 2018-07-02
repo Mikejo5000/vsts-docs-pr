@@ -26,7 +26,7 @@ This quickstart explains how to set up continuous integration (CI) to build a co
 
 * You must already have a CI build such as one of these:
 
-   - [Build your ASP.NET Core app](../aspnet/build-aspnet-core.md)
+   - [Build your ASP.NET Core app](../../languages/dotnet-core.md)
    - [Build your Go app](../go/go.md)
    - [Build your Gradle app](../java/build-gradle.md)
    - [Build your Node.js app with Gulp](../nodejs/build-gulp.md)
@@ -93,3 +93,6 @@ Now your CI process is set up to push a new Docker image to a container registry
 
 > [!div class="nextstepaction"]
 > [Deploy using Kubernetes](../cd/azure/deploy-container-kubernetes.md)
+
+## Videos 
+> [!VIDEO https://www.youtube.com/embed/X4Puu0BS3GE]

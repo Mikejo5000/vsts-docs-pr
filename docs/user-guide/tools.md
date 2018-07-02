@@ -39,7 +39,7 @@ Be clear about what they pay for and what is free
 
 ## Desktop client developer tools
 
-Developers have access to a variety of tools through these versions of Visual Studio and plug-ins. to download any version of Visual Studio, visit the [Visual Studio Downloads page](https://www.visualstudio.com/downloads/). To understand what features you get with the Visual Studio versions, see [Compare Visual Studio Offerings](https://www.visualstudio.com/vs/compare/). 
+Developers have access to a variety of tools through these versions of Visual Studio and plug-ins. to download any version of Visual Studio, visit the [Visual Studio Downloads page](https://visualstudio.microsoft.com/downloads/). To understand what features you get with the Visual Studio versions, see [Compare Visual Studio Offerings](https://visualstudio.microsoft.com/vs/compare/). 
 
 - **Visual Studio Community**: A fully-featured and extensible IDE for creating modern applications for Android, iOS, and Windows, as well as web applications and cloud services. (Replaces Visual Studio Express) 
 - **Visual Studio Professional**: Development tools and services to support individual developers or small teams 
@@ -82,7 +82,7 @@ The following clients support specific tasks, such as managing testing efforts, 
 
 - **[Microsoft Test Manager](https://msdn.microsoft.com/library/jj635157.aspx)**: Allows you to manage your test efforts, create and run manual tests, and create and track bugs that are found during test efforts. Test Manager installs with Visual Studio Test Professional and Visual Studio Enterprise. 
 - **[Test & Feedback extension (previously called the Exploratory Testing extension)](../test/provide-stakeholder-feedback.md)**: Provides a lightweight, plug-in to a web browser. Stakeholders can respond to feedback requests for user stories and features generated in VSTS or TFS. This extension is free to stakeholders. 
-- **[Microsoft Feedback Client](../feedback/give-feedback.md)**: Your stakeholders can use **Microsoft Feedback Client** to record feedback for your application as video, audio, or type-written comments. This client installs with all versions of Visual Studio, or can be [installed from the free download](https://www.microsoft.com/download/details.aspx?id=30660). All feedback is stored in the work item data store and requires [stakeholders to have required permissions](../feedback/give-permissions-feedback.md).  
+- **[Microsoft Feedback Client](../project/feedback/give-feedback.md)**: Your stakeholders can use **Microsoft Feedback Client** to record feedback for your application as video, audio, or type-written comments. This client installs with all versions of Visual Studio, or can be [installed from the free download](https://www.microsoft.com/download/details.aspx?id=48142). All feedback is stored in the work item data store and requires [stakeholders to have required permissions](../project/feedback/give-permissions-feedback.md).  
  
 >[!IMPORTANT]
 >Test Manager is deprecated for TFS 2017.  
@@ -182,5 +182,5 @@ REST APIs are provided to support building extensions to VSTS and TFS. To learn 
 - [Key concepts](concepts.md)
 - [Essential services](services.md)
 - [Software development roles](roles.md)
-- [Pricing](https://www.visualstudio.com/team-services/pricing/)
+- [Pricing](https://visualstudio.microsoft.com/team-services/pricing/)
  

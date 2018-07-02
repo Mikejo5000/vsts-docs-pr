@@ -5,7 +5,7 @@
   - name: Support a growing organization
     href: ../../work/scale/scale-teams.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json
   - name: "About teams & Agile tools"
-    href: about-teams-and-settings.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json
+    href: about-teams-and-settings.md
 - name: Quickstarts
   items:
   - name: "Add a team & team members"
@@ -19,17 +19,19 @@
 - name: How-to Guides
   items:
   - name: Set team defaults
-    href: ../../work/scale/set-team-defaults.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json
+    href: set-team-defaults.md
   - name: Configure team settings
     href: ../../work/scale/manage-team-assets.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json
+  - name: Change user preferences
+    href: set-user-preferences.md
   - name: Switch team context
     href: switch-team-context.md
   - name: "Manage permissions & access"
-    href: ../../security/set-permissions-access-work-tracking.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json
+    href: ../../organizations/security/set-permissions-access-work-tracking.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json
 - name: Reference
   items:
   - name: "Permissions & access for work tracking"
-    href: ../../security/permissions-access-work-tracking.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json
+    href: ../../organizations/security/permissions-access-work-tracking.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json
 - name: Resources
   items:
   - name: Customization

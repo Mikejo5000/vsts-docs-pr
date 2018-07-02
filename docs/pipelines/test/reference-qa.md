@@ -1,5 +1,5 @@
 ---
-title: FAQs for continuous testing in VSTS and TFS   
+title: FAQs for continuous testing in VSTS and TFS - test automation tools  
 description: FAQs for continuous testing topics for Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS).
 ms.assetid: F9F85914-C81A-4D9E-80CA-36EC4E8A5677 
 ms.prod: devops
@@ -12,7 +12,7 @@ ms.date: 04/09/2018
 monikerRange: '>= tfs-2015'
 ---
 
-# FAQs for continuous testing
+# FAQs for continuous testing and test automation
 
 [!INCLUDE [version-header-vs-vsts-tfs](_shared/version-header-vs-vsts-tfs.md)]
 
@@ -91,7 +91,7 @@ A merged summary is not currently available for coverage files published using m
 and specify which slot to deploy your app to. If you do not specify a slot,
 the default **Production** slot is used. After you deploy, you can swap an
 app to a different slot using the **Azure App Service Manage** task. See
-[Swap deployment slots](../../pipelines/apps/cd/howto-webdeploy-webapps.md#swapslots).
+[Azure web apps deployment](../../pipelines/targets/webapp.md).
 
 You can use [task phases](../../pipelines/process/phases.md)
 and the [**Manual Intervention**](../../pipelines/tasks/utility/manual-intervention.md) task

@@ -16,9 +16,9 @@ monikerRange: 'vsts'
 
 [!INCLUDE [version-header-ts](../_shared/version-header-ts.md)]
 
-Before you start:
+Before you start your load testing:
 
-* [Create your Visual Studio Team Services (VSTS) account](https://www.visualstudio.com/products/visual-studio-team-services-vs), 
+* [Create your Visual Studio Team Services (VSTS) account](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs), 
   if you don't have one already.
 
 **To run a JMeter load test:**

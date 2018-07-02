@@ -47,7 +47,7 @@ A configurable view that displays work from multiple teams and projects laid out
 
 ## Favorite 
 
-A method for tagging an object to support quick navigation by yourself or other team members. You can tag work item queries and build definitions as personal and team favorites. Other objects you can favorite for youself only include code branches, delivery plans, test plans, and teams or team projects. Learn more: [Set personal or team favorites](../../collaborate/set-favorites.md). 
+A method for tagging an object to support quick navigation by yourself or other team members. You can tag work item queries and build definitions as personal and team favorites. Other objects you can favorite for youself only include code branches, delivery plans, test plans, and teams or team projects. Learn more: [Set personal or team favorites](../../project/navigation/set-favorites.md). 
 
 ## Field 
 Supports tracking a piece of information about the work to perform. Values you assign to a field are stored in the work tracking data store which you can query and generate charts to view status and trends. Your team project contains 100 or more data fields. You update data by [modifying the data field within a work item](../backlogs/add-work-items.md). Each work item is associated with a work item type (WIT), and the data you can track corresponds to the fields assigned to the WIT. For a definition of each predefined field, see [Work item field index](guidance/work-item-field.md).   
@@ -55,7 +55,7 @@ Supports tracking a piece of information about the work to perform. Values you a
 
 ## Follow 
 
-A tool for tagging specific work items or pull requests for which you want to receive email updates when changes are made to them. Learn more: [Follow a work item or pull request](../../collaborate/follow-work-items.md). 
+A tool for tagging specific work items or pull requests for which you want to receive email updates when changes are made to them. Learn more: [Follow a work item or pull request](follow-work-items.md). 
 
 ## Global list 
 Defines a list of menu items or pick list items that are shared across WITs and team projects within a team project collection. Global lists help to minimize the work that is required to update lists. You can define global lists within WITs that you upload with your process template. Learn more: [Manage global lists for work item types](../customize/reference/witadmin/manage-global-lists-for-work-item-types.md). (Only supported for Hosted XML and On-premises XML process models) 
@@ -67,7 +67,7 @@ Specifies both work item fields and global lists that multiple team projects and
 ## Hidden types categories  
 Specifies the set of work item types that you don't want users to create manually. By default this set includes:   
 -   [Code Review Request and Code Review Response](../../tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md )    
--   [Feedback Request and Feedback Response](../../feedback/get-feedback.md)    
+-   [Feedback Request and Feedback Response](../../project/feedback/get-feedback.md)    
 -   [Shared Steps and Shared Parameter](../../test/create-test-cases.md)    
 -   [Test Plan and Test Suite](../../test/create-a-test-plan.md)  
   
@@ -122,7 +122,7 @@ An interactive list of work items that corresponds to a team's project plan or r
 Each product backlog can be customized by a team. Learn more: [Create your backlog](../backlogs/create-your-backlog.md).   
 
 ## Product backlog item
-A type of work item that defines the applications, requirements, and elements that teams plan to create. Product owners typically define and stack rank product backlog items which are defined defined with the Scrum process.  Learn more: [Scrum process work item types and workflow](guidance/scrum-process-workflow.md).   
+A type of work item that defines the applications, requirements, and elements that teams plan to create. Product owners typically define and stack rank product backlog items which are defined with the Scrum process.  Learn more: [Scrum process work item types and workflow](guidance/scrum-process-workflow.md).   
 
 
 
@@ -131,7 +131,7 @@ A type of work item that defines the applications, requirements, and elements th
 A named set of criteria that supports finding and listing a list of work items. Learn more: [Define a work item query](../track/using-queries.md).    
 
 ## Sprint backlog 
-An interactive list of work items that have been assigned to the same sprint or iteration path for a team. The sprint backlog supports teams that use Scrum methodologies. Learn more: [Sprint planning](../scrum/sprint-planning.md).  
+An interactive list of work items that have been assigned to the same sprint or iteration path for a team. The sprint backlog supports teams that use Scrum methodologies. Learn more: [Sprint planning](../scrum/assign-work-sprint.md).  
 
 ## Task board 
 An interactive board of work items that support reviewing and updating tasks defined for the sprint backlog. The task board supports teams that use Scrum methodologies. Learn more: [Task board](../scrum/task-board.md). 
@@ -142,7 +142,7 @@ With teams, enterprises can sub-categorize work to better focus on all the work 
 
 ## Team project
 
-A repository for source code and a place for a group of developers and teams to plan, track progress, and collaborate on building software solutions. A team project resides within a VSTS account or TFS team project collection. It provides support for focusing on those objects defined within the team project. Learn more: [Create a team project](../../accounts/create-team-project.md).   
+A repository for source code and a place for a group of developers and teams to plan, track progress, and collaborate on building software solutions. A team project resides within a VSTS account or TFS team project collection. It provides support for focusing on those objects defined within the team project. Learn more: [Create a team project](../../organizations/accounts/create-team-project.md).   
 
 ## User story
 A type of work item that defines the applications, requirements, and elements that teams plan to create. Product owners typically define and stack rank user stories. User story is defined with the Agile process.  Learn more: [Agile process work item types and workflow](guidance/agile-process-workflow.md).   

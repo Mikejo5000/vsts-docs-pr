@@ -23,9 +23,11 @@ monikerRange: '>= tfs-2015'
 
 None
 
-::: moniker range="vsts"
+::: moniker range=">tfs-2018"
 
-[!INCLUDE [temp](../_shared/yaml/DeleteFilesV1.1.md)]
+## YAML snippet
+
+[!INCLUDE [temp](../_shared/yaml/DeleteFilesV1.md)]
 
 ::: moniker-end
 
@@ -62,6 +64,10 @@ None
 </tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
+
+## Open source
+
+This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
 
 ## Q & A
 

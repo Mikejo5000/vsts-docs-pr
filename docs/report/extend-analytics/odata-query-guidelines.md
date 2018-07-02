@@ -177,7 +177,7 @@ If you execute a lot of queries, or the queries require a lot of resources to ru
 
 >*Request was blocked due to exceeding usage of resource '{resource}' in namespace '{namespace}'.*
 
-For more information on rate limiting, see [Rate limits](../../collaborate/rate-limits.md). 
+For more information on rate limiting, see [Rate limits](../../integrate/concepts/rate-limits.md). 
 To learn how to design efficient OData queries, refer to [Performance Guidelines](#performance-guidelines) later in this topic.
 
 <a name="question-41065"></a>
@@ -322,7 +322,7 @@ To resolve this problem, use the OData batch endpoint as explained in the specif
 
 We restrict use of the batch endpoint from handling a batch of multiple requests. A single request can still have only one query. If you try to send a batch of several queries, the operation will fail with the following error message. The only solution is to split queries into multiple requests.
 
-> *The Analytics Service doesn€™t support processing of multiple operations which the current batch message contains. The Analytics Service uses OData batch in order to support POST requests, but requires you limit the operation to a single request.*
+> *The Analytics Service doesn't support processing of multiple operations which the current batch message contains. The Analytics Service uses OData batch in order to support POST requests, but requires you limit the operation to a single request.*
 
 <a name="question-41401"></a>
 ### âŒ AVOID creating very long queries
@@ -580,7 +580,7 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
 ```
 
 > [!IMPORTANT]
-> Property `TagNames` has a length limit of 1024 characters. It contains contains a set of tags that fit within that limit. If a work item has many tags or the tags are very long, then `TagNames` will not contain the full set and `Tag` navigation property should be used instead.
+> Property `TagNames` has a length limit of 1024 characters. It contains a set of tags that fit within that limit. If a work item has many tags or the tags are very long, then `TagNames` will not contain the full set and `Tag` navigation property should be used instead.
 
 
 <a id="perf-case-sensitive"> </a>

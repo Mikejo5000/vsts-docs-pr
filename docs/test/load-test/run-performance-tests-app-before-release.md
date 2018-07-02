@@ -37,7 +37,7 @@ You first create web performance tests. These tests are used in your
 load tests to simulate multiple users performing 
 actions in your app at the same time.
 
-1. If you don't have Visual Studio Enterprise, get it [here](https://www.visualstudio.com/downloads/).
+1. If you don't have Visual Studio Enterprise, get it [here](https://visualstudio.microsoft.com/downloads/).
 
 1. Create a web performance and load test project.
 
@@ -121,7 +121,7 @@ actions in your app at the same time.
 ## Run and analyze your load test
 
 You can run your load test locally, or you can run it in the cloud using VSTS. 
-All you need is a [VSTS account](../../accounts/set-up-vs.md). 
+All you need is a [VSTS account](../../organizations/accounts/set-up-vs.md). 
 If you run the load test in the cloud, you can generate more load without setting up test controllers and test agents. 
 To learn how easy it is to use Cloud-based Load Testing to run your load tests, go 
 [here](getting-started-with-performance-testing.md).

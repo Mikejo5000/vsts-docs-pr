@@ -8,17 +8,14 @@ description: In the Sprint 135 Update of Visual Studio Team Services (VSTS), we 
 
 In the **Sprint 135 Update** of Visual Studio Team Services (VSTS), we bring a new way to visualize all your release activity. The new [release progress view](#visualize-release-progress) takes the [graphical release definition editor](/vsts/release-notes/2017/jul-14-team-services#new-release-definition-editor-preview) developed last year and lights it up with progress and status so that you can track a release and take actions in full context.
 
-There are a number of other features across Work, Code, Build, Release, and even a few related to authentication. Check out the [Features](#features) list below for more.
-
-## Next steps
-
-> [!NOTE]
-> These features will be rolling out over the next two to three weeks.
-
-Read about the new features below and head over to VSTS to try them for yourself.
+There are a number of other features across Work, Code, Build, Release, and even a few related to authentication. Read about the new features below and head over to VSTS to try them for yourself.
 
 > [!div class="nextstepaction"]
 > [Go to VSTS](http://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
+
+## What’s new in VSTS
+
+> [!VIDEO https://www.youtube.com/embed/FDzl0akqCoY?rel=0]
 
 ## Features
 
@@ -76,7 +73,7 @@ When a viewing a pull request, it’s now easy to mark the source branch as a fa
 ### Visualize release progress
 
 > [!IMPORTANT]
-> To use this capability, you must have the **New release progress views** [preview feature](/vsts/collaborate/preview-features) enabled on your profile or account.
+> To use this capability, you must have the **New release progress views** [preview feature](/vsts/project/navigation/preview-features) enabled on your profile or account.
 
 A [new release progress view](https://go.microsoft.com/fwlink/?linkid=874485) is now available, which gives you with live updates of deployment progress and one-click access to further details. The new view visualizes the release pipeline, making it easier to understand what’s happening and surfaces appropriate details and actions at different stages of the release.
 
@@ -178,7 +175,7 @@ When alternative authentication is setup for your user account, you'll now recei
 2. Registering an SSH key
 3. Enabling basic authentication
 
-See the [authentication](/vsts/security/about-security-identity?view=vsts#authentication) documentation for more information.
+See the [authentication](/vsts/organizations/security/about-security-identity?view=vsts#authentication) documentation for more information.
 
 > [!div class="mx-imgBorder"]
 ![VSTS PAT added email](_img/135_02.png)

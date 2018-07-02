@@ -74,7 +74,7 @@ As you plan how you want to grow your Agile tool set, consider the following are
 <td>
 All teams manage their work within the set sprint cadence. Teams provide input into the length of sprint that works best for them.  
 
-<p>Teams choose the Agile methods that work for them, [Scrum](https://www.visualstudio.com/get-started/work/work-in-sprints-vs), [Kanban](https://www.visualstudio.com/get-started/work/work-from-the-kanban-board-vs), or a mix of both. Teams also take ownership of initiating and acting on their own set of continuous improvement practices.</p>
+<p>Teams choose the Agile methods that work for them, [Scrum](https://visualstudio.microsoft.com/get-started/work/work-in-sprints-vs), [Kanban](https://visualstudio.microsoft.com/get-started/work/work-from-the-kanban-board-vs), or a mix of both. Teams also take ownership of initiating and acting on their own set of continuous improvement practices.</p>
 
 <p>It's possible for some teams to execute in shorter sprints. For example, if an organization sets a 2 week sprint cadence, some teams may choose to operate in 1 week sprints, while still aligning with the organizational schedule. </p>
 
@@ -155,13 +155,13 @@ As your organization grows, you can scale your Agile tools in the following ways
 
 - **Group or categorize work:**  There are several ways to group work that you want to track. Backlogs filter work items based on team area assignments. And, portfolio backlogs allow you to [group backlog items under Features and Epics](../backlogs/organize-backlog.md). 
 
-	However, if you want to track and report on work items based on other groupings, you can. You can [add tags to work items and then filter backlogs or queries based on tags](../track/add-tags-to-work-items.md). Also, you can [add sub-area paths](../customize/set-area-paths.md) to represent more granular feature areas.  
+	However, if you want to track and report on work items based on other groupings, you can. You can [add tags to work items and then filter backlogs or queries based on tags](../track/add-tags-to-work-items.md). Also, you can [add sub-area paths](../../organizations/settings/set-area-paths.md) to represent more granular feature areas.  
 
 - **Add folders and use team favorites:**  As your teams grow, you'll see a growing list of work item queries, build definitions, and source code folders. By using folders, sub-folders, and team favorites, you can manage many of these lists more easily. You can add team favorites for shared queries, source code, and build definitions.
 
 ## Related articles  
 
-Before you can create or work with any of the Agile tools, you need a team project. If you don't have one yet, you can [create one in VSTS](../../user-guide/connect-team-projects.md)  or on an [on-premises TFS](../../accounts/create-team-project.md). 
+Before you can create or work with any of the Agile tools, you need a team project. If you don't have one yet, you can [create one in VSTS](../../user-guide/connect-team-projects.md)  or on an [on-premises TFS](../../organizations/accounts/create-team-project.md). 
 
 If you're ready to move from one team to two teams, or configure several teams, see [Multiple teams](multiple-teams.md). To add a team administrator or configure team assets, see [Configure team settings](manage-team-assets.md). 
 
@@ -169,7 +169,7 @@ For addtional guidance, see these topics:
 - [Practices that scale](practices-that-scale.md) 
 - [Visibility across teams](visibility-across-teams.md)
 - [Review team delivery plans](review-team-plans.md)
-- [Implement Scaled Agile Framework® to support epics, release trains, and multiple backlogs](scaled-agile-framework.md). 
+- [Implement Scaled Agile Framework&reg; to support epics, release trains, and multiple backlogs](scaled-agile-framework.md). 
 
 ###Agile culture industry resources
 

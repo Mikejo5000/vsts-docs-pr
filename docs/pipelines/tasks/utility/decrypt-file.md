@@ -15,9 +15,11 @@ monikerRange: 'vsts'
 
 ![](_img/decryptfile.png) A thin utility task for file decryption using OpenSSL.
 
-::: moniker range="vsts"
+::: moniker range=">tfs-2018"
 
-[!INCLUDE [temp](../_shared/yaml/DecryptFileV1.1.md)]
+## YAML snippet
+
+[!INCLUDE [temp](../_shared/yaml/DecryptFileV1.md)]
 
 ::: moniker-end
 
@@ -32,7 +34,11 @@ monikerRange: 'vsts'
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
-## Q&A
+## Open source
+
+This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+
+## Q & A
 
 <!-- BEGINSECTION class="md-qanda" -->
 

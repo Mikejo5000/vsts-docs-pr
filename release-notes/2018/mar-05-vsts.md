@@ -43,7 +43,7 @@ While queries, backlogs, and boards give you a number of ways to see your work, 
 The **Work Items** Hub now has 4 person-centric pivots to allow you to focus on what is important to you, as well as 3 project-centric views to get a better idea of your project’s work.
 
 - **Assigned to me** - all work items assigned to you in the project in the order they’re last updated
-- **Following** - all work items you’re [following](/vsts/collaborate/follow-work-items)
+- **Following** - all work items you’re [following](/vsts/work/work-items/follow-work-items)
 - **Mentioned** - all work items you’ve been mentioned in, in the last 30 days
 - **My activity** - all work items that you have recently viewed or updated
 - **Recently updated** - all work items in your project that have been most recently updated
@@ -113,7 +113,7 @@ By default, the Azure Resource Manager service endpoints that are automatically 
 
 ### Manage entity-specific security
 
-Previously in role based security, when the security access roles were set, they were set for a user or group at hub level for Deployment groups, Variable groups, Agent queues, and Service endpoints. Now you can turn on and off inheritance for a particular entity so you you can configure security just the way you want to.
+Previously in role based security, when the security access roles were set, they were set for a user or group at hub level for Deployment groups, Variable groups, Agent queues, and Service endpoints. Now you can turn on and off inheritance for a particular entity so you can configure security just the way you want to.
 
 > [!div class="mx-imgBorder"]
 ![Security dialog](_img/131_11.png)
@@ -153,7 +153,7 @@ Steps to add the alternate account to your subscription can be found in the [My 
 > [Go to VSTS](http://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
 
 > [!div class="nextstepaction"]
-> [Subscribe to Updates](https://www.visualstudio.com/team-services/release-notes-feed/?feed=release-notes-feed)
+> [Subscribe to Updates](https://visualstudio.microsoft.com/team-services/release-notes-feed/?feed=release-notes-feed)
 
 We would love to hear what you think about these features. Report a problem or provide a suggestion if you have ideas on things you’d like to see us prioritize, through the feedback menu.
 

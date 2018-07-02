@@ -24,9 +24,11 @@ monikerRange: '>= tfs-2015'
 ### Demands
 [npm](https://nodejs.org/en/download/)
 
-::: moniker range="vsts"
+::: moniker range=">tfs-2018"
 
-[!INCLUDE [temp](../_shared/yaml/NpmV1.1.md)]
+## YAML snippet
+
+[!INCLUDE [temp](../_shared/yaml/NpmV1.md)]
 
 ::: moniker-end
 
@@ -196,7 +198,11 @@ monikerRange: '>= tfs-2015'
 
 [Build your Node.js app with Gulp](../../apps/nodejs/build-gulp.md)
 
-## Q&A
+## Open source
+
+This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+
+## Q & A
 
 ### Where can I learn npm commands and arguments?
 

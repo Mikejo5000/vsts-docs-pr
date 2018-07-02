@@ -6,7 +6,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 3B41D55E-B7B1-41B1-B68F-7A83BA2890A5  
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2017'
 ms.date: 03/20/2018
@@ -38,12 +39,12 @@ In this topic you'll learn:
 ## Prerequisites
 In order to add and configure a plan, you must have the following in place:  
 - [Installed the Plans extension](#install-plans)  
-- Be granted [Basic access or greater](../../security/access-levels.md) (Users with Stakeholder access can't add or view plans)  
-- [Defined iteration paths](../customize/set-area-paths.md) for the team project  
+- Be granted [Basic access or greater](../../organizations/security/access-levels.md) (Users with Stakeholder access can't add or view plans)  
+- [Defined iteration paths](../../organizations/settings/set-area-paths.md) for the team project  
 - [Configured teams](multiple-teams.md) and [set team defaults and team sprints](set-team-defaults.md)   
 - Teams have defined [user stories](../backlogs/create-your-backlog.md), features, or other product or portfolio backlogs and assigned them to iterations  
 
-All users with [basic access](../../security/change-access-levels.md) can view, add, and configure Delivery Plans. (Accounts assigned to [Stakeholder access](../../security/get-started-stakeholder.md), however, don't have access to Delivery Plans.) 
+All users with [basic access](../../organizations/security/change-access-levels.md) can view, add, and configure Delivery Plans. (Accounts assigned to [Stakeholder access](../../organizations/security/get-started-stakeholder.md), however, don't have access to Delivery Plans.) 
 
 
 <a id="install-plans">  </a>
@@ -81,7 +82,7 @@ Once you have [installed Delivery Plans](#install-plans), the Plans page appears
 
 	<img src="_img/review-team-plans-no-plans-defined.png" alt="Create new plan" style="border: 1px solid #C3C3C3;" /> 
 
-	All users, except users [assigned Stakeholder access](../../security/change-access-levels.md), have permissions to create a plan and manage the plans they create. To manage permissions for a plan, see [Set permissions and access for work tracking, Manage or edit Delivery Plans](../../security/set-permissions-access-work-tracking.md#plan-permissions).  
+	All users, except users [assigned Stakeholder access](../../organizations/security/change-access-levels.md), have permissions to create a plan and manage the plans they create. To manage permissions for a plan, see [Set permissions and access for work tracking, Manage or edit Delivery Plans](../../organizations/security/set-permissions-access-work-tracking.md#plan-permissions).  
 
 0. Fill in the form to name, describe, and specify the team backlogs that you want to appear within your plan.    
 

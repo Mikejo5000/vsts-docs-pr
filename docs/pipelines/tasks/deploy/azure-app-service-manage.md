@@ -15,9 +15,11 @@ monikerRange: 'vsts'
 
 ![](_img/azureappservicemanage.png) Start, Stop, Restart, Slot swap, Install site extensions or Enable Continuous Monitoring for an Azure App Service
 
-::: moniker range="vsts"
+::: moniker range=">tfs-2018"
 
-[!INCLUDE [temp](../_shared/yaml/AzureAppServiceManage.0.md)]
+## YAML snippet
+
+[!INCLUDE [temp](../_shared/yaml/AzureAppServiceManageV0.md)]
 
 ::: moniker-end
 
@@ -41,7 +43,11 @@ monikerRange: 'vsts'
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
-## Q&A
+## Open source
+
+This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+
+## Q & A
 
 <!-- BEGINSECTION class="md-qanda" -->
 

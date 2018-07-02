@@ -32,7 +32,7 @@ All VSTS charges appear on your monthly Azure bill. Azure supports payment by cr
 
 You can also make some purchases for TFS on your monthly Azure bill.
 
-* [TFS pricing](https://www.visualstudio.com/team-services/tfs-pricing/)
+* [TFS pricing](https://visualstudio.microsoft.com/team-services/tfs-pricing/)
 * [How to buy TFS CALs or access to the TFS Test hub](buy-access-tfs-test-hub.md)
 
 ::: moniker-end
@@ -41,7 +41,7 @@ You can also make some purchases for TFS on your monthly Azure bill.
 
 ## 5-Minute quickstarts
 
-* [Set up billing for VSTS](set-up-billing-for-your-account-vs.md)
+* [Set up billing for VSTS](set-up-billing-for-your-organization-vs.md)
 * [Start free trials for paid VSTS features and extensions](try-additional-features-vs.md)
 * [Pay for VSTS users](buy-basic-access-add-users.md)
 * [Buy VSTS CI/CD](buy-more-build-vs.md)
@@ -80,9 +80,9 @@ Guidance for Cloud Solution Providers
 
 ## Reference
 
-* [Permissions](https://docs.microsoft.com/en-us/vsts/security/permissions?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json&view=vsts)
-* [About access levels](https://docs.microsoft.com/en-us/vsts/security/access-levels?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json&view=vsts)
-* [Default permissions & access](https://docs.microsoft.com/en-us/vsts/security/permissions-access?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json&view=vsts)
+* [Permissions](https://docs.microsoft.com/en-us/vsts/organizations/security/permissions?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json&view=vsts)
+* [About access levels](https://docs.microsoft.com/en-us/vsts/organizations/security/access-levels?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json&view=vsts)
+* [Default permissions & access](https://docs.microsoft.com/en-us/vsts/organizations/security/permissions-access?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json&view=vsts)
 
 ::: moniker-end
 
@@ -90,7 +90,7 @@ Guidance for Cloud Solution Providers
 
 * [New User Guide](https://docs.microsoft.com/en-us/vsts/user-guide/?view=vsts)
 
-* [Account Management](https://docs.microsoft.com/en-us/vsts/accounts/index?view=vsts)
+* [Account Management](https://docs.microsoft.com/en-us/vsts/organizations/accounts/index?view=vsts)
 
 * [TFS Server Administration documentation](https://docs.microsoft.com/en-us/tfs/server/index?view=vsts)
 

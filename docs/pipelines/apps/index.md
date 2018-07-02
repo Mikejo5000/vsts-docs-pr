@@ -27,7 +27,7 @@ continuous integration (CI) and continuous deployment (CD) process.
 <p style="font-weight:bold;padding-top:10px">Build your app</p>
 <ul style="padding-left:30px">
  <li style="margin-bottom:5px">[ASP.NET 4 apps](aspnet/build-aspnet-4.md)</li>
- <li style="margin-bottom:5px">[ASP.NET Core apps](aspnet/build-aspnet-core.md)</li>
+ <li style="margin-bottom:5px">[ASP.NET Core apps](../languages/dotnet-core.md)</li>
  <li style="margin-bottom:5px">[Java apps with Gradle](../apps/java/build-gradle.md)</li>
  <li style="margin-bottom:5px">[Java apps with Maven](../apps/java/build-maven.md)</li>
  <li style="margin-bottom:5px">[Node apps](nodejs/build-gulp.md)</li>
@@ -68,8 +68,8 @@ continuous integration (CI) and continuous deployment (CD) process.
 <li style="margin-bottom:5px">[Azure VM](cd/azure/deploy-provision-azure-vm.md)</li>
 <li style="margin-bottom:5px">[VM using RM template](cd/azure/build-azure-vm-template.md)</li>
 <li style="margin-bottom:5px">[DevTest Labs](cd/azure/deploy-provision-devtest-lab.md)</li>
-<li style="margin-bottom:5px">[SCVMM](cd/scvmm/configure-scvmm.md)</li>
-<li style="margin-bottom:5px">[VMWare](cd/provision-vm-in-vmware.md)</li>
+<li style="margin-bottom:5px">[SCVMM](../targets/scvmm.md)</li>
+<li style="margin-bottom:5px">[VMWare](../targets/vmware.md)</li>
 </ul>
 </div>
 
@@ -112,7 +112,7 @@ continuous integration (CI) and continuous deployment (CD) process.
 
 * [Using the Azure Portal to deploy and manage your Azure resources](https://azure.microsoft.com/en-gb/documentation/articles/resource-group-portal/)
 
-## Q&A
+## Q & A
 
 <!-- BEGINSECTION class="md-qanda" -->
 

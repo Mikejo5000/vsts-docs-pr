@@ -1,6 +1,6 @@
 ---
-title: Run manual tests - manual testing in VSTS
-description: Run manual tests in Microsoft VSTS and TFS to make sure each of the deliverables meets your users needs
+title: Run manual tests - manual testing in VSTS TestTools
+description: Test tools - Run manual tests in Microsoft VSTS and TFS to make sure each of the deliverables meets your users needs
 ms.assetid: 616919f3-7339-4813-9dcf-82ead3476b1a
 ms.prod: devops
 ms.technology: devops-test
@@ -21,9 +21,9 @@ using Microsoft Test Runner. If you find an issue when testing,
 use Test Runner to create a bug. Test steps, screenshots, and comments 
 are automatically included in the bug. 
 
-> You just need [Basic access](https://www.visualstudio.com/team-services/compare-features/) 
+> You just need [Basic access](https://visualstudio.microsoft.com/team-services/compare-features/) 
 to run tests that have been assigned to you with Visual Studio Team Services (VSTS). 
-Learn more about the [access](https://www.visualstudio.com/pricing/visual-studio-online-pricing-vs) 
+Learn more about the [access](https://visualstudio.microsoft.com/pricing/visual-studio-online-pricing-vs) 
 that you need for more advanced testing features.
 
 [!INCLUDE [feature-availability](_shared/feature-availability.md)] 

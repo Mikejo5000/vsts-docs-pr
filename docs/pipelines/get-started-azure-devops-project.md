@@ -24,7 +24,7 @@ monikerRange: 'vsts'
 
 The Azure DevOps Project presents a simplified experience to create Azure resources and to set up a continuous integration (CI) and continuous delivery (CD) pipeline for your application to those resources. It uses Visual Studio Team Services (VSTS), which is Microsoft's DevOps solution for Azure, to configure the pipeline.
 
-If you don't have an Azure subscription, you can get one free through [Visual Studio Dev Essentials](https://www.visualstudio.com/dev-essentials/).
+If you don't have an Azure subscription, you can get one free through [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/).
 
 ## Sign in to the Azure portal
 
@@ -122,3 +122,11 @@ When you configured your CI/CD process in this quickstart, a build and release d
 
 > [!div class="nextstepaction"]
 > [Customize CD process](release/define-multistage-release-process.md)
+
+## Videos
+
+| | |
+| --- | --- |
+| <iframe width="340" height="190" src="https://www.youtube.com/embed/_YGR9hOR_PI?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> | <iframe width="340" height="190" src="https://www.youtube.com/embed/3etwjubReJs?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> |
+| <iframe width="340" height="190" src="https://www.youtube.com/embed/itwqMf9aR0w?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> | <iframe width="340" height="190" src="https://www.youtube.com/embed/P72xfZLkFJ0?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> |
+| | |

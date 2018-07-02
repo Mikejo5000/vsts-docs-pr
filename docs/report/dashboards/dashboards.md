@@ -16,7 +16,6 @@ ms.date: 03/27/2018
 
 **VSTS | TFS 2018 | TFS 2017 | TFS 2015.1**
 
-
 Share progress and status with your team using configurable team dashboards. Dashboards provide easy-to-read, easy access, real-time information. At a glance, you can make informed decisions without having to drill down into other parts of your team project site. 
 
 The Overview page provides access to a default team dashboard which you can customize by adding, removing, or rearranging the tiles. Each tile corresponds to a widget that provides access to one or more features or functions.   
@@ -33,7 +32,6 @@ The Overview page provides access to a default team dashboard which you can cust
 ::: moniker-end
 
 
-
 ::: moniker range="vsts"
 [!INCLUDE [temp](../_shared/dashboard-prerequisites-vsts.md)]  
 ::: moniker-end
@@ -45,7 +43,7 @@ The Overview page provides access to a default team dashboard which you can cust
 ::: moniker range="tfs-2015"
 [!INCLUDE [temp](../_shared/dashboard-prerequisites-tfs-2015.md)] 
 ::: moniker-end
- 
+ 
 
 ::: moniker range=">= tfs-2015"
 ## Connect to the web portal for your team project 
@@ -75,7 +73,7 @@ All dashboards are associated with a team.
 
 ::: moniker range="vsts"
 
-To enable the New Dashboard experience, see [Enable preview features](../../collaborate/preview-features.md).  
+To enable the New Dashboard experience, see [Enable preview features](../../project/navigation/preview-features.md).  
 
 1. From the **Dashboards** hub, open the selector and choose  the **Browse all dashboards** option. 
  
@@ -136,7 +134,7 @@ Add a new dashboard as needed to support your team's needs. You can also edit an
 
 ::: moniker range="vsts"
 
-To enable the New Dashboard experience, see [Enable preview features](../../collaborate/preview-features.md).  
+To enable the New Dashboard experience, see [Enable preview features](../../project/navigation/preview-features.md).  
 
 1. From the **Dashboards** hub, open the selector and choose the ![plus icon](_img/icons/blue-plus-icon.png) **New Dashboard** option. 
 
@@ -393,7 +391,7 @@ And, you can add a chart to a team dashboard in a similar way.
 ## Add widgets to your dashboard
 
 >[!NOTE]  
-><b>Feature availability: </b>Dashboard edit mode controls shown appear from VSTS or TFS 2015.2 or later version. Some functionality differs when you connect to an application server running TFS 2015.1 or later version.   
+><b>Feature availability: </b>Dashboard edit mode controls shown appear from VSTS or TFS 2015.2 or later version. Some functionality differs when you connect to an application server running TFS 2015.1 or later version.   
 
 ### Add a widget  
 

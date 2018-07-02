@@ -21,9 +21,11 @@ monikerRange: 'vsts'
 
 xcode
 
-::: moniker range="vsts"
+::: moniker range=">tfs-2018"
 
-[!INCLUDE [temp](../_shared/yaml/Xcode.5.md)]
+## YAML snippet
+
+[!INCLUDE [temp](../_shared/yaml/XcodeV5.md)]
 
 ::: moniker-end
 
@@ -230,7 +232,11 @@ If xcpretty is enabled above, specify whether to publish JUnit test results to V
 
 [Build your Xcode app](../../apps/mobile/xcode-ios.md)
 
-## Q&A
+## Open source
+
+This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+
+## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
