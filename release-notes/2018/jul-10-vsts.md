@@ -94,7 +94,7 @@ The Package Management extension is now built into all accounts. If you're using
 
 ### Connect or disconnect AAD as a PCA
 
-A project collection administrator (PCA) can now [connect or disconnect their account from Azure Active Directory](/vsts/organizations/accounts/connect-account-to-aad?view=vsts), where previously you had to be the account owner. 
+A project collection administrator (PCA) can now [connect or disconnect their account from Azure Active Directory](/vsts/organizations/accounts/connect-account-to-aad?view=vsts), where previously you had to be the account owner.
 
 ### Set up or remove billing as a PCA
 
@@ -111,4 +111,5 @@ You can also get advice and your questions answered by the community on [Stack O
 
 Thanks,
 
-TBD
+> [!IMPORTANT]
+> ??? Jeremy, Biju, Mario?
