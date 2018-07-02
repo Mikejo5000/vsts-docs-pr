@@ -36,7 +36,7 @@ As part of the [new navigation](/vsts/release-notes/2018/jun-19-vsts#preview-our
 1. When creating a PR, no reviewers will be added by default. The reviewers list does have a feature to make it easier to add individuals and groups that have been added to PRs recently. The [required reviewers policy](/vsts/git/branch-policies?view=vsts#automatically-include-code-reviewers) can also help teams that want to ensure that specific reviewers are added to review their code.​
 2. The **Pull Requests** hub has a new customizable section. By default, this section shows PRs "Assigned to my teams", providing equivalent functionality as the old section. However, if you belong to multiple teams, this section will show PRs assigned to any of your teams. The section is also customizable - just click on the "Customize this view" action near the section header.
 
-### New permissions to manage bypassing branch policies
+### Allow bypassing branch policies without giving up push protection
 
 There are many scenarios where you have the occasional need to bypass a branch policy - reverting a change that caused a build break, applying a hotfix in the middle of the night, etc. Previously, we offered a permission ("Exempt from policy enforcement") to help teams manage which users were granted the ability to bypass branch policies when completing a pull request. However, that permission also granted the ability to push directly to the branch, bypassing the PR process entirely.​
 ​
@@ -54,26 +54,33 @@ See the [Set branch permissions](/vsts/git/branch-permissions?view=vsts) documen
 
 ## Wiki
 
-### Attach files and images from anywhere in a wiki repo
+### Anchor links
 
-Now you can add attachments and images in any folder on a wiki repo and link those files and images in a wiki page using the existing linking syntax.
+As you write and come up with new pages to add, it can be easier to continue writing rather than stop and add the new pages. Wiki will then show you the missing page. Simply click on a section heading in a wiki page and generate URL for the anchor link on the page.
+
+> [!div class="mx-imgBorder"]
+![Wiki generate URL](_img/137_02.png)
+
+### Attach files and images from anywhere in a wiki repository
+
+Now you can add attachments and images in any folder on a wiki repo and link to them in a wiki page using the existing linking syntax.
 
 > [!div class="mx-imgBorder"]
 ![Wiki attachments](_img/137_01.png)
 
-### Anchor links
+### Link to headings within a page
 
-Now you can simply click on a section heading in a wiki page and generate URL for the anchor link on the page.
+Now you can simply click on a section heading in a wiki page to generate a URL for the anchor link on the page.
 
 > [!div class="mx-imgBorder"]
-![Wiki broken links](_img/137_02.png)
+![Wiki generate URL](_img/137_03.png)
 
 ### View broken links
 
-All links in a wiki that are not linked to a wiki page will appear in a distinct red color giving you a visual clue regarding all broken links in a wiki page.
+All links in a wiki that are not linked to a wiki page will appear in a distinct red color and broken link icon, giving you a visual clue regarding all broken links in a wiki page.
 
 > [!div class="mx-imgBorder"]
-![Wiki broken links](_img/137_03.png)
+![Wiki broken links](_img/137_02.png)
 
 ### Open page in new tab
 
