@@ -81,7 +81,7 @@ featureFlags:
                         <ul id="start-all" class="cardsL">
                             <li class="fullSpan">
                                 <div class="intro">
-                                    <h1>Get Started with Azure DevOps</h1>
+                                    <h1>Get Started with Azure Devops</h1>
                                     <p>Explore our most popular services with quickstarts, samples, and tutorials.</p>
                                 </div> 
                             </li>
@@ -1068,7 +1068,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/analytics.png" alt="" />
+                                                        <img src="_img/index/i_analytics.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
