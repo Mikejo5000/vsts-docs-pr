@@ -2,7 +2,7 @@
 title: VSTS Features Timeline
 author: alexcnichols
 ms.author: alexn
-ms.date: 6/29/2018
+ms.date: 7/10/2018
 ms.topic: article
 ms.prod: devops
 ms.technology: vsts-release-notes
