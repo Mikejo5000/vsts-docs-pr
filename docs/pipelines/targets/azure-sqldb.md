@@ -31,7 +31,7 @@ The simplest way to deploy a database is to create [data-tier package or DACPAC]
 
 When setting up a build definition for your Visual Studio database project, use the **.NET desktop** template. This template automatically adds the tasks to build the project and publish artifacts, including the DACPAC.
 
-When setting up a release definition, choose **Start with an Empty process**, link the artifacts from build, and then add an [Azure SQL Database Deployment](../tasks/deploy/azure-sql-database-deployment.md) task.
+When setting up a release definition, choose **Start with an Empty process**, link the artifacts from build, and then add an [Azure SQL Database Deployment](../tasks/deploy/sql-azure-dacpac-deployment.md) task.
 
 # [YAML](#tab/yaml)
 
