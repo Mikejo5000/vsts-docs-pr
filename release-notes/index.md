@@ -22,7 +22,6 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 |Feature  |Area  |Server  |
 |---------|---------|---------|
 |GVFS - Performance improvements for status|Code|2019|
-|Git Pull Requests – Teams aren’t added by default when creating new pull requests|Code|TBD|
 |Git Pull Requests – Change target branch for an active pull request|Code|TBD|
 |Git Pull Requests – Improved search/filter options for pull requests|Code|TBD|
 |Visual Studio Git - Stash|Code|N/A|
@@ -34,7 +33,6 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 |Release Management orchestration improvements – Tag based triggers|Release|2019|
 |[Agent-based deployment in Release Management](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/03/deployment-groups/) – Sharing of VMs|Release|2019|
 |Release traceability – Pull request integration|Release|2019|
-|Deployment Groups auto triggering a release for all new Azure VMs|Release|TBD|
 |Updated landing pages for Release|Release|2019|
 |Canvas-based Release Summary views to track progress of releases|Release|2019|
 |Deployment Groups easy configuration of Azure VMs|Release|TBD|
