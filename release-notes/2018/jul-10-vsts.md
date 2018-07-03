@@ -59,7 +59,7 @@ When we first launched the pull request (PR) experience, we thought it would mak
 ​
 As part of the [new navigation](/vsts/release-notes/2018/jun-19-vsts#preview-our-new-navigation) changes, we took the opportunity to change this default association with teams. You'll notice two changes:​
 ​
-1. When creating a PR, no reviewers will be added by default. The reviewers list does have a feature to make it easier to add individuals and groups that have been added to PRs recently. The [required reviewers policy](/vsts/git/branch-policies?view=vsts#automatically-include-code-reviewers) can also help teams that want to ensure that specific reviewers are added to review their code.​
+1. When creating a PR, no reviewers are added by default. The reviewers list does have a feature to make it easier to add individuals and groups that were added to PRs recently. The [required reviewers policy](/vsts/git/branch-policies?view=vsts#automatically-include-code-reviewers) can also help teams that want to ensure that specific reviewers are added to review their code.​
 2. The **Pull Requests** hub has a new customizable section. By default, this section shows PRs "Assigned to my teams", providing equivalent functionality as the old section. However, if you belong to multiple teams, this section will show PRs assigned to any of your teams. The section is also customizable - just click on the "Customize this view" action near the section header.
 
 ### Allow bypassing branch policies without giving up push protection
@@ -96,7 +96,7 @@ Now you can simply click on a section heading in a wiki page to generate a URL f
 
 ### View broken links
 
-All links in a wiki that are not linked to a wiki page will appear in a distinct red color and broken link icon, giving you a visual clue regarding all broken links in a wiki page.
+All links in a wiki that are not linked properly will appear in a distinct red color and broken link icon, giving you a visual clue of all broken links in a wiki page.
 
 > [!div class="mx-imgBorder"]
 ![Wiki broken links](_img/137_02.png)
