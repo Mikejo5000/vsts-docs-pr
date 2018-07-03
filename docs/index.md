@@ -225,7 +225,7 @@ featureFlags:
                 </ul>
             </li>
             <li>
-                <a href="#apps">Applications</a>
+                <a href="#apps">Services</a>
                 <ul id="apps">
                     <li>
                         <a data-default="true" href="#all">All</a>
@@ -1506,6 +1506,483 @@ featureFlags:
                 </ul>
             </li>
            <li>
+                <a href="#tfs">Team Foundation Server</a>
+                <ul id="tfs">
+                    <li>
+                        <a data-default="true" href="#all">All</a>
+                        <ul id="all" class="cardText">
+                            <li>
+                                <div class="group">
+                                    <h3>Architecture and concepts</h3>
+                                    <ul>
+                                        <li><a class="barLink" href="/tfs/server/architecture/architecture">Architecture overview</a></li>
+                                        <li><a class="barLink" href="/tfs/server/architecture/sql-server-databases">SQL Server databases</a></li>
+                                        <li><a class="barLink" href="/tfs/server/architecture/background-job-agent">Background job agents</a></li>
+                                    </ul>
+                                    <h3>Install</h3>
+                                    <ul>
+                                        <li><a class="barLink" href="/tfs/server/install/get-started">Install guide</a></li>
+                                        <li><a class="barLink" href="/tfs/server/install/install-proxy-setup-remote">Install TFS proxy for a remote site</a></li>
+                                        <li><a class="barLink" href="/tfs/server/install/sql-server/install-sql-server">Install SQL Server</a></li>
+                                    </ul>
+                                    <h3>Upgrade</h3>
+                                    <ul>
+                                        <li><a class="barLink" href="/tfs/server/upgrade/get-started">Upgrade guide</a></li>
+                                        <li><a class="barLink" href="/tfs/server/upgrade/walkthrough">Scenario walkthrough</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="group">
+                                    <h3>Backup and restore</h3>
+                                    <ul>
+                                        <li><a class="barLink" href="/tfs/server/admin/backup/back-up-restore-tfs">Backup and restore guide</a></li>
+                                        <li><a class="barLink" href="/tfs/server/admin/backup/manually-backup-tfs">Manually back up</a></li>
+                                        <li><a class="barLink" href="/tfs/server/admin/backup/config-backup-sched-plan">Configure backup schedule</a></li>
+                                    </ul>
+                                    <h3>Admin and security</h3>
+                                    <ul>
+                                        <li><a class="barLink" href="/tfs/server/admin/config-tfs-resources">Configure and manage TFS resources</a></li>
+                                        <li><a class="barLink" href="/tfs/server/ref/command-line/open-admin-console">Administration console</a></li>
+                                        <li><a class="barLink" href="/tfs/server/admin/manage-team-project-collections">Manage project collections</a></li>
+                                        <li><a class="barLink" href="/tfs/server/admin/add-administrator-tfs">Add TFS server administrators</a></li>
+                                        <li><a class="barLink" href="/vsts/security/about-permissions">Permissions and groups</a></li>
+                                        <li><a class="barLink" href="/vsts/security/access-levels">Access levels</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="group">
+                                    <h3>Troubleshooting</h3>
+                                    <ul>
+                                        <li><a class="barLink" href="/tfs/server/troubleshooting/collection-upgrade-failure">Collection upgrade failures</a></li>
+                                    </ul>
+                                    <h3>Helpful resources</h3>
+                                    <ul>
+                                        <li><a class="barLink" href="/vsts/security/index">Security and identity</a></li>
+                                        <li><a class="barLink" href="/vsts/notifications/index">Notifications</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#architecture">Architecture and concepts</a>
+                        <ul id="architecture" class="cardsA">
+                            <li>
+                                <a href="/tfs/server/architecture/architecture">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="/vsts/_img/index/i_build.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Architecture overview</h3>
+                                                    <p>Review how TFS is deployed within your enterprise topology, and its dependencies.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/tfs/server/architecture/sql-server-databases">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="/vsts/_img/index/sql-server-reporting.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>SQL Server databases</h3>
+                                                    <p>Understand how SQL Server and TFS work together to help you manage your team projects and resources.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/tfs/server/architecture/background-job-agent">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="/vsts/_img/index/i_queries.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Background job agents</h3>
+                                                    <p>Learn how job agents provide scheduling for your build, test, and release tasks.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#install">Install</a>
+                        <ul id="install" class="cardsA">
+                            <li>
+                                <a href="/tfs/server/install/get-started">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com/media/common/i_download-install.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Install guide</h3>
+                                                    <p>Discover the different installation types and which is best for you.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="//tfs/server/install/install-proxy-setup-remote">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="/vsts/_img/index/i_queries.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Install TFS proxy</h3>
+                                                    <p>Install TFS proxy for setting up a remote site.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/tfs/server/install/sql-server/install-sql-server">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="/vsts/_img/index/sql-server-reporting.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Install SQL Server</h3>
+                                                    <p>Review the installation of SQL Server to support your enterprise topology and TFS installation(s).</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#upgrade">Upgrade</a>
+                        <ul id="upgrade" class="cardsA">
+                            <li>
+                                <a href="/tfs/server/upgrade/get-started">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com/media/common/i_deploy.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Upgrade guide</h3>
+                                                    <p>Find what you need to know to begin upgrading your deployment.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/tfs/server/upgrade/walkthrough">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="/vsts/_img/index/i_tasks.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Upgrade scenario walkthrough</h3>
+                                                    <p>Walk through a specific upgrade scenario to get an idea of the upgrade process.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#backuprestore">Backup and Restore</a>
+                        <ul id="backuprestore" class="cardsA">
+                            <li>
+                                <a href="/tfs/server/admin/backup/back-up-restore-tfs">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com/media/common/i_download-install.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Backup and restore guide</h3>
+                                                    <p>An overview to backing up and restoring TFS deployments.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/tfs/server/admin/backup/manually-backup-tfs">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="/vsts/_img/index/i_agile.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Manually back up</h3>
+                                                    <p>Learn how to manually back up your TFS deployment.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/tfs/server/admin/backup/config-backup-sched-plan">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="/vsts/_img/index/i_scrum.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Configure backup schedule</h3>
+                                                    <p>Configure a regular backup schedule for your TFS deployment.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#adminsecurity">Admin and Security</a>
+                        <ul id="adminsecurity" class="cardsA">
+                            <li>
+                                <a href="/tfs/server/admin/config-tfs-resources">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com/media/common/i_tasks.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Configure and manage TFS resources</h3>
+                                                    <p>An overview of TFS resources and how to manage them.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/tfs/server/ref/command-line/open-admin-console">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="/vsts/_img/index/i_queries.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Open administration console</h3>
+                                                    <p>Find how to open and use the TFS administration console.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/tfs/server/admin/manage-team-project-collections">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="/vsts/_img/index/i_kanban.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Manage project collections</h3>
+                                                    <p>Learn how to create and manage the project collections for your organizations and teams.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/tfs/server/admin/add-administrator-tfs">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="/vsts/_img/index/i_configure-teams.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Add server administrators</h3>
+                                                    <p>Find how to add more server administrators to your deployment.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/vsts/security/about-permissions">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com/media/common/i_tasks.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Permissions and groups</h3>
+                                                    <p>Learn about permissions and groups in TFS.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/vsts/security/access-levels">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com/media/common/i_tasks.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Access levels</h3>
+                                                    <p>Learn about access levels in TFS.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#troubleshooting">Troubleshooting</a>
+                        <ul id="troubleshooting" class="cardsA">
+                            <li>
+                                <a href="/tfs/server/troubleshooting/collection-upgrade-failure">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com/media/common/i_tools.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Collection upgrade failures</h3>
+                                                    <p>Troubleshoot common collection upgrade failures.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#helpful">Helpful resources</a>
+                        <ul id="helpful" class="cardsA">
+                            <li>
+                                <a href="/vsts/security/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com/media/common/i_protect.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Security and identity</h3>
+                                                    <p>Manage permissions and access to your team projects and repositories.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/vsts/notifications/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com/media/common/i_alert.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Notifications</h3>
+                                                    <p>Define which events generate alerts or post messages in third party tools.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+<!---
                 <a href="#azure-devops">Azure Devops Resources</a>
                 <ul id="azure-devops">
 This center combines our resources on learning DevOps practices, Git version control, Agile methods, how we work with DevOps at Microsoft, and how you can assess your own DevOps progression. Alternatively, you can jump to documentation on [getting started with DevOps on Azure](/vsts/pipelines/), or to dive in, [start your own Azure DevOps project](https://portal.azure.com/#create/Microsoft.AzureProject). If you’re interested in practices, read on. <br/><br/>
@@ -1625,6 +2102,9 @@ This center combines our resources on learning DevOps practices, Git version con
         </a>
     </li>
 </ul>
+-->
+
+
 </li>
         </ul>
     </div>
