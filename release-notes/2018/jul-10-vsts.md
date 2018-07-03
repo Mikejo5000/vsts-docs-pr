@@ -22,7 +22,31 @@ Read about the new features below and head over to VSTS to try them for yourself
 
 ## Features
 
-TBD
+Code:
+
+- [Create pull requests without a default team as reviewer](#create-pull-requests-without-a-default-team-as-reviewer)
+- [Allow bypassing branch policies without giving up push protection](#allow-bypassing-branch-policies-without-giving-up-push-protection)
+
+Wiki:
+
+- [Attach files and images from anywhere in a wiki repository](#attach-files-and-images-from-anywhere-in-a-wiki-repository)
+- [Link to headings within a page](#link-to-headings-within-a-page)
+- [View broken links](#view-broken-links)
+- [Open page in new tab](#open-page-in-new-tab)
+
+Build and release:
+
+- [Build and release with Microsoft-hosted Linux and macOS agents](#build-and-release-with-microsoft-hosted-linux-and-macos-agents)
+- [Automatically deploy to new targets in a deployment group](#automatically-deploy-to-new-targets-in-a-deployment-group)
+
+Package:
+
+- [Get started with pre-installed Package Management](#get-started-with-pre-installed-package-management)
+
+Admin:
+
+- [Connect or disconnect Azure Active Directory as a Project Collection Admin](#connect-or-disconnect-azure-active-directory-as-a-project-collection-admin)
+- [Set up or remove billing as a Project Collection Admin](#set-up-or-remove-billing-as-a-project-collection-admin)
 
 ## Code
 
@@ -99,9 +123,9 @@ Previously, when new targets were added to a deployment group, a manual deployme
 
 ## Package
 
-### Get started with Package Management in any account
+### Get started with pre-installed Package Management
 
-The Package Management extension is now built into all accounts. If you're using the new navigation preview, look for the pink stack of packages just below the test tube. If you're still on the current navigation, look for the **Packages** hub in the **Build and release** hub group. Each account comes with 5 free Package Management users, and additional users can be purchased from [the Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.feed). Manage extensions using the menu in the top-right of the navigation.
+The Package Management extension is pre-installed into all accounts. If you're using the new navigation preview, look for the pink stack of packages just below the test tube. If you're still on the current navigation, look for the **Packages** hub in the **Build and release** hub group. Each account comes with 5 free Package Management users, and additional users can be purchased from [the Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.feed). Manage extensions using the menu in the top-right of the navigation.
 
 > [!div class="mx-imgBorder"]
 ![Packages service](_img/137_06.png)
