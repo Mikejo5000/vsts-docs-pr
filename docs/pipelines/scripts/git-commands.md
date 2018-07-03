@@ -12,10 +12,7 @@ ms.date: 08/12/2016
 monikerRange: '>= tfs-2015'
 ---
 
-
 # Run Git commands in a script
-
-[!INCLUDE [temp](../_shared/version.md)]
 
 For some workflows you need your build process to run Git commands. For example, after a CI build on a feature branch is done, the team might want to merge the branch to master.  
 
