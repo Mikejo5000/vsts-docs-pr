@@ -54,13 +54,6 @@ See the [Set branch permissions](/vsts/git/branch-permissions?view=vsts) documen
 
 ## Wiki
 
-### Anchor links
-
-As you write and come up with new pages to add, it can be easier to continue writing rather than stop and add the new pages. Wiki will then show you the missing page. Simply click on a section heading in a wiki page and generate URL for the anchor link on the page.
-
-> [!div class="mx-imgBorder"]
-![Wiki generate URL](_img/137_02.png)
-
 ### Attach files and images from anywhere in a wiki repository
 
 Now you can add attachments and images in any folder on a wiki repo and link to them in a wiki page using the existing linking syntax.
@@ -73,7 +66,7 @@ Now you can add attachments and images in any folder on a wiki repo and link to 
 Now you can simply click on a section heading in a wiki page to generate a URL for the anchor link on the page.
 
 > [!div class="mx-imgBorder"]
-![Wiki generate URL](_img/137_03.png)
+![Wiki heading URL](_img/137_03.png)
 
 ### View broken links
 
@@ -87,7 +80,7 @@ All links in a wiki that are not linked to a wiki page will appear in a distinct
 Now you can right click on a wiki page and open it in new tab or simply press CTRL + left click on a wiki page to open it in a new tab.
 
 > [!div class="mx-imgBorder"]
-![Wiki broken links](_img/137_04.png)
+![Wiki new tab](_img/137_04.png)
 
 ## Build and Release
 
