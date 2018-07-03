@@ -84,25 +84,32 @@ Now you can right click on a wiki page and open it in new tab or simply press CT
 
 ## Build and Release
 
-### General availability of Microsoft-hosted Linux and macOS agents for CI/CD
+### General availability of Microsoft-hosted Linux and macOS agents
 
-The Microsoft-hosted Linux and macOS agents are not generally available.
+The Microsoft-hosted Linux and macOS agents are now generally available. After several months in preview, listening to feedback, and tuning the infrastructure to provide a consistent service, we're excited to offer these now in GA.
+
+### Automatically deploy to new targets in a deployment group
+
+Previously, when new targets were added to a deployment group, a manual deployment was required to ensure all targets have the same release. You can now configure the environment to automatically deploy the last successful release to the new targets. We plan to add additional trigger events and actions to the auto redeploy configuration in coming sprints. See the [Deployment Groups](/vsts/pipelines/release/deployment-groups/) documentation for more information.
+
+> [!div class="mx-imgBorder"]
+![Deployment groups](_img/137_05.png)
 
 ## Package
 
-### Package Management now built in to all VSTS accounts
+### Get started with Package Management in all accounts
 
-The Package Management extension is now built into all accounts. If you're using the new navigation preview, look for the pink stack of packages just below the test tube. If you're still on the current navigation, look for the Packages hub in the Build & Release hub group. Each VSTS account comes with 5 free Package Management users, and additional users can be purchased from [the Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.feed).
+The Package Management extension is now built into all accounts. If you're using the new navigation preview, look for the pink stack of packages just below the test tube. If you're still on the current navigation, look for the **Packages** hub in the **Build and release** hub group. Each account comes with 5 free Package Management users, and additional users can be purchased from [the Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.feed).
 
 ## Administration
 
-### Connect or disconnect AAD as a PCA
+### Connect or disconnect Azure Active Directory as a Project Collection Admin
 
-A project collection administrator (PCA) can now [connect or disconnect their account from Azure Active Directory](/vsts/organizations/accounts/connect-account-to-aad?view=vsts), where previously you had to be the account owner.
+A Project Collection Administrator (PCA) can now [connect or disconnect their account from Azure Active Directory](/vsts/organizations/accounts/connect-account-to-aad?view=vsts). Previously this had to be done by an account owner.
 
-### Set up or remove billing as a PCA
+### Set up or remove billing as a Project Collection Admin
 
-In order to [set up billing](/vsts/billing/set-up-billing-for-your-organization-vs?view=vsts) and link an account to an Azure subscription you previously needed to be the account owner.  In addition, if your account was linked to an Azure subscription that you couldn’t access, the only way to get it removed was to call support. Now a PCA can set up or remove billing.
+In order to [set up billing](/vsts/billing/set-up-billing-for-your-organization-vs?view=vsts) and link an account to an Azure subscription you previously needed to be the account owner. Plus, if your account was linked to an Azure subscription that you couldn’t access, the only way to get it removed was to call support. Now a Project Collection Administrator (PCA) can set up or remove billing.
 
 ## Feedback
 
