@@ -86,7 +86,7 @@ Now you can right click on a wiki page and open it in new tab or simply press CT
 
 ### General availability of Microsoft-hosted Linux and macOS agents
 
-The Microsoft-hosted Linux and macOS agents are now generally available. After several months in preview, listening to feedback, and tuning the infrastructure to provide a consistent service, we're excited to offer these now in GA.
+The Microsoft-hosted Linux and macOS agents are now generally available. After several months in preview, listening to feedback, and tuning the infrastructure to provide a consistent service, we're excited to offer these now in GA. See the [Microsoft-hosted agents](/vsts/pipelines/agents/hosted?view=vsts) documentation for more information.
 
 ### Automatically deploy to new targets in a deployment group
 
