@@ -135,7 +135,7 @@ The payload of the messages exchanged between the agent and TFS/VSTS are secured
 
 Here is a common communication pattern between the agent and TFS.
 
-* An agent pool administrator joins the agent to an agent pool, and the credentials of the service account (for Windows) or the saved user name and password (for Linux and macOS) are used to initiate communication with TFS. The agent uses these credentials to listening to the job queue.
+* An agent pool administrator joins the agent to an agent pool, and the credentials of the service account (for Windows) or the saved user name and password (for Linux and macOS) are used to initiate communication with TFS. The agent uses these credentials to listen to the job queue.
 
 * The agent does not use asymmetric key encryption while communicating with the server. However, you can [use HTTPS to secure the communication](../../organizations/security/websitesettings.md) between the agent and TFS.
 
@@ -158,7 +158,7 @@ as shown in the following schematic.
 <a name="configure-tfs-authentication"></a>
 ## Authentication
 
-To register an agent, you need to be a member of the [administrator role](pools-queues.md#security) in the agent pool. The identity of agent pool administrator is needed only at the time of registration and is not persisted on the agent, nor is used in any further communication between the agent and VSTS or TFS. Also, one needs to be a local administrator on the server in order to configure the agent. Your agent can authenticate to VSTS or TFS using one of the following methods:
+To register an agent, you need to be a member of the [administrator role](pools-queues.md#security) in the agent pool. The identity of agent pool administrator is needed only at the time of registration and is not persisted on the agent, and is not used in any subsequent communication between the agent and VSTS or TFS. In addition, you must be a local administrator on the server in order to configure the agent. Your agent can authenticate to VSTS or TFS using one of the following methods:
 
 ::: moniker range=">= tfs-2017"
 
@@ -173,11 +173,11 @@ To use a PAT with TFS, your server must be configured with HTTPS. See [Web site 
 
 ### Integrated
 
-Connect a Windows agent to TFS using the credentials of the signed-in user via a Windows authentication scheme such as NTLM or Kerberos.
+Connect a Windows agent to TFS using the credentials of the signed-in user through a Windows authentication scheme such as NTLM or Kerberos.
 
 To use this method of authentication, you must first configure your TFS server.
 
-1. Log on to the machine where you are running TFS.
+1. Sign into the machine where you are running TFS.
 
 1. Start Internet Information Services (IIS) Manager. Select your TFS site and make sure Windows Authentication is enabled with a valid provider such as NTLM or Kerberos.
 
@@ -187,7 +187,7 @@ To use this method of authentication, you must first configure your TFS server.
 
 ### Negotiate
 
-Connect to TFS as a user other than the signed-in user via a Windows authentication scheme such as NTLM or Kerberos.
+Connect to TFS as a user other than the signed-in user through a Windows authentication scheme such as NTLM or Kerberos.
 
 To use this method of authentication, you must first configure your TFS server.
 
@@ -201,13 +201,13 @@ To use this method of authentication, you must first configure your TFS server.
 
 
 ### Alternate
-Connect to TFS using Basic authentication. To use this method you'll first need to [configure HTTPS on TFS](../../organizations/security/websitesettings.md).
+Connect to TFS using Basic authentication. To use this method you must first [configure HTTPS on TFS](../../organizations/security/websitesettings.md).
 
-To use this method of authentication, you must first configure your TFS server.
+To use this method of authentication, you must configure your TFS server as follows:
 
 1. Log on to the machine where you are running TFS.
 
-1. Configure basic authentication. See https://github.com/Microsoft/tfs-cli/blob/master/docs/configureBasicAuth.md.
+1. Configure basic authentication. See [Using tfx against Team Foundation Server 2015 using Basic Authentication](https://github.com/Microsoft/tfs-cli/blob/master/docs/configureBasicAuth.md).
 
 ::: moniker-end
 
