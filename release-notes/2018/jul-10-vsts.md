@@ -1,12 +1,14 @@
 ---
-title: TBD – VSTS Sprint 137 Update
+title: Microsoft-hosted Linux and macOS agents generally available – VSTS Sprint 137 Update
 ms.date: 7/10/2018
-description: TBD.
+description: In the Sprint 137 Update of Visual Studio Team Services (VSTS), we remove the "Preview" moniker from our Linux and macOS Microsoft-hosted CI/CD agents and make them generally available.
 ---
 
-# TBD – VSTS Sprint 137 Update
+# Microsoft-hosted Linux and macOS agents generally available – VSTS Sprint 137 Update
 
-TBD
+In the **Sprint 137 Update** of Visual Studio Team Services (VSTS), we remove the "Preview" moniker from our Linux and macOS Microsoft-hosted CI/CD agents and [make them generally available](#build-and-release-with-microsoft-hosted-linux-and-macos-agents). Along with our Microsoft-hosted Windows agent, you now have a trusted and scalable platform for production builds and releases, no matter what your platform.
+
+There are a number of other features across Code, Wiki, Package, and Administration. Check out the [Features](#features) list below for more.
 
 ## Next steps
 
@@ -84,9 +86,9 @@ Now you can right click on a wiki page and open it in new tab or simply press CT
 
 ## Build and Release
 
-### General availability of Microsoft-hosted Linux and macOS agents
+### Build and release with Microsoft-hosted Linux and macOS agents
 
-The Microsoft-hosted Linux and macOS agents are now generally available. After several months in preview, listening to feedback, and tuning the infrastructure to provide a consistent service, we're excited to offer these now in GA. See the [Microsoft-hosted agents](/vsts/pipelines/agents/hosted?view=vsts) documentation for more information.
+The Microsoft-hosted Linux and macOS agents are now out of preview and generally available. After several months in preview, listening to feedback, and tuning the infrastructure to provide a consistent service, we're excited to offer these now in GA. See the [Microsoft-hosted agents](/vsts/pipelines/agents/hosted?view=vsts) documentation for more information.
 
 ### Automatically deploy to new targets in a deployment group
 
