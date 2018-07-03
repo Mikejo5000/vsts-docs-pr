@@ -156,6 +156,12 @@
         href: process/multiple-phases.md
     - name: Conditions
       href: process/conditions.md
+  - name: Scripts
+    items:
+    - name: Run a PowerShell script
+      href: scripts/powershell.md
+    - name: Run Git commands
+      href: scripts/git-commands.md
   - name: Licensing
     items:
     - name: Pipelines in TFS
@@ -187,10 +193,6 @@
       href: apps/aspnet/build-aspnet-cloudservice.md
     - name: SQL Server Database
       href: apps/aspnet/build-aspnet-dacpac.md
-    - name: Run a PowerShell script
-      href: scripts/powershell.md
-    - name: Run Git commands
-      href: scripts/git-commands.md
     - name: Sign your mobile app
       href: apps/mobile/app-signing.md
   - name: Deploy to more targets
