@@ -25,13 +25,13 @@ You can automatically deploy your database updates to Azure SQL database after e
 
 ## DACPAC
 
-The simplest way to deploy a database is to create [data-tier package or DACPAC](https://docs.microsoft.com/sql/relational-databases/data-tier-applications/data-tier-applications). DACPACs can be used to package and deploy both schema changes as well as data. You can create a DACPAC using the **SQL database project** in Visual Studio.
+The simplest way to deploy a database is to create [data-tier package or DACPAC](https://docs.microsoft.com/sql/relational-databases/data-tier-applications/data-tier-applications). DACPACs can be used to package and deploy schema changes as well as data. You can create a DACPAC using the **SQL database project** in Visual Studio.
 
 # [Designer](#tab/designer)
 
-When setting up a build definition for your Visual Studio database project, use the **.NET desktop** template. This templates automatically adds the tasks to build the project and publish artifacts including the DACPAC.
+When setting up a build definition for your Visual Studio database project, use the **.NET desktop** template. This template automatically adds the tasks to build the project and publish artifacts, including the DACPAC.
 
-When setting up a release definition, choose **Start with an Empty process**, link the artifacts from build, and then add [Azure SQL Database Deployment](../tasks/deploy/azure-sql-database-deployment.md) task.
+When setting up a release definition, choose **Start with an Empty process**, link the artifacts from build, and then add an [Azure SQL Database Deployment](../tasks/deploy/azure-sql-database-deployment.md) task.
 
 # [YAML](#tab/yaml)
 
@@ -72,7 +72,7 @@ Instead of using a DACPAC, you can also use SQL scripts to deploy your database.
   GO
 ```
 
-In order to run SQL scripts as part of VSTS pipeline, you will need Azure Powershell scripts to create and remove firewall rules in Azure. Without the firewall rules, the VSTS agent cannot communicate with Azure SQL Database.
+To run SQL scripts as part of a VSTS pipeline, you will need Azure Powershell scripts to create and remove firewall rules in Azure. Without the firewall rules, the VSTS agent cannot communicate with Azure SQL Database.
 
 The following Powershell script creates firewall rules. You can check-in this script as `SetAzureFirewallRule.ps1` into your repository.
 
@@ -129,8 +129,8 @@ When you set up a build pipeline, make sure that the SQL script to deploy the da
 
 When you set up a release pipeline, choose **Start with an Empty process**, link the artifacts from build, and then use the following tasks:
 
-- First, use a [Azure Powershell](../tasks/deploy/azure-powershell.md) task to add a firewall rule in Azure to allow VSTS agent to connect to Azure SQL Database. The script requires one argument - the name of the SQL server you created.
-- Second, use a [Command line](../tasks/utility/command-line.md) task to run the SQL script using **SQLCMD** tool. The argument to this tool is `-S {database-server-name}.database.windows.net -U {username}@{database-server-name} -P {password} -d {database-name} -i {SQL file}`. For example, when the SQL script is coming from an artifact source, **{SQL file}** will be of the form: `$(System.DefaultWorkingDirectory)/contoso-repo/DatabaseExample.sql`.
+- First, use an [Azure Powershell](../tasks/deploy/azure-powershell.md) task to add a firewall rule in Azure to allow the VSTS agent to connect to Azure SQL Database. The script requires one argument - the name of the SQL server you created.
+- Second, use a [Command line](../tasks/utility/command-line.md) task to run the SQL script using the **SQLCMD** tool. The arguments to this tool are `-S {database-server-name}.database.windows.net -U {username}@{database-server-name} -P {password} -d {database-name} -i {SQL file}` For example, when the SQL script is coming from an artifact source, **{SQL file}** will be of the form: `$(System.DefaultWorkingDirectory)/contoso-repo/DatabaseExample.sql`.
 - Third, use another [Azure Powershell](../tasks/deploy/azure-powershell.md) task to remove the firewall rule in Azure.
 
 # [YAML](#tab/yaml)
@@ -182,9 +182,7 @@ steps:
 
 ## Azure service endpoint
 
-The **Azure SQL Database Deployment** task is the primary mechanism to deploy a database to Azure. This task, similar to other built-in Azure tasks, requires an Azure service endpoint as an input. The Azure service endpoint stores the credentials to connect from VSTS or TFS to Azure. 
-
-# [Designer](#tab/designer)
+The **Azure SQL Database Deployment** task is the primary mechanism to deploy a database to Azure. This task, as with other built-in Azure tasks, requires an Azure service endpoint as an input. The Azure service endpoint stores the credentials to connect from VSTS or TFS to Azure. 
 
 ::: moniker range="vsts"
 
@@ -253,7 +251,7 @@ YAML builds are not yet available on TFS.
 ## Additional SQL actions
 
 **SQL Azure Dacpac Deployment** may not support all SQL server actions
-that you may need to perform. In these cases, you can simply use Powershell or command line scripts to run the commands you desire. Let us see some of the common use cases that you can run by invoking the `SqlPackage.exe` tool. As a pre-requisite to running this tool, you must use a self-hosted agent and have the tool installed on your agent.
+that you want to perform. In these cases, you can simply use Powershell or command line scripts to run the commands you need. This section shows some of the common use cases for invoking the `SqlPackage.exe` tool. As a prerequisite to running this tool, you must use a self-hosted agent and have the tool installed on your agent.
 
 > [!NOTE]
 > If you execute **SQLPackage** from the folder where it is installed, you must prefix the path with `&` and wrap it in double-quotes.
@@ -262,7 +260,7 @@ that you may need to perform. In these cases, you can simply use Powershell or c
 
 `<Path of SQLPackage.exe> <Arguments to SQLPackage.exe>`
 
-You can use any of the following SQL scripts based on the action that you want to perform
+You can use any of the following SQL scripts depending on the action that you want to perform
 
 ### Extract
 
