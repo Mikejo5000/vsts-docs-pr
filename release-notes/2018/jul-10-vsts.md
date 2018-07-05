@@ -46,7 +46,6 @@ Package:
 Admin:
 
 - [Connect or disconnect Azure Active Directory as a Project Collection Admin](#connect-or-disconnect-azure-active-directory-as-a-project-collection-admin)
-- [Set up or remove billing as a Project Collection Admin](#set-up-or-remove-billing-as-a-project-collection-admin)
 
 ## Code
 
@@ -135,10 +134,6 @@ The Package Management extension is pre-installed into all accounts. If you're u
 ### Connect or disconnect Azure Active Directory as a Project Collection Admin
 
 A Project Collection Administrator (PCA) can now [connect or disconnect their account from Azure Active Directory](/vsts/organizations/accounts/connect-account-to-aad?view=vsts). Previously this had to be done by an account owner.
-
-### Set up or remove billing as a Project Collection Admin
-
-In order to [set up billing](/vsts/billing/set-up-billing-for-your-organization-vs?view=vsts) and link an account to an Azure subscription you previously needed to be the account owner. Plus, if your account was linked to an Azure subscription that you couldn’t access, the only way to get it removed was to call support. Now a Project Collection Administrator (PCA) can set up or remove billing.
 
 ## Feedback
 
