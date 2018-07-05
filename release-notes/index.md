@@ -88,11 +88,10 @@ Versions in the “Server” column are linked to the appropriate download locat
     <tbody>
 
         <tr>
-            <td rowspan="11">[10 July 2018](2018/jul-10-vsts.md)</td>
+            <td rowspan="10">[10 July 2018](2018/jul-10-vsts.md)</td>
             <td>Create pull requests without a default team as reviewer</td><td>*2019*</td>
         </tr>
         <tr><td>Allow bypassing branch policies without giving up push protection</td><td>*2019*</td></tr>
-        <tr><td>Attach files and images that exist in any folder of a wiki repository</td><td>*2019*</td></tr>
         <tr><td>Link to headings within a page</td><td>*2019*</td></tr>
         <tr><td>View broken links</td><td>*2019*</td></tr>
         <tr><td>Open page in new tab</td><td>*2019*</td></tr>
