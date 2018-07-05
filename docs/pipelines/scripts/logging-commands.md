@@ -410,7 +410,7 @@ Any
 
 #### Usage
 
-You can automatically generate a build number from tokens you specify in the [definition options](../define/options.md). However, if you want to use your own logic to set the build number, then you can use this logging command.
+You can automatically generate a build number from tokens you specify in the [definition options](../build/options.md). However, if you want to use your own logic to set the build number, then you can use this logging command.
 
 #### Minimum Agent Version
 
