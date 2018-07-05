@@ -37,6 +37,7 @@ Build and release:
 
 - [Build and release with Microsoft-hosted Linux and macOS agents](#build-and-release-with-microsoft-hosted-linux-and-macos-agents)
 - [Automatically deploy to new targets in a deployment group](#automatically-deploy-to-new-targets-in-a-deployment-group)
+- [Hold deployments until gates succeed consistently](#hold-deployments-until-gates-succeed-consistently)
 
 Package:
 
@@ -112,6 +113,13 @@ Previously, when new targets were added to a deployment group, a manual deployme
 
 > [!div class="mx-imgBorder"]
 ![Deployment groups](_img/137_05.png)
+
+### Hold deployments until gates succeed consistently
+
+Release gates enable automatic evaluation of health criteria before a release is promoted to the next environment. By default, the release progresses after one successful sample for all gates has been received. Even if a gate is erratic and the successful sample received is noise, the release progresses. To avoid these types of issues, you can now configure the release to verify consistency of the health for a minimum duration before progressing. At run time, the release would ensure consecutive evaluations of the gates are successful before allowing the promotion. The total time for evaluation depends on "time between reevaluation" and would typically be more than the configured minimum duration. See the [Release deployment control using gates](/vsts/pipelines/release/approvals/gates?view=vsts) documentation for more information.
+
+> [!div class="mx-imgBorder"]
+![Gates hold setting](_img/137_07.png)
 
 ## Package
 

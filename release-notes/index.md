@@ -88,7 +88,7 @@ Versions in the “Server” column are linked to the appropriate download locat
     <tbody>
 
         <tr>
-            <td rowspan="10">[10 July 2018](2018/jul-10-vsts.md)</td>
+            <td rowspan="11">[10 July 2018](2018/jul-10-vsts.md)</td>
             <td>Create pull requests without a default team as reviewer</td><td>*2019*</td>
         </tr>
         <tr><td>Allow bypassing branch policies without giving up push protection</td><td>*2019*</td></tr>
@@ -97,6 +97,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr><td>Open page in new tab</td><td>*2019*</td></tr>
         <tr><td>Build and release with Microsoft-hosted Linux and macOS agents</td><td>N/A</td></tr>
         <tr><td>Automatically deploy to new targets in a deployment group</td><td>*2019*</td></tr>
+        <tr><td>Hold deployments until gates succeed consistently</td><td>*2019*</td></tr>
         <tr><td>Get started with pre-installed Package Management</td><td>N/A</td></tr>
         <tr><td>Connect or disconnect Azure Active Directory as a Project Collection Admin</td><td>N/A</td></tr>
         <tr><td>Set up or remove billing as a Project Collection Admin</td><td>N/A</td></tr>
