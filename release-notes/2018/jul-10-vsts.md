@@ -60,7 +60,7 @@ When we first launched the pull request (PR) experience, we thought it would mak
 As part of the [new navigation](/vsts/release-notes/2018/jun-19-vsts#preview-our-new-navigation) changes, we took the opportunity to change this default association with teams. You'll notice two changes:​
 ​
 1. When creating a PR, no reviewers are added by default. The reviewers list does have a feature to make it easier to add individuals and groups that were added to PRs recently. The [required reviewers policy](/vsts/git/branch-policies?view=vsts#automatically-include-code-reviewers) can also help teams that want to ensure that specific reviewers are added to review their code.​
-2. The **Pull Requests** hub has a new customizable section. By default, this section shows PRs "Assigned to my teams", providing equivalent functionality as the old section. However, if you belong to multiple teams, this section will show PRs assigned to any of your teams. The section is also customizable - just click on the "Customize this view" action near the section header.
+1. The **Pull Requests** hub has a new customizable section. By default, this section shows PRs "Assigned to my teams", providing equivalent functionality as the old section. However, if you belong to multiple teams, this section will show PRs assigned to any of your teams. The section is also customizable - just click on the "Customize this view" action near the section header.
 
 ### Allow bypassing branch policies without giving up push protection
 
@@ -69,8 +69,8 @@ There are many scenarios where you have the occasional need to bypass a branch p
 To improve this experience, we've split the old permission to offer more control to teams that are granting bypass permissions. There are two new permissions to replace the old one:​
 ​
 1. **Bypass policies when completing pull requests.** Users with this permission will be able to use the "Override" experience for pull requests.
-2. **Bypass policies when pushing.** Users with this permission will be able to push directly to branches that have required policies configured.​
-​
+1. **Bypass policies when pushing.** Users with this permission will be able to push directly to branches that have required policies configured.​
+
 By granting the first permission and denying the second, a user will be able to use the bypass option when necessary, but will still have the protection from accidentally pushing to a branch with policies.
 ​
 > [!NOTE]
