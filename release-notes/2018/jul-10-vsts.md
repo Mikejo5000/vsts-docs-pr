@@ -29,7 +29,7 @@ Code:
 
 Wiki:
 
-- [Attach files and images from anywhere in a wiki repository](#attach-files-and-images-from-anywhere-in-a-wiki-repository)
+- [Attach files and images that exist in any folder of a wiki repository](#attach-files-and-images-that-exist-in-any-folder-of-a-wiki-repository)
 - [Link to headings within a page](#link-to-headings-within-a-page)
 - [View broken links](#view-broken-links)
 - [Open page in new tab](#open-page-in-new-tab)
@@ -80,7 +80,7 @@ See the [Set branch permissions](/vsts/git/branch-permissions?view=vsts) documen
 
 ## Wiki
 
-### Attach files and images from anywhere in a wiki repository
+### Attach files and images that exist in any folder of a wiki repository
 
 Now you can add attachments and images in any folder on a wiki repo and link to them in a wiki page using the existing linking syntax.
 
