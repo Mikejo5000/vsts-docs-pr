@@ -81,7 +81,7 @@ See the [Set branch permissions](/vsts/git/branch-permissions?view=vsts) documen
 
 ### Link to headings within a page
 
-Now you can simply click on a section heading in a wiki page to generate a URL for the anchor link on the page.
+Now you can click the link icon next to any section heading in a wiki page to generate a URL directly to that section. You can then copy that URL and share it with team members to link them directly to that section.
 
 > [!div class="mx-imgBorder"]
 ![Wiki heading URL](_img/137_03.png)
