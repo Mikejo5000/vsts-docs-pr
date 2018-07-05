@@ -45,7 +45,7 @@ Access levels control which features are available to users, i.e. the full set o
 
 ## Prerequisites
 
-You'll need [VSTS project collection administrator or account owner permissions[Quickstart: Add administrators, set permissions at the project-level or project collection-level](../security/set-project-collection-level-permissions.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json).
+You'll need [VSTS project collection administrator or account owner permissions [Quickstart: Add administrators, set permissions at the project-level or project collection-level](../security/set-project-collection-level-permissions.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json).
 
 ## Add users to your VSTS account
 
