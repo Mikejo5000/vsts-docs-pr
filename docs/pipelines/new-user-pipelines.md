@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2015'
 
 Azure DevOps Pipelines is a cloud service that you can use to automatically build your code project and make it available to other users. It works with just about any language or project type.
 
-If you're not sure if Pipelines is right for your needs, read [Why Use Azure DevOps Pipelines?](why-us-pipelines.md).
+If you're not sure if Pipelines is right for your needs, read [Why Use Azure DevOps Pipelines?](why-use-pipelines.md).
 
 ## Does Pipelines work with my language and tools?
 
