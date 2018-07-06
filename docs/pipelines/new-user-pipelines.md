@@ -1,5 +1,5 @@
 ---
-title: Azure DevOps Pipelines New User Guide | Microsoft Docs    
+title: Azure DevOps Pipelines New User Guide  
 description: Learn the basics about Azure DevOps Pipelines and how to use it to automatically build and release code.
 ms.prod: devops
 ms.technology: devops-cicd
