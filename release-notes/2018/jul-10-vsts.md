@@ -124,7 +124,7 @@ Release gates enable automatic evaluation of health criteria before a release is
 
 ### Get started with pre-installed Package Management
 
-The Package Management extension is pre-installed into all accounts. If you're using the new navigation preview, look for the pink stack of packages just below the test tube. If you're still on the current navigation, look for the **Packages** hub in the **Build and release** hub group. Each account comes with 5 free Package Management users, and additional users can be purchased from [the Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.feed). Manage extensions using the menu in the top-right of the navigation.
+The Package Management extension is pre-installed into all accounts. If you're using the new navigation preview, look for it at the bottom of the list of services. If you're still on the current navigation, look for the **Packages** hub in the **Build and release** hub group. Each account comes with 5 free Package Management users, and additional users can be purchased from [the Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.feed). Manage extensions using the menu in the top-right of the navigation.
 
 > [!div class="mx-imgBorder"]
 ![Packages service](_img/137_06.png)
