@@ -236,7 +236,6 @@ featureFlags:
                                     <ul>
                                         <li><a class="barLink" href="/vsts/git/index">Git Repositories</a></li>
                                         <li><a class="barLink" href="/vsts/git/tutorial/pullrequest">Pull Requests</a></li>
-                                        <li><a class="barLink" href="/vsts/git/concepts/forks">Forks</a></li>
                                         <li><a class="barLink" href="/vsts/git/branch-policies">Branch Policies</a></li>
                                         <li><a class="barLink" href="/vsts/tfvc/index">TFVC</a></li>
                                     </ul>
@@ -246,9 +245,6 @@ featureFlags:
                                         <li><a class="barLink" href="/vsts/pipelines/index">Continuous Testing</a></li>
                                         <li><a class="barLink" href="/vsts/deploy-azure/index">Deploy to Azure</a></li>
                                         <li><a class="barLink" href="/vsts/package/index">Package Management</a></li>
-                                        <li><a class="barLink" href="/vsts/pipelines/library/index">Library Assets</a></li>
-                                        <li><a class="barLink" href="/vsts/pipelines/agents/agents">Hosted &amp; Private Agents</a></li>
-                                        <li><a class="barLink" href="/vsts/pipelines/tasks">Task Reference</a></li>
                                     </ul>
                                     <h3>Azure Devops Test</h3>
                                     <ul>
@@ -256,6 +252,7 @@ featureFlags:
                                         <li><a class="barLink" href="/vsts/test/index">Exploratory &amp; Manual Testing</a></li>
                                         <li><a class="barLink" href="/vsts/test/load-test/index">Load Testing</a></li>
                                         <li><a class="barLink" href="/vsts/pipelines/index">Continuous Testing</a></li>
+                                        <li><a class="barLink" href="/vsts/test/request-stakeholder-feedback">Request Stakeholder Feedback</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -305,9 +302,9 @@ featureFlags:
                                         <li><a class="barLink" href="/vsts/notifications/index">Notifications</a></li>
                                         <li><a class="barLink" href="/vsts/marketplace/index">Manage Extensions</a></li>
                                     </ul>
-                                    <h3>Marketplace and Extensions</h3>
+                                    <h3>Marketplace and Extend</h3>
                                     <ul>
-                                        <li><a class="barLink" href="/vsts/marketplace/overview">Discover Extensions</a></li>
+                                        <li><a class="barLink" href="/vsts/marketplace/overview">Discover & Manage Extensions</a></li>
                                         <li><a class="barLink" href="/vsts/extend/index">Develop Extensions</a></li>
                                         <li><a class="barLink" href="/vsts/integrate/index">Build Apps</a></li>
                                         <li><a class="barLink" href="/vsts/service-hooks/index">Service Hooks</a></li>
@@ -1301,6 +1298,12 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#integration">Marketplace & Extend</a>
+                        <ul id="integration" class="cardsA">
+                            <li>
                                 <a href="/vsts/marketplace/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
@@ -1312,31 +1315,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Manage Extensions</h3>
-                                                    <p>Install or remove Marketplace extensions.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#integration">Marketplace and Extensions</a>
-                        <ul id="integration" class="cardsA">
-                            <li>
-                                <a href="/vsts/marketplace/overview">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="_img/index/i_extensions.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Discover Extensions</h3>
-                                                    <p>Browse the Visual Studio Marketplace and discover extensions for Azure Devops.</p>
+                                                    <p>Discover, install, or remove Visual Studio Marketplace extensions for Azure Devops.</p>
                                                 </div>
                                             </div>
                                         </div>
