@@ -137,9 +137,9 @@ featureFlags:
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardText">
-                                                <h3>Plan &amp; track your work</h3>
+                                                <h3>Plan & track your work</h3>
                                                 <ul class="noBullet">
-                                                    <li><a class="barLink" href="/vsts/work/kanban/index">Boards &amp; Kanban</a></li>
+                                                    <li><a class="barLink" href="/vsts/work/kanban/index">Boards (Kanban)</a></li>
                                                     <li><a class="barLink" href="/vsts/work/backlogs/index">Backlogs</a></li>
                                                     <li><a class="barLink" href="/vsts/work/scrum/index">Sprints (Scrum)</a></li>
                                                     <li><a class="barLink" href="/vsts/report/dashboards/index">Dashboards</a></li>
@@ -158,21 +158,6 @@ featureFlags:
                                                 <ul class="noBullet">
                                                     <li><a class="barLink" href="/vsts/organizations/public/index">Public Projects</a></li>
                                                     <li><a class="barLink" href="/vsts/collaborate/index">Wiki</a></li>
-                                                    <li><a class="barLink" href="/vsts/notifications/index">Notifications</a></li>
-                                                    <li><a class="barLink" href="/vsts/search/index">Search</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="cardSize">
-                                    <div class="cardPadding">
-                                        <div class="card">
-                                            <div class="cardText">
-                                                <h3>Navigation &amp; Settings</h3>
-                                                <ul class="noBullet">
                                                     <li><a class="barLink" href="/vsts/overview/navigation/">Navigation Basics</a></li>
                                                     <li><a class="barLink" href="/vsts/settings/">Settings</a></li>
                                                 </ul>
@@ -200,20 +185,9 @@ featureFlags:
                                                     <li>
                                                         <a class="barLink" href="https://www.visualstudio.com/learn/what-is-agile/"><img src="_img/index/team-services-agile.svg" alt="" />Learn about Agile</a>
                                                     </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="cardSize">
-                                    <div class="cardPadding">
-                                        <div class="card">
-                                            <div class="cardText">
-                                                <h3>Command-line tool</h3>
-                                                <ul class="noBullet">
-                                                    <li><a class="barLink" href="https://docs.microsoft.com/en-us/cli/vsts/overview"><img src="_img/index/command-line-window.svg" alt="" />Azure Devops CLI</a></li>
+                                                    <li>
+                                                        <a class="barLink" href="https://docs.microsoft.com/en-us/cli/vsts/overview"><img src="_img/index/command-line-window.svg" alt="" />Azure Devops CLI</a> 
+                                                    </li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -232,46 +206,7 @@ featureFlags:
                         <ul id="all" class="cardText">
                             <li>
                                 <div class="group">
-                                    <h3>Azure Devops Repos</h3>
-                                    <ul>
-                                        <li><a class="barLink" href="/vsts/git/index">Git Repositories</a></li>
-                                        <li><a class="barLink" href="/vsts/git/tutorial/pullrequest">Pull Requests</a></li>
-                                        <li><a class="barLink" href="/vsts/git/concepts/forks">Forks</a></li>
-                                        <li><a class="barLink" href="/vsts/git/branch-policies">Branch Policies</a></li>
-                                        <li><a class="barLink" href="/vsts/tfvc/index">TFVC</a></li>
-                                    </ul>
-                                    <h3>Azure Devops Pipelines</h3>
-                                    <ul>
-                                        <li><a class="barLink" href="/vsts/pipelines/index">Build &amp; Release</a></li>
-                                        <li><a class="barLink" href="/vsts/pipelines/index">Continuous Testing</a></li>
-                                        <li><a class="barLink" href="/vsts/deploy-azure/index">Deploy to Azure</a></li>
-                                        <li><a class="barLink" href="/vsts/package/index">Package Management</a></li>
-                                        <li><a class="barLink" href="/vsts/pipelines/library/index">Library Assets</a></li>
-                                        <li><a class="barLink" href="/vsts/pipelines/agents/agents">Hosted &amp; Private Agents</a></li>
-                                        <li><a class="barLink" href="/vsts/pipelines/tasks">Task Reference</a></li>
-                                    </ul>
-                                    <h3>Azure Devops Test</h3>
-                                    <ul>
-                                        <li><a class="barLink" href="/visualstudio/test/unit-test-your-code">Unit &amp; Functional Testing</a></li>
-                                        <li><a class="barLink" href="/vsts/test/index">Exploratory &amp; Manual Testing</a></li>
-                                        <li><a class="barLink" href="/vsts/test/load-test/index">Load Testing</a></li>
-                                        <li><a class="barLink" href="/vsts/pipelines/index">Continuous Testing</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="group">
-                                    <h3>Azure Devops Agile</h3>
-                                    <ul>
-                                      <li><a class="barLink" href="/vsts/work/work-items/index">Work Items</a></li>
-                                        <li><a class="barLink" href="/vsts/work/kanban/index">Boards (Kanban)</a></li>
-                                        <li><a class="barLink" href="/vsts/work/backlogs/index">Backlogs</a></li>
-                                        <li><a class="barLink" href="/vsts/work/scrum/index">Sprints (Scrum)</a></li>
-                                        <li><a class="barLink" href="/vsts/work/track/index">Queries</a></li>
-                                        <li><a class="barLink" href="/vsts/settings/customize/index">Customization</a></li>
-                                        <li><a class="barLink" href="/vsts/work/scale/index">Agile at Scale</a></li>
-                                    </ul>
-                                    <h3>Overview (Collaborate)</h3>
+                                    <h3>Overview</h3>
                                     <ul>
                                         <li><a class="barLink" href="/vsts/project/project-vision-status">Summary</a></li>
                                         <li><a class="barLink" href="/vsts/report/dashboards/index">Dashboards</a></li>
@@ -280,7 +215,17 @@ featureFlags:
                                         <li><a class="barLink" href="/vsts/organizations/public/index">Public Projects</a></li> 
                                         <li><a class="barLink" href="/vsts/project/navigation/preview-features">Navigation</a></li> 
                                         <li><a class="barLink" href="/vsts/project/search/index">Search</a></li>
-                                        <li><a class="barLink" href="/vsts/project/feedback/index">Feedback</a></li>
+                                    </ul>
+                                    <h3>Work (Agile)</h3>
+                                    <ul>
+                                      <li><a class="barLink" href="/vsts/work/work-items/index">Work Items</a></li>
+                                        <li><a class="barLink" href="/vsts/work/kanban/index">Boards (Kanban)</a></li>
+                                        <li><a class="barLink" href="/vsts/work/backlogs/index">Backlogs</a></li>
+                                        <li><a class="barLink" href="/vsts/work/scrum/index">Sprints (Scrum)</a></li>
+                                        <li><a class="barLink" href="/vsts/work/track/index">Queries</a></li>
+                                        <li><a class="barLink" href="/vsts/settings/customize/index">Customization</a></li>
+                                        <li><a class="barLink" href="/vsts/work/scale/index">Agile at Scale</a></li>
+                                        <li><a class="barLink" href="/vsts/project/feedback/index">Request Feedback</a></li>
                                     </ul>
                                     <h3>Analytics</h3>
                                     <ul>
@@ -293,21 +238,48 @@ featureFlags:
                             </li>
                             <li>
                                 <div class="group">
+                                    <h3>Code (Repos)</h3>
+                                    <ul>
+                                        <li><a class="barLink" href="/vsts/git/index">Git Repositories</a></li>
+                                        <li><a class="barLink" href="/vsts/git/tutorial/pullrequest">Pull Requests</a></li>
+                                        <li><a class="barLink" href="/vsts/git/concepts/forks"><del>Forks</del></a></li>
+                                        <li><a class="barLink" href="/vsts/git/branch-policies">Branch Policies</a></li>
+                                        <li><a class="barLink" href="/vsts/tfvc/index">TFVC</a></li>
+                                    </ul>
+                                    <h3>Build & Release (Pipelines)</h3>
+                                    <ul>
+                                        <li><a class="barLink" href="/vsts/pipelines/index">Build &amp; Release</a></li>
+                                        <li><a class="barLink" href="/vsts/pipelines/index">Continuous Testing</a></li>
+                                        <li><a class="barLink" href="/vsts/deploy-azure/index">Deploy to Azure</a></li>
+                                        <li><a class="barLink" href="/vsts/package/index">Package Management</a></li>
+                                        <li><a class="barLink" href="/vsts/pipelines/library/index"><del>Library Assets</del></a></li>
+                                        <li><a class="barLink" href="/vsts/pipelines/agents/agents"><del>Hosted &amp; Private Agents</del></a></li>
+                                        <li><a class="barLink" href="/vsts/pipelines/tasks"><del>Task Reference</del></a></li>
+                                    </ul>
+                                    <h3>Test</h3>
+                                    <ul>
+                                        <li><a class="barLink" href="/vsts/pipelines/index">Continuous Testing</a></li>
+                                        <li><a class="barLink" href="/vsts/test/index">Exploratory & Manual Testing</a></li>
+                                        <li><a class="barLink" href="/vsts/test/load-test/index">Load Testing</a></li>
+                                        <li><a class="barLink" href="/visualstudio/test/unit-test-your-code">Unit & Functional Testing</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="group">
                                     <h3>Settings</h3>
                                     <ul>
                                         <li><a class="barLink" href="/vsts/organizations/settings/index">Project &amp; Organization Settings</a></li>
                                         <li><a class="barLink" href="/vsts/organizations/settings/about-teams-and-settings">Scale &amp; Configure Teams</a></li>
                                         <li><a class="barLink" href="/vsts/organizations/security/index">Security &amp; Identity</a></li>
                                         <li><a class="barLink" href="/vsts/organizations/settings/index">Project Management</a></li> 
-                                        <li><a class="barLink" href="/vsts/organizations/public/index">Public Projects</a></li> 
                                         <li><a class="barLink" href="/vsts/organizations/accounts/index">Account Management</a></li>
                                         <li><a class="barLink" href="/vsts/billing/index">Billing</a></li>
                                         <li><a class="barLink" href="/vsts/notifications/index">Notifications</a></li>
-                                        <li><a class="barLink" href="/vsts/marketplace/index">Manage Extensions</a></li>
                                     </ul>
                                     <h3>Marketplace and Extensions</h3>
                                     <ul>
-                                        <li><a class="barLink" href="/vsts/marketplace/overview">Discover Extensions</a></li>
+                                        <li><a class="barLink" href="/vsts/marketplace/overview">Discover & Manage Extensions</a></li>
                                         <li><a class="barLink" href="/vsts/extend/index">Develop Extensions</a></li>
                                         <li><a class="barLink" href="/vsts/integrate/index">Build Apps</a></li>
                                         <li><a class="barLink" href="/vsts/service-hooks/index">Service Hooks</a></li>
@@ -341,7 +313,7 @@ featureFlags:
                                     </div>
                             </li>
                            <li>
-                                <a href="/vsts/work/work-items">            
+                                <a href="/vsts/work/work-items"> 
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -553,7 +525,7 @@ featureFlags:
                         </ul>
                     </li>
                     <li>
-                        <a href="#agile">Agile</a>
+                        <a href="#agile">Work (Agile)</a>
                         <ul id="agile" class="cardsA">
                             <li>
                                 <a href="/vsts/work/work-items/index">
@@ -714,7 +686,7 @@ featureFlags:
                         </ul>
                     </li>
                     <li>
-                        <a href="#code">Repos</a>
+                        <a href="#code">Code (Repos)</a>
                         <ul id="code" class="cardsA">
  
                             <li>
@@ -796,7 +768,7 @@ featureFlags:
                         </ul>
                     </li>
                     <li>
-                        <a href="#delivery">Build and Release Pipelines</a>
+                        <a href="#delivery">Build and Release (Pipelines)</a>
                         <ul id="delivery" class="cardsA">
                             <li>
                                 <a href="/vsts/pipelines/index">
@@ -867,7 +839,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>CodeFeed</h3>
+                                                    <h3>Package Management</h3>
                                                     <p>Create, host, and share NuGet and npm packages with your teams.</p>
                                                 </div>
                                             </div>
@@ -886,7 +858,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Library Assets</h3>
+                                                    <h3><del>Library Assets</del></h3>
                                                     <p>Define and use shared build and release assets for a team project.</p>
                                                 </div>
                                             </div>
@@ -905,7 +877,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Hosted &amp; Private Agents</h3>
+                                                    <h3><del>Hosted &amp; Private Agents</del></h3>
                                                     <p>Add agents as needed to support your cloud build processes.</p>
                                                 </div>
                                             </div>
@@ -924,7 +896,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Task Reference</h3>
+                                                    <h3><del>Task Reference</del></h3>
                                                     <p>Include build, utility, test, and deploy tasks in your build and release
                                                         definitions.</p>
                                                 </div>
@@ -1027,7 +999,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Feedback</h3>
+                                                    <h3>Request Stakeholder Feedback</h3>
                                                     <p>Request feedback on your working apps and quickly capture it within a
                                                         work item form.</p>
                                                 </div>
@@ -1039,7 +1011,7 @@ featureFlags:
                         </ul>
                     </li>
                  <li>
-                        <a href="#artifacts">Artifacts</a>
+                        <a href="#artifacts">Packages (Artifacts)</a>
                         <ul id="artifacts" class="cardsA">
                             <li>
                                 <a href="/vsts/package/index">
@@ -1071,7 +1043,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>CodeFeed</h3>
+                                                    <h3>Package Management</h3>
                                                     <p>Create, host, and share NuGet and npm packages with your teams.</p>
                                                 </div>
                                             </div>
@@ -1084,6 +1056,25 @@ featureFlags:
                  <li>
                         <a href="#analytics">Analytics</a>
                         <ul id="analytics" class="cardsA">
+                            <li>
+                                <a href="/vsts/report/dashboards/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/i_dashboard.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Dashboards</h3>
+                                                    <p>Monitor progress and trends to support improvement of team processes.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
                             <li>
                                 <a href="/vsts/report/analytics/index">
                                     <div class="cardSize">
@@ -1458,12 +1449,6 @@ featureFlags:
                                     </div>
                                 </a>
                             </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#marketplace">Marketplace</a>
-                        <ul id="marketplace" class="cardsA">
-
                         </ul>
                     </li>
                 </ul>
