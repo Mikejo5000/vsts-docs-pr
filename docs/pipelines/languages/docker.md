@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 
 # Docker
 
-This guidance explains how to build Docker container images. Before you read this topic, you should complete one of the quickstarts and create a basic build pipeline: [designer](../get-started-designer.md) or [YAML](../get-started-yaml.md).
+This guidance explains how to build Docker images. Before you read this topic, you should complete one of the quickstarts and create a basic build pipeline: [designer](../get-started-designer.md) or [YAML](../get-started-yaml.md).
 
 ::: moniker range="tfs-2017"
 
@@ -49,15 +49,15 @@ https://github.com/adventworks/dotnetcore-sample
 > [!NOTE]
 > If you are new to creating build pipelines, then complete the [designer](../get-started-designer.md) quickstart first before following these instructions.
 
-* After you have the sample code in your own repository, create a build definition and select the **ASP.NET Core** template. This automatically adds the tasks required to build the sample repository.
-* Select **Process** under the **Tasks** tab of the build pipeline editor, and change its propertiesas follows:
+* After you have the sample code in your own repository, create a build pipeline and select the **ASP.NET Core** template. This automatically adds the tasks required to build the sample repository.
+* Select **Process** under the **Tasks** tab of the build pipeline editor, and change its properties as follows:
   * **Agent queue:** `Hosted Linux Preview`
   * **Projects to test:** `**/*[Tt]ests/*.csproj`
 * Modify the **.NET Core Publish** task in the build pipeline as follows:
   * **Arguments:** `--configuration $(BuildConfiguration) --output out`
   * **Zip published projects:**: Unchecked
 * Remove the **Publish artifact** task.
-* Add **Docker** task after the **.NET Core Publish** task and configure it as follows to build an image using the Dockerfile in the repository:
+* Add **Docker** task after the **.NET Core Publish** task and configure it as follows to build an image using the **Dockerfile** in the repository:
   * **Action:** `Build an image`
 * Add another **Docker** task and configure it as follows to push the image to your Docker hub registry:
   * **Action:** `Push an image`
@@ -104,7 +104,7 @@ Save the pipeline and queue a build to see it in action. Then read through the r
           arguments: '--configuration $(buildConfiguration) --output out'
           zipAfterPublish: false
     
-    # Replace adventworks in the following with the name of your docker id.
+      # Replace adventworks in the following with the name of your Docker id.
       - script: docker build -f Dockerfile -t adventworks/dotnetcore-sample .
     ```
     
@@ -126,11 +126,11 @@ YAML builds are not yet available on TFS.
 
 ::: moniker range="vsts"
 
-You can use VSTS to build and push your Docker images without needing to set up any infrastructure of your own. You can build either Windows or Linux container images. The [Microsoft-hosted agents](../agents/hosted.md) in VSTS have Docker pre-installed on them. We frequently update the version of Docker on the hosted images. To know which version of Docker is installed, see [Microsoft-hosted agents](../agents/hosted.md).
+You can use VSTS to build and push your Docker images without needing to set up any infrastructure of your own. You can build either Windows or Linux container images. The [Microsoft-hosted agents](../agents/hosted.md) in VSTS have Docker pre-installed on them. We frequently update the version of Docker on these agent machines. To know which version of Docker is installed, see [Microsoft-hosted agents](../agents/hosted.md).
 
 # [Designer](#tab/designer)
 
-In the build definition, select **Tasks**, then select the **Process** node, and finally select the **Agent queue** that you want to use.
+In the build pipeline, select **Tasks**, then select the **Process** node, and finally select the **Agent queue** that you want to use.
 
 # [YAML](#tab/yaml)
 
@@ -142,9 +142,9 @@ queue: 'Hosted Linux Preview' # other options - 'Hosted VS2017'
 
 ---
 
-Use the **Hosted Linux Preview** agent queue to build Linux containers. When you use this queue, you get a fresh Linux virtual machine with each build. This virtual machine runs the [agent](../agents/agents.md) and acts as a Docker host. Tasks in your build do not directly run on the virtual machine. Instead, they run in a Microsoft-provided Docker container on the virtual machine. [Shared volumes](https://docs.docker.com/storage/volumes/) are used to faciliate communication between the virtual machine and the container. You can run docker commands as part of your build, since the `docker.sock` socket of the host is volume mounted in the container.
+Use the **Hosted Linux Preview** agent queue to build Linux container images. When you use this queue, you get a fresh Linux virtual machine with each build. This virtual machine runs the [agent](../agents/agents.md) and acts as a Docker host. Tasks in your build do not directly run on the virtual machine. Instead, they run in a Microsoft-provided Docker container on the virtual machine. [Shared volumes](https://docs.docker.com/storage/volumes/) are used to faciliate communication between the virtual machine and the container. You can run Docker commands as part of your build, since the `docker.sock` socket of the host is volume mounted in the container.
 
-Use the **Hosted VS2017** agent queue to build Windows containers. When you use this queue, you get a fresh Windows Server 2016 virtual machine with each build. The virtual machine runs the [agent](../agents/agents.md) and acts as a Docker host. Some of the common images such as `microsoft/dotnet-framework`, `microsoft/aspnet`, `microsoft/aspnetcore-build`, `microsoft/windowsservercore`, and `microsoft/nanoserver` are pre-cached on this Docker host. Building new images from these images will therefore be faster.
+Use the **Hosted VS2017** agent queue to build Windows container images. When you use this queue, you get a fresh Windows Server 2016 virtual machine with each build. The virtual machine runs the [agent](../agents/agents.md) and acts as a Docker host. Some of the common images such as `microsoft/dotnet-framework`, `microsoft/aspnet`, `microsoft/aspnetcore-build`, `microsoft/windowsservercore`, and `microsoft/nanoserver` are pre-cached on this Docker host. Building new images from these images will therefore be faster.
 
 > [!NOTE]
 > Using Hosted VS2017 agents, you can only build Docker images with Windows Server 2016 as the container OS. You cannot build Docker images with Windows Server 1803 as the container OS since the host operating system on the virtual machines is Windows Server 2016.
@@ -176,12 +176,12 @@ You can build a Docker image by running a script with `docker build` command or 
 
 1. Select the task and, for **Action**, select **Build an image**.
 
-1. If your Dockerfile depends on an image that is present in an authenticated registry, for e.g., a private Docker registry or Azure Container Registry, then specify those properties in the **Container registry type** and the corresponding service connection.
+1. If your **Dockerfile** depends on an image that is present in an authenticated registry, for e.g., a private Docker registry or Azure Container Registry, then specify those properties in the **Container registry type** and the corresponding service connection.
 
 # [YAML](#tab/yaml)
 
 ::: moniker range="vsts"
-To run the docker command via a script, add the following snippet to `.vsts-ci.yml` file.
+To run the Docker command via a script, add the following snippet to `.vsts-ci.yml` file.
 ```yaml
 steps:
 - script: docker build -f <Dockerfile>
@@ -209,21 +209,30 @@ YAML builds are not yet available on TFS.
 
 You can build and test your app, before creating the Docker image, in two ways:
 
-1. Use the build pipeline as the primary means to orchestrate building your code, running tests, and creating an image. In this approach, you leverage [tasks](../process/tasks.md) to build and test your code. This approach is useful if you want to:
-  * leverage (in-built or Marketplace) tasks to define how you build and test your app
-  * run tasks that require authentication via service endpoints (e.g., authenticated NuGet or npm feeds)
-  * publish test results  
-  To create an image, you run a `docker build` command at the end of your build pipeline. This requires a  `Dockerfile` to be present in your repository. The `Dockerfile` copies the results of your build into the container.
+* Orchestrate using build pipeline
+* Orchestrate using **Dockerfile**
 
-2. Use `Dockerfile` as the primary means to build your code and run tests. In this approach, there is a single step in your build pipeline to run `docker build`. The rest of the steps are orchestrated by the docker build process itself. It is common to use a [multi-stage docker build](https://docs.docker.com/develop/develop-images/multistage-build/) in this approach. The advantage of this approach is that your build process is entirely captured in your Dockerfile and it is portable between the development machine and any build system. However, you cannot leverage specific features of VSTS or TFS such as tasks, phases, or test analytics.
+### Orchestrate using build pipeline
 
-The instructions in the example above are based on the first approach. Following that example, you can observe that:
+In this approach, you use the build pipeline as the primary means to orchestrate building your code, running tests, and creating an image. This approach is useful if you want to:
+
+* leverage (in-built or Marketplace) tasks to define how you build and test your app
+* run tasks that require authentication via service endpoints (e.g., authenticated NuGet or npm feeds)
+* publish test results  
+
+To create an image, you run a `docker build` command at the end of your build pipeline. The **Dockerfile** contains the instructions to copy the results of your build into the container.
+
+The instructions in the example above are based on the first approach. If you followed that example, you can observe that:
 
 * **.NET Core** task is used to build, test, and publish the app
 * Test results are published by the **.NET Core** task
 * `docker build` command is invoked either through a task or a script at the end of the build pipeline.
 
-For the second approach, create a Dockerfile at the root of your repository with the following contents:
+### Orchestrate using Dockerfile
+
+In this approach, you use **Dockerfile** as the primary means to build your code and run tests. The build pipeline has a single step to run `docker build`. The rest of the steps are orchestrated by the Docker build process itself. It is common to use a [multi-stage Docker build](https://docs.docker.com/develop/develop-images/multistage-build/) in this approach. The advantage of this approach is that your build process is entirely captured in your **Dockerfile** and it is portable between the development machine and any build system. However, you cannot leverage specific features of VSTS or TFS such as tasks, phases, or test analytics.
+
+To follow this approach, create a **Dockerfile** at the root of your repository with the following contents:
 
 ```
 # First stage of multi-stage build
@@ -266,7 +275,7 @@ variables:
   buildConfiguration: 'Release'
 
 steps:
-  - script: docker build -f Dockerfile.full -t adventworks/dotnetcore-sample .
+  - script: docker build -f Dockerfile -t adventworks/dotnetcore-sample .
 ```
 
 ::: moniker-end
@@ -286,18 +295,15 @@ If you are able to build your image on your development machine, but are having 
 
 ::: moniker range="vsts"
 
-* Check that you are using the correct type of agents - Microsoft-hosted Linux or Microsoft-hosted Windows - to mimic the type of containers you build on your development machine.
+* Check that you are using the correct type of agents - Microsoft-hosted Linux or Microsoft-hosted Windows - to mimic the type of container images you build on your development machine.
 
-* If you use Microsoft-hosted agents to run your builds, the docker images are not cached from build to build since you get a new machine for every build. This will make your builds on Microsoft-hosted agents run longer than those on your development machine.
+* If you use Microsoft-hosted agents to run your builds, the Docker images are not cached from build to build since you get a new machine for every build. This will make your builds on Microsoft-hosted agents run longer than those on your development machine.
 
 ::: moniker-end
 
-* Check that the versions of the .NET Core SDK and runtime on your development machine match those on the agent.
-  You can include a command line script `dotnet --version` in your build definition to print the version of .NET Core SDK.
-  Either use the **.NET Core Tool Installer** (as explained in this guidance) to deploy the same version on the agent,
-  or update your projects and development machine to the newer version of .NET Core SDK.
+* Check the version of Docker on the agent. You can include a command line script `docker --version` in your build pipeline to print the version of Docker.
 
-* You may be using some logic in Visual Studio IDE that is not encoded in your build definition.
+* You may be using some logic in Visual Studio IDE that is not encoded in your build pipeline.
   VSTS or TFS run each of the commands you specify in the tasks one after the other in a new process.
   Look at the logs from the VSTS or TFS build to see the exact commands that ran as part of the build.
   Repeat the same commands in the same order on your development machine to locate the problem.
