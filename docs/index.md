@@ -271,20 +271,24 @@ featureFlags:
                                         <li><a class="barLink" href="/vsts/settings/customize/index">Customization</a></li>
                                         <li><a class="barLink" href="/vsts/work/scale/index">Agile at Scale</a></li>
                                     </ul>
-                                    <h3>Overview (Collaboration)</h3>
+                                    <h3>Overview (Collaborate)</h3>
                                     <ul>
+                                        <li><a class="barLink" href="/vsts/project/project-vision-status">Summary</a></li>
                                         <li><a class="barLink" href="/vsts/report/dashboards/index">Dashboards</a></li>
-                                        <li><a class="barLink" href="/vsts/project/wiki/index">READMEs &amp; Wikis</a></li>
-<!---                                   <li><a class="barLink" href="/vsts/organizations/public/index">Public Projects</a></li> 
-                                        <li><a class="barLink" href="/vsts/project/navigation/index">Navigation</a></li> -->
+                                        <li><a class="barLink" href="/vsts/report/analytics/what-are-analytics-views">Analytics views</a></li>
+                                        <li><a class="barLink" href="/vsts/project/wiki/index">Wiki</a></li>
+                                        <li><a class="barLink" href="/vsts/organizations/public/index">Public Projects</a></li> 
+                                        <li><a class="barLink" href="/vsts/project/navigation/preview-features">Navigation</a></li> 
                                         <li><a class="barLink" href="/vsts/notifications/index">Notifications</a></li>
                                         <li><a class="barLink" href="/vsts/project/search/index">Search</a></li>
                                         <li><a class="barLink" href="/vsts/project/feedback/index">Feedback</a></li>
                                     </ul>
                                     <h3>Analytics</h3>
                                     <ul>
+                                        <li><a class="barLink" href="/vsts/report/dashboards/index">Dashboards</a></li>
                                         <li><a class="barLink" href="/vsts/report/analytics/index">Analytics</a></li>
                                         <li><a class="barLink" href="/vsts/report/powerbi/index">Power BI</a></li>
+                                        <li><a class="barLink" href="/vsts/report/extend-analytics/index">Extend Analytics with OData</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -295,6 +299,8 @@ featureFlags:
                                         <li><a class="barLink" href="/vsts/organizations/settings/index">Project &amp; Organization Settings</a></li>
                                         <li><a class="barLink" href="/vsts/organizations/settings/about-teams-and-settings">Scale &amp; Configure Teams</a></li>
                                         <li><a class="barLink" href="/vsts/organizations/security/index">Security &amp; Identity</a></li>
+                                        <li><a class="barLink" href="/vsts/organizations/settings/index">Project Management</a></li> 
+                                        <li><a class="barLink" href="/vsts/organizations/public/index">Public Projects</a></li> 
                                         <li><a class="barLink" href="/vsts/organizations/accounts/index">Account Management</a></li>
                                         <li><a class="barLink" href="/vsts/billing/index">Billing</a></li>
                                         <li><a class="barLink" href="/vsts/marketplace/index">Manage Extensions</a></li>
@@ -433,6 +439,25 @@ featureFlags:
                         <a href="#overview">Overview</a>
                         <ul id="overview" class="cardsA">
                             <li>
+                                <a href="/vsts/project/project-vision-status">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/logo_vs-team-services.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Project Summary</h3>
+                                                    <p>Share your project vision and view cross project activity from the project summary.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
                                 <a href="/vsts/report/dashboards/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
@@ -445,6 +470,25 @@ featureFlags:
                                                 <div class="cardText">
                                                     <h3>Dashboards</h3>
                                                     <p>Monitor progress and trends to support improvement of team processes.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/vsts/report/analytics/what-are-analytics-views">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/i_analytics.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Analytics views</h3>
+                                                    <p>Define filter critera to support creation of Power BI reports using the Analytics service.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -470,27 +514,8 @@ featureFlags:
                                     </div>
                                 </a>
                             </li>
-<!---                            <li>
-                                <a href="/vsts/organizations/public/index">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/media/common/i_reference.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Public Projects</h3>
-                                                    <p>Open your projects for wider collaboration.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>  
                             <li>
-                                <a href="/vsts/project/navigation/index">
+                                <a href="/vsts/project/navigation/preview-features">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -500,14 +525,14 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Navigation</h3>
+                                                    <h3>Navigation Basics</h3>
                                                     <p>Choose an app, team, project or setting. Add work items, dashboards, and other artifacts.</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </a>
-                            </li>  --> 
+                            </li>  
                             <li>
                                 <a href="/vsts/notifications/index">
                                     <div class="cardSize">
@@ -1162,6 +1187,44 @@ featureFlags:
                                     </div>
                                 </a>
                             </li>
+                            <li>
+                                <a href="/vsts/organizations/settings/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/logo_vs-team-services.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Project Management</h3>
+                                                    <p>Add, rename, and delete projects.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>  
+                            <li>
+                                <a href="/vsts/organizations/public/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/public.png" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Public Projects</h3>
+                                                    <p>Open your projects for wider collaboration.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>  
                             <li>
                                 <a href="/vsts/organizations/settings/about-teams-and-settings">
                                     <div class="cardSize">
