@@ -44,6 +44,8 @@ If you want some sample code that works with this guidance, import (into VSTS or
 https://github.com/adventworks/dotnetcore-sample
 ```
 
+To build a Docker image, you need a **Dockerfile**. The sample code contains a Dockerfile you can use with these instructions.
+
 # [Designer](#tab/designer)
 
 > [!NOTE]
@@ -204,7 +206,6 @@ YAML builds are not yet available on TFS.
 
 ---
 
-
 ## Integrate with app build
 
 You can build and test your app, before creating the Docker image, in two ways:
@@ -222,11 +223,7 @@ In this approach, you use the build pipeline as the primary means to orchestrate
 
 To create an image, you run a `docker build` command at the end of your build pipeline. The **Dockerfile** contains the instructions to copy the results of your build into the container.
 
-The instructions in the example above are based on the first approach. If you followed that example, you can observe that:
-
-* **.NET Core** task is used to build, test, and publish the app
-* Test results are published by the **.NET Core** task
-* `docker build` command is invoked either through a task or a script at the end of the build pipeline.
+The instructions in the example section above demonstrate this approach.
 
 ### Orchestrate using Dockerfile
 
@@ -271,9 +268,6 @@ Create a build pipeline using the following snippet in `.vsts-ci-yml` file:
 
 ```yaml
 queue: 'Hosted Linux Preview'
-variables:
-  buildConfiguration: 'Release'
-
 steps:
   - script: docker build -f Dockerfile -t adventworks/dotnetcore-sample .
 ```
@@ -287,6 +281,43 @@ YAML builds are not yet available on TFS.
 ::: moniker-end
 
 ---
+
+## Push an image
+
+Once built, you can push the Docker image by using **Docker** task. You can push the image to a Docker registry or to Azure Container Registry (ACR). The **Docker** task sets up an authenticated connection to your registry or ACR making it easy for you to push your image.
+
+# [Designer](#tab/designer)
+
+1. Select **Tasks** in the build pipeline, select the phase that runs your build tasks, then select **+** to add a new task to that phase.
+
+1. In the task catalog, find and add the **Docker** task.
+
+1. Select the task and, for **Action**, select **Push an image**.
+
+1. Specify how to connect to your registry in the **Container registry type** and the corresponding service connection properties.
+
+# [YAML](#tab/yaml)
+
+::: moniker range="vsts"
+To push a Docker image, add the following snippet to `.vsts-ci.yml` file.
+```yaml
+steps:
+- task: Docker@0
+  displayName: Push an image
+  inputs:
+    containerregistrytype: 'Container Registry'
+    dockerRegistryConnection: 'Adventworks DockerHub'   # replace with your Docker hub service connection
+    action: 'Push an image'
+```
+::: moniker-end
+
+::: moniker range="< vsts"
+YAML builds are not yet available on TFS.
+::: moniker-end
+
+---
+
+By default, this task tags your image as `<Docker id>/<repo name>:<build id>`
 
 <a name="troubleshooting"></a>
 ## Troubleshooting
@@ -302,40 +333,3 @@ If you are able to build your image on your development machine, but are having 
 ::: moniker-end
 
 * Check the version of Docker on the agent. You can include a command line script `docker --version` in your build pipeline to print the version of Docker.
-
-* You may be using some logic in Visual Studio IDE that is not encoded in your build pipeline.
-  VSTS or TFS run each of the commands you specify in the tasks one after the other in a new process.
-  Look at the logs from the VSTS or TFS build to see the exact commands that ran as part of the build.
-  Repeat the same commands in the same order on your development machine to locate the problem.
-
-* If you have a mixed solution that includes some .NET Core projects and some .NET Framework projects,
-  you should also use the **NuGet** task to restore packages specified in `package.json` files.
-  Similarly, you should add **MSBuild** or **Visual Studio Build** tasks to build the .NET Framework projects.
-
-* If your builds fail intermittently while restoring packages, either Nuget.org is having issues or there are
-  networking problems between the Azure data center and Nuget.org. These are not under our control, and you may
-  need to explore whether using VSTS Package Management with Nuget.org as an upstream source improves the reliability
-  of your builds.
-
-* Occasionally, when we roll out an update to the hosted images with a new version of .NET Core SDK or Visual Studio,
-  something may break your build. This can happen, for example, if a newer version or feature of the NuGet tool
-  is shipped with the SDK. To isolate these problems, use the **.NET Core Tool Installer** task to specify the version
-  of the .NET Core SDK used in your build.
-
-## Q&A
-
-### Where can I learn more about the VSTS and TFS Package Management service?
-
-[Package Management in VSTS and TFS](../../package/index.md)
-
-### Where can I learn more about .NET Core commands?
-
-[.NET Core command-line interface (CLI) tools](/dotnet/core/tools/)
-
-### Where can I learn more about running tests in my solution?
-
-[Unit testing in .NET Core projects](/dotnet/core/testing/)
-
-### Where can I learn more about tasks?
-
-[Build and release tasks](../tasks/index.md)
