@@ -31,6 +31,7 @@ Wiki:
 
 - [Link to headings within a page](#link-to-headings-within-a-page)
 - [View broken links](#view-broken-links)
+- [Allow attachments in folders](#attachments-in-folders)
 - [Open page in new tab](#open-page-in-new-tab)
 
 Build and release:
@@ -81,17 +82,30 @@ See the [Set branch permissions](/vsts/git/branch-permissions?view=vsts) documen
 
 ### Link to headings within a page
 
-Now you can click the link icon next to any section heading in a wiki page to generate a URL directly to that section. You can then copy that URL and share it with team members to link them directly to that section.
+Now you can click the link icon next to any section heading in a wiki page to generate a URL directly to that section. You can then copy that URL and share it with team members to link them directly to that section. This feature was requested in the following [user voice](https://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/suggestions/33012745-wiki-link-to-headings).
 
 > [!div class="mx-imgBorder"]
 ![Wiki heading URL](_img/137_03.png)
 
 ### View broken links
 
-All links in a wiki that are not linked properly will appear in a distinct red color and broken link icon, giving you a visual clue of all broken links in a wiki page.
+All links in a wiki that are not linked properly will appear in a distinct red color and broken link icon, giving you a visual clue of all broken links in a wiki page. 
 
 > [!div class="mx-imgBorder"]
 ![Wiki broken links](_img/137_02.png)
+
+
+### Images and attachments in folders
+
+While editing wiki pages offline it is easier to add attachments and images in the same directory as the wiki page. Now, you can add an attachment or an image in any folder in the Wiki (git) repo and link it to your wiki page. This feature was requested in the following [user voice](https://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/suggestions/33308998-allow-attachments-in-folders-of-wiki).
+
+
+> [!div class="mx-imgBorder"]
+![Wiki image in git repo folder](_img/137_08.png)
+
+> [!div class="mx-imgBorder"]
+![Wiki git repo image appears in Wiki page](_img/137_09.png)
+
 
 ### Open page in new tab
 
@@ -99,6 +113,8 @@ Now you can right click on a wiki page and open it in new tab or simply press CT
 
 > [!div class="mx-imgBorder"]
 ![Wiki new tab](_img/137_04.png)
+
+
 
 ## Build and Release
 
