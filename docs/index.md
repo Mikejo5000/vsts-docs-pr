@@ -279,7 +279,6 @@ featureFlags:
                                         <li><a class="barLink" href="/vsts/project/wiki/index">Wiki</a></li>
                                         <li><a class="barLink" href="/vsts/organizations/public/index">Public Projects</a></li> 
                                         <li><a class="barLink" href="/vsts/project/navigation/preview-features">Navigation</a></li> 
-                                        <li><a class="barLink" href="/vsts/notifications/index">Notifications</a></li>
                                         <li><a class="barLink" href="/vsts/project/search/index">Search</a></li>
                                         <li><a class="barLink" href="/vsts/project/feedback/index">Feedback</a></li>
                                     </ul>
@@ -303,6 +302,7 @@ featureFlags:
                                         <li><a class="barLink" href="/vsts/organizations/public/index">Public Projects</a></li> 
                                         <li><a class="barLink" href="/vsts/organizations/accounts/index">Account Management</a></li>
                                         <li><a class="barLink" href="/vsts/billing/index">Billing</a></li>
+                                        <li><a class="barLink" href="/vsts/notifications/index">Notifications</a></li>
                                         <li><a class="barLink" href="/vsts/marketplace/index">Manage Extensions</a></li>
                                     </ul>
                                     <h3>Extend</h3>
@@ -521,7 +521,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/navigation.png" alt="" />
+                                                        <img src="_img/index/i_agile.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -533,25 +533,6 @@ featureFlags:
                                     </div>
                                 </a>
                             </li>  
-                            <li>
-                                <a href="/vsts/notifications/index">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/media/common/i_alert.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Notifications</h3>
-                                                    <p>Define which events generate alerts or post messages in third party tools.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
                             <li>
                                 <a href="/vsts/project/search/index">
                                     <div class="cardSize">
@@ -566,26 +547,6 @@ featureFlags:
                                                     <h3>Search</h3>
                                                     <p>Quickly find the code or work items you need to access across your account
                                                         or collection.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/vsts/project/feedback/index">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/media/common/i_feedback.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Feedback</h3>
-                                                    <p>Request feedback on your working apps and quickly capture it within a
-                                                        work item form.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -727,6 +688,26 @@ featureFlags:
                                                     <h3>Agile at Scale</h3>
                                                     <p>Grow your organization, support autonomous teams, and gain visibility
                                                         across teams.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/vsts/project/feedback/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com/media/common/i_feedback.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Feedback</h3>
+                                                    <p>Request feedback on your working apps and quickly capture it within a
+                                                        work item form.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -1038,6 +1019,26 @@ featureFlags:
                                     </div>
                                 </a>
                             </li>
+                            <li>
+                                <a href="/vsts/project/feedback/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com/media/common/i_feedback.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Feedback</h3>
+                                                    <p>Request feedback on your working apps and quickly capture it within a
+                                                        work item form.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
                         </ul>
                     </li>
                  <li>
@@ -1277,6 +1278,25 @@ featureFlags:
                                                 <div class="cardText">
                                                     <h3>Billing</h3>
                                                     <p>Manage subscriptions, extension purchases, and Azure Active Directory.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/vsts/notifications/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com/media/common/i_alert.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Notifications</h3>
+                                                    <p>Define which events generate alerts or post messages in third party tools.</p>
                                                 </div>
                                             </div>
                                         </div>
