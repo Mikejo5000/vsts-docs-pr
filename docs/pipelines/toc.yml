@@ -6,12 +6,12 @@
     href: overview.md
 - name: Quickstarts
   items:
-    - name: Your first build and release
-      href: get-started-designer.md
-    - name: Build a repo with YAML
-      href: get-started-yaml.md
-    - name: Azure DevOps project
-      href: get-started-azure-devops-project.md
+  - name: Your first build and release
+    href: get-started-designer.md
+  - name: Build a repo with YAML
+    href: get-started-yaml.md
+  - name: Azure DevOps project
+    href: get-started-azure-devops-project.md
 - name: Languages
   items: 
   - name: .NET
@@ -62,10 +62,12 @@
     href: apps/cd/deploy-webdeploy-iis-deploygroups.md
 - name: Tutorials
   items:
-  - name: CI builds for Git in VSTS
+  - name: Build multiple branches
     href: build/ci-build-git.md
-  - name: CI builds for GitHub repo
+  - name: Build your GitHub repo
     href: build/ci-build-github.md
+  - name: Build OSS repos
+    href: build/ci-public.md
   - name: CD to Azure web app
     href: apps/cd/deploy-webdeploy-webapps.md
   - name: Set up multi-stage release
@@ -116,7 +118,7 @@
     items:
     - name: What is Release Management?
       href: release/what-is-release-management.md
-    - name: Release definitions
+    - name: Release pipelines
       href: release/index.md
     - name: Environments
       href: release/environments.md
@@ -169,7 +171,7 @@
       href: library/variable-groups.md
     - name: Task groups
       href: library/task-groups.md
-    - name: Service endpoints
+    - name: Service connections
       href: library/service-endpoints.md
     - name: Secure files
       href: library/secure-files.md

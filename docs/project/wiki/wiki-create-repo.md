@@ -24,7 +24,7 @@ Each team project can be provisioned with a wiki. Use it to share information wi
 
 ::: moniker range="tfs-2018"
 >[!NOTE] 
->The built-in wiki is available with TFS 2018 and later versions. To download TFS 2018, see the [TFS 2018 Release Notes](https://www.visualstudio.com/en-us/news/releasenotes/tfs2018-relnotes). If you were using the Wiki Marketplace extension, you can [migrate your existing pages to the new team project wiki](migrate-extension-wiki-pages.md).
+>The built-in wiki is available with TFS 2018 and later versions. To download TFS 2018, see the [TFS 2018 Release Notes](https://visualstudio.microsoft.com/en-us/news/releasenotes/tfs2018-relnotes). If you were using the Wiki Marketplace extension, you can [migrate your existing pages to the new team project wiki](migrate-extension-wiki-pages.md).
 
 ::: moniker-end
 
@@ -33,7 +33,7 @@ Each team project wiki is powered by a Git repository in the back-end. When you 
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2018"
+::: moniker range="tfs-2018"
 Each team project wiki is powered by a Git repository in the back-end. When you create a team project, a Wiki Git repo is not created by default. To start using a wiki, you must  provision a Git repository to store your wiki markdown files. 
 
 ::: moniker-end
