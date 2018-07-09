@@ -17,8 +17,14 @@ If you're not sure if Pipelines is right for your needs, read [Why Use Azure Dev
 
 ## Does Pipelines work with my language and tools?
 
+Insert table here of what languages and tools you can use
+
 ## What do I need to use Pipelines?
 
+Insert table here of any required tools/software to use Pipelines. Could change based off of scenario.
+
 ## How do I start using Pipelines?
+
+This is important. We need to drive home that Pipelines can change based on scenario but that ALL scenarios can be executed easily. This should probably link to a "get started" guide, or maybe multiple if we can, based on scenarios.
 
 ## Resources
