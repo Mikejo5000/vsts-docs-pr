@@ -248,13 +248,13 @@ ENTRYPOINT ["dotnet", "dotnetcore-docker-sample.dll"]
 
 Then, set up a build pipeline using the following instructions.
 
-# [Designer](tab/designer)
+# [Designer](#tab/designer)
 
 1. Select **Tasks** in the build pipeline, remove all the tasks that you may have in the pipeline.
 1. Add **Docker** task and configure its properties:
    * **Action:** Build an image
 
-# [YAML](tab/yaml)
+# [YAML](#tab/yaml)
 
 ::: moniker range="vsts"
 
@@ -282,7 +282,15 @@ YAML builds are not yet available on TFS.
 <a name="troubleshooting"></a>
 ## Troubleshooting
 
-If you are able to build your project on your development machine, but are having trouble building it on VSTS or TFS, explore the following potential causes and corrective actions:
+If you are able to build your image on your development machine, but are having trouble building it on VSTS or TFS, explore the following potential causes and corrective actions:
+
+::: moniker range="vsts"
+
+* Check that you are using the correct type of agents - Microsoft-hosted Linux or Microsoft-hosted Windows - to mimic the type of containers you build on your development machine.
+
+* If you use Microsoft-hosted agents to run your builds, the docker images are not cached from build to build since you get a new machine for every build. This will make your builds on Microsoft-hosted agents run longer than those on your development machine.
+
+::: moniker-end
 
 * Check that the versions of the .NET Core SDK and runtime on your development machine match those on the agent.
   You can include a command line script `dotnet --version` in your build definition to print the version of .NET Core SDK.
