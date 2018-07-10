@@ -1911,6 +1911,7 @@ featureFlags:
                                     </div>
                                 </a>
                             </li>
+                    </li>
                     <li>
                         <a href="#tfs-security">Security</a>
                         <ul id="tfs-security" class="cardsA">
@@ -2114,8 +2115,6 @@ featureFlags:
                                     </div>
                                 </a>
                             </li>
-                        </ul>
-                    </li>
                             <li>
                                 <a href="/vsts/organizations/security/index">
                                     <div class="cardSize">
