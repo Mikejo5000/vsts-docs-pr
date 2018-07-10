@@ -1814,8 +1814,8 @@ featureFlags:
                         </ul>
                     </li>
                     <li>
-                        <a href="#backuprestore">Administer</a>
-                        <ul id="backuprestore" class="cardsA">
+                        <a href="#tfs-admin">Administer</a>
+                        <ul id="tfs-admin" class="cardsA">
                             <li>
                                 <a href="/tfs/server/admin/config-tfs-resources">
                                     <div class="cardSize">
@@ -1835,6 +1835,7 @@ featureFlags:
                                     </div>
                                 </a>
                             </li>
+                            <li>
                                 <a href="/tfs/server/admin/manage-team-project-collections">
                                     <div class="cardSize">
                                         <div class="cardPadding">
@@ -2193,7 +2194,6 @@ featureFlags:
                             </li>
                         </ul>
                     </li>
-
                     <li>
                         <a href="#deprecated-resources">Deprecated Resources</a>
                         <ul id="deprecated-resources" class="cardsA">
