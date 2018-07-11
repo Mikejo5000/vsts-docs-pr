@@ -223,7 +223,7 @@ featureFlags:
                                         <li><a class="barLink" href="/vsts/work/backlogs/index">Backlogs</a></li>
                                         <li><a class="barLink" href="/vsts/work/scrum/index">Sprints (Scrum)</a></li>
                                         <li><a class="barLink" href="/vsts/work/track/index">Queries</a></li>
-                                        <li><a class="barLink" href="/vsts/settings/customize/index">Customization</a></li>
+                                        <li><a class="barLink" href="/vsts/organizations/settings/work/inheritance-process-model">Customization</a></li>
                                         <li><a class="barLink" href="/vsts/work/scale/index">Agile at Scale</a></li>
                                         <li><a class="barLink" href="/vsts/project/feedback/index">Request Feedback</a></li>
                                     </ul>
@@ -625,7 +625,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/settings/customize/index?toc=/vsts/settings/customize/toc.json&bc=/vsts/settings/customize/breadcrumb/toc.json">
+                                <a href="/vsts/organizations/settings/work/inheritance-process-model">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -1580,27 +1580,11 @@ featureFlags:
                         <ul id="tfs-all" class="cardText">
                             <li>
                                 <div class="group">
-                                    <h3>Architecture</h3>
-                                    <ul>
-                                        <li><a class="barLink" href="/tfs/server/architecture/architecture">Architecture overview</a></li>
-                                        <li><a class="barLink" href="/tfs/server/architecture/sql-server-databases">SQL Server databases</a></li>
-                                        <li><a class="barLink" href="/tfs/server/architecture/background-job-agent">Background job agents</a></li>
-                                    </ul>
-                                    <h3>Install</h3>
+                                    <h3>Install & Upgrade</h3>
                                     <ul>
                                         <li><a class="barLink" href="/tfs/server/install/get-started">Install guide</a></li>
-                                        <li><a class="barLink" href="/tfs/server/install/sql-server/install-sql-server">Install SQL Server</a></li>
-                                        <li><a class="barLink" href="/tfs/server/install/install-proxy-setup-remote">Install TFS proxy for a remote site</a></li>
-                                    </ul>
-                                    <h3>Upgrade</h3>
-                                    <ul>
                                         <li><a class="barLink" href="/tfs/server/upgrade/get-started">Upgrade guide</a></li>
-                                        <li><a class="barLink" href="/tfs/server/upgrade/walkthrough">Scenario walkthrough</a></li>
                                     </ul>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="group">
                                     <h3>Administer</h3>
                                     <ul>
                                         <li><a class="barLink" href="/tfs/server/admin/config-tfs-resources">Configure resources</a></li>
@@ -1609,6 +1593,16 @@ featureFlags:
                                         <li><a class="barLink" href="/tfs/server/admin/change-deployment">Change your deployment</a></li>
                                         <li><a class="barLink" href="/tfs/server/ref/command-line/open-admin-console">Administration console</a></li>
                                     </ul>
+                                    <h3>Troubleshooting</h3>
+                                    <ul>
+                                        <li><a class="barLink" href="/vsts/user-guide/troubleshoot-connection">Resolve connection issues</a></li>
+                                        <li><a class="barLink" href="/vsts/organizations/accounts/faq-create-team-project">Resolve project creation issues</a></li>
+                                        <li><a class="barLink" href="/tfs/server/troubleshooting/collection-upgrade-failure">Collection upgrade failures</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="group">
                                     <h3>Security</h3>
                                     <ul>
                                         <li><a class="barLink" href="/vsts/security/about-permissions">About permissions and groups</a></li>
@@ -1618,16 +1612,15 @@ featureFlags:
                                         <li><a class="barLink" href="/vsts/organizations/security/permissions-access">Default permissions and access</a></li>
                                         <li><a class="barLink" href="/vsts/organizations/security/permissions">Permissions and groups</a></li>
                                     </ul>
+                                    <h3>Architecture</h3>
+                                    <ul>
+                                        <li><a class="barLink" href="/tfs/server/architecture/architecture">Architecture overview</a></li>
+                                        <li><a class="barLink" href="/tfs/server/architecture/sql-server-databases">SQL Server databases</a></li>
+                                    </ul>
                                 </div>
                             </li>
                             <li>
                                 <div class="group">
-                                    <h3>Troubleshooting</h3>
-                                    <ul>
-                                        <li><a class="barLink" href="/vsts/user-guide/troubleshoot-connection">Resolve connection issues</a></li>
-                                        <li><a class="barLink" href="/vsts/organizations/accounts/faq-create-team-project">Resolve project creation issues</a></li>
-                                        <li><a class="barLink" href="/tfs/server/troubleshooting/collection-upgrade-failure">Collection upgrade failures</a></li>
-                                    </ul>
                                     <h3>Additional resources</h3>
                                     <ul>
                                         <li><a class="barLink" href="/vsts/work/customize/index">Customization</a></li>
@@ -1647,69 +1640,7 @@ featureFlags:
                         </ul>
                     </li>
                     <li>
-                        <a href="#architecture">Architecture</a>
-                        <ul id="architecture" class="cardsA">
-                            <li>
-                                <a href="/tfs/server/architecture/architecture">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="/vsts/_img/index/i_build.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Architecture overview</h3>
-                                                    <p>Review how TFS is deployed within your enterprise topology, and its dependencies.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/tfs/server/architecture/sql-server-databases">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="/vsts/_img/index/sql-server-reporting.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>SQL Server databases</h3>
-                                                    <p>Understand how SQL Server and TFS work together to help you manage your team projects and resources.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/tfs/server/architecture/background-job-agent">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="/vsts/_img/index/i_queries.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Background job agents</h3>
-                                                    <p>Learn how job agents provide scheduling for your build, test, and release tasks.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#install">Install</a>
+                        <a href="#install">Install & Upgrade</a>
                         <ul id="install" class="cardsA">
                             <li>
                                 <a href="/tfs/server/install/get-started">
@@ -1724,25 +1655,6 @@ featureFlags:
                                                 <div class="cardText">
                                                     <h3>Install guide</h3>
                                                     <p>Discover the different installation types and which is best for you.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="//tfs/server/install/install-proxy-setup-remote">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="/vsts/_img/index/i_queries.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Install TFS proxy</h3>
-                                                    <p>Install TFS proxy for setting up a remote site.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -1768,11 +1680,6 @@ featureFlags:
                                     </div>
                                 </a>
                             </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#upgrade">Upgrade</a>
-                        <ul id="upgrade" class="cardsA">
                             <li>
                                 <a href="/tfs/server/upgrade/get-started">
                                     <div class="cardSize">
@@ -2066,6 +1973,49 @@ featureFlags:
                                                 <div class="cardText">
                                                     <h3>Collection upgrade failures</h3>
                                                     <p>Troubleshoot common collection upgrade failures.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#architecture">Architecture</a>
+                        <ul id="architecture" class="cardsA">
+                            <li>
+                                <a href="/tfs/server/architecture/architecture">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="/vsts/_img/index/i_build.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Architecture overview</h3>
+                                                    <p>Review how TFS is deployed within your enterprise topology, and its dependencies.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/tfs/server/architecture/sql-server-databases">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="/vsts/_img/index/sql-server-reporting.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>SQL Server databases</h3>
+                                                    <p>Understand how SQL Server and TFS work together to help you manage your team projects and resources.</p>
                                                 </div>
                                             </div>
                                         </div>
