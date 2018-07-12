@@ -1,6 +1,6 @@
 ---
 title: VSTS and TFS Documentation 
-titleSuffix: VSTS & TFS 
+titleSuffixe: VSTS & TFS 
 description: Docs for DevOps and Agile tools provided by Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) 
 layout: HubPage 
 hide_bc: true
@@ -47,7 +47,7 @@ featureFlags:
                                     </div>
                                 </div>
                                 <div class="cardText">
-                                    <span class="likeAnH3">DevOps Resource Center</span>
+                                    <span class="likeAnH3">DevOps@Microsoft</span>
                                 </div>
                             </div>
                         </div>
