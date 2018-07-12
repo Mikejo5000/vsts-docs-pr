@@ -53,7 +53,7 @@ To build a Docker image, you need a **Dockerfile**. The sample code contains a D
 
 * After you have the sample code in your own repository, create a build pipeline and select the **ASP.NET Core** template. This automatically adds the tasks required to build the sample repository.
 * Select **Process** under the **Tasks** tab of the build pipeline editor, and change its properties as follows:
-  * **Agent queue:** `Hosted Linux Preview`
+  * **Agent queue:** `Hosted Linux`
   * **Projects to test:** `**/*[Tt]ests/*.csproj`
 * Modify the **.NET Core Publish** task in the build pipeline as follows:
   * **Arguments:** `--configuration $(BuildConfiguration) --output out`
@@ -78,7 +78,7 @@ Save the pipeline and queue a build to see it in action. Then read through the r
 * The sample code above includes a `.vsts-ci.yml` file at the root of the repository. Replace the contents of this file with the following:
 
     ```yaml
-    queue: 'Hosted Linux Preview'
+    queue: 'Hosted Linux'
     variables:
       buildConfiguration: 'Release'
     
@@ -139,12 +139,12 @@ In the build pipeline, select **Tasks**, then select the **Process** node, and f
 Add the following snippet to your `.vsts-ci.yml` file to select the appropriate agent queue:
 
 ```yaml
-queue: 'Hosted Linux Preview' # other options - 'Hosted VS2017'
+queue: 'Hosted Linux' # other options - 'Hosted VS2017'
 ```
 
 ---
 
-Use the **Hosted Linux Preview** agent queue to build Linux container images. When you use this queue, you get a fresh Linux virtual machine with each build. This virtual machine runs the [agent](../agents/agents.md) and acts as a Docker host. Tasks in your build do not directly run on the virtual machine. Instead, they run in a Microsoft-provided Docker container on the virtual machine. [Shared volumes](https://docs.docker.com/storage/volumes/) are used to faciliate communication between the virtual machine and the container. You can run Docker commands as part of your build, since the `docker.sock` socket of the host is volume mounted in the container.
+Use the **Hosted Linux** agent queue to build Linux container images. When you use this queue, you get a fresh Linux virtual machine with each build. This virtual machine runs the [agent](../agents/agents.md) and acts as a Docker host. Tasks in your build do not directly run on the virtual machine. Instead, they run in a Microsoft-provided Docker container on the virtual machine. [Shared volumes](https://docs.docker.com/storage/volumes/) are used to faciliate communication between the virtual machine and the container. You can run Docker commands as part of your build, since the `docker.sock` socket of the host is volume mounted in the container.
 
 Use the **Hosted VS2017** agent queue to build Windows container images. When you use this queue, you get a fresh Windows Server 2016 virtual machine with each build. The virtual machine runs the [agent](../agents/agents.md) and acts as a Docker host. Some of the common images such as `microsoft/dotnet-framework`, `microsoft/aspnet`, `microsoft/aspnetcore-build`, `microsoft/windowsservercore`, and `microsoft/nanoserver` are pre-cached on this Docker host. Building new images from these images will therefore be faster.
 
@@ -154,9 +154,9 @@ Use the **Hosted VS2017** agent queue to build Windows container images. When yo
 > [!NOTE]
 > We do not yet have a pool of Microsoft-hosted agents running Windows Server 1803. Until this is available, you can build Windows Server 1803 images using self-hosted agents.
 
-You cannot use **Hosted Mac Preview** to build container images as Docker is not installed on these agents.
+You cannot use **Hosted Mac** to build container images as Docker is not installed on these agents.
 
-As an alternative to using Microsoft-hosted agents, you can set up a [self-hosted agent](../agents/agents.md#install) with Docker installed. This is particularly useful if you want to cache additional images on the Docker host, and further improve the performance of your builds.
+As an alternative to using Microsoft-hosted agents, you can set up [self-hosted agents](../agents/agents.md#install) with Docker installed. This is particularly useful if you want to cache additional images on the Docker host, and further improve the performance of your builds.
 
 ::: moniker-end
 
@@ -249,7 +249,7 @@ RUN dotnet publish -c Release -o out
 FROM microsoft/aspnetcore:2.0
 WORKDIR /app
 COPY --from=build-env /app/dotnetcore-sample/out .
-ENTRYPOINT ["dotnet", "dotnetcore-docker-sample.dll"]
+ENTRYPOINT ["dotnet", "dotnetcore-sample.dll"]
 ```
 
 Then, set up a build pipeline using the following instructions.
@@ -267,7 +267,7 @@ Then, set up a build pipeline using the following instructions.
 Create a build pipeline using the following snippet in `.vsts-ci-yml` file:
 
 ```yaml
-queue: 'Hosted Linux Preview'
+queue: 'Hosted Linux'
 steps:
   - script: docker build -f Dockerfile -t adventworks/dotnetcore-sample .
 ```
@@ -318,6 +318,72 @@ YAML builds are not yet available on TFS.
 ---
 
 By default, this task tags your image as `<Docker id>/<repo name>:<build id>`
+
+## Use docker-compose
+
+::: moniker range="vsts"
+
+If you use Microsoft-hosted agents, you do not have to run any additional steps to install and use docker-compose. Docker-compose allows you to bring up multiple containers and run tests. For example, you can use a docker-compose file to define two containers that need to work together to test your application - a web service containing your application and a test driver. You can build new container images every time you push a code change. You can wait for the test driver to finish running tests before bringing down the two containers.
+
+To extend the example using docker-compose, follow these steps:
+
+1. Add a file `test.sh` at the root of your repository.
+
+```
+sleep 5
+if curl web | grep -q 'ASP.NET Core '; then
+  echo "Tests passed!"
+  exit 0
+else
+  echo "Tests failed!"
+  exit 1
+fi
+```
+
+1. Add a file `Dockerfile.test` at the root of your repository.
+
+```
+FROM ubuntu:trusty
+RUN apt-get update && apt-get install -yq curl && apt-get clean
+WORKDIR /app
+ADD test.sh /app/test.sh
+CMD ["bash", "test.sh"]
+```
+
+1. Add a file `docker-compose.yml` at the root of your repository.
+
+```yaml
+sut:
+  build: .
+  dockerfile: Dockerfile.test
+  links:
+    - web
+web:
+  build: .
+  dockerfile: Dockerfile
+```
+
+# [Designer](#tab/designer)
+
+In the build pipeline, add a **Bash** task with the following inline script:
+
+```
+docker-compose build
+docker-compose up -d -p docs
+docker wait docs_sut_1
+docker-compose down
+```
+
+# [YAML](#tab/yaml)
+
+Add the following snippet to your `.vsts-ci.yml` file to select the appropriate agent queue:
+
+```yaml
+queue: 'Hosted Linux' # other options - 'Hosted VS2017'
+```
+
+---
+
 
 <a name="troubleshooting"></a>
 ## Troubleshooting
