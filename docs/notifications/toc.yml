@@ -38,6 +38,10 @@
     href: ../work/track/alerts-and-notifications.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
   - name: Collaborate in a team room (TFS)
     href: collaborate-in-a-team-room.md
+- name: Troubleshooting
+  items:
+  - name: I'm not getting email
+    href: troubleshoot-not-getting-email.md
 - name: Reference
   items:
   - name: Default notifications
