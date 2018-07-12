@@ -321,13 +321,40 @@ By default, this task tags your image as `<Docker id>/<repo name>:<build id>`
 
 ## Use docker-compose
 
+Docker-compose allows you to bring up multiple containers and run tests. For example, you can use a docker-compose file to define two containers that need to work together to test your application - a web service containing your application and a test driver. You can build new container images every time you push a code change. You can wait for the test driver to finish running tests before bringing down the two containers.
+
 ::: moniker range="vsts"
 
-If you use Microsoft-hosted agents, you do not have to run any additional steps to install and use docker-compose. Docker-compose allows you to bring up multiple containers and run tests. For example, you can use a docker-compose file to define two containers that need to work together to test your application - a web service containing your application and a test driver. You can build new container images every time you push a code change. You can wait for the test driver to finish running tests before bringing down the two containers.
+If you use Microsoft-hosted agents, you do not have to run any additional steps to install and use docker-compose.
+
+::: moniker-end
 
 To extend the example using docker-compose, follow these steps:
 
-1. Add a file `test.sh` at the root of your repository.
+Add a file `docker-compose.yml` at the root of your repository.
+
+    ```yaml
+    sut:
+      build: .
+      dockerfile: Dockerfile.test
+      links:
+        - web
+    web:
+      build: .
+      dockerfile: Dockerfile
+    ```
+    
+Add a file `Dockerfile.test` at the root of your repository.
+
+```
+FROM ubuntu:trusty
+RUN apt-get update && apt-get install -yq curl && apt-get clean
+WORKDIR /app
+ADD test.sh /app/test.sh
+CMD ["bash", "test.sh"]
+```
+
+Add a file `test.sh` at the root of your repository.
 
 ```
 sleep 5
@@ -340,50 +367,39 @@ else
 fi
 ```
 
-1. Add a file `Dockerfile.test` at the root of your repository.
-
-```
-FROM ubuntu:trusty
-RUN apt-get update && apt-get install -yq curl && apt-get clean
-WORKDIR /app
-ADD test.sh /app/test.sh
-CMD ["bash", "test.sh"]
-```
-
-1. Add a file `docker-compose.yml` at the root of your repository.
-
-```yaml
-sut:
-  build: .
-  dockerfile: Dockerfile.test
-  links:
-    - web
-web:
-  build: .
-  dockerfile: Dockerfile
-```
-
 # [Designer](#tab/designer)
 
 In the build pipeline, add a **Bash** task with the following inline script:
 
 ```
-docker-compose build
-docker-compose up -d -p docs
+docker-compose -f docs/docker-compose.yml --project-directory . -p docs up -d
 docker wait docs_sut_1
-docker-compose down
+docker-compose -f docs/docker-compose.yml --project-directory . down
 ```
 
 # [YAML](#tab/yaml)
 
+
+::: moniker range="vsts"
 Add the following snippet to your `.vsts-ci.yml` file to select the appropriate agent queue:
 
 ```yaml
-queue: 'Hosted Linux' # other options - 'Hosted VS2017'
+- script: |
+    docker-compose -f docs/docker-compose.yml --project-directory . -p docs up -d |
+    docker wait docs_sut_1 |
+    docker-compose -f docs/docker-compose.yml --project-directory . down |
 ```
+::: moniker-end
 
+::: moniker range="< vsts"
+YAML builds are not yet available on TFS.
+::: moniker-end
 ---
 
+::: moniker range="vsts"
+> [!NOTE]
+> When using Hosted Linux agents, the agents runs inside a container. The network of this container is not bridged to the network of the containers that you spin up through docker compose. As a result, you cannot communicate from the agent to one of the containers in the composition, for e.g., to drive tests. One way to tackle this is to explicitly create another test driver as a container within the composition, as we did in the example above. Another way to solve this is to use `docker-compose exec` and target a specific container in the composition from your script.
+:::moniker-end
 
 <a name="troubleshooting"></a>
 ## Troubleshooting
@@ -396,6 +412,8 @@ If you are able to build your image on your development machine, but are having 
 
 * If you use Microsoft-hosted agents to run your builds, the Docker images are not cached from build to build since you get a new machine for every build. This will make your builds on Microsoft-hosted agents run longer than those on your development machine.
 
+* If you use Hosted Linux agents, then the agent itself runs in a container. This has some implications when you use docker-compose to spin up additional containers. As an example, there is no network connectivity from the agent container to the composition containers. Use `docker-compose exec` as a way of executing commands from the agent container in one of the composition containers.
+
 ::: moniker-end
 
-* Check the version of Docker on the agent. You can include a command line script `docker --version` in your build pipeline to print the version of Docker.
+* Check the version of Docker on the agent, and ensure that it matches what you have on your development machine. You can include a command line script `docker --version` in your build pipeline to print the version of Docker.
