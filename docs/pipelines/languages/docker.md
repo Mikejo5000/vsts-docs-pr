@@ -58,6 +58,7 @@ To build a Docker image, you need a **Dockerfile**. The sample code contains a D
 * Modify the **.NET Core Publish** task in the build pipeline as follows:
   * **Arguments:** `--configuration $(BuildConfiguration) --output out`
   * **Zip published projects:**: Unchecked
+  * **Add project name to publish path:** Unchecked
 * Remove the **Publish artifact** task.
 * Add **Docker** task after the **.NET Core Publish** task and configure it as follows to build an image using the **Dockerfile** in the repository:
   * **Action:** `Build an image`
