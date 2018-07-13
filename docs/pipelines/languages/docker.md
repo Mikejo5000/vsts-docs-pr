@@ -334,16 +334,16 @@ To extend the example using docker-compose, follow these steps:
 
 Add a file `docker-compose.yml` at the root of your repository.
 
-    ```yaml
-    sut:
-      build: .
-      dockerfile: Dockerfile.test
-      links:
-        - web
-    web:
-      build: .
-      dockerfile: Dockerfile
-    ```
+```yaml
+sut:
+  build: .
+  dockerfile: Dockerfile.test
+  links:
+    - web
+web:
+  build: .
+  dockerfile: Dockerfile
+```
     
 Add a file `Dockerfile.test` at the root of your repository.
 
@@ -380,7 +380,6 @@ docker-compose -f docs/docker-compose.yml --project-directory . down
 
 # [YAML](#tab/yaml)
 
-
 ::: moniker range="vsts"
 Add the following snippet to your `.vsts-ci.yml` file.
 
@@ -399,7 +398,7 @@ YAML builds are not yet available on TFS.
 
 ::: moniker range="vsts"
 > [!NOTE]
-> When using Hosted Linux agents, the agents runs inside a container. The network of this container is not bridged to the network of the containers that you spin up through docker compose. As a result, you cannot communicate from the agent to one of the containers in the composition, for e.g., to drive tests. One way to tackle this is to explicitly create another test driver as a container within the composition, as we did in the example above. Another way to solve this is to use `docker-compose exec` and target a specific container in the composition from your script.
+> When using Hosted Linux agents, the agent runs inside a container. The network of this container is not bridged to the network of the containers that you spin up through docker compose. As a result, you cannot communicate from the agent to one of the containers in the composition, for e.g., to drive tests. One way to tackle this is to explicitly create another test driver as a container within the composition, as we did in the example above. Another way to solve this is to use `docker-compose exec` and target a specific container in the composition from your script.
 :::moniker-end
 
 ::: moniker range="vsts"
