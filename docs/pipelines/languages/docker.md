@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 
 # Docker
 
-This guidance explains how to build Docker images. Before you read this topic, you should complete one of the quickstarts and create a basic build pipeline: [designer](../get-started-designer.md) or [YAML](../get-started-yaml.md).
+This guidance explains how to build Docker images. Before you read this topic, you should complete one of the quickstarts and understand how to create a basic build pipeline: [designer](../get-started-designer.md) or [YAML](../get-started-yaml.md).
 
 ::: moniker range="tfs-2017"
 
@@ -382,7 +382,7 @@ docker-compose -f docs/docker-compose.yml --project-directory . down
 
 
 ::: moniker range="vsts"
-Add the following snippet to your `.vsts-ci.yml` file to select the appropriate agent queue:
+Add the following snippet to your `.vsts-ci.yml` file.
 
 ```yaml
 - script: |
@@ -400,6 +400,28 @@ YAML builds are not yet available on TFS.
 ::: moniker range="vsts"
 > [!NOTE]
 > When using Hosted Linux agents, the agents runs inside a container. The network of this container is not bridged to the network of the containers that you spin up through docker compose. As a result, you cannot communicate from the agent to one of the containers in the composition, for e.g., to drive tests. One way to tackle this is to explicitly create another test driver as a container within the composition, as we did in the example above. Another way to solve this is to use `docker-compose exec` and target a specific container in the composition from your script.
+:::moniker-end
+
+::: moniker range="vsts"
+## Build ARM containers
+
+When you use Hosted Linux agents, you create Linux container images for the amd64 architecture. To create images of other architectures (x86, ARM, etc), you can use a machine emulator such as [QEMU](https://www.qemu.org/). The following steps illustrate how to create an ARM container image:
+
+Author your Dockerfile so that an Intel binary of QEMU exists in the base Docker image. For example, the Raspbian Docker image from [Resin](https://resin.io/) already has this.
+
+```
+FROM resin/rpi-raspbian
+```
+
+Run the following script in your build pipeline.
+
+```
+# register QEMU binary - this can be done by running the following Docker image
+docker run --rm --privileged multiarch/qemu-user-static:register --reset
+# build your image
+docker build -t <your-image-tag> .
+```
+
 :::moniker-end
 
 <a name="troubleshooting"></a>

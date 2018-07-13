@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 
 # .NET Core
 
-This guidance explains how to build .NET Core projects. Before you read this topic, you should complete one of the quickstarts and create a basic build pipeline: [designer](../get-started-designer.md) or [YAML](../get-started-yaml.md).
+This guidance explains how to build .NET Core projects. Before you read this topic, you should complete one of the quickstarts and understand how to create a basic build pipeline: [designer](../get-started-designer.md) or [YAML](../get-started-yaml.md).
 
 ::: moniker range="tfs-2017"
 
