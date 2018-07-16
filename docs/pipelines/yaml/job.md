@@ -28,4 +28,4 @@ server:
 
 ## Variables
 
-Variables can be specified on a phase. Refer [here](yamlgettingstarted.md#Variables) for more information about variables.
+Variables can be specified on a phase. Refer [here](index.md#Variables) for more information about variables.
