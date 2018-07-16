@@ -29,6 +29,7 @@ YAML builds require the latest agent. When a YAML build is queued, your agent wi
 [Continuous integration](ci.md)
 
 ## Variables
+<a name="Variables"></a>
 
 [Predefined variables](https://docs.microsoft.com/en-us/vsts/pipelines/build/variables)
 
