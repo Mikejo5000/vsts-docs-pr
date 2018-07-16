@@ -31,7 +31,6 @@ resources:
 ```
 
 ## Repositories
-<a name="repositories"></a>
 
 The `alias` and `type` proprerties are the only shared constructs among all repository types. 
 

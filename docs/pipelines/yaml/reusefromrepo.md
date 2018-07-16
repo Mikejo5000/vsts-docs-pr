@@ -1,7 +1,7 @@
 # YAML getting started - Reuse from other repositories
 
 Repository resources may be defined in the resources section for use as template source. 
-For more details on repository resource support and properties see [repositories](resources.md#Repositories). 
+For more details on repository resource support and properties see [repositories](resources.md#repositories). 
 
 For example, a team which manages a separate repository for templates may define a definition
 in one repository which utilizes a common template for an organization. Much like the task
