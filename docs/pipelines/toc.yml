@@ -508,6 +508,8 @@
       href: tasks/tool/use-ruby-version.md
     - name: Visual Studio Test Platform Installer
       href: tasks/tool/vstest-platform-tool-installer.md
+  - name: YAML
+    href: yaml/index.md
   - name: File matching patterns
     href: tasks/file-matching-patterns.md
   - name: File and variable transform
