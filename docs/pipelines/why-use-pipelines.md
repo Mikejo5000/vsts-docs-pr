@@ -13,6 +13,12 @@ monikerRange: '>= tfs-2015'
 
 Azure DevOps Pipelines is the quickest, easiest, and safest way to automate building your projects and making them available to users.
 
+There are two main components of Pipelines: Continuous Integration (CI) and Continous Delivery (CD).
+
+**Continous Integration (CI)**: CI is the practice used by development teams to automate the merging and testing of code. Implementing CI helps to catch bugs early in the development cycle, which makes them less expensive to fix. Automated tests execute as part of the CI process to ensure quality. Artifacts are produced from CI systems and fed to release pipelines to drive frequent deployments. The Build service in VSTS and TFS helps you set up and manage CI for your applications.
+
+**Continuous Delivery (CD)**: CD is a process by which code is built, tested, and deployed to one or more test and production environments. Deploying and testing in multiple environments drives quality. CI systems produce the deployable artifacts including infrastructure and apps. Automated release pipelines consume these artifacts to release new versions and fixes to existing systems. Monitoring and alerting systems run continually to drive visibility into the entire CD process. The Release service in VSTS and TFS helps you set up and manage CD for your applications.
+
 ## What can Pipelines do?
 
 Maybe a list or a table that has things like:
@@ -22,8 +28,6 @@ Maybe a list or a table that has things like:
 * etc.
 
 AKA, what problems do I have that I can solve with Pipelines
-
-## Pipelines example scenarios
 
 ### App developer that wants to push weekly updates
 
