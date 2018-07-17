@@ -4,17 +4,16 @@
   items:
   - name: About Build and Release
     href: overview.md
-  - name: New User Guide
-    href: new-user-pipelines.md
-    items:
-      - name: Why Use Pipelines?
-        href: why-use-pipelines.md
-      - name: Basic Concepts
-        href: basic-pipelines-concepts.md
+  - name: Get started guide
+    href: get-started/new-user-pipelines.md
+  - name: Why Use Pipelines?
+    href: get-started/why-use-pipelines.md
+  - name: Quickstart
+    href: get-started-designer.md
+  - name: Basic Concepts
+    href: get-started/basic-pipelines-concepts.md
 - name: Quickstarts
   items:
-  - name: Your first build and release
-    href: get-started-designer.md
   - name: Build a repo with YAML
     href: get-started-yaml.md
   - name: Azure DevOps project

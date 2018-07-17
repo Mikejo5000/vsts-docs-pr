@@ -39,7 +39,7 @@ A **task** is the building block of a pipeline. For example, a build pipeline ma
 
 ## How Pipelines works
 
-![Pipelines into image](./_img/pipelines-image.png)
+![Pipelines into image](../_img/pipelines-image.png)
 
 Azure DevOps Pipelines is simple in its design:
 
