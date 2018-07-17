@@ -15,7 +15,7 @@ Azure DevOps Pipelines is a cloud service that you can use to automatically buil
 
 If you're not sure if Pipelines is right for your needs, read [Why Use Azure DevOps Pipelines?](why-use-pipelines.md).
 
-## What is Pipelines
+## What is Azure DevOps Pipelines?
 
 There are two main components of Pipelines: Continuous Integration (CI) and Continous Delivery (CD).
 
@@ -47,10 +47,16 @@ If your goal is to produce packages that can be consumed by others, you can publ
 
 ## What do I need to use Pipelines?
 
-Insert table here of any required tools/software to use Pipelines. Could change based off of scenario.
+To use Azure DevOps Pipelines, you'll need the following:
+
+* A VSTS or TFS account
+* Have your source code stored in a version control system (Git or TFVC)
+
 
 ## How do I start using Pipelines?
 
-This is important. We need to drive home that Pipelines can change based on scenario but that ALL scenarios can be executed easily. This should probably link to a "get started" guide, or maybe multiple if we can, based on scenarios.
+If you'd like to ramp up and learn a little more about Pipelines, visit our get started guide to [Create your first build and release flow](get-started-designer.md).
+
+If you'd like to jump in and use Pipelines with your code, check out....
 
 ## Resources
