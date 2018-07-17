@@ -21,15 +21,27 @@ Learn about the key concepts and components that are used in Pipelines. Understa
 
 ### What is 'continuous integration'?
 
+**Continuous Integration (CI)** is the practice used by development teams to automate the merging and testing of code. Implementing CI helps to catch bugs early in the development cycle, which makes them less expensive to fix. Automated tests execute as part of the CI process to ensure quality. Artifacts are produced from CI systems and fed to release pipelines to drive frequent deployments. The Build service in VSTS and TFS helps you set up and manage CI for your applications.
+
 ### What is 'continuous delivery'?
 
+**Continuous Delivery (CD)** is a process by which code is built, tested, and deployed to one or more test and production environments. Deploying and testing in multiple environments drives quality. CI systems produce the deployable artifacts including infrastructure and apps. Automated release pipelines consume these artifacts to release new versions and fixes to existing systems. Monitoring and alerting systems run continually to drive visibility into the entire CD process. The Release service in VSTS and TFS helps you set up and manage CD for your applications.
+
 ### What is a 'pipeline'?
+
+A **pipeline** is a representation of the automation process that you want to run to build and test (build pipeline) or deploy (release pipeline) your application. A pipeline is defined as a collection of tasks.
+
+### What is a 'task'?
+
+A **task** is the building block of a pipeline. For example, a build pipeline may consists of build tasks and test tasks, while a release pipeline will consist of deployment tasks.
 
 ### What is an 'agent'?
 
 ## How Pipelines works
 
 SOME NICE ILLUSTRATION HERE
+
+![Pipelines into image](./_img/pipelines-image.png)
 
 SOME VERY SIMPLE EXPLAINER TEXT
 

@@ -37,13 +37,13 @@ The starting point for configuring CI and CD for your applications is to have yo
 
 You can use Azure DevOps Pipelines with most application types, including **.NET, Java, Node, Android, Xcode, and C++.**
 
-### Deployment targets: 
+### Deployment targets
 
 Azure DevOps Pipelines can be used to deploy your code to multiple targets, such as **virtual machines, containers, on-premises and cloud platforms, PaaS services.**
 
-### Package formats: NuGet, npm, Maven
+### Package formats
 
-If your goal is to produce packages that can be consumed by others, you can publish **NuGet, npm, or Maven packages** to the build-in package management repository in VSTS or any other package management repository of your choice.
+If your goal is to produce packages that can be consumed by others, you can publish **NuGet, npm, or Maven packages** to the built-in package management repository in VSTS or any other package management repository of your choice.
 
 ## What do I need to use Pipelines?
 
