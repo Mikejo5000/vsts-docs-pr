@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 
 # Docker
 
-This guidance explains how to build Docker images. Before you read this topic, you should complete one of the quickstarts and understand how to create a basic build pipeline: [designer](../get-started-designer.md) or [YAML](../get-started-yaml.md).
+This guidance explains how to build Docker images.
 
 ::: moniker range="tfs-2017"
 
@@ -48,7 +48,7 @@ To build a Docker image, you need a **Dockerfile**. The sample code contains a D
 
 # [Designer](#tab/designer)
 
-> [!NOTE]
+> [!IMPORTANT]
 > If you are new to creating build pipelines, then complete the [designer](../get-started-designer.md) quickstart first before following these instructions.
 
 1. After you have the sample code in your own repository, create a build pipeline and select the **ASP.NET Core** template. This automatically adds the tasks required to build the sample repository.
@@ -78,10 +78,10 @@ Save the pipeline and queue a build to see it in action. Then read through the r
 
 ::: moniker range="vsts"
 
-> [!NOTE]
+> [!IMPORTANT]
 > If you are new to creating build pipelines using YAML, then complete the [YAML](../get-started-yaml.md) quickstart first before following these instructions.
 
-* The sample code above includes a `.vsts-ci.yml` file at the root of the repository. Replace the contents of this file with the following:
+The sample code above includes a `.vsts-ci.yml` file at the root of the repository. Replace the contents of this file with the following:
 
     ```yaml
     queue: 'Hosted Linux'
@@ -116,7 +116,7 @@ Save the pipeline and queue a build to see it in action. Then read through the r
       - script: docker build -f Dockerfile -t adventworks/dotnetcore-sample .
     ```
     
-* As mentioned in the above YAML snippet, make sure to change `adventworks` to the name of your Docker hub id.
+As mentioned in the above YAML snippet, make sure to change `adventworks` to the name of your Docker hub id.
     
 Push the above change to master branch in your repository, and then run a build using this YAML file. Then read through the rest of this topic to learn some of the more common changes people make to customize a Docker build.
 
