@@ -51,18 +51,23 @@ To build a Docker image, you need a **Dockerfile**. The sample code contains a D
 > [!NOTE]
 > If you are new to creating build pipelines, then complete the [designer](../get-started-designer.md) quickstart first before following these instructions.
 
-* After you have the sample code in your own repository, create a build pipeline and select the **ASP.NET Core** template. This automatically adds the tasks required to build the sample repository.
-* Select **Process** under the **Tasks** tab of the build pipeline editor, and change its properties as follows:
+1. After you have the sample code in your own repository, create a build pipeline and select the **ASP.NET Core** template. This automatically adds the tasks required to build the sample repository.
+
+1. Select **Process** under the **Tasks** tab of the build pipeline editor, and change its properties as follows:
   * **Agent queue:** `Hosted Linux`
   * **Projects to test:** `**/*[Tt]ests/*.csproj`
-* Modify the **.NET Core Publish** task in the build pipeline as follows:
+
+1. Modify the **.NET Core Publish** task in the build pipeline as follows:
   * **Arguments:** `--configuration $(BuildConfiguration) --output out`
   * **Zip published projects:**: Unchecked
   * **Add project name to publish path:** Unchecked
-* Remove the **Publish artifact** task.
-* Add **Docker** task after the **.NET Core Publish** task and configure it as follows to build an image using the **Dockerfile** in the repository:
+
+1. Remove the **Publish artifact** task.
+
+1. Add **Docker** task after the **.NET Core Publish** task and configure it as follows to build an image using the **Dockerfile** in the repository:
   * **Action:** `Build an image`
-* Add another **Docker** task and configure it as follows to push the image to your Docker hub registry:
+
+1. Add another **Docker** task and configure it as follows to push the image to your Docker hub registry:
   * **Action:** `Push an image`
   * **Container registry type:** `Container registry`
   * **Docker registry connection:** Select `New` and create a connection to your Docker hub registry.
