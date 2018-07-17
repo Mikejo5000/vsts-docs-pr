@@ -8,7 +8,7 @@ ms.topic: quickstart
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 04/09/2018
+ms.date: 07/09/2018
 monikerRange: '>= tfs-2017'
 ---
 
@@ -22,7 +22,7 @@ and easily drill down or widen your search
 ## Prepare
 
 Go to [Visual Studio Marketplace](http://go.microsoft.com/fwlink/?LinkId=703823&clcid=0x409)
-to install the extension in your VSTS account as an administrator.
+to install the extension in VSTS as an administrator.
 Non-administrative users can also go here to request the extension be added to VSTS. 
 For more details, see [Install an extension](../../marketplace/install-vsts-extension.md#install-extension) in the Marketplace documentation.
 

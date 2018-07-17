@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 04/09/2018
+ms.date: 07/09/2018
 monikerRange: '>= tfs-2017'
 ---
 
@@ -54,7 +54,7 @@ You must escape the special characters `(`,  `)`, `[`, `]`, `:`, `*`, and `?`
 by enclosing them in a phrase delimited with double-quotes `"` and `"`.
 
 When you search from inside a project, the default is to search only within that 
-project. You can navigate up to the account level to broaden your search.
+project. You can navigate up to higher levels to broaden your search.
 
 In a Git project, you see a list of the repositories it contains. 
 Use the project and repository checkboxes to widen your search to more or all projects, or to 
