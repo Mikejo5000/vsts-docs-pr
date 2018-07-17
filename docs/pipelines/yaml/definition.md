@@ -1,4 +1,19 @@
-# YAML getting started - Create a definition
+---
+title: Create a definition | VSTS & TFS    
+description: Learn how to use YAML to configure CI/CD for the app and platform of your choice.
+ms.prod: devops
+ms.technology: devops-cicd
+ms.assetid: 3c1f8df4-0ac6-47e5-8c95-928edb6dd1da
+ms.manager: douge
+ms.author: alewis
+author: ericsciple
+ms.reviewer: macoope
+ms.date: 07/17/2018
+ms.topic: reference
+monikerRange: '>= tfs-2018'
+---
+
+# Create a definition
 
 ## When using a Git repo in your VSTS team project
 

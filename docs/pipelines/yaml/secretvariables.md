@@ -1,4 +1,19 @@
-# YAML getting started - Secret variables
+---
+title: Secret variables | VSTS & TFS    
+description: Learn how to use YAML to configure CI/CD for the app and platform of your choice.
+ms.prod: devops
+ms.technology: devops-cicd
+ms.assetid: c887c2a8-7a2a-4d34-975f-d6f737758f1f
+ms.manager: douge
+ms.author: alewis
+author: ericsciple
+ms.reviewer: macoope
+ms.date: 07/17/2018
+ms.topic: reference
+monikerRange: '>= tfs-2018'
+---
+
+# Secret variables
 
 ## Secrets are masked from output logs
 

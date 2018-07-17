@@ -1,4 +1,19 @@
-# YAML getting started - Phase options
+---
+title: Phase options | VSTS & TFS    
+description: Learn how to use YAML to configure CI/CD for the app and platform of your choice.
+ms.prod: devops
+ms.technology: devops-cicd
+ms.assetid: 1e1b003d-4031-4b9b-9ae0-5a0dd9e9063f
+ms.manager: douge
+ms.author: alewis
+author: ericsciple
+ms.reviewer: macoope
+ms.date: 07/17/2018
+ms.topic: reference
+monikerRange: '>= tfs-2018'
+---
+
+# Phase options
 
 ## Continue on error
 

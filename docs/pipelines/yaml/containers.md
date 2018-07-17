@@ -1,4 +1,19 @@
-# YAML getting started - Containers
+---
+title: Containers | VSTS & TFS    
+description: Learn how to use YAML to configure CI/CD for the app and platform of your choice.
+ms.prod: devops
+ms.technology: devops-cicd
+ms.assetid: d7542561-7070-4c32-8454-c7ae1ecfc1dd
+ms.manager: douge
+ms.author: alewis
+author: ericsciple
+ms.reviewer: macoope
+ms.date: 07/17/2018
+ms.topic: reference
+monikerRange: '>= tfs-2018'
+---
+
+# Containers
 
 When using an agent pool, a phase can specify a `container` to use. The agent will start
 an instance of the container, and will run the steps inside the container.

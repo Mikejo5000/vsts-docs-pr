@@ -1,4 +1,19 @@
-# YAML getting started - Step reuse
+---
+title: Step reuse | VSTS & TFS    
+description: Learn how to use YAML to configure CI/CD for the app and platform of your choice.
+ms.prod: devops
+ms.technology: devops-cicd
+ms.assetid: cb8c86ca-2516-41b2-8051-1b2bfe5c1604
+ms.manager: douge
+ms.author: alewis
+author: ericsciple
+ms.reviewer: macoope
+ms.date: 07/17/2018
+ms.topic: reference
+monikerRange: '>= tfs-2018'
+---
+
+# Step reuse
 
 Templates enable steps to be defined once, and used from multiple places.
 

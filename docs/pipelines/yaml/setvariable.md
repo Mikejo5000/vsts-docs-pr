@@ -1,4 +1,19 @@
-# YAML getting started - Setting variables from a script
+---
+title: Setting variables from a script | VSTS & TFS    
+description: Learn how to use YAML to configure CI/CD for the app and platform of your choice.
+ms.prod: devops
+ms.technology: devops-cicd
+ms.assetid: 78ac9478-2f66-4f16-8296-c064388d0354
+ms.manager: douge
+ms.author: alewis
+author: ericsciple
+ms.reviewer: macoope
+ms.date: 07/17/2018
+ms.topic: reference
+monikerRange: '>= tfs-2018'
+---
+
+# Setting variables from a script
 
 A new variable can be defined within a step, and can be accessed from a downstream step.
 

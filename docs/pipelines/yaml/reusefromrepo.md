@@ -1,4 +1,19 @@
-# YAML getting started - Reuse from other repositories
+---
+title: Reuse from other repositories | VSTS & TFS    
+description: Learn how to use YAML to configure CI/CD for the app and platform of your choice.
+ms.prod: devops
+ms.technology: devops-cicd
+ms.assetid: 55d9d465-b9f1-4ef5-834f-19ad15c89966
+ms.manager: douge
+ms.author: alewis
+author: ericsciple
+ms.reviewer: macoope
+ms.date: 07/17/2018
+ms.topic: reference
+monikerRange: '>= tfs-2018'
+---
+
+# Reuse from other repositories
 
 Repository resources may be defined in the resources section for use as template source. 
 For more details on repository resource support and properties see [repositories](resources.md#repositories). 

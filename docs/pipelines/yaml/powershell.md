@@ -1,4 +1,19 @@
-# YAML getting started - PowerShell scripts
+---
+title: PowerShell scripts | VSTS & TFS    
+description: Learn how to use YAML to configure CI/CD for the app and platform of your choice.
+ms.prod: devops
+ms.technology: devops-cicd
+ms.assetid: af2cca92-fb07-4f2f-8eae-25056f94eb37
+ms.manager: douge
+ms.author: alewis
+author: ericsciple
+ms.reviewer: macoope
+ms.date: 07/17/2018
+ms.topic: reference
+monikerRange: '>= tfs-2018'
+---
+
+# PowerShell scripts
 
 ## Simple script
 

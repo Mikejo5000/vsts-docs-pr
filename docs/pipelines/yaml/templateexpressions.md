@@ -1,4 +1,19 @@
-# YAML getting started - Template expressions
+---
+title: Template expressions | VSTS & TFS    
+description: Learn how to use YAML to configure CI/CD for the app and platform of your choice.
+ms.prod: devops
+ms.technology: devops-cicd
+ms.assetid: 4a3db7ea-2574-4677-8590-d3c284e814d7
+ms.manager: douge
+ms.author: alewis
+author: ericsciple
+ms.reviewer: macoope
+ms.date: 07/17/2018
+ms.topic: reference
+monikerRange: '>= tfs-2018'
+---
+
+# Template expressions
 
 ## Template expression syntax
 

@@ -1,4 +1,19 @@
-# YAML getting started - Multiple phases
+---
+title: Multiple phases | VSTS & TFS    
+description: Learn how to use YAML to configure CI/CD for the app and platform of your choice.
+ms.prod: devops
+ms.technology: devops-cicd
+ms.assetid: 0618c785-58e4-4189-8ba0-2cb8e4ce82f5
+ms.manager: douge
+ms.author: alewis
+author: ericsciple
+ms.reviewer: macoope
+ms.date: 07/17/2018
+ms.topic: reference
+monikerRange: '>= tfs-2018'
+---
+
+# Multiple phases
 
 ## Phase dependencies
 

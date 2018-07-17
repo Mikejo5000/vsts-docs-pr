@@ -1,4 +1,19 @@
-# YAML getting started - Custom variables
+---
+title: Custom variables | VSTS & TFS    
+description: Learn how to use YAML to configure CI/CD for the app and platform of your choice.
+ms.prod: devops
+ms.technology: devops-cicd
+ms.assetid: 4f726adf-daf6-4926-b270-193132538a48
+ms.manager: douge
+ms.author: alewis
+author: ericsciple
+ms.reviewer: macoope
+ms.date: 07/17/2018
+ms.topic: reference
+monikerRange: '>= tfs-2018'
+---
+
+# Custom variables
 
 ## Custom variables
 

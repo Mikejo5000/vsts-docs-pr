@@ -1,4 +1,19 @@
-# YAML getting started - Pools
+---
+title: Pools | VSTS & TFS    
+description: Learn how to use YAML to configure CI/CD for the app and platform of your choice.
+ms.prod: devops
+ms.technology: devops-cicd
+ms.assetid: 40475c21-890a-4385-a5a1-0895fbe146dc
+ms.manager: douge
+ms.author: alewis
+author: ericsciple
+ms.reviewer: macoope
+ms.date: 07/17/2018
+ms.topic: reference
+monikerRange: '>= tfs-2018'
+---
+
+# Pools
 
 When a phase is started, it is assigned to run on a specific pool.
 

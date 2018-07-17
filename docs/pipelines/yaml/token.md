@@ -1,4 +1,19 @@
-# YAML getting started - OAuth token for scripts
+---
+title: OAuth token for scripts | VSTS & TFS    
+description: Learn how to use YAML to configure CI/CD for the app and platform of your choice.
+ms.prod: devops
+ms.technology: devops-cicd
+ms.assetid: 3477bf70-e26e-4188-acbd-8d19aed438c5
+ms.manager: douge
+ms.author: alewis
+author: ericsciple
+ms.reviewer: macoope
+ms.date: 07/17/2018
+ms.topic: reference
+monikerRange: '>= tfs-2018'
+---
+
+# OAuth token for scripts
 
 The OAuth token to communicate back to VSTS is available as a secret variable within a YAML build. The token can be use to authenticate to the [VSTS REST API](https://www.visualstudio.com/en-us/integrate/api/overview).
 

@@ -1,4 +1,19 @@
-# YAML getting started - Continuous integration
+---
+title: Continuous integration | VSTS & TFS    
+description: Learn how to use YAML to configure CI/CD for the app and platform of your choice.
+ms.prod: devops
+ms.technology: devops-cicd
+ms.assetid: f833f54c-c983-4fb1-8237-c0ab97276875
+ms.manager: douge
+ms.author: alewis
+author: ericsciple
+ms.reviewer: macoope
+ms.date: 07/17/2018
+ms.topic: reference
+monikerRange: '>= tfs-2018'
+---
+
+# Continuous integration
 
 Continuous integration builds are on by default for all branches.
 

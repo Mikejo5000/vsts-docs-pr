@@ -1,4 +1,19 @@
-# YAML getting started - Output variables
+---
+title: Output variables | VSTS & TFS    
+description: Learn how to use YAML to configure CI/CD for the app and platform of your choice.
+ms.prod: devops
+ms.technology: devops-cicd
+ms.assetid: 1d206acd-03b8-4e47-bcc5-88faf2b41ba6
+ms.manager: douge
+ms.author: alewis
+author: ericsciple
+ms.reviewer: macoope
+ms.date: 07/17/2018
+ms.topic: reference
+monikerRange: '>= tfs-2018'
+---
+
+# Output variables
 
 Output variables can be used to set a variable in one phase, and then use the variable in a downstream phase.
 

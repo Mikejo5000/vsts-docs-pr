@@ -1,4 +1,19 @@
-# YAML getting started
+---
+title: YAML build definitions | VSTS & TFS    
+description: Learn how to use YAML to configure CI/CD for the app and platform of your choice.
+ms.prod: devops
+ms.technology: devops-cicd
+ms.assetid: 7d7d49ec-7e60-42a1-8d9f-c77eb7181373
+ms.manager: douge
+ms.author: alewis
+author: ericsciple
+ms.reviewer: macoope
+ms.date: 07/17/2018
+ms.topic: reference
+monikerRange: '>= tfs-2018'
+---
+
+# YAML build definitions
 
 To create a YAML build definition, you must opt-in to the account-level preview feature: `Build YAML definitions`
 
@@ -82,10 +97,8 @@ YAML builds require the latest agent. When a YAML build is queued, your agent wi
 
 [Template expressions](templateexpressions.md)
 
-## Misc
+## Schema reference
 
 [Schema reference](schema.md)
-
-[Feature gaps](features.md)
 
 <!-- todo: [Escaping](escaping.md) -->

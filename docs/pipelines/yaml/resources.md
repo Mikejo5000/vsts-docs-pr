@@ -1,4 +1,19 @@
-# YAML getting started - Resources
+---
+title: Resources | VSTS & TFS    
+description: Learn how to use YAML to configure CI/CD for the app and platform of your choice.
+ms.prod: devops
+ms.technology: devops-cicd
+ms.assetid: dae02e23-e8ee-403e-971d-2ba7013ad091
+ms.manager: douge
+ms.author: alewis
+author: ericsciple
+ms.reviewer: macoope
+ms.date: 07/17/2018
+ms.topic: reference
+monikerRange: '>= tfs-2018'
+---
+
+# Resources
 
 Resources enable the definition of various items which are to be produced or consumed
 by the defining pipeline. Every resource must specify an `alias`, which is how the resource

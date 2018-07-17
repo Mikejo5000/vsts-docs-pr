@@ -1,4 +1,19 @@
-# YAML getting started - Matrix execution
+---
+title: Matrix execution | VSTS & TFS    
+description: Learn how to use YAML to configure CI/CD for the app and platform of your choice.
+ms.prod: devops
+ms.technology: devops-cicd
+ms.assetid: fec59e80-66bd-442f-ac72-e435195d3227
+ms.manager: douge
+ms.author: alewis
+author: ericsciple
+ms.reviewer: macoope
+ms.date: 07/17/2018
+ms.topic: reference
+monikerRange: '>= tfs-2018'
+---
+
+# Matrix execution
 
 ### Matrix
 

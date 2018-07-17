@@ -1,4 +1,19 @@
-# YAML getting started - Pipeline overview
+---
+title: Pipeline overview | VSTS & TFS    
+description: Learn how to use YAML to configure CI/CD for the app and platform of your choice.
+ms.prod: devops
+ms.technology: devops-cicd
+ms.assetid: 4e782159-ca47-43ae-bd38-36cec8de3e0d
+ms.manager: douge
+ms.author: alewis
+author: ericsciple
+ms.reviewer: macoope
+ms.date: 07/17/2018
+ms.topic: reference
+monikerRange: '>= tfs-2018'
+---
+
+# Pipeline overview
 
 ## Pipeline
 

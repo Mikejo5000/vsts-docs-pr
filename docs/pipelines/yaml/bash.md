@@ -1,4 +1,19 @@
-# YAML getting started - Bash scripts
+---
+title: Bash scripts | VSTS & TFS    
+description: Learn how to use YAML to configure CI/CD for the app and platform of your choice.
+ms.prod: devops
+ms.technology: devops-cicd
+ms.assetid: 6ad07a8a-6206-4a6c-a14c-e7a34db2699b
+ms.manager: douge
+ms.author: alewis
+author: ericsciple
+ms.reviewer: macoope
+ms.date: 07/17/2018
+ms.topic: reference
+monikerRange: '>= tfs-2018'
+---
+
+# Bash scripts
 
 ## Simple script
 
