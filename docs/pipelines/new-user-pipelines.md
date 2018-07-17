@@ -19,7 +19,20 @@ If you're not sure if Pipelines is right for your needs, read [Why Use Azure Dev
 
 Insert table here of what languages and tools you can use
 
+| Languages          |                |               |            |
+|--------------------|----------------|---------------|------------|
+| Java               | C#             | C++           | Python     |
+| Go                 | Ruby           |               |            |
+
+
+| Tools               |             |            |            |
+|---------------------|-------------|------------|------------|
+| Tools here          |             |            |            |
+|                     |             |            |            |
+
+
 ## What do I need to use Pipelines?
+
 
 Insert table here of any required tools/software to use Pipelines. Could change based off of scenario.
 
