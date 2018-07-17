@@ -19,7 +19,7 @@ To create a YAML build definition, you must opt-in to the account-level preview 
 
 YAML builds require the latest agent. When a YAML build is queued, your agent will automatically update if it is not the latest version.
 
-## Hello world
+## Basics
 
 [Create a definition](definition.md)
 

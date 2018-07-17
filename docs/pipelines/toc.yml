@@ -509,7 +509,85 @@
     - name: Visual Studio Test Platform Installer
       href: tasks/tool/vstest-platform-tool-installer.md
   - name: YAML
-    href: yaml/index.md
+    items:
+    - name: Overview
+      href: yaml/index.md
+    - name: Basics
+      items:
+      - name: Create a definition 
+        href: yaml/definition.md
+      - name: Pipeline overview
+        href: yaml/pipeline.md
+      - name: Pipeline name
+        href: yaml/name.md
+    - name: Scripts and tasks
+      items:
+      - name: Scripts
+        href: yaml/scripts.md
+      - name: PowerShell
+        href: yaml/powershell.md
+      - name: Bash scripts
+        href: yaml/bash.md
+      - name: Checkout options
+        href: yaml/checkout.md
+      - name: Tasks
+        href: yaml/tasks.md
+    - name: CI triggers
+      href: yaml/ci.md
+    - name: Variables
+      items:
+      - name: Predefined variables
+        href: build/variables.md
+      - name: Macros
+        href: yaml/macros.md
+      - name: Accessing variables
+        href: yaml/accessingvariables.md
+      - name: Custom variables
+        href: yaml/customvariables.md
+      - name: Set a variable
+        href: yaml/setvariable.md
+      - name: Secret variables
+        href: yaml/secretvariables.md
+      - name: Output variables
+        href: yaml/outputvariables.md
+      - name: OAuth tokens
+        href: yaml/token.md
+    - name: Resources
+      items:
+      - name: Overview
+        href: yaml/resources.md
+      - name: Authorization
+        href: yaml/authz.md
+      - name: Endpoints
+        href: yaml/endpoints.md
+      - name: Secure files
+        href: yaml/securefiles.md
+    - name: Phases
+      items:
+      - name: Phase options
+        href: yaml/job.md
+      - name: Pools
+        href: yaml/pools.md
+      - name: Containers
+        href: yaml/containers.md
+      - name: Matrix execution
+        href: yaml/matrix.md
+      - name: Slice execution
+        href: yaml/slice.md
+      - name: Multiple phases
+        href: yaml/jobs.md
+    - name: Templates
+      items:
+      - name: Reuse a step
+        href: yaml/reusestep.md
+      - name: Reuse a phase
+        href: yaml/reusephase.md
+      - name: Reuse from a repo
+        href: yaml/reusefromrepo.md
+      - name: Template expressions
+        href: yaml/templateexpressions.md
+    - name: Schema reference
+      href: yaml/schema.md
   - name: File matching patterns
     href: tasks/file-matching-patterns.md
   - name: File and variable transform
