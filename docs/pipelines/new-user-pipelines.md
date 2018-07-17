@@ -20,17 +20,19 @@ If you're not sure if Pipelines is right for your needs, read [Why Use Azure Dev
 
 ### Languages
 
-|           |                |               |            |
 |--------------------|----------------|---------------|------------|
 | Java               | C#             | C++           | Python     |
 | Go                 | Ruby           |               |            |
 
-### Tools
+### Version control systems
 
-|                |             |            |            |
-|---------------------|-------------|------------|------------|
-| Tools here          |             |            |            |
-|                     |             |            |            |
+
+| Git                                    | TFVC (Team Foundation Version Control |
+
+### Application Types
+
+| .NET       | Java     | Node |
+| Android    | Xcode    | C++  |
 
 
 ## What do I need to use Pipelines?
