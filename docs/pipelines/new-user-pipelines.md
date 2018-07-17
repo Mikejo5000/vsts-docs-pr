@@ -50,6 +50,15 @@ If you're not sure if Pipelines is right for your needs, read [Why Use Azure Dev
 |------------------|-----|-------|
 | NuGet            | npm | Maven |
 
+
+## Does Pipelines work with my language and tools?
+
+**Languages**: Java, C#, etc. etc.
+**Version control systems**: Git, TFVC (Team Foundation Version Control)
+**Application types**: .NET, Java, Node, Android, Xcode, C++
+**Deployment targets**: Virtual machines, containers, on-premises and cloud platforms, PaaS services
+**Package formats**: NuGet, npm, Maven
+
 ## What do I need to use Pipelines?
 
 Insert table here of any required tools/software to use Pipelines. Could change based off of scenario.
