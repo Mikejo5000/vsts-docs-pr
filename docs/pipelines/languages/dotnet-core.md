@@ -15,6 +15,10 @@ monikerRange: '>= tfs-2017'
 
 # .NET Core
 
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+::: moniker-end
+
 This guidance explains how to build .NET Core projects. Before you read this topic, you should complete one of the quickstarts and understand how to create a basic build pipeline: [designer](../get-started-designer.md) or [YAML](../get-started-yaml.md).
 
 ::: moniker range="tfs-2017"
@@ -51,7 +55,7 @@ https://github.com/adventworks/dotnetcore-sample
 
 * After you have the sample code in your own repository, create a build pipeline and select the **ASP.NET Core** template. This automatically adds the tasks required to build the code in the sample repository. 
 * Select **Process** under the **Tasks** tab in the build pipeline editor and change the properties as follows:
-  * **Agent queue:** `Hosted Linux Preview`
+  * **Agent queue:** `Hosted Linux`
   * **Projects to test:** `**/*[Tt]ests/*.csproj`
 
 Save the pipeline and queue a build to see it in action. Then read through the rest of this topic to learn some of the more common changes people make to customize a .NET Core build process.
@@ -185,7 +189,7 @@ to VSTS Package Management. These credentials are derived from either the **Proj
 account or the **Project Build Service** account depending on the option selected in your build pipeline.
 
 If you want to specify a NuGet repository, put the URLs in a `NuGet.config` file in your repository.
-If your feed is authenticated, manage its credentials by creating a NuGet service endpoint in the **Services** tab under **Project Settings**.
+If your feed is authenticated, manage its credentials by creating a NuGet service connection in the **Services** tab under **Project Settings**.
 
 ::: moniker-end
 
@@ -231,12 +235,12 @@ To restore packages from a custom feed:
     projects: "**/*.csproj"
     feedsToUse: config
     nugetConfigPath: NuGet.config    # Relative to root of the repository
-    externalFeedCredentials: <Name of the NuGet service endpoint>
+    externalFeedCredentials: <Name of the NuGet service connection>
 ```
 
 > [!NOTE]
 > 
-> Make sure the custom feed is specified in your `NuGet.config` file and that credentials are specified in the NuGet service endpoint.
+> Make sure the custom feed is specified in your `NuGet.config` file and that credentials are specified in the NuGet service connection.
 
 ::: moniker-end
 

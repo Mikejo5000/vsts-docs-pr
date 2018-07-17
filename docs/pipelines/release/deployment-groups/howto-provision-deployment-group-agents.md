@@ -8,13 +8,17 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 04/09/2018
+ms.date: 07/09/2018
 monikerRange: '>= tfs-2018'
 ---
 
 # How To: Provision agents for deployment groups
 
 **VSTS | TFS 2018**
+
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+::: moniker-end
 
 [Deployment groups](index.md) make it easy to define logical groups of target machines for deployment,
 and install the required agent on each machine. This topic explains how to create a deployment group,
@@ -24,7 +28,7 @@ You can install the agent in any one of these ways:
 
 * [Run the script](#runscript) that is generated automatically when you create a deployment group.
 * [Install the **VSTS Agent** Azure VM extension](#azureext) on each of the VMs.
-* [Use the **Azure Resource Group Deployment** task](#deploytask) in your release definition.
+* [Use the **Azure Resource Group Deployment** task](#deploytask) in your release pipeline.
 
 For information about agents and pipelines, see:
 
@@ -78,13 +82,13 @@ For information about agents and pipelines, see:
 
    ![Installing the VSTS Agent extension](_img/howto-provision-azure-vm-agents/azure-vm-create.png)
 
-1. In the **Install extension** blade, specify the name of the VSTS account to use. For example, if the account URL is `https://contoso.visualstudio.com`, just specify **contoso**.
+1. In the **Install extension** blade, specify the name of the VSTS subacription to use. For example, if the URL is `https://contoso.visualstudio.com`, just specify **contoso**.
 
 1. Specify the project name and the deployment group name.
    
 1. Optionally, specify a name for the agent. If not specified, it uses the VM name appended with `-DG`.
 
-1. Enter the [Personal Access Token (PAT)](https://go.microsoft.com/fwlink/?linkid=844181) to use for authentication against the VSTS account.
+1. Enter the [Personal Access Token (PAT)](https://go.microsoft.com/fwlink/?linkid=844181) to use for authentication against VSTS.
 
 1. Optionally, specify a comma-separated list of tags that will be configured on the agent.
    Tags are not case-sensitive, and each must no more than 256 characters.
@@ -146,12 +150,12 @@ For a Windows VM, create an ARM template and add a resources element under the
 
 where:
 
-* **VSTSAccountName** is required. The VSTS account to use. Example: If your account URL is `https://contoso.visualstudio.com`, just specify `contoso`
+* **VSTSAccountName** is required. The VSTS subscription to use. Example: If your URL is `https://contoso.visualstudio.com`, just specify `contoso`
 * **TeamProject** is required. The project that has the deployment group defined within it
 * **DeploymentGroup** is required. The deployment group against which deployment agent will be registered
 * **AgentName** is optional. If not specified, the VM name with `-DG` appended will be used
 * **Tags** is optional. A comma-separated list of tags that will be set on the agent. Tags are not case sensitive and each must be no more than 256 characters
-* **PATToken** is required. The Personal Access Token that will be used to authenticate against the VSTS account to download and configure the agent
+* **PATToken** is required. The Personal Access Token that will be used to authenticate against VSTS to download and configure the agent
 
 >**Note**: If you are deploying to a Linux VM, ensure that the `type` parameter in the code is `TeamServicesAgentLinux`.
 
@@ -163,12 +167,12 @@ To use the template:
 
 1. Enter a name for the group, and optionally a description, then choose **Create**.
 
-1. In the **Releases** tab of the **Build &amp; Release** hub, create a release definition with an environment that contains the **Azure Resource Group Deployment** task.
+1. In the **Releases** tab of the **Build &amp; Release** hub, create a release pipeline with an environment that contains the **Azure Resource Group Deployment** task.
 
 1. Provide the parameters required for the task such as the Azure subscription, resource group name,
-   location, and template information, then save the release definition.
+   location, and template information, then save the release pipeline.
 
-1. Create a release from the release definition to install the agents.
+1. Create a release from the release pipeline to install the agents.
 
 ### Install agents using the advanced deployment options
 
@@ -176,16 +180,16 @@ To use the template:
 
 1. Enter a name for the group, and optionally a description, then choose **Create**.
 
-1. In the **Releases** tab of the **Build &amp; Release** hub, create a release definition with an environment that contains the **Azure Resource Group Deployment** task.
+1. In the **Releases** tab of the **Build &amp; Release** hub, create a release pipeline with an environment that contains the **Azure Resource Group Deployment** task.
 
 1. Select the task and expand the **Advanced deployment options for virtual machines** section.
    Configure the parameters in this section as follows:
 
    * **Enable Prerequisites**: select **Configure with Deployment Group Agent**.
 
-   * **TFS/VSTS endpoint**: Select an existing Team Foundation Server/TFS service endpoint that points
-     to your target account. Agent registration for deployment groups requires access to your Visual
-     Studio project. If you do not have an existing service endpoint, choose **Add** and create one now.
+   * **TFS/VSTS endpoint**: Select an existing Team Foundation Server/TFS service connection that points
+     to your target. Agent registration for deployment groups requires access to your Visual
+     Studio project. If you do not have an existing service connection, choose **Add** and create one now.
      Configure it to use a [Personal Access Token (PAT)](https://go.microsoft.com/fwlink/?linkid=844181)
      with scope restricted to **Deployment Group**.
 
@@ -201,9 +205,9 @@ To use the template:
    ![Configuring the Azure Resource Group Deployment task](_img/howto-provision-azure-vm-agents/deploy-arg-task.png)
 
 1. Provide the other parameters required for the task such as the Azure subscription, resource group name,
-   and location, then save the release definition.
+   and location, then save the release pipeline.
 
-1. Create a release from the release definition to install the agents.
+1. Create a release from the release pipeline to install the agents.
 
 ## Related topics
 

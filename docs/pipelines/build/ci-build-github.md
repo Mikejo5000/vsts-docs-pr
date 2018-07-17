@@ -41,7 +41,7 @@ Follow the steps below to configure GitHub as a source for your VSTS build.
 > [!IMPORTANT]
 > Ensure your browser does not block the pop-up on step 4 below.
 
-1. Navigate to your VSTS account and team project. Select **Build and Release**, and then select **Builds**.
+1. Navigate to your VSTS account and project. Select **Build and Release**, and then select **Builds**.
 1. Select **New** to create a new build pipeline.
 1. Select **GitHub** for the type of repository.
 1. Give your connection a name, and then select the **Authorize using OAuth** button. Optionally you can use a GitHub **personal access token** instead of OAuth.
@@ -51,7 +51,7 @@ Follow the steps below to configure GitHub as a source for your VSTS build.
 1. Choose **Hosted VS2017** for Agent queue.
 1. Select **Triggers**. Enable **Continuous integration** for your builds. Ensure you include the `master` branch under **Branch filters**. This setting ensures each commit to `master` in GitHub will trigger a build via a GitHub webhook.
 1. Select **Save & queue** to save your build pipeline and create the first build.
-1. Once the build completes, select the name of the definition in the build results page to navigate to the history of builds for that definition. Take a note of the `definitionId` in the URL. You will need this to set up the build badge in upcoming steps.
+1. Once the build completes, select the name of the pipeline in the build results page to navigate to the history of builds for that pipeline. Take a note of the `definitionId` in the URL. You will need this to set up the build badge in upcoming steps.
 
 # [YAML](#tab/yaml)
 
@@ -59,7 +59,7 @@ Follow the steps below to configure GitHub as a source for your VSTS build.
 > Ensure your browser does not block the pop-up on step 6 below.
 
 1. Ensure that you have a `.vsts-ci.yml` file at the root of your repository in `master` branch. If you started from the [sample .NET Core repo](https://github.com/adventworks/dotnetcore-sample) it already has one. See the various other languages that we support in this documentation for examples of YAML file for the type of app you are interested in.
-1. Navigate to your VSTS account and team project. Select **Build and Release**, and then select **Builds**.
+1. Navigate to your VSTS account and project. Select **Build and Release**, and then select **Builds**.
 1. Select **New** to create a new build pipeline.
 1. Select **GitHub** for the type of repository.
 1. Give your connection a name, and then select the **Authorize using OAuth** button. Optionally you can use a GitHub **personal access token** instead of OAuth.
@@ -69,7 +69,7 @@ Follow the steps below to configure GitHub as a source for your VSTS build.
 1. Choose **Hosted VS2017** for Agent queue.
 1. For the **YAML path**, select the YAML file at the root of your repo by clicking on the ellipsis next to that field.
 1. Select **Save & queue** to save your build pipeline and create the first build.
-1. Once the build completes, select the name of the definition in the build results page to navigate to the history of builds for that definition. Take a note of the `definitionId` in the URL. You will need this to set up the build badge in upcoming steps.
+1. Once the build completes, select the name of the pipeline in the build results page to navigate to the history of builds for that pipeline. Take a note of the `definitionId` in the URL. You will need this to set up the build badge in upcoming steps.
 
 ---
 
@@ -90,7 +90,7 @@ This section explores possibilities for further integrating VSTS and GitHub. You
 
 ### How do I use a personal access token to authorize the VSTS to GitHub connection?
 
-See this [article](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) for creating a GitHub personal access token. You can use the token in the VSTS **Get sources** task of your build or release pipelines by creating a GitHub [service endpoint](../library/service-endpoints.md) and entering the token.
+See this [article](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) for creating a GitHub personal access token. You can use the token in the VSTS **Get sources** task of your build or release pipelines by creating a GitHub [service connection](../library/service-endpoints.md) and entering the token.
 
 ## Next steps
 

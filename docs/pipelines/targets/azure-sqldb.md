@@ -8,18 +8,22 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 05/10/2018
+ms.date: 07/09/2018
 monikerRange: '>= tfs-2017'
 ---
 
 # Azure SQL database deployment
+
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+::: moniker-end
 
 You can automatically deploy your database updates to Azure SQL database after every successful build. Before you read this topic, you should understand the type of pipeline that you're creating: [designer](../get-started-designer.md) or [YAML](../get-started-yaml.md).
 
 ::: moniker range="vsts"
 
 > [!NOTE]
-> To use YAML you must have the **Build YAML definitions** [preview feature](/vsts/project/navigation/preview-features) enabled on your account.
+> To use YAML you must have the **Build YAML pipelines** [preview feature](/vsts/project/navigation/preview-features) enabled.
 
 ::: moniker-end
 
@@ -29,9 +33,9 @@ The simplest way to deploy a database is to create [data-tier package or DACPAC]
 
 # [Designer](#tab/designer)
 
-When setting up a build definition for your Visual Studio database project, use the **.NET desktop** template. This template automatically adds the tasks to build the project and publish artifacts, including the DACPAC.
+When setting up a build pipeline for your Visual Studio database project, use the **.NET desktop** template. This template automatically adds the tasks to build the project and publish artifacts, including the DACPAC.
 
-When setting up a release definition, choose **Start with an Empty process**, link the artifacts from build, and then add an [Azure SQL Database Deployment](../tasks/deploy/sql-azure-dacpac-deployment.md) task.
+When setting up a release pipeline, choose **Start with an empty process**, link the artifacts from build, and then add an [Azure SQL Database Deployment](../tasks/deploy/sql-azure-dacpac-deployment.md) task.
 
 # [YAML](#tab/yaml)
 
@@ -49,7 +53,7 @@ To deploy a DACPAC to an Azure SQL database, add the following snippet to your .
 - task: SqlAzureDacpacDeployment@1
   displayName: Execute Azure SQL : DacpacTask
   inputs:
-    azureSubscription: '<Azure service endpoint>'
+    azureSubscription: '<Azure service connection>'
     ServerName: '<Database server name>'
     DatabaseName: '<Database name>'
     SqlUsername: '<SQL user name>'
@@ -147,7 +151,7 @@ Add the following to your .vsts-ci.yml file to run a SQL script.
 
 ```yaml
 variables:
-  AzureSubscription: '<Azure service endpoint>'
+  AzureSubscription: '<Azure service connection>'
   ServerName: '<Database server name>'
   DatabaseName: '<Database name>'
   AdminUser: '<SQL user name>'
@@ -180,21 +184,21 @@ steps:
 ::: moniker-end
 ---
 
-## Azure service endpoint
+## Azure service connection
 
-The **Azure SQL Database Deployment** task is the primary mechanism to deploy a database to Azure. This task, as with other built-in Azure tasks, requires an Azure service endpoint as an input. The Azure service endpoint stores the credentials to connect from VSTS or TFS to Azure. 
+The **Azure SQL Database Deployment** task is the primary mechanism to deploy a database to Azure. This task, as with other built-in Azure tasks, requires an Azure service connection as an input. The Azure service connection stores the credentials to connect from VSTS or TFS to Azure. 
 
 ::: moniker range="vsts"
 
-The easiest way to get started with this task is to be signed in as a user that owns both the VSTS account and the Azure subscription.
-In this case, you won't have to manually create the endpoint.
-Otherwise, to learn how to create an Azure service endpoint, see [Create an Azure service endpoint](../library/connect-to-azure.md).
+The easiest way to get started with this task is to be signed in as a user that owns both the VSTS and the Azure subscriptions.
+In this case, you won't have to manually create the service connection.
+Otherwise, to learn how to create an Azure service connection, see [Create an Azure service connection](../library/connect-to-azure.md).
 
 ::: moniker-end
 
 ::: moniker range="< vsts"
 
-To learn how to create an Azure service endpoint, see [Create an Azure service endpoint](../library/connect-to-azure.md).
+To learn how to create an Azure service connection, see [Create an Azure service connection](../library/connect-to-azure.md).
 
 ::: moniker-end
 
@@ -204,7 +208,7 @@ You may choose to deploy only certain builds to your Azure database.
 
 # [Designer](#tab/designer)
 
-In your release definition you can implement various checks and conditions to control the deployment.
+In your release pipeline you can implement various checks and conditions to control the deployment.
 
 * Set **branch filters** to configure the **continuous deployment trigger** on the artifact of the release pipeline.
 * Set **pre-deployment approvals** as a pre-condition for deployment to an environment.
@@ -228,7 +232,7 @@ The following example shows how to use step conditions to deploy only those buil
 - task: SqlAzureDacpacDeployment@1
   condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
   inputs:
-    azureSubscription: '<Azure service endpoint>'
+    azureSubscription: '<Azure service connection>'
     ServerName: '<Database server name>'
     DatabaseName: '<Database name>'
     SqlUsername: '<SQL user name>'

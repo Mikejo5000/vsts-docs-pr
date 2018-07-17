@@ -20,6 +20,10 @@ monikerRange: '>=tfs-2017'
 
 # Build multiple branches
 
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+::: moniker-end
+
 You can build every commit and pull request to your Git repository using VSTS or TFS. In this tutorial, we will discuss additional considerations when building multiple branches in your Git repository. You will learn how to:
 
 > [!div class="checklist"]
@@ -132,7 +136,7 @@ Use policies to protect your branches by requiring successful builds before merg
 
 # [Designer](#tab/designer)
 
-1. Navigate to your team project in VSTS or TFS. Select **Build and Release**, and then select **Builds**. Locate your build, and select **Edit**.
+1. Navigate to your project in VSTS or TFS. Select **Build and Release**, and then select **Builds**. Locate your build, and select **Edit**.
 1. Select **Triggers**. Enable the **Pull request validation** trigger. Ensure you include the **master branch** under **Branch filters**.
 1. Select **Save & queue**, then select **Save**.
 1. Navigate to your GitHub account. Navigate to the main page for your **repository**.

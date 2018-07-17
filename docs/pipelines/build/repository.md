@@ -1,5 +1,5 @@
 ---
-title: Build definition source repositories
+title: Build pipeline source repositories
 description: Specify the sources and repository that contains the code you want to build on VSTS and Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops
@@ -12,9 +12,13 @@ ms.date: 11/05/2017
 monikerRange: '>= tfs-2015'
 ---
 
-# Build definition source repositories
+# Build pipeline source repositories
 
 **VSTS | TFS 2018 | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/hh190721%28v=vs.120%29.aspx)**
+
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+::: moniker-end
 
 At the beginning of the build process, the agent downloads files from your remote repository into a local sources directory.
 
@@ -54,26 +58,26 @@ You can choose from the following repository types:
 
 | Repository type               | VSTS (YAML) | VSTS | TFS 2018, TFS 2017, TFS 2015.4 | TFS 2015 RTM |
 |-------------------------------|-------------|------|--------------------------------|--------------|
-| Git repo in a team project    |Yes|Yes|Yes|Yes|
+| Git repo in a project    |Yes|Yes|Yes|Yes|
 | Git repo in Bitbucket Cloud   |No|Yes|No|No|
 | Git repo in GitHub            |Yes|Yes|No|No|
 | Git repo in GitHub Enterprise |No|Yes|No|No|
 | Git repo (external/remote)    |No|Yes|Yes|Yes|
 | Subversion                    |No|Yes|Yes|No|
-| Team Foundation Version Control (TFVC) repo in a team project |No|Yes|Yes|Yes|
+| Team Foundation Version Control (TFVC) repo in a project |No|Yes|Yes|Yes|
 
 > [!NOTE]
 > To build code from Subversion, you must install a Subversion client (`svn`) on your [build agents](../agents/agents.md#install).
 
 ## Git options
 
-When you select a Git repo (in a team project, GitHub, Bitbucket, or Remote Git repo), you've got the following options.
+When you select a Git repo (in a project, GitHub, Bitbucket, or remote Git repo), you've got the following options.
 
 | Feature | VSTS | TFS 2018 | TFS 2017.2 | TFS 2017 RTM | TFS 2015.4 | TFS 2015 RTM |
 |---------|------|------|----------|------------|--------------|------------|--------------|
 |Branch|Yes|Yes|Yes|Yes|Yes|Yes|
 |Clean|Yes|Yes|Yes|Yes|Yes|Yes|
-|Tag or label sources|Team project|Team project|Team project|Team project|Team project|No|
+|Tag or label sources|Project|Team project|Team project|Team project|Team project|No|
 |Report build status|Yes|Yes|Yes|Yes|No|No|
 |Checkout submodules|Yes|Yes|Yes|Yes|Yes|Yes|
 |Checkout files from LFS|Yes|Yes|Yes|macOS and Linux agents|macOS and Linux agents|macOS and Linux agents|
@@ -196,7 +200,7 @@ If your sources are in a Git repository in your project, then this option displa
 * **Commits**: Indicates the build status of the each commit (this requires continuous integration (CI) trigger to be enabled for your builds).
 * **Branches**: Indicates the status of the latest build for each branch.
 
-If you use multiple build definitions for the same repository in your project, then you may choose to enable this option for one or more of the definitions. In the case when this option is enabled on multiple definitions, the badge in the **Code** hub indicates the status of the latest build across all the definitions. Your team members can click the build status badge to view the latest build status for each one of the build definitions.
+If you use multiple build pipelines for the same repository in your project, then you may choose to enable this option for one or more of the pipelines. In the case when this option is enabled on multiple pipelines, the badge in the **Code** hub indicates the status of the latest build across all the pipelines. Your team members can click the build status badge to view the latest build status for each one of the build pipelines.
 
 ::: moniker-end
 
@@ -259,7 +263,7 @@ If your main repository and submodules are in a Git repository in your VSTS proj
 
 Make sure that whichever account you use has access to both the main repository as well as the submodules.
 
-If your main repository and submodules are in the same GitHub organization, then the token stored in the GitHub service endpoint is used to access the sources.
+If your main repository and submodules are in the same GitHub organization, then the token stored in the GitHub service connection is used to access the sources.
 
 #### Alternative to using the Checkout submodules option
 
@@ -271,7 +275,7 @@ If you can't use the Checkout submodules option, then you can instead use a cust
 git -c http.https://<url of submodule repository>.extraheader="AUTHORIZATION: basic ********" submodule update --init --recursive
 ```
 
-Use a secret variable in your project or build definition to store the personal access token (PAT) that you generate in VSTS or GitHub with access to your submodules. Use that variable to populate the secret in the above Git command.
+Use a secret variable in your project or build pipeline to store the personal access token (PAT) that you generate in VSTS or GitHub with access to your submodules. Use that variable to populate the secret in the above Git command.
 
 > [!NOTE]
 > **Q: Why can't I use a Git credential manager on the agent?** **A:** Storing the submodule credentials in a Git credential manager installed on your private build agent is usually not effective as the credential manager may prompt you to re-enter the credentials whenever the submodule is updated. This isn't desirable during automated builds when user interaction isn't possible.
@@ -376,7 +380,7 @@ Include with a type value of **Map** only the folders that your build process re
 
 Make sure that you **Map** all folders that contain files that your build process requires. For example, if you add another project, you might have to add another mapping to the workspace.
 
-**Cloak** folders you don't need. By default the root folder of team project is mapped in the workspace. This configuration results in the build agent downloading all the files in the version control folder of your team project. If this folder contains lots of data, your build could waste build system resources and slow down your build process by downloading large amounts of data that it does not require.
+**Cloak** folders you don't need. By default the root folder of project is mapped in the workspace. This configuration results in the build agent downloading all the files in the version control folder of your project. If this folder contains lots of data, your build could waste build system resources and slow down your build process by downloading large amounts of data that it does not require.
 
 When you remove projects, look for mappings that you can remove from the workspace.
 

@@ -13,8 +13,6 @@ monikerRange: 'vsts'
 
 # Tool: Use Ruby Version
 
-**VSTS**
-
 ![icon](_img/ruby.png) Selects a version of Ruby to run on an agent.  Optionally adds it to PATH.
 
 ## Demands
@@ -24,14 +22,11 @@ None
 ## Prerequisites
 * A Microsoft-hosted agent, or a self-hosted agent with its tool cache configured (see [Q&A](#how-can-i-configure-a-private-agent-to-use-this-task)).
 
-This task will fail if no Ruby versions are found in the tool cache.
+This task will fail if no Ruby versions are found in the tool cache. Available Ruby versions on Microsoft-hosted agents can be found [here](../../agents/hosted.md#software).
 
-::: moniker range=">tfs-2018"
-
+::: moniker range="> tfs-2018"
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/UseRubyVersionV0.md)]
-
 ::: moniker-end
 
 ## Arguments

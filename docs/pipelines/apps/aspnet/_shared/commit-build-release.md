@@ -1,6 +1,6 @@
 <h2 id="check-in">Commit a change and see it automatically go live</h2>
 
-Now you get to see the magic of a release pipeline at work! You'll make a change in Visual Studio, commit it or check it in to the source repository, and then let the build and release definitions take care of the rest.
+Now you get to see the magic of a release pipeline at work! You'll make a change in Visual Studio, commit it or check it in to the source repository, and then let the build and release pipelines take care of the rest.
 
 1. On your deployed web site, click **About** at the top, and examine the page. We'll change the "Use this area..." text to something different.
 
@@ -8,7 +8,7 @@ Now you get to see the magic of a release pipeline at work! You'll make a change
 
 1. Change the text within the &lt;p&gt; tag, for example, to _Hello continuous integration and continuous deployment!_
 
-1. Save the file, push/check-in the changes to the Team Project:
+1. Save the file, push/check-in the changes to the project:
     * If you're using Git in Visual Studio, click the changes icon on the status bar:
 
         ![Location of the changes button on the Visual Studio status bar](./_img/commit-change-in-vs.png)
@@ -18,7 +18,7 @@ Now you get to see the magic of a release pipeline at work! You'll make a change
     * If you're using Team Foundation version control (TFVC), switch to the Team Explorer pane, then to Pending Changes where you should see About.cshtml listed. Enter a comment and click **Check In**.
 
 1. Once the push/check-in is complete, switch to VSTS in your browser.
-1. Navigate to **Builds** and click on your build definition. You should see a build in progress:
+1. Navigate to **Builds** and click on your build pipeline. You should see a build in progress:
 
     ![A continuous integration build running in VSTS](./_img/ci-build-running.png)
 
