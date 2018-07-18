@@ -28,13 +28,6 @@ This guidance explains how to build Docker images.
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-::: moniker range="< vsts"
-
-> [!NOTE]
-> This scenario works on TFS, but some of the following instructions might not exactly match the version of TFS that you are using. Also, you'll need to set up a self-hosted agent, possibly also installing software. If you are a new user, you might have a better learning experience by trying this procedure out first using a free VSTS account.
-
-::: moniker-end
-
 ::: moniker range="tfs-2017"
 
 > [!NOTE]
@@ -62,6 +55,11 @@ To build a Docker image, you need a **Dockerfile**. The sample code contains a D
 > [!IMPORTANT]
 > If you are new to creating build pipelines, then complete the [designer](../get-started-designer.md) quickstart first before following these instructions.
 
+::: moniker range="< vsts"
+> [!NOTE]
+> This scenario works on TFS, but some of the following instructions might not exactly match the version of TFS that you are using. Also, you'll need to set up a self-hosted agent, possibly also installing software. If you are a new user, you might have a better learning experience by trying this procedure out first using a [free VSTS account](https://go.microsoft.com/fwlink/?LinkId=307137).
+::: moniker-end
+
 1. After you have the sample code in your own repository, create a build pipeline and select the **ASP.NET Core** template. This automatically adds the tasks that you typically need to build an ASP.NET Core app.
 
 1. Select **Process** under the **Tasks** tab of the build pipeline editor, and change its properties as follows:
@@ -70,7 +68,7 @@ To build a Docker image, you need a **Dockerfile**. The sample code contains a D
 
 1. Modify the **.NET Core Publish** task in the build pipeline as follows:
   * **Arguments:** `--configuration $(BuildConfiguration) --output out`
-  * **Zip published projects:**: Unchecked
+  * **Zip published projects:** Unchecked
   * **Add project name to publish path:** Unchecked
 
 1. Remove the **Publish artifact** task.
@@ -94,38 +92,38 @@ Save the pipeline and queue a build to see it in action. Then read through the r
 
 The sample code above includes a `.vsts-ci.yml` file at the root of the repository. Replace the contents of this file with the following:
 
-    ```yaml
-    queue: 'Hosted Linux'
-    variables:
-      buildConfiguration: 'Release'
+```yaml
+queue: 'Hosted Linux'
+variables:
+buildConfiguration: 'Release'
     
-    steps:
-      - task: DotNetCoreCLI@2
-        inputs:
-          command: 'restore'
-          projects: '**/*.csproj'
+steps:
+- task: DotNetCoreCLI@2
+   inputs:
+      command: 'restore'
+      projects: '**/*.csproj'
     
-      - task: DotNetCoreCLI@2
-        inputs:
-          command: 'build'
-          projects: '**/*.csproj'
-          arguments: '--configuration $(buildConfiguration)'
+- task: DotNetCoreCLI@2
+   inputs:
+      command: 'build'
+      projects: '**/*.csproj'
+      arguments: '--configuration $(buildConfiguration)'
     
-      - task: DotNetCoreCLI@2
-        inputs:
-          command: 'test'
-          projects: '**/*[Tt]ests/*.csproj'
-          arguments: '--configuration $(buildConfiguration)'
+- task: DotNetCoreCLI@2
+   inputs:
+      command: 'test'
+      projects: '**/*[Tt]ests/*.csproj'
+      arguments: '--configuration $(buildConfiguration)'
     
-      - task: DotNetCoreCLI@2
-        inputs:
-          command: 'publish'
-          arguments: '--configuration $(buildConfiguration) --output out'
-          zipAfterPublish: false
+- task: DotNetCoreCLI@2
+   inputs:
+      command: 'publish'
+      arguments: '--configuration $(buildConfiguration) --output out'
+      zipAfterPublish: false
     
-      # Replace adventworks in the following with the name of your Docker id.
-      - script: docker build -f Dockerfile -t adventworks/dotnetcore-sample .
-    ```
+# Replace adventworks in the following with the name of your Docker id.
+- script: docker build -f Dockerfile -t adventworks/dotnetcore-sample .
+```
     
 As mentioned in the above YAML snippet, make sure to change `adventworks` to the name of your Docker hub id.
     
