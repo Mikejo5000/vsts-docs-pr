@@ -17,18 +17,29 @@ monikerRange: '>= tfs-2017'
 
 This guidance explains how to build Docker images.
 
+::: moniker range="vsts"
+
+> [!NOTE]
+> To use YAML you must have the **Build YAML definitions** [preview feature](/vsts/project/navigation/preview-features) enabled on your account.
+
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+::: moniker-end
+
+::: moniker range="< vsts"
+
+> [!NOTE]
+> This scenario works on TFS, but some of the following instructions might not exactly match the version of TFS that you are using. Also, you'll need to set up a self-hosted agent, possibly also installing software. If you are a new user, you might have a better learning experience by trying this procedure out first using a free VSTS account.
+
+::: moniker-end
+
 ::: moniker range="tfs-2017"
 
 > [!NOTE]
 > 
 > This guidance applies to TFS version 2017.3 and newer.
-
-::: moniker-end
-
-::: moniker range="vsts"
-
-> [!NOTE]
-> To use YAML you must have the **Build YAML definitions** [preview feature](/vsts/project/navigation/preview-features) enabled on your account.
 
 ::: moniker-end
 
@@ -51,7 +62,7 @@ To build a Docker image, you need a **Dockerfile**. The sample code contains a D
 > [!IMPORTANT]
 > If you are new to creating build pipelines, then complete the [designer](../get-started-designer.md) quickstart first before following these instructions.
 
-1. After you have the sample code in your own repository, create a build pipeline and select the **ASP.NET Core** template. This automatically adds the tasks required to build the sample repository.
+1. After you have the sample code in your own repository, create a build pipeline and select the **ASP.NET Core** template. This automatically adds the tasks that you typically need to build an ASP.NET Core app.
 
 1. Select **Process** under the **Tasks** tab of the build pipeline editor, and change its properties as follows:
   * **Agent queue:** `Hosted Linux`
