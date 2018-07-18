@@ -189,28 +189,29 @@ Your builds run on a [self-hosted agent](../agents/agents.md#install). Make sure
 
 ## Build an image
 
-You can build a Docker image by running a script with `docker build` command or by using **Docker** task.
+You can build a Docker image by running the `docker build` command in a script or by using the **Docker** task.
 
 # [Designer](#tab/designer)
 
-1. Select **Tasks** in the build pipeline, select the phase that runs your build tasks, then select **+** to add a new task to that phase.
+1. Select **Tasks** in your build pipeline, and then add the **Docker** task to the phase.
 
-1. In the task catalog, find and add the **Docker** task.
+1. Select the task, and then for **Action**, select **Build an image**.
 
-1. Select the task and, for **Action**, select **Build an image**.
-
-1. If your **Dockerfile** depends on an image that is present in an authenticated registry, for e.g., a private Docker registry or Azure Container Registry, then specify those properties in the **Container registry type** and the corresponding service connection.
+1. If your _Dockerfile_ depends on an image that is present in an authenticated registry (for example, a private Docker registry or Azure Container Registry), then specify those properties in the **Container registry type** and the corresponding service connection.
 
 # [YAML](#tab/yaml)
 
 ::: moniker range="vsts"
-To run the Docker command via a script, add the following snippet to `.vsts-ci.yml` file.
+
+To run the command in a script, add the following snippet to your `.vsts-ci.yml` file.
+
 ```yaml
 steps:
 - script: docker build -f <Dockerfile>
 ```
 
-To run the docker command via a task, add the following snippet to `.vsts-ci.yml` file. This example also shows how to build an image that depends on another image from a protected registry.
+To use a task to run the command, add the following snippet to your `.vsts-ci.yml` file.
+
 ```yaml
 steps:
 - task: Docker@0
@@ -219,6 +220,9 @@ steps:
     containerregistrytype: 'Container Registry'
     dockerRegistryConnection: 'Adventworks DockerHub'  # replace with your Docker hub service connection
 ```
+
+The above example also shows how to build an image that depends on another image from a protected registry.
+
 ::: moniker-end
 
 ::: moniker range="< vsts"
@@ -229,12 +233,9 @@ YAML builds are not yet available on TFS.
 
 ## Integrate with app build
 
-You can build and test your app, before creating the Docker image, in two ways:
+Often you'll want to build and test your app before creating the Docker image. You can orchestrate this process either in your build pipeline or in your _Dockerfile_.
 
-* Orchestrate using build pipeline
-* Orchestrate using **Dockerfile**
-
-### Orchestrate using build pipeline
+### Orchestrate in your build pipeline
 
 In this approach, you use the build pipeline as the primary means to orchestrate building your code, running tests, and creating an image. This approach is useful if you want to:
 
@@ -246,7 +247,7 @@ To create an image, you run a `docker build` command at the end of your build pi
 
 The instructions in the example section above demonstrate this approach.
 
-### Orchestrate using Dockerfile
+### Orchestrate in your Dockerfile
 
 In this approach, you use **Dockerfile** as the primary means to build your code and run tests. The build pipeline has a single step to run `docker build`. The rest of the steps are orchestrated by the Docker build process itself. It is common to use a [multi-stage Docker build](https://docs.docker.com/develop/develop-images/multistage-build/) in this approach. The advantage of this approach is that your build process is entirely captured in your **Dockerfile** and it is portable between the development machine and any build system. However, you cannot leverage specific features of VSTS or TFS such as tasks, phases, or test analytics.
 
