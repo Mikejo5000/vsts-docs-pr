@@ -307,7 +307,8 @@ YAML builds are not yet available on TFS.
 
 ## Push an image
 
-Once you've build a Docker image, you can use the **Docker** task to push it to a Docker registry or to Azure Container Registry (ACR). The **Docker** task makes the process easier for you because it sets up an authenticated connection to your registry or ACR.
+Once you've build a Docker image, you can use the **Docker** task to push it to a Docker registry or to Azure Container Registry (ACR).
+The **Docker** task makes the process easier for you because it sets up an authenticated connection to your registry or ACR.
 
 To push a Docker image:
 
