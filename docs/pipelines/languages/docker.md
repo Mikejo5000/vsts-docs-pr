@@ -307,22 +307,24 @@ YAML builds are not yet available on TFS.
 
 ## Push an image
 
-Once built, you can push the Docker image by using **Docker** task. You can push the image to a Docker registry or to Azure Container Registry (ACR). The **Docker** task sets up an authenticated connection to your registry or ACR making it easy for you to push your image.
+Once you've build a Docker image, you can use the **Docker** task to push it to a Docker registry or to Azure Container Registry (ACR). The **Docker** task makes the process easier for you because it sets up an authenticated connection to your registry or ACR.
+
+To push a Docker image:
 
 # [Designer](#tab/designer)
 
-1. Select **Tasks** in the build pipeline, select the phase that runs your build tasks, then select **+** to add a new task to that phase.
+1. In your build pipeline, select **Tasks**, and then add a **Docker** task to the phase that runs your build tasks.
 
-1. In the task catalog, find and add the **Docker** task.
-
-1. Select the task and, for **Action**, select **Push an image**.
+1. Select the **Docker** task, and then for **Action** select **Push an image**.
 
 1. Specify how to connect to your registry in the **Container registry type** and the corresponding service connection properties.
 
 # [YAML](#tab/yaml)
 
 ::: moniker range="vsts"
-To push a Docker image, add the following snippet to `.vsts-ci.yml` file.
+
+Add the following snippet to the `.vsts-ci.yml` file at the root of your repo:
+
 ```yaml
 steps:
 - task: Docker@0
@@ -332,6 +334,7 @@ steps:
     dockerRegistryConnection: 'Adventworks DockerHub'   # replace with your Docker hub service connection
     action: 'Push an image'
 ```
+
 ::: moniker-end
 
 ::: moniker range="< vsts"
@@ -340,7 +343,7 @@ YAML builds are not yet available on TFS.
 
 ---
 
-By default, this task tags your image as `<Docker id>/<repo name>:<build id>`
+By default, the **Docker** task tags your image as `<Docker id>/<repo name>:<build id>`
 
 ## Use docker-compose
 
