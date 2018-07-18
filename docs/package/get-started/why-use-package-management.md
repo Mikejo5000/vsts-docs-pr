@@ -1,6 +1,6 @@
 ---
-title: Azure DevOps XXX New User Guide
-description: Learn how to create and consume npm, NuGet, and Maven packages in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+title: Why Use Azure DevOps XXX?
+description: Determine how Azure DevOps XXX can improve your and code consumption and delivery.
 ms.prod: devops
 ms.technology: devops-artifacts
 ms.manager: douge
@@ -10,3 +10,10 @@ ms.reviewer: amullans
 ms.date: 01/31/2018
 monikerRange: '>= tfs-2017'
 ---
+
+# Why use Azure DevOps XXX?
+
+## What can XXX do?
+
+## Example scenarios
+
