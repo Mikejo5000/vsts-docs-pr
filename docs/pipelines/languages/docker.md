@@ -252,7 +252,7 @@ The instructions in the [above example](#example) demonstrate this approach.
 
 In this approach, you use your _Dockerfile_ to build your code and run tests. The build pipeline has a single step to run `docker build`. The rest of the steps are orchestrated by the Docker build process. It's common to use a [multi-stage Docker build](https://docs.docker.com/develop/develop-images/multistage-build/) in this approach. The advantage of this approach is that your build process is entirely configured in your _Dockerfile_. This means your build process is portable from the development machine to any build system. One disadvantage is that you can't leverage VSTS and TFS features such as tasks, phases, or test analytics.
 
-To follow this approach, create a _Dockerfile_ at the root of your repository with the following content:
+To follow this approach, create a _Dockerfile_ at the root of your repo with the following content:
 
 ```dockerfile
 # First stage of multi-stage build
@@ -275,19 +275,19 @@ COPY --from=build-env /app/dotnetcore-sample/out .
 ENTRYPOINT ["dotnet", "dotnetcore-sample.dll"]
 ```
 
-Then, set up a build pipeline using the following instructions.
+Then, define your build pipeline:
 
 # [Designer](#tab/designer)
 
-1. Select **Tasks** in the build pipeline, remove all the tasks that you may have in the pipeline.
-1. Add **Docker** task and configure its properties:
-   * **Action:** Build an image
+1. Select **Tasks** in the build pipeline, and then remove all the tasks.
+
+1. Add a **Docker** task, and then for **Action** select **Build an image**.
 
 # [YAML](#tab/yaml)
 
 ::: moniker range="vsts"
 
-Create a build pipeline using the following snippet in `.vsts-ci-yml` file:
+Create a `.vsts-ci-yml` file at the root of your repo with the following content:
 
 ```yaml
 queue: 'Hosted Linux'
