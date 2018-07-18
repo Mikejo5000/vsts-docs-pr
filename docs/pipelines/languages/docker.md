@@ -347,7 +347,10 @@ By default, the **Docker** task tags your image as `<Docker id>/<repo name>:<bui
 
 ## Use Docker Compose
 
-Docker Compose enables you to bring up multiple containers and run tests. For example, you can use a _docker-compose.yml_ file to define two containers that need to work together to test your application: a web service that contains your application and a test driver. You can build new container images every time you push a change to your code. You can wait for the test driver to finish running tests before bringing down the two containers.
+Docker Compose enables you to bring up multiple containers and run tests.
+For example, you can use a _docker-compose.yml_ file to define two containers that need to work together to test your application: a web service that contains your application and a test driver.
+You can build new container images every time you push a change to your code.
+You can wait for the test driver to finish running tests before bringing down the two containers.
 
 ::: moniker range="vsts"
 
