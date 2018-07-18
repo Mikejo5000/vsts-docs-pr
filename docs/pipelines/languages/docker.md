@@ -81,7 +81,7 @@ To build a Docker image, you need a **Dockerfile**. The sample code contains a D
   * **Container registry type:** `Container registry`
   * **Docker registry connection:** Select `New` and create a connection to your Docker hub registry.
 
-Save the pipeline and queue a build to see it in action. Then read through the rest of this topic to learn some of the more common changes people make to customize their Docker build.
+Save the pipeline and queue a build to see it in action. 
 
 # [YAML](#tab/yaml)
 
@@ -127,7 +127,7 @@ steps:
     
 As mentioned in the above YAML snippet, make sure to change `adventworks` to the name of your Docker hub id.
     
-Push the above change to master branch in your repository, and then run a build using this YAML file. Then read through the rest of this topic to learn some of the more common changes people make to customize a Docker build.
+Push the above change to master branch in your repository, and then run a build using this YAML file to see it in action.
 
 ::: moniker-end
 
@@ -138,6 +138,8 @@ YAML builds are not yet available on TFS.
 ::: moniker-end
 
 ---
+
+Now that you've run a Docker build pipeline, you're ready to learn some of the more common changes people make to customize their Docker build.
 
 ## Build environment
 
