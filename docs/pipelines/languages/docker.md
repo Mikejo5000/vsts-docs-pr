@@ -40,6 +40,7 @@ This guidance explains how to build Docker images.
 
 > [!VIDEO https://www.youtube.com/embed/X4Puu0BS3GE]
 
+<a name="example"></a>
 ## Example
 
 If you want some sample code that works with this guidance, import (into VSTS or TFS) or fork (into GitHub) this repo:
@@ -237,23 +238,23 @@ Often you'll want to build and test your app before creating the Docker image. Y
 
 ### Orchestrate in your build pipeline
 
-In this approach, you use the build pipeline as the primary means to orchestrate building your code, running tests, and creating an image. This approach is useful if you want to:
+In this approach, you use the build pipeline to orchestrate building your code, running your tests, and creating an image. This approach is useful if you want to:
 
-* leverage (in-built or Marketplace) tasks to define how you build and test your app
-* run tasks that require authentication via service endpoints (e.g., authenticated NuGet or npm feeds)
-* publish test results  
+* Leverage tasks (either built-in tasks or those you get from the Marketplace) to define the process used to build and test your app.
+* Run tasks that require authentication via service endpoints (for example: authenticated NuGet or npm feeds).
+* Publish test results.
 
-To create an image, you run a `docker build` command at the end of your build pipeline. The **Dockerfile** contains the instructions to copy the results of your build into the container.
+To create an image, you run a `docker build` command at the end of your build pipeline. Your _Dockerfile_ contains the instructions to copy the results of your build into the container.
 
-The instructions in the example section above demonstrate this approach.
+The instructions in the [above example](#example) demonstrate this approach.
 
 ### Orchestrate in your Dockerfile
 
-In this approach, you use **Dockerfile** as the primary means to build your code and run tests. The build pipeline has a single step to run `docker build`. The rest of the steps are orchestrated by the Docker build process itself. It is common to use a [multi-stage Docker build](https://docs.docker.com/develop/develop-images/multistage-build/) in this approach. The advantage of this approach is that your build process is entirely captured in your **Dockerfile** and it is portable between the development machine and any build system. However, you cannot leverage specific features of VSTS or TFS such as tasks, phases, or test analytics.
+In this approach, you use your _Dockerfile_ to build your code and run tests. The build pipeline has a single step to run `docker build`. The rest of the steps are orchestrated by the Docker build process. It's common to use a [multi-stage Docker build](https://docs.docker.com/develop/develop-images/multistage-build/) in this approach. The advantage of this approach is that your build process is entirely configured in your _Dockerfile_. This means your build process is portable from the development machine to any build system. One disadvantage is that you can't leverage VSTS and TFS features such as tasks, phases, or test analytics.
 
-To follow this approach, create a **Dockerfile** at the root of your repository with the following contents:
+To follow this approach, create a _Dockerfile_ at the root of your repository with the following content:
 
-```
+```dockerfile
 # First stage of multi-stage build
 FROM microsoft/aspnetcore-build:2.0 AS build-env
 WORKDIR /app
