@@ -4,6 +4,12 @@
   items:
   - name: About Package Management
     href: overview.md
+  - name: Get started guide
+    href: get-started/get-started-package-management.md
+  - name: Why use XXX?
+    href: get-started/why-use-package-management.md
+  - name: Basic concepts (Move)
+    href: get-started/basic-package-management-concepts.md
 - name: Quickstarts
   items:
   - name: Install and license Package Management
