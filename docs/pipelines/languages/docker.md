@@ -419,7 +419,7 @@ docker-compose -f docs/docker-compose.yml --project-directory . down
     docker-compose -f docs/docker-compose.yml --project-directory . -p docs up -d |
     docker wait docs_sut_1 |
     docker-compose -f docs/docker-compose.yml --project-directory . down |
-```
+ ```
  ::: moniker-end
 
  ::: moniker range="< vsts"
