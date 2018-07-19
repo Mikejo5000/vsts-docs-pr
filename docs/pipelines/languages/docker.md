@@ -422,6 +422,8 @@ docker-compose -f docs/docker-compose.yml --project-directory . down
     docker-compose -f docs/docker-compose.yml --project-directory . down |
 ```
 
+ ---
+
 ::: moniker range="vsts"
 > [!NOTE]
 > When using Hosted Linux agents, the agent runs inside a container. The network of this container is not bridged to the network of the containers that you spin up through docker compose. As a result, you cannot communicate from the agent to one of the containers in the composition, for e.g., to drive tests. One way to tackle this is to explicitly create another test driver as a container within the composition, as we did in the example above. Another way to solve this is to use `docker-compose exec` and target a specific container in the composition from your script.
