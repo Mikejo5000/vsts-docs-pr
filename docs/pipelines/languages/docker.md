@@ -411,7 +411,8 @@ docker-compose -f docs/docker-compose.yml --project-directory . down
 
  # [YAML](#tab/yaml)
 
- ::: moniker range="vsts"
+ >[!NOTE]
+ > YAML builds are not yet available on TFS
  Add the following snippet to your `.vsts-ci.yml` file.
 
  ```yaml
@@ -419,13 +420,7 @@ docker-compose -f docs/docker-compose.yml --project-directory . down
     docker-compose -f docs/docker-compose.yml --project-directory . -p docs up -d |
     docker wait docs_sut_1 |
     docker-compose -f docs/docker-compose.yml --project-directory . down |
- ```
- ::: moniker-end
-
- ::: moniker range="< vsts"
- YAML builds are not yet available on TFS.
- ::: moniker-end
- ---
+```
 
 ::: moniker range="vsts"
 > [!NOTE]
