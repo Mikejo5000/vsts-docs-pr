@@ -254,7 +254,7 @@ In this approach, you use your _Dockerfile_ to build your code and run tests. Th
 
 To follow this approach, create a _Dockerfile_ at the root of your repo with the following content:
 
-```dockerfile
+```Dockerfile
 # First stage of multi-stage build
 FROM microsoft/aspnetcore-build:2.0 AS build-env
 WORKDIR /app
@@ -359,11 +359,11 @@ If you use Microsoft-hosted agents, you do not have to run any additional steps 
 
 ::: moniker-end
 
-To extend the example using docker-compose, follow these steps:
+To extend the above example to use docker-compose:
 
-Add a file `docker-compose.yml` at the root of your repository.
+1. Add `docker-compose.yml` file at the root of your repo.
 
-```yaml
+ ```yaml
 sut:
   build: .
   dockerfile: Dockerfile.test
@@ -374,9 +374,9 @@ web:
   dockerfile: Dockerfile
 ```
     
-Add a file `Dockerfile.test` at the root of your repository.
+1. Add a `Dockerfile.test` file at the root of your repo.
 
-```
+ ```Dockerfile
 FROM ubuntu:trusty
 RUN apt-get update && apt-get install -yq curl && apt-get clean
 WORKDIR /app
@@ -384,9 +384,9 @@ ADD test.sh /app/test.sh
 CMD ["bash", "test.sh"]
 ```
 
-Add a file `test.sh` at the root of your repository.
+1. Add a `test.sh` file at the root of your repository.
 
-```
+ ```bash
 sleep 5
 if curl web | grep -q 'ASP.NET Core '; then
   echo "Tests passed!"
@@ -397,33 +397,35 @@ else
 fi
 ```
 
-# [Designer](#tab/designer)
+1. Add a **Bash** task.
 
-In the build pipeline, add a **Bash** task with the following inline script:
+ # [Designer](#tab/designer)
 
-```
+ In the build pipeline, add a **Bash** task with the following inline script:
+
+ ```
 docker-compose -f docs/docker-compose.yml --project-directory . -p docs up -d
 docker wait docs_sut_1
 docker-compose -f docs/docker-compose.yml --project-directory . down
 ```
 
-# [YAML](#tab/yaml)
+ # [YAML](#tab/yaml)
 
 ::: moniker range="vsts"
 Add the following snippet to your `.vsts-ci.yml` file.
 
-```yaml
+ ```yaml
 - script: |
     docker-compose -f docs/docker-compose.yml --project-directory . -p docs up -d |
     docker wait docs_sut_1 |
     docker-compose -f docs/docker-compose.yml --project-directory . down |
 ```
-::: moniker-end
+ ::: moniker-end
 
-::: moniker range="< vsts"
-YAML builds are not yet available on TFS.
-::: moniker-end
----
+ ::: moniker range="< vsts"
+ YAML builds are not yet available on TFS.
+ ::: moniker-end
+ ---
 
 ::: moniker range="vsts"
 > [!NOTE]
