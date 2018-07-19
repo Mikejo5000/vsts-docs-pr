@@ -411,8 +411,8 @@ docker-compose -f docs/docker-compose.yml --project-directory . down
 
  # [YAML](#tab/yaml)
 
-::: moniker range="vsts"
-Add the following snippet to your `.vsts-ci.yml` file.
+ ::: moniker range="vsts"
+ Add the following snippet to your `.vsts-ci.yml` file.
 
  ```yaml
 - script: |
