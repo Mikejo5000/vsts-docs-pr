@@ -42,7 +42,7 @@ All users have access to Work Item Search.
 ## Install Code Search in VSTS
 
 Go to [Visual Studio Marketplace](http://go.microsoft.com/fwlink/?LinkId=703823&clcid=0x409)
-to install the extension in your VSTS account as an administrator.
+to install the extension in VSTS as an administrator.
 Non-administrative users can also go here to request the extension be added to VSTS. 
 
 For more details, see [Install an extension](../../marketplace/install-vsts-extension.md#install-extension) in the Marketplace documentation.
@@ -69,7 +69,7 @@ Search can be used on any size physical server or virtual machine that runs
 TFS 2017 or above. It can be configured on the same server as TFS,
 or on a separate server dedicated to Search.
 When configuring Search on the same server as TFS,
-you must take into account the existing CPU utlization
+you must consider the existing CPU utlization
 factor due to TFS itself.
 
 **For production environments we recommend you configure Search on a separate server.**
@@ -111,21 +111,20 @@ allocate upto 35% of the size of all the collections that will be indexed.
 Search has the following dependencies, which are installed automatically
 as part of the configuration:
 
-* [Elasticsearch](https://www.elastic.co/products/elasticsearch) by Elasticsearch BV (see Note 1)
+* [Elasticsearch](https://www.elastic.co/products/elasticsearch) by Elasticsearch BV (see Notes 1 and 2)
 * [Elasticsearch NEST client](https://www.elastic.co/guide/en/elasticsearch/client/net-api/current/index.html) 
-* [Oracle Server JRE 8 Update 20 or higher](http://www.oracle.com/technetwork/java/javase/downloads/server-jre8-downloads-2133154.html) Java runtime environment (see Note 2)
+* [Oracle Server JRE 8 Update 20 or higher](http://www.oracle.com/technetwork/java/javase/downloads/server-jre8-downloads-2133154.html) Java runtime environment (see Note 3)
 * [Markdowndeep](http://www.toptensoftware.com/markdowndeep/) by Topten Software
 * [Roslyn](https://github.com/dotnet/roslyn) compiler platform
 * [ANTLR](http://www.antlr.org/) language recognition parser
 
 **NOTES**:
  
-* A modified version of Elasticsearch ships with TFS. 
-  Search will work only with this version of Elasticsearch.
-  
-* A newer version of Elasticsearch ships with TFS 2018 Update 2 and above. Upgrading from an older version of Search will result in all content being re-indexed after the installation. Depending on the volume of content (code files, work items, and wiki pages), re-indexing can take some time to complete.
-
-* The system or TFS administrator must ensure that Server JRE is
+1. A modified version of Elasticsearch ships with TFS. 
+   Search will work only with this version of Elasticsearch.  
+1. A newer version of Elasticsearch ships with TFS 2018 Update 2 and above. Upgrading from an older version of Search will result in all content being re-indexed after the installation.
+   Depending on the volume of content (code files, work items, and wiki pages), re-indexing can take some time to complete.
+1. The system or TFS administrator must ensure that Server JRE is
   maintained and updated in line with the software provider's recommendations. 
   Also see the [installation notes](#java-notes) that follow.
 

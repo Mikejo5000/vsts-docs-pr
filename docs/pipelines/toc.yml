@@ -4,13 +4,6 @@
   items:
   - name: About Build and Release
     href: overview.md
-  - name: New User Guide
-    href: new-user-pipelines.md
-    items:
-      - name: Why Use Pipelines?
-        href: why-use-pipelines.md
-      - name: Basic Concepts
-        href: basic-pipelines-concepts.md
 - name: Quickstarts
   items:
   - name: Your first build and release
@@ -45,7 +38,7 @@
     href: apps/mobile/xcode-ios.md
 - name: Targets
   items:
-  - name: Azure Container Service (Kubernetes)
+  - name: Azure Kubernetes Service
     href: apps/cd/azure/deploy-container-kubernetes.md
   - name: Azure Stack
     href: targets/azure-stack.md

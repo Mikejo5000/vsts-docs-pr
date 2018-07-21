@@ -32,16 +32,16 @@ Whether you use scrum, Kanban, or a combination of Agile methods, you can get st
 
 [1. Assign backlog items to a sprint](assign-work-sprint.md)  
 [2. Add tasks to backlog items](add-tasks.md)  
-[3. Set your team's capacity](set-capacity.md)  
-[4. Adjust work to fit team capacity](adjust-work.md)  
+[3. Set sprint capacity](set-capacity.md)  
+[4. Adjust work to fit sprint capacity](adjust-work.md)  
 [5. Share your sprint plan](share-plan.md)  
 [6. Update the Taskboard](task-board.md)  
-[7. Monitor sprint burndown](sprint-burndown.md)  
 
  
 ## Concepts 
 - [Scrum best practices](best-practices-scrum.md) 
-- [Scrum and sprint planning tools](scrum-sprint-planning-tools.md)      
+- [Scrum and sprint planning tools](scrum-sprint-planning-tools.md)  
+- [About areas and iterations](../../organizations/settings/about-areas-iterations.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json)
 - [About permissions and access](../../organizations/security/permissions-access-work-tracking.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json)
 - [Share work plans](../track/share-plans.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json) 
 

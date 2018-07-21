@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2015 < vsts'
 
 This article describes the licensing model for Release Management in Team Foundation Server 2017 (TFS 2017) or newer. We don't charge you for Team Foundation Build (TFBuild) so long as you have a TFS Client Access License (CAL).
 
-A TFS _concurrent job_ gives you the ability to run a single release at a time in a team project collection. You can keep hundreds or even thousands of release jobs in your collection. But, to run more than one release at a time, you need additional concurrent jobs.
+A TFS _concurrent job_ gives you the ability to run a single release at a time in a project collection. You can keep hundreds or even thousands of release jobs in your collection. But, to run more than one release at a time, you need additional concurrent jobs.
 
 One free concurrent job is included with every collection in a Team Foundation server. Every Visual Studio Enterprise subscriber in a Team Foundation server contributes one additional concurrent job. You can buy additional private jobs from the Visual Studio Marketplace.
 
@@ -89,7 +89,7 @@ After you've added these users, additional licenses will appear on the resource 
 
 ## Purchase additional concurrent jobs
 
-If you need to run more concurrent releases, you can [buy additional private jobs from the Visual Studio marketplace](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines). Since there is no way to directly purchase concurrent jobs from Marketplace for a TFS instance at present, you must first buy concurrent jobs for a VSTS account. After you buy the private jobs for a VSTS account, you enter the number of purchased concurrent jobs manually on the resource limits page described below.
+If you need to run more concurrent releases, you can [buy additional private jobs from the Visual Studio marketplace](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines). Since there is no way to directly purchase concurrent jobs from Marketplace for a TFS instance at present, you must first buy concurrent jobs for a VSTS organization. After you buy the private jobs for a VSTS organization, you enter the number of purchased concurrent jobs manually on the resource limits page described below.
 
 ## View and manage concurrent jobs
 

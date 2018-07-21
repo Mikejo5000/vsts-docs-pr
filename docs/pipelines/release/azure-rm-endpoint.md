@@ -136,7 +136,7 @@ To resolve these issues:
 * Open an InPrivate or incognito browser window and navigate to [https://visualstudio.microsoft.com/team-services/](https://visualstudio.microsoft.com/team-services/).
 * If you are prompted to sign out, do so.
 * Sign in using the appropriate credentials.
-* Choose the account you want to use from the list.
+* Choose the organization you want to use from the list.
 * Select the project you want to add the service connection to.
 * Create the service connection you need by opening the **Settings** page, selecting the **Services** tab,
   choosing **New service connection**, and selecting **Azure Resource Manager**.
@@ -150,7 +150,7 @@ the **Contributor** role.
 
 ![Failed to assign Contributor role error](_img/azure-rm-endpoint/azure-rm-endpoint-09.png)
 
-To resolve this issue, ask the subscription administrator
-to configure an **Admin Access** role for your identity.
+To resolve this issue, ask the subscription administrator to
+[configure your identity in an **Admin Access** role](https://docs.microsoft.com/en-gb/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal).
 
 [!INCLUDE [rm-help-support-shared](../_shared/rm-help-support-shared.md)]
