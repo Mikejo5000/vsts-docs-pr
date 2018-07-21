@@ -20,7 +20,7 @@ featureFlags:
         <h1>Azure Devops Pipelines Documentation</h1>
 <p>Test and deploy your code to production at lightning speed with high-performance pipelines. Start small and scale up as needed.</p>
                         <a href="#delivery">Build and Release (Pipelines)</a>
-                        <ul id="delivery" class="cardsA">
+                        <ul id="delivery" class="cardsY panelContent featuredContent">
                             <li>
                                 <a href="/vsts/pipelines/index">
                                     <div class="cardSize">

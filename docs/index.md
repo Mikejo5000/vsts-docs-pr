@@ -36,7 +36,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3><a href="/vsts/git">Repos Onboarding Guide</a></h3>
+                                                    <h3><a href="/vsts/git">Repos Get Started Guide</a></h3>
                                                     <p>Sign up and start developing code with distributed, flexible version control.</p>
                                                 </div>
                                             </div>
@@ -53,7 +53,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3><a href="/vsts/work/work-items">Agile Onboarding Guide</a></h3>
+                                                    <h3><a href="/vsts/work/work-items">Agile Get Started Guide</a></h3>
                                                     <p>Sign up and start using Agile tools to plan and track work.</p>
                                                 </div>
                                             </div>
@@ -70,7 +70,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3><a href="/vsts/pipelines">Pipelines Onboarding Guide </a></h3>
+                                                    <h3><a href="/vsts/pipelines">Pipelines Get Started Guide </a></h3>
                                                     <p>Sign up and start building and releasing apps with continuous integration and deployment.</p>
                                                 </div>
                                             </div>
@@ -81,8 +81,7 @@ featureFlags:
 <a id="devops-services" />
 <h2>Azure Devops Services</h2>
 <p>Start with one service and add others as you need them.  </p>
-                        <a href="#devops-services-suite">Overview</a>
-                        <ul id="devops-services-suite" class="cardsA">
+                        <ul id="devops-services-suite" class="cardsY panelContent featuredContent">
                             <li>
                                 <a href="/vsts/index-work">
                                     <div class="cardSize">
@@ -182,8 +181,7 @@ featureFlags:
 <a id="devops-services-supplemental" />
 <h2>Azure Devops Supplemental Services</h2>
 <p>Share information and gain insights into your projects using the supplemental services available to all Azure DevOps Services such as Wikis, Dashboards, and Analytics. </p>
-                        <a href="#overview">Overview</a>
-                        <ul id="overview" class="cardsA">
+                        <ul id="overview" class="cardsY panelContent featuredContent">
                             <li>
                                 <a href="/vsts/project/project-vision-status">
                                     <div class="cardSize">
@@ -303,8 +301,7 @@ featureFlags:
 <a id="devops-services-settings" />
 <h2>Azure Devops Administrative Settings</h2>
 <p>Configure and customize resources to support your development, deployment, planning, and tracking. </p>
-                        <a href="#settings">Settings</a>
-                        <ul id="settings" class="cardsA">
+                        <ul id="settings" class="cardsY panelContent featuredContent">
                             <li>
                                 <a href="/vsts/organizations/settings/index">
                                     <div class="cardSize">
@@ -482,8 +479,7 @@ featureFlags:
 <a id="devops-services-extensions" />
 <h2>Azure Devops Marketplace and Extensions</h2>
 <p>Configure and customize resources to support your teams. </p>
-                        <a href="#integration">Marketplace and Extensions</a>
-                        <ul id="integration" class="cardsA">
+                        <ul id="integration" class="cardsY panelContent featuredContent">
                             <li>
                                 <a href="/vsts/marketplace/overview">
                                     <div class="cardSize">

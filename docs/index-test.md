@@ -20,7 +20,7 @@ featureFlags:
         <h1>Azure Devops Test Center Documentation</h1>
 <p>Test early and often to release your app with confidence. Use VSTS to setup test plans and track and report manual tests, run automated test suites, and run cloud-based load tests.</p>
                         <a href="#testing">Test</a>
-                        <ul id="testing" class="cardsA">
+                        <ul id="testing" class="cardsY panelContent featuredContent">
                             <li>
                                 <a href="/visualstudio/test/unit-test-your-code">
                                     <div class="cardSize">

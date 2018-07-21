@@ -19,7 +19,7 @@ featureFlags:
     <div class="container">
         <h1>Azure Devops Repos Documentation</h1>
 <p>Azure Devops Repos has everything you love about Git with free private repositories, pull requests, and code review. Collaborate with coworkers to make your code rock-solid-then integrate with CI/CD to get your code to production fast.</p>
-                        <ul id="code" class="cardsA">
+                        <ul id="code" class="cardsY panelContent featuredContent">
                             <li>
                                 <a href="/vsts/git">
                                     <div class="cardSize">
