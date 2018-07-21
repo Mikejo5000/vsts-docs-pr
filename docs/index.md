@@ -22,9 +22,9 @@ featureFlags:
     <div class="container">
     <h1>Azure Devops Documentation</h1>
     <p>Collaborate across your organization with tools designed to start small and scale up as needed. Azure DevOps Services provides free private Git repositories, configurable Kanban boards, interactive backlogs, simple planning tools, high-performance pipelines, and extensive automated and cloud-based load testing.</p>
-<h2>Get Started with Azure Devops</h2>
+<a href="#start"> </a>
+<h2 id="start">Get Started with Azure Devops</h2>
 <p>Explore our most popular services with quickstarts, samples, and tutorials.</p>
-
          <ul id="on-boarding" class="cardsY panelContent featuredContent">
             <li>             
                                     <div class="cardSize">
@@ -80,7 +80,9 @@ featureFlags:
                  </ul> 
 <a id="devops-services" />
 <h2>Azure Devops Services</h2>
-                        <ul class="cardsA">
+<p>Start with one service and add others as you need them.  </p>
+                        <a href="#devops-services-suite">Overview</a>
+                        <ul id="devops-services-suite" class="cardsA">
                             <li>
                                 <a href="/vsts/index-work">
                                     <div class="cardSize">
@@ -179,7 +181,7 @@ featureFlags:
                         </ul>
 <a id="devops-services-supplemental" />
 <h2>Azure Devops Supplemental Services</h2>
-<p>Share information and gain insight using the supplemental services available to all Azure DevOps Services such as Wikis, Dashboards, and Analytics. </p>
+<p>Share information and gain insights into your projects using the supplemental services available to all Azure DevOps Services such as Wikis, Dashboards, and Analytics. </p>
                         <a href="#overview">Overview</a>
                         <ul id="overview" class="cardsA">
                             <li>
@@ -300,7 +302,7 @@ featureFlags:
                         </ul>
 <a id="devops-services-settings" />
 <h2>Azure Devops Administrative Settings</h2>
-<p>Configure and customize resources to support your teams. </p>
+<p>Configure and customize resources to support your development, deployment, planning, and tracking. </p>
                         <a href="#settings">Settings</a>
                         <ul id="settings" class="cardsA">
                             <li>
