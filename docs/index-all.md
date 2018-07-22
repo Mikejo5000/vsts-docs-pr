@@ -19,9 +19,12 @@ featureFlags:
 
 <div id="main" class="v2">
 <div class="container">
-<h1>Azure Devops Services: Index to Documentation</h1>
+<h1>Azure Devops Services: Index to Documentation and Resources</h1>
     <p>Access get started guides, user guides, administrative resources, API references, and other resources.</p><br/>
 <h2 id="user-guides">User Guides</h2><br/>
+                        <a data-default="true" href="#all">All</a>
+                        <ul id="all" class="cardText">
+                            <li>
                                 <div class="group">
                                     <h3>Get Started Guides</h3>
                                     <ul>
@@ -52,6 +55,8 @@ featureFlags:
                                         <li><a class="barLink" href="/vsts/project/feedback/index">Request Feedback</a></li>
                                     </ul>
                                 </div>
+                            </li>
+                            <li>
                                 <div class="group">
                                     <h3>Code (Repos)</h3>
                                     <ul>
@@ -72,6 +77,8 @@ featureFlags:
                                         <li><a class="barLink" href="/vsts/pipelines/tasks"><del>Task Reference</del></a></li>
                                     </ul>
                                 </div>
+                            </li>
+                            <li>
                                 <div class="group">
                                     <h3>Test</h3>
                                     <ul>
@@ -88,7 +95,11 @@ featureFlags:
                                         <li><a class="barLink" href="/vsts/report/extend-analytics/index">Extend Analytics with OData</a></li>
                                     </ul>
                                 </div>
+                            </li>
+                        </ul>
 <h2 id="admin">Administrative Resources</h2><br/>
+                        <ul id="all" class="cardText">
+                            <li>
                                 <div class="group">
                                     <h3>Settings</h3>
                                     <ul>
@@ -101,6 +112,8 @@ featureFlags:
                                         <li><a class="barLink" href="/vsts/notifications/index">Notifications</a></li>
                                     </ul>
                                 </div>
+                            </li>
+                            <li>
                                 <div class="group">
                                     <h3>Marketplace and Extensions</h3>
                                     <ul>
@@ -113,6 +126,8 @@ featureFlags:
                                         <li><a class="barLink" href="https://www.visualstudio.com/docs/integrate/extensions/reference/client/core-sdk">TypeScript APIs</a></li>
                                     </ul>
                                 </div>
+                            </li>
+                        </ul>
 <h2 id="deploy">Deploy to Azure</h2><br/>
 
 <h2 id="sdks">SDKs and Toolkits</h2><br/>

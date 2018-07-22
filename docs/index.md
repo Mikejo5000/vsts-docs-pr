@@ -180,7 +180,7 @@ featureFlags:
                         </ul>
 <a id="devops-services-supplemental" />
 <h2>Azure Devops Services: Shared Features</h2>
-<p>Share information and gain insights using Wikis, Dashboards, and Analytics plus other  features available to all Azure DevOps Services. </p><br/>
+<p>Share information and gain insights using Wikis, Dashboards, and Analytics plus other features available to all Azure DevOps Services. </p><br/>
                         <ul id="overview" class="cardsY panelContent featuredContent">
                             <li>
                                 <a href="/vsts/project/project-vision-status">
@@ -277,6 +277,25 @@ featureFlags:
                                     </div>
                                 </a>
                             </li>  
+                            <li>
+                                <a href="/vsts/report/powerbi/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/logo_power-bi.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Power BI</h3>
+                                                    <p>Use Power BI to drive ad hoc analysis, produce beautiful reports, and publish them for enterprise consumption.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
                             <li>
                                 <a href="/vsts/project/search/index">
                                     <div class="cardSize">
@@ -455,7 +474,7 @@ featureFlags:
                                         </div>
                                     </div>
                                 </a>
-                            </li    
+                            </li>    
                             <li>
                                 <a href="/vsts/billing/index">
                                     <div class="cardSize">
@@ -638,4 +657,6 @@ featureFlags:
                 </ul>
      </div>
 </div>
-
+<a href="/vsts/index-all">
+<h2>Azure Devops Services Index</h2>
+</a>

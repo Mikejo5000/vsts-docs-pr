@@ -8,4 +8,4 @@
     items:
     - name: Get Started Guide
       tocHref: /vsts/repos/get-started/
-      opicHref: /vsts/repos/get-started/index
+      topicHref: /vsts/repos/get-started/index

@@ -202,10 +202,6 @@ featureFlags:
                                     </div>
                                 </a>
                             </li>
-                    </li>
-                    <li>
-                        <a href="#tfs-security">Security</a>
-                        <ul id="tfs-security" class="cardsA">
                             <li>
                                 <a href="/tfs/server/admin/add-administrator-tfs">
                                     <div class="cardSize">

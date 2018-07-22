@@ -105,12 +105,3 @@ You provide others access to your account by adding their email address.
 	- **VSTS Groups**: Leave this entry at Project Contributors, the default security group for people who will contribute to your project. To learn more, see [Default permissions and access assignments](../../organizations/security/permissions-access.md). 
 
 0. When done, click **Add** to complete your invitation. 
-
-## Next steps  
- 
-> [!div class="nextstepaction"]
-> [Add code to your Git repository](code-with-git.md) 
-
-
-For more information on managing users and account access, see [Add account users for VSTS](../../organizations/accounts/add-account-users-from-user-hub.md).
- 

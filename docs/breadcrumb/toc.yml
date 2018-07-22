@@ -2,12 +2,21 @@
   tocHref: /vsts/
   topicHref: /vsts/index#pivot=services
   items:
-  - name: New User Guide
+  - name: Get Started Guides
     tocHref: /vsts/user-guide/
     topicHref: /vsts/user-guide/index
-  - name: Code
+  - name: Repos Get Started Guide
+    tocHref: /vsts/repos/get-started/
+    topicHref: /vsts/repos/get-started/index
+  - name: Boards (Agile) Get Started Guide
+    tocHref: /vsts/work/get-started/
+    topicHref: /vsts/work/get-started/index
+  - name: Pipelines Get Started Guide
+    tocHref: /vsts/pipelines/get-started/
+    topicHref: /vsts/pipelines/get-started/index
+  - name: Repos
     tocHref: /vsts/git/
-    topicHref: /vsts/index#pivot=services&panel=code
+    topicHref: /vsts/index-repos
     items:
     - name: Git
       tocHref: /vsts/git/
@@ -17,7 +26,7 @@
       topicHref: /vsts/tfvc/index
   - name: "Continuous Integration & Delivery"
     tocHref: /vsts/pipelines/
-    topicHref: /vsts/index#pivot=services&panel=delivery
+    topicHref: /vsts/index-pipelines
     items:
     - name: Deploy to Azure
       tocHref: /vsts/deploy-azure/
@@ -33,7 +42,7 @@
       topicHref: /vsts/pipelines/index
   - name: Testing
     tocHref: /vsts/test/
-    topicHref: /vsts/index#pivot=services&panel=testing
+    topicHref: /vsts/index-test
     items:
     - name: Exploratory & Manual Testing
       tocHref: /vsts/test/
@@ -46,7 +55,7 @@
       topicHref: https://docs.microsoft.com/visualstudio/test/unit-test-your-code
   - name: Agile
     tocHref: /vsts/work/
-    topicHref: /vsts/index#pivot=services&panel=agile
+    topicHref: /vsts/index-work
     items:
     - name: Boards (Kanban) 
       tocHref: /vsts/work/kanban/
@@ -72,9 +81,9 @@
   - name: "VSTS Demo Generator"
     tocHref: /vsts/demo-gen/
     topicHref: /vsts/demo-gen/index  
-  - name: Reporting
+  - name: Shared Features
     tocHref: /vsts/
-    topicHref: /vsts/index#pivot=services&panel=reporting
+    topicHref: /vsts/index#devops-services-supplemental
     items:
     - name: Dashboards
       tocHref: /vsts/report/dashboards
@@ -85,10 +94,6 @@
     - name: Power BI
       tocHref: /vsts/report/powerbi/
       topicHref: /vsts/report/powerbi/index
-  - name: Collaborate
-    tocHref: /vsts/
-    topicHref: /vsts/index#pivot=services&panel=collaboration
-    items:
     - name: Public Projects
       tocHref: /vsts/organizations/public/
       topicHref: /vsts/organizations/public/index
@@ -106,7 +111,7 @@
       topicHref: /vsts/project/feedback/index
   - name: Admin
     tocHref: /vsts/
-    topicHref: /vsts/index#pivot=services&panel=admin
+    topicHref: /vsts/index#devops-services-setting
     items:
     - name: Project Management
       tocHref: /vsts/organizations/projects/
@@ -132,10 +137,16 @@
     - name: Technical Articles
       tocHref: /vsts/articles/
       topicHref: /vsts/articles/index
-  - name: Extend
+  - name: "Marketplace & Extensions"
     tocHref: /vsts/
-    topicHref: /vsts/index#pivot=services&panel=integration
+    topicHref: /vsts/index#devops-services-extensions
     items:
+    - name: Discover Extensions
+      tocHref: /vsts/marketplace/
+      topicHref: https://marketplace.visualstudio.com/
+    - name: Service Hooks
+      tocHref: /vsts/service-hooks/
+      topicHref: /vsts/service-hooks/index
     - name: Build extensions
       tocHref: /vsts/extend/
       topicHref: /vsts/extend/index
@@ -148,16 +159,4 @@
     - name: Extend Analytics with OData
       tocHref: /vsts/report/extend-analytics/
       topicHref: /vsts/report/extend-analytics/index
-  - name: Marketplace
-    tocHref: /vsts/extend/
-    topicHref: /vsts/index#pivot=services&panel=integration
-    items:
-    - name: Discover Extensions
-      tocHref: /vsts/marketplace/
-      topicHref: https://marketplace.visualstudio.com/
-    - name: Service Hooks
-      tocHref: /vsts/service-hooks/
-      topicHref: /vsts/service-hooks/index
-    - name: Visual Studio subscriptions
-      tocHref: /vsts/marketplace/vs-subscriptions/
-      topicHref: /vsts/marketplace/vs-subscriptions/buy-vs-subscriptions
+

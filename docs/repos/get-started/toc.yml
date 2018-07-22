@@ -7,6 +7,7 @@
     href: sign-up-invite-teammates.md
   - name: Code with Git
     href: code-with-git.md
+- name: Resources
   items:
   - name: Visual Studio IDE
     href: https://docs.microsoft.com/visualstudio/
@@ -15,4 +16,4 @@
   - name: Visual Studio for Mac
     href: https://docs.microsoft.com/visualstudio/mac
   - name: Project Management
-    href: ../organizations/projects/index.md
+    href: ../../organizations/projects/index.md

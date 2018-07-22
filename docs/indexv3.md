@@ -2046,7 +2046,7 @@ featureFlags:
                                     </div>
                                 </a>
                             </li>
-                            <li>
+                            <li>A
                                 <a href="/vsts/report/sql-reports/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
