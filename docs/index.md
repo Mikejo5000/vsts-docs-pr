@@ -20,11 +20,11 @@ featureFlags:
 
 <div id="main" class="v2">
     <div class="container">
-    <h1>Azure Devops Documentation</h1>
+    <h1>Azure Devops Services Documentation</h1>
     <p>Collaborate across your organization with tools designed to start small and scale up as needed. Azure DevOps Services provides free private Git repositories, configurable Kanban boards, interactive backlogs, simple planning tools, high-performance pipelines, and extensive automated and cloud-based load testing.</p>
 <a href="#start"> </a>
 <h2 id="start">Get Started with Azure Devops</h2>
-<p>Explore our most popular services with quickstarts, samples, and tutorials.</p>
+<p>Start with one service and add others as you need them.  </p><br/>
          <ul id="on-boarding" class="cardsY panelContent featuredContent">
             <li>             
                                     <div class="cardSize">
@@ -36,7 +36,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3><a href="/vsts/git">Repos Get Started Guide</a></h3>
+                                                    <h3><a href="/vsts/repos/get-started">Repos Get Started Guide</a></h3>
                                                     <p>Sign up and start developing code with distributed, flexible version control.</p>
                                                 </div>
                                             </div>
@@ -53,7 +53,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3><a href="/vsts/work/work-items">Agile Get Started Guide</a></h3>
+                                                    <h3><a href="/vsts/work/get-started">Agile Get Started Guide</a></h3>
                                                     <p>Sign up and start using Agile tools to plan and track work.</p>
                                                 </div>
                                             </div>
@@ -70,7 +70,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3><a href="/vsts/pipelines">Pipelines Get Started Guide </a></h3>
+                                                    <h3><a href="/vsts/pipelines/get-started">Pipelines Get Started Guide </a></h3>
                                                     <p>Sign up and start building and releasing apps with continuous integration and deployment.</p>
                                                 </div>
                                             </div>
@@ -80,7 +80,7 @@ featureFlags:
                  </ul> 
 <a id="devops-services" />
 <h2>Azure Devops Services</h2>
-<p>Start with one service and add others as you need them.  </p>
+<p>Explore our most popular services with quickstarts, samples, and tutorials.</p><br/>
                         <ul id="devops-services-suite" class="cardsY panelContent featuredContent">
                             <li>
                                 <a href="/vsts/index-work">
@@ -179,8 +179,8 @@ featureFlags:
                             </li>
                         </ul>
 <a id="devops-services-supplemental" />
-<h2>Azure Devops Supplemental Services</h2>
-<p>Share information and gain insights into your projects using the supplemental services available to all Azure DevOps Services such as Wikis, Dashboards, and Analytics. </p>
+<h2>Azure Devops Services: Shared Features</h2>
+<p>Share information and gain insights using Wikis, Dashboards, and Analytics plus other  features available to all Azure DevOps Services. </p><br/>
                         <ul id="overview" class="cardsY panelContent featuredContent">
                             <li>
                                 <a href="/vsts/project/project-vision-status">
@@ -297,11 +297,68 @@ featureFlags:
                                     </div>
                                 </a>
                             </li>
+                            <li>
+                                <a href="/vsts/notifications/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com/media/common/i_alert.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Notifications</h3>
+                                                    <p>Define which events generate alerts or post messages in third party tools.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/vsts/organizations/public/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/public.png" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Public Projects</h3>
+                                                    <p>Open your projects for wider collaboration.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>  
                         </ul>
 <a id="devops-services-settings" />
-<h2>Azure Devops Administrative Settings</h2>
-<p>Configure and customize resources to support your development, deployment, planning, and tracking. </p>
+<h2>Azure Devops Services: Administrative Settings</h2>
+<p>Configure and customize resources to support your development, deployment, planning, and tracking. </p><br/>
                         <ul id="settings" class="cardsY panelContent featuredContent">
+                            <li>
+                                <a href="/vsts/organizations/settings/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/logo_vs-team-services.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Project Management</h3>
+                                                    <p>Add, rename, and delete projects. </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>  
                             <li>
                                 <a href="/vsts/organizations/settings/index">
                                     <div class="cardSize">
@@ -341,63 +398,6 @@ featureFlags:
                                     </div>
                                 </a>
                             </li>
-                            <li>
-                                <a href="/vsts/organizations/settings/index">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="_img/index/logo_vs-team-services.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Project Management</h3>
-                                                    <p>Add, rename, and delete projects.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>  
-                            <li>
-                                <a href="/vsts/organizations/public/index">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="_img/index/public.png" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Public Projects</h3>
-                                                    <p>Open your projects for wider collaboration.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>  
-                            <li>
-                                <a href="/vsts/organizations/settings/about-teams-and-settings">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="_img/index/i_configure-teams.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Scale &amp; Configure Teams</h3>
-                                                    <p>Add teams and team administrators; configure team settings.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
                            <li>
                                 <a href="/vsts/organizations/accounts/index">
                                     <div class="cardSize">
@@ -417,7 +417,45 @@ featureFlags:
                                         </div>
                                     </div>
                                 </a>
-                            </li>                         
+                            </li>                     
+                            <li>
+                                <a href="/vsts/organizations/settings/work/inheritance-process-model">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/i_config-tools.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Customization</h3>
+                                                    <p>Configure Agile tools and processes to meet your team's needs.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/vsts/organizations/settings/about-teams-and-settings">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/i_configure-teams.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Scale &amp; Configure Teams</h3>
+                                                    <p>Add teams and team administrators; configure team settings.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li    
                             <li>
                                 <a href="/vsts/billing/index">
                                     <div class="cardSize">
@@ -431,25 +469,6 @@ featureFlags:
                                                 <div class="cardText">
                                                     <h3>Billing</h3>
                                                     <p>Manage subscriptions, extension purchases, and Azure Active Directory.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/vsts/notifications/index">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/media/common/i_alert.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Notifications</h3>
-                                                    <p>Define which events generate alerts or post messages in third party tools.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -477,8 +496,8 @@ featureFlags:
                             </li>
                         </ul>
 <a id="devops-services-extensions" />
-<h2>Azure Devops Marketplace and Extensions</h2>
-<p>Configure and customize resources to support your teams. </p>
+<h2>Azure Devops Services: Marketplace and Extensions</h2>
+<p>Discover, install, and build add-ons to customize and extend your Azure DevOps Experiences. </p><br/>
                         <ul id="integration" class="cardsY panelContent featuredContent">
                             <li>
                                 <a href="/vsts/marketplace/overview">

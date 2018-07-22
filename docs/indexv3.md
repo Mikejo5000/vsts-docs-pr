@@ -1,6 +1,6 @@
 ---
 title: Azure Devops Documentation 
-titleSuffix: Azure Devops 
+titleSuffix: Azure Devops Services
 description: Collaborate on software development through version control, work tracking, and continuous integration and delivery with Azure Devops services 
 layout: HubPage 
 hide_bc: true

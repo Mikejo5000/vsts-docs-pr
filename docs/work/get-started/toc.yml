@@ -1,0 +1,13 @@
+- name: Azure DevOps Repos Get Started Guide
+  href: index.md
+  items:
+  - name: "What is Azure DevOps Boards?"
+    href: what-is-agile.md
+  - name: Sign up and invite some teammates 
+    href: sign-up-invite-teammates.md
+  - name: Plan and track work
+    href: plan-track-work.md
+- name: Resources
+  items:
+  - name: Project Management
+    href: ../organizations/projects/index.md
