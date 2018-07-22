@@ -179,3 +179,6 @@ featureFlags:
                         </ul>
      </div>
 </div>
+<a href="/vsts/index-all">
+<h2>Azure Devops Services Index</h2>
+</a>

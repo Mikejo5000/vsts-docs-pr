@@ -321,7 +321,7 @@ featureFlags:
                                     </div>
                                 </a>
                             </li>
-                            <li>A
+                            <li>
                                 <a href="/vsts/report/sql-reports/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
@@ -460,3 +460,6 @@ featureFlags:
                                 </a>
                             </li>
                         </ul>
+<a href="/vsts/index-all">
+<h2>Azure Devops Services Index</h2>
+</a>

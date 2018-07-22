@@ -1,6 +1,6 @@
-- name: Azure Devops 
+- name: Azure Devops Services
   tocHref: /vsts/
-  topicHref: /vsts/index#pivot=services
+  topicHref: /vsts/index
   items:
   - name: Get Started Guides
     tocHref: /vsts/user-guide/
@@ -24,7 +24,7 @@
     - name: TFVC
       tocHref: /vsts/tfvc/
       topicHref: /vsts/tfvc/index
-  - name: "Continuous Integration & Delivery"
+  - name: Pipelines
     tocHref: /vsts/pipelines/
     topicHref: /vsts/index-pipelines
     items:
@@ -53,7 +53,7 @@
     - name: Unit Testing
       tocHref: https://docs.microsoft.com/visualstudio/test/improve-code-quality/
       topicHref: https://docs.microsoft.com/visualstudio/test/unit-test-your-code
-  - name: Agile
+  - name: Boards (Agile)
     tocHref: /vsts/work/
     topicHref: /vsts/index-work
     items:
@@ -109,7 +109,7 @@
     - name: Feedback
       tocHref: /vsts/project/feedback/
       topicHref: /vsts/project/feedback/index
-  - name: Admin
+  - name: "Administation & Settings"
     tocHref: /vsts/
     topicHref: /vsts/index#devops-services-setting
     items:
@@ -131,9 +131,6 @@
     - name: Manage Extensions
       tocHref: /vsts/marketplace/
       topicHref: /vsts/marketplace/index
-    - name: Project Server Integration
-      tocHref: /vsts/work/tfs-ps-sync/
-      topicHref: /vsts/work/tfs-ps-sync/index
     - name: Technical Articles
       tocHref: /vsts/articles/
       topicHref: /vsts/articles/index
@@ -159,4 +156,13 @@
     - name: Extend Analytics with OData
       tocHref: /vsts/report/extend-analytics/
       topicHref: /vsts/report/extend-analytics/index
-
+  - name: "TFS Administation"
+    tocHref: /tfs/server/
+    topicHref: /tfs/index
+    items:
+    - name: Project Server Integration
+      tocHref: /vsts/work/tfs-ps-sync/
+      topicHref: /vsts/work/tfs-ps-sync/index
+    - name: SQL Server Reporting
+      tocHref: /vsts/report/sql-reports/
+      topicHref: /vsts/report/sql-reports/index
