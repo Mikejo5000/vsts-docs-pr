@@ -16,9 +16,6 @@ featureFlags:
 ---
 
 
-
-<div id="main" class="v2">
-<div class="container">
 <h1>Azure Devops Services: Index to Documentation and Resources</h1>
     <p>Access get started guides, user guides, administrative resources, API references, and other resources.</p>
 <h2 id="user-guides">User and Administrative Guides</h2>
@@ -127,11 +124,6 @@ featureFlags:
 <div style="clear:left;font-size:100%">
 </div>
 <h2 id="admin">Marketplace and Extensions</h2>
-                                <div class="button" style="float:left;">
-                                    <a href="https://marketplace.visualstudio.com" style="text-decoration: none;text-transform:inherit;color:#fff !important">
-                                        <div style="padding: 10px 15px 12px 15px;font-size:1.5rem;">Marketplace <img src="_img/index/arrow_24x.svg" alt="" style="height: 24px;width: 240px;vertical-align: middle;padding-left: 12px;" /></div>
-                                    </a>
-                                </div>
 <div class="group" class="cardText" style="float:left;width:250px;margin:35px">
                         <h3>Discover & Manage Extensions</h3>
                         <ul class="noBullet">
@@ -212,12 +204,7 @@ featureFlags:
                         <ul class="noBullet">
                             <li><a class="barLink" href="/azure/devops/devops-at-microsoft/">DevOps at Microsoft</a></li>
                             <li><a class="barLink" href="/azure/devops/events-and-talks/">Events and Talks</a></li>
-                        </ul>
-       </div>
-<h2 id="additional">Additional Resources</h2><br/>
-
-                        <ul class="noBullet">
                             <li><a class="barLink" href="/vsts/demo-gen">VSTS Demo Generator</a></li>
                         </ul>
-</div>
-</div>
+       </div>
+
