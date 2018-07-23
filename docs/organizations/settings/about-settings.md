@@ -77,6 +77,7 @@ Individual contributors can set their user preferences, enable select features t
 </table>
  
 
+<a id="team" />
 ## Team administrator role and managing teams
 
 Team administrators are tasked with configuring team resources which mostly correspond to Agile tools and dashboards. To configure team resources, you must be added as a [team administrator for the specific team](../../work/scale/add-team-administrator.md), or be a member of the Project Administrators or Project Collection Administrators groups.  
@@ -183,7 +184,7 @@ Members of the [Project Administrators group](../security/set-project-collection
 <td>New dashboards added to a project inherit the default dashboard permissions. The default permissions allow team members to create and edit dashboards for their team.</td>
 </tr>
 <tr>
-<td>**Work, Project configuration**</td>
+<td><a id="work" />**Work, Project configuration**</td>
 <td><ul>
 <li>[Define area paths](set-area-paths.md)</li>
 <li>[Define iteration paths or sprints](set-iteration-paths-sprints.md)</li>
@@ -193,7 +194,7 @@ Members of the [Project Administrators group](../security/set-project-collection
 </td>
 </tr>
 <tr>
-<td>**CI/CD** </td>
+<td><a id="pipelines" />**CI/CD** </td>
 <td><ul>
 <li>[Manage Agent queues and agent pools](../../pipelines/agents/pools-queues.md)</li>
 <li>[Manage service endpoints](../../pipelines/library/service-endpoints.md)</li>
@@ -203,7 +204,7 @@ Members of the [Project Administrators group](../security/set-project-collection
 <td>To build your code or deploy your software you need at least one agent. Agent and deployment pools are build and release resources that you manage across projects. </td>
 </tr>
 <tr>
-<td>**Code** </td>
+<td><a id="repos" />**Code** </td>
 <td><ul>
 <li>[Create additional Git repos](../../git/tutorial/creatingrepo.md)</li>
 <li>[Manage repository permissions](../security/set-git-tfvc-repository-permissions.md)</li>

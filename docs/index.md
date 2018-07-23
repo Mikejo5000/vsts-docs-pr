@@ -389,7 +389,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Project &amp; Account Settings</h3>
+                                                    <h3>Project &amp; Organization Settings</h3>
                                                     <p>Configure resources for Azure Devops services.</p>
                                                 </div>
                                             </div>
