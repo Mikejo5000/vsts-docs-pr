@@ -50,7 +50,7 @@ You will:
 
 ## Prerequisites
 
-* A VSTS account. If you don't have one, you can [create one for free](https://go.microsoft.com/fwlink/?LinkId=307137). If your team already has one, then make sure you are an administrator of the team project you want to use.
+* A VSTS organization. If you don't have one, you can [create one for free](https://go.microsoft.com/fwlink/?LinkId=307137). If your team already has one, then make sure you are an administrator of the project you want to use.
 
 * An Azure subscription. You can get one free from [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/).
 
@@ -83,7 +83,7 @@ GitHub](https://github.com/spring-guides/gs-spring-boot-docker.git).  This tutor
 
 1. Click **Import** to copy the sample code into your Git repo.
 
-1.  Select **Clone** at the top right, and keep the **clone URL** for future steps in this tutorial. 
+1. Select **Clone** at the top right, and keep the **clone URL** for future steps in this tutorial. 
 
 ## Configure the sample app to build and push a Docker image to your ACR
 
@@ -183,14 +183,14 @@ You must configure credentials for connecting to VSTS.  When using credentials t
   > [!NOTE]
   Ensure the PAT you use for the following steps contains the **Release (read, write, execute and manage), Code (read), Build (read and execute) permissions in VSTS**.
  
-1.  Create a PAT in your VSTS account. Jenkins requires this information to access your VSTS account.  Ensure you **store** the token information for upcoming steps in this section.
+1.  Create a PAT in your VSTS account. Jenkins requires this information to access your VSTS organization.  Ensure you **store** the token information for upcoming steps in this section.
   Read [How do I create a personal access token for VSTS and TFS](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) to learn how to generate a PAT, or use an existing PAT if you have one.
 
 1. Open your Jenkins account and select **Credentials**, **System**, and then choose **Add Domain**.
 
 1. Enter a **name**, **description**, and then select **Add** **hostname**.
 
-1. In the **Include** text box, enter ```\*.visualstudio.com``` to enable this credential for all VSTS accounts.  You can optionally enter your specific VSTS account.
+1. In the **Include** text box, enter ```\*.visualstudio.com``` to enable this credential for all VSTS organizations.  You can optionally enter your specific VSTS organization.
 
 1. Select **Ok**.  You will see a message about empty credentials.  Select the link for **adding some credentials**.
 
@@ -256,7 +256,7 @@ You create a Jenkins build job to use the source code stored in your VSTS reposi
 1. Enter a **Collection URL**.  An example is 
 `http://{YourVSTSAccount}.visualstudio.com/DefaultCollection`
 
-1. Enter the **Team project** and choose a **Release pipeline** name.  Store the **Release pipeline** name since it is needed on later steps in this tutorial.
+1. Enter the **project** and choose a **release pipeline** name. Store the **release pipeline** name since it is needed in later steps of this tutorial.
 
 1. Enter the **username** and **PAT** you created earlier.
  
@@ -327,15 +327,15 @@ A release pipeline specifies the process VSTS executes to deploy the app.  In th
 
 Before you create the release pipeline, you need to install a VSTS extension that will be used to replace the **K8sDeploy.yaml** file's **__Build.BuildId__** token with the current Jenkins build id. 
 
-1. In your VSTS account, on the top right-hand side of the browser, Select the **Browse Marketplace** menu item. (The icon appears as a shopping bag.)
+1. In your VSTS organization, on the top right-hand side of the browser, Select the **Browse Marketplace** menu item. (The icon appears as a shopping bag.)
 
 2. Search for the **Release Management Utility Tasks** extension provided by **Microsoft DevLabs**.  The extension includes the **Tokenizer** utility.
 
 3. Select the **Get it free** button.  
 
-4. Select your VSTS account and select the **Install** button to install the extension. 
+4. Select your VSTS organization and select the **Install** button to install the extension. 
 
-5. After the extension is installed, select the **Proceed to Account** button and navigate back to your VSTS project.
+5. After the extension is installed, select the **Proceed to Organization** button and navigate back to your VSTS project.
 
 ## Create a VSTS release pipeline for CD to Azure
 

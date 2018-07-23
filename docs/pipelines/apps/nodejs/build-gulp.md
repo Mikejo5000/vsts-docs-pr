@@ -36,7 +36,7 @@ As you choose from these options in the sections below, this topic will adapt to
 
 [!INCLUDE [include](../../_shared/ci-cd-prerequisites-vsts.md)]
 
-* While the simplest way to try this quickstart is to use a VSTS account, you can also use a TFS server instead of a VSTS account. Make sure that you have [configured a build agent](../../agents/v2-windows.md) for your team project, and that you have Node and Gulp installed on the agent machine.
+* While the simplest way to try this quickstart is to use a VSTS organization, you can also use a TFS server instead of a VSTS organization. Make sure that you have [configured a build agent](../../agents/v2-windows.md) for your project, and that you have Node and Gulp installed on the agent machine.
 
 ## Get the sample code
 
@@ -368,7 +368,7 @@ See [Deploy to a Linux Virtual Machine](../cd/deploy-linuxvm-deploygroups.md).
 > [!IMPORTANT]
 > Make sure you followed the **[deployment instructions above](#deploy)** with the **Container** tab selected.
 
-See [Build and push a Docker image](../containers/build.md).
+See [Build and push a Docker image](../../languages/docker.md).
 
 ---
 
