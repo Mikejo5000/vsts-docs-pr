@@ -22,7 +22,7 @@ featureFlags:
 <h1>Azure Devops Services: Index to Documentation and Resources</h1>
     <p>Access get started guides, user guides, administrative resources, API references, and other resources.</p><br/>
 <h2 id="user-guides">User Guides</h2><br/>
-<div style="float:left;width:250px;margin:3px;font-size:90%">
+<div class="group" style="float:left;margin:15px;font-size:70%">
                                     <h3>Get Started Guides</h3>
                                     <ul>
                                         <li><a class="barLink" href="/vsts/repos/get-started/index">Repos Get Started Guide</a></li>
@@ -40,6 +40,8 @@ featureFlags:
                                         <li><a class="barLink" href="/vsts/project/navigation/preview-features">Navigation</a></li> 
                                         <li><a class="barLink" href="/vsts/project/search/index">Search</a></li>
                                     </ul>
+                                </div>
+<div class="group" style="float:left;margin:15px;font-size:70%">
                                     <h3>Work (Agile)</h3>
                                     <ul>
                                       <li><a class="barLink" href="/vsts/work/work-items/index">Work Items</a></li>
@@ -52,7 +54,7 @@ featureFlags:
                                         <li><a class="barLink" href="/vsts/project/feedback/index">Request Feedback</a></li>
                                     </ul>
                                 </div>
-<div style="float:left;width:250px;margin:3px;font-size:90%">
+<div class="group" style="float:left;margin:15px;font-size:70%">
                                     <h3>Code (Repos)</h3>
                                     <ul>
                                         <li><a class="barLink" href="/vsts/git/index">Git Repositories</a></li>
@@ -72,7 +74,7 @@ featureFlags:
                                         <li><a class="barLink" href="/vsts/pipelines/tasks"><del>Task Reference</del></a></li>
                                     </ul>
                                 </div>
-<div style="float:left;width:250px;margin:3px;font-size:90%">
+<div class="group" style="float:left;margin:15px;font-size:70%">
                                     <h3>Test</h3>
                                     <ul>
                                         <li><a class="barLink" href="/vsts/pipelines/index">Continuous Testing</a></li>
@@ -91,7 +93,7 @@ featureFlags:
 <div style="clear:left;font-size:100%">
 </div>
 <h2 id="admin">Administrative Resources</h2><br/>
-<div style="float:left;width:250px;margin:3px;font-size:90%">
+<div class="group" style="float:left;margin:15px;font-size:70%">
                                     <h3>Settings</h3>
                                     <ul>
                                         <li><a class="barLink" href="/vsts/organizations/settings/index">Project &amp; Organization Settings</a></li>
@@ -103,7 +105,7 @@ featureFlags:
                                         <li><a class="barLink" href="/vsts/notifications/index">Notifications</a></li>
                                     </ul>
                                 </div>
-<div style="float:left;width:250px;margin:3px;font-size:90%">
+<div class="group" style="float:left;margin:15px;font-size:70%">
                                     <h3>Marketplace and Extensions</h3>
                                     <ul>
                                         <li><a class="barLink" href="/vsts/marketplace/overview">Discover & Manage Extensions</a></li>
@@ -115,8 +117,10 @@ featureFlags:
                                         <li><a class="barLink" href="https://www.visualstudio.com/docs/integrate/extensions/reference/client/core-sdk">TypeScript APIs</a></li>
                                     </ul>
                                 </div>
+<div style="clear:left;font-size:100%">
+</div>
 <h2 id="deploy">Deploy to Azure</h2><br/>
-<div style="float:left;width:250px;margin:3px;font-size:90%">
+<div class="group" style="float:left;margin:15px;font-size:70%">
                                     <h3>Create a CI/CD Pipeline with the Azure DevOps Project</h3>
                                     <ul>
                                         <li><a class="barLink" href="/azure/devops-project/azure-devops-project-aspnet-core">ASP.NET Code</a></li>
@@ -137,25 +141,24 @@ featureFlags:
 <div style="clear:left;font-size:100%">
 </div>
 <h2 id="sdks">IDEs, SDKs, CLIs and Toolkits</h2><br/>
-<div style="float:left;width:250px;margin:3px;font-size:90%">
+<div class="group" style="float:left;margin:15px;font-size:70%">
                                     <h3>IDEs</h3>
                                     <ul>
-                                        <li><a class="barLink" href="/visualstudio</a>Visual Studio</li>
+                                        <li><a class="barLink" href="/visualstudio"</a>Visual Studio</li>
                                         <li><a class="barLink" href="/vsts/java/vscode-extension">Visual Studio Code</a></li>
                                         <li><a class="barLink" href="/vsts/java/index">Visual Studio</a></li>
                                         <li><a class="barLink" href="/vsts/java/download-intellij-plug-in">IntelliJ with the VSTS Plugin for IntelliJ:</a></li>
                                         <li><a class="barLink" href="/vsts/java/download-android-studio-plug-in">Android Studio with the VSTS Plugin for Android Studio</a></li>
                                         <li><a class="barLink" href="/vsts/java/download-eclipse-plug-in">Eclipse/Team Explorer Everywhere</a></li>
                                     </ul>
-
                                     <h3>Command-line tools</h3>
                                     <ul>
                                         <li><a class="barLink" href="/vsts/git/command-prompt">Git commands</a></li>
                                         <li><a class="barLink" href="/vsts/tfvc/use-team-foundation-version-control-commands">TFVC commands</a></li>
-                                        <li><a class="barLink" href="/cli/vsts/overviewt">VSTS CLI</a></li>
+                                        <li><a class="barLink" href="/cli/vsts/overview">VSTS CLI</a></li>
                                     </ul>
                                 </div>
-<div style="float:left;width:250px;margin:3px;font-size:90%">
+<div class="group" style="float:left;margin:15px;font-size:70%">
                                     <h3>Office Integration tools</h3>
                                     <ul>
                                         <li><a class="barLink" href="/vsts/work/backlogs/office/bulk-add-modify-work-items-excel">Excel</a></li>
