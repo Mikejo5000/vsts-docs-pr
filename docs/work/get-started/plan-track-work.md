@@ -36,7 +36,7 @@ You can start adding work items once you connect to a team project. If you don't
 
 	You can use this URL to quickly open the team project, substituting the {account name} and {project name} with your specific account and project name (remove braces). 
 
-	If you don't see the team or team project you want, choose the ![VSTS icon](../../_img/icons/project-icon.png) VSTS icon to [browse all team projects and teams](../../user-guide/account-home-pages.md).  
+	If you don't see the team or team project you want, choose the ![VSTS icon](../../_img/icons/project-icon.png) VSTS icon to [browse all team projects and teams](../../project/navigation/work-across-projects.md).  
 
 2.	Click **Work>New Work Items** and choose the work item type you want.  Here, we choose to create a **User Story**. 
 

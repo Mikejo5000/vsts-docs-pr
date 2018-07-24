@@ -112,5 +112,5 @@ You provide others access to your account by adding their email address.
 > [Add code to your Git repository](code-with-git.md) 
 
 
-For more information on managing users and account access, see [Add account users for VSTS](../../organizations/accounts/add-account-users-from-user-hub.md).
+For more information on managing users and account access, see [Add account users for VSTS](../../organizations/accounts/add-organization-users-from-user-hub.md).
  

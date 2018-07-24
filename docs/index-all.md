@@ -19,7 +19,7 @@ featureFlags:
 <h1>Azure Devops Services: Index to Documentation and Resources</h1>
     <p>Access get started guides, user guides, administrative resources, API references, and other resources.</p>
 <h2 id="user-guides">User and Administrative Guides</h2>
-<div class="group" class="cardText" style="float:left;width:250px;margin:35px">
+<div class="group" class="cardText" style="float:left;width:250px;margin:3px">
                         <h3>Get Started Guides</h3>
                         <ul class="noBullet">
                             <li><a href="/vsts/repos/get-started/index">Azure DevOps Repos</a></li>
@@ -38,7 +38,7 @@ featureFlags:
                             <li><a href="/vsts/project/search/index">Search</a></li>
                         </ul>
        </div>
-       <div class="group" class="cardText" style="float:left;width:250px;margin:35px">
+       <div class="group" class="cardText" style="float:left;width:250px;margin:3px">
                         <h3>Work (Agile)</h3>
                         <ul class="noBullet">
                           <li><a href="/vsts/work/work-items/index">Work Items</a></li>
@@ -50,15 +50,14 @@ featureFlags:
                             <li><a href="/vsts/work/scale/index">Agile at Scale</a></li>
                             <li><a href="/vsts/project/feedback/index">Request Feedback</a></li>
                         </ul>
-                        <h3>Analytics</h3>
+                        <h3>Office Integration tools</h3>
                         <ul class="noBullet">
-                            <li><a href="/vsts/report/dashboards/index">Dashboards</a></li>
-                            <li><a href="/vsts/report/analytics/index">Analytics</a></li>
-                            <li><a href="/vsts/report/powerbi/index">Power BI</a></li>
-                            <li><a href="/vsts/report/extend-analytics/index">Extend Analytics with OData</a></li>
+                            <li><a href="/vsts/work/backlogs/office/bulk-add-modify-work-items-excel">Excel</a></li>
+                            <li><a href="/vsts/work/backlogs/office/create-your-backlog-tasks-using-project">Project</a></li>
+                            <li><a href="/vsts/work/backlogs/office/storyboard-your-ideas-using-powerpoint">PowerPoint Storyboarding</a></li>
                         </ul>
        </div>
-       <div class="group" class="cardText" style="float:left;width:250px;margin:35px">
+       <div class="group" class="cardText" style="float:left;width:250px;margin:3px">
                         <h3>Code (Repos)</h3>
                         <ul class="noBullet">
                             <li><a href="/vsts/git/index">Git Repositories</a></li>
@@ -74,8 +73,15 @@ featureFlags:
                             <li><a href="/vsts/test/load-test/index">Load Testing</a></li>
                             <li><a href="/visualstudio/test/unit-test-your-code">Unit & Functional Testing</a></li>
                         </ul>
+                        <h3>Analytics</h3>
+                        <ul class="noBullet">
+                            <li><a href="/vsts/report/dashboards/index">Dashboards</a></li>
+                            <li><a href="/vsts/report/analytics/index">Analytics</a></li>
+                            <li><a href="/vsts/report/powerbi/index">Power BI</a></li>
+                            <li><a href="/vsts/report/extend-analytics/index">Extend Analytics with OData</a></li>
+                        </ul>
        </div>
-       <div class="group" class="cardText" style="float:left;width:250px;margin:35px">
+       <div class="group" class="cardText" style="float:left;width:250px;margin:3px">
                         <h3>Build & Release (Pipelines)</h3>
                         <ul class="noBullet">
                             <li><a href="/vsts/pipelines/index">Build &amp; Release</a></li>
@@ -86,7 +92,7 @@ featureFlags:
                             <li><a href="/vsts/pipelines/agents/agents">Hosted &amp; Private Agents</a></li>
                             <li><a href="/vsts/pipelines/tasks">Task Reference</a></li>
                         </ul>
-                        <h3>Settings</h3>
+                        <h3>Settings (Admin)</h3>
                         <ul class="noBullet">
                             <li><a href="/vsts/organizations/settings/index">Project &amp; Organization Settings</a></li>
                             <li><a href="/vsts/organizations/settings/about-teams-and-settings">Scale &amp; Configure Teams</a></li>
@@ -161,14 +167,6 @@ featureFlags:
                             <li><a href="/vsts/git/command-prompt">Git commands</a></li>
                             <li><a href="/vsts/tfvc/use-team-foundation-version-control-commands">TFVC commands</a></li>
                             <li><a href="/cli/vsts/overview">VSTS CLI</a></li>
-                        </ul>
-       </div>
-       <div class="group" class="cardText" style="float:left;width:250px;margin:35px">
-                        <h3>Office Integration tools</h3>
-                        <ul class="noBullet">
-                            <li><a href="/vsts/work/backlogs/office/bulk-add-modify-work-items-excel">Excel</a></li>
-                            <li><a href="/vsts/work/backlogs/office/create-your-backlog-tasks-using-project">Project</a></li>
-                            <li><a href="/vsts/work/backlogs/office/storyboard-your-ideas-using-powerpoint">PowerPoint Storyboarding</a></li>
                         </ul>
        </div>
        <div class="group" class="cardText" style="float:left;width:250px;margin:35px">
