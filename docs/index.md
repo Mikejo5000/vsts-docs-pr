@@ -1,7 +1,7 @@
 ---
-title: Azure Devops Documentation 
-titleSuffix: Azure Devops 
-description: Collaborate on software development through version control, work tracking, and continuous integration and delivery with Azure Devops services 
+title: Azure DevOps Documentation 
+titleSuffix: Azure DevOps 
+description: Collaborate on software development through version control, work tracking, and continuous integration and delivery with Azure DevOps services 
 layout: HubPage 
 hide_bc: true
 ms.topic: hub-page
@@ -20,10 +20,10 @@ featureFlags:
 
 <div id="main" class="v2">
     <div class="container">
-    <h1>Azure Devops Services Documentation</h1>
+    <h1>Azure DevOps Services Documentation</h1>
     <p>Collaborate across your organization with tools designed to start small and scale up as needed. Azure DevOps Services provides free private Git repositories, configurable Kanban boards, interactive backlogs, simple planning tools, high-performance pipelines, and extensive automated and cloud-based load testing.</p>
 <a href="#start"> </a>
-<h2 id="start">Get Started with Azure Devops</h2>
+<h2 id="start">Get Started with Azure DevOps</h2>
 <p>Start with one service and add others as you need them.  </p><br/>
          <ul id="on-boarding" class="cardsY panelContent featuredContent">
             <li>             
@@ -79,7 +79,7 @@ featureFlags:
             </li>      
                  </ul> 
 <a id="devops-services" />
-<h2>Azure Devops Services</h2>
+<h2>Azure DevOps Services</h2>
 <p>Explore our most popular services with quickstarts, samples, and tutorials.</p><br/>
                         <ul id="devops-services-suite" class="cardsY panelContent featuredContent">
                             <li>
@@ -179,7 +179,7 @@ featureFlags:
                             </li>
                         </ul>
 <a id="devops-services-supplemental" />
-<h2>Azure Devops Services: Shared Features</h2>
+<h2>Azure DevOps Services: Shared Features</h2>
 <p>Share information and gain insights using Wikis, Dashboards, and Analytics plus other features available to all Azure DevOps Services. </p><br/>
                         <ul id="overview" class="cardsY panelContent featuredContent">
                             <li>
@@ -189,7 +189,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/logo_vs-team-services.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/common/i_overview.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -265,7 +265,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/i_agile.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com//media/common/i_portal.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -342,7 +342,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/public.png" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/common/i_web-color.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -356,7 +356,7 @@ featureFlags:
                             </li>  
                         </ul>
 <a id="devops-services-settings" />
-<h2>Azure Devops Services: Administrative Settings</h2>
+<h2>Azure DevOps Services: Administrative Settings</h2>
 <p>Configure and customize resources to support your development, deployment, planning, and tracking. </p><br/>
                         <ul id="settings" class="cardsY panelContent featuredContent">
                             <li>
@@ -366,7 +366,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/logo_vs-team-services.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/common/i_management.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -390,7 +390,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Project &amp; Organization Settings</h3>
-                                                    <p>Configure resources for Azure Devops services.</p>
+                                                    <p>Configure resources for Azure DevOps services.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -404,7 +404,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/media/common/i_protect.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/common/i_security-management.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -448,7 +448,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Customization</h3>
+                                                    <h3>Process Customization</h3>
                                                     <p>Configure Agile tools and processes to meet your team's needs.</p>
                                                 </div>
                                             </div>
@@ -520,7 +520,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/media/common/i_tools.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/common/i_server.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -534,7 +534,7 @@ featureFlags:
                             </li>
                         </ul>
 <a id="devops-services-extensions" />
-<h2>Azure Devops Services: Marketplace and Extensions</h2>
+<h2>Azure DevOps Services: Marketplace and Extensions</h2>
 <p>Discover, install, and build add-ons to customize and extend your Azure DevOps Experiences. </p><br/>
                         <ul id="integration" class="cardsY panelContent featuredContent">
                             <li>
@@ -549,7 +549,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Discover Extensions</h3>
-                                                    <p>Browse the Visual Studio Marketplace and discover extensions for Azure Devops.</p>
+                                                    <p>Browse the Visual Studio Marketplace and discover extensions for Azure DevOps.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -568,7 +568,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Develop Extensions</h3>
-                                                    <p>Extend Azure Devops with custom web experiences, CI/CD tasks, and more.</p>
+                                                    <p>Extend Azure DevOps with custom web experiences, CI/CD tasks, and more.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -587,7 +587,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Build Apps</h3>
-                                                    <p>Programmatically integrate with Azure Devops from custom apps and services.</p>
+                                                    <p>Programmatically integrate with Azure DevOps from custom apps and services.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -606,7 +606,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Service Hooks</h3>
-                                                    <p>Create subscriptions and configure the integration of Azure Devops with
+                                                    <p>Create subscriptions and configure the integration of Azure DevOps with
                                                         third-party apps.</p>
                                                 </div>
                                             </div>
@@ -645,7 +645,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>REST APIs</h3>
-                                                    <p>Interact with Azure Devops through standard REST APIs.</p>
+                                                    <p>Interact with Azure DevOps through standard REST APIs.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -664,7 +664,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>TypeScript APIs</h3>
-                                                    <p>Interact with Azure Devops through TypeScript APIs.</p>
+                                                    <p>Interact with Azure DevOps through TypeScript APIs.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -678,8 +678,70 @@ featureFlags:
                         </ul>
                     </li>
                 </ul>
+<a id="additional-resources" />
+<h2>Azure DevOps Services: Additional Resources</h2>
+<p>Release notes, technical articles, and additional information sources. </p><br/>
+                        <ul id="resources" class="cardsY panelContent featuredContent">
+                            <li>
+                                <a href="/vsts/release-notes/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com//media/common/i_whats-new.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Features Timeline & Release Notes</h3>
+                                                    <p>Learn what's in development and on our roadmap as well as information about the latest features under release.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/vsts/articles/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com///media/common/i_article.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Technical Articles</h3>
+                                                    <p>White papers and use cases covering migration, version control, devops, and security.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://docs.microsoft.com/en-us/azure/devops/">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com///media/common/i_article.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Azure DevOps Resource Center</h3>
+                                                    <p>White papers and use cases covering migration, version control, devops, and security.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
      </div>
 </div>
 <a href="/vsts/index-all">
-<h3>Azure Devops Services Index</h3>
+<h3>Azure DevOps Services Index</h3>
 </a>

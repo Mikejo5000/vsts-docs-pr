@@ -1,7 +1,7 @@
 ---
-title: Azure Devops Services - Pipelines 
-titleSuffix: Azure Devops Pipelines 
-description: Collaborate on software development through version control, work tracking, and continuous integration and delivery with Azure Devops services 
+title: Azure DevOps Services - Pipelines 
+titleSuffix: Azure DevOps Pipelines 
+description: Collaborate on software development through version control, work tracking, and continuous integration and delivery with Azure DevOps services 
 layout: HubPage 
 hide_bc: true
 ms.topic: hub-page
@@ -19,7 +19,7 @@ featureFlags:
 
 <div id="agile" class="v2">
     <div class="container">
-        <h1>Azure Devops Pipelines Documentation</h1>
+        <h1>Azure DevOps Pipelines Documentation</h1>
 <p>Test and deploy your code to production at lightning speed with high-performance pipelines. Start small and scale up as needed.</p>
                         <a href="#delivery">Build and Release (Pipelines)</a>
                         <ul id="delivery" class="cardsY panelContent featuredContent">
@@ -170,7 +170,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Settings</h3>
-                                                    <p>Configure resources for Azure Devops Pipelines.</p>
+                                                    <p>Configure resources for Azure DevOps Pipelines.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -181,5 +181,5 @@ featureFlags:
      </div>
 </div>
 <a href="/vsts/index-all">
-<h3>Azure Devops Services Index</h3>
+<h3>Azure DevOps Services Index</h3>
 </a>

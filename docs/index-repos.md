@@ -1,7 +1,7 @@
 ---
-title: Azure Devops Services - Repos 
-titleSuffix: Azure Devops Repos 
-description: Collaborate on software development through version control, work tracking, and continuous integration and delivery with Azure Devops services 
+title: Azure DevOps Services - Repos 
+titleSuffix: Azure DevOps Repos 
+description: Collaborate on software development through version control, work tracking, and continuous integration and delivery with Azure DevOps services 
 layout: HubPage 
 hide_bc: true
 ms.topic: hub-page
@@ -18,8 +18,8 @@ featureFlags:
 <a href="/vsts/index">Azure DevOps Services</a>
 <div id="agile" class="v2">
     <div class="container">
-        <h1>Azure Devops Repos Documentation</h1>
-<p>Azure Devops Repos has everything you love about Git with free private repositories, pull requests, and code review. Collaborate with coworkers to make your code rock-solid-then integrate with CI/CD to get your code to production fast.</p>
+        <h1>Azure DevOps Repos Documentation</h1>
+<p>Azure DevOps Repos has everything you love about Git with free private repositories, pull requests, and code review. Collaborate with coworkers to make your code rock-solid-then integrate with CI/CD to get your code to production fast.</p>
                         <ul id="code" class="cardsY panelContent featuredContent">
                             <li>
                                 <a href="/vsts/git">
@@ -128,7 +128,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Settings</h3>
-                                                    <p>Configure resources for Azure Devops Repos.</p>
+                                                    <p>Configure resources for Azure DevOps Repos.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -139,5 +139,5 @@ featureFlags:
      </div>
 </div>
 <a href="/vsts/index-all">
-<h3>Azure Devops Services Index</h3>
+<h3>Azure DevOps Services Index</h3>
 </a>

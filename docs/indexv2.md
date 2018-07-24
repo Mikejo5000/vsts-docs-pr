@@ -1,7 +1,7 @@
 ---
-title: Azure Devops Documentation 
-titleSuffix: Azure Devops 
-description: Collaborate on software development through version control, work tracking, and continuous integration and delivery with Azure Devops services 
+title: Azure DevOps Documentation 
+titleSuffix: Azure DevOps 
+description: Collaborate on software development through version control, work tracking, and continuous integration and delivery with Azure DevOps services 
 layout: HubPage 
 hide_bc: true
 ms.topic: hub-page
@@ -18,7 +18,7 @@ featureFlags:
 
 <div id="main" class="v2">
     <div class="container">
-        <h1>Azure Devops Documentation</h1>
+        <h1>Azure DevOps Documentation</h1>
         <ul class="pivots">
             <li>
                 <a href="#start">Get Started</a>
@@ -81,7 +81,7 @@ featureFlags:
                         <ul id="start-all" class="cardsL">
                             <li class="fullSpan">
                                 <div class="intro">
-                                    <h1>Get Started with Azure Devops</h1>
+                                    <h1>Get Started with Azure DevOps</h1>
                                     <p>Explore our most popular services with quickstarts, samples, and tutorials.</p>
                                 </div> 
                             </li>
@@ -213,7 +213,7 @@ featureFlags:
                                             <div class="cardText">
                                                 <h3>Command-line tool</h3>
                                                 <ul class="noBullet">
-                                                    <li><a class="barLink" href="https://docs.microsoft.com/en-us/cli/vsts/overview"><img src="_img/index/command-line-window.svg" alt="" />Azure Devops CLI</a></li>
+                                                    <li><a class="barLink" href="https://docs.microsoft.com/en-us/cli/vsts/overview"><img src="_img/index/command-line-window.svg" alt="" />Azure DevOps CLI</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -232,21 +232,21 @@ featureFlags:
                         <ul id="all" class="cardText">
                             <li>
                                 <div class="group">
-                                    <h3>Azure Devops Repos</h3>
+                                    <h3>Azure DevOps Repos</h3>
                                     <ul>
                                         <li><a class="barLink" href="/vsts/git/index">Git Repositories</a></li>
                                         <li><a class="barLink" href="/vsts/git/tutorial/pullrequest">Pull Requests</a></li>
                                         <li><a class="barLink" href="/vsts/git/branch-policies">Branch Policies</a></li>
                                         <li><a class="barLink" href="/vsts/tfvc/index">TFVC</a></li>
                                     </ul>
-                                    <h3>Azure Devops Pipelines</h3>
+                                    <h3>Azure DevOps Pipelines</h3>
                                     <ul>
                                         <li><a class="barLink" href="/vsts/pipelines/index">Build &amp; Release</a></li>
                                         <li><a class="barLink" href="/vsts/pipelines/index">Continuous Testing</a></li>
                                         <li><a class="barLink" href="/vsts/deploy-azure/index">Deploy to Azure</a></li>
                                         <li><a class="barLink" href="/vsts/package/index">Package Management</a></li>
                                     </ul>
-                                    <h3>Azure Devops Test</h3>
+                                    <h3>Azure DevOps Test</h3>
                                     <ul>
                                         <li><a class="barLink" href="/visualstudio/test/unit-test-your-code">Unit &amp; Functional Testing</a></li>
                                         <li><a class="barLink" href="/vsts/test/index">Exploratory &amp; Manual Testing</a></li>
@@ -258,7 +258,7 @@ featureFlags:
                             </li>
                             <li>
                                 <div class="group">
-                                    <h3>Azure Devops Agile</h3>
+                                    <h3>Azure DevOps Agile</h3>
                                     <ul>
                                       <li><a class="barLink" href="/vsts/work/work-items/index">Work Items</a></li>
                                         <li><a class="barLink" href="/vsts/work/kanban/index">Boards (Kanban)</a></li>
@@ -420,8 +420,8 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Azure Devops Enterprise Onboarding Guide</h3>
-                                                    <p>Plan and track work, collaborate on code, and continuously deploy your apps by acquiring all Azure Devops services. </p>
+                                                    <h3>Azure DevOps Enterprise Onboarding Guide</h3>
+                                                    <p>Plan and track work, collaborate on code, and continuously deploy your apps by acquiring all Azure DevOps services. </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -1155,7 +1155,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Project &amp; Account Settings</h3>
-                                                    <p>Configure resources for Azure Devops services.</p>
+                                                    <p>Configure resources for Azure DevOps services.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -1315,7 +1315,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Manage Extensions</h3>
-                                                    <p>Discover, install, or remove Visual Studio Marketplace extensions for Azure Devops.</p>
+                                                    <p>Discover, install, or remove Visual Studio Marketplace extensions for Azure DevOps.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -1334,7 +1334,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Develop Extensions</h3>
-                                                    <p>Extend Azure Devops with custom web experiences, CI/CD tasks, and more.</p>
+                                                    <p>Extend Azure DevOps with custom web experiences, CI/CD tasks, and more.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -1353,7 +1353,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Build Apps</h3>
-                                                    <p>Programmatically integrate with Azure Devops from custom apps and services.</p>
+                                                    <p>Programmatically integrate with Azure DevOps from custom apps and services.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -1372,7 +1372,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Service Hooks</h3>
-                                                    <p>Create subscriptions and configure the integration of Azure Devops with
+                                                    <p>Create subscriptions and configure the integration of Azure DevOps with
                                                         third-party apps.</p>
                                                 </div>
                                             </div>
@@ -1411,7 +1411,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>REST APIs</h3>
-                                                    <p>Interact with Azure Devops through standard REST APIs.</p>
+                                                    <p>Interact with Azure DevOps through standard REST APIs.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -1430,7 +1430,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>TypeScript APIs</h3>
-                                                    <p>Interact with Azure Devops through TypeScript APIs.</p>
+                                                    <p>Interact with Azure DevOps through TypeScript APIs.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -1461,7 +1461,7 @@ featureFlags:
                                 </div>
                                 <div class="intro">
                                     <h2 style="padding-left:0;font-size:1.8rem;">Get Extensions</h2>
-                                    <p>Extend Azure Devops with popular extensions like Slack or Jenkins.</p>
+                                    <p>Extend Azure DevOps with popular extensions like Slack or Jenkins.</p>
                                 </div>
                             </li>
                             <li class="fullSpan" style="margin-top:12px;">
@@ -1524,7 +1524,7 @@ featureFlags:
                             <li class="fullSpan">
                                 <div>
                                     <h2 style="padding-left:0;margin-bottom:0;margin-top:24px;font-size:1.8rem;">Build your own extensions</h2>
-                                    <p>Create custom extensions to transform your Azure Devops look and experience.</p>
+                                    <p>Create custom extensions to transform your Azure DevOps look and experience.</p>
                                 </div>
                             </li>
                             <li>
@@ -2043,7 +2043,7 @@ featureFlags:
                     </li>
                 </ul>
 <!---
-                <a href="#azure-devops">Azure Devops Resources</a>
+                <a href="#azure-devops">Azure DevOps Resources</a>
                 <ul id="azure-devops">
 This center combines our resources on learning DevOps practices, Git version control, Agile methods, how we work with DevOps at Microsoft, and how you can assess your own DevOps progression. Alternatively, you can jump to documentation on [getting started with DevOps on Azure](/vsts/pipelines/), or to dive in, [start your own Azure DevOps project](https://portal.azure.com/#create/Microsoft.AzureProject). If you’re interested in practices, read on. <br/><br/>
 <ul class="panelContent cardsC" style="display: flex;">

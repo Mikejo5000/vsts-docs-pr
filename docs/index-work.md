@@ -1,7 +1,7 @@
 ---
-title: Azure Devops Services - Boards 
-titleSuffix: Azure Devops Boards 
-description: Collaborate on software development through version control, work tracking, and continuous integration and delivery with Azure Devops services 
+title: Azure DevOps Services - Boards 
+titleSuffix: Azure DevOps Boards 
+description: Collaborate on software development through version control, work tracking, and continuous integration and delivery with Azure DevOps services 
 layout: HubPage 
 hide_bc: true
 ms.topic: hub-page
@@ -18,7 +18,7 @@ featureFlags:
 <a href="/vsts/index">Azure DevOps Services</a>
 <div id="agile" class="v2">
     <div class="container">
-        <h1>Azure Devops Boards Documentation</h1>
+        <h1>Azure DevOps Boards Documentation</h1>
 <p>Start doing agile on your own terms. Azure DevOps Boards gives you configurable Kanban boards, interactive backlogs, simple planning tools, and out-of-the-box support for Scrum-all integrated together for unparalleled traceability and reporting.</p><br/>
                         <ul id="agile" class="cardsY panelContent featuredContent">
                             <li>
@@ -189,7 +189,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Settings</h3>
-                                                    <p>Configure resources for Azure Devops Boards.</p>
+                                                    <p>Configure resources for Azure DevOps Boards.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -200,5 +200,5 @@ featureFlags:
      </div>
 </div>
 <a href="/vsts/index-all">
-<h3>Azure Devops Services Index</h3>
+<h3>Azure DevOps Services Index</h3>
 </a>

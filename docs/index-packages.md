@@ -1,7 +1,7 @@
 ---
-title: Azure Devops Services - Packages 
-titleSuffix: Azure Devops Packages 
-description: Collaborate on software development through version control, work tracking, and continuous integration and delivery with Azure Devops services 
+title: Azure DevOps Services - Packages 
+titleSuffix: Azure DevOps Packages 
+description: Collaborate on software development through version control, work tracking, and continuous integration and delivery with Azure DevOps services 
 layout: HubPage 
 hide_bc: true
 ms.topic: hub-page
@@ -19,7 +19,7 @@ featureFlags:
 
 <div id="agile" class="v2">
     <div class="container">
-        <h1>Azure Devops Packages Documentation</h1>
+        <h1>Azure DevOps Packages Documentation</h1>
 <p>Code once and share packages across your organization. Host your private Nuget, npm, and Maven packages with Azure DevOps Packages for more reliable, scalable builds.</p>
                         <a href="#artifacts">Packages (Artifacts)</a>
                         <ul id="artifacts" class="cardsY panelContent featuredContent">
@@ -65,5 +65,5 @@ featureFlags:
      </div>
 </div>
 <a href="/vsts/index-all">
-<h3>Azure Devops Services Index</h3>
+<h3>Azure DevOps Services Index</h3>
 </a>

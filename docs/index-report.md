@@ -1,7 +1,7 @@
 ---
-title: Azure Devops Services - Boards 
-titleSuffix: Azure Devops Boards 
-description: Collaborate on software development through version control, work tracking, and continuous integration and delivery with Azure Devops services 
+title: Azure DevOps Services - Boards 
+titleSuffix: Azure DevOps Boards 
+description: Collaborate on software development through version control, work tracking, and continuous integration and delivery with Azure DevOps services 
 layout: HubPage 
 hide_bc: true
 ms.topic: hub-page
@@ -19,7 +19,7 @@ featureFlags:
 
 <div id="report" class="v2">
     <div class="container">
-        <h1>Azure Devops Services: Reporting</h1>
+        <h1>Azure DevOps Services: Reporting</h1>
 <p>Gain insights using dashboards and analytics.</p><br/>
                         <ul id="reporting" class="cardsY panelContent featuredContent">
                             <li>
@@ -83,5 +83,5 @@ featureFlags:
      </div>
 </div>
 <a href="/vsts/index-all">
-<h3>Azure Devops Services Index</h3>
+<h3>Azure DevOps Services Index</h3>
 </a>

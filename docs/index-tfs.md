@@ -1,7 +1,7 @@
 ---
-title: Azure Devops Team Foundation Server Documentation 
-titleSuffix: Azure Devops 
-description: Collaborate on software development through version control, work tracking, and continuous integration and delivery with Azure Devops Team Foundation Server  
+title: Azure DevOps Team Foundation Server Documentation 
+titleSuffix: Azure DevOps 
+description: Collaborate on software development through version control, work tracking, and continuous integration and delivery with Azure DevOps Team Foundation Server  
 layout: HubPage 
 hide_bc: true
 ms.topic: hub-page
@@ -20,7 +20,7 @@ featureFlags:
 <a href="/vsts/index">Azure DevOps Services</a>
 <div id="main" class="v2">
     <div class="container">
-    <h1>Azure Devops Team Foundation Server (TFS) Documentation</h1>
+    <h1>Azure DevOps Team Foundation Server (TFS) Documentation</h1>
     <p>Collaborate across your organization with tools designed to start small and scale up as needed. TFS provides source control, configurable Kanban boards, interactive backlogs, simple planning tools, and high-performance pipelines.</p>
 <a href="#start"> </a>
 <h2 id="start">Get Started with Team Foundation Server</h2>
@@ -459,5 +459,5 @@ featureFlags:
                             </li>
                         </ul>
 <a href="/vsts/index-all">
-<h3>Azure Devops Services Index</h3>
+<h3>Azure DevOps Services Index</h3>
 </a>

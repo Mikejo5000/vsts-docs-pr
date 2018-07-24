@@ -1,7 +1,7 @@
 ---
-title: Azure Devops Services, Index to all documentation resources 
-titleSuffix: Azure Devops Services
-description: Collaborate on software development through version control, work tracking, and continuous integration and delivery with Azure Devops services 
+title: Azure DevOps Services, Index to all documentation resources 
+titleSuffix: Azure DevOps Services
+description: Collaborate on software development through version control, work tracking, and continuous integration and delivery with Azure DevOps services 
 layout: HubPage 
 hide_bc: true
 ms.topic: hub-page
@@ -16,7 +16,7 @@ featureFlags:
 ---
 
 <a href="/vsts/index">Azure DevOps Services</a>
-<h1>Azure Devops Services: Index to Documentation and Resources</h1>
+<h1>Azure DevOps Services: Index to Documentation and Resources</h1>
     <p>Access get started guides, user guides, administrative resources, API references, and other resources.</p>
 <h2 id="user-guides">User and Administrative Guides</h2>
 <div class="group" class="cardText" style="float:left;width:250px">
@@ -29,13 +29,17 @@ featureFlags:
                         </ul>
                         <h3>Overview</h3>
                         <ul class="noBullet">
-                            <li><a href="/vsts/project/project-vision-status">Summary</a></li>
+                            <li><a href="/vsts/project/wiki/project-vision-status">Summary</a></li>
                             <li><a href="/vsts/report/dashboards/index">Dashboards</a></li>
                             <li><a href="/vsts/report/analytics/what-are-analytics-views">Analytics views</a></li>
                             <li><a href="/vsts/project/wiki/index">Wiki</a></li>
                             <li><a href="/vsts/organizations/public/index">Public Projects</a></li> 
-                            <li><a href="/vsts/project/navigation/preview-features">Navigation</a></li> 
+                            <li><a href="/vsts/project/navigation/preview-features">Navigation Basics</a></li> 
                             <li><a href="/vsts/project/search/index">Search</a></li>
+                        </ul>
+                        <h3>Other</h3>
+                        <ul class="noBullet">
+                            <li><a href="/vsts/articles">Technical Articles</a></li>
                         </ul>
        </div>
        <div class="group" class="cardText" style="float:left;width:250px">
@@ -96,12 +100,13 @@ featureFlags:
                         <ul class="noBullet">
                             <li><a href="/vsts/organizations/settings/index">Project &amp; Organization Settings</a></li>
                             <li><a href="/vsts/organizations/settings/about-teams-and-settings">Scale &amp; Configure Teams</a></li>
+                            <li><a href="/vsts/organizations/settings/work/inheritance-process-model">Process Customization</a></li>
                             <li><a href="/vsts/organizations/security/index">Security &amp; Identity</a></li>
                             <li><a href="/vsts/organizations/settings/index">Project Management</a></li> 
-                            <li><a href="/vsts/organizations/accounts/index">Account Management</a></li>
+                            <li><a href="/vsts/organizations/accounts/index">Organization Management</a></li>
                             <li><a href="/vsts/billing/index">Billing</a></li>
                             <li><a href="/vsts/notifications/index">Notifications</a></li>
-                            <li><a href="/tfs/server/index">Team Foundation Server Admin Guide</a></li>
+                            <li><a href="/tfs/server/index">Team Foundation Server</a></li>
                         </ul>
        </div>
 <div style="clear:left;font-size:100%">
@@ -178,7 +183,7 @@ featureFlags:
        </div>
 <div style="clear:left;font-size:100%">
 </div>
-<h2 id="additional">DevOps Resource Center</h2><br/>
+<h2 id="additional">DevOps Resource Center</h2>
        <div class="group" class="cardText" style="float:left;width:250px">
                         <h3>What is?</h3>
                         <ul class="noBullet">
