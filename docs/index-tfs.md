@@ -17,7 +17,7 @@ featureFlags:
 
 
 
-
+<a href="/vsts/index">Azure DevOps Services</a>
 <div id="main" class="v2">
     <div class="container">
     <h1>Azure Devops Team Foundation Server (TFS) Documentation</h1>
@@ -300,7 +300,6 @@ featureFlags:
                         </ul>
 <a id="tfs-additional" />
 <h2>Additional Resources</h2>
-<p>Additional resources </p><br/>
                         <ul id="settings" class="cardsY panelContent featuredContent">
                             <li>
                                 <a href="/vsts/work/customize/index">
@@ -419,7 +418,6 @@ featureFlags:
                         </ul>
 <a id="tfs-deprecated" />
 <h2>Deprecated Resources</h2>
-<p>Deprecated resources </p><br/>
                         <ul id="settings" class="cardsY panelContent featuredContent">
                             <li>
                                 <a href="/vsts/report/sharepoint-dashboards/">

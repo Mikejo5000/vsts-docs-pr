@@ -183,7 +183,7 @@ featureFlags:
 <p>Share information and gain insights using Wikis, Dashboards, and Analytics plus other features available to all Azure DevOps Services. </p><br/>
                         <ul id="overview" class="cardsY panelContent featuredContent">
                             <li>
-                                <a href="/vsts/project/project-vision-status">
+                                <a href="/vsts/project/wiki/project-vision-status">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -507,6 +507,25 @@ featureFlags:
                                                 <div class="cardText">
                                                     <h3>Manage Extensions</h3>
                                                     <p>Install or remove Marketplace extensions.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/tfs/server/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com/media/common/i_tools.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>TFS Server Administration</h3>
+                                                    <p>Install, upgrade, and manage resources for your on-premises deployment.</p>
                                                 </div>
                                             </div>
                                         </div>
