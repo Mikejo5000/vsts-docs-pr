@@ -19,7 +19,7 @@ featureFlags:
 <h1>Azure Devops Services: Index to Documentation and Resources</h1>
     <p>Access get started guides, user guides, administrative resources, API references, and other resources.</p>
 <h2 id="user-guides">User and Administrative Guides</h2>
-<div class="group" class="cardText" style="float:left;width:250px;margin:3px">
+<div class="group" class="cardText" style="float:left;width:250px">
                         <h3>Get Started Guides</h3>
                         <ul class="noBullet">
                             <li><a href="/vsts/repos/get-started/index">Azure DevOps Repos</a></li>
@@ -38,7 +38,7 @@ featureFlags:
                             <li><a href="/vsts/project/search/index">Search</a></li>
                         </ul>
        </div>
-       <div class="group" class="cardText" style="float:left;width:250px;margin:3px">
+       <div class="group" class="cardText" style="float:left;width:250px">
                         <h3>Work (Agile)</h3>
                         <ul class="noBullet">
                           <li><a href="/vsts/work/work-items/index">Work Items</a></li>
@@ -57,7 +57,7 @@ featureFlags:
                             <li><a href="/vsts/work/backlogs/office/storyboard-your-ideas-using-powerpoint">PowerPoint Storyboarding</a></li>
                         </ul>
        </div>
-       <div class="group" class="cardText" style="float:left;width:250px;margin:3px">
+       <div class="group" class="cardText" style="float:left;width:250px">
                         <h3>Code (Repos)</h3>
                         <ul class="noBullet">
                             <li><a href="/vsts/git/index">Git Repositories</a></li>
@@ -81,7 +81,7 @@ featureFlags:
                             <li><a href="/vsts/report/extend-analytics/index">Extend Analytics with OData</a></li>
                         </ul>
        </div>
-       <div class="group" class="cardText" style="float:left;width:250px;margin:3px">
+       <div class="group" class="cardText" style="float:left;width:250px">
                         <h3>Build & Release (Pipelines)</h3>
                         <ul class="noBullet">
                             <li><a href="/vsts/pipelines/index">Build &amp; Release</a></li>
@@ -107,7 +107,7 @@ featureFlags:
 <div style="clear:left;font-size:100%">
 </div>
 <h2 id="deploy">Deploy to Azure</h2>
-<div class="group" class="cardText" style="float:left;width:250px;margin:35px">
+<div class="group" class="cardText" style="float:left;width:250px">
                         <h3>Azure DevOps Project</h3>
                         <ul class="noBullet">
                             <li><a href="/azure/devops-project/azure-devops-project-aspnet-core">ASP.NET Code</a></li>
@@ -119,7 +119,7 @@ featureFlags:
                             <li><a href="/azure/devops-project/azure-devops-project-go">Go</a></li> 
                         </ul>
        </div>
-       <div class="group" class="cardText" style="float:left;width:250px;margin:35px">
+       <div class="group" class="cardText" style="float:left;width:250px">
                         <h3>Web App Deployment</h3>
                         <ul class="noBullet">
                             <li><a href="/vsts/pipelines/targets/webapp">Azure Web App Deployment</a></li>
@@ -130,7 +130,7 @@ featureFlags:
 <div style="clear:left;font-size:100%">
 </div>
 <h2 id="admin">Marketplace and Extensions</h2>
-<div class="group" class="cardText" style="float:left;width:250px;margin:35px">
+<div class="group" class="cardText" style="float:left;width:250px">
                         <h3>Discover & Manage Extensions</h3>
                         <ul class="noBullet">
                             <li><a href="/vsts/marketplace/overview">Discover & Manage Extensions</a></li>
@@ -138,7 +138,7 @@ featureFlags:
                             <li><a href="/vsts/report/extend-analytics/index">Extend Analytics with OData</a></li>
                         </ul>
        </div>
-       <div class="group" class="cardText" style="float:left;width:250px;margin:35px">
+       <div class="group" class="cardText" style="float:left;width:250px">
                         <h3>Build Extensions</h3>
                         <ul class="noBullet">
                             <li><a href="/vsts/extend/index">Develop Extensions</a></li>
@@ -150,7 +150,7 @@ featureFlags:
 <div style="clear:left;font-size:100%">
 </div>
 <h2 id="sdks">IDEs, SDKs, CLIs and Toolkits</h2>
-<div class="group" class="cardText" style="float:left;width:250px;margin:35px">
+<div class="group" class="cardText" style="float:left;width:250px">
                         <h3>IDEs</h3>
                         <ul class="noBullet">
                             <li><a href="/visualstudio">Visual Studio</a></li>
@@ -161,7 +161,7 @@ featureFlags:
                             <li><a href="/vsts/java/download-eclipse-plug-in">Eclipse/Team Explorer Everywhere</a></li>
                         </ul>
        </div>
-       <div class="group" class="cardText" style="float:left;width:250px;margin:35px">
+       <div class="group" class="cardText" style="float:left;width:250px">
                         <h3>Command-line tools</h3>
                         <ul class="noBullet">
                             <li><a href="/vsts/git/command-prompt">Git commands</a></li>
@@ -169,7 +169,7 @@ featureFlags:
                             <li><a href="/cli/vsts/overview">VSTS CLI</a></li>
                         </ul>
        </div>
-       <div class="group" class="cardText" style="float:left;width:250px;margin:35px">
+       <div class="group" class="cardText" style="float:left;width:250px">
                         <h3>Task-specific clients</h3>
                         <ul class="noBullet">
                             <li><a href="/vsts/test/provide-stakeholder-feedback">Test & Feedback extension</a></li>
@@ -179,7 +179,7 @@ featureFlags:
 <div style="clear:left;font-size:100%">
 </div>
 <h2 id="additional">DevOps Resource Center</h2><br/>
-       <div class="group" class="cardText" style="float:left;width:250px;margin:35px">
+       <div class="group" class="cardText" style="float:left;width:250px">
                         <h3>What is?</h3>
                         <ul class="noBullet">
                             <li><a href="/azure/devops/what-is-devops">What is DevOps?</a></li>
@@ -189,14 +189,14 @@ featureFlags:
                             <li><a href="/azure/devops/agile/what-is-scrum">What is Scrum?</a></li>
                         </ul>
        </div>
-       <div class="group" class="cardText" style="float:left;width:250px;margin:35px">
+       <div class="group" class="cardText" style="float:left;width:250px">
                         <h3>Scaling</h3>
                         <ul class="noBullet">
                             <li><a href="/azure/devops/agile/scale-agile-large-teams">Scale Agile to Large Teams</a></li>
                             <li><a href="//azure/devops/git/git-at-scale">Git at Scale</a></li>
                         </ul>
        </div>
-       <div class="group" class="cardText" style="float:left;width:250px;margin:35px">
+       <div class="group" class="cardText" style="float:left;width:250px">
                         <h3>Additional resources</h3>
                         <ul class="noBullet">
                             <li><a href="/azure/devops/devops-at-microsoft/">DevOps at Microsoft</a></li>
