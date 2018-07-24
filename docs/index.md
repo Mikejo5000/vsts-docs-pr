@@ -652,6 +652,10 @@ featureFlags:
                                     </div>
                                 </a>
                             </li>
+                            <li>
+                                > [!div class="nextstepaction"]
+                                > [Azure DevOps Marketplace](https://marketplace.visualstudio.com/vsts)
+                            </li>
                         </ul>
                     </li>
                 </ul>
