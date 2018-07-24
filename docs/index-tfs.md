@@ -71,12 +71,12 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/media/common/i_deploy.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/common/i_upgrade.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Upgrade guide</h3>
-                                                    <p>Find what you need to know to begin upgrading your deployment.</p>
+                                                    <p>Upgrade your deployment.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -114,7 +114,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/media/common/i_tasks.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/common/i_config-tools.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -133,7 +133,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/media/common/i_tasks.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/common/i_management.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -184,7 +184,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/tfs/server/ref/command-line/open-admin-console">
+                                <a href="/tfs/server/admin/config-tfs-resources">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -195,7 +195,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Open administration console</h3>
-                                                    <p>Find how to open and use the TFS administration console.</p>
+                                                    <p>Open and use the TFS administration console to manage resources.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -222,75 +222,19 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/security/about-permissions">
+                                <a href="/vsts/organizations/security/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/media/common/i_tasks.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/common/i_security-management.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Permissions and groups</h3>
-                                                    <p>Learn about permissions and groups in TFS.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/vsts/security/access-levels">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/media/common/i_tasks.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Access levels</h3>
-                                                    <p>Learn about access levels in TFS.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/vsts/organizations/security/permissions-lookup-guide">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/media/common/i_tools.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Permissions lookup guide</h3>
-                                                    <p>Look up a permission or group to determine how to manage it.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/vsts/organizations/security/permissions-access">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/media/common/i_tools.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Default permissions and access</h3>
-                                                    <p>Troubleshoot issues when creating or deleting projects.</p>
+                                                    <h3>Security &amp; Identity</h3>
+                                                    <p>Manage permissions and access to your projects, collections, and repositories.
+                                                        </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -333,25 +277,6 @@ featureFlags:
                                                 <div class="cardText">
                                                     <h3>SQL Server Reporting</h3>
                                                     <p>Work with Reporting Services reports, add reports, and manage the data warehouse and cube.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/vsts/organizations/security/index">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/media/common/i_protect.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Security & Identity</h3>
-                                                    <p>Manage permissions and access to your projects, repositories, and pipelines.</p>
                                                 </div>
                                             </div>
                                         </div>

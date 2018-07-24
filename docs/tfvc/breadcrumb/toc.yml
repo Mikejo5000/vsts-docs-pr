@@ -4,7 +4,7 @@
   items:
   - name: Code
     tocHref: /vsts/tfvc/
-    topicHref: /vsts/index#pivot=services&panel=code
+    topicHref: /vsts/index-repos
     items:
     - name: TFVC
       tocHref: /vsts/

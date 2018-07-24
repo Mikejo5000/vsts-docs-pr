@@ -4,7 +4,7 @@
   items: 
   - name: Agile
     tocHref: /vsts/work/
-    topicHref: /vsts/index#pivot=services&panel=agile
+    topicHref: /vsts/index-work
     items:
     - name: Work Items
       tocHref: /vsts/work/

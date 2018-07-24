@@ -4,7 +4,7 @@
   items: 
   - name: Search
     tocHref: /vsts/
-    topicHref: /vsts/index#pivot=services&panel=collaboration
+    topicHref: /vsts/index#devops-services-supplemental
     items:
     - name: Search
       tocHref: /vsts/

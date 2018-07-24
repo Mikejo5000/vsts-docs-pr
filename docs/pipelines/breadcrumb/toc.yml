@@ -4,7 +4,7 @@
   items: 
   - name: Continuous Integration & Delivery
     tocHref: /vsts/
-    topicHref: /vsts/index#pivot=services&panel=delivery
+    topicHref: /vsts/index-pipelines
     items:
     - name: Build and Release
       tocHref: /vsts/

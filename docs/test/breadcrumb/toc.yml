@@ -4,7 +4,7 @@
   items: 
   - name: Test
     tocHref: /vsts/
-    topicHref: /vsts/index#pivot=services&panel=testing
+    topicHref: /vsts/index-test
     items:
     - name: Test
       tocHref: /vsts/

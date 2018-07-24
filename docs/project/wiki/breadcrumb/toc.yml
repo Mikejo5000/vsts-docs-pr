@@ -4,7 +4,7 @@
   items: 
   - name: Collaborate
     tocHref: /vsts/
-    topicHref: /vsts/index#pivot=services&panel=collaboration
+    topicHref: /vsts/index#devops-services-supplemental
     items:
     - name: "README & Wikis"
       tocHref: /vsts/project/wiki/

@@ -4,7 +4,7 @@
   items: 
   - name: Extend
     tocHref: /vsts/
-    topicHref: /vsts/index#pivot=services&panel=extend
+    topicHref: /vsts/index#devops-services-extensions
     items:
     - name:  Extend Analytics with OData
       tocHref: /vsts/report/extend-analytics/

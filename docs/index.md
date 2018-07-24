@@ -246,7 +246,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/Wiki40.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/common/i_reference.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -409,7 +409,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Security &amp; Identity</h3>
-                                                    <p>Manage permissions and access to your team projects and repositories.
+                                                    <p>Manage permissions and access to your organization, projects, and repositories.
                                                         </p>
                                                 </div>
                                             </div>
@@ -495,6 +495,26 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
+                                <a href="/vsts/service-hooks/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/i_service-hooks.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Service Hooks</h3>
+                                                    <p>Create subscriptions and configure the integration of Azure DevOps with
+                                                        third-party apps.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
                                 <a href="/vsts/marketplace/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
@@ -544,7 +564,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/i_extensions.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/common/i_extend.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -588,26 +608,6 @@ featureFlags:
                                                 <div class="cardText">
                                                     <h3>Build Apps</h3>
                                                     <p>Programmatically integrate with Azure DevOps from custom apps and services.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/vsts/service-hooks/index">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="_img/index/i_service-hooks.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Service Hooks</h3>
-                                                    <p>Create subscriptions and configure the integration of Azure DevOps with
-                                                        third-party apps.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -727,7 +727,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com///media/common/i_article.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/common/i_dev-ops.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
