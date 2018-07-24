@@ -15,6 +15,7 @@ featureFlags:
 - clicktale 
 ---
 
+<a href="/vsts/index">Azure DevOps Services</a>
 <div id="agile" class="v2">
     <div class="container">
         <h1>Azure Devops Repos Documentation</h1>
@@ -97,6 +98,25 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
+                                <a href="/vsts/tfvc">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/logo_vs-team-services.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>TFVC</h3>
+                                                    <p>Manage code with centralized version control.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
                                 <a href="/vsts/organizations/settings/index#repos">
                                     <div class="cardSize">
                                         <div class="cardPadding">
@@ -119,5 +139,5 @@ featureFlags:
      </div>
 </div>
 <a href="/vsts/index-all">
-<h2>Azure Devops Services Index</h2>
+<h3>Azure Devops Services Index</h3>
 </a>

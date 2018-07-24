@@ -15,7 +15,7 @@ featureFlags:
 - clicktale 
 ---
 
-
+<a href="/vsts/index">Azure DevOps Services</a>
 <h1>Azure Devops Services: Index to Documentation and Resources</h1>
     <p>Access get started guides, user guides, administrative resources, API references, and other resources.</p>
 <h2 id="user-guides">User and Administrative Guides</h2>

@@ -214,7 +214,7 @@ Members of the [Project Administrators group](../security/set-project-collection
 <td>You can manage code using [Git repositories](../../git/overview.md) or one [Team Foundation Version Control (TFVC) repository](../../tfvc/overview.md). </td>
 </tr>
 <tr>
-<td>**Test** </td>
+<td><a id="test-center" />**Test** </td>
 <td><ul>
 <li>[Set test retention policies](../../test/how-long-to-keep-test-results.md)</li>
 <li>[Manage test-related permissions at project level](../security/set-project-collection-level-permissions.md)</li>

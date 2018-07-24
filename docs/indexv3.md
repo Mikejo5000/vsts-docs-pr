@@ -242,7 +242,7 @@ featureFlags:
                                     <ul>
                                         <li><a class="barLink" href="/vsts/git/index">Git Repositories</a></li>
                                         <li><a class="barLink" href="/vsts/git/tutorial/pullrequest">Pull Requests</a></li>
-                                        <li><a class="barLink" href="/vsts/git/concepts/forks"><del>Forks</del></a></li>
+                                        <li><a class="barLink" href="/vsts/git/concepts/forks">Forks</a></li>
                                         <li><a class="barLink" href="/vsts/git/branch-policies">Branch Policies</a></li>
                                         <li><a class="barLink" href="/vsts/tfvc/index">TFVC</a></li>
                                     </ul>
@@ -252,9 +252,9 @@ featureFlags:
                                         <li><a class="barLink" href="/vsts/pipelines/index">Continuous Testing</a></li>
                                         <li><a class="barLink" href="/vsts/deploy-azure/index">Deploy to Azure</a></li>
                                         <li><a class="barLink" href="/vsts/package/index">Package Management</a></li>
-                                        <li><a class="barLink" href="/vsts/pipelines/library/index"><del>Library Assets</del></a></li>
-                                        <li><a class="barLink" href="/vsts/pipelines/agents/agents"><del>Hosted &amp; Private Agents</del></a></li>
-                                        <li><a class="barLink" href="/vsts/pipelines/tasks"><del>Task Reference</del></a></li>
+                                        <li><a class="barLink" href="/vsts/pipelines/library/index">Library Assets</a></li>
+                                        <li><a class="barLink" href="/vsts/pipelines/agents/agents">Hosted &amp; Private Agents</a></li>
+                                        <li><a class="barLink" href="/vsts/pipelines/tasks">Task Reference</a></li>
                                     </ul>
                                     <h3>Test</h3>
                                     <ul>
@@ -858,7 +858,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3><del>Library Assets</del></h3>
+                                                    <h3>Library Assets</h3>
                                                     <p>Define and use shared build and release assets for a team project.</p>
                                                 </div>
                                             </div>
@@ -877,7 +877,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3><del>Hosted &amp; Private Agents</del></h3>
+                                                    <h3>Hosted &amp; Private Agents</h3>
                                                     <p>Add agents as needed to support your cloud build processes.</p>
                                                 </div>
                                             </div>
@@ -896,7 +896,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3><del>Task Reference</del></h3>
+                                                    <h3>Task Reference</h3>
                                                     <p>Include build, utility, test, and deploy tasks in your build and release
                                                         definitions.</p>
                                                 </div>

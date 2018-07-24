@@ -15,6 +15,8 @@ featureFlags:
 - clicktale 
 ---
 
+<a href="/vsts/index">Azure DevOps Services</a>
+
 <div id="agile" class="v2">
     <div class="container">
         <h1>Azure Devops Packages Documentation</h1>
@@ -63,5 +65,5 @@ featureFlags:
      </div>
 </div>
 <a href="/vsts/index-all">
-<h2>Azure Devops Services Index</h2>
+<h3>Azure Devops Services Index</h3>
 </a>

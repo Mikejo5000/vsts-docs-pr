@@ -15,6 +15,8 @@ featureFlags:
 - clicktale 
 ---
 
+<a href="/vsts/index">Azure DevOps Services</a>
+
 <div id="agile" class="v2">
     <div class="container">
         <h1>Azure Devops Pipelines Documentation</h1>
@@ -109,7 +111,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3><del>Library Assets</del></h3>
+                                                    <h3>Library Assets</h3>
                                                     <p>Define and use shared build and release assets for a team project.</p>
                                                 </div>
                                             </div>
@@ -128,7 +130,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3><del>Hosted &amp; Private Agents</del></h3>
+                                                    <h3>Hosted &amp; Private Agents</h3>
                                                     <p>Add agents as needed to support your cloud build processes.</p>
                                                 </div>
                                             </div>
@@ -147,7 +149,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3><del>Task Reference</del></h3>
+                                                    <h3>Task Reference</h3>
                                                     <p>Include build, utility, test, and deploy tasks in your build and release
                                                         definitions.</p>
                                                 </div>
@@ -179,5 +181,5 @@ featureFlags:
      </div>
 </div>
 <a href="/vsts/index-all">
-<h2>Azure Devops Services Index</h2>
+<h3>Azure Devops Services Index</h3>
 </a>
