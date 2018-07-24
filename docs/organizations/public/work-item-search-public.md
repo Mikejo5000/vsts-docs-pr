@@ -3,7 +3,7 @@ title: Search for work items in a public project
 titleSuffix: VSTS Public Project
 description: Use Work Item Search to search across all work item fields over one or more public projects  
 ms.technology: devops-public-projects
-ms.prod: devops-alm
+ms.prod: devops
 ms.assetid: 
 ms.manager: douge
 ms.author: ahomer
@@ -80,6 +80,9 @@ With work item search, you can quickly find work items defined within a public p
 
 --- 
 
+
+## Fine tune your search
+
 # [New navigation](#tab/new-nav)
 
 1. Fine tune your search by specifying the fields to search. Enter `a:` and a user name
@@ -111,8 +114,6 @@ With work item search, you can quickly find work items defined within a public p
 1. Narrow your search to specific types
    and states, by using the drop-down selector lists at the top of the results page.
 
-
-## Fine tune your search
 
 # [Previous navigation](#tab/previous-nav)  
 
