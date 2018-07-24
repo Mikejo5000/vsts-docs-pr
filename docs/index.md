@@ -53,7 +53,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3><a href="/vsts/work/get-started">Agile Get Started Guide</a></h3>
+                                                    <h3><a href="/vsts/work/get-started">Boards Get Started Guide</a></h3>
                                                     <p>Sign up and start using Agile tools to plan and track work.</p>
                                                 </div>
                                             </div>
@@ -72,6 +72,23 @@ featureFlags:
                                                 <div class="cardText">
                                                     <h3><a href="/vsts/pipelines/get-started">Pipelines Get Started Guide </a></h3>
                                                     <p>Sign up and start building and releasing apps with continuous integration and deployment.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+            </li>      
+            <li>                                                
+                                   <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/overview.png" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3><a href="/vsts/user-guide/index">Enterprise Get Started Guide </a></h3>
+                                                    <p>Sign up and get started with all Azure DevOps Services.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -150,8 +167,8 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Sign up for Packages (Artifacts)</h3>
-                                                    <p>Sign up and start using artifacts to support continuous integration and deployment of your apps.</p>
+                                                    <h3>Azure DevOps Artifacts</h3>
+                                                    <p>Use package management to share code across your enterprise and support continuous integration and deployment of your apps.</p>
                                                 </div>
                                             </div>
                                         </div>

@@ -104,7 +104,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/logo_vs-team-services.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/common/i_multi-connect.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
