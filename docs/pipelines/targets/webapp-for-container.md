@@ -40,22 +40,20 @@ You can automatically deploy your containers to an Azure App Service after every
 
 If you want some sample code that works with this guidance, follow these steps:
 
-- Import (into VSTS or TFS) or fork (into GitHub) this repo:
+1. Import (into VSTS or TFS) or fork (into GitHub) this repo:
 
-```
-https://github.com/adventworks/dotnetcore-sample
-
-```
+   `https://github.com/adventworks/dotnetcore-sample`
     
-- Follow the guidance in [Docker](../languages/docker.md) to build the sample code.
+1. Follow the guidance in the topic [Docker](../languages/docker.md) to build the sample code.
 
-- Create a web app for container in Azure portal. For the container, select the image that you pushed to Docker hub while following the example in the above doc.
+1. Create a **Web App for Containers** in the Azure portal.
+   For the container, select the image that you pushed to Docker hub while following the steps in the topic linked in the previous step.
 
-- Set up continuous deployment to the web app for container using the following instructions:
+1. Set up continuous deployment to the Web App for Containers instance using the following instructions:
 
 # [Designer](#tab/designer)
 
-Select Empty Template in a release definition. Add an Azure CLI task with inline script:
+Select **Empty Template** in a release pipeline. Add an **Azure CLI** task with this inline script:
 
 ```bash
 az webapp config container set --name <name of your web app> --resource-group <name of your resource group> --docker-registry-server-user <user id for Docker hub> --docker-registry-server-password <Password for Docker hub> --docker-custom-image-name $(Build.Repository.Name):$(Build.BuildId)'
@@ -65,7 +63,7 @@ az webapp config container set --name <name of your web app> --resource-group <n
 
 ::: moniker range="vsts"
 
-Add the following line to your `.vsts-ci.yml` file.
+Add the following to your `.vsts-ci.yml` file:
 
 ```yaml
 - task: AzureCLI@1
@@ -88,11 +86,13 @@ YAML builds are not yet available on TFS.
 
 ## Container registry
 
-To deploy Docker images to Azure web apps, you need a container registry. You can either use Docker hub or Azure container registry.
+To deploy Docker images to Azure web apps, you need a container registry.
+You can use either Docker Hub or Azure Container Registry.
 
 ### Docker hub
 
-The following sequence of tasks can be used to continuously build, push, and deploy an image to web app via Docker hub.
+The following sequence of tasks can be used to continuously build, push,
+and deploy an image to a web app using Docker Hub.
 
 # [Designer](#tab/designer)
 
@@ -142,7 +142,8 @@ steps:
 
 ### Azure container registry
 
-The following sequence of tasks can be used to continuously build, push, and deploy an image to web app via Azure container registry.
+The following sequence of tasks can be used to continuously build, push,
+and deploy an image to a web app using Azure Container Registry.
 
 # [Designer](#tab/designer)
 
@@ -199,7 +200,7 @@ The following sequence of tasks can be used to continuously build, push, and dep
 <a name="endpoint"></a>
 ## Azure service connection
 
-The **Azure App Service Deploy** task, similar to other built-in Azure tasks, requires an Azure service connection as an
+The **Azure App Service Deploy** task requires an Azure service connection as an
 input. The Azure service connection stores the credentials to connect from VSTS or TFS to Azure. 
 
 # [Designer](#tab/designer)
@@ -222,7 +223,9 @@ To learn how to create an Azure service connection, see [Create an Azure service
 
 ::: moniker range="vsts"
 
-You must supply an Azure service connection to the `AzureRmWebAppDeployment` task. The Azure service connection stores the credentials to connect from VSTS to Azure. See [Create an Azure service connection](../library/connect-to-azure.md).
+You must supply an Azure service connection to the `AzureRmWebAppDeployment` task.
+The Azure service connection stores the credentials to connect from VSTS to Azure.
+See [Create an Azure service connection](../library/connect-to-azure.md).
 
 ::: moniker-end
 
@@ -294,15 +297,17 @@ YAML builds are not yet available on TFS.
 
 ## CD settings on Azure web app
 
-Explain the difference between using CD settings on the Azure web app vs setting up a pipeline with the Azure web app deployment task.
+**[TBD]** 
+*Explain the difference between using CD settings on the Azure web app vs setting up a pipeline with the Azure web app deployment task.*
+**[TBD]**
 
 ## Deploying conditionally
 
-You may choose to deploy only certain builds to your Azure web app. 
+You may choose to deploy only specific builds to your Azure web app. 
 
 # [Designer](#tab/designer)
 
-In your release pipeline you can implement various checks and conditions to control the deployment.
+In your release pipeline you can implement various checks and conditions to control the deployment:
 
 * Set **branch filters** to configure the **continuous deployment trigger** on the artifact of the release pipeline.
 * Set **pre-deployment approvals** as a pre-condition for deployment to an environment.
