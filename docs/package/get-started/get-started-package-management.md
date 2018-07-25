@@ -44,6 +44,10 @@ Some XXX services are only compatible with specific versions of TFS. Check out t
 
 ## How do I start using XXX?
 
-> **elbatk:** link to a quickstart or something?
+You can jump into any of our Quickstarts that apply to you:
+
+* [Get started with npm](../get-started-npm.md)
+* [Get started with NuGet](../get-started-nuget.md)
+* [Get started with Maven](../get-started-maven.md)
 
 ## Resources
