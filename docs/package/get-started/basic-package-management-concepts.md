@@ -37,7 +37,7 @@ Upstream sources enable you to use a single feed to store both the packages you 
 
 ### What are 'complete graphs'?
 
-When you release a package, it's important to ensure that any dependencies of that package are also available in your feed, either by republishing them directly (not recommended) or by consuming them from an [upstream source](upstream-sources.md). Once you consume a package from an upstream source once, a copy of it is always saved in your feed. Even if the upstream source goes down, your copy will remain available both to you and to your downstream consumers.
+When you release a package, it's important to ensure that any dependencies of that package are also available in your feed, either by republishing them directly (not recommended) or by consuming them from an [upstream source](../concepts/upstream-sources.md). Once you consume a package from an upstream source once, a copy of it is always saved in your feed. Even if the upstream source goes down, your copy will remain available both to you and to your downstream consumers.
 
 ### What are 'symbols'?
 
