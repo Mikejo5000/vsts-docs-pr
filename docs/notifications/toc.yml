@@ -16,6 +16,8 @@
     href: ../work/work-items/follow-work-items.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
   - name: Manage your account level notifications settings
     href: manage-account-notifications-settings.md
+  - name: View notification statistics for your account
+    href: view-account-notifications-statistics.md
   - name: Manage your personal notifications
     href: manage-personal-notifications.md
 - name: How-to Guides
