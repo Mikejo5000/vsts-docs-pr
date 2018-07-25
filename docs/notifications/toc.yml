@@ -14,6 +14,8 @@
   items:
   - name: "Follow work & pull requests"
     href: ../work/work-items/follow-work-items.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
+  - name: Manage your account level notifications settings
+    href: manage-account-notifications-settings.md
   - name: Manage your personal notifications
     href: manage-personal-notifications.md
 - name: How-to Guides
