@@ -4,6 +4,12 @@
   items:
   - name: About notifications
     href: about-notifications.md
+  - name: Managing notifications for accounts
+    href: managing-notifictaions-account.md
+  - name: Managing notifications for teams
+    href: managing-notifications-teams.md
+  - name: Managing notificatoins for self
+    href: managing-notifications-self.md
 - name: Quickstarts
   items:
   - name: View your subscriptions, opt-out as needed
