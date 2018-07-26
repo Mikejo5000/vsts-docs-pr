@@ -698,7 +698,7 @@ featureFlags:
 <a id="additional-resources" />
 <h2>Azure DevOps Services: Additional Resources</h2>
 <p>Release notes, technical articles, and additional information sources. </p><br/>
-                        <ul id="resources" class="cardsY panelContent featuredContent">
+                        <ul id="resources" class="cardsA">
                             <li>
                                 <a href="/vsts/release-notes/index">
                                     <div class="cardSize">
