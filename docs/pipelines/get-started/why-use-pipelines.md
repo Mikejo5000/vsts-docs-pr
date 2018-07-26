@@ -22,7 +22,7 @@ Maybe a list or a table that has things like:
 * Automate packaging of your project to make the newest version available to all users.
 * more...
 
-> ELBATK NOTE: AKA, what problems do I have that I can solve with Pipelines
+> **ELBATK NOTE**: AKA, what problems do I have that I can solve with Pipelines
 
 ### App developer that wants to push weekly updates to the app store
 
