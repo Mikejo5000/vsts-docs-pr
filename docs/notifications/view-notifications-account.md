@@ -62,3 +62,14 @@ Note, the globe icon on subscription row indicates a default subscription while 
 
 ![Account level notification hub: Subscribers list](_img/view-account-notification-subscribers.png)
 
+## Account notification hub: Statistics
+
+The `Statistics` section shows the most active notification subscriptions and the top event initiators (group, team, or indivual).  The statistics are only for the current day and reset at 00:00 UTC.
+
+![Account level notification hub: Statistics](_img/view-account-notification-stats.png)
+
+## Account notification hub: Settings
+
+The `Settings` section allows account level notification settings to be mangaged by any member of project collection administrators.
+
+![Account level notification hub: Settings](_img/view-account-notification-settings.png)
