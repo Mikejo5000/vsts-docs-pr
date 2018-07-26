@@ -20,7 +20,7 @@ featureFlags:
     <div class="container">
         <h1>Azure DevOps Boards Documentation</h1>
 <p>Start doing agile on your own terms. Azure DevOps Boards gives you configurable Kanban boards, interactive backlogs, simple planning tools, and out-of-the-box support for Scrum-all integrated together for unparalleled traceability and reporting.</p><br/>
-                        <ul id="agile" class="cardsY panelContent featuredContent">
+                        <ul id="agile" class="fullSpan cardsA">
                             <li>
                                 <a href="/vsts/work/work-items/index">
                                     <div class="cardSize">
@@ -196,6 +196,20 @@ featureFlags:
                                     </div>
                                 </a>
                             </li>   
+                        </ul>
+                        <ul id="resources" class="fullSpan noBullet cardText cols cols4"style="margin-top:12px;">
+                                    <li>
+                                        <a class="barLink" href="/vsts/release-notes/index"><img src="https://docs.microsoft.com/media/common/i_whats-new.svg" alt="" />Features Timeline & Release Notes</a>
+                                    </li>
+                                    <li>
+                                        <a class="barLink" href="/vsts/articles/index"><img src="https://docs.microsoft.com/media/common/i_article.svg" alt="" />Technical Articles</a>
+                                    </li>
+                                    <li>
+                                        <a class="barLink" href="https://docs.microsoft.com/en-us/azure/devops/"><img src="https://docs.microsoft.com/media/common/i_dev-ops.svg" alt="" />Azure DevOps Resource Center</a>
+                                    </li>
+                                    <li>
+                                        <a class="barLink" href="/vsts/index-all"><img src="https://docs.microsoft.com//media/common/i_library.svg" alt="" />Index</a>
+                                    </li>
                         </ul>
      </div>
 </div>

@@ -697,20 +697,67 @@ featureFlags:
 <a id="additional-resources" />
 <h2>Azure DevOps Services: Additional Resources</h2>
 <p>Release notes, technical articles, and additional information sources. </p><br/>
-                        <ul id="resources" class="fullSpan noBullet cardText cols cols4"style="margin-top:12px;">
-                                    <li>
-                                        <a class="barLink" href="/vsts/release-notes/index"><img src="https://docs.microsoft.com/media/common/i_whats-new.svg" alt="" />Features Timeline & Release Notes</a>
-                                    </li>
-                                    <li>
-                                        <a class="barLink" href="/vsts/articles/index"><img src="https://docs.microsoft.com/media/common/i_article.svg" alt="" />Technical Articles</a>
-                                    </li>
-                                    <li>
-                                        <a class="barLink" href="https://docs.microsoft.com/en-us/azure/devops/"><img src="https://docs.microsoft.com/media/common/i_dev-ops.svg" alt="" />Azure DevOps Resource Center</a>
-                                    </li>
-                                    <li>
-                                        <a class="barLink" href="/vsts/index-all"><img src="https://docs.microsoft.com//media/common/i_library.svg" alt="" />Index</a>
-                                    </li>
+                        <ul id="resources" class="cardsA">
+                            <li>
+                                <a href="/vsts/release-notes/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com//media/common/i_whats-new.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Features Timeline & Release Notes</h3>
+                                                    <p>Learn what's in development and on our roadmap as well as information about the latest features under release.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/vsts/articles/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com///media/common/i_article.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Technical Articles</h3>
+                                                    <p>White papers and use cases covering migration, version control, devops, and security.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://docs.microsoft.com/en-us/azure/devops/">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com/media/common/i_dev-ops.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Azure DevOps Resource Center</h3>
+                                                    <p>White papers and use cases covering migration, version control, devops, and security.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
                         </ul>
      </div>
 </div>
-
+<a href="/vsts/index-all">
+<h3>Azure DevOps Services Index</h3>
+</a>
