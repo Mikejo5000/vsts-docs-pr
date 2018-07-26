@@ -1,32 +1,42 @@
 # Not getting an email
 
+An email is generated when an [event](oob-supported-event-types.md) occurs within VSTS which matches a notification subscription.  See [overview](./about-notifications) for more information about notification subscriptions.
+
 If you're not receiving an expected notification email, please check the following.
-* Are you opted-out of the notification subscription?
-* Is the notification subscription enabled?
+
+* Is the subscription is enabled?
 * Does the subscription contain a filter condition which would prevent an email?
+* Are you included in the email recipients for the subscription?
+* Was the email delivered to a location you haven't checked?
 * Is the account level delivery preference set to "Do not deliver"?
 * Is a team or group level delivery preference set to "Do not deliver"?
 * Is the "Skip Initiator" option of the notification subscription enabled?
 
-The following sections describe each of these scenarios in greater detail.
+## Step 1: Check other email folders including the junk folder
+Ensure the email was not delivered to a differet email folder.
 
-## Are you opted-out of the notification subscription?
-blah, blah, blah
+## Step 2: Locate the subscription in the user interface
+Navigate to your personal subscriptions and locate the subscription which you feel should have produced an email, but didn't.  Click [here]() to learn how to navigate to your personal subscriptions.
 
-## Is the notification subscription enabled?
-blau, blah, blah
+## Step 3: Ensure the subscription is enabled
+If the subscription is greyed-out in the user interface, then it is disabled.
 
-## Does the subscription contain a filter condition which would prevent an email?
-blah, blah, blah
+Default subscription become disabled when an administrartor opts-out at the account or team level, or if an individual opts-out in their personal subscriptions. Custom subcriptions become disabled when an administrator disables the subscription at the account or team level, or an individual disables a personal custom subscription.  Click [here](howto-disable-subscriptions) to learn more about outing-out or disabling subscriptions.
 
-## Is the account level delivery preference set to "Do not deliver"?
-blah, blah, blah
+## Step 4: Closely inpsect the subscription filter conditions
+An email is only generated if a VSTS event matches all the filter conditions of the subscription. View the filter conditions by clicking the subscription link in the subscription user interface.  You should be able to view the filter conditions even if you don't have permision to change them.  Closely instect all filter conditions to see if they matched the VSTS event.
 
-## Is a team or group level delivery preference set to "Do not deliver"?
-blah, blah, blah
+## Step 5: Check the "Skip initiator" option on the subscription
+The `Skip initiator` checkbox option on a subscription will cause the initiator of the VSTS event to be excluded from the recipient list of an email generated, while all others will receive the event.  For example, consider a subscription for a work item changed event.  You can choose `Skip initiator` to avoid being emailed for changes you make to the work item.
 
-## Is the "Skip Initiator" option of the subscription enabled?
-No email will be sent to you if this option is set and you are the initiator of the matching event.  The remaining recpipents will receive the email for the matching event.
+## Step 6: Check "Do not deliver" setting for the account
+Navigate to the account level notifications hub and click the `Settings` tab (click [here]() to learn how).  If delivery setting is set to `Do not deliver`, then all team or groups that don't have explicit delivery settings will inherit this value.  This setting alone doesn't necessarily indicate an email wasn't delivered but it could be.  Continue with the next step to determine if a group or team delivery setting is inheriting this value and blocking delivery to your group or team.
+
+## Step 7: Check "Do not deliver" setting for any team or group
+
+
+## Step 8: Ensure your email address is included as a recipient for this subscription
+Click [here]() to learn more about how email recipients are determined.
 
 
 
