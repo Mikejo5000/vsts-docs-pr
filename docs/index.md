@@ -697,7 +697,8 @@ featureFlags:
 <a id="additional-resources" />
 <h2>Azure DevOps Services: Additional Resources</h2>
 <p>Release notes, technical articles, and additional information sources. </p><br/>
-                        <ul id="resources" class="fullSpan noBullet cardText cols cols4"style="margin-top:12px;">
+<div class="group fullSpan noBullet cols cols4" style="float:left; margin-top:12px">
+<ul id="resources" class="noBullet">
                                     <li>
                                         <a class="barLink" href="/vsts/release-notes/index"><img src="https://docs.microsoft.com/media/common/i_whats-new.svg" alt="" />Features Timeline & Release Notes</a>
                                     </li>
@@ -710,7 +711,9 @@ featureFlags:
                                     <li>
                                         <a class="barLink" href="/vsts/index-all"><img src="https://docs.microsoft.com//media/common/i_library.svg" alt="" />Index</a>
                                     </li>
-                        </ul>
-     </div>
+</ul>
+<div style="clear:left;font-size:100%">
+</div>
+</div>
 </div>
 
