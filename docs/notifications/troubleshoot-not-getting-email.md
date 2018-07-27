@@ -2,15 +2,17 @@
 
 An email is generated when an [event](oob-supported-event-types.md) occurs within VSTS which matches a notification subscription.  See [overview](./about-notifications) for more information about notification subscriptions.
 
-If you're not receiving an expected notification email, please check the following.
+If you're not receiving an expected notification email, it could be for one of the following reasons
 
-* Is the subscription is enabled?
-* Does the subscription contain a filter condition which would prevent an email?
-* Are you included in the email recipients for the subscription?
-* Was the email delivered to a location you haven't checked?
-* Is the account level delivery preference set to "Do not deliver"?
-* Is a team or group level delivery preference set to "Do not deliver"?
-* Is the "Skip Initiator" option of the notification subscription enabled?
+* The email was delivered to an unchecked folder
+* The subscription is disabled or opted-out
+* The event does not match the specified subscription filter conditions
+* The subscription is defined to not send emails to the initiator of an event
+* The account level _do not deliver_ setting is impacting email delivery
+* The team or group level _do not deliver_ setting is impacting email delivery
+* You are not a member of the group or team receiving the email
+
+Please perform the following step to determine if any of these resolve the issue.
 
 ## Step 1: Check other email folders including the junk folder
 Ensure the email was not delivered to a differet email folder.
@@ -32,8 +34,8 @@ The `Skip initiator` checkbox option on a subscription will cause the initiator 
 ## Step 6: Check "Do not deliver" setting for the account
 Navigate to the account level notifications hub and click the `Settings` tab (click [here]() to learn how).  If delivery setting is set to `Do not deliver`, then all team or groups that don't have explicit delivery settings will inherit this value.  This setting alone doesn't necessarily indicate an email wasn't delivered but it could be.  Continue with the next step to determine if a group or team delivery setting is inheriting this value and blocking delivery to your group or team.
 
-## Step 7: Check "Do not deliver" setting for any team or group
-
+## Step 7: Check "Do not deliver" setting for your team or group
+ If the team or group define a delivery setting for "Deliver to individual members", it's still possible that the team contains other groups which have a different delivery setting.  Click [here]() to learn team membership is expaneded and how some members of the team could receive an email while others do not.
 
 ## Step 8: Ensure your email address is included as a recipient for this subscription
 Click [here]() to learn more about how email recipients are determined.
