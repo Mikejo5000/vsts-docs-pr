@@ -55,6 +55,10 @@ When your build or deployment runs, the system begins one or more jobs. An **age
 
 The [Build and Release Agents article](../agents/agents.md) goes more in-depth about the different types of agents and how to use them.
 
+### What is a 'deployment target'?
+
+Once you have continuous integration in place, the next step is to create a release pipeline to automate the deployment of your application to one or more environments. This automation process is again defined as a collection of tasks. VSTS and TFS support deploying your application to virtual machines, containers, on-premises and cloud platforms, or PaaS services. You can also publish your mobile application to a store.
+
 
 
 
