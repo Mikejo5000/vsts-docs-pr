@@ -23,7 +23,82 @@ featureFlags:
 <h1>Azure DevOps Services Documentation</h1>
     <p>Collaborate across your organization with tools designed to start small and scale up as needed. Azure DevOps Services provides free private Git repositories, configurable Kanban boards, interactive backlogs, simple planning tools, high-performance pipelines, and extensive automated and cloud-based load testing.</p>
 <a href="#start"> </a>
-<p>Sign up and quickly get started with an Azure DevOps service. Add other services as you need them. Or, get started with the suite of services. </p><br/>
+<h2>Get Started</h2>
+<p>Sign up and quickly get started with an Azure DevOps service. Add other services as you need them. Or, get started with the suite of integrated services. </p><br/>
+<table border="0" class="cardsY panelContent featuredContent">
+<tr>
+<td width="25%">
+<tr><td width="25%">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/Repos40.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3><a href="/vsts/repos/get-started">Repos</a></h3>
+                                                    <p>Develop code with distributed, flexible version control.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+</td>
+<td width="25%">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/Agile40.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3><a href="/vsts/work/get-started">Boards</a></h3>
+                                                    <p>Plan and track work and code defects with Agile tools.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+</td>
+<td width="25%">
+                                   <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/Pipelines40.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3><a href="/vsts/pipelines/get-started">Pipelines</a></h3>
+                                                    <p>Build and release apps with continuous integration and deployment.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+</td>
+<td width="25%">
+                                   <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/overview.png" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3><a href="/vsts/user-guide/index">Enterprise </a></h3>
+                                                    <p>Get started with the integrated suite of Azure DevOps Services.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+</td>
+</tr>
+</table>
+<!---
 <ul id="on-boarding" class="cardsY panelContent featuredContent">
 <li class="fullspan" style="margin-top:0;">             
                                     <div class="cardSize">
@@ -94,13 +169,13 @@ featureFlags:
                                     </div>
             </li>      
                  </ul> 
+-->
 <a id="devops-services" />
 <h2>Azure DevOps Services</h2>
-<p>Find quickstarts, samples, and tutorials for each of service.</p><br/>
-
+<p>Find quickstarts, samples, and tutorials for each Azure DevOps service.</p><br/>
 <table border="0" class="cardsA">
 <tr>
-<td width="25%">
+<td width="33%">
 <a href="/vsts/index-work">
                                     <div class="cardSize">
                                         <div class="cardPadding">
@@ -111,7 +186,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Boards</h3>
+                                                    <h3>Azure Boards</h3>
                                                     <p>Configure Kanban boards, use interactive backlogs, and get out-of-the-box support for Scrum.</p>
                                                 </div>
                                             </div>
@@ -119,7 +194,7 @@ featureFlags:
                                     </div>
                                 </a>
 </td>
-<td width="25%">
+<td width="33%">
                                 <a href="/vsts/index-repos">
                                     <div class="cardSize">
                                         <div class="cardPadding">
@@ -130,7 +205,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Repos</h3>
+                                                    <h3>Azure Repos</h3>
                                                     <p>Use Git repositories, pull requests, and code review and then integrate with CI/CD to build and deploy your apps.</p>
                                                 </div>
                                             </div>
@@ -138,7 +213,7 @@ featureFlags:
                                     </div>
                                 </a>
 </td>
-<td width="25%">
+<td width="33%">
                                 <a href="/vsts/index-pipelines">
                                     <div class="cardSize">
                                         <div class="cardPadding">
@@ -149,7 +224,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Azure DevOps Pipelines</h3>
+                                                    <h3>Azure Pipelines</h3>
                                                     <p>Test and deploy your apps  with high-performance pipelines. Start small and scale up as needed.</p>
                                                 </div>
                                             </div>
@@ -157,26 +232,9 @@ featureFlags:
                                     </div>
                                 </a>
 </td>
-<td width="25%">
-                                <a href="/vsts/index-pipelines">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="_img/index/Pipelines40.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Azure DevOps Pipelines</h3>
-                                                    <p>Test and deploy your apps  with high-performance pipelines. Start small and scale up as needed.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-</td>
-<td width="25%">
+</tr>
+<tr>
+<td width="33%">
                                 <a href="/vsts/index-packages">
                                     <div class="cardSize">
                                         <div class="cardPadding">
@@ -187,17 +245,15 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Azure DevOps Artifacts</h3>
-                                                    <p>Share code with others and across your enterprise and support continuous integration and deployment of your apps.</p>
+                                                    <h3>Azure Artifacts</h3>
+                                                    <p>Share code with others,across your enterprise, and support continuous integration and deployment of your apps.</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </a>
 </td>
-</tr>
-<tr>
-<td width="25%">
+<td width="33%">
                                 <a href="/vsts/index-test">
                                     <div class="cardSize">
                                         <div class="cardPadding">
@@ -208,7 +264,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Azure DevOps Test Center</h3>
+                                                    <h3>Azure Test Plans</h3>
                                                     <p>Test early and often. Setup test plans and track and report manual tests, run automated test suites and cloud-based load tests.</p>
                                                 </div>
                                             </div>
@@ -216,13 +272,7 @@ featureFlags:
                                     </div>
                                 </a>
 </td>
-<td width="25%">
-&nbsp;&nbsp;&nbsp;
-</td>
-<td width="25%">
-&nbsp;&nbsp;&nbsp;
-</td>
-<td width="25%">
+<td width="33%">
 &nbsp;&nbsp;&nbsp;
 </td>
 </tr>
@@ -331,29 +381,8 @@ featureFlags:
 <a id="devops-services-supplemental" />
 <h2>Shared Features</h2>
 <p>Share information and gain insights using Wikis, Dashboards, and Analytics plus other features available to all Azure DevOps Services. </p><br/>
-
 <table border="0" class="cardsA">
 <tr>
-<td width="25%">
-<a href="/vsts/index-work">
-                                <a href="/vsts/project/wiki/project-vision-status">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/media/common/i_overview.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Project Summary</h3>
-                                                    <p>Share your project vision and view cross project activity from the project summary.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-</td>
 <td width="25%">
                                 <a href="/vsts/report/dashboards/index">
                                     <div class="cardSize">
@@ -367,25 +396,6 @@ featureFlags:
                                                 <div class="cardText">
                                                     <h3>Dashboards</h3>
                                                     <p>Monitor progress and trends to support improvement of team processes.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-</td>
-<td width="25%">
-                                <a href="/vsts/index-pipelines">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="_img/index/Pipelines40.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Azure DevOps Pipelines</h3>
-                                                    <p>Test and deploy your apps  with high-performance pipelines. Start small and scale up as needed.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -412,46 +422,6 @@ featureFlags:
                                 </a>
 </td>
 <td width="25%">
-                                <a href="/vsts/project/wiki/index">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/media/common/i_reference.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>READMEs &amp; Wikis</h3>
-                                                    <p>Share information with your team and stakeholders.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-</td>
-</tr>
-<tr>
-<td width="25%">
-                                <a href="/vsts/project/navigation/preview-features">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com//media/common/i_portal.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Navigation Basics</h3>
-                                                    <p>Choose an app, team, project or setting. Add work items, dashboards, and other artifacts.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-</td>
-<td width="25%">
                                 <a href="/vsts/report/powerbi/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
@@ -471,73 +441,23 @@ featureFlags:
                                 </a>
 </td>
 <td width="25%">
-                               <a href="/vsts/project/search/index">
+                                <a href="/vsts/project/wiki/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/i_search.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/common/i_reference.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Search</h3>
-                                                    <p>Quickly find the code or work items you need to access across your account
-                                                        or collection.</p>
+                                                    <h3>READMEs &amp; Wikis</h3>
+                                                    <p>Share information with your team and stakeholders.</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </a>
-</td>
-<td width="25%">
-                                <a href="/vsts/notifications/index">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/media/common/i_alert.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Notifications</h3>
-                                                    <p>Define which events generate alerts or post messages in third party tools.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-</td>
-</tr>
-<tr>
-<td width="25%">
-                                <a href="/vsts/organizations/public/index">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/media/common/i_web-color.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Public Projects</h3>
-                                                    <p>Open your projects for wider collaboration.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-</td>
-<td width="25%">
-&nbsp;&nbsp;&nbsp;
-</td>
-<td width="25%">
-&nbsp;&nbsp;&nbsp;
-</td>
-<td width="25%">
-&nbsp;&nbsp;&nbsp;
 </td>
 </tr>
 </table>
@@ -722,7 +642,7 @@ featureFlags:
 </ul>
 -->
 <a id="devops-services-settings" />
-<h2>Azure DevOps Services: Administrative Settings</h2>
+<h2>Settings</h2>
 <p>Configure and customize resources. </p><br/>
 <table border="0">
 <tr><td width="25%">
@@ -963,7 +883,7 @@ featureFlags:
                         </ul>
 -->
 <a id="devops-services-extensions" />
-<h2>Azure DevOps Services: Marketplace and Extensions</h2>
+<h2>Marketplace and Extensions</h2>
 <p>Discover, install, and build add-ons to customize and extend your Azure DevOps Experiences. </p><br/>
 <table border="0">
 <tr><td width="25%">
@@ -1120,6 +1040,20 @@ featureFlags:
 <a id="additional-resources" />
 <h3>Additional Resources</h3>
 <table border="0">
+<tbody style="padding-left:0;font-size:.8rem;">
+<tr><td width="25%">
+<a class="barLink" href="/vsts/project/navigation/index"><img src="https://docs.microsoft.com//media/common/i_portal.svg" alt="" />Navigation Basics</a>
+</td>
+<td width="25%">
+<a class="barLink" href="/vsts/notifications/index"><img src="https://docs.microsoft.com/media/common/i_alert.svg" alt="" />Notifications</a>
+</td>
+<td width="25%">
+<a class="barLink"  href="/vsts/project/search/index"><img src="_img/index/i_search.svg" alt="" />Search</a>
+</td>
+<td width="25%">
+<a class="barLink" href="/vsts/organizations/public/index"><img src="https://docs.microsoft.com/media/common/i_web-color.svg" alt="" />Public Projects</a>
+</td>
+</tr>
 <tr><td width="25%">
 <a class="barLink" href="/vsts/release-notes/index"><img src="https://docs.microsoft.com/media/common/i_whats-new.svg" alt="" />Features Timeline & Release Notes</a>
 </td>
@@ -1133,11 +1067,12 @@ featureFlags:
 <a class="barLink" href="/vsts/index-all"><img src="https://docs.microsoft.com//media/common/i_library.svg" alt="" />Index</a>
 </td>
 </tr>
+</tbody>
 </table>
 <!---
 <p>Release notes, technical articles, and additional information sources. </p><br/>
 <div class="group fullSpan noBullet cols cols4" style="float:left; margin-top:12px">
-<ul id="resources" class="noBullet">
+<ul id="resources" class="noBullet" style="padding-left:0;font-size:.8rem;">
                                     <li>
                                         <a class="barLink" href="/vsts/release-notes/index"><img src="https://docs.microsoft.com/media/common/i_whats-new.svg" alt="" />Features Timeline & Release Notes</a>
                                     </li>

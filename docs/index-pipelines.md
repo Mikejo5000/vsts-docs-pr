@@ -1,13 +1,13 @@
 ---
-title: Azure DevOps Services - Pipelines 
-titleSuffix: Azure DevOps Pipelines 
-description: Collaborate on software development through version control, work tracking, and continuous integration and delivery with Azure DevOps services 
+title: Azure Pipelines 
+titleSuffix: Azure DevOps Services 
+description: Test and deploy your code with continuous integration and continuous delivery with high-performance pipelines. 
 layout: HubPage 
 hide_bc: true
 ms.topic: hub-page
 ms.prod: devops 
 ms.technology: vs-devops-overview 
-ms.assetid: B13C10AF-4FBC-493A-869F-79BABD6D453A 
+ms.assetid: 
 ms.manager: douge 
 ms.author: kaelli 
 ms.date: 09/05/2018
@@ -19,8 +19,9 @@ featureFlags:
 
 <div id="agile" class="v2">
     <div class="container">
-        <h1>Azure DevOps Pipelines Documentation</h1>
-<p>Test and deploy your code to production at lightning speed with high-performance pipelines. Start small and scale up as needed.</p>
+<a href="/vsts/index">Azure DevOps Services</a>&nbsp;&nbsp;&nbsp;Azure Pipelines
+        <h1>Azure Pipelines Documentation</h1>
+<p>Test and deploy your code with high-performance pipelines. Start small and scale up as needed.</p>
                         <a href="#delivery">Build and Release (Pipelines)</a>
                         <ul id="delivery" class="cardsY panelContent featuredContent">
                             <li>

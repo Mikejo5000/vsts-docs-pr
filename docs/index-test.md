@@ -19,8 +19,9 @@ featureFlags:
 
 <div id="agile" class="v2">
     <div class="container">
-        <h1>Azure DevOps Test Center Documentation</h1>
-<p>Test early and often to release your app with confidence. Use VSTS to setup test plans and track and report manual tests, run automated test suites, and run cloud-based load tests.</p>
+<a href="/vsts/index">Azure DevOps Services</a>&nbsp;&nbsp;&nbsp;Azure Test Plans
+        <h1>Azure Test Plans Documentation</h1>
+<p>Test early and often, setup test plans, track and report manual tests, run automated test suites or cloud-based load tests.</p>
                         <a href="#testing">Test</a>
                         <ul id="testing" class="cardsY panelContent featuredContent">
                             <li>

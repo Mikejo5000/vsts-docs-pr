@@ -19,7 +19,8 @@ featureFlags:
 
 <div id="agile" class="v2">
     <div class="container">
-        <h1>Azure DevOps Packages Documentation</h1>
+<a href="/vsts/index">Azure DevOps Services</a>&nbsp;&nbsp;&nbsp;Azure Artifacts
+        <h1>Azure Artifacts Documentation</h1>
 <p>Code once and share packages across your organization. Host your private Nuget, npm, and Maven packages with Azure DevOps Packages for more reliable, scalable builds.</p>
                         <a href="#artifacts">Packages (Artifacts)</a>
                         <ul id="artifacts" class="cardsY panelContent featuredContent">

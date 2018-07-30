@@ -18,8 +18,9 @@ featureFlags:
 <a href="/vsts/index">Azure DevOps Services</a>
 <div id="agile" class="v2">
     <div class="container">
-        <h1>Azure DevOps Repos Documentation</h1>
-<p>Azure DevOps Repos has everything you love about Git with free private repositories, pull requests, and code review. Collaborate with coworkers to make your code rock-solid-then integrate with CI/CD to get your code to production fast.</p>
+<a href="/vsts/index">Azure DevOps Services</a>&nbsp;&nbsp;&nbsp;Azure Repos
+        <h1>Azure Repos Documentation</h1>
+<p>Collaborate on code development using free Git public and private repositories, pull requests, and code review.</p>
                         <ul id="code" class="cardsY panelContent featuredContent">
                             <li>
                                 <a href="/vsts/git">

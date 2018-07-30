@@ -1,13 +1,13 @@
 ---
-title: Azure DevOps Services - Boards 
-titleSuffix: Azure DevOps Boards 
-description: Collaborate on software development through version control, work tracking, and continuous integration and delivery with Azure DevOps services 
+title: Azure Boards  
+titleSuffix: Azure DevOps Services 
+description: Plan and track work, collaborate on software development, using Agile tools you configure and customize to support your business needs.  
 layout: HubPage 
 hide_bc: true
 ms.topic: hub-page
 ms.prod: devops 
 ms.technology: vs-devops-overview 
-ms.assetid: B13C10AF-4FBC-493A-869F-79BABD6D453A 
+ms.assetid:  
 ms.manager: douge 
 ms.author: kaelli 
 ms.date: 09/05/2018
@@ -19,9 +19,9 @@ featureFlags:
 
 <div id="main" class="v2">
 <div class="container">
-<a href="/vsts/index">Docs</a>&nbsp;&nbsp;&nbsp;Azure Devops Boards
-<h1>Azure DevOps Boards Documentation</h1>
-<p>Azure DevOps Boards provides the tools you need to do agile on your terms. Configure your Kanban boards, interact with your backlogs, and work with out-of-the-box support for Scrum.</p><br/>
+<a href="/vsts/index">Azure DevOps Services</a>&nbsp;&nbsp;&nbsp;Azure Boards
+<h1>Azure Boards Documentation</h1>
+<p>Configure your Kanban boards, interact with your backlogs, and work with out-of-the-box support for Scrum.</p><br/>
 
 <table border="0" class="cardsA">
 <tr>
@@ -423,6 +423,7 @@ featureFlags:
 -->
 
 <table border="0">
+<tbody style="padding-left:0;font-size:.8rem;">
 <tr><td width="25%">
 <a class="barLink" href="/vsts/release-notes/index"><img src="https://docs.microsoft.com/media/common/i_whats-new.svg" alt="" />Features Timeline & Release Notes</a>
 </td>
@@ -436,6 +437,7 @@ featureFlags:
 <a class="barLink" href="/vsts/index-all"><img src="https://docs.microsoft.com//media/common/i_library.svg" alt="" />Index</a>
 </td>
 </tr>
+</tbody>
 </table>
 </div>
 </div>
