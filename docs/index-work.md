@@ -16,11 +16,11 @@ featureFlags:
 ---
 
 <div id="main" class="v2">
-    <div class="container">
+    <div class="container fullSpan">
 <a href="/vsts/index">Azure DevOps Services</a>
 <h1>Azure DevOps Boards Documentation</h1>
 <p>Start doing agile on your own terms. Azure DevOps Boards gives you configurable Kanban boards, interactive backlogs, simple planning tools, and out-of-the-box support for Scrum-all integrated together for unparalleled traceability and reporting.</p><br/>
-                        <ul id="agile" class="fullSpan pivots cardsA">
+                        <ul id="agile" class="pivots" class="cardsA">
                             <li>
                                 <a href="/vsts/work/work-items/index">
                                     <div class="cardSize">
@@ -202,17 +202,17 @@ featureFlags:
 <div style="clear:left;font-size:100%">
 </div>
 <div class="group fullSpan noBullet cols cols4" style="float:left; margin-top:12px">
-<div width:175px;>
-                                        <a href="/vsts/release-notes/index"><img src="https://docs.microsoft.com/media/common/i_whats-new.svg" alt="" />Features Timeline & Release Notes</a>
+<div style="width:175px;">
+<a href="/vsts/release-notes/index"><img src="https://docs.microsoft.com/media/common/i_whats-new.svg" alt="" />Features Timeline & Release Notes</a>
 </div>
 <div style="width:175px;">
-                                        <a href="/vsts/articles/index"><img src="https://docs.microsoft.com/media/common/i_article.svg" alt="" />Technical Articles</a>
+<a href="/vsts/articles/index"><img src="https://docs.microsoft.com/media/common/i_article.svg" alt="" />Technical Articles</a>
 </div>
 <div style="width:175px;">
-                                        <a href="https://docs.microsoft.com/en-us/azure/devops/"><img src="https://docs.microsoft.com/media/common/i_dev-ops.svg" alt="" />Azure DevOps Resource Center</a>
+<a href="https://docs.microsoft.com/en-us/azure/devops/"><img src="https://docs.microsoft.com/media/common/i_dev-ops.svg" alt="" />Azure DevOps Resource Center</a>
 </div>
 <div style="width:175px;">
-                                        <a href="/vsts/index-all"><img src="https://docs.microsoft.com//media/common/i_library.svg" alt="" />Index</a>
+<a href="/vsts/index-all"><img src="https://docs.microsoft.com//media/common/i_library.svg" alt="" />Index</a>
 </div>
 </div>
 
