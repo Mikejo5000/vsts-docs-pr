@@ -19,13 +19,13 @@ featureFlags:
 
 
 <div id="main" class="v2">
-    <div class="container">
-    <h1>Azure DevOps Services Documentation</h1>
+<div class="container">
+<h1>Azure DevOps Services Documentation</h1>
     <p>Collaborate across your organization with tools designed to start small and scale up as needed. Azure DevOps Services provides free private Git repositories, configurable Kanban boards, interactive backlogs, simple planning tools, high-performance pipelines, and extensive automated and cloud-based load testing.</p>
 <a href="#start"> </a>
-<p>Start with one service and add others as you need them. </p><br/>
+<p>Sign up and quickly get started with an Azure DevOps service. Add other services as you need them. Or, get started with the suite of services. </p><br/>
          <ul id="on-boarding" class="cardsY panelContent featuredContent">
-            <li>             
+            <li class="fullspan" style="margin-top:0;">             
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -96,8 +96,8 @@ featureFlags:
                  </ul> 
 <a id="devops-services" />
 <h2>Azure DevOps Services</h2>
-<p>Explore our most popular services with quickstarts, samples, and tutorials.</p><br/>
-                        <ul id="devops-services-suite" class="cardsY panelContent featuredContent">
+<p>Find quickstarts, samples, and tutorials for each of service.</p><br/>
+                        <ul id="devops-services-suite" class="pivots cardsA">
                             <li>
                                 <a href="/vsts/index-work">
                                     <div class="cardSize">
@@ -109,8 +109,8 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Azure DevOps Boards</h3>
-                                                    <p>The tools you need to effectively run your Agile team. Configurable Kanban boards, interactive backlogs, simple planning tools, and out-of-the-box support for Scrum&mdash;all integrated together for unparalleled traceability and reporting.</p>
+                                                    <h3>Boards</h3>
+                                                    <p>Configure Kanban boards, use interactive backlogs, and get out-of-the-box support for Scrum.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -128,8 +128,8 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Azure DevOps Repos</h3>
-                                                    <p>Everything you love about Git with free private repositories, pull requests, and code review. Collaborate with coworkers to make your code rock-solid&mdash;then integrate with CI/CD to get your code to production fast.</p>
+                                                    <h3>Repos</h3>
+                                                    <p>Use Git repositories, pull requests, and code review. to collaborate on code and then integrate with CI/CD to build and deploy your apps.</p>
                                                 </div>
                                             </div>
                                         </div>

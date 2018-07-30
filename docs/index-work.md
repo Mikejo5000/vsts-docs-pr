@@ -204,8 +204,7 @@ featureFlags:
 </div>
 <ul class="cardText cols cols4">
 <li class="fullSpan" style="margin-top:0;">
-
-                                <ul class="noBullet">
+<ul class="noBullet">
                                     <li>
                                         <a class="barLink" href="/vsts/release-notes/index"><img src="https://docs.microsoft.com/media/common/i_whats-new.svg" alt="" />Features Timeline & Release Notes</a>
                                     </li>
@@ -227,7 +226,6 @@ featureFlags:
                                 </ul>
 </li>
 </ul>
-
 </div>
 </div>
 
