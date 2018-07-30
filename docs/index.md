@@ -24,8 +24,8 @@ featureFlags:
     <p>Collaborate across your organization with tools designed to start small and scale up as needed. Azure DevOps Services provides free private Git repositories, configurable Kanban boards, interactive backlogs, simple planning tools, high-performance pipelines, and extensive automated and cloud-based load testing.</p>
 <a href="#start"> </a>
 <p>Sign up and quickly get started with an Azure DevOps service. Add other services as you need them. Or, get started with the suite of services. </p><br/>
-         <ul id="on-boarding" class="cardsY panelContent featuredContent">
-            <li class="fullspan" style="margin-top:0;">             
+<ul id="on-boarding" class="cardsY panelContent featuredContent">
+<li class="fullspan" style="margin-top:0;">             
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -129,7 +129,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Repos</h3>
-                                                    <p>Use Git repositories, pull requests, and code review. to collaborate on code and then integrate with CI/CD to build and deploy your apps.</p>
+                                                    <p>Use Git repositories, pull requests, and code review and then integrate with CI/CD to build and deploy your apps.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -148,7 +148,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Azure DevOps Pipelines</h3>
-                                                    <p>Test and deploy your code to production at lightning speed with high-performance pipelines. Start small and scale up as needed.</p>
+                                                    <p>Test and deploy your apps  with high-performance pipelines. Start small and scale up as needed.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -167,7 +167,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Azure DevOps Artifacts</h3>
-                                                    <p>Use package management to share code across your enterprise and support continuous integration and deployment of your apps.</p>
+                                                    <p>Share code with others and across your enterprise and support continuous integration and deployment of your apps.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -186,7 +186,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Azure DevOps Test Center</h3>
-                                                    <p>Test early and often to release your app with confidence. Use Test Center to setup test plans and track and report manual tests, run automated test suites, and run cloud-based load tests.</p>
+                                                    <p>Test early and often. Setup test plans and track and report manual tests, run automated test suites and cloud-based load tests.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -194,10 +194,14 @@ featureFlags:
                                 </a>
                             </li>
                         </ul>
+       </li>
+   </ul>
 <a id="devops-services-supplemental" />
 <h2>Azure DevOps Services: Shared Features</h2>
 <p>Share information and gain insights using Wikis, Dashboards, and Analytics plus other features available to all Azure DevOps Services. </p><br/>
-                        <ul id="overview" class="cardsY panelContent featuredContent">
+<ul class="fullspan pivots">
+<li>
+                        <ul id="overview" class="cardsA">
                             <li>
                                 <a href="/vsts/project/wiki/project-vision-status">
                                     <div class="cardSize">
@@ -371,6 +375,8 @@ featureFlags:
                                 </a>
                             </li>  
                         </ul>
+</li>
+</ul>
 <a id="devops-services-settings" />
 <h2>Azure DevOps Services: Administrative Settings</h2>
 <p>Configure and customize resources to support your development, deployment, planning, and tracking. </p><br/>
