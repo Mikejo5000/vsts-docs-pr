@@ -64,23 +64,27 @@ https://github.com/adventworks/dotnetcore-sample
 1. After you have the sample code in your own repository, create a build pipeline and select the **ASP.NET Core** template. This automatically adds the tasks that you typically need to build an ASP.NET Core app.
 
 1. Select **Process** under the **Tasks** tab of the build pipeline editor, and change its properties as follows:
-  * **Agent queue:** `Hosted Linux`
-  * **Projects to test:** `**/*[Tt]ests/*.csproj`
+   * **Agent queue:** `Hosted Linux`
+   * **Projects to test:** `**/*[Tt]ests/*.csproj`
 
 1. Modify the **.NET Core Publish** task in the build pipeline as follows:
-  * **Arguments:** `--configuration $(BuildConfiguration) --output out`
-  * **Zip published projects:** Clear this check box
-  * **Add project name to publish path:** Clear this check box
+   * **Arguments:** `--configuration $(BuildConfiguration) --output out`
+   * **Zip published projects:** Clear this check box
+   * **Add project name to publish path:** Clear this check box
 
 1. Remove the **Publish artifact** task.
 
 1. Add **Docker** task after the **.NET Core Publish** task and configure it as follows to build an image using the **Dockerfile** in the repository:
-  * **Action:** `Build an image`
+   * **Action:** `Build an image`
+   * **Container registry type:** `Container registry`
+   * **Docker registry connection:** Select `New` and create a connection to your Docker hub registry.
 
 1. Add another **Docker** task and configure it as follows to push the image to your Docker hub registry:
-  * **Action:** `Push an image`
-  * **Container registry type:** `Container registry`
-  * **Docker registry connection:** Select `New` and create a connection to your Docker hub registry.
+   * **Action:** `Push an image`
+   * **Container registry type:** `Container registry`
+   * **Docker registry connection:** Select the same connection to your Docker hub registry.
+   * **Qualify Image Name:** Clear this check box
+   * **Image Name:** `[your-Docker-ID]/$(Build.Repository.Name):$(Build.BuildId)`  
 
 Save the pipeline and queue a build to see it in action.
 
