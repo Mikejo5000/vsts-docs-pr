@@ -16,7 +16,7 @@ featureFlags:
 ---
 
 <div id="main" class="v2">
-    <div class="container fullSpan">
+    <div class="container">
 <a href="/vsts/index">Azure DevOps Services</a>
 <h1>Azure DevOps Boards Documentation</h1>
 <p>Start doing agile on your own terms. Azure DevOps Boards gives you configurable Kanban boards, interactive backlogs, simple planning tools, and out-of-the-box support for Scrum-all integrated together for unparalleled traceability and reporting.</p><br/>
@@ -197,22 +197,37 @@ featureFlags:
                                 </a>
                             </li>   
                         </ul>
+
+
+<div class="intro">
+<h3 style="padding-left:0;font-size:1.8rem;">Additional Resources</h2>
 </div>
-</div>
-<div style="clear:left;font-size:100%">
-</div>
-<div class="group fullSpan noBullet cols cols4" style="float:left; margin-top:12px">
-<div style="width:175px;">
-<a href="/vsts/release-notes/index"><img src="https://docs.microsoft.com/media/common/i_whats-new.svg" alt="" />Features Timeline & Release Notes</a>
-</div>
-<div style="width:175px;">
-<a href="/vsts/articles/index"><img src="https://docs.microsoft.com/media/common/i_article.svg" alt="" />Technical Articles</a>
-</div>
-<div style="width:175px;">
-<a href="https://docs.microsoft.com/en-us/azure/devops/"><img src="https://docs.microsoft.com/media/common/i_dev-ops.svg" alt="" />Azure DevOps Resource Center</a>
-</div>
-<div style="width:175px;">
-<a href="/vsts/index-all"><img src="https://docs.microsoft.com//media/common/i_library.svg" alt="" />Index</a>
+<ul class="cardText cols cols4">
+<li class="fullSpan" style="margin-top:0;">
+
+                                <ul class="noBullet">
+                                    <li>
+                                        <a class="barLink" href="/vsts/release-notes/index"><img src="https://docs.microsoft.com/media/common/i_whats-new.svg" alt="" />Features Timeline & Release Notes</a>
+                                    </li>
+                                </ul>
+                                <ul class="noBullet">
+                                    <li>
+                                        <a class="barLink" href="/vsts/articles/index"><img src="https://docs.microsoft.com/media/common/i_article.svg" alt="" />Technical Articles</a>
+                                    </li>
+                                </ul>
+                                <ul class="noBullet">
+                                    <li>
+                                        <a class="barLink"  href="https://docs.microsoft.com/en-us/azure/devops/"><img src="https://docs.microsoft.com/media/common/i_dev-ops.svg" alt="" />Azure DevOps Resource Center</a>
+                                    </li>
+                                </ul>
+                                <ul class="noBullet">
+                                    <li>
+                                        <a class="barLink" href="/vsts/index-all"><img src="https://docs.microsoft.com//media/common/i_library.svg" alt="" />Index</a>
+                                    </li>
+                                </ul>
+</li>
+</ul>
+
 </div>
 </div>
 
