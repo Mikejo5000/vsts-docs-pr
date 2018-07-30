@@ -65,7 +65,7 @@ featureFlags:
                                 </a>
 </td>
 <td width="25%">
-a href="/vsts/work/backlogs/index">
+<a href="/vsts/work/backlogs/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
