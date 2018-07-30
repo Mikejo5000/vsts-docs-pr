@@ -19,10 +19,10 @@ featureFlags:
 
 <div id="main" class="v2">
 <div class="container">
-<a href="/vsts/index">Docs</a>   Azure Devops Boards
+<a href="/vsts/index">Docs</a>&nbsp;&nbsp;&nbsp;Azure Devops Boards
 <h1>Azure DevOps Boards Documentation</h1>
-<p>Azure DevOps Boards provides the tools you need to do agile on your terms. You get configurable Kanban boards, interactive backlogs, simple planning tools, and out-of-the-box support for Scrum, along with unparalleled traceability and reporting.</p><br/>
-<ul id="agile" class="pivots">
+<p>Azure DevOps Boards provides the tools you need to do agile on your terms. Configure your Kanban boards, interact with your backlogs, and work with out-of-the-box support for Scrum.</p><br/>
+<ul class="pivots cols cols4">
 <li class="fullSpan" style="margin-top:0;">
 <ul class="cardsA">
                             <li>
@@ -204,6 +204,7 @@ featureFlags:
 </li>
 </ul>
 <h3 style="padding-left:0;font-size:1.8rem;">Additional Resources</h3>
+<!---
 <ul class="cardText cols cols4">
 <li class="fullSpan" style="margin-top:0;">
 <ul class="noBullet">
@@ -228,9 +229,25 @@ featureFlags:
                                 </ul>
 </li>
 </ul>
+
+-->
+
+<table border="0">
+<tr><td>
+<a class="barLink" href="/vsts/release-notes/index"><img src="https://docs.microsoft.com/media/common/i_whats-new.svg" alt="" />Features Timeline & Release Notes</a>
+</td></tr>
+<tr><td>
+<a class="barLink" href="/vsts/articles/index"><img src="https://docs.microsoft.com/media/common/i_article.svg" alt="" />Technical Articles</a>
+</td></tr>
+<tr><td>
+<a class="barLink"  href="https://docs.microsoft.com/en-us/azure/devops/"><img src="https://docs.microsoft.com/media/common/i_dev-ops.svg" alt="" />Azure DevOps Resource Center</a>
+</td></tr>
+<tr><td>
+<a class="barLink" href="/vsts/index-all"><img src="https://docs.microsoft.com//media/common/i_library.svg" alt="" />Index</a>
+</td></tr>
+</table>
+
 </div>
 </div>
-
-
 
 
