@@ -15,18 +15,11 @@ Azure DevOps Pipelines is the quickest, easiest, and safest way to automate buil
 
 ## What can Pipelines do?
 
-Maybe a list or a table that has things like:
+> **ELBATK NOTE**: AKA, what problems do I have that I can solve with Pipelines
 
-* Automate building and testing of your project to ensure it stays up to date and error-free.
-* Automate the deployment of your built and tested project to numerous targets such as an app store, or a package management respository.
-* Automate packaging of your project to make the newest version available to all users.
-* more...
+### Automate building and testing of your project to ensure it stays up to date and error-free
 
-> ELBATK NOTE: AKA, what problems do I have that I can solve with Pipelines
+### Automate the deployment of your built and tested project to numerous targets such as an app store, or a package management respository
 
-### App developer that wants to push weekly updates to the app store
-
-### .NET developer that ships their code via packages
-
-### more.. need to talk to PMs here to get good scenarios that would convince people to use Pipelines
+### Automate packaging of your project to make the newest version available to all users
 
