@@ -19,11 +19,11 @@ featureFlags:
 
 <div id="main" class="v2">
 <div class="container">
-<a href="/vsts/index">Docs</a>Azure Devops Boards
+<a href="/vsts/index">Docs</a>   Azure Devops Boards
 <h1>Azure DevOps Boards Documentation</h1>
-<p>Start doing agile on your own terms. Azure DevOps Boards gives you configurable Kanban boards, interactive backlogs, simple planning tools, and out-of-the-box support for Scrum-all integrated together for unparalleled traceability and reporting.</p><br/>
+<p>Azure DevOps Boards provides the tools you need to do agile on your terms. You get configurable Kanban boards, interactive backlogs, simple planning tools, and out-of-the-box support for Scrum, along with unparalleled traceability and reporting.</p><br/>
 <ul id="agile" class="pivots">
-<li>
+<li class="fullSpan" style="margin-top:0;">
 <ul class="cardsA">
                             <li>
                                 <a href="/vsts/work/work-items/index">
@@ -203,9 +203,7 @@ featureFlags:
                         </ul>
 </li>
 </ul>
-<div class="intro">
-<h3 style="padding-left:0;font-size:1.8rem;">Additional Resources</h2>
-</div>
+<h3 style="padding-left:0;font-size:1.8rem;">Additional Resources</h3>
 <ul class="cardText cols cols4">
 <li class="fullSpan" style="margin-top:0;">
 <ul class="noBullet">
