@@ -17,11 +17,11 @@ If you're not sure if Pipelines is right for your needs, read [Why Use Azure Dev
 
 ## What is Azure DevOps Pipelines?
 
-There are two main components of Pipelines: Continuous Integration (CI) and Continous Delivery (CD).
+There are two main parts of Pipelines: Continuous Integration (CI) and Continous Delivery (CD).
 
-**Continous Integration (CI)**: CI is the practice used by development teams to automate the merging and testing of code. Implementing CI helps to catch bugs early in the development cycle, which makes them less expensive to fix. Automated tests execute as part of the CI process to ensure quality. Artifacts are produced from CI systems and fed to release pipelines to drive frequent deployments.
+**Continous Integration (CI)**: CI is the practice used by development teams to simplify the merging and testing of code. CI helps to catch bugs or problems early in the development cycle, which makes them easier and faster to fix. Automated tests are run as part of the CI process to ensure quality. Items known as "artifacts" are produced from CI systems and used by the **Continuous Delivery** release pipelines to drive automatic deployments.
 
-**Continuous Delivery (CD)**: CD is a process by which code is built, tested, and deployed to one or more test and production environments. Deploying and testing in multiple environments drives quality. CI systems produce the deployable artifacts including infrastructure and apps. Automated release pipelines consume these artifacts to release new versions and fixes to existing systems. Monitoring and alerting systems run continually to drive visibility into the entire CD process.
+**Continuous Delivery (CD)**: CD is a process by which code is built, tested, and deployed to one or more test and production environments. Deploying and testing in multiple environments drives quality. CI systems produce the deployable artifacts, including infrastructure and apps, automated release pipelines consume these artifacts to release new versions and fixes to existing systems. Monitoring and alerting systems run constantly to drive visibility into the entire CD process and to ensure errors are caught often and early.
 
 ## Does Pipelines work with my language and tools?
 
@@ -31,7 +31,7 @@ You can use practically any language with Azure DevOps Pipelines, including **Ja
 
 ### Version control systems
 
-The starting point for configuring CI and CD for your applications is to have your source code in a version control system. Pipelines supports two forms of version control: **Git and Team Foundation Version Control.**
+The starting point for using CI and CD practices for your applications is to have your source code in a version control system. Pipelines supports two forms of version control: **Git and Team Foundation Version Control.**
 
 ### Application types
 
