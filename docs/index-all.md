@@ -20,7 +20,7 @@ featureFlags:
 <p>Access get started guides, user guides, administrative resources, API references, and other resources.</p>
 <h2 id="user-guides">User and Administrative Guides</h2>
 <table border="0">
-<tbody style="padding-left:0;font-size:.8rem;">
+<tbody class="noBullet" style="padding-left:0;font-size:.9rem;">
 <tr><td width="25%">
                         <h3>Get Started Guides</h3>
                         <ul class="noBullet">
@@ -223,7 +223,59 @@ featureFlags:
 <div style="clear:left;font-size:100%">
 </div>
 -->
-<h2 id="deploy">Deploy to Azure</h2>
+<h2 id="deploy">Development and Deployment Resources</h2>
+<table border="0">
+<tbody class="noBullet" style="padding-left:0;font-size:.9rem;">
+<tr>
+<td width="25%">
+                        <h3>IDEs</h3>
+                        <ul class="noBullet">
+                            <li><a href="/visualstudio">Visual Studio</a></li>
+                            <li><a href="/vsts/java/vscode-extension">Visual Studio Code</a></li>
+                            <li><a href="/vsts/java/index">Visual Studio</a></li>
+                            <li><a href="/vsts/java/download-intellij-plug-in">IntelliJ</a></li>
+                            <li><a href="/vsts/java/download-android-studio-plug-in">Android Studio</a></li>
+                            <li><a href="/vsts/java/download-eclipse-plug-in">Eclipse/Team Explorer Everywhere</a></li>
+                        </ul>
+</td>
+<td width="25%">
+                        <h3>Azure DevOps Project</h3>
+                        <ul class="noBullet">
+                            <li><a href="/azure/devops-project/azure-devops-project-aspnet-core">ASP.NET Code</a></li>
+                            <li><a href="/azure/devops-project/azure-devops-project-nodejs">Node.js</a></li>
+                            <li><a href="/azure/devops-project/azure-devops-project-java">Java</a></li>
+                            <li><a href="/azure/devops-project/azure-devops-project-python">Python</a></li> 
+                            <li><a href="/azure/devops-project/azure-devops-project-php">PHP</a></li>
+                            <li><a href="/azure/devops-project/azure-devops-project-ruby">Ruby</a></li>
+                            <li><a href="/azure/devops-project/azure-devops-project-go">Go</a></li> 
+                        </ul>
+</td>
+<td width="25%">
+                        <h3>Web App Deployment</h3>
+                        <ul class="noBullet">
+                            <li><a href="/vsts/pipelines/targets/webapp">Azure Web App Deployment</a></li>
+                            <li><a href="/vsts/pipelines/apps/cd/deploy-webdeploy-iis-deploygroups">Windows Virtual Machine</a></li>
+                            <li><a href="/vsts/pipelines/apps/cd/deploy-docker-webapp">Azure Web App for Containers</a></li>
+                        </ul>
+</td>
+<td width="25%">
+                        <h3>Command-line tools</h3>
+                        <ul class="noBullet">
+                            <li><a href="/vsts/git/command-prompt">Git commands</a></li>
+                            <li><a href="/vsts/tfvc/use-team-foundation-version-control-commands">TFVC commands</a></li>
+                            <li><a href="/cli/vsts/overview">VSTS CLI</a></li>
+                        </ul>
+                        <h3>Task-specific clients</h3>
+                        <ul class="noBullet">
+                            <li><a href="/vsts/test/provide-stakeholder-feedback">Test & Feedback extension</a></li>
+                            <li><a href="/vsts/project/feedback/give-feedback">Microsoft Feedback Client</a></li>
+                        </ul>
+</td>
+</tr>
+</tbody>
+</table>
+
+<!---
 <div class="group" class="cardText" style="float:left;width:250px">
                         <h3>Azure DevOps Project</h3>
                         <ul class="noBullet">
@@ -246,6 +298,7 @@ featureFlags:
        </div>
 <div style="clear:left;font-size:100%">
 </div>
+<!---
 <h2 id="admin">Marketplace and Extensions</h2>
 <div class="group" class="cardText" style="float:left;width:250px">
                         <h3>Discover & Manage Extensions</h3>
@@ -266,6 +319,7 @@ featureFlags:
        </div>
 <div style="clear:left;font-size:100%">
 </div>
+
 <h2 id="sdks">IDEs, SDKs, CLIs and Toolkits</h2>
 <div class="group" class="cardText" style="float:left;width:250px">
                         <h3>IDEs</h3>
@@ -295,6 +349,7 @@ featureFlags:
        </div>
 <div style="clear:left;font-size:100%">
 </div>
+-->
 <h2 id="additional">DevOps Resource Center</h2>
        <div class="group" class="cardText" style="float:left;width:250px">
                         <h3>What is?</h3>

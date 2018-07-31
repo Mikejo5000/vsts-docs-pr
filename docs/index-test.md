@@ -144,6 +144,21 @@ featureFlags:
                         </ul>
      </div>
 </div>
-<a href="/vsts/index-all">
-<h3>Azure DevOps Services Index</h3>
-</a>
+<h3 style="padding-left:0;">Additional Resources</h3>
+<table border="0">
+<tbody style="padding-left:0;font-size:.8rem;">
+<tr><td width="25%">
+<a class="barLink" href="/vsts/release-notes/index"><img src="https://docs.microsoft.com/media/common/i_whats-new.svg" alt="" />Features Timeline & Release Notes</a>
+</td>
+<td width="25%">
+<a class="barLink" href="/vsts/articles/index"><img src="https://docs.microsoft.com/media/common/i_article.svg" alt="" />Technical Articles</a>
+</td>
+<td width="25%">
+<a class="barLink"  href="https://docs.microsoft.com/en-us/azure/devops/"><img src="https://docs.microsoft.com/media/common/i_dev-ops.svg" alt="" />Azure DevOps Resource Center</a>
+</td>
+<td width="25%">
+<a class="barLink" href="/vsts/index-all"><img src="https://docs.microsoft.com//media/common/i_library.svg" alt="" />Index</a>
+</td>
+</tr>
+</tbody>
+</table>
