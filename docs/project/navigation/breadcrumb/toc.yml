@@ -1,10 +1,10 @@
-- name: VSTS & TFS
+- name: Azure DevOps Services
   tocHref: /vsts/
   topicHref: /vsts/index
   items: 
-  - name: Project
+  - name: Additional Resources
     tocHref: /vsts/
-    topicHref: /vsts/index#pivot=apps&panel=overview
+    topicHref: /vsts/index#additional-resources
     items:
     - name: Navigation Basics
       tocHref: /vsts/

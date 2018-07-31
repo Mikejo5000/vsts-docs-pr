@@ -53,11 +53,11 @@ featureFlags:
                             <a href="/vsts/work/backlogs/office/create-your-backlog-tasks-using-project">Project</a><br/>
                             <a href="/vsts/work/backlogs/office/storyboard-your-ideas-using-powerpoint">PowerPoint Storyboarding</a></p>
                        <h3>Azure Repos</h3>
-                            <p><a href="/vsts/git/index">Git Repositories</a><br/>
-                            <a href="/vsts/git/tutorial/pullrequest">Pull Requests</a><br/>
-                            <a href="/vsts/git/concepts/forks">Forks</a><br/>
-                            <a href="/vsts/git/branch-policies">Branch Policies</a><br/>
-                            <a href="/vsts/tfvc/index">TFVC</a></p>
+                            <p><a href="/vsts/repos/git/index">Git Repositories</a><br/>
+                            <a href="/vsts/repos/git/tutorial/pullrequest">Pull Requests</a><br/>
+                            <a href="/vsts/repos/git/concepts/forks">Forks</a><br/>
+                            <a href="/vsts/repos/git/branch-policies">Branch Policies</a><br/>
+                            <a href="/vsts/repos/tfvc/index">TFVC</a></p>
                         </ul>
 </td>
 <td width="25%">
@@ -151,11 +151,11 @@ featureFlags:
        <div class="group" class="cardText" style="float:left;width:250px">
                         <h3>Azure Repos</h3>
                         <ul class="noBullet">
-                            <li><a href="/vsts/git/index">Git Repositories</a></li>
-                            <li><a href="/vsts/git/tutorial/pullrequest">Pull Requests</a></li>
-                            <li><a href="/vsts/git/concepts/forks">Forks</a></li>
-                            <li><a href="/vsts/git/branch-policies">Branch Policies</a></li>
-                            <li><a href="/vsts/tfvc/index">TFVC</a></li>
+                            <li><a href="/vsts/repos/git/index">Git Repositories</a></li>
+                            <li><a href="/vsts/repos/git/tutorial/pullrequest">Pull Requests</a></li>
+                            <li><a href="/vsts/repos/git/concepts/forks">Forks</a></li>
+                            <li><a href="/vsts/repos/git/branch-policies">Branch Policies</a></li>
+                            <li><a href="/vsts/repos/tfvc/index">TFVC</a></li>
                         </ul>
                         <h3>Azure Test Plans</h3>
                         <ul class="noBullet">
@@ -242,8 +242,8 @@ featureFlags:
 </td>
 <td width="25%">
                         <h3>Command-line and other tools</h3>
-                            <p><a href="/vsts/git/command-prompt">Git commands</a><br/>
-                            <a href="/vsts/tfvc/use-team-foundation-version-control-commands">TFVC commands</a><br/>
+                            <p><a href="/vsts/repos/git/command-prompt">Git commands</a><br/>
+                            <a href="/vsts/repos/tfvc/use-team-foundation-version-control-commands">TFVC commands</a><br/>
                             <a href="/cli/vsts/overview">VSTS CLI</a><br/> 
                             <a href="/vsts/demo-gen">VSTS Demo Generator</a></p>
 </td>
@@ -310,8 +310,8 @@ featureFlags:
        <div class="group" class="cardText" style="float:left;width:250px">
                         <h3>Command-line tools</h3>
                         <ul class="noBullet">
-                            <li><a href="/vsts/git/command-prompt">Git commands</a></li>
-                            <li><a href="/vsts/tfvc/use-team-foundation-version-control-commands">TFVC commands</a></li>
+                            <li><a href="/vsts/repos/git/command-prompt">Git commands</a></li>
+                            <li><a href="/vsts/repos/tfvc/use-team-foundation-version-control-commands">TFVC commands</a></li>
                             <li><a href="/cli/vsts/overview">VSTS CLI</a></li>
                         </ul>
        </div>

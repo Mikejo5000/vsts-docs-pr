@@ -1,9 +1,9 @@
-- name: Azure Devops
+- name: Azure DevOps Services
   tocHref: /vsts/
   topicHref: /vsts/index
   items: 
-  - name: Admin
-    tocHref: /vsts/
+  - name: Management Tools
+    tocHref: /vsts/organizations/
     topicHref: /vsts/index#devops-services-settings
     items:
     - name: "Scale & Configure Teams"

@@ -1,8 +1,8 @@
-- name: Azure Devops
+- name: Azure DevOps Services
   tocHref: /vsts/
   topicHref: /vsts/index
   items: 
-  - name: Collaborate
+  - name: Shared Features
     tocHref: /vsts/
     topicHref: /vsts/index#devops-services-supplemental
     items:

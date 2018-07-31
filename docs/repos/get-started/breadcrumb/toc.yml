@@ -1,8 +1,8 @@
-- name: Azure Devops Services
+- name: Azure DevOps Services
   tocHref: /vsts/
   topicHref: /vsts/index
   items: 
-  - name: Repos
+  - name: Azure Repos
     tocHref: /vsts/
     topicHref: /vsts/index-repos
     items:

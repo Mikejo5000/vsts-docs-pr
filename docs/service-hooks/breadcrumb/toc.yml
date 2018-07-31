@@ -6,6 +6,6 @@
     tocHref: /vsts/
     topicHref: /vsts/index#devops-services-settings
     items:
-    - name: Billing
-      tocHref: /vsts/billing/
-      topicHref: /vsts/billing/index
+    - name: Service Hooks
+      tocHref: /vsts/
+      topicHref: /vsts/service-hooks/index

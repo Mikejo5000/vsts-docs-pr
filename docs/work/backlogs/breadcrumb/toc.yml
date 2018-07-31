@@ -1,11 +1,11 @@
-- name: Azure Devops
+- name: Azure DevOps Services
   tocHref: /vsts/
   topicHref: /vsts/index
   items: 
-  - name: Agile
+  - name: Azure Boards
     tocHref: /vsts/
     topicHref: /vsts/index-work
     items:
-    - name: "Backlogs"
+    - name: Backlogs
       tocHref: /vsts/
       topicHref: /vsts/work/backlogs/index

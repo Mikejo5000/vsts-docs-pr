@@ -1,30 +1,30 @@
-- name: Azure Devops Services
+- name: Azure DevOps Services
   tocHref: /vsts/
   topicHref: /vsts/index
   items:
   - name: Get Started Guides
     tocHref: /vsts/user-guide/
     topicHref: /vsts/user-guide/index
-  - name: Repos Get Started Guide
+  - name: Azure Repos Get Started Guide
     tocHref: /vsts/repos/get-started/
     topicHref: /vsts/repos/get-started/index
-  - name: Boards (Agile) Get Started Guide
+  - name: Azure Boards Get Started Guide
     tocHref: /vsts/work/get-started/
     topicHref: /vsts/work/get-started/index
-  - name: Pipelines Get Started Guide
+  - name: Azure Pipelines Get Started Guide
     tocHref: /vsts/pipelines/get-started/
     topicHref: /vsts/pipelines/get-started/index
-  - name: Repos
-    tocHref: /vsts/git/
+  - name: AzureRepos
+    tocHref: /vsts/repos/git/
     topicHref: /vsts/index-repos
     items:
     - name: Git
-      tocHref: /vsts/git/
-      topicHref: /vsts/git/index
+      tocHref: /vsts/repos/git/
+      topicHref: /vsts/repos/git/index
     - name: TFVC
-      tocHref: /vsts/tfvc/
-      topicHref: /vsts/tfvc/index
-  - name: Pipelines
+      tocHref: /vsts/repos/tfvc/
+      topicHref: /vsts/repos/tfvc/index
+  - name: AzurePipelines
     tocHref: /vsts/pipelines/
     topicHref: /vsts/index-pipelines
     items:
@@ -40,7 +40,7 @@
     - name: Continuous Testing
       tocHref: /vsts/pipelines/
       topicHref: /vsts/pipelines/index
-  - name: Testing
+  - name: Azure Test Plans
     tocHref: /vsts/test/
     topicHref: /vsts/index-test
     items:
@@ -53,7 +53,7 @@
     - name: Unit Testing
       tocHref: https://docs.microsoft.com/visualstudio/test/improve-code-quality/
       topicHref: https://docs.microsoft.com/visualstudio/test/unit-test-your-code
-  - name: Boards (Agile)
+  - name: Azure Boards 
     tocHref: /vsts/work/
     topicHref: /vsts/index-work
     items:
@@ -78,7 +78,7 @@
   - name: Java 
     tocHref: /vsts/java/
     topicHref: /vsts/java/index 
-  - name: "VSTS Demo Generator"
+  - name: Azure DevOps Demo Generator
     tocHref: /vsts/demo-gen/
     topicHref: /vsts/demo-gen/index  
   - name: Shared Features
@@ -109,7 +109,7 @@
     - name: Feedback
       tocHref: /vsts/project/feedback/
       topicHref: /vsts/project/feedback/index
-  - name: "Administation & Settings"
+  - name: Management Tools
     tocHref: /vsts/
     topicHref: /vsts/index#devops-services-setting
     items:

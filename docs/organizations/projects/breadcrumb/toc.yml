@@ -2,7 +2,7 @@
   tocHref: /vsts/
   topicHref: /vsts/index
   items: 
-  - name: Admin
+  - name: Management Tools
     tocHref: /vsts/
     topicHref: /vsts/index#devops-services-settings
     items:

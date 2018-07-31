@@ -1,10 +1,10 @@
-- name: Azure Devops
+- name: Azure DevOps Services
   tocHref: /vsts/
   topicHref: /vsts/index
   items: 
-  - name: Search
+  - name: Additional Resources
     tocHref: /vsts/
-    topicHref: /vsts/index#devops-services-supplemental
+    topicHref: /vsts/index#additional-resources
     items:
     - name: Search
       tocHref: /vsts/

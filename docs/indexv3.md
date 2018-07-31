@@ -92,7 +92,7 @@ featureFlags:
                                             <div class="cardText">
                                                 <h3>Add your code</h3>
                                                 <ul class="noBullet">
-                                                    <li><a class="barLink" href="/vsts/git/">Git Repositories</a></li>
+                                                    <li><a class="barLink" href="/vsts/repos/git/">Git Repositories</a></li>
                                                     <li><a class="barLink" href="/vsts/java/">Get started with Java</a></li>
                                                 </ul>
                                             </div>
@@ -240,11 +240,11 @@ featureFlags:
                                 <div class="group">
                                     <h3>Code (Repos)</h3>
                                     <ul>
-                                        <li><a class="barLink" href="/vsts/git/index">Git Repositories</a></li>
-                                        <li><a class="barLink" href="/vsts/git/tutorial/pullrequest">Pull Requests</a></li>
-                                        <li><a class="barLink" href="/vsts/git/concepts/forks">Forks</a></li>
-                                        <li><a class="barLink" href="/vsts/git/branch-policies">Branch Policies</a></li>
-                                        <li><a class="barLink" href="/vsts/tfvc/index">TFVC</a></li>
+                                        <li><a class="barLink" href="/vsts/repos/git/index">Git Repositories</a></li>
+                                        <li><a class="barLink" href="/vsts/repos/git/tutorial/pullrequest">Pull Requests</a></li>
+                                        <li><a class="barLink" href="/vsts/repos/git/concepts/forks">Forks</a></li>
+                                        <li><a class="barLink" href="/vsts/repos/git/branch-policies">Branch Policies</a></li>
+                                        <li><a class="barLink" href="/vsts/repos/tfvc/index">TFVC</a></li>
                                     </ul>
                                     <h3>Build & Release (Pipelines)</h3>
                                     <ul>
@@ -709,7 +709,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/git/pull-requests">
+                                <a href="/vsts/repos/git/pull-requests">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -728,7 +728,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/git/concepts/forks">
+                                <a href="/vsts/repos/git/concepts/forks">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -747,7 +747,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/git/branch-policies">
+                                <a href="/vsts/repos/git/branch-policies">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">

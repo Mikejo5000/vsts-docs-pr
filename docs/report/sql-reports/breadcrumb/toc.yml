@@ -1,10 +1,10 @@
-- name: Azure Devops
+- name: Visual Studio Team Foundation Server
   tocHref: /vsts/
-  topicHref: /vsts/index
+  topicHref: /vsts/index-tfs
   items: 
   - name: Reporting
     tocHref: /vsts/
-    topicHref: /vsts/index#devops-services-supplemental
+    topicHref: /vsts/index-tfs#devops-services-supplemental
     items:
     - name: SQL Server Reporting (TFS)
       tocHref: /vsts/
