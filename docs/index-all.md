@@ -236,12 +236,11 @@ featureFlags:
                             <a href="/azure/devops/agile/what-is-agile">What is Agile?</a><br/>
                             <a href="/azure/devops/agile/what-is-scrum">What is Scrum?</a><br/>
                             <a href="/azure/devops/agile/scale-agile-large-teams">Scale Agile to Large Teams</a><br/>
-                            <a href="//azure/devops/git/git-at-scale">Git at Scale</a>br/>
+                            <a href="//azure/devops/git/git-at-scale">Git at Scale</a><br/>
                             <a href="/azure/devops/devops-at-microsoft/">DevOps at Microsoft</a><br/>
                             <a href="/azure/devops/events-and-talks/">Events and Talks</a></p>
 </td>
 <td width="25%">
-
                         <h3>Command-line and other tools</h3>
                             <p><a href="/vsts/git/command-prompt">Git commands</a><br/>
                             <a href="/vsts/tfvc/use-team-foundation-version-control-commands">TFVC commands</a><br/>
