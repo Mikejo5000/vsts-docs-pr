@@ -33,7 +33,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/media/common/i_download-install.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">

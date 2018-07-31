@@ -30,7 +30,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/media/common/i_download-install.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -140,25 +140,6 @@ featureFlags:
                                 </a>
 </td>
 <td width="25%">
-                                <a href="/vsts/pipelines/agents/agents">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="_img/index/i_agent.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Hosted &amp; Private Agents</h3>
-                                                    <p>Add agents as needed to support your cloud build processes.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-</td>
-<td width="25%">
                                 <a href="/vsts/organizations/settings/index#repos">
                                     <div class="cardSize">
                                         <div class="cardPadding">
@@ -176,6 +157,9 @@ featureFlags:
                                         </div>
                                     </div>
                                 </a>
+</td>
+<td width="25%">
+&nbsp;&nbsp;&nbsp;
 </td>
 </tr>
 </table>

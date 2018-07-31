@@ -16,14 +16,12 @@ featureFlags:
 ---
 
 
-<a href="/vsts/index">Azure DevOps Services</a>
 <div id="main" class="v2">
     <div class="container">
-    <h1>Azure DevOps Team Foundation Server (TFS) Documentation</h1>
+    <h1>Visual Studio Team Foundation Server (TFS) Documentation</h1>
     <p>Collaborate across your organization with tools designed to start small and scale up as needed. TFS provides source control, configurable Kanban boards, interactive backlogs, simple planning tools, and high-performance pipelines.</p>
 <a href="#start"> </a>
 <h2 id="start">Get Started with Team Foundation Server</h2>
-<p>Install or upgrade your on-premises TFS.  </p><br/>
          <ul id="on-boarding" class="cardsY panelContent featuredContent">
                             <li>
                                 <a href="/tfs/server/install/get-started">
@@ -66,7 +64,6 @@ featureFlags:
                         </ul>
 
 <h2>Services</h2>
-<p>Find quickstarts, samples, and tutorials for each TFS service.</p><br/>
 <table border="0" class="cardsA">
 <tr>
 <td width="33%">
@@ -154,7 +151,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/i_exporatory-testing.svg" alt="" />
+                                                        <img src="_img/index/i_exploratory-testing.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -173,7 +170,6 @@ featureFlags:
 </table>
 <a id="devops-services-supplemental" />
 <h2>Shared Features</h2>
-<p>Share information and gain insights using Wikis,dashboards, and SQL Reporting Services. </p><br/>
 <table border="0" class="cardsA">
 <tr>
 <td width="25%">
@@ -257,7 +253,6 @@ featureFlags:
 
 <a id="devops-services-settings" />
 <h2>Administrative Tools</h2>
-<p>Configure and customize resources. </p><br/>
 <table border="0">
 <tr>
 <td width="25%">
@@ -305,9 +300,11 @@ featureFlags:
 
 <a id="devops-services-extensions" />
 <h2>Marketplace and Extensions</h2>
-<p>Discover, install, and build add-ons to customize and extend your Azure DevOps Experiences. </p><br/>
+<p>Discover, install, and build add-ons to customize and extend your Azure DevOps Experiences.</p><br/>
+
 <table border="0">
-<tr><td width="25%">
+<tr>
+<td width="25%">
 <a class="barLink" href="/vsts/marketplace/overview"><img src="https://docs.microsoft.com/media/common/i_extend.svg" alt="" />Discover Extensions</a>
 </td>
 <td width="25%">
@@ -316,6 +313,7 @@ featureFlags:
 <td width="25%">
 <a class="barLink" href="/vsts/integrate/index"><img src="_img/index/i_build.svg" alt="" />Build Apps</a>
 </td>
+<td width="25%">
 <a class="barLink" href="/rest/api/vsts/index"><img src="_img/index/logo_REST.svg" alt="" />REST APIs</a>
 </td>
 </tr>
