@@ -15,21 +15,16 @@ featureFlags:
 - clicktale 
 ---
 
-<a href="/vsts/index">Azure DevOps Services</a>
 
 <div id="agile" class="v2">
-    <div class="container">
+<div class="container">
 <a href="/vsts/index">Azure DevOps Services</a>&nbsp;&nbsp;&nbsp;Azure Pipelines
-        <h1>Azure Pipelines Documentation</h1>
+<h1>Azure Pipelines Documentation</h1>
 <p>Test and deploy your code with high-performance pipelines. Start small and scale up as needed.</p>
-
 <table border="0" class="cardsA">
 <tr>
 <td width="25%">
-                        <a href="#delivery">Build and Release </a>
-                        <ul id="delivery" class="cardsY panelContent featuredContent">
-                            <li>
-                                <a href="/vsts/pipelines/index">
+                               <a href="/vsts/pipelines/get-started/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -39,13 +34,14 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Build &amp; Release</h3>
-                                                    <p>Implement continuous integration and continuous deployment.</p>
+                                                    <h3>Azure Pipelines Get Started</h3>
+                                                    <p>Sign up and get started using Azure Pipelines.</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </a>
+
 </td>
 <td width="25%">
                                <a href="/vsts/pipelines/index">

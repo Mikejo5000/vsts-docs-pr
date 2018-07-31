@@ -24,6 +24,198 @@ featureFlags:
 <p>Configure your Kanban boards, interact with your backlogs, and work with out-of-the-box support for Scrum.</p><br/>
 
 
+<table border="0" class="cardsA">
+<tr>
+<td width="25%">
+<a href="/vsts/work/work-items/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com/media/common/i_tasks.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Work Items</h3>
+                                                    <p>Track the features and requirements you're developing, code defects,
+                                                        and issues.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+</td>
+<td width="25%">
+<a href="/vsts/work/kanban/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/i_kanban.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Boards (Kanban)</h3>
+                                                    <p>Manage the continuous flow of work from concept to completion.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+</td>
+<td width="25%">
+<a href="/vsts/work/backlogs/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/i_backlog.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Backlogs</h3>
+                                                    <p>Create and organize your backlog, track features, users stories, and
+                                                        bugs.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+</td>
+<td width="25%">
+<a href="/vsts/work/scrum/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/i_scrum.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Sprints (Scrum)</h3>
+                                                    <p>Plan a sprint, use a task board in daily scrums, monitor sprint burndown.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+</td>
+</tr>
+<tr>
+<td width="25%">
+<a href="/vsts/work/scrum/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/i_scrum.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Sprints (Scrum)</h3>
+                                                    <p>Plan a sprint, use a task board in daily scrums, monitor sprint burndown.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+</td>
+<td width="25%">
+                                <a href="/vsts/organizations/settings/work/inheritance-process-model">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/i_config-tools.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Customization</h3>
+                                                    <p>Configure Agile tools and processes to meet your team's needs.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+</td>
+<td width="25%">
+                                <a href="/vsts/work/scale/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/i_agile.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Agile at Scale</h3>
+                                                    <p>Grow your organization, support autonomous teams, and gain visibility
+                                                        across teams.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+</td>
+<td width="25%">
+                                <a href="/vsts/project/feedback/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com/media/common/i_feedback.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Feedback</h3>
+                                                    <p>Request feedback on your working apps and quickly capture it within a
+                                                        work item form.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+</td>
+</tr>
+<tr>
+<td width="25%">
+                                <a href="/vsts/organizations/settings/index#work">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com/media/common/i_tools.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Settings</h3>
+                                                    <p>Configure resources for Azure DevOps Boards.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+</td>
+<td width="25%">
+&nbsp;&nbsp;&nbsp;
+</td>
+<td width="25%">
+&nbsp;&nbsp;&nbsp;
+</td>
+<td width="25%">
+&nbsp;&nbsp;&nbsp;
+</td>
+</tr>
+</table>
 
 <h3 style="padding-left:0;">Additional Resources</h3>
 <table border="0">

@@ -15,13 +15,12 @@ featureFlags:
 - clicktale 
 ---
 
-<a href="/vsts/index">Azure DevOps Services</a>
+
 <div id="agile" class="v2">
     <div class="container">
 <a href="/vsts/index">Azure DevOps Services</a>&nbsp;&nbsp;&nbsp;Azure Repos
         <h1>Azure Repos Documentation</h1>
 <p>Collaborate on code development using free Git public and private repositories, pull requests, and code review.</p>
-
 <table border="0" class="cardsA">
 <tr>
 <td width="25%">
@@ -152,7 +151,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Settings</h3>
-                                                    <p>Configure resources for Azure DevOps Repos.</p>
+                                                    <p>Create and manage repositories.</p>
                                                 </div>
                                             </div>
                                         </div>
