@@ -674,14 +674,14 @@ featureFlags:
 <a class="barLink" href="/vsts/marketplace/index"><img src="_img/index/i_extensions.svg" alt="" />Manage Extensions</a>
 </td>
 <td width="25%">
-<a class="barLink" href="/tfs/server/index"><img src="https://docs.microsoft.com/media/common/i_server.svg" alt="" />TFS Server Administration</a>
-</td>
-<td width="25%">
 <a class="barLink" href="/vsts/notifications/index"><img src="_img/index/i_alert.svg" alt="" />Notifications</a>
 </td>
 <td width="25%">
 <a class="barLink" href="/vsts/organizations/public/index"><img src="https://docs.microsoft.com/media/common/i_web-color.svg" alt="" />Public Projects</a>
 </td>
+<td width="25%">
+&nbsp;&nbsp;&nbsp;
+</tr>
 </tr>
 </table>
 <!---
@@ -1050,7 +1050,7 @@ featureFlags:
 <a class="barLink"  href="/vsts/project/search/index"><img src="_img/index/i_search.svg" alt="" />Search</a>
 </td>
 <td width="25%">
-<a class="barLink" href="/vsts/organizations/public/index"><img src="https://docs.microsoft.com/media/common/i_web-color.svg" alt="" />Public Projects</a>
+<a class="barLink" href="/tfs/server/index"><img src="https://docs.microsoft.com/media/common/i_server.svg" alt="" />TFS Server Administration</a>
 </td>
 </tr>
 <tr><td width="25%">

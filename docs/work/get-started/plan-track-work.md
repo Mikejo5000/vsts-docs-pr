@@ -1,6 +1,6 @@
 ---
 title: Plan and track work 
-titleSuffix: Azure Devops Services
+titleSuffix: Azure DevOps Services
 description: Begin planning and tracking work in your new team project on Visual Studio Team Services  
 ms.technology: devops-new-user 
 ms.prod: devops

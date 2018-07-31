@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2013'
 
 # Azure DevOps Repos Get Started Guide
 
-**Azure Devops Repos**
+**Azure DevOps Repos**
 
 ## 5-Minute Quickstarts
 

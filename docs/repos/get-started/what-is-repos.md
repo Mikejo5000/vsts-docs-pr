@@ -1,7 +1,7 @@
 ---
 title: Collaborate on code
-titleSuffix: Azure Devops Services
-description: What do you get with Azure Devops Repos  
+titleSuffix: Azure DevOps Services
+description: What do you get with Azure DevOps Repos  
 ms.prod: devops
 ms.technology: devops-new-user
 ms.assetid: 4 
@@ -11,7 +11,7 @@ ms.date: 06/22/2017
 ms.topic: overview
 ---
 
-# What is Azure Devops Repos?
+# What is Azure DevOps Repos?
 
 **Azure DevOps Repos**
 
