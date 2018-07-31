@@ -300,7 +300,7 @@ featureFlags:
 
 <a id="devops-services-extensions" />
 <h2>Marketplace and Extensions</h2>
-<p>Discover, install, and build add-ons to customize and extend your Azure DevOps Experiences.</p><br/>
+<p>Discover, install, and build add-ons to customize and extend features and services.</p><br/>
 
 <table border="0">
 <tr>

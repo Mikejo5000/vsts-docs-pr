@@ -20,7 +20,7 @@ featureFlags:
 <p>Access get started guides, user guides, administrative resources, API references, and other resources.</p>
 <h2 id="user-guides">User and Administrative Guides</h2>
 <table border="0">
-<tbody class="noBullet" style="padding-left:0;font-size:.9rem;">
+<tbody class="noBullet" style="padding-left:0;">
 <tr><td width="25%">
                         <h3>Get Started Guides</h3>
                             <p><a href="/vsts/repos/get-started/index">Azure Repos</a><br/>
@@ -42,16 +42,16 @@ featureFlags:
                         <h3>Azure Boards</h3>
                             <p><a href="/vsts/work/work-items/index">Work Items</a><br/>
                             <a href="/vsts/work/kanban/index">Boards (Kanban)</a><br/>
-                            <<a href="/vsts/work/backlogs/index">Backlogs</a><br/>
-                            <<a href="/vsts/work/scrum/index">Sprints (Scrum)</a><br/>
+                            <a href="/vsts/work/backlogs/index">Backlogs</a><br/>
+                            <a href="/vsts/work/scrum/index">Sprints (Scrum)</a><br/>
                             <a href="/vsts/work/track/index">Queries</a><br/>
                             <a href="/vsts/organizations/settings/work/inheritance-process-model">Customization</a><br/>
                             <a href="/vsts/work/scale/index">Agile at Scale</a><br/>
                             <a href="/vsts/project/feedback/index">Request Feedback</a></p>
                         <h3>Office Integration tools</h3>
                             <p><a href="/vsts/work/backlogs/office/bulk-add-modify-work-items-excel">Excel</a><br/>
-                            <li><a href="/vsts/work/backlogs/office/create-your-backlog-tasks-using-project">Project</a><br/>
-                            <li><a href="/vsts/work/backlogs/office/storyboard-your-ideas-using-powerpoint">PowerPoint Storyboarding</a></p>
+                            <a href="/vsts/work/backlogs/office/create-your-backlog-tasks-using-project">Project</a><br/>
+                            <a href="/vsts/work/backlogs/office/storyboard-your-ideas-using-powerpoint">PowerPoint Storyboarding</a></p>
                        <h3>Azure Repos</h3>
                             <p><a href="/vsts/git/index">Git Repositories</a><br/>
                             <a href="/vsts/git/tutorial/pullrequest">Pull Requests</a><br/>
@@ -93,8 +93,8 @@ featureFlags:
                             <a href="/tfs/server/index">Team Foundation Server</a></p>
                         <h3>Discover & Manage Extensions</h3>
                             <p><a href="/vsts/marketplace/overview">Discover & Manage Extensions</a><br/>
-                            <li><a href="/vsts/service-hooks/index">Service Hooks</a><br/>
-                            <li><a href="/vsts/report/extend-analytics/index">Extend Analytics with OData</a></p>
+                            <a href="/vsts/service-hooks/index">Service Hooks</a><br/>
+                            <a href="/vsts/report/extend-analytics/index">Extend Analytics with OData</a></p>
                         <h3>Build Extensions</h3>
                             <p><a href="/vsts/extend/index">Develop Extensions</a><br/>
                             <a href="/vsts/integrate/index">Build Apps</a><br/>
@@ -205,39 +205,48 @@ featureFlags:
 <tr>
 <td width="25%">
                         <h3>IDEs</h3>
-                            <a href="/visualstudio">Visual Studio</a><br/>
+                            <p><a href="/visualstudio">Visual Studio</a><br/>
                             <a href="/vsts/java/vscode-extension">Visual Studio Code</a><br/>
                             <a href="/vsts/java/index">Visual Studio</a><br/>
                             <a href="/vsts/java/download-intellij-plug-in">IntelliJ</a><br/>
                             <a href="/vsts/java/download-android-studio-plug-in">Android Studio</a><br/>
                             <a href="/vsts/java/download-eclipse-plug-in">Eclipse/Team Explorer Everywhere</a></p> 
-                        
+                        <h3>Task-specific clients</h3>
+                            <p><a href="/vsts/test/provide-stakeholder-feedback">Test & Feedback extension</a><br/>
+                            <a href="/vsts/project/feedback/give-feedback">Microsoft Feedback Client</a></p> 
 </td>
 <td width="25%">
                         <h3>Azure DevOps Project</h3>
-                            <a href="/azure/devops-project/azure-devops-project-aspnet-core">ASP.NET Code</a><br/>
+                            <p><a href="/azure/devops-project/azure-devops-project-aspnet-core">ASP.NET Code</a><br/>
                             <a href="/azure/devops-project/azure-devops-project-nodejs">Node.js</a><br/>
                             <a href="/azure/devops-project/azure-devops-project-java">Java</a><br/>
                             <a href="/azure/devops-project/azure-devops-project-python">Python</a><br/> 
                             <a href="/azure/devops-project/azure-devops-project-php">PHP</a><br/>
                             <a href="/azure/devops-project/azure-devops-project-ruby">Ruby</a><br/>
                             <a href="/azure/devops-project/azure-devops-project-go">Go</a></p> 
-</td>
-<td width="25%">
                         <h3>Web App Deployment</h3>
-                            <a href="/vsts/pipelines/targets/webapp">Azure Web App Deployment</a><br/>
+                            <p><a href="/vsts/pipelines/targets/webapp">Azure Web App Deployment</a><br/>
                             <a href="/vsts/pipelines/apps/cd/deploy-webdeploy-iis-deploygroups">Windows Virtual Machine</a><br/>
-                            <a href="/vsts/pipelines/apps/cd/deploy-docker-webapp">Azure Web App for Containers</a></p> 
-                        <h3>Command-line tools</h3>
-                            <a href="/vsts/git/command-prompt">Git commands</a><br/>
-                            <a href="/vsts/tfvc/use-team-foundation-version-control-commands">TFVC commands</a><br/>
-                            <a href="/cli/vsts/overview">VSTS CLI</a></p> 
+                            <a href="/vsts/pipelines/apps/cd/deploy-docker-webapp">Azure Web App for Containers</a></p> </td>
+<td width="25%">
+<h3 id="devops-center">DevOps Resource Center</h3>
+                            <p><a href="/azure/devops/what-is-devops">What is DevOps?</a><br/>
+                            <a href="/azure/devops/git/what-is-version-control">What is version control?</a><br/>
+                            <a href="/azure/devops/git/what-is-git">What is Git?</a><br/>
+                            <a href="/azure/devops/agile/what-is-agile">What is Agile?</a><br/>
+                            <a href="/azure/devops/agile/what-is-scrum">What is Scrum?</a><br/>
+                            <a href="/azure/devops/agile/scale-agile-large-teams">Scale Agile to Large Teams</a><br/>
+                            <a href="//azure/devops/git/git-at-scale">Git at Scale</a>br/>
+                            <a href="/azure/devops/devops-at-microsoft/">DevOps at Microsoft</a><br/>
+                            <a href="/azure/devops/events-and-talks/">Events and Talks</a></p>
 </td>
 <td width="25%">
-                        
-                        <h3>Task-specific clients</h3>
-                            <a href="/vsts/test/provide-stakeholder-feedback">Test & Feedback extension</a><br/>
-                            <a href="/vsts/project/feedback/give-feedback">Microsoft Feedback Client</a></p> 
+
+                        <h3>Command-line and other tools</h3>
+                            <p><a href="/vsts/git/command-prompt">Git commands</a><br/>
+                            <a href="/vsts/tfvc/use-team-foundation-version-control-commands">TFVC commands</a><br/>
+                            <a href="/cli/vsts/overview">VSTS CLI</a><br/> 
+                            <a href="/vsts/demo-gen">VSTS Demo Generator</a></p>
 </td>
 </tr>
 </tbody>
@@ -287,7 +296,6 @@ featureFlags:
        </div>
 <div style="clear:left;font-size:100%">
 </div>
-
 <h2 id="sdks">IDEs, SDKs, CLIs and Toolkits</h2>
 <div class="group" class="cardText" style="float:left;width:250px">
                         <h3>IDEs</h3>
@@ -317,7 +325,7 @@ featureFlags:
        </div>
 <div style="clear:left;font-size:100%">
 </div>
--->
+
 <h2 id="additional">DevOps Resource Center</h2>
 <table border="0">
 <tbody class="noBullet" style="padding-left:0;font-size:.9rem;">
@@ -341,8 +349,12 @@ featureFlags:
                             <a href="/azure/devops/events-and-talks/">Events and Talks</a><br/>
                             <a href="/vsts/demo-gen">VSTS Demo Generator</a></p>
 </td>
+</td>
+<td width="25%">
+&nbsp;&nbsp;&nbsp;
 </tr>
 </tbody>
 </table>
 
 
+-->
