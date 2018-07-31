@@ -54,7 +54,7 @@ featureFlags:
                             <a href="/vsts/work/backlogs/office/storyboard-your-ideas-using-powerpoint">PowerPoint Storyboarding</a></p>
                        <h3>Azure Repos</h3>
                             <p><a href="/vsts/repos/git/index">Git Repositories</a><br/>
-                            <a href="/vsts/repos/git/tutorial/pullrequest">Pull Requests</a><br/>
+                            <a href="/vsts/repos/git/pullrequest">Pull Requests</a><br/>
                             <a href="/vsts/repos/git/concepts/forks">Forks</a><br/>
                             <a href="/vsts/repos/git/branch-policies">Branch Policies</a><br/>
                             <a href="/vsts/repos/tfvc/index">TFVC</a></p>
@@ -152,7 +152,7 @@ featureFlags:
                         <h3>Azure Repos</h3>
                         <ul class="noBullet">
                             <li><a href="/vsts/repos/git/index">Git Repositories</a></li>
-                            <li><a href="/vsts/repos/git/tutorial/pullrequest">Pull Requests</a></li>
+                            <li><a href="/vsts/repos/git/pullrequest">Pull Requests</a></li>
                             <li><a href="/vsts/repos/git/concepts/forks">Forks</a></li>
                             <li><a href="/vsts/repos/git/branch-policies">Branch Policies</a></li>
                             <li><a href="/vsts/repos/tfvc/index">TFVC</a></li>

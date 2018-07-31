@@ -241,7 +241,7 @@ featureFlags:
                                     <h3>Code (Repos)</h3>
                                     <ul>
                                         <li><a class="barLink" href="/vsts/repos/git/index">Git Repositories</a></li>
-                                        <li><a class="barLink" href="/vsts/repos/git/tutorial/pullrequest">Pull Requests</a></li>
+                                        <li><a class="barLink" href="/vsts/repos/git/pullrequest">Pull Requests</a></li>
                                         <li><a class="barLink" href="/vsts/repos/git/concepts/forks">Forks</a></li>
                                         <li><a class="barLink" href="/vsts/repos/git/branch-policies">Branch Policies</a></li>
                                         <li><a class="barLink" href="/vsts/repos/tfvc/index">TFVC</a></li>

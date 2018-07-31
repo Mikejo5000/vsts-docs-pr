@@ -19,7 +19,7 @@ monikerRange: 'vsts'
 
 After you create a new account and team project in VSTS, you can begin sharing your code with others. 
 
-To work with a Git repo, you clone it to your computer. Cloning a repo creates a complete local copy of the repo for you to work with, and downloads all [commits](../git/tutorial/commits.md) and [branches](../git/tutorial/branches.md) in the repo and sets up a named relationship with the repo on the server. Use this relationship to interact with the existing repo, pushing and pulling changes to share code with your team. 
+To work with a Git repo, you clone it to your computer. Cloning a repo creates a complete local copy of the repo for you to work with, and downloads all [commits](../git/commits.md) and [branches](../git/branches.md) in the repo and sets up a named relationship with the repo on the server. Use this relationship to interact with the existing repo, pushing and pulling changes to share code with your team. 
 
 ## Install Git command line tools 
 
@@ -41,7 +41,7 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
   ```
   git clone https://contoso-ltd.visualstudio.com/MyFirstProject/_git/contoso-demo
   ```
-  Git downloads a copy of the code, including all [commits](../git/tutorial/commits.md) and [branches](../git/tutorial/branches.md) from the repo, into a new folder for you to work with.
+  Git downloads a copy of the code, including all [commits](../git/commits.md) and [branches](../git/branches.md) from the repo, into a new folder for you to work with.
 
   Keep this command window open, as you'll use it in the following steps.
 
