@@ -44,26 +44,6 @@ featureFlags:
                                     </div>
                                 </a>
                             </li>
-<!---                            <li>
-                                <a href="/tfs/server/install/sql-server/install-sql-server">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="/vsts/_img/index/sql-server-reporting.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Install SQL Server</h3>
-                                                    <p>Review the installation of SQL Server to support your enterprise topology and TFS installation(s).</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
--->
                             <li>
                                 <a href="/tfs/server/upgrade/get-started">
                                     <div class="cardSize">
@@ -83,32 +63,10 @@ featureFlags:
                                     </div>
                                 </a>
                             </li>
-<!---
-                            <li>
-                                <a href="/tfs/server/upgrade/walkthrough">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="/vsts/_img/index/i_tasks.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Upgrade scenario walkthrough</h3>
-                                                    <p>Walk through a specific upgrade scenario to get an idea of the upgrade process.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
--->
                         </ul>
-<a id="tfs-admin" />
 
-<h2>Azure DevOps Services</h2>
-<p>Find quickstarts, samples, and tutorials for each Azure DevOps service.</p><br/>
+<h2>Services</h2>
+<p>Find quickstarts, samples, and tutorials for each TFS service.</p><br/>
 <table border="0" class="cardsA">
 <tr>
 <td width="33%">
@@ -118,7 +76,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/Agile40.svg" alt="" />
+                                                        <img src="_img/index/i_kanban.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -137,7 +95,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/Repos40.svg" alt="" />
+                                                        <img src="_img/index/logo-git-mark.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -156,7 +114,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/Pipelines40.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/common/i_download-install.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -177,7 +135,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/Artifacts40.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/common/i_management.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -196,12 +154,12 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/Test40.svg" alt="" />
+                                                        <img src="_img/index/i_exporatory-testing.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Test</h3>
-                                                    <p>Test early and often. Setup test plans and track and report manual tests, run automated test suites and cloud-based load tests.</p>
+                                                    <p>Define test plans and track and report on manual tests, run automated test suites and cloud-based load tests.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -215,10 +173,10 @@ featureFlags:
 </table>
 <a id="devops-services-supplemental" />
 <h2>Shared Features</h2>
-<p>Share information and gain insights using Wikis and dashboards. </p><br/>
+<p>Share information and gain insights using Wikis,dashboards, and SQL Reporting Services. </p><br/>
 <table border="0" class="cardsA">
 <tr>
-<td width="33%">
+<td width="25%">
                                 <a href="/vsts/project/wiki/project-vision-status">
                                     <div class="cardSize">
                                         <div class="cardPadding">
@@ -237,7 +195,7 @@ featureFlags:
                                     </div>
                                 </a>
 </td>
-<td width="33%">
+<td width="25%">
                                 <a href="/vsts/report/dashboards/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
@@ -256,7 +214,7 @@ featureFlags:
                                     </div>
                                 </a>
 </td>
-<td width="33%">
+<td width="25%">
                                 <a href="/vsts/project/wiki/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
@@ -269,6 +227,25 @@ featureFlags:
                                                 <div class="cardText">
                                                     <h3>READMEs &amp; Wikis</h3>
                                                     <p>Share information with your team and stakeholders.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+</td>
+<td width="25%">
+                                <a href="/vsts/report/sql-reports/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/sql-server-reporting.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>SQL Server Reporting</h3>
+                                                    <p>Use out-of-the-box reports or define custom reports.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -304,18 +281,18 @@ featureFlags:
 <a class="barLink" href="/vsts/organizations/settings/about-teams-and-settings"><img src="_img/index/i_configure-teams.svg" alt="" />Scale &amp; Configure Teams</a>
 </td>
 <td width="25%">
-<a class="barLink" href="/vsts/service-hooks/index"><img src="_img/index/i_service-hooks.svg" alt="" />Service Hooks</a>
+<a class="barLink" href="/report/admin/manage-reports-data-warehouse-cube"><img src="_img/index/sql-server-reporting.svg" alt="" />SQL Server Reporting Administration</a>
 </td>
 <td width="25%">
-<a class="barLink" href="/vsts/marketplace/index"><img src="_img/index/i_extensions.svg" alt="" />Manage Extensions</a>
+<a class="barLink" href="/vsts/notifications/index"><img src="_img/index/i_alert.svg" alt="" />Notifications</a>
 </td>
 </tr>
 <tr>
 <td width="25%">
-<a class="barLink" href="/vsts/notifications/index"><img src="_img/index/i_alert.svg" alt="" />Notifications</a>
+<a class="barLink" href="/vsts/service-hooks/index"><img src="_img/index/i_service-hooks.svg" alt="" />Service Hooks</a>
 </td>
 <td width="25%">
-<a class="barLink" href="/vsts/report/sql-reports/"><img src="_img/index/sql-server-reporting.svg" alt="" />SQL Server Reporting</a>
+<a class="barLink" href="/vsts/marketplace/index"><img src="_img/index/i_extensions.svg" alt="" />Manage Extensions</a>
 </td>
 <td width="25%">
 &nbsp;&nbsp;&nbsp;

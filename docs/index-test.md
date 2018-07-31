@@ -273,8 +273,7 @@ featureFlags:
                         </ul>
 
 -->
-     </div>
-</div>
+
 <h3 style="padding-left:0;">Additional Resources</h3>
 <table border="0">
 <tbody style="padding-left:0;font-size:.8rem;">
@@ -293,3 +292,6 @@ featureFlags:
 </tr>
 </tbody>
 </table>
+
+</div>
+</div>

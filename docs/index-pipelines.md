@@ -41,6 +41,25 @@ featureFlags:
                                         </div>
                                     </div>
                                 </a>
+</td>
+<td width="25%">
+                               <a href="/vsts/pipelines/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com/media/common/i_download-install.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Build and Release</h3>
+                                                    <p>Define pipelines to support continuous integration and continuous deployment.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
 
 </td>
 <td width="25%">
@@ -82,6 +101,8 @@ featureFlags:
                                     </div>
                                 </a>
 </td>
+</tr>
+<tr>
 <td width="25%">
                                 <a href="/vsts/package/index">
                                     <div class="cardSize">
@@ -101,8 +122,6 @@ featureFlags:
                                     </div>
                                 </a>
 </td>
-</tr>
-<tr>
 <td width="25%">
                                 <a href="/vsts/pipelines/library/index">
                                     <div class="cardSize">
@@ -161,6 +180,8 @@ featureFlags:
                                     </div>
                                 </a>
 </td>
+</tr>
+<tr>
 <td width="25%">
                                 <a href="/vsts/organizations/settings/index#pipelines">
                                     <div class="cardSize">
@@ -173,15 +194,26 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Settings</h3>
-                                                    <p>Configure resources for Azure DevOps Pipelines.</p>
+                                                    <p>Configure resources to support continuous integration and deployment.</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </a>
 </td>
+<td width="25%">
+&nbsp;&nbsp;&nbsp;
+</td>
+<td width="25%">
+&nbsp;&nbsp;&nbsp;
+</td>
+<td width="25%">
+&nbsp;&nbsp;&nbsp;
+</td>
 </tr>
 </table>
+
+
 <!---
                         <a href="#delivery">Build and Release (Pipelines)</a>
                         <ul id="delivery" class="cardsY panelContent featuredContent">
@@ -332,7 +364,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Settings</h3>
-                                                    <p>Configure resources for Azure DevOps Pipelines.</p>
+                                                    <p>Configure resources for continuous integration and deployment.</p>
                                                 </div>
                                             </div>
                                         </div>

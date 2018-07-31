@@ -205,8 +205,6 @@ featureFlags:
                                     </div>
                                 </a>
 </td>
-</tr>
-<tr>
 <td width="25%">
                                 <a href="/vsts/organizations/settings/index#work">
                                     <div class="cardSize">
@@ -448,7 +446,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Settings</h3>
-                                                    <p>Configure resources for Azure Boards.</p>
+                                                    <p>Configure resources to plan and track work.</p>
                                                 </div>
                                             </div>
                                         </div>
