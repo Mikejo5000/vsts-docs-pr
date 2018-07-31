@@ -45,6 +45,25 @@ featureFlags:
                                         </div>
                                     </div>
                                 </a>
+
+<td width="25%">
+                               <a href="/vsts/package/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com/media/common/i_download-install.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Azure Artifacts Get Started</h3>
+                                                    <p>Sign up and get started using Azure Artifacts.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
 </td>
 <td width="25%">
                                 <a href="/vsts/package/index">

@@ -20,14 +20,10 @@ featureFlags:
     <div class="container">
 <a href="/vsts/index">Azure DevOps Services</a>&nbsp;&nbsp;&nbsp;Azure Test Plans
         <h1>Azure Test Plans Documentation</h1>
-<p>Test early and often, setup test plans, track and report manual tests, run automated test suites or cloud-based load tests.</p>
-
+<p>Test early and often, setup test plans, track and report manual tests, run automated test suites or cloud-based load tests.</p><br/>
 <table border="0" class="cardsA">
 <tr>
 <td width="25%">
-                        <a href="#testing">Test</a>
-                        <ul id="testing" class="cardsY panelContent featuredContent">
-                            <li>
                                 <a href="/visualstudio/test/unit-test-your-code">
                                     <div class="cardSize">
                                         <div class="cardPadding">
@@ -139,7 +135,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Settings</h3>
-                                                    <p>Configure policies and permissions for Azure DevOps Test Center.</p>
+                                                    <p>Configure test plan policies and permissions.</p>
                                                 </div>
                                             </div>
                                         </div>

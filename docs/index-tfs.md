@@ -1,6 +1,6 @@
 ---
-title: Azure DevOps Team Foundation Server Documentation 
-titleSuffix: Azure DevOps 
+title: Visual Studio Team Foundation Server Documentation 
+titleSuffix: TFS
 description: Collaborate on software development through version control, work tracking, and continuous integration and delivery with Azure DevOps Team Foundation Server  
 layout: HubPage 
 hide_bc: true
@@ -14,7 +14,6 @@ ms.date: 09/05/2018
 featureFlags:
 - clicktale 
 ---
-
 
 
 <a href="/vsts/index">Azure DevOps Services</a>
@@ -45,7 +44,7 @@ featureFlags:
                                     </div>
                                 </a>
                             </li>
-                            <li>
+<!---                            <li>
                                 <a href="/tfs/server/install/sql-server/install-sql-server">
                                     <div class="cardSize">
                                         <div class="cardPadding">
@@ -64,6 +63,7 @@ featureFlags:
                                     </div>
                                 </a>
                             </li>
+-->
                             <li>
                                 <a href="/tfs/server/upgrade/get-started">
                                     <div class="cardSize">
@@ -83,6 +83,7 @@ featureFlags:
                                     </div>
                                 </a>
                             </li>
+<!---
                             <li>
                                 <a href="/tfs/server/upgrade/walkthrough">
                                     <div class="cardSize">
@@ -102,8 +103,295 @@ featureFlags:
                                     </div>
                                 </a>
                             </li>
+-->
                         </ul>
 <a id="tfs-admin" />
+
+<h2>Azure DevOps Services</h2>
+<p>Find quickstarts, samples, and tutorials for each Azure DevOps service.</p><br/>
+<table border="0" class="cardsA">
+<tr>
+<td width="33%">
+                                <a href="/vsts/index-work">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/Agile40.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Plan and track work</h3>
+                                                    <p>Configure Kanban boards, use interactive backlogs, and get out-of-the-box support for Scrum.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+</td>
+<td width="33%">
+                                <a href="/vsts/index-repos">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/Repos40.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Code</h3>
+                                                    <p>Use Git repositories, pull requests, and code review and then integrate with CI/CD to build and deploy your apps.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+</td>
+<td width="33%">
+                                <a href="/vsts/index-pipelines">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/Pipelines40.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Build and Release</h3>
+                                                    <p>Test and deploy your apps with high-performance pipelines. Start small and scale up as needed.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+</td>
+</tr>
+<tr>
+<td width="33%">
+                                <a href="/vsts/package/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/Artifacts40.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Package Mangement</h3>
+                                                    <p>Share code with others across your enterprise, and support continuous integration and deployment of your apps.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+</td>
+<td width="33%">
+                                <a href="/vsts/index-test">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/Test40.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Test</h3>
+                                                    <p>Test early and often. Setup test plans and track and report manual tests, run automated test suites and cloud-based load tests.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+</td>
+<td width="33%">
+&nbsp;&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+<a id="devops-services-supplemental" />
+<h2>Shared Features</h2>
+<p>Share information and gain insights using Wikis and dashboards. </p><br/>
+<table border="0" class="cardsA">
+<tr>
+<td width="33%">
+                                <a href="/vsts/project/wiki/project-vision-status">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com/media/common/i_overview.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Project Summary</h3>
+                                                    <p>Share your project vision and view cross project activity from the project summary.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+</td>
+<td width="33%">
+                                <a href="/vsts/report/dashboards/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/i_dashboard.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Dashboards</h3>
+                                                    <p>Monitor progress and trends to support improvement of team processes.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+</td>
+<td width="33%">
+                                <a href="/vsts/project/wiki/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com/media/common/i_reference.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>READMEs &amp; Wikis</h3>
+                                                    <p>Share information with your team and stakeholders.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+</td>
+</tr>
+</table>
+
+<a id="devops-services-settings" />
+<h2>Administrative Tools</h2>
+<p>Configure and customize resources. </p><br/>
+<table border="0">
+<tr>
+<td width="25%">
+<a class="barLink" href="/tfs/server/index"><img src="https://docs.microsoft.com/media/common/i_server.svg" alt="" />TFS Server Administration</a>
+</td>
+<td width="25%">
+<a class="barLink" href="/vsts/organizations/settings/index"><img src="https://docs.microsoft.com/media/common/i_management.svg" alt="" />Project Management</a>
+</td>
+<td width="25%">
+<a class="barLink" href="/vsts/organizations/security/index"><img src="https://docs.microsoft.com/media/common/i_security-management.svg" alt="" />Security &amp; Identity</a>
+</td>
+<td width="25%">
+<a class="barLink" href="/vsts/organizations/settings/index"><img src="https://docs.microsoft.com/media/common/i_tools.svg" alt="" />Project &amp; Collection Settings</a>
+</td>
+</tr>
+<tr>
+<td width="25%">
+<a class="barLink" href="/vsts/work/customize/index"><img src="_img/index/i_config-tools.svg" alt="" />Work Tracking Customization</a>
+</td>
+<td width="25%">
+<a class="barLink" href="/vsts/organizations/settings/about-teams-and-settings"><img src="_img/index/i_configure-teams.svg" alt="" />Scale &amp; Configure Teams</a>
+</td>
+<td width="25%">
+<a class="barLink" href="/vsts/service-hooks/index"><img src="_img/index/i_service-hooks.svg" alt="" />Service Hooks</a>
+</td>
+<td width="25%">
+<a class="barLink" href="/vsts/marketplace/index"><img src="_img/index/i_extensions.svg" alt="" />Manage Extensions</a>
+</td>
+</tr>
+<tr>
+<td width="25%">
+<a class="barLink" href="/vsts/notifications/index"><img src="_img/index/i_alert.svg" alt="" />Notifications</a>
+</td>
+<td width="25%">
+<a class="barLink" href="/vsts/report/sql-reports/"><img src="_img/index/sql-server-reporting.svg" alt="" />SQL Server Reporting</a>
+</td>
+<td width="25%">
+&nbsp;&nbsp;&nbsp;
+</td>
+<td width="25%">
+&nbsp;&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+
+<a id="devops-services-extensions" />
+<h2>Marketplace and Extensions</h2>
+<p>Discover, install, and build add-ons to customize and extend your Azure DevOps Experiences. </p><br/>
+<table border="0">
+<tr><td width="25%">
+<a class="barLink" href="/vsts/marketplace/overview"><img src="https://docs.microsoft.com/media/common/i_extend.svg" alt="" />Discover Extensions</a>
+</td>
+<td width="25%">
+<a class="barLink" href="/vsts/extend/index"><img src="_img/index/i_extensions.svg" alt="" />Develop Extensions</a>
+</td>
+<td width="25%">
+<a class="barLink" href="/vsts/integrate/index"><img src="_img/index/i_build.svg" alt="" />Build Apps</a>
+</td>
+<a class="barLink" href="/rest/api/vsts/index"><img src="_img/index/logo_REST.svg" alt="" />REST APIs</a>
+</td>
+</tr>
+<tr>
+<td width="25%">
+<a class="barLink" href="/vsts/extend/reference/client/core-sdk/index"><img src="https://docs.microsoft.com/media/logos/logo_TS.svg" alt="" />TypeScript APIs</a>
+</td>
+<td width="25%">
+&nbsp;&nbsp;&nbsp;
+</td>
+<td width="25%">
+&nbsp;&nbsp;&nbsp;
+</td>
+<td width="25%">
+&nbsp;&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+
+<a id="additional-resources" />
+<h3>Additional Resources</h3>
+<table border="0">
+<tbody style="padding-left:0;font-size:.8rem;">
+<tr><td width="25%">
+<a class="barLink" href="/vsts/project/navigation/index"><img src="https://docs.microsoft.com//media/common/i_portal.svg" alt="" />Navigation Basics</a>
+</td>
+<td width="25%">
+<a class="barLink" href="/vsts/notifications/index"><img src="https://docs.microsoft.com/media/common/i_alert.svg" alt="" />Notifications</a>
+</td>
+<td width="25%">
+<a class="barLink"  href="/vsts/project/search/index"><img src="_img/index/i_search.svg" alt="" />Search</a>
+</td>
+<td width="25%">
+&nbsp;&nbsp;&nbsp;
+</td>
+</tr>
+<tr><td width="25%">
+<a class="barLink" href="/vsts/release-notes/index"><img src="https://docs.microsoft.com/media/common/i_whats-new.svg" alt="" />Features Timeline & Release Notes</a>
+</td>
+<td width="25%">
+<a class="barLink" href="/vsts/articles/index"><img src="https://docs.microsoft.com/media/common/i_article.svg" alt="" />Technical Articles</a>
+</td>
+<td width="25%">
+<a class="barLink"  href="https://docs.microsoft.com/en-us/azure/devops/"><img src="https://docs.microsoft.com/media/common/i_dev-ops.svg" alt="" />Azure DevOps Resource Center</a>
+</td>
+<td width="25%">
+<a class="barLink" href="/vsts/index-all"><img src="https://docs.microsoft.com//media/common/i_library.svg" alt="" />Index</a>
+</td>
+</tr>
+</tbody>
+</table>
+
+<!---
 <h2>TFS Administrative Settings</h2>
 <p>Configure and customize resources to support your development, deployment, planning, and tracking. </p><br/>
                         <ul id="settings" class="cardsY panelContent featuredContent">
@@ -341,8 +629,28 @@ featureFlags:
                                 </a>
                             </li>
                         </ul>
+-->
 <a id="tfs-deprecated" />
-<h2>Deprecated Resources</h2>
+<h3>Deprecated Resources</h3>
+<table border="0">
+<tbody style="padding-left:0;font-size:.8rem;">
+<tr><td width="25%">
+<a class="barLink" href="/vsts/report/sharepoint-dashboards/"><img src="_img/index/logo_sharepoint.svg" alt="" />SharePoint Integration</a>
+</td>
+<td width="25%">
+<a class="barLink" href="/vsts/work/tfs-ps-sync/"><img src="_img/index/logo_project-server.svg" alt="" />Project Server Integration</a>
+</td>
+<td width="25%">
+&nbsp;&nbsp;&nbsp;
+</td>
+<td width="25%">
+&nbsp;&nbsp;&nbsp;
+</td>
+</tr>
+</tbody>
+</table>
+
+<!---
                         <ul id="settings" class="cardsY panelContent featuredContent">
                             <li>
                                 <a href="/vsts/report/sharepoint-dashboards/">
@@ -383,6 +691,4 @@ featureFlags:
                                 </a>
                             </li>
                         </ul>
-<a href="/vsts/index-all">
-<h3>Azure DevOps Services Index</h3>
-</a>
+-->

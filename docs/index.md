@@ -175,7 +175,7 @@ featureFlags:
 <table border="0" class="cardsA">
 <tr>
 <td width="33%">
-<a href="/vsts/index-work">
+                                <a href="/vsts/index-work">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -234,7 +234,7 @@ featureFlags:
 </tr>
 <tr>
 <td width="33%">
-                                <a href="/vsts/index-packages">
+                                <a href="/vsts/package/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -245,7 +245,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Azure Artifacts</h3>
-                                                    <p>Share code with others,across your enterprise, and support continuous integration and deployment of your apps.</p>
+                                                    <p>Share code with others across your enterprise, and support continuous integration and deployment of your apps.</p>
                                                 </div>
                                             </div>
                                         </div>

@@ -20,9 +20,28 @@ featureFlags:
     <div class="container">
 <a href="/vsts/index">Azure DevOps Services</a>&nbsp;&nbsp;&nbsp;Azure Repos
         <h1>Azure Repos Documentation</h1>
-<p>Collaborate on code development using free Git public and private repositories, pull requests, and code review.</p>
+<p>Collaborate on code development using free Git public and private repositories, pull requests, and code review.</p><br/>
 <table border="0" class="cardsA">
 <tr>
+<td width="25%">
+                               <a href="/vsts/repos/get-started/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com/media/common/i_download-install.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Azure Repos Get Started</h3>
+                                                    <p>Sign up and get started using Azure Repos.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+</td>
 <td width="25%">
                                 <a href="/vsts/git">
                                     <div class="cardSize">
@@ -80,6 +99,8 @@ featureFlags:
                                     </div>
                                 </a>
 </td>
+</tr>
+<tr>
 <td width="25%">
                                 <a href="/vsts/git/branch-policies">
                                     <div class="cardSize">
@@ -99,8 +120,6 @@ featureFlags:
                                     </div>
                                 </a>
 </td>
-</tr>
-<tr>
 <td width="25%">
                                 <a href="/vsts/tfvc">
                                     <div class="cardSize">
@@ -157,9 +176,6 @@ featureFlags:
                                         </div>
                                     </div>
                                 </a>
-</td>
-<td width="25%">
-&nbsp;&nbsp;&nbsp;
 </td>
 </tr>
 </table>
@@ -281,8 +297,7 @@ featureFlags:
                             </li>   
                         </ul>
 -->
-     </div>
-</div>
+
 <h3 style="padding-left:0;">Additional Resources</h3>
 <table border="0">
 <tbody style="padding-left:0;font-size:.8rem;">
@@ -301,3 +316,6 @@ featureFlags:
 </tr>
 </tbody>
 </table>
+
+</div>
+</div>
