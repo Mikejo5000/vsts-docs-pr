@@ -15,17 +15,128 @@ featureFlags:
 - clicktale 
 ---
 
-<a href="/vsts/index">Azure DevOps Services</a>
-<h1>Azure DevOps Services: Index to Documentation and Resources</h1>
-    <p>Access get started guides, user guides, administrative resources, API references, and other resources.</p>
+<a href="/vsts/index">Azure DevOps Services</a>&nbsp;&nbsp;&nbsp;Index
+<h1>Azure DevOps Services Index</h1>
+<p>Access get started guides, user guides, administrative resources, API references, and other resources.</p>
 <h2 id="user-guides">User and Administrative Guides</h2>
-<div class="group" class="cardText" style="float:left;width:250px">
+<table border="0">
+<tbody style="padding-left:0;font-size:.8rem;">
+<tr><td width="25%">
                         <h3>Get Started Guides</h3>
                         <ul class="noBullet">
-                            <li><a href="/vsts/repos/get-started/index">Azure DevOps Repos</a></li>
-                            <li><a href="/vsts/work/get-started/index">Azure DevOps Boards</a></li>
-                            <li><a href="/vsts/pipelines/get-started/index">Azure DevOps Pipelines</a></li>
-                            <li><a href="/vsts/user-guide/index">Azure DevOps Enterprise</a></li>
+                            <li><a href="/vsts/repos/get-started/index">Azure Repos</a></li>
+                            <li><a href="/vsts/work/get-started/index">Azure Boards</a></li>
+                            <li><a href="/vsts/pipelines/get-started/index">Azure Pipelines</a></li>
+                            <li><a href="/vsts/user-guide/index">Enterprise</a></li>
+                        </ul>
+                        <h3>Overview</h3>
+                        <ul class="noBullet">
+                            <li><a href="/vsts/project/wiki/project-vision-status">Summary</a></li>
+                            <li><a href="/vsts/report/dashboards/index">Dashboards</a></li>
+                            <li><a href="/vsts/report/analytics/what-are-analytics-views">Analytics views</a></li>
+                            <li><a href="/vsts/project/wiki/index">Wiki</a></li>
+                        </ul>
+                        <h3>General</h3>
+                        <ul class="noBullet">
+                            <li><a href="/vsts/organizations/public/index">Public Projects</a></li> 
+                            <li><a href="/vsts/project/navigation/preview-features">Navigation Basics</a></li> 
+                            <li><a href="/vsts/project/search/index">Search</a></li>
+                            <li><a href="/vsts/articles">Technical Articles</a></li>
+                        </ul>
+</td>
+<td width="25%">
+                        <h3>Azure Boards</h3>
+                        <ul class="noBullet">
+                          <li><a href="/vsts/work/work-items/index">Work Items</a></li>
+                            <li><a href="/vsts/work/kanban/index">Boards (Kanban)</a></li>
+                            <li><a href="/vsts/work/backlogs/index">Backlogs</a></li>
+                            <li><a href="/vsts/work/scrum/index">Sprints (Scrum)</a></li>
+                            <li><a href="/vsts/work/track/index">Queries</a></li>
+                            <li><a href="/vsts/organizations/settings/work/inheritance-process-model">Customization</a></li>
+                            <li><a href="/vsts/work/scale/index">Agile at Scale</a></li>
+                            <li><a href="/vsts/project/feedback/index">Request Feedback</a></li>
+                        </ul>
+                        <h3>Office Integration tools</h3>
+                        <ul class="noBullet">
+                            <li><a href="/vsts/work/backlogs/office/bulk-add-modify-work-items-excel">Excel</a></li>
+                            <li><a href="/vsts/work/backlogs/office/create-your-backlog-tasks-using-project">Project</a></li>
+                            <li><a href="/vsts/work/backlogs/office/storyboard-your-ideas-using-powerpoint">PowerPoint Storyboarding</a></li>
+                        </ul>
+                       <h3>Azure Repos</h3>
+                        <ul class="noBullet">
+                            <li><a href="/vsts/git/index">Git Repositories</a></li>
+                            <li><a href="/vsts/git/tutorial/pullrequest">Pull Requests</a></li>
+                            <li><a href="/vsts/git/concepts/forks">Forks</a></li>
+                            <li><a href="/vsts/git/branch-policies">Branch Policies</a></li>
+                            <li><a href="/vsts/tfvc/index">TFVC</a></li>
+                        </ul>
+</td>
+<td width="25%">
+                        <h3>Azure Pipelines</h3>
+                        <ul class="noBullet">
+                            <li><a href="/vsts/pipelines/index">Azure Pipelines</a></li>
+                            <li><a href="/vsts/pipelines/index">Continuous Testing</a></li>
+                            <li><a href="/vsts/deploy-azure/index">Deploy to Azure</a></li>
+                            <li><a href="/vsts/package/index">Package Management</a></li>
+                            <li><a href="/vsts/pipelines/library/index">Library Assets</a></li>
+                            <li><a href="/vsts/pipelines/agents/agents">Hosted &amp; Private Agents</a></li>
+                            <li><a href="/vsts/pipelines/tasks">Task Reference</a></li>
+                        </ul>
+                        <h3>Azure Test Plans</h3>
+                        <ul class="noBullet">
+                            <li><a href="/vsts/pipelines/index">Continuous Testing</a></li>
+                            <li><a href="/vsts/test/index">Exploratory & Manual Testing</a></li>
+                            <li><a href="/vsts/test/load-test/index">Load Testing</a></li>
+                            <li><a href="/visualstudio/test/unit-test-your-code">Unit & Functional Testing</a></li>
+                        </ul>
+                        <h3>Analytics</h3>
+                        <ul class="noBullet">
+                            <li><a href="/vsts/report/dashboards/index">Dashboards</a></li>
+                            <li><a href="/vsts/report/analytics/index">Analytics</a></li>
+                            <li><a href="/vsts/report/powerbi/index">Power BI</a></li>
+                            <li><a href="/vsts/report/extend-analytics/index">Extend Analytics with OData</a></li>
+                        </ul>
+</td>
+<td width="25%">
+                        <h3>Management tools</h3>
+                        <ul class="noBullet">
+                            <li><a href="/vsts/organizations/settings/index">Project &amp; Organization Settings</a></li>
+                            <li><a href="/vsts/organizations/settings/about-teams-and-settings">Scale &amp; Configure Teams</a></li>
+                            <li><a href="/vsts/organizations/settings/work/inheritance-process-model">Process Customization</a></li>
+                            <li><a href="/vsts/organizations/security/index">Security &amp; Identity</a></li>
+                            <li><a href="/vsts/organizations/settings/index">Project Management</a></li> 
+                            <li><a href="/vsts/organizations/accounts/index">Organization Management</a></li>
+                            <li><a href="/vsts/billing/index">Billing</a></li>
+                            <li><a href="/vsts/notifications/index">Notifications</a></li>
+                            <li><a href="/tfs/server/index">Team Foundation Server</a></li>
+                        </ul>
+                        <h3>Discover & Manage Extensions</h3>
+                        <ul class="noBullet">
+                            <li><a href="/vsts/marketplace/overview">Discover & Manage Extensions</a></li>
+                            <li><a href="/vsts/service-hooks/index">Service Hooks</a></li>
+                            <li><a href="/vsts/report/extend-analytics/index">Extend Analytics with OData</a></li>
+                        </ul>
+       </div>
+       <div class="group" class="cardText" style="float:left;width:250px">
+                        <h3>Build Extensions</h3>
+                        <ul class="noBullet">
+                            <li><a href="/vsts/extend/index">Develop Extensions</a></li>
+                            <li><a href="/vsts/integrate/index">Build Apps</a></li>
+                            <li><a href="https://docs.microsoft.com/en-us/rest/api/vsts/">REST APIs</a></li>
+                            <li><a href="https://www.visualstudio.com/docs/integrate/extensions/reference/client/core-sdk">TypeScript APIs</a></li>
+                        </ul>
+</td>
+</tr>
+</tbody>
+</table>
+<!---
+<div class="group" style="float:left;width:250px">
+                        <h3>Get Started Guides</h3>
+                        <ul class="noBullet">
+                            <li><a href="/vsts/repos/get-started/index">Azure Repos</a></li>
+                            <li><a href="/vsts/work/get-started/index">Azure Boards</a></li>
+                            <li><a href="/vsts/pipelines/get-started/index">Azure Pipelines</a></li>
+                            <li><a href="/vsts/user-guide/index">Enterprise</a></li>
                         </ul>
                         <h3>Overview</h3>
                         <ul class="noBullet">
@@ -43,7 +154,7 @@ featureFlags:
                         </ul>
        </div>
        <div class="group" class="cardText" style="float:left;width:250px">
-                        <h3>Work (Agile)</h3>
+                        <h3>Azure Boards</h3>
                         <ul class="noBullet">
                           <li><a href="/vsts/work/work-items/index">Work Items</a></li>
                             <li><a href="/vsts/work/kanban/index">Boards (Kanban)</a></li>
@@ -62,7 +173,7 @@ featureFlags:
                         </ul>
        </div>
        <div class="group" class="cardText" style="float:left;width:250px">
-                        <h3>Code (Repos)</h3>
+                        <h3>Azure Repos</h3>
                         <ul class="noBullet">
                             <li><a href="/vsts/git/index">Git Repositories</a></li>
                             <li><a href="/vsts/git/tutorial/pullrequest">Pull Requests</a></li>
@@ -70,7 +181,7 @@ featureFlags:
                             <li><a href="/vsts/git/branch-policies">Branch Policies</a></li>
                             <li><a href="/vsts/tfvc/index">TFVC</a></li>
                         </ul>
-                        <h3>Test</h3>
+                        <h3>Azure Test Plans</h3>
                         <ul class="noBullet">
                             <li><a href="/vsts/pipelines/index">Continuous Testing</a></li>
                             <li><a href="/vsts/test/index">Exploratory & Manual Testing</a></li>
@@ -86,9 +197,9 @@ featureFlags:
                         </ul>
        </div>
        <div class="group" class="cardText" style="float:left;width:250px">
-                        <h3>Build & Release (Pipelines)</h3>
+                        <h3>Azure Pipelines</h3>
                         <ul class="noBullet">
-                            <li><a href="/vsts/pipelines/index">Build &amp; Release</a></li>
+                            <li><a href="/vsts/pipelines/index">Azure Pipelines</a></li>
                             <li><a href="/vsts/pipelines/index">Continuous Testing</a></li>
                             <li><a href="/vsts/deploy-azure/index">Deploy to Azure</a></li>
                             <li><a href="/vsts/package/index">Package Management</a></li>
@@ -96,7 +207,7 @@ featureFlags:
                             <li><a href="/vsts/pipelines/agents/agents">Hosted &amp; Private Agents</a></li>
                             <li><a href="/vsts/pipelines/tasks">Task Reference</a></li>
                         </ul>
-                        <h3>Settings (Admin)</h3>
+                        <h3>Management tools</h3>
                         <ul class="noBullet">
                             <li><a href="/vsts/organizations/settings/index">Project &amp; Organization Settings</a></li>
                             <li><a href="/vsts/organizations/settings/about-teams-and-settings">Scale &amp; Configure Teams</a></li>
@@ -111,6 +222,7 @@ featureFlags:
        </div>
 <div style="clear:left;font-size:100%">
 </div>
+-->
 <h2 id="deploy">Deploy to Azure</h2>
 <div class="group" class="cardText" style="float:left;width:250px">
                         <h3>Azure DevOps Project</h3>

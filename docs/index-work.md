@@ -412,7 +412,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Settings</h3>
-                                                    <p>Configure resources for Azure DevOps Boards.</p>
+                                                    <p>Configure resources for Azure Boards.</p>
                                                 </div>
                                             </div>
                                         </div>

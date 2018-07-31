@@ -25,10 +25,9 @@ featureFlags:
 <a href="#start"> </a>
 <h2>Get Started</h2>
 <p>Sign up and quickly get started with an Azure DevOps service. Add other services as you need them. Or, get started with the suite of integrated services. </p><br/>
-<table border="0" class="cardsY panelContent featuredContent">
+<table border="0" class="fullspan cardsY panelContent featuredContent">
 <tr>
 <td width="25%">
-<tr><td width="25%">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -39,7 +38,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3><a href="/vsts/repos/get-started">Repos</a></h3>
-                                                    <p>Develop code with distributed, flexible version control.</p>
+                                                    <p>Develop code with distributed, flexible version control.<br/></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -56,7 +55,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3><a href="/vsts/work/get-started">Boards</a></h3>
-                                                    <p>Plan and track work and code defects with Agile tools.</p>
+                                                    <p>Plan and track work and code defects with Agile tools.<br/></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -90,7 +89,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3><a href="/vsts/user-guide/index">Enterprise </a></h3>
-                                                    <p>Get started with the integrated suite of Azure DevOps Services.</p>
+                                                    <p>Get started with the integrated suite of Azure DevOps Services.<br/></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -380,9 +379,28 @@ featureFlags:
 -->
 <a id="devops-services-supplemental" />
 <h2>Shared Features</h2>
-<p>Share information and gain insights using Wikis, Dashboards, and Analytics plus other features available to all Azure DevOps Services. </p><br/>
+<p>Share information and gain insights using Wikis, Dashboards, and Analytics available to all Azure DevOps Services. </p><br/>
 <table border="0" class="cardsA">
 <tr>
+<td width="25%">
+                                <a href="/vsts/project/wiki/project-vision-status">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com/media/common/i_overview.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Project Summary</h3>
+                                                    <p>Share your project vision and view cross project activity from the project summary.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+</td>
 <td width="25%">
                                 <a href="/vsts/report/dashboards/index">
                                     <div class="cardSize">
@@ -415,25 +433,6 @@ featureFlags:
                                                 <div class="cardText">
                                                     <h3>Analytics views</h3>
                                                     <p>Define filter critera to support creation of Power BI reports using the Analytics service.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-</td>
-<td width="25%">
-                                <a href="/vsts/report/powerbi/index">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="_img/index/logo_power-bi.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Power BI</h3>
-                                                    <p>Use Power BI to drive ad hoc analysis, produce beautiful reports, and publish them for enterprise consumption.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -642,7 +641,7 @@ featureFlags:
 </ul>
 -->
 <a id="devops-services-settings" />
-<h2>Settings</h2>
+<h2>Management Tools</h2>
 <p>Configure and customize resources. </p><br/>
 <table border="0">
 <tr><td width="25%">
@@ -659,7 +658,7 @@ featureFlags:
 </td>
 </tr>
 <tr><td width="25%">
-<a class="barLink" href="/vsts/organizations/settings/work/inheritance-process-model"><img src="_img/index/i_config-tools.svg" alt="" />Project Management</a>
+<a class="barLink" href="/vsts/organizations/settings/work/inheritance-process-model"><img src="_img/index/i_config-tools.svg" alt="" />Process Customization</a>
 </td>
 <td width="25%">
 <a class="barLink" href="/vsts/organizations/settings/about-teams-and-settings"><img src="_img/index/i_configure-teams.svg" alt="" />Scale &amp; Configure Teams</a>
@@ -678,10 +677,10 @@ featureFlags:
 <a class="barLink" href="/tfs/server/index"><img src="https://docs.microsoft.com/media/common/i_server.svg" alt="" />TFS Server Administration</a>
 </td>
 <td width="25%">
-<a class="barLink" href="/vsts/organizations/security/index"><img src="https://docs.microsoft.com/media/common/i_security-management.svg" alt="" />Security &amp; Identity</a>
+<a class="barLink" href="/vsts/notifications/index"><img src="_img/index/i_alert.svg" alt="" />Notifications</a>
 </td>
 <td width="25%">
-<a class="barLink" href="/vsts/organizations/accounts/index"><img src="_img/index/i_account-management.svg" alt="" />Organization Management</a>
+<a class="barLink" href="/vsts/organizations/public/index"><img src="https://docs.microsoft.com/media/common/i_web-color.svg" alt="" />Public Projects</a>
 </td>
 </tr>
 </table>
@@ -903,10 +902,10 @@ featureFlags:
 <a class="barLink" href="/rest/api/vsts/index"><img src="_img/index/logo_REST.svg" alt="" />REST APIs</a>
 </td>
 <td width="25%">
-<a class="barLink" href="/vsts/extend/reference/client/core-sdk/index"><img src="https://docs.microsoft.com/media/logos/logo_TS.svg" alt="" />Scale &amp; Configure Teams</a>
+<a class="barLink" href="/vsts/extend/reference/client/core-sdk/index"><img src="https://docs.microsoft.com/media/logos/logo_TS.svg" alt="" />TypeScript APIs</a>
 </td>
 <td width="25%">
-<a class="barLink" href="/vsts/organizations/billing/index"><img src="_img/index/i_billing.svg" alt="" />TypeScript APIs</a>
+&nbsp;&nbsp;&nbsp;
 </td>
 <td width="25%">
 &nbsp;&nbsp;&nbsp;
