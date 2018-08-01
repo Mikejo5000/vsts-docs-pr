@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 
 # Docker
 
-This guidance explains how to build Docker images that you upload to a range of containers such as
+This guidance explains how to build Docker images that you can upload to a range of containers such as
 Docker Hub or Azure Container Registry, and then deploy to a range of targets.
 
 ::: moniker range="vsts"
