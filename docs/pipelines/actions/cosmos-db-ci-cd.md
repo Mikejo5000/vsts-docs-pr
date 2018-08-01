@@ -14,7 +14,7 @@ monikerRange: 'vsts'
 
 # Tutorial:  CI/CD with App Service and Azure Cosmos DB
 
-Create a continuous integration (CI) and continuous delivery (CD) pipeline for Azure Comsos DB backed Azure App Service Web App.  Azure Cosmos DB is Microsoft’s globally distributed, multi-model database. Cosmos DB enables you to elastically and independently scale throughput and storage across any number of Azure’s geographic regions. 
+Create a continuous integration (CI) and continuous delivery (CD) pipeline for Azure Comsos DB backed Azure App Service Web App.  Azure Cosmos DB is Microsoft's globally distributed, multi-model database. Cosmos DB enables you to elastically and independently scale throughput and storage across any number of Azure's geographic regions. 
 
 You will:
 
