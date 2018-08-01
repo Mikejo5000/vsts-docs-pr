@@ -15,7 +15,8 @@ monikerRange: '>= tfs-2017'
 
 # Docker
 
-This guidance explains how to build Docker images.
+This guidance explains how to build Docker images that you upload to a range of containers such as
+Docker Hub or Azure Container Registry, and then deploy to a range of targets.
 
 ::: moniker range="vsts"
 
@@ -43,6 +44,9 @@ This guidance explains how to build Docker images.
 <a name="example"></a>
 ## Example
 
+This example shows how to build a Docker image and upload it to Docker Hub.
+For information about uploading a Docker image to other types of containers, see [Build an image](#buildimage).
+
 To build a Docker image, you need a _Dockerfile_. If you want some sample code that includes this file and works with this guidance, then import (into VSTS or TFS) or fork (into GitHub) this repo:
 
 ```
@@ -64,13 +68,13 @@ https://github.com/adventworks/dotnetcore-sample
 1. After you have the sample code in your own repository, create a build pipeline and select the **ASP.NET Core** template. This automatically adds the tasks that you typically need to build an ASP.NET Core app.
 
 1. Select **Process** under the **Tasks** tab of the build pipeline editor, and change its properties as follows:
-   * **Agent queue:** `Hosted Linux`
-   * **Projects to test:** `**/*[Tt]ests/*.csproj`
+  * **Agent queue:** `Hosted Linux Preview`
+  * **Projects to test:** `**/*[Tt]ests/*.csproj`
 
 1. Modify the **.NET Core Publish** task in the build pipeline as follows:
-   * **Arguments:** `--configuration $(BuildConfiguration) --output out`
-   * **Zip published projects:** Clear this check box
-   * **Add project name to publish path:** Clear this check box
+  * **Arguments:** `--configuration $(BuildConfiguration) --output out`
+  * **Zip published projects:** Clear this check box
+  * **Add project name to publish path:** Clear this check box
 
 1. Remove the **Publish artifact** task.
 
@@ -100,9 +104,9 @@ Save the pipeline and queue a build to see it in action.
 The sample code above includes a `.vsts-ci.yml` file at the root of the repository. Replace the contents of this file with the following:
 
 ```yaml
-queue: 'Hosted Linux'
+queue: 'Hosted Linux Preview'
 variables:
-buildConfiguration: 'Release'
+   buildConfiguration: 'Release'
     
 steps:
 - task: DotNetCoreCLI@2
@@ -127,19 +131,25 @@ steps:
       command: 'publish'
       arguments: '--configuration $(buildConfiguration) --output out'
       zipAfterPublish: false
-    
+      addProjectNameToPublishPath: false
+     
 - task: Docker@0
   displayName: Build an image
   inputs:
     containerregistrytype: 'Container Registry'
-    dockerRegistryConnection: '<Name of your Docker hub service connection>'
+    dockerRegistryConnection: '<name of your Docker hub service connection>'
+    action: 'Build an image'
+    qualifyImageName: false
+    imageName: '<your Docker ID>/$(Build.Repository.Name):$(Build.BuildId)' 
 
 - task: Docker@0
   displayName: Push an image
   inputs:
     containerregistrytype: 'Container Registry'
-    dockerRegistryConnection: '<Name of your Docker hub service connection>'
+    dockerRegistryConnection: '<name of your Docker hub service connection>'
     action: 'Push an image'
+    qualifyImageName: false
+    imageName: '<your Docker ID>/$(Build.Repository.Name):$(Build.BuildId)' 
 
 ```
     
@@ -174,16 +184,14 @@ In the build pipeline, select **Tasks**, then select the **Process** node, and f
 Add the following snippet to your `.vsts-ci.yml` file to select the appropriate agent queue:
 
 ```yaml
-queue: 'Hosted Linux' # other options - 'Hosted VS2017'
+queue: 'Hosted Linux Preview' # other options - 'Hosted VS2017'
 ```
 
 ---
 
 ### Microsoft-hosted Linux agents
 
-Use the **Hosted Linux** agent queue to build Linux container images. When you use this queue, you get a fresh Linux virtual machine with each build. This virtual machine runs the [agent](../agents/agents.md) and acts as a Docker host. Tasks in your build do not directly run on the virtual machine at present. Instead, they run in a Microsoft-provided Docker container on the virtual machine. [Shared volumes](https://docs.docker.com/storage/volumes/) are used to faciliate communication between the virtual machine and the container. You can run Docker commands as part of your build, since the `docker.sock` socket of the host is volume mounted in the container.
-
-You cannot use **Hosted Mac** to build container images as Docker is not installed on these agents.
+Use the **Hosted Linux Preview** agent queue to build Linux container images. When you use this queue, you get a fresh Linux virtual machine with each build. This virtual machine runs the [agent](../agents/agents.md) and acts as a Docker host. Tasks in your build do not directly run on the virtual machine at present. Instead, they run in a Microsoft-provided Docker container on the virtual machine. [Shared volumes](https://docs.docker.com/storage/volumes/) are used to faciliate communication between the virtual machine and the container. You can run Docker commands as part of your build, since the `docker.sock` socket of the host is volume mounted in the container.
 
 ### Microsoft-hosted VS2017 (Windows) agents
 
@@ -192,6 +200,10 @@ Use the **Hosted VS2017** agent queue to build Windows container images. When yo
 > [!NOTE]
 > * Using Hosted VS2017 agents, you can only build Docker images with Windows Server 2016 as the container OS. You cannot build Docker images with Windows Server 1803 as the container OS since the host operating system on the virtual machines is Windows Server 2016.
 > * We do not yet have a pool of Microsoft-hosted agents running Windows Server 1803. Until this is available, you can build Windows Server 1803 images using self-hosted agents.
+
+### Microsoft-hosted MacOS agents
+
+You cannot use **Hosted Mac** to build container images as Docker is not installed on these agents.
 
 ### Self-hosted agents
 
@@ -204,6 +216,8 @@ As an alternative to using Microsoft-hosted agents, you can set up [self-hosted 
 Your builds run on a [self-hosted agent](../agents/agents.md#install). Make sure that you have Docker installed on the agent.
 
 ::: moniker-end
+
+<a name="buildimage"></a>
 
 ## Build an image
 
@@ -246,7 +260,7 @@ To build an image that you plan to push to Azure Container Registry, add the fol
 - task: Docker@0
   displayName: Build an image
   inputs:
-    azureSubscription: 'Build_Eng (3f56da7f-5953-4018-8ca8-e20dbfa0a7e2)'
+    azureSubscription: '<Azure service connection>'
     azureContainerRegistry: '{"loginServer":"adventworks.azurecr.io", "id" : "/subscriptions/<Azure subscription id>/resourceGroups/<Resource group where your container registry is hosted>/providers/Microsoft.ContainerRegistry/registries/<Name of your registry>"}' # for example, "loginServer":"adventworks.azurecr.io", "id" : "/subscriptions/xxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/adventworks/providers/Microsoft.ContainerRegistry/registries/adventworks"
 ```
 
@@ -318,7 +332,7 @@ Then, define your build pipeline:
 Create a `.vsts-ci-yml` file at the root of your repo with the following content:
 
 ```yaml
-queue: 'Hosted Linux'
+queue: 'Hosted Linux Preview'
 steps:
   - script: docker build -f Dockerfile -t adventworks/dotnetcore-sample .
 ```
