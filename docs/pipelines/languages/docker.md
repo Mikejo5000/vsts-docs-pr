@@ -15,7 +15,8 @@ monikerRange: '>= tfs-2017'
 
 # Docker
 
-This guidance explains how to build Docker images.
+This guidance explains how to build Docker images that you can upload to a range of containers such as
+Docker Hub or Azure Container Registry, and then deploy to a range of targets.
 
 ::: moniker range="vsts"
 
@@ -42,6 +43,9 @@ This guidance explains how to build Docker images.
 
 <a name="example"></a>
 ## Example
+
+This example shows how to build a Docker image and upload it to Docker Hub.
+For information about uploading a Docker image to other types of containers, see [Build an image](#buildimage).
 
 To build a Docker image, you need a _Dockerfile_. If you want some sample code that includes this file and works with this guidance, then import (into VSTS or TFS) or fork (into GitHub) this repo:
 
@@ -213,6 +217,8 @@ Your builds run on a [self-hosted agent](../agents/agents.md#install). Make sure
 
 ::: moniker-end
 
+<a name="buildimage"></a>
+
 ## Build an image
 
 You can build a Docker image by running the `docker build` command in a script or by using the **Docker** task.
@@ -277,7 +283,7 @@ Often you'll want to build and test your app before creating the Docker image. Y
 In this approach, you use the build pipeline to orchestrate building your code, running your tests, and creating an image. This approach is useful if you want to:
 
 * Leverage tasks (either built-in tasks or those you get from the Marketplace) to define the process used to build and test your app.
-* Run tasks that require authentication via service endpoints (for example: authenticated NuGet or npm feeds).
+* Run tasks that require authentication via service connections (for example: authenticated NuGet or npm feeds).
 * Publish test results.
 
 To create an image, you run a `docker build` command at the end of your build pipeline. Your _Dockerfile_ contains the instructions to copy the results of your build into the container.
