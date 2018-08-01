@@ -41,8 +41,6 @@ Then read through the rest of this topic learn some of the more common changes p
 
 ## Build environment
 
-::: moniker range="vsts"
-
 You can use VSTS to build your Ruby apps without needing to set up any infrastructure of your own.
 The [Microsoft-hosted agents](../agents/hosted.md) in VSTS have Ruby pre-installed on them.
 Use the **Hosted VS2017** agent queue (to build on Windows), the **Hosted Linux Preview** agent queue (to build on Linux), or the **Hosted macOS Preview** queue (to build on a MacOS).
