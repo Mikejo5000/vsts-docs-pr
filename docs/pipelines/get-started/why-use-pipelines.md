@@ -13,9 +13,9 @@ monikerRange: '>= tfs-2015'
 
 Azure DevOps Pipelines is the quickest, easiest, and safest way to automate building your projects and making them available to users.
 
-## The importance of Continuous Integration (CI) and Continuous Delivery (CD) pipelines in software development
+There are two main parts of Pipelines: **Continuous Integration (CI)** and **Continuous Delivery (CD)**.
 
-There are two main parts of Pipelines: Continuous Integration (CI) and Continous Delivery (CD).
+## Why you should use Continuous Integration (CI) and Continuous Delivery (CD) pipelines in software development
 
 **Continous Integration (CI)**: CI is the practice used by development teams to simplify the merging and testing of code. CI helps to catch bugs or problems early in the development cycle, which makes them easier and faster to fix. Automated tests are run as part of the CI process to ensure quality. Items known as "artifacts" are produced from CI systems and used by the **Continuous Delivery** release pipelines to drive automatic deployments.
 
@@ -23,7 +23,7 @@ There are two main parts of Pipelines: Continuous Integration (CI) and Continous
 
 ### Quick look at CI/CD benefits
 
-| Continuous Integration (CI)                    |  Continous Delivery (CD)                       |
+| Continuous Integration (CI)                    |  Continuous Delivery (CD)                       |
 | -----------------------------------------------|------------------------------------------------|
 | Increase code coverage                         | Automatically deploy code to production        |
 | Build stuff faster by splitting test and build | Ensure deployment targets have latest code     |
@@ -31,6 +31,8 @@ There are two main parts of Pipelines: Continuous Integration (CI) and Continous
 | Run tests continually                          |
 
 ## Why use Azure DevOps Pipelines for CI and CD
+
+There are plenty of reasons to use Azure DevOps Pipelines for your CI/CD solution:
 
 * Works with any language or platform
 * Deploy to different types of targets at the same time
@@ -41,14 +43,8 @@ There are two main parts of Pipelines: Continuous Integration (CI) and Continous
 
 ## What can Pipelines do for me?
 
-### Development process _without_ Azure Devops Pipelines
+### Development process _without_ Azure DevOps Pipelines
 
+### Development process _with_ Azure DevOps Pipelines
 
-> **ELBATK NOTE**: AKA, what problems do I have that I can solve with Pipelines
-
-### Automate building and testing of your project to ensure it stays up to date and error-free
-
-### Automate the deployment of your built and tested project to numerous targets such as an app store, or a package management respository
-
-### Automate packaging of your project to make the newest version available to all users
 
