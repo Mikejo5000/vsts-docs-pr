@@ -54,7 +54,7 @@ To import the sample app into a Git repo in VSTS:
 
 1. Search for the **ASP.NET Application** build template, and then select **Apply**.
 
-1. Select the **triggers**, and then select the checkbox for ""Enable cotinuous integration**.  This setting ensures every commit to the repository excecutes a build.
+1. Select the **triggers**, and then select the checkbox for ""Enable continuous integration**.  This setting ensures every commit to the repository excecutes a build.
 
 1. Select **Save & Queue**, and then choose **Save and Queue** to execute a new build.
 
@@ -94,6 +94,15 @@ The CI for the sample app produces the artifacts needed for deployment to Azure.
 
 ## Test the CI/CD pipeline
 <TODO>
+1. On the **Code** hub select the **...** icon next to the **web.config** file in the **src** directory, and then select **Edit**.
+
+1. Enter a new **value** for the **database** key in the **appSettings** section of the web.config.  This simple change allows us to quickly test creating a new database in Azure Cosmos DB.
+
+1. Select **Commit**, and then choose **Commit** to save the changes directly to the repostiory.
+
+1. On the **Build** hub select **Builds** and you will see your CI build executing.
+
+A new CI build was created due to the continuous integration trigger you enabled earlier.  Once the build completes a release will execute and deploy your changes to Azure.  Navigate to Cosmos DB in the Azure portal and you will see the CD process created a new database.
 
 ## Clean up resources
 
