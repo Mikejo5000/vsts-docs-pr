@@ -61,13 +61,13 @@ Consider creating a new branch when there are no linked code artifacts. If there
 	Branches you create are automatically linked to the work item.  
 
 	> [!NOTE]  
-	>You can only create a branch once you've added files to the main branch, which is always named ```master```. The system automatically adds a README file to the initial repo created with each new team project.   
+	>You can only create a branch once you've added files to the main branch, which is always named ```master```. The system automatically adds a README file to the initial repo created with each new project.   
 
 2. The system will open to the repository and branch that you just created. 
 
 	You can edit a file within the web portal. 
 
-	Or, if you have extensive file edits or need to add files, then you'll need to work from Visual Studio or other supported IDE. You'll want to add a new local branch from the branch you just created. For details, see [Update code with fetch and pull, Download changes with fetch](../../git/tutorial/pulling.md#download-changes-with-fetch). (While any code editing and committing process will work, we work best with an edition of Visual Studio.)  
+	Or, if you have extensive file edits or need to add files, then you'll need to work from Visual Studio or other supported IDE. You'll want to add a new local branch from the branch you just created. For details, see [Update code with fetch and pull, Download changes with fetch](../../repos/git/pulling.md#download-changes-with-fetch). (While any code editing and committing process will work, we work best with an edition of Visual Studio.)  
 
 3. Add or modify files in the branch that you created.   
 
@@ -75,15 +75,15 @@ Consider creating a new branch when there are no linked code artifacts. If there
 
 	![Commit and push changes](_img/git-dev-commit-sync.png)  
 
-	If this is the first time pushing changes from a new branch, you'll need to publish the branch before pushing your changes. For more details, see [Share code with push](../../git/tutorial/pushing.md).   
+	If this is the first time pushing changes from a new branch, you'll need to publish the branch before pushing your changes. For more details, see [Share code with push](../../repos/git/pushing.md).   
 
-4. <a id="create-pull-request">  </a> Create a [pull request](../../git/pull-requests.md)  from the work item form.  
+4. <a id="create-pull-request">  </a> Create a [pull request](../../repos/git/pull-requests.md)  from the work item form.  
 
 	You create a pull request to merge the changes you made to a master branch and get your changes reviewed by other members of your team.  
 
 	<img src="_img/git-dev-pr-create-pull-request-b.png" alt="Work item form, create pull request" style="border: 1px solid #C3C3C3;" /> 
 
-5.	Your view will switch to the Code hub, Pull Requests page. Complete creating the pull request as shown. 
+5.	Your view will switch to **Code**, Pull Requests page. Complete creating the pull request as shown. 
   
  	<img src="_img/git-dev-create-pull-request.png" alt="Pull Request page, Create pull request" style="border: 1px solid #C3C3C3;" />  
 
@@ -145,8 +145,8 @@ Or, you can select it from the ![Links tab icon](_img/icon-links-tab-wi.png) Lin
 Learn more about tracking work with work items and developing with Git from these resources: 
 
 - [Add work items](add-work-items.md)  
-- [Git overview](../../git/overview.md)  
-- [TFVC overview](../../tfvc/overview.md)  
+- [Git overview](../../repos/git/overview.md)  
+- [TFVC overview](../../repos/tfvc/overview.md)  
 - [Create your backlog](create-your-backlog.md)   
 
 Keep in mind that the Development section only appears within the web portal work item form. The work item tracking experience and forms that appear in Visual Studio or other supported clients will be missing several of the features that the web portal makes available. 

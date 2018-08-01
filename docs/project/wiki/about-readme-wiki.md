@@ -7,18 +7,17 @@ ms.custom: wiki
 ms.prod: devops
 ms.assetid:  
 ms.manager: douge
-ms.author: kaelli
-author: KathrynEE
+ms.author: kaelliauthor: KathrynEE
 ms.reviewer: sancha
 ms.topic: overview
 ms.date: 10/18/2017
 monikerRange: '>= tfs-2015'
 ---
 
-::: moniker range="vsts || >= tfs-2018"
+::: moniker range=">= tfs-2018"
 # About READMes and Wikis
 
-**VSTS | TFS 2018 | TFS 2017 | TFS 2015**
+[!INCLUDE [temp](../../_shared/version-ts-tfs-2015-2016.md)] 
 
 To support your team or contributors to your project, use [Markdown](https://en.wikipedia.org/wiki/Markdown) to add rich formatting, tables, and images to your team project. You can use Markdown format within a team project Wiki, content you add to a dashboard, within your team project README file, or other repository README file.  
 
@@ -28,7 +27,7 @@ To support your team or contributors to your project, use [Markdown](https://en.
 ::: moniker range=">= tfs-2015 <= tfs-2017"
 # About READMes and markdown
 
-**VSTS | TFS 2018 | TFS 2017 | TFS 2015**
+[!INCLUDE [temp](../../_shared/version-ts-tfs-2015-2016.md)] 
 
 To support your team or contributors to your project, use [Markdown](https://en.wikipedia.org/wiki/Markdown) to add rich formatting, tables, and images to your team project. You can use Markdown format within content you add to a dashboard, within your team project README file, or other repository README file.  
 
@@ -50,8 +49,8 @@ You can provide guidance to your team in these places using Markdown:
 - [Pulbish code as wiki](publish-repo-to-wiki.md)
 - [Add Markdown to a dashboard](../../report/dashboards/add-markdown-to-dashboard.md)  
 - [Project vision page or Welcome pages](project-vision-status.md)    
-- [Repository Readme files](../../git/create-a-readme.md) 
-- [Pull request comments](../../git/pull-requests.md) 
+- [Repository Readme files](../../repos/git/create-a-readme.md) 
+- [Pull request comments](../../repos/git/pull-requests.md) 
  
 ::: moniker-end
 
@@ -61,8 +60,8 @@ You can provide guidance to your team in these places using Markdown:
 - [Add and edit wiki pages](add-edit-wiki.md)    
 - [Add Markdown to a dashboard](../../report/dashboards/add-markdown-to-dashboard.md)  
 - [Project vision page or Welcome pages](project-vision-status.md)  
-- [Repository Readme files](../../git/create-a-readme.md) 
-- [Pull request comments](../../git/pull-requests.md) 
+- [Repository Readme files](../../repos/git/create-a-readme.md) 
+- [Pull request comments](../../repos/git/pull-requests.md) 
  
 ::: moniker-end
 
@@ -70,8 +69,8 @@ You can provide guidance to your team in these places using Markdown:
       
 - [Add Markdown to a dashboard](../../report/dashboards/add-markdown-to-dashboard.md)  
 - [Project vision page or Welcome pages](project-vision-status.md)  
-- [Repository Readme files](../../git/create-a-readme.md) 
-- [Pull request comments](../../git/pull-requests.md) 
+- [Repository Readme files](../../repos/git/create-a-readme.md) 
+- [Pull request comments](../../repos/git/pull-requests.md) 
  
 ::: moniker-end
 

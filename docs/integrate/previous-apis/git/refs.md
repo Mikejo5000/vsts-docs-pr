@@ -21,19 +21,19 @@ Refs are named references to Git objects.
 The most common type of ref is a branch.
 A branch is a ref that points to a commit.
 
-There are [code samples](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/Git/RefsSample.cs) available for this endpoint.
+There are [code samples](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/repos/git/RefsSample.cs) available for this endpoint.
 
 ## Get a list of references
 
 ```no-highlight
-GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}/refs[/{filter}]?api-version={version}[&includeStatuses={bool}]
+GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/refs[/{filter}]?api-version={version}[&includeStatuses={bool}]
 ```
 
 | Parameter      | Type   | Notes
 |:-----------    |:-------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
 | instance       | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project        | string | ID or name of the [team project](../tfs/projects.md). *Optional if specifying an ID for repository.*
+| project        | string | ID or name of the [project](../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository     | string | ID or name of the [repository](./repositories.md).
 | filter         | string | Git ref name filter. If you specify this parameter, only refs that start with that string are returned.
 | Query
@@ -68,7 +68,7 @@ You must specify both the old and new commit to avoid race conditions.
 * Deleting a ref is represented by updating the ref from its current commit to the nil commit.
 
 ```
-POST https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}/refs?api-version={version}
+POST https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/refs?api-version={version}
 ```
 ```http
 Content-Type: application/json
@@ -87,7 +87,7 @@ Content-Type: application/json
 |:-----------    |:-------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
 | instance       | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project        | string | ID or name of the [team project](../tfs/projects.md). *Optional if specifying an ID for repository.*
+| project        | string | ID or name of the [project](../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository     | string | ID or name of the [repository](./repositories.md).
 | Query
 | api-version    | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -101,14 +101,14 @@ Content-Type: application/json
 ## Lock a branch
 
 ```
-PATCH https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}/{ref}?api-version={version}
+PATCH https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/{ref}?api-version={version}
 ```
 
 | Parameter      | Type   | Notes
 |:-----------    |:-------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
 | instance       | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project        | string | ID or name of the [team project](../tfs/projects.md). *Optional if specifying an ID for repository.*
+| project        | string | ID or name of the [project](../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository     | string | ID or name of the [repository](./repositories.md).
 | ref            | string | Git ref name.
 | Query

@@ -1,6 +1,6 @@
 ---
 title: Troubleshoot setting up Visual Studio with VSTS
-description: Having problems installing, signing in, creating an account, or expired subscription? Read these frequently asked questions and answers 
+description: Having problems installing, signing in, creating an organization, or expired subscription? Read these frequently asked questions and answers 
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 985fcb48-0d9e-44ef-811d-7178df1cb09b
@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 10/09/2017
+ms.date: 07/31/2018
 monikerRange: 'vsts'
 ---
 # Troubleshoot setting up Visual Studio with VSTS
@@ -19,7 +19,7 @@ monikerRange: 'vsts'
 
 <a name="why-sign-in"></a>
 
-### Q: Why sign in?
+#### Q: Why sign in?
 
 A:	Your Visual Studio settings, 
 like automatic brace completion, 
@@ -36,14 +36,14 @@ learn [how to unlock Visual Studio](https://msdn.microsoft.com/library/dn950037.
 *	Visual Studio Express or Community: Continue to use this edition for free.
 
 When you create your profile, 
-you can also create a VSTS account. 
+you can also create a VSTS organization. 
 
 Learn more about 
 [the benefits of signing in and creating a profile](https://msdn.microsoft.com/library/dn457348.aspx). 
 
 <a name="cannot-sign-in"></a>
 
-### Q: Why can't I sign in?
+#### Q: Why can't I sign in?
 
 A:	To create a profile and save your settings, 
 you'll need to sign in with a [personal Microsoft account](https://www.microsoft.com/account) 
@@ -54,23 +54,23 @@ that's managed by Azure Active Directory.
 
 [!INCLUDE [visual-studio-versions](../../_shared/qa-visual-studio-versions.md)]
 
-### Q: Can I use Visual Studio 2015 with Visual Studio 2013 and 2012 on the same computer?
+#### Q: Can I use Visual Studio 2015 with Visual Studio 2013 and 2012 on the same computer?
 
 A:	Yes, you can run all these versions on the same computer.
 
-### Q:	My subscription expired. What do I do?
+#### Q:	My subscription expired. What do I do?
 
 A:	Here's [how to unlock Visual Studio](https://msdn.microsoft.com/library/dn950037.aspx). 
 If you're having subscription problems, 
 try [Subscription Support](https://visualstudio.microsoft.com/support/subscription-support-vs).
 
-### Q:	I'm having problems installing or signing in to Visual Studio. How do I get help? 
+#### Q:	I'm having problems installing or signing in to Visual Studio. How do I get help? 
 
 A:	Learn more about:
 
 *	[Installing Visual Studio](https://msdn.microsoft.com/en-us/library/e2h7fzkw.aspx).
 *	[Signing in to Visual Studio](https://msdn.microsoft.com/library/dn457348.aspx).
-*	[Managing multiple user accounts](https://msdn.microsoft.com/en-us/library/dn872465.aspx).
+*	[Managing multiple user organizations](https://msdn.microsoft.com/en-us/library/dn872465.aspx).
 
 Or contact [Visual Studio Support](https://visualstudio.microsoft.com/support/support-overview-vs). 
 
@@ -78,29 +78,29 @@ Or contact [Visual Studio Support](https://visualstudio.microsoft.com/support/su
 
 <a name="WhatIsVSO"></a>
 
-### Q: How can I create a VSTS account later?
+#### Q: How can I create a VSTS organization later?
 
-A:	Learn how to [sign up for VSTS](create-account-msa-or-work-student.md).
+A:	Learn how to [sign up for VSTS](create-organization-msa-or-work-student.md).
 
 <a name="browser-problems"></a>
 
 [!INCLUDE [browser-problems](../../_shared/qa-browser-problems.md)]
 
-[!INCLUDE [find-account-name](../../_shared/qa-find-account-name.md)]
+[!INCLUDE [find-organization-name](../../_shared/qa-find-organization-name.md)]
 
 [!INCLUDE [recover-password](../../_shared/qa-recover-password.md)]
 
 <a name="change-location"></a>
 
-### Q: Can I change my VSTS account location?
+#### Q: Can I change my VSTS organization location?
 
 A:	Yes, for a better experience, 
-you can change your account's location during sign up
-so that your account is closest to most users.
+you can change your organization's location during sign up
+so that your organization is closest to most users.
 
-![Change account location](_img/set-up-vs/change-location.png)
+![Change organization location](_img/set-up-vs/change-location.png)
 
-Your account's default location is selected based on the closest 
+Your organization's default location is selected based on the closest 
 [Microsoft Azure region](https://azure.microsoft.com/en-us/regions) 
 where VSTS is available. 
 
@@ -108,8 +108,8 @@ where VSTS is available.
 
 [!INCLUDE [team-services-sla](../../_shared/qa-vsts-sla.md)]
 
-[!INCLUDE [change-account-name-owner](../../_shared/qa-change-account-name-owner.md)]
+[!INCLUDE [change-organization-name-owner](../../_shared/qa-change-organization-name-owner.md)]
 
-[!INCLUDE [delete-account](../../_shared/qa-delete-account.md)]
+[!INCLUDE [delete-organization](../../_shared/qa-delete-organization.md)]
 
 [!INCLUDE [get-team-services-support](../../_shared/qa-get-vsts-support.md)]

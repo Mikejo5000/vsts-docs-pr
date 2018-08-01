@@ -45,7 +45,7 @@ You set team defaults from the team admin context. If you're not a team administ
 From a web browser, open the web portal administrative context for your team.  
 
 <!---
-# [Vertical navigation](#tab/vertical)
+# [New navigation](#tab/new-nav)
 
 ::: moniker range="vsts"  
 You define both areas and iterations from the **Work>Team configuration** hub of the project **Settings** hub. 
@@ -69,7 +69,7 @@ You define both areas and iterations from the **Work>Team configuration** hub of
 Vertical navigation isn't a supported feature for TFS at this time. 
 ::: moniker-end
 
-# [Horizontal navigation](#tab/horizontal)
+# [Previous navigation](#tab/previous-nav)
 
 -->
 
@@ -211,7 +211,7 @@ You activate sprints for each team from the admin pages for each team context. T
 ## Related articles  
 
 - [Schedule sprints](../../work/scrum/define-sprints.md)  
-- [Customize area and iteration paths](../../work/customize/set-area-paths.md)  
+- [Customize area and iteration paths](../../organizations/settings/set-area-paths.md)  
 - [Query by date or current iteration](../../work/track/query-by-date-or-current-iteration.md)
 - [Multiple teams](../../work/scale/multiple-teams.md)  
 - [Configure team settings](../../work/scale/manage-team-assets.md)  

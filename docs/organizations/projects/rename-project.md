@@ -24,7 +24,7 @@ Post rename, there might be some [actions](#more-work) required from team member
 
 [!INCLUDE [temp](../../_shared/navigation.md)] 
 
-[!INCLUDE [temp](../../_shared/open-admin-account-settings.md)] 
+[!INCLUDE [temp](../../_shared/open-admin-organization-settings.md)] 
 
 ## Choose to rename a project 
 ::: moniker range=">= tfs-2017"
@@ -136,7 +136,7 @@ If you use an older version of Visual Studio or work with Git from the command p
 
 <a id="tfvc-server"></a>
 ### Update your TFVC server workspaces
-If your project uses TFVC with [server workspaces](../../tfvc/decide-between-using-local-server-workspace.md), these workspaces will need to be updated with the new project name. 
+If your project uses TFVC with [server workspaces](../../repos/tfvc/decide-between-using-local-server-workspace.md), these workspaces will need to be updated with the new project name. 
 For the following clients, execute a get or check-in and the workspace mapping will be corrected to use the new project name:
 
 - Visual Studio 2015 (RC or newer)  
@@ -149,7 +149,7 @@ For the following clients, execute a get or check-in and the workspace mapping w
 
 <a id="tfvc-local"></a>
 ### Update your TFVC local workspaces
-If your team uses TFVC with [local workspaces](../../tfvc/decide-between-using-local-server-workspace.md), these workspaces will need to be updated with the new project name.
+If your team uses TFVC with [local workspaces](../../repos/tfvc/decide-between-using-local-server-workspace.md), these workspaces will need to be updated with the new project name.
 For the following clients, execute a get or check-in and the workspace mapping will be corrected to use the new project name:
 
 - Visual Studio 2015 (RC or later versions)  
@@ -161,9 +161,9 @@ except for Visual Studio 2010 which only supports server workspaces,
 and Team Foundation Server plugin for Eclipse, 
 you must create a new local workspace mapped to the new project name.
 
-1.  [Shelve your changes](../../tfvc/suspend-your-work-manage-your-shelvesets.md).
+1.  [Shelve your changes](../../repos/tfvc/suspend-your-work-manage-your-shelvesets.md).
 
-2.  [Create a new workspace](../../tfvc/create-work-workspaces.md) mapped to the new project name.
+2.  [Create a new workspace](../../repos/tfvc/create-work-workspaces.md) mapped to the new project name.
 
 3.  Unshelve your changes.
 

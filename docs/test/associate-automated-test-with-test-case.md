@@ -1,6 +1,6 @@
 ---
 title: Associate an automated test with a test case
-description: Continuous testing. Associate an automated test with a test case using Microsoft Test Manager (MTM) and VSTS with a build or release definition
+description: Continuous testing. Associate an automated test with a test case using Microsoft Test Manager (MTM) and VSTS with a build or release pipeline
 ms.assetid: 606679F2-1604-40EA-A720-63CDDA93DD76
 ms.prod: devops
 ms.technology: devops-test
@@ -41,7 +41,7 @@ The process to associate an automated test with a test case is:
 1. Check your test project into a VSTS or Team
    Foundation Server (TFS) repository.
 
-1. Create a build definition for your project, ensuring that it
+1. Create a build pipeline for your project, ensuring that it
    contains the automated test.
    [What are the differences if I am still using a XAML build?](../pipelines/test/reference-qa.md#xaml-build)
 
@@ -61,7 +61,7 @@ you associate with a test case. Iterations of a test case that use these
 parameters are for manual tests only.
 
 >For more information about checking in your test project and team build, see
-[Add files to the server](../tfvc/add-files-server.md)
+[Add files to the server](../repos/tfvc/add-files-server.md)
 and [Continuous integration on any platform](../pipelines/overview.md).
 For more information about action recordings and coded UI tests, see 
 [Recording and Playing Back Manual Tests](mtm/record-play-back-manual-tests.md)

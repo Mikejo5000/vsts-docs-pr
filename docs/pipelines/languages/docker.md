@@ -15,7 +15,8 @@ monikerRange: '>= tfs-2017'
 
 # Docker
 
-This guidance explains how to build Docker images.
+This guidance explains how to build Docker images that you can upload to a range of containers such as
+Docker Hub or Azure Container Registry, and then deploy to a range of targets.
 
 ::: moniker range="vsts"
 
@@ -43,6 +44,9 @@ This guidance explains how to build Docker images.
 <a name="example"></a>
 ## Example
 
+This example shows how to build a Docker image and upload it to Docker Hub.
+For information about uploading a Docker image to other types of containers, see [Build an image](#buildimage).
+
 To build a Docker image, you need a _Dockerfile_. If you want some sample code that includes this file and works with this guidance, then import (into VSTS or TFS) or fork (into GitHub) this repo:
 
 ```
@@ -64,7 +68,7 @@ https://github.com/adventworks/dotnetcore-sample
 1. After you have the sample code in your own repository, create a build pipeline and select the **ASP.NET Core** template. This automatically adds the tasks that you typically need to build an ASP.NET Core app.
 
 1. Select **Process** under the **Tasks** tab of the build pipeline editor, and change its properties as follows:
-  * **Agent queue:** `Hosted Linux`
+  * **Agent queue:** `Hosted Linux Preview`
   * **Projects to test:** `**/*[Tt]ests/*.csproj`
 
 1. Modify the **.NET Core Publish** task in the build pipeline as follows:
@@ -75,12 +79,16 @@ https://github.com/adventworks/dotnetcore-sample
 1. Remove the **Publish artifact** task.
 
 1. Add **Docker** task after the **.NET Core Publish** task and configure it as follows to build an image using the **Dockerfile** in the repository:
-  * **Action:** `Build an image`
+   * **Action:** `Build an image`
+   * **Container registry type:** `Container registry`
+   * **Docker registry connection:** Select `New` and create a connection to your Docker hub registry.
 
 1. Add another **Docker** task and configure it as follows to push the image to your Docker hub registry:
-  * **Action:** `Push an image`
-  * **Container registry type:** `Container registry`
-  * **Docker registry connection:** Select `New` and create a connection to your Docker hub registry.
+   * **Action:** `Push an image`
+   * **Container registry type:** `Container registry`
+   * **Docker registry connection:** Select the same connection to your Docker hub registry.
+   * **Qualify Image Name:** Clear this check box
+   * **Image Name:** `[your-Docker-ID]/$(Build.Repository.Name):$(Build.BuildId)`  
 
 Save the pipeline and queue a build to see it in action.
 
@@ -96,9 +104,9 @@ Save the pipeline and queue a build to see it in action.
 The sample code above includes a `.vsts-ci.yml` file at the root of the repository. Replace the contents of this file with the following:
 
 ```yaml
-queue: 'Hosted Linux'
+queue: 'Hosted Linux Preview'
 variables:
-buildConfiguration: 'Release'
+   buildConfiguration: 'Release'
     
 steps:
 - task: DotNetCoreCLI@2
@@ -123,13 +131,30 @@ steps:
       command: 'publish'
       arguments: '--configuration $(buildConfiguration) --output out'
       zipAfterPublish: false
-    
-# Replace adventworks in the following with the name of your Docker id.
-- script: docker build -f Dockerfile -t adventworks/dotnetcore-sample .
+      addProjectNameToPublishPath: false
+     
+- task: Docker@0
+  displayName: Build an image
+  inputs:
+    containerregistrytype: 'Container Registry'
+    dockerRegistryConnection: '<name of your Docker hub service connection>'
+    action: 'Build an image'
+    qualifyImageName: false
+    imageName: '<your Docker ID>/$(Build.Repository.Name):$(Build.BuildId)' 
+
+- task: Docker@0
+  displayName: Push an image
+  inputs:
+    containerregistrytype: 'Container Registry'
+    dockerRegistryConnection: '<name of your Docker hub service connection>'
+    action: 'Push an image'
+    qualifyImageName: false
+    imageName: '<your Docker ID>/$(Build.Repository.Name):$(Build.BuildId)' 
+
 ```
     
-As mentioned in the above YAML snippet, make sure to change `adventworks` to the name of your Docker hub id.
-    
+You need to create a DockerHub service connection and use the name of that connection in the above YAML file. The DockerHub service connection tells VSTS how to connect to Docker hub. You can create a service connection under the **Service connections** tab of **Project settings** in the VSTS web UI.
+
 Push the above change to master branch in your repository, and then run a build using this YAML file to see it in action.
 
 ::: moniker-end
@@ -159,16 +184,14 @@ In the build pipeline, select **Tasks**, then select the **Process** node, and f
 Add the following snippet to your `.vsts-ci.yml` file to select the appropriate agent queue:
 
 ```yaml
-queue: 'Hosted Linux' # other options - 'Hosted VS2017'
+queue: 'Hosted Linux Preview' # other options - 'Hosted VS2017'
 ```
 
 ---
 
 ### Microsoft-hosted Linux agents
 
-Use the **Hosted Linux** agent queue to build Linux container images. When you use this queue, you get a fresh Linux virtual machine with each build. This virtual machine runs the [agent](../agents/agents.md) and acts as a Docker host. Tasks in your build do not directly run on the virtual machine at present. Instead, they run in a Microsoft-provided Docker container on the virtual machine. [Shared volumes](https://docs.docker.com/storage/volumes/) are used to faciliate communication between the virtual machine and the container. You can run Docker commands as part of your build, since the `docker.sock` socket of the host is volume mounted in the container.
-
-You cannot use **Hosted Mac** to build container images as Docker is not installed on these agents.
+Use the **Hosted Linux Preview** agent queue to build Linux container images. When you use this queue, you get a fresh Linux virtual machine with each build. This virtual machine runs the [agent](../agents/agents.md) and acts as a Docker host. Tasks in your build do not directly run on the virtual machine at present. Instead, they run in a Microsoft-provided Docker container on the virtual machine. [Shared volumes](https://docs.docker.com/storage/volumes/) are used to faciliate communication between the virtual machine and the container. You can run Docker commands as part of your build, since the `docker.sock` socket of the host is volume mounted in the container.
 
 ### Microsoft-hosted VS2017 (Windows) agents
 
@@ -177,6 +200,10 @@ Use the **Hosted VS2017** agent queue to build Windows container images. When yo
 > [!NOTE]
 > * Using Hosted VS2017 agents, you can only build Docker images with Windows Server 2016 as the container OS. You cannot build Docker images with Windows Server 1803 as the container OS since the host operating system on the virtual machines is Windows Server 2016.
 > * We do not yet have a pool of Microsoft-hosted agents running Windows Server 1803. Until this is available, you can build Windows Server 1803 images using self-hosted agents.
+
+### Microsoft-hosted MacOS agents
+
+You cannot use **Hosted Mac** to build container images as Docker is not installed on these agents.
 
 ### Self-hosted agents
 
@@ -190,6 +217,8 @@ Your builds run on a [self-hosted agent](../agents/agents.md#install). Make sure
 
 ::: moniker-end
 
+<a name="buildimage"></a>
+
 ## Build an image
 
 You can build a Docker image by running the `docker build` command in a script or by using the **Docker** task.
@@ -200,7 +229,7 @@ You can build a Docker image by running the `docker build` command in a script o
 
 1. Select the task, and then for **Action**, select **Build an image**.
 
-1. If your _Dockerfile_ depends on an image that is present in an authenticated registry (for example, a private Docker registry or Azure Container Registry), then specify those properties in the **Container registry type** and the corresponding service connection.
+1. Specify the connection to the registry that you plan to push the image to by selecting the **Container registry type** - `Container Registry` or `Azure Container Registry`. Then enter the properties for that connection type. If you plan to push the image to an Azure Container Registry, make sure that you [pre-create the registry in Azure portal](https://docs.microsoft.com/azure/container-registry/container-registry-get-started-portal).
 
 # [YAML](#tab/yaml)
 
@@ -213,10 +242,11 @@ steps:
 - script: docker build -f <Dockerfile>
 ```
 
-To use a task to run the command, add the following snippet to your `.vsts-ci.yml` file.
+You can also use the Docker task to build an image. The task takes care of tagging the image correctly based on the registry that you intend to push the image to. The task is also particularly helpful if your Dockerfile depends on another image from a protected registry.
+
+To build an image that you plan to push to Docker hub, add the following snippet:
 
 ```yaml
-steps:
 - task: Docker@0
   displayName: Build an image
   inputs:
@@ -224,7 +254,17 @@ steps:
     dockerRegistryConnection: 'Adventworks DockerHub'  # replace with your Docker hub service connection
 ```
 
-The above example also shows how to build an image that depends on another image from a protected registry.
+To build an image that you plan to push to Azure Container Registry, add the following snippet:
+
+```yaml
+- task: Docker@0
+  displayName: Build an image
+  inputs:
+    azureSubscription: '<Azure service connection>'
+    azureContainerRegistry: '{"loginServer":"adventworks.azurecr.io", "id" : "/subscriptions/<Azure subscription id>/resourceGroups/<Resource group where your container registry is hosted>/providers/Microsoft.ContainerRegistry/registries/<Name of your registry>"}' # for example, "loginServer":"adventworks.azurecr.io", "id" : "/subscriptions/xxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/adventworks/providers/Microsoft.ContainerRegistry/registries/adventworks"
+```
+
+Note that you need to have an Azure service connection defined to do the above. In addition, you need to know the Azure subscription id, the name of the resource group, and the name of the container registry.
 
 ::: moniker-end
 
@@ -292,7 +332,7 @@ Then, define your build pipeline:
 Create a `.vsts-ci-yml` file at the root of your repo with the following content:
 
 ```yaml
-queue: 'Hosted Linux'
+queue: 'Hosted Linux Preview'
 steps:
   - script: docker build -f Dockerfile -t adventworks/dotnetcore-sample .
 ```
@@ -326,15 +366,25 @@ To push a Docker image:
 
 ::: moniker range="vsts"
 
-Add the following snippet to the `.vsts-ci.yml` file at the root of your repo:
+To push the image to Docker hub, add the following snippet to the `.vsts-ci.yml` file at the root of your repo:
 
 ```yaml
-steps:
 - task: Docker@0
   displayName: Push an image
   inputs:
     containerregistrytype: 'Container Registry'
     dockerRegistryConnection: 'Adventworks DockerHub'   # replace with your Docker hub service connection
+    action: 'Push an image'
+```
+
+To push the image to Azure Container Registry, you need to have an Azure service connection defined. In addition, you need to know the Azure subscription id, the name of the resource group, and the name of the container registry.
+
+```yaml
+- task: Docker@0
+  displayName: Push an image
+  inputs:
+    azureSubscription: '<Name of your Azure service connection>'
+    azureContainerRegistry: '{"loginServer":"adventworks.azurecr.io", "id" : "/subscriptions/<Azure subscription id>/resourceGroups/<Resource group where your container registry is hosted>/providers/Microsoft.ContainerRegistry/registries/<Name of your registry>"}' # for example, "loginServer":"adventworks.azurecr.io", "id" : "/subscriptions/xxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/adventworks/providers/Microsoft.ContainerRegistry/registries/adventworks"
     action: 'Push an image'
 ```
 

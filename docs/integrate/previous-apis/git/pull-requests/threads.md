@@ -28,14 +28,14 @@ the file location of the thread when it was created if the file was modified bet
 ## Get comments
 
 ```no-highlight
-GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}/pullRequests/{pullRequest}/threads?api-version={version}
+GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/pullRequests/{pullRequest}/threads?api-version={version}
 ```
 
 | Parameter   | Type    | Notes
 |:------------|:--------|:---------------------------------------------------------------------------------------
 | URL
 | instance    | string  | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project     | string  | ID or name of the [team project](../../tfs/projects.md). *Optional if specifying an ID for repository.*
+| project     | string  | ID or name of the [project](../../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository  | string  | ID of the [repository](../repositories.md).
 | pullRequest | integer | ID of the pull request.
 | Query
@@ -48,14 +48,14 @@ GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repos
 ## Create a thread
 
 ```no-highlight
-POST https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}/pullRequests/{pullRequest}/threads?api-version={version}
+POST https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/pullRequests/{pullRequest}/threads?api-version={version}
 ```
 
 | Parameter   | Type    | Notes
 |:------------|:--------|:---------------------------------------------------------------------------------------
 | URL
 | instance    | string  | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project     | string  | ID or name of the [team project](../../tfs/projects.md). *Optional if specifying an ID for repository.*
+| project     | string  | ID or name of the [project](../../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository  | string  | ID of the [repository](../repositories.md).
 | pullRequest | integer | ID of the pull request.
 | Query
@@ -123,14 +123,14 @@ setting rightFileStart and rightFileEnd.
 ## Add a comment to a thread
 
 ```no-highlight
-POST https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}/pullRequests/{pullRequest}/threads/{threadID}/comments?api-version={version}
+POST https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/pullRequests/{pullRequest}/threads/{threadID}/comments?api-version={version}
 ```
 
 | Parameter   | Type    | Notes
 |:------------|:--------|:---------------------------------------------------------------------------------------
 | URL
 | instance    | string  | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project     | string  | ID or name of the [team project](../../tfs/projects.md). *Optional if specifying an ID for repository.*
+| project     | string  | ID or name of the [project](../../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository  | string  | ID of the [repository](../repositories.md).
 | pullRequest | integer | ID of the pull request.
 | threadID    | integer | ID of the thread.
@@ -149,14 +149,14 @@ Threads can not be deleted, only comments can.  If all the comments in a thread 
 displayed on the web page.
 
 ```no-highlight
-POST https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}/pullRequests/{pullRequest}/threads/{threadID}/comments/{commentID}?api-version={version}
+POST https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/pullRequests/{pullRequest}/threads/{threadID}/comments/{commentID}?api-version={version}
 ```
 
 | Parameter   | Type    | Notes
 |:------------|:--------|:---------------------------------------------------------------------------------------
 | URL
 | instance    | string  | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project     | string  | ID or name of the [team project](../../tfs/projects.md). *Optional if specifying an ID for repository.*
+| project     | string  | ID or name of the [project](../../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository  | string  | ID of the [repository](../repositories.md).
 | pullRequest | integer | ID of the pull request.
 | threadID    | integer | ID of the thread.

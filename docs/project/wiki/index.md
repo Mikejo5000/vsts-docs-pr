@@ -47,11 +47,11 @@ Repository README files and wikis are great ways to share information with your 
 
 ::: moniker range=">= tfs-2018"
 - [Wiki Git repository files and file structure](wiki-file-structure.md)  
-- [Create a readme for your repo](../../git/create-a-readme.md?toc=/vsts/project/wiki/toc.json&bc=/vsts/project/wiki/breadcrumb/toc.json ) 
+- [Create a readme for your repo](../../repos/git/create-a-readme.md?toc=/vsts/project/wiki/toc.json&bc=/vsts/project/wiki/breadcrumb/toc.json ) 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2017" 
-- [Create a readme for your repo](../../git/create-a-readme.md?toc=/vsts/project/wiki/toc.json&bc=/vsts/project/wiki/breadcrumb/toc.json ) 
+- [Create a readme for your repo](../../repos/git/create-a-readme.md?toc=/vsts/project/wiki/toc.json&bc=/vsts/project/wiki/breadcrumb/toc.json ) 
 ::: moniker-end
 
 ## How-to Guides
@@ -84,7 +84,7 @@ Repository README files and wikis are great ways to share information with your 
 
 - [Markdown guidance](markdown-guidance.md)
 - [Keyboard shortcuts to manage Wiki pages](markdown-guidance.md)
-- [Navigate in the web portal](../../user-guide/work-web-portal.md?toc=/vsts/project/wiki/toc.json&bc=/vsts/project/wiki/breadcrumb/toc.json) 
+- [Navigate in the web portal](..//navigation/index.md?toc=/vsts/project/wiki/toc.json&bc=/vsts/project/wiki/breadcrumb/toc.json) 
  
 ## Resources 
 

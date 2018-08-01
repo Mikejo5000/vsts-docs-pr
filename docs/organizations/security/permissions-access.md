@@ -22,14 +22,14 @@ To connect and use the functions and features that VSTS and TFS provides, users 
 
 In addition to permissions, access to select features are controlled by the access level assigned to a user. Contributors and administrators should be added to Basic (paid) access. Stakeholder access is available to support free access to a limited set of features by an unlimited set of stakeholders. 
 
-For a complete reference of all built-in groups and permissions, see [Permissions and groups](permissions.md). For information about assigning access levels and supporting stakeholder access, see [Manage users and access](../accounts/add-account-users-from-user-hub.md) for VSTS, and [Change access levels](change-access-levels.md) for TFS. 
+For a complete reference of all built-in groups and permissions, see [Permissions and groups](permissions.md). For information about assigning access levels and supporting stakeholder access, see [Manage users and access](../accounts/add-organization-users-from-user-hub.md) for VSTS, and [Change access levels](change-access-levels.md) for TFS. 
 
 
 ## Code: Git and TFVC  
 
-You can connect to your code from the Code hub or the web portal, and using Xcode, Eclipse, IntelliJ, Android Studio, Visual Studio, Visual Studio Code. For an overview of code features and functions, see [Git](../../git/overview.md) and [Use Team Foundation Version Control (TFVC)](../../tfvc/overview.md). Stakeholders have no access to the Code hub or its features.
+You can connect to your code from the Code hub or the web portal, and using Xcode, Eclipse, IntelliJ, Android Studio, Visual Studio, Visual Studio Code. For an overview of code features and functions, see [Git](../../repos/git/overview.md) and [Use Team Foundation Version Control (TFVC)](../../repos/tfvc/overview.md). Stakeholders have no access to the Code hub or its features.
 
-From the team project admin content for Version Control, you can [set permissions on a repository](set-git-tfvc-repository-permissions.md). From the **Code>Branches** page, you can [set permissions for a specific branch and set branch policies](../../git/branch-permissions.md). 
+From the team project admin content for Version Control, you can [set permissions on a repository](set-git-tfvc-repository-permissions.md). From the **Code>Branches** page, you can [set permissions for a specific branch and set branch policies](../../repos/git/branch-permissions.md). 
 
 ### Git
 [!INCLUDE [temp](_shared/code-git.md)]
@@ -120,6 +120,6 @@ To manage notifications, see [Manage personal notifications](../../notifications
 - [Add users to a project or team](../../organizations/security/add-users-team-project.md)  
 - [Permissions and groups reference](permissions.md)  
 - [About access levels](access-levels.md)
-- [Work in the web portal](../../user-guide/work-web-portal.md) 
+- [Navigation basics](../../project/navigation/index.md) 
 
  

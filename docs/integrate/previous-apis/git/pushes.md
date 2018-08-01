@@ -17,20 +17,20 @@ ms.date: 08/04/2016
 
 [!INCLUDE [GET_STARTED](../_data/get-started.md)]
 
-There are [code samples](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/Git/PushesSample.cs) available for this endpoint.
+There are [code samples](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/repos/git/PushesSample.cs) available for this endpoint.
 
 
 ## Get a list of pushes
 
 ```no-highlight
-GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}/pushes?api-version={version}[&fromDate={dateTime}&toDate={dateTime}&pusherId={guid}&$skip={integer}&$top={integer}]
+GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/pushes?api-version={version}[&fromDate={dateTime}&toDate={dateTime}&pusherId={guid}&$skip={integer}&$top={integer}]
 ```
 
 | Parameter  | Type     | Default | Notes
 |:-----------|:---------|:--------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
 | instance   | string   |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project    | string   |         | ID or name of the [team project](../tfs/projects.md). *Optional if specifying an ID for repository.*
+| project    | string   |         | ID or name of the [project](../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository | string   |         | ID or name of the [repository](./repositories.md).
 | Query
 | api-version| string   |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -68,14 +68,14 @@ GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repos
 ## Get a push
 
 ```
-GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}/pushes/{pushId}?api-version={version}[&includeRefUpdates={bool}]
+GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/pushes/{pushId}?api-version={version}[&includeRefUpdates={bool}]
 ```
 
 | Parameter         | Type     | Default | Notes
 |:------------------|:---------|:--------|:-----------------------------------------------------------------------------------------------------------------------------------------
 | URL
 | instance          | string   |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project           | string   |         | ID or name of the [team project](../tfs/projects.md). *Optional if specifying an ID for repository.*
+| project           | string   |         | ID or name of the [project](../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository        | string   |         | ID of the [repository](./repositories.md).
 | pushId            | integer  |         | ID of the push.
 | Query
@@ -103,14 +103,14 @@ Each new push is limited to 1 commit, but this commit can contain 1 or more chan
 |:------------------|:---------|:--------|:-----------------------------------------------------------------------------------------------------------------------------------------
 | URL
 | instance          | string   |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project           | string   |         | ID or name of the [team project](../tfs/projects.md). *Optional if specifying an ID for repository.*
+| project           | string   |         | ID or name of the [project](../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository        | string   |         | ID of the [repository](./repositories.md).
 | Body
 | refUpdates        | array    |         | The name of the branch to update or create with the new commit. ```name```: the name of the new or existing branch (value should start with ```refs/heads```). ```oldObjectId```: SHA1 of the commit this new commit is based on (i.e. the previous HEAD for existing branches). This value should be omitted when a new branch is specified by ```name```. 
 | commits           | array    |         | Commit to create. Must be an array of 1 item. See examples below.
 
 ```no-highlight
-POST https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}/pushes?api-version={version}
+POST https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/pushes?api-version={version}
 ```
 
 ### Initial commit (Create a new branch)
@@ -123,7 +123,7 @@ POST https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repo
 
 ### Add a binary file
 
-*Keep in mind that [Git isn't designed to store large or frequently-changing binaries](https://visualstudio.com/docs/git/manage-large-files).*
+*Keep in mind that [Git isn't designed to store large or frequently-changing binaries](https://visualstudio.com/docs/repos/git/manage-large-files).*
 
 [!code-REST [POST__git_repositories__tempRepoId__pushes3_json](./_data/pushes/POST__git_repositories__tempRepoId__pushes3.json)]
 

@@ -22,7 +22,7 @@ To share code, build apps, track work, and collaborate with team members, you co
   
 - [Web portal](#web-portal)  
 - [Visual Studio or Team Explorer](#visual-studio)  
-- [Eclipse/Team Explorer Everywhere](../../git/share-your-code-in-git-eclipse.md)
+- [Eclipse/Team Explorer Everywhere](../../repos/git/share-your-code-in-git-eclipse.md)
 - [Android Studio with the VSTS Plugin for Android Studio](../../java/download-android-studio-plug-in.md)  
 - [IntelliJ with the VSTS Plugin for IntelliJ](../../java/download-intellij-plug-in.md) 
 - [Visual Studio Code](../../java/vscode-extension.md)    
@@ -34,7 +34,7 @@ If you don't have a project yet, create one in [VSTS](../accounts/set-up-vs.md) 
 
 From each of these clients, you can quickly switch context to a different project and connect under a different sign-in user name. If you work remotely, you can configure your client to [connect to a TFS Proxy server](#proxy).
 
-To get started with a code base, [set up Git](../../git/gitquickstart.md) or [set up TFVC](../../tfvc/overview.md).
+To get started with a code base, [set up Git](../../repos/git/gitquickstart.md) or [set up TFVC](../../repos/tfvc/overview.md).
 
 <a id="web-portal">  </a>
 
@@ -55,22 +55,27 @@ To get started with a code base, [set up Git](../../git/gitquickstart.md) or [se
 
     The default Port is 8080. Specify the port number and directory for your server if defaults aren't used.
 	::: moniker-end
+
 0.  When you access the server for the first time, a Windows Identity dialog box will appear. Fill in your credentials and choose the **OK** button.
 
     > [!TIP]
-    > If you select the **Remember me** check box you won't have to enter your credentials the next time you connect.  
+    > If you select the **Remember me** check box you won't have to enter your credentials the next time you connect. 
+ 
 ::: moniker range=">= tfs-2017"   
 0. From the project summary page, hover over a service and then choose the page of interest. To choose another project, choose the ![](../../_img/icons/project-icon.png) VSTS icon.  
+
 	> [!div class="mx-imgBorder"]  
 	> ![Choose a service page, horizontal nav](_img/connect-projects/project-summary-page-choose-app-horz.png)  
+
 ::: moniker-end  
+
 ::: moniker range=">= tfs-2013 <= tfs-2015"   
 0.  Choose your project or team from the set of available links, or choose Browse to access all projects and teams.   
 
 	![Web portal, TFS, Overview](_img/connect-tp-tfs-web-portal.png) 
 ::: moniker-end   
 
-To learn more about each page and the tasks you can perform, see [Work in the web portal](../../user-guide/work-web-portal.md).
+To learn more about each page and the tasks you can perform, see [Navigation basics](../../project/navigation/index.md).
 
 
 <a name="logindifferentcred"></a>
@@ -295,17 +300,17 @@ An advantage to using Excel or Project is that you can work offline to add or mo
 
 ## Related articles
 
-- [Work in web portal](../../user-guide/work-web-portal.md)  
+- [Work in web portal](../../project/navigation/index.md)  
 - [Work in Team Explorer](../../user-guide/work-team-explorer.md)  
 - [Troubleshoot connection](../../user-guide/troubleshoot-connection.md)  
 
-If all you need is a code repository and bug tracking solution, then start with the [Git get started guide](../../git/gitquickstart.md) and [Manage bugs](../../work/backlogs/manage-bugs.md).  
+If all you need is a code repository and bug tracking solution, then start with the [Git get started guide](../../repos/git/gitquickstart.md) and [Manage bugs](../../work/backlogs/manage-bugs.md).  
 
 To start planning and tracking work, see [Get started with Agile tools to plan and track work](../../work/backlogs/overview.md). 
 
 ### User accounts and licensing
 
-To connect to a project, you need your user account added to the project. This is typically done by the [organization owner (VSTS)](../accounts/add-account-users-from-user-hub.md) or a [project administrator](../security/set-project-collection-level-permissions.md). 
+To connect to a project, you need your user account added to the project. This is typically done by the [organization owner (VSTS)](../accounts/add-organization-users-from-user-hub.md) or a [project administrator](../security/set-project-collection-level-permissions.md). 
 
 ::: moniker range="vsts"
 VSTS provides access to the first 5 account users free. After that, you need to [pay for more users (VSTS)](../../billing/buy-basic-access-add-users.md). 
@@ -337,7 +342,7 @@ If your remote team uses a [TFS Proxy server](/tfs/server/install/install-proxy-
 
     Make sure you specify the port number that your administrator assigned to TFS Proxy.
 
-To **Configure User Tools** to associate a file type with a compare or merge tool, see [Associate a file type with a file-comparison tool](../../tfvc/associate-file-type-file-comparison-tool.md) or [Associate a file type with a merge tool](../../tfvc/associate-file-type-merge-tool.md).
+To **Configure User Tools** to associate a file type with a compare or merge tool, see [Associate a file type with a file-comparison tool](../../repos/tfvc/associate-file-type-file-comparison-tool.md) or [Associate a file type with a merge tool](../../repos/tfvc/associate-file-type-merge-tool.md).
 
 
 ### What other clients support connection to VSTS and TFS?

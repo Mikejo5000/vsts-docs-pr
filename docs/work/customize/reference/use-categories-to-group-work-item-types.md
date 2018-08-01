@@ -1,6 +1,6 @@
 ---
 title: Use categories to group work item types | VSTS & TFS
-description: Generate flexible reports, and support increased integration across team projects using categories 
+description: Generate flexible reports, and support increased integration across projects using categories 
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 2fc6c411-89a9-4af5-8dd3-b2d4c2ecf540
@@ -15,7 +15,7 @@ ms.date: 04/04/2017
 [!INCLUDE [temp](../../_shared/version-header-hosted-plus-tfs.md)]
 
 
-By using categories, you can generate flexible reports, and support increased integration across team projects. You can more easily manage multiple work item types (WITs) as a group as well as WITs that are named differently. Also, you can use the **In Group** query operator to filter a list of work items based on the category to which they belong.  
+By using categories, you can generate flexible reports, and support increased integration across projects. You can more easily manage multiple work item types (WITs) as a group as well as WITs that are named differently. Also, you can use the **In Group** query operator to filter a list of work items based on the category to which they belong.  
   
 Categories associate one or more WITs as belonging to the same category. The [Agile tools](../../../organizations/settings/about-teams-and-settings.md) rely on the default category definitions, many of which specify a single WIT per category.  
   
@@ -44,7 +44,7 @@ You use categories to accomplish the following operations:
   
 <a name="process"></a> 
 ##Default categories and process configuration  
- Process configuration references the default categories defined for a team project. Here are the default categories that are defined in the [default process template](../../work-items/guidance/choose-process.md):  
+ Process configuration references the default categories defined for a project. Here are the default categories that are defined in the [default process template](../../work-items/guidance/choose-process.md):  
   
 -   Bug Category    
 -   Code Review Request Category and Code Review Response Category    
@@ -68,7 +68,7 @@ If you have created WITs that act in similar ways and you want to treat them in 
 ###Hidden Types category  
  The Hidden Types Category specifies the set of WITs that you do not want users to create manually. By default this set includes:  
   
--   [Code Review Request and Code Review Response](../../../tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md )    
+-   [Code Review Request and Code Review Response](../../../repos/tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md )    
 -   [Feedback Request and Feedback Response](../../../project/feedback/get-feedback.md)    
 -   [Shared Steps and Shared Parameter](../../../test/create-test-cases.md)    
 -   [Test Plan and Test Suite](../../../test/create-a-test-plan.md)  
@@ -88,10 +88,10 @@ Process configuration defines the layout and fields used in the display of the p
 - [Visual Studio TFS forum for Project Management and Work item tracking](http://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=tfsworkitemtracking).
   
 ### Category names 
-Each category has a friendly name and a reference name that must be unique within the team project. For more information, see [Categories XML element reference](categories-xml-element-reference.md).  
+Each category has a friendly name and a reference name that must be unique within the project. For more information, see [Categories XML element reference](categories-xml-element-reference.md).  
   
 ### Add or remove a category 
-To modify the categories defined for a team project and the On-premises XML process model, you export the XML definition file, make changes, and then import it using the **witadmin** command line tool. See [Import and export categories](witadmin/witadmin-import-export-categories.md). We recommend that you don't remove any of the  categories defined for the default process templates.  
+To modify the categories defined for a project and the On-premises XML process model, you export the XML definition file, make changes, and then import it using the **witadmin** command line tool. See [Import and export categories](witadmin/witadmin-import-export-categories.md). We recommend that you don't remove any of the  categories defined for the default process templates.  
 
 The system overwrites the categories file upon import.  
   
@@ -102,7 +102,7 @@ For WITs that you add to the Bug Category, you can add it to the Bug Category as
 
 <a name="query"></a>   
 ###  Filter a query based on a category 
- **A:** Yes. Use the **In Group** operator along with the **Work Item Type** field. For example, the following filter criteria will return all work items that are in the current team project, assigned to the team member, and defined as belonging to the Bug Category:  
+ **A:** Yes. Use the **In Group** operator along with the **Work Item Type** field. For example, the following filter criteria will return all work items that are in the current project, assigned to the team member, and defined as belonging to the Bug Category:  
   
 |**And/Or**|**Field**|**Operator**|**Value**|  
 |-----------------|---------------|------------------|---------------|  
