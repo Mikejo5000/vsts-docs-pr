@@ -11,17 +11,13 @@ monikerRange: '>= tfs-2015'
 
 # Azure DevOps Pipelines New User Orientation
 
-Azure DevOps Pipelines is a cloud service that you can use to automatically build and test your code project and make it available to other users. It works with just about any language or project type.
-
-If you're not sure if Pipelines is right for your needs, read [Why Use Azure DevOps Pipelines?](why-use-pipelines.md).
-
 ## What is Azure DevOps Pipelines?
 
-There are two main parts of Pipelines: Continuous Integration (CI) and Continous Delivery (CD).
+Azure DevOps Pipelines is a cloud service that you can use to automatically build and test your code project and make it available to other users. It works with just about any language or project type.
 
-**Continous Integration (CI)**: CI is the practice used by development teams to simplify the merging and testing of code. CI helps to catch bugs or problems early in the development cycle, which makes them easier and faster to fix. Automated tests are run as part of the CI process to ensure quality. Items known as "artifacts" are produced from CI systems and used by the **Continuous Delivery** release pipelines to drive automatic deployments.
+Pipelines combines both **Continuous Integration (CI)** and **Continuous Deployment (CD)** to constantly and consistently test and build your code and ship it to any target. 
 
-**Continuous Delivery (CD)**: CD is a process by which code is built, tested, and deployed to one or more test and production environments. Deploying and testing in multiple environments drives quality. CI systems produce the deployable artifacts, including infrastructure and apps, automated release pipelines consume these artifacts to release new versions and fixes to existing systems. Monitoring and alerting systems run constantly to drive visibility into the entire CD process and to ensure errors are caught often and early.
+If you're not sure if Pipelines is right for your needs, read [Why Use Azure DevOps Pipelines?](why-use-pipelines.md).
 
 ## Does Pipelines work with my language and tools?
 
