@@ -6,7 +6,7 @@ ms.manager: douge
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: tutorial
-ms.date: 08/01/2018
+ms.date: 08/02/2018
 author: mlearned
 monikerRange: 'vsts'
 ---
@@ -29,6 +29,7 @@ You will:
 
 * An Azure subscription. You can get one free through [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/).
 * A VSTS organization. If you don't have one, you can [create one for free](https://go.microsoft.com/fwlink/?LinkId=307137). If your team already has one, then make sure you are an administrator of the project you want to use.
+* A SQL API based Cosmos DB instance.  If you don't have one, you can follow the initial steps in [this tutorial](https://docs.microsoft.com/azure/cosmos-db/create-sql-api-dotnet) to create a Cosmos DB instance and collection.
 
 ## Clone a sample Azure Web App to your VSTS repository
 
@@ -36,7 +37,7 @@ This sample shows you how to use the Microsoft Azure Cosmos DB service to store 
 
 To import the sample app into a Git repo in VSTS:
 
- <TODO INSERT SIGN IN STEPS>
+ 1. Sign into your VSTS organization.
 
  1. On the **Code** hub for your project in VSTS, select the drop down and choose the option to **Import repository**.
 
@@ -64,7 +65,7 @@ To import the sample app into a Git repo in VSTS:
 
 ## Set up CD to Azure for your App
 
-The CI for the sample app produces the artifacts needed for deployment to Azure.
+The CI for the sample app produces the artifacts needed for deployment to Azure.  Follow the steps below to create a release definition which uses the CI artifacts for deploying a Cosmos DB instance.
 
 1. Select **Release** to create a release definition linked to the build artifacts from the CI pipeline you created with the previous steps.
 
@@ -84,6 +85,10 @@ The CI for the sample app produces the artifacts needed for deployment to Azure.
 
 1. At the top of the menu, select **Variables**.
 
+1. Retrieve your **endpoint** (URL) and **authKey** (primary or secondary key) for your Azure Cosmos DB account.  This information can be found on the Azure portal.
+
+  ![Auth and endpoint](_img/cosmos-db-ci-cd/keys.png)
+
 1. Select **+ Add** to create a new variable named **endpoint**.  Select **+ Add** to create a second variable named **authKey**.
 
 1. Select the **padlock** icon to make the authKey variable secret.
@@ -94,10 +99,10 @@ The CI for the sample app produces the artifacts needed for deployment to Azure.
 
 1. Select **Save** to save changes for the release defintion.
 
-<TODO need the values for cosmos>
-
 ## Review the CI/CD pipeline
-<TODO>
+
+Follow the steps below to review the CI/CD pipeline.
+
 1. On the **Code** hub select the **...** icon next to the **web.config** file in the **src** directory, and then select **Edit**.
 
 1. Enter a new **value** for the **database** key in the **appSettings** section of the web.config.  This simple change allows us to quickly test creating a new database in Azure Cosmos DB.
