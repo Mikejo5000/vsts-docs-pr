@@ -56,7 +56,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Upgrade guide</h3>
-                                                    <p>Upgrade your deployment.</p>
+                                                    <p>Upgrade your deployment.<br/></p>
                                                 </div>
                                             </div>
                                         </div>

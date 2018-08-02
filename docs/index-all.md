@@ -37,6 +37,11 @@ featureFlags:
                             <a href="/vsts/project/navigation/preview-features">Navigation Basics</a><br/>
                             <a href="/vsts/project/search/index">Search</a><br/>
                             <a href="/vsts/articles">Technical Articles</a></p>
+                        <h3>Analytics</h3>
+                            <p><a href="/vsts/report/dashboards/index">Dashboards</a><br/>
+                            <a href="/vsts/report/analytics/index">Analytics views</a><br/>
+                            <a href="/vsts/report/powerbi/index">Power BI</a><br/>
+                            <a href="/vsts/report/extend-analytics/index">Extend Analytics with OData</a></p>
 </td>
 <td width="25%">
                         <h3>Azure Boards</h3>
@@ -69,16 +74,16 @@ featureFlags:
                             <a href="/vsts/pipelines/library/index">Library Assets</a><br/>
                             <a href="/vsts/pipelines/agents/agents">Hosted &amp; Private Agents</a><br/>
                             <a href="/vsts/pipelines/tasks">Task Reference</a></p>
+                        <h3>Azure Artifacts</h3>
+                            <p><a href="/vsts/package/overview">Package Management</a><br/>
+                            <a href="/vsts/package/get-started-nuget">NuGet</a><br/>
+                            <a href="/vsts/package/get-started-npm">npm</a><br/>
+                            <a href="/vsts/package/get-started-maven">Maven</a></p>
                         <h3>Azure Test Plans</h3>
                             <p><a href="/vsts/pipelines/index">Continuous Testing</a><br/>
                             <a href="/vsts/test/index">Exploratory & Manual Testing</a><br/>
                             <a href="/vsts/test/load-test/index">Load Testing</a><br/>
                             <a href="/visualstudio/test/unit-test-your-code">Unit & Functional Testing</a></p>
-                        <h3>Analytics</h3>
-                            <p><a href="/vsts/report/dashboards/index">Dashboards</a><br/>
-                            <a href="/vsts/report/analytics/index">Analytics</a><br/>
-                            <a href="/vsts/report/powerbi/index">Power BI</a><br/>
-                            <a href="/vsts/report/extend-analytics/index">Extend Analytics with OData</a></p>
 </td>
 <td width="25%">
                         <h3>Management tools</h3>

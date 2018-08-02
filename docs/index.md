@@ -94,7 +94,20 @@ featureFlags:
 </tr>
 <tr>
 <td width="25%">
-<a  class="barLink" href="/vsts/project/navigation/index"><img src="https://docs.microsoft.com//media/common/i_portal.svg" alt="" />Navigation Basics</a>
+                                   <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com/media/common/i_portal.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3><a href="/vsts/project/navigation/index">Navigation Basics</a></h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
 </td>
 <td width="25%">
 &nbsp;&nbsp;&nbsp;
@@ -299,7 +312,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Boards</h3>
+                                                    <h3>Azure Boards</h3>
                                                     <p>Configure Kanban boards, use interactive backlogs, and get out-of-the-box support for Scrum.</p>
                                                 </div>
                                             </div>
@@ -318,7 +331,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Repos</h3>
+                                                    <h3>Azure Repos</h3>
                                                     <p>Use Git repositories, pull requests, and code review and then integrate with CI/CD to build and deploy your apps.</p>
                                                 </div>
                                             </div>
@@ -337,7 +350,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Azure DevOps Pipelines</h3>
+                                                    <h3>Azure Pipelines</h3>
                                                     <p>Test and deploy your apps  with high-performance pipelines. Start small and scale up as needed.</p>
                                                 </div>
                                             </div>
@@ -346,7 +359,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/index-packages">
+                                <a href="/vsts/index-artifacts">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -356,7 +369,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Azure DevOps Artifacts</h3>
+                                                    <h3>Azure Artifacts</h3>
                                                     <p>Share code with others and across your enterprise and support continuous integration and deployment of your apps.</p>
                                                 </div>
                                             </div>
@@ -375,7 +388,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Azure DevOps Test Center</h3>
+                                                    <h3>Azure Test Plans</h3>
                                                     <p>Test early and often. Setup test plans and track and report manual tests, run automated test suites and cloud-based load tests.</p>
                                                 </div>
                                             </div>

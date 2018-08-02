@@ -1,7 +1,7 @@
 ---
-title: Azure DevOps Services - Repos 
-titleSuffix: Azure DevOps Repos 
-description: Collaborate on software development through version control, work tracking, and continuous integration and delivery with Azure DevOps services 
+title: Collaborate on code development using Azure Repos 
+titleSuffix: Azure DevOps Services 
+description: Collaborate on software development using Azure Repos 
 layout: HubPage 
 hide_bc: true
 ms.topic: hub-page
