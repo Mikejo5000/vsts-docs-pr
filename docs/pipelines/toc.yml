@@ -78,6 +78,8 @@
     href: release/integrate-jenkins-vsts-cicd.md
   - name: Jenkins CI for VSTS Azure AKS
     href: release/integrate-jenkins-vsts-aks.md
+  - name: Azure Cosmos DB CI/CD
+    href: release/cosmos-db-ci-cd.md
 - name: Concepts
   items:
   - name: Agents
