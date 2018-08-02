@@ -23,7 +23,7 @@ You will:
 > * Create a Cosmos DB collection and database
 > * Set up CI for your app
 > * Set up CD to Azure for your app
-> * Test the CI/CD pipeline
+> * Review the CI/CD pipeline
 
 ## Prerequisites
 
@@ -54,6 +54,8 @@ To import the sample app into a Git repo in VSTS:
 
 1. Search for the **ASP.NET Application** build template, and then select **Apply**.
 
+  ![ASP.NET Template](_img/cosmos-db-ci-cd/aspnettemplate.png)
+
 1. Select the **triggers**, and then select the checkbox for ""Enable continuous integration**.  This setting ensures every commit to the repository excecutes a build.
 
 1. Select **Save & Queue**, and then choose **Save and Queue** to execute a new build.
@@ -70,7 +72,9 @@ The CI for the sample app produces the artifacts needed for deployment to Azure.
 
 1. On the **Environments** section, select the **1 phase and 1 task** link.
 
-1. Select the **Azure Subscription**  <TODO ENDPOINT STUFF>
+1. Select the **Azure Subscription**, and then select **Authorize**.
+
+  ![Authorize Azure Subscription](_img/cosmos-db-ci-cd/authorizeazure.png)
 
 1. Choose an **App Service name**.
 
@@ -92,7 +96,7 @@ The CI for the sample app produces the artifacts needed for deployment to Azure.
 
 <TODO need the values for cosmos>
 
-## Test the CI/CD pipeline
+## Review the CI/CD pipeline
 <TODO>
 1. On the **Code** hub select the **...** icon next to the **web.config** file in the **src** directory, and then select **Edit**.
 
@@ -107,9 +111,7 @@ A new CI build was created due to the continuous integration trigger you enabled
 ## Clean up resources
 
  > [!NOTE]
- > The steps below will permanently delete resources.  Only use this functionality after carefully reading the prompts.
-
-<TODO DO CLEANUP>
+ > Ensure you delete any unneeded resources in Azure such as the Cosmos DB instance to avoid incurring charges.
 
 ## Next steps
 
@@ -120,8 +122,7 @@ You can optionally modify these build and release definitions to meet the needs 
 > * Create a Cosmos DB collection and database
 > * Set up CI for your app
 > * Set up CD to Azure for your app
-> * Test the CI/CD pipeline
-
+> * Review the CI/CD pipeline
 
 To learn more about the VSTS pipeline see this tutorial:
 
