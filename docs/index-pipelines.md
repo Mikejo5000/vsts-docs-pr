@@ -115,7 +115,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Package Management</h3>
-                                                    <p>Create, host, and share NuGet and npm packages with your teams.</p>
+                                                    <p>Create, host, and share NuGet, npm, and Maven packages with your teams.</p>
                                                 </div>
                                             </div>
                                         </div>
