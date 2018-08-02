@@ -94,7 +94,7 @@ featureFlags:
 </tr>
 <tr>
 <td width="25%">
-<a  href="/vsts/project/navigation/index"><img src="https://docs.microsoft.com//media/common/i_portal.svg" alt="" />Navigation Basics</a>
+<a  class="barLink" href="/vsts/project/navigation/index"><img src="https://docs.microsoft.com//media/common/i_portal.svg" alt="" />Navigation Basics</a>
 </td>
 <td width="25%">
 &nbsp;&nbsp;&nbsp;
@@ -909,7 +909,9 @@ featureFlags:
 -->
 <a id="devops-services-extensions" />
 <h2>Marketplace and Extensions</h2>
-<tr><td width="25%">
+<table border="0">
+<tr>
+<td width="25%">
 <a class="barLink" href="/vsts/marketplace/overview"><img src="https://docs.microsoft.com/media/common/i_extend.svg" alt="" />Discover Extensions</a>
 </td>
 <td width="25%">
@@ -922,7 +924,8 @@ featureFlags:
 <a class="barLink" href="/vsts/report/extend-analytics/index"><img src="_img/index/i_analytics.svg" alt="" />Extend Analytics with OData</a>
 </td>
 </tr>
-<tr><td width="25%">
+<tr>
+<td width="25%">
 <a class="barLink" href="/rest/api/vsts/index"><img src="_img/index/logo_REST.svg" alt="" />REST APIs</a>
 </td>
 <td width="25%">
@@ -1065,10 +1068,10 @@ featureFlags:
 <table border="0">
 <tbody style="padding-left:0;font-size:.8rem;">
 <tr>
-<td width="20%">
+<td width="15%">
 <a class="barLink" href="/vsts/index-all"><img src="https://docs.microsoft.com//media/common/i_library.svg" alt="" />Index</a>
 </td>
-<td width="20%">
+<td width="25%">
 <a class="barLink" href="/vsts/release-notes/index"><img src="https://docs.microsoft.com/media/common/i_whats-new.svg" alt="" />Features Timeline & Release Notes</a>
 </td>
 <td width="20%">
@@ -1078,7 +1081,7 @@ featureFlags:
 <a class="barLink"  href="https://docs.microsoft.com/en-us/azure/devops/"><img src="https://docs.microsoft.com/media/common/i_dev-ops.svg" alt="" />Azure DevOps Resource Center</a>
 </td>
 <td width="20%">
-<a class="barLink" href="/tfs/server/index"><img src="https://docs.microsoft.com/media/common/i_server.svg" alt="" />TFS Server Administration</a>
+<a class="barLink" href="/vsts/index-tfs"><img src="https://docs.microsoft.com/media/common/i_server.svg" alt="" />TFS Server Administration</a>
 </td>
 </tr>
 </tbody>

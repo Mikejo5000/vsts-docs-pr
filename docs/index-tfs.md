@@ -22,8 +22,10 @@ featureFlags:
     <p>Collaborate across your organization with tools designed to start small and scale up as needed. TFS provides source control, configurable Kanban boards, interactive backlogs, simple planning tools, and high-performance pipelines.</p>
 <a href="#start"> </a>
 <h2 id="start">Get Started with Team Foundation Server</h2>
-         <ul id="on-boarding" class="cardsY panelContent featuredContent">
-                            <li>
+<table border="0" class="fullspan cardsY">
+<tbody style="padding-left:0;">
+<tr>
+<td width="25%">
                                 <a href="/tfs/server/install/get-started">
                                     <div class="cardSize">
                                         <div class="cardPadding">
@@ -41,8 +43,8 @@ featureFlags:
                                         </div>
                                     </div>
                                 </a>
-                            </li>
-                            <li>
+</td>
+<td width="25%">
                                 <a href="/tfs/server/upgrade/get-started">
                                     <div class="cardSize">
                                         <div class="cardPadding">
@@ -60,9 +62,32 @@ featureFlags:
                                         </div>
                                     </div>
                                 </a>
-                            </li>
-                        </ul>
-
+</td>
+<td width="25%">
+                                <a href="/vsts/project/navigation/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com//media/common/i_portal.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Navigation Basics</h3>
+                                                    <p>Learn how to work effectively within the web portal. </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+</td>
+<td width="25%">
+&nbsp;&nbsp;&nbsp;
+</td>
+</tr>
+</tbody>
+</table>
 <h2>Services</h2>
 <table border="0" class="cardsA">
 <tr>
@@ -250,7 +275,24 @@ featureFlags:
 </td>
 </tr>
 </table>
-
+<table border="0">
+<tbody style="padding-left:0;font-size:.8rem;">
+<tr>
+<td width="25%">
+<a class="barLink" href="/vsts/notifications/index"><img src="https://docs.microsoft.com/media/common/i_alert.svg" alt="" />Notifications</a>
+</td>
+<td width="25%">
+<a class="barLink"  href="/vsts/project/search/index"><img src="_img/index/i_search.svg" alt="" />Search</a>
+</td>
+<td width="25%">
+<a class="barLink" href="/vsts/project/navigation/set-favorites"><img src="_img/index/favorite.png" alt="" />Favorites</a>
+</td>
+<td width="25%">
+&nbsp;&nbsp;&nbsp;
+</td>
+</tr>
+</tbody>
+</table>
 <a id="devops-services-settings" />
 <h2>Administrative Tools</h2>
 <table border="0">
@@ -336,20 +378,10 @@ featureFlags:
 <h3>Additional Resources</h3>
 <table border="0">
 <tbody style="padding-left:0;font-size:.8rem;">
-<tr><td width="25%">
-<a class="barLink" href="/vsts/project/navigation/index"><img src="https://docs.microsoft.com//media/common/i_portal.svg" alt="" />Navigation Basics</a>
-</td>
+<tr>
 <td width="25%">
-<a class="barLink" href="/vsts/notifications/index"><img src="https://docs.microsoft.com/media/common/i_alert.svg" alt="" />Notifications</a>
-</td>
+<a class="barLink" href="/vsts/index-all"><img src="https://docs.microsoft.com//media/common/i_library.svg" alt="" />Index</a>
 <td width="25%">
-<a class="barLink"  href="/vsts/project/search/index"><img src="_img/index/i_search.svg" alt="" />Search</a>
-</td>
-<td width="25%">
-&nbsp;&nbsp;&nbsp;
-</td>
-</tr>
-<tr><td width="25%">
 <a class="barLink" href="/vsts/release-notes/index"><img src="https://docs.microsoft.com/media/common/i_whats-new.svg" alt="" />Features Timeline & Release Notes</a>
 </td>
 <td width="25%">
@@ -357,9 +389,6 @@ featureFlags:
 </td>
 <td width="25%">
 <a class="barLink"  href="https://docs.microsoft.com/en-us/azure/devops/"><img src="https://docs.microsoft.com/media/common/i_dev-ops.svg" alt="" />Azure DevOps Resource Center</a>
-</td>
-<td width="25%">
-<a class="barLink" href="/vsts/index-all"><img src="https://docs.microsoft.com//media/common/i_library.svg" alt="" />Index</a>
 </td>
 </tr>
 </tbody>
