@@ -5,10 +5,10 @@ description: Quickstart guide to signing up and inviting others to join a team p
 ms.technology: devops-new-user 
 ms.prod: devops
 ms.topic: quickstart
-ms.assetid: 
 ms.manager: douge
-ms.author: kaelli
-ms.date: 07/14/2017
+ms.author: sdanie
+author: steved0x
+ms.date: 09/05/2018
 monikerRange: 'vsts'
 ---
 
