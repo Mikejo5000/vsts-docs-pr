@@ -113,6 +113,7 @@ Follow the steps below to test and review the CI/CD pipeline.
 
 1. On the **Build** hub select **Builds** and you will see your CI build executing.  You can follow the build execution with the interactive logging.  Once the build completes, you can also monitor the release.
 
+
 The continuous integration trigger you enabled earlier ensures a build executes for every commit. The build will complete and start a deployment to Azure. Navigate to Cosmos DB in the Azure portal, and you will see the CD process created a new database.
 
 ## Clean up resources
