@@ -257,7 +257,7 @@ featureFlags:
 </tr>
 <tr>
 <td width="33%">
-                                <a href="/vsts/package/index">
+                                <a href="/vsts/index-artifacts">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
