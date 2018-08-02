@@ -41,7 +41,7 @@ To import the sample app into a Git repo in VSTS:
 
  1. On the **Code** hub for your project in VSTS, select the drop-down and choose the option to **Import repository**.
 
- 1. In the **Import a Git repository** dialog box, paste https://github.com/Azure-Samples/documentdb-dotnet-todo-app.git into the **Clone URL** text box.
+ 1. On the **Import a Git repository** dialog box, paste https://github.com/Azure-Samples/documentdb-dotnet-todo-app.git into the **Clone URL** text box.
 
  1. Click **Import** to copy the sample code into your Git repo.
 
@@ -111,7 +111,7 @@ Follow the steps below to test and review the CI/CD pipeline.
 
 1. Select **Commit**, and then choose **Commit** to save the changes directly to the repostiory.
 
-1. On the **Build** hub select **Builds** and you will see your CI build executing.  You can follow the build execution with the interactive logging.  Once the build completes, You can also monitor the release.
+1. On the **Build** hub select **Builds** and you will see your CI build executing.  You can follow the build execution with the interactive logging.  Once the build completes, you can also monitor the release.
 
 The continuous integration trigger you enabled earlier ensures a build executes for every commit. The build will complete and start a deployment to Azure. Navigate to Cosmos DB in the Azure portal, and you will see the CD process created a new database.
 
