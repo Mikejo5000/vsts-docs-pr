@@ -39,7 +39,7 @@ To import the sample app into a Git repo in VSTS:
 
  1. Sign into your VSTS organization.
 
- 1. On the **Code** hub for your project in VSTS, select the drop down and choose the option to **Import repository**.
+ 1. On the **Code** hub for your project in VSTS, select the drop-down and choose the option to **Import repository**.
 
  1. In the **Import a Git repository** dialog box, paste https://github.com/Azure-Samples/documentdb-dotnet-todo-app.git into the **Clone URL** text box.
 
@@ -101,9 +101,9 @@ The CI for the sample app produces the artifacts needed for deployment to Azure.
 
 ## Review the CI/CD pipeline
 
-Follow the steps below to review the CI/CD pipeline.
+Follow the steps below to test and review the CI/CD pipeline.
 
-1. On the **Code** hub select the **...** icon next to the **web.config** file in the **src** directory, and then select **Edit**.
+1. On the **Code** hub select the **ellipsis** (...) icon next to the **web.config** file in the **src** directory, and then select **Edit**.
 
 1. Enter a new **value** for the **database** key in the **appSettings** section of the web.config.  This simple change allows us to quickly test creating a new database in Azure Cosmos DB.
 
