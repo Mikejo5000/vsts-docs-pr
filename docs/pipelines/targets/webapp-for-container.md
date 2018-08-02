@@ -38,26 +38,48 @@ You can automatically deploy your containers to an Azure App Service after every
 
 ## Example
 
-If you want some sample code that works with this guidance, follow these steps:
+1. Build your code and upload it as a Docker image to a repo in the relevant type of container registry:
 
-1. Import (into VSTS or TFS) or fork (into GitHub) this repo:
-
-   `https://github.com/adventworks/dotnetcore-sample`
+   * [Docker Hub example steps](../languages/docker.md)
+   * [Azure Container Registry example steps](../languages/docker.md)
     
-1. Follow the guidance in the topic [Docker](../languages/docker.md) to build the sample code.
+1. Create a [Web App for Containers](https://portal.azure.com/#create/Microsoft.AppSvcLinux) instance in the Azure portal.
+   Choose the **Configure container** setting and enter details of the container registry you are using:
 
-1. Create a **Web App for Containers** in the Azure portal.
-   For the container, select the image that you pushed to Docker hub while following the steps in the topic linked in the previous step.
+   * For Azure Container Registry, select the registry, image, and tag.
+   * For Docker Hub, enter the image name and, optionally, the tag name. 
+   * For a private registry type, enter image, server, and credential information. 
 
 1. Set up continuous deployment to the Web App for Containers instance using the following instructions:
 
 # [Designer](#tab/designer)
 
-Select **Empty Template** in a release pipeline. Add an **Azure CLI** task with this inline script:
+1. In VSTS or TFS, create a new release pipeline and apply the **Azure App Service deployment** template.
 
-```bash
-az webapp config container set --name <name of your web app> --resource-group <name of your resource group> --docker-registry-server-user <user id for Docker hub> --docker-registry-server-password <Password for Docker hub> --docker-custom-image-name $(Build.Repository.Name):$(Build.BuildId)'
-```
+1. Add the appropriate type of artifact in the **Pipeline** tab:
+
+   * For Azure Container Registry, choose an Azure subscription or [Azure Resource Manager service connection](../library/connect-to-azure.md), then select the resource group, Azure container registry, and repository containing your image.
+   * For Docker Hub, choose your Docker service connection, namespace (your Docker ID), and repository. 
+
+1. Open the **Tasks** tab and, with the **Environment** blade selected, choose your Azure subscription or Azure Resource Manager service connection.
+
+1. For **App type**, choose `Linux App` (even though the app is .NET  Core, the container will be hosted on Linux in the Web App for Containers instance).
+
+1. For **Service name**, select or type the name of your Web App for Containers instance.
+
+1. For **Registry or Namespace**, enter the URL of your container registry:
+
+   * For Azure Container Registry, this can be found as the **Login server** property of your Azure Container Registry instance in the Azure portal. For example, `mysampleapp.azurecr.io`
+   * For Docker Hub, 
+   
+1. For **Repository**, enter the name of your image repository: 
+
+   * For Azure Container Registry, this can be found under **Services | Repositories** in the properties of your Azure Container Registry instance in the Azure portal. For example, `dotnetcoresample`
+   * For Docker Hub, 
+
+1. Select the **Run on agent** blade and set the agnet queue to **Hosted Linux Preview**.
+
+1. Save the pipeline and start a new release.
 
 # [YAML](#tab/yaml)
 
