@@ -19,7 +19,7 @@ Create a continuous integration (CI) and continuous delivery (CD) pipeline for A
 You will:
 
 > [!div class="checklist"]
-> * Clone a sample Azure Web App to your VSTS repository
+> * Clone a sample Cosmos DB and Azure Web App to your repository
 > * Create a Cosmos DB collection and database
 > * Set up CI for your app
 > * Set up CD to Azure for your app
@@ -31,7 +31,7 @@ You will:
 * A VSTS organization. If you don't have one, you can [create one for free](https://go.microsoft.com/fwlink/?LinkId=307137). If your team already has one, then make sure you are an administrator of the project you want to use.
 * A SQL API based Cosmos DB instance.  If you don't have one, you can follow the initial steps in [this tutorial](https://docs.microsoft.com/azure/cosmos-db/create-sql-api-dotnet) to create a Cosmos DB instance and collection.
 
-## Clone a sample Azure Web App to your VSTS repository
+## Clone a sample Cosmos DB and Azure Web App to your repository
 
 This sample shows you how to use the Microsoft Azure Cosmos DB service to store and access data from an ASP.NET MVC application hosted on Azure App Service.  The application is a simple TODO application.  You can learn more about the sample application [here](https://github.com/Azure-Samples/documentdb-dotnet-todo-app).
 
@@ -125,7 +125,7 @@ The continuous integration trigger you enabled earlier ensures a build executes 
 You can optionally modify these build and release definitions to meet the needs of your team. You can also use this CI/CD pattern as a template for your other projects.  You learned how to:
 
 > [!div class="checklist"]
-> * Clone a sample Azure Web App to your VSTS repository
+> * Clone a sample Cosmos DB and Azure Web App to your repository
 > * Create a Cosmos DB collection and database
 > * Set up CI for your app
 > * Set up CD to Azure for your app
