@@ -70,12 +70,12 @@ You can automatically deploy your containers to an Azure App Service after every
 1. For **Registry or Namespace**, enter the URL of your container registry:
 
    * For Azure Container Registry, this can be found as the **Login server** property of your Azure Container Registry instance in the Azure portal. For example, `mysampleapp.azurecr.io`
-   * For Docker Hub, 
+   * For Docker Hub, enter just your Docker ID.
    
 1. For **Repository**, enter the name of your image repository: 
 
    * For Azure Container Registry, this can be found under **Services | Repositories** in the properties of your Azure Container Registry instance in the Azure portal. For example, `dotnetcoresample`
-   * For Docker Hub, 
+   * For Docker Hub, enter the path of the Docker image stored in your Docker Hub repository. For example, `<your-docker-id>/dotnetcoresample`
 
 1. Select the **Run on agent** blade and set the agnet queue to **Hosted Linux Preview**.
 
