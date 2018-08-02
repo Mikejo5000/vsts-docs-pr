@@ -5,9 +5,9 @@ ms.prod: devops
 ms.technology: devops-new-user
 ms.assetid:  
 ms.manager: douge
-ms.author: chcomley
-author: chcomley
-ms.date: 06/04/2018
+ms.author: sdanie
+author: steved0x
+ms.date: 09/05/2018
 monikerRange: '>= tfs-2013'
 ---
 

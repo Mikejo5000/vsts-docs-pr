@@ -4,11 +4,12 @@ titleSuffix: Azure DevOps Services
 description: What do you get with Azure DevOps Repos  
 ms.prod: devops
 ms.technology: devops-new-user
-ms.assetid: 4 
 ms.manager: douge
-ms.author: kaelli
-ms.date: 06/22/2017
+ms.author: sdanie
+author: steved0x
+ms.date: 09/05/2018s
 ms.topic: overview
+monikerRange: 'vsts'
 ---
 
 # What is Azure DevOps Repos?
