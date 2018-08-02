@@ -1,6 +1,6 @@
 ---
 title: CI/CD with APP Service and Azure Cosmos DB | VSTS Tutorial
-description: Use VSTS to enable Continuous Integration (CI) and Continous Deployment (CD) for your ASP.NET App and Azure Cosmos DB.
+description: Use VSTS to enable Continuous Integration (CI) and Continous Deployment (CD) for your ASP.NET App service and Azure Cosmos DB.
 ms.author: mlearned
 ms.manager: douge
 ms.prod: devops
@@ -33,7 +33,7 @@ You will:
 
 ## Clone a sample Azure Web App to your VSTS repository
 
-This sample shows you how to use the Microsoft Azure Cosmos DB service to store and access data from an ASP.NET MVC application hosted on Azure Websites.
+This sample shows you how to use the Microsoft Azure Cosmos DB service to store and access data from an ASP.NET MVC application hosted on Azure App Service.  The application is a simple TODO application.  You can learn more about the sample application [here](https://github.com/Azure-Samples/documentdb-dotnet-todo-app).
 
 To import the sample app into a Git repo in VSTS:
 
