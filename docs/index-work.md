@@ -126,25 +126,6 @@ featureFlags:
                                 </a>
 </td>
 <td width="25%">
-<a href="/vsts/work/scrum/index">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="_img/index/i_scrum.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Sprints (Scrum)</h3>
-                                                    <p>Plan a sprint, use a task board in daily scrums, monitor sprint burndown.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-</td>
-<td width="25%">
                                 <a href="/vsts/organizations/settings/work/inheritance-process-model">
                                     <div class="cardSize">
                                         <div class="cardPadding">
@@ -183,8 +164,6 @@ featureFlags:
                                     </div>
                                 </a>
 </td>
-</tr>
-<tr>
 <td width="25%">
                                 <a href="/vsts/project/feedback/index">
                                     <div class="cardSize">
@@ -205,6 +184,8 @@ featureFlags:
                                     </div>
                                 </a>
 </td>
+</tr>
+<tr>
 <td width="25%">
                                 <a href="/vsts/organizations/settings/index#work">
                                     <div class="cardSize">
@@ -230,13 +211,20 @@ featureFlags:
 <td width="25%">
 &nbsp;&nbsp;&nbsp;
 </td>
+<td width="25%">
+&nbsp;&nbsp;&nbsp;
+</td>
 </tr>
 </table>
 
 <h3 style="padding-left:0;">Additional Resources</h3>
 <table border="0">
 <tbody style="padding-left:0;font-size:.8rem;">
-<tr><td width="25%">
+<tr>
+<td width="25%">
+<a class="barLink" href="/vsts/index-all"><img src="https://docs.microsoft.com//media/common/i_library.svg" alt="" />Index</a>
+</td>
+<td width="25%">
 <a class="barLink" href="/vsts/release-notes/index"><img src="https://docs.microsoft.com/media/common/i_whats-new.svg" alt="" />Features Timeline & Release Notes</a>
 </td>
 <td width="25%">
@@ -244,9 +232,6 @@ featureFlags:
 </td>
 <td width="25%">
 <a class="barLink"  href="https://docs.microsoft.com/en-us/azure/devops/"><img src="https://docs.microsoft.com/media/common/i_dev-ops.svg" alt="" />Azure DevOps Resource Center</a>
-</td>
-<td width="25%">
-<a class="barLink" href="/vsts/index-all"><img src="https://docs.microsoft.com//media/common/i_library.svg" alt="" />Index</a>
 </td>
 </tr>
 </tbody>

@@ -173,7 +173,7 @@ featureFlags:
                                                 <div class="cardText">
                                                     <h3>Task Reference</h3>
                                                     <p>Include build, utility, test, and deploy tasks in your build and release
-                                                        definitions.</p>
+                                                        pipelines.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -378,7 +378,11 @@ featureFlags:
 <h3 style="padding-left:0;">Additional Resources</h3>
 <table border="0">
 <tbody style="padding-left:0;font-size:.8rem;">
-<tr><td width="25%">
+<tr>
+<td width="25%">
+<a class="barLink" href="/vsts/index-all"><img src="https://docs.microsoft.com//media/common/i_library.svg" alt="" />Index</a>
+</td>
+<td width="25%">
 <a class="barLink" href="/vsts/release-notes/index"><img src="https://docs.microsoft.com/media/common/i_whats-new.svg" alt="" />Features Timeline & Release Notes</a>
 </td>
 <td width="25%">
@@ -386,9 +390,6 @@ featureFlags:
 </td>
 <td width="25%">
 <a class="barLink"  href="https://docs.microsoft.com/en-us/azure/devops/"><img src="https://docs.microsoft.com/media/common/i_dev-ops.svg" alt="" />Azure DevOps Resource Center</a>
-</td>
-<td width="25%">
-<a class="barLink" href="/vsts/index-all"><img src="https://docs.microsoft.com//media/common/i_library.svg" alt="" />Index</a>
 </td>
 </tr>
 </tbody>

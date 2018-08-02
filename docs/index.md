@@ -24,8 +24,8 @@ featureFlags:
     <p>Collaborate across your organization with tools designed to start small and scale up as needed. Azure DevOps Services provides free private Git repositories, configurable Kanban boards, interactive backlogs, simple planning tools, high-performance pipelines, and extensive automated and cloud-based load testing.</p>
 <a href="#start"> </a>
 <h2>Get Started</h2>
-<p>Sign up and quickly get started with an Azure DevOps service. Add other services as you need them. Or, get started with the suite of integrated services. </p><br/>
-<table border="0" class="fullspan cardsY panelContent featuredContent">
+<table border="0" class="fullspan cardsY">
+<tbody style="padding-left:0;">
 <tr>
 <td width="25%">
                                     <div class="cardSize">
@@ -37,8 +37,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3><a href="/vsts/repos/get-started">Repos</a></h3>
-                                                    <p>Develop code with distributed, flexible version control.<br/></p>
+                                                    <h3><a href="/vsts/repos/get-started">Azure Repos Get Started Guide</a></h3>
                                                 </div>
                                             </div>
                                         </div>
@@ -54,8 +53,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3><a href="/vsts/work/get-started">Boards</a></h3>
-                                                    <p>Plan and track work and code defects with Agile tools.<br/></p>
+                                                    <h3><a href="/vsts/work/get-started">Azure Boards Get Started Guide</a></h3>
                                                 </div>
                                             </div>
                                         </div>
@@ -71,8 +69,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3><a href="/vsts/pipelines/get-started">Pipelines</a></h3>
-                                                    <p>Build and release apps with continuous integration and deployment.</p>
+                                                    <h3><a href="/vsts/pipelines/get-started">Azure Pipelines Get Started Guide</a></h3>
                                                 </div>
                                             </div>
                                         </div>
@@ -88,14 +85,28 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3><a href="/vsts/user-guide/index">Enterprise </a></h3>
-                                                    <p>Get started with the integrated suite of Azure DevOps Services.<br/></p>
+                                                    <h3><a href="/vsts/user-guide/index">Azure DevOps Enterprise Get Started Guide</a></h3>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
 </td>
 </tr>
+<tr>
+<td width="25%">
+<a  href="/vsts/project/navigation/index"><img src="https://docs.microsoft.com//media/common/i_portal.svg" alt="" />Navigation Basics</a>
+</td>
+<td width="25%">
+&nbsp;&nbsp;&nbsp;
+</td>
+<td width="25%">
+&nbsp;&nbsp;&nbsp;
+</td>
+<td width="25%">
+&nbsp;&nbsp;&nbsp;
+</td>
+</tr>
+</tbody>
 </table>
 <!---
 <ul id="on-boarding" class="cardsY panelContent featuredContent">
@@ -171,7 +182,6 @@ featureFlags:
 -->
 <a id="devops-services" />
 <h2>Azure DevOps Services</h2>
-<p>Find quickstarts, samples, and tutorials for each Azure DevOps service.</p><br/>
 <table border="0" class="cardsA">
 <tr>
 <td width="33%">
@@ -379,7 +389,6 @@ featureFlags:
 -->
 <a id="devops-services-supplemental" />
 <h2>Shared Features</h2>
-<p>Share information and gain insights using Wikis, Dashboards, and Analytics available to all Azure DevOps Services. </p><br/>
 <table border="0" class="cardsA">
 <tr>
 <td width="25%">
@@ -459,6 +468,24 @@ featureFlags:
                                 </a>
 </td>
 </tr>
+</table>
+<table border="0">
+<tbody style="padding-left:0;font-size:.8rem;">
+<tr>
+<td width="25%">
+<a class="barLink" href="/vsts/notifications/index"><img src="https://docs.microsoft.com/media/common/i_alert.svg" alt="" />Notifications</a>
+</td>
+<td width="25%">
+<a class="barLink"  href="/vsts/project/search/index"><img src="_img/index/i_search.svg" alt="" />Search</a>
+</td>
+<td width="25%">
+<a class="barLink" href="/vsts/project/navigation/set-favorites"><img src="_img/index/favorite.png" alt="" />Favorites</a>
+</td>
+<td width="25%">
+<a class="barLink" href="/vsts/organizations/public/index"><img src="https://docs.microsoft.com/media/common/i_web-color.svg" alt="" />Public Projects</a>
+</td>
+</tr>
+</tbody>
 </table>
 <!---
 <ul class="fullspan pivots">
@@ -641,8 +668,7 @@ featureFlags:
 </ul>
 -->
 <a id="devops-services-settings" />
-<h2>Management Tools</h2>
-<p>Configure and customize resources. </p><br/>
+<h2>Manage Resources</h2>
 <table border="0">
 <tr><td width="25%">
 <a class="barLink" href="/vsts/organizations/settings/index"><img src="https://docs.microsoft.com/media/common/i_management.svg" alt="" />Project Management</a>
@@ -883,8 +909,6 @@ featureFlags:
 -->
 <a id="devops-services-extensions" />
 <h2>Marketplace and Extensions</h2>
-<p>Discover, install, and build add-ons to customize and extend your Azure DevOps Experiences. </p><br/>
-<table border="0">
 <tr><td width="25%">
 <a class="barLink" href="/vsts/marketplace/overview"><img src="https://docs.microsoft.com/media/common/i_extend.svg" alt="" />Discover Extensions</a>
 </td>
@@ -1037,37 +1061,32 @@ featureFlags:
                 </ul>
 -->
 <a id="additional-resources" />
-<h3>Additional Resources</h3>
+<h3 style="padding-left:0;">Additional Resources</h3>
 <table border="0">
 <tbody style="padding-left:0;font-size:.8rem;">
-<tr><td width="25%">
-<a class="barLink" href="/vsts/project/navigation/index"><img src="https://docs.microsoft.com//media/common/i_portal.svg" alt="" />Navigation Basics</a>
+<tr>
+<td width="20%">
+<a class="barLink" href="/vsts/index-all"><img src="https://docs.microsoft.com//media/common/i_library.svg" alt="" />Index</a>
 </td>
-<td width="25%">
-<a class="barLink" href="/vsts/notifications/index"><img src="https://docs.microsoft.com/media/common/i_alert.svg" alt="" />Notifications</a>
-</td>
-<td width="25%">
-<a class="barLink"  href="/vsts/project/search/index"><img src="_img/index/i_search.svg" alt="" />Search</a>
-</td>
-<td width="25%">
-<a class="barLink" href="/tfs/server/index"><img src="https://docs.microsoft.com/media/common/i_server.svg" alt="" />TFS Server Administration</a>
-</td>
-</tr>
-<tr><td width="25%">
+<td width="20%">
 <a class="barLink" href="/vsts/release-notes/index"><img src="https://docs.microsoft.com/media/common/i_whats-new.svg" alt="" />Features Timeline & Release Notes</a>
 </td>
-<td width="25%">
+<td width="20%">
 <a class="barLink" href="/vsts/articles/index"><img src="https://docs.microsoft.com/media/common/i_article.svg" alt="" />Technical Articles</a>
 </td>
-<td width="25%">
+<td width="20%">
 <a class="barLink"  href="https://docs.microsoft.com/en-us/azure/devops/"><img src="https://docs.microsoft.com/media/common/i_dev-ops.svg" alt="" />Azure DevOps Resource Center</a>
 </td>
-<td width="25%">
-<a class="barLink" href="/vsts/index-all"><img src="https://docs.microsoft.com//media/common/i_library.svg" alt="" />Index</a>
+<td width="20%">
+<a class="barLink" href="/tfs/server/index"><img src="https://docs.microsoft.com/media/common/i_server.svg" alt="" />TFS Server Administration</a>
 </td>
 </tr>
 </tbody>
 </table>
+
+
+
+
 <!---
 <p>Release notes, technical articles, and additional information sources. </p><br/>
 <div class="group fullSpan noBullet cols cols4" style="float:left; margin-top:12px">
