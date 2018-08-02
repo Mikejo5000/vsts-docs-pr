@@ -71,7 +71,7 @@ The CI for the sample app produces the artifacts needed for deployment to Azure.
 
 1. Choose the **Azure App Service deployment** template, and then choose **Apply**.
 
-1. On the **Environments** section, select the **1 phase and 1 task** link.
+1. On the **Environments** section, select the **phase and task** link.
 
 1. Select the **Azure Subscription**, and then select **Authorize**.
 
@@ -109,9 +109,9 @@ Follow the steps below to review the CI/CD pipeline.
 
 1. Select **Commit**, and then choose **Commit** to save the changes directly to the repostiory.
 
-1. On the **Build** hub select **Builds** and you will see your CI build executing.
+1. On the **Build** hub select **Builds** and you will see your CI build executing.  You can follow the build execution with the interactive logging.  Once the build completes, You can also monitor the release.
 
-A new CI build was created due to the continuous integration trigger you enabled earlier.  Once the build completes a release will execute and deploy your changes to Azure.  Navigate to Cosmos DB in the Azure portal and you will see the CD process created a new database.
+The continuous integration trigger you enabled earlier ensures a build executes for every commit. The build will complete and start a deployment to Azure. Navigate to Cosmos DB in the Azure portal, and you will see the CD process created a new database.
 
 ## Clean up resources
 
