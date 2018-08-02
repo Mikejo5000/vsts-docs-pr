@@ -40,8 +40,8 @@ You can automatically deploy your containers to an Azure App Service after every
 
 1. Build your code and upload it as a Docker image to a repo in the relevant type of container registry:
 
-   * [Docker Hub example steps](../languages/docker.md)
    * [Azure Container Registry example steps](../languages/docker.md)
+   * [Docker Hub example steps](../languages/docker.md)
     
 1. Create a [Web App for Containers](https://portal.azure.com/#create/Microsoft.AppSvcLinux) instance in the Azure portal.
    Choose the **Configure container** setting and enter details of the container registry you are using:
@@ -61,9 +61,9 @@ You can automatically deploy your containers to an Azure App Service after every
    * For Azure Container Registry, choose an Azure subscription or [Azure Resource Manager service connection](../library/connect-to-azure.md), then select the resource group, Azure container registry, and repository containing your image.
    * For Docker Hub, choose your Docker service connection, namespace (your Docker ID), and repository. 
 
-1. Open the **Tasks** tab and, with the **Environment** blade selected, choose your Azure subscription or Azure Resource Manager service connection.
+1. Open the **Tasks** tab and, with the **Environment** blade selected, choose the Azure subscription or Azure Resource Manager service connection that will be used to communicate with the web app.
 
-1. For **App type**, choose `Linux App` (even though the app is .NET  Core, the container will be hosted on Linux in the Web App for Containers instance).
+1. For **App type**, choose `Linux App` (even though the app is .NET  Core, the image will be hosted on Linux in the Web App for Containers instance).
 
 1. For **Service name**, select or type the name of your Web App for Containers instance.
 
@@ -77,7 +77,7 @@ You can automatically deploy your containers to an Azure App Service after every
    * For Azure Container Registry, this can be found under **Services | Repositories** in the properties of your Azure Container Registry instance in the Azure portal. For example, `dotnetcoresample`
    * For Docker Hub, enter the path of the Docker image stored in your Docker Hub repository. For example, `<your-docker-id>/dotnetcoresample`
 
-1. Select the **Run on agent** blade and set the agnet queue to **Hosted Linux Preview**.
+1. Select the **Run on agent** blade and set the agent queue to **Hosted Linux Preview**.
 
 1. Save the pipeline and start a new release.
 
@@ -85,7 +85,19 @@ You can automatically deploy your containers to an Azure App Service after every
 
 ::: moniker range="vsts"
 
-Add the following to your `.vsts-ci.yml` file:
+For Azure Container Registry, add the following to your `.vsts-ci.yml` file:
+
+```yaml
+- task: AzureCLI@1
+  displayName: Azure CLI 
+  inputs:
+    azureSubscription: '<Name of your Azure subscription>'
+    scriptLocation: inlineScript
+    inlineScript: 'az webapp config container set --name <name of your web app> --resource-group <name of your resource group> --docker-registry-server-user <user id for Docker hub> --docker-registry-server-password <Password for Docker hub> --docker-custom-image-name $(Build.Repository.Name):$(Build.BuildId)'
+```
+
+For Docker Hub, add the following to your `.vsts-ci.yml` file:
+
 
 ```yaml
 - task: AzureCLI@1
@@ -109,58 +121,7 @@ YAML builds are not yet available on TFS.
 ## Container registry
 
 To deploy Docker images to Azure web apps, you need a container registry.
-You can use either Docker Hub or Azure Container Registry.
-
-### Docker hub
-
-The following sequence of tasks can be used to continuously build, push,
-and deploy an image to a web app using Docker Hub.
-
-# [Designer](#tab/designer)
-
-- Docker task
-    - Container registry type: `Container registry`
-    - Docker registry service connection: <Your Docker hub service connection>
-    - Action: `Build an image`
-    - Qualify image name: `Checked`
-
-- Docker task
-    - Container registry type: `Container registry`
-    - Docker registry service connection: <Your Docker hub service connection>
-    - Action: `Push an image`
-    - Qualify image name: `Checked`
-
-- Azure CLI
-    - Azure subscription: Your Azure service connection
-    - Script location: inline
-    - Inline script: `az webapp config container set --name <name of your web app> --resource-group <name of your resource group> --docker-registry-server-user <Docker id for Docker hub> --docker-registry-server-password <Password for Docker hub> --docker-custom-image-name $(Build.Repository.Name):$(Build.BuildId)`
-
-# [YAML](#tab/yaml)
-
-```yaml
-steps:
-- task: Docker@0
-  displayName: Build an image
-  inputs:
-    containerregistrytype: 'Container Registry'
-    dockerRegistryConnection: '<Name of your Docker hub service connection>'
-
-- task: Docker@0
-  displayName: Push an image
-  inputs:
-    containerregistrytype: 'Container Registry'
-    dockerRegistryConnection: '<Name of your Docker hub service connection>'
-    action: 'Push an image'
-
-
-- task: AzureCLI@1
-  displayName: Azure CLI 
-  inputs:
-    azureSubscription: '<Name of your Azure service connection>'
-    scriptLocation: inlineScript
-    inlineScript: 'az webapp config container set --name <name of your web app> --resource-group <name of your resource group> --docker-registry-server-user <Docker id for Docker hub> --docker-registry-server-password <Password for Docker hub> --docker-custom-image-name $(Build.Repository.Name):$(Build.BuildId)'
-```
----
+You can use either Azure Container Registry or Docker Hub.
 
 ### Azure container registry
 
@@ -216,6 +177,57 @@ and deploy an image to a web app using Azure Container Registry.
     DockerRepository: '$(Build.Repository.Name)'
     DockerImageTag: '$(Build.BuildId)'
 
+```
+---
+
+### Docker hub
+
+The following sequence of tasks can be used to continuously build, push,
+and deploy an image to a web app using Docker Hub.
+
+# [Designer](#tab/designer)
+
+- Docker task
+    - Container registry type: `Container registry`
+    - Docker registry service connection: <Your Docker hub service connection>
+    - Action: `Build an image`
+    - Qualify image name: `Checked`
+
+- Docker task
+    - Container registry type: `Container registry`
+    - Docker registry service connection: <Your Docker hub service connection>
+    - Action: `Push an image`
+    - Qualify image name: `Checked`
+
+- Azure CLI
+    - Azure subscription: Your Azure service connection
+    - Script location: inline
+    - Inline script: `az webapp config container set --name <name of your web app> --resource-group <name of your resource group> --docker-registry-server-user <Docker id for Docker hub> --docker-registry-server-password <Password for Docker hub> --docker-custom-image-name $(Build.Repository.Name):$(Build.BuildId)`
+
+# [YAML](#tab/yaml)
+
+```yaml
+steps:
+- task: Docker@0
+  displayName: Build an image
+  inputs:
+    containerregistrytype: 'Container Registry'
+    dockerRegistryConnection: '<Name of your Docker hub service connection>'
+
+- task: Docker@0
+  displayName: Push an image
+  inputs:
+    containerregistrytype: 'Container Registry'
+    dockerRegistryConnection: '<Name of your Docker hub service connection>'
+    action: 'Push an image'
+
+
+- task: AzureCLI@1
+  displayName: Azure CLI 
+  inputs:
+    azureSubscription: '<Name of your Azure service connection>'
+    scriptLocation: inlineScript
+    inlineScript: 'az webapp config container set --name <name of your web app> --resource-group <name of your resource group> --docker-registry-server-user <Docker id for Docker hub> --docker-registry-server-password <Password for Docker hub> --docker-custom-image-name $(Build.Repository.Name):$(Build.BuildId)'
 ```
 ---
 
