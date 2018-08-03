@@ -7,7 +7,7 @@ You can start viewing and adding work items once you connect to a project.
 
 <a id="browser" /> 
 
-[!INCLUDE [temp](/vsts/work/_shared/new-agile-hubs-feature.md)] 
+[!INCLUDE [temp](/vsts/work/_shared/new-agile-hubs-feature)] 
 
 # [New navigation](#tab/new-nav)
 ::: moniker range="vsts"
@@ -19,7 +19,7 @@ You can start viewing and adding work items once you connect to a project.
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
-[!INCLUDE [temp](/vsts/work/_shared/new-agile-hubs-feature-not-supported.md)] 
+[!INCLUDE [temp](/vsts/work/_shared/new-agile-hubs-feature-not-supported)] 
 ::: moniker-end
 
 # [Previous navigation](#tab/previous-nav)
