@@ -76,11 +76,11 @@ you can invite others to join your project, add code, start planning and trackin
 
 You provide others access to your account by adding their email address. 
 
-0. Choose ![gear icon](../../_img/icons/gear-icon.png), the gear Settings icon, and choose the **Account Settings** option
+0. Choose ![gear icon](../../_img/icons/gear-icon.png), the gear Settings icon, and choose the **Organization Settings** option.
  
-	![Open Account Settings](_img/sign-up/open-account-settings.png)
+	![Open Account Settings](../../_shared/_img/settings/open-account-settings-horz-brn.png)
 
-0. Then, click **Users** to open the Manage users page. Click **Add new users** to open the dialog. 
+0. Then, choose **Users** to open the **Manage users** page. Choose **Add new users** to open the dialog. 
 
 	![Open Add new users dialog](_img/sign-up/add-new-users.png)
 

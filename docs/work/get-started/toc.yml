@@ -1,4 +1,4 @@
-- name: Azure DevOps Repos Get Started Guide
+- name: Azure Boards get started
   href: index.md
   items:
   - name: "What is Azure Boards?"
@@ -8,9 +8,9 @@
   - name: Plan and track work
     href: plan-track-work.md 
   - name: Create your backlog
-    href: ../backlogs/create-your-backlog.md 
+    href: ../backlogs/create-your-backlog.md?toc=/vsts/work/get-started/toc.json&bc=/vsts/work/get-started/breadcrumb/toc.json 
   - name: Use Kanban boards
-    href: ../kanban/kanban-quickstart.md 
+    href: ../kanban/kanban-quickstart.md?toc=/vsts/work/get-started/toc.json&bc=/vsts/work/get-started/breadcrumb/toc.json  
   - name: Resources
     items:
     - name: Navigation Basics

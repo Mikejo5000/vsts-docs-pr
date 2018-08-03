@@ -9,7 +9,7 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
-monikerRange: '>= tfs-2013'
+monikerRange: 'vsts'
 ms.date: 09/05/2018  
 ---
 
@@ -26,29 +26,54 @@ Here we show how to add work items from the web portal and view work items you'v
 
 You can start adding work items once you connect to a team project. If you don't have a team project yet, create one in [Azure DevOps](sign-up-invite-teammates.md).
 
-[!INCLUDE [temp](../_shared/open-work-items.md)]
+
+## Open the Work Items page
+You can start viewing and adding work items once you connect to a project. 
+
+<a id="browser" /> 
+
+> [!NOTE]
+> The **New navigation** feature, which provides a vertical navigation experience, is in preview for VSTS. [Go here to enable it](/vsts/project/navigation/preview-features.md). When you enable **New navigation**, you automatically enable several new Agile tool features described in this blog post, [New Work Hubs](https://blogs.msdn.microsoft.com/devops/2018/06/22/new-work-hubs/). For on-premises TFS users, choose **Previous navigation** for guidance. 
+
+# [New navigation](#tab/new-nav)
+
+(1) Check that you have selected the right project, then (2) choose **Work>Work Items**. 
+
+> [!div class="mx-imgBorder"]  
+> ![Open Work>Work Items, new navigation](/vsts/work/work-items/_img/view-add/open-work-items-agile.png)
+
+# [Previous navigation](#tab/previous-nav)
+
+Open a browser window, choose **Work**, and then **Work Items**. 
+
+> [!div class="mx-imgBorder"]
+![Work>Work Items ](/vsts/work/work-items/_img/view-add/work-items-hub.png)
+
+---
+
+> [!NOTE]    
+>Depending on the process chosen when the project was created&mdash;[Agile](/vsts/work/work-items/guidance/agile-process-workflow), [Scrum](/vsts/work/work-items/guidance/scrum-process-workflow), or [CMMI](/vsts/work/work-items/guidance/cmmi-process-workflow)&mdash;the types of work items you can create will differ. For example, backlog items may be called product backlog items (Scrum), user stories (Agile), or requirements (CMMI). All three are similar: they describe the customer value to deliver and the work to be performed.
+>
+> For an overview of all three processes, see [Choose a process](/vsts/work/work-items/guidance/choose-process). 
+
 
 ## Add a work item 
 
-Adding a work item is just one click away. Simply choose the work item type from the **New Work Item** drop down menu.  
+0. Adding a work item is just one click away. Simply choose the work item type from the **New Work Item** drop down menu.  
 
-For example, here we choose User Story. 
+	For example, here we choose User Story. 
 
-> [!div class="mx-imgBorder"]  
-![Work>Work Items, Add a work item ](../work-items/_img/view-add/work-items-hub-new.png)
+	> [!div class="mx-imgBorder"]  
+	![Work>Work Items, Add a work item ](../work-items/_img/view-add/work-items-hub-new.png)
 
-> [!TIP]    
-> Work items you add are automatically scoped to the [Currently selected team's area and iteration paths](../../organizations/settings/set-team-defaults.md). To change the team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md?toc=/vsts/work/get-started/toc.json&bc=/vsts/work/get-started/breadcrumb/toc.json).
+	> [!TIP]    
+	> Work items you add are automatically scoped to the [Currently selected team's area and iteration paths](../../organizations/settings/set-team-defaults.md). To change the team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md?toc=/vsts/work/get-started/toc.json&bc=/vsts/work/get-started/breadcrumb/toc.json).
 
-Enter a title and then save the work item. Before you can change the State from its initial default, you must save it.  
-
-![Agile process, User story work item form](../backlogs/_img/add-new-work-item-vsts-user-story.png)  
-
-You can [add tags to any work item](../track/add-tags-to-work-items.md) to filter backlogs, queries, and work item lists.
-
-3. Enter a title and then save the work item. Before you can change the State from its initial default, you must save it.  
+0. Enter a title and then save the work item. Before you can change the State from its initial default, you must save it.  
 
 	![Agile process, User story work item form](../backlogs/_img/add-new-work-item-vsts-user-story.png)  
+
+	You can [add tags to any work item](../track/add-tags-to-work-items.md) to filter backlogs, queries, and work item lists.
 
 	That's it! 
 
@@ -83,7 +108,8 @@ Using the drop-down menu, you can focus on relevant items inside a project using
 
 For example, choose **My activity** to list all work items you've recently viewed, created, or modified. 
 
-![Work hub, Work Items page, Add a work item](_img/plan-track-work/view-work-item-activity.png)  
+> [!div class="mx-imgBorder"]  
+> ![Work hub, Work Items page, Add a work item](_img/plan-track-work/view-work-item-activity.png)  
 
 To view any work item listed, choose the title. 
 
