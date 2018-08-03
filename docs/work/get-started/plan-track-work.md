@@ -63,12 +63,12 @@ Using the drop-down menu, you can focus on relevant items inside a project using
 <tbody valign="top">
 <tr>
 <td>
-![Work>Work Items ](_img/view-add/view-menu.png)
+![Work>Work Items ](../work-items/_img/view-add/view-menu.png)
 </td>
 <td>
 <ul>
 <li>**Assigned to me**: lists all work items assigned to you in the project in the order they were last updated. To open or update a work item, simply click its title.</li>
-<li>**Following**: lists work items that you've elected to [follow](follow-work-items.md). </li>
+<li>**Following**: lists work items that you've elected to [follow](../work-items/follow-work-items.md). </li>
 <li>**Mentioned**: lists work items in which you've been mentioned in the last 30 days. </li>
 <li>**My activity**: lists work items that you have recently viewed or updated.</li>
 <li>**Recently updated**: lists work items recently updated in the project. </li>

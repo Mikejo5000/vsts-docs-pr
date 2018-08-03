@@ -9,7 +9,7 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
-monikerRange: 'vsts'
+monikerRange: '>= tfs-2013'
 ms.date: 09/05/2018
 ---
 
