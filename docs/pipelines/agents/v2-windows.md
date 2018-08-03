@@ -104,6 +104,8 @@ When you configure your agent to connect to TFS, you've got the following option
 
 For guidance on whether to run the agent in interactive mode or as a service, see [Agents: Interactive vs. service](agents.md#account).
 
+Note that if you configure as a service, the username you choose to run as should be 20 characters or less.
+
 ## Run the agent
 
  If you configured the agent to run interactively, to run it:
