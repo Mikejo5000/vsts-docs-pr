@@ -11,15 +11,15 @@
     href: ../backlogs/create-your-backlog.md 
   - name: Use Kanban boards
     href: ../kanban/kanban-quickstart.md 
-- name: Resources
-  items:
-  - name: Navigation Basics
-    href: ../../project/navigation/index.md
-  - name: Boards
-    href: ../kanban/index.md
-  - name: Backlogs
-    href: ../backlogs/index.md
-  - name: Sprints (Scrum)
-    href: ../scrum/index.md
-  - name: Project Management
-    href: ../../organizations/projects/index.md
+  - name: Resources
+    items:
+    - name: Navigation Basics
+      href: ../../project/navigation/index.md
+    - name: Boards
+      href: ../kanban/index.md
+    - name: Backlogs
+      href: ../backlogs/index.md
+    - name: Sprints (Scrum)
+      href: ../scrum/index.md
+    - name: Project Management
+      href: ../../organizations/projects/index.md
