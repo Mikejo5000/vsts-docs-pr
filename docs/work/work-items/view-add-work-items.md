@@ -39,7 +39,6 @@ View work items that you created or are assigned to you. The **Work>Work Items**
 
 Using the drop-down menu, you can focus on relevant items inside a project using one of the seven pivots as described next. Additionally, you can [filter](#filter) and [sort](#sort) each pivot view.  
 
-
 <table>
 <tbody valign="top">
 <tr>
