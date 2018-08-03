@@ -60,6 +60,8 @@ running 4 agents apiece.
 
 <li>Follow the instructions on the page to download the agent.</li>
 
+<li>Unpack the agent into the directory of your choice. Then run `config.cmd`.</li>
+
 </ol>
 
 > [!Note]
