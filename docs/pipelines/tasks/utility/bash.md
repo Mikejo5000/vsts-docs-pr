@@ -13,22 +13,29 @@ monikerRange: 'vsts'
 
 # Utility: Bash
 
-![](_img/bash.png) This is an early preview. Run a Bash script on macOS, Linux, or Windows
-
 ::: moniker range="> tfs-2018"
 ## YAML snippet
 [!INCLUDE [temp](../_shared/yaml/BashV3.md)]
+
+The Bash task also has a shortcut syntax in YAML:
+
+```yaml
+- bash: # script path or inline
+  workingDirectory: #
+  displayName: #
+  failOnStderr: #
+```
 ::: moniker-end
 
 ## Arguments
 
 <table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
-<tr><td>Type</td><td>(Optional) Target script type: File Path or Inline</td></tr>
-<tr><td>Script Path</td><td>(Required) Path of the script to execute. Must be a fully qualified path or relative to $(System.DefaultWorkingDirectory).</td></tr>
-<tr><td>Arguments</td><td>(Optional) Arguments passed to the PowerShell script. Either ordinal parameters or named parameters.</td></tr>
-<tr><td>Script</td><td>(Required) </td></tr>
-<tr><td>Working Directory</td><td>(Optional) undefined</td></tr>
-<tr><td>Fail on Standard Error</td><td>(Optional) If this is true, this task will fail if any errors are written to the StandardError stream.</td></tr>
+<tr><td>Type</td><td>Sets whether this is an inline script or a path to a .sh file</td></tr>
+<tr><td>Script Path</td><td>Path of the script to execute. Must be a fully qualified path or relative to $(System.DefaultWorkingDirectory). Required if Type is <code>filePath</code>.</td></tr>
+<tr><td>Arguments</td><td>Arguments passed to the Bash script.</td></tr>
+<tr><td>Script</td><td>Contents of the script. Required if Type is <code>inline</code></td></tr>
+<tr><td>Working Directory</td><td>Specify the working directory in which you want to run the command. If you leave it empty, the working directory is [$(Build.SourcesDirectory)](../../build/variables.md).</td></tr>
+<tr><td>If this is <code>true</code>, this task will fail if any errors are written to <code>stderr</code>.</td></tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 

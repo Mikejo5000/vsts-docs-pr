@@ -29,6 +29,15 @@ None
 ::: moniker range="> tfs-2018"
 ## YAML snippet
 [!INCLUDE [temp](../_shared/yaml/CmdLineV2.md)]
+
+The CmdLine task also has a shortcut syntax in YAML:
+
+```yaml
+- script: # script path or inline
+  workingDirectory: #
+  displayName: #
+  failOnStderr: #
+```
 ::: moniker-end
 
 ## Arguments

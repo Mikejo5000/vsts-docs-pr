@@ -4,6 +4,6 @@
 - task: CmdLine@2
   inputs:
     script: # script you want to run
-    #workingDirectory: # Optional
-    #failOnStderr: false # Optional
+    workingDirectory: # Optional
+    failOnStderr: false # Optional
 ```
