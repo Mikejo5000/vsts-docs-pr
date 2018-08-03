@@ -61,33 +61,25 @@ running 4 agents apiece.
 <li>Follow the instructions on the page.</li>
 </ol>
 
-::: moniker range="vsts"
-### Server URL on VSTS
+### Server URL and authentication
 
-`https://{your-organization}.visualstudio.com`
+::: moniker range="vsts"
+When setup asks for your server URL, for VSTS, answer `https://{your-organization}.visualstudio.com`.
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 < vsts"
-### Server URL on TFS 2017 and newer
-
-`https://{your_server}/tfs`
+When setup asks for your server URL, for TFS, answer `https://{your_server}/tfs`.
 ::: moniker-end
 
-### Authentication type
-
 ::: moniker range="vsts"
-#### VSTS
-
-Choose **PAT**, and then paste the [PAT token you created](#permissions) into the command prompt window.
-
+When setup asks for your authentication type, choose **PAT**.
+Then paste the [PAT token you created](#permissions) into the command prompt window.
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 < vsts"
-#### TFS 2017 and newer
-
 > [!IMPORTANT]
 > 
-> Make sure your server is [configured to support the authentication method](agents.md#configure-tfs-authentication) you want to use. 
+> Make sure your TFS server is [configured to support the authentication method](agents.md#configure-tfs-authentication) you want to use. 
   
 When you configure your agent to connect to TFS, you've got the following options:
 
@@ -97,16 +89,18 @@ When you configure your agent to connect to TFS, you've got the following option
 
 * **Integrated** (Default) Connect a Windows agent to TFS using the credentials of the signed-in user via a Windows authentication scheme such as NTLM or Kerberos. You won't be prompted for credentials after you choose this method.
  
-* **PAT** Supported only on VSTS and TFS 2017 and newer. After you choose PAT, paste the [PAT token you created](#permissions) into the command prompt window. Use a personal access token (PAT) if your TFS instance and the agent machine are not in a trusted domain. PAT authentication is handled by your TFS instance instead of the domain controller.
+* **PAT** After you choose PAT, paste the [PAT token you created](#permissions) into the command prompt window. Use a personal access token (PAT) if your TFS instance and the agent machine are not in a trusted domain. PAT authentication is handled by your TFS instance instead of the domain controller.
 
 > [!NOTE]
 > When using PAT as the authentication method, the PAT token is used only for the initial configuration of the agent. Learn more at [Communication with VSTS or TFS](agents.md#communication).
 
 ::: moniker-end
 
-## Choose interactive or service mode
+### Choose interactive or service mode
 
 For guidance on whether to run the agent in interactive mode or as a service, see [Agents: Interactive vs. service](agents.md#account).
+
+## Run the agent
 
  If you configured the agent to run interactively, to run it:
 
@@ -114,9 +108,11 @@ For guidance on whether to run the agent in interactive mode or as a service, se
  .\run.cmd
  ```
 
-If you configured the agent to run as a service, it starts automatically. You can view and control the agent running status from the services snap-in. Run `services.msc` and look for "VSTS Agent (*name of your agent*)".
+If you configured the agent to run as a service, it starts automatically. You can view and control the agent running status from the Services snap-in. Run `services.msc` and look for "VSTS Agent (*name of your agent*)".
 
-If you need to change the logon account, don't do it from the services snap-in. Instead, see the information below to re-configure the agent.
+> [!Note]
+> If you need to change the agent's logon account, don't do it from the Services
+> snap-in. Instead, see the information below to re-configure the agent.
 
 [!INCLUDE [include](_shared/v2/replace-agent.md)]
 
