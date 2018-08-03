@@ -31,6 +31,14 @@ Make sure your machine is prepared with our [Windows system prerequisites](https
 
 If you're building from a Subversion repo, you must install the Subversion client on the machine.
 
+### Hardware specs 
+
+The hardware specs for your agents will vary with your needs, team size, etc.
+It's not possible to make a general recommendation that will apply to everyone.
+As a point of reference, the VSTS team builds its hosted agents using the [hosted agents](hosted.md).
+On the other hand, the bulk of the VSTS code is built by 24-core server class machines
+running 4 agents apiece.
+
 <h2 id="permissions">Prepare permissions</h2>
 
 [!INCLUDE [permissions](_shared/v2/prepare-permissions.md)]
