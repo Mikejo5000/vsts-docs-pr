@@ -58,8 +58,12 @@ running 4 agents apiece.
 
 <li>Click the **Download** button.
 
-<li>Follow the instructions on the page.</li>
+<li>Follow the instructions on the page to download the agent.</li>
+
 </ol>
+
+> [!Note]
+> We recommend you configure the agent from an elevated Command Prompt.
 
 ### Server URL and authentication
 
