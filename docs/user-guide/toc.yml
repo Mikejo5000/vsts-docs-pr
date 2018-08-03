@@ -8,7 +8,7 @@
     href: services.md?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json&bc=/vsts/breadcrumb/toc.json 
   - name: What's the difference? DevOps vs. TFS
     href: about-vsts-tfs.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
--  name: Quickstarts
+- name: Quickstarts
   items:
   - name: Sign up and invite some teammates 
     href: sign-up-invite-teammates.md
@@ -40,7 +40,6 @@
   items:
   - name: placeholder
     href: index.md
-
 - name: Concepts
   items:
   - name: Key concepts 
@@ -87,7 +86,7 @@
     href: ../organizations/projects/index.md
   - name: Security & Identity
     href: ../organizations/security/index.md
-    - name: Visual Studio IDE
+  - name: Visual Studio IDE
     href: https://docs.microsoft.com/visualstudio/
   - name: Visual Studio Code 
     href: https://code.visualstudio.com/docs
