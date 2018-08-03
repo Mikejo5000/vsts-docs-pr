@@ -47,7 +47,7 @@ You can automatically deploy your containers to an Azure App Service after every
    Choose the **Configure container** setting and enter details of the container registry you are using:
 
    * For Azure Container Registry, select the registry, image, and tag.
-   * For Docker Hub, enter the image name and, optionally, the tag name. 
+   * For Docker Hub, enter the image path and name and, optionally, the tag name. Example `<your Docker ID>/dotnetcoresample` 
    * For a private registry type, enter image, server, and credential information. 
 
 1. Set up continuous deployment to the Web App for Containers instance using the following instructions:
@@ -75,7 +75,9 @@ You can automatically deploy your containers to an Azure App Service after every
 1. For **Repository**, enter the name of your image repository: 
 
    * For Azure Container Registry, this can be found under **Services | Repositories** in the properties of your Azure Container Registry instance in the Azure portal. For example, `dotnetcoresample`
-   * For Docker Hub, enter the path of the Docker image stored in your Docker Hub repository. For example, `<your-docker-id>/dotnetcoresample`
+   * For Docker Hub, enter the name of the image stored in your Docker Hub repository. For example, `dotnetcoresample`.
+     Then select the **Deploy Azure App Service** task blade and enter the **Tag** name for the build you intend to deploy
+     (by default, the task will append the tag "latest" if you don't select one, which will cause the task to fail to find the image in your Docker Hub repository).
 
 1. Select the **Run on agent** blade and set the agent queue to **Hosted Linux Preview**.
 
