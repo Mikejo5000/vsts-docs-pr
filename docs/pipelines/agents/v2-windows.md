@@ -150,7 +150,7 @@ The help provides information on authentication alternatives and unattended conf
 
 ### What version of the agent runs with TFS 2017?
 
-| TFS version | Agent version |
+| TFS version | Minimum agent version |
 |-|-|
 | 2017 RTM | 2.105.7 |
 | 2017.3 | 2.112.0 |
