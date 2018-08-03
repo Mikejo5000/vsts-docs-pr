@@ -5,14 +5,14 @@ ms.author: mlearned
 ms.manager: douge
 ms.prod: devops
 ms.technology: devops-cicd
-ms.topic: tutorial
-ms.date: 08/02/2018
+ms.topic: conceptual
+ms.date: 08/03/2018
 author: mlearned
 monikerRange: 'vsts'
 ---
 
 
-# Tutorial:  CI/CD with App Service and Azure Cosmos DB
+# How-To:  CI/CD with App Service and Azure Cosmos DB
 
 Create a continuous integration (CI) and continuous delivery (CD) pipeline for Azure Comsos DB backed Azure App Service Web App.  Azure Cosmos DB is Microsoft's globally distributed, multi-model database. Cosmos DB enables you to elastically and independently scale throughput and storage across any number of Azure's geographic regions. 
 
@@ -57,7 +57,7 @@ Set up CI for your ASP.NET application and Cosmos DB to build and create deploya
 
 1. Search for the **ASP.NET Application** build template, and then select **Apply**.
 
-  ![ASP.NET Template](_img/cosmos-db-ci-cd/aspnettemplate.png)
+  ![ASP.NET Template](_img/cosmos-db/aspnettemplate.png)
 
 1. Select the **triggers**, and then select the checkbox for ""Enable continuous integration**.  This setting ensures every commit to the repository excecutes a build.
 
@@ -77,7 +77,7 @@ The CI for the sample app produces the artifacts needed for deployment to Azure.
 
 1. Select the **Azure Subscription**, and then select **Authorize**.
 
-  ![Authorize Azure Subscription](_img/cosmos-db-ci-cd/authorizeazure.png)
+  ![Authorize Azure Subscription](_img/cosmos-db/authorizeazure.png)
 
 1. Choose an **App Service name**.
 
@@ -89,7 +89,7 @@ The CI for the sample app produces the artifacts needed for deployment to Azure.
 
 1. Retrieve your **endpoint** (URL) and **authKey** (primary or secondary key) for your Azure Cosmos DB account.  This information can be found on the Azure portal.
 
-  ![Auth and endpoint](_img/cosmos-db-ci-cd/keys.png)
+  ![Auth and endpoint](_img/cosmos-db/keys.png)
 
 1. Select **+ Add** to create a new variable named **endpoint**.  Select **+ Add** to create a second variable named **authKey**.
 
@@ -107,11 +107,13 @@ Follow the steps below to test and review the CI/CD pipeline.
 
 1. On the **Code** hub select the **ellipsis** (...) icon next to the **web.config** file in the **src** directory, and then select **Edit**.
 
-1. Enter a new **value** for the **database** key in the **appSettings** section of the web.config.  This simple change allows us to quickly test creating a new database in Azure Cosmos DB.
+1. Replace the existing **value** (ToDoList) for the **database** key in the **appSettings** section of the web.config with a new value such as **NewToDoList**.  You will commit this change to demonstrate creating a new Cosmos DB database as part of the CI/CD pipeline.  This is a simple change to demonstrate CI/CD capabilities of Cosmos DB with VSTS.  However, more [complicated code changes](/azure/cosmos-db/sql-api-dotnet-samples) can also be deployed with the same CI/CD pipeline.
 
 1. Select **Commit**, and then choose **Commit** to save the changes directly to the repostiory.
 
 1. On the **Build** hub select **Builds** and you will see your CI build executing.  You can follow the build execution with the interactive logging.  Once the build completes, you can also monitor the release.
+
+1. Once the release finishes, navigate to your Cosmos DB service to see your new database.
 
 
 The continuous integration trigger you enabled earlier ensures a build executes for every commit. The build will complete and start a deployment to Azure. Navigate to Cosmos DB in the Azure portal, and you will see the CD process created a new database.
