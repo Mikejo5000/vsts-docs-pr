@@ -1,7 +1,7 @@
 ---
-title: Plan and track work 
+title: Quickstart guide to plan and track work using Azure Boards
 titleSuffix: Azure DevOps Services
-description: Begin planning and tracking work in your new team project on Visual Studio Team Services  
+description: Begin planning and tracking work in your new team project on Azure Boards
 ms.technology: devops-new-user 
 ms.prod: devops
 ms.assetid: 
@@ -10,14 +10,12 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: 'vsts'
-ms.date: 12/11/2017
+ms.date: 09/05/2018
 ---
 
 
 # Plan and track work 
 
-**Azure DevOps Boards**
- 
 You add work items to plan and manage your project. You use different types of work items to track different types of work&mdash;such as user stories or product backlog items, tasks, bugs, or issues. You can describe the work to be done, assign work, track status, and coordinate efforts within your team.   
 
 Here we show how to add work items from the web portal and view work items you've created. 
@@ -26,53 +24,70 @@ Here we show how to add work items from the web portal and view work items you'v
 
 ## Prerequisites
 
-You can start adding work items once you connect to a team project. If you don't have an account or  team project yet, create one in [VSTS](sign-up-invite-teammates.md).
+You can start adding work items once you connect to a team project. If you don't have a team project yet, create one in [Azure DevOps](sign-up-invite-teammates.md).
+
+[!INCLUDE [temp](../_shared/open-work-items.md)]
 
 ## Add a work item 
 
-0. From your web browser, open the team project for your VSTS account. If you don't have a team project, [create one now](sign-up-invite-teammates.md). If you haven't been added as a team member, [get invited now](sign-up-invite-teammates.md#invite-others).
+Adding a work item is just one click away. Simply choose the work item type from the **New Work Item** drop down menu.  
 
-	The web browser URL follows this pattern: ```https://{account name}.visualstudio.com/{project name}```  
+For example, here we choose User Story. 
 
-	You can use this URL to quickly open the team project, substituting the {account name} and {project name} with your specific account and project name (remove braces). 
+> [!div class="mx-imgBorder"]  
+![Work>Work Items, Add a work item ](../work-items/_img/view-add/work-items-hub-new.png)
 
-	If you don't see the team or team project you want, choose the ![VSTS icon](../../_img/icons/project-icon.png) VSTS icon to [browse all team projects and teams](../../project/navigation/work-across-projects.md).  
+> [!TIP]    
+> Work items you add are automatically scoped to the [Currently selected team's area and iteration paths](../../organizations/settings/set-team-defaults.md). To change the team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md?toc=/vsts/work/get-started/toc.json&bc=/vsts/work/get-started/breadcrumb/toc.json).
 
-2.	Click **Work>New Work Items** and choose the work item type you want.  Here, we choose to create a **User Story**. 
+Enter a title and then save the work item. Before you can change the State from its initial default, you must save it.  
 
-	<img src="../backlogs/_img/add-work-items-choose-user-story.png" alt="VSTS, TFS 2017, Work hub, Add a work item" style="border: 2px solid #C3C3C3;" /> 
+![Agile process, User story work item form](../backlogs/_img/add-new-work-item-vsts-user-story.png)  
 
-	If you don't see the **Work** hub, your screen size may be reduced. Click the three dots (![elipses](../../_shared/_img/ellipses-reduced-screen-size.png)), then click **Work**, **New Work Items**, and then choose the work item type you want. 
-
-	![Open Work hub when screen size is reduced](_img/plan-track-work/open-work-hub-reduced-screen-size.png) 
+You can [add tags to any work item](../track/add-tags-to-work-items.md) to filter backlogs, queries, and work item lists.
 
 3. Enter a title and then save the work item. Before you can change the State from its initial default, you must save it.  
 
-	<img src="../backlogs/_img/add-new-work-item-vsts-user-story.png" alt="Agile process, User story work item form" style="border: 2px solid #C3C3C3;" />  
+	![Agile process, User story work item form](../backlogs/_img/add-new-work-item-vsts-user-story.png)  
 
 	That's it! 
 
 Create as many work items as you need of the type you need to track the work you want to manage.  
 
 
->[!NOTE]  
->Depending on the process chosen when the team project was created&mdash;[Scrum](../work-items/guidance/scrum-process.md), 
-[Agile](../work-items/guidance/agile-process.md), or [CMMI](../work-items/guidance/cmmi-process.md)&mdash;the types of work items you can create will differ. For example, backlog items may be called product backlog items (Scrum), user stories (Agile), or requirements (CMMI). All three are similar: they describe the customer value to deliver and the work to be performed.
->
-> For an overview of all three processes, see [Choose a process](../work-items/guidance/choose-process.md). 
-
-
 ## View the work items you've just created  
 
-To view work items you just created, open the **Work Items** page.
+Using the drop-down menu, you can focus on relevant items inside a project using one of the seven pivots as described next. Additionally, you can [filter](#filter) and [sort](#sort) each pivot view.  
 
-0. Choose the **Work** hub, the **Work Items** page, and then **My activity**. This page lists all work items you've recently viewed, created, or modified. 
+<table>
+<tbody valign="top">
+<tr>
+<td>
+![Work>Work Items ](_img/view-add/view-menu.png)
+</td>
+<td>
+<ul>
+<li>**Assigned to me**: lists all work items assigned to you in the project in the order they were last updated. To open or update a work item, simply click its title.</li>
+<li>**Following**: lists work items that you've elected to [follow](follow-work-items.md). </li>
+<li>**Mentioned**: lists work items in which you've been mentioned in the last 30 days. </li>
+<li>**My activity**: lists work items that you have recently viewed or updated.</li>
+<li>**Recently updated**: lists work items recently updated in the project. </li>
+<li>**Recently completed**: lists work items completed or closed in the project.</li>
+<li>**Recently created**: lists work items created within the last 30 days in the project.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
 
-	<img src="_img/plan-track-work/view-work-item-activity.png" alt="Work hub, Work Items page, Add a work item" style="border: 2px solid #C3C3C3;" />
 
-0. To view any work item listed, click the title. 
+For example, choose **My activity** to list all work items you've recently viewed, created, or modified. 
 
-For more information on using the Work Items page, see [View and add work items](../work-items/view-add-work-items.md).
+![Work hub, Work Items page, Add a work item](_img/plan-track-work/view-work-item-activity.png)  
+
+To view any work item listed, choose the title. 
+
+For more information on using **Work Items**, see [View and add work items](../work-items/view-add-work-items.md).
 
 
 ## Try this next  
