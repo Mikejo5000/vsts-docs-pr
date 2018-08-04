@@ -13,6 +13,8 @@
     href: ../kanban/kanban-quickstart.md?toc=/vsts/work/get-started/toc.json&bc=/vsts/work/get-started/breadcrumb/toc.json  
   - name: Default permissions (Security)
     href: permissions-access-boards.md
+  - name: Key concepts
+    href: key-concepts.md
   - name: Resources
     items:
     - name: Navigation Basics

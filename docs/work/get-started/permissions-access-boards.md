@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps Services
 description: Default permissions and access levels to support work tracking tasks in Visual Studio Team Services & Team Foundation Server
 ms.technology: devops-new-user 
 ms.prod: devops
-ms.topic: conceptual
 ms.assetid: 
 ms.manager: douge
 ms.author: kaelli
@@ -38,13 +37,13 @@ You set project-level information permissions from the admin page for a team pro
 </tr>
 <tbody valign="top" align="center">
 <tr>
-<td align="left">[View project-level information](set-project-collection-level-permissions.md) 
+<td align="left">[View project-level information](../../organizations/security/set-project-collection-level-permissions.md) 
 </td>
-<td>![checkmark](_img/icons/checkmark.png)</td>
-<td>![checkmark](_img/icons/checkmark.png)</td>
-<td>![checkmark](_img/icons/checkmark.png)</td>
-<td>![checkmark](_img/icons/checkmark.png)</td>
-<td>![checkmark](_img/icons/checkmark.png)</td>
+<td>![checkmark](../../_img/icons/checkmark.png)</td>
+<td>![checkmark](../../_img/icons/checkmark.png)</td>
+<td>![checkmark](../../_img/icons/checkmark.png)</td>
+<td>![checkmark](../../_img/icons/checkmark.png)</td>
+<td>![checkmark](../../_img/icons/checkmark.png)</td>
 </tr>
 
 
@@ -53,9 +52,9 @@ You set project-level information permissions from the admin page for a team pro
 </td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
-<td>![checkmark](_img/icons/checkmark.png)</td>
-<td>![checkmark](_img/icons/checkmark.png)</td>
-<td>![checkmark](_img/icons/checkmark.png)</td>
+<td>![checkmark](../../_img/icons/checkmark.png)</td>
+<td>![checkmark](../../_img/icons/checkmark.png)</td>
+<td>![checkmark](../../_img/icons/checkmark.png)</td>
 </tr>
 <tr>
 <td align="left">[Area nodes and Iteration nodes: Create, delete, edit child nodes](../../organizations/settings/set-iteration-paths-sprints.md)  
@@ -64,17 +63,17 @@ You set project-level information permissions from the admin page for a team pro
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
-<td>![checkmark](_img/icons/checkmark.png)</td>
+<td>![checkmark](../../_img/icons/checkmark.png)</td>
 </tr>
 
 
 <tr>
-<td align="left">[Edit project-level information](set-project-collection-level-permissions.md)     
+<td align="left">[Edit project-level information](../../organizations/security/set-project-collection-level-permissions.md)     
 </td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
-<td>![checkmark](_img/icons/checkmark.png)</td>
+<td>![checkmark](../../_img/icons/checkmark.png)</td>
 </tr>
 
 
@@ -88,12 +87,12 @@ The **Edit project-level information** permission includes the ability to perfor
 - Edit shared work item queries  
 - Edit team project level permission ACLs  
 - Create and modify global lists  
-- Edit [event subscriptions](permissions.md#alerts) (email or SOAP) on team project level events.
+- Edit [event subscriptions](../../organizations/security/permissions.md#alerts) (email or SOAP) on team project level events.
 
 
 ## Team administrator role and permissions  
 
-The team administrator role supports configuration of team settings. To be added as a team administrator, see [Add team administrators](../scale/add-team-administrator.md). Project administrators con configure settings at the team and project level. See [Add administrators, set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md). 
+The team administrator role supports configuration of team settings. To be added as a team administrator, see [Add team administrators](../scale/add-team-administrator.md). Project administrators con configure settings at the team and project level. See [Add administrators, set permissions at the project-level or project collection-level](../../organizations/security/set-project-collection-level-permissions.md). 
 
 The following table summarizes a subset of the default permissions assigned to the team project Readers, Contributors and Project Administrators groups and the Team Administrator role. Team admin permissions extend only to the team for which they're an administrator. Project administrator permissions extend across all teams defined for the team project.
 
@@ -171,7 +170,7 @@ Stakeholder access supports business owners and analysts and other team members 
 
 For a comparison chart of stakeholder versus basic access, see the [Feature Matrix](https://visualstudio.microsoft.com/vsts/compare-features/).
 
-For information about each access levels, see [About access levels](access-levels.md). To assign access levels, see [Add users and assign licenses](../../organizations/accounts/add-organization-users-from-user-hub.md). 
+For information about each access levels, see [About access levels](../../organizations/security/access-levels.md). To assign access levels, see [Add users and assign licenses](../../organizations/accounts/add-organization-users-from-user-hub.md). 
 
 
 ## Related articles 
