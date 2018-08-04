@@ -63,8 +63,8 @@ Open a browser window, choose **Work**, and then **Work Items**.
 
 	For example, here we choose User Story. 
 
-	> [!div class="mx-imgBorder"]  
-	![Work>Work Items, Add a work item ](../work-items/_img/view-add/work-items-hub-new.png)
+	> [!div class="mx-imgBorder"]
+	> ![Work>Work Items, Add a work item ](../work-items/_img/view-add/work-items-hub-new.png)
 
 	> [!TIP]    
 	> Work items you add are automatically scoped to the [Currently selected team's area and iteration paths](../../organizations/settings/set-team-defaults.md). To change the team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md?toc=/vsts/work/get-started/toc.json&bc=/vsts/work/get-started/breadcrumb/toc.json).
