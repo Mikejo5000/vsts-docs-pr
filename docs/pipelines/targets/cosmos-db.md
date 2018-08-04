@@ -1,5 +1,5 @@
 ---
-title: CI/CD with APP Service and Azure Cosmos DB | VSTS Tutorial
+title: CI/CD with APP Service and Azure Cosmos DB | VSTS How-To
 description: Use VSTS to enable Continuous Integration (CI) and Continous Deployment (CD) for your ASP.NET App service and Azure Cosmos DB.
 ms.author: mlearned
 ms.manager: douge
