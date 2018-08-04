@@ -31,7 +31,7 @@ You can analyze the progress and quality of your project by using the reports in
   
 
 ##Monitor code quality
-Build reports track the quality of software under development. By defining tests to run automatically as part of each build definition and instrumenting tests to gather code coverage data, you can gain insight about the quality of the builds, tests, and code. 
+Build reports track the quality of software under development. By defining tests to run automatically as part of each build pipeline and instrumenting tests to gather code coverage data, you can gain insight about the quality of the builds, tests, and code. 
 
 <table>
 <tr valign="top">
@@ -209,7 +209,7 @@ Test planning reports support monitoring the test progress and coverage of backl
  **A:**  While some reports do display similar information, such as sprint burndown and velocity or status on all iterations, these reports are formatted differently and support additional filters.  
   
 ### Q: Do you want to create additional product areas or release milestones?  
- **A:** See [Create areas or iterations](../../work/customize/set-area-paths.md).  
+ **A:** See [Create areas or iterations](../../organizations/settings/set-area-paths.md).  
   
 ### Q: Do you want to bulk edit work items to assign them to an area, iteration, team member, or priority?  
  **A:**  See [Bulk modify work items](../../work/backlogs/bulk-modify-work-items.md).  

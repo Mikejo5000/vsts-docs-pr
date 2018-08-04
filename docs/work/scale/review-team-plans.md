@@ -18,8 +18,9 @@ ms.date: 03/20/2018
 
 <b>VSTS | TFS 2018 | TFS 2017.2</b> 
 
-
 Use the visualization options provided by Delivery Plans to review the schedule of stories or features your teams plan to deliver. Delivery Plans show the scheduled work items by sprint (iteration path) of selected teams against a calendar view.
+
+Delivery plans is also interactive. You can change the assigned sprint of a work item by dragging it to a new sprint as shown in the following image. 
  
 ![Moving a card to a different iteration](_img/plans_move1.png)
 
@@ -40,8 +41,8 @@ In this topic you'll learn:
 In order to add and configure a plan, you must have the following in place:  
 - [Installed the Plans extension](#install-plans)  
 - Be granted [Basic access or greater](../../organizations/security/access-levels.md) (Users with Stakeholder access can't add or view plans)  
-- [Defined iteration paths](../../organizations/settings/set-area-paths.md) for the team project  
-- [Configured teams](multiple-teams.md) and [set team defaults and team sprints](set-team-defaults.md)   
+- [Defined iteration paths](../../organizations/settings/set-area-paths.md) for the project  
+- [Configured teams](multiple-teams.md) and [set team defaults and team sprints](../../organizations/settings/set-team-defaults.md)   
 - Teams have defined [user stories](../backlogs/create-your-backlog.md), features, or other product or portfolio backlogs and assigned them to iterations  
 
 All users with [basic access](../../organizations/security/change-access-levels.md) can view, add, and configure Delivery Plans. (Accounts assigned to [Stakeholder access](../../organizations/security/get-started-stakeholder.md), however, don't have access to Delivery Plans.) 
@@ -69,12 +70,12 @@ Some questions you might address during the review:
 
 For example, we use Delivery Plans internally to share the schedule of Features that we add to VSTS. By seeing the work many teams have planned for the next 3 sprints, we can easily discuss whether these are the right priorities and if dependencies exist. 
 
-In this way, a Delivery Plan is a driver of alignment while allowing each team to retain a strong sense of autonomy. Individual teams can work to different sprint cadences, if needed, and manage different work item types&mdash;stories, features, or epics. Their work is all visible with the same plan view. Teams can even be part of different team projects if they use different processes. You can also customize the card fields so that you only see the data fields of interest and applicable per work item type.  
+In this way, a Delivery Plan is a driver of alignment while allowing each team to retain a strong sense of autonomy. Individual teams can work to different sprint cadences, if needed, and manage different work item types&mdash;stories, features, or epics. Their work is all visible with the same plan view. Teams can even be part of different projects if they use different processes. You can also customize the card fields so that you only see the data fields of interest and applicable per work item type.  
 
     
 ## Add a plan  
 
-Once you have [installed Delivery Plans](#install-plans), the Plans page appears under the Work hub.
+Once you have [installed Delivery Plans](#install-plans), the Plans page appears under **Work**.
 
 <img src="_img/review-team-plans-open-plans.png" alt="Plans menu item" style="border: 1px solid #C3C3C3;" /> 
 
@@ -90,7 +91,7 @@ Once you have [installed Delivery Plans](#install-plans), the Plans page appears
 
 	When defining a plan, note the following:  
 	- Use the name and description field to clearly identify your plan within the project 
-	- You can choose one or more teams from any team project defined in the account or collection  
+	- You can choose one or more teams from any project defined in the organization or collection  
 	- You can choose one or more [active backlogs for a team](../customize/select-backlog-navigation-levels.md)
 	- The order in which you enter the teams and team backlogs defines the order in which they'll appear in the plan 
 	-  To limit the number or types of work items, specify the field criteria.
@@ -186,8 +187,6 @@ As changes occur to the schedule, you you can update the iteration for a backlog
 
 
 ## Related articles  
-
-So now you've got an idea of how to use plans to create a project schedule view across multiple teams. From the settings dialog, you can also
 
 For additional resources for working with multiple teams, see these additional topics: 
 

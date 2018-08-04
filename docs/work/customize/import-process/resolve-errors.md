@@ -82,7 +82,7 @@ The system displays an information message about the deletion.
 ### TF402601: Work item type *[witName]* will be renamed to *[name1]* from *[name2]*.
 The process contains a renamed WIT. The WIT will be renamed in the existing process.  
 The process that you're updating contains a WIT that's been renamed from the name in the current process.  
-As part of updating the existing process, the system will rename the WIT in the current process. All work items in existing team projects that reference the process are also renamed.
+As part of updating the existing process, the system will rename the WIT in the current process. All work items in existing projects that reference the process are also renamed.
 
 #### Scenario example
 1. [Create](../customize-wit-form.md) new work item type called "LSI"  
@@ -137,7 +137,7 @@ Correct the schema error in the named file.
 ## Process template plug-in errors
 The ProcessTemplate.xml is the root file that defines the entire process and all XML definition files that 
 will be imported to add or update a process. This file contains all of the plug-ins and task groups that are referenced 
-when creating a team project. Each task group references a subordinate XML file (often in a subfolder) where 
+when creating a project. Each task group references a subordinate XML file (often in a subfolder) where 
 the specific tasks are defined. In general, you specify one task group for each plug-in.
 
 The ProcessTemplate.xml definition file must conform to the syntax and rules described in [ProcessTemplate XML element reference](../reference/process-templates/process-template-xml-elements-reference.md).   
@@ -513,7 +513,7 @@ The Classification folder path is misspelled.
 <a id="TF402513"></a>
 ### TF402513: Name *[pathName]* in the Classification plug-in doesn't conform to TreePath naming restrictions.
 Review the ```Node``` elements you've specified and change the names to conform to supporting naming conventions.
-Reference: [Add and modify area and iteration paths](../set-area-paths.md).
+Reference: [Add and modify area and iteration paths](../../../organizations/settings/set-area-paths.md).
 
 #### Error example
 The Path names include the # character which is not allowed. 
@@ -1564,7 +1564,7 @@ To resolve this, create two seperate groups that contain one control each.
 
 #### Error example
 ```
-  <Control Type="FieldContvisualstudio.microsoft.comomfield.foo" Label="Foo" LabelPosition="Left">
+  <Control Type="FieldControl" FieldName="customfield.foo" Label="Foo" LabelPosition="Left">
     <Link UrlRoot="http://www.visualstudio.com/team-services" />
   </Control>
 ```
@@ -1573,7 +1573,7 @@ To resolve this, create two seperate groups that contain one control each.
 ```
   <Control Type="FieldControl" FieldName="System.Title" LabelPosition="Left" Label="Title 1"  
     <LabelText>  
-        <Text>  visualstudio.microsoft.com
+        <Text>  
           <Link UrlRoot="http://www.visualstudio.com/team-services" />  
               Title 2  
         </Text>  

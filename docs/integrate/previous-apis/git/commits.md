@@ -20,14 +20,14 @@ ms.date: 08/23/2016
 ## Get a list of commits
 
 ```no-highlight
-GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}/commits?api-version={version}[&branch={string}&commit={string}&itemPath={string}&committer={string}&author={string}&fromDate={dateTime}&toDate={dateTime}[&$top={integer}&$skip={integer}]
+GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/commits?api-version={version}[&branch={string}&commit={string}&itemPath={string}&committer={string}&author={string}&fromDate={dateTime}&toDate={dateTime}[&$top={integer}&$skip={integer}]
 ```
 
 | Parameter  | Type     | Default | Notes
 |:-----------|:---------|:--------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
 | instance   | string   |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project    | string   |         | ID or name of the [team project](../tfs/projects.md). *Optional if specifying an ID for repository.*
+| project    | string   |         | ID or name of the [project](../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository | string   |         | ID of the [repository](./repositories.md).
 | Query
 | api-version| string   |         | Version of the API to use.
@@ -104,14 +104,14 @@ Get the commits that were introduced to the repo by a push. This does not includ
 ## Get a batch of commits
 
 ```no-highlight
-POST https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}/commitsBatch?api-version={version}
+POST https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/commitsBatch?api-version={version}
 ```
 
 | Parameter  | Type     | Default | Notes
 |:-----------|:---------|:--------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
 | instance   | string   |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project    | string   |         | ID or name of the [team project](../tfs/projects.md). *Optional if specifying an ID for repository.*
+| project    | string   |         | ID or name of the [project](../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository | string   |         | ID of the [repository](./repositories.md).
 | Query
 | api-version| string   |         | Version of the API to use.
@@ -131,13 +131,13 @@ To return the set of commits in the history of one version that are _not_ in the
 ## Get a single commit
 
 ```no-highlight
-GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}/commits/{commitId}?api-version={version}[&changeCount={integer}]
+GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/commits/{commitId}?api-version={version}[&changeCount={integer}]
 ```
 | Parameter   | Type    | Default | Notes
 |:------------|:--------|:--------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
 | instance    | string  |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project     | string  |         | ID or name of the [team project](../tfs/projects.md). *Optional if specifying an ID for repository.*
+| project     | string  |         | ID or name of the [project](../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository  | string  |         | ID of the [repository](./repositories.md).
 | commitId    | string  |         | ID of the commit.
 | Query
@@ -162,7 +162,7 @@ For instance, it's used in VSTS to surface build status in the web UI.
 ### Add status
 
 ```no-highlight
-POST https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}/commits/{commit}/statuses?api-version={version}
+POST https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/commits/{commit}/statuses?api-version={version}
 ```
 ```
 {
@@ -180,7 +180,7 @@ POST https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repo
 |:--------------|:---------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
 | instance      | string                                     | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project       | string                                     | ID or name of the [team project](../tfs/projects.md). *Optional if specifying an ID for repository.*| repository    | string                                     | ID of the [repository](./repositories.md).
+| project       | string                                     | ID or name of the [project](../tfs/projects.md). *Optional if specifying an ID for repository.*| repository    | string                                     | ID of the [repository](./repositories.md).
 | Query
 | api-version   | string                                     | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | Body
@@ -195,14 +195,14 @@ POST https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repo
 ### Get statuses
 
 ```no-highlight
-GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}/commits/{commit}/statuses?api-version={version}
+GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/commits/{commit}/statuses?api-version={version}
 ```
 
 | Parameter     | Type                                   | Notes
 |:--------------|:---------------------------------------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
 | instance      | string                                 | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project       | string                                 | ID or name of the [team project](../tfs/projects.md). *Optional if specifying an ID for repository.*| repository    | string                                 | ID of the [repository](./repositories.md).
+| project       | string                                 | ID or name of the [project](../tfs/projects.md). *Optional if specifying an ID for repository.*| repository    | string                                 | ID of the [repository](./repositories.md).
 | Query
 | api-version   | string                                 | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 

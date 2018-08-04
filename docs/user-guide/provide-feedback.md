@@ -73,11 +73,11 @@ You can tell what platform you use from the URL you use to connect to VSTS or TF
 
 **VSTS**
 
-A VSTS URL consists of an account name and visual studio.com, for example: ```https://{youraccount}.visualstudio.com```.  
+A VSTS URL consists of an organization name and visual studio.com, for example: ```https://{yourorganization}.visualstudio.com```.  
 
 To learn the version number, enter the following address in a web browser:
 ```
-https://AccountName.visualstudio.com/_home/About
+https://OrganizationName.visualstudio.com/_home/About
 ```
 A page similar to the one shown will open showing the version number.
 

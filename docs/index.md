@@ -96,7 +96,7 @@ featureFlags:
                                             <div class="cardText">
                                                 <h3>Add your code</h3>
                                                 <ul class="noBullet">
-                                                    <li><a class="barLink" href="/en-us/vsts/git/">Git Repositories</a></li>
+                                                    <li><a class="barLink" href="/en-us/vsts/repos/git/">Git Repositories</a></li>
                                                     <li><a class="barLink" href="/en-us/vsts/java/">Get started with Java</a></li>
                                                 </ul>
                                             </div>
@@ -206,11 +206,11 @@ featureFlags:
                                 <div class="group">
                                     <h3>Code</h3>
                                     <ul>
-                                        <li><a class="barLink" href="/vsts/git/index">Git Repositories</a></li>
-                                        <li><a class="barLink" href="/vsts/git/pull-requests-overview">Pull Requests</a></li>
-                                        <li><a class="barLink" href="/vsts/git/forks-overview">Forks</a></li>
-                                        <li><a class="barLink" href="/vsts/git/branch-policies-overview">Branch Policies</a></li>
-                                        <li><a class="barLink" href="/vsts/tfvc/index">TFVC</a></li>
+                                        <li><a class="barLink" href="/vsts/repos/git/index">Git Repositories</a></li>
+                                        <li><a class="barLink" href="/vsts/repos/git/pull-requests-overview">Pull Requests</a></li>
+                                        <li><a class="barLink" href="/vsts/repos/git/forks-overview">Forks</a></li>
+                                        <li><a class="barLink" href="/vsts/repos/git/branch-policies-overview">Branch Policies</a></li>
+                                        <li><a class="barLink" href="/vsts/repos/tfvc/index">TFVC</a></li>
                                         <li><a class="barLink" href="/vsts/java/index">Java DevOps</a></li>
                                     </ul>
                                     <h3>Continuous Integration &amp; Delivery</h3>
@@ -271,7 +271,7 @@ featureFlags:
                                         <li><a class="barLink" href="/vsts/marketplace/index">Manage Extensions</a></li>
 
                                         <li><a class="barLink" href="/vsts/billing/index">Billing</a></li>
-                                        <li><a class="barLink" href="/vsts/organizations/accounts/index">Account Management (VSTS)</a></li>
+                                        <li><a class="barLink" href="/vsts/organizations/accounts/index">Organization Management (VSTS)</a></li>
                                         <li><a class="barLink" href="/tfs/server/index">Server Administration (TFS)</a></li>
                                         <li><a class="barLink" href="/vsts/report/sharepoint-dashboards/">SharePoint Integration (TFS)</a></li>
                                         <li><a class="barLink" href="/vsts/work/tfs-ps-sync/">Project Server Integration (TFS)</a></li>
@@ -316,7 +316,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/git/pull-requests-overview">
+                                <a href="/vsts/repos/git/pull-requests-overview">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -335,7 +335,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/git/forks-overview">
+                                <a href="/vsts/repos/git/forks-overview">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -354,7 +354,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/git/branch-policies-overview">
+                                <a href="/vsts/repos/git/branch-policies-overview">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -373,7 +373,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/tfvc">
+                                <a href="/vsts/repos/tfvc">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -524,7 +524,7 @@ featureFlags:
                                                 <div class="cardText">
                                                     <h3>Task Reference</h3>
                                                     <p>Include build, utility, test, and deploy tasks in your build and release
-                                                        definitions.</p>
+                                                        pipelines.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -910,7 +910,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Search</h3>
-                                                    <p>Quickly find the code or work items you need to access across your account
+                                                    <p>Quickly find the code or work items you need to access across your organization
                                                         or collection.</p>
                                                 </div>
                                             </div>
@@ -954,8 +954,8 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Account Management</h3>
-                                                    <p>Setup and manage your account and configure key settings to support your
+                                                    <h3>Organization Management</h3>
+                                                    <p>Setup and manage your organization and configure key settings to support your
                                                         teams.</p>
                                                 </div>
                                             </div>

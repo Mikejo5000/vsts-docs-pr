@@ -47,7 +47,7 @@ For on-premises TFS, AD is recommended when managing a large group of users. For
 
 Other applications and services can integrate with VSTS and TFS services and resources. To access your account without asking for user credentials multiple times, apps can use these authentication methods:
 
-*	[Alternate credentials](../../git/auth-overview.md#alternate-credentials) 
+*	[Alternate credentials](../../repos/git/auth-overview.md#alternate-credentials) 
 as a single set of credentials across all tools that don't have 
 plug-in, extension, or native support. For example, 
 you can use basic authentication to access 
@@ -68,11 +68,11 @@ to generate tokens for accessing [REST APIs](/vsts/integrate/get-started/rest/ba
 and [Profiles](/vsts/integrate/api/shared/profiles) 
 APIs support only OAuth. 
 
-*	[SSH authentication](../../git/use-ssh-keys-to-authenticate.md) 
+*	[SSH authentication](../../repos/git/use-ssh-keys-to-authenticate.md) 
 to generate encryption keys when you use Linux, macOS, 
 or Windows running [Git for Windows](http://www.git-scm.com/download/win) 
 and can't use 
-[Git credential managers](../../git/set-up-credential-managers.md) 
+[Git credential managers](../../repos/git/set-up-credential-managers.md) 
 or [personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md) 
 for HTTPS authentication.
 
@@ -111,7 +111,7 @@ VSTS and TFS control access through these three inter-connected functional areas
 
 -   **Membership management** supports adding individual Windows user accounts and groups to default TFS groups. Also, you can create TFS groups. Each default TFS group is associated with a set of default permissions. All users added to any TFS group are added to the Valid Users group. A valid user is someone who can connect to the team project.
 
--   **Permission management** controls access to specific functional tasks at different levels of the system. Object-level permissions set permissions on a file, folder, build definition, or a shared query. Permission settings correspond to **Allow**, **Deny**, **Inherited allow**, **Inherited deny**, and **Not set**. To learn more about inheritance, see [About permissions and groups](about-permissions.md#inheritance).
+-   **Permission management** controls access to specific functional tasks at different levels of the system. Object-level permissions set permissions on a file, folder, build pipeline, or a shared query. Permission settings correspond to **Allow**, **Deny**, **Inherited allow**, **Inherited deny**, and **Not set**. To learn more about inheritance, see [About permissions and groups](about-permissions.md#inheritance).
 
 -   **Access level management** controls access to features provided via the web portal, the web application for TFS. Based on  what has been purchased for a user, administrators set the user's access  level to Basic, Advanced, or Stakeholder (previously labeled Standard, Full, and Limited).
 
@@ -139,7 +139,7 @@ There are a number of artifacts whose permissions are managed by role. These inc
 > [!div class="mx-tdCol2BreakAll"]
 > |**Object-level** |**Project-level settings**  |**Collection-level settings**  | 
 > |-------------|----------|----------|
-> |- Deployment groups<br/>- Secure files<br/>- Variable groups<br/>|- Agent queues<br/>- Service endpoints<br/>-Team administration|- Agent pools<br/>- Deployment pools<br/>- Marketplace extensions |
+> |- Deployment groups<br/>- Secure files<br/>- Variable groups<br/>|- Agent queues<br/>- Service connections<br/>-Team administration|- Agent pools<br/>- Deployment pools<br/>- Marketplace extensions |
 
 To learn more, see [About security roles](about-security-roles.md).
 

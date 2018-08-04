@@ -22,14 +22,14 @@ ms.date: 11/3/2016
 ## Get a list of pull requests in the repository
 
 ```no-highlight
-GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}/pullRequests?api-version={version}[&status={string}&creatorId={GUID}&reviewerId={GUID}&sourceRefName={string}&targetRefName={string}&$top={integer}&$skip={integer}]
+GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/pullRequests?api-version={version}[&status={string}&creatorId={GUID}&reviewerId={GUID}&sourceRefName={string}&targetRefName={string}&$top={integer}&$skip={integer}]
 ```
 
 | Parameter     | Type                                   | Default | Notes
 |:--------------|:---------------------------------------|:--------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
 | instance      | string                                 |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project       | string                                 |         | ID or name of the [team project](../../tfs/projects.md). *Optional if specifying an ID for repository.*
+| project       | string                                 |         | ID or name of the [project](../../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository    | string                                 |         | ID of the [repository](../repositories.md).
 | Query
 | api-version   | string                                 |         | [Version](../../../concepts/rest-api-versioning.md) of the API to use.
@@ -58,14 +58,14 @@ GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repos
 ## Get a list of pull requests in the project
 
 ```no-highlight
-GET https://{instance}/DefaultCollection/{project}/_apis/git/pullRequests?api-version={version}[&status={string}&creatorId={GUID}&reviewerId={GUID}&sourceRefName={string}&targetRefName={string}&$top={integer}&$skip={integer}]
+GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/pullRequests?api-version={version}[&status={string}&creatorId={GUID}&reviewerId={GUID}&sourceRefName={string}&targetRefName={string}&$top={integer}&$skip={integer}]
 ```
 
 | Parameter     | Type                                   | Default | Notes
 |:--------------|:---------------------------------------|:--------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
 | instance      | string                                 |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project       | string                                 |         | ID or name of the [team project](../../tfs/projects.md). *Optional if specifying an ID for repository.*
+| project       | string                                 |         | ID or name of the [project](../../tfs/projects.md). *Optional if specifying an ID for repository.*
 | Query
 | api-version   | string                                 |         | [Version](../../../concepts/rest-api-versioning.md) of the API to use.
 | project       | string                                 |         | Return pull requests in a specific project
@@ -82,14 +82,14 @@ GET https://{instance}/DefaultCollection/{project}/_apis/git/pullRequests?api-ve
 ## Get a list of pull requests in the account
 
 ```no-highlight
-GET https://{instance}/DefaultCollection/{project}/_apis/git/pullRequests?api-version={version}[&status={string}&creatorId={GUID}&reviewerId={GUID}&sourceRefName={string}&targetRefName={string}&$top={integer}&$skip={integer}]
+GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/pullRequests?api-version={version}[&status={string}&creatorId={GUID}&reviewerId={GUID}&sourceRefName={string}&targetRefName={string}&$top={integer}&$skip={integer}]
 ```
 
 | Parameter     | Type                                   | Default | Notes
 |:--------------|:---------------------------------------|:--------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
 | instance      | string                                 |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project       | string                                 |         | ID or name of the [team project](../../tfs/projects.md). *Optional if specifying an ID for repository.*
+| project       | string                                 |         | ID or name of the [project](../../tfs/projects.md). *Optional if specifying an ID for repository.*
 | Query
 | api-version   | string                                 |         | [Version](../../../concepts/rest-api-versioning.md) of the API to use.
 | status        | enum { Active, Abandoned, Completed }  | Active  | Return pull requests with a specific status.
@@ -106,14 +106,14 @@ GET https://{instance}/DefaultCollection/{project}/_apis/git/pullRequests?api-ve
 ### By pull request ID
 
 ```
-GET  https://{instance}/DefaultCollection/{project}/_apis/git/pullRequests/{pullrequest}?api-version={version}
+GET  https://{instance}/DefaultCollection/{project}/_apis/repos/git/pullRequests/{pullrequest}?api-version={version}
 ```
 
 | Parameter   | Type     | Default | Notes
 |:------------|:---------|:--------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
 | instance    | string   |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project     | string   |         | ID or name of the [team project](../../tfs/projects.md). *Optional if specifying an ID for repository.*
+| project     | string   |         | ID or name of the [project](../../tfs/projects.md). *Optional if specifying an ID for repository.*
 | pullRequest | integer  |         | ID of the pull request.
 | Query
 | api-version | string   |         | [Version](../../../concepts/rest-api-versioning.md) of the API to use.
@@ -123,14 +123,14 @@ GET  https://{instance}/DefaultCollection/{project}/_apis/git/pullRequests/{pull
 ## Get a pull request
 
 ```no-highlight
-GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}/pullRequests/{pullRequest}?api-version={version}
+GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/pullRequests/{pullRequest}?api-version={version}
 ```
 
 | Parameter   | Type     | Default | Notes
 |:------------|:---------|:--------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
 | instance    | string   |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project     | string   |         | ID or name of the [team project](../../tfs/projects.md). *Optional if specifying an ID for repository.*
+| project     | string   |         | ID or name of the [project](../../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository  | string   |         | ID of the [repository](../repositories.md).
 | pullRequest | integer  |         | ID of the pull request.
 | Query
@@ -141,14 +141,14 @@ GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repos
 ## Get commits for the pull request
 
 ```no-highlight
-GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}/pullRequests/{pullRequest}/commits?api-version={version}
+GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/pullRequests/{pullRequest}/commits?api-version={version}
 ```
 
 | Parameter   | Type     | Default | Notes
 |:------------|:---------|:--------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
 | instance    | string   |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project     | string   |         | ID or name of the [team project](../../tfs/projects.md). *Optional if specifying an ID for repository.*
+| project     | string   |         | ID or name of the [project](../../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository  | string   |         | ID of the [repository](../repositories.md).
 | pullRequest | integer  |         | ID of the pull request.
 | Query
@@ -159,7 +159,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repos
 ## Create a pull request
 
 ```no-highlight
-POST https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}/pullRequests?api-version={version}
+POST https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/pullRequests?api-version={version}
 ```
 ```json
 {
@@ -179,7 +179,7 @@ POST https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repo
 |:--------------|:---------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
 | instance      | string   | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project       | string   | ID or name of the [team project](../../tfs/projects.md). *Optional if specifying an ID for repository.*
+| project       | string   | ID or name of the [project](../../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository    | string   | ID of the [repository](../repositories.md).
 | pullRequest   | integer  | ID of the pull request.
 | Query
@@ -196,14 +196,14 @@ POST https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repo
 ## Update a pull request
 
 ```no-highlight
-PATCH https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}/pullrequests/{pullRequest}?api-version={version}
+PATCH https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/pullrequests/{pullRequest}?api-version={version}
 ```
 
 | Parameter             | Type     | Notes
 |:----------------------|:---------|:------------------------------------------------------------------------------------------------
 | URL
 | instance              | string   | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project               | string   | ID or name of the [team project](../../tfs/projects.md). *Optional if specifying an ID for repository.*
+| project               | string   | ID or name of the [project](../../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository            | string   | ID of the [repository](../repositories.md).
 | pullRequest           | integer  | ID of the pull request.
 | Query

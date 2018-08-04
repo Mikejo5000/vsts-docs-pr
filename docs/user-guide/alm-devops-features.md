@@ -10,7 +10,7 @@ ms.manager: douge
 ms.author: chcomley
 author: chcomley
 ms.topic: reference
-ms.date: 06/07/2018
+ms.date: 08/02/2018
 monikerRange: '>= tfs-2013'
 ---
 
@@ -71,7 +71,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p>Add members to your team project adds them to the Contributor group. When managing a large group of users, use [built-in groups to manage users and their permissions](../organizations/security/permissions.md).</p>
 <br/>
 <p><b>Add team members </b></p>
-<p>To share and contribute to your project, add user accounts to [VSTS](../organizations/accounts/add-team-members-vs.md) or your [TFS](../work/scale/multiple-teams.md#add-team-members).</p>
+<p>To share and contribute to your project, add users to [VSTS](../organizations/accounts/add-team-members-vs.md) or your [TFS](../work/scale/multiple-teams.md#add-team-members).</p>
 ![Manage users, add team members](_img/features/alm-feature-manage-members.png)  
 <br/>
 
@@ -83,8 +83,8 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Access levels</b></p>
-<p>All users that you add to your VSTS account or to your TFS team project have access to Basic features by default, except [Stakeholders](../organizations/security/get-started-stakeholder.md) who have access to a limited set of features, or those added to the Advanced access level in TFS.</p>
-- [Manage users (VSTS)](../organizations/accounts/add-account-users-from-user-hub.md)   
+<p>All users that you add to your VSTS organization or to your TFS team project have access to Basic features by default, except [Stakeholders](../organizations/security/get-started-stakeholder.md) who have access to a limited set of features, or those added to the Advanced access level in TFS.</p>
+- [Manage users (VSTS)](../organizations/accounts/add-organization-users-from-user-hub.md)   
 - [Change access levels (TFS)](../organizations/security/change-access-levels.md)  
 <br/>
 <p><b>Permissions</b></p>
@@ -367,7 +367,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p>You can [remove a custom field and select inherited fields from a work item form](../organizations/settings/work/customize-process-field.md#remove-field). You can also [relabel the fields](../organizations/settings/work/customize-process-field.md#rename-field) that appear on the form.   </p>
 
 <p><b>Area path pick lists</b></p>
-<p>Change the [pick list of area paths](../work/customize/set-area-paths.md) to support grouping work items by team, product, or feature area. </p>
+<p>Change the [pick list of area paths](../organizations/settings/set-area-paths.md) to support grouping work items by team, product, or feature area. </p>
 ![Hierarchical area paths](_img/features/alm-feature-area-paths.png)   
 <br/>
 
@@ -447,7 +447,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Area path pick lists</b></p>
-<p>Change the [pick list of area paths](../work/customize/set-area-paths.md) to support grouping work items by team, product, or feature area. </p>
+<p>Change the [pick list of area paths](../organizations/settings/set-area-paths.md) to support grouping work items by team, product, or feature area. </p>
 
 <p><b>Sprint/iteration pick lists</b></p>
 <p>Change the [pick list of iteration paths](../work/scrum/define-sprints.md) to support grouping work into sprints, milestones, or other event-specific or time-related period.</p>
@@ -590,7 +590,7 @@ Use features supported by these familiar clients to manage your project and illu
 ![Multiple teams](_img/features/alm-feature-multiple-teams.png)  
 <br/>
 <p><b>Set team defaults</b></p>
-<p>Several Agile tools reference the team's default area path, iteration path, and activated sprints to automatically filter the set of work items they display. Understand how defaults are used and how to [set the defaults for your team](../work/scale/set-team-defaults.md).</p>
+<p>Several Agile tools reference the team's default area path, iteration path, and activated sprints to automatically filter the set of work items they display. Understand how defaults are used and how to [set the defaults for your team](../organizations/settings/set-team-defaults.md).</p>
 
 </td>
 <td width="33%">
@@ -644,7 +644,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p>[Schedule and activate your team's sprints](../work/scrum/define-sprints.md) to gain access to sprint backlogs and task boards.</p>
 
 <p><b>Select team sprints, set team defaults</b></p>
-<p>Several tools reference the team's default and active iteration paths or sprints. For the Agile tools to work best, each team needs to [set their team area path(s) and iteration paths](../work/scale/set-team-defaults.md) to support their work tracking activities. </p>
+<p>Several tools reference the team's default and active iteration paths or sprints. For the Agile tools to work best, each team needs to [set their team area path(s) and iteration paths](../organizations/settings/set-team-defaults.md) to support their work tracking activities. </p>
 
 
 <p><b>Plan sprints</b></p>
@@ -775,7 +775,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 <p><b>Personal and team notifications or alerts</b></p>
 <p>Get notified as changes occur to work items, code reviews, source control files, and builds by setting [personal notifications](../notifications/manage-personal-notifications.md) or [team notifications](../notifications/manage-team-notifications.md).</p>
-![Open Notifications from Account menu](_img/features/features-notifications-option.png)  
+![Open Notifications from Organization menu](_img/features/features-notifications-option.png)  
 <br/>
 
 <p><b>Share queries and sprint plans</b></p>
@@ -840,29 +840,29 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Get started with Git in Visual Studio </b></p>
-<p>To get started working with Git, [clone a repository, add code, and create topic branches in VSTS](../git/gitquickstart.md) or [Visual Studio](../git/get-started.md). Learn how to commit, publish, and conduct a pull request of your changes. </p>
+<p>To get started working with Git, [clone a repository, add code, and create topic branches in VSTS](../repos/git/create-new-repo.md) or [Visual Studio](../repos/git/gitquickstart.md). Learn how to commit, publish, and conduct a pull request of your changes. </p>
 ![Visual Studio Git UI pages](_img/features/features-git-vs-ui.png)  
 <br/>
 
 <p><b>Clone repositories</b></p>
-<p>To work locally, you [clone a repository](../git/get-started.md). </p>
+<p>To work locally, you [clone a repository](../repos/git/clone.md). </p>
 
 <p><b>Commit changes</b></p>
-<p>Enter commit messages and [quickly push your local changes to the shared repo](../git/get-started.md).</p>
+<p>Enter commit messages and [quickly push your local changes to the shared repo](../repos/git/pushing.md).</p>
 ![Commit and push changes](_img/features/alm-feature-git-dev-commit-push.png)  
 <br/>
 
 <p><b>Pull requests</b></p>
-<p>Use [pull requests to review and merge branch code to a master branch](../git/pull-requests.md).   </p>
+<p>Use [pull requests to review and merge branch code to a master branch](../repos/git/pull-requests.md).   </p>
 <p><b>Sync</b></p>
 
-<p>Quickly [sync your local branch with a shared repo](../git/get-started.md).</p>
+<p>Quickly [sync your local branch with a shared repo](../repos/git/pulling.md).</p>
 
 
 </td>
 <td width="33%">
 <p><b>Get started using Eclipse</b></p>
-<p>[Work with Git repositories](../git/share-your-code-in-git-eclipse.md) using the Team Explorer Everwhere IDE for Eclipse.  </p>
+<p>[Work with Git repositories](../repos/git/share-your-code-in-git-eclipse.md) using the Team Explorer Everwhere IDE for Eclipse.  </p>
 
 <p><b>Add reviewers to get feedback </b></p>
 <p>Use the [**@mention** control to add reviewers](../work/productivity/productivity-tips.md) to your pull request to get their feedback about your changes.  </p>
@@ -871,7 +871,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Resolve Git merge conflicts</b></p>
-<p>Merge conflicts occur when commits have changes to the same files as other newer commits in the branch history. Learn how to [prevent and resolve merge conflicts](../git/tutorial/merging.md).   </p>
+<p>Merge conflicts occur when commits have changes to the same files as other newer commits in the branch history. Learn how to [prevent and resolve merge conflicts](../repos/git/merging.md).   </p>
 
 <p><b>Code search</b></p>
 <p>Maximize cross-team collaboration and code sharing by finding code across all the projects to which you have access. Narrow down your results and focus in on code by using [filters, preview code, view history, compare versions, and more](../project/search/overview.md) </p>
@@ -879,20 +879,20 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Get notified about pull requests</b></p>
-<p>Subscribe to email alerts to get notified about [new pull requests, changes, approvals, and rejections](../git/pull-requests.md#notifications).</p>
+<p>Subscribe to email alerts to get notified about [new pull requests, changes, approvals, and rejections](../repos/git/pull-requests.md#notifications).</p>
 
 <p><b>Set branch policies </b></p>
-<p>To improve code quality, [set branch policies to require code reviews or  automatically add reviewers](../git/branch-policies.md). </p>
+<p>To improve code quality, [set branch policies to require code reviews or  automatically add reviewers](../repos/git/branch-policies.md). </p>
 
 <p><b>Automatically build pull requests </b></p>
-<p>Set a branch policy to [automatically generate a build for a pull request to selected branches](../git/branch-policies.md).</p>
+<p>Set a branch policy to [automatically generate a build for a pull request to selected branches](../repos/git/branch-policies.md).</p>
 
 <p><b>Create Git repositories </b></p>
-<p>When you create a team project with Git as your version control system, you automatically create a Git repo. You can [Create additional Git repos](../git/repo-rename.md) from the admin context. </p>
+<p>When you create a team project with Git as your version control system, you automatically create a Git repo. You can [Create additional Git repos](../repos/git/repo-rename.md) from the admin context. </p>
 
 
 <p><b>Rename a Git repository </b></p>
-<p>[Rename Git repos](../git/repo-rename.md) from the admin context. </p>
+<p>[Rename Git repos](../repos/git/repo-rename.md) from the admin context. </p>
 
 </td>
 <td width="33%">
@@ -907,18 +907,18 @@ Use features supported by these familiar clients to manage your project and illu
 <p>Use the [**#ID** control to link work items](../work/productivity/productivity-tips.md) to your pull request to support tracking work.    </p>
 
 <p><b>Get started using Xcode </b></p>
-<p>[Work with Git repositories](../git/share-your-code-in-git-xcode.md) using the Xcode IDE.  </p>
+<p>[Work with Git repositories](../repos/git/share-your-code-in-git-xcode.md) using the Xcode IDE.  </p>
 
 <p><b>Git commands</b></p>
-<p>Use [Git command line tools](../git/command-prompt.md) when you need to perform select manual tasks or to automate work using a script.</p>
+<p>Use [Git command line tools](../repos/git/command-prompt.md) when you need to perform select manual tasks or to automate work using a script.</p>
 
 
 
 <p><b>Bypass a branch policy</b></p>
-<p>Grant an [Exempt from policy enforcement permission](../git/branch-policies.md) to a user or group.</p>
+<p>Grant an [Exempt from policy enforcement permission](../repos/git/branch-policies.md) to a user or group.</p>
 
 <p><b>Rebase a branch</b></p>
-<p>Before merging a topic branch into master, you may choose to first [rebase your topic branch onto the latest commit in master](../git/rebase.md).</p>
+<p>Before merging a topic branch into master, you may choose to first [rebase your topic branch onto the latest commit in master](../repos/git/rebase.md).</p>
 
 
 
@@ -944,7 +944,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Get started with TFVC in Visual Studio </b></p>
-<p>[Develop and share your code](../tfvc/share-your-code-in-tfvc-vs.md). Learn how to configure your workspace, check-in your code, compare file changes, and view file history. </p>
+<p>[Develop and share your code](../repos/tfvc/share-your-code-in-tfvc-vs.md). Learn how to configure your workspace, check-in your code, compare file changes, and view file history. </p>
 ![Visual Studio Git UI pages](_img/features/features-tfvc-ui-vs.png)  
 <br/>
 
@@ -1101,7 +1101,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Branch policies (Git)</b></p>
-<p>Improve code quality by [setting branch policies](../git/branch-policies.md) to ensure build are never broken or getting the right people to review changes. </p>
+<p>Improve code quality by [setting branch policies](../repos/git/branch-policies.md) to ensure build are never broken or getting the right people to review changes. </p>
 
 
 </td>
@@ -1388,7 +1388,7 @@ pipelines\tasks\build\_img
 
 
 <p><b>Share dashboards with stakeholders</b></p>
-<p>Grant non-licensed users access as Stakeholders ([VSTS](../organizations/accounts/add-account-users-from-user-hub.md) | [TFS](../organizations/security/change-access-levels.md)) so they can view progress, run queries, and contribute ideas.  </p>
+<p>Grant non-licensed users access as Stakeholders ([VSTS](../organizations/accounts/add-organization-users-from-user-hub.md) | [TFS](../organizations/security/change-access-levels.md)) so they can view progress, run queries, and contribute ideas.  </p>
 
 <p><b>Velocity charts</b></p>
 <p>[Team velocity](../report/dashboards/team-velocity.md) tracks the total estimated effort (story points or size) of backlog items (user stories or requirements) completed or still in progress within each sprint. </p>
@@ -1457,7 +1457,7 @@ pipelines\tasks\build\_img
 
 
 <p><b>Get started </b></p>
-<p>You can [create dashboards, individual reports, or explore data](../report/powerbi/report-on-vso-with-power-bi-vs.md) collected for your VSTS account once you connect to Power BI. </p>
+<p>You can [create dashboards, individual reports, or explore data](../report/powerbi/report-on-vso-with-power-bi-vs.md) collected for your VSTS organization once you connect to Power BI. </p>
 
 
  
@@ -1466,7 +1466,7 @@ pipelines\tasks\build\_img
 <td width="50%">
 
 <p><b>Connect to Power BI</b></p>
-<p>[Steps required to authorize Power BI to access your VSTS account](../report/powerbi/data-connector-connect.md).</p>
+<p>[Steps required to authorize Power BI to access your VSTS organization](../report/powerbi/data-connector-connect.md).</p>
 
 
 <p><b>Available data</b></p>
@@ -1853,7 +1853,7 @@ using [service hooks](../service-hooks/overview.md).</p>
 <td width="33%">
 
 <p><b>Authorize</b></p>
-<p>[Authorize](../service-hooks/authorize.md) other services to access your VSTS account using the industry standard OAuth 2.0.
+<p>[Authorize](../service-hooks/authorize.md) other services to access your VSTS organization using the industry standard OAuth 2.0.
 Oauth 2.0 provides safe, secure access to your resources like work items, source code and build results by those other services.</p>
 
 </td>
@@ -2086,15 +2086,15 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Operational hubs</b></p>
-<p>Each hub&mdash;[Home, Code, Work, build, and Test](work-web-portal.md)&mdash;supports specialized functions to share information, view and create dashboards, collaborate on code, plan and track work, build and test your applications, plus much, much more.</p>
+<p>Each hub&mdash;[Home, Code, Work, build, and Test](../project/navigation/index.md)&mdash;supports specialized functions to share information, view and create dashboards, collaborate on code, plan and track work, build and test your applications, plus much, much more.</p>
 ![Operational hubs](_img/features/alm-feature-op-hubs-2.png)  
 <br/>
 
-<p><b>Account hub </b></p>
-<p>To view and quickly navigate to teams, team projects, branches, work items, pull requests and other objects that are relevant to you, use your [account hub](account-home-pages.md). </p>
+<p><b>Project page </b></p>
+<p>To view and quickly navigate to teams, team projects, branches, work items, pull requests and other objects that are relevant to you, use your [Project page](../project/navigation/work-across-projects.md). </p>
 
 <p><b>Your profile and preferences</b></p>
-<p>Choose your name to access [your profile settings](../organizations/settings/set-your-preferences.md), set preferences, [create personal access tokens (VSTS)](../git/command-prompt.md#pat), [set alerts](../work/track/alerts-and-notifications.md), and log-in or out.</p>
+<p>Choose your name to access [your profile settings](../organizations/settings/set-your-preferences.md), set preferences, [create personal access tokens (VSTS)](../repos/git/command-prompt.md#pat), [set alerts](../work/track/alerts-and-notifications.md), and log-in or out.</p>
 ![Profile drop down menu](_img/features/alm-index-my-profile-menu.png)  
 <br/>
 
@@ -2121,7 +2121,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>Provide team guidance through [Welcome](../project/wiki/markdown-guidance.md) (Markdown format) pages and add team [dashboards](../report/dashboards/dashboards.md) to monitor progress and trends. </p>
 
 <p><b>Code</b></p>
-<p>Manage source code using distributed [Git repositories](../git/get-started.md) or [Team Foundation version control](https://msdn.microsoft.com/library/ms181384%28v=vs.140%29).  to </p>
+<p>Manage source code using distributed [Git repositories](../repos/git/index.md) or [Team Foundation version control](../repos/tfvc/index.md).  to </p>
 
 <p><b>Work</b></p>
 <p>Plan and track work by [creating a product backlog](../work/backlogs/create-your-backlog.md), and managing work using [Kanban](../work/kanban/kanban-basics.md) or [Scrum](../work/scrum/assign-work-sprint.md) processes. Find work items you want to review or update by [creating queries](../work/track/using-queries.md), or visualize progress by [creating query-based charts](../report/dashboards/charts.md)  </p>
@@ -2156,8 +2156,8 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <td width="33%">
 
 <p><b>Collection-project-team structure</b></p>
-<p>The [collection-project-team structure](work-web-portal.md#collection-project-team-structure) provides teams a high-level of autonomy to configure their tools in ways that work for them. It also supports administrative tasks to occur at the appropriate level.</p>
-![Single collection-project-team conceptual image](_img/web-portal-account-project-team-concept.png)
+<p>The [collection-project-team structure](../organizations/projects/about-projects.md) provides teams a high-level of autonomy to configure their tools in ways that work for them. It also supports administrative tasks to occur at the appropriate level.</p>
+![Single collection-project-team conceptual image](_img/web-portal-organization-project-team-concept.png)
 <br/>
 
 <p><b>My favorites</b></p>
@@ -2172,7 +2172,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Team project admin context</b></p>
-<p>Open the admin context to [add teams](../work/scale/multiple-teams.md), [set team defaults](../work/scale/set-team-defaults.md), and [manage permissions](../organizations/security/change-individual-permissions.md). From any team project hub, choose the ![gear icon](../work/_img/icons/gear_icon.png) gear icon to open the admin context.</p>
+<p>Open the admin context to [add teams](../work/scale/multiple-teams.md), [set team defaults](../organizations/settings/set-team-defaults.md), and [manage permissions](../organizations/security/change-individual-permissions.md). From any team project hub, choose the ![gear icon](../work/_img/icons/gear_icon.png) gear icon to open the admin context.</p>
 ![Admin context](_img/features/alm-feature-admin-context.png)  
 <br/>
 
@@ -2313,7 +2313,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>Grant or restrict access to: </p>
 <ul>
 <li>[Git repositories](../organizations/security/set-git-tfvc-repository-permissions.md)</li>
-<li>[Git branches](../git/branch-permissions.md)</li>
+<li>[Git branches](../repos/git/branch-permissions.md)</li>
 <li>[TFVC source code and folders](../organizations/security/set-git-tfvc-repository-permissions.md)</li>
 <li>[Build](../pipelines/policies/set-permissions.md)</li>
 <li>[Test](../organizations/security/set-project-collection-level-permissions.md))</li>
@@ -2336,7 +2336,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Team admin role and permissions</b></p>
-<p>Add user accounts as team administrators to enable them to [configure team settings and manage team assets](../work/scale/manage-team-assets.md).</p>
+<p>Add users as team administrators to enable them to [configure team settings and manage team assets](../work/scale/manage-team-assets.md).</p>
 
 
 <p><b>Manage administrative permissions </b></p>
@@ -2349,7 +2349,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <br/>
 
 <p><b>Restrict access</b></p>
-<p>You can restrict access to several features and tasks by setting the permission state to Deny to individual accounts or a security group.</p>
+<p>You can restrict access to several features and tasks by setting the permission state to Deny to individual userss or a security group.</p>
 
 
 </td>
@@ -2612,8 +2612,8 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <td width="33%">
 
 <p><b>Collection-project-team structure</b></p>
-<p>The [collection-project-team structure](work-web-portal.md#collection-project-team-structure) provides teams a high-level of autonomy to configure their tools in ways that work for them. It also supports administrative tasks to occur at the appropriate level.</p>
-![Single collection-project-team conceptual image](_img/web-portal-account-project-team-concept.png)
+<p>The [collection-project-team structure](../organizations/projects/about-projects.md) provides teams a high-level of autonomy to configure their tools in ways that work for them. It also supports administrative tasks to occur at the appropriate level.</p>
+![Single collection-project-team conceptual image](_img/web-portal-organization-project-team-concept.png)
 <br/>
 
 <p><b>Change the process (VSTS) </b></p>
@@ -2624,7 +2624,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <td width="33%">
 
 <p><b>View your work across teams and team projects (VSTS)</b></p>
-<p>From your [account hub](account-home-pages.md), you can view and quickly navigate to teams, team projects, branches, work items, pull requests and other objects that are relevant to you and that are stored in different team projects within the account collection. </p>
+<p>From your [Project page](../project/navigation/work-across-projects.md), you can view and quickly navigate to teams, team projects, branches, work items, pull requests and other objects that are relevant to you and that are stored in different team projects within the organization collection. </p>
 
 <p><b>Customize a team project (TFS) </b></p>
 <p>You customize a team project defined on an on-premises TFS by [modifying definition files for work item types or process configuration, or changing field attributes](../work/customize/customize-work.md).  </p>
@@ -2657,7 +2657,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>A team is an organizing unit used to support a number of [team-configurable tools and assets](../work/scale/manage-team-assets.md) to plan and manage work and facilitate collaboration.  </p>
 
 <p><b>Add team members</b></p>
-<p>Add accounts--[VSTS](../organizations/accounts/add-team-members-vs.md) | [TFS](../work/scale/multiple-teams.md#add-team-members)--to a team to enable users to share code, plan and track work, and access other team assets and resources. </p>
+<p>Add organizations--[VSTS](../organizations/accounts/add-team-members-vs.md) | [TFS](../work/scale/multiple-teams.md#add-team-members)--to a team to enable users to share code, plan and track work, and access other team assets and resources. </p>
 ![Manage users, add team members](_img/features/alm-feature-manage-members.png)  
 <br/>
 
@@ -2667,7 +2667,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Add a team admin</b></p>
-<p>Add user accounts to the team admin role to enable them to [configure team settings](../work/scale/add-team-administrator.md). Team settings can only be configured by a team or project admin. </p>
+<p>Add users to the team admin role to enable them to [configure team settings](../work/scale/add-team-administrator.md). Team settings can only be configured by a team or project admin. </p>
 
 
 <p><b>Support stakeholders</b></p>
@@ -2690,7 +2690,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>By [configuring your teams and backlogs into an hierarchical structure](../work/scale/portfolio-management.md), program owners can more easily track progress across teams, manage portfolios, and generate rollup data. </p>
 
 <p><b>Set team defaults</b></p>
-<p>Several Agile tools reference the team's default area path, iteration path, and activated sprints to automatically filter the set of work items they display. Understand how defaults are used and how to [set the defaults for your team](../work/scale/set-team-defaults.md).</p>
+<p>Several Agile tools reference the team's default area path, iteration path, and activated sprints to automatically filter the set of work items they display. Understand how defaults are used and how to [set the defaults for your team](../organizations/settings/set-team-defaults.md).</p>
 
 <p><b>Select team sprints</b></p>
 <p>[Select your team's sprints](../work/scrum/define-sprints.md) to gain access to sprint backlogs and task boards.</p>
@@ -2762,7 +2762,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <td width="50%">
 
 <p><b>Git code changes </b></p>
-<p>[Get detailed information about what changes have been made to your local and centralized branches and repositories](../git/get-started.md), compare files and folders, review history of commits and  file changes. </p>
+<p>[Get detailed information about what changes have been made to your local and centralized branches and repositories](../repos/git/history.md), compare files and folders, review history of commits and file changes. </p>
 
 <p><b>Integrate Git development with work tracking (VSTS) </b></p>
 <p>Drive Git development and stay in sync as a team to complete backlog items and tasks using the [Git Development section](../work/backlogs/connect-work-items-to-git-dev-ops.md). Add branches, create pull requests, and view all development performed to support the specific work item.  </p>

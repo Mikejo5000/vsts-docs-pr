@@ -15,7 +15,7 @@ ms.date: 09/08/2017
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-The field data type determines the kind and size of data that you can store in the field. A field can have only one type defined within a team project collection. This restriction encourages organizations to use common fields across projects and work item types.
+The field data type determines the kind and size of data that you can store in the field. A field can have only one type defined within a project collection. This restriction encourages organizations to use common fields across projects and work item types.
 
 Reportable attributes determine which fields show up in the data warehouse. Reportable attributes are only valid for on-premises TFS.  
 
@@ -83,7 +83,7 @@ The following list shows the supported data types:
 </td></tr>
 <tr>
 	<td><p> <strong>TreePath</strong> </p></td>
-	<td><p>Specifies a field that displays entries in a hierarchical or tree structure, such as the requirements to display area and iteration paths for a product.   For more information, see [Add and modify area and iteration paths](../set-area-paths.md).</p>
+	<td><p>Specifies a field that displays entries in a hierarchical or tree structure, such as the requirements to display area and iteration paths for a product.   For more information, see [Add and modify area and iteration paths](../../../organizations/settings/set-area-paths.md).</p>
 
 <blockquote><b>Note:</b> The **System.AreaPath** and **System.IterationPath** fields are the only fields that use this data type. You cannot define a custom field using this data type. For the client work item form, you add the **System.AreaPath** and **System.IterationPath** fields to a work item form by using the **WorkItemClassificationControl type** attribute. </blockquote>
 </td></tr>

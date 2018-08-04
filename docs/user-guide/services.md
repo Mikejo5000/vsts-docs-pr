@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2013'
  
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-With VSTS and TFS, you gain an integrated set of services and tools to manage your software projects, from planning and development through testing and deployment. Services are delivered through a client-server model, many of which are delivered through an easy-to-use web interface that you can access from all major browsers. Some services, such as source control, build definitions, and work tracking can also be managed through a client.  
+With VSTS and TFS, you gain an integrated set of services and tools to manage your software projects, from planning and development through testing and deployment. Services are delivered through a client-server model, many of which are delivered through an easy-to-use web interface that you can access from all major browsers. Some services, such as source control, build pipelines, and work tracking can also be managed through a client.  
 
 Web services are access through the following main hubs as shown in the following image.
 
@@ -61,7 +61,7 @@ From the Code hub for Git you can perform these tasks:
 - Review, create, approve, comment, and complete pull requests  
 - Add and manage Git tags   
 
-To learn more, see the overviews for [Git](../git/overview.md) or [TFVC](../tfvc/overview.md). 
+To learn more, see the overviews for [Git](../repos/git/overview.md) or [TFVC](../repos/tfvc/overview.md). 
 
 ## Plan and track work
 
@@ -86,12 +86,12 @@ See [Backlogs, boards, and plans](../work/backlogs/backlogs-boards-plans.md) for
 The **Build & Release** hub provides an integrated set of features to support building and deploying your applications. 
 
 
-<img src="_img/services/build-release-hub.png" alt="Build-Release hub, Build definitions page" style="border: 2px solid #C3C3C3;" />
+<img src="_img/services/build-release-hub.png" alt="Build-Release hub, Build pipelines page" style="border: 2px solid #C3C3C3;" />
 
 Use this hub to implement continuous integration and continuous delivery.
 
 - **Build automation**: Define the steps to take during build and the triggers that will initiate a build. 
-- **Release management**: Supports a rapid release cadence and management of simultaneous releases. You can configure release definitions that represent your environments from development to production. Run automations to deploy your app to each environment. Add approvers to sign off that the app has been successfully deployed in an environment. Create your release manually or automatically from a build. Then track your releases as they are deployed to various environments.
+- **Release management**: Supports a rapid release cadence and management of simultaneous releases. You can configure release pipelines that represent your environments from development to production. Run automations to deploy your app to each environment. Add approvers to sign off that the app has been successfully deployed in an environment. Create your release manually or automatically from a build. Then track your releases as they are deployed to various environments.
 
 
 To learn more, see [Continuous integration on any platform](../pipelines/overview.md). 
@@ -166,7 +166,7 @@ There are a number of features and tasks associated with administrating a collab
 <img src="_img/tour-admin-project-level.png" alt="Product backlog" style="border: 2px solid #C3C3C3;" />
 
 > [!div class="mx-tdBreakAll"]  
-> |Account Management (VSTS)  | Administration (TFS)  | 
+> |Organization Management (VSTS)  | Administration (TFS)  | 
 > |-------------|----------| 
 > |- Manage users, access, and billing<br/>- Add and manage team projects and teams<br/>- Customize work tracking processes<br/>- Manage build retention policies<br/>- Add and manage build agent pools<br/>- Add and manage extensions|-Manage users, access, and permissions<br/>- Add and manage teams, team projects, and collections<br/>- Customize work tracking processes<br/>- Manage build retention policies<br/>- Add and manage build agent pools<br/>- Add and manage extensions<br/>- Configure an SMTP server (supports feedback requests and notification features)<br/>- Configure a backup schedule and manage database backups<br/>- Manage upgrades |
 
@@ -180,5 +180,5 @@ There are a number of features and tasks associated with administrating a collab
 
 
 <!---
-**System Center integration**: Enables a release definition to connect to a System Center Virtual Machine Manager (SCVMM) server to easily provision virtual machines and perform actions on them such as managing checkpoints, starting and **VMware Resource Deployment**: Connect to a VMware vCenter Server from VSTS or TFS to provision, start, stop, or snapshot VMware virtual machines. 
+**System Center integration**: Enables a release pipeline to connect to a System Center Virtual Machine Manager (SCVMM) server to easily provision virtual machines and perform actions on them such as managing checkpoints, starting and **VMware Resource Deployment**: Connect to a VMware vCenter Server from VSTS or TFS to provision, start, stop, or snapshot VMware virtual machines. 
 -->

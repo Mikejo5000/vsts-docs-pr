@@ -15,14 +15,14 @@ ms.contentid: 95B4933F-8191-4073-835A-3A0E218987D3
 ## Get a list of import requests
 
 ```no-highlight
-GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}/importRequests?api-version={version}[&includeAbandoned={bool}]
+GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/importRequests?api-version={version}[&includeAbandoned={bool}]
 ```
 
 | Parameter         | Type    | Default | Notes
 |:------------------|:--------|:--------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
 | instance          | string  |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project           | string  |         | ID or name of the [team project](../tfs/projects.md). *Optional if specifying an ID for repository.*
+| project           | string  |         | ID or name of the [project](../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository        | string  |         | ID of the [repository](./repositories.md).
 | Query
 | api-version       | string  |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -39,14 +39,14 @@ GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repos
 ## Get an import request
 
 ```no-highlight
-GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}/importRequests/{importRequestId}?api-version={version}
+GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/importRequests/{importRequestId}?api-version={version}
 ```
 
 | Parameter         | Type    | Notes
 |:------------------|:--------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
 | instance          | string  | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project           | string  | ID or name of the [team project](../tfs/projects.md). *Optional if specifying an ID for repository.*
+| project           | string  | ID or name of the [project](../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository        | string  | ID of the [repository](./repositories.md).
 | importRequestId   | int     | ID of the import request.
 | Query
@@ -57,7 +57,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repos
 ## Create a request to import a repository
 
 ```no-highlight
-POST https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}/importRequests?api-version={version}
+POST https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/importRequests?api-version={version}
 ```
 ```
 {
@@ -77,14 +77,14 @@ POST https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repo
 |:---------------------------------------------------|:---------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
 | instance                                           | string   | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project                                            | string   | ID or name of the [team project](../tfs/projects.md). *Optional if specifying an ID for repository.*
+| project                                            | string   | ID or name of the [project](../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository                                         | string   | ID of the [repository](./repositories.md).
 | Query
 | api-version                                        | string   | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | Body
 | parameters.gitSource.url                           | string   | Url of the source Git repository to import from
-| parameters.serviceEndpointId                       | string   | [Service Endpoint](../endpoints/overview.md) ID. Required if source repository is private.
-| parameters.deleteServiceEndpointAfterImportIsDone  | bool     | If true, delete service endpoint after import is done.
+| parameters.serviceEndpointId                       | string   | [Service connection](../endpoints/overview.md) ID. Required if source repository is private.
+| parameters.deleteServiceEndpointAfterImportIsDone  | bool     | If true, delete service connection after import is done.
 
 [!code-REST [POST__git_repositories__repositoryId__importRequests_json](./_data/importRequests/POST__git_repositories__repositoryId__importRequests.json)]
 
@@ -93,7 +93,7 @@ POST https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repo
 There can only be one active import request associated with a repository. Marking a failed import request abandoned makes it inactive.
 
 ```no-highlight
-PATCH https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}/importRequests/{importRequestId}?api-version={version}
+PATCH https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/importRequests/{importRequestId}?api-version={version}
 ```
 ```
 {
@@ -105,7 +105,7 @@ PATCH https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{rep
 |:---------------------|:---------------------------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
 | instance             | string                     | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project              | string                     | ID or name of the [team project](../tfs/projects.md). *Optional if specifying an ID for repository.*
+| project              | string                     | ID or name of the [project](../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository           | string                     | ID of the [repository](./repositories.md).
 | importRequestId      | int                        | ID of the import request.
 | Query

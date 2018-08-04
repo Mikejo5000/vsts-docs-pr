@@ -24,14 +24,14 @@ Blobs are files in the Git repository.
 When you get an blob, by default the response is a stream (`application/octet-stream`) that contains the contents of the file.
 
 ```no-highlight
-GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}/blobs/{objectId}?api-version={version}[&download={bool}&fileName={string}]
+GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/blobs/{objectId}?api-version={version}[&download={bool}&fileName={string}]
 ```
 
 | Parameter  | Type    | Default   | Notes
 |:-----------|:--------|:----------|:-----------------------------------------------------------------------------------------------------------------------------------------
 | URL
 | instance   | string  |           | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project    | string  |           | ID or name of the [team project](../tfs/projects.md). *Optional if specifying an ID for repository.*
+| project    | string  |           | ID or name of the [project](../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository | string  |           | ID of the [repository](./repositories.md).
 | objectId   | string  |           | SHA1 hash of the file. You can get the objectId of a file by [getting its metadata](./items.md#afile).
 | Query
@@ -50,7 +50,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repos
 
 ####Sample request
 ```no-highlight
-GET https://fabrikam.VisualStudio.com/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/blobs/f5dd7df5872eae8c39c9491f67d856dafd609683?api-version=1.0&$format=octetstream
+GET https://fabrikam.VisualStudio.com/DefaultCollection/_apis/repos/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/blobs/f5dd7df5872eae8c39c9491f67d856dafd609683?api-version=1.0&$format=octetstream
 ```
 
 ####Sample response
@@ -87,6 +87,6 @@ GET https://fabrikam.VisualStudio.com/DefaultCollection/_apis/git/repositories/2
 ### In a downloadable .zip file
 
 ```no-highlight
-GET https://fabrikam.VisualStudio.com/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/blobs/f5dd7df5872eae8c39c9491f67d856dafd609683?api-version=1.0&download=true&$format=zip&filename=myfiles.zip
+GET https://fabrikam.VisualStudio.com/DefaultCollection/_apis/repos/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/blobs/f5dd7df5872eae8c39c9491f67d856dafd609683?api-version=1.0&download=true&$format=zip&filename=myfiles.zip
 ```
 

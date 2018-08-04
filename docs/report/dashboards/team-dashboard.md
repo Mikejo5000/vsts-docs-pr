@@ -37,7 +37,7 @@ You pin an item to the team dashboard from the code, work, and build pages.
 
 	![Pin query from context menu](_img/tfs-pin-to-homepage.png)  
 
-	To add a source control folder or a build definition, open the corresponding page and access the pin feature in the same way.    
+	To add a source control folder or a build pipeline, open the corresponding page and access the pin feature in the same way.    
 
 3.	To pin a chart, go to the query's Charts page and pin it to your selected dashboard or the team homepage.  
 
@@ -72,4 +72,4 @@ Either choose the context menu for the item that you want to remove and select U
  
 You navigate to your team context from the top navigation bar.   
 
-![Choose another team from the team project menu](_img/switch-team-context.png)  
+![Choose another team from the project menu](_img/switch-team-context.png)  

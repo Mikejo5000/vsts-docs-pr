@@ -43,9 +43,9 @@ There are [code samples](https://github.com/Microsoft/vsts-dotnet-samples/blob/m
             [Git Repositories](./repositories.md)
         </td>
         <td>
-            <ul><li>Get a list of [repositories](./repositories.md#inateamproject) in a team project.</li>
-            <li>[Add a repository](./repositories.md#createarepository) to a team project.</li>
-            <li>[Delete a repository](./repositories.md#deletearepository) from a team project.</li>
+            <ul><li>Get a list of [repositories](./repositories.md#inateamproject) in a project.</li>
+            <li>[Add a repository](./repositories.md#createarepository) to a project.</li>
+            <li>[Delete a repository](./repositories.md#deletearepository) from a project.</li>
             </ul>
         </td>
     </tr>
@@ -130,5 +130,5 @@ In case you're looking for something not found in the **Common tasks** section a
 * [Trees](./trees.md)
 
 >[!NOTE]
->For more information on Git, see [Use Git with Visual Studio and Team Foundation Server](https://visualstudio.microsoft.com/docs/git/overview).
+>For more information on Git, see [Use Git with Visual Studio and Team Foundation Server](https://visualstudio.microsoft.com/docs/repos/git/overview).
 

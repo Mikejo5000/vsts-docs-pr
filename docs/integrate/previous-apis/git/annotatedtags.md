@@ -22,14 +22,14 @@ Git annotated tags are tags with additional metadata including the person who cr
 ## Get annotated tag
 
 ```httprequest
-GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}/annotatedTags/{objectId}?api-version={version}
+GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/annotatedTags/{objectId}?api-version={version}
 ```
 
 | Parameter  | Type   | Notes
 |:-----------|:-------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
 | instance   | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project    | string | [Team project](../tfs/projects.md) ID or name.
+| project    | string | [Project](../tfs/projects.md) ID or name.
 | repository | string | ID or name of the [repository](./repositories.md).
 | objectId   | string | objectId of Tag to be fetched, returned only if it is annotated tag
 | Query
@@ -40,7 +40,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repos
 ## Create annotated tag
 
 ```httprequest
-POST https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}/annotatedTags?api-version={version}
+POST https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/annotatedTags?api-version={version}
 ```
 ```http
 Content-Type: application/json
@@ -59,7 +59,7 @@ Content-Type: application/json
 |:-----------|:-------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
 | instance              | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project               | string | [Team project](../tfs/projects.md) ID or name.
+| project               | string | [Project](../tfs/projects.md) ID or name.
 | repository            | string | ID or name of the [repository](./repositories.md).
 | Query                 |
 | name                  | string | name of the tag to be created

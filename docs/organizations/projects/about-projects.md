@@ -156,7 +156,7 @@ A public project, on the other hand, doesn't require users  to sign in to gain r
 
 When you add a project, look at using the following elements to structure it to support your business needs: 
 
-- [Create a Git repository](../../git/tutorial/creatingrepo.md) for each sub-project or application, or [create root folders within a TFVC repository](../../tfvc/branch-folders-files.md) for each sub-project.  
+- [Create a Git repository](../../repos/git/creatingrepo.md) for each sub-project or application, or [create root folders within a TFVC repository](../../repos/tfvc/branch-folders-files.md) for each sub-project.  
 - [Define area paths](../settings/set-area-paths.md) to support different sub-projects, products, features, or teams. 
 - [Define iteration paths (aka sprints)](../settings/set-iteration-paths-sprints.md) that can be shared across teams.
 - [Add a team](../../work/scale/multiple-teams.md) for each product team that develops a set of features for a product. Note that each team you create automatically creates a security group for that team which you can use to manage permissions for a team. 
@@ -171,20 +171,20 @@ You can configure and customize most services and applications to support your b
 ::: moniker range="vsts"
 
 - **Dashboards**: Each team can [configure their set of dashboards](../../report/dashboards/dashboards.md) to share information and monitor their progress. 
-- **Source control**: For each [Git repository](../../git/index.md), you can apply branch policies and define branch permissions. For TFVC repositories, you can [set check-in policies](../../tfvc/add-check-policies.md).
+- **Source control**: For each [Git repository](../../repos/git/index.md), you can apply branch policies and define branch permissions. For TFVC repositories, you can [set check-in policies](../../repos/tfvc/add-check-policies.md).
 - **Work tracking**: You can add fields, change the workflow, add custom rules, and add custom pages to the work item form of most work item types. You can also add custom work item types. For details, see [Customize an inheritance process](../settings/work/inheritance-process-model.md). 
-- **Build and Release**: You can fully customize your build and release definitions, define build steps, release environments, and deployment schedule. For details, see [Build and Release](../../pipelines/index.md).  
-- **Test**: You can define and configure test plans, test suites, and test cases as well as configure test environments; additionally you can add test steps within your build definitions. For details, see [Exploratory & Manual Testing](../../test/index.md), [Load testing](../..//test/load-test/index.md), and [et up continuous testing for your builds](../../pipelines/test/set-up-continuous-testing-builds.md). 
+- **Build and Release**: You can fully customize your build and release pipelines, define build steps, release environments, and deployment schedule. For details, see [Build and Release](../../pipelines/index.md).  
+- **Test**: You can define and configure test plans, test suites, and test cases as well as configure test environments; additionally you can add test steps within your build pipelines. For details, see [Exploratory & Manual Testing](../../test/index.md), [Load testing](../..//test/load-test/index.md), and [et up continuous testing for your builds](../../pipelines/test/set-up-continuous-testing-builds.md). 
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 
 - **Dashboards**: Each team can [configure their set of dashboards](../../report/dashboards/dashboards.md) to share information and monitor their progress. 
-- **Source control**: For each [Git repository](../../git/index.md), you can apply branch policies and define branch permissions. For TFVC repositories, you can [set check-in policies](../../tfvc/add-check-policies.md).
+- **Source control**: For each [Git repository](../../repos/git/index.md), you can apply branch policies and define branch permissions. For TFVC repositories, you can [set check-in policies](../../repos/tfvc/add-check-policies.md).
 - **Work tracking**: You can add fields, change the workflow, add custom rules, and add custom pages to the work item form of most work item types. You can also add custom work item types. For details, see [Customize the On-premises XML process model](../../work/customize/on-premises-xml-process-model.md). 
-- **Build and Release**: You can fully customize your build and release definitions, define build steps, release environments, and deployment schedule. For details, see [Build and Release](../../pipelines/index.md).  
-- **Test**: You can define and configure test plans, test suites, and test cases as well as configure test environments; additionally you can add test steps within your build definitions. For details, see [Exploratory & Manual Testing](../../test/index.md), [Load testing](../../test/load-test/index.md), and [et up continuous testing for your builds](../../pipelines/test/set-up-continuous-testing-builds.md). 
+- **Build and Release**: You can fully customize your build and release pipelines, define build steps, release environments, and deployment schedule. For details, see [Build and Release](../../pipelines/index.md).  
+- **Test**: You can define and configure test plans, test suites, and test cases as well as configure test environments; additionally you can add test steps within your build pipelines. For details, see [Exploratory & Manual Testing](../../test/index.md), [Load testing](../../test/load-test/index.md), and [et up continuous testing for your builds](../../pipelines/test/set-up-continuous-testing-builds.md). 
 
 ::: moniker-end
 
@@ -201,6 +201,23 @@ As your organization grows, you'll want to add teams to provide them the Agile t
 - Structure projects to gain [visibility across teams](../../work/scale/visibility-across-teams.md) or to support [epics, release trains, and multiple backlogs to support the Scaled Agile Framework](../../work/scale/scaled-agile-framework.md). 
 
 To review  stories and short videos on how Microsoft transitioned from waterfall to Agile, see [Scaling Agile Across the Enterprise](https://stories.visualstudio.com/scaling-agile-across-the-enterprise/).
+
+
+<a id="clients">  </a>
+## Clients that support connection to a project
+
+In addition to connecting through a web browser, you can connect to a team project from these clients:
+
+- [Visual Studio (Professional, Enterprise, Test Professional)](https://www.visualstudio.com/products/compare-visual-studio-2015-products-vs)
+- [Visual Studio Code](https://code.visualstudio.com/Docs)
+- [Visual Studio Community](https://www.visualstudio.com/products/visual-studio-community-vs.aspx)
+- [Eclipse: Team Explorer Everywhere](/vsts/java/download-eclipse-plug-in)
+- [Office Excel](../../work/backlogs/office/bulk-add-modify-work-items-excel.md)
+- [Office Project](../../work/backlogs/office/create-your-backlog-tasks-using-project.md)
+- [PowerPoint Storyboarding](../../work/backlogs/office/storyboard-your-ideas-using-powerpoint.md)
+- [Microsoft Test Manager](https://msdn.microsoft.com/library/jj635157.aspx)
+- [Microsoft Feedback Client](../../project/feedback/give-feedback.md)
+
 
 ## Related articles
 

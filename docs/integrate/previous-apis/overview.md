@@ -166,16 +166,16 @@ from having a physical representation.</td>
 <td>[Projects and teams](./tfs/overview.md)</td>
 <td>Team Services accounts host projects, and each project has one or more teams that contibute to it. Get access to both with the Projects and Teams API.</td>
 <td>
-<ul><li>Get a list of team projects</li>
+<ul><li>Get a list of projects</li>
 <li>Get a project's source control provider</li>
-<li>Get the teams in a team project</li>
-<li>Create a team project</li></ul>
+<li>Get the teams in a project</li>
+<li>Create a project</li></ul>
 </td>
 </tr>
 <tr>
 <td>[Queues](./queues/overview.md)</td>
 <td>An agent queue provides access to a pool of agents. When you create a build or release definition, you specify which queue it uses. 
-Queues are scoped to your team project collection, so you can share them across build and release definitions in multiple team projects.</td>
+Queues are scoped to your project collection, so you can share them across build and release definitions in multiple projects.</td>
 <td>
 <ul><li>Get a list of queues</li>
 <li>Get a single queue</li></ul>
@@ -202,13 +202,13 @@ the Release API.</td>
 </td>
 </tr>
 <tr>
-<td>[Service endpoints](./endpoints/overview.md)</td>
-<td>Service endpoints are a way for Team Services to connect to external systems or services. They are a bundle of properties securely stored by Team Services.
-With the Service Endpoints API, you can access these endpoints along with their permissions.</td>
+<td>[Service connections](./endpoints/overview.md)</td>
+<td>Service connections are a way for Team Services to connect to external systems or services. They are a bundle of properties securely stored by Team Services.
+With the service connections API, you can access these endpoints along with their permissions.</td>
 <td>
-<ul><li>Get a list of service endpoints</li>
-<li>Get a single service endpoint</li>
-<li>Create a service endpoint</li></ul>
+<ul><li>Get a list of service connections</li>
+<li>Get a single service connection</li>
+<li>Create a service connection</li></ul>
 </td>
 </tr>
 <tr>

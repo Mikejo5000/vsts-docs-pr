@@ -35,9 +35,9 @@ Members of the Project Administrators groups can create and administer team room
 ## Join the conversation
 1. From your team's home page, open the room.  
 
-	![Team room tile on team project home page](_img/ALM_CT_TeamroomTile.png) 
+	![Team room tile on project home page](_img/ALM_CT_TeamroomTile.png) 
 	
-	If you don't see the room tile, [(VSTS) ask your account administrator to grant you a Basic license](../organizations/accounts/add-account-users-from-user-hub.md) or [(on-premises TFS) request Basic access from your TFS administrator](../organizations/security/change-access-levels.md).  
+	If you don't see the room tile, [(VSTS) ask your account administrator to grant you a Basic license](../organizations/accounts/add-organization-users-from-user-hub.md) or [(on-premises TFS) request Basic access from your TFS administrator](../organizations/security/change-access-levels.md).  
 
 	If you can't enter the room, get added as a member: [(VSTS) Add team members](../organizations/accounts/add-team-members-vs.md) or [(on-premises TFS) Add team members](../work/scale/multiple-teams.md#add-team-members).
 
@@ -53,7 +53,7 @@ Members of the Project Administrators groups can create and administer team room
 
 * Include a hyperlink to a work item: type `#`*Id*. For example: `@Jamal, can you take a look at bugs #564, #588, and #592?`
 
-* Open a linked object, such as a work item, changeset, build definition, and more. 
+* Open a linked object, such as a work item, changeset, build pipeline, and more. 
 
 * Add an emoticon: choose: ![Emoticon image selection](_img/ALM_CT_SmileIcon.png). 
 
@@ -63,7 +63,7 @@ Members of the Project Administrators groups can create and administer team room
 
 <a id="addmembers"></a> 
 ## Add members
-You can invite others who have access to the account or team project to participate in your team room. 
+You can invite others who have access to the account or project to participate in your team room. 
 
 1. If you're not a team administrator, [get added as one](../work/scale/add-team-administrator.md). 
 
@@ -97,7 +97,7 @@ Adding events lets your team know when builds finish, source code is checked in,
 	
 | Event category | Event  |  
 | ---- | ------ |  
-| Build completions | Anytime a build completes for a specified build definition    |  
+| Build completions | Anytime a build completes for a specified build pipeline    |  
 | Code changes | Anytime code is pushed or checked in from a specified repo or branch   |  
 | Work item updates | Anytime a work item is added or modified in or under a specified area path   |  
 | Code reviews| Anytime a code review is created in or under a specified area path  |  
@@ -141,7 +141,7 @@ You can grant permissions to users to administer a team room.
 <a id="team-room-event-permissions">  </a>
 ### Permissions to open team room events
                
-Permissions on team room events are managed by their associated operational area. It is possible for a team member to have permissions to collaborate within a team room, yet not be allowed to view work items, build definitions, or source code that have alerts enabled in the team room. 
+Permissions on team room events are managed by their associated operational area. It is possible for a team member to have permissions to collaborate within a team room, yet not be allowed to view work items, build pipelines, or source code that have alerts enabled in the team room. 
 
 
 ### Ways other teams use team rooms 

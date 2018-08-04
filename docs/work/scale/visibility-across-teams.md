@@ -133,7 +133,7 @@ For tips on creating queries based on counts or numeric fields, see [Query by nu
 ::: moniker range="vsts"
 ## Use Analytics to gain visibility across teams   
 
-VSTS accounts can add [Widgets based on the Analytics Service](../../report/analytics/analytics-widgets-vsts.md) a dashboard that show progress for a team. From one dashboard, you can add widgets for any team within the team project. 
+VSTS organizations can add [Widgets based on the Analytics Service](../../report/analytics/analytics-widgets-vsts.md) a dashboard that show progress for a team. From one dashboard, you can add widgets for any team within the project. 
 
 ::: moniker-end
 
@@ -157,7 +157,7 @@ While the management teams you configure can use the Kanban board to monitor fea
  Only when the work item state changes does the card column reflect the same on all boards.
 
 > [!IMPORTANT]   
->Work items that appear on more than one team's Kanban board can yield query results that don't meet your expectations. Because each team can customize the Kanban board columns and swimlanes, the values assigned to work items which appear on different boards may not be the same. The primary work around for this issue is to maintain single ownership of work items by [team area path](../../organizations/settings/set-team-defaults.md). Another option is to add custom workflow states which all teams can use. For details, see [Customize your work tracking experience](../customize/customize-work.md). 
+>Work items that appear on more than one team's Kanban board can yield query results that don't meet your expectations. Because each team can customize the Kanban board columns and swimlanes, the values assigned to work items which appear on different boards may not be the same. The primary work around for this issue is to maintain single ownership of work items by [team area path](../../organizations/settings/../../organizations/settings/set-team-defaults.md). Another option is to add custom workflow states which all teams can use. For details, see [Customize your work tracking experience](../customize/customize-work.md). 
 
 
  

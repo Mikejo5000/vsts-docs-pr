@@ -44,7 +44,7 @@ For naming restrictions on area and iteration paths, see [About areas and iterat
 You define both areas and iterations from the **Work** hub of the project settings context.    
 
 <!---
-# [Vertical navigation](#tab/vertical)
+# [New navigation](#tab/new-nav)
 ::: moniker range="vsts"  
 You define both areas and iterations from the **Work>Project configuration** hub of the project **Settings** hub. 
 
@@ -66,7 +66,7 @@ You define both areas and iterations from the **Work>Project configuration** hub
 Vertical navigation isn't a supported feature for TFS at this time. 
 ::: moniker-end
 
-# [Horizontal navigation](#tab/horizontal)
+# [Previous navigation](#tab/previous-nav)
 -->
 
 ::: moniker range=">= tfs-2017"  
@@ -135,7 +135,7 @@ For Scrum-based projects, you'll see the following set of sprints.
 	> [!div class="mx-imgBorder"]  
 	> ![Work, Iterations page, scheduled set of sprints](_img/areas/modify-areas-its-iterations-scheduled-ts.png)
 
-	Your next step is to [choose the sprints each team will use](../../work/scale/set-team-defaults.md#activate-team-services). 
+	Your next step is to [choose the sprints each team will use](../../organizations/settings/set-team-defaults.md#activate-team-services). 
 ::: moniker-end
 
 
@@ -162,7 +162,7 @@ For Scrum-based projects, you'll see the following set of sprints.
 
 	<img src="../../work/scrum/_img/create-new-child-under-sprint.png" alt="Iterations, defaults defined for Agile" style="border: 2px solid #C3C3C3;" />
 
-	Your next step is to [select the sprints each team will use](../../work/scale/set-team-defaults.md#activate-sprints-tfs). 
+	Your next step is to [select the sprints each team will use](../../organizations/settings/set-team-defaults.md#activate-sprints-tfs). 
  
 ::: moniker-end
 

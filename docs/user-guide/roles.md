@@ -24,22 +24,22 @@ This topic provides a roadmap to support you in quickly coming up to speed on th
 
 ## Contributor roles
 
-Team members are contributors who have access to the code base, work item tracking, Agile tools, build definitions, test tools, and more. If you need to lock down specific areas to a select set of contributors, you can do that through the [permission management](../organizations/security/permissions.md).   
+Team members are contributors who have access to the code base, work item tracking, Agile tools, build pipelines, test tools, and more. If you need to lock down specific areas to a select set of contributors, you can do that through the [permission management](../organizations/security/permissions.md).   
 
 ### Software developers
 
 Developers use Visual Studio or other [tools](tools.md) to develop their applications. They then check in their changes to a Git or TFVC repository hosted in VSTS or TFS. From the web portal or supported IDE, they can view repositories, check history, and more. 
 
 - To get started using Git, see one of these resources: 
-	- [Share your code with Git and Visual Studio](../git/share-your-code-in-git-vs.md).
-	- [Share your code in Git using Eclipses](../git/share-your-code-in-git-eclipse.md).
-	- [Share your code in Git using Xcode](../git/share-your-code-in-git-xcode.md).
+	- [Share your code with Git and Visual Studio](../repos/git/share-your-code-in-git-vs.md).
+	- [Share your code in Git using Eclipses](../repos/git/share-your-code-in-git-eclipse.md).
+	- [Share your code in Git using Xcode](../repos/git/share-your-code-in-git-xcode.md).
 	- [Share your code in Git using IntelliJ](/vsts/java/download-intellij-plug-in).
-	- [Get Started with Git and VSTS](../git/gitquickstart.md).
+	- [Get Started with Git and VSTS](../repos/git/gitquickstart.md).
 - To get started using TFVC, see one of the following resources: 
-	- [Develop and share your code in TFVC using Visual Studio](../tfvc/share-your-code-in-tfvc-vs.md)
-	- [Share your code in TFVC using Eclipse](../tfvc/share-your-code-in-tfvc-eclipse.md)
-	- [Share your code in TFVC using Xcode](../tfvc/share-your-code-in-tfvc-xcode.md)
+	- [Develop and share your code in TFVC using Visual Studio](../repos/tfvc/share-your-code-in-tfvc-vs.md)
+	- [Share your code in TFVC using Eclipse](../repos/tfvc/share-your-code-in-tfvc-eclipse.md)
+	- [Share your code in TFVC using Xcode](../repos/tfvc/share-your-code-in-tfvc-xcode.md)
 
 ### Project managers
 
@@ -100,16 +100,16 @@ To get started, see [Manage team assets](../work/scale/manage-team-assets.md).
 
 Responsible for project level settings, including:
 
-- [Area paths](../work/customize/set-area-paths.md) and [Iteration paths](../work/customize/set-iteration-paths-sprints.md)
+- [Area paths](../organizations/settings/set-area-paths.md) and [Iteration paths](../organizations/settings/set-iteration-paths-sprints.md)
 - [Project permissions and repository security](../organizations/security/permissions.md)
 - [Customize work tracking objects (TFS only)](../work/customize/customize-work.md) 
-- [Build agents, pools, and service endpoints](../pipelines/overview.md) 
+- [Build agents, pools, and service connections](../pipelines/overview.md) 
 - [Test](../test/how-long-to-keep-test-results.md) and [release](../pipelines/policies/retention.md) retention policies 
  
 
 ### Project collection administrators
 
-Responsible for account or collection-level settings. These include:
+Responsible for organization or collection-level settings. These include:
 
 - Manage billing  
 - Add and manage team projects    
@@ -117,7 +117,7 @@ Responsible for account or collection-level settings. These include:
 - Customize work tracking processes  
 - Install and manage extensions (install custom or [Marketplace extensions](https://marketplace.visualstudio.com/)) 
 
-To get started, see [Account Management](../organizations/accounts/account-management.md). 
+To get started, see [Organization Management](../organizations/accounts/organization-management.md). 
 
  
 ### TFS administrators

@@ -17,20 +17,20 @@ ms.date: 08/04/2016
 
 [!INCLUDE [GET_STARTED](../_data/get-started.md)]
 
-There are [code samples](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/Git/RepositoriesSample.cs) available for this endpoint.
+There are [code samples](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/repos/git/RepositoriesSample.cs) available for this endpoint.
 
 
 ## Get a list of repositories
 
 ```no-highlight
-GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories?api-version={version}
+GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories?api-version={version}
 ```
 
 | Parameter         | Type   | Notes
 |:------------------|:-------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
 | instance          | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project           | string | ID or name of the [team project](../tfs/projects.md). *Optional if specifying an ID for repository.*
+| project           | string | ID or name of the [project](../tfs/projects.md). *Optional if specifying an ID for repository.*
 | Query
 | api-version       | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
@@ -44,14 +44,14 @@ Get all the repositories in your Visual Studio Team Services account, rather tha
 <a name="inateamproject" />
 
 ```no-highlight
-GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}?api-version={version}
+GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}?api-version={version}
 ```
 
 | Parameter  | Type   | Notes
 |:-----------|:-------|:-------------------------------------------------------------------------------------------------------------
 | URL
 | instance   | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project    | string | ID or name of the [team project](../tfs/projects.md). *Optional if specifying an ID for repository.*
+| project    | string | ID or name of the [project](../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository | string | ID or name of the repository.
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -74,10 +74,10 @@ GET {gitCloneUrl}/vsts/info
 ## Create a repository
 <a name="createarepository" />
 
-Create a Git repository in a team project.
+Create a Git repository in a project.
 
 ```no-highlight
-POST https://{instance}/DefaultCollection/{project}/_apis/git/repositories/?api-version={version}
+POST https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/?api-version={version}
 ```
 ```http
 Content-Type: application/json
@@ -95,19 +95,19 @@ Content-Type: application/json
 |:-------------|:-------|:-------------------------------------------------------------------------------------------------------------
 | URL
 | instance     | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project        | string | ID or name of the [team project](../tfs/projects.md). *Optional if specifying an ID in the body.*
+| project        | string | ID or name of the [project](../tfs/projects.md). *Optional if specifying an ID in the body.*
 | Query
 | api-version  | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | Body
 | name         | string | Name of the repository.
-| project      | string | Name or ID team project. *Do not include if project specified in the URL.*
+| project      | string | Name or ID project. *Do not include if project specified in the URL.*
 
 [!code-REST [POST__git_repositories_json](./_data/repositories/POST__git_repositories.json)]
 
 ## Modify a repository
 
 ```no-highlight
-PATCH https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}?api-version={version}
+PATCH https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}?api-version={version}
 ```
 ```http
 Content-Type: application/json
@@ -123,7 +123,7 @@ Content-Type: application/json
 |:---------------|:-------|:-------------------------------------------------------------------------------------------------------------
 | URL
 | instance       | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project        | string | ID or name of the [team project](../tfs/projects.md). *Optional if specifying an ID for repository.*
+| project        | string | ID or name of the [project](../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository     | string | ID of the repository.
 | Query
 | api-version    | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -139,14 +139,14 @@ Content-Type: application/json
 Permanently delete a repository. 
 
 ```no-highlight
-DELETE https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}?api-version={version}
+DELETE https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}?api-version={version}
 ```
 
 | Parameter  | Type   | Notes
 |:-----------|:-------|:-------------------------------------------------------------------------------------------------------------
 | URL
 | instance   | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project    | string | ID or name of the [team project](../tfs/projects.md). *Optional if specifying an ID for repository.*
+| project    | string | ID or name of the [project](../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository | string | ID of the repository.
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.

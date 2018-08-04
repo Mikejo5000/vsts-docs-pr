@@ -79,7 +79,7 @@ To delegate tasks to other members within your organization, consider creating a
 <tr>
 <td>Development lead (Git)</td>
 <td> Manage branch policies</td>
-<td>Edit policies, Force push, and Manage permissions<br/>See [Set branch permissions](../../git/branch-permissions.md).</td>
+<td>Edit policies, Force push, and Manage permissions<br/>See [Set branch permissions](../../repos/git/branch-permissions.md).</td>
 </tr>
 
 <tr>
@@ -174,9 +174,9 @@ VSTS and TFS are designed to enable all valid users to be able to view all objec
 </tr>
 
 <tr>
-<td>View or update select build and release definitions</td>
-<td>Edit build definition, View build definition<br/>
-Edit release definition, View release definition<br/>
+<td>View or update select build and release pipelines</td>
+<td>Edit build pipeline, View build pipeline<br/>
+Edit release pipeline, View release pipeline<br/>
 You set these permissions at the object level. See [Set build and release permissions](../../pipelines/policies/set-permissions.md).</td>
 </tr>
 

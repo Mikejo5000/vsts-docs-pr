@@ -33,7 +33,7 @@ so the pattern looks like this:
 VERB https://{account}.VisualStudio.com/DefaultCollection/_apis[/{area}]/{resource}?api-version={version}
 ```
 <br />
-For example, here's how to get a list of team projects in a VSTS account.
+For example, here's how to get a list of projects in a VSTS account.
 
 ```dos
 curl -u {username}[:{personalaccesstoken}] https://{account}.VisualStudio.com/DefaultCollection/_apis/projects?api-version=2.0
@@ -90,7 +90,7 @@ Most samples on this site use Personal Access Tokens as they're a compact exampl
 For TFS, `instance` is `{server:port}` and by default the port is 8080.
 The default collection is `DefaultCollection`, but can be any collection.
 
-Here's how to get a list of team projects from TFS using the default port and collection.
+Here's how to get a list of projects from TFS using the default port and collection.
 
 ```dos
 curl -u {username}[:{personalaccesstoken}] https://{server}:8080/DefaultCollection/_apis/projects?api-version=2.0
@@ -147,11 +147,11 @@ You should get a response like this.
 The response is [JSON](http://json.org/).
 That's generally what you'll get back from the REST APIs,
 although there are a few exceptions,
-like [Git blobs](https://visualstudio.microsoft.com/docs/integrate/api/git/blobs).
+like [Git blobs](https://visualstudio.microsoft.com/docs/integrate/api/repos/git/blobs).
 
 Now you should be able to look around the specific
-[API areas](https://visualstudio.microsoft.com/docs/integrate/api/git/overview) like [work item tracking](https://visualstudio.microsoft.com/docs/integrate/api/wit/overview)
-or [Git](https://visualstudio.microsoft.com/docs/integrate/api/git/overview) and get to the resources that you need.
+[API areas](https://visualstudio.microsoft.com/docs/integrate/api/repos/git/overview) like [work item tracking](https://visualstudio.microsoft.com/docs/integrate/api/wit/overview)
+or [Git](https://visualstudio.microsoft.com/docs/integrate/api/repos/git/overview) and get to the resources that you need.
 Keep reading to learn more about the general patterns that are used in these APIs.
 
 ## HTTP verbs

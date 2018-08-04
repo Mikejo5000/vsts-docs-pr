@@ -30,14 +30,14 @@
       href: develop/add-build-task.md
     - name: Add a dashboard widget
       href: develop/add-dashboard-widget.md
-    - name: Add a new service endpoint
+    - name: Add a new service connection
       href: develop/service-endpoints.md
     - name: Add a service hook
       href: develop/add-service-hook.md
     - name: Create a PR status server
-      href: ../git/how-to/create-pr-status-server.md?toc=/vsts/extend/toc.json&bc=/vsts/extend/breadcrumb/toc.json
+      href: ../repos/git/create-pr-status-server.md?toc=/vsts/extend/toc.json&bc=/vsts/extend/breadcrumb/toc.json
     - name: Use Azure Functions to create custom branch policies
-      href: ../git/how-to/create-pr-status-server-with-azure-functions.md?toc=/vsts/extend/toc.json&bc=/vsts/extend/breadcrumb/toc.json
+      href: ../repos/git/create-pr-status-server-with-azure-functions.md?toc=/vsts/extend/toc.json&bc=/vsts/extend/breadcrumb/toc.json
     - name: Add a chart
       href: develop/add-chart.md
     - name: Store data and settings

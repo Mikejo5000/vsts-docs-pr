@@ -42,7 +42,7 @@ The following widgets are available to you. Team-scoped widgets display data bas
 > [!div class="mx-tdCol2BreakAll"]
 > |Analytics  |Team-scoped  |User-focused |  Build, test, release |Other |
 > |-------------|----------|---------|---------|---------|
-> |- [Burndown chart](#burndown-analytics-widget)<br/>- [Burnup chart](#burnup--analytics-widget)<br/>- [Cumulative flow diagram](#cfd-widget)<br/>- [Cycle time](#cycle-time-widget)<br/>- [Lead time](#lead-time-widget)<br/>- [Velocity](#velocity-widget) |- [New Work item](#new-work-item-widget)<br/>- [Other links](#other-links-widget)<br/>- [Pull request](#pull-request-widget)<br/>- [Sprint burndown](#sprint-burndown-widget)<br/>- [Sprint capacity](#sprint-capacity-widget)<br/>- [Sprint overview](#sprint-overview-widget)<br/>- [Team members](#team-members-widget)<br/>- [Team room](#team-room-widget)<br/>- [Work links](#work-links-widget) |- [Assigned to me](#assigned-to-me-widget)<br/>- [Pull request](#pull-request-widget) |- [Chart for build history](#build-history-widget)<br/>- [Chart for test plans](#chart-test-plan-widget)<br/>- [Chart for test plans](#chart-test-plan-widget)<br/>- [Deployment status](#deployment-status-widget)<br/>- [Release definition overview](#release-definition-widget)<br/>- [Requirements quality](#requirements-quality-widget)<br/>- [Test results trend](#test-results-widget) |- [Code tile](#code-tile-widget)<br/>- [Chart for work items](#chart-wit-widget)<br/>- [Embedded web page](#embedded-webpage-widget)<br/>- [Query results](#query-results-widget)<br/>- [Query tile](#query-tile-widget)<br/>- [Markdown](#markdown-widget)<br/>- [Visual Studio Shortcuts](#visual-studio-widget)<br/>- [Welcome](#how-to-widget) | 
+> |- [Burndown chart](#burndown-analytics-widget)<br/>- [Burnup chart](#burnup--analytics-widget)<br/>- [Cumulative flow diagram](#cfd-widget)<br/>- [Cycle time](#cycle-time-widget)<br/>- [Lead time](#lead-time-widget)<br/>- [Velocity](#velocity-widget) |- [New Work item](#new-work-item-widget)<br/>- [Other links](#other-links-widget)<br/>- [Pull request](#pull-request-widget)<br/>- [Sprint burndown](#sprint-burndown-widget)<br/>- [Sprint capacity](#sprint-capacity-widget)<br/>- [Sprint overview](#sprint-overview-widget)<br/>- [Team members](#team-members-widget)<br/>- [Team room](#team-room-widget)<br/>- [Work links](#work-links-widget) |- [Assigned to me](#assigned-to-me-widget)<br/>- [Pull request](#pull-request-widget) |- [Chart for build history](#build-history-widget)<br/>- [Chart for test plans](#chart-test-plan-widget)<br/>- [Chart for test plans](#chart-test-plan-widget)<br/>- [Deployment status](#deployment-status-widget)<br/>- [Release pipeline overview](#release-definition-widget)<br/>- [Requirements quality](#requirements-quality-widget)<br/>- [Test results trend](#test-results-widget) |- [Code tile](#code-tile-widget)<br/>- [Chart for work items](#chart-wit-widget)<br/>- [Embedded web page](#embedded-webpage-widget)<br/>- [Query results](#query-results-widget)<br/>- [Query tile](#query-tile-widget)<br/>- [Markdown](#markdown-widget)<br/>- [Visual Studio Shortcuts](#visual-studio-widget)<br/>- [Welcome](#how-to-widget) | 
 
 ::: moniker-end
 
@@ -102,7 +102,7 @@ Requires TFS 2015.1 or later version.
 Adds a configurable tile to display active pull requests requested by the team, or assigned to or requested by the person logged in. Select the Git repository for the pull requests of interest. 
 
 You need to add a widget for each Git repository of interest.
-To learn more about pull requests, see [Review code with pull requests](../../git/pull-requests.md).
+To learn more about pull requests, see [Review code with pull requests](../../repos/git/pull-requests.md).
 
 ::: moniker-end
 ::: moniker range="tfs-2015"
@@ -158,7 +158,7 @@ Requires TFS 2015.2 or later version. For TFS 2015.1 and earlier versions, see [
 
 Enables you to add work items from the dashboard. You [use work items to plan and track work](../../work/backlogs/add-work-items.md).  <br/><br/>
 
-Work items that you add using this widget are automatically scoped to the team's default area path and the team's current sprint or default iteration. To change team defaults, see [Set team defaults](../../work/scale/set-team-defaults.md).
+Work items that you add using this widget are automatically scoped to the team's default area path and the team's current sprint or default iteration. To change team defaults, see [Set team defaults](../../organizations/settings/set-team-defaults.md).
 
 ::: moniker-end
 ::: moniker range="tfs-2015"
@@ -178,18 +178,18 @@ Requires TFS 2015.1 or later version.
 Provides links to the following features: 
 - Opens a form to initiate a [request to provide feedback](/vsts/project/feedback/get-feedback?toc=/vsts/project/feedback/toc.json).
 - Opens the team's quick dialog to add or modify the active sprints or iteration paths for your team. To learn more see [Define sprints](../../work/scrum/define-sprints.md).
-- Opens the team's quick dialog to modify your [team's area path](../../work/scale/set-team-defaults.md).
+- Opens the team's quick dialog to modify your [team's area path](../../organizations/settings/set-team-defaults.md).
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"
-The following links are displayed when the corresponding resource is configured for the team project: 
+The following links are displayed when the corresponding resource is configured for the project: 
 
 ![Other links widget](_img/widget-other-links-tfs.png)  
 
-- [View project portal](../sharepoint-dashboards/share-information-using-the-project-portal.md) (opens either a SharePoint site or URL that's been configured as the team project's portal.  
-- [View process guidance](../sharepoint-dashboards/configure-or-redirect-process-guidance.md) (opens either a SharePoint site or URL that's been configured as the team project's process guidance.  
-- [View reports](../sql-reports/reporting-services-reports.md) (opens SQL Server Reporting Services). To add or update reports for a team project, see [Add reports to a team project](../admin/add-reports-to-a-team-project.md). 
+- [View project portal](../sharepoint-dashboards/share-information-using-the-project-portal.md) (opens either a SharePoint site or URL that's been configured as the project's portal.  
+- [View process guidance](../sharepoint-dashboards/configure-or-redirect-process-guidance.md) (opens either a SharePoint site or URL that's been configured as the project's process guidance.  
+- [View reports](../sql-reports/reporting-services-reports.md) (opens SQL Server Reporting Services). To add or update reports for a project, see [Add reports to a project](../admin/add-reports-to-a-team-project.md). 
 
 ----
 
@@ -266,12 +266,12 @@ Teams [specify their capacity to plan and monitor their sprint resources](../../
  
 ::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
 
-Inserts a configurable overview of sprint progress. You can choose between a count of story points or number of work items. Teams [plan their sprints by defining sprints](../../work/scale/set-team-defaults.md) and [assigning backlog items to an iteration](../../work/scrum/assign-work-sprint.md). 
+Inserts a configurable overview of sprint progress. You can choose between a count of story points or number of work items. Teams [plan their sprints by defining sprints](../../organizations/settings/set-team-defaults.md) and [assigning backlog items to an iteration](../../work/scrum/assign-work-sprint.md). 
 ::: moniker-end
 
 ::: moniker range=" tfs-2015"
 
-Inserts a visual overview of sprint progress indicating the number of backlog items in progress, completed, or not started. Teams [plan their sprints by defining sprints](../../work/scale/set-team-defaults.md) and [assigning backlog items to an iteration](../../work/scrum/assign-work-sprint.md). 
+Inserts a visual overview of sprint progress indicating the number of backlog items in progress, completed, or not started. Teams [plan their sprints by defining sprints](../../organizations/settings/set-team-defaults.md) and [assigning backlog items to an iteration](../../work/scrum/assign-work-sprint.md). 
 ::: moniker-end
 ::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 ----
@@ -383,7 +383,7 @@ For additional guidance, see [Velocity](team-velocity.md).
 > **Feature availability:** You can access this widget from VSTS or TFS 2015.2 or later version.  
 -->
 
-Adds a tile to display a histogram of all builds run for the configured build definition.
+Adds a tile to display a histogram of all builds run for the configured build pipeline.
 From the configuration dialog, select the build you want to monitor. 
 Hover over a bar to learn how long the build took to complete. Click the bar to open the summary for that specific build. Bar color indicates: green-completed, red-failed, and yellow-completed without tests. 
 
@@ -432,7 +432,7 @@ Requires TFS 2017.2 or later version.
 > **Feature availability:** You can access this widget from VSTS or TFS 2017.1 or later versions.  
 -->
 
-Configurable widget that shows a consolidated view of the deployment status and test pass rate across multiple environments for a recent set of builds. You configure the widget by specifying a build definition, branch, and linked release definitions. 
+Configurable widget that shows a consolidated view of the deployment status and test pass rate across multiple environments for a recent set of builds. You configure the widget by specifying a build pipeline, branch, and linked release pipelines. 
 
 ::: moniker-end
 ::: moniker range="tfs-2017"
@@ -445,16 +445,16 @@ Requires TFS 2017.1 or later version.
 ::: moniker range="vsts"
 
 <a id="release-definition-widget"></a> 
-##&nbsp;&nbsp;&nbsp;Release definition overview 
+##&nbsp;&nbsp;&nbsp;Release pipeline overview 
 
-![Release definition overview widget](_img/widget-release-definitions.png)  
+![Release pipeline overview widget](_img/widget-release-definitions.png)  
 
 <!---
 > [!NOTE]  
 > **Feature availability:**  You can access this widget from VSTS.   
 -->
 
-Configurable widget that you can use to view and track the status of a release definition. The widget shows the release as a series of environments, with the name of the release and the date or time it was started. The color of the heading and the icon in each environment indicate the current status of the release, which are the same as are used on the **Releases** page. Select a release definition in the left column to filter the list to just releases for that definition.
+Configurable widget that you can use to view and track the status of a release pipeline. The widget shows the release as a series of environments, with the name of the release and the date or time it was started. The color of the heading and the icon in each environment indicate the current status of the release, which are the same as are used on the **Releases** page. Select a release pipeline in the left column to filter the list to just releases for that pipeline.
 
 ---- 
 ::: moniker-end
@@ -473,7 +473,7 @@ Configurable widget that you can use to view and track the status of a release d
 > **Feature availability:** You can access this widget from VSTS or TFS 2017.   
 -->
 
-Configurable widget that you can use to track quality continuously from a build or release definition. 
+Configurable widget that you can use to track quality continuously from a build or release pipeline. 
 To learn more, see [Associate automated test results with requirements](../../test/associate-automated-results-with-requirements.md). 
 
 ---- 
@@ -492,7 +492,7 @@ To learn more, see [Associate automated test results with requirements](../../te
 > **Feature availability:** You can access this widget from VSTS or TFS 2017.   
 -->
 
-Adds a configurable tile that displays the trend of test results, such as passed or failed tests, for the selected build definition. 
+Adds a configurable tile that displays the trend of test results, such as passed or failed tests, for the selected build pipeline. 
 
 From the configuration dialog, select the build whose test results you'd like to monitor. Then, choose the type of chart you want displayed. You can track the trend of test duration by adding an optional line chart. 
 
@@ -607,7 +607,7 @@ Requires TFS 2015.1 or later version.
 
 ![How to links widget](_img/widget-how-to-links.png)
 
-Provides links to the **Work**, **Code**, and **Build** or **Build-Release** hubs and reference documentation on how to add charts.
+Provides links to the **Work**, **Code**, and **Build** or **Build-Release** pages and reference documentation on how to add charts.
 
 ::: moniker-end
 ::: moniker range="tfs-2015"

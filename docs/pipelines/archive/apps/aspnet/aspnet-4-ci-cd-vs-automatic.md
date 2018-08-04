@@ -30,7 +30,7 @@ In this walkthrough we'll show how to use Visual Studio to automatically define 
 
 The quickest way to create a continuous delivery process is with the Continuous Delivery Tools for Visual Studio (2017 RC.3 and newer),
 which automate the creation of build and release definitions. The tools assume that you have an existing VSTS subscription,
-and that your project has been added to source control in a Team Project.
+and that your project has been added to source control.
 
 To install the extension within Visual Studio, select **Tools > Extensions and Updates...** and search for **Continuous Delivery Tools for Visual Studio**. Alternatively, you can download the installer from the [Visual Studio Gallery](http://aka.ms/CD4VS).
 
@@ -46,7 +46,7 @@ To create both the build (CI) and release (CD) definitions for a project, in Vis
 
 <h3 id="new_solution">How do I create an ASP.NET 4 web app?</h3>
 
-1. In Visual Studio, [connect to your team project](../../../../organizations/projects/connect-to-projects.md#visual-studio).
+1. In Visual Studio, [connect to your project](../../../../organizations/projects/connect-to-projects.md#visual-studio).
 
 1. On the Team Explorer home page (Keyboard: Ctrl + 0, H), under **Solutions**, click **New**.
 
@@ -62,11 +62,11 @@ To create both the build (CI) and release (CD) definitions for a project, in Vis
 
 1. Clear **Host in the cloud** and click **OK**.
 
-1. [Commit and push (Git)](../../../../git/share-your-code-in-git-vs.md) or [check in (TFVC)](../../../../tfvc/share-your-code-in-tfvc-vs.md) your code.
+1. [Commit and push (Git)](../../../../repos/git/share-your-code-in-git-vs.md) or [check in (TFVC)](../../../../repos/tfvc/share-your-code-in-tfvc-vs.md) your code.
 
 ### I got a file not found error message. How do I fix it?
 
-All solution files must be checked into the server to run a build. One known cause of missing files is in cases where you populate an empty repo by creating a new project in Visual Studio 2015 Update 3. We recommend that you update your [.gitignore file](../../../../git/tutorial/ignore-files.md) with the latest copy from [GitHub: VisualStudio.gitignore](https://github.com/github/gitignore/blob/master/VisualStudio.gitignore).
+All solution files must be checked into the server to run a build. One known cause of missing files is in cases where you populate an empty repo by creating a new project in Visual Studio 2015 Update 3. We recommend that you update your [.gitignore file](../../../../repos/git/ignore-files.md) with the latest copy from [GitHub: VisualStudio.gitignore](https://github.com/github/gitignore/blob/master/VisualStudio.gitignore).
 
 ::: moniker range="< vsts"
 [!INCLUDE [temp](../../../_shared/qa-versions.md)]

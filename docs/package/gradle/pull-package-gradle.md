@@ -38,7 +38,7 @@ gradle -v
 You're ready to start! This tutorial will guide you through the process of installing a Maven artifact using Gradle.
 
 > [!NOTE]
-> This topic assumes you have cloned your Git repo to your local machine. If you aren't sure how to clone your repo, read [Clone a repo](/vsts/git/tutorial/clone).
+> This topic assumes you have cloned your Git repo to your local machine. If you aren't sure how to clone your repo, read [Clone a repo](/vsts/repos/git/clone).
 
 ## Set up authentication
 
@@ -129,4 +129,4 @@ Now, select the **gradlew build** step. You can use the default settings to star
 
 ![Configure the Gradle template](_img/gradle-build-template.png)
 
-Here, you can configure various Gradle tasks to run during the build.  Once you've configured the build definition, click **Save & queue** from the top menu and start building with your Gradle wrapper. You're done!
+Here, you can configure various Gradle tasks to run during the build.  Once you've configured the build pipeline, click **Save & queue** from the top menu and start building with your Gradle wrapper. You're done!

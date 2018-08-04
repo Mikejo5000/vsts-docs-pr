@@ -55,7 +55,7 @@ https://github.com/adventworks/dotnetcore-sample
 
 * After you have the sample code in your own repository, create a build pipeline and select the **ASP.NET Core** template. This automatically adds the tasks required to build the code in the sample repository. 
 * Select **Process** under the **Tasks** tab in the build pipeline editor and change the properties as follows:
-  * **Agent queue:** `Hosted Linux`
+  * **Agent queue:** `Hosted Linux Preview`
   * **Projects to test:** `**/*[Tt]ests/*.csproj`
 
 Save the pipeline and queue a build to see it in action. Then read through the rest of this topic to learn some of the more common changes people make to customize a .NET Core build process.
@@ -407,7 +407,7 @@ After you've packaged your app, you are ready to [publish to NuGet feeds](../tar
 
 ### Deploy a web app
 
-To create a .zip file archive that ready for publishing to a web app, add the following snippet:
+To create a .zip file archive that is ready for publishing to a web app, add the following snippet:
 
 ```yaml
 - task: DotNetCoreCLI@2
