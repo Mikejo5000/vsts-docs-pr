@@ -61,6 +61,8 @@ You can automatically deploy your containers to an Azure App Service after every
    * For Azure Container Registry, choose an Azure subscription or [Azure Resource Manager service connection](../library/connect-to-azure.md), then select the resource group, Azure container registry, and repository containing your image.
    * For Docker Hub, choose your Docker service connection, namespace (your Docker ID), and repository. 
 
+1. Open the **Run on agent** tab and choose **Hosted Linux Preview**.
+
 1. Open the **Tasks** tab and, with the **Environment** blade selected, choose the Azure subscription or Azure Resource Manager service connection that will be used to communicate with the web app.
 
 1. For **App type**, choose `Linux App` (even though the app is .NET  Core, the image will be hosted on Linux in the Web App for Containers instance).
