@@ -27,7 +27,7 @@ Azure DevOps Pipelines is simple in its design:
     * Any tasks (deploying code) in your release pipeline will be run
 5. Your updated, tested, and packaged code is sent to your deployment target
 
-**ELBATK NOTE:** NEED HELP HERE
+**ELBATK NOTE:** NEED HELP HERE - should we get art for this kind of stuff? 
 
 ## Key terms
 

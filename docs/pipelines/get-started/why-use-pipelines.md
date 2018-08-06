@@ -43,7 +43,7 @@ There are plenty of reasons to use Azure DevOps Pipelines for your CI/CD solutio
 
 To show the benefit of using Azure DevOps Pipelines, check out the two scenarios below. In the first scenario, we'll cover the development process without using CI/CD with Pipelines, and then in the second we'll show how Pipelines can change the dev process.
 
-**ELBATK NOTE:** NEED HELP HERE
+**ELBATK NOTE:** NEED HELP HERE - from PM or Andy on scenario 
 
 ### Development process _without_ Azure DevOps Pipelines
 
