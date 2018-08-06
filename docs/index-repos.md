@@ -1,6 +1,6 @@
 ---
 title: Collaborate on code development using Azure Repos 
-titleSuffix: Azure DevOps Services 
+titleSuffix: Azure DevOps 
 description: Collaborate on software development using Azure Repos 
 layout: HubPage 
 hide_bc: true
@@ -18,7 +18,7 @@ featureFlags:
 
 <div id="agile" class="v2">
     <div class="container">
-<a href="/vsts/index">Azure DevOps Services</a>&nbsp;&nbsp;&nbsp;Azure Repos
+<a href="/vsts/index">Azure DevOps</a>&nbsp;&nbsp;&nbsp;Azure Repos
         <h1>Azure Repos Documentation</h1>
 <p>Collaborate on code development using free Git public and private repositories, pull requests, and code review.</p><br/>
 <table border="0" class="cardsA">
@@ -34,7 +34,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Azure Repos Get Started</h3>
+                                                    <h3>Azure Repos get started</h3>
                                                     <p>Sign up and get started using Azure Repos.</p>
                                                 </div>
                                             </div>
@@ -53,7 +53,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Git Repositories</h3>
+                                                    <h3>Git repositories</h3>
                                                     <p>Develop code with distributed, flexible version control.</p>
                                                 </div>
                                             </div>
@@ -72,7 +72,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Pull Requests</h3>
+                                                    <h3>Pull requests</h3>
                                                     <p>Create pull requests to review and merge code in a Git team project</p>
                                                 </div>
                                             </div>
@@ -112,7 +112,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Branch Policies</h3>
+                                                    <h3>Branch policies</h3>
                                                     <p>Enforce code quality and change management standards.</p>
                                                 </div>
                                             </div>
@@ -163,126 +163,7 @@ featureFlags:
 </td>
 </tr>
 </table>
-<!---
-                        <ul id="code" class="cardsY panelContent featuredContent">
-                            <li>
-                                <a href="/vsts/git">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="_img/index/logo-git-mark.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Git Repositories</h3>
-                                                    <p>Develop code with distributed, flexible version control.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/vsts/repos/git/pull-requests">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="_img/index/i_pull-request.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Pull Requests</h3>
-                                                    <p>Create pull requests to review and merge code in a Git team project</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/vsts/repos/git/concepts/forks">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="_img/index/i_forks.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Forks</h3>
-                                                    <p>Work in your own repo without affecting the original project.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/vsts/repos/git/branch-policies">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="_img/index/i_branch-policies.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Branch Policies</h3>
-                                                    <p>Enforce code quality and change management standards.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/vsts/tfvc">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/media/common/i_multi-connect.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>TFVC</h3>
-                                                    <p>Manage code with centralized version control.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/vsts/organizations/settings/index#repos">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/media/common/i_tools.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Settings</h3>
-                                                    <p>Configure resources for Azure DevOps Repos.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>   
-                        </ul>
--->
-
-<h3 style="padding-left:0;">Additional Resources</h3>
+<h3 style="padding-left:0;">Additional resources</h3>
 <table border="0">
 <tbody style="padding-left:0;font-size:.8rem;">
 <tr>
@@ -290,13 +171,13 @@ featureFlags:
 <a class="barLink" href="/vsts/index-all"><img src="https://docs.microsoft.com//media/common/i_library.svg" alt="" />Index</a>
 </td>
 <td width="25%">
-<a class="barLink" href="/vsts/release-notes/index"><img src="https://docs.microsoft.com/media/common/i_whats-new.svg" alt="" />Features Timeline & Release Notes</a>
+<a class="barLink" href="/vsts/release-notes/index"><img src="https://docs.microsoft.com/media/common/i_whats-new.svg" alt="" />Features timeline & release notes</a>
 </td>
 <td width="25%">
-<a class="barLink" href="/vsts/articles/index"><img src="https://docs.microsoft.com/media/common/i_article.svg" alt="" />Technical Articles</a>
+<a class="barLink" href="/vsts/articles/index"><img src="https://docs.microsoft.com/media/common/i_article.svg" alt="" />Technical articles</a>
 </td>
 <td width="25%">
-<a class="barLink"  href="https://docs.microsoft.com/en-us/azure/devops/"><img src="https://docs.microsoft.com/media/common/i_dev-ops.svg" alt="" />Azure DevOps Resource Center</a>
+<a class="barLink"  href="https://docs.microsoft.com/en-us/azure/devops/"><img src="https://docs.microsoft.com/media/common/i_dev-ops.svg" alt="" />Azure DevOps resource center</a>
 </td>
 </tr>
 </tbody>

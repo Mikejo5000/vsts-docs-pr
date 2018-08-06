@@ -22,7 +22,7 @@ featureFlags:
 <table border="0">
 <tbody class="noBullet" style="padding-left:0;">
 <tr><td width="25%">
-                        <h3>Get Started Guides</h3>
+                        <h3>Get started Guides</h3>
                             <p><a href="/vsts/repos/get-started/index">Azure Repos</a><br/>
                             <a href="/vsts/work/get-started/index">Azure Boards</a><br/>
                             <a href="/vsts/pipelines/get-started/index">Azure Pipelines</a><br/>
@@ -112,7 +112,7 @@ featureFlags:
 </table>
 <!---
 <div class="group" style="float:left;width:250px">
-                        <h3>Get Started Guides</h3>
+                        <h3>Get started Guides</h3>
                         <ul class="noBullet">
                             <li><a href="/vsts/repos/get-started/index">Azure Repos</a></li>
                             <li><a href="/vsts/work/get-started/index">Azure Boards</a></li>

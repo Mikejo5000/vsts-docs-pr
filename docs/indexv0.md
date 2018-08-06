@@ -78,14 +78,14 @@ featureFlags:
         <h1>Visual Studio Team Services Documentation</h1>
         <ul class="pivots">
             <li>
-                <a href="#start">Get Started</a>
+                <a href="#start">Get started</a>
                 <ul id="start">
                     <li>
                         <a href="#start-all"></a>
                         <ul id="start-all" class="cardsL">
                             <li class="fullSpan">
                                 <div class="intro">
-                                    <h1>Get Started with VSTS and TFS</h1>
+                                    <h1>Get started with VSTS and TFS</h1>
                                     <p>Explore our most popular services with quickstarts, samples, and tutorials.</p>
                                 </div>
                             </li>
@@ -1306,10 +1306,10 @@ featureFlags:
                                 <h3>Custom extensions</h3>
                                 <ul class="noBullet">
                                     <li>
-                                        <a class="barLink" href="/vsts/extend">Get Started</a>
+                                        <a class="barLink" href="/vsts/extend">Get started</a>
                                     </li>
                                     <li>
-                                        <a class="barLink" href="/vsts/report/extend-analytics/index">Get Started with Analytics</a>
+                                        <a class="barLink" href="/vsts/report/extend-analytics/index">Get started with Analytics</a>
                                     </li>
                                 </ul>
                             </li>
@@ -1317,7 +1317,7 @@ featureFlags:
                                 <h3>REST APIs</h3>
                                 <ul class="noBullet">
                                     <li>
-                                        <a class="barLink" href="/vsts/integrate/index">Get Started</a>
+                                        <a class="barLink" href="/vsts/integrate/index">Get started</a>
                                     </li>
                                     <li>
                                         <a class="barLink" href="https://docs.microsoft.com/en-us/rest/api/vsts/">API reference</a>
@@ -1328,7 +1328,7 @@ featureFlags:
                                 <h3>TypeScript libraries</h3>
                                 <ul class="noBullet">
                                     <li>
-                                        <a class="barLink" href="https://github.com/Microsoft/vss-web-extension-sdk">Get Started</a>
+                                        <a class="barLink" href="https://github.com/Microsoft/vss-web-extension-sdk">Get started</a>
                                     </li>
                                     <li>
                                         <a class="barLink" href="https://visualstudio.microsoft.com/en-us/docs/integrate/extensions/reference/client/core-sdk">API reference</a>
