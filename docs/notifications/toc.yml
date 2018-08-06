@@ -18,16 +18,10 @@
     href: concepts-email-delivery-options.md
   - name: Group expansion for email delivery
     href: concepts-group-expansion-for-email.md
-- name: Quickstarts
-  items:
-  - name: View your subscriptions, opt-out as needed
-    href: unsubscribe-default-notification.md
-  - name: Change your preferred email address 
-    href: change-email-address.md
+  - name: Default subscriptions
+    href: concepts-default-subscriptions.md
 - name: Tutorials
   items:
-  - name: "Follow work & pull requests"
-    href: ../work/work-items/follow-work-items.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
   - name: Manage your account level notifications settings
     href: manage-account-notifications-settings.md
   - name: View notification statistics for your account
@@ -46,38 +40,32 @@
     href: howto-manage-account-subscriptions.md
   - name: Opt-out of account, group, or team level subscriptions
     href: howto-opt-out-subscriptions.md
+  - name: "Follow work & pull requests"
+    href: ../work/work-items/follow-work-items.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
   - name: "Use @mentions to further discussion"
     href: at-mentions.md
   - name: "Use #ID to link to work items"
     href: add-links-to-work-items.md
-  - name: Manage team notifications
-    href: manage-team-notifications.md
-  - name: Microsoft Teams Integration
-    href: ../service-hooks/services/teams.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
-  - name: Get notified with Campfire
-    href: ../service-hooks/services/campfire.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
-  - name: Get notified with Flowdock
-    href: ../service-hooks/services/flowdock.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
-  - name: Get notified with Hipchat
-    href: ../service-hooks/services/hipchat.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
-  - name: Get notified with Slack
-    href: ../service-hooks/services/slack.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
-  - name: Set alerts (TFS) 
-    href: ../work/track/alerts-and-notifications.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
-  - name: Collaborate in a team room (TFS)
-    href: collaborate-in-a-team-room.md
+  - name: Third-party services (Slack, Teams, etc)
+    href: howto-integrate-third-party-services.md
 - name: Troubleshooting
   items:
-  - name: I'm not getting email
+  - name: Why am I not getting an email
     href: troubleshoot-not-getting-email.md
+  - name: Why am I getting an this email
+    href: troubleshoot-unexpected-email.md
+  - name: Subscription logging
+    href: troubleshoot-subscription-logging.md
 - name: Reference
   items:
   - name: Default notifications
-    href: oob-built-in-notifications.md 
+    href: oob-built-in-notifications.md
+  - name: Events
+    href: oob-supported-event-types.md
+  - name: Default permissions (Security)  
+    href: ../project/wiki/wiki-readme-permissions.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
   - name: FAQs 
     href: faq-notifications.md 
-  - name: Default permissions (Security)  
-    href: ../project/wiki/wiki-readme-permissions.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json 
 - name: Resources    
   items:
   - name: Git
