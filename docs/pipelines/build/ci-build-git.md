@@ -13,7 +13,7 @@ ms.assetid: E9684A1D-8D2B-4D5E-808A-D3677D314DB6
 ms.topic: conceptual
 ms.tgt_pltfrm: ''
 ms.workload: ''
-ms.date: 06/29/2018
+ms.date: 07/29/2018
 ms.custom: mvc
 monikerRange: '>=tfs-2017'
 ---
