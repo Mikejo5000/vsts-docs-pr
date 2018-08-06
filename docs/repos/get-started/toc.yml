@@ -1,12 +1,14 @@
-- name: Azure DevOps Repos Get Started Guide
+- name: Azure Repos Get Started Guide
   href: index.md
   items:
-  - name: "What is Azure DevOps Repos ?"
+  - name: "What is Azure Repos?"
     href: what-is-repos.md
   - name: Sign up and invite some teammates 
     href: sign-up-invite-teammates.md
   - name: Code with Git
     href: code-with-git.md
+  - name: Key concepts
+    href: key-concepts-repos.md
 - name: Resources
   items:
   - name: Visual Studio IDE
