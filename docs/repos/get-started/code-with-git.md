@@ -28,7 +28,19 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
   - To install Git for Windows, including Git Credential Manager, see [Install the Git Credential Manager - Windows](../git/set-up-credential-managers.md#windows)
   - To install Git for macOS and Linux, see [Install the Git Credential Manager - macOS and Linix](../git/set-up-credential-managers.md#macos-and-linux)
 
-## Clone the repo to your computer
+## Get your code
+
+
+### Get the clone URL
+
+> [!NOTE]
+> The **New navigation** feature, which provides a vertical navigation experience, is in preview for VSTS. [Go here to enable it](/vsts/project/navigation/preview-features.md). When you enable **New navigation**, you automatically enable several new Agile tool features described in this blog post, [New Work Hubs](https://blogs.msdn.microsoft.com/devops/2018/06/22/new-work-hubs/). For on-premises TFS users, choose **Previous navigation** for guidance. 
+
+# [New navigation](#tab/new-nav)
+
+New steps here
+
+# [Previous navigation](#tab/previous-nav)
 
 0. From your web browser, open the team project for your VSTS account and click the **Code** hub. If you don't have a team project, [create one now](sign-up-invite-teammates.md). 
  
@@ -36,7 +48,11 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
 
 	![Retrieve the clone URL](../../user-guide/_img/code-with-git-clone-repo.png)
 
-0. Open the Git command window (Git Bash on Git for Windows), navigate to the folder where you want the code from the repo stored on your computer, and run `git clone` followed by the path copied from the **Clone URL** in the previous step, as shown in the following example.
+---
+
+### Clone the repo
+
+0. Open the Git command window (Git Bash on Git for Windows), navigate to the folder where you want the code from the repo stored on your computer, and run `git clone` followed by the path copied from the **Clone URL** in the previous section, as shown in the following example.
 
   ```
   git clone https://contoso-ltd.visualstudio.com/MyFirstProject/_git/contoso-demo
@@ -45,11 +61,15 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
 
   Keep this command window open, as you'll use it in the following steps.
 
-## Work with the code
+## Work in a branch
+
+TODO 
 
 In this step, we'll make a change to the files on your computer, commit the changes locally, push the commit up to the repo that is stored on the server, and view the changes there.
 
 0. Browse to the folder on your computer where you cloned the repo, open the `README.md` file in your editor of choice, make some changes, and save and close the file.
+
+## Share your changes
 
 0. In the Git command window, navigate to the `contoso-demo` directory by entering the following command: 
 
@@ -78,6 +98,12 @@ In this step, we'll make a change to the files on your computer, commit the chan
 0. Switch to the **Files** tab and click on the README file to view your changes.
 
   ![View changed file](../git/_img/repo-mgmt/readme-changed-file.png)  
+
+## Create a pull request
+
+TODO
+
+## Sync with others
 
 ## Try this next  
 
