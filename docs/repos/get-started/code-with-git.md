@@ -28,7 +28,7 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
   - To install Git for Windows, including Git Credential Manager, see [Install the Git Credential Manager - Windows](../git/set-up-credential-managers.md#windows)
   - To install Git for macOS and Linux, see [Install the Git Credential Manager - macOS and Linix](../git/set-up-credential-managers.md#macos-and-linux)
 
-## Clone the repo to your computer
+## Get the clone URL for your repo
 
 > [!NOTE]
 > The **New navigation** feature, which provides a vertical navigation experience, is in preview for VSTS. [Go here to enable it](/vsts/project/navigation/preview-features.md). When you enable **New navigation**, you automatically enable several new Agile tool features described in this blog post, [New Work Hubs](https://blogs.msdn.microsoft.com/devops/2018/06/22/new-work-hubs/). For on-premises TFS users, choose **Previous navigation** for guidance. 
@@ -47,7 +47,11 @@ New steps here
 
 ---
 
-0. Open the Git command window (Git Bash on Git for Windows), navigate to the folder where you want the code from the repo stored on your computer, and run `git clone` followed by the path copied from the **Clone URL** in the previous step, as shown in the following example.
+## Clone the repo to your computer
+
+
+
+0. Open the Git command window (Git Bash on Git for Windows), navigate to the folder where you want the code from the repo stored on your computer, and run `git clone` followed by the path copied from the **Clone URL** in the previous section, as shown in the following example.
 
   ```
   git clone https://contoso-ltd.visualstudio.com/MyFirstProject/_git/contoso-demo
@@ -56,13 +60,17 @@ New steps here
 
   Keep this command window open, as you'll use it in the following steps.
 
+## Create a branch
 
+TODO
 
 ## Work with the code
 
 In this step, we'll make a change to the files on your computer, commit the changes locally, push the commit up to the repo that is stored on the server, and view the changes there.
 
 0. Browse to the folder on your computer where you cloned the repo, open the `README.md` file in your editor of choice, make some changes, and save and close the file.
+
+## Commit your changes and push them to the remote repo
 
 0. In the Git command window, navigate to the `contoso-demo` directory by entering the following command: 
 
@@ -91,6 +99,10 @@ In this step, we'll make a change to the files on your computer, commit the chan
 0. Switch to the **Files** tab and click on the README file to view your changes.
 
   ![View changed file](../git/_img/repo-mgmt/readme-changed-file.png)  
+
+## Create a pull request
+
+TODO
 
 ## Try this next  
 
