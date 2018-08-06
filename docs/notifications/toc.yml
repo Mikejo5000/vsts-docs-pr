@@ -5,29 +5,21 @@
   - name: About notifications
     href: about-notifications.md
   - name: Navigating the UX
-    href: navigating-the-ux
+    href: navigating-the-ux.md
 - name: Concepts
   items:
   - name: Manage account notifications
-    href: manage-account-notifications
+    href: manage-account-notifications.md
   - name: Manage team notifications
-    href: manage-team-notifications
+    href: manage-team-notifications.md
   - name: Manage personal notifications
-    href: manage-personal-notifications
+    href: manage-personal-notifications.md
   - name: Email delivery options
     href: concepts-email-delivery-options.md
   - name: Group expansion for email delivery
     href: concepts-group-expansion-for-email.md
   - name: Default subscriptions
     href: concepts-default-subscriptions.md
-- name: Tutorials
-  items:
-  - name: Manage your account level notifications settings
-    href: manage-account-notifications-settings.md
-  - name: View notification statistics for your account
-    href: view-account-notifications-statistics.md
-  - name: Manage your personal notifications
-    href: manage-personal-notifications.md
 - name: How-to Guides
   items:
   - name: Change your preferred email address
@@ -46,6 +38,8 @@
     href: at-mentions.md
   - name: "Use #ID to link to work items"
     href: add-links-to-work-items.md
+  - name: View notification statistics for your account
+    href: howto-view-acount-notification-statistics.md
   - name: Third-party services (Slack, Teams, etc)
     href: howto-integrate-third-party-services.md
 - name: Troubleshooting
