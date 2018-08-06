@@ -1,10 +1,9 @@
 ---
-title: Manage notifications for a team
+title: Navigating the notifications UX
 titleSuffix: VSTS & TFS 
-description: Get notified when changes occur to source code, git, work items, and builds in Visual Studio Team Services & Team Foundation Server  
+description: Navigating and exploring the notification hubs.  
 ms.technology: devops-collab
 ms.prod: devops
-ms.assetid: 6edc44d0-2729-46f5-8108-c8a5160a6a7a
 ms.manager: douge
 ms.reviewer: wismythe
 ms.author: elbatk
