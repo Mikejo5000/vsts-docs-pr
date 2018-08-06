@@ -20,8 +20,6 @@
     href: concepts-group-expansion-for-email.md
 - name: How-to Guides
   items:
-  - name: Change your preferred email address
-    href: howto-change-email-address.md
   - name: Manage your personal subscriptions
     href: howto-manage-personal-subscriptions.md
   - name: Manage your team and group subscriptions
@@ -30,6 +28,8 @@
     href: howto-manage-account-subscriptions.md
   - name: Opt-out of account, group, or team level subscriptions
     href: howto-opt-out-subscriptions.md
+  - name: Change your preferred email address
+    href: howto-change-email-address.md
   - name: "Follow work & pull requests"
     href: ../work/work-items/follow-work-items.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
   - name: "Use @mentions to further discussion"

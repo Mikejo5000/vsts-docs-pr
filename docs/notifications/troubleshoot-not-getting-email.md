@@ -40,5 +40,8 @@ Navigate to the account level notifications hub and click the `Settings` tab (cl
 ## Step 8: Ensure your email address is included as a recipient for this subscription
 Click [here]() to learn more about how email recipients are determined.
 
+## Contact customer support
+If you're not able to resolve the issue with the steps above, consider contacting [customer support](troubleshoot-contact-support.md)
+
 
 
