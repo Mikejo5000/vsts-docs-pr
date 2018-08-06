@@ -22,7 +22,7 @@ featureFlags:
 <div class="container">
 <h1>Azure DevOps Documentation</h1>
     <p>Collaborate across your organization with tools designed to start small and scale up as needed. Azure DevOps provides free private Git repositories, configurable Kanban boards, interactive backlogs, simple planning tools, high-performance pipelines, and extensive automated and cloud-based load testing.</p>
-    <p><i>[What happened to Visual Studio Team Services?](/vsts/user-guide/what-happened-vsts)<i></p>
+    <p><i>[What happened to Visual Studio Team Services?](/vsts/user-guide/what-happened-vsts)</i></p>
 <a href="#start"> </a>
 <h2>Get started with Azure DevOps Services</h2>
 <table border="0" class="fullspan cardsY">
