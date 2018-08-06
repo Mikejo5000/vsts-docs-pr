@@ -17,14 +17,14 @@ There are two main parts of Pipelines: **Continuous Integration (CI)** and **Con
 
 ## Why you should use Continuous Integration (CI) and Continuous Delivery (CD) pipelines in software development
 
-**Continous Integration (CI)**: CI is the practice used by development teams to simplify the merging and testing of code. CI helps to catch bugs or problems early in the development cycle, which makes them easier and faster to fix. Automated tests are run as part of the CI process to ensure quality. Items known as "artifacts" are produced from CI systems and used by the **Continuous Delivery** release pipelines to drive automatic deployments.
+**Continous Integration (CI)**: CI is the practice used by development teams to simplify the testing and building of code. CI helps to catch bugs or problems early in the development cycle, which makes them easier and faster to fix. Automated tests and builds are run as part of the CI process, which can be run on a set schedule, whenever code is pushed, or both. Items known as "artifacts" are produced from CI systems and used by the **Continuous Delivery** release pipelines to drive automatic deployments.
 
-**Continuous Delivery (CD)**: CD is a process by which code is built, tested, and deployed to one or more test and production environments. Deploying and testing in multiple environments drives quality. **Continuous Integration** systems produce the deployable artifacts, including infrastructure and apps, automated release pipelines consume these artifacts to release new versions and fixes to existing systems. Monitoring and alerting systems run constantly to drive visibility into the entire CD process and to ensure errors are caught often and early.
+**Continuous Delivery (CD)**: CD is a process by which code is built, tested, and deployed to one or more test and production environments. Deploying and testing in multiple environments helps drive quality. **Continuous Integration** systems produce the deployable artifacts, including infrastructure and apps, automated release pipelines consume these artifacts to release new versions and fixes to existing systems. Monitoring and alerting systems run constantly to drive visibility into the entire CD process and to ensure errors are caught often and early.
 <br>
-| Continuous Integration (CI)                    |  Continuous Delivery (CD)                       |
+| Continuous Integration (CI)                    |  Continuous Delivery (CD)                      |
 | -----------------------------------------------|------------------------------------------------|
 | Increase code coverage                         | Automatically deploy code to production        |
-| Build stuff faster by splitting test and build | Ensure deployment targets have latest code     |
+| Build faster by splitting test and build runs  | Ensure deployment targets have latest code     |
 | Automatically ensure you don't ship broken code| Use tested code from CI process
 | Run tests continually                          |
 
@@ -42,6 +42,8 @@ There are plenty of reasons to use Azure DevOps Pipelines for your CI/CD solutio
 ## What can Pipelines do for me?
 
 To show the benefit of using Azure DevOps Pipelines, check out the two scenarios below. In the first scenario, we'll cover the development process without using CI/CD with Pipelines, and then in the second we'll show how Pipelines can change the dev process.
+
+**ELBATK NOTE:** NEED HELP HERE
 
 ### Development process _without_ Azure DevOps Pipelines
 
