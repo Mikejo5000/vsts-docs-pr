@@ -1,16 +1,15 @@
 ---
-title: Manage notifications for a team
+title: Manage account notification delivery settings
 titleSuffix: VSTS & TFS 
-description: Manage account notification settings
+description: Manage account notification delivery settings
 ms.technology: devops-collab
 ms.prod: devops
-ms.assetid: 6edc44d0-2729-46f5-8108-c8a5160a6a7a
 ms.manager: douge
 ms.reviewer: wismythe
 ms.author: elbatk
 author: elbatk
 ms.topic: conceptual
-ms.date: 07/25/2018
+ms.date: 08/06/2018
 monikerRange: '>= tfs-2017'
 ---
 
@@ -27,11 +26,8 @@ Account level notification settings can be used to set defaults which apply to a
 
 The direct URL is `https://{account}.visualstudio.com/_admin/_notifications?view=settings`.  Or follow these steps to navigate through the UI.
 
-1. Open the Notifications hub under account settings
-
-    ![Account notifications under settings menu](_img/manage-account-notifications-settings-menu.png)
-
-2. Click **Settings**.
+1. Open the [account notifications hub](navigating-the-ux.md) under account settings
+1. Click **Settings**.
 
     ![Account notifications settings tab](_img/manage-account-notifications-settings-tab.png)
 
