@@ -30,11 +30,22 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
 
 ## Clone the repo to your computer
 
+> [!NOTE]
+> The **New navigation** feature, which provides a vertical navigation experience, is in preview for VSTS. [Go here to enable it](/vsts/project/navigation/preview-features.md). When you enable **New navigation**, you automatically enable several new Agile tool features described in this blog post, [New Work Hubs](https://blogs.msdn.microsoft.com/devops/2018/06/22/new-work-hubs/). For on-premises TFS users, choose **Previous navigation** for guidance. 
+
+# [New navigation](#tab/new-nav)
+
+New steps here
+
+# [Previous navigation](#tab/previous-nav)
+
 0. From your web browser, open the team project for your VSTS account and click the **Code** hub. If you don't have a team project, [create one now](sign-up-invite-teammates.md). 
  
 0. Select Clone in the upper-right corner of the **Code** window and copy the **Clone URL**.
 
 	![Retrieve the clone URL](../../user-guide/_img/code-with-git-clone-repo.png)
+
+---
 
 0. Open the Git command window (Git Bash on Git for Windows), navigate to the folder where you want the code from the repo stored on your computer, and run `git clone` followed by the path copied from the **Clone URL** in the previous step, as shown in the following example.
 
@@ -44,6 +55,8 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
   Git downloads a copy of the code, including all [commits](../git/commits.md) and [branches](../git/branches.md) from the repo, into a new folder for you to work with.
 
   Keep this command window open, as you'll use it in the following steps.
+
+
 
 ## Work with the code
 

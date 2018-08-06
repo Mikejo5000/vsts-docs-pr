@@ -19,6 +19,13 @@ monikerRange: '>= tfs-2013'
 
 Get started with a free account and share your code using Git.
 
-- [Sign up and invite some teammates](sign-up-invite-teammates.md)  
+- New to Azure Devops Repos? [Sign up and invite some teammates](sign-up-invite-teammates.md)  
+- Have an existing Organization? Join/login to that organization
+- Get the code
+    - Don't have a repo? Create one
+- Clone the repo
+- Create a branch
+- Working with the code (commits, pushes, and pulls)
+- Review your code with Pull Requests
 - [Code with Git](code-with-git.md)
  
