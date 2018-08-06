@@ -8,22 +8,20 @@
     href: navigating-the-ux.md
 - name: Concepts
   items:
-  - name: Manage account notifications
-    href: manage-account-notifications.md
-  - name: Manage team notifications
-    href: manage-team-notifications.md
-  - name: Manage personal notifications
-    href: manage-personal-notifications.md
+  - name: Events and notifications
+    href: concepts-events-and-notifications.md
+  - name: Subscriptions
+    href: concepts-subscriptions.md
+  - name: Managing subscriptions
+    href: concepts-managing-subscriptions.md
   - name: Email delivery options
     href: concepts-email-delivery-options.md
   - name: Group expansion for email delivery
     href: concepts-group-expansion-for-email.md
-  - name: Default subscriptions
-    href: concepts-default-subscriptions.md
 - name: How-to Guides
   items:
   - name: Change your preferred email address
-    href: change-email-address.md
+    href: howto-change-email-address.md
   - name: Manage your personal subscriptions
     href: howto-manage-personal-subscriptions.md
   - name: Manage your team and group subscriptions
