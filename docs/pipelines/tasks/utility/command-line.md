@@ -84,7 +84,7 @@ steps:
   displayName: Set a variable and then display all
 ```
 
-# [Web](tabs/web)
+# [Web](#tabs/web)
 
 On the Build tab of a build pipeline, add these tasks:
 

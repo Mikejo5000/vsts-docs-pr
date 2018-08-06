@@ -20,10 +20,11 @@ monikerRange: '>= tfs-2015'
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+::: moniker-end
 
 ## Demands
 
-DotNetFramework
+* DotNetFramework
 
 ::: moniker range="> tfs-2018"
 ## YAML snippet
@@ -39,7 +40,6 @@ The Powershell task also has a shortcut syntax in YAML:
   errorActionPreference: #
   ignoreLASTEXITCODE: #
 ```
-::: moniker-end
 ::: moniker-end
 
 ## Arguments
