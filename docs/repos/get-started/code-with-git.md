@@ -28,7 +28,7 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
   - To install Git for Windows, including Git Credential Manager, see [Install the Git Credential Manager - Windows](../git/set-up-credential-managers.md#windows)
   - To install Git for macOS and Linux, see [Install the Git Credential Manager - macOS and Linix](../git/set-up-credential-managers.md#macos-and-linux)
 
-## Clone the repo to your computer
+## Get your code
 
 
 ### Get the clone URL
@@ -61,17 +61,15 @@ New steps here
 
   Keep this command window open, as you'll use it in the following steps.
 
-## Create a branch
+## Work in a branch
 
-TODO
-
-## Work with the code
+TODO 
 
 In this step, we'll make a change to the files on your computer, commit the changes locally, push the commit up to the repo that is stored on the server, and view the changes there.
 
 0. Browse to the folder on your computer where you cloned the repo, open the `README.md` file in your editor of choice, make some changes, and save and close the file.
 
-## Commit your changes and push them to the remote repo
+## Share your changes
 
 0. In the Git command window, navigate to the `contoso-demo` directory by entering the following command: 
 
@@ -104,6 +102,8 @@ In this step, we'll make a change to the files on your computer, commit the chan
 ## Create a pull request
 
 TODO
+
+## Sync with others
 
 ## Try this next  
 
