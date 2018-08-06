@@ -6,7 +6,7 @@ ms.manager: douge
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.date: 08/03/2018
+ms.date: 08/05/2018
 author: mlearned
 monikerRange: 'vsts'
 ---
