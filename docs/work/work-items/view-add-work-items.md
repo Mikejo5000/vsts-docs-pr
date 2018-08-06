@@ -33,11 +33,47 @@ View work items that you created or are assigned to you. The **Work>Work Items**
 - You must connect to a project. If you don't have an account or project yet, create one in [VSTS](../../user-guide/sign-up-invite-teammates.md). You can then [connect to a project from your web portal or Visual Studio](../../organizations/projects/connect-to-projects.md).
 - To view or add work items, you must be a member of the Contributors group or be granted [Stakeholder access](../../organizations/security/get-started-stakeholder.md). If you don't have access to the project, ask the [organization owner or project administrator](../../organizations/security/lookup-organization-owner-admin.md) to add you.
 
-[!INCLUDE [temp](../_shared/open-work-items.md)]
+
+## Open the Work Items page
+You can start viewing and adding work items once you connect to a project. 
+
+<a id="browser" /> 
+
+
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
+
+# [New navigation](#tab/new-nav)
+::: moniker range="vsts"
+(1) Check that you have selected the right project, then (2) choose **Work>Work Items**. 
+
+> [!div class="mx-imgBorder"]  
+> ![Open Work>Work Items, new navigation](_img/view-add/open-work-items-agile.png)
+
+::: moniker-end
+
+::: moniker range=">= tfs-2013 <= tfs-2018"
+[!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)] 
+::: moniker-end
+
+# [Previous navigation](#tab/previous-nav)
+
+Open a browser window, choose **Work**, and then **Work Items**. 
+
+> [!div class="mx-imgBorder"]
+![Work>Work Items ](_img/view-add/work-items-hub.png)
+
+---
+
+> [!NOTE]    
+>Depending on the process chosen when the project was created&mdash;[Agile](guidance/agile-process-workflow.md), [Scrum](guidance/scrum-process-workflow.md), or [CMMI](guidance/cmmi-process-workflow.md)&mdash;the types of work items you can create will differ. For example, backlog items may be called product backlog items (Scrum), user stories (Agile), or requirements (CMMI). All three are similar: they describe the customer value to deliver and the work to be performed.
+>
+> For an overview of all three processes, see [Choose a process](../work-items/guidance/choose-process.md). 
+
 
 ## View work items
 
 Using the drop-down menu, you can focus on relevant items inside a project using one of the seven pivots as described next. Additionally, you can [filter](#filter) and [sort](#sort) each pivot view.  
+
 
 <table>
 <tbody valign="top">

@@ -6,6 +6,6 @@
     tocHref: /vsts/organizations/
     topicHref: /vsts/index#devops-services-settings
     items:
-    - name: "Scale & Configure Teams"
+    - name: Settings
       tocHref: /vsts/
       topicHref: /vsts/organizations/settings/index
