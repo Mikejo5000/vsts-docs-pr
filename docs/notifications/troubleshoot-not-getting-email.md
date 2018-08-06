@@ -29,13 +29,13 @@ Default subscription become disabled when an administrartor opts-out at the acco
 An email is only generated if a VSTS event matches all the filter conditions of the subscription. View the filter conditions by clicking the subscription link in the subscription user interface.  You should be able to view the filter conditions even if you don't have permision to change them.  Closely instect all filter conditions to see if they matched the VSTS event.
 
 ## Step 5: Check the "Skip initiator" option on the subscription
-The `Skip initiator` checkbox option on a subscription will cause the initiator of the VSTS event to be excluded from the recipient list of an email generated, while all others will receive the event.  For example, consider a subscription for a work item changed event.  You can choose `Skip initiator` to avoid being emailed for changes you make to the work item.
+The `Skip initiator` checkbox option on a subscription will cause the initiator of the VSTS event to be excluded from the recipient list of an email generated, while all others will receive the event.  For example, consider a subscription for a work item changed event.  You can choose `Skip initiator` to avoid being emailed for changes you make to the work item.  Click [here](howto-exclude-self-from-email.md) to learn more about this option.
 
 ## Step 6: Check "Do not deliver" setting for the account
-Navigate to the account level notifications hub and click the `Settings` tab (click [here]() to learn how).  If delivery setting is set to `Do not deliver`, then all team or groups that don't have explicit delivery settings will inherit this value.  This setting alone doesn't necessarily indicate an email wasn't delivered but it could be.  Continue with the next step to determine if a group or team delivery setting is inheriting this value and blocking delivery to your group or team.
+Navigate to the account level notifications hub and click the `Settings` tab (click [here](howto-manage-account-notification-settings.md) to learn how).  If delivery setting is set to `Do not deliver`, then all team or groups that don't have explicit delivery settings will inherit this value.  This setting alone doesn't necessarily indicate an email wasn't delivered but it could be.  Continue with the next step to determine if a group or team delivery setting is inheriting this value and blocking delivery to your group or team.
 
 ## Step 7: Check "Do not deliver" setting for your team or group
- If the team or group define a delivery setting for "Deliver to individual members", it's still possible that the team contains other groups which have a different delivery setting.  Click [here]() to learn team membership is expaneded and how some members of the team could receive an email while others do not.
+ If the team or group define a delivery setting for "Deliver to individual members", it's still possible that the team contains other groups which have a different delivery setting.  Click [here](concepts-group-expansion-for-email.md) to learn team membership is expaneded and how some members of the team could receive an email while others do not.
 
 ## Step 8: Ensure your email address is included as a recipient for this subscription
 Click [here]() to learn more about how email recipients are determined.

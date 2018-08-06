@@ -30,6 +30,8 @@
     href: howto-opt-out-subscriptions.md
   - name: Change your preferred email address
     href: howto-change-email-address.md
+  - name: Exclude yourself from notification of events initiated by you
+    href: howto-exclude-self-from-email.md
   - name: "Follow work & pull requests"
     href: ../work/work-items/follow-work-items.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
   - name: "Use @mentions to further discussion"

@@ -86,4 +86,4 @@ Choose the default method for your team to receive notifications by updating the
 
 ## Related topics
 
-- [Manage personal notification settings](manage-personal-notifications.md)  
+- [Manage personal notification settings](howto-manage-personal-subscriptions.md)  

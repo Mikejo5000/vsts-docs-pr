@@ -53,7 +53,7 @@ Within the personal notifications page, OOB subscriptions appear with the follow
 
 ## Supported subscriptions 
 
-You can create subscriptions using the following templates for yourself, a team, or a group.  Within the subscription dialog you can specify additional fields based on the category. To learn more, see [Manage personal notifications](manage-personal-notifications.md).    
+You can create subscriptions using the following templates for yourself, a team, or a group.  Within the subscription dialog you can specify additional fields based on the category. To learn more, see [Manage personal notifications](howto-manage-personal-subscription.md).    
 
 | Category | 	Template |
 |-----------------------|-------------------|
