@@ -5,7 +5,7 @@ ms.topic: include
 ### Decide which user you'll use
 
 As a one-time step, you must register the agent. Someone with permission to
-[administer the agent queue](../../organizations/security/about-security-roles?view=vsts#agent-queue-security-roles)
+[administer the agent queue](../../../../organizations/security/about-security-roles?view=vsts#agent-queue-security-roles)
 must complete these steps. The agent will not use this person's
 credentials in everyday operation, but they're required to complete registration.
 Learn more about [how agents communicate](../../agents.md#communication).
@@ -40,17 +40,6 @@ As an alternative, on TFS 2017, you can use either a domain user or a
 local Windows user on each of your TFS application tiers.
 
 ::: moniker-end
-
-::: moniker range="tfs-2015"
-
-#### Authenticate as a Windows user (TFS 2015)
-
-We recommend that you create a local Windows user on each of your TFS
-application tiers and dedicate that user for the purpose of deploying build
-agents. Use this identity to provision macOS and Linux agents.
-
-::: moniker-end
-
 
 ### Confirm the user has permission
 
