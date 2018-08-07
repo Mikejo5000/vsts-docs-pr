@@ -17,7 +17,7 @@ monikerRange: '> tfs-2018'
 If you manage your code in GitHub or in Visual Studio Team Services (VSTS) Git, then you can use VSTS pipelines to easily build the repo by adding a YAML file to it. VSTS pipelines can be used to automate continuous integration (CI) for an application written in any programming language.
 
 > [!NOTE]
-> To use YAML you must have the **Build YAML pipelines** [preview feature](/vsts/project/navigation/preview-features) enabled on your organization.
+> To use YAML you must have the **Build YAML pipelines** [preview feature](../project/navigation/preview-features.md) enabled on your organization.
 
 ## Prerequisites
 
@@ -29,7 +29,7 @@ Choose the sample application for the language of your choice from one of the fo
 
 | Programming language | Repository with a sample application |
 |----------------------|----------------------------|
-| .NET Core | `https://github.com/adventworks/dotnetcore-sample` |
+| .NET Core | `https://github.com/MicrosoftDocs/pipelines-dotnet-core` |
 | Android | `https://github.com/adventworks/android-sample` |
 | Go | `https://github.com/adventworks/go-sample` |
 | Java | `https://github.com/adventworks/java-sample` |
