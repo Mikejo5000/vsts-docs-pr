@@ -9,8 +9,9 @@ ms.manager: douge
 ms.author: chcomley
 author: chcomley
 ms.date: 04/18/2018
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
+
 
 # Quickstart: Buy cloud-based load testing in VSTS
 
@@ -22,7 +23,7 @@ VSTS offers a cloud-based solution for [load testing your apps](../../test/load-
 
 Load tests are measured and billed in virtual user minutes (VUM) as described in  this Q&A: [What are virtual user minutes (VUMs)? How many minutes will my load test use?](../../test/load-test/reference-qa.md#VUM).
 
-If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/en-us/free/?WT.mc_id=A261C142F) before you begin.
+If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 
 <a name="buy-load-testing"></a>
 
@@ -49,9 +50,9 @@ To make subsequent edits to paid quantities in your VSTS organization, you only 
 
    >If you experience browser problems with Azure, make sure that you use a [supported browser](https://azure.microsoft.com/documentation/articles/azure-preview-portal-supported-browsers-devices/).
 
-2. Enter *team services accounts* into the search box, choose **team services accounts** from the dropdown menu, and select your VSTS organization.
+2. Select **All services**, choose **Team Services administration**, and select your VSTS organization.
 
-   ![Browse, VSTS organizations, select your organization](_img/_shared/AP_VSO_SelectLinkedOrganization.png)
+   ![Browse, VSTS organizations, select your organization](../accounts/_img/_shared/azure-portal-team-services-administration.png)
 
 3. Select **Cloud-based load testing**, to the right of your screen.
 

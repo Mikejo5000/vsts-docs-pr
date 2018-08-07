@@ -39,7 +39,7 @@ To add members to projects, you need [project administrator](../security/set-pro
 
 ## Add members to your project
 
-[!INCLUDE [temp](../../work/_shared/new-agile-hubs-feature.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation.md)]  
 
 ## [New navigation](#tab/new-nav)
 
