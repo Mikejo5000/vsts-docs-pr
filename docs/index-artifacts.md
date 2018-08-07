@@ -44,7 +44,7 @@ featureFlags:
                                 </a>
 </td>
 <td width="25%">
-                               <a href="/vsts/package/get-started-nuget.md">
+                               <a href="/vsts/package/get-started-nuget">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -63,7 +63,7 @@ featureFlags:
                                 </a>
 </td>
 <td width="25%">
-                               <a href="/vsts/package/get-started-npm.md">
+                               <a href="/vsts/package/get-started-npm">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -82,7 +82,7 @@ featureFlags:
                                 </a>
 </td>
 <td width="25%">
-                               <a href="/vsts/package/get-started-maven.md">
+                               <a href="/vsts/package/get-started-maven">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">

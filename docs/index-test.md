@@ -24,7 +24,7 @@ featureFlags:
 <table border="0" class="cardsA">
 <tr>
 <td width="25%">
-                                <a href="/visualstudio/test/unit-test-your-code">
+                                <a href="https://docs.microsoft.com/en-us/visualstudio/test/unit-test-your-code">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -82,7 +82,7 @@ featureFlags:
                                 </a>
 </td>
 <td width="25%">
-                                <a href="/vsts/pipelines/index">
+                                <a href="/vsts/pipelines/test/getting-started-with-continuous-testing">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -124,7 +124,7 @@ featureFlags:
                                 </a>
 </td>
 <td width="25%">
-                                <a href="/vsts/organizations/settings/index#test-center">
+                                <a href="/vsts/organizations/settings/about-settings#test-center">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">

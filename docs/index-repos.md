@@ -81,7 +81,7 @@ featureFlags:
                                 </a>
 </td>
 <td width="25%">
-                                <a href="/vsts/repos/git/concepts/forks">
+                                <a href="/vsts/repos/git/forks">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -140,7 +140,7 @@ featureFlags:
                                 </a>
 </td>
 <td width="25%">
-                                <a href="/vsts/organizations/settings/index#repos">
+                                <a href="/vsts/organizations/settings/about-settings#repos">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">

@@ -63,7 +63,7 @@ featureFlags:
 
 </td>
 <td width="25%">
-                               <a href="/vsts/pipelines/index">
+                               <a href="/vsts/pipelines/test/getting-started-with-continuous-testing">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -183,7 +183,7 @@ featureFlags:
 </tr>
 <tr>
 <td width="25%">
-                                <a href="/vsts/organizations/settings/index#pipelines">
+                                <a href="/vsts/organizations/settings/about-settings#pipelines">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">

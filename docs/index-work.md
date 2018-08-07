@@ -187,7 +187,7 @@ featureFlags:
 </tr>
 <tr>
 <td width="25%">
-                                <a href="/vsts/organizations/settings/index#work">
+                                <a href="/vsts/organizations/settings/about-settings#work">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">

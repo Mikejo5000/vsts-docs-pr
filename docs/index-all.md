@@ -68,41 +68,41 @@ featureFlags:
 <td width="25%">
                         <h3>Azure Pipelines</h3>
                             <p><a href="/vsts/pipelines/index">Azure Pipelines</a><br/>
-                            <a href="/vsts/pipelines/index">Continuous Testing</a><br/>
+                            <a href="/vsts/pipelines/test/getting-started-with-continuous-testing">Continuous testing</a><br/>
                             <a href="/vsts/deploy-azure/index">Deploy to Azure</a><br/>
-                            <a href="/vsts/package/index">Package Management</a><br/>
-                            <a href="/vsts/pipelines/library/index">Library Assets</a><br/>
-                            <a href="/vsts/pipelines/agents/agents">Hosted &amp; Private Agents</a><br/>
-                            <a href="/vsts/pipelines/tasks">Task Reference</a></p>
+                            <a href="/vsts/package/index">Package management</a><br/>
+                            <a href="/vsts/pipelines/library/index">Library assets</a><br/>
+                            <a href="/vsts/pipelines/agents/agents">Hosted &amp; private agents</a><br/>
+                            <a href="/vsts/pipelines/tasks">Task reference</a></p>
                         <h3>Azure Artifacts</h3>
-                            <p><a href="/vsts/package/overview">Package Management</a><br/>
+                            <p><a href="/vsts/package/overview">Package management</a><br/>
                             <a href="/vsts/package/get-started-nuget">NuGet</a><br/>
                             <a href="/vsts/package/get-started-npm">npm</a><br/>
                             <a href="/vsts/package/get-started-maven">Maven</a></p>
                         <h3>Azure Test Plans</h3>
-                            <p><a href="/vsts/pipelines/index">Continuous Testing</a><br/>
-                            <a href="/vsts/test/index">Exploratory & Manual Testing</a><br/>
-                            <a href="/vsts/test/load-test/index">Load Testing</a><br/>
-                            <a href="/visualstudio/test/unit-test-your-code">Unit & Functional Testing</a></p>
+                            <p><a href="/vsts/pipelines/test/getting-started-with-continuous-testing">Continuous testing</a><br/>
+                            <a href="/vsts/test/index">Exploratory & manual testing</a><br/>
+                            <a href="/vsts/test/load-test/index">Load testing</a><br/>
+                            <a href="https://docs.microsoft.com/en-us/visualstudio/test/unit-test-your-code">Unit & functional testing</a></p>
 </td>
 <td width="25%">
                         <h3>Management tools</h3>
-                            <p><a href="/vsts/organizations/settings/index">Project &amp; Organization Settings</a><br/>
-                            <a href="/vsts/organizations/settings/about-teams-and-settings">Scale &amp; Configure Teams</a><br/>
-                            <a href="/vsts/organizations/settings/work/inheritance-process-model">Process Customization</a><br/>
+                            <p><a href="/vsts/organizations/settings/index">Project &amp; Organization settings</a><br/>
+                            <a href="/vsts/organizations/settings/about-teams-and-settings">Scale &amp; configure teams</a><br/>
+                            <a href="/vsts/organizations/settings/work/inheritance-process-model">Process customization</a><br/>
                             <a href="/vsts/organizations/security/index">Security &amp; Identity</a><br/>
-                            <a href="/vsts/organizations/settings/index">Project Management</a><br/>
-                            <a href="/vsts/organizations/accounts/index">Organization Management</a><br/>
+                            <a href="/vsts/organizations/settings/index">Project management</a><br/>
+                            <a href="/vsts/organizations/accounts/index">Organization management</a><br/>
                             <a href="/vsts/billing/index">Billing</a><br/>
                             <a href="/vsts/notifications/index">Notifications</a><br/>
                             <a href="/tfs/server/index">Team Foundation Server</a></p>
                         <h3>Discover & manage extensions</h3>
-                            <p><a href="/vsts/marketplace/overview">Discover & Manage Extensions</a><br/>
-                            <a href="/vsts/service-hooks/index">Service Hooks</a><br/>
+                            <p><a href="/vsts/marketplace/overview">Discover & manage extensions</a><br/>
+                            <a href="/vsts/service-hooks/index">Service hooks</a><br/>
                             <a href="/vsts/report/extend-analytics/index">Extend Analytics with OData</a></p>
                         <h3>Build extensions</h3>
-                            <p><a href="/vsts/extend/index">Develop Extensions</a><br/>
-                            <a href="/vsts/integrate/index">Build Apps</a><br/>
+                            <p><a href="/vsts/extend/index">Develop extensions</a><br/>
+                            <a href="/vsts/integrate/index">Build apps</a><br/>
                             <a href="https://docs.microsoft.com/en-us/rest/api/vsts/">REST APIs</a><br/>
                             <a href="https://www.visualstudio.com/docs/integrate/extensions/reference/client/core-sdk">TypeScript APIs</a></p>
                         </ul>
