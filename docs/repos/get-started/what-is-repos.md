@@ -15,14 +15,19 @@ monikerRange: 'vsts'
 
 # What is Azure Repos?
 
+Host and manage your code in Azure Repos. Whether your software project is large or small, using version control as soon as possible is a good idea. Version control systems are software that help you track changes you make in your code over time. As you edit your code, you tell the version control system to take a snapshot of your files. The version control system saves that snapshot permanently so you can recall it later if you need it. Use version control to save your work and coordinate code changes across your team. Even if you're just a single developer, version control helps you stay organized as you fix bugs and develop new features. Version control keeps a history of your development so that you can review and even rollback to any version of your code with ease.
 
-## Git repositories
+Azure Repos provides two types of version control:
 
-Host and manage your code in Git version control with VSTS and Team Foundation Server. Use version control to save your work and coordinate code changes across your team. Even if you're just a single developer, version control helps you stay organized as you fix bugs and develop new features. Version control keeps a history of your development so that you can review and even rollback to any version of your code with ease.
+- [Git](#git) - distributed version control
+- [TFVC](#TFVC) - centralized version control
 
-New to Git? [Learn more](/azure/devops/git/learn-git-with-team-services) about how Git and VSTS can help your team ship great code, and learn [how we use Git at Microsoft](/azure/devops/devops-at-microsoft/use-git-microsoft).
+## Git
 
-### Get started
+Git is the most commonly used version control system today and is quickly becoming the standard for version control. Git is a distributed version control system, meaning your local copy of code is a complete version control repository. These fully functional local repositories make it is easy to work offline or remotely. You commit your work locally, and then sync your copy of the repository with the copy on the server.
+
+Git in Azure Repos is standard Git. You can use the clients and tools of your choice, such as Git for Windows, Mac, third part Git services, and tools such as Visual Studio and Visual Studio Code.
+
 
 <div class="row">
 <div class="col-sm-6 col-md-6">
@@ -36,7 +41,7 @@ VSTS IDE integrations are available for [Visual Studio](../../organizations/acco
 and [IntelliJ](/vsts/java/download-intellij-plug-in).</p>
 
 
-<p>New to Git? Learn how to share code with Git and VSTS with the following getting started guides:</p>
+<p>New to Git? Learn how to share code with Azure Repos with the following getting started guides:</p>
 </div>
 </div>
 
