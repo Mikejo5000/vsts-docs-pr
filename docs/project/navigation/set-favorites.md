@@ -6,7 +6,8 @@ ms.technology: devops-collab
 ms.prod: devops
 ms.assetid: 473E452D-59F7-4F6F-97C6-657ECD99ADCB
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: tutorial
 ms.date: 09/01/2017  
 monikerRange: '>= tfs-2017'
@@ -224,4 +225,4 @@ From your team context, drag shared queries, builds, and folders to Team favorit
 > [!div class="nextstepaction"]
 > [Work effectively from the account home page](../../user-guide/account-home-pages.md)
 > or
-> [Manage personal notifications](../../notifications/manage-personal-notifications.md)
+> [Manage personal notifications](../../notifications/howto-manage-personal-notifications.md)
