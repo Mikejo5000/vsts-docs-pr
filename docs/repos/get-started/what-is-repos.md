@@ -32,9 +32,7 @@ Git in Azure Repos is standard Git. You can use the clients and tools of your ch
 
 <div class="col-sm-6 col-md-6">
 
-<p>Connect your favorite development environment to Azure Repos to access your repos and manage your work. Azure Repos IDE integrations are available for: [Visual Studio](../../organizations/accounts/set-up-vs.md), 
-[Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vsts.team), [Eclipse](/vsts/java/download-eclipse-plug-in), 
-and [IntelliJ](/vsts/java/download-intellij-plug-in).</p>
+<p>Connect your favorite development environment to Azure Repos to access your repos and manage your work. Azure Repos IDE integrations are available for the following:</p>
 
 </div>
 </div>
