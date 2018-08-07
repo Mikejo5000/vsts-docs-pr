@@ -48,6 +48,8 @@ To use Azure DevOps Pipelines, you'll need the following:
 * A VSTS or TFS account
 * Have your source code stored in a version control system (Git or TFVC)
 
+**ELBATK NOTE:** NEED HELP HERE - what all is needed?
+
 ## How do I start using Pipelines?
 
 If you'd like to ramp up and learn a little more about Pipelines, visit our get started guide to [Create your first build and release flow](../get-started-designer.md).

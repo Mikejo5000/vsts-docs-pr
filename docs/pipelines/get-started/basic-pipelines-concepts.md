@@ -27,6 +27,8 @@ Azure DevOps Pipelines is simple in its design:
     * Any tasks (deploying code) in your release pipeline will be run
 5. Your updated, tested, and packaged code is sent to your deployment target
 
+**ELBATK NOTE:** NEED HELP HERE - should we get art for this kind of stuff? 
+
 ## Key terms
 
 ### What is 'build'?
@@ -35,19 +37,19 @@ Azure DevOps Pipelines is simple in its design:
 
 ### What is 'continuous integration'?
 
-**Continuous Integration (CI)** CI is the practice used by development teams to simplify the merging and testing of code. CI helps to catch bugs or problems early in the development cycle, which makes them easier and faster to fix. Automated tests are run as part of the CI process to ensure quality. Items known as "artifacts" are produced from CI systems and used by the **Continuous Delivery** release pipelines to drive automatic deployments.
+**Continuous Integration (CI)** is the practice used by development teams to simplify the testing and building of code. CI helps to catch bugs or problems early in the development cycle, which makes them easier and faster to fix. Automated tests and builds are run as part of the CI process, which can be run on a set schedule, whenever code is pushed, or both. Items known as "artifacts" are produced from CI systems and used by the **Continuous Delivery** release pipelines to drive automatic deployments.
 
 ### What is 'continuous delivery'?
 
-**Continuous Delivery (CD)**: CD is a process by which code is built, tested, and deployed to one or more test and production environments. Deploying and testing in multiple environments drives quality. CI systems produce the deployable artifacts, including infrastructure and apps, automated release pipelines consume these artifacts to release new versions and fixes to existing systems. Monitoring and alerting systems run constantly to drive visibility into the entire CD process and to ensure errors are caught often and early.
+**Continuous Delivery (CD)** is a process by which code is built, tested, and deployed to one or more test and production environments. Deploying and testing in multiple environments helps drive quality. **Continuous Integration** systems produce the deployable artifacts, including infrastructure and apps, automated release pipelines consume these artifacts to release new versions and fixes to existing systems. Monitoring and alerting systems run constantly to drive visibility into the entire CD process and to ensure errors are caught often and early.
 
 ### What is a 'pipeline'?
 
-A **pipeline** is a representation of the automation process that you want to run to build and test (build pipeline) or deploy (release pipeline) your application. A pipeline is defined as a collection of tasks.
+A **pipeline** is made up of **tasks** and can be thought of as a script that defines how your testing, building, and deploying tasks are run.
 
 ### What is a 'task'?
 
-A **task** is the building block of a pipeline. For example, a build pipeline may consists of build tasks and test tasks, while a release pipeline will consist of deployment tasks.
+A **task** is the building block of a pipeline. For example, a build pipeline may consists of build tasks and test tasks, while a release pipeline will consist of deployment tasks. Each task runs a specific job in the **pipeline**.
 
 ### What is an 'agent'?
 
