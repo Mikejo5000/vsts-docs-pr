@@ -45,7 +45,7 @@ To add members to projects, you need [project administrator](../security/set-pro
 
 1. Sign in to your VSTS organization (`https://<yourorganization>.visualstudio.com`) as *project administrator*, *project collection administrator*, or *organization owner*.
 
-   [Why am I asked to select between my "work or school account" and my "personal account"?](faq-add-team-members.md#ChooseOrgAcctMSAcct)
+   [Why am I asked to choose between my "work or school account" and my "personal account"?](faq-add-team-members.md#ChooseOrgAcctMSAcct)
 
 2. On the landing page, which is your Projects page `https://<yourorganization>.visualstudio.com/_projects`, select your  project.
 
@@ -65,7 +65,7 @@ To add members to projects, you need [project administrator](../security/set-pro
 
 1. Sign in to your VSTS organization (`https://<yourorganization>.visualstudio.com`) as *project administrator*, *project collection administrator*, *or organization owner*.
 
-   [Why am I asked to select between my "work or school account" and my "personal account"?](faq-add-team-members.md#ChooseOrgAcctMSAcct)
+   [Why am I asked to choose between my "work or school account" and my "personal account"?](faq-add-team-members.md#ChooseOrgAcctMSAcct)
 
 2. On the organization landing page (which is your projects page, `https://<yourorganization>.visualstudio.com/_projects`), find and select your project.
 
@@ -120,7 +120,7 @@ To add members to projects, you need [project administrator](../security/set-pro
 
 ## Related articles
 
-* [Change individual permissions, and grant specific access to specific functions](../../organizations/security/change-individual-permissions.md)
+* [Change individual permissions, and grant access to specific functions](../../organizations/security/change-individual-permissions.md)
 * [Grant or restrict access to specific features and functions](../../organizations/security/restrict-access.md)
 * [VSTS pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
 * [VSTS billing support](https://visualstudio.microsoft.com/team-services/support/)
