@@ -28,6 +28,12 @@ Git is the most commonly used version control system today and is quickly becomi
 
 Git in Azure Repos is standard Git. You can use the clients and tools of your choice, such as Git for Windows, Mac, third part Git services, and tools such as Visual Studio and Visual Studio Code.
 
+- [Connect your favorite development environment](#connect-your-favorite-development-environment)
+- [Review code with pull requests](#review-code-with-pull-requests)
+- [Protect branches with policies](#protect-branches-with-policies)
+- [Extend pull request workflows with pull request status](#extend-pull-request-workflows-with-pull-request-status)
+- [Isolate code with forks](#isolate-code-with-forks)
+
 ### Connect your favorite development environment
 
 <div class="row">
@@ -194,7 +200,6 @@ Git in Azure Repos is standard Git. You can use the clients and tools of your ch
 </div>
 </div>
 
-
 ### Protect branches with policies
 
 There are a few critical branches in your repo that the team relies on always being in good shape, such as your `master` branch.
@@ -340,14 +345,14 @@ Pull requests and branch policies enable teams to enforce many best practices re
     </li>
 </ul>
 
-### Forks
+### Isolate code with forks
 
 Forks are a great way to isolate experimental, risky, or confidential changes from the original codebase. A fork is a complete copy of a repository, including all files, commits, and (optionally) branches. The new fork acts as if someone cloned the original repository, then pushed to a new, empty repository.
 After a fork has been created, new files, folders, and branches are not shared between the repositories unless a pull request carries them along. Once you're ready to share those changes, it's easy to use [pull requests](../git/pull-requests-overview.md) to push the changes back to the original repository.
 
 <ul class="panelContent cardsFTitle">
     <li>
-        <a href="forks.md">
+        <a href="../git/forks.md">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
