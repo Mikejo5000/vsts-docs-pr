@@ -37,6 +37,7 @@ The CmdLine task also has a shortcut syntax in YAML:
   workingDirectory: #
   displayName: #
   failOnStderr: #
+  env:  # mapping of environment variables to add
 ```
 ::: moniker-end
 
@@ -63,6 +64,16 @@ The CmdLine task also has a shortcut syntax in YAML:
 <tr>
 <td>Fail on standard error</td>
 <td>If this is <code>true</code>, this task will fail if any errors are written to <code>stderr</code>.</td>
+</tr>
+<tr>
+<td>Env[ironment variables]</td>
+<td>A list of additional items to map into the process's environment. For example, secret variables are not automatically mapped. If you have a secret variable called <code>Foo</code>, you can map it in like this:<br/><br/>
+```yaml
+- script: echo %MYSECRET%
+  env:
+    MySecret: $(Foo)
+```
+</td>
 </tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
