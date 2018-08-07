@@ -28,11 +28,14 @@ Git is the most commonly used version control system today and is quickly becomi
 
 Git in Azure Repos is standard Git. You can use the clients and tools of your choice, such as Git for Windows, Mac, third part Git services, and tools such as Visual Studio and Visual Studio Code.
 
+
+### Connect your favorite development environment
+
 <div class="row">
 
 <div class="col-sm-6 col-md-6">
 
-<p>Connect your favorite development environment to Azure Repos to access your repos and manage your work. Azure Repos IDE integrations are available for the following:</p>
+<p>Connect your favorite development environment to Azure Repos to access your repos and manage your work.</p>
 
 </div>
 </div>
@@ -40,6 +43,7 @@ Git in Azure Repos is standard Git. You can use the clients and tools of your ch
 <!--- All images are Placeholder --> 
 <!-- Converting to icon48 format, this gets cleaner in YAML -->
 <div class="ico48Case halfStack">
+<div class="ico48Link"><a href="../git/share-your-code-in-git-cmdline.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/common/i_cligeneric.svg"><span>Command-line</span></a></div>
 <div class="ico48Link"><a href="https://marketplace.visualstudio.com/items?itemName=ms-vsts.team"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_vs-code.svg"><span>Visual Studio Code</span></a></div>
 <div class="ico48Link"><a href="../git/share-your-code-in-git-vs-2017.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_visual-studio.svg"><span>Visual Studio</span></a></div>
 <div class="ico48Link"><a href="../git/share-your-code-in-git-xcode.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_xcode.svg"><span>Xcode</span></a></div>
@@ -49,45 +53,7 @@ Git in Azure Repos is standard Git. You can use the clients and tools of your ch
 
 </div>
 
-### Git tutorial
 
-<div class="row">
-<div class="col-sm-6 col-md-6">
-<p>Get up and running with Git and VSTS in just a few minutes with the [VSTS Git quick start](gitquickstart.md).</p>
-
-<p>The [VSTS Git tutorial](gitworkflow.md) walks you through Git tasks like [creating repos](creatingrepo.md), [working in branches](branches.md), [saving your work](commits.md), and [sharing your changes](pushing.md). 
-Every task is presented step-by-step in Visual Studio or from the command line.</p>
-</div>
-<div class="col-sm-6 col-md-6">
-![VSTS Git tutorial workflow](_img/gitworkflow.png)
-
-</div>
-</div>   
-
-### Authenticate with your repos
-
-<div class="row">
-<div class="col-sm-6 col-md-6">
-
-![Connect to VSTS from anywhere](_img/overview/IC839946.png)   
-
-</div>
-
-<div class="col-sm-6 col-md-6"> 
-
-<p>You can authenticate with your VSTS Git repo from any platform using [cross-platform credential managers](set-up-credential-managers.md) or [SSH public key authentication](use-ssh-keys-to-authenticate.md).</p>
-
-<p>If you have code ready to share in VSTS, our getting started guides take you through the steps to connect your development environment to a VSTS Git repo and share your code with your team.</p>
-
-<ul>
-<li>[Get Started with Visual Studio](share-your-code-in-git-vs.md)</li>
-<li>[Get Started with Xcode](share-your-code-in-git-xcode.md)</li>
-<li>[Get Started with Eclipse](share-your-code-in-git-eclipse.md)</li>
-<li>[Get Started with IntelliJ](create-repo-intellij.md)</li>
-</ul>
-
-</div>
-</div>
 
 ### Manage your repos
 
@@ -110,12 +76,10 @@ Every task is presented step-by-step in Visual Studio or from the command line.<
 </div>
 </div>
 
-### Review code
+### Review code with pull requests
 
 <div class="row">
 <div class="col-sm-6 col-md-6">
-
-![Review code with pull requests in VSTS and TFS](_img/overview/pull-request.png)
 
 </div>
 <div class="col-sm-6 col-md-6"> 
@@ -124,7 +88,7 @@ Every task is presented step-by-step in Visual Studio or from the command line.<
 
 <ul class="panelContent cardsFTitle">
     <li>
-        <a href="pull-requests.md">
+        <a href="../git/pull-requests-overview.md">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -202,7 +166,7 @@ Every task is presented step-by-step in Visual Studio or from the command line.<
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="" src="../../../_img/index/i_branch-policies.svg" />
+                            <img width="48" height="48" alt="" src="../../_img/index/i_branch-policies.svg" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -218,65 +182,7 @@ Every task is presented step-by-step in Visual Studio or from the command line.<
 </div>
 </div>
 
-## Pull requests
 
-Pull requests combine the review and merge of your code into a single collaborative process.
-Once you're done fixing a bug or new feature in a branch, create a new pull request.
-Add the members of the team to the pull request so they can review and vote on your changes.
-
-VSTS has a [rich pull request experience](pull-requests.md) that's easy to use and scales to your needs.
-Use pull requests to review works in progress and get early feedback on changes.
-There's no commitment to merge the changes as the owner can abandon the pull request at any time.
-
-### Get your code reviewed
-
-The code review done in a pull request isn't just to find obvious bugs.
-That's what your tests are for.
-A good code review catches less obvious problems that could lead to costly issues later.
-Code reviews help protect your team from bad merges and broken builds that sap your team's productivity.
-The review catches these problems before the merge, protecting your important branches from unwanted changes.
-
-Cross-pollinate expertise and spread problem solving strategies by using a wide range of reviewers in your code reviews.
-Diffusing skills and knowledge makes your team stronger and more resilient.
-
-<ul class="panelContent cardsFTitle">
-    <li>
-        <a href="pullrequest.md">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img width="48" height="48" alt="" src="https://docs.microsoft.com/media/common/i_pull-request.svg" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Review code with pull requests</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="pull-requests.md#link-work-items">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img width="48" height="48" alt="" src="../../_img/index/i_tasks.svg" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Link work items to pull requests</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-</ul>
 
 ### Give great feedback
 
@@ -325,7 +231,7 @@ Take these suggestions and create new work items and feature branches separate f
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="" src="_img/logos/check.svg" />
+                            <img width="48" height="48" alt="" src="../git/_img/logos/check.svg" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -704,23 +610,10 @@ Learn how to perform common tasks when working with branches.
 
 
 
-## Forks
+### Forks
 
 Forks are a great way to isolate experimental, risky, or confidential changes from the original codebase. A fork is a complete copy of a repository, including all files, commits, and (optionally) branches. The new fork acts as if someone cloned the original repository, then pushed to a new, empty repository.
-After a fork has been created, new files, folders, and branches are not shared between the repositories unless a pull request carries them along. Once you're ready to share those changes, it's easy to use [pull requests](pull-requests.md) to push the changes back to the original repository.
-
-### The forking workflow
-
-When working with forks, you typically use the following workflow:
-
-1. [Create a fork](forks.md#create-fork)
-2. [Clone it locally](forks.md#clone-locally)
-3. [Make your changes locally and push them to a branch](forks.md#push-changes)
-4. [Create and complete a PR to upstream](forks.md#create-pr)
-5. [Sync your fork to the latest from upstream](forks.md#sync-fork)
-
-
-### Learn more
+After a fork has been created, new files, folders, and branches are not shared between the repositories unless a pull request carries them along. Once you're ready to share those changes, it's easy to use [pull requests](../git/pull-requests-overview.md) to push the changes back to the original repository.
 
 <ul class="panelContent cardsFTitle">
     <li>
