@@ -195,7 +195,7 @@ featureFlags:
                             </li>
                         </ul>
 <a id="devops-services-supplemental" />
-<h2>Azure DevOps Services: Shared Features</h2>
+<h2>Azure DevOps Services: Shared features</h2>
 <p>Share information and gain insights using Wikis, Dashboards, and Analytics plus other features available to all Azure DevOps Services. </p><br/>
                         <ul id="overview" class="cardsY panelContent featuredContent">
                             <li>
@@ -695,7 +695,7 @@ featureFlags:
                     </li>
                 </ul>
 <a id="additional-resources" />
-<h2>Azure DevOps Services: Additional Resources</h2>
+<h2>Azure DevOps Services: Additional resources</h2>
 <p>Release notes, technical articles, and additional information sources. </p><br/>
                         <ul id="resources" class="cardsA">
                             <li>
@@ -709,7 +709,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Features Timeline & Release Notes</h3>
+                                                    <h3>Features timeline & release notes</h3>
                                                     <p>Learn what's in development and on our roadmap as well as information about the latest features under release.</p>
                                                 </div>
                                             </div>
@@ -747,7 +747,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Azure DevOps Resource Center</h3>
+                                                    <h3>Azure DevOps resource center</h3>
                                                     <p>White papers and use cases covering migration, version control, devops, and security.</p>
                                                 </div>
                                             </div>

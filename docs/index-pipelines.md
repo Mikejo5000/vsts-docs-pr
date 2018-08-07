@@ -1,6 +1,6 @@
 ---
 title: Azure Pipelines 
-titleSuffix: Azure DevOps Services 
+titleSuffix: Azure DevOps 
 description: Test and deploy your code with continuous integration and continuous delivery with high-performance pipelines. 
 layout: HubPage 
 hide_bc: true
@@ -18,7 +18,7 @@ featureFlags:
 
 <div id="agile" class="v2">
 <div class="container">
-<a href="/vsts/index">Azure DevOps Services</a>&nbsp;&nbsp;&nbsp;Azure Pipelines
+<a href="/vsts/index">Azure DevOps</a>&nbsp;&nbsp;&nbsp;Azure Pipelines
 <h1>Azure Pipelines Documentation</h1>
 <p>Test and deploy your code with high-performance pipelines. Start small and scale up as needed.</p><br/>
 <table border="0" class="cardsA">
@@ -34,7 +34,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Azure Pipelines Get Started</h3>
+                                                    <h3>Azure Pipelines get started</h3>
                                                     <p>Sign up and get started using Azure Pipelines.</p>
                                                 </div>
                                             </div>
@@ -63,7 +63,7 @@ featureFlags:
 
 </td>
 <td width="25%">
-                               <a href="/vsts/pipelines/index">
+                               <a href="/vsts/pipelines/test/getting-started-with-continuous-testing">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -73,7 +73,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Continuous Testing</h3>
+                                                    <h3>Continuous testing</h3>
                                                     <p>Automate build-deploy-test workflows to test your changes in a fast,
                                                         scalable, and efficient manner.</p>
                                                 </div>
@@ -114,7 +114,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Package Management</h3>
+                                                    <h3>Package management</h3>
                                                     <p>Create, host, and share NuGet, npm, and Maven packages with your teams.</p>
                                                 </div>
                                             </div>
@@ -133,7 +133,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Library Assets</h3>
+                                                    <h3>Library assets</h3>
                                                     <p>Define and use shared build and release assets for a team project.</p>
                                                 </div>
                                             </div>
@@ -152,7 +152,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Hosted &amp; Private Agents</h3>
+                                                    <h3>Hosted &amp; Private agents</h3>
                                                     <p>Add agents as needed to support your cloud build processes.</p>
                                                 </div>
                                             </div>
@@ -171,7 +171,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Task Reference</h3>
+                                                    <h3>Task reference</h3>
                                                     <p>Include build, utility, test, and deploy tasks in your build and release
                                                         pipelines.</p>
                                                 </div>
@@ -183,7 +183,7 @@ featureFlags:
 </tr>
 <tr>
 <td width="25%">
-                                <a href="/vsts/organizations/settings/index#pipelines">
+                                <a href="/vsts/organizations/settings/about-settings#pipelines">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -213,169 +213,7 @@ featureFlags:
 </tr>
 </table>
 
-
-<!---
-                        <a href="#delivery">Build and Release (Pipelines)</a>
-                        <ul id="delivery" class="cardsY panelContent featuredContent">
-                            <li>
-                                <a href="/vsts/pipelines/index">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/media/common/i_download-install.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Build &amp; Release</h3>
-                                                    <p>Implement continuous integration and continuous deployment.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/vsts/pipelines/index">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="_img/index/i_continuous-testing.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Continuous Testing</h3>
-                                                    <p>Automate build-deploy-test workflows to test your changes in a fast,
-                                                        scalable, and efficient manner.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/vsts/deploy-azure/index">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/media/common/i_deploy.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Deploy to Azure</h3>
-                                                    <p>Release apps to Azure services and Azure virtual machines.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/vsts/package/index">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/media/common/i_management.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Package Management</h3>
-                                                    <p>Create, host, and share NuGet and npm packages with your teams.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/vsts/pipelines/library/index">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="_img/index/i_library.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Library Assets</h3>
-                                                    <p>Define and use shared build and release assets for a team project.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/vsts/pipelines/agents/agents">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="_img/index/i_agent.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Hosted &amp; Private Agents</h3>
-                                                    <p>Add agents as needed to support your cloud build processes.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/vsts/pipelines/tasks">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="_img/index/i_tasks.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Task Reference</h3>
-                                                    <p>Include build, utility, test, and deploy tasks in your build and release
-                                                        definitions.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/vsts/organizations/settings/index#pipelines">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/media/common/i_tools.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Settings</h3>
-                                                    <p>Configure resources for continuous integration and deployment.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>   
-                        </ul>
-     </div>
-</div>
--->
-<h3 style="padding-left:0;">Additional Resources</h3>
+<h3 style="padding-left:0;">Additional resources</h3>
 <table border="0">
 <tbody style="padding-left:0;font-size:.8rem;">
 <tr>
@@ -383,14 +221,16 @@ featureFlags:
 <a class="barLink" href="/vsts/index-all"><img src="https://docs.microsoft.com//media/common/i_library.svg" alt="" />Index</a>
 </td>
 <td width="25%">
-<a class="barLink" href="/vsts/release-notes/index"><img src="https://docs.microsoft.com/media/common/i_whats-new.svg" alt="" />Features Timeline & Release Notes</a>
+<a class="barLink" href="/vsts/release-notes/index"><img src="https://docs.microsoft.com/media/common/i_whats-new.svg" alt="" />Features timeline & release notes</a>
 </td>
 <td width="25%">
-<a class="barLink" href="/vsts/articles/index"><img src="https://docs.microsoft.com/media/common/i_article.svg" alt="" />Technical Articles</a>
+<a class="barLink" href="/vsts/articles/index"><img src="https://docs.microsoft.com/media/common/i_article.svg" alt="" />Technical articles</a>
 </td>
 <td width="25%">
-<a class="barLink"  href="https://docs.microsoft.com/en-us/azure/devops/"><img src="https://docs.microsoft.com/media/common/i_dev-ops.svg" alt="" />Azure DevOps Resource Center</a>
+<a class="barLink"  href="https://docs.microsoft.com/en-us/azure/devops/"><img src="https://docs.microsoft.com/media/common/i_dev-ops.svg" alt="" />Azure DevOps resource center</a>
 </td>
 </tr>
 </tbody>
 </table>
+</div>
+</div>

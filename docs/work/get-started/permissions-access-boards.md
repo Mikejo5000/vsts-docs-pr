@@ -119,7 +119,7 @@ The following table summarizes a subset of the default permissions assigned to t
 <tr>
 
 <td align="left">
-[Add team members](../scale/multiple-teams.md) </p>
+[Add team members](../../organizations/settings/add-teams.md) </p>
 </td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
@@ -178,9 +178,9 @@ For information about each access levels, see [About access levels](../../organi
 *	[Grant or restrict access to select features and functions](../../organizations/security/restrict-access.md)
 *	[Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md) 
 *	[Get started as a Stakeholder](../../organizations/security/get-started-stakeholder.md)  
-*	[Add another team](../scale/multiple-teams.md)  
-*	[Add a team administrator](../scale/add-team-administrator.md)
-*	[Configure team settings](../scale/manage-team-assets.md)   
+*	[Add another team](../../organizations/settings/add-teams.md)  
+*	[Add a team administrator](../../organizations/settings/add-team-administrator.md)
+*	[Configure team settings](../../organizations/settings/configure-team-settings.md)   
 
 
 
