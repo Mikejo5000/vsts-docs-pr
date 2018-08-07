@@ -59,7 +59,7 @@ Get started with a free account, share your code using Git, and track your work 
 - [Use #ID to link to work items](https://docs.microsoft.com/en-us/vsts/notifications/add-links-to-work-items?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json&view=vsts)
 - [Navigate using your account home page](account-home-pages.md)
 - [Go mobile](../project/navigation/mobile-work.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
-- [Manage your notifications](https://docs.microsoft.com/en-us/vsts/notifications/manage-personal-notifications?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json&view=vsts)
+- [Manage your notifications](https://docs.microsoft.com/en-us/vsts/notifications/howto-manage-personal-notifications?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json&view=vsts)
 - [Set your preferences](../organizations/settings/set-user-preferences.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
 - [Sign in to the web or a client](connect-team-projects.md)
 
