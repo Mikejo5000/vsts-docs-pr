@@ -6,7 +6,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid:  
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 ms.date: 08/15/2017
 ---
@@ -72,7 +73,7 @@ Sprint planning and tracking tools automatically consider days off when calculat
 
 ## Manage team alerts 
 
-Team administrators can add and modify alerts so that the team can receive email notifications as changes occur to work items, code reviews, source control files, and builds. For details, see [Manage team alerts](../../notifications/manage-team-notifications.md).
+Team administrators can add and modify alerts so that the team can receive email notifications as changes occur to work items, code reviews, source control files, and builds. For details, see [Manage team alerts](../../notifications/howto-manage-team-notifications.md).
 
 > [!NOTE]  
 > There is no UI associated with managing alert permissions. Instead, you can use **TFSSecurity** to manage alerts in TFS. 

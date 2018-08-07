@@ -58,7 +58,7 @@ When you want to track the progress of a single work item, click the ![Follow ic
 
 You'll only receive notifications when other members of your team modifies the work item, such as adding to the discussion, changing a field value, or adding an attachment. 
 
-Notifications are sent to your preferred email address, which [you can change from your account preferences](../../notifications/change-email-address.md)
+Notifications are sent to your preferred email address, which [you can change from your account preferences](../../notifications/howto-change-email-address.md)
 
 To stop following changes, click the ![Following icon](../_img/icons/following-icon.png) icon.
  
@@ -71,7 +71,7 @@ To track the progress of a single pull request, click the ![Follow icon](../_img
 
 You'll only receive notifications when other members of your team modifies the PR, such as adding to the discussion or adding an attachment. 
 
-Notifications are sent to your preferred email address, which [you can change from your account preferences](../../notifications/change-email-address.md).  
+Notifications are sent to your preferred email address, which [you can change from your account preferences](../../notifications/howto-change-email-address.md).  
 
 To stop following changes, open the PR context menu and click the ![Following icon](../_img/icons/following-icon.png) icon. 
 
@@ -105,13 +105,13 @@ You can also view and manage work that you're following from your home pages. To
 
 ## Related articles  
 
-- [Manage personal notifications](../../notifications/manage-personal-notifications.md)  
-- [Set team notifications](../../notifications/manage-team-notifications.md)  
+- [Manage personal notifications](../../notifications/howto-manage-personal-notifications.md)  
+- [Set team notifications](../../notifications/howto-manage-team-notifications.md)  
 - [View and update work items via the mobile work item form](../../project/navigation/mobile-work.md)  
 
 
 ###Q: Can I add someone else to follow a work item or PR?
 
-**A:** You can't add another team member to follow a work item or pull request at this time. You can subscribe them to get notified based on select criteria, such as when a work item is create or modified, or a pull request is created. For details, see [Manage team notifications](../../notifications/manage-team-notifications.md).	
+**A:** You can't add another team member to follow a work item or pull request at this time. You can subscribe them to get notified based on select criteria, such as when a work item is create or modified, or a pull request is created. For details, see [Manage team notifications](../../notifications/howto-manage-team-notifications.md).	
 
 ::: moniker-end

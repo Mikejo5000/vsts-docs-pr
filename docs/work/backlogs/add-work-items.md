@@ -165,7 +165,7 @@ When you want to track the progress of a single work item, click the ![Follow ic
 
 You'll only receive notifications when other members of your team modifies the work item, such as adding to the discussion, changing a field value, or adding an attachment. 
 
-Notifications are sent to your preferred email address, which [you can change from your account preferences](../../notifications/change-email-address.md).  
+Notifications are sent to your preferred email address, which [you can change from your account preferences](../../notifications/howto-change-email-address.md).  
 
 To stop following changes, click the ![Following icon](../../work/_img/icons/following-icon.png)  icon.
  
@@ -189,7 +189,7 @@ From the **Work** hub you can add the most common types of work items. To quickl
 For descriptions of each field and work item form control, see [Work item field index](../work-items/guidance/work-item-field.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json ) and [Work item form controls](../work-items/work-item-form-controls.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json ).  
 
 
-Once you've added several work items, you can use additional features to get [notified of changes](../../notifications/manage-personal-notifications.md), [create queries](../track/using-queries.md), [define status and trend charts](../../report/dashboards/charts.md), plus more.  
+Once you've added several work items, you can use additional features to get [notified of changes](../../notifications/howto-manage-personal-notifications.md), [create queries](../track/using-queries.md), [define status and trend charts](../../report/dashboards/charts.md), plus more.  
 
 For additional clients that you can use to add work items, see [Clients that support tracking work items](../../user-guide/tools.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json).
 
