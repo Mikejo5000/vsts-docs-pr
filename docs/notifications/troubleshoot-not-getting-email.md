@@ -1,5 +1,5 @@
 ---
-title: Why am I not receiving notification emails? Troubleshooting VSTS and TFS
+title: Why am I not receiving notification emails?
 titleSuffix: VSTS & TFS 
 description: Discover why you aren't receiving emails from your VSTS or TFS notification subscriptions and fix it
 ms.technology: devops-collab

@@ -1,5 +1,5 @@
 ---
-title: Contacting support for notifications in VSTS and TFS
+title: Contacting support for notifications
 titleSuffix: VSTS & TFS 
 description: Open a support ticket for notifications in Visual Studio Team Services or Team Foundation Server  
 ms.technology: devops-collab
