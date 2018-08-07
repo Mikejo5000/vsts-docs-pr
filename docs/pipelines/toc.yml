@@ -5,13 +5,13 @@
   - name: About Build and Release
     href: overview.md
   - name: Get started guide
-    href: get-started/new-user-pipelines.md
+    href: get-started/pipelines-get-started.md
   - name: Why Use Pipelines?
     href: get-started/why-use-pipelines.md
   - name: Quickstart
     href: get-started-designer.md
-  - name: Basic Concepts
-    href: get-started/basic-pipelines-concepts.md
+  - name: Key Concepts
+    href: get-started/key-pipelines-concepts.md
 - name: Quickstarts
   items:
   - name: Build a repo with YAML
