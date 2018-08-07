@@ -21,7 +21,7 @@ monikerRange: '>= tfs-2017'
 > This topic applies to VSTS and to TFS 2017.1 and later versions. If you work from an on-premises TFS 2017 or ealier versions, see [Set alerts, get notified when changes occur](../work/track/alerts-and-notifications.md). For on-premises TFS, [you must configure an SMTP server](/tfs/server/admin/setup-customize-alerts) in order for team members to see the Notifications option from their account menu and to receive notifications. 
 
 ## Manage the default delivery setting
-Choose to allow or block delivery of emails for all subscriptions owned by a team or a group. This is a default setting which only applies if the team or group has not excplictly set the option.
+Choose to allow or block delivery of emails for all subscriptions owned by a team or a group. This is a default setting which applies only if the team or group has not excplictly set the option.
 
 1. Navigate to the account notifications setings hub.  Click [here](navigating-the-ux.md#navigating-to-the-account-level-notification-hub) to learn how.
 1. Click the *Settings* tab.
