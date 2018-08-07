@@ -15,7 +15,7 @@ monikerRange: 'vsts'
 
 # What is Azure Repos?
 
-Host and manage your code in Azure Repos. Whether your software project is large or small, using version control as soon as possible is a good idea. Version control systems are software that help you track changes you make in your code over time. As you edit your code, you tell the version control system to take a snapshot of your files. The version control system saves that snapshot permanently so you can recall it later if you need it. Use version control to save your work and coordinate code changes across your team. Even if you're just a single developer, version control helps you stay organized as you fix bugs and develop new features. Version control keeps a history of your development so that you can review and even rollback to any version of your code with ease.
+Azure Repos is a set of version control tools you can use to manage your code. Whether your software project is large or small, using version control as soon as possible is a good idea. Version control systems are software that help you track changes you make in your code over time. As you edit your code, you tell the version control system to take a snapshot of your files. The version control system saves that snapshot permanently so you can recall it later if you need it. Use version control to save your work and coordinate code changes across your team. Even if you're just a single developer, version control helps you stay organized as you fix bugs and develop new features. Version control keeps a history of your development so that you can review and even rollback to any version of your code with ease.
 
 Azure Repos provides two types of version control:
 
@@ -27,7 +27,6 @@ Azure Repos provides two types of version control:
 Git is the most commonly used version control system today and is quickly becoming the standard for version control. Git is a distributed version control system, meaning your local copy of code is a complete version control repository. These fully functional local repositories make it is easy to work offline or remotely. You commit your work locally, and then sync your copy of the repository with the copy on the server.
 
 Git in Azure Repos is standard Git. You can use the clients and tools of your choice, such as Git for Windows, Mac, third part Git services, and tools such as Visual Studio and Visual Studio Code.
-
 
 ### Connect your favorite development environment
 
@@ -199,7 +198,7 @@ Git in Azure Repos is standard Git. You can use the clients and tools of your ch
 ### Protect branches with policies
 
 There are a few critical branches in your repo that the team relies on always being in good shape, such as your `master` branch.
-[Require pull requests](branch-policies.md) to make any changes on these branches.
+[Require pull requests](../git/branch-policies.md) to make any changes on these branches.
 Developers pushing changes directly to the protected branches will have their pushes rejected.
 
 Add additional conditions to your pull requests to enforce a higher level of code quality in your key branches.
@@ -341,8 +340,6 @@ Pull requests and branch policies enable teams to enforce many best practices re
     </li>
 </ul>
 
-
-
 ### Forks
 
 Forks are a great way to isolate experimental, risky, or confidential changes from the original codebase. A fork is a complete copy of a repository, including all files, commits, and (optionally) branches. The new fork acts as if someone cloned the original repository, then pushed to a new, empty repository.
@@ -371,7 +368,7 @@ After a fork has been created, new files, folders, and branches are not shared b
 
 ## TFVC
 
-Team Foundation Version Control (TFVC) is a centralized version control system. Typically, team members have only one version of each file on their dev machines. Historical data is maintained only on the server. Branches are path-based and created on the server.
+Azure Repos also supports Team Foundation Version Control (TFVC). TFVC is a centralized version control system. Typically, team members have only one version of each file on their dev machines. Historical data is maintained only on the server. Branches are path-based and created on the server.
 
 Get started by creating a project, configuring your workspace, and reviewing and sharing your code. You can use any one of these clients or IDEs: 
 
