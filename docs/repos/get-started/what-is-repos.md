@@ -32,21 +32,22 @@ Git in Azure Repos is standard Git. You can use the clients and tools of your ch
 
 <div class="col-sm-6 col-md-6">
 
-<p>Connect your favorite development environment to VSTS to access your repos and manage your work.
-VSTS IDE integrations are available for [Visual Studio](../../organizations/accounts/set-up-vs.md), 
+<p>Connect your favorite development environment to Azure Repos to access your repos and manage your work. Azure Repos IDE integrations are available for: [Visual Studio](../../organizations/accounts/set-up-vs.md), 
 [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vsts.team), [Eclipse](/vsts/java/download-eclipse-plug-in), 
 and [IntelliJ](/vsts/java/download-intellij-plug-in).</p>
 
-
-<p>New to Git? Learn how to share code with Azure Repos with the following getting started guides:</p>
 </div>
 </div>
 
 <!--- All images are Placeholder --> 
 <!-- Converting to icon48 format, this gets cleaner in YAML -->
-<div class="ico48Case halfStack"><div class="ico48Link"><a href="create-new-repo.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/common/i_web.svg"><span>Web</span></a></div><div class="ico48Link"><a href="share-your-code-in-git-vs-2017.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_visual-studio.svg"><span>Visual Studio</span></a></div><div class="ico48Link"><a href="share-your-code-in-git-cmdline.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/common/i_cligeneric.svg"><span>Command-line</span></a></div><div class="ico48Link"><a href="share-your-code-in-git-xcode.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_xcode.svg"><span>Xcode</span></a></div><div class="ico48Link"><a href="share-your-code-in-git-eclipse.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_eclipse.svg"><span>Eclipse</span></a></div>
+<div class="ico48Case halfStack">
+<div class="ico48Link"><a href="https://marketplace.visualstudio.com/items?itemName=ms-vsts.team"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_vs-code.svg"><span>Visual Studio Code</span></a></div>
+<div class="ico48Link"><a href="../git/share-your-code-in-git-vs-2017.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_visual-studio.svg"><span>Visual Studio</span></a></div>
+<div class="ico48Link"><a href="../git/share-your-code-in-git-xcode.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_xcode.svg"><span>Xcode</span></a></div>
+<div class="ico48Link"><a href="../git/share-your-code-in-git-eclipse.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_eclipse.svg"><span>Eclipse</span></a></div>
 
-<div class="ico48Link"><a href="create-repo-intellij.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/en-us/media/logos/logo_intellij.svg"><span>IntelliJ</span></a></div>
+<div class="ico48Link"><a href="../git/create-repo-intellij.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/en-us/media/logos/logo_intellij.svg"><span>IntelliJ</span></a></div>
 
 </div>
 
