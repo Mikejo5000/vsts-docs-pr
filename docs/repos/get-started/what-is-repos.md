@@ -28,11 +28,8 @@ Git is the most commonly used version control system today and is quickly becomi
 
 Git in Azure Repos is standard Git. You can use the clients and tools of your choice, such as Git for Windows, Mac, third part Git services, and tools such as Visual Studio and Visual Studio Code.
 
-
 <div class="row">
-<div class="col-sm-6 col-md-6">
-![Use your favorite IDE with VSTS and Git](_img/overview/get-started-favorite-ide.png)
-</div>
+
 <div class="col-sm-6 col-md-6">
 
 <p>Connect your favorite development environment to VSTS to access your repos and manage your work.
@@ -152,7 +149,7 @@ Every task is presented step-by-step in Visual Studio or from the command line.<
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="" src="../../_img/index/i_tasks.svg" />
+                            <img width="48" height="48" alt="" src="../git/_img/index/i_tasks.svg" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -170,7 +167,7 @@ Every task is presented step-by-step in Visual Studio or from the command line.<
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="" src="../../_img/index/i_branch-policies.svg" />
+                            <img width="48" height="48" alt="" src="../git/_img/index/i_branch-policies.svg" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -206,7 +203,7 @@ Every task is presented step-by-step in Visual Studio or from the command line.<
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="" src="../../_img/index/i_branch-policies.svg" />
+                            <img width="48" height="48" alt="" src="../git/_img/index/i_branch-policies.svg" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -269,7 +266,7 @@ Diffusing skills and knowledge makes your team stronger and more resilient.
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="" src="../../_img/index/i_tasks.svg" />
+                            <img width="48" height="48" alt="" src="../git/_img/index/i_tasks.svg" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -359,7 +356,7 @@ A clean build of the merged code and approval from multiple reviewers are some e
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="" src="../../_img/index/i_branch-policies.svg" />
+                            <img width="48" height="48" alt="" src="../git/_img/index/i_branch-policies.svg" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -523,7 +520,7 @@ A strategy that extends these concepts and avoids contradictions will result in 
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="" src="../../_img/index/i_branch-policies.svg" />
+                            <img width="48" height="48" alt="" src="../git/_img/index/i_branch-policies.svg" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -620,7 +617,7 @@ Learn how to perform common tasks when working with branches.
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="" src="../../_img/index/i_branch-policies.svg" />
+                            <img width="48" height="48" alt="" src="../git/_img/index/i_branch-policies.svg" />
                         </div>
                     </div>
                     <div class="cardText">
