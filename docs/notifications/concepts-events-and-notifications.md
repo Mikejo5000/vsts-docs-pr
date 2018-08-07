@@ -28,7 +28,7 @@ Events are raised in VSTS when changes occur within the system.  Actions like cr
 A notification subscription is associated with a [supported event type](oob-supported-event-types.md) and includes a set of filters which are used to match events with the subscription. For example, a subscription for a work item created event might include a filter which matches only the work item type `Bug`, or a subscription for a pull request created event might include a filter for a specific `Repositiry and branch`.
 
 ### Default email subscriptions
-Many useful email subscriptions are pre-defined and enabled by default in the system. These are considered `Default subscriptions`.  Default subscriptions are intended to provide the out of box support for the most common notification scenarios.  The list of default subscription can be found [here](oob-build-in-notifications.md).
+Many useful email subscriptions are pre-defined and enabled by default in the system. These are considered `Default subscriptions`.  Default subscriptions are intended to provide the out of box support for the most common notification scenarios.  The list of default subscription can be found [here](oob-built-in-notifications.md).
 
 An account or team adminstrator can choose which of the default subscriptions to make available to their users.  Click [here](howto-manage-team-notifications.md) to learn how to manage team notifications, or [here](howto-manage-account-notifications.md) to learn how to manage account level notifications.
 
@@ -37,7 +37,7 @@ Users can choose to opt-out of any default subscription while other team members
 ### Custom email subscriptions
 Custom email subscriptions can be created by account or team administrators which appy to all members of the account or team.  Click [here](howto-manage-team-notifications.md) to learn how to manage team notifications, or [here](howto-manage-account-notifications.md) to learn how to manage account level notifications.
 
-Individuals can also create custom subscriptions which apply only to them. Click [here](howto-manage-personal-subscriptions.md) to learn more about managing personal subscriptions.
+Individuals can also create custom subscriptions which apply only to them. Click [here](howto-manage-personal-notifications.md) to learn more about managing personal subscriptions.
 
 ### Custom service hook subscriptions
 Service hooks subscriptions are used to integrate with third party services.  When a VSTS event matches a service hook subscription, a notification is delivered to the third part service.  For example, when a VSTS build completes a notification can be delivered to a Slack channel with links back to the build artifact in VSTS.  To learn more see [Integrating with Third Party Services](howto-integrate-third-party-services.md)
