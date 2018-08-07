@@ -341,7 +341,8 @@ steps:
     testResultsFiles: '**/*.trx' 
     searchFolder: '$(System.DefaultWorkingDirectory)'
 ```
-The test results published, can be viewed in [Tests Tab](https://docs.microsoft.com/en-us/vsts/pipelines/test/review-continuous-test-results-after-build?view=vsts) under build.
+The test results published, can be viewed under [Tests Tab](https://docs.microsoft.com/en-us/vsts/pipelines/test/review-continuous-test-results-after-build?view=vsts) in build.
+
 ::: moniker-end
 
 ::: moniker range="< vsts"
@@ -353,21 +354,22 @@ YAML builds are not yet available on TFS.
 1. Select **Tasks** in the build pipeline, and then remove all the tasks.
 
 1. Add the following **Docker** tasks
-* Add a **Docker** task, and then for **Action** select **Build an image**.
-* Add a **Docker** task, and then for **Action** select **Run a Docker command** with the specified command to start the container. 
-```command
-run --name <container-name> --rm -d <dockerid>/<image-name>:$BUILD_BUILDID
-```
-* Add a **Docker** task, and then for **Action** select **Run a Docker command** with the specified command to copy test results from the container.
-```command
-cp <container-name>:app/testresults.trx $System.DefaultWorkingDirectory
-```
-* Add a **Docker** task, and then for **Action** select **Run a Docker command** with the specified command to stop the container.
-```command
-stop <container-name>
-```
+    * Add a **Docker** task, and then for **Action** select **Build an image**.
+    * Add a **Docker** task, and then for **Action** select **Run a Docker command** with the specified command to start the container. 
+        ```command
+        run --name <container-name> --rm -d <dockerid>/<image-name>:$BUILD_BUILDID 
+        ```
+    * Add a **Docker** task, and then for **Action** select **Run a Docker command** with the specified command to copy test results from the container.
+        ```command
+        cp <container-name>:app/testresults.trx $System.DefaultWorkingDirectory 
+        ```
+    * Add a **Docker** task, and then for **Action** select **Run a Docker command** with the specified command to stop the container.
+        ```command
+        stop <container-name>
+        ```
 
 1. Add Publish Test Results task to publish the test results. 
+
 
 ---
 
