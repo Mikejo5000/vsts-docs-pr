@@ -333,6 +333,9 @@ Select if you want to limit how far back in history to download. Effectively thi
 
 In these cases this option can help you conserve network and storage resources. It might also save time. The reason it doesn't always save time is because in some situations the server might need to spend time calculating the commits to download.
 
+> [!NOTE]
+> If people push changes frequently to the repository that you want to leverage shallow fetch in your build definition, you might want to increase the fetch depth a reasonable value. Your build may fail when your fetch depth is too small and there are changes pushed to the branch you are trying to build between build got queued and agent pick up the job.
+
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017"
