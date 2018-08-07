@@ -355,20 +355,20 @@ YAML builds are not yet available on TFS.
 
 1. Add the following **Docker** tasks
     * Add a **Docker** task, and then for **Action** select **Build an image**.
-    * Add a **Docker** task, and then for **Action** select **Run a Docker command** with the specified command to start the container. 
+    * Add a **Docker** task, and then for **Action** select **Run a Docker command** with the specified command, to start the container. 
         ```command
         run --name <container-name> --rm -d <dockerid>/<image-name>:$BUILD_BUILDID 
         ```
-    * Add a **Docker** task, and then for **Action** select **Run a Docker command** with the specified command to copy test results from the container.
+    * Add a **Docker** task, and then for **Action** select **Run a Docker command** with the specified command, to copy test results from the container.
         ```command
         cp <container-name>:app/testresults.trx $System.DefaultWorkingDirectory 
         ```
-    * Add a **Docker** task, and then for **Action** select **Run a Docker command** with the specified command to stop the container.
+    * Add a **Docker** task, and then for **Action** select **Run a Docker command** with the specified command, to stop the container.
         ```command
         stop <container-name>
         ```
 
-1. Add Publish Test Results task to publish the test results. 
+1. Add **Publish Test Results** task to publish the test results. 
 
 
 ---
