@@ -10,8 +10,6 @@
   items:
   - name: Events and notifications
     href: concepts-events-and-notifications.md
-  - name: Subscriptions
-    href: concepts-subscriptions.md
   - name: Managing subscriptions
     href: concepts-managing-subscriptions.md
   - name: Email delivery options
