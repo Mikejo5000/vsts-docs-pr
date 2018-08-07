@@ -77,6 +77,11 @@ steps:
     docker push $(dockerId)/dotnetcore-sample:$BUILD_BUILDID
   env:
     pswd: $(dockerPassword)
+- task: PublishTestResults@2
+  inputs:
+    testRunner: VSTest
+    testResultsFiles: '**/*.trx' 
+    searchFolder: '$(System.DefaultWorkingDirectory)'
 ```
 
 If you set up an **Azure container registry** and would like to push the image to that registry, then replace the contents of your .vsts-ci.yml file with the following:
@@ -97,6 +102,11 @@ steps:
     docker push $(dockerId).azurecr.io/dotnetcore-sample:$BUILD_BUILDID
   env:
     pswd: $(dockerPassword)
+- task: PublishTestResults@2
+  inputs:
+    testRunner: VSTest
+    testResultsFiles: '**/*.trx' 
+    searchFolder: '$(System.DefaultWorkingDirectory)'
 ```
 
 Push the above change to master branch in your repository.
@@ -271,15 +281,14 @@ In this approach, you use the build pipeline to orchestrate building your code, 
 
 * Leverage tasks (either built-in tasks or those you get from the Marketplace) to define the process used to build and test your app.
 * Run tasks that require authentication via service connections (for example: authenticated NuGet or npm feeds).
-* Publish test results.
 
 To create an image, you run a `docker build` command at the end of your build pipeline. Your _Dockerfile_ contains the instructions to copy the results of your build into the container.
 
-The instructions in the [above example](#example) demonstrate this approach.
+The instructions in the [above example](#example) demonstrate this approach. The test results published in the example, can be viewed under [Tests Tab](https://docs.microsoft.com/en-us/vsts/pipelines/test/review-continuous-test-results-after-build?view=vsts) in build.
 
 ### Build and test in your Dockerfile
 
-In this approach, you use your _Dockerfile_ to build your code and run tests. The build pipeline has a single step to run `docker build`. The rest of the steps are orchestrated by the Docker build process. It's common to use a [multi-stage Docker build](https://docs.docker.com/develop/develop-images/multistage-build/) in this approach. The advantage of this approach is that your build process is entirely configured in your _Dockerfile_. This means your build process is portable from the development machine to any build system. One disadvantage is that you can't leverage VSTS and TFS features such as tasks, phases, or test analytics.
+In this approach, you use your _Dockerfile_ to build your code and run tests. The build pipeline has a single step to run `docker build`. The rest of the steps are orchestrated by the Docker build process. It's common to use a [multi-stage Docker build](https://docs.docker.com/develop/develop-images/multistage-build/) in this approach. The advantage of this approach is that your build process is entirely configured in your _Dockerfile_. This means your build process is portable from the development machine to any build system. One disadvantage is that you can't leverage VSTS and TFS features such as tasks or phases.
 
 To use this approach for the sample app, create a _Dockerfile_ at the root of your repo with the following content:
 
@@ -294,13 +303,14 @@ COPY . ./
 # dotnet commands to build, test, and publish
 RUN dotnet restore
 RUN dotnet build -c Release
-RUN dotnet test dotnetcore-tests/dotnetcore-tests.csproj -c Release
+RUN dotnet test dotnetcore-tests/dotnetcore-tests.csproj -c Release --logger "trx;LogFileName=testresults.trx"
 RUN dotnet publish -c Release -o out
 
 # Second stage - Build runtime image
 FROM microsoft/aspnetcore:2.0
 WORKDIR /app
 COPY --from=build-env /app/dotnetcore-sample/out .
+COPY --from=build-env /app/dotnetcore-tests/TestResults .
 ENTRYPOINT ["dotnet", "dotnetcore-sample.dll"]
 ```
 
@@ -314,10 +324,24 @@ Create a `.vsts-ci-yml` file at the root of your repo with the following content
 
 ```yaml
 queue: 'Hosted Linux Preview'
-steps:
-  - script: docker build -t <dockerid>/<image-name>:$BUILD_BUILDID . # include other options to meet your needs
-```
+variables:
+  dockerId: adventworks  # change this to match your Docker Id
+  imageName: dotnetcore-sample
+  containerName: dotnetcore-sampleapp
 
+steps:
+- script: |
+    docker build -t $(dockerId)/$(imageName):$BUILD_BUILDID . # include other options to meet your needs
+    docker run --name $(containerName) --rm -d $(dockerId)/$(imageName):$BUILD_BUILDID
+    docker cp $(containerName):app/testresults.trx .
+    docker stop $(containerName)
+- task: PublishTestResults@2
+  inputs:
+    testRunner: VSTest
+    testResultsFiles: '**/*.trx' 
+    searchFolder: '$(System.DefaultWorkingDirectory)'
+```
+The test results published, can be viewed in [Tests Tab](https://docs.microsoft.com/en-us/vsts/pipelines/test/review-continuous-test-results-after-build?view=vsts) under build.
 ::: moniker-end
 
 ::: moniker range="< vsts"
@@ -328,7 +352,22 @@ YAML builds are not yet available on TFS.
 
 1. Select **Tasks** in the build pipeline, and then remove all the tasks.
 
-1. Add a **Docker** task, and then for **Action** select **Build an image**.
+1. Add the following **Docker** tasks
+* Add a **Docker** task, and then for **Action** select **Build an image**.
+* Add a **Docker** task, and then for **Action** select **Run a Docker command** with the specified command to start the container. 
+```command
+run --name <container-name> --rm -d <dockerid>/<image-name>:$BUILD_BUILDID
+```
+* Add a **Docker** task, and then for **Action** select **Run a Docker command** with the specified command to copy test results from the container.
+```command
+cp <container-name>:app/testresults.trx $System.DefaultWorkingDirectory
+```
+* Add a **Docker** task, and then for **Action** select **Run a Docker command** with the specified command to stop the container.
+```command
+stop <container-name>
+```
+
+1. Add Publish Test Results task to publish the test results. 
 
 ---
 
