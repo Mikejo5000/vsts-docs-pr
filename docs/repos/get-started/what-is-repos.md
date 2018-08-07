@@ -9,6 +9,7 @@ ms.author: sdanie
 author: steved0x
 ms.date: 09/05/2018
 ms.topic: overview
+layout: LandingPage
 monikerRange: 'vsts'
 ---
 
