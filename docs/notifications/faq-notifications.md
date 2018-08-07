@@ -37,7 +37,7 @@ Previously each recipient would receive their own individually-addressed email, 
 ## Related notes
 
 - [About notifications](about-notifications.md)
-- [Manage personal notifications](howto-manage-team-notifications.md) 
+- [Manage personal notifications](howto-manage-team-subscriptions.md) 
 - [Unsubscribe from a notification](unsubscribe-default-notification.md) 
 
 

@@ -1,6 +1,6 @@
 # Not getting an email
 
-An email is generated when an [event](oob-supported-event-types.md) occurs within VSTS which matches a notification subscription.  See [overview](./about-notifications) for more information about notification subscriptions.
+An email is generated when an [event](oob-supported-event-types.md) occurs within VSTS which matches a notification subscription.  See [overview](about-notifications.md) for more information about notification subscriptions.
 
 If you're not receiving an expected notification email, it could be for one of the following reasons
 
@@ -23,7 +23,7 @@ Navigate to your personal subscriptions and locate the subscription which you fe
 ## Step 3: Ensure the subscription is enabled
 If the subscription is greyed-out in the user interface, then it is disabled.
 
-Default subscription become disabled when an administrartor opts-out at the account or team level, or if an individual opts-out in their personal subscriptions. Custom subcriptions become disabled when an administrator disables the subscription at the account or team level, or an individual disables a personal custom subscription.  Click [here](howto-disable-subscriptions) to learn more about outing-out or disabling subscriptions.
+Default subscription become disabled when an administrartor opts-out at the account or team level, or if an individual opts-out in their personal subscriptions. Custom subcriptions become disabled when an administrator disables the subscription at the account or team level, or an individual disables a personal custom subscription.  Click [here](howto-disable-subscriptions.md) to learn more about outing-out or disabling subscriptions.
 
 ## Step 4: Closely inpsect the subscription filter conditions
 An email is only generated if a VSTS event matches all the filter conditions of the subscription. View the filter conditions by clicking the subscription link in the subscription user interface.  You should be able to view the filter conditions even if you don't have permision to change them.  Closely instect all filter conditions to see if they matched the VSTS event.
@@ -32,7 +32,7 @@ An email is only generated if a VSTS event matches all the filter conditions of 
 The `Skip initiator` checkbox option on a subscription will cause the initiator of the VSTS event to be excluded from the recipient list of an email generated, while all others will receive the event.  For example, consider a subscription for a work item changed event.  You can choose `Skip initiator` to avoid being emailed for changes you make to the work item.  Click [here](howto-exclude-self-from-email.md) to learn more about this option.
 
 ## Step 6: Check "Do not deliver" setting for the account
-Navigate to the account level notifications hub and click the `Settings` tab (click [here](howto-manage-account-notification-settings.md) to learn how).  If delivery setting is set to `Do not deliver`, then all team or groups that don't have explicit delivery settings will inherit this value.  This setting alone doesn't necessarily indicate an email wasn't delivered but it could be.  Continue with the next step to determine if a group or team delivery setting is inheriting this value and blocking delivery to your group or team.
+Navigate to the account level notifications hub and click the `Settings` tab (click [here](howto-manage-account-notifications-settings.md) to learn how).  If delivery setting is set to `Do not deliver`, then all team or groups that don't have explicit delivery settings will inherit this value.  This setting alone doesn't necessarily indicate an email wasn't delivered but it could be.  Continue with the next step to determine if a group or team delivery setting is inheriting this value and blocking delivery to your group or team.
 
 ## Step 7: Check "Do not deliver" setting for your team or group
  If the team or group define a delivery setting for "Deliver to individual members", it's still possible that the team contains other groups which have a different delivery setting.  Click [here](concepts-group-expansion-for-email.md) to learn team membership is expaneded and how some members of the team could receive an email while others do not.
