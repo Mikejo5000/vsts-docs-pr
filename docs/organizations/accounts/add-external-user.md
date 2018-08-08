@@ -34,7 +34,7 @@ If you’re an Azure Active Directory (Azure AD)-backed Visual Studio Team Servi
 
 [!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
-### [New navigation](#tab/new-nav)
+# [New navigation](#tab/new-nav)
 
 1. Sign in to your VSTS organization (```https://{yourorganization}.visualstudio.com```).
 
@@ -53,7 +53,7 @@ If you’re an Azure Active Directory (Azure AD)-backed Visual Studio Team Servi
 
 5. Advise the external user to locate the email that they received from VSTS and go to the redemption URL. The external user must navigate through an Azure B2B redemption experience, which will add the user to your organization.
 
-### [Previous navigation](#tab/previous-nav)
+# [Previous navigation](#tab/previous-nav)
 
 1. Sign in to your VSTS organization (```https://{yourorganization}.visualstudio.com```).
 
