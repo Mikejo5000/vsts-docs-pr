@@ -34,11 +34,11 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/DevOpsIconRepos40.svg" alt="" />
+                                                        <img src="_img/index/DevOpsIconBoards40.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3><a href="/vsts/repos/get-started">Azure Repos get started</a></h3>
+                                                    <h3><a href="/vsts/work/get-started">Start using Azure Boards</a></h3>
                                                 </div>
                                             </div>
                                         </div>
@@ -50,11 +50,11 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/DevOpsIconBoards40.svg" alt="" />
+                                                        <img src="_img/index/DevOpsIconRepos40.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3><a href="/vsts/work/get-started">Azure Boards get started</a></h3>
+                                                    <h3><a href="/vsts/repos/get-started">Start using Azure Repos</a></h3>
                                                 </div>
                                             </div>
                                         </div>
@@ -70,7 +70,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3><a href="/vsts/pipelines/get-started">Azure Pipelines get started</a></h3>
+                                                    <h3><a href="/vsts/pipelines/get-started">Start using Azure Pipelines</a></h3>
                                                 </div>
                                             </div>
                                         </div>
@@ -86,7 +86,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3><a href="/vsts/user-guide/index">Azure DevOps Services get started</a></h3>
+                                                    <h3><a href="/vsts/user-guide/index">Start using Azure DevOps Services</a></h3>
                                                 </div>
                                             </div>
                                         </div>
@@ -133,7 +133,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/DevOpsIconBoards40.svg" alt="" />
+                                                        <img src="_img/index/DevOpsIconBoards96.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -152,7 +152,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/DevOpsIconRepos40.svg" alt="" />
+                                                        <img src="_img/index/DevOpsIconRepos96.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -171,7 +171,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/DevOpsIconPipelines40.svg" alt="" />
+                                                        <img src="_img/index/DevOpsIconPipelines96.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -192,7 +192,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/DevOpsIconArtifacts40.svg" alt="" />
+                                                        <img src="_img/index/DevOpsIconArtifacts96.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -211,7 +211,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img//index/DevOpsIconTestPlans40.svg" alt="" />
+                                                        <img src="_img//index/DevOpsIconTestPlans96.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
