@@ -27,7 +27,7 @@ If you're not receiving an expected notification email, it could be for one of t
 Please perform the following step to determine if any of these resolve the issue.
 
 ## Step 1: Check the notification statistics for unexpectedly high volume
-Poorly defined subscription filters or duplicate subscriptions might cause an unexpected high volume of notifications.  Click [here](howto-view-acount-notification-statistics) to learn how to view and analyze notification statistics.
+Poorly defined subscription filters or duplicate subscriptions might cause an unexpected high volume of notifications.  Click [here](howto-view-acount-notification-statistics.md) to learn how to view and analyze notification statistics.
 
 ## Contact customer support
 If you're not able to resolve the issue with the steps above, consider contacting [customer support](troubleshoot-contact-support.md)
