@@ -48,6 +48,8 @@
     href: troubleshoot-not-getting-email.md
   - name: Why am I getting an this email
     href: troubleshoot-unexpected-email.md
+  - name: Why are my emails delayed
+    href: troublehoot-delayed-email.md
   - name: Subscription logging
     href: troubleshoot-subscription-logging.md
   - name: Contacting support

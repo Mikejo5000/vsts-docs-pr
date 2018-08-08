@@ -27,5 +27,6 @@ If you've reviewed the troubleshooting sections and can't resolve your issue, pl
 1. Are you getting other types of emails?
 1. Is it just you or are others also not getting emails they expect?
 1. Can you supply IDs such as work item, build, or pull request IDs of recent events and an approximate time of the event?
+1. Can you forward a sample email of a delayed or unexpected email? If not, copy and provide the URL from the View Result button on an email.
 
 It's best to have a recent event for the email or service hook notification in question. Full details about the event and notification delivery are retained for a few days and are beneficial when resolving a notification issue. You might be asked to reproduce the issue with a new event and provide the time/date of the event and IDs (build, pull request, etc) associated with the event.
