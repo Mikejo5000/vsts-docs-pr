@@ -1,7 +1,7 @@
 ---
-title: View notifications statistics for account
+title: View account-level notifications statistics
 titleSuffix: VSTS & TFS 
-description: View notifications statistics for account
+description: View account-level notifications statistics in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)
 ms.technology: devops-collab
 ms.prod: devops
 ms.manager: douge
@@ -13,7 +13,7 @@ ms.date: 08/07/2018
 monikerRange: '>= tfs-2017'
 ---
 
-# Analyze notifications statistics for account
+# Analyze account-level notifications statistics
 
 <b>VSTS | TFS 2018 | TFS 2017.1 | [Previous versions](../work/track/alerts-and-notifications.md)</b> 
 

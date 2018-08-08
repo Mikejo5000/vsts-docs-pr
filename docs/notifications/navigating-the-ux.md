@@ -1,7 +1,7 @@
 ---
 title: Navigating the notifications UX
 titleSuffix: VSTS & TFS 
-description: Navigating and exploring the notification hubs.  
+description: Navigate and explore the notification hubs in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.technology: devops-collab
 ms.prod: devops
 ms.manager: douge
