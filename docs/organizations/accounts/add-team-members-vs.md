@@ -41,7 +41,7 @@ To add members to projects, you need [project administrator](../security/set-pro
 
 [!INCLUDE [temp](../../_shared/new-navigation.md)]  
 
-## [New navigation](#tab/new-nav)
+# [New navigation](#tab/new-nav)
 
 1. Sign in to your VSTS organization (`https://<yourorganization>.visualstudio.com`) as *project administrator*, *project collection administrator*, or *organization owner*.
 
@@ -61,7 +61,7 @@ To add members to projects, you need [project administrator](../security/set-pro
 
 ---
 
-## [Previous navigation](#tab/previous-nav)
+# [Previous navigation](#tab/previous-nav)
 
 1. Sign in to your VSTS organization (`https://<yourorganization>.visualstudio.com`) as *project administrator*, *project collection administrator*, *or organization owner*.
 
