@@ -41,7 +41,7 @@ When you install TFS, the computer name where you install TFS is associated with
 Both the operating system and Active Directory impose certain restrictions on computer names as described in these articles:  
 *	[Rename the Computer](https://msdn.microsoft.com/library/dd894434.aspx)  
 *	[Rename a Computer that Hosts a Stand-Alone Instance of SQL Server](https://msdn.microsoft.com/library/ms143799.aspx)  
-*	[Windows Server Active Directory](https://support.microsoft.com/en-us/kb/909264)
+*	[Windows Server Active Directory](https://support.microsoft.com/kb/909264)
 
 ::: moniker-end
 
@@ -336,7 +336,7 @@ Must not be a system-reserved name such as PRN, COM1, COM2, COM3, COM4, COM5, CO
 </li>
 <li>
 Must not be one of the hidden segments used for IIS request filtering like App_Browsers, App_code, App_Data, App_GlobalResources, App_LocalResources, App_Themes, App_WebResources, bin, or web.config.<br/>
-Learn more about reserved names: [Naming Files, Paths, and Namespaces](https://msdn.microsoft.com/en-us/library/windows/desktop/aa365247.aspx).
+Learn more about reserved names: [Naming Files, Paths, and Namespaces](https://msdn.microsoft.com/library/windows/desktop/aa365247.aspx).
 </li>
 </ul>
 </td>
@@ -454,7 +454,7 @@ Must not contain any Unicode control characters or surrogate characters
 ### Teams 
 Team names identify a group of individuals or groups that collectively work together as a team in a project. Team members use this name to connect to the team or to query against members defined for a team. 
 
-As such, team names must conform to conventions that allow it to be rendered as part of a valid URL. In addition, each team name must be unique within a single project. However, there aren't any restrictions on using the same team name in different projects within a project collection. [Add another team or a hierarchy of teams](../../work/scale/multiple-teams.md) provides more information about working with teams.  
+As such, team names must conform to conventions that allow it to be rendered as part of a valid URL. In addition, each team name must be unique within a single project. However, there aren't any restrictions on using the same team name in different projects within a project collection. [Add another team or a hierarchy of teams](../../organizations/settings/add-teams.md) provides more information about working with teams.  
 
 Team names must conform to the following restrictions.   
 

@@ -40,7 +40,7 @@ You can start viewing and adding work items once you connect to a project.
 <a id="browser" /> 
 
 
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 # [New navigation](#tab/new-nav)
 ::: moniker range="vsts"
@@ -193,5 +193,5 @@ Use the following three controls to manage your views.
 - [Work across projects](../../project/navigation/work-across-projects.md)
 
 > [!NOTE]
-> You can create and manage work items from the command line or scripts using the [VSTS CLI](https://docs.microsoft.com/en-us/cli/vsts/overview?view=vsts-cli-latest).
+> You can create and manage work items from the command line or scripts using the [VSTS CLI](https://docs.microsoft.com/cli/vsts/overview?view=vsts-cli-latest).
 

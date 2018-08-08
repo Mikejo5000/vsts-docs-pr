@@ -53,7 +53,7 @@ In this topic, you'll learn:
 
 Your Kanban board is one of two types of boards available to you. For an overview of the features supported on each backlog and board, see [Backlogs, boards, and plans](/vsts/work/backlogs/backlogs-boards-plans). To switch to the [product backlog](/vsts/work/backlogs/create-your-backlog), choose **Stories backlog**. And, to switch to the [Task board](/vsts/work/scrum/task-board), choose **Sprints** and then choose **Taskboard**.  
  
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 # [New navigation](#tab/new-nav)
 
@@ -135,5 +135,5 @@ To customize the columns, swimlanes, or cards for each Kanban board, make sure y
 * [Customize cards](../customize/customize-cards.md)  
 
 ### REST API resources
-To programmatically interact with Kanban board and other team settings, see the [REST API, Boards reference](https://docs.microsoft.com/en-us/rest/api/vsts/work/boards).
+To programmatically interact with Kanban board and other team settings, see the [REST API, Boards reference](https://docs.microsoft.com/rest/api/vsts/work/boards).
 
