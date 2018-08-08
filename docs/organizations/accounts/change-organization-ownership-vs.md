@@ -38,7 +38,7 @@ Make sure that the new owner:
 
 [!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
-## [New navigation](#tab/new-nav)
+# [New navigation](#tab/new-nav)
 
 1. Sign in to your VSTS organization (`https://<yourorganization>.visualstudio.com`).
 
@@ -59,7 +59,7 @@ Make sure that the new owner:
 
    ![Enter and save a new organization owner](_img/change-organization-ownership/save-new-organization-owner.png)  
 
-## [Previous navigation](#tab/previous-nav)
+# [Previous navigation](#tab/previous-nav)
 
 1. Sign in to your VSTS organization (`https://<yourorganization>.visualstudio.com`).
 
