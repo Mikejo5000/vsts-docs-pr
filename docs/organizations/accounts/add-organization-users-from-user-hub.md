@@ -64,7 +64,7 @@ To give other users access to your organization, add their email addresses.
 
 [!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
-### [New navigation](#tab/new-nav)
+# [New navigation](#tab/new-nav)
 
 1. Sign in to your VSTS organization (```https://{yourorganization}.visualstudio.com```).
 
@@ -89,7 +89,7 @@ To give other users access to your organization, add their email addresses.
 5. Select **Add** to complete your invitation.
 
 
-### [Previous navigation](#tab/previous-nav)
+# [Previous navigation](#tab/previous-nav)
 
 1. From your web browser, select ![gear icon](../../_img/icons/gear-icon.png), the **Settings** icon, and select **Organization Settings**.
 
