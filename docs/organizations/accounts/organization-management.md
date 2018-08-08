@@ -1,6 +1,6 @@
 ---
 title: Create and manage your VSTS organization 
-description: Collaborate with others to develop apps by using a cloud service, plan and track work, integrate with other services, and get more features or extensions
+description: Collaborate with others to develop apps by using our cloud service, plan and track work, integrate with other services, and get more features or extensions
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: fa1dbe39-08b1-4eba-886a-33c1aa1e6a83
@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2013'
 
 With a Visual Studio Team Services (VSTS) organization, you gain access to the platform in which you can:
 
-* Collaborate with others to develop applications by using a cloud service.
+* Collaborate with others to develop applications by using our cloud service.
 * Plan and track your work as well as code defects and issues.
 * Set up continuous integration and deployment.
 * Integrate with other services by using service hooks.
