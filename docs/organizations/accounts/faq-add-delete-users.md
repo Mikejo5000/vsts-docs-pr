@@ -1,5 +1,5 @@
 ---
-title: Troubleshoot adding and deleting organization users in the VSTS Users hub
+title: Troubleshoot adding and deleting organization users in the Visual Studio Team Services Users hub
 description: Permissions required to manage users and user access, find project collection administrator or organization owner, and manage Visual Studio subscriptions.
 ms.prod: devops
 ms.technology: devops-accounts
@@ -13,7 +13,7 @@ monikerRange: 'vsts'
 ---
 
 
-# Troubleshoot adding and deleting organization users in the VSTS Users hub
+# Troubleshoot adding and deleting organization users in the Visual Studio Team Services Users hub
 
 **VSTS**
 
@@ -21,7 +21,7 @@ monikerRange: 'vsts'
 
 #### Q: Why can't I manage users?
 
-A:  To access the Users hub and manage users, you must have Visual Studio Team Services (VSTS)
+A: To access the Users hub and manage users, you must have Visual Studio Team Services (VSTS)
 [project collection administrator or organization owner permissions](#find-owner).
 
 
@@ -41,7 +41,7 @@ A:  To access the Users hub and manage users, you must have Visual Studio Team S
 
 <a name="MSDNSubscriber"></a>
 
-#### Q: When do I select *Visual Studio/MSDN Subscriber*?
+#### Q: When do I select "Visual Studio/MSDN Subscriber"?
 
 A: Assign this access level to users who have active, valid [Visual Studio subscriptions](#EligibleMSDNSubscriptions). VSTS automatically recognizes and validates Visual Studio subscribers who have VSTS as a benefit. You need the email address that's associated with the VSTS subscription. 
 
@@ -51,7 +51,7 @@ For example, if a user selects **Visual Studio/MSDN Subscriber** but the user do
 
 #### Q: Which Visual Studio subscriptions can I use with VSTS?
 
-A:  For information about which Visual Studio subscriptions you can use with VSTS, see [VSTS benefits for Visual Studio subscribers](https://docs.microsoft.com/en-us/visualstudio/subscriptions/vs-vsts).
+A: For information about which Visual Studio subscriptions you can use with VSTS, see [VSTS benefits for Visual Studio subscribers](https://docs.microsoft.com/en-us/visualstudio/subscriptions/vs-vsts).
 
 <a name="enterprise-professional"></a>
 
@@ -59,7 +59,7 @@ A:  For information about which Visual Studio subscriptions you can use with VST
 
 #### Q: Why won't my Visual Studio subscription validate?
 
-A: For information about Visual Studio subscriptions that won't validate, see [Why won't VSTS recognize my Visual Studio subscription?](https://docs.microsoft.com/en-us/visualstudio/subscriptions/vs-alternate-identity#faq)
+A: For information about Visual Studio subscriptions that doesn't validate, see [Why won't VSTS recognize my Visual Studio subscription?](https://docs.microsoft.com/en-us/visualstudio/subscriptions/vs-alternate-identity#faq)
 
 <a name="why-access-changed"></a>
 
@@ -97,7 +97,7 @@ If you're purchasing user access to Visual Studio Professional for a specific VS
 
 ## User access
 
-#### Q: What does *Last Access* mean in the All Users view?
+#### Q: What does "Last Access" mean in the All Users view?
 
 The value in **Last Access** is the last date a user accessed any VSTS resources or services. Accessing VSTS includes using *organizationname*.visualstudio.com directly and using resources or services indirectly. For example, you might use the Package Management service from a build pipeline, or you might access the service by pushing code to VSTS from a Git command line or IDE.
 

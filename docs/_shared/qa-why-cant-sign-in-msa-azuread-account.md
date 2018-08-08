@@ -10,7 +10,7 @@ Try signing out completely from VSTS by completing the following steps. Just clo
 
 1.	Go to this URL: http://aka.ms/vssignout
 
-	You'll see a message that says, "Sign out in progress." After you sign out, you're redirected to the Visual Studio webpage @visualstudio.microsoft.com. 
+	You'll see a message that says, "Sign out in progress." After you sign out, you're redirected to the Visual Studio @visualstudio.microsoft.com webpage. 
 
 	> [!TIP]
 	> If the sign-out page takes more than a minute to sign you out, close the browser and continue.
