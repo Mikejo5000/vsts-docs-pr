@@ -28,9 +28,9 @@ There are three notification hubs in the UX.
 * Personal notification hub
 
 Permissions to manage notification at each hub default as follows
-* Account administrators manage accont notifications
-* Account and team administrators allowed to manage team notifications
-* Each user has permission to manage their personal notifications
+* Account administrators can manage accuont notifications
+* Account and team administrators can manage team notifications
+* Each user can manage their personal notifications
 
 
 ## Direct navigation to notification hubs using URL
@@ -56,7 +56,7 @@ Choose the Notifications hub under account settings.
 
 ![Navigate to account notifications hub](_img/nav-account-notifications-hub.png)
 
-The account Notification hub
+**The account Notification hub**
 
 ![View account level notification hub](_img/view-account-notification-hub.png)
 
@@ -65,7 +65,7 @@ Choose the Notifications hub under project settings.
 
 ![Navigate to team notifications hub](_img/nav-team-notifications-hub.png)
 
-The team Notification hub
+**The team Notification hub**
 
 ![View account level notification hub](_img/view-team-notification-hub.png)
 
@@ -74,7 +74,7 @@ Choose Notification hub under your profile
 
 ![Navigate to team notifications hub](_img/nav-personal-notifications-hub.png)
 
-The personal Notification hub
+**The personal Notification hub**
 
 ![View account level notification hub](_img/view-personal-notification-hub.png)
 
