@@ -1,15 +1,12 @@
-- name: Docs
-  tocHref: /
-  topicHref: /
-  items:
-  - name: Azure DevOps Services
+items:
+- name: Azure DevOps Services
+  tocHref: /vsts/repos/get-started/
+  topicHref: /vsts/index
+  items: 
+  - name: Azure Repos
     tocHref: /vsts/repos/get-started/
-    topicHref: /vsts/index
-    items: 
-    - name: Azure Repos
+    topicHref: /vsts/index-repos
+    items:
+    - name: Get Started Guide
       tocHref: /vsts/repos/get-started/
-      topicHref: /vsts/index-repos
-      items:
-      - name: Get Started Guide
-        tocHref: /vsts/repos/get-started/
-        topicHref: /vsts/repos/get-started/index
+      topicHref: /vsts/repos/get-started/index
