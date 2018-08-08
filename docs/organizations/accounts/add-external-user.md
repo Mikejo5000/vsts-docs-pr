@@ -30,7 +30,7 @@ If you’re an Azure Active Directory (Azure AD)-backed Visual Studio Team Servi
 
 * The Azure AD tenant to which you want to invite external users must allow you to add new users based on your Azure AD tenant’s guest policies. Learn [how to become eligible to invite external users on your Azure AD tenant](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-delegate-invitations).
 
-## Invite external users to your VSTS organization
+## Invite an external user to your VSTS organization
 
 [!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
@@ -61,7 +61,7 @@ If you’re an Azure Active Directory (Azure AD)-backed Visual Studio Team Servi
 
    ![Go to the Users tab in Settings](../../_shared/_img/users-hub-updated-ui.png)
 
-3. Choose **Add new users**.
+3. Select **Add new users**.
 
    ![Choose Add new users](_img/add-external-user/choose-add-new-users.png)
 
