@@ -1,5 +1,5 @@
 ---
-title: Connect VSTS organization to Azure Active Directory (Azure AD)
+title: Connect your VSTS organization to Azure Active Directory (Azure AD)
 description: Learn how to connect your VSTS organization to your Azure Active Directory if you have the same email address, Microsoft Account (MSA)
 ms.prod: devops
 ms.technology: devops-accounts
@@ -12,16 +12,14 @@ ms.date: 08/02/2018
 monikerRange: 'vsts'
 ---
 
-# Tutorial: Connect VSTS organization to Azure Active Directory (Azure AD)
+# Tutorial: Connect your VSTS organization to Azure AD
 
 **VSTS**
 
-If your VSTS organization was created with a Microsoft account,
-you can connect your VSTS organization to your
-organization's directory (tenant) in
-[Azure Active Directory (Azure AD)](https://azure.microsoft.com/documentation/articles/active-directory-whatis/).
-You can then sign in to VSTS with the same username
-and password that you use with these Microsoft services.
+If your Visual Studio Team Services (VSTS) organization was created with a Microsoft account, you can connect it to the organization's directory (tenant) in [Azure Active Directory (Azure AD)](https://azure.microsoft.com/documentation/articles/active-directory-whatis/).
+
+You can then sign in to VSTS with the same username and password that you use with the Microsoft services.
+
 You can also [enforce conditional access policies](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal-get-started) for accessing
 your team's critical resources and key assets.
 
