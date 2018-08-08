@@ -56,7 +56,7 @@ There's no commitment to merge the changes as the owner can abandon the pull req
 - [Leave comments](../git/pull-requests.md#leave-comments)
 - [Vote on the changes](../git/pull-requests.md#vote-on-the-changes)
 
-### Protect branches with policies
+## Protect branches with policies
 
 There are a few critical branches in your repo that the team relies on always being in good shape, such as your `master` branch.
 [Require pull requests](../git/branch-policies.md) to make any changes on these branches.
@@ -78,7 +78,7 @@ Pull requests and branch policies enable teams to enforce many best practices re
 - [Use Azure Functions to create custom branch policies](../git/create-pr-status-server-with-azure-functions.md)
 - [Configure a branch policy for an external service](../git/pr-status-policy.md)
 
-### Isolate code with forks
+## Isolate code with forks
 
 Forks are a great way to isolate experimental, risky, or confidential changes from the original codebase. A fork is a complete copy of a repository, including all files, commits, and (optionally) branches. The new fork acts as if someone cloned the original repository, then pushed to a new, empty repository.
 After a fork has been created, new files, folders, and branches are not shared between the repositories unless a pull request carries them along. Once you're ready to share those changes, it's easy to use [pull requests](../git/pull-requests-overview.md) to push the changes back to the original repository.
