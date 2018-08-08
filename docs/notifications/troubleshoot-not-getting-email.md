@@ -26,6 +26,8 @@ If you're not receiving an expected notification email, it could be for one of t
 * The account level _do not deliver_ setting is impacting email delivery
 * The team or group level _do not deliver_ setting is impacting email delivery
 * You are not a member of the group or team receiving the email
+* You are a member of an AD group and the subscription contains a @Me clause
+* You do not have permission to view the event details which are included in the email
 
 Please perform the following step to determine if any of these resolve the issue.
 
@@ -54,6 +56,12 @@ If the team or group defines a delivery setting for **Deliver to individual memb
 
 ## Step 8: Check your configured email address
 Check if your preferred email address is set to the address you're expecting the email.  This is a user profile setting.  Hover over profile icon to view your preferred email address.
+
+## Step 9: Is this a team subscription which contains a "@Me" filter clause
+If a team or group subscription contains an @Me filter clause and the target email recipients which contains an AD group, no members of the AD group will not match the filter clause.  This is due to the fact that AD groups are not expanded for filter matching.
+
+## Step 10: Do you have permission to see the event artifact
+Emails will not be sent which contains event artifact data, such as a work item, to a recipient who does not have permission to view the artifact. The only way to know if an email was _filtered_ for this reason is to view notification delivery logs.  Click [here](troubleshoot-subscription-logging.md) to learn more about enabling and retrieving subscriptoin and delivery logging.
 
 ## Contact customer support
 If you're not able to resolve the issue with the steps above, consider contacting [customer support](troubleshoot-contact-support.md)
