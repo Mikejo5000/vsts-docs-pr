@@ -380,3 +380,24 @@ Get started by creating a project, configuring your workspace, and reviewing and
 <!--- All images are Placeholder --> 
 <!-- Converting to icon48 format, this gets cleaner in YAML -->
 <div class="ico48Case halfStack"><div class="ico48Link"><a href="../tfvc/share-your-code-in-tfvc-vs.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_visual-studio.svg"><span>Visual Studio</span></a></div><div class="ico48Link"><a href="../tfvc/share-your-code-in-tfvc-xcode.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_xcode.svg"><span>Xcode</span></a></div><div class="ico48Link"><a href="../tfvc/share-your-code-in-tfvc-eclipse.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_eclipse.svg"><span>Eclipse</span></a></div></div>
+
+<ul class="panelContent cardsFTitle">
+    <li>
+        <a href="../tfvc/index.md">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_vs-team-services.svg" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Learn more about TFVC</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+ </ul>
