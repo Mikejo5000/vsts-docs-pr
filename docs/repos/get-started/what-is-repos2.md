@@ -9,7 +9,6 @@ ms.author: sdanie
 author: steved0x
 ms.date: 09/05/2018
 ms.topic: overview
-layout: LandingPage
 monikerRange: 'vsts'
 ---
 
@@ -28,174 +27,34 @@ Git is the most commonly used version control system today and is quickly becomi
 
 Git in Azure Repos is standard Git. You can use the clients and tools of your choice, such as Git for Windows, Mac, third part Git services, and tools such as Visual Studio and Visual Studio Code.
 
-### Connect your favorite development environment
+## Connect your favorite development environment
 
-Connect your favorite development environment to Azure Repos to access your repos and manage your work.
+Connect your favorite development environment to Azure Repos to access your Git repos and manage your work.
 
-- [<img width="48" height="48" alt="" src="https://docs.microsoft.com/media/common/i_cligeneric.svg">Git command line](../git/share-your-code-in-git-cmdline.md)
-- [![Visual Studio](https://docs.microsoft.com/media/logos/logo_vs-code.svg)Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vsts.team)
+- [Git command line](../git/share-your-code-in-git-cmdline.md)
+- [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vsts.team)
 - [Visual Studio](../git/share-your-code-in-git-vs-2017.md)
 - [Xcode](../git/share-your-code-in-git-xcode.md)
 - [Eclipse](/vsts/java/download-eclipse-plug-in)
 - [IntelliJ](/vsts/java/download-intellij-plug-in)
 
-</div>
-</div>
+## Review code with pull requests
 
-<!--- All images are Placeholder --> 
-<!-- Converting to icon48 format, this gets cleaner in YAML -->
-<div class="ico48Case halfStack">
-<div class="ico48Link"><a href="../git/share-your-code-in-git-cmdline.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/common/i_cligeneric.svg"><span>Command-line</span></a></div>
-<div class="ico48Link"><a href="https://marketplace.visualstudio.com/items?itemName=ms-vsts.team"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_vs-code.svg"><span>Visual Studio Code</span></a></div>
-<div class="ico48Link"><a href="../git/share-your-code-in-git-vs-2017.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_visual-studio.svg"><span>Visual Studio</span></a></div>
-<div class="ico48Link"><a href="../git/share-your-code-in-git-xcode.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_xcode.svg"><span>Xcode</span></a></div>
-<div class="ico48Link"><a href="/vsts/java/download-eclipse-plug-in"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_eclipse.svg"><span>Eclipse</span></a></div>
+Review code with your team and make sure that changes build and pass tests before it's merged. Pull requests combine the review and merge of your code into a single collaborative process.
+Once you're done fixing a bug or new feature in a branch, create a new pull request.
+Add the members of the team to the pull request so they can review and vote on your changes.
 
-<div class="ico48Link"><a href="/vsts/java/download-intellij-plug-in"><img width="48" height="48" alt="" src="https://docs.microsoft.com/en-us/media/logos/logo_intellij.svg"><span>IntelliJ</span></a></div>
+VSTS has a [rich pull request experience](../git/pull-requests-overview.md) that's easy to use and scales to your needs.
+Use pull requests to review works in progress and get early feedback on changes.
+There's no commitment to merge the changes as the owner can abandon the pull request at any time.
 
-</div>
-
-### Review code with pull requests
-
-<div class="row">
-<div class="col-sm-6 col-md-6">
-
-</div>
-<div class="col-sm-6 col-md-6"> 
-
-<p>Review code with your team and make sure that changes build and pass tests before it's merged.</p>
-
-<ul class="panelContent cardsFTitle">
-    <li>
-        <a href="../git/pull-requests-overview.md">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img width="48" height="48" alt="" src="https://docs.microsoft.com/media/common/i_pull-request.svg" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Create a pull request</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="../git/pull-requests.md#link-work-items">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img width="48" height="48" alt="" src="../../_img/index/i_tasks.svg" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Link work items to pull requests</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="../git/branch-policies.md#build-validation">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img width="48" height="48" alt="" src="../../_img/index/i_branch-policies.svg" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Set up branch policies</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="../git/merging-with-squash.md">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img width="48" height="48" alt="" src="https://docs.microsoft.com/media/common/i_pull-request.svg" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Squash merge pull requests</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="../git/git-branching-guidance.md">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img width="48" height="48" alt="" src="../../_img/index/i_branch-policies.svg" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Git branch and pull request workflows</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-        <li>
-        <a href="../git/pull-requests.md#leave-comments">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img width="48" height="48" alt="" src="https://docs.microsoft.com/media/common/i_blog.svg" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Leave comments</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="../git/pull-requests.md#vote-on-the-changes">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img width="48" height="48" alt="" src="../git/_img/logos/check.svg" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Vote on the changes</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-</ul>
-
-</div>
-</div>
+- [Create a pull request](../git/pull-requests-overview.md)
+- [Link work items to pull requests](../git/pull-requests.md#link-work-items)
+- [Require build validation with branch policies](../git/branch-policies.md#build-validation)
+- [Squash merge pull requests](../git/merging-with-squash.md)
+- [Git branching guidance](../git/git-branching-guidance.md)
+- [Leave comments](../git/pull-requests.md#leave-comments)
+- [Vote on the changes](../git/pull-requests.md#vote-on-the-changes)
 
 ### Protect branches with policies
 
@@ -206,174 +65,34 @@ Developers pushing changes directly to the protected branches will have their pu
 Add additional conditions to your pull requests to enforce a higher level of code quality in your key branches.
 A clean build of the merged code and approval from multiple reviewers are some extra requirements you can set to protect your key branches.
 
-<ul class="panelContent cardsFTitle">
-    <li>
-        <a href="../git/branch-policies-overview.md">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img width="48" height="48" alt="" src="../../_img/index/i_branch-policies.svg" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Branch policies overview</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="../git/branch-policies.md">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img width="48" height="48" alt="" src="https://docs.microsoft.com/media/common/i_policy.svg" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>How to configure branch policies</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="../git/branch-permissions.md">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img width="48" height="48" alt="" src="https://docs.microsoft.com/media/common/i_protect.svg" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Branch permissions</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-</ul>
+- [Branch policies overview](../git/branch-policies-overview.md)
+- [How to configure branch policies](../git/branch-policies.md)
+- [Branch permissions](../git/branch-permissions.md)
 
-### Extend pull request workflows with pull request status
+## Extend pull request workflows with pull request status
 
 Pull requests and branch policies enable teams to enforce many best practices related to reviewing code and running automated builds, but many teams have additional requirements and validations to perform on code. To cover these individual and custom needs, VSTS offers pull request statuses. Pull request statuses integrate into the PR workflow and allow external services to programmatically sign off on a code change by associating simple success/failure type information with a pull request. 
 
-<ul class="panelContent cardsFTitle">
-    <li>
-        <a href="../git/pull-request-status.md">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img width="48" height="48" alt="" src="https://docs.microsoft.com/media/common/i_pull-request.svg" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Pull request status overview</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="../git/create-pr-status-server.md">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img width="48" height="48" alt="" src="https://docs.microsoft.com/media/common/nodejs.svg" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Create a PR status server with Node.js</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="../git/create-pr-status-server-with-azure-functions.md">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img width="48" height="48" alt="" src="https://docs.microsoft.com/en-us/azure/media/index/azurefunctions.svg" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Use Azure Functions to create custom branch policies</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="../git/pr-status-policy.md">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img width="48" height="48" alt="" src="https://docs.microsoft.com/media/common/i_web.svg" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Configure a branch policy for an external service</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-</ul>
+- [Pull request status overview](../git/pull-request-status.md)
+- [Create a PR status server with Node.js](../git/create-pr-status-server.md)
+- [Use Azure Functions to create custom branch policies](../git/create-pr-status-server-with-azure-functions.md)
+- [Configure a branch policy for an external service](../git/pr-status-policy.md)
 
 ### Isolate code with forks
 
 Forks are a great way to isolate experimental, risky, or confidential changes from the original codebase. A fork is a complete copy of a repository, including all files, commits, and (optionally) branches. The new fork acts as if someone cloned the original repository, then pushed to a new, empty repository.
 After a fork has been created, new files, folders, and branches are not shared between the repositories unless a pull request carries them along. Once you're ready to share those changes, it's easy to use [pull requests](../git/pull-requests-overview.md) to push the changes back to the original repository.
 
-<ul class="panelContent cardsFTitle">
-    <li>
-        <a href="../git/forks.md">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img width="48" height="48" alt="" src="https://docs.microsoft.com/media/common/i_forks.svg" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Learn more about forks</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
- </ul>
+- [Learn more about forks](../git/forks.md)
 
 ## TFVC
 
 Azure Repos also supports Team Foundation Version Control (TFVC). TFVC is a centralized version control system. Typically, team members have only one version of each file on their dev machines. Historical data is maintained only on the server. Branches are path-based and created on the server.
 
+- [Learn more about TFVC](../tfvc/index.md)
+
 Get started by creating a project, configuring your workspace, and reviewing and sharing your code. You can use any one of these clients or IDEs: 
 
-<!--- All images are Placeholder --> 
-<!-- Converting to icon48 format, this gets cleaner in YAML -->
-<div class="ico48Case halfStack"><div class="ico48Link"><a href="../tfvc/share-your-code-in-tfvc-vs.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_visual-studio.svg"><span>Visual Studio</span></a></div><div class="ico48Link"><a href="../tfvc/share-your-code-in-tfvc-xcode.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_xcode.svg"><span>Xcode</span></a></div><div class="ico48Link"><a href="../tfvc/share-your-code-in-tfvc-eclipse.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_eclipse.svg"><span>Eclipse</span></a></div></div>
+- [Visual Studio](../tfvc/share-your-code-in-tfvc-vs.md)
+- [Xcode](../tfvc/share-your-code-in-tfvc-xcode.md)
+- [Eclipse](../tfvc/share-your-code-in-tfvc-eclipse.md)
