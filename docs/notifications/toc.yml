@@ -27,7 +27,7 @@
   - name: Manage account default delivery settings
     href: howto-manage-account-notifications-settings.md
   - name: View notification statistics for your account
-    href: howto-view-acount-notification-statistics.md
+    href: howto-view-account-notification-statistics.md
   - name: Opt-out of account, group, or team level subscriptions
     href: howto-opt-out-notifications.md
   - name: Change your preferred email address
