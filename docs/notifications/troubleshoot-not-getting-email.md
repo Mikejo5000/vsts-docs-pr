@@ -52,8 +52,8 @@ Navigate to the account level notifications hub and click the `Settings` tab (cl
 ## Step 7: Check "Do not deliver" setting for your team or group
 If the team or group defines a delivery setting for **Deliver to individual members**, it's still possible that the team contains other groups which have a different delivery setting. Click [here](concepts-group-expansion-for-email.md) to learn how team membership is expanded and how some members of the team could receive an email while others do not.
 
-## Step 8: Ensure your email address is included as a recipient for this subscription
-Click [here]() to learn more about how email recipients are determined.
+## Step 8: Check your configured email address
+Check if your preferred email address is set to the address you're expecting the email.  This is a user profile setting.  Hover over profile icon to view your preferred email address.
 
 ## Contact customer support
 If you're not able to resolve the issue with the steps above, consider contacting [customer support](troubleshoot-contact-support.md)
