@@ -29,7 +29,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/Repos40.svg" alt="" />
+                                                        <img src="_img/index/DevOpsIconRepos96.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -46,7 +46,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/Agile40.svg" alt="" />
+                                                        <img src="_img/index/DevOpsIconBoards96.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -63,7 +63,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/Pipelines40.svg" alt="" />
+                                                        <img src="_img/index/DevOpsIconPipelines96.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -326,7 +326,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/Repos40.svg" alt="" />
+                                                        <img src="_img/index/DevOpsIconRepos96.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -344,7 +344,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/Agile40.svg" alt="" />
+                                                        <img src="_img/index/DevOpsIconBoards96.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -362,7 +362,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/Pipelines40.svg" alt="" />
+                                                        <img src="_img/index/DevOpsIconPipelines96.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -380,7 +380,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/Test40.svg" alt="" />
+                                                        <img src="_img//index/DevOpsIconTestPlans96.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -398,7 +398,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/Artifacts40.svg" alt="" />
+                                                        <img src="_img/index/DevOpsIconArtifacts96.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -1045,7 +1045,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/Artifacts40.svg" alt="" />
+                                                        <img src="_img/index/DevOpsIconArtifacts96.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
