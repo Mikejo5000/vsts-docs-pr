@@ -1,0 +1,11 @@
+- name: Azure DevOps Services
+  tocHref: /vsts/
+  topicHref: /vsts/index
+  items: 
+  - name: Azure Boards
+    tocHref: /vsts/
+    topicHref: /vsts/index-work
+    items:
+    - name: Agile at Scale
+      tocHref: /vsts/
+      topicHref: /vsts/boards/plans/index
