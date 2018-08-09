@@ -92,7 +92,7 @@ The **Edit project-level information** permission includes the ability to perfor
 
 ## Team administrator role and permissions  
 
-The team administrator role supports configuration of team settings. To be added as a team administrator, see [Add team administrators](../scale/add-team-administrator.md). Project administrators con configure settings at the team and project level. See [Add administrators, set permissions at the project-level or project collection-level](../../organizations/security/set-project-collection-level-permissions.md). 
+The team administrator role supports configuration of team settings. To be added as a team administrator, see [Add team administrators](../plans/add-team-administrator.md). Project administrators con configure settings at the team and project level. See [Add administrators, set permissions at the project-level or project collection-level](../../organizations/security/set-project-collection-level-permissions.md). 
 
 The following table summarizes a subset of the default permissions assigned to the team project Readers, Contributors and Project Administrators groups and the Team Administrator role. Team admin permissions extend only to the team for which they're an administrator. Project administrator permissions extend across all teams defined for the team project.
 
@@ -109,7 +109,7 @@ The following table summarizes a subset of the default permissions assigned to t
 <tbody valign="top" align="center">
 <tr>
 
-<td align="left">[Add a team administrator](../scale/add-team-administrator.md) </p>
+<td align="left">[Add a team administrator](../plans/add-team-administrator.md) </p>
 </td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
@@ -128,7 +128,7 @@ The following table summarizes a subset of the default permissions assigned to t
 </tr>
 <tr>
 
-<td align="left">[View shared work item queries](../track/using-queries.md)</p>
+<td align="left">[View shared work item queries](../queries/using-queries.md)</p>
 </td>
 <td>![checkmark](../../_img/icons/checkmark.png)</td>
 <td>![checkmark](../../_img/icons/checkmark.png)</td>
@@ -138,7 +138,7 @@ The following table summarizes a subset of the default permissions assigned to t
 
 <tr>
 <td align="left">
-[Manage shared query and query folder permissions](../track/set-query-permissions.md)<br/>(Contribute, Delete, Manage Permissions)
+[Manage shared query and query folder permissions](../queries/set-query-permissions.md)<br/>(Contribute, Delete, Manage Permissions)
 </p>
 </td>
 <td><p>&nbsp;&nbsp;</p></td>

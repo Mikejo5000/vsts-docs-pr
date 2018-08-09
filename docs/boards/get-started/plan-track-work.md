@@ -73,7 +73,7 @@ Open a browser window, choose **Work**, and then **Work Items**.
 
 	![Agile process, User story work item form](../backlogs/_img/add-new-work-item-vsts-user-story.png)  
 
-	You can [add tags to any work item](../track/add-tags-to-work-items.md) to filter backlogs, queries, and work item lists.
+	You can [add tags to any work item](../queries/add-tags-to-work-items.md) to filter backlogs, queries, and work item lists.
 
 	That's it! 
 
@@ -120,7 +120,7 @@ For more information on using **Work Items**, see [View and add work items](../w
  
 > [!div class="nextstepaction"]
 > [Create your backlog](../backlogs/create-your-backlog.md)
-> [Kanban quickstart](../kanban/kanban-quickstart.md) 
+> [Kanban quickstart](../boards/kanban-quickstart.md) 
 
 Or, [learn more about planning and tracking work](../work-items/index.md).
  

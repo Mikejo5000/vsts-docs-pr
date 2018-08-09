@@ -47,11 +47,11 @@ The Inheritance process model provides support for customizing work tracking obj
 A time period, usually two to three weeks, used to group work items to be completed during that time period. Sprints are used in Scrum methods to support sprint planning, sprint burndown, and other Scrum processes. Iteration paths allow you to group work into sprints, milestones, or other event-specific or time-related period. Learn more: [About area and iteration paths](../../organizations/settings/about-areas-iterations.md).
 
 ## Kanban board 
-An interactive, electronic sign board that supports visualization of the flow of work from concept to completion and lean methods. Learn more: [Kanban basics](../kanban/kanban-quickstart.md).
+An interactive, electronic sign board that supports visualization of the flow of work from concept to completion and lean methods. Learn more: [Kanban basics](../boards/kanban-quickstart.md).
 
  
 ## Link type
-Specifies an object used to form link relationships between different WITs. Learn more: [Link work items to support traceability and manage dependencies](../track/link-work-items-support-traceability.md) and [LinkTypes elements reference](../customize/reference/link-type-element-reference.md).  
+Specifies an object used to form link relationships between different WITs. Learn more: [Link work items to support traceability and manage dependencies](../queries/link-work-items-support-traceability.md) and [LinkTypes elements reference](../../reference/xml/link-type-element-reference.md).  
 
 ## Pick lists
 
@@ -79,7 +79,7 @@ A type of work item that defines the applications, requirements, and elements th
 [!INCLUDE [temp](../../_shared/glossary-terms/sprints.md)] 
 
 ## Sprint backlog 
-An interactive list of work items that have been assigned to the same sprint or iteration path for a team. The sprint backlog supports teams that use Scrum methodologies. Learn more: [Sprint planning](../scrum/assign-work-sprint.md).  
+An interactive list of work items that have been assigned to the same sprint or iteration path for a team. The sprint backlog supports teams that use Scrum methodologies. Learn more: [Sprint planning](../sprints/assign-work-sprint.md).  
 
 [!INCLUDE [temp](../../_shared/glossary-terms/taskboard.md)] 
 
@@ -94,5 +94,5 @@ A type of work item that defines the applications, requirements, and elements th
 
 ## Workflow 
 
-Workflow is an integral aspect of a work item and is defined by it's corresponding work item type. The workflow determines the logical progression and regression of work items, tracking the status of work as it progresses from a New or Active state to Closed or Completed state. It also specifies the values that appear in the drop-down menus for the State and Reason fields. Learn more: [Workflow states and state categories](../customize/workflow-and-state-categories.md).
+Workflow is an integral aspect of a work item and is defined by it's corresponding work item type. The workflow determines the logical progression and regression of work items, tracking the status of work as it progresses from a New or Active state to Closed or Completed state. It also specifies the values that appear in the drop-down menus for the State and Reason fields. Learn more: [Workflow states and state categories](../work-items/workflow-and-state-categories.md).
 

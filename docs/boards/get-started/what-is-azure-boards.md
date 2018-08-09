@@ -123,7 +123,7 @@ The **Work Items** page isn't an available feature for TFS 2017 and earlier vers
 
 ## Boards 
 
-Boards present work items as cards and support quick status updates through drag-and-drop, similar to sticky notes on a physical whiteboard. Each board supports many Kanban practices such as defining columns and swimlanes, setting Work-in-Progress (WIP) limits, defining the Definition of Done, and more. To get started, see [Kanban quickstart](../kanban/kanban-quickstart.md). 
+Boards present work items as cards and support quick status updates through drag-and-drop, similar to sticky notes on a physical whiteboard. Each board supports many Kanban practices such as defining columns and swimlanes, setting Work-in-Progress (WIP) limits, defining the Definition of Done, and more. To get started, see [Kanban quickstart](../boards/kanban-quickstart.md). 
 
 # [New navigation](#tab/new-nav)
 ::: moniker range="vsts"
@@ -138,11 +138,11 @@ Boards present work items as cards and support quick status updates through drag
 # [Previous navigation](#tab/previous-nav)
 
 ::: moniker range=">= tfs-2017"   
-![Kanban board, Agile template](../kanban/_img/kanban-basics-intro.png)     
+![Kanban board, Agile template](../boards/_img/kanban-basics-intro.png)     
 ::: moniker-end   
 ::: moniker range=">= tfs-2013 <= tfs-2015"    
 > [!div class="mx-imgBorder"]  
-> ![TFS 2015, Kanban board, Agile template](../kanban/_img/overview/kanban-basics-intro-tfs.png)       
+> ![TFS 2015, Kanban board, Agile template](../boards/_img/overview/kanban-basics-intro-tfs.png)       
 ::: moniker-end   
 
 ---
@@ -192,7 +192,7 @@ Sprint backlogs and taskboards provide a filtered view of work items a team has 
 !["Web portal, choose Work>Backlogs, Sprint](../work-items/_img/view-add/view-sprint-backlog.png)
 ::: moniker-end
 ::: moniker range=">= tfs-2013 <= tfs-2015"
-![Work>backlogs, TFS 2015, 2013 web portal](../scrum/_img/IC795962.png)
+![Work>backlogs, TFS 2015, 2013 web portal](../sprints/_img/IC795962.png)
 ::: moniker-end
 
 ---
@@ -203,7 +203,7 @@ You can also filter the cards on your taskboard to show only those cards mapped 
 
 ## Queries
 
-Queries are filtered lists of work items based on criteria that you define using a query editor. You use queries to find groups of work items with something in common,to triage a set of items to prioritize or assign them, or to create status and trend charts that you can then add to dashboards. To get started, see [Create a managed query](../track/using-queries.md). 
+Queries are filtered lists of work items based on criteria that you define using a query editor. You use queries to find groups of work items with something in common,to triage a set of items to prioritize or assign them, or to create status and trend charts that you can then add to dashboards. To get started, see [Create a managed query](../queries/using-queries.md). 
 
 # [New navigation](#tab/new-nav)
 
@@ -218,7 +218,7 @@ Queries are filtered lists of work items based on criteria that you define using
 
 
 # [Previous navigation](#tab/previous-nav)
-![Web portal, Work>Queries, Open Shared queries, Active Bugs](../track/_img/using-queries-active-bugs-ts.png)
+![Web portal, Work>Queries, Open Shared queries, Active Bugs](../queries/_img/using-queries-active-bugs-ts.png)
 
 ---
 
@@ -226,6 +226,6 @@ Queries are filtered lists of work items based on criteria that you define using
 
 Delivery plans display work items as cards along a timeline or calendar view. This can be an effective communication tool with managers, partners and stakeholders for a team or for several teams collaborating on specific features or requirements.
 
-![Moving a card to a different iteration](../scale/_img/plans_move1.png)
+![Moving a card to a different iteration](../plans/_img/plans_move1.png)
 
 
