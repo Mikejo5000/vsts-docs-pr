@@ -1,7 +1,7 @@
 ---
 title: How to integrate third party services like Slack or Microsoft Teams
 titleSuffix: VSTS & TFS 
-description: How to integrate third party services like Slack or Microsoft Teams
+description: How to integrate third party services such as Slack, Microsoft Teams and others with Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.technology: devops-collab
 ms.prod: devops
 ms.manager: douge
@@ -21,7 +21,7 @@ monikerRange: '>= tfs-2017'
 > [!NOTE]  
 > This topic applies to VSTS and to TFS 2017.1 and later versions. If you work from an on-premises TFS 2017 or ealier versions, see [Set alerts, get notified when changes occur](../work/track/alerts-and-notifications.md). For on-premises TFS, [you must configure an SMTP server](/tfs/server/admin/setup-customize-alerts) in order for team members to see the Notifications option from their account menu and to receive notifications.
 
-Integrate with your favorite services by notifying them when events happen in VSTS. Here are a few examples.
+Integrate with your favorite services by notifying them when events happen in VSTS. Here are a few examples:
 * [Send VSTS notifications to a Slack channel](../service-hooks/services/slack.md)
 * [Send VSTS notifications to a Microsoft Teams channel](../service-hooks/services/teams.md)
 * [Send VSTS notifications to a Trello board](../service-hooks/services/trello.md)
