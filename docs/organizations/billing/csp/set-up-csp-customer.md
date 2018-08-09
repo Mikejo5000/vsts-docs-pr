@@ -1,6 +1,6 @@
 ---
 title: "Cloud Solution Providers: set up billing for your customers for VSTS and Visual Studio"
-description: Cloud Solution Provider (CSP) partners can purchase and manage various VSTS, VS, HockeyApp, and other subscriptions for their customers
+description: Cloud Solution Provider (CSP) partners can purchase and manage various VSTS, Visual Studio, HockeyApp, and other subscriptions for their customers
 ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: 7c2d014a-c6b4-40e7-9217-326b6d8cd74c
