@@ -56,7 +56,7 @@ Use this topic to learn how to:
 
     >**Tip:**  If the **Team** ribbon no longer appears, you might need to [re-enable it](https://msdn.microsoft.com/library/vstudio/ms268871.aspx).
 
-4.  Connect to TFS and the project that you want to plan. If you can't connect, [get added as a team member](../../scale/multiple-teams.md).
+4.  Connect to TFS and the project that you want to plan. If you can't connect, [get added as a team member](../../../organizations/settings/add-teams.md).
 
     ![ALM\_EXL\_Connect](_img/create-your-backlog-tasks-using-project/IC680074.png)
 
@@ -122,7 +122,7 @@ Optionally, you can add a mapped TFS field as a column to the Team Foundation Ga
 
 ![View which VSTS/TFS  fields are mapped to project fields](_img/create-your-backlog-tasks-using-project/IC658915.png)  
 
-To add more TFS  fields or change the way fields are mapped, see [Customize the Microsoft Project field mapping file](https://msdn.microsoft.com/en-us/library/ms404686.aspx). This feature is available for both on-premises TFS and cloud-hosted VSTS. 
+To add more TFS  fields or change the way fields are mapped, see [Customize the Microsoft Project field mapping file](https://msdn.microsoft.com/library/ms404686.aspx). This feature is available for both on-premises TFS and cloud-hosted VSTS. 
 
 ## Tips for working in Project and other Team Foundation clients
 

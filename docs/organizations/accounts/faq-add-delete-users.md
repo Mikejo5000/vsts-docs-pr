@@ -13,7 +13,7 @@ monikerRange: 'vsts'
 ---
 
 
-# Troubleshoot adding and deleting organization users in the Visual Studio Team Services Users hub
+# Troubleshoot adding and deleting organization users in the VSTS Users hub
 
 **VSTS**
 
@@ -51,7 +51,7 @@ For example, if a user selects **Visual Studio/MSDN Subscriber** but the user do
 
 #### Q: Which Visual Studio subscriptions can I use with VSTS?
 
-A: For information about which Visual Studio subscriptions you can use with VSTS, see [VSTS benefits for Visual Studio subscribers](https://docs.microsoft.com/en-us/visualstudio/subscriptions/vs-vsts).
+A:  See [VSTS benefits for Visual Studio subscribers](https://docs.microsoft.com/visualstudio/subscriptions/vs-vsts).
 
 <a name="enterprise-professional"></a>
 
@@ -59,7 +59,7 @@ A: For information about which Visual Studio subscriptions you can use with VSTS
 
 #### Q: Why won't my Visual Studio subscription validate?
 
-A: For information about Visual Studio subscriptions that doesn't validate, see [Why won't VSTS recognize my Visual Studio subscription?](https://docs.microsoft.com/en-us/visualstudio/subscriptions/vs-alternate-identity#faq)
+A: See [Why won't VSTS recognize my Visual Studio subscription?](https://docs.microsoft.com/visualstudio/subscriptions/vs-alternate-identity#faq)
 
 <a name="why-access-changed"></a>
 
