@@ -34,7 +34,7 @@ To get a copy of the source code to work with it, you clone the Git repo that co
 
 If you're just getting started with Azure Repos, your code might be in one of several places:
 
-- [The code is in my (or my organization's) Azure Repos Git](#the-code-is-in-my-or-my-organizations-azure-repos-git)
+- [The code is in my (or my organization's) Azure Repos Git Repo](#the-code-is-in-my-or-my-organizations-azure-repos-git-repo)
 - [The code is another Git repo such as GitHub or another Azure Repos Git repo](#the-code-is-another-git-repo-such-as-github-or-another-azure-repos-git-repo)
 - [The code is on my local computer and not yet in version control](#the-code-is-on-my-local-computer-and-not-yet-in-version-control)
 
