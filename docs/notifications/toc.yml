@@ -12,10 +12,8 @@
     href: concepts-events-and-notifications.md
   - name: Managing subscriptions
     href: concepts-managing-subscriptions.md
-  - name: Email delivery options
-    href: concepts-email-delivery-options.md
-  - name: Group expansion for email delivery
-    href: concepts-group-expansion-for-email.md
+  - name: How are email recipients determined
+    href: concepts-email-recipients.md
 - name: How-to Guides
   items:
   - name: Manage your personal subscriptions
@@ -40,7 +38,7 @@
     href: at-mentions.md
   - name: "Use #ID to link to work items"
     href: add-links-to-work-items.md
-  - name: Third-party services (Slack, Teams, etc)
+  - name: Notify third-party services (Slack, Teams, etc)
     href: howto-integrate-third-party-services.md
 - name: Troubleshooting
   items:

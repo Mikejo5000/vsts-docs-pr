@@ -42,7 +42,7 @@ Retrieve all subscription event processing logs in a given timeframe by entering
 `https://{account}/_apis/notification/DiagnosticLogs/{event ID}/entries?startTime={date}&endTime={date}`
 
 * _account_ is your account (e.g. fabrikam-fiber.visualstudio.com)
-* _date_ is a date time specification (e.g 2018-06-29)
+* _date_ is a date time specification (e.g **2018-06-29** or **2018-06-29 02:00**)
 * _event ID_ is **915f48f2-1b64-40d9-a43f-fe2528b4f296** for work item events, or
 * _event ID_ is **9a688110-9e33-4cdc-affd-75d16303e7f1** for Git events, or
 * _event ID_ is **a4804dcf-4bb6-4109-b61c-e59c2e8a9ff7** for any other event type
@@ -56,7 +56,7 @@ Retrieve all notification delivery logs in a given timeframe by entering the URL
 `https://{account}/_apis/notification/DiagnosticLogs/{event ID}/entries?startTime={date}&endTime={date}`
 
 * _account_ is your account (e.g. fabrikam-fiber.visualstudio.com)
-* _date_ is a date time specification (e.g 2018-06-29)
+* _date_ is a date time specification (e.g **2018-06-29** or **2018-06-29 02:00**)
 * _event ID_ is **631f49b3-46e1-42ec-8fff-081bd176c18a** for work item events, or
 * _event ID_ is **8833fc71-42ca-441b-ab12-25314877772d** for Git events, or
 * _event ID_ is **a96d6177-beef-477a-a2ee-2c31433214d0** for any other event type
