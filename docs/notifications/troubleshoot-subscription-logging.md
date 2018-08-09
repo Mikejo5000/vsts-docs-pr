@@ -10,13 +10,13 @@ ms.author: elbatk
 author: elbatk
 ms.topic: conceptual
 ms.date: 08/06/2018  
-monikerRange: '>= tfs-2018.2'
+monikerRange: '>= tfs-2018'
 ---
 
 
 # Enable and view detailed logging for subscriptions
 
-<b>VSTS | TFS 2018.2 | [Previous versions](../work/track/alerts-and-notifications.md)</b> 
+<b>VSTS | TFS 2018 | [Previous versions](../work/track/alerts-and-notifications.md)</b> 
 
 > [!NOTE]  
 > This topic applies to VSTS and to TFS 2018.2 and later versions. For on-premises TFS, [you must configure an SMTP server](/tfs/server/admin/setup-customize-alerts) in order for team members to see the Notifications option from their account menu and to receive notifications.
