@@ -82,11 +82,11 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/DevOpsIconOverview40.svg" alt="" />
+                                                        <img src="_img/index/DevOpsSuite.png" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3><a href="/vsts/user-guide/index">Start using Azure DevOps Services</a></h3>
+                                                    <h3><a href="/vsts/user-guide/index">Start using Azure DevOps</a></h3>
                                                 </div>
                                             </div>
                                         </div>
