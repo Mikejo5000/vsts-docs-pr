@@ -6,20 +6,20 @@ ms.assetid:
 ms.prod: devops
 ms.technology: devops-new-user
 ms.manager: douge
-ms.author: kaelli
-ms.date: 08/24/2017
+ms.author: sdanie
+author: steved0x
+ms.date: 09/05/2018
 ms.topic: quickstart
 monikerRange: 'vsts'
 ---
 
-
 # Code with Git
 
-**VSTS**
+#### VSTS
 
 After you create a new account and team project in VSTS, you can begin sharing your code with others. 
 
-To work with a Git repo, you clone it to your computer. Cloning a repo creates a complete local copy of the repo for you to work with, and downloads all [commits](../git/commits.md) and [branches](../git/branches.md) in the repo and sets up a named relationship with the repo on the server. Use this relationship to interact with the existing repo, pushing and pulling changes to share code with your team. 
+
 
 ## Install Git command line tools 
 
@@ -30,8 +30,35 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
 
 ## Get your code
 
+To get a copy of the source code to work with it, you clone the Git repo that contains the code. Cloning creates both a local copy of the source code so you can work with it, and all the version control information so Git can manage the source code.
 
-### Get the clone URL
+If you're just getting started with Azure Repos, your code might be in one of several places:
+
+- [The code is in my (or my organization's) Azure Repos Git](#the-code-is-in-my-or-my-organizations-azure-repos-git)
+- [The code is another Git repo such as GitHub or another Azure Repos Git repo](#the-code-is-another-git-repo-such-as-github-or-another-azure-repos-git-repo)
+- [The code is on my local computer and not yet in version control](#the-code-is-on-my-local-computer-and-not-yet-in-version-control)
+
+### The code is in my (or my organization's) Azure Repos Git repo
+
+If the code is in your (or your organization's) Azure Repo, you can clone the Git repo to your local computer and start working with it by jumping down to [Clone the repo](#clone-the-repo).
+
+### The code is another Git repo such as GitHub or another Azure Repos Git repo
+
+If the code is in another Git repo, such as a GitHub repo or a different Azure Repo, you can import it into a new or existing empty Git repo. Follow the steps in [Import a Git repo](../git/import-git-repository.md) and then return to this article and jump down to [Clone the repo](#clone-the-repo).
+
+### The code is on my local computer and not yet in version control
+
+If your code is not yet in version control, you have a couple of options:
+
+- I want to create a new repository and add my code there. To do this, follow the steps in [Create a new Git repo in your project](../git/create-new-repo.md#create-a-repo-using-the-web-portal) and then jump down to [Clone the repo](#clone-the-repo) in this article. 
+- I want to add my code to an existing repository. To do this, jump down to [Clone the repo](#clone-the-repo).
+
+Once the repository is cloned, we'll show you how to add your existing code to the repo.
+
+
+## Clone the repo
+
+To work with a Git repo, you clone it to your computer. Cloning a repo creates a complete local copy of the repo for you to work with, and downloads all [commits](../git/commits.md) and [branches](../git/branches.md) in the repo and sets up a named relationship with the repo on the server. Use this relationship to interact with the existing repo, pushing and pulling changes to share code with your team. 
 
 > [!NOTE]
 > The **New navigation** feature, which provides a vertical navigation experience, is in preview for VSTS. [Go here to enable it](/vsts/project/navigation/preview-features.md). When you enable **New navigation**, you automatically enable several new Agile tool features described in this blog post, [New Work Hubs](https://blogs.msdn.microsoft.com/devops/2018/06/22/new-work-hubs/). For on-premises TFS users, choose **Previous navigation** for guidance. 
@@ -57,6 +84,7 @@ New steps here
   ```
   git clone https://contoso-ltd.visualstudio.com/MyFirstProject/_git/contoso-demo
   ```
+
   Git downloads a copy of the code, including all [commits](../git/commits.md) and [branches](../git/branches.md) from the repo, into a new folder for you to work with.
 
   Keep this command window open, as you'll use it in the following steps.
