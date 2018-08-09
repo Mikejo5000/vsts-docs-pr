@@ -46,7 +46,7 @@
   items:
   - name: Why am I not getting an email
     href: troubleshoot-not-getting-email.md
-  - name: Why am I getting an this email
+  - name: Why am I getting this email
     href: troubleshoot-unexpected-email.md
   - name: Why are my emails delayed
     href: troubleshoot-delayed-email.md
