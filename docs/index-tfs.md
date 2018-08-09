@@ -301,7 +301,7 @@ featureFlags:
 <a class="barLink" href="/tfs/server/index"><img src="https://docs.microsoft.com/media/common/i_server.svg" alt="" />TFS administration</a>
 </td>
 <td width="25%">
-<a class="barLink" href="/vsts/organizations/settings/index"><img src="https://docs.microsoft.com/media/common/i_management.svg" alt="" />Project management</a>
+<a class="barLink" href="/vsts/organizations/projects/index"><img src="https://docs.microsoft.com/media/common/i_management.svg" alt="" />Project management</a>
 </td>
 <td width="25%">
 <a class="barLink" href="/vsts/organizations/security/index"><img src="https://docs.microsoft.com/media/common/i_security-management.svg" alt="" />Security &amp; identity</a>
@@ -312,7 +312,7 @@ featureFlags:
 </tr>
 <tr>
 <td width="25%">
-<a class="barLink" href="/vsts/work/customize/index"><img src="_img/index/i_config-tools.svg" alt="" />Work tracking customization</a>
+<a class="barLink" href="/vsts/reference/index"><img src="_img/index/i_config-tools.svg" alt="" />Work tracking customization</a>
 </td>
 <td width="25%">
 <a class="barLink" href="/vsts/organizations/settings/about-teams-and-settings"><img src="_img/index/i_configure-teams.svg" alt="" />Scale &amp; configure teams</a>
@@ -402,7 +402,7 @@ featureFlags:
 <a class="barLink" href="/vsts/report/sharepoint-dashboards/"><img src="_img/index/logo_sharepoint.svg" alt="" />SharePoint integration</a>
 </td>
 <td width="25%">
-<a class="barLink" href="/vsts/work/tfs-ps-sync/"><img src="_img/index/logo_project-server.svg" alt="" />Project Server integration</a>
+<a class="barLink" href="/vsts/reference/tfs-ps-sync/"><img src="_img/index/logo_project-server.svg" alt="" />Project Server integration</a>
 </td>
 <td width="25%">
 &nbsp;&nbsp;&nbsp;
