@@ -167,8 +167,8 @@
     topicHref: /tfs/index
     items:
     - name: Project Server Integration
-      tocHref: /vsts/work/tfs-ps-sync/
-      topicHref: /vsts/work/tfs-ps-sync/index
+      tocHref: /vsts/reference/tfs-ps-sync/
+      topicHref: /vsts/reference/tfs-ps-sync/index
     - name: SQL Server Reporting
       tocHref: /vsts/report/sql-reports/
       topicHref: /vsts/report/sql-reports/index
