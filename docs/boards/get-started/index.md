@@ -21,7 +21,7 @@ Start with [Sign up and invite some teammates](sign-up-invite-teammates.md).
 
 Then, read [Plan and track work](plan-track-work.md) to get familiar with work items and work item types.
 
-Next, to plan your work, see [Create your backlog](../backlogs/create-your-backlog.md?toc=/vsts/work/get-started/toc.json&bc=/vsts/work/get-started/breadcrumb/toc.json ) or [Use Kanban boards](../kanban/kanban-quickstart.md?toc=/vsts/work/get-started/toc.json&bc=/vsts/work/get-started/breadcrumb/toc.json )
+Next, to plan your work, see [Create your backlog](../backlogs/create-your-backlog.md?toc=/vsts/boards/get-started/toc.json&bc=/vsts/boards/get-started/breadcrumb/toc.json ) or [Use Kanban boards](../kanban/kanban-quickstart.md?toc=/vsts/boards/get-started/toc.json&bc=/vsts/boards/get-started/breadcrumb/toc.json )
 
 Other resources to get you up and running: 
 

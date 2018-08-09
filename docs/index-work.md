@@ -27,7 +27,7 @@ featureFlags:
 <table border="0" class="cardsA">
 <tr>
 <td width="25%">
-                               <a href="/vsts/work/get-started/index">
+                               <a href="/vsts/boards/get-started/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -46,7 +46,7 @@ featureFlags:
                                 </a>
 </td>
 <td width="25%">
-<a href="/vsts/work/work-items/index">
+<a href="/vsts/boards/work-items/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -66,7 +66,7 @@ featureFlags:
                                 </a>
 </td>
 <td width="25%">
-<a href="/vsts/work/kanban/index">
+<a href="/vsts/boards/boards/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -85,7 +85,7 @@ featureFlags:
                                 </a>
 </td>
 <td width="25%">
-<a href="/vsts/work/backlogs/index">
+<a href="/vsts/boards/backlogs/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -107,7 +107,7 @@ featureFlags:
 </tr>
 <tr>
 <td width="25%">
-<a href="/vsts/work/scrum/index">
+<a href="/vsts/boards/sprints/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -145,7 +145,7 @@ featureFlags:
                                 </a>
 </td>
 <td width="25%">
-                                <a href="/vsts/work/scale/index">
+                                <a href="/vsts/boards/plans/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">

@@ -7,6 +7,6 @@
     topicHref: /vsts/index-work
     items:
     - name: Get Started
-      tocHref: /vsts/work/get-started/
-      opicHref: /vsts/work/get-started/index
+      tocHref: /vsts/boards/get-started/
+      opicHref: /vsts/boards/get-started/index
 

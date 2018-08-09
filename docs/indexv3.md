@@ -50,7 +50,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3><a href="/vsts/work/work-items">Agile Onboarding Guide</a></h3>
+                                                    <h3><a href="/vsts/boards/work-items">Agile Onboarding Guide</a></h3>
                                                     <p>Sign up and start using Agile tools to plan and track work.</p>
                                                 </div>
                                             </div>
@@ -139,9 +139,9 @@ featureFlags:
                                             <div class="cardText">
                                                 <h3>Plan & track your work</h3>
                                                 <ul class="noBullet">
-                                                    <li><a class="barLink" href="/vsts/work/kanban/index">Boards (Kanban)</a></li>
-                                                    <li><a class="barLink" href="/vsts/work/backlogs/index">Backlogs</a></li>
-                                                    <li><a class="barLink" href="/vsts/work/scrum/index">Sprints (Scrum)</a></li>
+                                                    <li><a class="barLink" href="/vsts/boards/boards/index">Boards (Kanban)</a></li>
+                                                    <li><a class="barLink" href="/vsts/boards/backlogs/index">Backlogs</a></li>
+                                                    <li><a class="barLink" href="/vsts/boards/sprints/index">Sprints (Scrum)</a></li>
                                                     <li><a class="barLink" href="/vsts/report/dashboards/index">Dashboards</a></li>
                                                 </ul>
                                             </div>
@@ -218,13 +218,13 @@ featureFlags:
                                     </ul>
                                     <h3>Work (Agile)</h3>
                                     <ul>
-                                      <li><a class="barLink" href="/vsts/work/work-items/index">Work Items</a></li>
-                                        <li><a class="barLink" href="/vsts/work/kanban/index">Boards (Kanban)</a></li>
-                                        <li><a class="barLink" href="/vsts/work/backlogs/index">Backlogs</a></li>
-                                        <li><a class="barLink" href="/vsts/work/scrum/index">Sprints (Scrum)</a></li>
-                                        <li><a class="barLink" href="/vsts/work/track/index">Queries</a></li>
+                                      <li><a class="barLink" href="/vsts/boards/work-items/index">Work Items</a></li>
+                                        <li><a class="barLink" href="/vsts/boards/boards/index">Boards (Kanban)</a></li>
+                                        <li><a class="barLink" href="/vsts/boards/backlogs/index">Backlogs</a></li>
+                                        <li><a class="barLink" href="/vsts/boards/sprints/index">Sprints (Scrum)</a></li>
+                                        <li><a class="barLink" href="/vsts/boards/queries/index">Queries</a></li>
                                         <li><a class="barLink" href="/vsts/organizations/settings/work/inheritance-process-model">Customization</a></li>
-                                        <li><a class="barLink" href="/vsts/work/scale/index">Agile at Scale</a></li>
+                                        <li><a class="barLink" href="/vsts/boards/plans/index">Agile at Scale</a></li>
                                         <li><a class="barLink" href="/vsts/project/feedback/index">Request Feedback</a></li>
                                     </ul>
                                     <h3>Analytics</h3>
@@ -313,7 +313,7 @@ featureFlags:
                                     </div>
                             </li>
                            <li>
-                                <a href="/vsts/work/work-items"> 
+                                <a href="/vsts/boards/work-items"> 
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -528,7 +528,7 @@ featureFlags:
                         <a href="#agile">Work (Agile)</a>
                         <ul id="agile" class="cardsA">
                             <li>
-                                <a href="/vsts/work/work-items/index">
+                                <a href="/vsts/boards/work-items/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -548,7 +548,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/work/kanban/index">
+                                <a href="/vsts/boards/boards/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -567,7 +567,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/work/backlogs/index">
+                                <a href="/vsts/boards/backlogs/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -587,7 +587,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/work/scrum/index">
+                                <a href="/vsts/boards/sprints/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -606,7 +606,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/work/track/index">
+                                <a href="/vsts/boards/queries/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -644,7 +644,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/work/scale/index">
+                                <a href="/vsts/boards/plans/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -1623,7 +1623,7 @@ featureFlags:
                                 <div class="group">
                                     <h3>Additional resources</h3>
                                     <ul>
-                                        <li><a class="barLink" href="/vsts/work/customize/index">Customization</a></li>
+                                        <li><a class="barLink" href="/vsts/reference/index">Customization</a></li>
                                         <li><a class="barLink" href="/vsts/report/sql-reports/">SQL Server Reporting</a></li>
                                         <li><a class="barLink" href="/vsts/organizations/security/index">Security and Identity</a></li>
                                         <li><a class="barLink" href="/vsts/notifications/index">Notifications</a></li>
@@ -1633,7 +1633,7 @@ featureFlags:
                                     <h3>Deprecated resources</h3>
                                     <ul>
                                         <li><a class="barLink" href="/vsts/report/sharepoint-dashboards">SharePoint Integration</a></li>
-                                        <li><a class="barLink" href="/vsts/work/tfs-ps-sync">Project Server Integration</a></li>
+                                        <li><a class="barLink" href="/vsts/boards/tfs-ps-sync">Project Server Integration</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -2028,7 +2028,7 @@ featureFlags:
                         <a href="#add-resources">Additional resources</a>
                         <ul id="add-resources" class="cardsA">
                             <li>
-                                <a href="/vsts/work/customize/index">
+                                <a href="/vsts/reference/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -2166,7 +2166,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/work/tfs-ps-sync/">
+                                <a href="/vsts/reference/tfs-ps-sync/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">

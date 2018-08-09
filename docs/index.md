@@ -38,7 +38,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3><a href="/vsts/work/get-started">Start using Azure Boards</a></h3>
+                                                    <h3><a href="/vsts/boards/get-started">Start using Azure Boards</a></h3>
                                                 </div>
                                             </div>
                                         </div>

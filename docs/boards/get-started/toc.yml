@@ -8,9 +8,9 @@
   - name: Plan and track work
     href: plan-track-work.md 
   - name: Create your backlog
-    href: ../backlogs/create-your-backlog.md?toc=/vsts/work/get-started/toc.json&bc=/vsts/work/get-started/breadcrumb/toc.json 
+    href: ../backlogs/create-your-backlog.md?toc=/vsts/boards/get-started/toc.json&bc=/vsts/boards/get-started/breadcrumb/toc.json 
   - name: Use Kanban boards
-    href: ../kanban/kanban-quickstart.md?toc=/vsts/work/get-started/toc.json&bc=/vsts/work/get-started/breadcrumb/toc.json  
+    href: ../kanban/kanban-quickstart.md?toc=/vsts/boards/get-started/toc.json&bc=/vsts/boards/get-started/breadcrumb/toc.json  
   - name: Default permissions (Security)
     href: permissions-access-boards.md
   - name: Key concepts

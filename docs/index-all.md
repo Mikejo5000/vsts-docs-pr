@@ -24,7 +24,7 @@ featureFlags:
 <tr><td width="25%">
                         <h3>Get started guides</h3>
                             <p><a href="/vsts/repos/get-started/index">Azure Repos</a><br/>
-                            <a href="/vsts/work/get-started/index">Azure Boards</a><br/>
+                            <a href="/vsts/boards/get-started/index">Azure Boards</a><br/>
                             <a href="/vsts/pipelines/get-started/index">Azure Pipelines</a><br/>
                             <a href="/vsts/user-guide/index">Enterprise</a></p>
                         <h3>Overview</h3>
@@ -45,18 +45,18 @@ featureFlags:
 </td>
 <td width="25%">
                         <h3>Azure Boards</h3>
-                            <p><a href="/vsts/work/work-items/index">Work Items</a><br/>
-                            <a href="/vsts/work/kanban/index">Boards (Kanban)</a><br/>
-                            <a href="/vsts/work/backlogs/index">Backlogs</a><br/>
-                            <a href="/vsts/work/scrum/index">Sprints (Scrum)</a><br/>
-                            <a href="/vsts/work/track/index">Queries</a><br/>
+                            <p><a href="/vsts/boards/work-items/index">Work Items</a><br/>
+                            <a href="/vsts/boards/boards/index">Boards (Kanban)</a><br/>
+                            <a href="/vsts/boards/backlogs/index">Backlogs</a><br/>
+                            <a href="/vsts/boards/sprints/index">Sprints (Scrum)</a><br/>
+                            <a href="/vsts/boards/queries/index">Queries</a><br/>
                             <a href="/vsts/organizations/settings/work/inheritance-process-model">Customization</a><br/>
-                            <a href="/vsts/work/scale/index">Agile at Scale</a><br/>
+                            <a href="/vsts/boards/plans/index">Agile at Scale</a><br/>
                             <a href="/vsts/project/feedback/index">Request Feedback</a></p>
                         <h3>Office integration tools</h3>
-                            <p><a href="/vsts/work/backlogs/office/bulk-add-modify-work-items-excel">Excel</a><br/>
-                            <a href="/vsts/work/backlogs/office/create-your-backlog-tasks-using-project">Project</a><br/>
-                            <a href="/vsts/work/backlogs/office/storyboard-your-ideas-using-powerpoint">PowerPoint Storyboarding</a></p>
+                            <p><a href="/vsts/boards/backlogs/office/bulk-add-modify-work-items-excel">Excel</a><br/>
+                            <a href="/vsts/boards/backlogs/office/create-your-backlog-tasks-using-project">Project</a><br/>
+                            <a href="/vsts/boards/backlogs/office/storyboard-your-ideas-using-powerpoint">PowerPoint Storyboarding</a></p>
                        <h3>Azure Repos</h3>
                             <p><a href="/vsts/repos/git/index">Git Repositories</a><br/>
                             <a href="/vsts/repos/git/pullrequest">Pull Requests</a><br/>

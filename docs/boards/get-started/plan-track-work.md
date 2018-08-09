@@ -40,21 +40,21 @@ You can start viewing and adding work items once you connect to a project.
 (1) Check that you have selected the right project, then (2) choose **Work>Work Items**. 
 
 > [!div class="mx-imgBorder"]  
-> ![Open Work>Work Items, new navigation](/vsts/work/work-items/_img/view-add/open-work-items-agile.png)
+> ![Open Work>Work Items, new navigation](/vsts/boards/work-items/_img/view-add/open-work-items-agile.png)
 
 # [Previous navigation](#tab/previous-nav)
 
 Open a browser window, choose **Work**, and then **Work Items**. 
 
 > [!div class="mx-imgBorder"]
-![Work>Work Items ](/vsts/work/work-items/_img/view-add/work-items-hub.png)
+![Work>Work Items ](/vsts/boards/work-items/_img/view-add/work-items-hub.png)
 
 ---
 
 > [!NOTE]    
->Depending on the process chosen when the project was created&mdash;[Agile](/vsts/work/work-items/guidance/agile-process-workflow), [Scrum](/vsts/work/work-items/guidance/scrum-process-workflow), or [CMMI](/vsts/work/work-items/guidance/cmmi-process-workflow)&mdash;the types of work items you can create will differ. For example, backlog items may be called product backlog items (Scrum), user stories (Agile), or requirements (CMMI). All three are similar: they describe the customer value to deliver and the work to be performed.
+>Depending on the process chosen when the project was created&mdash;[Agile](/vsts/boards/work-items/guidance/agile-process-workflow), [Scrum](/vsts/boards/work-items/guidance/scrum-process-workflow), or [CMMI](/vsts/boards/work-items/guidance/cmmi-process-workflow)&mdash;the types of work items you can create will differ. For example, backlog items may be called product backlog items (Scrum), user stories (Agile), or requirements (CMMI). All three are similar: they describe the customer value to deliver and the work to be performed.
 >
-> For an overview of all three processes, see [Choose a process](/vsts/work/work-items/guidance/choose-process). 
+> For an overview of all three processes, see [Choose a process](/vsts/boards/work-items/guidance/choose-process). 
 
 
 ## Add a work item 
@@ -67,7 +67,7 @@ Open a browser window, choose **Work**, and then **Work Items**.
 	> ![Work>Work Items, Add a work item ](../work-items/_img/view-add/work-items-hub-new.png)
 
 	> [!TIP]    
-	> Work items you add are automatically scoped to the [Currently selected team's area and iteration paths](../../organizations/settings/set-team-defaults.md). To change the team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md?toc=/vsts/work/get-started/toc.json&bc=/vsts/work/get-started/breadcrumb/toc.json).
+	> Work items you add are automatically scoped to the [Currently selected team's area and iteration paths](../../organizations/settings/set-team-defaults.md). To change the team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md?toc=/vsts/boards/get-started/toc.json&bc=/vsts/boards/get-started/breadcrumb/toc.json).
 
 0. Enter a title and then save the work item. Before you can change the State from its initial default, you must save it.  
 

@@ -52,7 +52,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3><a href="/vsts/work/get-started">Boards</a></h3>
+                                                    <h3><a href="/vsts/boards/get-started">Boards</a></h3>
                                                     <p>Plan and track work and code defects with Agile tools.</p>
                                                 </div>
                                             </div>

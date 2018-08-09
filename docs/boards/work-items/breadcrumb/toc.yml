@@ -3,9 +3,9 @@
   topicHref: /vsts/index
   items: 
   - name: Azure Boards
-    tocHref: /vsts/work/
+    tocHref: /vsts/boards/
     topicHref: /vsts/index-work
     items:
     - name: Work Items
-      tocHref: /vsts/work/
-      topicHref: /vsts/work/work-items/index
+      tocHref: /vsts/boards/
+      topicHref: /vsts/boards/work-items/index
