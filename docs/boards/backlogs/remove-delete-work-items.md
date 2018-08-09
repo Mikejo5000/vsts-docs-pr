@@ -1,7 +1,7 @@
 ---
 title: Move, change, or delete work items
-titleSuffix: VSTS & TFS  
-description: Guide to removing or deleting working items and test artifacts in Visual Studio Team Services and Team Foundation Server
+titleSuffix: Azure DevOps and TFS  
+description: Guide to removing or deleting working items and test artifacts in Azure Boards and Team Foundation Server
 keywords: backlogs
 ms.global_help.title: Move, change, or delete work items
 ms.technology: devops-agile
@@ -205,10 +205,6 @@ You can change a single work item or several [multi-selected work items](bulk-mo
 
 When you discover that a work item belongs to a different project within your organization or collection, you can move it where it belongs. You can move a single work item or several [multi-selected work items](bulk-modify-work-items.md). 
 
-<!---
-Feature availability: The **Move to project&hellip;** menu option is supported only from VSTS.
--->  
-
 You can only move work items from one project to another project within the organization or collection. You can't move work items associated with test management. To move work items to another project, you must be a member of the Project Administrators group or be [granted explicit permissions to move work items](../../organizations/security/set-permissions-access-work-tracking.md#move-delete-permissions).
 
 1. Open the work item and choose the ![Move work item icon](../_img/icons/change-team-project-icon.png) **Move...** option from the work item form's ![Action icon](../_img/icons/actions-icon.png) Actions menu.    
@@ -385,9 +381,9 @@ To delete test artifacts, the following restrictions and operations apply:
 
 ::: moniker range=">= tfs-2017 <= tfs-2018" 
 > [!IMPORTANT]   
-><b>Feature availability: </b> The permanently delete feature of test artifacts is available from the Test and Work for TFS 2017.1 and later versions. 
+> The permanently delete feature of test artifacts is available from the Test and Work for TFS 2017.1 and later versions. 
 >
->We only support permanent deletion of test artifacts such as test plans, test suites, test cases, shared steps and shared parameters. Deleted test artifacts won't appear in the recycle bin and cannot be restored. Deletion of test artifacts not only deletes the selected test artifact but also all its associated child items such as child test suites, test points across all configurations, testers (the underlying test case work item doesn't get deleted), test results history, and other associated history.
+> We only support permanent deletion of test artifacts such as test plans, test suites, test cases, shared steps and shared parameters. Deleted test artifacts won't appear in the recycle bin and cannot be restored. Deletion of test artifacts not only deletes the selected test artifact but also all its associated child items such as child test suites, test points across all configurations, testers (the underlying test case work item doesn't get deleted), test results history, and other associated history.
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017"

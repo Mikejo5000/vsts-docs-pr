@@ -1,7 +1,7 @@
 ---
 title: Use Agile tools to organize your backlog
-titleSuffix: VSTS & TFS  
-description:  Map backlog items to features, and features to epics in Visual Studio Team Services or Team Foundation Server
+titleSuffix: Azure DevOps and TFS  
+description:  Map backlog items to features, and features to epics in Azure Boards or Team Foundation Server
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: C294ACBD-00A3-4FCF-8777-B354BC0CC1EF  

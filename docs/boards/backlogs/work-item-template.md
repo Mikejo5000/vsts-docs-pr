@@ -1,7 +1,7 @@
 ---
 title: Work item templates
-titleSuffix: VSTS & TFS   
-description: Add and manage work item templates to pre-populate fields in work item forms in Visual Studio Team Services & Team Foundation Server 
+titleSuffix: Azure DevOps and TFS   
+description: Add and manage work item templates to pre-populate fields in work item forms in Azure Boards & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 9b575c05-16f3-4027-aa5a-67b017a0089d
@@ -16,7 +16,7 @@ ms.date: 06/21/2018
 
 # Use templates to add and update work items 
 
-**VSTS | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013 | Visual Studio** 
+**Azure DevOps Services | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013 | Visual Studio** 
 
 <!--- Supports FWLINK http://go.microsoft.com/fwlink/?LinkId=824070 -->
 
@@ -188,7 +188,7 @@ You can add links to a markdown widget that appear on your team dashboard in the
 
 ::: moniker range="tfs-2015"
 > [!NOTE]   
-> Multiple team dashboards and the Markdown widget are available for VSTS and TFS 2015.2 and later versions. 
+> Multiple team dashboards and the Markdown widget are available for Azure Boards and TFS 2015.2 and later versions. 
 
 ::: moniker-end
 
@@ -391,7 +391,7 @@ To change the directory where templates are stored, click the Configure link, or
 
 <!---
 > [!NOTE]  
->**Feature availability**: The ability to add and remove tags from a template is supported from VSTS and TFS 2017 and later versions. 
+>**Feature availability**: The ability to add and remove tags from a template is supported from Azure Boards and TFS 2017 and later versions. 
 -->
 
 You can add tags to a template and they'll be applied to the work item when you use the template. 

@@ -1,7 +1,7 @@
 ---
 title: Agile tools and terms 
-titleSuffix: VSTS & TFS
-description: Key definitions for objects and items used to track work in Visual Studio Team Services & Team Foundation Server
+titleSuffix: Azure DevOps and TFS
+description: Key definitions for objects and items used to track work in Azure Boards & Team Foundation Server
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid:  
@@ -15,7 +15,7 @@ ms.date: 07/21/2018
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-The Microsoft Agile glossary is a short dictionary of terms used in tracking work using Agile tools on the Visual Studio Team Services (VSTS) and Team Foundation Server platforms. See also: 
+The Microsoft Agile glossary is a short dictionary of terms used in tracking work using Azure Boards and Team Foundation Server. See also: 
 - [Work item field index](guidance/work-item-field.md)  
 - [Project management and navigation glossary](../../project/navigation/glossary.md)  
 
@@ -68,10 +68,10 @@ Specifies the set of work item types that you don't want users to create manuall
 You can use [TFS Team Project Manager](https://github.com/jelledruyts/TfsTeamProjectManager), an open-source client available from github to quickly determine which WITs belong to the Hidden Types Category. 
 
 ## Hosted XML process model  
-The Hosted XML process model provides support for customizing work tracking objects and Agile tools for a project by modifying and importing a process template. This process model is only available for select accounts hosted on the Visual Studio Team Services cloud platform.  To learn more, see [Hosted process model](../../organizations/settings/work/hosted-xml-process-model.md).
+The Hosted XML process model provides support for customizing work tracking objects and Agile tools for a project by modifying and importing a process template. This process model is only available for select accounts hosted on the Azure Boards cloud platform.  To learn more, see [Hosted process model](../../organizations/settings/work/hosted-xml-process-model.md).
 
 ## Inheritance process model 
-The Inheritance process model provides support for customizing work tracking objects and Agile tools for a project through the user interface. This process model is only available for accounts hosted on the Visual Studio Team Services cloud platform. Projects inherit the customizations made to a process. To learn more, see [Inheritance process model](../../organizations/settings/work/inheritance-process-model.md).
+The Inheritance process model provides support for customizing work tracking objects and Agile tools for a project through the user interface. This process model is only available for accounts hosted on the Azure Boards cloud platform. Projects inherit the customizations made to a process. To learn more, see [Inheritance process model](../../organizations/settings/work/inheritance-process-model.md).
 
 
 ## Iteration paths (aka sprints)

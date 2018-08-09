@@ -1,7 +1,7 @@
 ---
 title: Bulk modify using Excel
-titleSuffix: VSTS & TFS  
-description: Use Excel to bulk add or modify work items--such as backlog items, tasks, bugs, or issues--in Visual Studio Team Services or Team Foundation Server   
+titleSuffix: Azure DevOps and TFS  
+description: Use Excel to bulk add or modify work items--such as backlog items, tasks, bugs, or issues--in Azure Boards or Team Foundation Server   
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 1399B4B1-72AE-4328-AAD8-3AAF0B808761
@@ -32,17 +32,17 @@ In this topic you'll learn:
   
 
 > [!NOTE]  
->You can't use Office Project 365 to connect to VSTS and TFS. Also, you can't use Excel to export and import test case steps or other test artifacts. Instead, use the [bulk edit features supported via the web portal](../../../test/create-test-cases.md).  
+>You can't use Office Project 365 to connect to Azure Boards and TFS. Also, you can't use Excel to export and import test case steps or other test artifacts. Instead, use the [bulk edit features supported via the web portal](../../../test/create-test-cases.md).  
 
 <a id="add-work-items"> </a>  
 ## Add work items
 
-1.  If you don't have Office Excel 2007 or a more recent version, [install it](https://products.office.com/excel). For VSTS and TFS 2017 and later versions, you'll need Excel 2010 or a later version. 
+1.  If you don't have Office Excel 2007 or a more recent version, [install it](https://products.office.com/excel). For Azure Boards and TFS 2017 and later versions, you'll need Excel 2010 or a later version. 
 
 2.  If you haven't installed a version of [Visual Studio (2010 or later)](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs) or the [Team Foundation Server Standalone Office Integration (free)](https://visualstudio.microsoft.com/downloads), you'll need to install one of these versions to connect to a project hosted on VSTS or an on-premises TFS. 
 	
 	> [!NOTE]   
-	>The only way to get the Team Foundation plug-in is by installing one of the latest editions of Visual Studio or the TFS Standalone Office Integration installer. The TFS Office Integration supports connection to VSTS and TFS from Excel, Project, and the PowerPoint-based storyboarding tool.
+	>The only way to get the Team Foundation plug-in is by installing one of the latest editions of Visual Studio or the TFS Standalone Office Integration installer. The TFS Office Integration supports connection to Azure Boards and TFS from Excel, Project, and the PowerPoint-based storyboarding tool.
 
 3.  In Excel, start with a blank worksheet. If you don't see the **Team** ribbon (or the **Team** menu if you use Excel 2007), see step 2 or [TFS-Office integration issues](tfs-office-integration-issues.md). 
 
@@ -101,7 +101,7 @@ You can make changes to work items in Excel, Project, the web portal, or Visual 
 ## Select user accounts 
 
 > [!NOTE]  
-><b>Feature availability: </b>  To access the [Select User](#select-user) feature, you need to install [Visual Studio (at least VS 2015.1 or later version](https://visualstudio.microsoft.com/downloads/) or [Team Foundation Server Office Integration 2015 Update 2 or later version](https://visualstudio.microsoft.com/downloads/). You can download the free version of Visual Studio Community. Get this feature to avoid data validation errors by mispelling user names and when you must assign user names from a large group of user accounts.  
+> To access the [Select User](#select-user) feature, you need to install [Visual Studio (at least VS 2015.1 or later version](https://visualstudio.microsoft.com/downloads/) or [Team Foundation Server Office Integration 2015 Update 2 or later version](https://visualstudio.microsoft.com/downloads/). You can download the free version of Visual Studio Community. Get this feature to avoid data validation errors by mispelling user names and when you must assign user names from a large group of user accounts.  
 
 You can use the Select User feature to find user accounts and assign values to person named fields. Also, this feature provides access to the most recently used (MRU) values. If your team contains several hundreds or thousands of user accounts, you'll want to use this feature.  
 

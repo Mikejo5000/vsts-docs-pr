@@ -1,7 +1,7 @@
 ---
 title: Scaled Agile Framework
-titleSuffix: VSTS & TFS
-description: How to implement the Scaled Agile Framework to support epics, release trains, and multiple backlogs in Visual Studio Team Services & Team Foundation Server 
+titleSuffix: Azure DevOps and TFS
+description: How to implement the Scaled Agile Framework to support epics, release trains, and multiple backlogs in Azure Boards & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: C8E9CFD2-F08A-4FB8-AC53-B9B6B49A22A3
@@ -35,7 +35,7 @@ The SAFe big picture addresses how a portfolio vision is met by a hierarchy of t
 
 Reproduced with permission from &#169; 2011-2016  [Scaled Agile Inc.](http://www.scaledagile.com/). All rights reserved.  
 
-Examples provided below illustrate how to configure a three-level team hierarchy and map teams to their respective area and iteration paths. The examples build from the [Agile process](../work-items/guidance/agile-process.md), However, the changes can be applied to any project hosted on Visual Studio Team Services (VSTS) or an on-premises TFS.
+Examples provided below illustrate how to configure a three-level team hierarchy and map teams to their respective area and iteration paths. The examples build from the [Agile process](../work-items/guidance/agile-process.md), However, the changes can be applied to any project hosted on Azure Boards or an on-premises TFS.
 
 ![Agile tool structure to support SAFe](_img/safe-objects-map-to-vso-objects.png)  
 

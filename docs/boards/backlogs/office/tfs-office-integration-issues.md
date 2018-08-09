@@ -1,6 +1,6 @@
 ---
 title: TFS-Office integration issues
-titleSuffix: VSTS & TFS
+titleSuffix: Azure DevOps and TFS
 description: Resolve common integration issues that occur with TFS Office integration, resolve TF86001 
 ms.technology: devops-agile
 ms.prod: devops

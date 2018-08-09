@@ -1,6 +1,6 @@
 ---
 title: Backlogs and work items 
-titleSuffix: VSTS & TFS 
+titleSuffix: Azure DevOps and TFS 
 description: Use the web portal to plan and track work  
 ms.technology: devops-agile
 ms.prod: devops
@@ -24,7 +24,7 @@ You access all Agile tools from **Work**. If you're new to Agile, see [What is A
 
 
 > [!NOTE]
->To understand the differences between backlogs, boards and Delivery plans, see [Backlogs, boards, and plans](backlogs-boards-plans.md). 
+> To understand the differences between backlogs, boards and Delivery plans, see [Backlogs, boards, and plans](backlogs-boards-plans.md). 
  
 
 ## Define work items and create your backlog  
@@ -37,14 +37,14 @@ You build your project plan by creating a backlog of work items that represent t
 
 ## Try this next  
 
-Take these tools for a test run by [signing up for a free VSTS organization](../../organizations/accounts/create-organization-msa-or-work-student.md). From there, you're ready to [create your backlog](create-your-backlog.md).  
+Take these tools for a test run by [signing up for Azure Boards](../get-started/index.md). 
 
 Once you've started tracking work, you'll want to monitor and track progress, identify trends, and share your plans. See [Charts, dashboards, and widgets](../../report/overview.md). 
 
 
 ## Related articles
 
-You access tools provided by VSTS and TFS by connecting from a client to the server, either in the cloud or on-premises. Some web portal tools require additional Visual Studio Subscriptions or Advanced/VS Enterprise access. To learn more, see [Permissions and access for work tracking](../../organizations/security/permissions-access-work-tracking.md). 
+You access tools provided by Azure Boards and TFS by connecting from a client to the server, either in the cloud or on-premises. Some web portal tools require additional Visual Studio Subscriptions or Advanced/VS Enterprise access. To learn more, see [Permissions and access for work tracking](../../organizations/security/permissions-access-work-tracking.md). 
 
 
 

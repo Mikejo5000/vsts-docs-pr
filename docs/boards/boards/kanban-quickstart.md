@@ -1,7 +1,7 @@
 ---
 title: Kanban quickstart 
-titleSuffix: VSTS & TFS
-description: Use the Kanban board to plan and track work in Visual Studio Team Services and Team Foundation Server 
+titleSuffix: Azure DevOps and TFS
+description: Use the Kanban board to plan and track work in Azure Boards and Team Foundation Server 
 ms.global_help.title: View or add a Kanban board
 ms.global_help.keywords: ms.vss-work-web.boards-hub, 1  
 ms.topic: get-started-article

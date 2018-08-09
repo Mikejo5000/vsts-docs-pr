@@ -1,6 +1,6 @@
 ---
 title: Add tasks to support sprint planning
-titleSuffix: VSTS & TFS
+titleSuffix: Azure DevOps and TFS
 description: Add tasks to user stories assigned to a sprint or iteration working with Scrum methods 
 ms.technology: devops-agile
 ms.prod: devops

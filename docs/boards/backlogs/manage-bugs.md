@@ -1,9 +1,9 @@
 ---
 title: Create & manage bugs using Agile tools
-titleSuffix: VSTS & TFS 
+titleSuffix: Azure DevOps and TFS 
 ms.global_help.title: Manage bugs
 ms.global_help.keywords: ms.vss-work-web.work-items-hub, 5
-description: Manage technical debt and triage bugs using Agile tools in Visual Studio Team Services & Team Foundation Server
+description: Manage technical debt and triage bugs using Agile tools in Azure Boards & Team Foundation Server
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 6E5710EE-21C8-4264-AD65-A827D186F134
@@ -17,7 +17,7 @@ ms.date: 03/20/2018
 # Manage bugs
 
 
-**VSTS | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013**
+**Azure DevOps Services | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013**
 
 How do you track and manage defects in your code? How do you make sure software problems and customer feedback get addressed in a timely manner to support high-quality software deployments? And, how do you do this while making good progress on new features? 
 
@@ -72,7 +72,7 @@ The new web form is only available from TFS 2017 and later versions.
 The old web form is only available for TFS 2017 and earlier versions.  
 ::: moniker-end  
 ::: moniker range=">= tfs-2013 <= tfs-2017"  
-To learn more about working in the old web form, see [Add work items to plan and track your project](add-work-items-tfs.md).  
+To learn more about working in the old web form, see [Add work items to plan and track your project](add-work-items.md).  
 
 ![Scrum bug work item form, TFS 2015 or earlier versions](_img/scrum-bug-wi-form.png)  
 ::: moniker-end  

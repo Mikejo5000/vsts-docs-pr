@@ -1,7 +1,7 @@
 ---
 title: Update and monitor your scrum taskboard 
-titleSuffix: VSTS & TFS  
-description: Implement scrum using the sprint task board in Visual Studio Team Services & Team Foundation Server
+titleSuffix: Azure DevOps and TFS  
+description: Implement scrum using the sprint task board in Azure Boards & Team Foundation Server
 ms.technology: devops-agile
 ms.prod: devops 
 ms.assetid: 278BF8D9-E34F-4D14-BACC-D3BA704C2C47  
@@ -14,7 +14,7 @@ ms.date: 06/21/2018
 
 # 6. Update and monitor your Taskboard  
 
-[!INCLUDE [temp](../_shared/dev15-version-header.md)] 
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)] 
 
 Once you have your [sprint plan](assign-work-sprint.md) in place, you'll execute that plan for the duration of the sprint. In your daily Scrum meetings, your team can view progress made to backlog items and tasks from the sprint task board.  
 

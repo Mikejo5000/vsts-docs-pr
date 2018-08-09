@@ -1,7 +1,7 @@
 ---
 title: Define query as a hyperlink
-titleSuffix: VSTS & TFS
-description: Construct a URL for a query in Visual Studio Team Services & Team Foundation Server
+titleSuffix: Azure DevOps and TFS
+description: Construct a URL for a query in Azure Boards & Team Foundation Server
 ms.prod: devops
 ms.technology: devops-agile
 ms.article:   
@@ -23,7 +23,7 @@ ms.date: 09/29/2017
 
 The easiest way to define a hyperlink is to create a query that matches what you want and then copy the URL for the query. The hyperlink uses the work item query language (WIQL), which resembles Transact-SQL. For details about constructing WIQLs, see [Syntax for the Work Item Query Language (WIQL)](wiql-syntax.md).
 
-VSTS and TFS 2015 require that you encode the WIQL portion of the URL syntax. You can use any URL encoder tool to encode your URL. 
+Azure Boards and TFS 2015 require that you encode the WIQL portion of the URL syntax. You can use any URL encoder tool to encode your URL. 
 
 TFS 2013 and previous versions didn't require encoding.  
 

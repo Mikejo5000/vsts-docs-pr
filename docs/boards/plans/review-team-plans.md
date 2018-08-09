@@ -1,7 +1,7 @@
 ---
 title: Review team delivery plans 
-titleSuffix: VSTS & TFS
-description: Add & use plans to review scheduled multi-team deliverables in Visual Studio Team Services & Team Foundation Server   
+titleSuffix: Azure DevOps and TFS
+description: Add & use plans to review scheduled multi-team deliverables in Azure Boards & Team Foundation Server   
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 3B41D55E-B7B1-41B1-B68F-7A83BA2890A5  
@@ -16,7 +16,7 @@ ms.date: 08/06/2018
 
 # Review team Delivery Plans 
 
-<b>VSTS | TFS 2018 | TFS 2017.2</b> 
+<b>Azure DevOps Services | TFS 2018 | TFS 2017.2</b> 
 
 Use the visualization options provided by Delivery Plans to review the schedule of stories or features your teams plan to deliver. Delivery Plans show the scheduled work items by sprint (iteration path) of selected teams against a calendar view.
 

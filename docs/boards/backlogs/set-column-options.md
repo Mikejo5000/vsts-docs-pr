@@ -1,8 +1,8 @@
 ---
 title: Add or remove columns, change column width, or sort order 
-titleSuffix: VSTS & TFS
+titleSuffix: Azure DevOps and TFS
 ms.global_help.title: Change column options
-description: Set column fields to show and sort fields for a backlog or query in Visual Studio Team Services or Team Foundation Server 
+description: Set column fields to show and sort fields for a backlog or query in Azure Boards or Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 823CC1FD-74A9-4123-92E1-506A505DEC8D

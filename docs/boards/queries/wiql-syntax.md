@@ -1,7 +1,7 @@
 ---
 title: WIQL reference syntax  
-titleSuffix: VSTS & TFS 
-description: Reference syntax for the Work Item Query Language  to support queries in Visual Studio Team Services & Team Foundation Server 
+titleSuffix: Azure DevOps and TFS 
+description: Reference syntax for the Work Item Query Language  to support queries in Azure Boards & Team Foundation Server 
 ms.technology: devops-collab
 ms.prod: devops
 ms.topic: reference

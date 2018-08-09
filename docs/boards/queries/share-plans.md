@@ -1,7 +1,7 @@
 ---
 title: Share work plans 
-titleSuffix: VSTS & TFS 
-description: Email links, Copy URL, and share information about work items, queries, and more in Visual Studio Team Services or Team Foundation Server 
+titleSuffix: Azure DevOps and TFS 
+description: Email links, Copy URL, and share information about work items, queries, and more in Azure Boards or Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 5edac6b9-2642-419a-8745-9e91ee40993b
@@ -16,7 +16,7 @@ ms.date: 03/20/2018
 
 # Share work plans and progress 
 
-<b>VSTS | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013 | Visual Studio | Team Explorer Everywhere </b>  
+<b>Azure DevOps Services | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013 | Visual Studio | Team Explorer Everywhere </b>  
 
 Using work items to track your work provides a host of benefits, including the ability to easily share information. You can capture most information within the work item Description or other rich-text formatted field. If you need to maintain the information in a different format, you can easily link to or attach a file.  
 
@@ -183,7 +183,7 @@ By default, the size of work item attachments is limited to 4 MB. You can use th
 Storyboarding your ideas and goals increases visual understanding. With [PowerPoint Storyboarding](../backlogs/office/storyboard-your-ideas-using-powerpoint.md) you can bring your ideas to life with storyboard shapes, text, animation, and all the other features that PowerPoint provides.  
 
 > [!NOTE]  
-> **Feature availability:**  Storyboarding with PowerPoint requires [Office PowerPoint 2007 or later](http://www.microsoftstore.com/store/msstore/pd/PowerPoint-2010/productID.216564300) and the TFS Storyboarding add-in. You install the TFS Storyboarding add-in for PowerPoint by installing one of the latest editions of [Visual Studio](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs) or [Team Foundation Server Standalone Office Integration](https://visualstudio.microsoft.com/downloads). 
+> Storyboarding with PowerPoint requires [Office PowerPoint 2007 or later](http://www.microsoftstore.com/store/msstore/pd/PowerPoint-2010/productID.216564300) and the TFS Storyboarding add-in. You install the TFS Storyboarding add-in for PowerPoint by installing one of the latest editions of [Visual Studio](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs) or [Team Foundation Server Standalone Office Integration](https://visualstudio.microsoft.com/downloads). 
 
 By linking your storyboard to a work item, you provide your team access to the shared file where they can add their comments. From the ![Links tab icon](../backlogs/_img/icon-links-tab-wi.png), **Links**, or a **Storyboards** tab, you can link storyboards that you created using PowerPoint Storyboarding or other application. When you make changes to a linked storyboard, the work item continues to link to the file with the latest changes.
 

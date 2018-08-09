@@ -1,7 +1,7 @@
 ---
 title: Create your backlog 
-titleSuffix: VSTS & TFS
-description: Add items, plan your project, order/prioritize, and estimate your backlog of deliverables in Visual Studio Team Services & Team Foundation Server   
+titleSuffix: Azure DevOps and TFS
+description: Add items, plan your project, order/prioritize, and estimate your backlog of deliverables in Azure Boards & Team Foundation Server   
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 04df6b31-ef6c-4285-81a6-96768f03ecf4
@@ -328,39 +328,4 @@ the items in your backlog may be called product backlog items (PBIs), user stori
 - [Filter product and portfolio backlogs ](filter-backlogs.md)
 - [Backlog priority or stack rank order](stack-rank-backlog-position.md)
 - [Backlog keyboard shortcuts](backlogs-keyboard-shortcuts.md)
-
-
-<!---
-
-The URL follows this pattern: ```https://<OrganizationName>.visualstudio.com/DefaultCollection/<project name>/_backlogs```  
- 
-### TFS
-<img src="_img/cyb-open-backlog-tfs-2015.png" alt="Open the backlog" style="border: 1px solid #C3C3C3;" />  
-
-The URL follows this pattern:
-```http://{server}:8080/tfs/DefaultCollection/{project name}/_backlogs```
-
-If you don't see the team or project you want, open the project/team drop-down menu and select the project/team that you've recently visited, or choose **Browse all** to browse all projects and teams. 
-
-<img src="../_shared/_img/switch-team-project-2.png" alt="Choose another team from the project menu" style="border: 1px solid #C3C3C3;" /> 
-
-Building your backlog starts by quickly capturing the requirements you want for your product. If you don't have a project yet, create one in [VSTS](../../organizations/accounts/set-up-vs.md) or set one up in an [on-premises TFS](../../organizations/projects/create-project.md).    
-
--->
-
-
-<!---
-
-> [!NOTE]  
-><b>Feature availability: </b>From the web portal for VSTS and TFS 2017, you'll have access to the [new form with the new work tracking experience](../backlogs/add-work-items.md). For TFS 2015 and earlier versions, the old form is supported.   
-	
-<p>For details on adding work items using the new form, see [add work items](add-work-items.md).</p>  
-
-<img src="_img/cyb-product-backlog-form-ts.png" alt="Product backlog item- VSTS - Add details to a work item" style="border: 1px solid #C3C3C3;" />  
- 
-<p>For details on adding work items using the old form, see [add work items (TFS)](add-work-items.md).</p>  
-
-<img src="_img/ALM_CB_CreateWorkItem.png" alt="Product backlog item - TFS - Add details to a work item" style="border: 1px solid #C3C3C3;" />   
--->
-
 

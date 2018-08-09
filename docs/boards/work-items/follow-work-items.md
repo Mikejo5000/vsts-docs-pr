@@ -1,7 +1,7 @@
 ---
 title: Follow work or pull requests
-titleSuffix: VSTS & TFS
-description: Track updates made to a work item or pull request by following it when using Visual Studio Team Services or Team Foundation Server 
+titleSuffix: Azure DevOps and TFS
+description: Track updates made to a work item or pull request by following it when using Azure Boards or Team Foundation Server 
 ms.technology: devops-collab
 ms.prod: devops
 ms.assetid: 77CAEE8E-BF1A-47DA-9818-A0C52BAC813C

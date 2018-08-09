@@ -1,7 +1,7 @@
 ---
 title: Add columns to your Kanban board
-titleSuffix: VSTS & TFS
-description: Map your Kanban board, support your team's work flow in Visual Studio Team Services & Team Foundation Server
+titleSuffix: Azure DevOps and TFS
+description: Map your Kanban board, support your team's work flow in Azure Boards & Team Foundation Server
 ms.global_help.title: Add columns
 ms.global_help.keywords: ms.vss-work-web.boards-hub, 3  
 ms.technology: devops-agile
@@ -16,7 +16,7 @@ ms.date: 03/20/2018
 
 # Add columns to your Kanban board
 
-[!INCLUDE [temp](../_shared/dev15-version-header.md)]  
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]  
 
 Kanban's number one practice is to visualize the flow of work. Accordingly, your number one task is to visualize your team's workflow. You do this by identifying the types of work and handoffs that occur regularly as your team moves items off the backlog and into a shippable state.
 
@@ -246,7 +246,7 @@ First, open the Kanban portal for your project. Click the **Board** link from th
 	- The [Process](../work-items/guidance/choose-process.md) you used to create your project  
 	- Whether your team has chosen to [treat bugs like requirements or like tasks](../../organizations/settings/show-bugs-on-backlog.md)  
 
-	**VSTS and TFS 2015 Update 1 options:**  
+	**Azure Boards and TFS 2015 Update 1 options:**  
 
 	Click a column tab to see all the settings you can modify. Your initial column settings will look something like this.  
 
@@ -259,7 +259,7 @@ First, open the Kanban portal for your project. Click the **Board** link from th
 
 	Here, we rename the first, second, and third columns to Backlog, Analyze, and Develop. We then add a column and label it Test. 
 	
-	**VSTS and TFS 2015 Update 1 :**  
+	**Azure Boards and TFS 2015 Update 1 :**  
 	You can rename a column directly form the Kanban board. 
 
 	![Kanban board, rename a column directly](_img/rename-kanban-columns-direct.png)
@@ -274,12 +274,12 @@ First, open the Kanban portal for your project. Click the **Board** link from th
 	Rename column titles to best reflect each stage of work. Keep the column titles as simple as possible.
 	
 4.	To change the column order:  
-	- **VSTS and TFS 2015 Update 1 :** Simply drag the column tab to the position you want.  
+	- **Azure Boards and TFS 2015 Update 1 :** Simply drag the column tab to the position you want.  
 	- **TFS 2015:** use the left ![left arrow](_img/ALM_AC_LeftIcon.png) or right ![right arrow](_img/ALM_AC_RightIcon.png) arrow icons.   
 
 5.	To delete a column, first make sure that the column doesn't contain any work items. If it does, move the items to another column.  
 
-	**VSTS and TFS 2015 Update 1 :**  Click Delete on the column tab menu.  
+	**Azure Boards and TFS 2015 Update 1 :**  Click Delete on the column tab menu.  
 	![Kanban board, delete a column](_img/kanban-delete-column.png)  
 
 	**TFS 2015:**   Click X at the top of the column.  

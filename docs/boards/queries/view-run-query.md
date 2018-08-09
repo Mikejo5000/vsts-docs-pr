@@ -1,7 +1,7 @@
 ---
 title: View or run a query 
-titleSuffix: VSTS & TFS
-description: View, run, or favorite a query in Visual Studio Team Services & Team Foundation Server
+titleSuffix: Azure DevOps and TFS
+description: View, run, or favorite a query in Azure Boards & Team Foundation Server
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid:  

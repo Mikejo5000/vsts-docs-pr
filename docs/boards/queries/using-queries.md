@@ -1,7 +1,7 @@
 ---
 title: Create managed queries with the Query Editor
-titleSuffix: VSTS & TFS
-description: Create flat-list, tree, or direct-links queries to list, triage, update, and chart work items in Visual Studio Team Services & Team Foundation Server 
+titleSuffix: Azure DevOps and TFS
+description: Create flat-list, tree, or direct-links queries to list, triage, update, and chart work items in Azure Boards & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 364000d3-200a-495a-bfb9-83915240af67
@@ -199,7 +199,7 @@ To list work items defined in two or more projects, checkmark **Query across pro
 ::: moniker range=">= tfs-2015"
 With the **Query across projects** checked, you can add the Team Project field to filter to a select number of projects.   
 
-<img src="_img/using-queries-query-across-select-projects.png" alt="VSTS and TFS 2015.1, Web portal, Query across select projects using the In operator" style="border: 2px solid #C3C3C3;" />
+<img src="_img/using-queries-query-across-select-projects.png" alt="Azure Boards and TFS 2015.1, Web portal, Query across select projects using the In operator" style="border: 2px solid #C3C3C3;" />
 
 > [!NOTE]    
 > Separate multiple project names with the list separator that corresponds to the regional settings defined for your client computer, for example, a comma (,). 

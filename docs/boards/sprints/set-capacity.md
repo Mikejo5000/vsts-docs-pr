@@ -1,6 +1,6 @@
 ---
 title: Set team capacity to support sprint planning
-titleSuffix: VSTS & TFS
+titleSuffix: Azure DevOps and TFS
 description: Set team capacity for a sprint or iteration working with Scrum methods 
 ms.custom: Uses the New Navigation
 ms.technology: devops-agile

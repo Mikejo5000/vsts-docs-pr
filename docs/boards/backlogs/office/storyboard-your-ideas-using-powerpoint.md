@@ -1,7 +1,7 @@
 ---
 title: Storyboard your ideas with PowerPoint
-titleSuffix: VSTS & TFS 
-description: Turn your ideas and goals into something visual using the Storypoint add-in to PowerPoint for Visual Studio Team Services or Team Foundation Server  
+titleSuffix: Azure DevOps and TFS 
+description: Turn your ideas and goals into something visual using the Storypoint add-in to PowerPoint for Azure Boards or Team Foundation Server  
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 432016A2-61E7-4863-99AB-61E4D74E28E7
@@ -25,7 +25,7 @@ With storyboarding, you turn your ideas and goals into something visual. Your id
 2.  If you haven't installed a version of [Visual Studio (2013 or later)](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs) or the [Team Foundation Server Standalone Office Integration 2015 (free)](https://visualstudio.microsoft.com/downloads/#team-foundation-server-office-integration-2015-update-3-1), you'll need to install one of these versions to create and modify storyboards.
 
 	> [!NOTE]   
-	>The only way to get the Team Foundation plug-in is by installing one of the latest editions of Visual Studio or the TFS Standalone Office Integration installer. TFS Office Integration 2015 supports connection to VSTS and TFS from Excel, Project, and the PowerPoint-based storyboarding tool. 
+	>The only way to get the Team Foundation plug-in is by installing one of the latest editions of Visual Studio or the TFS Standalone Office Integration installer. TFS Office Integration 2015 supports connection to Azure Boards and TFS from Excel, Project, and the PowerPoint-based storyboarding tool. 
 
 3.  Open Power Point Storyboarding and start with a blank slide. You should see the **Storyboarding** ribbon and **Storyboard Shapes** library. If you don't see the Storyboarding ribbon, see step 2.
 

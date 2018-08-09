@@ -19,13 +19,13 @@ ms.date: 03/20/2018
 
 # View and add work items using the Work Items page  
 
-**VSTS | TFS 2018.2**  
+**Azure DevOps Services | TFS 2018.2**  
 
 View work items that you created or are assigned to you. The **Work>Work Items** page provides several personalized pivots and filter functions to streamline listing work items. Use this page to quickly find work items defined across teams within a project. 
 
 ::: moniker range=">= tfs-2018"
 > [!NOTE]     
-> **Feature availability:** The **Work Items** page is in preview and currently available from TFS 2018.2 and later versions. 
+> The **Work Items** page is available from TFS 2018.2 and later versions. 
 ::: moniker-end  
 
 ## Prerequisites 

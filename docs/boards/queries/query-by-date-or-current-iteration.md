@@ -1,7 +1,7 @@
 ---
 title: Query by date or current iteration 
-titleSuffix: VSTS & TFS
-description: Query for work items based on a date, a team's current iteration, or a sliding window of sprints in Visual Studio Team Services & Team Foundation Server 
+titleSuffix: Azure DevOps and TFS
+description: Query for work items based on a date, a team's current iteration, or a sliding window of sprints in Azure Boards & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 95D9F558-E3C4-4D5F-BB69-76A3BD7625D8
@@ -14,7 +14,7 @@ ms.date: 03/06/2018
 
 # Query by date or current iteration
 
-[!INCLUDE [temp](../_shared/dev15-version-header.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 The **@Today** and **@CurrentIteration** macros are useful for listing work items based on relative dates or their assignment to a team's current iteration. To list work items based on when they were created, closed, resolved, or changed state&mdash;use **@Today** or specify dates. For queries that list work items based on their assignment to a team's current sprint, use **@CurrentIteration**. 
 
@@ -28,7 +28,7 @@ In addition, you can use  the <b>@CurrentIteration +/- <i>n</i></b> macro to cre
 
 
 > [!NOTE]   
-> **Feature availability**: The **@CurrentIteration** macro is supported for VSTS and TFS 2015 and later versions. The **@CurrentIteration +/- n** macro is supported for VSTS. These two macros only work when run them from the web portal. 
+> **Feature availability**: The **@CurrentIteration** macro is supported for Azure Boards and TFS 2015 and later versions. The **@CurrentIteration +/- n** macro is supported for VSTS. These two macros only work when run them from the web portal. 
 
 ## Query for items based on when changes occurred
 

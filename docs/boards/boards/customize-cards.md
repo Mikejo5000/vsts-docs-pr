@@ -1,7 +1,7 @@
 ---
 title: Customize cards on a board
-titleSuffix: VSTS & TFS
-description: Customize cards on the Kanban or Sprint/Scrum/Task boards in Visual Studio Team Services & Team Foundation Server 
+titleSuffix: Azure DevOps and TFS
+description: Customize cards on the Kanban or Sprint/Scrum/Task boards in Azure Boards & Team Foundation Server 
 ms.global_help.title: Customize cards
 ms.global_help.keywords: ms.vss-work-web.boards-hub, 6    
 ms.technology: devops-agile
@@ -18,7 +18,7 @@ ms.date: 03/20/2018
 
 # Customize cards  
 
-**VSTS | TFS 2018 | TFS 2017 | TFS 2015**  
+**Azure DevOps Services | TFS 2018 | TFS 2017 | TFS 2015**  
 
 ::: moniker range=">= tfs-2013"
 > [!NOTE]   

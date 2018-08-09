@@ -1,7 +1,7 @@
 ---
 title: Add features & epics to a Kanban board
-titleSuffix: VSTS & TFS
-description: Quickly define and view the status of child features, user stories, or backlog items using Kanban features or epic boards in Visual Studio Team Services & Team Foundation Server
+titleSuffix: Azure DevOps and TFS
+description: Quickly define and view the status of child features, user stories, or backlog items using Kanban features or epic boards in Azure Boards & Team Foundation Server
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 489C612D-983E-47D3-BD1A-F13C5DCD74E2  
@@ -17,12 +17,6 @@ ms.date: 03/20/2018
 # Kanban board features and epics  
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
-
-
-<!---
-> [!NOTE]    
-><b>Feature availability: </b>Child checklists for feature and epic Kanban boards are supported from VSTS and TFS 2017 and later versions.
---> 
 
 If you use Kanban to track progress on your backlog, you can also use Kanban boards to track epics and features.  
 

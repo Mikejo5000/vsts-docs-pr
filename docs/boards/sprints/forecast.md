@@ -1,7 +1,7 @@
 ---
 title: Forecasting 
-titleSuffix: VSTS & TFS   
-description: Determine how much work your team can deliver across several sprints by forecasting in Visual Studio Team Services & Team Foundation Server     
+titleSuffix: Azure DevOps and TFS   
+description: Determine how much work your team can deliver across several sprints by forecasting in Azure Boards & Team Foundation Server     
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: C46ED4AA-4B8F-4D5D-BC51-52F6D67BF8C6

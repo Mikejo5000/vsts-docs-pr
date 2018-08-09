@@ -1,7 +1,7 @@
 ---
 title: Backlogs, boards, & plans
-titleSuffix: VSTS & TFS
-description: Understand the tasks supported among backlogs, Kanban boards, and task boards in Visual Studio Team Services & Team Foundation Server  
+titleSuffix: Azure DevOps and TFS
+description: Understand the tasks supported among backlogs, Kanban boards, and task boards in Azure Boards & Team Foundation Server  
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 00D09790-63C3-4E3F-91BA-122CE2779A70
@@ -379,11 +379,11 @@ These reasons can cause work items that belong to the Task Category to not appea
 
  <!---
 > [!NOTE]  
->Appearance of task and child items on the task board may differ depending on whether you work in VSTS and TFS.
+>Appearance of task and child items on the task board may differ depending on whether you work in Azure Boards and TFS.
 
 > [!NOTE]  
->In VSTS and TFS 2015.2 and later versions, Tasks not linked to a parent appear under an *Unparented* section.
+>In Azure Boards and TFS 2015.2 and later versions, Tasks not linked to a parent appear under an *Unparented* section.
 
 > [!NOTE]  
->In VSTS and TFS 2015.2 and later versions, tasks linked to a parent work item assigned to another team's area path will appear under the *Unparented* section.  
+>In Azure Boards and TFS 2015.2 and later versions, tasks linked to a parent work item assigned to another team's area path will appear under the *Unparented* section.  
 -->

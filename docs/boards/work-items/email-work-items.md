@@ -1,7 +1,7 @@
 ---
 title: Email or print work items
-titleSuffix: VSTS & TFS
-description: Email or print work items to share work tracking information in Visual Studio Team Services & Team Foundation Server
+titleSuffix: Azure DevOps and TFS
+description: Email or print work items to share work tracking information in Azure Boards & Team Foundation Server
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: B2E9B082-15BE-448C-96D8-3EF048A15560
@@ -15,7 +15,7 @@ ms.date: 11/27/2017
 
 # Email or print work items 
 
-**VSTS | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013 | Visual Studio 2015 | Team Explorer Everywhere** 
+**Azure DevOps Services | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013 | Visual Studio 2015 | Team Explorer Everywhere** 
 
 
 Using work items to track your work provides a host of benefits, including the ability to easily share information. You can capture most information within the work item Description or other rich-text formatted field. If you need to maintain the information in a different format, you can easily link to or attach a file.  
@@ -23,7 +23,7 @@ Using work items to track your work provides a host of benefits, including the a
 Here's a list of the most common ways in which teams share information and plans using work item tracking. 
 
 > [!NOTE]    
-><b>Feature availability: </b>Some features are only available from the web portal or a Team Foundation client such as Visual Studio or the Eclipse plug-in, Team Explorer Everywhere (TEE). 
+> Some features are only available from the web portal or a Team Foundation client such as Visual Studio or the Eclipse plug-in, Team Explorer Everywhere (TEE). 
 
 <table >
 <thead align="center">
@@ -253,15 +253,12 @@ To print the details of a work item, open a query in Visual Studio that contains
 
 --- 
 
+::: moniker range=">= tfs-2018"
+
 <a id="release-summary"></a>
 ## Email release summary
 
-From **Build and release>Releases**, choose a specific release and click the ![email](../_img/icons/email-icon.png) Send Email icon to share the results of that release.  
-
-
-> [!NOTE]    
-><b>Feature availability: </b>This feature is available from VSTS and TFS 2018 and later versions.
- 
+From **Build and release>Releases**, choose a specific release and click the ![](../_img/icons/email-icon.png) **Send Email** icon to share the results of that release.  
 
 ![Release summary, send email](../queries/_img/share-plans-email-release-definition.png)
 
@@ -271,13 +268,9 @@ In the To box, start typing the name of the team member you want to send the sum
 
 Optionally, enter a note about the release or un-check any section you don't want included. The default is to include all details, environmental summary, issues, and work items associated with the release.   
 
-
+::: moniker-end  
 
 ## Related articles  
-
-As you can see, there are many ways to share information using work items alone.  
-
-See also the following topics:
 
 - [Use templates to add and update work items](../backlogs/work-item-template.md)  
 - [Share work plans and progress](../queries/share-plans.md) 

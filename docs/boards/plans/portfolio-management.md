@@ -1,7 +1,7 @@
 ---
 title: Portfolio management
-titleSuffix: VSTS & TFS
-description: Configure teams to support portfolio backlogs to track progress across teams in Visual Studio Team Services & Team Foundation Server 
+titleSuffix: Azure DevOps and TFS
+description: Configure teams to support portfolio backlogs to track progress across teams in Azure Boards & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: F6FF6E6B-C9AA-4681-9205-D48C8F29D94B  

@@ -1,7 +1,7 @@
 ---
 title: Create your backlog and tasks using Project
-titleSuffix: VSTS & TFS
-description: Add items, plan, order, and estimate your backlog of deliverables in Visual Studio Team Services or Team Foundation Server  
+titleSuffix: Azure DevOps and TFS
+description: Add items, plan, order, and estimate your backlog of deliverables in Azure Boards or Team Foundation Server  
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: be5cef4f-755f-4ffe-8dd7-876d1e02c330
@@ -35,15 +35,15 @@ Use this topic to learn how to:
 
 ## Add tasks and publish work items
 
-1.  If you don't have Office Project 2007 or a more recent version, [install it](https://products.office.com/project). For VSTS and TFS 2017 and later versions, you'll need Project 2010 or later version.  
+1.  If you don't have Office Project 2007 or a more recent version, [install it](https://products.office.com/project). For Azure Boards and TFS 2017 and later versions, you'll need Project 2010 or later version.  
  
 	> [!NOTE]  
-	>You can't use Office Project 365 to connect to VSTS and TFS. 
+	>You can't use Office Project 365 to connect to Azure Boards and TFS. 
 
 2.  If you haven't installed a version of [Visual Studio (2010 or later)](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs) or the [Team Foundation Server Standalone Office Integration 2015 (free)](https://visualstudio.microsoft.com/downloads/#team-foundation-server-office-integration-2015-update-3-1), you'll need to install one of these versions to connect to a project hosted on VSTS or an on-premises TFS. 
 
 	> [!NOTE]    
-	>The only way to get the Team Foundation plug-in is by installing one of the latest editions of Visual Studio or the TFS Standalone Office Integration installer. TFS Office Integration 2015 supports connection to VSTS and TFS from Excel, Project, and the PowerPoint-based storyboarding tool. 
+	>The only way to get the Team Foundation plug-in is by installing one of the latest editions of Visual Studio or the TFS Standalone Office Integration installer. TFS Office Integration 2015 supports connection to Azure Boards and TFS from Excel, Project, and the PowerPoint-based storyboarding tool. 
 
 3.  In Project, start with a blank worksheet. If you don't see the **Team** ribbon (or the **Team** menu if you use Project 2007) see step 2 or [TFS-Office integration issues](tfs-office-integration-issues.md). 
 

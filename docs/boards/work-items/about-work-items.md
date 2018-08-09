@@ -1,7 +1,7 @@
 ---
 title: Plan and track work with work items
-titleSuffix: VSTS & TFS
-description: Use work items to plan, track, & collaborate with others when developing software apps in Visual Studio Team Services & Team Foundation Server
+titleSuffix: Azure DevOps and TFS
+description: Use work items to plan, track, & collaborate with others when developing software apps in Azure Boards & Team Foundation Server
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid:  
@@ -189,7 +189,7 @@ You can add work items from various clients, such as:
 - From Test Manager or the web portal, you can [create test cases that automatically link to a user story or product backlog item](../../test/create-test-cases.md).
 - You can create bugs from the web portal, Visual Studio, or when [testing with Microsoft Test Manager](https://msdn.microsoft.com/library/dd286731.aspx).  
 
-For an overview of all clients that connect to your project, see [Tools and clients that connect to VSTS and TFS](../../user-guide/tools.md). 
+For an overview of all clients that connect to your project, see [Tools and clients that connect to Azure Boards and TFS](../../user-guide/tools.md). 
 
 
 ## Try this next 

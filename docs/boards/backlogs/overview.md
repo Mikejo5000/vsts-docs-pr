@@ -1,5 +1,6 @@
 ---
-title: Agile tools - Scrum, Kanban, and more | VSTS & TFS
+title: Agile tools - Scrum, Kanban, and more
+titleSuffix: Azure DevOps and TFS 
 description: Use the web portal to implement your Scrum or Kanban process, plan and track work, and monitor progress and trends  
 ms.technology: devops-agile
 ms.prod: devops
@@ -70,7 +71,7 @@ Once you've started tracking work, you'll want to monitor and track progress, id
 
 ## Related articles
 
-You access tools provided by VSTS and TFS by connecting from a client to the server, either in the cloud or on-premises. Some web portal tools require additional Visual Studio Subscriptions or Advanced/VS Enterprise access.  To learn more, see [Permissions and access for work tracking](../../organizations/security/permissions-access-work-tracking.md). 
+You access tools provided by Azure Boards and TFS by connecting from a client to the server, either in the cloud or on-premises. Some web portal tools require additional Visual Studio Subscriptions or Advanced/VS Enterprise access.  To learn more, see [Permissions and access for work tracking](../../organizations/security/permissions-access-work-tracking.md). 
 
 For an overview of all your customization options, see [Customize your work tracking experience](../../reference/customize-work.md). 
 
