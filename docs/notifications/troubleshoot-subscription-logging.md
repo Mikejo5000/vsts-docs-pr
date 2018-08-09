@@ -1,7 +1,7 @@
 ---
-title: Enable detailed logging for subscriptions
+title: Enable and view detailed logging for subscriptions
 titleSuffix: VSTS & TFS 
-description: Why did I get this email
+description: Enable and view detailed logging for subscriptions
 ms.technology: devops-collab
 ms.prod: devops
 ms.manager: douge
@@ -10,13 +10,61 @@ ms.author: elbatk
 author: elbatk
 ms.topic: conceptual
 ms.date: 08/06/2018  
-monikerRange: '>= tfs-2017'
+monikerRange: '>= tfs-2018.2'
 ---
 
 
-# Enable detailed logging for subscriptions
+# Enable and view detailed logging for subscriptions
 
-<b>VSTS | TFS 2018 | TFS 2017.1 | [Previous versions](../work/track/alerts-and-notifications.md)</b> 
+<b>VSTS | TFS 2018.2 | [Previous versions](../work/track/alerts-and-notifications.md)</b> 
 
 > [!NOTE]  
-> This topic applies to VSTS and to TFS 2017.1 and later versions. If you work from an on-premises TFS 2017 or ealier versions, see [Set alerts, get notified when changes occur](../work/track/alerts-and-notifications.md). For on-premises TFS, [you must configure an SMTP server](/tfs/server/admin/setup-customize-alerts) in order for team members to see the Notifications option from their account menu and to receive notifications.
+> This topic applies to VSTS and to TFS 2018.2 and later versions. For on-premises TFS, [you must configure an SMTP server](/tfs/server/admin/setup-customize-alerts) in order for team members to see the Notifications option from their account menu and to receive notifications.
+
+Subscription logging provides diagnostic information from the notifications pipeline and is disabled by default.  Once enabled, up to 25 logs or one hours worth of logs will be collected for the subscription.
+
+## Enabling subscription logging
+
+Perform the following steps to eanble subscription logging
+1. Enable diagnostics for your account by entering this URL in your browser.
+
+    `https://{account name}.visualstudio.com/_notifications?diagnostics=true`
+
+1. When this completes, the option _Enable Diagnostics_ appears in the subscription context menu.
+
+    ![Enable subscription logging](_img/enable-subscription-logging.png)
+
+## View subscription diagnostic logs for event matching
+1. Retrieve all subscription event processing logs in a given timeframe by entering the URL in your browser.
+
+    `https://{account}/_apis/notification/DiagnosticLogs/{event ID}/entries?startTime={date}&endTime={date}`
+
+    **where**
+    * _account_ is your account (e.g. fabrikam-fiber.visualstudio.com)
+    * _date_ is a date time specification (e.g 2018-06-29)
+    * _event ID_ is **915f48f2-1b64-40d9-a43f-fe2528b4f296** for work item events, or
+    * _event ID_ is **9a688110-9e33-4cdc-affd-75d16303e7f1** for Git events, or
+    * _event ID_ is **a4804dcf-4bb6-4109-b61c-e59c2e8a9ff7** for any other event type
+
+The result is json formatted logging information.
+
+## View subscription diagnostic logs for notification delivery
+
+1. Retrieve all notification delivery logs in a given timeframe by entering the URL in your browser.
+
+    `https://{account}/_apis/notification/DiagnosticLogs/{event ID}/entries?startTime={date}&endTime={date}`
+
+    **where**
+    * _account_ is your account (e.g. fabrikam-fiber.visualstudio.com)
+    * _date_ is a date time specification (e.g 2018-06-29)
+    * _event ID_ is **631f49b3-46e1-42ec-8fff-081bd176c18a** for work item events, or
+    * _event ID_ is **8833fc71-42ca-441b-ab12-25314877772d** for Git events, or
+    * _event ID_ is **a96d6177-beef-477a-a2ee-2c31433214d0** for any other event type
+
+The result is json formatted logging information.
+
+
+
+
+
+

@@ -33,5 +33,7 @@ Your email address is on this line or are you a member of a group included on th
 ## Step 2: Inspect the footer of the unexpected email
 All emails will have a footer which contains a link to view the subscription which triggered the email.  Click the link and view the subscription.
 
+![Profile email](_img/profile-email.png)
+
 ## Contact customer support
 If you're not able to resolve the issue with the steps above, consider contacting [customer support](troubleshoot-contact-support.md)
