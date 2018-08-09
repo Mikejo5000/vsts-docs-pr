@@ -21,57 +21,57 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 
 |Feature  |Area  |Server  |
 |---------|---------|---------|
-|Work Item support for Markdown editing|Work|2019|
-|Cross organization linking for Work Items|Work|TBD|
-|Migration from a Hosted XML processes to an Inherited process|Work|N/A|
-|GVFS - Performance improvements for status|Code|2019|
-|Git Pull Requests – Change target branch for an active pull request|Code|TBD|
-|Git Pull Requests – Improved search/filter options for pull requests|Code|TBD|
-|Visual Studio Git - Stash|Code|N/A|
-|Configuration as code (YAML) for builds – Generally Available|Build|2019|
-|Hosted build images – Ability to use latest or previous version of image|Build|N/A|
-|Release Management orchestration improvements – Tag based triggers|Release|2019|
-|[Agent-based deployment in Release Management](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/03/deployment-groups/) – Sharing of VMs|Release|2019|
-|Release traceability – Pull request integration|Release|2019|
-|Updated landing pages for Release|Release|2019|
-|Canvas-based Release Summary views to track progress of releases|Release|2019|
-|Deployment Groups easy configuration of Azure VMs|Release|TBD|
-|Extend release gates – Test|Release|TBD|
-|Release traceability – Work Item integration|Release|TBD|
-|Configuration as code (YAML) releases - Public Preview|Release|TBD|
-|Package Management – Repo, Build provenance information for a package|Package|2019|
-|Package Management – Upstreams sources for VSTS feeds across organizations with the same Azure Active Directory|Package|2019|
-|Package Management – Package consumption metrics|Package|2019|
-|Package Management – Maven Upstream support|Package|TBD|
-|PyPI (Python ecosystem) package hosting and upstream sources|Package|TBD|
-|Universal Packages (“versioned bunch of files”) hosting|Package|TBD|
-|Analytics – Test Failures report for Build pipelines|Test|2019|
-|Analytics – Test Failures report for Release pipelines|Test|2019|
-|Analytics – Test Failures report for Release pipelines|Reporting|2019|
-|Microsoft Teams – Embed VSTS Dashboard in Channel|Reporting|2019|
-|Analytics – Test Failures report for Build pipelines|Reporting|2019|
-|[Encryption at rest for disks used by code and work item search](https://blogs.msdn.microsoft.com/devops/2017/09/05/visual-studio-team-services-encryption-at-rest/)|Admin|N/A|
-|[Conditional Access Policy when using Alternate Authentication (e.g. Personal Access Tokens)](https://blogs.msdn.microsoft.com/devops/2018/01/30/supporting-azuread-conditional-access-policy-across-vsts/)|Admin|N/A|
-|[Improved Alternate Authentication experience](https://blogs.msdn.microsoft.com/devops/2017/07/14/improved-alternate-authentication-experience/)|Admin|TBD|
-|[Azure Active Directory users in Microsoft Account-backed organization](https://blogs.msdn.microsoft.com/devops/2018/03/28/deadline-extended-for-connecting-vsts-accounts-to-azuread/)|Admin|N/A|
-|Connect your VSTS organizations to Azure Active Directory from within VSTS|Admin|N/A|
-|Publisher certification process|Marketplace|N/A|
-|CC/BCC (carbon copy) recipient support for email notifications|Notifications|2019|
-|Notification feed|Notifications|2019|
+|[Work Item support for Markdown editing](https://mseng.visualstudio.com/VSTS%20Roadmap/_workitems/edit/1221138)|Work|2019|
+|[Cross organization linking for Work Items](https://mseng.visualstudio.com/VSTS%20Roadmap/_workitems/edit/1221166)|Work|TBD|
+|[Migration from a Hosted XML processes to an Inherited process](https://mseng.visualstudio.com/VSTS%20Roadmap/_workitems/edit/1243399)|Work|N/A|
+|[GVFS - Performance improvements for status](https://mseng.visualstudio.com/VSTS%20Roadmap/_workitems/edit/1221135)|Code|2019|
+|[Git Pull Requests – Change target branch for an active pull request](https://mseng.visualstudio.com/VSTS%20Roadmap/_workitems/edit/1257204)|Code|TBD|
+|[Git Pull Requests – Improved search/filter options for pull requests](https://mseng.visualstudio.com/VSTS%20Roadmap/_workitems/edit/1257205)|Code|TBD|
+|[Visual Studio Git - Stash](https://mseng.visualstudio.com/VSTS%20Roadmap/_workitems/edit/1289269)|Code|N/A|
+|[Configuration as code (YAML) for builds – Generally Available](https://mseng.visualstudio.com/VSTS%20Roadmap/_workitems/edit/1221141)|Build|2019|
+|[Hosted build images – Ability to use latest or previous version of image](https://mseng.visualstudio.com/VSTS%20Roadmap/_workitems/edit/1221143)|Build|N/A|
+|[Release Management orchestration improvements – Tag based triggers](https://mseng.visualstudio.com/VSTS%20Roadmap/_workitems/edit/1221125)|Release|2019|
+|[Agent-based deployment in Release Management – Sharing of VMs](https://mseng.visualstudio.com/VSTS%20Roadmap/_workitems/edit/1221126)|Release|2019|
+|[Release traceability – Pull request integration](https://mseng.visualstudio.com/VSTS%20Roadmap/_workitems/edit/1221144)|Release|2019|
+|[Updated landing pages for Release](https://mseng.visualstudio.com/VSTS%20Roadmap/_workitems/edit/1221147)|Release|2019|
+|[Canvas-based Release Summary views to track progress of releases](https://mseng.visualstudio.com/VSTS%20Roadmap/_workitems/edit/1221148)|Release|2019|
+|[Deployment Groups easy configuration of Azure VMs](https://mseng.visualstudio.com/VSTS%20Roadmap/_workitems/edit/1221167)|Release|TBD|
+|[Extend release gates – Test](https://mseng.visualstudio.com/VSTS%20Roadmap/_workitems/edit/1221168)|Release|TBD|
+|[Release traceability – Work Item integration](https://mseng.visualstudio.com/VSTS%20Roadmap/_workitems/edit/1221169)|Release|TBD|
+|[Configuration as code (YAML) releases - Public Preview](https://mseng.visualstudio.com/VSTS%20Roadmap/_workitems/edit/1221170)|Release|TBD|
+|[Package Management – Repo, Build provenance information for a package](https://mseng.visualstudio.com/VSTS%20Roadmap/_workitems/edit/1221150)|Package|2019|
+|[Package Management – Upstreams sources for VSTS feeds across organizations with the same Azure Active Directory](https://mseng.visualstudio.com/VSTS%20Roadmap/_workitems/edit/1221151)|Package|2019|
+|[Package Management – Package consumption metrics](https://mseng.visualstudio.com/VSTS%20Roadmap/_workitems/edit/1221152)|Package|2019|
+|[Package Management – Maven Upstream support](https://mseng.visualstudio.com/VSTS%20Roadmap/_workitems/edit/1221171)|Package|TBD|
+|[PyPI (Python ecosystem) package hosting and upstream sources](https://mseng.visualstudio.com/VSTS%20Roadmap/_workitems/edit/1292653)|Package|TBD|
+|[Universal Packages (“versioned bunch of files”) hosting](https://mseng.visualstudio.com/VSTS%20Roadmap/_workitems/edit/1292654)|Package|TBD|
+|[Analytics – Test Failures report for Build pipelines](https://mseng.visualstudio.com/VSTS%20Roadmap/_workitems/edit/1221155)|Test|2019|
+|[Analytics – Test Failures report for Release pipelines](https://mseng.visualstudio.com/VSTS%20Roadmap/_workitems/edit/1285207)|Test|2019|
+|[Microsoft Teams – Embed VSTS Dashboard in Channel](https://mseng.visualstudio.com/VSTS%20Roadmap/_workitems/edit/1221156)|Reporting|2019|
+|[Analytics – Test Failures report for Build pipelines](https://mseng.visualstudio.com/VSTS%20Roadmap/_workitems/edit/1221160)|Reporting|2019|
+|[Analytics – Test Failures report for Release pipelines](https://mseng.visualstudio.com/VSTS%20Roadmap/_workitems/edit/1285208)|Reporting|2019|
+|[Encryption at rest for disks used by code and work item search](https://mseng.visualstudio.com/VSTS%20Roadmap/_workitems/edit/1221133)|Admin|N/A|
+|[Conditional Access Policy when using Alternate Authentication (e.g. Personal Access Tokens)](https://mseng.visualstudio.com/VSTS%20Roadmap/_workitems/edit/1221162)|Admin|N/A|
+|[Improved Alternate Authentication experience](https://mseng.visualstudio.com/VSTS%20Roadmap/_workitems/edit/1221172)|Admin|TBD|
+|[Azure Active Directory users in Microsoft Account-backed organization](https://mseng.visualstudio.com/VSTS%20Roadmap/_workitems/edit/1271012)|Admin|N/A|
+|[Connect your VSTS organizations to Azure Active Directory from within VSTS](https://mseng.visualstudio.com/VSTS%20Roadmap/_workitems/edit/1274015)|Admin|N/A|
+|[Publisher certification process](https://mseng.visualstudio.com/VSTS%20Roadmap/_workitems/edit/1221163)|Marketplace|N/A|
+|[CC/BCC (carbon copy) recipient support for email notifications](https://mseng.visualstudio.com/VSTS%20Roadmap/_workitems/edit/1221164)|Notifications|2019|
+|[Notification feed](https://mseng.visualstudio.com/VSTS%20Roadmap/_workitems/edit/1221165)|Notifications|2019|
 
 ### 2018 Q4
 
 |Feature  |Area  |Server  |
 |---------|---------|---------|
-|TFS Support for Move work item to another team project / Change work item type|Work|2019|
-|A discussion-centric Work Item form|Work|TBD|
-|GVFS for Mac - Public Preview|Code|N/A|
-|Extensible Pool Providers|Build|TBD|
-|Upstreams sources for VSTS feeds across organizations in an enterprise|Package|N/A|
-|Analytics - Available for TFS|Reporting|2019|
-|Dashboards - Sprint Burndown Widget based on Analytics|Reporting|2019|
-|Dashboards – Create dashboard separate from a team|Reporting|2019|
-|[Bring multiple organizations under an enterprise](https://blogs.msdn.microsoft.com/devops/2016/01/11/how-we-plan-to-enable-creating-multiple-collections-per-account/)|Admin|N/A|
+|[A discussion-centric Work Item form](https://mseng.visualstudio.com/VSTS%20Roadmap/_workitems/edit/1221139)|Work|TBD|
+|[TFS Support for Move work item to another team project / Change work item type](https://mseng.visualstudio.com/VSTS%20Roadmap/_workitems/edit/1292418)|Work|2019|
+|[GVFS for Mac - Public Preview](https://mseng.visualstudio.com/VSTS%20Roadmap/_workitems/edit/1221136)|Code|N/A|
+|[Extensible Pool Providers](https://mseng.visualstudio.com/VSTS%20Roadmap/_workitems/edit/1221174)|Build|TBD|
+|[Upstreams sources for VSTS feeds across organizations in an enterprise](https://mseng.visualstudio.com/VSTS%20Roadmap/_workitems/edit/1292657)|Package|N/A|
+|[Dashboards - Sprint Burndown Widget based on Analytics](https://mseng.visualstudio.com/VSTS%20Roadmap/_workitems/edit/1221157)|Reporting|2019|
+|[Dashboards – Create dashboard separate from a team](https://mseng.visualstudio.com/VSTS%20Roadmap/_workitems/edit/1221159)|Reporting|2019|
+|[Analytics - Available for TFS](https://mseng.visualstudio.com/VSTS%20Roadmap/_workitems/edit/1282505)|Reporting|2019|
+|[Bring multiple organizations under an enterprise](https://mseng.visualstudio.com/VSTS%20Roadmap/_workitems/edit/1221161)|Admin|N/A|
 
 ## Current features
 
