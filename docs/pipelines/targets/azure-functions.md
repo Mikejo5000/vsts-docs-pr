@@ -36,7 +36,7 @@ When you are deploying a function app developed by using C# in .NET class librar
 
 * [Package: NuGet](../tasks/package/nuget.md)
 
-* [Build: Visual Studio Build](../tasks/build/visual-studio-build.md)   
+* [Build: Visual Studio Build](../tasks/build/visual-studio-build.md)
 
 If your function app project uses C# script (.cxs) files, you do not need to add these tasks. 
 
@@ -49,6 +49,8 @@ When you are deploying a JavaScript function app project, you should include the
 When you are deploying a Java function app project, you should include the [Build: Maven](../tasks/build/maven.md) task to use Maven to build the app. 
 
 <!-- Need to verify that this is actually true -->
+
+---
 
 ## Generate a .zip file
 
