@@ -10,7 +10,7 @@
   - name: Create your backlog
     href: ../backlogs/create-your-backlog.md?toc=/vsts/boards/get-started/toc.json&bc=/vsts/boards/get-started/breadcrumb/toc.json 
   - name: Use Kanban boards
-    href: ../kanban/kanban-quickstart.md?toc=/vsts/boards/get-started/toc.json&bc=/vsts/boards/get-started/breadcrumb/toc.json  
+    href: ../boards/kanban-quickstart.md?toc=/vsts/boards/get-started/toc.json&bc=/vsts/boards/get-started/breadcrumb/toc.json  
   - name: Default permissions (Security)
     href: permissions-access-boards.md
   - name: Key concepts
@@ -20,10 +20,10 @@
     - name: Navigation Basics
       href: ../../project/navigation/index.md
     - name: Boards
-      href: ../kanban/index.md
+      href: ../boards/index.md
     - name: Backlogs
       href: ../backlogs/index.md
     - name: Sprints (Scrum)
-      href: ../scrum/index.md
+      href: ../sprints/index.md
     - name: Project Management
       href: ../../organizations/projects/index.md
