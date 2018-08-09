@@ -51,9 +51,9 @@ The role of project manager typically encompasses planning the feature set to de
 - Use queries to list and update work items, create status and trend charts, and post charts to dashboards 
 - Use dashboards to share information, status, and trends with your team or organization
   
-To get started, see [Get started with Agile tools to plan and track work](../work/backlogs/overview.md).  
+To get started, see [Get started with Agile tools to plan and track work](../boards/backlogs/overview.md).  
 
-If you are used to using Excel or Project to plan and track your work, you can still use these tools and integrate with VSTS and TFS. See [Bulk modify using Excel](../work/backlogs/office/bulk-add-modify-work-items-excel.md) and [Create your backlog and tasks using Project](../work/backlogs/office/create-your-backlog-tasks-using-project.md). 
+If you are used to using Excel or Project to plan and track your work, you can still use these tools and integrate with VSTS and TFS. See [Bulk modify using Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md) and [Create your backlog and tasks using Project](../boards/backlogs/office/create-your-backlog-tasks-using-project.md). 
 
 ### DevOps: builders, testers, and release managers
 
@@ -102,7 +102,7 @@ Responsible for project level settings, including:
 
 - [Area paths](../organizations/settings/set-area-paths.md) and [Iteration paths](../organizations/settings/set-iteration-paths-sprints.md)
 - [Project permissions and repository security](../organizations/security/permissions.md)
-- [Customize work tracking objects (TFS only)](../work/customize/customize-work.md) 
+- [Customize work tracking objects (TFS only)](../reference/customize-work.md) 
 - [Build agents, pools, and service connections](../pipelines/overview.md) 
 - [Test](../test/how-long-to-keep-test-results.md) and [release](../pipelines/policies/retention.md) retention policies 
  

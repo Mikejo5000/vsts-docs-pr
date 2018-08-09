@@ -37,7 +37,7 @@ For more information about how you can create reports that access the three sour
 
 |Authoring tool|Source of data|Related topic|
 |---|---|---|
-|Excel|Work item query results|[Use the query editor to list and manage queries](../../work/track/using-queries.md)|
+|Excel|Work item query results|[Use the query editor to list and manage queries](../../boards/queries/using-queries.md)|
 |Excel|OLAP data cube|[Create Excel reports from a work item query](../excel/create-status-and-trend-excel-reports.md)|
 |Report Designer|OLAP data cube|[Create an aggregate report using Report Designer and the Analysis Services Cube](../sql-reports/create-aggregate-report-report-designer-analysis-services-cube.md) </li></ul>|
 |Report Designer|Warehouse database|[Create a Detailed Report using Report Designer](../sql-reports/create-a-detailed-report-using-report-designer.md)|
@@ -61,7 +61,7 @@ For more information about this source of data, see [Perspectives and measure gr
 The warehouse database is a relational database that organizes data in a set of related tables and provides views and table-valued functions for accessing that data. Data from the project collections is gathered and maintained in the warehouse database. If you are familiar with writing Transact-SQL queries, you can create reports by using the warehouse database.
 
 > [!NOTE]   
-> The warehouse database might contain detailed data that is not present in the analysis services database, depending on the work items that your project uses. For more information about how work item fields are mapped to the warehouse, see [Reportable fields reference for Visual Studio ALM](../../work/customize/reference/reportable-fields-reference.md).
+> The warehouse database might contain detailed data that is not present in the analysis services database, depending on the work items that your project uses. For more information about how work item fields are mapped to the warehouse, see [Reportable fields reference for Visual Studio ALM](../../reference/xml/reportable-fields-reference.md).
 
 
 For more information about the warehouse database, see [Table reference for the relational warehouse database](../sql-reports/table-reference-relational-warehouse-database.md).
