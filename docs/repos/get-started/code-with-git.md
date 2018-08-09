@@ -65,15 +65,21 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
 
 # [New navigation](#tab/new-nav)
 
-New steps here
+1. From your web browser, open the team project for your VSTS account and choose **Repos>Files**. If you don't have a team project, [create one now](sign-up-invite-teammates.md). 
+
+  ![Repos files](_img/clone-repo/repos-files.png)
+
+1. Select **Clone** in the upper-right corner of the **Files** window and copy the clone URL.
+
+  ![Retrieve the clone URL](_img/clone-repo/clone-repo.png)
 
 # [Previous navigation](#tab/previous-nav)
 
-0. From your web browser, open the team project for your VSTS account and click the **Code** hub. If you don't have a team project, [create one now](sign-up-invite-teammates.md). 
- 
-0. Select Clone in the upper-right corner of the **Code** window and copy the **Clone URL**.
+1. From your web browser, open the team project for your VSTS account and click the **Code** hub. If you don't have a team project, [create one now](sign-up-invite-teammates.md). 
 
-	![Retrieve the clone URL](../../user-guide/_img/code-with-git-clone-repo.png)
+1. Select Clone in the upper-right corner of the **Code** window and copy the **Clone URL**.
+
+  ![Retrieve the clone URL](../../user-guide/_img/code-with-git-clone-repo.png)
 
 ---
 
