@@ -55,6 +55,8 @@ A **pipeline** is made up of **tasks** and can be thought of as a script that de
 
 ## Release
 
+**Release** is the term used to describe the step of the development process after **build**. In the **release** step, code is tested, built, and deployed to any available deployment target. 
+
 ## Task
 
 A **task** is the building block of a pipeline. For example, a build pipeline may consists of build tasks and test tasks, while a release pipeline will consist of deployment tasks. Each task runs a specific job in the **pipeline**.
