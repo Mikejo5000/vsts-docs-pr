@@ -9,7 +9,7 @@ ms.date: 07/06/2018
 monikerRange: '>= tfs-2015'
 ---
 
-# Azure DevOps Pipelines New User Orientation
+# Getting started with Azure DevOps Pipelines
 
 ## What is Azure DevOps Pipelines?
 
