@@ -6,18 +6,24 @@ ms.assetid:
 ms.prod: devops
 ms.technology: devops-new-user
 ms.manager: douge
-ms.author: kaelli
-ms.date: 08/24/2017
+ms.author: sdanie
+author: steved0x
+ms.date: 09/05/2018
 ms.topic: quickstart
 monikerRange: 'vsts'
 ---
 
-
 # Code with Git
 
-**VSTS**
+#### VSTS
 
 After you create a new account and team project in VSTS, you can begin sharing your code with others. 
+
+- Where is my code?
+    - It's already in my organization's Azure Repos Git repo
+    - In another Git repo such as GitHub or another Azure Repos Git repo
+    - On my local computer and not yet in version control
+
 
 To work with a Git repo, you clone it to your computer. Cloning a repo creates a complete local copy of the repo for you to work with, and downloads all [commits](../git/commits.md) and [branches](../git/branches.md) in the repo and sets up a named relationship with the repo on the server. Use this relationship to interact with the existing repo, pushing and pulling changes to share code with your team. 
 
