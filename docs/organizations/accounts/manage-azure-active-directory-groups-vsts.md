@@ -21,7 +21,7 @@ If you already use Microsoft services like Office 365 or
 [Azure Active Directory (Azure AD)](https://www.microsoft.com/server-cloud/products/azure-active-directory/), 
 you can use the same identities with your VSTS organization. 
 [Azure AD works with your VSTS organization](access-with-azure-ad.md) 
-to control access and authenticate users through Azure Active Directory. 
+to control access and authenticate users. 
 
 When you organize directory members with 
 [Azure AD groups](https://azure.microsoft.com/documentation/articles/active-directory-manage-groups), 
@@ -53,7 +53,7 @@ You must also have at least Basic access, not Stakeholder.
 you must have Azure AD administrator permissions 
 or have the directory administrator delegate those permissions to you in the 
 [Azure portal](https://portal.azure.com).
-* Be aware that Azure AD changes may take up to 24 hours for VSTS to see the changes.
+* Be aware that Azure AD changes might take up to 24 hours for VSTS to see the changes.
 
 
 ##	Add an Azure AD group to a VSTS group
