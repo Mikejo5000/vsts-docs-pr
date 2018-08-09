@@ -58,10 +58,9 @@ Once the repository is cloned, we'll show you how to add your existing code to t
 
 ## Clone the repo
 
-To work with a Git repo, you clone it to your computer. Cloning a repo creates a complete local copy of the repo for you to work with, and downloads all [commits](../git/commits.md) and [branches](../git/branches.md) in the repo and sets up a named relationship with the repo on the server. Use this relationship to interact with the existing repo, pushing and pulling changes to share code with your team. 
+To work with a Git repo, you clone it to your computer. Cloning a repo creates a complete local copy of the repo for you to work with, and downloads all [commits](../git/commits.md) and [branches](../git/branches.md) in the repo and sets up a named relationship with the repo on the server. Use this relationship to interact with the existing repo, pushing and pulling changes to share code with your team.
 
-> [!NOTE]
-> The **New navigation** feature, which provides a vertical navigation experience, is in preview for VSTS. [Go here to enable it](/vsts/project/navigation/preview-features.md). When you enable **New navigation**, you automatically enable several new Agile tool features described in this blog post, [New Work Hubs](https://blogs.msdn.microsoft.com/devops/2018/06/22/new-work-hubs/). For on-premises TFS users, choose **Previous navigation** for guidance. 
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 # [New navigation](#tab/new-nav)
 
