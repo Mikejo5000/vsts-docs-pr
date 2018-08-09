@@ -13,9 +13,9 @@ monikerRange: 'vsts'
 ---
 
 
-# Frequently asked questions about trials for VSTS
+# Frequently asked questions about trials for Visual Studio Team Services (VSTS)
 
-**VSTS**
+## VSTS
 
 <a name="organization-trial"></a>
 
@@ -23,11 +23,14 @@ monikerRange: 'vsts'
 
 ### Q: Is there a VSTS organization trial?
 
-A: Rather than offering an organization trial, VSTS provides an ongoing **Free Tier** of service that many customers find sufficient to try out the service: 5 VSTS users (Basic), 
-5 Package Management users, Free Tier of Microsoft-hosted CI/CD (1 concurrent job, up to 4 hours per month), 1 self-hosted CI/CD concurrent job, 
-and 20,000 virtual user minutes of cloud-based load testing per month. Additionally, you can do a 30-day trial of [Test Manager](https://marketplace.visualstudio.com/items/ms.vss-testmanager-web), 
-[Package Management](https://marketplace.visualstudio.com/items?itemName=ms.feed), and a number of extensions offered by 
-partners in the Visual Studio Marketplace.
+A: Instead of offering an organizational trial, VSTS provides an ongoing **free tier** of service that many customers find sufficient to try out the service. 
+* Five VSTS users: basic. 
+* Five package management users.
+* Free tier of Microsoft-hosted CI/CD: one concurrent job, up to four hours per month. 
+* One self-hosted CI/CD concurrent job, 
+* 20,000 virtual user minutes of cloud-based load testing per month. 
+Additionally, you can do a 30-day trial of [Test Manager](https://marketplace.visualstudio.com/items/ms.vss-testmanager-web), [Package Management](https://marketplace.visualstudio.com/items?itemName=ms.feed), and a number of extensions offered by 
+partners in the Visual Studio Marketplace.  
 
 ### Q: How many times can I do a trial for Test Manager, Package Management, or paid extensions offered by partners?
 
