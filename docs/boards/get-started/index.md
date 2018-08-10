@@ -1,6 +1,6 @@
 ---
 title: Get started guide for Azure Boards 
-titleSuffix: Azure DevOps Services 
+titleSuffix: Azure DevOps 
 description: Sign up and get started using Azure Boards 
 ms.prod: devops
 ms.technology: devops-new-user
@@ -13,7 +13,7 @@ ms.date: 09/05/2018
 ---
 
 
-# Azure Boards get started  
+# Start using Azure Boards  
 
 Use this guide to sign up and start using Azure Boards. 
 

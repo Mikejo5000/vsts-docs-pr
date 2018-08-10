@@ -18,7 +18,7 @@ featureFlags:
 
 <div id="agile" class="v2">
 <div class="container">
-<a href="/vsts/index">Azure DevOps</a>&nbsp;&nbsp;&nbsp;Azure Pipelines
+<p><a href="/vsts/index">Azure DevOps</a>&nbsp;&nbsp;&nbsp;Azure Pipelines</p>
 <h1>Azure Pipelines Documentation</h1>
 <p>Test and deploy your code with high-performance pipelines. Start small and scale up as needed.</p><br/>
 <table border="0" class="cardsA">
@@ -34,7 +34,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Azure Pipelines get started</h3>
+                                                    <h3>Start using Azure Pipelines</h3>
                                                     <p>Sign up and get started using Azure Pipelines.</p>
                                                 </div>
                                             </div>

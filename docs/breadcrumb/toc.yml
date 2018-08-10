@@ -55,7 +55,7 @@
       topicHref: https://docs.microsoft.com/visualstudio/test/unit-test-your-code
   - name: Azure Boards 
     tocHref: /vsts/boards/
-    topicHref: /vsts/index-work
+    topicHref: /vsts/index-boards
     items:
     - name: Boards (Kanban) 
       tocHref: /vsts/boards/kanban/

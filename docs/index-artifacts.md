@@ -18,7 +18,7 @@ featureFlags:
 
 <div id="artifacts" class="v2">
     <div class="container">
-<a href="/vsts/index">Azure DevOps</a>&nbsp;&nbsp;&nbsp;Azure Artifacts
+<p><a href="/vsts/index">Azure DevOps</a>&nbsp;&nbsp;&nbsp;Azure Artifacts</p>
 <h1>Azure Artifacts Documentation</h1>
 <p>Code once and share packages across your organization. Host your private Nuget, npm, and Maven packages with Azure Artifacts for more reliable, scalable builds.</p><br/>
 

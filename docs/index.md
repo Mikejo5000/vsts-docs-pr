@@ -21,10 +21,10 @@ featureFlags:
 <div id="main" class="v2">
 <div class="container">
 <h1>Azure DevOps Documentation</h1>
-    <p>Collaborate using tools designed to start small and scale up as needed. Azure DevOps provides free private Git repositories, configurable Kanban boards, interactive backlogs, high-performance pipelines, and extensive automated and cloud-based load testing.</p>
+    <p>Collaborate on software development using tools designed to start small and scale up. Azure DevOps provides free private Git repositories, configurable Kanban boards, interactive backlogs, high-performance pipelines, and extensive automated and cloud-based load testing.</p>
     <p><i>[What happened to Visual Studio Team Services?](/vsts/user-guide/what-happened-vsts)</i></p>
 <a href="#start"> </a>
-<h2>Get started with Azure DevOps Services</h2>
+<h2>Get started with Azure DevOps</h2>
 <table border="0" class="fullspan cardsY">
 <tbody style="padding-left:0;">
 <tr>
@@ -86,7 +86,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3><a href="/vsts/user-guide/index">Start using Azure DevOps</a></h3>
+                                                    <h3><a href="/vsts/user-guide/index">Start using all Azure DevOps services</a></h3>
                                                 </div>
                                             </div>
                                         </div>
@@ -123,11 +123,11 @@ featureFlags:
 </tbody>
 </table>
 <a id="devops-services" />
-<h2>Azure DevOps</h2>
+<h2>Azure DevOps services</h2>
 <table border="0" class="cardsA">
 <tr>
 <td width="33%">
-                                <a href="/vsts/index-work">
+                                <a href="/vsts/index-boards">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -229,7 +229,7 @@ featureFlags:
 </tr>
 </table>
 <a id="devops-services-supplemental" />
-<h2>Shared features</h2>
+<h2>Analytic and social tools </h2>
 <table border="0" class="cardsA">
 <tr>
 <td width="25%">

@@ -1,6 +1,7 @@
 ---
-title: Guide for users new to VSTS 
-description: Learn the very basics of Visual Studio Team Services (VSTS)  
+title: Get started guide for Azure DevOps Services 
+titleSuffix: Azure DevOps 
+description: Learn the very basics of Azure DevOps Services 
 ms.prod: devops
 ms.technology: devops-new-user
 ms.assetid: 00f4ed452-fbb8-45f9-8f0a-343702aac5b8  
@@ -11,9 +12,9 @@ ms.date: 09/05/2018
 monikerRange: '>= tfs-2013'
 ---
 
-# Azure DevOps Enterprise New User Guide
+# Start using Azure DevOps Services
 
-New to Visual Studio Team Services (VSTS)?
+New to  Azure DevOps Services?
 
 We'll walk you through the basics of the web interface and some common tasks.
 Get started with a free organization, share your code using Git, and track your work using a Kanban board.

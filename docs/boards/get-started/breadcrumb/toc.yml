@@ -4,7 +4,7 @@
   items: 
   - name: Azure Boards
     tocHref: /vsts/
-    topicHref: /vsts/index-work
+    topicHref: /vsts/index-boards
     items:
     - name: Get Started
       tocHref: /vsts/boards/get-started/

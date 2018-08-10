@@ -18,7 +18,7 @@ featureFlags:
 
 <div id="agile" class="v2">
     <div class="container">
-<a href="/vsts/index">Azure DevOps</a>&nbsp;&nbsp;&nbsp;Azure Repos
+<p><a href="/vsts/index">Azure DevOps</a>&nbsp;&nbsp;&nbsp;Azure Repos</p>
         <h1>Azure Repos Documentation</h1>
 <p>Collaborate on code development using free Git public and private repositories, pull requests, and code review.</p><br/>
 <table border="0" class="cardsA">
@@ -34,7 +34,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Azure Repos get started</h3>
+                                                    <h3>Start using Azure Repos</h3>
                                                     <p>Sign up and get started using Azure Repos.</p>
                                                 </div>
                                             </div>

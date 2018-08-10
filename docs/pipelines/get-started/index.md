@@ -1,5 +1,6 @@
 ---
 title: Build and deploy your apps 
+titleSuffix: Azure DevOps 
 titleSuffix: Azure DevOps Services
 description: What do you get with Azure DevOps Pipelines  
 ms.prod: devops
@@ -11,8 +12,8 @@ ms.date: 06/22/2017
 ms.topic: overview
 ---
 
-# What is Azure DevOps Pipelines?
+# Start using Azure Pipelines?
 
-**Azure DevOps Pipelines**
+**Azure Pipelines**
 
 To be completed

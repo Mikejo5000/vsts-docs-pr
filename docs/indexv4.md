@@ -99,7 +99,7 @@ featureFlags:
 <p>Explore our most popular services with quickstarts, samples, and tutorials.</p><br/>
                         <ul id="devops-services-suite" class="cardsY panelContent featuredContent">
                             <li>
-                                <a href="/vsts/index-work">
+                                <a href="/vsts/index-boards">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">

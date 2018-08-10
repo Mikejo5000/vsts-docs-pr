@@ -19,11 +19,9 @@ featureFlags:
 
 <div id="main" class="v2">
 <div class="container">
-<a href="/vsts/index">Azure DevOps</a>&nbsp;&nbsp;&nbsp;Azure Boards
+<p><a href="/vsts/index">Azure DevOps</a>&nbsp;&nbsp;&nbsp;Azure Boards</p>
 <h1>Azure Boards Documentation</h1>
 <p>Configure your Kanban boards, interact with your backlogs, and work with out-of-the-box support for Scrum.</p><br/>
-
-
 <table border="0" class="cardsA">
 <tr>
 <td width="25%">
@@ -37,7 +35,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Azure Boards get started</h3>
+                                                    <h3>Start using Azure Boards</h3>
                                                     <p>Sign up and get started using Azure Boards.</p>
                                                 </div>
                                             </div>
@@ -57,8 +55,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Work items</h3>
-                                                    <p>Track the features and requirements you're developing, code defects,
-                                                        and issues.</p>
+                                                    <p>Track code defects, issues, and the features and requirements you're developing.</p>
                                                 </div>
                                             </div>
                                         </div>

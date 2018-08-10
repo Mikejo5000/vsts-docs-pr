@@ -4,7 +4,7 @@
   items: 
   - name: Azure Boards
     tocHref: /vsts/
-    topicHref: /vsts/index-work
+    topicHref: /vsts/index-boards
     items:
     - name: Sprints (Scrum)
       tocHref: /vsts/

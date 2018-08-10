@@ -1,5 +1,6 @@
 ---
-title: Get started guide for Azure DevOps Repos 
+title: Get started guide for Azure Repos 
+titleSuffix: Azure DevOps 
 description: Sign up and get started using Azure DevOps Repos 
 ms.prod: devops
 ms.technology: devops-new-user
@@ -11,7 +12,7 @@ ms.date: 09/05/2018
 monikerRange: '>= tfs-2013'
 ---
 
-# Azure DevOps Repos Get Started Guide
+# Start using Azure Repos 
 
 **Azure DevOps Repos**
 
