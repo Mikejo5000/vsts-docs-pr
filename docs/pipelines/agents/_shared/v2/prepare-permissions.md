@@ -10,7 +10,7 @@ must complete these steps. The agent will not use this person's
 credentials in everyday operation, but they're required to complete registration.
 Learn more about [how agents communicate](../../agents.md#communication).
 
-::: moniker range=">= tfs-2017 || vsts"
+::: moniker range=">= tfs-2017"
 
 #### Authenticate with a personal access token (PAT)
 
