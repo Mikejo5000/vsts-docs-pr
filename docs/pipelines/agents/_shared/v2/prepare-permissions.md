@@ -32,19 +32,15 @@ or your Team Foundation Server web portal (```https://{your-server}:8080/tfs/```
 
 ::: moniker-end
 
-::: moniker range="tfs-2017"
+::: moniker range="<= tfs-2017"
 
-#### Authenticate as a Windows user (TFS 2017)
+#### Authenticate as a Windows user (TFS 2015/2017)
 
 As an alternative, on TFS 2017, you can use either a domain user or a
 local Windows user on each of your TFS application tiers.
 
-::: moniker-end
-
-::: moniker range="tfs-2015"
-
-(Applies only to macOS and Linux.)
-We recommend that you create a local Windows user on each of your TFS application tiers and dedicate that user for the purpose of deploying build agents.
+On TFS 2015, for macOS and Linux only, 
+we recommend that you create a local Windows user on each of your TFS application tiers and dedicate that user for the purpose of deploying build agents.
 
 ::: moniker-end
 
