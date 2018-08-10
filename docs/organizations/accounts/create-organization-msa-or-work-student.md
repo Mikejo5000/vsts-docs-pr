@@ -1,6 +1,6 @@
 ---
 title: Create a VSTS organization with a Microsoft account or a work account
-description: Create your VSTS organization with a personal Microsoft account or a work/school account
+description: Create your VSTS organization with a personal Microsoft account or a work or school account
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: e2eacd25-e6be-4294-b1da-5529195f30d0
@@ -11,36 +11,29 @@ author: chcomley
 ms.date: 07/26/2017
 monikerRange: 'vsts'
 ---
-# Create your VSTS organization with a personal Microsoft account or a work/school account
+# Create a VSTS organization with a personal Microsoft account or a work or school account
 
 **VSTS**
 
-Sign up for a [VSTS](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs) 
-organization to upload and share code in free unlimited private 
-Git repositories or Team Foundation Version Control. 
-Then connect your favorite development tool like Eclipse, Xcode, 
-Visual Studio, IntelliJ, or Android Studio to work on apps anytime, anywhere. 
-VSTS offers integrated, enterprise Agile tools for DevOps, 
-so your team can build often, test early, and ship faster.
+To create a Visual Studio Team Services (VSTS) organization with a personal Microsoft account or a work or school account, sign up for a [VSTS](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs) account. With VSTS, you can upload and share code in free, unlimited private Git repositories or Team Foundation Version Control. You can then connect your favorite development tools, such as Eclipse, Xcode, Visual Studio, IntelliJ, or Android Studio to work on apps anytime, anywhere. VSTS offers integrated, enterprise agile tools for DevOps, so your team can build often, test early, and ship faster.
 
-> Want to set up an on-premises server? 
-> [Get Team Foundation Server here](https://visualstudio.microsoft.com/products/tfs-overview-vs), 
-> or learn [how to install and set up Team Foundation Server](/tfs/server/install/get-started). 
+> Want to set up an on-premises server? [Get Team Foundation Server](https://visualstudio.microsoft.com/products/tfs-overview-vs), or learn [how to install and set up Team Foundation Server](/tfs/server/install/get-started). 
 
-[What users can join for free?  What do they get in VSTS?](faq-create-organization.md#free-users)
+> [What users can join for free?  What do they get in VSTS?](faq-create-organization.md#free-users)
 
 <a name="how-sign-up"></a>
 
-##	What do I need to sign up for a VSTS organization?
+##	Prerequisites
 
-*	To use only Microsoft accounts 
-	with your VSTS organization, complete the following steps, ignoring the Azure Active Directory (Azure Active Directory) call outs. 
+Before you begin, do the following:
+
+*	To use only Microsoft accounts with your VSTS organization, complete the following steps, ignoring the Azure Active Directory (Azure AD) callouts. 
 
 	Don't have a Microsoft account?  You can create a Microsoft account 
 	when you sign up for VSTS.
 
 	Use your Microsoft account if you don't need to authenticate users 
-	for an organization with [Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-whatis/). 
+	for an organization with [Azure AD](https://azure.microsoft.com/documentation/articles/active-directory-whatis/). 
 	All users must sign in with Microsoft accounts to your VSTS organization.
 
 *	Alternatively, to authenticate users and control organization access through your 
