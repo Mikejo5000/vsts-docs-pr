@@ -1,6 +1,6 @@
 ---
 title: Manage users and access in Visual Studio Team Services
-description: Add users and assign access levels in the Users view in Visual Studio Team Services (VSTS). 
+description: Add users and assign access levels on the Users page in Visual Studio Team Services (VSTS). 
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 9f142821-1772-413f-a0e0-9b47b11a410f
