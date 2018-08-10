@@ -198,149 +198,94 @@ Before you start, make sure you have at least Basic access, not Stakeholder.
 
 ### Can I connect my VSTS organization to an Azure AD created from Office 365?
 
-Yes, but if you can't find your Office 365 Azure AD
-when connecting your organization in the Azure portal,
-learn what you're missing in this FAQ:
-[Why don't I see the directory that I want to connect?](#why-not-my-directory)
+Yes. If you can't find your Azure AD created from Office 365, see
+[Why don't I see the directory that I want to connect?](#why-not-my-directory).
 
 <a name="no-directory-subscription"></a>
 
-### Q: Why don't I see a directory associated with my Azure subscription?
+### Why don't I see a directory associated with my Azure subscription?
 
-A: You need an active and valid
-["full" Azure subscription](https://azure.microsoft.com/pricing/purchase-options/),
-such as a ["Pay-As-You-Go" subscription](https://azure.microsoft.com/offers/ms-azr-0003p/),
-associated with your organization's Azure AD and at
-least co-administrator permissions for your subscription.
-You need both to make your directory appear in the Azure portal,
-so that you can link your subscription
-and connect your Azure AD to your VSTS organization. Learn
-[how to manage Azure subscription administrators](../billing/add-backup-billing-managers.md).
+To make your directory appear in the Azure portal, you need an active and valid ["full" Azure subscription](https://azure.microsoft.com/pricing/purchase-options/), such as a ["Pay-As-You-Go" subscription](https://azure.microsoft.com/offers/ms-azr-0003p/). This subscription should be associated with your organization's Azure AD, and you need at least co-administrator permissions for your subscription.
+
+With these, you can link your subscription and connect your Azure AD to your VSTS organization. Learn [how to manage Azure subscription administrators](../billing/add-backup-billing-managers.md).
 
 <a name="why-not-my-directory"></a>
 
-#### Q: Why don't I see the directory that I want to connect? What should I do?
+### Why don't I see the directory that I want to connect? What should I do?
 
-A: This might happen because:
+This might happen because:
 
 * You don't have [VSTS organization owner permissions](faq-change-app-access.md#find-owner) to manage directory connections.
 
-* You don't have an active and valid ["full" Azure subscription](https://azure.microsoft.com/pricing/purchase-options/), such as a ["Pay-As-You-Go" subscription](https://azure.microsoft.com/offers/ms-azr-0003p/), associated with your organization's Azure AD and at least co-administrator permissions for your subscription. You need both to make your directory appear in the Azure portal, so that you can link your subscription and connect your Azure AD to your VSTS organization. Learn [how to manage Azure subscription administrators](../billing/add-backup-billing-managers.md).
+* You don't have an active and valid ["full" Azure subscription](https://azure.microsoft.com/pricing/purchase-options/) associated with your organization's Azure AD. (This problem is described in the preceding question.) 
 
-  For example, if you want to use an Office 365 Azure AD,
+  For example, if you want to use an Azure AD created from Office 365,
   you can't use the [free subscription](https://technet.microsoft.com/library/dn832618.aspx)
-  that you can get for Office 365 Azure AD.
-  You must [sign up for a new Azure subscription](https://azure.microsoft.com/pricing/purchase-options/)
-  or use an existing Azure subscription
-  that's **not** from one of these offers:
+  option. You must [sign up for a new Azure subscription](https://azure.microsoft.com/pricing/purchase-options/), or use an existing Azure subscription. The existing Azure subscription can't be one of the following offers:
 
-  * An [Azure Free Trial](https://azure.microsoft.com/offers/ms-azr-0044p/)
+  * An [Azure free trial](https://azure.microsoft.com/offers/ms-azr-0044p/)
   * A [free Azure AD subscription](https://technet.microsoft.com/library/dn832618.aspx)
 
-  You must then associate that subscription with your Office 365 Azure AD.
-  To do this for your Office 365 Azure AD,
-  you'll also need additional subscription administrator permissions
-  beyond co-administrator permissions. Learn how to
-  [associate your Azure subscription to your Office 365 Azure AD](https://docs.microsoft.com/azure/billing-add-office-365-tenant-to-azure-subscription),
-  or learn more about the
-  [relationship between your Azure subscription and your Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-how-subscriptions-associated-directory#how-an-azure-subscription-is-related-to-azure-ad).
+  You must then associate that subscription with your Azure AD created from Office 365. To do this, you'll need additional subscription administrator permissions, beyond co-administrator permissions. Learn how to [associate your Azure subscription to your Office 365 Azure AD](https://docs.microsoft.com/azure/billing-add-office-365-tenant-to-azure-subscription),
+  or learn more about the [relationship between your Azure subscription and your Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-how-subscriptions-associated-directory#how-an-azure-subscription-is-related-to-azure-ad).
 
 <a name="remove-spending-limit"></a>
 
-* Your VSTS organization isn't linked to the Azure subscription that's associated with your directory. Learn [how to link your VSTS organization to an Azure subscription](../billing/set-up-billing-for-your-organization-vs.md).
+* Your VSTS organization isn't linked to the Azure subscription that's associated with your directory. Learn [how to link them](../billing/set-up-billing-for-your-organization-vs.md).
 
-  **Important** This link also sets up organization billing,
-  so you can bill VSTS purchases to your Azure subscription.
-  Some Azure subscriptions have a
-  [spending limit](https://azure.microsoft.com/pricing/spending-limits/).
-  If your Azure subscription has a spending limit,
-  and you want to bill purchases to this subscription,
-  you must remove this limit **indefinitely**.
-  This prevents disabling your Azure subscription the
-  next month when your monthly charges are billed.
-  Otherwise, all resources billed to this subscription will be suspended,
-  including all VSTS purchases,
-  Visual Studio Marketplace purchases,
-  and Azure resources. Learn more about
-  [how to manage your subscription's spending limit](https://msdn.microsoft.com/library/azure/dn465781.aspx).
+  >[!IMPORTANT]
+  This link also sets up organization billing, so you can bill VSTS purchases to your Azure subscription. Some Azure subscriptions have a [spending limit](https://azure.microsoft.com/pricing/spending-limits/). If your Azure subscription has a spending limit, and you want to bill purchases to this subscription, you must remove this limit indefinitely. This prevents disabling your Azure subscription the
+  next month when your monthly charges are billed. Otherwise, all resources billed to this subscription will be suspended, including all VSTS purchases, Visual Studio Marketplace purchases, and Azure resources. Learn more about [how to manage your subscription's spending limit](https://msdn.microsoft.com/library/azure/dn465781.aspx).
 
-  If you're the subscription [Organization Administrator](https://azure.microsoft.com/documentation/articles/billing-add-change-azure-subscription-administrator),
-  visit the Azure Account Center to remove the spending limit:
+  If you're the [organization administrator](https://azure.microsoft.com/documentation/articles/billing-add-change-azure-subscription-administrator) for the subscription, visit the Azure Account Center to remove the spending limit:
 
-1. Sign in to [Azure Account Center (**Account** > **subscriptions**)](https://portal.azure.com).
-2. Select your Azure subscription. 
-3. Remove your spending limit **indefinitely**.
+  1. Sign in to the [Azure portal](https://portal.azure.com), and go to the Azure Account Center (**Account** > **subscriptions**).
+  2. Select your Azure subscription. 
+  3. Remove your spending limit **indefinitely**.
 
 <a name="subscription-linked-already"></a>
 
-#### Q: What if my VSTS organization is already linked to an Azure subscription?
+### What if my VSTS organization is already linked to an Azure subscription?
 
-A:  You can [change the Azure subscription](../billing/change-azure-subscription.md) that's linked to your VSTS organization.
-However, unlinking will cause your organization to revert to the free tier. See the [VSTS billing FAQ](../billing/vsts-billing-faq.md) for details.
+You can [change the Azure subscription](../billing/change-azure-subscription.md) that's linked to your VSTS organization. Note that unlinking causes your organization to revert to the free tier. For details, see the [VSTS billing FAQ](../billing/vsts-billing-faq.md).
 
-#### Q:  What happens if I unlink my Azure subscription while my VSTS organization is connected to a directory?
+### What happens if I unlink my Azure subscription while my VSTS organization is connected to a directory?
 
-A:  See the [VSTS billing FAQ](../billing/vsts-billing-faq.md) for details.
+See the [VSTS billing FAQ](../billing/vsts-billing-faq.md).
 
 <a name="AlreadyConnected"></a>
 
-#### Q: Why is my VSTS organization already connected to a directory? Can I change that directory?
+### Why is my VSTS organization already connected to a directory? Can I change that directory?
 
-A: Your VSTS organization was connected to a directory when the
-organization owner created the organization or sometime after that.
-When you create a VSTS organization with a work or school account,
-your VSTS organization is automatically connected to the directory
-that manages that work or school account.
-You can [disconnect your VSTS organization](disconnect-organization-from-aad.md) from this directory
-and reconnect to another directory, but you might have to migrate some users.
+Your VSTS organization was connected to a directory when the organization owner created the organization, or sometime after that. When you create a VSTS organization with a work or school account, your VSTS organization is automatically connected to the directory that manages that work or school account. You can [disconnect your VSTS organization](disconnect-organization-from-aad.md) from this directory, and reconnect to another directory. You might have to migrate some users.
 
 <a name="AlternateCredentials"></a>
 
-#### Q: My alternate credentials don't work anymore. What do I do?
+### My alternate credentials don't work anymore. What do I do?
 
-A:  This happens after you connect your VSTS
-organization to a directory. You must
-[set up your credentials](http://support.microsoft.com/kb/2991274)
-again for the organization that you connected.
+This happens after you connect your VSTS organization to a directory. You must
+[set up your credentials](http://support.microsoft.com/kb/2991274) again for the organization that you connected.
 
 <a name="CantSignIn"></a>
 
-#### Q: Why can't users sign in after my VSTS organization is connected to a directory?
+### Why can't users sign in after my VSTS organization is connected to a directory?
 
-A:  Make sure their sign-in addresses are in the
-connected directory and in your VSTS organization.
-If they're not directory members, and you have at least
-[user administrator permissions](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/),
+Make sure their sign-in addresses are in the connected directory, and in your VSTS organization. If they're not directory members, and you have at least [user administrator permissions](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/),
 you can [add them to the directory](https://azure.microsoft.com/documentation/articles/active-directory-create-users/).
 
-Some users have sign-in addresses that are shared by their
-Microsoft account and their work or school account.
-These are treated as separate identities with different profiles,
-security settings, and permissions. When they're asked to choose
-which account they want to use when they sign in, they should
-choose the identity that's a member in your directory because
-only directory members can get access to your organization.
+Some users have sign-in addresses that are shared by their Microsoft account and their work or school account. These are treated as separate identities with different profiles, security settings, and permissions. When they're asked to choose which account they want to use when they sign in, they should choose the identity that's a member in your directory. Only directory members can get access to your organization.
 
-If you have a Visual Studio with MSDN subscription that 
-[includes VSTS](https://visualstudio.microsoft.com/vs/pricing/) as a benefit,
-and you activated that subscription with a Microsoft account,
-you can add a work or school account that's managed by Azure Active Directory to your subscription.
-Learn [how to link work or school accounts to Visual Studio with MSDN subscriptions](../../billing/link-msdn-subscription-to-organizational-account-vs.md).
+If you have a Visual Studio with MSDN subscription that [includes VSTS](https://visualstudio.microsoft.com/vs/pricing/), and you activated that subscription with a Microsoft account, you can add a work or school account. Azure AD manages that work or school account. Learn [how to link work or school accounts to Visual Studio with MSDN subscriptions](../../billing/link-msdn-subscription-to-organizational-account-vs.md).
 
 <a name="faq-disconnect"></a>
 
 ## Disconnect from directory
 
-#### Q: Why can't users sign in after my VSTS organization is disconnected?
+### Why can't users sign in after my VSTS organization is disconnected?
 
-A:  They must now use Microsoft accounts to sign in.
-They can continue working seamlessly if they have Microsoft
-accounts with the same sign-in addresses that they use now.
+They must now use Microsoft accounts to sign in. They can continue working seamlessly if they have Microsoft accounts with the same sign-in addresses that they use now.
 
-If they must create Microsoft accounts with different sign-in addresses,
-you must add those sign-in-addresses to your VSTS organization,
-and reassign access to them. They can migrate work that they want to keep,
-except work history. They might also have to re-link their MSDN
+If they must create Microsoft accounts with different sign-in addresses, you must add those addresses to your VSTS organization, and reassign access to them. They can migrate work that they want to keep, except work history. They might also have to re-link their MSDN
 subscriptions. They can use any email address to create a Microsoft account.
 
 <a name="get-support"></a>
