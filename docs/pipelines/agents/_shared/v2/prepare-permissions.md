@@ -41,6 +41,13 @@ local Windows user on each of your TFS application tiers.
 
 ::: moniker-end
 
+::: moniker range="tfs-2015"
+
+(Applies only to macOS and Linux.)
+We recommend that you create a local Windows user on each of your TFS application tiers and dedicate that user for the purpose of deploying build agents.
+
+::: moniker-end
+
 ### Confirm the user has permission
 
 Make sure the user account that you're going to use has permission to register the agent.
