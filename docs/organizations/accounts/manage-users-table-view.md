@@ -11,9 +11,10 @@ author: chcomley
 ms.date: 07/31/2018
 monikerRange: 'vsts'
 ---
+
 # Manage users for VSTS
 
-**VSTS**
+[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 Add users to your VSTS organization and specify the level of features they can use, such as Basic or Stakeholder.  
 These kinds of users can join your VSTS organization for free:
@@ -50,7 +51,7 @@ access levels.  You can multi-select users and bulk edit their extensions and ac
 partial user names, access level, or extension names.  You can see the last access date for each user to help you choose 
 from whom you might remove access or lower access to stay within your license limits.
 
-[!INCLUDE [temp](../../work/_shared/new-agile-hubs-feature.md)]
+[!INCLUDE [temp](../../boards/_shared/new-agile-hubs-feature.md)]
 
 # [New navigation](#tab/new-nav)
 
@@ -79,11 +80,11 @@ and **Remove from organization** (deletes user).
  
 	![Open Organization Settings](../../_shared/_img/settings/open-organization-settings.png)
 
-	Then, click **Users** to open the Manage users page. Click **Add new users** to open the dialog. 
+	Then, select **Users** to open the Manage users page. Choose **Add new users** to open the dialog. 
 
 	![Open Add new users dialog](../../user-guide/_img/sign-up/add-new-users.png)
 
-2. Choose a user or group of users in the table and then click the **...** icon at the end of the name column to open the context 
+2. Choose a user or group of users in the table and then select the **...** icon at the end of the name column to open the context 
 menu. The menu supports **Change access levels**, **Manage projects**, **Resend invite**, **Manage extensions** (if there are extensions), 
 and **Remove from organization** (deletes user).
 

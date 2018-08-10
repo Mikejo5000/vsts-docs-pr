@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 07/26/2018
+ms.date: 08/10/2018
 monikerRange: '>= tfs-2013'
 ---
 # Organization Management
 
-**VSTS | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013**
+[!INCLUDE [temp](../.. /_shared/version-vsts-tfs-all-versions.md)]
 
 Sign up for a VSTS organization, add users, and manage permissions and access.
 
