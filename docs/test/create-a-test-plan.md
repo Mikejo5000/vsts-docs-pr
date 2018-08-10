@@ -16,10 +16,8 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [version-header-ts-tfs](_shared/version-header-ts-tfs.md)] 
 
-Create test plans to track manual testing 
-for sprints or milestones. That way, 
-you can see when the testing for a 
-specific sprint or milestone is complete.
+Create test plans to track manual testing for sprints or milestones. That way, 
+you can see when the testing for a specific sprint or milestone is complete.
 
 Test plans are used to group together test suites and individual test cases.
 This includes static test suites, requirement-based suites, and
@@ -38,7 +36,7 @@ See [Default manual testing permissions and access](manual-test-permissions.md).
 1. If you haven't already, 
    [sign up for VSTS](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs), 
    [create your project](../organizations/accounts/organization-management.md), 
-   and [create your backlog](../work/backlogs/create-your-backlog.md). 
+   and [create your backlog](../boards/backlogs/create-your-backlog.md). 
 
 1. In VSTS, open your project.
 
@@ -46,7 +44,7 @@ See [Default manual testing permissions and access](manual-test-permissions.md).
 
    ![In test plan explorer, open the New (+) list, then click Test plan](_img/create-a-test-plan/CreateATestPlan1a.png)
 
-1. Name the test plan. Check the area path and iteration. Then choose **Create*.
+1. Name the test plan. Check the area path and iteration. Then choose **Create**.
 
    ![Add test plan details, then click Create](_img/create-a-test-plan/CreateATestPlan2.png) 
 
@@ -80,17 +78,16 @@ See [Default manual testing permissions and access](manual-test-permissions.md).
 ## Find a test plan
 
 * The **Test Plans** page shows a single test plan. Use the
-  ![filter-icon](_img/create-a-test-plan/filter-icon.png) icon or the drop-down
-  list at the top of the left column select the test plan you want to work with.
+  ![filter-icon](_img/create-a-test-plan/filter-icon.png) icon to find the one you want to work with.
 
-  ![Selecting a test plan from the drop-down list](_img/create-a-test-plan/select-test-plan.png)
+  ![Finding a test plan](_img/create-a-test-plan/select-test-plan.png)
 
 Test plans, suites, and test cases are stored in VSTS and TFS as special types of work items.
    
 ## See also
 
 * [FAQs for manual testing](reference-qa.md#testplans)
-* [Link test cases to work items](../work/track/link-work-items-support-traceability.md)
+* [Link test cases to work items](../boards/queries/link-work-items-support-traceability.md)
 
 ##  Next step
 

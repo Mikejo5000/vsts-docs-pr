@@ -46,7 +46,7 @@ Avoid creating an area structure that is too complex. You can create areas to pa
 You define as many child iterations as you need to reflect your project lifecycle. These paths represent a series of events, such as sprints, pre-beta and beta deliverables, and other release milestones. Teams typically leave work items assigned to the team's default iteration if they are not yet scheduled for work or for a release.  
 
 Add iterations to support these requirements:  
-* Define sprints your Scrum teams use to [plan and execute their sprints](../../work/scrum/assign-work-sprint.md)
+* Define sprints your Scrum teams use to [plan and execute their sprints](../../boards/sprints/assign-work-sprint.md)
 * Set up more complex multi-release and sprint cycles
 * Filter queries based on sprints, milestones, or cycle time for your project 
 * Support future work that you're not ready to assign to a target release cycle.  
@@ -68,7 +68,7 @@ Iterations do not enforce any rules. For example, you can assign a task to an it
 <a name="name-restrictions"></a>
 ## Naming restrictions 
 
-The **Area Path** and **Iteration Path** fields, [data type=TreePath](../../work/customize/reference/define-modify-work-item-fields.md), consist of multiple node items which are separated by the backslash (&#92;) character. We recommend that you minimize the names of nodes, and make sure that you conform to the following restrictions when adding child nodes:
+The **Area Path** and **Iteration Path** fields, [data type=TreePath](../../reference/xml/define-modify-work-item-fields.md), consist of multiple node items which are separated by the backslash (&#92;) character. We recommend that you minimize the names of nodes, and make sure that you conform to the following restrictions when adding child nodes:
 
 > [!div class="mx-tdCol2BreakAll"]  
 > | Restriction type                 | Restriction       |  
@@ -85,8 +85,8 @@ As you can see, areas and iterations play a major role in supporting Agile tools
 *	[Set project-level area paths](set-area-paths.md)  
 *	[Set project-level iteration paths](set-iteration-paths-sprints.md)  
 *	[Set team defaults](set-team-defaults.md)  
-*	[Agile tools and sprint definitions](../../work/scrum/define-sprints.md)  
-*	[Query by date or current iteration](../../work/track/query-by-date-or-current-iteration.md)  
+*	[Agile tools and sprint definitions](../../boards/sprints/define-sprints.md)  
+*	[Query by date or current iteration](../../boards/queries/query-by-date-or-current-iteration.md)  
 
 
 <a name="export"></a>
@@ -98,11 +98,11 @@ You can't export the structure of tree paths for one project to use with another
 <a name="field-rules"></a>
 ### Supported field rules  
 
-You can [specify only a small subset of rules](../../work/customize/reference/apply-rule-work-item-field.md#system), such as ```HELPTEXT``` and ```READONLY``` to System.XXX fields. 
+You can [specify only a small subset of rules](../../reference/xml/apply-rule-work-item-field.md#system), such as ```HELPTEXT``` and ```READONLY``` to System.XXX fields. 
 
 <a name="team-field"></a>
 ### Team field versus team area path  
-If your organization has several teams that work from a common backlog and across many product areas, you might want to change how teams are configured. By [adding a custom field to represent teams](../../work/customize/use-team-fields-instead-area-paths.md) in your organization, you can reconfigure the agile planning tools and pages to support your teams and decouple assignment to teams and area paths. 
+If your organization has several teams that work from a common backlog and across many product areas, you might want to change how teams are configured. By [adding a custom field to represent teams](../../reference/use-team-fields-instead-area-paths.md) in your organization, you can reconfigure the agile planning tools and pages to support your teams and decouple assignment to teams and area paths. 
 
 ::: moniker-end
  

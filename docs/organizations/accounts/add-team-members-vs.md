@@ -13,7 +13,7 @@ monikerRange: 'vsts'
 ---
 # Add project members in VSTS
 
-**VSTS**
+[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 Add members to your project in Visual Studio Team Services (VSTS), so you can share code and work with your team, track their status, coordinate dev, build, test, and release activities, and more. For Team Foundation Server (TFS), see [Add users to a team or team project](../../organizations/security/add-users-team-project.md).
 
