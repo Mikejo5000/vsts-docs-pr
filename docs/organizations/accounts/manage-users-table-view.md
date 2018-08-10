@@ -1,6 +1,6 @@
 ---
 title: Manage users and access in Visual Studio Team Services
-description: Add users and assign access levels on the Users tab in Visual Studio Team Services (VSTS). 
+description: Add users and assign access levels in the Users view in Visual Studio Team Services (VSTS). 
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 9f142821-1772-413f-a0e0-9b47b11a410f
@@ -57,9 +57,9 @@ The Users view shows key information per user in a table. In this view, you can:
 
 3. Select the **Users** tab, and then select **Add new users**.
 
-   ![Users tab, Add new users](_img/_shared/add-new-users.png)
+   ![Select the Users tab, and then select Add new users](_img/_shared/add-new-users.png)
 
-4. Select a user or group of users. Then, select the **...** icon at the end of the name column to open the context menu. 
+4. Select a user or group of users. Then, select the **...** icon at the end of the **Name** column to open the context menu. 
 
     In the context menu, select one of these options:
     *   **Add to projects**
@@ -70,7 +70,7 @@ The Users view shows key information per user in a table. In this view, you can:
     *   **Remove direct assignments**
     *   **Remove from organization** (deletes user)
 
-    ![User hub, context menu](_img/manage-users/manage-users-show-context-menu-vert.png)
+    ![Select the User hub, and then select an item in the context menu](_img/manage-users/manage-users-show-context-menu-vert.png)
 
 5. **Save** your changes.
 
@@ -84,7 +84,7 @@ The Users view shows key information per user in a table. In this view, you can:
 
 	![Open the Add new users page](../../user-guide/_img/sign-up/add-new-users.png)
 
-2. Select a user or group of users. Then, select the **...** icon at the end of the name column to open the context menu. 
+2. Select a user or group of users. Then, select the **...** icon at the end of the **Name** column to open the context menu. 
 
     In the context menu, select one of these options:
     *   **Change access levels**
@@ -93,7 +93,7 @@ The Users view shows key information per user in a table. In this view, you can:
     *   **Manage extensions** (if there are extensions)
     *   **Remove from organization** (deletes user)
 
-   ![User hub, context menu](_img/manage-users/manage-users-show-context-menu.png)
+   ![Select the User hub, and then select an item in the context menu](_img/manage-users/manage-users-show-context-menu.png)
 
 
 ### How does *access* differ from *permissions*?
