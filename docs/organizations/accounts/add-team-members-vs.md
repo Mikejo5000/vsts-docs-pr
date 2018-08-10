@@ -23,8 +23,7 @@ if your organization has available seats.
 * [Stakeholder access](https://visualstudio.microsoft.com/team-services/compare-features/),
 if your organization does *not* have available seats. 
 
-When [Visual Studio subscribers sign in](https://visualstudio.microsoft.com/products/subscriber-benefits-vs), they get Basic access and, in some instances, they get additional features with specific extensions,
-such as [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web).
+When [Visual Studio subscribers sign in](https://visualstudio.microsoft.com/products/subscriber-benefits-vs), they get Basic access and, in some instances, they get additional features with specific extensions, such as [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web).
 
 > [!NOTE]
 > To manually assign access levels, [add members to your organization](add-organization-users-from-user-hub.md). To control access to organization resources, see [Change individual permissions, and grant access to specific functions](../../organizations/security/change-individual-permissions.md) or see [Grant or restrict access to selected features and functions](../../organizations/security/restrict-access.md).
