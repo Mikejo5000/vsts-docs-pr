@@ -11,9 +11,10 @@ author: chcomley
 ms.date: 07/26/2017
 monikerRange: 'vsts'
 ---
-# Create a VSTS organization with a personal Microsoft account or a work or school account
 
-**VSTS**
+# Create your VSTS organization with a personal Microsoft account or a work/school account
+
+[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 To create a Visual Studio Team Services (VSTS) organization with a personal Microsoft account or a work or school account, sign up for a [VSTS](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs) account. With VSTS, you can upload and share code in free, unlimited private Git repositories or Team Foundation Version Control. You can then connect your favorite development tools, such as Eclipse, Xcode, Visual Studio, IntelliJ, or Android Studio to work on apps anytime, anywhere. VSTS offers integrated, enterprise agile tools for DevOps, so your team can build often, test early, and ship faster.
 
