@@ -120,4 +120,4 @@ To add members to projects, you need [*project administrator*](../security/set-p
 * [Change individual permissions, and grant access to specific functions](../../organizations/security/change-individual-permissions.md)
 * [Grant or restrict access to specific features and functions](../../organizations/security/restrict-access.md)
 * [VSTS pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
-* [VSTS billing support](https://visualstudio.microsoft.com/team-services/support/)
+* [VSTS billing support](https://visualstudio.microsoft.com/team-services/support/) 
