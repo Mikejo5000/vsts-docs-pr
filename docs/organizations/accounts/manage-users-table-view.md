@@ -11,9 +11,10 @@ author: chcomley
 ms.date: 07/31/2018
 monikerRange: 'vsts'
 ---
+
 # Manage users for VSTS
 
-**VSTS**
+[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 Add users to your VSTS organization and specify the level of features they can use, such as Basic or Stakeholder.  
 These kinds of users can join your VSTS organization for free:
@@ -50,7 +51,7 @@ access levels.  You can multi-select users and bulk edit their extensions and ac
 partial user names, access level, or extension names.  You can see the last access date for each user to help you choose 
 from whom you might remove access or lower access to stay within your license limits.
 
-[!INCLUDE [temp](../../work/_shared/new-agile-hubs-feature.md)]
+[!INCLUDE [temp](../../boards/_shared/new-agile-hubs-feature.md)]
 
 # [New navigation](#tab/new-nav)
 
@@ -77,17 +78,17 @@ and **Remove from organization** (deletes user).
  
 1. Open the **Users** page for your organization. Choose ![gear icon](../../_img/icons/gear-icon.png), the gear Settings icon, and choose the **Organization Settings** option
  
-	![Open Organization Settings](../../user-guide/_img/sign-up/open-organization-settings.png)
+	![Open Organization Settings](../../_shared/_img/settings/open-organization-settings.png)
 
-	Then, click **Users** to open the Manage users page. Click **Add new users** to open the dialog. 
+	Then, select **Users** to open the Manage users page. Choose **Add new users** to open the dialog. 
 
 	![Open Add new users dialog](../../user-guide/_img/sign-up/add-new-users.png)
 
-2. Choose a user or group of users in the table and then click the **...** icon at the end of the name column to open the context 
+2. Choose a user or group of users in the table and then select the **...** icon at the end of the name column to open the context 
 menu. The menu supports **Change access levels**, **Manage projects**, **Resend invite**, **Manage extensions** (if there are extensions), 
 and **Remove from organization** (deletes user).
 
-  ![User hub, context menu](_img/manage-users/manage-users-show-context-menu.png)
+   > ![User hub, context menu](_img/manage-users/manage-users-show-context-menu.png)
 
 ---
 
@@ -98,8 +99,6 @@ and **Remove from organization** (deletes user).
 - [Change individual permissions, grant select access to specific functions](../../organizations/security/change-individual-permissions.md)
 - [Grant or restrict access to select features and functions](../../organizations/security/restrict-access.md)
 - [Delete users from VSTS](delete-organization-users.md)
-- [Troubleshoot adding and deleting organization users in the VSTS user hub](faq-add-delete-users.md)
-- [Troubleshoot adding members to team projects in Visual Studio Team Services (VSTS)](faq-add-team-members.md)
 
 
 ### How does *access* differ from *permissions*?

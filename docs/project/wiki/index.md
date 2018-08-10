@@ -22,7 +22,7 @@ Repository README files and wikis are great ways to share information with your 
 ::: moniker range=">=tfs-2015 <= tfs-2018"
 
 > [!NOTE]  
-> **Feature availability:** The built-in wiki is available for TFS 2018 and later versions. To download TFS 2018, see the [TFS 2018 Release Notes](https://visualstudio.microsoft.com/en-us/news/releasenotes/tfs2018-relnotes). 
+> **Feature availability:** The built-in wiki is available for TFS 2018 and later versions. To download TFS 2018, see the [TFS 2018 Release Notes](https://visualstudio.microsoft.com/news/releasenotes/tfs2018-relnotes). 
 
 ::: moniker-end
 
@@ -89,7 +89,7 @@ Repository README files and wikis are great ways to share information with your 
 ## Resources 
 
 - [Dashboards](../../report/dashboards/index.md)
-- [Work Items](../../work/work-items/index.md)
+- [Work Items](../../boards/work-items/index.md)
 
 ## Videos 
 > [!VIDEO https://www.youtube.com/embed/BdtlTJM6LpM?start=0]

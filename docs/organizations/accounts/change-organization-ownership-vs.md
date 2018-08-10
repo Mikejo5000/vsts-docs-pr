@@ -14,7 +14,7 @@ monikerRange: 'vsts'
 
 # Change organization owner for VSTS
 
-**VSTS**
+[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 When your team's roles and responsibilities change, change your VSTS organization owner to another user.
 
@@ -36,7 +36,7 @@ Make sure that the new owner:
 
 ## Change VSTS organization owner
 
-[!INCLUDE [temp](../../work/_shared/new-agile-hubs-feature.md)]
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 # [New navigation](#tab/new-nav)
 

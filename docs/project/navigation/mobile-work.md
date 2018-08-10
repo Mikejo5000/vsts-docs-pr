@@ -31,7 +31,7 @@ With the mobile browser and work item form, you gain on-the-go features to stay 
 ::: moniker range="tfs-2018"
 
 > [!NOTE]  
-> The mobile browser is available for TFS 2018 and later versions. To download TFS 2018, see the [TFS 2018 Release Notes](https://www.visualstudio.com/en-us/news/releasenotes/tfs2018-relnotes). The mobile browser is not an app, but a mobile view into select features. There is nothing to download. You access the mobile browser by clicking a link from a work item you receive in your mobile email application. 
+> The mobile browser is available for TFS 2018 and later versions. To download TFS 2018, see the [TFS 2018 Release Notes](https://www.visualstudio.com/news/releasenotes/tfs2018-relnotes). The mobile browser is not an app, but a mobile view into select features. There is nothing to download. You access the mobile browser by clicking a link from a work item you receive in your mobile email application. 
 
 ::: moniker-end
 
@@ -49,7 +49,7 @@ The mobile work item form will open when you click **View work item** from an em
 
 
 ## Update a work item
-Within the mobile form, you can do almost everything you can do from the [web portal form](../../work/backlogs/add-work-items.md). Here are the actions you can take in the order they appear in the mobile form: 
+Within the mobile form, you can do almost everything you can do from the [web portal form](../../boards/backlogs/add-work-items.md). Here are the actions you can take in the order they appear in the mobile form: 
 
 *  Add and remove tags
 *  View and add to the discussion, click on the comment to add to the discussion
@@ -70,7 +70,7 @@ Mobile form controls operate as follows:
 
 - Click any field to edit it and the form changes to a full-screen experience. For example, some of the most common actions such as changing the state of an item, moving to a different area path, adding an attachment, and creating/removing tags are all supported. 
 - When done, click the ![return icon](_img/mobile-work-return.png) return option. 
-- Remember to click the ![save icon](../../work/_img/icons/icon-save-wi.png) save icon to save your changes!  
+- Remember to click the ![save icon](../../boards/_img/icons/icon-save-wi.png) save icon to save your changes!  
 
 ### Update status (change State) 
  
@@ -107,7 +107,7 @@ Then, click **Work items**.
 
 ![Click Work items](_img/mobile-work-click-work-items.png)
 
-The browser opens to the **Assigned to me** page. From there, you can choose **Following** or **My activity** to access the other pages. To learn more about the **Work Items** view, see [View and add work items](../../work/work-items/view-add-work-items.md). 
+The browser opens to the **Assigned to me** page. From there, you can choose **Following** or **My activity** to access the other pages. To learn more about the **Work Items** view, see [View and add work items](../../boards/work-items/view-add-work-items.md). 
 
 ![Mobile work item form, Change State action](_img/mobile-work-account-work-items-pages.png)  
 
@@ -117,7 +117,7 @@ Additional experiences are in the works to improve and expand on the mobile expe
   
 - [Set personal notifications](../../notifications/manage-personal-notifications.md)  
 - [Set team notifications](../../notifications/manage-team-notifications.md)  
-- [Follow a work item](../../work/work-items/follow-work-items.md)    
+- [Follow a work item](../../boards/work-items/follow-work-items.md)    
 
 
 ### Provide feedback for the mobile experience  

@@ -24,7 +24,7 @@ For a simplified view of permissions assigned to built-in groups, see [Permissio
 
 In addition to permissions, access to premium features are controlled by either the Advanced or VS Enterprise [access level](access-levels.md). Contributors and administrators should be added to Basic access. Stakeholder access is available to support free access to a limited set of features by an unlimited set of stakeholders. For more details on Stakeholder access, jump to [Stakeholder access](#stakeholder-access). 
 
-The team administrator role supports configuration of team settings. To be added as a team administrator, see [Add team administrators](../../work/scale/add-team-administrator.md). Project administrators con configure settings at the project level. See [Add administrators, set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md). 
+The team administrator role supports configuration of team settings. To be added as a team administrator, see [Add team administrators](../../organizations/settings/add-team-administrator.md). Project administrators con configure settings at the project level. See [Add administrators, set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md). 
 
 ## Default work tracking permissions and access 
 
@@ -139,7 +139,7 @@ The following table summarizes a subset of the default permissions assigned to t
 <tbody valign="top" align="center">
 <tr>
 
-<td align="left">[Add a team administrator](../../work/scale/add-team-administrator.md) </p>
+<td align="left">[Add a team administrator](../../organizations/settings/add-team-administrator.md) </p>
 </td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
@@ -149,7 +149,7 @@ The following table summarizes a subset of the default permissions assigned to t
 <tr>
 
 <td align="left">
-[Add team members](../../work/scale/multiple-teams.md) </p>
+[Add team members](../../organizations/settings/add-teams.md) </p>
 </td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
@@ -158,7 +158,7 @@ The following table summarizes a subset of the default permissions assigned to t
 </tr>
 <tr>
 
-<td align="left">[View shared work item queries](../../work/track/using-queries.md)</p>
+<td align="left">[View shared work item queries](../../boards/queries/using-queries.md)</p>
 </td>
 <td>![checkmark](_img/icons/checkmark.png)</td>
 <td>![checkmark](_img/icons/checkmark.png)</td>
@@ -168,7 +168,7 @@ The following table summarizes a subset of the default permissions assigned to t
 
 <tr>
 <td align="left">
-[Manage shared query and query folder permissions](../../work/track/set-query-permissions.md)<br/>(Contribute, Delete, Manage Permissions)
+[Manage shared query and query folder permissions](../../boards/queries/set-query-permissions.md)<br/>(Contribute, Delete, Manage Permissions)
 </p>
 </td>
 <td><p>&nbsp;&nbsp;</p></td>
@@ -215,11 +215,11 @@ For teams to work autonomously, you may want to provide them with permissions th
 
 - [Create and edit child nodes under their default area path](set-permissions-access-work-tracking.md)  
 - [Create and edit child nodes under an existing iteration node](set-permissions-access-work-tracking.md)  
-- [Create shared queries and folders under the Shared Queries folder](../../work/track/set-query-permissions.md).  
+- [Create shared queries and folders under the Shared Queries folder](../../boards/queries/set-query-permissions.md).  
  
 By default, team members inherit the permissions afforded to members of the team project Contributors group. Members of this group can add and modify source code, create and delete test runs, and create and modify work items. They can [collaborate on a Git team project](../../repos/git/gitquickstart.md) or collaborate with other team members and [check in work to the team's code base (TFVC)](../../repos/tfvc/check-your-work-team-codebase.md).  
 
-![Default permissions assigned to team contributors](../../work/scale/_img/default-permissions-assigned-to-team-contributors.png)  
+![Default permissions assigned to team contributors](../settings/_img/add-team/default-permissions-assigned-to-team-contributors.png)  
 
 If your on-premises TFS deployment includes reporting or SharePoint Products, add users to those resources. See [Set SharePoint site permissions](../../organizations/security/set-sharepoint-permissions.md) and [Grant permissions to view or create SQL Server reports in TFS](../../report/admin/grant-permissions-to-reports.md).
 
@@ -228,6 +228,6 @@ If your on-premises TFS deployment includes reporting or SharePoint Products, ad
 
 *	[Set permissions and access for work tracking](set-permissions-access-work-tracking.md) 
 *	[Get started as a Stakeholder](get-started-stakeholder.md)  
-*	[Add another team](../../work/scale/multiple-teams.md)  
-*	[Configure team settings](../../work/scale/manage-team-assets.md)   
+*	[Add another team](../../organizations/settings/add-teams.md)  
+*	[Configure team settings](../settings/configure-team-settings.md)   
 

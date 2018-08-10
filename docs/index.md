@@ -10,7 +10,7 @@ ms.technology: vs-devops-overview
 ms.assetid: B13C10AF-4FBC-493A-869F-79BABD6D453A 
 ms.manager: douge 
 ms.author: kaelli 
-ms.date: 02/24/2018
+ms.date: 08/02/2018
 featureFlags:
 - clicktale 
 ---
@@ -127,8 +127,8 @@ featureFlags:
                                             <div class="cardText">
                                                 <h3>Agile</h3>
                                                 <ul class="noBullet">
-                                                    <li><a class="barLink" href="/vsts/work/scrum/index">Sprints (Scrum)</a></li>
-                                                    <li><a class="barLink" href="/vsts/work/kanban/index">Boards (Kanban)</a></li>
+                                                    <li><a class="barLink" href="/vsts/boards/sprints/index">Sprints (Scrum)</a></li>
+                                                    <li><a class="barLink" href="/vsts/boards/boards/index">Boards (Kanban)</a></li>
                                                     <li><a class="barLink" href="/vsts/report/dashboards/index">Dashboards</a></li>
                                                 </ul>
                                             </div>
@@ -236,13 +236,13 @@ featureFlags:
                                 <div class="group">
                                     <h3>Agile</h3>
                                     <ul>
-                                        <li><a class="barLink" href="/vsts/work/work-items/index">Work Items</a></li>
-                                        <li><a class="barLink" href="/vsts/work/backlogs/index">Backlogs</a></li>
-                                        <li><a class="barLink" href="/vsts/work/kanban/index">Boards (Kanban)</a></li>
-                                        <li><a class="barLink" href="/vsts/work/scrum/index">Sprints (Scrum)</a></li>
-                                        <li><a class="barLink" href="/vsts/work/track/index">Queries</a></li>
-                                        <li><a class="barLink" href="/vsts/work/customize/index">Customization</a></li>
-                                        <li><a class="barLink" href="/vsts/work/scale/index">Agile at Scale</a></li>
+                                        <li><a class="barLink" href="/vsts/boards/work-items/index">Work Items</a></li>
+                                        <li><a class="barLink" href="/vsts/boards/backlogs/index">Backlogs</a></li>
+                                        <li><a class="barLink" href="/vsts/boards/boards/index">Boards (Kanban)</a></li>
+                                        <li><a class="barLink" href="/vsts/boards/sprints/index">Sprints (Scrum)</a></li>
+                                        <li><a class="barLink" href="/vsts/boards/queries/index">Queries</a></li>
+                                        <li><a class="barLink" href="/vsts/reference/index">Customization</a></li>
+                                        <li><a class="barLink" href="/vsts/boards/plans/index">Agile at Scale</a></li>
                                     </ul>
                                     <h3>Reporting</h3>
                                     <ul>
@@ -253,6 +253,7 @@ featureFlags:
                                     </ul>
                                     <h3>Collaboration</h3>
                                     <ul>
+                                        <li><a class="barLink" href="/vsts/project/navigation/index">Navigation Basics</a></li>
                                         <li><a class="barLink" href="/vsts/organizations/public/index">Public Projects</a></li>
                                         <li><a class="barLink" href="/vsts/notifications/index">Notifications</a></li>
                                         <li><a class="barLink" href="/vsts/project/wiki/index">READMEs &amp; Wikis</a></li>
@@ -266,15 +267,15 @@ featureFlags:
                                     <h3>Admin</h3>
                                     <ul>
                                         <li><a class="barLink" href="/vsts/organizations/accounts/index">Project Management</a></li>
+                                        <li><a class="barLink" href="/vsts/organizations/settings/index">Settings</a></li>
                                         <li><a class="barLink" href="/vsts/organizations/security/index">Security and Identity</a></li>
-                                        <li><a class="barLink" href="/vsts/organizations/settings/index">Scale and Configure Teams</a></li>
+                                        <li><a class="barLink" href="/vsts/organizations/settings/scale/index">Scale and Configure Teams</a></li>
                                         <li><a class="barLink" href="/vsts/marketplace/index">Manage Extensions</a></li>
-
                                         <li><a class="barLink" href="/vsts/billing/index">Billing</a></li>
                                         <li><a class="barLink" href="/vsts/organizations/accounts/index">Organization Management (VSTS)</a></li>
                                         <li><a class="barLink" href="/tfs/server/index">Server Administration (TFS)</a></li>
                                         <li><a class="barLink" href="/vsts/report/sharepoint-dashboards/">SharePoint Integration (TFS)</a></li>
-                                        <li><a class="barLink" href="/vsts/work/tfs-ps-sync/">Project Server Integration (TFS)</a></li>
+                                        <li><a class="barLink" href="/vsts/reference/tfs-ps-sync/">Project Server Integration (TFS)</a></li>
                                     </ul>
                                     <h3>Extend</h3>
                                     <ul>
@@ -620,7 +621,7 @@ featureFlags:
                         <a href="#agile">Agile</a>
                         <ul id="agile" class="cardsA">
                             <li>
-                                <a href="/vsts/work/work-items/index">
+                                <a href="/vsts/boards/work-items/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -640,7 +641,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/work/backlogs/index">
+                                <a href="/vsts/boards/backlogs/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -660,7 +661,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/work/kanban/index">
+                                <a href="/vsts/boards/boards/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -679,7 +680,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/work/scrum/index">
+                                <a href="/vsts/boards/sprints/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -698,7 +699,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/work/track/index">
+                                <a href="/vsts/boards/queries/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -717,7 +718,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/work/customize/index">
+                                <a href="/vsts/reference/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -736,7 +737,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/work/scale/index">
+                                <a href="/vsts/boards/plans/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -842,13 +843,32 @@ featureFlags:
                         <a href="#collaboration">Collaboration</a>
                         <ul id="collaboration" class="cardsA">
                             <li>
+                                <a href="/vsts/project/navigation/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com//media/common/i_portal.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Navigation Basics</h3>
+                                                    <p>Work effectively in the web portal to open services, pages, artifacts; use breadcrumbs and favorites; and work across projects.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
                                 <a href="/vsts/organizations/public/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/logo_vs-team-services.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/common/i_web-color.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -944,18 +964,18 @@ featureFlags:
                         <a href="#admin">Admin</a>
                         <ul id="admin" class="cardsA">
                             <li>
-                                <a href="/vsts/organizations/accounts/index">
+                                <a href="/vsts/organizations/projects/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/i_account-management.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/common/i_management.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Organization Management</h3>
-                                                    <p>Setup and manage your organization and configure key settings to support your
+                                                    <h3>Project Management</h3>
+                                                    <p>Add, structure, and manage projects to support your organization and 
                                                         teams.</p>
                                                 </div>
                                             </div>
@@ -964,18 +984,37 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/tfs/server/index">
+                                <a href="/vsts/organizations/settings/scale/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/media/common/i_tools.svg" alt="" />
+                                                        <img src="_img/index/i_configure-teams.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Server Administration (TFS)</h3>
-                                                    <p>Install, upgrade, and manage resources for your on-premises deployment.</p>
+                                                    <h3>Scale and Configure Teams</h3>
+                                                    <p>Add teams and team administrators; configure team settings.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/vsts/organizations/settings/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com/media/common/i_config-tools.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Settings</h3>
+                                                    <p>Configure and customize resources for your project, collection, or organization. </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -1003,6 +1042,26 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
+                                <a href="/vsts/organizations/accounts/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/i_account-management.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Organization Management</h3>
+                                                    <p>Setup and manage your organization and configure key settings to support your
+                                                        teams.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
                                 <a href="/vsts/billing/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
@@ -1015,25 +1074,6 @@ featureFlags:
                                                 <div class="cardText">
                                                     <h3>Billing</h3>
                                                     <p>Manage subscriptions, extension purchases, and Azure Active Directory.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/vsts/organizations/settings/index">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="_img/index/i_configure-teams.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Scale and Configure Teams</h3>
-                                                    <p>Add teams and team administrators; configure team settings.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -1060,6 +1100,25 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
+                                <a href="/tfs/server/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com/media/common/i_tools.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Server Administration (TFS)</h3>
+                                                    <p>Install, upgrade, and manage resources for your on-premises deployment.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
                                 <a href="/vsts/report/sharepoint-dashboards/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
@@ -1079,7 +1138,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/work/tfs-ps-sync/">
+                                <a href="/vsts/reference/tfs-ps-sync/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">

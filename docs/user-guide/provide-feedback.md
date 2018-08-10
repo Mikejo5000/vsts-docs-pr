@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2013'
 
 # Get VSTS and TFS product support and provide feedback
 
-[!INCLUDE [temp](../work/_shared/dev15-version-header.md)] 
+[!INCLUDE [temp](../boards/_shared/dev15-version-header.md)] 
 
 We're always working to improve VSTS, and we want you to be part of the process! Share your feedback and ideas with us, or join our communities.
 
@@ -77,7 +77,7 @@ A VSTS URL consists of an organization name and visual studio.com, for example: 
 
 To learn the version number, enter the following address in a web browser:
 ```
-https://AccountName.visualstudio.com/_home/About
+https://OrganizationName.visualstudio.com/_home/About
 ```
 A page similar to the one shown will open showing the version number.
 

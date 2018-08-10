@@ -25,7 +25,7 @@ The Analytics service data model for Visual Studio Team Services (VSTS) consists
 ##Entities  
 
 >[!NOTE]  
->Entity sets are described in OData metadata, and vary by VSTS project. A complete list of entity sets, entity types, and properties can be discovered by requesting the OData metadata for your project: ```https://{account}.analytics.visualstudio.com/{project}/_odata/{version}/$metadata```  
+>Entity sets are described in OData metadata, and vary by VSTS project. A complete list of entity sets, entity types, and properties can be discovered by requesting the OData metadata for your project: ```https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/{version}/$metadata```  
 
 The data model contains the following entity sets:  
 
@@ -38,7 +38,7 @@ The data model contains the following entity sets:
 |Projects | All projects defined for the account or collection |
 |Process | Backlog information - used to expand or filter work items and work item types|  
 |Tags | All work item tags for each project |  
-|Teams | All teams defined for the project (To add a team, see [Add teams and team members](../../work/scale/multiple-teams.md)) |  
+|Teams | All teams defined for the project (To add a team, see [Add teams](../../organizations/settings/add-teams.md)) |  
 |Users | User information - used to expand or filter various work item properties (e.g. Assigned To, Created By)|  
 |WorkItems | The current state of work items|  
 |WorkItemLinks | The links between work items (e.g. child, parent, related) - includes history of links - hyperlinks not included  
@@ -69,7 +69,7 @@ Some navigation properties result in a single entity, while others result in a c
 
 ##Entity Properties
 
-The following table provides a partial list of the WorkItemRevision entity properties to illustrate some common details. The last three properties€“CreatedDate, CreatedDateSK, CreatedOn-- show that the same value is often expressed in multiple properties, each designed for different scenarios.
+The following table provides a partial list of the WorkItemRevision entity properties to illustrate some common details. The last three properties&mdash;CreatedDate, CreatedDateSK, CreatedOn&mdash;show that the same value is often expressed in multiple properties, each designed for different scenarios.
 
 | Property | Type | Description|  
 |--------|------------|------------|  

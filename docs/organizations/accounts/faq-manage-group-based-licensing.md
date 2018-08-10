@@ -12,9 +12,10 @@ author: chcomley
 ms.date: 03/21/2018
 monikerRange: 'vsts'
 ---
+
 # Troubleshoot managing group-based licensing
 
-**VSTS**
+[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 #### Q: Will my users lose their access level and project membership if I remove a group rule?
 
@@ -33,5 +34,5 @@ A: It will remove the VSTS or Azure AD group from any project-level default grou
 
 ## Related articles
 
-- [Migrate to group-based resource management](https://docs.microsoft.com/en-us/vsts/organizations/accounts/migrate-to-group-based-resource-management-in-vsts?view=vsts)
-- [Assign access levels and extensions to users by group membership](https://docs.microsoft.com/en-us/vsts/organizations/accounts/assign-access-levels-and-extensions-by-group-membership?view=vsts)
+- [Migrate to group-based resource management](migrate-to-group-based-resource-management-in-vsts.md)
+- [Assign access levels and extensions to users by group membership](assign-access-levels-and-extensions-by-group-membership.md)

@@ -8,14 +8,13 @@ ms.assetid: 7E769466-2165-4223-96FA-80A687287EFC
 ms.manager: douge
 ms.author: kaelli
 ms.topic: conceptual
-ms.date: 08/15/2017
+ms.date: 08/02/2018
 monikerRange: '>= tfs-2015'
 ---
 
-
 # Source control
 
-**VSTS| TFS 2018 | TFS 2017 | TFS 2015**
+[!INCLUDE [version-vsts-tfs-all-versions](../_shared/version-vsts-tfs-all-versions.md)]
 
 Source control, also referred to as version control, systems allow developers to collaborate on code and track changes made to the code base. Source control is an essential tool for multi-developer projects.  
 

@@ -1,6 +1,6 @@
 ---
 title: Artifacts in Release Management
-description: DevOps CI CD - Understand build artifacts in Release Management for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+description: DevOps CI CD - Understand build artifacts in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.assetid: 6820FA1F-4B20-4845-89E0-E6AB4BD5888D
 ms.prod: devops
 ms.technology: devops-cicd
@@ -306,9 +306,9 @@ The following features are available when using Azure Container Registry, Docker
 <h3 id="nugetsource">NuGet and npm packages from Package Management</h3>
 
 To integrate with NuGet, or npm (Maven is not currently supported), you must first install the
-[Package Management](https://docs.microsoft.com/en-us/vsts/package/install)
+[Package Management](../../package/install.md)
 extension from the Marketplace. For more information, see
-[Package Management Overview](https://docs.microsoft.com/en-us/vsts/package/overview).
+[Package Management Overview](../../package/overview.md).
 
 Scenarios where you may want to consume Package Management artifacts are:
 
