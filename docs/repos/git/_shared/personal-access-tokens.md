@@ -4,7 +4,7 @@ ms.topic: include
 
 ## Create personal access tokens to authenticate access
 
-1.  Sign in to either your VSTS account (```https://{youraccount}.visualstudio.com```)
+1.  Sign in to either your VSTS organization (```https://{yourorganization}.visualstudio.com```)
 or your Team Foundation Server web portal (```https://{server}:8080/tfs/```).
 
 2.  From your home page, open your profile. Go to your security details.
