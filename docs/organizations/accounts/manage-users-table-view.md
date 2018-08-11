@@ -11,9 +11,9 @@ author: chcomley
 ms.date: 07/31/2018
 monikerRange: 'vsts'
 ---
-# Manage users in VSTS
+# Manage users for VSTS
 
-**VSTS**
+[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 Learn how to add users to your Visual Studio Team Services (VSTS) organization and specify the level of features they can use, such as Basic or Stakeholder.
 
@@ -43,7 +43,7 @@ The Users view shows key information per user in a table. In this view, you can:
 * Filter by searching for partial user names, access level, or extension names.
 * See the last access date for each user. This can help you choose users to remove access from or lower access to stay within your license limits.
 
-[!INCLUDE [temp](../../work/_shared/new-agile-hubs-feature.md)]
+[!INCLUDE [temp](../../boards/_shared/new-agile-hubs-feature.md)]
 
 # [New navigation](#tab/new-nav)
 

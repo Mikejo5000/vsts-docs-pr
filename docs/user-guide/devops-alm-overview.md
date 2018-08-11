@@ -84,9 +84,9 @@ Code Search also makes team collaboration easier and helps maximize developer ef
 
  Use Agile tools to plan and track work using Scrum and Kanban processes or a mix of both. Scrum tools support defining and managing work within sprints, setting capacity, and tracking tasks. Kanban tools allow you to manage a continuous flow of work via an interactive sign board. In addition, configurable charts, dashboards, and reports help teams monitor and share progress. 
 
-[![Define stories](_img/overview/ov-agile-plan-1.png)](../work/backlogs/create-your-backlog.md)[![Plan sprints](_img/overview/ov-agile-plan-2.png)](../work/scrum/assign-work-sprint.md)&#160;&#160;&#160;&#160;&#160;&#160;[![Kanban workflow](_img/overview/ov-agile-plan-3.png)](../work/kanban/kanban-basics.md) &#160;&#160;&#160;&#160;&#160;&#160;[![Dashboards](_img/overview/ov-agile-plan-dashboards-4.png)](../report/dashboards/dashboards.md)
+[![Define stories](_img/overview/ov-agile-plan-1.png)](../boards/backlogs/create-your-backlog.md)[![Plan sprints](_img/overview/ov-agile-plan-2.png)](../boards/sprints/assign-work-sprint.md)&#160;&#160;&#160;&#160;&#160;&#160;[![Kanban workflow](_img/overview/ov-agile-plan-3.png)](../boards/boards/kanban-basics.md) &#160;&#160;&#160;&#160;&#160;&#160;[![Dashboards](_img/overview/ov-agile-plan-dashboards-4.png)](../report/dashboards/dashboards.md)
 
-You also gain access to a [rich set of customization capabilities](../work/customize/customize-work.md).
+You also gain access to a [rich set of customization capabilities](../reference/customize-work.md).
  
 ## DevOps: Build - Test - Release
 
@@ -143,7 +143,6 @@ Our extensibility framework enables you to build integrations directly within VS
 With Marketplace extensions (currently in private preview), you can create first-class integration experiences, such as a simple context menu or toolbar action. Or, you can create a complex, powerful full UI experience that seamlessly lights up within the VSTS web portal.  
 
 - [Find marketplace extensions](../marketplace/index.md)
-- [Buy subscriptions](../billing/vs-subscriptions/buy-vs-subscriptions.md)
 - [Get extensions](../marketplace/install-vsts-extension.md)</li>
 - [Using service hooks](../service-hooks/index.md)
 - [Get started with REST APIs](../integrate/get-started/rest/basics.md)

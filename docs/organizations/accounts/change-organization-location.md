@@ -14,7 +14,7 @@ monikerRange: 'vsts'
 
 # Find or change your VSTS organization location (region)
 
-**VSTS**
+[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 When you [create an organization](create-organization-msa-or-work-student.md), you can choose the region where VSTS hosts your
 organization.  You may choose your organization's region due to locality and network latency or because you have sovereignty
@@ -24,7 +24,7 @@ where VSTS is available.
 
 For information on region availability, see [Products available by region](https://azure.microsoft.com/global-infrastructure/services/).
 
-[!INCLUDE [temp](../../work/_shared/new-agile-hubs-feature.md)]
+[!INCLUDE [temp](../../boards/_shared/new-agile-hubs-feature.md)]
 
 # [New navigation](#tab/new-nav)
 

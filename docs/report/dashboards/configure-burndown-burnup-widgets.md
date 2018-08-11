@@ -99,7 +99,7 @@ The Configuration dialog for the Burndown and Burnup widgets is the same. You co
    > The list of selectable backlogs, work item types, and fields are based on your current project. 
    > 
    > For example, if you select a work item type that doesn't exist in another project, the burndown will not include work items from that project. If you select a field that doesn't exist in another project, that field will be considered blank for the burndown. 
-   > Therefore, a burndown created across multiple projects will only work if the [Process](../..//work/work-items/guidance/choose-process.md) for those projects are the same, or at least very similar.
+   > Therefore, a burndown created across multiple projects will only work if the [Process](../..//boards/work-items/guidance/choose-process.md) for those projects are the same, or at least very similar.
 
 1. Choose your work items. The burndown can include work based on items in your **Backlog** or by **Work item type**.   
 	You can select a **Backlog**, which include all the work items in that backlog.    
@@ -109,7 +109,7 @@ The Configuration dialog for the Burndown and Burnup widgets is the same. You co
 	![Burndown Widget - Configuration - Select work item types](./_img/burndown-widget/burndownup-config-select-backlog.png)  
 
    > [!NOTE]   
-   > If your project has been customized using a [Hosted XML process](../../work/customize/hosted-xml-process-model.md) and has created a customized bug work item category name, then the Burndown and Burnup widgets won't be able to query for work items within that category. To query for bugs, the customized bug work item type must belong to the default **Bug Category**, reference name `Microsoft.BugCategory`.  
+   > If your project has been customized using a [Hosted XML process](../../organizations/settings/work/hosted-xml-process-model.md) and has created a customized bug work item category name, then the Burndown and Burnup widgets won't be able to query for work items within that category. To query for bugs, the customized bug work item type must belong to the default **Bug Category**, reference name `Microsoft.BugCategory`.  
    
 	You can also select **Work item type** to burndown on a specific work item type. In the list, you will find all the project's work item types including [custom work item types](../../organizations/settings/work/customize-process-wit.md).   
 	![Burndown Widget - Configuration - Select work item types](./_img/burndown-widget/burndownup-config-select-work-item-type.png)  
