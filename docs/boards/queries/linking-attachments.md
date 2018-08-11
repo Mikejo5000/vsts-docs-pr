@@ -1,6 +1,6 @@
 ---
 title: Link and attachment queries 
-titleSuffix: Azure DevOps and TFS
+titleSuffix: Azure Boards and TFS
 description: Query work items based on link type, link count, link restrictions, and attachment file count in Azure Boards & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops

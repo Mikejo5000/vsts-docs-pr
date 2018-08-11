@@ -1,6 +1,6 @@
 ---
 title: View & add work items from the Work Items page
-titleSuffix: VSTS  
+titleSuffix: Azure Boards and TFS
 description: Use the Work Items page to view and add work items that support 7 personalized pivot views       
 ms.global_help.title: View & add work items
 ms.global_help.keywords: ms.vss-work-web.work-items-hub, 1 
@@ -19,7 +19,7 @@ ms.date: 03/20/2018
 
 # View and add work items using the Work Items page  
 
-**Azure DevOps Services | TFS 2018.2**  
+**Azure Boards | TFS 2018.2**  
 
 View work items that you created or are assigned to you. The **Work>Work Items** page provides several personalized pivots and filter functions to streamline listing work items. Use this page to quickly find work items defined across teams within a project. 
 
@@ -30,7 +30,7 @@ View work items that you created or are assigned to you. The **Work>Work Items**
 
 ## Prerequisites 
 
-- You must connect to a project. If you don't have an account or project yet, create one in [VSTS](../../user-guide/sign-up-invite-teammates.md). You can then [connect to a project from your web portal or Visual Studio](../../organizations/projects/connect-to-projects.md).
+- You must connect to a project. If you don't have a project yet, [create one](../get-started/index.md). You can then [connect to a project from your web portal or Visual Studio](../../organizations/projects/connect-to-projects.md).
 - To view or add work items, you must be a member of the Contributors group or be granted [Stakeholder access](../../organizations/security/get-started-stakeholder.md). If you don't have access to the project, ask the [organization owner or project administrator](../../organizations/security/lookup-organization-owner-admin.md) to add you.
 
 
@@ -193,5 +193,5 @@ Use the following three controls to manage your views.
 - [Work across projects](../../project/navigation/work-across-projects.md)
 
 > [!NOTE]
-> You can create and manage work items from the command line or scripts using the [VSTS CLI](https://docs.microsoft.com/cli/vsts/overview?view=vsts-cli-latest).
+> You can create and manage work items from the command line or scripts using the [Azure DevOps CLI](https://docs.microsoft.com/cli/vsts/overview?view=vsts-cli-latest).
 

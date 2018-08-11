@@ -1,6 +1,6 @@
 ---
 title: Share your team's sprint plan 
-titleSuffix: Azure DevOps and TFS
+titleSuffix: Azure Boards and TFS
 description: Share sprint plan working with Scrum methods 
 ms.custom: Uses the New Navigation
 ms.technology: devops-agile

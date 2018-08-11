@@ -1,6 +1,6 @@
 ---
 title: Define and plan sprints and work with scrum tools
-titleSuffix: Azure DevOps and TFS 
+titleSuffix: Azure Boards and TFS 
 description: Define sprints, update your taskboard, and implement scrum in Azure Boards & Team Foundation Server  
 ms.technology: devops-agile
 ms.prod: devops

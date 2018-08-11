@@ -1,6 +1,6 @@
 ---
 title: Agile at Scale index to content
-titleSuffix: Azure DevOps and TFS
+titleSuffix: Azure Boards and TFS
 description: Index to topics for how to scale Agile tools in Azure Boards & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops

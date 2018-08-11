@@ -1,6 +1,6 @@
 ---
 title: Choose a process
-titleSuffix: Azure DevOps and TFS
+titleSuffix: Azure Boards and TFS
 description: Choose a process or process template, work with project artifacts in Azure Boards & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops

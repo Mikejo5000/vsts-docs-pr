@@ -1,6 +1,6 @@
 ---
 title: Split columns on your Kanban board
-titleSuffix: Azure DevOps and TFS
+titleSuffix: Azure Boards and TFS
 ms.global_help.title: Split columns
 description: Implement Kanban pull model by dividing each column into Doing and Done when working in Azure Boards or Team Foundation Server  
 ms.technology: devops-agile

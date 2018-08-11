@@ -1,6 +1,6 @@
 ---
 title: Update and monitor your scrum taskboard 
-titleSuffix: Azure DevOps and TFS  
+titleSuffix: Azure Boards and TFS  
 description: Implement scrum using the sprint task board in Azure Boards & Team Foundation Server
 ms.technology: devops-agile
 ms.prod: devops 

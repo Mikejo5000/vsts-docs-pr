@@ -1,6 +1,6 @@
 ---
 title: Create your backlog 
-titleSuffix: Azure DevOps and TFS
+titleSuffix: Azure Boards and TFS
 description: Add items, plan your project, order/prioritize, and estimate your backlog of deliverables in Azure Boards & Team Foundation Server   
 ms.technology: devops-agile
 ms.prod: devops

@@ -1,6 +1,6 @@
 ---
 title: Create managed queries to generate a list of work items
-titleSuffix: Azure DevOps and TFS 
+titleSuffix: Azure Boards and TFS 
 description: Track work by creating queries to list work items in Azure Boards & Team Foundation Server 
 ms.prod: devops
 ms.technology: devops-agile

@@ -1,6 +1,6 @@
 ---
 title: CMMI Requirements field reference 
-titleSuffix: Azure DevOps and TFS
+titleSuffix: Azure Boards and TFS
 description: Definition of fields used to track requirements in the CMMI process for Azure Boards & Team Foundation Server  
 ms.prod: devops
 ms.technology: devops-agile

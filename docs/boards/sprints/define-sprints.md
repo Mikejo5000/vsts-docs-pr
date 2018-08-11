@@ -1,6 +1,6 @@
 ---
 title: Schedule sprints to support working in Scrum
-titleSuffix: Azure DevOps and TFS  
+titleSuffix: Azure Boards and TFS  
 description: Add and set dates for sprints, releases, or iterations to implement Scrum in Azure Boards & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops

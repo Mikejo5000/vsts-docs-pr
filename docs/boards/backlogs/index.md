@@ -1,6 +1,6 @@
 ---
 title: Backlogs index to content
-titleSuffix: Azure DevOps and TFS
+titleSuffix: Azure Boards and TFS
 description: Index to topics for planning and tracking work in Azure Boards & Team Foundation Server   
 ms.technology: devops-agile
 ms.prod: devops

@@ -1,6 +1,6 @@
 ---
 title: Query by numeric field
-titleSuffix: Azure DevOps and TFS
+titleSuffix: Azure Boards and TFS
 description: Track work by creating queries based on effort, story points, schedules, or time tracking fields in Azure Boards & Team Foundation Server
 ms.technology: devops-agile
 ms.prod: devops

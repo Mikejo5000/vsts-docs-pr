@@ -1,6 +1,6 @@
 ---
 title: Create managed queries with the Query Editor
-titleSuffix: Azure DevOps and TFS
+titleSuffix: Azure Boards and TFS
 description: Create flat-list, tree, or direct-links queries to list, triage, update, and chart work items in Azure Boards & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
@@ -234,7 +234,7 @@ See also:
 
 ::: moniker range="vsts"
 > [!NOTE]  
-> For queries made against VSTS, the WIQL length must not exceed 32K characters. The system won't allow you to create or run queries that exceed that length.  
+> The WIQL length must not exceed 32K characters. The system won't allow you to create or run queries that exceed that length.  
 ::: moniker-end
 
 ## Related articles

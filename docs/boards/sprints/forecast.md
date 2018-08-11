@@ -1,6 +1,6 @@
 ---
 title: Forecasting 
-titleSuffix: Azure DevOps and TFS   
+titleSuffix: Azure Boards and TFS   
 description: Determine how much work your team can deliver across several sprints by forecasting in Azure Boards & Team Foundation Server     
 ms.technology: devops-agile
 ms.prod: devops

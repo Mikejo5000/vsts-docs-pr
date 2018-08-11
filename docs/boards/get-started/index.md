@@ -1,6 +1,6 @@
 ---
 title: Get started with Azure Boards
-titleSuffix: Azure DevOps and TFS
+titleSuffix: Azure Boards and TFS
 description: Start using interactive Kanban boards and other Agile tools using Azure Boards
 ms.technology: devops-agile
 ms.prod: devops

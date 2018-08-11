@@ -1,6 +1,6 @@
 ---
 title: Agile tools and terms 
-titleSuffix: Azure DevOps and TFS
+titleSuffix: Azure Boards and TFS
 description: Key definitions for objects and items used to track work in Azure Boards & Team Foundation Server
 ms.technology: devops-agile
 ms.prod: devops
@@ -105,7 +105,7 @@ An interactive list of work items, similar to the product backlog, that supports
 Specifies the default configuration and functional capabilities that your teams can access using the Agile tools. These web portal tools include the product backlog, sprint backlogs, Kanban board, and task board. (Only supported for Hosted XML and On-premises XML process models)  
 
 ## Process model  
-The work tracking customization method supported by your organization or collection. One of three process models are supported, Inheritance and Hosted XML for VSTS and On-premises XML for on-premises TFS. Learn more: [Customize your work tracking experience](../../reference/customize-work.md) 
+The work tracking customization method supported by your organization or collection. One of three process models are supported, Inheritance and Hosted XML for Azure Boards and On-premises XML for on-premises TFS. Learn more: [Customize your work tracking experience](../../reference/customize-work.md) 
 
 ## Process template
 Specifies an inter-related set of files that contain the XML definitions for tracking work and defining the initial configuration of other functional areas. The system provides three default process templates&mdash;[Agile](guidance/agile-process.md), [Scrum](guidance/scrum-process.md), or [CMMI](guidance/cmmi-process.md). You can create a project and then customize it, or customize a process template that you then use to create a project. (Only supported for Hosted XML and On-premises XML process models) 

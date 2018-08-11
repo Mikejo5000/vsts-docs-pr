@@ -1,6 +1,6 @@
 ---
 title: Customize cards on a board
-titleSuffix: Azure DevOps and TFS
+titleSuffix: Azure Boards and TFS
 description: Customize cards on the Kanban or Sprint/Scrum/Task boards in Azure Boards & Team Foundation Server 
 ms.global_help.title: Customize cards
 ms.global_help.keywords: ms.vss-work-web.boards-hub, 6    
@@ -127,7 +127,7 @@ As a first step, you'll see that you can change the card display for each work i
 	Here we choose User Story. Your choices will vary based on the [process](../../boards/work-items/guidance/choose-process.md) used to create your project and whether your team has chosen to [treat bugs like requirements or like tasks](../../organizations/settings/show-bugs-on-backlog.md).     
   
     ::: moniker range=">= tfs-2017"      
-    ![VSTS Kanban board, card customization dialog](_img/customize-cards/kanban-board-settings-card-fields-dialog-user-story.png)   
+    ![Kanban board, card customization dialog](_img/customize-cards/kanban-board-settings-card-fields-dialog-user-story.png)   
     ::: moniker-end    
 	::: moniker range="tfs-2015"      
 	**TFS 2015.1 options:**      
@@ -166,7 +166,7 @@ You change the way cards display on the task board the same way you change the K
 
 2.	Just as before, choose the WIT you want to customize, and then checkmark or select the options you want.     
     ::: moniker range=">= tfs-2017"    
-	![VSTS Kanban board, card customization dialog](_img/customize-cards/kanban-board-settings-card-fields-dialog-task.png)   
+	![Kanban board, card customization dialog](_img/customize-cards/kanban-board-settings-card-fields-dialog-task.png)   
     ::: moniker-end       
     ::: moniker range="tfs-2015"       
 	**TFS 2015.1 options:**       

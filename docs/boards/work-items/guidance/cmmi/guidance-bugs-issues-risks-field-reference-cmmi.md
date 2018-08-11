@@ -1,6 +1,6 @@
 ---
 title: Bugs, issues, & risks field reference (CMMI)
-titleSuffix: Azure DevOps and TFS
+titleSuffix: Azure Boards and TFS
 description: Tracks the information with regards to bugs, issues, and risks - Team Foundation Server  
 ms.prod: devops
 ms.technology: devops-agile

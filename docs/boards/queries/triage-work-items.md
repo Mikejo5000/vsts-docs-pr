@@ -1,6 +1,6 @@
 ---
 title: Triage work items using a work item query 
-titleSuffix: Azure DevOps and TFS  
+titleSuffix: Azure Boards and TFS  
 ms.global_help.title: Triage work items
 description: Review and update work items use the triage mode from the query results view in Azure Boards & Team Foundation Server
 ms.prod: devops

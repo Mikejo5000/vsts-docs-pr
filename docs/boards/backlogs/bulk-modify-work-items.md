@@ -1,6 +1,6 @@
 ---
 title: Bulk modify work items
-titleSuffix: Azure DevOps and TFS
+titleSuffix: Azure Boards and TFS
 description: Bulk edit/modify/update several/multiple work items, backlog items, tasks, or bugs or linked parent-child items for Azure Boards or Team Foundation Server    
 ms.technology: devops-agile
 ms.prod: devops

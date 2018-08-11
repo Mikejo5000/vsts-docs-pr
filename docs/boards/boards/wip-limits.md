@@ -1,6 +1,6 @@
 ---
 title: Configure WIP limits for Kanban board
-titleSuffix: Azure DevOps and TFS
+titleSuffix: Azure Boards and TFS
 description: Set Work In Progress Limits on the Kanban board in Azure Boards and Team Foundation Server 
 ms.global_help.title: Set WIP limits
 ms.global_help.keywords: ms.vss-work-web.boards-hub, 5    

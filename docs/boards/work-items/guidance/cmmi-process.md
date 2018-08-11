@@ -1,6 +1,6 @@
 ---
 title: CMMI process template artifacts
-titleSuffix: Azure DevOps and TFS  
+titleSuffix: Azure Boards and TFS  
 description: CMMI process objects used to plan and track work, monitor progress, and trends when connecting to Azure Boards & Team Foundation Server  
 ms.technology: devops-agile
 ms.prod: devops

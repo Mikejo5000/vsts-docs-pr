@@ -1,6 +1,6 @@
 ---
 title: Set Kanban board card reordering
-titleSuffix: Azure DevOps and TFS
+titleSuffix: Azure Boards and TFS
 description: Use the Kanban board, process, and tools to plan and track work in Azure Boards and Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops

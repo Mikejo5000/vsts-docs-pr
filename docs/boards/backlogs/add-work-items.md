@@ -1,6 +1,6 @@
 ---
 title: Add work items
-titleSuffix: Azure DevOps and TFS 
+titleSuffix: Azure Boards and TFS 
 ms.global_help.title: View & add work items
 ms.global_help.keywords: ms.vss-work-web.work-items-hub, 2 
 description: Add work items to plan and manage a software project using Agile tools, Scrum, or Kanban when connected to a project in Azure Boards or Team Foundation Server  

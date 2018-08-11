@@ -1,6 +1,6 @@
 ---
 title: Plan and track work with work items
-titleSuffix: Azure DevOps and TFS
+titleSuffix: Azure Boards and TFS
 description: Use work items to plan, track, & collaborate with others when developing software apps in Azure Boards & Team Foundation Server
 ms.technology: devops-agile
 ms.prod: devops
@@ -169,16 +169,9 @@ As a member added to the Contributors group of a project, you can use most featu
 
 To learn more about permissions and access, see [Permissions and access for work tracking](../../organizations/security/permissions-access-work-tracking.md). 
 
-::: moniker range="vsts" 
-To add team members to a project, see [Add users to your VSTS organization](../../organizations/accounts/add-team-members-vs.md).
-::: moniker-end
-::: moniker range=">= tfs-2013 <= tfs-2018"
-To add team members to a project, see [TFS project](../../organizations/security/add-users-team-project.md). 
-::: moniker-end
+To add team members to a project, see [Add users to a project or team](../../organizations/security/add-users-team-project.md).
 
 To learn more about user accounts, permissions, and access, see [Security & Identity](../../organizations/security/index.md).
-<!--- User names you add are all members of the Project Collection Valid Users group.  Also, these names are automatically synchronized with Azure Active Direct or Active Directory when AAD or AD is configured as part of the account (VSTS) or deployment (TFS).-->   
-
 
 <a id="clients"></a>  
 ## Clients that support tracking work items  

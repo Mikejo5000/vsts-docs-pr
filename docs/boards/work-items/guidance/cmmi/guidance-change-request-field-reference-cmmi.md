@@ -1,6 +1,6 @@
 ---
 title: Change request field reference (CMMI)
-titleSuffix: Azure DevOps and TFS
+titleSuffix: Azure Boards and TFS
 description: Track change requests for CMMI work items, provide description and reference name  
 ms.prod: devops
 ms.technology: devops-agile

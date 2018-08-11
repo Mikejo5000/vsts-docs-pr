@@ -1,6 +1,6 @@
 ---
 title: Resolve invalid links
-titleSuffix: Azure DevOps and TFS
+titleSuffix: Azure Boards and TFS
 description: Address invalid link error messages that occur when publishing an Excel tree list to Azure Boards & Team Foundation Server  
 ms.prod: devops
 ms.technology: devops-agile

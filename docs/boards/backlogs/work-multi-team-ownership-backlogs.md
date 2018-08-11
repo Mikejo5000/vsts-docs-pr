@@ -1,6 +1,6 @@
 ---
 title: Organize your backlog
-titleSuffix: Azure DevOps and TFS
+titleSuffix: Azure Boards and TFS
 description:  Organize your backlog by mapping backlog items to features, and features to epics in Azure Boards & Team Foundation Server  
 ms.technology: devops-agile
 ms.prod: devops

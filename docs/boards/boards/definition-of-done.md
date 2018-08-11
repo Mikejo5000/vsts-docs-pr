@@ -1,6 +1,6 @@
 ---
 title: Definition of Done on the Kanban board
-titleSuffix: Azure DevOps and TFS
+titleSuffix: Azure Boards and TFS
 ms.global_help.title: Definition of Done
 description: Support teams shared understanding by providing a definition for what "done" means for each column of the Kanban board  
 ms.technology: devops-agile

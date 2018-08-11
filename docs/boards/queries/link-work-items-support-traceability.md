@@ -1,6 +1,6 @@
 ---
 title: Link work items to support traceability 
-titleSuffix: Azure DevOps and TFS 
+titleSuffix: Azure Boards and TFS 
 description: Manage dependencies, link work items to other work items, code and build objects, add hyperlinks, and more
 ms.prod: devops
 ms.technology: devops-agile

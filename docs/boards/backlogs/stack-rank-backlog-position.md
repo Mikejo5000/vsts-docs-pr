@@ -1,6 +1,6 @@
 ---
 title: Stack rank or backlog priority
-titleSuffix: Azure DevOps and TFS
+titleSuffix: Azure Boards and TFS
 description: Understand how the stack rank or backlog priority fields determines the backlog position Azure Boards & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops

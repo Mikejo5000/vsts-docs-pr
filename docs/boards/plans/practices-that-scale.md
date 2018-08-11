@@ -1,6 +1,6 @@
 ---
 title: Practices that scale
-titleSuffix: Azure DevOps and TFS
+titleSuffix: Azure Boards and TFS
 description: Scaling Agile recommended practices for working in Azure Boards & Team Foundation Server    
 ms.technology: devops-agile
 ms.prod: devops

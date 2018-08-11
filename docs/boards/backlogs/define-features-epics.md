@@ -1,6 +1,6 @@
 ---
 title: Define features and epics
-titleSuffix: Azure DevOps and TFS
+titleSuffix: Azure Boards and TFS
 description:  Define features and epics to group backlog items and track high level items 
 ms.technology: devops-agile
 ms.prod: devops

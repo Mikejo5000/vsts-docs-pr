@@ -1,6 +1,6 @@
 ---
 title: Agile tools - Scrum, Kanban, and more
-titleSuffix: Azure DevOps and TFS 
+titleSuffix: Azure Boards and TFS 
 description: Use the web portal to implement your Scrum or Kanban process, plan and track work, and monitor progress and trends  
 ms.technology: devops-agile
 ms.prod: devops
@@ -13,7 +13,7 @@ ms.date: 08/15/2017
 
 # About Agile tools and Agile project management 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 You plan and track your project using the suite of Agile tools you access from the web portal. Agile tools support the core Agile methods&mdash;Scrum and Kanban&mdash;used by software development teams today. Scrum tools support defining and managing work within sprints, setting capacity, and tracking tasks. Kanban tools allow you to manage a continuous flow of work via an interactive sign board.  
 
@@ -64,7 +64,7 @@ Use your Project page to view and quickly navigate to teams, projects, branches,
 
 ## Try this next  
 
-Take these tools for a test run by [signing up for a free VSTS organization](../../organizations/accounts/create-organization-msa-or-work-student.md). From there, you're ready to [create your backlog](create-your-backlog.md).  
+Take these tools for a test run by [signing up for free](../get-started/index.md). 
 
 Once you've started tracking work, you'll want to monitor and track progress, identify trends, and share your plans. See [Charts, dashboards, and widgets](../../report/overview.md). 
 

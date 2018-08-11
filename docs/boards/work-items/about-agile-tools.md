@@ -1,6 +1,6 @@
 ---
 title: About Agile tools
-titleSuffix: Azure DevOps and TFS
+titleSuffix: Azure Boards and TFS
 description: Use Agile tools to plan, track, & collaborate with others when developing software apps in Azure Boards & Team Foundation Server
 ms.technology: devops-agile
 ms.prod: devops

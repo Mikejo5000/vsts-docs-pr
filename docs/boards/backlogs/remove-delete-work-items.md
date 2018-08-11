@@ -1,6 +1,6 @@
 ---
 title: Move, change, or delete work items
-titleSuffix: Azure DevOps and TFS  
+titleSuffix: Azure Boards and TFS  
 description: Guide to removing or deleting working items and test artifacts in Azure Boards and Team Foundation Server
 keywords: backlogs
 ms.global_help.title: Move, change, or delete work items
@@ -18,7 +18,7 @@ ms.date: 07/12/2018
 ::: moniker range="vsts"
 # Move, change, or delete work items 
 
-**VSTS**
+[!INCLUDE [temp](../_shared/azure-boards.md)]
 
 Often times you find that someone created a work item of the wrong work item type (WIT) or within an incorrect project. You can correct these issues for individual work items or bulk modify several work items. You can also remove work items added to your backlog or task board that aren't relevant anymore.  
 
@@ -27,7 +27,7 @@ Often times you find that someone created a work item of the wrong work item typ
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 # Delete or restore work items 
 
-**TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013**
+[!INCLUDE [temp](../../_shared/version-tfs-all-versions.md)]
 
 You can remove work items added to your backlog or task board that aren't relevant anymore. Simply change the State to Remove, or delete the work item. You can perform  operations on individual work items or bulk modify several work items. 
 
@@ -181,11 +181,11 @@ You can change a single work item or several [multi-selected work items](bulk-mo
 	> [!IMPORTANT]   
 	>From the Query results page, the **Change type&hellip;** option becomes unavailable if you have checked the Query Editor's **Query across projects** checkbox. 
 
-	![VSTS, backlog, multi-select, open menu, choose Change type option](_img/move-change-delete/change-work-item-type-from-backlog.png)  
+	![backlog, multi-select, open menu, choose Change type option](_img/move-change-delete/change-work-item-type-from-backlog.png)  
 
 2. Select the type and optionally enter a comment.  
 
-	![VSTS, Change work item type dialog](_img/move-change-delete/change-work-item-type-dialog.png)    
+	![Change work item type dialog](_img/move-change-delete/change-work-item-type-dialog.png)    
 
 	Comments are automatically added to the [Discussion control](../work-items/work-item-form-controls.md#discussion). 
 
@@ -217,7 +217,7 @@ You can only move work items from one project to another project within the orga
 
 2. Select the destination project and optionally enter a comment.  
 
-	![VSTS, Move work item type dialog](_img/move-change-delete/move-work-item-dialog.png)
+	![Move work item type dialog](_img/move-change-delete/move-work-item-dialog.png)
   
 	Comments are automatically added to the [Discussion control](../work-items/work-item-form-controls.md#discussion) and an entry is made to the History control. Also, the system automatically resets the State and Reason fields to the default initial values for the work item type that you move.  
 
@@ -230,7 +230,7 @@ You can only move work items from one project to another project within the orga
 By changing the State of a work item to Removed, you effectively remove it from a backlog or board view (product, portfolio, and sprint backlogs, Kanban board, and task boards).
 
 > [!div class="mx-imgBorder"]  
-> ![VSTS, Change State to Removed](_img/move-change-delete/remove-state.png)  
+> ![Change State to Removed](_img/move-change-delete/remove-state.png)  
 
 
 To cause removed items to not show up in queries, you must add a clause that indicates which states you want the query to filter for. 
@@ -328,7 +328,7 @@ Restoring or deleting work items from the web portal isn't a supported feature f
 # [Command Line](#tab/command-line)
 
 ::: moniker range=">tfs-2018"
-Deleting work items from the command line is deprecated for TFS 2018.2 and later versions, and not supported for VSTS.
+Deleting work items from the command line is deprecated for TFS 2018.2 and later versions, and not supported for Azure Boards.
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"

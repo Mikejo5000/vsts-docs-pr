@@ -1,6 +1,6 @@
 ---
 title: Kanban board controls  
-titleSuffix: Azure DevOps and TFS
+titleSuffix: Azure Boards and TFS
 description: Use board controls available with your Kanban board in Azure Boards & Team Foundation Server    
 ms.technology: devops-agile
 ms.prod: devops

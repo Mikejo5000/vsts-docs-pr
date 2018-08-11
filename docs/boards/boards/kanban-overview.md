@@ -1,6 +1,6 @@
 ---
 title: About Kanban and Agile project management
-titleSuffix: Azure DevOps and TFS
+titleSuffix: Azure Boards and TFS
 description: Use the web portal to support Kanban, plan and track work, and monitor progress in Azure Boards & Team Foundation Server   
 ms.technology: devops-agile
 ms.prod: devops
@@ -50,8 +50,8 @@ Once you've configured your Kanban board, you can add work items directly to the
 ::: moniker-end
 
 ## Try this next  
-create-organization-msa-or-work-student.md
-Take these tools for a test run by [signing up for a free VSTS organization](../../organizations/accounts/create-organization-msa-or-work-student.md). From there, you're ready to add items to your Kanban board and customize it. 
+
+Take these tools for a test run by [signing up for free](../get-started/index.md). From there, you're ready to add items to your Kanban board and customize it. 
 
 > [!div class="nextstepaction"]
 > [Kanban quickstart](kanban-quickstart.md)  

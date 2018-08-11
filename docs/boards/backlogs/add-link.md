@@ -1,6 +1,6 @@
 ---
 title: Add links to several work items 
-titleSuffix: Azure DevOps and TFS
+titleSuffix: Azure Boards and TFS
 description: Link several work items to other work items or to a new git branch in Azure Boards or Team Foundation Server 
 ms.global_help.title: Link work items 
 ms.global_help.keywords: ms.vss-work-web.work-items-hub, 3 

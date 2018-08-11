@@ -1,6 +1,6 @@
 ---
 title: Kanban best practices
-titleSuffix: Azure DevOps and TFS
+titleSuffix: Azure Boards and TFS
 description: Best practices when implementing Kanban in Azure Boards and Team Foundation Server (TFS)  
 ms.technology: devops-agile
 ms.prod: devops

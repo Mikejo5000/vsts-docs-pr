@@ -1,6 +1,6 @@
 ---
 title: Use Kanban boards 
-titleSuffix: Azure DevOps and TFS
+titleSuffix: Azure Boards and TFS
 description: Work with Kanban boards in Azure Boards & Team Foundation Server   
 ms.technology: devops-agile
 ms.prod: devops

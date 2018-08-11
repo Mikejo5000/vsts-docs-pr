@@ -1,6 +1,6 @@
 ---
 title: System and default fields index
-titleSuffix: Azure DevOps and TFS
+titleSuffix: Azure Boards and TFS
 description: Index to all fields used in the Agile, Scrum, and CMMI processes and process templates for Azure Boards & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops

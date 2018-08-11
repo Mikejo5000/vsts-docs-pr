@@ -1,6 +1,6 @@
 ---
 title: Backlogs and work items 
-titleSuffix: Azure DevOps and TFS 
+titleSuffix: Azure Boards and TFS 
 description: Use the web portal to plan and track work  
 ms.technology: devops-agile
 ms.prod: devops

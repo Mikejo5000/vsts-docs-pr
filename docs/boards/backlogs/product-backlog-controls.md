@@ -1,6 +1,6 @@
 ---
 title: Product backlog controls
-titleSuffix: Azure DevOps and TFS 
+titleSuffix: Azure Boards and TFS 
 description: Switch views and turn controls on or off from your product or portfolio backlogs for Azure Boards and Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops

@@ -1,6 +1,6 @@
 ---
 title: Use the search box for quick queries
-titleSuffix: Azure DevOps and TFS
+titleSuffix: Azure Boards and TFS
 description: Use the search box to create a query and filter for assigned to, created by, state, or work item type in Azure Boards & Team Foundation Server  
 ms.prod: devops
 ms.technology: devops-agile

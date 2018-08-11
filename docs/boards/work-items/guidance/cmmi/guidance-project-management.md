@@ -1,6 +1,6 @@
 ---
 title: CMMI process guidance, Project management 
-titleSuffix: Azure DevOps and TFS
+titleSuffix: Azure Boards and TFS
 description: Use to understand how to manage, plan, and coordinate the development and maintenance of software products.
 ms.prod: devops
 ms.technology: devops-agile

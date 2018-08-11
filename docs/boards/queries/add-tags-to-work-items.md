@@ -1,6 +1,6 @@
 ---
 title: Add tags to work items 
-titleSuffix: Azure DevOps and TFS
+titleSuffix: Azure Boards and TFS
 description: Add work item tags to categorize and filter lists & boards when working in Azure Boards & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
@@ -33,7 +33,7 @@ Tags should be 400 characters or less and not contain separators such as a `,` (
 From the web portal, open a work item and add a tag. Choose **Add tag** and type your keyword. Or, select from the list of previously assigned tags.  
 
 > [!div class="mx-imgBorder"]
-> ![VSTS, TFS 2018-Add one or more tags to a work item](_img/add-tags/add-tag-vsts.png)
+> ![Add one or more tags to a work item](_img/add-tags/add-tag-vsts.png)
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"

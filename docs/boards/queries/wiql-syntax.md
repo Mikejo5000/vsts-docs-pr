@@ -1,6 +1,6 @@
 ---
 title: WIQL reference syntax  
-titleSuffix: Azure DevOps and TFS 
+titleSuffix: Azure Boards and TFS 
 description: Reference syntax for the Work Item Query Language  to support queries in Azure Boards & Team Foundation Server 
 ms.technology: devops-collab
 ms.prod: devops

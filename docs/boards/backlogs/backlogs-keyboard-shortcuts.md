@@ -1,6 +1,6 @@
 ---
 title: Keyboard shortcuts for working with backlogs
-titleSuffix: Azure DevOps and TFS
+titleSuffix: Azure Boards and TFS
 description: Use keyboard shortcuts to interact with product, portfolio, and sprint backlogs   
 ms.technology: devops-agile
 ms.prod: devops

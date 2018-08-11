@@ -1,6 +1,6 @@
 ---
 title: Keyboard shortcuts for work item queries
-titleSuffix: Azure DevOps and TFS
+titleSuffix: Azure Boards and TFS
 description: Use keyboard shortcuts to interact with query results and query lists in Azure Boards & Team Foundation Server  
 ms.technology: devops-agile
 ms.prod: devops
@@ -31,6 +31,6 @@ When working in Visual Studio Team Explorer, you can use the following keyboard 
 
 ## Related articles
 
-- [Keyboard shortcuts for VSTS, TFS, and Team Explorer](../../project/navigation/keyboard-shortcuts.md)
+- [Keyboard shortcuts for Azure DevOps and Team Explorer](../../project/navigation/keyboard-shortcuts.md)
 
 

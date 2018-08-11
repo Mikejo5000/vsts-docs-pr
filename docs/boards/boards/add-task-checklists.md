@@ -1,6 +1,6 @@
 ---
 title: Add task checklists
-titleSuffix: Azure DevOps and TFS
+titleSuffix: Azure Boards and TFS
 description: Add task checklists to your Kanban board for lightweight tracking when working in Azure Boards & Team Foundation Server
 ms.global_help.title: Add checklists
 ms.global_help.keywords: ms.vss-work-web.boards-hub, 7       

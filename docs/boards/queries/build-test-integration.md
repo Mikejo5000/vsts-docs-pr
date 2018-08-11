@@ -1,6 +1,6 @@
 ---
 title: Build and test integration queries
-titleSuffix: Azure DevOps and TFS 
+titleSuffix: Azure Boards and TFS 
 description: Track work by creating queries based on build and test integration fields in Azure Boards and Team Foundation Server (TFS)
 ms.technology: devops-agile
 ms.prod: devops

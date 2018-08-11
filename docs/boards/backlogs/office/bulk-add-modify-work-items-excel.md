@@ -1,6 +1,6 @@
 ---
 title: Bulk modify using Excel
-titleSuffix: Azure DevOps and TFS  
+titleSuffix: Azure Boards and TFS  
 description: Use Excel to bulk add or modify work items--such as backlog items, tasks, bugs, or issues--in Azure Boards or Team Foundation Server   
 ms.technology: devops-agile
 ms.prod: devops
@@ -24,7 +24,7 @@ In this topic you'll learn:
 
 >[!div class="checklist"]    
 > * Connect to a project from Excel 
-> * Add or edit work items and publish your changes to TFS or VSTS
+> * Add or edit work items and publish your changes to Azure Boards or TFS
 > * Refresh your Excel worksheet with the latest changes made to the work tracking data store   
 > * Select user accounts  
 > * Add hierachically linked backlog items and tasks   
@@ -39,7 +39,7 @@ In this topic you'll learn:
 
 1.  If you don't have Office Excel 2007 or a more recent version, [install it](https://products.office.com/excel). For Azure Boards and TFS 2017 and later versions, you'll need Excel 2010 or a later version. 
 
-2.  If you haven't installed a version of [Visual Studio (2010 or later)](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs) or the [Team Foundation Server Standalone Office Integration (free)](https://visualstudio.microsoft.com/downloads), you'll need to install one of these versions to connect to a project hosted on VSTS or an on-premises TFS. 
+2.  If you haven't installed a version of [Visual Studio (2010 or later)](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs) or the [Team Foundation Server Standalone Office Integration (free)](https://visualstudio.microsoft.com/downloads), you'll need to install one of these versions to connect to an Azure DevOps or TFS project. 
 	
 	> [!NOTE]   
 	>The only way to get the Team Foundation plug-in is by installing one of the latest editions of Visual Studio or the TFS Standalone Office Integration installer. The TFS Office Integration supports connection to Azure Boards and TFS from Excel, Project, and the PowerPoint-based storyboarding tool.
@@ -51,11 +51,11 @@ In this topic you'll learn:
     > [!TIP]  
     >If the **Team** ribbon no longer appears, you might need to [re-enable it](https://msdn.microsoft.com/library/ms268871.aspx). 
 
-4.  Connect to your project hosted in VSTS or an on-premises TFS where you want to add work items. If you can't connect, [get added as a team member](../../../organizations/security/add-users-team-project.md#add-team-members).  
+4.  Connect to your project where you want to add work items. If you can't connect, [get added as a team member](../../../organizations/security/add-users-team-project.md#add-team-members).  
 
     ![ALM\_EXL\_Connect](_img/IC680074.png)
 
-    If it is your first time connecting from Excel, you might have to add your VSTS organization or on-premises TFS to the list of recognized servers.
+    If it is your first time connecting from Excel, you might have to add the URL to the list of recognized servers.
 
     ![ALM\_EXL\_AddServer](_img/IC658167.png)
 
@@ -244,7 +244,7 @@ If you're working with a non-query input list, you can add work items by choosin
 
 ## Related articles
 
-While the examples shown here represent connecting to an on-premises TFS, you can connect to VSTS and bulk add and modify work items. Once you've connected to the cloud server, you use the same procedures to work in Excel. 
+While the examples shown here represent connecting to an on-premises TFS, you can connect to Azure Boards and bulk add and modify work items. Once you've connected to the cloud server, you use the same procedures to work in Excel. 
 
 If you're just getting started, review these topics for more information about work item tracking and using Excel: 
 

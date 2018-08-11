@@ -1,6 +1,6 @@
 ---
 title: Work in Excel or Project
-titleSuffix: Azure DevOps and TFS
+titleSuffix: Azure Boards and TFS
 description: Use Office Excel or Project to track work in Azure Boards & Team Foundation Server 
 ms.prod: devops
 ms.technology: devops-agile
@@ -100,7 +100,7 @@ To reconnect an Excel or Project document file:
 
 ### Can I open a query in Excel or Project from the web portal?  
 
-To open Excel from the web portal, install the [VSTS Open in Excel](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel) Marketplace extension. Otherwise, you can open [Excel](bulk-add-modify-work-items-excel.md) or [Project](create-your-backlog-tasks-using-project.md) and then open a query that you've created in the web portal. 
+To open Excel from the web portal for Azure Boards or TFS, install the [VSTS Open in Excel](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel) Marketplace extension. Otherwise, you can open [Excel](bulk-add-modify-work-items-excel.md) or [Project](create-your-backlog-tasks-using-project.md) and then open a query that you've created in the web portal. 
 
 <a name="CT_ResolvingPublishErrors"></a> 
 ## Resolve publishing errors  

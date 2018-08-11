@@ -1,6 +1,6 @@
 ---
 title: Query fields, operators, and macros/variables 
-titleSuffix: Azure DevOps and TFS
+titleSuffix: Azure Boards and TFS
 description: Field data types, operators, and macros/variables used by the Query Editor in Azure Boards & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
@@ -341,12 +341,12 @@ You can use the macros described in the following table to filter your queries b
  
 ####Notes:
 0. The **@CurrentIteration** macro is supported for Azure Boards and TFS 2015 and later versions. 
-0. The **@CurrentIteration +/- n** macro is supported for VSTS and only when run from the web portal. 
+0. The **@CurrentIteration +/- n** macro is supported for Azure Boards and only when run from the web portal. 
 0. The **@Follow** macro is supported for Azure Boards and TFS 2017 and later versions.
 0. The **@MyRecentActivity**, **@RecentMentions**, **@RecentProjectActivity** macros are supported for Azure Boards and TFS 2018.2 and later versions.
 0. The **@Project** macro is supported for Azure Boards and TFS 2015.1 and later versions.  The system automatically defaults to filtering based on the current project. To learn more, see [Query across projects](using-queries.md#across-projects). 
-0. The **@RecentProjectActivity** macro is supported for VSTS only at this time.
-0. The **@TeamAreas** macro is supported for VSTS only at this time.
+0. The **@RecentProjectActivity** macro is supported for Azure Boards only at this time.
+0. The **@TeamAreas** macro is supported for Azure Boards only at this time.
  
 
 <a id="full-text" /> 

@@ -1,6 +1,6 @@
 ---
 title: Agile culture
-titleSuffix: Azure DevOps and TFS 
+titleSuffix: Azure Boards and TFS 
 description: Create an Agile culture of autonomous teams and an aligned enterprise using Agile tools when working in Azure Boards & Team Foundation Server  
 ms.technology: devops-agile
 ms.prod: devops

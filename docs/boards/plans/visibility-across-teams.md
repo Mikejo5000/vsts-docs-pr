@@ -1,6 +1,6 @@
 ---
 title: Visibility across teams 
-titleSuffix: Azure DevOps and TFS
+titleSuffix: Azure Boards and TFS
 description: Determine which methods best support your ability to monitor status and progress across several teams in Azure Boards & Team Foundation Server  
 ms.technology: devops-agile
 ms.prod: devops
@@ -133,7 +133,7 @@ For tips on creating queries based on counts or numeric fields, see [Query by nu
 ::: moniker range="vsts"
 ## Use Analytics to gain visibility across teams   
 
-VSTS organizations can add [Widgets based on the Analytics Service](../../report/analytics/analytics-widgets-vsts.md) a dashboard that show progress for a team. From one dashboard, you can add widgets for any team within the project. 
+You can add [Widgets based on the Analytics Service](../../report/analytics/analytics-widgets-vsts.md) to a dashboard that show progress for a team. From one dashboard, you can add widgets for any team within the project. 
 
 ::: moniker-end
 

@@ -1,6 +1,6 @@
 ---
 title: Assign work to a sprint
-titleSuffix: Azure DevOps and TFS
+titleSuffix: Azure Boards and TFS
 description: Assign work to a sprint or iteration working with Scrum methods in Azure Boards or Team Foundation Server 
 ms.custom: Uses the New Navigation
 ms.technology: devops-agile

@@ -1,6 +1,6 @@
 ---
 title: Work item templates
-titleSuffix: Azure DevOps and TFS   
+titleSuffix: Azure Boards and TFS   
 description: Add and manage work item templates to pre-populate fields in work item forms in Azure Boards & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops

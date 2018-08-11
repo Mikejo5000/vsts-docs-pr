@@ -1,6 +1,6 @@
 ---
 title: CMMI process guidance, Plan a project  
-titleSuffix: Azure DevOps and TFS
+titleSuffix: Azure Boards and TFS
 description: Understand the desired outcome of planning a project  
 ms.prod: devops
 ms.technology: devops-agile

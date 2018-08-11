@@ -1,6 +1,6 @@
 ---
 title: History and auditing 
-titleSuffix: Azure DevOps and TFS
+titleSuffix: Azure Boards and TFS
 description: Track changes and use tools to support audit requirements when working in Azure Boards and Team Foundation Server (TFS) 
 ms.technology: devops-agile
 ms.prod: devops

@@ -1,6 +1,6 @@
 ---
 title: Copy a list of work items
-titleSuffix: Azure DevOps and TFS   
+titleSuffix: Azure Boards and TFS   
 description: Copy a list of work items from a backlog or query in Azure Boards or Team Foundation Server
 ms.technology: devops-agile
 ms.prod: devops

@@ -1,6 +1,6 @@
 ---
 title: Backlog best practices 
-titleSuffix: Azure DevOps and TFS
+titleSuffix: Azure Boards and TFS
 description: Best practices to manage your product backlog in Azure Boards and Team Foundation 
 ms.technology: devops-agile
 ms.prod: devops

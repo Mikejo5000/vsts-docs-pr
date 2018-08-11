@@ -1,6 +1,6 @@
 ---
 title: Use work item form controls to track your work
-titleSuffix: Azure DevOps and TFS 
+titleSuffix: Azure Boards and TFS 
 description: Use work item form controls to update status, link work items, and more in Azure Boards & Team Foundation Server  
 ms.technology: devops-agile
 ms.prod: devops
@@ -146,21 +146,23 @@ Click the ![Discussions icon](../_img/icons/icon-discussions-wi.png) discussion 
 
 Within the discussion section, you can use the [**@mention** control](../../notifications/at-mentions.md) to notify another team member about the discussion. Simply type **@** and their name. 
 
+::: moniker range="vsts"  
 > [!NOTE]   
-> **Feature availability**: From VSTS, you can also use group mentions. Simply start type the name of a team or a security group, click the search icon and then select from the options listed.    
+> You can also use group mentions. Simply start type the name of a team or a security group, click the search icon and then select from the options listed.    
+::: moniker-end  
 
 To reference a work item, use the [**#ID** control](../../notifications/add-links-to-work-items.md). Type **#** and a list of work items that you've recently referenced will appear from which you can select.  
 
+::: moniker range=">= tfs-2013 <= tfs-2018"  
 > [!IMPORTANT]  
->For on-premises TFS, [you must configure an SMTP sever](/tfs/server/admin/setup-customize-alerts) in order for team members to receive notifications. 
-
+> For on-premises TFS, [you must configure an SMTP sever](/tfs/server/admin/setup-customize-alerts) in order for team members to receive notifications. 
+::: moniker-end  
 
 <a id="copy-url">  </a>
 ## Copy the URL
 From the web portal, simply copy the URL from the web browser address or hover over the title and then click the ![Copy to clipboard icon](../backlogs/_img/icon-copy-to-clipboard.png) copy-to-clipboard icon. For other copy options, see [Copy or clone work items](../backlogs/copy-clone-work-items.md). 
   
 <img src="../backlogs/_img/add-work-item-copy-URL.png" alt="Copy hyperlink for a work item from web portal" style="border: 1px solid #C3C3C3;" />  
-
 
 
 <a id="start-storyboarding">  </a>

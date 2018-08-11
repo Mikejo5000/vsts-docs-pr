@@ -1,6 +1,6 @@
 ---
 title: Sprint and scrum best practices
-titleSuffix: Azure DevOps and TFS 
+titleSuffix: Azure Boards and TFS 
 description: Best practice guidance to implement scrum and use sprint tools in Azure Boards & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
