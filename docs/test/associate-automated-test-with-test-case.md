@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2015'
 
 # Associate automated tests with test cases
 
-**Visual Studio 2017 | [Previous version](https://msdn.microsoft.com/en-us/library/dd380741%28v=vs.110%29.aspx)**
+**Visual Studio 2017 | [Previous version](https://msdn.microsoft.com/library/dd380741%28v=vs.110%29.aspx)**
 
 Consider using Visual Studio to associate automated tests with a test case when:
 
@@ -73,7 +73,7 @@ and [Use UI Automation To Test Your Code](https://docs.microsoft.com/visualstudi
 1. Open your solution in Visual Studio.
 
 1. If you don't know the identifier of the work item for the test case,
-   locate the test case in the **Test** hub or [query for the work item](../work/track/using-queries.md) in the **Work** hub. 
+   locate the test case in the **Test** hub or [query for the work item](../boards/queries/using-queries.md) in the **Work** hub. 
 
 1. When you know the identifier of the work item for the test case:
 

@@ -7,7 +7,7 @@ ms.topic: overview
 ms.assetid: D861983F-CC66-4314-A3C6-E2F30A37923D
 ms.manager: douge
 ms.author: kaelli
-ms.date: 09/19/2017
+ms.date: 08/08/2018
 monikerRange: '>= tfs-2013'
 ---
 
@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2013'
 
 With VSTS and TFS, you gain an integrated set of services and tools to manage your software projects, from planning and development through testing and deployment. Services are delivered through a client-server model, many of which are delivered through an easy-to-use web interface that you can access from all major browsers. Some services, such as source control, build pipelines, and work tracking can also be managed through a client.  
 
-Web services are access through the following main hubs as shown in the following image.
+Access Web services through the following main hubs as shown in the following image.
 
 ![VSTS, main hubs](../_img/services-hubs.png)  
 
@@ -79,7 +79,7 @@ Specifically, from the **Work** you can perform these tasks:
 - Visualize the work flow and update status using Kanban boards	 				
 - Manage portfolios by grouping stories under features and features under epics   
 
-See [Backlogs, boards, and plans](../work/backlogs/backlogs-boards-plans.md) for an overview of each.   
+See [Backlogs, boards, and plans](../boards/backlogs/backlogs-boards-plans.md) for an overview of each.   
  
 ## Build & Release
 

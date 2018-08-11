@@ -1,0 +1,11 @@
+- name: Azure DevOps Services
+  tocHref: /vsts/
+  topicHref: /vsts/index
+  items: 
+  - name: Azure Boards
+    tocHref: /vsts/boards/
+    topicHref: /vsts/index-boards
+    items:
+    - name: Work Items
+      tocHref: /vsts/boards/
+      topicHref: /vsts/boards/work-items/index

@@ -18,9 +18,9 @@ ms.date: 05/31/2018
 
 You can add a custom field to support tracking additional data requirements or modify select attributes of an ![inherited icon](_img/process/inherited-icon.png) inherited field. For example, you can add a custom field or change the label that appears in the work item form for an inherited field.  
 
-For a list of all fields defined for your account&mdash;which includes all fields defined for system and inherited processes&mdash;see [Review fields](#review-fields). 
+For a list of all fields defined for your organization&mdash;which includes all fields defined for system and inherited processes&mdash;see [Review fields](#review-fields). 
 
-Once you've added a custom field, you can create [queries](../../../work/track/using-queries.md), [charts](../../../report/dashboards/charts.md), or [Analytics views and Power BI reports](../../../report/powerbi/create-quick-report.md) to track data related to it.  
+Once you've added a custom field, you can create [queries](../../../boards/queries/using-queries.md), [charts](../../../report/dashboards/charts.md), or [Analytics views and Power BI reports](../../../report/powerbi/create-quick-report.md) to track data related to it.  
 
 [!INCLUDE [temp](../_shared/process-prerequisites.md)] 
 
@@ -32,9 +32,9 @@ Once you've added a custom field, you can create [queries](../../../work/track/u
 <a id="review-fields"></a>
 ## Review fields 
 
-To review the list of fields defined for all processes and the WITs which reference them, click the **Process** hub and then the **Fields** page.  
+To review the list of fields defined for all processes and the WITs which reference them, choose **Process** and then **Fields**.  
 
-Fields listed correspond to all those defined for the account. For descriptions and usage of each field, see [Work item field index](../../../work/work-items/guidance/work-item-field.md).  
+Fields listed correspond to all those defined for the organization. For descriptions and usage of each field, see [Work item field index](../../../boards/work-items/guidance/work-item-field.md).  
 
 > [!div class="mx-imgBorder"]  
 > ![Make a copy of a selected inherited process](_img/process/list-fields.png) 
@@ -47,10 +47,10 @@ Fields listed correspond to all those defined for the account. For descriptions 
 
 You can add fields and specify the group and page where they should appear. Also, once you've added a field, you can drag-and-drop it within a page to relocated it on the form. If you have several fields you want to add to a custom page or group, then you may want to [add those elements first](customize-process-form.md) and then add your fields. 
 
-0. Open the **Settings>Work>Process** hub.  For details, see [Open Settings>Process hub](add-custom-wit.md#open-process-wit).
+0. Open **Settings>Work>Process**.  For details, see [Open Settings>Process hub](add-custom-wit.md#open-process-wit).
 
 	> [!IMPORTANT]  
-	>If you don't see the **Account settings** option, then you are working from an on-premises TFS. The **Process** page isn't supported. You must use the features supported for the [On-premises XML process model](../../../work/customize/on-premises-xml-process-model.md).
+	>If you don't see the **Organization settings** option, then you are working from an on-premises TFS. The **Process** page isn't supported. You must use the features supported for the [On-premises XML process model](../../../reference/on-premises-xml-process-model.md).
 	
 0. With the WIT selected, click the ![add new field icon](_img/process/new-field-icon.png) (New Field icon).  
 
@@ -60,7 +60,7 @@ You can add fields and specify the group and page where they should appear. Also
 0. Name the field and select the field type from one of the supported data types. Optionally, add a description.  
 
 	> [!NOTE]    
-	> You must specify a field name that is unique within the account. A custom field defined for one process cannot be the same as the name defined for another process. For more information on field names, see [What is a field? How are field names used?](#field-reference)
+	> You must specify a field name that is unique within the organization. A custom field defined for one process cannot be the same as the name defined for another process. For more information on field names, see [What is a field? How are field names used?](#field-reference)
 	
 	Here we add an Integer field labeled Customer Ticket. 
 
@@ -79,7 +79,7 @@ You can add fields and specify the group and page where they should appear. Also
 	<img src="_img/process/cpfield-customer-ticket-layout.png" alt="Add a field to Use story, specify layout" style="border: 1px solid #C3C3C3;" />  
 
 	> [!NOTE]    
-	> While you can change the form label, you must use the field name when adding fields to cards ([Kanban](../../../work/customize/customize-cards.md#fields), [task board](../../../work/customize/customize-cards.md#task-board)) or [creating queries](../../../work/track/using-queries.md) based on the field.   
+	> While you can change the form label, you must use the field name when adding fields to cards ([Kanban](../../../boards/boards/customize-cards.md#fields), [task board](../../../boards/boards/customize-cards.md#task-board)) or [creating queries](../../../boards/queries/using-queries.md) based on the field.   
 
 0.	Click **Add field** to complete adding the field. If you haven't specified it's layout location, it will be added to the first group of fields on the layout form.  
 
@@ -116,7 +116,7 @@ You can add fields and specify the group and page where they should appear. Also
 <a id="identity">  </a>
 ### Add an Identity field  
 
-Use the Identity field to add a field similar to the Assigned To field. Identity fields act in the same way as the Assigned To field, providing a search and identity picker function. If your account manages users with Azure Active Directory (AAD), then the system synchronizes Identity fields with the names defined in AAD and are valid users of the project. 
+Use the Identity field to add a field similar to the Assigned To field. Identity fields act in the same way as the Assigned To field, providing a search and identity picker function. If your organization manages users with Azure Active Directory (AAD), then the system synchronizes Identity fields with the names defined in AAD and are valid users of the project. 
 
 1. Start by clicking ![add new field icon](_img/process/new-field-icon.png) (New Field), then the field name, Identity type, and optionally a description. 
 
@@ -162,7 +162,7 @@ Use the Identity field to add a field similar to the Assigned To field. Identity
 
 Existing fields correspond to any inherited field and custom field defined within the collection. Once you've added a custom field to one WIT, you can add it to others from the form menu. Simply open the work item and choose the existing field. 
 
-For a list of all work item fields defined for all WITs and processes, see the [Work item field index](../../../work/work-items/guidance/work-item-field.md).  
+For a list of all work item fields defined for all WITs and processes, see the [Work item field index](../../../boards/work-items/guidance/work-item-field.md).  
 
 Here we add the Customer Ticket field to the User Story WIT.  
 
@@ -182,7 +182,7 @@ Here, we relabel the Customer Ticket field to Ticket Number.
 <a id="show-hide-remove-field">  </a>
 ## Show, hide, or remove a field   
 
-You can choose to show or hide an inherited field or a custom control from appearing on a form. For custom fields, you can remove it from the form. If you want to reinstate it later, you can add it back to the form. These actions differ from the [**Delete**](#delete-field) option, which deletes the field from the account.
+You can choose to show or hide an inherited field or a custom control from appearing on a form. For custom fields, you can remove it from the form. If you want to reinstate it later, you can add it back to the form. These actions differ from the [**Delete**](#delete-field) option, which deletes the field from the organization.
 
 > [!NOTE]      
 > Data defined for an inherited field, even if you hide it, is maintained in the data store and work item history. You can view a record of it by viewing the history tab for a work item. 
@@ -243,8 +243,8 @@ Deleting a field will delete all data associated with that field, including hist
 - [Add or modify a custom work item type](customize-process-wit.md)
 - [Customize the web layout](customize-process-form.md)
 - [Customize a project using an inherited process](customize-process.md)    
-- [Customize cards on boards](../../../work/customize/customize-cards.md)  
-- [Show bugs on backlogs and boards](../../../work/customize/show-bugs-on-backlog.md)  
+- [Customize cards on boards](../../../boards/boards/customize-cards.md)  
+- [Show bugs on backlogs and boards](../show-bugs-on-backlog.md)  
 
 If you are working with test plans or test cases, see these topics: 
 - [Create a test plan](../../../manual-test/getting-started/create-a-test-plan.md)  
@@ -260,6 +260,6 @@ The reference name for any new field you add is prefixed with the name of the in
 
 By adding all customizations to the same base inherited process, you simplify the naming conventions that get applied to a custom fields. This can be useful particularly when REST APIs are employed.  
 
-Each ![locked icon](_img/process/locked-icon.png) system process&mdash;[Agile](../../../work/work-items/guidance/agile-process.md), [Scrum](../../../work/work-items/guidance/scrum-process.md), or [CMMI](../../../work/work-items/guidance/cmmi-process.md)&mdash;contains 100 or more work item fields. 
+Each ![locked icon](_img/process/locked-icon.png) system process&mdash;[Agile](../../../boards/work-items/guidance/agile-process.md), [Scrum](../../../boards/work-items/guidance/scrum-process.md), or [CMMI](../../../boards/work-items/guidance/cmmi-process.md)&mdash;contains 100 or more work item fields. 
 
 --> 

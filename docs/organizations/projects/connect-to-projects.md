@@ -30,7 +30,7 @@ To share code, build apps, track work, and collaborate with team members, you co
 > [!NOTE]
 > A project defines a process and data storage in which you manage your software projects from planning to deployment. When you connect to a project, you connect to an organization or project collection. Within that collection, one or more projects may be defined. At a minimum, at least one project must be created in order to use the system. For more information, see [About projects and scaling your organization](about-projects.md).
 
-If you don't have a project yet, create one in [VSTS](../accounts/set-up-vs.md) or set one up in an [on-premises TFS](create-project.md). If you need to add a team, see [Multiple teams](../../work/scale/multiple-teams.md). If you don't have access to the project, [get invited to the team](../security/add-users-team-project.md). 
+If you don't have a project yet, create one in [VSTS](../accounts/set-up-vs.md) or set one up in an [on-premises TFS](create-project.md). If you need to add a team, see [Add teams](../../organizations/settings/add-teams.md). If you don't have access to the project, [get invited to the team](../security/add-users-team-project.md). 
 
 From each of these clients, you can quickly switch context to a different project and connect under a different sign-in user name. If you work remotely, you can configure your client to [connect to a TFS Proxy server](#proxy).
 
@@ -233,22 +233,22 @@ To follow these procedures, you must be a member of the **Readers** group or hav
 
 3.  Start with a blank worksheet or project plan. If you don't see the **Team** ribbon (or the **Team** menu if you use Excel 2007 or Project 2007), see step 2.
 
-    ![Create a list connection between Excel and the data store](../../work/backlogs/office/_img/bulk-modify-excel-blank-list.png)
+    ![Create a list connection between Excel and the data store](../../boards/backlogs/office/_img/bulk-modify-excel-blank-list.png)
 
     > [!TIP]    
-    > If the **Team** ribbon no longer appears, you might need to [re-enable it](https://docs.microsoft.com/en-us/visualstudio/vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled).
+    > If the **Team** ribbon no longer appears, you might need to [re-enable it](https://docs.microsoft.com/visualstudio/vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled).
 
 4.  Connect to a VSTS organization or a TFS instance and the project. If you can't connect, [get added as a team member](../security/add-users-team-project.md).
 
-    ![Connect to server](../../work/backlogs/office/_img/IC680074.png)
+    ![Connect to server](../../boards/backlogs/office/_img/IC680074.png)
 
     If it is your first time connecting from Excel or Project, you might have to add the VSTS organization or TFS server to the list of recognized servers.
 
-    ![Add organization or server](../../work/backlogs/office/_img/IC658167.png)
+    ![Add organization or server](../../boards/backlogs/office/_img/IC658167.png)
 
 5.  Your worksheet or project plan is now bound to your project. What this means is that you can add work items to the project from the Office document or add work items to the Office document from the project.
 
-    To learn more, see [Bulk add work items with Excel](../../work/backlogs/office/bulk-add-modify-work-items-excel.md) or [Create your backlog and tasks using Project](../../work/backlogs/office/create-your-backlog-tasks-using-project.md).
+    To learn more, see [Bulk add work items with Excel](../../boards/backlogs/office/bulk-add-modify-work-items-excel.md) or [Create your backlog and tasks using Project](../../boards/backlogs/office/create-your-backlog-tasks-using-project.md).
 
 > [!NOTE]  
 > If the project is moved to a different project collection in the same instance of TFS, your documents will automatically be reconnected. However, if the project is moved to a different instance of TFS, you must manually reconnect your documents to the new server.
@@ -304,9 +304,9 @@ An advantage to using Excel or Project is that you can work offline to add or mo
 - [Work in Team Explorer](../../user-guide/work-team-explorer.md)  
 - [Troubleshoot connection](../../user-guide/troubleshoot-connection.md)  
 
-If all you need is a code repository and bug tracking solution, then start with the [Git get started guide](../../repos/git/gitquickstart.md) and [Manage bugs](../../work/backlogs/manage-bugs.md).  
+If all you need is a code repository and bug tracking solution, then start with the [Git get started guide](../../repos/git/gitquickstart.md) and [Manage bugs](../../boards/backlogs/manage-bugs.md).  
 
-To start planning and tracking work, see [Get started with Agile tools to plan and track work](../../work/backlogs/overview.md). 
+To start planning and tracking work, see [Get started with Agile tools to plan and track work](../../boards/backlogs/overview.md). 
 
 ### User accounts and licensing
 

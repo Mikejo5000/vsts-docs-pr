@@ -11,7 +11,7 @@ author: KathrynEE
 ms.reviewer: sancha
 ms.topic: reference
 monikerRange: '>= tfs-2015'
-ms.date: 03/06/2018
+ms.date: 08/09/2018
 ---
 
 # Syntax guidance for Markdown files, widgets, wikis, and pull request comments  
@@ -265,12 +265,12 @@ When linking to another Markdown page in the same Git or TFVC repository, the li
 
 **Example:**  
 <pre>
-&#91;C# language reference](https://msdn.microsoft.com/en-us/library/618ayhy6.aspx)
+&#91;C# language reference](https://msdn.microsoft.com/library/618ayhy6.aspx)
 </pre>
 
 **Result:**   
 
-[C# language reference](https://msdn.microsoft.com/en-us/library/618ayhy6.aspx)
+[C# language reference](https://msdn.microsoft.com/library/618ayhy6.aspx)
 
 
 ::: moniker range=">= tfs-2018"
@@ -635,7 +635,7 @@ Attachments support the following file formats:
 > [!div class="mx-tdCol2BreakAll"]
 > |          Type          | File formats |
 > |------|---------| 
-> | Code | CS (.cs), Extensible Markup Language (.xml), JavaScript Object Notation (.json), Layer (.lyr), Windows PowerShell script (.ps1), Roshal Archive (.rar), Remote Desktop Connection (.rdp), Structured Query Language (.sql)   | 
+> | Code | CS (.cs), Extensible Markup Language (.xml), JavaScript Object Notation (.json), Layer (.lyr), Windows PowerShell script (.ps1), Roshal Archive (.rar), Remote Desktop Connection (.rdp), Structured Query Language (.sql) - **Note: Code attachments are not permitted in PR comments**  | 
 > | Compressed files | ZIP (.zip) and GZIP (.gz) | 
 > | Documents | Markdown (.md), Microsoft Office Message (.msg), Microsoft Project (.mpp), Word (.doc and .docx), Excel (.xls, .xlsx and .csv), and Powerpoint (.ppt and .pptx), text files (.txt), and PDFs (.pdf) | 
 > | Images | PNG (.png), GIF (.gif), JPEG (both .jpeg and .jpg) | 

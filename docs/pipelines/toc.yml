@@ -151,6 +151,8 @@
       items: 
       - name: Phases
         href: process/phases.md
+      - name: Container phases
+        href: process/container-phases.md
       - name: Server phases
         href: process/server-phases.md
       - name: Deployment group phases
@@ -206,6 +208,8 @@
       href: apps/cd/deploy-webdeploy-iis-winrm.md
     - name: Azure Government Cloud
       href: library/government-cloud.md
+    - name: Azure Cosmos DB CI/CD
+      href: targets/cosmos-db.md
   - name: Test your apps
     items:
     - name: Unit test with builds
@@ -269,6 +273,8 @@
 - name: Reference
   href: tasks/index.md
   items:
+  - name: YAML schema
+    href: yaml-schema.md
   - name: Build tasks
     items:
     - name: .NET Core

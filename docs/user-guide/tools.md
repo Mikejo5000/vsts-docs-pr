@@ -46,10 +46,10 @@ Developers have access to a variety of tools through these versions of Visual St
 - **Visual Studio Enterprise**: Integrated, end-to-end development tools and solutions for teams of any size and those with a need to scale Supports designing, building and managing complex enterprise applications 
 - **Visual Studio Test Professional**: Provides access to Microsoft Test in addition to development tools to support quality and collaboration throughout the development process
 - **Visual Studio Team Explorer**: A free solution for non-developers to interact with Team Foundation Server and Visual Studio Team Services.  
-- **[Eclipse/Team Explorer Everywhere](/vsts/java/download-eclipse-plug-in)**: Free plug-in to support teams running Eclipse on Linux, macOS, or Windows that connect to VSTS or TFS  
-- **[Android Studio with the VSTS Plugin for Android Studio](/vsts/java/download-android-studio-plug-in)**: Free plug-in to support Android developers and connect to Git repositories on VSTS or TFS
-- **[IntelliJ with the VSTS Plugin for IntelliJ](/vsts/java/download-intellij-plug-in)**: Free plug-in to support developers who use IntelliJ IDEA or Android Studio to connect to Git repositories on VSTS or TFS 
-- **[Visual Studio Code](/vsts/java/vscode-extension)**: Free, open-source code editor with a free extension to support connecting to Git repositories on VSTS or TFS.  
+- **[Eclipse/Team Explorer Everywhere](/../java/download-eclipse-plug-in.md)**: Free plug-in to support teams running Eclipse on Linux, macOS, or Windows that connect to VSTS or TFS  
+- **[Android Studio with the VSTS Plugin for Android Studio](/../java/download-android-studio-plug-in.md)**: Free plug-in to support Android developers and connect to Git repositories on VSTS or TFS
+- **[IntelliJ with the VSTS Plugin for IntelliJ](/../java/download-intellij-plug-in.md)**: Free plug-in to support developers who use IntelliJ IDEA or Android Studio to connect to Git repositories on VSTS or TFS 
+- **[Visual Studio Code](/../java/vscode-extension.md)**: Free, open-source code editor with a free extension to support connecting to Git repositories on VSTS or TFS.  
 
 
 
@@ -68,13 +68,13 @@ Team Explorer, a plug-in to all Visual Studio versions, provides connects Visual
 
 When you install any edition of Visual Studio or [Team Foundation Server Standalone Office Integration 2015 (free)](https://go.microsoft.com/fwlink/?LinkId=691127), the Team Foundation plug-in installed to integrate work item tracking with select Office clients. The Team Foundation plug-in installs to your existing Office client. The plug-in supports Office 2007, Office 2010, or Office 2013 versions.
 
-- **[Excel](../work/backlogs/office/bulk-add-modify-work-items-excel.md)**: Use Excel to add and bulk modify work items.  
-- **[Project](../work/backlogs/office/create-your-backlog-tasks-using-project.md)**: Using Project you can plan projects, schedule tasks, assign resources, and track changes. You have access to features that TFS doesn't support, such as a project calendar, Gantt charts, and resource views.
-- **[Project Professional](../work/tfs-ps-sync/synchronize-tfs-project-server.md)**: With Project Professional and the Team Foundation Server Extensions for Project Server you can manage projects that synchronize data that exists in both TFS and Project Server. Project managers and software development teams can use the tools that they prefer, work at the level of precision that supports their needs, and easily share information. 
-- **[PowerPoint Storyboarding](../work/backlogs/office/storyboard-your-ideas-using-powerpoint.md)**: Lets you illustrate user stories and requirements using PowerPoint. The Team Foundation plug-in installs to your existing PowerPoint client.
+- **[Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md)**: Use Excel to add and bulk modify work items.  
+- **[Project](../boards/backlogs/office/create-your-backlog-tasks-using-project.md)**: Using Project you can plan projects, schedule tasks, assign resources, and track changes. You have access to features that TFS doesn't support, such as a project calendar, Gantt charts, and resource views.
+- **[Project Professional](../reference/tfs-ps-sync/synchronize-tfs-project-server.md)**: With Project Professional and the Team Foundation Server Extensions for Project Server you can manage projects that synchronize data that exists in both TFS and Project Server. Project managers and software development teams can use the tools that they prefer, work at the level of precision that supports their needs, and easily share information. 
+- **[PowerPoint Storyboarding](../boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md)**: Lets you illustrate user stories and requirements using PowerPoint. The Team Foundation plug-in installs to your existing PowerPoint client.
 
 >[!IMPORTANT]
->Support for integrating TFS with Project Server is deprecated for TFS 2017. However, synchronization support is provided by a third party. See  [Synchronize TFS with Project Server](../work/tfs-ps-sync/sync-ps-tfs.md) for details. 
+>Support for integrating TFS with Project Server is deprecated for TFS 2017. However, synchronization support is provided by a third party. See  [Synchronize TFS with Project Server](../reference/tfs-ps-sync/sync-ps-tfs.md) for details. 
 
 ### Task-specific clients
 
@@ -91,7 +91,7 @@ The following clients support specific tasks, such as managing testing efforts, 
 
 ### Web portal
 
-The collaboration tools supported through the web portal are summarized under [Essential services](services.md). On VSTS, new features are deployed usually every three weeks, and for TFS, usually quarterly. For release notes, see [VSTS Features Timeline](/vsts/release-notes/index).
+The collaboration tools supported through the web portal are summarized under [Essential services](services.md). On VSTS, new features are deployed usually every three weeks, and for TFS, usually quarterly. For release notes, see [VSTS Features Timeline](/../release-notes/index).
  
 You can use these browsers to access the web portal (VSTS and TFS).
 
@@ -157,7 +157,7 @@ You can perform many code development and administrative tasks using command lin
 - [TFSDeleteProject](/tfs/server/ref/command-line/tfsdeleteproject-cmd)
 - [TFSSecurity](/tfs/server/ref/command-line/tfssecurity-cmd)
 - [TFSServiceControl](/tfs/server/ref/command-line/tfsservicecontrol-cmd)
-- [witadmin (work item tracking)](../work/customize/reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md) 
+- [witadmin (work item tracking)](../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md) 
 
 
 ## Marketplace extensions
@@ -174,11 +174,11 @@ To learn more, visit the [Marketplace](https://marketplace.visualstudio.com) and
  
 The VSTS and TFS APIs are based on REST, OAuth, Json and service hooks&mdash;all standard web technologies broadly supported in the industry.
 
-REST APIs are provided to support building extensions to VSTS and TFS. To learn more, see [REST API overview](https://docs.microsoft.com/en-us/rest/api/vsts/).
+REST APIs are provided to support building extensions to VSTS and TFS. To learn more, see [REST API overview](https://docs.microsoft.com/rest/api/vsts/).
 
 
+## Related articles
 
-## Related notes 
 - [Key concepts](concepts.md)
 - [Essential services](services.md)
 - [Software development roles](roles.md)
