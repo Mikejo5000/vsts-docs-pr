@@ -15,7 +15,7 @@ monikerRange: 'vsts'
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-As your team grows and contracts, you can increase or decrease the number of paid VSTS users in your organization.
+As your team grows and contracts, you can increase or decrease the number of paid Visual Studio Team Services (VSTS) users in your organization.
 
 > [!NOTE]
 > To reduce or cancel users who have paid Basic access for the next month, you must make your changes before the last day of the month.
