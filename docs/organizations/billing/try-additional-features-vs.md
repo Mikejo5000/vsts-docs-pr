@@ -16,18 +16,18 @@ monikerRange: 'vsts'
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-In this quickstart, you'll learn how to start a trial for your VSTS organization and how to keep using your extension after the trial ends.
+In this quickstart, you learn how to start a trial for your Visual Studio Team Services (VSTS) organization and how to keep using your extension after the trial ends.
 
-There are two paid features in VSTS offered by Microsoft that you can use free for a 30-day trial:
+There are two paid features in VSTS that are offered by Microsoft that you can use free for a 30-day trial:
 
-- [Test Manager](https://marketplace.visualstudio.com/items/ms.vss-testmanager-web) (which is included on an ongoing basis for Visual Studio Enterprise, Visual Studio Test Professional, and MSDN Platforms subscribers)
+- [Test Manager](https://marketplace.visualstudio.com/items/ms.vss-testmanager-web) (which is included on an ongoing basis for Visual Studio Enterprise, Visual Studio Test Professional, and MSDN Platforms subscribers).
 
-- [Package Management](https://marketplace.visualstudio.com/items?itemName=ms.feed) (which is included on an ongoing basis for Visual Studio Enterprise subscribers, plus another 5 users in your organization)
+- [Package Management](https://marketplace.visualstudio.com/items?itemName=ms.feed) (which is included on an ongoing basis for Visual Studio Enterprise subscribers, plus another five users in your organization).
 
 During the trial, any user in your VSTS organization whose access level is Basic (including Visual Studio subscribers) can use these features.
-You'll assign these features explicitly to users within the User hub once the trial ends and you choose to pay for a certain number of users on an ongoing basis.
+You assign these features explicitly to users within the User hub, after the trial ends. You choose to pay for a certain number of users on an ongoing basis.
 
-This same process applies to paid extensions offered by other publishers within the Visual Studio Marketplace, including:
+This same process applies to paid extensions that are offered by other publishers within the Visual Studio Marketplace, including:
 
 - [Timetracker](https://marketplace.visualstudio.com/items?itemName=Berichthaus.TfsTimetracker)
 - [Agile Cards](https://marketplace.visualstudio.com/items?itemName=spartez.agile-cards)
@@ -44,7 +44,7 @@ All other users can [request extensions](../../marketplace/install-vsts-extensio
 
 ## Start a trial for your VSTS organization
 
-1. Sign in to the [Visual Studio Marketplace > VSTS](https://marketplace.visualstudio.com/vsts).
+1. Sign in to [Visual Studio Marketplace > VSTS](https://marketplace.visualstudio.com/vsts).
 
     ![Find extension trial](_img/get-vsts-extensions/marketplace.png)
 
@@ -58,7 +58,7 @@ All other users can [request extensions](../../marketplace/install-vsts-extensio
 
 4. After your extension finishes installing, go to your VSTS organization to use your extension.
 
-    Let your team know that they have access too.
+    Let your team know that they also have access.
 
    ![Marketplace installs your extension](_img/try-additional-features/extension-installed.png)
 
@@ -67,9 +67,9 @@ All other users can [request extensions](../../marketplace/install-vsts-extensio
 ## Keep using your extension after the trial ends
 
 Make sure to buy and assign the extension *before* the trial ends so that your users can continue using it without disruption. Otherwise, your users will lose access when the trial expires.
-There's no penalty for buying early; charges don't start until the trial ends.
+There's no penalty for buying early. Charges don't start until the trial ends.
 
-If you lose access because the trial expired before you could purchase, just buy and assign like you would if you weren't doing a trial:
+If you lose access because the trial expired before you could purchase, buy and assign the extension like you would if you weren't doing a trial:
 
 1. [Buy the extension](../../marketplace/install-vsts-extension.md#install-extension) for your users.
 
