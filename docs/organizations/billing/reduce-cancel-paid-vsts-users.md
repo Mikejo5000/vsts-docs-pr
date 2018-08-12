@@ -17,7 +17,7 @@ monikerRange: 'vsts'
 
 As your team grows and contracts, you can increase or decrease the number of paid VSTS users in your organization.
 
->[!NOTE]
+> [!NOTE]
 > To reduce or cancel users who have paid Basic access for the next month, you must make your changes before the last day of the month.
 > Your charges won't change until the next month because paid users are monthly purchases.
 
@@ -25,10 +25,10 @@ If you don't have an Azure subscription, create a [free account](https://azure.m
 
 ## Prerequisites
 
-Whether you do this via the Azure portal or as part of making a purchase in the Visual Studio Marketplace, you will need:
+Whether you do the setup via the Azure portal or as part of making a purchase in the Visual Studio Marketplace, you need:
 
-* [VSTS project collection administrator or organization owner permissions](vsts-billing-faq.md#find-owner)
-* [The **owner** or **contributor** role on your Azure subscription](add-backup-billing-managers.md) - to make subsequent edits to paid quantities in your VSTS organization, you only need the owner or contributor role on your Azure subscription.
+* [VSTS project collection administrator or organization owner permissions](vsts-billing-faq.md#find-owner).
+* [The **owner** or **contributor** role on your Azure subscription](add-backup-billing-managers.md). To make subsequent edits to paid quantities in your VSTS organization, you need only the owner or contributor role on your Azure subscription.
 
 ## Update the number of paid users on your organization
 
@@ -44,7 +44,7 @@ Whether you do this via the Azure portal or as part of making a purchase in the 
 
 3. Update the number of paid users and then choose **Continue**. To cancel all your paid users, reduce this number to zero (0).
 
-    For example, we're going to increase our total paid users from 1 to 10:
+    For example, to increase our total paid users from one to 10:
 
    > [!div class="mx-imgBorder"]
 ![Change number of paid Basic users](_img/reduce-cancel-paid-vsts-users/change-quantity-of-users.png)
