@@ -11,11 +11,11 @@ author: chcomley
 ms.date: 08/10/2018
 monikerRange: '>= tfs-2013'
 ---
-# Organization Management
+# Organization management
 
 [!INCLUDE [temp](../.. /_shared/version-vsts-tfs-all-versions.md)]
 
-Sign up for a VSTS organization, add users, and manage permissions and access.
+Sign up for a Visual Studio Team Services (VSTS) organization. Add users and manage permissions and access.
 
 ## 5-Minute Quickstarts
 
@@ -37,9 +37,9 @@ Sign up for a VSTS organization, add users, and manage permissions and access.
 
 ## Resources
 
-* [New User Guide](../../user-guide/index.md)
-* [Project Management](../projects/index.md)
+* [New user guide](../../user-guide/index.md)
+* [Project management](../projects/index.md)
 * [Billing](../billing/index.md)
-* [Security & Identity](../../organizations/security/index.md)
-* [Manage Extensions](../../marketplace/index.md)
-* [Service Hooks](../../service-hooks/index.md)
+* [Security and identity](../../organizations/security/index.md)
+* [Manage extensions](../../marketplace/index.md)
+* [Service hooks](../../service-hooks/index.md)
