@@ -1,6 +1,6 @@
 ---
 title: Create a Power BI report with an Analytics view
-titleSuffix: VSTS
+titleSuffix: Azure DevOps
 description: Quick start helping users to create a trend report using an Anlytics view
 ms.prod: devops
 ms.technology: devops-analytics
@@ -16,7 +16,7 @@ ms.date: 04/04/2018
 
 [!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
-With Power BI Desktop, you can easily connect to an Analytics view to start creating reports for your Visual Studio Team Services (VSTS) team project. An Analytics view provides a simplified way to specify the filter criteria for a Power BI report based on the Analytics Service data store. 
+With Power BI Desktop, you can easily connect to an Analytics view to start creating reports for your Azure DevOps team project. An Analytics view provides a simplified way to specify the filter criteria for a Power BI report based on the Analytics Service data store. 
 
 If you don't have Power BI Desktop, you can [download](https://powerbi.microsoft.com/desktop) and install it for free.
 
@@ -80,7 +80,7 @@ By verifying the view you'll use in Power BI, your view is more likely to load c
 
 0. Open Power BI Desktop.  
  
-0. Choose **Get Data**, choose **Online Services**, then **Visual Studio Team Services (Beta)**, and then click **Connect**. 
+0. Choose **Get Data**, choose **Online Services**, then **Azure DevOps (Beta)**, and then click **Connect**. 
 
     > [!div class="mx-imgBorder"]  
     > ![Connect to VSTS data](_img/create-report/get-data-2.png)  

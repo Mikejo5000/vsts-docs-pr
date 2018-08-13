@@ -1,7 +1,7 @@
 ---
 title: Query work tracking data using the OData Analytics service
-titleSuffix: VSTS
-description: How to generate work item tracking reports for Visual Studio Team Services (VSTS) using the OData Analytics service  
+titleSuffix: Azure DevOps
+description: How to generate work item tracking reports for Azure DevOps using the OData Analytics service  
 ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
@@ -17,7 +17,7 @@ ms.date: 11/13/2017
 **VSTS**  
 
 
-Using the Analytics Service for Visual Studio Team Services (VSTS), you can construct basic and filtered queries to return work items of interest. You can run these queries directly in your browser.
+Using the Analytics Service for Azure DevOps, you can construct basic and filtered queries to return work items of interest. You can run these queries directly in your browser.
 
 In this topic, the base root URL is scoped to a project as shown:  
 

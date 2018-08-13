@@ -1,7 +1,7 @@
 ---
 title: Power BI integration overview 
-titleSuffix: VSTS 
-description: Describes the different integration options you can use to connect to Power BI to access the Analytics Service for Visual Studio Team Services
+titleSuffix: Azure DevOps 
+description: Describes the different integration options you can use to connect to Power BI to access the Analytics Service for Azure DevOps
 ms.assetid: 8026A5ED-CD58-417A-913F-72A20272E7DC
 ms.prod: devops
 ms.technology: devops-analytics
@@ -61,5 +61,5 @@ Before you get started using Power BI with VSTS, make sure you have completed th
 
 ## Deprecated PowerBI.com Content Pack
 
-In November, 2017 we deprecated the PowerBI.com Visual Studio Team Services (VSTS) Content Pack. We deprecated it due to the negative impact it had on the performance of VSTS organizations, including throttling end users access. Support will continue for all existing PowerBI.com datasets based on the Content Pack; however, you won't be able to create any new datasets.
+In November, 2017 we deprecated the PowerBI.com Azure DevOps Content Pack. We deprecated it due to the negative impact it had on the performance of VSTS organizations, including throttling end users access. Support will continue for all existing PowerBI.com datasets based on the Content Pack; however, you won't be able to create any new datasets.
 

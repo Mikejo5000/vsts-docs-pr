@@ -1,7 +1,7 @@
 ---
 title: Build a hub extension 
-titleSuffix: VSTS  
-description: How to build a hub extension that calls the Analytics Service OData for Visual Studio Team Services from Power BI Desktop
+titleSuffix: Azure DevOps  
+description: How to build a hub extension that calls the Analytics Service OData for Azure DevOps from Power BI Desktop
 ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: B1CAEAB1-3D8F-44FA-A2FD-CA24695AEE86

@@ -1,7 +1,7 @@
 ---
 title: Explore Analytics OData metadata for VSTS  
-titleSuffix: VSTS  
-description: How to guide to explore the entity model OData metadata defined for the Analytics service in Visual Studio Team Services  
+titleSuffix: Azure DevOps  
+description: How to guide to explore the entity model OData metadata defined for the Analytics service in Azure DevOps  
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: jozimm

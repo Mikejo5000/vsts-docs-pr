@@ -1,7 +1,7 @@
 ---
 title: Power BI 
-titleSuffix: VSTS
-description: Create PowerBI charts, reports, and dashboards based on the Analyltics Service for Visual Studio Team Services 
+titleSuffix: Azure DevOps
+description: Create PowerBI charts, reports, and dashboards based on the Analyltics Service for Azure DevOps 
 ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
@@ -12,7 +12,7 @@ monikerRange: 'vsts'
 ms.date: 3/29/2018
 ---
 
-# Power BI for Visual Studio Team Services (VSTS)
+# Power BI for Azure DevOps
 
 [!INCLUDE [temp](../../_shared/version-vsts-only.md)]  
 

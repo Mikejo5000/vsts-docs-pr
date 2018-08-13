@@ -1,7 +1,7 @@
 ---
 title: Example of an Analytics Widget
-titleSuffix: VSTS 
-description: Describes the data entities and relationships provided by the Analytics service for Visual Studio Team Services   
+titleSuffix: Azure DevOps 
+description: Describes the data entities and relationships provided by the Analytics service for Azure DevOps   
 ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 37253E50-28D5-4AA9-B0E1-9D09D951739F
@@ -12,14 +12,14 @@ ms.topic: sample
 ms.date: 11/13/2017
 ---
 
-# Create an Analytics widget for Visual Studio Team Services
+# Create an Analytics widget for Azure DevOps
 
 
 [!INCLUDE [temp](../../_shared/version-vsts-only.md)] 
 
 <!-- Note: The github links below will be re-pointed to the master branch sample, once we complete the merge. -->
 
-You can build your own Analytics widget to display in a [Dashboard](../dashboards/index.md) in Visual Studio Team Services (VSTS). The [example widget on github](https://github.com/Microsoft/vsts-extension-samples/tree/master/analytics-example-widget) demonstrates the following: 
+You can build your own Analytics widget to display in a [Dashboard](../dashboards/index.md) in Azure DevOps. The [example widget on github](https://github.com/Microsoft/vsts-extension-samples/tree/master/analytics-example-widget) demonstrates the following: 
 
 > [!div class="checklist"]
 > * How to render trend lines associated with work item states

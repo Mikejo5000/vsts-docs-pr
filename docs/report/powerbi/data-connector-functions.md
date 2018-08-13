@@ -1,7 +1,7 @@
 ---
 title: Connect using Power Query and VSTS functions 
-titleSuffix: VSTS 
-description: Describes the available functions that the Power BI Data Connector and the Analytics Service support for Visual Studio Team Services 
+titleSuffix: Azure DevOps 
+description: Describes the available functions that the Power BI Data Connector and the Analytics Service support for Azure DevOps 
 ms.assetid: EC735BA2-24C9-4BA3-B35E-2CE9D2F1D7F1
 ms.prod: devops
 ms.technology: devops-analytics
@@ -14,7 +14,7 @@ monikerRange: 'vsts'
 ms.date: 2/14/2018
 ---
 
-# Connect using Power Query and Visual Studio Team Services (VSTS) functions 
+# Connect using Power Query and Azure DevOps functions 
 
 [!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 

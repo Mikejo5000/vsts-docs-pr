@@ -1,7 +1,7 @@
 ---
 title: Query for linked work items 
-titleSuffix: VSTS 
-description: How to guidance for creating a query for linked work items using the Analytics service for Visual Studio Team Services   
+titleSuffix: Azure DevOps 
+description: How to guidance for creating a query for linked work items using the Analytics service for Azure DevOps   
 ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual

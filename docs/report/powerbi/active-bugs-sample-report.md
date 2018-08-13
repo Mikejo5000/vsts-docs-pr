@@ -1,6 +1,6 @@
 ---
 title: Create an Active bugs Power BI report with a custom Analytics view
-titleSuffix: VSTS
+titleSuffix: Azure DevOps
 description: Sample report that shows how to create an Analytics view to filter a dataset for active bugs and then create a trend report in Power BI
 ms.prod: devops
 ms.technology: devops-analytics
@@ -121,7 +121,7 @@ Choose **Continue** to move to the next tab in the panel. If you need to revisit
 
 0. Open Power BI Desktop.  
  
-0. Choose (1) **Get Data**, choose (2) **Online Services**, then (3) **Visual Studio Team Services (Beta)**, and then click (4) **Connect**. 
+0. Choose (1) **Get Data**, choose (2) **Online Services**, then (3) **Azure DevOps (Beta)**, and then click (4) **Connect**. 
 
     > [!div class="mx-imgBorder"]
     > ![Connect to VSTS data](_img/create-report/get-data-2.png)

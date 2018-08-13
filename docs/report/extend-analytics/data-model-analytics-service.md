@@ -1,7 +1,7 @@
 ---
 title: Data model for the Analytics Service
-titleSuffix: VSTS 
-description: Describes the data entities and relationships provided by the Analytics service for Visual Studio Team Services  
+titleSuffix: Azure DevOps 
+description: Describes the data entities and relationships provided by the Analytics service for Azure DevOps  
 ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 032FB76F-DC43-4863-AFC6-F8D67963B177  
@@ -18,7 +18,7 @@ ms.date: 2/18/2018
 
 [!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
-The Analytics service data model for Visual Studio Team Services (VSTS) consists of entity sets, whose members (entities) contains properties that can be filtered, aggregated, and summarized. Additionally, they contain [navigation properties](http://www.odata.org/getting-started/basic-tutorial/#relationship) that relate entities to one other, providing access to additional properties for selecting, filtering, and grouping.
+The Analytics service data model for Azure DevOps consists of entity sets, whose members (entities) contains properties that can be filtered, aggregated, and summarized. Additionally, they contain [navigation properties](http://www.odata.org/getting-started/basic-tutorial/#relationship) that relate entities to one other, providing access to additional properties for selecting, filtering, and grouping.
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
