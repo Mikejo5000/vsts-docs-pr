@@ -30,13 +30,13 @@ With VSTS, you can upload and share code in free, unlimited private Git reposito
 
 Before you begin, do either of the following:
 
-* To use only Microsoft accounts with your VSTS organization, complete the steps here. Ignore the Azure Active Directory (Azure AD) callouts. 
+* To use only Microsoft accounts with your VSTS organization, complete these steps. Ignore the Azure Active Directory (Azure AD) callouts. 
 
 	* If you don't have a Microsoft account, create one when you sign up for VSTS.
 
 	* Use your Microsoft account if you don't need to authenticate users for an organization with [Azure AD](https://azure.microsoft.com/documentation/articles/active-directory-whatis/). All users must sign in to your VSTS organization with a Microsoft account.
 
-* Alternatively, to authenticate users and control organization access through your Azure AD, complete the steps here. Pay attention to the Azure AD callouts.
+* Alternatively, to authenticate users and control organization access through your Azure AD, complete these steps. Pay attention to the Azure AD callouts.
 
 	* Use your work or school account to *automatically connect* your VSTS organization to your Azure AD. All users must be members in that directory to access your VSTS organization. To add users from other organizations, use [Azure AD B2B collaboration capabilities](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b).
 
@@ -116,7 +116,7 @@ Without Azure AD, you're solely responsible for controlling VSTS organization ac
 	> [!NOTE]
 	> If you activated your Visual Studio subscription with a Microsoft account, and your subscription includes VSTS as a benefit, learn [how to add your work or school account](../../billing/link-msdn-subscription-to-organizational-account-vs.md) to your subscription so that you can use your subscriber benefits in VSTS.
 
-## Try this next
+## Next steps
 
 > [!div class="nextstepaction"]
 > [Manage users and access](add-organization-users-from-user-hub.md)
@@ -138,5 +138,3 @@ Without Azure AD, you're solely responsible for controlling VSTS organization ac
 * [Create your backlog](../../boards/backlogs/create-your-backlog.md), 
 	[manage your process](../../organizations/settings/work/manage-process.md), 
 	or [customize your process](../../organizations/settings/work/customize-process.md).
-
-
