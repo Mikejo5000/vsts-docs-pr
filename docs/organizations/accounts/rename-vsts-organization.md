@@ -1,6 +1,6 @@
 ---
 title: Rename VSTS organization | VSTS
-description: Find your VSTS organization owner to change your VSTS organization URL or provide a new name, what to do before and after renaming your organization
+description: Find your VSTS organization owner to change your VSTS organization URL or provide a new name. What to do before and after renaming your organization.
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: a69f3789-19e9-40c5-ade3-4e11435d452d
@@ -16,24 +16,22 @@ monikerRange: 'vsts'
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-You can change your VSTS organization name (URL) at any time.
+You can change your Visual Studio Team Services (VSTS) organization name (URL) at any time.
 
-**Caution**: This affects your organization's connections 
-and those currently working with your organization. 
-So before you start, find out 
-[what to do before and after renaming your organization](https://support.microsoft.com/kb/2793597).
+> [!Caution]
+> The rename operation affects your organization's connections and individuals who are currently working with your organization. Before you start, find out [what to do before and after renaming your organization](https://support.microsoft.com/kb/2793597).
 
 > [!NOTE]
-> An organization cannot be renamed within one hour of the most recent rename.
+> An organization can't be renamed within one hour of the most recent rename operation.
 
-To change your VSTS organization URL, you'll need at least Basic access and organization owner permissions. 
+To change your VSTS organization URL, you need at least Basic access and organization owner permissions. 
 [How do I find the organization owner?](faq-delete-restore-vsts-organization.md#find-owner)
 
 [!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 # [New navigation](#tab/new-nav)
 
-1. Sign in to your VSTS organization (```https://{yourorganization}.visualstudio.com```).
+1. Sign in to your VSTS organization (`https://{yourorganization}.visualstudio.com`).
 
 	[Why am I asked to choose between my work or school account and my personal account?](faq-create-organization.md#ChooseOrgAcctMSAcct)
 
@@ -41,7 +39,7 @@ To change your VSTS organization URL, you'll need at least Basic access and orga
 
     ![Open VSTS admin settings](../../_shared/_img/settings/open-admin-settings-vert.png)
 
-3. Choose **Overview** and then choose the edit icon next to your organization URL.
+3. Select **Overview**, and then choose the edit icon (pencil) next to your organization URL.
 
    ![Rename you organization](_img/rename-vso-organization/rename-organization-vert.png)
 
@@ -53,7 +51,7 @@ Your organization is renamed.
 
 # [Previous navigation](#tab/prev-nav)
 
-0.  Sign in to your VSTS organization (```https://{yourorganization}.visualstudio.com```).
+0.  Sign in to your VSTS organization (`https://{yourorganization}.visualstudio.com`).
 
 	[Why am I asked to choose between my work or school account and my personal account?](faq-create-organization.md#ChooseOrgAcctMSAcct)
 
@@ -65,10 +63,9 @@ Your organization is renamed.
 
     ![Change your organization name](_img/rename-vso-organization/vsorenameorganization.png)
 
-0.  Confirm that you want to rename your organization. 
-Give your organization a new name. Save your changes.
+0.  Confirm that you want to rename your organization. Give your organization a new name. Save your changes.
 
-    ![Confirm renaming your organization, provide new organization name](_img/rename-vso-organization/vsoconfirmorganizationrename.png)
+    ![Confirm rename of your organization and provide a new organization name](_img/rename-vso-organization/vsoconfirmorganizationrename.png)
 
 Your organization is renamed.
----
+
