@@ -107,3 +107,4 @@ Access levels control which features are available to users. Permissions control
 - [Change individual permissions or grant select access to specific functions](../../organizations/security/change-individual-permissions.md)
 - [Grant or restrict access to select features and functions](../../organizations/security/restrict-access.md)
 - [Delete users from VSTS](delete-organization-users.md)
+
