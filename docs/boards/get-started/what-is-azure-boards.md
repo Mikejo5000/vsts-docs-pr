@@ -90,7 +90,7 @@ Open **Work Items** to access several personalized pivots and filter functions t
 # [New navigation](#tab/new-nav)
 ::: moniker range="vsts"
 > [!div class="mx-imgBorder"]  
-> ![Open Work>Work Items, new navigation](../work-items/_img/about-agile/view-work-items-page.png)
+> ![Open Boards>Work Items, new navigation](../work-items/_img/about-agile/view-work-items-page.png)
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
@@ -101,14 +101,14 @@ Open **Work Items** to access several personalized pivots and filter functions t
 
 ::: moniker range="vsts"   
 > [!div class="mx-imgBorder"]
-> ![Work>Work Items ](../work-items/_img/view-add/view-work-items-hub-s136.png)
+> ![Boards>Work Items ](../work-items/_img/view-add/view-work-items-hub-s136.png)
 
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
 
 > [!div class="mx-imgBorder"]
-> ![Work>Work Items ](../work-items/_img/view-add/work-items-hub.png)
+> ![Boards>Work Items ](../work-items/_img/view-add/work-items-hub.png)
 
 ::: moniker-end   
 
@@ -154,7 +154,7 @@ Backlogs present work items as lists. A product backlog represents your project 
 
 # [New navigation](#tab/new-nav)
 ::: moniker range="vsts"
-![New Navigation, Work>Backlogs](../work-items/_img/about-agile/view-backlogs.png)    
+![New Navigation, Boards>Backlogs](../work-items/_img/about-agile/view-backlogs.png)    
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
@@ -164,10 +164,10 @@ Backlogs present work items as lists. A product backlog represents your project 
 # [Previous navigation](#tab/previous-nav)
 
 ::: moniker range=">= tfs-2017"
-!["Web portal, choose Work>Backlogs](../work-items/_img/view-add/view-stories-backlogs-standard.png)
+!["Web portal, choose Boards>Backlogs](../work-items/_img/view-add/view-stories-backlogs-standard.png)
 ::: moniker-end
 ::: moniker range=">= tfs-2013 <= tfs-2015"
-![Work>backlogs, TFS 2015, 2013 web portal](../backlogs/_img/backlogs-boards-plans/open-backlog-tfs-2015.png)
+![Boards>backlogs, TFS 2015, 2013 web portal](../backlogs/_img/backlogs-boards-plans/open-backlog-tfs-2015.png)
 ::: moniker-end
 
 ---
@@ -179,7 +179,7 @@ Sprint backlogs and taskboards provide a filtered view of work items a team has 
 
 # [New navigation](#tab/new-nav)
 ::: moniker range="vsts"
-![New Navigation, Work>Sprints>Backlog](../work-items/_img/view-add/view-sprint-backlogs.png)    
+![New Navigation, Boards>Sprints>Backlog](../work-items/_img/view-add/view-sprint-backlogs.png)    
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
@@ -189,10 +189,10 @@ Sprint backlogs and taskboards provide a filtered view of work items a team has 
 # [Previous navigation](#tab/previous-nav)
 
 ::: moniker range=">= tfs-2017"
-!["Web portal, choose Work>Backlogs, Sprint](../work-items/_img/view-add/view-sprint-backlog.png)
+!["Web portal, choose Boards>Backlogs, Sprint](../work-items/_img/view-add/view-sprint-backlog.png)
 ::: moniker-end
 ::: moniker range=">= tfs-2013 <= tfs-2015"
-![Work>backlogs, TFS 2015, 2013 web portal](../sprints/_img/IC795962.png)
+![Boards>backlogs, TFS 2015, 2013 web portal](../sprints/_img/IC795962.png)
 ::: moniker-end
 
 ---
@@ -218,7 +218,7 @@ Queries are filtered lists of work items based on criteria that you define using
 
 
 # [Previous navigation](#tab/previous-nav)
-![Web portal, Work>Queries, Open Shared queries, Active Bugs](../queries/_img/using-queries-active-bugs-ts.png)
+![Web portal, Boards>Queries, Open Shared queries, Active Bugs](../queries/_img/using-queries-active-bugs-ts.png)
 
 ---
 

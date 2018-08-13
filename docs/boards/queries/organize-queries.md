@@ -35,7 +35,7 @@ If you're not a member of the Project Administrators group, [get added](../../or
 
 ::: moniker range="vsts"
 
-You add query folders from the **Work>Queries>All** page.
+You add query folders from the **Boards>Queries>All** page.
  
 0. Choose **All**. Expand **My Queries** or Shared Queries depending on where you want to add a query folder. 
  
@@ -57,7 +57,7 @@ You add query folders from the **Work>Queries>All** page.
 ::: moniker-end
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 
-You add query folders from the **Work>Queries** page.
+You add query folders from the **Boards>Queries** page.
 
 0. To add a folder, choose the ![](../_img/icons/context_menu.png) context menu for an existing folder or the top container folder and select **New query folder**. 
 

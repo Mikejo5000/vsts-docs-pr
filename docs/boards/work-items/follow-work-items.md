@@ -68,7 +68,7 @@ To stop following changes, open the PR context menu and click the ![Following ic
 
 ## Manage work items that you're following  
 
-You can review and manage all the work items you've selected to follow from the Followed work items page. You access this page from the **Work>Queries** page. 
+You can review and manage all the work items you've selected to follow from the Followed work items page. You access this page from the **Boards>Queries** page. 
 
 <img src="_img/follows-followed-work-items.png" alt="Followed work items, Follow icon control" style="border: 1px solid #C3C3C3;" />  
 

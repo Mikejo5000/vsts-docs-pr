@@ -21,7 +21,7 @@ ms.date: 03/20/2018
 
 **Azure Boards | TFS 2018.2**  
 
-View work items that you created or are assigned to you. The **Work>Work Items** page provides several personalized pivots and filter functions to streamline listing work items. Use this page to quickly find work items defined across teams within a project. 
+View work items that you created or are assigned to you. The **Boards>Work Items** page provides several personalized pivots and filter functions to streamline listing work items. Use this page to quickly find work items defined across teams within a project. 
 
 ::: moniker range=">= tfs-2018"
 > [!NOTE]     
@@ -44,10 +44,10 @@ You can start viewing and adding work items once you connect to a project.
 
 # [New navigation](#tab/new-nav)
 ::: moniker range="vsts"
-(1) Check that you have selected the right project, then (2) choose **Work>Work Items**. 
+(1) Check that you have selected the right project, then (2) choose **Boards>Work Items**. 
 
 > [!div class="mx-imgBorder"]  
-> ![Open Work>Work Items, new navigation](_img/view-add/open-work-items-agile.png)
+> ![Open Boards>Work Items, new navigation](_img/view-add/open-work-items-agile.png)
 
 ::: moniker-end
 
@@ -60,7 +60,7 @@ You can start viewing and adding work items once you connect to a project.
 Open a browser window, choose **Work**, and then **Work Items**. 
 
 > [!div class="mx-imgBorder"]
-![Work>Work Items ](_img/view-add/work-items-hub.png)
+![Boards>Work Items ](_img/view-add/work-items-hub.png)
 
 ---
 
@@ -79,7 +79,7 @@ Using the drop-down menu, you can focus on relevant items inside a project using
 <tbody valign="top">
 <tr>
 <td>
-![Work>Work Items ](_img/view-add/view-menu.png)
+![Boards>Work Items ](_img/view-add/view-menu.png)
 </td>
 <td>
 <ul>
@@ -104,7 +104,7 @@ Adding a work item is just one click away. Simply choose the work item type from
 For example, here we choose User Story. 
 
 > [!div class="mx-imgBorder"]  
-![Work>Work Items, Add a work item ](_img/view-add/work-items-hub-new.png)
+![Boards>Work Items, Add a work item ](_img/view-add/work-items-hub-new.png)
 
 > [!TIP]    
 > Work items you add are automatically scoped to the [Currently selected team's area and iteration paths](../../organizations/settings/set-team-defaults.md). To change the team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md?toc=/vsts/boards/work-items/toc.json&bc=/vsts/boards/work-items/breadcrumb/toc.json).
@@ -121,7 +121,7 @@ You can [add tags to any work item](../queries/add-tags-to-work-items.md) to fil
 You can filter each work item pivot view by typing a keyword or using one or more of the fields provided, such as work item type (Types), State, Area Path, and Tags. The page remembers the filters you set for each pivot, supporting personalized views across all pivots.  
 
 > [!div class="mx-imgBorder"]
-![Work>Work Items, Filter to show Bugs ](_img/view-add/work-items-filter-bug.png)
+![Boards>Work Items, Filter to show Bugs ](_img/view-add/work-items-filter-bug.png)
 
 <a id="sort" />
 ## Sort your view and other View options 
@@ -136,7 +136,7 @@ You can sort your view by one of the column fields that you select from the **Vi
 <tbody valign="top">
 <tr>
 <td>
-![Work>Work Items ](_img/view-add/view-options.png)
+![Boards>Work Items ](_img/view-add/view-options.png)
 </td>
 <td>
 <ul>
@@ -155,7 +155,7 @@ You can sort your view by one of the column fields that you select from the **Vi
 To select several items in a sequence, hold down the shift key. To select several non-sequential items, use the Ctrl key. Then, you can use **Ctrl+c** to copy the selected items to a clipboard. Or, you can open the context menu for the selected work items, click (![actions icon](../_img/icons/actions-icon.png)), and then choose the option you want from the menu. 
 
 > [!div class="mx-imgBorder"]
-![Work>Work Items, Following view, Select work items, context menu](_img/view-add/following-context-menu.png)
+![Boards>Work Items, Following view, Select work items, context menu](_img/view-add/following-context-menu.png)
 
 
 ## Open a view as a query  

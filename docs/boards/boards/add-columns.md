@@ -99,7 +99,7 @@ Now that you've got the essentials of how to work with your Kanban board, here's
 
 You'll see different column titles and choices based on the [Process](../work-items/guidance/choose-process.md) you used to create your project and whether your team has chosen to [treat bugs like requirements or like tasks](../../organizations/settings/show-bugs-on-backlog.md).
   
-First, open the Kanban portal for your project. Click the **Board** link from the **Work>Backlogs** page. 
+First, open the Kanban portal for your project. Click the **Board** link from the **Boards>Backlogs** page. 
 
 <img src="_img/kanban-basics-intro.png" alt="Kanban board, Agile template" style="border: 1px solid #C3C3C3;" />  
 

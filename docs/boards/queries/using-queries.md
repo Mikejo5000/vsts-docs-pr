@@ -52,7 +52,7 @@ The following example shows how to find all closed bugs by modifying the
 	> ![Run Active bugs query](_img/view-run-queries/run-active-bugs.png)  
 	::: moniker-end  
 	::: moniker range=">= tfs-2013 <= tfs-2018"
-	![Web portal, Work>Queries, Open Shared queries, Active Bugs](_img/using-queries-active-bugs-ts.png)  
+	![Web portal, Boards>Queries, Open Shared queries, Active Bugs](_img/using-queries-active-bugs-ts.png)  
 	::: moniker-end  
 
 	> [!TIP]  

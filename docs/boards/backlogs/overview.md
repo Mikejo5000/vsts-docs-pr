@@ -19,7 +19,7 @@ You plan and track your project using the suite of Agile tools you access from t
 
 You access all Agile tools from **Work**. If you're new to Agile, see [What is Agile?](/azure/devops/agile/what-is-agile) for an overview.
 
-<img src="_img/plan-intro.png" alt="Work>product backlog page" style="border: 1px solid #C3C3C3;" />  
+<img src="_img/plan-intro.png" alt="Boards>product backlog page" style="border: 1px solid #C3C3C3;" />  
 
 Most Agile tools are [scoped to a team](../../organizations/settings/about-teams-and-settings.md). This supports team autonomy as well as scaling the system.  
 

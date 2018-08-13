@@ -65,7 +65,7 @@ You access your backlogs and boards from a web portal. When you work from the St
 
 ::: moniker range="vsts"
 
-0. (1) Check that you have selected the right project, (2) choose **Work>Backlogs**, and then (3) select the correct team from the team selector menu. 
+0. (1) Check that you have selected the right project, (2) choose **Boards>Backlogs**, and then (3) select the correct team from the team selector menu. 
 
 	![Open Work, Backlogs, for a team](../sprints/_img/assign-items-sprint/open-work-backlogs-agile.png)
 
@@ -103,7 +103,7 @@ You access your backlogs and boards from a web portal. When you work from the St
 From your web browser, open your team's product backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
 
 > [!div class="mx-imgBorder"]
-> ![Open the Work>Backlogs page](../sprints/_img/assign-items-sprint/open-work-backlogs-standard.png) 
+> ![Open the Boards>Backlogs page](../sprints/_img/assign-items-sprint/open-work-backlogs-standard.png) 
 
 To choose another team, open the project/team selector and select a different team or choose the **Browse** option. 
 
@@ -113,9 +113,9 @@ To choose another team, open the project/team selector and select a different te
 ::: moniker-end
 ::: moniker range=">= tfs-2013 <= tfs-2015"
 
-From your web browser, open your team's product backlog. Select **Work>Backlogs**. 
+From your web browser, open your team's product backlog. Select **Boards>Backlogs**. 
 
-![Work>backlogs, TFS 2015, 2013 web portal](_img/backlogs-boards-plans/open-backlog-tfs-2015.png)
+![Boards>backlogs, TFS 2015, 2013 web portal](_img/backlogs-boards-plans/open-backlog-tfs-2015.png)
 
 ::: moniker-end
 

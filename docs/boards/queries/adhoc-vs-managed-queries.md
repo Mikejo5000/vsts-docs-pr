@@ -17,7 +17,7 @@ ms.date: 06/02/2017
 
 
 
-You have two ways to perform work item searches: adhoc and managed. You perform adhoc queries using the work item search box (shown below), whereas you perform managed queries using the built-in search function available from the **Work>Queries** page.  
+You have two ways to perform work item searches: adhoc and managed. You perform adhoc queries using the work item search box (shown below), whereas you perform managed queries using the built-in search function available from the **Boards>Queries** page.  
 
 ![Search Work Items Text Box](_img/using-queries-search-box-ts.png)
 
@@ -37,7 +37,7 @@ You have two ways to perform work item searches: adhoc and managed. You perform 
 
 
 ## Work item search box context 
-Note that with  Work item search, the work item search box is repurposed to support adhoc queries. In order to initiate a managed search, you need to open the **Work>Queries** page. 
+Note that with  Work item search, the work item search box is repurposed to support adhoc queries. In order to initiate a managed search, you need to open the **Boards>Queries** page. 
 
 
 ## Resources 

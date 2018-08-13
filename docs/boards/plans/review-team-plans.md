@@ -84,7 +84,7 @@ Once you have [installed Delivery Plans](#install-plans), the **Plans** appears 
 
 ::: moniker range="vsts"  
 
-0. Open **Work>Plans**. 
+0. Open **Boards>Plans**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open work>Plans, new nav](_img/plans/open-plans-vert.png) 
@@ -108,7 +108,7 @@ Once you have [installed Delivery Plans](#install-plans), the **Plans** appears 
 
 # [Previous navigation](#tab/previous-nav)
 
-0. Open **Work>Plans**. 
+0. Open **Boards>Plans**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open work>Plans, previous nav](_img/plans/open-plans-horz.png) 

@@ -143,7 +143,7 @@ The main method for adding a work item using a template is to open the template 
 	> [!div class="mx-imgBorder"]  
 	> ![Open team admin context](../../_img/open-admin-context-standard.png)
 
-0. Choose the **Work>Templates** tab. Then, choose the ![Actions icon](../_img/icons/actions-icon.png) actions icon for the template you want to copy and select **Copy link**.  
+0. Choose the **Boards>Templates** tab. Then, choose the ![Actions icon](../_img/icons/actions-icon.png) actions icon for the template you want to copy and select **Copy link**.  
    
 	<img src="_img/wi-templates-copy-url-vsts.png" alt="Copy link of a template" style="border: 1px solid #CCCCCC;" />
 
