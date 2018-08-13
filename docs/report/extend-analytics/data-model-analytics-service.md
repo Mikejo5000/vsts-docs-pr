@@ -10,6 +10,7 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
+monikerRange: 'vsts'
 ms.date: 2/18/2018
 ---
 
@@ -25,7 +26,7 @@ The Analytics service data model for Azure DevOps consists of entity sets, whose
 ##Entities  
 
 >[!NOTE]  
->Entity sets are described in OData metadata, and vary by VSTS project. A complete list of entity sets, entity types, and properties can be discovered by requesting the OData metadata for your project: ```https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/{version}/$metadata```  
+>Entity sets are described in OData metadata, and vary by project. A complete list of entity sets, entity types, and properties can be discovered by requesting the OData metadata for your project: ```https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/{version}/$metadata```  
 
 The data model contains the following entity sets:  
 
@@ -73,8 +74,8 @@ The following table provides a partial list of the WorkItemRevision entity prope
 
 | Property | Type | Description|  
 |--------|------------|------------|  
-|WorkItemRevisionSK | Int32 | The VSTS Analytics unique key for the work item revision - used by external tools to join related entities.
-|WorkItemId | Int32 | The VSTS id for the work item.
+|WorkItemRevisionSK | Int32 | The Analytics unique key for the work item revision - used by external tools to join related entities.
+|WorkItemId | Int32 | The Id for the work item.
 |Revision | Int32 | The revision of the work item. 
 |Title | String | The work item title. 
 |WorkItemType | String | The work item type (e.g. Bug, Task, User Story).

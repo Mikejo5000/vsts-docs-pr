@@ -15,8 +15,7 @@ ms.date: 11/13/2017
 
 # Query for linked work items 
 
-**VSTS**  
-
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
 Querying work items across links is much like using typical navigation properties. Links themselves are entities though, so there is some additional complexity.
 

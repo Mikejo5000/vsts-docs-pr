@@ -58,9 +58,6 @@ Understand Agile process data
 ## How-to Guides
 - [Set permissions (Security)](../analytics/analytics-security.md?toc=/vsts/report/extend-analytics/toc.json&bc=/vsts/report/extend-analytics/breadcrumb/toc.json)
 
-<!--
-Use Agile process data
--->
 
 
 ## Reference
@@ -70,8 +67,8 @@ Use Agile process data
 
  
 ## Resources
-- [Analytics (VSTS)](../analytics/index.md)
-- [PowerBI (VSTS)](../powerbi/index.md)
+- [Analytics](../analytics/index.md)
+- [PowerBI](../powerbi/index.md)
 - [OData Extension for Data Aggregation Version 4.0](http://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html)
 
 

@@ -9,6 +9,8 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
+robots: NOINDEX, NOFOLLOW
+monikerRange: 'vsts'
 ms.date: 11/13/2017
 ---
 
@@ -22,8 +24,8 @@ with the returned data. This documentation will show you how to do both.
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
-The following topics describe how to build an extension and a widet extension:  
-- [Overview of extensions for VSTS](../../extend/get-started/node.md)  
+The following topics describe how to build an extension and a widget extension:  
+- [Extensions overview](../../extend/get-started/node.md)  
 - [Add a dashboard widget](../../extend/develop/add-dashboard-widget.md)  
  
 For the purposes of this example we'll use the open source C3 charting library which sits on top of the D3 graphics library.
@@ -340,7 +342,7 @@ There are a few key things to note here:
 * The supported size is 330x330 which is a 2x2 sized tile (160+160+10 pixels for spacing)
 
 At this point the extension can be compiled, deployed, installed and executed following the steps described in 
-[Write your first extension for VSTS](../../extend/get-started/node.md) starting from the Create your publisher section. 
+[Write your first extension](../../extend/get-started/node.md) starting from the *Create your publisher section*. 
 
 You should end up with a widget that looks like this:
 

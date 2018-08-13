@@ -58,8 +58,7 @@ This query will fail when the user does not have access to all the projects. Rea
 
 **Retrieve all work items for a given iteration which fall between the first day of the iteration and the last day of the iteration**
 
-Here your query is constrained by data 
-contained within the VSTS data. 
+Here your query is constrained by data contained within the work tracking data. 
 
 ```OData
 https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?

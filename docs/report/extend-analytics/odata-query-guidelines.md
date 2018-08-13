@@ -444,7 +444,7 @@ https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
 ```
 
 > [!NOTE]
-> VSTS supports process customization. Some account administrators use this feature and create hundreds of custom fields. If you omit the `$select` clause, your query will return all fields, including custom fields.
+> Azure DevOps supports process customization. Some account administrators use this feature and create hundreds of custom fields. If you omit the `$select` clause, your query will return all fields, including custom fields.
 
 <a id="specify-columns-select"> </a>
 ### ✔️ DO specify columns in the `$select` expand option inside the `$expand` clause

@@ -27,9 +27,9 @@ Project-scope queries help answer questions about a single project whereas organ
 
 ## Prerequistes 
 
-- You will need to have a VSTS organization and team project. If you don't have one, see [Sign up for a free VSTS organization](../../user-guide/sign-up-invite-teammates.md).
+- You need to have an Azure DevOps project. If you don't have one, [Sign up for free](../../boards/get-started/sign-up-invite-teammates.md).
 - You will have to have defined several work items. See [Plan and track work](../../user-guide/plan-track-work.md). 
-- Install the [Analytics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). To learn more about extensions, see [Install VSTS extensions](../../marketplace/install-vsts-extension.md). 
+- Install the [Analytics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). To learn more about extensions, see [Install extensions](../../marketplace/install-vsts-extension.md). 
 
 
 ## Project-scoped queries

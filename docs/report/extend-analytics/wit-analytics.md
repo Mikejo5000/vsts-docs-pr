@@ -9,12 +9,13 @@ ms.assetid: 0ABC2F7B-AFA5-465F-8DFE-4779D90452CD
 ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
+monikerRange: 'vsts'
 ms.date: 11/13/2017
 ---
 
 # Query your work tracking data using the OData Analytics service
 
-**VSTS**  
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
 
 Using the Analytics Service for Azure DevOps, you can construct basic and filtered queries to return work items of interest. You can run these queries directly in your browser.
@@ -32,13 +33,13 @@ All additional URL parts are specified as an additional part of the query string
 
 ## Prerequisites
 
-- You will need to have a VSTS account and team project. If you don't have one, see [Sign up for a free VSTS account](../../user-guide/sign-up-invite-teammates.md).
-- You will have to have defined several work items. See [Plan and track work](../../user-guide/plan-track-work.md). 
-- Install the [Analytics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). To learn more about extensions, see [Install VSTS extensions](../../marketplace/install-vsts-extension.md). 
+- You will need to have an Azure DevOps project. If you don't have one, see [Sign up for free](../../boards/get-started/sign-up-invite-teammates.md).
+- You will have to have defined several work items. See [Plan and track work](../../boards/get-started/plan-track-work.md). 
+- Install the [Analytics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). To learn more about extensions, see [Install extensions](../../marketplace/install-vsts-extension.md). 
 
 ## Construct a basic query 
 
-You construct a basic query by entering the OData URL into a [supported web browser](/tfs/server/compatibility#supported-browsers). In the examples provided, replace `{OrganizationName}` and `{project}` with your account name and  the name of a team project that you want to query. 
+You construct a basic query by entering the OData URL into a [supported web browser](/tfs/server/compatibility#supported-browsers). In the examples provided, replace `{OrganizationName}` and `{project}` with your organization name and  the name of a team project that you want to query. 
 
 ### Query a single entity set
 To query a single entity set, such as Work Items or Areas or Projects, simply add the name of the entity: `/Areas`, `/Projects`,  or `/WorkItems`. For full list of entity sets, see [Data model for the Analytics service](data-model-analytics-service.md).

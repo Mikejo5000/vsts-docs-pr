@@ -9,6 +9,7 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
+monikerRange: 'vsts'
 ms.date: 11/13/2017
 ---
 
@@ -31,7 +32,7 @@ In this topic you'll learn:
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
 
-Using the OData Aggregation Extensions, you can return aggregated data from VSTS that is conducive to reporting. For example you could show bug trend for the month of March. Bug trends are a common and critical part of managing any project so you can put this to good use immediately.
+Using the OData Aggregation Extensions, you can return aggregated data from Azure DevOps that is conducive to reporting. For example you could show bug trend for the month of March. Bug trends are a common and critical part of managing any project so you can put this to good use immediately.
 
 
 ## Construct a basic query for trend data   
