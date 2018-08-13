@@ -69,7 +69,7 @@ permissions. [How do I find the organization owner?](faq-delete-restore-vsts-org
 5. To review your organizations, go to your [Visual Studio profile](https://app.vsaex.visualstudio.com/profile/view), where you'll see your deleted organization.
 
    [Need help?](faq-delete-restore-vsts-organization.md#get-support)
----
+
 ### [Previous way to delete your organization](#tab/previous-nav)
 
 1. Sign in to your VSTS organization (```https://{yourorganization}.visualstudio.com```).
@@ -86,4 +86,4 @@ permissions. [How do I find the organization owner?](faq-delete-restore-vsts-org
 
   [Need help?](faq-delete-restore-vsts-organization.md#get-support)
 
----
+
