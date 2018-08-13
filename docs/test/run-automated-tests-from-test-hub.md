@@ -1,6 +1,6 @@
 ---
-title: Run automated tests from test plans in the Test hub VSTS and TFS 
-description: Run automated tests on-demand against Team Foundation builds from test plans in the Test hub with a build or release pipeline
+title: Run automated tests from test plans in the Test Manager 
+description: Run automated tests on-demand against Team Foundation builds from test plans in the Test Manager with a build or release pipeline
 ms.assetid: 2886C58B-0F4B-4C0C-A248-3980CA629FD8 
 ms.prod: devops
 ms.technology: devops-test
@@ -13,11 +13,9 @@ monikerRange: '>= tfs-2017'
 ---
 
 
-# Run automated tests from test plans in the Test hub
+# Run automated tests from test plans
 
-**VSTS | TFS 2018 | TFS 2017.2**
-
-Automate test cases in your test plans and run them directly from the **Test** hub:
+Automate test cases in your test plans and run them directly from the [!INCLUDE [test-hub-include](_shared/test-hub-include.md)]:
 
 * Provides a user-friendly process for testers who may not be well
   versed with running tests in Build or Release workflows.
@@ -56,7 +54,7 @@ For more information, see [Set permissions for release pipelines](../pipelines/p
 
 ## Set up your environment
 
-1. In the **Test plans** tab of the **Test** hub, choose your test plan,
+1. In the **Test plans** page of the [!INCLUDE [test-hub-include](_shared/test-hub-include.md)], choose your test plan,
    open the shortcut menu, and choose **Test plan settings**.
 
    ![Choosing Test plan settings](_img/run-automated-tests-from-test-hub/run-auto-tests-from-hub-101.png)
@@ -69,7 +67,7 @@ For more information, see [Set permissions for release pipelines](../pipelines/p
 
 1. You will need a release pipeline that was created from the 
    **Run automated tests from Test Manager** template to run tests from test plans
-   in the **Test** hub. If you have an existing release pipeline that was created
+   in the [!INCLUDE [test-hub-include-nolink](_shared/test-hub-include-nolink.md)]. If you have an existing release pipeline that was created
    using this template, select it and then select the existing environment in the
    release pipeline where the tests will be executed.
    Otherwise, choose the **Create new** link in the
@@ -132,7 +130,7 @@ For more information, see [Set permissions for release pipelines](../pipelines/p
    on the machines must be running in interactive mode and not
    as a service. [More details](../pipelines/test/reference-qa.md#faq-agentmode). 
 
-1. In the **Pipeline** tab of the release pipeline, verify
+1. In the **Pipeline** page of the release pipeline, verify
    that the build pipeline containing the test binaries is linked
    to this release pipeline as an artifact source.  
 
@@ -149,7 +147,7 @@ For more information, see [Set permissions for release pipelines](../pipelines/p
 
 ## Run the automated tests
 
-1. In the **Test** hub, open the test plan and select a test suite that contains the
+1. In the [!INCLUDE [test-hub-include](_shared/test-hub-include.md)], open the test plan and select a test suite that contains the
    automated tests.
 
 1. Select the test(s) you want to run, open the **Run** menu,
@@ -175,8 +173,8 @@ For more information, see [Set permissions for release pipelines](../pipelines/p
    for debugging failed tests such as the error message, stack trace,
    console logs, and attachments. 
  
-1. After test execution is complete, the **Runs** tab of the
-   **Test** hub shows the test results. The **Run summary** page
+1. After test execution is complete, the **Runs** page of the
+   [!INCLUDE [test-hub-include-nolink](_shared/test-hub-include-nolink.md)] shows the test results. The **Run summary** page
    shows an overview of the run.
 
    ![Viewing the test run summary](_img/run-automated-tests-from-test-hub/run-auto-tests-from-hub-110.png)
