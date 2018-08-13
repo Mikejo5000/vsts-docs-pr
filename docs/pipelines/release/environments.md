@@ -1,6 +1,6 @@
 ---
 title: Environments in Release Management
-description: DevOps CI CD - Understand environments in Release Management for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+description: DevOps CI CD - Understand environments in Release Management for Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: F3AB8DE0-CBB6-4B52-B483-435E0000E594
 ms.prod: devops
 ms.technology: devops-cicd
@@ -24,7 +24,7 @@ monikerRange: '>= tfs-2015'
 An **environment** is a _logical_ and _independent_ entity that
 represents where you want to deploy a release generated from a release
 pipeline. We'll examine these two characteristics in more detail
-to help you understand how to divide your release process into
+to help you understand how to divide your release pipeline into
 environments in your DevOps CI/CD processes.
 
 First, an environment in a release pipeline is a **logical** entity.
@@ -36,12 +36,12 @@ shipping the software to an app store, or the manufacturing process of a boxed p
 Second, you must be able to deploy to an environment **independently** of other environments in the pipeline.
 For example, your pipeline might consist of two environments A and B, and Release Management could deploy Release 2
 to A and Release 1 to B. If you make any assumptions in B about the existence of a certain release in A, the
-two environments are not independent. 
+two environments are not independent.
 
 Here are some suggestions and examples for environments:
 
 * **Dev, QA, Prod** - As new builds are produced, they can be deployed to Dev. They can then be promoted to QA, and finally to Prod.
-  At any time, each of these environments may have a different release (set of build artifacts) deployed to them. 
+  At any time, each of these environments may have a different release (set of build artifacts) deployed to them.
   This is a good example of the use of environments in a release pipeline.
 
 * **Customer adoption rings** (for example, early adopter ring, frequent adopter ring, late adopter ring) -
@@ -61,7 +61,7 @@ Here are some suggestions and examples for environments:
   and - if all of them pass - swap all the staging slots to production slots.
   In this case, given the interdependence between the sites, you cannot model each site as a different environment.
   Instead, you must model this as a single environment with parallel deployment to multiple sites
-  (typically by using [phases](../process/phases.md)).
+  (typically by using [jobs](../process/phases.md)).
 
 * **Multiple test environments to test the same application** - Having one or more release pipelines,
   each with multiple environments intended to run test automation for a build, is a common practice.
@@ -71,7 +71,7 @@ Here are some suggestions and examples for environments:
   of the previous builds is still in progress.
 
 <a name="approvals"></a><a name="conditions"></a>
-The deployment process of a release to an environment is defined in terms of [phases](../process/phases.md) and [tasks](../process/tasks.md).
+The deployment pipeline of a release to an environment is defined in terms of [jobs](../process/phases.md) and [tasks](../process/tasks.md).
 The physical deployment of a release to an environment is controlled through  
 [approvals and gates](approvals/index.md), [deployment conditions and triggers](triggers.md#env-triggers),
 and [queuing policies](#queuing-policies).

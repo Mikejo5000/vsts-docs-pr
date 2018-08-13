@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2017'
 
 # Android
 
-**VSTS | TFS 2018 | TFS 2017.2**
+**Azure Pipelines | TFS 2018 | TFS 2017.2**
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -23,7 +23,7 @@ monikerRange: '>= tfs-2017'
 ::: moniker range="<= tfs-2018"
 > [!NOTE]
 > 
-> This guidance applies to Visual Studio Team Services.
+> This guidance applies to Azure Pipelines.
 ::: moniker-end
 
 This guide explains creating pipelines for Android projects. Before this guidance, read the [YAML quickstart](../get-started-yaml.md).
@@ -37,11 +37,11 @@ This guide explains creating pipelines for Android projects. Before this guidanc
 
 You can build Android projects using [Microsoft-hosted agents](../agents/hosted.md) that include tools for Android. Or, you can use [self-hosted agents](../agents/agents.md#install) with specific tools you need.
 
-Start by adding the following YAML to a file named **vsts-ci.yml** in the root of your repository. Change any values to match your project configuration. See the [Gradle](../tasks/build/gradle.md) task for more about these options.
+Start by adding the following YAML to a file named **azure-pipelines.yml** in the root of your repository. Change any values to match your project configuration. See the [Gradle](../tasks/build/gradle.md) task for more about these options.
 
 ```yaml
 # https://aka.ms/yaml
-queue: 'Hosted VS2017'
+pool: 'Hosted VS2017'
 steps:
 - task: Gradle@2
   inputs:

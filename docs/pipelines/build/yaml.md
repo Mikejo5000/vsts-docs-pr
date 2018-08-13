@@ -1,6 +1,6 @@
 ---
-title: CI Build in code using YAML | VSTS or Team Foundation Server
-description: Learn how to define your CI build process in YAML in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+title: CI Build in code using YAML | Azure Pipelines or Team Foundation Server
+description: Learn how to define your CI build pipeline in YAML in Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
@@ -14,20 +14,20 @@ monikerRange: 'vsts'
 
 # How to use YAML builds
 
-When you define a CI build on VSTS, you've got a fundamental choice: use a web-based interface or configure your CI process as code in a YAML build. YAML build pipelines give you the advantages of configuration as code.
+When you define a CI build on Azure Pipelines, you've got a fundamental choice: use a web-based interface or configure your CI pipeline as code in a YAML build. YAML build pipelines give you the advantages of configuration as code.
 
 > [!NOTE]
 > To use YAML you must have the **Build YAML pipelines** [preview feature](../../project/navigation/preview-features.md) enabled on your organization.
 
-In a YAML build pipeline, your CI build process configured as code, which means:
+In a YAML build pipeline, your CI build steps are configured as code, which means:
 
 * The pipeline is versioned with your code and follows the same branching structure as your code. So you get validation of your changes through code reviews in pull requests and branch build policies.
 
-* If a change to the build process causes a break or results in an unexpected outcome, you can much more easily identify the issue because the change is in version control with the rest of your codebase. This way you can more clearly see the issue and fix it like any other kind of bug.
+* If a change to the build pipeline causes a break or results in an unexpected outcome, you can much more easily identify the issue because the change is in version control with the rest of your codebase. This way you can more clearly see the issue and fix it like any other kind of bug.
 
 ## Get started
 
-If you're new to YAML builds, or to VSTS, we suggest you begin learning with [Build a repo with YAML file](../get-started-yaml.md).
+If you're new to YAML builds, or to Azure Pipelines, we suggest you begin learning with [Build a repo with YAML file](../get-started-yaml.md).
 
 ## How do YAML builds compare to web-interface builds?
 
@@ -51,15 +51,15 @@ If you're new to YAML builds, or to VSTS, we suggest you begin learning with [Bu
 |Pause/disable pipeline from web editor|Not yet|Yes|
 |Set environment variables for scripts (useful for secrets)|Yes|Not yet|
 |Task groups|No|Yes|
-|Variables across phases|Yes|Not yet|
+|Variables across jobs|Yes|Not yet|
 
 ## Automatically create a YAML build pipeline
 
-To make it more convenient to create YAML build pipelines, VSTS automatically creates a pipeline when you add a file named .vsts-ci.yml to the root of your repository. It creates the build pipeline in a folder that has the same name as your repository.
+To make it more convenient to create YAML build pipelines, Azure Pipelines automatically creates a pipeline when you add a file named azure-pipelines.yml to the root of your repository. It creates the build pipeline in a folder that has the same name as your repository.
 
 1. Navigate to the **Code** hub, choose the **Files** tab, and then choose the repository you created in the above steps.
 
-2. In the root folder of the repo, create a new file called **.vsts-ci.yml**.
+2. In the root folder of the repo, create a new file called **azure-pipelines.yml**.
 
 3. Paste the following content into the file:
 
@@ -68,7 +68,7 @@ steps:
 - script: echo hello world 
 ```
 
-If your code is in VSTS, then a new build is automatically created and queued.
+If your code is in Azure Repos, then a new build is automatically created and queued.
 
  > [!NOTE]
  > If your project already has a build pipeline that's pointing to the file, then the system does not automatically create another build pipeline.
@@ -77,7 +77,7 @@ If your code is in VSTS, then a new build is automatically created and queued.
 
 If your code is in GitHub, or if you want to create multiple YAML build pipelines, then after you have published the YAML file in your repo, you can manually create a build pipeline.
 
-1. Navigate to the **Builds** tab of the **Build and Release** hub in VSTS or TFS, and then click **+ New**. You are asked to **Select a template** for the new build pipeline.
+1. Navigate to the **Builds** tab of the **Pipelines** hub in Azure Pipelines or TFS, and then click **+ New**. You are asked to **Select a template** for the new build pipeline.
 
 1. Choose **YAML**, and then click **Apply**.
 
@@ -85,9 +85,9 @@ If your code is in GitHub, or if you want to create multiple YAML build pipeline
 
 1. Select the repo that contains your .YML file.
 
-1. Click **Process**.
+1. Click **Pipeline**.
 
-1. For the **Agent queue** select any of the hosted options.
+1. For the **Agent pool** select any of the hosted options.
 
 1. For YAML path, click the **...** button, and then choose your .YML file.
 
@@ -95,7 +95,7 @@ If your code is in GitHub, or if you want to create multiple YAML build pipeline
 
 ## Example: Hello world
 
-To see a more interesting example in action, replace the content in **.vsts-ci.yml** with this content:
+To see a more interesting example in action, replace the content in **azure-pipelines.yml** with this content:
 
 ```YAML
 steps:
@@ -119,11 +119,11 @@ steps:
   displayName: Greeting from macOS or Linux machine
  ```
 
-Queue the build on any of our Microsoft-hosted agent pools, including **Hosted VS 2017**, **Hosted Linux** or **Hosted macOS**. You'll get different kinds of greetings from each of these typs of agent.
+Queue the build on any of the Microsoft-hosted agent pools, including **Hosted VS 2017**, **Hosted Linux** or **Hosted macOS**. You'll get different kinds of greetings from each of these typs of agent.
 
 ## Look up tasks
 
-To look up the syntax of the tasks that are built into VSTS and TFS, see https://github.com/Microsoft/vsts-tasks/tree/master/Tasks. 
+To look up the syntax of the tasks that are built into Azure Pipelines and TFS, see https://github.com/Microsoft/vsts-tasks/tree/master/Tasks.
 
 For example, if you want to use the [Copy Files](../tasks/utility/copy-files.md) task, go to https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/CopyFilesV2 and then click the **task.json** file. In this file you'll find the name of task, which in this case is `CopyFiles`. You'll also find the valid `inputs`, for example the `SourceFolder` input.
 
