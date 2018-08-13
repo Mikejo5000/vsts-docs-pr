@@ -338,7 +338,7 @@ YAML builds are not yet available on TFS.
 
 1. Select **Tasks** in the build pipeline, and then remove all the tasks.
 
-1. Add a Docker task, and then for Action select Build an image. 
+1. Add a **Docker** task, and then for **Action** select **Build an image**. 
 
 ---
 
