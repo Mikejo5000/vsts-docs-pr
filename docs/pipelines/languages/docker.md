@@ -284,7 +284,7 @@ In this approach, you use the build pipeline to orchestrate building your code, 
 
 To create an image, you run a `docker build` command at the end of your build pipeline. Your _Dockerfile_ contains the instructions to copy the results of your build into the container.
 
-The instructions in the [above example](#example) demonstrate this approach. The test results published in the example, can be viewed under [Tests Tab](https://docs.microsoft.com/en-us/vsts/pipelines/test/review-continuous-test-results-after-build?view=vsts) in build.
+The instructions in the [above example](#example) demonstrate this approach. The test results published in the example, can be viewed under [Tests Tab](https://docs.microsoft.com/vsts/pipelines/test/review-continuous-test-results-after-build?view=vsts) in build.
 
 ### Build and test in your Dockerfile
 
@@ -310,7 +310,6 @@ RUN dotnet publish -c Release -o out
 FROM microsoft/aspnetcore:2.0
 WORKDIR /app
 COPY --from=build-env /app/dotnetcore-sample/out .
-COPY --from=build-env /app/dotnetcore-tests/TestResults .
 ENTRYPOINT ["dotnet", "dotnetcore-sample.dll"]
 ```
 
@@ -324,24 +323,9 @@ Create a `.vsts-ci-yml` file at the root of your repo with the following content
 
 ```yaml
 queue: 'Hosted Linux Preview'
-variables:
-  dockerId: adventworks  # change this to match your Docker Id
-  imageName: dotnetcore-sample
-  containerName: dotnetcore-sampleapp
-
 steps:
-- script: |
-    docker build -t $(dockerId)/$(imageName):$BUILD_BUILDID . # include other options to meet your needs
-    docker run --name $(containerName) --rm -d $(dockerId)/$(imageName):$BUILD_BUILDID
-    docker cp $(containerName):app/testresults.trx .
-    docker stop $(containerName)
-- task: PublishTestResults@2
-  inputs:
-    testRunner: VSTest
-    testResultsFiles: '**/*.trx' 
-    searchFolder: '$(System.DefaultWorkingDirectory)'
+  - script: docker build -t <dockerid>/<image-name>:$BUILD_BUILDID . # include other options to meet your needs
 ```
-The test results published, can be viewed under [Tests Tab](https://docs.microsoft.com/en-us/vsts/pipelines/test/review-continuous-test-results-after-build?view=vsts) in build.
 
 ::: moniker-end
 
@@ -353,22 +337,7 @@ YAML builds are not yet available on TFS.
 
 1. Select **Tasks** in the build pipeline, and then remove all the tasks.
 
-1. Add the following **Docker** tasks
-    * Add a **Docker** task, and then for **Action** select **Build an image**.
-    * Add a **Docker** task, and then for **Action** select **Run a Docker command** with the specified command, to start the container. 
-        ```command
-        run --name <container-name> --rm -d <dockerid>/<image-name>:$BUILD_BUILDID 
-        ```
-    * Add a **Docker** task, and then for **Action** select **Run a Docker command** with the specified command, to copy test results from the container.
-        ```command
-        cp <container-name>:app/testresults.trx $System.DefaultWorkingDirectory 
-        ```
-    * Add a **Docker** task, and then for **Action** select **Run a Docker command** with the specified command, to stop the container.
-        ```command
-        stop <container-name>
-        ```
-
-1. Add **Publish Test Results** task to publish the test results. 
+1. Add a Docker task, and then for Action select Build an image. 
 
 
 ---
