@@ -1,6 +1,6 @@
 ---
 title: Billing topics and articles for VSTS and Microsoft Team Foundation Service (TFS)  
-description: VSTS charges appear on your monthly Azure bill and support Enterprise Agreement (EA), Cloud Solution Provider (CSP), Licensing, and Direct/Pay-As-You-Go Azure subscriptions
+description: VSTS charges appear on your monthly Azure bill and support the Microsoft Enterprise Agreement, Microsoft Cloud Solution Provider (CSP), licensing, and direct or pay-as-you-go Azure subscriptions
 ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: eec3c8aa-7985-47fc-8c10-6be0f41eb441
@@ -17,9 +17,9 @@ monikerRange: '>= tfs-2015'
 
 ::: moniker range="vsts"
 
-## Billing for VSTS
+## Billing for Visual Studio Team Services (VSTS)
 
-All VSTS charges appear on your monthly Azure bill. Azure supports payment by credit card as well as invoiced billing through the Enterprise Agreement (EA), Cloud Solution Providers (CSP), and more.
+All VSTS charges appear on your monthly Azure bill. Azure supports payment by credit card and also invoiced billing through the Microsoft Enterprise Agreement, Microsoft Cloud Solution Provider (CSP), and other payment methods.
 
 * [VSTS pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
 * [VSTS billing overview](overview.md)
@@ -28,18 +28,18 @@ All VSTS charges appear on your monthly Azure bill. Azure supports payment by cr
 
 ::: moniker range=">= tfs-2015 < vsts"
 
-## Billing for TFS
+## Billing for Microsoft Team Foundation Service (TFS)
 
 You can also make some purchases for TFS on your monthly Azure bill.
 
 * [TFS pricing](https://visualstudio.microsoft.com/team-services/tfs-pricing/)
-* [How to buy TFS CALs or access to the TFS Test hub](buy-access-tfs-test-hub.md)
+* [How to buy TFS client access licenses or access to the TFS Test hub](buy-access-tfs-test-hub.md)
 
 ::: moniker-end
 
 ::: moniker range="vsts"
 
-## 5-Minute quickstarts
+## Five-minute quickstarts
 
 * [Set up billing for VSTS](set-up-billing-for-your-organization-vs.md)
 * [Start free trials for paid VSTS features and extensions](try-additional-features-vs.md)
@@ -49,30 +49,30 @@ You can also make some purchases for TFS on your monthly Azure bill.
 
 ## Step-by-step tutorials
 
-* [Change the Azure AD for your VSTS organization](change-azure-subscription.md)
+* [Change the Azure Active Directory for your VSTS organization](change-azure-subscription.md)
 
 ## How-to guides
 
-Manage billing
+### Manage billing
 
 * [Add a backup billing manager](add-backup-billing-managers.md)
-* [Change the Azure subscription your VSTS organization uses for billing](change-azure-subscription.md)
+* [Change the Azure subscription that your VSTS organization uses for billing](change-azure-subscription.md)
 * [Change the number of paid users on your VSTS organization](reduce-cancel-paid-vsts-users.md)
-* [Billing FAQ](vsts-billing-faq.md)
+* [Billing FAQs](vsts-billing-faq.md)
 
-Manage Marketplace extensions
+### Manage Visual Studio Marketplace extensions
 
 * [Change the number of paid users for a VSTS extension](change-number-paid-extension-users.md)
 * [Approve requests for extensions](../../marketplace/approve-extensions.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json&view=vsts)
 * [Assign paid extensions to users](../../marketplace/assign-paid-extensions.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json&view=vsts)
 * [Uninstall or disable extensions](../../marketplace/uninstall-disable-extensions.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json&view=vsts)
 
-Guidance for Cloud Solution Providers
+### Guidance for Cloud Solution Providers
 
-* [Set up your customer](csp/set-up-csp-customer.md)
+* [Set up billing for your customers](csp/set-up-csp-customer.md)
 * [Buy VSTS for your customers](csp/buy-csp-vsts.md)
 * [Buy and manage Visual Studio subscriptions](https://docs.microsoft.com/visualstudio/subscriptions/vscloud-csp)
-* [Buy App Center resources](csp/buy-vs-app-center.md)
+* [Buy Visual Studio App Center resources](csp/buy-vs-app-center.md)
 
 ## Troubleshooting
 
@@ -82,17 +82,14 @@ Guidance for Cloud Solution Providers
 
 * [Permissions](../security/index.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json&view=vsts)
 * [About access levels](../security/access-levels.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json&view=vsts)
-* [Default permissions & access](../security/permissions-access.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json&view=vsts)
+* [Default permissions and access](../security/permissions-access.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json&view=vsts)
 
 ::: moniker-end
 
 ## Other resources
 
-* [New User Guide](../../user-guide/index.md)
-
-* [Organization Management](../accounts/index.md)
-
-* [TFS Server Administration documentation](https://docs.microsoft.com/tfs/server/index?view=vsts)
-
+* [New user guide](../../user-guide/index.md)
+* [Organization management](../accounts/index.md)
+* [TFS server administration documentation](https://docs.microsoft.com/tfs/server/index?view=vsts)
 * [Buy Visual Studio cloud subscriptions](https://docs.microsoft.com/visualstudio/subscriptions/vscloud-overview)
 * [Buy Xamarin University subscriptions](xamarin-univ.md)
