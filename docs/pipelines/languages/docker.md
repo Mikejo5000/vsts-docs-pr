@@ -281,6 +281,7 @@ In this approach, you use the build pipeline to orchestrate building your code, 
 
 * Leverage tasks (either built-in tasks or those you get from the Marketplace) to define the process used to build and test your app.
 * Run tasks that require authentication via service connections (for example: authenticated NuGet or npm feeds).
+* Publish test results.
 
 To create an image, you run a `docker build` command at the end of your build pipeline. Your _Dockerfile_ contains the instructions to copy the results of your build into the container.
 
@@ -288,7 +289,7 @@ The instructions in the [above example](#example) demonstrate this approach. The
 
 ### Build and test in your Dockerfile
 
-In this approach, you use your _Dockerfile_ to build your code and run tests. The build pipeline has a single step to run `docker build`. The rest of the steps are orchestrated by the Docker build process. It's common to use a [multi-stage Docker build](https://docs.docker.com/develop/develop-images/multistage-build/) in this approach. The advantage of this approach is that your build process is entirely configured in your _Dockerfile_. This means your build process is portable from the development machine to any build system. One disadvantage is that you can't leverage VSTS and TFS features such as tasks or phases.
+In this approach, you use your _Dockerfile_ to build your code and run tests. The build pipeline has a single step to run `docker build`. The rest of the steps are orchestrated by the Docker build process. It's common to use a [multi-stage Docker build](https://docs.docker.com/develop/develop-images/multistage-build/) in this approach. The advantage of this approach is that your build process is entirely configured in your _Dockerfile_. This means your build process is portable from the development machine to any build system. One disadvantage is that you can't leverage VSTS and TFS features such as tasks, phases or test reporting.
 
 To use this approach for the sample app, create a _Dockerfile_ at the root of your repo with the following content:
 
@@ -338,7 +339,6 @@ YAML builds are not yet available on TFS.
 1. Select **Tasks** in the build pipeline, and then remove all the tasks.
 
 1. Add a Docker task, and then for Action select Build an image. 
-
 
 ---
 
