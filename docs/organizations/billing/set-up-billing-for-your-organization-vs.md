@@ -8,9 +8,10 @@ ms.topic: quickstart
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 07/26/2018
+ms.date: 08/09/2018
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
+
 
 # Quickstart: Set up billing for your VSTS organization
 
@@ -25,7 +26,7 @@ If you don't have an Azure subscription, [create one](https://azure.microsoft.co
 
 ## Prerequisites
 
-The first time that you set up billing for your VSTS organization - whether you do this via the Azure portal or as part of making a purchase in the Visual Studio Marketplace, you will need the following:
+The first time you set up billing for your VSTS organization, whether you do this via the Azure portal or as part of making a purchase in the Visual Studio Marketplace, you must have the following:
 
 * [VSTS project collection administrator or organization owner permissions](../accounts/faq-add-delete-users.md#find-owner)
 * [An Azure subscription you can use to purchase](add-backup-billing-managers.md)
@@ -36,7 +37,7 @@ To make subsequent edits to paid quantities in your VSTS organization, you only 
 
 If you'd like to set up billing for your organization prior to buying something in the Visual Studio Marketplace, you can do so from within the Azure portal.
 
-1. [Sign in to the Azure portal](https://portal.azure.com/) as VSTS organization owner and as Azure subscription co-administrator or greater.
+1. [Sign in to the Azure portal](https://portal.azure.com/) as VSTS organization owner and as a user who can [make purchases on an Azure subscription](add-backup-billing-managers.md).
 
     [Browser problems in Azure?](https://azure.microsoft.com/documentation/articles/azure-preview-portal-supported-browsers-devices/)
 
@@ -67,6 +68,6 @@ If you'd like to set up billing for your organization prior to buying something 
 
 ## Related articles
 
-* [Billing FAQ](https://docs.microsoft.com/en-us/vsts/billing/vsts-billing-faq?view=vsts)
+* [Billing FAQ](../billing/vsts-billing-faq.md)
 * [Add a backup billing manager](add-backup-billing-managers.md)
-* [Change the subscription](https://docs.microsoft.com/en-us/vsts/billing/change-azure-subscription?view=vsts) for billing.
+* [Change the subscription](../billing/change-azure-subscription.md) for billing.

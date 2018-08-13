@@ -41,7 +41,7 @@ When you install TFS, the computer name where you install TFS is associated with
 Both the operating system and Active Directory impose certain restrictions on computer names as described in these articles:  
 *	[Rename the Computer](https://msdn.microsoft.com/library/dd894434.aspx)  
 *	[Rename a Computer that Hosts a Stand-Alone Instance of SQL Server](https://msdn.microsoft.com/library/ms143799.aspx)  
-*	[Windows Server Active Directory](https://support.microsoft.com/en-us/kb/909264)
+*	[Windows Server Active Directory](https://support.microsoft.com/kb/909264)
 
 ::: moniker-end
 
@@ -336,7 +336,7 @@ Must not be a system-reserved name such as PRN, COM1, COM2, COM3, COM4, COM5, CO
 </li>
 <li>
 Must not be one of the hidden segments used for IIS request filtering like App_Browsers, App_code, App_Data, App_GlobalResources, App_LocalResources, App_Themes, App_WebResources, bin, or web.config.<br/>
-Learn more about reserved names: [Naming Files, Paths, and Namespaces](https://msdn.microsoft.com/en-us/library/windows/desktop/aa365247.aspx).
+Learn more about reserved names: [Naming Files, Paths, and Namespaces](https://msdn.microsoft.com/library/windows/desktop/aa365247.aspx).
 </li>
 </ul>
 </td>
@@ -351,7 +351,7 @@ Learn more about reserved names: [Naming Files, Paths, and Namespaces](https://m
 A process defines the building blocks of the work item tracking system as well as other sub-systems you access through VSTS or the web portal for an on-premises TFS. 
 
 > [!NOTE]   
->  **Terminology note**: Both "process" and "process template" refer to an interdependent set of files used to create a project. [Choose a process](../../work/work-items/guidance/choose-process.md) describes the differences among the three default processes available to you.   
+>  **Terminology note**: Both "process" and "process template" refer to an interdependent set of files used to create a project. [Choose a process](../../boards/work-items/guidance/choose-process.md) describes the differences among the three default processes available to you.   
 
 Processes you define or customize must conform to the following restrictions.  
 
@@ -399,9 +399,9 @@ Must not exceed 2 GB (gigabytes).
 
 ### Kanban boards 
 
-Your [Kanban board](../../work/kanban/kanban-basics.md) turns your backlog into an interactive signboard, providing a visual flow of work. As work progresses from idea to completion, you update the items on the board. Each column represents a work stage, and each card represents a user story (blue cards) or a bug (red cards) at that stage of work. 
+Your [Kanban board](../../boards/boards/kanban-basics.md) turns your backlog into an interactive signboard, providing a visual flow of work. As work progresses from idea to completion, you update the items on the board. Each column represents a work stage, and each card represents a user story (blue cards) or a bug (red cards) at that stage of work. 
 
-You can customize your Kanban boards to match how your team works by adding, removing, or renaming [columns](../../work/kanban/add-columns.md) and [swimlanes](../../work/kanban/expedite-work.md). Columns support the flow of work across the board. Swimlanes allow you to manage different classes of work as horizontal lanes on the board.
+You can customize your Kanban boards to match how your team works by adding, removing, or renaming [columns](../../boards/boards/add-columns.md) and [swimlanes](../../boards/boards/expedite-work.md). Columns support the flow of work across the board. Swimlanes allow you to manage different classes of work as horizontal lanes on the board.
 
 Column and swimlane names must conform to the following restrictions.
 
@@ -537,7 +537,7 @@ All work item tracking objects are associated with one or more names. Most have 
 
 Restrictions are placed on several elements associated with work items, including reference and friendly names, field names, and attachment size  
 
-You can [modify or add a custom work item type (WIT)](../../work/customize/add-modify-wit.md) to support your team's processes. 
+You can [modify or add a custom work item type (WIT)](../../reference/add-modify-wit.md) to support your team's processes. 
 
 ### Attachments  
 
@@ -562,7 +562,7 @@ Default maximum size: 4,096 kilobytes
 </li>
 <li>
 <p>Absolute maximum size: 2 gigabytes</p>
-<p>[Change the maximum attachment size for work items](../../work/customize/reference/change-maximum-attachment-size-work-items.md).</p></li>
+<p>[Change the maximum attachment size for work items](../../reference/xml/change-maximum-attachment-size-work-items.md).</p></li>
 </ul>
 </td>
 </tr>
@@ -781,7 +781,7 @@ The Microsoft namespace is used to define work item tracking fields. These field
 
 Customers and partners can create their own field namespaces for custom work item types.  
 
-For descriptions of system fields and fields defined in the default process templates, see [Index of work item fields](../../work/work-items/guidance/work-item-field.md).
+For descriptions of system fields and fields defined in the default process templates, see [Index of work item fields](../../boards/work-items/guidance/work-item-field.md).
 
 <a id="ExamplesFieldReferenceNames">  </a>
     
@@ -834,7 +834,7 @@ Microsoft.VSTS.TCM.TestSuiteType</p>
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 ### Field help text
 
-You can specify help text for a WIT field by using the ```HELPTEXT``` element. The system displays this text at run time to help users know what to enter into the field. Help text is scoped to a specific WIT in a specific project. [Apply a rule to a work item field](../../work/customize/reference/apply-rule-work-item-field.md) provides information on adding help text.
+You can specify help text for a WIT field by using the ```HELPTEXT``` element. The system displays this text at run time to help users know what to enter into the field. Help text is scoped to a specific WIT in a specific project. [Apply a rule to a work item field](../../reference/xml/apply-rule-work-item-field.md) provides information on adding help text.
 
 Help text that you add must conform to the following restrictions. 
 <table>
@@ -862,7 +862,7 @@ Help text that you add must conform to the following restrictions.
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 ### Global lists 
 
-A global list is a set of list item values that you can use globally across all project collections within an instance of an on-premises TFS. As you define WITs, you may find that some work item fields share the same set of allowed or suggested values. Global lists enable you to define these values one time and share them across multiple WITs and projects. See [Define global lists](../../work/customize/reference/define-global-lists.md) for details.
+A global list is a set of list item values that you can use globally across all project collections within an instance of an on-premises TFS. As you define WITs, you may find that some work item fields share the same set of allowed or suggested values. Global lists enable you to define these values one time and share them across multiple WITs and projects. See [Define global lists](../../reference/xml/define-global-lists.md) for details.
 
 A global list, defined using the ```GLOBALLIST``` element contains one or more list items, specified using the ```LISTITEM``` element.
 
@@ -944,7 +944,7 @@ Global lists must conform to the following restrictions.
 ### Work item tags
 
 Work item tags correspond to one or two keyword phrases that 
-supports your needs to filter work tracking tools such as backlogs, boards, and queries or define queries. To learn more, see [Add work item tags to categorize and filter lists and boards](../../work/track/add-tags-to-work-items.md)
+supports your needs to filter work tracking tools such as backlogs, boards, and queries or define queries. To learn more, see [Add work item tags to categorize and filter lists and boards](../../boards/queries/add-tags-to-work-items.md)
 
 Tag names must conform to the following restrictions.  
 
@@ -1347,5 +1347,5 @@ Names you assign to a wiki page title must conform to the following restrictions
 
 
 ## Related articles 
-*	[Customize work tracking objects to support your team's processes](../../work/customize/customize-work.md)
-*	[Customize a process template](../../work/customize/reference/process-templates/customize-process.md)
+*	[Customize work tracking objects to support your team's processes](../../reference/customize-work.md)
+*	[Customize a process template](../../reference/process-templates/customize-process.md)

@@ -17,7 +17,7 @@ ms.date: 05/31/2018
 
 [!INCLUDE [temp](../../../_shared/version-vsts-only.md)]
 
-Each project is based on a process that defines the building blocks for tracking work. The first project you create uses one of the default processes&mdash;[Agile](/vsts/work/work-items/guidance/agile-process), [Scrum](/vsts/work/work-items/guidance/scrum-process), or [CMMI](/vsts/work/work-items/guidance/cmmi-process). 
+Each project is based on a process that defines the building blocks for tracking work. The first project you create uses one of the default processes&mdash;[Agile](/vsts/boards/work-items/guidance/agile-process), [Scrum](/vsts/boards/work-items/guidance/scrum-process), or [CMMI](/vsts/boards/work-items/guidance/cmmi-process). 
 
 You can only customize inherited processes.  Any changes you make to the inherited process will automatically appear in the projects that use that process. 
 
@@ -234,7 +234,7 @@ You can also use the following steps to verify the customizations you've made to
 <a id="process-rest-api">  </a>
 ## Programmatically work with processes 
 
-You can get, create, update, and delete processes defined for an organization using the [REST API, Processes](https://docs.microsoft.com/en-us/rest/api/vsts/processes/processes).
+You can get, create, update, and delete processes defined for an organization using the [REST API, Processes](https://docs.microsoft.com/rest/api/vsts/processes/processes).
 
 ## Related articles
 

@@ -14,7 +14,7 @@ monikerRange: 'vsts'
 
 # Delete users from VSTS connected to Azure AD
 
-**VSTS**
+[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 For more information, see the [conceptual overview](access-with-azure-ad.md) for using Azure AD with VSTS.
 
@@ -32,6 +32,6 @@ they won't be able to sign in.
 
     ![Find the directory connected to your organization](_img/manage-work-access/azurefindconnecteddirectory.png)
 
-3. Follow [these steps](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-users-delete-user-azure-portal) on the Azure portal.
+3. Follow [these steps](https://docs.microsoft.com/azure/active-directory/active-directory-users-delete-user-azure-portal) on the Azure portal.
 
 4. [Remove the user](delete-organization-users.md) from your VSTS organization and reassign their access levels, if necessary.

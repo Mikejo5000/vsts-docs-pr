@@ -43,7 +43,7 @@ In this article, learn how to perform these tasks:
 
 <a id="create-inherited-process"></a>
 ## Create an inherited process
-You can create an inherited process from any one of the three system processes: [Agile](../../../work/work-items/guidance/agile-process.md), [Scrum](../../../work/work-items/guidance/scrum-process.md), or [CMMI](../../../work/work-items/guidance/cmmi-process.md).   
+You can create an inherited process from any one of the three system processes: [Agile](../../../boards/work-items/guidance/agile-process.md), [Scrum](../../../boards/work-items/guidance/scrum-process.md), or [CMMI](../../../boards/work-items/guidance/cmmi-process.md).   
 
 0. From the **Process** page, open the **&hellip;** context menu of the process you'll use to create an inherited process, and then choose **Create inherited process**. 
 
@@ -169,7 +169,7 @@ VSTS owners and Project Collection Administrators can [add projects](../../proje
 <a id="process-rest-api">  </a>
 ### Programmatically work with processes 
 
-You can get, create, update, and delete processes defined for an organization using the [REST API, Processes](https://docs.microsoft.com/en-us/rest/api/vsts/processes/processes).
+You can get, create, update, and delete processes defined for an organization using the [REST API, Processes](https://docs.microsoft.com/rest/api/vsts/processes/processes).
 
 
 

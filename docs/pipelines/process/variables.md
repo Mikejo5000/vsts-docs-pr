@@ -56,15 +56,12 @@ For example, when you [create a new .NET app build](../apps/windows/dot-net.md),
 You are free to define additional variables in your pipelines.
 Both of these are considered user-defined variables.
 
-### Designer variables
+# [YAML](#tab/yaml)
 
-On the **Variables** tab in the pipeline designer, you can create, set, and delete variables.
-Variables defined here are available to all phases in the pipeline.
+::: moniker range="vsts"
 
-### YAML variables
-
-In addition to the **Variables** tab, YAML builds can have variables defined at the [phase](../process/phases.md) level.
-These variables can then be mapped into each task or script using the `inputs` keyword.
+YAML builds can have variables defined at the [phase](../process/phases.md) level.
+They can also access variables defined when the build is queued.
 
 ```yaml
 # Set variables once
@@ -89,6 +86,161 @@ steps:
     platform: $(platform)
 ```
 
+### Parameters to YAML statements
+
+To use a variable in a YAML statement, wrap it in `$()`. For example:
+
+```yaml
+queue: Hosted Linux Preview
+steps:
+- script: ls
+  workingDirectory: $(agent.homeDirectory)
+```
+
+### Scripts
+
+To use a variables in a script, use environment variable syntax. Replace `.` and
+space with `_`, capitalize the letters, and then use your platform's syntax for
+referencing environment variables.
+
+```yaml
+phases:
+- phase: LinuxOrMacOs
+  queue: Hosted Linux Preview
+  steps:
+  - bash: echo $AGENT_HOMEDIRECTORY
+
+- phase: Windows
+  queue: Hosted VS2017
+  steps:
+  - script: echo %AGENT_HOMEDIRECTORY%
+  - powershell: Write-Host $env:AGENT_HOMEDIRECTORY
+```
+
+### Set a phase-scoped variables from a script
+
+To set a variable from a script, you use a command syntax and print to stdout.
+This does not update the environment variables, but it does make the new
+variable available to downstream steps within the same phase.
+
+```yaml
+queue: Hosted Linux Preview
+
+steps:
+
+# Create a variable
+- script: |
+    echo '##vso[task.setvariable variable=myVariable]abc123'
+
+# Print the variable
+- script: |
+    echo my variable is $(myVariable)
+```
+
+### Set an output (multi-phase) variable
+
+If you want to make a variable available to future phases, you must mark it as
+an output variable using `isOutput=true`. Then you can map it into future
+phases using `$[]` syntax and including the step name which set the variable.
+
+```yaml
+phases:
+
+# Set an output variable from phase A
+- phase: A
+  queue: Hosted VS2017
+  steps: 
+  - powershell: echo "##vso[task.setvariable variable=myOutputVar;isOutput=true]this is the value"
+    name: setvarStep
+  - script: echo $(setvarStep.myOutputVar)
+    name: echovar
+
+# Map the variable into phase B
+- phase: B
+  dependsOn: A
+  queue: Hosted Linux Preview
+  variables:
+    myVarFromPhaseA: $[ dependencies.A.outputs['setvarStep.myOutputVar'] ]  # map in the variable
+  steps:
+  - script: echo $(myVarFromPhaseA)
+    name: echovar
+```
+
+If you're setting a variable from a [matrix](phases.md?tab=yaml#parallelexec)
+or [slice](phases.md?tab=yaml#slicing), then to reference the variable,
+you have to include the name
+of the phase as well as the step when you access it from a downstream phase.
+
+```yaml
+phases:
+
+# Set an output variable from a phase with a matrix
+- phase: A
+  queue:
+    name: Hosted Linux Preview
+    parallel: 2
+    matrix:
+      debugPhase:
+        configuration: debug
+        platform: x64
+      releasePhase:
+        configuration: release
+        platform: x64
+  steps:
+  - script: echo "##vso[task.setvariable variable=myOutputVar;isOutput=true]this is the $(configuration) value"
+    name: setvarStep
+  - script: echo $(setvarStep.myOutputVar)
+    name: echovar
+
+# Map the variable from the debug job
+- phase: B
+  dependsOn: A
+  queue: Hosted Linux Preview
+  variables:
+    myVarFromPhaseADebug: $[ dependencies.A.outputs['debugPhase.setvarStep.myOutputVar'] ]
+  steps:
+  - script: echo $(myVarFromPhaseADebug)
+    name: echovar
+```
+
+```yaml
+phases:
+
+# Set an output variable from a phase with slicing
+- phase: A
+  queue:
+    name: Hosted Linux Preview
+    parallel: 2 # Two slices
+  steps:
+  - script: echo "##vso[task.setvariable variable=myOutputVar;isOutput=true]this is the slice $(system.jobPositionInPhase) value"
+    name: setvarStep
+  - script: echo $(setvarStep.myOutputVar)
+    name: echovar
+
+# Map the variable from the job for the first slice
+- phase: B
+  dependsOn: A
+  queue: Hosted Linux Preview
+  variables:
+    myVarFromPhaseA1: $[ dependencies.A.outputs['job1.setvarStep.myOutputVar'] ]
+  steps:
+  - script: "echo $(myVarFromPhaseA1)"
+    name: echovar
+```
+
+::: moniker-end
+
+::: moniker range="< vsts"
+YAML builds are not yet supported on TFS.
+::: moniker-end
+
+# [Designer](#tab/designer)
+
+On the **Variables** tab in the pipeline designer, you can create, set, and delete variables.
+Variables defined here are available to all phases in the pipeline.
+
+---
+
 ### Secret variables
 
 We recommend that you make the variable ![Secret](_img/variables/secret-variable-icon.png)
@@ -110,15 +262,9 @@ We recommend that you make the variable ![Secret](_img/variables/secret-variable
 ![Keep password secret](_img/variables/keep-password-secret.png)
 ::: moniker-end
 
-# [Designer](#tab/designer)
-
-Secret variables are encrypted at rest with a 2048-bit RSA key.
-They are automatically masked out of any log output from the pipeline.
-Unlike a normal variable, they are not automatically decrypted into environment variables for scripts.
-They *are* automatically decrypted for use as inputs to your build tasks.
-You can also pass them explicitly into a script from your build task (for example as `$(password)`).
-
 # [YAML](#tab/yaml)
+
+::: moniker range="vsts"
 
 Secret variables are encrypted at rest with a 2048-bit RSA key.
 They are automatically masked out of any log output from the pipeline.
@@ -153,6 +299,20 @@ This works: ***
 This does not work:
 This works: ***
 ```
+
+::: moniker-end
+
+::: moniker range="< vsts"
+YAML builds are not yet available on TFS.
+::: moniker-end
+
+# [Designer](#tab/designer)
+
+Secret variables are encrypted at rest with a 2048-bit RSA key.
+They are automatically masked out of any log output from the pipeline.
+Unlike a normal variable, they are not automatically decrypted into environment variables for scripts.
+They *are* automatically decrypted for use as inputs to your build tasks.
+You can also pass them explicitly into a script from your build task (for example as `$(password)`).
 
 ---
 

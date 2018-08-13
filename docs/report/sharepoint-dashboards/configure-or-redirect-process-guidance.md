@@ -15,7 +15,7 @@ ms.topic: tutorial
 
 [!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
 
-Your team can use process guidance to capture how they coordinate work on a team project, how to use work item types (WITs), and how to work with reports throughout the project life cycle. For generic guidance, see [Agile](../../work/work-items/guidance/agile-process.md), [Scrum](../../work/work-items/guidance/scrum-process.md), and [CMMI](../../work/work-items/guidance/cmmi-process.md) process template artifacts. You can customize your own process guidance and redirect the F1 help links from select artifacts to point to your custom guidance.  
+Your team can use process guidance to capture how they coordinate work on a team project, how to use work item types (WITs), and how to work with reports throughout the project life cycle. For generic guidance, see [Agile](../../boards/work-items/guidance/agile-process.md), [Scrum](../../boards/work-items/guidance/scrum-process.md), and [CMMI](../../boards/work-items/guidance/cmmi-process.md) process template artifacts. You can customize your own process guidance and redirect the F1 help links from select artifacts to point to your custom guidance.  
   
  If your team project was created using the Basic configuration or is hosted on VSTS, neither your project portal nor process guidance is enabled. This means that the links that redirect F1 help within a work item form aren't available.  
   
@@ -83,7 +83,7 @@ Your team can use process guidance to capture how they coordinate work on a team
   
 ##  <a name="upload"></a> Upload files that support linking to process guidance  
   
-1.  To obtain the process guidance support files for your team project, download them using the Process Template Manager. See [Download the latest version of the process templates](../../work/work-items/guidance/manage-process-templates.md).  
+1.  To obtain the process guidance support files for your team project, download them using the Process Template Manager. See [Download the latest version of the process templates](../../boards/work-items/guidance/manage-process-templates.md).  
   
 2.  Upload the contents of the Windows SharePoint Services/Process Guidance folder to the SharePoint document library that you have configured for process guidance.  
   
@@ -163,6 +163,6 @@ Your team can use process guidance to capture how they coordinate work on a team
   
 <a name="addportal"></a> 
 ###  Q: Can I embed process guidance within a work item form?  
- **A:** Yes. To specify text or a hyperlink within a work item form, see [LabelText and Text](../../work/customize/reference/labeltext-and-text-xml-elements-reference.md).  
+ **A:** Yes. To specify text or a hyperlink within a work item form, see [LabelText and Text](../../reference/xml/labeltext-and-text-xml-elements-reference.md).  
   
- To embed a webpage or html content within a work item form, see [WebpageControlOptions](../../work/customize/reference/webpagecontroloptions-xml-elements-reference.md).
+ To embed a webpage or html content within a work item form, see [WebpageControlOptions](../../reference/xml/webpagecontroloptions-xml-elements-reference.md).

@@ -67,7 +67,7 @@ To help you answer the question: *Are we on track to complete this set of work b
 
 In order to configure the Burndown and Burndown widgets, you must have the following in place:
 
-* Installed the [Analytics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You must be an account owner or a member of the [Project Collection Administrator group](../../organizations/security/set-project-collection-level-permissions.md) to add extensions.
+* Installed the [Analytics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You must be an organization owner or a member of the [Project Collection Administrator group](../../organizations/security/set-project-collection-level-permissions.md) to add extensions.
 * [Added the widget to a dashboard](../add-widget-to-dashboard.md). You must be a [team administrator](../../organizations/settings/add-team-administrator.md) or have [permissions to add and edit dashboards](../dashboard-permissions.md).
 -->
 
@@ -99,7 +99,7 @@ The Configuration dialog for the Burndown and Burnup widgets is the same. You co
    > The list of selectable backlogs, work item types, and fields are based on your current project. 
    > 
    > For example, if you select a work item type that doesn't exist in another project, the burndown will not include work items from that project. If you select a field that doesn't exist in another project, that field will be considered blank for the burndown. 
-   > Therefore, a burndown created across multiple projects will only work if the [Process](../..//work/work-items/guidance/choose-process.md) for those projects are the same, or at least very similar.
+   > Therefore, a burndown created across multiple projects will only work if the [Process](../..//boards/work-items/guidance/choose-process.md) for those projects are the same, or at least very similar.
 
 1. Choose your work items. The burndown can include work based on items in your **Backlog** or by **Work item type**.   
 	You can select a **Backlog**, which include all the work items in that backlog.    
@@ -109,7 +109,7 @@ The Configuration dialog for the Burndown and Burnup widgets is the same. You co
 	![Burndown Widget - Configuration - Select work item types](./_img/burndown-widget/burndownup-config-select-backlog.png)  
 
    > [!NOTE]   
-   > If your project has been customized using a [Hosted XML process](../../work/customize/hosted-xml-process-model.md) and has created a customized bug work item category name, then the Burndown and Burnup widgets won't be able to query for work items within that category. To query for bugs, the customized bug work item type must belong to the default **Bug Category**, reference name `Microsoft.BugCategory`.  
+   > If your project has been customized using a [Hosted XML process](../../organizations/settings/work/hosted-xml-process-model.md) and has created a customized bug work item category name, then the Burndown and Burnup widgets won't be able to query for work items within that category. To query for bugs, the customized bug work item type must belong to the default **Bug Category**, reference name `Microsoft.BugCategory`.  
    
 	You can also select **Work item type** to burndown on a specific work item type. In the list, you will find all the project's work item types including [custom work item types](../../organizations/settings/work/customize-process-wit.md).   
 	![Burndown Widget - Configuration - Select work item types](./_img/burndown-widget/burndownup-config-select-work-item-type.png)  
@@ -167,7 +167,7 @@ The Configuration dialog for the Burndown and Burnup widgets is the same. You co
 	The burndown chart uses the end date of each iteration to plot the remaining work for that iteration.
 
 	> [!NOTE]   
-	> The Average Burndown assumes that every iteration is the same length. It does not account for iterations that are different lengths. Additionally, it assumes that the interval between the **Start Date** and the first iteration is a full iteration, even if the length of time between **Start Date** and the first iteration's end date does not match your typical length of iteration. For best restuls, enter a **Start Date** that is the same as the first iteration's start date. 
+	> The Average Burndown assumes that every iteration is the same length. It does not consider iterations that are different lengths. Additionally, it assumes that the interval between the **Start Date** and the first iteration is a full iteration, even if the length of time between **Start Date** and the first iteration's end date does not match your typical length of iteration. For best restuls, enter a **Start Date** that is the same as the first iteration's start date. 
 
 	If you select to plot based on an iteration schedule, you will not be able to select **End Date**. The burndown assumes the **End Date** is the last iteration's end date.
 
@@ -182,7 +182,7 @@ The Configuration dialog for the Burndown and Burnup widgets is the same. You co
 	If you select **Months**, then burndown will be caluclated based the last day of each month.  
 
 	> [!NOTE]    
-	> The **Average Burndown** assumes that every interval is the same length. It does not account for months that are different lengths. Additionally, it assumes that the interval between the **Start Date** and the first month is a full month, even if the length of time between **Start Date** and the first months's end date does not match your typical length of a month. For example, a **Start Date** of 11/15/2017, would plot the first month as 10/31/2017, but would be counted as a full month for your **Average Burndown**. For best results, enter a **Start Date** that is the same as the first months's start date. **This is also true when plotting by weekly itervals.**
+	> The **Average Burndown** assumes that every interval is the same length. It does not consider months that are different lengths. Additionally, it assumes that the interval between the **Start Date** and the first month is a full month, even if the length of time between **Start Date** and the first months's end date does not match your typical length of a month. For example, a **Start Date** of 11/15/2017, would plot the first month as 10/31/2017, but would be counted as a full month for your **Average Burndown**. For best results, enter a **Start Date** that is the same as the first months's start date. **This is also true when plotting by weekly itervals.**
 
 ## Choose additional options 
 

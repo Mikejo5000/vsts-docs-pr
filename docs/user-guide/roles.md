@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2013'
 
 # Software development roles supported by VSTS and TFS
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-vsts-tfs-all-versions](../_shared/version-vsts-tfs-all-versions.md)]
 
 If you are a sole developer, or work on a small team, chances are that you participate in many activites&mdash;performing tasks associated with issue tracking, feature planning, coding, testing, build, and deployment.  
 
@@ -34,7 +34,7 @@ Developers use Visual Studio or other [tools](tools.md) to develop their applica
 	- [Share your code with Git and Visual Studio](../repos/git/share-your-code-in-git-vs.md).
 	- [Share your code in Git using Eclipses](../repos/git/share-your-code-in-git-eclipse.md).
 	- [Share your code in Git using Xcode](../repos/git/share-your-code-in-git-xcode.md).
-	- [Share your code in Git using IntelliJ](/vsts/java/download-intellij-plug-in).
+	- [Share your code in Git using IntelliJ](/../java/download-intellij-plug-in.md).
 	- [Get Started with Git and VSTS](../repos/git/gitquickstart.md).
 - To get started using TFVC, see one of the following resources: 
 	- [Develop and share your code in TFVC using Visual Studio](../repos/tfvc/share-your-code-in-tfvc-vs.md)
@@ -51,9 +51,9 @@ The role of project manager typically encompasses planning the feature set to de
 - Use queries to list and update work items, create status and trend charts, and post charts to dashboards 
 - Use dashboards to share information, status, and trends with your team or organization
   
-To get started, see [Get started with Agile tools to plan and track work](../work/backlogs/overview.md).  
+To get started, see [Get started with Agile tools to plan and track work](../boards/backlogs/overview.md).  
 
-If you are used to using Excel or Project to plan and track your work, you can still use these tools and integrate with VSTS and TFS. See [Bulk modify using Excel](../work/backlogs/office/bulk-add-modify-work-items-excel.md) and [Create your backlog and tasks using Project](../work/backlogs/office/create-your-backlog-tasks-using-project.md). 
+If you are used to using Excel or Project to plan and track your work, you can still use these tools and integrate with VSTS and TFS. See [Bulk modify using Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md) and [Create your backlog and tasks using Project](../boards/backlogs/office/create-your-backlog-tasks-using-project.md). 
 
 ### DevOps: builders, testers, and release managers
 
@@ -102,7 +102,7 @@ Responsible for project level settings, including:
 
 - [Area paths](../organizations/settings/set-area-paths.md) and [Iteration paths](../organizations/settings/set-iteration-paths-sprints.md)
 - [Project permissions and repository security](../organizations/security/permissions.md)
-- [Customize work tracking objects (TFS only)](../work/customize/customize-work.md) 
+- [Customize work tracking objects (TFS only)](../reference/customize-work.md) 
 - [Build agents, pools, and service connections](../pipelines/overview.md) 
 - [Test](../test/how-long-to-keep-test-results.md) and [release](../pipelines/policies/retention.md) retention policies 
  

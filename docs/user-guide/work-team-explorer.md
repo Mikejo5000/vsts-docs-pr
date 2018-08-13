@@ -14,7 +14,6 @@ ms.date: 09/07/2017
 monikerRange: '>= tfs-2013'
 ---
 
-
 # Navigate in Team Explorer
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
@@ -25,10 +24,10 @@ You use Team Explorer to manage work that is assigned to you, your team, or your
 >[!TIP]  
 >You can access the latest version of Visual Studio clients from the [Visual Studio Downloads page](https://visualstudio.microsoft.com/downloads/). Additional options for connecting to VSTS or TFS include:
 
-> - [Team Explorer Everywhere](/vsts/java/download-eclipse-plug-in)
-> - [VSTS Plugin for Android Studio](/vsts/java/download-android-studio-plug-in)  
-> - [VSTS Plugin for IntelliJ](/vsts/java/download-intellij-plug-in) 
-> - [Visual Studio Code](/vsts/java/vscode-extension)    
+> - [Team Explorer Everywhere](/../java/download-eclipse-plug-in.md)
+> - [VSTS Plugin for Android Studio](/../java/download-android-studio-plug-in.md)  
+> - [VSTS Plugin for IntelliJ](/../java/download-intellij-plug-in.md)
+> - [Visual Studio Code](/../java/vscode-extension.md)
 >For information about compatibility among client and server versions, see [Requirements and compatibility](/tfs/server/requirements).
 
 The operations available to you depend on which source control option-Team Foundation version control (TFVC) or Git-was selected to manage source code when the team project was created.
@@ -54,7 +53,7 @@ If you don't need Visual Studio, but do want to connect to VSTS or TFS or get on
 
 **Team Explorer plug-in for Eclipse**
 
-If you work in Eclipse or on a non-Windows platform, you can [install the Team Explorer plug-in for Eclipse](/vsts/java/download-eclipse-plug-in#_install-the-tee-plugin-for-eclipse). Once installed, you can share your Eclipse projects by adding them to VSTS or TFS using [Git](../repos/git/share-your-code-in-git-eclipse.md) or [TFVC](../repos/tfvc/share-your-code-in-tfvc-eclipse.md).
+If you work in Eclipse or on a non-Windows platform, you can [install the Team Explorer plug-in for Eclipse](/../java/download-eclipse-plug-in#_install-the-tee-plugin-for-eclipse). Once installed, you can share your Eclipse projects by adding them to VSTS or TFS using [Git](../repos/git/share-your-code-in-git-eclipse.md) or [TFVC](../repos/tfvc/share-your-code-in-tfvc-eclipse.md).
 
 
 
@@ -96,7 +95,7 @@ From the **Connect** page, you can select the team projects you want to connect 
 > [!div class="mx-tdBreakAll"]  
 > |Home|Work Items  |Build |
 > |-------------|----------|----------|
-> |-[Configure workspace](../repos/tfvc/share-your-code-in-tfvc-vs.md#configure-your-workspace)<br/>- Open [Web portal](../project/navigation/index.md)<br/>- Open [Task Board](../work/scrum/task-board.md)<br/>- Open [Team Room](../notifications/collaborate-in-a-team-room.md) |- [Add work items](../work/backlogs/add-work-items.md)<br/>- [Use the query editor to list and manage queries](../work/track/using-queries.md)<br/>- [Organize query folders and set query permissions](../work/track/set-query-permissions.md)<br/>- [Open query in Excel](../work/backlogs/office/bulk-add-modify-work-items-excel.md)<br/>- [Open query in Project](../work/backlogs/office/create-your-backlog-tasks-using-project.md)<br/>- [Email query results list using Outlook](../work/track/share-plans.md)<br/>- [Create reports from query in Excel](../report/excel/create-status-and-trend-excel-reports.md) (TFS only) |- [Create build pipelines](../pipelines/tasks/index.md)<br/>- [View and manage builds](../pipelines/overview.md)<br/>- [Manage the build queue](../pipelines/agents/pools-queues.md) |
+> |-[Configure workspace](../repos/tfvc/share-your-code-in-tfvc-vs.md#configure-your-workspace)<br/>- Open [Web portal](../project/navigation/index.md)<br/>- Open [Task Board](../boards/sprints/task-board.md)<br/>- Open [Team Room](../notifications/collaborate-in-a-team-room.md) |- [Add work items](../boards/backlogs/add-work-items.md)<br/>- [Use the query editor to list and manage queries](../boards/queries/using-queries.md)<br/>- [Organize query folders and set query permissions](../boards/queries/set-query-permissions.md)<br/>- [Open query in Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md)<br/>- [Open query in Project](../boards/backlogs/office/create-your-backlog-tasks-using-project.md)<br/>- [Email query results list using Outlook](../boards/queries/share-plans.md)<br/>- [Create reports from query in Excel](../report/excel/create-status-and-trend-excel-reports.md) (TFS only) |- [Create build pipelines](../pipelines/tasks/index.md)<br/>- [View and manage builds](../pipelines/overview.md)<br/>- [Manage the build queue](../pipelines/agents/pools-queues.md) |
 
 > [!NOTE]  
 > If inline images aren't displaying correctly, see [Resolve images that don't display in Team Explorer](#images-missing-te). 
@@ -129,7 +128,7 @@ Most of the links open to a web portal administration page. Not all settings are
 > [!div class="mx-tdBreakAll"]  
 > |Team project settings | Collection settings (TFS)  |
 > |-------------|----------|
-> |Required membership: [Project Administrators](../organizations/security/set-project-collection-level-permissions.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json)<br/><br/>- [Security (manage project-level permissions)](../organizations/security/set-project-collection-level-permissions.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json)<br/>- [Group membership: manage group permissions](../organizations/security/set-project-collection-level-permissions.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json)<br/>- Source Control: Configure the [check-in and check-out policies](../repos/tfvc/add-check-policies.md) (TFVC)<br/>- [Work Item Areas (project-wide)](../organizations/settings/set-area-paths.md)<br/>- [Work Item Areas (project-wide)](../organizations/settings/set-iteration-paths-sprints.md)<br/>- [Portal Settings (Enable portal or process guidance)](../report/sharepoint-dashboards/configure-or-add-a-project-portal.md)<br/>-[Project Alerts](../work/track/alerts-and-notifications.md) |Required membership: [Project Collection Administrators](../organizations/security/set-project-collection-level-permissions.md)<br/><br/>- [Security (manage project-level permissions)](../organizations/security/permissions.md#collection-level)<br/>- [Group membership: manage group permissions](../organizations/security/permissions.md)<br/>- Source Control: Configure the [default workspace type for the collection](../repos/tfvc/decide-between-using-local-server-workspace.md#manage-project-collection-workspace-settings-for-your-team) (TFVC)<br/>- [Process Template Manager: download or upload a process template](../work/work-items/guidance/manage-process-templates.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json) |
+> |Required membership: [Project Administrators](../organizations/security/set-project-collection-level-permissions.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json)<br/><br/>- [Security (manage project-level permissions)](../organizations/security/set-project-collection-level-permissions.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json)<br/>- [Group membership: manage group permissions](../organizations/security/set-project-collection-level-permissions.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json)<br/>- Source Control: Configure the [check-in and check-out policies](../repos/tfvc/add-check-policies.md) (TFVC)<br/>- [Work Item Areas (project-wide)](../organizations/settings/set-area-paths.md)<br/>- [Work Item Areas (project-wide)](../organizations/settings/set-iteration-paths-sprints.md)<br/>- [Portal Settings (Enable portal or process guidance)](../report/sharepoint-dashboards/configure-or-add-a-project-portal.md)<br/>-[Project Alerts](../boards/queries/alerts-and-notifications.md) |Required membership: [Project Collection Administrators](../organizations/security/set-project-collection-level-permissions.md)<br/><br/>- [Security (manage project-level permissions)](../organizations/security/permissions.md#collection-level)<br/>- [Group membership: manage group permissions](../organizations/security/permissions.md)<br/>- Source Control: Configure the [default workspace type for the collection](../repos/tfvc/decide-between-using-local-server-workspace.md#manage-project-collection-workspace-settings-for-your-team) (TFVC)<br/>- [Process Template Manager: download or upload a process template](../boards/work-items/guidance/manage-process-templates.md?toc=/vsts/reference/toc.json&bc=/vsts/reference/breadcrumb/toc.json) |
 
 To learn more about administration features, see [About team, project, and organizational-level settings](../organizations/settings/about-settings.md).
 
@@ -149,10 +148,10 @@ In addition to connecting through Team Explorer, you can connect to a team proje
 - [Web portal](../project/navigation/index.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json) 
 - [Visual Studio Code](https://code.visualstudio.com/docs)
 - [Visual Studio Community](https://visualstudio.microsoft.com/products/visual-studio-community-vs.aspx) 
-- [Eclipse: Team Explorer Everywhere](/vsts/java/download-eclipse-plug-in) 
-- [Office Excel](../work/backlogs/office/bulk-add-modify-work-items-excel.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)
-- [Office Project](../work/backlogs/office/create-your-backlog-tasks-using-project.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)
-- [PowerPoint Storyboarding](../work/backlogs/office/storyboard-your-ideas-using-powerpoint.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json) 
+- [Eclipse: Team Explorer Everywhere](/../java/download-eclipse-plug-in.md) 
+- [Office Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md?toc=/vsts/boards/backlogs/toc.json&bc=/vsts/boards/backlogs/breadcrumb/toc.json)
+- [Office Project](../boards/backlogs/office/create-your-backlog-tasks-using-project.md?toc=/vsts/boards/backlogs/toc.json&bc=/vsts/boards/backlogs/breadcrumb/toc.json)
+- [PowerPoint Storyboarding](../boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md?toc=/vsts/boards/backlogs/toc.json&bc=/vsts/boards/backlogs/breadcrumb/toc.json) 
 - [Microsoft Test Manager](https://msdn.microsoft.com/library/jj635157.aspx)
 - [Microsoft Feedback Client](../project/feedback/give-feedback.md?toc=/vsts/project/feedback/toc.json&bc=/vsts/project/feedback/breadcrumb/toc.json)   
 
@@ -161,11 +160,11 @@ In addition to connecting through Team Explorer, you can connect to a team proje
 
 If data doesn't appear as expected, the first thing to try is to refresh your client. Refreshing your client updates the local cache with changes that were made in another client or in TFS. To refresh Team Explorer, do one of the following actions:
 
--   To refresh a page that you are currently viewing, choose ![Refresh icon](../work/_img/icons/te-refresh-query-icon.png) **Refresh** icon in the menu bar (or choose the F5 key).
+-   To refresh a page that you are currently viewing, choose ![Refresh icon](../boards/_img/icons/te-refresh-query-icon.png) **Refresh** icon in the menu bar (or choose the F5 key).
 
--   To refresh the team project you currently have selected, choose ![](_img/work-team-explorer/IC547418.png) **Home**, and then choose ![Refresh icon](../work/_img/icons/te-refresh-query-icon.png) **Refresh** icon (or choose the F5 key).
+-   To refresh the team project you currently have selected, choose ![](_img/work-team-explorer/IC547418.png) **Home**, and then choose ![Refresh icon](../boards/_img/icons/te-refresh-query-icon.png) **Refresh** icon (or choose the F5 key).
 
--   To refresh the set of teams defined for the team project that you currently have selected, choose the Connect icon, and then choose ![Refresh icon](../work/_img/icons/te-refresh-query-icon.png) **Refresh** icon (or choose the F5 key).
+-   To refresh the set of teams defined for the team project that you currently have selected, choose the Connect icon, and then choose ![Refresh icon](../boards/_img/icons/te-refresh-query-icon.png) **Refresh** icon (or choose the F5 key).
 
 
 [!INCLUDE [temp](_shared/when-to-refresh-client.md)]
@@ -187,6 +186,6 @@ By installing [TFS Power Tools](https://marketplace.visualstudio.com/items?itemN
 Additional requirements may apply.
 
 > [!NOTE]  
-> For TFS 2017 and later versions, you can [install the TFS Process Template editor from the Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=KarthikBalasubramanianMSFT.TFSProcessTemplateEditor). You can use this version of the Process Editor to modify the old-style work item forms. You can't use it to edit forms associated with the [new web forms](../work/customize/process/new-work-item-experience.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json ).  
+> For TFS 2017 and later versions, you can [install the TFS Process Template editor from the Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=KarthikBalasubramanianMSFT.TFSProcessTemplateEditor). You can use this version of the Process Editor to modify the old-style work item forms. You can't use it to edit forms associated with the [new web forms](../reference/process/new-work-item-experience.md?toc=/vsts/reference/toc.json&bc=/vsts/reference/breadcrumb/toc.json).  
 
 

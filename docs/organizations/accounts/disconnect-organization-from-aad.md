@@ -13,7 +13,7 @@ monikerRange: 'vsts'
 ---
 # Disconnect your VSTS organization from your directory
 
-**VSTS**
+[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 <a name="DisconnectDirectory"></a>
 
@@ -22,7 +22,7 @@ you can disconnect your VSTS organization from your directory.
 
 For more information, see the [conceptual overview](access-with-azure-ad.md) for using Azure AD with VSTS.
 
-You'll need:
+You need the following:
 
 *	[Microsoft accounts](https://signup.live.com/) 
 for all users in your VSTS organization, 
@@ -34,7 +34,7 @@ including yourself as VSTS organization owner.
 for your Microsoft account as the VSTS organization owner. You'll need both 
 because Azure AD users can't disconnect VSTS organizations from directories. 
 You can add Microsoft accounts to a directory as external users. 
-Learn about [managing Azure administrators](https://azure.microsoft.com/en-us/documentation/articles/active-directory-assign-admin-roles/).
+Learn about [managing Azure administrators](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/).
 
 **What happens to current users?**  Users continue working seamlessly if they have Microsoft accounts 
 that share the same sign-in addresses that they use now.
@@ -51,7 +51,7 @@ with your Microsoft account as the VSTS organization owner.
 
     ![Azure Portal, Team Services organizations](_img/manage-work-access/browse-to-team-services.png)
 
-0. Select your organization.
+1. Select your organization.
 
     ![Azure portal, VSTS, select your organization](_img/manage-work-access/select-team-services-organization.png)
 

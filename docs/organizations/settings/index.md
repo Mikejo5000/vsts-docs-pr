@@ -31,7 +31,7 @@ Define area and iteration paths, add teams, and configure additional team, proje
 - [Add and manage users](../accounts/add-organization-users-from-user-hub.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json)  
 - [Change individual permissions](../security/change-individual-permissions.md) 
 - [Grant or restrict permissions to select tasks](../security/restrict-access.md) 
-- [Manage personal notifications](../../notifications/manage-personal-notifications.md) 
+- [Manage personal notifications](../../notifications/howto-manage-personal-notifications.md) 
 - [Customize a project](./work/customize-process.md) 
 
 
@@ -44,9 +44,8 @@ Define area and iteration paths, add teams, and configure additional team, proje
 
 
 ## How-to Guides
-- [Set team defaults](../../work/scale/set-team-defaults.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json)    
-- [Configure team settings](configure-team-settings.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json)   
-- [Switch team context](switch-team-context.md)
+- [Set team defaults](set-team-defaults.md)    
+- [Configure team settings](configure-team-settings.md)   
 
 
 ## Reference

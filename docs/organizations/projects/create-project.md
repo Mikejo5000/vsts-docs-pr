@@ -42,14 +42,14 @@ If you have a project already, and want to start coding an application project, 
 
 ::: moniker range="tfs-2018"
 > [!IMPORTANT]  
-> When you create a project from the web portal, several process template files are ignored. Specifically, the files that would create a Report Manager site aren't supported. If you want SQL Server Reporting Services  to be to be available, then create your project from Visual Studio or Team Explorer. For details, see [Process template and plug-in files, Client support for project creation](../../work/customize/reference/process-templates/overview-process-template-files.md#client-support).  
+> When you create a project from the web portal, several process template files are ignored. Specifically, the files that would create a Report Manager site aren't supported. If you want SQL Server Reporting Services  to be to be available, then create your project from Visual Studio or Team Explorer. For details, see [Process template and plug-in files, Client support for project creation](../../reference/process-templates/overview-process-template-files.md#client-support).  
 ::: moniker-end
 
 ::: moniker range="tfs-2017"
 > [!IMPORTANT]  
 > When you create a project from the web portal, several process template files are ignored. Specifically, the files that would create a Report Manager site and a SharePoint project portal aren't supported. 
 >
-> If you want these features to be to be available on your on-premises TFS, then create your project from Visual Studio or Team Explorer. For details, see [Process template and plug-in files, Client support for project creation](../../work/customize/reference/process-templates/overview-process-template-files.md#client-support).  
+> If you want these features to be to be available on your on-premises TFS, then create your project from Visual Studio or Team Explorer. For details, see [Process template and plug-in files, Client support for project creation](../../reference/process-templates/overview-process-template-files.md#client-support).  
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017"
@@ -73,7 +73,7 @@ If you're not a member of the Project Collection Administrators Group, [get adde
 
 0. Fill out the form provided. Provide a name for your new project, select its initial source control type, select a process, and choose with whom to share the project.
 
-    See [choosing the right version control for your project](../../repos/tfvc/comparison-git-tfvc.md) and [choose a process](../../work/work-items/guidance/choose-process.md) for guidance.  
+    See [choosing the right version control for your project](../../repos/tfvc/comparison-git-tfvc.md) and [choose a process](../../boards/work-items/guidance/choose-process.md) for guidance.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Create new project form, latest vsts](_img/create-project/create-project-s137.png)  
@@ -97,7 +97,7 @@ If you're not a member of the Project Collection Administrators Group, [get adde
 
 0. Fill out the form provided. Provide a name for your new project, select its initial source control type, select a process, and choose with whom to share the project.
 
-    See [choosing the right version control for your project](../../repos/tfvc/comparison-git-tfvc.md) and [choose a process](../../work/work-items/guidance/choose-process.md) for guidance.  
+    See [choosing the right version control for your project](../../repos/tfvc/comparison-git-tfvc.md) and [choose a process](../../boards/work-items/guidance/choose-process.md) for guidance.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Create new project form, latest vsts](_img/create-project/create-project-s137.png)  
@@ -116,7 +116,7 @@ If you're not a member of the Project Collection Administrators Group, [get adde
 
 0. Fill out the form provided. Provide a name for your new project, select its initial source control type, select a process, and choose with whom to share the project.
 
-    See [choosing the right version control for your project](../../repos/tfvc/comparison-git-tfvc.md) and [choose a process](../../work/work-items/guidance/choose-process.md) for guidance.  
+    See [choosing the right version control for your project](../../repos/tfvc/comparison-git-tfvc.md) and [choose a process](../../boards/work-items/guidance/choose-process.md) for guidance.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Create new project form, tfs](_img/create-project/clickcreatetfs.png) 
@@ -147,7 +147,7 @@ If you're using TFS 2015.2 or later version, then you can create a project from 
 
 0. Fill out the form provided. Provide a name for your new project, select its initial source control type, select a process, and choose with whom to share the project.
 
-    See [choosing the right version control for your project](../../repos/tfvc/comparison-git-tfvc.md) and [choose a process](../../work/work-items/guidance/choose-process.md) for guidance.  
+    See [choosing the right version control for your project](../../repos/tfvc/comparison-git-tfvc.md) and [choose a process](../../boards/work-items/guidance/choose-process.md) for guidance.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Create new project form, tfs](_img/create-project/clickcreatetfs.png) 
@@ -219,7 +219,7 @@ You can create a project from Team Explorer after you have connected to an on-pr
 
     ![ALM\_CTP\_NameProject](_img/IC671598.png)
 
-8.  Choose a process template. For a comparison of the default process templates, see [Choose a process](../../work/work-items/guidance/choose-process.md).
+8.  Choose a process template. For a comparison of the default process templates, see [Choose a process](../../boards/work-items/guidance/choose-process.md).
 
     ![ALM\_CTP\_SelectTemplate](_img/IC795955.png)
 
@@ -260,7 +260,7 @@ You can create a project from Team Explorer after you have connected to an on-pr
 
 ## Add a project from the command line or scripts
 
-You can create and get projects and other VSTS items from the command line or scripts using the VSTS CLI. Check out the [VSTS CLI documentation](https://docs.microsoft.com/en-us/cli/vsts/overview?view=vsts-cli-latest) to learn more.
+You can create and get projects and other VSTS items from the command line or scripts using the VSTS CLI. Check out the [VSTS CLI documentation](https://docs.microsoft.com/cli/vsts/overview?view=vsts-cli-latest) to learn more.
 
 ::: moniker-end
 
